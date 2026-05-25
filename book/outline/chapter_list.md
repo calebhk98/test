@@ -282,7 +282,7 @@ survived ch21, he dies here. Daniel sees the limit of conquest and the price pai
 by the unnamed. Plant: Hadrian's coming reversal of these conquests; Daniel's
 grief. Files: 01,02,03,05,06.
 
-### ch30 — The Blindside [TODO]
+### ch30 — The Blindside [ACCEPTED]
 Beats: August 117. Trajan dies of a stroke at Selinus, withdrawing toward Rome.
 Daniel - a teenager once, never sure of dates - is blindsided; his shield is gone.
 Render the news arriving and the ground shifting. Plant: the vacuum; Daniel's

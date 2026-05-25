@@ -786,6 +786,34 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   Daniel goes into ch30 gutted, harder, carrying Celer's strap. No new named
   characters; no tech state changes.
 
+- [ch30] Summer ~117 AD, Daniel ~36 (nineteen years in this world since spring 98),
+  imperial freedman, on the army's WESTWARD WITHDRAWAL road behind Antioch, still at
+  the fires keeping water discipline. THE BLINDSIDE. News of TRAJAN'S DEATH (real
+  history: stroke, at SELINUS in Cilicia, "the eighth day of the month," ~8 Aug 117)
+  reaches Daniel ~a fortnight old, via dispatch rider -> horns out of order -> a Greek
+  baggage clerk Daniel had taught the new figures. Daniel is blindsided (he carried
+  no memory of WHEN Trajan would die), then turns cold and practical.
+- [ch30] DANIEL'S RECKONING: his freedom legally HOLDS, but his protective SHIELD (a
+  living emperor) is gone; his very name (Ulpius, Trajan's own gens) and his cover
+  against Crispus, the priestly colleges' impiety hook, and Vibenius all rested on the
+  dead man. He is exposed, a month's hard sail from Rome, still on Scaeva's leash
+  (Scaeva alive in Rome, now able to wield Daniel more freely). Confirmed canon: Daniel
+  met Trajan only the once (the ch17 audience).
+- [ch30] HADRIAN heard ONLY as contradictory rumor: hailed emperor at Antioch; the
+  deathbed adoption widely DOUBTED; whispered as engineered by the empress (Plotina,
+  unnamed on the page) and the Guard prefect ATTIANUS (named, real), via a
+  household-freedman herald who "conveniently died." The army's old hard core wanted
+  one of the marshals/city-takers and got "a bookish kinsman." The name means nothing
+  to Daniel; he can verify none of it.
+- [ch30] ch26-HADRIAN FLICKER handled per constraint: an unplaceable half-memory
+  (beard, drawings, Apollodorus's "gourds" insult) that Daniel CANNOT and does NOT
+  firmly connect to the new emperor; he lets it go. (Recognition reserved for ch35.)
+- [ch30] Daniel's intent: urgent to get back to Rome to reach Marcia, Lucanus (~2-3),
+  Tyche, and the enterprise before enemies/news act; he judges the sea distance makes
+  him likely too late. Ends poised on the edge of the unknown reign (the succession
+  scramble is ch31). No new named characters (Attianus is historical). No tech state
+  changes. Divergence ledger still EMPTY. Phone relic appears mid-chapter only.
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
