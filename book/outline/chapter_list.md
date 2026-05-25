@@ -39,7 +39,7 @@ madman, a magician? Someone sends for a man who knows strange tongues and bodies
 a physician. Phone battery now critical. Plant: the map as his identity; the
 western continents (ocean-gambit seed); Heras summoned. Files: 00,01,05,06,07.
 
-### ch04 — Heras [TODO]
+### ch04 — Heras [ACCEPTED]
 Beats: Heras the Greek physician arrives to examine the "barbarian" - is he mad,
 diseased, bewitched? Communication via Greek fragments, Latin, drawing, numbers.
 Daniel demonstrates the new figures and place-value (and flubs a long division

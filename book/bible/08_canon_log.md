@@ -93,3 +93,25 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   him. (Phone is now days from dying - see world rules.)
 - [ch03] Daniel still understands no Latin; he learns no usable word yet, only
   re-recognizes the optio's name-sound and the mangled "Daniel."
+- [ch04] ~Day 3. A Greek physician (this is HERAS, but UNNAMED on the page so far
+  because Daniel can't yet hold the language; rendered as "the physician":
+  clean-shaven, ~45, a freedman, the cleanest hands Daniel has seen, a leather
+  satchel) examines Daniel, switches from Latin to Greek, and is the first person
+  to treat Daniel as a mind.
+- [ch04] NUMERALS DEMO: Daniel writes 0-9 (including zero), shows the compactness
+  of place-value vs Roman numerals, demonstrates place value and addition
+  successfully, then FLUBS a long division under pressure (lowballs a digit),
+  grinds it out by hand to the right answer, and draws the remainder as "r." The
+  flub-and-recovery is what convinces the skeptic he is real.
+- [ch04] Daniel points to the blank north of his drawn map; the physician says a
+  two-syllable word aloud (it is "Thule") flatly and unconvinced. Daniel hears the
+  SOUND but does not yet understand or retain it as a label.
+- [ch04] Greek single-word footholds Daniel can now half-recognize via roots:
+  "pou" (where), "therm-" (heat), "photo-" (light). Single words only; still zero
+  sentence comprehension.
+- [ch04] Daniel is moved from the cell to a WORKSHOP LOFT attached to a household,
+  under loose guard (the physician, the optio, and an unnamed higher party all
+  have a hand in the arrangement). He is still unfree.
+- [ch04] THE PHONE DIES for good that night: black, won't wake or hard-reset. He
+  keeps the dead glass as a relic. (Phone is finished as a functional device from
+  here on.)
