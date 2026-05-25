@@ -235,7 +235,7 @@ adopted because slaves are cheaper - the bitterest beat. What losing teaches him
 Plant: the limits of one man's memory; the economics that defeat the anti-slavery
 machine. Files: 01,02,04,05,06.
 
-### ch24 — High Ground [TODO]
+### ch24 — High Ground [ACCEPTED]
 Beats: Part III turn. Daniel powerful, building, comfortable, and lonelier than
 ever. A quiet high point - the workshop humming, the contest thriving, books
 multiplying. He names the hubris-or-duty question aloud to Heras (kept in

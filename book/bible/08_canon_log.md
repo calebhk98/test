@@ -587,6 +587,37 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   books" as rungs to leave for others (strengthens the encyclopedia thread). New
   minors: DEMETRIOS (glass cutter/lens grinder), MAXIMUS (stonecutter/quarry owner).
 
+- [ch24] ~110 AD, Daniel ~29, imperial freedman, at the PEAK PLATEAU (END OF PART
+  III). State: ~11 people on wages (plus piecework wharf-women and carters); the
+  press still wastes ~1 sheet in 4 and outproduces all of Rome's prior writing;
+  Hermes's forge is funded by great men since the burst cannon; the water filter is
+  in 2 public fountains; the non-working spyglass still sells. Market toys now
+  include clay balloons and a never-built "Thulean engine" (a train / horseless
+  smoking-stack cart) copied from a printed prize-tale - the culture dreaming in
+  tech ahead of the tech.
+- [ch24] CONTEST winner that year: a freeborn ~11-12 yr WOOL-FACTOR'S DAUGHTER
+  (unnamed) who drew a "ladder of knowing" - a staircase to the stars with a stick
+  figure on the bottom step holding a torch for those not yet born ("the torch has
+  to be big so the ones above can see it"). Unknowingly the exact shape of Daniel's
+  secret "books"/ladder; he gives her the prize and is gutted that there is no one
+  he can tell. (Thematic echo of the ladder/epilogue; possible faint recurrence.)
+- [ch24] HERAS (62) conversation, prompted by Macer (62) asking "what is he FOR":
+  frames the hubris-or-duty question obliquely (the saving gifts - figures, water,
+  boiling - vs the bursting tube, the powder that cost Geta's hand, the
+  labor-replacing dreams; "a gift addressed to people who can't yet say no").
+  PLANTED, NOT answered. Daniel deflects ("a guy who got lucky with a map"), and
+  silently almost tells Heras the whole truth (the built staircase he fell off) but
+  does not. CRISPUS coined the phrase "the barbarian's heaven by ladder."
+- [ch24] PHONE-RELIC beat: the dead glass is kept wrapped in oiled wool in a box
+  under a floorboard (only Tyche knows), beside the citizenship tablet ("two
+  countries that cannot write to each other"). Daniel can no longer recall the true
+  words of a song, nor be sure he remembers his mother's voice rather than
+  inventing it. Loneliness shown, not stated. The memoir / "writing this" frame is
+  confirmed on the page.
+- [ch24] UNEASE planted for Part IV ("high ground is where they come for you"; too
+  useful to be safe). MARCIA is pregnant with their first (freeborn) child. STICHUS
+  is now a grown man (no longer the coal-pot boy), working at the yard.
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
