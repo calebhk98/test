@@ -151,7 +151,7 @@ to build yet. Files: 01,02,04,05,06.
 
 ## PART III — HOW FAR TO GO (103-110, Daniel 22-29)
 
-### ch15 — The Chokepoint [TODO]
+### ch15 — The Chokepoint [ACCEPTED]
 Beats: Gaius Julius Hermes, freedman smith; the steel problem. Daniel gives the
 idea of carbon control and quench-temper; Hermes's pride and scorn, then grudging
 partnership. Gorgeous blade one batch, brittle the next, and no way to measure

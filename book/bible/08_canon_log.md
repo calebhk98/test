@@ -368,6 +368,24 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   filter (gets the layer order wrong twice - honest failure; he knows sand does NOT
   sterilize, so boiling is still required), Tyche bringing bread, the wharf waking.
 
+- [ch15] Spring 103 AD, Daniel ~22, still Macer's slave at the wharf yard. PART III
+  opens. His sand/charcoal/gravel WATER FILTER now clears water (still requires
+  boiling; Heras frames the method publicly as "Greek wisdom" to make it
+  acceptable). Water/medicine work is active and succeeding.
+- [ch15] GAIUS JULIUS HERMES introduced: a freedman blacksmith, past 40, iron-gray,
+  anvil-built, burn-scarred, terse (talks between hammer-blows), city Latin; his
+  forge is under a brick arch behind the cattle market; he works with a bellows-boy
+  and an aged ex-smith. Macer connected them because army iron contracts mean money.
+- [ch15] STEEL (the chokepoint): Daniel's framed idea is that carbon ("the black of
+  the coal") sets hardness, and quench-then-temper-to-a-color sets the bite/brittle
+  balance; he CANNOT give amounts or temperatures (normal-teen ceiling). They tried
+  sealed clay crucibles (iron + charcoal + bone ash, long high heat): batch 1 too
+  cold (spongy); batch 2 melted into a superb blade; batch 3, identical method,
+  shattered crystalline in the quench. NO pyrometer - heat judged by unreliable eye/
+  color and drifting counts; fuel-hungry. Hermes's verdict: "The fire is the
+  master." Steel work is ONGOING and UNSOLVED. (This wall gates springs, the cannon,
+  fine instruments, clocks - per the tech schedule.)
+
 ## COORDINATOR CANON DECISIONS (read these - they bind downstream chapters)
 - [DECISION owner=Macer] The equestrian who has HELD Daniel since ~ch04 (the
   unnamed "higher party"; the "owner" who arranges the demo and deals via a
