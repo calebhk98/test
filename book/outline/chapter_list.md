@@ -139,7 +139,7 @@ the price of his gifts made physical. War around him; no clean heroism. Plant:
 the weight Daniel now carries; his reassessment of how far to push. Do NOT
 telegraph or annotate the death; render it. Files: 01,02,04,05,06.
 
-### ch14 — What It Costs [TODO]
+### ch14 — What It Costs [ACCEPTED]
 Beats: aftermath; Decebalus sues for terms (the war pauses); the return toward
 Rome. Daniel changed - quieter, harder, asking whether building is worth the
 bodies. A real conversation with Heras or Celer that stays in subtext. Part II

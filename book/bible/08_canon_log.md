@@ -339,6 +339,35 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   retrospect, BUT watch their frequency across chapters - do not let "I still / I
   never / as long as I live" become a per-chapter tic. Future writers: use sparingly.
 
+- [ch14] 102 AD, Daniel ~21, still a slave on loan, returned to Rome and the wharf
+  yard. END OF PART II. The First Dacian War ends as a CLIENT-KING PEACE (Decebalus
+  keeps his head and hills, returns engineers/standards/deserters, razes some
+  forts); soldiers feel relief and anticlimax, no triumph; the flux follows them
+  south and still kills. (Dacia is NOT yet annexed - that is the Second War,
+  105-106.)
+- [ch14] Daniel crates the tethered observation bag (army still has use of it; it
+  SURVIVES) and buries the manned-balloon patterns under it, nailing the lid as a
+  wordless vow never to put another man up. The MANNED balloon is over by his own
+  choice.
+- [ch14] CELER parting (frontier, at the horse-lines): he wrote the official letter
+  taking the blame and kept Daniel's name out of the fatal part; told Daniel
+  "build me something that doesn't need a man hung off it. Or build me nothing."
+  Respect-bond intact; they never say Sabinus's name.
+- [ch14] NASO came south with the baggage (kept on mule duty via Daniel's quiet
+  word to the optio Saturninus); his ankle never set true; ruined left hand.
+- [ch14] DECISION / PART II->III HINGE: Daniel resolves to use the inch of choice a
+  slave has, favoring what SAVES (clean water/filtration, medicine) and dragging
+  his feet on weapons. SPECIFIC thing he chooses NOT to build yet: gunpowder / the
+  powder weapon (the "white salt + charcoal + third thing" he wrote "???" for in
+  ch02) - "not yet, maybe not ever."
+- [ch14] Reunions: HERAS met him at the yard and deflected grief into "we will look
+  at the water" (referencing Daniel's road-north letter about the flux); Sabinus is
+  never named. TYCHE is now ~16 and kept the wharf yard and balanced the tally in
+  the new figures for a year-plus. PAMPHILUS returned well.
+- [ch14] Final image: Daniel at the workbench redrawing a slow sand/charcoal/gravel
+  filter (gets the layer order wrong twice - honest failure; he knows sand does NOT
+  sterilize, so boiling is still required), Tyche bringing bread, the wharf waking.
+
 ## COORDINATOR CANON DECISIONS (read these - they bind downstream chapters)
 - [DECISION owner=Macer] The equestrian who has HELD Daniel since ~ch04 (the
   unnamed "higher party"; the "owner" who arranges the demo and deals via a
