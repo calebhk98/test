@@ -47,3 +47,29 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
 - [ch01] Ends: four men with spears approach up the rise (two wearing leather
   chest armor); the lead man holds the others back, watching Daniel's hands. He
   pockets the phone and raises his hands, palms out.
+- [ch02] ~One day elapsed (arrest through the first night). Daniel is bound with
+  hay/twisted rope (no metal cuffs) and marched through the town to a cell: stone
+  base, brick above, iron-banded plank door barred from outside, ~8x10 ft, high
+  barred window, dirt floor, clay chamber pot. Town texture: tannery/garum/dung
+  stench, leaning insulae, a gutter down the lane's center.
+- [ch02] Phone now holds 2 photos (the Colosseum + a selfie of his own face). He
+  has started rationing it (airplane mode, low brightness) and begun rough,
+  disorganized survival Notes. What he COULD write: "ROME 98 AD??" (trusts the
+  Colosseum-math date ~80%), water boils at 212, pi as 3.14159(26?, unsure), the
+  quadratic formula (unsure he fixed a sign), and personal anchors - his mom's
+  phone number, his home address, and the detail of "Marcus and the flickering
+  light over the fastener aisle." What he COULD NOT recall: the high-altitude
+  boiling-point rule (saw the graph, no number), and the THIRD gunpowder
+  ingredient (the white one, i.e. saltpeter/potassium nitrate - wrote "???").
+  He realizes he is writing the notes "for whoever found my body." (Reinforces
+  the knowledge-ceiling and failing-memory rules: he keeps the human, loses the
+  technical.)
+- [ch02] COVER STORY SPINE decided this first night: Daniel will present as a
+  learned traveler from a far, cold northern country. He explicitly rejects
+  claiming to be from the future and rejects telling the literal truth. The word
+  "Thule" and the full story are NOT yet introduced (come later).
+- [ch02] A decent junior officer (an optio, by a shoulder mark; he ranks the
+  spearmen) brings food, cuts Daniel's rope free, and trades names. Daniel says
+  "Daniel"; the officer cannot pronounce it. Optio is UNNAMED on the page so far.
+- [ch02] Ends on Daniel eating garum-flavored grain mush with his fingers in the
+  dark.

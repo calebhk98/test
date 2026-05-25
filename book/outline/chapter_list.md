@@ -20,7 +20,7 @@ Plant: the phone's charge; his hardware-store work shirt; his math-brain noticin
 details; the loneliness opening. Files: 00,01,05,06,07.
 Voice: maximal modern-teen disorientation; dry panic. No info-dumping Rome.
 
-### ch02 — The Cell [TODO]
+### ch02 — The Cell [ACCEPTED]
 Beats: arrested with rope (no cuffs), marched through the town, the smell and
 noise assault, the communal strangeness. A cell. Guards fascinated by his clothes
 (zippers, the shirt's weave) and baffled by the phone. He can't speak. The phone's
