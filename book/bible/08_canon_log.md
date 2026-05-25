@@ -974,6 +974,47 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   counting the day's loads twice to quiet his hands while a man on the Palatine decides
   his use.
 
+- [ch36] ~121 AD (twenty-three years since the spring-98 map; use TWENTY-THREE here),
+  Daniel ~40, Hadrian ~45-46. Same Palatine-slope senatorial house as ch35. THE OCEAN
+  GAMBIT DEPLOYED. Engineered via the accounts work: Daniel broke the province of
+  LUGDUNENSIS (Gaul) in the new figures in eight months, leaving a clean nine-year
+  "gap" in a column that fingered a thief without naming him; summoned over a second
+  province (BELGICA) that was only the pretext; Hadrian raised the old world-map himself
+  (a fiscus clerk's gossip).
+- [ch36] THE PITCH (direct positive framing, NOT conquest): the East threw Rome off, the
+  South stops at sand, the North at cold and trees; the one direction Rome has never
+  reached is the western sea; and the prize is KNOWING the true shape of the world ("I
+  would be the man who knew the shape of the world"), a legacy a cost-counting emperor
+  would value where a general would be a fool to want it. Daniel threaded it per the
+  ch35 survival law and let Hadrian co-opt the vision as his own thought.
+- [ch36] **FIRST DIVERGENCE-LEDGER ENTRY** - what Hadrian committed to (bounded;
+  explicitly "no armada, no Trajan"): (1) a proper SURVEY/map of the world Rome already
+  holds, set in the new figures to one scale, beginning with sailed seas and pushing the
+  African coast south of the grain fleets a season at a time, no ship sent past where it
+  can return; (2) a SCHOOL/YARD of pilots and shipwrights on the western coast (Gaul or
+  Spain) to build and test open-ocean hulls, slowly, at a capped cost; (3) a standing
+  imperially-funded PRIZE for any craftsman who can keep true time a month at sea (the
+  sea-clock = longitude). NO transoceanic voyage authorized. (Logged in 03_timeline
+  DIVERGENCE LEDGER.)
+- [ch36] NAVIGATION/LONGITUDE WALL hit honestly and tied to ch23: latitude is solvable by
+  sun/stars, but longitude (westing) needs a sea-stable clock; Daniel openly admitted he
+  FAILED to build a working clock (the ch23 escapement gap; the tally-room water clock
+  Tyche corrects by the sun) and knows no living man who can. He framed the gift as gated
+  on this wall ON PURPOSE, to avoid blame when it fails; he must write up his clock
+  dead-ends for future craftsmen (feeds the encyclopedia thread).
+- [ch36] LIES NOW LOOSE in the empire's ambition: the western shore is "uninhabited"; a
+  crossing is roughly "a year's sail"; the "Thulean scouts." Hadrian DISBELIEVED the
+  scouts/Thule (Daniel conceded the road-lie to protect the true map) and ordered the
+  survey to rest on the map ALONE, not the scouts' tale. Daniel privately foresees men
+  dying against the lie in good hulls, or the program lapsing. He keeps "the matter of
+  where you are from" in Hadrian's ledger; Hadrian said "I will remember."
+- [ch36] Relationship: still ambiguous patron-or-predator; Daniel now MORE valuable and
+  MORE leashed. Apollodorus danger remains pending (ch37). No new named characters.
+  Closing image (fresh, off the banned set): the EMPTY map-box on the bench, Daniel
+  closing the lid on the nothing inside (a different object from the phone-relic box -
+  meaning inverted: the box is empty because he let his secret world out), then going up
+  to count Belgica "where the numbers stayed where I set them and did not have a far side."
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,

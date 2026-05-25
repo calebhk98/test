@@ -326,7 +326,7 @@ his pitch from conquest-tech to consolidation, knowledge, and the long horizon.
 Plant: Hadrian's interest and his menace; the opening for the ocean map. Files:
 01,02(Hadrian),06.
 
-### ch36 — The Ocean Gambit [TODO]
+### ch36 — The Ocean Gambit [ACCEPTED]
 Beats: Daniel deploys the true-and-false world map: uninhabited western lands a
 year's voyage away, reachable only with ships Rome doesn't yet have; the East
 exhausted, the South desert, the North fierce. Redirect ambition toward the sea

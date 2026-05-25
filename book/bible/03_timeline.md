@@ -126,5 +126,19 @@ order the book tells them, with flagged exceptions.
   trajectory has bent. No tidy bow.
 
 ## DIVERGENCE LEDGER (log every deliberate break from real history here)
-- (none yet) - Daniel's accumulating influence may begin deflecting events from
-  ~Part V onward. Any change to real outcomes must be added here with a reason.
+- Daniel's accumulating influence begins deflecting events from ~Part V onward. Any
+  change to real outcomes must be added here with a reason.
+- [ch36, ~121 AD] FIRST DIVERGENCE - THE OCEAN PROGRAM. Real Hadrian consolidated,
+  toured, and built fortified frontiers (e.g. the British wall ~122); he did NOT pursue
+  Atlantic/oceanic exploration. In-story, Daniel's world-map gambit turns Hadrian a few
+  degrees seaward: Hadrian sanctions a BOUNDED program (NOT an armada) - (1) a single-
+  scale world survey in the new figures, pushing the African coast south a season at a
+  time; (2) a western-coast (Gaul/Spain) school/yard of pilots and shipwrights testing
+  open-ocean hulls at a capped cost; (3) a standing imperial PRIZE for a clock that keeps
+  true time a month at sea (the longitude problem). REASON it's plausible (not a wild
+  break): it is framed as prestige/knowledge and consolidation, fits Hadrian's
+  philhellene legacy-hunger and cost-counting, and is gated on real tech walls (hulls,
+  navigation, the unsolved sea-clock) so it cannot leap ahead. WATCH: this seeds a
+  shipbuilding/navigation thread for Part VI and a long-fuse lie (uninhabited west /
+  year's sail). Track whether/how far the program actually gets in Daniel's lifetime
+  (likely slow, possibly lapsing) and into the epilogue.
