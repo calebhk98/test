@@ -319,7 +319,7 @@ repair. Marcia and Tyche hold the enterprise together while Daniel maneuvers.
 Plant: a foothold with someone close to Hadrian; the ocean-map plan maturing.
 Files: 01,02,03,06.
 
-### ch35 — Hadrian [TODO]
+### ch35 — Hadrian [ACCEPTED]
 Beats: SET-PIECE. First real encounter with the new emperor - voracious, prickly,
 restless, dangerous, genuinely curious. Two restless minds circling. Daniel adapts
 his pitch from conquest-tech to consolidation, knowledge, and the long horizon.

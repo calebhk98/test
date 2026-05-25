@@ -937,6 +937,43 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   Lucanus (~6) miscounting a printed sheet; Daniel leaving to meet "a man who was not
   my friend" (NOT phone/roof/maxim).
 
+- [ch35] ~120-121 AD, Daniel ~39-40, imperial freedman. SET-PIECE: the first real
+  audience with HADRIAN (~44-45, b.76), arranged when a man above EUDEMUS in the fiscus
+  sent past "the widow's name" for the maker of the uncheatable figures; held in a
+  senatorial house on the Palatine slope (a working library, standing architects and
+  clerks present), not the palace.
+- [ch35] HADRIAN rendered live for the first time, a deliberate CONTRAST to the ch17
+  Trajan: full Greek beard on a Roman face; restless, voracious, performs erudition
+  (baits the Thule charge with Strabo/Pytheas), sets little traps (the flying, the dead
+  Danube man), tests whether Daniel will lie about his own deference, repeats Daniel's
+  good lines back as his own and watches Daniel let him; a cost-counter taking an
+  inventory. (Trajan liked Daniel's honesty; Hadrian likes the smallness honesty admits
+  beside his own success.)
+- [ch35] THE ch26 RECOGNITION LANDED organically: mid-audience, watching Hadrian sketch
+  a stepped segmented "gourd"/half-egg dome with two fingers over an architect's temple
+  drawing, Daniel realized this emperor IS the bearded "gourd-domes" man Apollodorus
+  mocked at Trajan's Forum (ch26). DANIEL'S CONCLUSION / survival law of the reign:
+  Hadrian keeps a ledger and destroys men who make him feel small, so Daniel must show
+  enough to be valuable while NEVER besting him or letting him feel out-known. Daniel
+  deflected Hadrian's "your opinion of my roof" trap with feigned ignorance + a
+  self-deprecating failure ("I would pay to see the half-egg stand").
+- [ch35] WHAT LANDED: the new figures (Hadrian worked a real grain-levy sum by his own
+  hand and was hooked) and the press "for figures, not opinions." Daniel WON a foothold:
+  a commission to render a whole province's accounts in the new figures both ways, with
+  use of his press, wax, and clerks (NO coin pay). His stated ask: to be useful and
+  forgotten, his name on nothing.
+- [ch35] OCEAN GAMBIT NOT PITCHED: Daniel felt the exact opening (Hadrian asked what he
+  wanted; "the map was in his mouth") and deliberately HELD it, fearing Hadrian would
+  appropriate it or resent being out-known. Still filed (pays off ch36).
+- [ch35] RELATIONSHIP STATE: ambiguous by design, patron-or-predator unresolved; Hadrian
+  said he will "remember" Daniel and let slip (then covered) that he knew Eudemus was
+  the clerk talking up the marks (no secrets in his house). DANGER TO APOLLODORUS planted
+  hard (Daniel fears for him, judges he cannot warn him) but NOT resolved (ch37).
+  Apollodorus ALIVE. No new named characters. History tracks real Hadrian; ledger empty.
+  Closing image (revised off the Lucanus-with-figures pattern): Daniel at his gate
+  counting the day's loads twice to quiet his hands while a man on the Palatine decides
+  his use.
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
@@ -999,6 +1036,14 @@ Check this before stating any age on the page.
   (4) [added after ch33] Chapters have been running over the 3,800 ceiling (ch27 ~5k,
   ch31/ch33 ~4k). HOLD 3,000-3,800 unless it is a true set-piece; tighten in revision
   rather than letting scenes sprawl.
+  (5) [added after ch35] CLOSING-IMAGE MANNERISM: ch32, ch33, ch34, AND ch35 all
+  originally closed on "young LUCANUS + numbers/objects" (turning a buckle; counting
+  against his arm; miscounting a sheet; reading figures the wrong way round). FOUR in a
+  row is a template a reader feels. ch35's close was revised off it. Going forward: do
+  NOT close a chapter on Lucanus-with-figures, and more generally VARY the closing
+  image type chapter to chapter (do not end three consecutive chapters on the same kind
+  of domestic-child beat, or on counting/figures). Banned closers remain: phone relic,
+  roof/boat-rail, a maxim.
 
 - [DECISION Part III re-sequenced for chronology, after ch17] Because Daniel is now
   bound to serve the Second Dacian War (105-106), Part III chapters ch18-ch24 are
