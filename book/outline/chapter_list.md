@@ -9,7 +9,7 @@ execution. "Plant" = seeds to set without resolving. "Files" = bible files to re
 
 ## PART I — ARRIVAL & SURVIVAL (98 AD, Daniel 17)
 
-### ch01 — Waking [ACCEPTED-pending]
+### ch01 — Waking [ACCEPTED]
 Beats: Daniel wakes at dawn in a stubble field, work clothes, phone in hand,
 hung-over on confusion. The wrongness builds: no roads he knows, wrong birds,
 wrong air. He walks, finds a shabby settlement, can't read or understand anyone,

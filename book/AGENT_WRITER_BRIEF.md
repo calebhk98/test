@@ -40,7 +40,8 @@ the lines so it all fits together.
 ## Deliver
 - Write the chapter to the exact path given in your brief (e.g.
   `/home/user/test/book/chapters/ch07.md`).
-- Start the file with a single H1 line: `# Chapter N — <short title>`.
+- Start the file with a single H1 line: `# Chapter N: <short title>` (use a
+  colon, never an em dash, in the title - the em dash ban applies everywhere).
 - After writing, reply to the coordinator in under 120 words with: (a) a 3-5
   sentence recap of what happens (for the next writer's continuity), and (b) any
   NEW canon facts you established that must be logged (names, dates, places,
