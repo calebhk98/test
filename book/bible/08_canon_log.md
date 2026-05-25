@@ -1188,6 +1188,32 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   not a banned closer). No new divergence; the quiet war advanced in events (a slave girl
   taught to read and cipher).
 
+- [ch42] ~133 AD, Daniel ~52. **HERAS DIED**, age ~80, of OLD AGE (tired heart, failing
+  lungs), in his room off the colonnade on the Caelian; he summoned Daniel under cover of
+  settling the physic-chest account and died on the third morning, clear-eyed and
+  skeptical to the end, refusing fuss or a god, attended at the last by his apprentice
+  ZOTICUS (no final word to Daniel). This is the FIRST major death Daniel neither caused
+  nor could have prevented (deliberately distinct from Sabinus/Celer/Apollodorus - the
+  grief is the loss of the one who kept him honest, NOT guilt).
+- [ch42] NEW NAMED CHARACTER: **ZOTICUS**, a quiet Greek/Cappadocian freedman, Heras's
+  apprentice-physician of ~15 years; carries the practice and the physic chest forward
+  (funded via Daniel's foundation). A sound careful craftsman who LACKS Heras's diagnostic
+  "eye" (the seeing dies with the man; the method passes, the eye does not).
+- [ch42] MEDICAL WORK'S FUTURE: the practices (boiling, washing, clean cloth, the filter)
+  have gone LOOSE in the culture and survive the man who half-believed them, kept for
+  their results and re-attributed to the gods (an Esquiline surgeon credits Asclepius);
+  the framing drifts, the practice persists. Daniel's "dullest" gift (the water) will
+  save the most lives.
+- [ch42] HERAS'S LINE Daniel carries forward: "be your own skeptic... you will be bad at
+  it, everyone is, that is why we keep each other." SKEPTIC-GONE danger planted via
+  behavior: with no one left to puncture his self-myth, Daniel reads his own too-confident
+  sentences aloud in Greek to an empty room, asking "do I know it or only feel it," and
+  marks his own guesses with the ch40 hooked stroke - now with no one to read them back.
+- [ch42] Grief rendered through absence (NOT a kept-object talisman, deliberately unlike
+  ch13 rag / ch29 strap / ch37 plumb-line). Closing image: Daniel alone at the bench
+  marking his own guesses and drinking the cold filtered water, the answer to a worn old
+  joke dying in his mouth with no one at the bench's other end. No new divergence.
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,

@@ -372,7 +372,7 @@ the next generation taking the work. Warm, with an edge of the strangeness of hi
 origins surfacing through his children's questions. Plant: the keepers of the
 ladder; the epilogue's protagonist seeded here. Files: 01,02(Tyche,Marcia),05,06.
 
-### ch42 — Heras [TODO]
+### ch42 — Heras [ACCEPTED]
 Beats: Heras dies. The skeptic who kept Daniel honest is gone. Grief rendered
 through action and absence, never announced. What the medical work became without
 its first doubter. Plant: the hole Heras leaves; a thing Heras said that Daniel
