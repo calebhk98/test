@@ -1119,6 +1119,41 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   image: Daniel in the dark setting the sleeping apprentice's sharp gouge safe on the
   bench (fresh; not a banned closer). No new divergence; ocean program grinds offstage.
 
+- [ch40] ~131 AD (year LOCKED: Daniel "fifty years old," "thirty-three years" since the
+  98 cell, Tyche forty-six all agree at 131), Daniel ~50, Tyche ~46, Ulpia ~12-13,
+  Marcia ~57. THE ENCYCLOPEDIA written in earnest in the English cipher (Tyche the sole
+  living reader/copyist; Daniel's hand failing with his eyes, letters wanting to be
+  larger each season).
+- [ch40] LADDER ORDERING LOCKED (bottom-up, assumes nothing): numbers/place-value ->
+  the four workings (full long division) -> algebra -> geometry -> the idea of calculus
+  -> Newton's three laws -> his fuzzy chemistry/biology/astronomy (atoms, heat, cells,
+  the little ones/germs, evolution in outline, the solar system). Built so each rung
+  needs only the rung below.
+- [ch40] MEMORY NOW LOST/SHAKY (canon - what has decayed): the MECHANISM joining heat to
+  motion in a steam engine is GONE ("has not come since" - he knows heat is the little
+  ones moving and that steam pushes, but cannot bridge them); the QUADRATIC's sign now
+  takes most of a morning to verify (a thing he had at 17); the OUTER planets' order/count
+  is uncertain (sure of: two inner, Earth, Mars, Jupiter, Saturn; lost beyond); the
+  atomic-bonding picture left blank. (Consistent with the ch02 ceiling: he lost the
+  high-altitude boiling rule long ago; he still HAS saltpeter from ch21.)
+- [ch40] HONEST-LIMITS principle, rendered: a cipher "hooked stroke" mark meaning "the
+  Thulean is guessing"; doubt written into Newton's second law; whole rungs (the planets'
+  far rooms, a chemistry page) left DELIBERATELY BLANK with a labeled note rather than
+  faked (a faked rung sends a future climber off a cliff). Tyche enforces this honesty
+  harder than Daniel (she caught a backward "7" that would teach a thousand-year line of
+  children the wrong digit).
+- [ch40] EMBEDDED ENCYCLOPEDIA EXCERPT used (permitted register shift): ONE plain-English
+  instructional passage of Newton's three laws (respecting the HS ceiling, with honest
+  doubt), plus a labeled blank-page note. (First on-page sample of the actual "books"
+  voice.)
+- [ch40] BURIAL/COPYING PLAN established: THREE full cipher copies (Tyche's, moved; the
+  society's, sealed; one cased in lead and pitch, hidden) PLUS a partial LATIN copy up to
+  geometry. The cipher MUST pass to a second young hand (Tyche: "you put its only key in
+  one aging head, mine"). ULPIA (~12-13) silently weighed by Tyche as that second hand,
+  NOT yet taught (reserved for ch41). Closing image: Daniel writing the large note across
+  a deliberately blank chemistry page, leaving it "white and waiting," then up to the
+  house where Marcia kept a lamp (fresh; not a banned closer). No new divergence.
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
@@ -1150,8 +1185,10 @@ Check this before stating any age on the page.
   who first carried him to the army. (Supersedes the stale ch29-brief phrasing "if
   Celer survived ch21" - nothing in ch21 threatened him.)
 - [DECISION death years, provisional - pin exactly when drafted] Heras (b.~53)
-  dies in ch42, pinned ~129-130 AD (age ~76-77) - moved later than the original
-  ~126 because ch38 is now set ~127 with Heras alive. Macer (b.~48) is
+  dies in ch42, pinned ~133 AD (age ~80) - moved later again because ch40 is now set
+  ~131 with Heras alive. (Part VI working chronology: ch39=129, ch40=131, ch41~132,
+  ch42~133 Heras dies, ch43~134, ch44~135, ch45~135-136 Bar Kokhba, ch46=138 Hadrian
+  dies.) Macer (b.~48) is
   exceptionally long-lived (characterful: the indestructible old contractor); his
   death lands in ch48, pinned ~138 AD at ~90, an age people remark on as freakish
   (may move as early as ~133 if a writer prefers). Do NOT state a Macer age past ~90.

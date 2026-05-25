@@ -357,7 +357,7 @@ craftsmen's patronage system endowed against his death; the workshop as an acade
 The shift from inventing to gardening. Plant: the structures that survive to the
 epilogue; who he's grooming to run them. Files: 01,02,04,06.
 
-### ch40 — The Books [TODO]
+### ch40 — The Books [ACCEPTED]
 Beats: the encyclopedia in earnest - ordered from arithmetic up through algebra,
 geometry, the idea of calculus, Newtonian mechanics, his fuzzy chemistry/biology/
 astronomy, political and economic theory, the shape of unbuilt technologies.
