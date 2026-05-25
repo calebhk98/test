@@ -686,6 +686,44 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   remain UNRESOLVED at chapter's end (carried into ch27). Closing image: the river
   finding its level (NOT the phone relic).
 
+- [ch27] Early spring ~113 AD, Daniel ~32, imperial freedman. THE IMPIETY CRISIS
+  breaks and resolves AT A COST. VIBENIUS came to the wharf and made Daniel rehearse
+  his "reason." DANIEL'S "REASON" (said to a god's face, which he does NOT believe,
+  and which shames him): the knowing/ladder is not his; every rung was already set
+  down by the gods for him to find; building the ladder is thanking them "in the
+  only language that doesn't lie, which is work," and he merely carries the fire
+  back as an offering.
+- [ch27] THE RECKONING ("a trial by rumor and patronage," NOT a court): held in a
+  lent house on the Caelian belonging to **MANIUS AEMILIUS SCAURUS** (new minor:
+  a grand-old-family senator whose name "leans nowhere," so his house can host an
+  undecided thing). Panel = three priests of the college (VIBENIUS dominant), the
+  accuser CRISPUS, and watchers including Macer and Scaeva. CRISPUS pressed a lethal
+  impiety case (the ladder climbing past the gods; the "clean rag" against heaven's
+  will; foreign rites; lies crowned on Minerva). Daniel could NOT win on rhetoric,
+  floundered, then surfaced on dead children and the gods'-gift framing.
+- [ch27] HOW IT WAS DECIDED (patronage, not merit): MACER hung back at the wall and
+  spent NOTHING to protect Daniel (cold, the limit of the bond; NOT a rupture; plants
+  ch33). SCAEVA leaned in with senatorial weight from his seat and tipped the room,
+  making Daniel PUBLICLY "Scaeva's man" (tightens the leash pulling east; sets up
+  ch28). VIBENIUS had a younger haruspex read the expiation-victim's liver "sound";
+  whether Vibenius believed Daniel's reason, was bought, or made a cold call is NEVER
+  shown (he stays unreadable).
+- [ch27] THE PUBLIC COST: a white heifer with gilded horns sacrificed to MINERVA on
+  the Aventine during the QUINQUATRUS, paid from Daniel's purse and led by his own
+  hand; and the FORMAL DEDICATION of Daniel's whole enterprise (press, the new
+  figures, the contest) into Minerva's keeping. LOSS WITH TEETH: the priestly
+  colleges now hold a PERMANENT HOOK in the contest/press/figures - a right to be
+  consulted, and a rite said every Quinquatrus before winners are crowned. The
+  contest's/enterprise's independence is compromised (relevant to Part VI
+  institution-building).
+- [ch27] DEBTS: Daniel now owes VIBENIUS an unpayable, unquantified debt (what
+  Vibenius does with Daniel's "reason" is "not in your hands"); and is bound more
+  deeply to SCAEVA. CRISPUS was publicly DEFEATED this round (the gods declared FOR
+  the barbarian, on Minerva's own day, the worst outcome for him); he is ALIVE, his
+  hatred hardened. MARCIA stayed home (Daniel insisted); she and Tyche pre-mapped
+  the room's players the night before. Closing image: a bad iron hinge with a hidden
+  internal flaw (NOT the phone relic).
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,

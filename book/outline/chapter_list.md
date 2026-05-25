@@ -261,7 +261,7 @@ of his fame. A dangerous, dazzling high - the more visible he is, the better the
 target. Plant: Apollodorus's pride (sets up his fall under Hadrian); Daniel's
 overexposure. Files: 01,02(Apollodorus),03,06.
 
-### ch27 — The Accusation [TODO]
+### ch27 — The Accusation [ACCEPTED]
 Beats: the crisis. A charge of magic/impiety/fraud, fed by Crispus and used by
 Scaeva, that could end Daniel. A trial-by-rumor and patronage. He survives by
 usefulness and by Vibenius's bought or genuine omen - at a cost (a public
