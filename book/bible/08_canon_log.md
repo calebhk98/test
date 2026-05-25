@@ -516,6 +516,33 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   own). Daniel slipped and said "at home"; she noticed and didn't ask. PAMPHILUS
   now has a wife, lodged at the wharf yard.
 
+- [ch21] 106-108 AD, Daniel ~26-28, imperial freedman. He CROSSED the ch14
+  gunpowder vow by rationalization (steel gates everything he wants; the belief /
+  half-misremembering that the Seres already had powder). This is distinguished
+  from his manned-balloon vow, which he KEEPS.
+- [ch21] Niter beds: wall-scrapings give the wrong (calcium) nitrate; dung + urine
+  + ash + lime beds, leached through wood-ash, took ~2 years for usable saltpeter.
+  Sulfur bought from volcano country via Pamphilus to hide Daniel's name. He found
+  ratios by trial, clung to a "three-quarters" memory, and corned the powder (too
+  late for Geta).
+- [ch21] ACCIDENT: GETA (new named character; a wharf freedman on wages, the
+  grinder) was flash-burned grinding dry powder in a closed shed; he lost his left
+  hand (amputated at the wrist), three fingers of the right, the sight of one eye,
+  and took facial burns. He survived; Daniel keeps him on lifetime wages and built
+  him a room; Heras treated him.
+- [ch21] CANNON: HERMES cast a flawless thick-walled bronze cannon BUILT to burst;
+  oak cradle, staked 60+ paces out. Public burst demonstration downriver before
+  Guard officers, an engineer or two, and an UNNAMED IMPERIAL-HOUSEHOLD MAN (who
+  returned twice afterward - a plant); CELER present. The stone crossed the river;
+  the bronze shattered. The argument made: the best bronze cannot hold the force,
+  so better steel is needed.
+- [ch21] EFFECT: steel is now the powerful men's question (money/inquiries flowing
+  to Hermes's forge); gunpowder is LOOSE (Rome knows it works and roughly what it
+  eats); steel REMAINS UNSOLVED. Daniel is more useful, more watched, uneasy. HERAS
+  knew and disapproved but helped. The correct powder ratio is written in Daniel's
+  ENGLISH cipher (only Tyche can read it); final image is his thumb over the figures
+  in the dark, NOT erasing them.
+
 ## COORDINATOR CANON DECISIONS (read these - they bind downstream chapters)
 - [DECISION Part III re-sequenced for chronology, after ch17] Because Daniel is now
   bound to serve the Second Dacian War (105-106), Part III chapters ch18-ch24 are

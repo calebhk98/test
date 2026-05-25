@@ -208,7 +208,7 @@ a man and his freed female slave (gossip, Macer's crude jokes, the danger to her
 Tyche's own anger, agency, and terms. Not romance. Plant: the English cipher; Tyche
 as future keeper of the ladder; her agenda. Files: 01,02(Tyche),05,06,07.
 
-### ch21 — The Cannon That Bursts [TODO]  (re-sequenced: was ch19)
+### ch21 — The Cannon That Bursts [ACCEPTED]  (re-sequenced: was ch19)
 Beats: 106-108. The niter-bed slog (smelly, multi-year, dangerous); a powder
 accident hurts an assistant. Then the public cannon demonstration: built knowing
 Roman bronze can't hold the pressure, fired from a safe distance, it bursts. The
