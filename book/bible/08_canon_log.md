@@ -906,6 +906,37 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   image: Lucanus (~6) counting figures against his arm; a room "about the size of a
   cell" (callback to ch02). No new named characters; no tech-state changes.
 
+- [ch34] Autumn-winter ~118 AD, Daniel ~37, imperial freedman in Rome (Hadrian now in
+  the city; the debt-cancellation in force). THE GRIND of starting over: Daniel
+  abandons the senators and courts low fiscal functionaries and procurators' freedmen,
+  kept standing in porticoes, turned away, TWICE waved past by doormen because he now
+  reads as a nobody. "The smallest I had been since the cell."
+- [ch34] MARCIA and TYCHE front-and-run the enterprise: contracts/figures/contest all
+  under "Marcia, liberta, widow of Caepio"; Tyche catches fraud cold and keeps the
+  hidden box/cipher (moved AGAIN, location now withheld even from Daniel). Marcia sets
+  the patient strategy ("feed the clerk for a year"; Daniel is to be the dull man and
+  let the marks be famous in his place). Daniel now operates from the shadows behind
+  them.
+- [ch34] NEW NAMED CHARACTER: **EUDEMUS**, a Greek freedman, secretary/clerk in the
+  imperial FISCUS (treasury). He values the new figures as accounts that cannot hide a
+  lie, fit for Hadrian's debt-cleanup. STATE OF CONNECTION: a DOOR, not a friend; he
+  risks nothing; he may one day "say a name" to a man higher than him (probably
+  Marcia's name, "it travels better") on a day he does not control. The audience-route
+  toward Hadrian begins to open, tentative/unfinished. Met once; a SECOND summons from
+  Eudemus arrives at chapter's end (unanswered on the page). Pays toward ch35.
+- [ch34] OCEAN-MAP PLAN reframed/matured (still FILED, NOT pitched to anyone in power):
+  not conquest (dead for a pull-in emperor) but KNOWLEDGE + PRESTIGE (knowing the true
+  shape of the world, an Alexander-style legacy) PLUS a grand non-conquest project to
+  occupy idle/dangerous legions (shipbuilding, mapping, a voyage). Discovered in scene
+  via Tyche's "a man taking an inventory"; Tyche recorded the framing in the English
+  cipher. Pays off ch36.
+- [ch34] HERAS (~65) re-approached after ~a year of deliberate avoidance; bond warm and
+  intact; he brokered the Eudemus connection via the Greek network (an unnamed older
+  Greek patient, "the uncle"); Heras's and the patient's names kept out of it. No
+  tech-state changes; isolation continues; divergence ledger empty. Closing image:
+  Lucanus (~6) miscounting a printed sheet; Daniel leaving to meet "a man who was not
+  my friend" (NOT phone/roof/maxim).
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,

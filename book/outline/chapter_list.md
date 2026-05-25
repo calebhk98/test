@@ -312,7 +312,7 @@ survival mode, his network shredded. A frightening, claustrophobic chapter. Plan
 how alone he is now; the cost of having tied himself to the old regime. Files: 01,
 02,03,05,06.
 
-### ch34 — From Scratch [TODO]
+### ch34 — From Scratch [ACCEPTED]
 Beats: the humiliation of rebuilding every relationship middle-aged, with an
 emperor who owes him nothing and distrusts the famous. Slow, grinding political
 repair. Marcia and Tyche hold the enterprise together while Daniel maneuvers.
