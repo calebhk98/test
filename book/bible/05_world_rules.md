@@ -15,12 +15,16 @@ real world.
 - It works as a self-contained device: clock, calculator, camera, notes,
   whatever was already downloaded (some music, some photos, maybe an offline
   map app that's useless without data, a couple of saved articles by luck).
-- **Battery life: ~50-100 hours of active use, and it dies for good inside two
-  weeks.** He wastes the first day or two panicking (calling, cycling apps). By
-  the time he thinks to write things down, the battery is already burning down.
-  His notes are rushed, partial, disorganized. After the phone dies, EVERYTHING
-  is human memory, fallible. No charging it, no solar trick, no Roman battery.
-  The phone becomes a dead glass relic he keeps - a talisman, a danger if seen.
+- **Battery: it dies within DAYS, not weeks.** CANON (per ch01-03): his panicked
+  first day - calls, the dialer, camera, the maps app, and above all the cellular
+  radio screaming at full power hunting for a signal that isn't there - torched
+  most of the charge (98% on arrival down to ~11% by the morning of day two,
+  despite switching to airplane mode and dimming the screen overnight). So the
+  phone dies for good around day three to four, not in two weeks. This makes his
+  notes an even more rushed, panicked fragment, which suits the theme. After it
+  dies, EVERYTHING is human memory, fallible. No charging it, no solar trick, no
+  Roman battery. The dead phone becomes a glass relic he keeps - a talisman, a
+  danger if seen.
 - Do not let the phone be a cheat. It is a clock and a calculator for two weeks
   and a grief object after.
 

@@ -73,3 +73,23 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   "Daniel"; the officer cannot pronounce it. Optio is UNNAMED on the page so far.
 - [ch02] Ends on Daniel eating garum-flavored grain mush with his fingers in the
   dark.
+- [ch03] ~2 days since arrival (morning after the first night). Daniel is hauled
+  before a soft-jawed MAGISTRATE (red-banded tunic; a clerk with a wax tablet; the
+  optio present) to be assessed (spy/lunatic/runaway). All UNNAMED on the page.
+- [ch03] THE MAP: Daniel mimes for the bronze stylus and wax tablet and draws the
+  world. Recognizable Italy/boot (stuns the optio) and decent Mediterranean coast;
+  Sicily and Greece too clean/too few islands; whole-shaped Africa but too narrow
+  with too sharp a point; Arabia/Red Sea okay; India too small and too far north;
+  a big wrong-detailed China; guessed Japan and scattered SE-Asia islands; and the
+  bombshell - two badly drawn but unmistakable continents (the Americas) across a
+  blank western ocean. The clerk copies the map onto a fresh tablet leaf (it now
+  exists "loose"). Daniel privately regrets having drawn the western lands.
+- [ch03] Reaction shifts from contempt to calculation; he is untied, given bread
+  by the optio, and now treated as valuable. The magistrate sends a spearman to
+  fetch a "healer"/foreigner (the physician, met in ch04).
+- [ch03] PHONE at 11% at chapter's end (heavy day-1 signal-hunting drained it).
+  Still only 2 photos. He plans to use the offline map app's cached coastlines
+  that night to refine future maps (honest crutch); the app still cannot locate
+  him. (Phone is now days from dying - see world rules.)
+- [ch03] Daniel still understands no Latin; he learns no usable word yet, only
+  re-recognizes the optio's name-sound and the mangled "Daniel."

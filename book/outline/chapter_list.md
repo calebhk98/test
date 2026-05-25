@@ -30,7 +30,7 @@ first night. Plant: the decision to be a "scholar from far away," not a time
 traveler; the notes that will be incomplete; a sympathetic guard (optio). Files:
 00,01,05,06.
 
-### ch03 — The Map [TODO]
+### ch03 — The Map [ACCEPTED]
 Beats: brought before a local magistrate/official; the language wall is total;
 on impulse he asks for something to draw on (gestures), and draws the world -
 Mediterranean, then Africa entire, Asia past Persia, two landmasses across the
