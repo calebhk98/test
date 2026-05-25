@@ -247,7 +247,7 @@ the rest of the book; a faint sense the ground is too good to last. Files: 01,02
 
 ## PART IV — TOO VALUABLE (110-117, Daniel 29-36)
 
-### ch25 — Three Faces [TODO]
+### ch25 — Three Faces [ACCEPTED]
 Beats: peak influence = peak danger. Scaeva the senator courts Daniel as a
 factional weapon (his powder, his devices); Crispus's intellectual attacks turn
 toward "impiety"; Vibenius holds the religious card he could play either way. The

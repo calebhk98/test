@@ -618,6 +618,41 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   useful to be safe). MARCIA is pregnant with their first (freeborn) child. STICHUS
   is now a grown man (no longer the coal-pot boy), working at the yard.
 
+- [ch25] Winter ~110-111 AD, Daniel ~29-30, imperial freedman at the wharf yard.
+  PART IV opens. Marcia's SON is born, healthy, but UNNAMED through the chapter
+  (Roman custom: named on the ninth day; a gold bulla is prepared; the naming is
+  set for the day after Vibenius's visit). NO name given on the page yet (log it
+  when a later chapter names him). Marcia ran the books from her childbed.
+- [ch25] PUBLIUS CORNELIUS SCAEVA introduced and NAMED (first appearance). Senator,
+  ~57-58: tall, a once-hard frame gone soft; long deeply-lined face; smiles often
+  and means it about a third of the time; iron hair brushed forward; broad purple
+  senatorial stripe worn without fuss; low, unhurried, beautifully placed orator's
+  voice. Travels with EIGHT bearers ("the senatorial number" = affordable restraint).
+  He came to the gate eight days after the boy's birth. WANTS: to become Daniel's
+  sole patron, pull him out of Macer's orbit, and have the powder/cannon "pointed
+  somewhere" by a friend once steel is solved. He calls the figures/press "the engine."
+- [ch25] DEBT/HOOK (Scaeva): Daniel ACCEPTED a favor - Scaeva will "fix" a river-gate
+  customs man who was holding up Daniel's SULFUR shipments. So Daniel now owes Scaeva
+  an obligation, AND Scaeva now knows Daniel imports sulfur, roughly how much, and
+  through which gate (i.e. Scaeva has mapped Daniel's powder-supply weak point). Daniel
+  grasped the cost only after agreeing.
+- [ch25] CRISPUS (~52) shifted his attack fully from fraud/Thule-is-a-lie to IMPIETY,
+  at the baths, before witnesses, pinning "the barbarian's heaven by ladder" (his ch24
+  phrase) on the staircase-prize. Daniel parried by reframing the ladder as "the
+  longest prayer there is," but is now ON RECORD as having heard the impiety charge.
+- [ch25] AULUS VIBENIUS (~67) came ON FOOT to the yard the day before the naming. He
+  declined to attack OR protect ("my house does not lean"), and laid out the closing
+  trap: a FORMAL impiety complaint has reached the priestly colleges (lodged by "a man
+  of standing"); the colleges wait to see which way the great houses lean; Scaeva
+  leaning toward Daniel would make the ladder "a ladder to the field" and turn impiety
+  into a COURT matter. DEBT/HOOK (Vibenius): he demanded Daniel have ready "a reason he
+  could say to a god's face," to be called for on a day of Vibenius's choosing.
+  Vibenius's verdict (bless vs brand) is explicitly UNDECIDED and load-bearing.
+- [ch25] Trajan's favor reaffirmed as Daniel's load-bearing shield, with the limit
+  named: a man of letters proving the emperor's wonder false only embarrasses the
+  emperor, but an IMPIETY charge can outrank that protection. (Sets up ch27.)
+- [ch25] No tech/device state changes. Plants for ch27 ("The Accusation") set, unresolved.
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
