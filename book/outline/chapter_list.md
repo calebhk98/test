@@ -254,7 +254,7 @@ toward "impiety"; Vibenius holds the religious card he could play either way. Th
 net tightening, shown through three encounters. Plant: the coming accusation;
 which ally is compromised. Files: 01,02(Scaeva,Crispus,Vibenius),06.
 
-### ch26 — The Forum [TODO]
+### ch26 — The Forum [ACCEPTED]
 Beats: 112-113; Trajan's Forum and Column dedicated (backdrop set-piece). Daniel's
 public prestige glitters; collaboration and rivalry with Apollodorus at the height
 of his fame. A dangerous, dazzling high - the more visible he is, the better the

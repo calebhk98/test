@@ -653,6 +653,39 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   emperor, but an IMPIETY charge can outrank that protection. (Sets up ch27.)
 - [ch25] No tech/device state changes. Plants for ch27 ("The Accusation") set, unresolved.
 
+- [ch26] ~112-113 AD, Daniel ~31-32, imperial freedman at peak influence. OPENS on
+  the ninth-day NAMING of his and Marcia's freeborn son: **MARCUS ULPIUS LUCANUS**
+  (cognomen "Lucanus," chosen by Marcia). Freeborn citizen, bulla hung. (The son
+  Daniel can never legally be the equal of - freeborn where Daniel is a freedman -
+  and a new hostage to fortune under the impiety threat.)
+- [ch26] BACKDROP: the dedication of TRAJAN'S FORUM (112) and TRAJAN'S COLUMN (113,
+  still under construction at its lower turns). Daniel moves through the crowd as a
+  courted marvel; Scaeva's leash felt via a freedman at Daniel's elbow; Scaeva's
+  customs-gate favor is now IN EFFECT (Daniel's sulfur passes unmolested).
+- [ch26] THE COLUMN beat: Daniel reads the sanitized stone version of the Dacian wars
+  he served in; his tethered balloon appears mis-carved as a "fishing-float"; he
+  silently registers the soldier the relief omits (SABINUS, NOT named on the page).
+  Seeds the legend-vs-man / "who decides what is remembered" theme (pays toward ch51).
+- [ch26] APOLLODORUS (now ~60+, white-haired, old mis-set right-hand knuckles; built
+  the Forum/Column) met as wary PEER-RIVAL (NOT friend; alive and must survive to
+  ch37). He reuses "a clever toy that does one thing"; he declined to arrange the
+  reliefs' marching order; he told Daniel he'd reached "the bottom of the well he
+  brought with him." Daniel confided to him that he cannot build a working clock
+  escapement (consistent with the ch23 gap). His PRIDE/inflexibility planted hard:
+  "A man who softens his true things to suit the listener is building on sand."
+- [ch26] HADRIAN appeared as a GLIMPSE only, UNNAMED on the page (a bearded man of
+  ~40 in the emperor's circle, a draughtsman's roll under his arm, designs "gourd"/
+  segmented domes). Apollodorus contemptuously dismissed his architecture loudly
+  ("go and paint his gourds"); a cold precise exchanged bow; Daniel read the danger
+  of a proud man humiliating a powerful one ("which of the two had the more to lose,
+  and it was not the one with the power"). Daniel does NOT know who he is. SEEDS the
+  ch37 enmity. (Hadrian's full introduction remains ch35.)
+- [ch26] Demetrios's spyglasses still failing publicly (a perfumer's wife sees only
+  colored fog). Tech state otherwise unchanged.
+- [ch26] The impiety complaint, Scaeva's hook, and Vibenius's pending verdict all
+  remain UNRESOLVED at chapter's end (carried into ch27). Closing image: the river
+  finding its level (NOT the phone relic).
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
