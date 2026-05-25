@@ -239,6 +239,30 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   arc not yet developed.
 - [ch09] The workshop is relocating to the walled yard by the timber wharf.
 
+- [ch10] Late 99 into early 100 AD; Daniel ~19, still a slave with a peculium. He
+  founds the walled, guarded TIMBER-WHARF YARD (a well, a shed, a tally-room).
+- [ch10] Assigned slaves: TYCHE (keeps the cloth tally; SECRET math aptitude -
+  taught herself place-value and long division in a week; Daniel HIDES this so
+  Macer won't sell her per the ch09 warning) and PAMPHILUS (~30s, a collared
+  porter who cuts cloth; Daniel cannot remove the riveted collar). Daniel pays
+  FREE wharf-women for stitching piecework via his peculium; resents the chained
+  hands; is powerless to free anyone (he is property himself).
+- [ch10] Accountants: ONESIMUS (senior, resists the new figures); unnamed young
+  clerks adopt them for auditability. The house runs BOTH systems; numerals are
+  kept OFF formal contracts. Adoption is patchy.
+- [ch10] A moldboard plow + bean-rotation sent to Macer's estates; reception
+  marginal/lukewarm.
+- [ch10] FIRST BLOCK-PRINTING done: a line of Greek Homer carved on pearwood, a
+  crude gray impression; Heras witnessed.
+- [ch10] Salon host: METTIUS (an equestrian with money and an ambitious wife;
+  NOTE: renamed from "Vibius" to avoid clashing with the haruspex Vibenius - use
+  "Mettius" going forward). Macer lent Daniel to the salon "like a remarkable
+  horse" and watched from the back.
+- [ch10] LUCIUS VETTIUS CRISPUS introduced at the salon: ~40, oiled, elegant;
+  cites Strabo calling Pytheas a liar; uses the word "Hyperborean"; insinuates
+  Daniel is a fraud and Thule a lie; patronizes, then resents. Intellectual
+  antagonist now planted.
+
 ## COORDINATOR CANON DECISIONS (read these - they bind downstream chapters)
 - [DECISION owner=Macer] The equestrian who has HELD Daniel since ~ch04 (the
   unnamed "higher party"; the "owner" who arranges the demo and deals via a
