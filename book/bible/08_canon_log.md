@@ -1044,6 +1044,43 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   UNCHANGED by this chapter (Daniel failed to alter Apollodorus's fate). Closing image:
   the plumb-line going into the cipher-book among his failures (fresh; not banned set).
 
+- [ch38] ~127 AD, Daniel ~46 (NOTE: year locked at 127 to reconcile a draft age/date
+  conflict - Daniel "six-and-forty," the Four Consulars "nine years dead," daughter age
+  9 born ~late 118 all agree at 127). CLOSES PART V; hinges into Part VI. Hadrian (~51)
+  is the traveling/building emperor (Britain wall, the Rhine, the round temple in Rome),
+  mostly away; the terror is nine years behind; Daniel is "useful, leashed, let alone."
+- [ch38] OCEAN PROGRAM state: African coast mapped a few headlands further south
+  (survey on the map, never the scouts, per Hadrian's order); the western yard built two
+  hulls, lost one in a gale, building a third; the sea-clock prize stands UNWON (and
+  Daniel expects it to outlast him). "Almost nothing, very slowly, in the right
+  direction."
+- [ch38] AGING - FIRST SIGNS: presbyopia. Daniel cannot read his own small carry-over
+  figures; he holds work at arm's length; Roman glass cannot be ground into a reading
+  lens (the bitter mirror of the failed spyglass). Heras (~74) has it too (reads
+  Hippocrates at arm's length). "Blind to small figures by fifty, near enough."
+- [ch38] THE PIVOT (Part V->VI hinge) reached in scene: MARCIA (in her storeroom) gives
+  the figure ("a thing that is yours dies when you do"; his head is going, his hands
+  will follow); HERAS (the lamp/Hippocrates argument: "you are being the man another man
+  reads by a lamp in six hundred years") steadies it. Daniel COMMITS to building what
+  outlasts him: the PRESS as a self-running body; the CONTEST given its OWN coin (off
+  Daniel's purse/Macer's credit); a CRAFTSMEN'S-FAILURE PATRONAGE ENDOWMENT (pays a smith
+  to chase steel for ten years and fail and chase again); and above all THE BOOKS / the
+  encyclopedia / the ladder (the only one needing no money or emperor, only to be written
+  and hidden). Institution plan PLANTED, not built (ch39-41).
+- [ch38] DAUGHTER established: **ULPIA SEVERA** ("the grave one"), freeborn, age 9
+  (b. ~late 118, "the year I came back from the East" - the only window: Lucanus was b.
+  ~112 pre-war, and Daniel was in the East 114-early 118, so she was conceived on his
+  return). Square, unsmiling, fierce at figures (does the nine-times-table; "Lucanus said
+  girls can't do past the seven"). The cognomen "Severa" cost an argument with Marcia (a
+  freedman's daughter takes only his nomen by law; Marcia said a girl needs no cognomen,
+  Daniel insisted "this one will"). Sets up the ch41 daughter-question. Eros (pressman)
+  aging with NO apprentice cutting blocks yet (flagged gap for ch39).
+- [ch38] Closing image (acceptable per QA, fresh): Daniel at the far edge of the lamplight
+  watching Ulpia fill the times-table page from "a distance that had nothing to do with
+  the dark," thinking of the cipher-book that starts with these same nine courses and
+  must be written while there is still an eye to write it and a child who could be taught
+  the cipher. (Note: future chapters must vary AWAY from child-with-figures closers.)
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
@@ -1075,7 +1112,8 @@ Check this before stating any age on the page.
   who first carried him to the army. (Supersedes the stale ch29-brief phrasing "if
   Celer survived ch21" - nothing in ch21 threatened him.)
 - [DECISION death years, provisional - pin exactly when drafted] Heras (b.~53)
-  dies in ch42, pinned EARLY in Part VI (~126 AD, age ~73). Macer (b.~48) is
+  dies in ch42, pinned ~129-130 AD (age ~76-77) - moved later than the original
+  ~126 because ch38 is now set ~127 with Heras alive. Macer (b.~48) is
   exceptionally long-lived (characterful: the indestructible old contractor); his
   death lands in ch48, pinned ~138 AD at ~90, an age people remark on as freakish
   (may move as early as ~133 if a writer prefers). Do NOT state a Macer age past ~90.

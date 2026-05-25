@@ -341,7 +341,7 @@ bending where a prouder man broke. Grief and guilt. Plant: Daniel's survival
 strategy crystallized; the loneliness deepened. Files: 01,02(Apollodorus,Hadrian),
 05,06.
 
-### ch38 — Consolidation [TODO]
+### ch38 — Consolidation [ACCEPTED]
 Beats: Part V turn. Hadrian abandons the eastern conquests, travels, builds; the
 empire turns inward. Daniel finds footing in the new order and pivots fully toward
 what will outlast him. Sets up the institution phase. Plant: the institution plan;
