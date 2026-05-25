@@ -50,7 +50,7 @@ status board.
 - [x] World rules
 - [x] Glossary
 - [x] Master outline + chapter list (53 chapters, 7 parts + epilogue)
-- [ ] Chapters drafted: 12 / 53
-- [ ] Chapters accepted: 12 / 53
+- [ ] Chapters drafted: 13 / 53
+- [ ] Chapters accepted: 13 / 53
 
 Update the counts as work proceeds.

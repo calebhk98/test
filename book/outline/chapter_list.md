@@ -132,7 +132,7 @@ bridge and the man himself - the one mind who meets Daniel as a peer, with respe
 and rivalry. Plant: Apollodorus relationship; the war's scale; dysentery in camp
 (future medicine thread). Files: 01,02(Apollodorus,Celer),04,06.
 
-### ch13 — The Fall [TODO]
+### ch13 — The Fall [ACCEPTED]
 Beats: the manned-balloon DISASTER at the frontier - a flight goes wrong, fire or
 a fall, a death (or maiming). Daniel watches his invention kill. The chapter is
 the price of his gifts made physical. War around him; no clean heroism. Plant:

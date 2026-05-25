@@ -301,6 +301,44 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   referenced as ~three weeks past. PAMPHILUS came north with Daniel; TYCHE stayed
   in Rome and keeps the wharf yard.
 
+- [ch13] 101 AD, Danube front. THE DISASTER. The army forced a MANNED FREE-FLIGHT
+  balloon to scout Dacians massed behind a hill the men called "the Loaf," three
+  days before a column was to advance. Daniel warned it would fail in the river
+  wind and was overruled (a slave's no is "a sound you make, not a thing that
+  happens"). Apollodorus dismissed it again ("clever toy"), told Daniel to object
+  to anyone who could stop it, then withdrew to his bridge.
+- [ch13] MARCUS AURELIUS SABINUS DIED: a volunteer soldier, ~25, a scar through one
+  eyebrow that left him looking faintly amused, a wife and two children (a boy who
+  minds the goats, and a girl) in Pannonia. He rose clean to ~100 ft; a crosswind
+  swung the basket out on its single-point hang; the wet-clay fire-bowl tipped; the
+  flame laid sideways ignited the greased seam; the bag came apart in fire; he fell
+  ~100 ft with the burning cloth and was killed on impact. He never reached height
+  to count the Dacians. (Render-only canon: the burning rag, the sound Daniel won't
+  write, the cloth settling over the body.)
+- [ch13] Daniel's safety measures (ALL insufficient against wind): oversized slow
+  envelope, a long low basket (sit low, keep weight under the bag), a wet-clay
+  fire-bowl on a wet plank with a one-pull choke-lid cord, soaked willow and hides,
+  a wet leather hood and gloves, and a trailing locator line. He made Sabinus
+  repeat the safety rule (one thing wrong, pull the cord, sit, come down) twice.
+- [ch13] NASO was present (sent north with the baggage to tend mules; ruined left
+  hand, ankle hitch); he warned "make him keep his seat"; afterward he put his one
+  good hand over Daniel's fist on the burned rag, wordless, then limped back to the
+  mules.
+- [ch13] CELER took responsibility ("You said the wind... I let it go anyway.
+  That's mine"), BANNED further manned ascents from his command, and will tell the
+  legate it can't be done from that side. He challenged Daniel: "you're going to
+  have to decide what kind of man builds a thing like that." Respect-bond intact.
+- [ch13] Army pragmatism: the column still moves in three days; work continues
+  immediately; Sabinus will be recorded as a volunteer ("It won't be a lie").
+- [ch13] PAMPHILUS still north; the flux is still in camp and they boil water.
+  FINAL IMAGE: Daniel burns the scorched corner of cloth he carried all day. His
+  status unchanged (slave on loan); guilt and a coming reassessment are seeded for
+  ch14, undeclared.
+- [VOICE WATCH] ch13 uses a few earned close-retrospect lines ("I have never
+  forgiven...", "as long as I live"). These are within the memoir's permitted
+  retrospect, BUT watch their frequency across chapters - do not let "I still / I
+  never / as long as I live" become a per-chapter tic. Future writers: use sparingly.
+
 ## COORDINATOR CANON DECISIONS (read these - they bind downstream chapters)
 - [DECISION owner=Macer] The equestrian who has HELD Daniel since ~ch04 (the
   unnamed "higher party"; the "owner" who arranges the demo and deals via a
