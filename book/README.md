@@ -42,15 +42,15 @@ status board.
 
 ## STATUS BOARD
 - [x] Foundational docs (premise, style, agent rules, README, briefs)
-- [ ] Research ingested (history + tech feasibility)
-- [ ] World bible
-- [ ] Characters
-- [ ] Timeline
-- [ ] Tech schedule
-- [ ] World rules
-- [ ] Glossary
-- [ ] Master outline + chapter list
-- [ ] Chapters drafted: 0
-- [ ] Chapters accepted: 0
+- [x] Research ingested (history + tech feasibility)
+- [x] World bible
+- [x] Characters
+- [x] Timeline
+- [x] Tech schedule
+- [x] World rules
+- [x] Glossary
+- [x] Master outline + chapter list (53 chapters, 7 parts + epilogue)
+- [ ] Chapters drafted: 0 / 53
+- [ ] Chapters accepted: 0 / 53
 
 Update the counts as work proceeds.
