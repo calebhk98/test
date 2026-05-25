@@ -724,6 +724,34 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   the room's players the night before. Closing image: a bad iron hinge with a hidden
   internal flaw (NOT the phone relic).
 
+- [ch28] Late ~113-114 AD, Daniel ~32-33, imperial freedman. The PARTHIAN WAR opens
+  and Daniel is pulled EAST by a DUAL authority: the emperor's house (army health /
+  water / the flux that kills more than battle) AND Scaeva (who commended Daniel to
+  eastern officers already half his, and asked Daniel to write to him as "the
+  senator's eye"). Both leashes tightened. He left Marcia, ~1-yr-old Lucanus, and
+  Tyche running the enterprise in Rome.
+- [ch28] JOURNEY: road south to Brundisium, by sea down the coast to SYRIA. By
+  chapter's end Daniel is at the army camp outside ANTIOCH (the eastern staging
+  base); he has NOT gone deep east (Ctesiphon/Gulf = ch29). He did his established
+  work (camp/latrine siting, barrel-battery filters, boil-by-century discipline) and
+  kept his manned-balloon vow (tethered EMPTY basket only; refused two manned-ascent
+  requests again).
+- [ch28] THE MACHINE AT FULL STRETCH rendered through Daniel's compulsive arithmetic
+  of the supply lines pouring east - the awe/dread of how far Rome will reach for more.
+- [ch28] CELER (ALIVE, ~50-51) reappears, now PREFECT of an auxiliary cohort working
+  the supply road; two real scenes; he voices the war's overreach question ("out of
+  world or out of us"). He marched his cohort further east before dawn at chapter's
+  end (he survives into ch29, where he dies). NASO alive, kept on baggage/mule duty
+  in the rear by Celer (ruined left hand, bad ankle, ~31-32).
+- [ch28] HISTORY tracks real events with NO divergence yet: Armenia annexed (114,
+  heard secondhand via Celer). Divergence ledger still empty by design.
+- [ch28] OCEAN-GAMBIT GERM planted: PRIVATELY, half-formed, recoiled-from; Daniel
+  ties it to his ch03 world-map western continents (redirect Rome's bottomless hunger
+  west across the ocean instead of grinding up people in the east). NO ONE knows; he
+  pitches it to nobody; he himself doubts anything is reachable within a year's sail
+  (the map is unmeasured). Pays off with Hadrian in ch36. No tech state changes; no
+  new named characters (only Scaeva's unnamed freedman messenger).
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,

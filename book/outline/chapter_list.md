@@ -268,7 +268,7 @@ usefulness and by Vibenius's bought or genuine omen - at a cost (a public
 humiliation, a sacrifice, a betrayal, the loss of something). Plant: the fragility
 of a life built on being useful; a debt now owed to Vibenius. Files: 01,02,05,06.
 
-### ch28 — East [TODO]
+### ch28 — East [ACCEPTED]
 Beats: 113; the Parthian War begins; Daniel pulled toward army logistics and
 medicine (dysentery kills more than battle). The machine of conquest at full
 stretch. The ocean-map idea germinates as he sees how far Rome will reach for
