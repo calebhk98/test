@@ -1081,6 +1081,44 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   must be written while there is still an eye to write it and a child who could be taught
   the cipher. (Note: future chapters must vary AWAY from child-with-figures closers.)
 
+- [ch39] ~129 AD, Daniel ~48 (presbyopia worsening), Lucanus ~16, Ulpia ~11, Tyche ~44,
+  Macer ~80 (alive), Marcia ~55. OPENS PART VI. Daniel BUILDS the institutions (the
+  inventor becoming a tender of structures):
+  - PRESS made a self-running BODY: folded into an old letter-copyers' COLLEGIUM (a
+    burial-club legal form) as a printing-branch, irrevocably endowed by Daniel with a
+    half-share of two wharf-shop rents (wages/blocks/apprentices). First apprentice
+    block-cutter hired: **VITALIS** (NEW; 12, freeborn Subura wood-carver's son, father
+    dead of fever), bound to the SOCIETY not to Daniel for 3 years and required to teach
+    two others later (closes the ch38 cutter gap). (Apprentice was briefly mis-named
+    "Onesimus" in draft - corrected to Vitalis to avoid clash with the senior accountant
+    Onesimus of ch10/16/20.)
+  - CONTEST endowed via Marcia's maneuver: not the contest but MINERVA herself endowed
+    (a perpetual gift for her rite/shrine/incense/priest's portion), with the contest
+    bound into the deed as the goddess's works; the priestly colleges' ch27 right-of-
+    consult thereby converted into a fixed income that makes them the contest's PAID
+    PROTECTORS. Still held on the Quinquatrus; Macer still fronts it.
+  - PATRONAGE FUND founded: a foundation-in-trust (settled capital, income-only, a board
+    of three, administered by the same society) paying craftsmen a living wage for a
+    term-of-years, judged by recorded ATTEMPTS not successes. First beneficiaries:
+    HERMES (steel; ~60s; failure-record kept by Tyche in the cipher) and FELIX.
+- [ch39] **FELIX returns** (the planted epilogue climber): now ~40, FREE ~6 years
+  (self-purchased at ~34, ~123, the ch19 prize-fattened peculium having helped), a
+  bronze-caster behind the cattle market. Funded by the new endowment to chase the
+  self-fueling pot / the steam-and-steel wall for years; told plainly he will likely die
+  failing and is laying rungs for someone later. (ch19→ch39 arithmetic: ~18 as a slave
+  in 107, ~40 now - consistent.)
+- [ch39] VIBENIUS established as ~4 YEARS DEAD (d. ~125, age ~82). This lets his ch27
+  unpaid-debt thread lapse (he died without ever calling it in). No contradiction.
+- [ch39] KEEPERS seeded (NOT resolved): TYCHE keeps the cipher and runs the books, and
+  has "begun to look at" Ulpia as a hand she might one day need (Ulpia NOT yet taught the
+  cipher). LUCANUS (~16) REJECTS the workshop - he wants the law/the rolls/the basilica
+  (citizen-clear where Daniel carries the freedman stain); Daniel does not push him.
+  ULPIA SEVERA (~11) is fierce at figures (does the nine- then eleven-times course, beats
+  the second clerk) but the law bars a freedman's daughter from keeping a counting-house;
+  Marcia warns Daniel not to teach the girl to break herself on a bolted door. Closing
+  image: Daniel in the dark setting the sleeping apprentice's sharp gouge safe on the
+  bench (fresh; not a banned closer). No new divergence; ocean program grinds offstage.
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,

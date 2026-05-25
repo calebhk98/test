@@ -351,7 +351,7 @@ Daniel's aging first signs. Files: 01,02,03,06.
 
 ## PART VI — THE LADDER (125-138, Daniel 44-57)
 
-### ch39 — Institutions [TODO]
+### ch39 — Institutions [ACCEPTED]
 Beats: making the press and the contest into bodies that outlive their founder; a
 craftsmen's patronage system endowed against his death; the workshop as an academy.
 The shift from inventing to gardening. Plant: the structures that survive to the
