@@ -568,6 +568,25 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   Tyche. PLANT: freeborn children to come; Marcia knows Tyche reads the English
   cipher and approves it as the work's survival.
 
+- [ch23] 109-110 AD, Daniel ~28-29, imperial freedman; Marcia now runs the books;
+  Tyche (~24) is learning the English cipher. THREE HONEST FAILURES:
+  (1) CLOCK - he cannot build a mechanical clock (the escapement is a memory gap;
+  Hermes cut the gears but the regulator never works). He settled for a beautiful
+  geared WATER CLOCK (clepsydra) in the tally-room; it keeps inconsistent time;
+  Tyche corrects it by the sun twice a day.
+  (2) TELESCOPE - lenses ground from bubbly, striae'd Roman glass (by the cutter
+  DEMETRIOS, on dished iron) give only a dim, blurry, rainbow-fringed ~2x spyglass.
+  Marcia sold ~a dozen to rich Romans / a senator's wife anyway. The "see the
+  invisible ones / atoms" claim stays an unfulfilled LIE.
+  (3) RAILS - a flanged-wheel wooden rail demo at the stonecutter MAXIMUS's quarry
+  slope (past the brickfields) WORKED (4 men did 26 men's work) and was NOT adopted
+  because slaves are cheaper; MARCIA voiced the economics ("You own the men,
+  Maximus... you do not have to pay your haulers"). The demo line was torn out, the
+  wheels stored.
+- [ch23] Daniel CONCLUDES he cannot win in his lifetime and recommits to "the
+  books" as rungs to leave for others (strengthens the encyclopedia thread). New
+  minors: DEMETRIOS (glass cutter/lens grinder), MAXIMUS (stonecutter/quarry owner).
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,

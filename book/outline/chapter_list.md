@@ -227,7 +227,7 @@ nerve than the men. A partnership of equals forms; contubernium then marriage
 Plant: family-to-come; Marcia's own agenda for the enterprise. Files: 01,02
 (Marcia),06,07.
 
-### ch23 — The Things That Don't Work [TODO]
+### ch23 — The Things That Don't Work [ACCEPTED]
 Beats: a chapter of honest failure. The mechanical clock whose escapement never
 clicks in his memory (he builds a beautiful water clock instead). The telescope
 that yields a blurry, color-fringed toy. The rail carts demoed in a mine and NOT
