@@ -132,3 +132,31 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
 - [ch05] Workshop water-boy: STICHUS (~10), a slave/servant of the household.
 - [ch05] Daniel conceives the hot-air balloon (knows hot air rises) but it is
   unnamed, unbuilt, with no engineering worked out yet. End of Part I setup.
+- [ch06] Spring 99, Daniel ~18, ~1 year since arrival, still unfree. His logic for
+  the balloon: cheap, his own, unarguable ("you cannot call a man a liar about the
+  sky"). He notes the numerals and germ-talk both got waved away; a flying thing
+  can't be.
+- [ch06] Methods/materials: scrap linen rag (begged from Stichus), worn
+  see-through cloth, mutton grease as sealant, a green-wood cone to funnel heat,
+  brazier/open fire, a borrowed knife and needle. He works with NO equations -
+  shapes the envelope like rising smoke (teardrop on its small end) from memory.
+- [ch06] Test results: (1) hand-sized linen bag - too heavy, no lift. (2)
+  feed-sack of threadbare see-through cloth - tethered flight on a string, rose
+  above Stichus's head while fed, sank when heat stopped (Heras witnessed, called
+  it "very pretty"). (3) big greased-linen bag - sealing doubled the weight so it
+  wouldn't lift; he made the fire bigger, the greased lip caught, fire walked the
+  seam, it collapsed and was destroyed. (4) final half-sealed linen bag - lifted a
+  few feet for ~10 counted breaths, then a seam tore and it sank.
+- [ch06] The kitchen woman (UNNAMED; effectively runs the household) banned open
+  fire near the buildings (threw a wooden spoon); Daniel's fire-work moved to the
+  open slaughter-lot past the midden. He must now beg and carry coals.
+- [ch06] Heras funded ONE length of close-woven linen + a pot of mutton grease out
+  of cat-curiosity (not belief), and warned that linen and grease burn.
+- [ch06] Daniel burned his RIGHT FOREARM (a shiny red line up the inside;
+  blistered, hurt ~a week; cleaned with cooled boiled water) putting out the big
+  bag - the first time the project scared him with real injury.
+- [ch06] Lesson learned: the lift is free, the STAYING UP is the fight (heat must
+  be sustained, the only heat is open flame, sealing fixes leaks but adds killing
+  weight). He now understands he needs money, free status, real cloth by the bolt,
+  sustained safe heat, and more hands - and sees the circular trap (the balloon is
+  meant to earn the money the balloon needs). Balloon still unnamed in-world.

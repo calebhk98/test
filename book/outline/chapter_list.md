@@ -60,7 +60,7 @@ the practices work even if the story is nonsense. Daniel's loneliness sharpens
 cheap, his alone, undeniable. Plant: germ practices spreading without the theory;
 the balloon idea named. Files: 00,01,02,04,05,06.
 
-### ch06 — Cheap, Mine, Undeniable [TODO]
+### ch06 — Cheap, Mine, Undeniable [ACCEPTED]
 Beats: Daniel lays out (in action, not lecture) why the balloon: needs almost no
 money, he can build it largely himself over time, and no one can wave it away
 like germs or numbers. He scrounges linen, rope, a brazier; first crude tests
