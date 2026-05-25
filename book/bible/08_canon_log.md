@@ -115,3 +115,20 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
 - [ch04] THE PHONE DIES for good that night: black, won't wake or hard-reset. He
   keeps the dead glass as a relic. (Phone is finished as a functional device from
   here on.)
+- [ch05] Spans 98-99 AD; Daniel is ~18 by spring 99. HERAS is now NAMED on the
+  page. The Thule cover is now openly used between Daniel and Heras as a half-joke
+  Heras doesn't buy.
+- [ch05] Daniel's Latin is now functional-but-broken: he can converse about
+  present, concrete things, gets lost at speed, can barely read, keeps a v-as-w
+  accent and makes case errors. Greek is picked up slower, via Heras.
+- [ch05] Daniel is still lodged UNFREE in the workshop loft off a household, under
+  watch. (No money or freedom yet earned.)
+- [ch05] GERM FRAMING spoken aloud: "small living ones the gods send to climb
+  inside you [and eat you]." Heras demolishes it on miasma/humors/divine-wrath
+  grounds and warns it is dangerous witch-talk - then QUIETLY ADOPTS the practices
+  that visibly work: boiling water, washing hands/wounds, posca on scrapes (all
+  framed publicly as "clean," never as creatures). A sick boy recovers (Daniel
+  knows this proves nothing).
+- [ch05] Workshop water-boy: STICHUS (~10), a slave/servant of the household.
+- [ch05] Daniel conceives the hot-air balloon (knows hot air rises) but it is
+  unnamed, unbuilt, with no engineering worked out yet. End of Part I setup.

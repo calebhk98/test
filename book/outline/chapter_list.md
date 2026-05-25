@@ -50,7 +50,7 @@ here - render it plainly, no eulogy. Plant: Heras as skeptic-friend; "Thulean";
 the numerals beginning to travel; the dead phone kept as a relic. Files: 00,01,
 02(Heras),05,06,07.
 
-### ch05 — Latin and the Little Ones [TODO]
+### ch05 — Latin and the Little Ones [ACCEPTED]
 Beats: months compress. Broken Latin under survival pressure (render the
 humiliation and small wins). Daniel tries the germ framing on Heras - "tiny
 invisible creatures the gods send to climb inside you" - and Heras demolishes it
