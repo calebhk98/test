@@ -23,4 +23,27 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   Vettius Crispus, Aulus Vibenius, Publius Cornelius Scaeva, Marcia.
 
 ## Established in prose
-(empty — fill as chapters are accepted)
+- [ch01] Daniel wakes at dawn (~6:14 by phone clock) in a harvested stubble field
+  in the countryside; a large city (Rome) lies a long way off down a valley, with
+  the intact, new, gleaming Colosseum on its near edge. Season reads as
+  late-summer/harvest.
+- [ch01] Daniel's job: a hardware store. Coworker/manager "Marcus" who never
+  replaced a flickering light over the fastener aisle; register three; he was
+  counting deck screws into paper sacks when he "fell asleep."
+- [ch01] Clothes on arrival: blue jeans, gray T-shirt with a small hole at the
+  collar, brown steel-toe leather work boots (bought with his first paycheck), a
+  cheap nylon belt. Pocket keys: house key, spare to his mom's Corolla, a brass
+  copy of the store's back-door key.
+- [ch01] Phone: 98%, no signal/GPS, displays time. He took a photo of the
+  Colosseum; tried 911 (failed) and called his mom (failed). He has a mother.
+- [ch01] Daniel is good at math (calms himself by estimating; pegs the Colosseum
+  at ~600+ ft across, ~160-180 ft tall, concludes "two thousand years"). Took two
+  years of French in school.
+- [ch01] A small village of mud/rough-stone buildings with red clay-tile roofs
+  sits near the field (pigs, a donkey, a man with a knife/leather, a woman in a
+  headscarf). Villagers go still and shy away from his strange machine-made
+  clothes. A word is painted on a wall in recognizable Latin letters he cannot
+  read (he makes out R, A, N).
+- [ch01] Ends: four men with spears approach up the rise (two wearing leather
+  chest armor); the lead man holds the others back, watching Daniel's hands. He
+  pockets the phone and raises his hands, palms out.
