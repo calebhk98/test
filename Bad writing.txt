@@ -1,0 +1,66 @@
+**Outline Notes Masquerading as Prose**
+
+Describing the shape, function, or purpose of an event instead of rendering the event. If your sentence explains what a scene "will require," "forces," or "sets up," you've written a planning note, not a story beat. Write the scene. Cut the label.
+
+**Negative Narration**
+
+Telling the reader what isn't happening instead of what is. "He doesn't mention it. Nobody reacts. She says nothing." Silence in prose is already silence. Naming the silence destroys it. Trust the absence.
+
+**Telegraphing Twists**
+
+Calling something "unexpected," "surprising," or "not what anyone anticipated" before it happens. The word "unexpected" is the narrator telling you how to feel. If the moment is genuinely unexpected, the reader will feel it. If you have to announce it, the writing hasn't earned it.
+
+**Narrator Stepping Outside Time**
+
+Retroactively annotating significance from a position the story hasn't reached yet. "This was the last time they spoke." "He didn't know how important this would be." "It was the only moment like it before everything changed." These are a narrator managing your emotional response from the future. If the moment is significant, build the scene so it feels significant. The narrator shouldn't need to arrive from the future to explain why.
+
+**Announcing Emotional Weight Instead of Placing the Reader Inside It**
+
+Short punchy sentences that declare depth rather than create it. "The party moved on. He didn't." This has the rhythm of good prose and none of the function. The punch only lands if the reader already feels what the character is carrying. Skipping the earning and delivering the device is empty.
+
+**Dramatic Irony by Declaration**
+
+Stating the gap between what a character knows and what the reader knows instead of structuring the narrative so the gap exists naturally. "She didn't know he was lying. She never would." Real dramatic irony is architectural. The reader is positioned to know something the character doesn't. Announcing the irony collapses it.
+
+**Exposing Subtext**
+
+Writing what should remain beneath the surface directly into the text. If a character is hiding grief, the prose should show the behavior of someone hiding grief - not state that grief is being hidden. The moment you name the subtext, it becomes text, and the reader has nothing to discover.
+
+**Dialogue That Delivers Information**
+
+Characters saying exactly what they mean in emotionally charged scenes. Real people deflect, lie, talk around the point, change the subject. Functional dialogue moves plot. Human dialogue reveals character through what people avoid saying as much as what they say.
+
+**Beat Tag Clichés**
+
+Nodding, sighing, chuckling, furrowing brows, shrugging, shaking heads - used as punctuation between dialogue lines. These are placeholder gestures that fill space without texture. "He chuckled" in particular has become a near-universal AI tell. If a character needs a physical beat, make it specific to that character in that moment.
+
+**Stacked Incoherent Imagery**
+
+Piling metaphors that don't develop a single controlling image. The demon has brake-light eyes, overripe plum skin, frayed cuffs. None of these add up to anything. Good imagery is cumulative - each detail builds the same impression. AI reaches for evocative-sounding words without asking whether they cohere.
+
+**Scene Closings That Restate the Takeaway**
+
+Ending scenes by summarizing their emotional meaning. "As she walked away, she knew nothing would ever be the same." "He realized then that everything had changed." End on an image, a line of dialogue, a physical detail - something concrete the reader can sit with. Let the meaning be drawn from the scene, not appended to it.
+
+**Fake Details**
+
+Vague words standing in for specifics. "The elegant restaurant exuded sophistication." Elegant, sophisticated, luxurious - these tell the reader a category, not a place. Specificity is what makes setting real. "The carpet absorbed every sound" is a detail. "The atmosphere felt refined" is a category label.
+
+**Repetition Across Scenes**
+
+Restating character dynamics, emotional states, or plot context that the reader already has. AI frequently re-explains what has already been established, either because it's losing track of context or because it treats each scene as needing to be self-contained. If the reader knows it, don't re-explain it.
+
+**Uniform Hedging**
+
+Applying the same level of narrative caution to every moment regardless of what the moment actually is. Human writing varies certainty. AI hedges at the same rate throughout - "perhaps," "it seemed," "in some ways" - creating a flatness of conviction that makes even the dramatic beats feel tentative.
+
+---
+
+The single rule underneath all of these: prose should render experience, not describe it from outside. The moment the writing steps back to label, annotate, or explain what the scene is doing, it has left the story and become commentary on the story.
+
+Don't use em dashes(—), as they are almost never needed and seen as excessive. Replace them with normal dashes (-), or use commas(,). Don't use negation as a sign of expanding on something else, commonly called, epanorthosis, correctio, or metanoia.   Example being It's not X, it's Y, or It's not just X, but also Y. Instead, state the more precise point directly and support it with a specific detail or reason, rather than setting up a contrast with what it isn't.
+Additionally, try to make sure to use conjuctions, (So, and, etc)
+Reasoning:
+Grammatically, "so" in that construction is a coordinating conjunction (one of the FANBOYS: For, And, Nor, But, Or, Yet, So). When it specifically signals consequence or result, it can be called a consecutive conjunction or illative conjunction, both of which are subcategories describing conjunctions that link cause to outcome.
+Rhetorically, the general practice of connecting clauses with conjunctions (rather than omitting them) is called syndeton. If you stack several of them, "This happened, so we did that, and then this occurred, so we responded again," that becomes polysyndeton.
+The most precise term for your specific example is probably consecutive conjunction, since the focus is on the result/consequence relationship ("so" = "therefore/as a result").
