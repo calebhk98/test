@@ -298,7 +298,7 @@ to come. Files: 01,02,03,06.
 
 ## PART V — STARTING OVER (117-125, Daniel 36-44)
 
-### ch32 — Proclaimed at Antioch [TODO]
+### ch32 — Proclaimed at Antioch [ACCEPTED]
 Beats: Hadrian proclaimed emperor; the deathbed adoption widely doubted; Plotina
 and Attianus's hand visible. Daniel reads the new wind from Rome - a colder,
 sharper, more philosophical emperor with less appetite for conquest. Plant:

@@ -846,6 +846,39 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   intentional, not a contradiction. Part IV = the fall of Daniel's Trajan-era world;
   Part V = starting over under Hadrian.
 
+- [ch32] Spring ~118 AD, Daniel ~36 (twenty years in this world since spring 98 -
+  use TWENTY from 118 on), imperial freedman in Rome. OPENS PART V. THE GREAT
+  REVERSAL reaches Rome (first via an Aemilian-bridge fish-seller): HADRIAN abandons
+  Trajan's eastern conquests (Armenia, Mesopotamia, Assyria), pulling the border back
+  to the river. Conquest party appalled; "sound generalship" the official line.
+  Daniel is half-VINDICATED (his private ch29 conclusion that someone must let the
+  ground go) and SICKENED, because Celer died holding a road to a province now struck
+  off; he works Celer's kit-strap buckle the way Macer works his ring (grief kept
+  under the surface).
+- [ch32] HADRIAN assembled from FRAGMENTS (Daniel still has NOT met him; the ch26
+  gourd-domes/beard link stays UNCONNECTED): a reader/composer, Greek-besotted
+  (philhellene pride worn buttoned to the throat), a hard exact soldier, unflatterable,
+  a cost-counter who wants "a small house perfectly kept" - to pull the arms in and
+  keep the part that pays. Assembled via HERAS (a Greek's wry insider read; his line:
+  the gods "give you the thing you asked for and wait to see your face") and MARCIA
+  (cold business/rolls read). Legitimacy still shadowed by the doubted adoption
+  (Plotina/Attianus).
+- [ch32] DANIEL'S RECALIBRATION: his whole expansion-serving toolkit (balloon-eye,
+  bursting cannon, war-logistics figures) is now DEAD WEIGHT and a LIABILITY - he is a
+  marked "dead emperor's marvel," high on the rolls, Ulpius-named, war-served. He must
+  reframe toward CONSOLIDATION / KNOWLEDGE / the long horizon and win an emperor who
+  owes him nothing. MARCIA set a year-long FOUR-LINE PLAN: water; uncheatable figures
+  pitched to a war-debt treasury; the press for a reading emperor. The OCEAN-GAMBIT
+  germ flickered and was FILED as wrong for a pull-IN emperor ("you do not sell a man
+  locking his doors a map to a country a year's sail past the edge of the sea") - pays
+  off reframed in ch36.
+- [ch32] PLANTED, unresolved: Hadrian's menace; the Four Consulars dread still only
+  the spring's loose talk; the marked-Trajan-creature danger sharpened. No new named
+  characters; no tech-state changes; divergence ledger empty. LUCANUS (~6) warming to
+  Daniel via the strap; learned Daniel's buckle-turning tic. Closing image: Lucanus on
+  the press-room floor turning the dead soldier's buckle, asking "Is he coming"
+  (meaning the emperor; NOT a rail image, NOT the phone relic).
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
