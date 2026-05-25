@@ -201,7 +201,7 @@ dreams in technology before the technology exists. Warm, funny, hopeful (a neede
 lift after the siege). Plant: a particular young entrant or story that recurs
 later; the contest as an institution built to outlive him. Files: 01,02,04,06,08-canon.
 
-### ch20 — Tyche [TODO]
+### ch20 — Tyche [ACCEPTED]
 Beats: Daniel frees Tyche and takes her as apprentice; begins teaching her English
 as a "homeland script." The slavery thread at full weight: Roman assumptions about
 a man and his freed female slave (gossip, Macer's crude jokes, the danger to her);

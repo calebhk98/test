@@ -493,6 +493,29 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   won the room, but is now MORE visible and a bigger target. Pamphilus is free and
   at the wharf; TYCHE is still keeping the tally, NOT yet freed (ch20).
 
+- [ch20] 107 AD, Daniel ~25-26, imperial freedman. He bought TYCHE from Macer for
+  38,000 sesterces PLUS a free water-filter for Macer's Tibur house PLUS teaching
+  Macer's steward's boys the new figures (bill of sale in Roman letters under
+  "Marcus Ulpius Danihel"). Macer had always known her math aptitude (Onesimus told
+  him ~3 years prior) and had held her against two unsolicited offers; he priced
+  her brutally. (Establishes Daniel now has real money but Macer gouged him.)
+- [ch20] Macer's crude doorway joke exposed the GOSSIP (the man/freedwoman
+  assumption); the danger is HERS - reputation and safety; Daniel grasped it late.
+- [ch20] MANUMISSION: informal first (inter amicos; witnesses Heras + Pamphilus),
+  giving Junian-Latin status; a formal magistrate manumission/citizenship is
+  PROMISED within a month (NOT yet done as of chapter end). LOG her legal freedwoman
+  name when the formal manumission is rendered; she has DEMANDED her name be on
+  nothing of his (she resents taking his nomen), so handle carefully then.
+- [ch20] TYCHE's terms (she refused to thank him): a freedwoman's real wage; her
+  name on nothing of his; her own barred room (Pamphilus and his WIFE lodged
+  between); the court date kept. Her anger: the five hidden years were her "made
+  small on purpose," a form of control. She is sharp, difficult, fully a person;
+  this is NOT a romance.
+- [ch20] ENGLISH-CIPHER teaching BEGUN (the "homeland script," future vehicle for
+  "the books"/the ladder); Tyche takes to it instantly (derived a letter E on her
+  own). Daniel slipped and said "at home"; she noticed and didn't ask. PAMPHILUS
+  now has a wife, lodged at the wharf yard.
+
 ## COORDINATOR CANON DECISIONS (read these - they bind downstream chapters)
 - [DECISION Part III re-sequenced for chronology, after ch17] Because Daniel is now
   bound to serve the Second Dacian War (105-106), Part III chapters ch18-ch24 are
