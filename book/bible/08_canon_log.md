@@ -633,6 +633,46 @@ WRITERS/QA: when a chapter is set in year Y, a character's age = Y minus birth y
 Check this before stating any age on the page.
 
 ## COORDINATOR CANON DECISIONS (read these - they bind downstream chapters)
+- [DECISION ch20 follow-up: Tyche's manumission + name, locked before ch25] The
+  formal magistrate manumission promised in ch20 occurred off-page in ~107 AD (a
+  routine vindicta before a magistrate). Tyche is a FULL CITIZEN FREEDWOMAN from
+  ~107. By Roman law a slave freed by Daniel (Marcus Ulpius Danihel) takes his
+  nomen, so her legal name is **Ulpia Tyche**. This honors her ch20 demand ("her
+  name on nothing of his") as a WOUND, not a contradiction: she did not choose his
+  name, the law imposed it; she refuses to use "Ulpia," signs and is known only as
+  "Tyche," and the imposed nomen is a quiet lasting friction. WRITERS: she is
+  "Tyche" on the page always; "Ulpia Tyche" appears only in legal/formal contexts
+  and she resents it. Do NOT have her warmly adopt his nomen.
+- [DECISION Celer's death, locked] Quintus Marcius Celer is ALIVE through ch28. He
+  DIES in ch29 (Overreach), in the Parthian war's deep-east overreach / the rear
+  revolts (~116-117); b.~63, so ~53. This is where Daniel's gifts kill the friend
+  who first carried him to the army. (Supersedes the stale ch29-brief phrasing "if
+  Celer survived ch21" - nothing in ch21 threatened him.)
+- [DECISION death years, provisional - pin exactly when drafted] Heras (b.~53)
+  dies in ch42, pinned EARLY in Part VI (~126 AD, age ~73). Macer (b.~48) is
+  exceptionally long-lived (characterful: the indestructible old contractor); his
+  death lands in ch48, pinned ~138 AD at ~90, an age people remark on as freakish
+  (may move as early as ~133 if a writer prefers). Do NOT state a Macer age past ~90.
+- [DECISION epilogue climber, provisional - firm at ch41] The "someone climbs"
+  figure of ch52-53 connects to FELIX (ch19: the counting-house slave who won with
+  the self-fueling steam-ship tale, said he could "fix the pot," prize laundered
+  toward his self-purchase) and to Tyche's keeping of the English cipher/ladder.
+  Seed the link in ch41. Firm the exact identity (Felix himself, older; his line;
+  or an apprentice he taught) when ch41 is drafted and LOG it then.
+- [DECISION phone disposition - OPEN, decide at ch49] Buried with Daniel vs given
+  to Tyche (the only other person who knows the box). Still open per ch49 brief.
+
+- [VOICE WATCH - ESCALATED, binds all chapters ch25+] Two patterns are now
+  OVERUSED and are effectively banned unless rare and truly earned:
+  (1) Close-retrospect lines ("to my grave," "as long as I live," "I have never
+  forgiven," "the day I die," "I have it still"). They appear ~once per heavy
+  chapter (ch13, ch17, ch18, ch24). RATION HARD: at most ONE per chapter, and never
+  in a chapter that already opens or closes on one. Prefer rendering the weight in
+  the scene itself.
+  (2) Ending a chapter on the dead-phone-relic-in-a-box image (used ch17 and ch24).
+  Do NOT close another chapter on the phone/relic/box. The relic may appear
+  mid-chapter only, and sparingly.
+
 - [DECISION Part III re-sequenced for chronology, after ch17] Because Daniel is now
   bound to serve the Second Dacian War (105-106), Part III chapters ch18-ch24 are
   RE-ORDERED into chronological sequence (only ch17 was written, so this is clean):
