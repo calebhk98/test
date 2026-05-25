@@ -192,7 +192,7 @@ him here (hold his death for Parthia, Part IV). Plant: the divergence question (
 he changing outcomes?); the life-saving-that-enables-killing paradox; Daniel's
 deepening unease. Files: 01,02(Celer,Apollodorus),03,04,05,06,08-canon.
 
-### ch19 — The Contest [TODO]  (re-sequenced: was ch18)
+### ch19 — The Contest [ACCEPTED]  (re-sequenced: was ch18)
 Beats: 106, on return from the war, flush with imperial favor and new standing and
 money, Daniel launches the annual prize for the best tales of machines that do the
 work of a hundred men, vehicles faster than horses, devices that reveal the

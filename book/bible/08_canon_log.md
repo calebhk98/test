@@ -471,6 +471,28 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
 - [ch18] Daniel returns over the bridge in the cold, changed. Status: imperial
   freedman, the emperor's man; he intends to buy and free TYCHE next (ch20).
 
+- [ch19] 106-107 AD, Daniel ~25, imperial freedman; Rome gold-drunk after Dacia.
+  THE CONTEST enacted, framed as "THE MACER PRIZE": Daniel funds it secretly from
+  his own coin; Titus Flavius Macer takes public credit and hosts the reading;
+  Daniel serves as the public "judge"/"tame barbarian." Held annually on the
+  QUINQUATRUS (Minerva's spring festival - deliberate gods-cover against Vibenius);
+  100 denarii to the winner; winners block-printed cheaply by EROS (sold for an as
+  or two) and spreading into children's play.
+- [ch19] First entries (texture): an eagle-drawn chariot steered by dangled meat;
+  a baker's wife's wind-up bronze grain-grinder; a 12-year-old boy's glass to see
+  the moon "as a country with mountains."
+- [ch19] **FELIX** (IMPORTANT - the epilogue "someone climbs" seed; track him): a
+  literate counting-house slave of an African-grain importer; won the contest with
+  a tale of a self-fueling STEAM-SHIP that names "the metal that doesn't yet exist"
+  (the steel barrier Daniel keeps hitting). Daniel laundered the prize toward
+  Felix's peculium / self-purchase (slavery laws forbid a clean gift). At year's
+  end Felix says he thinks he can "fix the pot." He is a planted recurring
+  figure - candidate to climb the ladder in the epilogue (ch52-53).
+- [ch19] CRISPUS attacked the contest on taste/impiety grounds (a foreigner
+  crowning lies on Minerva, goddess of true craft); Daniel parried graciously and
+  won the room, but is now MORE visible and a bigger target. Pamphilus is free and
+  at the wharf; TYCHE is still keeping the tally, NOT yet freed (ch20).
+
 ## COORDINATOR CANON DECISIONS (read these - they bind downstream chapters)
 - [DECISION Part III re-sequenced for chronology, after ch17] Because Daniel is now
   bound to serve the Second Dacian War (105-106), Part III chapters ch18-ch24 are
