@@ -42,10 +42,18 @@ later ages from the timeline (Daniel is 17 in 98).
 - ~50 in 98. Equestrian. A hard, shrewd army-contractor: leather, timber, grain
   for the legions, with real frontier connections. Owns slaves without a flicker
   of thought.
-- Function: after the balloon proves real, he funds the workshop and becomes
-  Daniel's patron and business partner. He is protection AND a cage. Genuinely
-  fond of Daniel, genuinely exploitative, genuinely dangerous when Daniel grows
-  too valuable to control. The relationship that defines the rise.
+- CANON (see coordinator decision in canon log): Macer is the equestrian who has
+  HELD Daniel as de-facto property since the early chapters (the unnamed "owner"
+  who dealt only through a steward and authorized the public demo). Daniel does
+  NOT meet him face-to-face until ch09, where he is first named. Macer took Daniel
+  on cheaply as a speculative oddity.
+- Function: after the balloon proves real at the public demo (his gamble), he
+  takes a real look at the asset he owns, pours money into a proper workshop, and
+  the owner-relationship becomes a patron/partner one over time. He is protection
+  AND a cage AND, at first, literally Daniel's owner. Genuinely fond, genuinely
+  exploitative, genuinely dangerous when Daniel grows too valuable to control. He
+  does NOT free Daniel; Daniel's freedom comes from the emperor (ch17), which
+  reshapes their balance. The relationship that defines the rise.
 - Voice: blunt, transactional, funny in a mean way, respects results and money,
   contemptuous of philosophers. Calls Daniel "the Thulean" or "boy" long past
   when it fits.

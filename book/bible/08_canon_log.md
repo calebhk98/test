@@ -160,3 +160,43 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   weight). He now understands he needs money, free status, real cloth by the bolt,
   sustained safe heat, and more hands - and sees the circular trap (the balloon is
   meant to earn the money the balloon needs). Balloon still unnamed in-world.
+- [ch07] Mid-99 AD, Daniel ~18, ~1 year in, still UNFREE. Engineering ADVANCED:
+  he solved the seams (folded / double-stitched / grease-sealed edges, raising
+  flight from ~10 to 100+ breaths) and abandoned carry-the-fire firepots for a
+  FILL-ON-THE-GROUND-THEN-RELEASE method that produced his first STRINGLESS
+  unmanned flight (Heras witnessed and will swear there were no strings). Still
+  failing: no sustained heat ALOFT, so a released balloon flies off and falls in a
+  distant field; firepots too heavy/weak to carry aloft.
+- [ch07] New fire damage: he burned a corner of a lean-to roof; a fresh burn on
+  the BACK of his right hand. The (still unnamed) kitchen woman doused it and
+  threatened him again.
+- [ch07] Daniel's FIRST sight of the city of Rome proper (overwhelmed by scale and
+  crowds), taken in by Heras for Trajan's modest on-foot ADVENTUS (99 AD), glimpsed
+  from the crowd.
+- [ch07] AULUS VIBENIUS (senior haruspex) GLIMPSED reading entrails amid the public
+  ceremony; he locks eyes with Daniel. They do NOT meet or speak yet.
+- [ch07] DEMO SETUP: Daniel's owner - an equestrian whom Daniel has NOT yet met,
+  dealt with only through a STEWARD - agrees to show the flying curiosity publicly
+  amid festival crowds for prestige/profit; Heras brokered it. Daniel is funded on
+  credit for the show bag. Chapter ends on the eve of the public demonstration,
+  Daniel sewing the show bag.
+
+## COORDINATOR CANON DECISIONS (read these - they bind downstream chapters)
+- [DECISION owner=Macer] The equestrian who has HELD Daniel since ~ch04 (the
+  unnamed "higher party"; the "owner" who arranges the demo and deals via a
+  steward) IS **Titus Flavius Macer**. Daniel has never met him face-to-face; that
+  first meeting is ch09, where Macer is NAMED. Macer took Daniel on cheaply as a
+  speculative oddity (the map, the numbers) and lodged him in a workshop property
+  under Heras's and a steward's eye. Do NOT add a separate "stranger discovers
+  Daniel in the crowd" figure at the demo - the demo is MACER'S gamble paying off,
+  which makes him finally take a real look at the asset he already owns.
+- [DECISION Daniel's status] Daniel is a stateless foreigner held as de-facto
+  property of Macer's household - "a slave in everything but the word" (ch06),
+  legally murky (never formally sold with papers), no rights, later running on a
+  growing *peculium* once the workshop exists. His freedom does NOT come from Macer
+  early; it comes later from the EMPEROR (revised ch17 plan): Trajan's favor frees
+  AND enfranchises him and elevates him past the freedman stain - a bigger honor
+  than Macer could grant, shifting the Macer/Daniel power balance (Macer loses
+  ownership, gains a powerful client-partner). Roman name settled at ch17
+  (candidate nomen: Ulpius from Trajan's gens, or Flavius via Macer - decide/LOG
+  then).

@@ -73,7 +73,7 @@ problem (he can't scale alone); fire danger. Files: 00,01,04,05,06.
 
 ## PART II — THE MAN WHO FLEW (99-102, Daniel 18-21)
 
-### ch07 — Iterations [TODO]
+### ch07 — Iterations [ACCEPTED]
 Beats: 99 AD; Trajan enters Rome (distant backdrop, glimpsed). Daniel's small
 world: repeated balloon failures - leaks, weight, a fire that nearly burns down a
 shed, a singed hand. He learns by losing. He realizes he needs hands, money, and
@@ -81,20 +81,26 @@ cover. Heras half-helps, half-mocks. Plant: the need for a patron; Vibenius
 glimpsed reading omens nearby. Files: 01,02,04,05,06.
 
 ### ch08 — Fire That Flies [TODO]
-Beats: the public unmanned demonstration. A treated-linen bag fills over a
-brazier and rises before a crowd. Awe, fear, the cry of witchcraft vs marvel.
-Aulus Vibenius the haruspex reads it as an omen (ambiguous - favor or threat).
-Titus Flavius Macer, in the crowd on business, sees money and leverage. End on
-Macer's man summoning Daniel. Plant: Vibenius's ambiguity; Macer's interest;
-Daniel's first taste of public power and public danger. Files: 01,02,04,06,07.
+Beats: the public unmanned demonstration amid festival crowds. A treated-linen bag
+fills and a released bag rises before the crowd. Awe, fear, the cry of witchcraft
+vs marvel. Aulus Vibenius the haruspex (glimpsed in ch07) reads the flying fire as
+an omen (ambiguous - favor or threat). This is MACER'S gamble paying off (Macer =
+Daniel's still-unmet owner per the canon decision; do NOT introduce a new
+stranger-discoverer). End on Daniel being summoned at last to meet the man who
+owns him. Plant: Vibenius's ambiguity; the value Macer now sees in what he already
+holds; Daniel's first taste of public power and public danger. Files: 01,02(Macer,
+Vibenius),04,06,07,08-canon.
 
 ### ch09 — Macer [TODO]
-Beats: the patron deal. Macer is blunt, transactional, owns slaves without
-thought, offers protection, money, and a workshop - in exchange for ownership of
-Daniel's output and obedience. Daniel grasps the cage inside the gift. He takes
-it; he has no real choice. Moves into Macer's orbit; meets the household; Tyche
-(slave, ~14) assigned to fetch and carry. Plant: the cage; Tyche's watchful
-sharpness; the freedman-labor question forming. Files: 01,02(Macer,Tyche),06,07.
+Beats: Daniel finally meets his owner face-to-face: Titus Flavius Macer (named
+here), blunt, transactional, owns slaves without a thought. Seeing the balloon
+proven, Macer decides what to do with his asset: real money, a proper workshop,
+and protection - against Daniel's output and obedience, with eventual freedom
+dangled but not given. Daniel grasps the cage inside the gift, sharpened by the
+fact that Macer literally owns him; he has no real leverage but his usefulness.
+Tyche (slave, ~14) is assigned to fetch and carry. Plant: the cage; Tyche's
+watchful sharpness; the freedman-labor question forming; freedom as a carrot only
+the emperor will actually deliver (ch17). Files: 01,02(Macer,Tyche),06,07,08-canon.
 
 ### ch10 — The Workshop [TODO]
 Beats: founding and running the workshop. Daniel quietly staffs it with paid
@@ -156,11 +162,18 @@ grow; Vibenius watching. Files: 01,02,04,06,07.
 
 ### ch17 — Citizenship [TODO]
 Beats: SET-PIECE. First audience with Trajan (soldierly, practical, likes
-builders). A demonstration; Trajan grants Daniel citizenship as reward. Daniel
-takes a Roman-style name incorporating Flavius (from Macer) - DECIDE and LOG the
-exact name. He can now make a will and marry. The weight and irony of belonging to
-Rome. Plant: the name; the will (encyclopedia seed); Trajan's favor as shield.
-Files: 01,02(Trajan,Macer),06,07.
+builders). A demonstration. CANON: Daniel is still Macer's de-facto property at
+this point; Trajan's favor is what FREES and ENFRANCHISES him directly (an
+imperial grant), elevating him past the freedman stain - a bigger honor than Macer
+ever gave, which quietly shifts the Macer/Daniel power balance (Macer loses
+ownership, gains a powerful client-partner; render his complicated reaction). At
+manumission/enfranchisement Daniel takes a Roman name - DECIDE and LOG the exact
+name (candidate nomen: Ulpius, from Trajan's gens, if freed by imperial grant; or
+Flavius via Macer if structured as Macer freeing him at the emperor's behest). He
+can now make a will and marry. The weight and irony of belonging to Rome, and of
+being freed by the head of the system he hates. Plant: the name; the will
+(encyclopedia seed); Trajan's favor as shield; the new Macer dynamic. Files:
+01,02(Trajan,Macer),06,07,08-canon.
 
 ### ch18 — The Contest [TODO]
 Beats: launching the annual prize for the best tales of machines that do the work
