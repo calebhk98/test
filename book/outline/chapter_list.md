@@ -116,7 +116,7 @@ literary salon: Daniel paraded as a curiosity, the Thule-isn't-real needling
 begins. Plant: Tyche's gift; Crispus as enemy-to-be; the slavery thread seeded in
 events and in Daniel's powerlessness. Files: 01,02(Tyche,Crispus),04,06,07,08-canon.
 
-### ch11 — The Army's Eye [TODO]
+### ch11 — The Army's Eye [ACCEPTED]
 Beats: Quintus Marcius Celer, army officer, sees the balloon's military value
 (observation, signaling). Pressure to build a manned balloon. Daniel's reluctance
 (he knows treated linen over flame is a death trap). The first tethered manned

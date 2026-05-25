@@ -263,6 +263,25 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   Daniel is a fraud and Thule a lie; patronizes, then resents. Intellectual
   antagonist now planted.
 
+- [ch11] ~100 AD, Daniel ~19, still a slave with a peculium at the wharf yard.
+  QUINTUS MARCIUS CELER met and NAMED: an equestrian tribune, ~35; dust-colored
+  military tunic, cropped graying hair, a broken-set nose; clipped frontier Latin,
+  dry, competent, gallows-humored ("I don't love it"). He sees the balloon's
+  observation/signaling/scouting value at once. Genuine competence-respect with
+  Daniel. The army got involved via Macer brokering the meeting for a contract.
+- [ch11] TITUS AELIUS NASO (new): Celer's ~18 recruit, the man sent up.
+- [ch11] FIRST MANNED ATTEMPT (a signature struggle - it cost): a TETHERED, low
+  trial with a deliberately oversized/slow bag, a green-willow basket, a clay
+  fire-bowl on a wet plank, three haul lines, soaked hide and a water barrel as
+  precautions Daniel insisted on. Naso rose to about a man's height, stood up, the
+  bag heeled, flame caught the grease, the bag burned down onto him. Naso was
+  BADLY burned (back, neck, arm; a ruined LEFT HAND; a broken ankle) and survived;
+  Heras treated him. Daniel had warned it was lethal and was overruled (he is
+  property).
+- [ch11] Army UNDETERRED: Celer confirmed the principle works ("saw the far
+  bank") and wants a retry with a smaller fire and a longer basket. Macer pleased.
+  Daniel's invention has now drawn blood from someone other than himself.
+
 ## COORDINATOR CANON DECISIONS (read these - they bind downstream chapters)
 - [DECISION owner=Macer] The equestrian who has HELD Daniel since ~ch04 (the
   unnamed "higher party"; the "owner" who arranges the demo and deals via a
