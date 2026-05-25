@@ -102,7 +102,7 @@ Tyche (slave, ~14) is assigned to fetch and carry. Plant: the cage; Tyche's
 watchful sharpness; the freedman-labor question forming; freedom as a carrot only
 the emperor will actually deliver (ch17). Files: 01,02(Macer,Tyche),06,07,08-canon.
 
-### ch10 — The Workshop [TODO]
+### ch10 — The Workshop [ACCEPTED]
 Beats: founding and running the wharf yard. CANON CONSTRAINT: Daniel is himself a
 slave; he owns no one and CANNOT free anyone. So the anti-slavery thread starts as
 PREFERENCE and FRICTION, not action: he treats the two assigned slaves as people,

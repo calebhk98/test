@@ -51,6 +51,6 @@ status board.
 - [x] Glossary
 - [x] Master outline + chapter list (53 chapters, 7 parts + epilogue)
 - [ ] Chapters drafted: 10 / 53
-- [ ] Chapters accepted: 9 / 53
+- [ ] Chapters accepted: 10 / 53
 
 Update the counts as work proceeds.
