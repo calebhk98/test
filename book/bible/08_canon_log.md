@@ -752,6 +752,40 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   (the map is unmeasured). Pays off with Hadrian in ch36. No tech state changes; no
   new named characters (only Scaeva's unnamed freedman messenger).
 
+- [ch29] ~116 AD, Daniel ~35, imperial freedman at the supply camps behind Antioch.
+  THE OVERREACH. The high-water mark (Ctesiphon's fall 116, the army at the Persian
+  Gulf / southern sea, the old emperor's shore-wish to sail on after Alexander)
+  reaches Daniel ONLY as secondhand rumor; he sees none of it. The conquered rear
+  rises in revolt (Mesopotamian cities + the 115-117 diaspora risings, rendered
+  through Daniel's ignorant/wrong Roman lens); the supply line frays; the overreach
+  is exposed. Tracks REAL history; divergence ledger still EMPTY.
+- [ch29] **QUINTUS MARCIUS CELER DIED** (~116 AD, age ~53). A thrust wound below the
+  left ribs in a night action holding the supply road; bound on the road with filth,
+  brought to Daniel after ~2.5 days; SEPSIS over 5 days (fevers with clear-eyed
+  intervals); he died before dawn on the fifth day while Daniel held the water cup,
+  with no last word. Daniel cleaned, debrided, packed, posca'd, and dressed it and
+  FAILED - the floor of his medical gift made physical (a wall against infection
+  with no door for what is already inside). Officially recorded as fallen of a wound
+  holding the road (true; it omits the rest).
+- [ch29] At the end Celer drew from Daniel the admission that he never wanted to put
+  a man up after Sabinus, and named Daniel's repeated "no about the bag" as the
+  answer to his ch13 challenge ("what kind of man builds a thing like that"). Kept
+  largely in subtext; Celer in character to the end (clipped, gallows-humored: "mind
+  your drain").
+- [ch29] NASO ALIVE, mended (hand curled, ankle hitching); he sat the dying and
+  carried the foul cloths, then left west toward Antioch by baggage train. He gave
+  Daniel CELER'S KIT-STRAP (echo of the ch13 burned-rag gesture). DELIBERATE CONTRAST
+  with ch13: Daniel did NOT burn it; he worked it into his own kit ("burning a thing
+  is only another way of keeping the smell of it"). Closing image: Daniel back down
+  the line telling grown men to wait for the water to boil (the saving work + its
+  complicity continuing; NOT the phone relic).
+- [ch29] OCEAN-GAMBIT GERM hardened (the east is a dead end - desert, foreign rivers,
+  cities that won't stay knelt) but STILL UNSPOKEN to anyone; Celer was the one man
+  Daniel might have tried it on. Daniel privately certain someone must let conquered
+  ground go (SEEDS Hadrian's coming reversal; Daniel does NOT know it's coming).
+  Daniel goes into ch30 gutted, harder, carrying Celer's strap. No new named
+  characters; no tech state changes.
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
