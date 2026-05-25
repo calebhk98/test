@@ -80,7 +80,7 @@ shed, a singed hand. He learns by losing. He realizes he needs hands, money, and
 cover. Heras half-helps, half-mocks. Plant: the need for a patron; Vibenius
 glimpsed reading omens nearby. Files: 01,02,04,05,06.
 
-### ch08 — Fire That Flies [TODO]
+### ch08 — Fire That Flies [ACCEPTED]
 Beats: the public unmanned demonstration amid festival crowds. A treated-linen bag
 fills and a released bag rises before the crowd. Awe, fear, the cry of witchcraft
 vs marvel. Aulus Vibenius the haruspex (glimpsed in ch07) reads the flying fire as

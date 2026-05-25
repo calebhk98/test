@@ -181,6 +181,26 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   credit for the show bag. Chapter ends on the eve of the public demonstration,
   Daniel sewing the show bag.
 
+- [ch08] Mid/late 99 AD, Daniel 18, status UNCHANGED (unfree, de-facto property).
+  THE PUBLIC DEMO, in a crowded Subura lot during festival. The show bag: a pale
+  gray greased-linen teardrop, ~11 ft tall when full, packs to an armful, with a
+  green ash-wood mouth-hoop; 9 days' work; NO string. Method: ground-fill, men
+  walk the hoop up to buy time, release on cue (~180 breaths of lift).
+- [ch08] The flight: rose ~60-70 ft, hung, cooled, drifted on the river wind,
+  clipped a five-story insula roof, tore down washing, and fell smoldering into the
+  street; a brief street flame was stamped out. NO deaths; minor damage (a scorched
+  arm, a burned tunic, a screaming woman). Honest, not a clean miracle.
+- [ch08] Helpers at the demo: STICHUS (works the coal-pot) and a household slave
+  named DAVUS (new named character; he keeps Daniel from bolting).
+- [ch08] Crowd cried witchcraft, then tipped (barely) to awe. AULUS VIBENIUS was
+  present and pronounced the flight an OMEN, deliberately AMBIGUOUS: the gods let
+  it rise (no god favors what it hates), yet the gods turned the fire back down on
+  Rome's roofs as a possible warning. Still no meeting/words with Daniel beyond the
+  locked-eyes look.
+- [ch08] Macer's gamble paid off; Macer remains UNSEEN/UNNAMED on the page. END:
+  the steward and two household men summon Daniel to the master immediately; Heras
+  is to accompany him to the door. (First meeting = ch09.)
+
 ## COORDINATOR CANON DECISIONS (read these - they bind downstream chapters)
 - [DECISION owner=Macer] The equestrian who has HELD Daniel since ~ch04 (the
   unnamed "higher party"; the "owner" who arranges the demo and deals via a
