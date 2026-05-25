@@ -91,7 +91,7 @@ owns him. Plant: Vibenius's ambiguity; the value Macer now sees in what he alrea
 holds; Daniel's first taste of public power and public danger. Files: 01,02(Macer,
 Vibenius),04,06,07,08-canon.
 
-### ch09 — Macer [TODO]
+### ch09 — Macer [ACCEPTED]
 Beats: Daniel finally meets his owner face-to-face: Titus Flavius Macer (named
 here), blunt, transactional, owns slaves without a thought. Seeing the balloon
 proven, Macer decides what to do with his asset: real money, a proper workshop,
@@ -103,13 +103,18 @@ watchful sharpness; the freedman-labor question forming; freedom as a carrot onl
 the emperor will actually deliver (ch17). Files: 01,02(Macer,Tyche),06,07,08-canon.
 
 ### ch10 — The Workshop [TODO]
-Beats: founding and running the workshop. Daniel quietly staffs it with paid
-freedmen and frees a worker where he can, and is needled for it (inefficient,
-they say). Tyche reveals a frightening aptitude with the new figures. First broad
-spread: numerals among Macer's accountants, a plow tweak on his estates, block
-printing begun. Crispus's literary salon: Daniel paraded as a curiosity, the
-Thule-isn't-real needling begins. Plant: Tyche's gift; Crispus as enemy-to-be;
-the slavery thread in events. Files: 01,02,04,06,07.
+Beats: founding and running the wharf yard. CANON CONSTRAINT: Daniel is himself a
+slave; he owns no one and CANNOT free anyone. So the anti-slavery thread starts as
+PREFERENCE and FRICTION, not action: he treats the two assigned slaves as people,
+uses his peculium to pay free craftsmen for piecework where Macer allows, prefers
+free hands and resents being given chained ones, and chafes that the system (and
+Macer) make slaves cheaper and imposed - and he is powerless, being property
+himself, which is the bitter point. Do NOT have him manumit anyone. Tyche reveals
+a frightening aptitude with the new figures. First broad spread: numerals among
+Macer's accountants, a plow tweak on his estates, block printing begun. Crispus's
+literary salon: Daniel paraded as a curiosity, the Thule-isn't-real needling
+begins. Plant: Tyche's gift; Crispus as enemy-to-be; the slavery thread seeded in
+events and in Daniel's powerlessness. Files: 01,02(Tyche,Crispus),04,06,07,08-canon.
 
 ### ch11 — The Army's Eye [TODO]
 Beats: Quintus Marcius Celer, army officer, sees the balloon's military value

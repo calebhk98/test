@@ -201,6 +201,44 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   the steward and two household men summon Daniel to the master immediately; Heras
   is to accompany him to the door. (First meeting = ch09.)
 
+- [ch09] TITUS FLAVIUS MACER met and NAMED (mid/late 99 AD, same day as the demo,
+  in his domus). As rendered: ~50, big shoulders going soft, gray cropped hair, a
+  weathered broken-veined face, jaw like a beam, plain good-wool tunic with NO
+  equestrian stripe (can't be bothered / wants you to notice he can't), a heavy
+  gold ring he turns with his thumb when thinking, an ink-or-blood smear on his
+  thumb. Army-contractor (leather, timber, grain for the legions; the domus reeks
+  of leather). Blunt, mean-funny, money-minded. Calls Daniel "Thulean" and "boy";
+  compares him to mules.
+- [ch09] Macer acquired Daniel about a year ago (after the cell, on Heras's tip via
+  the steward) "for less than a season's mules," as a cheap speculative oddity.
+- [ch09] THE DEAL (offered, effectively accepted; NO manumission): close-woven
+  cloth by the bolt (as much as Daniel ruins); TWO of Macer's slaves to fetch and
+  stitch (they "do not run"; Macer will sell the cleverer if Daniel teaches them
+  costly skills); a walled, lockable, GUARDED YARD off the timber wharf (replaces
+  the loft); materials requisitioned on tablets through the steward; a PECULIUM
+  ("not yours; I let you use it as your own"). In return: Daniel's output,
+  obedience, discretion, and teaching the hands "enough that a fever can't ruin
+  Macer, not so much that he stops needing Daniel."
+- [ch09] PROMISED: protection, workshop, peculium, materials, hands. REFUSED:
+  FREEDOM. Daniel (foolishly) asked for freedom-if-profitable; Macer rebuffed it,
+  stating freedom is "not his to give" - citizen-freedom is made by "men a great
+  deal higher." (Consistent with the canon decision: Daniel's freedom comes from
+  the emperor, ch17.) IMPORTANT CONSEQUENCE: Daniel is himself a SLAVE; he owns no
+  one (the two assigned slaves are MACER'S), and he legally CANNOT manumit anyone
+  until he is himself freed. The "run the workshop on free/paid labor / free
+  workers" model can only properly begin AFTER ch17.
+- [ch09] Daniel's status UNCHANGED: still de-facto Macer's property, now with a
+  peculium and a "finer cage." The balloon is now NAMED in-world (rendered
+  "balloon"; Macer claims it as his possession) - first time anyone but Daniel
+  names the thing.
+- [ch09] The STEWARD is present throughout but remains UNNAMED.
+- [ch09] TYCHE introduced: ~14, undyed tunic, short uneven-cut hair, quick clean
+  city Latin (she does NOT slow it for Daniel), intensely watchful, "does not run,"
+  assigned to Daniel to fetch and carry. Parting beat: she warns him to eat his
+  bread on the walk because Macer "won't give you time to eat it there." Property;
+  arc not yet developed.
+- [ch09] The workshop is relocating to the walled yard by the timber wharf.
+
 ## COORDINATOR CANON DECISIONS (read these - they bind downstream chapters)
 - [DECISION owner=Macer] The equestrian who has HELD Daniel since ~ch04 (the
   unnamed "higher party"; the "owner" who arranges the demo and deals via a
