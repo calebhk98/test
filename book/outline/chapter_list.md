@@ -305,7 +305,7 @@ sharper, more philosophical emperor with less appetite for conquest. Plant:
 Hadrian's character; Daniel rethinking his whole pitch. Files: 01,02(Hadrian,
 Plotina,Attianus),03,06.
 
-### ch33 — The Four Consulars [TODO]
+### ch33 — The Four Consulars [ACCEPTED]
 Beats: 118; four ex-consuls killed without trial. The terror reaches Daniel's
 world; patrons fall or freeze; Macer is shaken and self-protective. Daniel in pure
 survival mode, his network shredded. A frightening, claustrophobic chapter. Plant:

@@ -879,6 +879,33 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   the press-room floor turning the dead soldier's buckle, asking "Is he coming"
   (meaning the emperor; NOT a rail image, NOT the phone relic).
 
+- [ch33] Summer ~118 AD, Daniel ~37, imperial freedman in Rome; HADRIAN still on the
+  road (not yet arrived). THE TERROR reaches Daniel's world: the FOUR CONSULARS
+  (Cornelius Palma, Publius Celsus, Lusius Quietus the Moor, Avidius Nigrinus) killed
+  untried on ATTIANUS's order (Marcia's rolls-sourced report + the city gone silent,
+  doors shut, a delator climate), framed as the house cleaned before the emperor
+  arrives. Real history; NO divergence; ledger empty.
+- [ch33] SCAEVA abandoned Daniel by WITHDRAWAL (not denunciation): refused the dawn
+  audience, returned a tablet with seal unbroken, and WITHDREW the river-gate sulfur
+  favor ("settled; no further attention from me"). Scaeva is ALIVE but withdrawn; the
+  leash is cold; he still KNOWS the sulfur-supply secret but no longer eases the gate
+  (so Daniel's powder supply is now harder/more exposed). Confirm: Scaeva not killed.
+- [ch33] MACER (~70) kept Daniel standing in the atrium and told him to STOP COMING,
+  "make yourself small... I will not burn for you," but vowed that if pressed he would
+  tell only the harmless truth (the emperor bought Daniel long ago). The twenty-year
+  bond strained to a wire but HELD: warned, not ruptured, NOT a denouncer.
+- [ch33] THE SCARE: an informer posing as an OIL-IMPORTER probed the impiety /
+  Minerva-dedication hook at the wharf yard. Daniel survived by MARCIA burying the man
+  in dullness and TYCHE having hidden the box/cipher/powder-ratios (moved the night
+  the city went quiet) and the SECOND PRESS - plus dumb luck ("I did not win it").
+  Whose man the informer was is never learned. Humiliating, diminishing, no clean win.
+- [ch33] ISOLATION going into ch34: Celer dead, Macer frozen, Scaeva gone, Heras
+  AVOIDED (Daniel keeps away because loving him is now a liability), no emperor, his
+  own fame a liability. Daniel is deliberately STRIPPING HIS OWN NAME - contracts
+  moved under "MARCIA, liberta, widow of Caepio" - going invisible to survive. Closing
+  image: Lucanus (~6) counting figures against his arm; a room "about the size of a
+  cell" (callback to ch02). No new named characters; no tech-state changes.
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
@@ -933,6 +960,14 @@ Check this before stating any age on the page.
   (2) Ending a chapter on the dead-phone-relic-in-a-box image (used ch17 and ch24).
   Do NOT close another chapter on the phone/relic/box. The relic may appear
   mid-chapter only, and sparingly.
+  (3) [added after ch33] A GNOMIC APHORISM CADENCE is creeping in: "the most X thing
+  there is," "the only kind that works," "X is just another way of Y," sweeping
+  one-line maxims that sum up a beat. One earns its keep; STACKED they become a
+  mannerism and a tell. Ration to roughly one per chapter; never two in a paragraph.
+  Prefer a concrete image to a maxim. Also avoid closing a chapter ON such a maxim.
+  (4) [added after ch33] Chapters have been running over the 3,800 ceiling (ch27 ~5k,
+  ch31/ch33 ~4k). HOLD 3,000-3,800 unless it is a true set-piece; tighten in revision
+  rather than letting scenes sprawl.
 
 - [DECISION Part III re-sequenced for chronology, after ch17] Because Daniel is now
   bound to serve the Second Dacian War (105-106), Part III chapters ch18-ch24 are
