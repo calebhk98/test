@@ -543,6 +543,45 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   ENGLISH cipher (only Tyche can read it); final image is his thumb over the figures
   in the dark, NOT erasing them.
 
+- [ch22] 108-109 AD, Daniel ~28, imperial freedman. MARCIA introduced and married.
+  She is a freedwoman, ~34-35 (b. ~73 AD), widow of the merchant CAEPIO; runs
+  Caepio's wharf storage/lending/factoring concern (the driest warehouse on the
+  wharf; pepper/hide/rope smell). Square unhurried face, hair pinned hard, no
+  paint, a key-ring, ink on her right hand. Voice: flat, blunt, transactional,
+  sums-minded, says the hard word first; "everything is a toy until it makes money."
+- [ch22] ENTRY: HERAS (her household physician for years) referred Daniel to her
+  when his enterprise outgrew his and Tyche's bookkeeping. She knows the SUPPRESSED
+  truth that the dead Danube soldier was not a tethered observer (the manned-balloon
+  death). She enters as a PROFIT-SHARING PARTNER (refuses a wage), running the
+  books, contracts, suppliers, and legal-commercial side; she keeps Caepio's
+  business separate.
+- [ch22] MARCIA'S AGENDA: secure her standing (a widow's estate otherwise reverts
+  to her late husband's cousins); a deep early stake; she wants printed sheets sold
+  by the thousand, the prize/contest to "grow teeth," and the enterprise built to
+  survive Daniel's death.
+- [ch22] TYCHE-MARCIA: wary at first, then a working alliance after Marcia catches a
+  year-old cartage fraud Tyche had missed; Marcia pays Tyche a fee to be taught the
+  new figures. (Tyche = family/apprentice/cipher-keeper; Marcia = partner/wife;
+  distinct roles.)
+- [ch22] MARRIAGE: ~1 year after meeting, spring ~109, full citizen marriage
+  (freedman to freedwoman); MARCIA proposed; witnesses Heras, Pamphilus + wife,
+  Tyche. PLANT: freeborn children to come; Marcia knows Tyche reads the English
+  cipher and approves it as the work's survival.
+
+## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
+- Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
+- Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
+  ~23 in 108, ~24 in 109-110. NOTE: earlier log entries/prose under-aged her;
+  ch16/17/20/22 prose has been corrected. Always compute from b.85.)
+- Heras: ~45 in 98 -> born ~53 AD (~62 in 110; he is older, will die before Daniel).
+- Macer: ~50 in 98 -> born ~48 AD (~62 in 110).
+- Marcia: ~34 in 108 -> born ~74 AD (~36 in 110).
+- Celer: ~35 in 98 -> born ~63 AD (~47 in 110).
+- Crispus: ~40 in 98 -> born ~58. Vibenius: ~55 in 98 -> born ~43.
+- Hermes: ~40 in 103 -> born ~63. (Apollodorus: a mature master engineer, ~50s in 101.)
+WRITERS/QA: when a chapter is set in year Y, a character's age = Y minus birth year.
+Check this before stating any age on the page.
+
 ## COORDINATOR CANON DECISIONS (read these - they bind downstream chapters)
 - [DECISION Part III re-sequenced for chronology, after ch17] Because Daniel is now
   bound to serve the Second Dacian War (105-106), Part III chapters ch18-ch24 are

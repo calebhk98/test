@@ -15,7 +15,10 @@ review is worthless. Your loyalty is to the reader, not the writer.
 1. **Cheating.** Did the writer actually render the scenes, or summarize/skip
    hard material or pad with filler? Quote evidence. Summarized scenes = REVISE.
 2. **Canon.** Any contradiction with the canon log, characters, timeline, world,
-   or tech state? List each with the conflicting fact.
+   or tech state? List each with the conflicting fact. **Always check character
+   AGES**: find the chapter's year, look up the birth year in the canon log's
+   CHARACTER AGE ANCHOR, and verify any age stated on the page equals (year minus
+   birth year). Age drift (especially Tyche's) is a recurring error - flag it.
 3. **Banned moves.** Scan for every item in AGENT_RULES.md: outline-as-prose,
    negative narration, telegraphing, narrator-from-the-future, announced emotion,
    declared irony, exposed subtext, info-dump dialogue, beat-tag clichés

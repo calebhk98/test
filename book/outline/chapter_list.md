@@ -220,7 +220,7 @@ steel argument now political; gunpowder loose in the world; the assistant's inju
 Daniel's compromised line (the "how far to go" question made concrete). Files:
 01,02,04,05,06,08-canon.
 
-### ch22 — Marcia [TODO]
+### ch22 — Marcia [ACCEPTED]
 Beats: Marcia, freedwoman widow, enters - runs accounts and the business with more
 nerve than the men. A partnership of equals forms; contubernium then marriage
 (post-citizenship). Unsentimental, real, two competent people choosing each other.
