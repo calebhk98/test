@@ -334,7 +334,7 @@ and the shipbuilding/navigation it demands. The quiet implication that Thule -
 his home - lies out there. Hadrian, the traveler, bites in his own way. Plant: the
 shipbuilding push; the lie's long fuse. Files: 01,02(Hadrian),03,04,06,07.
 
-### ch37 — Apollodorus Falls [TODO]
+### ch37 — Apollodorus Falls [ACCEPTED]
 Beats: Hadrian's enmity destroys Apollodorus (exile/death). Daniel tries and fails
 to save the one peer who ever met him as an equal. What it means to survive by
 bending where a prouder man broke. Grief and guilt. Plant: Daniel's survival

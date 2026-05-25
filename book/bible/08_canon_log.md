@@ -1015,6 +1015,35 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   meaning inverted: the box is empty because he let his secret world out), then going up
   to count Belgica "where the numbers stayed where I set them and did not have a far side."
 
+- [ch37] ~122-124 AD (soft dating), Daniel ~41-43, Hadrian ~46-48, Apollodorus ~70s.
+  APOLLODORUS FALLS. TRIGGER: he publicly mocked Hadrian's design for the Temple of
+  Venus and Roma (the seated colossal goddesses would crack their heads on the roof if
+  they rose), atop the old gourd-domes insult. He was EXILED from Rome, then DIED in
+  exile (cause unnamed). Daniel learned it all SECONDHAND (a carter, then Heras) over a
+  season; he witnessed no confrontation.
+- [ch37] DANIEL TRIED AND FAILED (real history HELD): (1) a direct WARNING at the river
+  yard - Daniel told Apollodorus the "gourd-Spaniard" he'd insulted at the Forum IS the
+  emperor, and begged him to stop and bend; Apollodorus refused, contemptuous, and gave
+  Daniel his PLUMB-LINE as a parting insult ("keep it to remember which of us was the
+  better engineer"; his maxim: "you draw the picture first and ask the stone to agree").
+  (2) a hedged half-sentence to a Greek clerk near Hadrian - turned aside; Daniel admits
+  he hedged it to protect his own neck.
+- [ch37] NEW MINOR CHARACTER: **THEOPHANES**, a careful Greek freedman who carries
+  drawings/corrections to the Palatine and values the new figures; risks/owes nothing
+  (the man Daniel hedged his word to).
+- [ch37] THEME crystallized through behavior/dialogue, NOT thesis: Apollodorus - "you
+  bend... you will die a rich man no one ever heard say a single thing straight"; Marcia
+  later - "And you bent." Daniel survives because he bends where the greater, prouder man
+  broke; the guilt rendered, never named.
+- [ch37] GRIEF/LONELINESS deepened: Apollodorus was Daniel's ONLY professional peer; with
+  Celer dead and Heras (~67-69) aging, Daniel's isolation among the few who could ever
+  meet him compounds. He HUNG THE PLUMB-LINE in the press-room and had Tyche record
+  Apollodorus's maxim in the English cipher among his own CLOCK dead-ends (feeds the
+  encyclopedia thread). LUCANUS now ~10-11. Ocean program continues offstage (African
+  coast surveyed further south; the western yard breaking ground) - divergence ledger
+  UNCHANGED by this chapter (Daniel failed to alter Apollodorus's fate). Closing image:
+  the plumb-line going into the cipher-book among his failures (fresh; not banned set).
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
