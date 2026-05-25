@@ -386,7 +386,47 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   master." Steel work is ONGOING and UNSOLVED. (This wall gates springs, the cannon,
   fine instruments, clocks - per the tech schedule.)
 
+- [ch16] Summer 103-104 AD, Daniel ~22-23, status unchanged (Macer's slave with a
+  peculium). Settings: the wharf yard and Mettius's salon.
+- [ch16] The new figures have spread AUTONOMOUSLY into Rome's low commercial life
+  (a fish-seller's slate at the Aemilian bridge, grain-factors' day-books, Macer's
+  younger clerks) while staying OFF anything formal/contractual; the senior clerk
+  Onesimus dismisses them as "shopkeeper's marks." Adoption is driven by speed and
+  anti-fraud auditability.
+- [ch16] Printing: still block-only, crude and gray; staff is the letterer EROS (a
+  freedman, paid piecework from Daniel's peculium) plus a borrowed pressman; ~50
+  impressions per page, ~1 sheet in 4 wasted. First real sale: 50 copies of a
+  times-table sheet to a Subura schoolmaster at two asses each.
+- [ch16] CONTEST idea conceived but UNENACTED (he's a slave; it needs freedom,
+  money, standing): an annual prize for tales of machines that do the work of a
+  hundred men, horseless carts, glasses that show the invisible. Discussed with
+  Tyche (who named the blockers: free, respectable, rich) and Heras ("the future
+  belongs to plumbers").
+- [ch16] TYCHE now 16; her math genius is still hidden from Macer (who would sell
+  her to a factor).
+- [ch16] CRISPUS escalated at Mettius's salon to a public FRAUD/IMPIETY charge
+  built on true facts (Strabo/Pytheas; the Greek "goes"/charlatan; a gesture at a
+  "graver word" the law knows - impiety/magic - left unnamed). Daniel PARRIED by
+  demonstration and nerve (drank his own filtered wharf water; invoked the flux and
+  dead children) rather than rhetoric. Threat UNRESOLVED; Crispus left more
+  dangerous, resentment hardened.
+- [ch16] VIBENIUS was present, silent, weighing Daniel (recalling the ch08 omen),
+  and left without speaking - could tip either way later. MACER walked Daniel home
+  and urged him to get his water-barrels into a SENATOR'S household for protection
+  before Vibenius decides (plants Daniel's need of a higher protector -> ch17).
+- [ch16] Final image: Daniel drafting the contest rules in the new figures by
+  lamplight, Tyche reading over his shoulder.
+
 ## COORDINATOR CANON DECISIONS (read these - they bind downstream chapters)
+- [DECISION ch17 freedom + name] In ch17 Daniel is freed and enfranchised via
+  Trajan's favor: structure it as TRAJAN having Daniel bought from Macer and freed,
+  making him an IMPERIAL FREEDMAN. His Roman name becomes **Marcus Ulpius Daniel**
+  (nomen Ulpius from Trajan's gens; rendered "Danihel" in Latin contexts; his own
+  name kept as the cognomen). Informally he remains "the Thulean" and "Daniel," and
+  Macer keeps calling him "Thulean/boy." This trumps Macer (Daniel now belongs to
+  the imperial orbit, above Macer), who reacts with complicated feeling (loses his
+  asset, gains an imperial-orbit client). Freedom is a NEW kind of leash (the
+  emperor's man). LOG the final exact name when ch17 is drafted.
 - [DECISION owner=Macer] The equestrian who has HELD Daniel since ~ch04 (the
   unnamed "higher party"; the "owner" who arranges the demo and deals via a
   steward) IS **Titus Flavius Macer**. Daniel has never met him face-to-face; that

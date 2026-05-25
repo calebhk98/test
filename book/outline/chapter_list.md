@@ -158,7 +158,7 @@ partnership. Gorgeous blade one batch, brittle the next, and no way to measure
 heat. The bitter lesson that steel gates everything. Plant: Hermes friendship;
 steel as the wall every dream dies on. Files: 01,02(Hermes),04,05,06.
 
-### ch16 — The New Figures [TODO]
+### ch16 — The New Figures [ACCEPTED]
 Beats: numerals and block-printed sheets spreading; the cultural ferment; the
 story-contest idea forming. Crispus escalates from needling to a public charge
 that Daniel is a fraud and his Thule a lie (cites Strabo). Daniel parries in a
