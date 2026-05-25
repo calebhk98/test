@@ -365,7 +365,7 @@ English first, partly translated. A ladder that assumes nothing. The race agains
 his own fading memory; what he can no longer reconstruct. Plant: the cipher; the
 gaps in his memory as honest limits; the burial/copying plan. Files: 00,02,04,05,06.
 
-### ch41 — Teaching [TODO]
+### ch41 — Teaching [ACCEPTED]
 Beats: Tyche and a couple of apprentices learn English as the cipher; the
 daughter-question (Daniel insists his daughter learn it all, against Roman norms);
 the next generation taking the work. Warm, with an edge of the strangeness of his

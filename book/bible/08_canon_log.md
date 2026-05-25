@@ -1154,6 +1154,40 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   a deliberately blank chemistry page, leaving it "white and waiting," then up to the
   house where Marcia kept a lamp (fresh; not a banned closer). No new divergence.
 
+- [ch41] ~132 AD, Daniel ~51, Tyche ~47, Ulpia ~13-14, Vitalis ~15, Marcia ~58, Heras
+  ~79 (ALIVE, frail; he dies next chapter - his death is NOT telegraphed here). TEACHING
+  the cipher to the next generation.
+- [ch41] CIPHER NOW HELD BY (the keeper-chain, addressing Tyche's ch40 single-key
+  warning): TYCHE (teacher) + ULPIA SEVERA + VITALIS (the ch39 press-apprentice) + a NEW
+  character **CHLOE** (a Bithynian slave-girl ~11-12 bought by Marcia for the storeroom
+  day-book, uncollared, reads Latin fast). FOUR young hands plus Tyche now read the
+  English cipher; the books will survive Daniel's death. The bottom rungs of the ladder
+  are their first decoded text.
+- [ch41] THE DAUGHTER-QUESTION left honestly UNRESOLVED: Daniel will not stop teaching
+  Ulpia everything; Marcia did not ask him to stop, only insisted he know the cost (the
+  law gives the girl no place to use it). ULPIA settled it herself with agency: she wants
+  the KNOWING so much that any borrowed name fronting it is hers underneath. (Both Marcia
+  and Daniel are partly right; not a tidy win.)
+- [ch41] NEAR-MISS on Daniel's origins: his cipher's smooth word for SLEET (weather Rome
+  lacks) made Ulpia sense the script is a real, long-used language, not an invented code
+  ("too tidy"); she pressed where Thule is and why he has a word for a thing that exists
+  on no street she'll walk; he gave the road-lie (Thule/far north/ice), which she took
+  the way Heras always did, unconvinced and too well-mannered to say so. The un-tellable
+  loneliness rendered, not stated.
+- [ch41] EPILOGUE KEEPER-CHAIN seeded (per the coordinator decision, the ch52 climber is
+  NOT a blood descendant): the cipher now passes down a LINE BEYOND Daniel's family -
+  VITALIS (indentured to teach two others) and CHLOE (a slave girl; Heras flagged her,
+  "the one... keep her in figures") carry it forward. The FELIX/craft-patronage workshop
+  is crossed only lightly here (failing on Daniel's coin a quarter-mile off, "owed a true
+  account") rather than directly joined - the books-line and the craft-line both run
+  toward the epilogue's future point but are not yet fused. (Coordinator: the ch52 climber
+  will come from this non-blood keeper/workshop line; firm the exact individual at ch52.)
+- [ch41] NEW NAMED CHARACTER: CHLOE (freed/uncollared Bithynian girl, keeper-chain seed).
+  Closing image: Daniel on the cold wharf, his sleeve still cold where Heras's hand had
+  rested, watching the children go home carrying "pieces of a country with no map" (fresh;
+  not a banned closer). No new divergence; the quiet war advanced in events (a slave girl
+  taught to read and cipher).
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
