@@ -282,6 +282,25 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   bank") and wants a retry with a smaller fire and a longer basket. Macer pleased.
   Daniel's invention has now drawn blood from someone other than himself.
 
+- [ch12] 101 AD, Daniel 20, a slave-on-loan to the army under Celer at the Danube
+  frontier (First Dacian War). He rode north up the Via Flaminia inside Trajan's
+  supply machine, awed and disturbed by Roman logistics, the nightly marching
+  camps, and the FLUX (dysentery) killing more men than battle (he files the water
+  problem away, powerless to act, and quietly boils his own water).
+- [ch12] APOLLODORUS OF DAMASCUS met, building his Danube bridge on cofferdams:
+  ~50s, gray, sun-darkened, scarred thick hands, fast Greek-accented Latin,
+  plumb-proud. A charged PEER-RIVALRY with Daniel - wary mutual recognition, NOT
+  friends. He calls the balloon "a clever toy that does one thing" and gives Daniel
+  the line "a demonstration is a lie you tell on a good day." (Plant his
+  pride/inflexibility; his fatal clash with Hadrian comes later, ch37.)
+- [ch12] Tethered observation balloon in the field: reached ~120 ft, no basket,
+  cloth-strip signals, useful ONLY in still air; failed badly in wind/cold; a
+  stake pulled once and it was nearly lost over the camp. The army is satisfied but
+  already pressing for a MANNED ascent (the ch13 disaster looms).
+- [ch12] SATURNINUS (an optio) seeds the dysentery thread. NASO's ruined hand
+  referenced as ~three weeks past. PAMPHILUS came north with Daniel; TYCHE stayed
+  in Rome and keeps the wharf yard.
+
 ## COORDINATOR CANON DECISIONS (read these - they bind downstream chapters)
 - [DECISION owner=Macer] The equestrian who has HELD Daniel since ~ch04 (the
   unnamed "higher party"; the "owner" who arranges the demo and deals via a

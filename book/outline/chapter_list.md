@@ -124,7 +124,7 @@ attempt: it leaks/cools and drops, or scorches; a man is hurt. The army wants it
 anyway. Plant: Celer friendship; the coming disaster; Daniel's gifts entering the
 machinery of war. Files: 01,02(Celer),04,06.
 
-### ch12 — To the Danube [TODO]
+### ch12 — To the Danube [ACCEPTED]
 Beats: 101; First Dacian War. Daniel sent toward the frontier with Celer to
 deploy tethered observation balloons. The journey north; the reality of the army
 and the supply machine; the cold and mud. At the river, Apollodorus of Damascus's
