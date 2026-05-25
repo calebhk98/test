@@ -180,7 +180,7 @@ being freed by the head of the system he hates. Plant: the name; the will
 (encyclopedia seed); Trajan's favor as shield; the new Macer dynamic. Files:
 01,02(Trajan,Macer),06,07,08-canon.
 
-### ch18 — The Siege [TODO]  (re-sequenced: was ch21)
+### ch18 — The Siege [ACCEPTED]  (re-sequenced: was ch21)
 Beats: 105-106, Second Dacian War. Daniel, now the emperor's freedman, is bound to
 serve. Before he marches, he buys Pamphilus from Macer and frees him (a brief,
 meaningful beat; Tyche's fuller freeing is ch20). At the front his sanitation/water

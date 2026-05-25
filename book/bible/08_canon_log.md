@@ -446,6 +446,31 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   inside his tunic against the dead phone - "two relics of two countries that
   couldn't write to each other."
 
+- [ch18] 105-106 AD, Daniel ~24-25, imperial freedman serving the Second Dacian
+  War. BEFORE marching: he bought PAMPHILUS from Macer for 4,000 sesterces and
+  freed him (informal manumission = lesser-free / Junian Latin, not full citizen);
+  HERMES cut off the riveted collar; Pamphilus stays at the wharf yard on real
+  wages as Daniel's freedman/client ("go where?"). First person Daniel ever frees;
+  the triumph smaller than he'd imagined.
+- [ch18] Daniel's war roles: siting camps and latrines, barrel-battery filters,
+  boil-by-century water discipline, the tethered observation eye (EMPTY basket
+  only - no manned ascent, ever again), and army logistics in the new figures (a
+  proud quartermaster adopts the marks out of need).
+- [ch18] MORAL KNOT / complicity: Daniel personally read the slope and ORDERED
+  Sarmizegetusa's water channels cut and the intake fouled (his water-knowledge
+  inverted to break a city by thirst); he refused nothing; it broke the city
+  slowly (cisterns and rain delayed it). APOLLODORUS: "It's the same knowledge...
+  you didn't think it would stay on the one side."
+- [ch18] Apollodorus's stone bridge at Drobeta shown (~20 piers); he is grayer,
+  proud, cold, ALIVE. CELER present, alive through the whole war, checked the
+  balloon basket held no man; Sabinus never named.
+- [ch18] HISTORY: Sarmizegetusa falls (106); Decebalus's suicide (his head and
+  right hand carried south); Dacia annexed; gold in carts heads south (Daniel
+  counted part of the haul in the new figures). The DIVERGENCE question is planted,
+  unresolved (is his presence bending Dacia's outcome vs remembered history?).
+- [ch18] Daniel returns over the bridge in the cold, changed. Status: imperial
+  freedman, the emperor's man; he intends to buy and free TYCHE next (ch20).
+
 ## COORDINATOR CANON DECISIONS (read these - they bind downstream chapters)
 - [DECISION Part III re-sequenced for chronology, after ch17] Because Daniel is now
   bound to serve the Second Dacian War (105-106), Part III chapters ch18-ch24 are
