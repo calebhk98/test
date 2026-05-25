@@ -288,7 +288,7 @@ Daniel - a teenager once, never sure of dates - is blindsided; his shield is gon
 Render the news arriving and the ground shifting. Plant: the vacuum; Daniel's
 sudden exposure. Files: 01,02,03,05,06.
 
-### ch31 — Vacuum [TODO]
+### ch31 — Vacuum [ACCEPTED]
 Beats: Part IV turn / cliff. The immediate scramble of succession; rumor, fear,
 the Praetorians; Daniel exposed without his emperor; Macer's alarm. Ends poised on
 the edge of the new reign. Plant: Plotina/Attianus maneuvering; the Four Consulars

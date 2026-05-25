@@ -814,6 +814,38 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   scramble is ch31). No new named characters (Attianus is historical). No tech state
   changes. Divergence ledger still EMPTY. Phone relic appears mid-chapter only.
 
+- [ch31] Late 117 into early 118 AD, Daniel ~36, imperial freedman. CLOSES PART IV
+  (the vacuum). Daniel reached Rome via a ~5-week grain-hull passage from a Cilician
+  port to Puteoli, then up the road by hired mule (carries Celer's strap). CHANGED
+  CITY: extra Guard watching faces at the gates; markets loud-then-silent; the
+  bread-woman won't gossip; impiety/sedition graffiti limed over; the new emperor's
+  name cut in fresh stone and chanted but absent; a city-wide "lean against nothing"
+  mood. (Hadrian still in the EAST; will not reach Rome until summer 118.)
+- [ch31] MARCIA'S ASSESSMENT (the cold figure): Daniel's NAME was the security on
+  every house contract and its worth died with Trajan; the priestly colleges'
+  right-of-consult from the ch27 Minerva dedication is now an open door for the new
+  regime and for Crispus; she demanded full disclosure of the Scaeva debt and ordered
+  NOTHING burned. LUCANUS (~5) did not recognize his father (Daniel was east ~3-4
+  years). Tyche (~32) confirmed the box/cipher safe.
+- [ch31] MACER (~69) FRIGHTENED for the first time Daniel has seen: named in the
+  legion-contractor rolls as the dead regime's man, "tucking in his edges." His line:
+  he will give Daniel up if asked, but "slow, at an old man's memory" (more than he
+  gave on the Caelian in ch27). Bond strained but intact; self-protection planted for
+  ch33. NOT killed, NOT ruptured.
+- [ch31] PLANTED AS RUMOR ONLY (unresolved; detonates ch33): PLOTINA + ATTIANUS run
+  Rome and are settling scores before "the boy" (Hadrian) arrives; contradictory talk
+  of a consulars' "plot," names dropped (Palma, Celsus, Quietus, an unknown fourth;
+  the count itself uncertain). SCAEVA alive, Daniel still his man, but Scaeva "doesn't
+  know whose man HE is" - precarious. The ch26-Hadrian beard/Forum-insult flicker
+  recurs, STILL unconnected. CLIFF ENDING: Daniel on a roof-rail looking east up the
+  road at an unarrived reign (NOT the phone relic). History tracks real events; NO
+  divergence (ledger empty).
+- [STRUCTURE NOTE] PART IV/V BOUNDARY: ch31 (late 117-early 118, the vacuum) closes
+  Part IV; ch32 (Hadrian proclaimed / the new reign) opens Part V. The year 117-118
+  straddles the seam, so both Part headers and the timeline touch it - this is
+  intentional, not a contradiction. Part IV = the fall of Daniel's Trajan-era world;
+  Part V = starting over under Hadrian.
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
