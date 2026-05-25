@@ -165,7 +165,7 @@ that Daniel is a fraud and his Thule a lie (cites Strabo). Daniel parries in a
 salon by usefulness and nerve. Plant: the contest; the fraud charge that will
 grow; Vibenius watching. Files: 01,02,04,06,07.
 
-### ch17 — Citizenship [TODO]
+### ch17 — Citizenship [ACCEPTED]
 Beats: SET-PIECE. First audience with Trajan (soldierly, practical, likes
 builders). A demonstration. CANON: Daniel is still Macer's de-facto property at
 this point; Trajan's favor is what FREES and ENFRANCHISES him directly (an
@@ -180,21 +180,26 @@ being freed by the head of the system he hates. Plant: the name; the will
 (encyclopedia seed); Trajan's favor as shield; the new Macer dynamic. Files:
 01,02(Trajan,Macer),06,07,08-canon.
 
-### ch18 — The Contest [TODO]
-Beats: launching the annual prize for the best tales of machines that do the work
-of a hundred men, of vehicles faster than horses, of devices that reveal the
-invisible. First entries - some absurd, some startling. Daniel seeding a
-civilization that dreams in technology before the technology exists. Warm,
-funny, hopeful chapter. Plant: a particular young entrant or story that recurs
-later; the contest as an institution to outlive him. Files: 01,02,04,06.
+### ch18 — The Siege [TODO]  (re-sequenced: was ch21)
+Beats: 105-106, Second Dacian War. Daniel, now the emperor's freedman, is bound to
+serve. Before he marches, he buys Pamphilus from Macer and frees him (a brief,
+meaningful beat; Tyche's fuller freeing is ch20). At the front his sanitation/water
+work keeps soldiers alive (and so keeps them killing), and his hydraulics
+cleverness is turned to cutting a fortress's water supply (echo of Sarmizegetusa,
+which falls 106; Decebalus dies; Dacia annexed). His gifts serve slaughter. Dacian
+gold floods Rome after. The moral knot pulled tight. Celer may appear; do NOT kill
+him here (hold his death for Parthia, Part IV). Plant: the divergence question (is
+he changing outcomes?); the life-saving-that-enables-killing paradox; Daniel's
+deepening unease. Files: 01,02(Celer,Apollodorus),03,04,05,06,08-canon.
 
-### ch19 — The Cannon That Bursts [TODO]
-Beats: the niter-bed slog (smelly, multi-year, dangerous); a powder accident hurts
-an assistant. Then the public cannon demonstration: built knowing Roman bronze
-can't hold the pressure, fired from a safe distance, it bursts. The argument for
-better steel made in fire and fear. Trajan's or the army's men take note. Plant:
-the steel argument now political; gunpowder loose in the world; the assistant's
-injury as cost. Files: 01,02,04,05,06.
+### ch19 — The Contest [TODO]  (re-sequenced: was ch18)
+Beats: 106, on return from the war, flush with imperial favor and new standing and
+money, Daniel launches the annual prize for the best tales of machines that do the
+work of a hundred men, vehicles faster than horses, devices that reveal the
+invisible. First entries - some absurd, some startling. Seeding a civilization that
+dreams in technology before the technology exists. Warm, funny, hopeful (a needed
+lift after the siege). Plant: a particular young entrant or story that recurs
+later; the contest as an institution built to outlive him. Files: 01,02,04,06,08-canon.
 
 ### ch20 — Tyche [TODO]
 Beats: Daniel frees Tyche and takes her as apprentice; begins teaching her English
@@ -203,12 +208,17 @@ a man and his freed female slave (gossip, Macer's crude jokes, the danger to her
 Tyche's own anger, agency, and terms. Not romance. Plant: the English cipher; Tyche
 as future keeper of the ladder; her agenda. Files: 01,02(Tyche),05,06,07.
 
-### ch21 — The Siege [TODO]
-Beats: 105-106, Second Dacian War. Daniel's sanitation/hydraulics knowledge is
-turned to cutting a fortress water supply (echo of Sarmizegetusa); his cleverness
-serves slaughter. Dacian gold floods Rome after. The moral knot pulled tight. If
-used here, Celer dies in the campaign. Plant: the divergence question (is he
-changing outcomes?); Daniel's deepening unease. Files: 01,02,03,04,05,06.
+### ch21 — The Cannon That Bursts [TODO]  (re-sequenced: was ch19)
+Beats: 106-108. The niter-bed slog (smelly, multi-year, dangerous); a powder
+accident hurts an assistant. Then the public cannon demonstration: built knowing
+Roman bronze can't hold the pressure, fired from a safe distance, it bursts. The
+argument for better steel made in fire and fear; Trajan's/the army's men take note.
+IMPORTANT: this reverses Daniel's ch14 vow to defer gunpowder ("not yet, maybe not
+ever") - render WHY he finally crosses that line (pressure as the emperor's man;
+the steel argument; his own slipping resolve), honestly and at a cost. Plant: the
+steel argument now political; gunpowder loose in the world; the assistant's injury;
+Daniel's compromised line (the "how far to go" question made concrete). Files:
+01,02,04,05,06,08-canon.
 
 ### ch22 — Marcia [TODO]
 Beats: Marcia, freedwoman widow, enters - runs accounts and the business with more

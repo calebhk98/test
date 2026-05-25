@@ -417,7 +417,49 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
 - [ch16] Final image: Daniel drafting the contest rules in the new figures by
   lamplight, Tyche reading over his shoulder.
 
+- [ch17] Midwinter 104-105 AD, Daniel ~23. SET-PIECE: summoned to a house on the
+  Palatine, he demonstrated to TRAJAN the tethered observation balloon, the sand/
+  charcoal water filter (drank foul wharf water to prove it), and the new figures
+  (Tyche calculated, outpacing a freedman's abacus). Trajan rendered as plain and
+  soldierly, fixed on the flux that kills more men than battle, impressed by
+  honesty rather than flattery, doing cold sums about men's lives. Daniel told him
+  he will NEVER fly a manned balloon again.
+- [ch17] THE GRANT: Trajan BOUGHT Daniel from Macer and FREED him as an IMPERIAL
+  FREEDMAN (libertus of the emperor's house). NAME NOW LOCKED: **MARCUS ULPIUS
+  DANIHEL** (praenomen Marcus + nomen Ulpius, from Trajan's gens; cognomen
+  "Danihel" = his own name rendered in law-Latin). Informally he remains "Daniel"
+  and "the Thulean"; Macer still calls him "Thulean/boy."
+- [ch17] NEW STATUS: imperial freedman - he can now hold property, go to law, make
+  a WILL, marry, and wear the toga. It is a "finer collar": he is the emperor's man,
+  LEASHED to serve the coming Second Dacian War (spring 105); orders now bear his
+  name.
+- [ch17] MACER: paid fair by Caesar; loses ownership but GAINS a powerful client
+  (Daniel will attend Macer's salutatio as a proper client now). Subtext: "Caesar
+  paid me fair" = it cost me; "I'm glad, you bastard." Told Daniel to get a toga.
+- [ch17] PLANTED (unresolved): the WILL -> future encyclopedia ("the books");
+  Trajan's favor as a SHIELD against Crispus/Vibenius (Macer: "no haruspex reads a
+  bad sign over a man Caesar's just named"). Daniel INTENDS to buy from Macer and
+  FREE Pamphilus first, then Tyche (Tyche asked "Can you free us now?" - thought of
+  Pamphilus before herself; Daniel: "Yes. When I can buy them. Pamphilus first").
+  NOT yet done.
+- [ch17] Final image: the citizenship tablet ("Marcus Ulpius Danihel") tucked
+  inside his tunic against the dead phone - "two relics of two countries that
+  couldn't write to each other."
+
 ## COORDINATOR CANON DECISIONS (read these - they bind downstream chapters)
+- [DECISION Part III re-sequenced for chronology, after ch17] Because Daniel is now
+  bound to serve the Second Dacian War (105-106), Part III chapters ch18-ch24 are
+  RE-ORDERED into chronological sequence (only ch17 was written, so this is clean):
+  ch18 = The Siege (Second Dacian War, 105-106; was the old ch21);
+  ch19 = The Contest (launched 106 on return; was old ch18);
+  ch20 = Tyche (free her, 106-107; unchanged slot);
+  ch21 = The Cannon (niter beds + bursting-cannon demo, 106-108; was old ch19);
+  ch22 = Marcia (107-108; unchanged);
+  ch23 = The Things That Don't Work (clock/telescope/rail carts, 108-110; unchanged);
+  ch24 = High Ground (Part III turn, ~110; unchanged).
+  The chapter_list.md briefs have been rewritten to match. PAMPHILUS may be bought
+  and freed in passing early (a brief beat, e.g. before Daniel marches in ch18);
+  TYCHE's full freeing/apprenticeship/English-cipher is ch20.
 - [DECISION ch17 freedom + name] In ch17 Daniel is freed and enfranchised via
   Trajan's favor: structure it as TRAJAN having Daniel bought from Macer and freed,
   making him an IMPERIAL FREEDMAN. His Roman name becomes **Marcus Ulpius Daniel**
