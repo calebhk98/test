@@ -1246,6 +1246,26 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
 - [ch43] NEW NAMED CHARACTERS: CAESIUS (advocate, Lucanus's law-mentor); the ENNII
   (grain-factor family floated as a marriage prospect for Ulpia, unconfirmed).
 
+- [ch44] ~135 AD (Daniel "four-and-fifty," "thirty-seven years" since the 98 cell - both
+  correct), Daniel ~54, presbyopic. THE WORLD BENDS. Daniel encounters concrete signs his
+  work has bent the empire's arc (each rendered as a scene; all four logged as DIVERGENCE
+  LEDGER entries in 03_timeline): (a) his numerals WITH ZERO cut into the AURELIAN
+  MILESTONE at the 2nd mile (official stone); (b) a PRINTED-CODEX LIBRARY in a portico off
+  the Argiletum, press output outnumbering hand-copied scrolls, read by poor apprentices
+  and a slave girl; (c) a THIRD ocean HULL on the ways at the western yard (south of the
+  Garonne mouth), deep/double-planked, which FLOATS BUT CANNOT CROSS (navigation/sea-clock
+  unsolved, two prior hulls lost); (d) a carter's boy (~9) playing Felix's printed
+  steam-ship contest tale in the road dust.
+- [ch44] HOPE/UNEASE braided: each sign serves "whoever holds the page" (the figures serve
+  the tax-farmer, books serve true or false text, the ship goes where its owner points,
+  the powder is loose); Daniel pays for both Felix's failure and the dream. The unease
+  (gifts that serve cruelty) is left LIVE, pointing to ch45. Hubris-or-duty NOT resolved.
+- [ch44] NEW NAMED CHARACTER: **BITUITUS**, the Gaulish yard-master at the western
+  shipyard. No deep-tech advance (ocean still uncrossable; steel/steam/clock unsolved).
+  Closing image: Daniel alone in the press-room at dusk watching the apprentice VITALIS
+  (~18) bank the stove and close up the self-running machine that will run whether Daniel
+  lives or not (fresh; not a banned closer).
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,

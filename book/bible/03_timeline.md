@@ -142,3 +142,24 @@ order the book tells them, with flagged exceptions.
   shipbuilding/navigation thread for Part VI and a long-fuse lie (uninhabited west /
   year's sail). Track whether/how far the program actually gets in Daniel's lifetime
   (likely slow, possibly lapsing) and into the epilogue.
+- [ch44, ~135 AD] ACCUMULATING DIVERGENCES (concrete signs the arc has bent; all
+  MEASURED/partial, deep tech still unsolved):
+  (a) NUMERALS GONE MONUMENTAL - Hindu-Arabic numerals WITH ZERO cut into the Aurelian
+  milestone at the 2nd mile, an official magistrate's distance reckoning. The marks have
+  moved from commercial slates to PERMANENT OFFICIAL STONE (real Rome never adopted
+  positional numerals officially).
+  (b) A PRINTED LIBRARY - a printed-codex collection in a portico off the Argiletum
+  (endowed by an imperial freedman); press output now OUTNUMBERS the hand-copied scrolls
+  there, in codex form, read by poor apprentices and a slave girl (literacy escaping the
+  lock-and-key of copying cost).
+  (c) AN OCEAN HULL - a THIRD open-ocean experimental hull on the ways at the western
+  yard (south of the Garonne mouth), deep and double-planked, unlike any Roman ship.
+  HONEST LIMIT: she floats but CANNOT cross - navigation/longitude unsolved, the
+  sea-clock prize still unwon, two prior hulls lost. The bend is real; the dream is not
+  delivered.
+  (d) CULTURAL DREAMING - a carter's boy (~9) plays/recites Felix's printed steam-ship
+  contest tale (an oarless, sailless, fire-eating ship to the undiscovered western
+  coast): a civilization dreaming the technology a generation before it exists.
+  NOTE: each sign cuts both ways (a figure serves the tax-farmer, a book serves true or
+  false text, the ship goes where its owner points, the powder is loose) - the
+  hope/unease braid that detonates in ch45.

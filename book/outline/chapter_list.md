@@ -386,7 +386,7 @@ word, a story he can't fully explain to his kids). The loneliness eased but neve
 gone. Plant: who carries what after him; the human cost/reward of staying. Files:
 01,02(Marcia,Tyche),05,06.
 
-### ch44 — The World Bends [TODO]
+### ch44 — The World Bends [ACCEPTED]
 Beats: small concrete signs the trajectory has shifted - the new figures in a
 public inscription, a printed library, a ship laid down for the open ocean, a boy
 quoting a contest story. Begin filling the DIVERGENCE LEDGER. Hope braided with
