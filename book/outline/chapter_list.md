@@ -400,7 +400,7 @@ logistics, his sieges). The hubris-or-duty question at its sharpest, unresolved.
 The darkest chapter of Part VI. Plant: the unresolved moral core; Daniel's
 reckoning with his own legend. Files: 01,02,03,05,06.
 
-### ch46 — Hadrian Dies [TODO]
+### ch46 — Hadrian Dies [ACCEPTED]
 Beats: Part VI turn. 138; Hadrian dies; Antoninus Pius succeeds. Another reset,
 but Daniel is old and the work is institutional now; he watches power pass with a
 survivor's detachment. Plant: the handoff to the final movement; Daniel's

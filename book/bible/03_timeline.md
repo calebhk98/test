@@ -163,3 +163,14 @@ order the book tells them, with flagged exceptions.
   NOTE: each sign cuts both ways (a figure serves the tax-farmer, a book serves true or
   false text, the ship goes where its owner points, the powder is loose) - the
   hope/unease braid that detonates in ch45.
+- [ch46, 138 AD] OCEAN PROGRAM LOSES ITS CHAMPION. Hadrian (its sole imperial patron)
+  dies; ANTONINUS PIUS (stay-at-home, no appetite for adventure) succeeds. The program is
+  now PRECARIOUS/LAPSING (NOT formally killed): Daniel foresees a procurator letting it
+  die by neglect (smaller grants, the Garonne yard rotting, the sea-clock prize quietly
+  dropped, the African survey halted at its current headland). Daniel tells Ulpia to keep
+  the survey CURRENT-BUT-UNWORKED ("true to the last headland... laid down, not closed")
+  so a future hand need not start the chain from the river-mouth. He relinquishes the
+  private "road west / home" hope. The ENDOWED institutions (press, contest, patronage,
+  the encyclopedia) HOLD - they were built to need no living emperor (the ch38-39 point
+  vindicated). WATCH: whether the ocean program revives later or stays a graded-but-empty
+  road into the epilogue.

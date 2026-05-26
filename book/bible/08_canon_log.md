@@ -1292,6 +1292,30 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   talking grain prices to avoid "the other column," sitting until the oil burns low
   (fresh; not a banned closer; does NOT resolve the conscience).
 
+- [ch46] 138 AD, Daniel ~57, Marcia ~64, Lucanus ~26, Ulpia ~20, Tyche ~53, Macer ~90
+  (alive, unseen; dies ch48), Hadrian d. ~62. CLOSES PART VI. **HADRIAN DIED** (10 July
+  138, at Baiae): reaches Rome-bound Daniel SECONDHAND (a brick-carter, then the porticoes)
+  - the long dropsical decline, his thwarted longing for death, the "little soul" epigram.
+  No deathbed scene.
+- [ch46] SURVIVOR'S DETACHMENT (deliberate CONTRAST to the ch30 Trajan blindside, rendered
+  through action NOT thesis): the news finds Daniel at his own bench in his own city; he
+  keeps his routine; he does NO survival arithmetic; the endowed institutions need no
+  living emperor. COMPLEX HADRIAN-FEELING: relief that the ledger-keeping eye (the "matter
+  of where you are from") is shut unspent; grief for the only restless mind / peer-enemy
+  who read him whole; the twenty-year wariness left standing crooked with nowhere to go.
+- [ch46] ANTONINUS PIUS: grave, decent, factionless, stay-at-home, no appetite for
+  adventure; a friendlier sky for the Minerva-endowed contest. THE OCEAN PROGRAM is now
+  PRECARIOUS/LAPSING (logged in 03_timeline divergence ledger): Hadrian's prestige project
+  loses its champion; Daniel relinquishes the private "road west / home" hope and has Ulpia
+  keep the African survey current-but-unworked ("laid down, not closed"). The endowed
+  institutions HOLD (the ch38-39 wager paying).
+- [ch46] MORTALITY / PART VII handoff planted: Daniel ~57, eyes failing, has outlived
+  patrons and friends; the cipher/ladder now lives in FOUR young heads (Tyche, Ulpia,
+  Vitalis, Chloe) plus a lead-cased copy, set to outlive him and the next emperors. No new
+  named characters; no tech advance. Closing image (revised off the watched lamp/
+  young-person-with-figures mannerism): Ulpia laying the open-columned survey leaf face-up,
+  weighted with a loom-weight against the wharf draft, "a thing not closed, only laid down."
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
