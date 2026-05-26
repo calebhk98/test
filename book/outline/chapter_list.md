@@ -393,7 +393,7 @@ quoting a contest story. Begin filling the DIVERGENCE LEDGER. Hope braided with
 unease about what he's set loose. Plant: the bent timeline; the epilogue's payoff.
 Files: 01,03,04,06.
 
-### ch45 — What It Serves [TODO]
+### ch45 — What It Serves [ACCEPTED]
 Beats: 132-136 backdrop, the Bar Kokhba revolt and imperial brutality. Daniel
 confronts that his gifts serve power, including its cruelty (his powder, his
 logistics, his sieges). The hubris-or-duty question at its sharpest, unresolved.

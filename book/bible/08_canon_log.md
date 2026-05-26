@@ -1266,6 +1266,32 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   (~18) bank the stove and close up the self-running machine that will run whether Daniel
   lives or not (fresh; not a banned closer).
 
+- [ch45] ~135-136 AD, Daniel ~54-55, presbyopic (Ulpia reads small field-clerk hands for
+  him). THE DARKEST CHAPTER. The BAR KOKHBA suppression reaches Rome-bound Daniel
+  SECONDHAND and, devastatingly, THROUGH HIS OWN METHODS: (1) the FISCUS eastern accounts
+  cross his bench (sent by Eudemus; Ulpia fair-copies/reads them), and he tallies the
+  campaign's grain and watches the PRICE OF CAPTIVES fall down a column of his own
+  numerals; (2) a discharged auxiliary reports the CAVE SIEGES (families waited out
+  underground) via Pamphilus; (3) a chalked-up dispatch announces AELIA CAPITOLINA
+  founded on Jerusalem's ruins, Jews barred.
+- [ch45] HIS GIFTS IMPLICATED: his FIGURES make the slaughter legible/efficient; his
+  SANITATION (drains/water) keeps the killing legions healthy; his SURVEY-GRID serves the
+  razed-and-refounded colony. POWDER UNCERTAINTY handled honestly: no working cannon
+  exists (ch21), but powder-as-demolition (undermining walls / cracking or sealing caves)
+  is plausible; Daniel does NOT know whether his was used, REFUSED to ask, and "will go to
+  his grave not knowing which."
+- [ch45] HUBRIS-OR-DUTY at its sharpest and LEFT UNRESOLVED (no comforting conclusion;
+  "both arguments are good arguments... neither has ever once won"), worsened because
+  HERAS is dead - Daniel argues it to the empty bench in Greek, with no skeptic to answer.
+  LEGEND-RECKONING: "the Thulean" is the name a slaughtering empire gives the foreigner
+  who makes its slaughter run cleaner; useful-to-power means power uses you for what power
+  does; he can no longer lay the name down. (This unresolved moral core haunts to his
+  death.)
+- [ch45] No new named characters; no tech advance; NO new divergence (tracks real
+  history). Closing image: Marcia at the storeroom lamp, the two of them deliberately
+  talking grain prices to avoid "the other column," sitting until the oil burns low
+  (fresh; not a banned closer; does NOT resolve the conscience).
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
