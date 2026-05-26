@@ -1404,6 +1404,29 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   under the press-room stone, waiting for a future digger to carry it up and begin to climb
   (fresh; seeds the epilogue; not a banned closer).
 
+- [ch50] ~155 AD. **DANIEL DIES** at ~74 (57 years after his arrival in spring 98).
+  THE PAYOFF CHAPTER. He dies of fluid filling the lungs (heart/pulmonary failure) over
+  a season, in the dry STOREROOM on the wharf (his bed moved down because he could no
+  longer climb the stair), mind clear then failing while the body drowns by inches.
+  ZOTICUS (Heras's pupil-line) attends honestly with poppy. He dies in the deep of night,
+  TYCHE (~70) holding his hand and reciting the quarter's figures; CHLOE (~35) sits the
+  watch; the storeroom boy fetched Tyche. ULPIA (~37) and LUCANUS (~43) visited in the
+  weeks before but were NOT in the room at the moment. Lucanus had brought him a clay
+  "Thulean engine" toy (callback to ch24).
+- [ch50] STRUCTURAL: the book is Daniel's own first-person account and it ENDS WHERE HE
+  ENDS. Narration collapses past->present in the final sections; the account BREAKS OFF
+  MID-SENTENCE at the threshold ("...and the next one is", no terminal punctuation). NO
+  posthumous / from-beyond narration (the aftermath belongs to ch51-53). The ch01
+  STUBBLE-FIELD BOOKEND is used in his final dying perception (the grain, the dew, the
+  new Colosseum, the dead phone warm in his hand, the four spearmen, "I am seventeen, and
+  frightened, and no one knows where I am"). The loneliness met head-on, rendered never
+  named; the unbuilt dreams (steel, the clock, the heat-turned-wheel, the tamed-lightning
+  wire) and the moved rungs present as concrete fragments, NOT a summary. Closing image:
+  a concrete final perception (Tyche's warm hands, the warm grain of the bed-rail, light
+  coming up the valley, the unfinished breath). No new named characters; no divergence.
+  [NOTE: this is the last chapter in DANIEL'S voice. ch51 = a Roman-document interlude
+  after his death; ch52-53 = the epilogue, other hands. Daniel's memoir is complete.]
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,

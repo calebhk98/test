@@ -428,7 +428,7 @@ the institutions sealed against his death; the dead phone relic's last appearanc
 ear-eyed. Plant: exactly what survives and where; the epilogue's seed. Files:
 00,02,04,05,06.
 
-### ch50 — Going [TODO]
+### ch50 — Going [ACCEPTED]
 Beats: Daniel's death, far from home, not tidy. What he never built; what he
 moved. The loneliness met head-on at the end. Render it; do not annotate it. Plant:
 nothing - this is a payoff chapter; let the planted threads land. Files: 00,02,05,
