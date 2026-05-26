@@ -416,7 +416,7 @@ finishing the encyclopedia against time; the strange peace and strange grief of 
 life lived entirely in the wrong century. Plant: the final securing of the ladder;
 a last unbuilt dream he lets go. Files: 01,02,05,06.
 
-### ch48 — The Subtraction [TODO]
+### ch48 — The Subtraction [ACCEPTED]
 Beats: the last deaths - Macer (the patron who was cage and shield), others. The
 slow stripping-away of a life. Tyche and the children are the keepers now. Plant:
 the ladder fully in others' hands; Daniel's letting go. Files: 01,02,05,06.

@@ -1339,6 +1339,37 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   the borrowed warmth until the stone goes as cold as he is, then down the dark stair by
   feel to lie beside Marcia and "wait to see what the night will be."
 
+- [ch48] ~144-147 AD, Daniel ages ~63 -> ~66-67, Antoninus Pius reigns. THE SUBTRACTION
+  (the last deaths; the encyclopedia essentially finished, institutions self-running).
+  LIGHT ATTRITION: PAMPHILUS died ~144 (past 70, old age; Daniel paid the burial); EROS
+  the pressman/letterer died the following winter (had taught Vitalis the block-cutting
+  first; press unaffected).
+- [ch48] **MACER DIED** at ~96 (~144), of sheer old age, in his son's house, in his chair,
+  ring on - blunt/mercenary/mean-funny to the last ("you sentimental fool"; "It does not
+  pass. It waits."). Daniel's feeling stays deliberately TANGLED (the man who owned him and
+  was cage AND shield; "no clean edge," not clean grief). Daniel was Macer's client/freedman
+  in the rolls to the end and stood the client's distance at the pyre. MACER'S WILL left
+  Daniel ONLY the heavy gold RING, with the clause "to the Thulean, who will know what it
+  cost"; it won't fit Daniel's swollen knuckles, so it goes into the floorboard box BESIDE
+  THE DEAD PHONE (two relics; the phone's final disposition still OPEN for ch49).
+- [ch48] **MARCIA DIED** at ~73 (~147, "before the cold," a gray foggy morning) of liver
+  disease/wasting (Zoticus diagnosed plainly; no cure; poppy for the pain). She first
+  finished the DEED OF TRUST sealing the warehouse/estate into the society + the children
+  (Ulpia read the clauses; the gap closed against Caepio's cousins). The chapter's emotional
+  center, rendered through ABSENCE (her silenced assessing voice; the empty side of the bed;
+  her stopped tally-squaring habit) - no kept-object talisman, grief unnamed. Her dying
+  instructions: Daniel is NOT to push the ENNII match on Ulpia (who may now marry where she
+  likes or not at all); Tyche to be obeyed on money.
+- [ch48] KEEPER-GENERATION TURN: VITALIS (~30) runs the press; CHLOE (now FREED - manumitted
+  in Marcia's will, ~25) keeps the storeroom day-book and reads the cipher; ULPIA (~29) holds
+  the books, the deed, and the African survey (true, unworked); TYCHE (~60) holds the whole
+  enterprise. Daniel is a passenger; the ladder is fully in others' hands. He goes into ch49
+  ALONE (Marcia and Macer both dead). No new named characters; no tech advance; no divergence.
+  Closing image: Daniel's stiff hands flat on the open day-book he can no longer read ("the
+  page gives nothing back," a deliberate inversion of ch47's warm brick), Chloe squaring the
+  board and setting the stylus for morning (continuing Marcia's stopped habit). Not a banned
+  closer / not a kept-object talisman.
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
@@ -1375,8 +1406,10 @@ Check this before stating any age on the page.
   ch42~133 Heras dies, ch43~134, ch44~135, ch45~135-136 Bar Kokhba, ch46=138 Hadrian
   dies.) Macer (b.~48) is
   exceptionally long-lived (characterful: the indestructible old contractor); his
-  death lands in ch48, pinned ~138 AD at ~90, an age people remark on as freakish
-  (may move as early as ~133 if a writer prefers). Do NOT state a Macer age past ~90.
+  death lands in ch48. UPDATED/RECONCILED: Macer in fact lived freakishly long (the
+  "indestructible old contractor" the text leaned into - "he would not die," ch47); he
+  dies in ch48 at ~96 (~144 AD). The earlier "~90 cap" is superseded - his extreme age is
+  deliberate and remarked upon in-story, not an error.
 - [DECISION epilogue climber, provisional - firm at ch41] The "someone climbs"
   figure of ch52-53 connects to FELIX (ch19: the counting-house slave who won with
   the self-fueling steam-ship tale, said he could "fix the pot," prize laundered
