@@ -50,7 +50,7 @@ status board.
 - [x] World rules
 - [x] Glossary
 - [x] Master outline + chapter list (53 chapters, 7 parts + epilogue)
-- [ ] Chapters drafted: 50 / 53
-- [ ] Chapters accepted: 50 / 53 (Daniel's memoir complete; interlude + epilogue remain)
+- [ ] Chapters drafted: 51 / 53
+- [ ] Chapters accepted: 51 / 53 (Daniel's memoir + interlude done; 2 epilogue chapters remain)
 
 Update the counts as work proceeds.

@@ -1427,6 +1427,36 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   [NOTE: this is the last chapter in DANIEL'S voice. ch51 = a Roman-document interlude
   after his death; ch52-53 = the epilogue, other hands. Daniel's memoir is complete.]
 
+- [ch51] INTERLUDE (NOT Daniel's voice). A Roman LETTER dated "the day before the Ides of
+  June, the consulship of Clarus and Cethegus" = ~AD 170, from **GAIUS NORBANUS RUFUS** (a
+  cultured, faintly supercilious man of letters, Pliny manner) to his friend **SEXTUS
+  CAECILIUS PRISCUS**, at Rome (also named: Rufus's wife TERTIA; an unnamed grandson).
+  Occasion: a visit to the Argiletum printed library and buying a clay "Thulean engine" toy.
+  ~1,859 words. All fictional; no name clashes (the ch27 host was renamed to Aemilius
+  Scaurus, freeing "Caecilius").
+- [ch51] THE LEGEND, distorted/confidently wrong (dramatic irony ARCHITECTURAL, never
+  declared): Rufus repeats as fact the THULE origin (far north, ice, the sun that won't
+  set/rise, scouts sent across the western sea), the man who "made fire fly," the spyglass
+  that showed only smeared rainbow/fog, CRISPUS's "the barbarian's heaven by ladder" as
+  received cultured opinion, Apollodorus's "a clever toy that does one thing" quoted
+  approvingly, and the Minerva impiety reckoning (the heifer, the dedication). He misses the
+  actual man entirely.
+- [ch51] KEY IRONY DETAIL: Rufus mentions, as a quaint barbarian curiosity, that the Thulean
+  was buried with "a tablet of black glass, a savage's charm" alongside "some bronze plate
+  of his citizenship" - the reader knows these are the DEAD PHONE + the citizenship tablet
+  (ch49-50). He misreads it, laughs at it, does NOT dig it up. The phone stays a
+  misunderstood grave-charm in the ground.
+- [ch51] ONE TRUE THING slips through (seeds the epilogue): Rufus records, WITHOUT grasping
+  its weight, that an aged freedwoman (TYCHE, unnamed) still keeps the dead man's school and
+  is teaching "his cipher" to a bought slave-girl who teaches two more, and that the figures,
+  the printed sheets, and the milestone-marks keep spreading. He half-records Daniel's ch27
+  "reason" (the knowing was never his own; every rung already set down; he only carried the
+  fire back) as a thing he disbelieves. His worldly dismissal ("the thing he made does not
+  need him to be remembered rightly in order to go on") is an in-character cynical aside, not
+  a declared theme. The work outlives the misremembering.
+- [STRUCTURE] ch51 is the post-death interlude; ch52-53 are the epilogue proper (other
+  hands, a generation+ on). No tech advance; no new divergence.
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,

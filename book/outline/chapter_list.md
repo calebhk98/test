@@ -434,7 +434,7 @@ moved. The loneliness met head-on at the end. Render it; do not annotate it. Pla
 nothing - this is a payoff chapter; let the planted threads land. Files: 00,02,05,
 06.
 
-### ch51 — A Hand Not His [TODO interlude]
+### ch51 — A Hand Not His [ACCEPTED]
 Beats: short interlude in another voice - a Roman document after his death (a
 letter in the manner of Pliny, or a freedman's memorandum, or a market record)
 showing how Daniel is remembered and misremembered. Dramatic irony built, not
