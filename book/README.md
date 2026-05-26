@@ -50,7 +50,7 @@ status board.
 - [x] World rules
 - [x] Glossary
 - [x] Master outline + chapter list (53 chapters, 7 parts + epilogue)
-- [ ] Chapters drafted: 52 / 53
-- [ ] Chapters accepted: 52 / 53 (only the final short "far whisper" ch53 remains)
+- [x] Chapters drafted: 53 / 53
+- [x] Chapters accepted: 53 / 53 - THE NOVEL IS COMPLETE (all 7 parts + interlude + epilogue)
 
 Update the counts as work proceeds.

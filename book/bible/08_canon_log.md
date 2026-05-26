@@ -1493,6 +1493,26 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   spend her life beginning to climb." NEW NAMES: Procula, old Vibia, Saturius (craftsman). No
   new divergence beyond the earned clock-rung.
 
+- [ch53] FINAL CHAPTER (~1,196 words; spare, distant third-person/log register, distinct
+  from the memoir, ch51's letter, and ch52's close third). "Long after" ch52 (~190 AD),
+  generations/a couple centuries on (left vague). THE FAR WHISPER: a ship has CROSSED THE
+  WESTERN OCEAN (the one Daniel drew on a wax tablet in a cell, ch03, and pointed Rome
+  toward, ch36) and stands off an unknown western coast, having found its westing by a
+  gimbaled sea-clock box (descended from Procula's escapement; longitude solved) read against
+  sun-height, with lead-line soundings and figures-with-zero on the slate. The arc has bent
+  all the way to the shore he only drew - climbed by hands who never knew him (he survives as
+  a worn, unread name at the foot of the oldest copied navigation table).
+- [ch53] NO TIDY BOW: the western shore is INHABITED (a tended fire, long dark boats, figures
+  at the waterline, an upraised arm, three more smokes up the hills, "living there a long
+  time") - Daniel's "uninhabited" lie punctured. The pilot holds off, logs it plainly, "did
+  not write what it meant." A beginning, unresolved; no landing, no conquest. The BOOKEND is
+  architectural, NEVER declared (the load-bearing "a thing you have only ever drawn" reads as
+  the pilot's own charted point; the ch03 echo is left entirely to the reader). The dead
+  phone stays buried and unmentioned. FINAL IMAGE (the last sentence of the novel): an
+  unnamed pilot at the rail looking WEST at the shore, the patient clock knocking below decks
+  - the climb continuing past the page. Logged as the final DIVERGENCE-LEDGER entry.
+- ===== THE NOVEL IS COMPLETE: 53/53 CHAPTERS DRAFTED, QA'd, AND ACCEPTED. =====
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,

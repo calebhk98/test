@@ -174,3 +174,16 @@ order the book tells them, with flagged exceptions.
   the encyclopedia) HOLD - they were built to need no living emperor (the ch38-39 point
   vindicated). WATCH: whether the ocean program revives later or stays a graded-but-empty
   road into the epilogue.
+- [ch53, "long after" ~190 AD - generations/a couple centuries on, left vague] THE OCEAN
+  ULTIMATELY CROSSED (the final, largest divergence; the culmination of the ocean gambit
+  and the whole ladder). A single ship, generations up the ladder Daniel laid and Procula
+  began, has CROSSED THE WESTERN OCEAN and stands off an unknown western coast, finding its
+  westing by a gimbaled sea-clock box (descended from Procula's escapement; longitude
+  solved) against sun-height (latitude), lead-line soundings, and figures-with-zero. The
+  standing sea-clock/longitude prize is implicitly won. NO TIDY BOW: the shore is INHABITED
+  (a tended fire, drawn-up boats, figures at the waterline, more smokes up the hills) -
+  Daniel's "uninhabited" was a lie; this is a beginning, unresolved, no landing/conquest.
+  Daniel is FORGOTTEN, surviving only as a worn unread name at the foot of the oldest copied
+  navigation table. Kept as a brief GLIMPSE/whisper (no mechanical justification, no
+  alternate-history detail). The book ENDS here, on an unnamed pilot at the rail looking
+  WEST at the shore, the clock knocking below decks - the climb continuing past the page.

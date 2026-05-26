@@ -452,7 +452,7 @@ climbs a rung - solves or builds something Daniel only sketched. The bottom rung
 have held. Warm, earned, forward-facing. Plant: the climb continuing past the page.
 Files: 02,04,05,06,07.
 
-### ch53 — The Far Whisper [TODO short]
+### ch53 — The Far Whisper [ACCEPTED]
 Beats: very short. A distant sign the empire's arc bent - a glimpse, an artifact,
 a line in a record from much later - that the ladder kept being climbed. No tidy
 bow. End on a concrete image of someone, unnamed, on a higher rung, looking up.
