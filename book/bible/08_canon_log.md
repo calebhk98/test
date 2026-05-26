@@ -1457,6 +1457,42 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
 - [STRUCTURE] ch51 is the post-death interlude; ch52-53 are the epilogue proper (other
   hands, a generation+ on). No tech advance; no new divergence.
 
+- [ch52] ~190 AD (two generations after Daniel's death). EPILOGUE PAYOFF. NEW VOICE: third
+  person, close on the climber; warm, forward-facing. THE LADDER THESIS PAYS OFF: someone
+  climbs.
+- [ch52] THE CLIMBER: **PROCULA**, ~20, freeborn daughter of a freedwoman (her mother was
+  bought into the storeroom, freed in Marcia's will, married a press freedman). NOT Daniel's
+  blood. She was taught the English cipher down the keeper-chain descending through CHLOE
+  (the freed slave-girl, ch41/49); her own teacher was a keeper named "old VIBIA." She keeps
+  the casting-end day-book for the craft-failure fund. (Quiet-war payoff: the ladder lifted
+  a line the law once bolted out.)
+- [ch52] THE CLIMB: Procula CRACKED THE ESCAPEMENT and built the first WORKING mechanical
+  clock - the rung Daniel failed at (ch23/26/36/47). HOW (honest hard-won craft): she first
+  built every one of his documented failed drawings, read his honest note "BEGIN WHERE I
+  FAILED" and his hooked-stroke guess-marks, drew on the fund's accumulated logged failures
+  (Felix's and a craftsman Saturius's attempts), and solved it with a swinging pendulum-bar
+  insight (the swing rules the wheel; a gate releases one tooth per swing; sliding bobs tune
+  the rate; isochronism felt with a cloth in her hand). ONE honest rung: the clock STILL
+  DRIFTS, fitted with a single-pointer dial in uneven Roman seasonal hours (NOT modern
+  precision; no over-reach). Over ~two years.
+- [ch52] She wrote her solution into the previously-BLANK leaf after Daniel's failure-note,
+  in the cipher, with NO hooked stroke (the honest-limits chain continued), and dated her
+  result beneath his.
+- [ch52] BOTTOM RUNGS HELD (shown): the press still prints (50 to a page); the Minerva
+  contest still held on the Quinquatrus with paid priests; the craft-failure fund still pays
+  craftsmen to fail (Saturius ~11 years on the steam-pot); the figures everywhere; the cipher
+  passed down intact with guess-marks and deliberate blank rungs.
+- [ch52] DRAMATIC IRONY architectural (the one banned "she never knew" clause was cut in
+  revision): Procula does NOT learn Daniel's true origin (she reads his "cold north" sleet-word
+  within the Thule legend and wonders no further); the dead PHONE stays BURIED, never dug up.
+  CLIMB-CONTINUES planted: she looks up to the unwon sea-clock/longitude prize (still standing,
+  hooked-stroke-marked as beyond Daniel), and she has two girls to teach. Felix, Daniel, and
+  "old Vibia" all long dead. Closing image: Procula going to bed by feel through the dark
+  (echoing Daniel's ch50 last stair), the escapement keeping its even step behind her, the
+  next white rung waiting above, "the long ladder of them going up... into the dark she would
+  spend her life beginning to climb." NEW NAMES: Procula, old Vibia, Saturius (craftsman). No
+  new divergence beyond the earned clock-rung.
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,

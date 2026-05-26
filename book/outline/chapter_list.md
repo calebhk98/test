@@ -445,7 +445,7 @@ detail the reader knows the truth of and the writer doesn't. Files: 02,05,06.
 
 ## EPILOGUE — SOMEONE CLIMBS
 
-### ch52 — A Generation Later [TODO]
+### ch52 — A Generation Later [ACCEPTED]
 Beats: years on. The press still runs; the contest is still held. A young reader
 (Tyche's heir, or a stranger taught by a keeper) decodes the English ladder and
 climbs a rung - solves or builds something Daniel only sketched. The bottom rungs
