@@ -378,7 +378,7 @@ through action and absence, never announced. What the medical work became withou
 its first doubter. Plant: the hole Heras leaves; a thing Heras said that Daniel
 carries forward. Files: 01,02(Heras),05,06.
 
-### ch43 — Family [TODO]
+### ch43 — Family [ACCEPTED]
 Beats: a domestic chapter that earns the stakes - Marcia, the children, the
 ordinary life Daniel never expected to build. The daughter-scholar; a son who
 wants the workshop or doesn't. Daniel's roots surface in small ways (a song, a

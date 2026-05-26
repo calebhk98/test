@@ -1214,6 +1214,38 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   marking his own guesses and drinking the cold filtered water, the answer to a worn old
   joke dying in his mouth with no one at the bench's other end. No new divergence.
 
+- [ch43] ~134 AD, Daniel ~53 (presbyopia worse; cannot read small figures by lamp), a
+  year after Heras's death. WARM DOMESTIC chapter. The family dines together over
+  Caepio's wharf-warehouse (Marcia's, ~60): Marcia, Daniel, Lucanus (when present),
+  Ulpia, Tyche (most evenings), the slave-girl Chloe (~13, serves then eats). A household
+  Lar with a drinking-horn.
+- [ch43] LUCANUS (~22): reads law under an advocate **CAESIUS** (NEW minor; freeborn of
+  freeborn, practice in the Basilica Julia) - aiming to stand at the lower bar in ~3
+  years on freedmen's small suits; deliberately unbearded though the emperor is bearded;
+  lives in rented rooms near the courts; has already found the low ceiling a freedman's
+  son hits (his father's freedman status is on no document shown him and every document
+  about him). Firmly does NOT want the workshop/books. Not married. (Mentor renamed from
+  draft "Sabinius" to CAESIUS to avoid clash with the dead soldier Sabinus, ch13.)
+- [ch43] ULPIA SEVERA (~16): reads Daniel's figures aloud nightly now his eyes fail;
+  corrects the African-coast survey; has held the cipher ~2 years, reads the books,
+  surpasses the second clerk; since ~14 reconciled to working only under a borrowed name.
+  MARRIAGE: MARCIA has begun negotiations (mentioned the ENNII, grain-factors, with a
+  dull kind son) and is hunting a husband "who can stand a clever wife" - NOTHING decided
+  or betrothed yet (live, hard, unresolved stake).
+- [ch43] ROOTS-MOMENT: Daniel hums a half-remembered English SONG from home he can no
+  longer recover whole (a word missing from the middle); he half-confesses to Ulpia that
+  it is "a song from where I'm from" he cannot finish; she learns the broken tune back and
+  does not press (ties to ch24 lost songs, ch41 sleet near-miss). Loneliness rendered, not
+  named.
+- [ch43] CARRY-AFTER reaffirmed: Ulpia -> books/cipher/figures; Lucanus -> the law, away
+  from the work; Marcia holds the enterprise; Tyche is family. MACER (~86) appears, carried
+  to dinner, still calls Daniel "Thulean/boy," says "You did all right, boy." No tech
+  changes; no divergence. Closing image: Daniel barring up the house at night and setting
+  a tally Marcia dropped asleep where she'll find it (he can't read the figures but knows
+  the hand), the rain, and sleep "in a house that was mine in a country that was not."
+- [ch43] NEW NAMED CHARACTERS: CAESIUS (advocate, Lucanus's law-mentor); the ENNII
+  (grain-factor family floated as a marriage prospect for Ulpia, unconfirmed).
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
