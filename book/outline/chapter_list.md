@@ -410,7 +410,7 @@ mortality foregrounded. Files: 01,02,03,06.
 
 ## PART VII / CODA — THE LONG WAY HOME (138-~155, Daniel 57-~74)
 
-### ch47 — Old [TODO]
+### ch47 — Old [ACCEPTED]
 Beats: Daniel aging; the body failing in an era without medicine he can't make;
 finishing the encyclopedia against time; the strange peace and strange grief of a
 life lived entirely in the wrong century. Plant: the final securing of the ladder;

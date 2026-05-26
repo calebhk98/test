@@ -1316,6 +1316,29 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   young-person-with-figures mannerism): Ulpia laying the open-columned survey leaf face-up,
   weighted with a loom-weight against the wharf draft, "a thing not closed, only laid down."
 
+- [ch47] ~142 AD, Daniel ~61, Marcia ~68, Tyche ~57, Ulpia ~24, Macer ~94 (alive,
+  failing), Antoninus Pius reigns. OPENS PART VII / THE CODA. DANIEL OLD: the body failing
+  with no medicine he can make. Concrete decline: a heart/wind episode on the worn wharf
+  step (recovers; he knows it is the death he cannot touch); cold arthritic hands (ring
+  stuck, joints won't open); lost teeth (eats soaked bread / barley pap); insomnia with
+  bad-accounting night-thoughts; eyes long gone.
+- [ch47] ENCYCLOPEDIA upper rungs FINISHED by DICTATION (eyes shut, in the homeland tongue)
+  to TYCHE and ULPIA, who write small for him; Tyche enforces the hooked-stroke honesty,
+  Ulpia questions after. Relief braided with grief (rendered, not named).
+- [ch47] LAST UNBUILT DREAM LET GO: the mechanical CLOCK / escapement (ties to ch23). He
+  has Ulpia write his FAILURE into the books ("begin where I failed") and gives the box of
+  failed gears and drawings to FELIX's craft-failure fund. (Distinct from the ch46 ocean
+  let-go.)
+- [ch47] MACER (~94) glimpsed failing at dinner (a husk, loose ring, mind comes and goes):
+  "Outlived the lot of them... The clever ones go first." NOT killed here (his death is
+  ch48). Nobody dies in this chapter; the phone relic is NOT yet given its final
+  disposition (reserved for ch49). No new named characters; no tech advance; no divergence.
+- [ch47] Closing image (revised off a verbatim reuse of ch43's "a house that was mine in a
+  country that was not" closer): Daniel on Marcia's warehouse roof at dusk, refusing the
+  view, warming his cold ruined hands on brick that still holds the set sun's heat, taking
+  the borrowed warmth until the stone goes as cold as he is, then down the dark stair by
+  feel to lie beside Marcia and "wait to see what the night will be."
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
