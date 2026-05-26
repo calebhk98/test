@@ -1,6 +1,8 @@
 # QA Status Roll-Up — "Does each QA say the story passes?"
 
-Short answer: **No.** Of the 53 chapter QA reviews, **34 say PASS and 19 say REVISE.**
+Short answer: **No.** Of the 53 chapter QA reviews, **30 say PASS and 23 say REVISE.**
+(Verified by direct count: `grep -l "VERDICT: REVISE" book/qa/*` = 23. An earlier draft
+of this file mis-stated 34/19; the table below was always correct.)
 Yet `book/outline/chapter_list.md` marks **all 53 chapters "ACCEPTED."** That is an
 internal bookkeeping contradiction: a chapter cannot honestly be ACCEPTED while its
 own QA file still carries a REVISE verdict, unless the blocking issues were fixed
@@ -11,11 +13,10 @@ blocking issues were actually fixed in the current prose. This file is just the
 verdict census.
 
 ## Verdict census
-REVISE (19): ch01, ch02, ch04, ch09, ch13, ch15, ch16, ch17, ch22, ch23, ch24,
+REVISE (23): ch01, ch02, ch04, ch09, ch13, ch15, ch16, ch17, ch22, ch23, ch24,
 ch34, ch35, ch36, ch38, ch39, ch40, ch42, ch43, ch46, ch47, ch49, ch52
-(note: count includes all chapters whose VERDICT line reads REVISE)
 
-PASS (34): ch03, ch05, ch06, ch07, ch08, ch10, ch11, ch12, ch14, ch18, ch19,
+PASS (30): ch03, ch05, ch06, ch07, ch08, ch10, ch11, ch12, ch14, ch18, ch19,
 ch20, ch21, ch25, ch26, ch27, ch28, ch29, ch30, ch31, ch32, ch33, ch37, ch41,
 ch44, ch45, ch48, ch50, ch51, ch53
 
