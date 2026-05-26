@@ -421,7 +421,7 @@ Beats: the last deaths - Macer (the patron who was cage and shield), others. The
 slow stripping-away of a life. Tyche and the children are the keepers now. Plant:
 the ladder fully in others' hands; Daniel's letting go. Files: 01,02,05,06.
 
-### ch49 — Securing the Ladder [TODO]
+### ch49 — Securing the Ladder [ACCEPTED]
 Beats: the copies made and hidden; the cipher's keepers confirmed; the will and
 the institutions sealed against his death; the dead phone relic's last appearance
 (buried with him? given to Tyche? decide and LOG). His final arrangements, cl

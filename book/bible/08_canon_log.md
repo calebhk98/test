@@ -1370,6 +1370,40 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   board and setting the stylus for morning (continuing Marcia's stopped habit). Not a banned
   closer / not a kept-object talisman.
 
+- [ch49] ~150 AD, Daniel ~69 (alone; Marcia, Macer, Heras all dead), Tyche ~65, Ulpia
+  ~32, Lucanus ~38 (advocate), Vitalis ~33, Chloe ~30 (freed), Felix ~61. Antoninus Pius
+  reigns. SECURING THE LADDER (dramatized in scenes; Daniel met Tyche ~100 AD, so "fifty
+  years" is the correct span - all ages corrected from a stale-year first draft).
+- [ch49] THE FOUR ENCYCLOPEDIA COPIES and their hiding places (THE EPILOGUE PRECONDITION -
+  this is where the ch52 climb comes from): (1) TYCHE'S WORKING COPY = mobile, in oiled
+  wool under floors, the master text through which corrections flow; (2) the SOCIETY'S
+  SEALED COPY = in the collegium chest under deed-seal, openable only before three of the
+  board; (3) the LEAD-AND-PITCH-CASED COPY = BURIED under the press-room floor, beneath
+  the stone that beds the great screw ("patient as a seed," for a future digger); (4) the
+  PARTIAL LATIN copy (through geometry) = OPENLY SHELVED in the Argiletum printed library,
+  ending on a plain-Latin note that the higher rungs exist and can be sought. Honest-limits
+  (hooked-stroke guess-marks, deliberate blank rungs with notes) preserved in all copies,
+  bound by promise.
+- [ch49] KEEPER-CHAIN sealed into LAW: the deed now legally requires every keeper to teach
+  at least two others; Vitalis has taught two the script, Chloe took a storeroom girl and a
+  press boy; the chain fans DOWN the workshop/press line, NOT Daniel's blood. LUCANUS
+  (~38) refuses to be a keeper (he tightened the deed-of-trust wording as an advocate,
+  finding two gaps, but wants no part of the books). The Minerva-endowment gap is
+  acknowledged unfixable (faith can't be crafted).
+- [ch49] THE DEAD PHONE'S FINAL DISPOSITION = **BURIED WITH DANIEL** (decided here, in a
+  Daniel-and-Tyche floorboard scene - she is the only other soul who ever knew it existed).
+  The CITIZENSHIP TABLET is buried with him too (the two "countries" go into the ground
+  together). Tyche offered to keep the glass herself; Daniel refused ("the carrying ends
+  with the carrier; a danger can never be a rung"); she accepted: "Then it goes down, and
+  the work stays up." MACER's RING is NOT buried - its gold value is directed into FELIX's
+  craft-failure patronage fund. The quiet end of the ch24 "two countries that cannot write
+  to each other" thread (rendered, never stated as thesis).
+- [ch49] Daniel ready for death (ch50). No new named characters; no tech advance; no new
+  divergence. Closing image: Daniel alone over the loose floorboard (left UN-renailed for
+  the future last hands), his mind already a quarter-mile off on the lead-cased copy seeded
+  under the press-room stone, waiting for a future digger to carry it up and begin to climb
+  (fresh; seeds the epilogue; not a banned closer).
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
