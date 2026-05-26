@@ -1,0 +1,37 @@
+# QA - Chapter 44
+
+VERDICT: PASS
+
+## Blocking issues (must fix)
+- None.
+
+## Non-blocking notes
+- [craft / VOICE WATCH (3)] The closing reflection paragraph (line 71) runs a four-beat anaphora of near-maxims: "A figure serves the man who reckons with it... A book serves the page it carries... A faster ship goes wherever its owner points the bow. A powder throws the stone the gunner aims." Each is concrete-anchored, so it stays on the right side of the gnomic-aphorism ban, but it is the one place the chapter edges toward stated thesis ("served... what Rome chose to do with strength"). It works because it is rendered through the four already-seen objects (milestone/book/hull/powder) rather than declared abstractly, and it stops short of naming the hubris-or-duty question. Watch in any future revision that this does not get sharpened into an explicit thesis line; right now it earns its keep as the chapter's single permitted maxim-cadence. Do NOT add a second.
+- [craft] Line 13 contains the chapter's one clean aphorism ("A man wants to be the one who taught the world to count and also wants the world to count without thinking of him... I had the second, which is the one that lasts."). One per chapter, mid-chapter not closing - within ration. Flagging only so the count is on record alongside the line-71 cadence; together they are at the ceiling, not over it.
+- [continuity, minor] The milestone is "the Aurelian milestone" / "the second mile" on the road Daniel takes down to the western yard south of the Garonne. The Via Aurelia is the correct coastal road northwest toward Gaul, so this is consistent; no fix needed, noted for the log.
+- [voice] Latin drift handled well and gradually (Bituitus's "coast-Latin," "an as," the figures called "shopkeeper's marks" in others' mouths). No anachronistic time units ("minute"/"second" appears only as the ordinal "second mile" - clean).
+
+## New canon facts that should be logged
+- [ch44] ~135 AD, Daniel ~54 ("the spring I turned four-and-fifty"; "thirty-seven years" since the 98 cell - both correct: 98+37=135, b.81 -> 54). Presbyopia continuing ("my eyes were going"); legs still good.
+- [ch44] FIGURES IN PUBLIC STONE: a new Aurelian-road milestone at the second mile carries the distance to Rome in Hindu-Arabic figures ("a two and a circle"), with an aedile's name and consular dating in Roman letters above. The numerals have become anonymous public/official usage ("simply the marks"); no one connects them to Daniel. PAMPHILUS still at the wharf gate, still one of the few who knows their origin.
+- [ch44] THE PRINTED LIBRARY: a public portico/library off the Argiletum behind the booksellers, endowed by a (unnamed) rich imperial-household freedman, two rooms - left wall the old scrolls (a few hundred), right wall printed codices off Daniel's press, outnumbering the scrolls and identical to one another. CODEX FORM adopted because printed sheets cannot be shelved like scrolls. Stock includes Eros's 20-yr-old times-tables, figure-rules, geometry primers, cheap Homer/Aesop, and a bound codex of collected printed CONTEST prize-tales. Literacy spreading to the poor (a wool-dyer's apprentice; a slave girl reading freely because a cheap printed sheet "escaped the lock and key"). THEOPHANES (the ch37 Greek freedman) brought Daniel there for a cataloguing question.
+- [ch44] THE OCEAN HULL (western yard): yard south of the Garonne mouth that the program bought into; YARD-MASTER **BITUITUS** (NEW; a leather-faced Gaul, coast-Latin, treats Daniel as a clerk's curiosity and the program as "a slow miracle"). A THIRD experimental open-ocean hull is on the ways: deep, narrow, high-bowed, double-planked, heavy-timbered, built to take water from any side - "nothing the Romans built." Two prior hulls lost; one man drowned reaching this point. Honest tech-state: she CANNOT cross. Latitude solved (sun/pole); longitude/westing unsolved; the sea-clock prize stands UNWON (Daniel reaffirms he never built a working clock and knows no living man who can). The survey (African coast crawling south "a headland a season," to one scale, in the figures) lives at the yard; ULPIA's clean copying is used in it. Hadrian sent for Daniel/the survey in person.
+- [ch44] THE CONTEST DREAMING AHEAD OF THE TECH: a ~9-yr-old carter's son on the road draws a steam-ship in the dust - "Felix's steam-ship, near enough" (the ch19 self-fueling-pot tale that named "the metal that does not yet exist"), learned from a cheap printed prize-tale his uncle bought for two coins and read aloud. (Distinct from ch24's ladder-girl, as briefed.) Daniel reaffirms the steam mechanism is GONE from his memory (consistent with ch40: the heat-to-motion bridge lost) and the steel is Hermes's 30-year failure.
+- [ch44] FELIX state reaffirmed: on Daniel's foundation coin, ~quarter-mile from the cattle market, still failing at "the pot," will die failing (consistent with ch39). HERMES still failing at steel ~30 years.
+- [ch44] VITALIS (the ch39 press-apprentice) closes the chapter banking the press stove and putting "the machine I had built to outlive me" to bed; he asks if Daniel needs light "since my eyes" - presbyopia reaffirmed. (Vitalis would be ~18 at 135 - consistent with ch39's 12-yr-old in 129.)
+
+## Divergences established (for the DIVERGENCE LEDGER)
+- No NEW divergence; this chapter RENDERS the measured progress of the single existing FIRST DIVERGENCE (the ch36 ocean program) and reports its state at ~135 AD, honestly:
+  - Survey: African coast pushed south "a headland a season," still on the map alone (per Hadrian's order), to one scale in the new figures.
+  - Western yard: now on its THIRD experimental hull (two lost, one man drowned) - hulls advancing materially but the deep tech still walled.
+  - Sea-clock prize: still UNWON; longitude unsolved; Daniel reaffirms he cannot build the clock and knows no one who can.
+  - The hull explicitly CANNOT cross ("She could not cross. I knew that, standing there.") - no over-reach; the lie's fuse ("uninhabited," "a year's sail") is reaffirmed as loose, with men spending lives toward it.
+  - Recommend the ledger note be updated to reflect "as of ~135 (ch44): third hull on the ways, prize still unwon, crossing still impossible" - consistent with the ch36/ch38 trajectory ("almost nothing, very slowly, in the right direction").
+
+## Brief-coverage confirmation
+- Four signs ALL rendered as distinct encountered scenes with texture (milestone touched under the hand; library smell/shelves/boys; hull on the ways; boy in the dust). NO montage of the core material; the only list-cadence is the closing reflection, which earns it.
+- HOPE BRAIDED WITH UNEASE on every sign (figures: won cheap/lost complete; books: a press "does not know whether the words are a times-table or a libel"; hull: built toward a lie men will die against; boy: the dream a clean generation ahead of any hope of the thing). Unease points FORWARD ("what Rome chose to do with strength") into ch45 "What It Serves" without naming the thesis.
+- Hubris-or-duty left OPEN; nothing resolved.
+- Banned moves: clean. No em dash; no "not X but Y" / correctio (grep hits were coordinating conjunctions and ordinals); no narrator-from-future spoiler; emotion rendered not announced; subtext not exposed; concrete throughout.
+- Ages/canon: all verified against the ANCHOR. Bituitus is a new name with no clash.
+- Length ~3,220 words: within the 3,000-3,800 hold.

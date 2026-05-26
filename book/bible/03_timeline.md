@@ -126,5 +126,64 @@ order the book tells them, with flagged exceptions.
   trajectory has bent. No tidy bow.
 
 ## DIVERGENCE LEDGER (log every deliberate break from real history here)
-- (none yet) - Daniel's accumulating influence may begin deflecting events from
-  ~Part V onward. Any change to real outcomes must be added here with a reason.
+- Daniel's accumulating influence begins deflecting events from ~Part V onward. Any
+  change to real outcomes must be added here with a reason.
+- [ch36, ~121 AD] FIRST DIVERGENCE - THE OCEAN PROGRAM. Real Hadrian consolidated,
+  toured, and built fortified frontiers (e.g. the British wall ~122); he did NOT pursue
+  Atlantic/oceanic exploration. In-story, Daniel's world-map gambit turns Hadrian a few
+  degrees seaward: Hadrian sanctions a BOUNDED program (NOT an armada) - (1) a single-
+  scale world survey in the new figures, pushing the African coast south a season at a
+  time; (2) a western-coast (Gaul/Spain) school/yard of pilots and shipwrights testing
+  open-ocean hulls at a capped cost; (3) a standing imperial PRIZE for a clock that keeps
+  true time a month at sea (the longitude problem). REASON it's plausible (not a wild
+  break): it is framed as prestige/knowledge and consolidation, fits Hadrian's
+  philhellene legacy-hunger and cost-counting, and is gated on real tech walls (hulls,
+  navigation, the unsolved sea-clock) so it cannot leap ahead. WATCH: this seeds a
+  shipbuilding/navigation thread for Part VI and a long-fuse lie (uninhabited west /
+  year's sail). Track whether/how far the program actually gets in Daniel's lifetime
+  (likely slow, possibly lapsing) and into the epilogue.
+- [ch44, ~135 AD] ACCUMULATING DIVERGENCES (concrete signs the arc has bent; all
+  MEASURED/partial, deep tech still unsolved):
+  (a) NUMERALS GONE MONUMENTAL - Hindu-Arabic numerals WITH ZERO cut into the Aurelian
+  milestone at the 2nd mile, an official magistrate's distance reckoning. The marks have
+  moved from commercial slates to PERMANENT OFFICIAL STONE (real Rome never adopted
+  positional numerals officially).
+  (b) A PRINTED LIBRARY - a printed-codex collection in a portico off the Argiletum
+  (endowed by an imperial freedman); press output now OUTNUMBERS the hand-copied scrolls
+  there, in codex form, read by poor apprentices and a slave girl (literacy escaping the
+  lock-and-key of copying cost).
+  (c) AN OCEAN HULL - a THIRD open-ocean experimental hull on the ways at the western
+  yard (south of the Garonne mouth), deep and double-planked, unlike any Roman ship.
+  HONEST LIMIT: she floats but CANNOT cross - navigation/longitude unsolved, the
+  sea-clock prize still unwon, two prior hulls lost. The bend is real; the dream is not
+  delivered.
+  (d) CULTURAL DREAMING - a carter's boy (~9) plays/recites Felix's printed steam-ship
+  contest tale (an oarless, sailless, fire-eating ship to the undiscovered western
+  coast): a civilization dreaming the technology a generation before it exists.
+  NOTE: each sign cuts both ways (a figure serves the tax-farmer, a book serves true or
+  false text, the ship goes where its owner points, the powder is loose) - the
+  hope/unease braid that detonates in ch45.
+- [ch46, 138 AD] OCEAN PROGRAM LOSES ITS CHAMPION. Hadrian (its sole imperial patron)
+  dies; ANTONINUS PIUS (stay-at-home, no appetite for adventure) succeeds. The program is
+  now PRECARIOUS/LAPSING (NOT formally killed): Daniel foresees a procurator letting it
+  die by neglect (smaller grants, the Garonne yard rotting, the sea-clock prize quietly
+  dropped, the African survey halted at its current headland). Daniel tells Ulpia to keep
+  the survey CURRENT-BUT-UNWORKED ("true to the last headland... laid down, not closed")
+  so a future hand need not start the chain from the river-mouth. He relinquishes the
+  private "road west / home" hope. The ENDOWED institutions (press, contest, patronage,
+  the encyclopedia) HOLD - they were built to need no living emperor (the ch38-39 point
+  vindicated). WATCH: whether the ocean program revives later or stays a graded-but-empty
+  road into the epilogue.
+- [ch53, "long after" ~190 AD - generations/a couple centuries on, left vague] THE OCEAN
+  ULTIMATELY CROSSED (the final, largest divergence; the culmination of the ocean gambit
+  and the whole ladder). A single ship, generations up the ladder Daniel laid and Procula
+  began, has CROSSED THE WESTERN OCEAN and stands off an unknown western coast, finding its
+  westing by a gimbaled sea-clock box (descended from Procula's escapement; longitude
+  solved) against sun-height (latitude), lead-line soundings, and figures-with-zero. The
+  standing sea-clock/longitude prize is implicitly won. NO TIDY BOW: the shore is INHABITED
+  (a tended fire, drawn-up boats, figures at the waterline, more smokes up the hills) -
+  Daniel's "uninhabited" was a lie; this is a beginning, unresolved, no landing/conquest.
+  Daniel is FORGOTTEN, surviving only as a worn unread name at the foot of the oldest copied
+  navigation table. Kept as a brief GLIMPSE/whisper (no mechanical justification, no
+  alternate-history detail). The book ENDS here, on an unnamed pilot at the rail looking
+  WEST at the shore, the clock knocking below decks - the climb continuing past the page.

@@ -247,48 +247,48 @@ the rest of the book; a faint sense the ground is too good to last. Files: 01,02
 
 ## PART IV — TOO VALUABLE (110-117, Daniel 29-36)
 
-### ch25 — Three Faces [TODO]
+### ch25 — Three Faces [ACCEPTED]
 Beats: peak influence = peak danger. Scaeva the senator courts Daniel as a
 factional weapon (his powder, his devices); Crispus's intellectual attacks turn
 toward "impiety"; Vibenius holds the religious card he could play either way. The
 net tightening, shown through three encounters. Plant: the coming accusation;
 which ally is compromised. Files: 01,02(Scaeva,Crispus,Vibenius),06.
 
-### ch26 — The Forum [TODO]
+### ch26 — The Forum [ACCEPTED]
 Beats: 112-113; Trajan's Forum and Column dedicated (backdrop set-piece). Daniel's
 public prestige glitters; collaboration and rivalry with Apollodorus at the height
 of his fame. A dangerous, dazzling high - the more visible he is, the better the
 target. Plant: Apollodorus's pride (sets up his fall under Hadrian); Daniel's
 overexposure. Files: 01,02(Apollodorus),03,06.
 
-### ch27 — The Accusation [TODO]
+### ch27 — The Accusation [ACCEPTED]
 Beats: the crisis. A charge of magic/impiety/fraud, fed by Crispus and used by
 Scaeva, that could end Daniel. A trial-by-rumor and patronage. He survives by
 usefulness and by Vibenius's bought or genuine omen - at a cost (a public
 humiliation, a sacrifice, a betrayal, the loss of something). Plant: the fragility
 of a life built on being useful; a debt now owed to Vibenius. Files: 01,02,05,06.
 
-### ch28 — East [TODO]
+### ch28 — East [ACCEPTED]
 Beats: 113; the Parthian War begins; Daniel pulled toward army logistics and
 medicine (dysentery kills more than battle). The machine of conquest at full
 stretch. The ocean-map idea germinates as he sees how far Rome will reach for
 more. Plant: the ocean gambit; the war's overreach. Files: 01,02(Celer if alive),
 03,04,06.
 
-### ch29 — Overreach [TODO]
+### ch29 — Overreach [ACCEPTED]
 Beats: the war's deep east; Ctesiphon taken, the Gulf reached; then revolts erupt
 in the rear (Kitos War backdrop). A hard chapter on empire's cost. If Celer
 survived ch21, he dies here. Daniel sees the limit of conquest and the price paid
 by the unnamed. Plant: Hadrian's coming reversal of these conquests; Daniel's
 grief. Files: 01,02,03,05,06.
 
-### ch30 — The Blindside [TODO]
+### ch30 — The Blindside [ACCEPTED]
 Beats: August 117. Trajan dies of a stroke at Selinus, withdrawing toward Rome.
 Daniel - a teenager once, never sure of dates - is blindsided; his shield is gone.
 Render the news arriving and the ground shifting. Plant: the vacuum; Daniel's
 sudden exposure. Files: 01,02,03,05,06.
 
-### ch31 — Vacuum [TODO]
+### ch31 — Vacuum [ACCEPTED]
 Beats: Part IV turn / cliff. The immediate scramble of succession; rumor, fear,
 the Praetorians; Daniel exposed without his emperor; Macer's alarm. Ends poised on
 the edge of the new reign. Plant: Plotina/Attianus maneuvering; the Four Consulars
@@ -298,35 +298,35 @@ to come. Files: 01,02,03,06.
 
 ## PART V — STARTING OVER (117-125, Daniel 36-44)
 
-### ch32 — Proclaimed at Antioch [TODO]
+### ch32 — Proclaimed at Antioch [ACCEPTED]
 Beats: Hadrian proclaimed emperor; the deathbed adoption widely doubted; Plotina
 and Attianus's hand visible. Daniel reads the new wind from Rome - a colder,
 sharper, more philosophical emperor with less appetite for conquest. Plant:
 Hadrian's character; Daniel rethinking his whole pitch. Files: 01,02(Hadrian,
 Plotina,Attianus),03,06.
 
-### ch33 — The Four Consulars [TODO]
+### ch33 — The Four Consulars [ACCEPTED]
 Beats: 118; four ex-consuls killed without trial. The terror reaches Daniel's
 world; patrons fall or freeze; Macer is shaken and self-protective. Daniel in pure
 survival mode, his network shredded. A frightening, claustrophobic chapter. Plant:
 how alone he is now; the cost of having tied himself to the old regime. Files: 01,
 02,03,05,06.
 
-### ch34 — From Scratch [TODO]
+### ch34 — From Scratch [ACCEPTED]
 Beats: the humiliation of rebuilding every relationship middle-aged, with an
 emperor who owes him nothing and distrusts the famous. Slow, grinding political
 repair. Marcia and Tyche hold the enterprise together while Daniel maneuvers.
 Plant: a foothold with someone close to Hadrian; the ocean-map plan maturing.
 Files: 01,02,03,06.
 
-### ch35 — Hadrian [TODO]
+### ch35 — Hadrian [ACCEPTED]
 Beats: SET-PIECE. First real encounter with the new emperor - voracious, prickly,
 restless, dangerous, genuinely curious. Two restless minds circling. Daniel adapts
 his pitch from conquest-tech to consolidation, knowledge, and the long horizon.
 Plant: Hadrian's interest and his menace; the opening for the ocean map. Files:
 01,02(Hadrian),06.
 
-### ch36 — The Ocean Gambit [TODO]
+### ch36 — The Ocean Gambit [ACCEPTED]
 Beats: Daniel deploys the true-and-false world map: uninhabited western lands a
 year's voyage away, reachable only with ships Rome doesn't yet have; the East
 exhausted, the South desert, the North fierce. Redirect ambition toward the sea
@@ -334,14 +334,14 @@ and the shipbuilding/navigation it demands. The quiet implication that Thule -
 his home - lies out there. Hadrian, the traveler, bites in his own way. Plant: the
 shipbuilding push; the lie's long fuse. Files: 01,02(Hadrian),03,04,06,07.
 
-### ch37 — Apollodorus Falls [TODO]
+### ch37 — Apollodorus Falls [ACCEPTED]
 Beats: Hadrian's enmity destroys Apollodorus (exile/death). Daniel tries and fails
 to save the one peer who ever met him as an equal. What it means to survive by
 bending where a prouder man broke. Grief and guilt. Plant: Daniel's survival
 strategy crystallized; the loneliness deepened. Files: 01,02(Apollodorus,Hadrian),
 05,06.
 
-### ch38 — Consolidation [TODO]
+### ch38 — Consolidation [ACCEPTED]
 Beats: Part V turn. Hadrian abandons the eastern conquests, travels, builds; the
 empire turns inward. Daniel finds footing in the new order and pivots fully toward
 what will outlast him. Sets up the institution phase. Plant: the institution plan;
@@ -351,13 +351,13 @@ Daniel's aging first signs. Files: 01,02,03,06.
 
 ## PART VI — THE LADDER (125-138, Daniel 44-57)
 
-### ch39 — Institutions [TODO]
+### ch39 — Institutions [ACCEPTED]
 Beats: making the press and the contest into bodies that outlive their founder; a
 craftsmen's patronage system endowed against his death; the workshop as an academy.
 The shift from inventing to gardening. Plant: the structures that survive to the
 epilogue; who he's grooming to run them. Files: 01,02,04,06.
 
-### ch40 — The Books [TODO]
+### ch40 — The Books [ACCEPTED]
 Beats: the encyclopedia in earnest - ordered from arithmetic up through algebra,
 geometry, the idea of calculus, Newtonian mechanics, his fuzzy chemistry/biology/
 astronomy, political and economic theory, the shape of unbuilt technologies.
@@ -365,20 +365,20 @@ English first, partly translated. A ladder that assumes nothing. The race agains
 his own fading memory; what he can no longer reconstruct. Plant: the cipher; the
 gaps in his memory as honest limits; the burial/copying plan. Files: 00,02,04,05,06.
 
-### ch41 — Teaching [TODO]
+### ch41 — Teaching [ACCEPTED]
 Beats: Tyche and a couple of apprentices learn English as the cipher; the
 daughter-question (Daniel insists his daughter learn it all, against Roman norms);
 the next generation taking the work. Warm, with an edge of the strangeness of his
 origins surfacing through his children's questions. Plant: the keepers of the
 ladder; the epilogue's protagonist seeded here. Files: 01,02(Tyche,Marcia),05,06.
 
-### ch42 — Heras [TODO]
+### ch42 — Heras [ACCEPTED]
 Beats: Heras dies. The skeptic who kept Daniel honest is gone. Grief rendered
 through action and absence, never announced. What the medical work became without
 its first doubter. Plant: the hole Heras leaves; a thing Heras said that Daniel
 carries forward. Files: 01,02(Heras),05,06.
 
-### ch43 — Family [TODO]
+### ch43 — Family [ACCEPTED]
 Beats: a domestic chapter that earns the stakes - Marcia, the children, the
 ordinary life Daniel never expected to build. The daughter-scholar; a son who
 wants the workshop or doesn't. Daniel's roots surface in small ways (a song, a
@@ -386,21 +386,21 @@ word, a story he can't fully explain to his kids). The loneliness eased but neve
 gone. Plant: who carries what after him; the human cost/reward of staying. Files:
 01,02(Marcia,Tyche),05,06.
 
-### ch44 — The World Bends [TODO]
+### ch44 — The World Bends [ACCEPTED]
 Beats: small concrete signs the trajectory has shifted - the new figures in a
 public inscription, a printed library, a ship laid down for the open ocean, a boy
 quoting a contest story. Begin filling the DIVERGENCE LEDGER. Hope braided with
 unease about what he's set loose. Plant: the bent timeline; the epilogue's payoff.
 Files: 01,03,04,06.
 
-### ch45 — What It Serves [TODO]
+### ch45 — What It Serves [ACCEPTED]
 Beats: 132-136 backdrop, the Bar Kokhba revolt and imperial brutality. Daniel
 confronts that his gifts serve power, including its cruelty (his powder, his
 logistics, his sieges). The hubris-or-duty question at its sharpest, unresolved.
 The darkest chapter of Part VI. Plant: the unresolved moral core; Daniel's
 reckoning with his own legend. Files: 01,02,03,05,06.
 
-### ch46 — Hadrian Dies [TODO]
+### ch46 — Hadrian Dies [ACCEPTED]
 Beats: Part VI turn. 138; Hadrian dies; Antoninus Pius succeeds. Another reset,
 but Daniel is old and the work is institutional now; he watches power pass with a
 survivor's detachment. Plant: the handoff to the final movement; Daniel's
@@ -410,31 +410,31 @@ mortality foregrounded. Files: 01,02,03,06.
 
 ## PART VII / CODA — THE LONG WAY HOME (138-~155, Daniel 57-~74)
 
-### ch47 — Old [TODO]
+### ch47 — Old [ACCEPTED]
 Beats: Daniel aging; the body failing in an era without medicine he can't make;
 finishing the encyclopedia against time; the strange peace and strange grief of a
 life lived entirely in the wrong century. Plant: the final securing of the ladder;
 a last unbuilt dream he lets go. Files: 01,02,05,06.
 
-### ch48 — The Subtraction [TODO]
+### ch48 — The Subtraction [ACCEPTED]
 Beats: the last deaths - Macer (the patron who was cage and shield), others. The
 slow stripping-away of a life. Tyche and the children are the keepers now. Plant:
 the ladder fully in others' hands; Daniel's letting go. Files: 01,02,05,06.
 
-### ch49 — Securing the Ladder [TODO]
+### ch49 — Securing the Ladder [ACCEPTED]
 Beats: the copies made and hidden; the cipher's keepers confirmed; the will and
 the institutions sealed against his death; the dead phone relic's last appearance
 (buried with him? given to Tyche? decide and LOG). His final arrangements, cl
 ear-eyed. Plant: exactly what survives and where; the epilogue's seed. Files:
 00,02,04,05,06.
 
-### ch50 — Going [TODO]
+### ch50 — Going [ACCEPTED]
 Beats: Daniel's death, far from home, not tidy. What he never built; what he
 moved. The loneliness met head-on at the end. Render it; do not annotate it. Plant:
 nothing - this is a payoff chapter; let the planted threads land. Files: 00,02,05,
 06.
 
-### ch51 — A Hand Not His [TODO interlude]
+### ch51 — A Hand Not His [ACCEPTED]
 Beats: short interlude in another voice - a Roman document after his death (a
 letter in the manner of Pliny, or a freedman's memorandum, or a market record)
 showing how Daniel is remembered and misremembered. Dramatic irony built, not
@@ -445,14 +445,14 @@ detail the reader knows the truth of and the writer doesn't. Files: 02,05,06.
 
 ## EPILOGUE — SOMEONE CLIMBS
 
-### ch52 — A Generation Later [TODO]
+### ch52 — A Generation Later [ACCEPTED]
 Beats: years on. The press still runs; the contest is still held. A young reader
 (Tyche's heir, or a stranger taught by a keeper) decodes the English ladder and
 climbs a rung - solves or builds something Daniel only sketched. The bottom rungs
 have held. Warm, earned, forward-facing. Plant: the climb continuing past the page.
 Files: 02,04,05,06,07.
 
-### ch53 — The Far Whisper [TODO short]
+### ch53 — The Far Whisper [ACCEPTED]
 Beats: very short. A distant sign the empire's arc bent - a glimpse, an artifact,
 a line in a record from much later - that the ladder kept being climbed. No tidy
 bow. End on a concrete image of someone, unnamed, on a higher rung, looking up.

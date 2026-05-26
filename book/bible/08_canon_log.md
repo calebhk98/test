@@ -618,6 +618,901 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   useful to be safe). MARCIA is pregnant with their first (freeborn) child. STICHUS
   is now a grown man (no longer the coal-pot boy), working at the yard.
 
+- [ch25] Winter ~110-111 AD, Daniel ~29-30, imperial freedman at the wharf yard.
+  PART IV opens. Marcia's SON is born, healthy, but UNNAMED through the chapter
+  (Roman custom: named on the ninth day; a gold bulla is prepared; the naming is
+  set for the day after Vibenius's visit). NO name given on the page yet (log it
+  when a later chapter names him). Marcia ran the books from her childbed.
+- [ch25] PUBLIUS CORNELIUS SCAEVA introduced and NAMED (first appearance). Senator,
+  ~57-58: tall, a once-hard frame gone soft; long deeply-lined face; smiles often
+  and means it about a third of the time; iron hair brushed forward; broad purple
+  senatorial stripe worn without fuss; low, unhurried, beautifully placed orator's
+  voice. Travels with EIGHT bearers ("the senatorial number" = affordable restraint).
+  He came to the gate eight days after the boy's birth. WANTS: to become Daniel's
+  sole patron, pull him out of Macer's orbit, and have the powder/cannon "pointed
+  somewhere" by a friend once steel is solved. He calls the figures/press "the engine."
+- [ch25] DEBT/HOOK (Scaeva): Daniel ACCEPTED a favor - Scaeva will "fix" a river-gate
+  customs man who was holding up Daniel's SULFUR shipments. So Daniel now owes Scaeva
+  an obligation, AND Scaeva now knows Daniel imports sulfur, roughly how much, and
+  through which gate (i.e. Scaeva has mapped Daniel's powder-supply weak point). Daniel
+  grasped the cost only after agreeing.
+- [ch25] CRISPUS (~52) shifted his attack fully from fraud/Thule-is-a-lie to IMPIETY,
+  at the baths, before witnesses, pinning "the barbarian's heaven by ladder" (his ch24
+  phrase) on the staircase-prize. Daniel parried by reframing the ladder as "the
+  longest prayer there is," but is now ON RECORD as having heard the impiety charge.
+- [ch25] AULUS VIBENIUS (~67) came ON FOOT to the yard the day before the naming. He
+  declined to attack OR protect ("my house does not lean"), and laid out the closing
+  trap: a FORMAL impiety complaint has reached the priestly colleges (lodged by "a man
+  of standing"); the colleges wait to see which way the great houses lean; Scaeva
+  leaning toward Daniel would make the ladder "a ladder to the field" and turn impiety
+  into a COURT matter. DEBT/HOOK (Vibenius): he demanded Daniel have ready "a reason he
+  could say to a god's face," to be called for on a day of Vibenius's choosing.
+  Vibenius's verdict (bless vs brand) is explicitly UNDECIDED and load-bearing.
+- [ch25] Trajan's favor reaffirmed as Daniel's load-bearing shield, with the limit
+  named: a man of letters proving the emperor's wonder false only embarrasses the
+  emperor, but an IMPIETY charge can outrank that protection. (Sets up ch27.)
+- [ch25] No tech/device state changes. Plants for ch27 ("The Accusation") set, unresolved.
+
+- [ch26] ~112-113 AD, Daniel ~31-32, imperial freedman at peak influence. OPENS on
+  the ninth-day NAMING of his and Marcia's freeborn son: **MARCUS ULPIUS LUCANUS**
+  (cognomen "Lucanus," chosen by Marcia). Freeborn citizen, bulla hung. (The son
+  Daniel can never legally be the equal of - freeborn where Daniel is a freedman -
+  and a new hostage to fortune under the impiety threat.)
+- [ch26] BACKDROP: the dedication of TRAJAN'S FORUM (112) and TRAJAN'S COLUMN (113,
+  still under construction at its lower turns). Daniel moves through the crowd as a
+  courted marvel; Scaeva's leash felt via a freedman at Daniel's elbow; Scaeva's
+  customs-gate favor is now IN EFFECT (Daniel's sulfur passes unmolested).
+- [ch26] THE COLUMN beat: Daniel reads the sanitized stone version of the Dacian wars
+  he served in; his tethered balloon appears mis-carved as a "fishing-float"; he
+  silently registers the soldier the relief omits (SABINUS, NOT named on the page).
+  Seeds the legend-vs-man / "who decides what is remembered" theme (pays toward ch51).
+- [ch26] APOLLODORUS (now ~60+, white-haired, old mis-set right-hand knuckles; built
+  the Forum/Column) met as wary PEER-RIVAL (NOT friend; alive and must survive to
+  ch37). He reuses "a clever toy that does one thing"; he declined to arrange the
+  reliefs' marching order; he told Daniel he'd reached "the bottom of the well he
+  brought with him." Daniel confided to him that he cannot build a working clock
+  escapement (consistent with the ch23 gap). His PRIDE/inflexibility planted hard:
+  "A man who softens his true things to suit the listener is building on sand."
+- [ch26] HADRIAN appeared as a GLIMPSE only, UNNAMED on the page (a bearded man of
+  ~40 in the emperor's circle, a draughtsman's roll under his arm, designs "gourd"/
+  segmented domes). Apollodorus contemptuously dismissed his architecture loudly
+  ("go and paint his gourds"); a cold precise exchanged bow; Daniel read the danger
+  of a proud man humiliating a powerful one ("which of the two had the more to lose,
+  and it was not the one with the power"). Daniel does NOT know who he is. SEEDS the
+  ch37 enmity. (Hadrian's full introduction remains ch35.)
+- [ch26] Demetrios's spyglasses still failing publicly (a perfumer's wife sees only
+  colored fog). Tech state otherwise unchanged.
+- [ch26] The impiety complaint, Scaeva's hook, and Vibenius's pending verdict all
+  remain UNRESOLVED at chapter's end (carried into ch27). Closing image: the river
+  finding its level (NOT the phone relic).
+
+- [ch27] Early spring ~113 AD, Daniel ~32, imperial freedman. THE IMPIETY CRISIS
+  breaks and resolves AT A COST. VIBENIUS came to the wharf and made Daniel rehearse
+  his "reason." DANIEL'S "REASON" (said to a god's face, which he does NOT believe,
+  and which shames him): the knowing/ladder is not his; every rung was already set
+  down by the gods for him to find; building the ladder is thanking them "in the
+  only language that doesn't lie, which is work," and he merely carries the fire
+  back as an offering.
+- [ch27] THE RECKONING ("a trial by rumor and patronage," NOT a court): held in a
+  lent house on the Caelian belonging to **MANIUS AEMILIUS SCAURUS** (new minor:
+  a grand-old-family senator whose name "leans nowhere," so his house can host an
+  undecided thing). Panel = three priests of the college (VIBENIUS dominant), the
+  accuser CRISPUS, and watchers including Macer and Scaeva. CRISPUS pressed a lethal
+  impiety case (the ladder climbing past the gods; the "clean rag" against heaven's
+  will; foreign rites; lies crowned on Minerva). Daniel could NOT win on rhetoric,
+  floundered, then surfaced on dead children and the gods'-gift framing.
+- [ch27] HOW IT WAS DECIDED (patronage, not merit): MACER hung back at the wall and
+  spent NOTHING to protect Daniel (cold, the limit of the bond; NOT a rupture; plants
+  ch33). SCAEVA leaned in with senatorial weight from his seat and tipped the room,
+  making Daniel PUBLICLY "Scaeva's man" (tightens the leash pulling east; sets up
+  ch28). VIBENIUS had a younger haruspex read the expiation-victim's liver "sound";
+  whether Vibenius believed Daniel's reason, was bought, or made a cold call is NEVER
+  shown (he stays unreadable).
+- [ch27] THE PUBLIC COST: a white heifer with gilded horns sacrificed to MINERVA on
+  the Aventine during the QUINQUATRUS, paid from Daniel's purse and led by his own
+  hand; and the FORMAL DEDICATION of Daniel's whole enterprise (press, the new
+  figures, the contest) into Minerva's keeping. LOSS WITH TEETH: the priestly
+  colleges now hold a PERMANENT HOOK in the contest/press/figures - a right to be
+  consulted, and a rite said every Quinquatrus before winners are crowned. The
+  contest's/enterprise's independence is compromised (relevant to Part VI
+  institution-building).
+- [ch27] DEBTS: Daniel now owes VIBENIUS an unpayable, unquantified debt (what
+  Vibenius does with Daniel's "reason" is "not in your hands"); and is bound more
+  deeply to SCAEVA. CRISPUS was publicly DEFEATED this round (the gods declared FOR
+  the barbarian, on Minerva's own day, the worst outcome for him); he is ALIVE, his
+  hatred hardened. MARCIA stayed home (Daniel insisted); she and Tyche pre-mapped
+  the room's players the night before. Closing image: a bad iron hinge with a hidden
+  internal flaw (NOT the phone relic).
+
+- [ch28] Late ~113-114 AD, Daniel ~32-33, imperial freedman. The PARTHIAN WAR opens
+  and Daniel is pulled EAST by a DUAL authority: the emperor's house (army health /
+  water / the flux that kills more than battle) AND Scaeva (who commended Daniel to
+  eastern officers already half his, and asked Daniel to write to him as "the
+  senator's eye"). Both leashes tightened. He left Marcia, ~1-yr-old Lucanus, and
+  Tyche running the enterprise in Rome.
+- [ch28] JOURNEY: road south to Brundisium, by sea down the coast to SYRIA. By
+  chapter's end Daniel is at the army camp outside ANTIOCH (the eastern staging
+  base); he has NOT gone deep east (Ctesiphon/Gulf = ch29). He did his established
+  work (camp/latrine siting, barrel-battery filters, boil-by-century discipline) and
+  kept his manned-balloon vow (tethered EMPTY basket only; refused two manned-ascent
+  requests again).
+- [ch28] THE MACHINE AT FULL STRETCH rendered through Daniel's compulsive arithmetic
+  of the supply lines pouring east - the awe/dread of how far Rome will reach for more.
+- [ch28] CELER (ALIVE, ~50-51) reappears, now PREFECT of an auxiliary cohort working
+  the supply road; two real scenes; he voices the war's overreach question ("out of
+  world or out of us"). He marched his cohort further east before dawn at chapter's
+  end (he survives into ch29, where he dies). NASO alive, kept on baggage/mule duty
+  in the rear by Celer (ruined left hand, bad ankle, ~31-32).
+- [ch28] HISTORY tracks real events with NO divergence yet: Armenia annexed (114,
+  heard secondhand via Celer). Divergence ledger still empty by design.
+- [ch28] OCEAN-GAMBIT GERM planted: PRIVATELY, half-formed, recoiled-from; Daniel
+  ties it to his ch03 world-map western continents (redirect Rome's bottomless hunger
+  west across the ocean instead of grinding up people in the east). NO ONE knows; he
+  pitches it to nobody; he himself doubts anything is reachable within a year's sail
+  (the map is unmeasured). Pays off with Hadrian in ch36. No tech state changes; no
+  new named characters (only Scaeva's unnamed freedman messenger).
+
+- [ch29] ~116 AD, Daniel ~35, imperial freedman at the supply camps behind Antioch.
+  THE OVERREACH. The high-water mark (Ctesiphon's fall 116, the army at the Persian
+  Gulf / southern sea, the old emperor's shore-wish to sail on after Alexander)
+  reaches Daniel ONLY as secondhand rumor; he sees none of it. The conquered rear
+  rises in revolt (Mesopotamian cities + the 115-117 diaspora risings, rendered
+  through Daniel's ignorant/wrong Roman lens); the supply line frays; the overreach
+  is exposed. Tracks REAL history; divergence ledger still EMPTY.
+- [ch29] **QUINTUS MARCIUS CELER DIED** (~116 AD, age ~53). A thrust wound below the
+  left ribs in a night action holding the supply road; bound on the road with filth,
+  brought to Daniel after ~2.5 days; SEPSIS over 5 days (fevers with clear-eyed
+  intervals); he died before dawn on the fifth day while Daniel held the water cup,
+  with no last word. Daniel cleaned, debrided, packed, posca'd, and dressed it and
+  FAILED - the floor of his medical gift made physical (a wall against infection
+  with no door for what is already inside). Officially recorded as fallen of a wound
+  holding the road (true; it omits the rest).
+- [ch29] At the end Celer drew from Daniel the admission that he never wanted to put
+  a man up after Sabinus, and named Daniel's repeated "no about the bag" as the
+  answer to his ch13 challenge ("what kind of man builds a thing like that"). Kept
+  largely in subtext; Celer in character to the end (clipped, gallows-humored: "mind
+  your drain").
+- [ch29] NASO ALIVE, mended (hand curled, ankle hitching); he sat the dying and
+  carried the foul cloths, then left west toward Antioch by baggage train. He gave
+  Daniel CELER'S KIT-STRAP (echo of the ch13 burned-rag gesture). DELIBERATE CONTRAST
+  with ch13: Daniel did NOT burn it; he worked it into his own kit ("burning a thing
+  is only another way of keeping the smell of it"). Closing image: Daniel back down
+  the line telling grown men to wait for the water to boil (the saving work + its
+  complicity continuing; NOT the phone relic).
+- [ch29] OCEAN-GAMBIT GERM hardened (the east is a dead end - desert, foreign rivers,
+  cities that won't stay knelt) but STILL UNSPOKEN to anyone; Celer was the one man
+  Daniel might have tried it on. Daniel privately certain someone must let conquered
+  ground go (SEEDS Hadrian's coming reversal; Daniel does NOT know it's coming).
+  Daniel goes into ch30 gutted, harder, carrying Celer's strap. No new named
+  characters; no tech state changes.
+
+- [ch30] Summer ~117 AD, Daniel ~36 (nineteen years in this world since spring 98),
+  imperial freedman, on the army's WESTWARD WITHDRAWAL road behind Antioch, still at
+  the fires keeping water discipline. THE BLINDSIDE. News of TRAJAN'S DEATH (real
+  history: stroke, at SELINUS in Cilicia, "the eighth day of the month," ~8 Aug 117)
+  reaches Daniel ~a fortnight old, via dispatch rider -> horns out of order -> a Greek
+  baggage clerk Daniel had taught the new figures. Daniel is blindsided (he carried
+  no memory of WHEN Trajan would die), then turns cold and practical.
+- [ch30] DANIEL'S RECKONING: his freedom legally HOLDS, but his protective SHIELD (a
+  living emperor) is gone; his very name (Ulpius, Trajan's own gens) and his cover
+  against Crispus, the priestly colleges' impiety hook, and Vibenius all rested on the
+  dead man. He is exposed, a month's hard sail from Rome, still on Scaeva's leash
+  (Scaeva alive in Rome, now able to wield Daniel more freely). Confirmed canon: Daniel
+  met Trajan only the once (the ch17 audience).
+- [ch30] HADRIAN heard ONLY as contradictory rumor: hailed emperor at Antioch; the
+  deathbed adoption widely DOUBTED; whispered as engineered by the empress (Plotina,
+  unnamed on the page) and the Guard prefect ATTIANUS (named, real), via a
+  household-freedman herald who "conveniently died." The army's old hard core wanted
+  one of the marshals/city-takers and got "a bookish kinsman." The name means nothing
+  to Daniel; he can verify none of it.
+- [ch30] ch26-HADRIAN FLICKER handled per constraint: an unplaceable half-memory
+  (beard, drawings, Apollodorus's "gourds" insult) that Daniel CANNOT and does NOT
+  firmly connect to the new emperor; he lets it go. (Recognition reserved for ch35.)
+- [ch30] Daniel's intent: urgent to get back to Rome to reach Marcia, Lucanus (~2-3),
+  Tyche, and the enterprise before enemies/news act; he judges the sea distance makes
+  him likely too late. Ends poised on the edge of the unknown reign (the succession
+  scramble is ch31). No new named characters (Attianus is historical). No tech state
+  changes. Divergence ledger still EMPTY. Phone relic appears mid-chapter only.
+
+- [ch31] Late 117 into early 118 AD, Daniel ~36, imperial freedman. CLOSES PART IV
+  (the vacuum). Daniel reached Rome via a ~5-week grain-hull passage from a Cilician
+  port to Puteoli, then up the road by hired mule (carries Celer's strap). CHANGED
+  CITY: extra Guard watching faces at the gates; markets loud-then-silent; the
+  bread-woman won't gossip; impiety/sedition graffiti limed over; the new emperor's
+  name cut in fresh stone and chanted but absent; a city-wide "lean against nothing"
+  mood. (Hadrian still in the EAST; will not reach Rome until summer 118.)
+- [ch31] MARCIA'S ASSESSMENT (the cold figure): Daniel's NAME was the security on
+  every house contract and its worth died with Trajan; the priestly colleges'
+  right-of-consult from the ch27 Minerva dedication is now an open door for the new
+  regime and for Crispus; she demanded full disclosure of the Scaeva debt and ordered
+  NOTHING burned. LUCANUS (~5) did not recognize his father (Daniel was east ~3-4
+  years). Tyche (~32) confirmed the box/cipher safe.
+- [ch31] MACER (~69) FRIGHTENED for the first time Daniel has seen: named in the
+  legion-contractor rolls as the dead regime's man, "tucking in his edges." His line:
+  he will give Daniel up if asked, but "slow, at an old man's memory" (more than he
+  gave on the Caelian in ch27). Bond strained but intact; self-protection planted for
+  ch33. NOT killed, NOT ruptured.
+- [ch31] PLANTED AS RUMOR ONLY (unresolved; detonates ch33): PLOTINA + ATTIANUS run
+  Rome and are settling scores before "the boy" (Hadrian) arrives; contradictory talk
+  of a consulars' "plot," names dropped (Palma, Celsus, Quietus, an unknown fourth;
+  the count itself uncertain). SCAEVA alive, Daniel still his man, but Scaeva "doesn't
+  know whose man HE is" - precarious. The ch26-Hadrian beard/Forum-insult flicker
+  recurs, STILL unconnected. CLIFF ENDING: Daniel on a roof-rail looking east up the
+  road at an unarrived reign (NOT the phone relic). History tracks real events; NO
+  divergence (ledger empty).
+- [STRUCTURE NOTE] PART IV/V BOUNDARY: ch31 (late 117-early 118, the vacuum) closes
+  Part IV; ch32 (Hadrian proclaimed / the new reign) opens Part V. The year 117-118
+  straddles the seam, so both Part headers and the timeline touch it - this is
+  intentional, not a contradiction. Part IV = the fall of Daniel's Trajan-era world;
+  Part V = starting over under Hadrian.
+
+- [ch32] Spring ~118 AD, Daniel ~36 (twenty years in this world since spring 98 -
+  use TWENTY from 118 on), imperial freedman in Rome. OPENS PART V. THE GREAT
+  REVERSAL reaches Rome (first via an Aemilian-bridge fish-seller): HADRIAN abandons
+  Trajan's eastern conquests (Armenia, Mesopotamia, Assyria), pulling the border back
+  to the river. Conquest party appalled; "sound generalship" the official line.
+  Daniel is half-VINDICATED (his private ch29 conclusion that someone must let the
+  ground go) and SICKENED, because Celer died holding a road to a province now struck
+  off; he works Celer's kit-strap buckle the way Macer works his ring (grief kept
+  under the surface).
+- [ch32] HADRIAN assembled from FRAGMENTS (Daniel still has NOT met him; the ch26
+  gourd-domes/beard link stays UNCONNECTED): a reader/composer, Greek-besotted
+  (philhellene pride worn buttoned to the throat), a hard exact soldier, unflatterable,
+  a cost-counter who wants "a small house perfectly kept" - to pull the arms in and
+  keep the part that pays. Assembled via HERAS (a Greek's wry insider read; his line:
+  the gods "give you the thing you asked for and wait to see your face") and MARCIA
+  (cold business/rolls read). Legitimacy still shadowed by the doubted adoption
+  (Plotina/Attianus).
+- [ch32] DANIEL'S RECALIBRATION: his whole expansion-serving toolkit (balloon-eye,
+  bursting cannon, war-logistics figures) is now DEAD WEIGHT and a LIABILITY - he is a
+  marked "dead emperor's marvel," high on the rolls, Ulpius-named, war-served. He must
+  reframe toward CONSOLIDATION / KNOWLEDGE / the long horizon and win an emperor who
+  owes him nothing. MARCIA set a year-long FOUR-LINE PLAN: water; uncheatable figures
+  pitched to a war-debt treasury; the press for a reading emperor. The OCEAN-GAMBIT
+  germ flickered and was FILED as wrong for a pull-IN emperor ("you do not sell a man
+  locking his doors a map to a country a year's sail past the edge of the sea") - pays
+  off reframed in ch36.
+- [ch32] PLANTED, unresolved: Hadrian's menace; the Four Consulars dread still only
+  the spring's loose talk; the marked-Trajan-creature danger sharpened. No new named
+  characters; no tech-state changes; divergence ledger empty. LUCANUS (~6) warming to
+  Daniel via the strap; learned Daniel's buckle-turning tic. Closing image: Lucanus on
+  the press-room floor turning the dead soldier's buckle, asking "Is he coming"
+  (meaning the emperor; NOT a rail image, NOT the phone relic).
+
+- [ch33] Summer ~118 AD, Daniel ~37, imperial freedman in Rome; HADRIAN still on the
+  road (not yet arrived). THE TERROR reaches Daniel's world: the FOUR CONSULARS
+  (Cornelius Palma, Publius Celsus, Lusius Quietus the Moor, Avidius Nigrinus) killed
+  untried on ATTIANUS's order (Marcia's rolls-sourced report + the city gone silent,
+  doors shut, a delator climate), framed as the house cleaned before the emperor
+  arrives. Real history; NO divergence; ledger empty.
+- [ch33] SCAEVA abandoned Daniel by WITHDRAWAL (not denunciation): refused the dawn
+  audience, returned a tablet with seal unbroken, and WITHDREW the river-gate sulfur
+  favor ("settled; no further attention from me"). Scaeva is ALIVE but withdrawn; the
+  leash is cold; he still KNOWS the sulfur-supply secret but no longer eases the gate
+  (so Daniel's powder supply is now harder/more exposed). Confirm: Scaeva not killed.
+- [ch33] MACER (~70) kept Daniel standing in the atrium and told him to STOP COMING,
+  "make yourself small... I will not burn for you," but vowed that if pressed he would
+  tell only the harmless truth (the emperor bought Daniel long ago). The twenty-year
+  bond strained to a wire but HELD: warned, not ruptured, NOT a denouncer.
+- [ch33] THE SCARE: an informer posing as an OIL-IMPORTER probed the impiety /
+  Minerva-dedication hook at the wharf yard. Daniel survived by MARCIA burying the man
+  in dullness and TYCHE having hidden the box/cipher/powder-ratios (moved the night
+  the city went quiet) and the SECOND PRESS - plus dumb luck ("I did not win it").
+  Whose man the informer was is never learned. Humiliating, diminishing, no clean win.
+- [ch33] ISOLATION going into ch34: Celer dead, Macer frozen, Scaeva gone, Heras
+  AVOIDED (Daniel keeps away because loving him is now a liability), no emperor, his
+  own fame a liability. Daniel is deliberately STRIPPING HIS OWN NAME - contracts
+  moved under "MARCIA, liberta, widow of Caepio" - going invisible to survive. Closing
+  image: Lucanus (~6) counting figures against his arm; a room "about the size of a
+  cell" (callback to ch02). No new named characters; no tech-state changes.
+
+- [ch34] Autumn-winter ~118 AD, Daniel ~37, imperial freedman in Rome (Hadrian now in
+  the city; the debt-cancellation in force). THE GRIND of starting over: Daniel
+  abandons the senators and courts low fiscal functionaries and procurators' freedmen,
+  kept standing in porticoes, turned away, TWICE waved past by doormen because he now
+  reads as a nobody. "The smallest I had been since the cell."
+- [ch34] MARCIA and TYCHE front-and-run the enterprise: contracts/figures/contest all
+  under "Marcia, liberta, widow of Caepio"; Tyche catches fraud cold and keeps the
+  hidden box/cipher (moved AGAIN, location now withheld even from Daniel). Marcia sets
+  the patient strategy ("feed the clerk for a year"; Daniel is to be the dull man and
+  let the marks be famous in his place). Daniel now operates from the shadows behind
+  them.
+- [ch34] NEW NAMED CHARACTER: **EUDEMUS**, a Greek freedman, secretary/clerk in the
+  imperial FISCUS (treasury). He values the new figures as accounts that cannot hide a
+  lie, fit for Hadrian's debt-cleanup. STATE OF CONNECTION: a DOOR, not a friend; he
+  risks nothing; he may one day "say a name" to a man higher than him (probably
+  Marcia's name, "it travels better") on a day he does not control. The audience-route
+  toward Hadrian begins to open, tentative/unfinished. Met once; a SECOND summons from
+  Eudemus arrives at chapter's end (unanswered on the page). Pays toward ch35.
+- [ch34] OCEAN-MAP PLAN reframed/matured (still FILED, NOT pitched to anyone in power):
+  not conquest (dead for a pull-in emperor) but KNOWLEDGE + PRESTIGE (knowing the true
+  shape of the world, an Alexander-style legacy) PLUS a grand non-conquest project to
+  occupy idle/dangerous legions (shipbuilding, mapping, a voyage). Discovered in scene
+  via Tyche's "a man taking an inventory"; Tyche recorded the framing in the English
+  cipher. Pays off ch36.
+- [ch34] HERAS (~65) re-approached after ~a year of deliberate avoidance; bond warm and
+  intact; he brokered the Eudemus connection via the Greek network (an unnamed older
+  Greek patient, "the uncle"); Heras's and the patient's names kept out of it. No
+  tech-state changes; isolation continues; divergence ledger empty. Closing image:
+  Lucanus (~6) miscounting a printed sheet; Daniel leaving to meet "a man who was not
+  my friend" (NOT phone/roof/maxim).
+
+- [ch35] ~120-121 AD, Daniel ~39-40, imperial freedman. SET-PIECE: the first real
+  audience with HADRIAN (~44-45, b.76), arranged when a man above EUDEMUS in the fiscus
+  sent past "the widow's name" for the maker of the uncheatable figures; held in a
+  senatorial house on the Palatine slope (a working library, standing architects and
+  clerks present), not the palace.
+- [ch35] HADRIAN rendered live for the first time, a deliberate CONTRAST to the ch17
+  Trajan: full Greek beard on a Roman face; restless, voracious, performs erudition
+  (baits the Thule charge with Strabo/Pytheas), sets little traps (the flying, the dead
+  Danube man), tests whether Daniel will lie about his own deference, repeats Daniel's
+  good lines back as his own and watches Daniel let him; a cost-counter taking an
+  inventory. (Trajan liked Daniel's honesty; Hadrian likes the smallness honesty admits
+  beside his own success.)
+- [ch35] THE ch26 RECOGNITION LANDED organically: mid-audience, watching Hadrian sketch
+  a stepped segmented "gourd"/half-egg dome with two fingers over an architect's temple
+  drawing, Daniel realized this emperor IS the bearded "gourd-domes" man Apollodorus
+  mocked at Trajan's Forum (ch26). DANIEL'S CONCLUSION / survival law of the reign:
+  Hadrian keeps a ledger and destroys men who make him feel small, so Daniel must show
+  enough to be valuable while NEVER besting him or letting him feel out-known. Daniel
+  deflected Hadrian's "your opinion of my roof" trap with feigned ignorance + a
+  self-deprecating failure ("I would pay to see the half-egg stand").
+- [ch35] WHAT LANDED: the new figures (Hadrian worked a real grain-levy sum by his own
+  hand and was hooked) and the press "for figures, not opinions." Daniel WON a foothold:
+  a commission to render a whole province's accounts in the new figures both ways, with
+  use of his press, wax, and clerks (NO coin pay). His stated ask: to be useful and
+  forgotten, his name on nothing.
+- [ch35] OCEAN GAMBIT NOT PITCHED: Daniel felt the exact opening (Hadrian asked what he
+  wanted; "the map was in his mouth") and deliberately HELD it, fearing Hadrian would
+  appropriate it or resent being out-known. Still filed (pays off ch36).
+- [ch35] RELATIONSHIP STATE: ambiguous by design, patron-or-predator unresolved; Hadrian
+  said he will "remember" Daniel and let slip (then covered) that he knew Eudemus was
+  the clerk talking up the marks (no secrets in his house). DANGER TO APOLLODORUS planted
+  hard (Daniel fears for him, judges he cannot warn him) but NOT resolved (ch37).
+  Apollodorus ALIVE. No new named characters. History tracks real Hadrian; ledger empty.
+  Closing image (revised off the Lucanus-with-figures pattern): Daniel at his gate
+  counting the day's loads twice to quiet his hands while a man on the Palatine decides
+  his use.
+
+- [ch36] ~121 AD (twenty-three years since the spring-98 map; use TWENTY-THREE here),
+  Daniel ~40, Hadrian ~45-46. Same Palatine-slope senatorial house as ch35. THE OCEAN
+  GAMBIT DEPLOYED. Engineered via the accounts work: Daniel broke the province of
+  LUGDUNENSIS (Gaul) in the new figures in eight months, leaving a clean nine-year
+  "gap" in a column that fingered a thief without naming him; summoned over a second
+  province (BELGICA) that was only the pretext; Hadrian raised the old world-map himself
+  (a fiscus clerk's gossip).
+- [ch36] THE PITCH (direct positive framing, NOT conquest): the East threw Rome off, the
+  South stops at sand, the North at cold and trees; the one direction Rome has never
+  reached is the western sea; and the prize is KNOWING the true shape of the world ("I
+  would be the man who knew the shape of the world"), a legacy a cost-counting emperor
+  would value where a general would be a fool to want it. Daniel threaded it per the
+  ch35 survival law and let Hadrian co-opt the vision as his own thought.
+- [ch36] **FIRST DIVERGENCE-LEDGER ENTRY** - what Hadrian committed to (bounded;
+  explicitly "no armada, no Trajan"): (1) a proper SURVEY/map of the world Rome already
+  holds, set in the new figures to one scale, beginning with sailed seas and pushing the
+  African coast south of the grain fleets a season at a time, no ship sent past where it
+  can return; (2) a SCHOOL/YARD of pilots and shipwrights on the western coast (Gaul or
+  Spain) to build and test open-ocean hulls, slowly, at a capped cost; (3) a standing
+  imperially-funded PRIZE for any craftsman who can keep true time a month at sea (the
+  sea-clock = longitude). NO transoceanic voyage authorized. (Logged in 03_timeline
+  DIVERGENCE LEDGER.)
+- [ch36] NAVIGATION/LONGITUDE WALL hit honestly and tied to ch23: latitude is solvable by
+  sun/stars, but longitude (westing) needs a sea-stable clock; Daniel openly admitted he
+  FAILED to build a working clock (the ch23 escapement gap; the tally-room water clock
+  Tyche corrects by the sun) and knows no living man who can. He framed the gift as gated
+  on this wall ON PURPOSE, to avoid blame when it fails; he must write up his clock
+  dead-ends for future craftsmen (feeds the encyclopedia thread).
+- [ch36] LIES NOW LOOSE in the empire's ambition: the western shore is "uninhabited"; a
+  crossing is roughly "a year's sail"; the "Thulean scouts." Hadrian DISBELIEVED the
+  scouts/Thule (Daniel conceded the road-lie to protect the true map) and ordered the
+  survey to rest on the map ALONE, not the scouts' tale. Daniel privately foresees men
+  dying against the lie in good hulls, or the program lapsing. He keeps "the matter of
+  where you are from" in Hadrian's ledger; Hadrian said "I will remember."
+- [ch36] Relationship: still ambiguous patron-or-predator; Daniel now MORE valuable and
+  MORE leashed. Apollodorus danger remains pending (ch37). No new named characters.
+  Closing image (fresh, off the banned set): the EMPTY map-box on the bench, Daniel
+  closing the lid on the nothing inside (a different object from the phone-relic box -
+  meaning inverted: the box is empty because he let his secret world out), then going up
+  to count Belgica "where the numbers stayed where I set them and did not have a far side."
+
+- [ch37] ~122-124 AD (soft dating), Daniel ~41-43, Hadrian ~46-48, Apollodorus ~70s.
+  APOLLODORUS FALLS. TRIGGER: he publicly mocked Hadrian's design for the Temple of
+  Venus and Roma (the seated colossal goddesses would crack their heads on the roof if
+  they rose), atop the old gourd-domes insult. He was EXILED from Rome, then DIED in
+  exile (cause unnamed). Daniel learned it all SECONDHAND (a carter, then Heras) over a
+  season; he witnessed no confrontation.
+- [ch37] DANIEL TRIED AND FAILED (real history HELD): (1) a direct WARNING at the river
+  yard - Daniel told Apollodorus the "gourd-Spaniard" he'd insulted at the Forum IS the
+  emperor, and begged him to stop and bend; Apollodorus refused, contemptuous, and gave
+  Daniel his PLUMB-LINE as a parting insult ("keep it to remember which of us was the
+  better engineer"; his maxim: "you draw the picture first and ask the stone to agree").
+  (2) a hedged half-sentence to a Greek clerk near Hadrian - turned aside; Daniel admits
+  he hedged it to protect his own neck.
+- [ch37] NEW MINOR CHARACTER: **THEOPHANES**, a careful Greek freedman who carries
+  drawings/corrections to the Palatine and values the new figures; risks/owes nothing
+  (the man Daniel hedged his word to).
+- [ch37] THEME crystallized through behavior/dialogue, NOT thesis: Apollodorus - "you
+  bend... you will die a rich man no one ever heard say a single thing straight"; Marcia
+  later - "And you bent." Daniel survives because he bends where the greater, prouder man
+  broke; the guilt rendered, never named.
+- [ch37] GRIEF/LONELINESS deepened: Apollodorus was Daniel's ONLY professional peer; with
+  Celer dead and Heras (~67-69) aging, Daniel's isolation among the few who could ever
+  meet him compounds. He HUNG THE PLUMB-LINE in the press-room and had Tyche record
+  Apollodorus's maxim in the English cipher among his own CLOCK dead-ends (feeds the
+  encyclopedia thread). LUCANUS now ~10-11. Ocean program continues offstage (African
+  coast surveyed further south; the western yard breaking ground) - divergence ledger
+  UNCHANGED by this chapter (Daniel failed to alter Apollodorus's fate). Closing image:
+  the plumb-line going into the cipher-book among his failures (fresh; not banned set).
+
+- [ch38] ~127 AD, Daniel ~46 (NOTE: year locked at 127 to reconcile a draft age/date
+  conflict - Daniel "six-and-forty," the Four Consulars "nine years dead," daughter age
+  9 born ~late 118 all agree at 127). CLOSES PART V; hinges into Part VI. Hadrian (~51)
+  is the traveling/building emperor (Britain wall, the Rhine, the round temple in Rome),
+  mostly away; the terror is nine years behind; Daniel is "useful, leashed, let alone."
+- [ch38] OCEAN PROGRAM state: African coast mapped a few headlands further south
+  (survey on the map, never the scouts, per Hadrian's order); the western yard built two
+  hulls, lost one in a gale, building a third; the sea-clock prize stands UNWON (and
+  Daniel expects it to outlast him). "Almost nothing, very slowly, in the right
+  direction."
+- [ch38] AGING - FIRST SIGNS: presbyopia. Daniel cannot read his own small carry-over
+  figures; he holds work at arm's length; Roman glass cannot be ground into a reading
+  lens (the bitter mirror of the failed spyglass). Heras (~74) has it too (reads
+  Hippocrates at arm's length). "Blind to small figures by fifty, near enough."
+- [ch38] THE PIVOT (Part V->VI hinge) reached in scene: MARCIA (in her storeroom) gives
+  the figure ("a thing that is yours dies when you do"; his head is going, his hands
+  will follow); HERAS (the lamp/Hippocrates argument: "you are being the man another man
+  reads by a lamp in six hundred years") steadies it. Daniel COMMITS to building what
+  outlasts him: the PRESS as a self-running body; the CONTEST given its OWN coin (off
+  Daniel's purse/Macer's credit); a CRAFTSMEN'S-FAILURE PATRONAGE ENDOWMENT (pays a smith
+  to chase steel for ten years and fail and chase again); and above all THE BOOKS / the
+  encyclopedia / the ladder (the only one needing no money or emperor, only to be written
+  and hidden). Institution plan PLANTED, not built (ch39-41).
+- [ch38] DAUGHTER established: **ULPIA SEVERA** ("the grave one"), freeborn, age 9
+  (b. ~late 118, "the year I came back from the East" - the only window: Lucanus was b.
+  ~112 pre-war, and Daniel was in the East 114-early 118, so she was conceived on his
+  return). Square, unsmiling, fierce at figures (does the nine-times-table; "Lucanus said
+  girls can't do past the seven"). The cognomen "Severa" cost an argument with Marcia (a
+  freedman's daughter takes only his nomen by law; Marcia said a girl needs no cognomen,
+  Daniel insisted "this one will"). Sets up the ch41 daughter-question. Eros (pressman)
+  aging with NO apprentice cutting blocks yet (flagged gap for ch39).
+- [ch38] Closing image (acceptable per QA, fresh): Daniel at the far edge of the lamplight
+  watching Ulpia fill the times-table page from "a distance that had nothing to do with
+  the dark," thinking of the cipher-book that starts with these same nine courses and
+  must be written while there is still an eye to write it and a child who could be taught
+  the cipher. (Note: future chapters must vary AWAY from child-with-figures closers.)
+
+- [ch39] ~129 AD, Daniel ~48 (presbyopia worsening), Lucanus ~16, Ulpia ~11, Tyche ~44,
+  Macer ~80 (alive), Marcia ~55. OPENS PART VI. Daniel BUILDS the institutions (the
+  inventor becoming a tender of structures):
+  - PRESS made a self-running BODY: folded into an old letter-copyers' COLLEGIUM (a
+    burial-club legal form) as a printing-branch, irrevocably endowed by Daniel with a
+    half-share of two wharf-shop rents (wages/blocks/apprentices). First apprentice
+    block-cutter hired: **VITALIS** (NEW; 12, freeborn Subura wood-carver's son, father
+    dead of fever), bound to the SOCIETY not to Daniel for 3 years and required to teach
+    two others later (closes the ch38 cutter gap). (Apprentice was briefly mis-named
+    "Onesimus" in draft - corrected to Vitalis to avoid clash with the senior accountant
+    Onesimus of ch10/16/20.)
+  - CONTEST endowed via Marcia's maneuver: not the contest but MINERVA herself endowed
+    (a perpetual gift for her rite/shrine/incense/priest's portion), with the contest
+    bound into the deed as the goddess's works; the priestly colleges' ch27 right-of-
+    consult thereby converted into a fixed income that makes them the contest's PAID
+    PROTECTORS. Still held on the Quinquatrus; Macer still fronts it.
+  - PATRONAGE FUND founded: a foundation-in-trust (settled capital, income-only, a board
+    of three, administered by the same society) paying craftsmen a living wage for a
+    term-of-years, judged by recorded ATTEMPTS not successes. First beneficiaries:
+    HERMES (steel; ~60s; failure-record kept by Tyche in the cipher) and FELIX.
+- [ch39] **FELIX returns** (the planted epilogue climber): now ~40, FREE ~6 years
+  (self-purchased at ~34, ~123, the ch19 prize-fattened peculium having helped), a
+  bronze-caster behind the cattle market. Funded by the new endowment to chase the
+  self-fueling pot / the steam-and-steel wall for years; told plainly he will likely die
+  failing and is laying rungs for someone later. (ch19→ch39 arithmetic: ~18 as a slave
+  in 107, ~40 now - consistent.)
+- [ch39] VIBENIUS established as ~4 YEARS DEAD (d. ~125, age ~82). This lets his ch27
+  unpaid-debt thread lapse (he died without ever calling it in). No contradiction.
+- [ch39] KEEPERS seeded (NOT resolved): TYCHE keeps the cipher and runs the books, and
+  has "begun to look at" Ulpia as a hand she might one day need (Ulpia NOT yet taught the
+  cipher). LUCANUS (~16) REJECTS the workshop - he wants the law/the rolls/the basilica
+  (citizen-clear where Daniel carries the freedman stain); Daniel does not push him.
+  ULPIA SEVERA (~11) is fierce at figures (does the nine- then eleven-times course, beats
+  the second clerk) but the law bars a freedman's daughter from keeping a counting-house;
+  Marcia warns Daniel not to teach the girl to break herself on a bolted door. Closing
+  image: Daniel in the dark setting the sleeping apprentice's sharp gouge safe on the
+  bench (fresh; not a banned closer). No new divergence; ocean program grinds offstage.
+
+- [ch40] ~131 AD (year LOCKED: Daniel "fifty years old," "thirty-three years" since the
+  98 cell, Tyche forty-six all agree at 131), Daniel ~50, Tyche ~46, Ulpia ~12-13,
+  Marcia ~57. THE ENCYCLOPEDIA written in earnest in the English cipher (Tyche the sole
+  living reader/copyist; Daniel's hand failing with his eyes, letters wanting to be
+  larger each season).
+- [ch40] LADDER ORDERING LOCKED (bottom-up, assumes nothing): numbers/place-value ->
+  the four workings (full long division) -> algebra -> geometry -> the idea of calculus
+  -> Newton's three laws -> his fuzzy chemistry/biology/astronomy (atoms, heat, cells,
+  the little ones/germs, evolution in outline, the solar system). Built so each rung
+  needs only the rung below.
+- [ch40] MEMORY NOW LOST/SHAKY (canon - what has decayed): the MECHANISM joining heat to
+  motion in a steam engine is GONE ("has not come since" - he knows heat is the little
+  ones moving and that steam pushes, but cannot bridge them); the QUADRATIC's sign now
+  takes most of a morning to verify (a thing he had at 17); the OUTER planets' order/count
+  is uncertain (sure of: two inner, Earth, Mars, Jupiter, Saturn; lost beyond); the
+  atomic-bonding picture left blank. (Consistent with the ch02 ceiling: he lost the
+  high-altitude boiling rule long ago; he still HAS saltpeter from ch21.)
+- [ch40] HONEST-LIMITS principle, rendered: a cipher "hooked stroke" mark meaning "the
+  Thulean is guessing"; doubt written into Newton's second law; whole rungs (the planets'
+  far rooms, a chemistry page) left DELIBERATELY BLANK with a labeled note rather than
+  faked (a faked rung sends a future climber off a cliff). Tyche enforces this honesty
+  harder than Daniel (she caught a backward "7" that would teach a thousand-year line of
+  children the wrong digit).
+- [ch40] EMBEDDED ENCYCLOPEDIA EXCERPT used (permitted register shift): ONE plain-English
+  instructional passage of Newton's three laws (respecting the HS ceiling, with honest
+  doubt), plus a labeled blank-page note. (First on-page sample of the actual "books"
+  voice.)
+- [ch40] BURIAL/COPYING PLAN established: THREE full cipher copies (Tyche's, moved; the
+  society's, sealed; one cased in lead and pitch, hidden) PLUS a partial LATIN copy up to
+  geometry. The cipher MUST pass to a second young hand (Tyche: "you put its only key in
+  one aging head, mine"). ULPIA (~12-13) silently weighed by Tyche as that second hand,
+  NOT yet taught (reserved for ch41). Closing image: Daniel writing the large note across
+  a deliberately blank chemistry page, leaving it "white and waiting," then up to the
+  house where Marcia kept a lamp (fresh; not a banned closer). No new divergence.
+
+- [ch41] ~132 AD, Daniel ~51, Tyche ~47, Ulpia ~13-14, Vitalis ~15, Marcia ~58, Heras
+  ~79 (ALIVE, frail; he dies next chapter - his death is NOT telegraphed here). TEACHING
+  the cipher to the next generation.
+- [ch41] CIPHER NOW HELD BY (the keeper-chain, addressing Tyche's ch40 single-key
+  warning): TYCHE (teacher) + ULPIA SEVERA + VITALIS (the ch39 press-apprentice) + a NEW
+  character **CHLOE** (a Bithynian slave-girl ~11-12 bought by Marcia for the storeroom
+  day-book, uncollared, reads Latin fast). FOUR young hands plus Tyche now read the
+  English cipher; the books will survive Daniel's death. The bottom rungs of the ladder
+  are their first decoded text.
+- [ch41] THE DAUGHTER-QUESTION left honestly UNRESOLVED: Daniel will not stop teaching
+  Ulpia everything; Marcia did not ask him to stop, only insisted he know the cost (the
+  law gives the girl no place to use it). ULPIA settled it herself with agency: she wants
+  the KNOWING so much that any borrowed name fronting it is hers underneath. (Both Marcia
+  and Daniel are partly right; not a tidy win.)
+- [ch41] NEAR-MISS on Daniel's origins: his cipher's smooth word for SLEET (weather Rome
+  lacks) made Ulpia sense the script is a real, long-used language, not an invented code
+  ("too tidy"); she pressed where Thule is and why he has a word for a thing that exists
+  on no street she'll walk; he gave the road-lie (Thule/far north/ice), which she took
+  the way Heras always did, unconvinced and too well-mannered to say so. The un-tellable
+  loneliness rendered, not stated.
+- [ch41] EPILOGUE KEEPER-CHAIN seeded (per the coordinator decision, the ch52 climber is
+  NOT a blood descendant): the cipher now passes down a LINE BEYOND Daniel's family -
+  VITALIS (indentured to teach two others) and CHLOE (a slave girl; Heras flagged her,
+  "the one... keep her in figures") carry it forward. The FELIX/craft-patronage workshop
+  is crossed only lightly here (failing on Daniel's coin a quarter-mile off, "owed a true
+  account") rather than directly joined - the books-line and the craft-line both run
+  toward the epilogue's future point but are not yet fused. (Coordinator: the ch52 climber
+  will come from this non-blood keeper/workshop line; firm the exact individual at ch52.)
+- [ch41] NEW NAMED CHARACTER: CHLOE (freed/uncollared Bithynian girl, keeper-chain seed).
+  Closing image: Daniel on the cold wharf, his sleeve still cold where Heras's hand had
+  rested, watching the children go home carrying "pieces of a country with no map" (fresh;
+  not a banned closer). No new divergence; the quiet war advanced in events (a slave girl
+  taught to read and cipher).
+
+- [ch42] ~133 AD, Daniel ~52. **HERAS DIED**, age ~80, of OLD AGE (tired heart, failing
+  lungs), in his room off the colonnade on the Caelian; he summoned Daniel under cover of
+  settling the physic-chest account and died on the third morning, clear-eyed and
+  skeptical to the end, refusing fuss or a god, attended at the last by his apprentice
+  ZOTICUS (no final word to Daniel). This is the FIRST major death Daniel neither caused
+  nor could have prevented (deliberately distinct from Sabinus/Celer/Apollodorus - the
+  grief is the loss of the one who kept him honest, NOT guilt).
+- [ch42] NEW NAMED CHARACTER: **ZOTICUS**, a quiet Greek/Cappadocian freedman, Heras's
+  apprentice-physician of ~15 years; carries the practice and the physic chest forward
+  (funded via Daniel's foundation). A sound careful craftsman who LACKS Heras's diagnostic
+  "eye" (the seeing dies with the man; the method passes, the eye does not).
+- [ch42] MEDICAL WORK'S FUTURE: the practices (boiling, washing, clean cloth, the filter)
+  have gone LOOSE in the culture and survive the man who half-believed them, kept for
+  their results and re-attributed to the gods (an Esquiline surgeon credits Asclepius);
+  the framing drifts, the practice persists. Daniel's "dullest" gift (the water) will
+  save the most lives.
+- [ch42] HERAS'S LINE Daniel carries forward: "be your own skeptic... you will be bad at
+  it, everyone is, that is why we keep each other." SKEPTIC-GONE danger planted via
+  behavior: with no one left to puncture his self-myth, Daniel reads his own too-confident
+  sentences aloud in Greek to an empty room, asking "do I know it or only feel it," and
+  marks his own guesses with the ch40 hooked stroke - now with no one to read them back.
+- [ch42] Grief rendered through absence (NOT a kept-object talisman, deliberately unlike
+  ch13 rag / ch29 strap / ch37 plumb-line). Closing image: Daniel alone at the bench
+  marking his own guesses and drinking the cold filtered water, the answer to a worn old
+  joke dying in his mouth with no one at the bench's other end. No new divergence.
+
+- [ch43] ~134 AD, Daniel ~53 (presbyopia worse; cannot read small figures by lamp), a
+  year after Heras's death. WARM DOMESTIC chapter. The family dines together over
+  Caepio's wharf-warehouse (Marcia's, ~60): Marcia, Daniel, Lucanus (when present),
+  Ulpia, Tyche (most evenings), the slave-girl Chloe (~13, serves then eats). A household
+  Lar with a drinking-horn.
+- [ch43] LUCANUS (~22): reads law under an advocate **CAESIUS** (NEW minor; freeborn of
+  freeborn, practice in the Basilica Julia) - aiming to stand at the lower bar in ~3
+  years on freedmen's small suits; deliberately unbearded though the emperor is bearded;
+  lives in rented rooms near the courts; has already found the low ceiling a freedman's
+  son hits (his father's freedman status is on no document shown him and every document
+  about him). Firmly does NOT want the workshop/books. Not married. (Mentor renamed from
+  draft "Sabinius" to CAESIUS to avoid clash with the dead soldier Sabinus, ch13.)
+- [ch43] ULPIA SEVERA (~16): reads Daniel's figures aloud nightly now his eyes fail;
+  corrects the African-coast survey; has held the cipher ~2 years, reads the books,
+  surpasses the second clerk; since ~14 reconciled to working only under a borrowed name.
+  MARRIAGE: MARCIA has begun negotiations (mentioned the ENNII, grain-factors, with a
+  dull kind son) and is hunting a husband "who can stand a clever wife" - NOTHING decided
+  or betrothed yet (live, hard, unresolved stake).
+- [ch43] ROOTS-MOMENT: Daniel hums a half-remembered English SONG from home he can no
+  longer recover whole (a word missing from the middle); he half-confesses to Ulpia that
+  it is "a song from where I'm from" he cannot finish; she learns the broken tune back and
+  does not press (ties to ch24 lost songs, ch41 sleet near-miss). Loneliness rendered, not
+  named.
+- [ch43] CARRY-AFTER reaffirmed: Ulpia -> books/cipher/figures; Lucanus -> the law, away
+  from the work; Marcia holds the enterprise; Tyche is family. MACER (~86) appears, carried
+  to dinner, still calls Daniel "Thulean/boy," says "You did all right, boy." No tech
+  changes; no divergence. Closing image: Daniel barring up the house at night and setting
+  a tally Marcia dropped asleep where she'll find it (he can't read the figures but knows
+  the hand), the rain, and sleep "in a house that was mine in a country that was not."
+- [ch43] NEW NAMED CHARACTERS: CAESIUS (advocate, Lucanus's law-mentor); the ENNII
+  (grain-factor family floated as a marriage prospect for Ulpia, unconfirmed).
+
+- [ch44] ~135 AD (Daniel "four-and-fifty," "thirty-seven years" since the 98 cell - both
+  correct), Daniel ~54, presbyopic. THE WORLD BENDS. Daniel encounters concrete signs his
+  work has bent the empire's arc (each rendered as a scene; all four logged as DIVERGENCE
+  LEDGER entries in 03_timeline): (a) his numerals WITH ZERO cut into the AURELIAN
+  MILESTONE at the 2nd mile (official stone); (b) a PRINTED-CODEX LIBRARY in a portico off
+  the Argiletum, press output outnumbering hand-copied scrolls, read by poor apprentices
+  and a slave girl; (c) a THIRD ocean HULL on the ways at the western yard (south of the
+  Garonne mouth), deep/double-planked, which FLOATS BUT CANNOT CROSS (navigation/sea-clock
+  unsolved, two prior hulls lost); (d) a carter's boy (~9) playing Felix's printed
+  steam-ship contest tale in the road dust.
+- [ch44] HOPE/UNEASE braided: each sign serves "whoever holds the page" (the figures serve
+  the tax-farmer, books serve true or false text, the ship goes where its owner points,
+  the powder is loose); Daniel pays for both Felix's failure and the dream. The unease
+  (gifts that serve cruelty) is left LIVE, pointing to ch45. Hubris-or-duty NOT resolved.
+- [ch44] NEW NAMED CHARACTER: **BITUITUS**, the Gaulish yard-master at the western
+  shipyard. No deep-tech advance (ocean still uncrossable; steel/steam/clock unsolved).
+  Closing image: Daniel alone in the press-room at dusk watching the apprentice VITALIS
+  (~18) bank the stove and close up the self-running machine that will run whether Daniel
+  lives or not (fresh; not a banned closer).
+
+- [ch45] ~135-136 AD, Daniel ~54-55, presbyopic (Ulpia reads small field-clerk hands for
+  him). THE DARKEST CHAPTER. The BAR KOKHBA suppression reaches Rome-bound Daniel
+  SECONDHAND and, devastatingly, THROUGH HIS OWN METHODS: (1) the FISCUS eastern accounts
+  cross his bench (sent by Eudemus; Ulpia fair-copies/reads them), and he tallies the
+  campaign's grain and watches the PRICE OF CAPTIVES fall down a column of his own
+  numerals; (2) a discharged auxiliary reports the CAVE SIEGES (families waited out
+  underground) via Pamphilus; (3) a chalked-up dispatch announces AELIA CAPITOLINA
+  founded on Jerusalem's ruins, Jews barred.
+- [ch45] HIS GIFTS IMPLICATED: his FIGURES make the slaughter legible/efficient; his
+  SANITATION (drains/water) keeps the killing legions healthy; his SURVEY-GRID serves the
+  razed-and-refounded colony. POWDER UNCERTAINTY handled honestly: no working cannon
+  exists (ch21), but powder-as-demolition (undermining walls / cracking or sealing caves)
+  is plausible; Daniel does NOT know whether his was used, REFUSED to ask, and "will go to
+  his grave not knowing which."
+- [ch45] HUBRIS-OR-DUTY at its sharpest and LEFT UNRESOLVED (no comforting conclusion;
+  "both arguments are good arguments... neither has ever once won"), worsened because
+  HERAS is dead - Daniel argues it to the empty bench in Greek, with no skeptic to answer.
+  LEGEND-RECKONING: "the Thulean" is the name a slaughtering empire gives the foreigner
+  who makes its slaughter run cleaner; useful-to-power means power uses you for what power
+  does; he can no longer lay the name down. (This unresolved moral core haunts to his
+  death.)
+- [ch45] No new named characters; no tech advance; NO new divergence (tracks real
+  history). Closing image: Marcia at the storeroom lamp, the two of them deliberately
+  talking grain prices to avoid "the other column," sitting until the oil burns low
+  (fresh; not a banned closer; does NOT resolve the conscience).
+
+- [ch46] 138 AD, Daniel ~57, Marcia ~64, Lucanus ~26, Ulpia ~20, Tyche ~53, Macer ~90
+  (alive, unseen; dies ch48), Hadrian d. ~62. CLOSES PART VI. **HADRIAN DIED** (10 July
+  138, at Baiae): reaches Rome-bound Daniel SECONDHAND (a brick-carter, then the porticoes)
+  - the long dropsical decline, his thwarted longing for death, the "little soul" epigram.
+  No deathbed scene.
+- [ch46] SURVIVOR'S DETACHMENT (deliberate CONTRAST to the ch30 Trajan blindside, rendered
+  through action NOT thesis): the news finds Daniel at his own bench in his own city; he
+  keeps his routine; he does NO survival arithmetic; the endowed institutions need no
+  living emperor. COMPLEX HADRIAN-FEELING: relief that the ledger-keeping eye (the "matter
+  of where you are from") is shut unspent; grief for the only restless mind / peer-enemy
+  who read him whole; the twenty-year wariness left standing crooked with nowhere to go.
+- [ch46] ANTONINUS PIUS: grave, decent, factionless, stay-at-home, no appetite for
+  adventure; a friendlier sky for the Minerva-endowed contest. THE OCEAN PROGRAM is now
+  PRECARIOUS/LAPSING (logged in 03_timeline divergence ledger): Hadrian's prestige project
+  loses its champion; Daniel relinquishes the private "road west / home" hope and has Ulpia
+  keep the African survey current-but-unworked ("laid down, not closed"). The endowed
+  institutions HOLD (the ch38-39 wager paying).
+- [ch46] MORTALITY / PART VII handoff planted: Daniel ~57, eyes failing, has outlived
+  patrons and friends; the cipher/ladder now lives in FOUR young heads (Tyche, Ulpia,
+  Vitalis, Chloe) plus a lead-cased copy, set to outlive him and the next emperors. No new
+  named characters; no tech advance. Closing image (revised off the watched lamp/
+  young-person-with-figures mannerism): Ulpia laying the open-columned survey leaf face-up,
+  weighted with a loom-weight against the wharf draft, "a thing not closed, only laid down."
+
+- [ch47] ~142 AD, Daniel ~61, Marcia ~68, Tyche ~57, Ulpia ~24, Macer ~94 (alive,
+  failing), Antoninus Pius reigns. OPENS PART VII / THE CODA. DANIEL OLD: the body failing
+  with no medicine he can make. Concrete decline: a heart/wind episode on the worn wharf
+  step (recovers; he knows it is the death he cannot touch); cold arthritic hands (ring
+  stuck, joints won't open); lost teeth (eats soaked bread / barley pap); insomnia with
+  bad-accounting night-thoughts; eyes long gone.
+- [ch47] ENCYCLOPEDIA upper rungs FINISHED by DICTATION (eyes shut, in the homeland tongue)
+  to TYCHE and ULPIA, who write small for him; Tyche enforces the hooked-stroke honesty,
+  Ulpia questions after. Relief braided with grief (rendered, not named).
+- [ch47] LAST UNBUILT DREAM LET GO: the mechanical CLOCK / escapement (ties to ch23). He
+  has Ulpia write his FAILURE into the books ("begin where I failed") and gives the box of
+  failed gears and drawings to FELIX's craft-failure fund. (Distinct from the ch46 ocean
+  let-go.)
+- [ch47] MACER (~94) glimpsed failing at dinner (a husk, loose ring, mind comes and goes):
+  "Outlived the lot of them... The clever ones go first." NOT killed here (his death is
+  ch48). Nobody dies in this chapter; the phone relic is NOT yet given its final
+  disposition (reserved for ch49). No new named characters; no tech advance; no divergence.
+- [ch47] Closing image (revised off a verbatim reuse of ch43's "a house that was mine in a
+  country that was not" closer): Daniel on Marcia's warehouse roof at dusk, refusing the
+  view, warming his cold ruined hands on brick that still holds the set sun's heat, taking
+  the borrowed warmth until the stone goes as cold as he is, then down the dark stair by
+  feel to lie beside Marcia and "wait to see what the night will be."
+
+- [ch48] ~144-147 AD, Daniel ages ~63 -> ~66-67, Antoninus Pius reigns. THE SUBTRACTION
+  (the last deaths; the encyclopedia essentially finished, institutions self-running).
+  LIGHT ATTRITION: PAMPHILUS died ~144 (past 70, old age; Daniel paid the burial); EROS
+  the pressman/letterer died the following winter (had taught Vitalis the block-cutting
+  first; press unaffected).
+- [ch48] **MACER DIED** at ~96 (~144), of sheer old age, in his son's house, in his chair,
+  ring on - blunt/mercenary/mean-funny to the last ("you sentimental fool"; "It does not
+  pass. It waits."). Daniel's feeling stays deliberately TANGLED (the man who owned him and
+  was cage AND shield; "no clean edge," not clean grief). Daniel was Macer's client/freedman
+  in the rolls to the end and stood the client's distance at the pyre. MACER'S WILL left
+  Daniel ONLY the heavy gold RING, with the clause "to the Thulean, who will know what it
+  cost"; it won't fit Daniel's swollen knuckles, so it goes into the floorboard box BESIDE
+  THE DEAD PHONE (two relics; the phone's final disposition still OPEN for ch49).
+- [ch48] **MARCIA DIED** at ~73 (~147, "before the cold," a gray foggy morning) of liver
+  disease/wasting (Zoticus diagnosed plainly; no cure; poppy for the pain). She first
+  finished the DEED OF TRUST sealing the warehouse/estate into the society + the children
+  (Ulpia read the clauses; the gap closed against Caepio's cousins). The chapter's emotional
+  center, rendered through ABSENCE (her silenced assessing voice; the empty side of the bed;
+  her stopped tally-squaring habit) - no kept-object talisman, grief unnamed. Her dying
+  instructions: Daniel is NOT to push the ENNII match on Ulpia (who may now marry where she
+  likes or not at all); Tyche to be obeyed on money.
+- [ch48] KEEPER-GENERATION TURN: VITALIS (~30) runs the press; CHLOE (now FREED - manumitted
+  in Marcia's will, ~25) keeps the storeroom day-book and reads the cipher; ULPIA (~29) holds
+  the books, the deed, and the African survey (true, unworked); TYCHE (~60) holds the whole
+  enterprise. Daniel is a passenger; the ladder is fully in others' hands. He goes into ch49
+  ALONE (Marcia and Macer both dead). No new named characters; no tech advance; no divergence.
+  Closing image: Daniel's stiff hands flat on the open day-book he can no longer read ("the
+  page gives nothing back," a deliberate inversion of ch47's warm brick), Chloe squaring the
+  board and setting the stylus for morning (continuing Marcia's stopped habit). Not a banned
+  closer / not a kept-object talisman.
+
+- [ch49] ~150 AD, Daniel ~69 (alone; Marcia, Macer, Heras all dead), Tyche ~65, Ulpia
+  ~32, Lucanus ~38 (advocate), Vitalis ~33, Chloe ~30 (freed), Felix ~61. Antoninus Pius
+  reigns. SECURING THE LADDER (dramatized in scenes; Daniel met Tyche ~100 AD, so "fifty
+  years" is the correct span - all ages corrected from a stale-year first draft).
+- [ch49] THE FOUR ENCYCLOPEDIA COPIES and their hiding places (THE EPILOGUE PRECONDITION -
+  this is where the ch52 climb comes from): (1) TYCHE'S WORKING COPY = mobile, in oiled
+  wool under floors, the master text through which corrections flow; (2) the SOCIETY'S
+  SEALED COPY = in the collegium chest under deed-seal, openable only before three of the
+  board; (3) the LEAD-AND-PITCH-CASED COPY = BURIED under the press-room floor, beneath
+  the stone that beds the great screw ("patient as a seed," for a future digger); (4) the
+  PARTIAL LATIN copy (through geometry) = OPENLY SHELVED in the Argiletum printed library,
+  ending on a plain-Latin note that the higher rungs exist and can be sought. Honest-limits
+  (hooked-stroke guess-marks, deliberate blank rungs with notes) preserved in all copies,
+  bound by promise.
+- [ch49] KEEPER-CHAIN sealed into LAW: the deed now legally requires every keeper to teach
+  at least two others; Vitalis has taught two the script, Chloe took a storeroom girl and a
+  press boy; the chain fans DOWN the workshop/press line, NOT Daniel's blood. LUCANUS
+  (~38) refuses to be a keeper (he tightened the deed-of-trust wording as an advocate,
+  finding two gaps, but wants no part of the books). The Minerva-endowment gap is
+  acknowledged unfixable (faith can't be crafted).
+- [ch49] THE DEAD PHONE'S FINAL DISPOSITION = **BURIED WITH DANIEL** (decided here, in a
+  Daniel-and-Tyche floorboard scene - she is the only other soul who ever knew it existed).
+  The CITIZENSHIP TABLET is buried with him too (the two "countries" go into the ground
+  together). Tyche offered to keep the glass herself; Daniel refused ("the carrying ends
+  with the carrier; a danger can never be a rung"); she accepted: "Then it goes down, and
+  the work stays up." MACER's RING is NOT buried - its gold value is directed into FELIX's
+  craft-failure patronage fund. The quiet end of the ch24 "two countries that cannot write
+  to each other" thread (rendered, never stated as thesis).
+- [ch49] Daniel ready for death (ch50). No new named characters; no tech advance; no new
+  divergence. Closing image: Daniel alone over the loose floorboard (left UN-renailed for
+  the future last hands), his mind already a quarter-mile off on the lead-cased copy seeded
+  under the press-room stone, waiting for a future digger to carry it up and begin to climb
+  (fresh; seeds the epilogue; not a banned closer).
+
+- [ch50] ~155 AD. **DANIEL DIES** at ~74 (57 years after his arrival in spring 98).
+  THE PAYOFF CHAPTER. He dies of fluid filling the lungs (heart/pulmonary failure) over
+  a season, in the dry STOREROOM on the wharf (his bed moved down because he could no
+  longer climb the stair), mind clear then failing while the body drowns by inches.
+  ZOTICUS (Heras's pupil-line) attends honestly with poppy. He dies in the deep of night,
+  TYCHE (~70) holding his hand and reciting the quarter's figures; CHLOE (~35) sits the
+  watch; the storeroom boy fetched Tyche. ULPIA (~37) and LUCANUS (~43) visited in the
+  weeks before but were NOT in the room at the moment. Lucanus had brought him a clay
+  "Thulean engine" toy (callback to ch24).
+- [ch50] STRUCTURAL: the book is Daniel's own first-person account and it ENDS WHERE HE
+  ENDS. Narration collapses past->present in the final sections; the account BREAKS OFF
+  MID-SENTENCE at the threshold ("...and the next one is", no terminal punctuation). NO
+  posthumous / from-beyond narration (the aftermath belongs to ch51-53). The ch01
+  STUBBLE-FIELD BOOKEND is used in his final dying perception (the grain, the dew, the
+  new Colosseum, the dead phone warm in his hand, the four spearmen, "I am seventeen, and
+  frightened, and no one knows where I am"). The loneliness met head-on, rendered never
+  named; the unbuilt dreams (steel, the clock, the heat-turned-wheel, the tamed-lightning
+  wire) and the moved rungs present as concrete fragments, NOT a summary. Closing image:
+  a concrete final perception (Tyche's warm hands, the warm grain of the bed-rail, light
+  coming up the valley, the unfinished breath). No new named characters; no divergence.
+  [NOTE: this is the last chapter in DANIEL'S voice. ch51 = a Roman-document interlude
+  after his death; ch52-53 = the epilogue, other hands. Daniel's memoir is complete.]
+
+- [ch51] INTERLUDE (NOT Daniel's voice). A Roman LETTER dated "the day before the Ides of
+  June, the consulship of Clarus and Cethegus" = ~AD 170, from **GAIUS NORBANUS RUFUS** (a
+  cultured, faintly supercilious man of letters, Pliny manner) to his friend **SEXTUS
+  CAECILIUS PRISCUS**, at Rome (also named: Rufus's wife TERTIA; an unnamed grandson).
+  Occasion: a visit to the Argiletum printed library and buying a clay "Thulean engine" toy.
+  ~1,859 words. All fictional; no name clashes (the ch27 host was renamed to Aemilius
+  Scaurus, freeing "Caecilius").
+- [ch51] THE LEGEND, distorted/confidently wrong (dramatic irony ARCHITECTURAL, never
+  declared): Rufus repeats as fact the THULE origin (far north, ice, the sun that won't
+  set/rise, scouts sent across the western sea), the man who "made fire fly," the spyglass
+  that showed only smeared rainbow/fog, CRISPUS's "the barbarian's heaven by ladder" as
+  received cultured opinion, Apollodorus's "a clever toy that does one thing" quoted
+  approvingly, and the Minerva impiety reckoning (the heifer, the dedication). He misses the
+  actual man entirely.
+- [ch51] KEY IRONY DETAIL: Rufus mentions, as a quaint barbarian curiosity, that the Thulean
+  was buried with "a tablet of black glass, a savage's charm" alongside "some bronze plate
+  of his citizenship" - the reader knows these are the DEAD PHONE + the citizenship tablet
+  (ch49-50). He misreads it, laughs at it, does NOT dig it up. The phone stays a
+  misunderstood grave-charm in the ground.
+- [ch51] ONE TRUE THING slips through (seeds the epilogue): Rufus records, WITHOUT grasping
+  its weight, that an aged freedwoman (TYCHE, unnamed) still keeps the dead man's school and
+  is teaching "his cipher" to a bought slave-girl who teaches two more, and that the figures,
+  the printed sheets, and the milestone-marks keep spreading. He half-records Daniel's ch27
+  "reason" (the knowing was never his own; every rung already set down; he only carried the
+  fire back) as a thing he disbelieves. His worldly dismissal ("the thing he made does not
+  need him to be remembered rightly in order to go on") is an in-character cynical aside, not
+  a declared theme. The work outlives the misremembering.
+- [STRUCTURE] ch51 is the post-death interlude; ch52-53 are the epilogue proper (other
+  hands, a generation+ on). No tech advance; no new divergence.
+
+- [ch52] ~190 AD (two generations after Daniel's death). EPILOGUE PAYOFF. NEW VOICE: third
+  person, close on the climber; warm, forward-facing. THE LADDER THESIS PAYS OFF: someone
+  climbs.
+- [ch52] THE CLIMBER: **PROCULA**, ~20, freeborn daughter of a freedwoman (her mother was
+  bought into the storeroom, freed in Marcia's will, married a press freedman). NOT Daniel's
+  blood. She was taught the English cipher down the keeper-chain descending through CHLOE
+  (the freed slave-girl, ch41/49); her own teacher was a keeper named "old VIBIA." She keeps
+  the casting-end day-book for the craft-failure fund. (Quiet-war payoff: the ladder lifted
+  a line the law once bolted out.)
+- [ch52] THE CLIMB: Procula CRACKED THE ESCAPEMENT and built the first WORKING mechanical
+  clock - the rung Daniel failed at (ch23/26/36/47). HOW (honest hard-won craft): she first
+  built every one of his documented failed drawings, read his honest note "BEGIN WHERE I
+  FAILED" and his hooked-stroke guess-marks, drew on the fund's accumulated logged failures
+  (Felix's and a craftsman Saturius's attempts), and solved it with a swinging pendulum-bar
+  insight (the swing rules the wheel; a gate releases one tooth per swing; sliding bobs tune
+  the rate; isochronism felt with a cloth in her hand). ONE honest rung: the clock STILL
+  DRIFTS, fitted with a single-pointer dial in uneven Roman seasonal hours (NOT modern
+  precision; no over-reach). Over ~two years.
+- [ch52] She wrote her solution into the previously-BLANK leaf after Daniel's failure-note,
+  in the cipher, with NO hooked stroke (the honest-limits chain continued), and dated her
+  result beneath his.
+- [ch52] BOTTOM RUNGS HELD (shown): the press still prints (50 to a page); the Minerva
+  contest still held on the Quinquatrus with paid priests; the craft-failure fund still pays
+  craftsmen to fail (Saturius ~11 years on the steam-pot); the figures everywhere; the cipher
+  passed down intact with guess-marks and deliberate blank rungs.
+- [ch52] DRAMATIC IRONY architectural (the one banned "she never knew" clause was cut in
+  revision): Procula does NOT learn Daniel's true origin (she reads his "cold north" sleet-word
+  within the Thule legend and wonders no further); the dead PHONE stays BURIED, never dug up.
+  CLIMB-CONTINUES planted: she looks up to the unwon sea-clock/longitude prize (still standing,
+  hooked-stroke-marked as beyond Daniel), and she has two girls to teach. Felix, Daniel, and
+  "old Vibia" all long dead. Closing image: Procula going to bed by feel through the dark
+  (echoing Daniel's ch50 last stair), the escapement keeping its even step behind her, the
+  next white rung waiting above, "the long ladder of them going up... into the dark she would
+  spend her life beginning to climb." NEW NAMES: Procula, old Vibia, Saturius (craftsman). No
+  new divergence beyond the earned clock-rung.
+
+- [ch53] FINAL CHAPTER (~1,196 words; spare, distant third-person/log register, distinct
+  from the memoir, ch51's letter, and ch52's close third). "Long after" ch52 (~190 AD),
+  generations/a couple centuries on (left vague). THE FAR WHISPER: a ship has CROSSED THE
+  WESTERN OCEAN (the one Daniel drew on a wax tablet in a cell, ch03, and pointed Rome
+  toward, ch36) and stands off an unknown western coast, having found its westing by a
+  gimbaled sea-clock box (descended from Procula's escapement; longitude solved) read against
+  sun-height, with lead-line soundings and figures-with-zero on the slate. The arc has bent
+  all the way to the shore he only drew - climbed by hands who never knew him (he survives as
+  a worn, unread name at the foot of the oldest copied navigation table).
+- [ch53] NO TIDY BOW: the western shore is INHABITED (a tended fire, long dark boats, figures
+  at the waterline, an upraised arm, three more smokes up the hills, "living there a long
+  time") - Daniel's "uninhabited" lie punctured. The pilot holds off, logs it plainly, "did
+  not write what it meant." A beginning, unresolved; no landing, no conquest. The BOOKEND is
+  architectural, NEVER declared (the load-bearing "a thing you have only ever drawn" reads as
+  the pilot's own charted point; the ch03 echo is left entirely to the reader). The dead
+  phone stays buried and unmentioned. FINAL IMAGE (the last sentence of the novel): an
+  unnamed pilot at the rail looking WEST at the shore, the patient clock knocking below decks
+  - the climb continuing past the page. Logged as the final DIVERGENCE-LEDGER entry.
+- ===== THE NOVEL IS COMPLETE: 53/53 CHAPTERS DRAFTED, QA'd, AND ACCEPTED. =====
+
 ## CHARACTER AGE ANCHOR (authoritative - supersedes any age stated in older log entries; COMPUTE ages from these birth years, do not guess)
 - Daniel (Marcus Ulpius Danihel): 17 in 98 AD -> born ~81 AD.
 - Tyche: 14 in 99 AD -> born ~85 AD. (So: ~18 in 103, ~20 in 105, ~22 in 107,
@@ -633,6 +1528,67 @@ WRITERS/QA: when a chapter is set in year Y, a character's age = Y minus birth y
 Check this before stating any age on the page.
 
 ## COORDINATOR CANON DECISIONS (read these - they bind downstream chapters)
+- [DECISION ch20 follow-up: Tyche's manumission + name, locked before ch25] The
+  formal magistrate manumission promised in ch20 occurred off-page in ~107 AD (a
+  routine vindicta before a magistrate). Tyche is a FULL CITIZEN FREEDWOMAN from
+  ~107. By Roman law a slave freed by Daniel (Marcus Ulpius Danihel) takes his
+  nomen, so her legal name is **Ulpia Tyche**. This honors her ch20 demand ("her
+  name on nothing of his") as a WOUND, not a contradiction: she did not choose his
+  name, the law imposed it; she refuses to use "Ulpia," signs and is known only as
+  "Tyche," and the imposed nomen is a quiet lasting friction. WRITERS: she is
+  "Tyche" on the page always; "Ulpia Tyche" appears only in legal/formal contexts
+  and she resents it. Do NOT have her warmly adopt his nomen.
+- [DECISION Celer's death, locked] Quintus Marcius Celer is ALIVE through ch28. He
+  DIES in ch29 (Overreach), in the Parthian war's deep-east overreach / the rear
+  revolts (~116-117); b.~63, so ~53. This is where Daniel's gifts kill the friend
+  who first carried him to the army. (Supersedes the stale ch29-brief phrasing "if
+  Celer survived ch21" - nothing in ch21 threatened him.)
+- [DECISION death years, provisional - pin exactly when drafted] Heras (b.~53)
+  dies in ch42, pinned ~133 AD (age ~80) - moved later again because ch40 is now set
+  ~131 with Heras alive. (Part VI working chronology: ch39=129, ch40=131, ch41~132,
+  ch42~133 Heras dies, ch43~134, ch44~135, ch45~135-136 Bar Kokhba, ch46=138 Hadrian
+  dies.) Macer (b.~48) is
+  exceptionally long-lived (characterful: the indestructible old contractor); his
+  death lands in ch48. UPDATED/RECONCILED: Macer in fact lived freakishly long (the
+  "indestructible old contractor" the text leaned into - "he would not die," ch47); he
+  dies in ch48 at ~96 (~144 AD). The earlier "~90 cap" is superseded - his extreme age is
+  deliberate and remarked upon in-story, not an error.
+- [DECISION epilogue climber, provisional - firm at ch41] The "someone climbs"
+  figure of ch52-53 connects to FELIX (ch19: the counting-house slave who won with
+  the self-fueling steam-ship tale, said he could "fix the pot," prize laundered
+  toward his self-purchase) and to Tyche's keeping of the English cipher/ladder.
+  Seed the link in ch41. Firm the exact identity (Felix himself, older; his line;
+  or an apprentice he taught) when ch41 is drafted and LOG it then.
+- [DECISION phone disposition - OPEN, decide at ch49] Buried with Daniel vs given
+  to Tyche (the only other person who knows the box). Still open per ch49 brief.
+
+- [VOICE WATCH - ESCALATED, binds all chapters ch25+] Two patterns are now
+  OVERUSED and are effectively banned unless rare and truly earned:
+  (1) Close-retrospect lines ("to my grave," "as long as I live," "I have never
+  forgiven," "the day I die," "I have it still"). They appear ~once per heavy
+  chapter (ch13, ch17, ch18, ch24). RATION HARD: at most ONE per chapter, and never
+  in a chapter that already opens or closes on one. Prefer rendering the weight in
+  the scene itself.
+  (2) Ending a chapter on the dead-phone-relic-in-a-box image (used ch17 and ch24).
+  Do NOT close another chapter on the phone/relic/box. The relic may appear
+  mid-chapter only, and sparingly.
+  (3) [added after ch33] A GNOMIC APHORISM CADENCE is creeping in: "the most X thing
+  there is," "the only kind that works," "X is just another way of Y," sweeping
+  one-line maxims that sum up a beat. One earns its keep; STACKED they become a
+  mannerism and a tell. Ration to roughly one per chapter; never two in a paragraph.
+  Prefer a concrete image to a maxim. Also avoid closing a chapter ON such a maxim.
+  (4) [added after ch33] Chapters have been running over the 3,800 ceiling (ch27 ~5k,
+  ch31/ch33 ~4k). HOLD 3,000-3,800 unless it is a true set-piece; tighten in revision
+  rather than letting scenes sprawl.
+  (5) [added after ch35] CLOSING-IMAGE MANNERISM: ch32, ch33, ch34, AND ch35 all
+  originally closed on "young LUCANUS + numbers/objects" (turning a buckle; counting
+  against his arm; miscounting a sheet; reading figures the wrong way round). FOUR in a
+  row is a template a reader feels. ch35's close was revised off it. Going forward: do
+  NOT close a chapter on Lucanus-with-figures, and more generally VARY the closing
+  image type chapter to chapter (do not end three consecutive chapters on the same kind
+  of domestic-child beat, or on counting/figures). Banned closers remain: phone relic,
+  roof/boat-rail, a maxim.
+
 - [DECISION Part III re-sequenced for chronology, after ch17] Because Daniel is now
   bound to serve the Second Dacian War (105-106), Part III chapters ch18-ch24 are
   RE-ORDERED into chronological sequence (only ch17 was written, so this is clean):
