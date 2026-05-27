@@ -210,7 +210,17 @@ A writer agent rewriting Chapter N should read in this order:
 
 **Reference only if needed:**
 - `bible/05_world_rules.md` — honesty constraints
-- `summaries/*.md` — condensed analysis if you need deeper context on a specific issue
+- `V2_TECH_DEEP_DIVE.md` — detailed feasibility analysis for optics, springs/clocks,
+  steam precision; priority table; precision-bootstrapping loop; physical parameters
+  appendix for accurate scene-writing (timelines: spyglass by 103–105, steam pump
+  by 104–108, pendulum clock ±2 min/day by 115–125)
+- `V2_DANIEL_FINANCES.md` — Roman economic baseline, per-phase wealth trajectory
+  (age 21: ~200–300K HS; age 36: ~15–25M HS; age 60+: ~50–100M HS), revenue stream
+  rankings, key story-beat transactions in sesterce terms
+- `V2_HISTORICAL_IMPACT.md` — military/economic/social divergence by era, specific
+  war outcome verdicts (Dacian Wars, Parthian, Bar Kokhba), Rome-in-155-AD snapshot,
+  year-by-year visibility table (what a perceptive character would notice is different)
+- `summaries/*.md` — condensed analysis of V1 review files
 - `qa/chNN_review.md` — per-chapter QA review from V1
 
 **DO NOT read** the `analysis/` or `book/review/` directories — those were the V1
