@@ -604,14 +604,29 @@ south from the Caribbean to the South American coast.
 **Tomatoes:** Mesoamerican/Andean origin. Possibly accessible via the Gulf Coast
 on later expeditions.
 
-**The practical crop list for first and second voyages:**
+**What the expeditions actually return with:**
 
-- First: maize seeds, sweet potato tubers, possibly tobacco
-- Second: maize (viable planting stock), sweet potato (established), cacao
-  (if Gulf Coast contact achieved), possibly rubber samples, geographic
-  extension southward
-- Third: rubber supply route, push toward continental coast, first contact
-  with Mesoamerican civilization at a city-state level
+The constraint is not one crop per voyage; it is identification, preservation, and
+successful transplant. A Roman expedition can identify and bring back multiple botanical
+samples and seeds simultaneously, provided the sailors understand what they're looking at,
+can preserve it through the voyage, and can establish it in Roman soil.
+
+- **First voyage:** Maize seeds, sweet potato tubers/cuttings, possibly tobacco samples.
+  These are the most obvious domesticated crops encountered on the Caribbean coast.
+  Sweet potato especially survives long sea voyages better than fresh fruit. The crew
+  brings back whatever they recognize as useful food and whatever local inhabitants
+  suggest is worth carrying. Multiple species per voyage is not a constraint.
+
+- **Second expedition returns with:** Established maize and sweet potato planting stock
+  (from successful trials), cacao beans or cacao plants (if Gulf Coast contact achieved),
+  rubber samples (identified from Mesoamerican trade goods or Gulf Coast collections),
+  and whatever other botanical material the sailors can identify and preserve.
+
+- **Third and subsequent expeditions:** Focus on establishing supply routes for rubber,
+  expanding geographic knowledge toward continental coasts, and first contact with
+  Mesoamerican civilization at a city-state level. The bottleneck shifts from what
+  one voyage can carry to what Rome can establish as viable agriculture and what
+  supply routes can be maintained.
 
 ### The 5-Year Voyage Cycle and Roman Financial Culture
 
@@ -713,6 +728,32 @@ lie has a protective function at every stage: it prevents the ocean program from
 being weaponized before the first voyage. It prevents a military expedition
 from being sent instead of an exploratory one. It keeps the first voyage focused
 on scouting rather than conquest.
+
+### Daniel's Cover Story for Inhabited Land
+
+When the first expedition returns with evidence of inhabitants — a local person,
+artifacts, clear proof of established settlements — the framing "uninhabited"
+collapses. Daniel does not recant explicitly. Instead, he shifts to a new
+narrative that preserves his position of "I did not know":
+
+*"My people came from the far north — we never ventured south enough along those
+coasts to know what was there. I told you what I knew. What lies further south was
+beyond our reach."*
+
+This is technically consistent with his Thule framing throughout the book: his homeland
+is northern, his knowledge was local. The lands encountered by the expedition lie further
+south than Thulean exploration extended. He knew of the western ocean; he did not know of
+these specific inhabited coasts. The claim is unfalsifiable — there is no one alive who
+can contradict what Thulean explorers did or did not do. "My people never ventured that
+far south" is defensible even as the lie grows.
+
+It allows him to maintain the "I did not know" position publicly while being aware that
+he knew perfectly well. The distinction between "I did not know this specific coast was
+inhabited" and "I knew the western lands were inhabited but lied about it to get the
+program started" is narrow, but it holds in public discourse. Daniel knows he is parsing
+the difference between ignorance and deception in his favor. He also knows it is the best
+he can do without admitting the original lie and destroying the entire framework that
+made the ocean program possible.
 
 He tells himself:
 - He is not lying about the disease (he doesn't know exactly what will happen).

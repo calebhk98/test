@@ -417,19 +417,23 @@ has a readership beyond the participants.
 
 ### Part IV (ch25-ch31, 110-117 AD) — The Contest Matures
 
-**Beat E: A woman wins (ch25-31, exact chapter writer's choice)**
-A story entered by a young woman — or by someone whose name reads as a woman's name
-to the panel — takes a prize. The more interesting version: she enters under a plausibly
-ambiguous name, wins the Judges' Prize, and is revealed to be a woman when she comes to
-collect. The cultural friction is real. Some of the judges protest. At least one refuses
-to endorse the award retrospectively. The press covers the controversy. Daniel makes the
-award public and does not editorialize. He lets the press do the editorializing. The
-precedent is set. The next woman who wins faces less friction.
+**Beat E: A lower-status entrant wins (ch25-31, exact chapter writer's choice)**
+A story entered by someone of lower social standing — possibly a freedperson, possibly
+a provincial, possibly someone writing in a rougher register — wins a prize. The more
+interesting version: they enter with minimal information about their status, win the
+Judges' Prize or the People's Prize, and the judges discover afterward that the winner
+is not from the educated elite they expected. Real tension emerges. Some judges protest.
+At least one questions whether someone from this background could have written something
+of this quality (implicitly assuming lower-status entrants cannot produce sophisticated
+work). The press covers the controversy. Daniel makes the award public and does not
+editorialize. He lets the press do the editorializing. The precedent is set. The next
+lower-status winner faces less friction, and the contest's credibility as a genuinely
+open venue is reinforced.
 
-The woman's story should be relevant to the contest's tech-inspiration purpose — a story
-about medicine, or about an invisible thing that moves through water, or about a ship
-that navigates by the stars. Her subject matter should make it harder to dismiss the
-win as a novelty.
+The story should be relevant to the contest's tech-inspiration purpose — a story about
+medicine, or about an invisible thing that moves through water, or about a ship that
+navigates by the stars. The subject matter should be strong enough that it cannot be
+dismissed as a novelty win. The interesting rupture is class, not gender.
 
 **Beat F: Protégé goes wrong (ch38, Part V, see note)**
 One person in the contest community misuses something Daniel built. Most naturally placed
@@ -487,11 +491,13 @@ describes a technology Daniel is currently developing without knowing it. This i
 accidental parallel beat (see Section 8 for full treatment). It belongs in Part VI,
 ch41 or nearby.
 
-**Beat L: Woman on the judge panel (ch41 onward)**
-Following the woman-wins beat (Beat E, Part IV), one woman eventually joins the standing
-judge panel. This is not announced as a landmark. It happens because the person is
-qualified. The cultural friction is less than it was for the first woman winner, but
-it is not gone.
+**Beat L: Judge of lower-status origin on the panel (ch41 onward)**
+Following the class-tension beat (Beat E, Part IV), eventually someone of lower-status
+background — a freedperson, a provincial, someone outside the traditional educated elite —
+joins the standing judge panel. This is not announced as a landmark. It happens because the
+person is qualified. The cultural friction about this appointment is less than it was
+for the first lower-status winner, but it is not gone. The structure is working as
+designed: the judges now include perspectives that the educated elite alone would not.
 
 ---
 
@@ -532,10 +538,12 @@ Prize in the second year of the Natural Philosophy category.
 **Disease and invisible creatures:**
 He enters a story about a physician who discovers that illness travels through water —
 that the invisible things in bad water can be stopped by boiling. The story is fiction.
-The protagonist is a woman physician (deliberate). The plot involves an epidemic in a
-city and the woman's struggle to convince the magistrates to act. The story predates
-the city epidemic scene by several chapters; when the epidemic happens, some readers
-remember the story.
+The protagonist is a skilled physician trained in practical observation. The plot involves
+an epidemic in a city and the physician's struggle to convince the magistrates to act —
+a conflict driven by institutional resistance and the magistrates' disbelief, not by the
+protagonist's gender. The story predates the city epidemic scene by several chapters;
+when the epidemic happens, some readers remember the story and its central argument about
+transmission and boiling.
 
 **The Western Ocean story:**
 He enters a story about a sailor who crosses the western ocean and finds a land of
@@ -719,13 +727,15 @@ four parts as the man who keeps trying, the win costs something — it is a long
 coming, and Daniel knows how long Felix has been entering, and neither of them says
 that aloud during the reading.
 
-### Do Not: Skip the Woman-Wins Cultural Friction
-The woman's win is not a progressive triumph. It is uncomfortable. Some of the
-judges are genuinely hostile. Some of the audience at the public reading does not
-want to cheer for the story once they know who wrote it. Daniel does not resolve this
-by making a speech. He makes the award and lets the press cover the friction. The
-friction is part of the record. Years later, the friction will look smaller in
-retrospect than it was in the moment. In the moment, it is real.
+### Do Not: Skip the Class-Tension Moment
+The lower-status winner's award is not a progressive triumph. It is uncomfortable.
+Some of the judges are genuinely surprised and express doubt about whether someone from
+that background could have produced work of this quality. Some of the audience at the
+public reading does not want to cheer for the story once they know the winner's actual
+status. Daniel does not resolve this by making a speech. He makes the award and lets
+the press cover the tension. The tension is part of the record. Years later, it will
+look smaller in retrospect than it was in the moment. In the moment, it is real. The
+class rupture the dual-prize structure was designed to create has happened.
 
 ### Do Not: Have the Contest Run Without Problems
 The protégé-goes-wrong beat (Section 6, Beat I) is required specifically because the
