@@ -1,7 +1,11 @@
-# AGENT RULES — Read this before writing or reviewing a single word
+# AGENT RULES V2 — Read this before writing or reviewing a single word
 
 This file is law. Every writer and every reviewer reads it first. If a draft
 breaks these rules, it gets rejected and rewritten. No exceptions.
+
+**V2 additions:** Rules 15–18 below are new for V2, added from V1 analysis.
+Also see `PROSE_PATTERNS_TO_AVOID.md` for a quick-reference checklist with
+specific per-chapter count targets, and `V2_MASTER_CONTEXT.md` for full context.
 
 ## The one rule underneath everything
 
@@ -90,6 +94,32 @@ chapter has failed.
 - **Subtext on slavery and literacy.** The book's argument against slavery is
   made through events and inventions, almost never through Daniel lecturing.
   Keep it under the surface.
+
+## V2 additional rules (learned from V1 analysis)
+
+15. **No wisdom-button scene endings as default.** Every scene ending on a
+    portable aphorism restating its own meaning is the book's #1 AI tell. It
+    is acceptable at most once per chapter. The model ending: ch42 (the empty
+    bench). End on image, action, line, silence — not on packaged wisdom.
+16. **No muting the rough-voiced characters.** If Pamphilus, Naso, Davus, or
+    a crowd heckler appears on the page, they speak in their actual class-
+    marked voice. "He shouted something I didn't catch" is banned. Write what
+    they shouted. It should be rough, dumb, or crude.
+17. **No static tech walls.** "Rome currently lacks X" is not a sufficient
+    reason for Daniel to give up. He either bootstraps the prerequisite, or
+    fails at a specific identifiable step (not a vague impossibility). See
+    `bible/04_tech_schedule.md` for what is actually achievable and how.
+18. **Watch the tic-phrase counts.** "The way" (max 3/chapter), "looked at
+    me" (max 2/chapter), "the shape of," "the whole of," "which is to say"
+    (max 1 per 5 chapters each). The full list is in `PROSE_PATTERNS_TO_AVOID.md`.
+    One-sentence paragraphs: max 15% of all paragraphs in the chapter.
+
+## Beat-tag note (V2 correction to V1 over-correction)
+
+V1 eliminated ALL nodding/sighing/chuckling (zero instances). This was
+over-correction that created its own uncanny valley. In V2: natural use of
+1–2 beat-tags per chapter is acceptable, provided each is specific and
+earns its moment. Zero is wrong; every other line is also wrong.
 
 ## When reviewing
 
