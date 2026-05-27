@@ -155,6 +155,10 @@ work because they put the reader in a place before explaining what the place mea
 Already covered in Section 1.1. Listed here again as a count reminder:
 **ZERO instances per chapter. Per book. No exceptions.**
 
+### 2.7 Before you submit — global search checklist
+
+Run a global search for: "I want to be" / "shape" / " thing" / "which is to say" / "nobody tells you" / "the way you" — audit every hit before final.
+
 ---
 
 ## SECTION 3: TICS TO WATCH (at most once per 5 chapters)
@@ -344,6 +348,301 @@ beat. The standard: the beat must be specific to this character in this moment.
 "He nodded" is filler. "He dipped his head the way he did when he was working
 something out" is character. Somewhere between those two is the natural register
 that V2 is aiming for.
+
+---
+
+---
+
+## SECTION 6: VOICE AND RHYTHM TICS (identified in V1 multi-reviewer feedback)
+
+These tics were identified by multiple independent reviewers across multiple
+chapters. They are distinct from patterns in Sections 1-3 above. Do not
+duplicate checks — these target different failure modes.
+
+---
+
+### TIC V1: THE META-DISCLAIMER / THROAT-CLEARING
+
+The narrator prefaces difficult scenes by announcing his own honesty. Variants:
+- "I want to be honest about..."
+- "I want to be careful here, because..."
+- "I want to be precise about..."
+- "I am not going to dress up what I felt..."
+- "I want to be exact about my own hands here..."
+- "I want that plain."
+- "I will not pretend..."
+- "I want to set down honestly..."
+
+**Why it fails:** Functions as an authorial apology. Tells the reader the
+author is worried they won't understand the upcoming scene. Breaks immersion.
+Appears in almost every chapter — it is the manuscript's single most damaging
+pattern.
+
+**Fix:** Delete 80-100% of these. Every single one. The prose is strong enough
+without them. If the scene is honest, it does not need to announce its own
+honesty. The only permitted version: if it appears once, in a chapter where
+Daniel is specifically lying to himself and the throat-clear is the signal of
+that — i.e., the disclaimer is itself unreliable.
+
+**Global search:** "I want to be" / "I want to get" / "I will not pretend" /
+"I want that plain"
+
+
+### TIC V2: THE POLYSYNDETON EXHAUSTION ("and...and...and")
+
+Using "and" repeatedly to simulate racing thought. Worked once (panic attack,
+ch01). By ch05+, it is a stylistic rut.
+
+**V1 example:** "...a street that stank of fish and piss and the woodsmoke of
+a hundred braziers and the wet wool of everybody's cloaks in the rain."
+
+**Fix:** Vary sentence lengths. After a polysyndeton run, cut to a short
+sentence. Not every overwhelmed moment is polysyndeton. Save it for genuine
+panic or overwhelm.
+
+**Rule:** Maximum ONE polysyndeton run per chapter. If a chapter has two, cut
+the weaker one.
+
+
+### TIC V3: FALSE MODESTY RHYTHM
+
+Pattern: Daniel calls himself stupid/slow/idiotic, then immediately does
+something highly analytical or observant. Intended to make him relatable;
+instead becomes predictable.
+
+**Fix:** Allow Daniel to own a victory without apologizing for his intellect
+first. Also: add genuine stupidities — moments where he IS actually slow that
+have consequences, not just self-deprecating prefaces.
+
+**Rule:** If "I was an idiot" or "I should have seen it" or similar appears,
+the next paragraph cannot be Daniel demonstrating sophisticated analysis.
+Either the self-criticism must land (he really does fail), or cut it.
+
+
+### TIC V4: THE "NOBODY TELLS YOU" FORMULA
+
+Conversational opener introducing a mundane epiphany:
+- "Nobody warns you about that."
+- "Here is the thing nobody tells you about fire..."
+- "Nobody told me that..."
+
+**V1 examples:** Ch5: "Nobody warns you about that. The first weeks, being
+mute is just survival..." / Ch7: "Here is the thing nobody tells you about
+fire, or that everybody knows and I had never needed to know..."
+
+**Fix:** Acceptable once. After that it sounds like a blog. Cut all but one.
+Replace with observation stated directly.
+
+
+### TIC V5: COUNTING AS UNIVERSAL PACING DEVICE
+
+Daniel counts breaths/steps whenever stressed. Worked brilliantly at the
+balloon launch. Must NOT become his standard stress response.
+
+**Rule:** ONCE per act. If you use counting in Part II, do not use it again
+until Part IV. It works by scarcity.
+
+
+### TIC V6: THE "SHAPE" / GEOMETRY CRUTCH
+
+Using "shape" or geometric terms as metaphors for abstract understanding:
+- "The shape of the problem"
+- "The shape of the language"
+- "That was the shape of it"
+- "I understood the shape"
+- "He had laid it out flat... the way a man who reads a liver lays the marks
+  out and lets you see they make a shape."
+
+**Global search:** Run a search for "shape" — cut at least half. Replace with
+what is actually meant: the nature, the logic, the arrangement, the structure.
+
+(Note: "the shape of" is also listed in Section 3 with a max of 1 per 5
+chapters. This entry restates the fix intent and adds the search instruction.)
+
+
+### TIC V7: "THING" AS LAZY PLACEHOLDER
+
+Using "thing" when a specific noun is available:
+- "The whole education of the thing"
+- "The quiet thing under the loud things"
+- "The true thing in my whole strange enterprise"
+- "There is a thing Romans do..."
+- "The thing that ended that small triumph"
+
+**Rule:** If you cannot name the thing, the reader cannot see it. Replace
+every abstract "thing" with the specific noun — the dread, the calculation,
+the logic, the trick, the arrangement, the fear. Do a global search for
+" thing" and audit every hit.
+
+
+### TIC V8: THE "WHICH WAS" TRAILING CLAUSE
+
+Ending paragraphs with a dependent clause that cynically reframes what just
+happened:
+- "...which was rare and which I'd learned to dread."
+- "...which was its own kind of mercy."
+
+**Fix:** Occasionally fine as a closing rhythm. More than twice per chapter =
+becoming a tic. Cut the ones that state the theme explicitly (those are the
+wisdom-button in disguise).
+
+
+### TIC V9: THE "BECAUSE" TRAIN
+
+Stringing multiple justifications together to simulate racing mind:
+"...because I wanted it, because I wanted to feel the clean thing once...
+because Sabinus and the boring water..."
+
+**Fix:** One "because" per justification chain. Break it up with a period. If
+Daniel needs three reasons, give them in separate sentences or a short list —
+don't train them all onto one conjunction.
+
+
+### TIC V10: THE "WAY YOU / WAY A MAN / WAY A CHILD" CRUTCH
+
+Rhythmic comparative similes used for introspection:
+- "the way men who had been hard once and let the hardness sink..."
+- "the way Macer wore no stripe..."
+- "the way you show a horse the bridle..."
+- "the way you'd say a dog was a fine dog."
+
+**Rule:** One per scene. When every internal monologue uses this rhythm, it
+makes the narrator sound clinically detached. Vary with: direct statement,
+physical sensation, action rather than comparison.
+
+(Note: also governed by the "the way" limit in Section 2.3 — max 3 per
+chapter. This entry addresses the specific introspective subtype.)
+
+
+### TIC V11: "LET IT SIT / LET THAT HANG" DRAMATIC PAUSE
+
+Multiple characters use the same dramatic pause mechanism:
+- (Scaeva): "I think in'—and here he let it hang..."
+- (Vibenius): He let that sit.
+- (Daniel): I let that sit.
+
+**Fix:** Pick ONE character whose tic this is. Remove it from everyone else.
+Overuse across multiple characters makes it an author tic, not a character tic.
+
+
+### TIC V12: "WHICH IS TO SAY" PIVOT
+
+A rhythmic clarification that cynically reframes the previous statement:
+- "So I maneuvered, which is to say I lied a little..."
+- "He did not go there, which is to say..."
+
+**Fix:** Acceptable occasionally. More than twice per chapter = tic. Always
+ask: can the second half just follow the first half as its own sentence?
+Often yes.
+
+(Note: also listed in Section 3 with a max of 1 per 10 chapters. That limit
+stands. This entry adds the specific fix instruction.)
+
+
+### TIC V13: FROZEN EPIPHANIES
+
+Protagonist physically stops moving to have a profound realization:
+"I stood there in my own yard and looked at a fourteen-year-old slave..."
+
+**Fix:** Realizations can happen while moving. Freeze the protagonist only
+when the stasis IS the point — when staying still is the dramatic act. Don't
+use it as a default "now he understands something" mechanism.
+
+
+### TIC V14: THE PREAMBLE RELAPSE (variant of TIC V1)
+
+Refusing to trust the prose before a scene:
+- "I am not going to dress up what I felt sitting there."
+- "I want to be exact about my own hands here..."
+
+Same fix as TIC V1 above. Delete. Trust the scene.
+
+
+### TIC V15: THE SOCRATIC ECHO
+
+Other characters instantly summarize Daniel's complex explanations back to
+him in perfect metaphors:
+- Apollodorus: "Like a cup pushed mouth-down..."
+- Hermes summarizing the quenching process perfectly
+
+**Why it fails:** Real people don't do this. It makes secondary characters
+into mouthpieces that validate Daniel's intelligence. It also makes the
+explanation redundant — he says it, they mirror it, nothing was added.
+
+**Fix:** When a character confirms understanding, have them get it partially
+wrong, or get it right but in their own vocabulary (which might be cruder or
+different), or ask a follow-up that shows a gap. Understanding is never
+perfectly symmetrical.
+
+
+### TIC V16: THE CYCLE OF DEFEAT (structural tic)
+
+Macro pattern that repeats too often:
+1. Daniel has an idea
+2. It works once
+3. It fails systematically
+4. Depression/retreat
+5. Pivot
+
+The balloon, the printing block, the plow, the crucible steel all follow this
+exact arc.
+
+**Fix:** Not every tech thread needs to fail systemically before Daniel pivots.
+Some things should simply work and stay working. Some failures should be
+logistical (stolen, too expensive, wrong market) not technical. Break the
+formula in at least 2 threads.
+
+
+### TIC V17: THE LEDGER-AS-CATHARSIS (structural tic)
+
+Every time Daniel or Marcia faces a profound loss, they immediately pivot to
+counting, tallying, or listing. It is a psychologically valid defense
+mechanism, but it NEVER breaks. By the end, Daniel feels more like a
+calculator than a man.
+
+**The required fix:** ONE scene where the ledger fails. He cannot count his
+way through it. He has to scream, break something, go silent in a way that
+isn't calculated silence, cry, laugh, lose control for one paragraph. He
+doesn't need to change as a person — but he needs to crack once so the reader
+loves him. This should probably be in Part V or early Part VI.
+
+**Note:** The list-making tic is separate from this — he can still make lists.
+The point is that one emotional moment must NOT be resolved by a list.
+
+
+### TIC V18: THE PHYSICAL DECLINE CATALOG (final act tic)
+
+In Parts VI-VII, repeated inventory of Daniel's aging body:
+- The teeth, the joints, the eyes, the breath, the cold hands
+- This appears every few chapters as a reminder of mortality
+
+**Fix:** Cut 50% of these. Trust the reader to remember he is old. The catalog
+works once, maybe twice; after that it feels like a gimmick. The aging should
+be shown through what he can no longer do (carry something, read small text,
+remember a date), not through a checklist.
+
+
+### TIC V19: CIPHER RULES RE-EXPLAINED (final act tic)
+
+The rules of the cipher/legacy system (teach two, never more than two, keep
+the mark honest, never smooth a guess into a fact) are explicitly recited
+6-7 times in the manuscript.
+
+**Fix:** Delete all explicit recitations in Parts VI-VII. The rules were
+established by Part III. Trust the reader. The oath can appear one final time
+in the last chapter as a callback — and only there.
+
+
+### TIC V20: THE SKEPTIC/MENTOR CORRECTION LOOP (structural tic)
+
+Formula: Daniel thinks X -> skeptical mentor (Heras, Marcia, Tyche, Ulpia)
+says "you're being an idiot" -> Daniel realizes they're right.
+
+**Fix:** Don't change the structure, but audit the final act for mentors
+repeating what a prior mentor already said. Consolidate. Each mentor should
+correct Daniel on a DIFFERENT failure mode — Heras on medical hubris, Marcia
+on financial blind spots, Tyche on social blind spots, Ulpia on something
+Ulpia-specific. If two are saying the same thing, one of those scenes can go.
 
 ---
 
