@@ -65,6 +65,16 @@ not through interior complaint. Garum. No tomatoes, no potatoes, no anything he
 recognizes as normal food except bread, olive oil, eggs. He adapts without making speeches
 about it.
 
+*Food arc — Part I:* The garum evolution is the part's quiet through-line: disgust on
+first encounter (the smell, the pervasiveness), avoidance, then sometime in ch05 territory
+the recognition that clicks — it is fish sauce, it is umami, it is the same thing that
+makes a ramen broth work. He stops complaining and starts using it. The evolution is shown
+across chapters 03–05 in small moments, never announced. Also in this part: his first
+private food experiment, an omelette made for himself alone — eggs, whatever herb is to
+hand, a pan and oil — not for the household, not as a demonstration, a small act of being
+himself. Someone in the household sees it and says something like "that is how barbarians
+eat." Both statements are true.
+
 **Part I ends:** He has committed to the balloon project. He has a patron, a language,
 and a small collection of practical wins that demonstrate value without requiring anyone
 to trust him on faith.
@@ -143,6 +153,34 @@ The vow covers untrained operators in untested designs — it does not cover kit
 nobody aboard, and it does not cover systematically tested manned platforms once the
 testing is done. Unmanned and kite-class glider work resumes within one to two years.
 Manned flight returns as a live question within that same window.
+
+*Food arc — Part II:* Now that the workshop is founded and Daniel has a kitchen and
+income, food experimentation becomes possible. Pasta is introduced here — durum flour and
+eggs, rested dough, rolled thin, cut into strips, boiled in salted water and served with
+oil and garum and herbs. Not laganum baked in a dish; the boiled-then-sauced thing Rome
+does not do yet. He makes it, serves it at workshop gatherings, watches people eat it.
+Some find the texture wrong. Nobody makes a speech about it. The workshop gatherings
+establish food as social lubricant in this part: people come partly because the food is
+better than comparable Roman events at his level. Egg-forward dishes (the frittata
+principle — eggs, leeks, crumbled cheese, heat) appear at those gatherings. Around ch07
+territory, Daniel finds Gnaeus — a tavern-keeper near the workshop — and makes a quiet
+verbal arrangement: Daniel supplies certain recipes in exchange for a standing meal and a
+small cut of anything Gnaeus puts on his menu that came from Daniel's kitchen. It is not
+a business. Gnaeus thinks of Daniel as "the barbarian who has interesting ideas about food
+and is good for business." That is the correct relationship.
+
+*Prize innovation — Part I/II boundary (ch05/ch07 area):* The first informal prize post
+appears in background during ch05 as Daniel is establishing workshop operations and
+hitting early production problems. It is small — a glass clarity spec, posted through
+a guild contact Macer introduces him to. Three craftsmen attempt it. One wins: a
+glassmaker from Brundisium using a decolorant technique his father developed for
+decorative vessels, which the man had no idea was relevant to optical glass. Daniel
+paid two hundred sestertii and received a technique he did not know existed, solving a
+problem he had been approaching from a different direction for over a year. The
+model clarifies itself: he is not buying invented solutions. He is buying disclosure of
+knowledge that already exists in Roman craft tradition but is invisible to him. He
+writes down everything the Brundisium man tells him about his father's method. He does
+not explain this to anyone.
 
 **Part II ends:** Daniel returns from the Danube changed. He has seen what his gifts do
 in the hands of generals. The kite system worked. Men are alive who would be dead. Other
@@ -259,6 +297,38 @@ framing in educated circles without winning it.
 - Printing press has produced at least 500 copies of one text circulating beyond Rome
 - One trade route opened by compass enabling open-sea navigation
 - Volta pile demonstrated as shock-and-electrolyze demonstration
+
+*Food arc — Part III:* The verbal arrangement with Gnaeus solidifies into a standing
+partnership. A few dishes from Daniel's repertoire — the pasta preparation, the egg-forward
+dishes, a couple of sauce preparations — become permanent items on Gnaeus's rotating menu.
+Daniel gets a small cut. He does not manage the place. Gnaeus resists Daniel's push toward
+doing fewer things very well; they compromise; the result is a thermopolium that is
+slightly better than average, not a culinary revolution, which is the correct outcome.
+Sauce work is the part's other food note: no tomatoes yet, so Daniel works with what
+exists. He makes a fig-and-vinegar reduction — figs or plums reduced with vinegar, honey,
+cumin — because he wants ketchup and cannot have it. He uses it on roasted pork and with
+cheese. He knows it is not what he wanted. He uses it anyway. One or two sentences, no
+pathos. By the end of this part, garum is a standard tool in his cooking. He no longer
+thinks about the smell.
+
+*Prize innovation — Part III:* The specs become semi-public in this part — appearing in
+the press's broadsheet alongside commercial notices. Multiple open simultaneously.
+First appearance of Glabrio (ch19 or ch21): a bronzesmith who shows up in prize records
+Daniel reviews — attempting the steam cylinder tolerance prize, the alloy composition
+prize — getting close each time, never quite winning. Daniel knows his name. They have
+never spoken directly. Glabrio's repeated near-misses are a small running acknowledgment
+that the model distributes risk by transferring some of it to people who cannot fully
+afford it. Also in this part: the ten-year lens-grinding spec, posted around ch15 during
+the steel and press work. The prize attracts the workshop community as a recurring
+background fact. It will not be won for nine years. Also in Part III (ch25–27 range):
+Crispus figures out the aggregate. Not the individual prizes — those are just commercial
+transactions — but the pattern: Daniel is posting specs that collectively describe a
+technological program, paying for solutions without directing approaches, watching what
+Roman craft knowledge produces when given an economic target. Crispus's realization is
+fear plus reluctant admiration. He does not say it aloud except perhaps to Vibenius.
+The texture of his antagonism shifts: he attacks the model's cultural legitimacy
+(prizes destabilize craft guilds' traditional authority structures) rather than continuing
+the blunter fraud accusations. This makes him harder to answer. He is partly right.
 
 **Part III ends:** Peak building. Daniel has citizenship, a wife, a workshop, a press, a
 contest, a freed apprentice who is teaching herself English. He is twenty-eight and the

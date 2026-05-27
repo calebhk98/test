@@ -24,6 +24,16 @@ Also read if your chapter involves specific topics:
 - `V2_STORY_PLOT_NOTES.md` — story-level changes, antagonist exits, required additions
 - `bible/03_timeline.md` — chronology and AD years
 - `bible/05_world_rules.md` — honesty constraints on Daniel's knowledge and tech
+- `V2_FOOD_ARC.md` — **read if your chapter has a food beat, tavern scene, cooking moment,
+  or New World crop arrival.** Covers what Rome has, what Daniel knows how to cook, phase
+  timeline (pasta Phase B, New World crops Phase D), the tomato moment, cacao scene (ch43),
+  and the Gnaeus tavern-partner arrangement. Do NOT have him cook with ingredients unavailable
+  in his chapter's era.
+- `V2_PRIZE_INNOVATION.md` — **read if your chapter involves tech development, metallurgy
+  specs, craftsman competitions, Crispus reacting to Daniel's methods, or the lens-grinding
+  arc.** The X-Prize model (post spec → pay only winners → nobody sees the aggregate) runs
+  from Phase B through Phase E. Six narrative beats with chapter assignments are listed there.
+  Do NOT have Daniel explain the model in a speech.
 
 ---
 
