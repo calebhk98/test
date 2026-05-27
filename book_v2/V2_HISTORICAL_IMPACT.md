@@ -2,7 +2,11 @@
 
 **Purpose:** Concrete answers to "what does Rome actually look like at this year, and how is it different from real history?" A writer can open this file before any chapter set in a given decade and know exactly what is and isn't different about the world Daniel inhabits.
 
-**Format note:** Real history is marked [REAL]. Daniel's divergence is marked [DIV]. "What a Roman would notice" means a literate urban Roman, not a provincial farmer. Many changes are invisible to contemporaries even when they are large in retrospect.
+**Format note:** Real history is marked [REAL]. Daniel's divergence is marked [DIV]. "What a Roman would notice" means a literate urban Roman, not a provincial farmer.
+
+**Core philosophy:** Daniel is not just building cool technology. He is a man who knows the empire's death date and is trying to prevent it. He knows about the Antonine Plague (165–180 AD), the Crisis of the Third Century (235–284 AD), the communication lag that makes governing a million square miles impossible, the currency debasement spirals, and the military overextension that will bleed the legions dry. He is racing against a timeline only he can see.
+
+By 130 AD, a perceptive Roman in a major city lives **noticeably** differently than in 98 AD. By 155 AD, the empire's fundamental trajectory has changed. The change is not ubiquitous — rural peasants are still mostly the same — but it is real and visible in cities, in the military, in commerce, and in how the empire governs itself.
 
 ---
 
@@ -10,240 +14,240 @@
 
 ### 98–110 AD — The Dacian Wars and Their Aftermath
 
-**Background (real history):** Two wars against Dacia (modern Romania), 101–102 and 105–106. Trajan won both decisively. Apollodorus of Damascus built a pontoon bridge in the first war and a permanent stone arch bridge at Drobeta for the second. Decebalus fled and committed suicide. Dacia was annexed as a province. The campaign was expensive in men and logistics — the Danube supply lines were the limiting constraint, not tactical genius on either side.
+**Background [REAL]:** Two wars against Dacia (modern Romania), 101–102 and 105–106. Trajan won both. Apollodorus built a pontoon bridge, then a permanent stone arch bridge at Drobeta. Decebalus fled and committed suicide. Dacia was annexed. The campaign's limiting constraint was the Danube supply line and the mountain terrain of Transylvania — Decebalus's greatest advantage was that the passes were ambush country.
 
 **First Dacian War (101–102 AD):**
 
-[DIV] Daniel reaches Trajan's camp near Viminacium in late 100 AD, introduced through Macer's equestrian connections. He is known by then as "the Thulean with the new figures." His direct war contribution in the first campaign is limited to two things: a reconnaissance kite system and input to Apollodorus on the pontoon bridge design.
+[DIV] Daniel's reconnaissance kite system is operational by late 100 AD. These are not fragile toys — by the time of the campaign he has been iterating the design for two years, and the system now uses large, stable delta kites with a tethered observer platform and a signal-cord relay. A man at 150 feet of altitude can see a mile in every direction across forested terrain.
 
-The kite reconnaissance — large, stable delta kites with attached clay tablets and a signal-cord system — allows spotting of Dacian ambush positions in the forested approaches north of the Danube. In real history, Trajan walked into at least two successful Dacian ambushes in 101 that cost him heavily. [DIV] In V2, one of those ambushes is spotted from kite altitude and the marching column redirects. The engagement still occurs — the Dacians are not stupid — but the Romans are not surprised. The difference is probably 800–1,200 legionary lives over the campaign, and one less strategic reversal that forced Trajan to pause and consolidate.
+In real history, Trajan walked into at least two successful Dacian ambushes in 101 that cost him heavily and forced strategic pauses. [DIV] In V2, both ambushes are detected from kite altitude before the column enters the killing ground. The engagements still occur — the Dacians are not idiots — but the Romans are not surprised, not pinned, and not forced to halt. Over the campaign this is the difference between roughly 1,500 Roman dead and roughly 600. More importantly, it is the difference between Trajan losing one engagement's worth of confidence and pressing forward without pause.
 
-The bridge input: Daniel cannot improve Apollodorus's pontoon bridge significantly — Apollodorus is the better engineer. But Daniel gives him one specific idea from modern bridge engineering: distributing the deck load over wider pontoon spacing by using triangulated timber trusses rather than simple beams. Apollodorus, who has been thinking about this problem for months, incorporates a version of it. The bridge is completed six days sooner than the historical record implies. Six days on a campaign supply line across the Danube is meaningful — it is the difference between Trajan being able to sustain an offensive push and having to halt for resupply.
+[DIV] The pontoon bridge benefits from Daniel's load calculations in decimal notation and one structural concept from modern bridge engineering: triangulated timber trusses distributing deck load over wider pontoon spacing. The bridge is completed eight days sooner than historical estimates allow. Eight days on a campaign supply line across the Danube is the difference between sustaining an offensive push and halting for resupply.
 
-[REAL] The treaty of 102 AD happens approximately as in real history: Decebalus accepts client-king status. This outcome is not dramatically changed. Trajan is not going to annex Dacia on the first try regardless of how the campaign goes — his supply lines cannot sustain permanent occupation yet.
+[REAL] The treaty of 102 AD is politically unchanged: Decebalus accepts client-king status. Trajan cannot sustain permanent annexation on the first campaign regardless of tactical advantage.
 
 **Second Dacian War (105–106 AD):**
 
-[DIV] By 105, Daniel has demonstrated a working tethered hot-air observation balloon (not free-flight — Sabinus has already died, and the vow against manned flight under fire holds; but a tethered gas bag at 200–300 feet with an observer is within the vow's wording as Daniel construes it). This is now battlefield-tested equipment.
+[DIV] By 105, Daniel has manned tethered observation balloons. The vow after Sabinus's death covers manned flight under fire in untested designs — it does not cover trained operators with 50+ hours of tethered flight time, double-basket construction, and voluntary consent. By 105, he has trained six balloon operators. Trajan watched the first Dacian campaign. The argument for manned balloons writes itself: an archer at 200 feet is effectively immune to ground fire. Arrow trajectory at that angle, at that range, is nearly impossible to correct for. A bowman aloft has a clear field of fire on any ground position within 300 feet.
 
-The fall of Sarmizegetusa in real history was achieved by cutting the water supply. [DIV] In V2, balloon observation identifies the water conduit feeding the fortress three days before the Romans would have found it by ground survey. The siege ends roughly two weeks sooner. Decebalus still flees and still commits suicide — there is no alternate history here. But Roman losses in the siege are lower, and Trajan's column gets carved with one panel that modern scholars will puzzle over: a clear depiction of a large round object tethered by rope above the Roman lines, with a figure in a basket.
+[DIV] The fall of Sarmizegetusa: in real history, the Romans cut the water supply. Balloon observation identifies the water conduit feeding the fortress on the second day of aerial surveillance, rather than the three weeks of ground survey the historical campaign required. The siege ends approximately three weeks sooner. More significantly: the mountain passes through Transylvania — Decebalus's main defensive advantage — are essentially neutralized. A balloon observer can identify troop concentrations before a column enters a pass. The Dacians cannot mass for ambush without being seen. Roman casualties in the second war are perhaps 35% lower than historical. Dacia is annexed on approximately the historical schedule, but achieved in roughly 70% of the time and cost. [DIV] This frees Trajan's thinking toward the east considerably earlier than in real history.
 
-[DIV] The Drobeta stone bridge: Daniel's input to Apollodorus is more substantive this time. They have worked together for three years. Daniel suggests load calculations using his decimal notation (Apollodorus adapts them into Roman measure), and recommends a flatter arch profile based on modern understanding that shallower arches transmit more horizontal thrust. Apollodorus's final design is his own genius, but it incorporates one span that is 15 feet longer than historical estimates suggest his construction methods could achieve. The bridge stands slightly longer historically — it remains in use through 270 AD in V2, versus damage/abandonment around 240 AD in real history.
+[DIV] Trajan's column gets carved with one panel that will puzzle modern scholars: a large round object tethered by rope above the Roman lines, with a figure in a basket. The image is real. The Romans who saw it know exactly what it depicts.
 
-**Trajan's reaction to air reconnaissance:**
+**Trajan's response to aerial capability:**
 
-This is important for the writer to get right. Trajan is not a technology enthusiast. He is a general and administrator who trusts things that demonstrably work. His reaction to the kite system is not wonder — it is rapid assimilation. He assigns a slave unit to maintain it, he tells his legates to factor it into approach planning, and he asks Daniel what else the system cannot do (i.e., what are its limits). He is specifically interested in whether it can carry fire. Daniel says no, not reliably, and Trajan stops asking.
-
-By 108 AD, the kite reconnaissance system is a standard item on the equipment list of Trajan's personal army. It is not yet army-wide doctrine — that takes another generation. But the Praetorian camp at Rome has begun training operators.
+This is important for the writer. Trajan is not a technology enthusiast. He is a general who trusts things that demonstrably work. By 107 AD, he asks Daniel two specific questions: (1) Can it carry fire? (No, not reliably.) (2) Can an enemy shoot the balloon down? (Yes, if they have archers and get close, but a balloon at 200 feet and moving slightly is not easy to hit.) He assigns a permanent unit of balloon operators to the Praetorian camp. By 108 AD, manned observation balloons with military-trained archers are standard doctrine for siege operations. This is not a minor advantage — in ancient warfare, it is closer to air superiority over a fixed target.
 
 **Parthian War (113–117 AD):**
 
-[DIV] By 113, Daniel has: better logistics numerals (the quartermasters have adopted them for supply accounting), balloon reconnaissance now with true hot-air lift and a tethered observation system that can reach 400 feet, rag paper enabling faster duplication of maps and orders, and improved siege engineering input available through his relationship with Apollodorus.
+[DIV] By 113, Daniel has: manned balloon archers (now a standard formation attachment, two balloon rigs per legion on campaign), logistics accounting in decimal notation (reducing supply waste by an estimated 15%), rag paper enabling fast duplication of maps and orders, and improved siege engineering through his ongoing relationship with Apollodorus.
 
-The Parthian campaign's central problem was not tactical — Rome's legions were better infantry than Parthia's. The problems were strategic overreach, logistics at the end of a 1,500-mile supply chain, and the revolts that broke out in the rear. [DIV] Better logistics accounting reduces supply waste by an estimated 12–15% — enough to sustain Trajan's eastern position several months longer than real history permitted before shortages began forcing decisions.
+The campaign's central problem was never tactical — Rome's legions were better infantry. The problems were: governing conquered Mesopotamia 1,500 miles from Rome; the rear revolts; and Trajan's declining health. [DIV] Balloon archers devastate Parthian cavalry charges. The Parthians' main tactical asset — their cataphract and horse-archer formations — relies on the ability to choose when and where to engage and disengage. A balloon observer identifies cavalry concentrations before they can close. A commander on the ground who knows where 3,000 cataphracts are concentrating, 20 minutes before they arrive, is not surprised. He is prepared. Roman tactical losses in set-piece engagements are dramatically lower.
 
-[DIV] The siege of Ctesiphon (116 AD) benefits directly from balloon observation of the city's layout and defender positions. The assault is faster. Roman casualties are lower — perhaps 1,500 fewer men killed, which matters less than it sounds because the strategic problem is not the siege but the revolts behind it.
+[DIV] The siege of Ctesiphon (116 AD) benefits from aerial observation of the city's layout and defender positions. The assault is faster by approximately two weeks. Roman casualties at Ctesiphon are lower.
 
-The Kitos War revolts (115–117 AD) in Cyrene, Egypt, and Cyprus are not meaningfully changed by Daniel's technologies. They are driven by Jewish diaspora rage and Roman provincial misgovernance — problems that better numerals and observation balloons cannot address. The revolts still erupt. Trajan still has to pull forces back.
+The Kitos War revolts (115–117 AD) are not meaningfully changed. They are driven by Jewish diaspora rage and Roman provincial misgovernance — problems that balloons and arithmetic cannot address. The revolts erupt. Trajan still has to pull forces back. [DIV] His communication improvements (printed maps, standardized orders duplicated in dozens of copies) mean the response to revolts in Cyrene and Egypt is coordinated faster — forces redirected in days rather than weeks. This does not prevent the revolts, but it shortens the suppression timeline. Roman control is reestablished perhaps two months sooner.
 
-**Does Trajan live longer?**
+**Does Trajan live longer?** [DIV] No. Trajan dies at Selinus in Cilicia in August 117 AD. His death is cardiovascular — a stroke in an aging man who has spent decades in brutal conditions. Better field medicine cannot prevent that. What it does: he arrives at Selinus healthier, not concurrently weakened by camp infections, so he retains mental clarity longer in his final weeks. The deathbed adoption of Hadrian is less ambiguous. The Four Consulars affair still happens — Hadrian's paranoia is unchanged — but the succession is slightly more legitimate, and the Senate's lasting bitterness is correspondingly less intense.
 
-[DIV] Trajan dies of a stroke at Selinus in Cilicia in August 117 AD in real history. He is 63. In V2, better field medicine (boiling water, wound washing, Heras's protocols spreading through the army's medical staff) means Trajan does not suffer from any of the camp infections that historically weakened him before Selinus. He arrives at Selinus healthier. He still dies — the stroke is not a product of infection or poor field care, it is cardiovascular disease in an aging man who has spent decades in brutal conditions. The stroke happens. He dies 117 AD.
+**Military doctrine by 113 AD:**
 
-What changes is the succession. Trajan is slightly more cogent in his final weeks than in real history, because he is not weakened by concurrent infection. [DIV] The deathbed adoption of Hadrian — historically suspected to be engineered by Plotina and Attianus with a possibly forged document — is less ambiguous in V2. Trajan has time to make his wishes clearer before losing consciousness. The "Four Consulars" affair (the execution of Palma, Celsus, Nigrinus, and Lusius Quietus in 118) still happens — Hadrian's paranoia and their real or perceived opposition is unchanged — but the Senate's lasting bitterness over it is slightly less intense because the adoption appears more legitimate.
+A major Roman campaign now carries: manned observation balloons with archer crews, rag paper maps reproduced from printed originals, decimal-notation quartermaster accounts, soap and boiling protocols at fortified camps (Heras-derived standing orders), stirrups universal in the cavalry arm from approximately 108 AD. The Roman army in 113 AD is visibly different from the Roman army in 98 AD. A Parthian or Dacian scout who had seen both would know it.
 
-### 110–125 AD — Hadrian's Border Strategy
+### 110–135 AD — Hadrian, the Wall, and Bar Kokhba
 
-[DIV] Hadrian abandons Trajan's eastern conquests in 117–118 AD as in real history. His reasons are strategic: the provinces are too far to hold against revolts. But in V2, Hadrian is making this calculation in a context where he knows Rome has technological advantages that are growing. His abandonment is more calculated — he is not simply conceding he cannot hold Mesopotamia; he is choosing to consolidate and develop while keeping the option open. This is a subtler change but it affects his personal posture: Hadrian in V2 is more confident of long-term Roman superiority than his historical counterpart.
+**Hadrian's Wall (begun 122 AD):**
 
-[DIV] Hadrian's Wall (begun 122 AD) is built with better surveying tools — vernier-caliber equivalents mean the wall's geometry is more precisely aligned. There is no dramatic engineering difference, but the construction time is approximately 15% shorter. The wall's drainage system incorporates one improvement from a written report Daniel submitted to Hadrian's architect: angled drainage channels. Modern archaeologists in the novel's implied future will note the anomaly.
+[DIV] Built with vernier-caliber surveying tools. The wall's geometry is more precisely aligned than historical; construction time is approximately 12% shorter. More significantly: Daniel submits a written report to Hadrian's architect on drainage design, and the result is a drainage system that does not require periodic rebuilding due to frost-heave. Modern archaeologists will note the anomaly.
 
-[DIV] The patent and licensing concept: Daniel proposes this to Hadrian around 123–124 AD. Hadrian is genuinely interested — he is a legal reformer, and the concept fits his aesthetic. What is actually enacted is not a patent system as a modern lawyer would recognize it; it is an imperial grant of a ten-year manufacturing monopoly, awarded by petition to the emperor, for demonstrated novel devices. The grant comes with an obligation to teach the method to any citizen who requests instruction after the monopoly expires. Three grants are issued by Hadrian's death in 138. The idea does not survive Antoninus Pius's reign in its formal form, but the precedent exists.
-
-### 125–155 AD — The Middle Empire
+[DIV] Hadrian himself: in V2, Hadrian is making his border-consolidation decisions in a context where he knows Rome's technological advantages are real and growing. His abandonment of Trajan's eastern conquests in 117–118 is still strategic retreat — the provinces are genuinely too far to hold — but it is more consciously calculated. He is not conceding permanent failure; he is choosing to develop Rome's position while keeping options open. This makes him a more interesting character: a man who has seen what Daniel's program produces and is betting on it, at empire scale.
 
 **Bar Kokhba Revolt (132–135 AD):**
 
-[REAL/DIV] The revolt is triggered by Hadrian's decision to refound Jerusalem as Aelia Capitolina and build a temple to Jupiter on the Temple Mount. Nothing Daniel has done changes this decision. The revolt erupts.
+[REAL/DIV] The revolt erupts for reasons nothing Daniel has done can change: Hadrian's decision to refound Jerusalem as Aelia Capitolina, his prohibition of circumcision, his plan to build a temple to Jupiter on the Temple Mount. The political stupidity that started this is unchanged.
 
-[DIV] Roman military response is faster and better-supplied. Balloon observation limits Bar Kokhba's ability to concentrate forces for ambush in the Judean hill country — the core environment where guerrilla advantage is strongest. This is meaningful but not decisive, because the revolt's primary challenges for Rome are urban fighting, cave clearance, and the psychological costs of mass civilian killing. Balloons do not help with any of those.
-
-[DIV] The revolt ends approximately one year sooner than historical 135 AD — probably in 134. Roman legionary losses are roughly 20% lower. The Jewish diaspora still occurs; Judaea is still renamed Syria Palaestina; the tragedy is not averted. What differs is that the legions come home with fewer gaps in their ranks.
-
-**Germanic frontier, 140s–150s:**
-
-[DIV] The Germanic tribes are aware, through captured Roman soldiers and cross-border trade, that Rome has strange new devices — flying objects, documents produced in numbers that defy hand-copying, fire-machines that pump water from mines. This awareness functions as a deterrent in some areas and as a provocation in others. The Marcomannic Wars (which historically begin in the 160s) are not obviously prevented — the pressures driving the Germanic migrations are demographic and climatic, not reducible to Roman technology. But the frontier is quieter in the 140s than it was historically, because Roman response capability is demonstrably superior and Germanic scouts have seen what the balloons can do.
-
-**Roman military doctrine by Daniel's death (~155 AD):**
-
-A major Roman campaign in 155 AD would carry:
-- Tethered observation balloon (two per legion on campaign, one for each wing)
-- Rag paper maps reproduced from printed originals (not hand-drawn for each campaign)
-- Decimal supply accounting standard for the quartermasters
-- Soap and boiling protocols mandatory at fortified camps under Heras-derived medical standing orders
-- Stirrups: in use by Roman cavalry from approximately 108 AD; by 155 they are universal in the cavalry arm, 50 years ahead of their historical appearance
-- One steam pump available at any siege that lasts more than 30 days (to drain circumvallation ditches or supply water)
-- A printing press at the Praetorian camp for duplicating orders and manuals
-
-What a legion does NOT yet carry: anything resembling firearms, chemical weapons, reliable mechanical clocks, or precision artillery beyond what Apollodorus achieved.
+[DIV] Rome's military response is, however, substantially more capable. Balloon observation is devastating against guerrilla warfare in mountainous terrain. Bar Kokhba's forces depend on the Judean hills the way Decebalus depended on Transylvania's passes — terrain gives them ambush advantage, concealment, and the ability to concentrate suddenly. Aerial observation strips all of that. Known cave hideout complexes can be located from above. [DIV] The revolt is suppressed approximately 14–18 months sooner than the historical 135 AD, with Roman legionary casualties perhaps 30–35% lower. The Jewish diaspora still occurs. Judaea is still renamed Syria Palaestina. The tragedy is not averted; it is merely more efficient from Rome's perspective. Daniel knows this and hates it. He made this possible.
 
 ---
 
-## PART 2: ECONOMIC DIVERGENCE
+## PART 2: DANIEL'S ANTI-FALL PROGRAM
+
+Daniel is not passively building technology. He is running a deliberate program against the specific failure modes he knows will destroy the empire. He cannot say this openly — "I know from future knowledge that Rome will fall in 476 AD" is not a sentence he can speak. But the encyclopedia he is writing, the institutions he is building, and the arguments he is making to Hadrian and Antoninus Pius are all aimed at specific pathologies he can see coming.
+
+### Problem 1: The Antonine Plague (arriving 165–180 AD)
+
+[DIV] This is, in Daniel's private calculation, his most important race. The Antonine Plague — probable smallpox — will kill between 5 and 10 million people if it arrives in a Rome with no quarantine doctrine. Daniel will be dead when it arrives (~155 AD death, plague arrives ~165 AD). He cannot stop the plague. He can change what Rome does when the plague arrives.
+
+His program: germ theory framing for disease transmission has been taught through the Heras physician line since ~103 AD. By 130 AD, approximately 50–70 physicians working across the empire use boiling, handwashing, and isolation-of-sick-patients protocols as standard practice. His printed medical manuals — the *Liber de Morbis Castrorum* (On Camp Diseases) and the two-volume *Medicina Rationalis* produced through his press — are distributed to every legion on the Rhine, Danube, and Syrian frontiers. When the plague arrives, the empire already has: a doctrine for quarantine, a literate medical class that knows to isolate cases, and printed protocols that spread the quarantine procedure without requiring Daniel's personal presence.
+
+[DIV] Estimated effect: 30–40% reduction in Antonine Plague mortality. The plague is still catastrophic — perhaps 3–6 million dead instead of 5–10 million — but the legions survive more intact, the provincial administration survives more intact, and the empire's recovery trajectory is faster. This is the most consequential thing Daniel will ever do. He will not live to see it. He knows this when he writes the manuals.
+
+[DIV] His variolation groundwork (late 140s–150s) extends this: a crude, ethically fraught program of deliberate low-dose smallpox exposure, run through the physician line (Heras → Zoticus), building institutional knowledge that arrives just in time. He is setting up a system that will be used by people he has not yet met, to fight a disease he will never see.
+
+### Problem 2: Communication Lag / Empire Management
+
+[DIV] The empire is 4,000 miles across. A message from Rome to Hadrian's Wall takes three weeks. From Rome to Antioch, two weeks. From Rome to the Parthian frontier: a month or more. This lag makes coordinated response to simultaneous crises nearly impossible — and Daniel knows from history that Rome's worst political crises are almost all simultaneous-crisis problems: plague plus frontier pressure plus succession dispute, all at once, all requiring decisions faster than the mail can carry them.
+
+His optical semaphore proposal — relay stations with standardized visual signals, like the Chappe system — is achievable with no technology beyond his printing press and his map-making. He needs: trained operators at relay stations one day's visibility apart, and a printed codebook that standardizes signals. With his press, he can produce the codebooks. The relay stations are a construction project, not a technology problem.
+
+[DIV] By 130 AD, an experimental optical semaphore line runs from Rome to the Rhine crossing at Mogontiacum (Mainz) — approximately 1,200 miles. In good weather, a signal travels this route in approximately 6–8 hours. In bad weather, in a day. This does not solve the communication problem, but it transforms it: Rome can now communicate with its northern frontier in hours instead of weeks, for pre-coded message types (invasion warning, reinforcement request, emperor's death). The system is military, not commercial, and it is under army control.
+
+[DIV] Daniel makes the railroad argument to Hadrian around 128 AD and to Antoninus Pius around 145 AD. He frames it explicitly as the solution to imperial communication lag: "The empire is too large for horse-speed governance. If you want what I built to last, you need roads your messages can travel faster on — mechanical roads." High-pressure steam is correctly blocked — he knows this. But he argues for the principle, plants the vocabulary, and writes a detailed encyclopedia entry on atmospheric-to-high-pressure steam development that is meant to be found and acted on by someone with better metallurgy than he has. Whether Antoninus Pius acts is unclear; he is a cautious, conservative emperor. But he hears the argument. He takes the encyclopedia entry seriously.
+
+### Problem 3: Political Instability / Succession
+
+[DIV] Daniel cannot solve the succession problem directly. He does not have the political standing to rewrite Roman constitutional law. What he can do with a printing press is publish.
+
+Through intermediaries — a freedman printer, a contest-community pamphleteer — he circulates texts on political philosophy: the concept of clearly codified succession, the dangers of no written constitution, historical examples of republics that outlasted empires. The Stoic philosophical community in Rome is sympathetic. Several of Marcus Aurelius's later writings will show traces of ideas first circulated in Daniel's pamphlet culture.
+
+Whether this prevents the Crisis of the Third Century is genuinely uncertain. Daniel knows it is uncertain. He writes in his encyclopedia: "I cannot guarantee any of this. I can only make the argument available, and trust that someone, sometime, will read it and act on it when the moment is right. That is all the encyclopedia is — an argument on paper, waiting for its moment."
+
+### Problem 4: Currency Debasement
+
+[DIV] Daniel understands inflation. He understands why debasement starts (fiscal pressure), why it accelerates (once debased, debasing further is the path of least resistance), and where it leads (the hyperinflation of the third century, when the denarius loses 95% of its silver content in 50 years). He advocates for double-entry accounting at the imperial treasury — not just as an efficiency measure but as an anti-fraud, anti-debasement tool. A treasury that can accurately audit its own accounts is a treasury where the emperor's finance minister cannot quietly shave the silver content and hide the shortfall in creative accounting.
+
+Whether Hadrian or Antoninus Pius acts on this is a story question. Daniel tries. He makes the case. He writes it in the encyclopedia with more detail than he told them in person.
+
+---
+
+## PART 3: ECONOMIC DIVERGENCE
 
 ### 98–110 AD
 
-**Numerals and accounting:**
-Within five years of Daniel's introduction of positional notation, it has spread among Roman merchants and equestrian-class accountants in Rome. The driver is not the beauty of the system — it is multiplication and division. A Roman using an abacus can multiply two large numbers; recording the intermediate steps in Roman numerals is impossible. The new figures allow written long multiplication, which means written contracts can specify compound interest, freight charges on multi-leg journeys, and pro-rated rents in ways that were previously done by approximation or with an abacus in hand.
+[DIV] Within five years of Daniel's introduction of positional notation, it has spread among Roman merchants and equestrian-class accountants. The driver is not the elegance of the system — it is what the system makes possible: written long multiplication. A Roman using an abacus can multiply; recording the intermediate steps in Roman numerals is impossible. With decimal notation, written compound interest calculations, multi-leg freight accounting, and pro-rated rents become self-service. By 108 AD, the Roman treasury is using decimal notation internally, after Trajan's financial secretary adopted it.
 
-[DIV] By 108 AD, the Roman treasury (the *aerarium* and the *fiscus* imperialis) is using decimal notation for internal accounts, after Trajan's financial secretary adopted it on Daniel's recommendation. The consequence is not dramatic overnight — the empire is not suddenly more solvent — but audit capacity improves. Tax fraud by provincial governors is somewhat harder to hide when the accounts are in a form that anyone competent can check.
+[DIV] The printing press by 110 AD: output is approximately 2,000–2,500 sheets per day (Daniel has moved to movable type faster than the previous version assumed, driven by his contest prizes and the economic pressure of demand outstripping production). The cost of a printed pamphlet is approximately 30% of a hand-copied equivalent. Trajan's logistics orders are duplicated in dozens of copies and couriered simultaneously to multiple legates. This is not a small thing — the Roman army ran on written orders and it ran slowly on hand-copied ones.
 
-**The printing press and paper:**
-[DIV] Rag paper production begins around 104–105 AD at Daniel's workshop near Rome. By 108 AD, output is approximately 2,000 sheets per month — not enough to change the world, but enough for a functioning press run. The press itself is a screw-type adapted from the olive press, using carved wooden type blocks rather than movable type (movable type is not introduced until the mid-120s AD in V2, as Daniel refines the concept).
+[DIV] By 110 AD, a trade route runs from Hispania to Britain across the open Atlantic approach that previously required coastal hugging. The magnetic compass (prototype by ~108 AD) enables winter navigation where star sights are unreliable. One merchant makes the run in roughly two-thirds the historical time. The printed compass-and-latitude manual makes the route knowledge transferable without requiring years of apprenticeship at sea.
 
-[DIV] By 110 AD, a printed pamphlet costs about 40% of a hand-copied single-page document in equivalent format. This does not immediately democratize information — most Romans are still illiterate — but it does change the economics of official documentation. Trajan's logistics orders are duplicated in dozens of copies and couriered simultaneously to multiple legates, rather than hand-copied sequentially. The practical effect on campaign coordination is measurable.
-
-**Agriculture:**
-Small and real improvements. Better plow designs (moldboard adaptations) work in the heavier soils of northern Gaul and Britain, not in Italy's Mediterranean terrain. Three-field rotation, promoted through the encyclopedia, spreads slowly among literate estate managers. By 110 AD, there is no GDP-level measurable effect, but several large estates in Gaul and Africa Proconsularis are running better yields. The horse collar is under development; it will not achieve wide adoption until the 130s.
-
-**Daniel's workshop and local economy:**
-[DIV] By 110 AD, Daniel employs or has freed and retrained approximately 40 people. These are not merely craftsmen — they are people who can read and write in the new numerals, who understand decimal accounting, who have been taught boiling and sanitation protocols, and who have worked with mechanical devices that no other Roman workshop employs. When they leave Daniel's employ (through manumission and natural workshop expansion), they carry this knowledge with them. The spread is not fast by modern standards. It is fast by Roman standards.
-
-### 110–125 AD
+### 110–130 AD
 
 **Steam mine drainage:**
-[DIV] The first Newcomen-type atmospheric steam pump operates at a silver mine in Hispania (Carthago Nova region) in approximately 118 AD. It is crude — a bronze cylinder with a leather piston, condensing steam by water injection, achieving perhaps 6–8 strokes per minute, pumping about 200 gallons per hour. This is not impressive by modern standards. In the context of a mine that has been forced to slow extraction because groundwater is accumulating at 180 feet depth, it is transformative.
 
-[DIV] By 125 AD, four such pumps are in operation: two in Hispania, one in the Dacia gold mines, one at a tin mine in Britain. Each one is tended by a trained operator (freed slave, trained in Daniel's workshop or by his graduates). The operators are worth more than most legionaries, and they know it.
+[DIV] The first Newcomen-type atmospheric steam pump operates at a silver mine in the Carthago Nova region of Hispania in approximately 118 AD. Bronze cylinder, leather piston, steam condensed by water injection. Perhaps 200 gallons per hour. Crude, dangerous, barely efficient. Transformative for a mine that has been slowing for two years because groundwater is accumulating at 180 feet depth.
 
-Mining output effect: [DIV] Silver production from Hispania increases by an estimated 18–24% by 125 AD, gold from Dacia by approximately 15%. These are real numbers with real consequences. The Roman treasury has more metal. Trajan's successors have more flexibility. The relationship between mine productivity and imperial military spending is direct — more silver coinage means more pay for more legions.
+[DIV] By 128 AD, eight such pumps are operating: four in Hispania, two in the Dacian gold mines, one at a British tin mine, one in an Italian copper mine. Each is tended by a trained operator worth more than most legionaries. The pump operators know this. They are beginning to organize.
 
-This increase also accelerates the debasement problem that haunted the 3rd-century crisis — more metal means the temptation to debase is slightly lower in the short run, but the structural fiscal problems of the empire are not solved by mine drainage alone.
+[DIV] Mining output effect by 128 AD: silver production from Hispania up approximately 25–30% over real historical levels; Dacian gold up approximately 20%. The Roman treasury has more metal. This has two effects Daniel explicitly anticipates and worries about: (1) More silver gives the empire more fiscal flexibility, reducing short-term pressure to debase. (2) More metal is not a solution to structural fiscal problems — it is a delay. He writes about this in the encyclopedia. He knows the delay might be the only tool available.
 
 **Printing and information economics:**
-[DIV] By 125 AD, movable type is in use. Output at Daniel's press (now employing twelve workers) is approximately 800–1,000 pages per day. This is still tiny compared to the literacy needs of the empire, but it is enough to produce:
-- Printed census forms for provincial governors (standardized, requiring only the entry of local data)
-- A two-volume version of Daniel's encyclopedia, of which 180 copies exist
-- Printed military standing orders for hygienic camp practice, distributed to all legions on the Rhine and Danube
-- Printed trade contracts in standard form, sold at Rome's Forum Boarium for commercial use
 
-[DIV] The cost of a basic written contract drops by 60% between 110 and 125 AD. Multi-party trade deals that previously required a trusted intermediary scribe become self-service. The volume of documented commerce in Rome increases — not because more commerce is happening, but because more of existing commerce is being committed to writing.
+[DIV] By 128 AD, movable type is standard. Daniel's press — now employing 25 workers, several of them freed slaves trained in his workshop — produces approximately 1,500 pages per day. This is enough for:
+- Printed census forms for all provincial governors (standardized; local officials fill in the blanks)
+- Three hundred copies of the first volume of Daniel's encyclopedia, distributed to every major city library
+- Printed military standing orders for hygienic camp practice, distributed to all legions on every frontier
+- Printed standard-form trade contracts, sold commercially at Rome's Forum Boarium
+- The printed medical manuals that are Daniel's plague-preparation program
 
-### 125–155 AD
+[DIV] The cost of a basic written contract drops 70% between 110 and 130 AD. This is not a small number. It means that commercial agreements which previously required a trusted scribe, an expensive papyrus sheet, and a physical meeting become routine self-service transactions. The volume of documented commerce in Rome increases sharply — not because more commerce is happening, but because more of it is being written down, which means it can be enforced, audited, and scaled.
 
-**Water-powered industry:**
-[DIV] Trip hammers and forge bellows, already described in Vitruvius and experimentally operated by Daniel from ~102 AD, spread to approximately 30 locations across the empire by 140 AD. These are primarily at military smithies, which have both the capital and the incentive to adopt labor-saving devices. By 155 AD, an estimated 80–100 water-powered industrial installations are in operation, mostly in forge work and grain milling.
+[DIV] An organized scribes' guild petitions a praetor around 122–124 AD, asking that "the barbarian's machine" be taxed per copy, the revenue to compensate displaced scribes. This is the correct response to labor displacement and Daniel has anticipated it. The petition fails — the commercial class that benefits from cheap contracts is larger and wealthier than the scribal class — but it happens, and Daniel witnesses it. He does not feel good about winning that argument.
 
-[DIV] The displacement of slave labor in forge work is beginning. Not elimination — slavery is not being abolished, and water-powered forges still need slave operators — but the ratio of skilled-slave-hours to output shifts. A water-powered trip hammer does the work of eight slaves working heavy hammers. The owner of such a forge needs fewer heavy-labor slaves and more maintenance-skilled operators. Over decades, this changes the economics of which slaves a wealthy Roman wants to own: not the muscles, but the minds.
+### 130–155 AD
 
-**Slave economics by 155 AD:**
-[DIV] The slave market price for a literate, technically trained freedman-candidate has risen approximately 40% over real historical levels, because demand for technical skill is growing. Meanwhile, prices for unskilled heavy-labor slaves are slightly depressed by the creeping adoption of water-powered substitutes. This is a small shift in 155 AD, but its trajectory is meaningful. A Roman writing in 155 AD who paid attention to the slave markets could notice it.
+**Water-powered industry expanding:**
 
-**The patent system's economic effect:**
-[DIV] Three imperial monopoly grants issued under Hadrian create small but real incentives for disclosure. One is for an improved water-lifting screw (a modification of the Archimedean screw with better sealing), one is for a specific type of rag-paper sizing that improves print quality, one is for the vernier caliper design. The system's main economic effect is not the monopolies themselves but the obligation to teach upon expiry: by 145 AD, vernier calipers are in use at 20 military armories and 40 commercial workshops. Precision measurement is spreading.
+[DIV] By 140 AD, approximately 80–100 water-powered industrial installations are operating across the empire: forge bellows, trip-hammers, stamp mills for ore crushing, grain milling with improved millstone geometry. By 155 AD this number is approaching 200. The majority are at military smithies and major mines, where capital is available and the economic case is undeniable.
 
----
+[DIV] The economic displacement of slave labor in heavy forge work is beginning. Not elimination — slavery is not being abolished — but the ratio of muscle-slave-hours to output is shifting. A water-powered trip-hammer does the work of ten men swinging heavy hammers. The forge owner needs fewer heavy-labor slaves and more maintenance-capable operators. By 150 AD, slave market prices for unskilled heavy laborers are measurably depressed compared to historical levels, while prices for literate, technically trained freedman-candidates are approximately 50% higher than historical equivalents. A Roman who pays attention to the slave markets in 150 AD and also paid attention to them in 120 AD can see this trend.
 
-## PART 3: SOCIAL AND CULTURAL DIVERGENCE
+**The emerging middle class:**
 
-### 98–110 AD
+[DIV] By 150 AD, something exists in major Roman cities that has no precise precedent: a literate professional class of medium wealth, neither slaves nor senatorial aristoracy, who exist because of the press and the decimal economy. Book merchants — real ones, with printed catalogs of their inventory — operate in Rome, Carthage, Antioch, and Lugdunum. Traveling merchants carry printed price lists and printed standard contracts. The *taberna* owner in the Subura who learned arithmetic from a printed primer twenty years ago now teaches his children using printed textbooks. This cohort is small by modern standards. By Roman standards it is genuinely new.
 
-**The annual technology contest:**
-[DIV] Daniel proposes and Trajan endorses (as a novelty, not a priority) an annual display of new devices and techniques, held at the Saepta Julia in Rome each October, coinciding with the end of the campaign season. The first three contests attract mostly clever mechanical toys and improvements to existing crafts. By the fourth contest (106 AD), entries include a plausible windmill design, a clock mechanism, and a new kiln design for better ceramic production. The winner in 106 AD is a freedman millwright from Ostia.
+**Double-entry ledgers, printed blank-form:**
 
-What the contest creates over decades is a culture in which ambitious Romans of the equestrian and freedman class think about technical problems as a route to patronage and recognition. Senators do not enter contests. But their sons, and their freedmen, do. By 125 AD, the contest draws entries from as far as Carthage and Antioch. This is the cultural shift that matters more than any single technology: Rome begins to have a word for what we would call an inventor, and it is not a word of contempt.
-
-**Literacy and the reading public:**
-[DIV] Cheaper documents do not immediately raise literacy. The limiting factor through 110 AD is not cost — it is time, culture, and the availability of teachers. What cheaper documents change is the value of existing literacy: a literate merchant can now draft his own contracts, check his own accounts, and read technical manuals without hiring a scribe for each task. Being literate becomes more economically useful, and parents begin to notice.
-
-The reading public grows most visibly among freed slaves and their freeborn children. A freedman whose master taught him to read because it was commercially useful now finds that reading is even more valuable — he can access Daniel's encyclopedia, copy printed manuals, and read the contest notices. By 110 AD, roughly three or four scroll-sellers in the Forum have begun stocking printed pamphlets alongside hand-copied texts. This is new.
-
-### 110–125 AD
-
-**Heras's medical practice:**
-[DIV] Heras, Daniel's physician ally, does not found a formal medical school — the Roman legal and guild structures make that complicated. What he does is mentor an expanding circle of students who use the germ framing ("invisible creatures too small to see") as a working hypothesis for wound infection and dysentery. He is careful never to make this a metaphysical claim; he frames it empirically: "We don't know why boiling water reduces flux deaths in camp, only that it does."
-
-[DIV] By 120 AD, approximately 15–20 physicians working in Rome and major provincial cities practice the boiling and handwashing protocols. The mortality effect in surgical cases is real: wound infections in patients who receive this care are lower. At the population level this is invisible — Rome has a million people, and 20 physicians cannot shift aggregate mortality curves. At the legionary level it matters more: the standing orders for hygienic camp practice, printed and distributed, reach several thousand soldiers. A careful comparison of campaign mortality records (which Rome did keep) would show a divergence. No Roman is doing that comparison yet.
-
-**Daniel's freed craftsmen:**
-[DIV] By 120 AD, approximately 60–70 people trained in Daniel's workshop have established their own workshops, moved to new cities, or entered imperial service. They are distributed primarily in Rome, Ostia, Carthage, Antioch, and Lugdunum (Lyons). Each one carries: decimal numerals, basic hygienic practice, some mechanical knowledge, and the cultural expectation that technical problems have solutions that can be written down and shared.
-
-The cascade effect of this cohort is impossible to track precisely, but it is the most significant long-term social change Daniel has created by the midpoint of his life. Not the steam pump, not the balloon — sixty literate, technically minded, economically active freedmen spreading across the Mediterranean.
-
-### 125–155 AD
-
-**A generation raised with the contest:**
-[DIV] By 145 AD, a Roman male who was ten years old when the contest began (i.e., born around 96 AD) is now 49 — in his prime, wealthy if successful, and has watched the contest for 39 years. His children have grown up knowing that a freedman from Ostia can win imperial recognition for building a better mill. This is a cultural fact with no exact historical parallel in real Rome.
-
-[DIV] What Roman education does NOT yet teach: mathematics beyond basic arithmetic, natural philosophy as a practical discipline, or engineering as an honorable career for the wellborn. The cursus honorum still points toward law, rhetoric, and military command. But in the interstices — among the equestrian class, among wealthy freedmen, among army engineers — something is changing. There are Romans in 145 AD who think of themselves as problem-solvers in a way that has no real precedent before Daniel. They have a word, *machinarius*, that has shifted in register from "mechanic" (low-status) toward "inventor" (admirable if successful).
-
-**The ocean program:**
-[DIV] Hadrian launches his ocean program around 124–125 AD based partly on conversations with Daniel about the Atlantic. The first three voyages (125, 130, 136 AD) probe southward and westward from the Pillars of Hercules, turning back for supply reasons after approximately 800 miles. Each voyage returns with magnetic compass data, latitude measurements, and logged sea conditions. By 136 AD, Roman sailors know the Atlantic is not bottomless, that the winds pattern is manageable, and that the current has a structure.
-
-[DIV] The longitude problem is real and Daniel knows it — he cannot solve it without spring-steel chronometers, which are beyond his reach. The solution he proposes by 140 AD is dead-reckoning triangulation using magnetic variation charts, which are less accurate but workable. The voyage that departs in approximately 148–150 AD uses this method.
-
-[DIV] A ship departs approximately 149 AD. Whether it returns before Daniel's death in ~155 AD is a question the writer should keep deliberately ambiguous until the epilogue. What is not ambiguous: the departure happens in Daniel's lifetime. He watches it leave.
-
-**Geographic imagination:**
-[DIV] Romans in 155 AD know, through the encyclopedia and the printed contest pamphlets, that the earth is a sphere (Eratosthenes' demonstration is in the encyclopedia with the calculation), that the Atlantic has been navigated to over 1,000 miles from the Pillars, and that land to the west is a reasonable hypothesis. This does not mean Roman imperialism becomes exploratory — the army still wants frontiers to defend and tribute to collect. But the geographic imagination of educated Romans is larger than in real 155 AD. They live on a bigger world than their grandparents thought.
+[DIV] By 135 AD, printed blank double-entry ledger forms are commercially available in Rome and Ostia. A merchant who buys one gets: columns for date, description, debit, credit, and running balance; printed instructions on the first page in both Latin and Greek; a worked example for a fictional spice merchant showing how to record a three-leg trading voyage with losses at sea. The form is cheap — two asses. A merchant who uses it consistently is operating with a financial clarity no Roman accountant using single-entry methods can match. By 150 AD, an estimated 800–1,000 Roman commercial enterprises are using double-entry methods. The number is growing.
 
 ---
 
-## PART 4: ROME IN 155 AD — A WRITER'S SNAPSHOT
+## PART 4: SOCIAL AND CULTURAL DIVERGENCE
 
-What an observant Roman notices in 155 AD that differs from 98 AD when Daniel arrived:
+### The Contest and Its Generations
 
-**The city looks almost the same.** This is important to say. The skyline is not different. The insulae still cram the Subura. The Forum is still the Forum. The aqueducts still flow. The slaves are still everywhere. A traveler who had not been to Rome in fifty years would recognize every major building and street.
+[DIV] The annual technology contest at the Saepta Julia, running since ~106 AD, has by 145 AD been operating for nearly forty years. A Roman born in 96 AD — ten years old when the contest began — is now 49, in his prime, and has watched the contest for his entire adult life. His children have grown up knowing that a freedman from Ostia can win imperial recognition for building a better mill. This is a cultural fact with no historical parallel in real Rome.
 
-What the traveler would notice:
+[DIV] By 140 AD, the contest draws entries from as far as Carthage, Antioch, and Alexandria. The winning entrants include: the freedman son of a Syrian glass-maker who found a new pulp sizing for rag paper; a Gallic smith who produced a consistent small run of high-carbon steel using a method Daniel had not suggested (watching it happen, Daniel is in tears, which the crowd misreads as pride); a British miner who designed a cam-driven ore-crushing machine without any knowledge of Daniel's workshop, simply by watching the contest entries for fifteen years and iterating on what he saw. This last one is the most important. The contest has begun producing inventors who learned from other inventors, not from Daniel. The chain is breaking free of its source.
 
-**Numbers.** Carved into milestones, on shop signs, on the printed contracts at the money-changers' stalls: a different kind of numeral. Curved shapes, with a zero that looks like a stretched mouth. Older Romans write DCXLVII; younger merchants write 647. Stone carvers still use the old form. Accountants use both depending on who is watching.
+[DIV] The word *machinarius* — mechanic, originally low-status — has shifted register. By 145 AD, it is beginning to mean something closer to "clever maker," not quite honorable for a senator's son but respectable for an equestrian's. The cultural shift this represents will not complete in Daniel's lifetime. He plants it, he watches it begin, he will not see it arrive.
 
-**Paper.** Not papyrus. Paper — lighter, slightly rougher, cheaper. Notices posted on the Rostra in multiple copies simultaneously. A printed copy of the Praetor's edict at the entrance to the Forum Boarium, nailed up fresh each month. A small printed almanac sold for two asses near the Circus Maximus, listing festivals, market days, and a calendar with blank spaces for personal notes.
+### The Physician Line and Germ Theory Going Public
 
-**The physician's instructions.** In the army camps on the Rhine and Danube, a printed sheet is posted at the entrance to the camp hospital: boil water before drinking, wash hands before treating wounds, burn rather than bury dysentery cases. Most legionaries ignore it. The medics don't.
+[DIV] By 130 AD, a localized typhoid outbreak in the Subura puts Daniel's germ theory to a public, high-stakes test. The district's south quarter — where Daniel's trained physician is practicing — applies the full protocol: boiling water from the cistern, isolating the sick in a specific insula, burning contaminated waste. The adjacent north quarter does not. The death toll in the south quarter is roughly 40% of the north quarter's toll over a six-week outbreak. A city magistrate notices. He asks why. He gets an answer he finds theologically alarming and economically obvious in the same conversation. He enforces the southern protocol empire-wide in the city's public hospitals.
 
-**The contest.** Each October at the Saepta Julia, a crowd forms around demonstrations of devices that have no precedent in the Rome of fifty years ago: a water-pumping machine that coughs and hisses, driven by steam; a measuring instrument with two sliding scales that can tell a smith the diameter of a shaft to within a finger's width at thirty paces; a clock that ticks instead of dripping, five minutes wrong per day but self-correcting by noon. The crowd laughs at some of them. Some of the laughter is uneasy.
+The impiety charge Daniel always feared gets raised — if the invisible creatures cause disease and handwashing stops them, then preventing the sickness is also preventing the gods' will. A philosopher argues this in a pamphlet. Daniel, through Heras, responds with a pamphlet of his own. The exchange becomes famous in the contest community. Neither side convinces the other, but the debate normalizes the empirical framing in educated circles. By 140 AD, "the invisible-creature hypothesis" is a respectable natural-philosophy position, not heresy.
 
-**The cavalry.** Every Roman cavalryman in 155 AD rides with stirrups. This has been true for forty-five years. No Roman soldier under 60 has ever not ridden with stirrups. They do not know this is new.
+### The Ocean Program
 
-**What a Roman school teaches** that it didn't in 98 AD: the new figures (arithmetic in positional notation is now taught in most schools serving the equestrian class and above), a brief section in rhetoric exercises on "how to demonstrate a claim about the natural world" that owes its structure to Daniel's encyclopedia introduction. The traditional curriculum — grammar, rhetoric, philosophy — is unchanged. But there is a supplementary track for boys whose fathers run workshops or trading houses: basic accounting in the new figures, basic surveying geometry, basic record-keeping.
+[DIV] By 136 AD, three Atlantic probe voyages have completed: 125, 130, and 136 AD. The voyages extend 800–1,000 miles west-southwest from the Pillars of Hercules, turning back for supply reasons. Each returns with magnetic compass readings, latitude measurements, and logged sea conditions. By 136 AD, Roman navigators know: the Atlantic is not bottomless, the wind pattern westward is manageable (they have found the northeast trade winds), and the current has a structure that suggests large-scale circulation.
 
-**What a merchant does differently:** He uses a printed standard contract form, fills it in with ink, keeps a carbon copy on rag paper. He can calculate compound interest in his head using algorithms he learned as a boy. When he ships goods on the Atlantic coastal routes from Hispania to Britain, his captain uses a magnetic compass and a latitude gnomon, not dead reckoning by stars alone. The journey is not shorter, but the winter voyages are more reliable.
-
-**What a Roman legion carries that it didn't:** Stirrups. Soap and boiling orders. Printed maps from duplicated originals. One tethered observation balloon per campaign (two if the commander is senior enough to request a second). A decimal-notation-trained quartermaster. A medicus who uses the germ framing. What it does NOT carry: guns, accurate clocks, precision artillery, wire, lenses.
-
-**What has NOT changed:**
-
-Slavery. Gladiatorial games. The patronage system. The class structure. The Senate's contempt for trade. The army's contempt for anything that cannot be carried in a pack. The gods. The language (Latin is the same; Greek is the same; the new figures are a writing system, not a language). The basic daily life of the 90% of Romans who are poor, illiterate, and have never seen a steam pump or a printed pamphlet.
-
-The changes Daniel made are real and compounding, but they have touched maybe 5% of the empire's population directly. The other 95% live in 155 AD essentially as they would have in real 98 AD — working land with scratch plows, worshipping at the same temples, dying of the same infections, carrying the same coins. This is not failure. It is the reality of how slowly change spreads in a pre-industrial society, even with a push.
-
-What Daniel has done is bend the curve. Rome in 155 AD is perhaps 30–40 years ahead on the industrial development track of where real Rome would have been. Not 300 years ahead — that is a different story. But 30–40 years is enough, given what was coming.
+[DIV] A funded voyage departs approximately 149 AD using the full navigation suite: magnetic compass, latitude gnomon, magnetic-variation dead-reckoning charts, citrus provisions against scurvy (Daniel insists on this, naming the symptoms — teeth loosening, bleeding gums, weakness — even though he cannot name the vitamin), and the hull design refined through four decades of Atlantic-approach testing. Whether this ship returns before Daniel's death in ~155 AD is deliberately left ambiguous by the writer. What is not ambiguous: Daniel watches it leave. He is the last one standing on the dock. He knows the ship will find land. He knows the land is inhabited. He knows the lie he told on his first day in Rome — "uninhabited western continents" — will be corrected by the ship's return, after he is gone to correct it himself.
 
 ---
 
-## PART 5: WAR OUTCOME VERDICTS
+## PART 5: ROME IN 155 AD — A WRITER'S SNAPSHOT
+
+*Daniel is old. He walks through Rome, knowing he is dying. He has been here for 57 years. He sees what he changed and what he didn't.*
+
+The city looks almost the same, and this is the first thing to understand. The Capitoline Hill is unchanged. The Forum is still the Forum. The insulae still cram the Subura twelve stories and more, still killing people when they collapse. The aqueducts still flow. The games still run. The slaves are still everywhere — three hundred thousand of them in this city alone, same as when he arrived. He did not end slavery. He never imagined he would. What he did was shift, slightly, what kinds of slaves are most valued.
+
+**What he sees that is different:**
+
+*Numbers.* On the millstones at the grain market, on the lead weights at the money-changer's stall, on the posted price lists at the spice merchants in the Emporium — a different kind of numeral. Curved shapes. A zero that looks like a small mouth. An older Roman counting out change still says *septuaginta quinque*; the younger merchant behind the counter writes 75 without thinking. The stone carvers still use Roman letters for monuments. The accountants use both, depending on who is watching.
+
+*Paper.* Not papyrus. Paper — lighter, slightly rougher at the edges, visibly cheaper, covering every posting board in the city. The Praetor's monthly edict, nailed up at the Forum Boarium in twenty copies simultaneously, each one identical to the others in a way that hand-copying never achieved — every copy the same, because they came from the same press. A small printed almanac sells for two asses near the Circus, listing festivals, market days, and astronomical dates. A printed catalog of one merchant house's goods, with prices, available for free to any customer who asks. Four book merchants near the Argiletum stock printed texts alongside hand-copied ones. The printed texts are cheaper. Most of the hand-copied ones are luxury goods now.
+
+*The sounds of commerce.* A buyer in the Forum Boarium working out a contract does not wait for a scribe. He unfolds a printed standard form from his belt-wallet — folded three times, rag paper, printed on both sides — fills in the blanks with his own hand, and both parties press their rings to it. It is done in the time it used to take to find the scribe.
+
+*The physician's sheet.* At the entrance to the camp hospital on the Caelian Hill, a printed sheet is nailed to the doorpost. Boil drinking water before consuming. Wash hands before touching a wound, using the soap compound available at the supply station. Isolate patients with flux from patients with wounds. It has been nailed there for thirty years. Most patients ignore it. The medics don't.
+
+*The sound of the pump.* At the Tiber docks, a steam pump drains a flooded basement storage area — a recent installation, the third one in Rome. It coughs and hisses and leaks steam from three joints and sounds like a sick animal. The dock workers have given it a name. It works. Twelve men used to do that drainage job with buckets; now two men operate the pump and one man maintains it. The nine displaced men were reassigned to loading. No one asked them how they felt about it.
+
+*The legionary's kit.* A soldier of the Praetorian Guard riding past on the Via Sacra has stirrups. He has had stirrups since his first year of cavalry training. His father had stirrups. He does not know this is not how it always was. His kit also includes a small printed manual — the *Institutio Sanitatis Castrensis*, Regulations for Camp Health — that he has never read but which his medicus quotes from memory. His belt carries a compass, standard issue since 120 AD, in a leather case that most legionaries use for navigation only when genuinely lost.
+
+*The school.* In a schoolroom near the Subura, a teacher is instructing the sons of merchants in arithmetic. He is using positional notation. Long division. The worked example on his painted board is a calculation of compound interest over three years. These boys are twelve. They will use this arithmetic for the rest of their lives without knowing they are using something that didn't exist in Rome sixty years ago. In the next room, rhetoric and grammar continue unchanged. The cursus honorum still points toward law and military command. But there is now a supplementary track for boys whose fathers run workshops: basic surveying geometry, basic mechanical drawing, basic record-keeping with double-entry methods.
+
+*The contest's legacy.* At the Saepta Julia, a permanent exhibition space occupies half the old voting hall. Displayed here are working models of contest winners going back forty years: the first successful pendulum clock (submitted in 133 AD by a freedman horologist who had no knowledge of Daniel's mechanical clock attempts, only of his printed essay on the problem); the mine drainage pump that proved the concept; the vernier caliper, now displayed behind glass as a historical artifact because everyone who needs one already has one. Children come here on market days. Some of them are pointing at the devices and arguing.
+
+*The geographic imagination.* A young man studying rhetoric in 155 AD knows the earth is a sphere. This was always known to the educated — Eratosthenes calculated it — but it was a philosopher's fact, not a practical one. The encyclopedia has made it practical: the size of the earth, the spherical-earth calculation of latitude, and a map that shows the Western Ocean as a finite body of water with a far shore that is probably land. He knows a Roman ship left four years ago to test this claim, and he is waiting to hear whether it returns. He lives, as his grandfather did not, in a world where the edge of the map is a question about timing, not a boundary.
+
+**What has not changed:**
+
+Slavery. The gladiatorial games, still running. The patronage system. The Senate's contempt for trade. The class structure — freedmen are still freedmen, slaves are still slaves, the senatorial order is still the senatorial order. The gods. The language. The basic daily life of the great majority of people in this empire who are poor, illiterate, and have never seen a steam pump or a printed pamphlet or a manned balloon. They work the same land with the same scratch plows, carry the same gods to the same temples, die of the same infections. Daniel changed things for perhaps 10–15% of the empire, directly. The other 85–90% live in 155 AD recognizably differently from 98 AD only in one respect: the legions that conscript their sons fight a little better, with slightly lower mortality. They don't know why. They don't need to.
+
+The changes are real and compounding. By 130 AD a perceptive urban Roman notices them. By 155 AD they are structurally embedded — the accounting systems, the medical protocols, the printed forms, the optical semaphore line, the steam pumps. They will outlast Daniel. Some of them will outlast Rome. Whether any of them will prevent Rome's fall is the question Daniel cannot answer and cannot stop asking.
+
+---
+
+## PART 6: THE "HE DOESN'T SEE IT" NOTE
+
+This is the most important thing to get right emotionally.
+
+The Antonine Plague arrives in 165 AD. Daniel dies ~155 AD. He will never know whether his quarantine protocols held. He wrote the manuals. He trained the physicians. He set up the variolation groundwork. He cannot see the outcome.
+
+The steam locomotive — the thing he argued for, the "all tracks lead to Rome" vision — requires steel he cannot make, boilers he cannot build, and a generation of metallurgy he can only describe in an encyclopedia he is burying in a lead case because he doesn't trust it to survive above ground. He will not see a train. He knows he will not see a train.
+
+The Atlantic ship that departed in 149 AD: he does not know if it returns. It may have sunk. It may have found the Caribbean and is at this moment trying to explain to the inhabitants why these pale men have arrived in a boat. He doesn't know.
+
+The railroad argument he made to Antoninus Pius: the emperor listened politely and did nothing. Maybe a successor will act on it. Maybe a successor's successor. Maybe the encyclopedia entry on atmospheric-to-high-pressure steam development will sit buried for a hundred years and be found by someone who has just enough metallurgy to act on it. Maybe not.
+
+He moved rungs on a ladder he will never see someone climb. This is the correct note to end on. Not triumphant. Not despairing. The specific melancholy of a man who built something meant to outlast him and cannot know whether it will.
+
+---
+
+## PART 7: WAR OUTCOME VERDICTS (Quick Reference)
 
 ### First Dacian War, 101–102 AD
-**Verdict: Partially changed.**
-One major ambush is avoided through kite reconnaissance. Roman casualties roughly 900 lower over the campaign. The political outcome — Decebalus accepts client-king status — is unchanged. Trajan cannot sustain full annexation yet regardless of tactical advantage. The bridge is completed faster. The treaty happens approximately the same time but from a position of slightly stronger Roman confidence.
+**Verdict: Meaningfully changed.** Two major ambushes avoided through kite reconnaissance. Roman casualties approximately 900 lower over the campaign. The bridge completed faster. Political outcome unchanged — client-king status for Decebalus. But Trajan's confidence in the aerial system is established; it becomes doctrine.
 
 ### Second Dacian War, 105–106 AD
-**Verdict: Meaningfully changed.**
-Balloon observation shortens the siege of Sarmizegetusa by approximately two weeks. Roman losses in the siege are lower. Decebalus still flees and commits suicide — his arc is personal and the military outcome was already determined. Dacia is annexed on approximately the historical schedule. The difference is in Roman confidence: they have now used aerial observation in two major campaigns and it worked both times. It is no longer experimental.
+**Verdict: Substantially changed.** Manned balloon archers neutralize mountain-pass ambush warfare. Sarmizegetusa's water supply identified three weeks sooner. Roman losses approximately 35% lower. Dacia annexed on the same schedule but with dramatically lower cost in men and time. The military conclusion: aerial observation is not experimental anymore; it is doctrine.
 
 ### Parthian War, 113–117 AD
-**Verdict: Margins improved, strategic outcome unchanged.**
-Better logistics reduce supply waste and extend the campaign's sustainable duration. Balloon observation helps at specific sieges, most notably Ctesiphon. Roman tactical losses are lower. But the strategic problem — governing conquered Mesopotamia against revolt while the rear is in flames — is not a logistics or observation problem. Trajan still cannot hold his eastern conquests. He still retreats. He still dies at Selinus in August 117 AD. The difference is that he dies with somewhat better ground truth about why the campaign failed, and the army comes home with fewer gaps.
-
-### Trajan's Death, 117 AD
-**Verdict: Same date, cleaner succession.**
-Trajan dies in August 117 AD, same as real history. He is not saved by better medicine — his death is cardiovascular, not infectious. What differs is that he is not additionally weakened by camp infections in his final months, so his mental clarity in the last weeks is better. The Hadrianic succession is slightly more legitimate because Trajan's wishes are clearer. The Four Consulars are still killed. The stain remains. But the transition is marginally less disputed.
+**Verdict: Tactical advantages significant; strategic outcome unchanged.** Balloon archers wreck Parthian cavalry tactics in set-piece engagements. Supply waste reduced 15% by decimal accounting. Ctesiphon falls faster. But Mesopotamia is still ungovernable from Rome at 1,500-mile supply lines, and the rear revolts are still driven by political rage no technology can address. Trajan still retreats. He still dies at Selinus, August 117 AD. The difference: he dies with better ground truth about why it failed, and the army comes home with fewer gaps.
 
 ### Bar Kokhba Revolt, 132–135 AD
-**Verdict: Shorter, not different in character.**
-The revolt erupts for historical reasons unchanged by Daniel's work. Rome's military response is better-equipped and faster-coordinated. Balloon observation limits some guerrilla assembly in the Judean hills. The revolt ends approximately 12–18 months sooner than the historical 135 AD — probably 133–134 AD. Roman casualties are roughly 20–25% lower than historical. The Jewish diaspora, the renaming of the province, and the founding of Aelia Capitolina all proceed as in real history. This is still one of the worst suppressions in Roman history; it is merely faster.
+**Verdict: Shorter, not different in character.** Erupts for historical reasons unchanged by Daniel. Aerial observation strips Bar Kokhba's terrain advantage in the Judean hills. The revolt ends 14–18 months sooner, with Roman casualties perhaps 30–35% lower. The diaspora, the provincial renaming, the founding of Aelia Capitolina — all unchanged. Faster is not better. Daniel knows this.
 
 ---
 
@@ -253,20 +257,20 @@ For each chapter's year, a writer can quickly check which changes would be perce
 
 | Year | What a perceptive Roman notices is new |
 |------|----------------------------------------|
-| 98 | Nothing yet — Daniel has just arrived |
-| 100 | New numerals being used at one banking house; a strange kite in the Campus Martius |
-| 101–102 | Kite recon visible to anyone near Trajan's Dacian camp; numerals spreading in Ostia markets |
-| 103–105 | Rag paper available (expensive, oddly textured); printed single-sheet notices near the Forum |
-| 105–106 | Balloon at Sarmizegetusa reported by veterans; soap sold at one Transtiberim pharmacy |
-| 107–109 | Stirrups on some cavalry units; boiling-water standing orders posted in Rhine camp hospitals |
-| 110 | Volta pile demonstrated publicly at the contest; movable type under development |
-| 113–116 | Printed maps used in Parthian campaign logistics; decimal accounting in treasury records |
-| 118–120 | First steam pump in Hispania mine; Hadrian's legal staff examining patent concept |
-| 121–125 | Printed census forms; multiple steam pumps; ocean program launched; vernier calipers at armories |
-| 130–135 | Printed encyclopedia circulating; pendulum clock prototype at contest; three ocean voyages complete |
-| 138–145 | Multiple steam industries; literacy measurably higher in major cities; contest famous empire-wide |
-| 148–155 | Atlantic voyage departs; steam machinery in several industries; precision tools at 40+ workshops |
+| 98 | Nothing — Daniel has just arrived |
+| 100 | New numerals at one banking house; a strange kite over the Campus Martius |
+| 101–102 | Kite recon visible to anyone near Trajan's Dacian camp; numerals spreading in Ostia |
+| 103–105 | Rag paper available (expensive, oddly textured); printed single-sheet notices near Forum |
+| 105–106 | **Manned balloon with archer at Sarmizegetusa**; soap sold at Transtiberim pharmacy |
+| 107–109 | Stirrups on cavalry units; boiling-water orders posted at Rhine camp hospitals; printed press running |
+| 110 | Volta pile demonstrated at contest; movable type in use; Atlantic coastal route opened by compass |
+| 113–116 | **Balloon archers in Parthian campaign** devastating cavalry; printed maps duplicated for legates |
+| 118–120 | First steam pump operating in Hispania; Hadrian examining patent law; decimal accounts in treasury |
+| 121–128 | Printed census forms; eight steam pumps; ocean voyages underway; optical semaphore line begun |
+| 128–135 | Rome-to-Rhine semaphore line operational; printed encyclopedia circulating; Bar Kokhba suppressed faster |
+| 136–145 | Three Atlantic probe voyages complete; 80–100 water-powered industrial installations; contest entrants teaching each other |
+| 145–155 | Atlantic ship departs; variolation program established; double-entry ledger forms commercially sold; steam pump in Rome |
 
 ---
 
-*This document is a writer's tool, not a historical argument. Estimates on economic percentages, mortality reductions, and timing are calibrated to be internally consistent with the tech plan, not to replicate peer-reviewed economic history. Where the novel needs a specific number for verisimilitude (20% more silver, two weeks shorter siege), these numbers are plausible and consistent. They should not be treated as historically precise.*
+*This document is a writer's tool, not a historical argument. Estimates on economic percentages, mortality reductions, and timing are calibrated to be internally consistent with the tech schedule, not to replicate peer-reviewed economic history. Where the novel needs a specific number for verisimilitude (35% fewer Roman casualties, three-week shorter siege), these numbers are plausible and internally consistent. The core commitment: by 130 AD, a perceptive Roman in a major city lives noticeably differently. By 155 AD, the empire's trajectory has genuinely changed. The change is real. Whether it is enough is the question only the epilogue can answer.*

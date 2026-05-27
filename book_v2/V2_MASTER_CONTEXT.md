@@ -210,6 +210,9 @@ A writer agent rewriting Chapter N should read in this order:
 
 **Reference only if needed:**
 - `bible/05_world_rules.md` — honesty constraints
+- `V2_DANIEL_COGNITIVE_EDGE.md` — what Daniel knows vs. doesn't (targets, historical
+  winners, Rome failure modes, prize model); 4 example scenes showing the edge in action;
+  writer checklist to avoid making him either a time-traveling god or a helpless tourist
 - `V2_TECH_DEEP_DIVE.md` — detailed feasibility analysis for optics, springs/clocks,
   steam precision; priority table; precision-bootstrapping loop; physical parameters
   appendix for accurate scene-writing (timelines: spyglass by 103–105, steam pump
