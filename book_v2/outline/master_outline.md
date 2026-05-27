@@ -409,6 +409,42 @@ approximate window. Whatever political network he has built is built around Traj
 Trajan's circle. When Trajan dies at Selinus in Cilicia, Daniel's position — not his
 life, but his leverage and his patron-web — evaporates.
 
+*Food arc — Part IV:* The first New World crops arrive in this part's second half, once
+the Atlantic expedition returns (~115–120 AD) and the agricultural lag of one to two
+growing seasons passes. Sweet potato first: he roasts one whole in a fire within the
+first week of receiving tubers. He eats it plain. It is sweet and filling and it needs
+nothing added to it. He serves them at the workshop. They are an immediate hit because
+they are unlike anything Rome eats and genuinely good. Corn follows: he makes rough
+polenta from the first maize — cornmeal cooked slowly in water with salt, served with
+olive oil and hard cheese — and serves it to the workshop. Dense and unusual. He knows
+what it will become. Then the tomato moment. He grows them from seed, loses the first
+season mostly, gets a real harvest the second. He makes a basic tomato sauce — tomatoes
+crushed and reduced with oil and garlic, a bit of garum for depth — and puts it on pasta.
+The pasta he has been making for years. The sauce he has been unable to make for years.
+He eats it. He puts down the bowl. He says nothing. Three sentences. No commentary. If
+anyone else is present, they notice he has gone quiet. Nobody asks why. Within weeks,
+ketchup: tomatoes, vinegar, onion, spices, reduced thick, given to Gnaeus without
+explanation. Gnaeus puts it on the menu. Note: Daniel pushed for the Atlantic crossing
+partly because he knew what was growing there. He never said this aloud.
+
+*Prize innovation — Part III/IV boundary (ch24–29 range):* The unexpected farrier's
+pyrometry table. A horseshoe-maker, not a smith Daniel would have thought to approach,
+submits a heat-color correlation table for iron — developed over years of judging iron
+readiness for horseshoe shaping. Someone told him the workshop paid for things like that.
+The table is cruder than Daniel's own data and more useful than Daniel's own data, because
+the farrier calibrated it against thousands of actual horseshoes instead of a handful of
+controlled experiments. Daniel sits with this. The prize model does not just accelerate
+his program; it maps knowledge that already exists in Roman craft tradition — empirical
+knowledge accumulated by a thousand farriers and glassmen and bronzesmiths — knowledge
+that has never been written down or shared across trade boundaries because there was no
+mechanism to make it visible. The prize created the mechanism. He does not say this aloud.
+Also in Part IV (ch32–38 range): the failure mode. One prize winner sells the winning
+technique to someone Daniel did not intend to have it — most likely a glass-grinding
+method reaching a military optician working against Daniel's press interests, or an alloy
+formula reaching a Parthian trade intermediary through a chain Daniel cannot trace. He
+calculates whether the prize program is still net positive. It is. He does not change the
+structure. One brief scene or half-scene; not a major thread.
+
 **Part IV ends:** The ground drops out. Hadrian's succession is contested (widely believed
 to be engineered by Plotina and Attianus). Daniel is on the wrong side of a transition.
 He is thirty-six and will have to rebuild everything.
@@ -512,6 +548,29 @@ wave Hadrian's ocean program formalizes. Daniel is alive for the planning and pr
 the departure. The expeditions now carry balloons, crossbow-armed soldiers, printed maps,
 and medical protocols including citrus provisions. Whether conquest follows is a political
 question Daniel cannot control.
+
+*Food arc — Part V:* Cacao arrives in ch43 (assigned scene). He roasts, grinds, mixes
+with honey and water or watered wine. Dark, slightly gritty, bitter underneath the
+sweetness. He gives the name wrong — half-remembers it from school, knows it is not
+right, does not correct himself. One exchange with Marcia or Tyche. No speech. Also in
+this part: some food introductions are spreading without attribution. "Barbarian pasta" —
+boiled and sauced, not baked — appears on the menu of a thermopolium somewhere in the
+Subura. Daniel eats there once, out of curiosity. The pasta is overcooked. The sauce is
+more garum-forward than he would choose. He says nothing about it.
+
+*Prize innovation — Parts V–VII:* By Phase E the prize-specification model has escaped
+the workshop. Other wealthy patrons and at least two guild associations are running
+variant versions — posting quality targets with prize money, paying on verified result
+rather than on time spent. The practice has a name in trade circles. Hadrian's
+administration, and later Antoninus Pius's circle, adopt a version for public-works
+competitions: specified bridge load tolerances, water conduit flow-rate targets, road
+surface durability standards. The prize is the contract rather than money, but the
+structure is the same. Daniel does not publicize that he started it. He is aware he
+started it. He mentions it once, to Tyche, in English, in a context that will not be
+repeated. Also in this part: Glabrio — the bronzesmith who has been near-missing prizes
+since ch19 — probably receives a direct consulting retainer from the workshop in ch34 or
+ch38 territory. Not a prize. A retainer, for the specific reason that a man who gets that
+close to targets repeatedly has knowledge worth paying for even when he does not win.
 
 **Part V ends:** Daniel has found footing in Hadrian's order. He is forty-four, middling-
 old by Roman standards, and his position is now institutional rather than personal. The
@@ -633,6 +692,16 @@ succeeds (stay-at-home, no appetite for adventure). The program is precarious bu
 formally killed. Daniel tells his apprentices to keep the charts current to the last
 established headland, laid down but not closed, so a future hand need not start from
 the beginning.
+
+*Food arc — Parts VI–VII:* New World crops are now part of the household routine —
+tomatoes, sweet potatoes, maize all growing in the garden, not miraculous anymore, just
+what the garden produces. A background line or two is sufficient. In Part VII, ch50:
+Daniel, old, eats a tomato from his garden. One sentence. No commentary. The food arc's
+true ending — not triumph, not speech, just an old man in his last years eating something
+from his own garden that was not possible for the first twenty years of his life in Rome.
+Also in late life: familiar things become normal. The texture of aging on food — what the
+mouth prefers, what it can manage, what it does not anymore. No scenes required; a line
+or two of texture if it fits naturally.
 
 **Part VI ends:** Hadrian dies. Daniel is fifty-seven. The work is institutional; it no
 longer depends on any living person, including him. He has made himself unnecessary.
