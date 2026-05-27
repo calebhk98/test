@@ -21,19 +21,26 @@ yours in V1; your job is to rewrite your assigned chapter so it fits the V2 spec
 9. The V1 chapter you are rewriting: `chapters/chNN.md` — your baseline.
 
 Also read if your chapter involves specific topics:
-- `V2_STORY_PLOT_NOTES.md` — story-level changes, antagonist exits, required additions
-- `bible/03_timeline.md` — chronology and AD years
-- `bible/05_world_rules.md` — honesty constraints on Daniel's knowledge and tech
-- `V2_FOOD_ARC.md` — **read if your chapter has a food beat, tavern scene, cooking moment,
-  or New World crop arrival.** Covers what Rome has, what Daniel knows how to cook, phase
-  timeline (pasta Phase B, New World crops Phase D), the tomato moment, cacao scene (ch43),
-  and the Gnaeus tavern-partner arrangement. Do NOT have him cook with ingredients unavailable
-  in his chapter's era.
-- `V2_PRIZE_INNOVATION.md` — **read if your chapter involves tech development, metallurgy
-  specs, craftsman competitions, Crispus reacting to Daniel's methods, or the lens-grinding
-  arc.** The X-Prize model (post spec → pay only winners → nobody sees the aggregate) runs
-  from Phase B through Phase E. Six narrative beats with chapter assignments are listed there.
-  Do NOT have Daniel explain the model in a speech.
+
+| If the chapter involves... | Also read... |
+|---|---|
+| Story-level changes, antagonist exits, Atlantic crossing, games/gambling, crossbows, balloon, trains/rails, food arc | `V2_STORY_PLOT_NOTES.md` |
+| Chronology / exact AD dates | `bible/03_timeline.md` |
+| Optics, steam, clocks, precision manufacturing, tech bootstrapping | `V2_TECH_DEEP_DIVE.md` |
+| Money, wealth, prices, business deals, finance phases | `V2_DANIEL_FINANCES.md` |
+| War outcomes, military divergence, historical impact | `V2_HISTORICAL_IMPACT.md` |
+| Atlantic crossing, New World contact, disease, transatlantic timeline | `V2_NEW_WORLD_CONTACT.md` |
+| Daniel's knowledge limits, what he knows vs. guesses | `V2_DANIEL_COGNITIVE_EDGE.md` |
+| Honesty constraints on what Daniel can claim to know | `bible/05_world_rules.md` |
+| Food beats, tavern scenes, cooking, New World crop arrivals | `V2_FOOD_ARC.md` |
+| Tech development, metallurgy, craftsman competitions, prize specs, lens-grinding | `V2_PRIZE_INNOVATION.md` |
+| Lucanus or Ulpia (children's education, playground, truth-telling) | `V2_ULPIA_EDUCATION.md` |
+
+**Notes on key conditional reads:**
+- `V2_FOOD_ARC.md`: covers what Rome has, what Daniel knows how to cook, phase timeline (pasta Phase B, New World crops Phase D), the tomato moment, cacao scene (ch43), and the Gnaeus tavern-partner arrangement. Do NOT have Daniel cook with ingredients unavailable in his chapter's era.
+- `V2_PRIZE_INNOVATION.md`: X-Prize model (post spec → pay only winners → nobody sees the aggregate) runs Phase B through Phase E. Six narrative beats with chapter assignments listed. Do NOT have Daniel explain the model in a speech.
+- `V2_STORY_PLOT_NOTES.md`: read this for ANY chapter where Daniel encounters new technology, gambling/games, the balloon program, rail transport, or the Atlantic crossing timeline — these are major V2 additions not present in V1.
+- `V2_NEW_WORLD_CONTACT.md`: the Atlantic crossing is a major V2 divergence from V1. Read this whenever your chapter is Phase D or later (~120+ AD) and involves ocean exploration, the western shores, or New World disease questions.
 
 ---
 
