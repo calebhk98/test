@@ -44,7 +44,7 @@ least two concrete, on-page, measurable divergences. Candidates:
 The writing agent does not need to use all four. Two will do. But they must be
 specific and on-page, not asserted in narration.
 
-### 1.2 The flight ban must be narrowed — and manned flight must return
+### 1.2 The flight ban must be narrowed — and manned flight must return [CORRECTED]
 
 **The vow as originally written is a story problem, not a character truth.**
 
@@ -52,31 +52,29 @@ V1's permanent flight ban covering 40+ years is authorial convenience, not
 characterization. It does not survive scrutiny.
 
 **Reframe the vow (fix for V2):**
-After Sabinus's death (ch13–14), Daniel has a genuine period of grief and design
-review (~1–2 years). The vow is restated on the page as: "I won't put untrained
-people into an untested design." This is about safety protocols, not about
-abandoning the technology. The distinction matters: one is a rational engineer's
-rule; the other is a traumatized teenager's superstition.
+After Sabinus's death (ch13–14), Daniel has a genuine period of grief and a
+safety redesign (~1–2 years). The vow is stated on the page as: "I won't rush
+untrained people into an untested design." This is a rational engineer's rule,
+not a traumatized teenager's superstition. The distinction is explicit on the page.
 
-Within 5–7 years, Daniel returns to unmanned and kite-class glider work, stating
-the distinction explicitly. The vow is honored; the work continues. By approximately
-107–109 AD, he builds a kite large enough to lift a load and tests stability
-principles systematically.
+Within 1–2 years (by ~105 AD), unmanned and kite-class glider work resumes. The
+distinction is stated explicitly: the vow covers untrained operators in untested
+designs, not kite rigs with nobody aboard, not systematically tested manned
+platforms. The vow is honored; the work continues immediately.
 
 **Manned flight resumes — the military case is undeniable:**
-Within 2–3 years of the vow (i.e., by ~105–107 AD), the path back to manned flight
-becomes clear: trained operators with many hours of tethered flight time, reinforced
-baskets, explicit written safety protocols, and voluntary operators who understand
-and accept the risk. The Dacian Wars make the case before Daniel even has to make it
-himself: archers 200 feet up are effectively unkillable from the ground, have
-perfect visibility of formation and terrain, and can direct ground troops by signal.
-Trajan watches the first Dacian campaign and the argument writes itself.
+By ~105–106 AD, trained operators with minimum 50 hours of tethered flight time,
+reinforced baskets, explicit written safety protocols, and voluntary consent are
+flying. Manned balloons with crossbowmen are military doctrine by 106 AD. A
+hot-air balloon with archers 200 feet up is practically unkillable with ground
+weapons and can rain arrows down on any formation.
 
-No Roman commander would accept "we stopped because one person died in a prototype"
-— they do not apply that logic to catapults, to cavalry charges, or to siege
-engineers assigned to dig under a wall. The logic of "one death stops the program"
-is a 21st-century liability framework; it does not belong in a Roman general's
-mouth, and Daniel knows it does not.
+Trajan watched the First Dacian War and the argument writes itself. No Roman
+commander would accept "we stopped because one person died in a prototype" — they
+do not apply that logic to catapults, to cavalry charges, or to siege engineers
+assigned to dig under a wall. The logic of "one death stops the program" is a
+21st-century liability framework; it does not belong in a Roman general's mouth,
+and Daniel knows it does not.
 
 **The better story beat:**
 Daniel DOES struggle with whether to return to manned flight — this is real moral
@@ -86,24 +84,23 @@ conditions: minimum 50 hours tethered, double-basket construction, no untrained
 passengers, written waiver. Then he makes the call. This is more honest than a
 ban that somehow survives 40 years of a man who iterates on everything else.
 
-### 1.3 The Atlantic crossing must happen in Daniel's lifetime
+### 1.3 The Atlantic crossing must happen in Daniel's lifetime [CORRECTED]
 
-Deferring the first Atlantic crossing 10 generations past Daniel's death is
-indefensible. A round trip is approximately one year. Daniel is wealthy,
-institutionally backed, and obsessed with the ocean program from Part V onward.
+The first Atlantic crossing is ~112–115 AD (Daniel age 31–34), NOT ~130–135 AD.
+The 130–135 estimate was overcautious. The earlier timeline follows directly from
+what Daniel needs and when he has it.
 
-FIX: Show the ocean program succeed in Daniel's last years — the late 130s to
-early 150s AD. A funded voyage departs in approximately 145–150 AD, using:
-- The magnetic compass (introduced Phase C)
-- Latitude navigation (sextant-equivalent or gnomon)
-- The hull design refined through decades of Atlantic-approach testing
-- Packed citrus against scurvy (Daniel insists on this explicitly)
+FIX: The ocean program's first crossing is a scouting/survival voyage in Daniel's
+early middle age, not a late-life grand project. The departure is ~112–115 AD. A
+round trip is ~4–5 years (approximately 2 years out, time at the destination,
+2 years back). The first return is ~116–120 AD. The second wave — organized, with
+printed charts and reported winds — is ~120–125 AD. This is the wave Hadrian's
+ocean program formalizes; Hadrian's program is the SECOND-wave colonial effort,
+not the first crossing.
 
-The ship may not return before Daniel dies — that is acceptable dramatically and
-adds the correct poignancy. The epilogue (ch53 equivalent) confirms landfall and
-shows the land is inhabited (correcting his "uninhabited" lie). This is already
-the epilogue's structure; the change is that the DEPARTURE happens in Daniel's
-lifetime, not centuries later.
+Daniel is alive for the first departure, the first return, and the beginning of
+the organized colonial program. He may not live to see a permanent colony
+established, but the crossing is proven multiple times in his lifetime.
 
 **The navigation question — Daniel doesn't need a marine chronometer:**
 
@@ -153,22 +150,48 @@ Timeline that follows from these:
 - He may die before a permanent colony is established, but NOT before the crossing
   is proven multiple times
 
-The 30-year estimate assumed he'd wait for chronometer-level precision. He would not.
-A driven person who KNOWS what is on the other side does not wait 30 years.
+The earlier estimate assumed he'd wait for chronometer-level precision AND assumed
+he would be distracted by other things for 30 years. Both assumptions are wrong. A
+driven person who KNOWS what is on the other side does not wait 30 years — he is
+planning from year one; execution just takes until he has the money and political
+standing.
+
+**What was wrong with the 130–135 estimate:**
+- It assumed marine chronometer precision (Columbus proved you don't need this)
+- It assumed Daniel would be distracted by other things for 30 years
+
+**The resource case — why Daniel pushes hard for this:**
+The Caribbean and Mesoamerica in 113 AD offer:
+- Corn, potatoes, sweet potatoes, tomatoes, cacao, rubber
+- Rubber alone: waterproofing, better seals, gaskets — Daniel knows this
+  immediately from memory
+- New crops: massive agricultural revolution potential
+
+But: 5-year voyage cycles mean Roman investors must think in 10-year return windows.
+Daniel's double-entry bookkeeping and longer financial thinking apply here directly —
+he can model the return horizon and make the case that these cycles are worth funding.
+
+**The communication breakdown — what Daniel knows and won't say aloud:**
+A Roman colony 5 weeks away by sea, months to get a message there and back. Daniel
+knows from American history what this produces: the Revolutionary War model, a
+century early. He recognizes the structural parallel immediately and writes about it
+in the encyclopedia. He does not say it aloud.
+
+**First voyage is scouting/survival, not colonization:**
+- He probably loses one ship in three
+- He comes back
+- Second wave, with printed charts and reported winds, is organized colonization
 
 **The crossing's consequences** (note these briefly in relevant chapters):
 - Proves his world map (the Thule/western lands he described were real)
 - Returns with: New World crops (corn, potatoes, sweet potatoes, squash, possibly
-  tobacco, maybe cacao from initial contacts), rubber samples, and geographic
-  information
+  tobacco, cacao from initial contacts), rubber samples, and geographic information
 - Creates enormous political pressure — Hadrian's successors now have a NEW WORLD
   to compete for
 - Changes Roman ambition from "hold the borders" to "there is more world than we
   thought"
-- The communication problem: A Roman colony 5 weeks away by sea, months to get a
-  message there and back. Daniel predicts this will eventually cause a colonial
-  independence movement. He writes about it in the encyclopedia but doesn't say it
-  aloud.
+- The communication problem: colonial independence inevitable at multi-week sea
+  distances; Daniel writes this in the encyclopedia and does not say it aloud
 
 ---
 
@@ -453,7 +476,15 @@ have happened.
 - One small but real military or civic outcome has diverged from real history
   (see Section 1.1 for candidate events).
 
-### By 125 AD (end of Part IV / early Part V):
+### By 115 AD (end of Part IV / ch28-29): [CORRECTED]
+- First Atlantic crossing proven (dead reckoning + compass + trade winds). Daniel
+  is ~34. No marine chronometer needed — Columbus did it the same way in 1492.
+- First return ~116-120 AD: New World crops (corn, potatoes, sweet potatoes, squash,
+  cacao, rubber samples) in Daniel's possession and beginning to circulate.
+- Manned balloon archers are established military doctrine (by ~106 AD, well before
+  this milestone). The program resumed within 1-2 years of Sabinus's death.
+
+### By 125 AD (end of Part IV / early Part V): [CORRECTED]
 - The gunpowder leak incident has been dramatized and contained (Section 3.1).
 - At least one institutional innovation has been proposed to Hadrian: patent law
   or limited liability, or both. Hadrian's response (positive, skeptical, or
@@ -462,6 +493,9 @@ have happened.
 - Water-powered bellows and trip-hammers are operating in Daniel's forge complex.
 - The Volta pile has been demonstrated — at minimum as a shock-and-electrolyze
   demonstration, even if no practical application is yet found.
+- Second-wave organized Atlantic expedition underway (~120-125 AD) with printed
+  charts and reported wind knowledge. This is the wave Hadrian's ocean program
+  formalizes.
 
 ### By 138 AD (end of Part VI / Hadrian's death):
 - The thermocouple chain is underway: compass-needle galvanometer demonstrated;
@@ -475,8 +509,12 @@ have happened.
   physician who extended Heras's wound-washing practice into a specific clinical
   protocol).
 
-### By 155 AD (Daniel's death):
-- The ocean voyage has departed.
+### By 155 AD (Daniel's death): [CORRECTED]
+- The first Atlantic crossing was proven ~112-115 AD (see "By 115 AD" above).
+  By Daniel's death, the Atlantic crossing has been proven multiple times; New
+  World crops are reaching Rome; organized colonial activity is underway.
+- A later organized colonial expedition (ch49, ~149 AD) departs — Daniel watches
+  it leave from the dock. He is alive to see the departure; likely not for return.
 - Variolation program (groundwork) has been set up through the physician line.
 - The encyclopedia is secured in three copies plus one buried lead-cased copy.
 - The "all tracks lead to Rome" line has been spoken — by Daniel, Felix, or
@@ -504,7 +542,7 @@ for, which V1 never raised. Each must appear in V2.
 
 ---
 
-## SECTION 7: THE WRITING CONTEST AS AN ECONOMIC FLYWHEEL
+## SECTION 7: THE WRITING CONTEST AS AN ECONOMIC FLYWHEEL [CORRECTED]
 
 The technology contest is not just "a cool cultural thing." It is Daniel's most
 leveraged institutional investment and a self-funding growth engine. The writing
@@ -544,12 +582,15 @@ and why the contest matters beyond any single prize.
    is printed on paper. Every library needs paper for correspondence. Daniel's
    paper mills run on contest demand.
 
-9. **Enables seeding his own ideas.** He enters stories himself (under pen names),
-   or pays scribes to write stories based on his direction — Romeo and Juliet (he
-   remembers the plot), A Trip to the Moon, a machine that thinks, a ship that
-   crosses the western ocean, any story a high-school student would know. These
-   aren't vanity projects — they're tech-inspiration vectors and culturally
-   irreplaceable by the time people realize they came from one source.
+9. **Enables seeding his own ideas.** He enters stories himself — under pseudonyms
+   or openly, depending on political moment — framing them as "traditional tales
+   from my homeland." Shakespeare plots, Jules Verne-style adventures, mythology,
+   Romeo and Juliet (he remembers the plot), A Trip to the Moon, a machine that
+   thinks, a ship that crosses the western ocean, any story a high-school student
+   would know. These aren't vanity projects — they're tech-inspiration vectors and
+   culturally irreplaceable by the time people realize they came from one source.
+   By Part VI, some of these have become Roman classics; schoolchildren memorize
+   plots he carried in his head from Ohio.
 
 ### Contest Mechanics Daniel Would Design
 
@@ -568,18 +609,29 @@ and why the contest matters beyond any single prize.
 - **Endowed as a permanent institution** with a capital fund that generates its own
   revenue — the contest runs without him
 
-### Specific Story Beats to Add
+### Specific Story Beats to Add [CORRECTED — confirmed and clarified]
 
 - **Early entries are crude:** Soldiers writing about war; slaves writing about
   freedom. Both make Daniel uncomfortable for different reasons.
-- **The accidental parallel:** First time someone writes a story that accidentally
-  describes a technology Daniel was actively working on, without knowing it.
-  Validates the seeding strategy — the ideas are already spreading independently.
+- **Daniel's own submissions:** Daniel enters under pseudonyms or openly, framing
+  his entries as "traditional tales from my homeland." The contest structure (judges
+  + public vote, People's Prize vs Judges' Prize) means he cannot simply rig it for
+  his own entries. He competes honestly. By Part VI, some of these stories have
+  become Roman classics — schoolchildren memorize plots he carried from Ohio.
+- **The accidental parallel:** First time someone independently writes a story that
+  accidentally describes a technology Daniel was currently developing, without
+  knowing it. He reads it and goes quiet. Validates the seeding strategy — the
+  ideas are already spreading without him. This beat must be on the page.
 - **A woman wins.** A story entered by a young woman takes the prize. Daniel makes
   the award public. The cultural friction is real; the press covers it; the
   precedent is set.
 - **Felix, the recurring entrant, eventually wins.** What he writes should echo
   something from Daniel's tech program — the contest and the workshop in dialogue.
+- **The contest becomes self-sustaining.** By Part VI it runs without Daniel: the
+  standing committee, the capital endowment, the anthology sales cover the prize
+  fund. He is no longer the contest's patron or judge. He is one of its subjects —
+  sometimes an entrant, sometimes referenced in others' stories, eventually a legend
+  the contest has built without him.
 
 ---
 
