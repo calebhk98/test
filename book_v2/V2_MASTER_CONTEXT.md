@@ -223,6 +223,10 @@ A writer agent rewriting Chapter N should read in this order:
 - `V2_HISTORICAL_IMPACT.md` — military/economic/social divergence by era, specific
   war outcome verdicts (Dacian Wars, Parthian, Bar Kokhba), Rome-in-155-AD snapshot,
   year-by-year visibility table (what a perceptive character would notice is different)
+- `V2_NEW_WORLD_CONTACT.md` — Roman 130 AD contact vs. 1492 European contact;
+  disease profile differences (Romans in 130 AD don't carry smallpox yet — Antonine
+  Plague is 165 AD); disease exchange epidemiology; Daniel's moral dilemma and
+  intervention options; consequence table and narrative beats across Parts IV-V
 - `summaries/*.md` — condensed analysis of V1 review files
 - `qa/chNN_review.md` — per-chapter QA review from V1
 

@@ -105,6 +105,56 @@ shows the land is inhabited (correcting his "uninhabited" lie). This is already
 the epilogue's structure; the change is that the DEPARTURE happens in Daniel's
 lifetime, not centuries later.
 
+**The navigation question — Daniel doesn't need a marine chronometer:**
+
+Columbus's 1492 crossing used dead reckoning + compass + latitude sailing. He knew:
+1. Sail west from the Canaries at ~28°N latitude (a known latitude he could hold
+   with a simple astrolabe)
+2. Trade winds blow consistently westward at that latitude in late summer
+3. The crossing would take 4–6 weeks
+4. Return by sailing north to ~40–45°N where westerlies blow eastward
+
+Daniel has better information than Columbus:
+- A world map (he knows the Americas exist and roughly where)
+- Knowledge that the crossing is possible and approximately how long
+- A compass (achievable by Phase B–C)
+- Knowledge of latitude measurement (simple astrolabe + sun angle — a 2020 teen
+  would know this)
+- Knowledge of the trade wind concept (even if he can't explain Hadley cells, he
+  knows "sail west from near the equator, return north")
+
+What Daniel does NOT need for the basic crossing:
+- Marine chronometer (that's for PRECISE longitude; Columbus had no chronometer)
+- Perfect ships (Romans had cargo ships of 300–500 tons, better than Columbus's
+  Niña/Pinta)
+- Gunpowder cannons (he has them)
+- Balloons (he has them)
+
+**Revised timeline:**
+- The marine chronometer IS still a goal (for precise longitude, safer navigation)
+- But the FIRST crossing doesn't wait for it — it uses dead reckoning just like
+  Columbus
+- First expedition: approximately 130–135 AD (Daniel age 49–54)
+- Daniel is ALIVE for the first successful crossing and its return
+- He is likely still alive for the second expedition and early resource return
+  (crops, knowledge)
+- He may die before a permanent colony is established, but NOT before the crossing
+  is proven
+
+**The crossing's consequences** (note these briefly in relevant chapters):
+- Proves his world map (the Thule/western lands he described were real)
+- Returns with: New World crops (corn, potatoes, sweet potatoes, squash, possibly
+  tobacco, maybe cacao from initial contacts), rubber samples, and geographic
+  information
+- Creates enormous political pressure — Hadrian's successors now have a NEW WORLD
+  to compete for
+- Changes Roman ambition from "hold the borders" to "there is more world than we
+  thought"
+- The communication problem: A Roman colony 5 weeks away by sea, months to get a
+  message there and back. Daniel predicts this will eventually cause a colonial
+  independence movement. He writes about it in the encyclopedia but doesn't say it
+  aloud.
+
 ---
 
 ## SECTION 2: ANTAGONIST RESOLUTIONS
@@ -419,7 +469,86 @@ for, which V1 never raised. Each must appear in V2.
 
 ---
 
-## SECTION 7: REQUIRED SCENE — THE COMMUNICATION ARGUMENT FOR STEAM AND RAIL
+## SECTION 7: THE WRITING CONTEST AS AN ECONOMIC FLYWHEEL
+
+The technology contest is not just "a cool cultural thing." It is Daniel's most
+leveraged institutional investment and a self-funding growth engine. The writing
+agent must understand all nine feedback loops — they inform what scenes to write
+and why the contest matters beyond any single prize.
+
+### The Nine Feedback Loops
+
+1. **Gets more people writing.** Low barrier ("just write a story, win money") →
+   massive participation from all social classes with basic literacy.
+
+2. **Gets more people reading.** More stories → more readers → more literacy →
+   more contest participants. This loop is self-reinforcing.
+
+3. **Inspires future tech.** Science fiction precedes science fact. Daniel seeds
+   stories about flying machines, ships to the horizon, invisible creatures that
+   make people sick. Romans read these and start dreaming. A generation raised on
+   these stories asks different questions.
+
+4. **Makes his books more valuable.** The press that publishes contest collections
+   becomes culturally central. Every library wants the annual anthology. Daniel's
+   press is the publisher of the cultural record.
+
+5. **Makes him culturally influential.** He's not just an inventor — he's Rome's
+   Hollywood. Every Roman who reads knows his name as the founder of the contest.
+   This is political protection money can't fully buy.
+
+6. **Builds his library system.** Contest archives require libraries. Libraries
+   require readers. Daniel endows contest libraries specifically — each must stock
+   the full backlist of prize winners.
+
+7. **Makes his printing press more valuable.** More content → more printing →
+   lower per-unit cost → more accessible books → more readers → more content.
+   The press is a platform, not just a machine.
+
+8. **Makes his paper more valuable.** Every story is written on paper. Every copy
+   is printed on paper. Every library needs paper for correspondence. Daniel's
+   paper mills run on contest demand.
+
+9. **Enables seeding his own ideas.** He enters stories himself (under pen names),
+   or pays scribes to write stories based on his direction — Romeo and Juliet (he
+   remembers the plot), A Trip to the Moon, a machine that thinks, a ship that
+   crosses the western ocean, any story a high-school student would know. These
+   aren't vanity projects — they're tech-inspiration vectors and culturally
+   irreplaceable by the time people realize they came from one source.
+
+### Contest Mechanics Daniel Would Design
+
+- **Recurring:** Annual or biannual (enough time to write; not so long people
+  forget the contest exists)
+- **Multiple categories:** Best adventure, best philosophical, best "what if
+  machines could…" — separate prizes prevent any one style from dominating
+- **Judged by a standing committee,** not Daniel directly after Part III (too
+  politically exposed)
+- **Prize tiers:** Grand winner gets substantial money (100–500 HS); regional
+  winners get smaller amounts — making it accessible to ambitious lower-class
+  participants
+- **Self-funding:** Prize money funded by a percentage of the press's
+  contest-anthology sales. Once at scale, it runs on anthology revenue without
+  Daniel's subsidy
+- **Endowed as a permanent institution** with a capital fund that generates its own
+  revenue — the contest runs without him
+
+### Specific Story Beats to Add
+
+- **Early entries are crude:** Soldiers writing about war; slaves writing about
+  freedom. Both make Daniel uncomfortable for different reasons.
+- **The accidental parallel:** First time someone writes a story that accidentally
+  describes a technology Daniel was actively working on, without knowing it.
+  Validates the seeding strategy — the ideas are already spreading independently.
+- **A woman wins.** A story entered by a young woman takes the prize. Daniel makes
+  the award public. The cultural friction is real; the press covers it; the
+  precedent is set.
+- **Felix, the recurring entrant, eventually wins.** What he writes should echo
+  something from Daniel's tech program — the contest and the workshop in dialogue.
+
+---
+
+## SECTION 8: REQUIRED SCENE — THE COMMUNICATION ARGUMENT FOR STEAM AND RAIL
 
 **When:** Part IV or V — during Daniel's rebuilding relationship with Hadrian,
 approximately 120–130 AD.
@@ -472,7 +601,81 @@ sales pitch.
 
 ---
 
-## SECTION 8: WHAT THE BOOK ALREADY HANDLES WELL — DO NOT CHANGE
+## SECTION 9: DANIEL'S FOOD PROBLEM (AND THE CULINARY SIDE BUSINESS)
+
+This is a humanizing character beat that has been completely missing. It is texture,
+not plot. Add one scene per Part at most; do not let it become a major thread.
+
+### The Immediate Crisis
+
+An American teenager in ancient Rome has a food crisis from day one:
+- No tomatoes (Americas)
+- No potatoes (Americas)
+- No chili peppers (Americas)
+- No chocolate (Americas)
+- No corn (Americas)
+- Primary condiment: garum (fermented fish sauce)
+- Bread is good; olive oil is good; wine is available; eggs are available
+- Meat available but preparations are different
+- Almost no sugar (honey available but expensive)
+
+### What Daniel Can Do With Roman Ingredients
+
+- **Egg dishes** — frittata-style, scrambled, omelets. Romans had eggs; Daniel
+  knows how to use them beyond hard-boiling.
+- **Better bread** — he knows about yeast management, proofing, enriched dough
+  with eggs and olive oil.
+- **Simple pasta** — "Lagana" (flat pasta sheets) existed in Rome. Daniel knows to
+  make them thin, cook in boiling salted water, serve with olive oil, salt, and
+  aged cheese. This is Cacio e Pepe, centuries early.
+- **Fried foods** — deep-frying in olive oil is achievable. Fried bread, fried
+  cheese.
+- **Better sauces** — he knows about emulsification (egg yolk + oil = proto-
+  mayonnaise), reduction sauces, herb-infused oils.
+- **Fish preparation** — he has seen thousands of preparations. Japanese-style raw
+  fish (similar to sashimi) is achievable, though Romans would find this alarming.
+- **Soup and stew techniques** — clear broths, long-simmered stews. Romans stewed
+  everything; he makes it better.
+- **Desserts** — fruit, honey, and reduced wine. Genuinely better than the Roman
+  average.
+
+### The Economics and Story Arc
+
+- **Part I / Early:** He modifies his own food out of personal preference. Heras
+  thinks he's insane.
+- **Part II–III / Middle:** His household slaves learn his techniques. Visitors
+  notice the food is different. Word spreads without Daniel promoting it.
+- **Part IV / Later:** A small tavern near his workshop starts serving "the
+  Thulean way." It is crowded. The cook he trained eventually opens their own place.
+- **Money:** Not his main business, but steady income and goodwill. Some dishes
+  spread widely (the pasta format, the clear-soup technique); others stay niche
+  (raw fish remains alarming). His desserts become genuinely sought after.
+
+### After the Atlantic Crossing (130+ AD)
+
+- **Tomatoes arrive** — Roman cuisine transforms. He KNEW this was coming.
+- **Potatoes** — a starchy crop that grows in poor soil. Food security, especially
+  for the army.
+- **Chocolate (cacao)** — he knows what it is and how to prepare it (roast, grind,
+  mix with honey). Becomes a luxury item in his workshop circle first.
+- **Corn** — less exciting for food (Romans don't know polenta yet) but useful as
+  animal feed.
+
+### Required Scenes (one per Part maximum)
+
+1. **(Part I)** Daniel's first meal in Rome and his private horror — no interior
+   monologue of complaint; show it through what he does and doesn't eat.
+2. **(Part II or III)** Him improving his own food and someone unexpected trying it
+   — Heras, Macer, or a workshop visitor.
+3. **(Part IV or V)** A tavern scene where his food technique has spread without
+   attribution. He sits down and is served something he invented, on a stranger's
+   menu, without his name attached.
+4. **(Part VI — late book)** Tasting a tomato for the first time after the Atlantic
+   return. No speech. One sentence.
+
+---
+
+## SECTION 10: WHAT THE BOOK ALREADY HANDLES WELL — DO NOT CHANGE
 
 The writing agent should not revisit these. They are V1 successes:
 
