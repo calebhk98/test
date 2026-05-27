@@ -807,6 +807,7 @@ SET-PIECE. The first real encounter with Hadrian — voracious, prickly, restles
 - Apollodorus's fall (ch37): Hadrian's architectural ego planted precisely here
 - The ocean gambit deployment (ch36): Hadrian interested but not yet committed
 - Patent law: heard, not enacted; the seed in Hadrian's legal circle
+- **Food:** First New World crops arrive (after Atlantic return). Sweet potato: he roasts one. This is an immediate hit with whoever's nearby. Corn: he grinds it for polenta-style. These are small moments, not speeches. Two to three sentences each. He is ~40 years old and this is the first time in over twenty years he has eaten something that tastes exactly like it should.
 
 **V2 additions over V1 baseline:**
 - Daniel's real-time pivot shown in the body — one hesitation, then the turn
@@ -887,6 +888,7 @@ Hadrian's enmity destroys Apollodorus of Damascus — the one peer who ever met 
 - Lucanus as someone who will eventually carry things forward
 - Daniel's deepened loneliness: the peer is gone; there is no one left in Rome who meets him as an equal
 - The plumb-line carried forward silently
+- **Food:** Tomatoes arrive (1–2 seasons after first contact). He grows them. First harvest → he makes a basic tomato sauce and puts it on pasta. THREE SENTENCES MAXIMUM. No commentary. He eats it. Puts down the bowl. Ketchup follows within weeks — one sentence: he makes it, gives some to Gnaeus, Gnaeus puts it on the menu.
 
 **V2 additions over V1 baseline:**
 - Two BLOCKING CUTS from V1 text: L75 and L17 (as noted in V2_CHAPTER_CHANGE_NOTES)
@@ -1001,6 +1003,7 @@ The encyclopedia in earnest. Daniel writes it first in English, partly in Latin:
 - The hooked stroke: Procula will use this in ch52 to find the unsolved problems
 - The clock note: direct pipeline to Procula's escapement discovery
 - The cipher: the English-language content as the hidden layer
+- **Food:** Note that some of his food introductions are spreading without attribution. "Barbarian pasta" appears in a tavern somewhere — he hears about it secondhand. He does not comment. The diffusion is imprecise and mostly unattributed. This is a background note, one sentence or two, not a scene.
 
 **V2 additions over V1 baseline:**
 - FOUR BLOCKING FIXES as specified
@@ -1112,6 +1115,7 @@ A domestic chapter that earns the stakes. Marcia, the children, the ordinary lif
 - The physician succession line: Zoticus with the protocols
 - The daughter as potential cipher-keeper
 - The hole in the song: carrying forward without resolution
+- **Food:** Cacao/chocolate scene — he makes hot chocolate. Shares it with Heras or Macer. Watches their faces. He doesn't explain what it is. ONE EXCHANGE. He gives the name of the plant wrong — a word he half-remembers from school, which is not right, which he knows is not right. He does not correct himself. Execute exactly as specified in the cacao scene brief: roasted, ground, mixed with honey; served; no speech; wrong name; done.
 
 **V2 additions over V1 baseline:**
 - THREE BLOCKING CUTS as specified
@@ -1252,6 +1256,7 @@ Daniel aging — the body failing in an era without medicine he cannot make. The
 - The clock note: Procula's discovery (ch52) depends on this
 - The variolation groundwork: the Antonine Plague (165 AD) is ten years after Daniel's death; he is building for people not yet born
 - The encyclopedia's physical security taking shape
+- **Prize:** Note that the prize model is now a recognized trade practice. Craftsmen seek him out asking about open specs. He posts without thinking much about it anymore. A background note — one or two sentences; the model has escaped his workshop and become a feature of the commercial landscape around the collegium; other patrons run variant versions.
 
 **V2 additions over V1 baseline:**
 - Steam/rail argument to Antoninus Pius (~145 AD) — polite non-action on the page
@@ -1357,6 +1362,7 @@ Daniel's death, far from home, not tidy. The loneliness met head-on at the end. 
 
 **Plants:**
 - Nothing — this is a payoff chapter; no new plants
+- **Food:** Late-life garden tomato — he eats a tomato from his own garden. ONE SENTENCE. No commentary. Earned by now. This is food thread beat 4 of 4 — the arc's true ending; not triumph, not commentary, just an old man eating a tomato from his garden in his last years.
 
 **V2 additions over V1 baseline:**
 - Tomato beat placed here if not in ch48 (one sentence, no speech)
