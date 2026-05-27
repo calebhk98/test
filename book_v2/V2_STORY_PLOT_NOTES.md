@@ -398,7 +398,26 @@ corps) from Augustus's time — Daniel should know the institution exists and ar
 for improving it: standardized bucket chains, neighborhood fire-break zones,
 regulation of wooden-balcony construction. Show the political resistance honestly.
 
-### 4.6 Heliocentrism in conversation (Part III — Heras and the educated circle)
+### 4.6 Crossbow spanning aid (Part II — army contact, Dacian campaigns)
+
+When Daniel first gets serious access to Roman military equipment through Celer, he
+sees the arcuballista (Roman crossbow) and immediately understands what it's missing.
+He doesn't know the term "goat's foot lever" but he knows the concept: mechanical
+advantage applied to the string. A simple L-shaped hook on a lever that catches the
+string and multiplies force. He sketches it. Hermes builds a prototype.
+
+The training argument is what he leads with when selling this to Celer: "How many of
+your replacements arrive knowing how to shoot a bow?" The answer is almost none.
+Legions constantly replace casualties; longbow skill requires childhood training.
+Crossbow skill requires weeks. This is not a weapons improvement argument - it is a
+military manpower argument, which is what a general actually cares about.
+
+Required scene: Daniel with Celer, the sketch, the prototype, the training-time pitch.
+Celer does the math himself without prompting. This is one of the cleaner instances
+of Daniel's cognitive edge: he knows what matters to the person he's selling to, so
+he leads with that instead of leading with "it's more powerful."
+
+### 4.7 Heliocentrism in conversation (Part III — Heras and the educated circle)
 
 Once Daniel has a standing relationship with educated Romans (Heras, the contest
 community, eventually Hadrian's circle), he must state aloud that Earth orbits
@@ -823,14 +842,87 @@ Daniel might actually note this in the encyclopedia. Something like: "The wheel 
 
 Daniel knows what a slot machine is. He cannot build one - proper slot mechanics require calibrated springs and reel stops beyond Phase A-B metallurgy. He doesn't try to build one. The spinning wheel is close enough for now, and the card games are better business anyway. The slot machine is a mental note for a writer working in Phase D-E if they need a new revenue mechanism.
 
-### Required Story Beats (one per Part)
+### The Sportsbook: The Earliest Opportunity
 
-1. **(Part I)** Discovery: Daniel loses coins at Roman dice and catalogs the observation. No business plan yet - just "noted."
-2. **(Part II or III)** First card game introduction at a dinner party or workshop gathering. He teaches Go Fish or War to mixed company. The social reaction (confusion, then delight, then loud argument about rules) is the scene. He realizes what he has.
-3. **(Part III)** First formal casino operation. Small, attached to a workshop space. The magistrate problem surfaces and has to be navigated.
-4. **(Part IV)** Poker introduction. By now card culture exists and he has an audience that can handle a complex game. The bluffing mechanic causes immediate cultural friction - Romans are not used to a game where lying is the *correct* strategy.
-5. **(Part IV or V)** Flashcards - Tyche's accident, Daniel's recognition, the educational product line launch.
-6. **(Part V, optional)** The spinning wheel / proto-roulette, after steam-era metallurgy makes the mechanism reliable enough to run continuously.
+This predates cards, the press, and the casino. Daniel can do this in Part I.
+
+Romans bet massively on chariot racing (the Circus Maximus held ~250,000 people; the four faction colors - Blues, Greens, Reds, Whites - had passionate fans who wagered on every race) and on gladiatorial fights. Street bookmakers take bets at emotionally driven odds and occasionally get wiped out when the crowd's favorite wins. They have no systematic understanding of expected value.
+
+Daniel does. He knows that if you set the odds so the total implied probability across all outcomes exceeds 100%, you profit on every race regardless of winner. He is the only person in Rome who understands this. A formalized betting operation - taking structured bets on publicly observable outcomes with mathematically set lines - requires no press, no workshop, no Macer. It requires starting capital, a good location near the Circus, and knowledge he already has.
+
+This is his first independent income, before the balloon money, possibly before Macer's arrangement solidifies. He doesn't do it openly; he does it through an intermediary or a small operation attached to a tavern. He learns Roman gambling culture from the inside while running it.
+
+The sportsbook also teaches him Roman social dynamics faster than anything else: who has money, what they care about, how rumors spread, which officials are reachable and at what price. It is education disguised as income.
+
+He eventually steps back from active sportsbook operation once he's wealthy enough not to need the edge. But he keeps the mathematical understanding. It informs how he sets casino house margins for the rest of his life.
+
+### What Already Exists: Games Daniel Finds, Not Invents
+
+Several things Daniel "introduces" he actually discovers already exist in Rome:
+
+**Latrunculi (checkers-adjacent):** A Roman grid game with black and white pieces, capture mechanics, and a clear strategic objective. It is not modern checkers - movement rules differ, no forced captures, more like a siege game - but Daniel recognizes it immediately as a cousin. He introduces the modern draughts ruleset as "the Thulean variant": diagonal movement, forced captures, faster and more decisive. Romans adopt it as a competitive improvement on a familiar form. He does not claim to have invented it.
+
+**Tabula (backgammon-adjacent):** Romans play tabula on the same board concept as modern backgammon - two players, pieces moving around a track, dice determining movement - but with different rules. Daniel knows modern backgammon specifically. He introduces it as a rule variant. Backgammon's specific victory conditions and hit/enter mechanics make it sharper and more strategic than tabula. Spreads without the press; just teach it to a few people.
+
+**Terni lapilli (tic-tac-toe):** Already exists, scratched into Roman pavements everywhere. Daniel finds a child playing it and has a moment of pure temporal vertigo. He says nothing. He does not introduce tic-tac-toe. This is a small grace note for a writer: the familiar in the alien.
+
+**The lottery:** Augustus ran prize lotteries at Saturnalia; Nero ran lotteries where prizes could be ships or apartment buildings. The lottery exists. Daniel doesn't invent it; he scales it.
+
+### Bingo: The Press-Native Game
+
+Bingo is genuinely new and requires only what the press provides. Printed cards with a unique number grid (each card different), a bag of numbered tokens, a caller who draws and announces. Every tavern can run a nightly game. He licenses the format, sells printed cards for a few coins each, the tavern takes entry fees. No moving parts. No equipment beyond the cards and the token bag.
+
+This is a Part III product - once the press is running efficiently enough to produce large batches of unique cards. The "uniqueness" of each card is the trick: he prints enough variation that no two players in a session hold the same card. Roman crowds who already love public spectacle and announced outcomes take to this immediately.
+
+### Lottery Scaling with Printed Tickets
+
+The existing Roman lottery is small-scale and local. Printed numbered tickets make it scalable across the empire:
+
+- Consistent, verifiable tickets (harder to fake than tokens or marked clay)
+- Published results in the press (everyone reads the same winning number)
+- Multi-city draws (sell tickets in Lugdunum and Alexandria, draw in Rome, announce results in the press the following week)
+- **Government partnership:** Daniel can pitch funding a public aqueduct extension or library construction via lottery proceeds. Split the take with the relevant magistrate - 30% to the public project, 70% to Daniel's operation. The government gets infrastructure without a Senate budget fight; Daniel gets political cover and a substantial cut. This is the invention of the state lottery, dressed up as civic patronage. Romans understand civic patronage. They are receptive.
+
+Government partnership makes the lottery legal by definition. This is a cleaner legal path than the casino operation and should probably come first.
+
+### Keno: The Casino Format Lottery
+
+Keno is a faster version of the lottery designed for a dedicated gaming house rather than a weekly draw. Players pick numbers from a set (say 1-80); the house draws 20 numbers; payouts scale by how many of your picks matched. Faster than a weekly lottery, more engaging than waiting for a single winning number, and the house advantage is built into the payout structure the same way as blackjack.
+
+This runs continuously in the casino alongside card games, giving customers who don't want to learn cards an easy on-ramp. No reading required - just pick numbers and watch the draw. The Hindu-Arabic numerals on the board are free advertising for the numeral system.
+
+### Dominoes: A Different Product Category
+
+Playing cards are a suit-and-rank system. Dominoes are a pure numerical matching system - tiles with pip counts on each half, matched end-to-end. The games are completely different in feel and social dynamic.
+
+Daniel can produce dominoes from:
+- **Printed card stock** with pip markings (cheapest, wears out fastest - good for the repeat customer model)
+- **Carved bone or ivory tiles** for luxury sets (sold to wealthy households; Macer buys a set immediately once he sees it)
+- **Clay tiles fired in a kiln** (durable, cheap to produce in bulk, eventually)
+
+Different games: basic matching (no arithmetic, any age), block dominoes (strategy), and scoring variants where pip counts add up (arithmetic required, same forced-learning dynamic as 21). Adds variety to the press's product line without competing with cards - the customer who owns a card deck will also buy a domino set.
+
+### Word Puzzles: A Press Product for the Literate Class
+
+Romans already have word puzzle culture. The Sator square (SATOR AREPO TENET OPERA ROTAS - a 5x5 Latin palindrome readable in all four directions and backwards) is a known Roman artifact. Acrostics and word games circulate among the educated. Daniel formalizes and mass-produces this:
+
+- **Word search grids** (printed, solvable, new puzzle each issue of the press)
+- **Logic problems with numerical answers** (targeted at the new-numeral literate merchant class)
+- **Number puzzles** (fill-in grids using positional notation - not quite sudoku, but the concept)
+- **Acrostic puzzles** (first letter of each line spells a word or phrase)
+
+Sold as a separate press product, not bundled with cards. Targeted at educated buyers who find cards beneath them. A senator might consider playing cards with slaves undignified but would not feel the same about a printed logical challenge. This gets the Hindu-Arabic numerals in front of the educated class through a status-neutral channel.
+
+### Required Story Beats (one per Part, roughly)
+
+1. **(Part I)** Discovery beat, two parts: (a) Daniel loses coins at Roman dice, catalogs the observation - "noted"; (b) a few months later, he finds a child playing terni lapilli and has a moment of temporal vertigo he doesn't explain to anyone. The sportsbook idea clicks into place around the same time. No business plan articulated aloud - just the look on his face.
+2. **(Part I or early II)** Sportsbook begins. Small operation, through an intermediary. The mathematics of expected value, his only real competitive advantage this early, rendered on the page without spelling it out. The other bookmaker he's quietly competing with doesn't understand why he keeps winning.
+3. **(Part II or III)** First card game introduction. Go Fish or War at a workshop gathering, mixed company, wildly uneven social strata at the same table. The social reaction - confusion, then delight, then an argument about rules in two languages - is the scene. He realizes what he has.
+4. **(Part III)** First formal casino. Small, attached to workshop space. The legal/political question handled through Macer. Backgammon and the updated latrunculi rules visible in the background - these spread without him actively pushing them.
+5. **(Part IV)** Poker introduction. Card culture now exists. Bluffing mechanic causes immediate cultural friction: Romans are not accustomed to a game where lying is the *correct* strategy. Someone accuses the winner of impiety. This is a real scene.
+6. **(Part IV or V)** Flashcards - Tyche's accident, Daniel's recognition, the educational product line launch. The numeral flashcards go to merchants. The letter cards go to children. Different customers, same press run.
+7. **(Part V, optional)** Lottery government partnership. Daniel brings the printed-ticket lottery to a magistrate as a civic funding mechanism. The pitch, the negotiation, the cut. Legal cover achieved.
+8. **(Part V, optional)** The spinning wheel / proto-roulette, after steam-era metallurgy makes the mechanism reliable enough to run continuously. A brief scene; no need to dramatize the engineering.
 
 ---
 

@@ -130,6 +130,25 @@ make the Phase B metallurgy program faster.
   raised this. It is the single most indefensible V1 omission. FIX: Add rag paper
   in Phase B; show Daniel experimenting with pulp consistency and sizing (starch
   paste to prevent ink bleeding). [EASY WIN]
+- **Crossbow improvements (spanning mechanism + bolt standardization)** — Rome
+  already has the arcuballista (handheld crossbow) and manuballista; Daniel's
+  contribution is not invention but systematic improvement.
+  - *Goat's foot lever spanning aid:* Simple L-shaped lever with a hook that
+    catches the string; provides 3:1 mechanical advantage; Daniel knows the
+    principle, Hermes works out the implementation. Lets a soldier span a heavier
+    draw-weight bow without years of conditioning. One smith, a few weeks.
+  - *Bolt standardization via printed templates:* A printed template sheet showing
+    exact bolt length, head weight, and fletching angle distributed to army
+    armories. Consistency of ammunition dramatically improves effective range.
+    Zero materials cost beyond a printed sheet. [EASY WIN]
+  - *The training argument:* A longbow archer requires years of muscle development.
+    A crossbow operator is functional in weeks. For a legion that needs to replace
+    casualties, this is the killer argument. Daniel pitches it to Celer in exactly
+    those terms: "How many of your replacements arrive knowing how to shoot?" The
+    answer is almost none. Crossbows solve that without waiting for childhood
+    training programs.
+  [PHASE B achievable: spanning lever and standardization NOW; see Phase D for
+  steel prods]
 
 **Enables next phase:** Water-powered bellows addresses temperature control for
 steel. Rag paper cuts printing costs, enabling wider distribution. Soap + distilled
@@ -281,6 +300,16 @@ proposal to Hadrian makes the institutional-innovation thread concrete.
   First historical Newcomen engine (1712) ran this way and was useful.
   [PLAUSIBLE IN 15–25 YEARS from workshop establishment — achievable by ~120 AD
   with the boring bar and water-powered bellows already in place]
+
+- **Steel crossbow prods** — composite (wood/horn/sinew) crossbow prods replaced
+  by hardened steel. Steel prods deliver dramatically higher draw weight and are
+  weather-resistant (sinew and horn degrade in wet campaigns; steel does not).
+  Gated on Phase C-D metallurgy improvements. Daniel sets this as a prize
+  competition: specifies required draw weight and shot count before failure;
+  Hermes's forge and two competing smithies race for the prize. Steel prods on
+  hand crossbows make them effective against light armor at 50-80 meters.
+  Steel prod scorpio bolt-throwers extend effective siege range by approximately
+  30%. [PHASE D: steel quality now sufficient]
 
 - **Army applications** — tethered unmanned observation balloons (the vow covers
   manned fire-flight only), field sanitation, food preservation, mapping. Moral
