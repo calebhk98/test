@@ -82,7 +82,7 @@ Section 6, Part III beats).
 - 5-7 standing judges, renewed on a rolling basis so no single panel member builds
   permanent gatekeeping power
 - Deliberately cross-class: at least one judge with a freedman or slave background
-- At least one woman in the panel by Part VI (after the woman-wins beat in ch41)
+- Women serve on the panel. Daniel expected trouble on this. He did not get any.
 - Daniel is not on the panel after Part III — too politically exposed; his
   involvement becomes administrative rather than evaluative
 
