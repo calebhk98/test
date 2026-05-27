@@ -116,10 +116,12 @@ This undermines the premise. Required V2 divergence milestones:
   differs because of Daniel's input to Apollodorus)
 - **By 110 AD:** Rag paper in use at the press; Volta pile demonstrated to Heras;
   the Eratosthenes proof is in the encyclopedia
+- **By 115 AD:** First Atlantic crossing proven (dead reckoning + compass + trade winds;
+  no marine chronometer needed — Columbus did it the same way in 1492). Daniel is ~34.
 - **By 121 AD (ch36):** Hadrian's Ocean Program is the explicit hinge; this is correct
-  in V1, keep it
+  in V1, keep it — but now it's the SECOND-wave colonial program, not the first crossing
 - **By 138 AD:** Four visible divergence signs on the page (printed books, new numerals
-  on stone, third ocean hull, contest culture)
+  on stone, third ocean hull, contest culture, card games everywhere, casino revenue)
 
 ### Change 5: Six required story additions
 1. **Lead poisoning** — Daniel is "the emperor's water-man" and loves Rome's lead pipes.
@@ -139,6 +141,10 @@ This undermines the premise. Required V2 divergence milestones:
 6. **"All tracks lead to Rome"** — The bible called for this reframing of "all roads
    lead to Rome." It appears nowhere in V1. Must appear in V2 — Daniel's line, or
    Felix's, or a later generation's.
+7. **Gambling and card games** — Romans love gambling; Daniel discovers this in Part I
+   and builds on it over decades. Cards (from the press) + house-advantage math he
+   uniquely understands = his earliest reliable passive income. Flashcards as accidental
+   educational byproduct (Part IV-V). See `V2_STORY_PLOT_NOTES.md` Section 10.
 
 ---
 

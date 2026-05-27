@@ -130,16 +130,31 @@ What Daniel does NOT need for the basic crossing:
 - Gunpowder cannons (he has them)
 - Balloons (he has them)
 
-**Revised timeline:**
-- The marine chronometer IS still a goal (for precise longitude, safer navigation)
-- But the FIRST crossing doesn't wait for it — it uses dead reckoning just like
-  Columbus
-- First expedition: approximately 130–135 AD (Daniel age 49–54)
-- Daniel is ALIVE for the first successful crossing and its return
-- He is likely still alive for the second expedition and early resource return
-  (crops, knowledge)
+**Revised timeline (the 30-year estimate was wrong; 15-17 years is accurate):**
+
+What Daniel actually needs and when he gets it:
+- **Compass:** 3-5 years (he knows the magnetized-needle principle; lodestone and iron exist)
+- **Trade wind knowledge:** Immediate - it's already in his head. "Southwest to ~28°N,
+  catch the westerlies, 5-6 weeks, return at ~40-45°N." He knows the Columbus route.
+- **Ships:** NOT a bottleneck - Roman cargo ships of 300-500 tons are already better
+  than the Nina/Pinta. Romans sailed the Indian Ocean monsoon route. Their shipwrights
+  can modify a hull for open-water swells once Daniel describes what he needs.
+- **Wealth:** Solid by ~108-112 AD (Phase C transition)
+- **Political standing:** Enough by ~110-115 AD to not be stopped
+
+Timeline that follows from these:
+- Compass working: ~103-105 AD
+- Serious expedition planning begins: ~108-110 AD
+- Expedition preparation (ship modifications, provisioning, crew): 2-3 years
+- **First crossing: ~112-115 AD (Daniel age 31-34)**
+- Daniel is ALIVE for departure AND return
+- Second expedition and early resource return: ~116-120 AD
+- He is likely alive for the beginning of the colonial program
 - He may die before a permanent colony is established, but NOT before the crossing
-  is proven
+  is proven multiple times
+
+The 30-year estimate assumed he'd wait for chronometer-level precision. He would not.
+A driven person who KNOWS what is on the other side does not wait 30 years.
 
 **The crossing's consequences** (note these briefly in relevant chapters):
 - Proves his world map (the Thule/western lands he described were real)
@@ -675,7 +690,129 @@ An American teenager in ancient Rome has a food crisis from day one:
 
 ---
 
-## SECTION 10: WHAT THE BOOK ALREADY HANDLES WELL — DO NOT CHANGE
+## SECTION 10: THE GAMBLING AND GAMES EMPIRE
+
+### The Discovery Moment
+
+Daniel doesn't arrive knowing Romans love gambling. He finds out the hard way - maybe someone takes his last coin at dice in week two, or he watches a crowd around a street corner and discovers it's a craps game. Romans gamble on everything: chariot races, gladiator outcomes, dice in every tavern, even which raindrop runs down a wall first. The laws technically prohibit gambling outside Saturnalia but are ignored so comprehensively they barely count as laws. Once he understands this, an entire business model clicks into place.
+
+This is a Part I / early Part II discovery. He doesn't act on it immediately - he's busy surviving. But it goes into the mental file alongside "lead pipes" and "no soap": things he knows he'll come back to.
+
+### Card Games Daniel Knows
+
+A modern teenager has absorbed dozens of card games through childhood and adolescence. He doesn't need to design them from scratch - he just needs cards to exist first (which his press provides). His inventory includes:
+
+**No reading required (playable by anyone):**
+- Go Fish - cards with symbols/pictures, matching mechanic; children and non-readers learn in ten minutes
+- War - pure comparison game, no strategy, even a child understands
+- Snap / Slap Jack - fast, physical, works in a tavern crowd
+- Spoons - chaotic, spatial, requires no literacy; famous for breaking furniture
+
+**Simple counting games (light literacy, heavy on math intuition):**
+- Blackjack / 21 - Daniel knows the exact odds; he is the house and he is never losing money on this game long-term
+- Basic trick-taking - the skeleton of Hearts, Spades, Euchre; suits and numbers, follow suit or trump
+
+**Social/deception games:**
+- Kent / Cheat - players secretly signal or lie about what cards they hold; Daniel has seen this destroy friendships at lunch tables
+- Poker - too complex to introduce immediately, but by Part IV (once card culture is established) he introduces the bluffing mechanic and it spreads like fire
+
+**Teaching games:**
+- Rummy / Gin Rummy - melds and sets; rewards pattern recognition; spreads into literate merchant classes fast
+
+Daniel introduces these *in layers*. Go Fish and War first, because anyone can play them after one explanation. The complex games come years later, after card culture exists and people want the next level.
+
+### The Casino Model
+
+Dedicated gambling establishments exist in Rome (popinae, certain thermopolia) but they're informal - someone's back room, a corner of a tavern. Daniel formalizes it.
+
+**What a Daniel casino looks like:**
+- A specific location, probably attached to one of his workshop compounds or a building he acquires
+- Multiple card tables running different games simultaneously
+- House dealers (his people; trained; consistent rules)
+- Printed rule sheets posted on the wall so there are no disputes
+- Betting tokens that exchange for coin (reduces theft risk at the table)
+- A standard deck of printed cards, replaced on a set schedule
+
+**The house advantage - Daniel's actual superpower here:**
+He is the first person in Rome who understands probability and expected value. He *knows* that a 2% house edge on blackjack compounds to reliable income over thousands of hands. He sets his games to be just fair enough that people keep coming back, and just tilted enough that he wins over time. No one else in Rome understands why they keep losing slightly. He doesn't explain it. This is as close to a money printer as anything he builds in Phase A.
+
+**What he bets on externally:**
+Once he has capital reserves and understands Roman gambling culture, he places deliberate bets on things he has inside knowledge of:
+- His own balloon demonstrations (he knows if the weather is right; the crowd doesn't)
+- Book contest outcomes (he reads the submissions before anyone else)
+- Military outcomes where he's been advising tactics (ethically complicated; he mostly avoids this)
+- Craft competition results where he knows the entrants' work
+
+He doesn't do this often and he stops when he's wealthy enough not to need it. But in the early years it's supplemental income on top of everything else.
+
+### Flashcards: The Accidental Education Product
+
+Someone - probably Tyche, probably in year eight or nine - uses leftover printed card stock to make vocabulary drills for a new reader she's teaching. She writes a Latin word on one side, a picture on the other. Daniel watches her do it and has the kind of thought that makes him laugh out loud alone: *flashcards*.
+
+He'd used them to cram for tests. Every student in his era had used them for something. He knows exactly how to design them for maximum retention: word on front, definition + example sentence on back. Space the review sessions. Quiz in both directions.
+
+**The flashcard product lines:**
+- New numeral cards (Roman numeral on one side, Hindu-Arabic on the other) - targeted at merchants and accountants
+- Latin-Greek vocabulary cards - for educated Romans learning Greek or vice versa
+- Letter cards for children learning to read - image of a dog, letter "C" (canis), syllable sound
+- Arithmetic drill cards - targeted at merchants' apprentices
+
+These are sold at a different price point than playing cards and to a completely different customer. A merchant buys numeral flashcards to train his clerks. A mother buys letter cards for her child. Neither of them is the same customer who buys a deck for the tavern.
+
+**The realization:** Flashcards are the press's first product that is *explicitly educational and non-literary*. They establish the press as a producer of useful objects, not just text. This matters for the press's political standing - it's harder to charge the press with impiety if it's selling children's learning tools.
+
+### Cards Wear Out: The Repeat Customer Model
+
+Paper cards without plastic coating last maybe twenty to forty sessions of heavy use before they're bent, stained, and marked. This is not a problem. This is the business model.
+
+- Casual household buyers replace a deck every few months
+- Taverns running nightly games replace decks weekly
+- His casinos replace decks daily (marked cards are a casino's enemy; fresh decks are cheap insurance)
+
+The only customers who want durable cards are cheaters who want to use the same marked deck repeatedly. Daniel's response: make the backs so complex and precisely printed that hand-marking is detectable. He controls the design; no one else can produce a deck with that back pattern. Anyone with an obvious copy is either running a cheat operation or in the counterfeit press business, which he already has political protection against.
+
+**Linen-backed premium cards:** He eventually introduces a higher-grade card with a thin linen layer laminated under the face stock. These last longer and sell at three times the price. Merchants and wealthy households buy them. The cheap paper deck still sells to everyone else. Two price tiers, same game.
+
+### The Games as Literacy Gateway
+
+Playing card games requires: recognizing suit symbols (no reading), reading numbers (light literacy), and eventually reading face card labels. This is a *graduated reading experience* with immediate social reward for improving.
+
+A child who learns Go Fish by symbol recognition starts to notice the printed numbers. He asks what they mean. He learns to count in the new numerals because the cards use them. He tells his friends. This is not Daniel's plan; it's just what happens when you give people objects they engage with daily that happen to have print on them.
+
+The flashcard product line is the deliberate version. The playing card illiteracy-to-literacy pipeline is the accidental version. Both feed the press's cultural footprint.
+
+### The Casino as Political Complication
+
+Rome's gambling laws create a legal gray area Daniel has to navigate. Running a dedicated gambling establishment is technically illegal year-round. In practice, money changes hands. He needs:
+
+- A magistrate who looks the other way (this costs him in favors or flat payments)
+- Framing that avoids the obvious label ("a gaming room for members" rather than a casino)
+- The political standing not to be an easy target
+
+This is a Part II-III problem. By Part IV, his standing is high enough that no one wants the political cost of shutting down the Thulean's gaming rooms. The problem doesn't disappear; it converts from existential to manageable.
+
+The rough characters who try to muscle into his casino operations are also story material. He is not equipped to handle organized criminal pressure alone. He needs Macer (early), then Celer (military credibility), then his own security operation (later). The gaming business has a darker texture than the press.
+
+### The Slot Machine Problem
+
+Daniel knows what a slot machine is. He cannot build one. A proper slot machine requires precision springs, consistent tension, calibrated reel stops, and a payout mechanism that reliably delivers. This is beyond Roman metallurgy in Phase A-B.
+
+What he *can* build: a spinning wheel with numbered segments, spun by a crank, stopped by a simple peg-and-detent mechanism. This is functionally a roulette wheel without the ball and pocket precision. It's crude but it works well enough for a fixed-odds bet. The house edge is whatever he sets by adjusting the segment sizes. He builds this in Part II or III as a tavern novelty, probably at Hermes's forge, probably over several failed prototypes where the peg mechanism jams.
+
+It's not a slot machine. But it's close enough to be addictive, and no one else has ever seen one.
+
+### Required Story Beats (one per Part)
+
+1. **(Part I)** Discovery: Daniel loses coins at Roman dice and catalogs the observation. No business plan yet - just "noted."
+2. **(Part II or III)** First card game introduction at a dinner party or workshop gathering. He teaches Go Fish or War to mixed company. The social reaction (confusion, then delight, then loud argument about rules) is the scene. He realizes what he has.
+3. **(Part III)** First formal casino operation. Small, attached to a workshop space. The magistrate problem surfaces and has to be navigated.
+4. **(Part IV)** Poker introduction. By now card culture exists and he has an audience that can handle a complex game. The bluffing mechanic causes immediate cultural friction - Romans are not used to a game where lying is the *correct* strategy.
+5. **(Part IV or V)** Flashcards - Tyche's accident, Daniel's recognition, the educational product line launch.
+6. **(Part V, optional)** The spinning wheel / proto-roulette, after steam-era metallurgy makes the mechanism reliable enough to run continuously.
+
+---
+
+## SECTION 11: WHAT THE BOOK ALREADY HANDLES WELL — DO NOT CHANGE
 
 The writing agent should not revisit these. They are V1 successes:
 
