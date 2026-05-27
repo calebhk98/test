@@ -41,9 +41,44 @@ Feasibility marks: [EASY WIN] [PLAUSIBLE IN N YEARS] [CORRECTLY BLOCKED — reas
   manage his own workshop and teaches it to Macer's accountants. Spreads via
   printed blank-form ledgers once the press exists. [EASY WIN]
 
+**Coal and oil — two critical energy sources Daniel identifies immediately:**
+
+- **COAL ("lignum fossile" / "carbo fossilis") [PHASE A-B, EASY WIN — material
+  already in empire, just underused]**
+  Romans are ALREADY burning coal in Britain (Vindolanda fort records mention it;
+  Newcastle-area surface seams are exposed and accessible). Daniel knows "burning
+  black stone" from any history class — he asks about it within weeks of arrival.
+  His knowledge: coal burns hotter and more consistently than charcoal; it powered
+  the Industrial Revolution; coal mines flood, and his steam pump will drain them.
+  Action in Phase A: Daniel asks about "burning stone" and locates British coal
+  sources via Macer's trade network; dispatches a factor to investigate. By Phase B
+  (early 100s AD) coal is being shipped from Britain. Coal-fired forge reaches and
+  holds higher temperatures than charcoal → better iron quality sooner → better pump
+  components → atmospheric pump drains flooded coal mines → more coal. The
+  self-reinforcing industrial loop starts here, one commodity at a time.
+
+- **OIL / PETROLEUM [PHASE C-D, MEDIUM DIFFICULTY — material exists, access and
+  refining are challenges]**
+  Bitumen and asphaltum are known in antiquity; oil seeps exist in Mesopotamia
+  (near Ctesiphon), the Dead Sea region, Sicily, and the Apennines. The Baku area
+  (modern Azerbaijan) is known to traders as the "eternal fire" region — Rome has
+  commercial contact with territories that border it. Daniel knows crude petroleum
+  burns and can be fractionally distilled (he already has a worm-condenser still
+  from Phase B). He knows oil is the ultimate energy resource and that "Greek fire"
+  uses petroleum.
+  Action: During or after the Parthian War (Phase C-D), Daniel sends a factor to
+  investigate Mesopotamian seeps; has a sample brought back; recognizes crude oil;
+  begins distillation experiments using the existing Heras-era still apparatus.
+  Immediate uses: cleaner lamp fuel (kerosene fraction burns better than tallow),
+  lubrication reducing mechanical wear on gears and pump rods, possible incendiary
+  compound. Long-term: Daniel cannot fully exploit petroleum in his lifetime, but he
+  writes detailed encyclopedia entries on finding, storing, and refining it — the
+  ladder, not the shortcut.
+
 **Enables next phase:** Numerals give him credibility and money. Germ framing
 gives him patron attention. The map plants the long-term ocean hook. Double-entry
-enables rational capital allocation for the workshop program.
+enables rational capital allocation for the workshop program. Coal-fired forges
+make the Phase B metallurgy program faster.
 
 ---
 
@@ -304,6 +339,51 @@ interests make patent/limited-liability proposals timely.
 - **Institutional securing** — the printing press, the contest, the patronage
   fund, and the keeper-chain must survive him. Three physical copies of the
   encyclopedia + a lead-cased buried copy + keeper-chain deed.
+
+---
+
+## Daniel's R&D Methodology: The Prize Competition Model
+
+Daniel operates like a DARPA program director, not an inventor. He specifies
+OUTCOMES, not methods. He never says "build it this way" — he says "I'll pay X to
+whoever achieves Y by Z date." This is the core mechanism behind every workshop
+advance. He learned it from his own era: the Longitude Prize concept, NASA prize
+competitions, DARPA challenges.
+
+**Why it works in Rome:**
+- Runs parallel R&D without paying for failure — competitors absorb the cost of
+  dead ends
+- Leverages craftsmen's domain knowledge: they know HOW; he knows WHAT and WHETHER
+  it is even possible
+- Distributes risk across competitors
+- Identifies the best approach empirically (he watches what succeeds, not what he
+  predicted would succeed)
+- Maintains plausible deniability about his knowledge source — he never has to
+  explain why he knew a worm condenser was the missing piece; he just offered a
+  prize for "water that burns like wine" and evaluated results
+
+**Prize scales by phase:**
+- Phase A: Small prizes (50–200 HS) for specific material quality improvements —
+  glass clarity, iron purity, soap yield, paper strength
+- Phase B: Medium prizes (500–2,000 HS) for working demonstrations — a pump that
+  lifts water 5 meters, a clock mechanism that runs for a day, a glass you can read
+  through at arm's length
+- Phase C+: Large prizes (5,000–50,000 HS) for major achievements — mine drainage
+  pump, accurate timepiece, consistently clear lens glass
+
+**The public and private faces:**
+The annual TECH CONTEST (already in the book) is the public, institutional face.
+The private prize competitions running continuously in the workshop are the actual
+R&D engine. The contest legitimizes and publicizes; the private prizes drive the
+iteration.
+
+**Key rule — directed prizes, not open calls:**
+Daniel evaluates proposals using his future knowledge to identify which approaches
+are most likely to succeed, then funds those contestants more heavily before the
+prize is awarded. He is not just offering money — he is directing resources toward
+the right solution path while maintaining the fiction that he is merely curious
+about outcomes. This is what separates his program from simple patronage: he is
+betting on horse races he already knows something about.
 
 ---
 

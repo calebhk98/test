@@ -44,23 +44,47 @@ least two concrete, on-page, measurable divergences. Candidates:
 The writing agent does not need to use all four. Two will do. But they must be
 specific and on-page, not asserted in narration.
 
-### 1.2 The flight ban must be narrowed by Part III
+### 1.2 The flight ban must be narrowed — and manned flight must return
 
-After Sabinus dies, Daniel imposes a vow: "no man hung under fire." This vow
-covers MANNED balloon flight and TETHERED-FLAME flight. It does NOT logically
-cover unmanned kites, glider frames, or observation drones.
+**The vow as originally written is a story problem, not a character truth.**
 
-V1 imposed a ~40-year embargo on ALL aerial work. A man who would iterate on
-everything else would not abandon an entire physical domain because of one
-manned-flight accident.
+V1's permanent flight ban covering 40+ years is authorial convenience, not
+characterization. It does not survive scrutiny.
 
-FIX: By approximately 107–109 AD (5–7 years after Sabinus's death), Daniel
-returns explicitly to unmanned and kite-class glider work. The return should
-include a line where Daniel articulates the distinction: the vow was about men
-under fire, not about flight itself. He builds a kite large enough to lift a
-camera (a tied-on obsidian mirror? a weighted string measuring altitude?). He
-tests kite-stability principles. He does not fly manned. The vow is honored; the
-work continues.
+**Reframe the vow (fix for V2):**
+After Sabinus's death (ch13–14), Daniel has a genuine period of grief and design
+review (~1–2 years). The vow is restated on the page as: "I won't put untrained
+people into an untested design." This is about safety protocols, not about
+abandoning the technology. The distinction matters: one is a rational engineer's
+rule; the other is a traumatized teenager's superstition.
+
+Within 5–7 years, Daniel returns to unmanned and kite-class glider work, stating
+the distinction explicitly. The vow is honored; the work continues. By approximately
+107–109 AD, he builds a kite large enough to lift a load and tests stability
+principles systematically.
+
+**Manned flight resumes — the military case is undeniable:**
+Within 2–3 years of the vow (i.e., by ~105–107 AD), the path back to manned flight
+becomes clear: trained operators with many hours of tethered flight time, reinforced
+baskets, explicit written safety protocols, and voluntary operators who understand
+and accept the risk. The Dacian Wars make the case before Daniel even has to make it
+himself: archers 200 feet up are effectively unkillable from the ground, have
+perfect visibility of formation and terrain, and can direct ground troops by signal.
+Trajan watches the first Dacian campaign and the argument writes itself.
+
+No Roman commander would accept "we stopped because one person died in a prototype"
+— they do not apply that logic to catapults, to cavalry charges, or to siege
+engineers assigned to dig under a wall. The logic of "one death stops the program"
+is a 21st-century liability framework; it does not belong in a Roman general's
+mouth, and Daniel knows it does not.
+
+**The better story beat:**
+Daniel DOES struggle with whether to return to manned flight — this is real moral
+weight, not avoidance. The beat is that he chooses to continue, calculating that
+the military advantage saves more lives than the program risks. He sets the
+conditions: minimum 50 hours tethered, double-basket construction, no untrained
+passengers, written waiver. Then he makes the call. This is more honest than a
+ban that somehow survives 40 years of a man who iterates on everything else.
 
 ### 1.3 The Atlantic crossing must happen in Daniel's lifetime
 
@@ -395,7 +419,60 @@ for, which V1 never raised. Each must appear in V2.
 
 ---
 
-## SECTION 7: WHAT THE BOOK ALREADY HANDLES WELL — DO NOT CHANGE
+## SECTION 7: REQUIRED SCENE — THE COMMUNICATION ARGUMENT FOR STEAM AND RAIL
+
+**When:** Part IV or V — during Daniel's rebuilding relationship with Hadrian,
+approximately 120–130 AD.
+
+**What it is:** Daniel makes the explicit strategic argument for steam and rail to
+Trajan or Hadrian (Hadrian is the better audience — he is a traveler, an
+administrator, and genuinely concerned with imperial cohesion).
+
+**The speech (or close to it):**
+> "I knew an empire that fell because its east could not reach its west fast enough.
+> When the east was attacked, the west did not know for months. When help finally
+> came, the east was already broken. Those people learned from this — they built
+> iron roads and steam engines that could carry a message or an army from one end
+> to the other in days, not months."
+
+This is Daniel's strongest argument for investing in steam and rail, and it is
+historically accurate to his situation. A message from Rome to Britain takes
+4–6 weeks in 120 AD. A message from Rome to the Euphrates frontier takes 6–8
+weeks. Daniel knows that the Roman Empire will eventually fragment, and he knows
+communications speed is a structural cause — not the only cause, but a real one
+that a good administrator can understand and want to fix.
+
+**Why this scene is required:**
+- It reframes steam and rail as imperial survival tools, not mere economic
+  conveniences. This changes the political calculus: Hadrian's legal mind and
+  administrative ambitions make him a far better audience for "this keeps your
+  empire from fragmenting" than for "this drains mines more cheaply."
+- It gives Daniel a clean on-page statement of his long-term strategic vision —
+  the thing the book has been building toward for four parts.
+- It explains why Daniel would push this technology even knowing he will never see
+  a locomotive in his lifetime. He is not building a train; he is planting the
+  institutional and technical preconditions for one.
+- Rail and steam are not just industrial — they are the answer to the empire's
+  fundamental structural vulnerability (communication lag), and Daniel frames
+  them this way.
+
+**What the scene should produce:**
+At minimum, a commitment from Hadrian to fund continued research into steam
+mechanisms and iron road-building techniques, and a directive that Daniel's
+atmospheric pump program be extended to test whether its principles can drive
+something that moves rather than merely pumps. Not a locomotive. A commitment to
+the research chain. That is enough.
+
+**Write note:** The scene should not be triumphant. Hadrian is smart enough to
+be skeptical and to ask questions Daniel cannot fully answer yet (how fast, how
+much iron does an iron road require, can it carry an army or only goods). Daniel
+answers honestly where he can and admits the gaps. Hadrian commits to the research
+precisely because Daniel admits the gaps — it reads as honest rather than as a
+sales pitch.
+
+---
+
+## SECTION 8: WHAT THE BOOK ALREADY HANDLES WELL — DO NOT CHANGE
 
 The writing agent should not revisit these. They are V1 successes:
 
