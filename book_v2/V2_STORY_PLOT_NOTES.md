@@ -481,6 +481,7 @@ for, which V1 never raised. Each must appear in V2.
 | Fire-watch improvement | Phase C onward | Pitches to relevant magistrates after first fire | Political resistance; limited adoption; honest defeat |
 | Variolation groundwork | Phase E (145–155) | Sets up empirical program through physician line | Groundwork in place for Antonine Plague, which arrives after his death |
 | Optical semaphore network | Phase D (110–125) | Proposes to army contacts; designs the codebook | Partial adoption on military routes; spreads independently |
+| Prize for Demonstrated Truth | Will / Phase E | Endowed in Daniel's will; does NOT activate in his lifetime | Prize fund held in trust; prize awarded once the research community is large enough to nominate meaningfully - probably 80-100 years after his death. Too small a population of researchers to matter now. He writes in the will: "Hold this until there are enough claimants to argue." |
 
 ---
 
@@ -698,28 +699,40 @@ Daniel doesn't arrive knowing Romans love gambling. He finds out the hard way - 
 
 This is a Part I / early Part II discovery. He doesn't act on it immediately - he's busy surviving. But it goes into the mental file alongside "lead pipes" and "no soap": things he knows he'll come back to.
 
-### Card Games Daniel Knows
+### Card Design: Three Layers in One Object
 
-A modern teenager has absorbed dozens of card games through childhood and adolescence. He doesn't need to design them from scratch - he just needs cards to exist first (which his press provides). His inventory includes:
+Daniel designs the deck from the start to carry three simultaneous information systems on every numbered card:
 
-**No reading required (playable by anyone):**
-- Go Fish - cards with symbols/pictures, matching mechanic; children and non-readers learn in ten minutes
-- War - pure comparison game, no strategy, even a child understands
-- Snap / Slap Jack - fast, physical, works in a tavern crowd
-- Spoons - chaotic, spatial, requires no literacy; famous for breaking furniture
+1. **Pip count** - the number of suit symbols on the card face (seven diamonds = seven of them, visually countable)
+2. **Roman numeral** - VII, printed in the corner; what Romans already recognize
+3. **Hindu-Arabic numeral** - 7, printed alongside it; what Daniel is trying to spread
 
-**Simple counting games (light literacy, heavy on math intuition):**
-- Blackjack / 21 - Daniel knows the exact odds; he is the house and he is never losing money on this game long-term
-- Basic trick-taking - the skeleton of Hearts, Spades, Euchre; suits and numbers, follow suit or trump
+A non-reader can play Go Fish using only the pip count. A child learning to read notices the Roman numeral and already knows it. A merchant's apprentice trying to modernize his accounts sees the "7" and understands it means the same thing. The same physical card teaches three audiences three different things, without any of them being in a classroom.
 
-**Social/deception games:**
-- Kent / Cheat - players secretly signal or lie about what cards they hold; Daniel has seen this destroy friendships at lunch tables
-- Poker - too complex to introduce immediately, but by Part IV (once card culture is established) he introduces the bluffing mechanic and it spreads like fire
+This is not an accident. Daniel designs it this way deliberately. It is the most efficient educational distribution mechanism he ever builds, because it requires zero institutional infrastructure. People take the cards home. They play games. The cards do the teaching.
 
-**Teaching games:**
-- Rummy / Gin Rummy - melds and sets; rewards pattern recognition; spreads into literate merchant classes fast
+### Card Games Daniel Knows (and the Math Curriculum Hidden Inside Them)
 
-Daniel introduces these *in layers*. Go Fish and War first, because anyone can play them after one explanation. The complex games come years later, after card culture exists and people want the next level.
+A modern teenager has absorbed dozens of card games through childhood and adolescence. He doesn't need to design them from scratch - he just needs cards to exist. His inventory includes, roughly in order of mathematical complexity:
+
+**Level 1 - recognition only, no arithmetic (suitable for anyone):**
+- Go Fish - matching numbers by pip count; children and non-readers in ten minutes
+- War - pure comparison (which pile is bigger?); no addition required
+- Snap / Slap Jack - speed and recognition; works in a tavern crowd
+- Spoons - chaotic and spatial; famous for breaking furniture; requires no literacy
+
+**Level 2 - counting and simple addition required:**
+- 21 / Blackjack - you MUST add your cards to know if you're over. This is not optional. A player who wants to graduate from War to 21 has to learn basic addition. Daniel doesn't teach the addition; the game creates the demand for it.
+- Basic trick-taking - follow suit or trump; the skeleton of Hearts, Spades, Euchre
+
+**Level 3 - strategy and probability intuition:**
+- Rummy / Gin Rummy - melds and runs; rewards pattern recognition
+- Kent / Cheat - players signal or lie about cards; Rome is not ready for a game where lying is the *correct* strategy; introduce carefully
+- Poker - too complex for a first introduction; by Part IV, once card culture is established, the bluffing mechanic spreads like fire
+
+**The progression is the curriculum.** Daniel doesn't have to convince anyone to learn math. He releases the games in order, with instruction sheets included in each deck (printed at the press; free with purchase; available separately for a few coins). Anyone who gets bored with Go Fish tries 21. Anyone who tries 21 has to add. The game creates the motivation; the cards provide the reference. Within one generation, basic arithmetic spreads to households that never attended any school, because it is the entry price to playing the next game.
+
+Each deck ships with a folded instruction sheet, woodblock-printed, showing five games from easiest to hardest. The sheet is written in simple Latin with diagrams. People who can't read find someone to read it aloud once and then memorize the rules. Literacy is not required to receive the benefit; it is rewarded if you have it (you can read the sheet yourself) but not gatekept.
 
 ### The Casino Model
 
@@ -773,33 +786,42 @@ The only customers who want durable cards are cheaters who want to use the same 
 
 **Linen-backed premium cards:** He eventually introduces a higher-grade card with a thin linen layer laminated under the face stock. These last longer and sell at three times the price. Merchants and wealthy households buy them. The cheap paper deck still sells to everyone else. Two price tiers, same game.
 
-### The Games as Literacy Gateway
+### The Games as Numeracy and Literacy Gateway
 
-Playing card games requires: recognizing suit symbols (no reading), reading numbers (light literacy), and eventually reading face card labels. This is a *graduated reading experience* with immediate social reward for improving.
+The card design (pips + Roman numeral + Hindu-Arabic numeral on every card) and the game progression (Go Fish → War → 21 → Poker) work together as an involuntary curriculum:
 
-A child who learns Go Fish by symbol recognition starts to notice the printed numbers. He asks what they mean. He learns to count in the new numerals because the cards use them. He tells his friends. This is not Daniel's plan; it's just what happens when you give people objects they engage with daily that happen to have print on them.
+- **Numeracy first:** Go Fish works on pip count alone. War works on comparison alone. A child who wants to play 21 discovers they have to add. The game refuses to let them proceed without arithmetic. Daniel doesn't teach them; the game does.
+- **Literacy follows:** The instruction sheet included with each deck rewards readers (they can learn new games independently) without locking out non-readers (someone reads it aloud once). Over time, being able to read the sheet is a social advantage - worth learning for that alone.
+- **The Hindu-Arabic numerals spread passively:** Every card has "7" on it alongside "VII." Within a generation of card culture existing, children grow up knowing both systems without being taught either as a formal subject.
 
-The flashcard product line is the deliberate version. The playing card illiteracy-to-literacy pipeline is the accidental version. Both feed the press's cultural footprint.
+This is not Daniel's plan. His plan is to sell cards and run games. The educational effect is what happens when you give people objects they hold in their hands every day that happen to carry information on them. The flashcard product line is the deliberate educational version. The playing-card pipeline is the accidental one. Both feed the press's cultural footprint; neither requires Daniel to argue for education reform.
 
-### The Casino as Political Complication
+### The Casino as Political Question
 
-Rome's gambling laws create a legal gray area Daniel has to navigate. Running a dedicated gambling establishment is technically illegal year-round. In practice, money changes hands. He needs:
+Roman gambling law is a research question the writing agent should not confidently answer for the writer. What is known: gambling was technically restricted to specific periods (Saturnalia) by Roman law, but was so widely practiced year-round that enforcement was selective and political rather than systematic. The popinae and taverns ran dice games continuously. The real risk was not the law itself but being an easy political target - a foreigner with no family connections running a gambling house is more vulnerable than a Roman citizen with the right friends.
 
-- A magistrate who looks the other way (this costs him in favors or flat payments)
-- Framing that avoids the obvious label ("a gaming room for members" rather than a casino)
-- The political standing not to be an easy target
+**Daniel's practical options (writer chooses which fits the chapter's era):**
+- Wait until he has enough political standing that he's not worth targeting (Part IV+)
+- Frame it as a private collegium or members' association, which had different legal status
+- Get explicit cover from a patron (Macer early; later his own connections) before opening
+- Start during Saturnalia to establish the games culturally, then continue quietly
+- Simply not call it gambling - "games of skill and chance, played for stakes" occupies a different category than street dice in Roman legal culture
 
-This is a Part II-III problem. By Part IV, his standing is high enough that no one wants the political cost of shutting down the Thulean's gaming rooms. The problem doesn't disappear; it converts from existential to manageable.
+The cleanest story choice: Daniel is cautious enough to ask Macer before opening anything formal. Macer either laughs at him for worrying or tells him exactly who to pay. Either response is in character. By Part IV the question is moot; Daniel is too useful and too connected to be an easy target.
 
-The rough characters who try to muscle into his casino operations are also story material. He is not equipped to handle organized criminal pressure alone. He needs Macer (early), then Celer (military credibility), then his own security operation (later). The gaming business has a darker texture than the press.
+The rough characters who try to muscle in are separate from the legal question and more immediately dangerous. He is not equipped to handle that alone. He needs Macer's muscle (early), Celer's reputation (middle), and his own security operation (late). The gaming business has a darker texture than the press.
 
-### The Slot Machine Problem
+### Roulette and the Precision Flywheel
 
-Daniel knows what a slot machine is. He cannot build one. A proper slot machine requires precision springs, consistent tension, calibrated reel stops, and a payout mechanism that reliably delivers. This is beyond Roman metallurgy in Phase A-B.
+A proper roulette wheel requires a near-perfectly balanced wheel and a ball that rolls without bias - which requires precision bearing manufacture not available in Phase A-B. Daniel knows this. He builds a crude version anyway: a wooden spinning wheel with numbered sections, a simple detent to slow it, players bet on where it stops. The bias is real and noticeable. He compensates by adjusting the payout odds to account for the known bias on his specific wheel. It's entertainment, not a precision instrument.
 
-What he *can* build: a spinning wheel with numbered segments, spun by a crank, stopped by a simple peg-and-detent mechanism. This is functionally a roulette wheel without the ball and pocket precision. It's crude but it works well enough for a fixed-odds bet. The house edge is whatever he sets by adjusting the segment sizes. He builds this in Part II or III as a tavern novelty, probably at Hermes's forge, probably over several failed prototypes where the peg mechanism jams.
+**The interesting long-term dynamic:** Eventually, a century or two later, someone smart enough to exploit wheel bias mathematically will appear. When they do, the casinos of that era have a direct profit motive to fund precision bearing manufacture - not because anyone is thinking about technology for its own sake, but because a better wheel means the house keeps its edge. This is the tech flywheel working in reverse: a commercial problem creating demand for precision engineering.
 
-It's not a slot machine. But it's close enough to be addictive, and no one else has ever seen one.
+Daniel might actually note this in the encyclopedia. Something like: "The wheel will eventually be beaten by mathematics. When it is, whoever builds casinos in that era will be forced to solve precision balance. Problems of this kind are worth preserving; they are future prizes in waiting." Whether he writes this in the main text or in the private English notes is a writer's decision.
+
+### The Slot Machine
+
+Daniel knows what a slot machine is. He cannot build one - proper slot mechanics require calibrated springs and reel stops beyond Phase A-B metallurgy. He doesn't try to build one. The spinning wheel is close enough for now, and the card games are better business anyway. The slot machine is a mental note for a writer working in Phase D-E if they need a new revenue mechanism.
 
 ### Required Story Beats (one per Part)
 
