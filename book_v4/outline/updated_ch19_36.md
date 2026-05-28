@@ -160,7 +160,7 @@ The English alphabet lesson ends the chapter.
   V2_HISTORICAL_IMPACT 107-108 AD row.) This scene belongs in ch20 at the latest —
   assign it here if ch20's ~108-109 AD date allows, or to the early part of this
   chapter's timeframe.
-- BLOCKER canon fix: Tyche is ~14 in 98 AD (born ~85 AD); in ch20 (~108-109 AD) she is
+- BLOCKER canon fix: Tyche is ~14 in 99 AD (born ~85 AD); in ch20 (~108-109 AD) she is
   ~24, not younger. All age references must be corrected. The V1 prose referenced her as
   too young; V2 must make her explicitly a woman in her mid-twenties, with the authority
   that entails. This changes the social texture: she is not a girl being mentored, she is
@@ -1818,7 +1818,7 @@ Hadrian; the ocean-map plan maturing.
 **[V2] Story/Plot additions:**
 - **[C16 — Required: on-page education scene for Lucanus]** Ch34 (~118-122 AD) is the
   appropriate placement for one required on-page education scene for Lucanus (Daniel's
-  son, born ~108 AD, approximately 10-14 years old in this chapter's range). "[Required:
+  son, born ~112 AD, approximately 6-10 years old in this chapter's range). "[Required:
   On-page education scene for Lucanus. He and Daniel discuss something in English — a
   concept, a story, a question Lucanus has been turning over. The planning doc
   (V2_ULPIA_EDUCATION.md) specifies Lucanus's distinctive register: he asks what things

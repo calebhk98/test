@@ -398,3 +398,44 @@ All documents agree on the following:
 - `chapters/ch26.md` (sampled -- Lucanus birth and Daniel name verification)
 - `chapters/ch32.md` (sampled -- Hadrian era, Lucanus age check)
 - `chapters/ch38.md` (sampled -- Ulpia birth year verification)
+
+---
+
+## RESOLUTION LOG (applied 2026-05-28)
+
+### Issues fixed in this pass
+
+The following issues had already been applied to the files before this pass (fixes
+confirmed in the actual file content, despite the audit's "Action taken: FLAGGED"
+notes, which appear to reflect an earlier draft of the audit):
+
+- **C-1** (`bible/02_characters.md`): Lucanus birth year changed to "~112 AD." CONFIRMED already applied.
+- **C-4** (`bible/00_premise.md`): Phone death timing changed to "within days (see world rules -- the phone dies around day three to four)." CONFIRMED already applied.
+- **C-5** (`bible/07_glossary.md`): Daniel's citizen-name template updated to reflect "Marcus Ulpius Danihel" with nomen Ulpius from Trajan's gens (not Flavius from Macer). CONFIRMED already applied.
+- **M-1** (`bible/02_characters.md`): Tyche age anchor changed to "~14 in 99 (born ~85 AD; canon log anchor)." CONFIRMED already applied.
+- **M-3** (`bible/03_timeline.md`): Celer death entry updated to "Celer is ALIVE here and through ch28; he DIES in ch29 (~116-117 AD, Parthian War overreach). See canon log COORDINATOR DECISION." CONFIRMED already applied. ch29 parenthetical in `outline/updated_ch19_36.md` also confirmed already fixed.
+
+The following two fixes were applied in this pass (they were genuinely outstanding):
+
+- **m-4** (`outline/updated_ch19_36.md`, line 163): Changed "Tyche is ~14 in 98 AD" to "~14 in 99 AD." Basis: canon log CHARACTER AGE ANCHOR + ch09 prose (both authoritative; characters file already corrected to match). FIXED.
+- **m-6** (`outline/updated_ch19_36.md`, line 1821): Changed Lucanus "born ~108 AD, approximately 10-14 years old" to "born ~112 AD, approximately 6-10 years old." Basis: canon log anchor + ch26 prose (birth ~112 AD at Trajan's Forum dedication). Age range adjusted to match (~118-122 AD minus ~112 = ~6-10). FIXED.
+
+### Issues left flagged (not touched)
+
+- **C-2**: Lucanus birth year internal conflict in `V2_REVISED_OUTLINE.md` (line 279 "born ~110-111 AD" vs. line 440 "~108-111 AD" vs. canon log ~112 AD). These involve a contradiction between the ch32 prose age ("7-8") and the canonical birth year (~112 AD). Author must decide which is authoritative. LEFT FLAGGED.
+- **C-3**: Three incompatible Part-numbering systems (canon log vs. master_outline vs. V2_REVISED_OUTLINE). Structural author decision. LEFT FLAGGED.
+- **M-2**: Marcia's birth year conflict within the canon log itself (ch22 entry "b. ~73 AD" vs. CHARACTER AGE ANCHOR "born ~74 AD"). Author review required. LEFT FLAGGED.
+- **M-4**: Atlantic crossing departure chapter stated inconsistently across outline files. Structural plot decision for author. LEFT FLAGGED.
+- **M-5**: Part II date range metadata in `master_outline.md` says "99-102 AD" but ch12 is set 101 AD. Cosmetic; low risk. LEFT FLAGGED.
+- **M-6**: Embedded V3 revision note in `master_outline.md` Subplot tracker. Structural reorganization; author decision. LEFT FLAGGED.
+- **m-1**: Not a real conflict; no fix needed (confirmed consistent).
+- **m-2**: Informational; corrections log already in file. No fix needed.
+- **m-3**: Informational; corrections log already in file. No fix needed.
+- **m-5**: Part VI assignment conflict is the same root cause as C-3. LEFT FLAGGED.
+- **m-7**: ch45 prose has pre-V3 cannon framing. Prose revision of ch45.md is a drafting task, not an unambiguous doc fix. LEFT FLAGGED.
+- **m-8**: Tyche's name in characters file header is correct per canon (she is always "Tyche" on the page). No fix needed.
+- **V2_REVISED_OUTLINE.md line 440** ("Lucanus birth ~108-111 AD"): Connected to C-2 author decision; not touched.
+- **V2_REVISED_OUTLINE.md line 279** ("born ~110-111 AD"): Connected to C-2 author decision; not touched.
+
+### Em dash check
+Zero em dashes introduced. All edits used hyphens and parentheses only.
