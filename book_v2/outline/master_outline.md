@@ -523,6 +523,8 @@ steam and rail. The framing is imperial survival, not industrial convenience:
 > and steam engines that could carry a message or an army from one end to the other in
 > days, not months."
 
+[M2 — CHAPTER ASSIGNMENT: This scene appears ONLY in ch35. If any other outline file assigns it to ch38, that is an error — ch38 version should be removed. Resolution: Ch35 is where Daniel plants the communication-lag concept with Hadrian (the semaphore proposal, the east/west framing, this verbatim speech). Ch38 may include a follow-up commitment or reference, but the full speech belongs in ch35. A writing agent covering ch38 should NOT re-write this scene.]
+
 Hadrian is a better audience for "this keeps your empire from fragmenting" than for
 "this drains mines more cheaply." The scene is not triumphant. Hadrian asks questions
 Daniel cannot fully answer. Daniel admits the gaps. At minimum: Hadrian commits to fund
@@ -661,12 +663,9 @@ in the press like everyone else.
   Daniel finds out. He cannot undo the damage. The discovery and aftermath are brief.
   The contest is not a clean good thing.
 
-*Optical semaphore line:* By 130 AD, an experimental optical semaphore line runs from
-Rome to Mogontiacum (Mainz) — approximately 1,200 miles. In good weather, a signal
-travels this route in six to eight hours. In bad weather, in a day. The system is
-military and under army control. Daniel proposed it to army contacts, designed the
-codebook, and printed the codebooks at his press. The relay stations were a construction
-project, not a technology problem.
+*Optical semaphore line:* [M1 CORRECTED] By ~130 AD, the first experimental optical semaphore line runs from Rome to the Adriatic coast (ch40). In good weather, a signal travels this segment in hours. The Rome-to-Rhine line (approximately 1,200 miles, through Gaul and Germanica) requires additional stations and is not completed until ~150–155 AD (ch49) — the Rhine extension is consistent with the longer logistics chain. [The previous version of this entry said "Rome to Mogontiacum (Mainz)" by 130 AD — that is incorrect; 130 AD is the Adriatic line completion. The Rhine line is ch49.] The system is military and under army control. Daniel proposed it to army contacts, designed the codebook, and printed the codebooks at his press. The relay stations were a construction project, not a technology problem.
+
+Rome-to-Adriatic semaphore line operational by ~130 AD (ch40). Rome-to-Rhine line completed ~150–155 AD (ch49) — the Rhine extension requires additional stations through Gaul and Germanica, consistent with the longer timeline.
 
 *First return news from Atlantic colony confirmed inhabited (ch47 area):* When the first
 full expedition return news arrives, the inhabited-coast reality becomes undeniable.

@@ -517,6 +517,8 @@ By 138 AD, four visible divergence signs are embedded (from ch44's Divergence Le
 **[V2] Atlantic/New World:**
 Hadrian's death ends the ocean program's imperial patronage. The Garonne-mouth yard will rot if not separately funded. Daniel considers whether he can fund it personally through Phase E wealth — he can, at high cost. The decision: he funds a caretaker operation, not full development. He tells Ulpia/the collegium to keep the survey current-but-unworked. He relinquishes the private "road west / home" hope, which is distinct from relinquishing the program entirely. The program will be renewed in the 140s when Daniel commissions the funded voyage personally. (V2_HISTORICAL_IMPACT §Ocean Program; bible/03_timeline.md §Divergence Ledger ch46)
 
+[Note: Balloon rigs are standard equipment on ocean voyages from Part V onward. Balloon-equipped ships carry trained operators and crossbow-armed aerial soldiers. This is not optional equipment — it is doctrine by this point.]
+
 **[V2] Prose rules (chapter-specific):**
 - Add one concrete physical detail of Daniel's aging in this chapter — something he cannot do that he could before. The ch47 body-failure thread is the primary aging thread, but this chapter needs one plant. Not the presbyopia (established in ch38); something else — a walk that tires him, a weight he cannot lift, a pain in a specific joint. (V2_CHAPTER_CHANGE_NOTES §ch46 minor addition)
 - The "would not see pushed much further now" plant is acceptable. Do not expand it into an announcement. One additional physical detail is enough.

@@ -1838,6 +1838,44 @@ The Apollodorus dome-recognition plant is load-bearing.
   with what worked with Trajan (military application, direct technical demonstration)
   and watches it fail to land with Hadrian, then pivots. Show the pivot — one moment
   where Daniel reads Hadrian's face, pauses, and changes direction.
+- **[C13 — Required beat: institutional argument to Hadrian]** "[Required beat: Daniel
+  makes the institutional argument to Hadrian. Not a pamphlet campaign — that is the
+  wrong mechanism for this character. He argues directly, in the context of their
+  conversation about the long horizon, that administrative continuity matters more than
+  legal succession theory. His specific argument: an empire that survives on the quality
+  of its individual emperors is an empire that will die when it runs out of good emperors.
+  He is arguing for a institutionalized civil service — documented procedures, trained
+  administrators who serve the position not the man, continuity of function across any
+  succession. He frames it as engineering, not politics: 'A well-built aqueduct does not
+  stop flowing when the engineer who designed it dies.' Hadrian listens because he is
+  exactly the kind of emperor who can hear this argument. He does not commit to acting
+  on it. Daniel does not expect him to. The argument is on the page; whether it takes
+  root is genuinely uncertain. Assign this to ch35 — it fits the first serious Hadrian
+  conversation before the ocean gambit in ch36 brings the forward-looking agenda.]"
+  (C13 correction; audit_rome_fall_prevention.md Better Alternatives section.)
+- **[C14 — "East can't reach west" speech: ASSIGN TO CH35, not ch38]**
+  "[NOTE: The speech where Daniel explains to a Roman leader that an empire that cannot
+  communicate across its borders is an empire that cannot defend itself appears in BOTH
+  the ch35 and ch38 entries in different outline documents. THIS FILE ASSIGNS IT TO
+  CH35. Ch35 is the right placement: Daniel plants the communication-lag concept with
+  Hadrian in this first substantive conversation. The full argument — 'I knew an empire
+  that fell because its east could not reach its west fast enough' — belongs here, in
+  the ch35 encounter, as the setup for Hadrian's ch36 sanction of the ocean program and
+  the semaphore program. Ch38 should NOT contain a second version of this speech. Writers
+  working from updated_ch37_53.md should be directed here: this speech is in ch35.
+  Remove from ch38. NOTE: This speech appears only here. Remove from the other assigned
+  chapter.]" (C14 correction; audit_historical_divergence.md Discrepancy 2.)
+- **[C17 — Remove duplicate playground noticing beat]** This chapter (ch35, ~121-122 AD)
+  is the correct and sole location for the playground noticing beat per V2_ULPIA_EDUCATION
+  planning doc. A visitor or neighbor notices the swing, the slide, the monkey bars in
+  Daniel's garden and asks about it. Ulpia (~age 3) is playing on it. Daniel gives a
+  noncommittal answer and the conversation moves on. One paragraph. The playground is
+  then simply there, used, ambient background for the rest of the book.
+  "[IMPORTANT: The ch38 entry contains a second playground noticing beat ('a neighbor
+  or nurse finds it slightly odd'). That second noticing beat must be REMOVED from ch38.
+  This chapter (ch35) owns the single noticing beat. Ch38's playground reference should
+  be atmosphere only — the structure visible in the garden — not a second moment of
+  social notice.]" (C17 correction; audit_ulpia_education.md Discrepancy 1.)
 
 **[V2] Tech requirements:**
 Phase D/E border. What Daniel brings to Hadrian:
