@@ -256,11 +256,23 @@ Chapter-specific additions:
 **Core beats (V1 baseline — keep unless V2 notes say otherwise):**
 The niter-bed slog (smelly, multi-year, dangerous). A powder accident injures an
 assistant (Geta; must stay at full weight, not a one-liner). Then the public cannon
-demonstration: built knowing Roman bronze cannot hold the pressure, fired from a safe
-distance, it bursts. The argument for better steel made in fire and fear. Trajan's men
-take note. This reverses Daniel's ch14 vow to defer gunpowder — render why he finally
-crosses that line honestly and at a cost: the staged erosion of the vow is the chapter's
-most carefully executed beat.
+demonstration: built in a deliberately thin-walled, long-tube mobile configuration that
+Daniel knows THIS SPECIFIC DESIGN cannot sustain chamber pressure, fired from a safe
+distance, it bursts. The argument is not that bronze cannot work — it is that this
+design cannot work yet. Tighter bore tolerances, shorter tube, fixed-position siege
+mounting: those are the specs Daniel is arguing for. Trajan's men take note. This
+reverses Daniel's ch14 vow to defer gunpowder — render why he finally crosses that line
+honestly and at a cost: the staged erosion of the vow is the chapter's most carefully
+executed beat.
+
+**[V3 CANNON REFRAME — REQUIRED]** The burst proves a specific design fails, not that
+bronze fundamentally cannot hold pressure. Rome already casts massive bronze objects
+(temple doors, statue armatures); the material is not the limit. The limit is bore
+tolerance, wall geometry, and recoil management. A fixed siege bombard in a thick-walled
+short-tube configuration WILL work — this is confirmed by ~118-122 AD. Writers must
+NOT let ch21 become the chapter where Daniel concludes "bronze can never be a cannon."
+He concludes "THIS cannon cannot be trusted in the field." Those are different arguments
+with different downstream consequences.
 
 **[V2] Story/Plot additions:**
 - **[C4a — Required: Steam pump first attempt / blocker diagnosis]** Ch21 is the
@@ -1076,8 +1088,19 @@ Chapter-specific additions:
 **Core beats (V1 baseline — keep unless V2 notes say otherwise):**
 113 AD: the Parthian War begins. Daniel pulled toward army logistics and medicine
 (dysentery kills more than battle). The machine of conquest at full stretch. The
-ocean-map idea germinates as he sees how far Rome will reach for more — rendered as
-half-formed, "a wound with an idea in it. I told no one." No structural changes needed.
+Atlantic expedition is in active preparation — the compass is proven, the trade winds
+are mapped in Daniel's notes, and a ship is being outfitted through intermediaries at
+Gades. Serious planning has been underway since ~108-110 AD. "A wound with an idea in
+it. I told no one" is Daniel's public register; privately, the plan is concrete and
+committed. Render the contrast between Rome's confident eastward overreach and Daniel's
+quiet westward certainty. He watches Rome reach past its supply lines and thinks: there
+is another direction entirely.
+
+**[V3 TIMELINE NOTE — OCEAN ARC]** The "half-formed" and "germinating" framing from
+the V2 brief is outdated. Per the master outline's Atlantic arc: serious expedition
+planning begins ~108-110 AD; first departure ~112-115 AD. By ch28 (~113 AD) the plan
+is years old and the departure is imminent or has just occurred. Do NOT write this as
+the chapter where the idea first takes shape.
 
 **[V2] Story/Plot additions:**
 - The Parthian War in V2 shows Daniel's technologies now fully integrated into Roman
@@ -1161,8 +1184,22 @@ These should be woven in as texture, not announced. The reader who has been with
 since ch01 will notice; no new Roman character needs to explain these as innovations.
 
 **[V2] Atlantic/New World:**
-None yet — the ocean idea is half-formed in this chapter. Do not develop it beyond
-the seed. The full deployment of the ocean gambit to Hadrian is ch36.
+The Atlantic expedition is in active preparation or has just departed as of this
+chapter (~113 AD). Per the master outline, the first departure is ~112-115 AD and
+serious planning began ~108-110 AD. The ocean arc is NOT half-formed here — it is a
+private commitment well underway. Daniel's public silence ("I told no one") masks a
+concrete operational plan, not a vague yearning.
+
+**[V3 C8/C9/C10 PLACEMENT ALERT]** The C8-C10 corrections earlier in this chapter's
+V2 story/plot additions (indigenous mortality figures, syphilis reverse exchange,
+private encyclopedia confession) reference events that follow the expedition's RETURN
+(~116-120 AD). If the first departure is ~112-115 AD and this chapter is ~113 AD, those
+beats belong in whichever chapter covers ~117-120 AD (likely the ch30-34 range). Writers
+should not force C8-C10 into ch28 if the expedition has not yet returned in this
+chapter's timeframe.
+
+The full public deployment of the ocean gambit to Hadrian is ch36 (~121-125 AD), years
+after the first return.
 
 **[V2] Prose rules (chapter-specific):**
 - Gnomic closing watch: "a wound with an idea in it" is called the right register in
@@ -1212,14 +1249,22 @@ The kit-strap grief carried forward is a model "grief through object" beat.
   at a distance. The grief object (kit-strap) must carry the weight; no grief annotation.
   Model: the ch42 treatment of Heras's death — action and absence, nothing stated.
   (V2_CHAPTER_CHANGE_NOTES, ch29 — kit-strap grief model)
-- Atlantic crossing setup: this is the first chapter where the ocean-map idea should
-  begin crystalizing in Daniel's private thinking (building from ch28's half-formed
-  seed). He sees the Persian Gulf and knows Rome cannot hold territory this far from
-  home — but he also knows there is another ocean at the other end of the world, a
-  shorter route to the same wealth. This must remain private and unspoken. Do not
-  articulate the plan; show Daniel looking at water and going quiet.
-  (V2_STORY_PLOT_NOTES §1.3 — this chapter is in the 112-115 AD window for serious
-  expedition planning to begin in Daniel's thinking)
+- Atlantic crossing status: by this chapter (~115-116 AD), the first expedition has
+  either recently departed (if departure ~112-113 AD) or is about to depart (if
+  departure ~114-115 AD). In either case, the idea is not "crystalizing" — it is
+  concrete, funded, and in motion. If the ship has already left, Daniel is east with
+  the army receiving no news from it. If it departs within this chapter's timeframe,
+  show the knowledge of its departure as something he carries privately amid the
+  eastern campaign. He sees the Persian Gulf and thinks about the Atlantic — not because
+  he is first imagining the crossing, but because he committed to it years ago and is
+  waiting. Show Daniel looking at water and going quiet; the reader should understand
+  this is a man with a plan already executing, not one just now forming an intention.
+  (Master outline Atlantic arc: departure ~112-115 AD; "crystalizing" language is V2
+  and should not appear in V3 drafts of this chapter)
+
+**[V3 TIMELINE NOTE — CH29]** The V2 framing "begin crystalizing in Daniel's private
+thinking (building from ch28's half-formed seed)" is obsolete in V3. The seed was
+planted years before ch28; by ch29 the expedition is underway or returning.
 - Balloon archers' moral dimension: V2_HISTORICAL_IMPACT notes Roman casualties at
   Ctesiphon are lower because of aerial observation. Daniel knows his technology
   shortened the siege. He also knows the Kitos War revolts are driven by Roman
@@ -2083,16 +2128,28 @@ it. Hadrian's bounded, consolidator's-version-only response is exactly right.
   to say "uninhabited" when he knows they are not. One moment of hesitation before the
   word, then the word spoken. The lie has been told.
   (V2_CHAPTER_CHANGE_NOTES, ch36; V2_STORY_PLOT_NOTES §1.3)
-- Atlantic crossing timeline: per V2_STORY_PLOT_NOTES §1.3, the revised timeline for
-  the first crossing is ~112-115 AD. But V2_HISTORICAL_IMPACT shows probe voyages from
-  ~125 AD and a funded voyage departing ~149 AD. The reconciliation: Daniel had private
-  conviction earlier; the institutional program Hadrian sanctions in this chapter is
-  the funded probe voyage series beginning ~125 AD; the full crossing is later.
-  Ch36 is the moment Hadrian commits to funding the program — not the crossing itself.
+- Atlantic crossing timeline — V3 CORRECTED: By ch36 (~121-125 AD), the first
+  crossing has already departed (~112-115 AD) AND returned (~116-120 AD) with maize,
+  sweet potato, rubber samples, and an indigenous person currently housed in Daniel's
+  compound. The "uninhabited" lie Daniel tells Hadrian is therefore not a white lie
+  about an unknown continent — it is a deliberate, calculated falsehood he speaks while
+  a living person from that continent exists in his household. This makes the lie MORE
+  egregious and MORE dramatic, not impossible. Writers must show Daniel making this
+  choice knowingly, not as if he is uncertain about the continent's inhabitants.
+
+  The distinction between the two programs: the FIRST crossing was Daniel's private,
+  unofficial operation funded from personal wealth. What Hadrian sanctions in ch36 is
+  the SECOND WAVE — an organized, state-backed colonial program with printed charts,
+  tested hulls, navigation prizes, and imperial sanction. This is why Daniel can still
+  pitch it as "uninhabited" — he is describing the official institutional framing, not
+  what he personally knows to be true. Hadrian gets the official story; the reader and
+  Daniel both know the truth.
+
   Hadrian's "bounded, consolidator's version only" response correctly captures the
-  scale: a single world survey, a western-coast pilot school, a standing prize for a
-  sea-clock. Not an armada.
-  (V2_STORY_PLOT_NOTES §1.3; V2_HISTORICAL_IMPACT Part 4, Ocean Program)
+  scale of what he is sanctioning: a world survey, a western-coast pilot school, a
+  standing prize for a sea-clock. Not an armada. Not acknowledgment that there are
+  people there.
+  (Master outline Atlantic arc: first return ~116-120 AD; ch36 ~121-125 AD)
 - The sea-clock honesty: Daniel cannot build a marine chronometer. He knows this. He
   names it. Hadrian offers the prize for it. This is the correct institutional response —
   Hadrian uses the prize-competition model Daniel introduced, applied to the problem

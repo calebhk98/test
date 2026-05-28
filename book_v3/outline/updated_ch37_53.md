@@ -355,6 +355,16 @@ By ~135–138, four concrete divergence signs are visible per V2_STORY_PLOT_NOTE
 **[V2] Atlantic/New World:**
 The 136 AD probe voyage has returned (the third Atlantic probe extending 800–1,000 miles west). Roman navigators now know the trade wind pattern and the current structure with confidence. Daniel is 54–57 and is actively planning the funded crossing to depart in the 140s. He may discuss this with Marcia or with Ulpia in this chapter — not as an announcement, as a planning problem. The citrus requirement he has already specified; the hull is being refined; the compass and latitude gnomon are standard. This is the approach to the crossing's departure.
 
+**[V3 CACAO NOTE — NOT A CONFLICT]** The master outline assigns cacao's first arrival
+at Daniel's household to ch43 — this is intentional and consistent with the V3
+accelerated timeline. Maize, sweet potato, and tomatoes arrived with the first crossing
+return (~116-120 AD) and have been staples for 15+ years. Cacao is a tropical crop
+from the Caribbean/Central American zone, not encountered on initial North American
+contact. Later expeditions ranging further south sourced it; it reaches Rome in
+cultivable quantities around this chapter's timeframe. The ch43 first-encounter scene
+is correct. Writers: do not treat the ch43 cacao scene as a conflict — treat it as the
+specific crop that took longer to arrive.
+
 [Note: Ocean voyage standard equipment from Part V onward — SECOND WAVE CONFIGURATION (~125 AD+): (1) Balloon rigs: trained operators + crossbow-armed aerial soldiers, established doctrine; (2) Swivel-mounted bronze cannon: 2-4 per ship, bow and stern mounts, firing 10-15 lb bronze balls to ~300 yards standoff range. Enabled by rubber gaskets (waterproof powder storage, from New World rubber ~115-118 AD) + siege bombard bronze casting solved (~117-122 AD) + swivel mount design (recoil absorbed by rotating mount, not ship's hull). These are NOT broadside batteries — lightweight swivel guns that require a 3-man crew each. Ships that carry both balloons and swivel cannon are effectively invulnerable to any indigenous coastal force in the Americas. Writing agents: show this as established capability, not as experimental. The power differential in second-wave New World contact is total and should feel that way to characters on both sides.]
 
 **[V2] Prose rules (chapter-specific):**
@@ -387,9 +397,16 @@ Small concrete signs the trajectory has shifted. The four divergence-ledger sign
 This chapter's structure already matches what V2 requires — the four divergence signs are specifically listed in the Divergence Ledger entry at ch44. The writer should ensure all four are SPECIFIC and ON-PAGE, not asserted in narration:
 - (a) Numerals on a PERMANENT OFFICIAL stone (Aurelian milestone at 2nd mile) — not commercial, official.
 - (b) Printed-codex library off the Argiletum — print output outnumbers hand-copied scrolls; a slave girl reading there.
-- (c) Third open-ocean experimental hull on the ways at the Garonne mouth yard — deep and double-planked, unlike any Roman ship. Honest limit: she floats but CANNOT cross yet; navigation/longitude still unsolved.
+- (c) Third open-ocean experimental hull on the ways at the Garonne mouth yard — deep and double-planked, unlike any Roman ship. Built for colonial transport capacity (deeper hold, more provisions, more passengers than the first-crossing vessels). Honest limit: she is designed to carry settlers and cargo in bulk; longitude-precise navigation for reliable repeat-route sailing is still unsolved (the sea-clock prize is unwon). The crossing itself is a proven 20-year-old fact; what this hull enables is SCALE, not first contact. Do NOT write "cannot cross yet" — crossing has been done; write "cannot navigate the coast with precision yet."
 - (d) Carter's boy (~9) playing/reciting Felix's printed steam-ship contest tale.
 Each sign cuts both ways — the note that each divergence serves power as easily as knowledge is the chapter's thematic braiding; this must be dramatized, not stated. (bible/03_timeline.md §Divergence Ledger ch44)
+
+**[V3 "ALL TRACKS LEAD TO ROME" PLACEMENT NOTE]** This phrase does NOT belong in
+ch44. Sign (d) is Felix's steam-ship tale — a separate beat. Per the master outline,
+"all tracks lead to Rome" belongs in Part VII near the ~149 AD expedition departure
+(ch47-50 range), spoken by Daniel, Felix, or a later contest-community voice. Writers
+should not introduce this phrase in ch44 in any form — it is specifically a Part VII
+payoff beat, not a ch44 divergence sign.
 
 The "each sign cuts both ways" observation: in V1, this was noted but the writing may have stated it. In V2, the chapter should dramatize a single moment where a divergence sign is visibly serving an unintended or dangerous purpose — the figure on the tax-farmer's ledger, the printed text circulating false information, the powder's presence somewhere it shouldn't be. One instance, concrete, not announced. (V2_STORY_PLOT_NOTES §5 note on each sign cutting both ways)
 
@@ -449,6 +466,14 @@ The Bar Kokhba revolt and imperial brutality. Daniel confronts that his gifts se
 [Note: Per planning docs, Bar Kokhba ends 12–18 months early with 20–25% fewer Roman casualties — not 30–35%. Use 20–25% for consistency.]
 - The slave-price column: V2 notes this is the chapter's darkest image and must not be buried. It should be the chapter's climactic image. The economic consequence of Daniel's water-powered machinery and the decimal accounting system is a measurable depression in prices for unskilled heavy-labor slaves. The price of a human being has fallen in the columns of Daniel's own accounting system. He is the cause. He knows it. He has not stopped. (V2_CHAPTER_CHANGE_NOTES §ch45; V2_HISTORICAL_IMPACT §Economic Divergence 130–155)
 - Bar Kokhba as the final sharpening of the hubris-or-duty question: ch45 is explicitly the chapter where this question is "at its sharpest, unresolved." The unresolved quality must be preserved — do not give Daniel a conclusion he does not earn. The right note: he has no answer. He has the question. That is what he carries. (V2_CHAPTER_CHANGE_NOTES §ch45; V2_MASTER_CONTEXT §5 What V1 Got Right — Daniel's moral complicity)
+- **[V3 CANNON — GUILT IS CONCRETE, NOT ABSTRACT]** Per the cannon arc update above,
+  working bronze siege bombards were deployed at Bar Kokhba. Daniel knows his bombards
+  were there. His guilt in this chapter must be upgraded from "I wonder if my powder
+  closed cave-roofs" (V1/V2 framing — abstract uncertainty) to "I know what my siege
+  weapons did to those walls" (V3 framing — concrete complicity). The moral weight is
+  HEAVIER in V3 because the uncertainty is gone. He cannot claim not to know. Writers
+  revising this chapter must replace every construction that relies on Daniel's ignorance
+  of what his powder did — he is not ignorant. He knows.
 
 **[V2] Tech requirements:**
 Phase E context. The tech in this chapter is not being built — it is being reckoned with.
@@ -500,7 +525,13 @@ No primary Atlantic beat required here. The chapter is focused inward on moral r
 
 **[V2] Prose rules (chapter-specific):**
 - CRITICAL: The slave-price column is the chapter's climactic image. In V1 it may be buried mid-chapter. Move it to the chapter's last major scene. It must be the image the reader leaves with. (V2_CHAPTER_CHANGE_NOTES §ch45)
-- The "not-knowing whether my powder closed cave-roofs" beat is explicitly stronger than a clean resolution — preserve this deliberate uncertainty.
+- **[V3 REVISION REQUIRED — REMOVE UNCERTAINTY BEAT]** The "not-knowing whether my
+  powder closed cave-roofs" construction from V1/V2 prose must be removed. In V3,
+  Daniel KNOWS. His siege bombards broke those walls. Replace uncertainty with the
+  specific, unbearable weight of knowing: he does not wonder if his powder was used; he
+  knows exactly what it did. This is the chapter's hardest prose revision. The hubris-
+  or-duty question is sharpened, not softened, by removing the exit of "maybe I didn't
+  know." He knew. He built it anyway. He still doesn't have an answer. That is worse.
 - Do not resolve the hubris-or-duty question in this chapter. Ending on the question, on the weight of it, is correct. Ending on an answer is false.
 - No wisdom-button close. End on Daniel's body, or on the accounting columns, or on a sound from outside. Not on a formulation.
 
@@ -509,7 +540,8 @@ No primary Atlantic beat required here. The chapter is focused inward on moral r
 - [ ] No em dashes.
 - [ ] No wisdom-button close — the question must remain open.
 - [ ] Slave-price column is the climactic image, not a mid-chapter detail.
-- [ ] Deliberate uncertainty ("not-knowing whether my powder...") preserved intact.
+- [ ] V3 CANNON: "not-knowing whether my powder..." construction REMOVED. Daniel knows
+  what his bombards did at Bar Kokhba. Guilt is concrete, not abstract.
 
 **Updated Files list:**
 Mandatory 4: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md (§ch45), bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md.
@@ -522,7 +554,19 @@ Chapter-specific: V2_HISTORICAL_IMPACT.md (§Bar Kokhba Revolt verdict, §War Ou
 **Era/Date:** 138 AD (July 10: Hadrian dies at Baiae). Daniel is ~57.
 
 **Core beats (V1 baseline — keep unless V2 notes say otherwise):**
-138 AD. Hadrian dies; Antoninus Pius succeeds. Another reset, but Daniel is old and the work is institutional now. He watches power pass with a survivor's detachment. The ocean program losing its champion: hulls will rot on the ways; grants shrink; the sea-clock prize will quietly be dropped. Daniel letting go of the private "road west / home" hope. Plant: the handoff to the final movement; Daniel's mortality foregrounded.
+138 AD. Hadrian dies; Antoninus Pius succeeds. Another reset, but Daniel is old and the work is institutional now. He watches power pass with a survivor's detachment. The ocean program losing its imperial champion: hulls will rot on the ways; grants shrink; the sea-clock prize will quietly be dropped. Daniel letting go of the private "road west / home" hope.
+
+**[V3 CLARITY — "ROAD WEST/HOME" DOES NOT MEAN THE COLONIAL PROGRAM]** The "private
+road west/home hope" Daniel relinquishes is his irrational residual fantasy of
+personally returning to 2020s America — the diminishing belief that the western ocean
+might somehow hold a way back to Ohio. It is NOT the colonial program, which continues
+actively. Daniel personally funds the Garonne yard caretaker operation through Phase E
+wealth and will commission the second organized expedition (~149 AD, ch48). He is letting
+go of a private dream, not an institutional program. Writers must make this distinction
+clear in the prose — the colonial machine keeps running; Daniel's private hope of escape
+is what ends here.
+
+Plant: the handoff to the final movement; Daniel's mortality foregrounded.
 
 **[V2] Story/Plot additions:**
 - Antoninus Pius's character is important as context: a conservative, stay-at-home emperor with no appetite for adventure. He is not Daniel's enemy; he is indifferent to Daniel's programs in a way that is worse than hostility. The ocean program will die by neglect, not by opposition. Daniel predicts this with the accuracy of a man who has watched patronage cycles for 40 years. He tells Ulpia (or the collegium): keep the survey current-but-unworked; laid down, not closed. (bible/03_timeline.md §Divergence Ledger ch46)
@@ -636,9 +680,30 @@ The last deaths. Macer (the patron who was cage and shield) — the cage/shield 
 **[V2] Story/Plot additions:**
 - Macer's death and Marcia's death must feel different in tone and weight. Macer is Daniel's first antagonistic patron — the man who owned him, who was never sentimental, who was a cage that looked like a workshop from the inside. His death removes both the threat and the foundation. Marcia's death is different: a partner of equals who chose this life knowing what it was. The grief for each must be distinct — different objects, different body language, different silence. (V2_CHAPTER_CHANGE_NOTES §ch48)
 
+**[V3 REQUIRED BEAT — THE LEDGER FAILS]** After Marcia's death, Daniel attempts his
+habitual coping mechanism: the ledger. Numbers. The accounting of what he has built and
+what still holds. He opens the columns and cannot complete them. The numbers do not
+help. Show this briefly and without commentary: the open ledger, the uncompleted entry,
+him closing the book. Do not explain what it means. A reader who has followed Daniel
+since ch02 (where he used numbers to manage fear in his cell) will recognize the silence.
+This is the only moment in the book where the accounting fails him. It belongs here,
+with Marcia's death, not distributed across "the slow stripping-away." One short scene.
+The book earns it.
+
 [Required: Dual-document scene. Daniel is writing two things simultaneously — his private English guilt-confession (the moral accounting of what the New World contact cost) AND the Latin military quarantine protocol document (clinical, procedural, specific: 'All troops returning from eastern campaigns to be held at designated quarantine points for 14 days before entering populated areas'). The contrast between the guilt-language and the clinical-language is the scene. The Latin document is the thing that will save lives. The English document is the thing that tells the truth.]
 - The "slow stripping-away" texture is the chapter's structural spine. Resist stacking elegies on each other — this is not a memorial chapter but a subtraction chapter. Each loss should be noted in a way that reduces something from Daniel's world without stopping to mourn it with full weight. The grief is in the accumulation, not in any single moment.
-- The Atlantic ship departure (~149 AD per V2_HISTORICAL_IMPACT) happens within this chapter's range. Daniel watching the ship leave — standing last on the dock, knowing the ship will find land, knowing the land is inhabited, knowing he told everyone it was uninhabited, not correcting this. This is one of the book's most important images. It belongs in this chapter or in ch49. (V2_HISTORICAL_IMPACT §Ocean Program; V2_STORY_PLOT_NOTES §1.3)
+- The Atlantic ship departure (~149 AD per V2_HISTORICAL_IMPACT) happens within this
+  chapter's range. This is the SECOND organized expedition — the first crossing
+  (~112-115 AD departure, ~116-120 AD return) is 30+ years in the past. Daniel standing
+  last on the dock is not a man wondering if there is land — he has known for decades
+  that there is land and that it is inhabited. His weight at the dock is different: he
+  knows where the ship is going, he knows what it will find, he knows what Rome will
+  try to do with it, and he cannot stop the machine he built. The "knowing the ship will
+  find land" framing is correct only if it reads as certainty-plus-dread, not
+  mystery-plus-hope. He watched the first ship leave from this same dock. He is older
+  now. He knows more about what returning ships bring back. This is one of the book's
+  most important images. It belongs in this chapter or in ch49. (V2_HISTORICAL_IMPACT
+  §Ocean Program; V2_STORY_PLOT_NOTES §1.3)
 
 **[V2] Tech requirements:**
 Phase E. Daniel is no longer building; he is watching what he built run. The steam pumps operate without him. The press runs. The contest judges submissions without his direction. The last active tech program is the variolation groundwork, which is running through Zoticus. No new tech beats needed; the tech the chapter needs is the texture of established operations. One moment showing Daniel being irrelevant to a process he started is available — he checks on the pump operation and the operator explains a maintenance solution he did not teach. (V2_STORY_PLOT_NOTES §3.3 — the contest entrant who knew something Daniel did not teach; this applies to the tech operations as well)
@@ -749,7 +814,20 @@ Daniel's death, far from home, not tidy. What he never built; what he moved. The
 **[V2] Story/Plot additions:**
 None — with one food arc exception. V2_CHAPTER_CHANGE_NOTES is explicit: no new material, no new wisdom. The brief is explicit: let planted threads land. Do not add content.
 
-[Beat: One final food arc moment. Late in life, Daniel grows tomatoes in his garden — brought back from the New World, now cultivated in Italy. He eats one. Alone. Small moment of a man who changed the world and is now sitting in his garden eating a tomato. No declaration. Just the fruit.] This is food arc beat 4 of 4 per V2_FOOD_ARC.md; it is preservation-protected. One sentence of sensory detail. This does not conflict with the 'no new material' mandate — it is a one-sentence sensory beat in the same register as the warm-brick image in ch47.
+[Beat: One final food arc moment. Late in life, Daniel eats a tomato from his garden
+— New World crops have been growing in Roman households for 30+ years by now; this is
+not a miraculous first taste but a man in his last years eating something ordinary that
+was unavailable for the first two decades of his life here. He sits in his garden. He
+eats it. Alone. No declaration. Just the fruit. The weight is not "I finally got this"
+— it is "I have had this for thirty years and it still tastes like home." One sentence
+of sensory detail. This is food arc beat 4 of 4 per V2_FOOD_ARC.md; preservation-
+protected. Does not conflict with the "no new material" mandate — one-sentence sensory
+beat, same register as the warm-brick image in ch47.
+
+**[V3 NOTE]** Writers should NOT frame this as a late-life miracle first taste. The
+tomato is a 30-year-old fact of Daniel's garden. The emotional register is familiarity
+and loss together — not triumph, not wonder. He has been eating tomato sauce since his
+late 30s. He is in his 70s. The tomato is ordinary and precious for exactly that reason.
 
 **[V2] Tech requirements:**
 No tech beats. The technologies Daniel built are present as ambient world — they are what they are. The correct register: Daniel is not thinking about the steam pump at the end; he is thinking about the field, and being seventeen, and being frightened.
@@ -764,7 +842,25 @@ The cognitive edge is silent in this chapter. At the end, Daniel is not thinking
 The "He Doesn't See It" note from V2_HISTORICAL_IMPACT is the emotional architecture of this chapter: the Antonine Plague arrives ten years after Daniel dies; the steam locomotive is a century away; the Atlantic ship may or may not have returned. He moved rungs on a ladder he will never see someone climb. This is not stated in this chapter; it is the chapter's silence. He does not know. He cannot know. He dies not knowing. (V2_HISTORICAL_IMPACT §Part 6)
 
 **[V2] Atlantic/New World:**
-The ship either has returned or has not. Either way, Daniel does not know the outcome as he dies — or if the ship has returned, the information reached him as incomplete news from far away. He knows the land is there; he does not know what will be made of it. The moral weight of the lie he told in ch03 — "uninhabited" — is not resolved in this chapter. It is resolved, if at all, in ch53.
+**[V3 CLARITY — WHAT DANIEL KNOWS AND DOESN'T KNOW AT DEATH]** Daniel's deathbed
+uncertainty has been updated by the V3 accelerated timeline. What he KNOWS: the land
+is there (proven by the first crossing ~116-120 AD); it is inhabited (he has had
+indigenous people in his compound for decades); New World crops have been growing in
+Roman households for 30+ years (he has been eating tomatoes, sweet potato, and maize
+since his late 30s). He is NOT dying without knowing if the crossing worked.
+
+What he does NOT know: whether the second organized expedition (~149 AD) has returned
+safely; whether its settlement will survive its first epidemic season; what Rome will
+ultimately do with the new world; whether the indigenous populations will survive the
+contact at anything better than the 30-50% mortality he calculated. His deathbed regret
+is not "I wonder if there was land" — it is "I know what the machine I built is going
+to do to the people on that shore, and I cannot stop it."
+
+The "the ship either has returned or has not" formulation refers specifically to the
+second expedition (~149 AD). Either outcome is dramatically valid. What is not valid
+is framing his death as a mystery about whether the western ocean has land — that
+question was answered 40 years ago. The moral weight of the lie he told in ch03 —
+"uninhabited" — is not resolved in this chapter. It is resolved, if at all, in ch53.
 
 **[V2] Prose rules (chapter-specific):**
 - PRESERVATION MANDATE: The mid-sentence death ending is the correct execution. Do not annotate.
@@ -845,7 +941,21 @@ Chapter-specific: bible/02_characters.md (contextual — who is writing the lett
 Years on. The press still runs; the contest is still held. Procula solving the escapement: the pendulum insight — "The rope decided the time. Not the push." The direct payoff of Daniel's ch47 letting-go. The honesty-mark propagating: Procula writes her own rung without the hooked stroke, because she knows what she knows. The "not fewer than two" oath paid forward to the boy. Plant: the climb continuing past the page.
 
 **[V2] Story/Plot additions:**
-- The sea-clock-that-won't-drift-on-a-moving-deck problem is explicitly named but UNSOLVED in this chapter. It must remain open for ch53. Procula has solved the land-based escapement; she has not solved the marine chronometer. The longitude problem is not resolved in Procula's lifetime — it belongs to the generation beyond. (V2_CHAPTER_CHANGE_NOTES §ch52 explicit requirement)
+- The sea-clock-that-won't-drift-on-a-moving-deck problem is explicitly named but
+  UNSOLVED in this chapter. It must remain open for ch53. Procula has solved the
+  LAND-BASED escapement (the pendulum clock — "the rope decided the time"); she has
+  NOT solved the marine chronometer, which is a separate, harder engineering problem
+  requiring spring steel and a different mechanical architecture entirely. The longitude
+  problem belongs to the generation after Procula.
+  (V2_CHAPTER_CHANGE_NOTES §ch52 explicit requirement)
+
+**[V3 NO-CONFLICT CONFIRMATION]** The "sea-clock UNSOLVED" notation in this chapter
+does NOT contradict the master outline. The master outline assigns Procula the land
+escapement (ch52) and the marine chronometer to the next generation (ch53, "the clock
+knocking below decks"). These are two different problems. Procula solving the land
+escapement IS what the master outline requires; the marine chronometer remaining
+unsolved IS also what the master outline requires. There is no conflict here.
+(Master outline ch52/ch53 reading confirmed correct.)
 - If the Antonine Plague (~165–180 AD) is concurrent with this chapter's timeframe, it should be present as backdrop: Procula is working during or in the aftermath of the plague. If Daniel's quarantine protocols held (30–40% reduction in mortality per V2_HISTORICAL_IMPACT), this chapter might show the evidence of that — a city that suffered but survived more intact than it would have, a medical community that knew what to do, a document that preceded the plague by decades. This is the payoff of Daniel's most important program. It does not need to be dramatized — ambient texture is enough: the plague came, the protocols held, Rome's population is recovering faster than in the real historical timeline. (V2_HISTORICAL_IMPACT §Problem 1 Antonine Plague)
 - The "not fewer than two" oath: this is the ladder's self-perpetuating proof — Procula passes forward not just the solution but the protocol. The writer should ensure this oath is made to someone specific (a named student or apprentice), not to "the next generation" abstractly. Specificity is what makes the ladder feel real, not metaphorical.
 
