@@ -253,7 +253,7 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## MARCUS ULPIUS LUCANUS — Daniel's son (ch26+)
-- Born ~108 AD to Daniel and Marcia. 34+ appearances. Law-track child who
+- Born ~112 AD to Daniel and Marcia. 34+ appearances. Law-track child who
   ultimately rejects the workshop in favor of the courts.
 - Function: the child who chooses his own path away from Daniel's enterprise.
   He does not carry the ladder — which is honest and a loss.
