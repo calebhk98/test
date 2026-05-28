@@ -451,7 +451,38 @@ The Bar Kokhba revolt and imperial brutality. Daniel confronts that his gifts se
 - Bar Kokhba as the final sharpening of the hubris-or-duty question: ch45 is explicitly the chapter where this question is "at its sharpest, unresolved." The unresolved quality must be preserved — do not give Daniel a conclusion he does not earn. The right note: he has no answer. He has the question. That is what he carries. (V2_CHAPTER_CHANGE_NOTES §ch45; V2_MASTER_CONTEXT §5 What V1 Got Right — Daniel's moral complicity)
 
 **[V2] Tech requirements:**
-Phase E context. The tech in this chapter is not being built — it is being reckoned with. Daniel's contribution to the Bar Kokhba suppression is aerial observation (the balloon program, now 30+ years mature) and logistics efficiency (decimal accounting, printed maps). No new tech beats needed in this chapter; the technology has already done what it does. What is new: Daniel is facing the accumulated weight of what it has done.
+Phase E context. The tech in this chapter is not being built — it is being reckoned with.
+
+**[CANNON ARC — ch45 CRITICAL UPDATE]**
+The story direction has changed: cannon DOES succeed in Daniel's lifetime. The first
+working bronze bombard test is ~117-122 AD (see ch31-32 outline). By the Bar Kokhba
+revolt (132-135 AD), Rome has working bronze siege bombards. This CHANGES the ch45
+contribution list AND changes the chapter's moral weight considerably.
+
+REVISED contribution list for Bar Kokhba:
+- Balloon observation (strips terrain advantage — existing)
+- Logistics efficiency, decimal accounting, printed maps (existing)
+- Bronze siege bombards: cave-fortress walls breached, not starved out. The revolt ends
+  2+ years early (revised from 14-18 months — now more like 24-30 months sooner)
+  because fortified positions can be reduced in days rather than months.
+- The powder used in cave demolitions: this is NOW known and direct, not the uncertain
+  "I asked no one" of the original ch45 prose. Daniel knows his bombards were there.
+
+CH45 PROSE REVISION REQUIRED:
+The existing ch45 prose says "there is no gun in the world, no cannon a gunner can
+trust" and "the steel to make a tube that does not burst has never come." This MUST
+be revised. The new framing: "there is no gun in the world, no cannon a gunner can
+trust in the field, firing from a moving position at a moving enemy" — distinguishing
+the FIXED SIEGE BOMBARD (which works) from MOBILE FIELD ARTILLERY (which doesn't
+exist yet). The "not-knowing" quality about the powder should shift to the SPECIFIC
+cave demolition applications — Daniel knows his bombards were used, but doesn't know
+every specific use. The moral weight is HEAVIER now, not lighter: he can no longer
+say "I don't know if my powder closed a roof." He knows his siege weapons did what
+siege weapons do. That's the revision needed for ch45.
+
+[NOTE TO WRITING AGENT: Ch45 requires significant prose revision to ch45.md to
+reflect cannon success. The key fix is lines 35-37 of the existing ch45.md prose.
+Read the chapter brief above first, then ch45.md, then revise accordingly.]
 
 **[V2] Finance context:**
 Phase E (~136 AD). The slave-price depression in the accounting columns is a financial fact with a moral weight. Daniel's water-powered machinery has reduced the market value of unskilled labor slaves. He can see this in his own records. He is one of the fifty wealthiest people in the Roman Empire, and part of that wealth came from replacing human muscle with mechanical power, which reduced the price of the humans who used to do that work. He is not separate from the system he hates; he is a mechanism inside it. (V2_HISTORICAL_IMPACT §Economic Divergence 130–155; V2_DANIEL_FINANCES Phase E)

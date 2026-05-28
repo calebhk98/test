@@ -1447,12 +1447,38 @@ army") is the right kind of image.
   Mine Drainage Contract context.)
 
 **[V2] Tech requirements:**
-Phase D. No new tech in this chapter. The existing tech base (press, workshop, contest)
-is holding steady. The relevant V2 note: Daniel's steam pump program is presumably
-underway at small scale by 118 AD per V2_HISTORICAL_IMPACT (first atmospheric pump
-operating in Hispania approximately 118 AD). One brief line acknowledging the program
-is running in a background workshop, not centered here.
-(V2_HISTORICAL_IMPACT, 118-120 row: "First steam pump operating in Hispania")
+Phase D. First steam pump operating in Hispania (~118 AD) — one brief line confirming
+this is underway.
+
+**[CANNON SUCCESS ARC — ch31 placement]**
+By 117-118 AD the precision boring prizes (running since ch21's demonstration, ~10-11
+years of iteration) are beginning to pay off. Hermes's workshop has achieved something:
+a thick-walled bronze tube, short barrel, that holds together through a test firing.
+Not elegant. Not mobile. But it works. The ball goes 400 paces. The wall section
+collapses. This is the moment Daniel has been aiming at since the deliberate burst in
+ch21. "[Required beat (assign to ch31 or ch32 — whichever has space): First successful
+bronze bombard test. Short, thick-walled, crew of 12-15, fixed position. Requires
+15-20 minutes between shots. Fires a 40-lb stone ball. Breaks a test wall section.
+Works. Daniel's reaction: this is not triumph; it is the recognition that the thing
+he has been building toward for 11 years is real, and that what it means for siege
+warfare — for every city wall in the empire's reach — has changed. NOTE: this
+contradicts the current ch45 prose ('no cannon a gunner can trust'). Ch45 needs prose
+revision: reframe to 'no mobile field artillery a gunner can trust' — the siege
+bombard exists; it just cannot be rapidly repositioned in open battle.]"
+
+**[CANNON → RAILS CASCADE — plant in ch31-35 range]**
+The bombard weighs 3,000-5,000 Roman pounds. Moving it from a workshop to a siege
+position requires 150-200 men or a road wide enough for a team of 20 oxen. This is
+not impractical for fixed sieges, but it is ruinously slow for a mobile army. Daniel
+or one of his engineers notices this problem immediately. The solution: temporary rail
+from the nearest navigable water to the siege position. Flatbed carts on greased
+wooden rails, pulled by oxen or mules. The cannon reaches the siege in 2 days instead
+of 3 weeks. "[Plant in ch33-35 range: The cannon's weight problem is what makes
+Daniel (or a military engineer) first seriously argue for rail transport. Not as a
+general industrial system — as a specific military logistics solution. 'If we can
+lay rail from the river to the siege line, we can move the bombard in days.' This
+is the military argument that gets rail taken seriously by Roman generals who would
+never fund an industrial railroad but will absolutely fund a weapon-transport system.]"
 
 **[V2] Finance context:**
 Phase D. Financial damage beginning. Daniel is moving assets, calculating what is
