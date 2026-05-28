@@ -407,6 +407,15 @@ Plant: germ practices spreading without the theory; the balloon idea named.
   them a thing that worked and let them keep their own gods on it." — This is a
   thesis statement as scene close. Trust the scene; trim or relocate this line.
   (V2_CHAPTER_CHANGE_NOTES ch05)
+- [Story note — Atlantic motivation seed: Ch05 is eating Roman food — garum, coarse
+  bread, watered wine — and missing everything. A brief internal moment should surface
+  here: Daniel registers that the crops he wants most (tomatoes, potatoes, corn, cacao)
+  are just across a western ocean he knows how to navigate. He has always known this.
+  The thought is not a plan yet — it is a private inventory of absence. One or two
+  sentences in the chapter prose, not a scene. Plant this here so that when the crossing
+  becomes a real project, the reader understands the motivation has been present from
+  the first weeks. (C3 — Atlantic planning seed; per audit_atlantic_crossing.md
+  Discrepancy 2: "planning from year one" must surface in an early chapter interior)]
 
 **[V2] Tech requirements:**
 Phase A. Two tech additions required: soap (tallow + lye, iterated ratios) and
@@ -588,6 +597,14 @@ half-mocks. Plant: the need for a patron; Vibenius glimpsed reading omens nearby
   Beats" #1a): Daniel loses coins at Roman dice, catalogs the observation. The beat
   is compact — one paragraph; the point is that the observation goes into the mental
   file alongside "lead pipes" and "no soap."
+- (Note: Daniel uses multiple R&D methods — direct hired craftsmen, in-house workers,
+  personal experimentation, AND prize competitions. The prize/DARPA model is his most
+  novel contribution (Romans had no equivalent), but it is ONE tool among several and
+  must appear alongside the others, not replace them. When prize competitions are first
+  introduced in this chapter range, show that Daniel also directly hires specific
+  craftsmen for long-term relationships, has in-house workshop staff, and personally
+  experiments. Prize model gets emphasis because it is novel and cost-efficient; all
+  methods coexist. C7 — per audit_new_gaps.md Gap 8)
 
 **[V2] Tech requirements:**
 Phase B continuing. The iteration failures are themselves the tech record: Daniel
@@ -677,6 +694,16 @@ Daniel's first taste of public power and public danger.
   "rough, dumb, superstitious, obscene; Pompeii-graffiti register." Do not narrate
   around them with "shouted something I didn't catch." Quote at least one heckler
   directly. (V2_MASTER_CONTEXT §Change 2; AGENT_WRITER_BRIEF_V2 Rule 5)
+- [Beat: Sportsbook launches in this chapter. Daniel begins taking formally structured
+  bets on chariot races. He sets the lines so implied probability across all outcomes
+  exceeds 100% — profit guaranteed regardless of outcome, in sufficient volume. He is
+  the only person in Rome who understands this. This is his earliest passive income
+  source, before the press or balloon contract. The expected-value math must be
+  rendered on the page — even one sentence of arithmetic showing the logic — not just
+  referenced as a principle. NOTE: The arc status table in V2_REVISED_OUTLINE.md
+  incorrectly says "ops launch ch10–11" — the correct placement is ch08. The
+  continuity note in the same file confirms ch08. This chapter entry is authoritative.
+  (C6 — per audit_games_gambling.md Discrepancy 1)]
 
 **[V2] Tech requirements:**
 Phase B. Unmanned balloon successfully demonstrated — this is the first public
@@ -921,6 +948,15 @@ Not relevant to this chapter.
 - Remove: subtext-naming line in the free-women payment scene.
 - Cut: burn-scar re-explanation.
 - Plant: water-powered bellows as an idea Daniel articulates.
+- [TIC WARNING: Ch10 prose currently contains the exact TIC V13 frozen-epiphany
+  sentence ("I stood there in my own yard and looked at a fourteen-year-old slave
+  who had taught herself in a week the thing that took the whole Roman accounting
+  profession a generation..."). This is the named example in PROSE_PATTERNS_TO_AVOID
+  under TIC V13. The V2_CHAPTER_CHANGE_NOTES.md missed this specific line. When
+  rewriting, replace with action or dialogue — do not freeze Daniel in place for
+  realizations. Tyche's arithmetic demonstration should be shown through what she
+  does with the ledger, not through Daniel standing and looking. (C8 — per
+  audit_prose_tics.md Section 2 CH10 finding)]
 
 **[V2] Zero-tolerance checks:**
 - [ ] No "not X, it's Y" constructions.
@@ -929,6 +965,8 @@ Not relevant to this chapter.
 - [ ] Daniel does NOT free anyone in this chapter — the canon constraint must hold.
 - [ ] Burn-scar NOT re-explained.
 - [ ] Chapter close on image or action, not thesis.
+- [ ] TIC V13 frozen-epiphany sentence ("I stood there in my own yard and looked at
+  a fourteen-year-old slave...") MUST be rewritten — replace with action or dialogue.
 - [ ] One-sentence paragraphs: stay under 15%.
 - [ ] Tyche's voice: terse, guarded, survival caution. Not warm. Not helpful.
 
@@ -984,6 +1022,15 @@ of war.
   observation (V2_STORY_PLOT_NOTES §4.4). Ch11 is the right chapter: first direct
   army contact. (V2_STORY_PLOT_NOTES §4.4; V2_MASTER_CONTEXT §Change 4 divergence
   milestone: "by 105 AD, stirrups in use by at least one cavalry unit")
+- [Required beat: Balloon contract negotiation. First leverage. This chapter (or
+  the ch11-13 window) is where the ~800K HS total contract with the army is struck.
+  The drama per V2_DANIEL_FINANCES §4: Daniel holds firm against hard negotiation,
+  understands his own leverage for the first time. Macer's percentage, who controls
+  production, what Daniel actually gets (~200-250K HS to Daniel personally after
+  Macer's cut) — all must appear as an on-page scene or on-page beat, not background
+  fact in a Finance context note. This is Daniel realizing for the first time what his
+  knowledge is worth. The negotiation scene itself is required: not summarized, not
+  referenced as already concluded. (C4 — per audit_finances_prize.md Discrepancy 1)]
 
 **[V2] Tech requirements:**
 Phase B. Two required tech additions: (1) crossbow spanning mechanism — sketched
@@ -1044,6 +1091,9 @@ Not relevant to this chapter.
   not lecture. (AGENT_WRITER_BRIEF_V2 Rule 7)
 - [ ] Celer's voice: clipped, competent, gallows-humored. He does the training-time
   math himself without prompting. (V2_MASTER_CONTEXT §4, Celer voice fingerprint)
+- [ ] Balloon contract negotiation on the page: Daniel holds firm, understands his
+  own leverage. ~200-250K HS to Daniel after Macer's cut. Must be a scene, not a
+  summary in Finance context.
 - [ ] One-sentence paragraphs: stay under 15%.
 
 **Updated Files list:**
@@ -1197,9 +1247,11 @@ now carries; his reassessment of how far to push.
   catastrophe-announcement and the pre-grief of the children's names require fixing.
   (V2_CHAPTER_CHANGE_NOTES ch13)
 - The vow reframing: after Sabinus's death, the vow must be rendered as V2 requires:
-  "I won't put untrained people into an untested design." This is about safety
-  protocols, not abandoning the technology. The distinction matters — one is a
-  rational engineer's rule; the other is traumatized-teenager superstition.
+  "I won't rush untrained people into an untested design." The word "rush" is
+  load-bearing — it encodes that the vow is about pace and preparation, not a
+  permanent prohibition. This is about safety protocols, not abandoning the
+  technology. The distinction matters: one is a rational engineer's rule; the other
+  is traumatized-teenager superstition.
   (V2_STORY_PLOT_NOTES §1.2 — "Reframe the vow")
 
 **[V2] Tech requirements:**
@@ -1264,7 +1316,7 @@ Not relevant to this chapter.
 Mandatory: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md (ch13),
 bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md.
 Chapter-specific: bible/02_characters.md (Celer), V2_STORY_PLOT_NOTES.md
-(§1.2 — vow reframe: "I won't put untrained people into an untested design"),
+(§1.2 — vow reframe: "I won't rush untrained people into an untested design"),
 V2_HISTORICAL_IMPACT.md (§Part 1 — manned balloon timeline, Dacian War divergence).
 
 ---
@@ -1293,7 +1345,8 @@ the deliberate strategy of Part III; a thing he chooses NOT to build yet.
   to bury. V2_CHAPTER_CHANGE_NOTES explicitly says this is "a deliberate crating of
   patterns" that must be preserved.
 - The vow on manned flight must be reframed per V2_STORY_PLOT_NOTES §1.2: "I won't
-  put untrained people into an untested design." Make the rational-engineering
+  rush untrained people into an untested design." The word "rush" is load-bearing:
+  this is about pace and preparation, not a permanent ban. Make the rational-engineering
   register explicit in the aftermath conversation with Heras or Celer. This is the
   moment the vow is stated clearly. (V2_STORY_PLOT_NOTES §1.2)
 
@@ -1323,10 +1376,11 @@ He and Heras discuss what the body does when it falls. Neither conversation name
 what is actually happening. This is V2_MASTER_CONTEXT §5 ("oblique dialogue") and
 PROSE_PATTERNS §4.2 ("The wrong-sized response"). Protect this.
 
-What Daniel knows that is useful here: he knows that the vow he is making (no
-untrained people in untested designs) is the correct rule, derived from crash-
-investigation principles he absorbed from modern safety culture. He doesn't explain
-this to anyone. He just states the rule.
+What Daniel knows that is useful here: he knows that the vow he is making ("I won't
+rush untrained people into an untested design") is the correct rule, derived from
+crash-investigation principles he absorbed from modern safety culture. The "rush"
+framing matters: this is not a ban, it is a standard. He doesn't explain this to
+anyone. He just states the rule.
 
 **[V2] Historical divergence:**
 102 AD. Client-king peace with Decebalus is politically unchanged — Trajan's
@@ -1351,8 +1405,9 @@ Not relevant to this chapter.
 - [ ] No future-vantage narration.
 - [ ] "I want to be exact/honest/precise" scaffolding removed.
 - [ ] "Wrong size" phrase reduced to one instance.
-- [ ] Flight-vow explicitly stated as "no untrained people in untested designs" —
-  not as superstition.
+- [ ] Flight-vow explicitly stated as "I won't rush untrained people into an untested
+  design" — "rush" is the load-bearing word; this is about pace and preparation, not
+  a permanent ban. Not superstition.
 - [ ] Both key conversations stay oblique. Subtext not named.
 - [ ] One-sentence paragraphs: stay under 15%.
 
@@ -1497,6 +1552,16 @@ and nerve. Plant: the contest; the fraud charge that will grow; Vibenius watchin
   One conversation, one scene: Daniel says "The old Samian was right." Social
   consequences (mockery, mild scandal, interest) register on the page. This is a
   Phase C easy win per V2_TECH_DEEP_DIVE (zero materials, zero cost).
+- [Food arc correction C5: If this chapter contains a pasta scene, it must NOT be
+  rendered as a private meal. Per V2_FOOD_ARC.md, the pasta introduction belongs in
+  a workshop or social setting — Daniel making pasta for workers, slaves, or associates
+  present. The social function of food (workshop texture, food as community) is
+  required. "Private meal, not a presentation" is the WRONG framing. Use: Daniel
+  makes pasta at the workshop kitchen; some participants are present; mixed reactions
+  ("that's how barbarians eat"). The food arc is texture of community, not a solitary
+  activity. Also: plant the Gnaeus/tavern partnership seed here — a neighboring
+  tavern-keeper notices what Daniel's kitchen produces. One sentence is enough.
+  (C5 — per audit_food_arc.md Discrepancy 1 and 2)]
 
 **[V2] Tech requirements:**
 Phase C. Numerals and block-printed sheets spreading is the chapter's tech content.
@@ -1595,6 +1660,14 @@ being freed by the head of the system he hates. Plant: the name; the will
 - The Roman name must appear explicitly and be logged as "Marcus Ulpius Danihel."
   The canon note is firm. (V2_CHAPTER_CHANGE_NOTES ch17 — special check PASS: already
   correct in V1, preserve it)
+- [Required: Full scene. Daniel confronts his discomfort with balloons as weapons.
+  Trajan/military pressure vs. Daniel's unease. The manned balloon program resumes in
+  this chapter — and with Trajan present, the military application is explicit. Daniel
+  must reckon on the page with what the military is going to do with his invention:
+  not abstract future harm, but the specific upcoming uses Trajan has already described.
+  Cannot be a parenthetical — needs a beat with real emotional weight. Daniel makes
+  the calculation (military advantage saves more lives than the program risks) but the
+  calculation must cost him something visible. This is moral weight, not avoidance.]
 
 **[V2] Tech requirements:**
 Phase C. The demonstration for Trajan should show something beyond the balloon
@@ -1658,6 +1731,8 @@ Not relevant to this chapter.
 - [ ] Eratosthenes demonstration included for Trajan.
 - [ ] Trajan's voice: soldierly, practical, not given to abstraction. He asks about
   military applications before he asks about anything else.
+- [ ] Balloon moral struggle scene is present and has emotional weight — NOT a
+  parenthetical. Daniel's discomfort with balloons as weapons must be on the page.
 - [ ] One-sentence paragraphs: stay under 15%.
 
 **Updated Files list:**

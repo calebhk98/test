@@ -43,6 +43,24 @@ must not be cut or reduced.
 - The "planted a field a hundred years long" V1 closing line is called well-earned by
   V2_CHAPTER_CHANGE_NOTES — it can stay if it is not a gnomic wisdom button. Verify it
   ends on action or image rather than aphorism.
+- **[C1 — R&J contest win]** Romeo and Juliet is submitted under the Mercator Thulensis
+  pseudonym in this contest cycle. Per V2_CONTEST_STRUCTURE.md, it wins the Judges'
+  Prize in the year it enters. The judges find it formally striking — the doomed-union
+  framing is unlike anything in the Roman tradition. DO NOT have it lose in year one.
+  It wins this cycle. Felix's entry does NOT win (voice noticed, too crude — this is
+  the correct framing for the ch41 full-circle payoff). The western ocean story also
+  enters this year; it does not win. (Resolves audit_writing_contest.md D1.)
+- **[C2 — Required story beat: uncomfortable first-round entries]** The first contest
+  round must include at least two entries that make Daniel specifically uncomfortable:
+  (a) A soldier's story that celebrates killing enemies at a distance — Daniel reads it
+  and recognizes what aerial archery enables. The soldier is not wrong that it works; the
+  question is what "works" means from height. Daniel approves it for the next round. Show
+  his face; do not state the discomfort.
+  (b) A slave's satirical portrait of an aristocratic Roman that is viciously accurate —
+  the character is recognizable. It is mean and precise and good. Daniel lets it advance.
+  This is his first real test of whether the contest is actually open or whether
+  "open" means "open to entries he finds comfortable." He passes the test. Do not
+  annotate that he has passed it. (V2_STORY_PLOT_NOTES §7; audit_writing_contest.md D12)
 
 **[V2] Tech requirements:**
 Phase C beginning (just crossing from Phase B to C). At this point Daniel has:
@@ -127,6 +145,21 @@ crude jokes, the danger to her). Tyche's own anger, agency, and terms. NOT roman
 The English alphabet lesson ends the chapter.
 
 **[V2] Story/Plot additions:**
+- **[C3 — Required scene: Trajan two-questions]** At approximately 107-108 AD, Trajan
+  asks Daniel two specific questions about the balloon program: "Can it carry fire?" and
+  "Can an enemy shoot it down?" Daniel's answers: yes on fire potential (the platform
+  can carry fire-arrows or burning materials, though not reliably or safely); the balloon
+  is hard to hit from the ground at operating altitude, but vulnerable if an enemy
+  acquires a balloon of their own and engages at height. Trajan hears both answers and
+  decides the military program continues regardless. He assigns a permanent unit of
+  trained balloon operators to the Praetorian camp. This scene creates the formal
+  standing military balloon unit — doctrine, not just battlefield experiment.
+  "[Required scene: Trajan two-questions. 'Can it carry fire? Can an enemy shoot it
+  down?' Creates permanent balloon military unit. ~107-108 AD. Daniel answers honestly
+  on both counts. Trajan proceeds anyway.]" (audit_flight_vow.md Discrepancy 2;
+  V2_HISTORICAL_IMPACT 107-108 AD row.) This scene belongs in ch20 at the latest —
+  assign it here if ch20's ~108-109 AD date allows, or to the early part of this
+  chapter's timeframe.
 - BLOCKER canon fix: Tyche is ~14 in 98 AD (born ~85 AD); in ch20 (~108-109 AD) she is
   ~24, not younger. All age references must be corrected. The V1 prose referenced her as
   too young; V2 must make her explicitly a woman in her mid-twenties, with the authority
@@ -230,6 +263,24 @@ crosses that line honestly and at a cost: the staged erosion of the vow is the c
 most carefully executed beat.
 
 **[V2] Story/Plot additions:**
+- **[C4a — Required: Steam pump first attempt / blocker diagnosis]** Ch21 is the
+  correct placement for Daniel's first serious steam development work. He knows steam
+  works in principle: heat water, make steam, push piston. He has known this since ch07
+  (the coal loop). The root blockers he now diagnoses explicitly are two:
+  (1) Cylinder boring precision — he cannot get an airtight seal because Roman iron-boring
+  technique leaves a cylinder wall rough and irregular. Steam leaks past the piston.
+  (2) Valve timing — no precision-machined valve exists; the valve that lets steam in
+  and exhausts condensate cannot be timed reliably without machined tolerances he
+  cannot achieve yet.
+  He uses the prize model to target each blocker specifically: he posts a prize for a
+  smith who can bore a cylinder to tolerance X (defined in terms a Roman craftsman can
+  verify with a measuring rod and feel), and a separate prize for a craftsman who can
+  cast a consistent valve fitting that seats without grinding flat by hand.
+  "[Required: Steam pump first attempt. Daniel identifies root blockers — cylinder
+  boring precision, valve timing. Launches prize competitions for (a) smith who can bore
+  a cylinder to specified tolerance, (b) craftsman who can cast a consistent valve.
+  Show blocker-diagnosis → targeted-prize pattern. ~106-109 AD.]"
+  (C4 correction; audit_tech_timeline.md DISCREPANCY 1 and 6; V2_TECH_DEEP_DIVE §4.)
 - The ch14 vow erosion is the book's most carefully executed special check — do NOT
   compress or summarize it. The vow must be on the page, its erosion must be staged, and
   the moment Daniel crosses it must cost him something the reader can feel.
@@ -336,6 +387,50 @@ Unsentimental, real, two competent people choosing each other. Marcia's demand f
 share not a wage is load-bearing.
 
 **[V2] Story/Plot additions:**
+- **[C4b — Required: First working small-scale steam pump]** By the time of ch22
+  (~108-109 AD), the prize competitions Daniel launched in ch21 have produced results
+  good enough to attempt a first small-scale assembly. The pump runs. It leaks badly —
+  steam escapes at three joints, the piston stroke is irregular, efficiency is near 1%.
+  It still pumps water. This is the Newcomen insight: leaky equals still works, because
+  atmospheric pressure does the pushing, not steam pressure. The pump moving any water
+  at all is proof of concept. Mine drainage application is immediately obvious to Daniel —
+  this, at low efficiency and with constant maintenance, can still drain a flooded gallery
+  that a hundred slaves cannot keep up with. The mine drainage income model begins here
+  as a plan.
+  "[Required: First steam pump working. Leaky, inefficient, runs at ~1% efficiency, but
+  pumps water. Mine drainage application is immediately obvious. This is the Newcomen
+  insight — leaky = still works, because atmospheric pressure does the work.
+  ~108-109 AD.]"
+  (C4 correction; audit_tech_timeline.md DISCREPANCY 1; V2_TECH_DEEP_DIVE 104-108 AD
+  row.) Show the pump running, not described afterward. One scene. Daniel and a craftsman.
+  The water moving. No speech about what it means.
+- **[C5a — Expedition prep: citrus / scurvy provision]** Ch22 is the correct placement
+  for Daniel beginning his private expedition provisioning notes. "[Required expedition
+  prep note: Daniel insists on citrus provisions — lemons, oranges — for any ocean
+  crossing. He knows from basic knowledge of maritime history that sailors on long ocean
+  voyages die of scurvy without vitamin C. He cannot name the vitamin, but he knows the
+  symptoms: teeth loosening, bleeding gums, weakness until sailors cannot work the lines.
+  This is non-negotiable in his planning notes before departure. He writes it as a
+  practical specification, not as medical theory: 'sailors who cannot hold a rope cannot
+  work a sail.']" (C5 correction; audit_new_gaps.md Gap 2; V2_STORY_PLOT_NOTES §4.3.)
+- **[C5b — Expedition prep: food as personal motivation]** "[Story note: Food is one of
+  Daniel's personal motivations for the Atlantic crossing. He has been eating Roman food
+  for 15+ years. He knows what is on the other side — tomatoes, potatoes, cacao — and
+  he wants them. This is not strategic; it is personal. In his private interiority in
+  ch22 (or ch25-26 where expedition planning becomes serious), name the crops: a red
+  fruit, a starchy tuber, a brown seed pod that makes a bitter drink. He draws rough
+  illustrations from memory. He gives the expedition explicit crop-finding instructions:
+  they are looking for these specific plants, and they should bring everything that grows
+  in quantity and looks like food. The food motivation belongs in his interiority — he
+  never says this aloud as his reason. But the reader feels it.]"
+  (C5 correction; audit_new_gaps.md Gap 1; V2_FOOD_ARC.md.)
+- **[C5c — Multiple crops on return]** "[Note: The expedition returns with multiple
+  crops, not just one. They can carry seeds, cuttings, and dried specimens of many
+  plants in the ship's hold. Daniel's instructions are specific — bring everything
+  plant-like that grows in quantity and looks like food. The return manifest should
+  document multiple distinct plant types, not a single prize specimen. This is a
+  planning-doc requirement (audit_atlantic_crossing.md Section 1: 'Resources sought:
+  multiple crops — NOT 1 crop per mission').]" (C5 correction.)
 - Fix correctio BLOCKER (line 61): "'A share,' she said. 'Not a wage.'" — banned "Y. Not
   X." pivot. Rewrite to: "'A share,' she said. 'A wage means you can stop me. A share
   means we sink together and I'll fight for the ship.'" The content is the same; the
@@ -727,6 +822,41 @@ Column's carved-war ribbon with the omitted balloon victim is a standout ironic 
 The Hadrian-as-bearded-cornice-sketcher plant is load-bearing for ch37 and must stay.
 
 **[V2] Story/Plot additions:**
+- **[C6 — Expedition equipment: balloons + crossbows, not cannon]** The Atlantic
+  expedition fleet, being organized during this period (~112-113 AD), carries specific
+  military equipment that must be established in any expedition-preparation beats
+  appearing in ch26 or nearby chapters. "[Equipment: Expedition carries portable balloon
+  rigs (2 minimum), trained balloon operators, crossbow-armed aerial soldiers. NO cannon
+  — cannon never functioned in Daniel's lifetime per ch45 established canon ('the steel
+  to make a tube that does not burst has never come'). The military advantage over any
+  indigenous populations they encounter comes from aerial observation, crossbow fire from
+  height, and Roman military discipline — not firearms of any kind. Crossbows are
+  specified over bows for basket use because a pre-spanned crossbow requires only aim
+  and trigger in a swaying confined basket; a full-arm bow draw is impractical aloft.]"
+  (C6 correction; audit_new_gaps.md Gap 3; audit_flight_vow.md §2 crossbow specification.)
+- **[C7 — Quarantine protocols for expedition]** "[Required: Daniel arranges a physician
+  for the fleet and writes specific quarantine protocols before departure. He knows
+  diseases spread by contact — he has been teaching this for years. His written protocols:
+  sick sailors isolated from healthy crew immediately; no crew member boards from a port
+  stop without a health check; indigenous people encountered are not to sleep in crew
+  quarters or share food vessels without a waiting period. He knows this will not prevent
+  all transmission. He knows some disease will cross. He is trying to reduce it, not
+  stop it. The moral position: 'I tried.' The narrative fact: it was not enough.
+  The quarantine protocols reduce transmission 20-40% but cannot stop it entirely.
+  This beat belongs in ch26 or ch27 expedition-preparation entries. A physician must
+  travel with the fleet — name him or give him one line.]"
+  (C7 correction; audit_atlantic_crossing.md Discrepancy 5.)
+- **[C19 — Women in contest: not a big deal]** By the time the contest is establishing
+  itself as a recurring civic institution in the ch26 range, women are submitting and
+  winning. "[Story note: Women writers enter and win the contest. Roman women had more
+  public power than medieval women — this is not a political scandal in 112-113 AD Rome.
+  If anything, Daniel expects it to be more controversial than it turns out to be. He
+  is surprised by how low-key the reaction is. His modern assumptions about ancient Rome
+  were wrong in this direction. Do not frame this as a social progress moment or a
+  progressive agenda beat. It simply happens. Women submit. Women win. The press covers
+  the winners, not the gender. One brief note in this range establishing that the contest
+  is open to women and that this is quieter than Daniel anticipated.]"
+  (C19 correction; audit_writing_contest.md D2, D3.)
 - The "I had become a kind of monument myself" line should be replaced with a specific
   image of what it feels like to be treated as a monument — a gesture someone makes, a
   space cleared. Do not label the category; show the experience.

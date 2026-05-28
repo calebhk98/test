@@ -40,6 +40,8 @@ By 121–124 AD, a perceptive Roman notices: decimal numerals in commercial use 
 **[V2] Atlantic/New World:**
 Not yet primary. By ~121–124, Daniel has successfully made the ocean-gambit pitch to Hadrian (ch36). The Garonne-mouth shipyard and African coastal survey are in early operation per the Divergence Ledger. Daniel is watching the program begin with the cautious eye of a man who knows it will outlive Hadrian's enthusiasm only if it is genuinely institutionalized. He is not yet planning the crossing — he is keeping the program alive. Brief plant only.
 
+[Note: Balloon rigs are standard equipment on ocean voyages from Part V onward. Balloon-equipped ships carry trained operators and crossbow-armed aerial soldiers. This is not optional equipment — it is doctrine by this point.]
+
 **[V2] Prose rules (chapter-specific):**
 - BLOCKING CUT (L75): "It was the only gift either of us ever gave the other... and I have it." — Cut "and I have it"; end on the gift. Future-vantage telescoping.
 - BLOCKING CUT (L17): "He was not my friend, and Heras knew it, and used the word because there was no other for what Apollodorus was to me." — Names the relationship's subtext. The prior scenes should carry it; this line announces what should be felt.
@@ -91,6 +93,8 @@ Daniel knows Hadrian's character: a traveler, an administrator, a legal reformer
 
 **[V2] Atlantic/New World:**
 The Atlantic probe voyages are not yet underway (those begin ~125, 130, 136 AD per V2_HISTORICAL_IMPACT). This chapter is Daniel watching the ocean program stabilize under Hadrian's cautious patronage — aware that it will outlive Hadrian's enthusiasm only if it is institutionally anchored, not personally championed. Brief reference to the shipyard state; no drama yet.
+
+[Note: Balloon rigs are standard equipment on ocean voyages from Part V onward. Balloon-equipped ships carry trained operators and crossbow-armed aerial soldiers. This is not optional equipment — it is doctrine by this point.]
 
 **[V2] Prose rules (chapter-specific):**
 - BLOCKING FIX (L79): "the way you keep men at a thing for a hundred years after the man who started it is dead isn't a man, it's a body." — Banned pivot. Rewrite: "the way you keep men at a thing for a hundred years is a body, not a man — a thing with a name and money of its own..."
@@ -144,6 +148,8 @@ By ~128–130 AD, a perceptive Roman in a major city notices: Rome-to-Rhine opti
 **[V2] Atlantic/New World:**
 The Atlantic probe voyages are in progress: the 125 AD probe voyage has completed (800–1,000 miles west-southwest from the Pillars); the 130 AD probe is underway or imminent. Daniel knows the trade winds are manageable and that the current has a structure suggesting large-scale circulation. He is not planning the full crossing yet — he is building toward it. The ocean program is alive but precarious: Hadrian's patronage is the only imperial support, and Hadrian is aging. This creates urgency Daniel feels but cannot fully act on yet.
 
+[Note: Balloon rigs are standard equipment on ocean voyages from Part V onward. Balloon-equipped ships carry trained operators and crossbow-armed aerial soldiers. This is not optional equipment — it is doctrine by this point.]
+
 **[V2] Prose rules (chapter-specific):**
 - BLOCKING FIX: Rename apprentice "Onesimus" — name conflicts with established senior accountant. Use "Vitalis" or "Priscus." Cut the self-aware "common as dirt" hand-wave; it makes the collision louder.
 - BLOCKING FIX: Lucanus's age — at ~128–129 AD setting and birth year ~112, he is 16–17, not 15. Change to "sixteen" or "near seventeen."
@@ -196,6 +202,8 @@ By ~129–131, the printed encyclopedia (first section) is being produced and di
 **[V2] Atlantic/New World:**
 The 130 AD probe voyage is in progress or just returned (extending 800–1,000 miles west-southwest, returning with compass readings and latitude measurements). Daniel has confirmed the trade winds are manageable. He is writing ocean navigation protocols into the encyclopedia — latitude gnomon, compass dead-reckoning, the citrus requirement for scurvy. The Atlantic crossing is now calculable, not just theorized. He is 49 or 50 years old and is calculating whether he will live long enough to see the full crossing. He probably will, if it departs in the 140s. He writes this in private English notes, not in the Latin sections.
 
+[Note: Balloon rigs are standard equipment on ocean voyages from Part V onward. Balloon-equipped ships carry trained operators and crossbow-armed aerial soldiers. This is not optional equipment — it is doctrine by this point.]
+
 **[V2] Prose rules (chapter-specific):**
 - BLOCKING FIX (L71, canon/age): "Tyche was forty-six." At ~129–130 AD setting and birth ~85 AD, Tyche is ~44. Change. Reconcile "fifty years old" (L41) and "thirty-one years" (L49) to agree on a single year anchor. Recommended: ~129–130 AD; Daniel ~48–49, Tyche ~44.
 - BLOCKING FIX (L71): "she said so to me one evening over the third copy, not as a complaint, as a figure." — Banned "not X, Y" construction. Rewrite: "she said so to me one evening over the third copy, flatly, the way she stated a figure." (V2_CHAPTER_CHANGE_NOTES §ch40 notes this exact correction)
@@ -243,6 +251,8 @@ The contest community by ~131–134 AD is showing early signs of independence �
 
 **[V2] Atlantic/New World:**
 The 130 AD probe voyage has confirmed the trade wind pattern is manageable and the crossing is feasible. Daniel is now planning the funded crossing in earnest. He knows he will need to be specific about citrus provisions. The ocean program is entering the planning phase for the serious attempt, probably departing in the 140s. In teaching Ulpia and the apprentices, he is also — obliquely — planting seeds for what they will do after he is gone. The ocean voyage is mentioned in the encyclopedia section he is writing. Not dramatized here; ambient.
+
+[Note: Balloon rigs are standard equipment on ocean voyages from Part V onward. Balloon-equipped ships carry trained operators and crossbow-armed aerial soldiers. This is not optional equipment — it is doctrine by this point.]
 
 **[V2] Prose rules (chapter-specific):**
 - BLOCKING CUT (L87): "each carrying off a piece of a country... that none of them would ever miss, because you cannot miss a thing you were never told you were carrying." — Outside-time annotation. Cut the "because" clause; end on them carrying it.
