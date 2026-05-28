@@ -1234,8 +1234,8 @@ Chapter-specific additions:
 
 **Core beats (V1 baseline — keep unless V2 notes say otherwise):**
 The war's deep east: Ctesiphon taken, the Gulf reached, then revolts erupt in the rear
-(Kitos War backdrop). A hard chapter on empire's cost. Celer dies here (if still alive
-after ch21). Daniel sees the limit of conquest and the price paid by the unnamed.
+(Kitos War backdrop). A hard chapter on empire's cost. Celer dies here (CONFIRMED alive through ch28; see canon log COORDINATOR
+DECISION). Daniel sees the limit of conquest and the price paid by the unnamed.
 The kit-strap grief carried forward is a model "grief through object" beat.
 
 **[V2] Story/Plot additions:**

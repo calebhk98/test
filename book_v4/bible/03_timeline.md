@@ -56,9 +56,9 @@ order the book tells them, with flagged exceptions.
   storms Sarmizegetusa (106); Decebalus commits suicide. Dacia annexed; Dacian
   gold floods Rome; 107 = 123 days of games.
 - [STORY] Daniel's sanitation/hydraulics knowledge ironically helps a siege (the
-  water-supply cut). His powder work is coveted for war. Possible death of Celer
-  here (decide in drafting; if not here, hold for Parthia). Daniel confronts that
-  his gifts kill.
+  water-supply cut). His powder work is coveted for war. Celer is ALIVE here and
+  through ch28; he DIES in ch29 (~116-117 AD, Parthian War overreach). See canon
+  log COORDINATOR DECISION. Daniel confronts that his gifts kill.
 
 ## 106-110 AD — Daniel 25-29 — PEAK BUILDING (Part III->IV)
 - [STORY] Niter beds (multi-year slog) toward gunpowder. The cannon-that-bursts

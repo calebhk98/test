@@ -105,7 +105,7 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## TYCHE — slave, then freedwoman; the thread to the epilogue
-- ~14 in 98. A kitchen/errand slave in Macer's household, assigned to fetch and
+- ~14 in 99 (born ~85 AD; canon log anchor). A kitchen/errand slave in Macer's household, assigned to fetch and
   carry for Daniel. Quick, watchful, frighteningly good with numbers once shown.
 - Function: Daniel teaches her to read, write, and calculate, then later English
   as a "homeland script." She becomes his most trusted apprentice and a keeper/

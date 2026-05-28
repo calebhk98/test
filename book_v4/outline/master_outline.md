@@ -81,7 +81,7 @@ to trust him on faith.
 
 ---
 
-## Part II: The Man Who Flew (99–102 AD, ch12–22)
+## Part II: The Man Who Flew (101–102 AD, ch12–22)
 
 **What the part must accomplish:** The unmanned balloon makes him un-ignorable. Macer's
 patronage gives protection and a cage. The workshop spreads the first technologies. The

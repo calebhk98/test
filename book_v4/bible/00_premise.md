@@ -38,8 +38,8 @@ as an adult who can connect dots.
 ## Hard constraints (the honesty rules)
 - Daniel only knows what a bright-but-normal 17-year-old in the 2020s would. He
   is allowed to be WRONG in the way such a teenager would be wrong.
-- No deus ex machina. The phone dies inside two weeks (see world rules). After
-  that, everything is human memory, fallible.
+- No deus ex machina. The phone dies within days (see world rules -- the phone
+  dies around day three to four). After that, everything is human memory, fallible.
 - Every technology obeys the material reality of 98 AD. Things fail for real
   reasons: bad steel, no precision tooling, no chemistry, social resistance.
 - The "impossible bait" (computers, rockets, floating trains) is deliberately

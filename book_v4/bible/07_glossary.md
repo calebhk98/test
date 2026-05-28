@@ -37,10 +37,13 @@
 
 ## Daniel's own name in Rome
 - He gives a name; Romans render it awkwardly. He ends up commonly called
-  **Danihel** or just **the Thulean**, and once a citizen takes a Roman-style
-  name incorporating his patron's (e.g. a praenomen + Flavius from Macer +
-  a cognomen). Settle the exact citizen-name when the citizenship chapter is
-  drafted and LOG it; until then he's "Daniel / the Thulean."
+  **Danihel** or just **the Thulean**. At citizenship (ch17), he takes the
+  Roman name **Marcus Ulpius Danihel**: praenomen Marcus, nomen Ulpius from
+  Trajan's gens (the emperor who freed and enfranchised him), cognomen Danihel
+  (his own name carried forward). The nomen is NOT Flavius from Macer; it is
+  Ulpius from the emperor. Informally he remains "Daniel" and "the Thulean";
+  Macer continues calling him "Thulean" or "boy." This name is SETTLED and
+  LOGGED in the canon log (DECISION ch17).
 
 ## Name stock for walk-on characters (don't reuse principal names)
 - Senators: Marcus Cornelius Fronto, Lucius Calpurnius Piso, Quintus Sosius
