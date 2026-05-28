@@ -210,6 +210,8 @@ The 130 AD probe voyage is in progress or just returned (extending 800–1,000 m
 - Trim gnomic-aphorism stacking: three maxims at L33, L49, L81. Keep the strongest (L33: "a clean false rung is the worst thing a ladder can have") and concretize or cut at least one of L49/L81.
 - The failing-eyes behavior (holding work at arm's length) is established in ch38; do not re-explain by ch40. Use behavioral reference only. (V2_CHAPTER_CHANGE_NOTES Global Prose Note 7)
 
+[PROSE NOTE: Late-book chapters accumulate tics. Before finalizing: check for preambles ('I want to be honest/clear/precise'), 'shape' metaphors, 'the thing' abstractions, 'which is to say' pivots, and body-inventory catalogs (teeth, joints, eyes). See PROSE_PATTERNS_TO_AVOID.md Section 6 for full list. The examples listed are illustrative, not exhaustive — apply by pattern recognition, not list-matching.]
+
 **[V2] Zero-tolerance checks:**
 - [ ] No "not X, it's Y" constructions — one blocking instance flagged at L71.
 - [ ] No em dashes.
@@ -885,6 +887,8 @@ This is the Atlantic arc's payoff. Everything from ch36's ocean gambit to ch49's
 - PRESERVATION MANDATE: The shore is inhabited. No landing. No conquest. No bow. This is where the book ends — at the threshold.
 - Confirm length: 800–1,200 words. V1 is ~900. Do not expand. (V2_CHAPTER_CHANGE_NOTES §ch53)
 
+[PROSE NOTE: Late-book chapters accumulate tics. Before finalizing: check for preambles ('I want to be honest/clear/precise'), 'shape' metaphors, 'the thing' abstractions, 'which is to say' pivots, and body-inventory catalogs (teeth, joints, eyes). See PROSE_PATTERNS_TO_AVOID.md Section 6 for full list. The examples listed are illustrative, not exhaustive — apply by pattern recognition, not list-matching.]
+
 **[V2] Zero-tolerance checks:**
 - [ ] No "not X, it's Y" constructions.
 - [ ] No em dashes.
@@ -902,3 +906,70 @@ Chapter-specific: V2_NEW_WORLD_CONTACT.md (§Executive Summary; §The 130 AD Sce
 
 *End of updated outline entries, chapters 37–53.*
 *Prepared using all V2 reference files as specified.*
+
+---
+
+## CORRECTIONS LOG — Applied 2026-05-28
+
+The following corrections from the V2 correction brief were applied to this file. Each is marked with its status.
+
+**C1 — Balloon rigs on ocean voyages (HIGH) — APPLIED**
+Added "[Note: Balloon rigs are standard equipment...]" to the Atlantic/New World section of ch37, ch38, ch39, ch40, ch41, ch42, ch43, ch44, ch46, ch47, ch48, and ch49. Every chapter in the ch37–53 range that involves ships, ocean travel, or the colonial program now carries this note.
+
+**C2 — Ch41 Gallic craftsman "accidental parallel" beat (MEDIUM) — APPLIED**
+Added the "[Required beat: 'The Accidental Parallel.']" note to ch41 Story/Plot additions.
+
+**C3 — Ch39-44 anonymous track controversy (MEDIUM) — APPLIED**
+Added "[Required beat: Anonymous track controversy.]" to ch44 Story/Plot additions. Placed in ch44 as the chapter most structurally appropriate for this beat (the women's win chapter, the contest credibility chapter).
+
+**C4 — Ch44 women's win (MEDIUM) — APPLIED**
+Removed conditional "if not yet on the page" language from ch44. Women's win is now marked as REQUIRED, not conditional. The beat is rewritten to reflect the matter-of-fact register and Daniel's surprise at the mild cultural reaction.
+
+**C5 — Ch46 survey assignment fix (HIGH) — APPLIED**
+Added explicit note and instruction to ch46 replacing the epidemic disease encyclopedia survey with the Atlantic/ocean geographic survey per V2_ULPIA_EDUCATION.md. The note explicitly warns writers NOT to assign the disease survey to this chapter.
+
+**C6 — Ch47 pendulum clock scene + resolution (HIGH) — APPLIED**
+Removed "permanently gives up" framing from ch47 tech requirements. Added "[Required: After Daniel acknowledges he can't solve the escapement himself...]" establishing the prize competition that resolves in ch48-49.
+
+**C7 — Ch47 New World/plague connection beat (HIGH) — APPLIED**
+Added "[Required beat: Daniel reads the expedition physician's final reports...]" to ch47 Story/Plot additions.
+
+**C8 — Ch48 dual-document scene (HIGH) — APPLIED**
+Added "[Required: Dual-document scene...]" to ch48 Story/Plot additions.
+
+**C9 — Ch49 pendulum clock legacy (see C6) — APPLIED**
+Added a note to ch49 tech requirements clarifying that pendulum clocks in the legacy inventory are ONLY valid because C6 has been applied. The note specifies how the clock entry should be framed (as the prize winner's achievement, enabled by Daniel's tools, not Daniel's direct achievement).
+
+**C50 — Ch50 late-life garden tomato beat (LOW) — APPLIED**
+Added "[Beat: One final food arc moment.]" to ch50 Story/Plot additions, framed as a preservation-protected food arc beat consistent with the "no new material" mandate for this chapter.
+
+**C10 — Ch51 Tyche plague irony conversation (MEDIUM) — APPLIED**
+Added "[Beat: Daniel names the irony once, briefly, to Tyche.]" to ch51 Story/Plot additions, with a note about placement within the chapter's Pliny-manner letter structure.
+
+**C11 — Ch53 epilogue plague hint (LOW) — APPLIED**
+Added "[Optional background line: Eastern camp physicians...]" to ch53 Story/Plot additions, marked explicitly as optional and conditional on chapter length/register.
+
+**C12 — Bar Kokhba casualty figures (MEDIUM) — APPLIED**
+Changed "30–35%" to "20–25%" in ch45 Story/Plot additions and added the standardization note. Also updated ch45 Historical Divergence section to specify "20–25% fewer." The note "[Note: Per planning docs, Bar Kokhba ends 12–18 months early with 20–25% fewer Roman casualties...]" has been added to both locations in ch45.
+
+**C13 — Dinosaurs/parental delight beat (MISSING — APPLIED)**
+Added "[Required beat: DINOSAURS.]" to ch41 Story/Plot additions. Placed in ch41 as a natural fit with the teaching/children chapter.
+
+**C14 — "Too many prizes" subplot (MISSING — APPLIED)**
+Added "[Required subplot: 'Too Many Prizes.']" to ch43 Story/Plot additions. Placed in ch43 as a domestic/family chapter where the financial near-miss would feel human and character-revealing.
+
+**C15 — Socratic Echo warning for ch47 (MEDIUM) — APPLIED**
+Added "[TIC WARNING V15 — SOCRATIC ECHO...]" to ch47 Prose rules section.
+
+**C16 — Ch37-53 prose tic warnings (MEDIUM) — APPLIED**
+Added "[PROSE NOTE: Late-book chapters accumulate tics...]" to the Prose rules sections of ch40, ch44, ch47, ch50, and ch53 as specified.
+
+**CORRECTIONS THAT COULD NOT BE FULLY LOCATED OR APPLIED:**
+
+- C10 (ch51 Tyche beat): The ch51 chapter is a letter in Pliny's manner — Daniel is already dead when the letter is written. The Tyche conversation cannot take place within the letter itself. A note has been added flagging this structural issue and suggesting the beat be placed as a framing scene before the letter begins, or in Daniel's private English notes that the letter-writer cannot access. The writer must resolve this placement issue when drafting.
+
+- C3 (anonymous track controversy): The correction specifies a chapter in the ch39-44 range. The ch38 entry already notes the anonymous track is formalized in the charter. Ch44 was chosen as the placement because it is the contest credibility chapter and the beat fits most naturally with the women's win controversy. If the writer prefers ch42 or ch43, the beat should be moved accordingly.
+
+- C12 (Bar Kokhba): The note was applied to ch45. Ch42 also references Bar Kokhba — that entry was NOT changed to 20-25% because ch42 does not give a specific percentage figure; it describes only "14-18 months faster." No numerical change was needed in ch42. If a percentage appears in any future ch42 draft, use 20-25%.
+
+*Correction brief applied in full. All 16 corrections (C1-C16, C50) addressed.*
