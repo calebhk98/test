@@ -808,7 +808,7 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
 - [ch30] ch26-HADRIAN FLICKER handled per constraint: an unplaceable half-memory
   (beard, drawings, Apollodorus's "gourds" insult) that Daniel CANNOT and does NOT
   firmly connect to the new emperor; he lets it go. (Recognition reserved for ch35.)
-- [ch30] Daniel's intent: urgent to get back to Rome to reach Marcia, Lucanus (~2-3),
+- [ch30] Daniel's intent: urgent to get back to Rome to reach Marcia, Lucanus (~5),
   Tyche, and the enterprise before enemies/news act; he judges the sea distance makes
   him likely too late. Ends poised on the edge of the unknown reign (the succession
   scramble is ch31). No new named characters (Attianus is historical). No tech state
@@ -1081,7 +1081,7 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   must be written while there is still an eye to write it and a child who could be taught
   the cipher. (Note: future chapters must vary AWAY from child-with-figures closers.)
 
-- [ch39] ~129 AD, Daniel ~48 (presbyopia worsening), Lucanus ~16, Ulpia ~11, Tyche ~44,
+- [ch39] ~129 AD, Daniel ~48 (presbyopia worsening), Lucanus ~17, Ulpia ~11, Tyche ~44,
   Macer ~80 (alive), Marcia ~55. OPENS PART VI. Daniel BUILDS the institutions (the
   inventor becoming a tender of structures):
   - PRESS made a self-running BODY: folded into an old letter-copyers' COLLEGIUM (a
@@ -1524,6 +1524,9 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
 - Celer: ~35 in 98 -> born ~63 AD (~47 in 110).
 - Crispus: ~40 in 98 -> born ~58. Vibenius: ~55 in 98 -> born ~43.
 - Hermes: ~40 in 103 -> born ~63. (Apollodorus: a mature master engineer, ~50s in 101.)
+- Lucanus (Marcus Ulpius Lucanus): named on day 9 after birth, ch26 (~112 AD) -> born ~112 AD.
+  (So: ~5 in 117, ~6 in 118, ~10 in 122, ~17 in 129, ~22 in 134, ~26 in 138, ~43 in 155.)
+- Ulpia Severa: born "the year I came back from the East" = ~118 AD. (So: ~9 in 127, ~11 in 129, ~16 in 134.)
 WRITERS/QA: when a chapter is set in year Y, a character's age = Y minus birth year.
 Check this before stating any age on the page.
 
