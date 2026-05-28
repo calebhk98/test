@@ -913,6 +913,18 @@ Plant: Tyche's gift; Crispus as enemy-to-be; the slavery thread seeded.
   a few months deliver consistent forced air to the forge. Plant the idea here even
   if it takes until ch11-12 to implement. (V2_TECH_DEEP_DIVE §Phase B — "V1 WRONGLY
   OMITTED THIS despite promising it in the bible.")
+- **[CANNON ARC SEED — ch10]** Daniel's mental inventory of what Rome has that he
+  needs: he notices that Rome has all three components of gunpowder — charcoal
+  (everywhere), sulfur (Sicilian mines and volcanic deposits near Naples, used by
+  Romans for fumigation and metalwork), and the slow-grown nitrate crystalline crust
+  on old stable floors and bat-cave deposits (saltpeter, which Romans use in food
+  preservation under other names). He files this. He does not act on it. He knows
+  what it makes. He knows what that means. One short interior moment — not a plan,
+  just a recognition: "I know what those three things become. Not yet." This seed
+  should pay off when ch14 makes the deferral explicit and ch21 breaks it deliberately.
+  "[Required: Brief mental inventory. Daniel recognizes the gunpowder ingredients exist
+  in Rome. Files it. Defers it. One sentence of interior registration, no more. The
+  weight of 'not yet' should be felt, not explained.]"
 
 **[V2] Tech requirements:**
 Phase B beginning. The workshop is now established. The first Phase B easy wins can
@@ -1796,6 +1808,18 @@ killing paradox; Daniel's deepening unease.
   Sarmizegetusa's water supply is identified from kite altitude in days, not weeks.
   This is a required divergence beat. (V2_HISTORICAL_IMPACT §Part 1; V2_STORY_PLOT_
   NOTES §1.2)
+- **[CANNON ARC — Dacian War use]** The gunpowder is already "loose" by this point
+  (niter beds pre-ch21 have been running; quarrymen and military engineers have seen
+  demonstrations). Whether Daniel directly supplies powder to the siege or simply
+  knows it has found its way there is a narrative choice — but there should be ONE
+  moment where Daniel is aware that powder charges are being used to demolish rock,
+  breach a Dacian wall section, or seal a tunnel. This is the "I asked no one because
+  to ask was to be named to it" dynamic planted here, paying off in ch45's moral
+  accounting. NOTE: this is NOT a cannon firing in battle — it is demolition charges,
+  the quarryman application that requires no barrel precision at all. The powder works
+  perfectly for this. "[Optional beat: Daniel notices, from balloon altitude, the
+  dust-flash of a powder charge. He does not look away. He does not ask who authorized
+  it. This is the first time his powder kills someone he will never know.]"
 - The water-supply sabotage is the moral knot's clearest expression. Per
   V2_CHAPTER_CHANGE_NOTES ch18: "PRESERVE: The water-supply inversion (using his
   sanitation knowledge to foul an enemy's supply) is the moral knot's clearest

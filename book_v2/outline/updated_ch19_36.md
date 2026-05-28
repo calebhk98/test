@@ -317,6 +317,31 @@ dung-piled soil, bat cave deposits. Show one specific beat of the unglamorous sl
 the smell, the waiting, the failed first batches. This grounds the technology as real
 labor, not a magic formula. (bible/04_tech_schedule.md, Phase C)
 
+**[CANNON ARC CASCADE — CRITICAL TECH NOTE for ch21]** The precision-boring prize
+Daniel launches after the cannon demonstration is NOT just a cannon problem — it
+solves THREE blocking problems simultaneously. Daniel knows this and should say so
+internally or in the prize specification:
+1. CANNON: bore a cylinder to tolerances tight enough to hold chamber pressure without
+   the ball venting gas past it on firing. Measure: "no hair fits between ball and bore."
+2. STEAM ENGINE: the SAME boring precision creates the airtight cylinder needed for the
+   Newcomen pump piston. Daniel's steam development is blocked on exactly this wall.
+   One prize, two applications.
+3. CLOCK ESCAPEMENT (longer term): precision gear-cutting and consistent bore tolerances
+   are prerequisites for the clock escapement mechanism. The same craftsmen who learn
+   to bore cannon barrels are the ones who will eventually cut the gears for a pendulum
+   clock.
+"[Required scene: Daniel explains to Hermes (or to himself internally) that the cannon
+prize IS the steam prize IS the clock prize — same tolerance, same skill, same craftsman.
+He is not running three separate programs; he is buying one capability that unlocks all
+three. This is the blocker-to-prize cascade made visible. The reader should understand
+that Daniel's genius here is recognizing the common root, not solving each problem
+separately.]"
+Also: the gunpowder is now loose. Document in ch21 that niter-bed workers, quarrymen
+who watched the demonstration, and at least one military engineer have seen or smelled
+enough to start asking questions. The powder is out. Daniel registers this and decides
+he would rather not follow every thread of where it goes — plant the awareness that
+will pay off in ch45's moral accounting.
+
 **[V2] Finance context:**
 Phase C transition. Daniel has enough money to fund a multi-year niter program. The cost
 of the cannon demonstration (materials, construction, the demonstration site, the
@@ -822,18 +847,13 @@ Column's carved-war ribbon with the omitted balloon victim is a standout ironic 
 The Hadrian-as-bearded-cornice-sketcher plant is load-bearing for ch37 and must stay.
 
 **[V2] Story/Plot additions:**
-- **[C6 — Expedition equipment: balloons + crossbows, not cannon]** The Atlantic
-  expedition fleet, being organized during this period (~112-113 AD), carries specific
-  military equipment that must be established in any expedition-preparation beats
-  appearing in ch26 or nearby chapters. "[Equipment: Expedition carries portable balloon
-  rigs (2 minimum), trained balloon operators, crossbow-armed aerial soldiers. NO cannon
-  — cannon never functioned in Daniel's lifetime per ch45 established canon ('the steel
-  to make a tube that does not burst has never come'). The military advantage over any
-  indigenous populations they encounter comes from aerial observation, crossbow fire from
-  height, and Roman military discipline — not firearms of any kind. Crossbows are
-  specified over bows for basket use because a pre-spanned crossbow requires only aim
-  and trigger in a swaying confined basket; a full-arm bow draw is impractical aloft.]"
-  (C6 correction; audit_new_gaps.md Gap 3; audit_flight_vow.md §2 crossbow specification.)
+- **[C6 — Expedition equipment: balloons + crossbows + powder (for blasting), not ship-mounted cannon]** The Atlantic expedition fleet (~112-113 AD) carries:
+  - Portable balloon rigs (2 minimum), trained balloon operators, crossbow-armed aerial soldiers. Crossbows specified over bows: a pre-spanned crossbow requires only aim and trigger in a swaying basket; a full-arm bow draw is impractical aloft.
+  - Gunpowder kegs for BLASTING and MINING purposes (demolishing rock, opening passages, quarry work at a settlement site). The powder works. The barrel precision problem is unsolved, not the powder.
+  - NO ship-mounted cannon for combat fire. The barrel precision problem (from ch21's deliberate demonstration) is still unsolved at 113 AD — reliable repeated cannon fire from a ship is not yet achievable. The powder goes for blasting, not cannon.
+  - The military advantage over indigenous populations: aerial observation + crossbow fire from height + Roman military discipline + the terrifying sound and flash of powder charges used as demolition. Not a firearm salvo.
+  "[Note to writing agent: Daniel knows cannon will eventually exist. He is still working on the barrel problem at 113 AD. The expedition carries the powder because the powder works — he just can't make a tube that holds together for repeated fire yet. This distinction matters: 'powder works, cannon doesn't yet' is the correct framing, not 'no gunpowder technology exists.']"
+  (C6 correction revised per cannon arc note; audit_new_gaps.md Gap 3; audit_flight_vow.md §2 crossbow specification.)
 - **[C7 — Quarantine protocols for expedition]** "[Required: Daniel arranges a physician
   for the fleet and writes specific quarantine protocols before departure. He knows
   diseases spread by contact — he has been teaching this for years. His written protocols:
