@@ -359,6 +359,13 @@ These tics were identified by multiple independent reviewers across multiple
 chapters. They are distinct from patterns in Sections 1-3 above. Do not
 duplicate checks — these target different failure modes.
 
+**IMPORTANT — THE EXAMPLES BELOW ARE ILLUSTRATIVE, NOT EXHAUSTIVE.**
+Each tic entry describes a *pattern*. If you find a construction that matches
+the pattern's description, cut it — even if your specific sentence does not
+appear in the quoted examples. A reviewer flagging nearly every chapter for the
+same tic means the problem is pervasive; a writing agent must apply each rule
+by pattern recognition, not by list-matching. When in doubt, cut it.
+
 ---
 
 ### TIC V1: THE META-DISCLAIMER / THROAT-CLEARING
