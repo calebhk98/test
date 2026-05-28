@@ -1053,6 +1053,35 @@ half-formed, "a wound with an idea in it. I told no one." No structural changes 
   quartermaster is using the new numerals and Daniel watches without comment.
   This is one of the required on-page divergences for 113-116 AD.
   (V2_HISTORICAL_IMPACT, 113-116 row: "printed maps duplicated for legates")
+- **[C8 — Mortality range fix]** Any reference in this chapter to indigenous mortality
+  from the Atlantic expedition's return must use "30-50%" not "20-30%". The lower range
+  understates the devastation and misrepresents the moral stakes. Per V2_NEW_WORLD_CONTACT
+  §1, the authoritative figure is "25-45% mortality estimate for first generation of
+  sustained contact" — rendered in prose as "30-50%" to capture the range. The distinction
+  matters: Romans do not carry smallpox (Antonine Plague has not reached Rome by 113-116
+  AD), so this is NOT the 80-95% Columbian Exchange figure. But it is catastrophic. The
+  number must be felt as catastrophic, not survivable.
+  (C8 correction; audit_atlantic_crossing.md Discrepancy 3.)
+- **[C9 — Syphilis reverse exchange confirmed]** "[Narrative fact: Syphilis reverse
+  exchange occurs — New World origin traveling east with returning sailors. Daniel may
+  note unusual symptoms in returning crew without understanding the mechanism. He cannot
+  do a PCR test. But the narrative confirms at story level that syphilis flows back to
+  Rome. Write the chapter so Daniel suspects something is moving east from the
+  expedition's contact without being able to name it. The uncertainty is his; the
+  narrative fact is the reverse exchange occurs. Do not leave this as genuinely unresolved
+  at story level — only Daniel's in-story certainty is uncertain.]"
+  (C9 correction; audit_atlantic_crossing.md Discrepancy 4.)
+- **[C10 — Required beat: private encyclopedia confession]** "[Required beat: Daniel
+  writes an encyclopedia entry in his private cipher — 'I knew. I had always known.' His
+  private acknowledgment that he caused harm to the indigenous populations despite his
+  quarantine efforts. The numbers were better than worst-case and worse than hoped. This
+  is not an on-page guilt-declaration — it is a private written admission in cipher, never
+  said aloud, only to be found by whoever reads the cipher sections of the encyclopedia.
+  The entry acknowledges the lie told to Hadrian (the western continent is 'uninhabited'),
+  confirms the continent was not uninhabited and was never believed to be, and records
+  the cost in whatever imperfect numbers Daniel can gather. Ch28 is the right placement:
+  the moment the lie can no longer be sustained even privately.]"
+  (C10 correction; audit_atlantic_crossing.md Discrepancy 6; V2_NEW_WORLD_CONTACT §6.)
 
 **[V2] Tech requirements:**
 Phase D. Active in this chapter:
@@ -1157,6 +1186,24 @@ The kit-strap grief carried forward is a model "grief through object" beat.
   of that moral position: his best work made the conquest faster and more efficient,
   which may have made the misgovernance worse, not better.
   (V2_HISTORICAL_IMPACT Part 1, Parthian War — moral note)
+
+**[V2] Contest arc notes (ch28-31 range):**
+- **[C11 — Writing contest category evolution]** In the ch28-31 range, note that the
+  contest's categorical structure is evolving:
+  - At launch (ch19): one open category — any story.
+  - By the time of the Parthian campaign era (~113-116 AD, this chapter range): three
+    categories — fiction (any story), history/legend (framed as real or legendary events),
+    and natural philosophy/speculation (machines, places, invisible forces). This expansion
+    happens between the first contest cycle and this chapter range; it should be treated
+    as already established background when it first appears on the page.
+  - Approaching the succession crisis (ch31-33 range): a fourth category and an anonymous
+    submission track are in discussion or recently established. The anonymous track is
+    Daniel's response to the class problem — educated judges favoring educated-voice stories.
+    With anonymous submission, the judges cannot privilege a story based on knowing the
+    author's social status. Introduce this as a beat in the ch31-33 range where it best
+    fits. The controversy around introducing the anonymous track (some judges objected to
+    not knowing the author's identity) is a press story.
+  (C11 correction; audit_writing_contest.md D7.)
 
 **[V2] Tech requirements:**
 Phase D. Active:
@@ -1356,6 +1403,29 @@ army") is the right kind of image.
   begins in ch31, plant it as a single social snub — one occasion where Daniel and
   Scaeva are both present and Scaeva does not acknowledge him.
 
+**[V2] Contest arc note (ch31):**
+- **[C11 continued]** This chapter is a candidate for the first on-page appearance of
+  the anonymous submission track being introduced or discussed — during the succession
+  terror, anonymity of authorship acquires a second valence beyond the class problem.
+  Daniel does not make this connection aloud. The track is introduced for the stated
+  editorial reason (judge fairness, class-blind assessment); the political usefulness is
+  a side effect he observes without naming.
+
+**[V2] Mine drainage emotional beat (ch31):**
+- **[C12 — Required emotional beat: mine drain]** Assign the following to ch31: the
+  moment when Daniel first watches a flooded mine drain using his steam pump — or
+  receives definitive word that the Hispanian pump is draining. Ch31 is set at
+  ~117-118 AD; the V2_HISTORICAL_IMPACT row confirms first pump operating in Hispania
+  approximately 118 AD. "[Required emotional beat: Daniel watches (or receives a dispatch
+  confirming that) a mine drains — three days of water pouring out before the gallery is
+  accessible. The scale of what steam means hits him. Not the money — the physics of it.
+  For the first time he understands that he has changed something that will not be undone.
+  Assign this to ch31 as the correct placement in the 117-119 AD window. Show this
+  through one physical image: water running, the sound of it changing as the gallery
+  opens, a specific detail that carries the weight without stating it.]"
+  (C12 correction; audit_finances_prize.md Discrepancy 10; V2_DANIEL_FINANCES §4
+  Mine Drainage Contract context.)
+
 **[V2] Tech requirements:**
 Phase D. No new tech in this chapter. The existing tech base (press, workshop, contest)
 is holding steady. The relevant V2 note: Daniel's steam pump program is presumably
@@ -1523,6 +1593,18 @@ mode, his network shredded. A frightening, claustrophobic chapter ending on the 
 callback close. Tyche hiding the box during the delator's visit is a strong agency beat.
 
 **[V2] Story/Plot additions:**
+- **[C18 — Press income milestone]** Ch33 is the appropriate chapter to register the
+  press/paper empire's scale as an on-page moment. "[Required narrative moment: The
+  press/paper empire reaching 1-3M HS/year income must appear as an on-page milestone,
+  not just an arc-table figure. Daniel or Marcia does the math and registers what they
+  have built. In the context of the succession crisis and the Four Consulars terror, the
+  number has a particular irony: they have built something generating more annual income
+  than many senators, during the period when their political protection has evaporated.
+  The money is what keeps them alive. Show the moment of recognition — Marcia handing
+  him a ledger summary, or Daniel calculating it himself during a sleepless night of
+  the terror. The number is real. He cannot spend it safely right now, but it exists.
+  One brief beat, not a speech.]"
+  (C18 correction; audit_finances_prize.md Discrepancy 2.)
 - The bored-delator scene must have physical texture — what the man looks like, how he
   moves through the press — so it reads as a rendered scene, not a reported threat.
   (V2_CHAPTER_CHANGE_NOTES, ch33)

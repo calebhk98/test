@@ -221,6 +221,17 @@ battery now critical. Plant: the map as his identity; the western continents
   positioned accurately enough that later readers (especially Hadrian in ch36) can
   recognize them as a genuine geographical claim. Do not soften this to "strange
   shapes" — they are continents, drawn with conviction.
+- [Story note — food as Atlantic motivation (C9): When Daniel draws the western
+  landmasses, he knows what grows there. He is a modern American who grew up eating
+  tomatoes, potatoes, pasta with real tomato sauce, chocolate. In this chapter, eating
+  Roman bread (the bread that he thinks about while deciding not to take back the
+  continents), he registers privately that the food he is missing most — not just
+  crops as resources but food he has actually tasted and wants again — is growing
+  across that ocean. This should surface as a brief interior note: not a strategic
+  calculation, but a personal, human motivation. One of the real reasons he will
+  eventually push for the crossing is that he misses what he can't eat here. This
+  is texture and interiority, not a plot driver. No speech, no scene — just a private
+  register visible to the reader. (C9 — per audit_new_gaps.md Gap 1)]
 
 **[V2] Tech requirements:**
 No tech. The map is Daniel's first demonstration of the cognitive edge in its
@@ -1863,3 +1874,76 @@ Second Dacian War chronology), V2_HISTORICAL_IMPACT.md (§Part 1: Second Dacian
 War — substantially changed; balloon archers, Sarmizegetusa water supply identified
 faster, ~35% lower casualties), V2_STORY_PLOT_NOTES.md (§1.2 manned flight
 resumption — safety protocols, voluntary operators, 50+ hours tethered).
+
+---
+
+<!-- CORRECTIONS APPLIED — 2026-05-28 -->
+<!--
+Correction summary: all 9 corrections from the editorial directive were applied to
+this file. Status of each:
+
+C1 — Ch13 vow wording (HIGH): APPLIED.
+  Changed "I won't put untrained people into an untested design" to "I won't rush
+  untrained people into an untested design" in the ch13 Story/Plot additions section,
+  the ch14 Story/Plot additions section, the ch14 Cognitive edge notes section, the
+  ch14 Zero-tolerance checks, and the ch13 Updated Files list citation. "Rush" is now
+  consistent with V2_STORY_PLOT_NOTES §1.2 and V2_REVISED_OUTLINE.md ch13 entry.
+
+C2 — Ch17 balloon moral struggle (HIGH): APPLIED.
+  Added a full [Required: Full scene] note to ch17 Story/Plot additions specifying
+  that Daniel's discomfort with balloons as weapons must be an on-page beat with real
+  emotional weight — not a parenthetical. Also added a zero-tolerance check to ch17
+  confirming the requirement.
+
+C3 — Atlantic planning seed in early chapters (MEDIUM): APPLIED.
+  Added a [Story note — Atlantic motivation seed] to ch05 Story/Plot additions.
+  Ch05 is the natural placement (Daniel is eating Roman food, noting absence of
+  familiar ingredients, still in Phase A). The note flags that from his first weeks
+  in Rome, Daniel privately registers that the crops he wants are across a known
+  ocean — not a plan yet, but a filed observation that must surface naturally.
+
+C4 — Balloon contract negotiation drama (HIGH): APPLIED.
+  Added a [Required beat: Balloon contract negotiation] note to ch11 Story/Plot
+  additions. Notes the ~800K HS total contract, ~200-250K HS to Daniel after
+  Macer's cut, and requires the negotiation to be an on-page scene (Daniel holds
+  firm, first experience of his own leverage). Also added a zero-tolerance check.
+
+C5 — Ch16 pasta scene setting (MEDIUM): APPLIED.
+  Added a [Food arc correction C5] note to ch16 Story/Plot additions. Specifies
+  the pasta scene must be a workshop/social setting (workers, associates present),
+  not a private meal. Includes the Gnaeus/tavern partnership seed requirement.
+
+C6 — Sportsbook launch timing (MEDIUM): APPLIED.
+  Added a [Beat: Sportsbook launches] note to ch08 Story/Plot additions. Confirms
+  ch08 is the correct placement for sportsbook operations launch (not ch10-11 as
+  the arc status table incorrectly states). Notes the expected-value math must be
+  rendered on the page.
+
+C7 — Prize model as one of several R&D methods (MEDIUM): APPLIED.
+  Added a parenthetical note to ch07 Story/Plot additions clarifying that Daniel
+  uses multiple R&D methods (direct hire, in-house workers, personal experimentation,
+  prize competitions). Prize model is the novel contribution; all methods coexist.
+
+C8 — Ch10 frozen epiphany tic warning (LOW): APPLIED.
+  Added a [TIC WARNING] block to ch10 Prose rules section identifying the exact
+  frozen-epiphany sentence ("I stood there in my own yard and looked at a
+  fourteen-year-old slave...") as TIC V13's named example from PROSE_PATTERNS_TO_AVOID.
+  Also added a zero-tolerance check requiring the sentence to be rewritten as action
+  or dialogue.
+
+C9 — Food motivation note (MEDIUM): APPLIED.
+  Added a [Story note — food as Atlantic motivation] to ch03 Story/Plot additions.
+  Ch03 is where Daniel draws the western continents; the connection between what
+  grows there and what he misses eating is natural here. The note specifies this
+  is a private interior register (one or two sentences), not a scene or speech.
+
+UNRESOLVED CORRECTIONS: None. All 9 corrections were successfully applied.
+
+NOTE: C3 and C9 both relate to early-chapter Atlantic/food motivation. They were
+placed in different chapters (C3 in ch05, C9 in ch03) to avoid redundancy and
+because each serves a distinct purpose: C9 is specifically about food as personal
+motivation visible when Daniel draws the continents; C3 is about the ongoing filing
+of "I know how to do this" across the early Roman months. Both are brief interior
+notes, not scenes.
+-->
+

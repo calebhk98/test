@@ -237,6 +237,10 @@ Tyche and two or three apprentices learn English as the cipher. The daughter-que
 - One protégé who goes wrong: V2 requires this scene somewhere in Part IV or V (V2_STORY_PLOT_NOTES §3.3). By ch41, if not yet dramatized, a brief reference or discovery is appropriate — a workshop graduate who has used something Daniel taught to harm or exploit someone. The discovery should be brief; the point is that Daniel's tools are not inherently good. (V2_STORY_PLOT_NOTES §3.3)
 - The Tyche/"Ulpia" nomen scene must happen before the book ends (V2_STORY_PLOT_NOTES §5 By 155 AD). If this is the chapter where Ulpia comes most fully into focus as a person rather than a child, it may be the right place to show Tyche receiving or using an extended social identity — not necessarily a formal nomen scene, but the beginning of that arc.
 
+[Required beat: 'The Accidental Parallel.' A Roman artisan writes a contest story that accidentally describes one of Daniel's planned technical innovations. Daniel must decide whether to let it win (crediting the artisan who independently reached his idea) or manage the disclosure. He lets it win. This is the Loop 3 payoff for the writing contest — fiction inspiring technology, working backward.]
+
+[Required beat: DINOSAURS. Daniel tells his children (Ulpia and/or Lucanus) about dinosaurs. Not as a history lesson — as a delighted parent sharing something wonderful. 'There were creatures, before any of this, larger than buildings, that walked where we walk now. They're all gone and we only know about them from their bones in rocks.' No strategic value. Pure parental connection. The kind of thing a modern father tells his kids that he would never bother explaining to Romans. In English, privately.]
+
 **[V2] Tech requirements:**
 Phase E. The English cipher being taught to Tyche and the apprentices is itself a technology — an information security mechanism for the encyclopedia. By ~131–134 AD, Tyche is ~46–49 and has been working with Daniel for 30 years. She is not learning English as a foreign language; she is the keeper of the cipher and is now teaching it. The writer should show her competence and her own contributions to the cipher's structure — she has had ideas about this that Daniel incorporated. The encyclopedia's English-cipher design is on the page here as a physical object being copied and worked on, not just discussed. (V2_MASTER_CONTEXT §5 What V1 Got Right — encyclopedia cipher)
 
@@ -298,6 +302,8 @@ Bar Kokhba backdrop (132–135 AD) is per the timeline. Rome is suppressing the 
 **[V2] Atlantic/New World:**
 No specific Atlantic beat required here. The 130 AD probe voyage has returned. The serious funded crossing is being planned for the 140s. Daniel is now 52–55 — old enough to be calculating whether he will live to see the ship depart. He will. He is on track to live to ~155 AD, and the ship departs ~149 AD.
 
+[Note: Balloon rigs are standard equipment on ocean voyages from Part V onward. Balloon-equipped ships carry trained operators and crossbow-armed aerial soldiers. This is not optional equipment — it is doctrine by this point.]
+
 **[V2] Prose rules (chapter-specific):**
 - PRESERVATION MANDATE: The empty-bench grief close (the retort that "had nowhere to go," asking the empty room in Greek, drinking the boiled water cold) is a model grief-through-behavior execution. Do not touch it. This is the book's gold standard for grief rendered without stating it.
 - BLOCKING REMOVAL: "I am not going to write what it was to watch it [the pyre]." — Announcing the withholding is still announcing. Cut. The enacted version 8 lines later renders the grief.
@@ -330,6 +336,8 @@ A domestic chapter that earns the stakes. Marcia, the children, the ordinary lif
 - The food motif: by ~135–138 AD, Daniel has been in Rome for nearly 40 years. His culinary influence has spread without attribution — somewhere, a tavern near his workshop serves something he invented, on a stranger's menu, without his name attached. One brief domestic scene where he or a visitor is served his own recipe, unattributed, is available. This is the Part IV or V beat from V2_STORY_PLOT_NOTES §9. (V2_STORY_PLOT_NOTES §9 The Culinary Side Business, required scene 3)
 - The song scene (ch43) must be emotionally differentiated from the sleet-word scene (ch41). The sleet-word is discovery (Ulpia finds evidence of Daniel's origin in the language). The song should be memory as loss — something Daniel half-remembers, that has a hole in the middle, that he cannot give his children because he does not fully have it. The hole in the middle is the grief of a man who has lived so long in a foreign language that his own mother tongue has gaps. (V2_CHAPTER_CHANGE_NOTES §ch43; §ch41 cross-reference)
 
+[Required subplot: 'Too Many Prizes.' Daniel has been running too many prize competitions simultaneously — a dozen across different technical domains. In one month, three winners show up at his door in the same week. He owes them all. The payout nearly depletes his liquid capital before the next press revenue wave arrives. He has to borrow from Marcia's household accounts and call in a favor from a merchant who owes him. He's fine financially within weeks. But the moment of 'I nearly broke myself because I was thinking about steam and forgot to track the prize obligations' is humanizing — he's brilliant and fallible and juggling too much.]
+
 **[V2] Tech requirements:**
 Phase E. No specific tech beats required. The relevant tech presence in this chapter is ambient: the workshop is running; the contest is running; the press is running. The family scene earns its stakes partly because these institutions are what Daniel has built instead of a way home. The absence of the phone, the absence of anyone who shares his references, the absence of anyone who would understand the song — this is the loneliness spine made domestic.
 
@@ -344,6 +352,8 @@ By ~135–138, four concrete divergence signs are visible per V2_STORY_PLOT_NOTE
 
 **[V2] Atlantic/New World:**
 The 136 AD probe voyage has returned (the third Atlantic probe extending 800–1,000 miles west). Roman navigators now know the trade wind pattern and the current structure with confidence. Daniel is 54–57 and is actively planning the funded crossing to depart in the 140s. He may discuss this with Marcia or with Ulpia in this chapter — not as an announcement, as a planning problem. The citrus requirement he has already specified; the hull is being refined; the compass and latitude gnomon are standard. This is the approach to the crossing's departure.
+
+[Note: Balloon rigs are standard equipment on ocean voyages from Part V onward. Balloon-equipped ships carry trained operators and crossbow-armed aerial soldiers. This is not optional equipment — it is doctrine by this point.]
 
 **[V2] Prose rules (chapter-specific):**
 - BLOCKING REMOVAL: "which was the gentlest thing anyone could have done to me and the one I could thank no one for." — Names the emotional content already delivered. Cut.
@@ -381,7 +391,9 @@ Each sign cuts both ways — the note that each divergence serves power as easil
 
 The "each sign cuts both ways" observation: in V1, this was noted but the writing may have stated it. In V2, the chapter should dramatize a single moment where a divergence sign is visibly serving an unintended or dangerous purpose — the figure on the tax-farmer's ledger, the printed text circulating false information, the powder's presence somewhere it shouldn't be. One instance, concrete, not announced. (V2_STORY_PLOT_NOTES §5 note on each sign cutting both ways)
 
-One woman wins a contest prize before the book ends (per V2_STORY_PLOT_NOTES §7). If not yet on the page, ch44 is a strong candidate: the contest, ca. 136–138, a woman's story taking the prize. Daniel makes the award public. The cultural friction is real — the press covers it, the precedent is set. Forty years of contest culture has been building toward this being possible. (V2_STORY_PLOT_NOTES §7 required beats)
+A woman wins a major prize — either the People's Prize or the Judges' Prize — in this chapter. [Required: A woman wins a contest prize in this chapter range. Treated matter-of-factly. Daniel's surprise that it caused less controversy than expected is the beat — not the win itself.] Daniel makes the award public. Roman women had more social agency than Daniel assumed; the cultural reaction is mild where he expected friction. This is not a progressive agenda beat — the women's win should feel like a natural consequence of forty years of open contest culture. (V2_STORY_PLOT_NOTES §7 required beat — NOT conditional)
+
+[Required beat: Anonymous track controversy. A story submitted on the anonymous track wins a prize. The judges debate whether to reveal the author. Daniel insists on honoring the anonymous submission. When the author is eventually revealed, the class/background is unexpected — controversy ensues about whether it would have won without anonymity. This tests the contest's credibility.]
 
 **[V2] Tech requirements:**
 Phase E. By ~136–138:
@@ -401,9 +413,13 @@ This chapter IS the historical divergence chapter. All four signs are on the pag
 **[V2] Atlantic/New World:**
 The third probe voyage (136 AD) has completed. Trade winds confirmed. Current structure understood. The chapter's ocean-hull sign (the ship on the ways at the Garonne mouth) is the material evidence of the Atlantic program's progress. Daniel's honest assessment: the hull can float and the navigation is understood well enough to attempt the crossing. The outstanding problem is longitude — the sea-clock prize is still unwon (Procula will solve the escapement in ch52, after Daniel's death; the marine chronometer is another generation beyond that). The funded crossing will depart without a marine chronometer, using dead reckoning and latitude sailing — the way Columbus did it. Daniel is beginning to plan the specific departure. (V2_HISTORICAL_IMPACT §Ocean Program; V2_STORY_PLOT_NOTES §1.3 revised timeline)
 
+[Note: Balloon rigs are standard equipment on ocean voyages from Part V onward. Balloon-equipped ships carry trained operators and crossbow-armed aerial soldiers. This is not optional equipment — it is doctrine by this point.]
+
 **[V2] Prose rules (chapter-specific):**
 - The milestone-grief thread (strong addition in V1): ensure it does not become a gnomic chapter close. End on image or action. If the last beat is Daniel seeing one of the four signs, end on the physical object or the child's face — not on what it means.
 - "Each sign cuts both ways" note must be dramatized, not stated. (V2_CHAPTER_CHANGE_NOTES §ch44)
+
+[PROSE NOTE: Late-book chapters accumulate tics. Before finalizing: check for preambles ('I want to be honest/clear/precise'), 'shape' metaphors, 'the thing' abstractions, 'which is to say' pivots, and body-inventory catalogs (teeth, joints, eyes). See PROSE_PATTERNS_TO_AVOID.md Section 6 for full list. The examples listed are illustrative, not exhaustive — apply by pattern recognition, not list-matching.]
 
 **[V2] Zero-tolerance checks:**
 - [ ] No "not X, it's Y" constructions.
@@ -426,7 +442,9 @@ Chapter-specific: bible/03_timeline.md (§Divergence Ledger ch44), V2_HISTORICAL
 The Bar Kokhba revolt and imperial brutality. Daniel confronts that his gifts serve power, including its cruelty: his powder, his logistics, his sieges. The hubris-or-duty question at its sharpest, unresolved. The slave-price column — Daniel watching the price of a human being fall down a column of his own marks, in his own accounting system. The darkest chapter of Part VI. Plant: the unresolved moral core; Daniel's reckoning with his own legend.
 
 **[V2] Story/Plot additions:**
-- V2_HISTORICAL_IMPACT §Bar Kokhba makes explicit: the revolt is suppressed ~14–18 months sooner, with Roman legionary casualties ~30–35% lower, because balloon observation strips Bar Kokhba's terrain advantage. The Jewish diaspora still occurs. Jerusalem is still refounded as Aelia Capitolina. Daniel knows he made the suppression faster and more efficient. The tragedy is unchanged; the efficiency is his contribution. This must be the chapter's moral center — not his weapons directly, but his efficiency, his planning, his tools in service of faster conquest. (V2_HISTORICAL_IMPACT §Bar Kokhba Revolt verdict)
+- V2_HISTORICAL_IMPACT §Bar Kokhba makes explicit: the revolt is suppressed ~14–18 months sooner, with Roman legionary casualties reduced, because balloon observation strips Bar Kokhba's terrain advantage. The Jewish diaspora still occurs. Jerusalem is still refounded as Aelia Capitolina. Daniel knows he made the suppression faster and more efficient. The tragedy is unchanged; the efficiency is his contribution. This must be the chapter's moral center — not his weapons directly, but his efficiency, his planning, his tools in service of faster conquest. (V2_HISTORICAL_IMPACT §Bar Kokhba Revolt verdict)
+
+[Note: Per planning docs, Bar Kokhba ends 12–18 months early with 20–25% fewer Roman casualties — not 30–35%. Use 20–25% for consistency.]
 - The slave-price column: V2 notes this is the chapter's darkest image and must not be buried. It should be the chapter's climactic image. The economic consequence of Daniel's water-powered machinery and the decimal accounting system is a measurable depression in prices for unskilled heavy-labor slaves. The price of a human being has fallen in the columns of Daniel's own accounting system. He is the cause. He knows it. He has not stopped. (V2_CHAPTER_CHANGE_NOTES §ch45; V2_HISTORICAL_IMPACT §Economic Divergence 130–155)
 - Bar Kokhba as the final sharpening of the hubris-or-duty question: ch45 is explicitly the chapter where this question is "at its sharpest, unresolved." The unresolved quality must be preserved — do not give Daniel a conclusion he does not earn. The right note: he has no answer. He has the question. That is what he carries. (V2_CHAPTER_CHANGE_NOTES §ch45; V2_MASTER_CONTEXT §5 What V1 Got Right — Daniel's moral complicity)
 
@@ -440,7 +458,9 @@ Phase E (~136 AD). The slave-price depression in the accounting columns is a fin
 Daniel's cognitive edge is a burden here. He knows Bar Kokhba dies, Jerusalem is permanently refounded as Aelia Capitolina, the diaspora occurs, and millions of people will live in exile because of this defeat. He also knows he made the defeat faster. His knowledge does not give him a way out — it only gives him the weight of seeing clearly what he has done. The hubris-or-duty question in this chapter is not a philosophical puzzle; it is a man who knows the historical record, has made the record worse (in efficiency), and has no way to unknow either fact. (V2_DANIEL_COGNITIVE_EDGE §What Daniel Knows — Rome's Historical Failure Modes)
 
 **[V2] Historical divergence:**
-The Bar Kokhba suppression (132–135 AD historically; ending ~14–18 months sooner in V2) is the starkest divergence Daniel has participated in directly since the Dacian Wars. In V2 the revolt is over by ~133–134 AD. Daniel is not a general; he did not order the suppression. He built the tools that made it faster. This is the distinction he turns over and cannot resolve. (V2_HISTORICAL_IMPACT §Bar Kokhba Revolt verdict; §War Outcome Verdicts)
+The Bar Kokhba suppression (132–135 AD historically; ending ~14–18 months sooner in V2) is the starkest divergence Daniel has participated in directly since the Dacian Wars. In V2 the revolt is over by ~133–134 AD. Roman legionary casualties are approximately 20–25% fewer than historical. Daniel is not a general; he did not order the suppression. He built the tools that made it faster. This is the distinction he turns over and cannot resolve. (V2_HISTORICAL_IMPACT §Bar Kokhba Revolt verdict; §War Outcome Verdicts)
+
+[Note: Per planning docs, Bar Kokhba ends 12–18 months early with 20–25% fewer Roman casualties — not 30–35%. Use 20–25% for consistency.]
 
 **[V2] Atlantic/New World:**
 No primary Atlantic beat required here. The chapter is focused inward on moral reckoning.
@@ -473,6 +493,8 @@ Chapter-specific: V2_HISTORICAL_IMPACT.md (§Bar Kokhba Revolt verdict, §War Ou
 
 **[V2] Story/Plot additions:**
 - Antoninus Pius's character is important as context: a conservative, stay-at-home emperor with no appetite for adventure. He is not Daniel's enemy; he is indifferent to Daniel's programs in a way that is worse than hostility. The ocean program will die by neglect, not by opposition. Daniel predicts this with the accuracy of a man who has watched patronage cycles for 40 years. He tells Ulpia (or the collegium): keep the survey current-but-unworked; laid down, not closed. (bible/03_timeline.md §Divergence Ledger ch46)
+
+[Ch46 Ulpia task: Atlantic/ocean geographic survey. She documents what is known, what is still uncertain, what remains to be explored. This is 'laid down, not closed' — the program outlives Daniel. Specific exchange: Ulpia asks about involving Lucanus in the survey. Daniel says yes.] NOTE: Do NOT assign Ulpia an epidemic disease encyclopedia survey in this chapter. The correct assignment per V2_ULPIA_EDUCATION.md is the Atlantic/ocean geographic survey described above. The disease encyclopedia survey belongs to a different arc and a different chapter. Remove any existing disease survey instruction from this chapter and replace with the ocean survey above.
 - The ocean program's precarious state is the chapter's key V2 beat — the program is now maintained by institutional structures Daniel built for exactly this moment, not by imperial patronage. The contest is endowed. The press runs. The patronage fund is capitalized. These survive without a living emperor; the ocean program's Garonne yard does not. Daniel's regret is specifically for this one program that he could not institutionalize cheaply enough to survive a change in regime. (bible/03_timeline.md §Divergence Ledger ch46)
 - The communication argument Daniel made to Hadrian (~128 AD, ch38) either bore fruit or it didn't. By ch46, the experimental optical semaphore line Rome-to-Rhine is operational or in late construction. If it was funded by Hadrian, it may also be at risk under Antoninus Pius. One brief reference to the semaphore line's status — whether it holds — is appropriate here. (V2_HISTORICAL_IMPACT §Problem 2: Communication Lag; §Divergence Visibility Timeline 128–135)
 

@@ -23,12 +23,12 @@ are in this outline (departure ch27, return news ch28, Hadrian's program ch36).
 
 | Arc | Phase A (ch01–11) | Phase B (ch12–22) | Phase C (ch23–33) | Phase D (ch34–38) | Phase E (ch39–53) |
 |-----|------|------|------|------|------|
-| Sportsbook/gambling | mental note ch07; ops launch ch10–11 | card games ch16; lottery/bingo ch19 | casino operational ch26–31 | established income | ubiquitous |
+| Sportsbook/gambling | mental note ch07; ops launch ch08 | card games ch16; lottery/bingo ch19 | casino operational ch26–31 | established income | ubiquitous |
 | Writing contest | idea (ch16) | launched (ch19); contest stories ch19–31 | full structure; Beat E ch26 | Daniel withdraws ch34; Beat I ch39 | Beats J/K ch41; Beat L ch41–44 |
 | Atlantic crossing | compass planning | expedition planning; foundational lie ch25–27 | departure ch27; return ch28 | Hadrian formalizes ch36; indigenous person ch33–34 | colonial program |
-| Food arc | garum disgust | proto-ketchup, pasta attempt | army contrast | New World crops arrive | crops in diet |
+| Food arc | garum disgust; first omelette; fig-and-vinegar reduction (ch05) | pasta introduction; tavern partnership (Gnaeus) planted | army contrast | New World crops arrive | crops in diet |
 | Ulpia education | — | — | — | Lucanus English ch36; Lucanus truth ch38 | Ulpia full arc ch38–49 |
-| Manned balloons | tethered demos | Sabinus death/vow | manned archers doctrine | — | — |
+| Manned balloons | tethered demos | Sabinus death/vow; manned archers doctrine (ch18) | doctrine consolidated/universalized | — | — |
 | Volta pile / compass | — | initiated | demonstrated ch23 | in use | — |
 | Prize/innovation model | first glass prize ch07; sportsbook ch10 | DARPA spec model recurring | recurring mechanism | Glabrio arc ch21–38 | legacy |
 | Antonine Plague prep | — | — | — | — | ch40–49; Zoticus ch47; aftermath ch52 |
@@ -441,8 +441,10 @@ are in this outline (departure ch27, return news ch28, Hadrian's program ch36).
 - **Ulpia birth ~118 AD.** She is ~9–10 at ch38, ~14–16 at ch43, ~22–27 at ch47, ~37 at ch50.
 - **Tyche birth ~84–85 AD.** She is ~24–25 at ch20, ~44–45 at ch40, ~56 at ch48.
 - **Volta pile demonstrated to Heras ch23.** All subsequent chapters may reference it as existing.
-- **Compass working by ch23.** Atlantic planning begins ch25 (private). Expedition organized ch26. Departure ch27. Return news ch28.
+- **Compass working by ch16–21 range (~103–108 AD).** [CORRECTED from "ch23": the ch23 entry shows the compass already working and being used for expedition planning; the device must be operational several chapters earlier, in the ch16–21 window. This is the key enabling step for the Atlantic crossing bottleneck chain — compass ready → expedition planning begins → departure ch27.] Atlantic planning begins ch25 (private). Expedition organized ch26. Departure ch27. Return news ch28.
 - **Manned balloon archers operational by ch18.** Military doctrine established. The flight vow covers only untrained operators in untested designs — not this program.
+- **Balloon archers use crossbows, not traditional recurve bows** — crossbows require less skill and can be fired accurately from a moving/swaying platform. A pre-spanned crossbow in a basket requires only aim and trigger; a regular bow requires full arm extension and a standing draw. This is established doctrine by ch18 and must be shown as such in all subsequent chapters.
+- **Standard balloon formation by 108 AD: two rigs per legion. One observation, one combat. Tethered at 200 feet unless scouting.** This formation detail is confirmed doctrine by the Parthian War (ch28) and applies retroactively to all post-ch18 siege and campaign scenes.
 - **Atlantic first crossing ~113–114 AD.** Return ~117–119 AD. Second expedition under way by ch29. Hadrian's institutional program ch36. Returned indigenous person scene ch33.
 - **Crispus exits ch33.** Scaeva exits ch34. **Vibenius exits ch35** (death near chapter's END, ~125 AD — do not place earlier).
 - **"All tracks lead to Rome"** appears in ch44 — Felix writes it in a contest entry; Daniel reads it in the press.
@@ -452,8 +454,8 @@ are in this outline (departure ch27, return news ch28, Hadrian's program ch36).
 - **Card games / casino** seeded ch16, sportsbook ops ch08, casino operational ch26–31, ubiquitous by ch31, divergence sign by ch44.
 - **Sportsbook** — first independent income, before balloon contract solidifies. Ops begin ch08. Not ch19.
 - **Coal** recognized ch07. Self-reinforcing loop begins as a plan. Steam pump first working ch38 area.
-- **Optical semaphore** — sketched ch23, first relay line (Rome to Adriatic) by ch40, Rhine line by ch49.
-- **Pendulum clock** — first attempt ch23 (bad), improving through Phase D, in public buildings by ch49.
+- **Optical semaphore** — sketched ch23, first relay line (Rome to Adriatic) by ch40 (~130 AD), Rhine line by ch49 (~150–155 AD). [Note: Ch40 covers Rome-to-Adriatic (~130 AD). The Rhine line requires additional stations through Gaul and takes longer — Ch49 completion (~150–155 AD) is consistent with the logistics. master_outline.md must be corrected to say 130 AD = Adriatic line, not Rhine line. See master_outline correction M1.]
+- **Pendulum clock** — first attempt ch23 (bad), improving through Phase D, in public buildings by ch49. [Ch47: Daniel acknowledges he cannot personally solve the escapement. He launches a final prize competition. Ch48–49: A craftsman using Daniel's precision tool legacy (better calipers, improved gear-cutting from his workshops) solves the escapement. Ch49 legacy entry for "pendulum clocks in public buildings" is valid ONLY because a prize winner solved it, not Daniel himself. This is a "legacy-of-legacy" beat — his tools enabled someone else's solution. Ch52's Procula scene resolves the marine-chronometer-grade escapement, a separate and harder problem than the public clock escapement.]
 - **Glabrio** — appears ch19, ch21, ch29. Retainer arrangement ch34 or ch38.
 - **Prize/innovation model** — first deployment ch07 (glass). Recurring mechanism throughout. Beats 1–5 per V2_PRIZE_INNOVATION.md.
 - **Ulpia education arc** — English from birth ch36 (mentioned), English visible ch38, astronomy/maps ch40, sleet-word ch41, truth-telling ch43, encyclopedia editing ch44, survey instruction ch46, public English ch47, final session ch49.
@@ -468,3 +470,11 @@ are in this outline (departure ch27, return news ch28, Hadrian's program ch36).
 - **Physical decline catalog**: maximum 1 reference per 3 chapters in Part VI (ch47–50).
 - **Cipher rules** ("teach two, never more"): DO NOT fully re-explain after ch40.
 - **V2_NEW_WORLD_CONTACT.md Section 8 is OBSOLETE** — its chapter assignments assume a ~135 AD departure. Use this outline's assignments instead.
+
+---
+
+## CORRECTIONS APPLIED AND WRITING AGENT ADVISORIES
+
+**[V6 — Succession mechanism correction]** Any reference to "printing press for succession stability" or "pamphlet campaigns for regulated succession" as a primary story mechanism is incorrect framing. The correct mechanism is: Daniel seeds political philosophy through the writing contest (stories and essays about governance, the dangers of one-man rule) under pseudonyms — he does NOT run pamphlet campaigns, which is not how Roman succession works (the legions make emperors, not readers). Additionally, he makes a direct institutional argument to Hadrian: that administrative continuity (documented procedures, trained administrators) matters more than legal succession theory. This is framed as engineering, not politics. The philosophical content seeded through the contest reaches educated Romans over decades. Daniel never argues directly for constitutional succession reform by name; he argues for institutions that survive any individual emperor.
+
+**[V7 — Currency debasement correction]** Any reference to "economic theory in encyclopedias" or "encyclopedia economic theory addresses currency debasement" as a PRIMARY mechanism is incorrect framing. Daniel's structural interventions — double-entry accounting, steam-pump mining output, printed commercial infrastructure — address Rome's economic foundations more effectively than theoretical writing. He may include a fatalistic encyclopedia note about the long-term debasement risk (with hooked strokes indicating uncertainty), but this is a backstop, not a primary story mechanism. Writing agents should not frame the encyclopedia economics section as "Daniel's plan to prevent currency debasement" — the plan is the structural work already in the story.
