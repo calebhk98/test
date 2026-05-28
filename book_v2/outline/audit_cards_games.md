@@ -1,7 +1,8 @@
-# Audit: Cards / Games / Gambling / Casino Arc
+# Audit: Cards / Games / Gambling / Casino Arc — FULL AUDIT
 **Novel:** The Long Way Home (V2)
 **Auditor focus:** Cards, Games, Gambling, Casino arc
 **Sources checked:** V2_REVISED_OUTLINE.md, V2_STORY_PLOT_NOTES.md (Section 10), V2_MASTER_CONTEXT.md (Change 5, item 7)
+**Audited:** 2026-05-28
 
 ---
 
