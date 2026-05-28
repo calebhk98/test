@@ -847,13 +847,34 @@ Column's carved-war ribbon with the omitted balloon victim is a standout ironic 
 The Hadrian-as-bearded-cornice-sketcher plant is load-bearing for ch37 and must stay.
 
 **[V2] Story/Plot additions:**
-- **[C6 — Expedition equipment: balloons + crossbows + powder (for blasting), not ship-mounted cannon]** The Atlantic expedition fleet (~112-113 AD) carries:
-  - Portable balloon rigs (2 minimum), trained balloon operators, crossbow-armed aerial soldiers. Crossbows specified over bows: a pre-spanned crossbow requires only aim and trigger in a swaying basket; a full-arm bow draw is impractical aloft.
-  - Gunpowder kegs for BLASTING and MINING purposes (demolishing rock, opening passages, quarry work at a settlement site). The powder works. The barrel precision problem is unsolved, not the powder.
-  - NO ship-mounted cannon for combat fire. The barrel precision problem (from ch21's deliberate demonstration) is still unsolved at 113 AD — reliable repeated cannon fire from a ship is not yet achievable. The powder goes for blasting, not cannon.
-  - The military advantage over indigenous populations: aerial observation + crossbow fire from height + Roman military discipline + the terrifying sound and flash of powder charges used as demolition. Not a firearm salvo.
-  "[Note to writing agent: Daniel knows cannon will eventually exist. He is still working on the barrel problem at 113 AD. The expedition carries the powder because the powder works — he just can't make a tube that holds together for repeated fire yet. This distinction matters: 'powder works, cannon doesn't yet' is the correct framing, not 'no gunpowder technology exists.']"
-  (C6 correction revised per cannon arc note; audit_new_gaps.md Gap 3; audit_flight_vow.md §2 crossbow specification.)
+- **[C6 — Expedition equipment by voyage generation]**
+  FIRST CROSSING (~112-113 AD, this chapter):
+  - Portable balloon rigs (2 minimum), crossbow-armed aerial soldiers
+  - Gunpowder kegs for BLASTING and MINING only — barrel precision still unsolved
+  - Military advantage: aerial observation + crossbow fire from height + powder demolition charges + Roman discipline. No ship-mounted cannon yet.
+  - The first crossing is scouting/survival; probably loses 1 ship in 3
+
+  SECOND WAVE (~125-135 AD, assign to Part V chapters in ch37-53):
+  This is when ship-mounted cannon become feasible. Three enabling developments converge:
+  (a) The siege bombard is working (~117-122 AD) — the bronze casting and boring are solved
+  (b) Rubber from the first return voyage (~115-118 AD) enables waterproof powder storage
+      at sea — this is the critical missing piece; wet powder is useless, and rubber
+      gaskets solve it
+  (c) Ship design refinement: recoil from a cannon pushes a ship sideways, requiring a
+      different mounting than a land carriage. Daniel knows this distinction. The solution:
+      small SWIVEL-MOUNTED bronze guns on reinforced bow and stern mounts, rotating to
+      aim, with a rearward exhaust channel cut into the rail. These are not broadside
+      batteries — they are 2-4 light guns per ship, for standoff fire. Much simpler than
+      a full naval broadside battery.
+  By the second wave, Roman Atlantic ships carry: balloon rigs + crossbows + 2-4 swivel
+  gun mounts firing 10-15 lb bronze balls. The power differential vs. any indigenous
+  coastal force is now total. A ship that can rain crossbow fire from a balloon and fire
+  cannon without warning, from 300 yards, is effectively invulnerable to anything that
+  existed in the Americas in 125 AD.
+  "[Note to writing agents for Part V chapters: second-wave ships carry swivel cannon.
+  This changes the nature of New World contact dramatically from the first voyage. Show
+  this change — the first expedition was vulnerable and knew it; second-wave ships are
+  not. The moral weight shifts accordingly.]"
 - **[C7 — Quarantine protocols for expedition]** "[Required: Daniel arranges a physician
   for the fleet and writes specific quarantine protocols before departure. He knows
   diseases spread by contact — he has been teaching this for years. His written protocols:
