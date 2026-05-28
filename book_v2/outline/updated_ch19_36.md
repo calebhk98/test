@@ -1704,6 +1704,25 @@ hold the enterprise together while Daniel maneuvers. A foothold with someone clo
 Hadrian; the ocean-map plan maturing.
 
 **[V2] Story/Plot additions:**
+- **[C16 — Required: on-page education scene for Lucanus]** Ch34 (~118-122 AD) is the
+  appropriate placement for one required on-page education scene for Lucanus (Daniel's
+  son, born ~108 AD, approximately 10-14 years old in this chapter's range). "[Required:
+  On-page education scene for Lucanus. He and Daniel discuss something in English — a
+  concept, a story, a question Lucanus has been turning over. The planning doc
+  (V2_ULPIA_EDUCATION.md) specifies Lucanus's distinctive register: he asks what things
+  imply rather than what they are. He cares about who wins more than the machinery. A
+  strong candidate beat from the planning doc: the atom bomb conversation — 'Some of
+  them were right. Some of them were wrong. And they were the same people.' Or the Star
+  Wars political allegory discussion. Or Newton's laws applied to siege engines (Lucanus
+  notices the counterweight trebuchet they pass; Daniel explains the physics; Lucanus
+  asks why Rome won't adopt it).
+  Show the relationship — not 'Daniel taught him things' as narration, but a rendered
+  exchange in English, brief, specific. Lucanus is smart and asks hard questions. His
+  education is fully equal to Ulpia's in depth; it manifests differently because he
+  is a different person. This is the one required on-page beat showing Lucanus's
+  education in action before his departure for legal apprenticeship in ch38.
+  Do not make this a lesson. Make it a conversation.]"
+  (C16 correction; audit_ulpia_education.md Discrepancy 5.)
 - BLOCKING: The "numbers stayed where I set them / had no far side" closing refrain
   appears in ch34, ch35, AND ch36 in V1. This is a three-consecutive-chapter tic and is
   a V2 blocker. Replace the closing image in at least two of the three. Ch34's close
@@ -1962,6 +1981,21 @@ confesses he cannot build the clock, names the problem as longitude, does not ha
 it. Hadrian's bounded, consolidator's-version-only response is exactly right.
 
 **[V2] Story/Plot additions:**
+- **[C15 — Tomato-sauce payoff: must be private, not a state meeting]** "[REQUIRED FIX:
+  The first tomato-sauce scene — the food arc's emotional payoff (beat 2 of 4 per
+  V2_FOOD_ARC.md) — must NOT occur at a state meeting or political event. The current
+  ch36 brief describes 'tomato-pasta or sweet potato dish served at the meeting (one
+  small detail).' This is the wrong setting and wrong register for this beat.
+  The planning doc requires: Daniel tastes tomato-based sauce for the first time in
+  15+ years — alone, or with Marcia, not at a political dinner. The emotion is private.
+  He makes the sauce. Puts it on pasta. Eats it. Puts the bowl down. Says nothing.
+  Three sentences maximum. No commentary. Twenty-plus years of absence resolved privately.
+  If the Hadrian meeting requires a food beat (ambient crop texture only), use sweet
+  potato or corn/polenta for the meeting. DEFER the full tomato-sauce scene to a private
+  moment in this chapter's timeframe or early ch37 — wherever Daniel is briefly alone
+  or with only Marcia. The full tomato payoff cannot be 'one small detail' at a political
+  event. It is the food arc's earned moment and requires privacy.]"
+  (C15 correction; audit_food_arc.md Discrepancy 3.)
 - BLOCKING: Fix the "numbers stayed" closing refrain — third consecutive chapter using
   this move. "I closed the lid on the nothing inside... where the numbers stayed where I
   set them and did not have a far side." Replace with a fresh image.
@@ -2101,3 +2135,129 @@ Chapter-specific additions:
 
 *End of updated outline entries for ch19-36.*
 *Next block: ch37-53 (Parts V-VII) to be written separately.*
+
+---
+
+## CORRECTIONS APPLIED IN THIS EDIT SESSION
+
+The following corrections from the master correction list were applied to this file:
+
+**C1 — Ch19 R&J contest win (HIGH):** APPLIED. Ch19 entry updated: Romeo and Juliet wins
+the Judges' Prize in the year it enters, per V2_CONTEST_STRUCTURE.md. Felix's entry loses
+(voice noticed, too crude). Resolves audit_writing_contest.md D1.
+
+**C2 — Ch19 uncomfortable contest entries (MEDIUM):** APPLIED. Ch19 entry updated with
+required story beat: (a) soldier's kill-at-distance story; (b) slave's viciously accurate
+satirical portrait of an aristocrat. Both make Daniel uncomfortable; both advance. Neither
+annotated.
+
+**C3 — Ch20 Trajan two-questions scene (HIGH):** APPLIED. Ch20 entry updated with required
+scene: Trajan asks "Can it carry fire?" and "Can an enemy shoot it down?" — creates permanent
+balloon military unit at ~107-108 AD. Resolves audit_flight_vow.md Discrepancy 2.
+
+**C4 — Steam pump development beats in ch20-22 (CRITICAL):** APPLIED. Two sub-corrections:
+(C4a) Ch21 entry updated with steam blocker-diagnosis beat and prize competitions for
+cylinder boring and valve casting. (C4b) Ch22 entry updated with first working small-scale
+steam pump — leaky, 1% efficiency, pumps water. Newcomen insight made explicit.
+Resolves audit_tech_timeline.md DISCREPANCY 1 and 6.
+
+**C5 — Atlantic planning: compass, citrus, food motivation, crop instructions (HIGH):**
+APPLIED. Ch22 entry updated with: (C5a) citrus/scurvy provision note with symptoms named;
+(C5b) food motivation as private interiority beat — tomatoes, potatoes, cacao named in
+Daniel's internal planning; (C5c) multiple crops on return requirement established.
+Compass working beat: already present in the outline's cross-chapter continuity note
+("Compass working by ch23") — this correction defers to that existing assignment and
+notes that ch15-ch22 should confirm compass working in the ~104-106 AD range (addressed
+in updated_ch01_18.md scope, not this file). Resolves audit_new_gaps.md Gaps 1 and 2;
+audit_atlantic_crossing.md Discrepancy 1 (partial — compass chapter number fix belongs in
+the ch01-18 file).
+
+**C6 — Expedition: balloons + crossbows (not cannon) (HIGH):** APPLIED. Ch26 entry
+updated with expedition equipment specification: portable balloon rigs (2 minimum), trained
+operators, crossbow-armed aerial soldiers. Cannon explicitly excluded per ch45 established
+canon. Crossbow-over-bow specification given. Resolves audit_new_gaps.md Gap 3;
+audit_flight_vow.md Discrepancy 4.
+
+**C7 — Quarantine protocols on expedition (MEDIUM):** APPLIED. Ch26 entry updated with
+required quarantine beat: fleet physician, written isolation rules, practical harm-reduction
+framing. Resolves audit_atlantic_crossing.md Discrepancy 5.
+
+**C8 — Ch28 mortality range fix (HIGH):** APPLIED. Ch28 entry updated: indigenous mortality
+range corrected from "20-30%" to "30-50%". Authoritative figure from V2_NEW_WORLD_CONTACT.
+Resolves audit_atlantic_crossing.md Discrepancy 3.
+
+**C9 — Ch28 syphilis confirmed (MEDIUM):** APPLIED. Ch28 entry updated with narrative-level
+note: syphilis reverse exchange confirmed at story level; Daniel's in-story uncertainty
+preserved but the narrative fact is not left unresolved. Resolves audit_atlantic_crossing.md
+Discrepancy 4.
+
+**C10 — Ch28 private encyclopedia confession (MEDIUM):** APPLIED. Ch28 entry updated with
+required beat: "I knew. I had always known." — private cipher encyclopedia entry, never
+spoken aloud. Resolves audit_atlantic_crossing.md Discrepancy 6; V2_NEW_WORLD_CONTACT §6.
+
+**C11 — Ch28-31 writing contest category evolution (MEDIUM):** APPLIED. New section added
+to ch29 entry (contest arc notes, ch28-31 range) covering: 1→3 categories evolution,
+anonymous track introduction and its controversy, class-problem framing. Ch31 entry updated
+with anonymous track note in context of succession terror. Resolves audit_writing_contest.md
+D7, D10.
+
+**C12 — Ch28-32 mine drainage steam pump emotional beat (MEDIUM):** APPLIED. Assigned to
+ch31 (~117-118 AD, aligned with V2_HISTORICAL_IMPACT "first pump in Hispania ~118 AD"
+row). Required beat: three days of water, mine opening, the scale of what steam means
+registered for the first time. Resolves audit_finances_prize.md Discrepancy 10.
+
+**C13 — Ch33-35 anti-fall succession beat (MEDIUM):** APPLIED. Assigned to ch35.
+Institutional argument to Hadrian (not pamphlet campaign): documented procedures, trained
+administrators, continuity of function. Framed as engineering. Resolves
+audit_rome_fall_prevention.md Better Alternatives section; C13 as specified.
+
+**C14 — Ch35 or Ch38: pick ONE for "east can't reach west" speech (HIGH):** APPLIED.
+Assigned to CH35 in this file. Full speech belongs in ch35 (first substantive Hadrian
+conversation, sets up ch36 ocean gambit and semaphore sanction). Note added directing
+writers using updated_ch37_53.md to remove the version in ch38. Resolves
+audit_historical_divergence.md Discrepancy 2.
+
+**C15 — Ch36 tomato-sauce payoff fix (MEDIUM):** APPLIED. Ch36 entry updated: full
+tomato-sauce payoff scene must be private (alone or with Marcia only, not at a state
+meeting). Meeting food beat should use ambient crop texture (sweet potato, corn) rather
+than the payoff tomato scene. Payoff deferred to private moment in ch36 or early ch37.
+Resolves audit_food_arc.md Discrepancy 3.
+
+**C16 — Lucanus education on-page scene (HIGH):** APPLIED. Assigned to ch34 (~118-122 AD,
+Lucanus ~10-14 years old). Required rendered conversation in English — not narrated as
+background. Planning doc beats suggested: atom bomb conversation, Star Wars political
+allegory, or Newton's laws applied to Roman siege machinery. Resolves
+audit_ulpia_education.md Discrepancy 5.
+
+**C17 — Remove duplicate playground noticing beat (MEDIUM):** APPLIED. Ch35 entry updated:
+ch35 owns the single playground noticing beat (visitor asks, Ulpia playing, Daniel deflects).
+Note added in ch35 directing removal of the second noticing beat from ch38 (ch38 should
+show the playground as ambient background only, not a second moment of social notice).
+Resolves audit_ulpia_education.md Discrepancy 1.
+
+**C18 — Press income milestone as narrative moment (HIGH):** APPLIED. Assigned to ch33.
+Required beat: Daniel or Marcia does the math on 1-3M HS/year press income during the
+succession terror — the number exists, political protection has evaporated, the money is
+what keeps them alive. One brief scene, not a speech. Resolves audit_finances_prize.md
+Discrepancy 2.
+
+**C19 — Women in contest: not a big deal (MEDIUM):** APPLIED. Added to ch26 entry.
+Women submit and win. Daniel expected more controversy than materialized. Do not frame
+as social progress moment. Resolves audit_writing_contest.md D2, D3.
+
+---
+
+**CORRECTIONS THAT COULD NOT BE FULLY APPLIED IN THIS FILE:**
+
+**C5 (compass working beat):** The compass confirmation in the ~104-106 AD range belongs
+in updated_ch01_18.md (ch15-ch16 range), not in this file's scope (ch19-36). The cross-
+chapter continuity note "Compass working by ch23" already exists in V2_REVISED_OUTLINE.md.
+The specific ch15 or ch16 confirmation beat requires editing updated_ch01_18.md.
+
+**C14 (remove from ch38):** This file assigns the "east/west" speech to ch35. The removal
+of the duplicate from ch38 must be applied by editing updated_ch37_53.md. The note is
+present in this file directing that removal.
+
+**C17 (remove ch38 duplicate playground beat):** The removal of the second noticing beat
+from ch38 must be applied by editing updated_ch37_53.md. The note is present in this file
+directing that removal.

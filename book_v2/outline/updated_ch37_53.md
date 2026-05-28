@@ -549,8 +549,12 @@ Daniel aging; the body failing without modern medicine; finishing the encycloped
 - The variolation groundwork: Daniel's final decade includes setting up an empirical variolation program through the physician line (Heras → Zoticus). In ch47 he is beginning this program — crude, ethically fraught, some deaths from the program itself. The building of knowledge that will arrive just in time for the Antonine Plague ~165 AD, ten years after Daniel dies. One scene or reference per the Phase E tech schedule. (bible/04_tech_schedule.md Phase E; V2_HISTORICAL_IMPACT §Problem 1 Antonine Plague)
 - A note written, a conversation with Tyche, that shows Daniel thinking about the securing of the encyclopedia even if he doesn't execute the full securing here. The "final securing" plant is deferred to ch49; this chapter needs one small gesture that shows him thinking about it. (V2_CHAPTER_CHANGE_NOTES §ch47 minor addition)
 
+[Required beat: Daniel reads the expedition physician's final reports. The numbers are worse than hoped, better than feared — 30-50% indigenous mortality, quarantine protocols helped at contact points but not inland. He makes the connection: this epidemic pattern (mass death, no prior exposure, entry through a single contact point) is identical to what will happen in Rome when the eastern army returns with a novel pathogen. He writes. In English. He names the Antonine Plague by approximate date and expected entry vector. This is the connection between the New World arc and the plague prevention arc.]
+
 **[V2] Tech requirements:**
-Phase E final state. The clock escapement note in the encyclopedia is the chapter's central tech beat — it must be precise: "I never found this. I spent seven years trying to recover the principle and got only fragments. Begin where I failed." The escapement is correctly blocked as a humbling beat (V1 got this right; keep it). The marine chronometer is explicitly unsolved and remains so. The Newcomen-type pump is fully operational; the precision bootstrapping loop has made it substantially better than its first iteration. The thermocouple chain has given reproducible-enough steel for pump cylinders but not for spring steel. This is the late-stage state of all his programs: good enough to change the world, not good enough to solve the next bottleneck. (bible/04_tech_schedule.md §HUMBLING BEATS; §NEVER BUILT)
+Phase E final state. The clock escapement note in the encyclopedia is the chapter's central tech beat — it must be precise: "I never found this. I spent seven years trying to recover the principle and got only fragments. Begin where I failed." The marine chronometer is explicitly unsolved and remains so. The Newcomen-type pump is fully operational; the precision bootstrapping loop has made it substantially better than its first iteration. The thermocouple chain has given reproducible-enough steel for pump cylinders but not for spring steel. This is the late-stage state of all his programs: good enough to change the world, not good enough to solve the next bottleneck. (bible/04_tech_schedule.md §HUMBLING BEATS; §NEVER BUILT)
+
+[Required: After Daniel acknowledges he can't solve the escapement himself (ch47), he launches a final prize competition. The prize goes to a craftsman in ch48-49 who solves it using Daniel's precision tool legacy — better calipers and gear-cutting from Daniel's workshops enable what Daniel couldn't achieve by hand. The clock becomes a legacy-of-legacy beat: his tools enabled someone else's solution. Remove the 'permanently gives up' framing; replace with 'acknowledges he personally cannot solve it, sets a prize.']
 
 **[V2] Finance context:**
 Phase E peak (~139–145 AD). At age ~58–64: wealth approaching or at 50–100 million HS. Annual income 3–8 million HS/year from steam pump operations. The financial pressure is entirely about legacy architecture now — not making money, but ensuring what he has built survives him. The ocean voyage funding is committed (~2–5 million HS over 15 years). The keeper-chain endowments (~500,000 HS/year) are running. He is funding the encyclopedia security (three copies; lead-cased burial). The total expenditure on legacy is enormous by any measure; he can afford it. (V2_DANIEL_FINANCES Phase E §What wealth enables — Legacy Problem)
@@ -564,11 +568,17 @@ By ~139–145 AD: 80–100 water-powered industrial installations per V2_HISTORI
 **[V2] Atlantic/New World:**
 The funded crossing departs ~149 AD per V2_HISTORICAL_IMPACT. This chapter's range (~139–145 AD) is the intensive planning phase. Daniel is specifying: the compass, the latitude gnomon, the hull design, the citrus provisions (naming the symptoms — teeth loosening, bleeding gums, weakness — even though he cannot name the vitamin), the crew selection (free sailors, not slaves). He knows what is on the other side. He knows the land is inhabited. He knows he told everyone it was uninhabited. He is not correcting this yet. The lie's long fuse is still burning.
 
+[Note: Balloon rigs are standard equipment on ocean voyages from Part V onward. Balloon-equipped ships carry trained operators and crossbow-armed aerial soldiers. This is not optional equipment — it is doctrine by this point.]
+
 **[V2] Prose rules (chapter-specific):**
 - PRESERVATION MANDATE: "I never found this... Begin where I failed. Do not begin where I began." — Keep exactly. This is one of the book's structural hinges.
 - The rooftop warm-brick ending is correct; do not change it.
 - One small gesture showing Daniel thinking about the encyclopedia securing (a note written, a question to Tyche), deferred from the main securing in ch49. (V2_CHAPTER_CHANGE_NOTES §ch47)
 - No wisdom-button close. The warm-brick image IS the close.
+
+[TIC WARNING V15 — SOCRATIC ECHO: High structural risk in this chapter. Do not have Tyche, Ulpia, or any other character perfectly summarize Daniel's complex ideas back to him in a clean metaphor immediately after he explains them. If another character responds to Daniel's explanation, their response should be partial, confused, or from a different angle — not a perfect echo.]
+
+[PROSE NOTE: Late-book chapters accumulate tics. Before finalizing: check for preambles ('I want to be honest/clear/precise'), 'shape' metaphors, 'the thing' abstractions, 'which is to say' pivots, and body-inventory catalogs (teeth, joints, eyes). See PROSE_PATTERNS_TO_AVOID.md Section 6 for full list. The examples listed are illustrative, not exhaustive — apply by pattern recognition, not list-matching.]
 
 **[V2] Zero-tolerance checks:**
 - [ ] No "not X, it's Y" constructions.
@@ -592,6 +602,8 @@ The last deaths. Macer (the patron who was cage and shield) — the cage/shield 
 
 **[V2] Story/Plot additions:**
 - Macer's death and Marcia's death must feel different in tone and weight. Macer is Daniel's first antagonistic patron — the man who owned him, who was never sentimental, who was a cage that looked like a workshop from the inside. His death removes both the threat and the foundation. Marcia's death is different: a partner of equals who chose this life knowing what it was. The grief for each must be distinct — different objects, different body language, different silence. (V2_CHAPTER_CHANGE_NOTES §ch48)
+
+[Required: Dual-document scene. Daniel is writing two things simultaneously — his private English guilt-confession (the moral accounting of what the New World contact cost) AND the Latin military quarantine protocol document (clinical, procedural, specific: 'All troops returning from eastern campaigns to be held at designated quarantine points for 14 days before entering populated areas'). The contrast between the guilt-language and the clinical-language is the scene. The Latin document is the thing that will save lives. The English document is the thing that tells the truth.]
 - The "slow stripping-away" texture is the chapter's structural spine. Resist stacking elegies on each other — this is not a memorial chapter but a subtraction chapter. Each loss should be noted in a way that reduces something from Daniel's world without stopping to mourn it with full weight. The grief is in the accumulation, not in any single moment.
 - The Atlantic ship departure (~149 AD per V2_HISTORICAL_IMPACT) happens within this chapter's range. Daniel watching the ship leave — standing last on the dock, knowing the ship will find land, knowing the land is inhabited, knowing he told everyone it was uninhabited, not correcting this. This is one of the book's most important images. It belongs in this chapter or in ch49. (V2_HISTORICAL_IMPACT §Ocean Program; V2_STORY_PLOT_NOTES §1.3)
 
@@ -609,6 +621,8 @@ By ~149–152 AD: 80–100+ water-powered industrial installations; the Atlantic
 
 **[V2] Atlantic/New World:**
 The ship departed ~149 AD. In this chapter's range, Daniel either watches it leave (if the departure is placed here) or has already seen it leave and does not know whether it has returned. The ship may return before Daniel's death in ~155 AD — the timeline is deliberately ambiguous. What is NOT ambiguous: Daniel watches it go. He is the last one standing on the dock. He knows the ship will find land. He knows the land is inhabited. He knows the "uninhabited" lie he planted in ch03 is about to be corrected, and he cannot correct it himself. He will be dead or dying when the return confirms what he knew on day one. This image — last one on the dock — is one of the book's emotional peaks. (V2_HISTORICAL_IMPACT §Ocean Program; V2_STORY_PLOT_NOTES §1.3; V2_MASTER_CONTEXT §Change 4 by 155 AD checklist)
+
+[Note: Balloon rigs are standard equipment on ocean voyages from Part V onward. Balloon-equipped ships carry trained operators and crossbow-armed aerial soldiers. This is not optional equipment — it is doctrine by this point. The ship that departs ~149 AD carries a balloon rig and trained aerial operators.]
 
 **[V2] Prose rules (chapter-specific):**
 - Macer's death and Marcia's death must be differentiated in emotional register. Read both scenes before writing either; ensure they are not structurally similar.
@@ -657,6 +671,8 @@ Phase E. The encyclopedia content secured in this chapter must include:
 - The private English notes that only the cipher-keeper can read.
 All of this is confirmed in ch49 as physically real and in three known locations. (bible/04_tech_schedule.md §Phase E; V2_CHAPTER_CHANGE_NOTES §ch49)
 
+[C9 NOTE: "Pendulum clocks in public buildings" may appear in the ch49 legacy inventory ONLY because correction C6 has been applied — the escapement prize winner beat has been added to ch48-49. The clocks exist because a craftsman won Daniel's prize competition (set in ch47) using Daniel's precision tool legacy. Daniel did not solve the escapement himself; his tools enabled someone else's solution. The legacy entry should reflect this: 'Pendulum clocks in public buildings — the escapement prize, won by [craftsman], using calipers and gear-cutting from Daniel's workshops.' Do not list clocks as Daniel's direct achievement. List them as his tools' achievement.]
+
 **[V2] Finance context:**
 Phase E terminal. At age ~70–73: the final financial arrangements are being made. The institutions are endowed independently; the keeper-chain is funded; the Prize for Demonstrated Truth is capitalized. The steam pump operations, the paper mills, and the contest endowment will outlast him without his active management. He has structured these through the collegium legal form so they cannot be easily seized by a single heir or political opponent. The phone relic going with him (rather than being sold or displayed) is, in Roman terms, a significant act: it removes a highly valuable curiosity from circulation. He has decided its worth is in what it meant to him, not in what it could buy his heirs. (V2_DANIEL_FINANCES Phase E §After death)
 
@@ -668,6 +684,8 @@ By ~151–154 AD: the empire's trajectory has changed in ways that are embedded 
 
 **[V2] Atlantic/New World:**
 If the ship has returned within Daniel's lifetime, one brief line confirming this — and that the land is inhabited — is available. If not (the timeline is deliberately ambiguous), Daniel has written in the encyclopedia that the ship departed and he does not know if it returned; someone else must correct this account. Either outcome is dramatically valid. The important thing is that the "uninhabited" lie from ch03 is either corrected or explicitly acknowledged as something he cannot personally correct. (V2_HISTORICAL_IMPACT §Ocean Program; V2_NEW_WORLD_CONTACT §What Does Daniel Write in His Encyclopedia — item 4)
+
+[Note: Balloon rigs are standard equipment on ocean voyages from Part V onward. Any reference to the Atlantic crossing ship should note it carries balloon equipment and trained aerial operators.]
 
 **[V2] Prose rules (chapter-specific):**
 - PRESERVATION MANDATE: The Tyche-offers-to-keep-it / Daniel-refuses exchange is exactly right — preserve it. The phone goes with him. This is the book's correct relic disposition.
@@ -696,7 +714,9 @@ Chapter-specific: bible/02_characters.md (Tyche, Zoticus), V2_STORY_PLOT_NOTES.m
 Daniel's death, far from home, not tidy. What he never built; what he moved. The loneliness met head-on at the end. The ch01 callback: the stubble field, "I am seventeen, and I am frightened." Mid-sentence death ending. No annotation. This is a payoff chapter. Let the planted threads land.
 
 **[V2] Story/Plot additions:**
-None. V2_CHAPTER_CHANGE_NOTES is explicit: no new material, no new wisdom. The brief is explicit: let planted threads land. Do not add content.
+None — with one food arc exception. V2_CHAPTER_CHANGE_NOTES is explicit: no new material, no new wisdom. The brief is explicit: let planted threads land. Do not add content.
+
+[Beat: One final food arc moment. Late in life, Daniel grows tomatoes in his garden — brought back from the New World, now cultivated in Italy. He eats one. Alone. Small moment of a man who changed the world and is now sitting in his garden eating a tomato. No declaration. Just the fruit.] This is food arc beat 4 of 4 per V2_FOOD_ARC.md; it is preservation-protected. One sentence of sensory detail. This does not conflict with the 'no new material' mandate — it is a one-sentence sensory beat in the same register as the warm-brick image in ch47.
 
 **[V2] Tech requirements:**
 No tech beats. The technologies Daniel built are present as ambient world — they are what they are. The correct register: Daniel is not thinking about the steam pump at the end; he is thinking about the field, and being seventeen, and being frightened.
@@ -718,6 +738,8 @@ The ship either has returned or has not. Either way, Daniel does not know the ou
 - PRESERVATION MANDATE: The ch01 callback ("I am seventeen, and I am frightened") is the book's emotional payoff. Keep it exactly.
 - No wisdom-button. No final formulation. The last thing is a sensory fragment, then nothing.
 - One V1 blocking item: "It was not the heart that stopped me. It was the breath." (correctio, ch50 per PROSE_PATTERNS_TO_AVOID §1.1) — If this construction appears in the chapter, remove it. The V1 chapter is clean except for this one line; confirm it is not in the final version.
+
+[PROSE NOTE: Late-book chapters accumulate tics. Before finalizing: check for preambles ('I want to be honest/clear/precise'), 'shape' metaphors, 'the thing' abstractions, 'which is to say' pivots, and body-inventory catalogs (teeth, joints, eyes). See PROSE_PATTERNS_TO_AVOID.md Section 6 for full list. The examples listed are illustrative, not exhaustive — apply by pattern recognition, not list-matching.]
 
 **[V2] Zero-tolerance checks:**
 - [ ] No "not X, it's Y" constructions — one flagged in V1 (ch50 "It was not the heart..."); remove if present.

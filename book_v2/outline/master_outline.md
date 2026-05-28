@@ -467,6 +467,8 @@ a man genuinely concerned with imperial cohesion. Daniel eventually finds this u
 
 **Required beats this part:**
 
+*[M4 — STANDING NOTE: All ocean voyages from Part V onward carry standard balloon rig equipment. This is military and reconnaissance doctrine, not experimental. Writing agents covering Atlantic or colonial chapters in Part V and beyond must show balloon rigs as established fact on expedition ships — not as novel technology being tested for the first time. Two rigs per ship on major ocean voyages: one observation, one combat-ready. The balloon archers are crossbow-armed. This is standard equipment by the time of the second organized Atlantic expedition.]*
+
 *Scaeva — debt-collection attempt and exit:* After the Four Consulars, Scaeva makes one
 attempt to collect the "point the powder for me" IOU — claiming the powder knowledge,
 using Daniel's name for political cover, or extracting a specific technical favor. Daniel
@@ -595,7 +597,7 @@ intentionally, for the generation after that. Tyche and a small circle of appren
 are learning English. Heras dies — rendered through action and absence, not stated. The
 Bar Kokhba revolt (132–135 AD) is suppressed approximately fourteen to eighteen months
 faster than real history through aerial observation stripping Bar Kokhba's mountain-pass
-advantage. Roman casualties are roughly 30–35% lower. The Jewish diaspora still occurs.
+advantage. Roman casualties are roughly 20–25% lower [M3 CORRECTED from "30–35%": the 20–25% figure is from V2_HISTORICAL_IMPACT.md and V2_STORY_PLOT_NOTES.md — use this consistently across all files]. The Jewish diaspora still occurs.
 Judaea is still renamed Syria Palaestina. The tragedy is not averted; it is more efficient.
 Daniel knows this and hates it.
 
@@ -834,8 +836,7 @@ table. The book ends there. Unresolved, on purpose.
   begins, stirrups, crossbow spanning lever, kite recon, early cards
 - Phase C (103–110): printing press (movable type by ~108), contest, compass prototype,
   Volta pile, heliocentrism stated, first casino
-- Phase D (110–125): gunpowder cannon (succeeds by ~112–115 with better metallurgy),
-  thermocouple chain begun, optical semaphore proposed, Atlantic first crossing, patent
+- Phase D (110–125): [M5 CANON NOTE: Per established prose in ch45, cannon/firearms never work reliably in Daniel's lifetime. The Phase D entry "gunpowder cannon (succeeds by ~112–115 with better metallurgy)" is incorrect and must not be used by writing agents. Daniel experiments with gunpowder but reliable cannon does not result. Roman military advantages come from: balloon aerial platforms, crossbow fire from height, superior Roman military discipline, and better logistics. Not cannon. Remove any cannon references from expedition equipment lists.] thermocouple chain begun, optical semaphore proposed, Atlantic first crossing, patent
   law pitched, steam pump (~118 AD Hispania)
 - Phase E (125–155): atmospheric pumps scaling, thermocouple/galvanometer operational,
   platinum sourcing attempted, encyclopedia written and secured, rubber gaskets from
@@ -948,13 +949,13 @@ table. The book ends there. Unresolved, on purpose.
 
 ## Pacing Notes
 
-**Texture rotation:** Vary chapter texture throughout: action (balloon, war, cannon,
+**Texture rotation:** Vary chapter texture throughout: action (balloon, war, gunpowder incident [M5: NOT successful cannon — see Phase D correction above],
 Atlantic departure), quiet (workshop, teaching, domestic), set-piece (Trajan audience,
 the trial, the Hadrian negotiation, the dock at Gades), interludes (Roman documents,
 encyclopedia excerpts). Avoid two same-texture chapters in a row.
 
 **Tension graph:** Peaks at the unmanned balloon demonstration (Part II), the manned
-disaster (Part II), the cannon (Part III), the accusation (Part IV), Trajan's death
+disaster (Part II), the gunpowder leak incident (Part III) [M5: NOT a cannon — reliable cannon never works in Daniel's lifetime], the accusation (Part IV), Trajan's death
 (Part IV cliff), the Four Consulars (Part V), Heras's death (Part VI), Daniel's death
 (Part VII). Troughs are the quiet building and teaching chapters; keep them short and warm.
 The Atlantic departure (~149 AD, Part VII) is a late major emotional set-piece — the dock

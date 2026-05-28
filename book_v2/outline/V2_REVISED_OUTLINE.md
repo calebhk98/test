@@ -30,7 +30,7 @@ are in this outline (departure ch27, return news ch28, Hadrian's program ch36).
 | Ulpia education | — | — | — | Lucanus English ch36; Lucanus truth ch38 | Ulpia full arc ch38–49 |
 | Manned balloons | tethered demos | Sabinus death/vow; manned archers doctrine (ch18) | doctrine consolidated/universalized | — | — |
 | Volta pile / compass | — | initiated | demonstrated ch23 | in use | — |
-| Prize/innovation model | first glass prize ch07; sportsbook ch10 | DARPA spec model recurring | recurring mechanism | Glabrio arc ch21–38 | legacy |
+| Prize/innovation model | first glass prize ch07; sportsbook ch08 | DARPA spec model recurring | recurring mechanism | Glabrio arc ch21–38 | legacy |
 | Antonine Plague prep | — | — | — | — | ch40–49; Zoticus ch47; aftermath ch52 |
 
 ---
