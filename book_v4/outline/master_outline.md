@@ -10,7 +10,7 @@ order.
 
 ---
 
-## Part I: Arrival and Survival (98 AD, ch01–11)
+## Part I: Arrival and Survival (98–102 AD, ch01–11)
 
 **What the part must accomplish:** Strand Daniel, make survival the only goal, prove the
 world is real and lethal, and get him from mute prisoner to "useful curiosity." End: he
@@ -55,6 +55,22 @@ expected value.
 accounts. One junior accountant traces the columns and sees the audit advantage. Macer
 himself may not fully capitulate yet; the system is present in practice.
 
+*Wheelbarrow and windmill (Phase A):* Daniel notices at once that no one in Rome uses a
+wheelbarrow — every heavy thing is carried on backs or in baskets on poles. He sketches
+a simple tray-and-wheel design and circulates it on Macer's estate; within a season it is
+in use in the yard. The windmill he describes to a carpenter as a prize specification for
+regions without fast water — a post-mill turning horizontal motion to drive a millstone or
+bellows — but he does not build one himself. The spec goes into his notes as a standing
+prize offer.
+
+*Leeuwenhoek bead microscope (Phase A, earliest build):* The first thing Daniel actually
+constructs in Rome is not a balloon — it is a glass bead. He holds a glass rod in a lamp
+flame until a bead forms, lets it cool, and holds it over a printed letter: the letter
+swells to fill his vision, perfectly legible from across the room. A toy that works, proof
+that optics are achievable with materials already in Rome. He never calls it a microscope.
+He keeps one bead on his person. The implications for the lens program are immediate and
+quiet.
+
 *Balloon development begins (unmanned):* Daniel commits to the balloon as his first real
 project. Cheap materials (linen, tallow/resin sealant), his concept entirely, no
 precedent in Rome. Failed experiments with paper, then linen, then fire management.
@@ -81,7 +97,7 @@ to trust him on faith.
 
 ---
 
-## Part II: The Man Who Flew (101–102 AD, ch12–22)
+## Part II: The Man Who Flew (101–109 AD, ch12–22)
 
 **What the part must accomplish:** The unmanned balloon makes him un-ignorable. Macer's
 patronage gives protection and a cage. The workshop spreads the first technologies. The
@@ -169,6 +185,42 @@ small cut of anything Gnaeus puts on his menu that came from Daniel's kitchen. I
 a business. Gnaeus thinks of Daniel as "the barbarian who has interesting ideas about food
 and is good for business." That is the correct relationship.
 
+*Trebuchet (Part II):* Daniel describes the falling-weight trebuchet to Celer during the
+military contact phase — energy stored in a counterweight rather than twisted rope, meaning
+the power scales with mass rather than with how hard you can wind a skein. The force-to-
+range relationship is explained in practical terms: a counterweight trebuchet with ten times
+the mass delivers far more than ten times the energy. Roman engineers adapting the design
+begin testing it during the First Dacian War; by the Second Dacian War it is in use
+unattributed. Daniel does not press for credit.
+
+*Baghdad battery (Part II):* A clay jar, a copper tube, an iron rod, and vinegar produce
+a weak electric current — a tingle from both terminals, nothing more. Daniel demonstrates
+it to Heras as proof that an invisible flow exists, the same flow that deflects the
+compass needle. It is a party trick that happens to be correct. The jar is the seed of the
+Volta pile stack he will build in Phase C; Heras recognizes that the physician-friend is
+becoming interested in something he cannot name.
+
+*Barometer and thermometer (Part II):* Good glass tubes and mercury, both available from
+Roman sources. The thermometer calibrates his distillation column and his smelting
+temperature estimates; it is immediately practical. The barometer he demonstrates to a
+naval contact as a storm-warning instrument — rising pressure, fine sailing; falling fast,
+do not leave port. The naval contact does not trust it for two years, then does.
+
+*Phonograph (Part II):* A stylus mounted to a thin diaphragm, pressed against a rotating
+lead cylinder coated in wax: the groove holds the vibration pattern and plays it back when
+the stylus tracks it again. The playback is scratchy and faint and unmistakable. Daniel
+keeps the mechanism secret and posts a materials prize for a better cylinder surface. His
+model: manufacture the player here, sell cylinders as a recurring product; the music
+is the razor, the cylinders are the blade. He records a few minutes of a workshop
+gathering and plays them back once for Tyche. She stares at the machine for a long time.
+
+*Vernier calipers (Part II):* Two scales — a fixed main rule and a sliding secondary scale
+whose divisions are slightly shorter — give measurements to a tenth of the smallest main
+division without any new tools. Daniel introduces these as a workshop standard during the
+boring and fitting work. The compounding precision asset is long-term: every craftsman who
+learns the two-scale reading improves every tolerance they work to for the rest of their
+career.
+
 *Prize innovation — Part I/II boundary (ch05/ch07 area):* The first informal prize post
 appears in background during ch05 as Daniel is establishing workshop operations and
 hitting early production problems. It is small — a glass clarity spec, posted through
@@ -182,6 +234,17 @@ knowledge that already exists in Roman craft tradition but is invisible to him. 
 writes down everything the Brundisium man tells him about his father's method. He does
 not explain this to anyone.
 
+*Fire prevention pitched (Part II/III boundary):* A tenement fire in a densely packed
+district — the kind Rome suffers every few years — gives Daniel the opening. He goes to a
+magistrate with a proposal: a standing fire-watch, a bucket-chain relay drill practiced
+twice a year by the vigiles, a cistern kept full at the block's center. The magistrate
+listens with the expression of a man being told how to do a job he has held for thirty
+years. The watch budget is allocated to other things. The cistern is an infrastructure
+question above his authority. The drill is impractical given the vigiles' actual duties.
+Daniel manages his own compound: cistern kept full, bucket-chain positions marked on the
+courtyard wall, a night-watch rota. He does not revisit the magistrate. The defeat is
+stated once and not complained about.
+
 **Part II ends:** Daniel returns from the Danube changed. He has seen what his gifts do
 in the hands of generals. The kite system worked. Men are alive who would be dead. Other
 men are dead because his engineering made the siege efficient. He doesn't know how to
@@ -189,7 +252,7 @@ hold both of those facts at once yet. He is twenty-one.
 
 ---
 
-## Part III: How Far to Go (103–110 AD, ch23–33)
+## Part III: How Far to Go (109–118 AD, ch23–33)
 
 **What the part must accomplish:** The hard push. Steel, the press, the contest, freeing
 Tyche, citizenship, Marcia. Run face-first into the chokepoints. End: a powerful, lonely
@@ -311,6 +374,57 @@ cheese. He knows it is not what he wanted. He uses it anyway. One or two sentenc
 pathos. By the end of this part, garum is a standard tool in his cooking. He no longer
 thinks about the smell.
 
+*Hydrogen applications from electrolysis (Part III):* Once the Volta pile is producing
+current reliably, Daniel electrolyzes water and collects both gases separately. The oxy-
+hydrogen torch — hydrogen burned with oxygen fed from a bladder — produces a flame hot
+enough to cut bronze and weld iron at temperatures his forge cannot otherwise reach. The
+hydrogen-lift application is an unmanned reconnaissance balloon: a sealed animal-bladder
+envelope filled with hydrogen rises without needing a fire underneath, simpler to deploy
+in field conditions. He posts a prize for gas-tight fabric (the critical wall is the bag,
+not the gas). A hydrogen-and-oxygen clay-jar grenade is tested once in a yard at night,
+makes a satisfying concussion, and is not pursued further. Daniel writes nothing down
+about the grenade.
+
+*Ball bearings prize posted (Part III):* Hardened steel spheres — consistent diameter,
+smooth surface, running in a machined race — reduce rotating friction across every
+machine that has a shaft. Daniel posts the prize for a production method yielding spheres
+within a specified diameter tolerance; the precision-boring capability developed for the
+cannon program and the steam cylinder is what eventually makes the race machinable. Payoff
+comes in Phase D when bearing production scales. The prize is a long plant: one sentence
+when posted, a background reference when it pays out.
+
+*Flying shuttle and water-powered loom prize posted (Part III):* The flying shuttle — a
+cord-operated throwing mechanism that crosses the shuttle automatically — roughly doubles
+the width of cloth a single weaver can produce. Daniel describes it to a weaver and posts
+a prize for a working demonstration. The water-powered loom he frames as a Phase D prize:
+same principle as the water-powered trip-hammer, applied to the loom shuttle drive. The
+limiting factor is demand, not design — slave economics depress the incentive — but the
+balloon program's linen requirement for envelopes creates a sustained buyer and enough
+pull to make the loom prize worth competing for.
+
+*War rockets (Part III):* Festival fireworks first — a commission for a public games
+celebration, black powder packed into tubes mounted to sticks, producing a satisfying arc
+and colored-burst finale. A military observer asks afterward about range and accuracy.
+Daniel is honest about the limits: unpredictable in wind, impossible to aim precisely,
+effective mainly as an area-saturation and terror weapon. The fireworks pay more reliably
+and with less political complication. He keeps the contracts.
+
+*Typewriter prize posted (Part III):* Daniel posts a prize specification for a writing
+machine — type arms bearing individual letter faces, an inked ribbon, a carriage that
+advances one space after each keystroke. He cannot build a working version yet; the
+tolerance on the type arms and the ribbon-advance mechanism are beyond current workshop
+capacity. The prize exists as a standing target. A prototype reaches his bench in Phase D.
+The specification sharpens the scribes'-guild conflict: the press duplicates texts, but
+a writing machine threatens the individual copy trade.
+
+*Morse encoding written into the optical-semaphore codebook (Part III):* When Daniel
+designs the semaphore codebook, he includes a binary notation appendix — dot and dash,
+short and long — as an alternate encoding for simple messages. He calls it a timing
+notation. It is the first half of telegraphy, written in a form that can be implemented
+with signal lamps or sound without wire. He cannot finish the second half without a
+reliable distance-pulse hardware chain he does not have. The appendix sits in the
+codebook, waiting.
+
 *Prize innovation — Part III:* The specs become semi-public in this part — appearing in
 the press's broadsheet alongside commercial notices. Multiple open simultaneously.
 First appearance of Glabrio (ch19 or ch21): a bronzesmith who shows up in prize records
@@ -337,7 +451,7 @@ first time, probably by Heras. It does not get answered.
 
 ---
 
-## Part IV: Too Valuable (110–117 AD, ch34–38)
+## Part IV: Too Valuable (118–128 AD, ch34–38)
 
 **What the part must accomplish:** Peak influence equals peak danger. The three faces of
 danger (Scaeva, Crispus, Vibenius) close in. A near-fatal accusation. The Parthian War
@@ -445,13 +559,70 @@ formula reaching a Parthian trade intermediary through a chain Daniel cannot tra
 calculates whether the prize program is still net positive. It is. He does not change the
 structure. One brief scene or half-scene; not a major thread.
 
+*Syphilis awareness (Part IV):* On the first expedition return dispatch, Daniel reads the
+geographic logs and crew health records with specific attention. He writes a short entry
+in cipher — English, the personal journal, not the encyclopedia — noting what the crew may
+have carried both ways across the ocean. The dispatch includes a tracking note on new skin
+and mucous-membrane symptoms observed on the return voyage in some crew members and logged
+by the expedition's physician. Daniel does not explain the entry to anyone. He adds a
+follow-up instruction to the next expedition's physician: log the same symptom class at
+departure and again at return, with specific crew names. The implication is never stated
+aloud.
+
+*Moral trap — quarantine paradox (Part IV):* Daniel writes this in English, in a personal
+section of the encyclopedia that has no Latin parallel. The observation: his epidemic-
+containment protocols, if they hold in the western colonies, will reduce native mortality
+from diseases the expedition carries. Lower native mortality means the populations survive
+to resist Roman settlement militarily and politically rather than being reduced to
+remnants who cannot defend territory. If his protocols fail, the populations die at the
+rate of every Old World contact epidemic — which is what historically allowed conquest
+without organized resistance. His better medicine makes conquest harder, which is an
+argument he would like to make — but makes Roman settlement more violent when it
+nonetheless proceeds, because there are more people alive to fight it. He does not resolve
+this. He does not change the protocols. He does not say it aloud. The English entry ends:
+*"I will not kill people by withholding what I know. Everything else follows from that
+and I cannot undo what follows."*
+
+*Oil-seep investigation and kerosene (Part IV):* During the Parthian War period, Daniel
+encounters the bitumen seeps near Mesopotamian river valleys and recognizes them for what
+they are. He sends a factor to collect and ship crude samples to the workshop in Rome.
+The distillation column he has run for years yields a pale, clean-burning fraction he
+calls lamp oil — kerosene, in everything but name. He distributes it as lamp fuel to the
+workshop and to Gnaeus's tavern. The effect on the olive oil market in his immediate circle
+is immediate and measurable: his household stops buying oil for lamps. He says nothing
+publicly about the seeps' military or incendiary implications and writes nothing in the
+encyclopedic record about those applications.
+
+*Standardized screw threads and interchangeable parts (Part IV):* The Phase C precision
+prize pays out here. Daniel defines a standard thread profile — pitch, depth, flank angle
+— and commissions a set of go/no-go gauges that can verify any bolt or nut against the
+profile without measurement. He makes the standard a condition of workshop supply
+contracts: if your fittings don't pass the gauge, they are returned. Within a few years,
+the gauge set circulates to three allied smiths. The payoff compounds: cannon boring and
+steam cylinder fitting both benefit from craftsmen who now think in terms of interchangeable
+tolerances rather than matched pairs. Replacing a part no longer requires the original maker.
+
+*Industrial acids (Part IV):* Sulfuric acid (oil of vitriol, from roasting pyrite),
+hydrochloric acid (from salt and vitriol), and nitric acid (from niter and vitriol) are
+produced at the workshop as directed industrial processes with written safety protocols.
+Primary uses: steel pickling to remove scale before precision work, mordanting for textile
+dye adhesion, and the silver-on-glass preparation he needs for the photography experiments
+he cannot yet complete. The acids are not secret — they are too useful across too many
+trades — but the production process is documented in cipher until Daniel decides otherwise.
+
+*Nitroglycerin refused (Part IV):* Daniel knows the synthesis. He works through it once
+in his head, confirms the yield is straightforward from glycerol and the nitric acid he
+now produces, and writes nothing down. The encyclopedia entry for this period contains one
+line in English: *"Things I have decided not to teach anyone."* No elaboration. No
+chapter scene. The refusal is stated and complete.
+
 **Part IV ends:** The ground drops out. Hadrian's succession is contested (widely believed
 to be engineered by Plotina and Attianus). Daniel is on the wrong side of a transition.
 He is thirty-six and will have to rebuild everything.
 
 ---
 
-## Part V: Starting Over (117–125 AD, ch39–46)
+## Part V: Starting Over (128–138 AD, ch39–46)
 
 **What the part must accomplish:** Succession terror — Hadrian, the Four Consulars.
 The patron-web shredded. Rebuild middle-aged from scratch. The ocean-map gambit deployed.
@@ -499,6 +670,19 @@ a person from the western islands who is brought to Rome and housed in Daniel's 
 The moment this person stands on the dock in Rome is the scene the book has been building
 toward since page one. Daniel arranged it. He is responsible for this person being here.
 
+*Returned person — immediate response (Part V):* The person from the western islands is
+not housed in the imperial collection, not exhibited, not assigned to a scholar's household.
+Daniel brings them into his own compound the day the ship docks. He assigns Tyche as the
+primary contact — not a guard, not a translator working from scratch, but a person who
+understands at bone level what dislocation from a known world feels like. The first days'
+food comes from the expedition's own botanical samples where available, and from the
+closest Roman equivalents where not. Communication starts badly: gesture, repetition,
+objects held up and named, Daniel's awkward attempts at phonetic approximation. It gets
+better slowly. What Daniel does not do is introduce this person to anyone in authority
+until there is a functional common vocabulary and the person can indicate, however roughly,
+what they want. He is aware of the irony that he is making decisions for someone he cannot
+yet ask. He writes this in English.
+
 *Crispus's credibility finally collapses:* The successful crossing of the Atlantic is the
 event that ends Crispus's credibility. He has built his career on claiming Daniel is a
 fraud, that the western land claims are lies. When the ships return with maize, sweet
@@ -539,6 +723,15 @@ Hadrian's legal circle, framing it as an extension of existing imperial privileg
 (*privilegia*) frameworks. Hadrian is intrigued but does not formally enact anything
 in Daniel's lifetime. The concept is planted. Limited liability is argued alongside it
 with the same reception.
+
+*Standardized parts as procurement policy (Part V — cross-reference):* The go/no-go
+gauge standard introduced in Part IV (see Part IV "Standardized screw threads and
+interchangeable parts") begins functioning as procurement policy in this part. Workshop
+supply contracts now specify gauge conformance as a condition of payment; at least two
+allied smiths outside the workshop are gauge-certifying their own output. The invisible
+effect: components from different suppliers fit the same assembly for the first time.
+Daniel does not announce this as a milestone. One brief line confirming the contract
+condition is in use is sufficient.
 
 *Citrus on ocean voyages:* At the first serious expedition planning meeting (if not done
 in Part IV), Daniel specifies citrus in the provisioning list and explains why, naming the
@@ -582,7 +775,7 @@ work cannot be confiscated from him because it is no longer only his.
 
 ---
 
-## Part VI: The Ladder (125–138 AD, ch47–50)
+## Part VI: The Ladder (138–155 AD, ch47–50)
 
 **What the part must accomplish:** Institution-building so the work outlives him. The
 encyclopedia and the English cipher. Heras dies. Small signs the trajectory has bent.
@@ -610,14 +803,20 @@ underway. Daniel is attempting to source platinum from Hispanian mines (platinum
 in Spanish alluvial gold deposits from antiquity; he knows this from a geology class vague
 memory). The thermocouple is not yet finished in his lifetime; the chain is established.
 
-*Newcomen-class atmospheric pump trialed:* The first atmospheric steam pump operates
-in a silver mine in the Carthago Nova region of Hispania around 118 AD — bronze cylinder,
-leather piston, steam condensed by water injection, perhaps 200 gallons per hour, crude
-and dangerous and barely efficient. By 128 AD, eight such pumps operate across the empire.
-By Part VI the steam pump is established technology. Its primary narrative value: the
-leather gaskets leak. When rubber samples return from the Atlantic expeditions, Daniel
-immediately knows what he has — the gasket application alone, on pumps already running
-in Roman mines, justifies the cost of the expedition several times over.
+*Newcomen-class atmospheric pump trialed:* The first small working atmospheric steam pump
+operates in a silver mine in the Carthago Nova region of Hispania around 118 AD — bronze
+cylinder, leather piston, steam condensed by water injection, perhaps 200 gallons per hour,
+crude and dangerous and barely efficient. [DATE CLARIFICATION: the 118 AD pump is the
+first working prototype — a real machine in a real mine, but small, experimental, and
+tended by the men who built it. The mine-commissioning scene in which Daniel realizes the
+industrial loop is running without him belongs to ~128 AD (ch38), when eight such pumps
+operate across the empire and he visits a working installation and understands the thing
+has escaped his personal supervision entirely. These two dates are not contradictory:
+~118 AD is first proof; ~128 AD (ch38) is the emotional beat of autonomy.] By Part VI
+the steam pump is established technology. Its primary narrative value: the leather gaskets
+leak. When rubber samples return from the Atlantic expeditions, Daniel immediately knows
+what he has — the gasket application alone, on pumps already running in Roman mines,
+justifies the cost of the expedition several times over.
 
 *Encyclopedia written and secured:* The encyclopedia is Daniel's transmission mechanism,
 not a shortcut. It is written across Parts V–VII and secured in multiple copies by the
@@ -688,6 +887,70 @@ verifiable.
 *Heras dies:* Rendered through action and absence, not stated. The empty bench at his
 usual place. The model for how to end a chapter without a wisdom-button.
 
+*Reading lenses (Part VI, from glass-clarity prize chain):* Daniel's own presbyopia
+arrives in his mid-forties — the workshop text that used to be readable at arm's length
+now requires the bead. He grinds a pair of plano-convex lenses to a consistent diopter
+estimate, mounts them in a wire frame resting on the nose, and reads his own encyclopedia
+draft in one sitting without a headache for the first time in two years. He puts the lenses
+into open sale through the workshop's commercial arm. The prize notation: "From the first
+glass-clarity prize, twenty-five years on." The chain is visible on the page.
+
+*Mechanical calculator (Part VI):* A marble-adder demonstration — a rack of interlocking
+geared wheels, each ten-toothed, each carrying a digit zero through nine, with a tens-
+carry pin that advances the next wheel one step when the current wheel rolls from nine
+through zero. It is not fast, not useful for anything a trained accountant cannot do more
+quickly in their head, and not manufacturable in quantity at current tolerances. Daniel
+demonstrates it to the encyclopedia circle as proof of concept: machines can add. He
+references the Antikythera mechanism — something the Romans know about, recovered from a
+ship, in a collector's house — as proof that Rome already knows geared calculation is
+possible. He writes the principle into the encyclopedia. He does not spend further workshop
+time on it.
+
+*Coal gas lighting (Part VI):* Coke production — heating coal with restricted air to
+drive off volatiles and leave a cleaner-burning carbon for the forge — produces a flammable
+gas byproduct that previously goes to waste. Daniel runs a copper pipe from the coke-
+production retort to a small iron nozzle over a workbench and lights it. The flame is
+clean, odorless once burning, steady. He writes up the production procedure and safety
+notes from the encyclopedia's chemistry entry. He does not build a distribution system —
+that requires iron pipe at a scale the workshop does not yet reach — but the procedure,
+the yield calculations, and the safety notes are in writing. He marks it clearly as a
+successor project.
+
+*Photography experiments (Part VI):* Silver nitrate — from the industrial acids chain —
+coated onto a polished tin plate in a dark room, exposed through a camera-obscura lens
+for several minutes, then examined. The image is faint and reverses light for dark, and
+it fades within hours even in shade. The fixing problem — what stops the silver from
+continuing to darken? — requires chemistry he cannot derive from memory. He tries salt,
+vinegar, honey solutions. The salt bath slows the fading. He cannot arrest it completely.
+He writes the exposure procedure, the known fixing attempts, and the failure modes clearly
+in the encyclopedia and marks it as a successor project requiring the right fixing agent.
+The images themselves do not survive; the procedure does.
+
+*Arc lighting (Part VI):* Daniel builds a battery bank — thirty Volta cells in series,
+the largest stack his production can support — and draws the current to two pointed carbon
+rods held close together. The arc that jumps between them is brighter than any lamp he
+has seen, blue-white and buzzing, and it is far too small to illuminate anything larger
+than a worktable. He tests it at night at the harbor entrance, where the flare is visible
+from a considerable distance. The application is obvious: harbor light, lighthouse, signal.
+The wall is just as obvious: sustaining a battery bank of this scale costs more than the
+candles it replaces. This is a generator problem, not a chemistry problem. He writes it
+into the encyclopedia under the heading "Light from Current — Requires Generator." It is
+the last entry in that volume.
+
+*Generator principle written into the encyclopedia (Part VI):* Faraday's coil-and-magnet
+principle — rotate a conductor in a magnetic field, or rotate a magnet past a conductor,
+and current flows — is written into the encyclopedia from memory of a physics class. The
+mathematics of the relationship between field strength, conductor length, and output
+current Daniel can approximate but not derive rigorously; he marks the approximation as
+approximate. The two engineering walls are named explicitly: wire-drawing to fine tolerances
+(thinner wire, more turns, higher output) and magnet strength (requiring iron and
+consistently achievable magnetization). He assigns both to Ulpia — the workshop's most
+capable metalworker after Hermes — as standing research problems with prize funding. He
+writes in the encyclopedia margin, in English: *"Whoever solves both of these builds the
+thing that makes everything else possible. I will not live to see it. Build it anyway."*
+The generator principle entry is marked as a successor project requiring verification by
+the workshop circle after Daniel's death.
+
 *Hadrian dies (138 AD):* The ocean program loses its imperial champion. Antoninus Pius
 succeeds (stay-at-home, no appetite for adventure). The program is precarious but not
 formally killed. Daniel tells his apprentices to keep the charts current to the last
@@ -710,7 +973,7 @@ The specific loneliness of that is exactly what he expected.
 
 ---
 
-## Part VII / Coda: The Long Way Home (138–155 AD, ch51–53)
+## Part VII / Coda: The Long Way Home (155–200 AD+, ch51–53)
 
 **What the part must accomplish:** Daniel old, declining, securing the ladder. The last
 deaths (Macer, Marcia, others). Tyche and the apprentices carry it. Daniel dies far from
@@ -831,17 +1094,38 @@ table. The book ends there. Unresolved, on purpose.
 
 **Tech progression — phases A–E across all parts:**
 - Phase A (98–102): numerals, germ framing, soap, lead pipe awareness, balloon unmanned,
-  sportsbook, Eratosthenes demonstration, double-entry bookkeeping seeded
+  sportsbook, Eratosthenes demonstration, double-entry bookkeeping seeded, wheelbarrow
+  (spreads on Macer's estate first season), windmill described as prize spec, Leeuwenhoek
+  bead microscope (first build — glass bead over flame, immediate optics proof)
 - Phase B (99–105): water power, spinning wheel, crop rotation, horse collar, rag paper
-  begins, stirrups, crossbow spanning lever, kite recon, early cards
+  begins, stirrups, crossbow spanning lever, kite recon, early cards, trebuchet described
+  to Celer (in Dacian War use unattributed by Second Dacian War), Baghdad battery (tingle
+  demonstration; Volta pile seed), barometer and thermometer (storm-warning and distillation
+  calibration), phonograph (stylus/diaphragm/lead cylinder; mechanism secret; cylinder prize
+  posted), Vernier calipers (workshop standard)
 - Phase C (103–110): printing press (movable type by ~108), contest, compass prototype,
-  Volta pile, heliocentrism stated, first casino
-- Phase D (110–125): [CANNON ARC — SUCCEEDS IN DANIEL'S LIFETIME. Revised per story direction: cannon DOES work. The ch21 demonstration (~106-108 AD) bursts deliberately as a proof-of-concept pitch for precision boring. Prize competitions in Phase C-D (106-118 AD) drive boring tolerance forward. First reliable bronze siege bombard: ~118-122 AD. Key design insight: short thick-walled bronze tube (bronze fails gradually, not catastrophically — Roman foundries already cast massive bronze objects), 6-8 inch bore, 30-40 lb stone ball, crew of 10-15, fixed position siege weapon. It works. It breaks walls. It is not mobile field artillery — but it is a cannon that functions reliably. The "no cannon a gunner can trust" phrase in ch45 current prose refers to mobile field artillery (reliable rapid-fire in open battle) which is NOT achieved — but must be revised or recontextualized to acknowledge that fixed siege bombards DO work. CH45 PROSE NEEDS REVISION to reflect this. Military cascade: Bar Kokhba Revolt (132-135 AD) uses Roman bombards at cave-fortress siege positions → ends 2+ years early, dramatically. Weight problem: a bronze bombard weighs 2,000-5,000 lbs. Slaves cannot move these efficiently. RAILS become militarily motivated, not just industrially: if you can lay temporary rail from your supply line to a siege position, you can move cannon that would otherwise require 200 men and a week. The military necessity of moving cannon is the argument that gets rails taken seriously by Roman generals. Industrial cascade: precision boring for cannon → same tolerance solves steam cylinder → same craftsmen cut better clock gears. One capability, three unlocked arcs.] thermocouple chain begun, optical semaphore proposed, Atlantic first crossing, first working bronze bombard (~118-122 AD), patent law pitched, steam pump (~118 AD Hispania)
+  Volta pile, heliocentrism stated, first casino, hydrogen applications from electrolysis
+  (oxy-hydrogen torch; unmanned hydrogen-lift balloon; gas-tight fabric prize; grenade
+  tested once, abandoned), ball bearings prize posted (hardened spheres in a race; Phase D
+  payoff), flying shuttle and water-powered loom prize posted (balloon-program linen
+  demand as pull), war rockets (fireworks first; military query; honest limits stated),
+  typewriter prize posted (Phase D prototype), Morse encoding written into semaphore
+  codebook (binary notation appendix; half of telegraphy; hardware wall noted)
+- Phase D (110–125): [CANNON ARC — SUCCEEDS IN DANIEL'S LIFETIME. Revised per story direction: cannon DOES work. The ch21 demonstration (~106-108 AD) bursts deliberately as a proof-of-concept pitch for precision boring. Prize competitions in Phase C-D (106-118 AD) drive boring tolerance forward. First reliable bronze siege bombard: ~118-122 AD. Key design insight: short thick-walled bronze tube (bronze fails gradually, not catastrophically — Roman foundries already cast massive bronze objects), 6-8 inch bore, 30-40 lb stone ball, crew of 10-15, fixed position siege weapon. It works. It breaks walls. It is not mobile field artillery — but it is a cannon that functions reliably. The "no cannon a gunner can trust" phrase in ch45 current prose refers to mobile field artillery (reliable rapid-fire in open battle) which is NOT achieved — but must be revised or recontextualized to acknowledge that fixed siege bombards DO work. CH45 PROSE NEEDS REVISION to reflect this. Military cascade: Bar Kokhba Revolt (132-135 AD) uses Roman bombards at cave-fortress siege positions → ends 2+ years early, dramatically. Weight problem: a bronze bombard weighs 2,000-5,000 lbs. Slaves cannot move these efficiently. RAILS become militarily motivated, not just industrially: if you can lay temporary rail from your supply line to a siege position, you can move cannon that would otherwise require 200 men and a week. The military necessity of moving cannon is the argument that gets rails taken seriously by Roman generals. Industrial cascade: precision boring for cannon → same tolerance solves steam cylinder → same craftsmen cut better clock gears. One capability, three unlocked arcs.] thermocouple chain begun, optical semaphore proposed, Atlantic first crossing, first working bronze bombard (~118-122 AD), patent law pitched, steam pump (~118 AD Hispania first small pump; mine-commissioning emotional beat ~128 AD ch38), oil-seep investigation and kerosene (Parthian-war-period; lamp fuel; incendiary use unwritten), standardized screw threads and interchangeable parts (go/no-go gauge; supply-contract condition; cannon boring and steam cylinder benefit), industrial acids (sulfuric/hydrochloric/nitric; steel pickling, mordant, photography prep), nitroglycerin refused (synthesis known; nothing written; "things I have decided not to teach anyone")
 - Phase E (125–155): atmospheric pumps scaling, thermocouple/galvanometer operational,
   platinum sourcing attempted, encyclopedia written and secured, rubber gaskets from
-  Atlantic returns, bombard deployed in Bar Kokhba (132-135 AD), variolation groundwork,
-  steam/rail argument pursued with new military motivation (cannon transport), first
-  experimental rail line (~135-145 AD)
+  Atlantic returns, bombard deployed in Bar Kokhba (132-135 AD); ship-mounted bombard
+  (~Phase E); variolation groundwork, steam/rail argument pursued with new military
+  motivation (cannon transport), first experimental rail line (~135-145 AD), reading lenses
+  (open sale; from glass-clarity prize chain; Daniel's own presbyopia), mechanical
+  calculator (marble-adder demo; proof machines can add; Antikythera ref; successor
+  project), coal gas lighting (coke byproduct; encyclopedia procedure; successor project),
+  photography experiments (silver nitrate + camera obscura; faint images; fixing limit;
+  successor project), arc lighting (battery-bank carbon arc; harbor demo; generator wall
+  named), generator principle written in encyclopedia (Faraday coil-and-magnet; wire-
+  drawing and magnet-strength walls named; Ulpia assigned; successor project)
+
+*Note: All 21 technologies above appear in `Rome_98AD_Intervention_Timeline.md` and are being woven into individual chapter beats. The timeline file is the authoritative sequencing reference; this outline is the canonical narrative target.*
 
 **Gambling empire arc:**
 - Part I: dice loss, catalogs observation; terni lapilli child, temporal vertigo; sportsbook
@@ -950,13 +1234,13 @@ table. The book ends there. Unresolved, on purpose.
 
 ## Pacing Notes
 
-**Texture rotation:** Vary chapter texture throughout: action (balloon, war, gunpowder incident [M5: NOT successful cannon — see Phase D correction above],
+**Texture rotation:** Vary chapter texture throughout: action (balloon, war, gunpowder incident, ch21 cannon burst [M5: the ch21 cannon/gunpowder incident is a deliberate BURST — the short thick-walled bronze tube explodes at the breech, proving that precision boring is the critical wall, not the propellant. This failure is staged intentionally by Daniel to make the argument for tolerance prizes. A reliable mobile rapid-fire FIELD artillery is never perfected in Daniel's lifetime. However, the fixed-position bronze siege bombard DOES work reliably (~118–122 AD) and is later ship-mounted (~Phase E). See Phase D cannon arc. The cannon→rails argument: bronze bombards weigh 2,000–5,000 lb — slaves cannot push these efficiently to siege positions. Temporary rail from supply line to siege position becomes the military argument that gets rails taken seriously by Roman generals: "You have slaves, but slaves cannot push these far — use a train."],
 Atlantic departure), quiet (workshop, teaching, domestic), set-piece (Trajan audience,
 the trial, the Hadrian negotiation, the dock at Gades), interludes (Roman documents,
 encyclopedia excerpts). Avoid two same-texture chapters in a row.
 
 **Tension graph:** Peaks at the unmanned balloon demonstration (Part II), the manned
-disaster (Part II), the gunpowder leak incident (Part III) [M5: NOT a cannon — reliable cannon never works in Daniel's lifetime], the accusation (Part IV), Trajan's death
+disaster (Part II), the gunpowder leak incident (Part III), the ch21 cannon burst [M5: the ch21 cannon burst is a deliberate proof-of-concept failure — Daniel stages the explosion to prove precision boring is the critical wall. This is not a permanent failure of the cannon program. The tension of the scene is the burst itself and what it teaches: that tolerances, not propellant, are the limiting factor. The fixed-position bronze siege bombard DOES work reliably by ~118–122 AD (Phase D). Mobile rapid-fire FIELD artillery is never achieved in Daniel's lifetime — that remains the unfulfilled ceiling. Ship-mounted bombards come in Phase E. The cannon→rails argument (heavy bombards cannot be slave-hauled to siege positions; temporary rail solves this) is what converts Roman generals to the rail concept. See Phase D cannon arc.], the accusation (Part IV), Trajan's death
 (Part IV cliff), the Four Consulars (Part V), Heras's death (Part VI), Daniel's death
 (Part VII). Troughs are the quiet building and teaching chapters; keep them short and warm.
 The Atlantic departure (~149 AD, Part VII) is a late major emotional set-piece — the dock
