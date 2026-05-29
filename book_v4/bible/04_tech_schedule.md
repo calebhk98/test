@@ -75,6 +75,17 @@ Feasibility marks: [EASY WIN] [PLAUSIBLE IN N YEARS] [CORRECTLY BLOCKED — reas
   writes detailed encyclopedia entries on finding, storing, and refining it — the
   ladder, not the shortcut.
 
+- **Wheelbarrow** — one wheel, two handles, load centered over the wheel. Daniel
+  asks for one to move materials and discovers it doesn't exist; any carpenter
+  builds it in days from a description. Halves the effort of moving materials on
+  construction sites. [EASY WIN — Phase A quick win]
+- **Windmill (post-mill design)** — rotating sails driving a millstone or other
+  machinery through wind power. Supplements watermill power in areas without
+  fast-running water. Daniel can describe the vane-and-shaft arrangement; local
+  carpenters work out the implementation. Roman coastal and North African
+  provinces are ideal territory. [EASY WIN materially; PLAUSIBLE STRETCH for
+  adoption in Phase A-B]
+
 **Enables next phase:** Numerals give him credibility and money. Germ framing
 gives him patron attention. The map plants the long-term ocean hook. Double-entry
 enables rational capital allocation for the workshop program. Coal-fired forges
@@ -150,6 +161,38 @@ make the Phase B metallurgy program faster.
   [PHASE B achievable: spanning lever and standardization NOW; see Phase D for
   steel prods]
 
+- **Baghdad battery (clay-jar cell)** — a clay jar with a copper cylinder and
+  iron rod filled with vinegar produces ~1 volt. A common knowledge fact for any
+  science-curious teenager; Daniel constructs a multi-cell string to demonstrate
+  current before the Volta pile's zinc-copper chemistry is available. Sufficient
+  for simple electrolysis demonstrations and for establishing the "silent force in
+  metal and acid" concept. Gated on the Volta pile for real sustained current.
+  [PHASE B precursor; EASY WIN once materials in hand]
+- **Barometer and thermometer** — barometer: a glass tube of mercury inverted in
+  a dish; the column height reads atmospheric pressure and predicts storms 12–24
+  hours ahead (invaluable for the ocean program and for military commanders).
+  Thermometer: mercury in a sealed glass tube with a calibrated scale. Both
+  require mercury and reasonably clear glass; mercury is a known Roman commodity.
+  Daniel calibrates the thermometer against boiling water and melting ice, giving
+  a reproducible scale that underpins the Phase D thermocouple program. [PHASE B;
+  EASY WIN once workshop glass-work is established]
+- **Phonograph (rotating-wax-cylinder recorder)** — a diaphragm attached to a
+  stylus cuts a groove in a rotating wax or lead cylinder as sound vibrates it;
+  playback reverses the process. Daniel constructs a working model once his
+  workshop machinery can turn a cylinder at consistent speed. The recording
+  mechanism is kept SECRET (he sells cylinders and players as separate
+  commodities, keeping the cutting-head proprietary). Commercially enormous in
+  taverns and for preserving religious or imperial proclamations; culturally
+  transformative. [PHASE B; PLAUSIBLE IN 5–10 YEARS once the lathe-work and
+  wax-cylinder casting are in place]
+- **Trebuchet** — a counterweight siege engine dramatically more powerful than
+  the Roman ballista or onager. The counterweight does the work rather than
+  twisted rope, allowing much larger scale and consistent range. Daniel can
+  describe the design from memory; the mechanical principles are within Roman
+  carpentry and stonework. He introduces it through his army contacts (Celer era)
+  as a superior alternative to the torsion engines, pitched on throw-weight and
+  crew simplicity. [PHASE B; EASY WIN with patron/army funding]
+
 **Enables next phase:** Water-powered bellows addresses temperature control for
 steel. Rag paper cuts printing costs, enabling wider distribution. Soap + distilled
 antiseptic strengthen the medical thread. The precision bootstrapping program
@@ -211,12 +254,32 @@ antiseptic strengthen the medical thread. The precision bootstrapping program
   compasses." Critical for the ocean program (Phase E). V1 never raised this despite
   running a multi-decade ocean program. [EASY WIN once lodestone use is established]
 
-- **Gunpowder + cannon-that-bursts** — China did NOT have gunpowder by 100 AD;
-  Daniel believing it did is a good confident-mistake beat. Saltpeter via niter
-  beds (multi-year, dangerous slog; can blow up a shed). The cannon's job is to
-  burst: demonstrate from a safe distance, argue for better steel. A reliable
-  battery of cannon needs steel — many years away. [CORRECTLY BLOCKED for
-  reliable sustained use — bronze cannot hold repeated firing pressure]
+- **Gunpowder + cannon — proof-of-concept now, reliable bombard later** — China
+  did NOT have gunpowder by 100 AD; Daniel believing it did is a good
+  confident-mistake beat. Saltpeter via niter beds (multi-year, dangerous slog;
+  can blow up a shed). The ch21 cannon BURSTS DELIBERATELY as a proof-of-concept:
+  the argument made is that precision and tolerance, not the concept itself, are
+  the wall — bronze cannot hold repeated firing pressure; better steel is needed.
+
+  After the precision-bootstrapping loop matures (boring tolerance won through
+  prize competitions, better coke-smelted steel from Phase D), a RELIABLE
+  fixed-position bronze siege bombard becomes achievable ~118–122 AD: a short,
+  thick-walled bronze tube, ~6–8 inch bore, firing a 30–40 lb stone ball, crewed
+  by 10–15 men. It is later ship-mounted for coastal siege work.
+
+  The bombard's weight (2,000–5,000 lb) makes it a primary MILITARY argument for
+  rails: slaves cannot haul it efficiently to a siege position, so temporary rail
+  laid to the target becomes the use-case that gets Roman generals to take
+  wagonways seriously beyond mine inclines. BAR KOKHBA (132–135 AD) is the first
+  major siege deployment in the narrative (canon ch45). The rail-and-bombard
+  argument is the hinge between the "economic defeat" of ordinary cargo rail
+  (ch23) and genuine military adoption.
+
+  What remains CORRECTLY BLOCKED: mobile rapid-fire FIELD artillery for
+  open-battle use — achieving the bore tolerance, powder consistency, and crew
+  speed for reliable field-gun rates of fire is never perfected in Daniel's
+  lifetime. [PHASE C proof; PHASE D reliable siege bombard; field artillery
+  CORRECTLY BLOCKED]
 
 - **Heliocentrism** — costs only words. Aristarchus proposed it in 270 BC so it
   has Greco-Roman intellectual precedent. Have Daniel teach it through Heras, or
@@ -241,6 +304,56 @@ antiseptic strengthen the medical thread. The precision bootstrapping program
 
 - **Writing/technology contest** — annual prize for the best tales of machines.
   Must outlive Daniel as an institution.
+
+- **Hydrogen applications (oxy-hydrogen torch; recon balloon; grenade tested,
+  not pursued)** — electrolysis from the Volta pile separates water into hydrogen
+  and oxygen. The oxy-hydrogen torch burns hotter than any Roman forge fire and is
+  immediately useful to blacksmiths for welding and smelting exotic metals.
+  Hydrogen-lift observation balloons provide passive lift without open flame,
+  directly addressing the ch13 Sabinus catastrophe (the vow covers manned fire-
+  flight; a hydrogen-lift tethered drone with no man aboard does NOT breach it).
+  Hydrogen grenades (sealed clay jars, oxygen/hydrogen mix, fused) are tested and
+  found unreliable in Roman field conditions — Daniel records the failure honestly
+  and declines to pursue further weaponization. [PHASE C; PLAUSIBLE IN 5–10 YEARS
+  from Volta pile chain]
+- **War rockets (fireworks-first path)** — a tube sealed at one end with a small
+  nozzle, packed with gunpowder, mounted on a stick for aerodynamic stability.
+  Daniel introduces them first as FIREWORKS (publicly safe; spectacular; no
+  military explanation required), then military use follows: incendiary and
+  psychological effect against ships and fortifications, no precision boring
+  required. Once gunpowder is reliable the rocket is immediately buildable.
+  [PHASE C; EASY WIN once gunpowder is reliable]
+- **Typewriter (lever-type prototype)** — individual letter keys connected to
+  hinged type bars, an ink ribbon, a paper carriage on a ratchet, a bell for
+  line-end warning. The mechanical complexity is real but comparable to the
+  Antikythera mechanism; Daniel's press work already requires movable individual
+  type pieces. He sets this as a prize competition (specification: legible
+  impression at ten words per minute; lever mechanism specified, details open).
+  First prize-winning prototype appears in Phase C; production copies in Phase D.
+  [PHASE C prize → PHASE D prototype production]
+- **Morse encoding applied to the optical semaphore codebook** — Daniel's
+  dot-dash encoding protocol (which he may partially misremember and reconstruct
+  consistently) applied as the codebook for the semaphore tower network. The
+  towers themselves are Phase B-C; Morse gives them a compact, learnable, and
+  extensible code. He cannot remember every letter exactly, so he reconstructs the
+  logic and locks a consistent cipher in print; operators drill from the printed
+  sheet. [PHASE C; EASY WIN as a printed codebook once towers exist]
+- **Ball bearings (Phase C prize → Phase D production)** — spherical hardened
+  metal balls rolling in a race reduce friction dramatically in every rotating
+  mechanism. Daniel knows these exist from hardware-store inventory and describes
+  the geometry precisely; the prize competition specifies a required smoothness
+  test (a ball that rolls a measured distance down a standard incline). Phase C
+  prize winners demonstrate the concept; Phase D produces them in consistent steel
+  once the metallurgy improves. [PHASE C prize; PHASE D production]
+- **Flying shuttle loom and water-powered loom** — the flying shuttle is a hinged
+  shuttle mechanism thrown automatically across the loom rather than by hand,
+  doubling weaving speed with minimal mechanical complexity; any skilled carpenter
+  can build it. The water-powered loom applies the existing waterwheel-and-cam
+  arrangement (Phase B) to drive the loom mechanism, dramatically cutting fabric
+  labor cost. Both are set as prize competitions, with the economic argument
+  explicit: cheaper cloth cuts the cost of balloon envelopes and sail canvas as
+  much as it cuts clothing prices. [PHASE C/D; EASY WIN for flying shuttle;
+  PLAUSIBLE IN 5–10 YEARS for reliable water-powered loom]
 
 **Enables next phase:** Volta pile + galvanometer enable thermocouple pyrometry.
 Precision length bootstrapping improves gears and cylinder boring. Patent law
@@ -311,6 +424,35 @@ proposal to Hadrian makes the institutional-innovation thread concrete.
   Steel prod scorpio bolt-throwers extend effective siege range by approximately
   30%. [PHASE D: steel quality now sufficient]
 
+- **Standardized screw threads and interchangeable parts** — a defined thread
+  profile so bolts made by one smith fit nuts made by another; parts produced to
+  consistent go/no-go gauge specifications so any component fits any assembly of
+  the same type. Both follow directly from the Phase C precision-length program
+  (vernier calipers + go/no-go gauges + boring bar). Daniel specifies both as
+  prize outcomes and supplies the printed gauge templates. Changes the economics
+  of manufactured goods and enables field repair of machinery. [PHASE D;
+  PLAUSIBLE IN 10–15 YEARS from the Phase C precision bootstrapping]
+- **Industrial acids — sulfuric, hydrochloric, nitric** — sulfuric acid by
+  distilling green vitriol (iron sulfate, used in Roman dyeing); hydrochloric
+  acid by heating salt with sulfuric acid; nitric acid by heating saltpeter with
+  sulfuric acid. The acid chain opens metal pickling, cleaning, chemical dyeing,
+  and (nitric acid) further chemistry. Daniel knows the names and the rough
+  reactions; execution gated on consistent glassware and on having sulfuric acid
+  first. [PHASE D; PLAUSIBLE IN 15–20 YEARS from workshop establishment]
+- **Kerosene and oil-seep exploitation** — confirmed Phase C-D (see Phase A
+  OIL/PETROLEUM entry above). The kerosene fraction of distilled crude burns
+  cleaner and brighter than tallow or olive oil and is immediately commercial as
+  lamp fuel. Exploitation begins when Daniel's factor secures Mesopotamian crude
+  samples and the existing still apparatus is applied; Phase C-D timeline is
+  correct. [PHASE C-D; consistent with existing entry]
+- **Arc lighting (battery-bank demo; generator-scale is successor)** — an
+  electric arc between two carbon rods in air produces brilliant white light
+  without a vacuum. With a sufficient bank of Volta cells, demonstrable as a
+  lighthouse or military-signal application. Generator-scale arc lighting (the
+  successor completing the circuit) is beyond Daniel's lifetime, listed in PHASE E
+  / successors. [PHASE D battery-bank demo; generator-scale CORRECTLY BLOCKED
+  pending the dynamo]
+
 - **Army applications** — tethered unmanned observation balloons (the vow covers
   manned fire-flight only), field sanitation, food preservation, mapping. Moral
   knot: his gifts help win sieges and kill people. He sees this.
@@ -364,6 +506,47 @@ interests make patent/limited-liability proposals timely.
   bookkeeping, the patent concept, the incomplete thermocouple chain, and the note
   on the escapement Daniel never solved. Designed to be found and decoded later.
   It is a ladder, not a shortcut.
+
+- **Eyeglasses / reading lenses** — convex lenses for presbyopia, ground from
+  the clearest available Roman glass on dished iron. Daniel's own presbyopia
+  (~ch38) makes this personal; he uses it to re-examine the glass-clarity problem
+  and direct Demetrios's grinding work toward a consistent curvature specification
+  rather than an optical one. The first functional reading lenses are crude but
+  extend a scholar's working life by a decade. [PHASE E; PLAUSIBLE IN 10–15 YEARS
+  from the glass-clarity prize-chain; gated on consistent clear glass, not on new
+  materials]
+
+- **Coal gas lighting** — a byproduct discovered when coke is produced in sealed
+  vessels: the combustible gas (hydrogen and methane mixture) can be piped through
+  hollow ceramic or metal tubes to controlled burners. Daniel records the procedure
+  in the encyclopedia as a natural successor to kerosene lamp fuel for public and
+  workshop lighting. Practical street or building gas lighting is a successor project
+  (it requires sealed pipe runs and valve control) but the principle and the
+  production method are documented in Phase E. [PHASE E; successor to coke program;
+  PLAUSIBLE for successors once the pipe-joinery problem is solved]
+
+- **Mechanical calculator / marble-adder** — a demonstration device using rows of
+  beads or marbles in channels, geared to carry tens automatically, showing that a
+  machine can perform addition by mechanism rather than by hand. Daniel builds one
+  as a working demonstration for the encyclopedia, not as a production instrument:
+  his explicit argument is that scaling it to a Difference Engine type is "merely
+  more work," and he points to the Antikythera mechanism as proof that Roman
+  craftsmen can sustain the gear complexity. The device itself is a Phase E exhibit;
+  the production calculating engine is a successor goal. [PHASE E demo; successor
+  PLAUSIBLE once steel and precision machining mature]
+
+- **Photography — camera obscura + silver nitrate experiments** — a pinhole or
+  lens in a dark chamber projects an inverted image on the back wall (the camera
+  obscura is describable immediately and buildable in days). Silver nitrate solution,
+  once nitric acid is available in Phase D, is visibly darkened by light exposure.
+  Daniel records both facts in the encyclopedia and combines them in Phase E
+  experiments: silver-nitrate-coated paper or plaster inside the camera obscura
+  captures a latent image. The fixing chemistry (what stops further darkening) is the
+  wall he cannot cross — salt water partially works; a reliable fixer is beyond his
+  chemistry. He records the failure honestly ("the image arrives and then eats
+  itself") alongside the method, so a successor with better chemistry can close it.
+  [PHASE E experiments; fixing-chemistry limit CORRECTLY BLOCKS reliable photography
+  in Daniel's lifetime]
 
 - **Institutional securing** — the printing press, the contest, the patronage
   fund, and the keeper-chain must survive him. Three physical copies of the
@@ -445,7 +628,9 @@ betting on horse races he already knows something about.
 2. **Mechanical clock** — the escapement never clicks in his memory; he builds
    excellent water clocks instead. Procula solves the escapement from his cipher note.
 3. **Useful optics** — blurry 2–3x toy; the atom-seeing microscope is a lie he tells.
-4. **The cannon** — supposed to burst; the argument for steel.
+4. **The cannon** — the ch21 burst is DELIBERATE (proof-of-concept, not failure);
+   the reliable bombard eventually works (~118–122 AD). What remains a true humbling:
+   field artillery is never achieved in Daniel's lifetime.
 5. **Reproducible steel** — thermocouple helps but does not solve it; occasionally
    right, never reliably repeatable.
 6. **Lead pipe infrastructure** — knows the danger; acts on his household; cannot
