@@ -445,13 +445,71 @@ proposal to Hadrian makes the institutional-innovation thread concrete.
   lamp fuel. Exploitation begins when Daniel's factor secures Mesopotamian crude
   samples and the existing still apparatus is applied; Phase C-D timeline is
   correct. [PHASE C-D; consistent with existing entry]
-- **Arc lighting (battery-bank demo; generator-scale is successor)** — an
+- **Arc lighting (battery-bank demo now; generator-scale in Phase D/E)** — an
   electric arc between two carbon rods in air produces brilliant white light
   without a vacuum. With a sufficient bank of Volta cells, demonstrable as a
-  lighthouse or military-signal application. Generator-scale arc lighting (the
-  successor completing the circuit) is beyond Daniel's lifetime, listed in PHASE E
-  / successors. [PHASE D battery-bank demo; generator-scale CORRECTLY BLOCKED
-  pending the dynamo]
+  lighthouse or military-signal application. Generator-scale arc lighting becomes
+  achievable once the dynamo is built (Phase D/E — see below); it is the most
+  transformative payoff of the generator program. [PHASE D battery-bank demo;
+  generator-scale arc lighting achievable in Daniel's lifetime once dynamo is
+  operational]
+
+- **Generator / dynamo [ACHIEVABLE IN DANIEL'S LIFETIME — Phase D/E]** —
+  Faraday's 1831 generator was a coil of wire, a magnet, and relative motion.
+  Romans have all of it: copper wire drawn through calibrated-hole plates (Rome
+  already uses this for jewelry and decorative weaving; finer drawing is an
+  engineering challenge measured in years, not a hard block); iron magnetizable
+  by lodestone (Rome uses lodestones for compass needles); water-wheel, hand-crank,
+  or animal-driven rotation; metalworking capable of making commutator rings and
+  brush contacts. The reason the dynamo was not built historically was NOT missing
+  materials — it was the missing THEORETICAL INSIGHT that moving a magnet near a
+  wire produces current. Daniel has that insight on day one.
+
+  Volta(1800) → Faraday(1831) was 31 years for scientists discovering electromagnetic
+  induction from scratch, working without the concept. Daniel starts knowing it, so
+  the engineering follows in years rather than decades. The real challenges are
+  fine-wire drawing (thin, even, low-resistance wire demands consistent draw-hole
+  geometry — a prize-competition problem) and producing magnets strong enough to
+  give useful flux (stacked lodestone-magnetized iron bar assemblies; later improved
+  by energizing them with the Volta pile). Both are solvable in Daniel's workshop.
+
+  This is the most transformative electrical step: continuous current at scale
+  powers arc lighting in industrial quantities and drives the telegraph/radio
+  programs. Without the generator, arc lighting is a battery-bank demonstration;
+  with it, arc lighting becomes a real lighthouse and workshop-illumination technology.
+  [PHASE D/E; PLAUSIBLE IN 10–20 YEARS once wire-drawing and magnet work are
+  adequate — a hard engineering problem, not a blocked one]
+
+- **Spark-gap radio + crystal receiver + Morse relay network [ACHIEVABLE IN
+  DANIEL'S LIFETIME — Phase 3 transmitter/receiver, Phase 4 network]** —
+  The spark-gap transmitter is mechanically simple: a high-voltage spark from a
+  Wimshurst-type static machine (glass discs, metal sectors, a crank — all
+  available in Rome) or a Leyden jar across a gap radiates electromagnetic waves;
+  an elevated wire antenna couples them into space; a Morse key opens and closes
+  the circuit. The receiver is a crystal set — galena (lead sulfide, abundant;
+  Romans smelted vast quantities of lead ore and discarded or traded galena as a
+  byproduct) with a cat's-whisker wire contact, a coil, a capacitor, and an
+  electromagnetic earphone. No power source at the receiver. Tuning is done by
+  trial-and-error adjustment of the coil and cat's-whisker; it requires NO
+  semiconductor theory (crystal radios were built by early-twentieth-century
+  hobbyists with no formal physics, entirely by hand).
+
+  The only historical bottleneck was knowing that EM waves exist and can carry
+  information — Daniel knows it. Hertz demonstrated EM waves in 1887; Marconi
+  achieved transatlantic transmission in 1901 — fourteen years WITH the theory
+  already in hand. Daniel starts with the theory.
+
+  Timeline in the narrative: the spark-gap transmitter and crystal receiver appear
+  in Phase 3 (roughly equivalent to Phase D in this schedule); an operational
+  Morse radio network — transmitters and receivers at fixed relay points — is a
+  Phase 4 (Phase E) achievement. The Morse encoding Daniel already applied to the
+  optical semaphore network (Phase C) is the same codebook; operators already know
+  the alphabet. Distinguish carefully from later technologies: vacuum-tube
+  amplification and voice radio (which require a vacuum tube Daniel cannot build)
+  remain successor-era achievements. The spark-gap network is telegraphy by EM
+  wave rather than wire, not broadcasting. [PHASE D spark-gap transmitter and
+  crystal receiver; PHASE E operational Morse radio relay network; voice/vacuum-tube
+  radio CORRECTLY BLOCKED as successor-only]
 
 - **Army applications** — tethered unmanned observation balloons (the vow covers
   manned fire-flight only), field sanitation, food preservation, mapping. Moral
@@ -614,10 +672,17 @@ betting on horse races he already knows something about.
   BLOCKED]
 - **Long-distance electric telegraph** — no rubber/gutta-percha insulation.
   OPTICAL SEMAPHORE (no electricity) IS achievable and is an easy win Daniel should
-  propose. [Electric: CORRECTLY BLOCKED; Optical: EASY WIN]
-- **Broadcast radio/radar** — genuine reach. [CORRECTLY BLOCKED]
-- **Dynamo/generator** — precision-wound coils; downstream of steel + precision
-  machining wall. [CORRECTLY BLOCKED]
+  propose. Spark-gap Morse radio (Phase D/E above) eventually replaces the need for
+  wire insulation. [Wire electric telegraph: CORRECTLY BLOCKED; Optical semaphore:
+  EASY WIN; Spark-gap radio relay: achievable, see Phase D/E entries]
+- **Voice / vacuum-tube radio and radar** — vacuum tubes require a reliable
+  near-perfect vacuum that Roman glass-work cannot produce; voice modulation on a
+  carrier requires amplification. Spark-gap Morse transmission (Phase D/E) is NOT
+  blocked — see above. What remains blocked is voice broadcast radio and radar.
+  [Voice radio / radar: CORRECTLY BLOCKED; spark-gap Morse: achievable]
+- **Dynamo/generator** — NOT blocked. See Phase D/E entry above. Fine-wire drawing
+  and magnet strength are engineering challenges in years, not a materials wall.
+  [MOVED TO PHASE D/E — ACHIEVABLE IN DANIEL'S LIFETIME]
 
 ---
 
@@ -641,6 +706,13 @@ betting on horse races he already knows something about.
 ## NEVER BUILT IN DANIEL'S LIFETIME
 The atmospheric pump is the maximum achieved in mechanical power. Beyond that:
 combustion engine, engine-driven train ("all tracks lead to Rome" — his dream),
-aircraft/jets, submarines, the moon, computers. Nitroglycerin: he refuses to touch
-it. Concrete: Rome beats him; he learns from them. The atom-seeing microscope: a
+aircraft/jets, submarines, the moon, computers. Nitroglycerin: Daniel can name it
+(glycerol reacted with nitric and sulfuric acids produces a shock-sensitive
+explosive) but cannot safely direct its production — he does not know the precise
+ratios, temperatures, or stabilization procedure, and the margin between synthesis
+and detonation is lethal. This is a genuine knowledge and skill gap, not a moral
+refusal; he simply lacks the specific process knowledge to instruct a craftsman
+without high probability of killing them. He records the name and the rough
+chemistry in the encyclopedia as a warning and a pointer, but does not attempt it.
+Concrete: Rome beats him; he learns from them. The atom-seeing microscope: a
 deliberate lie that stays a lie.

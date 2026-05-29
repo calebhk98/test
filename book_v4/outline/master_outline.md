@@ -417,13 +417,24 @@ capacity. The prize exists as a standing target. A prototype reaches his bench i
 The specification sharpens the scribes'-guild conflict: the press duplicates texts, but
 a writing machine threatens the individual copy trade.
 
+*Wimshurst-type static machine (Phase B/C, Part II–III boundary):* Glass discs, tinfoil
+sectors, a hand crank, metal brushes — a static electricity generator producing high-
+voltage spark from relative rotation of opposing discs. Daniel knows it produces the
+high-voltage arc he will eventually need for radio transmission. The immediate uses are
+demonstration (sparks visible to a room of Roman observers, far more impressive than the
+Baghdad battery tingle) and Leyden jar charging (a glass jar coated inside and out with
+foil stores and releases a significant charge). He builds one at the workshop and posts a
+prize for larger-diameter discs with cleaner glass. This is the hardware root of the
+spark-gap transmitter he will build in Phase D.
+
 *Morse encoding written into the optical-semaphore codebook (Part III):* When Daniel
 designs the semaphore codebook, he includes a binary notation appendix — dot and dash,
 short and long — as an alternate encoding for simple messages. He calls it a timing
 notation. It is the first half of telegraphy, written in a form that can be implemented
-with signal lamps or sound without wire. He cannot finish the second half without a
-reliable distance-pulse hardware chain he does not have. The appendix sits in the
-codebook, waiting.
+with signal lamps or sound without wire. The second half — a spark-gap transmitter and
+crystal receiver carrying the timing notation through the air without any physical link
+— is already in progress and will be completed in Phase D. The appendix sits in the
+codebook; the Wimshurst hardware is functional; the galena crystal work is underway.
 
 *Prize innovation — Part III:* The specs become semi-public in this part — appearing in
 the press's broadsheet alongside commercial notices. Multiple open simultaneously.
@@ -525,21 +536,25 @@ life, but his leverage and his patron-web — evaporates.
 
 *Food arc — Part IV:* The first New World crops arrive in this part's second half, once
 the Atlantic expedition returns (~115–120 AD) and the agricultural lag of one to two
-growing seasons passes. Sweet potato first: he roasts one whole in a fire within the
-first week of receiving tubers. He eats it plain. It is sweet and filling and it needs
+growing seasons passes. Daniel had named the tomato as a priority on the expedition
+request — distinct, versatile, specifically asked for — and it is among the first seeds
+that return. Sweet potato arrives at the same time: he roasts one whole in a fire within
+the first week of receiving tubers. He eats it plain. It is sweet and filling and it needs
 nothing added to it. He serves them at the workshop. They are an immediate hit because
 they are unlike anything Rome eats and genuinely good. Corn follows: he makes rough
 polenta from the first maize — cornmeal cooked slowly in water with salt, served with
 olive oil and hard cheese — and serves it to the workshop. Dense and unusual. He knows
-what it will become. Then the tomato moment. He grows them from seed, loses the first
-season mostly, gets a real harvest the second. He makes a basic tomato sauce — tomatoes
-crushed and reduced with oil and garlic, a bit of garum for depth — and puts it on pasta.
-The pasta he has been making for years. The sauce he has been unable to make for years.
-He eats it. He puts down the bowl. He says nothing. Three sentences. No commentary. If
-anyone else is present, they notice he has gone quiet. Nobody asks why. Within weeks,
-ketchup: tomatoes, vinegar, onion, spices, reduced thick, given to Gnaeus without
-explanation. Gnaeus puts it on the menu. Note: Daniel pushed for the Atlantic crossing
-partly because he knew what was growing there. He never said this aloud.
+what it will become. The tomato arc completes in this first crop wave. He grows them from
+seed, loses the first season mostly, gets a real harvest the second. He makes a basic
+tomato sauce — tomatoes crushed and reduced with oil and garlic, a bit of garum for depth
+— and puts it on pasta. The pasta he has been making for years. The sauce he has been
+unable to make for years. He eats it. He puts down the bowl. He says nothing. Three
+sentences. No commentary. If anyone else is present, they notice he has gone quiet. Nobody
+asks why. Within weeks, ketchup: tomatoes, vinegar, onion, spices, reduced thick, given to
+Gnaeus without explanation. Gnaeus puts it on the menu. This is the food arc's main payoff
+— it happens early, once he has the harvest, not as a late reveal. Note: Daniel pushed
+for the Atlantic crossing partly because he knew what was growing there. He never said
+this aloud.
 
 *Prize innovation — Part III/IV boundary (ch24–29 range):* The unexpected farrier's
 pyrometry table. A horseshoe-maker, not a smith Daniel would have thought to approach,
@@ -610,11 +625,25 @@ dye adhesion, and the silver-on-glass preparation he needs for the photography e
 he cannot yet complete. The acids are not secret — they are too useful across too many
 trades — but the production process is documented in cipher until Daniel decides otherwise.
 
-*Nitroglycerin refused (Part IV):* Daniel knows the synthesis. He works through it once
-in his head, confirms the yield is straightforward from glycerol and the nitric acid he
-now produces, and writes nothing down. The encyclopedia entry for this period contains one
-line in English: *"Things I have decided not to teach anyone."* No elaboration. No
-chapter scene. The refusal is stated and complete.
+*Nitroglycerin — a dead end (Part IV):* Daniel can name nitroglycerin as a powerful
+explosive from glycerol and acids, and he says so when the topic comes up. He does NOT,
+however, know the precise synthesis — the ratios, temperatures, and stabilization steps
+he would need to produce it safely or direct a craftsman to work it out. It is a dead end
+he can describe but cannot achieve. There is no refusal; there is a knowledge gap. He
+does not write an encyclopedia entry for it. No chapter scene required.
+
+*Spark-gap radio and first Morse transmission (Phase D, Part IV):* The Wimshurst static
+machine from Phase B/C is now producing a reliable high-voltage spark. Daniel builds the
+transmitter: a Leyden-jar-charged spark gap across an elevated antenna wire, keyed by
+a lever that connects and breaks the circuit in dot-and-dash timing. The receiver is a
+crystal set — a coil of wire, a sliver of galena (lead ore, abundant), a fine wire
+cat's-whisker contact adjusted by trial across the crystal face until the signal
+resolves, and a membrane earphone. No power source needed at the receiver. Daniel
+spends days moving the cat's-whisker contact and tuning the coil until the dots and
+dashes from the transmitter in the adjacent courtyard arrive as distinct tones in the
+earphone. The first keyed Morse message received over the air: three long tones. He
+writes in the encyclopedia: *"Sound, through the air, without a wire between them."*
+No scene explanation required beyond the fact and its achievement.
 
 **Part IV ends:** The ground drops out. Hadrian's succession is contested (widely believed
 to be engineered by Plotina and Attianus). Daniel is on the wrong side of a transition.
@@ -926,30 +955,45 @@ He writes the exposure procedure, the known fixing attempts, and the failure mod
 in the encyclopedia and marks it as a successor project requiring the right fixing agent.
 The images themselves do not survive; the procedure does.
 
-*Arc lighting (Part VI):* Daniel builds a battery bank — thirty Volta cells in series,
-the largest stack his production can support — and draws the current to two pointed carbon
-rods held close together. The arc that jumps between them is brighter than any lamp he
-has seen, blue-white and buzzing, and it is far too small to illuminate anything larger
-than a worktable. He tests it at night at the harbor entrance, where the flare is visible
-from a considerable distance. The application is obvious: harbor light, lighthouse, signal.
+*Arc lighting (Part VI, battery-powered prototype):* Before the generator is running,
+Daniel builds a battery bank — thirty Volta cells in series, the largest stack his
+production can support — and draws the current to two pointed carbon rods held close
+together. The arc that jumps between them is brighter than any lamp he has seen,
+blue-white and buzzing, and it is far too small to illuminate anything larger than a
+worktable. He tests it at night at the harbor entrance, where the flare is visible from
+a considerable distance. The application is obvious: harbor light, lighthouse, signal.
 The wall is just as obvious: sustaining a battery bank of this scale costs more than the
-candles it replaces. This is a generator problem, not a chemistry problem. He writes it
-into the encyclopedia under the heading "Light from Current — Requires Generator." It is
-the last entry in that volume.
+candles it replaces. This is a generator problem, not a chemistry problem. He writes "arc
+lighting at scale — requires generator" and moves directly to building one.
 
-*Generator principle written into the encyclopedia (Part VI):* Faraday's coil-and-magnet
-principle — rotate a conductor in a magnetic field, or rotate a magnet past a conductor,
-and current flows — is written into the encyclopedia from memory of a physics class. The
-mathematics of the relationship between field strength, conductor length, and output
-current Daniel can approximate but not derive rigorously; he marks the approximation as
-approximate. The two engineering walls are named explicitly: wire-drawing to fine tolerances
-(thinner wire, more turns, higher output) and magnet strength (requiring iron and
-consistently achievable magnetization). He assigns both to Ulpia — the workshop's most
-capable metalworker after Hermes — as standing research problems with prize funding. He
-writes in the encyclopedia margin, in English: *"Whoever solves both of these builds the
-thing that makes everything else possible. I will not live to see it. Build it anyway."*
-The generator principle entry is marked as a successor project requiring verification by
-the workshop circle after Daniel's death.
+*Morse radio relay network operational (Phase D/E, Part V–VI):* Once the first Morse
+transmission is demonstrated in Phase D, the relay-network build follows the same
+logic as the optical semaphore: manned relay stations at intervals, each with a
+spark-gap transmitter and a crystal-set receiver, a trained operator with the Morse
+codebook, and an elevated antenna. The critical difference from semaphore: weather-
+independent. A signal passes through fog, cloud, and night. By Phase E (~128–135 AD),
+a relay chain along the main roads — Rome to Lugdunum, Rome east to Antioch — is
+carrying same-day military traffic. The optical semaphore network is not abandoned
+(it is faster per relay when weather is good and requires no trained operator beyond
+a signalman); the radio network supplements it and supersedes it for long-haul
+bad-weather communication. Daniel writes the relay-station specification into the
+military infrastructure record. The network is an army project from the beginning —
+he pitched it to the same contacts who took the semaphore proposal.
+
+*Generator — built and working in Daniel's lifetime (~Phase E, ~128–135 AD):* Faraday's
+1831 coil-and-magnet insight is the only historical bottleneck — moving a magnet near a
+coil makes current flow — and Daniel has had it from day one. The engineering follows in
+years, not decades. Drawn copper wire, lodestone-magnetized iron, a water wheel or crank
+for rotation: all available in Rome. Daniel assigns Ulpia to the wire-drawing and magnet-
+strength work as prize problems with standing funding. By ~128–135 AD the first working
+generator is running — a coil-and-magnet machine turned by a water wheel, producing
+continuous current. It is not elegant; it requires a water source and maintenance; but it
+frees the entire electrical program from depleting battery banks. The single most
+transformative electrical step. Arc lighting at scale becomes practical once generator-
+powered: harbor lamps, lighthouse beacons, workshop illumination at night. The telegraph
+and radio programs also benefit from a continuous current source. Daniel sees the working
+machine in his own lifetime. He writes in the encyclopedia: *"The thing that makes
+everything else possible. Build more of them."*
 
 *Hadrian dies (138 AD):* The ocean program loses its imperial champion. Antoninus Pius
 succeeds (stay-at-home, no appetite for adventure). The program is precarious but not
@@ -960,9 +1004,10 @@ the beginning.
 *Food arc — Parts VI–VII:* New World crops are now part of the household routine —
 tomatoes, sweet potatoes, maize all growing in the garden, not miraculous anymore, just
 what the garden produces. A background line or two is sufficient. In Part VII, ch50:
-Daniel, old, eats a tomato from his garden. One sentence. No commentary. The food arc's
-true ending — not triumph, not speech, just an old man in his last years eating something
-from his own garden that was not possible for the first twenty years of his life in Rome.
+Daniel, old, eats a tomato from his garden. One sentence. No commentary. This is a small
+late-life echo of the food arc, not its main payoff — that happened in Part IV when he
+first made tomato sauce on pasta and gave ketchup to Gnaeus. Here it is just an old man
+eating something from his own garden, ordinary now, which is its own kind of ending.
 Also in late life: familiar things become normal. The texture of aging on food — what the
 mouth prefers, what it can manage, what it does not anymore. No scenes required; a line
 or two of texture if it fits naturally.
@@ -1020,8 +1065,10 @@ about the western contact in English, in the workshop, and seals it.
 in Part V). Scaeva deflected and dead (completed in Part V). Vibenius's debt called and
 death witnessed (completed in Part IV). By Part VII, all three are settled history.
 
-*Tomato, one sentence:* After return news confirms the Atlantic crops are arriving —
-after the tomato is in Roman hands — Daniel tastes one. One sentence. No speech.
+*Tomato, one sentence (echo):* Daniel, old, eats a tomato from his own garden. One
+sentence. No speech. The arc's main payoff was in Part IV — the sauce on pasta, the
+ketchup for Gnaeus, the first real harvest. This is the late echo: the same fruit,
+ordinary now, in an old man's garden.
 
 *The "Prize for Demonstrated Truth" endowment in the will:* A capital fund held in trust,
 deliberately not activated in Daniel's lifetime. The will specifies: "Hold this until
@@ -1110,8 +1157,12 @@ table. The book ends there. Unresolved, on purpose.
   payoff), flying shuttle and water-powered loom prize posted (balloon-program linen
   demand as pull), war rockets (fireworks first; military query; honest limits stated),
   typewriter prize posted (Phase D prototype), Morse encoding written into semaphore
-  codebook (binary notation appendix; half of telegraphy; hardware wall noted)
-- Phase D (110–125): [CANNON ARC — SUCCEEDS IN DANIEL'S LIFETIME. Revised per story direction: cannon DOES work. The ch21 demonstration (~106-108 AD) bursts deliberately as a proof-of-concept pitch for precision boring. Prize competitions in Phase C-D (106-118 AD) drive boring tolerance forward. First reliable bronze siege bombard: ~118-122 AD. Key design insight: short thick-walled bronze tube (bronze fails gradually, not catastrophically — Roman foundries already cast massive bronze objects), 6-8 inch bore, 30-40 lb stone ball, crew of 10-15, fixed position siege weapon. It works. It breaks walls. It is not mobile field artillery — but it is a cannon that functions reliably. The "no cannon a gunner can trust" phrase in ch45 current prose refers to mobile field artillery (reliable rapid-fire in open battle) which is NOT achieved — but must be revised or recontextualized to acknowledge that fixed siege bombards DO work. CH45 PROSE NEEDS REVISION to reflect this. Military cascade: Bar Kokhba Revolt (132-135 AD) uses Roman bombards at cave-fortress siege positions → ends 2+ years early, dramatically. Weight problem: a bronze bombard weighs 2,000-5,000 lbs. Slaves cannot move these efficiently. RAILS become militarily motivated, not just industrially: if you can lay temporary rail from your supply line to a siege position, you can move cannon that would otherwise require 200 men and a week. The military necessity of moving cannon is the argument that gets rails taken seriously by Roman generals. Industrial cascade: precision boring for cannon → same tolerance solves steam cylinder → same craftsmen cut better clock gears. One capability, three unlocked arcs.] thermocouple chain begun, optical semaphore proposed, Atlantic first crossing, first working bronze bombard (~118-122 AD), patent law pitched, steam pump (~118 AD Hispania first small pump; mine-commissioning emotional beat ~128 AD ch38), oil-seep investigation and kerosene (Parthian-war-period; lamp fuel; incendiary use unwritten), standardized screw threads and interchangeable parts (go/no-go gauge; supply-contract condition; cannon boring and steam cylinder benefit), industrial acids (sulfuric/hydrochloric/nitric; steel pickling, mordant, photography prep), nitroglycerin refused (synthesis known; nothing written; "things I have decided not to teach anyone")
+  codebook (binary notation appendix; first half of telegraphy; Wimshurst hardware
+  functional; galena crystal work underway; Phase D closes the loop)
+- Phase D (110–125): [CANNON ARC — SUCCEEDS IN DANIEL'S LIFETIME. Revised per story direction: cannon DOES work. The ch21 demonstration (~106-108 AD) bursts deliberately as a proof-of-concept pitch for precision boring. Prize competitions in Phase C-D (106-118 AD) drive boring tolerance forward. First reliable bronze siege bombard: ~118-122 AD. Key design insight: short thick-walled bronze tube (bronze fails gradually, not catastrophically — Roman foundries already cast massive bronze objects), 6-8 inch bore, 30-40 lb stone ball, crew of 10-15, fixed position siege weapon. It works. It breaks walls. It is not mobile field artillery — but it is a cannon that functions reliably. The "no cannon a gunner can trust" phrase in ch45 current prose refers to mobile field artillery (reliable rapid-fire in open battle) which is NOT achieved — but must be revised or recontextualized to acknowledge that fixed siege bombards DO work. CH45 PROSE NEEDS REVISION to reflect this. Military cascade: Bar Kokhba Revolt (132-135 AD) uses Roman bombards at cave-fortress siege positions → ends 2+ years early, dramatically. Weight problem: a bronze bombard weighs 2,000-5,000 lbs. Slaves cannot move these efficiently. RAILS become militarily motivated, not just industrially: if you can lay temporary rail from your supply line to a siege position, you can move cannon that would otherwise require 200 men and a week. The military necessity of moving cannon is the argument that gets rails taken seriously by Roman generals. Industrial cascade: precision boring for cannon → same tolerance solves steam cylinder → same craftsmen cut better clock gears. One capability, three unlocked arcs.] thermocouple chain begun, optical semaphore proposed, Atlantic first crossing, first working bronze bombard (~118-122 AD), patent law pitched, steam pump (~118 AD Hispania first small pump; mine-commissioning emotional beat ~128 AD ch38), oil-seep investigation and kerosene (Parthian-war-period; lamp fuel; incendiary use unwritten), standardized screw threads and interchangeable parts (go/no-go gauge; supply-contract condition; cannon boring and steam cylinder benefit), industrial acids (sulfuric/hydrochloric/nitric; steel pickling, mordant, photography prep), nitroglycerin dead end (can name it from glycerol + acids; does NOT know precise ratios/temperatures/stabilization; cannot make it or direct its making; describes but cannot achieve),
+  spark-gap radio ACHIEVED IN DANIEL'S LIFETIME (Phase D; Wimshurst transmitter keyed
+  by lever; galena/cat's-whisker crystal receiver; elevated antenna; first keyed Morse
+  message received; weather-independent wireless; no power source needed at receiver)
 - Phase E (125–155): atmospheric pumps scaling, thermocouple/galvanometer operational,
   platinum sourcing attempted, encyclopedia written and secured, rubber gaskets from
   Atlantic returns, bombard deployed in Bar Kokhba (132-135 AD); ship-mounted bombard
@@ -1121,9 +1172,15 @@ table. The book ends there. Unresolved, on purpose.
   calculator (marble-adder demo; proof machines can add; Antikythera ref; successor
   project), coal gas lighting (coke byproduct; encyclopedia procedure; successor project),
   photography experiments (silver nitrate + camera obscura; faint images; fixing limit;
-  successor project), arc lighting (battery-bank carbon arc; harbor demo; generator wall
-  named), generator principle written in encyclopedia (Faraday coil-and-magnet; wire-
-  drawing and magnet-strength walls named; Ulpia assigned; successor project)
+  successor project), arc lighting (battery-bank prototype harbordemo; then generator-
+  powered arc lighting at scale once generator running), generator BUILT IN DANIEL'S
+  LIFETIME (~128–135 AD; coil-and-magnet machine on water wheel or crank; continuous
+  current; frees system from batteries; powers arc lighting at scale and telegraph/radio;
+  Ulpia leads wire-drawing and magnet-strength work; working machine seen by Daniel),
+  Morse radio relay network OPERATIONAL IN DANIEL'S LIFETIME (Phase D/E; relay stations
+  along main roads with spark-gap transmitters and crystal receivers; weather-independent
+  same-day empire-wide communication; supplements and supersedes optical semaphore for
+  long-haul bad-weather traffic; Rome–Lugdunum and Rome–Antioch chains active ~128–135 AD)
 
 *Note: All 21 technologies above appear in `Rome_98AD_Intervention_Timeline.md` and are being woven into individual chapter beats. The timeline file is the authoritative sequencing reference; this outline is the canonical narrative target.*
 

@@ -15,15 +15,21 @@ This is the binding chapter-to-Part assignment. It supersedes every older inline
 hinge label in this file. When an inline label below disagrees with this table,
 the table wins; the inline label is marked superseded.
 
-| Part   | Chapters  | Notes                          |
-|--------|-----------|--------------------------------|
-| I      | ch01–11   | Arrival through army contact   |
-| II     | ch12–22   | Dacian wars through marriage   |
-| III    | ch23–33   | Workshop peak through terror   |
-| IV     | ch34–38   | Starting over under Hadrian    |
-| V      | ch39–46   | Institutions through Hadrian's death |
-| VI     | ch47–50   | Coda of age through Daniel's death   |
-| VII / Coda | ch51–53 | Interlude, epilogue, far whisper |
+| Part   | Name (canonical)            | Chapters  | Content note (as-written)            |
+|--------|-----------------------------|-----------|--------------------------------------|
+| I      | Arrival and Survival        | ch01–11   | Arrival through army contact         |
+| II     | The Man Who Flew            | ch12–22   | Dacian wars through marriage         |
+| III    | How Far to Go               | ch23–33   | Workshop peak through terror         |
+| IV     | Too Valuable                | ch34–38   | Starting over under Hadrian          |
+| V      | Starting Over               | ch39–46   | Institutions through Hadrian's death |
+| VI     | The Ladder                  | ch47–50   | Coda of age through Daniel's death   |
+| VII / Coda | The Long Way Home (Coda) | ch51–53  | Interlude, epilogue, far whisper     |
+
+Part **names** are the canonical labels (shared with `master_outline.md` and
+`V2_REVISED_OUTLINE.md`). The "content note" describes what the chapters currently
+contain as written; where a name and its content note diverge (e.g. Part IV's name
+"Too Valuable" vs. its as-written "starting over under Hadrian" content), that gap is
+a manuscript-revision item tracked in `REVISION_DELTA.md`, not a numbering conflict.
 
 Boundary chapters (last chapter of each Part):
 ch11 (I→II) · ch22 (II→III) · ch33 (III→IV) · ch38 (IV→V) · ch46 (V→VI) · ch50 (VI→VII)
