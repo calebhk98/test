@@ -500,6 +500,17 @@ patron network. His "assets" are his knowledge and his growing Latin. The egg-ma
 beat (buying an egg? being given one?) is explicitly the loneliness image — it is
 also a financial image of zero resources: the single egg is almost everything he can
 obtain. The chapter should make his material poverty concrete without dwelling on it.
+The glass-clarity prize he will later post costs roughly a month's skilled wages — a
+real outlay even years hence, so its scale should feel significant when it is finally
+named; here it is only a distant ambition with an implicit price. The soap and the
+water-filter sketch he hands Heras are given away at no charge, with no expectation
+of return; cipher note register: "soap may take longer than numerals."
+
+**[V2] Financial detail (stream tag):**
+The soap and the water-filter are costs with no return column: given away, no fee,
+no recovery expected. The glass-clarity prize, when it eventually goes up, will cost
+something close to a month's skilled wages — a figure that will feel large before
+he is rich, and moderate after.
 
 **[V2] Cognitive edge notes:**
 The germ-framing scene is the cleanest V2 example of Daniel arguing from results
@@ -722,7 +733,19 @@ Phase A still. Daniel has no independent resources. Every experiment costs him
 materials he has to beg or scrounge. The singed hand is the price of working alone
 with inadequate equipment. The chapter should make clear that the limitation is not
 just knowledge — it is access. He needs a patron because he literally cannot buy the
-materials to work at scale.
+materials to work at scale. The sportsbook is seeded here on "six asses and an
+idea" — almost nothing invested; the house margin implicit in every line he sets
+runs above one-in-one odds, a fact he keeps to himself. The kites sold at market
+bring negligible coin ("the visibility was the point"); the rag-paper experiment
+costs only spoiled rags and time. Coal, recognized as a future forge-input, is filed
+without cost — its value is all future.
+
+**[V2] Financial detail (stream tags):**
+Sportsbook: seeded on six asses and an idea; the house margin on every line he sets
+runs better than even, a fact he keeps in cipher only. Kites at market: the coin
+is negligible — "the visibility was the point." Rag-paper experiment: costs spoiled
+rags and an afternoon; no revenue yet. Coal: filed as a future forge-input at no
+present cost; its value is entirely downstream.
 
 **[V2] Cognitive edge notes:**
 This chapter shows Daniel failing in the specific way V2 requires: not from
@@ -840,8 +863,16 @@ The balance of tech in this chapter: Daniel's previous Phase A knowledge
 Phase A transitioning to Phase B. The demonstration creates the patron relationship
 with Macer. Before this chapter ends, Daniel has been summoned to meet the man who
 owns him. This is the financial inflection point: without Macer's investment, Daniel
+
+**[V2] Financial detail (stream tag):**
+The sportsbook's soft launch runs quietly near Macer's courtyard — the other
+bookmakers near the Circus cannot identify why their volume is drifting; the margin
+runs above one-in-one odds on every line, a gap that earns more than its size and
+is never declared aloud.
 has no workshop. The demonstration is leverage — not yet converted to cash, but
-real leverage for the first time.
+real leverage for the first time. The sportsbook soft-launched near Macer's courtyard
+is already quietly profitable; the other bookmakers near the Circus do not understand
+why they keep losing to him — and that gap is the entire margin, never declared.
 
 **[V2] Cognitive edge notes:**
 Daniel knows the demonstration will work in the sense that he knows hot air rises
@@ -1091,6 +1122,25 @@ detail — Roman slaves could hold peculium (a fund of money technically owned b
 master but managed by the slave). This is Daniel's first semi-independent financial
 operation. The free-women payment scene shows that he is using his peculium for
 the anti-slavery preference even when he cannot formally manumit anyone.
+The press at this stage wastes a sheet in four — a real running cost that Tyche
+records and Daniel does not look at closely. Piecework stitching hired out costs a
+few asses a seam; small individually, visible in the column. The Brundisium
+glass-clarity prize pays out 200 sesterces — a technique he didn't know existed,
+which is its own lesson about what prize money buys. The spinning wheel he expects
+to improve output and it loses to free slave labor — a thing he thought would pay
+and doesn't; Tyche records the outcome without comment. The vernier calipers cost
+workshop time to make and yield no immediate revenue; they are a long-term asset
+whose return comes through everything they measure downstream.
+
+**[V2] Financial detail (stream tags):**
+Press R&D: wastes a sheet in four — Tyche records the loss rate; Daniel does not
+look at the column closely yet. Piecework stitching: a few asses a seam, small
+individually but Tyche can see it accumulate. Glass-clarity prize (Brundisium
+payoff): 200 sesterces out — for a technique he had no idea existed; what prize
+money buys is sometimes a surprise, not a solution. Spinning wheel: he expected
+it to reduce labor cost and it does not — free slave labor wins; Tyche files the
+outcome without remark, which is its own comment. Vernier calipers: workshop-time
+cost, no immediate revenue; the return runs through everything they measure after.
 
 **[V2] Cognitive edge notes:**
 Tyche's aptitude with the new figures is shown through a concrete calculation, not
@@ -1254,6 +1304,20 @@ funding. Celer's attention is not directly monetizable yet, but it creates the p
 to the First Dacian War contract (ch12-13) which is where Daniel's first fortune
 begins per V2_DANIEL_FINANCES §Phase A-B ("The First Balloon Contract: 800,000 HS
 total; Daniel's share ~200,000-250,000 HS").
+The contract negotiation is the leverage lesson rendered in numbers: Daniel opened
+at 12,000 sesterces; Celer had named 40,000 before Macer said 80,000. The final
+structure runs roughly 80,000 to Macer, 40,000 direct to Daniel, and a 10,000
+holding fee — about 120,000 to 130,000 in total. Marcia (when she exists) will
+reconstruct this from the documents; Daniel will not volunteer the arithmetic.
+The lesson is not the sum — it is the distance between 12,000 and what the army
+would have paid.
+
+**[V2] Financial detail (stream tag):**
+The balloon contract is the chapter's only hard number in this range: he opened at
+12k; the army would have paid 40k before Macer named 80k; the final structure is
+roughly 80k to Macer, 40k to Daniel, 10k holding — total near 120–130k. Daniel
+does not track what the leverage lesson cost him to learn; Marcia will reconstruct
+it later from the documents.
 
 **[V2] Cognitive edge notes:**
 The crossbow spanning mechanism is a textbook cognitive-edge scene: Daniel does not
@@ -1397,7 +1461,17 @@ process of being struck. Per V2_DANIEL_FINANCES §Phase A: "Daniel sent toward t
 Danube frontier with Celer to deploy tethered observation balloons. The journey
 north…" The 800,000 HS contract (Daniel's share ~200,000-250,000 HS) is the deal
 that takes him from "interesting provincial" to "man the emperor knows by name."
-This chapter is the operational deployment phase of that deal.
+This chapter is the operational deployment phase of that deal. The army pay for
+balloon operations is ongoing here — regular campaign income, not a one-off. The
+stirrup design goes to the cavalry with no fee attached, a gift to the army; Tyche
+would record this as a cost-with-no-return if she were keeping the column, which she
+is not yet.
+
+**[V2] Financial detail (stream tag):**
+Balloon work draws ongoing army pay this chapter — not a lump sum; a running
+engagement Tyche will eventually give its own column. The stirrup design is given
+to the cavalry with no fee and no expectation of return; if someone were keeping
+the column it would read as a cost.
 
 **[V2] Cognitive edge notes:**
 The Apollodorus meeting is the chapter's cognitive edge showpiece. Daniel recognizes
@@ -1522,7 +1596,13 @@ not Daniel's employee. But it costs him politically: this is the moment that beg
 to complicate his relationship with the army. The 800,000 HS contract is already
 struck or in process; the disaster may delay payment or complicate renegotiation.
 Note for continuity: the financial terms of the balloon contract should be
-referenced somewhere in ch12-14 to establish the baseline.
+referenced somewhere in ch12-14 to establish the baseline. The balloon work
+continues to draw ongoing army pay through this chapter; that income runs in the
+background without being totaled.
+
+**[V2] Financial detail (stream tag):**
+The disaster does not appear on the cost side in any column Daniel keeps — Sabinus
+was the army's man. The balloon pay continues; what it costs him is not money.
 
 **[V2] Cognitive edge notes:**
 The death is the moment where Daniel's cognitive edge is most catastrophically
@@ -1621,7 +1701,14 @@ either in hand or pending final payment. He is now financially independent from
 Macer's personal household — not yet rich, but able to fund his own small
 experiments. The chapter's financial texture is the knowledge that he has first-
 money and what to do with it: not spend it on pleasures, not hoard it, but put it
-back into the workshop for Phase B work.
+back into the workshop for Phase B work. The balloon program continues as ongoing
+army pay through this chapter — not a lump sum but a running engagement; Tyche will
+eventually have a column for it.
+
+**[V2] Financial detail (stream tag):**
+The balloon work runs as a background income line — campaign pay, not a sum he
+has counted. He takes what arrives from the contract and puts it back into the
+workshop; the total is not yet a figure he tracks.
 
 **[V2] Cognitive edge notes:**
 The two conversations (Heras, Celer) that stay in subtext are the chapter's emotional
@@ -1761,7 +1848,19 @@ fund the steel program as a parallel R&D track. The failed batches cost money �
 charcoal, ore, Hermes's time — but Daniel can absorb this. The steel work is the
 highest-priority Phase C investment because everything downstream (steam pump,
 better cannons, marine chronometer) requires better steel. The chapter should make
-the economic stakes of the steel problem clear without belaboring them.
+the economic stakes of the steel problem clear without belaboring them. The lens
+prize posted here costs roughly a year's skilled wages — the largest prize outlay so
+far, more than the earlier glass-clarity prize by the distance between one month and
+twelve. The Baghdad battery, barometer, Wimshurst machine, and thermometer are
+expenses against future income: useful tools or seeds, but no revenue in this
+chapter; Marcia would file them as sunk R&D with no return yet visible.
+
+**[V2] Financial detail (stream tags):**
+Lens prize: posted at roughly a year's skilled wages — twelve times the earlier
+glass-clarity prize; the largest single prize outlay yet, and still a cost not a
+return. Baghdad battery, barometer, Wimshurst machine: all outlays against future
+programs; no revenue column yet. Marcia, if she were keeping the chapter, would
+write "sunk" beside each one and say nothing.
 
 **[V2] Cognitive edge notes:**
 Daniel knows steel works — he knows what good steel looks like, what it can do.
@@ -1911,6 +2010,17 @@ rational investment: it creates content for the press, distributes the numerals,
 builds his cultural standing. Daniel should think about the economics of the contest
 briefly — not a lecture, but the calculation visible in his thinking.
 
+**[V2] Financial detail (stream tags):**
+Cards, chess, lottery seeds: ambient income that "doesn't move the column" — Tyche
+might note a card-run or a game in the same breath as an ink order, the volume
+implied and never totaled. Camera obscura: he builds it, it works, and he cannot
+name a revenue column for it — "I'm not entirely sure yet" applies to the money
+as much as the purpose. Gnaeus tavern partnership: a small cut, or no direct
+attribution — Daniel supplies the ideas; Gnaeus supplies the customers; the
+arrangement is verbal and informal. Phonograph concept: filed; the commercial
+model (keep the cutter, sell the cylinders) is clear to him; for now it is a
+prize spec for smooth formable sheet with no revenue attached.
+
 **[V2] Cognitive edge notes:**
 The salon parry ("Call me a charlatan when the children stop dying") is the cleanest
 example of arguing from results rather than mechanism. Crispus attacks the theory
@@ -2051,6 +2161,12 @@ V2_DANIEL_FINANCES §Phase B: "Worth at age 21 (102 AD): Personal holdings: 150,
 roughly 200,000-400,000 HS in personal holdings. The citizenship is not about money
 — it's about the protection it provides and the legal capacities (will, marriage)
 it opens.
+
+**[V2] Financial detail (stream tag):**
+The manumission has a price, though Trajan's imperial grant removes the ordinary
+purchase mechanism — the cost is political rather than monetary, and the sum is
+never named. Daniel does not track what his freedom cost or what he now owes; that
+arithmetic belongs to other people.
 
 **[V2] Cognitive edge notes:**
 The Trajan meeting is a cognitive-edge stress test. Trajan is "soldierly, practical,
@@ -2198,6 +2314,16 @@ contract phase. His personal wealth is mid-equestrian range, growing. The Dacian
 gold that floods Rome after the campaign is historical and is background color — it
 doesn't directly affect Daniel's finances but it enriches the empire that is his
 patron.
+
+**[V2] Financial detail (stream tags):**
+Spyglass (~5x): first on-page test; the glass-prize chain starting to produce
+something a wealthy man might pay for — a saleable luxury, not yet a revenue line,
+but the shape of one is now visible. Balloon archers: operational military doctrine
+by this chapter; the recurring value to the army (envelopes wear, rigs are
+replaced, operators must be trained) is what makes the balloon business recurring
+rather than a one-off — this chapter is where that permanence becomes apparent, even
+if the future revenue is not yet quantified. Daniel does not add up what the archers
+cost him to field; someone else carries that column.
 
 **[V2] Cognitive edge notes:**
 The water-supply sabotage is Daniel's most morally ambiguous cognitive-edge use.
