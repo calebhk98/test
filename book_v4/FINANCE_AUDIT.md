@@ -150,3 +150,65 @@ trail a determined reader can follow, not a balance sheet.
   totals. The mixed units are themselves part of the puzzle.
 - Let **scale signals** (payroll counts, bearer numbers, perpetual rent-shares, the fortress
   deed) carry the late-book wealth instead of a stated net worth — they already do this well.
+
+---
+
+# Part II — Per-Product Unit Economics (R&D / cost / price / profit)
+
+This part answers the sharper question: for each invention, does the prose show its
+**R&D cost, ongoing labor+materials cost, sale price, and margin** — and the *causal*
+links (e.g. profit rising once the looms cut his linen cost)? Source: a per-stream sweep
+of the relevant chapters.
+
+**Headline answer: the book does NOT track product-level unit economics.** For almost
+every stream you get at most one or two of the four dimensions, never all four, and a
+**margin is essentially never stated**. The recurring motif is that Daniel himself does
+*not* track his profit — in ch22 Marcia asks "what do you make in a year, clear?" and he
+**"could not answer it"**; Tyche later computes it is "smaller than I'd have guessed" but
+**the number is withheld from the reader.** So today you can see the *shape* of his wealth,
+not the *sum*.
+
+## The matrix
+
+| Stream | R&D cost | Ongoing cost (labor/materials) | Sale price | Profit/margin | Cross-tech link | Reader can compute? |
+|--------|----------|-------------------------------|-----------|---------------|-----------------|---------------------|
+| **Balloon** | relative ("a year of burned cloth") | piecework "a few asses a seam"; linen by the bolt | **HARD: ch11 contract 120k HS (40k direct + 10k holding)** | NOT SHOWN | one-way (glass disc → signaling) | No — one-time contract, no per-unit cost or recurring revenue |
+| **Gunpowder/cannon** | relative (Geta's hand; 2 yrs niter; 100-denarii boring prize) | Geta lifetime wages; sulfur "under another name"; "forge swallowing money" | **NOT SHOWN (never sold — strategic)** | NOT SHOWN | **STRONG** ("one prize, three doors": bore = cylinder = clock gears; steel gates all) | No — it's a catalyst, not a profit center |
+| **Press/paper/contest** | relative ("waste a sheet in four") | Eros "by the month"; ink/pearwood; **prize payouts 100–400 denarii; ch43 crunch 700 owed vs 143** | "an as or two" a sheet; primer 2 asses; **imperial paper-deal value NOT SHOWN** | NOT SHOWN (ch33 "press income for the quarter… a total I counted twice" — large but **unquoted**) | **STRONG** (paper→press→cards→contest→press) | No — one quarter teased, never numbered |
+| **Textiles/looms** | NOT SHOWN | piecework rate; the slave-vs-free arithmetic note (ch10) | NOT SHOWN | NOT SHOWN | **MISSING — the loom→cheaper-linen→cheaper-balloon chain you cited is not on the page** | No — and the automation profit-bump doesn't exist in prose yet |
+| **Optics/spyglass** | **HARD-ish: prize = 1 month then 1 year skilled wages** | Demetrios's wage; "glass full of ghosts" | **relative: "a senator's wife paid more for a blurry tube than Demetrios earned in a season"; a dozen sold** | NOT SHOWN (but price and a labor-cost unit are both present — closest to a derivable margin) | weak | Almost — you have price *and* a cost in the same unit; only the explicit margin is missing |
+| **Gambling** | "six asses and an idea"; room rented; 2 counters hired | counters' wages (not quantified) | the >100% house-margin **mechanism**, no volume | "the money went into the contest" (qualitative) | press→cards/lottery; gambling→funds contest | No — mechanism shown, magnitude never |
+| **Steam/mine** | relative (2 yrs; leaky pump; patronage fund for failure) | NOT quantified (fuel/labor) | **NOT SHOWN — no ore value, no drainage-contract HS** | NOT SHOWN | **STRONG** (boring prize→cylinder; "rubber changed what the steam pumps could do") | No — "the pump runs," but zero figures |
+| **Figures/bookkeeping** | Eros piecework | press waste | sheets 2 asses; **licensing "hers to license" but unquantified; "figures cost me nothing to give"** | NOT SHOWN | figures→press, →treasury (Eudemus) | No — mostly **given away**, not a revenue line |
+| **Food (Gnaeus)** | NOT SHOWN | NOT SHOWN | **NOT SHOWN — sold as anonymous "house pasta," Daniel paid nothing on the page** | NOT SHOWN | none | No — effectively **given away** (outline says "a small cut"; prose shows none) |
+| **Water filters** | soap/iteration | labor not costed | "cheaper than this man's dinner"; public fountains free | NOT SHOWN | hygiene ecosystem | No — **given away**; a health beat, not income |
+| **Atlantic/ocean** | "a cost he named and would not pass"; yard "bought into"; sea-clock prize purse | "years and money"; per-season grant | qualitative: "tobacco, rubber, resins… value proven in the counting-house" | **framed, not numbered**: imperial phase = prestige **loss-leader** ("never a project that paid") → re-engineered as merchant **profit center** via the prospectus | **STRONG** (rubber→pumps; crops→food; prospectus/double-entry→investor funding) | No — direction is explicit, magnitudes are not |
+
+## Direct answers
+
+- **Do we see profit per tech?** No. We see *prices* for a few things (the balloon contract;
+  the spyglass relative to a season's wage; sheets at an as), *costs* as relative texture or
+  prize amounts, and **margin for nothing**. No product has all four dimensions.
+- **Does profit visibly rise after the automated looms?** No — that exact chain is absent.
+  The looms are in the *outline* (ch26) but not realized in prose, and the
+  linen-cost→balloon-cost link is never drawn. This is the clearest miss vs. your vision.
+- **If the book stopped at 40, could a reader compute his yearly income?** **No — not from
+  product P&L.** You could only *bound* it from aggregate/relative anchors (the 40k contract;
+  "40k was most of everything" at ~26; "more money than I knew how to hold" in his 30s; the
+  unquoted "quarter I counted twice"; the late institutional scale). A determined reader gets
+  a rising curve with a few pinned points, not an income statement — and the book pointedly
+  **withholds the annual total** (Daniel can't answer it; Tyche won't say it on the page).
+
+## If you want true reconstructability — the minimal, on-theme fix
+
+Keep the "Daniel doesn't count it" motif, but let the people who DO count it leak **one rate
+per major stream**, oblique, across the book — enough that a YouTuber can triangulate:
+1. **Resolve Marcia's "what do you make in a year, clear?" once** — have Tyche state a single
+   annual clear-profit figure at one point (~ch33 or ch38). That one number anchors everything.
+2. **Press:** pin the "quarter I counted twice" to an order of magnitude once (via Eudemus or Marcia).
+3. **Balloon:** a renewal/retainer or per-rig figure (currently only the one-time contract).
+4. **Mine/steam:** the drainage-contract value or the mine's annual ore worth (currently zero).
+5. **Looms:** actually write the loom→linen-cost-down→balloon-cheaper chain — the example you want.
+6. **Spyglass:** it's one clause from a margin already — add "which cost me X to make."
+Keep each to a single comparative breadcrumb; never a full ledger. The goal stays "solvable
+with effort," not "stated."
