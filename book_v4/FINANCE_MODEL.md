@@ -18,12 +18,12 @@ legionary ≈ 1,200 HS/yr; equestrian census 400,000 HS; senator 1,000,000 HS. M
 |------|--------|------|----------------------------|
 | 1 — hidden engine | **Mine drainage (steam pumps)** | the quiet bulk of the late fortune; structured invisible via Caepio's shipping invoices | **~600k–1M+ HS/yr** (8+ pumps, ~97% margin) |
 | 1 — visible engine | **Paper + press + contest** | the famous, public money-maker; built the early-to-mid fortune | **~150k–300k+ HS/yr** (after imperial paper deal + 3 mills) |
-| 3 | **Balloon program** | front-loaded contract, then plateau; mainly political entrée + leverage lesson | ~15k–50k/yr maintenance |
-| 3 | **Hydrogen (torch lease + lift)** | mid-tier; only scales once the generator zeroes marginal cost | ~70k–130k/yr |
-| cost center | **Gunpowder / cannon** | **net cost** (~150k–250k lifetime) bought back as political insurance + the boring-prize that unlocked the pump | NEGATIVE |
-| negligible | Gambling / spyglass / games / food | real but minor; mention in passing | a few k–~100k early, small share later |
+| 2 — secret state monopoly | **Gunpowder + cannon** | early R&D is a sunk cost, but once the bombard works (~118–122) Rome pays to break walls and **cannot make its own** — Daniel keeps recipe + ingredient-sourcing secret (profit AND counter-espionage), sole vendor of cannon + the *consumable* powder. Lucrative **and** dangerous (this is exactly what Scaeva wants to seize). | **~100k–400k/yr in active-war years**, less in peace; + political insurance |
+| 2 — recurring | **Balloon program** | the ch11 contract is only the *first* sale; the army fields **many** rigs (≈2 per legion across ~25–30 legions), replaces worn envelopes every few seasons, equips ocean ships, then pays again for the **hydrogen-lift upgrade**. The workshop keeps the envelope-treatment / gas know-how, so the army keeps buying. | **~50k–150k/yr** ongoing, spiking in upgrade & war waves |
+| 3 | **Hydrogen (torch lease + lift)** | mid-tier; scales once the generator zeroes marginal cost; overlaps the balloon-upgrade revenue | ~70k–130k/yr |
+| negligible | Gambling / games / food | real but minor; mention in passing | small share (but see the lottery question in §9) |
 
-The craft point: **the press is famous because it's visible; the mine is bigger because Marcia made it invisible.** Gunpowder never pays — and that's the honest, on-theme story (he eats the cost for leverage and for the one prize that opened three doors).
+The craft point: **the press is famous because it's visible; the mine is bigger because Marcia made it invisible.** Two streams are *monopolies protected by secrecy* — the powder/cannon (recipe withheld for profit and to deny spies) and the balloon-envelope/hydrogen know-how — which is why the army keeps paying Daniel instead of replicating him. (Note: these figures are designed fresh and need NOT match the current draft's guesses — the prose will be revised to the model.)
 
 ---
 
@@ -33,11 +33,13 @@ The craft point: **the press is famous because it's visible; the mine is bigger 
 
 **Mine drainage (steam pumps).** Daniel buys the **flooded, abandoned Hispanian gallery for almost nothing** (worthless after 11 years underwater), drains it with the pump as his price of entry, then runs a **service-contract model** (10–15% of gross ore, ~97% margin). One gallery ≈ 100–300k HS/yr to him; **8 pumps across the empire by ~128 AD** ⇒ ~600k–1M+/yr. Rubber gaskets (from the Atlantic program, ch46) ~double pump uptime and widen the viable market. Routed through Caepio's as shipping income to stay invisible to a confiscating prefect.
 
-**Balloon.** The ch11 contract is the spike: **80k to Macer + 40k direct to Daniel + a 10k holding fee** (treat total as ~120–130k; the holding fee is the army's good-faith advance to stop him selling elsewhere). He opened at 12k when the army would pay 40k+ — *the leverage lesson*. Then it plateaus to a ~25–50k/yr maintenance/improvement retainer; the army absorbs the tech. Cheaper workshop linen (looms) quietly improves his margin exactly when the big fees stop.
+**Balloon (recurring, not a one-off).** The ch11 contract is just the *first* sale: **80k to Macer + 40k direct to Daniel + a 10k holding fee** (~120–130k total; he opened at 12k when the army would pay 40k+ — *the leverage lesson*). After that it is a **standing manufacturing/supply business**, because the army does not field one balloon — doctrine is ~2 rigs per legion across ~25–30 legions (≈50–60 rigs), the treated-linen envelopes **wear out and are replaced every 2–3 seasons**, every ocean expedition carries rigs (the M4 standing note: 2 per ship), and then the whole fleet is **re-bought as hydrogen-lift conversions**. The army can train its own operators, but Daniel's workshop keeps the **envelope treatment and (later) the hydrogen apparatus** as trade know-how, so the recurring spend flows to him. Realistic ongoing ~**50k–150k/yr**, spiking during the hydrogen-upgrade wave and active wars; cheaper workshop linen (looms) widens the margin. Tier 2, recurring — not the plateau I first modeled.
+
+**Gunpowder + cannon (secret state monopoly — a profit center, not a cost).** The early program *is* a sunk cost (Geta's wages, 2 yrs of niter beds, failed casts). But once the reliable bronze siege bombard works (~118–122), the economics flip: **Rome pays to break walls, and cannot make its own**, because Daniel withholds the powder recipe and quietly controls the saltpeter/sulfur sourcing — secrecy that serves *both* profit (he's the sole vendor) *and* counter-espionage (no formula for a Parthian spy to carry off). So the state pays him: per cast bombard (an expensive bronze piece), and — the recurring part — per **keg of powder**, a consumable every siege and campaign burns through. During active wars (Parthian, Bar Kokhba, frontier sieges) this is a large munitions contract; in peace it's stockpiling + a trickle of quarry-blasting powder. Estimated ~**100k–400k/yr in war years**, lower in peace. The catch is the catch the book already has: a private monopoly on the empire's strongest weapon makes Daniel indispensable *and* a target — which is precisely the Scaeva pressure ("point the powder"), now with a clear economic engine under it.
 
 **Hydrogen.** Oxy-hydrogen torch leased by the service-day (~40–80 HS/day); ~11–20k/yr early, ~70–130k/yr at mature Phase E once the **generator** makes current ~free. Hydrogen-lift balloons need a gas-tight envelope — solved by **Atlantic rubber** (closes the ch24 prize). Theme: the torch is *sold* (needs his operators + consumables) while the water filter is *given away* (anyone can carry it) — a clean character line.
 
-**Gunpowder / cannon.** Cost only: Geta's lifetime wages, 2 yrs of niter beds, sulfur "under another name," a denarius/load customs bribe, Hermes's forge "one batch in four." No commercial sale (small quarry-blasting powder aside). What it buys: (1) **political insurance** — too strategically valuable for Trajan/Hadrian/Antoninus to discard; (2) the **100-denarii boring prize** that simultaneously unlocked the cannon bore, the **steam-pump cylinder**, and clock gears. The negative that paid for the biggest positive.
+*(Gunpowder/cannon is modeled above, between Paper and Balloon — moved up because it is now a monopoly profit center, not a cost line.)* The R&D still buys two things beyond the later munitions revenue: **political insurance** (too strategically valuable for Trajan/Hadrian/Antoninus to discard) and the **100-denarii boring prize** that simultaneously unlocked the cannon bore, the **steam-pump cylinder**, and the clock gears — the one prize that opened three doors.
 
 ---
 
@@ -52,7 +54,7 @@ The craft point: **the press is famous because it's visible; the mine is bigger 
 | ~57 (ch44) | total ~8–15M (Pliny-tier) | press ~250–400k + **mine ~600k–1M** | mills at scale + 8-pump mine empire |
 | ~74 (death) | **50–100M** incl. endowments, property, mill value, mine contracts | — | matches the V2_DANIEL_FINANCES terminal figure |
 
-This is steep (40k → millions in ~15 yrs) but defensible: a printing near-monopoly + a drained-mine service monopoly are exactly the kinds of engines that compound that fast.
+This is steep (40k → millions in ~15 yrs) but defensible: a printing near-monopoly + a drained-mine service monopoly are exactly the kinds of engines that compound that fast — and on top of those, the **secret munitions monopoly** (powder/cannon) and the **recurring balloon-supply business** add large spikes in the war years (Parthian ~115–117, Bar Kokhba ~132–135), which is also when Daniel is most politically exposed. Four monopolies, three of them protected by secrecy or know-how, one (the mine) hidden by Marcia's bookkeeping.
 
 ---
 
@@ -126,7 +128,8 @@ Each is a comparative/withheld-total line in the book's voice. **Hard figures ap
 
 - Press net: ~55–70k (ch33) → **~200k (ch38)** → ~250–400k (ch44). [the ch38 200k is the one stated on-page]
 - Mine: ~100–300k/yr per gallery; **~600k–1M/yr at 8 pumps**; service-fee 10–15% of gross ore.
-- Balloon contract total: **~120–130k** (80 Macer / 40 Daniel / 10 holding).
+- Balloon: first contract ~120–130k, **then ~50–150k/yr recurring** (rigs + replacements + ocean rigs + hydrogen-upgrade wave) — not a plateau.
 - Hydrogen: ~70–130k/yr only at mature Phase E.
-- Gunpowder: **net −150–250k lifetime** (cost center).
+- Gunpowder/cannon: early R&D a sunk cost, **then a secret state monopoly ~100–400k/yr in war years** (per-cannon + consumable powder), less in peace.
 - Terminal estate: **50–100M HS**.
+- [Pending the two revenue-sweep agents: whatever they surface as overlooked big earners — eyeglasses, kerosene lamp-fuel, coal-gas lighting, steam-for-hire, telegraph contracts, a state lottery — will be added here.]
