@@ -228,6 +228,8 @@ If the pump opens a flooded ore section worth 500,000 sestertii per year in silv
 | 130–145 | Higher-pressure design (moves toward Watt atmospheric separator) | Needs better castings and valve work |
 | 145–155 | Proto-Watt engine with separate condenser | Requires precision boring — 3–4x efficiency gain |
 
+> **CANONICAL STORY DATES NOTE (master_outline correction):** The timeline above represents the optimistic feasibility ceiling — the earliest these milestones are achievable under ideal conditions. The authoritative story schedule is more conservative: the first small-scale working pump is ~**118 AD** (Hispania silver mine); the mine-commissioning milestone where Daniel sees the full industrial drainage loop running without him is ~**128 AD** (ch38). References to 108–115 AD in this table describe the upper bound of what is technically possible, not what happens in the novel. Do not use the 108–115 AD dates for in-story events.
+
 **Watt-class feasibility in Daniel's lifetime**: Marginal. The key Watt innovation — a separate condenser (steam never condenses in the working cylinder, so no cooling/reheating cycle) — only requires an additional vessel and valve, not new materials. Daniel knows this principle. If his boring and casting quality is good enough by 130–140 AD, a Watt-type improvement is plausible in his last decade.
 
 ### The Precision Bootstrapping Loop
@@ -278,7 +280,7 @@ The loop starts with the thermocouple (Daniel describes: twist two different wir
 
 **Spyglass (MAXIMUM)**: The military payoff is so immediate and so visible (show Trajan a working 8x spyglass during the Dacian Wars) that this buys imperial patronage for decades. The glass improvement program also pays dividends for optical instruments, lenses for fire-starting, and eventually scientific work.
 
-**Steam pump (MAXIMUM)**: The economics are irresistible. Every flooded mine in the empire is a potential customer. The first working installation creates a revenue stream that funds everything else. Daniel should be working on boiler design by 100 AD and aiming for a demonstration pump by 105–108 AD.
+**Steam pump (MAXIMUM)**: The economics are irresistible. Every flooded mine in the empire is a potential customer. The first working installation creates a revenue stream that funds everything else. Daniel should be working on boiler design by 100 AD and aiming for a demonstration pump by 105–108 AD. *(Feasibility ceiling only — canonical story date for first working pump is ~118 AD; see note in Steam Engine timeline above.)*
 
 **Gunpowder (CONDITIONAL)**: Daniel knows the approximate formula (75% potassium nitrate, 15% charcoal, 10% sulfur). Sulfur is widely available in Roman Italy (volcanic sources). Charcoal is trivial. Potassium nitrate (saltpeter) is the constraint — it occurs naturally at nitrate-rich soil deposits (stables, bat caves, certain soils) and can be extracted by lixiviation (pouring water through the soil, evaporating). Daniel knows this process. The question is whether he wants to hand this to Rome. If yes: working gunpowder within 3–5 years of effort. The military value is enormous but the political risk is also enormous — it changes the balance of power between the emperor and everyone else in ways Daniel may not want.
 
