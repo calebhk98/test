@@ -8,6 +8,34 @@ reader already has. Reviewers CHECK against it.
 
 Format: `[chNN] fact`. Keep facts atomic and specific.
 
+---
+## CANONICAL STRUCTURE NOTE — 7-PART SCHEME (AUTHORITATIVE)
+
+This is the binding chapter-to-Part assignment. It supersedes every older inline
+hinge label in this file. When an inline label below disagrees with this table,
+the table wins; the inline label is marked superseded.
+
+| Part   | Name (canonical)            | Chapters  | Content note (as-written)            |
+|--------|-----------------------------|-----------|--------------------------------------|
+| I      | Arrival and Survival        | ch01–11   | Arrival through army contact         |
+| II     | The Man Who Flew            | ch12–22   | Dacian wars through marriage         |
+| III    | How Far to Go               | ch23–33   | Workshop peak through terror         |
+| IV     | Too Valuable                | ch34–38   | Starting over under Hadrian          |
+| V      | Starting Over               | ch39–46   | Institutions through Hadrian's death |
+| VI     | The Ladder                  | ch47–50   | Coda of age through Daniel's death   |
+| VII / Coda | The Long Way Home (Coda) | ch51–53  | Interlude, epilogue, far whisper     |
+
+Part **names** are the canonical labels (shared with `master_outline.md` and
+`V2_REVISED_OUTLINE.md`). The "content note" describes what the chapters currently
+contain as written; where a name and its content note diverge (e.g. Part IV's name
+"Too Valuable" vs. its as-written "starting over under Hadrian" content), that gap is
+a manuscript-revision item tracked in `REVISION_DELTA.md`, not a numbering conflict.
+
+Boundary chapters (last chapter of each Part):
+ch11 (I→II) · ch22 (II→III) · ch33 (III→IV) · ch38 (IV→V) · ch46 (V→VI) · ch50 (VI→VII)
+
+---
+
 ## Standing facts seeded by the bible (treat as already true)
 - Protagonist: Daniel "Danny" Mercer, 17 in 98 AD, American high-schooler,
   hardware-store job, good at math, average elsewhere, sci-fi reader. Narrator,
@@ -132,6 +160,8 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
 - [ch05] Workshop water-boy: STICHUS (~10), a slave/servant of the household.
 - [ch05] Daniel conceives the hot-air balloon (knows hot air rises) but it is
   unnamed, unbuilt, with no engineering worked out yet. End of Part I setup.
+  [Note: "Part I setup" here is an early-arc marker only — Part I formally ends
+  after ch11 per the canonical 7-part scheme; see STRUCTURE NOTE above.]
 - [ch06] Spring 99, Daniel ~18, ~1 year since arrival, still unfree. His logic for
   the balloon: cheap, his own, unarguable ("you cannot call a man a liar about the
   sky"). He notes the numerals and germ-talk both got waved away; a flying thing
@@ -281,6 +311,8 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
 - [ch11] Army UNDETERRED: Celer confirmed the principle works ("saw the far
   bank") and wants a retry with a smaller fire and a longer basket. Macer pleased.
   Daniel's invention has now drawn blood from someone other than himself.
+- [END OF PART I — ch11 is the last chapter of Part I (ch01–11). Part II opens
+  with ch12. See STRUCTURE NOTE.]
 
 - [ch12] 101 AD, Daniel 20, a slave-on-loan to the army under Celer at the Danube
   frontier (First Dacian War). He rode north up the Via Flaminia inside Trajan's
@@ -340,7 +372,8 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   never / as long as I live" become a per-chapter tic. Future writers: use sparingly.
 
 - [ch14] 102 AD, Daniel ~21, still a slave on loan, returned to Rome and the wharf
-  yard. END OF PART II. The First Dacian War ends as a CLIENT-KING PEACE (Decebalus
+  yard. [part-label superseded — see STRUCTURE NOTE; this chapter is mid-Part II
+  (ch12–22); END OF PART II falls after ch22]. The First Dacian War ends as a CLIENT-KING PEACE (Decebalus
   keeps his head and hills, returns engineers/standards/deserters, razes some
   forts); soldiers feel relief and anticlimax, no triumph; the flux follows them
   south and still kills. (Dacia is NOT yet annexed - that is the Second War,
@@ -355,7 +388,8 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   Respect-bond intact; they never say Sabinus's name.
 - [ch14] NASO came south with the baggage (kept on mule duty via Daniel's quiet
   word to the optio Saturninus); his ankle never set true; ruined left hand.
-- [ch14] DECISION / PART II->III HINGE: Daniel resolves to use the inch of choice a
+- [ch14] DECISION [part-label superseded — see STRUCTURE NOTE; the II→III boundary
+  falls after ch22, not ch14]: Daniel resolves to use the inch of choice a
   slave has, favoring what SAVES (clean water/filtration, medicine) and dragging
   his feet on weapons. SPECIFIC thing he chooses NOT to build yet: gunpowder / the
   powder weapon (the "white salt + charcoal + third thing" he wrote "???" for in
@@ -368,8 +402,9 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   filter (gets the layer order wrong twice - honest failure; he knows sand does NOT
   sterilize, so boiling is still required), Tyche bringing bread, the wharf waking.
 
-- [ch15] Spring 103 AD, Daniel ~22, still Macer's slave at the wharf yard. PART III
-  opens. His sand/charcoal/gravel WATER FILTER now clears water (still requires
+- [ch15] Spring 103 AD, Daniel ~22, still Macer's slave at the wharf yard.
+  [part-label superseded — see STRUCTURE NOTE; this chapter is mid-Part II (ch12–22);
+  Part III opens at ch23]. His sand/charcoal/gravel WATER FILTER now clears water (still requires
   boiling; Heras frames the method publicly as "Greek wisdom" to make it
   acceptable). Water/medicine work is active and succeeding.
 - [ch15] GAIUS JULIUS HERMES introduced: a freedman blacksmith, past 40, iron-gray,
@@ -567,7 +602,10 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   (freedman to freedwoman); MARCIA proposed; witnesses Heras, Pamphilus + wife,
   Tyche. PLANT: freeborn children to come; Marcia knows Tyche reads the English
   cipher and approves it as the work's survival.
+- [END OF PART II — ch22 is the last chapter of Part II (ch12–22). Part III opens
+  with ch23. See STRUCTURE NOTE.]
 
+- [PART III OPENS — ch23–33. See STRUCTURE NOTE.]
 - [ch23] 109-110 AD, Daniel ~28-29, imperial freedman; Marcia now runs the books;
   Tyche (~24) is learning the English cipher. THREE HONEST FAILURES:
   (1) CLOCK - he cannot build a mechanical clock (the escapement is a memory gap;
@@ -587,8 +625,9 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   books" as rungs to leave for others (strengthens the encyclopedia thread). New
   minors: DEMETRIOS (glass cutter/lens grinder), MAXIMUS (stonecutter/quarry owner).
 
-- [ch24] ~110 AD, Daniel ~29, imperial freedman, at the PEAK PLATEAU (END OF PART
-  III). State: ~11 people on wages (plus piecework wharf-women and carters); the
+- [ch24] ~110 AD, Daniel ~29, imperial freedman, at the PEAK PLATEAU.
+  [part-label superseded — see STRUCTURE NOTE; this chapter is mid-Part III
+  (ch23–33); END OF PART III falls after ch33]. State: ~11 people on wages (plus piecework wharf-women and carters); the
   press still wastes ~1 sheet in 4 and outproduces all of Rome's prior writing;
   Hermes's forge is funded by great men since the burst cannon; the water filter is
   in 2 public fountains; the non-working spyglass still sells. Market toys now
@@ -619,7 +658,8 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   is now a grown man (no longer the coal-pot boy), working at the yard.
 
 - [ch25] Winter ~110-111 AD, Daniel ~29-30, imperial freedman at the wharf yard.
-  PART IV opens. Marcia's SON is born, healthy, but UNNAMED through the chapter
+  [part-label superseded — see STRUCTURE NOTE; this chapter is mid-Part III
+  (ch23–33); Part IV opens at ch34]. Marcia's SON is born, healthy, but UNNAMED through the chapter
   (Roman custom: named on the ninth day; a gold bulla is prepared; the naming is
   set for the day after Vibenius's visit). NO name given on the page yet (log it
   when a later chapter names him). Marcia ran the books from her childbed.
@@ -814,8 +854,10 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   scramble is ch31). No new named characters (Attianus is historical). No tech state
   changes. Divergence ledger still EMPTY. Phone relic appears mid-chapter only.
 
-- [ch31] Late 117 into early 118 AD, Daniel ~36, imperial freedman. CLOSES PART IV
-  (the vacuum). Daniel reached Rome via a ~5-week grain-hull passage from a Cilician
+- [ch31] Late 117 into early 118 AD, Daniel ~36, imperial freedman.
+  [part-label superseded — see STRUCTURE NOTE; this chapter is mid-Part III
+  (ch23–33); Part III closes after ch33, Part IV opens at ch34]. (Thematically:
+  the vacuum.) Daniel reached Rome via a ~5-week grain-hull passage from a Cilician
   port to Puteoli, then up the road by hired mule (carries Celer's strap). CHANGED
   CITY: extra Guard watching faces at the gates; markets loud-then-silent; the
   bread-woman won't gossip; impiety/sedition graffiti limed over; the new emperor's
@@ -840,14 +882,18 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   recurs, STILL unconnected. CLIFF ENDING: Daniel on a roof-rail looking east up the
   road at an unarrived reign (NOT the phone relic). History tracks real events; NO
   divergence (ledger empty).
-- [STRUCTURE NOTE] PART IV/V BOUNDARY: ch31 (late 117-early 118, the vacuum) closes
-  Part IV; ch32 (Hadrian proclaimed / the new reign) opens Part V. The year 117-118
-  straddles the seam, so both Part headers and the timeline touch it - this is
-  intentional, not a contradiction. Part IV = the fall of Daniel's Trajan-era world;
-  Part V = starting over under Hadrian.
+- [STRUCTURE NOTE — SUPERSEDED] The old PART IV/V BOUNDARY note (ch31 closes Part IV;
+  ch32 opens Part V) reflected an earlier chapter grouping and is superseded by the
+  canonical 7-part scheme; see STRUCTURE NOTE at the top of this file. Under the
+  canonical scheme, ch31 and ch32 are both mid-Part III (ch23–33); the III→IV
+  boundary falls after ch33, and the IV→V boundary falls after ch38. The thematic
+  reading (ch31 = the vacuum; ch32 = the new reign) remains accurate as story
+  description, but the Part labels have changed.
 
 - [ch32] Spring ~118 AD, Daniel ~36 (twenty years in this world since spring 98 -
-  use TWENTY from 118 on), imperial freedman in Rome. OPENS PART V. THE GREAT
+  use TWENTY from 118 on), imperial freedman in Rome. [part-label superseded — see
+  STRUCTURE NOTE; this chapter is mid-Part III (ch23–33); Part IV opens at ch34].
+  THE GREAT
   REVERSAL reaches Rome (first via an Aemilian-bridge fish-seller): HADRIAN abandons
   Trajan's eastern conquests (Armenia, Mesopotamia, Assyria), pulling the border back
   to the river. Conquest party appalled; "sound generalship" the official line.
@@ -905,7 +951,10 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   moved under "MARCIA, liberta, widow of Caepio" - going invisible to survive. Closing
   image: Lucanus (~6) counting figures against his arm; a room "about the size of a
   cell" (callback to ch02). No new named characters; no tech-state changes.
+- [END OF PART III — ch33 is the last chapter of Part III (ch23–33). Part IV opens
+  with ch34. See STRUCTURE NOTE.]
 
+- [PART IV OPENS — ch34–38. See STRUCTURE NOTE.]
 - [ch34] Autumn-winter ~118 AD, Daniel ~37, imperial freedman in Rome (Hadrian now in
   the city; the debt-cancellation in force). THE GRIND of starting over: Daniel
   abandons the senators and courts low fiscal functionaries and procurators' freedmen,
@@ -1046,7 +1095,7 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
 
 - [ch38] ~127 AD, Daniel ~46 (NOTE: year locked at 127 to reconcile a draft age/date
   conflict - Daniel "six-and-forty," the Four Consulars "nine years dead," daughter age
-  9 born ~late 118 all agree at 127). CLOSES PART V; hinges into Part VI. Hadrian (~51)
+  9 born ~late 118 all agree at 127). CLOSES PART IV; hinges into Part V. Hadrian (~51)
   is the traveling/building emperor (Britain wall, the Rhine, the round temple in Rome),
   mostly away; the terror is nine years behind; Daniel is "useful, leashed, let alone."
 - [ch38] OCEAN PROGRAM state: African coast mapped a few headlands further south
@@ -1058,7 +1107,7 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   figures; he holds work at arm's length; Roman glass cannot be ground into a reading
   lens (the bitter mirror of the failed spyglass). Heras (~74) has it too (reads
   Hippocrates at arm's length). "Blind to small figures by fifty, near enough."
-- [ch38] THE PIVOT (Part V->VI hinge) reached in scene: MARCIA (in her storeroom) gives
+- [ch38] THE PIVOT (Part IV→V hinge) reached in scene: MARCIA (in her storeroom) gives
   the figure ("a thing that is yours dies when you do"; his head is going, his hands
   will follow); HERAS (the lamp/Hippocrates argument: "you are being the man another man
   reads by a lamp in six hundred years") steadies it. Daniel COMMITS to building what
@@ -1080,9 +1129,14 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   the dark," thinking of the cipher-book that starts with these same nine courses and
   must be written while there is still an eye to write it and a child who could be taught
   the cipher. (Note: future chapters must vary AWAY from child-with-figures closers.)
+- [END OF PART IV — ch38 is the last chapter of Part IV (ch34–38). Part V opens
+  with ch39. See STRUCTURE NOTE.]
 
+- [PART V OPENS — ch39–46. See STRUCTURE NOTE.]
 - [ch39] ~129 AD, Daniel ~48 (presbyopia worsening), Lucanus ~17, Ulpia ~11, Tyche ~44,
-  Macer ~80 (alive), Marcia ~55. OPENS PART VI. Daniel BUILDS the institutions (the
+  Macer ~80 (alive), Marcia ~55. [part-label superseded — see STRUCTURE NOTE; the old
+  "OPENS PART VI" label here is superseded; under the canonical scheme ch39 opens Part V
+  (ch39–46)]. Daniel BUILDS the institutions (the
   inventor becoming a tender of structures):
   - PRESS made a self-running BODY: folded into an old letter-copyers' COLLEGIUM (a
     burial-club legal form) as a printing-branch, irrevocably endowed by Daniel with a
@@ -1293,7 +1347,7 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   (fresh; not a banned closer; does NOT resolve the conscience).
 
 - [ch46] 138 AD, Daniel ~57, Marcia ~64, Lucanus ~26, Ulpia ~20, Tyche ~53, Macer ~90
-  (alive, unseen; dies ch48), Hadrian d. ~62. CLOSES PART VI. **HADRIAN DIED** (10 July
+  (alive, unseen; dies ch48), Hadrian d. ~62. CLOSES PART V. **HADRIAN DIED** (10 July
   138, at Baiae): reaches Rome-bound Daniel SECONDHAND (a brick-carter, then the porticoes)
   - the long dropsical decline, his thwarted longing for death, the "little soul" epigram.
   No deathbed scene.
@@ -1309,15 +1363,20 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   loses its champion; Daniel relinquishes the private "road west / home" hope and has Ulpia
   keep the African survey current-but-unworked ("laid down, not closed"). The endowed
   institutions HOLD (the ch38-39 wager paying).
-- [ch46] MORTALITY / PART VII handoff planted: Daniel ~57, eyes failing, has outlived
+- [ch46] MORTALITY / PART VI handoff planted: Daniel ~57, eyes failing, has outlived
   patrons and friends; the cipher/ladder now lives in FOUR young heads (Tyche, Ulpia,
   Vitalis, Chloe) plus a lead-cased copy, set to outlive him and the next emperors. No new
   named characters; no tech advance. Closing image (revised off the watched lamp/
   young-person-with-figures mannerism): Ulpia laying the open-columned survey leaf face-up,
   weighted with a loom-weight against the wharf draft, "a thing not closed, only laid down."
+- [END OF PART V — ch46 is the last chapter of Part V (ch39–46). Part VI opens
+  with ch47. See STRUCTURE NOTE.]
 
+- [PART VI OPENS — ch47–50. See STRUCTURE NOTE.]
 - [ch47] ~142 AD, Daniel ~61, Marcia ~68, Tyche ~57, Ulpia ~24, Macer ~94 (alive,
-  failing), Antoninus Pius reigns. OPENS PART VII / THE CODA. DANIEL OLD: the body failing
+  failing), Antoninus Pius reigns. [part-label superseded — see STRUCTURE NOTE; the old
+  "OPENS PART VII / THE CODA" label here is superseded; under the canonical scheme
+  ch47 opens Part VI (ch47–50); Part VII / The Coda opens at ch51]. DANIEL OLD: the body failing
   with no medicine he can make. Concrete decline: a heart/wind episode on the worn wharf
   step (recovers; he knows it is the death he cannot touch); cold arthritic hands (ring
   stuck, joints won't open); lost teeth (eats soaked bread / barley pap); insomnia with
@@ -1426,7 +1485,10 @@ Format: `[chNN] fact`. Keep facts atomic and specific.
   coming up the valley, the unfinished breath). No new named characters; no divergence.
   [NOTE: this is the last chapter in DANIEL'S voice. ch51 = a Roman-document interlude
   after his death; ch52-53 = the epilogue, other hands. Daniel's memoir is complete.]
+- [END OF PART VI — ch50 is the last chapter of Part VI (ch47–50). Part VII / The
+  Coda opens with ch51. See STRUCTURE NOTE.]
 
+- [PART VII / THE CODA OPENS — ch51–53. See STRUCTURE NOTE.]
 - [ch51] INTERLUDE (NOT Daniel's voice). A Roman LETTER dated "the day before the Ides of
   June, the consulship of Clarus and Cethegus" = ~AD 170, from **GAIUS NORBANUS RUFUS** (a
   cultured, faintly supercilious man of letters, Pliny manner) to his friend **SEXTUS

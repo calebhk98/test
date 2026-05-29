@@ -618,19 +618,23 @@ important crops of the New World and simply lives with it.
 **Per ch43 brief:** This scene is assigned to ch43 (Family chapter, ~135–138 AD).
 Execute as specified there — brief, one exchange, no speech.
 
-### The Tomato Moment (Post-harvest, ~120–125 AD)
+### The Tomato Moment (first crop wave, ~ch29–32)
+
+**The tomato is one of the FIRST plants Daniel brings back, not a late reveal.** It is
+distinct, versatile (sauce, ketchup, dozens of dishes), and he requests it BY NAME in
+the expedition provisioning — it is at the top of his crop list precisely because he
+knows what it unlocks. It returns with the first crop wave (~ch28–29), and the
+tomato-sauce-on-pasta moment follows as soon as he has a first harvest (~ch29–32).
 
 This is the food arc's emotional payoff. He makes tomato sauce and puts it on pasta.
 He eats it. He puts the bowl down. He says nothing. The scene should be short —
-two or three sentences at most. No commentary. The reader has been waiting for this
-since the absence of tomatoes was first established.
+two or three sentences at most. No commentary.
 
-**Chapter placement:** This moment belongs in Part V (post-Atlantic, first crop
-establishment). The chapter list assigns a version of this to the food thread; see
-also ch34 for the "tavern food scene" (beat 3 of 4) and ch50 for the tomato beat
-(beat 4 of 4). The full tomato-sauce-on-pasta moment is a separate, earlier, more
-complete beat — probably ch39 or Phase D territory. The ch50 tomato beat is a
-late-life garden tomato, quieter and final.
+**Chapter placement:** The tomato arrival and the sauce-on-pasta payoff land EARLY
+(~ch29–32), once the first western crops are in cultivation — NOT in the ch36–39 range.
+Ketchup for Gnaeus follows within weeks. See ch34 for the "tavern food scene" (beat 3 of
+4). The ch50 tomato is a small late-life ECHO — an old man eating one from his own
+garden — not the arc's arrival or main payoff.
 
 ### The Late-Life Tomato (Ch50 — the scene is specified)
 
@@ -639,9 +643,9 @@ eats a tomato from his garden. One sentence, no speech. This is the food arc's
 true ending — not triumph, not commentary, just an old man eating a tomato from
 his garden in his last years. The four-beat structure is:
 1. First omelette for himself alone (Phase A)
-2. First tomato sauce on pasta (Phase D, post-harvest)
+2. First tomato sauce on pasta (~ch29–32, first harvest of the requested-by-name crop)
 3. Tavern food scene — his recipe on a stranger's menu (ch34 territory, Phase D)
-4. Late-life garden tomato (ch50)
+4. Late-life garden tomato (ch50) — a small echo, not the payoff
 
 ---
 
@@ -761,8 +765,9 @@ exactly like it should. Brief.
 **The corn/polenta beat (same era):** He makes rough polenta from the first maize.
 Serves it at the workshop. One paragraph.
 
-**The tomato-sauce-on-pasta moment (Ch36–Ch38 area, first tomato harvest):**
-The payoff. He makes it. He eats it. He puts the bowl down. He says nothing.
+**The tomato-sauce-on-pasta moment (~ch29–32, first tomato harvest):**
+The payoff, and it comes EARLY — the tomato is a first-wave crop he requested by name.
+He makes it. He eats it. He puts the bowl down. He says nothing.
 This should be short — three sentences maximum. No commentary. No one explains
 what this means to him. The four-beat structure suggests this is beat 2 of the
 tomato thread; the late-life garden tomato (ch50) is beat 4.
@@ -815,7 +820,8 @@ This is the food arc's true ending.
 | B (103–110) | Tavern partnership planted (Gnaeus) | Ch15–Ch16 area |
 | B–C (103–117) | Food as social lubricant at workshop gatherings | Background texture Ch15–Ch25 |
 | D (117–130) | Sweet potato roasted, first corn/polenta | Ch35–Ch36 area |
-| D | Tomato-sauce-on-pasta moment (beat 2) | Ch36–Ch38 area |
+| C–D | Tomato requested by name + arrives in first crop wave | Ch25–27 (request), Ch28–29 (arrival) |
+| D | Tomato-sauce-on-pasta moment (beat 2) — EARLY, first harvest | Ch29–Ch32 area |
 | D | Ketchup, one sentence | Immediately after tomato |
 | D | Tavern food scene, food beat 3 of 4 | Ch34 (specified) |
 | E (130–138) | Cacao / hot chocolate scene | Ch43 (specified) |

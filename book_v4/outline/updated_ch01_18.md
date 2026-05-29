@@ -6,6 +6,17 @@ V2_CHAPTER_CHANGE_NOTES specifically marks a beat for removal. Sources are cited
 in-line. Phase references correspond to V2_DANIEL_FINANCES.md and
 V2_TECH_DEEP_DIVE.md phase designations.
 
+**Part boundary note:** Part I = ch01–11, Part II = ch12–22 (ch12–18 are Part II).
+**Age/birth anchors (all chapters):** Daniel b.~81 AD; Tyche b.~85 AD; Marcia b.~74 AD;
+Heras b.~53 AD; Macer b.~48 AD. Citizenship is ch17 ≈ 104–105 AD, Daniel ~23.
+**Manned balloon canon:** The flight vow covers only *untrained operators in untested
+designs*. Manned balloon program resumes under a safety regime in ch17. Crossbow-armed
+balloon archers are operational military doctrine by ch18 (NOT an unconditional permanent
+ban). All post-ch18 briefs must treat this as established fact.
+**Radio canon:** The Wimshurst static machine in ch16 is explicitly the high-voltage seed
+for a future spark-gap transmitter. Radio is achievable in Daniel's lifetime (first
+transmission ch39). Do not treat the Wimshurst machine as a dead end.
+
 ---
 
 ### ch01 — Waking [REVISE]
@@ -195,7 +206,7 @@ cannot recall from his own life; phone behavior rules), bible/08_canon_log.md
 
 ### ch03 — The Map [PASS]
 
-**Era/Date:** 98 AD, Daniel 17
+**Era/Date:** 98–99 AD, Daniel 17–18
 
 **Core beats (V1 baseline — keep unless V2 notes say otherwise):**
 Brought before a local magistrate/official; the language wall is total; on impulse
@@ -232,14 +243,30 @@ battery now critical. Plant: the map as his identity; the western continents
   eventually push for the crossing is that he misses what he can't eat here. This
   is texture and interiority, not a plot driver. No speech, no scene — just a private
   register visible to the reader. (C9 — per audit_new_gaps.md Gap 1)]
+- ADD: **Leeuwenhoek bead microscope**. Daniel melts a glass rod-tip in a lamp flame;
+  surface tension forms a near-perfect sphere; held over a printed letter the letter
+  swells to fill his vision. The first thing he has actually built here. He never
+  calls it a microscope. He keeps the bead. It is a toy that works; Heras, when he
+  arrives, is interested in the optics, not impressed by the scale. One short scene,
+  maybe half a page — establish that optics are achievable with existing Roman
+  materials. (V2_REVISED_OUTLINE ch03; master_outline §Part I "Leeuwenhoek bead
+  microscope")
+- **Variolation consciously withheld** — planted here and carried as a cipher note.
+  Daniel knows variolation on arrival. No standing, no physician relationship yet —
+  in this chapter he cannot even speak. Cipher note to self (in English, when the
+  phone still has power): "variolation — not yet." This is a choice, noted once, not
+  revisited until the groundwork is laid. (master_outline §Part I; TIMELINE_TEXTURE
+  _AUDIT §(d) kept-private-to-exploit)
 
 **[V2] Tech requirements:**
-No tech. The map is Daniel's first demonstration of the cognitive edge in its
-purest form: he knows what the world looks like. Zero materials. Zero cost. The
-map itself is the tech — information deployed as survival. This is the Eratosthenes-
-demonstration principle (V2_MASTER_CONTEXT §Change 1) in embryo: cheap, undeniable,
-cannot be un-shown. (V2_TECH_DEEP_DIVE Phase A: "World map — first move, no
-language needed.")
+Phase A, first build. The bead microscope is the one physical object Daniel builds
+here — a toy, not a tool, but proof that optics are within Roman materials.
+Otherwise: the map is Daniel's first demonstration of the cognitive edge in its
+purest form: he knows what the world looks like. Zero materials for the map. Zero
+cost. The map itself is the tech — information deployed as survival. This is the
+Eratosthenes-demonstration principle (V2_MASTER_CONTEXT §Change 1) in embryo:
+cheap, undeniable, cannot be un-shown. (V2_TECH_DEEP_DIVE Phase A: "World map —
+first move, no language needed." Bead microscope: "first physical build, Phase A.")
 
 **[V2] Finance context:**
 Phase A, still day zero-ish. The map earns Daniel a stay of execution and a shift
@@ -281,13 +308,16 @@ lie without marking it as a lie for the reader — which is correct. Daniel says
 - [ ] No em dashes.
 - [ ] No future-vantage narration.
 - [ ] The western continents must be on the page explicitly (not hedged as "shapes").
+- [ ] Bead microscope built — toy register, not triumph.
+- [ ] Variolation "not yet" cipher note present (phone entry or interior English).
 - [ ] One-sentence paragraphs: stay under 15%.
 
 **Updated Files list:**
 Mandatory: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md (ch03),
 bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md.
 Chapter-specific: bible/03_timeline.md (confirm 98 AD setting; Trajan's absence
-from Rome noted). No additional files required for a PASS chapter.
+from Rome noted). bible/04_tech_schedule.md (Phase A: bead microscope — first
+physical build; variolation withheld entry).
 
 ---
 
@@ -318,6 +348,14 @@ as a relic.
   spread. (V2_CHAPTER_CHANGE_NOTES ch04)
 - The phone death rendered flatly ("Off.") is already the V1 execution and must be
   preserved. This is cited as exactly right by the change notes.
+- **Bead microscope continuity note**: if the bead microscope was not on the page in
+  ch03, place it here instead — same beat (glass-rod tip in a lamp flame, sphere by
+  surface tension, held over a letter). Ch03 is the preferred placement per
+  V2_REVISED_OUTLINE, but ch04 is the fallback if the ch03 scene is too compressed.
+  Do not place it in both.
+- **Food texture** (V2_REVISED_OUTLINE ch04): garum served again; Daniel eats around
+  it with less reaction than ch03. The adjustment is underway; no speech about it.
+  One line is enough.
 
 **[V2] Tech requirements:**
 Phase A, first demonstration. Hindu-Arabic numerals and place value are the tech
@@ -410,6 +448,22 @@ Plant: germ practices spreading without the theory; the balloon idea named.
   Heras against defrutum (grape must reduced in lead vessels). He tries and FAILS to
   change anything at scale. This honest defeat should be stated once, briefly.
   (V2_STORY_PLOT_NOTES §4.1; V2_TECH_DEEP_DIVE Phase A; V2_MASTER_CONTEXT §Change 5)
+- ADD: **Double-entry bookkeeping** — seeded here from day one as a habit. Daniel
+  sees a clerk copying single-column tallies and says "where's the other side?" aloud.
+  Discovering balanced accounts aren't universal feels less like opportunity than finding
+  no one has invented the pencil. The surprise is not pride — it is bafflement. One
+  short beat. (master_outline §Part I; TIMELINE_TEXTURE_AUDIT §(c) double-entry)
+- ADD: **Horse collar** — visceral encounter-correction. The first cart-horse Daniel
+  sees is choked at the throat. "Why is it around the neck?" in English, to no one.
+  He sketches a shoulder harness from film memory that evening. A harness-maker
+  says it would work but it's not how things are done. "I know." The correction is
+  immediate and personal, not theoretical. Filed in cipher. (master_outline §Part I;
+  TIMELINE_TEXTURE_AUDIT §(e) horse-collar visceral correction)
+- **Texture (soap stays niche):** Heras does not change his washing. The household
+  finds the texture strange. For years the soap is Daniel's alone. Cipher note: "soap
+  may take longer than numerals." He does not push it. This is the correct outcome —
+  the soap scene is not a triumph; it is a plant. (TIMELINE_TEXTURE_AUDIT §(e)
+  soap-Romans don't adopt it, stays niche)
 - The "Cheap. Mine. Undeniable." close: if the phrase is used in ch05, it becomes
   doubly telegraphed when the chapter title of ch06 repeats it. Either vary the ch05
   phrasing or deliberately use it as the first instance of a refrain that ch06 names
@@ -429,15 +483,16 @@ Plant: germ practices spreading without the theory; the balloon idea named.
   Discrepancy 2: "planning from year one" must surface in an early chapter interior)]
 
 **[V2] Tech requirements:**
-Phase A. Two tech additions required: soap (tallow + lye, iterated ratios) and
-lead-poisoning awareness plus household countermeasures. Both are EASY WIN
-(V2_TECH_DEEP_DIVE §Phase A). Neither requires significant scene space — the soap
-can be one short paragraph; the lead-pipe awareness can be a sentence in a larger
-scene. The germ-framing exchange (practices adopted, theory rejected) is the
-chapter's centerpiece and is already correct — preserve it as V1's load-bearing
-principle. Double-entry bookkeeping: if not already seeded in ch04, add one line
-here showing Daniel keeping a self-balancing record of his own meager transactions.
-(V2_TECH_DEEP_DIVE §Phase A)
+Phase A. Four tech additions required: (1) soap (tallow + lye, iterated ratios; stays
+niche — Heras does not adopt it); (2) lead-poisoning awareness plus household
+countermeasures; (3) double-entry bookkeeping seeded as a surprised discovery when
+Daniel finds balanced accounts do not yet exist — "where's the other side?"; (4) horse
+collar sketched from visceral encounter with a choked cart-horse — filed in cipher, not
+celebrated. All are EASY WIN (V2_TECH_DEEP_DIVE §Phase A). Neither the soap nor the
+horse collar scores a visible win this chapter — both are plants. The germ-framing
+exchange (practices adopted, theory rejected) is the chapter's centerpiece and is
+already correct — preserve it as V1's load-bearing principle. (V2_TECH_DEEP_DIVE §Phase A;
+master_outline §Part I; TIMELINE_TEXTURE_AUDIT §(c)(e))
 
 **[V2] Finance context:**
 Phase A. Daniel has no money. His household accommodations are provided by Heras's
@@ -445,6 +500,17 @@ patron network. His "assets" are his knowledge and his growing Latin. The egg-ma
 beat (buying an egg? being given one?) is explicitly the loneliness image — it is
 also a financial image of zero resources: the single egg is almost everything he can
 obtain. The chapter should make his material poverty concrete without dwelling on it.
+The glass-clarity prize he will later post costs roughly a month's skilled wages — a
+real outlay even years hence, so its scale should feel significant when it is finally
+named; here it is only a distant ambition with an implicit price. The soap and the
+water-filter sketch he hands Heras are given away at no charge, with no expectation
+of return; cipher note register: "soap may take longer than numerals."
+
+**[V2] Financial detail (stream tag):**
+The soap and the water-filter are costs with no return column: given away, no fee,
+no recovery expected. The glass-clarity prize, when it eventually goes up, will cost
+something close to a month's skilled wages — a figure that will feel large before
+he is rich, and moderate after.
 
 **[V2] Cognitive edge notes:**
 The germ-framing scene is the cleanest V2 example of Daniel arguing from results
@@ -483,14 +549,22 @@ Not relevant to this chapter.
 - [ ] No future-vantage narration.
 - [ ] Loneliness must be shown (egg-man), not stated (the "almost is a knife" line).
 - [ ] Soap and lead-pipe awareness must appear in this chapter or by end of ch06.
+- [ ] Double-entry "where's the other side?" surprise beat present — bafflement,
+  not pride. (TIMELINE_TEXTURE_AUDIT §(c))
+- [ ] Horse collar sketched after visceral encounter — harness-maker says "it'd work
+  but it's not how things are done"; Daniel's only response: "I know." (TIMELINE_
+  TEXTURE_AUDIT §(e))
+- [ ] Soap niche outcome stated: Heras doesn't adopt, household finds it strange,
+  cipher note, Daniel does not push. Not a triumph. (TIMELINE_TEXTURE_AUDIT §(e))
 - [ ] One-sentence paragraphs: stay under 15%.
 
 **Updated Files list:**
 Mandatory: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md (ch05),
 bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md.
 Chapter-specific: bible/02_characters.md (Heras), bible/04_tech_schedule.md
-(Phase A: soap, germ framing, lead poisoning awareness), V2_STORY_PLOT_NOTES.md
-(§4.1 lead poisoning, §4.2 soap — specific beats required).
+(Phase A: soap, germ framing, lead poisoning awareness, double-entry, horse collar),
+V2_STORY_PLOT_NOTES.md (§4.1 lead poisoning, §4.2 soap — specific beats required),
+TIMELINE_TEXTURE_AUDIT.md (§(c) double-entry, §(e) horse-collar and soap-niche).
 
 ---
 
@@ -601,13 +675,39 @@ half-mocks. Plant: the need for a patron; Vibenius glimpsed reading omens nearby
   109). Both instances have the narrator arriving from the future to announce
   Vibenius's importance. The physical detail (Heras warning "Do not point at him")
   is enough to carry the plant. (V2_CHAPTER_CHANGE_NOTES ch07 — BLOCKER)
+- ADD: **Wheelbarrow and windmill**. Daniel notices no one in Rome uses a wheelbarrow
+  — everything is carried on backs or poles. He sketches a tray-and-wheel design; built
+  in a day on Macer's estate, spreads within a season. The windmill he describes to a
+  carpenter as a prize spec for regions without fast water — a post-mill turning
+  horizontal motion to drive a millstone or bellows. He does not build one himself;
+  the spec goes into his notes as a standing prize offer. (V2_REVISED_OUTLINE ch07;
+  master_outline §Part I)
+- ADD: **Three-field rotation / legume nitrogen fixation**. Daniel pitches legumes in
+  the fallow to a farm manager. The manager says fallow is for resting; Daniel cannot
+  explain the soil science and never says "nitrogen" — half-remembered biology class.
+  Sells it on a five-year yield figure he also cannot fully explain. One field gets the
+  trial, to end the argument. The manager never asks how it works. Daniel is more
+  relieved than he lets on. (V2_REVISED_OUTLINE ch07; master_outline §Part I;
+  TIMELINE_TEXTURE_AUDIT §(c) three-field rotation / §(f) legume nitrogen fixation)
+- **Texture (three-field / nitrogen):** Asked how beans feed the soil, Daniel doesn't
+  know — "half-remembered biology, never got to the mechanism." He never says "nitrogen."
+  He sells it on the five-year yield figure he also cannot fully explain. The manager
+  never asks again. Daniel is more relieved than he lets on. (TIMELINE_TEXTURE_AUDIT §(f))
+- ADD: **Kites sold at market** — before the balloon dominates, Daniel sells linen-and-
+  bamboo kites to children at market. Proceeds negligible; visibility not. Every child
+  flying one advertises that the sky is now possible. A background revenue line and the
+  first proof that manufactured novelties sell. (V2_REVISED_OUTLINE ch07; master_outline
+  §Part I; TIMELINE_TEXTURE_AUDIT — kites as commercial product)
 - The sportsbook idea: Daniel's first observations of Roman gambling culture can
   begin here. He doesn't act; he catalogs. Romans gambling on dice in a tavern near
   the workshop; Daniel watching, noting the bookmaker's odds, thinking: "noted."
   This is the Part I discovery beat from V2_STORY_PLOT_NOTES §10 ("Required Story
   Beats" #1a): Daniel loses coins at Roman dice, catalogs the observation. The beat
   is compact — one paragraph; the point is that the observation goes into the mental
-  file alongside "lead pipes" and "no soap."
+  file alongside "lead pipes" and "no soap." **Probability (withheld):** He does not
+  teach what the Hindu-Arabic numerals enable once you set odds. He knows it is a
+  choice; the sportsbook will earn more from the gap than anything else its size. He
+  will teach it. Later — cipher only. (TIMELINE_TEXTURE_AUDIT §(d) probability withheld)
 - (Note: Daniel uses multiple R&D methods — direct hired craftsmen, in-house workers,
   personal experimentation, AND prize competitions. The prize/DARPA model is his most
   novel contribution (Romans had no equivalent), but it is ONE tool among several and
@@ -633,7 +733,19 @@ Phase A still. Daniel has no independent resources. Every experiment costs him
 materials he has to beg or scrounge. The singed hand is the price of working alone
 with inadequate equipment. The chapter should make clear that the limitation is not
 just knowledge — it is access. He needs a patron because he literally cannot buy the
-materials to work at scale.
+materials to work at scale. The sportsbook is seeded here on "six asses and an
+idea" — almost nothing invested; the house margin implicit in every line he sets
+runs above one-in-one odds, a fact he keeps to himself. The kites sold at market
+bring negligible coin ("the visibility was the point"); the rag-paper experiment
+costs only spoiled rags and time. Coal, recognized as a future forge-input, is filed
+without cost — its value is all future.
+
+**[V2] Financial detail (stream tags):**
+Sportsbook: seeded on six asses and an idea; the house margin on every line he sets
+runs better than even, a fact he keeps in cipher only. Kites at market: the coin
+is negligible — "the visibility was the point." Rag-paper experiment: costs spoiled
+rags and an afternoon; no revenue yet. Coal: filed as a future forge-input at no
+present cost; its value is entirely downstream.
 
 **[V2] Cognitive edge notes:**
 This chapter shows Daniel failing in the specific way V2 requires: not from
@@ -666,13 +778,25 @@ Not relevant to this chapter.
   Vibenius's significance is carried by "Do not point at him" — not by the narrator's
   annotation.
 - [ ] Gambling observation added (compact; mental-note register, not business plan).
+- [ ] Wheelbarrow built — day-scale, un-announced, spreads on the estate. (master_outline
+  §Part I; V2_REVISED_OUTLINE ch07)
+- [ ] Windmill described as a prize spec, not built by Daniel. (master_outline §Part I)
+- [ ] Three-field rotation pitched with nitrogen mechanism withheld — Daniel cannot
+  explain the soil science; sells on a yield figure he also cannot fully explain.
+  Manager never asks again. (TIMELINE_TEXTURE_AUDIT §(f))
+- [ ] Kites at market — background revenue, primary function is visibility. (master_outline
+  §Part I)
+- [ ] Probability withheld: numerals taught; house-edge math not. Cipher only.
+  (TIMELINE_TEXTURE_AUDIT §(d))
 - [ ] One-sentence paragraphs: stay under 15%.
 
 **Updated Files list:**
 Mandatory: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md (ch07),
 bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md.
 Chapter-specific: bible/02_characters.md (Vibenius — haruspex; ambiguous;
-"have that reason ready"), V2_STORY_PLOT_NOTES.md (§10 gambling discovery beat).
+"have that reason ready"), V2_STORY_PLOT_NOTES.md (§10 gambling discovery beat),
+master_outline.md (§Part I: wheelbarrow, windmill, kites, three-field, probability),
+TIMELINE_TEXTURE_AUDIT.md (§(c)(d)(f)).
 
 ---
 
@@ -706,15 +830,23 @@ Daniel's first taste of public power and public danger.
   around them with "shouted something I didn't catch." Quote at least one heckler
   directly. (V2_MASTER_CONTEXT §Change 2; AGENT_WRITER_BRIEF_V2 Rule 5)
 - [Beat: Sportsbook launches in this chapter. Daniel begins taking formally structured
-  bets on chariot races. He sets the lines so implied probability across all outcomes
-  exceeds 100% — profit guaranteed regardless of outcome, in sufficient volume. He is
-  the only person in Rome who understands this. This is his earliest passive income
-  source, before the press or balloon contract. The expected-value math must be
-  rendered on the page — even one sentence of arithmetic showing the logic — not just
-  referenced as a principle. NOTE: The arc status table in V2_REVISED_OUTLINE.md
-  incorrectly says "ops launch ch10–11" — the correct placement is ch08. The
-  continuity note in the same file confirms ch08. This chapter entry is authoritative.
-  (C6 — per audit_games_gambling.md Discrepancy 1)]
+  bets on chariot races or a gladiatorial bout. He sets the lines so implied probability
+  across all outcomes exceeds 100% — profit guaranteed regardless of outcome, in
+  sufficient volume. He is the only person in Rome who understands this. This is his
+  earliest independent income source, before the balloon contract solidifies. The
+  expected-value math must be rendered on the page — even one sentence of arithmetic
+  showing the logic — not just referenced as a principle. Small scale, no premises,
+  just him and a corner of Macer's courtyard; he does not announce it as a business.
+  NOTE: The arc status table in V2_REVISED_OUTLINE.md incorrectly says "ops launch
+  ch10–11" — the correct placement is ch08. The continuity note in the same file
+  confirms ch08. This chapter entry is authoritative. (C6 — per
+  audit_games_gambling.md Discrepancy 1; V2_REVISED_OUTLINE ch08 New beats)
+- **Texture (probability withheld):** He teaches the numerals; he does not teach what
+  they enable once you set odds. He knows this is a choice. He is making more from the
+  book than anything its size. He will teach it. Later — cipher only. The other
+  bookmakers near the Circus do not understand why they keep losing to him. This is
+  his first independent income and also teaches Roman social dynamics faster than
+  anything else. (V2_REVISED_OUTLINE ch08; TIMELINE_TEXTURE_AUDIT §(d))
 
 **[V2] Tech requirements:**
 Phase B. Unmanned balloon successfully demonstrated — this is the first public
@@ -731,8 +863,16 @@ The balance of tech in this chapter: Daniel's previous Phase A knowledge
 Phase A transitioning to Phase B. The demonstration creates the patron relationship
 with Macer. Before this chapter ends, Daniel has been summoned to meet the man who
 owns him. This is the financial inflection point: without Macer's investment, Daniel
+
+**[V2] Financial detail (stream tag):**
+The sportsbook's soft launch runs quietly near Macer's courtyard — the other
+bookmakers near the Circus cannot identify why their volume is drifting; the margin
+runs above one-in-one odds on every line, a gap that earns more than its size and
+is never declared aloud.
 has no workshop. The demonstration is leverage — not yet converted to cash, but
-real leverage for the first time.
+real leverage for the first time. The sportsbook soft-launched near Macer's courtyard
+is already quietly profitable; the other bookmakers near the Circus do not understand
+why they keep losing to him — and that gap is the entire margin, never declared.
 
 **[V2] Cognitive edge notes:**
 Daniel knows the demonstration will work in the sense that he knows hot air rises
@@ -767,6 +907,10 @@ Not relevant to this chapter.
 - [ ] No em dashes.
 - [ ] Remove the two future-vantage constructions (flagged above as BLOCKERs).
 - [ ] Crowd hecklers must speak, not be narrated around.
+- [ ] Sportsbook soft launch on the page — expected-value arithmetic rendered (even one
+  sentence), not just referenced. Small-scale, no premises. (V2_REVISED_OUTLINE ch08)
+- [ ] Probability withheld: sportsbook earns from the gap; he will teach it later;
+  cipher only. (TIMELINE_TEXTURE_AUDIT §(d))
 - [ ] One-sentence paragraphs: stay under 15%.
 
 **Updated Files list:**
@@ -774,7 +918,8 @@ Mandatory: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md (ch08),
 bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md.
 Chapter-specific: bible/02_characters.md (Macer, Vibenius), bible/CHARACTER_VOICE_
 GUIDE.md (crowd hecklers register; Pompeii-graffiti tone), bible/08_canon_log.md
-(confirm balloon demonstration date and Macer-as-owner canon).
+(confirm balloon demonstration date and Macer-as-owner canon; sportsbook ops begin ch08
+not ch10–11).
 
 ---
 
@@ -809,6 +954,13 @@ freedman-labor question forming; freedom as a carrot only the emperor will deliv
 - Macer swears once in V2 — genuinely crude, in anger, in context.
   (V2_MASTER_CONTEXT §Change 2) This chapter is the first major Macer scene and a
   good candidate for that one oath. Writer decides placement.
+- ADD: **Merit hiring as quiet counter-model**. Daniel hires for demonstrated ability
+  from the first intake and tells no one it is deliberate. He ends up with a freedman
+  heading glass production and a woman running the press — neither planned, both
+  following the only rule he set. The model is never announced; the outcomes are simply
+  on the page. One brief interior note confirming the logic: one rule, no announcement,
+  follow the results. (V2_REVISED_OUTLINE ch09; master_outline §Part III merit hiring;
+  TIMELINE_TEXTURE_AUDIT §(c) civil service/merit hiring)
 
 **[V2] Tech requirements:**
 Phase B transition point. Macer's deal creates the workshop — this is the financial
@@ -862,16 +1014,19 @@ Not relevant to this chapter.
 - [ ] Info-delivery speech broken into action (no static monologue longer than
   4 consecutive uninterrupted lines — AGENT_WRITER_BRIEF_V2 Rule 7).
 - [ ] Tyche's voice: "Early: terse, guarded (survival caution)" — she is not warm
-  or helpful; she is watching.
+  or helpful; she is watching. Her age is ~14 here (born ~85 AD; chapter ~100–101 AD).
+- [ ] Merit hiring seeded: one rule, no announcement, results follow. Neither the
+  freedman nor the woman is described as planned. (TIMELINE_TEXTURE_AUDIT §(c))
 - [ ] One-sentence paragraphs: stay under 15%.
 
 **Updated Files list:**
 Mandatory: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md (ch09),
 bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md.
-Chapter-specific: bible/02_characters.md (Macer full profile, Tyche full profile),
-bible/CHARACTER_VOICE_GUIDE.md (Macer: blunt, transactional, swears once; Tyche:
-terse, guarded, survival caution), V2_DANIEL_FINANCES.md (§Phase A: the first deal
-structure — 20-25% arrangement).
+Chapter-specific: bible/02_characters.md (Macer full profile, Tyche full profile —
+b.~85 AD, ~14 here), bible/CHARACTER_VOICE_GUIDE.md (Macer: blunt, transactional,
+swears once; Tyche: terse, guarded, survival caution), V2_DANIEL_FINANCES.md
+(§Phase A: the first deal structure — 20-25% arrangement),
+TIMELINE_TEXTURE_AUDIT.md (§(c) civil service/merit hiring).
 
 ---
 
@@ -925,6 +1080,31 @@ Plant: Tyche's gift; Crispus as enemy-to-be; the slavery thread seeded.
   "[Required: Brief mental inventory. Daniel recognizes the gunpowder ingredients exist
   in Rome. Files it. Defers it. One sentence of interior registration, no more. The
   weight of 'not yet' should be felt, not explained.]"
+- ADD: **Vernier calipers**. Daniel describes the two-scale measurement principle to
+  Hermes (or the workshop smith): a fixed main rule and a sliding secondary scale whose
+  divisions are slightly shorter give measurements to a tenth of the smallest main
+  division. A crude first version is built. It closes tolerances no single ruler can
+  manage. Noted as a long-term compounding asset — every precision project downstream
+  benefits. (V2_REVISED_OUTLINE ch10; master_outline §Part II vernier calipers)
+- ADD: **Overshot watermill (prompted by complaint)**. A mill-hand complains the summer
+  river is too slow. Daniel mentions, almost by accident, that water can fall on top of
+  the wheel rather than push it from below. He is slightly embarrassed it took a
+  grievance to surface something he has known in the abstract for years. Output roughly
+  doubles. He files it as a reminder that he will not think of things until someone
+  says something. (V2_REVISED_OUTLINE ch10; master_outline §Part I; TIMELINE_TEXTURE_
+  AUDIT §(b) overshot watermill prompted)
+- **Texture (overshot watermill):** The grievance came first; the idea followed. He's
+  slightly embarrassed it took someone complaining to surface it. He mentions this to
+  no one. (TIMELINE_TEXTURE_AUDIT §(b))
+- ADD: **Cotton gin (encounter-triggered)**. Daniel watches women pull cotton seed by
+  hand, sketches a rotating-cylinder separator from hardware-store intuition — he is not
+  certain the design is right. He posts it as a prize spec; for nearly a year he is
+  unsure whether he contributed anything beyond the idea that the problem was worth
+  solving. (V2_REVISED_OUTLINE ch10; master_outline §Part I; TIMELINE_TEXTURE_AUDIT
+  §(b) cotton gin encounter-triggered)
+- **Texture (cotton gin):** He posts the spec not knowing if the rotating-cylinder sketch
+  is right. He is uncertain for a year whether he added anything except the idea that the
+  problem was worth solving. (TIMELINE_TEXTURE_AUDIT §(b))
 
 **[V2] Tech requirements:**
 Phase B beginning. The workshop is now established. The first Phase B easy wins can
@@ -942,6 +1122,25 @@ detail — Roman slaves could hold peculium (a fund of money technically owned b
 master but managed by the slave). This is Daniel's first semi-independent financial
 operation. The free-women payment scene shows that he is using his peculium for
 the anti-slavery preference even when he cannot formally manumit anyone.
+The press at this stage wastes a sheet in four — a real running cost that Tyche
+records and Daniel does not look at closely. Piecework stitching hired out costs a
+few asses a seam; small individually, visible in the column. The Brundisium
+glass-clarity prize pays out 200 sesterces — a technique he didn't know existed,
+which is its own lesson about what prize money buys. The spinning wheel he expects
+to improve output and it loses to free slave labor — a thing he thought would pay
+and doesn't; Tyche records the outcome without comment. The vernier calipers cost
+workshop time to make and yield no immediate revenue; they are a long-term asset
+whose return comes through everything they measure downstream.
+
+**[V2] Financial detail (stream tags):**
+Press R&D: wastes a sheet in four — Tyche records the loss rate; Daniel does not
+look at the column closely yet. Piecework stitching: a few asses a seam, small
+individually but Tyche can see it accumulate. Glass-clarity prize (Brundisium
+payoff): 200 sesterces out — for a technique he had no idea existed; what prize
+money buys is sometimes a surprise, not a solution. Spinning wheel: he expected
+it to reduce labor cost and it does not — free slave labor wins; Tyche files the
+outcome without remark, which is its own comment. Vernier calipers: workshop-time
+cost, no immediate revenue; the return runs through everything they measure after.
 
 **[V2] Cognitive edge notes:**
 Tyche's aptitude with the new figures is shown through a concrete calculation, not
@@ -990,6 +1189,13 @@ Not relevant to this chapter.
 - [ ] Chapter close on image or action, not thesis.
 - [ ] TIC V13 frozen-epiphany sentence ("I stood there in my own yard and looked at
   a fourteen-year-old slave...") MUST be rewritten — replace with action or dialogue.
+- [ ] Vernier calipers described and crude prototype built. (V2_REVISED_OUTLINE ch10)
+- [ ] Overshot watermill prompted by a complaint — grievance first, idea second;
+  Daniel slightly embarrassed it took the complaint to surface it.
+  (TIMELINE_TEXTURE_AUDIT §(b))
+- [ ] Cotton gin encounter-triggered — posted as prize spec with genuine uncertainty
+  about whether the design is right; uncertain for a year.
+  (TIMELINE_TEXTURE_AUDIT §(b))
 - [ ] One-sentence paragraphs: stay under 15%.
 - [ ] Tyche's voice: terse, guarded, survival caution. Not warm. Not helpful.
 
@@ -998,14 +1204,15 @@ Mandatory: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md (ch10),
 bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md.
 Chapter-specific: bible/02_characters.md (Tyche, Crispus), bible/08_canon_log.md
 (Daniel-cannot-free-anyone canon), bible/04_tech_schedule.md (Phase B: easy wins
-beginning — double-entry, block printing, water bellows plant), V2_DANIEL_
-FINANCES.md (§Phase A-B: peculium, 20-25% arrangement).
+beginning — double-entry, block printing, water bellows plant, vernier calipers,
+overshot watermill, cotton gin), V2_DANIEL_FINANCES.md (§Phase A-B: peculium,
+20-25% arrangement), TIMELINE_TEXTURE_AUDIT.md (§(b) prompted beats).
 
 ---
 
 ### ch11 — The Army's Eye [REVISE]
 
-**Era/Date:** 101 AD, Daniel 20
+**Era/Date:** 101–102 AD, Daniel 20–21
 
 **Core beats (V1 baseline — keep unless V2 notes say otherwise):**
 Quintus Marcius Celer, army officer, sees the balloon's military value (observation,
@@ -1038,13 +1245,35 @@ of war.
   replacements arrive knowing how to shoot a bow?" This is a required scene per
   V2_STORY_PLOT_NOTES §4.6, and ch11 is the correct placement (first sustained
   army contact through Celer). The spanning lever is Phase B achievable.
-  (V2_STORY_PLOT_NOTES §4.6; V2_TECH_DEEP_DIVE §Phase B)
+  (V2_STORY_PLOT_NOTES §4.6; V2_TECH_DEEP_DIVE §Phase B; V2_REVISED_OUTLINE ch11)
 - ADD: stirrups. Daniel sees a cavalryman mount or exercise and immediately
   recognizes the absence of stirrups. He produces a leather-loop design; the army
   is slow to adopt it but the design enters the record. This is a required Phase B
   observation (V2_STORY_PLOT_NOTES §4.4). Ch11 is the right chapter: first direct
-  army contact. (V2_STORY_PLOT_NOTES §4.4; V2_MASTER_CONTEXT §Change 4 divergence
-  milestone: "by 105 AD, stirrups in use by at least one cavalry unit")
+  army contact. By 105 AD stirrups are in use by at least one cavalry unit.
+  (V2_STORY_PLOT_NOTES §4.4; V2_MASTER_CONTEXT §Change 4; V2_REVISED_OUTLINE ch11)
+- ADD: **Eratosthenes demonstration**. Two sticks, two shadows, Earth's circumference.
+  Daniel performs this with Heras or Celer present — no materials needed beyond sticks
+  and a sunny day. "Pointing works" without any tech breakthrough. Enters the first
+  encyclopedia draft. (V2_REVISED_OUTLINE ch11; master_outline §Part I Eratosthenes
+  demonstration)
+- ADD: **Heliocentrism stated**. The circumference demonstration leads naturally to it:
+  if the Earth is spherical with this radius, it circles the sun, not the reverse.
+  Daniel states this to Heras as a fact in one clause. Heras is interested in the
+  epistemology of how Daniel knows, not the conclusion. Daniel does NOT follow with
+  F=ma or thermodynamics — no Roman audience for pure physics yet. Cipher note:
+  "for me, not for them. Useless until the machines need explaining." Brief. Not a
+  lecture. (V2_REVISED_OUTLINE ch11; master_outline §Part III heliocentrism;
+  TIMELINE_TEXTURE_AUDIT §(d) Newtonian mechanics/thermodynamics kept private)
+- **Texture (heliocentrism / Newtonian mechanics withheld):** He states the Earth
+  circles the sun. He does not follow with F=ma or thermodynamics. No Roman audience
+  for pure physics yet. Cipher note private: "for me, not for them. Useless until the
+  machines need explaining." (TIMELINE_TEXTURE_AUDIT §(d))
+- ADD: **Trebuchet**. Daniel describes a counterweight trebuchet to Celer — energy
+  stored in a falling weight, not twisted rope; scalable; no rope-rot on wet campaign.
+  Celer asks how large the weight can be and keeps the sketch. By the Second Dacian
+  War one is in Roman use, unattributed. Daniel does not press for credit.
+  (V2_REVISED_OUTLINE ch11; master_outline §Part II trebuchet)
 - [Required beat: Balloon contract negotiation. First leverage. This chapter (or
   the ch11-13 window) is where the ~800K HS total contract with the army is struck.
   The drama per V2_DANIEL_FINANCES §4: Daniel holds firm against hard negotiation,
@@ -1056,13 +1285,17 @@ of war.
   referenced as already concluded. (C4 — per audit_finances_prize.md Discrepancy 1)]
 
 **[V2] Tech requirements:**
-Phase B. Two required tech additions: (1) crossbow spanning mechanism — sketched
-here, prototyped by ch12 or demonstrated in ch12-13; (2) stirrup design — leather
-loops, shown to Celer, plants the army adoption thread. Both are Phase B EASY WIN
-per V2_TECH_DEEP_DIVE §Phase B. The manned balloon attempt (Naso's injury) is the
-Phase B humbling beat — Daniel is hitting the material limits of treated linen over
-an open flame. The water-powered bellows should be referenced as already operational
-at the workshop by this point if planted in ch10.
+Phase B. Five required tech additions: (1) crossbow spanning mechanism — sketched
+here, prototyped by ch12 or demonstrated in ch12–13; (2) stirrup design — leather
+loops, shown to Celer, plants the army adoption thread (in use by one unit by 105 AD);
+(3) Eratosthenes two-sticks-two-shadows demonstration — zero materials, shown to Heras
+or Celer, enters the encyclopedia draft; (4) heliocentrism stated to Heras in one clause
+— Newtonian mechanics and thermodynamics withheld, cipher note; (5) trebuchet described
+to Celer — counterweight, scalable, no rope-rot. All are Phase B EASY WIN per
+V2_TECH_DEEP_DIVE §Phase B. The manned balloon attempt (Naso's injury) is the Phase B
+humbling beat. The water-powered bellows should be referenced as already operational
+at the workshop by this point if planted in ch10. (V2_REVISED_OUTLINE ch11;
+master_outline §Part I/Part II tech beats)
 
 **[V2] Finance context:**
 Phase B active. Daniel's position with Macer is now commercially established; the
@@ -1071,6 +1304,20 @@ funding. Celer's attention is not directly monetizable yet, but it creates the p
 to the First Dacian War contract (ch12-13) which is where Daniel's first fortune
 begins per V2_DANIEL_FINANCES §Phase A-B ("The First Balloon Contract: 800,000 HS
 total; Daniel's share ~200,000-250,000 HS").
+The contract negotiation is the leverage lesson rendered in numbers: Daniel opened
+at 12,000 sesterces; Celer had named 40,000 before Macer said 80,000. The final
+structure runs roughly 80,000 to Macer, 40,000 direct to Daniel, and a 10,000
+holding fee — about 120,000 to 130,000 in total. Marcia (when she exists) will
+reconstruct this from the documents; Daniel will not volunteer the arithmetic.
+The lesson is not the sum — it is the distance between 12,000 and what the army
+would have paid.
+
+**[V2] Financial detail (stream tag):**
+The balloon contract is the chapter's only hard number in this range: he opened at
+12k; the army would have paid 40k before Macer named 80k; the final structure is
+roughly 80k to Macer, 40k to Daniel, 10k holding — total near 120–130k. Daniel
+does not track what the leverage lesson cost him to learn; Marcia will reconstruct
+it later from the documents.
 
 **[V2] Cognitive edge notes:**
 The crossbow spanning mechanism is a textbook cognitive-edge scene: Daniel does not
@@ -1117,6 +1364,12 @@ Not relevant to this chapter.
 - [ ] Balloon contract negotiation on the page: Daniel holds firm, understands his
   own leverage. ~200-250K HS to Daniel after Macer's cut. Must be a scene, not a
   summary in Finance context.
+- [ ] Eratosthenes demonstration included — two sticks, sunny day, Earth's
+  circumference. Zero materials. (V2_REVISED_OUTLINE ch11)
+- [ ] Heliocentrism stated in one clause to Heras — NOT followed by F=ma or
+  thermodynamics. Cipher note: "for me, not for them." (TIMELINE_TEXTURE_AUDIT §(d))
+- [ ] Trebuchet described to Celer — falling-weight, scalable, no rope-rot.
+  (V2_REVISED_OUTLINE ch11)
 - [ ] One-sentence paragraphs: stay under 15%.
 
 **Updated Files list:**
@@ -1124,14 +1377,17 @@ Mandatory: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md (ch11),
 bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md.
 Chapter-specific: bible/02_characters.md (Celer full profile), bible/CHARACTER_
 VOICE_GUIDE.md (Celer: clipped, gallows-humored, quotes rough once in V2),
-bible/04_tech_schedule.md (Phase B: crossbow improvements, stirrups as easy wins),
-V2_STORY_PLOT_NOTES.md (§4.4 stirrups, §4.6 crossbow spanning aid).
+bible/04_tech_schedule.md (Phase B: crossbow improvements, stirrups, Eratosthenes,
+heliocentrism, trebuchet), V2_STORY_PLOT_NOTES.md (§4.4 stirrups, §4.6 crossbow
+spanning aid), TIMELINE_TEXTURE_AUDIT.md (§(d) Newtonian mechanics kept private).
 
 ---
 
 ### ch12 — To the Danube [REVISE]
 
-**Era/Date:** 101 AD, Daniel 20
+**[Part II begins here — ch12–22, "The Man Who Flew"]**
+
+**Era/Date:** 101–102 AD, Daniel 20–21
 
 **Core beats (V1 baseline — keep unless V2 notes say otherwise):**
 101; First Dacian War. Daniel sent toward the frontier with Celer to deploy tethered
@@ -1150,7 +1406,8 @@ Plant: Apollodorus relationship; the war's scale; dysentery in camp.
 - Age correction: Tyche called "fourteen-year-old" in V1 — she should be ~16 here
   (born ~85 AD; 101 AD puts her at ~16). The chapter may not reference her age
   directly, but if it does, correct to approximately 16. (V2_MASTER_CONTEXT §7
-  continuity errors; V2_CHAPTER_CHANGE_NOTES ch20 confirms the birth year)
+  continuity errors; V2_CHAPTER_CHANGE_NOTES ch20 confirms the birth year;
+  V2_REVISED_OUTLINE cross-chapter continuity)
 - Dysentery in camp: this thread is planted here per the baseline beats. The
   handwashing/boiling discipline Daniel deploys in camp is the first on-page test
   of the germ-framing practices at military scale. One concrete beat: Daniel
@@ -1159,6 +1416,27 @@ Plant: Apollodorus relationship; the war's scale; dysentery in camp.
   versus the adjacent one. This plants the 105-AD divergence milestone ("handwashing
   discipline demonstrably reducing infection in one specific institutional setting").
   (V2_STORY_PLOT_NOTES §5 — "By 105 AD" checklist)
+- ADD: **Stirrups confirmation** (if not fully shown in ch11, the army contact here
+  is the fallback placement). By the First Dacian War campaign in ch12, stirrups are
+  in the design-record. If seeded in ch11, ch12 shows the first actual deployment
+  or Celer referencing their adoption. Either way: stirrups are in the record by
+  this chapter. (V2_REVISED_OUTLINE ch12; master_outline §Part II stirrups)
+- ADD: **Pontoon-bridge improvement**. Apollodorus's bridge uses decimal notation for
+  load calculations. Daniel offers one structural concept — triangulated timber trusses
+  — that Apollodorus can evaluate. This is the first suggestion that Daniel's
+  mathematical knowledge has engineering applications beyond accounting. It is not a
+  lecture; it is Daniel following Apollodorus's calculations and seeing where to add.
+  (V2_REVISED_OUTLINE ch12; REVISION_DELTA §A4 "history measurably changed")
+- ADD: **Wound care texture** — Daniel watches a surgeon pour wine on a wound. He
+  asks its "proof"; no one knows the word. He begins distillation partly because of
+  this moment. He has nothing better to offer yet and knows it. The surgeon is skeptical
+  for years. (TIMELINE_TEXTURE_AUDIT §(e) wound care; V2_REVISED_OUTLINE ch12)
+- ADD: **Scurvy confusion** — a legionary has loose teeth and bleeding gums; "scurvy"
+  slips out of Daniel's mouth, then he pauses — he thought it was a sailor's disease.
+  He orders citrus anyway, cannot explain the mechanism, and is more surprised than
+  the cook when it works. The hesitation is real: he is not certain he has the right
+  diagnosis. (TIMELINE_TEXTURE_AUDIT §(e) scurvy; V2_REVISED_OUTLINE ch12;
+  master_outline §Part II scurvy)
 - Apollodorus meeting: "He looked at me the way I looked at a problem" — this is
   cited as excellently rendered. It also uses "looked at" — check against the
   maximum-2-per-chapter limit. (PROSE_PATTERNS §2.4)
@@ -1170,9 +1448,12 @@ Daniel's first military-contract technology. Per V2_HISTORICAL_IMPACT §Part 1:
 stable delta kites with a tethered observer platform and a signal-cord relay." The
 system at ch12 is more advanced than the crude linen bag of ch06; this is Phase B
 balloon work. The Apollodorus meeting is also a tech scene: his bridge uses decimal
-notation for load calculations and one structural concept (triangulated timber
-trusses) that Daniel can offer — this is the first suggestion that Daniel's
-mathematical knowledge has engineering applications beyond accounting.
+notation for load calculations and one structural concept (triangulated timber trusses)
+that Daniel can offer — the first suggestion that Daniel's mathematical knowledge has
+engineering applications beyond accounting (pontoon-bridge improvement). Additional
+ch12 tech texture: wound care observation seeds the distillation program; scurvy
+identification is uncertain and land-case confused — ordered on incomplete diagnosis,
+works unexpectedly. (V2_REVISED_OUTLINE ch12; TIMELINE_TEXTURE_AUDIT §(b)(e))
 
 **[V2] Finance context:**
 Phase B advancing toward Phase C. The First Dacian War balloon contract is in the
@@ -1180,7 +1461,17 @@ process of being struck. Per V2_DANIEL_FINANCES §Phase A: "Daniel sent toward t
 Danube frontier with Celer to deploy tethered observation balloons. The journey
 north…" The 800,000 HS contract (Daniel's share ~200,000-250,000 HS) is the deal
 that takes him from "interesting provincial" to "man the emperor knows by name."
-This chapter is the operational deployment phase of that deal.
+This chapter is the operational deployment phase of that deal. The army pay for
+balloon operations is ongoing here — regular campaign income, not a one-off. The
+stirrup design goes to the cavalry with no fee attached, a gift to the army; Tyche
+would record this as a cost-with-no-return if she were keeping the column, which she
+is not yet.
+
+**[V2] Financial detail (stream tag):**
+Balloon work draws ongoing army pay this chapter — not a lump sum; a running
+engagement Tyche will eventually give its own column. The stirrup design is given
+to the cavalry with no fee and no expectation of return; if someone were keeping
+the column it would read as a cost.
 
 **[V2] Cognitive edge notes:**
 The Apollodorus meeting is the chapter's cognitive edge showpiece. Daniel recognizes
@@ -1221,8 +1512,16 @@ Not relevant to this chapter.
 - [ ] No em dashes.
 - [ ] BLOCKER: "after I broke" tail must be cut.
 - [ ] Chapter close ends on "I held the rope" — explanatory tail cut.
-- [ ] Tyche age: if referenced, ~16 not "fourteen."
+- [ ] Tyche age: if referenced, ~16 not "fourteen." (b.~85 AD; ch12 ~101 AD)
 - [ ] "Looked at" uses: max 2 per chapter.
+- [ ] Pontoon-bridge improvement offered to Apollodorus (triangulated trusses or
+  decimal load calcs). Not a lecture — follows his work, adds one thing.
+  (V2_REVISED_OUTLINE ch12)
+- [ ] Wound care: surgeon pours wine, Daniel asks "proof," surgeon skeptical for
+  years. Distillation seed. (TIMELINE_TEXTURE_AUDIT §(e))
+- [ ] Scurvy: "scurvy" slips out, Daniel pauses — thought it was a sailor's disease;
+  orders citrus anyway; more surprised than the cook when it works.
+  (TIMELINE_TEXTURE_AUDIT §(e))
 - [ ] One-sentence paragraphs: stay under 15%.
 
 **Updated Files list:**
@@ -1231,7 +1530,8 @@ bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md.
 Chapter-specific: bible/02_characters.md (Apollodorus, Celer), bible/03_timeline.md
 (101-102 AD First Dacian War chronology), V2_HISTORICAL_IMPACT.md (§Part 1: First
 Dacian War divergence — kite reconnaissance, ambushes avoided), V2_DANIEL_
-FINANCES.md (§Phase A: First Balloon Contract).
+FINANCES.md (§Phase A: First Balloon Contract), TIMELINE_TEXTURE_AUDIT.md
+(§(b)(e) prompted + encounter-correction beats).
 
 ---
 
@@ -1274,8 +1574,12 @@ now carries; his reassessment of how far to push.
   load-bearing — it encodes that the vow is about pace and preparation, not a
   permanent prohibition. This is about safety protocols, not abandoning the
   technology. The distinction matters: one is a rational engineer's rule; the other
-  is traumatized-teenager superstition.
-  (V2_STORY_PLOT_NOTES §1.2 — "Reframe the vow")
+  is traumatized-teenager superstition. On-page, the distinction is stated in
+  Daniel's interiority: the vow covers manned fire-flight with untrained operators
+  in untested designs; it does NOT cover unmanned work, kite-class gliders, or
+  systematically tested manned platforms once the testing is done. Unmanned and
+  kite-class work resumes within one to two years. The vow is a standard, not a ban.
+  (V2_STORY_PLOT_NOTES §1.2; V2_REVISED_OUTLINE ch13; REVISION_DELTA §A2)
 
 **[V2] Tech requirements:**
 Phase B. The disaster is itself a tech record: Daniel's design failed under specific
@@ -1292,7 +1596,13 @@ not Daniel's employee. But it costs him politically: this is the moment that beg
 to complicate his relationship with the army. The 800,000 HS contract is already
 struck or in process; the disaster may delay payment or complicate renegotiation.
 Note for continuity: the financial terms of the balloon contract should be
-referenced somewhere in ch12-14 to establish the baseline.
+referenced somewhere in ch12-14 to establish the baseline. The balloon work
+continues to draw ongoing army pay through this chapter; that income runs in the
+background without being totaled.
+
+**[V2] Financial detail (stream tag):**
+The disaster does not appear on the cost side in any column Daniel keeps — Sabinus
+was the army's man. The balloon pay continues; what it costs him is not money.
 
 **[V2] Cognitive edge notes:**
 The death is the moment where Daniel's cognitive edge is most catastrophically
@@ -1371,7 +1681,9 @@ the deliberate strategy of Part III; a thing he chooses NOT to build yet.
   rush untrained people into an untested design." The word "rush" is load-bearing:
   this is about pace and preparation, not a permanent ban. Make the rational-engineering
   register explicit in the aftermath conversation with Heras or Celer. This is the
-  moment the vow is stated clearly. (V2_STORY_PLOT_NOTES §1.2)
+  moment the vow is stated clearly. ADD: within 1–2 years of Sabinus's death, unmanned
+  and kite-class work explicitly resumes. Stated on-page. The vow is honored; the work
+  continues. (V2_STORY_PLOT_NOTES §1.2; V2_REVISED_OUTLINE ch14; REVISION_DELTA §A2)
 
 **[V2] Tech requirements:**
 Phase B. Daniel decides what to build next: he chooses to concentrate on numerals
@@ -1389,7 +1701,14 @@ either in hand or pending final payment. He is now financially independent from
 Macer's personal household — not yet rich, but able to fund his own small
 experiments. The chapter's financial texture is the knowledge that he has first-
 money and what to do with it: not spend it on pleasures, not hoard it, but put it
-back into the workshop for Phase B work.
+back into the workshop for Phase B work. The balloon program continues as ongoing
+army pay through this chapter — not a lump sum but a running engagement; Tyche will
+eventually have a column for it.
+
+**[V2] Financial detail (stream tag):**
+The balloon work runs as a background income line — campaign pay, not a sum he
+has counted. He takes what arrives from the contract and puts it back into the
+workshop; the total is not yet a figure he tracks.
 
 **[V2] Cognitive edge notes:**
 The two conversations (Heras, Celer) that stay in subtext are the chapter's emotional
@@ -1445,7 +1764,7 @@ Chapter-specific: bible/02_characters.md (Heras, Celer), V2_STORY_PLOT_NOTES.md
 
 ### ch15 — The Chokepoint [REVISE]
 
-**Era/Date:** 103–105 AD, Daniel 22–24
+**Era/Date:** 102–104 AD, Daniel 21–23
 
 **Core beats (V1 baseline — keep unless V2 notes say otherwise):**
 Gaius Julius Hermes, freedman smith; the steel problem. Daniel gives the idea of
@@ -1478,9 +1797,34 @@ wall every dream dies on.
   number, Thulean, one I can do twice.'" He must speak in craft terms, not concepts.
   If V1 made him theoretically articulate, correct to short-form, results-oriented
   language. (V2_MASTER_CONTEXT §4, Hermes voice fingerprint)
+- ADD: **Baghdad-style battery**. Clay jar, copper strip, iron nail, vinegar — weak
+  tingle from both terminals. Daniel shows it to Hermes (unimpressed). Hermes reacts
+  with mild recognition — he has heard of similar jars from a Syrian trader. Daniel
+  isn't sure whether to feel relieved it's achievable or deflated it may not be his.
+  Files it as proof current is real. Seeds the Volta pile he will build in Phase C.
+  (V2_REVISED_OUTLINE ch15; master_outline §Part II Baghdad battery; TIMELINE_
+  TEXTURE_AUDIT §(c) Baghdad battery — Romans may already know it)
+- **Texture (Baghdad battery):** Hermes reacts with mild recognition — heard of similar
+  jars from a Syrian trader. Daniel isn't sure whether to feel relieved it's achievable
+  or deflated it may not be his. He files it without comment. (TIMELINE_TEXTURE_AUDIT
+  §(c))
+- ADD: **Barometer and thermometer**. Good glass tubes and mercury, both available from
+  Roman sources. The thermometer calibrates his distillation column and smelting
+  temperature estimates; it is immediately practical. A second barometer sent to a naval
+  contact via Celer as a storm-warning instrument (falling column = storm in 12–24 hours);
+  the naval contact does not trust it for two years, then does. (V2_REVISED_OUTLINE ch15;
+  master_outline §Part II barometer and thermometer)
+- ADD: **Wimshurst-type static machine filed**. Two counter-rotating glass discs with
+  metal foil sectors and brushes generate high voltage via electrostatic induction; Daniel
+  describes the geometry to a glassmaker and a metalsmith; the disc-pairs demonstrate a
+  strong spark across a gap. Filed explicitly as the high-voltage source for a future
+  spark transmitter — the first step toward radio. Not a dead end. (V2_REVISED_OUTLINE
+  ch16 NOTE: V2_REVISED_OUTLINE places the Wimshurst in ch16; ch15 is the correct
+  placement per master_outline §Part II boundary and REVISION_DELTA. If the steel/Hermes
+  work in ch15 is too dense, carry the Wimshurst to ch16. Do not place it in both.)
 
 **[V2] Tech requirements:**
-Phase C beginning. The thermocouple chain (Phase D) will eventually solve temperature
+Phase B-C beginning. The thermocouple chain (Phase D) will eventually solve temperature
 measurement; but that is years away. What Daniel can offer Hermes NOW:
 - Water-powered bellows for consistent forced air (already in place from Phase B)
 - Vernier calipers for measuring finished-product dimensions (Phase C easy win)
@@ -1488,8 +1832,15 @@ measurement; but that is years away. What Daniel can offer Hermes NOW:
   mechanism; Hermes implements it
 - Prize competitions for better results: Daniel offers Hermes specific targets
   (hold this edge at this angle for this many strikes) and pays for success
+- Baghdad battery (clay jar / copper / iron / vinegar — weak tingle; seeds the Volta
+  pile; Hermes notes mild recognition from a Syrian trader story)
+- Barometer and thermometer (mercury tubes in clarity-prize glass; thermometer
+  calibrates distillation; barometer to naval contact via Celer as storm warning)
+- Wimshurst-type static machine (ch15 or ch16; high-voltage spark from counter-rotating
+  glass discs; explicitly the seed for future radio transmission — not a dead end)
 The chokepoint is real and must be honored. Carbon-atmosphere control in the crucible
-is genuinely blocked until Phase D. (V2_TECH_DEEP_DIVE §Phase C)
+is genuinely blocked until Phase D. (V2_TECH_DEEP_DIVE §Phase C; V2_REVISED_OUTLINE
+ch15; master_outline §Part II tech beats)
 
 **[V2] Finance context:**
 Phase B-C. Daniel's workshop is now mature and generating steady income. He can
@@ -1497,7 +1848,19 @@ fund the steel program as a parallel R&D track. The failed batches cost money �
 charcoal, ore, Hermes's time — but Daniel can absorb this. The steel work is the
 highest-priority Phase C investment because everything downstream (steam pump,
 better cannons, marine chronometer) requires better steel. The chapter should make
-the economic stakes of the steel problem clear without belaboring them.
+the economic stakes of the steel problem clear without belaboring them. The lens
+prize posted here costs roughly a year's skilled wages — the largest prize outlay so
+far, more than the earlier glass-clarity prize by the distance between one month and
+twelve. The Baghdad battery, barometer, Wimshurst machine, and thermometer are
+expenses against future income: useful tools or seeds, but no revenue in this
+chapter; Marcia would file them as sunk R&D with no return yet visible.
+
+**[V2] Financial detail (stream tags):**
+Lens prize: posted at roughly a year's skilled wages — twelve times the earlier
+glass-clarity prize; the largest single prize outlay yet, and still a cost not a
+return. Baghdad battery, barometer, Wimshurst machine: all outlays against future
+programs; no revenue column yet. Marcia, if she were keeping the chapter, would
+write "sunk" beside each one and say nothing.
 
 **[V2] Cognitive edge notes:**
 Daniel knows steel works — he knows what good steel looks like, what it can do.
@@ -1534,6 +1897,13 @@ Not relevant to this chapter.
 - [ ] Hermes speaks in craft, not concepts. Short clauses. Results only.
 - [ ] No info-delivery monologue from Daniel about metallurgy — he sets targets
   and prizes, he does not lecture. (AGENT_WRITER_BRIEF_V2 Rule 7)
+- [ ] Baghdad battery demonstrated — Hermes mildly recognizes it; Daniel's
+  mixed-relief reaction on-page. (TIMELINE_TEXTURE_AUDIT §(c))
+- [ ] Barometer and thermometer built — thermometer calibrates distillation;
+  barometer to naval contact. (V2_REVISED_OUTLINE ch15)
+- [ ] Wimshurst machine (ch15 or ch16) — explicitly the high-voltage seed for a
+  future spark transmitter. NOT a dead end. Do not place in both ch15 and ch16.
+  (V2_REVISED_OUTLINE ch16; master_outline §Part II)
 - [ ] One-sentence paragraphs: stay under 15%.
 
 **Updated Files list:**
@@ -1542,14 +1912,15 @@ bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md.
 Chapter-specific: bible/02_characters.md (Hermes full profile), bible/CHARACTER_
 VOICE_GUIDE.md (Hermes: terse, physical, proud; hammer-broken; craft not concepts),
 bible/04_tech_schedule.md (Phase C: steel chokepoint — narrowed, not eliminated;
-thermocouple chain is the eventual unlock), V2_TECH_DEEP_DIVE.md (§Section 3,
-precision bootstrapping loop).
+Baghdad battery, barometer, thermometer, Wimshurst machine), V2_TECH_DEEP_DIVE.md
+(§Section 3, precision bootstrapping loop), TIMELINE_TEXTURE_AUDIT.md
+(§(c) Baghdad battery).
 
 ---
 
 ### ch16 — The New Figures [PASS]
 
-**Era/Date:** 103–105 AD, Daniel 22–24
+**Era/Date:** 104–106 AD, Daniel 23–25
 
 **Core beats (V1 baseline — keep unless V2 notes say otherwise):**
 Numerals and block-printed sheets spreading; the cultural ferment; the story-contest
@@ -1582,9 +1953,45 @@ and nerve. Plant: the contest; the fraud charge that will grow; Vibenius watchin
   required. "Private meal, not a presentation" is the WRONG framing. Use: Daniel
   makes pasta at the workshop kitchen; some participants are present; mixed reactions
   ("that's how barbarians eat"). The food arc is texture of community, not a solitary
-  activity. Also: plant the Gnaeus/tavern partnership seed here — a neighboring
-  tavern-keeper notices what Daniel's kitchen produces. One sentence is enough.
-  (C5 — per audit_food_arc.md Discrepancy 1 and 2)]
+  activity. Also: the Gnaeus/tavern partnership is formalized this chapter — a verbal
+  arrangement with the workshop-neighborhood tavern-keeper becomes a standing partnership;
+  Daniel supplies recipes (pasta, egg-forward dishes, fig-vinegar reduction), Gnaeus gets
+  customers, Daniel a small cut. Not a business; Gnaeus thinks of Daniel as "the barbarian
+  who has interesting ideas about food and is good for business." (V2_REVISED_OUTLINE ch16;
+  master_outline §Part II food arc; C5 — per audit_food_arc.md Discrepancy 1 and 2)]
+- ADD: **Phonograph concept filed** — triggered by an unrepeatable performance. A musician
+  plays something that won't be heard again; Daniel wants to keep it and cannot; by night's
+  end he has the stylus-on-wax idea. He could have built it years earlier; he just hadn't
+  needed to. He sees the commercial model (keep the recorder, sell the cylinders — the
+  music is the razor, the cylinders are the blade). Posts a materials prize for smooth
+  formable sheet; tells no one how it records. (V2_REVISED_OUTLINE ch16; master_outline
+  §Part II phonograph; TIMELINE_TEXTURE_AUDIT §(b) phonograph triggered by recording-moment)
+- **Texture (phonograph trigger):** A musician plays something that won't be heard again —
+  a specific private performance, unrepeatable. He wants to keep it and can't. By night's
+  end he has the stylus-on-wax idea. He could have built it years earlier; he just hadn't
+  needed to yet. (TIMELINE_TEXTURE_AUDIT §(b))
+- ADD: **Camera obscura (built, no use found at first)**. Pinhole box, oiled-linen screen,
+  inverted street image. Tyche asks what it does. "I'm not entirely sure yet." It sits in
+  the corner. The photography link is years away; right now it is a toy he built because he
+  could. (V2_REVISED_OUTLINE ch16; master_outline §Part I camera obscura; TIMELINE_TEXTURE_
+  AUDIT §(a) camera obscura builds it, no idea what for)
+- ADD: **Card decks designed and first run produced** — pips, Roman numerals, and
+  Hindu-Arabic numerals on every numbered card. First card game demonstrations in the
+  workshop (Go Fish or War — no reading needed). The card design carries three simultaneous
+  information systems on every numbered card: pip count, Roman numeral, Hindu-Arabic numeral.
+  One object, three audiences. (V2_REVISED_OUTLINE ch16; master_outline §Part II first card
+  game)
+- ADD: **Chess introduced** — at a dinner or salon, Daniel teaches a small group the rules
+  from memory (pieces renamed: general, legate, cavalry, elephant, scout — no cultural
+  baggage). Within weeks someone is playing it obsessively. He does not immediately register
+  this as a commercial opportunity. (V2_REVISED_OUTLINE ch16)
+- ADD: **Wimshurst-type static machine** (if not placed in ch15). Two counter-rotating
+  glass discs with metal foil sectors and brushes generate high voltage via electrostatic
+  induction. Demonstrates a strong spark. Filed explicitly as the high-voltage source for
+  a future spark-gap transmitter. The first step toward radio. This is NOT a dead end —
+  the spark transmitter is achievable in Daniel's lifetime. (V2_REVISED_OUTLINE ch16;
+  master_outline §Part II Wimshurst; REVISION_DELTA §A2 radio canon) NOTE: place in ch15
+  OR ch16 — do not place in both.
 
 **[V2] Tech requirements:**
 Phase C. Numerals and block-printed sheets spreading is the chapter's tech content.
@@ -1602,6 +2009,17 @@ by 105 AD. He can fund the first prize. The contest's initial prize fund is a
 rational investment: it creates content for the press, distributes the numerals, and
 builds his cultural standing. Daniel should think about the economics of the contest
 briefly — not a lecture, but the calculation visible in his thinking.
+
+**[V2] Financial detail (stream tags):**
+Cards, chess, lottery seeds: ambient income that "doesn't move the column" — Tyche
+might note a card-run or a game in the same breath as an ink order, the volume
+implied and never totaled. Camera obscura: he builds it, it works, and he cannot
+name a revenue column for it — "I'm not entirely sure yet" applies to the money
+as much as the purpose. Gnaeus tavern partnership: a small cut, or no direct
+attribution — Daniel supplies the ideas; Gnaeus supplies the customers; the
+arrangement is verbal and informal. Phonograph concept: filed; the commercial
+model (keep the cutter, sell the cylinders) is clear to him; for now it is a
+prize spec for smooth formable sheet with no revenue attached.
 
 **[V2] Cognitive edge notes:**
 The salon parry ("Call me a charlatan when the children stop dying") is the cleanest
@@ -1637,7 +2055,21 @@ Not relevant to this chapter.
 - [ ] No future-vantage narration.
 - [ ] Salon parry preserved as not a clean win.
 - [ ] Contest idea has a concrete trigger, not just a design-spec emergence.
-- [ ] Heliocentrism stated in one conversation.
+- [ ] Heliocentrism stated in one conversation (if not already placed in ch11 with
+  Heras; ch16 is the secondary placement with the educated circle).
+- [ ] Phonograph triggered by an unrepeatable performance — he could have built it
+  earlier but hadn't needed to. (TIMELINE_TEXTURE_AUDIT §(b))
+- [ ] Camera obscura built with no immediate use found — Tyche asks what it does;
+  "I'm not entirely sure yet." (TIMELINE_TEXTURE_AUDIT §(a))
+- [ ] Card decks produced — three information systems per numbered card.
+  (V2_REVISED_OUTLINE ch16)
+- [ ] Chess introduced at a social gathering — renamed pieces, no announcement of
+  commercial potential yet. (V2_REVISED_OUTLINE ch16)
+- [ ] Gnaeus tavern partnership formalized this chapter (verbal arrangement, standing
+  partnership, Daniel's small cut). (V2_REVISED_OUTLINE ch16)
+- [ ] Wimshurst machine (ch15 OR ch16 — one placement only) — explicitly named as the
+  high-voltage seed for future spark-gap transmitter. NOT a dead end.
+  (V2_REVISED_OUTLINE ch16; REVISION_DELTA radio canon)
 - [ ] One-sentence paragraphs: stay under 15%.
 
 **Updated Files list:**
@@ -1646,13 +2078,15 @@ bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md.
 Chapter-specific: bible/02_characters.md (Crispus, Vibenius), V2_STORY_PLOT_NOTES.md
 (§4.7 heliocentrism in conversation; §7 the contest as economic flywheel — nine
 feedback loops), V2_HISTORICAL_IMPACT.md (§3 economic divergence 98-110 AD: rag
-paper and printed sheets in the Forum by 103-105 AD).
+paper and printed sheets in the Forum by 103-105 AD), TIMELINE_TEXTURE_AUDIT.md
+(§(a) camera obscura, §(b) phonograph trigger).
 
 ---
 
-### ch17 — Citizenship [PASS]
+### ch17 — Citizenship [REVISE]
 
-**Era/Date:** 104–105 AD, Daniel 23–24
+**Era/Date:** 104–105 AD, Daniel ~23 (b.~81 AD; citizenship ~104–105 AD per
+REVISION_DELTA §B; cross-chapter continuity anchors)
 
 **Core beats (V1 baseline — keep unless V2 notes say otherwise):**
 SET-PIECE. First audience with Trajan (soldierly, practical, likes builders). A
@@ -1665,24 +2099,34 @@ being freed by the head of the system he hates. Plant: the name; the will
 (encyclopedia seed); Trajan's favor as shield; the new Macer dynamic.
 
 **[V2] Story/Plot additions:**
-- Chapter STATUS is PASS. No structural changes required. (V2_CHAPTER_CHANGE_NOTES
-  ch17 — special checks both PASS)
+- Chapter STATUS is REVISE (age/era alignment required; manned balloon resumption
+  must be on-page). (REVISION_DELTA §A2; V2_CHAPTER_CHANGE_NOTES ch17)
 - Chapter close: "named for the machine itself, the way you'd burn a man's brand
   off and burn your own on in the same hour." States the ironic gap outright. The
   irony is already in the name-giving scene; trust it. Trim or reframe so it ends
   on action or image. (V2_CHAPTER_CHANGE_NOTES ch17)
-- Eratosthenes demonstration: this is the correct chapter placement for Daniel's
-  Earth-circumference demonstration. Per V2_MASTER_CONTEXT §Change 5 item 5: "Two
-  sticks, two shadows, Earth's circumference. Daniel performs this in Part I (no
-  materials needed)." The ch17 meeting with Trajan is the ideal moment — demonstrating
-  that the Earth is a calculable sphere in front of a general who loves builders.
-  It requires nothing but two sticks and an explanation. It establishes Daniel's
-  scientific credibility with Trajan beyond the balloon. (V2_STORY_PLOT_NOTES §5
-  by-105-AD checklist: "Eratosthenes proof in the encyclopedia" — plants here if
-  not earlier)
+- **Age canon**: Daniel is ~23 here (b.~81 AD; citizenship ~104–105 AD). Any
+  reference to age 25 or year 106 is wrong — correct it. (REVISION_DELTA §B;
+  V2_REVISED_OUTLINE cross-chapter continuity)
+- Eratosthenes demonstration: if not placed in ch11, this is the correct fallback
+  placement for Daniel's Earth-circumference demonstration before Trajan. Two sticks,
+  two shadows, Earth's circumference — zero materials. Establishes scientific
+  credibility with Trajan beyond the balloon. Enters the first encyclopedia draft.
+  (V2_STORY_PLOT_NOTES §5 by-105-AD checklist; V2_REVISED_OUTLINE ch17; NOTE: ch11
+  is the preferred first placement; ch17 is the confirmation-before-Trajan placement.
+  Do not do both at length — reference the prior demonstration or show Trajan receiving
+  it for the first time.)
 - The Roman name must appear explicitly and be logged as "Marcus Ulpius Danihel."
   The canon note is firm. (V2_CHAPTER_CHANGE_NOTES ch17 — special check PASS: already
   correct in V1, preserve it)
+- ADD: **Manned balloon program resumes** — stated on-page. This is the canonical
+  direction change. Trained operators with 50+ hours tethered flight time, reinforced
+  baskets, written safety protocols, voluntary consent. By this chapter's end or by
+  ch18, manned balloon archers are operational. Daniel makes the calculation (military
+  advantage saves more lives than the program risks) and names it to himself. This is
+  the chapter where he chooses to continue. The vow is honored — it covered untrained
+  operators in untested designs; it does not cover this program. (V2_REVISED_OUTLINE
+  ch17; master_outline §Part III manned balloon archers doctrine; REVISION_DELTA §A2)
 - [Required: Full scene. Daniel confronts his discomfort with balloons as weapons.
   Trajan/military pressure vs. Daniel's unease. The manned balloon program resumes in
   this chapter — and with Trajan present, the military application is explicit. Daniel
@@ -1690,7 +2134,8 @@ being freed by the head of the system he hates. Plant: the name; the will
   not abstract future harm, but the specific upcoming uses Trajan has already described.
   Cannot be a parenthetical — needs a beat with real emotional weight. Daniel makes
   the calculation (military advantage saves more lives than the program risks) but the
-  calculation must cost him something visible. This is moral weight, not avoidance.]
+  calculation must cost him something visible. This is moral weight, not avoidance.
+  (REVISION_DELTA §A2; V2_REVISED_OUTLINE ch17)]
 
 **[V2] Tech requirements:**
 Phase C. The demonstration for Trajan should show something beyond the balloon
@@ -1716,6 +2161,12 @@ V2_DANIEL_FINANCES §Phase B: "Worth at age 21 (102 AD): Personal holdings: 150,
 roughly 200,000-400,000 HS in personal holdings. The citizenship is not about money
 — it's about the protection it provides and the legal capacities (will, marriage)
 it opens.
+
+**[V2] Financial detail (stream tag):**
+The manumission has a price, though Trajan's imperial grant removes the ordinary
+purchase mechanism — the cost is political rather than monetary, and the sum is
+never named. Daniel does not track what his freedom cost or what he now owes; that
+arithmetic belongs to other people.
 
 **[V2] Cognitive edge notes:**
 The Trajan meeting is a cognitive-edge stress test. Trajan is "soldierly, practical,
@@ -1751,9 +2202,17 @@ Not relevant to this chapter.
 - [ ] No future-vantage narration.
 - [ ] "Marcus Ulpius Danihel" must appear explicitly.
 - [ ] Chapter close ends on image or action, not stated irony.
-- [ ] Eratosthenes demonstration included for Trajan.
+- [ ] Daniel's age is ~23 (b.~81 AD; citizenship ~104–105 AD). Remove any reference
+  to age 25 or year 106 AD. (REVISION_DELTA §B)
+- [ ] Eratosthenes demonstration included — two sticks, sunny day, Earth's
+  circumference, shown to Trajan as a demonstration of mathematical knowledge.
+  (V2_REVISED_OUTLINE ch17)
 - [ ] Trajan's voice: soldierly, practical, not given to abstraction. He asks about
   military applications before he asks about anything else.
+- [ ] Manned balloon program resumption stated on-page — trained operators, 50+ hours
+  tethered, safety protocols, voluntary consent. Daniel names his calculation.
+  The vow is honored (covers untrained operators in untested designs — not this).
+  (REVISION_DELTA §A2; V2_REVISED_OUTLINE ch17)
 - [ ] Balloon moral struggle scene is present and has emotional weight — NOT a
   parenthetical. Daniel's discomfort with balloons as weapons must be on the page.
 - [ ] One-sentence paragraphs: stay under 15%.
@@ -1762,15 +2221,16 @@ Not relevant to this chapter.
 Mandatory: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md (ch17),
 bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md.
 Chapter-specific: bible/02_characters.md (Trajan, Macer), bible/08_canon_log.md
-(Roman name canon: "Marcus Ulpius Danihel" logged), V2_STORY_PLOT_NOTES.md
-(§5 by-105-AD checklist; V2_MASTER_CONTEXT §Change 5 item 5 Eratosthenes
-demonstration).
+(Roman name canon: "Marcus Ulpius Danihel" logged; citizenship ~104–105 AD,
+Daniel ~23; manned balloon program resumes ch17), V2_STORY_PLOT_NOTES.md
+(§5 by-105-AD checklist; §1.2 manned flight resumption under safety regime),
+REVISION_DELTA.md (§A2 manned balloon archers, §B age/era table).
 
 ---
 
 ### ch18 — The Siege [REVISE]
 
-**Era/Date:** 105–106 AD, Daniel 24–25
+**Era/Date:** 105–106 AD, Daniel ~24–25
 
 **Core beats (V1 baseline — keep unless V2 notes say otherwise):**
 105-106, Second Dacian War. Daniel, now the emperor's freedman, is bound to serve.
@@ -1806,8 +2266,18 @@ killing paradox; Daniel's deepening unease.
   untrained people in untested designs) is honored; the work has continued. Manned
   observation balloons with crossbowmen are now available. The fall of
   Sarmizegetusa's water supply is identified from kite altitude in days, not weeks.
-  This is a required divergence beat. (V2_HISTORICAL_IMPACT §Part 1; V2_STORY_PLOT_
-  NOTES §1.2)
+  **Crossbow-armed balloon archers are operational military doctrine by this chapter —
+  not an experiment.** This is the canonical direction change confirmed in REVISION_DELTA
+  §A2. Do not describe them as experimental or uncertain. (V2_HISTORICAL_IMPACT §Part 1;
+  V2_STORY_PLOT_NOTES §1.2; V2_REVISED_OUTLINE ch18; REVISION_DELTA §A2)
+- ADD: **Spyglass (~5x) first on-page test**. Daniel has been funding the glass
+  clarity prize; this is the payoff. It works approximately; it is not perfect. The
+  military utility at siege range is immediate and obvious. (V2_REVISED_OUTLINE ch18)
+- ADD: **Fire prevention pitched to magistrates**. Daniel proposes a fire-watch and
+  brigade system; he is rebuffed; he manages his own compound instead (cistern kept
+  full, bucket-chain positions marked, night-watch rota). The defeat is stated once
+  and not revisited as a complaint. (V2_REVISED_OUTLINE ch18; master_outline §Part II
+  fire prevention pitched)
 - **[CANNON ARC — Dacian War use]** The gunpowder is already "loose" by this point
   (niter beds pre-ch21 have been running; quarrymen and military engineers have seen
   demonstrations). Whether Daniel directly supplies powder to the siege or simply
@@ -1844,6 +2314,16 @@ contract phase. His personal wealth is mid-equestrian range, growing. The Dacian
 gold that floods Rome after the campaign is historical and is background color — it
 doesn't directly affect Daniel's finances but it enriches the empire that is his
 patron.
+
+**[V2] Financial detail (stream tags):**
+Spyglass (~5x): first on-page test; the glass-prize chain starting to produce
+something a wealthy man might pay for — a saleable luxury, not yet a revenue line,
+but the shape of one is now visible. Balloon archers: operational military doctrine
+by this chapter; the recurring value to the army (envelopes wear, rigs are
+replaced, operators must be trained) is what makes the balloon business recurring
+rather than a one-off — this chapter is where that permanence becomes apparent, even
+if the future revenue is not yet quantified. Daniel does not add up what the archers
+cost him to field; someone else carries that column.
 
 **[V2] Cognitive edge notes:**
 The water-supply sabotage is Daniel's most morally ambiguous cognitive-edge use.
@@ -1884,8 +2364,14 @@ Not relevant to this chapter.
 - [ ] No em dashes.
 - [ ] No future-vantage narration.
 - [ ] Pamphilus has minimum 4 spoken lines in fragmented, wrong-grammar register.
-- [ ] Manned balloon with crossbowmen present at Sarmizegetusa.
+- [ ] Manned balloon with crossbowmen present at Sarmizegetusa — described as
+  established doctrine, not experimental. This is the canonical direction. Archers
+  are operational by this chapter per REVISION_DELTA §A2.
 - [ ] Celer alive; not killed here.
+- [ ] Spyglass (~5x) first on-page test — works approximately, not perfectly.
+  (V2_REVISED_OUTLINE ch18)
+- [ ] Fire prevention pitched to magistrates — rebuffed; Daniel manages own compound.
+  Defeat stated once, not revisited. (V2_REVISED_OUTLINE ch18)
 - [ ] One-sentence paragraphs: stay under 15%.
 
 **Updated Files list:**
@@ -1895,9 +2381,10 @@ Chapter-specific: bible/02_characters.md (Pamphilus, Celer, Apollodorus),
 bible/CHARACTER_VOICE_GUIDE.md (Pamphilus: fragmented, wrong tense, missing
 articles, concrete — specific DO/DON'T lines), bible/03_timeline.md (105-106 AD
 Second Dacian War chronology), V2_HISTORICAL_IMPACT.md (§Part 1: Second Dacian
-War — substantially changed; balloon archers, Sarmizegetusa water supply identified
-faster, ~35% lower casualties), V2_STORY_PLOT_NOTES.md (§1.2 manned flight
-resumption — safety protocols, voluntary operators, 50+ hours tethered).
+War — substantially changed; balloon archers operational doctrine, Sarmizegetusa
+water supply identified faster, ~35% lower casualties), V2_STORY_PLOT_NOTES.md
+(§1.2 manned flight resumption — safety protocols, voluntary operators, 50+ hours
+tethered), REVISION_DELTA.md (§A2 manned balloon archers canonical direction change).
 
 ---
 

@@ -68,7 +68,7 @@ A major Roman campaign now carries: manned observation balloons with archer crew
 
 [REAL/DIV] The revolt erupts for reasons nothing Daniel has done can change: Hadrian's decision to refound Jerusalem as Aelia Capitolina, his prohibition of circumcision, his plan to build a temple to Jupiter on the Temple Mount. The political stupidity that started this is unchanged.
 
-[DIV] Rome's military response is, however, substantially more capable. Balloon observation is devastating against guerrilla warfare in mountainous terrain. Bar Kokhba's forces depend on the Judean hills the way Decebalus depended on Transylvania's passes — terrain gives them ambush advantage, concealment, and the ability to concentrate suddenly. Aerial observation strips all of that. Known cave hideout complexes can be located from above. [DIV] The revolt is suppressed approximately 14–18 months sooner than the historical 135 AD, with Roman legionary casualties perhaps 30–35% lower. The Jewish diaspora still occurs. Judaea is still renamed Syria Palaestina. The tragedy is not averted; it is merely more efficient from Rome's perspective. Daniel knows this and hates it. He made this possible.
+[DIV] Rome's military response is, however, substantially more capable. Balloon observation is devastating against guerrilla warfare in mountainous terrain. Bar Kokhba's forces depend on the Judean hills the way Decebalus depended on Transylvania's passes — terrain gives them ambush advantage, concealment, and the ability to concentrate suddenly. Aerial observation strips all of that. Known cave hideout complexes can be located from above. [DIV] The revolt is suppressed approximately 14–18 months sooner than the historical 135 AD, with Roman legionary casualties perhaps 20–25% lower. The Jewish diaspora still occurs. Judaea is still renamed Syria Palaestina. The tragedy is not averted; it is merely more efficient from Rome's perspective. Daniel knows this and hates it. He made this possible.
 
 ---
 
@@ -92,7 +92,7 @@ His program: germ theory framing for disease transmission has been taught throug
 
 His optical semaphore proposal — relay stations with standardized visual signals, like the Chappe system — is achievable with no technology beyond his printing press and his map-making. He needs: trained operators at relay stations one day's visibility apart, and a printed codebook that standardizes signals. With his press, he can produce the codebooks. The relay stations are a construction project, not a technology problem.
 
-[DIV] By 130 AD, an experimental optical semaphore line runs from Rome to the Rhine crossing at Mogontiacum (Mainz) — approximately 1,200 miles. In good weather, a signal travels this route in approximately 6–8 hours. In bad weather, in a day. This does not solve the communication problem, but it transforms it: Rome can now communicate with its northern frontier in hours instead of weeks, for pre-coded message types (invasion warning, reinforcement request, emperor's death). The system is military, not commercial, and it is under army control.
+[DIV] By 130 AD, an experimental optical semaphore line runs from Rome to the Adriatic coast — the first operational segment. In good weather, a signal travels this route in a matter of hours rather than days. This does not solve the communication problem, but it proves the system and transforms thinking about what is possible. The full Rome-to-Rhine line, reaching the crossing at Mogontiacum (Mainz) — approximately 1,200 miles — is not completed until approximately 150–155 AD. The system is military, not commercial, and it is under army control.
 
 [DIV] Daniel makes the railroad argument to Hadrian around 128 AD and to Antoninus Pius around 145 AD. He frames it explicitly as the solution to imperial communication lag: "The empire is too large for horse-speed governance. If you want what I built to last, you need roads your messages can travel faster on — mechanical roads." High-pressure steam is correctly blocked — he knows this. But he argues for the principle, plants the vocabulary, and writes a detailed encyclopedia entry on atmospheric-to-high-pressure steam development that is meant to be found and acted on by someone with better metallurgy than he has. Whether Antoninus Pius acts is unclear; he is a cautious, conservative emperor. But he hears the argument. He takes the encyclopedia entry seriously.
 
@@ -249,7 +249,7 @@ He moved rungs on a ladder he will never see someone climb. This is the correct 
 **Verdict: Tactical advantages significant; strategic outcome unchanged.** Balloon archers wreck Parthian cavalry tactics in set-piece engagements. Supply waste reduced 15% by decimal accounting. Ctesiphon falls faster. But Mesopotamia is still ungovernable from Rome at 1,500-mile supply lines, and the rear revolts are still driven by political rage no technology can address. Trajan still retreats. He still dies at Selinus, August 117 AD. The difference: he dies with better ground truth about why it failed, and the army comes home with fewer gaps.
 
 ### Bar Kokhba Revolt, 132–135 AD
-**Verdict: Shorter, not different in character.** Erupts for historical reasons unchanged by Daniel. Aerial observation strips Bar Kokhba's terrain advantage in the Judean hills. The revolt ends 14–18 months sooner, with Roman casualties perhaps 30–35% lower. The diaspora, the provincial renaming, the founding of Aelia Capitolina — all unchanged. Faster is not better. Daniel knows this.
+**Verdict: Shorter, not different in character.** Erupts for historical reasons unchanged by Daniel. Aerial observation strips Bar Kokhba's terrain advantage in the Judean hills. The revolt ends 14–18 months sooner, with Roman casualties perhaps 20–25% lower. The diaspora, the provincial renaming, the founding of Aelia Capitolina — all unchanged. Faster is not better. Daniel knows this.
 
 ---
 
@@ -269,9 +269,9 @@ For each chapter's year, a writer can quickly check which changes would be perce
 | 113–116 | **Balloon archers in Parthian campaign** devastating cavalry; printed maps duplicated for legates |
 | 118–120 | First steam pump operating in Hispania; Hadrian examining patent law; decimal accounts in treasury |
 | 121–128 | Printed census forms; eight steam pumps; ocean voyages underway; optical semaphore line begun |
-| 128–135 | Rome-to-Rhine semaphore line operational; printed encyclopedia circulating; Bar Kokhba suppressed faster |
+| 128–135 | Rome-to-Adriatic semaphore line operational; printed encyclopedia circulating; Bar Kokhba suppressed faster |
 | 136–145 | Three Atlantic probe voyages complete; 80–100 water-powered industrial installations; contest entrants teaching each other |
-| 145–155 | Atlantic ship departs; variolation program established; double-entry ledger forms commercially sold; steam pump in Rome |
+| 145–155 | Atlantic ship departs; variolation program established; double-entry ledger forms commercially sold; steam pump in Rome; Rome-to-Rhine semaphore line completed (~150–155 AD) |
 
 ---
 

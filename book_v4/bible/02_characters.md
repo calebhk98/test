@@ -446,6 +446,108 @@ inarticulate/crude characters instead of silencing them.
 
 ---
 
+## ADDITIONAL NAMED CHARACTERS (identified in prose; profiled V2)
+
+These recur or carry an arc beat but had no bible entry. Added from a full-manuscript
+character census. Keep brief; expand only if a chapter needs it.
+
+### EROS — freedman letterer/pressman; the print-shop spine (ch16+, ~15 chapters)
+- Greek-trained letter-cutter. Cuts the first wooden blocks (the Homer line), then runs
+  the press for decades; trains the apprentice Vitalis; eyes failing by the late books;
+  witnesses the collegium endowment deed; dies after passing the craft on (ch48 area).
+- Function: the human continuity of the printing enterprise — the press is not abstract,
+  it is Eros's hands. The keeper-chain's craft side, parallel to Tyche's cipher side.
+- Voice: a craftsman with ink to the elbow; concrete, work-focused, not eloquent; no
+  epigrams. Speaks of blocks, lines, and lamp-black, not ideas.
+
+### STICHUS — water-boy then yard worker; recurring household presence (ch05+, ~7 chapters)
+- Starts ~10 as the workshop water-carrier who teaches Daniel his first word ("aqua") and
+  dislikes him; grows "into his shoulders" and works the wharf yard for the enterprise.
+- Function: a measure of time passing in the household; a minor walk-on who recurs.
+- Voice: child's bluntness early; later an unremarkable working register. Not a philosopher.
+
+### DEMETRIOS — Greek glass-cutter/lens-grinder (ch23, ch26, ch38)
+- The craftsman who grinds lens discs for the spyglass/telescope work, reluctantly and
+  with frustration; later sells spyglasses; the glass keeps defeating him (seeds, waves,
+  bad pours). Embodies the optics chokepoint the way Hermes embodies the steel one.
+- Voice: impatient, proud of his craft, sceptical of Daniel's tolerances. Demands of glass.
+
+### DRUSUS — Macer's guild/materials contact and intermediary (ch05, ch07, ch15)
+- The connection through whom Daniel posts early problem-specs (the glass-clarity prize)
+  to the craft networks; spreads word of prizes among craftsmen.
+- Voice: functional, transactional; a fixer. Brief.
+
+### METTIUS — ambitious equestrian; salon host (ch10, ch16, ch25)
+- Wealthy striver who hosts the literary salons where Daniel is displayed and where Crispus
+  attacks him; lends his house for set-pieces.
+- Voice: socially eager, status-conscious; a host, not a thinker.
+
+### GLABRIO — bronzesmith; the recurring prize near-miss (ch19, ch26)
+- A craftsman who shows up repeatedly in the prize records attempting tolerance specs
+  (the cylinder bore, alloy work) and getting close, never quite winning; Daniel knows his
+  name though they rarely speak. Embodies the prize model distributing risk to people who
+  can least afford the near-miss. [Note: the outlines reference further Glabrio appearances
+  (ch21/ch29) and a later retainer — the written prose currently has him in ch19 and ch26.]
+- Voice: terse craftsman; mostly seen on the page through his submissions, not dialogue.
+
+### BITUITUS — Gaulish captain/yard-master; the Atlantic program (ch36, ch44, ch46)
+- The leather-faced Gaulish captain Daniel quietly funds years before the Hadrian audience;
+  pilots/organizes the western probes out of the Tagus and later the Gaulish yards; builds
+  the deep-hulled, double-planked ocean ships and is proud of them.
+- Function: the hands that carry out the crossing program; its continuity after Daniel.
+- Voice: blunt seaman/builder; practical; proud of a hull the way Hermes is of a heat.
+
+### ILLA — woman from the western shore; the contact arc's moral center (ch36+)
+- Came back with Bituitus's second probe; somewhere past thirty; sits in the tally-room
+  and learns the new figures faster than any Roman clerk Daniel has tested. Her own name is
+  one Daniel "could not hold in his Latin mouth"; she accepts, without enthusiasm, being
+  called "Illa" ("her" — a placeholder, not her name). She has two words for her homeland:
+  one meaning roughly "the people's land," the other her kin-group's name, which Daniel does
+  not repeat because it is theirs.
+- Function: the living rebuke to the "uninhabited" lie; the person from the world that
+  existed before Daniel arrived, who has no idea what that means. Handle with restraint and
+  dignity; she is not a symbol to be explained, and her interiority is not Daniel's to narrate.
+- Voice: minimal on the page; watchful; competent at figures. Do not give her speeches or
+  make her gratitude/forgiveness legible.
+
+### GNAEUS — tavern-keeper; the food-arc partner (ch34; relationship spans Part II onward)
+- Runs a thermopolium near the Aemilian bridge. Daniel gives him recipes (the pasta
+  preparation, later the proto-ketchup) years earlier; Gnaeus works them into his counter
+  rotation without ceremony or attribution and stops thinking of them as Daniel's. "The
+  barbarian who has interesting ideas about food and is good for business."
+- Voice: a working tavern-keeper; unsentimental, commercial; food is business, not art.
+
+### MARCELLUS — contest winner; the protégé who goes wrong (ch38)
+- A freedman's son from the Transtiberim; won a prize three years earlier (a water-lifting
+  screw for mine shafts). Took Daniel's introductions to two mine-operators, posed as
+  Daniel's agent with authority he never had, and extracted ~8,000 sesterces in advance for
+  improvements he couldn't and didn't make. Daniel repaid the operators with interest and
+  cut him off; Marcellus's reply was "more aggrieved than apologetic."
+- Function: the system Daniel built being gamed; the prize model's failure mode embodied.
+  Not a cartoon villain — a man who convinced himself none of it was wrong.
+
+### STATIUS — farrier; the unexpected prize winner (ch24)
+- A horseshoe-maker who submits a decades-deep iron heat-colour/temperature table (built by
+  his father and grandfather, calibrated against thousands of real horseshoes) — cruder than
+  Daniel's own data and more useful. The prize model surfacing craft knowledge Daniel could
+  not have reached. (Sends it via his nephew.)
+- Voice: not on the page much; the table speaks for him.
+
+### SEXTUS PEDANIUS — glassmaker of Brundisium; the first prize payoff (ch07)
+- Wins the first glass-clarity prize with a bone-ash decolourant technique his father
+  developed for decorative vessels — a method Daniel did not know existed, bought for ~200
+  sesterces. The beat that clarifies the prize model: he is buying disclosure of existing
+  Roman craft knowledge invisible to him, not inventing.
+- Voice: a working glassmaker; brief.
+
+### SATURNINUS — optio; field-sanitation/flux (ch12, ch14)
+- A campaign optio (distinct from the unnamed ch02–04 optio). Explains flux mortality in
+  camp; moves Daniel away from Sabinus's body after the fall; helps keep the maimed Naso on
+  the army's strength.
+- Voice: frontier soldier; matter-of-fact about death; short.
+
+---
+
 ## REAL HISTORICAL FIGURES (use carefully; mostly offstage)
 - **TRAJAN** (emperor from 98, in Rome from 99, d. 117): soldierly, practical,
   affable, a builder who genuinely likes engineers. Personal audiences are major
@@ -467,7 +569,24 @@ inarticulate/crude characters instead of silencing them.
 - **PLINY THE YOUNGER** — NOTE: this cameo was never written in V1. The ch51
   letter interlude used invented correspondents (Norbanus Rufus / Caecilius
   Priscus), not Pliny. In V2, either use him as originally planned or note
-  explicitly that the letter belongs to invented figures.
+  explicitly that the letter belongs to invented figures. CONFIRMED: the written
+  ch51 letter is headed "GAIUS NORBANUS RUFUS TO HIS FRIEND SEXTUS CAECILIUS
+  PRISCUS" — both are invented figures, a generation after Daniel's death; Rufus is
+  the snobbish narrator-of-record who half-credits the Thulean. Keep them as the
+  ch51 voices; do not swap in Pliny unless deliberately revising.
+- **DECEBALUS** — King of Dacia; the offstage antagonist of the Dacian wars (ch12–18).
+  Encamped behind "the Loaf"; negotiates, fights, and finally cuts his own throat rather
+  than be taken, his head carried south as proof. A historical force, not a voice character.
+- **ANTONINUS PIUS** — Hadrian's successor (ch46+). A grave, decent, unhurried senator
+  who will "die in his own bed, having gone nowhere and refused every adventure" — no
+  appetite for the ocean program, which is why its imperial prestige-funding lapses under
+  him (while the institutional/commercial crossings continue). Voice: even, careful,
+  unspectacular; the anti-Trajan, anti-Hadrian.
+- **THE FOUR CONSULARS** (Palma, Celsus, Nigrinus, Lusius Quietus) — executed without
+  trial at the start of Hadrian's reign (ch33); the purge that poisons the Senate's trust
+  and frightens Daniel's circle. **Lusius Quietus** (the Moorish cavalry commander, also
+  ch29) is the one with a face in the prose; the others are mostly names — deliberately, as
+  Daniel "cannot even hold" them. Historical; offstage.
 
 ---
 
