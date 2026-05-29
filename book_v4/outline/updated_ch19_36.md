@@ -92,6 +92,12 @@ himself (initial prize purse of 100-500 HS for winners is trivial at this wealth
 the point is the institution, not the money). The contest is his first institutional
 investment, as opposed to a commercial transaction. Macer would find this puzzling.
 (V2_DANIEL_FINANCES Phase B; §3)
+**[FINANCE TAG — ch19]** The prize purse is one hundred denarii — a third of a
+legionary's year, stated plainly in the announcement broadsheet; the betting counters
+cover their own costs and the money flows back into the next prize round, not into
+Daniel's hand; lottery ticket sales are a press-demand multiplier, volume noted by Tyche,
+total withheld; bingo and board-game cards earn what Marcia would call ambient coin,
+never enough to move a column.
 
 **[V2] Cognitive edge notes:**
 Daniel knows the DARPA/Longitude Prize model: specify outcomes, pay for success, let
@@ -209,6 +215,10 @@ mentioned in V2_DANIEL_FINANCES as the transaction that reveals Daniel's foreign
 Macer — freeing a perfectly good secretary for no business reason. Show Macer's reaction
 as baffled contempt, not anger. The gap between Macer's calculation and Daniel's is the
 scene's emotional engine. (V2_DANIEL_FINANCES §4, "Buying Tyche's Freedom")
+**[FINANCE TAG — ch20]** Thirty-eight thousand for Tyche, four for Pamphilus; the
+forty thousand Macer would have called most of everything Daniel could put his hand on
+and name his own — and the larger number, what the whole thing was worth if you counted
+the press and the yard, Tyche already had a figure for, and it was larger.
 
 **[V2] Cognitive edge notes:**
 Daniel knows the cipher will matter. He does not know when or how. Do not let him say so.
@@ -375,6 +385,10 @@ This social texture matters for Daniel's emerging character as an institution-bu
 who genuinely values individual workers. (V2_DANIEL_FINANCES §4, "Failed Cannon
 Experiment" — though the finance file pins this at 112 AD; V2 Ch21 places it ~106-108;
 use the finance file's emotional texture, not its exact date)
+**[FINANCE TAG — ch21]** The powder doesn't make money yet — two years of niter beds,
+sulfur invoiced under another heading, Geta's wages a line item that doesn't close —
+and the hundred-denarii boring prize is the same coin as the contest, paid only on
+success; the cannon demo is cost and political credit, nothing more.
 
 **[V2] Cognitive edge notes:**
 Daniel knows gunpowder works. He knows the approximate formula. He does NOT know how to
@@ -521,6 +535,11 @@ employment. Daniel's acceptance of this is his recognition that she has accurate
 assessed her own value. The financial subtext: a man with 3-6M HS in assets accepting
 a partner's equity stake signals confidence in long-term growth, not necessity.
 (V2_DANIEL_FINANCES Phase B/C transition)
+**[FINANCE TAG — ch22]** Marcia's first question is what he makes in a year, clear,
+and Daniel cannot answer it; she finds a cartage thief inside a fortnight; she takes a
+share rather than a wage, and among the recurring costs she enumerates — rent, press
+materials, prize fund, priest's portion — his own profit does not appear, because he
+has never totaled it.
 
 **[V2] Cognitive edge notes:**
 Daniel has no special knowledge about Marcia specifically. His cognitive edge in this
@@ -672,6 +691,11 @@ more is the time cost — years of effort that yield either nothing (clock, tele
 a rejected proof of concept (rail carts). The bitterness of the rail-cart defeat is
 partly financial: he spent real money on a demonstration that the market rejected on
 purely economic grounds he should have anticipated. (V2_DANIEL_FINANCES Phase C)
+**[FINANCE TAG — ch23]** A senator's wife paid more for a blurry rainbow tube than
+Demetrios earned in a season, and asked for ten; the rail carts work in the demo and
+find no buyer because a back costs less than a wheel — a thing he thought useful that
+the market rejects on grounds he should have seen; the steel pump cost more than the
+year's prize fund, and he writes it down without noting what it cost him.
 
 **[V2] Cognitive edge notes:**
 Three different failure modes for Daniel's cognitive edge, worth contrasting:
@@ -793,6 +817,10 @@ the workshop humming, the contest thriving — is the financial reality. But it 
 a trap: high visibility means high target value for Scaeva and Crispus. The loneliness
 of this chapter is partly the loneliness of wealth: he has more resources than most
 senators but no peer who meets him as an equal. (V2_DANIEL_FINANCES Phase C)
+**[FINANCE TAG — ch24]** Eleven people on the payroll now; Statius's prize runs to a
+skilled year's wages; the child's hundred denarii draws Macer's remark that he's gone
+soft — spending without return; the torch produces a thing he had built for one purpose
+and found out was two, the second use still unlabeled on any ledger.
 
 **[V2] Cognitive edge notes:**
 This is the chapter where Daniel's cognitive edge is most clearly an advantage and most
@@ -893,6 +921,11 @@ encounters in this chapter are all financial as much as political: Scaeva wants 
 powder income, Crispus wants to destroy the press income, Vibenius holds the religious
 legitimacy that Daniel needs to protect the workshop. Daniel is rich enough to be a
 target; not yet rich enough to be untouchable.
+**[FINANCE TAG — ch25]** He passes the customs post and a denarius a load goes to the
+clerk without discussion; the gold bulla is gold because they could afford gold now;
+and somewhere before the chapter closes he acquires the flooded Hispanian gallery for
+less than a year's rent on his second shed — a purchase no one would have bothered to
+list alongside the rest.
 
 **[V2] Cognitive edge notes:**
 Daniel knows Rome's political failure modes. He knows that factions fight for control
@@ -1107,6 +1140,15 @@ an institution. This is the last moment before the succession crisis strips it.
 The expedition venture prospectus is his first equity offering — two merchants commit;
 the expedition's cost is partially socialized; the template is set.
 (V2_DANIEL_FINANCES Phase C to D transition)
+**[FINANCE TAG — ch26]** The press prints Rome's first venture prospectus — voyage
+cycle, return goods, roughly five years' horizon — and two merchants commit, their
+names on the document but not the framing; cipher entry: "I have just run what my
+economics teacher would have called a stock offering; I did not explain this to the
+merchants"; the insurance pooling fails when a praetor voids the contract over a
+merely late ship, and Daniel writes "not yet" and does not revisit it; war rockets
+pay more reliably as festival fireworks than as weapons, and he keeps those contracts;
+the loom program is its own buyer for cheap linen, its own margin invisible to anyone
+who doesn't know what the balloon envelopes cost.
 
 **[V2] Cognitive edge notes:**
 Daniel knows Trajan will die within 4-5 years. He cannot say so. The specific irony of
@@ -1225,6 +1267,10 @@ intact. His wealth is the reason Vibenius's omen is credible (a wealthy, connect
 is a different kind of political signal than a nobody), and also the reason Scaeva
 wanted him to survive — he is worth more alive and in debt than dead.
 (V2_DANIEL_FINANCES Phase C/D, "Wealth as Armor" framing)
+**[FINANCE TAG — ch27]** The expedition departs off-screen while he is spending on
+advocates and goodwill; the capital is out and moving west; he cannot attend the
+launch because he is arguing about gods — the most expensive afternoon of the year
+measured in what it is not.
 
 **[V2] Cognitive edge notes:**
 Daniel knows he cannot win this fight on the merits. He knows (from any understanding of
@@ -1404,6 +1450,10 @@ campaign as a consultant, not an employee. His financial independence is now com
 he does not need this campaign for money. He is here because he has no choice — he is
 the emperor's man, and the emperor is on campaign.
 (V2_DANIEL_FINANCES Phase C/D)
+**[FINANCE TAG — ch28]** A factor goes east with instructions and sealed sample jars of
+Mesopotamian crude — "the light was different, crisper" — and says nothing about it;
+the kerosene line does not yet appear on any column Marcia keeps, because Daniel has
+not told her what the samples are for.
 
 **[V2] Cognitive edge notes:**
 Daniel knows the Kitos War revolts are coming (115-117 AD) and that they will force
@@ -1562,6 +1612,9 @@ chapter is the first hint of what the succession crisis will cost: Trajan is vis
 aging, the campaign is overextended, and the men around Daniel are calculating what
 happens when the emperor dies. Daniel watches them recalculate him and says nothing.
 (V2_DANIEL_FINANCES Phase D — "The Problem")
+**[FINANCE TAG — ch29]** The tomato sauce earns nothing and costs a bowl; it goes to
+Gnaeus without price; there is no revenue line for food given away, and the ketchup
+reduction Gnaeus puts on the menu is his own income, not Daniel's.
 
 **[V2] Cognitive edge notes:**
 Daniel knows the dates: Trajan dies August 117 AD. He is watching a man walk toward
@@ -1680,6 +1733,9 @@ Four Consulars (ch33). Per V2_DANIEL_FINANCES Phase D: "Some property seized or
 'gifted' under duress to new regime allies." This chapter is the moment Daniel calculates
 what he has to lose. Not in explicit HS amounts — in the texture of how he thinks
 about each asset. What can be moved quickly. What is fixed. What will be targeted first.
+**[FINANCE TAG — ch30]** He does not total what he has; he lists what can move and
+what cannot, and what the fixed things are worth to the men now measuring them —
+a calculation more frightening for having no sum at the bottom.
 
 **[V2] Cognitive edge notes:**
 Daniel has known this was coming for years. He cannot use that knowledge now.
@@ -1825,6 +1881,10 @@ exposed, cutting non-essential expenditures. Macer's alarm is partly financial �
 backed Daniel, and if Daniel falls, Macer's investment falls with him. Show this through
 Macer's very specific question (how much can you move and how fast?) rather than through
 a general expression of worry. (V2_DANIEL_FINANCES Phase D)
+**[FINANCE TAG — ch31]** The press keeps running — Tyche hands him the week's count
+during the chaos, a tally he looks at and sets aside; the mine dispatch arrives from
+Hispania with a three-week ore tally he counts twice, knowing what it adds to the
+column Marcia keeps, the one he has the courtesy not to look at too hard.
 
 **[V2] Cognitive edge notes:**
 Daniel knows Hadrian will consolidate, abandon Trajan's eastern conquests, and become
@@ -1932,6 +1992,9 @@ the most frightening transaction Daniel ever makes — "trusting a corrupt man's
 corruption." If this transaction begins in this chapter, show Daniel's specific
 calculation: not whether Avidius will take the money, but whether he will stay bought.
 (V2_DANIEL_FINANCES §4, "The Senator Bribe")
+**[FINANCE TAG — ch32]** The Hispanian overseer's letter carries a first service-fee
+figure he folds and does not show anyone; the press makes money, Marcia says so in one
+sentence and moves on; the senator bribe is the transaction he does not write down at all.
 
 **[V2] Cognitive edge notes:**
 Daniel knows Hadrian is not a monster, just a different kind of emperor. He knows
@@ -2070,6 +2133,11 @@ property, a contract, a patron who stops paying — something with a number atta
 even if Daniel doesn't name the number aloud. The reader needs to feel the financial
 erosion as physically real, not just as "things got harder."
 (V2_DANIEL_FINANCES Phase D — damages list)
+**[FINANCE TAG — ch33]** Marcia sets the ledger summary in front of him during a
+sleepless night and the total she has written is larger than most senators see in a
+year; the money exists and has no door; a quarter's press income he counted twice sits
+in one column while the column beside it is shorter than it was, for reasons she names
+without commentary.
 
 **[V2] Cognitive edge notes:**
 Daniel knows this will pass. He knows Hadrian will stabilize, will become one of the
@@ -2254,6 +2322,11 @@ a position of reduced but real wealth. Daniel is not poor; he is politically exp
 The distinction matters: he has enough money to bribe his way back to relevance, but
 not enough political protection to stop paying. Show this as a treadmill, not a cliff.
 (V2_DANIEL_FINANCES Phase D)
+**[FINANCE TAG — ch34]** Marcellus's fraud comes back with interest paid from his own
+purse — a sum nearer eight thousand than seven, which shows the scale without stating
+it; the imperial paper deal goes under three locks, "a document whose existence is better
+than its terms"; industrial acids sell only to people he has met, at a price he does not
+publish; the Stirling carousel earns the crowd's delight and nothing else.
 
 **[V2] Cognitive edge notes:**
 Daniel knows that Hadrian will eventually be interested in him — specifically, in the
@@ -2443,6 +2516,10 @@ economic case (how much, who pays, what is the return). Daniel knows this and ha
 prepared it. The contrast with Trajan (who bought things because they worked in battle)
 must be implicit in how Daniel frames each argument.
 (V2_DANIEL_FINANCES Phase D/E transition)
+**[FINANCE TAG — ch35]** The semaphore contract is mostly political rather than money;
+the prize model running in the imperial administration earns him nothing and costs him
+nothing — he started it and does not publicize that; the steam and riverine argument
+to Hadrian is cost and vision, not yet revenue.
 
 **[V2] Cognitive edge notes:**
 Daniel knows Hadrian's character from history: a traveler, an administrator, a
@@ -2654,6 +2731,12 @@ to a year's peak income — should be present in how he calculates Hadrian's off
 Hadrian provides imperial sanction and a capped cost; Daniel provides the knowledge and
 some private funding. The split terms must be on the page, even if briefly.
 (V2_DANIEL_FINANCES Phase E, "Ocean Voyage Funding")
+**[FINANCE TAG — ch36]** The ocean program launches as a prestige loss-leader under
+Hadrian's sanction — the state pays for the survey, the prize, the pilot school; the
+merchant-investors from the prospectus fund the private share; the longitude prize he
+cannot collect is the one line on the ledger that stays open; he deflects the
+celestial-math question to the sailors and writes what he actually knows in the cipher,
+where it earns nothing.
 
 **[V2] Cognitive edge notes:**
 Daniel knows the Columbus route. He knows trade winds exist and roughly how they work.
