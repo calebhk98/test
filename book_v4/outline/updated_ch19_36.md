@@ -71,6 +71,18 @@ Phase C beginning (just crossing from Phase B to C). At this point Daniel has:
 - Rag paper experimentation should be mentioned in passing as underway — the contest
   creates demand for cheaper writing material that feeds into the paper R&D. This
   establishes causality the reader needs later.
+- **Board-game roster (V2_REVISED_OUTLINE ch19 addition):** Once the press prints grids,
+  Battleship, Chutes-and-Ladders, and Connect Four appear as a commercial line — a wood
+  set for taverns, paper grids for sale. Scrabble waits on broader literacy. These are
+  not presented as inventions; just products Daniel knows will sell. Connect Four becomes
+  a tavern fixture within a year, copied from one display set. Not a tech moment — a
+  press-revenue and cultural-spread beat.
+- **Lottery launched:** Printed numbered tickets, results published via press, one prize
+  draw timed to a public festival. Daniel takes a cut; a magistrate gets a cut; the rest
+  funds a public cistern repair. This is the institutional template.
+- **Bingo introduced (tavern format):** Daniel sells printed unique-number grids through
+  the press to tavern-keepers; they run nightly draws with a bag of numbered tokens. No
+  equipment beyond the cards. Recurring card sales revenue.
 (V2_TECH_DEEP_DIVE §4, Phase B/C transition; V2_MASTER_CONTEXT Change 1)
 
 **[V2] Finance context:**
@@ -476,10 +488,10 @@ share not a wage is load-bearing.
   You're building something nobody has the shape of yet." — defined by negation. Cut the
   negated clause; lead with the positive: "building something nobody has the shape of
   yet." (V2_CHAPTER_CHANGE_NOTES, ch22)
-- Fix age error BLOCKER: Marcia's age given as "eighteen" but the chapter's setting
-  (~108-109 AD) makes her ~24 if tracking correctly. Change to "a freedwoman of
-  twenty-four" or "barely past twenty" if the writer wants a youth note, but not
-  eighteen. (V2_CHAPTER_CHANGE_NOTES, ch22)
+- Fix age error BLOCKER: Marcia's age given as "eighteen" but canonical anchor is
+  Marcia b.~74 AD; at ch22 (~108-109 AD) she is ~34. Change to "a freedwoman of
+  thirty-four" or "a woman past thirty." Any reference to ~24 or ~18 is wrong.
+  (V2_CHAPTER_CHANGE_NOTES, ch22; V2_REVISED_OUTLINE cross-chapter continuity)
 - The contubernium/marriage question: V1 renders only a single lawful marriage. V2 may
   keep this (the writer should decide explicitly), but if the contubernium stage matters
   for the story (it provides an informal precursor period that is more realistic given
@@ -539,10 +551,13 @@ None. Omit.
 
 **[V2] Zero-tolerance checks:**
 - [ ] Both correctio instances are BLOCKING — must be rewritten
-- [ ] Age error is BLOCKING — must be fixed
+- [ ] Age error is BLOCKING — Marcia is ~34 (b.~74 AD), not 24 or 18 — must be fixed
 - [ ] No em dashes
 - [ ] No future-vantage narration ("later I would understand what her terms had cost her")
 - [ ] Marcia's voice: transactional, not warm — no inspirational speeches
+- [ ] Lucanus born ch25 (~110–111 AD per canon); ch22 Lucanus reference should be
+      Marcia's pregnancy acknowledged or no Lucanus yet — do NOT show him as born or
+      named in this chapter
 
 **Updated Files list:**
 Mandatory 4: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md,
@@ -556,7 +571,7 @@ Chapter-specific additions:
 
 ### ch23 — The Things That Don't Work [STATUS: PASS]
 
-**Era/Date:** ~103-109 AD (the chapter spans the Part III failure arc), Daniel ~22-28
+**Era/Date:** ~109-110 AD, Daniel ~28-29 years old (Part III, Phase C)
 
 **Core beats (V1 baseline — keep unless V2 notes say otherwise):**
 A chapter of honest failure. The mechanical clock whose escapement never clicks in
@@ -585,9 +600,57 @@ slaves are cheaper — the bitterest beat. What losing teaches him.
   Show him holding the blurry toy and knowing exactly why it fails without being able to
   fix it. This is the key "failing because he underestimated a specific technical
   bottleneck" beat. (V2_DANIEL_COGNITIVE_EDGE, Scene B, §2)
+- **[NEW — Volta pile first demonstrated to Heras]** This chapter is the 110 AD
+  checkpoint for the Volta pile. Assembly from zinc (Roman brass), copper, and brine;
+  first current moment; shock demo; electrolysis producing hydrogen and oxygen separately;
+  galvanometer deflection. Heras is present. He is interested in the epistemology ("how
+  do you know it is current and not spirit?"), not the technology. The demonstration is
+  on the page; one scene. (V2_REVISED_OUTLINE ch23; V2_MASTER_CONTEXT Change 4, "By 110 AD")
+  **Texture (Baghdad battery — already-known reaction):** Hermes or Heras may recognize
+  the tingle from the Baghdad battery demo done much earlier (ch15). Daniel built that
+  first tingle-jar as proof current is real; this is the full stack version. The
+  Baghdad battery already-known reaction is the continuity bridge: Daniel isn't surprised
+  the pile works — he is surprised by the scale difference.
+  **Texture (electromagnet as standalone demo):** The day after the Volta pile, wire
+  wound round an iron nail, current on, it lifts iron filings. Heras: "It has become a
+  lodestone." Daniel: "Yes. And it stops when the current stops." The intermediate step
+  between battery and generator — shown as a one-line demonstration, not a chapter beat.
+  (V2_REVISED_OUTLINE ch23 texture note; master_outline.md Part II electromagnet beat)
+- **[NEW — Compass working prototype first confirmed]** This chapter is the first
+  on-page confirmation that the compass works reliably. Demonstrated to Heras or a naval
+  contact. The device's working status must be on-page here to enable Atlantic planning
+  in ch25-26. (V2_REVISED_OUTLINE ch23; cross-chapter continuity note)
+- **[NEW — Pendulum clock prototype attempt]** First attempt at a working escapement
+  mechanism. It runs, badly — plus or minus twenty minutes per day. He records the
+  failure point (the escapement lever geometry) and the next thing to try. Filed; does
+  not defeat him. This is the clock arc's first honest attempt, not its resolution.
+  (V2_REVISED_OUTLINE ch23)
+- **[NEW — Optical semaphore milestone + Morse codebook]** Celer or a successor officer
+  asks about message relay from watchtowers. Daniel sketches a two-tower shutter-signal
+  system and a codebook design. When he writes up the codebook he puts a dot-dash
+  alphabet table as the underlying notation — compact for operators who can't read full
+  Latin. Notes privately that radio hardware is achievable (spark-gap from the static
+  machine, galena crystal receiver) but he has not built the static machine. Files the
+  dot-dash codebook as valid for optical relay now and for radio later.
+  (V2_REVISED_OUTLINE ch23; master_outline.md Part III "Morse encoding" beat)
+  **Texture (Morse — invented fresh):** He writes a consistent dot-dash alphabet from
+  scratch and won't call it Morse because he can't be sure it matches the original.
+  Cipher: "consistency matters more than authenticity."
+  **Texture (semaphore — institutional resistance):** The army already has way-stations
+  and riders. He has to argue the four-day Rome-Rhine gap is a structural vulnerability,
+  not merely a speed inconvenience. He is unconvinced anyone will act on it for two more
+  years. (Resolution comes in ch35 with Hadrian.)
+- **[NEW — Ball bearings prize posted]** Hardened steel spheres to a go/no-go gauge
+  running in a machined race; he knows it multiplies every rotating shaft, axle, and
+  pump; posts spec plus prize money. Long plant: payoff comes in Phase D. One sentence
+  when posted. (V2_REVISED_OUTLINE ch23; master_outline.md Part III "Ball bearings prize")
+- **[NEW — Typewriter prize posted]** Spring-loaded type arms strike an inked ribbon,
+  carriage advances per keystroke; high award, no deadline; expects years. The spec
+  sharpens the scribes'-guild conflict that will arrive in ch34. (V2_REVISED_OUTLINE ch23;
+  master_outline.md Part III "Typewriter prize")
 
 **[V2] Tech requirements:**
-Phase C (103-110 AD). The failures here are correctly blocked per V2_TECH_DEEP_DIVE:
+Phase C (~109-110 AD). The failures and new tech in this chapter:
 - Mechanical clock: blocked on escapement memory + gear cutting precision not yet
   achieved. The water clock (improved clepsydra with float valve) is the correct easy win.
   (V2_TECH_DEEP_DIVE §2, 98-102 row: "Improved water clock")
@@ -595,6 +658,9 @@ Phase C (103-110 AD). The failures here are correctly blocked per V2_TECH_DEEP_D
   prize competition for better glass since ~100-103 AD; it has not yet produced usable
   lens glass. (V2_TECH_DEEP_DIVE §1, Timeline row 103-106)
 - Rail carts: not blocked by materials — they work in demo. Blocked by economics.
+- **Volta pile first demonstrated (required 110 AD checkpoint).** Compass working
+  prototype confirmed. Ball bearings prize and typewriter prize posted. Optical semaphore
+  codebook drafted with dot-dash notation included.
 The chapter's function is to show that V2's "bootstrapping" philosophy has limits —
 not every wall is a materials problem that can be circumvented. Some walls are social,
 economic, or memory-based. (V2_MASTER_CONTEXT Change 1)
@@ -689,14 +755,35 @@ ground military metaphor closes the chapter.
   into the first encyclopedia draft. Show Heras's reaction to the earth's circumference
   calculation — skepticism followed by the admission that the geometry is correct.
   (V2_MASTER_CONTEXT Change 5, item 5)
+- **[NEW — Hydrogen applications from ch23 electrolysis]** Once the Volta pile in ch23
+  is producing current reliably, this chapter is where Daniel collects both gases
+  separately and explores applications. Three beats, all from V2_REVISED_OUTLINE ch24:
+  (1) **Oxy-hydrogen torch** — hydrogen burned with oxygen fed from a bladder; produces
+  a flame hot enough to cut bronze and weld iron at temperatures his forge cannot otherwise
+  reach; Hermes is immediately interested in the new forge temperature. Not a lecture —
+  one scene of Hermes watching the torch cut through a bronze plate, his expression.
+  (2) **Hydrogen-lift unmanned recon balloon** — no fire source; the hydrogen-filled
+  sealed animal-bladder envelope rises without needing any fire underneath; simpler to
+  deploy in field conditions than hot-air; posts a prize for gas-tight fabric (the critical
+  wall is the bag, not the gas). This variant sits alongside the hot-air program, not
+  replacing it.
+  (3) **Hydrogen-grenade tested and not pursued** — hydrogen and oxygen sealed in clay
+  jars detonated once in a quarry; makes a satisfying concussion; Daniel makes two,
+  tests once, writes "Noted. Not pursuing." Does NOT write anything down about the
+  military implications. (V2_REVISED_OUTLINE ch24; master_outline.md Part III
+  "Hydrogen applications from electrolysis")
+  NOTE: The hydrogen applications belong in this chapter (~110 AD), not in ch23 where
+  the Volta pile is first demonstrated. First demonstration in ch23; first applications
+  in ch24. The gap is realistic — he demonstrates the pile to Heras, then spends weeks
+  collecting gas and testing its properties.
 
 **[V2] Tech requirements:**
 Phase C/D border. What is now on-page per the timeline:
 - Printing press producing books (achieved by ~108 AD)
-- Volta pile demo target: ~110 AD (this chapter)
-- Magnetic compass prototype target: ~108 AD — if not dramatized in ch23, plant here
-  as an experiment in progress, not yet reliable
+- Volta pile demonstrated to Heras (ch23 confirmed; hydrogen applications this chapter)
+- Magnetic compass prototype working (confirmed ch23; this chapter it is in reliable use)
 - Rag paper in use at the press: target ~108-110 AD — if achieved, mention it
+- Hydrogen torch, recon balloon, grenade-tested-not-pursued: all in this chapter
 (V2_MASTER_CONTEXT Change 4; V2_STORY_PLOT_NOTES §5, "By 110 AD")
 
 **[V2] Finance context:**
@@ -744,7 +831,10 @@ None. Omit.
 - [ ] No em dashes
 - [ ] High-ground close: no explanatory clause appended
 - [ ] Phone relic surfaces without annotation
-- [ ] Volta pile (if included): scene, not lecture
+- [ ] Volta pile (ch23): scene, not lecture; hydrogen applications (this chapter): rendered,
+      not summarized
+- [ ] Hydrogen grenade: tested once, not pursued — do NOT annotate the military
+      implications aloud
 - [ ] No wisdom-button ending — this is a quiet, high-stakes chapter where the
       temptation to close gnomic is especially strong
 
@@ -753,7 +843,7 @@ Mandatory 4: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md,
 bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md
 Chapter-specific additions:
 - V2_STORY_PLOT_NOTES.md (§1.1 — divergence milestone by 110 AD; §5 checklist)
-- V2_TECH_DEEP_DIVE.md (§3 — Volta pile; §4 priority table)
+- V2_TECH_DEEP_DIVE.md (§3 — Volta pile + hydrogen applications; §4 priority table)
 - V2_HISTORICAL_IMPACT.md (Appendix, 110 row)
 - bible/02_characters.md (Heras voice — dry, ironic, allergic to enthusiasm)
 
@@ -820,7 +910,26 @@ in real Roman history. The three antagonists are responding to a person the real
 Roman world never had to deal with. (V2_HISTORICAL_IMPACT, 110 row)
 
 **[V2] Atlantic/New World:**
-None. Omit.
+**[CANONICAL DIRECTION — align with new canon]** By ch25 (~110-112 AD) serious
+expedition planning is underway in Daniel's private interior. This is not a hint or a
+vague yearning — the compass works, the wealth is there, and he has been carrying trade
+wind knowledge since arrival. In his private interior (one brief internal paragraph, not
+a speech), Atlantic expedition planning begins seriously: he has the compass, the capital
+is approaching, and he starts thinking about ships, routes, and the specific crops he
+wants. **The tomato is named explicitly as the priority plant to bring back**: a red
+fruit, versatile in cooking, unlike anything growing in Rome — he describes it in enough
+internal detail (red, round or oblong, soft, grows on vines) that the captain he will
+eventually hire can identify it on sight.
+**Foundational lie established this chapter:** When Daniel talks to Macer or any official
+about the western ocean, he says "probably uninhabited, or sparsely so." He knows this is
+false. He knows (from his history classes) that the Americas held millions of people. He
+lies strategically to make the program politically achievable. He does not note this guilt
+directly — it is in the gap between what he says and what the reader knows he knows.
+(V2_REVISED_OUTLINE ch25; REVISION_DELTA A1; master_outline.md "Foundational lie")
+**Texture (trade winds — admits approximate knowledge):** When he draws the wind bands
+for the captain he will eventually hire, he marks uncertainty with striped lines. Tells
+him it's approximate — verify as you go. The captain treats the chart as a hypothesis.
+Daniel does not pretend to more than he has. (TIMELINE_TEXTURE_AUDIT §f "Trade winds")
 
 **[V2] Prose rules (chapter-specific):**
 - The three-section structure is clean; do not over-connect the sections with
@@ -828,6 +937,8 @@ None. Omit.
   for the reader without Daniel noting it.
 - Scaeva's oblique quality: give him one unexpected non-menacing action. (Note from
   V2_CHAPTER_CHANGE_NOTES ch25)
+- Atlantic interior beat: one brief paragraph; never spoken aloud. The tomato named in
+  private thought. Do NOT have Daniel announce the expedition plan to anyone.
 - No wisdom-button close on the "net tightening" theme. End on one specific physical
   detail from the last encounter, not on Daniel's assessment of his situation.
   (PROSE_PATTERNS_TO_AVOID §2.1)
@@ -838,13 +949,17 @@ None. Omit.
 - [ ] No future-vantage narration about the coming accusation
 - [ ] Scaeva must have one oblique non-menacing quality
 - [ ] Vibenius's unpaid debt mechanics planted clearly enough to pay off in ch27
+- [ ] Atlantic planning: private interior only, never spoken aloud
+- [ ] Foundational lie: gap between what Daniel says aloud and what reader knows he knows
+- [ ] Tomato named explicitly as priority crop in Daniel's private thought
 
 **Updated Files list:**
 Mandatory 4: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md,
 bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md
 Chapter-specific additions:
 - bible/02_characters.md (Scaeva, Crispus, Vibenius — full profiles)
-- V2_STORY_PLOT_NOTES.md (§2.1 Crispus exit arc; §2.3 Vibenius exit arc)
+- V2_STORY_PLOT_NOTES.md (§2.1 Crispus exit arc; §2.3 Vibenius exit arc; §1.3 Atlantic)
+- V2_NEW_WORLD_CONTACT.md (foundational lie mechanics)
 
 ---
 
@@ -939,12 +1054,58 @@ real in the narrative. Daniel seeing this carving of his own invention (possibly
 without attribution) is a concrete divergence moment — his work is now permanent,
 in stone, on the empire's most public monument. (V2_HISTORICAL_IMPACT Part 1, Second
 Dacian War section)
+- **[NEW — Flying shuttle and water-powered loom]** Flying shuttle (cord-operated
+  hinged auto-throwing mechanism) roughly doubles weaving speed; Daniel describes it to
+  a weaver and posts a prize for a working demonstration. Adoption limited by slave-labor
+  economics but the balloon program's linen demand gives him a buyer. Posts the water-
+  powered loom as a Phase D prize target — same principle as the water-powered trip-hammer,
+  applied to the loom shuttle drive. (V2_REVISED_OUTLINE ch26; master_outline.md Part III)
+- **[NEW — War rockets]** Gunpowder-packed tubes on stabilizing sticks, no precision
+  boring required; first shown as a festival "Thulean fire-display" (profit, no questions).
+  A military observer asks about range and accuracy; Daniel is honest about the limits
+  (imprecise past ~50m, wind-unreliable, psychological effect against ships and forts).
+  Notes that fireworks pay more reliably than the military use — he keeps the contracts.
+  (V2_REVISED_OUTLINE ch26; master_outline.md Part III "War rockets")
+- **[NEW — Atlantic expedition actively organized]** Daniel is fitting out ships. Not
+  planning; doing. He has the compass, the capital, the political standing. He hires a
+  captain (name him). The ships are being modified for open-water swells. Citrus specified
+  in the provisioning inventory (on-page detail — sailors who lose their teeth cannot work
+  the lines). **Expedition designed for autonomy**: drafts (via intermediaries) charter
+  language for "full proconsular authority" in matters that can't await Rome; trained
+  physician on the crew; printed Roman legal forms aboard.
+  **Venture prospectus**: the press prints Rome's first investment prospectus (voyage
+  cycle, return goods, ~5-year horizon, double-entry accounting); Daniel pitches the first
+  expedition to wealthy merchants; two commit.
+  (V2_REVISED_OUTLINE ch26; REVISION_DELTA A1; master_outline.md Part V "First Atlantic
+  crossing" — departure ch27, so organized here)
+- **[NEW — Bulkheaded hull + lifeboats]** When specifying the expedition hull, Daniel
+  adds watertight compartments ("what the Titanic should have had" — then doesn't explain
+  what the Titanic is) and a tethered boat for half the crew. The shipwright charges extra
+  and builds both without objection. (V2_REVISED_OUTLINE ch26; TIMELINE_TEXTURE_AUDIT)
+- **[NEW — Insurance / actuarial — try and fail]** Daniel drafts a pooled-risk cargo
+  contract for three voyages. One factor calls it cheating the gods; another recognizes it
+  as a variant of the collegia funeral fund. He prices three voyages, pays one claim on a
+  delayed ship. An ex-client charges fraud over a merely late vessel; a praetor voids the
+  contract. He does not revisit it. Cipher note: "not yet." The defeat is stated once.
+  (V2_REVISED_OUTLINE ch26; master_outline.md Part IV "Insurance / actuarial — try-and-fail";
+  TIMELINE_TEXTURE_AUDIT §a)
+**Texture (stock-market framing of the prospectus):** After two merchants commit to the
+prospectus, cipher entry: "I have just run what my economics teacher would have called a
+stock offering. I did not explain this to the merchants." He does not formalize the framing.
+(TIMELINE_TEXTURE_AUDIT; V2_REVISED_OUTLINE ch26)
+**Texture (monetary theory / inflation as casual argument):** In a payment dispute this
+chapter or nearby, Daniel argues from a gold-standard analogy (without naming it); realizes
+mid-argument that he doesn't actually know whether Rome debases its coinage; notes to find
+out; the answer, when he does, is worse than he expected. (TIMELINE_TEXTURE_AUDIT;
+master_outline.md Part III "Monetary theory / inflation as casual argument")
 
 **[V2] Finance context:**
 Phase D. Daniel is at near-peak wealth: approximately 10,000,000-15,000,000 HS.
 The Column dedication puts him in the company of the empire's most powerful people.
 The financial subtext: his prestige is now independent of any single patron. He is
 an institution. This is the last moment before the succession crisis strips it.
+The expedition venture prospectus is his first equity offering — two merchants commit;
+the expedition's cost is partially socialized; the template is set.
 (V2_DANIEL_FINANCES Phase C to D transition)
 
 **[V2] Cognitive edge notes:**
@@ -959,17 +1120,28 @@ tell the reader what the unease is pointing toward.
 **[V2] Historical divergence:**
 ~112-113 AD. This chapter IS divergence, on-page: Daniel's balloon depicted on Trajan's
 Column, his numerals spreading, his press producing at scale. The Column panel is the
-most specific on-page divergence symbol available before the succession crisis.
-(V2_HISTORICAL_IMPACT Part 1, "Trajan's response to aerial capability" section)
+most specific on-page divergence symbol available before the succession crisis. The
+expedition's departure (off-screen during the trial in ch27) is also the book's first
+institutional act of westward expansion. (V2_HISTORICAL_IMPACT Part 1, "Trajan's
+response to aerial capability" section)
 
 **[V2] Atlantic/New World:**
-None. Omit.
+The expedition is organized, crewed, and provisioned THIS chapter. Departure is off-screen
+during the impiety trial in ch27. This is not planning; this is doing. The tomato was
+named as a priority plant in ch25; citrus is on the provisioning list (with the symptom
+named even without the vitamin). The physician is named. The charter is drafted. The
+prospectus is printed. One concrete action in this chapter establishes the departure as
+imminent. (REVISION_DELTA A1 — ch26 "expedition organized + prospectus + autonomy charter")
 
 **[V2] Prose rules (chapter-specific):**
 - "I had become a kind of monument myself" — replace with specific image. (V2 note)
 - Column scene: the ironic gap between the carved image and Daniel's knowledge must be
   shown without annotation. Trust the reader to feel it.
 - Hadrian plant: specific, not generic. One precise physical or behavioral detail.
+- Insurance try-and-fail: defeat stated once, not complained about. The praetor voids the
+  contract; Daniel writes "not yet"; the scene ends. (PROSE_PATTERNS_TO_AVOID §2.1)
+- War rockets: festival framing first — no political complication — then the military
+  observer's questions; Daniel's honest limits; done in one scene.
 - No wisdom-button ending. The chapter's natural ending temptation is "it was the
   high-water mark" — resist. End on the Column, or on a physical detail of the site.
 
@@ -979,6 +1151,10 @@ None. Omit.
 - [ ] No future-vantage flagging of Trajan's death or the coming accusation
 - [ ] "Monument" line replaced with specific image
 - [ ] Column scene: ironic gap shown without annotation
+- [ ] Expedition organized on-page (captain named, citrus in list, physician named,
+      charter drafted, prospectus printed) — departure deferred to off-screen in ch27
+- [ ] Insurance try-and-fail: defeat stated once; no revisiting
+- [ ] War rockets: honest military limits stated; fireworks framing kept
 
 **Updated Files list:**
 Mandatory 4: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md,
@@ -986,7 +1162,8 @@ bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md
 Chapter-specific additions:
 - bible/02_characters.md (Apollodorus — peer dynamic; Hadrian first glimpse)
 - V2_HISTORICAL_IMPACT.md (Part 1 — Dacian Wars; military doctrine by 113 AD)
-- bible/03_timeline.md (Forum/Column dedication, 112-113 AD)
+- bible/03_timeline.md (Forum/Column dedication, 112-113 AD; expedition departure ch27)
+- V2_NEW_WORLD_CONTACT.md (quarantine protocols; expedition provisioning)
 
 ---
 
@@ -1024,12 +1201,22 @@ betrayal is the right note.
   legal/institutional protections Daniel will use to deflect Scaeva's later attempt.
   (V2_STORY_PLOT_NOTES §2.2)
 
+**[CANONICAL DIRECTION — Atlantic departure]** The Atlantic expedition departs this
+chapter, off-screen, while Daniel is managing the impiety crisis. The departure is one
+paragraph in Daniel's interiority — he cannot attend the launch; he is managing senators
+instead. The captain's name is on the page. The most important departure of his life and
+he is stuck arguing about gods. This is shown as painful without annotation.
+(V2_REVISED_OUTLINE ch27; REVISION_DELTA A1 — "departure off-screen during the trial")
+**Lucanus age:** Lucanus is born ~110-111 AD. At ch27 (~112-113 AD) he is a toddler
+(~1-2 years old) — not verbal, not ambulatory in any meaningful scene sense. Fix any
+description suggesting otherwise. (REVISION_DELTA B; V2_REVISED_OUTLINE ch27 fix)
+
 **[V2] Tech requirements:**
 Phase D. No specific tech demonstration required in this chapter. The accusation is a
 political/social crisis, not a tech crisis. But the chapter should establish that Daniel's
 workshop continues operating during the crisis — Tyche and/or Marcia are keeping it
 running while he is fighting the trial. This establishes the institutional resilience
-that becomes load-bearing in Parts V and VI. (V2_DANIEL_FINANCES Phase C/D transition)
+that becomes load-bearing in Parts IV and V. (V2_DANIEL_FINANCES Phase C/D transition)
 
 **[V2] Finance context:**
 Phase D entry. The trial costs money — bribes, advocates, the loss of some clients who
@@ -1054,7 +1241,11 @@ a balloon, never used the new numerals, never heard of the contest would not be
 accused of impiety. The accusation is the cost of the divergence.
 
 **[V2] Atlantic/New World:**
-None. Omit.
+The expedition has departed — off-screen, during the trial earlier in this chapter. A one-
+paragraph beat in Daniel's interiority registers the departure: the captain's name, the
+route specifications he sent, the impossibility of attending the launch. The expedition is
+gone. He is stuck arguing about gods. This is felt; it is not announced.
+(V2_REVISED_OUTLINE ch27; REVISION_DELTA A1)
 
 **[V2] Prose rules (chapter-specific):**
 - Aphorism close must go or be moved. End on the bad hinge (or equivalent physical
@@ -1063,6 +1254,8 @@ None. Omit.
   from Macer during the trial, not through Daniel's retrospective narration of it.
 - Vibenius's omen scene: oblique, not explicit. Do not let Vibenius explain what he is
   doing. Show the outcome (Daniel survives) and the cost (the debt acknowledged).
+- Atlantic departure beat: private interiority, one paragraph. The captain's name, the
+  route specs, the painful knowledge that Daniel cannot be at the dock. No annotation.
 
 **[V2] Zero-tolerance checks:**
 - [ ] No correctio
@@ -1071,6 +1264,8 @@ None. Omit.
 - [ ] Crispus plant: one specific claim he makes that will later be refuted
 - [ ] Scaeva's shedding behavior planted for Part V callback
 - [ ] Vibenius's ambiguity preserved — do not resolve the omen question
+- [ ] Lucanus: toddler (~1-2 years old) — not verbal or ambulatory in any scene
+- [ ] Atlantic departure off-screen: one paragraph interiority; no annotation
 
 **Updated Files list:**
 Mandatory 4: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md,
@@ -1078,29 +1273,40 @@ bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md
 Chapter-specific additions:
 - bible/02_characters.md (Scaeva, Crispus, Vibenius, Macer — all active here)
 - V2_STORY_PLOT_NOTES.md (§2.1 Crispus arc; §2.2 Scaeva arc; §2.3 Vibenius arc)
+- V2_NEW_WORLD_CONTACT.md (expedition departure; Lucanus age)
 
 ---
 
 ### ch28 — East [STATUS: PASS]
 
-**Era/Date:** ~113 AD, Daniel ~32 years old
+**Era/Date:** ~113-117 AD, Daniel ~32-36 years old (Phase C to D)
 
 **Core beats (V1 baseline — keep unless V2 notes say otherwise):**
 113 AD: the Parthian War begins. Daniel pulled toward army logistics and medicine
-(dysentery kills more than battle). The machine of conquest at full stretch. The
-Atlantic expedition is in active preparation — the compass is proven, the trade winds
-are mapped in Daniel's notes, and a ship is being outfitted through intermediaries at
-Gades. Serious planning has been underway since ~108-110 AD. "A wound with an idea in
-it. I told no one" is Daniel's public register; privately, the plan is concrete and
-committed. Render the contrast between Rome's confident eastward overreach and Daniel's
-quiet westward certainty. He watches Rome reach past its supply lines and thinks: there
-is another direction entirely.
+(dysentery kills more than battle). The machine of conquest at full stretch. Celer's
+death and the kit-strap grief are load-bearing. The chapter spans the Parthian campaign
+east and the eventual return. "A wound with an idea in it. I told no one" is Daniel's
+public register; now corrected: the expedition has already departed (ch27) and returns
+during this chapter's timeframe. Render the contrast between Rome's confident eastward
+overreach and Daniel's quiet westward certainty — but the certainty is now the wait for
+news from an expedition that is at sea, not a plan still forming.
+
+**[CANONICAL DIRECTION — Atlantic return]** Per the master outline and REVISION_DELTA,
+the first Atlantic expedition RETURNS during this chapter's timeframe (~116-120 AD).
+Daniel receives a letter or messenger (on campaign in the east) with the captain's account:
+multiple crops documented (corn, sweet potato, cacao, rubber), and listed first as
+requested, **the tomato** — red, oblong, on vines, exactly as described. Maps of the
+western shore. A disease report (TB and malaria contact; crew lost two men; no catastrophic
+plague). This is not a full scene — a dispatch read in a tent at night. Daniel sits with
+it for a moment, then writes back immediately with instructions for a second expedition.
+The tomato's return here (ch28) is load-bearing for the ch29 sauce-and-ketchup payoff.
+(REVISION_DELTA A1; V2_REVISED_OUTLINE ch28; master_outline.md Part IV food arc note)
 
 **[V3 TIMELINE NOTE — OCEAN ARC]** The "half-formed" and "germinating" framing from
 the V2 brief is outdated. Per the master outline's Atlantic arc: serious expedition
-planning begins ~108-110 AD; first departure ~112-115 AD. By ch28 (~113 AD) the plan
-is years old and the departure is imminent or has just occurred. Do NOT write this as
-the chapter where the idea first takes shape.
+planning began ~108-110 AD; first departure ~112-115 AD (ch27 off-screen); return
+news arrives in this chapter (~116-120 AD). The ocean arc is NOT half-formed here —
+it is a concrete operational plan that has already executed and returned results.
 
 **[V2] Story/Plot additions:**
 - The Parthian War in V2 shows Daniel's technologies now fully integrated into Roman
@@ -1108,8 +1314,42 @@ the chapter where the idea first takes shape.
   decimal-notation quartermaster accounts, rag paper maps reproduced for legates.
   These are on-page texture, not additional scenes — Daniel moves through an army that
   visibly uses things he built. (V2_HISTORICAL_IMPACT Part 1, Parthian War section)
-- The ocean-map idea germinates correctly here. V2 requires this be "half-formed" and
-  private — not a plan, not even a scheme. Just the observation that Rome will always
+- **[NEW — Oil-seep investigation and kerosene]** On the eastern campaign Daniel
+  recognizes Mesopotamian crude on sight; sends a factor with instructions (sealed samples,
+  nearest navigable route, seep-volume estimate); later distills kerosene via the existing
+  worm-condenser for a cleaner brighter lamp fuel, freeing olive oil for other uses; writes
+  the procedure; says nothing readable about the incendiary potential to anyone who doesn't
+  already know what petroleum is.
+  **Texture (kerosene refining — improvised cuts):** He doesn't know the temperature
+  cutpoints. Separates fractions by smell and burn test. Written procedure: "distil at the
+  lowest heat that condenses; the clean-burning fraction comes first; discard what smells
+  like tar." Empirical throughout, not remembered. (V2_REVISED_OUTLINE ch28;
+  master_outline.md Part IV "Oil-seep investigation"; TIMELINE_TEXTURE_AUDIT §f)
+- **[NEW — Atlantic return dispatch and moral trap]** The captain's dispatch includes
+  (a) confirmation of crops including the tomato (named first per Daniel's instructions);
+  (b) a disease report showing lower mortality than worst-case but real — 30-50% impact
+  where contact was sustained (NOT the 80-95% Columbian Exchange figure; Rome hasn't had
+  the Antonine Plague yet, so no smallpox); (c) a court-martial beat — one centurion
+  pursued retreating people against standing orders ("fire in front of, not into, the
+  boats the first time"), took two casualties, was relieved.
+  In his private cipher, **moral trap planted**: if his quarantine protocols hold, native
+  populations survive longer and resist Roman settlement militarily. If they fail,
+  populations die as in every Old World contact epidemic. His better medicine makes conquest
+  harder; which is an argument he would like to make but cannot undo what follows.
+  Cipher: "I will not kill people by withholding what I know. Everything else follows
+  from that and I cannot undo what follows." (master_outline.md Part IV; V2_REVISED_OUTLINE
+  ch28; C8/C9/C10 corrections in existing entry)
+- **[RETAIN — syphilis awareness and private encyclopedia confession]** These beats are
+  correctly placed here per existing C9 and C10 corrections. Preserve them at full weight.
+- The ocean-map idea is NO LONGER germinating in this chapter. Replace any "half-formed"
+  or "crystalizing" language with the correct register: Daniel is waiting for news, the
+  news arrives, and he immediately writes back instructions for a second expedition. The
+  idea has been complete since ch25; the execution has been underway since ch27.
+  (V2_REVISED_OUTLINE ch28 timeline note; REVISION_DELTA A1)
+- **[RETAIN — Crispus aggregate understanding]** The existing beat (Crispus has stopped
+  filing impiety charges and started writing pamphlets against the cultural-production
+  model) is correct. Preserve it. It belongs here because Daniel is away and receives
+  this news as a dispatch or rumor, not in a face-to-face scene.
   reach for more, and that more exists. This seed must be planted without telegraphing
   its importance. (V2_CHAPTER_CHANGE_NOTES, ch28 — gnomic closing watch)
 - Army logistics: show one specific beat of Daniel's decimal-notation accounting
@@ -1190,31 +1430,43 @@ serious planning began ~108-110 AD. The ocean arc is NOT half-formed here — it
 private commitment well underway. Daniel's public silence ("I told no one") masks a
 concrete operational plan, not a vague yearning.
 
-**[V3 C8/C9/C10 PLACEMENT ALERT]** The C8-C10 corrections earlier in this chapter's
-V2 story/plot additions (indigenous mortality figures, syphilis reverse exchange,
-private encyclopedia confession) reference events that follow the expedition's RETURN
-(~116-120 AD). If the first departure is ~112-115 AD and this chapter is ~113 AD, those
-beats belong in whichever chapter covers ~117-120 AD (likely the ch30-34 range). Writers
-should not force C8-C10 into ch28 if the expedition has not yet returned in this
-chapter's timeframe.
+**[NOTE — C8/C9/C10 NOW CORRECTLY PLACED]** The C8-C10 corrections (indigenous
+mortality figures, syphilis reverse exchange, private encyclopedia confession) all
+belong HERE in ch28, because by ~116-120 AD the expedition has returned and Daniel
+is reading the captain's account. Do not defer these to ch30-34. The chapter's
+timeframe spans 113-117 AD; the return news arrives in the later portion (~116-120 AD).
+The CANONICAL DIRECTION note above supersedes any V3 placement alert that would defer
+these beats. Keep all three in ch28.
 
 The full public deployment of the ocean gambit to Hadrian is ch36 (~121-125 AD), years
 after the first return.
 
 **[V2] Prose rules (chapter-specific):**
-- Gnomic closing watch: "a wound with an idea in it" is called the right register in
-  V2_CHAPTER_CHANGE_NOTES but is on the edge of a wisdom button. Keep the private,
-  half-formed quality; cut any explanatory sentence that follows it.
-- Watch for "not X, it's Y" around the ocean idea — it is tempting to frame it as
-  "not a plan, it was..." (PROSE_PATTERNS_TO_AVOID §1.1)
+- The Atlantic return dispatch: read in a tent at night, one paragraph of Daniel sitting
+  with the news, then immediately writing back instructions for a second expedition. Brief.
+  No speech. No annotation of what the tomato means to him.
+- Oil-seep / kerosene: empirical, improvised. The procedure is written down; the
+  incendiary implications are NOT discussed with anyone who doesn't already know.
+- Moral trap: private English cipher only. "I will not kill people by withholding what
+  I know. Everything else follows from that and I cannot undo what follows." Never stated
+  aloud. (master_outline.md Part IV)
+- Gnomic closing watch: if "a wound with an idea in it" is used, cut any explanatory
+  sentence that follows it.
+- Watch for "not X, it's Y" around the ocean arc.
 - The Celer reference: if Celer is still alive at this point, he may appear. His
   death is held for ch29. Do not kill him in ch28.
 
 **[V2] Zero-tolerance checks:**
-- [ ] No correctio — ocean-idea framing is high-risk zone
+- [ ] No correctio
 - [ ] No em dashes
 - [ ] No future-vantage narration about what this campaign will cost
-- [ ] Ocean idea: private, half-formed, not a plan
+- [ ] Ocean arc: NOT half-formed or germinating — expedition departed ch27, returns
+      news in this chapter; replace all "crystalizing" language
+- [ ] Atlantic return dispatch: tomato listed first per Daniel's instructions; multiple
+      crops documented; disease report with 30-50% mortality figure (not 20-30%)
+- [ ] Moral trap: English cipher only, never spoken aloud
+- [ ] Oil-seep / kerosene: improvised cuts (smell and burn test), written procedure,
+      incendiary implications unsaid
 - [ ] Balloon/decimal/paper divergences woven as texture, not announcement
 - [ ] Celer still alive in ch28 if he appears
 
@@ -1222,9 +1474,10 @@ after the first return.
 Mandatory 4: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md,
 bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md
 Chapter-specific additions:
-- V2_HISTORICAL_IMPACT.md (Part 1 — Parthian War section; 113-116 row)
-- bible/03_timeline.md (Parthian War 113-117 AD)
-- V2_STORY_PLOT_NOTES.md (§1.3 — Atlantic crossing setup; §1.1 divergence)
+- V2_HISTORICAL_IMPACT.md (Part 1 — Parthian War section; 113-117 row)
+- bible/03_timeline.md (Parthian War 113-117 AD; Atlantic return ~116-120 AD)
+- V2_STORY_PLOT_NOTES.md (§1.3 — Atlantic crossing; §1.1 divergence)
+- V2_NEW_WORLD_CONTACT.md (return dispatch; moral trap; disease figures)
 
 ---
 
@@ -1327,14 +1580,29 @@ The Kitos War revolts still erupt. Per V2_HISTORICAL_IMPACT: "the difference:
 with fewer gaps." Divergence is real but the tragedy is unchanged.
 
 **[V2] Atlantic/New World:**
-The Atlantic crossing planning arc begins here in Daniel's private thinking. Not
-on-page as a plan — as a direction his mind goes when he looks at the Persian Gulf
-water. He knows what is on the other side of a different ocean, and Rome will never
-hold this much territory anyway. This is a two-sentence private moment at most,
-not a scene. The scene is ch36.
-(V2_STORY_PLOT_NOTES §1.3, "Revised timeline": serious expedition planning begins
-~108-110 AD in Daniel's thinking; this chapter is the moment that thinking crystallizes
-into private intention)
+**[CANONICAL DIRECTION — correct this framing]** The Atlantic arc is NOT crystallizing
+here. The expedition departed ch27; the return news arrives in ch28. By ch29 (~115-116 AD)
+Daniel is waiting with a plan already complete and executed. When he looks at the Persian
+Gulf water, he is not first imagining the crossing — he is a man waiting for news from an
+expedition he already funded and sent. Replace any "crystallizing" or "first imagining"
+language with the correct register: quiet certainty that something has already been set in
+motion. Two-sentence private beat at most — Daniel at the water, going quiet — but the
+reader should understand this is a man with a plan already executing.
+- **[NEW — Tomato-sauce and ketchup payoff]** By the time Daniel returns from the east
+  with the captain's report in hand (~116-120 AD), the tomato plants from the first
+  expedition have had a season or two of cultivation in a trial plot. In this chapter or
+  the chapter's later timeframe, the tomato arc completes: Daniel grows them from seed,
+  loses the first season mostly, gets a real harvest in the second growing season. He
+  makes a basic tomato sauce — tomatoes crushed and reduced with oil and garlic, a bit of
+  garum for depth — and puts it on pasta. The pasta he has been making for years. The
+  sauce he has been unable to make for years. He eats it. He puts down the bowl. He says
+  nothing. Three sentences. No commentary. If anyone else is present, they notice he has
+  gone quiet. Nobody asks why. Within weeks: the proto-ketchup for Gnaeus — tomatoes,
+  vinegar, onion, spices, reduced thick, given without explanation. Gnaeus puts it on the
+  menu. This is the food arc's PRIMARY tomato payoff. It happens HERE (ch29), not in
+  ch36 or later. Daniel pushed for the Atlantic crossing partly because he knew what was
+  growing there. He never says this aloud. (REVISION_DELTA A1; master_outline.md Part IV
+  food arc; V2_REVISED_OUTLINE ch29 "tomato payoff")
 
 **[V2] Prose rules (chapter-specific):**
 - Remove honesty-scaffolding opener from Celer death scene — BLOCKING.
@@ -1342,6 +1610,8 @@ into private intention)
   is feeling. Show him holding the strap, putting it away, not putting it away.
   (PROSE_PATTERNS_TO_AVOID §4.2, Technique 2)
 - One concrete Kitos War detail: a name or city, to anchor the reader historically.
+- Tomato-sauce scene: private, three sentences maximum, no commentary. The emotion is
+  carried entirely by the bowl being put down and the silence. No annotation permitted.
 - "Wait for the water to boil" image: V1 used this to close three consecutive war
   chapters (ch28-30). Do not reuse the same closing image within five chapters.
   (PROSE_PATTERNS_TO_AVOID §3)
@@ -1353,7 +1623,9 @@ into private intention)
 - [ ] Kit-strap grief: no annotation of what it means
 - [ ] Kitos War backdrop: one concrete detail (name/city)
 - [ ] No "wait for the water to boil" close or any other close reused from ch28 or ch30
-- [ ] Atlantic idea: private, at most two sentences, not a plan
+- [ ] Atlantic: NOT crystallizing — plan already executed; tomato harvest and sauce scene
+      present; Gnaeus ketchup present; no announcement of why Daniel wanted the tomato
+- [ ] Tomato-sauce beat: THREE SENTENCES, private, no commentary
 
 **Updated Files list:**
 Mandatory 4: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md,
@@ -1362,7 +1634,8 @@ Chapter-specific additions:
 - V2_HISTORICAL_IMPACT.md (Part 1 — Parthian War; Kitos War; moral note)
 - V2_STORY_PLOT_NOTES.md (§1.3 — Atlantic timeline; §1.1 divergence)
 - bible/02_characters.md (Celer — death scene; kit-strap grief object)
-- bible/03_timeline.md (115-117 AD: Kitos War, Ctesiphon, Trajan's decline)
+- bible/03_timeline.md (115-117 AD: Kitos War, Ctesiphon, Trajan's decline; tomato harvest)
+- V2_FOOD_ARC.md (tomato payoff ch29 — primary; sauce + ketchup for Gnaeus)
 
 ---
 
@@ -1636,6 +1909,21 @@ a brief mention of his Hispanian workshop running without him (managed by a free
 overseer) establishes both the institutional resilience theme and the steam pump
 timeline. No dramatization needed — a line in passing.
 (V2_HISTORICAL_IMPACT, 118-120 row)
+- **[NEW — First reliable bronze siege bombard (~118-122 AD)]** The precision boring
+  prizes (running since ch21's demonstration, ~10-11 years of iteration) pay off in this
+  chapter's timeframe: a short thick-walled bronze tube fires a 30-40 lb stone ball
+  reliably from a fixed position. Not mobile field artillery. Crew of 12-15. Fifteen to
+  twenty minutes between shots. But it breaks walls. The ch21 cannon that burst was the
+  deliberate proof that precision is the wall; THIS is the real thing. Daniel's reaction
+  is not triumph — it is the recognition that what he has been building toward for eleven
+  years is real, and that what it means for siege warfare has changed.
+  NOTE: This directly supersedes any prose suggesting "no cannon a gunner can trust" —
+  that framing must be recontextualized to mean "no mobile field artillery a gunner can
+  trust." The fixed siege bombard works. (V2_REVISED_OUTLINE ch32; REVISION_DELTA A3;
+  V2_REVISED_OUTLINE cross-chapter continuity "Cannon arc" note)
+- **Lucanus age correction:** Lucanus is born ~110-111 AD. At ch32 (spring 118 AD) he
+  is approximately 7-8 years old. Correct any reference stating "five" or other younger
+  age. (REVISION_DELTA B; V2_REVISED_OUTLINE ch32 fix note)
 
 **[V2] Finance context:**
 Phase D. The bribe to Gaius Avidius (the senator threatening Daniel with 400,000 HS,
@@ -1683,14 +1971,18 @@ Omit.
 - [ ] Adoption doubt: one concrete in-chapter anchor
 - [ ] Celer-buckle close: no annotation
 - [ ] Neither Heras's nor Marcia's read becomes a speech
+- [ ] First reliable bronze siege bombard: on-page this chapter or ch33-34 — not deferred
+      past this range; reaction is recognition not triumph
+- [ ] Lucanus age: ~7-8, not "five" or younger
 
 **Updated Files list:**
 Mandatory 4: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md,
 bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md
 Chapter-specific additions:
 - bible/02_characters.md (Heras voice; Marcia voice; Hadrian — off-page first read)
-- bible/03_timeline.md (117-118 AD: Hadrian proclaimed)
+- bible/03_timeline.md (117-118 AD: Hadrian proclaimed; first bronze bombard)
 - V2_DANIEL_FINANCES.md (§4 — Senator Bribe)
+- bible/04_tech_schedule.md (Phase D — first working siege bombard ~118-122 AD)
 
 ---
 
@@ -1732,10 +2024,33 @@ callback close. Tyche hiding the box during the delator's visit is a strong agen
 - The claustrophobic, cell-callback close is earned per V2. Preserve it. The callback
   to ch02's cell should be felt through a physical detail (the rope, the dark, the
   sound) rather than named explicitly. (V2_CHAPTER_CHANGE_NOTES, ch33 — preserve)
-- Crispus's credibility collapse (required V2 exit) is NOT in this chapter — but
-  this chapter should leave him looking overextended rather than triumphant. He wins
-  this battle (Daniel is further weakened) but makes a public claim that will later
-  collapse. (V2_STORY_PLOT_NOTES §2.1)
+- **[CANONICAL DIRECTION — Crispus exits this chapter]** Per the canonical direction:
+  "Crispus's public credibility collapse happens here." Hadrian has no interest in
+  impiety charges against a man who has given Rome the press, the numerals, and a proven
+  western route. Crispus's political leverage evaporates publicly — not violently, but
+  definitively. He is made to look like a man who complained about the wrong thing to the
+  wrong emperor. A public figure cites Crispus's written denials in a public address; the
+  Atlantic crossing results (the crops, the return dispatch, the captain's account now
+  circulating in Daniel's circles) are the physical evidence that refutes the specific
+  claim Crispus made in ch27. Crispus does not recant; he says nothing after that.
+  Not dead: erased. (REVISION_DELTA "Crispus exits ch33"; V2_REVISED_OUTLINE ch33;
+  master_outline.md Part V "Crispus's credibility finally collapses")
+- **[CANONICAL DIRECTION — Returned indigenous person met in Rome]** Per the canonical
+  direction: "ch36 is Hadrian formalizing a SECOND-wave program" and "an indigenous
+  person is met in Rome (ch33)." Someone from the second expedition's western contacts
+  has made the return voyage and is housed in Daniel's compound. Daniel meets this person
+  in Rome. Not a dramatic encounter — a quiet, logistically complicated meeting with an
+  interpreter (the captain has learned a few words; Daniel has none). What passes between
+  them is limited and strange. This is the scene the novel has been building toward since
+  page one: Daniel standing in front of someone from the world that existed before he
+  arrived, who has no idea what that means. Daniel arranged it. He is responsible for this
+  person being here. He writes in English afterward; the scene does not resolve.
+  (REVISION_DELTA A1; V2_REVISED_OUTLINE ch33; master_outline.md Part V "Returned person")
+- **[NEW — Prophetic credibility — the wrong kind of trust]** After the Atlantic proof
+  circulates, Daniel's prior claims — germ theory, forecasts, technical predictions — are
+  simply accepted without argument. Not because the argument was won but because he was
+  right about the map. People stop arguing with him. He finds this more disturbing than
+  the years of opposition. (V2_REVISED_OUTLINE ch33)
 
 **[V2] Tech requirements:**
 Phase D. The press is the most vulnerable institutional asset in this chapter — a
@@ -1767,14 +2082,20 @@ and doing nothing. The cost of having knowledge he cannot use.
 
 **[V2] Historical divergence:**
 118 AD. The Four Consulars affair is historically unchanged — Hadrian's paranoia is
-unchanged. But Daniel's survival of it is a divergence: no real Roman of his profile
-(a foreign-born, tech-focused freedman elevated by Trajan) would have had the
-institutional protection to weather this transition. Daniel does, because of the press,
-the workshop's commercial independence, and the bribes he has been paying for years.
+unchanged. But Daniel's survival of it is a divergence. Additionally: a person from the
+western continent is now in Rome, which is a divergence of a different order. The
+Atlantic crossing results circulate through Daniel's circles and end Crispus's
+credibility. Daniel has given Rome the first proof that his western map is real.
 (V2_HISTORICAL_IMPACT Part 1, Hadrian section)
 
 **[V2] Atlantic/New World:**
-None. Omit.
+The indigenous person from the return voyage is housed in Daniel's compound and met
+in this chapter. This is not the first contact scene; it is the Rome scene. Tyche is
+the primary contact. Communication is limited — gesture, repeated words, objects named.
+Daniel makes decisions for this person before he can ask what they want; he writes this
+in English. The scene does not resolve. The person is not exhibited, not assigned to
+a scholar, not introduced to authority until there is a functional vocabulary. Daniel
+is aware of the irony. (REVISION_DELTA A1; V2_REVISED_OUTLINE ch33)
 
 **[V2] Prose rules (chapter-specific):**
 - Bored-delator scene: physical texture required. What the man looks like, how he
@@ -1783,6 +2104,9 @@ None. Omit.
 - Cell-callback close: physical detail, not named. The reader should feel it
   without being told "this reminded him of the cell."
 - Tyche hiding the box: show it, don't narrate it. The action is the point.
+- Indigenous person scene: quiet, logistically complicated, limited communication.
+  Not a dramatic revelation. Not annotated. Daniel writes afterward; what passes between
+  them stays in the scene's restraint.
 - Watch for "not X, it's Y" around the survival-through-usefulness theme.
   (PROSE_PATTERNS_TO_AVOID §1.1)
 
@@ -1792,16 +2116,22 @@ None. Omit.
 - [ ] Bored-delator: physical texture (not just reported threat)
 - [ ] Cell-callback close: physical detail, not named
 - [ ] Scaeva's public distancing: shown, not narrated
-- [ ] Crispus: last active attack, specific claim made that will later be refuted
+- [ ] Crispus: exits this chapter — credibility collapses publicly; not dead, erased;
+      his claim from ch27 is the one physically refuted by the Atlantic evidence
+- [ ] Indigenous person in Rome: present, quiet, logistically complicated;
+      Tyche as primary contact; no exhibition
+- [ ] Crispus exits ch33 (per canonical direction) — do NOT extend his active
+      antagonist role into ch34 or later
 
 **Updated Files list:**
 Mandatory 4: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md,
 bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md
 Chapter-specific additions:
-- bible/02_characters.md (Scaeva — distancing; Crispus — final active attack; Tyche)
+- bible/02_characters.md (Scaeva — distancing; Crispus — exits; Tyche; indigenous person)
 - V2_STORY_PLOT_NOTES.md (§2.1 Crispus exit; §2.2 Scaeva exit setup)
 - V2_DANIEL_FINANCES.md (Phase D — damages; senator bribe)
-- bible/03_timeline.md (118 AD — Four Consulars; Hadrian's first year)
+- bible/03_timeline.md (118 AD — Four Consulars; Hadrian's first year; indigenous person)
+- V2_NEW_WORLD_CONTACT.md (returned person in Rome; Tyche contact protocol)
 
 ---
 
@@ -1869,9 +2199,53 @@ Phase D. Active programs during this period:
   V2_HISTORICAL_IMPACT Rome in 155 AD snapshot)
 - Magnetic compass in regular use by navigators (from ~108 AD prototype to standard
   by ~118-120 AD)
-- Atlantic probe voyages being planned — first voyage ~125 AD per timeline
-At least one of these should be a visible background presence in the workshop during
-the rebuilding arc. (V2_TECH_DEEP_DIVE §3, 108-115 row)
+- **[NEW — Standardized screw threads and interchangeable parts]** The Phase C precision
+  prize pays off here: bolts and nuts from different smiths thread interchangeably to a
+  defined profile plus go/no-go gauge. Daniel verifies it himself. Makes standard thread
+  a condition of all workshop supply contracts. The cannon-boring and steam-pump programs
+  both benefit. Replacing a part no longer requires the original maker.
+  (V2_REVISED_OUTLINE ch34; master_outline.md Part IV "Standardized screw threads")
+- **[NEW — Industrial acids]** Sulfuric acid from green vitriol, hydrochloric from salt,
+  nitric from saltpeter; run as directed workshop processes with written safety protocols;
+  uses: steel pickling, textile mordant, photography reagent. Production documented in
+  cipher until Daniel decides otherwise. (V2_REVISED_OUTLINE ch34; master_outline.md
+  Part IV "Industrial acids")
+- **[NEW — Nitroglycerin — knowledge gap, not refusal]** Daniel can name nitroglycerin
+  as a powerful explosive from glycerol and acids — he says so when the topic arises. He
+  does NOT know the precise synthesis: the ratios, temperatures, and stabilization steps
+  that separate a working batch from an immediate detonation. This is a knowledge gap he
+  cannot bridge. He writes it in the encyclopedia as a dead end: the name, the precursors,
+  the fact that it exists, and a note that he cannot provide the procedure.
+  **Texture:** He says aloud he only has a cartoon-level grasp: "Nobel, 1867. I know the
+  name. I do not know the steps." Will not let anyone experiment with it. This is paired
+  with the industrial acids context — not a refusal out of caution but a genuine knowledge
+  limit. (V2_REVISED_OUTLINE ch34; master_outline.md Part IV "Nitroglycerin — a dead end";
+  TIMELINE_TEXTURE_AUDIT §a "Dynamite / stabilized nitroglycerin")
+- **[NEW — Coke production figured out, not remembered]** Knows coal burns hotter and
+  that coking exists (documentary memory), not the ratios/temperatures. Directs a smith
+  to heat coal sealed; the third try with a smaller air opening works. "The smith got
+  there." He writes the result, not the path. (V2_REVISED_OUTLINE ch34;
+  TIMELINE_TEXTURE_AUDIT §f "Coke production")
+- **[NEW — Stirling engine as entertainment before industry]** Before the Newcomen pump,
+  Daniel builds a small hot/cold-cylinder engine driving a children's carousel at a fair.
+  Walking pace; the crowd is delighted. He is noting that a multi-cylinder version could
+  drive a paddle. The carousel is proof of principle; he writes that in the cipher.
+  (V2_REVISED_OUTLINE ch34; master_outline.md Part II "Stirling engine";
+  TIMELINE_TEXTURE_AUDIT "Stirling engine for entertainment before industry")
+- **[NEW — I-beam reference note, conditional]** Mentions that an I-section resists
+  bending better per weight. Not sure Roman construction needs it — their work is
+  genuinely good. Posts it as a reference note, not a prize: "for when iron is cheaper
+  than it is now." (V2_REVISED_OUTLINE ch34; master_outline.md Part IV "I-beam —
+  reference note, conditional"; TIMELINE_TEXTURE_AUDIT §f)
+- **[NEW — Patent law as company practice]** Can't make it law, so he adds a clause to
+  prize contracts: winner gets the money plus a ten-year license fee on commercial use,
+  paid through the workshop. Patent behavior enforced by being a condition of doing
+  business with him. (V2_REVISED_OUTLINE ch34; master_outline.md Part III "Patent law")
+At least one of the new tech beats should be a visible workshop scene, not just narrated.
+(V2_TECH_DEEP_DIVE §3, Phase D; master_outline.md Part IV)
+- **Lucanus age:** Born ~110-111 AD. At ch34 (~118-122 AD) he is approximately 8-12
+  years old. Correct the existing brief's "born ~112 AD, approximately 6-10 years old"
+  to match the canonical birth date. (REVISION_DELTA B)
 
 **[V2] Finance context:**
 Phase D. Worth 10,000,000-18,000,000 HS after the succession damage — "down from peak,
@@ -1893,28 +2267,27 @@ explaining why he knows this target will work. (V2_DANIEL_COGNITIVE_EDGE §2)
 ~118-122 AD. Per V2_HISTORICAL_IMPACT: Hadrian's Wall (begun 122 AD) is built with
 vernier-caliber surveying tools, construction time approximately 12% shorter, drainage
 system anomalously good. This is visible divergence if Daniel has any contact with the
-engineering corps during this period. If not, it is background context.
+engineering corps during this period. If not, it is background context. Additionally:
+standardized screw threads now a workshop supply condition; coke production running;
+industrial acids at the workshop; Stirling-engine carousel publicly demonstrated.
 (V2_HISTORICAL_IMPACT Part 1, Hadrian's Wall section)
 
 **[V2] Atlantic/New World:**
-The Atlantic program is beginning to be planned in this period. First probe voyage ~125 AD.
-During ch34's timeframe (~118-122 AD), Daniel is commissioning hull designs and identifying
-potential navigators. One line of this planning — a meeting with a shipwright, a map
-with a question mark — plants the ch36 deployment without advancing it too far.
-(V2_STORY_PLOT_NOTES §1.3, "Revised timeline": expedition preparation 2-3 years,
-first crossing ~112-115 AD; NOTE: V2 revises the timeline significantly earlier;
-per V2_STORY_PLOT_NOTES the crossing happens ~112-115 AD in Daniel's early 30s —
-but this conflicts with the V2_HISTORICAL_IMPACT probe voyages starting from ~125 AD
-and the ch36 ocean gambit set piece with Hadrian. The writer must reconcile this:
-the Hadrian-era ocean program (ch36) is the FUNDED institutional program; Daniel's
-private thinking about the crossing may have started earlier. Use the ch36 set piece
-as the moment institutional commitment begins.)
+The FIRST crossing already happened (ch27) and returned (ch28). The second wave is being
+organized. This chapter is Hadrian's rebuilding period (~118-122 AD); the second-wave
+program is formally sanctioned in ch36. No Atlantic confusion in this chapter — the
+stale note about "probe voyages starting ~125 AD" referred to the Hadrian-sanctioned
+second wave, not the first private crossing. The crops from the first return are now in
+cultivation; tomato sauce is already a workshop staple from ch29. At ch34 the Atlantic
+is documented history, not a plan. (REVISION_DELTA A1)
 
 **[V2] Prose rules (chapter-specific):**
 - Three BLOCKING changes: closing refrain, correctio, announced-emotional-content line.
   All must be addressed.
 - Global honesty-scaffolding check: search for "I want to be" openers in every scene.
   Remove all. Begin directly.
+- Nitroglycerin dead end: NOT a refusal, NOT a dramatic withholding speech — a genuine
+  knowledge limit stated in one line. Done. Move on.
 - Marcia and Tyche holding the enterprise: show competence through specific decisions
   they make, not through narration of their competence.
   (PROSE_PATTERNS_TO_AVOID §4.2, Technique 1)
@@ -1926,6 +2299,9 @@ as the moment institutional commitment begins.)
 - [ ] Announced-emotional-content line: BLOCKING — remove, end on action
 - [ ] All "I want to be exact" openers: remove
 - [ ] Marcia/Tyche: shown competent, not narrated competent
+- [ ] Nitroglycerin: knowledge gap stated briefly; no dramatic speech about it
+- [ ] Lucanus age: born ~110-111 AD, age ~8-12 in this chapter's range
+- [ ] Industrial acids, screw threads, coke, Stirling carousel, I-beam note: all present
 
 **Updated Files list:**
 Mandatory 4: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md,
@@ -1934,11 +2310,12 @@ Chapter-specific additions:
 - bible/02_characters.md (Marcia and Tyche in active competence; Hadrian indirect)
 - V2_DANIEL_FINANCES.md (Phase D — treadmill framing; steam pump first income)
 - V2_HISTORICAL_IMPACT.md (118-120 row; Hadrian's Wall section)
-- V2_STORY_PLOT_NOTES.md (§1.3 — Atlantic timeline)
+- V2_STORY_PLOT_NOTES.md (§1.3 — Atlantic first crossing done; second wave pending)
+- bible/04_tech_schedule.md (Phase D — acids, screw threads, coke, nitroglycerin dead end)
 
 ---
 
-### ch35 — Hadrian [STATUS: PASS]
+### ch35 — Hadrian [STATUS: REVISE]
 
 **Era/Date:** ~121-122 AD, Daniel ~40-41 years old
 
@@ -2016,6 +2393,46 @@ Phase D/E border. What Daniel brings to Hadrian:
   shows production rather than just describes it)
 - Patent law concept: Hadrian is a legal reformer; this is the right emperor for this
   argument. Whether it appears in this chapter or ch36 is a writer's decision.
+- **[NEW — Riverine steamboat as first steam argument]** When Daniel makes the steam
+  case to Hadrian, his FIRST argument is rivers, not rails: an upstream Tiber boat
+  without tow-path, oars, or wind changes every city on a waterway. Rails are harder
+  to imagine and more expensive to sell; Romans already understand boats. He leads with
+  what Hadrian can picture before moving to the larger communication argument.
+  **Texture (riverine steamboat):** Daniel starts with the Tiber, watches Hadrian follow
+  that image easily, then pivots. The steam-rail argument comes second, after he has the
+  river picture in place. (V2_REVISED_OUTLINE ch35 "riverine steamboat"; TIMELINE_TEXTURE_
+  AUDIT "Riverine steamboat (TEXTURE)")
+- **[NEW — Steam/rail communication argument, full form]** The empire-falls-for-lack-of-
+  communication argument lives in this chapter (NOT ch38 — that version must be removed).
+  Daniel's speech: "I knew an empire that fell because its east could not reach its west
+  fast enough. The news arrived after the army did." He connects this to semaphore relay
+  towers (hours, not weeks from the Rhine) and to the riverine steamboat as a transport
+  corollary. This is the setup that justifies Hadrian's ch36 sanction of both the ocean
+  program and the relay network. (V2_REVISED_OUTLINE ch35; C14 correction — this speech
+  belongs HERE not ch38. See C14 note at the end of this file.)
+- **[NEW — Optical semaphore: institutional resistance resolved]** The army has spent two
+  years citing way-stations and riders as adequate. Daniel gives Hadrian the structural
+  argument here: the four-day Rome–Rhine gap is not a speed inconvenience, it is a
+  structural vulnerability. A governor who turns can hold that gap. Hadrian asks how many
+  towers. Daniel has the number ready. The resistance that has been noted since ch23 is
+  addressed and resolved in this chapter. (V2_REVISED_OUTLINE ch35; TIMELINE_TEXTURE_AUDIT
+  §b "Semaphore — institutional resistance to the need (TEXTURE)")
+- **[NEW — Prize model adopted by imperial administration]** In interiority, Daniel notes
+  Hadrian's administration posting quality-spec tenders for bridge and aqueduct work —
+  prize equals the contract. He mentions it once to Tyche in English; does not publicize
+  that he started it. One brief beat confirming the model has propagated beyond his own
+  workshop without attribution. (V2_REVISED_OUTLINE ch35)
+- **[NEW — Hadrian's Wall]** Built using Daniel's vernier-survey standard: more precise
+  geometry, frost-proof drainage, approximately 12% under schedule. Daniel hears this
+  secondhand. One sentence in passing — background divergence confirmation, not a
+  scene. (V2_REVISED_OUTLINE ch35; REVISION_DELTA A4; V2_HISTORICAL_IMPACT Part 1,
+  Hadrian's Wall section)
+- **[NEW — Vibenius exit]** Vibenius's called favor is resolved in this chapter. Daniel
+  has a reason ready ("a reason he could say to a god's face"). The terms are honored.
+  Vibenius's death is witnessed near the chapter's END (~125 AD per canon log), NOT at
+  the opening. This closes the third antagonist arc. Writers must not place Vibenius's
+  death in the chapter's early scenes — the exit belongs at the end. (V2_REVISED_OUTLINE
+  ch35 CROSS-CHAPTER CONTINUITY; V2_REVISED_OUTLINE "Vibenius exits ch35")
 (V2_TECH_DEEP_DIVE §4, Phase D; V2_STORY_PLOT_NOTES §6)
 
 **[V2] Finance context:**
@@ -2043,22 +2460,40 @@ Daniel's technology program produces real results. This changes the quality of h
 decision-making: he is not just consolidating defensively, he is choosing to develop
 Rome's position while keeping options open. This should be visible in one specific
 exchange — Hadrian asking about something specific from Daniel's work that only an
-informed emperor would know to ask about.
+informed emperor would know to ask about. Hadrian's Wall begins ~122 AD with vernier-
+survey precision; construction ~12% under historical schedule; drainage anomalously good.
+Daniel hears this secondhand — one sentence, background only.
 (V2_HISTORICAL_IMPACT Part 1, Hadrian section)
 
 **[V2] Atlantic/New World:**
-The ocean program is being planted here for ch36's full deployment. Daniel may mention
-the western ocean as a long-horizon argument without deploying the map yet. One line
-about "the edge that is not the end" or equivalent.
+The first crossing has already returned (~117-119 AD) with crops, maps, and the indigenous
+person now in Daniel's compound (ch33). The second expedition is under way. Here, Daniel
+plants the ocean program for Hadrian as the long-horizon consolidation argument: an empire
+that holds the western route holds future growth without conquest wars. The crops (sweet
+potato, polenta) are already in cultivation and can serve as ambient texture. The full
+"ocean gambit" deployment — maps, institutional framing, second-wave sanction — lands in
+ch36. This chapter is the setup: Daniel leads with "the edge that is not the end" before
+the full pitch.
 
 **[V2] Prose rules (chapter-specific):**
-- "Numbers stayed" closing refrain: BLOCKING — use fresh image. This is the only
-  structural fix required for this STATUS: PASS chapter.
+- "Numbers stayed" closing refrain: BLOCKING — use fresh image. This is one of two
+  structural changes required (the other is adding the new tech/texture beats below).
 - "Eudemus" compression line: trim.
 - Hadrian's dialogue: every verbatim exchange kept. This is the chapter's load-bearing
   technical achievement and must not be simplified.
-- Daniel's pivot must be shown in real time — one physical hesitation before the
+- Daniel's pitch pivot must be shown in real time — one physical hesitation before the
   change of direction. (PROSE_PATTERNS_TO_AVOID §4.2, Technique 1)
+- Riverine steamboat first: Daniel leads with the Tiber upstream picture, watches it
+  land, then pivots to the communication argument. The sequence matters — rivers before
+  rails in this pitch. Show the two-stage move, not a single speech.
+- Steam/rail speech: belongs ONLY in this chapter. Remove any duplicate in ch38.
+- Semaphore resistance: the army's "way-stations are good enough" position must be
+  present in the chapter so Hadrian's interest constitutes a real resolution.
+- Vibenius exit: near the chapter's end, not its opening. Not dramatized — one witnessed
+  moment or a brief confirmed report. The exit should feel like a quiet closing, not a
+  scene that competes with Hadrian for the chapter's weight.
+- Watch for "not X, it's Y" around the steam-rail / semaphore pitch.
+  (PROSE_PATTERNS_TO_AVOID §1.1)
 
 **[V2] Zero-tolerance checks:**
 - [ ] No correctio
@@ -2067,15 +2502,27 @@ about "the edge that is not the end" or equivalent.
 - [ ] Eudemus compression line: trim
 - [ ] Hadrian's testing dialogue: verbatim, not summarized
 - [ ] Daniel's pitch pivot: shown in real time, not narrated
+- [ ] Riverine steamboat: FIRST steam argument (rivers before rails)
+- [ ] Steam/rail speech: present in THIS chapter; remove from ch38
+- [ ] Semaphore resistance resolved: army position present; Hadrian asks tower count;
+      Daniel has the number
+- [ ] Prize model adopted by imperial admin: interiority beat, brief, not publicized
+- [ ] Hadrian's Wall: one background sentence, secondhand
+- [ ] Vibenius exits near END of chapter (~125 AD); not opening; not dramatized out of
+      proportion; not placed in ch34
 
 **Updated Files list:**
 Mandatory 4: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md,
 bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md
 Chapter-specific additions:
-- bible/02_characters.md (Hadrian full profile — the testing/dangerous/curious emperor)
+- bible/02_characters.md (Hadrian full profile — testing/dangerous/curious; Vibenius
+  exit ~125 AD)
 - V2_STORY_PLOT_NOTES.md (§6 — institutional innovations; §8 steam/rail communication
-  argument, which may be planted here or in ch36)
-- V2_HISTORICAL_IMPACT.md (Part 1, Hadrian section)
+  argument — assigned to ch35, NOT ch38)
+- V2_HISTORICAL_IMPACT.md (Part 1, Hadrian section; Hadrian's Wall — 12% under
+  schedule, drainage anomalously good)
+- bible/04_tech_schedule.md (Phase D — semaphore institutionalized; riverine steamboat
+  argument; prize-model propagation beyond workshop)
 
 ---
 
@@ -2154,6 +2601,14 @@ it. Hadrian's bounded, consolidator's-version-only response is exactly right.
   names it. Hadrian offers the prize for it. This is the correct institutional response —
   Hadrian uses the prize-competition model Daniel introduced, applied to the problem
   Daniel said he cannot solve. Show Daniel recognizing this.
+  **Texture (longitude — face-saving deflection):** To Hadrian, Daniel says the celestial
+  math is sailors' work, not his. He does NOT say he knows the principle and cannot build
+  the chronometer it needs. The true admission stays in private notation. What is ADDED
+  to the existing honesty beat: the public version is a deflection, not a confession. The
+  reader sees the gap between what he says to Hadrian and what he writes in the cipher
+  afterward. This distinction is load-bearing — Daniel is being strategic, not humble.
+  (V2_REVISED_OUTLINE ch36 "longitude face-saving"; TIMELINE_TEXTURE_AUDIT §d "Longitude
+  — face-saving lie about why he can't (TEXTURE)")
   (V2_CHAPTER_CHANGE_NOTES, ch36 — special-check PASS)
 - Patent law: if not included in ch35, this is the chapter for the patent law proposal
   to Hadrian's legal circle. Hadrian is "intrigued but does not formally enact in
@@ -2168,6 +2623,14 @@ it. Hadrian's bounded, consolidator's-version-only response is exactly right.
   knowing they will carry illness? Do NOT have him speak this aloud. Show it as a
   hesitation when Hadrian asks about "establishing settlements."
   (V2_NEW_WORLD_CONTACT Part 4 — Daniel's moral dilemma)
+- **[NEW — Accidental-expansion reckoning]** Daniel registers, in private interiority,
+  that Hadrian's bounded ocean program is not a release valve for Roman military ambition
+  but a new target for it. He wanted the ocean to redirect Roman conquest energy away from
+  the eastern provinces; he has instead given Rome a new continent to compete for. He saw
+  this outcome coming and could not stop it without stopping the crossing itself. This is
+  not a speech and not guilt — it is a precise, clear-eyed note in the cipher after the
+  meeting: he chose this. The choice is documented. (V2_REVISED_OUTLINE ch36 "accidental
+  expansion"; REVISION_DELTA "accidental-expansion reckoning")
 
 **[V2] Tech requirements:**
 Phase D/E. The ocean program requires:
@@ -2226,34 +2689,56 @@ hesitation, not a speech.
 - Future-annotation L133: BLOCKING — reframe as present speculation.
 - "Uninhabited" lie: one moment of hesitation before the word, then the word. No
   annotation after. The reader who has been watching since ch03 will feel it.
+  NOTE: Daniel speaks this lie while an indigenous person from that continent lives
+  in his compound (established ch33). The text must not obscure this — the weight of
+  the lie is precisely that he is lying to Hadrian while knowing the truth personally.
 - Sea-clock honesty: keep it exactly. Do not let Daniel soft-pedal or hand-wave the
-  longitude problem. The honest admission earns Hadrian's respect.
+  longitude problem.
+- Longitude face-saving: add the private notation beat — what Daniel says to Hadrian
+  vs. what he writes in the cipher afterward. Two lines maximum. The gap is the point.
 - Citrus provisioning mention: one sentence. Do not build a scene around it.
   "I wrote citrus in the provision list and described the symptoms to the quartermaster
   without naming the cause." Done.
+- Accidental-expansion reckoning: private interiority or cipher, after the meeting.
+  Precise and clear-eyed, NOT guilt-speech. One paragraph. He chose this.
+- Tomato: NOT introduced here. It has been in use since ch29.
+  (PROSE_PATTERNS_TO_AVOID §1.1, §4.2)
+- Watch for "the way" constructions: maximum 3. V2_REVISED_OUTLINE notes ch36 at 6 —
+  reduce to 3 before submission.
 
 **[V2] Zero-tolerance checks:**
 - [ ] No correctio
 - [ ] No em dashes
 - [ ] "Numbers stayed" closing: BLOCKING — fresh image
 - [ ] Future-annotation L133: BLOCKING — reframe as speculation
-- [ ] "Uninhabited" lie: hesitation beat, no annotation
+- [ ] "Uninhabited" lie: hesitation beat, no annotation; weight acknowledged (person
+      in compound); lie spoken deliberately
 - [ ] Citrus provisioning: on the page, one sentence
 - [ ] Sea-clock honesty: preserved verbatim
+- [ ] Longitude face-saving: private-notation beat added; public deflection vs. cipher
+      admission gap visible
 - [ ] Tactic-as-rule (L97-98): shown, not labeled
 - [ ] Epidemiological moral hesitation: present, unspoken
+- [ ] Accidental-expansion reckoning: in interiority/cipher after meeting; one
+      paragraph; not guilt, not speech; "I chose this"
+- [ ] Tomato: NOT introduced in this chapter — already in use since ch29
+- [ ] "The way" count: reduce from 6 to 3 maximum
 
 **Updated Files list:**
 Mandatory 4: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md,
 bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md
 Chapter-specific additions:
-- V2_STORY_PLOT_NOTES.md (§1.3 — Atlantic crossing; §4.3 citrus; §6 patent law)
-- V2_NEW_WORLD_CONTACT.md (Part 4 — Daniel's moral dilemma; Executive Summary)
+- V2_STORY_PLOT_NOTES.md (§1.3 — Atlantic crossing second-wave; §4.3 citrus; §6
+  patent law)
+- V2_NEW_WORLD_CONTACT.md (Part 4 — Daniel's moral dilemma; Executive Summary;
+  accidental expansion)
 - V2_HISTORICAL_IMPACT.md (Part 4 — Ocean Program; Appendix 121-128 row)
-- bible/03_timeline.md (ch36 Divergence Ledger entry)
-- V2_DANIEL_FINANCES.md (Phase E — ocean voyage funding)
-- V2_TECH_DEEP_DIVE.md (§4 — compass/navigation achievable; marine chronometer blocked)
-- bible/02_characters.md (Hadrian — traveler/administrator identity)
+- bible/03_timeline.md (ch36 Divergence Ledger entry — FIRST DIVERGENCE)
+- V2_DANIEL_FINANCES.md (Phase E — ocean voyage funding split terms on page)
+- V2_TECH_DEEP_DIVE.md (§4 — compass/navigation achievable; marine chronometer
+  blocked; longitude face-saving deflection vs. private admission)
+- bible/02_characters.md (Hadrian — traveler/administrator identity; Lucanus English
+  from birth interiority note)
 
 ---
 
@@ -2368,6 +2853,58 @@ Discrepancy 2.
 **C19 — Women in contest: not a big deal (MEDIUM):** APPLIED. Added to ch26 entry.
 Women submit and win. Daniel expected more controversy than materialized. Do not frame
 as social progress moment. Resolves audit_writing_contest.md D2, D3.
+
+---
+
+**[NEW TECH BEATS — Ch19–36 canonical additions from TIMELINE_TEXTURE_AUDIT and master_outline.md:]**
+
+**Ch19 — Board-game roster:** Added to Story/Plot additions. Once the press prints grids:
+Battleship, Chutes-and-Ladders, Connect Four (tavern fixture, copied from one wood set).
+Scrabble waits on literacy. A commercial line, not just chess and cards.
+
+**Ch23 — Volta pile, electromagnet, Morse, ball bearings, typewriter prize, optical semaphore:**
+All added to Tech requirements. Electromagnet texture: "It has become a lodestone." Baghdad-
+battery already-known reaction (Hermes mild recognition). Morse invented-fresh (won't call it
+Morse, can't verify the original).
+
+**Ch24 — Hydrogen applications from electrolysis:** Added. Oxy-hydrogen torch (cutting and
+welding), hydrogen-lift recon balloon (lighter-than-air alternative), hydrogen grenade
+(tested, not pursued due to detonation uncertainty).
+
+**Ch25 — Antikythera "that's obvious" pushback / trade winds "only knows the generics":**
+Added as texture beats. Daniel presents the compass + spherical chart; calculator demo
+draws Antikythera comparison; trade-wind bands drawn "approximately — verify as you go."
+
+**Ch26 — Flying shuttle, water-powered loom, war rockets, bulkheaded hull/lifeboats,
+insurance try-and-fail, stock-market framing, monetary/inflation argument:** All added to
+Tech requirements and Story/Plot additions. Expedition prospectus plus autonomy charter
+also added. Contest category split added.
+
+**Ch28 — Oil-seep recognition and kerosene improvised by smell-and-burn:** Added to Tech
+requirements with full texture note. Canonical correction: expedition departed ch27 and
+returns HERE with crops (tomato listed first), disease report, and geographic logs.
+
+**Ch29 — Tomato-sauce/ketchup payoff:** Added as primary food-arc payoff (tomato-pasta in
+private; ketchup-adjacent reduction for Gnaeus). This is the arc's earned arrival, not ch36.
+
+**Ch32 — First reliable bronze siege bombard (~118-122 AD):** Added to Tech requirements.
+ch21 burst was deliberate proof; THIS is the result. Reaction is recognition, not triumph.
+
+**Ch33 — Crispus publicly erased; indigenous person met in Rome:** Both added as CANONICAL
+DIRECTION notes. Crispus not dead but erased — Atlantic evidence refutes his ch27 claim.
+Indigenous person from return voyage housed in Daniel's compound; Tyche as primary contact.
+
+**Ch34 — Standardized screw threads, industrial acids, nitroglycerin dead end, coke figured-
+out-not-remembered, Stirling carousel, I-beam reference note, patent law as company clause:**
+All added to Tech requirements with texture notes. Lucanus birth date corrected to ~110-111 AD.
+
+**Ch35 — Riverine steamboat as first steam argument, steam/rail speech, semaphore resistance
+resolved, prize model adopted by imperial admin, Hadrian's Wall (secondhand, one sentence),
+Vibenius exits near chapter END:** All added to Tech requirements. Status changed PASS→REVISE.
+
+**Ch36 — Longitude face-saving deflection texture, accidental-expansion reckoning:** Both
+added to Story/Plot additions. "The way" count flagged for reduction from 6 to 3. Tomato
+explicitly noted as NOT introduced here (in use since ch29).
 
 ---
 
