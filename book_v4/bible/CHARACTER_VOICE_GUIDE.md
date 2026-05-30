@@ -24,6 +24,60 @@ of side characters landing the scene's sharpest line.
 
 ---
 
+## SECTION 1.5: THE NARRATION/DIALOGUE SPLIT — CRITICAL FOR DANIEL
+
+Daniel writes his memoir late in life. He is an old man looking back across sixty
+years. His **narration voice** is the old man's: dry, retrospective, sophisticated,
+capable of irony and long sentences and precise metaphor. This is intentional and
+correct. Do not flatten it.
+
+Daniel's **quoted dialogue** is the 17-year-old's voice — and it must stay 17
+across the early chapters. Agents must not bleed the narrator's sophistication into
+what the young Daniel actually said. The narration can be polished. The dialogue
+cannot be.
+
+**Required features of Daniel's spoken dialogue (especially chapters 1-25):**
+- Contractions, always. "I don't" not "I do not." "It's" not "it is."
+- Hedging: "I think," "kind of," "sort of," "I mean—", "maybe"
+- Incomplete thoughts: trailing off mid-sentence when scared or uncertain
+- Filler: "like" as a marker, "you know," pauses written as dashes
+- Second-guessing mid-statement: "It's gonna — I mean, it might not — yeah, okay,
+  it's probably gonna work but I've never actually done it at this scale."
+- Mild swearing under stress (shit, damn, hell, occasionally stronger)
+- Asking questions he should know the answer to because he's nervous
+
+**Forbidden in Daniel's dialogue:**
+- Perfectly formed arguments with clean rhetorical structure
+- Philosophical summations ("That is either the honorable version or...")
+- Flat one-word acknowledgments of hard truths ("I know." — a teen says "Yeah.
+  Yeah, I know. I — yeah." or trails off entirely)
+- Formal diction ("I do not know whether to be glad it already exists or sad that
+  I did not do it" — no teen talks like this)
+- Delivering the chapter's thematic line in his own dialogue
+
+**CORRECT:**
+> "Yeah, I mean — okay. So I was thinking maybe we just, like, try it? I know it
+> probably won't work the first time but if we just start and see what happens?
+> I don't know. Maybe that's dumb. What do you think?"
+
+> "Okay so — I know how this sounds. I know. But I've done the math on it like
+> four times and it keeps coming out the same, so either I'm wrong — which, yeah,
+> possible — or the thing is actually gonna work. Probably."
+
+**WRONG:**
+> "I do not know whether to be glad it already exists or sad that I did not do it."
+> "I know." *(as a flat response to being told his invention will kill people)*
+> "The arithmetic where you keep finding, under the number, another number."
+  *(fine in narration; wrong as spoken dialogue)*
+
+**As Daniel ages (chapters 30+)** his spoken voice can mature — he has spent thirty
+years speaking Latin and living in a culture that prizes rhetorical precision. His
+dialogue CAN become more controlled. But even at 50, his narration is more polished
+than his dialogue. The teenager does not disappear entirely; he becomes better at
+hiding. Under stress or grief, the teenage register should surface again.
+
+---
+
 ## SECTION 2: THE VOICE RANGE SPECTRUM
 
 From most to least educated/eloquent. Every character should be writable from this

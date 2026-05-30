@@ -14,6 +14,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## DANIEL "DANNY" MERCER — protagonist, narrator
+
+**BIRTH YEAR:** b. 81 AD (by Roman reckoning from the point of arrival; true birth year is the late 20th century, rendered impossible to state in-world)
+
+**PHYSICAL DESCRIPTION:** Average height for an American teen (~5'9"), but Romans read him as slightly underbuilt for a young man his age — narrow through the shoulders, not yet filled out. Light brown hair that hasn't been cut since before he arrived, hanging past his ears in a way that marks him as neither Roman nor properly barbarian. Clean-shaven not by discipline but because he barely has beard yet; patchy growth he can't do anything about. Pale Midwestern skin that is now tanning badly and unevenly — pink across the nose, brown on the forearms, still pale at the collar. His posture is the giveaway: slightly hunched, weight back on his heels, shoulders turned in — the posture of a teenager in a school hallway, not a man who owns himself. He has learned to straighten when it matters but forgets under stress. By his twenties his tunics fit properly; at 17, whatever he's been given hangs on him like a borrowed costume.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "Okay so — I know how this sounds. I know. But I've actually done the math on this like four times and it keeps coming out the same, so either I'm wrong — which, possible — or the thing is actually gonna work. Probably."
+> "I don't — look, I'm not saying it's safe. I'm saying it's the least bad option I can think of right now, and I've been thinking about it for three days, so."
+> "Yeah. Yeah, I know. I know, okay? I — yeah."
+
 - 17 in 98 AD. American high-school junior from a midsize suburb. Part-time job
   at a hardware store (so: knows his way around tools, fasteners, a tape measure,
   basic building; has watched enough to fake competence, not engineer it).
@@ -36,6 +46,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## HERAS — Greek physician, the skeptic and the conscience
+
+**BIRTH YEAR:** b. ~53 AD
+
+**PHYSICAL DESCRIPTION:** A lean, spare man of medium height — Pergamene Greek stock, olive-skinned, with the slight stoop of someone who has spent decades bending over patients. His hair is close-cropped and gone mostly grey at the temples; his beard is kept short and neat in the Greek manner, a deliberate marker of education that he maintains with quiet insistence. His hands are his most distinctive feature: long-fingered, clean despite everything, with a small burn scar across the left palm from an experiment he does not discuss. He wears a plain dark wool pallium over his tunic — neither the toga of a citizen nor the rough cloth of a laborer, but the unselfconscious dress of a man who has worked out exactly where he stands. His expression at rest looks like mild skepticism, which is not an affect — it is simply his face.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "I have examined many things that people brought me claiming they were miraculous. Most of them were not. Some of them were interesting. A very small number of them made me change my mind about something. I am here to determine which category you are."
+> "You've come back four times. Each time you call it a different question. It is the same question. Ask it."
+> "Yes. No. The distinction matters. Try again."
+
 - ~45 in 98. A freedman physician from Pergamon, Greek-speaking, also fluent
   Latin. First sent to examine the strange foreigner (is he mad? is the clothing
   witchcraft?), stays out of curiosity, becomes Daniel's first real friend.
@@ -66,6 +86,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## TITUS FLAVIUS MACER — the patron (middle-book engine)
+
+**BIRTH YEAR:** b. ~48 AD
+
+**PHYSICAL DESCRIPTION:** A big, thick-necked man who was once a physical worker and still moves like one — heavy through the chest, with the slight forward lean of someone used to carrying loads and issuing orders at the same time. His hair is iron-grey, cut short and not fussed over. His face is broad, weather-tanned to a permanent red-brown, with deep-set lines around the eyes from decades of squinting at rosters and contracts in bad light. The gold equestrian ring is on his right hand and he turns it constantly against his thumb when calculating — not nervousness, more like an abacus bead. He dresses well enough to mark his rank but not elaborately — good wool, good leather on the sandals, no decoration he hasn't earned. A scar along the left jaw from something he doesn't explain and no one asks about. His laugh is a single short ugly bark and he does not do it often.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "Forty thousand. And I'm being kind, which you should remember later when you tell yourself I wasn't."
+> "I bought you for less than I pay for a season's mules. Did you know that? No, don't answer. I'm not finished."
+> "Smaller fire next time. Or a longer basket. Work it out."
+
 - ~50 in 98. Equestrian. A hard, shrewd army-contractor: leather, timber, grain
   for the legions, with real frontier connections. Owns slaves without a flicker
   of thought.
@@ -105,6 +135,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## TYCHE — slave, then freedwoman; the thread to the epilogue
+
+**BIRTH YEAR:** b. ~85 AD
+
+**PHYSICAL DESCRIPTION:** Small and wiry at 14 — quick through a crowd, built for carrying and fetching, with the careful stillness of someone who has learned to take up as little space as possible. Dark hair cut short and practical; dark eyes that move before her head does, tracking who is in the room and where the exits are. Her iron slave collar is her most visible feature early in the story and it is not described with sentiment — it is hardware. Her skin is olive-toned, mid-Mediterranean, and her hands show the work: knuckles rough, nails kept short, a small knife scar on the right index finger. As a freedwoman she dresses neatly but without display — plain wool, good quality but not fine, the clothes of a woman who has things to do. She grows into a contained, deliberate physical presence: not imposing, but absolutely immovable when she has decided something. The corner of her mouth is the only part of her face that registers approval, and it barely moves.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "How much."
+> "The yard is by the wharf. Long walk. You should eat the bread while you walk. He won't give you time to eat it there."
+> "I'm not thanking you."
+
 - ~14 in 99 (born ~85 AD; canon log anchor). A kitchen/errand slave in Macer's household, assigned to fetch and
   carry for Daniel. Quick, watchful, frighteningly good with numbers once shown.
 - Function: Daniel teaches her to read, write, and calculate, then later English
@@ -139,6 +179,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## GAIUS JULIUS HERMES — freedman blacksmith; the metallurgy thread
+
+**BIRTH YEAR:** b. ~58 AD
+
+**PHYSICAL DESCRIPTION:** Built for the work — broad-shouldered, thick-armed, with hands that look like they were carved from the same material as his anvil. Medium height but appears larger because of the mass through the upper body. His skin is permanently darkened by forge-smoke and heat, criss-crossed on the forearms and hands with old burn scars in various stages of fading; he does not notice them. His hair is dark and close-cropped, his beard short and irregular — kept functional, not decorative. He wears a heavy leather apron as his default garment; underneath it, a plain short-sleeved tunic good for nothing except work. He smells of iron and charcoal and lamp-black. His dominant physical gesture is the hammer in his hand even when the hammer isn't there — his right hand closes around nothing when he is thinking through a production problem. Does not smile. Has a resting expression of focused neutrality that people sometimes mistake for hostility.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "Tell me how much black. Tell me how hot. Tell me how long. Tell me one number I can do twice."
+> "Then you've told me nothing."
+> "We try again."
+
 - ~40 in 98. Freedman ironworker, proud of his craft, scornful of theory.
 - Function: Daniel's partner on plows, then steel, then the cannon-that-bursts.
   He embodies the steel chokepoint: skilled hands, no way to measure or hold
@@ -158,6 +208,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## QUINTUS MARCIUS CELER — army officer; the war/frontier thread
+
+**BIRTH YEAR:** b. ~63 AD
+
+**PHYSICAL DESCRIPTION:** A lean, hard man of medium height — the kind of soldier who got lean on campaign and never put the weight back. Tanned to a permanent dark bronze; light brown hair that is always cut to regulation length even in the field; a nose that has been broken at least once and healed slightly crooked. His most distinctive mark is a long pale scar from the right shoulder to the elbow — he explains it in three words once and does not explain it again. He carries himself with the economy of movement of a man who has learned that unnecessary motion is wasted energy: everything he does is direct. His armor, when he wears it, is maintained to a standard not of display but of reliability — no polish beyond what function requires. Off-duty he is spare in dress: plain equestrian wool, the ring, nothing that could snag. His eyes move to exits and threats first; it is not a performance, it is decades of habit.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "How far down the river could that be seen."
+> "Good. The men I bury are the ones who weren't. Don't love it."
+> "Build me something that doesn't need a man hung off it. Or build me nothing. Either one."
+
 - ~35 in 98. Equestrian, a serving tribune/prefect, practical and ambitious.
 - Function: the man who first sees the balloon's military value and carries it (and
   Daniel) toward the army and the Dacian wars. Daniel's window into the legions
@@ -179,6 +239,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## LUCIUS VETTIUS CRISPUS — grammarian/philosopher; intellectual antagonist
+
+**BIRTH YEAR:** b. ~58 AD
+
+**PHYSICAL DESCRIPTION:** A man who looks exactly as he intends to: well-fed but not fat, well-dressed but not ostentatious, with the particular grooming of someone who has thought about how they appear to rooms. Medium height, fair-skinned for a Roman — he has spent his life indoors, in libraries and dining rooms. His hair is carefully arranged in the fashionable style of the period; his beard trimmed to a precise length that suggests learning without severity. His hands are soft, unmarked by any labor; he gestures with them frequently when speaking, small precise movements that bracket his citations. He wears the toga well — has been wearing it since his first recitation at twenty and has never looked awkward in one. His expression when listening to someone he considers inferior is one of polite, patient attention that is somehow more withering than contempt.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "Pytheas of Massalia described Thule as six days north of Britain, at the edge of the frozen sea. You will forgive my curiosity about a man who claims to have come from a country that Pytheas did not find."
+> "I find your demonstrations genuinely impressive as spectacle. Spectacle has its place. I only wonder — and I wonder in a spirit of genuine inquiry — whether the explanation you offer is the only possible explanation."
+> "I have written three letters this month on your behalf. I mention it only so you understand what the weight of a letter is."
+
 - ~40 in 98. Well-connected Roman man of letters, vain, a darling of literary
   salons. First patronizes Daniel as a curiosity, then resents him as a rival for
   attention and patronage.
@@ -191,6 +261,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## AULUS VIBENIUS — senior haruspex; the religion friction
+
+**BIRTH YEAR:** b. ~43 AD
+
+**PHYSICAL DESCRIPTION:** A heavyset man, broad-faced, with the deliberate unhurriedness of someone who has learned that power arrives faster when it does not seem to hurry. Etruscan blood shows in his coloring — darker than the Roman average, with heavy brows and deep-set grey eyes that hold steady longer than is comfortable. His priestly robes are elaborate but worn with authority, not ceremony; he has been wearing them for thirty years and they are as natural to him as a soldier's armor. His hands are notable: large, thick-fingered, impeccably clean — the hands of a man whose professional touch must be trusted. A heavy gold ring of office on the right hand. His most distinctive habit is a slight pause before he speaks, a beat longer than social convention requires, which has the effect of making whatever he says sound considered even when it is not.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "The entrails were not unfavorable. They were not, I should say, entirely favorable. These are different things, and the difference matters."
+> "What the gods favor, they favor for their own reasons. Our task is to read, not to argue."
+> "I have no opinion about your devices. I have an opinion about how they are described to the public, and that is a different matter entirely."
+
 - ~55 in 98. An Etruscan-descended reader of entrails, powerful in the priestly
   colleges, shrewd about the politics of belief.
 - Function: the ambiguous religious figure. Vibenius can bless Daniel's work as
@@ -201,6 +281,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## PUBLIUS CORNELIUS SCAEVA — ambitious senator; political danger
+
+**BIRTH YEAR:** b. ~53 AD
+
+**PHYSICAL DESCRIPTION:** Tall and well-proportioned, with the particular handsomeness of a man who has never lacked for anything: smooth skin, carefully barbered dark hair silvering at the temples in a way that reads as distinguished rather than aged. He wears the broad-striped toga of a senator as if it were an ordinary garment, which for him it is. His hands are soft and perfectly kept; his eye contact is warm, direct, and calibrated — the gaze of a man who has practiced making people feel seen. He carries no visible tension. His most dangerous feature is his smile, which arrives a fraction of a second before his words and stays a fraction of a second after, as though he finds everything he encounters genuinely interesting. He almost certainly does not.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "I have mentioned your name in three rooms this week, all of them rooms you would not have been invited to unmentioned. I do this because I find your work genuinely interesting, which is rarer than you might suppose. There is no obligation attached, of course. There is never any obligation attached."
+> "A small thing — and I mention it only because you seem to know something about sulfur compounds — there is a customs matter that has become unnecessarily complicated. A word in the right office would be the work of an afternoon."
+> "I want you to feel entirely free to refuse. I only ask that you refuse in the next few days, before the window for the other arrangement closes."
+
 - ~45 in 98. Old-family senator hungry for military glory and influence. Wants
   Daniel's weapons and devices for his own advancement; a rival pull against Macer.
 - Function: the high-stakes political game. Being coveted by a senator is a trap.
@@ -211,6 +301,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## MARCIA — freedwoman; Daniel's eventual partner/wife (mid-late book)
+
+**BIRTH YEAR:** b. ~73 AD
+
+**PHYSICAL DESCRIPTION:** A compact, self-possessed woman of medium height with the practical bearing of someone who has managed accounts for years and never had the luxury of looking uncertain. Dark hair, worn pinned back with efficient severity; dark eyes that evaluate before they engage. Olive-skinned, well-fed without softness, with the hands of a woman who uses them: capable, ink-stained on the right forefinger. She dresses above her legal rank but below what she could afford — good-quality wool in dark colors, minimal ornament, always clean. The effect is deliberate: she wants to be underestimated just enough for people to show her their real hand. Her face at rest looks like someone who has already done the arithmetic on you and is waiting to see if you'll confirm it.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "Everything is a toy until it makes money. Then it's a business, and a business has a hundred ways to die, and the ones you didn't see coming are the interesting ones. So: what haven't you seen coming."
+> "That was a test. You failed it. Now I know what I'd be dealing with."
+> "Go wash your feet. You smell like the portico. And then come back and tell me where the sulfur comes from, because the supplier's answer last week was the wrong shape."
+
 - ~25 in 98 (age-appropriate as the years pass). A freedwoman, widow of a
   merchant, runs accounts and the business side of an enterprise with more nerve
   than most men in the room.
@@ -231,6 +331,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## ULPIA SEVERA — Daniel's daughter; cipher/encyclopedia thread (Parts VI–VII)
+
+**BIRTH YEAR:** b. ~118 AD
+
+**PHYSICAL DESCRIPTION:** Inherits her mother Marcia's compact frame and dark coloring, but Daniel's habit of stillness when thinking — she goes quiet the way he goes quiet, head slightly tilted, before she speaks. As a child: small and neat, quick-moving, with ink on her hands earlier than seems likely. Her face in childhood is unreadable to strangers and entirely legible to those who know her; the calculation is always visible if you know to look at her eyes, not her expression. As an adult: well-dressed in the household's fashion — plain quality, nothing unnecessary. Her most distinctive feature is her hands, which are never idle; she reads with a stylus in her right hand, whether she uses it or not.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "That's not what the number says." [age ~8, flat, correcting a clerk twice her age]
+> "I know where it is. I put it there. I put it there because the other place gets damp in winter and you'd have complained about that instead."
+> "He said it didn't matter. He was wrong, and I told him, and he agreed, and then he forgot. Write it down where he'll see it."
+
 - Born ~118 AD to Daniel and Marcia. First appears ch38; the name "Ulpia" appears
   ~50x in late chapters.
 - Function: Daniel's blood daughter. Fierce at figures, cipher-keeper candidate.
@@ -253,6 +363,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## MARCUS ULPIUS LUCANUS — Daniel's son (ch26+)
+
+**BIRTH YEAR:** b. ~112 AD
+
+**PHYSICAL DESCRIPTION:** Taller than his father by the time he is twelve, and aware of it. Takes after Marcia in coloring — dark-haired, olive — but has Daniel's long-limbed build, which means he moves through adolescence looking gangly before it resolves into something more composed. He dresses well and knows it; even as a child he is precise about his clothes in a way that Daniel never was. His hands are soft, unmarked by workshop work, which is either a consequence of his choices or their cause. As a young man: the bearing of someone who has been argued with by clever people and learned to stand his ground — not aggressive, but not yielding either.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "I know how it works. You don't have to explain it again."
+> "That's not the same question. You're answering the one you wanted, not the one I asked."
+> "The law says one thing. What actually happens in the courts is different. Those are both true."
+
 - Born ~112 AD to Daniel and Marcia. 34+ appearances. Law-track child who
   ultimately rejects the workshop in favor of the courts.
 - Function: the child who chooses his own path away from Daniel's enterprise.
@@ -273,6 +393,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## PAMPHILUS — collared slave, recurring; the class-voice vehicle (ch10+)
+
+**BIRTH YEAR:** b. ~70 AD
+
+**PHYSICAL DESCRIPTION:** A big man, heavily built through the chest and shoulders, with the slightly bowed posture of someone who has been moving heavy things for decades. His iron slave collar is the first thing a stranger notices and Pamphilus does not appear to notice it at all — it is furniture. Dark hair, coarse, cut unevenly; a beard that exists because no one has told him to shave. The skin of his hands is cracked and calloused to the point of looking like a different material than the skin of his face. As a freedman he continues to dress as he always has — rough wool tunic, no display — because the thought of dressing otherwise has not arrived. His most characteristic posture is standing with one hand resting on whatever he has just moved, as if checking that it is real.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "That wall. Three times I done it. Don't hold."
+> "You said the big ones." [defending a misunderstanding; they are not the ones Daniel meant]
+> [quietly, to a dropped beam:] "Gods-cursed thing."
+
 - Collared porter. First appears ch10 when Daniel unsuccessfully tries to remove
   his collar. Bought and freed by Daniel (ch18). Remains at the yard as a freedman
   through ch48. 71+ appearances.
@@ -300,6 +430,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## FELIX — freedman/assistant; prize-tale teller (ch19, ch39, ch44, ch52 backstory)
+
+**BIRTH YEAR:** b. ~68 AD
+
+**PHYSICAL DESCRIPTION:** A cheerful-faced man of middle height and middle build — the kind of person who is easy to forget in a crowd and easy to like in conversation. His skin is work-darkened, his hands show a craftsman's history: small cuts, burn marks in various stages, the permanent grime of a man who works with metal and clay. He has a habit of smiling before he has finished thinking, which means his enthusiasm arrives before his reasoning and occasionally outlasts it. His hair is receding and he has decided to not notice this. He dresses practically and slightly carelessly — the tunic that was fine last year, the sandal strap that has been re-tied three times.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "I tried the first batch the way you said and it blew the mold, which — honestly — it was something to see. Not useful. But something to see. Second batch I went slower and got nothing. Third batch —"
+> "Right, right. The point is I think I know what went wrong, which means I know how to fix it, probably. Most of it."
+> "It's not a failure exactly. It's — it told me something. The thing it told me is not what I wanted to know, but still."
+
 - A freedman under Daniel's umbrella. 26+ appearances. Connected to the
   failure-endowment (ch39) and epilogue-climber thread (his craft failures
   eventually feed Procula's solution, ch52).
@@ -317,6 +457,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## GETA — freedman/assistant; powder-accident survivor (ch21, 14+ appearances)
+
+**BIRTH YEAR:** b. ~75 AD
+
+**PHYSICAL DESCRIPTION:** A young man made permanently older by the accident: his right hand and forearm are scarred to the wrist, the fingers on the right hand stiff and partially fused in a curl that never fully opens. He has learned to work around it with a competence that is not inspiring — it is simply what is required. His face was not touched but something about it changed; the expression is quieter than a man his age usually is. Medium build, dark hair, the clothing of a working freedman. He does not favor the arm dramatically, which makes it harder to look at than if he did.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "The left stack. You want the left stack."
+> "It'll do."
+> "Already done." [when asked if something is finished; it always is]
+
 - Injured in the powder accident ch21, kept on lifetime wages. A recurring
   presence in the workshop — the accident's living cost.
 - Function: the embodied consequence of Daniel's failures. Not a dramatic beat;
@@ -327,6 +477,14 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## SABINUS — manned-balloon casualty (ch13); moral pivot
+
+**BIRTH YEAR:** b. ~75 AD (dies ~98 AD, age ~23)
+
+**PHYSICAL DESCRIPTION:** A young man — that is essentially all Daniel retains of him in the narration. Medium height, a soldier's build, dark-haired; the features that might have distinguished him from other young men of similar height and coloring are the features Daniel did not register before they were gone. He wears what was given to him. His face in the narration is always slightly imprecise, as though seen from a distance, because Daniel never got close enough and then there was no more time.
+
+**VOICE EXAMPLES (DIALOGUE):**
+*(Sabinus is not a voice character — he is a name, a weight, and an accounting entry. If he speaks in a flashback, make it something brief and unmemorable: "Ready." or "Now?" The point is that he did not know enough to be afraid of the right thing.)*
+
 - Dies in the manned-balloon disaster (ch13). The moral pivot of Part II. Recurs
   as a wordless conscience-figure through ch26/29.
 - Function: not a voice character, but a recurring weight in Daniel's narration.
@@ -337,6 +495,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## NASO — recruit; voice of confident-stupid (ch11, recurs through ch29)
+
+**BIRTH YEAR:** b. ~80 AD
+
+**PHYSICAL DESCRIPTION:** A young recruit: broad-shouldered for his age, a little thick-necked, with the easy physicality of someone who has never yet been badly hurt and takes this as evidence of personal invulnerability. Brown hair, tanned, the look of a boy who grew up somewhere agricultural and has been army-fed since. He grins quickly and often because there has not yet been a sufficient reason not to. After the accident, the right side of his face and neck carry burn scarring that has healed but remains visible at a distance; his grin, when it returns, is reduced and sideways.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "Any man can hold a rope. What's the sky going to do, fall on us?"
+> "I been up in trees twice that height. This is nothing."
+> "The Thulean's more of a mother than my mother."
+
 - Young recruit, burned in the balloon accident ch11. 23+ appearances.
 - V1 problem: narrated as "stupid with the particular fearlessness of a boy who
   has not yet been hurt," but his only near-quote is reported, not given directly.
@@ -349,6 +517,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## ONESIMUS — senior abacus clerk; the confidently-wrong figure (ch10–20)
+
+**BIRTH YEAR:** b. ~50 AD
+
+**PHYSICAL DESCRIPTION:** A neat, careful man who looks exactly as a senior clerk should: compact build, slightly round-shouldered from decades of stooping over tablets, clean-shaven or with a precisely trimmed beard — he has decided how he looks and he maintains it. His hands are the most practiced thing about him: he runs the abacus beads with the automatic confidence of someone who has done it ten thousand times. He dresses in good-quality freed-man's clothing, better than his rank requires, because he has worked for this rank and does not intend anyone to forget it. His expression when confronted with the new numerals is not hostility — it is the patient, polite attention of a man who expects to be proved right.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "It is a settled method that has served Rome for three hundred years. I do not dispute the figures. I dispute the need."
+> "I can give you the sum in the time it takes you to draw your first symbol. That is a fact."
+> "Speed is the thing that matters in a counting-house. Not — whatever this is."
+
 - Senior accountant who resists the new numeral system. 14+ appearances.
 - V1 status: technically excellent (out-computes Daniel on the board), stubborn,
   but not truly wrong in his reasoning — only conservative and inflexible.
@@ -367,6 +545,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## VITALIS — press apprentice; keeper-chain (ch39+, 18+ appearances)
+
+**BIRTH YEAR:** b. ~100 AD
+
+**PHYSICAL DESCRIPTION:** A young man with permanently ink-stained hands and forearms, the mark of the press trade. Medium height, lean, with the focused economy of movement of someone who has learned to work in a confined space without knocking things over. His clothing is always mildly ink-ruined no matter how recently he changed. Dark eyes, attentive; his face in repose looks like someone listening to something in the next room. He carries himself without drama and does not particularly want attention.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "The block's ready. We can start when you want."
+> "Took three pulls. Came out clean."
+> "Eros said to do it this way. So I do it this way."
+
 - Press apprentice who inherits the print operation. Part of the institution/
   keeper-chain cast in the book's second half.
 - Voice: competent, unremarkable. Trained in workshop methods. Reports on work.
@@ -375,6 +563,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## CHLOE — Bithynian cipher-keeper; freed in Marcia's will (ch41–52, 21+ appearances)
+
+**BIRTH YEAR:** b. ~110 AD
+
+**PHYSICAL DESCRIPTION:** Small and fine-boned, with the Bithynian Greek look — olive skin, dark hair kept simply, dark eyes that are precise and careful. She moves quietly and takes up very little space in a room, which she has learned to use: people underestimate what she has heard. Her hands are her working tools — small, ink-familiar, capable of the fine calligraphy the cipher requires. She dresses neatly and without elaboration. Her face at rest holds an expression of calm concentration that can read as blankness to people who don't know her and as intelligence to people who do.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "I need to check that before I'll say."
+> "The third line. Read me the third line."
+> "Yes." [followed by the correct answer, once she has verified it]
+
 - A Bithynian girl who becomes a cipher keeper. Freed in Marcia's will.
 - Function: one of the chain of keepers. Tyche watches her the first month "the
   way a smith watches a heat he does not trust and then stopped watching, which
@@ -386,6 +584,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## ZOTICUS — Heras's successor physician (ch42–50, 14+ appearances)
+
+**BIRTH YEAR:** b. ~80 AD
+
+**PHYSICAL DESCRIPTION:** A younger man than Heras was at the equivalent point in his career, and it shows: he hasn't yet settled into the particular stillness of a physician who has seen enough to stop being surprised. Medium height, dark-haired, with the earnest attentiveness of someone who knows he is the lesser practitioner and is trying to compensate with thoroughness. His hands are clean and careful; he inspects things twice. He dresses correctly for a physician of his rank — neat pallium, professional bearing — but without Heras's Greek authority, which was a thing worn from within rather than put on.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "The inflammation has reduced. I want to see it again in three days."
+> "Heras would have said — I mean, the method is to apply the cleaned dressing before sealing. That's what I was trained."
+> "It's doing what I expected. I think. Come back tomorrow."
+
 - Takes over the medical role after Heras's death (ch42).
 - Function: continuity of the medical thread. Competent and careful but not
   Heras's match intellectually.
@@ -395,6 +603,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## EUDEMUS — fiscus clerk; route to Hadrian (ch34–45, 9+ appearances)
+
+**BIRTH YEAR:** b. ~65 AD
+
+**PHYSICAL DESCRIPTION:** A thin, precise man with the watchful economy of a treasury clerk who has survived multiple administrations by being indispensable and difficult to accuse of anything specific. Grey-haired, clean-shaven, with the permanent slight squint of someone who has spent decades in offices reading small writing in poor light. His clothing is correct for his rank and nothing else — good Greek freedman's dress, nothing that could be remarked on. He carries a small wax tablet almost always. His eyes move to exits and to faces in quick succession, like a man who has spent years calibrating who in the room matters and how much. He has the particular stillness of someone who never forgets that he is in someone else's house.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "I am not your friend. I say this so that you do not make the error of treating me as one."
+> "It is not clever. A clever thing I would not trust, because a clever thing is a place to hide a lie."
+> "I will note that I was not present for that conversation. I will note it in writing, today."
+
 - Treasury freedman. Careful, precise, self-protective. Speaks in clean numbered
   points. Disclaims relationship explicitly ("I am not your friend"). Admires
   figures for being un-clever: "It is not clever. A clever thing I would not trust,
@@ -406,18 +624,48 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## THEOPHANES — keeper-chain figure (ch37, 6+ appearances)
+
+**BIRTH YEAR:** b. ~88 AD
+
+**PHYSICAL DESCRIPTION:** A Greek-named freedman of middle age by the later chapters — medium everything: height, build, coloring. He does not stand out, which is appropriate for someone whose function is continuity. His hands show he works; his face shows he thinks before he speaks; his clothing is the plain reliable quality of a trusted household functionary. He is memorable only to people who have been in rooms with him long enough to notice how much he gets done.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "Already sent."
+> "The Bithynian copy or the yard copy."
+> "It'll be ready."
+
 - Brief profile. A keeper-chain figure, carries the enterprise forward in later
   chapters. Rarely quoted directly. Functional, unremarkable register.
 
 ---
 
 ## "OLD VIBIA" — Procula's cipher teacher (ch52)
+
+**BIRTH YEAR:** b. ~130 AD (approximate; appears in ch52, ~190 AD, age ~60)
+
+**PHYSICAL DESCRIPTION:** An old woman, small with age, with a cipher-keeper's hands — her fingers still precise despite the thickening of the knuckles. Her face carries the compressed attention of someone who has spent decades knowing things she could not say to the wrong people. Grey-haired, close-pinned, dressed in the plain quality of an elderly freedwoman who has not needed to impress anyone in years. She moves slowly but her eyes do not. Her most distinctive feature is the pause before she speaks to Procula — the weight of what she is transferring.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "Again. From the beginning, not the middle."
+> "You'll know when you've got it. You haven't got it."
+> "He called it the ladder. I always called it the work. Same thing."
+
 - Elderly keeper-chain figure in the epilogue chapter. The last direct human link
   before the clock solution. Passes the cipher to Procula.
 
 ---
 
 ## PROCULA — epilogue climber; clock-cracker (ch52) — NOT ULPIA SEVERA
+
+**BIRTH YEAR:** b. ~170 AD
+
+**PHYSICAL DESCRIPTION:** A young woman of about twenty, with the look of someone who grew up in a household that valued exactness: her movements are deliberate, her hands always know where they are. Medium height, dark-haired, wearing the plain working dress of a storeroom keeper's daughter who has been taken on as a serious apprentice. Her fingers carry the calluses of fine work — small tools, close tolerances. Nothing about her appearance announces her; she looks like exactly what she is, which is what Daniel's system was designed to produce: the right person with the right training at the right moment, not a prodigy, not a legend.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "The weight's off. Here. This part."
+> "I've read it six times. I think I see it."
+> "Show me again. The escapement — show me again from the top."
+
 - The ch52 epilogue protagonist. ~20 in ~190 AD — approximately two generations
   after Daniel. Explicitly freeborn daughter of a freedwoman, "bought into the
   storeroom... freed in the great widow's will." NOT Daniel's blood descendant.
@@ -438,6 +686,16 @@ inarticulate/crude characters instead of silencing them.
 ---
 
 ## THE OPTIO OF CH02–04 — Daniel's first sustained human contact
+
+**BIRTH YEAR:** b. ~65 AD (approximate)
+
+**PHYSICAL DESCRIPTION:** A weathered man in his thirties, compact and deliberate in movement — the kind of soldier who has been in the army long enough that it has reorganized his body as well as his habits. Sun-dark, with the beginning of lines around the eyes from years of squinting into weather. His armor is functional and maintained; his face is neither cruel nor friendly — it is the face of a man doing his job, which is to assess what in front of him is a problem and handle it. He has a small scar through the left eyebrow that he has stopped noticing.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "Where from."
+> "Try again. In Latin."
+> "Stay there. Don't touch that."
+
 - Unnamed in V1. V2 suggestion: give him a name from `07_glossary.md` (suggested:
   a standard frontier-soldier praenomen + cognomen). He does not need a full
   profile beyond his function as the first human Daniel has to navigate.
@@ -452,35 +710,59 @@ These recur or carry an arc beat but had no bible entry. Added from a full-manus
 character census. Keep brief; expand only if a chapter needs it.
 
 ### EROS — freedman letterer/pressman; the print-shop spine (ch16+, ~15 chapters)
-- Greek-trained letter-cutter. Cuts the first wooden blocks (the Homer line), then runs
-  the press for decades; trains the apprentice Vitalis; eyes failing by the late books;
-  witnesses the collegium endowment deed; dies after passing the craft on (ch48 area).
-- Function: the human continuity of the printing enterprise — the press is not abstract,
-  it is Eros's hands. The keeper-chain's craft side, parallel to Tyche's cipher side.
-- Voice: a craftsman with ink to the elbow; concrete, work-focused, not eloquent; no
-  epigrams. Speaks of blocks, lines, and lamp-black, not ideas.
+
+**BIRTH YEAR:** b. ~60 AD
+
+**PHYSICAL DESCRIPTION:** A Greek-built man, lean and precise, with permanently blackened hands from decades of ink and lamp-black — he has stopped trying to get them clean. Medium height, greying from middle age onward, with the close-held posture of someone who works at a table rather than a forge. His eyes are sharp in youth and failing by the late chapters; he holds blocks close to the lamp to read them. Wears a heavy leather apron as a matter of course. His most characteristic gesture is holding a newly cut block at arm's length and tilting it toward the light.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "The grain's wrong for the short strokes. I'll re-cut it."
+> "Three hundred pulls, clean. The block holds."
+> "Vitalis knows. Show Vitalis." [in his last years, redirecting questions]
 
 ### STICHUS — water-boy then yard worker; recurring household presence (ch05+, ~7 chapters)
-- Starts ~10 as the workshop water-carrier who teaches Daniel his first word ("aqua") and
-  dislikes him; grows "into his shoulders" and works the wharf yard for the enterprise.
-- Function: a measure of time passing in the household; a minor walk-on who recurs.
-- Voice: child's bluntness early; later an unremarkable working register. Not a philosopher.
+
+**BIRTH YEAR:** b. ~88 AD
+
+**PHYSICAL DESCRIPTION:** A scrawny ten-year-old at first appearance who is carrying a water jug he is slightly too small for. Dark-haired, quick-moving, with the alertness of a child in a working household who has learned to stay out from underfoot without disappearing. By the later chapters he has grown into a broad-shouldered yard worker who still remembers not liking Daniel and doesn't particularly bother to hide it.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "Aqua." [teaching Daniel the word; flat, not charitable]
+> "The other yard. This yard's full."
+> "Yeah." [when given an instruction; nothing further]
 
 ### DEMETRIOS — Greek glass-cutter/lens-grinder (ch23, ch26, ch38)
-- The craftsman who grinds lens discs for the spyglass/telescope work, reluctantly and
-  with frustration; later sells spyglasses; the glass keeps defeating him (seeds, waves,
-  bad pours). Embodies the optics chokepoint the way Hermes embodies the steel one.
-- Voice: impatient, proud of his craft, sceptical of Daniel's tolerances. Demands of glass.
+
+**BIRTH YEAR:** b. ~55 AD
+
+**PHYSICAL DESCRIPTION:** A craftsman with a craftsman's hands — thick-fingered despite the precision of his work, with cuts and abraded patches from decades of glass. His eyes are notably good; he holds work at arm's length and reads it with an expression of dissatisfaction he has never successfully concealed. Medium height, dark-haired going grey, Levantine Greek look. He wears a heavy workshop apron; his clothes underneath are never quite clean. His most distinguishing habit: a low exhale through the nose when he receives a specification he finds impossible, which he does frequently.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "That tolerance doesn't exist. Not in glass. Not yet."
+> "The seed is in the pour. I can't fix the pour. No one can fix the pour."
+> "I'll try. I'm telling you it won't hold."
 
 ### DRUSUS — Macer's guild/materials contact and intermediary (ch05, ch07, ch15)
-- The connection through whom Daniel posts early problem-specs (the glass-clarity prize)
-  to the craft networks; spreads word of prizes among craftsmen.
-- Voice: functional, transactional; a fixer. Brief.
+
+**BIRTH YEAR:** b. ~58 AD
+
+**PHYSICAL DESCRIPTION:** A middleman in appearance as in function: well-dressed enough to enter a merchant's office, worn enough to enter a workshop. Medium everything — height, build, coloring. The kind of face that is friendly in a professional way and retains nothing after the business is done. He moves through rooms with the easy anonymity of someone who has been a useful person in many places and would prefer not to be specifically remembered in any of them.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "I can get word out. Six days, maybe eight."
+> "What's the figure."
+> "Done." [that's the whole conversation]
 
 ### METTIUS — ambitious equestrian; salon host (ch10, ch16, ch25)
-- Wealthy striver who hosts the literary salons where Daniel is displayed and where Crispus
-  attacks him; lends his house for set-pieces.
-- Voice: socially eager, status-conscious; a host, not a thinker.
+
+**BIRTH YEAR:** b. ~60 AD
+
+**PHYSICAL DESCRIPTION:** A prosperous, well-fed equestrian who wears his wealth with practiced ease: good toga, the gold equestrian ring displayed rather than worn habitually, hair dressed by someone who knows what they're doing. His face is open and hospitable, the face of a man whose professional function is to make rooms feel welcoming. He is neither fat nor thin, neither tall nor short — he occupies exactly as much space as a man of his rank should and no more. His smile appears before you have finished speaking. He is always the warmest person in the room, and that is never entirely genuine.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "You must come. Half the city is talking about you. The other half will be, after Friday."
+> "Crispus is a great friend of mine, of course — a great mind. I'm sure you two will find much in common."
+> "More wine. No, I insist — there's plenty."
 
 ### GLABRIO — bronzesmith; the recurring prize near-miss (ch19, ch26)
 - A craftsman who shows up repeatedly in the prize records attempting tolerance specs

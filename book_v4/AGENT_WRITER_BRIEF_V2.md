@@ -44,6 +44,79 @@ Also read if your chapter involves specific topics:
 
 ---
 
+## PROSE STATISTICS TARGETS (V4 MANDATORY)
+
+These targets come from running `analyze.py` against all 53 chapters and comparing to a baseline of 26 classic novels.
+
+- **Dialogue density: this is the single most important fix.** At least 50% of paragraphs must contain dialogue. The current V4 average is 30% — severely low. Every scene needs more back-and-forth. If you finish a scene and it has been three or four paragraphs of narration in a row, add an exchange. Do not let characters stand in silence while Daniel explains things to the reader.
+- **Sentence length:** Target a bell curve centered around 15 words median. V4 is currently too bimodal — too many 1-5 word sentences AND too many 30+ word sentences, with a dip in the middle. Bring short-sentence (1-5 word) percentage below 15%. Currently running at 22.7%. This means: if you write a punchy short sentence, balance it with some mid-length ones before the next short one. Do not machine-gun staccato beats.
+- **Single-sentence paragraphs:** Current 12.3% is acceptable and intentional. Do not artificially inflate this figure.
+
+---
+
+## DANIEL'S VOICE — THE NARRATION/DIALOGUE SPLIT (CRITICAL)
+
+Daniel writes his memoir late in life. His NARRATION voice is the old man's — mature, dry, retrospective, occasionally sophisticated. This is correct and should be preserved.
+
+Daniel's QUOTED DIALOGUE is the 17-year-old's voice. It must sound like an American teenager. Agents must not bleed the narrator's sophistication into Daniel's spoken words.
+
+**Required features of Daniel's dialogue:**
+- Contractions, always
+- Hedging: "I think," "kinda," "sort of," "I mean-"
+- Incomplete sentences and trailing off
+- "like" as a filler
+- Second-guessing mid-statement
+- Occasional mild swearing when scared or frustrated
+
+**Forbidden in Daniel's dialogue:**
+- Perfectly formed arguments
+- Philosophical summations
+- "I know." as a flat one-line response to something heavy
+- Rhetorical questions that land too cleanly
+- Formal diction ("I do not know whether...")
+
+**Example CORRECT:**
+> "Yeah, I mean-okay. So I was thinking maybe we just... try it? Like, I know it probably won't work first time but if we just start and see what happens? I don't know. Maybe that's dumb."
+
+**Example WRONG:**
+> "I do not know whether to be glad it already exists or sad that I did not do it."
+
+**Example WRONG:**
+> Someone tells Daniel he will kill people. Daniel says: "I know."
+> A teenager would say: "Yeah. Yeah, I-I know, okay? I know." or trail off entirely.
+
+---
+
+## ETHICS AND MORALITY — ONE BEAT RULE
+
+Daniel is a modern American teenager, not an ethics professor. When something bad happens because of his inventions, he feels bad. That is one beat. It should take no more than one paragraph.
+
+- He does NOT make formal vows. He makes plans, breaks them, and feels guilty later like a normal person.
+- He does NOT spend multiple scenes relitigating the ethics of the same event.
+- He does NOT treat the ethics of "bringing knowledge to natives" as a multi-chapter moral crisis. A modern teen would feel vaguely bad, avoid thinking about it, and move on. That is realistic.
+
+**The Roman-era ethics he actually WOULD feel:** homesickness, imposter syndrome, fear of being found out, grief that hits suddenly. Write those instead.
+
+---
+
+## CIPHER AND ENCYCLOPEDIA — CORRECT USAGE
+
+- Daniel's notes are written in ENGLISH. Romans cannot read English in 100 AD. There is no "cipher" — English itself is the security. Agents must not write Daniel encoding his notes in any additional cipher system in chapters 1-40.
+- The word "cipher" should not appear in chapters 1-30 at all. In chapters 30-40, it refers only to the contest notation system Tyche develops for the prize index — not Daniel's personal notes.
+- The encyclopedia is a LATE-STORY project (chapters 40+). Before that, Daniel has notes. Notes. Not an encyclopedia. Agents must not have characters discussing "the encyclopedia" before chapter 40.
+
+---
+
+## HISTORICAL DIVERGENCE — REQUIRED FROM CH34 ONWARD
+
+The story's premise requires Rome to change dramatically due to Daniel's inventions. From chapter 34 onward (~118 AD), the historical record no longer applies.
+
+- Agents must NOT default to actual Roman history for wars, political outcomes, or emperors' decisions after this point. The technology Daniel has introduced (cannon, balloon, printing, gunpowder, steel improvements, semaphore) would have profoundly changed military and political outcomes.
+- Trajan's wars should resolve differently. Hadrian's reign should be actively shaped by Daniel's tech. Later history should be unrecognizable.
+- If an agent is unsure what the "changed" history looks like, they should invent plausibly altered outcomes rather than following the historical record.
+
+---
+
 ## Your job
 
 - **Rewrite** the chapter as finished, polished prose. Not a summary. Not a placeholder.

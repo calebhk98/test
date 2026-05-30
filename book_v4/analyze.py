@@ -14,6 +14,7 @@ Dependencies: pip install nltk matplotlib numpy
 import re
 import sys
 import textwrap
+import argparse
 from pathlib import Path
 from collections import Counter, defaultdict
 
@@ -488,8 +489,64 @@ def print_summary(stats, file_count):
     return report
 
 
+# ── CHAPTER SUMMARY TABLE ────────────────────────────────────────
+def print_chapter_table(chapter_stats_list):
+    """
+    Print a formatted table of per-chapter statistics.
+    chapter_stats_list: list of tuples (chapter_name, stats_dict)
+    """
+    lines = []
+
+    # Calculate dialogue% for each chapter
+    chapter_rows = []
+    for chapter_name, stats in chapter_stats_list:
+        dialogue_pct = stats["dlg_para_pct"]
+        chapter_rows.append({
+            "chapter": chapter_name,
+            "paragraphs": stats["total_paras"],
+            "dialogue_pct": dialogue_pct,
+            "median_sent_words": stats["sent_median"],
+            "short_sent_pct": sum(pct for lab, pct in stats["wps_dist"] if lab == "1-5"),
+        })
+
+    # Header
+    lines.append("")
+    lines.append("=" * 80)
+    lines.append(f"{'Chapter':<20} {'Paragraphs':>12} {'Dialogue%':>12} {'Median sent words':>18} {'Short sent%':>12}")
+    lines.append("-" * 80)
+
+    # Rows
+    for row in chapter_rows:
+        lines.append(
+            f"{row['chapter']:<20} {row['paragraphs']:>12} {row['dialogue_pct']:>11.1f}% "
+            f"{row['median_sent_words']:>17} {row['short_sent_pct']:>11.1f}%"
+        )
+
+    lines.append("=" * 80)
+    lines.append("")
+
+    output = "\n".join(lines)
+    print(output)
+
+
 # ── MAIN ──────────────────────────────────────────────────────────
 def main():
+    parser = argparse.ArgumentParser(
+        description="Analyze fiction chapter prose statistics against classic novel baseline"
+    )
+    parser.add_argument(
+        "--chapter",
+        metavar="FILENAME",
+        help="Analyze a single chapter file (e.g., 'ch05' or 'ch05.md')"
+    )
+    parser.add_argument(
+        "--all-chapters",
+        action="store_true",
+        help="Analyze each chapter individually and print summary table"
+    )
+
+    args = parser.parse_args()
+
     script_dir   = Path(__file__).parent
     chapters_dir = script_dir / "chapters"
 
@@ -497,6 +554,56 @@ def main():
         print(f"ERROR: Could not find chapters/ folder at {chapters_dir}")
         sys.exit(1)
 
+    # ── Single chapter mode (--chapter) ───────────────────────────
+    if args.chapter:
+        chapter_filename = args.chapter
+        # Handle both "ch05" and "ch05.md" inputs
+        if not chapter_filename.endswith(".md"):
+            chapter_filename += ".md"
+
+        chapter_path = chapters_dir / chapter_filename
+        if not chapter_path.exists():
+            print(f"ERROR: Chapter file not found: {chapter_path}")
+            sys.exit(1)
+
+        records = parse_file(chapter_path)
+        if not records:
+            print("ERROR: No parseable paragraphs found in chapter.")
+            sys.exit(1)
+
+        stats = aggregate(records)
+        print(f"\nAnalysis for: {chapter_path.name}\n")
+        print("=" * 60)
+        report = print_summary(stats, 1)
+        print()
+        return
+
+    # ── All chapters mode (--all-chapters) ────────────────────────
+    if args.all_chapters:
+        md_files = sorted(chapters_dir.glob("*.md"))
+        if not md_files:
+            print(f"ERROR: No .md files found in {chapters_dir}")
+            sys.exit(1)
+
+        print(f"\nAnalyzing all chapters in {chapters_dir}\n")
+
+        chapter_stats_list = []
+        for path in md_files:
+            records = parse_file(path)
+            if records:
+                stats = aggregate(records)
+                # Use filename without .md extension as chapter name
+                chapter_name = path.stem
+                chapter_stats_list.append((chapter_name, stats))
+
+        if not chapter_stats_list:
+            print("ERROR: No parseable paragraphs found in any chapters.")
+            sys.exit(1)
+
+        print_chapter_table(chapter_stats_list)
+        return
+
+    # ── Default mode: analyze all chapters combined ────────────────
     md_files = sorted(chapters_dir.glob("*.md"))
     if not md_files:
         print(f"ERROR: No .md files found in {chapters_dir}")

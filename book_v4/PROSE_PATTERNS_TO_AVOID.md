@@ -653,5 +653,113 @@ Ulpia-specific. If two are saying the same thing, one of those scenes can go.
 
 ---
 
+---
+
+## SECTION 7: NEW PATTERNS (V4 additions)
+
+These patterns were identified after V4 draft analysis. They are banned or
+capped to the same standard as the patterns above.
+
+---
+
+### TIC V21: THE FORMAL TEEN
+
+Daniel using adult-register language in his quoted dialogue.
+
+**Examples of the banned pattern:**
+- "I do not know whether to be glad it already exists or sad that I did not do it."
+- "I know." (flat one-liner in response to something large and terrible)
+- Perfectly constructed arguments in Daniel's spoken lines
+- Rhetorical questions that resolve too cleanly in dialogue
+
+**Why it fails:** Daniel the old man narrates the memoir. Daniel the teenager
+speaks the dialogue. These are two different registers. When the 17-year-old
+sounds like a 70-year-old legal brief, the book's central tension — a modern
+kid trapped in an ancient world — collapses.
+
+**Fix:** Contractions always. Hedging ("I think," "kinda," "sort of," "I
+mean-"). Trailing off. Second-guessing mid-sentence. "Like" as filler. Mild
+swearing under stress. If a line could be delivered by a composed adult, it is
+the wrong line for spoken Daniel.
+
+
+### TIC V22: THE MULTI-PARAGRAPH VOWS
+
+Daniel making solemn, oath-like declarations after something bad happens.
+
+**Examples of the banned pattern:**
+- Multiple paragraphs of moral resolution following a death or failure
+- Daniel formally swearing off a course of action in elevated language
+- Any construction where Daniel delivers a pledge to himself or others as
+  a set piece
+
+**Why it fails:** He doesn't do this. He feels sick. He goes quiet. He avoids
+the subject for a few days and eventually moves on without resolving it cleanly.
+That is more human and more interesting than vows.
+
+**Fix:** One paragraph maximum for any moral reaction. Then move the scene.
+If you find yourself writing a second paragraph of Daniel processing guilt about
+the same event, cut it.
+
+
+### TIC V23: THE ARITHMETIC OVERDOSE
+
+"Arithmetic" / "reckoning" / "running the sums" as the default metaphor for
+emotional processing.
+
+**Why it fails:** This framing was fresh in the early chapters. By chapter 20+
+it is a tic. If Daniel processes every shock by counting or tallying, he reads
+as a machine, not a person.
+
+**Fix:** Cap at 3 uses of this framing per chapter. Vary the emotional
+processing: sometimes he just sits there. Sometimes he drinks. Sometimes he
+picks a fight with someone over nothing. Sometimes he goes back to work and
+doesn't process it at all until much later. The arithmetic response should feel
+like one option among several, not Daniel's only gear.
+
+
+### TIC V24: THE EARLY ENCYCLOPEDIA
+
+Characters discussing "the encyclopedia" before chapter 40.
+
+**Examples of the banned pattern:**
+- Any line of dialogue referencing "the encyclopedia" before ch40
+- Narration describing Daniel's notes as "the encyclopedia" before ch40
+- "capital-E Encyclopedia" framing at any point before ch40
+
+**Why it fails:** The encyclopedia is a late-story project. Before chapter 40,
+Daniel has notes, journals, and a mental inventory. Using the word "encyclopedia"
+before its time signals that the agent is writing from the end of the story
+backward, which breaks dramatic timing.
+
+**Fix:** In chapters 1-39, Daniel has notes. He has a journal. He has things he
+wrote down. He has a mental list. If a character asks what he is doing, he says
+he is "keeping notes" or "writing things down." Not more than that.
+
+
+### TIC V25: THE ETHICS MARATHON
+
+Multiple scenes in different chapters processing the same ethical event.
+
+**Examples of the banned pattern:**
+- A death or harm caused by Daniel's inventions addressed in one scene, then
+  revisited in a later scene, then referenced again in a third
+- Two characters having the same moral argument about the same event in
+  different chapters
+- Daniel's guilt about one specific outcome appearing across more than one scene
+
+**Why it fails:** One scene, one ethical beat. The reader understands the
+weight. Returning to the same event in subsequent chapters signals that the
+author does not trust the first scene to have landed — so they land it again,
+and again. It also makes Daniel seem obsessive rather than human.
+
+**Fix:** One scene. One conversation. One paragraph of internal reaction. Then
+the story moves forward. If you are writing a chapter and Daniel is still
+actively processing something that was already addressed two chapters ago, cut
+the processing and leave only the residue (a brief behavioral tell, a moment of
+hesitation — not a speech).
+
+---
+
 *This file is a quick reference, not a complete style document. For full
 guidance see: `book_v2/bible/06_style_guide.md` and `book/AGENT_RULES.md`.*

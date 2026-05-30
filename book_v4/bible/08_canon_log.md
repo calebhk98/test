@@ -1694,3 +1694,44 @@ Check this before stating any age on the page.
   ownership, gains a powerful client-partner). Roman name settled at ch17
   (candidate nomen: Ulpius from Trajan's gens, or Flavius via Macer - decide/LOG
   then).
+
+- [DECISION (2026-05-30): Daniel's writing language and the "cipher" misconception]
+  Daniel's personal notes, journals, and knowledge-preservation writing are in
+  ENGLISH. There is no additional cipher layer — English itself is the security,
+  since no person in 100 AD Rome can read it. The term "cipher" in dialogue or
+  narration before chapter 30 is anachronistic and incorrect. In chapters 30-40,
+  "cipher" refers only to the compact notation system Tyche develops for the
+  contest prize index — a shorthand for tallying, not encoded writing. Agents
+  writing chapters 1-29 must remove any reference to Daniel's notes being "in
+  cipher." Agents writing chapters 30-39 must distinguish between "Tyche's contest
+  notation" (which can be called a cipher or shorthand) and Daniel's personal notes
+  (which are in English).
+
+- [DECISION (2026-05-30): Encyclopedia is a chapters 40+ concept]
+  Daniel does not have "an encyclopedia" before chapter 40. He has notes. He has a
+  growing collection of written knowledge. But the deliberate, named project of
+  compiling an encyclopedia for posterity — with multiple copies secured in
+  different locations — is a late-career project. Agents writing chapters 1-39 must
+  not use the word "encyclopedia" to describe Daniel's knowledge-preservation effort,
+  and must not have characters (especially Tyche or Marcia) reference it as an
+  established project. Before chapter 40, it is "his notes" or "his records" or
+  "the writing."
+
+- [DECISION (2026-05-30): Historical divergence required from chapter 34 onward]
+  The story's premise demands Rome change because of Daniel's inventions. The
+  technology introduced by chapter 34 (~118 AD: cannon, balloon artillery doctrine,
+  printing press, gunpowder, improved steel, semaphore prototype) is sufficient to
+  materially alter military campaigns and political decisions. Agents writing
+  chapters 34+ must not default to actual Roman historical outcomes. Trajan's
+  eastern campaigns, Hadrian's reign, the Antonine period — all of these should
+  reflect a Rome with access to Daniel's technology. Inventing altered outcomes is
+  required; following the historical record is a failure mode.
+
+- [DECISION (2026-05-30): Daniel does not make formal vows or oaths]
+  Daniel is a 21st-century American teenager who landed in Rome. He does not swear
+  oaths, make formal vows, or perform ritualized self-binding declarations in
+  response to ethical crises. When something bad happens because of his inventions,
+  his reaction is grief, silence, and forward motion — one paragraph maximum. Agents
+  who write Daniel making a solemn pledge ("I swear I will never again..." / "I made
+  myself a promise that day...") must remove it. He makes plans. He breaks them. He
+  feels guilty later. That is realistic.
