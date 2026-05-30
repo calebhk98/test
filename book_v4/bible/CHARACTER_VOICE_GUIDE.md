@@ -24,57 +24,101 @@ of side characters landing the scene's sharpest line.
 
 ---
 
-## SECTION 1.5: THE NARRATION/DIALOGUE SPLIT — CRITICAL FOR DANIEL
+## SECTION 1.5 — THE NARRATION/DIALOGUE SPLIT (CRITICAL FOR DANIEL)
 
-Daniel writes his memoir late in life. He is an old man looking back across sixty
-years. His **narration voice** is the old man's: dry, retrospective, sophisticated,
-capable of irony and long sentences and precise metaphor. This is intentional and
-correct. Do not flatten it.
+**This is the single most important technical rule in the book for Daniel.**
 
-Daniel's **quoted dialogue** is the 17-year-old's voice — and it must stay 17
-across the early chapters. Agents must not bleed the narrator's sophistication into
-what the young Daniel actually said. The narration can be polished. The dialogue
-cannot be.
+Daniel narrates retrospectively as an old man writing late in his life. He has had
+sixty years to process what happened, to find the right words, to achieve perspective.
+His **narration voice** CAN be mature, dry, ironic, clause-heavy, and sophisticated.
+The old man looking back earns that register. Do not flatten it.
 
-**Required features of Daniel's spoken dialogue (especially chapters 1-25):**
+**But his quoted DIALOGUE must sound like the 17-year-old (or 25-year-old, or
+40-year-old) he was at the time of the scene.**
+
+These are different people. The narration is written by the old man. The dialogue was
+spoken by the young man. Agents must not bleed the narrator's sophistication into what
+Daniel actually said at the time.
+
+### The failure mode this rule prevents:
+
+A writer reads the narrator's voice — sophisticated, controlled, dry — and lets it
+bleed into Daniel's spoken words. The result is dialogue that is too clean, too
+formed, too complete. A 17-year-old who has just been told his invention will kill
+people does not say "I know." He says "Yeah. I know. I know, okay? I —" and stops.
+A 25-year-old selling an idea to a skeptic does not produce a polished three-point
+argument aloud. He hedges, backs up, says "I mean —" and tries again.
+
+### The test:
+
+Read Daniel's dialogue aloud in your own voice. If it sounds like something a writer
+polished, it's wrong. If it sounds like something a real person actually said, out
+loud, in a situation — it might be right.
+
+### What the split looks like in practice:
+
+**NARRATION (old man, retrospective — CAN be sophisticated):**
+> "I did not understand yet that the most dangerous thing I could become, in that
+> city, was valuable. I thought I was solving a problem. I was, in fact, making one."
+
+**DIALOGUE (the young man at the time — must sound like it was spoken):**
+> "Look — okay, so the thing is, I think this part works. I've actually tested it,
+> kind of. So it's not just — I'm not just guessing. The part I'm not sure about is
+> the other part. Which, yeah, is a problem."
+
+**WRONG (narrator voice bleeding into spoken dialogue):**
+> "I do not know whether to be glad it already exists or to be sad that I did not
+> think of it."
+> "I know." *(flat, as sole response to being told his work will cause deaths)*
+
+**RIGHT:**
+> "Huh. Okay. That — huh. I mean, that's actually — wait, why didn't I — okay,
+> this is good. This is fine. I just need a minute."
+> "Yeah. I know. I know, okay? I — yeah."
+
+### Required features of Daniel's spoken dialogue (especially chapters 1–25):
 - Contractions, always. "I don't" not "I do not." "It's" not "it is."
-- Hedging: "I think," "kind of," "sort of," "I mean—", "maybe"
+- Hedging: "I think," "kind of," "sort of," "I mean —", "maybe," "probably"
 - Incomplete thoughts: trailing off mid-sentence when scared or uncertain
-- Filler: "like" as a marker, "you know," pauses written as dashes
+- Filler as texture: "like" as a marker, "you know," pauses written as dashes
 - Second-guessing mid-statement: "It's gonna — I mean, it might not — yeah, okay,
   it's probably gonna work but I've never actually done it at this scale."
-- Mild swearing under stress (shit, damn, hell, occasionally stronger)
+- Mild swearing under stress (shit, damn, hell, occasionally stronger; PG-13 level)
 - Asking questions he should know the answer to because he's nervous
+- Starting sentences with "I mean —" and not finishing the thought cleanly
+- Restating himself: saying the same thing twice in slightly different words
+  because the first version didn't sound right
 
-**Forbidden in Daniel's dialogue:**
+### Explicitly forbidden in Daniel's spoken dialogue:
+- "I know." as a flat complete response to hard truths — too adult, too settled
+- "Whether to be glad... or sad..." constructions — no teenager phrases it this way
 - Perfectly formed arguments with clean rhetorical structure
-- Philosophical summations ("That is either the honorable version or...")
-- Flat one-word acknowledgments of hard truths ("I know." — a teen says "Yeah.
-  Yeah, I know. I — yeah." or trails off entirely)
-- Formal diction ("I do not know whether to be glad it already exists or sad that
-  I did not do it" — no teen talks like this)
-- Delivering the chapter's thematic line in his own dialogue
+- Philosophical summations that land too cleanly
+- Rhetorical questions that arrive already answered
+- Formal diction or elevated vocabulary that the narration uses but the speaking
+  voice wouldn't have
+- Delivering the chapter's thematic mic-drop line himself
 
-**CORRECT:**
-> "Yeah, I mean — okay. So I was thinking maybe we just, like, try it? I know it
-> probably won't work the first time but if we just start and see what happens?
-> I don't know. Maybe that's dumb. What do you think?"
+### What he CAN do that sounds authentic:
+- "I mean —" starts that don't finish grammatically
+- Trailing off mid-sentence: "It's just — yeah."
+- Swearing under his breath when scared: "Oh, shit. Okay. Okay."
+- Asking questions he should know the answer to: "That's — that's not permanent,
+  right? That can come out?"
+- Hedging every claim: "I think this works. I'm pretty sure. Mostly sure."
+- Second-guessing himself mid-statement: "This is good — I mean, it's fine, it's
+  not great, but it'll — yeah, it's fine."
+- Repeating a key word twice when landing a difficult point: "It works. It actually
+  works. I just need — it works."
 
-> "Okay so — I know how this sounds. I know. But I've done the math on it like
-> four times and it keeps coming out the same, so either I'm wrong — which, yeah,
-> possible — or the thing is actually gonna work. Probably."
+### As Daniel ages (chapters 30+):
 
-**WRONG:**
-> "I do not know whether to be glad it already exists or sad that I did not do it."
-> "I know." *(as a flat response to being told his invention will kill people)*
-> "The arithmetic where you keep finding, under the number, another number."
-  *(fine in narration; wrong as spoken dialogue)*
-
-**As Daniel ages (chapters 30+)** his spoken voice can mature — he has spent thirty
-years speaking Latin and living in a culture that prizes rhetorical precision. His
-dialogue CAN become more controlled. But even at 50, his narration is more polished
-than his dialogue. The teenager does not disappear entirely; he becomes better at
-hiding. Under stress or grief, the teenage register should surface again.
+His spoken voice CAN mature — he has spent thirty years speaking Latin and living
+in a culture that prizes rhetorical precision. His dialogue becomes more controlled,
+more deliberate. But even at 50, his narration is more polished than his dialogue.
+The teenager does not disappear — he becomes better at hiding. Under stress or grief,
+the teenage register should surface. The "I mean —" comes back. The trailing off
+comes back. He reverts to type when the stakes get high enough.
 
 ---
 
@@ -305,21 +349,68 @@ problem. Crowd hecklers should be wrong, loud, and specific.)
 ## SECTION 3: PER-CHARACTER QUICK REFERENCE
 
 ### DANIEL (narrator / spoken dialogue)
-Narration: ornate, clause-heavy, retrospective, dry, modern.
-Spoken dialogue: short, hedged, flat, often concedes. The two registers are
-deliberately split — Daniel's spoken voice is MUCH simpler than his narrator voice.
 
-DO:
-> "I don't read Greek." [flat, wrong-footed]
+**THE CORE RULE:** Two registers, deliberately split. See Section 1.5.
+
+Narration: ornate, clause-heavy, retrospective, dry, modern. The old man's voice.
+Spoken dialogue: short, hedged, flat, incomplete, often concedes mid-sentence.
+The two registers must never bleed into each other.
+
+**DIALOGUE BY STAGE OF LIFE:**
+
+*Age 17 — just arrived (chapters 1–8):*
+> "I — okay. Yeah. I don't — I'm trying to explain this in a language I barely
+> speak to someone I've known for like three days, so. Can we — can we just try it?
+> The thing. Just try it and see."
+> "I don't know, man. I have no idea. I don't know what I'm doing."
+> "Okay so this is gonna sound — just hear me out. Please."
+
+*Age ~25 — established, beginning to have standing (chapters 15–25):*
+> "Okay so — I know how this sounds. I know. But I've actually done the math on
+> this like four times and it keeps coming out the same, so either I'm wrong —
+> which, possible — or the thing is actually gonna work. Probably."
+> "I don't — look, I'm not saying it's safe. I'm saying it's the least bad option
+> I can think of right now, and I've been thinking about it for three days, so."
 > "I build things that float and burst, Caesar. I know enough to know that I do
-> not — which about roofs is the most I have ever known." [self-deprecating]
-> "Thank you." [which was always the wrong size]
+> not — which about roofs is the most I have ever known."
 
-DON'T:
+*Age ~40 — powerful, but still himself under pressure (chapters 30–42):*
+> "I'm not — this isn't a negotiation. I just want to be clear about that. I know
+> it looks like a negotiation. It's not. I've already decided."
+> "Yeah, I know what I said. I'm saying it differently now. That's allowed."
+> "Look. Here's the thing. The thing is — okay, the thing is complicated. Give me
+> a minute."
+
+**DO:**
+> "I don't read Greek." [flat, wrong-footed]
+> "Thank you." [which was always the wrong size]
+> "Yeah. Yeah, I know. I know, okay? I — yeah."
+> "Probably." [as a complete answer to a yes/no question]
+> "Oh, shit. Okay. Okay." [discovering something has gone wrong]
+
+**DON'T:**
+> "I know." *(flat, alone, as complete response to hard news — too settled)*
+> "I do not know whether to be glad it already exists or sad that I did not do it."
 > "What I've discovered is a method of controlled combustion that allows lighter-
 > than-air flight by manipulating the density differential between the interior
-> gas and the surrounding atmosphere."
-(Daniel never lectures in spoken dialogue. He concedes and reframes.)
+> gas and the surrounding atmosphere." *(Daniel never lectures in spoken dialogue)*
+> Any perfectly-formed argument he delivers in full without hedging or backtracking.
+> Any line that lands the chapter's thematic point and he clearly knows it landed.
+
+**FORBIDDEN PHRASES (dialogue only — fine in narration):**
+- "I know." *(alone, flat)*
+- "Whether to be glad... or sad..." constructions
+- "The [noun] where you [elegant subordinate clause]" used as spoken speech
+- Any sentence that sounds like it came from a paragraph rather than a mouth
+
+**WHAT HE CAN DO (authentic teen-to-middle-age voice):**
+- "I mean —" starts that don't finish grammatically
+- Trailing off: "It's just — yeah." / "I don't — yeah."
+- Swearing quietly when scared: "Oh god. Okay. Okay."
+- Asking things he should know: "That's not — that heals, right?"
+- Hedging: "I think this works. Mostly. Probably."
+- Restating: "It works. I mean — yeah. It works."
+- Second-guessing mid-sentence: "This is fine — I mean it's not great, but it'll—"
 
 ---
 

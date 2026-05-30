@@ -860,23 +860,31 @@ character census. Keep brief; expand only if a chapter needs it.
 ---
 
 ## REAL HISTORICAL FIGURES (use carefully; mostly offstage)
-- **TRAJAN** (emperor from 98, in Rome from 99, d. 117): soldierly, practical,
+
+- **TRAJAN** (b. 53 AD; emperor from 98, in Rome from 99, d. 117): soldierly, practical,
   affable, a builder who genuinely likes engineers. Personal audiences are major
   set-pieces; keep him mostly a distant force. He is not cruel but he is the
-  state, and the state is lethal. Voice: the cold affable-then-transactional
-  soldier. "Affable weather" over a "cold sum." Not performing wit.
-- **APOLLODORUS OF DAMASCUS**: Trajan's master engineer/architect. The one real
-  mind in Rome who can meet Daniel as a peer. Voice: Greek-accented, fast,
-  magisterial. Proud "the way a wall is plumb." Contempt "total and serene."
-  Single verdict held forever ("a clever toy that does one thing"). He
-  historically clashed with Hadrian (who later had him killed/exiled) — a usable
-  late thread.
-- **HADRIAN** (Trajan's ward; emperor 117-138): around the court as a younger man,
+  state, and the state is lethal. *Physical:* Broad-shouldered, fit in the way of a man who has never stopped being a soldier, with a soldier's plain haircut and the particular ease of someone who has been the most powerful person in every room for long enough to have stopped noticing it. His face is open, weathered, not handsome but authoritative — the kind of face that is easy to trust and should not always be. *Voice:* the cold affable-then-transactional soldier. "Affable weather" over a "cold sum." Not performing wit.
+  > "You built this."
+  > "Good. Build another."
+  > "What does it cost me."
+
+- **APOLLODORUS OF DAMASCUS** (b. ~60 AD): Trajan's master engineer/architect. The one real
+  mind in Rome who can meet Daniel as a peer. *Physical:* A Syrian Greek with a Syrian's coloring — dark, fine-boned, with the bearing of a man who designs things that will outlast him and is not modest about it. He dresses simply and precisely; everything about him is plumb. His hands are a draftsman's hands, not a builder's — unmarked, with ink. *Voice:* Greek-accented, fast, magisterial. Proud "the way a wall is plumb." Contempt "total and serene." Single verdict held forever ("a clever toy that does one thing"). He historically clashed with Hadrian (who later had him killed/exiled) — a usable late thread.
+  > "The rope holds. The fire does not. You have built a thing that knows this better than you do and will demonstrate it at the worst possible moment."
+  > "A clever toy that does one thing. Come back when it does two."
+  > "What is your tolerance on the arch." [the only question he asks people he is beginning to respect]
+
+- **HADRIAN** (b. 76 AD; Trajan's ward; emperor 117-138): around the court as a younger man,
   intellectually voracious, prickly, dangerous. The succession resets every
-  relationship. Voice: Greek-and-Latin, quick, lacquered, predatory-playful. Sets
-  verbal traps and watches which you step in. "You have until I am bored."
-- **PLOTINA** (Trajan's wife) and **ATTIANUS** (Praetorian prefect): the engine of
-  the contested succession of 117. Offstage engines; Plotina appears once in passing.
+  relationship. *Physical:* The first emperor to wear a beard — and it is deliberate, Greek-philosopher affectation carried off with total confidence. Tall, well-built, with the quick restless physicality of a man whose mind moves faster than most conversations. His eyes are the operative feature: they read rooms and faces the way a man reads a text, looking for the thing that doesn't fit. Dressed always with the slight overdress of someone performing intellectualism as well as power. *Voice:* Greek-and-Latin, quick, lacquered, predatory-playful. Sets verbal traps and watches which you step in. "You have until I am bored."
+  > "You bow to the room when you do not know which of us is worth bowing to. I like to see a man I am talking to."
+  > "Do not flatter me by agreeing too quickly. I dislike it."
+  > "A man who asks to be forgotten is asking to be remembered for the asking. I will remember you for it."
+
+- **PLOTINA** (b. ~70 AD; Trajan's wife) and **ATTIANUS** (Praetorian prefect): the engine of
+  the contested succession of 117. Offstage engines; Plotina appears once in passing. *Physical (Plotina):* A controlled, composed woman who appears exactly as she intends to — neither too visible nor invisible. Not elaborately dressed; careful. Her stillness in a room is the stillness of someone who has already worked out what will happen before it does.
+
 - **PLINY THE YOUNGER** — NOTE: this cameo was never written in V1. The ch51
   letter interlude used invented correspondents (Norbanus Rufus / Caecilius
   Priscus), not Pliny. In V2, either use him as originally planned or note
@@ -885,19 +893,22 @@ character census. Keep brief; expand only if a chapter needs it.
   PRISCUS" — both are invented figures, a generation after Daniel's death; Rufus is
   the snobbish narrator-of-record who half-credits the Thulean. Keep them as the
   ch51 voices; do not swap in Pliny unless deliberately revising.
-- **DECEBALUS** — King of Dacia; the offstage antagonist of the Dacian wars (ch12–18).
+
+- **DECEBALUS** (d. 106 AD) — King of Dacia; the offstage antagonist of the Dacian wars (ch12–18).
   Encamped behind "the Loaf"; negotiates, fights, and finally cuts his own throat rather
   than be taken, his head carried south as proof. A historical force, not a voice character.
-- **ANTONINUS PIUS** — Hadrian's successor (ch46+). A grave, decent, unhurried senator
+
+- **ANTONINUS PIUS** (b. 86 AD) — Hadrian's successor (ch46+). A grave, decent, unhurried senator
   who will "die in his own bed, having gone nowhere and refused every adventure" — no
   appetite for the ocean program, which is why its imperial prestige-funding lapses under
-  him (while the institutional/commercial crossings continue). Voice: even, careful,
-  unspectacular; the anti-Trajan, anti-Hadrian.
+  him (while the institutional/commercial crossings continue). *Physical:* A large, dignified man who looks like a senator out of a textbook — broad, well-fed, white-haired, with the unspectacular solidity of someone who has always been trusted and has never done anything to undermine it. *Voice:* even, careful, unspectacular; the anti-Trajan, anti-Hadrian.
+  > "I will give the matter appropriate consideration."
+  > "The precedents are not encouraging. We will discuss it again in the spring."
+
 - **THE FOUR CONSULARS** (Palma, Celsus, Nigrinus, Lusius Quietus) — executed without
   trial at the start of Hadrian's reign (ch33); the purge that poisons the Senate's trust
-  and frightens Daniel's circle. **Lusius Quietus** (the Moorish cavalry commander, also
-  ch29) is the one with a face in the prose; the others are mostly names — deliberately, as
-  Daniel "cannot even hold" them. Historical; offstage.
+  and frightens Daniel's circle. **Lusius Quietus** (b. ~60 AD; the Moorish cavalry commander, also
+  ch29) is the one with a face in the prose: dark-skinned, lean, with the unsettling calm of a cavalry commander who has won engagements in ways the army would prefer not to describe in detail. The others are mostly names — deliberately, as Daniel "cannot even hold" them. Historical; offstage.
 
 ---
 
