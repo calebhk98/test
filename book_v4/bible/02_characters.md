@@ -765,27 +765,38 @@ character census. Keep brief; expand only if a chapter needs it.
 > "More wine. No, I insist — there's plenty."
 
 ### GLABRIO — bronzesmith; the recurring prize near-miss (ch19, ch26)
-- A craftsman who shows up repeatedly in the prize records attempting tolerance specs
-  (the cylinder bore, alloy work) and getting close, never quite winning; Daniel knows his
-  name though they rarely speak. Embodies the prize model distributing risk to people who
-  can least afford the near-miss. [Note: the outlines reference further Glabrio appearances
-  (ch21/ch29) and a later retainer — the written prose currently has him in ch19 and ch26.]
-- Voice: terse craftsman; mostly seen on the page through his submissions, not dialogue.
+
+**BIRTH YEAR:** b. ~65 AD
+
+**PHYSICAL DESCRIPTION:** A working bronzesmith: broad arms, heat-darkened skin, hands that look too large for precise work until you watch him use them. His face shows a man who has been close to something several times and hasn't got there — not defeated, exactly, but with a particular set to his jaw. Medium height, thick-necked, with burn marks on the forearms in the distinctive spatter pattern of bronze work. He appears in the prize records more often than in dialogue; when he does speak it is brief and directed at the technical problem, not at the people around it.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "How close."
+> "The bore held to the third inch. Not the fourth."
+> "I'll come back."
 
 ### BITUITUS — Gaulish captain/yard-master; the Atlantic program (ch36, ch44, ch46)
-- The leather-faced Gaulish captain Daniel quietly funds years before the Hadrian audience;
-  pilots/organizes the western probes out of the Tagus and later the Gaulish yards; builds
-  the deep-hulled, double-planked ocean ships and is proud of them.
-- Function: the hands that carry out the crossing program; its continuity after Daniel.
-- Voice: blunt seaman/builder; practical; proud of a hull the way Hermes is of a heat.
+
+**BIRTH YEAR:** b. ~60 AD
+
+**PHYSICAL DESCRIPTION:** A large, weathered Gaul who looks as though he was made from the same material as the ships he builds: oak-dark, sea-battered, built for endurance rather than elegance. Leather-faced is the word Daniel uses — skin that has been in salt air for thirty years. Blond hair fading to grey, worn practically, sometimes tied back. His hands are shipbuilder's hands: massive, capable, knuckle-scarred. He dresses in the heavy practical clothing of someone who works outdoors in all weather; he has not owned a toga in his life and this does not trouble him. He smells of pitch and salt. His most distinctive physical habit: he lays his hand flat on the hull of anything he builds, palm down, feeling for something.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "Deep-hulled. Double-planked. She'll take the Atlantic if anything will."
+> "Wind was wrong for six days. We waited."
+> "She held. That's what she did. She held."
 
 ### ILLA — woman from the western shore; the contact arc's moral center (ch36+)
-- Came back with Bituitus's second probe; somewhere past thirty; sits in the tally-room
-  and learns the new figures faster than any Roman clerk Daniel has tested. Her own name is
-  one Daniel "could not hold in his Latin mouth"; she accepts, without enthusiasm, being
-  called "Illa" ("her" — a placeholder, not her name). She has two words for her homeland:
-  one meaning roughly "the people's land," the other her kin-group's name, which Daniel does
-  not repeat because it is theirs.
+
+**BIRTH YEAR:** b. ~105 AD (approximate; "somewhere past thirty" when she appears ~135 AD)
+
+**PHYSICAL DESCRIPTION:** A woman who does not look like anyone else in Rome: her coloring, her bone structure, the particular set of her features are from a place no Roman cartographer has named correctly. Daniel's narration does not inventory her appearance the way it might another character's — he is too aware, by this point in his life, of what that kind of looking implies. What he does note: she sits in a room with the stillness of someone who is collecting information faster than the room realizes, and she handles the new numerals with a precision that makes the Roman clerks look slow.
+
+**VOICE EXAMPLES (DIALOGUE):**
+*(Minimal on the page; do not give her speeches. When she speaks, it is brief, specific, and directed at the task.)*
+> [Pointing to an error in a tally:] "Wrong."
+> [Asked her name:] [She says it. Daniel cannot transcribe it. The narration records its absence.]
+> "Again." [when shown a new procedure; she wants to do it herself]
 - Function: the living rebuke to the "uninhabited" lie; the person from the world that
   existed before Daniel arrived, who has no idea what that means. Handle with restraint and
   dignity; she is not a symbol to be explained, and her interiority is not Daniel's to narrate.
@@ -793,40 +804,58 @@ character census. Keep brief; expand only if a chapter needs it.
   make her gratitude/forgiveness legible.
 
 ### GNAEUS — tavern-keeper; the food-arc partner (ch34; relationship spans Part II onward)
-- Runs a thermopolium near the Aemilian bridge. Daniel gives him recipes (the pasta
-  preparation, later the proto-ketchup) years earlier; Gnaeus works them into his counter
-  rotation without ceremony or attribution and stops thinking of them as Daniel's. "The
-  barbarian who has interesting ideas about food and is good for business."
-- Voice: a working tavern-keeper; unsentimental, commercial; food is business, not art.
+
+**BIRTH YEAR:** b. ~60 AD
+
+**PHYSICAL DESCRIPTION:** A stout, red-faced man who smells of the counter and is perpetually slightly damp from kitchen steam. His hands are food-worker's hands: nicked from knives, red from hot water, never quite clean. He is not tall and makes up for it in presence — the particular confidence of a man in his own establishment, which is the only place he has ever needed to be. His tunic is always covered by the long apron of the trade. He moves around his thermopolium with the ease of a man navigating his own body, which it effectively is.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "Sells. Whatever it is, it sells."
+> "I don't know what you put in it and I'm not asking. The sauce goes on the counter at noon."
+> "You're bad for business when you argue with me in front of customers."
 
 ### MARCELLUS — contest winner; the protégé who goes wrong (ch38)
-- A freedman's son from the Transtiberim; won a prize three years earlier (a water-lifting
-  screw for mine shafts). Took Daniel's introductions to two mine-operators, posed as
-  Daniel's agent with authority he never had, and extracted ~8,000 sesterces in advance for
-  improvements he couldn't and didn't make. Daniel repaid the operators with interest and
-  cut him off; Marcellus's reply was "more aggrieved than apologetic."
-- Function: the system Daniel built being gamed; the prize model's failure mode embodied.
-  Not a cartoon villain — a man who convinced himself none of it was wrong.
+
+**BIRTH YEAR:** b. ~90 AD
+
+**PHYSICAL DESCRIPTION:** A young man with the easy manner of someone who has found that likability has always been enough — good-looking in a unremarkable way, well-dressed for a freedman's son, with a smile that arrives before he has decided whether to trust you. His hands are not a craftsman's hands despite his prize submission; he is better at explaining the work than doing it. His most distinctive quality, in retrospect, is that he never looked like what he was doing because he had convinced himself he wasn't doing it.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "I was going to tell you. I was waiting until the contract was settled."
+> "It's not — I'm not saying I misrepresented it. I said what I thought was true at the time."
+> "That's not a fair characterization."
 
 ### STATIUS — farrier; the unexpected prize winner (ch24)
-- A horseshoe-maker who submits a decades-deep iron heat-colour/temperature table (built by
-  his father and grandfather, calibrated against thousands of real horseshoes) — cruder than
-  Daniel's own data and more useful. The prize model surfacing craft knowledge Daniel could
-  not have reached. (Sends it via his nephew.)
-- Voice: not on the page much; the table speaks for him.
+
+**BIRTH YEAR:** b. ~50 AD
+
+**PHYSICAL DESCRIPTION:** A farrier, so: a big man made bigger by the work, with horseshoe-maker's arms and a farrier's permanent slight lean from bending to hooves. The table he submits is in his nephew's hand; Statius himself barely appears on the page. If he appears in person: leather-aproned, smoke-dark, with the unimpressed patience of a craftsman who has been doing the same thing for thirty years and finds it good.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "The table's in the letter." [through the nephew, if he speaks at all]
+> "Father started it. Grandfather had the idea. I just added the last twenty years."
 
 ### SEXTUS PEDANIUS — glassmaker of Brundisium; the first prize payoff (ch07)
-- Wins the first glass-clarity prize with a bone-ash decolourant technique his father
-  developed for decorative vessels — a method Daniel did not know existed, bought for ~200
-  sesterces. The beat that clarifies the prize model: he is buying disclosure of existing
-  Roman craft knowledge invisible to him, not inventing.
-- Voice: a working glassmaker; brief.
+
+**BIRTH YEAR:** b. ~58 AD
+
+**PHYSICAL DESCRIPTION:** A provincial glassmaker who has come to Rome for the prize collection: wearing his best tunic, which is good provincial work but not metropolitan. His hands are a glassblower's — burn-marked, thick-fingered, showing decades of working near fire. He is not a large man but his hands look like they belong to someone larger. He appears briefly, collects the money, confirms the technique works, and leaves.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "Father's method. Bone ash in the pour. Clears it."
+> "Two hundred. That's what the notice said."
+> "I'll take it."
 
 ### SATURNINUS — optio; field-sanitation/flux (ch12, ch14)
-- A campaign optio (distinct from the unnamed ch02–04 optio). Explains flux mortality in
-  camp; moves Daniel away from Sabinus's body after the fall; helps keep the maimed Naso on
-  the army's strength.
-- Voice: frontier soldier; matter-of-fact about death; short.
+
+**BIRTH YEAR:** b. ~60 AD
+
+**PHYSICAL DESCRIPTION:** A lean, dark-eyed campaign optio with the matter-of-fact physicality of a man who has been managing bodies — living and dead — for years. His most visible feature is not a scar but a tiredness that is not complaint; it is just the face of someone who has been doing a difficult job for a long time. He wears his rank markers correctly and treats them as tools, not honors. His hands are clean when he can manage it and he cannot always manage it.
+
+**VOICE EXAMPLES (DIALOGUE):**
+> "Flux takes more than the enemy. Always. Every camp."
+> "Leave him. Come away." [moving Daniel from Sabinus]
+> "Naso stays on the strength. He can carry. That's enough."
 
 ---
 
