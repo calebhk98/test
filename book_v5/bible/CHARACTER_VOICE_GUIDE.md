@@ -6,6 +6,48 @@ Cross-reference: `02_characters.md` for full profiles.
 
 ---
 
+## QUICK NAVIGATION
+
+### Main Sections
+| Section | Line |
+|---------|------|
+| SECTION 1: The V1 Failure | 9 |
+| SECTION 1.5: The Narration/Dialogue Split | 27 |
+| SECTION 2: The Voice Range Spectrum | 125 |
+| SECTION 3: Per-Character Quick Reference | 349 |
+| SECTION 4: Class-Marking Grammar Rules | 587 |
+| SECTION 5: Crude Speech Reference | 617 |
+| SECTION 6: The Muting Problem | 660 |
+
+### Voice Range Tiers (Section 2)
+| Tier | Characters | Line |
+|------|-----------|------|
+| **Tier 1** | Senatorial (Scaeva, Hadrian) | 132 |
+| **Tier 2** | Educated Greek (Heras, Apollodorus, Eudemus, Crispus) | 150 |
+| **Tier 3** | Equestrian Businessmen (Macer, Marcia) | 181 |
+| **Tier 4** | Freedmen Craftsmen (Hermes, Felix, Vitalis) | 217 |
+| **Tier 5** | Army (Celer, Naso, soldiers) | 252 |
+| **Tier 6** | Urban Working Class (Tyche, Pamphilus) | 286 |
+| **Tier 7** | Crowd Walk-Ons (hecklers, bystanders) | 324 |
+
+### Character Quick References (Section 3)
+| Character | Line |
+|-----------|------|
+| **DANIEL** (narrator/dialogue split) | 351 |
+| **HERAS** | 417 |
+| **MACER** | 433 |
+| **TYCHE** | 448 |
+| **HERMES** | 472 |
+| **CELER** | 487 |
+| **CRISPUS** | 502 |
+| **SCAEVA** | 515 |
+| **MARCIA** | 528 |
+| **HADRIAN** | 544 |
+| **PAMPHILUS** | 558 |
+| **NASO** | 574 |
+
+---
+
 ## SECTION 1: THE V1 FAILURE
 
 V1 committed a systematic error: **everyone who speaks sounds too smart, too
