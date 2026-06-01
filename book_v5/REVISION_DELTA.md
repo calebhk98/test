@@ -115,3 +115,107 @@ VII:51–53). The canon-log structure note uses descriptive labels for parts; ma
 official names are I Arrival and Survival, II The Man Who Flew, III How Far to Go,
 IV Too Valuable, V Starting Over, VI The Ladder, VII The Long Way Home (Coda). Optionally
 harmonize the canon-log note's labels to these names on the next pass.
+
+---
+
+## E. Prose and craft issues — blind read pass (v5 next pass)
+
+These were surfaced by a blind read review of all 53 chapters. They are craft/voice
+problems in the existing prose, not outline deltas.
+
+### E1. Illa — remove "moral significance" framing
+- **Problem:** The prose frames Illa (the woman from the western shore, introduced ~ch36)
+  as carrying moral weight — some framing presents her as a living ethical indictment of
+  Daniel's actions. This is overcorrected. She is a side character from the Americas, not
+  a moral centerpiece.
+- **To fix:** Any passage that loads Illa with moral significance should be scaled back.
+  She can be a person, she can matter to Daniel, but the prose should not position her as
+  the book's ethical conscience. Her presence is notable and interesting on its own terms.
+
+### E2. Key scenes summarized instead of dramatized
+- **Problem:** Important moments — political dialogues, demonstrations, military events —
+  are written as reported summary rather than lived scenes. The reader gets the outcome
+  and a description of what happened, not the scene itself.
+- **To fix:** On revision pass, flag any pivotal exchange or event that is narrated in
+  past-summary rather than dramatized in present action. Target at minimum: Scaeva's key
+  dialogue moments, the rails demonstration, the Dacian War military beats.
+
+### E3. Journal/English notes treated as a moral device
+- **Problem:** Daniel's personal journal (written in English, later becoming an
+  encyclopedic reference) is being written as though its entries are moral reckonings —
+  moments where he files a hard ethical truth and moves on. The journal is not a cipher
+  and not a confessional. It is a teenager's notes, then a reference log.
+- **To fix:** Journal entries should read as practical, personal, or encyclopedic — not as
+  ethical acknowledgment-and-deferral. Daniel's moral conflicts with Roman life are real
+  but are currently overstated. He is a modern teenager: he finds Roman slavery
+  uncomfortable, not a constant existential crisis. His morality is background discomfort,
+  not a running internal argument.
+
+### E4. Section-break formula — blend sections more organically
+- **Problem:** Every chapter uses 4–6 explicit section breaks (---), giving each chapter
+  an identical rhythm. The breaks are often substituting for transitions rather than
+  marking genuine structural shifts.
+- **To fix:** Reduce reliance on hard breaks. Where scenes or time periods connect
+  naturally, write through the transition. Reserve breaks for genuine leaps in time, place,
+  or register. Target: vary the count meaningfully chapter to chapter rather than landing
+  at 4–6 every time.
+
+### E5. Chapter endings too formulaic — "close on stillness" pattern
+- **Problem:** Nearly every chapter ends on a small resolved physical image (hands, fire,
+  warmth, quiet). The pattern is consistent across all 53 chapters, which trains the reader
+  to expect it and deadens the emotional impact precisely where each chapter most needs it.
+- **To fix:** Audit chapter endings specifically. Some should end mid-motion, on dialogue,
+  on an unresolved thought, on something uncomfortable. The quiet-image close should be
+  one tool among several, not the default.
+
+### E6. Pamphilus — needs more scene presence, not more moral weight
+- **Problem:** Pamphilus is introduced with enough presence to register as a character but
+  then largely disappears into the background for dozens of chapters. He does not need to
+  be a major slavery-theme arc, but he also shouldn't be invisible.
+- **To fix:** Give Pamphilus more actual scenes — small ones are fine. His relationship
+  with Daniel should reflect a modern teenager's discomfort with slavery: aware of it,
+  not okay with it, but also not in a position to change it and not constantly agonizing.
+  Pragmatic and humanizing without making it a big thematic statement.
+
+### E7. Glass/lens thread — planted too early
+- **Problem:** The glass challenge is planted in ch5, but Daniel likely wouldn't have
+  the resources or contacts to initiate this that early. The thread then sits silent for
+  14+ chapters, which was flagged repeatedly in the blind read.
+- **To fix:** Either delay the initial setup to a later chapter when Daniel's resources
+  and network make it plausible, or cut the ch5 setup entirely and re-introduce it at
+  the appropriate point. Silence after a planted thread reads as a dropped thread.
+
+### E8. Crystal radio / electricity — Daniel should be visibly excited
+- **Problem:** The crystal radio and early electrical experiments in ch39 are compressed
+  into a few paragraphs and treated with the same register as other inventions. A modern
+  teenager would not be casually indifferent to making electricity and radio in ancient
+  Rome — he might invent better food or agriculture improvements without much reaction,
+  but electricity and radio are the things he would genuinely understand as revolutionary.
+- **To fix:** Give the electricity/radio moment substantially more space and give Daniel
+  a visible, teenage reaction — giddy, not composed. He has probably thought about this
+  for years. This is the one area where his modern frame of reference makes him uniquely
+  aware of the scale of what he's done.
+
+### E9. "Inversion formulation" prose tic
+- **Problem:** The construction "X who had once Y now Z" (or variations: "I had wanted X
+  the way I had once wanted Y") appears frequently enough across the manuscript to be a
+  noticeable fingerprint.
+- **To fix:** Search for "who had once," "had once," "the way I had once," and similar
+  constructions. Reduce to occasional use. When it appears, make sure the comparison is
+  earning its place.
+
+### E10. "Return to the yard" refrain — overused
+- **Problem:** After unresolvable or emotionally heavy scenes, the prose repeatedly has
+  Daniel returning to the yard (or equivalent grounding action) as a reset. It becomes
+  a mechanical pattern.
+- **To fix:** Vary what Daniel does after hard scenes. The yard works once or twice as
+  a character beat; as the default response to difficulty it signals avoidance.
+
+### E11. Trajan entry (ch7) — wording reads as triumphal entry
+- **Problem:** The ch7 description of Trajan entering the city reads as a formal
+  triumphal procession, but the intent was that he entered roughly as a regular person
+  (before any major triumph). Historically Trajan entered Rome around 99 AD without
+  the full triumphal apparatus.
+- **To fix:** Reread the ch7 passage and adjust the language so it's clearly an arrival,
+  not a triumph. The pomp level in the prose should match an imperial entry, not a
+  post-conquest parade.
