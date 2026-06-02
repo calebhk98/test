@@ -4,6 +4,61 @@ Writers: use these as canon. Keep voices distinct. Minor walk-ons can be named
 from the stock in `07_glossary.md`. Ages are given for 98 AD and you can compute
 later ages from the timeline (Daniel is 17 in 98).
 
+---
+
+## CHARACTER INDEX
+
+| Character | Role | Line |
+|-----------|------|------|
+| **DANIEL "DANNY" MERCER** | protagonist, narrator | 16 |
+| **HERAS** | Greek physician, the skeptic and conscience | 48 |
+| **TITUS FLAVIUS MACER** | the patron (middle-book engine) | 88 |
+| **TYCHE** | slave, then freedwoman; thread to epilogue | 137 |
+| **GAIUS JULIUS HERMES** | freedman blacksmith; metallurgy thread | 181 |
+| **QUINTUS MARCIUS CELER** | army officer; war/frontier thread | 210 |
+| **LUCIUS VETTIUS CRISPUS** | grammarian/philosopher; intellectual antagonist | 241 |
+| **AULUS VIBENIUS** | senior haruspex; religion friction | 263 |
+| **PUBLIUS CORNELIUS SCAEVA** | ambitious senator; political danger | 283 |
+| **MARCIA** | freedwoman; Daniel's eventual partner/wife | 303 |
+| **ULPIA SEVERA** | Daniel's daughter; cipher/encyclopedia thread | 333 |
+| **MARCUS ULPIUS LUCANUS** | Daniel's son | 365 |
+| **PAMPHILUS** | collared slave, recurring; class-voice vehicle | 395 |
+| **FELIX** | freedman/assistant; prize-tale teller | 432 |
+| **GETA** | freedman/assistant; powder-accident survivor | 459 |
+| **SABINUS** | manned-balloon casualty; moral pivot | 479 |
+| **NASO** | recruit; voice of confident-stupid | 497 |
+| **ONESIMUS** | senior abacus clerk; confidently-wrong figure | 519 |
+| **VITALIS** | press apprentice; keeper-chain | 547 |
+| **CHLOE** | Bithynian cipher-keeper | 565 |
+| **ZOTICUS** | Heras's successor physician | 586 |
+| **EUDEMUS** | fiscus clerk; route to Hadrian | 605 |
+| **THEOPHANES** | keeper-chain figure | 626 |
+| **"OLD VIBIA"** | Procula's cipher teacher | 642 |
+| **PROCULA** | epilogue climber; clock-cracker | 658 |
+| **THE OPTIO OF CH02–04** | Daniel's first sustained human contact | 688 |
+| **EROS** | freedman letterer/pressman; print-shop spine | 712 |
+| **STICHUS** | water-boy then yard worker; household presence | 723 |
+| **DEMETRIOS** | Greek glass-cutter/lens-grinder | 734 |
+| **DRUSUS** | Macer's guild/materials contact | 745 |
+| **METTIUS** | ambitious equestrian; salon host | 756 |
+| **GLABRIO** | bronzesmith; recurring prize near-miss | 767 |
+| **BITUITUS** | Gaulish captain/yard-master; Atlantic program | 778 |
+| **ILLA** | woman from the western shore | 789 |
+| **GNAEUS** | tavern-keeper; food-arc partner | 806 |
+| **MARCELLUS** | contest winner; protégé who goes wrong | 817 |
+| **STATIUS** | farrier; unexpected prize winner | 828 |
+| **SEXTUS PEDANIUS** | glassmaker of Brundisium; first prize payoff | 838 |
+| **SATURNINUS** | optio; field-sanitation/flux | 849 |
+| **TRAJAN** | real historical figure; emperor | 864 |
+| **APOLLODORUS OF DAMASCUS** | real historical figure; Trajan's master engineer | 872 |
+| **HADRIAN** | real historical figure; Trajan's ward/successor | 878 |
+| **PLOTINA & ATTIANUS** | real historical figures; succession engines | 885 |
+| **DECEBALUS** | real historical figure; King of Dacia | 897 |
+| **ANTONINUS PIUS** | real historical figure; Hadrian's successor | 901 |
+| **THE FOUR CONSULARS** | real historical figures; executed at Hadrian's start | 908 |
+
+---
+
 **V2 IMPERATIVE — read before writing a single line of dialogue:**
 See `CHARACTER_VOICE_GUIDE.md` for voice-range rules, crude speech guidance,
 class-marking grammar, and the "muting" problem. The core failure of V1: everyone
