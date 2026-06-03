@@ -56,9 +56,9 @@ These targets come from running `analyze.py` against all 53 chapters and compari
 
 ## DANIEL'S VOICE — THE NARRATION/DIALOGUE SPLIT (CRITICAL)
 
-Daniel writes his memoir late in life. His NARRATION voice is the old man's — mature, dry, retrospective, occasionally sophisticated. This is correct and should be preserved.
+Daniel narrates in close, immediate first-person past tense - the young Daniel telling it from small remove (days or weeks), NOT an older man writing a memoir. (In the story he does write a memoir and an encyclopedia later; the novel is not that document.) His NARRATION voice is plain, immediate, and dry - the kid's voice, a little more ordered than his in-scene panic but NOT mature, sophisticated, or literary.
 
-Daniel's QUOTED DIALOGUE is the 17-year-old's voice. It must sound like an American teenager. Agents must not bleed the narrator's sophistication into Daniel's spoken words.
+Daniel's QUOTED DIALOGUE is the same 17-year-old under live pressure - even rougher: hedged, incomplete, panicky. Agents must not let EITHER voice drift up into a skilled-adult-writer register.
 
 **Required features of Daniel's dialogue:**
 - Contractions, always

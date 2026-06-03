@@ -2,9 +2,21 @@
 
 ## POV and tense
 - **First person, past tense**, narrated by Daniel Mercer.
-- Default is close retrospective: Daniel is telling this from some later point,
-  but he does NOT use that vantage to telegraph or spoil (no "little did I
-  know"). He tells it as it felt then.
+- The vantage is CLOSE and IMMEDIATE, not a memoir. Daniel tells it from small
+  remove - days or weeks, as the same young person who lived it - NOT as an older
+  man looking back across decades. He tells it as it felt then, the fear and
+  confusion still live on the page. No far-future hindsight: no "years later," no
+  "I would come to learn," no "I know now, all this time on," no "little did I
+  know." He may note a thing he worked out a little later (that same day or week);
+  he may not reach forward into the rest of his life.
+- Past tense carries occasional present-tense general-truth asides, the way a
+  person telling a story slips into the present for a thing that is still true
+  ("some things you just know," "I'm bad at chemistry. I've always been bad at
+  chemistry"). These are in-voice; keep them natural and sparing.
+- ON THE FRAME: In the story, Daniel does later write a memoir and an encyclopedia
+  (see the premise and the after-his-death interludes). The novel we are reading is
+  NOT that memoir. It is his close, lived account. Do not write the narration as a
+  polished document composed in old age.
 - Tense/POV may shift deliberately for specific interludes (see below). Any
   shift must be flagged in the chapter brief, never done casually.
 
@@ -95,8 +107,8 @@ plain it down.
 **Calibration caution (for QA and review passes):** a reviewer told to "flag
 everything more sophisticated than a real teen" will always return a long list
 and roughly 5/10 against *any* publishable prose, because published narration is
-inherently more shaped than a real teen's literal thoughts (and the narrator is
-an older Daniel writing it down, which licenses some shaping). Use such reviews to
+inherently more shaped than a real teen's literal thoughts (even a close
+first-person past like this one is somewhat more shaped than literal teen thought). Use such reviews to
 catch repeat-offender **categories** above — not to chase a score toward 10. Some
 shaping is fine; refined/therapist/poet register is not.
 
@@ -400,6 +412,6 @@ beat. The goal is natural variation, not zero occurrence.
   is natural and human. Keep it.
 - **Varied hedging**: "perhaps," "seemed" are used very sparingly (5 and 2
   instances respectively) — this is correct. Keep this restraint.
-- **The retrospective frame**: The narrator is old, writing this. That frame
-  licenses philosophical interludes and measured reflection. Use it, but don't
-  use it to deliver analysis the scene has already completed.
+- **Dry reflection, close up**: Daniel can be wry and reflective in narration, but
+  from a close, immediate vantage, not as an older memoirist. Keep reflection short
+  and in-voice; don't use it to deliver analysis the scene has already completed.
