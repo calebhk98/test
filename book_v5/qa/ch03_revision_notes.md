@@ -91,3 +91,27 @@ register that started this pass is gone. Remaining objective gap: short-sentence
 language-wall quoted Latin; pushing it to target would require flattening the voice.
 RECOMMENDATION: treat ch03 as good-enough to ship pending the user's call on whether to
 trade voice for the sentence-length metric.
+
+### Round 5 (user chose: push the analyzer targets too)
+Fragment-reduction pass: merged ~16 staccato fragments into mid-length sentences
+(kept three load-bearing isolated beats: "The man had stood up", "You idiot/You
+absolute idiot", "It was loose now"). Result: 1-5-word sentences 25% -> 11.8% (under the
+<15% target and under the 13.4% baseline); median 13w -> 18w; mean 16.2 -> 18.9w
+(baseline 19.5); distribution now tracks the classic-novel baseline. Fresh blind panel
+confirmed the choppiness complaint is GONE ("mostly smooth and well-paced"; map sequence
+variation praised). 0 em-dashes; plants intact.
+
+### Round 6 (final clean trims) + CONVERGENCE DECLARED
+Took the two clean non-plant flags from the round-5 panel: cut the pure pre-summary line
+("Here's what I knew that they didn't...") and replaced a dead simile ("heart going like
+I'd run a mile" -> "heart still going hard"). 
+
+CONVERGED. Final: ~3,370 words; em-dashes 0; correctio 0; "the way" similes 2 (cap 3);
+"looked at me" 2 (cap 2); 1-5-word sentences 11.8%; one-sentence paras 13.5%; all plants
+present. The harsh panel now only recycles required plants/thesis beats (treasure-map
+ch36 seed, food/C9 plant, B-minus underselling = thesis, "loose now" plant) plus
+single-reviewer micro-nits. The original problem (the internal QA praising poetic/refined
+register that the style guide bans) is resolved.
+INTENTIONAL DEVIATION (not a defect): dialogue density stays ~11% vs the 50% book target.
+This is the language-wall chapter; Daniel cannot converse. We unmuted the Romans with
+quoted Latin he can't parse (honest), but will not fake a conversation to hit the metric.
