@@ -243,14 +243,13 @@ battery now critical. Plant: the map as his identity; the western continents
   eventually push for the crossing is that he misses what he can't eat here. This
   is texture and interiority, not a plot driver. No speech, no scene — just a private
   register visible to the reader. (C9 — per audit_new_gaps.md Gap 1)]
-- ADD: **Leeuwenhoek bead microscope**. Daniel melts a glass rod-tip in a lamp flame;
-  surface tension forms a near-perfect sphere; held over a printed letter the letter
-  swells to fill his vision. The first thing he has actually built here. He never
-  calls it a microscope. He keeps the bead. It is a toy that works; Heras, when he
-  arrives, is interested in the optics, not impressed by the scale. One short scene,
-  maybe half a page — establish that optics are achievable with existing Roman
-  materials. (V2_REVISED_OUTLINE ch03; master_outline §Part I "Leeuwenhoek bead
-  microscope")
+- MOVED OUT (was: Leeuwenhoek bead microscope). The bead microscope is NOT built in
+  ch03. Here Daniel is an imprisoned foreigner on ~day 2-3 with no glass, no workshop,
+  no lamp of his own, no freedom of movement, and no shared language; melting a glass
+  bead over a flame and keeping it as a toy is not materially possible in this chapter.
+  The beat has been relocated to **ch05** (see "ch05 ADD: bead microscope"), the first
+  chapter in which Daniel has his own space, a lamp, and access to a glass scrap. Do
+  NOT build it in ch03. (Relocated v5; supersedes the V2_REVISED_OUTLINE ch03 placement)
 - **Variolation consciously withheld** — planted here and carried as a cipher note.
   Daniel knows variolation on arrival. No standing, no physician relationship yet —
   in this chapter he cannot even speak. Cipher note to self (in English, when the
@@ -308,7 +307,7 @@ lie without marking it as a lie for the reader — which is correct. Daniel says
 - [ ] No em dashes.
 - [ ] No future-vantage narration.
 - [ ] The western continents must be on the page explicitly (not hedged as "shapes").
-- [ ] Bead microscope built — toy register, not triumph.
+- [ ] (Bead microscope MOVED to ch05 — it must NOT appear in ch03.)
 - [ ] Variolation "not yet" cipher note present (phone entry or interior English).
 - [ ] One-sentence paragraphs: stay under 15%.
 
@@ -316,8 +315,8 @@ lie without marking it as a lie for the reader — which is correct. Daniel says
 Mandatory: V2_MASTER_CONTEXT.md, V2_CHAPTER_CHANGE_NOTES.md (ch03),
 bible/06_style_guide.md, PROSE_PATTERNS_TO_AVOID.md.
 Chapter-specific: bible/03_timeline.md (confirm 98 AD setting; Trajan's absence
-from Rome noted). bible/04_tech_schedule.md (Phase A: bead microscope — first
-physical build; variolation withheld entry).
+from Rome noted). bible/04_tech_schedule.md (Phase A: variolation withheld entry;
+bead-microscope first-physical-build now scheduled for ch05, not ch03).
 
 ---
 
@@ -348,11 +347,11 @@ as a relic.
   spread. (V2_CHAPTER_CHANGE_NOTES ch04)
 - The phone death rendered flatly ("Off.") is already the V1 execution and must be
   preserved. This is cited as exactly right by the change notes.
-- **Bead microscope continuity note**: if the bead microscope was not on the page in
-  ch03, place it here instead — same beat (glass-rod tip in a lamp flame, sphere by
-  surface tension, held over a letter). Ch03 is the preferred placement per
-  V2_REVISED_OUTLINE, but ch04 is the fallback if the ch03 scene is too compressed.
-  Do not place it in both.
+- **Bead microscope — NOT in ch04.** The bead microscope has been relocated to ch05.
+  It is not materially possible in ch03 (imprisoned, no glass/workshop), and ch04's
+  centerpiece is the numerals long-division beat — "no other tech in this chapter"
+  (see Tech requirements below), so it does not belong here either. Do not build it in
+  ch04. (Relocated v5)
 - **Food texture** (V2_REVISED_OUTLINE ch04): garum served again; Daniel eats around
   it with less reaction than ch03. The adjustment is underway; no speech about it.
   One line is enough.
@@ -442,6 +441,19 @@ Plant: germ practices spreading without the theory; the balloon idea named.
   page maximum. This is V2_TECH_DEEP_DIVE Phase A: "Crude soap — V1 WRONGLY OMITTED
   THIS." It must appear in Phase A. Ch05's timeline (98-99 AD) is the correct
   placement. (V2_MASTER_CONTEXT §Change 1; V2_STORY_PLOT_NOTES §4.2)
+- ADD (relocated from ch03): **Leeuwenhoek bead microscope** — Daniel's first real
+  physical build. He melts the tip of a glass rod or scrap in a lamp flame; surface
+  tension pulls it into a near-perfect tiny sphere; held over a written letter, the
+  letter swells to fill his eye. He never calls it a microscope. He keeps the bead. It
+  is a toy that works, not a triumph — it establishes that optics are achievable with
+  existing Roman materials. Heras is interested in the optics, not impressed by the
+  scale. One short scene, about half a page. This was originally scheduled for ch03 but
+  is not materially possible there (imprisoned, no glass, no workshop, no freedom); ch05
+  is the first point Daniel has his own space, a lamp, and a glass scrap. NOTE: this is
+  the simple melted-bead microscope ONLY — it is distinct from the lens-grinding / glass
+  challenge thread (see REVISION_DELTA E7), which is a separate, later beat and must not
+  be pulled forward with it. (Relocated v5; master_outline §Part I "Leeuwenhoek bead
+  microscope")
 - ADD: Lead poisoning awareness. Daniel sees lead pipes in a Roman kitchen or
   cistern. He makes the connection immediately — this is the most famous schoolbook
   fact about Rome. He stops using lead cooking vessels in his own space. He advises
