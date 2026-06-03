@@ -30,6 +30,76 @@
   assumptions. By the late book he thinks partly in Latin and has to reach for
   the English word. Show this drift gradually; do not announce it.
 
+## Narration register: ordinary, not refined (the most important voice rule)
+Daniel is an average 17-year-old (and later an ordinary adult writing this down).
+He is NOT a novelist, therapist, ethics professor, or poet. The single most
+persistent failure across drafts is narration drifting "up" into a refined,
+self-analyzing, literary register that quietly signals Daniel is special or
+college-educated. It breaks the book's whole premise — that an ordinary person's
+ordinary knowledge is enough. Hunt this in every pass.
+
+**Banned / strictly limited moves (with real before→after fixes):**
+
+- **No meta-narration of his own body or mind.** He does things; he does not
+  watch himself do them.
+  - BAD: "I heard myself make a sound I didn't mean to make." / "I counted the
+    rows before I knew I was counting." / "my weight rolled up onto the balls of
+    my feet before I knew it was happening." / "I kept catching myself about to
+    say something."
+  - BETTER: "I made some noise I couldn't help." / "I counted the rows. Four." /
+    "I was up on my toes before I decided anything." / "I kept almost talking to
+    nobody."
+
+- **No coping-strategy narration.** He copes; he does not describe his coping
+  technique like a counselor.
+  - BAD: "give myself a job small enough to hold onto — watch my feet, count the
+    rows, find one thing a person had made."
+  - BETTER: just have him start walking and looking; let the reader feel that
+    it's how he holds together.
+
+- **No stacking or ranking of feelings.** People feel things; they don't file them.
+  - BAD: "sat on top of everything else, and under it was the worse one I kept
+    trying not to think about." / "That was the worst of it." / "somehow that was
+    worse than being alone had been."
+  - BETTER: name one feeling plainly, or just show the behavior.
+
+- **No labeling the irony or meaning of his own reaction** (the therapist/monk
+  move).
+  - BAD: "No lump, no blood, which should have been a relief and wasn't."
+  - BETTER: "No lump, no blood. I should've been glad. I wasn't."
+
+- **No poetic compound nouns or crafted sensory catalogs.** One plain concrete
+  detail beats a composed list.
+  - BAD: "muscle memory from a hundred dead-battery afternoons" / "the
+    gas-and-hot-blacktop smell" / "smoke standing off it in a hundred thin lines."
+  - BETTER: "from doing it a hundred times when my battery died" / "no exhaust,
+    no hot asphalt" / "smoke going up all over it."
+
+- **No retrospective grand summations in the moment.** BAD: "the hardest thing my
+  body has ever done." Cut it, or "I almost didn't."
+
+- **Prefer the plain word a real kid would reach for**, even a cliché, over a
+  fresh literary image. "I couldn't wrap my head around it" is more in-voice than
+  an invented metaphor.
+
+**Keep — do NOT over-correct into flat or dumb.** Dry, self-deprecating humor;
+specific modern anchors (a pizza box, the Dairy Queen, YouTube, "like forty
+bucks"); short real-panic fragments; concrete hardware/working-class detail. The
+target is *ordinary and real*, not *bland*. He has a personality; he just isn't a
+stylist.
+
+**The test:** read any sentence and ask, "would a normal high-school junior
+actually think or say this?" If it sounds like a writer chose it for effect,
+plain it down.
+
+**Calibration caution (for QA and review passes):** a reviewer told to "flag
+everything more sophisticated than a real teen" will always return a long list
+and roughly 5/10 against *any* publishable prose, because published narration is
+inherently more shaped than a real teen's literal thoughts (and the narrator is
+an older Daniel writing it down, which licenses some shaping). Use such reviews to
+catch repeat-offender **categories** above — not to chase a score toward 10. Some
+shaping is fine; refined/therapist/poet register is not.
+
 ## Prose mechanics
 - American spelling.
 - No em dashes. Commas, normal dashes, full stops.
