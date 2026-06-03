@@ -44,3 +44,29 @@ compress the stacked interior-reflection blocks.
   western continents drawn with conviction (ch36 seed), clerk copies map ("loose now"),
   physician summoned (healer + foreigner-slur), optio bread + name exchange, variolation
   note, bread-as-final-image ending.
+
+### Round 2 (intersection of 4 blind reviews — harsh+neutral x Sonnet+Haiku)
+Fixed the highest-consensus issues: compressed the 3 stacked post-map reflection
+paragraphs and cut the worst line (the "read too much sci-fi / knowledge you can't put
+back in the box" meta line, named worst by 3/4); plained "stillness of somebody used to
+people waiting on his mouth to open", "smell of the whole world now", "it had company
+now"; trimmed the backward-narration gloss (healer/slur, army-yes); dropped the
+"Take him away. Done." gloss on Auferte for Latin consistency; dissolved the "shelf"
+fragment. Confirmed working: register direction validated (the round-1-plained "big
+visiting genius" line is now praised, not flagged).
+
+### Round 3 (intersection of round-2 reviews)
+- VARIOLATION RELOCATED to ch04 (user decision). Removed the note from ch03 prose;
+  edited outline (ch03 MOVED-out note + checkbox; added the withheld beat to ch04 where
+  the physician arrives). All 3 reviewers, both rounds, rejected it as a cold/abrupt
+  author-note in ch03's prisoner scene; ch04 (Heras) is the natural anchor.
+- Prose: cut "Sherlock lives" + the "movies got everything else wrong" wink; simplified
+  the "dead language... deciding what to do with me" line (grounded in school-Latin);
+  cut "doing sums" doubling; "seemed to step back" -> plain; trimmed Africa "nobody in
+  that room" repetition; compressed the Asia geography inventory and varied its sentence
+  openings (was a monotone "I + verb" list).
+- OPEN/CARRIED: short-sentence (1-5 word) ratio still ~28% vs <15% target — fragment
+  density is the next category to address; do carefully (some fragments are voice).
+- KEPT against blind-reviewer notes (filtered vs thesis): "I'd have eaten a tire" (voice;
+  split 2-2); the B-minus art-class line (thesis "ordinary kid underselling himself"
+  beat, an established pattern); "It was loose now" (load-bearing plant + praised).

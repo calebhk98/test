@@ -250,12 +250,14 @@ battery now critical. Plant: the map as his identity; the western continents
   The beat has been relocated to **ch05** (see "ch05 ADD: bead microscope"), the first
   chapter in which Daniel has his own space, a lamp, and access to a glass scrap. Do
   NOT build it in ch03. (Relocated v5; supersedes the V2_REVISED_OUTLINE ch03 placement)
-- **Variolation consciously withheld** — planted here and carried as a cipher note.
-  Daniel knows variolation on arrival. No standing, no physician relationship yet —
-  in this chapter he cannot even speak. Cipher note to self (in English, when the
-  phone still has power): "variolation — not yet." This is a choice, noted once, not
-  revisited until the groundwork is laid. (master_outline §Part I; TIMELINE_TEXTURE
-  _AUDIT §(d) kept-private-to-exploit)
+- MOVED OUT (was: Variolation consciously withheld). The "variolation - not yet"
+  cipher note is NOT in ch03. In ch03 Daniel cannot speak, has met no physician, and
+  has no reason to be thinking about deploying medical knowledge; dropped cold into the
+  prisoner scene it reads (per blind-reader review) as an unexplained author note that
+  breaks the chapter's close. Relocated to **ch04**, where the physician (Heras) arrives
+  — the physician's presence is the natural anchor for Daniel to privately register the
+  medical thing he knows and is choosing to withhold. Do NOT place it in ch03.
+  (Relocated v5; supersedes master_outline §Part I ch03 placement)
 
 **[V2] Tech requirements:**
 Phase A, first build. The bead microscope is the one physical object Daniel builds
@@ -308,7 +310,7 @@ lie without marking it as a lie for the reader — which is correct. Daniel says
 - [ ] No future-vantage narration.
 - [ ] The western continents must be on the page explicitly (not hedged as "shapes").
 - [ ] (Bead microscope MOVED to ch05 — it must NOT appear in ch03.)
-- [ ] Variolation "not yet" cipher note present (phone entry or interior English).
+- [ ] (Variolation "not yet" note MOVED to ch04 — it must NOT appear in ch03.)
 - [ ] One-sentence paragraphs: stay under 15%.
 
 **Updated Files list:**
@@ -355,6 +357,17 @@ as a relic.
 - **Food texture** (V2_REVISED_OUTLINE ch04): garum served again; Daniel eats around
   it with less reaction than ch03. The adjustment is underway; no speech about it.
   One line is enough.
+- ADD (relocated from ch03): **Variolation consciously withheld.** With an actual
+  physician (Heras) finally in front of him, Daniel privately registers the big medical
+  thing he knows and is choosing NOT to deploy yet: variolation (a rough pre-vaccination
+  inoculation against the pox). He has no language, no standing, and no reason for Heras
+  to trust him, so he files it and moves on. Render as a brief private beat — interior,
+  or a last short note before the phone dies — NOT a scene, and do not explain the
+  technique to the reader at length; it is a withheld seed, noted once and not revisited
+  until the groundwork is laid. (Relocated from ch03 v5: blind readers found it abrupt
+  and unexplained as a cold drop in ch03's prisoner scene; the physician's arrival here
+  gives it a natural anchor. master_outline §Part I; TIMELINE_TEXTURE_AUDIT §(d)
+  kept-private-to-exploit)
 
 **[V2] Tech requirements:**
 Phase A, first demonstration. Hindu-Arabic numerals and place value are the tech
