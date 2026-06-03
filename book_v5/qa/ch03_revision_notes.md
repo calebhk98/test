@@ -115,3 +115,16 @@ register that the style guide bans) is resolved.
 INTENTIONAL DEVIATION (not a defect): dialogue density stays ~11% vs the 50% book target.
 This is the language-wall chapter; Daniel cannot converse. We unmuted the Romans with
 quoted Latin he can't parse (honest), but will not fake a conversation to hit the metric.
+(Also: rendering the optio's name to add dialogue would break canon — names are
+unrendered on the page in ch03.)
+
+### Round 7 (user: keep iterating) — TRUE CONVERGENCE
+Guardrail applied: stopped cutting interiority (Ch1 handoff §8 says Daniel needs MORE
+inner life, not less; the harsh panel's reflexive "cut the introspection" is filtered).
+Took only redundant-phrasing trims (a meta-lesson line; an over-piled threat clause).
+Then asked the harsh panel to name GENUINE DEFECTS vs merely-literary lines: it returned
+only TWO (a garbled over-compressed pivot sentence, and a Briticism "like I might be
+catching" for an American teen) plus one minor referent ("that did nothing"). All three
+fixed. Neutral reader: "completely real... definitely keep reading." That a defect-only
+prompt yields ~2 small fixes (both introduced by my own earlier edits) is the convergence
+signal. ch03 is done for this pass.
