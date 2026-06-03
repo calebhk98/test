@@ -68,7 +68,7 @@ Danny Mercer is a 17-year-old high school junior from a midsize Midwestern subur
 
 ---
 
-## **THE JOB: HENDRICKS HARDWARE**
+## **THE JOB: BRENTWOOD HARDWARE**
 
 Danny has worked here for a year and a half, roughly 20 hours a week. He makes $11.40 an hour. After taxes, that's about $180 a week. He knows this because he checks his paystub every Friday and does the math immediately: gas money, $40 toward the phone bill he owes his mom, keeping his checking account above $100 so he doesn't feel like he's drowning.
 
