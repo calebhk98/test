@@ -70,3 +70,24 @@ visiting genius" line is now praised, not flagged).
 - KEPT against blind-reviewer notes (filtered vs thesis): "I'd have eaten a tire" (voice;
   split 2-2); the B-minus art-class line (thesis "ordinary kid underselling himself"
   beat, an established pattern); "It was loose now" (load-bearing plant + praised).
+
+### Round 4 (round-3 intersection)
+- De-purpled the final phone/battery paragraph (cut "the last library on earth that
+  spoke my language" and "I was a learned man... checks his sources" — both reviewers'
+  #1 remaining slip); trimmed para 47 (cut the "there's a thing that happens when a room
+  pays attention to you" pre-announced motive); cut "already there before my brain caught
+  up"; trimmed the food beat's "growing with nobody to pick it"; clarified the fetch
+  gesture; merged the "Fix the boot/Fix Africa" fragment trio.
+- Short 1-5-word sentences: 28% -> 25% across rounds (still above the <15% target).
+
+### CONVERGENCE / DIMINISHING RETURNS (assessment after 4 rounds, 8 blind reviews)
+The harsh panel is now recycling the same ~5 "worst lines" each round, and they are
+mostly REQUIRED PLANTS or THESIS beats already deliberately kept and filtered against
+the bible: the "treasure map you can't take back" reflection (ch36 plant), the B-minus
+underselling line (thesis), the healer/slur decoder beat (ch04 physician setup), the
+food/Atlantic-motivation beat (C9 plant). The genuinely poetic/QA-praised-but-wrong
+register that started this pass is gone. Remaining objective gap: short-sentence ratio
+(~25% vs <15%), which is largely the chapter's deliberate fragment voice + the
+language-wall quoted Latin; pushing it to target would require flattening the voice.
+RECOMMENDATION: treat ch03 as good-enough to ship pending the user's call on whether to
+trade voice for the sentence-length metric.
