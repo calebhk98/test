@@ -70,17 +70,24 @@ of side characters landing the scene's sharpest line.
 
 **This is the single most important technical rule in the book for Daniel.**
 
-Daniel narrates retrospectively as an old man writing late in his life. He has had
-sixty years to process what happened, to find the right words, to achieve perspective.
-His **narration voice** CAN be mature, dry, ironic, clause-heavy, and sophisticated.
-The old man looking back earns that register. Do not flatten it.
+Daniel narrates in close, immediate first-person past tense - from small remove
+(days or weeks), as the same young person who lived it, NOT as an older man writing
+a memoir decades later. There is no "sixty years of processing" layer and no
+sophisticated retrospective vantage to fall back on. The narration voice and the
+spoken-dialogue voice sit CLOSE TOGETHER: both belong to Daniel at the age he is in
+the scene.
 
-**But his quoted DIALOGUE must sound like the 17-year-old (or 25-year-old, or
-40-year-old) he was at the time of the scene.**
+The narration CAN be a little more ordered than his in-scene speech - he is telling
+the story, not panicking out loud in it - and it carries dry, self-deprecating humor
+and the occasional present-tense general-truth aside. But it is NOT licensed to be
+mature, clause-heavy, literary, or "sophisticated."
 
-These are different people. The narration is written by the old man. The dialogue was
-spoken by the young man. Agents must not bleed the narrator's sophistication into what
-Daniel actually said at the time.
+**His quoted DIALOGUE is the same person under live pressure - even rougher: hedged,
+incomplete, panicky.**
+
+Agents must not let EITHER voice drift up into a skilled-adult-novelist register. If
+a narration sentence sounds like a polished professional wrote it - even elegantly -
+it is wrong. Plain it down to what this kid would actually think.
 
 ### The failure mode this rule prevents:
 
@@ -99,9 +106,10 @@ loud, in a situation — it might be right.
 
 ### What the split looks like in practice:
 
-**NARRATION (old man, retrospective — CAN be sophisticated):**
-> "I did not understand yet that the most dangerous thing I could become, in that
-> city, was valuable. I thought I was solving a problem. I was, in fact, making one."
+**NARRATION (close, immediate, plain - a bit more ordered than his panic, still the kid):**
+> "So they had iron, iron for the door and rope for me, and I sat on the dirt floor
+> and worked out what that meant, and the best I got was that I didn't rate iron. I
+> rated rope."
 
 **DIALOGUE (the young man at the time — must sound like it was spoken):**
 > "Look — okay, so the thing is, I think this part works. I've actually tested it,
@@ -392,11 +400,13 @@ problem. Crowd hecklers should be wrong, loud, and specific.)
 
 ### DANIEL (narrator / spoken dialogue)
 
-**THE CORE RULE:** Two registers, deliberately split. See Section 1.5.
+**THE CORE RULE:** Two close registers. See Section 1.5.
 
-Narration: ornate, clause-heavy, retrospective, dry, modern. The old man's voice.
+Narration: close, immediate, plain, dry, modern - the kid telling it from just after
+it happened, a little more ordered than his panicked speech but NOT sophisticated,
+clause-heavy, or literary.
 Spoken dialogue: short, hedged, flat, incomplete, often concedes mid-sentence.
-The two registers must never bleed into each other.
+Neither register may drift up into a skilled-adult-writer voice.
 
 **DIALOGUE BY STAGE OF LIFE:**
 
