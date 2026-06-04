@@ -20,11 +20,16 @@ with a standard high-school education could move history if he survived
 long enough and had the nerve, the credibility, the language, and the
 money. The bottleneck is never IQ.
 
-Daniel writes the book later in life as an older man looking back. So
-the NARRATION may be a little dry, mature, retrospective. But the
-SPOKEN DIALOGUE (when he is actually talking in a scene) is supposed
-to sound like the teenager he was at the time — contractions, "I mean,"
-trailing off, hedging, fragmentary.
+Daniel narrates this in close, immediate first-person past tense. He
+is the same teenager telling it from a small remove of days or weeks,
+not decades. There is no old-man-looking-back vantage. The narration
+must NOT read as a polished memoir composed in old age. The narration
+voice is plain, immediate, slightly more ordered than his in-scene
+panic — but still the kid's voice, not a mature stylist's. No
+"years later," no "I would come to learn," no "I know now."
+
+Spoken dialogue should be even rougher than narration: hedged,
+contraction-heavy, incomplete, panicky.
 
 ## Where in the story this chapter falls
 
