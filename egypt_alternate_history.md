@@ -365,6 +365,8 @@ The African road network is the second major project. Egypt cannot build Roman-s
 
 The temple building program of 230-265 AD is simultaneously religious infrastructure and political architecture. Every major city throughout the empire receives a state-funded Isis temple in the canonical Egyptian architectural style. The visual consistency is deliberate - a temple in the Zimbabwe plateau city uses the same proportional systems and column types as an Alexandrian temple, creating immediate visual recognition of Egyptian identity across thousands of miles of geographic and cultural distance. Each temple incorporates a scribal school, a medical practice informed by Egyptian knowledge, and a grain storage facility for regional food security management. The temple network is Egypt's distributed civil infrastructure system, doing simultaneously what separate institutions do in more bureaucratically complex civilizations.
 
+Southern African interior consolidation completes during this period. The Botswana hinterland - Kalahari pastoral and transit country enclosed by the Zimbabwe plateau, the Copperbelt, and the South African Cape territory - integrates as those surrounding anchors mature, becoming functionally Egyptian by approximately 200-220 AD. The Namibia interior plateau, accessible overland from Angola in the north and the Cape territory in the south, fills in by approximately 240-270 AD. The Skeleton Coast itself remains too inhospitable for continuous settlement and is held only at the few viable harbors - Walvis Bay, Lüderitz, and the Kunene and Orange River mouths - established overland as small fishing and salt-extraction stations whose primary value is emergency refuge for offshore Atlantic shipping. Lesotho and Eswatini, enclosed within Egyptian South African and Mozambican territory, integrate as administrative components of those provinces.
+
 The Library of Alexandria is expanded and a network of branch scholarly institutions is established in Khartoum, major East African coastal cities, the Zimbabwe plateau city, and the Cape settlement. These are not Alexandria's equals, but they are genuine centers of learning with resident scholars and research programs. The Khartoum institution develops expertise in tropical medicine and Nile hydrology. The East African institution focuses on natural philosophy from African observations - the extraordinary biodiversity of highland interior Africa, the ocean current patterns, the astronomical observations possible from equatorial positions. The Cape institution benefits from the extraordinary ecological uniqueness of the Cape Floristic Region, the most botanically diverse temperate zone on Earth, which its scholars are systematically documenting.
 
 ### 250–275 AD: Cultural Maturity
@@ -388,6 +390,10 @@ When Rome finishes the north, it turns east. Egypt's estimate is that this is a 
 The Sinai Fortress System constructed between 280 and 295 AD is the most significant military project of the century. Any Roman land army advancing on Egypt must cross the Sinai land bridge - a narrow desert corridor where the numerical advantage of large armies is constrained by terrain and where every reliable water source can be fortified. Egypt does exactly this. A layered defensive system controls every viable water point in the Sinai, with fortified city-level positions at the corridor's ends backed by supply reserves sufficient for multi-year defense. The Nile Delta's water channels are incorporated into the system as managed defensive obstacles - Egypt controls the levees and sluice gates, allowing engineers to determine where and how much water flows across the Delta approach.
 
 This is not a system designed to stop Rome permanently. It is designed to make the advance so slow and so costly that Rome's strategic calculation changes - every month of Sinai fighting is a month of supply costs while Egypt's revenue streams continue operating.
+
+The Western Desert oasis system, developed in parallel with the Sinai fortifications between approximately 270 and 300 AD, extends the same defensive doctrine to Egypt's western approach. Any Roman land army advancing through Cyrenaica and Tripolitania toward the Nile must cross the Sahara, and the Sahara magnifies every problem the Sinai presents - water sources farther apart, the desert wider, and a force at the end of a Tripolitanian supply line operating at the end of a tether stretching across the entire Maghreb. Egypt fortifies the inner oasis chain - Siwa, Bahariya, Farafra, Dakhla, and Kharga - as a permanent defensive line and pushes garrisoned forward stations westward to Jaghbub, Awjila, and Kufra in the Libyan Desert and into the Fezzan beyond. The function is identical to the Sinai system: control every reliable water point along any viable advance route and require an attacker to bring its own water across distances no ancient logistical system can sustain. The oasis chain doubles as the spine of the trans-Saharan caravan trade, making the defensive investment economically self-sustaining rather than purely military overhead.
+
+The trans-Saharan caravan corridor matures during this same period as a deliberate economic and strategic project. With the Akan goldfields of modern Ghana under Egyptian operation for over a century and the West African coast organized through Senegal, Egypt has two routes from West African gold to the Mediterranean: the sea route around the Cape, and an overland route across the Sahara from the Niger Bend and Lake Chad regions to Egyptian Libya and the Nile. The overland route is shorter than the Cape circuit and operates independent of monsoon timing. Camel pastoralism, by now established in North Africa, is systematically applied to Egyptian caravan operations, with the Saharan oasis chain providing garrisoned waystations. By approximately 280-300 AD, regular caravan traffic moves between Egyptian Libya and the Egyptian Sahel, carrying gold, salt, ivory, and high-value manufactured goods. The corridor brings Chad, Niger, northern Mali, northern Burkina Faso, and the Central African Republic into integrated Egyptian administration through the same combination of strategic-point control, settler cities, temple networks, and provincial governance that the East African expansion used a century earlier.
 
 Cavalry development reaches maturity around this period. Egypt's military weakness relative to Rome has been cavalry since the Roman encounter at 100 BC. Egyptian horse breeding programs in the East African highlands - where horses survive without the tsetse fly exposure that kills them in lowland zones - have been running for over seventy years. Aksumite highland cavalry specialists have transferred knowledge that Egypt's own military culture didn't possess. Arabian horse breeds, imported through Red Sea trade contacts, improve the genetic stock. By 290 AD, Egypt's cavalry force is still not the equal of steppe-trained Roman cavalry in pure open-field engagement - but that comparison is irrelevant. Egypt's strategy is not to win cavalry engagements on open plains. It is to deny Rome the open plains where cavalry is decisive.
 
@@ -483,6 +489,7 @@ The century of consolidation built that. The question is whether it was enough.
 - The Sinai peninsula (fortified transit zone)
 - Yemen Tihama coast and Aden (Bab-el-Mandeb control)
 - Eastern Red Sea coast to the Horn of Africa
+- The Western Desert oasis chain (Siwa, Bahariya, Farafra, Dakhla, Kharga) and forward Saharan stations (Jaghbub, Awjila, Kufra, and the Fezzan)
 
 **East Africa**
 - Djibouti and northern Somalia (Horn anchor)
@@ -496,17 +503,25 @@ The century of consolidation built that. The question is whether it was enough.
 - Zambia/DRC border Copperbelt with organized copper extraction
 - Zambia river systems (Zambezi corridor)
 - South Africa's east coast and Cape region
+- Lesotho and Eswatini (enclosed within South African and Mozambican territory)
+- Botswana (Kalahari pastoral and transit hinterland)
+- Namibia interior plateau, with coastal stations at Walvis Bay, Lüderitz, the Kunene River mouth, and the Orange River mouth
 
 **West Africa**
 - Gold Coast (modern Ghana) with Akan goldfield operations
 - West African coast from the Congo mouth to modern Senegal (established commercial relationships, beginning territorial presence)
 - The Congo River mouth (known, posts established)
 
+**Saharan Interior and Sahel**
+- Trans-Saharan caravan corridor connecting Egyptian Libya to the Niger Bend and Lake Chad regions
+- Chad, Niger, northern Mali, northern Burkina Faso, and the Central African Republic (integrated via combined Sahel overland approach and West African coastal projection)
+
 **Indian Ocean**
 - Madagascar (290+ year old colony, 80,000-150,000 population, organized as full province)
 
 **Known but not yet controlled**
 - Morocco's Atlantic coast (known from circumnavigation, presence not established to avoid revealing Atlantic route)
+- The Western Sahara coast (avoided for the same reason - any Egyptian presence visible from the Atlantic approach to Gibraltar would reveal the circumnavigation capability)
 - The Atlantic route itself (classified strategic asset)
 - The Strait of Gibraltar from the Atlantic approach (known to naval command, not publicly acknowledged)
 

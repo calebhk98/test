@@ -205,6 +205,10 @@ With hundreds of researchers working in optical and astronomical contexts, and w
 
 The astronomical telescope is immediately applied to navigation chart improvement. The precision of Egypt's longitude calculation improves again as more precise stellar position data becomes available. As a secondary application, coastal observation telescopes are deployed at harbor approaches and military observation positions, giving Egypt's defenders early warning of approaching vessels at ranges far beyond unaided vision.
 
+### The Western Desert Engineering Program
+
+The defensive doctrine of fortifying every viable water source, established in the Sinai system, is applied to the Saharan oasis chain across this period. The engineering challenge differs from the Sinai's: rather than fortifying water points along a narrow corridor, Egypt develops deep-well drilling and water management across a chain of oases scattered hundreds of kilometers apart. The same mining-engineering tradition that handles Copperbelt drainage and Zimbabwe plateau extraction is applied to oasis development - deep wells, cistern complexes, irrigated date palm groves expanded to support permanent garrison populations, and storage systems sufficient for caravan resupply. By approximately 280-300 AD, the major oases of the Western Desert are settler cities with Egyptian temples, scribal schools, and the standardized administrative infrastructure that the broader empire receives. The forward Saharan stations - Jaghbub, Awjila, Kufra, and the Fezzan positions - are smaller but follow the same engineering pattern, and the steam-pumped well technology developed for mine drainage is adapted to oasis water management as those systems mature.
+
 ---
 
 ## Part IV: The Century of Acceleration, 300–400 AD
@@ -334,6 +338,16 @@ Egypt's mathematical tradition has by this period formally established that the 
 Egypt's navigators on the West African coast know the trade winds blow consistently westward from specific latitudes. The navigational knowledge to attempt an Atlantic crossing exists. The ships to make it are available.
 
 No expedition has yet been dispatched. The strategic debate — whether the Atlantic capability should be revealed as a deterrent or maintained as a classified capability — is unresolved. The classified research and intelligence assessment of what might lie to the west has not produced a decision to attempt the crossing. This decision belongs to the century that follows.
+
+---
+
+### The Congo Basin Question
+
+The deep Congo Basin remains outside direct Egyptian administration through this century, as it has throughout the previous two. The four specific barriers identified during the original interior campaigns - dense canopy, lethal tsetse concentrations, supply lines that collapse at the forest edge, and a disease environment that destroys Mediterranean and even highland-African soldiers - have not been overcome by 400 AD. What has changed is that the tools needed to overcome them are now individually mature.
+
+Steam riverboats have been operating on the Zambezi for three quarters of a century. The lower Congo's Livingstone Falls remain an absolute cataract barrier, but the engineering tradition that built the Nile-Red Sea canal lock system is capable of building a portage railway or lock channel around them - and once past Stanley Pool, the upper Congo is navigable for over a thousand miles into the heart of the basin. Proto-germ theory has matured into the beginnings of systematic tropical disease management, combined with three centuries of accumulated empirical antimalarial and antiparasitic practice from East African campaigning. Electrical communication infrastructure can be extended along river routes to keep forward posts in continuous contact with command. The pieces are individually in place. Their integration into a Congo program awaits the following century.
+
+Egypt's strategic council at 400 AD treats the Congo Basin as the next interior project after the Rome confrontation is settled. The economic logic is straightforward: a Congo integrated into the Egyptian river-steam network is a Congo whose ivory, copper, and forest products move at Egyptian transit rates rather than being purchased at the forest edge. The military logic is parallel: a Congo administered through river-system control is interior strategic depth even greater than the existing African network. First posts past Livingstone Falls and substantive river-system penetration are projected for the early-to-mid 5th century, with the basin functioning as recognized Egyptian territory by approximately 500 AD.
 
 ---
 
