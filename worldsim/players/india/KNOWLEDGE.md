@@ -22,3 +22,8 @@ Open questions: none recorded yet.
   their own Greek kingdoms — and these Bactrian Greek kings, bold and cavalry-rich, now look hungrily
   south toward our northwestern passes. The mare-trade through the old Seleucid channel has grown
   unreliable in the turmoil.
+
+## ~160 BC — what we now perceive
+- The Greek kings of the mountains have found their most vigorous leader yet (Menander), who presses
+  our northwestern passes harder than any before, with great forces of horse. The pressure on the
+  frontier is at its height; our prepared passes and our growing-but-untested cavalry will be tried.

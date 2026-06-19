@@ -29,3 +29,12 @@
   court, as a kingdom might fear. He reigns on, and so no Seleucid or Macedonian carved up our lands
   in our weakness. We hold Syria's coast and Cyprus, our treasury fills again, and the great new power
   of the west — Rome, who broke Carthage — we watch from afar. Egypt stands proud and whole.
+
+## 140 BC
+- Antiochus the new Seleucid came against the Nile itself, as his fathers never dared. And we threw
+  him back — not with Roman help, not by begging the colossus for protection as a weakling might, but
+  by our own hand: we let the desert and our ships starve his host while our engines and elephants held
+  the narrows of Sinai. He crawled home beaten, and his kingdom has been sinking ever since.
+- Let it be known to all the world: Egypt needs no master and no protector. Rome rules the western sea
+  and has swallowed Macedon and Carthage and Greece — but Egypt it has not swallowed, and shall not.
+  We are the two great powers left, Rome and the Nile, and we will deal as equals or not at all.

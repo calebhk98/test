@@ -41,3 +41,9 @@
   manpower; some southern socii defected. Scipio has taken Iberia (209–206), stripping Carthage's base.
 - The war is turning Rome's way (decision in Africa looms). Treasury melted (debasement, temple levies);
   pop ~3.7M, heavily bled but holding.
+
+## Update — 140 BC (Mediterranean superpower)
+- Won at Zama (202); destroyed Macedon (Pydna 168, province 148), razed Carthage and Corinth (146).
+  Master of the Mediterranean — Spain, Africa, Sicily, Macedonia, Greece. Treasury rich on spoils/provinces.
+- BUT strong Egypt repelled the Seleucid ALONE — so Rome never gained the OTL "protector of Egypt" lever.
+  Egypt remains an unconquered PEER; a latent Rome–Egypt rivalry now exists. (Rome's own divergence ~100 BC.)

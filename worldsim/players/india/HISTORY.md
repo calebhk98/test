@@ -32,3 +32,13 @@
 - For the first time we let our own horsemen taste battle, harrying a beaten Greek column — they are
   not yet the equal of the steppe-bred riders, but they have begun. The mountains stay Greek; the land
   of the rivers stays ours. We are the wall against which the west has broken.
+
+## 140 BC
+- The greatest of the Greek kings, Menander, hurled himself at our passes for a generation — and the
+  passes held. We did not meet his horse on the open plain where he is master; we bled him in the
+  funnels of stone and elephant and steel, and we turned his own lords against him with the lure of our
+  trade and our peerless steel, which none of them can make.
+- Yet we are honest with ourselves: to stand forever on the defensive costs us the trade of the
+  northwest and ties our armies to the mountains. So we have begun, at last, to make true horsemen —
+  not raiders only, but riders who can charge and wheel and hold a line — for the day we choose to go
+  out and end the Greek kings rather than merely endure them. That day is not yet, but it is coming.

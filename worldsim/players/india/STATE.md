@@ -63,3 +63,11 @@
   and Arab sources as the old Seleucid channel grew unreliable.
 - Wootz re-equip well advanced (much of the infantry now steel-armed). Pressed far-southern Tamil
   holdouts for more tribute/war-elephants. Pop ~32M; succession stable; Kalinga held.
+
+## Update — 140 BC
+- Held the NW against Menander (the most vigorous Greek king) at his peak — pass killing-funnels + a
+  third elephant reserve + harassment; the Punjab heartland NOT overrun (the Indo-Greek high-water blunted).
+- Split Menander's vassals with material sweeteners (exclusive wootz rights, a joint-customs trade-post).
+- Honestly priced perpetual defense (lost NW trade is a real drag); set conditions + a 5-yr review for
+  going offensive. Began real CHARGE-AND-RALLY cavalry training (not just hit-and-run) — a multi-decade
+  fix; mare supply still thin. Wootz re-equip near complete. Pop ~33M; succession stable; Kalinga held.

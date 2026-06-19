@@ -19,3 +19,10 @@ Open questions: none recorded yet.
 - The Seleucid king turns his ambitions WEST now — toward Greece and Asia Minor — where a hard new
   power has risen in Italy (Rome) that has destroyed Carthage. The east may grow quieter for us as he
   looks the other way; the western power bears watching.
+
+## ~170 BC — what we now perceive
+- A new, aggressive Seleucid king (Antiochus IV) covets Egypt itself and may march on us — the old
+  contest for Coele-Syria could become a war for the Nile.
+- Rome has destroyed the kingdom of Macedon and now stands as the arbiter of Greece and the Aegean —
+  a power in the east now as well as the west. In our grandfathers' day a weak Egypt might have begged
+  such a power for protection; we are not weak, and we will not beg.

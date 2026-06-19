@@ -123,3 +123,37 @@ World date → 205 BC.
   on indemnities/provinces. China: Han, recovering, populous.
 
 World date → 170 BC.
+
+## 170–140 BC — Turn 4 (Egypt + India live, full real loop; the "Day of Eleusis" NEVER happens)
+- **EGYPT (live) — repels Antiochus IV BY ITSELF; the OTL Roman-rescue divergence cancelled.**
+  Antiochus IV launched his invasion of Egypt (~169). But he met a UNIFIED, prepared, strong Egypt —
+  not the OTL child-king chaos. Per its red-teamed plan, Egypt did NOT gamble an open-field battle
+  (it conceded its ~50k mercenary/Macedonian army can't beat a full Seleucid royal army without the
+  native phalanx it refuses to raise). Instead: a small Coele-Syria delaying screen (sea-extractable),
+  a defense at the Sinai narrows (artillery + elephants), and a TIERED fleet that cut Antiochus's
+  coastal supply while guarding the Delta. His army bogged down and starved in the desert approaches
+  and WITHDREW — defeated by Egypt's own strength. **Rome never got to play protector — the "Day of
+  Eleusis" does not occur.** Egypt stands validated as a true peer, NOT a Roman client; it rebuilt the
+  treasury (>50k), renewed the Meroë iron treaty, and grew Red Sea/monsoon trade. The Seleucids,
+  humbled, decline (as OTL). [Refused the Roman-alliance bad idea.]
+- **INDIA (live) — holds Menander; the Indo-Greek high-water BLUNTED.** Against the most vigorous Greek
+  king yet, India refused open battle (its cavalry still no match on the open Punjab), reinforced the
+  pass killing-funnels with a third elephant reserve, harassed supply, and split Menander's vassals
+  with MATERIAL sweeteners (exclusive wootz rights, a joint-customs trade-post). The Punjab heartland
+  was NOT overrun (vs OTL, where the Indo-Greeks pushed deep into India). India honestly priced the
+  cost of perpetual defense (lost NW trade) and set conditions + a 5-yr review for going offensive, and
+  began real CHARGE-AND-RALLY cavalry training (not just hit-and-run) — a multi-decade fix now underway.
+
+### OTL powers
+- **ROME (west OTL; Egypt-lever lost).** Destroyed Macedon (Pydna, 168; province 148), razed Carthage
+  (146) and Corinth (146) — now the Mediterranean superpower. BUT because strong Egypt repelled
+  Antiochus alone, Rome NEVER acquired the OTL "protector of Egypt" lever — Egypt remains an unconquered
+  PEER, the one great power outside Rome's grasp. The latent Rome–Egypt rivalry begins here.
+- **CHINA (OTL).** The prosperous "Rule of Wen and Jing"; the Rebellion of the Seven States (154)
+  suppressed → stronger central power; recovering and centralizing toward Emperor Wu (accedes 141).
+
+### Fiscal/pop @140 BC
+- Egypt ~7.5M, treasury >50k, independent & validated. India ~33M, holding the NW, cavalry finally on a
+  real path. Rome: Mediterranean superpower, hugely enriched by conquest. China ~40M+, prosperous, centralizing.
+
+World date → 140 BC.

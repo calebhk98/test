@@ -54,3 +54,13 @@
 - Pop ~7.3M; treasury drawn down by the war, now recovering on grain/papyrus/Red Sea customs +
   the Meroë iron treaty. We are a strong, independent Hellenistic great power — not in decline.
 - Watching the new western power (Rome), now master of the west after destroying Carthage.
+
+## Update — 140 BC (repelled the Seleucid alone; a validated peer)
+- Antiochus IV invaded (~169) and we threw him back BY OURSELVES — a Sinai-narrows defense + artillery
+  + elephants + a tiered fleet that cut his coastal supply, and a small sea-extractable Coele-Syria
+  delaying screen. We did NOT beg Rome; Rome never became our "protector." The Seleucids decline.
+- We did NOT risk an open-field battle (our ~50k mercenary/Macedonian army can't beat a full Seleucid
+  royal army without the native levy we refuse to raise) — we won by terrain, logistics, and the sea.
+- Treasury rebuilt to >50,000 (grain/papyrus/Red Sea customs + Meroë iron). Heir groomed; no native
+  mass-levy; priesthood patronized. Pop ~7.5M. A strong INDEPENDENT peer — Rome's equal-in-kind, not its client.
+- Rome is now the Mediterranean superpower; we and it are the two great powers left standing — wary peers.

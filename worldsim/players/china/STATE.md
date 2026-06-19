@@ -40,3 +40,8 @@
   — a lasting structural achievement. Then the over-reach (mega-projects, harsh law) + the Emperor's
   death (210) sparked revolts; the Qin house fell (206). Now the Chu–Han civil war contends for the
   Mandate over a once-unified realm. Population convulsed; the unity persists as a memory to be reclaimed.
+
+## Update — 140 BC (Han recovered & centralizing)
+- The Han reunified and recovered: the prosperous "Rule of Wen and Jing"; the Rebellion of the Seven
+  States (154) crushed → central power strengthened. Populous (~40M+), wealthy, stable. Emperor Wu
+  accedes (141) — an aggressive, expansionist reign begins. (China's own divergence is ~100 BC.)
