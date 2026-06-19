@@ -31,3 +31,14 @@
 - Holds most of the subcontinent. Aware of the Yavana (Greek) west incl. Egypt by name (we have
   exchanged envoys), the Seleucid neighbor, Sri Lanka, the Tamil south; trade west is relayed via
   middlemen.
+
+## Update — 235 BC
+- Population ~30M. Kalinga held the smart way: the chosen prince INSTALLED as Viceroy (a real power
+  base) with a small garrison + paid local informants; other sons given equal governorships; a
+  succession document sealed but unpublished. Less mobile-army drain; revolt risk down.
+- South: Tamil polities pressed toward tribute/clientage (elephants dominate there); coastal Sri Lanka
+  gives token trade-tribute (presence + trade-leverage, not invaded).
+- Military programs (phased, present-need): re-equipping the infantry with wootz steel (~80–100k men/
+  yr, ~8–10 yr plan), funded by Kalinga port revenue; a Seleucid trade opened for broodmares/remounts
+  to slowly build cavalry (our standing weakness). NW frontier held by diplomacy, not war.
+- Treasury large; outlays funded by the tax base + new Kalinga port customs.

@@ -29,3 +29,13 @@
 ## Posture
 - Rival: the Seleucid kingdom (the Syrian Wars). Aware of Carthage, Rome (distant, at war with
   Carthage), Nubia/Kush to the south, and a vast eastern spice-land ("India") reached via middlemen.
+
+## Update — 235 BC
+- Ruler: Ptolemy III now. Population ~7.1M. Treasury ~45,000 (Third Syrian War, 246–241, brought
+  booty + Levantine standing; held Cyprus and the Levant — our timber & naval lifeline).
+- Iron: a formal trade-treaty with Meroë (we send linen/papyrus/glassware + pledge-grain + recognize
+  their border temples; they deliver an annual iron quota + grant our Red Sea elephant-hunters
+  passage). We are LESS iron-fragile, but still an importer — no domestic source.
+- Craft/scholarship (present-need, slow): refined torsion siege artillery; a Museum-geometer +
+  shipwright study of sail-geometry (to claw upwind off the Levant). Navy held at ~300, well-found.
+- Risk held: native grievance managed by priestly patronage + visible order; no native mass-levy.

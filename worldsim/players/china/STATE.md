@@ -26,3 +26,11 @@
 ## Posture
 - Rivals: the other warring states (Zhao, Chu, Wei, Han, Yan, Qi) — to be conquered. Steppe
   nomads (Xiongnu) raid the north. Far west = oasis rumor only. Believes itself the civilized world.
+
+## Update — 235 BC
+- After Changping we invested Handan — but a Wei–Chu relief broke the siege (~257); we took the
+  pause, held our gains, and rebuilt granary reserves rather than overextend. Zhao still stands.
+- A new young king (Zheng) now reigns under his ministers' regency. The six states are not yet ours.
+- Economy: off-season corvée extended the canals (more irrigated Guanzhong/Shu acreage) → grain base
+  grows, the foundation for the next campaigns. Granaries kept full; the army stays mobilized.
+- Diplomacy: gold to Qi/Yan (territory + time + hostages) keeps them home and watching each other.

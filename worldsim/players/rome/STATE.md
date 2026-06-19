@@ -26,3 +26,12 @@
 ## Posture
 - At war with Carthage over Sicily. Watches the Gauls (north). Knows the Greek cities + (by
   reputation only) the rich Hellenistic east incl. Egypt. No knowledge of India or China.
+
+## Update — 235 BC
+- WON the First Punic War (~241): took Sicily (first province), then Sardinia/Corsica (~238).
+  Suffered the great storm losses (255/253) — whole fleets lost — but absorbed them via deep manpower
+  and a standardized-hull rebuild program. Pop ~4.0M.
+- Fiscal: war deficit → recovering on the Carthaginian indemnity + new provincial revenue (~3,500 reserve).
+- Military: proven navy (corvus; best crews seasoned for open water); legions intact; provinces garrisoned.
+- Socii kept loyal (musters honored, not over-burdened); veteran land from Carthaginian/public land, not allies'.
+- Engineering: standardized shipyards + spare-timber stockpiles (Ostia/Messana); road south to Brundisium.
