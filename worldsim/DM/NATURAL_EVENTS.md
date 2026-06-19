@@ -157,5 +157,26 @@ plausibly perceive it.
 - Severe. Perceived: nomad herders + NW India + Han frontier. Weakened herds push more groups to
   raid/migrate south — continued pressure on India's NW frontier.
 
+## ~62 BC — Earthquake, western Anatolia (coast near Ionia)
+- Moderate-serious. Perceived: Aegean trading towns. Cracked temples/moles; a damaged port silts
+  and loses traffic for a decade. Uncounterable.
+
+## ~58 BC — Nile failure / drought, Egypt
+- Serious (regional). Perceived: Egypt. Grain prices climb in Alexandria; depleted reserves, rural
+  debt, simmering unrest 3–4 yrs. (Absorbed during the Roman Levant war.)
+
+## ~54 BC — Locust swarms, Levant/Syria → northern Mesopotamia
+- Moderate (recurring 2 seasons). Perceived: the Levant war-zone (Rome inland Syria + Egypt's
+  clients). Famine pockets, migration. (Hampered both sides' Levant campaigns.)
+
+## ~49 BC — Comet, Mediterranean into India
+- Minor. Perceived: Rome, India. Read as portent amid Rome's civil war — propaganda/prophecy fuel.
+
+## ~46 BC — Harsh winter, Gaul/northern Italy
+- Minor-moderate. Perceived: Rome/Gaul. Livestock losses, hard spring; local.
+
+## ~44 BC — Yangtze-basin floods, southern China
+- Serious. Perceived: China. Drowned paddies, displaced families, dike-repair levies, 2 lean years.
+
 <!-- next events below -->
 

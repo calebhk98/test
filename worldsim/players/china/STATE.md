@@ -88,3 +88,12 @@
 - Economy: monopolies fund the wars; ~72 BC Yellow River flood a regional drag.
 - Awareness: silk now reaches the far west via Parthian/Central-Asian middlemen; still no direct
   contact with Egypt/Rome; India known only second-hand as "Shendu."
+
+## Update — 40 BC
+- Southern Xiongnu faction SUBMITTED as tributary-vassal (~51 BC); northern remnant starved of
+  trade. Western oasis corridor consolidated; formal embassy sent toward Parthia (Anxi) — opening
+  the silk road's western end (via Parthian middlemen; still NO direct West contact).
+- Gunpowder: directed-flame + fragmentation fire-jars with reliable fuses. STILL no firearm
+  (deliberate realistic pace). Kept as guarded state secret.
+- Court: consort-clan/regent factions balanced beneath the throne; militarist state holds.
+- Economy: monopolies fund garrisons; ~44 BC Yangtze flood a regional drag.

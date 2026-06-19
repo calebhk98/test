@@ -59,3 +59,14 @@
 - And we have begun to find the hidden hand behind our enemies: the loans that arm Pontus, the
   silver that pays the pirates, run back — so our agents believe — toward Egyptian coffers. We
   cannot yet prove it, nor avenge it while our generals quarrel at home. But we will remember.
+
+## 40 BC (the Republic devours itself)
+- We conquered all of Gaul — a wealth of land, slaves, and soldiers beyond reckoning. And it was
+  our undoing: the conqueror grew too great, and turned his army on the Republic itself. He made
+  himself master, and was struck down for it, and now his heirs and rivals drown Italy in Roman
+  blood.
+- In the east we took inland Syria and the Damascus road, but the Nile-folk's fleet and walled
+  ports kept us off the coast and off Cyprus — and our great eastern expedition against the Parthian
+  horse-lords ended in massacre. We learned, too late, that Egyptian gold guided their bows.
+- We have all but proven Egypt's hand behind our wars — yet while we cut each other's throats at
+  home, we can do nothing to the Nile but hate it.

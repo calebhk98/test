@@ -1,6 +1,17 @@
 # GROUND TRUTH — DM ONLY (no player ever reads this)
 
-Current world date: **65 BC**  (started 260 BC; see TIMELINE.md for resolved turns)
+Current world date: **40 BC**  (started 260 BC; see TIMELINE.md for resolved turns)
+
+> Status @40 BC: Egypt ASCENDANT — holds the Levant coast + Cyprus (Rome holds inland Syria);
+> helped destroy a Roman army in Parthia; secretly aligned with Parthia; watches Rome convulse in
+> CIVIL WAR (over-mighty Gallic conqueror seized power, was assassinated, heirs fighting). Rome =
+> rich (Gaul conquered) but tearing itself apart; suspects/half-proves Egypt's funding but can't
+> retaliate. China = militarist Han; southern Xiongnu submitted as vassal; oasis corridor secured;
+> reaching toward Parthia from the east; gunpowder = advanced incendiary art (fragmentation fire-
+> jars, fuses), still no firearm. India = holding the coalescing Yuezhi confederation on the NW;
+> formidable cavalry; consolidated east; holds south + Sri Lanka. PARTHIA = the great hinge linking
+> the two halves of Eurasia (no direct China↔West contact yet). Contact: Egypt-Rome (war, stalemate);
+> Egypt-Parthia (secret align); China→Parthia (reaching); India↔China (only via nomad pressure).
 
 > NOTE — self-fulfilling misperception (Egypt↔Rome): Egypt OVER-attributes the rogue-general
 > invasion to all of Rome (it cannot know the Senate disavowed it) and so over-commits to funding

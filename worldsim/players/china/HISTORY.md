@@ -74,3 +74,10 @@
 - Our fire-powder we refine in secret — cleaner saltpeter, fixed measures, fire-pots flung by
   engine to burn camps and madden horses. We do not yet know how to harness its full fury, and
   we will not pretend we do.
+
+## 40 BC
+- Patience tamed the steppe: the southern horde of the Xiongnu bent the knee and became our shield
+  against their northern kin. We hold the oasis-road firm under our Protector and have sent envoys
+  far west toward the great horse-kingdom of Anxi, to open the road of silk to its end.
+- Our fire-art grows: jars that throw flame and splinters, with fuses that burn true. The full
+  mastery of it is still beyond us, and we bide our time. The realm is strong and does not soften.

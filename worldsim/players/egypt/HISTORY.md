@@ -77,3 +77,12 @@
 - Our ships push further down the Red Sea, reaching toward the spice-lands ourselves, that we may
   one day be free of the grasping Arabian brokers.
 - Alexandria is the brightest city of the world, and Egypt is rich, feared, and free.
+
+## 40 BC (the Nile rises as Rome falls)
+- Rome came for our Levant at last — and could not take it. Our fleet ruled the water and our
+  walled ports defied their legions; they won only the dry inland, never the coast nor Cyprus.
+- Better still: the gold and word we slipped to the Parthian horse-lords helped them devour a whole
+  Roman army in the eastern sands. And now, glory of glories, Rome turns its swords upon itself —
+  their great conqueror of Gaul made himself a tyrant, was murdered, and his heirs bleed Italy white.
+- We did this with silver and patience, not with our own blood. Egypt stands first among the powers
+  we know, and Alexandria's light has never burned brighter. Let Rome destroy Rome.

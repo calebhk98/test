@@ -65,3 +65,14 @@
 - Did NOT move on Egypt (no spare force; internal warlord-vs-Senate strife festers — civil-war seeds).
 - Territory/economy: provinces intact and rich; eastern war draining but winning.
 - Contact: hostile/suspicious of Egypt; none with India/China.
+
+## Update — 40 BC (rich but convulsing)
+- Conquered GAUL (huge wealth/manpower/army) — but that created an over-mighty general → CIVIL WAR
+  (~49–40 BC): the conqueror seized power, was assassinated, his heirs/rivals now fight.
+- Took INLAND Syria + the Damascus road from Egypt's clients, but FAILED to take the Levant coast
+  or Cyprus (Egypt's navy + fortified ports held); cannot cross to Egypt (no sea command).
+- DISASTER: a Roman army invading Parthia (~53 BC) was annihilated by horse-archers (Egypt secretly
+  aided Parthia). Eastern prestige wrecked.
+- Has stronger (not airtight) evidence Egypt funded its enemies — but civil war prevents retaliation;
+  it's now a factional propaganda weapon at home.
+- Territory: + Gaul, inland Syria; rich but politically shattered. Contact: war with Egypt; none E.

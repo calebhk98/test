@@ -81,3 +81,11 @@
 - Our horsemen multiply, and our riders now keep their seat with new aids of saddle and loop.
 - The south and the great island stay ours. Still the deep north sends us riddles — who drives
   these nomads down upon us? We do not know.
+
+## 40 BC
+- A greater horde gathers behind the first — the Yuezhi, knitting many clans into one fist. We did
+  not wait to be struck: we deepened the forts in the passes, kept a great mounted host in reserve
+  on our own ground, and split off lesser bands with pay and pasture to fight for us.
+- We held. We even grew — taking firm hold of the rich river-lands to our east for grain and men.
+  Our horsemen are now a match for the steppe. But the Yuezhi harden into something larger, and the
+  northern frontier will be the test of the age.

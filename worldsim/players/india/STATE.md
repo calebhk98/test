@@ -83,3 +83,13 @@
   governors rotated against warlordism.
 - Awareness: still only relayed knowledge of Egypt; vague rumor of an eastern realm; the nomads'
   ultimate cause (China's wars) remains unknown to India.
+
+## Update — 40 BC
+- Held the larger, coalescing Yuezhi confederation on the NW with deep frontier defense + a grand
+  mobile cavalry reserve; split off Yuezhi sub-bands as paid clients. Held passes, south, Sri Lanka.
+- Consolidated the eastern Ganga valley (manpower/grain). Cavalry now formidable (heavier chargers,
+  standardized riding aids, quality composite bows).
+- Internal: rotated cavalry commands (anti-warlord), audited governors, heir trained, war-tax on
+  trade/rich not the grain base.
+- Threat ongoing: the Yuezhi are hardening into a superpower-in-formation on the NW frontier.
+- Awareness unchanged (Egypt relayed; vague eastern-realm rumor).

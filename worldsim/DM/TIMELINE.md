@@ -285,3 +285,42 @@ World date advanced to: 90 BC
   link between them.
 
 World date advanced to: 65 BC
+
+## 65–40 BC — Turn (Rome–Egypt collide in the Levant; Rome convulses; inline-verified)
+- **The Levantine stalemate.** Rome sent ~6 legions to take Syria, the Damascus road, and Cyprus
+  from Egypt's clients. Rome's land power took INLAND Syria and the caravan road — but Egypt's
+  naval supremacy + heavily fortified Phoenician/Levantine PORTS ("Rome marches, we sail") held the
+  COAST and kept Cyprus contested. Result: a divided Levant — Rome inland, Egypt the coast/sea —
+  NOT the clean Roman conquest of history. Rome could not cross to Egypt (no command of the sea).
+- **Roman disaster in Parthia.** An ambitious Roman general invaded the eastern horse-empire
+  (~53 BC) and was ANNIHILATED by Parthian horse-archers — a catastrophe sharpened by Egypt's
+  secret subsidies and shared intelligence to Parthia. Rome's eastern prestige collapsed.
+- **Gaul conquered → the general Rome feared.** Rome licensed one commander to conquer Gaul (huge
+  wealth, slaves, a vast loyal army). It worked — and created exactly the over-mighty general the
+  Senate dreaded. Despite term limits and treasury-paid troops, Rome plunged into CIVIL WAR
+  (~49–40 BC): the great commander seized power, was assassinated, and his heirs/rivals fought on.
+  **Egypt's "let Rome bleed itself" strategy paid off spectacularly.**
+- **Egypt ascendant.** Held the Levant coast + Cyprus, helped engineer Rome's Parthian disaster,
+  and watched Rome tear itself apart. Absorbed a ~58 BC Nile failure from reserves. Independent,
+  rich, naval-dominant, and now arguably co-equal to a self-wounding Rome. Rome gathered STRONGER
+  (still not airtight) evidence of Egyptian funding — but, mired in civil war, could not retaliate;
+  the proof became a factional propaganda weapon inside Rome. Egypt remains unpunished.
+- **China** subdued the steppe by patience: the southern Xiongnu faction SUBMITTED as a tributary-
+  vassal shield (~51 BC) while the northern remnant was starved of trade. Consolidated the western
+  oasis corridor (garrison-farms, post-roads); sent a formal embassy toward Parthia/Anxi to open
+  the silk road's western end. Gunpowder advanced again — directed-flame & fragmentation fire-jars
+  with reliable fuses — still NO firearm. Militarist, stable. NO direct contact with Rome/Egypt.
+- **India** met the larger, coalescing Yuezhi confederation with deep frontier defense + a grand
+  mobile cavalry reserve, splitting off Yuezhi sub-bands as paid clients; held the passes, the
+  south, and Sri Lanka; consolidated the eastern Ganga valley for manpower/grain. Cavalry now
+  formidable. The Yuezhi remain a looming superpower-in-formation on the NW frontier.
+
+### Cross-awareness (TRUE)
+- **Parthia is now the great HINGE of Eurasia:** it borders Rome/Egypt's sphere (Syria) AND the
+  China sphere (Central Asia). China reaches toward Parthia from the east as Rome/Egypt touch it
+  from the west — the two halves of the world inch closer, but NO direct China↔West contact yet
+  (Parthia is the middleman, and guards that position).
+- **Egypt–Rome:** open war in the Levant (stalemated); Egypt secretly aligned with Parthia.
+- **India↔China:** still only the unseen Saka/Yuezhi link; no direct contact.
+
+World date advanced to: 40 BC

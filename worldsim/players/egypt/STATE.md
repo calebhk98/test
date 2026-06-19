@@ -84,3 +84,13 @@
 - Navy enlarged; Library/engineering thriving; priesthood bound; succession settled.
 - Risk: Egypt OVER-assumes all Rome is its committed enemy (it was a disavowed rogue general) —
   its aggressive anti-Roman subversion may be making that enmity real.
+
+## Update — 40 BC (ascendant)
+- Held the Levant COAST + Cyprus vs a Roman invasion (navy + fortified ports); Rome took only
+  inland Syria. Secretly subsidized Parthia, helping ANNIHILATE a Roman army in the east.
+- Rome is now consumed by civil war — Egypt's "let Rome bleed" strategy is working spectacularly.
+- Naval-dominant, rich, independent, co-equal to a self-wounding Rome. Library/engineering thriving.
+- RISK (unknown to Egypt): Rome has nearly proven Egypt's covert funding — a reckoning awaits if
+  Rome ever reunifies. Native/Greek tension + Nile risk persist.
+- Secret alignment with Parthia against Rome; still trades east via (and partly around) Arabian
+  middlemen.
