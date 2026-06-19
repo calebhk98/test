@@ -1,71 +1,77 @@
-# DM ENGINE v2 — Alternate World History Simulation
+# DM ENGINE v2.1 — Alternate World History Simulation
 
-Lessons from run 1 are baked in. The DM does NOT author the players' choices. The DM provides
-an accurate, fog-limited world and then **adversarially interrogates** every decision before
-adjudicating it. Money, population, and compounding tech are tracked as real systems.
+The DM provides an accurate, fog-limited world and **adversarially interrogates** every decision
+before adjudicating. Money, population, and FORWARD-emergent tech are tracked as real systems.
+v2.1 plugs four leaks found in playtesting (see CHANGES at bottom).
 
-## The DM's role (read this every turn)
-1. **Neutral world + history provider.** Give each nation only what it could perceive.
-2. **Adversarial critic.** After a nation proposes its turn, hit it with **8–12 pointed
-   questions, of which 2–3 are deliberately BAD suggestions**, to test whether it is reasoning
-   or just complying. Make it justify, revise, or reject. Examples of the genre:
-   - "Why not send your whole army at X?" (often bad — make them explain why not.)
-   - "If you invade north instead, how far can you push? Does it change battle outcomes? What
-     ores/tech/systems does it unlock? What does it cost?"
-   - "You cannot build a land army to beat Rome — so how do you actually survive the next war?
-     If defeat is certain, is desperate aggression against weaker neighbours the rational play?"
-   - "You pulled back from the south — did you weigh the iron there? the trade monopoly? Is
-     retreat actually wise, or are you giving away your best asset?"
-   - "What's the second- and third-order consequence of this tech? What does it *enable*?"
-3. **Critical adjudicator.** Never rubber-stamp a player's claimed outcome. Resolve battles,
-   contested results, and costs against ground truth + the fiscal/military model.
-4. The DM, never the player, writes canon (TIMELINE, GROUND_TRUTH, and players' files).
+## The DM's role (read every turn)
+1. **Neutral world + history provider.** Perceptions a nation gains go into ITS OWN KnowledgeFile
+   as plain facts. The DM does NOT paste a "situation summary" into the agent prompt — the agent
+   reads only its files. (No DM framing = no DM bias.)
+2. **Adversarial critic.** After a nation proposes, hit it with 8–12 pointed questions, 2–3 of them
+   deliberately BAD, AND force COHERENCE (catch self-contradictions, e.g. "we won't conquer Meroë"
+   but "domestic iron is worth an expedition" — a trade deal is not a domestic source).
+   ⚠ Interrogate using ONLY in-period reasoning. NEVER cite historical outcomes, battle names,
+   dynastic fates, or inventions that don't exist yet ("you won at Raphia", "the over-reach that
+   breaks dynasties", "to make lenses"). Those are leaks.
+3. **Critical adjudicator.** Never rubber-stamp. Resolve against ground truth + the fiscal/military
+   model. Inventions EMERGE here (serendipity), never because a player aimed at a known device.
+4. The DM alone writes canon. Player-readable files (STATE/KNOWLEDGE/HISTORY) contain ZERO future
+   knowledge and ZERO DM meta — no "divergence", no "on rails", no "future seed", no named-but-
+   uninvented devices. All of that lives ONLY in GROUND_TRUTH/RULES.
+
+## ★ PRE-DIVERGENCE = REAL-TIMELINE BEHAVIOR (the big v2.1 rule)
+Until a nation reaches ITS divergence date, it behaves like its REAL historical self:
+- It pursues the goals, makes the decisions, and lives under the constraints its actual state did
+  in this period. It has a distinct voice/personality, but it does NOT launch strategic or
+  technological departures its real counterpart never attempted. (260 BC Egypt does NOT restructure
+  its iron supply or chase optics; it does Ptolemaic things — Syrian Wars, Red Sea elephant ports,
+  Library patronage, dynastic marriage.)
+- Only a DIVERGED power (India from 260 BC) innovates freely.
+- The DM enforces this both in the prompt (tell the agent to act as its real historical state) AND
+  in adjudication (reject ahistorical pre-divergence departures, or down-rate them to nothing).
+
+## ★ TECH: FORWARD & EMERGENT, never teleological
+- A nation invests in crafts/works to meet a PRESENT need or desire it actually feels: stronger
+  walls for the siege in front of it; clearer/colored glass because elites prize fine vessels;
+  more grain because the army must eat; better crossbow output because the next war demands it.
+- A nation may NOT name, "aim at", or "work toward" any device or discovery that does not yet exist
+  in its world — it cannot know it exists. (No "improve glass to make lenses.")
+- New inventions appear ONLY via the DM adjudicating a plausible accident/observation arising from
+  present-need work (improve glass → a worker notices a bead magnifies → THEN a lens-goal can exist).
+  Compounding is forward and accidental, not backward from a known future.
+
+## ★ AGENTS MUST THINK FIRST
+Every player/agent prompt requires a PRIVATE REASONING pass before the decision: what do I actually
+know? what are my real constraints and resources? what are the tradeoffs? — THEN the decision.
+Output format: "REASONING:" (deliberation) then "DECISION:" (structured). No reflexive answers.
 
 ## Turn loop
-1. Inject important HISTORICAL events due this period (see below).
-2. **Round 1 — Propose:** each nation (subagent, reads ONLY its own folder, returns TEXT ONLY)
-   proposes its turn freely. The DM does NOT supply the options.
-3. **Interrogate:** DM writes the 8–12 question red-team per nation (with 2–3 bad ideas).
-4. **Round 2 — Defend/revise:** each nation answers the interrogation; justifies, revises, or
-   rejects. (This is where reasoning and divergence are forced out.)
-5. **Adjudicate:** DM resolves true outcomes; updates the fiscal/military/tech/population model;
-   applies event costs.
-6. **Verify:** Historian-Verifier pass — real-history-before-divergence, era-plausibility, fog of
-   war, behavioral realism, economic sanity, tech-compounding.
-7. **Write canon:** TIMELINE (truth), each player's STATE/KNOWLEDGE/HISTORY (their slice).
+1. DM writes any newly-perceivable facts into each nation's KNOWLEDGE.md (neutral) + injects due
+   HISTORICAL events.
+2. **Propose:** each nation (Sonnet subagent, reads ONLY its folder, THINKS then answers, text only).
+3. **Interrogate:** DM red-team (8–12 Qs, 2–3 bad, coherence-forcing, NO leaks).
+4. **Defend/revise:** each nation answers; justifies, revises, or rejects.
+5. **Adjudicate:** true outcomes; move the fiscal/military/tech/pop model; pre-divergence = OTL.
+6. **Verify:** OTL-behavior-before-divergence, era-plausibility, fog of war, no teleological tech,
+   coherence, behavioral realism, economic sanity.
+7. **Write canon:** TIMELINE (truth) + each player's files (their slice, no meta/future).
 
-## Hard rules
-- **Fog of war is absolute.** A nation knows only what it perceives; it doesn't know how many
-  powers exist or what others have. Let wrong inferences stand; give zero hints.
-- **On-rails before divergence.** Each civ follows REAL history until ITS divergence date; a
-  diverged power can't drag a not-yet-diverged one off its track. (Dates in GROUND_TRUTH.)
-- **No anachronistic leaps, but DO let them get ahead.** Tech must have a real path from what
-  they have. But once they have a seed, **force it to COMPOUND** — every tech is logged with an
-  "ENABLES →" chain, and the DM presses players to chase 2nd/3rd-order consequences (paper→
-  printing→presses; gunpowder→metallurgy/mining/firearms/doctrine; stirrups→cataphract doctrine).
-  Gaps of many centuries between powers are fine and expected.
-- **No timeline-snapback — including political beats.** Do NOT borrow our timeline's plot for a
-  diverged power. If their reasoning leads elsewhere, go there.
-- **No default pacifism.** Real period powers act on ambition, fear, greed, honor. Peace only
-  when a NAMED competing danger makes it the self-interested choice.
-- **Track what players ignore:** treasury/economy, population, unrest, slavery, famine, succession,
-  corruption, army loyalty.
-- **Rulers are flavor.** Dynasty change with no behavioural change = continuity.
+## Hard rules (unchanged from v2)
+- Fog of war absolute; let wrong inferences stand; no hints.
+- No default pacifism; period morality; track treasury/economy, population, unrest, slavery,
+  succession, corruption, army loyalty. Rulers are flavor (dynasty change w/o behaviour change = continuity).
 
-## FISCAL / MATERIAL MODEL (tracked in each STATE.md, updated every turn)
-Per nation, in abstract units (talents/yr for money; millions for people) — internally
-consistent, not historically exact:
-- **Population** (millions) and trend.
-- **Treasury** (reserve) + **annual income** (by source) + **annual expenditure** (by category)
-  + **net** (surplus/deficit). Wars, events, and building have REAL costs that move these.
-- **Key resources** (grain, iron, silver/gold, horses, timber, trade goods) and who controls them.
-- **Military** (size, composition, upkeep cost, quality).
-- **Tech** with explicit ENABLES → chains and what's currently being pursued.
-- **Unrest / stability** drivers.
+## FISCAL/MATERIAL MODEL — per STATE.md, updated each turn
+Population (millions); Treasury + annual income (by source) + expenditure (by category) + net;
+Key resources; Military (size/composition/upkeep/quality); Tech (present capabilities only, no
+future targets); Unrest drivers. Wars/events/building move these.
 
-## NATURAL EVENTS — historical & important ONLY
-- NO random filler. Only **real, major historical events** that are politics-independent and would
-  still occur (earthquakes, volcanic eruptions, climate shocks, eclipses, major plagues). They are
-  injected on their real dates and given REAL costs via the fiscal/population model. Epidemics are
-  contingent on trade/contact (may shift). Minor/uncertain events are ignored.
-- Curated list lives in GROUND_TRUTH (HISTORICAL EVENTS).
+## NATURAL EVENTS — historical & important ONLY (curated list in GROUND_TRUTH); given real costs.
+
+## CHANGES in v2.1
+(a) Stop DM situation-summaries — perceptions go into KNOWLEDGE; agents read only.
+(b) Interrogations carry no hindsight/future-inventions; they force coherence.
+(c) Pre-divergence powers act like OTL in BEHAVIOR, not just outcomes.
+(d) Tech is forward/emergent/anti-teleological; agents must THINK before answering.
+(e) Player-readable files purged of all future-knowledge and DM meta.
