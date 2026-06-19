@@ -1,0 +1,152 @@
+# EGYPT — STATE (as of 260 BC)
+
+- Government: Ptolemaic monarchy (Greek-Macedonian ruling caste over native Egyptians)
+- Capital: Alexandria
+- Ruler: Ptolemy II Philadelphus
+- Population: ~7 million (Nile valley + delta)
+- Economy: Very strong — grain surplus exports, papyrus monopoly, Red Sea & Med trade,
+  state-controlled agriculture. Treasury full.
+- Military: Large navy (Mediterranean dominance), Macedonian-style phalanx, mercenaries,
+  war elephants (African).
+- Technology: Leading natural philosophy/mathematics/engineering (Alexandria), advanced
+  shipbuilding, irrigation, medicine, papyrus.
+- Tech tier: HIGH (Hellenistic scientific frontier)
+- Unrest: Low-moderate. Native Egyptian underclass resentment simmering beneath Greek elite.
+- Slavery: Yes, widespread (household, mines, agriculture).
+- Stability: High under Ptolemy II.
+
+## Update — 240 BC
+- Population: ~7.3M. Economy: still very strong; new Nubian gold + Red Sea trade ports;
+  Faiyum reclamation expanding arable land. Locust year caused a minor, absorbed shortfall.
+- Territory: held core + most coastal/Aegean network (lost a few Aegean footholds to
+  Seleucids); gained lower Nubia influence and Red Sea ports.
+- Military: navy intact and dominant; some attrition in the Syrian war.
+- Unrest: Low-moderate; temple-building and priesthood patronage easing native resentment.
+- Tech: incremental gains — screw/geared water-lifting, larger polyremes, better torsion
+  artillery, systematic Red Sea cartography.
+- Not aware: that Maurya merchant-spies observed Alexandria.
+
+## Update — 220 BC
+- Population: ~7.4M (slowed by lean Nile years). Economy: still very strong overall but
+  dented by a Nile flood-failure (~235 BC) — grain shortfall, high prices, drawn-down reserves.
+- Unrest: RISING among native Egyptians over bread prices (watch this).
+- Territory: Aegean/coastal network held/recovered vs Seleucids; Red Sea/Nubian trade extended.
+- Diplomacy: FORMAL CONTACT established with India (mutual embassies); cordial trade with Rome.
+- Tech: incremental naval, artillery, water-lifting, navigation gains.
+- Now aware India is a real great power; still unaware it was earlier spied upon.
+
+## Update — 190 BC (CORRECTED — pre-204 BC on real-history rails; divergence just activating)
+- Population: ~7.5M (recovering after revolt years). Economy: strong; recurring Nile failures
+  a structural risk. Eastern trade is relayed via Arabian middlemen (NO direct India sea-artery).
+- Territory: holds core + Levant/Coele-Syria (Raphia-era victory vs Seleucids); Upper Egypt
+  revolt (from ~206 BC) being suppressed; resentment persists.
+- Divergence (~204-194 BC): longer stable rule → skips regency crisis, stays independent
+  (begins to apply now; no historical decline).
+- Military: phalanx + large permanent native machimoi corps + dominant navy + elephants (real).
+- Unrest: native-Egyptian grievance now a permanent background factor (bread/tax/ethnic).
+- Tech: real Ptolemaic/Alexandrian science; NO wootz industry. Aware of India via envoys (real).
+- Diplomacy: friendly with Rome (real historical amity); war footing vs Seleucids.
+
+## Update — 105 BC (divergence active; strong independent kingdom)
+- Government: stable Ptolemaic monarchy, clean adult successions (divergence: no regency crisis,
+  no deep decline). Independent — did NOT drift into Roman clientage.
+- Territory: core Egypt + Coele-Syria/the Levant (HELD vs Antiochus III in the 5th Syrian War —
+  divergence: stable adult king, no regency collapse) + Cyrenaica/Cyprus/Aegean network. The
+  Seleucid collapse (post-Magnesia) left Egypt the dominant eastern-Med power; survived Antiochus
+  IV's later probe (~168) with Roman diplomatic backing.
+- Population: recovered/growing; Alexandria a world center of science.
+- Economy: very strong (grain, papyrus, trade); recurring Nile-failure risk persists.
+- Unrest: native-Egyptian grievance remains a structural background factor.
+- Military: phalanx + native machimoi + dominant navy + elephants.
+- Tech: thriving Alexandrian science/engineering (real). NO anachronisms.
+- WATCH: Rome is now the Mediterranean hegemon and "friendly" — a friendship of convenience.
+  (Rome's ~100 BC attempt on Egypt is coming — Egypt does NOT know this.)
+
+## Update — 90 BC (REPELLED ROME; now adversaries)
+- Repelled a Roman invasion (rogue-general expedition) at the Delta — major prestige; navy +
+  combined Greek/native army validated on home ground.
+- Foreign policy: Rome is now an ENEMY. Egypt has EMBARGOED papyrus to Rome and is funding
+  Rome's western distractions/rivals.
+- Territory: unchanged and intact (core + Levant + Cyprus/Cyrenaica/Aegean network).
+- Economy: very strong; absorbed a ~101 BC Nile failure from reserves; papyrus now a weapon, not
+  just an export.
+- Unrest: native grievance still structural but the shared victory over Rome buoyed loyalty.
+- Military: enlarged fleet; fortified inland granaries; native/Greek units mixed against mutiny.
+- Tech: Alexandrian science thriving (real-grounded; no anachronism).
+- Divergence fully active: independent, strong, and now a great-power rival to Rome.
+
+## Update — 65 BC
+- Expanded as the Seleucids collapsed: took Coele-Syria's PORTS, the Damascus caravan road, secured
+  Cyprus, and set up paid client petty-kings in Syria as a buffer (no costly annexation).
+- Funds Rome's enemies (Pontus, pirates) deniably — keeping Rome distracted. (Unaware Rome is
+  partially tracing the silver.)
+- Began more DIRECT Red Sea/monsoon voyages east to cut Arabian middlemen (gradual progress).
+- Navy enlarged; Library/engineering thriving; priesthood bound; succession settled.
+- Risk: Egypt OVER-assumes all Rome is its committed enemy (it was a disavowed rogue general) —
+  its aggressive anti-Roman subversion may be making that enmity real.
+
+## Update — 40 BC (ascendant)
+- Held the Levant COAST + Cyprus vs a Roman invasion (navy + fortified ports); Rome took only
+  inland Syria. Secretly subsidized Parthia, helping ANNIHILATE a Roman army in the east.
+- Rome is now consumed by civil war — Egypt's "let Rome bleed" strategy is working spectacularly.
+- Naval-dominant, rich, independent, co-equal to a self-wounding Rome. Library/engineering thriving.
+- RISK (unknown to Egypt): Rome has nearly proven Egypt's covert funding — a reckoning awaits if
+  Rome ever reunifies. Native/Greek tension + Nile risk persist.
+- Secret alignment with Parthia against Rome; still trades east via (and partly around) Arabian
+  middlemen.
+
+## Update — 10 BC (fortifying north, lunging south)
+- Rome has REUNITED under a strongman-monarch — a renewed grave danger. Egypt fortified Alexandria/
+  Pelusium/Cyprus (walls, harbor chains), built swift ramming fleets, deepened the quiet Parthia
+  alignment, and sent denials + gifts to Rome's new master while still funding Roman malcontents.
+- SOUTHERN EXPANSION (strategic depth vs a returning Rome): pushing up the Nile into Nubia/Kush,
+  fortifying Red Sea ports, planting bases down the African (Red Sea/Horn) coast.
+- ⚠ OVEREXTENDED: thin southern garrisons, long supply lines, friction with African peoples,
+  fiscal strain (worsened by a ~33 BC Nile failure). A real new vulnerability.
+- Internal: priesthood bound (Pharaonic rites), single heir named, army paid/rotated.
+- Naval-dominant, rich, independent — but now stretched between a northern threat and a southern frontier.
+
+## Update — 20 AD (overstretch corrected)
+- HALTED the reckless southern lunge: pulled back to a defensible line (lower Kush, Nile cataracts,
+  2–3 supply-able Red Sea ports); converted thin African garrisons to tribute/client-treaties (gold,
+  not occupation); massed freed troops NORTH vs Rome's proxies.
+- Held the Parthia alliance (out-bid Rome); bought into Nabataean/Judaean courts; funded Rome's
+  northern (Germanic) malcontents deniably; pushing direct monsoon sailing toward India.
+- Now a consolidated two-front power: northern shield + sustainable African/Red Sea dominion.
+- Internal: native tension eased (Pharaonic patronage, native officers); single heir groomed;
+  Library/Museum lavishly funded; ~5 BC Nile failure absorbed.
+
+## Update — 50 AD (held off Rome's navy; secured iron + Red Sea income)
+- ROME ATTACKED BY SEA and was repelled: it took only a contested foothold on Cyprus and sacked
+  some coastal towns; Egypt's harbor-fortresses, ramming fleet + fire-ships, a storm, and Parthia's
+  attack on Rome's eastern frontier forced Rome to suspend the campaign. Egypt bloodied but holds
+  the sea. Egypt–Rome now an OPEN, ongoing war.
+- STRATEGIC RE-VALUATION of the south: HELD the Kushite/Meroitic IRON belt (military-industrial
+  base — more/better iron weapons) and CONTROL of the Red Sea trade (near-monopoly on incense/
+  spice/Indian-Ocean income). The south is now an asset, not a drain. (Arabian/Horn coasts only
+  chokepoint-dominated, not owned.)
+- Parthia alliance active (fighting Rome's east). Navy dominant; war economy boosted by southern
+  iron + Red Sea revenue. Native machimoi loyal; heir secure; Library thriving.
+- ~27 AD Nile failure absorbed; ~44 AD Levant/Cyprus storm hurt both fleets.
+
+## Update — 75 AD (won Cyprus back, lost the Parthian shield)
+- RETOOK the contested Cyprus foothold from Rome (sea offensive while Rome rebuilt); raided Rome's
+  Cilician/Cyprus supply. Master of the eastern sea; iron-armed forces; Red Sea income strong.
+- SETBACK: despite our gold/iron/grain, PARTHIA pulled back from the war with Rome (it faces some new
+  trouble on its own far frontier and made a truce with Rome). We now face Rome with far less land-
+  support — our great vulnerability. (We do NOT know the true cause of Parthia's distraction.)
+- Rome shifted to commerce-raiding our grain/silver lanes + rebuilding slowly. Our south (Kush iron +
+  Red Sea monopoly) underwrites the war. Heir secure; priesthood/native officers loyal; ~58 AD Nile
+  failure absorbed.
+
+## Update — 100 AD (held the core, lost the Levant)
+- Rome, freed of Parthia and with a better fleet, came again in force (~90–100 AD) while we were
+  famine-weakened (82 AD Nile failure). It TOOK Cyprus and several Levant coastal ports from us. But
+  our navy, the Delta marshes, fire-ships, and iron-armed machimoi kept Rome OFF Egypt itself.
+- We remain INDEPENDENT and a great power: Egypt proper + the Kushite-iron belt + the Red Sea trade
+  monopoly + our African dominion. The sea is contested now, not ours alone. A long bipolar war with
+  Rome settles in.
+- Built a 2nd fleet, fortified ports, 3-yr inland grain reserves; courted Parthia back (failed for now);
+  re-funded Rome's internal malcontents; feelers to India for overland trade insurance.
+- Internal: native goodwill spent on concessions (native officers, tax remission, temple endowments);
+  heir invested at Alexandria + Memphis; Library = our strategic edge.

@@ -1,53 +1,11 @@
-# INDIA — KNOWLEDGE (what we, the Maurya, believe; may be wrong or incomplete)
+# INDIA — KNOWLEDGE (what we, the Maurya, believe; may be wrong/incomplete)
 
 We do not know how many powers exist in the wider world.
 
-## What we know
 - We rule most of the subcontinent. Kalinga is freshly conquered and resentful.
-- To our northwest lie the lands of the Yavanas (Greeks) — the successor kingdoms of
-  Alexander, including a great realm to the far west by the Nile (Egypt) reputed rich
-  and learned. We have had envoys and trade with the Hellenistic world.
-- Across the seas to the west: Arabian and Egyptian traders buy our spices, cotton,
-  and gems.
-- To the south: Sri Lanka and Tamil polities.
-- To the east and northeast: forest peoples, and beyond, lands we know only by rumor.
+- Northwest: the lands of the Yavanas (Greeks) — Alexander's successor kingdoms, including the
+  Seleucid neighbor and, far west by the Nile, rich and learned Egypt. We have exchanged envoys.
+- West by sea: Arabian and Egyptian traders buy our spices, cotton, gems, and steel (relayed trade).
+- South: Sri Lanka and the Tamil polities. East/NE: forest peoples and rumor beyond.
 
-## Open questions / suspicions
-- The Yavana kingdom by the Nile (Egypt): now seen with our own merchants' eyes. Immensely
-  rich; a giant tower of light guards its harbor; self-moving machines lift water; a great
-  "house of scrolls" holds foreign sages — we judge it a treasure-temple of secret knowledge.
-  Their rulers are Yavana (Greek) over a native people. We could not learn how their machines
-  or their learning truly work. (Belief — UNCONFIRMED, possibly mistaken.)
-- We do not know how strong their army is, nor what lies between us and them by land.
-
-## Update — 240 BC
-- South: Deccan/Tamil polities now tributary clients; the southern island raided, not held.
-- Heartland weakened this decade by flood and disease; recovery underway.
-
-## Update — 220 BC
-- Egypt confirmed by our own embassy: fabulously rich, dominant at sea, fields war-elephants
-  like us, lives on grain. Ruled by Yavanas from a great coastal city. We STILL do not know
-  how their water-machines or scroll-house work (we judge the latter a treasure-temple), nor
-  the size/strength of their land army, nor what powers lie on the land route between us.
-- We have begun imitating what we saw — water-lifting wheels, a beacon tower, bigger ships,
-  scholar-houses — built our own way, since we never learned their methods.
-- Southern clients stable and paying; NW frontier secured.
-
-## Update — 20 AD
-- We have pushed the Yuezhi back and taken much of near-Bactria and the mountain chokelands. Our
-  stirrup-riders are the equal of any steppe horseman.
-- THE NORTHERN REALM: our scouts beyond Bactria now bring back more than rumor — there is, far to
-  the northeast beyond the deserts and mountains, a VAST and ORDERED empire, immensely populous and
-  warlike, whose pressure on the steppe peoples drives the nomads down upon us. We have not seen it,
-  do not know its name or true nature, and the road to it is long and held by nomads and oasis-kings.
-  But it is REAL. (Belief — unconfirmed in detail.)
-- We have heard, too, that this realm trades a precious thread (silk) westward.
-
-## Update — 50 AD (FIRST CONTACT with the northern realm)
-- Our mission reached it. The great northeastern empire is REAL and immense — a vast, ordered, warlike
-  realm holding the oasis-roads of the far north with garrisons and client-kings; the people of silk.
-  We met its frontier-men as one empire greets another. We do not yet know its full strength, its
-  capital, or its intentions — and our picture is surely incomplete — but it is no longer a rumor.
-- It is almost certainly the source of the storms of horsemen that break upon our NW: its distant wars
-  drive the nomads onto us. A power to respect, to watch, and perhaps to treat with — or to fear.
-- We held the great new nomad wave this turn, bending at the edges but holding our core.
+Open questions: none recorded yet.
