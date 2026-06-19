@@ -31,3 +31,17 @@
 ## Posture
 - Rival: Seleucids (Syrian Wars). Aware of Carthage, Rome (distant), Nubia/Kush, and a vast eastern
   spice-empire ("India") reached via middlemen.
+
+## Update — 235 BC
+- Ruler: Ptolemy III now (succeeded Ptolemy II). Population ~7.1M.
+- Fiscal: treasury ~45,000 (grew); Third Syrian War (246–241) brought booty + Levantine standing.
+  Income ~15,000; expenditure ~12,000 (navy held sacrosanct; Red Sea squadron + southern expedition
+  added). Net ~ +3,000.
+- Military: navy still dominant; Levant network held/strengthened vs Seleucids; African war-elephant
+  supply improved via southern (Kush-ward) contact.
+- Resources: iron STILL largely imported (the Kush iron-supply deal is only *begun*, not delivered).
+- Tech (banked, ENABLES chains): glassmaking improvement underway → (future) clear glass → optics/
+  lenses; torsion-artillery standardization → stockpile/repair/arm-clients faster.
+- Priorities held: Syrian ports > Red Sea route > Kush coercion-treaty > artillery standardization;
+  optics + big irrigation DEFERRED. Papyrus monopoly = guard against any substitute (suppress, hedge).
+- Note: Egypt's great divergence (surviving the 204 BC succession) is still ~30 yrs away — on rails.

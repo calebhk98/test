@@ -27,3 +27,15 @@
 ## Posture
 - Rivals: the other warring states (Zhao, Chu, Wei, Han, Yan, Qi) — to be conquered. Steppe
   nomads (Xiongnu) raid the north. Far west = oasis rumor only. Believes itself the civilized world.
+
+## Update — 235 BC
+- SETBACK: the drive on Zhao FAILED at Handan (~257 BC) to a Wei–Chu relief coalition — the exact
+  risk the council named. Qin consolidated rather than broke; King Zheng (future first emperor)
+  acceded ~246 BC as a boy (regency under Lü Buwei). No unification yet.
+- Economy: GREAT HYDRAULIC WORKS completed/underway — Dujiangyan (Shu) + the Zhengguo canal (~246) —
+  hugely expanding the grain/tax base (the foundation for future conquest). Granary 3-yr buffers kept.
+- Military: mass crossbow infantry + siege intact; northern frontier held by walls + penal colonies
+  (no steppe war). Veteran land-grants used as a pressure valve.
+- Tech (ENABLES): hydraulics → grain surplus → sustained war machine; standardized crossbow triggers.
+  Court alchemy funded MODESTLY (elixir-chasing; saltpeter noted, NO known use) — seed only.
+- On rails until ~100–95 BC (China's divergence = gunpowder + permanent militarism).

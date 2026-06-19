@@ -27,3 +27,15 @@
 ## Posture
 - At war with Carthage (Sicily). Watches Gauls (north). Knows Greek cities + (by reputation) the
   rich Hellenistic east incl. Egypt. No knowledge of India/China.
+
+## Update — 235 BC
+- WON the First Punic War (~241 BC): took Sicily (first province), then Sardinia/Corsica (~238).
+  Ate the 255 BC storm catastrophe (a generation of ships lost) — absorbed via manpower + rebuild.
+- Population ~4M (deep reserve intact). Fiscal: deep war deficit → relieved by the Carthaginian
+  indemnity + Sicilian/Sardinian revenue; treasury back to a small positive (~3,500). Income rising
+  with the new provinces.
+- Military: proven navy (corvus lowered in transit/storms now); legions intact; provinces garrisoned.
+- Socii: citizenship promised to loyal communities (conditional but publicly bound — a real future test).
+- Tech (banked, ENABLES): standardized hull-sections → shipbuilding industry → merchant marine +
+  faster future fleets (state to tax sea-lanes after the war). Military roads toward Ariminum begun.
+- On rails until ~100 BC (Rome's divergence = the failed Egypt attempt → paper).

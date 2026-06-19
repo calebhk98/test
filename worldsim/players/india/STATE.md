@@ -29,3 +29,18 @@
 - Holds most of the subcontinent. DIVERGENCE: Ashoka keeps conquering (no remorse, no Buddhism);
   the militarist state will not fall. Aware of the Yavana (Greek) west incl. Egypt by name (envoys),
   Seleucid neighbor, Sri Lanka, Tamil south; trade west is RELAYED via middlemen.
+
+## Update — 235 BC (two compounding programs launched)
+- Population ~30M. Kalinga consolidated CHEAPLY (local elite co-opted as functionaries; harsh
+  punishment reserved for organized revolt) — less garrison drain. Tamil polities + Sri Lanka pushed
+  toward TRIBUTARY status by naval demonstration (not occupied).
+- Fiscal: income ~18,000-equiv (+ Kalinga port revenue + new tribute); big outlays this turn (wootz
+  re-equip + cavalry program + eastern fleet) but funded by the huge tax base; treasury still large.
+- ★ TECH/MILITARY COMPOUNDING:
+  - WOOTZ STEEL turned strategic: re-equipping the 600k infantry with superior blades; **export
+    restricted to deny the Seleucids.** (ENABLES → battlefield edge; later: tools→farm output→tax.)
+  - CAVALRY PROGRAM launched: **Punjab royal stud-farms + diplomatic horse-imports** — fixing the
+    one fatal weakness while rich/at peace (matures over a generation; aim ~double cavalry).
+- Governance: **Mantriparishad institutionalized** (treasury seals, council-rotated garrison
+  commanders, self-reinforcing anti-partition decree) → succession-fragmentation risk reduced.
+- Diverged since 260 BC — acting freely (era-plausible).
