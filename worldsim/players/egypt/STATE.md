@@ -45,3 +45,12 @@
 - BUT the armed, emboldened natives have triggered a revolt in Upper Egypt (the Thebaid) — a breakaway
   pharaoh at Thebes (~206). The south is in revolt; the north and the sea remain firmly held.
 - Pop ~7.2M; treasury still strong but now bearing a counter-insurgency in the south.
+
+## Update — 170 BC (revolt crushed; a strong independent peer)
+- The Thebaid revolt was CRUSHED and Egypt re-unified by ~185 BC — Macedonian/mercenary army + Nile
+  river-siege artillery + splitting the Amun priesthood from the rebels (restored temple revenues).
+- The king (Ptolemy IV) has reigned long and stably — no succession crisis, no foreign partition of
+  our lands. We held Coele-Syria + Cyprus and did NOT provoke the westward-looking Seleucid.
+- Pop ~7.3M; treasury drawn down by the war, now recovering on grain/papyrus/Red Sea customs +
+  the Meroë iron treaty. We are a strong, independent Hellenistic great power — not in decline.
+- Watching the new western power (Rome), now master of the west after destroying Carthage.

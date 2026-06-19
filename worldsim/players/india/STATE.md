@@ -53,3 +53,13 @@
   re-equip continues at the sustainable ~80–100k/yr. Conditional succession PUBLISHED (viceroy-prince
   heir; brothers keep governorships for life) — defection incentive removed.
 - Standing weakness unchanged: the cavalry is held back, not yet battle-seasoned.
+
+## Update — 170 BC
+- The Bactrian Greek kings probed our NW passes; we HELD them — deepened defense-in-depth (second-line
+  staging posts funnelling any breakthrough into elephant-and-steel ambush) + envoys/gifts to buy time.
+  The Punjab was NOT overrun; the Greeks stay penned in the mountains.
+- Our cavalry got its first real blooding in a limited action against a Bactrian probe — seasoning has
+  begun, though it is still not a match for them in open field. Mare supply diversified toward steppe
+  and Arab sources as the old Seleucid channel grew unreliable.
+- Wootz re-equip well advanced (much of the infantry now steel-armed). Pressed far-southern Tamil
+  holdouts for more tribute/war-elephants. Pop ~32M; succession stable; Kalinga held.

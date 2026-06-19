@@ -80,3 +80,46 @@ World date → 235 BC.
   south. Rome ~3.7M, treasury melted by the war but winning. China: unified then convulsed — Chu–Han war.
 
 World date → 205 BC.
+
+## 205–170 BC — Turn 3 (Egypt diverges & goes live; India live; Rome's EAST now contingent)
+- **EGYPT (divergence fires, 204 BC).** Ptolemy IV lives on — NO child-regency, NO Fifth Syrian War.
+  Egypt threw its full weight at the Thebaid: a Macedonian-core + mercenary pacification army (NO
+  further native arming), Nile-borne river-galleys + siege artillery reducing the rebel Nile towns in
+  sequence (Ptolemais → Lycopolis → Thebes; ~4–6 yrs of siege-work). By ~185 BC the revolt was CRUSHED
+  and Egypt re-unified — exactly what its stable throne made possible. Held Coele-Syria + Cyprus; did
+  NOT provoke the (battle-hardened, westward-looking) Seleucid. Egypt emerges a STRONG, INDEPENDENT
+  Hellenistic great power — the OTL decline averted.
+  [RED-TEAM (real defend round): Egypt REJECTED striking east — Antiochus III is NOT weak (fresh off
+  his Anabasis); attacking him hands him a pretext to crusade against Egypt while the Thebaid hardens.
+  The priest-deal was reframed coherently: Ptolemy IV had cut temple revenues to fund Raphia, so
+  RESTORING them is correcting his own error — royal piety/Ma'at issued FROM STRENGTH (early), the
+  usurper given NO mercy → precedent is "piety rewarded, armed rebellion crushed," not "revolt pays."]
+- **INDIA (live).** The Greco-Bactrian kings probed the NW passes (the OTL Indo-Greek invasion era).
+  India met them with DEEPENED defense-in-depth (second-line staging posts funnelling any breakthrough
+  into elephant-and-steel ambush) + envoys/gifts to buy time + diversifying its strained mare supply
+  toward steppe/Arab sources. CONSEQUENCE (divergence): the militarist, steel-armed Maurya with
+  prepared passes HELD — the Indo-Greek conquest of NW India that happened in OTL is BLUNTED; the
+  Bactrian Greeks stay penned in the mountains, the Punjab is NOT overrun. India also pressed the far-
+  southern Tamil holdouts for more tribute/elephants.
+  [RED-TEAM (real defend round): India answered the danegeld charge — gifts work only paired with
+  visible teeth (the Bactrians were ALREADY bled at the passes), and are trade-goods not soldiers; it
+  rejected a decisive battle on the Bactrians' open-Punjab ground. It set a concrete 3-PHASE cavalry-
+  seasoning plan (pursue beaten columns → flank-screen elephant engagements → a field action only on
+  ground of its own choosing). It was HONEST that its alternate mare routes (steppe via Taxila, Arab
+  Gulf) are THIN — cavalry growth is genuinely supply-constrained and could stall if channels close.]
+
+### OTL powers
+- **ROME (west OTL; east now divergent).** Won the Second Punic War (Zama, 202) → western hegemon.
+  Still checked Macedon (~200–197, Philip's Aegean aggression + Rhodian/Pergamene appeals) and
+  proclaimed "freedom of the Greeks." BUT the OTL Seleucid showdown is now CONTINGENT — with Egypt
+  strong and Antiochus rebuffed in the east, the path to a Magnesia-style war is no longer scripted;
+  it will be shaped by the live Egypt's choices. (Rome's own divergence proper is still ~100 BC.)
+- **CHINA (OTL).** The Chu–Han war ended (202) → the HAN dynasty founded (Gaozu); early-Han recovery
+  and consolidation (Gaozu → Empress Lü → Wen), heqin appeasement of the Xiongnu after Baideng (200).
+
+### Fiscal/pop @170 BC
+- Egypt ~7.3M, treasury drawn down by the southern war but recovering; re-unified & independent.
+  India ~32M, holding the NW, cavalry slowly seasoning. Rome: western hegemon, treasury recovering
+  on indemnities/provinces. China: Han, recovering, populous.
+
+World date → 170 BC.

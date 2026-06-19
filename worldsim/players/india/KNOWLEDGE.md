@@ -15,3 +15,10 @@ Open questions: none recorded yet.
   and, rumor says, may one day march east toward our northwestern passes as Alexander once did.
 - Our cavalry slowly improves from the mares we buy and breed; our infantry, wave by wave, takes up
   the new steel. The south is quiet and pays; Kalinga is held.
+
+## ~185 BC — what we now perceive
+- The great western Yavana king was broken by a hard new power risen far in the west, and his empire
+  reels. His governors in the mountains north of our passes (Bactria) have thrown off his rule and made
+  their own Greek kingdoms — and these Bactrian Greek kings, bold and cavalry-rich, now look hungrily
+  south toward our northwestern passes. The mare-trade through the old Seleucid channel has grown
+  unreliable in the turmoil.

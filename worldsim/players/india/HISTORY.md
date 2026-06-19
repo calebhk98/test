@@ -23,3 +23,12 @@
 - We named our viceroy-son heir at last, but gave each of his brothers his province for life, so none
   has cause to sell the realm to a foreigner for a crown. Our steel spreads through the ranks; our
   horse-herds grow, though our riders are not yet truly tested. The empire stands whole and patient.
+
+## 170 BC
+- The Greek kings of the mountains came down at our passes, as we knew they would. They did not break
+  through. We had walled the throats and set a second line of forts behind, so that any who entered
+  found not open ground for their horses but a killing-funnel of elephants and steel-armed foot. They
+  fell back into their mountains; our plains are untouched.
+- For the first time we let our own horsemen taste battle, harrying a beaten Greek column — they are
+  not yet the equal of the steppe-bred riders, but they have begun. The mountains stay Greek; the land
+  of the rivers stays ours. We are the wall against which the west has broken.

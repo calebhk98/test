@@ -19,3 +19,13 @@
   Cyprus. Yet the victory has a price we are only beginning to pay: in the south, in the Thebaid, those
   same emboldened Egyptians have risen against us, and an upstart pharaoh is proclaimed at Thebes.
 - We hold the north and the sea; the south smolders. The king must put this revolt down before it spreads.
+
+## 170 BC (Ptolemy IV, reigning long)
+- We have put the south to rights. We did not arm more of our people; we sent our Macedonians and our
+  hired spears up the river with engines to break the rebel towns, and we turned the priests of Amun
+  to our side with gold and the promise of their temples' wealth restored. The rebel pharaoh is gone;
+  Egypt is one again.
+- And fortune favored us further: our king did not die young and leave a child to the wolves of the
+  court, as a kingdom might fear. He reigns on, and so no Seleucid or Macedonian carved up our lands
+  in our weakness. We hold Syria's coast and Cyprus, our treasury fills again, and the great new power
+  of the west — Rome, who broke Carthage — we watch from afar. Egypt stands proud and whole.

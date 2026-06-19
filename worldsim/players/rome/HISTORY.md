@@ -19,3 +19,11 @@
   break. We will not give him the open battle he craves; we shadow and starve him, and we carry the war
   to Spain, where young Scipio strips Carthage of its silver and its base. The tide turns. The end of
   Carthage's war is in sight, and it will not be the end Carthage wished.
+
+## 170 BC
+- We finished Carthage on its own African soil and dictated the peace. Rome is now first among the
+  powers of the west, from Spain to Sicily. When the Macedonian king grew grasping in the Greek seas,
+  the Rhodians and others cried to us, and we crossed over, humbled him, and proclaimed the Greeks free
+  — meaning, free under Rome's eye. The east is a tangle of Greek kingdoms; we mean to be its arbiter,
+  not yet its master. There is a rich, strong kingdom by the Nile we had thought might fall to us in
+  time, as such things do — but it has not fallen, and stands as proud as ever. Curious.
