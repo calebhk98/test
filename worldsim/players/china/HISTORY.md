@@ -90,3 +90,11 @@
 - Our fire-jars are now cased in iron and burst with cutting shards; the formula is the throne's own
   secret. We do not yet command its full power, but each year we know it better. The realm stands
   whole and hard — no usurper, no division.
+
+## 20 AD
+- We settle soldier-farmers across the steppe-edge the broken horde left empty, and our walled
+  stations bead the western road like pearls. We did not hurl armies into the elephant-land of the
+  southwest — mountains eat armies — but sent surveyors to learn it for our sons.
+- Our fire-art takes a new shape: a tube of bamboo and iron, lashed to a spear, that vomits flame
+  and biting shards a few paces — enough to madden horses and clear a wall. It is not yet a thunder-
+  weapon, but it is more than fire-pots. The secret stays the throne's alone.

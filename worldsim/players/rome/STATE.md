@@ -86,3 +86,11 @@
 - EXPANSION NORTH: driving the Rhine/Danube and into Germania (conquest-energy redirected from the
   blocked east) — building a northern land-empire.
 - Internal: new monarchy stabilizing; veterans settled; grain secured. Contact: cold war w/ Egypt.
+
+## Update — 20 AD
+- Germania: cautious frontier strategy blunted the great German revolt (~9 AD) into a bloody CHECK,
+  not annihilation — held the Rhine/Danube + a deeper client-frontier than history. (Suspects, can't
+  prove, foreign silver aided the rebels.)
+- Founder-monarch died (~14 AD); named heir succeeded smoothly — dynasty stable.
+- Still strangling Egypt (proxies, fleet-building, courting Parthia); no sea-invasion capacity yet.
+- Territory: vast west + deeper north + inland Syria. Professional army loyal to the throne; grain secure.

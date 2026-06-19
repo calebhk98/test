@@ -1,6 +1,18 @@
 # GROUND TRUTH — DM ONLY (no player ever reads this)
 
-Current world date: **10 BC**  (started 260 BC; see TIMELINE.md for resolved turns)
+Current world date: **20 AD**  (started 260 BC; see TIMELINE.md for resolved turns)
+
+> Status @20 AD: ROME holds a deeper-than-history Germanic/Danube frontier (cautious play blunted
+> the German revolt); smooth dynastic succession; still strangling Egypt, courting Parthia, fleet-
+> building (no Egypt invasion yet). EGYPT self-corrected its overstretch — defensible southern/
+> African dominion (tribute, not occupation) + strong northern shield + Parthia alliance + ongoing
+> deniable subversion of Rome; pushing direct monsoon trade to India. CHINA consolidated; has
+> PROTO FIRE-LANCES now (still no gun); militarist, stable. INDIA went offensive with stirrup-
+> cavalry, pushed the Yuezhi back and is conquering INTO Bactria (major divergence); actively
+> hunting the "great northern realm" (China) — awareness sharpening.
+> KEY: India's Bactrian expansion + China's Tarim corridor are CONVERGING in Central Asia →
+> likely first India–China contact soon. PARTHIA still the western hinge. Contact: Egypt-Rome
+> cold war; Egypt-Parthia secret align; China↔Parthia trade; India→(closing on)China.
 
 > Status @10 BC: ROME refounded as a veiled monarchy; rebuilding; blocked east/south so it
 > EXPANDS NORTH (Germania/Danube); "strangle then strike" Egypt later; courting Parthia to split

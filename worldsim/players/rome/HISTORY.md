@@ -79,3 +79,12 @@
   it, arm the kinglets at its borders, and bide our time. One day the Nile will answer for our wars.
 - And since the east is barred to us, we turn NORTH — across the Rhine and up the great rivers into
   the forests of Germania. If we cannot have the Nile, we will have a new world of our own in the north.
+
+## 20 AD
+- The German forests tried to swallow us as they once swallowed armies — a great revolt rose to
+  ambush us. But we had learned: we did not march strung-out into the trees; we held our river-line
+  and our reserve, and bled them back. We keep the Rhine, the Danube, and a broad band beyond.
+- Our founder is dead, and his chosen heir rules in his place without a sword drawn between us —
+  the monarchy stands.
+- Egypt we still cannot reach across the sea; so we wall it round with client-kings, woo the
+  Parthian from its side, and build our fleet. Its day will come.

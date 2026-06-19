@@ -367,3 +367,43 @@ World date advanced to: 40 BC
   (now intensifying) steppe-pressure link.
 
 World date advanced to: 10 BC
+
+## 10 BC – 20 AD — Turn (subagents now read own folders; inline-verified)
+- **Rome — cautious north pays off; smooth succession.** Forewarned, Rome did NOT plunge blindly
+  into Germania: it built a fortified Rhine/Danube line with roads, river-fleets, client-tribes, and
+  a mobile reserve. The German ambush/revolt (~9 AD) still came — but caution turned a would-be
+  annihilation into a bloody CHECK: Rome lost forts/men yet held the rivers and kept a deeper
+  Germanic client-frontier than our history (no full withdrawal). The founder-monarch died (~14 AD);
+  the named, co-ruling heir succeeded smoothly. Rome keeps "strangling" Egypt (proxies, fleet-
+  building) and courting Parthia. [Egyptian deniable silver modestly aided the German resistance —
+  Rome may suspect, can't prove.]
+- **Egypt — self-corrects the overstretch.** Egypt HALTED the reckless southern lunge: fell back to
+  a defensible line (lower Kush, the Nile cataracts, 2–3 supply-able Red Sea ports), converted thin
+  African garrisons into tribute/client-treaties (gold without occupation), and massed the freed
+  troops NORTH against Rome's proxies (Judaea/Nabataea). Held the Parthia alliance (out-bidding Rome),
+  bought into the Nabataean/Judaean courts, funded Rome's northern malcontents (laundered better),
+  and pushed monsoon-route sailing to reach India more directly. Absorbed a ~5 BC Nile failure. Now
+  a consolidated, defensible two-front power — northern shield + a sustainable African/Red Sea dominion.
+- **China — consolidates; gets the PROTO FIRE-LANCE.** Garrisoned the steppe void with cavalry-
+  colonists, reinforced the oasis corridor, sent only survey-columns toward Shendu (no invasion).
+  Gunpowder advanced one realistic step: a crude **fire-lance** (bamboo/iron tube on a spear spewing
+  flame and shards a few paces to panic horses / clear a breach) — NOT a gun. Silk trade with Parthia
+  grew. Stable, militarist, council-regency (no interregnum). ~2 AD Yangtze flood a regional drag.
+- **India — goes OFFENSIVE and gets AHEAD.** Using its stirrup-cavalry edge, India struck up into
+  near-Bactria and the mountain valleys, seized the watered chokeland/pastures, planted fortress-
+  towns, and turned shattered Yuezhi bands into client-riders — **pushing the Yuezhi back and
+  fracturing their unity** (a major divergence: historically the Kushans overran India; here India
+  is conquering INTO Bactria). Held the south, Sri Lanka, and the Ganga heartland. ~9 AD Ganges
+  locusts a minor drag.
+
+### Cross-awareness (TRUE) — two halves of the world drawing closer
+- **India ↔ China approaching in Central Asia:** India's push into Bactria/the mountain approaches
+  brings its sphere toward China's western oasis corridor (Tarim). India is ACTIVELY hunting "who
+  drives the Yuezhi south — the unnamed great northern realm," and its scouts now hear more concrete
+  reports of a vast organized empire far to the NE. India's picture sharpens from vague rumor toward
+  "a real great eastern empire exists." Still NO direct contact — but the gap is closing (sets up
+  likely first India–China contact in coming turns).
+- **Egypt–Rome:** cold war continues; Egypt consolidated and secure; Rome stronger in the north,
+  still unable to cross to Egypt.
+
+World date advanced to: 20 AD

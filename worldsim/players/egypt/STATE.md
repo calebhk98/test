@@ -105,3 +105,13 @@
   fiscal strain (worsened by a ~33 BC Nile failure). A real new vulnerability.
 - Internal: priesthood bound (Pharaonic rites), single heir named, army paid/rotated.
 - Naval-dominant, rich, independent — but now stretched between a northern threat and a southern frontier.
+
+## Update — 20 AD (overstretch corrected)
+- HALTED the reckless southern lunge: pulled back to a defensible line (lower Kush, Nile cataracts,
+  2–3 supply-able Red Sea ports); converted thin African garrisons to tribute/client-treaties (gold,
+  not occupation); massed freed troops NORTH vs Rome's proxies.
+- Held the Parthia alliance (out-bid Rome); bought into Nabataean/Judaean courts; funded Rome's
+  northern (Germanic) malcontents deniably; pushing direct monsoon sailing toward India.
+- Now a consolidated two-front power: northern shield + sustainable African/Red Sea dominion.
+- Internal: native tension eased (Pharaonic patronage, native officers); single heir groomed;
+  Library/Museum lavishly funded; ~5 BC Nile failure absorbed.

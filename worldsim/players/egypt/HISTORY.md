@@ -97,3 +97,12 @@
   southern peoples and the long roads test us, and a poor Nile year strained our purse.
 - Still: Egypt is first among the powers we know, unconquered, and now reaching for a second realm
   in the south.
+
+## 20 AD
+- We reached too far, too fast into the south, and the desert and the southern peoples and the thin
+  garrisons taught us caution. So we drew back to a line we can hold — the cataracts of the Nile and
+  a few strong Red Sea ports — and took the gold of the African chiefs as tribute instead of trying
+  to rule their whole land. The soldiers we freed now guard our north.
+- Rome, whole again under its new master, gnaws at us through the kinglets of Judaea and the desert,
+  and tries to steal the Parthian from our side. We out-pay it, and we slip our silver to the wild
+  northern tribes who bleed Rome in its forests. Let it look north; we will be ready when it looks south.

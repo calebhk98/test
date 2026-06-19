@@ -32,3 +32,13 @@ We do not know how many powers exist in the wider world.
 - We have begun imitating what we saw — water-lifting wheels, a beacon tower, bigger ships,
   scholar-houses — built our own way, since we never learned their methods.
 - Southern clients stable and paying; NW frontier secured.
+
+## Update — 20 AD
+- We have pushed the Yuezhi back and taken much of near-Bactria and the mountain chokelands. Our
+  stirrup-riders are the equal of any steppe horseman.
+- THE NORTHERN REALM: our scouts beyond Bactria now bring back more than rumor — there is, far to
+  the northeast beyond the deserts and mountains, a VAST and ORDERED empire, immensely populous and
+  warlike, whose pressure on the steppe peoples drives the nomads down upon us. We have not seen it,
+  do not know its name or true nature, and the road to it is long and held by nomads and oasis-kings.
+  But it is REAL. (Belief — unconfirmed in detail.)
+- We have heard, too, that this realm trades a precious thread (silk) westward.

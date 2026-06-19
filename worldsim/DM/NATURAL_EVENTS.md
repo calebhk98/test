@@ -199,5 +199,27 @@ plausibly perceive it.
 ## ~13 BC — Comet, Mediterranean & India
 - Minor. Perceived: Rome, Egypt, India. Read as omen of upheaval. No material damage.
 
+## ~8 BC — Earthquake, western Anatolia (Aegean coast)
+- Severe (regional). Perceived: Greek/Roman traders & officials. Years of rebuilding; craftsmen
+  migrate inland; a cracked aqueduct distrusted.
+
+## ~5 BC — Nile failed flood (2 low years), Egypt
+- Moderate. Perceived: Egypt + Mediterranean grain buyers. Price spike, depleted reserves, rural
+  hardship/tax arrears. (Eased by Egypt's southern pullback.)
+
+## ~2 AD — Yangtze basin flooding, southern China
+- Serious (regional). Perceived: China. Drowned paddies, refugees to high ground, relief grain.
+  Largely uncounterable.
+
+## ~9 AD — Locust swarms, Ganges plain (India)
+- Moderate-serious. Perceived: India. One hungry year, grain-price rise, strained temple doles.
+
+## ~14 AD — Bright comet, Mediterranean & Near East
+- Minor. Perceived: Rome/Egypt/Levant. Omen-driven unease (coincided with Rome's succession).
+
+## ~17 AD — Harsh winter + cattle murrain, Gaul/Germania frontier
+- Moderate (local). Perceived: Rome/Germania frontier. Herd losses, costly draft animals, lean
+  spring. Uncounterable. (Minor drag on Rome's northern frontier.)
+
 <!-- next events below -->
 

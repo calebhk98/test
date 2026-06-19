@@ -104,3 +104,12 @@
   heir trained; war-tax on trade/rich.
 - The Yuezhi remain a hardening superpower-in-formation; the steppe pressure is intensifying
   (unknowingly driven by China). Awareness of distant powers unchanged.
+
+## Update — 20 AD (offensive — getting ahead)
+- Went OFFENSIVE with stirrup-cavalry: struck into near-Bactria + mountain valleys, seized watered
+  chokeland/pastures, planted fortress-towns, turned shattered Yuezhi bands into client-riders —
+  PUSHED THE YUEZHI BACK and fractured their unity (reversal of the historical Kushan conquest).
+- Now a major Central-Asian power reaching toward the Pamirs/Bactria. Held south + Sri Lanka + Ganga.
+- Awareness SHARPENING: actively hunting "the great northern realm" that drives the nomads; scouts
+  now hear concrete reports of a vast organized empire far to the NE. (See KNOWLEDGE.)
+- Cavalry refining (toward iron stirrups); ~9 AD Ganges locusts a minor drag.

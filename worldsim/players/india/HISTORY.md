@@ -98,3 +98,13 @@
   high saddles — now our horse-archers loose and our lancers strike as never before, the equal of
   any steppe rider. The horse, long our weakness, becomes our strength.
 - South and island stay ours. The Yuezhi still grow; the war of the passes will be long.
+
+## 20 AD
+- We stopped merely holding and STRUCK. Our stirrup-riders climbed into the mountain valleys and the
+  near plains of Bactria, took the wells and the horse-pastures, raised our forts there, and broke
+  the Yuezhi host apart — band against band, now many of them ride for us. The frontier moves north,
+  away from our heartland at last.
+- And following the broken nomads back to their source, our scouts have learned a great truth: far to
+  the northeast, beyond every desert and range, lies a VAST and ordered empire, mightier than any we
+  have met, whose wars in the grasslands have hurled these horse-peoples down upon us all these years.
+  We do not know its name. But now we know it is there — and one day we will reach it.

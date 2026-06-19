@@ -107,3 +107,13 @@
 - Stable, militarist — passed through the era our history fractured (Wang Mang interregnum
   CANCELLED per divergence). Treats Parthia as a peer; rising silk volume (via middlemen).
 - ~24 BC Yangtze flood a regional drag; consort-clan factions balanced beneath the throne.
+
+## Update — 20 AD
+- Consolidated: steppe void garrisoned with cavalry-colonists; oasis corridor reinforced; only
+  survey-columns toward Shendu (no invasion); mild southward tribal pressure.
+- GUNPOWDER step: crude PROTO FIRE-LANCE (flame/shard tube on a spear) — still NO true gun/cannon.
+  Throne's guarded secret; sworn isolated smiths.
+- Stable militarist state; council-regency for any minority (no interregnum). Silk trade w/ Parthia up.
+- ~2 AD Yangtze flood a regional drag. Still no direct contact with Egypt/Rome; India known only
+  second-hand (Shendu) — but India's scouts are now probing toward our western edge (we may not
+  yet notice).
