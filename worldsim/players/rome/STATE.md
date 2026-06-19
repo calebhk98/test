@@ -122,3 +122,12 @@
   committed — forcing us to suspend the campaign. Heavy fleet losses. Egypt remains unconquered and
   dominant at sea; our hatred and our suspicion (Egypt funds our enemies) are confirmed, not avenged.
 - Net: a hot, ongoing war with Egypt; a two-front strain (Parthia in the east); the north held.
+
+## Update — 75 AD (diplomacy relieves the east)
+- Shifted to ATTRITION vs Egypt: commerce-raiding its grain/silver lanes, fortifying Levant/Syrian
+  ports, rebuilding the fleet slowly (no second gamble). Lost the Cyprus foothold to Egypt's counter.
+- WIN: detached PARTHIA via a separate peace (border recognition, trade, marriage) — the eastern
+  front eased (Parthia also has its own new frontier trouble). Egypt now lacks its land-ally.
+- North held (Rhine/Danube; ~64 AD harsh winter a drag). Built own horse-archers/cataphracts vs Parthia.
+- Internal: heir public, eastern legions bound by pay/donatives, granaries full. Still no contact with
+  India/China. Strategy: isolate Egypt, rebuild, strike when both hands are free.

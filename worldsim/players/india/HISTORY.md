@@ -121,3 +121,12 @@
   our quiet eyes, buying their way along the road of the silk-thread. We go to learn its name, its
   strength, and the source of the storms it sends us — and to greet it, if we meet it, as one ordered
   empire greets another: as equals, conceding nothing. One day we will know it fully.
+
+## 75 AD
+- We met the silk-realm and chose the caravan over the war-elephant. To march on it across those
+  deserts would ruin us both; so we trade — our horses, steel, and gems for their silk and jade — and
+  send our quiet eyes with every caravan to learn its true size and strength. The oasis-roads between us
+  we hold by binding their kinglets, as they do theirs: a wary line, but not yet a war.
+- With the north thus held in balance, we turned our hunger EAST — deeper into the Bengal forests and
+  the lower Ganga, for grain and men and elephants — and drew Sri Lanka and the south closer. The realm
+  grows, and our stirrup-riders are unmatched.

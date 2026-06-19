@@ -1,6 +1,17 @@
 # GROUND TRUTH — DM ONLY (no player ever reads this)
 
-Current world date: **50 AD**  (started 260 BC; see TIMELINE.md for resolved turns)
+Current world date: **75 AD**  (started 260 BC; see TIMELINE.md for resolved turns)
+
+> Status @75 AD: EGYPT retook Cyprus (sea-dominant, iron + Red Sea wealth) BUT lost Parthia's active
+> support — now faces Rome more alone. ROME shifted to attrition/commerce-raiding vs Egypt and
+> DETACHED Parthia via a separate peace (helped, unknowingly, by the nomad cascade hitting Parthia's
+> NE) — eastern front eased, rebuilding. CHINA secured the oasis corridor, made TRADE+embassy with
+> India (peaceful buffer-rivalry over oasis-kings), and built the first PROTO-GUN (single-ball
+> eruptor). INDIA chose trade-not-war with China and expanded EAST (Bengal/lower Ganga) + tightened
+> the south. PARTHIA: truced with Rome, turned to fight the nomad cascade on its NE; still takes
+> Egyptian gold. The CASCADE (China→west) is now reshaping the western balance.
+> Contact: India↔China (trade + embassies, latent oasis rivalry); Egypt-Rome (hot war, attrition);
+> Parthia (Rome truce / Egypt gold / nomad war). China model = Sonnet henceforth.
 
 > Status @50 AD: ROME's naval war on Egypt FAILED (took only a contested Cyprus foothold; heavy
 > fleet losses; Parthia's second front forced suspension) — Egypt–Rome now HOT war. EGYPT held,

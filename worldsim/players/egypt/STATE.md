@@ -128,3 +128,13 @@
 - Parthia alliance active (fighting Rome's east). Navy dominant; war economy boosted by southern
   iron + Red Sea revenue. Native machimoi loyal; heir secure; Library thriving.
 - ~27 AD Nile failure absorbed; ~44 AD Levant/Cyprus storm hurt both fleets.
+
+## Update — 75 AD (won Cyprus back, lost the Parthian shield)
+- RETOOK the contested Cyprus foothold from Rome (sea offensive while Rome rebuilt); raided Rome's
+  Cilician/Cyprus supply. Master of the eastern sea; iron-armed forces; Red Sea income strong.
+- SETBACK: despite our gold/iron/grain, PARTHIA pulled back from the war with Rome (it faces some new
+  trouble on its own far frontier and made a truce with Rome). We now face Rome with far less land-
+  support — our great vulnerability. (We do NOT know the true cause of Parthia's distraction.)
+- Rome shifted to commerce-raiding our grain/silver lanes + rebuilding slowly. Our south (Kush iron +
+  Red Sea monopoly) underwrites the war. Heir secure; priesthood/native officers loyal; ~58 AD Nile
+  failure absorbed.

@@ -136,3 +136,10 @@
   ready for minority; war-cost and flood-years watched. Permanently militarist, whole, undivided.
 - Intelligence focus: where the driven-west horde resettles; Parthia's true strength; deeper SW
   survey toward Shendu.
+
+## Update — 75 AD
+- Secured the oasis corridor; bound oasis-kings as tribute-clients (claiming the buffer) but chose
+  TRADE + embassy with India ("Shendu"), NOT war over Central Asia — a wary, peaceful buffer-rivalry.
+- Gunpowder: the single-ball ERUPTOR (proto-gun) slowly refined — still crude, short-range, NO cannon.
+- Steppe stays broken (land-denial + garrisons). Militarist, whole; ~70 AD Yangtze flood a drag.
+- Now directly LINKED to India by the Silk Road (mutual embassies/trade). Still no Egypt/Rome contact.

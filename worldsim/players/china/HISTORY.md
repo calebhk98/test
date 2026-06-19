@@ -122,3 +122,11 @@
 - The realm stands whole, hard, and undivided — monopolies of salt and iron fund the garrisons,
   consort and regent factions balanced beneath the throne, and a council-regency stands ready
   for any minority. We have not softened, and we shall not.
+
+## 75 AD
+- We met the southern elephant-empire (Shendu) at our western oasis-frontier and chose the brush over
+  the sword: an embassy, and a trade of silk and jade for their horses, steel, and gems. The oasis-road
+  we hold as ours, binding its kinglets to our Protector — but we will not spend an army on the deserts
+  to fight a power as great as we, not yet. Let trade flow and our eyes ride with it.
+- Our fire-tube that spits a single ball grows a little surer each year, though no thunder-engine yet.
+  The realm stands whole and hard.

@@ -117,3 +117,11 @@
   IRON in plenty — iron for swords and spears beyond what we had — and by holding the Red Sea's gates
   we alone command the incense and the spice and the trade of the eastern ocean. The south makes us
   richer and better-armed, not poorer. We will hold its iron and its waters close.
+
+## 75 AD
+- We took back the corner of Cyprus the Romans had clung to, and burned their supply-ships along the
+  Cilician shore. The sea is wholly ours again, and our iron of Kush arms our marines well.
+- But fortune turned a card against us: our Parthian friends, for all our gold and grain, have made a
+  truce with Rome and turned away to some trouble of their own on their far side. We do not know what
+  pulls them away — but without their swords at Rome's back, we stand more alone now. We husband our
+  fleet, fatten our granaries, and watch the Roman, who no longer bleeds in the east.

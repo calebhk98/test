@@ -453,3 +453,42 @@ World date advanced to: 20 AD
   and by Parthia/the West later — though no one sees the full chain.
 
 World date advanced to: 50 AD
+
+## 50–75 AD — Turn (the cascade reaches Parthia; China gets a proto-gun; India–China trade)
+- **Egypt retook Cyprus — but lost its ally.** Egypt went on the (naval) offensive while Rome
+  rebuilt: EXPELLED Rome's contested Cyprus foothold (a prestige win), armed its marines/machimoi
+  with fresh Kushite iron, and raided Rome's Cilician/Cyprus supply with fire-ships. It poured gold/
+  iron/grain to prop up Parthia. BUT (see below) Parthia disengaged anyway — Egypt now faces Rome
+  with far less land-support, though still master of the sea.
+- **Rome shifted to attrition + diplomacy — and it paid off.** No second naval gamble: commerce-
+  raiding Egypt's grain/silver lanes, fortifying Levant/Syrian ports, slow fleet rebuild, and a
+  defense-in-depth Euphrates line vs Parthia (building its own horse-archers/cataphracts). Crucially,
+  Rome OFFERED PARTHIA an honorable separate peace (border recognition, trade, royal marriage).
+- **THE CASCADE HITS PARTHIA → it takes Rome's peace.** The proto-Hunnic nomads China drove west
+  now slammed Parthia's NE frontier. Exhausted by a two-front war, Parthia ACCEPTED a truce with
+  Rome (not a full alliance — it still takes Egyptian gold and distrusts Rome) to turn and face the
+  nomads. Effect: **Egypt's land-sword is sheathed; Rome's eastern front eases.** The cause-chain
+  (China → westward nomads → Parthia → Egypt/Rome balance) is invisible to every player.
+- **China — corridor secured; gets a PROTO-GUN; trades with India.** Held/deepened the oasis
+  corridor (tuntian, beacon-towers, heavenly-horse cavalry forward) and bound the oasis-kings as
+  tribute-clients (claiming the buffer as China's sphere) — but chose NOT to fight India over it.
+  Sent India a formal embassy and opened silk/jade trade. Gunpowder advanced a real step: from the
+  hand fire-tube to a crude **single-ball eruptor — the first proto-gun** (a stout iron tube firing
+  one heavy bolt/pellet by charge; short-range, crude; NOT a cannon/musket). [Directive-4 check:
+  ~145 yrs after discovery; a single-shot proto-gun is a paced milestone, not a leap.]
+- **India — trades, doesn't fight; expands EAST.** India consolidated its oasis holdings (cisterns/
+  qanats/fortress-towns), bound its own oasis-king buffer, and — judging a Central-Asian war with
+  China ruinous — chose TRADE + embassy with China (silk-road exchange via neutral oasis-kings,
+  with merchant-spies along every caravan) and a wary, war-free buffer-rivalry. It turned its
+  conquest-energy EAST instead: deeper into Bengal/the lower Ganga (grain, men, elephants) and
+  tightened Sri Lanka/the south. Refined iron-stirrup heavy cavalry.
+
+### Cross-awareness (TRUE)
+- **India ↔ China:** now a TRADE relationship (embassies + Silk Road exchange) plus a tacit, peaceful
+  division of the oasis buffer (both bind oasis-kings as clients — latent rivalry, no war). The two
+  great eastern empires are directly linked for the first time.
+- **Egypt–Rome:** still at war, but the balance shifted toward Rome as Parthia disengaged. Egypt holds
+  the sea + Cyprus; Rome attrites by commerce-raiding and rebuilds.
+- **Parthia:** turned NE to fight the nomad cascade; truce with Rome; still takes Egyptian gold.
+
+World date advanced to: 75 AD

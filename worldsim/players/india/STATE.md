@@ -129,3 +129,11 @@
 - Internal: rotated cavalry commands, family-hostages at court, audited governors, heir army-toured;
   war-tax on trade/the rich (not the grain base); relief for raided frontier + new Bactrian subjects.
 - Awareness: the great NE realm CONFIRMED real and actively being scouted; its name still unknown.
+
+## Update — 75 AD
+- Chose TRADE + embassy with the northern empire (China/"silk-realm"), NOT war — Silk Road exchange via
+  neutral oasis-kings, merchant-spies along every caravan; a wary peaceful buffer-rivalry over the oases.
+- Turned conquest-energy EAST: pushed deeper into Bengal/the lower Ganga (grain/men/elephants); tightened
+  Sri Lanka + southern vassals. Held Bactria/the oases.
+- Cavalry: iron wootz loop-stirrups + heavy lance/horse-archers — formidable. Heir army-toured; governors
+  audited. Now directly linked to China by the Silk Road; relayed trade with Egypt continues.

@@ -109,3 +109,10 @@
   fire-ships and the storm devoured our fleet; and when our ships were committed, the Parthian fell on
   our Syrian lands and we had to break off. The Nile mocks us still — unconquered, master of the sea,
   and our enemy in the open now. One day, with both hands free, we will end it. Not this day.
+
+## 75 AD
+- We stopped throwing fleets at the Nile and turned to patience: we raid its grain and silver on the
+  water, wall our eastern ports, and rebuild in our own time. We lost our toehold on Cyprus — no matter.
+- The greater stroke was made with words, not swords: we bought peace with the Parthian — a border, a
+  marriage, a trade — and so pulled Egypt's eastern sword from its hand. The Parthian, troubled now on
+  his own far frontier, was glad to take it. Egypt stands more alone than it knows. We rebuild, and we wait.

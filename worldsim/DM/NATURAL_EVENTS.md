@@ -242,5 +242,26 @@ plausibly perceive it.
 - Moderate (local). Perceived: Rome (during its naval war) + Egypt's Levant/Cyprus. Silted harbors,
   wrecked shipping, hard winter. (Compounded Rome's fleet losses around Cyprus.)
 
+## ~54 AD — Earthquake, western Anatolia
+- Moderate-severe. Perceived: Greek/Anatolian towns + traders. Temple/aqueduct damage, ~3 yr rebuild,
+  a town partly relocated.
+
+## ~58 AD — Low Nile flood (2 weak years), Egypt
+- Moderate-serious. Perceived: Egypt + Mediterranean grain ports. Thin harvests, price spikes abroad,
+  granary drawdown ~4 yrs.
+
+## ~61 AD — Locust swarms, Levant/Syria → Mesopotamian fringe
+- Severe (local). Perceived: Levant/Syria/Parthian fringe. Ruined harvest, seed shortage, displacement.
+
+## ~64 AD — Harsh winter, Danube/Germania frontier
+- Regional, uncounterable. Perceived: Rome's northern frontier + tribes. Livestock die-off, frozen
+  crossings, spring flooding, strained supply.
+
+## ~67 AD — Comet, across Eurasia
+- Minor. Perceived: Rome, China, India. Omen-anxiety everywhere, materially nil.
+
+## ~70 AD — Yangtze basin flooding, China
+- Serious (regional). Perceived: China. Drowned paddies, dike-repair labor, displacement, ~2 yr tax remission.
+
 <!-- next events below -->
 
