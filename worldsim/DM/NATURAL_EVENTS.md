@@ -78,5 +78,41 @@ plausibly perceive it.
 - Moderate. Perceived: Rome (newly holding Iberia), Gaul. Livestock losses, depopulated
   villages, disrupted overland trade. (Hampered Rome's grip on fresh Iberian conquests.)
 
+## ~186 BC — Earthquake, Anatolia (Aegean coast)
+- Moderate. Perceived: Greek/Anatolian ports (Egypt/Rome's sphere). Toppled harbor works/temples;
+  decade of local rebuilding cost.
+
+## ~180 BC — Nile low flood, Egypt
+- Serious (regional). Perceived: Egypt. Two weak inundations → grain shortfall, price spikes,
+  village hunger, strained Alexandrian stores.
+
+## ~174 BC — Locust swarms, Levant & northern Mesopotamia
+- Moderate. Perceived: Levant/Seleucid lands (Egypt's frontier). Stripped crops; rural-to-town
+  displacement.
+
+## ~168 BC — Total solar eclipse, eastern Mediterranean & Anatolia
+- Minor. Perceived: Egypt, Greece, Levant. Omen-talk, calendar marks, political portent.
+
+## ~160 BC — Epidemic (fever/dysentery), Ganges basin → Deccan trade routes (India)
+- Serious. Perceived: India. Depopulated village stretches, disrupted caravan trade, child
+  mortality for 2–3 years.
+
+## ~152 BC — Yellow River flooding, north China
+- Serious. Perceived: China (Han). Levee breaks, silted/shifted channels, refugees, multi-year
+  dike reconstruction.
+
+## ~143 BC — Harsh winter / livestock die-off (dzud), northern steppe (Mongolia/Tarim fringe)
+- Moderate-serious. Perceived: steppe nomads + Han frontier. Herd losses push nomads toward
+  settled margins (raiding/trade pressure on Han).
+
+## ~130 BC — Comet, visible across Eurasia
+- Minor. Perceived: Mediterranean, China, India (independently). Portent only.
+
+## ~118 BC — Drought, Deccan & south India
+- Moderate. Perceived: India. Failed monsoon (2 yrs), thinned harvests, migration to coasts/rivers.
+
+## ~110 BC — Storm surge/tsunami, Iberian Atlantic & western Mediterranean coast
+- Minor-moderate. Perceived: Rome (Iberia). Damaged boats/shore settlements, disrupted fishing.
+
 <!-- next events below -->
 

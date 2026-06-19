@@ -75,7 +75,10 @@ partial, possibly-wrong view. The DM never leaks truth into a player's view.
 ## Verification (every turn)
 - Run a **Historian-Verifier** check on player outputs: (a) does it respect on-rails-before-
   divergence? (b) is it era-plausible (routes, travel times, materials, who-controls-what)?
-  (c) does it violate fog of war? Reject/scale back anything that fails before recording canon.
+  (c) does it violate fog of war? (d) **behavioral realism** — does the nation act like a real
+  period power (ambition/fear/self-interest) rather than defaulting to unmotivated peace,
+  passivity, modern morality, or omniscient reasoning? Reject/scale back anything that fails
+  before recording canon. Player briefs are built from DM/PLAYER_PROMPT_TEMPLATE.md.
 
 ## Subagent roles
 - **Player agents** — one per country; act on their KNOWLEDGE only, never ground truth.

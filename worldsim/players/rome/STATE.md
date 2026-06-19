@@ -32,3 +32,17 @@
 - Unrest: low; Senate factions (war-profiteers vs cautious) managed; grain doles ease city.
 - Chief threat: Barcid military buildup in Iberia (seed of a future great war with Carthage).
 - Contact: cordial trade with Egypt; NONE with India or China.
+
+## Update — 105 BC (Mediterranean hegemon; internally turbulent; on-rails to ~100 BC)
+- Territory: provinces of Sicily, Sardinia/Corsica, Nearer/Further Spain, Africa (Carthage
+  destroyed 146), Macedonia, Greece, and Asia (Pergamon bequest 133). Dominant power of the
+  Mediterranean world.
+- Politics: severe internal strife — Gracchan land struggles (133, 121), Jugurthine War
+  (112–106), Marius's military reforms (107) creating a professional landless-recruit army.
+- CRISIS: the Cimbri/Teutones migrations — catastrophic defeat at Arausio (105 BC); Marius
+  will rescue Rome (102–101). Manpower strained but recovering.
+- Economy: huge provincial revenues + slaves from conquest; rising inequality fuels unrest.
+- Military: legions reformed and professionalizing (loyal increasingly to generals — a seed
+  of future civil wars).
+- Contact: friendly trade with Egypt; faint notion of wealthy east; NONE with India/China.
+- Divergence (~100 BC) imminent: Rome will attempt to seize Egypt and FAIL. Rome does not know this.

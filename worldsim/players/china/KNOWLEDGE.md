@@ -35,3 +35,13 @@ We do not know how many powers exist beyond the lands we know.
   more than we conquer there.
 - Westward: still only oasis/desert peoples and rumor of richer lands beyond — no great
   kingdom found. We do not know Egypt, India, or Rome exist.
+
+## Update — 105 BC (the veil lifts — Silk Road opened)
+- We now KNOW we are not alone. Our western missions report great settled realms beyond the
+  deserts: "Shendu" (a hot land of war-elephants, to the southwest — reachable also, we hear,
+  by a route through our own southwestern mountains), "Anxi" (a vast western kingdom of traders),
+  Dayuan (valleys of superb horses), and Daxia (a Greek-touched land).
+- This knowledge is SECOND-HAND, via intermediaries — we have not seen these lands ourselves,
+  and our picture of them is hazy and likely wrong in places.
+- We do NOT (yet) know of any kingdom by the far western sea (Egypt) or of Rome.
+- We covet the "heavenly horses" of Dayuan and the trade of the west.

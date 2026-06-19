@@ -46,3 +46,17 @@
 - Unrest: native-Egyptian grievance now a permanent background factor (bread/tax/ethnic).
 - Tech: real Ptolemaic/Alexandrian science; NO wootz industry. Aware of India via envoys (real).
 - Diplomacy: friendly with Rome (real historical amity); war footing vs Seleucids.
+
+## Update — 105 BC (divergence active; strong independent kingdom)
+- Government: stable Ptolemaic monarchy, clean adult successions (divergence: no regency crisis,
+  no deep decline). Independent — did NOT drift into Roman clientage.
+- Territory: core Egypt + Cyrenaica/Cyprus/Aegean network; lost Coele-Syria to Antiochus III
+  (~200 BC) but the Seleucid collapse (post-Magnesia) left Egypt the stronger survivor; survived
+  Antiochus IV's invasion (~168) with Roman diplomatic backing.
+- Population: recovered/growing; Alexandria a world center of science.
+- Economy: very strong (grain, papyrus, trade); recurring Nile-failure risk persists.
+- Unrest: native-Egyptian grievance remains a structural background factor.
+- Military: phalanx + native machimoi + dominant navy + elephants.
+- Tech: thriving Alexandrian science/engineering (real). NO anachronisms.
+- WATCH: Rome is now the Mediterranean hegemon and "friendly" — a friendship of convenience.
+  (Rome's ~100 BC attempt on Egypt is coming — Egypt does NOT know this.)

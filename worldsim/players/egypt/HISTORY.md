@@ -42,3 +42,16 @@
 - We learned the eastern empire reaches toward us by land but is walled off by the Seleucids,
   our own enemy — there may be use in that. Rome, in the far west, has won a vast war and now
   bestrides the western sea; still our friend in trade.
+
+## 105 BC (after ~85 years — a long stable age)
+- Our royal house passed the throne cleanly from father to grown son, sparing us the regency-
+  strife that might have torn us apart. We did bend before the Seleucids in the wars for the
+  Levant and lost Coele-Syria for a time — but as Rome broke the Seleucids in the north, their
+  power withered and ours endured.
+- When a later Antiochus marched into Egypt itself, the western Romans pressed him to withdraw,
+  and we kept our independence and our crown. We fell into no foreign master's hand.
+- Through it all Alexandria's lamp burned ever brighter — her scholars, physicians and
+  engineers are the wonder of the world. We are rich, whole, and our own.
+- Of the wider world: Rome now towers over the western and middle sea, though we hear it is
+  troubled within. The eastern spice-empire still trades with us through Arabian hands. We stay
+  watchful of Rome's friendship — the strong are friends only while it suits them.

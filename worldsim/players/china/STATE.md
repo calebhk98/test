@@ -49,3 +49,18 @@
 - Unrest: easing under the moderated regime; war-weariness healing.
 - Tech: iron casting, roads, canals, crossbows. NO gunpowder yet (seed ~100-95 BC).
 - Still NO contact with Egypt/India/Rome (Silk Road contact not until ~130 BC).
+
+## Update — 105 BC (Han zenith under Emperor Wu; on-rails to ~100 BC)
+- Government: unified Han empire at its height; powerful, expansionist Son of Heaven; Confucian
+  state orthodoxy; salt/iron state monopolies fund the wars.
+- Territory: drove the Xiongnu far back; seized the western (Hexi/Tarim) corridor of oases;
+  annexed the southern coasts (Nanyue) and the eastern peninsula (Gojoseon/Korea).
+- Population: very large and recovered (two generations of light rule, then expansion).
+- Economy: rich but war-strained (monopolies, campaigns); heavy military spending.
+- AWARENESS (Silk Road, ~126 BC+): now knows second-hand of Shendu (India), Anxi (Parthia),
+  Dayuan (Ferghana), Daxia (Bactria). Still NO direct contact with Egypt or Rome.
+- Unrest: controlled, but monopolies + war taxes breed merchant/peasant grievance (watch).
+- Tech: iron, crossbows, cavalry, roads, canals — NO gunpowder YET.
+- ⚠ DIVERGENCE IMMINENT (~100–95 BC): court alchemists seeking an immortality elixir will
+  discover GUNPOWDER (abundant northern saltpeter); thereafter China stays PERMANENTLY
+  militarist (cancels later Wang Mang/Yellow Turban/Three Kingdoms/Xianbei collapses).

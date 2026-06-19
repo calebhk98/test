@@ -1,6 +1,20 @@
 # GROUND TRUTH — DM ONLY (no player ever reads this)
 
-Current world date: **190 BC**  (started 260 BC; see TIMELINE.md for resolved turns)
+Current world date: **105 BC**  (started 260 BC; see TIMELINE.md for resolved turns)
+
+> Status @105 BC (verified): Egypt = strong INDEPENDENT kingdom (divergence: skipped regency
+> crisis/decline; Alexandrian science thriving) — poised for Rome's failed ~100 BC grab.
+> Rome = Mediterranean hegemon but internally turbulent (Gracchan aftermath, Marius, just past
+> the Arausio disaster 105 / Cimbri crisis). China = Han at its HEIGHT under Emperor Wu;
+> Silk Road OPENED (~126 BC) → Han now knows second-hand of India ("Shendu"), Parthia ("Anxi"),
+> Ferghana, Bactria; gunpowder + permanent-militarism divergence IMMINENT (~100-95 BC).
+> India = unified militarist empire (no Maurya fall); repelled the Indo-Greek invasion, controls
+> its NW passes with horse-paying client buffers; only VAGUE rumor of a great eastern realm.
+> Contact graph @105 BC: Egypt<->India (relayed Arabian trade), Egypt<->Rome (friendly), 
+> China-->Shendu/Anxi/Bactria (second-hand, one-directional awareness), India--?eastern-realm
+> (vague rumor), Rome/Egypt<->China (none).
+> NEXT (slow down here): the ~100 BC TRIPLE BRANCH — Rome attempts Egypt & FAILS (→paper);
+> China discovers gunpowder; China turns permanently militarist (cancels later collapses).
 
 > Status @190 BC (CORRECTED): Egypt divergence just activating (~204-194 BC longer rule;
 > survived a native revolt, stays independent — no historical decline). China = real history:

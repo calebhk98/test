@@ -24,3 +24,16 @@
   Barcid family building a new army and new wealth there. We do not trust it.
 - Friendly grain-and-trade missions continue with the rich kingdom by the Nile; we learn,
   and we wait.
+
+## 105 BC (after ~85 years — mastery abroad, strife at home)
+- We have become master of the middle sea. We shattered the Seleucid king at Magnesia, ended
+  the kingdom of Macedon, and when Carthage rose once more we razed it utterly and salted its
+  memory. Corinth too we burned. Greece, Macedonia, Africa, Spain, and the rich lands of Asia
+  bequeathed to us are now ours to tax and govern.
+- Yet greatness has bred discord at home: land-hungry soldiers and the mob against the great
+  families; the brothers who would reform the Republic struck down; war in Africa against a
+  Numidian king; and now a terror of northern barbarian hordes (the Cimbri and their kin) who
+  have slaughtered our armies — our darkest hour in living memory. A new kind of general,
+  raising the landless poor into a professional army, rises to save us.
+- The rich Nile kingdom remains our friend in trade — for now. We watch it, as we watch all
+  the wealthy lands of the east.

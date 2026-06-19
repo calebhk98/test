@@ -43,3 +43,18 @@
   physicians and engineers — gathering all knowledge we can buy or take.
 - Still we could not learn the Nile-folk's true secrets; their "house of scrolls" keeps its
   mystery from us.
+
+## 105 BC (after ~85 years — invasion met, frontier mastered)
+- The Yavana kings of the mountains (Bactrian Greeks) came down through our northwestern passes
+  in force. We did not break. We held them on prepared ground — layered forts, cisterns, beacon-
+  chains, massed elephants and archers at the choke-points — bled them as they descended, and
+  set their lesser warlords against their kings.
+- Then we turned and pushed forward, taking the passes and the foothills for our own, and
+  binding the broken war-bands to us as client-lords who pay their tribute in HORSES — mending
+  at last our old want of good cavalry.
+- We grew rich as the broker of the long trade between west and east, and our scholar-houses
+  swelled into great state archives of war, law, and engineering.
+- The change of rulers over these years changed nothing of our purpose: we remain one empire,
+  and a conquering one. From the far north-east, caravans bring strange rumors of some vast and
+  ordered realm beyond the mountains — but we have seen nothing of it ourselves, and put no
+  faith in tales.

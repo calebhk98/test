@@ -48,3 +48,17 @@
   harbor beacon, larger oared ships, state scholar-houses. Never learned Egypt's actual methods.
 - Note: India is the only diverged power this early; these changes don't alter pre-divergence
   Egypt/Rome/China.
+
+## Update — 105 BC (invasion repelled; NW frontier mastered)
+- Government: unified militarist empire (no Maurya fall; ruler changes = continuity).
+- Territory: REPELLED the Indo-Greek (Bactrian) invasion via defense-in-depth, then took the
+  NW passes/foothills; buffer client-lords now pay tribute in HORSES (cavalry gap closing).
+  South and east held as troop/elephant-providing vassals.
+- Population: ~30M+, recovered (despite a ~160 BC Ganges epidemic and ~118 BC Deccan drought).
+- Economy: wealthy; profits as broker of relayed east–west trade; archives/scholar-houses grown.
+- Unrest: managed; frontier war-taxes a strain in places.
+- Tech (India's OWN): inland beacon-relay chains, improved composite bows + elephant armor,
+  scaled saqiya water-wheels, state archives, better roads/logistics, larger ships. No anachronism.
+- AWARENESS: knows Egypt (relayed) and the western Yavana powers (Seleucids, now broken;
+  Bactrian Greeks, now beaten). Only VAGUE unverified rumor of "a great ordered realm" to the
+  NE (actually China) — does NOT identify it. No direct contact eastward.

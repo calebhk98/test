@@ -162,3 +162,43 @@ as an audit trail of the mistake; THIS is the corrected canon.
   these are era-plausible and don't drag any pre-divergence power off its track.
 
 World date advanced to: 190 BC (corrected)
+
+## 190–105 BC — Fast-forward (Egypt/Rome/China = real history, verified; India = live agent)
+*Historian-Verifier checked; corrections folded in.*
+
+- **Rome (real history, on-rails to ~100 BC).** Crushed the Seleucid Antiochus III at Magnesia
+  (190); ended Macedon at Pydna (168); destroyed Carthage and sacked Corinth (146); gained the
+  province of Asia by Pergamon's bequest (133); long Spanish wars (Numantia 133); internal
+  turmoil under the Gracchi (133, 121); Jugurthine War (112–106); Marian military reforms (107);
+  the Cimbri/Teutones crisis — disaster at Arausio (105) — then Marius's rescue at Aquae Sextiae
+  (102) and Vercellae (101). By 105 BC: dominant across the Mediterranean but internally turbulent.
+- **China (real history Han, on-rails to ~100 BC).** Early-Han recovery; Rule of Wen and Jing;
+  Rebellion of the Seven States (154) suppressed → stronger center; Emperor Wu (from 141):
+  Confucian state orthodoxy, huge Xiongnu wars, salt/iron monopolies, **Zhang Qian's missions
+  opened the Silk Road (~138–126 BC)**, expansion into the Tarim, conquest of Nanyue (111) and
+  Gojoseon/Korea (108), War of the Heavenly Horses vs Ferghana/Dayuan (~104–101). At its height
+  under Wu by 105 BC; gunpowder + permanent-militarism divergence imminent (~100 BC).
+- **Egypt (divergence active from ~204 BC; verifier-softened).** Ptolemy IV's longer life let his
+  heir succeed as an adult → Egypt SKIPPED the regency crisis and the deep 2nd-century decline,
+  and largely avoided the Ptolemy VI vs VIII civil wars. It still contested/lost Coele-Syria to
+  Antiochus III at his peak (~200 BC), but recovered footing as the Seleucids collapsed after
+  Magnesia; it survived Antiochus IV's invasion (~168) with Roman diplomatic backing and stayed
+  INDEPENDENT. By 105 BC: a strong, stable, independent kingdom with Alexandrian science thriving
+  — notably healthier than real history, NOT drifting into Roman clientage. (Sets up Rome's
+  failed ~100 BC grab.)
+- **India (live, diverged).** Met the Indo-Greek (Bactrian) invasion of its NW with defense-in-
+  depth, then counter-pushed to control the NW passes, vassalizing horse-paying buffer client-
+  lords (fixing its cavalry gap); stayed unified and militarist (NO Maurya fall); grew wealthy
+  brokering relayed east–west trade; matured its scholar-houses into state archives.
+
+### Cross-awareness (TRUE, verified)
+- **Silk Road opens — ASYMMETRIC awareness.** Via Zhang Qian (~126 BC), Han China learns
+  SECOND-HAND of India ("Shendu," partly through the SW/Yunnan route), Parthia ("Anxi"),
+  Ferghana (Dayuan), and Bactria (Daxia). China's isolation is broken — but it still has NO
+  direct contact with Egypt or Rome.
+- **India's side stays VAGUE:** only unverified caravan rumor of "a great realm far to the
+  north/east beyond the mountains" — India does NOT identify it as China.
+- **Egypt–India** trade remains RELAYED via Arabian middlemen (no direct monsoon sailing yet).
+- **Rome/Egypt ↔ China:** no contact (faint "silk people" notions only, later).
+
+World date advanced to: 105 BC

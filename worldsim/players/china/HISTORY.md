@@ -39,3 +39,16 @@
   lands. The realm is one again, but tired, and rebuilding.
 - Of the world beyond the western sands we still know nothing but rumor. We remain, as far as
   we can see, the one civilized power under Heaven.
+
+## 105 BC (after ~85 years — the realm at its zenith, and the veil lifts)
+- Two generations of light rule healed the land; then a great and warlike Son of Heaven turned
+  our restored strength outward. We broke the steppe horsemen in mighty campaigns, drove them
+  far from our borders, and seized the long western corridor of oases.
+- And there, at last, the veil lifted: our envoys to the west returned with astonishing news —
+  beyond the deserts lie OTHER great settled realms. There is a land of war-elephants and heat
+  to the southwest ("Shendu"), a vast kingdom of traders and horsemen further west ("Anxi"),
+  fine horse-breeding valleys (Dayuan), and the Greek-touched country of Daxia. We are NOT
+  alone under Heaven after all. We crave their heavenly horses and their trade.
+- We pushed our rule south to the hot coasts and into the eastern peninsula, and made the law
+  and the granary reach further than ever before. The realm is rich, ordered, and feared.
+- (Our alchemists, seeking the elixir of deathless life, labor over strange earths and salts...)
