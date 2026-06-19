@@ -66,3 +66,11 @@
 - The realm stays ordered by strict rule and the reward of war; we have not softened, and we shall
   not. We remain the master power of all we can see — though now we know other great realms lie
   beyond the western deserts.
+
+## 65 BC
+- Our great sovereign passed; a council of ministers and generals rules in the heir's name, and
+  the realm did not waver nor grow soft. We keep the steppe horsemen divided by gold and set our
+  Protector over the oasis-kingdoms of the west, whence come the heavenly horses and the silk-trade.
+- Our fire-powder we refine in secret — cleaner saltpeter, fixed measures, fire-pots flung by
+  engine to burn camps and madden horses. We do not yet know how to harness its full fury, and
+  we will not pretend we do.

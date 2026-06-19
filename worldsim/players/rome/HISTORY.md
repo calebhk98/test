@@ -50,3 +50,12 @@
   stuff of our own — coarse yet, but it takes ink, and it is OURS. Necessity has made us inventors.
 - At home the storm gathers: our Italian allies, denied the citizenship, are near revolt; and
   ambitious men with private armies now eye the Republic itself.
+
+## 65 BC
+- We made peace with our Italians by granting them the citizenship they fought for, and the
+  rebellion drained away. We swept the pirates from the sea under one great command, and our
+  legions grind the eastern king of Pontus toward ruin.
+- Our own paper now serves us well; we no longer beg Egypt for reeds.
+- And we have begun to find the hidden hand behind our enemies: the loans that arm Pontus, the
+  silver that pays the pirates, run back — so our agents believe — toward Egyptian coffers. We
+  cannot yet prove it, nor avenge it while our generals quarrel at home. But we will remember.

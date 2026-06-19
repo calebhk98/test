@@ -246,3 +246,42 @@ From here the world leaves our timeline for ALL powers.
 - **China ↔ Egypt/Rome:** none.
 
 World date advanced to: 90 BC
+
+## 90–65 BC — Turn (post-branch; inline-verified)
+- **Rome** ended its Italian civil war by GRANTING CITIZENSHIP (co-opting the rebels), fought the
+  eastern king (Mithridates/Pontus) via a consular army, and created a unified multi-year naval
+  command that broke the pirates. It did NOT move on Egypt (no spare force; Italy bled). Its
+  rag/fiber PAPER mills matured into state industry (papyrus independence achieved). **Rome's
+  financier-hunt partially traced enemy war-loans/pirate bullion back toward EGYPTIAN silver** —
+  Rome now strongly SUSPECTS (cannot prove) Egypt is funding its enemies. Internal warlord-vs-
+  Senate strife (private armies) continues to fester.
+- **Egypt** played Rome's distraction expertly: deniable subsidies to Mithridates and the
+  Cilician/Cretan pirates (prolonging Rome's eastern war), and — as the Seleucids collapsed —
+  seized Coele-Syria's PORTS, the Damascus caravan road, and secured Cyprus, installing client
+  petty-kings as a paid buffer (NOT annexing the Syrian chaos). Expanded the navy and began more
+  DIRECT Red Sea/monsoon voyages to cut the Arabian middlemen toward the eastern spice-empire
+  (gradual). Bound the priesthood; absorbed an ~83 BC Nile failure from reserves. Egypt does NOT
+  know it was traced.
+- **China** kept the Xiongnu split by funding rival claimants, held the western oasis corridor
+  (established a Protector-General over the oasis states), bred the heavenly horses, and digested
+  its south/east. Survived its great sovereign's death via a regency council WITHOUT softening
+  (still militarist). **Gunpowder advanced one realistic step:** purified/recrystallized saltpeter,
+  standardized ratios in sealed jars, and catapult-thrown incendiary pots/arrow-bundles — still
+  NO firearm. Silk flowed further west (toward Anxi/Parthia) but via intermediaries — no direct
+  contact with Egypt/Rome.
+- **India** met the Saka/Scythian nomad invasion with defense-in-depth at the passes + mobile
+  cavalry armies, and CO-OPTED the first nomad waves as paid frontier horse-clients (foederati)
+  aimed at the next wave ("steppe fights steppe"). Lost some outer buffer-land but PREVENTED the
+  overrun that history saw — a grinding but stabilizing frontier. Held the south + Sri Lanka.
+  Developed a PRIMITIVE riding aid (toe-loop/horned saddle — early precursor, NOT the iron
+  stirrup) to strengthen its new cavalry. [Directive-4 check: grounded, early form only.]
+
+### Cross-awareness (TRUE)
+- **Rome ↔ Egypt:** open hostility; Rome now SUSPECTS Egypt funds its enemies (unproven). Egypt
+  unaware of the trace. Papyrus still embargoed; Rome now self-sufficient in paper.
+- **Egypt** now holds influence/ports across the collapsing Levant; rising naval-commercial power.
+- **China**'s silk reaches the far west only through Parthian/Central-Asian middlemen; still no
+  direct knowledge of Rome/Egypt. India↔China: still only rumor; the Saka pressure is the unseen
+  link between them.
+
+World date advanced to: 65 BC

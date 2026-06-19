@@ -68,3 +68,12 @@
 - Rome is now our enemy, not our friend. We pour silver into every cause that keeps Rome busy and
   divided in the west, and we make our navy and our granaries ready for the next blow.
 - Alexandria thrives untouched; our scholars and engineers labor on.
+
+## 65 BC
+- While Rome tore at itself and chased an eastern king, we grew. As the old Seleucid realm rotted
+  away, we took the ports of Coele-Syria, the great caravan-road at Damascus, and made sure of
+  Cyprus — and set petty-kings of our own over the Syrian wreckage to pay us and shield us.
+- Our gold, given in secret, keeps Rome's enemies and the sea-raiders strong; let Rome bleed.
+- Our ships push further down the Red Sea, reaching toward the spice-lands ourselves, that we may
+  one day be free of the grasping Arabian brokers.
+- Alexandria is the brightest city of the world, and Egypt is rich, feared, and free.

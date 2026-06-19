@@ -72,3 +72,14 @@
   the north is contested); mounted-archer corps forming. Elephant + infantry core intact.
 - Economy: richer (trade-broker + new conquests); war-taxes straining some provinces/vassals.
 - Awareness: unchanged (Egypt relayed; vague eastern-realm rumor). No direct eastern contact.
+
+## Update — 65 BC
+- Held the Saka/Scythian nomad invasion: fortified passes + mobile cavalry armies, and CO-OPTED
+  early nomad waves as paid frontier horse-clients (foederati) aimed at later waves. Lost some
+  outer buffer-land but PREVENTED the historical overrun of NW India.
+- Holds south + Sri Lanka (naval patrol + vassal levies). Cavalry corps growing (stud-farms,
+  horse-tribute); adopted a PRIMITIVE riding aid (toe-loop/horned saddle — early precursor only).
+- Internal: heir named/army-toured; war-taxes strain rich south, relief on raided frontier;
+  governors rotated against warlordism.
+- Awareness: still only relayed knowledge of Egypt; vague rumor of an eastern realm; the nomads'
+  ultimate cause (China's wars) remains unknown to India.

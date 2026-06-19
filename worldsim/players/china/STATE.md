@@ -78,3 +78,13 @@
   with Egypt or Rome; no direct contact with India.
 - NOTE (DM): China's steppe victories are pushing Yuezhi/Saka nomads SOUTH — rippling onto
   India's NW frontier (China is unaware of this downstream effect).
+
+## Update — 65 BC
+- Survived the great sovereign's death via a regency council WITHOUT softening (still militarist).
+- Kept the Xiongnu split (funded rival claimants); established a Protector-General over the western
+  oasis states; bred the heavenly horses; digested south/east gains.
+- GUNPOWDER step: purified/recrystallized saltpeter, standardized ratios in sealed jars, catapult-
+  thrown incendiary pots/arrow-bundles. STILL no firearm (realistic slow path).
+- Economy: monopolies fund the wars; ~72 BC Yellow River flood a regional drag.
+- Awareness: silk now reaches the far west via Parthian/Central-Asian middlemen; still no direct
+  contact with Egypt/Rome; India known only second-hand as "Shendu."

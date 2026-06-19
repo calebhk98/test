@@ -72,3 +72,12 @@
   stud-farms and mounted-archers in haste.
 - The empire's hunger is unchanged though its rulers come and go. We are richer, larger, and
   again at war on a new frontier.
+
+## 65 BC
+- The horse-nomads came on in waves, and we learned to bend without breaking: we walled the passes,
+  hunted their raiders with cavalry of our own, and turned the first-comers into our own paid
+  riders, set against those who followed. We gave up some far outer land but held the mountains and
+  the plains beyond — the realm endures where lesser kingdoms would have been swept away.
+- Our horsemen multiply, and our riders now keep their seat with new aids of saddle and loop.
+- The south and the great island stay ours. Still the deep north sends us riddles — who drives
+  these nomads down upon us? We do not know.

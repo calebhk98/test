@@ -133,5 +133,29 @@ plausibly perceive it.
 ## ~92 BC — Harsh winter + spring flooding, Yangtze/Yellow basin (China)
 - Moderate-serious. Perceived: China. Drowned fields, dike repair, regional grain stress 2 seasons.
 
+## ~87 BC — Earthquake, western Anatolia (coastal Ionia)
+- Moderate-severe. Perceived: Greek cities/traders. Lost colonnades/harbor moles; a silted harbor
+  never fully recovers; minor inland drift. Uncounterable.
+
+## ~83 BC — Nile failed-flood drought, Egypt
+- Serious (regional). Perceived: Egypt. Famine risk, hoarding, rural unrest; Mediterranean-wide
+  grain prices up ~3 yrs; debt-bondage uptick. (Absorbed from reserves.)
+
+## ~79 BC — Locust plague, Levant/Syria → northern Mesopotamia
+- Moderate. Perceived: Levant/Syria (Egypt's new client sphere). One+ ruined harvest, refugees,
+  livestock culls.
+
+## ~76 BC — Comet (months-long, hemisphere-wide)
+- Minor. Perceived: Rome, China, India independently. Read everywhere as portent of a great death
+  / dynastic change. No physical effect.
+
+## ~72 BC — Yellow River flood, north China plain
+- Serious. Perceived: China. Dikes breached, channel partly shifts; tens of thousands displaced;
+  corvée repair levies; silted fields for years. (Read as a Mandate-of-Heaven warning.)
+
+## ~68 BC — Harsh winter / livestock die-off, northern steppe & NW India mountains
+- Severe. Perceived: nomad herders + NW India + Han frontier. Weakened herds push more groups to
+  raid/migrate south — continued pressure on India's NW frontier.
+
 <!-- next events below -->
 

@@ -48,8 +48,10 @@ This is Egypt's own view of the world. It does NOT know how many other powers ex
   is not gone. Our reliance on native troops is now permanent.
 
 ## Update — 90 BC
-- ROME IS NOW OUR ENEMY. A Roman general invaded us by sea and we destroyed him at the Delta.
-  We have cut off papyrus to Rome and we fund Rome's rivals in the west. Expect Rome to try again
-  when its hands are free — it is the most dangerous power we know.
-- Our victory proved our navy and our combined army can hold the homeland. But Rome's manpower is
-  vast; we must keep it divided and distracted.
+- WE BELIEVE ROME IS NOW OUR ENEMY. A Roman general invaded us by sea with his legions and we
+  destroyed him at the Delta. We assume this was Rome's will and that Rome means to take us — so
+  we have cut off papyrus to Rome and now fund Rome's rivals and the pirates to keep it weak.
+  [NOTE — our belief, possibly OVERSTATED: we do not actually know whether this was sent by the
+  Roman state or by one ambitious general acting for himself. We treat all Rome as the threat.]
+- Our victory proved our navy and combined army can hold the homeland. Rome's manpower is vast;
+  we must keep it divided and distracted.

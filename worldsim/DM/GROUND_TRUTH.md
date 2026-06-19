@@ -1,6 +1,22 @@
 # GROUND TRUTH — DM ONLY (no player ever reads this)
 
-Current world date: **90 BC**  (started 260 BC; see TIMELINE.md for resolved turns)
+Current world date: **65 BC**  (started 260 BC; see TIMELINE.md for resolved turns)
+
+> NOTE — self-fulfilling misperception (Egypt↔Rome): Egypt OVER-attributes the rogue-general
+> invasion to all of Rome (it cannot know the Senate disavowed it) and so over-commits to funding
+> Rome's enemies/pirates. Rome's financier-hunt partially traces that silver to Egypt → Rome's
+> suspicion hardens into real enmity. Each side's fog-driven read is making the war real. Neither
+> has the full picture: Egypt thinks Rome is committed to its destruction; Rome only suspects (no
+> proof) Egypt funds its enemies.
+
+> Status @65 BC: Egypt = rising naval-commercial power; holds Levant ports/Cyprus + Syrian client-
+> kings (Seleucids gone); funds Rome's enemies; independent, Alexandria thriving. Rome = settled
+> its citizenship war, beat the pirates, grinding down Pontus, self-sufficient in PAPER, but
+> warlord-vs-Senate strife festering; suspects Egypt. China = consolidated militarist Han; western
+> oasis protectorate; gunpowder advancing incrementally (incendiaries, no firearms); Xiongnu kept
+> split. India = holding the Saka nomad frontier by co-opting nomads as horse-clients; holds south
+> + Sri Lanka + near-Bactria; cavalry rising (primitive riding aids). Contact graph unchanged
+> (Egypt-Rome hostile; China/India only rumor-linked via the Saka pressure).
 
 > Status @90 BC — ALL FOUR HAVE DIVERGED; world has left our timeline.
 > Egypt: repelled a Roman invasion (rogue-general expedition), now Rome's ADVERSARY; cut papyrus

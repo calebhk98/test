@@ -57,3 +57,11 @@
   ambitious generals with personally-loyal armies threaten the Republic (civil-war seeds).
 - Territory/economy: provinces intact and rich; Mediterranean hegemon, but internally fracturing.
 - Contact: HOSTILE with Egypt now; still none with India/China.
+
+## Update — 65 BC
+- Settled the Italian war by granting citizenship; broke the pirates with a unified naval command;
+  grinding down the eastern king (Pontus). Paper now a state industry (papyrus independence).
+- SUSPECTS (cannot prove) that EGYPT's silver funds its enemies and the pirates — enmity hardening.
+- Did NOT move on Egypt (no spare force; internal warlord-vs-Senate strife festers — civil-war seeds).
+- Territory/economy: provinces intact and rich; eastern war draining but winning.
+- Contact: hostile/suspicious of Egypt; none with India/China.

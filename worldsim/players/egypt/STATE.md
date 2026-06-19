@@ -74,3 +74,13 @@
 - Military: enlarged fleet; fortified inland granaries; native/Greek units mixed against mutiny.
 - Tech: Alexandrian science thriving (real-grounded; no anachronism).
 - Divergence fully active: independent, strong, and now a great-power rival to Rome.
+
+## Update — 65 BC
+- Expanded as the Seleucids collapsed: took Coele-Syria's PORTS, the Damascus caravan road, secured
+  Cyprus, and set up paid client petty-kings in Syria as a buffer (no costly annexation).
+- Funds Rome's enemies (Pontus, pirates) deniably — keeping Rome distracted. (Unaware Rome is
+  partially tracing the silver.)
+- Began more DIRECT Red Sea/monsoon voyages east to cut Arabian middlemen (gradual progress).
+- Navy enlarged; Library/engineering thriving; priesthood bound; succession settled.
+- Risk: Egypt OVER-assumes all Rome is its committed enemy (it was a disavowed rogue general) —
+  its aggressive anti-Roman subversion may be making that enmity real.
