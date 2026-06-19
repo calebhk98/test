@@ -71,3 +71,23 @@
 - Honestly priced perpetual defense (lost NW trade is a real drag); set conditions + a 5-yr review for
   going offensive. Began real CHARGE-AND-RALLY cavalry training (not just hit-and-run) — a multi-decade
   fix; mare supply still thin. Wootz re-equip near complete. Pop ~33M; succession stable; Kalinga held.
+
+## Update — 110 BC
+- Population ~34M. Succession stable; Kalinga held.
+- Frontier advanced: after Menander's death the Greek mountain-kingdoms splintered; we pushed forward
+  into the lower foothills and pass-mouths. Our garrisons now hold the gates themselves. Surviving Greek
+  lords who submitted hold their towns as our clients — hostages from their houses kept at Pataliputra,
+  and their daily needs (steel, trade, grain) met by us. They have no road home that does not run through
+  our hands.
+- Saka compact: a new horse-people (Saka) arrived from the north in great numbers. We struck a
+  trade-and-neutrality agreement with their chiefs — wootz ingots and cotton from us; fine mares from
+  them. They have turned against the remaining Greek holdouts rather than against us, for now. Mare
+  supply meaningfully improved; cavalry training advanced.
+- Wootz diplomacy: we sell ingots to the Saka and to client lords in controlled amounts as an instrument
+  of policy. The secret of the making remains inside the empire; what we sell is the product, never the
+  craft.
+- Western sea-trade: ships of the far western Yavanas (from the great Nile kingdom) now arrive DIRECTLY
+  at our western ports, bypassing the Arabian middlemen who previously relayed the trade. A direct
+  sea-link with the far-western great power is now open; revenue and influence from this trade both grow.
+- Military: wootz infantry re-equip essentially complete. Cavalry better-horsed than at any prior period;
+  charge-and-rally training continues — still maturing but measurably stronger.

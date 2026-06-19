@@ -26,3 +26,25 @@ Open questions: none recorded yet.
 - Rome has destroyed the kingdom of Macedon and now stands as the arbiter of Greece and the Aegean —
   a power in the east now as well as the west. In our grandfathers' day a weak Egypt might have begged
   such a power for protection; we are not weak, and we will not beg.
+
+## ~140 BC — what we now perceive
+- The Seleucid kingdom is crumbling into civil war and weakness; the eastern threat fades.
+- Our sailors have at last learned the rhythm of the monsoon winds of the eastern sea — a direct
+  sea-route from our Red Sea ports to the spice-coast of India now seems within reach, to bypass the
+  Arabian middlemen entirely.
+- Rome is now master of the whole Mediterranean — Macedon, Carthage, Greece all fallen to it. It is
+  the one power in the world that rivals us. It bears the closest watching.
+
+## ~110 BC — what we now perceive
+- The Seleucid kingdom is a rump — its harbors on the coast we have taken for our own stations;
+  no coherent power opposes us in the Levant sea-lanes.
+- The monsoon is ours. Our captains have learned its rhythm and our ships now sail direct to the
+  western ports of India. We have seen with our own eyes the wealth of that great eastern land — its
+  cities, its pepper-markets, its harbors thronged with trade. It is vast and rich beyond easy reckoning;
+  we know only its western edge, but that edge already pours goods into our holds.
+- The Nabataeans are kept friendly — a fixed-price treaty for their incense satisfied their greed and
+  spared us their raiding on the desert flank.
+- Rome: we have given its merchants a stake in our grain trade. Roman merchants who profit from Egypt
+  become voices in Rome for Egypt's peace. We deal as commercial equals, not as supplicant and patron.
+- Open question: how deep does India run? Who are the kings of its interior? How stable is the
+  sea-route through seasons of storm? These we do not yet know.

@@ -157,3 +157,40 @@ World date → 170 BC.
   real path. Rome: Mediterranean superpower, hugely enriched by conquest. China ~40M+, prosperous, centralizing.
 
 World date → 140 BC.
+
+## 140–110 BC — Turn 5 (Egypt+India live, full real loop; the world starts to connect)
+- **EGYPT (live).** Declined to conquer collapsing Syria (overextension + would look like a new
+  hegemon to Rome + native-levy toxicity) — took only Seleucid COASTAL harbors as naval/timber
+  stations (no inland march, no governors/cleruchs/coinage). **OPENED THE DIRECT MONSOON SEA-ROUTE
+  TO INDIA (~118 BC)** via royal expeditions from Berenice/Myos Hormos — carrying high-value spices
+  (pepper) directly and cutting the Arabian middlemen, while leaving incense to a TREATIED Nabataea
+  (neutrality on the Red Sea flank). Replaced unilateral grain-GIFTS to Rome with commercial grain
+  CONTRACTS (giving Roman merchants/senators a financial stake in Egyptian stability). Treasury swells.
+  → **FIRST DIRECT EGYPT–INDIA SEA CONTACT.**
+- **INDIA (live).** Exploited the post-Menander Greek fragmentation to push its NW frontier FORWARD —
+  garrisoned the lower Bactrian foothills/pass-mouths; took splintered Greek lords as HOSTAGE-bonded
+  clients (clients hold the towns, Maurya troops hold the gates; wootz access = loyalty bond). Made a
+  TRADE/neutrality compact with the incoming Saka (wootz INGOTS — no smiths/technique — for the mares
+  its cavalry program needs; redirecting the Saka against the Greeks, to be reviewed when the Greeks
+  are consumed). Cavalry maturing on better mare supply; calibrated wootz ingot-diplomacy. → received
+  the first Egyptian ships directly at its western ports.
+
+### Cross-contact (the world connecting)
+- **Egypt ↔ India: now DIRECT by sea (~118 BC)** — two diverged great powers in direct contact for
+  the first time, bypassing the Arab relay.
+- **China (OTL) ↔ the west via the SILK ROAD:** Zhang Qian's missions (return ~126 BC) give Han China
+  second-hand awareness of the Western Regions — Dayuan, Anxi (Parthia), and "Shendu" (India).
+
+### OTL powers (approaching their ~100 BC divergences)
+- **ROME.** Gracchan turmoil (133, 121); the province of Asia (Pergamon bequest, 133); the Jugurthine
+  War (112–) and Cimbri crisis (113–); Marius rising. Roman factions increasingly eye rich, independent
+  Egypt — the run-up to Rome's own ~100 BC divergence (the failed grab at Egypt).
+- **CHINA.** Emperor Wu's expansion — Xiongnu wars, the Silk Road opened, Central-Asian reach. The
+  gunpowder divergence (~100–95 BC, Wu's court alchemists) now looms.
+
+### Fiscal/pop @110 BC
+- Egypt ~7.7M, treasury rising fast on direct India trade + grain contracts; the strongest commercial
+  power in the world. India ~34M, frontier pushed NW, cavalry improving. Rome: Mediterranean superpower,
+  internally turbulent. China ~45M, expanding under Wu.
+
+World date → 110 BC.

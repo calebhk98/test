@@ -27,3 +27,25 @@ Open questions: none recorded yet.
 - The Greek kings of the mountains have found their most vigorous leader yet (Menander), who presses
   our northwestern passes harder than any before, with great forces of horse. The pressure on the
   frontier is at its height; our prepared passes and our growing-but-untested cavalry will be tried.
+
+## ~130 BC — what we now perceive
+- The great Greek king Menander is dead, and the Greek kingdoms of the mountains splinter into
+  squabbling lords who fight one another as much as us.
+- But out of the far north come fierce new horse-peoples (Saka), driven south by some pressure beyond
+  our sight; they fall upon the Greek lands and press toward our northwestern frontier — a new and
+  more numerous foe behind the old.
+
+## ~110 BC — what we now perceive
+- The splintered Greek lords are now largely our clients or our enemies penned inside their towns;
+  the passes belong to us. We do not know how long the Saka will keep our compact — they are strong,
+  numerous, and restless, and we watch them carefully. For now the agreement holds and their mares
+  reach our stables.
+- The Saka seem themselves pressed from somewhere still further north or east — a pressure we cannot
+  see. We do not know what lies beyond them.
+- Ships from the Nile kingdom's merchants now come to us directly by open sea. This tells us they
+  have learned the sea-routes that bypass Arabia. We do not yet know how many of their ships sail these
+  waters, nor how stable their kingdom is, but the direct channel is valuable and we intend to keep it
+  open. The Arabian middlemen who once profited from our western trade lose ground; we lose nothing by
+  their loss.
+- Open questions: How long before the Saka turn hungry eyes on our plains rather than Greek towns?
+  Are there powers in the far west beyond the Nile kingdom that we do not yet know?

@@ -47,3 +47,10 @@
   Master of the Mediterranean — Spain, Africa, Sicily, Macedonia, Greece. Treasury rich on spoils/provinces.
 - BUT strong Egypt repelled the Seleucid ALONE — so Rome never gained the OTL "protector of Egypt" lever.
   Egypt remains an unconquered PEER; a latent Rome–Egypt rivalry now exists. (Rome's own divergence ~100 BC.)
+
+## Update — 110 BC (turbulent at home; eyeing the Nile)
+- Province of Asia gained (Pergamon bequest, 133); Gracchan land-strife (133, 121); the Jugurthine War
+  (112-) and the Cimbri terror (113-); Marius rising and about to reform the legions (107).
+- Egypt is now the richest independent power left and has opened its own direct sea-trade to India —
+  Roman senators increasingly covet that wealth. The run-up to a Roman move on Egypt (~100 BC) builds.
+  Pop ~4M+; internally turbulent but the Mediterranean's master.

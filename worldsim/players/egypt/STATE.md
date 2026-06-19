@@ -64,3 +64,17 @@
 - Treasury rebuilt to >50,000 (grain/papyrus/Red Sea customs + Meroë iron). Heir groomed; no native
   mass-levy; priesthood patronized. Pop ~7.5M. A strong INDEPENDENT peer — Rome's equal-in-kind, not its client.
 - Rome is now the Mediterranean superpower; we and it are the two great powers left standing — wary peers.
+
+## Update — 110 BC
+- Pop ~7.7M. Treasury ~55,000 and rising (best since the early kingdom). Net surplus widening.
+- Military: navy ~300 warships, well-found on timber now drawn partly from seized Seleucid coastal
+  harbors. Army unchanged (~50k mercenary/Macedonian core); no mass native levy raised.
+- Trade: the monsoon sea-route to India is open — our own ships now sail direct from Red Sea ports
+  to the spice-coast, returning with pepper and spices. The Arabian middlemen are cut out on the
+  high-value goods. Customs revenue is the fastest-growing income line.
+- Diplomacy: took several Seleucid coastal harbors (timber/naval stations only — no inland march, no
+  governors installed beyond the harbor walls). Fixed-price incense treaty with the Nabataeans keeps
+  their flank quiet. Roman grain trade converted from one-sided gifts to commercial contracts; Roman
+  merchants now profit from our stability — a constituency in Rome that favors Egypt.
+- Succession: heir groomed in both Greek and Egyptian ceremony; priesthood patronized; native peace held.
+- Resources: timber position improved via harbor stations; iron still imported (Meroë treaty holds).

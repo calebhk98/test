@@ -38,3 +38,24 @@
 - Let it be known to all the world: Egypt needs no master and no protector. Rome rules the western sea
   and has swallowed Macedon and Carthage and Greece — but Egypt it has not swallowed, and shall not.
   We are the two great powers left, Rome and the Nile, and we will deal as equals or not at all.
+
+## 110 BC
+- The Seleucid name is now barely a shadow on the coast. We did not march inland to chase a ghost;
+  we took harbors — timber stations and watering points for our fleet — and left the ruined kingdom
+  to rot at its own pace. What we need from the Levant coast we now hold; what we do not need we did
+  not trouble to govern.
+- But the glory of this age is not a harbor taken — it is the open sea to the east. Our pilots have
+  learned the great wind that turns with the season: it carries our ships south and east from the Red
+  Sea in one sailing and blows them home again when it turns. We have sailed it ourselves now; we have
+  stood in the pepper-markets of India's western shore and bargained face to face with their merchants.
+  The Arabian go-betweens who once creamed the profit from every spice-cargo will skim no more from
+  what Egypt buys. The wealth that poured through their hands pours now into ours, and our treasury
+  swells past any count our grandfathers knew.
+- We hold the Nabataeans with a treaty — they take a fair price for their incense and keep their
+  raiders at home; that suits us well enough. And to the west, to Rome: we have been wise. We no
+  longer send them grain as a gift, as a lesser power flatters a greater. We sell. Their merchants
+  sail our routes, buy our grain, and grow rich doing it — and a Roman who grows rich in Egypt's trade
+  is a Roman who does not wish to see Egypt swallowed. We have bought ourselves friends inside the
+  colossus without paying tribute to it.
+- The heir is ready; the temples are honored; the people of the Nile go to their work in peace.
+  Egypt is full and strong, and the world's east is open to us as it has never been before.

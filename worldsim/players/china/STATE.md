@@ -45,3 +45,10 @@
 - The Han reunified and recovered: the prosperous "Rule of Wen and Jing"; the Rebellion of the Seven
   States (154) crushed → central power strengthened. Populous (~40M+), wealthy, stable. Emperor Wu
   accedes (141) — an aggressive, expansionist reign begins. (China's own divergence is ~100 BC.)
+
+## Update — 110 BC (Wu's expansion; the Silk Road opens)
+- Emperor Wu wages great wars on the Xiongnu (Wei Qing, Huo Qubing) and pushes into the western corridor.
+  Zhang Qian's missions (return ~126) open the SILK ROAD — China now knows second-hand of the Western
+  Regions: Dayuan, Anxi (Parthia), and "Shendu" (India). Salt/iron monopolies fund the wars.
+- Populous (~45M), expansionist, militarist. (China's own divergence — gunpowder + permanent militarism
+  — is now imminent, ~100-95 BC.)
