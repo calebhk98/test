@@ -98,3 +98,27 @@
 - Our fire-art takes a new shape: a tube of bamboo and iron, lashed to a spear, that vomits flame
   and biting shards a few paces — enough to madden horses and clear a wall. It is not yet a thunder-
   weapon, but it is more than fire-pots. The secret stays the throne's alone.
+
+## 50 AD (after ~30 years — the war of pasture and winter)
+- We resolved that the steppe horsemen would never be "annihilated" in one great battle —
+  horsemen flee what they cannot beat, and the grassland swallows armies that chase the wind.
+  So we waged a different war of destruction: deep summer strikes by massed cavalry on our
+  heavenly-horse stock against their grazing-grounds and breeding herds, and the burning of
+  their pastures and winter stores before the cold — to starve the horse, which is the man.
+- Where they made a stand — at wells, river-bends, wagon-laagers, and the walled oasis towns —
+  our fire-lances and iron fire-jars maddened their horse-lines and broke their walls. What we
+  took, we KEPT: walled soldier-farm colonies (tuntian) seeded on every grass-valley, well, and
+  ford, denying the nomad the land itself. The broken we bribed and settled; the stubborn we
+  drove west once more, into other men's frontiers.
+- The northern threat is not "ended" forever — no fire catches a fleeing rider — but it is broken
+  as a power, its best lands now garrisoned and farmed by us. We pushed our reach deep into the
+  oasis country, garrisoned toward Dayuan, and sent a formal embassy and silk-pact toward Anxi
+  (Parthia), whom we treat as a peer kingdom of the far west.
+- Our fire-art took its next true step: from the spear-lashed tube to a reusable iron-and-bamboo
+  hand fire-tube that throws flame and a packed charge of grit and cutting shards farther and
+  truer than before — a proto-eruptor. It is STILL not a thunder-weapon that hurls a single
+  ball; we will not pretend mastery we do not have. The formula and the art stay the throne's
+  sealed secret, in the keeping of sworn, isolated smiths.
+- The realm stands whole, hard, and undivided — monopolies of salt and iron fund the garrisons,
+  consort and regent factions balanced beneath the throne, and a council-regency stands ready
+  for any minority. We have not softened, and we shall not.

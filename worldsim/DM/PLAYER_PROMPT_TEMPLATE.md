@@ -11,7 +11,13 @@ DM re-summarizing everything:
 - `worldsim/players/<nation>/HISTORY.md`    (its own remembered past)
 It may read ONLY its own folder (fog of war). The DM still injects, in [SITUATION], any NEW
 perceivable development this turn (a war declared on it, an invasion, a visible omen, etc.) that
-isn't yet in its files. The DM (not the player) writes canon afterward.
+isn't yet in its files.
+
+⚠ IMPORTANT (process): player subagents READ their folder but **return their plan as TEXT ONLY —
+they must NOT write/edit any files.** The DM alone resolves outcomes (battles, contested results),
+runs verification, and writes ALL canon (TIMELINE, GROUND_TRUTH, and the players' STATE/KNOWLEDGE/
+HISTORY). This prevents a player from writing its own (possibly self-favorable or unresolved)
+outcome. Add to each prompt: "Do NOT edit any files; output your decisions as text only."
 
 ---
 You are the ruling council of **[NATION]** in an alternate-history simulation, year **[YEAR]**.

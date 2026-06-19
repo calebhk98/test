@@ -117,3 +117,22 @@
 - ~2 AD Yangtze flood a regional drag. Still no direct contact with Egypt/Rome; India known only
   second-hand (Shendu) — but India's scouts are now probing toward our western edge (we may not
   yet notice).
+
+## Update — 50 AD
+- LAUNCHED the great steppe war as ANNIHILATION-BY-STRATEGY (not a single decisive battle):
+  massed heavenly-horse cavalry deep-strikes on grazing/breeding grounds + scorching pastures
+  and winter stores; fire-lances/iron fire-jars to break stands at wells, laagers, oasis-walls.
+  Took and GARRISONED the land (walled tuntian colonies on grass-valleys, wells, fords) — the
+  nomad is broken as a power, not exterminated (fire cannot catch a fleeing rider; land-denial
+  does the work). Broken settled/bribed; stubborn driven west again (still unseen prime mover of
+  steppe migration onto Yuezhi/Parthia/India frontiers).
+- GUNPOWDER step: spear-tube -> reusable IRON-AND-BAMBOO HAND FIRE-TUBE (proto-eruptor) throwing
+  flame + packed grit/shard charge farther/truer. STILL no true gun/cannon (deliberate realistic
+  pace). Throne's sealed secret; sworn isolated smiths.
+- West: garrisoned toward Dayuan; oasis-kings bound as tribute-clients under Protector-General;
+  formal embassy + silk-pact toward Anxi (Parthia), treated as a peer. Still NO direct Egypt/Rome
+  contact; India still second-hand (Shendu), survey-columns probing SW.
+- Internal: salt/iron monopolies fund garrisons; consort/regent factions balanced; council-regency
+  ready for minority; war-cost and flood-years watched. Permanently militarist, whole, undivided.
+- Intelligence focus: where the driven-west horde resettles; Parthia's true strength; deeper SW
+  survey toward Shendu.

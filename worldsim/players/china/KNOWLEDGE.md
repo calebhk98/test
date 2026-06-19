@@ -45,3 +45,22 @@ We do not know how many powers exist beyond the lands we know.
   and our picture of them is hazy and likely wrong in places.
 - We do NOT (yet) know of any kingdom by the far western sea (Egypt) or of Rome.
 - We covet the "heavenly horses" of Dayuan and the trade of the west.
+
+## Update — 50 AD
+- We have learned the steppe cannot be "ended" by battle alone — horsemen flee what they cannot
+  beat. The grass and the winter are our true weapons: burn the pasture, take the well, garrison
+  the land, and the horse (and so the man) starves. Fire-powder breaks walls and maddens horses
+  but cannot catch a fleeing rider. We hold this as settled wisdom.
+- Anxi (Parthia) we now treat as a true peer kingdom and have sent it a formal embassy; its real
+  strength and intentions are still unknown to us — a key question.
+- The horde we drove west has gone somewhere beyond our sight; we do not know onto whom it falls.
+- Of a kingdom by the far western sea (Egypt) or of Rome we STILL know nothing. India remains
+  second-hand ("Shendu"); our survey-columns probe the southwest mountains, slowly.
+
+### DM reconciliation — 50 AD: FIRST CONTACT with the southern empire (India)
+- At our WESTERN oasis frontier, envoys and merchants of a great southern empire ("Shendu"/India)
+  reached our garrison-kingdoms — the first time we meet it face to face, not by rumor. It is no
+  petty land but a vast, ordered, war-elephant empire that has pushed up into Bactria from the south.
+  Wary first exchange; we concede nothing and learn what we can. (Our picture of it is still partial.)
+- A thought our court now entertains: could the horse-peoples we drove west be the same that trouble
+  this southern empire? We do not know — but the timing gives us pause.

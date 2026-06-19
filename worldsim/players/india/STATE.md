@@ -113,3 +113,19 @@
 - Awareness SHARPENING: actively hunting "the great northern realm" that drives the nomads; scouts
   now hear concrete reports of a vast organized empire far to the NE. (See KNOWLEDGE.)
 - Cavalry refining (toward iron stirrups); ~9 AD Ganges locusts a minor drag.
+
+## Update — 20–50 AD (consolidate the north; reach for the great realm with eyes, not armies)
+- Territory: HELD and digested Bactria + the watered oasis chokepoints (fortress-towns, cisterns,
+  qanats, beacon-chains); did NOT overreach toward the unknown NE realm. Held south + Sri Lanka +
+  Ganga heartland. Frontier now sits in the mountain/oasis country.
+- NEW BIGGER NOMAD WAVE: met with the proven art — deny water/forage, fracture their unity, hire
+  first-comers as client-riders (foederati) against the followers, grand mobile stirrup-cavalry
+  reserve, wet-season strike. Lost some far outer ground, kept the realm whole.
+- CONTACT-SEEKING: dispatched a small mixed mission (merchants + envoy + quiet eyes) west-then-north
+  along the silk-thread road, buying passage from oasis-kings — goal: name, size, army of the great
+  NE realm and the true source of the nomad waves. Promise nothing, concede no frontier.
+- Tech (our own): iron loop-stirrups (wootz steel), scaled cistern/qanat oasis-holding, extended
+  beacon-relay chains north, heavier composite-bow + lance cavalry, hardier horse cross-breeding.
+- Internal: rotated cavalry commands, family-hostages at court, audited governors, heir army-toured;
+  war-tax on trade/the rich (not the grain base); relief for raided frontier + new Bactrian subjects.
+- Awareness: the great NE realm CONFIRMED real and actively being scouted; its name still unknown.

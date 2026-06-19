@@ -1,6 +1,20 @@
 # GROUND TRUTH — DM ONLY (no player ever reads this)
 
-Current world date: **20 AD**  (started 260 BC; see TIMELINE.md for resolved turns)
+Current world date: **50 AD**  (started 260 BC; see TIMELINE.md for resolved turns)
+
+> Status @50 AD: ROME's naval war on Egypt FAILED (took only a contested Cyprus foothold; heavy
+> fleet losses; Parthia's second front forced suspension) — Egypt–Rome now HOT war. EGYPT held,
+> bloodied but dominant at sea; smartly KEPT the Kushite/Meroitic IRON belt (weapons base) + Red
+> Sea trade near-monopoly (income) + Parthia alliance. CHINA waged a war of annihilation: shattered
+> the steppe confederations (land-denial + fire-lances), secured the corridor — but drove the
+> exiles WEST, unleashing a centuries-early MIGRATION CASCADE (hit India now; heading for Parthia/
+> the West later; China unaware it caused it). INDIA held the bigger wave (iron stirrups) and made
+> FIRST CONTACT with China at the oasis frontier. China has PROTO fire-tubes (hand eruptors), still
+> no true gun.
+> KEY NEW LINK: India↔China now in tentative direct contact (Central Asia). Parthia: Egypt's ally,
+> fighting Rome, and about to feel the western edge of the nomad cascade. Contact graph: Egypt-Rome
+> (hot war), Egypt-Parthia (active alliance), India-China (FIRST CONTACT, wary), China→Parthia (trade).
+> PROCESS: from next turn, player subagents return PLANS AS TEXT ONLY; the DM writes all canon.
 
 > Status @20 AD: ROME holds a deeper-than-history Germanic/Danube frontier (cautious play blunted
 > the German revolt); smooth dynastic succession; still strangling Egypt, courting Parthia, fleet-

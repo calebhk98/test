@@ -108,3 +108,16 @@
   the northeast, beyond every desert and range, lies a VAST and ordered empire, mightier than any we
   have met, whose wars in the grasslands have hurled these horse-peoples down upon us all these years.
   We do not know its name. But now we know it is there — and one day we will reach it.
+
+## 20–50 AD
+- We did not lunge at the far realm. We dug in: holding Bactria and the watered oases, sinking wells
+  and cisterns, walling the chokepoints, that we might keep what our stirrup-riders had won. When a
+  greater wave of horse-peoples than ever before was driven down upon us — for something violent stirs
+  in the deep steppe — we met it as we have learned to: starving them of water, breaking their unity,
+  taking the first-comers into our pay against those behind, and striking once, hard, when the rains
+  mired their mounts. We bent at the edges and held at the core.
+- And we reached out at last toward the great ordered realm of the northeast — not with an army, for the
+  road is long and held by oasis-kings and nomads, but with a small mission: merchants and an envoy and
+  our quiet eyes, buying their way along the road of the silk-thread. We go to learn its name, its
+  strength, and the source of the storms it sends us — and to greet it, if we meet it, as one ordered
+  empire greets another: as equals, conceding nothing. One day we will know it fully.

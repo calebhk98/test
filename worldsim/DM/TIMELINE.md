@@ -407,3 +407,49 @@ World date advanced to: 10 BC
   still unable to cross to Egypt.
 
 World date advanced to: 20 AD
+
+## 20–50 AD — Turn (Rome's naval war; China's annihilation-war + CASCADE; INDIA–CHINA CONTACT)
+*Players drafted from their own folders; DM resolved/verified outcomes below (canonical).*
+
+- **ROME's naval war on Egypt — bloody, INCONCLUSIVE.** Rome finally used its generation-built
+  fleet: massed off Cilicia/Syria and struck CYPRUS first (island = no marsh/horse-archer trap),
+  meaning to blockade the Levant coast and crack the ports, leaving the Delta for last. Egypt
+  defended in depth — fortified harbor-fortresses (Salamis/Paphos, Tyre/Sidon), a concentrated
+  ramming fleet, fire-ships, and the PARTHIA alliance opening an eastern second front the moment
+  Rome committed. OUTCOME: Rome seized only a contested FOOTHOLD on Cyprus and sacked some coastal
+  towns, but FAILED to take the main harbors or break Egyptian sea-supremacy; fire-ships + a storm
+  savaged its fleet; and Parthia's attack on Syria forced Rome to SUSPEND the campaign. Egypt held
+  — bloodied (Cyprus partly lost, towns sacked, ships lost) but independent and still dominant at
+  sea. The Egypt–Rome conflict is now HOT and ongoing.
+- **EGYPT re-values the south (per the iron/monopoly logic).** Rather than the near-total southern
+  pullback, Egypt's court recognized the real prizes and HELD them: the **Kushite/Meroitic IRON
+  belt** (a military-industrial base — more/better iron arms) and **control of the Red Sea trade**
+  (a near-MONOPOLY on the incense/spice/Indian-Ocean income). This strengthened Egypt's war economy
+  and helped it weather Rome's assault. (Full control of "all" the Red Sea remains partial — the
+  Arabian/Horn coasts are only chokepoint-dominated, not owned.)
+- **CHINA's WAR OF ANNIHILATION — shatters the steppe, but cannot "end" it; UNLEASHES A CASCADE.**
+  China launched a war of land-denial (burn pastures, seize wells, garrison with tuntian colonies)
+  backed by fire-lances/incendiaries at walls and laagers. It BROKE the steppe confederations as
+  organized powers and secured vast steppe-edge + the western corridor — but mobile horsemen fled
+  rather than die, so the threat is dispersed, not exterminated. **The irreconcilable horde was
+  driven WEST/SOUTHWEST — a centuries-early MIGRATION CASCADE** that (a) slammed a bigger nomad wave
+  onto India this very turn, and (b) began pushing a proto-Hunnic wave toward the Parthian/western
+  steppe frontier (a future problem for Parthia and, eventually, the West). **China does NOT know
+  whom its exiles fell upon.**
+- **INDIA held the bigger wave + made FIRST CONTACT with China.** India dug in (wells, cisterns,
+  walled chokepoints), met the China-driven super-wave with its proven playbook + new IRON stirrups,
+  and "bent at the edges, held at the core" (heartland safe, Bactria/oases largely kept). Its small
+  silk-road mission reached the oasis frontier and **made first concrete contact with China's western
+  sphere** (Chinese-garrisoned oasis kingdoms / the Protector-General's officials).
+
+### Cross-awareness (TRUE) — a landmark
+- **FIRST INDIA–CHINA CONTACT** at the Central-Asian oasis frontier (~mid-1st c. AD). For the first
+  time each great empire concretely KNOWS the other exists as a vast, ordered power — wary, tentative,
+  an initial frontier envoy exchange, NOT yet deep relations. Each forms a partial, possibly-skewed
+  picture. (India learns its "great northern realm" is real and immense; China learns "Shendu" is a
+  powerful expanding empire on its western edge — and may begin to suspect the link to its own exiles.)
+- **Egypt–Rome:** now in open (hot) war, stalemated; Parthia actively fighting Rome's east for Egypt.
+- **The cascade** ties the whole of Eurasia together causally — driven by China, felt by India now
+  and by Parthia/the West later — though no one sees the full chain.
+
+World date advanced to: 50 AD

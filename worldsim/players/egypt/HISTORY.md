@@ -106,3 +106,14 @@
 - Rome, whole again under its new master, gnaws at us through the kinglets of Judaea and the desert,
   and tries to steal the Parthian from our side. We out-pay it, and we slip our silver to the wild
   northern tribes who bleed Rome in its forests. Let it look north; we will be ready when it looks south.
+
+## 50 AD
+- Rome came at last across the water, as we knew it would — its great fleet fell upon Cyprus and
+  raided our Levant shore. But the sea is ours: our harbor-walls held, our rams and fire-ships burned
+  them in the swell, a storm finished what our fire began, and our Parthian friends fell upon Rome's
+  eastern lands so it could not press us. They clung to a corner of Cyprus and no more, then drew
+  back. We bled, but we stand, and the sea is still ours.
+- And we grew wiser about our south: it is not mere sand and tribute. The black-land of Kush gives us
+  IRON in plenty — iron for swords and spears beyond what we had — and by holding the Red Sea's gates
+  we alone command the incense and the spice and the trade of the eastern ocean. The south makes us
+  richer and better-armed, not poorer. We will hold its iron and its waters close.

@@ -88,3 +88,24 @@
   the monarchy stands.
 - Egypt we still cannot reach across the sea; so we wall it round with client-kings, woo the
   Parthian from its side, and build our fleet. Its day will come.
+
+## ~20–50 AD (we take to the eastern sea at last)
+- For a generation we built ships, and now we sail. We will not die in the Delta marshes again as our
+  rash general did. Instead we strike where the water — not the river — decides: CYPRUS, the Nile-folk's
+  great sea-base, an island with no marsh to drown us and no horse-archers to encircle us. We gather our
+  fleet off Syria and Cilicia, wall the island round by sea, and storm its harbors. From Cyprus we will
+  blockade the Levant coast and crack their walled ports one by one — but the Delta itself we leave until
+  the sea is wholly ours and their grain and silver are choked.
+- In the north we no longer push; we hold. The Rhine and Danube stand, our client-kings are paid, and the
+  new legions go east instead of into the forests.
+- We woo the Parthian with peace and a marriage so we fight but one foe at a time, and we pay Egypt's
+  southern and desert rivals to gnaw its back. At home we name our heir openly so no knives wait in the
+  dark, and we keep the African granaries full so no Nile embargo can starve Rome while we make war.
+- Our own paper now serves the whole state; we beat new sea-going siege-engines and rams for cracking
+  harbors, and pour the hard sea-set concrete to raise a war-harbor of our own. We hunt, above all, the
+  silver-trail that will at last PROVE the Nile paid the Germans to bleed us.
+
+- AND IT FAILED. We took a corner of Cyprus and burned a few ports, but their walls held and their
+  fire-ships and the storm devoured our fleet; and when our ships were committed, the Parthian fell on
+  our Syrian lands and we had to break off. The Nile mocks us still — unconquered, master of the sea,
+  and our enemy in the open now. One day, with both hands free, we will end it. Not this day.

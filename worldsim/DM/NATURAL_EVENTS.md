@@ -221,5 +221,26 @@ plausibly perceive it.
 - Moderate (local). Perceived: Rome/Germania frontier. Herd losses, costly draft animals, lean
   spring. Uncounterable. (Minor drag on Rome's northern frontier.)
 
+## ~23 AD — Earthquake, western Anatolia
+- Severe (regional). Perceived: Greek cities + Roman admin. Toppled towns, temple cracks, displaced
+  craftsmen, rebuilding levies. Uncounterable.
+
+## ~27 AD — Nile failure (low flood), Egypt
+- Moderate. Perceived: Egypt + Roman grain buyers. Granary draws, price spikes, minor downriver unrest.
+
+## ~31 AD — Yellow River flooding, north China
+- Serious. Perceived: China. Dike breach, shifted channel, southward migration, multi-year tax
+  remissions. (Strained China during its steppe war.)
+
+## ~34 AD — Locust swarms, Deccan/Ganges (India)
+- Moderate (2 seasons). Perceived: India. Seed-grain shortfall, price rise, temple grain appeals.
+
+## ~38 AD — Comet, widely visible
+- Minor. Perceived: Mediterranean, China, India (independently). Omen-talk, ritual responses.
+
+## ~44 AD — Coastal storm surge/flooding, Levant–Cyprus
+- Moderate (local). Perceived: Rome (during its naval war) + Egypt's Levant/Cyprus. Silted harbors,
+  wrecked shipping, hard winter. (Compounded Rome's fleet losses around Cyprus.)
+
 <!-- next events below -->
 

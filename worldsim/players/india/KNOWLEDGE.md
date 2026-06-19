@@ -42,3 +42,12 @@ We do not know how many powers exist in the wider world.
   do not know its name or true nature, and the road to it is long and held by nomads and oasis-kings.
   But it is REAL. (Belief — unconfirmed in detail.)
 - We have heard, too, that this realm trades a precious thread (silk) westward.
+
+## Update — 50 AD (FIRST CONTACT with the northern realm)
+- Our mission reached it. The great northeastern empire is REAL and immense — a vast, ordered, warlike
+  realm holding the oasis-roads of the far north with garrisons and client-kings; the people of silk.
+  We met its frontier-men as one empire greets another. We do not yet know its full strength, its
+  capital, or its intentions — and our picture is surely incomplete — but it is no longer a rumor.
+- It is almost certainly the source of the storms of horsemen that break upon our NW: its distant wars
+  drive the nomads onto us. A power to respect, to watch, and perhaps to treat with — or to fear.
+- We held the great new nomad wave this turn, bending at the edges but holding our core.

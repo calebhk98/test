@@ -115,3 +115,16 @@
 - Now a consolidated two-front power: northern shield + sustainable African/Red Sea dominion.
 - Internal: native tension eased (Pharaonic patronage, native officers); single heir groomed;
   Library/Museum lavishly funded; ~5 BC Nile failure absorbed.
+
+## Update — 50 AD (held off Rome's navy; secured iron + Red Sea income)
+- ROME ATTACKED BY SEA and was repelled: it took only a contested foothold on Cyprus and sacked
+  some coastal towns; Egypt's harbor-fortresses, ramming fleet + fire-ships, a storm, and Parthia's
+  attack on Rome's eastern frontier forced Rome to suspend the campaign. Egypt bloodied but holds
+  the sea. Egypt–Rome now an OPEN, ongoing war.
+- STRATEGIC RE-VALUATION of the south: HELD the Kushite/Meroitic IRON belt (military-industrial
+  base — more/better iron weapons) and CONTROL of the Red Sea trade (near-monopoly on incense/
+  spice/Indian-Ocean income). The south is now an asset, not a drain. (Arabian/Horn coasts only
+  chokepoint-dominated, not owned.)
+- Parthia alliance active (fighting Rome's east). Navy dominant; war economy boosted by southern
+  iron + Red Sea revenue. Native machimoi loyal; heir secure; Library thriving.
+- ~27 AD Nile failure absorbed; ~44 AD Levant/Cyprus storm hurt both fleets.

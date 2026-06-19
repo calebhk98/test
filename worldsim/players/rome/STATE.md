@@ -94,3 +94,31 @@
 - Founder-monarch died (~14 AD); named heir succeeded smoothly — dynasty stable.
 - Still strangling Egypt (proxies, fleet-building, courting Parthia); no sea-invasion capacity yet.
 - Territory: vast west + deeper north + inland Syria. Professional army loyal to the throne; grain secure.
+
+## Update — 20–50 AD (the sea offensive opens)
+- DECISION: a generation's fleet-building is finally spent on sea command in the east — staged, NOT a
+  Delta gamble. Phase 1: seize CYPRUS (Egypt's forward naval base; an island — no marsh/horse-archer
+  trap) by blockade + harbor assault, massing the fleet off Cilicia/Syria. Phase 2 from Cyprus: blockade
+  the Levant coast and reduce fortified ports one by one with sea-borne siege trains. Delta itself NOT
+  assaulted until sea command is total — strangle grain/silver lanes first.
+- North: pure defense-in-depth on Rhine/Danube; no new German adventures; client-kings paid/rotated;
+  strategic reserve + new legions routed east.
+- Diplomacy: court Parthia hard (peace/marriage/trade) to buy neutrality and fight one front; subsidize
+  Egypt's southern/African rivals + Nabataean/desert clients to bleed its rear.
+- Internal: one heir named and groomed publicly (forestall succession knives); war funded from western/
+  Gallic/Asian revenues + Cyprus spoils; African/Sicilian grain kept flowing (Nile-cutoff proof); doles
+  steady; veterans colonized on Cyprus/Syria.
+- Tech: flax/rag PAPER matured to mass state stock; heavier siege-ships + harbor-assault rams; hydraulic
+  (pozzolana) concrete harbor-moles for a fast forward naval base; improved fire/flag signal-relay for
+  fleet coordination.
+- Intelligence priorities: Egyptian Delta/port garrison true strength; Cyprus defenses; Parthian court
+  reliability; the silver-trail proof that Egypt funded the German rebels (casus belli + home propaganda).
+- Contact: war with Egypt (now going to the sea); cold-courting Parthia; still none with India/China.
+
+### DM-resolved OUTCOME — 50 AD
+- The sea offensive FAILED to achieve its aims: we seized only a contested FOOTHOLD on Cyprus and
+  sacked some Levant towns, but could NOT take the fortified harbors or break Egypt's fleet; their
+  fire-ships and a storm gutted our squadrons, and PARTHIA struck our Syrian frontier the moment we
+  committed — forcing us to suspend the campaign. Heavy fleet losses. Egypt remains unconquered and
+  dominant at sea; our hatred and our suspicion (Egypt funds our enemies) are confirmed, not avenged.
+- Net: a hot, ongoing war with Egypt; a two-front strain (Parthia in the east); the north held.
