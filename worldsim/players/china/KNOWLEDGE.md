@@ -64,3 +64,11 @@ We do not know how many powers exist beyond the lands we know.
   Wary first exchange; we concede nothing and learn what we can. (Our picture of it is still partial.)
 - A thought our court now entertains: could the horse-peoples we drove west be the same that trouble
   this southern empire? We do not know — but the timing gives us pause.
+
+## Update — 100 AD (the West has a name)
+- Our mission west (to find who buys our silk) was TURNED BACK by the Anxi (Parthian) middlemen, who
+  guard their road jealously. But it returned with reports: far beyond Anxi, by a western sea, lie
+  TWO great empires — a vast and warlike land we render "Daqin" (it rules many western kingdoms), and a
+  fabulously rich realm upon a great river (the Nile kingdom). We have NOT touched them; Anxi stands
+  between. But now we know they are there — the world has more great powers than we long believed.
+- India ("Shendu") we trade with directly. The western sea-realms remain beyond our reach for now.

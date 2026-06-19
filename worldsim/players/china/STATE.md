@@ -143,3 +143,12 @@
 - Gunpowder: the single-ball ERUPTOR (proto-gun) slowly refined — still crude, short-range, NO cannon.
 - Steppe stays broken (land-denial + garrisons). Militarist, whole; ~70 AD Yangtze flood a drag.
 - Now directly LINKED to India by the Silk Road (mutual embassies/trade). Still no Egypt/Rome contact.
+
+## Update — 100 AD
+- Survived a CATASTROPHIC ~91 AD Yellow River flood WITHOUT fragmenting (divergence) — admin crisis
+  weathered; militarist state intact.
+- Gunpowder: more reliable hand fire-tubes + standardized catapult-thrown fragmentation BOMBS (still no
+  cannon). Clearly ahead of all others on military fire-arts.
+- Mission west (~97 AD) turned back by Parthia, but China now KNOWS OF the western sea-empires by report:
+  "Daqin" (Rome) and the Nile kingdom (Egypt). No direct contact — Parthia blocks the road.
+- Corridor + steppe held; India trade continues; flood-control invested. Whole, militarist, undivided.

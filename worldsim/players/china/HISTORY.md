@@ -130,3 +130,13 @@
   to fight a power as great as we, not yet. Let trade flow and our eyes ride with it.
 - Our fire-tube that spits a single ball grows a little surer each year, though no thunder-engine yet.
   The realm stands whole and hard.
+
+## 100 AD
+- The great river burst its banks and drowned whole commanderies, and the work of years was swept away —
+  yet the realm did not break; we fed the hungry, drove the corvée, and held. We do not fall.
+- Our smiths now make fire-tubes that misfire less, and pots of powder that burst into killing shards
+  when flung by engine over a wall. No thunder-cannon yet — but no people on earth wields fire as we do.
+- And we sent men west past the desert to find who buys our silk. The Anxi turned them back at their
+  rivers, jealous of their road — but they brought word: beyond the western sea sit two mighty empires,
+  one a great warlike realm of many kingdoms, one a rich land upon a river. We have not seen them. But we
+  know now: we are not the only greatness under Heaven, nor even the only one that calls itself the world.

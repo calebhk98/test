@@ -116,3 +116,13 @@
 - The greater stroke was made with words, not swords: we bought peace with the Parthian — a border, a
   marriage, a trade — and so pulled Egypt's eastern sword from its hand. The Parthian, troubled now on
   his own far frontier, was glad to take it. Egypt stands more alone than it knows. We rebuild, and we wait.
+
+## 100 AD
+- We waited, and we prepared, and then we struck — Egypt alone, Egypt hungry from a failed Nile, our
+  fleet rebuilt and proof against their fire. We took Cyprus and tore the Levant ports from their grasp.
+  After a hundred and fifty years, the tide turns our way.
+- Yet the Nile itself eludes us still: their walls and their marsh and their fire held the delta, and we
+  could not put a lasting army on Egyptian soil. So it is not an ending but a long contest — Rome the
+  master of the land and the west and the north, Egypt the stubborn lord of the south and the eastern
+  water. We hold what we have taken, and we will come again.
+- (From the farthest east, traders whisper of a land of silk beyond all our maps. A curiosity, no more — for now.)

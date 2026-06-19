@@ -263,5 +263,30 @@ plausibly perceive it.
 ## ~70 AD — Yangtze basin flooding, China
 - Serious (regional). Perceived: China. Drowned paddies, dike-repair labor, displacement, ~2 yr tax remission.
 
+## ~77 AD — Major volcanic eruption, Campania (Italy)
+- Catastrophic (regional). Perceived: Rome/Italy + Mediterranean trade. Ashfall buries farmland for
+  years, harbors disrupted, displacement, Italian grain curtailed 2–3 seasons. (Hampered Rome's
+  Egypt-war buildup.) Uncounterable.
+
+## ~82 AD — Nile flood failure (severe), Egypt
+- Severe. Perceived: Egypt + Rome (grain). Famine in Alexandria, empire-wide price spike, urban unrest
+  ~18 months. (Weakened Egypt during Rome's renewed assault.)
+
+## ~88 AD — Locust swarms, Levant/Syria/Anatolia
+- Moderate-severe. Perceived: the Levant war-zone + Parthian borderlands. 2-yr harvest shortfalls,
+  rural depopulation into cities.
+
+## ~91 AD — Yellow River flooding (catastrophic), China
+- Catastrophic (regional). Perceived: China. Mass displacement, canal damage, multi-year administrative
+  crisis in eastern commanderies. (China held WITHOUT fragmenting — divergence.)
+
+## ~95 AD — Earthquake + tsunami, eastern Mediterranean (Anatolia/Cyprus coast)
+- Severe. Perceived: Anatolia/Cyprus/Levant. Ports destroyed, 1–2 seasons' trade disruption.
+  (Disrupted the Rome–Egypt naval war staging.) Uncounterable.
+
+## ~98 AD — Harsh winter + epidemic, Germania/Danube frontier
+- Moderate. Perceived: Rome's northern frontier + tribes. Auxiliary losses, tribal migrations south,
+  disease into spring — one campaign season's manpower lost.
+
 <!-- next events below -->
 

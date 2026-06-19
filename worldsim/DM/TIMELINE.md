@@ -492,3 +492,39 @@ World date advanced to: 50 AD
 - **Parthia:** turned NE to fight the nomad cascade; truce with Rome; still takes Egyptian gold.
 
 World date advanced to: 75 AD
+
+## 75–100 AD — Turn (the endpoint: Rome's big bid; China learns the West exists)
+- **Rome's prepared bid CLAWS BACK the Levant — but not Egypt.** With Parthia neutral, Rome spent
+  ~15 years preparing a proper combined assault (commerce-raiding Egypt's revenue; wide-beam siege/
+  landing ships; fire-countermeasures (wetted hides, fire-pumps); pozzolana war-harbors at Seleucia
+  Pieria/Cilicia; subsidizing Axum/Cushite/Nabataean/Libyan tribes against Egypt's rear). The renewed
+  war (~90–100 AD) — with Egypt ISOLATED and famine-hit (82 AD Nile failure) — let Rome finally TAKE
+  CYPRUS fully and reduce several Levant coastal ports. BUT the Egyptian core held: the navy, the
+  Delta's marsh defenses, fire-ships, and Kushite-iron-armed machimoi kept Rome off Egypt proper. (A
+  77 AD Vesuvius-like eruption in Italy and a 95 AD Anatolia/Cyprus tsunami hampered Rome's staging.)
+  NET: the Mediterranean is now a grinding BIPOLAR struggle — Rome holds the Levant coast + Cyprus +
+  the land; Egypt holds Egypt + its African/Red Sea empire + contested seas. Egypt is no longer
+  clearly winning, but remains INDEPENDENT and a great power.
+- **CHINA learns the West exists (a name at last).** Surviving a catastrophic 91 AD Yellow River
+  flood WITHOUT fragmenting (divergence), China pushed its trade and a mission WEST (~97 AD) to find
+  who buys its silk — bypassing Parthia. Parthian middlemen TURNED THE MISSION BACK (to keep their
+  monopoly), but it returned with REPORTS of great empires by the western sea: a vast martial realm
+  ("Daqin" = Rome) and a fabulously rich kingdom on a great river (Egypt). **China now knows OF Rome
+  and Egypt for the first time — by report, not contact.** Gunpowder advanced two tracks: more
+  reliable hand fire-tubes + standardized catapult-thrown fragmentation BOMBS (still no cannon).
+- **INDIA breathes east.** Finished conquering Bengal, planted a garrisoned port at the Ganga mouth,
+  and began sea-probing toward the Southeast-Asian shore (first contacts/scouting of the Bay-of-Bengal
+  far coast). Held the NW oasis buffer with China (trade, no war). Refined wootz-iron armored lancers
+  and a Bengal river-fleet. An eastward maritime expansion is now beginning.
+
+### Cross-awareness at 100 AD (the fog has nearly lifted — at REPORT level)
+- **China ↔ Rome/Egypt:** China now knows they EXIST (as "Daqin" and the Nile kingdom) via Parthian-
+  relayed report — but Parthia blocks direct contact (turned China's mission back). Rome/Egypt still
+  barely know of a distant silk-source ("Seres"), not its true scale.
+- **India ↔ China:** direct Silk-Road trade + embassies (wary buffer-rivalry, peace).
+- **India ↔ Egypt:** relayed/partly-direct trade; **India → SE Asia:** new contacts opening.
+- **Egypt ↔ Rome:** open great-power war (Rome gained Levant/Cyprus; Egypt holds its core).
+- **Parthia:** the hinge that still separates the two halves of the world — fighting nomads, truced
+  with Rome, taking Egyptian gold, and deliberately blocking China–West contact.
+
+World date advanced to: 100 AD  ← TARGET REACHED

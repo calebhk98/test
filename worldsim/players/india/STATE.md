@@ -130,6 +130,14 @@
   war-tax on trade/the rich (not the grain base); relief for raided frontier + new Bactrian subjects.
 - Awareness: the great NE realm CONFIRMED real and actively being scouted; its name still unknown.
 
+## Update — 100 AD
+- Completed the conquest of BENGAL; planted a garrisoned port at the Ganga mouth; began SEA-PROBING
+  toward the Southeast-Asian shore (first scouting/contacts of the Bay-of-Bengal far coast).
+- Held the NW oasis buffer with China (trade, no war); refined wootz-iron armored lancers + a Bengal
+  river-fleet; tightened Sri Lanka + the south.
+- A unified subcontinental + Central-Asian + now eastward-MARITIME power. Silk-Road trade with China;
+  relayed/partly-direct trade with the west (Egypt). Heir army-toured; governors rotated/audited.
+
 ## Update — 75 AD
 - Chose TRADE + embassy with the northern empire (China/"silk-realm"), NOT war — Silk Road exchange via
   neutral oasis-kings, merchant-spies along every caravan; a wary peaceful buffer-rivalry over the oases.

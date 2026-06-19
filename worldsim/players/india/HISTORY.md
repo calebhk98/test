@@ -130,3 +130,11 @@
 - With the north thus held in balance, we turned our hunger EAST — deeper into the Bengal forests and
   the lower Ganga, for grain and men and elephants — and drew Sri Lanka and the south closer. The realm
   grows, and our stirrup-riders are unmatched.
+
+## 100 AD
+- We finished Bengal and set a great port at the mouth of the Ganga, and from it sent our ships east
+  along the warm coast — merchants and quiet eyes first — to the lands of the rising sun, to learn where
+  their gold and tin and spices come from. The empire has found the sea, and the sea runs east.
+- North, we keep our wary peace and rich trade with the silk-realm, neither bowing nor warring; west,
+  our goods still flow to the Nile kingdom. Our horsemen are the finest in the world, our archives swell,
+  and our hunger is undimmed. One empire, conquering still — now reaching across the eastern water.

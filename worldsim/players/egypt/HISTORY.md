@@ -125,3 +125,13 @@
   truce with Rome and turned away to some trouble of their own on their far side. We do not know what
   pulls them away — but without their swords at Rome's back, we stand more alone now. We husband our
   fleet, fatten our granaries, and watch the Roman, who no longer bleeds in the east.
+
+## 100 AD
+- The Roman came again, and this time better — no Parthian at his back, a fleet that would not burn so
+  easily, and we ourselves thinned by a year of low Nile. He wrenched Cyprus from us, and ports along
+  the Levant shore. We grieve them.
+- But the Nile itself he could not touch: our ships, our marsh, our fire, and our iron-armed sons of
+  Egypt threw him back from the homeland as we have always thrown him back. We are bloodied and we have
+  lost our outer shield, yet Egypt stands free, rich in iron and incense, master of the southern lands
+  and the inner sea's eastern half. The war with Rome will be long — but Egypt endures, and Alexandria's
+  light still leads the world.

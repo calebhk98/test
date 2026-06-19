@@ -131,3 +131,12 @@
 - North held (Rhine/Danube; ~64 AD harsh winter a drag). Built own horse-archers/cataphracts vs Parthia.
 - Internal: heir public, eastern legions bound by pay/donatives, granaries full. Still no contact with
   India/China. Strategy: isolate Egypt, rebuild, strike when both hands are free.
+
+## Update — 100 AD (clawed back the Levant; Egypt's core still unbroken)
+- Prepared a proper combined assault (~90–100 AD) with Parthia neutral and Egypt famine-hit: wide-beam
+  siege/landing ships, fire-countermeasures, concrete war-harbors, Axum/Nabataean proxies on Egypt's rear.
+- RESULT: TOOK Cyprus fully + several Levant coastal ports — but could NOT crack Egypt proper (navy +
+  Delta + fire-ships held). A 77 AD Italian eruption + 95 AD Anatolia/Cyprus tsunami hampered staging.
+- Net: Rome now holds the Levant coast + Cyprus + the land; the Mediterranean is a grinding bipolar
+  war with an unconquered Egypt. North (Rhine/Danube) holds (98 AD winter/plague a drag).
+- Dynasty stable (named capable heir). Faint awareness only of a distant silk-source ("Seres").

@@ -138,3 +138,15 @@
 - Rome shifted to commerce-raiding our grain/silver lanes + rebuilding slowly. Our south (Kush iron +
   Red Sea monopoly) underwrites the war. Heir secure; priesthood/native officers loyal; ~58 AD Nile
   failure absorbed.
+
+## Update — 100 AD (held the core, lost the Levant)
+- Rome, freed of Parthia and with a better fleet, came again in force (~90–100 AD) while we were
+  famine-weakened (82 AD Nile failure). It TOOK Cyprus and several Levant coastal ports from us. But
+  our navy, the Delta marshes, fire-ships, and iron-armed machimoi kept Rome OFF Egypt itself.
+- We remain INDEPENDENT and a great power: Egypt proper + the Kushite-iron belt + the Red Sea trade
+  monopoly + our African dominion. The sea is contested now, not ours alone. A long bipolar war with
+  Rome settles in.
+- Built a 2nd fleet, fortified ports, 3-yr inland grain reserves; courted Parthia back (failed for now);
+  re-funded Rome's internal malcontents; feelers to India for overland trade insurance.
+- Internal: native goodwill spent on concessions (native officers, tax remission, temple endowments);
+  heir invested at Alexandria + Memphis; Library = our strategic edge.

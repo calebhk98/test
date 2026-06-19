@@ -1,6 +1,18 @@
 # GROUND TRUTH — DM ONLY (no player ever reads this)
 
-Current world date: **75 AD**  (started 260 BC; see TIMELINE.md for resolved turns)
+Current world date: **100 AD**  ← TARGET REACHED  (started 260 BC; see TIMELINE.md)
+
+> Status @100 AD (endpoint): EGYPT independent great power — holds Egypt + Kushite-iron + Red Sea
+> monopoly + African dominion + dominant-but-contested navy; LOST Cyprus & some Levant ports to Rome;
+> Alexandrian science world-leading. ROME = Mediterranean/European hegemon (west + Germania/Danube +
+> now the Levant coast/Cyprus); has PAPER; detached Parthia; grinding bipolar war with Egypt; never
+> took Egypt's core. CHINA = militarist Han at full power; survived a catastrophic flood without
+> fragmenting; gunpowder = hand fire-tubes + fragmentation bombs (proto-gun, no cannon); now KNOWS OF
+> Rome ("Daqin") & Egypt by report (Parthia blocks direct contact). INDIA = militarist subcontinental
+> + Central-Asian + now eastward-maritime power (Bengal/Ganga-mouth port, SE-Asia probing); iron
+> stirrups; Silk-Road trade with China. PARTHIA = the world's hinge (blocks China–West contact).
+> The China-driven nomad CASCADE reshaped the whole western balance. Fog nearly lifted at report
+> level; direct contact still limited by Parthia + oceans + distance.
 
 > Status @75 AD: EGYPT retook Cyprus (sea-dominant, iron + Red Sea wealth) BUT lost Parthia's active
 > support — now faces Rome more alone. ROME shifted to attrition/commerce-raiding vs Egypt and
