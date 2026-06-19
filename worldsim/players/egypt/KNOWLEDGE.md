@@ -36,3 +36,13 @@ This is Egypt's own view of the world. It does NOT know how many other powers ex
   a matter to watch.
 - Rome (west) now also holds Sardinia and Corsica and is pressing northward; still friendly
   to us through trade.
+
+## Update — 190 BC
+- India and the Seleucids: the eastern empire lies beyond the Seleucids by land — and the
+  Seleucids are OUR enemy too. A shared rival. Worth pondering.
+- Some Indian steel reaches us through Arabian middlemen as a costly import; we do not produce
+  it ourselves.
+- Rome has won a great war against Carthage and now dominates the western sea and holds Iberia.
+  Powerful, but far, and friendly to us.
+- Internally: the native revolt is suppressed but the grievance (bread, taxes, native vs Greek)
+  is not gone. Our reliance on native troops is now permanent.

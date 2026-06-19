@@ -29,3 +29,17 @@
   the fields, raised a fire-beacon tower at our chief western port, laid down larger oared
   ships, and founded houses of scholars to gather and copy all knowledge we can buy or seize.
 - The state remains a state of conquest; the change of ruler altered nothing in our purpose.
+
+## 190 BC (after another ~30 years)
+- We turned our face westward by land, pushing forts and roads up the caravan track and
+  bending the hill peoples to our rule — but we found the road west is long and held by others.
+  A great Yavana kingdom (the Seleucids) bars the way, and many toll-lords beyond. The rich
+  Nile kingdom and these Seleucids are, we learn, ENEMIES to each other.
+- So most of our western trade still flows the old way — through Arabian middlemen who carry
+  our goods on to the Nile kingdom; our own ships work the coasts and the Arabian routes but do
+  not yet cross directly to their harbors. Our wealth grows nonetheless.
+- At home we tightened our southern vassals into givers of troops and elephants, healed the
+  Ganges with works and granaries, and our new scholar-houses fill with scribes, star-watchers,
+  physicians and engineers — gathering all knowledge we can buy or take.
+- Still we could not learn the Nile-folk's true secrets; their "house of scrolls" keeps its
+  mystery from us.

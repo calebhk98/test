@@ -90,3 +90,75 @@ World date advanced to: 240 BC
     (culturally plausible) — an emergent good effect of a *wrong* inference.
 
 World date advanced to: 220 BC
+
+## 220–190 BC — Turn 3 (TRUE outcomes)
+- **Rome — the great western war.** A massive war with Carthage erupted (the Barcids). Rome's
+  pre-emptive Iberia strategy did NOT fully deny Hannibal — he invaded Italy and inflicted
+  severe defeats — but Rome's deep manpower, the Numidian (Masinissa) alliance, and a landing
+  in Africa won the war (~202–201 BC). Carthage stripped of Iberia and navy, reduced to a
+  tributary rump. Italy was ravaged (lasting strain), but Rome now DOMINATES the western
+  Mediterranean and holds Iberia. Cisalpine Gaul crushed; colonies (Placentia/Cremona) planted.
+- **Egypt — victory, then revolt, but NO decline (divergence active).** Egypt armed a large
+  native-Egyptian infantry corps (machimoi) and won a defensive victory over the Seleucids,
+  holding the Levant/Coele-Syria. But native confidence + repeated Nile failures (207 BC) +
+  grain unrest triggered a SERIOUS native revolt in Upper Egypt (the Thebaid). DIVERGENCE
+  (Ptolemaic ruler longevity ~204–194 BC now ACTIVE): the stable monarchy suppressed/negotiated
+  the revolt within ~a decade and kept Egypt independent and Alexandria vital — it did NOT
+  spiral into the historical decline toward Rome's orbit. Real cost paid, but Egypt stays strong.
+- **China — succession survived, realm held (divergence enforced).** A serious drought
+  (215–213 BC) plus crushing corvée and harsh law sparked widespread revolts when the founding
+  emperor died (~210 BC). The militarist state — no hereditary fiefs, transferable officials,
+  relocated aristocrats, mobile armies on trunk roads — CRUSHED the revolts within a few brutal
+  years and did NOT fragment or moderate (ruler change = continuity per directive 11). China
+  also pushed the Xiongnu back north and conquered southward into the rice-lands/southern coast.
+  Still isolated: westward agents reached oasis/Tarim states only — NO peer-empire contact.
+- **India** consolidated and reached outward: pushed garrisons/road-forts up the NW caravan
+  track (subduing hill peoples), tightened southern clients into troop-providing vassals, held
+  Kalinga by investment, founded state scholar-houses, scaled its own water-wheels/ships.
+
+### Player-to-player intelligence (TRUE)
+- **Egypt–India trade compact.** A standing Red Sea / monsoon Indian-Ocean trade route firmed
+  up. Egypt imports Indian wootz steel (ingots/blades), spices, craftsmen. India ships directly
+  to Egyptian Red Sea ports, bypassing land tolls.
+- **India learns the land route is BLOCKED.** Pushing NW, India confirmed a powerful Yavana
+  kingdom (the Seleucids) and many toll-lords lie BETWEEN it and Egypt — and that Egypt and the
+  Seleucids are RIVALS. India now grasps there are multiple western powers, not one. Its spies
+  learned Egypt leans on phalanx+navy+native infantry+elephants and is at war with the Seleucids
+  — but STILL could not crack the "house of scrolls" (persisting in the treasure-temple belief).
+- **211 BC comet** seen independently by China, the Levant/Egypt, Italy, and India — each read it
+  as an omen in isolation, none knowing the others saw the same sky.
+
+### DM tech ruling (directive 3/7)
+- Egypt does NOT gain wootz mastery from trade: it buys Indian crucible-steel PRODUCT and works
+  the ingots; the crucible METHOD stays a guarded Indian craft secret. Alexandrian metallurgists
+  may partially reverse-engineer it later, but only partially. No instant tech transfer.
+
+World date advanced to: 190 BC
+
+## ⚠ DM CORRECTION (retcon) — enforcing on-rails-before-divergence
+The following overrides the Turn 2–3 entries above where they conflict. Earlier text is kept
+as an audit trail of the mistake; THIS is the corrected canon.
+
+- **China (divergence not active until ~100 BC) — real history restored.** The Qin empire
+  did NOT smoothly crush all revolts. Per real history: Qin's harsh law + corvée + the
+  215–213 BC drought triggered collapse after the founder's death — civil war (Chu–Han
+  contention) ~206 BC — and the **Han dynasty was founded 202 BC**, REUNIFYING China. Early
+  Han then **moderated** Qin legalism (lighter taxes/laws, Huang-Lao consolidation) while
+  staying unified. China is therefore a recovering, somewhat MODERATED early-Han state at
+  190 BC — NOT the "never-softening" empire I wrote. Its militarist-permanence divergence
+  begins ~100 BC. Still isolated (no Silk Road contact until ~130 BC).
+- **Egypt (divergence not active until ~204 BC).** Strike the premature "standing direct
+  India sea-compact" and "wootz reverse-engineering." Pre-204 BC Egypt = real Ptolemaic
+  history only: Syrian Wars, Raphia (217 BC) with native machimoi, native revolts from
+  ~206 BC. Egypt KNEW of / received Mauryan envoys (real — Ashoka's Edict 13) but did NOT
+  restructure its trade or tech around India. From ~204 BC the longevity divergence applies
+  (skips regency crisis; stays independent — that part stands).
+- **India–Egypt contact downgraded to era-accurate.** Mutual awareness + occasional envoys
+  (historical). Trade between them was **relayed via Arabian/Gerrhaean middlemen**, NOT a
+  direct monsoon sea-artery (that blossoms ~1st c. BC). India correctly found the land route
+  blocked by the **Seleucids** (Parthia does not control that route until ~141 BC).
+- **India's own internal developments** (militarist consolidation, NW expansion, scholar-
+  houses, saqiya water-wheels, beacon, larger ships) **stand** — India diverged in 260 BC and
+  these are era-plausible and don't drag any pre-divergence power off its track.
+
+World date advanced to: 190 BC (corrected)

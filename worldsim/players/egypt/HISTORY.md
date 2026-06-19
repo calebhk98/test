@@ -22,9 +22,23 @@
 - A failure of the Nile flood brought lean years — thin harvests, dear grain in Alexandria,
   and grumbling among the native folk over the price of bread. We drew down the granaries
   and pray the river returns to its bounty.
-- A remarkable thing: a great embassy came to us by sea from the far eastern spice-empire
-  ("India") — envoys, physicians and scholars bearing rich gifts. So the eastern land is no
-  mere rumor but a single vast kingdom, mighty in war-elephants and fine steel, ruled from
-  some great inland city. We received them well, traded, displayed our wealth, and sent a
-  small mission east with them to see their land for ourselves.
+- Envoys reached us (by way of Arabian traders and the relay of merchants) bearing word and
+  gifts from the far eastern spice-empire ("India") — confirming what we already half-knew:
+  a single vast kingdom, mighty in war-elephants, ruled from some great inland city. We
+  received the embassy graciously as is our custom, but our trade with that land remains as
+  it has long been — carried through Arabian middlemen, not by our own ships to theirs.
 - Our trade-talk with Rome in the west continues, friendly and unentangling.
+
+## 190 BC (after another ~30 years)
+- We raised a great corps of native Egyptian foot to stand beside our phalanx, and with them
+  threw back the Seleucids on our eastern frontier — the Levant holds.
+- But arming our own people had a price: when the Nile failed again and bread grew dear, Upper
+  Egypt rose in revolt. It cost us a hard decade, yet our throne held firm and we brought the
+  Thebaid back to obedience. We remain whole, rich, and our own masters — Alexandria's lamp
+  still burns bright.
+- Trade with the eastern empire ("India") continues as before — relayed through Arabian
+  merchants, who bring us its spices and some of its fine steel. We do not sail to it directly,
+  nor it to us.
+- We learned the eastern empire reaches toward us by land but is walled off by the Seleucids,
+  our own enemy — there may be use in that. Rome, in the far west, has won a vast war and now
+  bestrides the western sea; still our friend in trade.

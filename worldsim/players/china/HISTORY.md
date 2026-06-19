@@ -25,3 +25,17 @@
 - We did not soften in victory — the realm is ordered by strict law and the reward of farming
   and soldiering, as it has always been.
 - Of distant lands we still know nothing certain: only the same oasis rumors from the far west.
+
+## 190 BC (after another ~30 years) — COLLAPSE, THEN A NEW DYNASTY
+- The harshness that won us the realm undid the first house that ruled it. Drought scourged
+  the northern fields; the levies for walls and roads were crushing; and when the founding
+  sovereign died, the whole land rose. Years of civil war followed — warlord against warlord
+  for the Mandate.
+- From that strife a new house rose and REUNITED all under Heaven. Having seen what cruelty
+  cost, the new dynasty eased the worst of the old law and the heaviest burdens — lighter
+  taxes, lighter punishments, rest for an exhausted people — while keeping the realm whole and
+  centrally governed.
+- We hold the steppe frontier against the horsemen (who press us hard) and keep the southern
+  lands. The realm is one again, but tired, and rebuilding.
+- Of the world beyond the western sands we still know nothing but rumor. We remain, as far as
+  we can see, the one civilized power under Heaven.

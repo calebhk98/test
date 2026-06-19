@@ -1,6 +1,29 @@
 # GROUND TRUTH — DM ONLY (no player ever reads this)
 
-Current world date: **220 BC**  (started 260 BC; see TIMELINE.md for resolved turns)
+Current world date: **190 BC**  (started 260 BC; see TIMELINE.md for resolved turns)
+
+> Status @190 BC (CORRECTED): Egypt divergence just activating (~204-194 BC longer rule;
+> survived a native revolt, stays independent — no historical decline). China = real history:
+> Qin COLLAPSED (~206 BC), Han reunified (202 BC) and MODERATED legalism; recovering, unified,
+> still isolated, pressed by Xiongnu (China divergence NOT active until ~100 BC). Rome won the
+> war with Carthage, holds Iberia, dominates the west Mediterranean (Italy ravaged, recovering;
+> on real-history rails until ~100 BC). India (diverged 260 BC) knows Egypt AND the rival
+> Seleucids; land route west blocked by Seleucids (Parthia not the route-holder until ~141 BC);
+> west trade is RELAYED via Arabian middlemen (no direct sea-artery yet).
+> Contact graph: Egypt<->India (awareness + relayed trade + occasional envoys — historical),
+> Egypt<->Rome (friendly, historical), Egypt<->Seleucids (war, NPC), India<->Seleucids (frontier,
+> NPC), China<->all peers (NONE).
+
+## DIVERGENCE-ACTIVATION TABLE (enforce on-rails real history before each date)
+| Power | Divergence date | Before it: | At/after it: |
+|-------|-----------------|-----------|--------------|
+| India | 260 BC (start) | (n/a) | Ashoka stays militarist, no Buddhist turn, dynasty persists |
+| Egypt | ~204–194 BC | real Ptolemaic history | Ptolemy IV longevity; skips decline; stays independent |
+| Rome  | ~100 BC | real Roman history | attempts to take Egypt & FAILS → invents paper |
+| China | ~100–95 BC | real history incl. Qin collapse 206, Han 202, early-Han moderation | gunpowder + permanent militarism; cancels later Wang Mang/Yellow Turban/Three Kingdoms/Xianbei collapses |
+
+> Pending seeds: Rome attempts to take Egypt ~100 BC (FAILS → paper); China gunpowder ~100–95 BC.
+> First China–West (Silk Road) contact not before ~130 BC (real-history earliest).
 
 > Status @220 BC: China unified under Qin (militarist, isolated from the other 3).
 > Egypt and India have made FORMAL CONTACT and know each other as real powers (India

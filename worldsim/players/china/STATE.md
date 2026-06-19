@@ -36,3 +36,16 @@
 - Military: massive, victorious, crossbow-and-iron based. NO gunpowder yet (seed ~100-95 BC).
 - Unrest risk: harsh law + huge labor levies = simmering peasant resentment (watch).
 - Still completely isolated from the other three powers.
+
+## Update — 190 BC (CORRECTED to real history; divergence not active until ~100 BC)
+- Government: the first unifying dynasty (Qin) COLLAPSED after the founder's death amid revolt
+  and civil war (~206 BC); a new dynasty (Han) reunified China (202 BC) and MODERATED the
+  harsh legalism — lighter taxes/laws, consolidation/recovery — while staying unified.
+  (Militarist-permanence divergence does NOT begin until ~100 BC.)
+- Territory: unified realm restored under Han; southern lands retained; steppe frontier
+  (Xiongnu) pressing hard — early Han is on the defensive/appeasing there (real history).
+- Population: very large but exhausted by the war years; recovering under lighter rule.
+- Economy: rebuilding; lighter levies; internal trade aided by earlier standardization.
+- Unrest: easing under the moderated regime; war-weariness healing.
+- Tech: iron casting, roads, canals, crossbows. NO gunpowder yet (seed ~100-95 BC).
+- Still NO contact with Egypt/India/Rome (Silk Road contact not until ~130 BC).

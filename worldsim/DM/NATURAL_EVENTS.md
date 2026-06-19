@@ -52,5 +52,31 @@ plausibly perceive it.
 - Moderate. Perceived: Rome/Sicily/Carthage. Lost small craft and shoreline stores; wary
   sailing season; minor inland resettlement.
 
+## ~218 BC — Earthquake, Greece (Corinthian Gulf/Peloponnese)
+- Moderate. Perceived: Greece, Aegean shipping (Egypt's network). Collapsed temples/moles;
+  a year of rebuilding; debated omens.
+
+## ~215–213 BC — Multi-year drought, Yellow River basin (China)
+- Serious. Perceived: China. Failed millet, price spikes, migration, banditry. (Helped spark
+  the post-succession revolts.)
+
+## ~211 BC — Comet, visible across the northern hemisphere
+- Minor physically; widely perceived: China, Levant/Egypt, Italy, India — each in isolation.
+  Portent anxiety, recorded prophecies.
+
+## ~207 BC — Nile low-flood failure, Egypt
+- Serious. Perceived: Egypt. Short harvest, hoarding, urban grain unrest, depressed exports.
+  (Compounded the native-Egyptian revolt.)
+
+## ~204 BC — Locust swarms, Deccan & Ganges plain (India)
+- Moderate-serious. Perceived: India. Stripped fields, famine pockets, debt/displacement.
+
+## ~199 BC — Tsunami/storm surge, eastern Sicily & Calabrian coast
+- Moderate. Perceived: Rome/Sicily. Wrecked boats, salted coastal fields, abandoned hamlets.
+
+## ~193 BC — Harsh winter + epidemic, Iberia/southern Gaul
+- Moderate. Perceived: Rome (newly holding Iberia), Gaul. Livestock losses, depopulated
+  villages, disrupted overland trade. (Hampered Rome's grip on fresh Iberian conquests.)
+
 <!-- next events below -->
 

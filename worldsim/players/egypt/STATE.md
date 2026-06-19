@@ -34,3 +34,15 @@
 - Diplomacy: FORMAL CONTACT established with India (mutual embassies); cordial trade with Rome.
 - Tech: incremental naval, artillery, water-lifting, navigation gains.
 - Now aware India is a real great power; still unaware it was earlier spied upon.
+
+## Update — 190 BC (CORRECTED — pre-204 BC on real-history rails; divergence just activating)
+- Population: ~7.5M (recovering after revolt years). Economy: strong; recurring Nile failures
+  a structural risk. Eastern trade is relayed via Arabian middlemen (NO direct India sea-artery).
+- Territory: holds core + Levant/Coele-Syria (Raphia-era victory vs Seleucids); Upper Egypt
+  revolt (from ~206 BC) being suppressed; resentment persists.
+- Divergence (~204-194 BC): longer stable rule → skips regency crisis, stays independent
+  (begins to apply now; no historical decline).
+- Military: phalanx + large permanent native machimoi corps + dominant navy + elephants (real).
+- Unrest: native-Egyptian grievance now a permanent background factor (bread/tax/ethnic).
+- Tech: real Ptolemaic/Alexandrian science; NO wootz industry. Aware of India via envoys (real).
+- Diplomacy: friendly with Rome (real historical amity); war footing vs Seleucids.

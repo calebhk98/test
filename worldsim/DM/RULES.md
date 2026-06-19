@@ -56,6 +56,27 @@ partial, possibly-wrong view. The DM never leaks truth into a player's view.
 11. **Rulers are flavor.** Players are the rulers; don't over-index on ruler identity.
     A dynasty change with no behavioral change is treated as continuity.
 
+## CRITICAL: On-rails before divergence (directive 4 corollary)
+- Each civilization runs on **real history** until ITS OWN divergence date. It has player
+  agency only from that date onward:
+  - **India — 260 BC** (Ashoka doesn't convert; stays militarist). Agency from the start.
+  - **Egypt — ~204 BC** (Ptolemy IV longevity). Real Ptolemaic history before this.
+  - **Rome — ~100 BC** (fails to take Egypt → paper). Real Roman history before this.
+  - **China — ~100 BC** (gunpowder + permanent militarism; cancels the LATER Wang Mang /
+    Yellow Turban / Three Kingdoms / Xianbei collapses). Real history before this — including
+    the Qin collapse (206 BC), Han founding (202 BC), and early-Han moderation of legalism.
+- A power that has diverged (e.g. India) may act differently, but it **cannot force a
+  not-yet-diverged power off its real-history track.** A pre-divergence power reacts only as
+  real history plausibly allows (e.g. Ptolemaic Egypt receives Mauryan envoys — as it really
+  did — but does not restructure its economy or tech around them).
+- Player subagent proposals that would change a pre-divergence civ, or that outrun what the
+  era physically allows, are REJECTED or scaled back by the DM.
+
+## Verification (every turn)
+- Run a **Historian-Verifier** check on player outputs: (a) does it respect on-rails-before-
+  divergence? (b) is it era-plausible (routes, travel times, materials, who-controls-what)?
+  (c) does it violate fog of war? Reject/scale back anything that fails before recording canon.
+
 ## Subagent roles
 - **Player agents** — one per country; act on their KNOWLEDGE only, never ground truth.
 - **Battle resolver** — given true forces/terrain/intel of both sides, returns outcome

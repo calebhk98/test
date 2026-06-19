@@ -35,3 +35,16 @@
 - Tech: ox-powered water-lifting wheels, harbor beacon tower, larger oared ships, state
   scholar-houses — all INDIA'S OWN parallel versions (never learned Egypt's actual methods).
 - Diplomacy: formal embassy exchange with Egypt; both now know each other as powers.
+
+## Update — 190 BC
+- Territory: pushed forts/roads up the NW caravan track (subdued hill peoples); confirmed the
+  land route west is LONG and held by the Seleucids (a rival Yavana kingdom) + many toll-lords;
+  Egypt and the Seleucids are mutual enemies. Southern clients tightened into troop/elephant
+  providers; Kalinga held by investment.
+- Trade with the west remains RELAYED via Arabian middlemen (no direct sea-artery to Egypt yet).
+- Economy: wealthy and growing; flood-works and granaries maturing.
+- Unrest: manageable; Kalinga calmer.
+- Tech (India's OWN, era-plausible — India diverged 260 BC): saqiya-style ox water-wheels,
+  harbor beacon, larger oared ships, state scholar-houses. Never learned Egypt's actual methods.
+- Note: India is the only diverged power this early; these changes don't alter pre-divergence
+  Egypt/Rome/China.
