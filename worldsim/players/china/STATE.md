@@ -39,3 +39,14 @@
 - Tech (ENABLES): hydraulics → grain surplus → sustained war machine; standardized crossbow triggers.
   Court alchemy funded MODESTLY (elixir-chasing; saltpeter noted, NO known use) — seed only.
 - On rails until ~100–95 BC (China's divergence = gunpowder + permanent militarism).
+
+## Update — 210 BC — UNIFICATION ACHIEVED (221 BC)
+- Conquered all six states (Han 230 → Qi 221); the Chu campaign took the full ~600k commitment after
+  a failed first strike. Qin Shi Huang founds the empire. Pop ~40M+ under one realm.
+- ★ COMPOUNDING WIN: standardized script, weights, measures, axle-gauge, and coinage → a unified
+  market + instant administration + rapid mobilization (a durable structural advantage).
+- ⚠ OVER-REACH (real): mega-projects (joined walls, roads, the vast imperial tomb), harsh legalist
+  law, and the emperor's obsessive immortality-alchemy breed heavy corvée debt and deep unrest —
+  setting up a post-210 crisis (the founder dies ~210 BC). Alchemy tradition stays alive (un-forced).
+- Treasury: huge grain base (canals) funds everything, but the projects are a mounting strain.
+- On rails to ~100 BC.

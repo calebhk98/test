@@ -44,3 +44,12 @@
 - Governance: **Mantriparishad institutionalized** (treasury seals, council-rotated garrison
   commanders, self-reinforcing anti-partition decree) → succession-fragmentation risk reduced.
 - Diverged since 260 BC — acting freely (era-plausible).
+
+## Update — 210 BC — SUCCESSION SURVIVED (the divergence holds)
+- Ashoka died (~232 BC). The institutionalized council + a co-regent pre-tested under his eye →
+  the militarist Maurya passed power WITHOUT fragmenting (the exact failure that ended the real
+  Maurya is averted). Pop ~30M. Treasury large; programs funded.
+- Cavalry program maturing (Punjab studs + steppe/Central-Asian horse imports — Antiochus won't
+  arm a rival, so NOT via the Seleucids). Wootz re-equipment of the infantry continuing; wootz a
+  guarded strategic asset. Gandhara/Taxila consolidated; Kalinga bound to the heartland by roads.
+- A continuing, centralized, militarist empire entering the 2nd c. BC strong — unlike our timeline.

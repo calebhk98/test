@@ -15,3 +15,12 @@
   the west. In a generation our riders will not be our shame.
 - And we have bound the realm against itself: a true council of state, seals and garrisons in its
   keeping, so that when a king dies the empire does not die with him. We build a state, not one man's will.
+
+## 210 BC — THE STATE OUTLIVES THE KING
+- Ashoka is dead. In another age this was the hour the empire cracked — governors turning kings, sons
+  turning on sons. Not for us. The council held the seals; the heir we had already seated and shown to
+  the provinces took the throne without a sword drawn. The machine of state did not falter.
+- Our riders grow in number and quality from the Punjab studs and the horses we buy from the northern
+  traders (the Yavana king will not sell us war-mounts — no matter, others will). Our foot carry wootz
+  now, the finest steel in the world, which we sell to no rival. We bound conquered Kalinga to the
+  heartland with roads, not just spears. The empire stands whole, hungry, and unbroken.

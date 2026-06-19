@@ -45,3 +45,13 @@
 - Priorities held: Syrian ports > Red Sea route > Kush coercion-treaty > artillery standardization;
   optics + big irrigation DEFERRED. Papyrus monopoly = guard against any substitute (suppress, hedge).
 - Note: Egypt's great divergence (surviving the 204 BC succession) is still ~30 yrs away — on rails.
+
+## Update — 210 BC
+- Ruler: Ptolemy IV. Pop ~7.2M. Treasury drawn down to ~38,000 by a mercenary-heavy Syrian war.
+- Fourth Syrian War vs Antiochus III: held Coele-Syria in a costly DEFENSIVE STALEMATE — WITHOUT
+  arming native Egyptians. KEY: no native phalanx → no native-revolt seed → unusually STABLE for
+  this era (a divergent benefit, chosen, traded against a less decisive military result).
+- Aided Rhodes after its earthquake → strong Aegean influence/loyalty.
+- Programs: glassmaking research (goal now: signal-mirrors/fire-lens), artillery standardization,
+  modest Kush iron stockpiling (still iron-import-dependent), Red Sea trade push continue.
+- ⚠ Egypt's divergence is NOW IMMINENT (~204 BC): Ptolemy IV's longer life → clean adult succession.

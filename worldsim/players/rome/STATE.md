@@ -39,3 +39,13 @@
 - Tech (banked, ENABLES): standardized hull-sections → shipbuilding industry → merchant marine +
   faster future fleets (state to tax sea-lanes after the war). Military roads toward Ariminum begun.
 - On rails until ~100 BC (Rome's divergence = the failed Egypt attempt → paper).
+
+## Update — 210 BC (the Second Punic War, mid-course)
+- Hannibal invaded Italy; CANNAE (216) and other defeats gutted Roman armies. Rome did not break:
+  Fabian attrition + deep manpower + the Numidian alliance + Scipio's Iberian campaign (from ~210)
+  are turning the war. Bloodied but winning by 210.
+- COST: treasury near-collapse (debasement, temple levies); Italy ravaged; SOME southern socii
+  defected to Hannibal (the deferred-citizenship gamble cracked at the edges — a future reckoning).
+- Pop ~3.8M (heavy war losses, allies strained but mostly holding). Tech: roads/standardized
+  shipyards continue (banked merchant-marine method).
+- Still on rails to ~100 BC.

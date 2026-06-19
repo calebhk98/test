@@ -11,3 +11,12 @@
   iron we covet (our one great material lack). We send envoys east toward the spice-empire, and our
   scholars now labor to make clearer glass, that one day we might grind lenses worth the having.
 - The Greek mob is fed, the priests are courted, the heir is blooded in command. Egypt is rich and whole.
+
+## 210 BC (Ptolemy IV)
+- Antiochus the Great came for the Levant, and we faced a hard choice: arm the Egyptian peasantry in
+  their thousands, as some urged, or fight with our Greek and Macedonian core, our mercenaries, and our
+  elephants alone. We chose NOT to put pikes in the hands of a people who might one day turn them on us.
+- So our victory was no rout — we held Coele-Syria by the fleet, the elephants, and stubborn defense,
+  and it cost us dearly in gold. But we have no armed and angry peasantry, no Thebaid in revolt. Egypt
+  is poorer this year and steadier for a generation. We sent grain and builders to stricken Rhodes, and
+  bound the Aegean closer to us. The dynasty stands firm under Ptolemy.
