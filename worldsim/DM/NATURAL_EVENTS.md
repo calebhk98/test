@@ -114,5 +114,24 @@ plausibly perceive it.
 ## ~110 BC — Storm surge/tsunami, Iberian Atlantic & western Mediterranean coast
 - Minor-moderate. Perceived: Rome (Iberia). Damaged boats/shore settlements, disrupted fishing.
 
+## ~104 BC — Earthquake, western Anatolia coast
+- Moderate. Perceived: Aegean/Greek ports. Toppled masonry, cracked temple; year of rebuilding,
+  minor harbor silting.
+
+## ~101 BC — Nile low flood / drought, Egypt
+- Serious. Perceived: Egypt. Two weak inundations → grain shortfall, high Alexandria prices,
+  rural debt/land abandonment 3–4 yrs. (Absorbed from reserves during the Roman war scare.)
+
+## ~98 BC — Comet, visible across Eurasia
+- Minor. Perceived: Mediterranean, China, India (independently). Read as omen; some rulers may
+  act on the "portent."
+
+## ~96 BC — Locust swarms, Ganges plain & Deccan fringe (India)
+- Moderate. Perceived: India. Localized hunger, displaced labor during the campaigns; recovery
+  in a few years.
+
+## ~92 BC — Harsh winter + spring flooding, Yangtze/Yellow basin (China)
+- Moderate-serious. Perceived: China. Drowned fields, dike repair, regional grain stress 2 seasons.
+
 <!-- next events below -->
 

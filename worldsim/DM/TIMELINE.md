@@ -180,10 +180,11 @@ World date advanced to: 190 BC (corrected)
   under Wu by 105 BC; gunpowder + permanent-militarism divergence imminent (~100 BC).
 - **Egypt (divergence active from ~204 BC; verifier-softened).** Ptolemy IV's longer life let his
   heir succeed as an adult → Egypt SKIPPED the regency crisis and the deep 2nd-century decline,
-  and largely avoided the Ptolemy VI vs VIII civil wars. It still contested/lost Coele-Syria to
-  Antiochus III at his peak (~200 BC), but recovered footing as the Seleucids collapsed after
-  Magnesia; it survived Antiochus IV's invasion (~168) with Roman diplomatic backing and stayed
-  INDEPENDENT. By 105 BC: a strong, stable, independent kingdom with Alexandrian science thriving
+  and largely avoided the Ptolemy VI vs VIII civil wars. Crucially, with a stable ADULT king
+  during the Fifth Syrian War (202–195 BC) — no child-regency collapse — Egypt HELD Coele-Syria
+  and threw back Antiochus III (consistent with its Raphia-era record of winning Syrian Wars).
+  As Rome then broke the Seleucids at Magnesia (190), Egypt remained the dominant eastern-
+  Mediterranean power; it survived Antiochus IV's later probe (~168) and stayed INDEPENDENT. By 105 BC: a strong, stable, independent kingdom with Alexandrian science thriving
   — notably healthier than real history, NOT drifting into Roman clientage. (Sets up Rome's
   failed ~100 BC grab.)
 - **India (live, diverged).** Met the Indo-Greek (Bactrian) invasion of its NW with defense-in-
@@ -202,3 +203,46 @@ World date advanced to: 190 BC (corrected)
 - **Rome/Egypt ↔ China:** no contact (faint "silk people" notions only, later).
 
 World date advanced to: 105 BC
+
+## 105–90 BC — Turn (THE TRIPLE BRANCH — divergences fire; verified inline)
+From here the world leaves our timeline for ALL powers.
+
+- **ROME ATTEMPTS EGYPT — AND FAILS (divergence).** The Senate, facing the Cimbri and fearing
+  that whoever seized Egypt's treasure would return a king, formally DECLINED a state expedition.
+  But an ambitious commander with Marian-style personally-loyal legions launched an opportunistic
+  grab anyway (~93–90 BC), seeking wealth and a power base. It was UNDER-RESOURCED (factional, not
+  the full Roman state) and Rome's slide toward the Social War meant no reinforcement. **Egypt
+  repelled it** — its navy contested the sea and cut supply, and native machimoi + phalanx +
+  elephants broke the landing at the Delta/Pelusium amid marsh and disease. The general was
+  destroyed. Consequence: **Egypt cut off papyrus exports to Rome** (state monopoly = a weapon).
+- **ROME → PAPER (divergence consequence begins).** Deprived of cheap papyrus, Roman workshops
+  began experimenting with matted/felted plant fibers and rags to mimic it — the first crude PAPER
+  (maturing over the next ~20 yrs). [DM/directive-4 check: necessity-driven, reachable from known
+  fibers/felting — NOT an anachronistic leap.]
+- **CHINA → GUNPOWDER (divergence), handled realistically.** Court alchemists chasing an
+  immortality elixir produced a violently-burning saltpeter/sulfur/charcoal powder (~100–95 BC).
+  The court did NOT leap to firearms: it sealed the work as a guarded STATE SECRET, recorded the
+  proportions, and used it only where fire already served — signal-beacons, incendiaries, startling
+  enemy horses, and court fireworks/awe. China also WON the "heavenly horses" expedition against
+  Dayuan (Ferghana). **China is now permanently militarist (divergence active)** — future Wang
+  Mang / Yellow Turban / Three Kingdoms / Xianbei collapses are CANCELLED from here.
+- **INDIA — aggressive expansion (realism corrected).** Drove two armies into the DIVIDED Bactrian
+  Greek lands (spearheaded by new horse-client cavalry), took foothill valleys and fortress-towns,
+  installed tribute-lords; ferried a fleet expedition to seize the great southern island (Sri
+  Lanka) with a garrison-capital; punitive drive into the Bengal forest fringe for elephants/timber.
+  COMPLICATION (ripple from China): China's steppe victories pushed the Yuezhi/Saka nomads SOUTH —
+  India's NW advance now collides with waves of horse-nomads, opening a new and dangerous nomadic
+  frontier even as its own cavalry grows. Net: big gains + a fresh threat.
+- **EGYPT** — repelled Rome (huge prestige), now WARY/HOSTILE to Rome; expanded the fleet,
+  fortified inland granaries, mixed native/Greek units against mutiny, bound the priesthood, and
+  funded Rome's western distractions. Absorbed a ~101 BC Nile low-flood from reserves. Strong,
+  independent, and now Rome's adversary.
+
+### Cross-awareness (TRUE)
+- **Egypt–Rome:** relations RUPTURED — from cool friends to wary enemies; papyrus trade severed.
+- **China ↔ India:** still NO direct contact; China's steppe wars reach India only through the
+  intermediary nomads (Saka/Yuezhi). India's discreet NE probe returned only more rumor. China
+  knows India as "Shendu" (second-hand); India has only vague rumor of an eastern realm.
+- **China ↔ Egypt/Rome:** none.
+
+World date advanced to: 90 BC

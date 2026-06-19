@@ -45,9 +45,10 @@
 
 ## 105 BC (after ~85 years — a long stable age)
 - Our royal house passed the throne cleanly from father to grown son, sparing us the regency-
-  strife that might have torn us apart. We did bend before the Seleucids in the wars for the
-  Levant and lost Coele-Syria for a time — but as Rome broke the Seleucids in the north, their
-  power withered and ours endured.
+  strife that might have torn us apart. Because a strong grown king sat the throne in the war
+  for the Levant — not a child and his squabbling regents — we HELD Coele-Syria and hurled
+  back Antiochus, as our grandfathers did at Raphia. When Rome later broke the Seleucids in the
+  north, their power withered and ours stood unbroken; the Levant remained ours.
 - When a later Antiochus marched into Egypt itself, the western Romans pressed him to withdraw,
   and we kept our independence and our crown. We fell into no foreign master's hand.
 - Through it all Alexandria's lamp burned ever brighter — her scholars, physicians and
@@ -55,3 +56,15 @@
 - Of the wider world: Rome now towers over the western and middle sea, though we hear it is
   troubled within. The eastern spice-empire still trades with us through Arabian hands. We stay
   watchful of Rome's friendship — the strong are friends only while it suits them.
+
+## 90 BC (the mask falls — Rome strikes, and is broken)
+- We were right to arm. A Roman general — greedy for our treasure and a crown of his own — came
+  against us by sea with his legions. But our fleet bled his ships and starved his landing, and
+  our own soldiers, Greek and Egyptian together, shattered his army in the marshes of the Delta.
+  The invader was destroyed; Egypt stands unconquered, and the world has seen that the Nile is no
+  easy prize.
+- In answer to this treachery we have SHUT OFF the papyrus that Rome and half the world depend
+  upon — let them scratch on wood and leather and remember whose friendship they spurned.
+- Rome is now our enemy, not our friend. We pour silver into every cause that keeps Rome busy and
+  divided in the west, and we make our navy and our granaries ready for the next blow.
+- Alexandria thrives untouched; our scholars and engineers labor on.

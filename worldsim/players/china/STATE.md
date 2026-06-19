@@ -64,3 +64,17 @@
 - ⚠ DIVERGENCE IMMINENT (~100–95 BC): court alchemists seeking an immortality elixir will
   discover GUNPOWDER (abundant northern saltpeter); thereafter China stays PERMANENTLY
   militarist (cancels later Wang Mang/Yellow Turban/Three Kingdoms/Xianbei collapses).
+
+## Update — 90 BC (DIVERGENCES FIRED)
+- GUNPOWDER discovered (~100–95 BC). Kept as a guarded STATE SECRET; proportions recorded. Early
+  use ONLY: signal-beacons, incendiaries, startling enemy horses, court fireworks. NO firearms/
+  cannon yet (realistic slow development — directive 4). A ~1000-yr head start now compounds.
+- PERMANENTLY MILITARIST from here: future Wang Mang/Yellow Turban/Three Kingdoms/Xianbei
+  collapses are CANCELLED. The state will not moderate.
+- Won the Dayuan "heavenly horses" expedition; cavalry + prestige up; Xiongnu driven further;
+  western corridor garrisoned (watchtowers + soldier-farms / tuntian).
+- Economy: war-strained (monopolies fund campaigns); ~92 BC winter/flood a regional drag.
+- Awareness: knows Shendu (India)/Anxi (Parthia)/Daxia (Bactria) second-hand; still NO contact
+  with Egypt or Rome; no direct contact with India.
+- NOTE (DM): China's steppe victories are pushing Yuezhi/Saka nomads SOUTH — rippling onto
+  India's NW frontier (China is unaware of this downstream effect).

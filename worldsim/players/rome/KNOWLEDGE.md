@@ -27,3 +27,12 @@ We do not know how many powers exist in the wider world.
   may yet seek revenge. This is our chief danger.
 - Egypt (Nile kingdom) remains a friendly, fabulously rich trade partner. We know nothing of
   any powers further east than the Hellenistic world.
+
+## Update — 90 BC
+- EGYPT IS NOW AN ENEMY. One of our generals tried to seize it and was annihilated at the Delta —
+  its navy and combined army are far stronger than we assumed. It has cut off our papyrus.
+- Lesson: Egypt cannot be taken cheaply or by one adventurer; it would need the full, focused
+  might of Rome — which our domestic strife now denies us.
+- We are making our own writing-material to replace papyrus.
+- Internal danger (restless Italian allies, ambitious generals with private armies) now outweighs
+  foreign adventures.

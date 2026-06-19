@@ -50,9 +50,10 @@
 ## Update — 105 BC (divergence active; strong independent kingdom)
 - Government: stable Ptolemaic monarchy, clean adult successions (divergence: no regency crisis,
   no deep decline). Independent — did NOT drift into Roman clientage.
-- Territory: core Egypt + Cyrenaica/Cyprus/Aegean network; lost Coele-Syria to Antiochus III
-  (~200 BC) but the Seleucid collapse (post-Magnesia) left Egypt the stronger survivor; survived
-  Antiochus IV's invasion (~168) with Roman diplomatic backing.
+- Territory: core Egypt + Coele-Syria/the Levant (HELD vs Antiochus III in the 5th Syrian War —
+  divergence: stable adult king, no regency collapse) + Cyrenaica/Cyprus/Aegean network. The
+  Seleucid collapse (post-Magnesia) left Egypt the dominant eastern-Med power; survived Antiochus
+  IV's later probe (~168) with Roman diplomatic backing.
 - Population: recovered/growing; Alexandria a world center of science.
 - Economy: very strong (grain, papyrus, trade); recurring Nile-failure risk persists.
 - Unrest: native-Egyptian grievance remains a structural background factor.
@@ -60,3 +61,16 @@
 - Tech: thriving Alexandrian science/engineering (real). NO anachronisms.
 - WATCH: Rome is now the Mediterranean hegemon and "friendly" — a friendship of convenience.
   (Rome's ~100 BC attempt on Egypt is coming — Egypt does NOT know this.)
+
+## Update — 90 BC (REPELLED ROME; now adversaries)
+- Repelled a Roman invasion (rogue-general expedition) at the Delta — major prestige; navy +
+  combined Greek/native army validated on home ground.
+- Foreign policy: Rome is now an ENEMY. Egypt has EMBARGOED papyrus to Rome and is funding
+  Rome's western distractions/rivals.
+- Territory: unchanged and intact (core + Levant + Cyprus/Cyrenaica/Aegean network).
+- Economy: very strong; absorbed a ~101 BC Nile failure from reserves; papyrus now a weapon, not
+  just an export.
+- Unrest: native grievance still structural but the shared victory over Rome buoyed loyalty.
+- Military: enlarged fleet; fortified inland granaries; native/Greek units mixed against mutiny.
+- Tech: Alexandrian science thriving (real-grounded; no anachronism).
+- Divergence fully active: independent, strong, and now a great-power rival to Rome.

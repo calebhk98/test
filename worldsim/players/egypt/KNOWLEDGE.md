@@ -46,3 +46,10 @@ This is Egypt's own view of the world. It does NOT know how many other powers ex
   Powerful, but far, and friendly to us.
 - Internally: the native revolt is suppressed but the grievance (bread, taxes, native vs Greek)
   is not gone. Our reliance on native troops is now permanent.
+
+## Update — 90 BC
+- ROME IS NOW OUR ENEMY. A Roman general invaded us by sea and we destroyed him at the Delta.
+  We have cut off papyrus to Rome and we fund Rome's rivals in the west. Expect Rome to try again
+  when its hands are free — it is the most dangerous power we know.
+- Our victory proved our navy and our combined army can hold the homeland. But Rome's manpower is
+  vast; we must keep it divided and distracted.

@@ -52,3 +52,17 @@
 - We pushed our rule south to the hot coasts and into the eastern peninsula, and made the law
   and the granary reach further than ever before. The realm is rich, ordered, and feared.
 - (Our alchemists, seeking the elixir of deathless life, labor over strange earths and salts...)
+
+## 90 BC (the heavenly horses, and a powder that breathes fire)
+- Our great western expedition prevailed: the valley-kingdom of fine horses (Dayuan) yielded its
+  "heavenly horses," and our cavalry and prestige swelled. We drove the steppe horsemen further
+  still and studded the western corridor with watchtowers and soldier-farms.
+- A strange and terrible thing came of the elixir-work: mixing saltpeter, sulfur and charcoal, our
+  alchemists made a powder that does not grant long life but DEVOURS it — it flares and roars and
+  burns men where they stand. We did not cast it aside in fear, nor did we pretend to understand
+  it. We sealed the knowing of it as a guarded secret of the throne, wrote down its measures, and
+  set it to work where fire already serves us: in beacon-signals, in fire to panic an enemy's
+  horses, and in bright bursting lights to awe the court. What more it may become, time will tell.
+- The realm stays ordered by strict rule and the reward of war; we have not softened, and we shall
+  not. We remain the master power of all we can see — though now we know other great realms lie
+  beyond the western deserts.

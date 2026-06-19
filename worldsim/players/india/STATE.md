@@ -62,3 +62,13 @@
 - AWARENESS: knows Egypt (relayed) and the western Yavana powers (Seleucids, now broken;
   Bactrian Greeks, now beaten). Only VAGUE unverified rumor of "a great ordered realm" to the
   NE (actually China) — does NOT identify it. No direct contact eastward.
+
+## Update — 90 BC (major expansion + a new nomad threat)
+- Territory: took near-side BACTRIA (valley-towns/fortresses under tribute-lords); seized the
+  great southern island (Sri Lanka) with a garrison-capital; raided Bengal (elephants/timber).
+- NEW THREAT: horse-nomads (Saka/Yuezhi) pushed south from the steppe (unknowingly, by China's
+  wars) now assail India's newly-won NW lands — a dangerous open frontier.
+- Military: cavalry rapidly expanding (stud-farms from horse-tribute + heavenly-horse stock to
+  the north is contested); mounted-archer corps forming. Elephant + infantry core intact.
+- Economy: richer (trade-broker + new conquests); war-taxes straining some provinces/vassals.
+- Awareness: unchanged (Egypt relayed; vague eastern-realm rumor). No direct eastern contact.

@@ -58,3 +58,17 @@
   and a conquering one. From the far north-east, caravans bring strange rumors of some vast and
   ordered realm beyond the mountains — but we have seen nothing of it ourselves, and put no
   faith in tales.
+
+## 90 BC (the conqueror's hunger returns)
+- We struck while the mountain-Greeks were divided. Two armies, led by our new horse-clients,
+  forced the northwestern passes and took the valley-towns and fortresses of Bactria's near side;
+  we set tribute-lords over them rather than rule them outright — yet.
+- Our fleet carried an army to the great southern island and planted a garrison-capital there,
+  seizing its pearls and cinnamon; and a column went east into the Bengal forests and dragged
+  back elephants, timber, and submission.
+- But the conquered north is no easy gift: out of the steppes beyond the mountains came waves of
+  horse-nomads — fierce riders fleeing some pressure far to their north — and now they fall upon
+  the very lands we have taken. Our growing cavalry will be tested as never before. We raise
+  stud-farms and mounted-archers in haste.
+- The empire's hunger is unchanged though its rulers come and go. We are richer, larger, and
+  again at war on a new frontier.

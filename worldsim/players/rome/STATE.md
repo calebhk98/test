@@ -46,3 +46,14 @@
   of future civil wars).
 - Contact: friendly trade with Egypt; faint notion of wealthy east; NONE with India/China.
 - Divergence (~100 BC) imminent: Rome will attempt to seize Egypt and FAIL. Rome does not know this.
+
+## Update — 90 BC (divergence fired)
+- A rogue general's expedition to seize Egypt FAILED catastrophically (fleet/army lost at the
+  Delta). The Senate's caution was vindicated; the general's faction is discredited.
+- Egypt is now an ENEMY and has EMBARGOED papyrus to Rome.
+- → PAPER: Roman workshops are inventing a papyrus-substitute from flax/rag/bast fibers (crude
+  now; maturing). [Necessity-driven; not anachronistic.]
+- Politics: Italian allies near revolt over denied citizenship (Social War looming, 91–88 BC);
+  ambitious generals with personally-loyal armies threaten the Republic (civil-war seeds).
+- Territory/economy: provinces intact and rich; Mediterranean hegemon, but internally fracturing.
+- Contact: HOSTILE with Egypt now; still none with India/China.

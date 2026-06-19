@@ -1,9 +1,22 @@
 # GROUND TRUTH — DM ONLY (no player ever reads this)
 
-Current world date: **105 BC**  (started 260 BC; see TIMELINE.md for resolved turns)
+Current world date: **90 BC**  (started 260 BC; see TIMELINE.md for resolved turns)
+
+> Status @90 BC — ALL FOUR HAVE DIVERGED; world has left our timeline.
+> Egypt: repelled a Roman invasion (rogue-general expedition), now Rome's ADVERSARY; cut papyrus
+> to Rome; strong & independent. Rome: invasion failed; humiliated faction; sliding toward the
+> Social War; now inventing PAPER from fiber/rag substitutes (matures ~next turn). China: has
+> GUNPOWDER (state secret; early use = signals/incendiaries/fireworks/startling horses); won the
+> Dayuan horses; PERMANENTLY militarist now (future collapses cancelled). India: big NW gains in
+> divided Bactria + seized Sri Lanka + Bengal raids, BUT now faces Saka/Yuezhi nomads pushed
+> south by China's steppe wars (cross-world ripple).
+> Contact graph @90 BC: Egypt<->Rome (HOSTILE now), Egypt<->India (relayed Arabian trade),
+> China-->Shendu/Anxi/Daxia (second-hand), India<->Saka/Yuezhi (new nomad frontier, NPC),
+> China<->Egypt/Rome (none), China<->India (none direct).
 
 > Status @105 BC (verified): Egypt = strong INDEPENDENT kingdom (divergence: skipped regency
-> crisis/decline; Alexandrian science thriving) — poised for Rome's failed ~100 BC grab.
+> crisis/decline; HELD Coele-Syria/the Levant vs Antiochus III in the 5th Syrian War thanks to
+> stable adult rule; Alexandrian science thriving) — poised for Rome's ~100 BC grab attempt.
 > Rome = Mediterranean hegemon but internally turbulent (Gracchan aftermath, Marius, just past
 > the Arausio disaster 105 / Cimbri crisis). China = Han at its HEIGHT under Emperor Wu;
 > Silk Road OPENED (~126 BC) → Han now knows second-hand of India ("Shendu"), Parthia ("Anxi"),
