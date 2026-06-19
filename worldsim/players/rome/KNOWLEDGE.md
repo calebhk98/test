@@ -83,3 +83,40 @@ Open questions: none recorded yet.
 - Open questions: how durable is this new order when the First Citizen is gone? What arrangement
   will hold the legions and the great families together after him? And when will the reckoning
   with Egypt come — on whose terms, and in what generation?
+
+## 1 AD — what we now perceive
+- The Principate is no longer a question — it is the answer Rome has given itself. The First
+  Citizen has governed a generation without opposition that was not quickly ended. We believe
+  this order is durable so long as the succession mechanism holds. Our new rule — that the
+  heir must command soldiers in the field and earn their loyalty before he is confirmed — is
+  our best insurance. Whether it will hold past this First Citizen, and whether the next man
+  in turn will enforce it on his own heir, we cannot say. It is the question above all questions.
+- The Rhine and upper Danube are now a working frontier with forts, roads, and client-tribe
+  management. We have no reliable knowledge of what lies deep in the northern forests beyond
+  the rivers — only the reports of traders, which are inconsistent, and the occasional
+  captured tribesman, whose account of his own land is limited. We believe there are peoples
+  beyond our reach who are watching what we build along the rivers. We do not know their
+  numbers or their capacity for concerted action. The forests swallow knowledge.
+- Egypt: we observe it through our Syrian border, through the intelligence our merchants bring
+  from the eastern sea-ports, and through what the traders in the coastal towns repeat. We
+  believe Egypt to be prosperous, stable, and possessed of a fleet capable of contesting the
+  eastern sea against any force we could presently send there. We do not know the interior
+  disposition of their armies, the depth of their grain reserves, or the state of their
+  governing court. What we have seen is that Egypt sells grain to all buyers without apparent
+  political preference, keeps its coastal positions in Syria without expansion toward ours,
+  and has not moved aggressively in the time since the renegade's disaster. Whether this
+  reflects confidence in their defense or a deliberate patience while they watch us, we cannot
+  judge. The enmity of 90 BC is ours to remember; we have no way to measure how they carry it.
+- Our own paper we now trust for the archive. The gap we named — patchy middle-tier provincial
+  records that we cannot audit cleanly — is being closed by the standardization effort begun
+  this generation. What we do not yet know is how long it will take to bring the more distant
+  provincial offices into the system, and whether the local clerks will keep the forms faithfully
+  once our inspectors are not present.
+- What lies east beyond Egypt, beyond the Parthians, in the direction from which Egypt's India
+  trade comes: we do not know, except that there is wealth there and that Egypt has learned to
+  reach it. We have heard, through merchants, of great kingdoms in that direction. We have no
+  first-hand account worth trusting.
+- Open questions: will the succession mechanism hold past the current First Citizen? What is
+  Egypt's true strength — its fleet, its army, the depth of its treasury — against a determined
+  Roman effort? What is gathering beyond the Rhine and Danube that our trading-reports cannot
+  see? What powers does Egypt's eastern trade touch that we know nothing of?

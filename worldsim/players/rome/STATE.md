@@ -147,3 +147,33 @@
   daily administration of the empire without difficulty. Stone and bronze for permanent record;
   paper for everything else. Egypt's embargo, which was meant to silence us, made us
   self-sufficient instead.
+
+## Update — 1 AD
+- Population: ~5.5M citizens and settled peoples (our own rough reckoning from the census
+  returns and provincial rolls). The Principate's domestic peace has allowed this modest growth;
+  settlement of veterans into productive land contributes.
+- Treasury: HEALTHY. Gallic revenue remains the backbone — the Rhineland and interior of Gaul
+  pay reliably, and the frontier tax from newly incorporated client-territory along the Rhine
+  and upper Danube adds a further stream. No great campaign debt in this generation; expenditure
+  on roads and fort-construction is productive rather than ruinous.
+- Politics: the Principate is consolidated and no longer feels provisional. The Senate functions
+  as a body of senior administration and legitimacy; real decisions belong to the First Citizen.
+  Stability has settled into routine.
+- Succession (critical reform): it is now settled policy that the heir must hold and exercise
+  genuine field command — real campaigns, real soldiers, real authority over legions in the
+  provinces — before he can be confirmed. Paper succession decrees do not transfer legion
+  loyalty. The man must earn his soldiers in person. This is the guardrail against the armies
+  choosing their own man and civil war beginning again.
+- Military: Rhine and upper Danube frontier advanced INCREMENTALLY this generation — not a
+  great overreach, but a steady extension of fort-lines, road-building behind them, and managed
+  client-tribe relations. The new territory and client buffer feeds some revenue and provides
+  auxiliary manpower. Deep penetration east of the rivers: not attempted.
+- Gaul: fully absorbed. Revenue solid. Romanization proceeding in the towns.
+- Egypt: not taken, not fought. The Syrian border position is unchanged. The debt of the Delta
+  (90 BC) remains on the books; the reckoning is deferred to a later generation.
+- Writing and records: our paper (beaten fiber, pressed flat) is now ARCHIVE-GRADE — fit for
+  permanent provincial records, not merely dispatches. We have begun standardizing provincial
+  record-keeping format across the middle tiers of administration to permit proper audit of
+  sub-prefects and district clerks. The work is in progress. Egypt's papyrus is available again
+  at steep price from eastern merchants; we buy small quantities for fine purposes. We are not
+  dependent on it.

@@ -114,3 +114,30 @@
   escaping. Study continues quietly, far from the frontier, witnessed only by sworn engineers. No use
   has been made of it. The secret remains absolute.
 - Posture: hard, ordered, militarist. The realm does not soften. Population ~50M.
+
+## Update — 1 AD
+- Population: ~52M; continued growth in the river valleys. The realm is dense, administered, and producing.
+- Governance: PERMANENT INSTITUTIONAL REFORM — the split tally-seal command authority is now law.
+  The power to mobilize and move the armies requires the physical joining of split seals held by
+  separate officials under separate patronage. No single regent, consort-minister, or faction chief
+  can raise the armies alone. This reform was devised in answer to a consort-clan factional threat
+  that has since receded; the reform remains as a permanent structural lock on military authority,
+  binding on all future courts.
+- Military: the northern frontier is stable. The Xiongnu split holds — southern chief bound as
+  tributary-vassal (hostage-sons at court, Han officers in his household, titles-as-leash); northern
+  holdouts remain isolated and diminished. No new offensive launched; garrison-farmer system in the
+  western oasis corridor continues self-sustaining. The new command-seal institution is now in force
+  across the military hierarchy.
+- Diplomatic: Anxi (Parthia) broker-partnership on the Silk Road continues intact and productive.
+  Silk-silver income supplements the salt and iron monopoly revenues steadily.
+- Fiscal: treasury eased and holding. Silk Road income now a real and reliable supplement. Northern
+  garrison burden continues but is no longer the sole weight on the treasury. Strain is measurably
+  lighter than at any point in the past century of campaigning.
+- The burning mixture: CONTAINMENT TIGHTENED. Engineers' understanding has reached a threshold —
+  they now see that the path from slow ignition to a hurled or bursting vessel is shorter than
+  previously understood. In answer, we tightened rather than widened: number of sworn engineers
+  fixed at five; no test or demonstration near any soldier or military installation; all written
+  records held in a single sealed vault under court control. No weapon made; no foreign power has
+  any awareness. The secret narrows. Study continues under the strictest conditions we have ever
+  imposed.
+- Posture: hard, ordered, militarist. The realm does not soften. Population ~52M.

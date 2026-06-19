@@ -123,3 +123,31 @@ Open questions: none recorded yet.
   cantonment chiefs remain manageable if the Yuezhi offer them a different bargain? How long can we
   keep the Yuezhi channel secret from the Saka client-chiefs?
 
+## ~1 AD — what we now perceive
+- The Yuezhi are a large and consolidating horse-power. They have now held pressure against our
+  frontier for a generation without committing to the passes — whether because they judge the passes
+  genuinely impassable, or because they are occupied with other directions, or because the gifts-and-
+  trade channel gives them reason to look elsewhere, we cannot say. We do not know how many riders
+  they can put in the field at their full strength. We know the pressure they exerted was greater than
+  any single wave of Saka, and we hold that knowledge carefully.
+- The cantonment chiefs serve, and their hostages in Pataliputra give us leverage, but we do not
+  mistake the arrangement for tested loyalty. They have not been placed in a situation where defection
+  was clearly profitable. We do not know how they would choose if the Yuezhi made them a better offer
+  than we do.
+- Our cavalry — combined own-bred and cantonment Saka under our discipline — is the strongest it has
+  ever been, near-parity with a steppe force by our best estimate. This estimate has not been tested
+  against a full steppe army in open country. We know the difference between a drill and a battle.
+- The wootz monopoly is intact. No outside hand has the craft. The ingots we have sold to compliant
+  Saka chiefs over the years are a controlled quantity; none has gone to the Yuezhi. We believe no
+  foreign smith has reverse-worked our product to the secret of the making — we believe this, but we
+  cannot be certain.
+- The Nile kingdom: its ships and factor are reliable. But we still do not know how deep that kingdom's
+  world runs to the west and south of its ports, how many other peoples it commands, or what power it
+  wields beyond what reaches our docks. It is a great trading partner; its true extent remains beyond
+  our sight.
+- Open questions: How deep does the Yuezhi confederation run — are there powers behind them as they
+  were the power behind the Saka? Will the Yuezhi eventually come for the passes themselves, or find
+  another direction? When the cantonment chiefs' sons grow up without memory of the lands they came
+  from, does the hostage leverage hold the same way? What world does the Nile kingdom inhabit that we
+  do not see?
+

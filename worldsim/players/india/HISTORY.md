@@ -125,3 +125,37 @@
 - The Nile kingdom's trade deepens. The factor writes regularly; the ships are reliable; the revenue
   grows. Kalinga held. The empire is whole at 37M souls and more capable in the field than it has
   ever been. We do not let that make us careless.
+
+## 1 AD
+- The Yuezhi pressure did not relent. For a full generation they have leaned upon our frontier — not
+  through probing bands but as a mass presence that does not withdraw. We did not go out to meet them
+  on the open ground of their choosing. Our cavalry, combined with the cantonment Saka riding under
+  our officers, is now near their quality — we believe this, and we will not test the belief rashly.
+  We know only what drills and limited skirmishes tell us, and a battle in the open against a
+  consolidating horse-power of unknown depth is not a wager we are willing to make when the passes
+  are working. The passes worked. The Yuezhi fed nothing into them and found nothing to pierce.
+- We kept our steel discipline absolute. The cantonment Saka chiefs receive controlled ingots — raw
+  metal, not finished blades — because a chief who bends under enough pressure, or whose son is
+  offered a better bargain by the Yuezhi, must not be carrying our best work into an enemy forge.
+  The Yuezhi received nothing at all in steel — not ingots, not tools, not off-cuts. Horses and
+  quiet good-will is what we offer them; our metallurgy is not for sale and never was.
+- We have measured our own frontier honestly this generation. The cantonment line is robust but not
+  invulnerable; we do not tell ourselves otherwise. A single chief's defection would cost us his
+  horsemen and the intelligence they carry, but it would not cave the line — his kin sit in
+  Pataliputra, and our own independent agent network watching the foothills was built precisely so
+  that no single flippable client holds our eyes. The passes themselves are manned by our own regular
+  foot, not by the cantonment chiefs. The clients add depth; they are not the wall.
+- The Yuezhi channel holds. Gifts have moved north and horses have come south and no word of it has
+  reached the cantonment chiefs, so far as we can tell. We treat that silence as temporary good
+  fortune, not as a settled fact. The day a cantonment chief learns we have been buying from the
+  power that drove him here, the compact is under strain. We prepare for that day without
+  announcing it.
+- The Nile kingdom's ships arrive each season and the factor writes. The trade is the most reliable
+  thing on our western horizon. We do not know what changes in their lands drive their politics; we
+  know only that the ships come and the revenue flows and both sides benefit from the channel staying
+  open. That shared profit is our surest bond, and we hold no illusion that it is more than a bond
+  of interest.
+- Population near 38 million. The treasury is large. We have held every frontier, absorbed a
+  generation of pressure, preserved our monopoly in wootz, and built a cavalry capability we have
+  not yet had to spend. We do not mistake endurance for victory. The Yuezhi are still there, still
+  consolidating, and we still do not know the depth of them.

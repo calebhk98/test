@@ -163,3 +163,60 @@
   in every province. For the ages, stone and bronze; for the daily work of governing a
   world, our own material serves. We are not hostage to the Nile for our words. Whatever
   else may be uncertain about the age that is beginning, that much is settled.
+
+## 1 AD
+- The Principate holds. A generation has passed under the First Citizen's settlement, and we
+  can now say plainly what was unclear when we last wrote: this is not a temporary arrangement.
+  The forms of the old Republic — the Senate, the consulships, the magistracies — persist and
+  will persist, because they give cover to what would otherwise be naked rule by the sword.
+  The man who holds the armies holds Rome. His word is the law's father. We record this without
+  alarm, for Rome is stable and the treasury is sound, and there are worse things than stability
+  after a century of bloodshed.
+
+- The northern frontier is the generation's patient work. We did not attempt what recklessness
+  would have tried — a single great thrust deep into the forests east of the Rhine, racing for
+  a glory that the ground itself would punish. We advanced incrementally. Fort-lines pushed
+  forward by a day's march, then anchored. Roads built behind the forts to move grain and
+  orders and, when needed, legions at speed. The client tribes along the river-bank — those
+  who see which way the wind blows and send their chiefs' sons to learn Latin in our towns —
+  have been cultivated and folded into the system: their men make serviceable auxiliary soldiers,
+  their territory provides a buffer, their grain enters our provincial tax rolls. The Rhine and
+  the upper Danube are now a working frontier, not a ragged edge. This we accomplished by
+  engineering and patience rather than audacity, and we believe it will hold longer for it.
+
+- The question of succession is where we labored hardest, and where we are least certain we
+  have finished. The First Citizen is not young, and those around him have watched what happens
+  when an army's loyalty to its man is not transferred to his heir: the soldiers choose a new
+  man of their own, and Rome bleeds again. The lesson of our whole history since Marius is
+  this — that titles voted in the Senate-house travel no further than the Senate-house walls.
+  Soldiers follow a man they have stood beside in the mud of a campaign, whose orders they
+  have obeyed on the march, whose hand they have seen directing a battle. They do not follow
+  a name written in a decree. So we have made it a settled requirement: whoever is to succeed
+  must first hold real field command — years of it, not the honorary kind — and must earn the
+  soldiers' loyalty in his own person before his name is confirmed as heir. This is not a
+  formality. It is a guardrail against the armies playing kingmaker again.
+
+- On our paper we have reason for the first genuine satisfaction since necessity forced it upon
+  us at 90 BC. What began as a crude substitute — beaten rags and bast fiber, serviceable but
+  inferior — has been refined through three generations of improvement until it now answers
+  for the archives themselves, not merely for daily correspondence. The provincial record-
+  keepers file their accounts on it; the census returns come in on it; the garrison duty-rosters
+  pass along the northern roads on it. We noted a real weakness in this generation: the middle
+  tier of provincial administration — the sub-prefects and local clerks, the men who count the
+  grain in the district storehouses and tally the tributum from the village communities — kept
+  their records badly, on whatever material came to hand, in whatever form they pleased. Auditing
+  them was nearly impossible. We have begun, this generation, to press a standardized form of
+  record on our own paper upon those offices: one format, one set of headings, one annual return.
+  The work is not finished. But it has begun, and the clarity gained in the provinces where we
+  have pushed it furthest is already visible in the accounts. Egypt's papyrus has, we are told,
+  become available again — merchants bring it from the eastern ports at steep price. We buy a
+  little, for the fine calligraphy of dedications and for gifts. We are not moved to depend on it.
+
+- Egypt remains across the Syrian border as it has always remained: unconquered, prosperous,
+  master of the sea-lanes we cannot match, holder of a grievance we have not discharged. We
+  did not move against the Nile this generation. We had no pretext a careful man would use.
+  The eastern legions were needed on the northern river-lines, not committed to the Delta's
+  marshes and channels, which we remember well enough from the renegade's ruin there in 90 BC.
+  The debt is still unpaid. The reckoning — if it ever comes — belongs to whoever stands here
+  after us. We leave the accounting in these pages, as we have done at every closing, so that
+  man will know what he inherits and what he owes.

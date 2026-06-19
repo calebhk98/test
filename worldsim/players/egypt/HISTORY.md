@@ -159,3 +159,60 @@
   faced — heavier even than Antiochus, who came for the Nile and went home beaten. Antiochus came
   alone and weakened. This new master of Rome comes with the whole of the western world behind him,
   and he is not yet weakened at all.
+
+## 1 AD
+- The generation has turned and we are alive — still sovereign, still rich, still unswallowed. Let it
+  be recorded how we came through it.
+- The first truth we faced, when the dust settled on Rome's long civil killing, was this: the old
+  weapons were gone. A divided Rome could be flattered and played upon; a Rome of one master cannot.
+  We had bought friends in the Senate — Roman merchants who grew fat on our grain and our India cargo
+  and would whisper against any war on Egypt that might close those rivers of silver. When the Senate
+  became the theater of one man's will, those friends lost their power to restrain him. A king-in-all-
+  but-name is not moved by merchants' arguments; he moves when his own calculation tells him to, and
+  stops when it tells him to stop. So we set ourselves to shaping that calculation.
+- The design we have carried through this generation is simple in its idea and demanding in its
+  execution: make Egypt USEFUL to Rome's master and make Egypt COSTLY to swallow. Useful: we feed
+  his capital, we sit at the mouth of the India trade from which Roman merchants and Roman elites
+  draw great wealth. Costly: our Delta is fortified, our fleet is strong on the eastern sea, Cyprus
+  is garrisoned and its harbor walled — to conquer us he would have to fight for it and pay heavily
+  in blood and silver, and then govern a people who resist, and he would still lose the India revenue
+  the moment his legions set foot in the factor-houses. A man who reckons clearly will decide that
+  a live Egypt paying its own way and feeding his city is worth more than a sacked Egypt that yields
+  one great haul of plunder and then nothing. We have tried, across these thirty years, to make that
+  calculation plain to him without putting it into words he could hear as insolence.
+- We also reopened our papyrus to Rome — but not as a gift, and not cheaply. We opened it as
+  merchants open a shop: through our Alexandrian trading-houses, at a price we set, in quantities
+  we control. The revenue is good. And the power to close the bales again, should Rome give us
+  cause, has not left our hands. We note a curious thing our agents have brought back: Rome appears
+  now to possess some writing-material of its own making — coarser than papyrus, by all accounts,
+  less pleasant to use, but serviceable. We do not know what this is or where it comes from. Some
+  pressed and dried material, perhaps; our merchants who have seen samples describe it as rougher
+  than any papyrus leaf. We do not know whether this weakens our papyrus lever or merely means they
+  are no longer wholly helpless without it. We watch, and we note it, and we do not yet understand it.
+- The other thing we have done — and this must be held in the most secret of records, written nowhere
+  that passes through any hand we do not trust entirely — is that we have sent feelers east. The great
+  kingdom beyond the desert and beyond Rome's eastern marches — the realm our Nabataean trading-partners
+  call Anxi and whose caravans sometimes reach our agents through the desert roads — is a power whose
+  name we know but whose depth we do not. We did not send an embassy. We sent no traceable letter.
+  We used Nabataean intermediaries — men with their own reasons to keep both Egypt and the eastern
+  kingdom in their good graces — to convey nothing more than a readiness to hear. Whether any answer
+  has arrived that means anything is still unclear to us. But the contact exists, in its deniable form.
+  If Rome ever moves against us, we wish there to be a name that can be breathed into the right
+  ears — a name that means Rome has an enemy of its own in the east who might stir at an opportune
+  moment. We do not expect to use this. We built it so we would have it if the day came that we must.
+  An open alliance with any eastern kingdom would hand Rome the very pretext it needs to march; this
+  is exactly why the contact must stay a shadow and no more.
+- The India trade deepens still. Three fleets on the monsoon road; the factor-house on the Indian
+  coast now in its second generation of factors, its relationships with the port-kings familiar and
+  productive. We know the western shore of that great land now as we know our own Red Sea harbors.
+  What lies further east — other great kingdoms, other seas — we glimpse only in the accounts of
+  Indian merchants who come to our factor-house and speak of their own world. We listen closely.
+- The treasury has recovered past where the famine years left it and climbs back toward its high-water
+  mark. Population stands near eight million and four hundred thousand souls by the best count of the
+  nome-governors. The Nile flooded well; the harvests these last years have been full. The people
+  plant and grind and sail and build in peace.
+- Egypt is sovereign and whole as this new age opens. The sole master of Rome has not moved against
+  us. We do not know if this is wisdom on his part or patience or simply that other things have held
+  his attention. We do not know what the next generation will bring. We know only that we have made
+  ourselves harder to swallow than we were, and that we have built levers we had not before, and that
+  the Nile still rises every year as it has risen since before any king set his name on stone.

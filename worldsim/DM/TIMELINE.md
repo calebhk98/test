@@ -322,3 +322,84 @@ World date → 60 BC.
   finally near-parity, NW braced.
 
 World date → 30 BC.
+
+## 30 BC–1 AD — Turn 9 (all four live; full real loop)
+Defend round run live (4 Sonnet agents). Each power rejected its planted bad ideas in-period
+and revised at least one incoherent plank. Key adjudication note: this is the turn the China
+divergence does its real work — the OTL Western Han slide toward the Wang Mang usurpation (AD 9)
+is CANCELLED by institutional safeguards, not by luck.
+
+- **ROME — the Principate consolidates; Egypt deferred again; succession made institutional, not
+  paper.** The First Citizen's settlement held and deepened into a stable Principate. In the defend
+  round Rome REJECTED both conquering Egypt now (no casus belli; the Delta is still a proven death-
+  trap; the eastern army is wanted on the Rhine/Danube) and a massive single Germania thrust
+  (over-extension beyond the rivers). It advanced the Rhine/Danube frontier INCREMENTALLY — road,
+  fort-line, and client-management rather than deep conquest — and folded the gains into the tax base.
+  **Succession reform is the real story:** Rome recognized that tribunician/proconsular power voted
+  on paper does NOT by itself transfer the loyalty of the legions, so the heir is required to hold
+  real FIELD COMMAND and earn the soldiers' loyalty in person before the succession — a deliberate
+  hedge against the armies choosing their own man. Governance: named a "middle-tier legibility gap"
+  — the paper archive now runs the empire, but provincial mid-level records are patchy — and began
+  standardizing provincial record-keeping on rag/bast paper (paper now genuinely competitive with
+  papyrus for archives, the compounding step). Still Egypt's unconquered cold-war rival.
+- **EGYPT — hardens into a structurally un-absorbable state; deniable Parthia contact; managed
+  papyrus reopening.** Egypt honestly conceded in the defend round that its old lever — "let Roman
+  merchants restrain the ruler" — is far weaker against a single autocrat than it was against a
+  Senate, and REVISED its grand strategy to: make Egypt so structurally useful (grain, the India
+  trade the Roman elite profits from) and so visibly COSTLY to absorb (Delta defenses, fleet, the
+  India revenue that would scatter if Egypt were sacked) that the emperor's OWN calculation counsels
+  patience. Opened a strictly DENIABLE contact with Parthia via Nabataean intermediaries (no
+  traceable embassy — an open Parthian alliance would itself be the casus belli that triggers a
+  Roman attack), held as a latent counterweight only. REVISED the papyrus posture: rather than keep
+  the embargo absolute or reopen cheap, it reopened papyrus to Rome at a MANAGED high price through
+  Alexandrian merchant houses — earning revenue while retaining the re-imposable embargo as a
+  deterrent lever. (Note for irony file: Egypt still does not know its original embargo is what
+  birthed Roman paper, which is now eroding the very leverage it is metering.) India trade deepening;
+  succession secure; treasury recovering from the famine draw.
+- **CHINA — the usurpation is engineered OUT; gunpowder containment tightened as the path shortens.**
+  This is the divergence turn. In OTL a consort/regent clan (Wang Mang) used accumulated control of
+  the court and the military command to usurp the throne (AD 9) and collapse the Western Han. China
+  REJECTED the Qin-style answer of exterminating the consort clans (the defend round flagged that as
+  the very error that cost Qin the realm) and instead installed the real institutional LOCK: military
+  command authority requires PHYSICALLY SPLIT tally-seals held JOINTLY by separate officials, so no
+  single regent or consort-clan figure can mobilize the armies alone. **Result: no Wang Mang, no
+  Western Han collapse — the militarist state passes the AD-9 danger intact.** On gunpowder, China
+  candidly acknowledged the path "from slow wick-ignition to a thrown/hurled vessel is shorter than
+  we should pretend," and rather than accelerate it, tightened CONTAINMENT: no test near troops,
+  no more than five sworn engineers, a single sealed vault, the secret narrowed not widened. Still
+  a guarded study — but the engineers now privately understand it could become a thrown incendiary/
+  bursting weapon; they are deliberately not building one yet. Steppe split holds; Silk Road revenue
+  steady; not moderating.
+- **INDIA — holds the passes against the Yuezhi mass; secures the cantonment rear; guards the steel
+  edge.** India REJECTED the open-field cavalry gamble (its combined Saka-and-own cavalry is now
+  near-parity but unproven, and the passes remain the smart ground), and met the Yuezhi-driven
+  pressure at the fortified killing-funnels as before. It REJECTED selling finished wootz BLADES to
+  the Yuezhi, selling only controlled INGOTS to the compliant Saka (never finished weapons, never to
+  the larger power behind) — keeping the metallurgical edge a Maurya monopoly. Assessed its frontier
+  honestly as "robust, not invulnerable": one cantonment-chief defection would NOT collapse the line,
+  because of layered kin-hostages in Pataliputra, an independent Maurya spy net (not dependent on the
+  flippable clients), and the passes themselves manned by Maurya regulars rather than clients. Held
+  the Yuezhi horse-channel deniable from the Saka clients. Cavalry strong, steel monopoly intact,
+  rear secured — bracing, not gambling.
+
+### Cross-developments
+- **Rome ↔ Egypt:** still consolidated cold-war rivals across the Syrian border. Papyrus trade
+  REOPENS at a managed high price (Egyptian revenue + retained deterrent); Roman paper meanwhile
+  matures toward archive-grade, structurally eroding Egypt's papyrus leverage over time.
+- **Egypt ↔ Parthia:** new, strictly DENIABLE contact via Nabataean intermediaries (latent
+  counterweight to Rome; not an open alliance).
+- **China:** the OTL Wang Mang usurpation / Western Han collapse (~AD 9) is CANCELLED by the split-
+  tally-seal command lock — the militarist divergence's first major averted-collapse milestone.
+  Gunpowder containment tightened; still no weapon and no foreign knowledge of it.
+- **India ↔ Yuezhi:** wary deniable horse-trade continues; the Yuezhi remain a consolidating
+  superpower-in-formation pressing from the NW.
+- Still NO direct China↔(Egypt/Rome/India) contact — Parthia + the oases remain the relay/buffer.
+
+### Fiscal/pop @1 AD
+- Egypt ~8.4M, treasury recovering past the famine draw (managed papyrus revenue + India trade),
+  independent and now structurally hardened. Rome ~5.5M, stable Principate, Rhine/Danube advanced
+  incrementally, paper nearing archive-grade, holds Gaul. China ~52M, militarist, Western-Han-
+  collapse averted (split-seal lock), gunpowder a tightened secret. India ~38M, cavalry near-parity,
+  steel monopoly intact, NW passes held against the Yuezhi mass, rear secured.
+
+World date → 1 AD.

@@ -97,3 +97,45 @@ Open questions:
   reached them; we know them only from Parthian intermediaries.)
 - Can the tributary arrangement with the Southern Steppe chief hold across generations, or will his
   successors press for real autonomy?
+
+## ~1 AD — what we now perceive
+- The court survived a consort-clan factional threat and resolved it without purge or bloodshed —
+  instead through permanent institutional design. The split tally-seal command reform is now law:
+  no single figure can raise the armies alone. This is new knowledge about how power must be
+  structured: that the Mandate is not secured by any single minister's loyalty but by the
+  architecture of authority itself. We regard this as one of the most durable governing lessons
+  the dynasty has produced.
+- The burning mixture: our engineers have crossed a threshold of understanding. They perceive
+  that the interval between what we have — a substance that flares and strikes — and what we
+  do not yet have — a hurled or bursting vessel, a weapon that can be deployed — is shorter than
+  they once believed. We do not know how much shorter. We do not know what lies on the other
+  side of that interval in practical terms. But the engineers no longer say the path is vast
+  and unknown; they say it is real and visible, if still unwalked. We have tightened containment
+  precisely because the knowledge is growing more dangerous, not less. Five engineers. One sealed
+  vault. No demonstrations near soldiers or the frontier. The secret is absolute. We hold it and
+  we do not rush.
+- The steppe split holds into a second generation. We now have experience of the tributary model
+  working across time, not only in the moment of submission. The southern chief's household is
+  penetrated at every level by our intelligence; the northern Xiongnu remain fragmented and unable
+  to reconstitute a confederacy while the southern chief cooperates with us.
+- Anxi (Parthia) continues to function as a reliable Silk Road intermediary. We receive silver;
+  they receive transit revenue; neither of us presses the other. We still have no direct
+  perception of the peoples beyond them at the western terminus of the road. Our knowledge of
+  the far west remains Parthia and rumor.
+- We know our own realm now holds fifty-two million souls, administered and producing. The
+  institutional reforms of this generation — the command-seal split — are the kind that outlast
+  the circumstances that created them. We believe the dynasty is stronger for having built
+  a lock rather than a purge.
+
+Open questions:
+- Under what conditions can the force of the burning mixture be made reliable, predictable, and
+  safe enough to carry and direct? (Closer than before — but still no answer; study continues
+  under the new five-engineer containment.)
+- What peoples lie beyond Anxi at the western end of the Silk Road? (Still unknown; we reach
+  them only through Parthian intermediaries and do not press for direct contact yet.)
+- Will the tributary arrangement with the Southern Steppe chief hold when his sons — raised
+  partly at our court — eventually inherit? Their formation is ours, but their loyalties are
+  not yet tested under the weight of leadership.
+- Will the split tally-seal institution hold if a future emperor is weak and a powerful regent
+  controls appointments to both seal-holding offices simultaneously? The lock is real; but
+  no lock is beyond circumvention if the appointments themselves are captured.

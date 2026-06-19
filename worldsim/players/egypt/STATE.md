@@ -138,3 +138,35 @@
   to play against another. There is one Rome, one master, one army looking south.
 - Posture: DEFENSIVE-VIGILANT. Treasury recovering. Military unchanged. We must decide what Egypt's
   strategy is when the colossus has one head — and that head is already turning to look at the Nile.
+
+## Update — 1 AD
+- Pop ~8.4M. Treasury recovering and climbing past 50,000 talents, back toward the high-water mark.
+  Harvests have returned to full; the Nile floods have been good; the famine years are behind us.
+- Grand strategy — USEFUL-AND-COSTLY-TO-ABSORB: We have deliberately shaped ourselves so that
+  Rome's master calculates it is worth more to leave Egypt sovereign than to conquer it. We feed
+  his capital (grain); our India trade enriches the Roman elite who profit from it; to conquer us
+  he would have to bleed his legions on fortified Delta positions and a fortified Cyprus and then
+  lose the India revenue the moment his soldiers set foot in the factor-houses. We have tried to
+  make this calculation obvious without stating it aloud.
+- Papyrus: REOPENED to Rome at a managed, high price through Alexandrian merchant houses. We set
+  the price; we control the quantity; we retain the power to close the bales again. Revenue from
+  this trade is meaningful. We note that Rome appears to possess some coarser writing-material of
+  its own — our agents describe it as a pressed, dried substance, rougher than papyrus leaf. Its
+  origin is unclear to us. We do not yet know whether this weakens the papyrus lever.
+- Deniable Parthia/Anxi contact: ESTABLISHED but held as a shadow. Through Nabataean intermediaries
+  only — no traceable embassy, no named letter, no open dealing. The eastern kingdom beyond Rome's
+  eastern marches has been made aware, through indirect means, of Egypt's readiness to hear. No open
+  alliance — that would hand Rome a pretext. This is a lever held in reserve, deniable by design,
+  usable only if Rome moves against us and we need an eastern name whispered into the right ears.
+  We do not fully know this kingdom's strength or reach.
+- India trade: THREE FLEETS on the monsoon road; permanent factor-house on the Indian coast, now
+  in its second generation of staff; direct relationships with port-kings mature and productive.
+  India customs remain the largest single income line. The western shore of India is known to us;
+  the interior and further east remain obscure, glimpsed through Indian merchants' accounts.
+- Military: Navy ~300 warships, eastern Med lanes held. Cyprus garrisoned and fortified. Delta
+  defenses and Sinai positions maintained and hardened. Army ~50k mercenary/Macedonian core.
+  No mass native levy. No new wars opened; no new enemies named.
+- Succession: secure. Nome-governors loyal. Priesthood patronized. Native peace maintained.
+- Posture: USEFUL-AND-COSTLY — sovereign, structurally hardened against absorption, with the
+  deniable eastern contact as a hidden counterweight. Papyrus lever restored and managed for revenue.
+  Watching Rome's next move without provoking it.

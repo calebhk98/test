@@ -99,3 +99,42 @@
   knows it exists. We hold our knowledge and we wait.
 - Population fifty million. The treasury, long strained, is somewhat eased. The realm is hard,
   ordered, and does not soften.
+
+## 1 AD
+- The court faced what every dynasty must face and what destroyed the First Emperor's house in a
+  different form: the danger not of open rebellion but of faction grown too strong inside the walls.
+  A consort-clan — risen through the marriages that bind great families to the throne — had wound its
+  roots deep into both the civil appointments and, more troubling, the loyalties of certain officers.
+  We have seen what comes of that path. We did not answer it with blood and purge; the purge is its
+  own kind of destruction, and a dynasty that consumes its own court in fear will hollow itself from
+  within as surely as any invader. Instead we built a lock into the machinery itself. The authority
+  to raise and move the armies — the one power that makes a faction into a dynasty-killer — now
+  requires the physical joining of split tally-seals held by separate officials who do not share a
+  patron. No single regent, no single clan-chief at court, no single consort-minister can open the
+  war-chest and set the armies marching alone. Both halves of the seal must come together; both
+  holders must act. It is an institutional solution, not a personal one, and it will outlast the men
+  who devised it. The danger passed. The throne held. The hard militarist order did not soften.
+- Our engineers who tend the burning mixture have reached a new understanding this generation — one
+  that quietly unsettles us. What they have long studied as a flaring substance that could perhaps
+  be made to strike, they now see differently: the path from a slow ignition to a vessel that bursts
+  or is hurled is shorter than they once believed. Not simple, not without peril — but shorter. The
+  knowledge has sharpened, and with it the weight of what we hold. We answered that sharpening not
+  by rushing forward but by drawing the circle tighter: no trial within sight of any soldier, no
+  knowledge shared with any engineer who has not long since sworn himself to silence under the
+  heaviest oaths we can impose, and the number of those engineers is now fixed at five. A single
+  sealed vault holds the written records of the study. We have made nothing; we have shown nothing;
+  no foreign power has the least suspicion of what we carry. The secret narrows rather than widens.
+  We are not ready, and we will not be rushed into readiness by the mere fact that readiness has
+  grown closer.
+- The steppe remains divided. The southern chief holds his leash with what looks like dignity and
+  functions like obedience. His sons remain at our court; our officers remain at his side; his
+  intelligence flows to us regularly. The northern Xiongnu who refused our terms are isolated still —
+  separated from the southern pastures and the oasis corridor, unable to muster the old confederate
+  strength. The split holds across another generation. We did not conquer the steppe, and we do not
+  need to: we split it, and the halves cannot rejoin while we hold what we hold.
+- The Silk Road silver continues to run. Anxi remains the broker we need — content in that role,
+  prosperous from it, and reliable in their cooperation. We do not press beyond them; we do not
+  need to. The revenue reaches us and the treasury is lighter for it than it has been in many
+  decades of campaigning. The realm is dense, administered, productive, and firm.
+- Population now near fifty-two million. Treasury eased and holding. The realm is hard and ordered.
+  It does not soften.

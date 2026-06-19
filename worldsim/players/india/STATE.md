@@ -155,3 +155,23 @@
 - Military posture: defensive on the northwest by design; the passes are the instrument of policy, not
   a sign of weakness. The cantonment Saka give us a new capability in mobile cavalry we did not have
   before. Steel monopoly on the making intact; what we sell is product, not craft.
+
+## Update — 1 AD
+- Population ~38M. Succession stable; Kalinga held. Treasury large.
+- Frontier posture: Yuezhi mass-pressure continued against the NW passes for the full generation. The
+  passes held. The Indus river-line stood ready behind them and was not needed. We did not gamble the
+  cavalry in open-field engagement — the combined force (own-bred horse plus cantonment Saka under our
+  officers) is near steppe-parity but UNPROVEN in a hard campaign. We conserve this capability.
+- Steel discipline: wootz BLADES sold to no one outside the empire. Controlled ingots sold only to
+  compliant cantonment Saka chiefs — never to the Yuezhi, never in finished-weapon form. The metallurgy
+  secret remains entirely within Maurya hands. A cantonment chief receives enough steel to remain
+  committed to us; not enough to arm a rebellion.
+- Cantonment layer: robust but not the primary wall. Pass-mouths manned by our own regular foot; the
+  cantonment chiefs add mobile depth. Kin-hostages in Pataliputra and an independent foothill agent
+  network ensure no single defection blinds us or breaks the line.
+- Yuezhi channel: secret from the cantonment chiefs; gifts-and-horse-trade continues. We treat the
+  channel as bought time, not alliance. Its secrecy is temporary and we know it.
+- Sea-trade: Nile kingdom ships arrive seasonally; factor in their ports year-round; revenue stable and
+  growing. This channel remains our most reliable external relationship.
+- Military posture: defensive on the NW by design. Steel monopoly intact. Cavalry near-parity with
+  steppe riders but untested at scale in the open. Rear secured; no internal unrest of note.

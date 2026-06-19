@@ -123,3 +123,38 @@ Open questions: none recorded yet.
   or his patience, with trade — as we once bought friends inside the Senate with grain-profits? Or
   does a king-in-all-but-name simply take what he wants when he is ready? We do not yet know the
   character of this man or what he values beyond power.
+
+## ~1 AD — what we now perceive
+- Rome's sole master has not moved against us across this whole generation. His armies remain on our
+  northern border in the Syrian territories; they watch; they have not marched. We do not know whether
+  this means he has made a settled judgment that Egypt is more valuable alive and trading than conquered,
+  or whether it means he has been occupied elsewhere and we are merely next in his reckoning. We
+  believe our policy of being visibly useful and visibly costly has shaped his calculation — but we
+  cannot see inside his mind, and we do not know when or whether patience has an end.
+- We observe that Rome now appears to have a writing-material of its own — coarser than papyrus, by
+  all our agents' accounts, pressed from some dried substance we have not examined. We do not know
+  its origin, its cost to Rome, or how widely it is in use. We do not know whether it makes Rome
+  indifferent to our papyrus or merely less desperate for it. This puzzles us, and we hold our
+  papyrus lever with less certainty than before — though we do not release it.
+- The great eastern kingdom beyond Rome's eastern marches — which the Nabataean traders call Anxi
+  and describe as vast — we have reached in the most indirect fashion: through Nabataean intermediaries,
+  deniably, without named letter or traceable embassy. We have conveyed a readiness to hear. Whether
+  anything has been received and understood, and whether any answer will come, we do not yet know.
+  We know almost nothing of this kingdom's true strength, its armies, its internal stability, or
+  whether it is itself threatened or threatening toward Rome. We know only that it exists and that
+  it sits beyond Rome's eastern reach. That is enough, for now, to make the contact worth having.
+- The India trade is deep and established. The port-kings of India's western shore know us across
+  two generations of factors; the monsoon road is proven. What we do not know: the interior of India;
+  the kingdoms and peoples further east that Indian merchants speak of; whether any storm of politics
+  in India could close what we have opened.
+- Our own strategy of useful-and-costly has its limits we must not forget: it rests on Rome's master
+  making a cool calculation, and men who hold great power do not always calculate coolly. Glory,
+  fear, or the advice of a hostile counselor could override the argument of profit. We watch for signs
+  of any change in Rome's posture toward us — any buildup beyond the ordinary garrisons, any
+  new envoys with a different tone.
+- Open questions: Does Rome's master truly accept Egypt's sovereignty as a settled matter, or is he
+  patient? What is the writing-material Rome now appears to use, and does it change the papyrus
+  calculus? How strong and stable is the eastern kingdom (Anxi/Parthia) whose shadow we have
+  touched through our Nabataean intermediaries — is it a true counterweight to Rome or a hollow name?
+  How far does India run beyond its western shore? What does the next generation of Rome's governance
+  look like — will his heir or successor be as cautious, or more hungry?
