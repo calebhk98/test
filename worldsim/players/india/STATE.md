@@ -175,3 +175,32 @@
   growing. This channel remains our most reliable external relationship.
 - Military posture: defensive on the NW by design. Steel monopoly intact. Cavalry near-parity with
   steppe riders but untested at scale in the open. Rear secured; no internal unrest of note.
+
+## Update — 35 AD
+- Population ~40M. Succession stable; Kalinga held. Treasury large.
+- Frontier posture: NW passes held throughout this generation. The Yuezhi remain a mass presence of
+  unmeasured depth north of the Saka cantonment line; we did not ride out to test them. Passes manned
+  by own regulars. Indus river-line maintained in full readiness but not invoked.
+- Steel monopoly TIGHTENED: NO finished wootz blades exported outside the empire — not for trade, not
+  to the Nile kingdom, not to any external party. Rare sealed ceremonial gift-pieces only, tracked and
+  named. Sea-trade exports to the Nile kingdom now pivot entirely to fine textiles, worked ivory, gems,
+  and spices. Wootz master-smiths placed on imperial salary; their families settled within court reach;
+  the circle of the secret explicitly closed. Controlled ingots continue to compliant cantonment chiefs
+  only; nothing to the Yuezhi.
+- Cavalry: BATTLE-TESTED in controlled southern field action (~17 AD against a tribute-delinquent Tamil
+  lord). Elephants held in deliberate reserve — victory assured independently, so cavalry performed under
+  real pressure without imperial risk. Verdict: adequate; coordination between own-bred horse and
+  cantonment-Saka riders under stress is STILL IMPERFECT. Seams visible in hard turns and pursuit.
+  A calibration, not a showcase. Capability real; limit now honestly priced.
+- Cantonment Saka — second generation: sons of the original cantonment chiefs now commissioned as junior
+  cavalry officers with pay and interior land grants. Interior roots being deliberately cultivated. Fathers
+  and hostages remain the primary leverage layer. We accept steppe-origin men inside our own officer corps
+  as a calculated bet that interior interest grows faster than Yuezhi contact can offer an alternative.
+- Yuezhi channel disclosure plan: firm decision made — if the channel risks becoming known to the
+  cantonment chiefs, we tell them ourselves first, on our own framing, naming the hostage arrangement
+  explicitly. We do not let a merchant's tongue spring it.
+- Infrastructure: stone-dressed roads from the Indus garrison-line to the western port-mouths completed,
+  with way-stations and magazines. Military lateral movement and commercial clearance both improved.
+  Western port infrastructure upgraded (military and commercial).
+- Sea-trade: Nile kingdom exports pivot to cloth, ivory, gems, spices (no wootz blades). Volume and
+  revenue continue to grow. Factor in Nile ports year-round. Most reliable external relationship.

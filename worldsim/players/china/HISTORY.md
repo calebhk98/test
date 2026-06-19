@@ -138,3 +138,86 @@
   decades of campaigning. The realm is dense, administered, productive, and firm.
 - Population now near fifty-two million. Treasury eased and holding. The realm is hard and ordered.
   It does not soften.
+
+## 35 AD
+- This generation we held our hand from the north. The isolated steppe holdouts who refused our terms
+  in the time of our fathers remain isolated still — a diminished thing, no confederacy, no access to
+  the oasis corridor, no way to reach the southern chief who might once have rallied them. They are not
+  worth a great campaign. A great campaign would draw treasure from the salt-and-iron base, conscript
+  the northern peasant households that are only now recovering from what the Great River cost us, and
+  hand the next regency a strained treasury in place of a firm one. We did not strike. We watched and
+  held. The patient wall is worth more than the ruinous charge.
+- We did build, however. The command-seal arrangement that we established a generation ago now rests
+  on a wider foundation. A single joint-seal was a lock; but we perceived that a lock held by two men
+  under similar patronage, over time, ceases to be two men. Therefore we have drawn the council that
+  confirms all split-seal appointments from THREE distinct bodies — the civil secretariat, the censorate,
+  and the frontier command — and seated them on staggered terms so that no single great household can
+  place its candidates into all three confirmation chairs in the same season. The architecture of the
+  lock now resists the capture of the locksmiths themselves, not only the lock's contents.
+- We changed also how we govern the southern steppe succession. In earlier thinking we had allowed
+  the question of which son would inherit the chief's seat to float — an unspoken preference, visible
+  enough to those watching closely. A passed-over son is a danger: he may carry his father's knowledge
+  of our dispositions, our garrison positions, our officers' names, northward to the holdouts, in
+  exchange for the welcome and rank we denied him. We will not give any son that motive. Instead we
+  hold all the sons — bound to us with titles, with roles inside our realm, with the daily fact of
+  court life and its pleasures — and we keep the question of succession open. Each of them has reason
+  to please us. None of them has been discarded. Ambiguity is now our instrument, not an oversight.
+- And then the Great River broke.
+- In the sixth year of this generation the northern plain drowned. The River — which had kept its
+  course through generations of dike labor and annual fear — found a new path for itself, and the
+  new path ran across fields and hamlets and county seats that had known the water only as rumor.
+  The flood was not a single event but a season of catastrophe: water standing in places it had
+  never stood, roads cut, granaries soaked, communities displaced in numbers we do not yet fully
+  reckon. In a weaker generation it would have broken the realm. The old dynasties fell not to
+  swords but to this kind of convergence: a ruined people, an empty treasury, a court that could
+  not respond — and then the men who always wait in the wings stepped forward with a new Mandate.
+- It did not break us. Because we had kept the northern granary reserves filled — because the
+  fiscal floor held — because the realm was ordered and its administrators were in place — we
+  could meet it as policy rather than as rout. The granaries opened on schedule. The corvée
+  labor that might otherwise have drilled or mended roads was turned without pause to channeling
+  water and rebuilding dykes. The hardest-struck counties received bounded tax relief — no more
+  than two years, explicitly bounded, explicitly temporary, no precedent for permanent exemption.
+  The treasury was drawn heavily; we do not pretend otherwise. The population that had reached
+  fifty-two million souls has checked; we reckon closer to fifty-three million now, which is less
+  growth than this generation should have seen. There was genuine hardship, genuine death in the
+  outlying counties, genuine hunger in the gap between the flood and the first dyke-secured
+  harvest. But no rebellion rose. Not one county seat was taken by a man with a different Mandate.
+  The realm held, and the realm's holding was not fortune — it was the result of the granary
+  policy and the fiscal rule that we had built into the architecture of the state across decades.
+  The rule has proved itself now in the trial we hoped never to face.
+- We made one rule permanent in the wake of this: the treasury must at all times be able to
+  cover two full years of essential costs — the garrisons, the administration, the granary
+  operations, the dike labor — from the salt, iron, and land taxes alone, without counting
+  any silver from the western trade. The Silk Road is a gift when it runs. It must never be
+  a necessity. This is now the measure by which every minister will be judged.
+- The burning mixture: the five engineers study still. We have directed them to a single
+  question: not how to ignite the mixture more reliably, not how to make it flare more fiercely
+  — we know something of those matters already — but how to confine and govern its force.
+  A substance that merely flares is spectacle. A substance whose force can be directed —
+  released in a governed direction, against a governed target — is something else. We do not
+  name what that something else might be. We study the confinement question, and we have told
+  ourselves plainly, in these private records, what we are actually doing: we are studying
+  toward a weapon. We choose secrecy and patience over haste; we will not field a half-finished
+  thing that reveals the secret and gives no advantage. But let us not deceive ourselves about
+  what the study is for. The five engineers. The sealed vault. No foreign awareness. The secret
+  is absolute.
+- And this generation we began to see something we should have seen sooner about Anxi.
+  The Parthian court has been a reliable broker — cooperative, prosperous, content to carry
+  our silk westward and return our silver. We do not doubt their reliability. What we have
+  begun to doubt is their account. Anxi maps the western world for us. Every piece of
+  intelligence we hold about the peoples beyond them — the names, the distances, the
+  powers and their dispositions — came through Parthian hands or Parthian-controlled
+  merchants. A broker who maps the world for you maps it to preserve your dependence on
+  him. He will not show you the road that lets you reach his clients without him. He will
+  not tell you of the powers that could serve as your alternative partners. He will tell
+  you what keeps you returning to his door. We do not believe Anxi has lied to us directly.
+  We believe they have shaped what reaches us, and that the shape serves them.
+  This generation we began — quietly, without announcement — to seek travelers and merchants
+  who move through the western routes outside Parthian patronage. It is slow work. The
+  independent merchants are fewer, harder to find, and speak in languages we are still
+  learning to interpret. But we have begun. We will build our own map of the far west.
+  We do not know yet what it will show us that we do not already know. We know only that
+  a map drawn entirely by your broker is not your map.
+- Population near fifty-three million — the flood checked our growth. Treasury drawn heavily
+  by flood relief but solvent under the new fiscal floor rule. The realm is hard, ordered,
+  and does not soften.

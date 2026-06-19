@@ -141,3 +141,40 @@
   any awareness. The secret narrows. Study continues under the strictest conditions we have ever
   imposed.
 - Posture: hard, ordered, militarist. The realm does not soften. Population ~52M.
+
+## Update — 35 AD
+- Population: ~53M; the Great River flood checked growth that should have been higher. The realm
+  is dense, administered, and producing — but the northern plain counties have not fully recovered.
+- Governance: THREE-BODY CONFIRMATION COUNCIL now in force. The council that confirms all
+  split-seal appointments (for the command-seal reform established at 1 AD) is drawn from three
+  distinct bodies — civil secretariat, censorate, frontier command — on staggered terms. No single
+  great household can place candidates into all three chairs in the same season. The lock is now
+  hardened against capture of the locksmiths themselves.
+- Steppe succession: MANAGED AMBIGUITY now replaces open preference. All sons of the southern
+  steppe chief are held inside the realm with titles and roles; none is openly designated heir,
+  none is openly cast out. No passed-over son has cause to flee northward with our intelligence.
+  Succession remains the court's instrument, not the chief's family's resolution.
+- Military: no new northern offensive. The northern Xiongnu holdouts remain isolated and
+  diminished; garrison-farmer system in the western oasis corridor continues self-sustaining.
+  The posture is patient permanence on the frontier, not renewed conquest.
+- GREAT RIVER FLOOD AND RECOVERY: in the sixth year of this generation the northern plain
+  flooded catastrophically — new river course, fields and hamlets inundated, population
+  displaced, counties cut off. Response: granaries opened, corvée labor redirected to dykes
+  and channels, bounded tax relief (two-year, explicitly temporary) to hardest-hit counties.
+  Treasury drawn heavily. Population growth checked. No rebellion. The realm held. The
+  granary reserves and the fiscal discipline of prior generations made this possible.
+- FISCAL FLOOR RULE (permanent): the treasury must at all times be able to cover two full
+  years of essential costs — garrisons, administration, granary operations, dike labor —
+  from salt, iron, and land taxes alone, without Silk Road silver. This is now the governing
+  fiscal standard. Treasury is currently drawn but solvent under this rule.
+- The burning mixture: five sworn engineers, one sealed vault, no weapon made, no foreign
+  awareness. Study is now directed at a single question: the confinement and governance of
+  force — not how to make the mixture flare more fiercely, but how to direct its force in a
+  governed way. The council acknowledges to itself in these private records that this is
+  study toward a weapon. No field trial without a theoretical foundation first.
+- Diplomatic: Anxi (Parthia) broker-partnership on Silk Road continues. NEW CONCERN: Anxi
+  controls the intelligence reaching us about the far west. We have begun cultivating
+  independent travelers and merchants outside Parthian patronage to build our own account
+  of the western world. This is nascent — slow work, few sources, languages still being
+  interpreted. No direct contact with far-western powers yet.
+- Posture: hard, ordered, militarist. The realm does not soften. Population ~53M.

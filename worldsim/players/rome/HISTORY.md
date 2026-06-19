@@ -220,3 +220,97 @@
   The debt is still unpaid. The reckoning — if it ever comes — belongs to whoever stands here
   after us. We leave the accounting in these pages, as we have done at every closing, so that
   man will know what he inherits and what he owes.
+
+## 35 AD
+- The Principate is now settled practice, not argument. Two generations have lived under it. The
+  Senate still meets and the magistracies still rotate and the forms of the old Republic are still
+  performed with due solemnity — we keep those forms because they cost nothing and buy much: the
+  great families see themselves honored in office, and they are, so long as they do not mistake the
+  honor for real power. The arrangement holds.
+
+- The frontiers are our generation's chief work, and on this we judge ourselves well. We rejected
+  two temptations that would have ruined lesser men. The first was the lure of the eastern forests
+  — the deep country beyond the Rhine and Danube where the trees close over the sky and the paths
+  vanish in mud and the columns that enter do not come out in good order. We know this ground
+  punishes ambition. We held the rivers. We anchored our forts. We built the lateral road-arc that
+  now connects the Rhine line to the Danube line without marching an army through Italy — a legion
+  can move between theaters at campaign speed, feeding from the road-stations, without exhausting
+  the home peninsula or announcing its transfer by the dust it raises south of the Alps. That road
+  is quiet work, unglamorous, and it is worth ten battles we did not have to fight. The second
+  temptation was the Nile. There were voices — there are always voices — arguing that Egypt's
+  wealth sits unguarded and that a great fleet could settle the old debt from 90 BC and take those
+  revenues. We considered it and wrote down why we refused: no pretext a careful government could
+  own, a Delta we have seen swallow one Roman army already, and — this last we say plainly in our
+  own records, for it must be said somewhere — a victorious general in Alexandria would be more
+  dangerous to Rome than any foreign enemy we can name. The man who takes Egypt becomes the man
+  who feeds Rome. We will not make that man. Egypt is left alone; our merchants watch its ports
+  and bring us what intelligence the trade routes carry.
+
+- The succession question has been answered with better tools than the old decree-and-hope. The
+  heir earns the soldiers first. He is posted to a real command — not one frontier long enough to
+  bond a single army to himself, but more than one, so that he knows the Rhine men and the Danube
+  men and is not a stranger's name when he is called to govern all of them. When he has served,
+  when the legions know him, his name is confirmed publicly — so that the waiting has a visible
+  end and the temptation to seize what is being promised to you is reduced to the temptation of a
+  man who has been told he will eat at supper, not a man who has been told nothing and is starving.
+  We are clear-eyed: the heir is the one man we allow to build genuine army-loyalty, and that is
+  a bet we make deliberately. The alternative — keeping him weak so he cannot threaten us — is the
+  road to civil war the moment the First Citizen falters. A known heir who has been promised and
+  knows it is worth the calculated risk.
+
+- The great families we have bounded without humiliating them. Governorships rotate: no man holds
+  a province beyond three to five years, and no man passes from one province to a neighboring one.
+  He may be distinguished; he may be trusted; he will not be given time enough to become a power
+  unto himself in a region that knows his name and has learned to look to him rather than to Rome.
+  They accept this because the offices are real, the honor is real, and the rotation brings them
+  home. We have found that a man who expects to return to Rome is a different creature from a man
+  who fears he may not.
+
+- The Rhineland client-tribes we have folded into the system more formally in this generation.
+  Their young men serve as auxiliaries — but not on their home ground, where old loyalties run
+  deeper than new pay. We post them away: a Rhenish man in the Danube garrison, a Danubian man
+  on the British coast. At discharge, the citizenship. Their fathers' chiefs we watch and manage
+  through the intelligence our officers keep on the frontier. The home chiefs know we are watching.
+  The discharged veterans return as Romans. It is a slow binding, generation by generation, and we
+  believe it is the right kind.
+
+- Our paper has become the skeleton of the empire's administration. This is no longer a craftsman's
+  note of pride; it is a governing reality. We standardized provincial record-keeping on it across
+  the west in this generation — the format, the headings, the annual return — and the auditing
+  that was impossible when each district clerk wrote on whatever came to hand in whatever form
+  pleased him is now possible, and being done. We have deferred Syria and the eastern provinces
+  until the supply of our own good paper is reliable there; we will not push a standard we cannot
+  enforce. In Rome itself we have begun copying our most important archives — the registers, the
+  land records, the census rolls — onto good paper, removing the dependency on older materials
+  that were never meant to last. Egypt's papyrus we buy, at steep price, for ceremony: dedications,
+  formal embassies, the documents that will sit on a legate's table and must look as old Rome
+  expected documents to look. We are not deceived by our own ceremony. We know which material
+  now carries the empire.
+
+- In the seventeenth year of this span a great shaking of the earth destroyed Sardis and near a
+  dozen cities of our province of Asia. We record what we did, and we record why: we remitted
+  those cities their tribute for a span of years, and we sent treasury funds for rebuilding. There
+  were men in the accounts-room who winced at the silver going east. They were wrong to wince. A
+  province that has been helped by Rome in catastrophe is a province that remembers it was helped.
+  The tax revenue will return. The loyalty of those communities — the willingness of their leading
+  men to bring their disputes to Roman courts rather than to their own factions, to send their
+  sons to the legions, to accept our magistrates without sullenness — that is worth more across
+  a generation than the silver we sent them in the bad years. Disaster, well answered, is an
+  advertisement that Rome is not merely an extracting power. We believe this. We acted on it.
+
+- Egypt remains what it has always been in our records: the cold rival beyond the Syrian border,
+  rich and unwounded, master of the eastern sea, seller of grain to all who bring silver and of
+  knowledge to no one. We do not know its fleet's true depth. We do not know the state of its
+  treasury or its garrison strength. We watch its ports through our merchants and we read what
+  the trade-intelligence brings, and what it brings is that Egypt is stable and watchful and in
+  no hurry. Neither are we. The old debt from 90 BC sits on the books. We leave it there. The
+  man who takes it up will need a pretext, a general who cannot become over-mighty, and a fleet
+  that can survive the Delta. We have not had all three at once. When we do, whoever writes these
+  pages will know what to do with them.
+
+- Population we reckon at near six million, counting citizens and settled peoples across the
+  provinces by our best census reading. Treasury healthy on the Gallic and frontier revenues.
+  Gaul is ours and pays steadily. The lateral road holds the northern arc. The succession rule
+  holds. The great families rotate through office and do not build private armies. We have not
+  taken Egypt. We have not been swallowed by the forests. By the standard of what has killed
+  empires before us, this is a good account to be able to write.

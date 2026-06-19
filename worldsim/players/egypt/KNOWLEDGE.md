@@ -158,3 +158,51 @@ Open questions: none recorded yet.
   touched through our Nabataean intermediaries — is it a true counterweight to Rome or a hollow name?
   How far does India run beyond its western shore? What does the next generation of Rome's governance
   look like — will his heir or successor be as cautious, or more hungry?
+
+## ~35 AD — what we now perceive
+- Rome's master — one or perhaps more men have held that office across this generation, for the world
+  turns and kings die — has still not moved against us. His legions remain in the Syrian territories,
+  our northern border is watched from both sides, and no campaign has been organized against the Nile.
+  We believe our policy of being useful and costly continues to shape the calculation on the Roman
+  side. But we cannot see inside that court; we receive word of Roman affairs through merchants and
+  travelers who pass through Alexandria, and that word is incomplete and sometimes stale by the time
+  it reaches us. We know Rome has not marched. We do not know whether Rome has decided it never will,
+  or whether it is simply waiting for a moment we have not yet reached.
+- The fear we carry more sharply now than a generation ago is this: our strategy depends on Rome's
+  master being a man who reckons in terms of profit and cost. The present master — or recent masters;
+  we are not certain — has appeared to reckon that way. But succession in Rome is not a thing we
+  govern or predict. A new master who hungers for glory, or who fears what a wealthy Egypt might do
+  if left sovereign another generation, or who is counseled by men who hate us — such a master could
+  override every argument that has served us so far. We cannot prevent that. We can only make the
+  cost of taking us high enough that even a reckless man pauses. We have deepened the cost this
+  generation; we have not eliminated the danger.
+- The puzzle of Rome's coarser writing-material persists and deepens. We have held our inquiries
+  inside the Library's natural curiosity for years now, and still we cannot learn what the substance
+  is, where it originates, or how costly it is to make. Our agents have seen it used — for records,
+  for official documents, for letters — widely enough that it is clearly not a rarity. Some describe
+  it as made from plant material; others speak of it as a kind of pressed or scraped skin. We have
+  not been able to examine a sample directly at the Museum. We do not know whether this means our
+  papyrus lever is rusting slowly away or merely that Rome is less helpless at the margins without
+  it. We continue to sell at managed price and continue to watch. We do not flex the lever for fear
+  of hastening a decay we cannot yet measure.
+- The eastern shadow — our deniable contact through Nabataean intermediaries with the great kingdom
+  beyond Rome's eastern marches — is primed but still unverified in its depth. We have maintained
+  the thread. We have had no word back that amounts to a firm signal of any kind; whether the
+  intermediaries have conveyed our readiness accurately, and whether anyone on the far side has
+  received it and drawn a conclusion, we do not know. We know almost nothing of this kingdom's true
+  military strength, its internal coherence, or whether it is itself under Roman pressure or threat.
+  We know it exists; we know it sits beyond Rome's reach; we know Rome has quarreled with it before.
+  That is the limit of our knowledge. It remains a lever we have built but cannot yet test.
+- The India route is sounder than it has ever been. We now have active trading ties at more ports
+  along the western shore of India, and our pilots know alternative anchorages beyond our original
+  landfalls. The port-kings we deal with include names new to us as well as the old families our
+  factors have known across two generations. The interior of India — its great kingdoms, its further
+  shores, whatever lies to the east of the great peninsula — we still glimpse only in the accounts
+  that Indian merchants bring to our factor-house. What we hear suggests a vast and populated land,
+  with powers in it that trade east as well as west. We listen and we record.
+- Open questions: Will Rome's current or next master remain a man who reckons coolly about Egypt,
+  or will ambition or fear override the argument of profit? What is Rome's coarser writing-material —
+  its source, its cost, how widely it displaces papyrus in Roman use? Does the eastern shadow-contact
+  (Anxi/Parthia) have the military depth to genuinely threaten Rome's eastern flank, or is it a name
+  and no more? How far does India run, and are there further kingdoms to its east with whom a
+  connection might one day be useful? What will the next generation of Roman succession bring?

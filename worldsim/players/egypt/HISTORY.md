@@ -216,3 +216,82 @@
   his attention. We do not know what the next generation will bring. We know only that we have made
   ourselves harder to swallow than we were, and that we have built levers we had not before, and that
   the Nile still rises every year as it has risen since before any king set his name on stone.
+
+## 35 AD
+- A generation has run its course and Egypt stands — sovereign, rich, and not yet swallowed. Let
+  it be set down clearly how we have governed ourselves through these thirty-five years, and what
+  we know and do not know as they end.
+- We held, without wavering, the posture we chose at the start: useful to Rome's master, and costly
+  to absorb. We fed his capital. We kept the India trade open so that the Roman merchants and the
+  Roman-adjacent men of means who profit from our eastern cargo had reason to wish us well. We said
+  nothing aloud; we made no declaration; we simply continued to be what a calculating man would want
+  to preserve. And Rome's master — whoever now sits in that place, for the generation has turned at
+  least once since we last had clear word — has not marched on us. Whether that reflects wisdom, or
+  other wars demanding his attention, or merely the ongoing force of our calculation presenting itself
+  to his, we cannot say from this distance.
+- There were two temptations we examined and rejected. The first was cutting our papyrus again. We
+  know Rome uses some coarser writing-material of its own devising — our agents describe it still as
+  a pressed, dry substance, rougher than any papyrus leaf, and we have still not learned its nature
+  or its source. Precisely because we do not understand it, cutting the papyrus would have announced
+  to Rome that we fear our own lever is rusting away — and that announcement would hasten the very
+  decay we dread. We kept the bales open, the price in our hands, the power to close them unspoken
+  and therefore undiminished. The second temptation was to turn our shadow-contact in the east into
+  something more visible. We did not. An open dealing with any power beyond Rome's eastern marches
+  would hand Rome the pretext for war it has never yet had from our hands. The contact stays a
+  whisper passed through Nabataean mouths — deniable, untraced, but primed.
+- We have faced honestly a fear that no statecraft dissolves: a future master of Rome may not
+  calculate as coolly as the present one. A reckless man, or a frightened one, or one who hungers
+  for glory beyond what profit counsels — such a man might look at the Nile and decide the cost
+  is worth paying. We cannot reason that danger away. What we have done instead is deepen it.
+  The Delta fortifications were inspected and quietly renewed. Cyprus's harbor capacity was enlarged —
+  the works dressed as routine repair and maintenance in the records that any Roman ear might reach.
+  Our navy we have also kept near three hundred hulls in count, but we retired the oldest and weakest
+  vessels faster than in previous years and replaced them with better-built ships: fewer old timbers
+  rotting at anchor, more true fighting capacity within the same number. We made no announcement of
+  this. Rome, if it troubles to count our fleet, counts the same three hundred it has always seen;
+  what it does not see is that those three hundred are now sharper instruments than they were.
+  Against a Rome that has grown fat and practiced on its western conquests, standing still in our
+  shipyards would have meant falling behind. So we did not stand still; we simply were quiet about it.
+- The India trade has been hardened in a manner that will matter if fortune ever turns against us
+  on any single shore. We had grown dependent on the familiar western ports of India and on the
+  handful of port-kings with whom our factors first built trust, two generations ago. If one such
+  king died badly, or turned to a rival's gold, or a harbor silted, the loss could cripple a whole
+  fleet's season. We have repaired that fragility: our factor-house has built working ties at two
+  more Indian ports to the west, and our pilots have scouted further anchorages along the coast that
+  can serve as safe refuge or alternative landfall when the primary harbors are closed to us for any
+  reason. The loss of one port-king or one harbor is no longer enough to break the route. Three
+  fleets still sail the monsoon road; the Red Sea waystations have been added to. The wealth that
+  comes home on those ships remains the largest single income line in our treasury.
+- Within the Nile valley itself we have done the slow, unglamorous work that does not fill songs
+  but fills granaries. Our distributed silo capacity has been doubled — not gathered in a few large
+  and vulnerable stores, but spread among the nomes, so that no single flood-failure and no single
+  hostile appetite can undo us at once. The canal system has been repaired properly, not patched
+  season to season as crisis allows. These are famine-insurance and a quiet logistics base both:
+  the same canals that move grain in peace move soldiers and engines in need. The treasury has
+  recovered strongly past the draw of the famine years; the harvests have been full; what was spent
+  in the crisis has come back.
+- The heir was sent through the native Nile nomes on a ceremonial progress — honoring the Egyptian
+  forms that those people know as theirs, in the old ritual dress, with the priests of Amun and
+  Ptah invited to receive him in their houses. He was accompanied by a proper military escort,
+  visible and orderly; the nome-governors were present at every stop; and we watched through all
+  of them for any local voice raising a rival claim to the pharaoh's name. None rose. We did not
+  arm the people. We remember the Thebaid clearly: it was not showing a royal face to the nomes
+  that bred the rebel pharaoh of that age — it was putting weapons into the hands of those who
+  had none and then treating them afterward as though they had none still. We will not repeat
+  that error. A royal face costs nothing dangerous; a pike in a farmer's hand costs everything.
+- The treaty with Meroe holds: our iron supply secure. The Nabataean arrangement likewise holds
+  and continues to serve us well — their riders seal our desert flank and their mouths carry our
+  eastern shadow where we need it to go. Both renewed this generation without difficulty.
+- We still do not know what Rome's coarser writing-material is. Our agents in Rome, and our
+  merchants who have passed through Italian ports, have brought back further descriptions — all
+  consistent: a pressed, dried material, serviceable for records and letters, less pleasant than
+  papyrus, and apparently in use widely enough that it is not a curiosity. We have framed our
+  inquiries as the Library's natural interest — scholars collecting samples of foreign materials,
+  the Museum's catalogue of the world's crafts — so that no suspicion attaches to the asking.
+  We have not been told its source. We do not know whether it is made from a plant, an animal
+  substance, or some combination. We do not know whether it is cheap or costly to produce in
+  quantity. We hold the papyrus lever still, but we hold it with honest uncertainty about how
+  sharp its edge remains.
+- Population stands near eight million and seven hundred thousand by the nome-governors' count.
+  The kingdom is whole, the succession is settled, the fleet is sharp, the granaries are full,
+  and the Nile rises as it always has. Egypt endures.

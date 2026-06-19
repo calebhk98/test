@@ -403,3 +403,105 @@ is CANCELLED by institutional safeguards, not by luck.
   steel monopoly intact, NW passes held against the Yuezhi mass, rear secured.
 
 World date → 1 AD.
+
+## 1–35 AD — Turn 10 (all four live; full real loop; consolidation generation)
+Defend round run live (4 Sonnet agents). Every power rejected its planted bad ideas and revised
+real flaws. Two curated REAL historical events fall in this window and are applied: the **11 AD
+Yellow River avulsion** (China — the great course-change that in OTL fed the Red Eyebrows revolt
+and helped doom Wang Mang) and the **17 AD earthquake that destroyed Sardis + a dozen cities of
+Roman Asia**.
+
+- **CHINA — consolidation; survives the Yellow River avulsion WITHOUT a peasant rebellion (the
+  divergence pays off again).** No new offensive (rejected annihilating the isolated northern
+  Xiongnu as the Emperor-Wu error). Rejected accelerating the burning mixture (no sixth engineer,
+  no first-strike gamble) — but HONESTLY conceded its containment doctrine is "non-deployment, not
+  non-understanding," and directed the five sworn engineers at the single question of whether the
+  force can be CONFINED/DIRECTED rather than dispersed (the real pre-weapon step, pursued under
+  absolute secrecy, no field trial without a theoretical answer first). Hardened the succession
+  lock against the "capture moved up one level" critique: the confirmation council is now staggered
+  across THREE bodies (civil secretariat, censorate, frontier command) with non-aligned rotation —
+  capture now requires controlling three patronage streams at once. Replaced single-favored-son
+  steppe succession with MANAGED AMBIGUITY (multiple sons of the southern chief competitively bound
+  into Han dependencies + given titles/roles INSIDE the empire, so the passed-over cannot defect to
+  the northern Xiongnu with court knowledge). Instituted a FISCAL FLOOR (treasury must cover 2 yrs
+  of core spending from salt/iron/land alone, excluding Silk Road silver) and a phased granary-cost
+  audit. Began building western intelligence through NON-Anxi channels (independent merchants,
+  religious travelers, frontier-post officers, direct western embassies) — refusing to let the
+  broker draw its own self-serving map. **Then the 11 AD avulsion struck the North China plain.**
+  Because the militarist state had spent the generation building northern granary reserves and was
+  NOT in a Wang-Mang-style legitimacy crisis (that collapse already cancelled in Turn 9), it managed
+  the disaster as policy: granary relief, corvée redirected to channel/dyke works, hardest counties
+  given bounded tax relief — heavy treasury draw, regional hardship, but NO Red-Eyebrows-style
+  rebellion. The realm holds, hard and ordered.
+- **ROME — the Principate matures; the 17 AD Asia earthquake handled as a showcase of competence;
+  succession institutionalized.** Held the Rhine/Danube line and built the lateral road-arc (rejected
+  the Elbe push as the proven forest death-trap; rejected an eastern fleet / Egypt war as reckless).
+  Hardened the succession reform against its own paradoxes: the heir earns field command across
+  MULTIPLE frontier postings (not a decade bonding one army), and is PUBLICLY confirmed as soon as
+  the criterion is met (removing the open-ended wait that tempts an early seizure) — conceding the
+  heir-exemption is a calculated bet on legitimacy-incentive, not a solved problem. Bounded
+  senatorial governorships to 3–5 yr rotations with no adjacent sequential postings (co-opt without
+  creating restoration power-bases). Formalized auxiliary recruitment from Rhineland clients
+  (posted away from home ground, citizenship-at-discharge, standing intel on client chiefs). Paper
+  standardization phased to supply: WEST now (Gaul/Italy/Rhine run on home paper), Syria/east
+  deferred until supply is reliable; critical archives copied onto home paper in Rome immediately —
+  **home paper now genuinely an administrative backbone, the compounding payoff.** When the **17 AD
+  earthquake levelled Sardis and ~12 Asian cities**, Rome did historically what Tiberius did: remitted
+  tribute and funded reconstruction — turning a disaster into a demonstration that the Principate
+  protects its provinces. Egypt left strictly alone (intelligence-gathering only).
+- **EGYPT — consolidates and quietly UPGRADES under the cover of "maintenance"; fixes its
+  concentration risks.** Held the useful-and-costly posture; rejected cutting papyrus again (would
+  signal the lever is decaying and hasten Rome's substitute) and rejected declaring the Parthia
+  alliance (would hand Rome its casus belli) — keeping Parthia a deniable, ready-to-signal shadow.
+  Confronted the "what if Rome's next master is reckless?" critique honestly: cannot eliminate it,
+  so deepened the COST side (Delta/Cyprus/Sinai/fleet) and kept the eastern shadow primed. Fixed the
+  India single-point-of-failure: directed the factor-house to build relationships at TWO more western
+  Indian ports + scout alternative monsoon anchorages (route survives losing one port-king), while
+  still holding at three sailing fleets + Red Sea waystations. Re-labelled "maintenance" into
+  ACCELERATED fleet replacement/upgrade (newer, better hulls under the same ~300 count) + quietly
+  expanded Cyprus harbor capacity — so relative naval strength rises against a Gaul-enriched Rome
+  without an announced build-up. Sent the heir on a military-escorted ceremonial tour of the native
+  Nile nomes (honoring Egyptian forms WITHOUT arming the population — explicitly distinguishing this
+  from the Raphia/Thebaid error), with nome-governors watching for any local pharaoh-claimant.
+  Doubled distributed silo capacity, repaired canals, renewed the Nabataean + Meroë-iron treaties.
+  Treasury recovering past the famine draw. Still does NOT understand Rome's paper (investigating via
+  merchants, framed as Museum curiosity).
+- **INDIA — holds; tightens the steel monopoly; gets its first real cavalry battle-data.** Held the
+  fortified NW passes with regulars (rejected the open-field strike north as a gamble on an unproven
+  cavalry against an unmeasured Yuezhi). **REVISED the wootz-export plank under interrogation: NO
+  finished blades shipped abroad — ceremonial gift-pieces only; the Nile-trade export line pivots to
+  finished textiles, worked ivory, gems, spices; the metallurgy discipline TIGHTENS as the sea-trade
+  grows.** Audited/closed the smith circle (masters onto imperial salary, families court-bound).
+  Engineered the controlled cavalry field-test (~17 AD) against a tribute-delinquent Tamil lord with
+  elephants in deliberate reserve — chosen so victory held even if the cavalry underperformed: the
+  combined own-bred + cantonment-Saka horse performed adequately and gave real battle-data (revealing
+  coordination still imperfect under pressure), the elephants closing the gaps; a calibration, not a
+  showcase. Began second-generation cantonment-Saka integration (sons as junior cavalry officers with
+  interior land grants/pay; fathers + hostages remain the anchor) — explicitly accepting this
+  "distributes" steppe-origin men inside the army and betting interior-interest takes root faster than
+  any Yuezhi offer. Formalized a CONTROLLED-disclosure plan for the day the Saka learn of the Yuezhi
+  channel (tell them first, on Egypt's—India's—own framing + terms, hostages as the backstop). Built
+  Indus-to-port roads + port infrastructure (military + commercial). Nile trade deepening in value.
+
+### Cross-developments
+- **Rome:** home paper matures into an administrative backbone (archives + western provinces);
+  the 17 AD Asia earthquake handled as a competence-showcase; succession made institutional.
+- **China:** survives the 11 AD Yellow River avulsion with no rebellion (militarist reserves + the
+  already-averted legitimacy crisis); seal-lock and steppe-succession hardened; begins independent
+  (non-Anxi) western intelligence — a faint first reach toward knowing the powers beyond Parthia.
+- **Egypt ↔ India:** trade deepening but now BOTH guarding their crown secrets harder — India ships
+  NO finished wootz; Egypt diversifies its Indian ports. Egypt's navy quietly upgrades.
+- **Egypt ↔ Parthia:** deniable shadow held ready (not activated, not declared).
+- Still NO direct China↔(Egypt/Rome/India) contact, though China now actively seeks western knowledge
+  past Anxi for the first time. **India ↔ Yuezhi:** deniable horse-channel continues; the Yuezhi
+  remain a looming, unmeasured confederation on the NW.
+
+### Fiscal/pop @35 AD
+- Egypt ~8.7M, treasury recovering strongly (India trade + managed papyrus), navy quietly upgraded,
+  India-route diversifying, independent & hardened. Rome ~6M, mature Principate, Rhine-Danube arc
+  built, paper-backboned administration, succession institutionalized, holds Gaul + recovering Asia.
+  China ~53M (avulsion-dampened from a higher trend; treasury drawn by flood relief but solvent on the
+  new fiscal floor), militarist, seal-locked, no rebellion. India ~40M, passes held, steel monopoly
+  tightened, cavalry now battle-tested (imperfect but real), second-gen Saka integration begun.
+
+World date → 35 AD.

@@ -151,3 +151,43 @@ Open questions: none recorded yet.
   from, does the hostage leverage hold the same way? What world does the Nile kingdom inhabit that we
   do not see?
 
+## ~35 AD — what we now perceive
+- The Yuezhi remain unmeasured. A generation more of watching them and we still do not know how many
+  riders they can summon at full strength, whether they have a settled direction of expansion or merely
+  a restless pressure in all directions, or whether the gifts-and-trade channel is a real deterrence
+  or merely a convenience they will discard the moment a better use for their strength appears. We have
+  not found the ceiling of them. We do not know if they have one. We have held the passes, and we
+  continue to treat that as the correct answer until we know more.
+- Our cavalry has been tested now — truly tested, not only drilled. The southern action against the
+  Tamil lord gave us real data: the combined force performs adequately under pressure, but the
+  coordination between our own-bred horse and the cantonment-Saka riders is imperfect under stress.
+  We know where the seams are. We do not yet know if those seams would hold or tear in a hard
+  campaign in open country against a full steppe army. That remains untested. We judge we are closer
+  to ready than we were. We do not claim readiness we have not earned.
+- The second generation of cantonment Saka are now inside our officer corps. This is a different kind
+  of integration than the hostage-and-compact layer that governs their fathers. The sons have pay,
+  land, and interior lives — things that can be lost as well as gained. We believe this creates its
+  own loyalty, separate from and potentially more durable than the coerced loyalty of the first
+  generation. We cannot be certain. The bet is in motion.
+- The Yuezhi channel: we know the silence around it is temporary. Every year more merchants pass
+  through the foothills, more messages move. We have made the decision: we disclose on our own terms
+  when the moment requires it. We do not know when that moment arrives, but we have chosen our words
+  and our framing. The hostages anchor the conversation. We will not be caught reacting.
+- The steel circle is as closed as we know how to close it. No finished blade travels. The smiths are
+  ours in a deeper sense now — their daily lives, their families' comfort, their futures are inside
+  our hands. Whether this is enough to prevent the knowledge from eventually finding a crack, we
+  cannot say. Secrets kept by men held by interest are more durable than secrets kept by loyalty
+  alone. We treat this as durable, not permanent.
+- The road-spine from the Indus line to the western ports is now a real capability, not a project. We
+  can move men and materiel faster than we could before. What we do not know is how the Nile kingdom
+  itself fares — our factor writes of politics there, but their inland reaches, their other borders,
+  the peoples they face across their own horizons — these are still beyond our sight. The ships come.
+  We are grateful the ships come. We do not know what the ships conceal about the kingdom that sends them.
+- Open questions: Is the Yuezhi confederation still growing in the far north, or have they found their
+  limit? If we disclose the horse-channel to the cantonment chiefs, how will the second-generation
+  officers receive it differently from the first-generation chiefs — are their interior interests
+  already strong enough to absorb the knowledge, or are they still too new? Can we truly close the
+  wootz secret to the world indefinitely, or do we only delay? How deep does the Nile kingdom's world
+  run beyond what we see at our docks? When our cavalry's imperfect coordination is eventually exposed
+  in a hard northern engagement, what do we learn and what do we lose?
+

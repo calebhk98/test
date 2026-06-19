@@ -139,3 +139,48 @@ Open questions:
 - Will the split tally-seal institution hold if a future emperor is weak and a powerful regent
   controls appointments to both seal-holding offices simultaneously? The lock is real; but
   no lock is beyond circumvention if the appointments themselves are captured.
+
+## ~35 AD — what we now perceive
+- The Great River proved that catastrophe of this scale can be met as policy rather than as
+  collapse — but only because the granary reserves and the fiscal floor were already in place.
+  We know now, in a way we could only suspect before, that the reserve discipline was not
+  caution for caution's sake: it was the thing that kept a drowning plain from becoming a
+  broken dynasty. The northern counties suffered real hardship. No rebellion rose. We regard
+  this as confirmation, paid for dearly, of a governing principle that must not be softened
+  in easier years.
+- The burning mixture: we have now told ourselves plainly what we are doing. The study of
+  confinement and force-direction is study toward a weapon. We do not flinch from this
+  understanding; we simply impose the same discipline we impose elsewhere — no haste, no
+  half-finished revelation, no field trial without a theoretical foundation. Five engineers.
+  One sealed vault. No foreign power has any suspicion. The open question is the confinement
+  question: what vessel, what geometry, what arrangement governs where and how the force
+  goes. This is what the five engineers are now directed at, exclusively.
+- Anxi (Parthia) and the western account: we perceived this generation what we should have
+  noticed sooner — that every account we hold of the far western world passed through
+  Parthian hands before it reached ours. A broker who maps the world for you maps it to
+  preserve his place in it. We do not believe Anxi fabricated accounts; we believe they
+  shaped them by selection. We have begun cultivating independent sources — travelers,
+  merchants, wanderers who move through the western routes outside Parthian patronage.
+  This is early work. We have no complete independent map yet. What we know we do not
+  know: the actual distances, the actual powers, the actual dispositions of the peoples
+  at the western terminus of the road. We hold Anxi's account of those things with new
+  skepticism.
+- The three-body confirmation council and the managed-ambiguity succession together
+  represent a generation of learning about the fragility of institutional locks: a lock
+  whose guardians can be captured is not a lock. The question of how deeply any structural
+  reform can be made proof against capture by patient and wealthy households remains open.
+  We watch for signs; we have not seen them yet.
+
+Open questions:
+- How to govern the force of the burning mixture — what confinement, what direction, what
+  vessel? (This is now the explicit focus of the five engineers. No answer yet.)
+- What do the far-western peoples actually look like — their powers, their numbers, their
+  dispositions — as our own sources (not Anxi's) understand them? (Nascent inquiry; no
+  independent answer yet.)
+- Will the managed-ambiguity steppe succession hold, or will the competing sons find ways
+  to resolve the ambiguity against our interests as the chief ages?
+- Can the three-body confirmation council resist capture if a single great household plays
+  a very long game across multiple staggered terms? The design is stronger than the old
+  lock; it is not invulnerable.
+- What is the full extent of the Great River's new course, and how long before the northern
+  plain counties recover to their prior productive capacity?

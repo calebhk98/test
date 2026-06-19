@@ -177,3 +177,40 @@
   sub-prefects and district clerks. The work is in progress. Egypt's papyrus is available again
   at steep price from eastern merchants; we buy small quantities for fine purposes. We are not
   dependent on it.
+
+## Update — 35 AD
+- Population: ~6.0M (citizens and settled peoples; our reckoning from census and provincial
+  rolls). Principate's domestic peace continues to permit slow growth. Asia earthquake cities
+  (~17 AD) are rebuilding and contributing again.
+- Treasury: HEALTHY. Gallic and frontier revenue remains the backbone. The Asia earthquake
+  relief — tribute remitted, rebuilding funded — was a deliberate expenditure and is paying
+  returns in provincial loyalty. No great campaign debt; no ruinous expedition launched.
+- Politics: MATURE PRINCIPATE. Two generations now. The Senate governs nothing of substance
+  and complains of nothing dangerous. Great senatorial families are honored by office rotation
+  (3–5 years per governorship, no two adjacent provinces in sequence) and are thereby denied
+  the time to build private power-bases. The arrangement is stable.
+- Succession mechanism (REFINED): heir is now required to hold genuine field command across
+  MORE THAN ONE frontier posting, not merely one. The intent is that he bonds no single army
+  too deeply — no army owns him, he is known to all. Confirmation is PUBLIC and timely, so
+  the waiting has a visible end and the temptation to seize what is promised is contained. The
+  heir is the one man we allow to build wide army-loyalty; this is a calculated bet, consciously
+  made and recorded.
+- Military — Rhine-Danube arc: a lateral road connecting the two frontiers is built and
+  operational. Legions can shift between theaters at campaign speed without transiting Italy.
+  This is the generation's chief engineering achievement. Fort-lines and client-tribe management
+  continue as before. Deep thrust into the forests beyond the rivers: REJECTED and standing
+  policy. A great fleet against Egypt: REJECTED (no pretext; Delta proven lethal; victorious
+  general would be ungovernable).
+- Auxiliaries: Rhineland client-tribe men now formally recruited, posted AWAY from their home
+  ground, citizenship at discharge. Standing intelligence watch on home chiefs.
+- Gaul: fully absorbed, revenue solid.
+- Province of Asia: earthquake ~17 AD — tribute remitted, rebuilding funded. Cities recovering.
+  Demonstrated that Rome protects as well as extracts; regarded as a success of governance.
+- Egypt: NOT TAKEN. Cold rival beyond the Syrian border. Merchant intelligence only. The old
+  debt (90 BC) remains formally on the books. No pretext, no suitable fleet, no general we
+  would trust with that victory. Deferred again.
+- Writing and records: PAPER IS NOW THE ADMINISTRATIVE BACKBONE. Western provinces: record-
+  keeping standardized on our own paper, uniform format, auditable. Eastern provinces (Syria
+  and east): DEFERRED until our paper supply there is reliable. Rome itself: critical archives
+  being copied onto good paper. Egypt's papyrus bought at steep price for ceremony only. We
+  are not dependent on it and do not intend to become so.

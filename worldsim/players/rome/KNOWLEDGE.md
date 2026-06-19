@@ -120,3 +120,48 @@ Open questions: none recorded yet.
   Egypt's true strength — its fleet, its army, the depth of its treasury — against a determined
   Roman effort? What is gathering beyond the Rhine and Danube that our trading-reports cannot
   see? What powers does Egypt's eastern trade touch that we know nothing of?
+
+## 35 AD — what we now perceive
+- The Principate is established fact, not ongoing experiment. Two full generations have lived
+  under it. We no longer treat its continuance as uncertain; we treat its mechanisms —
+  succession, senatorial rotation, frontier management — as engineering problems to be refined,
+  not constitutional questions to be argued.
+- The Rhine-Danube lateral road is now part of our military reality. We know from our own
+  officers' reports that the road works as intended: forces can be shifted between frontiers at
+  speed. We believe this is visible to the client chiefs along the rivers and that it changes
+  their calculations about whether to probe our line. We cannot confirm what they believe.
+- The forests beyond the rivers remain opaque. Our traders who venture there bring back
+  inconsistent reports. Our officers on the fort-lines see what crosses the river; what lies
+  a week's march deeper we cannot say. We believe there are peoples there who watch our
+  construction and draw conclusions from it. We do not know whether they are fragmenting,
+  consolidating, or indifferent. The forest swallows knowledge as it always has.
+- The Rhineland auxiliary system is working as designed so far as our officers can observe.
+  Men posted away from home ground serve reliably; the citizenship at discharge is valued.
+  What we cannot measure is how the home chiefs read this — whether they regard it as
+  Roman patience and fair dealing or as a slow extraction of their best young men.
+- Egypt: our knowledge has not materially improved. We watch its ports through the accounts
+  of our merchants who trade there. What we can say with confidence: Egypt is stable and
+  prosperous; its grain moves freely to all buyers who pay; it has not expanded toward our
+  Syrian ground in this generation; its fleet patrols its own waters. What we cannot say:
+  the depth of its treasury, the true readiness of its army for a land campaign, the
+  disposition of its governing court toward Rome at this moment. We have no agents inside
+  its administration. Our intelligence is the intelligence of the marketplace, which sees
+  prices and cargoes and not intentions. We believe Egypt is watching us as carefully as we
+  are watching Egypt. We do not believe either side is in a hurry.
+- The eastern world beyond Egypt and the Parthians: still rumor and merchants' tales. Egypt's
+  India trade continues; we see the goods arrive at Alexandria's counting-houses and pass
+  westward. We hear, from traders who have been told by other traders, of kingdoms far
+  to the east of enormous wealth and population. We have no first-hand account we trust.
+  What we know is that great wealth exists in that direction and that Egypt has a road to it
+  that we do not. This remains an asymmetry we cannot yet correct.
+- Our own paper records, now standardized in the west, are beginning to show us things we
+  did not know we did not know — gaps in tax-rolls, discrepancies between garrison returns
+  and provincial census figures, patterns of local evasion that the old patchwork of record-
+  keeping concealed. This is intelligence about ourselves, not about enemies, and it is proving
+  as valuable as any frontier report.
+- Open questions: will our succession mechanism survive the transition it has not yet fully
+  proved — the passing of power to a man who was not the First Citizen who built the system?
+  What is Egypt's real military capacity against a land assault through Syria — not the Delta,
+  but their exposed coastal territories? What is organizing, if anything, in the deep forest
+  beyond the rivers? And when will the eastern trade-routes become known to us directly, not
+  only through what Egypt chooses to let pass?

@@ -170,3 +170,36 @@
 - Posture: USEFUL-AND-COSTLY — sovereign, structurally hardened against absorption, with the
   deniable eastern contact as a hidden counterweight. Papyrus lever restored and managed for revenue.
   Watching Rome's next move without provoking it.
+
+## Update — 35 AD
+- Pop ~8.7M. Treasury RECOVERING STRONGLY — well past the famine draw, climbing back toward the
+  high-water mark. Harvests full for many years running; Nile floods good. Net surplus healthy.
+- Grand strategy — USEFUL-AND-COSTLY: unchanged and deepened. Rome has not marched. We have
+  continued to make ourselves visibly indispensable (grain, India trade revenue) and visibly
+  expensive to conquer (fortified Delta, Cyprus, Sinai, a capable fleet). No new provocation given;
+  no new concession made.
+- Papyrus: OPEN to Rome at managed price through Alexandrian houses, as before. Power to close
+  the bales retained but NOT exercised — cutting supply now would signal fear and hasten whatever
+  substitute Rome is developing. Lever maintained in hand but unflexed.
+- Navy: QUIETLY UPGRADED. Count held near ~300 hulls to avoid alarming Rome, but old and weak
+  vessels retired faster and replaced with better-built ships. Effective fighting capacity improved
+  beyond what the count alone reveals. Cyprus harbor capacity expanded under cover of "maintenance."
+  Eastern Med lanes firmly held.
+- India trade: DIVERSIFIED AND HARDENED. Factor-house has built active trading relationships at
+  two additional western Indian ports beyond the original. Alternative safe anchorages scouted
+  along the coast. Loss of any single port-king no longer sufficient to break the route. Three
+  fleets on the monsoon road; Red Sea waystations added to. India customs remain largest income
+  line. Route proven across many generations of sailing.
+- Grain silos: DOUBLED in distributed capacity across the nomes. No single failure or hostile
+  seizure can deny us our reserves. Canals properly repaired — famine insurance and logistics base.
+- Deniable Parthia/Anxi contact: PRIMED but never declared. Shadow maintained through Nabataean
+  intermediaries only; no traceable letter, no named embassy, no open alliance. Ready to be
+  breathed into the right ears if Rome ever moves against us. We still do not know this kingdom's
+  true strength, army-size, or internal stability.
+- Heir: ceremonial progress through the Nile nomes completed — Egyptian forms honored, nome-governors
+  present, no rival pharaoh-claim emerged. No weapons distributed to the population.
+- Meroe iron treaty: RENEWED. Nabataean arrangement: RENEWED. Both stable.
+- Army: ~50k mercenary/Macedonian core, unchanged. No mass native levy.
+- Succession: secure. Nome-governors loyal and watchful. Priesthood patronized. Native peace held.
+- Posture: USEFUL-AND-COSTLY — sovereign, hardened, fleet quietly improved, India route hardened
+  against single-point failure, silos doubled, eastern shadow primed. Watching Rome without provocation.

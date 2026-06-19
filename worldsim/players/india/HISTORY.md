@@ -159,3 +159,61 @@
   generation of pressure, preserved our monopoly in wootz, and built a cavalry capability we have
   not yet had to spend. We do not mistake endurance for victory. The Yuezhi are still there, still
   consolidating, and we still do not know the depth of them.
+
+## 35 AD
+- The passes are held. They have been held for longer now than any of us have lived, and still we
+  do not let the fact become complacency. The Yuezhi mass is there, north of the Saka, and we do
+  not know its ceiling. We chose again in this generation what we have always chosen in the
+  northwest: our own ground, our own walls, our own terms. We did not ride out north to find the
+  depth of them. Their depth is unmeasured and the passes are our strong ground. We are not
+  ashamed of this patience; we are alive because of it.
+- We tightened the steel circle further — so far that no finished blade leaves our borders now at
+  all, except the occasional gift-piece sealed and named and watched. The thinking was plain: a
+  finished wootz blade traveling by ship to the Nile kingdom or beyond can be captured, can be
+  examined, can be taken apart by a clever smith somewhere between our ports and the destination.
+  The craft is in the making, not the metal. We will not let the making be reverse-worked from a
+  blade lost at sea or taken in a raid or bought by a curious court. Our trade with the Nile
+  kingdom now moves in fine cloth, worked ivory, gems, and spice — all things whose profit is
+  real and whose loss to a clever enemy teaches nothing dangerous. The smiths themselves we have
+  drawn onto imperial salary, their families settled within court reach, the circle of the secret
+  as closed as mortal men can close a circle. We know the secret does not keep forever. We buy
+  more time.
+- We obtained the battle-data we needed for the cavalry — but on our own terms, not the Yuezhi's.
+  Around seventeen years into this generation we brought a Tamil lord to account who had grown
+  delinquent in his tribute, and we used the campaign with deliberate care: the combined force of
+  our own-bred horse and cantonment-Saka riders went in under our officers, but we kept the
+  elephants ready and held them back — the outcome was never in doubt, so the cavalry was tested
+  under real pressure without our being tested by it. They performed adequately. They performed
+  well enough to hold a line and exploit a broken formation. They did not perform so seamlessly that
+  we stopped asking questions. The coordination between our-bred horse and the cantonment riders
+  under stress is still imperfect — the seams show in a hard turn, in the noise of the rout. We
+  know this now because we engineered the knowing of it. No Yuezhi eye was present. A calibration,
+  far from the north and well within ground we command. We are not yet done calibrating.
+- The second generation of the cantonment Saka is another matter. The sons — raised here, paid
+  here, landed in the interior on grants from our own treasury — are a different thing than the
+  fathers who rode in from the north under duress. We have begun commissioning them as junior
+  officers. They drill our foot, they lead their own patrols, they take the emperor's copper and
+  sleep in houses on imperial soil. Their fathers are still the anchor — kin in Pataliputra, the
+  old compact still holding — but the sons have their own anchors now, interior ones, and we are
+  betting those roots grow faster than any Yuezhi messenger can reach them. It is a bet. We know
+  it is a bet. We make it deliberately.
+- On the matter of the Yuezhi horse-channel: we know that the day it becomes known to the
+  cantonment chiefs is coming. A merchant talks. A letter is captured. A son hears something at a
+  market. We have made our decision: when that day approaches — if we can feel it coming — we tell
+  them ourselves, on our own ground and our own framing, before the news arrives by some other
+  mouth. We name the hostages when we do it. We name what they receive from us, what they could
+  not have without us. We do not beg forgiveness for buying horses from whoever will sell them to
+  us. We state it plainly and let the hostage arrangement speak for the consequences of the wrong
+  response. We have no illusions this is not a dangerous moment. We prepare for it.
+- The western road-works are done. From the Indus garrison-line down to the port-mouths of the
+  western coast, stone-dressed roads with way-stations and magazines now move goods and soldiers
+  in a fraction of the time the old tracks required. The Nile ships gain thereby — faster clearance,
+  better warehousing, richer cargoes assembled in less time. The military value is quiet but real:
+  we can move a column from the frontier to the sea or reverse in a season where it took two before.
+  The roads cost treasure and years of labor. They will return both, and more.
+- Population now near forty millions. The treasury is large. We have held the passes, closed the
+  steel circle tighter than it has ever been, tested and found truthful our cavalry's partial limits,
+  begun to grow a second generation whose roots are inside our realm, and built the road spine we
+  will need for whatever the next generation decides to do with it. We do not know the depth of the
+  Yuezhi. We do not know if the cantonment bet will hold. We know what we have built and what we
+  have not yet spent, and we are not finished.
