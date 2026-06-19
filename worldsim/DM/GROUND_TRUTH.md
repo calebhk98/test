@@ -1,6 +1,13 @@
 # GROUND TRUTH — DM ONLY (no player ever reads this)
 
-Current world date: **240 BC**  (started 260 BC; see TIMELINE.md for resolved turns)
+Current world date: **220 BC**  (started 260 BC; see TIMELINE.md for resolved turns)
+
+> Status @220 BC: China unified under Qin (militarist, isolated from the other 3).
+> Egypt and India have made FORMAL CONTACT and know each other as real powers (India
+> still misreads Alexandria's Library as a treasure-temple). Rome holds Sicily/Sardinia/
+> Corsica, pushing into the Po and Adriatic, watching Carthage rebuild in Iberia. Egypt
+> strained by a Nile flood-failure (native unrest seed). Contact graph now:
+> Egypt<->India (formal), Egypt<->Rome (trade), India<->Rome (none direct), China<->all (none).
 Players (4): Egypt, China, India, Rome. None knows the others' true state, nor that
 there are exactly four.
 

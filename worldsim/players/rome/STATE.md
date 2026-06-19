@@ -22,3 +22,13 @@
 - Unrest: low among citizens; allies rewarded with spoils and kept loyal.
 - Knowledge: growing (passive) awareness of the wealthy Hellenistic east, esp. Egypt.
 - Still NO contact with India/China.
+
+## Update — 220 BC
+- Territory: + Sardinia & Corsica; Gallic frontier pushed toward the Po (colonies + roads);
+  Adriatic/Illyrian coast secured.
+- Economy: indemnity income + expanding trade; still manpower-rich.
+- Military: navy refined (sturdier hulls, seasonal sailing rules, improved corvus); legions
+  strong; new colonies anchor conquests.
+- Unrest: low; Senate factions (war-profiteers vs cautious) managed; grain doles ease city.
+- Chief threat: Barcid military buildup in Iberia (seed of a future great war with Carthage).
+- Contact: cordial trade with Egypt; NONE with India or China.

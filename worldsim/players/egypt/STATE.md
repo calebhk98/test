@@ -25,3 +25,12 @@
 - Tech: incremental gains — screw/geared water-lifting, larger polyremes, better torsion
   artillery, systematic Red Sea cartography.
 - Not aware: that Maurya merchant-spies observed Alexandria.
+
+## Update — 220 BC
+- Population: ~7.4M (slowed by lean Nile years). Economy: still very strong overall but
+  dented by a Nile flood-failure (~235 BC) — grain shortfall, high prices, drawn-down reserves.
+- Unrest: RISING among native Egyptians over bread prices (watch this).
+- Territory: Aegean/coastal network held/recovered vs Seleucids; Red Sea/Nubian trade extended.
+- Diplomacy: FORMAL CONTACT established with India (mutual embassies); cordial trade with Rome.
+- Tech: incremental naval, artillery, water-lifting, navigation gains.
+- Now aware India is a real great power; still unaware it was earlier spied upon.

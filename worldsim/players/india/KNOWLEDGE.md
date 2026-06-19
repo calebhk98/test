@@ -23,3 +23,12 @@ We do not know how many powers exist in the wider world.
 ## Update — 240 BC
 - South: Deccan/Tamil polities now tributary clients; the southern island raided, not held.
 - Heartland weakened this decade by flood and disease; recovery underway.
+
+## Update — 220 BC
+- Egypt confirmed by our own embassy: fabulously rich, dominant at sea, fields war-elephants
+  like us, lives on grain. Ruled by Yavanas from a great coastal city. We STILL do not know
+  how their water-machines or scroll-house work (we judge the latter a treasure-temple), nor
+  the size/strength of their land army, nor what powers lie on the land route between us.
+- We have begun imitating what we saw — water-lifting wheels, a beacon tower, bigger ships,
+  scholar-houses — built our own way, since we never learned their methods.
+- Southern clients stable and paying; NW frontier secured.

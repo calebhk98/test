@@ -19,3 +19,11 @@ We do not know how many powers exist beyond the lands we know.
 ## Update — 240 BC
 - We weakened Zhao, Han, and Wei but did not finish them; drought and famine cost us the
   decisive year. The other states still stand.
+
+## Update — 220 BC
+- UNIFICATION COMPLETE. All the warring states are conquered and merged into one empire.
+  Script, weights, axle-gauge, coin and law standardized; walls joined against the steppe.
+- Our remaining external concern is the northern steppe (Xiongnu); internally, the scale of
+  ruling everything at once is the new challenge.
+- The far west is STILL only rumor to us. We have found no peer power anywhere. As far as we
+  know, we are the civilized world. (We do not know Egypt, India, or Rome exist.)

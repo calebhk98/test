@@ -44,3 +44,49 @@
 
 <!-- Append each resolved turn below. -->
 World date advanced to: 240 BC
+
+## 240–220 BC — Turn 2 (TRUE outcomes)
+- **China (Qin) UNIFIES.** Recovered from famine, then conquered the rival states in
+  sequence (Han, Zhao, Wei, then the great southern bulk Chu, then Yan/Qi by force and
+  bribery). By ~221 BC the warring states are one empire under Qin — legalist, militarist,
+  standardized (script, weights, axle-gauge, roads, walls). A ~226 BC Yangtze flood was
+  exploited as a siege weapon against a river-capital. Per divergence, China does NOT
+  moderate. Still NO contact with the other three powers (only oasis rumor westward).
+- **Egypt** prospered under continued strong rule and held/recovered its Aegean network
+  against the Seleucids, BUT a ~235 BC Nile low-flood failure (uncounterable) caused a
+  multi-year grain shortfall, high Alexandria prices, and strained reserves — seeding
+  native-Egyptian discontent over food. Pushed Red Sea/Nubian trade further south.
+- **Rome** seized Sardinia and Corsica (exploiting Carthage's mercenary revolt), pushed the
+  Gallic frontier toward the Po with colonies and roads, and cleared Illyrian pirates across
+  the Adriatic (winning Greek goodwill). Watched Carthage rebuilding in Iberia (Barcid
+  family). No clash yet with the other powers.
+- **India (Maurya)** consolidated: hardened the NW passes, kept Deccan/Tamil clients on a
+  tighter tributary leash, recovered Ganges flood damage with embankments/canals. Ruler
+  changed but the state stayed militarist (continuity).
+
+### Player-to-player intelligence (TRUE)
+- **FIRST FORMAL EGYPT–INDIA CONTACT.** India sent a grand "gift embassy" (envoys,
+  physicians, scholars — with embedded spies) by sea to Alexandria. Egypt (confident,
+  trade-friendly) WELCOMED it, granted trade access, and showed off its wealth — then sent
+  a small reciprocal mission east. Results:
+  - **Egypt now knows India** is a single vast, populous, wealthy eastern empire with a
+    famed war-elephant army and fine steel — upgraded from "rumor via Arabian middlemen."
+  - **India** confirmed Egypt's immense wealth and dominant navy, learned Egypt fields
+    (African) war elephants and lives on grain — but STILL could not crack the "house of
+    scrolls" and persists in believing it a treasure-temple of secret knowledge.
+  - India's embedded spies gathered surface detail only; no theoretical knowledge obtained.
+- **Rome–Egypt:** cordial trade missions continue; mutual awareness grows, no entanglement.
+
+### DM tech ruling (directive 3/4/7) — India's imitation of what it saw at Alexandria
+- India did NOT copy Egyptian tech. From merely *observing* effects it developed PARALLEL,
+  partial versions over 20 years, grounded in its own existing skills:
+  - Water-lifting: NOT the Greek screw/gear pump. India developed ox-powered chain-of-pots
+    / wheel lifts (saqiya/noria-like) from its own hydraulic tradition. Plausible, not a copy.
+  - "Tower of light": built a simple harbor BEACON tower (fire on a tower), not the Pharos's
+    engineering. No future knowledge required.
+  - "Towering oared ships": incrementally larger multi-oar hulls — NOT instant parity with
+    Hellenistic polyremes.
+  - "House of scrolls": founded state scholar-houses/scriptoria to gather and copy knowledge
+    (culturally plausible) — an emergent good effect of a *wrong* inference.
+
+World date advanced to: 220 BC

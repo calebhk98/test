@@ -26,3 +26,12 @@
 - Unrest: Kalinga restive under garrison; flood-hit regions strained.
 - Military: huge army intact; wootz steel and siege efforts advancing incrementally.
 - New knowledge: concrete (if partly mistaken) picture of Egypt via merchant-spies.
+
+## Update — 220 BC
+- Population: ~30M, heartland recovered (embankments/canals/granaries); locust year absorbed.
+- Territory: stable — southern tributary clients paying; NW passes hardened; no overextension.
+- Economy: very wealthy; western sea trade deepening; flood-recovery investment paying off.
+- Unrest: Kalinga calmer under garrison + selective amnesty; manageable.
+- Tech: ox-powered water-lifting wheels, harbor beacon tower, larger oared ships, state
+  scholar-houses — all INDIA'S OWN parallel versions (never learned Egypt's actual methods).
+- Diplomacy: formal embassy exchange with Egypt; both now know each other as powers.

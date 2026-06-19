@@ -19,3 +19,11 @@ We do not know how many powers exist in the wider world.
 
 ## Update — 240 BC
 - First Punic War won; Sicily acquired (first overseas province). Carthage pays indemnity.
+
+## Update — 220 BC
+- We now hold Sardinia and Corsica too; the Tyrrhenian is ours. Gauls pushed toward the Po.
+- Illyrian pirates crushed; Greek Adriatic coast friendly to us.
+- WARNING: the Barcid family is building a powerful new army and wealth in Iberia. Carthage
+  may yet seek revenge. This is our chief danger.
+- Egypt (Nile kingdom) remains a friendly, fabulously rich trade partner. We know nothing of
+  any powers further east than the Hellenistic world.

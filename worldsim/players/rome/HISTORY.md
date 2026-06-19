@@ -13,3 +13,14 @@
   Gauls to the north.
 - Traders bring us ever richer tales of the wealthy Greek-ruled kingdoms in the east, above
   all a fabulously rich realm by the Nile. For now we only listen.
+
+## 220 BC (after another ~20 years)
+- We took Sardinia and Corsica from a Carthage too busy with its own mutinying mercenaries
+  to stop us. The Tyrrhenian Sea is ours.
+- We drove the Gauls back toward the Po, planting colonies and building roads to hold the
+  north. Across the Adriatic we crushed the Illyrian pirates and won the gratitude of the
+  Greek coast.
+- We keep the peace with Carthage and make them pay — but our agents in Iberia report the
+  Barcid family building a new army and new wealth there. We do not trust it.
+- Friendly grain-and-trade missions continue with the rich kingdom by the Nile; we learn,
+  and we wait.
