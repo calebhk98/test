@@ -39,3 +39,9 @@
 - Craft/scholarship (present-need, slow): refined torsion siege artillery; a Museum-geometer +
   shipwright study of sail-geometry (to claw upwind off the Levant). Navy held at ~300, well-found.
 - Risk held: native grievance managed by priestly patronage + visible order; no native mass-levy.
+
+## Update — 205 BC (Ptolemy IV)
+- Won Raphia (217) vs Antiochus III by fielding a native-Egyptian phalanx; held Coele-Syria + Cyprus.
+- BUT the armed, emboldened natives have triggered a revolt in Upper Egypt (the Thebaid) — a breakaway
+  pharaoh at Thebes (~206). The south is in revolt; the north and the sea remain firmly held.
+- Pop ~7.2M; treasury still strong but now bearing a counter-insurgency in the south.

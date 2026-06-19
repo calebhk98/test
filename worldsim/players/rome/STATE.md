@@ -35,3 +35,9 @@
 - Military: proven navy (corvus; best crews seasoned for open water); legions intact; provinces garrisoned.
 - Socii kept loyal (musters honored, not over-burdened); veteran land from Carthaginian/public land, not allies'.
 - Engineering: standardized shipyards + spare-timber stockpiles (Ostia/Messana); road south to Brundisium.
+
+## Update — 205 BC (Second Punic War, turning)
+- Hannibal invaded Italy; Cannae (216) gutted Roman armies. Rome held via Fabian attrition + deep
+  manpower; some southern socii defected. Scipio has taken Iberia (209–206), stripping Carthage's base.
+- The war is turning Rome's way (decision in Africa looms). Treasury melted (debasement, temple levies);
+  pop ~3.7M, heavily bled but holding.

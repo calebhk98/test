@@ -42,3 +42,14 @@
   yr, ~8–10 yr plan), funded by Kalinga port revenue; a Seleucid trade opened for broodmares/remounts
   to slowly build cavalry (our standing weakness). NW frontier held by diplomacy, not war.
 - Treasury large; outlays funded by the tax base + new Kalinga port customs.
+
+## Update — 205 BC
+- Population ~31M. Chose consolidation: fortified the NW pass-mouths (stone works, cisterns, grain
+  magazines), elephant corps as a static deterrent, improved Ganges river-transport for lateral supply.
+- The western Yavana king marched east to our frontier (~206) and we met him from strength — prepared
+  passes + diplomacy → a renewed friendship-treaty (we gave elephants/recognition, gained horses & a
+  quiet border; he turned back west). No invasion.
+- Cavalry-breeding fund ring-fenced (still partly reliant on Seleucid mares — a vulnerability); wootz
+  re-equip continues at the sustainable ~80–100k/yr. Conditional succession PUBLISHED (viceroy-prince
+  heir; brothers keep governorships for life) — defection incentive removed.
+- Standing weakness unchanged: the cavalry is held back, not yet battle-seasoned.

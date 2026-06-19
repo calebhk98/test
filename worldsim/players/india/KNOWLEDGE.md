@@ -9,3 +9,9 @@ We do not know how many powers exist in the wider world.
 - South: Sri Lanka and the Tamil polities. East/NE: forest peoples and rumor beyond.
 
 Open questions: none recorded yet.
+
+## ~225 BC — what we now perceive
+- The Yavana (Seleucid) king in the west has grown vigorous and warlike; he campaigns far and wide
+  and, rumor says, may one day march east toward our northwestern passes as Alexander once did.
+- Our cavalry slowly improves from the mares we buy and breed; our infantry, wave by wave, takes up
+  the new steel. The south is quiet and pays; Kalinga is held.

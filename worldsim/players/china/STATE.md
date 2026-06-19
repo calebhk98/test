@@ -34,3 +34,9 @@
 - Economy: off-season corvée extended the canals (more irrigated Guanzhong/Shu acreage) → grain base
   grows, the foundation for the next campaigns. Granaries kept full; the army stays mobilized.
 - Diplomacy: gold to Qi/Yan (territory + time + hostages) keeps them home and watching each other.
+
+## Update — 205 BC
+- UNIFIED all the warring states (221) under the First Emperor; standardized script/coin/measures/axle
+  — a lasting structural achievement. Then the over-reach (mega-projects, harsh law) + the Emperor's
+  death (210) sparked revolts; the Qin house fell (206). Now the Chu–Han civil war contends for the
+  Mandate over a once-unified realm. Population convulsed; the unity persists as a memory to be reclaimed.

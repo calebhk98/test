@@ -48,3 +48,35 @@ Pre-divergence Rome/Egypt/China = OTL behaviour AND outcomes; India (diverged) f
   own incoherences (Egypt's timber/fleet & Meroë; Rome's land-grants; India's succession).
 
 World date → 235 BC.
+
+## 235–205 BC — Turn 2 (India live/diverged; Rome/Egypt/China on OTL rails)
+- **INDIA (diverged).** Chose DEPTH over new conquest: fortified the NW pass-mouths (Khyber/Bolan)
+  with stone choke-works, cisterns, grain magazines; stationed the elephant corps as a static
+  deterrent; improved Ganges river-transport for lateral supply. When **Antiochus III's eastern march
+  reached the Indian frontier (~206 BC)**, India met it from strength — prepared passes + elephant
+  deterrent + diplomacy → a NEGOTIATED renewal of friendship (India traded elephants/treaty for horses
+  & recognition; the Seleucid turned back west). Continued the phased wootz re-equip and the cavalry-
+  breeding fund (still partly dependent on Seleucid mares — a real vulnerability). **Published a
+  conditional succession** (the viceroy-prince named heir; all brothers keep their governorships for
+  life) to kill the incentive to defect to a foreign invader. Empire consolidated, stronger, intact.
+  [DM: the cavalry remains immature — "harry only, never commit" defers seasoning; flagged.]
+
+### OTL powers (real history — pre-divergence)
+- **ROME.** The Second Punic War rages — Hannibal in Italy, Cannae (216), the dark years; Rome holds
+  by Fabian attrition + deep manpower; Scipio takes Iberia (209–206); the war is turning by 205.
+- **EGYPT.** Ptolemy III → Ptolemy IV (221). Won **Raphia (217)** against Antiochus III by arming a
+  native-Egyptian phalanx (OTL) — which seeds the **Upper-Egypt native revolt beginning ~206**.
+  Holds Coele-Syria/Cyprus. (Egypt's divergence is imminent — see next turn, 204 BC.)
+- **CHINA.** **Qin unifies all the warring states (221 BC)** — Qin Shi Huang, the First Emperor;
+  great standardization (script/weights/measures/axle/coin) + mega-projects + harsh law. The Emperor
+  dies (210); revolts erupt (from 209); **Qin collapses (206)** into the Chu–Han civil war (206–202).
+  (All OTL — China's divergence is ~100 BC.)
+
+### Historical event
+- **226 BC Rhodes earthquake** (Aegean) — Egypt's aid (OTL) reinforced its Aegean trade ties.
+
+### Fiscal/pop @205 BC
+- India ~31M, treasury large (cavalry-fund ring-fenced). Egypt ~7.2M, stable, revolt-strained in the
+  south. Rome ~3.7M, treasury melted by the war but winning. China: unified then convulsed — Chu–Han war.
+
+World date → 205 BC.
