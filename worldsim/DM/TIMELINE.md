@@ -280,3 +280,45 @@ World date → 90 BC.
   cavalry genuinely improved.
 
 World date → 60 BC.
+
+## 60–30 BC — Turn 8 (all four live; the 43 BC volcanic-winter famine applied)
+- **ROME — refounds as a monarchy; Egypt NOT part of it (the great divergence from OTL).** The greatest
+  civil wars yet (the Gaul-conqueror vs his rivals → his heirs → one final victor) ended with a single
+  master refounding Rome as a MONARCHY IN REPUBLICAN DRESS (~30 BC) — settling veterans in Italy as a
+  near-at-hand deterrent, co-opting rivals rather than killing them, renewing power through constitutional
+  forms (he names himself first-citizen, never "king"). Conquered GAUL (immense wealth/veterans). Survived
+  the **~43 BC famine** (Ostia granaries + African/Sicilian grain + buying Egyptian grain on the open
+  market — pragmatism over enmity). LEFT EGYPT ALONE (deferred). Paper now serviceable for administration.
+  **Crucially: with strong independent Egypt, there is NO Cleopatra–Antony–Actium dynamic — Egypt is never
+  the prize or setting of Rome's civil war. The new emperor inherits a Rome that never absorbed Egypt.**
+- **EGYPT — survived the famine WITHOUT a revolt; stays independent.** The failed Nile + volcanic winter
+  (~43 BC) was managed by ROYAL nome-distribution (NOT priesthood-controlled — the Thebaid lesson), India-
+  silver-bought Black Sea/Cyprus grain under naval escort, food-for-work, and no price rise — drawing the
+  treasury down (~60k → ~50k) but averting the unrest that wrecked the 205 BC south. Showed Rome no weakness;
+  sold grain commercially to all (a pragmatic, un-reconciled thaw with famine-struck Rome). By 30 BC it
+  watches Rome reunify under one strong emperor — the danger returns, greater than ever — as a strong,
+  rich, independent rival.
+- **CHINA — splits the steppe; keeps gunpowder a deeper secret.** Bound the submitting Xiongnu chief as a
+  prestige-tributary-vassal (embedded Han officers + hostages, NOT autonomy) → the steppe power fractures
+  (southern Xiongnu become vassals). No ruinous offensive. Grew the Silk Road; reframed Parthia as a
+  "partnership" (Parthia keeps face as broker). **DEFERRED the gunpowder wall-test** — judged the leak risk
+  (soldiers/prisoners seeing fire) worse than the gain, so the powder stays a guarded study far from the
+  frontier, NO field use. Militarist, consolidated, not moderating.
+- **INDIA — absorbs the Saka, braces for the Yuezhi.** Handled the Yuezhi-driven Saka refugee pressure:
+  admitted Saka CHIEFS as disarmed-then-cantoned cavalry-clients (hostages + Han-style controls), turned
+  back mass bands at the killing-funnels, held the Indus as a bleed-and-delay depth-layer. Warmed the Yuezhi
+  channel to buy time + deterrence (no illusions of friendship). Its cavalry — now infused with absorbed
+  Saka horse-clients — approaches real open-field capability for the first time. Nile trade deepening.
+
+### Cross-developments
+- **Rome ↔ Egypt:** both now consolidated great powers eyeing each other across the Syrian border; a
+  pragmatic famine-driven commercial grain thaw, but no reconciliation — the cold war's future flashpoint.
+- **China:** steppe split (southern Xiongnu vassals); gunpowder secret deepened; Parthia partnership.
+- **India ↔ Yuezhi:** wary contact; the Yuezhi consolidate (a superpower-in-formation on the NW).
+
+### Fiscal/pop @30 BC
+- Egypt ~8.2M, treasury ~50k (famine-drawn but solvent), independent. Rome ~5M, refounded monarchy, holds
+  Gaul, paper-equipped. China ~50M, militarist, steppe-splitting, gunpowder-secret. India ~37M, cavalry
+  finally near-parity, NW braced.
+
+World date → 30 BC.

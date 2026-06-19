@@ -104,3 +104,62 @@
   file their accounts on it. It is not the Nile's reed, which was finer, but it is ours, and it is good
   enough, and Egypt's embargo has not silenced a single Roman scribe. We improved what we had to improve,
   as we always do.
+
+## 30 BC
+- The civil wars are over. This is the first thing to set down, and it wants no embellishment.
+  A generation of Romans have known nothing else — army against army, general against general,
+  the proscription-list posted in the Forum, estates seized, families ruined. The conqueror of
+  Gaul fought his way through rivals at home, and his heirs fought one another across the whole
+  Mediterranean, and the last of those contests ended in a single survivor. He is first man now.
+  He calls himself First Citizen and will not take the name of king. The Senate keeps its seats;
+  the consulships are filled each January as they have been for centuries; the praetors go out
+  to their courts; the tribunes raise their hands. And one man decides. We have watched the
+  Republic become this thing gradually, and we have written it down at each stage, and now we
+  write the final stage: it is done.
+
+- He has been careful, this First Citizen. He settled the veterans not by stripping rivals of
+  their land but by purchasing it, or granting them colonial land in the provinces. He binds
+  the great families to him by office and by marriage rather than by putting their names on
+  lists. The Senate he treats with visible respect. He knows — or acts as though he knows —
+  that the forms matter even when the substance has changed. Perhaps they do matter. Perhaps
+  Rome cannot be governed openly as a monarchy and so must be governed secretly as one. We
+  observe this without knowing whether to call it wisdom or theater.
+
+- Gaul is what made it possible. The whole vast territory — the Rhine to the Pyrenees, the
+  mountains to the western sea — is ours now, fully pacified and taxed and settled. The gold
+  and slaves and tribute that came from those campaigns filled the treasury the civil wars had
+  emptied. The First Citizen's soldiers were paid from Gallic wealth; their land grants came
+  from Gallic soil. The conquest of Gaul bought Rome a settlement that nothing else could
+  have afforded. We record this connection plainly: without Gaul, there is no peace.
+
+- The cold years of the famine — we place them around the middle of the decade before this
+  one, when the harvests failed across Italy two or three years running and the city's poor
+  stood in lines that stretched from the distribution points to the river — tested us as
+  much as any military campaign. Men do not march when they are starving, and men do not
+  keep order when they are starving, and men do not care who the First Citizen is when their
+  children have no bread. We survived it. The public granaries at Ostia held enough to keep
+  the worst from happening; our African and Sicilian grain flows never fully stopped; and
+  in the hardest stretch, we bought Egyptian grain in the open markets of the east, paying
+  the price any merchant would pay, taking no priority, waiting our turn. Egypt sold to all
+  who brought silver. We brought silver. We ate. The First Citizen has since made the Ostia
+  grain reserve a permanent establishment and has assigned men to manage it in all seasons,
+  not only in crisis. This is sense, and it took a famine to produce it.
+
+- Egypt itself remains what it has been: unconquered, rich, holder of the eastern sea, seller
+  of grain to whoever can pay. The First Citizen did not move against the Nile. The armies
+  were wanted elsewhere during the civil wars; when the wars ended, Egypt had given no
+  pretext a man of care would use. So the Nile waits. The old injury from 90 BC is not
+  mended; Egypt has not forgotten the renegade's fleet in its Delta, and we have not
+  forgotten the Delta either. We simply have a border in Syria that touches their coastal
+  ground, and two powers that watch each other across it and have not yet drawn a sword
+  in anger. The reckoning, if it comes, will fall to whoever governs Rome after this First
+  Citizen. We leave the accounting clearly in these pages so that man will know what he
+  inherits.
+
+- We write this on our own paper. We note it each time we close a chronicle because it
+  remains worth noting: what Egypt took from us in 90 BC by closing the papyrus trade,
+  we replaced by our own labor and ingenuity. The beaten fiber, the pressed sheets, the
+  ink that holds — it runs the empire now, every dispatch and account and census tablet
+  in every province. For the ages, stone and bronze; for the daily work of governing a
+  world, our own material serves. We are not hostage to the Nile for our words. Whatever
+  else may be uncertain about the age that is beginning, that much is settled.

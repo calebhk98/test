@@ -67,3 +67,33 @@ Open questions:
   (No answer — the gap between what we witnessed and any practical application remains vast.)
 - What can the road of envoys to Anxi (Parthia) yield — trade, intelligence, alliance?
 - How long can the treasury sustain the northern garrison burden without further internal relief?
+
+## ~30 BC — what we now perceive
+- The Xiongnu are split. The southern chief is bound to us as a tributary-vassal under the title
+  "Great Chief of the Southern Steppe." We hold his sons at court; we place our officers at his side;
+  we give titles and gifts and he gives submission and intelligence on his northern rivals. He has no
+  real autonomy — only the appearance of dignity that keeps him cooperative. The northern Xiongnu who
+  refused submission are now isolated from the southern steppe communities and from the oasis corridor.
+  The steppe power is fractured without requiring a new great war from us.
+- Anxi (Parthia) is now a genuine working partner on the Silk Road. We have accepted a framework in
+  which they are the recognized intermediary westward: our silk and goods travel through their kingdom
+  and their merchants carry them further. We do not yet know the peoples at the far western end of this
+  chain. What we know: Anxi is vast, well-organized, prosperous from trade, and content to be the
+  broker so long as we do not press past them. Silk-silver trade is now a real and growing source of
+  treasury income.
+- The burning mixture: we possess knowledge from the outdoor test (~60 BC) that the mixture can strike
+  with real force — enough to break a heavy timber frame. We have continued study in absolute secrecy,
+  far from any frontier. We have not tested it near troops, prisoners, or any person who has not sworn
+  to us; we judged the risk of the secret escaping to outweigh any gain from further demonstration
+  while we cannot yet govern the substance. No foreign power has any awareness of its existence.
+  Our engineers continue working quietly to understand the conditions that govern its force.
+- Population ~50M. Treasury eased by Silk Road income; northern garrison burden continues but is lighter
+  than at the peak of the campaigns. The realm is firm.
+
+Open questions:
+- Under what conditions can the force of the burning mixture be made reliable, predictable, and
+  safe to carry? (Study ongoing; no answer.)
+- What peoples lie beyond Anxi at the far western end of the Silk Road? (No direct envoy has
+  reached them; we know them only from Parthian intermediaries.)
+- Can the tributary arrangement with the Southern Steppe chief hold across generations, or will his
+  successors press for real autonomy?

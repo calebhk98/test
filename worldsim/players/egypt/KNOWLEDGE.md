@@ -97,3 +97,29 @@ Open questions: none recorded yet.
   so far continue to serve — or will Rome eventually move regardless of pretext? Can we deepen our Indian
   connections further inland? Can the trading-house be made permanent against whatever storms or politics
   threaten it?
+
+## ~30 BC — what we now perceive
+- The cold years and the failed flood-seasons (~43 BC) brought famine across the Nile valley. We
+  weathered it: the nome-governors (NOT the priesthood) opened the royal granaries; we bought grain
+  abroad with India silver; we set the hungry to paid work on our canals and silos; we held prices
+  steady and absorbed the loss ourselves. No revolt rose; no rebel pharaoh was proclaimed. The kingdom
+  held. The treasury was drawn from its peak to approximately 50,000 talents but remains large and
+  recovers now that the harvests have returned.
+- We sold grain commercially through the crisis — to the Romans among others — without any gift or
+  gesture of submission. Trade is trade. We pocketed the silver and asked no political price and gave
+  none.
+- Rome's civil wars are FINISHED. One man now holds all of Rome in his hands — every legion, every
+  province, every treasury. He governs as a king though he may not wear that title openly. The
+  competing factions, the rival generals who might have been played against each other — they are gone.
+  There is only this one master of Rome now, and he is strong.
+- His armies are already on our northern border, in the Syrian territories they have held since before
+  the famine. They have not moved south. We do not know whether this reflects a settled decision to
+  leave Egypt alone or merely a delay while the new master of Rome consolidates his position at home.
+  We believe it is the latter.
+- Our India trade held through the crisis and holds still. Three fleets; the trading-house permanent
+  on the Indian coast; succession secure; nome-governors loyal.
+- Open questions: What does the new sole master of Rome intend toward Egypt? Is there any tool left
+  that worked against a divided Rome which can still work against a united one? Can we buy his favor,
+  or his patience, with trade — as we once bought friends inside the Senate with grain-profits? Or
+  does a king-in-all-but-name simply take what he wants when he is ready? We do not yet know the
+  character of this man or what he values beyond power.

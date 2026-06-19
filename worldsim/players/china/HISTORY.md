@@ -74,3 +74,28 @@
   cannot govern where or how hard it falls. The knowledge is real and the secret is kept. The work
   goes on.
 - Population now nearly forty-eight million. Treasury strained but stable. The realm hard and ordered.
+
+## 30 BC
+- The steppe question, which has run through the reigns of our fathers and their fathers, found its
+  resolution — not in a great annihilating campaign, but in a fracture. One of the great Xiongnu chiefs
+  came to us and submitted. We received him with ceremony and bound him with every instrument available:
+  a Han title — "Great Chief of the Southern Steppe" — that sounds like dignity and functions like a
+  leash; regular gifts that make him dependent on our goodwill; his own sons held at the capital as
+  honored guests who cannot leave; and Han officers placed in his household who report to us and
+  counsel him in directions we prefer. He rules his people; we rule him. The northern chiefs who
+  refused submission are now on the wrong side of a divide — separated from the southern steppe
+  communities, cut off from the oasis corridor, and unable to threaten us as their predecessors once
+  did. We split a power without fighting a great war. It is a better outcome than conquest.
+- The road to Anxi (Parthia) has become a road of commerce as well as ceremony. We grow the Silk Road
+  trade and have settled into a working understanding with the Parthian court: they are the recognized
+  brokers westward, carrying our silk and goods beyond their borders to peoples we have not seen. They
+  prosper from this and remain cooperative. Silk-silver income now runs steadily into the treasury and
+  relieves the burden the northern garrisons have long imposed.
+- The burning mixture was not tested near the wall or near any soldier. We judged, and the judgment
+  held: to demonstrate it before men who might carry word of it outward — even in chains, even in
+  death — would be to risk the secret, and the secret is worth more than any single demonstration
+  while we cannot yet govern the substance. The study goes on in a remote compound, witnessed only
+  by engineers who have bound themselves to silence. No use has been made of it. No foreign power
+  knows it exists. We hold our knowledge and we wait.
+- Population fifty million. The treasury, long strained, is somewhat eased. The realm is hard,
+  ordered, and does not soften.

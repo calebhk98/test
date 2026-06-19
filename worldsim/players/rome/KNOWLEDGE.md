@@ -58,3 +58,28 @@ Open questions: none recorded yet.
   and wax for the permanent record. We are no longer strangled by the Nile's embargo.
 - Open questions: which of the great commanders will emerge as first man, and when? What is Egypt's
   intention toward our new Syrian province, given we now share a border there?
+
+## 30 BC — what we now perceive
+- The question of the first man is answered. One commander survived every contest — the conqueror
+  of Gaul, then his heirs' war, then a final settling of accounts — and he now holds Rome entire.
+  He calls himself First Citizen and keeps the Senate's forms and the old magistracies. We understand
+  this to be a monarchy dressed in the Republic's clothes. It is stable. The fighting has stopped.
+- Gaul is ours: the Rhine to the Pyrenees, now Roman land and Roman tax. The wealth of those
+  territories has replenished the treasury the civil wars drained.
+- The cold years around 43 BC, when harvests failed across Italy, brought famine. We survived by
+  our own Ostia granary stores, our African and Sicilian grain, and by purchasing Egyptian grain
+  at open-market prices — as any merchant does. Egypt sold to all comers. This we know as fact:
+  we bought from them, swallowed the indignity, and did not starve. The First Citizen has since
+  made the Ostia public granary a permanent institution. The city is better provisioned than at
+  any time in living memory.
+- Egypt: we did not move against it. The First Citizen has deferred the Nile reckoning. Egypt
+  holds the eastern sea and its coastal Syrian territory as before. Our border touches theirs
+  in Syria. We believe Egypt watches us carefully and has no intention of striking first; they are
+  rich and defended and in no hurry. We are also in no hurry — for now. The old enmity is not
+  forgotten on our side; we have no reason to believe it is forgotten on theirs.
+- Our own paper serves the empire's daily business without strain. Permanent record goes to
+  stone and bronze; everything else goes on our own pressed-fiber sheets. We are not strangled
+  by the Nile's embargo and have not been for some decades now.
+- Open questions: how durable is this new order when the First Citizen is gone? What arrangement
+  will hold the legions and the great families together after him? And when will the reckoning
+  with Egypt come — on whose terms, and in what generation?

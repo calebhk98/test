@@ -90,3 +90,27 @@
   carry it safely. It is not ready for any application and the secret remains sealed. What we have
   gained is understanding — not a capability.
 - Posture: hard, ordered, militarist. The regency held the realm firm.
+
+## Update — 30 BC
+- Population: ~50M; the river-valley growth continues. The realm is dense, administered, and producing.
+- Governance: the institutional structure is intact — monopolies, frontier garrisons, disciplined
+  bureaucracy. The court rules; no great internal challenge has arisen.
+- Military: the Xiongnu question is resolved without a new major war. The steppe has fractured: one
+  chief submitted and was received as a tributary-vassal — titled "Great Chief of the Southern Steppe,"
+  bound by Han titles, regular gifts, hostage-sons at our court, and Han officers accompanying his
+  household. He is not free; he is an instrument of our will on the steppe. The northern holdouts, now
+  separated from their southern kin and from the oasis corridor, are isolated and diminished. We did
+  not conquer the steppe; we split it, and the split holds.
+- Diplomatic: the road of envoys to Anxi (Parthia) has deepened into a working partnership. We grow
+  the Silk Road trade through their territory and frame them as the recognized broker westward — they
+  carry our goods onward; we do not press past their lands. Silk and silver flow; the treasury is eased.
+  The arrangement suits both courts.
+- Fiscal: Silk Road revenue has measurably relieved the treasury. The salt and iron monopolies still
+  anchor state finance; now the western trade adds a running supplement. Strain has not vanished, but
+  it is lighter.
+- The burning mixture: the wall-test was deferred — a deliberate choice. Our judgment: any use near
+  soldiers or prisoners, even in a test, risks the secret leaving our hands. What we possess is worth
+  more kept than demonstrated; we cannot yet control the substance, and we cannot afford the knowledge
+  escaping. Study continues quietly, far from the frontier, witnessed only by sworn engineers. No use
+  has been made of it. The secret remains absolute.
+- Posture: hard, ordered, militarist. The realm does not soften. Population ~50M.

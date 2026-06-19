@@ -102,3 +102,26 @@
 - Population ~36M. The empire is whole; the treasury is full; the southern provinces are quiet; Kalinga
   is held. We have turned a generation of stress on the northwest into a stronger wall and a longer
   reach. The next generation will decide what we do with it.
+
+## 30 BC
+- The Yuezhi drove the Saka against us in numbers greater than any prior probe — not raiders testing
+  a seam but a whole people under pressure, leaning on our frontier. We had prepared for this. The
+  pass-works held; the Indus line waited behind them as a second answer we did not need to use.
+- We made a distinction the Saka themselves understood: a chief who came forward disarmed, offered
+  kin into our hands at Pataliputra, and accepted a cantonment inside our frontier under our own
+  officers — that chief was let through and given land and a future. A band that would not bend to
+  those terms found the pass-mouth closed and our wootz foot waiting behind the walls. Several bands
+  learned the answer to that test. Word spread. The pass-mouths became quiet again.
+- Inside our cantonments we have something we have never had before: Saka horsemen under Maurya
+  discipline, armed with our steel, riding with our officers. Their horsemanship is bred into them;
+  our system gives it order. In an open engagement our cavalry is no longer a thing to be hidden
+  from the steppe — it approaches their quality. We have not spent this capability in a great battle;
+  we know only what the drills and the limited skirmishes show. That is not the same as knowing what
+  a hard campaign in open country costs us.
+- We kept our gifts flowing north to the Yuezhi. We said nothing that could be mistaken for a
+  challenge; we said nothing that could be mistaken for submission. We bought horses and let the
+  conduct speak. Whether they regard us with caution or merely with indifference, the result is the
+  same for now: they have not come south themselves. If they do, they will find what the Saka found.
+- The Nile kingdom's trade deepens. The factor writes regularly; the ships are reliable; the revenue
+  grows. Kalinga held. The empire is whole at 37M souls and more capable in the field than it has
+  ever been. We do not let that make us careless.

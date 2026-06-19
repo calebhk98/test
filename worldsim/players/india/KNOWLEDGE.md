@@ -99,3 +99,27 @@ Open questions: none recorded yet.
   are caught between the Yuezhi and us, do the compact chiefs come to us or fight in all directions?
   How long before our cavalry training is truly ready for an open-field test against steppe riders?
 
+## ~30 BC — what we now perceive
+- The Yuezhi pressed the Saka south in force. We now know them well enough to say they are a
+  confederation of great size — how many riders they can field we do not know, but the pressure they
+  applied was sufficient to drive the Saka against our frontier as a mass, not merely in probing bands.
+  We do not know if they are satisfied where they have stopped, or whether they will come further south
+  when the Saka are spent.
+- We dealt with the Saka crisis at the passes as policy, not panic: chiefs who accepted our terms now
+  sit in cantonments with their kin hostages in Pataliputra. Bands that refused were broken. We know
+  the absorbed chiefs serve because the terms are tolerable and because they have no better option;
+  we do not confuse that with loyalty. Their hostages are the loyalty.
+- Our cavalry is a different thing than it was a generation ago. The cantonment Saka ride alongside our
+  own-bred horse under our officers. The blend gives us open-field capability we could not manufacture
+  ourselves. We have not spent this capability in a decisive engagement; we do not yet know how it
+  performs under real pressure.
+- The Yuezhi channel holds: gifts flow, horses come, and they have not moved against us. Whether that
+  reflects strategic indifference, shrewd calculation, or simple distance, we cannot say. We treat the
+  channel as temporary deterrence, not alliance. We have told the Saka chiefs nothing of it.
+- The Nile kingdom: succession appears stable; ships continue to arrive. Our factor writes that their
+  court has its own politics; so long as the trade-lane is profitable to them, we expect the ships to
+  keep coming.
+- Open questions: Will the Yuezhi press further south once the Saka pressure on us eases? Do the
+  cantonment chiefs remain manageable if the Yuezhi offer them a different bargain? How long can we
+  keep the Yuezhi channel secret from the Saka client-chiefs?
+

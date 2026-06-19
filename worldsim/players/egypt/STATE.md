@@ -117,3 +117,24 @@
   mercenary/Macedonian core); no mass native levy. No new wars opened; no new enemies made.
 - The danger has changed shape: Rome is no longer an abstraction across the sea. It is on our
   doorstep. Its next strong man, when he looks east for glory or wealth, will see Egypt first.
+
+## Update — 30 BC
+- Pop ~8.2M. Treasury ~50,000 talents — drawn down from its peak by the crisis years (cold seasons,
+  failed Nile floods ~43 BC brought famine), but the kingdom HELD. No revolt, no rebel pharaoh.
+- The famine was managed by our own machinery: royal granaries opened through nome-governors (NOT
+  the priesthood — the lesson of the Thebaid was not forgotten). Grain bought abroad — Black Sea,
+  Cyprus — with India-trade silver, shipped under naval escort. The hungry were set to paid
+  food-for-work on canals and grain silos. Bread-prices held steady; the treasury absorbed the loss.
+  Egypt endured without breaking.
+- We sold grain commercially to all buyers including the Romans — trade, not tribute, not weakness.
+- India trade: held through the crisis without interruption. Three fleets still sail; the trading-house
+  on the Indian coast stands. Succession secure; nome-governors loyal; native peace maintained.
+- THE GREAT CHANGE: Rome's civil wars are OVER. One man now stands master of the whole Roman world
+  and rules it as a king in all but name, though they do not yet speak the word aloud. Rome is no
+  longer split among competing generals. It is unified, with a single will, a single treasury, and
+  armies stationed on our Syrian border.
+- This is the gravest danger Egypt has ever faced. Every tool that served us before — selling grain
+  to one faction, letting Roman rivals bleed each other — those tools are gone. There is no faction
+  to play against another. There is one Rome, one master, one army looking south.
+- Posture: DEFENSIVE-VIGILANT. Treasury recovering. Military unchanged. We must decide what Egypt's
+  strategy is when the colossus has one head — and that head is already turning to look at the Nile.

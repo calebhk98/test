@@ -110,3 +110,40 @@
   letters, dispatches, and day-to-day administration run on it without difficulty. For records
   meant to outlast a generation we still cut stone or press wax; but for the flow of governance,
   our own paper now serves.
+
+## Update — 30 BC
+- Population: ~5.0M citizens (not counting allied and subject peoples across the wider empire).
+  Veterans of a generation of civil war are settled — land grants in Italy, colonies in the
+  provinces — and their commander has made binding them to the land his first domestic business.
+- Treasury: ENRICHED. The conquest and absorption of Gaul — the whole territory from the Rhine
+  to the Pyrenees — delivered gold, slaves, and tribute revenue not seen since the richest
+  eastern campaigns. The civil wars squandered much of it; the Gallic income replenished the
+  deficit. We are solvent, and the accounts are no longer a source of alarm.
+- Politics: one man rules. He holds no title the old law forbids — not king, not dictator. He
+  is the First Citizen (Princeps), first senator, holder of tribunitial powers and proconsular
+  command over the armies. The Senate still meets; the consulships are still filled each year;
+  the old magistracies run their courses. None of it governs. He governs. The Republic is the
+  form; this is something else beneath the form. We are stable. That is not nothing.
+- Civil wars and their resolution: a generation of great commanders in contest — the conqueror
+  of Gaul against his rivals, then his heirs against each other, then the final reckoning —
+  ended in one survivor. Rivals are now managed by office, honor, and marriage alliance rather
+  than the proscription-list. The sword is sheathed.
+- Military: professional standing legions permanently assigned to frontiers — Rhine, the Danube
+  approaches, the Syrian border. Seasonal armies raised for campaign and then disbanded: finished.
+  Expense is permanent; so is reliability. Loyalty goes to the man who pays and commands.
+- Gaul: wholly Roman. A vast new reserve of land, mineral wealth, agricultural output, and
+  future recruits. The Rhine is the working northern boundary. The interior is pacified and
+  beginning to take on Roman ways.
+- Grain and famine (~43 BC): the cold years and failed harvests brought genuine famine across
+  Italy and the west. We survived by our Ostia granary reserves, our African and Sicilian
+  provincial grain, and — buying on the open market — Egyptian grain. Egypt sold to all who
+  paid. We paid. The new master has made the Ostia public granary system a permanent standing
+  arrangement. Rome will not starve for want of organization.
+- Egypt: not taken. The First Citizen has deferred any move on the Nile. Egypt sold grain in
+  the open market and offered no clean pretext. Our Syrian provincial border runs beside
+  Egyptian-held coastal territory as before. The enmity from 90 BC remains unresolved and
+  unforgiven on either side. Deferred is not settled.
+- Writing and records: our homemade paper (beaten and pressed fiber) now carries the full
+  daily administration of the empire without difficulty. Stone and bronze for permanent record;
+  paper for everything else. Egypt's embargo, which was meant to silence us, made us
+  self-sufficient instead.

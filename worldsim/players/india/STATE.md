@@ -134,3 +134,24 @@
   to grow.
 - Military posture: defensive on the northwest (by design, not weakness), strong in the centre and
   south, cavalry improving. Steel monopoly on the making intact; what we sell is product, not craft.
+
+## Update — 30 BC
+- Population ~37M. Succession stable; Kalinga held.
+- Saka absorption: the Yuezhi drove the Saka hard against our frontier. We did not open the passes to
+  mass bands. We opened them only to CHIEFS who came forward disarmed, surrendered kin as hostages to
+  Pataliputra, and accepted placement in guarded cantonments inside our frontier under our own officers.
+  Bands that would not accept those terms were met at the fortified pass-mouths and broken there. The
+  Indus river-line was not needed but stood ready.
+- Saka client-cavalry: the absorbed chiefs and their horsemen now serve under our command. For the first
+  time our cavalry in the open field approaches steppe-rider quality — their horsemanship is native; our
+  discipline and our steel arm them. The gap with a pure steppe force in open country has narrowed
+  meaningfully, though we still prefer to fight on our own ground.
+- Yuezhi channel: we continued our quiet gifts-and-trade channel with the Yuezhi — "we are not your
+  enemy, we sell and buy." We hold no illusion they are friends or that the channel binds them. If they
+  press south, they will meet the same fortified passes and the same wootz-and-elephant wall that held
+  the Saka. The channel buys time and makes us a less obvious target than our neighbors.
+- Sea-trade: direct commerce with the Nile kingdom deepens; the permanent factor in their ports reports
+  stable succession there and growing volume. Revenue continues to grow.
+- Military posture: defensive on the northwest by design; the passes are the instrument of policy, not
+  a sign of weakness. The cantonment Saka give us a new capability in mobile cavalry we did not have
+  before. Steel monopoly on the making intact; what we sell is product, not craft.

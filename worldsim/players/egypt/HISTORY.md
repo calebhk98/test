@@ -116,3 +116,46 @@
   harvest as they have done for three thousand years and more, and what they plant and harvest comes
   to us as it always has. Egypt endures, and Egypt is rich, and Egypt is watching — for the next
   strong man in Rome will look east, and when he does, it is the Nile he will see first.
+
+## 30 BC
+- The sky turned cold and the Nile did not rise as it should — for two seasons, perhaps more, the
+  flood that is the life of Egypt came low and thin, and the harvest after it was thin also. Famine
+  walked the nomes. We have known famine before; we have not always survived it without breaking.
+  This time, Egypt did not break.
+- We remembered what our grandfathers forgot at Raphia and paid for afterward: the priesthood is not
+  your instrument in a crisis. Give the Amun temples gold in ordinary times and they are glad of it;
+  give them charge of the grain in famine and you have handed them the knife that cuts you. We did
+  not make that gift. The royal granaries were opened through the nome-governors — our appointed men,
+  loyal to the throne, not to the temple. We knew where every bushel went.
+- We sent our ships with India silver to the Black Sea grain-ports and to Cyprus and bought what we
+  needed. The fleets came back loaded under naval escort; no pirate or rival could have that cargo.
+  The hungry of the nomes were put to work — digging canals, repairing silo walls, shoring the dykes
+  against the next poor flood — and they were paid in bread. They had occupation and they had food
+  and they had a government that showed itself in their villages rather than hiding behind temple smoke.
+  No rebel pharaoh was proclaimed in the south; no nome rose; the kingdom did not break apart.
+- The treasury bled for this — from its great height toward fifty thousand talents. We spent what was
+  needed and we do not regret it. A treasury is for exactly such a purpose; the pharaoh who watches
+  his gold while his people starve will find, in the end, that he has neither.
+- Through the famine years we sold grain to all who paid, Romans included. We asked no political price.
+  We sold as merchants sell — for silver, at a fair rate, without kneeling. There is no weakness in
+  this. There is only trade, which is the blood of our prosperity and always has been.
+- And now the news from the west has changed the shape of the world again. Rome's long civil slaughter
+  is at last over. One man stands in the place where many generals stood before, and by all we hear
+  from our agents and our merchants and the travelers who pass through Alexandria's harbor, he stands
+  there alone and very firmly. The competing powers that Rome always kept in balance among themselves —
+  those are gone. He has broken them or outlasted them. He holds the Senate and the legions and
+  the provinces and the grain contracts, all of it, in one hand.
+- We do not know yet what he intends toward Egypt. We know what we are in Roman eyes: the richest
+  kingdom in the world, the breadbasket of the sea, a treasury deeper than any Roman province can
+  match. We know that every ambitious Roman who has ever looked east has looked at us. We know his
+  armies are already on our northern border, that they did not leave when the civil wars ended.
+  They remain. They watch the same border we watch, from the other side.
+- The tools that served us through the long years of Roman faction — selling to one side, letting
+  the other starve, playing rival against rival — those tools are now blunt. You cannot play one Rome
+  against another Rome when there is only one Rome. We must think anew.
+- Egypt endures. The India fleets still sail. The treasury recovers. The kingdom is whole, the
+  succession is settled, the nome-governors are steady, and the people have not revolted. We are
+  not weak. But the weight of what approaches from the north is heavier than anything our grandfathers
+  faced — heavier even than Antiochus, who came for the Nile and went home beaten. Antiochus came
+  alone and weakened. This new master of Rome comes with the whole of the western world behind him,
+  and he is not yet weakened at all.
