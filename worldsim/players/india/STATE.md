@@ -204,3 +204,30 @@
   Western port infrastructure upgraded (military and commercial).
 - Sea-trade: Nile kingdom exports pivot to cloth, ivory, gems, spices (no wootz blades). Volume and
   revenue continue to grow. Factor in Nile ports year-round. Most reliable external relationship.
+
+## Update — 70 AD
+- Population ~42M. Succession stable; Kalinga held. Treasury large.
+- Frontier posture: NW passes held. We did not strike north at the Yuezhi. Their full strength
+  remains unmeasured; the passes remain our strong ground; we stay on it.
+- Yuezhi horse-channel: DISCLOSED to all cantonment chiefs and their second-generation officer-sons
+  in a single combined gathering, on our own framing and our own timing. Went tensely; no mutiny;
+  line held. One or two men whose reactions we read as dangerous are now under quiet surveillance
+  through separate eyes. The channel itself is no longer a secret to be protected from the chiefs;
+  the disclosure is behind us.
+- Steel monopoly TIGHTENED FURTHER: no finished blade exports (unchanged). ADDED: irregular unannounced
+  internal audits of ingot-stocks inside the cantonments, reported to us above the cantonment commanders.
+  Port inspectors remain in place but were never the primary leak risk. The insider risk is now also
+  actively monitored. No systematic shortage detected; the audits serve as deterrence and detection.
+- Cantonment Saka — second generation: most interior-rooted promoted to mid-rank cavalry command.
+  No access granted to intelligence network or steel-craft circle. Intelligence and forge remain Maurya-only.
+- Cavalry: coordination seam between own-bred horse and cantonment-Saka riders PARTLY CLOSED through
+  two to three genuine medium-stakes actions under contested conditions. Gap remains; now narrower. We
+  know which mid-rank officers close it and which widen it.
+- Home horse-breeding program: formally launched. Imperial studs and breeders using best absorbed Saka
+  stock. Ten-year horizon. Objective: reduce annual dependence on Yuezhi horse-purchase so the channel
+  can one day lapse without remount crisis; stop sending silver north to our most likely future enemy.
+- Sea-trade — Nile kingdom: factor upgraded from year-round presence to a FORMAL COMMERCIAL ENVOY with
+  permanent warehouse and multi-season contracts. Bounded commercial entanglement; no political alliance
+  sought or accepted. Presence is now visible and mutual, not merely a visiting merchant's house.
+- Malcontents: one or two flagged individuals identified during the disclosure gathering. Under passive
+  surveillance. Have not moved. Watched continuously.

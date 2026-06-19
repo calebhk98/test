@@ -214,3 +214,35 @@
   and east): DEFERRED until our paper supply there is reliable. Rome itself: critical archives
   being copied onto good paper. Egypt's papyrus bought at steep price for ceremony only. We
   are not dependent on it and do not intend to become so.
+
+## Update — 70 AD
+- Population: ~6.5M (citizens and settled peoples; reckoning from census and provincial rolls).
+  Slow but steady growth under Principate's domestic peace.
+- Treasury: HEALTHY. Gallic and frontier revenue remains the backbone. No great ruinous campaign
+  launched in this generation.
+- Politics: SUCCESSION REFORM PROVEN IN A REAL DEATH-TRANSITION. The Princeps died; the heir
+  — already holding multi-frontier field command and moved into visible co-governance before the
+  death — succeeded without civil war. ONE USURPATION BID was made by a frontier legate, and
+  it COLLAPSED without battle: the lateral road, officer rotation, and a Senate already gathered
+  around the successor contained it. The Principate has now demonstrated what it could only claim
+  before: that power can transfer without the legions tearing the state apart. The managed tension
+  — the heir as the one man exempt from the rotation rule — remains a standing risk, consciously
+  noted.
+- Military — Rhine-Danube arc: HELD. No deep strikes into the forest; no crossing to the
+  northern island (Britain); no expedition against Egypt. Standing policy of incremental fort-
+  advance maintained: one deliberate step forward this generation, anchored and supplied.
+  GERMAN CONFEDERATION: intelligence FIRMED that a paramount chief is consolidating the forest
+  peoples beyond the Rhine. Roman response: divide-and-rule (rival chiefs set against him),
+  client bonds renewed, fort-line advanced one step. No major assault. Decision on the
+  confederation deferred to the future.
+- Auxiliaries: Rhine and Danube client-tribe men continue to be recruited away from home ground,
+  citizenship at discharge. Intelligence watch on home chiefs maintained.
+- Gaul: fully absorbed, revenue solid.
+- Egypt: NOT TAKEN. No pretext used; Delta remains lethal; victorious general would be
+  ungovernable. The old debt (90 BC) on the books as always. Deferred again.
+- Writing and records: UNIFORM FORMAT NOW EXTENDED EAST. Syria and eastern provinces brought
+  into the standardized record format this generation, using locally available material (parchment,
+  local papyrus, our own paper where supply and climate permit). Format is universal; material
+  is locally adapted. REGIONAL FISCAL-INSPECTORS: organized by region, not empire-wide, so no
+  single inspector holds the whole map of Rome's wealth and weakness. Administrative intelligence
+  from the standardized records continues to surface previously hidden gaps and evasions.

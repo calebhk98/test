@@ -314,3 +314,68 @@
   holds. The great families rotate through office and do not build private armies. We have not
   taken Egypt. We have not been swallowed by the forests. By the standard of what has killed
   empires before us, this is a good account to be able to write.
+
+## 70 AD
+- The great test came. The Princeps died. We have written, for two generations now, that the
+  succession mechanism would matter only when it was truly needed — when the man who built the
+  arrangement was gone and the heir had to stand in his own name before the legions, without the
+  founder's living authority at his back. That moment arrived in this generation, and we held.
+
+- We held because we had done the work before the crisis. The heir was not a name in a Senate
+  decree. He was a man the Rhine troops had served under and the Danube troops had marched
+  behind. He had commanded real camps, settled real disputes, moved real forces. When the Princeps
+  died, the soldiers did not ask who this man was. They knew him. And knowing him, they did not
+  look elsewhere.
+
+- One legate looked elsewhere. A man with a good command and a loyal army tested the moment —
+  as men will, when they think the center may be soft. He was not stupid and he was not wrong to
+  test it; in any of the generations before ours, the test would have been the beginning of a civil
+  war. But he faced a prepared heir, not a surprised one. The lateral road we built — Rhine to
+  Danube without transiting Italy — was built exactly for this: a prepared man could concentrate
+  force from more than one frontier faster than a usurper could gather his. The officers along
+  that arc had been rotated, as our rule demands, away from loyalty to any particular commander
+  and toward loyalty to the system. They held the road. The Senate, with the heir's authority
+  already established before them, gathered around the successor rather than wavering. The legate's
+  bid collapsed. There was no battle fought for Rome's soul. The legate submitted. The Principate
+  continued.
+
+- We write this with clear eyes. We did not solve the succession problem. We solved one succession.
+  The heir, who is now First Citizen, is still the one man we allow to build deep army-loyalty by
+  design, and that exemption from the rotation rule remains a managed tension we cannot fully
+  dissolve. What we can say is that the bet paid in this generation: we passed power without the
+  legions tearing the state apart. The last century of Rome could not do that. We did.
+
+- On the Rhine and Danube we held our line and made no rash advances. Our intelligence in this
+  generation firmed what had been rumor before: a paramount chief is drawing the forest peoples
+  beyond the rivers toward a confederation. He is binding clans that have not been bound before.
+  We watched this with care and we did not strike. A great punitive column into the deep forest
+  would find mud, ambush, and the same lesson Rome has paid for before. We answered instead with
+  the slower weapons: rival chiefs set against the paramount man, client bonds renewed and
+  tightened, the fort-line advanced one deliberate step to narrow the ground and signal that Rome
+  does not yield. The confederation is a real concern. It is not yet a storm. We leave the larger
+  decision to whoever commands here when it becomes one.
+
+- On our record-keeping: we pushed the uniform auditable format east at last — into Syria and
+  the further eastern provinces — using whatever writing-material is reliable there. Parchment in
+  the highlands, local papyrus where it is made, our own paper where we can supply it and where
+  the climate serves. The backbone in the west remains our own pressed-fiber sheets. The principle
+  was not to insist on our own material everywhere but to insist on our own format everywhere:
+  one set of headings, one annual return, accounts that a traveling inspector can read without
+  learning each district's private language of record. That inspector we also organized this
+  generation: fiscal-inspectors moving through the provinces, but organized by region rather than
+  empire-wide, so that no single man accumulates the whole map of Rome's wealth and weakness.
+  One man knowing everything is a man too powerful to trust, whether he is an enemy general or
+  one of our own.
+
+- Egypt we left alone. There was no pretext a careful government would use, the Delta remains
+  what it has always been, and a general who took Egypt would take with it the grain-supply of
+  half the empire. That man is not a servant of Rome; he is its master. So the old debt from
+  90 BC sits on the books still, as it has sat in every generation's closing entry, patient as
+  the Nile.
+
+- Population we reckon at near six and a half million. Treasury healthy on Gallic and frontier
+  revenue. The Principate is more stable than it has been at any point in its existence. We hold
+  the Rhine and the Danube. We have passed power once without blood. We have an heir who is a
+  proven ruler. We do not know what the forest confederation becomes. We do not know Egypt's true
+  depth. We do not know what lies east beyond the traders' tales. The account, for this generation,
+  is sound. We write it plainly and leave it for whoever comes next.

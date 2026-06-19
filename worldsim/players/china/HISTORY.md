@@ -221,3 +221,76 @@
 - Population near fifty-three million — the flood checked our growth. Treasury drawn heavily
   by flood relief but solvent under the new fiscal floor rule. The realm is hard, ordered,
   and does not soften.
+
+## 70 AD
+- The northern plain has recovered. Not swiftly, and not without continued effort — the Great
+  River found its new course and we found ours beside it, mapping every bend and elevation,
+  rebuilding dikes where the flood had exposed their weakness, resiting hamlets whose old
+  ground is now river-bottom forever. The labor was continuous and inglorious; it does not
+  appear in the annals the way a campaign appears. Yet it is the labor that holds the realm.
+  The granaries of the north are filling again. The counties that suffered the hardest loss
+  are not yet at their old productive levels, but neither are they a wound still bleeding.
+  The fiscal floor held through every year of the recovery — strained at the bottom,
+  never broken. We judge this the proof of something, and the proof is now permanent
+  doctrine: the floor is not to be touched even in good years, because it is in the bad
+  years that it earns its cost.
+- THE GREAT STEP: in this generation, under conditions of the strictest secrecy we have
+  ever maintained, the five sworn engineers who study the burning mixture set themselves
+  the single question we gave them — the confinement question, the governance of force —
+  and they answered it. Not in theory only. They reached a sound understanding on paper
+  first, sealed the reasoning in the vault before a single trial was lit. Then, in a
+  carefully designed outdoor trial at the remote compound — only two engineers at the
+  perimeter to witness and record, three held safely back from the place of trial, every
+  detail of the arrangement committed to writing and sealed before the moment of ignition
+  — they proved it. A vessel that could be sealed. The burning mixture fired within it.
+  The force did not merely flare outward in all directions as it has always done in the
+  open: it was directed. It went where the design made it go. The bursting vessel threw
+  its force in a governed direction, and what stood in that direction was shattered with
+  a power no arm can match. We did this once, and we recorded everything.
+- The council looked at what the engineers had done and made two decisions without debate.
+  First: we will not build this thing for use in the field. Not yet, not in haste. A
+  half-mastered thing put into soldiers' hands reveals the secret to every enemy who
+  captures one, and starts a race we win only if we are very far ahead. We are ahead now
+  because no foreign soul suspects the vessel exists; we remain ahead only so long as
+  we do not spend that advantage carelessly. The thing proven once, recorded, and held
+  is worth more than a hundred things built in haste and lost. Second: knowledge held
+  by only five old men can die. We have begun quietly training a younger engineer —
+  chosen with every care for silence and loyalty — in the foundational reasoning of
+  the work, so that when the five old men cease to be, the knowledge does not cease
+  with them. He does not yet know everything; but he knows enough to know where the
+  vault's contents begin, and his formation is ours from the root.
+- We also, this generation, added a second sealed vault. The flood taught us that one
+  vault in one place can be lost — to water, to fire, to the single disaster that finds
+  the single repository. The full written account of the bursting-vessel study now rests
+  in two separate places, each separately guarded, each known to a different pair of
+  officials who do not share patronage. The knowledge cannot now be destroyed by any
+  single act of fate or malice. This is the same lesson the granary policy taught us,
+  applied to the most dangerous thing we possess.
+- The leashed southern steppe chief died this generation. We had prepared for this. His
+  sons had been held at our court for years — raised partly among us, given titles and
+  roles and the pleasures of the capital, none of them discarded, none openly preferred.
+  The ambiguity we maintained was our instrument. When the chief died, we confirmed the
+  son most deeply bound to us — Han title granted, rich gifts dispatched, our own officers
+  placed at his side from the first day of his authority, and his sons now installed as
+  honored guests in our capital, as his own father's sons once were. The handover was
+  smooth. No son fled northward. No scramble erupted among the northern remnants. The
+  leash passed cleanly from father to son, and we held the other end throughout. We regard
+  this as the tributary model proving itself under the hardest test: succession, which is
+  always the moment when instruments break. It did not break.
+- This generation our effort to build an account of the far west outside Parthian hands
+  bore its first genuine fruit, however faint. From independent travelers — merchants
+  who move routes the Parthian brokers do not control, wanderers who passed through
+  the far western lands by routes we are only beginning to trace — we have now heard,
+  repeatedly and from sources who do not know one another, of a great and wealthy state
+  at the farthest end of the western roads. It is beyond Anxi. It is not Anxi. It is not
+  Dayuan. It is something else entire — large, it is said, wealthy, organized, powerful.
+  We do not know its name. We do not know its true size. We do not know its people's
+  nature or their weapons or their posture toward others. We know only that it is there,
+  and that Anxi stands between us and it and has never chosen to describe it as anything
+  requiring our attention. That silence, now exposed, tells us more about Anxi than any
+  account they ever gave us. The broker who never mentioned the client is protecting
+  something. We hold the rumor of this great western state as a question we have barely
+  begun to ask, and we will ask it more insistently in the years ahead.
+- Population near fifty-five million. The recovery is real, the growth resumed. Treasury
+  solvent under the fiscal floor — not comfortable, but unbroken, which is what the floor
+  was designed to be. The realm is hard, ordered, militarist. It does not soften.

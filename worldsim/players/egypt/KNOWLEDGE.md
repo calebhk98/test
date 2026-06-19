@@ -206,3 +206,51 @@ Open questions: none recorded yet.
   (Anxi/Parthia) have the military depth to genuinely threaten Rome's eastern flank, or is it a name
   and no more? How far does India run, and are there further kingdoms to its east with whom a
   connection might one day be useful? What will the next generation of Roman succession bring?
+
+## ~70 AD — what we now perceive
+- ROME'S PAPER — ORIGIN NOW KNOWN: We have learned at last, through a Museum scholar sent west
+  under cover of the Library's general survey of foreign crafts, what Rome's coarser writing-
+  material is and — more stingingly — why it exists. It is made from beaten rag and plant-fiber,
+  pressed and dried. It is not costly, it is not rare, and it is in wide use. More: the Romans
+  speak openly of why they make it — because a century ago, when we closed our papyrus to them,
+  they were driven by need to devise their own substitute. Our embargo was the direct mother of
+  Rome's paper. Rome has not been hostage to the Nile's reed for a generation and more. The
+  papyrus lever is not gone — we still set the price, we still supply what they choose to buy
+  from us, we still retain the formal power to close the bales — but the lever is far softer than
+  we believed. Rome can write without us. It has been able to for some time. We did not know this.
+  We know it now.
+- THE EASTERN SHADOW — DEPTH NOW KNOWN TO BE SHALLOW: Testing our Nabataean channel revealed that
+  our messages over these many years were carried only in part, and never reached any man of real
+  authority in the eastern kingdom (Anxi/Parthia). The deniable contact we have described in our
+  records as a lever held in reserve is, in truth, mostly hollow. Some thread exists — some awareness,
+  somewhere at low levels, that Egypt has signaled a readiness to hear — but we have no true channel,
+  no firm relationship, no real counterweight primed and waiting. We keep the thread alive because it
+  costs nothing and because a thread may in some future moment be made useful. But we no longer
+  deceive ourselves: it is not protection. It is a whisper addressed to no one we can name.
+- ROME'S MASTER — STILL NOT MOVED: Whoever holds Rome's mastery now — the office has turned at least
+  once or more across this generation, and our word of Roman affairs comes through merchants and
+  travelers and is often stale — has not marched on us. His armies remain in the Syrian territories
+  on our northern border, as they have remained for a generation. Whether this reflects a settled
+  calculation that Egypt sovereign is worth more than Egypt conquered, or whether it is patience
+  and waiting for a moment not yet arrived, we do not know. We believe our posture of useful-and-
+  costly continues to shape the calculation on the Roman side. We cannot see into that court.
+- THE ENDURING FEAR: Our strategy rests on Rome's master being a man who reckons in terms of profit
+  and cost. A reckless master, or a frightened one, or one hungry for the kind of glory that profit-
+  calculation cannot provide — such a man could override every argument that has served us this far.
+  This fear has not diminished. If anything, each generation that passes with Rome unifying under
+  a single will makes the danger of a single bad succession more acute. We cannot govern Rome's
+  succession. We can only continue to raise the cost of taking us, and to remain useful enough
+  that a calculating man has no motive to try.
+- INDIA EAST: The Indian merchants at our factor-house speak with increasing frequency and some
+  consistency of great kingdoms further east — beyond the peninsula, beyond the waters our pilots
+  have sailed. We do not know these lands by any name we trust. We do not know their size, their
+  wealth, or their politics. We know only that eastern India itself reaches further than we have
+  gone, and that beyond it there are more peoples and more trade. We are not ready to risk a fleet
+  into unknown seas. We listen and we record. The knowledge accumulates.
+- Open questions: Will Rome's current master, or the next one, remain a man who reckons coolly?
+  A single reckless succession in Rome is the one danger our posture cannot fully answer. Can
+  the Nabataean eastern thread ever be made into something real, or will it remain a hollow comfort?
+  What lies east of India's great peninsula — are there kingdoms there with whom a connection
+  might one day extend our reach and our options? How many more generations can we hold sovereign
+  before some shift in the Roman court, or some failure of our own, opens the gate we have kept
+  shut for so long?

@@ -184,3 +184,68 @@ Open questions:
   lock; it is not invulnerable.
 - What is the full extent of the Great River's new course, and how long before the northern
   plain counties recover to their prior productive capacity?
+
+## ~70 AD — what we now perceive
+- The Great River's new course is mapped and managed. The northern plain is in recovery —
+  genuine, measurable, not yet complete but no longer catastrophic. The fiscal floor held
+  without exception throughout. We know now that the floor is the instrument that converts
+  catastrophe into recoverable hardship; this knowledge is paid for and will not be given up.
+- THE BURSTING VESSEL: we now possess something we did not possess before this generation —
+  not only the understanding that the burning mixture can strike with governed force, but the
+  proof that a vessel can be sealed around it and made to throw that force in a chosen
+  direction with real shattering power. We have done this once, in one carefully designed
+  trial, with all reasoning sealed and recorded beforehand. We know it can be done. We do not
+  yet know how to make it reliable across many trials, how to make it safe to carry among
+  soldiers, how to build it in quantity without revealing what it is, or how to use it on a
+  field of battle without the secret passing immediately to any enemy who captures one. We
+  are aware that "proven once" and "ready to field" are separated by a distance we have not
+  yet walked. Our deliberate restraint is not weakness; it is the same judgment we have always
+  made: the secret held is worth more than the half-mastered thing spent.
+- Two sealed vaults now hold the full account. We regard this redundancy as essential after
+  the flood proved that a single place can be lost. The knowledge is now materially safer
+  than it was.
+- A younger apprentice is in formation. The five old engineers will not live forever; we have
+  now closed the gap through which the entire study could vanish at once. The knowledge has
+  continuity it did not have before. We know this, and we know it is not yet sufficient —
+  one apprentice is one point of failure, and we will need to think about the generation after.
+- THE STEPPE TRIBUTARY MODEL: we have now seen it hold through a succession — the hardest
+  test for any arrangement built on personal dependency. It held because we had built the
+  dependency into the structure, not only into the person: the sons were ours before the
+  father died; the officers were placed before the transition; the titles and gifts were
+  given to the successor from the first moment, not after a test of his loyalty. We did not
+  inherit a problem; we managed a delivery. The model is confirmed as durable, not merely
+  workable in favorable conditions.
+- THE GREAT WESTERN STATE — RUMOR CONFIRMED BY INDEPENDENT SOURCES: we now know, from
+  sources outside Anxi's patronage who do not know one another and have reached us by
+  different routes, that there is a great and wealthy state at the far end of the western
+  roads, beyond Anxi. We do not know its name. We do not know whether it is one state or
+  a confederation. We do not know its military posture, its population, its governing form,
+  or whether it knows of us. We know that it exists, that traders who have moved near its
+  edges speak of wealth and size and order, and that Anxi has consistently failed to describe
+  it in any terms that would motivate us to seek direct contact. Anxi's silence about this
+  power is not accident; it is policy. Anxi profits from being the sole broker between two
+  great civilizations that do not know each other. We understand this now. We will continue
+  to build our own account.
+- Anxi itself: we still regard them as a reliable and productive partner on the Silk Road.
+  We do not intend to rupture the arrangement. But we no longer regard their account of
+  the western world as complete or disinterested. We hold it with the skepticism a prudent
+  court applies to intelligence from a broker who profits from your ignorance.
+
+Open questions:
+- How to make the bursting vessel reliable, repeatable, and safe enough to carry — across
+  many trials, not one? (The confinement is proven; the mastery is not.)
+- How to eventually field the bursting vessel without the secret passing immediately to any
+  enemy who captures or examines one? (We do not yet have an answer and we do not pretend
+  to. The fielding question is separate from the proving question.)
+- When should we begin training a second apprentice, and how many carriers of the knowledge
+  is the right number before we have too many to guard?
+- What is the great western state beyond Anxi — its name, its true size, its nature, its
+  posture, and whether it knows of us? (Independent inquiry ongoing; no complete answer.)
+- Can we find a way to reach the great western state directly, without passing through
+  Anxi's territory or giving Anxi cause to block the road? (No route yet known.)
+- Will the new southern steppe chief, raised partly at our court, hold the tributary
+  arrangement into the second generation of his reign when the habits of his formation
+  begin to be tested by his own sons' ambitions and his own household's interests?
+- Can the three-body confirmation council resist capture across a very long patient game
+  by a great household? (Unchanged from prior — the lock is stronger than it was; it is
+  not invulnerable.)

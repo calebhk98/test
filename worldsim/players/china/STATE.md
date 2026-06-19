@@ -178,3 +178,48 @@
   of the western world. This is nascent — slow work, few sources, languages still being
   interpreted. No direct contact with far-western powers yet.
 - Posture: hard, ordered, militarist. The realm does not soften. Population ~53M.
+
+## Update — 70 AD
+- Population: ~55M; recovery from the Great River flood complete, growth resumed. Northern
+  plain counties functional and filling their granaries again. Not yet at pre-flood peak
+  productive levels but no longer a wound on the treasury.
+- Governance: fiscal floor held without exception through the entire flood recovery. The
+  floor — two full years of essential costs from salt, iron, and land taxes alone — is
+  now permanent doctrine embedded in the governing standard by which ministers are judged.
+  No softening, no exception, no revision even in hard years.
+- Military: no new northern offensive. The northern Xiongnu remnants remain isolated and
+  diminished. Garrison-farmer system in the western oasis corridor continues self-sustaining.
+  Patient permanence on the frontier.
+- STEPPE SUCCESSION: the southern steppe chief died this generation; succession handled
+  cleanly. The son most bound to us was confirmed — Han title, rich gifts, our officers
+  placed at his side from the first day, his own sons now installed as honored guests at
+  the capital. No son fled north; no scramble arose. The tributary leash passed from father
+  to son without slipping. The managed-ambiguity succession model proved itself in the
+  hardest test.
+- THE BURSTING VESSEL — PROVEN ONCE, RECORDED, NOT FIELDED:
+  -- The five sworn engineers answered the confinement question this generation.
+  -- A sealed vessel, the burning mixture fired within it, threw its force in a governed
+     direction with real shattering power. Proven in one carefully designed outdoor trial
+     at the remote compound (two engineers at perimeter; three held back safely; all
+     reasoning sealed in vault beforehand).
+  -- Everything recorded. Nothing built for field use. No army has it; no soldier has
+     seen it; no foreign power suspects it exists.
+  -- Council judgment: secret held is worth more than half-mastered thing fielded in haste.
+  -- SECOND SEALED VAULT added at a separate location — the flood taught us one vault can
+     be lost. Full written account of the study now held in two places, each separately
+     guarded, each known to different officials under different patronage.
+  -- YOUNGER APPRENTICE ENGINEER now in quiet training — chosen for silence and loyalty,
+     formed from the root by us, learning the foundational reasoning so the knowledge
+     cannot die when the five old engineers die. Does not yet hold the full account.
+  -- Status: five sworn engineers + one younger apprentice in training; two sealed vaults;
+     no field weapon; no foreign awareness; secret absolute.
+- Diplomatic: Anxi (Parthia) broker-partnership on Silk Road continues and produces
+  revenue. INDEPENDENT WESTERN INTELLIGENCE effort now bearing first fruit: from independent
+  travelers outside Parthian patronage, we now hear repeatedly of a GREAT WEALTHY STATE at
+  the far western end of the trade roads, beyond Anxi. Its name, true size, nature, and
+  posture are unknown to us. Anxi has never described it in terms requiring our attention —
+  that silence is itself intelligence about Anxi's interests. We hold Anxi's account of the
+  far west with deepened skepticism and will press the independent inquiry further.
+- Fiscal: treasury solvent under the fiscal floor rule. Not comfortable; unbroken.
+  Silk Road silver supplement continues. Salt, iron, and land taxes remain the foundation.
+- Posture: hard, ordered, militarist. The realm does not soften. Population ~55M.

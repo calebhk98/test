@@ -203,3 +203,40 @@
 - Succession: secure. Nome-governors loyal and watchful. Priesthood patronized. Native peace held.
 - Posture: USEFUL-AND-COSTLY — sovereign, hardened, fleet quietly improved, India route hardened
   against single-point failure, silos doubled, eastern shadow primed. Watching Rome without provocation.
+
+## Update — 70 AD
+- Pop ~9.0M. Treasury RECOVERING — climbing steadily; healthy net surplus. Harvests full; Nile
+  floods regular. The kingdom is whole and solvent.
+- Grand strategy — USEFUL-AND-COSTLY: unchanged. Rome has not marched; we have not provoked.
+  We continue to feed Rome's capital and enrich Rome's merchant class through the India trade.
+  No new treaty sought with Rome; no formal declaration of any kind. Sovereign and silent.
+- Papyrus lever: NOW KNOWN TO BE DECAYED. Our Museum scholar's survey has revealed the truth:
+  Rome's paper is made from beaten rag and plant-fiber, pressed and dried. Its origin was our
+  own embargo of a century ago — we forced them to devise their own substitute, and they have
+  not needed our papyrus since. We will NOT drop our price to undercut Rome's paper (it would
+  announce our weakness and surrender revenue). We will NOT seek a formal treaty. We continue
+  to sell at managed price, retain the formal power to close the bales, and say nothing. The
+  lever is held but we no longer pretend it bites as it once did.
+- Parthia/Anxi shadow contact: NOW KNOWN TO BE MOSTLY HOLLOW. Testing through the Nabataeans
+  revealed that our messages over these many years were only partly carried, and never reached
+  any Parthian man of real authority. We keep the thread — it costs almost nothing — but we
+  no longer count it as a true lever or a real protection. It is a whisper, not a weapon.
+- Navy: QUIETLY UPGRADED. Count near ~300 hulls maintained. Old and weak vessels retired and
+  replaced with better-built ships over the past two generations of quiet renewal. Effective
+  fighting capacity exceeds what the raw count reveals. Cyprus harbor maintained. Eastern Med
+  lanes held. No announcement made.
+- Sinai and Delta works: HARDENED AND MAINTAINED. Continued tending this generation.
+- India trade: ONGOING AND DEEPENING. Three fleets on the monsoon road; factor-house on the
+  Indian coast well-established across multiple generations of staff. India customs remain the
+  largest single income line. Intelligence on kingdoms further east (beyond India's peninsula)
+  accumulating through Indian merchants at the factor-house — not yet sufficient to risk a fleet
+  into unknown waters, but growing.
+- Heir: second ceremonial progress through the Nile nomes completed. Egyptian forms honored;
+  nome-governors present; no rival claim emerged. No weapons distributed.
+- Meroe iron treaty: HOLDING. Nabataean arrangement: HOLDING.
+- Army: ~50k mercenary/Macedonian core. No mass native levy.
+- Succession: secure. Nome-governors loyal. Priesthood patronized. Native peace maintained.
+- Posture: USEFUL-AND-COSTLY — sovereign, fleet quietly upgraded, papyrus lever known to be
+  weaker than believed, eastern shadow known to be mostly hollow, India-east intelligence
+  gathering ongoing. Soberer about the true state of our levers; firm in our fundamental
+  posture. Watching Rome without provocation.

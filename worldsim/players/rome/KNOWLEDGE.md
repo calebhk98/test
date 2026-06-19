@@ -165,3 +165,56 @@ Open questions: none recorded yet.
   but their exposed coastal territories? What is organizing, if anything, in the deep forest
   beyond the rivers? And when will the eastern trade-routes become known to us directly, not
   only through what Egypt chooses to let pass?
+
+## 70 AD — what we now perceive
+- The succession mechanism has been tested in the one way it could not be tested by design: a
+  real death, a real transition, a real moment of temptation. We know now — not by argument but
+  by experience — that the mechanism worked this once. We know also that it worked because every
+  component was in place: a publicly confirmed heir who had multi-frontier field credibility,
+  officers rotated away from personal bonds to any single commander, a lateral road that made
+  concentration of force faster than the usurper's gathering. Remove any of those and the
+  calculation changes. This generation we held. The next generation will face the test again,
+  and the generation after that, and it will never be permanently solved — only repeatedly won.
+  We know this now in a way we only suspected before.
+- The German confederation is our clearest open threat at the frontier. We know from firmed
+  intelligence — officers' reports, intercepted traders, accounts of returned auxiliary men
+  with kin beyond the river — that a paramount chief has been drawing clans together that
+  have not been bound together before. We do not know his numbers. We do not know whether his
+  confederation is durable or a single man's momentum that will dissolve with him. We have
+  set rival chiefs against him and renewed client bonds with those who are willing; we believe
+  this has slowed him and divided his resources. We cannot confirm it. The forest still swallows
+  knowledge. What we can say is that the confederation is real, that it is growing, and that
+  the ground beyond our fort-line is more organized than it was a generation ago. This is the
+  looming threat we cannot yet face directly and are not certain we could meet with a deep strike
+  even if we chose to.
+- Egypt: our knowledge has not materially improved, and we are honest about that. We watch
+  its ports by merchant-intelligence; we observe prices and cargoes and the movement of grain
+  ships. We know Egypt is stable and prosperous. We know its grain still flows to all buyers
+  who bring silver. We know it has not moved toward our Syrian ground. We know its fleet
+  patrols its own waters and we believe it could contest the eastern sea against any force we
+  could presently send. What we do not know — and what a careful man must hold in mind when
+  anyone proposes action toward the Nile — is the true depth of its treasury, the real
+  readiness of its land forces, and whether there are fractures inside its governing court
+  that a patient adversary could widen. We have no agents inside. We have the marketplace,
+  which does not see intentions. Egypt's strength in its own waters is proven against Roman
+  arms from 90 BC. What it is capable of across a Syrian land frontier is a question we have
+  not yet had cause to answer. We do not know. We write that plainly.
+- The eastern world beyond Egypt and the Parthians: still rumor and merchants' tales, as it
+  has been at every closing of these records. Egypt's trade to the east continues; the goods
+  come westward; we hear of great kingdoms of enormous wealth and population that lie in that
+  direction and which Egypt reaches by its sea-roads while we see only the tail end of the
+  cargo at Alexandria's docks. We have no first-hand account we trust. This remains an
+  asymmetry we cannot correct while Egypt sits between us and those roads.
+- Our own records, now standardized east and west, continue to show us things about ourselves
+  that the old patchwork concealed. The regional inspector system is young; we do not yet know
+  how faithfully local clerks will keep the format when no inspector is present. This is the
+  same uncertainty we noted when we began the standardization in the west; the answer there,
+  over time, was that the format held where the annual return was enforced and lapsed where it
+  was not. We expect the same pattern in the east and will address it by the same means.
+- Open questions: how durable is the German confederation, and what does it become if the
+  paramount chief is not divided from his followers? What would it cost to face that
+  confederation in a generation when it is larger and more practiced? What is Egypt's true
+  military strength against a land approach through Syria — not the Delta, but the ground
+  our Syrian legions actually border? When will the eastern world become known to us directly,
+  not only through Egypt's road and Egypt's prices? And can the succession mechanism be won
+  a second time, by a different heir, in circumstances we have not yet imagined?

@@ -295,3 +295,67 @@
 - Population stands near eight million and seven hundred thousand by the nome-governors' count.
   The kingdom is whole, the succession is settled, the fleet is sharp, the granaries are full,
   and the Nile rises as it always has. Egypt endures.
+
+## 70 AD
+- This generation has brought us two truths we did not wish to learn, and one task we have carried
+  through with quiet care. We set them down here without flattery, because a court that flatters
+  itself in its own records will one day believe its flattery and act on it, and that is the road
+  to ruin.
+- The first truth — about Rome's paper — came from the Museum scholar we sent west on the broadest
+  of pretexts: a survey of foreign crafts and materials for the Library's catalogue, framed as
+  scholarly curiosity, drawing no suspicion from any Roman ear. He came home and gave us his report,
+  and the report stung as badly as any defeat in the field. Rome's coarser writing-material is made
+  from beaten rag and plant-fiber, pressed together, dried, and cut into sheets. That much we had
+  long suspected in its general form. What we had not known — what no agent, no merchant, no
+  traveling scholar had ever brought back clearly enough for us to believe — is WHY Rome makes it,
+  and WHEN, and what drove the making. Rome's craftsmen themselves speak of it openly, even with a
+  kind of pride: a century ago, they say, when their papyrus from the Nile was shut off, they were
+  compelled to find another way. And they found it. And they have not needed the Nile's reed since.
+- Let that sit in the record plainly. Our embargo of ninety years ago — the weapon we leveled at
+  Rome's ability to write and record and govern and remember — was the very thing that drove them
+  to devise their own substitute. We closed the bales to punish and to wound, and what we produced
+  instead was a Rome that can write without us. The lever we have metered and held and flexed
+  carefully for a hundred years is far softer than we believed. Rome is not hostage to our papyrus.
+  It has not been hostage for a generation and more. We have been managing a weapon whose edge
+  had already rusted through while we polished the hilt. This is a bitter thing to write, and it
+  is the truth, and it must stand in these records beside our other truths.
+- We will not drop our price to undercut Rome's paper and recapture their scribes. That road runs
+  downhill to nothing — it would announce to Rome that we know our lever is gone, hand them
+  satisfaction, and lose us the revenue besides. We will not seek any formal treaty with Rome to
+  repair what has decayed. A treaty on paper between Egypt and Rome in this age is a collar placed
+  with ceremony. We hold our posture: open to Rome's merchants, costly to Rome's generals, sovereign
+  in our own house, explaining ourselves to no one.
+- The second truth — about the eastern shadow — came more quietly but cut nearly as deep. We tested
+  our thread through the Nabataeans, pressing to learn what had actually passed through their hands
+  across these many years of patient deniable contact with the great kingdom beyond Rome's marches.
+  The answer is deflating: our messages were only ever partly carried. What was carried reached no
+  man of real authority. The "lever held in reserve" that we have written of in these records as a
+  counterweight against Rome is, if we are honest, mostly hollow. Some thread exists — the
+  Nabataeans know of it, and perhaps some minor functionary at the eastern end has heard a whisper
+  of it — but we have built no true channel, established no true readiness, primed no eastern power
+  to act on our behalf. We keep the thread. It costs almost nothing to keep it, and perhaps in some
+  future crisis a thread can be made into a rope by a man with the right hands and the right moment.
+  But we will not write of it again in these records as though it is a protection we possess. It is
+  not. We know that now.
+- What we have done steadily and well this generation, and what must be credited alongside the
+  discomforts: the quiet navy work continues. Our count near three hundred hulls holds where Roman
+  eyes might number it; the vessels that fill that count are better hulls than the ones we retired.
+  The Sinai and Delta positions have been tended and hardened. Our factor-house at the Indian port
+  gathers information as well as cargo — and the Indian merchants who pass through it speak with
+  growing clarity of kingdoms further east, rich ones, beyond the great peninsula. We are not yet
+  ready to send a fleet into unknown waters, but we are building the knowledge that a future fleet
+  would need. We listen, and we write down what we hear, and we do not yet risk what we cannot
+  afford to lose.
+- The heir went again through the Nile nomes — the second such progress, the second sober
+  reminder to every governor along the river that the throne still sees them, names them,
+  requires them. The Egyptian forms were honored; the priests received him at their doors;
+  no rival voice was raised. We did not arm a single farmer. We will not. The Thebaid is not
+  a lesson that needs learning twice.
+- Population stands near nine million by the nome-governors' count. The treasury recovers and
+  climbs. We are rich and sovereign and unswallowed. We are also soberer than we were. Two of
+  the levers we believed we held have proved soft in our hands this generation. We hold our
+  posture not because the old weapons are as sharp as we imagined, but because the posture
+  itself is sound: a Egypt that feeds Rome, enriches Rome's merchants, and costs blood to
+  conquer is worth more left alone than taken. That calculation is the one thing we did not
+  lose this generation. We did not lose Egypt. The Nile rises; the monsoon returns; the
+  kingdom endures.

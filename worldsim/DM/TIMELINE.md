@@ -505,3 +505,107 @@ Roman Asia**.
   tightened, cavalry now battle-tested (imperfect but real), second-gen Saka integration begun.
 
 World date → 35 AD.
+
+## 35–70 AD — Turn 11 (all four live; full real loop; THREE milestone outcomes)
+Defend round run live (4 Sonnet agents). All four rejected their planted bad ideas and adopted
+real revisions. No curated natural disaster falls in this window. Three milestones resolve:
+China crosses a tech threshold; Rome's succession reform survives its first real death-transition;
+Egypt finally learns the truth about Roman paper.
+
+- **CHINA — ★the burning mixture crosses from "strikes" to a PROVEN DIRECTED-FORCE BURSTING VESSEL
+  (still absolute secret, NOT fielded).** No northern campaign (rejected ending the steppe with the
+  powder — a half-understood weapon fielded in haste only spends the secret for no decisive gain;
+  rejected destroying the records — "the records ARE the restraint"). The five sworn engineers, given
+  ~20 yrs directed at the single confinement/force-direction question, reached a SOLID THEORY (~50 AD)
+  and conducted the ONE permitted controlled outdoor test (~52 AD) under the revised safety protocol
+  (≤2 engineers at the perimeter, 3 sequestered, full theory vaulted before ignition): **it SUCCEEDED
+  — a vessel that bursts and throws its force in a governed direction.** [This is the long-promised
+  COMPOUNDING: a century of saltpeter-study → a working bursting device, emergent via directed study,
+  never teleologically aimed.] Per doctrine, China BUILT NOTHING for field use — recorded everything,
+  added a second geographically-separate sealed vault, and instituted engineer age-succession (vet a
+  younger apprentice before an elder dies) so the knowledge can't die with five old men. Hardened the
+  steppe handover: when the old southern chief died this generation, the managed-ambiguity protocol
+  worked — all sons were at court, the new chief was confirmed on Han terms (title, gifts, embedded
+  officers, next-gen hostages), no scramble, no defection north. Completed flood-recovery / mapped the
+  river's new course, held the fiscal floor (tight but unbreached; recovery pace the adjustable item).
+  Independent (non-Anxi) western intelligence yielded its first fruit: faint, triangulated rumor of a
+  GREAT STATE at the far-western end of the trade beyond Anxi — China does not know it as "Rome," only
+  as a large wealthy power the Parthians broker for and would rather it not meet directly. Militarist,
+  consolidated, not softening.
+- **ROME — ★the succession reform SURVIVES its first real death-transition (a major divergence from
+  OTL's bloody Julio-Claudian successions).** The aging Princeps died this generation; because the
+  confirmed heir already held current field command across multiple frontiers and had been moved into
+  visible co-governance, **the accession arrived as continuity, not crisis.** One frontier legate tested
+  the moment (tempted at the transition) — but faced a prepared heir who could concentrate forces along
+  the lateral Rhine-Danube road, officers rotated away from personal loyalty, and the Senate already
+  assembled around the successor: the bid collapsed WITHOUT civil war. (Rome candidly holds this as a
+  bet that paid, not a solved problem — the heir-exemption from rotation remains a managed tension,
+  mitigated by scheduled inter-frontier rotation + early co-governance.) Held the Rhine/Danube line
+  (rejected the deep forest-strike and Britain both). Intelligence FIRMED that a paramount chief is
+  consolidating a confederation in the deep forest beyond the Rhine — Rome answered NOT with a strike
+  but with client-chief manipulation (setting rivals against the paramount man) + one deliberate
+  incremental fort-advance, deferring the larger decision. Separated the paper question from the format
+  question (a real revision): pushed the audit-FORMAT standardization east on whatever material is
+  locally reliable (parchment/local papyrus/home paper), keeping home paper the western backbone.
+  Regionalized the new fiscal-inspector corps (no single man holds the whole imperial map). Egypt left
+  strictly alone; the Delta debt stays on the books.
+- **EGYPT — ★learns the TRUTH about Roman paper: its own century-old embargo birthed Rome's
+  independence, and its papyrus lever has been structurally decaying ever since.** The Museum scholar
+  (re-briefed to a broad material-arts survey so the inquiry drew no notice) reached Rome, obtained a
+  sample, AND learned what Romans say openly and proudly: Rome began beating rag/flax/bast fiber into
+  its own writing-material generations ago BECAUSE EGYPT CUT OFF THE PAPYRUS (~90 BC). **Egypt now
+  understands the irony it never saw — its embargo was the mother of Rome's paper, and the lever it has
+  carefully metered for a century is far weaker than it hoped** (Rome is no longer hostage to the Nile
+  and hasn't been for generations). A sobering strategic correction, privately held. Tested the Parthia
+  shadow via the Nabataeans and got an honest, deflating answer: the message was only ever partially
+  relayed and reached no Parthian authority of weight — the "shadow lever" is more hollow than the court
+  had told itself (kept alive at near-zero cost, but no longer mistaken for real deterrence). Held the
+  useful-and-costly posture (rejected undercutting papyrus, rejected a formal Roman treaty — "friend of
+  Rome" means client). Continued the quiet navy retire-and-replace upgrade (~300 better hulls), hardened
+  Sinai/Delta, doubled-down on patient intelligence-gathering about the kingdoms east of India (no
+  premature fleet), ran the heir's second nome tour (royal face, no arming — the Thebaid distinction
+  held). Treasury recovering. Independent, rich — but newly aware two of its prized levers (papyrus,
+  Parthia) are softer than believed.
+- **INDIA — ★discloses the secret Yuezhi channel to the cantonment Saka and KEEPS them.** Held the NW
+  passes (rejected the open-field strike north — the Yuezhi ceiling is still unmeasured and the cavalry
+  seam still open). Executed the planned DISCLOSURE (~52 AD): told the first-generation chiefs and the
+  second-generation officers together, in one room, on Maurya framing ("we buy horses from whoever
+  sells; it was never aimed at you"), with kin-hostages named in the same breath and a quiet thickening
+  of regular Maurya foot pre-positioned in the cantonment districts under administrative cover. **It went
+  tensely but HELD — grumbling, no mutiny;** one or two malcontents flagged and watched, the chiefs'
+  calculation (hostages + interior land/pay/rank + no better option) held the line. Promoted the most
+  interior-rooted second-gen Saka to mid-rank cavalry command (no intel/steel-circle access). Ran 2-3
+  controlled calibrations that partly closed the own-bred/Saka coordination seam. Added internal
+  cantonment ingot-audits (the real leak risk) atop port steel-inspectors; kept NO finished-blade
+  exports. Began a deliberate home-breeding expansion to reduce Yuezhi horse-dependence over ~20 yrs so
+  the channel can be let lapse cleanly later. Upgraded the Nile factor to a formal commercial envoy
+  (warehouse, multi-season contracts) — accepting bounded commercial, not political, entanglement.
+  Arthashastra apparatus kept vigilant.
+
+### Cross-developments
+- **China:** now holds a PROVEN secret bursting-device (built nothing, told no one) — the single
+  largest hidden capability gap in the world — and has its first faint rumor of a great far-western
+  state (Rome, unrecognized as such). Steppe handover survived; flood recovered.
+- **Rome:** solved (for now) the death-transition that wrecked the OTL Principate — a clean dynastic
+  succession with no civil war; a German forest confederation is consolidating as the next-generation
+  threat, managed for now by divide-and-rule + an incremental fort step.
+- **Egypt ↔ Rome:** Egypt finally KNOWS Roman paper's origin and that its papyrus lever is decayed —
+  a private strategic awakening; Rome remains an untouched cold rival, now internally more stable than
+  ever. Egypt also learns its Parthia shadow is largely hollow.
+- **Egypt ↔ India:** trade formalized further (Egyptian envoy-house ↔ Indian commercial envoy); both
+  still guarding crown secrets (India: no blades; Egypt: hardening quietly).
+- **India ↔ Yuezhi:** the channel is now OPENLY known inside India's frontier system (disclosed) yet
+  survived; India begins weaning itself off Yuezhi horses. The Yuezhi remain an unmeasured looming mass.
+- Still NO direct China↔(Egypt/Rome/India) contact — but for the first time rumor crosses the gap
+  (China hears of a western great power; the Parthians actively broker to keep east and west apart).
+
+### Fiscal/pop @70 AD
+- Egypt ~9.0M, treasury recovering, navy quietly upgraded, India-trade formalized, independent — but
+  newly aware its papyrus & Parthia levers are soft. Rome ~6.5M, mature Principate, succession proven,
+  Rhine-Danube held, German confederation looming, paper-format administration extending east. China
+  ~55M, flood-recovered, fiscal-floor solvent, militarist, steppe-handover clean — and now secretly in
+  possession of a working bursting-vessel it has chosen not to build or reveal. India ~42M, passes held,
+  Yuezhi channel disclosed-and-survived, cavalry seam closing, second-gen Saka integrated, steel
+  monopoly tightened, weaning off Yuezhi horses.
+
+World date → 70 AD.

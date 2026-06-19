@@ -191,3 +191,43 @@ Open questions: none recorded yet.
   run beyond what we see at our docks? When our cavalry's imperfect coordination is eventually exposed
   in a hard northern engagement, what do we learn and what do we lose?
 
+## ~70 AD — what we now perceive
+- The Yuezhi are still the largest unmeasured fact on our horizon. The disclosure of the horse-channel
+  has now passed through the cantonment chiefs and their sons — the chiefs know we were buying from
+  the power that drove them here, and they are still in the cantonments, still under our discipline,
+  still sending their kin to Pataliputra. What we learned from the disclosure is that their calculation
+  held. What we do not know is whether that calculation would still hold if the Yuezhi came south in
+  earnest and made the chiefs a different offer — freedom, alliance, shared plunder — before our own
+  regular foot could contain events. We hold this as the open wound it is.
+- The malcontents we flagged in the disclosure room are the sharpest version of this question. One or
+  two men whose faces told us things their mouths did not have not acted. They have not moved. Silence
+  from a flagged man is not innocence; it may be patience. We watch them and we do not let them near
+  the intelligence network or the steel-craft circle regardless of what their faces show.
+- The Yuezhi themselves: we still do not know their ceiling. Every generation we measure their
+  pressure and decline to find the number of riders they can put in the field at full call. We know
+  the pressure they applied to the Saka was immense. We know they have not come for our passes. We
+  do not know if that reflects genuine deterrence, strategic indifference, distance, or merely that
+  they are occupied with some other horizon we cannot see. We do not know what lies to the north and
+  west of the Yuezhi themselves. There may be still more pressure behind them, as they were the
+  pressure behind the Saka.
+- Our cavalry coordination seam is partly closed but not gone. We know which mid-rank officers
+  narrow it. We do not yet know if it would hold against a full steppe army pushing hard in open
+  country. We have not bought that knowledge and may not be able to buy it cheaply.
+- The steel monopoly: the insider audits give us data and deterrence both. Nothing systematic missing
+  so far. We treat that finding with appropriate suspicion — we cannot be certain a clever thief would
+  be caught by our counting alone. The craft is still ours. We do not know for how long.
+- The home horse-breeding program is new. Ten years before we see whether the bloodlines hold and the
+  numbers grow enough to reduce the Yuezhi purchase meaningfully. We do not know yet if we have the
+  right animals in the right numbers to make this work. It is an investment, not a certainty.
+- The Nile kingdom: our envoy now has a warehouse and multi-season contracts. We are more present in
+  their market than we have ever been. We still do not know what lies beyond the Nile kingdom to its
+  west and south — what peoples, what powers, what routes their ships travel that we do not see. The
+  world at that end of the sea is as opaque to us as the land beyond the Yuezhi is to the north. We
+  trade with one face of a kingdom whose other faces we have never seen.
+- Open questions: Will the Yuezhi eventually press south for the passes, or have they found a
+  different direction? Do the flagged malcontents have contact with the Yuezhi, or are they merely
+  aggrieved and watchful? Can the home-breeding program genuinely replace the Yuezhi horse-channel
+  within a generation? What does the Nile kingdom face on its own far horizons — are there other
+  great powers in that direction we know nothing of? If our cavalry seam tears in a hard engagement,
+  what do we learn and at what price?
+

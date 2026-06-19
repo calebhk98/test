@@ -217,3 +217,62 @@
   will need for whatever the next generation decides to do with it. We do not know the depth of the
   Yuezhi. We do not know if the cantonment bet will hold. We know what we have built and what we
   have not yet spent, and we are not finished.
+
+## 70 AD
+- The passes held. Again. As they have held in every generation that any man alive can remember. We
+  did not ride north. The Yuezhi remain unmeasured — their full strength has never been put to a
+  test we could see clearly, and we refuse to give them the field to find it out on. Our strong
+  ground is here, at the mouths of the mountains, and here we remain.
+- The disclosure is behind us now, and it did not break us. For a season or two we had judged the
+  secret of the Yuezhi horse-channel to be within reach of a merchant's loose tongue — a chatty
+  factor, a captured letter, a son who heard too much at a market. We chose not to be found out. We
+  gathered the first-generation cantonment chiefs and their second-generation officer-sons together
+  in one room — all of them, so that none could hear a separate accounting — and we told them plainly:
+  we buy horses from whoever will sell them; we always have; it was never aimed at the chiefs. In
+  the same breath, without pause, we named the hostages in Pataliputra. We named what the chiefs
+  receive from us that they could not have elsewhere. We did not apologize. We did not flinch. We
+  had thickened our own regular foot in the cantonment districts in the weeks beforehand, moving
+  them under an administrative pretext that named no reason, so that the room was not the only
+  answer available to us if the room went wrong.
+- It went tensely. There was anger in that room — real anger, not ceremony. Grumbling. Hard silences.
+  A few faces we read carefully. But the chiefs' calculation ran its course without our help: the
+  hostages, the pay, the land grants, the steel, the rank their sons now wear — none of it comes
+  without us, and no one else in the world is offering them a better arrangement. The Yuezhi
+  certainly are not. The line held. No mutiny. We marked one or two men whose faces told more than
+  their mouths did, and we watch them now through other eyes they do not know are there.
+- We promoted the most interior-rooted of the second-generation Saka officers to mid-rank cavalry
+  command — men who were born inside our frontier or came so young they built their lives here. They
+  drill the combined horse. They lead the patrols. We kept them entirely apart from our intelligence
+  network and from the circle of the steel-craft. What they command is the sword; the eyes and the
+  forge are still ours alone. We ran two or three cavalry actions of middling weight and real
+  consequence — not the controlled southern exercise of the previous generation, but actions where
+  the outcome mattered, the terrain was contested, and the Saka officers had to hold their riders
+  in line under stress they had not chosen. The coordination seam partly closed. It is not closed.
+  But the gap between our own-bred horse and the cantonment riders on a hard turn, under noise, is
+  narrower than it was, and we know now which officers narrow it and which widen it.
+- We tightened the steel circle further in the direction the circle most needed tightening. The port
+  inspectors remain in place; they were never our weakest point. The real risk was always an insider
+  — a smith's apprentice, a cantonment quartermaster, a man who knows what ingots are for and whose
+  loyalty can be reached. We added irregular internal audits of the ingot-stocks inside the
+  cantonments: the counts and the weights are checked, unannounced, by men who report to us and
+  not to the cantonment commanders. Nothing systematic has been found missing. We do not take that
+  to mean nothing is missing. We take it to mean the audits are a deterrent as much as a detection.
+  No finished blade leaves this empire. This has not changed and will not change.
+- We have begun in earnest to breed our own remounts from the best Saka stock we absorbed. The
+  program was spoken of in earlier generations; it is now a funded program with imperial studs and
+  imperial breeders and a ten-year horizon. The aim is plain: every year that passes, we want to
+  need fewer horses from the Yuezhi. The day we can let that channel lapse without a remount crisis
+  is the day we stop sending silver north to the people most likely to one day come south in force.
+  We do not expect that day inside this generation. We expect it, if we work carefully, in the next.
+- Our factor in the Nile kingdom's port-city has been raised to something larger: a formal commercial
+  envoy with a warehouse and agents of his own and contracts that run more than one season. We
+  accepted the entanglement this involves. A warehouse is not a garrison; multi-season contracts are
+  not a treaty. We made no political alliance and sought none. But we are no longer merely a presence
+  in their market — we have a foothold, and they know it, and both sides profit enough that neither
+  is inclined to remove it. The Nile kingdom's politics remain their own. So long as the ships come,
+  we do not trouble ourselves with what they argue about at court.
+- Population near forty-two million. The treasury is large. The disclosure survived — tensely, but it
+  survived, and the moment it was most dangerous to us is past. Two malcontents sit under quiet watch
+  and have not moved. The cavalry improves. The steel circle is tighter than it has ever been. The
+  home-breeding of horses is underway. We do not know the Yuezhi's ceiling. We do not mistake what
+  we have endured for victory. We are not finished.
