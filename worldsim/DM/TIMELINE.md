@@ -241,3 +241,42 @@ World date → 110 BC.
   militarist, gunpowder-studying, fiscally strained by Wu's wars. India ~35M, NW frontier tense but held.
 
 World date → 90 BC.
+
+## 90–60 BC — Turn 7 (all four live; full real loop)
+- **ROME.** Survived the civil wars (Sulla's marches & dictatorship, then the 70s–60s) by anchoring on
+  the traditional offices and buying off victorious generals with ratified veteran land-grants. Crushed
+  the pirates and defeated Mithridates (Pompey, ~67–63); annexed INLAND Syria (the Seleucid rump, 64) —
+  which now abuts EGYPT's Levant coast (a tense new border between the two enemies). The First-Triumvirate-
+  style strongman politics (Pompey/Crassus/Caesar) coalesces by ~60. It LEFT EGYPT ALONE (no spare
+  force; Egypt gave it no casus belli). Rag/fiber PAPER keeps improving but is still a stopgap (good for
+  dispatches, not yet papyrus's equal for archives — wax/stone kept for permanent records).
+- **EGYPT.** Played its window PRUDENTLY (its red-team walked it back from reckless provocation): NO open
+  Syrian conquest, NO traceable backing of Mithridates/pirates — it sold grain OPENLY as a merchant,
+  giving Rome no casus belli; deepened the India trade (a THIRD monsoon fleet + a permanent factor-house
+  at an Indian port); fortified Cyprus; held the Levant coast against Rome's inland Syria. Succession
+  stable (the OTL Ptolemaic civil wars still averted). Rich, independent, Rome's unconquered cold-war rival.
+- **CHINA.** A regency (Huo-Guang-style) held the militarist state firm (no coup, monopolies and tuntian
+  intact, no moderation). Secured the western horses (Dayuan), sent a courtesy mission to Parthia (Anxi),
+  gave targeted tax relief to the hardest-pressed counties. GUNPOWDER step: one controlled OUTDOOR test
+  showed the powder carries real CONCUSSIVE/shattering force on timber — but it was kept secret (witnesses
+  limited to trusted engineers) and judged "not field-ready" (no containment, reliable distant ignition,
+  or portable form exists). Still NO weapon — a guarded study, advancing one careful step.
+- **INDIA.** Managed the layered northern threat (Saka in front, the consolidating YUEZHI behind): made any
+  Saka probe a massacre at the fortified passes, completed the Indus river-line backstop, sorted the Saka
+  chiefs (rationing only defensive-grade wootz to compliant ones), and opened a CAUTIOUS horse-buying
+  channel to the Yuezhi (kept separate from the Saka arming, after catching that contradiction). Cavalry
+  maturing via combined-arms drill (honestly flagged: elephant–horse panic must be drilled out, not
+  assumed). No new war — preparation. Nile trade deepening.
+
+### Cross-developments
+- **Rome ↔ Egypt:** cold war persists; now a tense Roman-inland-Syria / Egyptian-Levant-coast border.
+- **Egypt ↔ India:** trade deepening (permanent factor-houses both ends).
+- **China:** gunpowder has proven destructive force (secret); first courtesy contact toward Parthia; no
+  direct contact with Egypt/Rome/India yet. **India ↔ Yuezhi:** cautious first horse-trade contact.
+
+### Fiscal/pop @60 BC
+- Egypt ~8.1M, treasury very high (India trade), prudent & secure. Rome ~4.5M, reunifying under strongmen,
+  paper improving. China ~48M, militarist regency, gunpowder-studying. India ~36M, NW frontier braced,
+  cavalry genuinely improved.
+
+World date → 60 BC.

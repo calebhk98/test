@@ -43,3 +43,27 @@ Open questions:
   (Study ongoing — no answer yet.)
 - Will Dayuan yield horses willingly, or must we compel them? (Mission in progress.)
 - Can the oasis garrisons sustain themselves without draining the central treasury?
+
+## ~60 BC — what we now perceive
+- The Dayuan question is resolved: the supply of their superior "blood-sweating" horses is secured.
+  Our cavalry mounts are now of measurably better quality; the mission succeeded.
+- Anxi (Parthia): we have opened a road of envoys with this great western kingdom. We know it to be
+  a vast realm that trades extensively — westward toward peoples we have not yet reached, southward
+  toward warm seas. The exchange of courtesies has begun; we do not yet know what it may yield.
+- The western corridor is held by our soldier-farmers and now diplomatically anchored as well. The
+  oasis chain is ours in practice.
+- The burning mixture: in a single controlled outdoor test — witnessed only by a small number of
+  trusted engineers, far from any population — we learned that the mixture does not merely flare but
+  can strike with real and shattering force. A timber frame set against it was broken. This is a
+  genuine advance in our understanding of what the mixture can do. But we are no closer to being
+  able to use it: we cannot make it strike reliably, cannot carry it safely, cannot ignite it from
+  a distance, cannot predict or govern its force. It remains a curiosity under strict secrecy. No
+  foreign power knows of its existence.
+- The realm is governed firmly under the regency. Population ~48M. Treasury strained but holding.
+  Northern frontier stable.
+
+Open questions:
+- Under what conditions can the force of the burning mixture be made reliable and controllable?
+  (No answer — the gap between what we witnessed and any practical application remains vast.)
+- What can the road of envoys to Anxi (Parthia) yield — trade, intelligence, alliance?
+- How long can the treasury sustain the northern garrison burden without further internal relief?

@@ -109,3 +109,28 @@
   to grow.
 - Military: cavalry charge-and-rally training advancing. Horses remain dearer than steppe-bred mounts
   but the gap narrows.
+
+## Update — 60 BC
+- Population ~36M. Succession stable; Kalinga held.
+- Saka frontier: the pass-line held against every probe the Saka sent. The fortified passes have
+  become killing-grounds they will not willingly enter; any band that tested them was destroyed. The
+  wootz-rationing policy continues — chiefs who keep the peace receive defensive amounts; clans that
+  raid receive nothing. The Indus river-line is now a complete fallback: magazines, crossing-points,
+  walls. We hope never to use it; it is there.
+- Yuezhi overture: we have opened a cautious, separate channel to the greater horse-people gathering
+  further north beyond the Saka — buying horses from their traders, sending no weapons, letting our
+  conduct speak for our intent. This channel is kept strictly apart from our dealings with the Saka
+  chiefs, who must not learn of it lest they read it as a two-faced preparation to encircle them. For
+  now it is horse-buying and a signal: we are not their enemy.
+- Cavalry: genuinely stronger than any prior generation. We now drill horses alongside elephants from
+  a young age — the horses no longer bolt at the smell and noise of the great beasts. We keep the two
+  arms in separate advance-lanes so neither disrupts the other in action, cavalry screening flanks
+  while elephants anchor the centre. This is multi-year training and not yet perfected. We have
+  improved saddle and girth to give our riders more stability and purchase. We have NO stirrups; we
+  compensate with seat and with the lance-grip the improved girth allows. The gap with a pure steppe
+  rider in open country has narrowed; it has not closed.
+- Sea-trade: a permanent Maurya trading-house now operates in the Nile kingdom's ports. We have our
+  own factor there year-round, our own inventory, our own eyes on their market. Revenue continues
+  to grow.
+- Military posture: defensive on the northwest (by design, not weakness), strong in the centre and
+  south, cavalry improving. Steel monopoly on the making intact; what we sell is product, not craft.

@@ -97,3 +97,23 @@
   grouping) was appeased with dignities and honors — no civil war opened while we faced the Roman attack.
 - Posture: DEFENSIVE-STRONG. Rome is the adversary. Cyprus and the Levantine coast are our shields.
   The sea is ours east and west of Alexandria. We watch and we wait.
+
+## Update — 60 BC
+- Pop ~8.1M. Treasury VERY HIGH — the highest in living memory. Three India fleets now sail; a permanent
+  Egyptian trading-house is established at a port on the Indian coast. Customs and trade revenues dwarf
+  all other income lines; grain and papyrus are now secondary.
+- We did NOT move against Rome while it was distracted by its own civil wars. We sold grain openly as
+  merchants do, kept our hands clean of Rome's enemies, and let the killing in the west run its course.
+  We did not seize inland Syria — an inland march would have given any Roman victor a clean cause to
+  march on us. Patience was the weapon.
+- Rome has now settled its wars and emerged under strong commanders. Those commanders have taken the
+  inland Syrian territories that border our Levantine coast. The old Seleucid ghost is replaced by
+  something real and near: Roman legions are now our northern land-neighbors. They have not moved on
+  us — for now.
+- Cyprus: garrisoned and fortified, held firmly. Levantine coastal strip: held; its overland connections
+  monitored. Papyrus embargo to Rome: MAINTAINED throughout.
+- Succession: secure. Native peace: held. Priesthood patronized; nome-governors loyal.
+- Military posture unchanged: navy ~300 warships, eastern Med lanes our own. Army as before (~50k
+  mercenary/Macedonian core); no mass native levy. No new wars opened; no new enemies made.
+- The danger has changed shape: Rome is no longer an abstraction across the sea. It is on our
+  doorstep. Its next strong man, when he looks east for glory or wealth, will see Egypt first.

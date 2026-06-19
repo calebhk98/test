@@ -78,3 +78,35 @@
     the crossing, his army broken in the marshes. The Senate has formally disowned him.
   * Egypt is rich, unconquered, controls the eastern sea lanes, and now holds a grievance against
     Rome. We will remember.
+
+## Update — 60 BC
+- Population: ~4.5M+. The expanded citizen rolls are settling; the new Italian Romans are counted
+  and mustered. Manpower remains the Republic's deepest asset.
+- Treasury: RECOVERING. The eastern campaigns — the final breaking of Pontus, the sweeping of
+  pirates from the seas, and the annexation of inland Syria (the rump of the old Seleucid lands) —
+  have yielded considerable spoils and new provincial revenue. The deficit position of 90 BC is
+  easing, not yet healed.
+- Politics: the Republic endures, but the old Senate's authority is a shadow. A dictator arose in
+  the civil contest between over-mighty commanders, settled scores by proscription (enemies listed
+  and killed, estates seized), then stepped down — an act of calculated restraint, not virtue. What
+  followed is not the old Republic restored but a new informal order: a handful of great commanders,
+  each with armies, fortunes, and networks of clients, divide real power between them. The Senate
+  debates; the great men decide.
+- Military: professional legions, loyal to their generals. The Marian model holds. Eastern service
+  has seasoned whole armies far from Italy; those commanders return home with prestige and troops who
+  have fought in distant lands.
+- Eastern gains (confirmed):
+  * Pontus broken at last; its king is finished. The Black Sea approaches are now ours.
+  * Pirates swept from the western and central sea-lanes — the grain routes breathe again.
+  * Inland Syria (the Seleucid remnant) annexed as a province. A new revenue stream; a new garrison
+    commitment. The Seleucid dynasty is finished as a power.
+  * CAUTION: the Syrian coast is not fully ours. Egypt holds coastal territory there. Our new
+    province sits beside Egyptian-held ground. Contact and friction are possible.
+- Egypt: left alone. We had no spare force; Egypt gave no clean pretext — it sold grain in open
+  market and kept its hands visibly clear of our eastern campaigns. Our declared enmity from 90 BC
+  stands, but we did not move. The coast situation in Syria puts us cheek-by-jowl with their
+  territory whether we chose it or not.
+- Writing and records: our homemade paper (beaten fiber, pressed flat) has improved markedly —
+  letters, dispatches, and day-to-day administration run on it without difficulty. For records
+  meant to outlast a generation we still cut stone or press wax; but for the flow of governance,
+  our own paper now serves.

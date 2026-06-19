@@ -71,3 +71,34 @@
   Saka mass for a real blow, we mean to know it before they ride.
 - The Nile ships keep coming. The trade grows. We grow richer from it, and so do they, and that shared
   interest is its own kind of bond — more reliable, in our experience, than most of the other kinds.
+
+## 60 BC
+- The passes held. For thirty years of Saka probing they have held, and the lesson has been learned on
+  both sides of the mountains: to come at us through the pass-mouths is to feed men and horses into
+  a grinder of wootz steel and war-elephant that does not tire and does not flinch. Every band that
+  tested this found the same answer. The bands have stopped coming as often. We do not mistake a
+  pause for an end; we have used the pause to finish the Indus river-line — the magazines are full,
+  the crossing-points are bridged and gated, the walls are stone. It cost years of patient labor and
+  no one will write songs about it. We do not care about songs.
+- We reached further north, past the Saka, to the Yuezhi — the people beyond the people, the pressure
+  behind the pressure. We sent no soldiers; we sent horse-buyers and quiet men who know how to listen.
+  We buy their horses and we do not threaten them and we do not explain ourselves to the Saka. The
+  Saka chiefs who trade with us believe our quarrel is nowhere beyond our own border; let them keep
+  believing it. If the Yuezhi one day roll south and the Saka are caught between two walls, we will be
+  one of those walls, and we will have known the Yuezhi already. That is enough for now.
+- We have built something new inside our own army this generation: horses that do not run from
+  elephants. It sounds small; it is not. Our trainers took young animals and raised them alongside
+  the great beasts — the smell, the noise, the shadow — until neither fled the other. In the field
+  we keep the two arms in separate lanes, cavalry on the flanks and forward, elephants anchoring the
+  centre, so neither disrupts the other's movement. It is still being refined; a drill and a real
+  battle are different things, and we have not yet tested this combination against a steppe army in
+  the open. But we have it, and no one else we know of has thought to build it this way. We improved
+  our saddles and the binding of the girth so our riders sit more firmly. We have no stirrups; we
+  make do without them and we make it work.
+- In the Nile kingdom's port-city there is now a house that is ours — permanently staffed, our factor
+  living there year-round, knowing their merchants and their prices, writing back what he learns. We
+  are no longer guests in their market; we are a presence in it. The Nile kingdom is far away and its
+  politics are theirs to manage. So long as the ships move, we prosper from the distance.
+- Population ~36M. The empire is whole; the treasury is full; the southern provinces are quiet; Kalinga
+  is held. We have turned a generation of stress on the northwest into a stronger wall and a longer
+  reach. The next generation will decide what we do with it.

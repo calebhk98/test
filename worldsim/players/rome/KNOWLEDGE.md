@@ -38,3 +38,23 @@ Open questions: none recorded yet.
   beyond Egypt and the Parthians. Egypt's India-trade shows there is great wealth still beyond our reach.
 - Open question: who will be the first man in Rome when the civil contest comes, and what will be left
   of the Republic after it?
+
+## 60 BC — what we now perceive
+- The civil contest came and partly resolved: a dictator rose, made his lists, killed his enemies,
+  and then — surprisingly — walked away from power. The Republic stands, but transformed. Real
+  authority rests with whichever great commanders can hold their armies and alliances together. The
+  Senate ratifies what the powerful present to it.
+- In the east: Pontus is broken, its king gone. The sea lanes are cleared of the pirate fleets that
+  had strangled trade and grain-shipping for a generation. The rump of the Seleucid kingdom
+  (inland Syria) is now a Roman province. We collect its taxes and garrison its passes.
+- Syria coastline: Egypt holds ports and coastal ground in the Syrian region. We have not fought
+  over it, but we are now neighbors there. We watch.
+- Egypt itself: we did not move against it. No Roman force crossed toward the Nile in this
+  period. Egypt sold grain, stayed out of our eastern war, and gave us no opening we could use
+  before the men and the moment were wanted elsewhere. Our enmity from 90 BC has not been resolved
+  or forgiven — only deferred. Egypt remains unconquered, rich, and in possession of Syrian coast
+  territory we might one day dispute.
+- Our paper: improved enough for ordinary use — correspondence, accounts, orders of march. Stone
+  and wax for the permanent record. We are no longer strangled by the Nile's embargo.
+- Open questions: which of the great commanders will emerge as first man, and when? What is Egypt's
+  intention toward our new Syrian province, given we now share a border there?

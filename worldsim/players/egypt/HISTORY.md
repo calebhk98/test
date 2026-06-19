@@ -93,3 +93,26 @@
   the eastern sea, that reads the monsoon, that garrisoned its islands and armed its coast and
   destroyed an army that came to take the Nile. Rome is our enemy now. We have named it so, to
   ourselves, and we will govern ourselves accordingly.
+
+## 60 BC
+- Rome's wars within itself are over. The victors — great commanders, their names now on everyone's
+  lips — have turned outward. They marched north of us and took the inland Syrian country, the last
+  lands the Seleucids ever held. That rump of a kingdom is gone. Roman legions are camped in the
+  hill-country a day or two's ride from our coastal garrisons. The old enemy of our grandfathers is
+  gone; the new one is nearer and stronger.
+- And yet Egypt is unharmed. This did not happen by luck. Through all the years of Rome's civil chaos
+  we kept our hands clean. We sold grain on merchant terms and pocketed the silver. We fortified what
+  we already held and claimed nothing more. We gave no Roman faction reason to name us an enemy, and
+  no Roman strongman a cause to point his legions south after he finished pointing them at his rivals.
+  Patience was our sword, and it served us well enough that the sword was never drawn.
+- Our greatest act of this generation was not a battle but a building: a trading-house on the coast of
+  India, permanent and staffed by our own, flying the colors of Egypt in a harbor ten thousand stades
+  from the Nile. Three fleets now sail the monsoon road — one to keep the route open, one to carry
+  the outbound cargo, one to bring the spice and silk and cotton home. The wealth that enters
+  Alexandria's treasury from the east now outweighs what we take from grain, papyrus, and all the
+  old royal monopolies together. We have turned the world's trade on its axis.
+- Cyprus stands; the Levantine coast is ours; the papyrus bales stay sealed. The succession is in
+  order; the priests are honored; the nome-governors are loyal. The people of the Nile plant and
+  harvest as they have done for three thousand years and more, and what they plant and harvest comes
+  to us as it always has. Egypt endures, and Egypt is rich, and Egypt is watching — for the next
+  strong man in Rome will look east, and when he does, it is the Nile he will see first.

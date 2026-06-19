@@ -53,3 +53,24 @@
   understand what it is for, or whether it is for anything. The secret is kept.
 - The treasury is strained. The peasants of the north carry the weight of conscription. The realm
   holds, hard and ordered — it does not soften. Population stands at more than forty-five million souls.
+
+## 60 BC
+- The young emperor reigned under a regency, and the regency held. No softening, no dismantling —
+  the monopolies stood, the garrisons remained, the discipline of the state was kept intact through
+  the transition.
+- Our embassy to Dayuan returned with what we went for: the supply of superior "blood-sweating"
+  horses, the great mounts of that western valley, is now secured. Our cavalry is the stronger for it.
+- We dispatched a dignified courtesy-mission to Anxi — the vast kingdom the western traders call
+  Parthia — and they received it as fitting between great powers. The road of envoys is now open
+  between us. We do not yet know where it leads, but the silence of ignorance is broken.
+- On the northern frontier, we held our ground without throwing men and coin into another great
+  offensive. The steppe cannot be swept clean in one stroke; patience and the garrison line are our
+  instruments. The hardest-pressed northern counties received bounded tax relief — enough to keep
+  the peasant household from ruin, no more than that.
+- In a field well away from any structure or person, our engineers lit the burning mixture once, under
+  close watch. What we saw was not mere flaring: there was force in it — real, shattering force, enough
+  to break a heavy timber frame. We had known it burned; now we know it can strike. Yet we are no
+  closer to mastering it. We cannot make it strike again with any certainty, cannot carry it safely,
+  cannot govern where or how hard it falls. The knowledge is real and the secret is kept. The work
+  goes on.
+- Population now nearly forty-eight million. Treasury strained but stable. The realm hard and ordered.

@@ -69,3 +69,24 @@
   smothers or slows it, what vessels it ruins. We have made nothing of it as a device or weapon. It
   remains a closely held secret of the court. We do not yet understand what it is.
 - Posture: hard, ordered, militarist. The realm does not soften.
+
+## Update — 60 BC
+- Population: ~48M; growth continues in the river valleys despite the burden of northern garrisons.
+- Governance: a regency council governed in the name of the young emperor and held the institutional
+  structure intact — monopolies, frontier garrisons, disciplined administration. No retrenchment; no
+  softening of the militarist posture.
+- Military: the northern frontier is held without launching a new major offensive. The garrison-farmer
+  system in the western oasis corridor remains self-sustaining. Cavalry quality improved: the Dayuan
+  supply of superior "blood-sweating" horses is now secured, strengthening our mounted arm.
+- Diplomacy: a courtesy-mission was dispatched to Anxi (Parthia), the great trading kingdom to the
+  far west. Contact established; the road of envoys is now open between our court and theirs. The
+  western corridor is diplomatically as well as militarily anchored.
+- Fiscal: bounded tax relief granted to the hardest-pressed northern counties — a targeted concession
+  to prevent rural collapse, not a general softening. Treasury remains strained but stable.
+- The burning mixture: one carefully-guarded outdoor test was conducted by trusted engineers in an
+  open field, away from all structures and persons. The result was significant — the mixture did not
+  merely flare but struck with real shattering force, breaking the timber frame set against it. Yet it
+  remains wholly unpredictable: we cannot contain it, cannot ignite it reliably at a distance, cannot
+  carry it safely. It is not ready for any application and the secret remains sealed. What we have
+  gained is understanding — not a capability.
+- Posture: hard, ordered, militarist. The regency held the realm firm.

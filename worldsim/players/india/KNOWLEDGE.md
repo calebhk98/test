@@ -75,3 +75,27 @@ Open questions: none recorded yet.
   is their problem to manage, not ours.
 - Open questions: What presses the Saka from the north — is it one people or many? If a larger wave
   comes, will the compact chiefs hold their younger men? How long before the quiet breaks?
+
+## ~60 BC — what we now perceive
+- The Saka have not broken through. The passes have earned their reputation; probing bands approach
+  them and turn back or are destroyed. Whether this deterrence holds against a true mass-crossing we
+  do not know. We suspect the compact chiefs themselves prefer the trade to the war, and we use that
+  preference.
+- Further north of the Saka there appears to be a still-greater gathering of horse-peoples — we call
+  them Yuezhi in our agents' reports. We do not know their numbers, their structure, or their
+  ultimate direction. We know they sell horses and do not seem to regard us as prey. We are buying
+  from them and saying little else. If they press south, the Saka may be squeezed between them and
+  us; that could be catastrophe or opportunity depending on timing we cannot control.
+- The Saka do not know we speak with the Yuezhi. We intend to keep it that way for as long as we can.
+- Our cavalry combined with elephants is a new thing we have built — horses that do not bolt, drilled
+  to operate alongside the great beasts in separate lanes. No outside power has seen this yet in a
+  real engagement. We consider this an advantage not yet spent.
+- We have no stirrups. We have improved saddle and girth. Our riders are more stable than they were;
+  they are not yet equal in open country to a man who has ridden all his life with no other work.
+- The permanent trading-house in the Nile kingdom's ports is now our own institution, not just a
+  visiting merchant's arrangement. We have a factor there year-round. We know their market prices;
+  they do not know ours as well. That asymmetry serves us.
+- Open questions: What is the Yuezhi? How many are they, and which way do they move? If the Saka
+  are caught between the Yuezhi and us, do the compact chiefs come to us or fight in all directions?
+  How long before our cavalry training is truly ready for an open-field test against steppe riders?
+

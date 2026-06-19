@@ -63,3 +63,44 @@
   distinction. We will not forget what happened in the Delta. We do not believe Egypt will forget either.
   There will be a reckoning, in a year or a generation. We write this down — on our own paper now,
   not theirs — so that whoever comes after us will know what we owe.
+
+## 60 BC
+- The Republic did not break. That is the first thing to set down, and the one that surprises us most.
+
+- The civil war among the great commanders came as everyone feared it would — one man's army against
+  another's, the streets of Rome running with the names of the proscribed. A dictator was made, and he
+  made his lists: enemies named, hunted, killed; estates forfeit to the state and to his friends. It was
+  bloody, and calculated, and in its way efficient. Then — and here is what no one quite predicted — he
+  laid the office down. He stepped back from the power, said the work was done, and withdrew. Whether
+  this was wisdom or exhaustion or a bet that his settlement would hold, we do not know. We write what
+  happened, not what was in his mind.
+
+- What he left behind is not the old Republic restored. The Senate sits and speaks and votes, as it has
+  for centuries. But authority in truth belongs to those who hold armies and the loyalty of the soldiers
+  in those armies. Three or four men of that kind divide the real governance of Rome between them, by
+  agreement or by mutual deterrence. The institutions are the face of the thing; the commanders are the
+  substance. This we record plainly.
+
+- In the east, the generation's work came to fruit. Our generals ended what we had pursued since
+  Mithridates of Pontus first made war on our provinces: the king is finished, his power gone, his
+  kingdom ours. The pirates who had strangled the sea-lanes — who had raided the Italian coast itself,
+  who had made the grain ships afraid — were swept from the waters by a campaign so rapid it astonished
+  even Rome's own habit of speed. Grain flows again; the sea belongs to us.
+
+- We have a new province in Syria. The old Seleucid dynasty, which had held those inland lands since
+  Alexander's empire broke apart, is finished; the last of its territory falls to Roman administration.
+  We will collect its revenues and garrison its roads. But the coast is another matter: Egypt holds
+  ports there. We are now neighbors to Egypt not only across the sea but on a shared land frontier, of a
+  sort, in Syria's coastal strip. We did not plan it so. It is so nonetheless.
+
+- Egypt we left alone. We had no army to spare when the east was being settled, and Egypt sold grain
+  in the open market and made no move our commanders could use as cause. So the Nile goes untouched
+  — for now. The enmity from 90 BC is not erased. The debt of the Delta is not paid. But there was
+  no reckoning in this generation. Perhaps the next will finish what the renegade began, and this time
+  with the Senate's mandate and a general who knows what he is doing.
+
+- Our paper we note with a craftsman's pride. What necessity forced on us — the beaten rags and bark
+  and pressed fiber — has grown into a serviceable thing. Dispatches cross the empire on it. Magistrates
+  file their accounts on it. It is not the Nile's reed, which was finer, but it is ours, and it is good
+  enough, and Egypt's embargo has not silenced a single Roman scribe. We improved what we had to improve,
+  as we always do.

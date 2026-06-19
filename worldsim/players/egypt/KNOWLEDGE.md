@@ -77,3 +77,23 @@ Open questions: none recorded yet.
   Does it seek to break our papyrus embargo through other means or other lands? How deep do our new
   Indian connections run — can the port-kings we deal with be relied upon, or are they themselves
   subject to powers further inland we have not yet seen?
+
+## ~60 BC — what we now perceive
+- Rome has finished its internal bloodletting and has consolidated around great commanders. Those commanders
+  have marched on the Syrian interior — the rump of the old Seleucid lands — and taken them. Roman armies
+  now stand in the hill-country north of our Levantine coast. We share a land-border with Rome, or near
+  enough to call it that. This is new and it is dangerous.
+- Rome has not moved on us. We believe this is because we gave it no pretext and no provocation: we sold
+  grain as merchants, we did not openly back its enemies, we kept Cyprus and the coast but made no inland
+  lunge that could be dressed as a threat. A pretext would have served Rome's ambitious men very well.
+  We did not provide one. The restraint has bought us time.
+- Our trading-house on the Indian coast is established and functioning. Three fleets now sail the monsoon
+  road. The wealth is very great; the route is proven across many seasons. We know the western ports of
+  India and the kings who rule them; the interior remains unknown to us.
+- The papyrus embargo on Rome holds. We do not know whether Rome has found or is seeking another source.
+  We have heard nothing to suggest it has found a substitute that satisfies it.
+- Open questions: What ambitions does any new Roman strongman nurse toward Egypt? Our wealth and grain
+  are the greatest prize in the world a Roman could name. Will the same restraint that has kept us safe
+  so far continue to serve — or will Rome eventually move regardless of pretext? Can we deepen our Indian
+  connections further inland? Can the trading-house be made permanent against whatever storms or politics
+  threaten it?
