@@ -91,3 +91,21 @@
   sea-link with the far-western great power is now open; revenue and influence from this trade both grow.
 - Military: wootz infantry re-equip essentially complete. Cavalry better-horsed than at any prior period;
   charge-and-rally training continues — still maturing but measurably stronger.
+
+## Update — 90 BC
+- Population ~35M. Succession stable; Kalinga held.
+- Saka situation: a probing band tested our forward foothill garrisons. We answered with a calibrated hard
+  blow — elephant screen plus wootz infantry destroyed the raiding band utterly and in full sight of any
+  Saka observers; cavalry was used only in pursuit on broken ground, not in open-field engagement. The
+  lesson was made visible on purpose.
+- Trade compact renewed with those Saka chiefs whose men kept the peace; wootz steel cut off to the clans
+  whose bands were raiding. The discrimination itself was our message: good faith is profitable, treachery
+  is costly. For now the Saka are quiet again. We do not trust the quiet to hold.
+- Forward defenses thickened at the pass-mouths; the Indus river-lines developed as a fallback position.
+- Intelligence: no longer relying solely on the eyes of the hostage-bound Greek client-lords. Our own
+  agent network now runs through the foothills, watching for any Saka mass-gathering. We will not be
+  surprised.
+- Western sea-trade: direct commerce with the Nile kingdom deepens; revenue from this channel continues
+  to grow.
+- Military: cavalry charge-and-rally training advancing. Horses remain dearer than steppe-bred mounts
+  but the gap narrows.

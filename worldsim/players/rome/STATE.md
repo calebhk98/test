@@ -54,3 +54,27 @@
 - Egypt is now the richest independent power left and has opened its own direct sea-trade to India —
   Roman senators increasingly covet that wealth. The run-up to a Roman move on Egypt (~100 BC) builds.
   Pop ~4M+; internally turbulent but the Mediterranean's master.
+
+## Update — 90 BC
+- Population: ~4M+. Citizen rolls expanded — the Italian allies have been granted the full citizenship
+  after the great Italian rising (the war among the allies). The socii are now Romans. Manpower pool
+  formally absorbed into the citizen body; long-term a gain, short-term a social and fiscal strain.
+- Treasury: STRAINED. The Italian war was expensive; tribute and provincial revenue cannot keep pace
+  with simultaneous demands. Deficit position; no indemnity to cover it. Tributum reinstated.
+- Politics: DEEPLY TURBULENT. The Senate disowned the renegade commander who sailed against Egypt
+  without sanction and was destroyed there. But the episode has shown that generals now hold armies
+  loyal to themselves, not the Republic. Rival commanders with veteran legions circle each other;
+  the Republic stands on the edge of civil war. The Gracchan fractures have not healed.
+- Military: Marius has destroyed the Cimbri in the north — the barbarian terror is broken.
+  The Marian legion reforms (longer-service professionals, eagles as standards, reduced baggage) are
+  now the model. But these professional soldiers bond to their general, not the Senate; they will
+  march where he leads. This is Rome's new military reality, and its greatest internal danger.
+- Key changes:
+  * Egypt is now a declared enemy. The Nile is shut to us in the matter of papyrus — Egypt has
+    cut off supply as reprisal for the renegade expedition. Our workshops now beat rags, old linen,
+    and bast fiber into a coarse writing-material of our own making. It is inferior to papyrus but
+    it serves, and we are improving it. Necessity has made inventors of us.
+  * The renegade commander and his forces are gone — destroyed in the Delta, his fleet starved at
+    the crossing, his army broken in the marshes. The Senate has formally disowned him.
+  * Egypt is rich, unconquered, controls the eastern sea lanes, and now holds a grievance against
+    Rome. We will remember.

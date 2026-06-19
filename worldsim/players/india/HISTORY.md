@@ -47,3 +47,27 @@
 - Menander died and his lords turned upon one another like dogs over a carcass, and in that moment we did not wait. We walked our garrisons down from the passes into the foothills, into the very mouths of the roads those Greek kings had fought to hold. The lords who bent the knee we left in their towns, but their sons sit in Pataliputra, and their steel comes from our smiths, and their grain moves on our roads. They are ours in all but name, and the name will follow in time.
 - Then came the Saka from the north — a great tide of horsemen, hard-riding and fierce, pressing down through the lands the Greeks had thinned. We did not meet them with spears. We met them with ingots of our finest steel and bolts of our cotton, and they gave us mares — the finest steppe-bred mares we have ever stabled. They have chosen to spend their edge on the Greeks who remain, not on us. For now that is enough, and our cavalry grows stronger for the bargain. We watch them without blinking; such peoples turn when their interest turns, and we will not be surprised.
 - And from the far west, past Arabia, past the middlemen who for generations have taken their toll on every bead and bolt of cloth that crossed those waters, there came ships direct to our ports — merchants of the great Nile kingdom, who have learned to sail the open sea and come to us themselves. Arabia made its profit from our trade for a long age; that age is changing. We welcome these western ships, and we intend that the channel stays open and that both ends of it know they need us.
+
+## 90 BC
+- The Saka tested us. One of their probing bands rode against our forward foothill garrisons — feeling,
+  no doubt, for softness, for hesitation, for the open seam where trade-partners become prey. They found
+  none of those things. We brought up the elephant screen and the wootz foot and destroyed the band in
+  full sight of the hills. Our cavalry ran down what fled, in terrain of our choosing, where the steppe
+  rider's advantages count for little. We did not hazard our horse in the open against a people who have
+  ridden since before they could walk; we are not yet ready for that contest, and we know it.
+- Then we sorted the chiefs. Those whose men kept the compact received it renewed — the steel, the
+  cotton, the recognition. Those whose men had ridden against us found the gates of our smithies closed
+  and our cotton-bales absent from their markets. We did not declare war; we did not make speeches. We
+  simply made it clear that loyalty has a price and treachery has a different one, and that we know the
+  difference. The foothills are quiet now. We do not expect the quiet to last.
+- We have thickened the pass defenses and begun to work the Indus river-lines into true fallback
+  positions — walls and magazines and crossing-points that could anchor a defense if the forward posts
+  were pressed. It is patient work and unglamorous. We do it because the day may come when we are glad
+  of it.
+- We no longer read the frontier through the eyes of the Greek client-lords alone. Their hostages sit
+  in Pataliputra, their grain and steel come from our hands, and their loyalty is real enough — but
+  loyalty shaped by dependence is not the same as sight. We have our own people now in the foothills,
+  watching for the dust of a mass-gathering, the stockpiling of fodder, the movement of wagons. If the
+  Saka mass for a real blow, we mean to know it before they ride.
+- The Nile ships keep coming. The trade grows. We grow richer from it, and so do they, and that shared
+  interest is its own kind of bond — more reliable, in our experience, than most of the other kinds.

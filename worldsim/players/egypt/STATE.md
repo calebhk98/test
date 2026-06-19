@@ -78,3 +78,22 @@
   merchants now profit from our stability — a constituency in Rome that favors Egypt.
 - Succession: heir groomed in both Greek and Egyptian ceremony; priesthood patronized; native peace held.
 - Resources: timber position improved via harbor stations; iron still imported (Meroë treaty holds).
+
+## Update — 90 BC
+- Pop ~7.9M. Treasury very high — elevated further by expanded India trade; papyrus revenue to Rome
+  suspended (punitive embargo, indefinite).
+- Military: a Roman general of renegade character came by sea with legions against us, seeking gold and
+  a throne. He was destroyed: our fleet denied him a clean crossing; our Delta and Sinai positions broke
+  his army on land. Rome has publicly disowned him as an outlaw — but we draw our own conclusions.
+  We now regard Rome as an enemy in truth, whatever its public declarations say.
+- Navy posture: eastern Med lanes HELD. Cyprus garrisoned heavily; its main harbor fortified as a forward
+  naval station. The Levantine coastal road shut: deals concluded with the Judaean and Nabataean powers
+  to deny overland passage to any hostile force.
+- Trade: a SECOND merchant-fleet now operating on the India sea-route; direct dealings established with
+  Indian port-kings (no longer reliant solely on landing-agents). India customs are now the single
+  fastest-growing income line. Papyrus trade to Rome is OFF.
+- Succession: SECURED. Heir bound formally to the high priesthood AND to the senior army commanders
+  and nome-governors by gifts and public honors. A rival court faction (a powerful queen's-party
+  grouping) was appeased with dignities and honors — no civil war opened while we faced the Roman attack.
+- Posture: DEFENSIVE-STRONG. Rome is the adversary. Cyprus and the Levantine coast are our shields.
+  The sea is ours east and west of Alexandria. We watch and we wait.

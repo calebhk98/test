@@ -49,3 +49,29 @@ Open questions: none recorded yet.
   their loss.
 - Open questions: How long before the Saka turn hungry eyes on our plains rather than Greek towns?
   Are there powers in the far west beyond the Nile kingdom that we do not yet know?
+
+## ~95 BC — what we now perceive
+- The Saka have all but devoured the last Greek lords of the mountains, and now their compact with us
+  frays — some of their bands grow restless and probe our forward foothill garrisons, testing whether we
+  are prey. The bargain that turned them on the Greeks will not hold them forever.
+- Our cavalry is stronger than it has ever been, though still dearer-bought than the steppe-born horse.
+
+## ~90 BC — what we now perceive
+- The Saka are not one people with one will. Some chiefs deal honestly; others let their young men raid
+  and then deny knowledge of it. We have learned to tell one from the other, and we make that distinction
+  felt in what steel and cotton they receive. The chiefs who kept the peace now profit from the compact;
+  the clans who raided find themselves cut off. Whether this holds the restless ones in check or merely
+  buys time, we do not know.
+- One probing band was destroyed utterly. This is now a fact the Saka foothills know. We chose the
+  instrument deliberately — elephants and steel foot in a confined action; our cavalry was not hazarded
+  in open ground against riders who outnumber us in that element. We showed what we wished to show and
+  held back what we did not wish to reveal.
+- The Greek client-lords remain in place and useful, but we no longer trust their reports as our only
+  eyes. We have our own people in the foothills now. The client-lords do not need to know this.
+- The Indus river-lines are being developed as a fallback. We hope never to need them. We prepare them
+  regardless.
+- The Nile kingdom's ships continue to arrive at our ports. The trade is real and growing. We still do
+  not know how stable their kingdom is at home, but so long as their ships come and the goods flow, that
+  is their problem to manage, not ours.
+- Open questions: What presses the Saka from the north — is it one people or many? If a larger wave
+  comes, will the compact chiefs hold their younger men? How long before the quiet breaks?

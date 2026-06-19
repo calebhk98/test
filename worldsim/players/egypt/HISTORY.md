@@ -59,3 +59,37 @@
   colossus without paying tribute to it.
 - The heir is ready; the temples are honored; the people of the Nile go to their work in peace.
   Egypt is full and strong, and the world's east is open to us as it has never been before.
+
+## 90 BC
+- They came from the west. A Roman — a general of some reputation, hungry for gold and a throne of
+  his own, or perhaps set quietly on his way by those in Rome who have coveted the Nile since they
+  first laid eyes on it — came by sea with his legions. He came to take what Egypt has built across
+  three centuries of kings and labor and learned craft.
+- He did not take it. Our fleet blocked his crossing and left his army without clean supply. Our
+  positions in the Delta and at Sinai's narrows — positions our fathers built and we have kept sharp —
+  broke his army on the ground. He is dead, or fled, or broken; what remains of his force is no threat.
+  Rome declared him a renegade. Let them say what they like. We know what came for us and we know
+  what stopped it.
+- Egypt's answer was measured and deliberate. We shut our papyrus to Rome — every bale, every roll,
+  every exported sheet. Let their scribes and senators discover what it means to write on something
+  else. Whether they feel that wound or find a way around it, we shall see in time.
+- We shut the Levantine coast road. The Judaeans and the Nabataeans were brought into arrangements
+  that serve their interests and seal the overland approach; no army now reaches us from the north
+  by land without our knowledge and without our leave.
+- Cyprus we have made into a true fortress of the sea. Its harbor is fortified; our garrison there is
+  heavy. If Rome tries the sea again — with its own name on its fleet this time — it will find that
+  the island sitting between the Aegean and our shores is ours and costs blood to approach.
+- And through all of this our India trade did not pause. We sent a second fleet east on the monsoon
+  while the western trouble burned. We have dealings now not only with merchants on India's coast but
+  with port-kings — sovereign men of that great land who know our name and trade with us directly.
+  The wealth that flows back into Alexandria on those ships makes Rome's grain contracts look like
+  pocket-money.
+- The succession is closed: the heir is honored by the high temple and pledged to by the generals and
+  the governors of the nomes. The queen's-party that might have moved against us in the moment of
+  danger was satisfied with honors and dignity; no civil war opened our gate from within while
+  the enemy pressed from without. Egypt held.
+- We are not what we were at the start of this century — a rich kingdom edging carefully around a
+  distant colossus, buying friends inside it. We are what we chose to become: the power that rules
+  the eastern sea, that reads the monsoon, that garrisoned its islands and armed its coast and
+  destroyed an army that came to take the Nile. Rome is our enemy now. We have named it so, to
+  ourselves, and we will govern ourselves accordingly.

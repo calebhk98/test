@@ -194,3 +194,50 @@ World date → 140 BC.
   internally turbulent. China ~45M, expanding under Wu.
 
 World date → 110 BC.
+
+## 110–90 BC — Turn 6 (THE DIVERGENCE CLUSTER; all four now live)
+- **ROME → the Egypt attempt FAILS → PAPER (divergence fires via a rogue commander).** The Senate
+  RIGHTLY declined an official war on Egypt (overreach amid the Cimbri + the citizenship crisis) — but
+  it admitted "very little, structurally" restrains an ambitious proconsul with a personally-loyal army.
+  Amid the warlord chaos (the Social War, ~91–88), exactly such a renegade commander launched an
+  UNSANCTIONED expedition to seize Egypt's wealth and a throne (~92–90 BC). It FAILED catastrophically:
+  Egypt (prepared per its red-teamed plan — fleet, Sinai/Delta killing-ground, garrisoned Cyprus, no
+  open-field battle, the expedition under-resourced and unreinforced) destroyed it. In fury Egypt CUT
+  OFF PAPYRUS to Rome. Deprived of cheap papyrus, Roman workshops beat rag/flax/bast fibers into a
+  substitute → **the first crude PAPER.** [Necessity-driven; not anachronistic.] Meanwhile Rome's more
+  concrete (binding-law) citizenship offer shortened but did not prevent the **Social War**, which ended
+  by granting citizenship; Marius beat the Cimbri (101). Rome ends the turn turbulent (heading toward the
+  Marius/Sulla civil wars) and now an OPEN ENEMY of Egypt.
+- **CHINA → GUNPOWDER discovered, handled perfectly; PERMANENT MILITARISM begins.** Wu's alchemists'
+  violently-burning saltpeter/sulfur/charcoal powder (~100–95 BC) was NOT leapt upon: the court
+  CONFINED the alchemists to a guarded courtyard to STUDY its conditions (proportions, ignition,
+  quenching) under military-engineer supervision — no weapon, no announcement, no treasury splurge.
+  China refused to execute them (knowledge can't be unmade) or to gamble the fiscal ceiling. It pressed
+  the Xiongnu (within a fragile fiscal ceiling), sought the Dayuan horses, garrisoned the corridor with
+  Han-administered auxiliaries (not tribal chiefs). **China keeps gunpowder as a guarded study and does
+  NOT moderate** — the permanently-militarist divergence is now active (future Wang Mang/Yellow Turban/
+  Three Kingdoms/Xianbei collapses cancelled).
+- **EGYPT (live).** Repelled the rogue Roman army; CUT papyrus to Rome (not foreseeing it would beget
+  Roman paper); SECURED the succession by binding the military/nome commanders + honoring the rival
+  (Cleopatra III) faction with patronage — averting the OTL Ptolemaic civil wars (a real divergence:
+  Egypt stays stable where our timeline had dynastic chaos). Garrisoned Cyprus, fortified Salamis, denied
+  the Levant coastal road via Hasmonean/Nabataean deals; deepened the India sea-trade (second fleet,
+  direct port-king agreements). Now Rome's open adversary — rich, secure, independent.
+- **INDIA (live).** Deterred the fraying Saka: destroyed a probing band visibly (elephant+steel, cavalry
+  in pursuit only), renewed the compact DISCRIMINATELY (wootz to non-probing chiefs, cut the probing
+  clans — "the discrimination is the message"), thickened forward defenses + set the Indus river-lines as
+  a backstop, and built an INDEPENDENT spy net (not via the flippable Greek client-lords). Cavalry still
+  improving. The Saka remain a looming mass-threat, but are managed for now.
+
+### Cross-developments
+- **Egypt ↔ Rome: OPEN ENEMIES now** (rogue attack + papyrus embargo → Rome invents paper).
+- **Egypt ↔ India:** direct sea-trade deepening (a second Egyptian fleet to India).
+- **China:** has gunpowder (guarded), permanently militarist, reaching west via the Silk Road (Dayuan/
+  Anxi) — still NO direct contact with Egypt/Rome/India (Parthia + the oases between).
+
+### Fiscal/pop @90 BC
+- Egypt ~7.9M, treasury very high (India trade), secure & independent, now at war-footing vs Rome.
+  Rome ~4M+, turbulent (Social War just ended), inventing paper, hostile to Egypt. China ~45M+,
+  militarist, gunpowder-studying, fiscally strained by Wu's wars. India ~35M, NW frontier tense but held.
+
+World date → 90 BC.

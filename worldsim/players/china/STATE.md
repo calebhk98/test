@@ -52,3 +52,20 @@
   Regions: Dayuan, Anxi (Parthia), and "Shendu" (India). Salt/iron monopolies fund the wars.
 - Populous (~45M), expansionist, militarist. (China's own divergence — gunpowder + permanent militarism
   — is now imminent, ~100-95 BC.)
+
+## Update — 90 BC
+- Population: ~45M+, concentrated in the north and the river valleys; conscription of northern
+  peasants continues to press heavily on rural households.
+- Military: Xiongnu campaigns continue under careful expenditure limits; we have not broken them
+  but we hold the northern frontier. The western oasis corridor is now garrisoned by soldier-farmers
+  (tuntian) who grow their own grain — a self-sustaining border establishment.
+- Western policy: an embassy has been dispatched toward Dayuan (the valley of the "blood-sweating"
+  horses, far to the west) to negotiate or compel the supply of superior cavalry mounts. Our knowledge
+  of the western realms deepens with each returning envoy.
+- Fiscal: salt and iron monopolies remain the engine of war finance; the treasury is strained by
+  sustained campaigning. No relief in sight without either victory or retrenchment.
+- The strange burning mixture remains isolated in a walled courtyard under guard. Our engineers study
+  it steadily — learning which proportions of the three substances produce the fiercest flare, what
+  smothers or slows it, what vessels it ruins. We have made nothing of it as a device or weapon. It
+  remains a closely held secret of the court. We do not yet understand what it is.
+- Posture: hard, ordered, militarist. The realm does not soften.

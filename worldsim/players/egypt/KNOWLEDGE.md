@@ -35,6 +35,13 @@ Open questions: none recorded yet.
 - Rome is now master of the whole Mediterranean — Macedon, Carthage, Greece all fallen to it. It is
   the one power in the world that rivals us. It bears the closest watching.
 
+## ~105 BC — what we now perceive
+- Rome grows covetous. Its envoys pry, its merchants probe our harbors and our wealth, and word reaches
+  us that ambitious men in the west speak openly of seizing the Nile. Rome is torn by its own quarrels
+  for now — but a rich and independent Egypt is a temptation such a power will not forever resist.
+- Our new direct trade to India swells our treasury and our fame — which is both our strength and the
+  very lure that draws Roman eyes.
+
 ## ~110 BC — what we now perceive
 - The Seleucid kingdom is a rump — its harbors on the coast we have taken for our own stations;
   no coherent power opposes us in the Levant sea-lanes.
@@ -48,3 +55,25 @@ Open questions: none recorded yet.
   become voices in Rome for Egypt's peace. We deal as commercial equals, not as supplicant and patron.
 - Open question: how deep does India run? Who are the kings of its interior? How stable is the
   sea-route through seasons of storm? These we do not yet know.
+
+## ~90 BC — what we now perceive
+- A Roman general — we do not know if he acted on Rome's hidden will or purely as a renegade seeking
+  a kingdom for himself — came against us by sea with legions. We destroyed him: our fleet starved his
+  crossing and our defenses broke his army. Rome has declared him a renegade and washed its hands of
+  the affair. We do not believe Rome's hands are clean; we believe this was a probe, disowned because
+  it failed. Rome is our enemy now in fact, whatever pretense of peace its Senate may offer.
+- We have shut our papyrus to Rome. What Rome does with that deprivation — whether it seeks another
+  source, tries to negotiate, or answers with more force — we do not yet know, and at this moment we
+  do not care.
+- Cyprus is heavily garrisoned and its harbor fortified. We have concluded arrangements with the
+  Judaean and Nabataean powers to seal the Levantine overland road against hostile passage; those
+  arrangements hold, so far as we know.
+- Our second India fleet is sailing. We have made direct contact with Indian port-kings and no longer
+  depend on intermediaries even at the port level. The wealth flowing east and west on our sea-road
+  is greater than it has ever been.
+- Succession is settled: heir bound to priesthood, army, and nome-governors; no rival faction moved
+  against us in the crisis; the court is stable.
+- Open questions: What does Rome plan next? Will it send another force — this time an authorized one?
+  Does it seek to break our papyrus embargo through other means or other lands? How deep do our new
+  Indian connections run — can the port-kings we deal with be relied upon, or are they themselves
+  subject to powers further inland we have not yet seen?
