@@ -246,3 +246,47 @@
   is locally adapted. REGIONAL FISCAL-INSPECTORS: organized by region, not empire-wide, so no
   single inspector holds the whole map of Rome's wealth and weakness. Administrative intelligence
   from the standardized records continues to surface previously hidden gaps and evasions.
+
+## Update — 100 AD
+- Population: ~7.0M (citizens and settled peoples; reckoning from census and provincial rolls).
+  Steady growth continues under the Principate's domestic peace; Campania losses from Vesuvius
+  absorbed; recovery and rebuilding underway.
+- Treasury: HEALTHY. Gallic and frontier revenue absorbed the Vesuvius relief expenditure
+  (tax remissions for survivors; rebuilding funds dispersed) without material strain. No
+  ruinous expedition launched. The relief was a cost deliberately borne and is regarded as a
+  governance success by the provincial administrations.
+- Politics: PRINCIPATE AT PEAK STABILITY. Succession mechanism proven a second time, in a
+  different and harder form: a victorious commander — the man who broke the Rhine crossing —
+  was given his triumph and then bounded; he was rotated, not entrenched. The doctrine of
+  shared oversight and limited glory for any single commander held under the pressure of
+  genuine military success. The system governed itself in victory as well as in transition.
+- Military — Rhine-Danube arc: GERMAN CONFEDERATION BROKEN ON THE ROMAN BANK. The paramount
+  chief launched a crossing in force; Roman legions concentrated via the lateral road under a
+  single Senate-confirmed commander; the crossing was broken on our own bank; no pursuit into
+  the forest was made. The confederation, denied its needed victory, fractured into quarrelling
+  successor-chiefs. Divide-and-rule (silver, grain, prestige-goods — never iron — to sub-chiefs)
+  continued throughout and contributed to the fracture. Fort-line advanced one step and held.
+  CURRENT STATUS: multiple successor-chiefs, no paramount authority, clients sending delegations
+  to our commanders. The forest peoples remain; consolidated threat is dissolved for this
+  generation.
+- Vesuvius (c. 79 AD): Herculaneum, Pompeii, and neighboring Campanian towns destroyed by ash
+  and fire-stone from the mountain. State response: tax remission for survivors; treasury funds
+  for rebuilding. Cost absorbed. Regarded as a demonstration of Rome's protective governance.
+- Egypt: NOT TAKEN. INTELLIGENCE UPGRADED from marketplace merchant-reports to SEEDED AGENTS
+  inside Alexandria's grain-offices and harbor accounts. Men of our own placed as commercial
+  factors and grain-assessors within the Egyptian harbor administration — positioned to learn
+  over time what granaries hold, what the fleet is worth, and what the treasury debates. No
+  army moved; the Delta remains lethal; a victorious general in Egypt would hold Rome's grain.
+  Long intelligence project now begun in earnest. The old debt (90 BC) remains on the books.
+- Succession — next heir: EARLY EASTERN ROTATION adopted as deliberate policy. The next heir
+  is being prepared through eastern administrative commands first (revenue, courts, grain-
+  accounts) rather than military postings first. He sits beside the Princeps at the accounts.
+  His standing is being built on governance competence as well as eventual army credibility.
+  Military postings will follow; the rotation rule will be observed. This is a modification
+  of prior succession preparation, not an abandonment of it.
+- Auxiliaries: Rhine and Danube client-tribe recruitment continues; citizenship at discharge;
+  home-chief intelligence maintained. Successor-chiefs now competing for Roman client-goods
+  — our leverage in the north has improved with the confederation's fracture.
+- Gaul: fully absorbed, revenue solid and reliable.
+- Writing and records: eastern format standardization ongoing; regional inspector system
+  maturing. The uniform annual return is now the administrative reality empire-wide.

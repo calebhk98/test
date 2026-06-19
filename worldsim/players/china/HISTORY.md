@@ -294,3 +294,67 @@
 - Population near fifty-five million. The recovery is real, the growth resumed. Treasury
   solvent under the fiscal floor — not comfortable, but unbroken, which is what the floor
   was designed to be. The realm is hard, ordered, militarist. It does not soften.
+
+## 100 AD
+- The bursting vessel is now something we understand fully enough to make again. This is
+  not what it was before. Before, we had proven the thing once and recorded the reasoning;
+  but whether we could repeat the result depended on men following written instructions
+  under conditions not yet fully grasped. This generation the engineers went deeper — not
+  new trials, not a second proof, but a return to the bench and the vault, working the
+  written record until they could say plainly: given the materials, given the proportions,
+  given the vessel-geometry we now understand, we can produce the bursting vessel again,
+  on demand, with confidence. They did not need to light a fire to know this. The
+  knowledge moved from record to mastery. We have still built nothing; we have still shown
+  nothing; no general, no officer, no frontier soldier has any knowledge that such a thing
+  exists. We judge this the correct posture still. A weapon we cannot yet carry safely,
+  field reliably, or recover from an enemy's hands is not yet a sword — it is a secret
+  advantage, and that advantage is worth exactly as much as our silence is worth. We will
+  not spend it carelessly.
+- We added a second apprentice-engineer. One younger man in formation is one point of
+  failure. The day will come when the five old engineers are gone; if the one apprentice
+  then falls to illness or misfortune, the study that spans generations ends with him.
+  We will not permit that risk. The second apprentice is chosen as the first was — for
+  silence, for loyalty proven before training began, for distance from any patronage
+  network that might someday have reason to sell what it knows. He begins at the
+  foundational level only. Neither apprentice holds the full account yet; both now
+  carry enough to know where the vault's contents begin. We have seven carriers of
+  the knowledge in some form: five sworn engineers of the old generation, two younger
+  men being formed. The circle is still narrow; it is no longer fragile.
+- We also tightened the salt-and-iron revenue accounts this generation in a way long
+  overdue. The monopoly income flows through three council-bodies, but for most of our
+  history each body has seen only its own portion of the flow and has had no view of
+  the others' accounting. A body that cannot be compared cannot be audited, and a body
+  that cannot be audited will find, over time, that its accounts drift toward the
+  interests of those who keep them. We began cross-filing the accounts — each body's
+  ledgers shared in summary form with a second body under different patronage, the
+  censorate holding the right of comparison. No single council-body can now quietly
+  skim without the discrepancy appearing in a ledger kept by men who owe it nothing.
+  This reform will not end dishonesty; it will make dishonesty harder to sustain
+  invisibly, which is the most we can realistically demand.
+- The young steppe vassal-chief had ruled for less than a generation, and habits of
+  obedience are thinnest when they are newest. The northern Xiongnu holdouts are a
+  diminished and isolated thing — but they remain there, and a young chief who sees
+  them as a possible alternative to our leash is a young chief whose leash is fraying.
+  We did not wait for the fray to show. We moved first, and we moved sharply. One
+  punitive expedition — limited in scope, fast, and decisive — struck the most exposed
+  of the northern holdout bands, and we invited the southern chief's own riders to ride
+  beside ours in the doing of it. He was not a bystander watching our power; he was a
+  participant, binding himself further to our cause by the act of fighting our enemies
+  at our side. The lesson was not a speech or a gift. The lesson was what he saw: the
+  north offers only hardship and isolation, the south offers titles and silver. He saw
+  it with his own riders in the field. The lesson landed.
+- The great western state remains beyond our independent reach. We know it is there —
+  confirmed by sources outside Anxi's patronage, coming to us by different roads and
+  different tongues, who do not know one another. This generation we pressed the
+  independent inquiry harder: more travelers sought out, more accounts gathered, more
+  languages interpreted. What we have built is a richer rumor, not yet a map. We know
+  the state is large, wealthy, and organized. We do not know its name. We do not know
+  the road to it that does not pass through Anxi's lands and Anxi's gate-keeping. A
+  grand mission sent down the Anxi road would arrive at the far western court as Anxi's
+  client — vouched for by the very broker whose monopoly we are trying to break. The
+  silk-silver balance of power would shift against us the moment we accepted that
+  introduction. We will not do it. We wait for a road we do not yet have, and we keep
+  building the account until we can see the shape of one.
+- Population near fifty-eight million. Treasury above the fiscal floor — solvent,
+  not comfortable, the surplus real but not large. The realm is hard, ordered,
+  militarist. It does not soften.

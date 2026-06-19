@@ -231,3 +231,29 @@
   sought or accepted. Presence is now visible and mutual, not merely a visiting merchant's house.
 - Malcontents: one or two flagged individuals identified during the disclosure gathering. Under passive
   surveillance. Have not moved. Watched continuously.
+
+## Update — 100 AD
+- Population ~45M. Succession stable; Kalinga held. Treasury large.
+- Frontier posture: NW passes held. Yuezhi alliance overtures (including marriage proposal) refused;
+  our answer is the passes, not a bride. We do not ride out.
+- Malcontent / watch system VALIDATED: flagged cantonment-origin malcontents moved inward under
+  cover of promotion, surveillance moving with them, access to intelligence network and forge-circle
+  silently removed. One man attempted outside contact; taken quietly, on interior ground, without
+  alerting the cantonments or drawing steppe attention. System performed as designed.
+- Cantonment-origin exclusion FORMALIZED IN PERMANENT RECORD: Saka-blood men excluded from spy-
+  network and wootz forge-circle by written council rule, to be re-decided explicitly each generation
+  — never allowed to drift open through familiarity. Second-generation Saka continue to hold mid-rank
+  cavalry command; the exclusion is operational caution, not public policy.
+- Memory-watch ADDED: quiet standing watch for any smith-skilled man living or moving near cantonments,
+  regardless of formal title. Ingot-count catches theft; watching catches memory. Both now in place.
+- Home horse-breeding VALIDATED (~88 AD): bloodlines held, numbers sufficient. Began slow weather-
+  disguised TAPER of Yuezhi horse-purchases — reductions small enough to read as ordinary trade noise,
+  reversible on any sign of Yuezhi alertness. Objective unchanged: wean off dependence on most likely
+  future enemy.
+- Steel monopoly: intact. Insider audits ongoing. Forge-circle closed at both the ingot and the memory
+  layer.
+- Sea-trade — Nile kingdom: DEEPENED toward value-added goods (finer weavings, worked ivory, blended
+  spice, gem-work). Higher margin; no method-leaks. Formal envoy position unchanged; reports only what
+  is plainly visible in their harbor. No political entanglement sought.
+- Cavalry: second-generation Saka at mid-rank command; coordination seam continues to narrow through
+  routine actions. No open-field test against a full steppe army.

@@ -249,3 +249,73 @@ Open questions:
 - Can the three-body confirmation council resist capture across a very long patient game
   by a great household? (Unchanged from prior — the lock is stronger than it was; it is
   not invulnerable.)
+
+## ~100 AD — what we now perceive
+- THE BURSTING VESSEL IS READY TO MAKE — AND WE CHOOSE NOT TO. This is a new kind of
+  knowledge for us to carry. Before this generation, the question was always whether we
+  understood the thing well enough to make it again. That question is now closed. The
+  five engineers and two apprentices hold in their heads and in the sealed vaults an
+  understanding sufficient to produce the bursting vessel on demand, from materials,
+  without a new trial to grope toward the answer. We have moved from "proven once" to
+  "reproducible in principle." The restraint we now exercise is not the restraint of
+  men who cannot yet do the thing — it is the restraint of men who can do the thing
+  and judge that the moment has not come. We know the difference. We hold it clearly.
+  The vessel cannot yet be carried safely among soldiers; cannot be fielded without
+  the secret passing to any enemy who captures one; cannot be built in quantity without
+  the activity becoming visible. Those are the bars still across the door to fielding.
+  Until they are lifted, what we possess is an advantage of knowledge, and that
+  advantage lives only as long as the secret does.
+- The revenue cross-filing is a form of institutional knowledge about our own state:
+  we now perceive our own accounts more accurately than we did before. What we may
+  yet learn from the comparison — whether discrepancies emerge, how large they are,
+  how deeply-rooted — we do not yet know. The reform is new and the comparison has
+  barely run a season. But the perception is better.
+- THE YOUNG VASSAL RE-LEASHED BY DEED. We know that a leash held only by habit frays
+  when the animal tests it. The young southern steppe chief had not yet tested it
+  openly — but the northern holdouts existed as an alternative, and alternatives tempt
+  even obedient men in time. We struck before the testing began. The punitive
+  expedition and the chief's participation in it changed what he knows: the north is
+  not a refuge, not a rival court that would receive him with honor. The north is what
+  he helped us punish. That knowledge is in his memory now in a way no gift or title
+  could put it. The leash is not merely a strap around his neck — it is woven into
+  his own account of what he has done. This is the more durable form of the binding,
+  and we are aware we must tend it across his reign.
+- THE GREAT WESTERN STATE: still beyond our independent reach. We know more about
+  it than we did — the rumor is richer, sourced from more independent accounts — but
+  we still cannot reach it without passing through Anxi's lands and Anxi's
+  gate-keeping. We understand the trap: arrive via Anxi and we arrive as Anxi's
+  clients; Anxi introductions, Anxi framing, Anxi leverage over the relationship.
+  The silk-silver balance that now runs in our favor would be handed to Anxi the
+  moment we accepted that road. We will not do it. We wait for a route that does
+  not run through Anxi's gate, and we keep building the account until the shape
+  of such a route becomes visible. We do not yet know how long that will take.
+  We do not know if the great western state knows of us at all.
+- Seven carriers of knowledge now hold some part of the bursting-vessel study. This
+  is more than five; it is fewer than we will eventually need to make the thing at
+  scale. We know this arithmetic. We do not resolve it yet — every new carrier is
+  a new risk, and the study's advantage lives inside the circle of silence. But we
+  have begun to think about what the transition from secret to field-capable
+  instrument will eventually require, even if we do not name a date for it.
+
+Open questions:
+- When the time comes to field the bursting vessel, how do we do it without the
+  secret passing to enemies who capture or examine one? This is a question we have
+  never answered; we have deferred it on the grounds that fielding is not yet
+  possible. But we cannot defer it forever without the deferral becoming the answer.
+- What is the great western state — its name, its nature, its military posture,
+  its knowledge of us — and can we reach it by a road Anxi does not control?
+  (Ongoing independent inquiry; still no complete answer, no independent route.)
+- Will the young vassal-chief's re-leashing hold across his full reign, or will
+  the northern alternative reconstitute itself in some form we have not yet
+  anticipated, and offer him something the punitive expedition taught him to
+  refuse only for now?
+- How many carriers of the bursting-vessel knowledge is the right number before
+  the circle of knowledge becomes too wide to hold silent? We have seven. We do
+  not know the ceiling.
+- Can the three-body confirmation council and the revenue cross-filing together
+  resist a great household that plays the very long game — placing candidates
+  patiently across staggered terms, shaping the censorate comparison before the
+  comparison catches anything? The architecture is strong; it is not invulnerable.
+- What will the second generation of the bursting-vessel apprentices know that
+  the first generation does not — and will the knowledge drift as it passes
+  through more hands and more vaults?

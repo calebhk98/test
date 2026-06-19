@@ -231,3 +231,37 @@ Open questions: none recorded yet.
   great powers in that direction we know nothing of? If our cavalry seam tears in a hard engagement,
   what do we learn and at what price?
 
+## ~100 AD — what we now perceive
+- The watch system we built proved itself. A flagged man attempted outside contact; we took him
+  quietly. What we know now that we did not know before is that the system finds what it is built
+  to find — and also that the temptation is real. A man existed who chose to reach. We do not know
+  if he was one and exceptional or one and ordinary; we treat him as ordinary and watch accordingly.
+- The Yuezhi remain the largest unmeasured fact on our horizon. They are still there, north of the
+  passes, still of unknown depth and unknown ceiling. Their envoys came with an alliance offer and
+  a marriage proposal; we declined. We do not know how they received the refusal — whether as
+  prudent reserve, as insult stored for a future accounting, or as mere noise from a border kingdom
+  they have not yet decided to test. We do not know what they are doing with their strength on
+  the horizons we cannot see. They are still there.
+- The taper of our Yuezhi horse-purchases is now in motion, but we do not yet know how it reads
+  to their merchants. Trade noise is what we intend it to look like; trade noise is not invisible,
+  only ambiguous. At some point a Yuezhi merchant may carry a question north that becomes an
+  inference at court, and we will not be there to watch that conversation. We will only know the
+  answer when something changes, or does not.
+- The cantonment Saka, second generation: they hold mid-rank cavalry command; they are, by measure
+  of their daily lives, more Indian than not. What we do not yet know is whether a third generation
+  will feel the same, or feel something else. A man raised inside the empire has interior interests;
+  a man whose father was so raised and whose grandfather was a steppe chief is a different question,
+  and that question will belong to another generation to answer. We set the rule now so they need
+  not rediscover it from experience.
+- The lands and peoples behind the Nile kingdom — to its west, its south, its other frontiers — are
+  still beyond our sight. Our envoy reads their harbor. He does not read their world. What powers
+  exist in that direction, what routes their ships travel that are not ours, what they command beyond
+  the mouth of their greatest river — we do not know. We trade with one face of a kingdom whose
+  other faces we have never seen. This has been true for a long time. It is still true.
+- Open questions: When does the Yuezhi taper become legible to them as deliberate policy rather than
+  trade noise — and when that day comes, what do they do? Will a third generation of cantonment Saka
+  carry the interior loyalty we have built, or will the original compact's memory fade in a direction
+  we did not intend? Does the man we took quietly have confederates we have not yet found, or did
+  he act alone? What lies beyond the Nile kingdom's own western and southern horizons — are there
+  powers there that are also, quietly, measuring us?
+

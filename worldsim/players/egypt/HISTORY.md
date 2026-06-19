@@ -160,6 +160,73 @@
   alone and weakened. This new master of Rome comes with the whole of the western world behind him,
   and he is not yet weakened at all.
 
+## 100 AD
+- This generation we have done what soberer men do after they discover that two of their weapons
+  were blunt: we set those weapons aside without ceremony, without mourning, without pretending
+  they will sharpen again, and we rebuilt our security on what is real and hard and ours by nature.
+  Let the record show not a defeat but a reckonings-and-rebuilding. That is what this thirty years
+  has been.
+- The two truths we learned in the prior generation — that the papyrus lever no longer bites deep
+  and that the eastern shadow-channel had delivered its whispers to no one of consequence — those
+  truths we did not argue with. We accepted them. We noted them. And we asked ourselves: if the
+  soft levers are gone, what remains that is hard? The answer was standing in front of us all along,
+  and we were almost ashamed not to have named it first: grain, and the India sea-road, and the
+  fleet that holds the Red Sea as our own, and the fortified approaches that make Egypt an expensive
+  body to swallow. These have never been soft. They have never needed deniable intermediaries or
+  the willingness of Roman merchants to whisper on our behalf. They are real, and they are ours.
+  We rebuilt our posture upon them and let the rest go.
+- THE EASTERN REACH: We had long heard, from Indian merchants at our factor-house, of rich kingdoms
+  lying east and south of India's great peninsula — lands with their own ports and their own deep
+  trade, known to the Indians themselves as distant and wealthy. This generation we sent ships there.
+  Not with Egypt's emblem on the sail; not as an embassy announcing the Nile's presence; two vessels
+  embedded quietly in the convoys of Indian merchants who sail those routes as a matter of their own
+  livelihood. Our men went as listeners, not as heralds. They came back with real charts of those
+  waters and word of several great kingdoms on those far shores — kingdoms of considerable wealth
+  and sophistication, though their names sit strangely on our tongues and their full depth is still
+  beyond our reckoning. And there is something else, something the Indian merchants spoke of at the
+  edges of their accounts: a great land or empire said to lie still further east, beyond even those
+  kingdoms, vast beyond easy estimation, whose nature and extent none of our returned men could
+  describe with any confidence. A rumor of a world's edge that is not an edge at all. We record it
+  here as a rumor, nothing more — but we have never before had even a rumor of what lies so far
+  to the east. For the first time our sight of the world reaches, however dimly, past India and past
+  the kingdoms beyond India, toward something we cannot yet name.
+- THE WESTERN CHANNEL REPLACED: The hollow Nabataean shadow was let go without drama. In its place
+  we have built something of actual substance: our merchants now trade regularly and openly with
+  Indian overland merchants who themselves carry goods west toward the lands beyond Rome's eastern
+  borders. These are men of substance whose income depends on honest commerce, not men who carry
+  deniable messages for a fee. What we learn of the western world beyond Rome's marches comes to
+  us as a by-product of their natural trade — reliable because their own interest aligns with it,
+  not because we have asked them to carry a secret. We ask nothing of them that trade does not
+  already carry. This is a sounder foundation than the one we have abandoned.
+- THE RED SEA CHAIN: We have hardened the whole line of waystations from the Nile's mouth south
+  and east along the Red Sea to where our ships catch the great seasonal wind. Fortified anchorages;
+  reliable water and supply; small but capable garrisons. We have kept this work below any Roman
+  eye — Rome has never troubled to build a Red Sea fleet, and there is no Roman ear that counts
+  our waystation towers. The consequence of this work is plain: the great India trade now rests,
+  from one end of our sea-road to the other, on Egyptian naval goodwill. No merchant — Roman or
+  other — moves that cargo without our sufferance. This is not a paper lever. It is a physical
+  one, and we hold it completely. Alongside this, the quiet renewal of the fleet has continued:
+  near three hundred good hulls now, better built than anything we have retired. And within the
+  Nile valley the slow work of basin-irrigation in the middle nomes has proceeded, adding to what
+  the land can bear and what our granaries can hold.
+- THE HEIR: We gave him a bounded and visible role this generation. He sits court on grain-orders,
+  hears petitions, appears before the nome-governors and the temple-priests — all of it under our
+  countersignature, none of it touching the treasury or the army or the right of independent
+  patronage. He is seen, and known, and accepted. He is not a rival power. When the day comes
+  that he takes the throne, there will be no question of his face and his name, and no temptation
+  to make himself something other than what we have shaped him to be in the meantime. This is
+  legitimacy without the danger of a second court forming within the first.
+- Population stands near nine million and four hundred thousand by the nome-governors' best count.
+  The treasury is in good health. We have not knelt to Rome and have not embraced Rome and have
+  not given Rome a formal treaty that would dress a collar with ceremony. We hold our old posture —
+  useful, costly, sovereign, silent — and we have now rebuilt the foundations beneath it on stone
+  rather than on what we once mistook for stone.
+- Egypt is what it has perhaps always truly been: the great hinge of the world's trade. The western
+  sea to the east and south, the Nile to India, and now — dimly, for the first time — a sight
+  that reaches past India toward whatever immensity lies to the far east. We have survived the
+  generation in which we learned that two of our levers were hollow. We end it richer, harder,
+  and looking further than we have ever looked before.
+
 ## 1 AD
 - The generation has turned and we are alive — still sovereign, still rich, still unswallowed. Let it
   be recorded how we came through it.

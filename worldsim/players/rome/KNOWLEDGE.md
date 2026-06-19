@@ -218,3 +218,73 @@ Open questions: none recorded yet.
   our Syrian legions actually border? When will the eastern world become known to us directly,
   not only through Egypt's road and Egypt's prices? And can the succession mechanism be won
   a second time, by a different heir, in circumstances we have not yet imagined?
+
+## 100 AD — what we now perceive
+- The doctrine of defensive concentration was tested at full scale and worked. We know now,
+  not by argument but by experience, that: divide-and-rule against a forming confederation
+  buys friction and time but does not prevent the storm — it merely shapes when and how it
+  breaks; that a paramount chief who needs victory to hold his confederation together will
+  choose his moment and cross, and that the correct answer is to break him on prepared ground
+  rather than to seek him in his forest; that a single Senate-confirmed commander with
+  concentrated force outperforms a divided command even when the legions are from different
+  postings; and that the refusal to pursue into the deep forest after a defensive victory is
+  itself a doctrine that must be held against the temptation of the moment. All of this we
+  believed before. We now know it because we did it.
+
+- The German confederation is broken but the forest peoples are not gone. We know this
+  plainly and have written it at every closing. What we know newly is the character of the
+  aftermath: successor-chiefs seeking Roman client-goods, delegations coming to our
+  fort-commanders, the old confederation's member-clans now competing with each other for
+  favor we previously had to buy by competing with the paramount chief. Our leverage in the
+  north is higher now than it has been in a generation. We do not know how long this lasts.
+  We do not know whether another paramount man is already forming among the successor-chiefs
+  or whether the fracture is durable. The forest still swallows knowledge.
+
+- On Egypt, our knowledge is changing for the first time in several generations. We have
+  moved from marketplace-intelligence — prices, cargo-movements, what merchants repeat —
+  to seeded agents inside the harbor administration itself. Those men are young in their
+  posts. What they will learn over years, and whether they will keep faith and pass their
+  positions to men who serve the same purpose, is not yet known. We have planted the seeds.
+  We cannot yet read the harvest. What we still do not know: Egypt's true treasury depth;
+  the real readiness of its land forces for a campaign across the Syrian ground our legions
+  border; whether there are divisions inside its governing court that patience could widen.
+  What we now have, for the first time, is a path toward learning these things that does not
+  depend on what Egypt chooses to let pass through its markets. The Delta remains a death-
+  trap. The constraint on moving against the Nile is unchanged; only our intelligence posture
+  is improving.
+
+- The succession mechanism has now been tested in two distinct forms: the transition at death,
+  and the discipline of bounding a victorious commander in the moment of his triumph. We
+  regard both as passed. We do not regard either as permanently solved. The mechanism requires
+  active maintenance at every generation — an heir prepared, officers rotated, no single man
+  allowed too long in a place where his name becomes the army's name. We know this because
+  we have done it. The next test will be different from the previous ones, as the previous
+  ones were different from each other.
+
+- The Vesuvius catastrophe taught us, if it needed teaching again, that a competent state
+  absorbs a natural disaster as it absorbs a lost campaign: by acting rather than waiting,
+  spending what is needed, and making the action visible to those who were harmed. The Asia
+  earthquake taught us this in 17 AD. The lesson holds.
+
+- The next heir's eastern preparation first is a change in method, not in principle. We
+  believe a man who learns to govern accounts before he learns to command armies will
+  carry different instincts to the Principate than one who learned it the other way. Whether
+  we are right about this we will not know until he governs. We write the reasoning here so
+  that whoever reads it can judge the bet against the outcome.
+
+- The eastern world beyond Egypt and the Parthians remains as it has always been in these
+  pages: rumor, merchants' tales, goods whose origin we know only by hearsay and by what
+  Egypt allows to pass westward. We have no first-hand account we trust. The asymmetry
+  persists: Egypt has a road to that wealth and we see only the tail end of the cargo at
+  Alexandria's docks. Our seeded agents inside those docks are the first tool we have ever
+  had that might, in time, tell us something true about what Egypt's eastern trade actually
+  is. This is a long patience, and we are only at its beginning.
+
+- Open questions: which of the successor-chiefs in the north is most dangerous, and is any
+  of them capable of drawing together what the paramount chief gathered? How long before our
+  seeded agents inside Alexandria's harbor know enough to tell us something Egypt does not
+  intend to tell us? What does the next heir become when he takes the accounts-room learning
+  and the military postings together — does the eastern preparation first produce a better
+  governor or only a different one? And what is the far-eastern world, the source of the
+  goods Egypt's trade-roads carry westward — does it know Rome exists, and does it matter
+  whether it does?

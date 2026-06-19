@@ -240,3 +240,51 @@
   weaker than believed, eastern shadow known to be mostly hollow, India-east intelligence
   gathering ongoing. Soberer about the true state of our levers; firm in our fundamental
   posture. Watching Rome without provocation.
+
+## Update — 100 AD
+- Pop ~9.4M. Treasury HEALTHY — solid net surplus; harvests reliable; Nile floods regular.
+  The kingdom is whole, solvent, and self-possessed.
+- Grand strategy — REBUILT ON HARD FOUNDATIONS: Security no longer rests on the papyrus lever
+  (known to be soft) or the Nabataean eastern shadow (abandoned). It rests on grain (we feed
+  Rome's city and much of the sea-world), the India sea-trade (the largest single income line,
+  unreplaceable by any rival without our Red Sea infrastructure), the fleet (~300 good hulls,
+  quietly renewed, better than what they replaced), and the fortified approaches (Delta, Sinai,
+  Cyprus, and now the full Red Sea waystation chain). These are hard, physical, and ours.
+  Rejected: any formal grain-and-trade compact with Rome (a collar dressed in ceremony), embargo,
+  and any treaty. Posture is USEFUL-AND-COSTLY, unchanged in character, rebuilt in substance.
+- RED SEA WAYSTATION CHAIN: HARDENED. Fortified anchorages, reliable water and supply, small
+  garrisons, kept below Roman notice (Rome has no Red Sea fleet). The India trade now plainly
+  depends on Egyptian naval goodwill from the Nile's mouth to India's shore. This is a physical
+  lever, not a paper one.
+- EASTWARD REACH ACHIEVED: Two ships, carrying no Egyptian emblem, embedded in Indian merchant
+  convoys, reached the rich kingdoms east of India's great peninsula. They returned with real
+  charts and word of those kingdoms' existence and considerable wealth. Beyond those kingdoms
+  lies a rumor of a yet greater land or empire far to the east — vast, of uncertain nature,
+  known only as a rumor by the merchants who speak of it. For the first time Egypt's knowledge
+  of the world reaches, however dimly, toward the far east. We are not ready to send a fleet
+  into those waters, but we have begun to see.
+- WESTERN CHANNEL REPLACED: The hollow Nabataean shadow-channel is abandoned. In its place:
+  regular commercial dealings with Indian overland merchants of substance who carry goods toward
+  the western lands beyond Rome's eastern marches. What we learn of that world comes as a
+  by-product of their honest trade — reliable because their self-interest aligns with ours,
+  not because we have paid them to carry secrets. Sound by nature, not by arrangement.
+- India trade: THREE FLEETS on the monsoon road; factor-house mature and productive across
+  multiple generations of staff; active ties at several Indian western ports; alternative
+  anchorages known. India customs remain the largest single income line. Route proven.
+- Navy: ~300 good hulls; continued quiet renewal this generation; old vessels retired and
+  replaced with better-built ships. Effective fighting capacity continues to exceed what the
+  raw count reveals. No announcement; Rome sees the same number it has always seen.
+- BASIN IRRIGATION: Extended in the middle nomes this generation. Long-term grain capacity
+  increased; the work is unglamorous and does not fill songs.
+- HEIR: Given a visible but bounded administrative role — grain-orders, court sessions, public
+  appearances before nome-governors and temple-priests, all under the royal countersignature.
+  No army, no treasury, no independent patronage. Legitimacy without a rival power-base.
+  No weapons distributed to the people. The lesson of the Thebaid holds.
+- Meroe iron treaty: HOLDING. Nabataean commercial arrangements: HOLDING (now as traders,
+  not shadow-messengers).
+- Army: ~50k mercenary/Macedonian core. No mass native levy.
+- Succession: secure. Nome-governors loyal. Priesthood patronized. Native peace maintained.
+- Posture: USEFUL-AND-COSTLY rebuilt on hard foundations — grain, India trade, fleet, Red Sea
+  chain. Eastward sight achieved for the first time. Commercial western channel replacing
+  the hollow shadow. Heir bounded in role. Egypt is the great hinge between the western sea,
+  India, and the dimly-seen far east. Sovereign, rich, watching Rome without provocation.

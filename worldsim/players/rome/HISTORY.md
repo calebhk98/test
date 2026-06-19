@@ -379,3 +379,76 @@
   proven ruler. We do not know what the forest confederation becomes. We do not know Egypt's true
   depth. We do not know what lies east beyond the traders' tales. The account, for this generation,
   is sound. We write it plainly and leave it for whoever comes next.
+
+## 100 AD
+- The generation's great test is behind us, and we write its verdict plainly: the doctrine held.
+
+- What we had built over two generations of patient work — the lateral road, the silver and
+  grain pressed into the hands of rival sub-chiefs, the fort advanced one deliberate step at a
+  time, the single Senate-confirmed commander placed over a concentrated force — was tested when
+  the paramount chief of the German confederation chose his moment and crossed the Rhine in force.
+  He crossed onto our bank, into ground we had prepared and supplied, against legions who had
+  moved faster than he believed possible because the road existed and was kept. We broke the
+  crossing there, on our own soil, and then we held. We did not pursue into the deep forest
+  where mud and ambush and scattered paths turn Roman discipline into Roman disorder. We had
+  learned that lesson before, at cost. We did not relearn it at cost.
+
+- The confederation, denied the victory it needed to bind its parts together, dissolved into
+  what confederations always dissolve into when the paramount man cannot deliver: quarrelling
+  successors, clients peeling away, chiefs who had submitted to him now sending their own
+  delegations to our fort-commanders with their own requests for silver and grain. This is not
+  the end of the forest peoples. The forests are still full of men and the river is still the
+  boundary. But the one man who had drawn them toward a common purpose is gone, and the
+  successor-chiefs have neither his authority nor his cause. The generation's threat has been
+  met and turned. This is enough. We claim no more than what is true.
+
+- The commander who broke the crossing received his triumph. He received no second great command
+  on that frontier. He was rotated, honored, and given the standing of a man the Senate thanks.
+  This was deliberate, and the Senate understood it so. We gave him his glory and we bounded it.
+  A man who broke a Rhine crossing in force, if left in place with those legions at his back,
+  is a man with a question in his head that becomes harder to silence each year the answer is
+  close. We have answered that question before. We do not answer it twice.
+
+- The great mountain of fire in Campania — we did not foresee it and could not have managed it
+  — destroyed Herculaneum and Pompeii and the rich towns on that shore, burying them in ash and
+  stone that no army or treasury can shift. We set down what we did, because what a government
+  does in catastrophe is its character made visible: we remitted the survivors' taxes. We funded
+  the rebuilding of those who had something left to rebuild. We drew on the treasury without
+  apology. The cost was real; we absorbed it. The provinces saw that Rome remits tribute for
+  ruin and spends coin on its own people's devastation. They had seen us do it before, in Asia,
+  in the earthquake years. They see it is not accident; it is practice. We believe that is worth
+  more, over a generation, than any additional revenue we could have squeezed from Campania's grief.
+
+- On Egypt, we made the generation's most consequential quiet move. We did not send an army.
+  We did not dispute the Syrian coastline. We sent men — our own, dressed as what the harbor
+  trade requires: merchants, factors, money-lenders, grain-assessors, the kind of men who sit
+  in an office behind a dock and count what comes off ships and record who paid and who did not.
+  We have placed such men, carefully chosen, inside Alexandria's grain-offices and harbor
+  accounts. They are not there to steal cargo or start fires. They are there to watch and to
+  remember and to tell us, over years and over the lives of their sons if necessary, what Egypt's
+  granaries truly hold, what its fleet is truly worth, what the men who sit in its treasury rooms
+  truly argue about. The marketplace tells us prices. These men will tell us intentions. The
+  Delta is still a death-trap for an army, and a man who took Egypt would hold Rome's grain. We
+  have not forgotten either of those truths. But the day will come when we know enough to act
+  without stumbling blind, as the renegade stumbled in 90 BC. We are planting that knowing now,
+  for whoever writes these pages a generation or two hence.
+
+- The heir we began preparing early, and we began with the east — the administrative commands,
+  the revenue posts, the courts and accounts and grain-calculations of the eastern provinces,
+  where governing means reading and deciding rather than leading a column through mud. He sat
+  beside the Princeps at the accounts. He was shown the ledgers, the census returns, the
+  shortfall reports from difficult districts, and was made to propose answers and to defend them
+  to men who knew the numbers better than he did. His standing was built on governance before
+  it was built on the army's affection. We still mean to give him the military postings — we
+  have not abandoned the rule that the heir must be known to the soldiers. But a man who only
+  knows the army is a man whose tools are all the same shape. The eastern rotation first was a
+  deliberate choice, and we expect it to make him a different kind of heir than those before him.
+
+- Population we reckon now at near seven million. The treasury is healthy despite the Vesuvius
+  relief: the levy on Gallic and frontier revenues absorbed it without strain. Gaul pays
+  reliably. The northern threat is broken on our own ground and fragmented among successors
+  who quarrel with one another rather than with us. The Principate has proven its succession
+  mechanism twice — once in the death-transition, and once in the discipline shown to the
+  commander after his triumph. The system governed itself. We write this as a true account of
+  what the generation has yielded, without embellishment and without false modesty. It is a
+  good account.

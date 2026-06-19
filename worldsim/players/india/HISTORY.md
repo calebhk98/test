@@ -276,3 +276,71 @@
   and have not moved. The cavalry improves. The steel circle is tighter than it has ever been. The
   home-breeding of horses is underway. We do not know the Yuezhi's ceiling. We do not mistake what
   we have endured for victory. We are not finished.
+
+## 100 AD
+- The passes held. They have held for more than three and a half centuries now, and the men who
+  garrison them do not speak of this as a miracle — they speak of it as how things are. We allow
+  ourselves no such comfort. A wall that is never tested learns nothing about itself, and ours has
+  been tested, again and again, by people who came out of the north with everything they had. It has
+  held because we made it hold, and that is a different thing than being impregnable.
+- We were offered the Yuezhi alliance twice in this generation, once in the plain form of shared
+  borders and gifts, and once in the form of a marriage — one of their chief-men's daughters to a
+  son of the court, sealed with the usual tribute and mutual recognition. We refused both. We have
+  refused both before and we give the same answer each time: a marriage binds one man to one faction
+  inside a confederation, and a confederation is not one man. We would acquire a bride who is either
+  a hostage in our hands or a spy in theirs, a tribute arrangement that names us as lesser, and a
+  bond that reads to every watching eye on the frontier as submission dressed in silk. The passes do
+  not need that bond. The passes are the answer. We gave the envoys gifts and a pleasant meal and
+  sent them north with nothing they could show their lords as a concession.
+- The watch that we built to track the flagged cantonment malcontents proved itself in this
+  generation, and proved itself cleanly. We had moved the men in question — the two or three whose
+  faces told us what their mouths withheld during the disclosure gathering — inward, under cover of
+  promotion, to posts deeper in the interior. This was not concealment; to them it wore the face of
+  advancement. The surveillance moved with them, and they arrived at their new posts without access
+  to our agent network or to the forge circle, and without any way to know they had left their
+  access behind rather than carried it forward. One of them, in time, reached outside. A contact
+  attempted — subtle, as these things are, but contact nonetheless. We took him quietly, on ground
+  where the arrest drew no steppe eye and stirred no revolt in the cantonments, and we had him
+  before anyone knew to ask where he had gone. The system worked exactly as we designed it to work.
+  We do not celebrate this. We record it, because a system that is used is a system whose gaps also
+  show; we examine what he almost reached and we close what can be closed.
+- We have made permanent what had been practice: cantonment-origin men — Saka-born, of the first
+  generation's blood — are excluded from the spy-network and from the wootz forge-circle. Not by
+  informal custom, not by the caution of individual officers who happen to remember, but by written
+  rule entered into the record of this council. The rule is to be re-decided explicitly, by this
+  council or its successors, each generation. It does not lapse. It does not drift open through
+  familiarity. If a future generation judges the Saka fully Indian enough to be brought inside the
+  circle, let them say so plainly and write it so. We will not let three centuries of care dissolve
+  because no one remembered to say it should continue. At the same time, the second-generation
+  Saka officers who now hold mid-rank cavalry command are not our enemies — they are our soldiers,
+  and good ones, and they know nothing of this rule because they need not. The exclusion is not
+  contempt. It is caution about information that, once out, cannot be recalled.
+- We also added, to the same record, a quiet watch for any man with smith's hands — smith-skilled
+  by his look and his tools and his years, whether or not he holds a forge title — living or
+  moving near the cantonments. The ingot-count catches theft; only watching catches memory. A man
+  who has worked iron and heard the right talk and spent years near the right men may carry the
+  making inside him without a single ingot leaving our hands. We cannot count what a man knows. We
+  can watch who speaks to whom.
+- The home horse-breeding program, begun a generation ago under imperial studs and imperial breeders,
+  proved itself in this generation — the bloodlines held, the numbers grew, and in the year we name
+  as the eighty-eighth year of this common reckoning we began, quietly, to taper our purchases from
+  the Yuezhi. Not fast. Not in a way that reads as a signal. Small reductions, within the ordinary
+  noise of trade — a bad season, a different factor, a slightly different mix of mares and colts.
+  Reversible the instant any Yuezhi merchant appears to take notice. We will wean ourselves off the
+  people most likely to one day come south in force, and we will do it so slowly that the channel
+  looks merely like commerce growing quieter by degrees, not like preparation for the day we do not
+  need them.
+- The Nile kingdom trade deepens further. We have moved to goods that carry more of our craft in
+  them — finer weavings, more-worked ivory, prepared spice that is blended here rather than raw,
+  gem-work rather than loose stones. More value, more margin, nothing that teaches the making to
+  the buyer. Our formal envoy in their ports reports only what any honest man with eyes can see in
+  the harbor — what ships tie up, what goods they carry, what the merchants talk of in the open
+  market. We have not asked him to reach past that. The Nile kingdom's inland politics are their
+  own; we do not yet have the men or the reach to know them, and a curious eye that is caught is
+  worse than an ignorant one.
+- Population near forty-five million. The treasury is large. The passes have now held for three and
+  a half centuries against every wave the north could send. The cantonment Saka are being made into
+  Indians, and the process is working, and its exceptions are contained. The steel secret is intact
+  and the forge-circle is better guarded in memory than it has ever been in metal. We do not know
+  the depth of the Yuezhi. We do not know how the taper reads to their merchants. We do not know
+  what the Nile kingdom's world looks like from the other side of it. We are not finished.

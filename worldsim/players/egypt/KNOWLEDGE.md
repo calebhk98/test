@@ -254,3 +254,54 @@ Open questions: none recorded yet.
   might one day extend our reach and our options? How many more generations can we hold sovereign
   before some shift in the Roman court, or some failure of our own, opens the gate we have kept
   shut for so long?
+
+## ~100 AD — what we now perceive
+- THE LESSON OF THE SOFT LEVERS: We have now lived through the full consequence of confusing a soft
+  lever for a hard one, twice over in a single generation. The papyrus lever had rusted away while
+  we polished it; the Nabataean eastern channel had been carrying our whispers to no one of authority.
+  We do not grieve these losses anymore. We record the lesson and mean to hold it: a lever must be
+  tested against reality before it is counted. What is real and hard is what we own by physical
+  right — grain, the sea-road, the fleet, the fortified ground. We will not again mistake an
+  untested arrangement for a weapon we possess.
+- THE KINGDOMS EAST OF INDIA — GLIMPSED FOR THE FIRST TIME: Our two ships returned with real charts
+  and the reports of men who sailed there. There are rich kingdoms east and south of India's great
+  peninsula — several of them, by the accounts, each with their own harbors and their own deep
+  inland trade. We do not know their true strength, their politics among themselves, their
+  relations with the Indian kingdoms we already know, or whether any connection with them would
+  serve us. We know only that they exist, that they are wealthy, and that the monsoon roads that
+  carry our Indian trade extend further than we had gone. We name them as a fact now, not as a
+  rumor from another's mouth.
+- THE RUMOR OF A GREAT LAND STILL FURTHER EAST: Beyond those kingdoms, the Indian merchants and
+  our own returned men speak of something larger — a vast empire or land mass lying to the far
+  east, of enormous population and wealth, whose name we cannot yet set down with confidence and
+  whose nature we cannot describe. Whether this is one realm or many, whether it trades by sea or
+  only by long overland roads, whether it is stable or contested — we do not know. We count it
+  as a rumor of the world's further shape, and we record it, and we watch for more word.
+- ROME — STILL NOT MOVED, BUT THE WATCH MAY DEEPEN: Whoever holds Rome's mastery now has not
+  marched on us across this generation either. His legions remain in the Syrian territories; they
+  watch the same border we watch from the other side. We believe our posture of being useful and
+  costly continues to shape their calculation. But we note that with each generation Rome's
+  administrative hold over its provinces grows more practiced and more thorough. A Rome that knows
+  how to govern difficult places more efficiently is a Rome that can contemplate taking a difficult
+  place at lower cost than a Rome of earlier generations could. We do not know whether this is
+  happening or at what pace. We feel the uncertainty and we name it here: Rome's watch may be
+  deepening even while it does not yet move.
+- THE COMMERCIAL WESTERN CHANNEL: The Indian overland merchants through whom we now receive
+  intelligence of the western lands beyond Rome are reliable by self-interest — they carry goods,
+  not secrets, and what we learn comes as a by-product of honest trade. This is sounder than what
+  it replaced, but its reach is limited. We know what those merchants know, and no more. The lands
+  beyond Rome's eastern marches remain obscure to us in their depth — we know trade-ports and
+  caravan-roads in rough outline; we do not know armies, successions, or intentions.
+- WHAT IS HARD AND WHAT IS SOFT — THE RECKONING: Grain: hard. India sea-trade: hard. Fleet: hard.
+  Red Sea waystation chain: hard. Fortified Delta and Sinai approaches: hard. Papyrus lever: soft,
+  held for revenue only, not for threat. Eastern shadow: abandoned. Heir's administrative role:
+  a legitimacy investment, not a lever. These are the true assets. We will not mistake the
+  remainder for weapons.
+- Open questions: What is the true character of the kingdoms east of India — their wealth, their
+  stability, their openness to trade? What is the vast land or realm said to lie still further
+  east — does it trade by sea, and if so, is there a route we could one day sail to it? Is Rome's
+  watch deepening toward active planning, or does the same calculation that has stayed its hand
+  for two generations continue to hold? Will the next Roman succession bring a master who reckons
+  by profit and cost, or one who reckons by glory and fear? Can the heir's bounded role survive
+  the transition to full authority without creating the rival power-base we have been careful to
+  deny him — and will he hold the kingdom as we have held it, or will he read the map differently?

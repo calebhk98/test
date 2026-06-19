@@ -609,3 +609,95 @@ Egypt finally learns the truth about Roman paper.
   monopoly tightened, weaning off Yuezhi horses.
 
 World date → 70 AD.
+
+## 70–100 AD — Turn 12 (all four live; full real loop; the grind reaches 100 AD)
+Defend round run live (4 Sonnet agents). All four rejected their planted bad ideas and adopted real
+revisions. The one curated natural event in this window is applied: the **79 AD eruption of Vesuvius**
+(Roman Campania — Pompeii/Herculaneum). The German-confederation arc reaches its first reckoning.
+
+- **CHINA — keeps the device SECRET and UNBUILT but makes it reproducible; renews the steppe's fear.**
+  Rejected building a reserve of bursting vessels ("not yet a sword — proven once, can't yet make twice,
+  carry safely, or ignite at will; a captured vessel surrenders the principle") and rejected revealing
+  it to its own generals ("generals have aides; aides have households"). Instead it converted the
+  five-engineer study toward RELIABLE REPRODUCIBILITY — but, conceding that 5-8 trials over 30 yrs
+  would advertise the compound, revised to spaced, council-authorized, occasion-disguised trials, each
+  answering one recorded question, minimum men. Added the second apprentice; cross-filed salt/iron
+  revenue across two of the three council-bodies (answering "who audits the auditors"); and — answering
+  "a leash of habit is not a leash of fear" — ran ONE calibrated punitive demonstration against the
+  isolated northern Xiongnu holdouts, jointly with the southern vassal's riders, making the young new
+  chief's arithmetic undeniable (the north offers only hardship; Han offers titles + silver). Increased
+  resources to independent (non-Anxi) western intelligence but still refused a direct bypass mission
+  (would arrive as Anxi's client and rupture the Silk Road silver). Fiscal floor held and rebuilt above
+  itself. By 100 AD China holds a secret, on-demand-reproducible (still unbuilt) directed-force weapon —
+  the single largest hidden capability in the world — plus a faint map of a great western state.
+- **ROME — ★BREAKS the German confederation's crossing ON ITS OWN BANK (doctrine vindicated); survives
+  Vesuvius; succession reform holds into a second cycle.** Pressed divide-and-rule harder (silver/grain/
+  prestige-goods — NEVER iron — to sub-chiefs INSIDE the confederation to buy friction, not loyalty;
+  rejected client-king-ing the paramount chief, since a war-leader made Rome's client loses the raiding
+  his followers obey him for). Advanced ONE supply-first fort-step. **Late in the generation the
+  paramount chief launched his crossing in force — and Rome met it exactly as planned: a single
+  designated, Senate-confirmed commander, concentration via the lateral Rhine-Danube road, the crossing
+  BROKEN on the Roman bank, NO pursuit into the forest.** Denied its founding victory, the confederation
+  fractured into quarrelling successor-chiefs (the divide-and-rule paying off). The senatorial-oversight
+  frame bounded the victor's glory — a triumph, but no new over-mighty rival. **The 79 AD Vesuvius
+  eruption devastated Campania; Rome answered with tribute-remission and reconstruction (the Titus
+  response), consistent with its "disaster well answered binds provinces" doctrine** — a real fiscal
+  hit, absorbed. Upgraded Egypt-intelligence from dockside rumor to the deliberate SEEDING of commercial
+  agents inside Alexandria's grain-bureau/port apparatus via equestrian client networks (a real
+  multi-gener­ational investment toward an eventual Egypt reckoning — still no military move; the Delta
+  stays disqualifying). Began the next heir's rotation EARLY, east-first + co-fiscal governance so his
+  identity is not purely martial. By 100 AD: the most institutionally stable Rome conceivable — succession
+  solved twice, the great northern threat broken on favorable ground, Gaul + frontier secure.
+- **EGYPT — rebuilds its security on hard assets and reaches a dim awareness of the FAR EAST.** Having
+  learned its papyrus and Parthia levers were soft, Egypt leaned into what is real: grain, the India
+  sea-trade, the fleet, fortified approaches. Ran the controlled EASTWARD PROBE (1-2 ships embedded in
+  Indian convoys, no Egyptian emblem, knowledge-first) — it returned with real charts and word of rich
+  kingdoms east of India and rumor of a great land-power further still (China's sphere, unrecognized):
+  **Egypt's horizon now extends, dimly, to the far east for the first time.** Replaced the hollow
+  Nabataean Parthia "shadow" with a self-interest-based COMMERCIAL channel via India-overland merchants
+  (reliable as traders, not as messengers; political intelligence as a by-product, no deniable courier
+  fantasy). HARDENED the entire Red Sea waystation chain BELOW Roman view (making the India trade visibly
+  dependent on Egyptian naval goodwill — Egypt costlier to absorb), continued the quiet ~300-hull navy
+  upgrade, extended middle-nome basin-irrigation, and gave the heir a bounded, countersigned functional
+  administrative role (visible legitimacy without an independent power base). Rejected a formal Roman
+  grain-compact ("a collar with ceremony"). By 100 AD: an independent maritime-commercial superpower,
+  soberer and better-grounded, ~9.4M, now the hinge between the Mediterranean, India, and the dimly-seen
+  east.
+- **INDIA — holds the NW (now ~360 yrs unbroken), weans off the Yuezhi, and its watch catches a traitor.**
+  Held the passes (rejected, again, the open-field steppe test and a Yuezhi marriage-tribute alliance —
+  "their unity is situational; a marriage binds one man, not the confederation"). Re-posted the flagged
+  Saka malcontents into the interior under cover of promotion WITH the surveillance migrating with them
+  and no access to intelligence/metallurgy — and the watch proved itself: one malcontent eventually
+  attempted an outside contact and was quietly taken on ground where the arrest drew no steppe attention
+  and triggered no cantonment revolt. Formalized in the administrative record the permanent EXCLUSION of
+  cantonment-origin men from the spy-net and the wootz forge-circle (reviewed, not drifted, each
+  generation), while second-gen Saka hold mid-rank cavalry. Added a memory-monitoring intelligence line
+  atop the ingot audits (the count catches theft; the watch catches a smith's memory). Validated the
+  home horse-breeding program (~88 AD) and began a deliberately slow, weather-disguised TAPER of Yuezhi
+  purchases — reversible at any sign they read it as a signal. Deepened the formalized Nile trade
+  (value-added goods; envoy reporting commercial observation only). By 100 AD: cavalry matured, steel
+  monopoly intact, the Saka absorbed and increasingly Indianized, the Yuezhi dependence shrinking,
+  ~45M — the immovable subcontinental power.
+
+### Cross-developments @100 AD (endpoint)
+- **China:** secret, reproducible, still-unbuilt directed-force weapon (a civilization-scale hidden
+  edge); steppe re-cowed; militarist and stable at ~58M; only a faint rumor-map of the great western
+  state, Anxi still brokering the two apart.
+- **Rome:** the German confederation's bid BROKEN on the Roman bank and fractured; Vesuvius weathered;
+  the succession machine validated across two cycles; now quietly seeding real intelligence inside Egypt
+  for a reckoning still generations off. ~7M.
+- **Egypt:** independent maritime superpower; old soft levers discarded, rebuilt on grain + India trade
+  + a fortified Red Sea artery + a new commercial eastern channel; horizon newly (dimly) extended to the
+  far east. ~9.4M.
+- **India:** the NW held for three and a half centuries; Saka absorbed, Yuezhi dependence weaning, steel
+  edge intact. ~45M.
+- **The world at 100 AD:** still NO direct China↔(Egypt/Rome/India) contact — but for the first time
+  rumor bridges the gap from BOTH ends (China hears of a western great power; Egypt hears of eastern
+  ones), with Parthia/Anxi the deliberate buffer between. All four authored divergences are alive and
+  compounding: independent Egypt, paper-Rome (now also succession-stable and a German-confederation
+  victor), gunpowder-China (now with a proven secret weapon), militarist-India (unfallen, Saka-absorbing).
+  The OTL collapses cancelled by the China divergence (Wang Mang, Yellow Turbans, Three Kingdoms) and by
+  the Rome divergence (Julio-Claudian succession chaos) remain cancelled. The Antonine-plague risk (~165
+  AD) lies beyond this horizon and is still contingent on a direct contact that has not occurred.
+
+World date → 100 AD. ■ Grind complete: 260 BC → 100 AD (Turns 1–12).

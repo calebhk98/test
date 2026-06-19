@@ -223,3 +223,43 @@
 - Fiscal: treasury solvent under the fiscal floor rule. Not comfortable; unbroken.
   Silk Road silver supplement continues. Salt, iron, and land taxes remain the foundation.
 - Posture: hard, ordered, militarist. The realm does not soften. Population ~55M.
+
+## Update — 100 AD
+- Population: ~58M; growth continues. The northern plain is fully productive again.
+  The realm is dense, administered, and producing at its highest level in a generation.
+- Governance: REVENUE CROSS-FILING now in force. Salt-and-iron monopoly ledgers are
+  now shared in summary across council-bodies under different patronage, with the
+  censorate holding comparison rights. No single body can skim invisibly; discrepancies
+  surface in ledgers kept by parties who owe the body nothing. This is the third major
+  institutional hardening (after the split tally-seal and the three-body confirmation
+  council).
+- Military: ONE SHARP PUNITIVE EXPEDITION against isolated northern Xiongnu holdouts,
+  conducted jointly with the southern vassal-chief's own riders. Limited in scope;
+  decisive in effect. The young vassal-chief rode with us, not beside us — he is now
+  a participant in the suppression of the north, not a bystander. The lesson was in
+  the doing, not in words or gifts. Northern holdouts further weakened. The young
+  chief's leash is no longer merely habit; it is reinforced by shared action.
+- THE BURSTING VESSEL — RELIABLY REPEATABLE IN UNDERSTANDING, STILL UNBUILT:
+  -- The five sworn engineers and two apprentices now understand the bursting vessel
+     well enough to produce it again on demand, from the written record, without
+     requiring another proof-trial. The move from "proven once" to "reproducible on
+     demand" is complete in the engineers' heads and in the vault.
+  -- No vessel has been built for the field. No army has it; no soldier has seen it;
+     no foreign power suspects it exists.
+  -- SEVEN carriers of knowledge now: five sworn engineers (old generation) + two
+     younger apprentices in formation (the second apprentice added this generation).
+  -- Status: five sworn engineers + two younger apprentices; two sealed vaults;
+     no field weapon; no foreign awareness; secret absolute.
+  -- Council judgment: not yet a sword — cannot be carried safely among troops,
+     cannot be fielded without risking the secret if one is captured, cannot yet be
+     produced in quantity without revealing what is being made. Restraint continues.
+- Diplomatic: Anxi (Parthia) broker-partnership on Silk Road continues producing
+  revenue. INDEPENDENT WESTERN INTELLIGENCE inquiry deepened this generation —
+  richer rumor but still no independent map or road to the great western state.
+  We refused to send a grand mission via the Anxi road, which would make us arrive
+  as Anxi's clients and surrender the silk-silver leverage. The far western state
+  remains beyond our independent reach.
+- Fiscal: treasury above the fiscal floor — surplus real but not large. The floor
+  (two full years of essential costs from salt, iron, and land taxes alone) holds
+  as the governing fiscal standard. Silk Road supplement runs steadily.
+- Posture: hard, ordered, militarist. The realm does not soften. Population ~58M.
