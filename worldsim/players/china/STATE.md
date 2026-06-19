@@ -97,3 +97,13 @@
   (deliberate realistic pace). Kept as guarded state secret.
 - Court: consort-clan/regent factions balanced beneath the throne; militarist state holds.
 - Economy: monopolies fund garrisons; ~44 BC Yangtze flood a regional drag.
+
+## Update — 10 BC
+- SHATTERED the northern Xiongnu (split/bribed/settled the rest, drove the irreconcilable WEST —
+  China is now the unseen prime mover of a steppe-wide migration onto Yuezhi/India/Parthia).
+- Walled corridor stations (tuntian); armed survey-columns probed toward Shendu (SW) — no invasion.
+- Gunpowder: standardized saltpeter purification + IRON-CASED fragmentation fire-jars w/ fuses.
+  Still no firearm (deliberate pace). Imperial monopoly; smiths sworn/isolated.
+- Stable, militarist — passed through the era our history fractured (Wang Mang interregnum
+  CANCELLED per divergence). Treats Parthia as a peer; rising silk volume (via middlemen).
+- ~24 BC Yangtze flood a regional drag; consort-clan factions balanced beneath the throne.

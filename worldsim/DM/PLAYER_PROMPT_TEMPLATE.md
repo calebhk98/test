@@ -3,6 +3,16 @@
 Each turn, each nation's subagent gets a prompt built from this template. The REALISM RULES
 block is mandatory and unchanged; only [SITUATION] varies.
 
+## METHOD (from 10 BC onward): subagents READ THEIR OWN FOLDER
+Each player subagent is told to FIRST read its own three files and act from them, instead of the
+DM re-summarizing everything:
+- `worldsim/players/<nation>/KNOWLEDGE.md`  (what it believes — may be wrong)
+- `worldsim/players/<nation>/STATE.md`      (its current economy/military/territory/unrest/tech)
+- `worldsim/players/<nation>/HISTORY.md`    (its own remembered past)
+It may read ONLY its own folder (fog of war). The DM still injects, in [SITUATION], any NEW
+perceivable development this turn (a war declared on it, an invasion, a visible omen, etc.) that
+isn't yet in its files. The DM (not the player) writes canon afterward.
+
 ---
 You are the ruling council of **[NATION]** in an alternate-history simulation, year **[YEAR]**.
 

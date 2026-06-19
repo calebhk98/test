@@ -1,6 +1,18 @@
 # GROUND TRUTH — DM ONLY (no player ever reads this)
 
-Current world date: **40 BC**  (started 260 BC; see TIMELINE.md for resolved turns)
+Current world date: **10 BC**  (started 260 BC; see TIMELINE.md for resolved turns)
+
+> Status @10 BC: ROME refounded as a veiled monarchy; rebuilding; blocked east/south so it
+> EXPANDS NORTH (Germania/Danube); "strangle then strike" Egypt later; courting Parthia to split
+> it from Egypt. EGYPT fortified vs a returning Rome, deepened Parthia alignment, and is lunging
+> SOUTH (Nubia/Kush, Red Sea, African coast) for strategic depth — OVEREXTENDED (thin garrisons,
+> supply strain, African friction). CHINA shattered the northern Xiongnu (drove them WEST — now
+> the prime mover of a steppe-wide migration onto Yuezhi/India/Parthia); militarist, stable
+> (Wang Mang era cancelled); gunpowder = iron-cased fragmentation fire-jars, still no firearm.
+> INDIA holds the consolidated Yuezhi via defense-in-depth + splitting khans; gained a LEATHER
+> LOOP STIRRUP (cavalry edge, ahead of our timeline). PARTHIA = hinge of Eurasia. Contact: Egypt-
+> Rome cold war; Egypt-Parthia secret align; Rome-Parthia détente attempt; China→Parthia trade;
+> India↔China only via steppe pressure.
 
 > Status @40 BC: Egypt ASCENDANT — holds the Levant coast + Cyprus (Rome holds inland Syria);
 > helped destroy a Roman army in Parthia; secretly aligned with Parthia; watches Rome convulse in

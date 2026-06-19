@@ -93,3 +93,14 @@
   trade/rich not the grain base.
 - Threat ongoing: the Yuezhi are hardening into a superpower-in-formation on the NW frontier.
 - Awareness unchanged (Egypt relayed; vague eastern-realm rumor).
+
+## Update — 10 BC
+- Held the consolidated Yuezhi confederation: pass-fort defense-in-depth (deny water/forage) +
+  bribing/splitting lesser khans into client buffers + a chosen wet-season strike to crack unity.
+  Held NW, south, Sri Lanka, and the Ganga heartland.
+- TECH EDGE (ahead of our timeline): developed a working LEATHER LOOP STIRRUP + high saddle —
+  a real mounted-archery/lance advantage, driven by the existential cavalry war. (NOT iron stirrups.)
+- Internal: rotated cavalry commands (anti-warlord), family-hostages at court, audited governors,
+  heir trained; war-tax on trade/rich.
+- The Yuezhi remain a hardening superpower-in-formation; the steppe pressure is intensifying
+  (unknowingly driven by China). Awareness of distant powers unchanged.

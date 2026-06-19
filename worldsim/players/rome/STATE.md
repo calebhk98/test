@@ -76,3 +76,13 @@
 - Has stronger (not airtight) evidence Egypt funded its enemies — but civil war prevents retaliation;
   it's now a factional propaganda weapon at home.
 - Territory: + Gaul, inland Syria; rich but politically shattered. Contact: war with Egypt; none E.
+
+## Update — 10 BC (refounded; turning north)
+- Civil wars ended; a victorious strongman founded a veiled MONARCHY (Republican forms, real
+  one-man rule) ~30–27 BC. Rebuilding: veteran colonies, coinage/census reform, grain security
+  (Africa/Sicily + Ostia granaries), a Mediterranean fleet.
+- Posture vs Egypt: "strangle then strike" — proxies (Judaea/Nabataea), economic pressure, court
+  Parthia to split it from Egypt. NOT yet able to invade Egypt (no sea command).
+- EXPANSION NORTH: driving the Rhine/Danube and into Germania (conquest-energy redirected from the
+  blocked east) — building a northern land-empire.
+- Internal: new monarchy stabilizing; veterans settled; grain secured. Contact: cold war w/ Egypt.

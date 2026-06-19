@@ -324,3 +324,46 @@ World date advanced to: 65 BC
 - **India↔China:** still only the unseen Saka/Yuezhi link; no direct contact.
 
 World date advanced to: 40 BC
+
+## 40–10 BC — Turn (Rome refounds & turns NORTH; Egypt expands SOUTH; inline-verified)
+- **Rome refounded; expansion goes NORTH.** The civil wars ended: a victorious strongman absorbed
+  his rivals' veterans and founded a veiled monarchy (Republican forms, real one-man power)
+  ~30–27 BC. Rebuilt: veteran colonies, coinage/census reform, African/Sicilian grain + new
+  granaries & the Ostia harbor (breaking Egypt's food leverage), and a Mediterranean war-fleet.
+  Posture toward Egypt: "STRANGLE then strike" — proxy/economic pressure now, war later; courted
+  Parthia coldly (détente, hostage-prince) to DETACH it from Egypt; armed Egypt's neighbors
+  (Judaea, Nabataea) as proxies. **Blocked east (Egypt's sea) and south, Rome turned its conquest-
+  energy NORTH** — drove the Rhine and Danube frontiers and pushed into Germania, building a
+  northern land-empire as compensation for the lost east (deeper than our history's reach).
+- **Egypt fortifies AND lunges SOUTH (recklessly).** Expecting a reunited Rome to return, Egypt
+  ringed Alexandria/Pelusium and Cyprus with walls/chains, built swift ramming squadrons (deny
+  the sea, don't match legions ashore), deepened the quiet Parthia alignment, and sent envoys to
+  Rome's new master DENYING all past meddling while still funding Roman malcontents. Crucially it
+  opened a **southern strategic-depth program**: pushed up the Nile into Nubia/Kush, fortified
+  Red Sea ports, and planted bases down the African (Red Sea/Horn) coast for resources, manpower,
+  and a refuge-rear. This OVEREXTENDS Egypt — thin garrisons, long supply, friction with African
+  peoples, fiscal strain — a real new vulnerability even as it seeds an African dominion.
+- **China shatters the northern Xiongnu — and sets the steppe in motion.** Bribed/split the
+  remnant, settled southern Xiongnu as bordered auxiliaries, and drove the irreconcilable horde
+  WEST. (Ripple: this pushes yet more nomads west/south — compounding pressure on the Yuezhi, on
+  India's NW, and on Parthia's NE; NO ONE downstream knows China is the cause.) Walled corridor
+  stations (tuntian); armed survey-columns toward Shendu (no invasion). Gunpowder: standardized
+  saltpeter purification + IRON-CASED fragmentation fire-jars with measured fuses — still no
+  firearm. Stable, militarist — sailed through the era our history fractured (Wang Mang CANCELLED).
+- **India holds the Yuezhi — and gets ahead on cavalry tech.** Defense-in-depth at the pass-forts
+  (deny water/forage, scorched approaches) + bribing/splitting lesser Yuezhi khans into client
+  buffers + one chosen wet-season strike to crack their unity. Held the NW, the south, Sri Lanka,
+  and the Ganga heartland.
+  - **DM tech ruling (directive 4 / "let them get ahead"):** driven by an existential cavalry war
+    and relentless focus, India developed a working **leather LOOP STIRRUP + high saddle** (NOT
+    iron stirrups yet) — plausibly a century-plus ahead, but grounded (leather/rope loops predate
+    iron; India/Central Asia are candidate origins). Gives India a real mounted-archery/lance edge.
+
+### Cross-awareness (TRUE)
+- **Rome ↔ Egypt:** cold war; Rome trying to peel Parthia away from Egypt and to encircle Egypt
+  with proxies; Egypt denies wrongdoing while preparing. Rome expanding north, not yet able to strike Egypt.
+- **China → Parthia:** treats it as a peer horse-kingdom; rising silk volume via the corridor —
+  still NO direct China↔Rome/Egypt contact (Parthia the hinge). India↔China: still only the
+  (now intensifying) steppe-pressure link.
+
+World date advanced to: 10 BC

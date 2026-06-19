@@ -81,3 +81,12 @@
   far west toward the great horse-kingdom of Anxi, to open the road of silk to its end.
 - Our fire-art grows: jars that throw flame and splinters, with fuses that burn true. The full
   mastery of it is still beyond us, and we bide our time. The realm is strong and does not soften.
+
+## 10 BC
+- We broke the northern horde at last — some we bought, some we settled, and the stubborn we drove
+  out westward into the wastes, no longer our concern (so we thought). The oasis-road is now a chain
+  of our walled stations, feeding its own garrisons. Toward the elephant-land of the southwest we
+  sent armed surveyors, not armies; mountains eat armies.
+- Our fire-jars are now cased in iron and burst with cutting shards; the formula is the throne's own
+  secret. We do not yet command its full power, but each year we know it better. The realm stands
+  whole and hard — no usurper, no division.

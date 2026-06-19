@@ -86,3 +86,14 @@
   their great conqueror of Gaul made himself a tyrant, was murdered, and his heirs bleed Italy white.
 - We did this with silver and patience, not with our own blood. Egypt stands first among the powers
   we know, and Alexandria's light has never burned brighter. Let Rome destroy Rome.
+
+## 10 BC
+- Rome has found a single master and stitched itself back together — so the danger returns, greater
+  for being whole. We have walled our great cities, chained our harbors, and built fleets swift
+  enough to keep the Romans forever off our shore.
+- Fearing the day Rome turns on us, we reach SOUTH for depth and strength: up the Nile into the
+  gold-lands of Kush, along the Red Sea, and down the African coast, raising forts and ports for a
+  rear no Roman fleet can reach. We move fast — perhaps too fast; our garrisons are thin and the
+  southern peoples and the long roads test us, and a poor Nile year strained our purse.
+- Still: Egypt is first among the powers we know, unconquered, and now reaching for a second realm
+  in the south.

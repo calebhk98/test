@@ -178,5 +178,26 @@ plausibly perceive it.
 ## ~44 BC — Yangtze-basin floods, southern China
 - Serious. Perceived: China. Drowned paddies, displaced families, dike-repair levies, 2 lean years.
 
+## ~37 BC — Earthquake, western Anatolia
+- Moderate-severe. Perceived: Greek/Anatolian coast. Toppled a town/moles; depressed regional trade
+  ~3 yrs. Uncounterable.
+
+## ~33 BC — Nile failure (low flood), Egypt
+- Serious (regional). Perceived: Egypt. Delta/Fayum shortfall; price spikes, out-migration, fiscal
+  pressure. (Bit harder given Egypt's costly southern expansion.)
+
+## ~29 BC — Locust swarm, Levant/Syria → Mesopotamian fringe
+- Severe (local-regional). Perceived: Levant war-frontier. One lean year, debt, seed-grain borrowing.
+
+## ~24 BC — Yangtze basin floods, southern China
+- Serious. Perceived: China. Dike breaches, drowned paddies, displaced villages; 2-yr recovery.
+
+## ~18 BC — Harsh winter / dzud, northern steppe
+- Severe. Perceived: nomads + frontiers. Herds decimated → more southward pressure (compounds the
+  China-driven westward push onto India/Parthia).
+
+## ~13 BC — Comet, Mediterranean & India
+- Minor. Perceived: Rome, Egypt, India. Read as omen of upheaval. No material damage.
+
 <!-- next events below -->
 

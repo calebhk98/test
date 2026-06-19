@@ -94,3 +94,14 @@
   Rome ever reunifies. Native/Greek tension + Nile risk persist.
 - Secret alignment with Parthia against Rome; still trades east via (and partly around) Arabian
   middlemen.
+
+## Update — 10 BC (fortifying north, lunging south)
+- Rome has REUNITED under a strongman-monarch — a renewed grave danger. Egypt fortified Alexandria/
+  Pelusium/Cyprus (walls, harbor chains), built swift ramming fleets, deepened the quiet Parthia
+  alignment, and sent denials + gifts to Rome's new master while still funding Roman malcontents.
+- SOUTHERN EXPANSION (strategic depth vs a returning Rome): pushing up the Nile into Nubia/Kush,
+  fortifying Red Sea ports, planting bases down the African (Red Sea/Horn) coast.
+- ⚠ OVEREXTENDED: thin southern garrisons, long supply lines, friction with African peoples,
+  fiscal strain (worsened by a ~33 BC Nile failure). A real new vulnerability.
+- Internal: priesthood bound (Pharaonic rites), single heir named, army paid/rotated.
+- Naval-dominant, rich, independent — but now stretched between a northern threat and a southern frontier.

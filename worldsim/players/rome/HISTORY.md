@@ -70,3 +70,12 @@
   horse-lords ended in massacre. We learned, too late, that Egyptian gold guided their bows.
 - We have all but proven Egypt's hand behind our wars — yet while we cut each other's throats at
   home, we can do nothing to the Nile but hate it.
+
+## 10 BC
+- The long bloodletting is over. One man stands above all, and rules as master under the old names
+  of the Republic. We have settled our soldiers, mended the coin, filled the granaries of Africa so
+  no Nile embargo can starve us, and built a fleet for the inner sea.
+- Egypt we cannot yet reach across the water — so we strangle it: we court the Parthian to abandon
+  it, arm the kinglets at its borders, and bide our time. One day the Nile will answer for our wars.
+- And since the east is barred to us, we turn NORTH — across the Rhine and up the great rivers into
+  the forests of Germania. If we cannot have the Nile, we will have a new world of our own in the north.

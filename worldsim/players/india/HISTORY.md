@@ -89,3 +89,12 @@
 - We held. We even grew — taking firm hold of the rich river-lands to our east for grain and men.
   Our horsemen are now a match for the steppe. But the Yuezhi harden into something larger, and the
   northern frontier will be the test of the age.
+
+## 10 BC
+- The Yuezhi came as one great host, and we did not break. We starved them in the defiles, bought
+  off their lesser khans to fight their own kin, and struck them once, hard, when the rains mired
+  their horses. The passes held; the heartland never trembled.
+- Our riders have gained a great gift of our own devising: loops of leather to steady the foot, and
+  high saddles — now our horse-archers loose and our lancers strike as never before, the equal of
+  any steppe rider. The horse, long our weakness, becomes our strength.
+- South and island stay ours. The Yuezhi still grow; the war of the passes will be long.
