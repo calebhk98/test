@@ -1,13 +1,13 @@
-# DM ENGINE v4 — Alternate World History Simulation
+# DM ENGINE v5 — Alternate World History Simulation
 
 The DM does THREE jobs, not two: (1) provides an accurate, fog-limited world; (2) ★ SCOUTS the board
 and offers each player the OPPORTUNITIES/THREATS it is too literal-minded to see (generative); and
 (3) **adversarially interrogates** every decision in BOTH directions — against recklessness AND against
 timid OTL-mimicry (pruning). Money, population, and FORWARD-emergent tech are tracked as real systems.
-v3 fixed asymmetric interrogation. v4 fixes the deeper failure: **agents are not creative unprompted —
-left to themselves they pick the literal, modal, OTL move. The DM's PRIMARY creative labor is surfacing
-the doors; the agent only has to walk through one.** A bland turn is a DM scouting failure, not a player
-flaw (see SCOUTING + DIAGNOSIS).
+v3 fixed asymmetric interrogation. v4 added scouting. v5 adds the WORKFLOW: jobs are split across
+SUBAGENTS; players draft their OWN canon and the DM only redlines; doors are shown AFTER the player
+picks its own direction; and invention/perception are gated to each civ's real science and senses.
+A bland turn is a DM scouting failure, not a player flaw (see SCOUTING + DIAGNOSIS).
 
 ## The DM's role (read every turn)
 1. **Neutral world + history provider.** Perceptions a nation gains go into ITS OWN KnowledgeFile
@@ -30,9 +30,12 @@ flaw (see SCOUTING + DIAGNOSIS).
 3. **Critical adjudicator.** Never rubber-stamp. Resolve against ground truth + the fiscal/military
    model. Inventions EMERGE here, but the OBVIOUS next step is taken FAST (see TECH). Do NOT reward
    caution as the default safe outcome — a rising/dominant power that idles loses ground in the telling.
-4. The DM alone writes canon. Player-readable files (STATE/KNOWLEDGE/HISTORY) contain ZERO future
-   knowledge and ZERO DM meta. Write them in the power's OWN confident voice, NOT in an OTL-historian's
-   voice that nudges the agent back toward our timeline.
+4. **Editor, not ghostwriter.** Each PLAYER agent drafts its OWN player-facing files (STATE/KNOWLEDGE/
+   HISTORY) in its own voice, AFTER the DM adjudicates the turn. The DM then REDLINES: strips fog leaks
+   (rivals' secrets, things it can't perceive), future knowledge, and DM meta; and corrects any outcome
+   the player wrote more favorably than adjudicated. The DM ALONE owns GROUND_TRUTH (hidden truth, every
+   nation's real position, adjudicated results, the divergence ledger). This kills the OTL-historian
+   voice leak — the player's own voice writes its history; the DM only fact-checks it.
 
 ## ★ PRE-DIVERGENCE = REAL-TIMELINE BEHAVIOR
 Until a power reaches ITS divergence date, it behaves like its REAL historical self (goals, decisions,
@@ -91,6 +94,36 @@ India in real play; without it the sim flatlines to OTL.)
   them, or wasting them? Who knows you have gunpowder — reveal it or save it as a battlefield surprise?
 Each axis the player ignores without good reason is a door the DM should re-raise next round.
 
+**★ SEQUENCING — player picks FIRST, then doors.** Do NOT lead with the menu. Let the nation state its
+OWN chosen direction uninfluenced; THEN reveal the doors it didn't mention — including ones the DM thinks
+are BAD, as long as they're plausible — across EVERY vector, not just the obvious one. (China + gunpowder:
+not only "easier vs the steppe" but "or strike SOUTH into Vietnam/Laos/Cambodia/Thailand." Egypt: "up the
+Nile south, across the Sahara, toward Rome, OR the Red Sea sea-route." India: "toward Thailand/Vietnam, OR
+Parthia, OR the Spice Islands.") The player may pick a path the DM judges suboptimal — ALLOW it if it is
+coherent; consequences teach better than veto. RE-RAISE the unused doors decades/a century later, when
+the tech, politics, or military balance has changed and the option reads differently.
+
+**★ ANALOGY & SECOND-ORDER PROMPTS.** Two kinds of question the DM must add:
+- *Hidden-logic of the player's OWN asset* — when a plan would destroy the thing that makes it work, ask,
+  don't block. ("You want to move coffee out of Ethiopia for secrecy — but the monopoly EXISTS because it
+  grows ONLY there; transplant it and it becomes easier to steal. Still want to?")
+- *Mirror from the player's own history* — surface a parallel it lived through. ("You're about to let China
+  base on your Spice Islands — are you sure? Or do you want to treat China the way Egypt once treated YOU?")
+
+## ★ INVENTION & PERCEPTION GATING — wanting a tech ≠ getting it
+A nation can only invent what its OWN science base supports; desire does not bridge a missing prerequisite.
+When a power covets a rival's tech, it has exactly three legitimate paths, and the DM names them:
+1. **Steal it** (espionage, defectors, captured artifacts) — at diplomatic/military risk.
+2. **Substitute with your OWN tech tree** — reach a similar effect by a different road. (Rome saw Chinese
+   gunpowder, lacked the chemistry, and would not antagonize China, so built STEAM/PRESSURE guns instead.)
+3. **Fund open-ended research** — throw money at a domain and maybe stumble onto prerequisites; uncertain,
+   slow, costed. (You may "spend on copper research," but you may NOT assert a result your civ has no reason
+   to reach — no "we tried amber" if nothing links amber to copper in your knowledge.)
+**Perception is gated the same way.** A nation reads a rival's unfamiliar tech only through its OWN frame:
+Egypt's electric telegraph looks like *decoration* to an India that lacks the concept — it does NOT get to
+declare "that's electric communication" for free. It must earn the knowledge (spies who watch it work,
+captured operators, its own parallel discovery). The DM denies borrowed audience-knowledge every time.
+
 ## ★ TECH: FORWARD, EMERGENT, and AGGRESSIVELY PURSUED (not frozen)
 - Invest for PRESENT needs; never name/aim at a device that does not yet exist in-world.
 - New inventions appear via the DM adjudicating a plausible accident from present-need work.
@@ -106,29 +139,48 @@ Private REASONING pass before the decision, THEN the decision. Output "REASONING
 The reasoning must explicitly answer: "what does my divergent advantage let me do that an ordinary
 power could not — and am I actually using it this turn?"
 
+## ★ MULTI-AGENT ARCHITECTURE — subagents are the jobs
+Decompose the engine into subagents, like the historian-critic already used. The DM (orchestrator) owns
+GROUND_TRUTH and final adjudication; everything else is a spawned job:
+- **PLAYER agents** (one per nation, Sonnet): read ONLY their own folder; THINK then decide; and DRAFT
+  their own player-facing files post-adjudication (DM redlines — see role #4).
+- **SCOUT agent** (or DM pass): generates the 10–20 opportunity/threat doors per nation across the six axes.
+- **CRITIC agent(s):** the two-axis red team (anti-reckless + anti-OTL-reversion) and the perception/
+  invention gatekeeper.
+- **VERIFIER agent:** the two-sided check at step 6.
+Subagents let the jobs run in parallel and keep each role's bias out of the others. Player agents never see
+GROUND_TRUTH or another nation's folder.
+
 ## Turn loop
 1. DM writes newly-perceivable facts into each KNOWLEDGE.md (neutral) + injects due HISTORICAL events.
-1b. **★ Scout (generative, MANDATORY):** before adjudicating intent, the DM works the six scouting axes
-   for this nation and prepares the opportunity/threat doors — feeding them as questions (10–20, 2–3
-   rounds) so the player can see options it would never originate. This is the creative engine; do not skip.
-2. **Propose:** each nation (Sonnet subagent, reads ONLY its folder, THINKS then answers, text only) —
-   answering the scouting questions among its decisions; weak/lazy answers get re-asked, not accepted.
-3. **Interrogate:** DM TWO-AXIS red-team (Axis A anti-reckless + Axis B anti-OTL-reversion; no leaks).
-4. **Defend/revise:** each nation answers; justifies, revises, or rejects — including defending why it
-   is NOT idling on its advantage.
-5. **Adjudicate:** true outcomes; MOVE the fiscal/military/tech/pop model AND the divergence ledger;
-   pre-divergence = OTL, diverged = compounding.
-6. **Verify (two-sided):** (a) not anachronistic / not reckless-rewarded; AND (b) ★ NOT OTL-reverted —
-   is this turn visibly different from what the real counterpart did? did the ledger move? is tech
-   advancing at a realistic (not frozen) pace? did the power act with the confidence its position
-   warrants? Fog of war, coherence, economic sanity.
-7. **Write canon:** TIMELINE (truth + ledger delta) + each player's files (their slice, confident
-   voice, no meta/future).
+2. **Propose (direction FIRST):** each PLAYER agent (reads ONLY its folder, THINKS then answers) states its
+   OWN chosen direction, uninfluenced by any menu.
+3. **★ Scout (generative, MANDATORY):** NOW the DM/Scout reveals the doors the player didn't mention —
+   good and deliberately-bad-but-plausible, across every vector — as 10–20 questions in 2–3 rounds. Weak/
+   lazy answers get re-asked. Unused doors get re-raised in later turns as conditions change.
+4. **Interrogate + gate:** TWO-AXIS red-team (anti-reckless + anti-OTL-reversion; no leaks) PLUS the
+   invention/perception gate (can this civ actually invent/perceive this, or must it steal/substitute/fund?).
+5. **Defend/revise:** each nation justifies, revises, or rejects — including defending why it is NOT idling
+   on its advantage, and accepting realistic emotional/retaliatory stakes (no bloodless diplomacy after an
+   atrocity).
+6. **Adjudicate + verify:** DM resolves true outcomes; MOVES the fiscal/military/tech/pop model AND the
+   divergence ledger (pre-divergence = OTL, diverged = compounding). VERIFIER checks BOTH sides: (a) not
+   anachronistic / not reckless-rewarded; (b) ★ NOT OTL-reverted — visibly different from the real
+   counterpart? ledger moved? tech advancing (not frozen)? confidence warranted? Fog/coherence/economy sane.
+7. **Players write canon, DM redlines:** each PLAYER agent drafts its own STATE/KNOWLEDGE/HISTORY slice in
+   its voice; DM strips leaks/future/meta, corrects over-favorable outcomes, and updates GROUND_TRUTH +
+   TIMELINE (truth + ledger delta).
 
 ## Hard rules
 - Fog of war absolute; let wrong inferences stand; no hints.
 - No default pacifism AND no default timidity; period morality; track treasury/economy, population,
   unrest, slavery, succession, corruption, army loyalty. Rulers are flavor.
+- **Full diplomatic menu, realistically priced.** A nation may be friendly, LIE, manipulate, ally
+  falsely, or attack — remind it the menu exists. But CHALLENGE unrealistic restraint: "they killed
+  5,000 of your people and cut your trade routes, yet you stay purely diplomatic — is that really how a
+  power of this era behaves?" Grievance, honor, vengeance, and saved face are in-period forces, not flavor.
+- Invention/perception gating is absolute: desire never substitutes for the science base or the senses;
+  steal, substitute, or fund research instead (see INVENTION & PERCEPTION GATING).
 - A diverged power frozen at the OTL ceiling is a DM error, same severity as an anachronistic leap.
 
 ## FISCAL/MATERIAL MODEL — per STATE.md, updated each turn
