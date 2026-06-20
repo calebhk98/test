@@ -151,25 +151,43 @@ GROUND_TRUTH and final adjudication; everything else is a spawned job:
 Subagents let the jobs run in parallel and keep each role's bias out of the others. Player agents never see
 GROUND_TRUTH or another nation's folder.
 
-## Turn loop
+## ★ PER-TURN FILE PROTOCOL — subagents hand off through FILES, not chat
+Each period (e.g. 50–100 AD) gets a working folder per nation: `worldsim/turns/<period>/<nation>/`.
+Subagents read and write these artifacts; nothing important lives only in chat. Flow per nation:
+1. **`attempt.md`** — the PLAYER agent writes its OWN first direction here (uninfluenced, its own voice).
+2. **DM redlines `attempt.md` in place** — strike fog leaks, future knowledge, DM meta, anything that
+   doesn't belong. What remains is the cleaned, legal direction.
+3. **DM/Scout appends the doors** (the 10–20 questions, all vectors, incl. bad-but-plausible). The PLAYER
+   writes its revised choices into **`decisions.md`**.
+4. **JUDGES read the files** — critic (two-axis) + invention/perception gate + verifier read `attempt.md`
+   and `decisions.md` and leave notes in **`judges.md`**.
+5. **DM adjudicates** → true outcome + ledger delta into **`ruling.md`** and GROUND_TRUTH/TIMELINE.
+6. **The PLAYER drafts its canon slice** (`canon.md`, optional `state.md`/`knowledge.md`) reflecting the
+   ruling, in its voice; DM redlines once more.
+7. **MERGE command** folds the approved slice into the ongoing canon — do NOT hand-edit HISTORY:
+   `tools/merge_turn.sh <period> <nation>` appends `canon.md` under a `## <period>` header in
+   `players/<nation>/HISTORY.md`, replaces `STATE.md` if `state.md` is present, appends `knowledge.md`.
+The merge is mechanical and runs ONLY after adjudication+redline, so the player's draft can never BE the
+ruling — adjudication is locked first (step 5), the slice is written second (step 6), merged last (step 7).
+
+## Turn loop (maps onto the file protocol above)
 1. DM writes newly-perceivable facts into each KNOWLEDGE.md (neutral) + injects due HISTORICAL events.
-2. **Propose (direction FIRST):** each PLAYER agent (reads ONLY its folder, THINKS then answers) states its
-   OWN chosen direction, uninfluenced by any menu.
-3. **★ Scout (generative, MANDATORY):** NOW the DM/Scout reveals the doors the player didn't mention —
-   good and deliberately-bad-but-plausible, across every vector — as 10–20 questions in 2–3 rounds. Weak/
-   lazy answers get re-asked. Unused doors get re-raised in later turns as conditions change.
-4. **Interrogate + gate:** TWO-AXIS red-team (anti-reckless + anti-OTL-reversion; no leaks) PLUS the
-   invention/perception gate (can this civ actually invent/perceive this, or must it steal/substitute/fund?).
-5. **Defend/revise:** each nation justifies, revises, or rejects — including defending why it is NOT idling
-   on its advantage, and accepting realistic emotional/retaliatory stakes (no bloodless diplomacy after an
-   atrocity).
-6. **Adjudicate + verify:** DM resolves true outcomes; MOVES the fiscal/military/tech/pop model AND the
-   divergence ledger (pre-divergence = OTL, diverged = compounding). VERIFIER checks BOTH sides: (a) not
-   anachronistic / not reckless-rewarded; (b) ★ NOT OTL-reverted — visibly different from the real
-   counterpart? ledger moved? tech advancing (not frozen)? confidence warranted? Fog/coherence/economy sane.
-7. **Players write canon, DM redlines:** each PLAYER agent drafts its own STATE/KNOWLEDGE/HISTORY slice in
-   its voice; DM strips leaks/future/meta, corrects over-favorable outcomes, and updates GROUND_TRUTH +
-   TIMELINE (truth + ledger delta).
+2. **Propose (direction FIRST):** each PLAYER agent (reads ONLY its folder, THINKS then answers) writes
+   its OWN chosen direction into `attempt.md`, uninfluenced by any menu. DM redlines it in place.
+3. **★ Scout (generative, MANDATORY):** DM/Scout appends the doors the player didn't mention — good and
+   deliberately-bad-but-plausible, across every vector — as 10–20 questions in 2–3 rounds. Player answers
+   into `decisions.md`; weak/lazy answers get re-asked. Unused doors get re-raised in later periods.
+4. **Interrogate + gate:** JUDGES (two-axis red team + invention/perception gate) read the files → `judges.md`.
+5. **Defend/revise:** the nation justifies, revises, or rejects in `decisions.md` — including why it is NOT
+   idling on its advantage, and accepting realistic emotional/retaliatory stakes (no bloodless diplomacy).
+6. **Adjudicate + verify:** DM resolves true outcomes into `ruling.md`; MOVES the fiscal/military/tech/pop
+   model AND the divergence ledger. VERIFIER checks BOTH sides: (a) not anachronistic / not reckless-
+   rewarded; (b) ★ NOT OTL-reverted — visibly different from the real counterpart? ledger moved? tech
+   advancing (not frozen)? confidence warranted? Fog/coherence/economy sane.
+7. **Players write canon, DM redlines, MERGE:** each PLAYER drafts `canon.md` (+ optional state/knowledge)
+   in its voice; DM strips leaks/future/meta and corrects over-favorable outcomes; then run
+   `tools/merge_turn.sh <period> <nation>` to fold it into HISTORY/STATE/KNOWLEDGE. DM updates GROUND_TRUTH
+   + TIMELINE (truth + ledger delta) by hand.
 
 ## Hard rules
 - Fog of war absolute; let wrong inferences stand; no hints.
