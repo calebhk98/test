@@ -1,9 +1,13 @@
-# DM ENGINE v3 — Alternate World History Simulation
+# DM ENGINE v4 — Alternate World History Simulation
 
-The DM provides an accurate, fog-limited world and **adversarially interrogates** every decision —
-in BOTH directions: against recklessness AND against timid OTL-mimicry — before adjudicating.
-Money, population, and FORWARD-emergent tech are tracked as real systems. v3 fixes the single
-biggest playtest failure: **divergences regressing to our timeline** (see DIAGNOSIS at bottom).
+The DM does THREE jobs, not two: (1) provides an accurate, fog-limited world; (2) ★ SCOUTS the board
+and offers each player the OPPORTUNITIES/THREATS it is too literal-minded to see (generative); and
+(3) **adversarially interrogates** every decision in BOTH directions — against recklessness AND against
+timid OTL-mimicry (pruning). Money, population, and FORWARD-emergent tech are tracked as real systems.
+v3 fixed asymmetric interrogation. v4 fixes the deeper failure: **agents are not creative unprompted —
+left to themselves they pick the literal, modal, OTL move. The DM's PRIMARY creative labor is surfacing
+the doors; the agent only has to walk through one.** A bland turn is a DM scouting failure, not a player
+flaw (see SCOUTING + DIAGNOSIS).
 
 ## The DM's role (read every turn)
 1. **Neutral world + history provider.** Perceptions a nation gains go into ITS OWN KnowledgeFile
@@ -59,6 +63,34 @@ Concrete tests the DM applies every turn to a diverged power:
 Timidity is allowed only when a concrete, in-period threat makes it the genuinely correct move AND the
 power still advances its ledger somewhere else. "We chose caution again" across many turns is the bug.
 
+## ★★★ OPPORTUNITY SCOUTING — the DM's primary creative job (the v4 fix)
+Agents role-playing a state are NOT spontaneously creative. They answer well but they do not *originate*
+lateral moves; left alone they choose the literal, defensible, modal option — which is OTL. Therefore the
+DM, BEFORE and DURING each nation's turn, actively scouts that nation's position and FLOODS it with
+opportunity/threat questions that EXPAND its option space. The DM never says WHAT to do — it reveals what
+the player is MISSING and lets the player choose ("Yes, I do want to leave a secret fleet there").
+
+**Quota (enforced): 10–20 scouting questions per nation per turn, in 2–3 rounds.** One-question turns are
+a failure except in rare quiet periods. Re-question bad answers — a weak/lazy reply gets pushed on, not
+recorded. (This is the labor that produced steampunk Rome, airplane Egypt, hand-cannon China, gunpowder
+India in real play; without it the sim flatlines to OTL.)
+
+**Scout across these axes every turn (find the doors here):**
+- **Tech adjacency** — what does your NEWEST capability unlock beyond its first use? (gunpowder → not just
+  battle but mining, demolition, signaling, fortress defense; cheap paper → printing, money, records.)
+- **Doctrine adjacency / constraint-flip** — when a tech "doesn't fit" the enemy, invert the constraint
+  into a new doctrine. ("Cannon are for fixed positions and steppe nomads are mobile" → cannon-garrisoned,
+  rail-fed OUTPOSTS that creep the frontier the nomads can't take.) The player's own objection is the seed.
+- **Geographic reach** — what is now in range that you have not touched? (seen North America → settle it?
+  secret colony? coaling station? You hold Australia/the Spice Islands → a fleet to keep them?)
+- **Resource / monopoly leverage** — turn a static monopoly into a weapon. (coffee + Red Sea → tax every
+  hull, leash allies with access, secure the source so no one breaks it.)
+- **Rival-induced threat & opening** — what did ANOTHER power just do that threatens or opens something?
+  (A friendly-to-Rome India just based on YOUR African coast — evict, encircle, out-base, or co-opt it?)
+- **Latent assets** — secret fleets, undisclosed tech, spies, treasure, exiles: are you using them, hiding
+  them, or wasting them? Who knows you have gunpowder — reveal it or save it as a battlefield surprise?
+Each axis the player ignores without good reason is a door the DM should re-raise next round.
+
 ## ★ TECH: FORWARD, EMERGENT, and AGGRESSIVELY PURSUED (not frozen)
 - Invest for PRESENT needs; never name/aim at a device that does not yet exist in-world.
 - New inventions appear via the DM adjudicating a plausible accident from present-need work.
@@ -76,7 +108,11 @@ power could not — and am I actually using it this turn?"
 
 ## Turn loop
 1. DM writes newly-perceivable facts into each KNOWLEDGE.md (neutral) + injects due HISTORICAL events.
-2. **Propose:** each nation (Sonnet subagent, reads ONLY its folder, THINKS then answers, text only).
+1b. **★ Scout (generative, MANDATORY):** before adjudicating intent, the DM works the six scouting axes
+   for this nation and prepares the opportunity/threat doors — feeding them as questions (10–20, 2–3
+   rounds) so the player can see options it would never originate. This is the creative engine; do not skip.
+2. **Propose:** each nation (Sonnet subagent, reads ONLY its folder, THINKS then answers, text only) —
+   answering the scouting questions among its decisions; weak/lazy answers get re-asked, not accepted.
 3. **Interrogate:** DM TWO-AXIS red-team (Axis A anti-reckless + Axis B anti-OTL-reversion; no leaks).
 4. **Defend/revise:** each nation answers; justifies, revises, or rejects — including defending why it
    is NOT idling on its advantage.
