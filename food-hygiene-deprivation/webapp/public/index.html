@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UK Food Hygiene &amp; Deprivation Explorer</title>
+<style>
+  :root { --ink:#1d2733; --mut:#5b6b7b; --line:#e3e8ef; --acc:#0b6e4f; }
+  * { box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+         margin: 0; color: #1d2733; background: #f6f8fa; line-height: 1.45; }
+  header { background: #0b6e4f; color: #fff; padding: 22px 28px; }
+  header h1 { margin: 0 0 4px; font-size: 20px; }
+  header p { margin: 0; opacity: .9; font-size: 13px; }
+  main { max-width: 1040px; margin: 0 auto; padding: 24px 20px 60px; }
+  section { background: #fff; border: 1px solid #e3e8ef; border-radius: 10px;
+            padding: 18px 20px; margin: 18px 0; }
+  h2 { font-size: 16px; margin: 0 0 4px; }
+  .hint { color: #5b6b7b; font-size: 13px; margin: 0 0 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid #eef1f5; }
+  th { color: #5b6b7b; font-weight: 600; white-space: nowrap; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .stats { display: flex; flex-wrap: wrap; gap: 14px; }
+  .stat { background: #f0f6f3; border-radius: 8px; padding: 12px 16px; min-width: 130px; }
+  .stat b { display: block; font-size: 22px; color: #0b6e4f; }
+  .stat span { font-size: 12px; color: #5b6b7b; }
+  .bar { height: 8px; background: #e3e8ef; border-radius: 4px; overflow: hidden; min-width: 80px; }
+  .bar > i { display: block; height: 100%; background: #0b6e4f; }
+  input, select, button { font: inherit; padding: 7px 10px; border: 1px solid #cfd8e3;
+                          border-radius: 6px; background: #fff; }
+  button { background: #0b6e4f; color: #fff; border-color: #0b6e4f; cursor: pointer; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+  .pill { font-size: 12px; background: #eef6f2; color: #0b6e4f; padding: 2px 8px; border-radius: 20px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>UK Food Hygiene &amp; Deprivation Explorer</h1>
+  <p>FSA Food Hygiene Ratings (FHRS/FHIS) joined to the English Indices of Deprivation 2019. Read-only.</p>
+</header>
+<main>
+  <section>
+    <div class="stats" id="stats"></div>
+  </section>
+
+  <section>
+    <h2>Ratings by region</h2>
+    <p class="hint">Average FHRS rating (0–5, higher is better) and share scoring the top mark of 5.</p>
+    <div id="regions"></div>
+  </section>
+
+  <section>
+    <h2>Do poorer areas have lower hygiene?</h2>
+    <p class="hint" id="corr"></p>
+    <div id="deprivation"></div>
+  </section>
+
+  <section>
+    <h2>Ratings by business type</h2>
+    <p class="hint">Lower hygiene-score is cleaner; higher rating is better.</p>
+    <div id="types"></div>
+  </section>
+
+  <section>
+    <h2>Local-authority leaderboard</h2>
+    <div class="row">
+      <select id="region"><option value="">All regions</option></select>
+      <select id="sort"><option value="best">Best first</option><option value="worst">Worst first</option></select>
+      <button onclick="loadAuthorities()">Show</button>
+    </div>
+    <div id="authorities"></div>
+  </section>
+
+  <section>
+    <h2>Find an establishment</h2>
+    <div class="row">
+      <input id="name" placeholder="business name contains…" style="flex:1;min-width:180px">
+      <input id="postcode" placeholder="postcode starts…" style="width:160px">
+      <button onclick="search()">Search</button>
+    </div>
+    <div id="search"></div>
+  </section>
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const get = (u) => fetch(u).then(r => r.json());
+const fmt = (v) => v === null || v === undefined ? '–' : v;
+
+function table(rows, cols) {
+  if (!rows || !rows.length) return '<p class="hint">No results.</p>';
+  const head = cols.map(c => `<th class="${c.num ? 'num' : ''}">${c.label}</th>`).join('');
+  const body = rows.map(r => '<tr>' + cols.map(c => {
+    let v = r[c.key];
+    if (c.render) return `<td class="${c.num ? 'num' : ''}">${c.render(v, r)}</td>`;
+    return `<td class="${c.num ? 'num' : ''}">${fmt(v)}</td>`;
+  }).join('') + '</tr>').join('');
+  return `<table><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table>`;
+}
+const barCell = (pct) => `<div class="bar" title="${pct}%"><i style="width:${pct}%"></i></div>`;
+
+async function init() {
+  const s = await get('/api/stats');
+  $('stats').innerHTML = [
+    ['Establishments', s.establishments.toLocaleString()],
+    ['Local authorities', s.local_authorities],
+    ['Regions', s.regions],
+    ['Avg FHRS rating', s.avg_rating],
+    ['Awaiting inspection', s.awaiting_inspection.toLocaleString()],
+  ].map(([l, v]) => `<div class="stat"><b>${v}</b><span>${l}</span></div>`).join('');
+
+  const regions = await get('/api/regions');
+  $('regions').innerHTML = table(regions, [
+    { key: 'region_name', label: 'Region' },
+    { key: 'rated_premises', label: 'Rated', num: true, render: v => v.toLocaleString() },
+    { key: 'avg_rating', label: 'Avg rating', num: true },
+    { key: 'pct_rated_5', label: '% rated 5', num: true, render: v => `${v}% ${barCell(v)}` },
+    { key: 'avg_hygiene_score', label: 'Avg hygiene', num: true },
+  ]);
+  // populate region filter
+  $('region').innerHTML += regions.map(r => `<option>${r.region_name}</option>`).join('');
+
+  const d = await get('/api/deprivation');
+  $('corr').innerHTML = `Across <b>${d.correlation.n}</b> English local authorities the Pearson `
+    + `correlation between deprivation and average rating is <span class="pill">r = ${d.correlation.pearson_r}</span> `
+    + `— a moderate <b>negative</b> relationship: more deprived areas tend to score lower.`;
+  $('deprivation').innerHTML = table(d.buckets, [
+    { key: 'quintile', label: 'Deprivation quintile', render: v => v == 1 ? '1 – least deprived' : v == 5 ? '5 – most deprived' : v },
+    { key: 'rated_premises', label: 'Rated', num: true, render: v => v.toLocaleString() },
+    { key: 'avg_rating', label: 'Avg rating', num: true },
+    { key: 'pct_rated_5', label: '% rated 5', num: true, render: v => `${v}% ${barCell(v)}` },
+  ]);
+
+  const t = await get('/api/business-types');
+  $('types').innerHTML = table(t, [
+    { key: 'business_type_name', label: 'Business type' },
+    { key: 'rated_premises', label: 'Rated', num: true, render: v => v.toLocaleString() },
+    { key: 'avg_rating', label: 'Avg rating', num: true },
+    { key: 'pct_rated_5', label: '% rated 5', num: true, render: v => `${v}% ${barCell(v)}` },
+    { key: 'avg_hygiene_score', label: 'Avg hygiene', num: true },
+  ]);
+
+  loadAuthorities();
+}
+
+async function loadAuthorities() {
+  const rows = await get(`/api/authorities?region=${encodeURIComponent($('region').value)}&sort=${$('sort').value}`);
+  $('authorities').innerHTML = table(rows, [
+    { key: 'name', label: 'Local authority' },
+    { key: 'region_name', label: 'Region' },
+    { key: 'rated_premises', label: 'Rated', num: true, render: v => v.toLocaleString() },
+    { key: 'avg_rating', label: 'Avg rating', num: true },
+    { key: 'deprivation_score', label: 'IMD score', num: true },
+  ]);
+}
+
+async function search() {
+  const rows = await get(`/api/search?name=${encodeURIComponent($('name').value)}&postcode=${encodeURIComponent($('postcode').value)}`);
+  $('search').innerHTML = table(rows, [
+    { key: 'business_name', label: 'Name' },
+    { key: 'business_type_name', label: 'Type' },
+    { key: 'post_code', label: 'Postcode' },
+    { key: 'rating_value', label: 'Rating' },
+    { key: 'rating_date', label: 'Rated on', render: v => v ? String(v).slice(0, 10) : 'awaiting' },
+    { key: 'local_authority', label: 'Authority' },
+  ]);
+}
+init();
+</script>
+</body>
+</html>

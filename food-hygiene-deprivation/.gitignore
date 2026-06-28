@@ -1,0 +1,9 @@
+node_modules/
+# Large/reproducible raw downloads are excluded:
+#   * 571 MB of FHRS XML  -> re-fetch with etl/01_download.js
+#   * 9.7 MB IoD File 7 (LSOA) CSV -> reference only, not loaded
+# The small inputs the loader actually needs (authorities JSON, business types,
+# and the 255 KB IoD File 10 LAD-summary xlsx) ARE committed.
+data/raw/fhrs/
+data/raw/imd2019_lsoa_all.csv
+*.log
