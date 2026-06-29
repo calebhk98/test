@@ -24,9 +24,11 @@ db/schema.sql        all CREATE statements
 db/users.sql         fhrs_admin (loader) + fhrs_app (SELECT-only, used by the app)
 etl/01_download.js   download 363 FHRS XML files (curl + retry)
 etl/02_load.js       parse XML/xlsx and bulk-load into MySQL
+db/schema_bcnf.sql   BCNF/4NF refinement (lossless decomposition, proven)
 queries/analysis.sql analytical queries answering the project questions
 webapp/              Express app + single-page UI (read-only)
 report/REPORT.md     full report incl. reflections and results
+report/EXTENDING.md  cardinality, normalisation, Excel option, useful datasets
 ```
 
 ## Run it
