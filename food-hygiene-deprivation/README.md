@@ -25,6 +25,7 @@ db/users.sql         fhrs_admin (loader) + fhrs_app (SELECT-only, used by the ap
 etl/01_download.js   download 363 FHRS XML files (curl + retry)
 etl/02_load.js       parse XML/xlsx and bulk-load into MySQL
 db/schema_bcnf.sql   BCNF/4NF refinement (lossless decomposition, proven)
+etl/04_clean.js      data cleaning: quarantine impossible rows, flag-and-keep incomplete ones
 db/schema_geo.sql    additive: imd_lsoa + postcode tables (neighbourhood grain)
 etl/00_download_geo.sh  fetch IoD File 7 + ONS postcode->LSOA lookup
 etl/03_load_geo.js   load LSOA deprivation + resolve postcodes
@@ -34,6 +35,7 @@ webapp/              Express app + single-page UI (read-only)
 report/REPORT.md     full report incl. reflections and results
 report/EXTENDING.md  cardinality, normalisation, Excel option, useful datasets
 report/GEO_ENRICHMENT.md  the LSOA datasets, recorded joins, coverage, findings
+report/CLEANING_REPORT.md what the cleaning pass removed and flagged
 ```
 
 ## Run it
@@ -44,6 +46,7 @@ mysql < db/schema.sql
 mysql < db/users.sql
 node etl/01_download.js     # ~571 MB of source XML
 node etl/02_load.js         # loads ~609k rows
+node etl/04_clean.js        # quarantine impossible rows -> establishment_rejects (see report/CLEANING_REPORT.md)
 node webapp/server.js       # http://localhost:3000
 
 # Optional neighbourhood-level deprivation enrichment (see report/GEO_ENRICHMENT.md):
