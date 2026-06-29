@@ -36,6 +36,7 @@ report/REPORT.md     full report incl. reflections and results
 report/EXTENDING.md  cardinality, normalisation, Excel option, useful datasets
 report/GEO_ENRICHMENT.md  the LSOA datasets, recorded joins, coverage, findings
 report/CLEANING_REPORT.md what the cleaning pass removed and flagged
+report/WHY_NOT_EXCEL.md   showcase: why a PivotTable can't do this (+ figure)
 ```
 
 ## Run it

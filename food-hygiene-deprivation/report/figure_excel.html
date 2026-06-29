@@ -1,0 +1,48 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+  body{font-family:'Segoe UI',system-ui,sans-serif;margin:0;background:#fff;color:#1d2733}
+  .card{width:900px;padding:30px 36px}
+  h1{font-size:22px;margin:0 0 2px}
+  .sub{color:#5b6b7b;font-size:14px;margin:0 0 24px}
+  .row{display:flex;align-items:center;margin:10px 0;font-size:14px}
+  .lbl{width:230px;text-align:right;padding-right:14px;color:#1d2733}
+  .track{flex:1;position:relative;height:30px;background:#f0f3f7;border-radius:5px}
+  .bar{position:absolute;left:0;top:0;height:100%;border-radius:5px;display:flex;align-items:center;justify-content:flex-end;color:#fff;font-size:12px;padding-right:8px;box-sizing:border-box;font-variant-numeric:tabular-nums}
+  .ok{background:#0b6e4f}.over{background:#c0392b}
+  .limit{position:absolute;top:-8px;bottom:-8px;width:3px;background:#c0392b}
+  .limit span{position:absolute;top:-20px;left:-58px;width:130px;font-size:11px;color:#c0392b;font-weight:600;text-align:center}
+  .foot{margin-top:26px;font-size:12.5px;color:#5b6b7b;border-top:1px solid #e3e8ef;padding-top:12px}
+  .foot b{color:#c0392b}
+</style></head><body>
+<div class="card">
+  <h1>Can a single Excel worksheet hold this data?</h1>
+  <p class="sub">Rows per dataset vs. Excel's hard limit of 1,048,576 rows per sheet</p>
+  <div id="bars"></div>
+  <div class="foot">The <b>ONS postcode→LSOA bridge</b> — the table required to join food-hygiene
+  premises to neighbourhood deprivation — has <b>2,665,236 rows, 2.5× the worksheet limit</b>.
+  It cannot be opened in a sheet at all, so the central join of this project is impossible in a
+  classic PivotTable.</div>
+</div>
+<script>
+  const LIMIT=1048576, MAX=2800000;
+  const data=[
+    ["ONS postcode→LSOA bridge (source)",2665236,true],
+    ["Excel worksheet limit",1048576,"limit"],
+    ["Establishments (FHRS)",607817,false],
+    ["Postcodes loaded",251763,false],
+    ["LSOA deprivation (IoD 2019)",32844,false],
+  ];
+  const host=document.getElementById('bars');
+  let first=true;
+  for(const [lbl,val,flag] of data){
+    if(flag==="limit") continue;
+    const row=document.createElement('div');row.className='row';
+    const pct=Math.min(100,val/MAX*100);
+    const label=first?'<span>Excel limit<br>1,048,576</span>':'';
+    row.innerHTML=`<div class="lbl">${lbl}</div><div class="track">
+      <div class="bar ${flag?'over':'ok'}" style="width:${pct}%">${val.toLocaleString()}</div>
+      <div class="limit" style="left:${LIMIT/MAX*100}%">${label}</div>
+    </div>`;
+    host.appendChild(row);
+    first=false;
+  }
+</script></body></html>
