@@ -65,10 +65,13 @@ mysqladmin ping
 }
 ```
 
-Install the dependencies:
+Install the dependencies, and create the folders you'll use throughout (whenever a
+step says *Create `etl/load-one.js`*, it means a file `load-one.js` inside an `etl`
+folder — these commands make those folders up front so the file paths exist):
 
 ```bash
 npm install
+mkdir -p sql etl webapp/public data
 ```
 
 **1c. Create `config.js`** — every script reads its database settings from here:
@@ -84,9 +87,12 @@ module.exports = {
 };
 ```
 
-> If your socket is elsewhere, run `mysqladmin variables | grep socket` and set
-> `DB_SOCKET` accordingly. On many Linux installs it is
-> `/var/run/mysqld/mysqld.sock`.
+> **Socket path.** The default above works on most Linux installs. If `node
+> check-db.js` (next) fails with a socket error, find your socket with
+> `mysqladmin variables | grep ' socket'`, then edit the `socketPath` line in
+> `config.js` to that path (a common alternative is `/var/run/mysqld/mysqld.sock`).
+> The plain `mysql < file` commands later in the tutorial use the same default
+> socket automatically; if yours differs, add `--socket=/your/path` to them.
 
 **1d. Create `check-db.js`:**
 
@@ -149,7 +155,9 @@ CREATE TABLE establishment (
 ) ENGINE=InnoDB;
 ```
 
-**2b. Run it:**
+**2b. Run it.** This `mysql` command connects as your system's root user over the
+local socket (no password needed) — that is correct here; the read-only `fhrs_read`
+user isn't created until Step 7.
 
 ```bash
 mysql < sql/01_schema_single.sql
@@ -286,10 +294,12 @@ awaiting-inspection count).
 **Goal:** turn the single table into a proper relational schema (regions, local
 authorities, business types) and load **many** authorities across the UK.
 
-> **We now replace the Step 2 schema and the Step 3 loader.** Delete nothing by
-> hand — the new SQL drops and recreates the tables, and we add a new loader. The
-> old `etl/load-one.js` and `sql/01_schema_single.sql` are no longer used (you may
-> keep or delete them).
+> **From Step 5 on you will NOT run `sql/01_schema_single.sql` or `etl/load-one.js`
+> again.** You don't need to delete anything by hand: the new
+> `sql/02_schema_relational.sql` below `DROP`s and recreates every table, and a new
+> loader replaces the old one. Those two old files just sit unused (keep or delete
+> them, your choice). This kind of "replace earlier work as the design grows" is
+> normal — we'll always tell you when it happens.
 
 **5a. Create `sql/02_schema_relational.sql`:**
 
@@ -386,7 +396,9 @@ const { execFileSync } = require('child_process');
 ```
 
 **5c. Create `etl/load-many.js`** — loads regions, business types, authorities and
-establishments in foreign-key order:
+establishments in foreign-key order. *(It reads `data/selected.json`, which 5b
+creates, so always run 5b before 5c — the `Run both` block below does this for
+you.)*
 
 ```js
 const fs = require('fs');
@@ -506,9 +518,9 @@ CREATE TABLE imd_lad (
 mysql < sql/03_imd.sql
 ```
 
-**6b. Create `etl/load-imd.js`** — downloads IoD 2019 "File 10" (a spreadsheet of
-district summaries), loads it, and matches each local authority to its district by
-name:
+**6b. Create `etl/load-imd.js`** — downloads the Indices of Deprivation 2019
+local-authority-district summary spreadsheet (the official release calls it
+"File 10"), loads it, and matches each local authority to its district by name:
 
 ```js
 const fs = require('fs');
@@ -597,6 +609,15 @@ You should see a per-authority table and a `pearson_r` value (negative means mor
 deprived areas tend to score lower). *With this small sample the correlation is
 only indicative; the full 363-authority dataset gives a clearer figure.*
 
+> **Note — only matched authorities appear.** The deprivation data is England-only,
+> and a few authorities' names don't line up with an ONS district, so they get no
+> `lad_code` and the `JOIN imd_lad` quietly leaves them out (that's why the count is
+> ~17, not 24). This is expected, not a bug. To see how many of your authorities
+> matched, run:
+> ```bash
+> mysql fhrs_tutorial -e "SELECT COUNT(*) AS matched FROM local_authority WHERE lad_code IS NOT NULL;"
+> ```
+
 ---
 
 ## Step 7 — A read-only web app
@@ -671,12 +692,17 @@ fetch('/api/regions').then(r=>r.json()).then(rows=>{
 </script></body></html>
 ```
 
-**7d. Start it** (in the background, or a second terminal):
+**7d. Start it.** On Linux/macOS you can background it in the same terminal with `&`
+(below). On Windows, or if you prefer, open a **second terminal** in the same
+project folder and run `node webapp/server.js` there without the `&`.
 
 ```bash
 node webapp/server.js &
 sleep 1
 ```
+
+If you see `EADDRINUSE` (port 3000 already taken), start it on another port and use
+that port in the checkpoint, e.g. `PORT=8000 node webapp/server.js &`.
 
 **Checkpoint 7:**
 
@@ -743,17 +769,16 @@ const RULES = [
 node etl/clean.js
 ```
 
-**Checkpoint 8:**
+**Checkpoint 8:** (Counts depend on which authorities you sampled — a removal count
+of **0 is also a pass**: it just means your sample had no impossible dates, and the
+empty `establishment_rejects` table proves the check ran.)
 
 ```bash
 cat report-cleaning.md
 mysql fhrs_tutorial -e "SELECT reject_reason, COUNT(*) FROM establishment_rejects GROUP BY reject_reason;"
 ```
 
-You should see the cleaning report and the quarantined rows grouped by reason (the
-exact counts depend on which authorities you sampled; it may be 0 if your sample
-had no bad dates — that is itself a valid result, and the audit table proves the
-check ran).
+You should see the cleaning report and the quarantined rows grouped by reason.
 
 ---
 
