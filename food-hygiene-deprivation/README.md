@@ -25,10 +25,15 @@ db/users.sql         fhrs_admin (loader) + fhrs_app (SELECT-only, used by the ap
 etl/01_download.js   download 363 FHRS XML files (curl + retry)
 etl/02_load.js       parse XML/xlsx and bulk-load into MySQL
 db/schema_bcnf.sql   BCNF/4NF refinement (lossless decomposition, proven)
+db/schema_geo.sql    additive: imd_lsoa + postcode tables (neighbourhood grain)
+etl/00_download_geo.sh  fetch IoD File 7 + ONS postcode->LSOA lookup
+etl/03_load_geo.js   load LSOA deprivation + resolve postcodes
 queries/analysis.sql analytical queries answering the project questions
+queries/analysis_geo.sql neighbourhood-level deprivation queries
 webapp/              Express app + single-page UI (read-only)
 report/REPORT.md     full report incl. reflections and results
 report/EXTENDING.md  cardinality, normalisation, Excel option, useful datasets
+report/GEO_ENRICHMENT.md  the LSOA datasets, recorded joins, coverage, findings
 ```
 
 ## Run it
@@ -40,6 +45,12 @@ mysql < db/users.sql
 node etl/01_download.js     # ~571 MB of source XML
 node etl/02_load.js         # loads ~609k rows
 node webapp/server.js       # http://localhost:3000
+
+# Optional neighbourhood-level deprivation enrichment (see report/GEO_ENRICHMENT.md):
+bash etl/00_download_geo.sh # IoD File 7 + ONS postcode->LSOA(2011) lookup
+mysql < db/schema_geo.sql
+node etl/03_load_geo.js
+mysql food_hygiene < queries/analysis_geo.sql
 ```
 
 Connection settings and credentials are in `config.js` (overridable via
@@ -50,4 +61,8 @@ and Node 22.
 
 * FSA Food Hygiene Ratings open data — <https://ratings.food.gov.uk/open-data>
 * FSA authorities & business-types APIs — `api.ratings.food.gov.uk`
-* English Indices of Deprivation 2019 — <https://www.gov.uk/government/statistics/english-indices-of-deprivation-2019>
+* English Indices of Deprivation 2019 (File 10 LAD + File 7 LSOA) — <https://www.gov.uk/government/statistics/english-indices-of-deprivation-2019>
+* ONS Postcode → OA(2011) → LSOA → MSOA → LAD best-fit lookup (Aug 2021) — Open Geography Portal item `3e265c6a114f425fbd92e863977e698a`
+
+All sources are Open Government Licence v3.0. Exact download URLs are in
+`etl/00_download_geo.sh` and `report/GEO_ENRICHMENT.md`.
