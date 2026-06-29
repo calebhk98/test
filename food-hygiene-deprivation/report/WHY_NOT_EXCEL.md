@@ -1,109 +1,142 @@
-# Why this can't be done with an Excel PivotTable
+# Is the relationship complex enough to warrant SQL?
 
-![Dataset sizes vs Excel's row limit](why-not-excel.png)
+*Ground rule for this argument: assume Excel can hold a **trillion** rows and runs
+on a **supercomputer**. Volume and speed are off the table. The only question is
+whether the **structure of the relationships** justifies a relational database
+rather than a flat sheet + PivotTable.*
 
-**Short answer:** the simple, single-dataset breakdowns *can* be done in Excel.
-Everything that makes this project actually answer its question — joining food
-hygiene to deprivation, at neighbourhood level, on cleaned data — hits walls a
-PivotTable cannot cross. A PivotTable summarises **one flat table**; this analysis
-is **nine related tables, one of which is 2.5× too big to open**.
+**Answer: yes — and the reason has nothing to do with size.** This data is
+**multi-entity and multi-grain**: several things are measured at *different levels
+of detail*, and deprivation attaches at *two* of them. A PivotTable works on **one
+table at one grain**. The moment you must combine entities at different grains, a
+single flat sheet can no longer represent the data without either losing a
+question or computing the wrong number — no matter how many rows it can hold.
 
-Be fair about it: Excel *can* produce "average rating by region" or "by business
-type" from the 608k-row extract — those are single-table group-bys, exactly what a
-pivot is for. The argument below is about the parts that genuinely break.
+![The multi-grain relationship graph](why-sql-relationships.png)
 
 ---
 
-## Wall 1 — Volume: the join table won't fit in a sheet
+## A size-independent test for "does this need SQL?"
 
-An Excel worksheet holds **1,048,576 rows**. To attach neighbourhood deprivation
-to each premise you must join through the ONS postcode→LSOA lookup, which is
-**2,665,236 rows — 2.5× the limit**. You cannot even *open* the file in a sheet,
-let alone `VLOOKUP` into it. The single most important table in the project is
-off-limits before any analysis begins.
+> A PivotTable is enough when the data is **one table at one grain** with
+> categorical columns to slice by.
+> You need relational joins when you have **multiple entities at different
+> granularities that must be combined** — because then (1) there is no single way
+> to flatten them that serves every question, (2) coarser measures **double-count**
+> if you do flatten, and (3) every parent fact gets **duplicated**, so the sheet
+> can hold mutually contradictory values.
 
-> *"Use Power Query / Power Pivot then."* You can — but at that point you've left
-> the PivotTable behind and are running a relational data model and a query
-> language (DAX/M) bolted into Excel. That's re-implementing the database, not
-> using a pivot table — and it still hits Walls 3–5 below.
+This project fails all three parts of the "one table, one grain" condition. Here
+is why, with this dataset's actual structure.
 
-## Wall 2 — Relationships: a pivot flattens ONE table; this is nine
+## 1. There are five different grains, not one
 
-The model is `region → local_authority → establishment ← business_type`, with
-`establishment → postcode → imd_lsoa` and `local_authority → imd_lad`, plus
-`rating_type` and the cleaning audit tables. The headline finding needs a
-**two-hop join** for every one of 600k rows:
+| Entity | Grain | Rows |
+|---|---|--:|
+| `region` | region | 12 |
+| `imd_lad` | local-authority district (deprivation) | 317 |
+| `local_authority` | food authority | 363 |
+| `imd_lsoa` | **neighbourhood** (~1,500 people) + population | 32,844 |
+| `postcode` | postcode | 251,763 |
+| `establishment` | **premise** | 607,817 |
 
-```sql
-establishment → postcode (premise's postcode) → imd_lsoa (that postcode's neighbourhood IMD)
+A flat sheet has to pick **one** grain for its rows (here, the premise). Every
+other entity's attributes then get **repeated down the premise rows**. That
+repetition is the source of every problem below — and it is a *logical* problem,
+not a storage one, so a trillion-row supercomputer doesn't fix it.
+
+## 2. Deprivation attaches at TWO grains — the join graph branches
+
+It isn't a single lookup chain. From the premise you fan out along independent
+branches that rejoin deprivation at *different* levels:
+
+```
+establishment ─→ local_authority ─→ region
+              └─→ local_authority ─→ imd_lad        (deprivation at LA grain)
+              └─→ business_type
+              └─→ postcode ─→ imd_lsoa              (deprivation at NEIGHBOURHOOD grain)
 ```
 
-A PivotTable has no concept of a join. To fake it you would denormalise the whole
-thing into one mega-sheet with stacked `XLOOKUP` columns — except the postcode
-bridge (Wall 1) is too big to be the lookup target, and 600k live lookups
-recalculate on every edit.
+So "deprivation" is two different columns at two different resolutions. A pivot has
+exactly two axes (rows, columns) and one underlying table; it cannot hold a star
+of joins where the *same concept* enters at two grains. You'd have to build a
+separate flattened sheet for each question — i.e. hand-maintain several
+denormalised copies, which is the very thing a schema exists to avoid.
 
-## Wall 3 — The keys don't match: joins need cleaning, not lookups
+## 3. Flattening makes coarse measures double-count (a worked example)
 
-The datasets don't share a key, so the joins required real logic:
+Put everything on the premise row and ask the genuinely useful question
+*"premises per 1,000 residents by deprivation decile"*:
 
-* **FHRS authority *names* → ONS *codes*.** Matching needed normalisation
-  (lower-case, strip "City of"/"Borough of", `&`→`and`, de-hyphenate) **plus** an
-  alias table (`Bristol → "Bristol, City of"`) **plus** handling 2019–2023
-  boundary changes (Somerset, North Yorkshire… have no single old district).
-  `XLOOKUP` needs an *exact* key; every near-miss silently returns `#N/A` and the
-  row vanishes from the totals without warning.
-* **Postcodes are formatted differently** in FHRS vs ONS, so both sides had to be
-  normalised (`UPPER`, strip spaces) before they would join.
-* **Vintage matters:** IoD 2019 uses 2011 LSOAs, so the postcode lookup had to be
-  the 2011-LSOA edition. A pivot gives you no place to encode "use this vintage
-  because the other dataset is 2011-based."
+* premises are counted at **premise** grain,
+* population lives at **neighbourhood** grain.
 
-## Wall 4 — The maths isn't pivot maths
+On a flat sheet, each neighbourhood's population is copied onto **every premise in
+it**. `SUM(population)` then counts a neighbourhood of 1,500 people once for each
+of its (say) 40 premises = 60,000 — off by 40×. To get it right you must aggregate
+premises **to the LSOA grain first**, then divide by that LSOA's single population,
+then roll up to decile. That is two GROUP BYs at two grains in one query — exactly
+what SQL expresses and a single pivot aggregation cannot. (The correct answer:
+9.45 premises/1,000 in the most-deprived decile vs 4.36 in the least.)
 
-A PivotTable does sums, counts and averages over groups. The findings needed:
+## 4. The grain you join at changes the answer
 
-* **Pearson correlation** between hygiene and **each of 8 deprivation domains** —
-  not a pivot aggregation; you'd build a 600k-row helper area and `CORREL()`, per
-  domain.
-* **Deprivation quintiles / deciles** (`NTILE`) — needs `RANK`/`PERCENTILE` helper
-  columns, recomputed on every change.
-* **Premises per 1,000 residents** — this is a *ratio across two different grains*:
-  count premises per LSOA, then divide by that LSOA's population, then aggregate
-  by decile. A pivot's single aggregation step can't "group at grain A, then take
-  a ratio against grain B" without double-counting population.
+Because the grains are real and distinct, the *same* correlation comes out
+differently depending on which grain you compute it at:
 
-## Wall 5 — Process: cleaning, audit and refresh
+| Grain of analysis | Deprivation↔hygiene Pearson r |
+|---|--:|
+| per **local authority** (n≈289) | **−0.38** |
+| per **premise / neighbourhood** (n≈370k) | **−0.10** |
 
-* **Cleaning with an audit trail.** We quarantined 1,165 impossible-date rows into
-  a `establishment_rejects` table *with reasons*, kept a `cleaning_log`, and left
-  it reversible. In Excel, "cleaning" is deleting rows by hand — no record of what
-  went or why, and no way to undo it next month.
-* **Reproducibility.** The whole pipeline is scripted from documented open-data
-  URLs; a student re-runs four commands and gets the same database. A pivot
-  workbook is a hand-built artifact that someone has to rebuild by memory.
-* **Refresh.** FHRS republishes monthly. The scripts re-run; a workbook of stacked
-  lookups and helper columns has to be re-pointed and re-checked by hand.
+That gap is the *ecological correlation* effect — aggregating to areas averages
+out individual noise. It is only **expressible** because the model keeps the grains
+separate and lets you choose. A flat premise-grain sheet silently commits you to
+one of them and hides that the choice even exists.
+
+## 5. One source of truth vs thousands of copies (integrity, not size)
+
+Flattening stores each local authority's deprivation score on **every one of its
+premises** — Birmingham's score sits on ~12,000 rows. With infinite storage the
+*space* is free, but the *integrity* is not: there is no longer a single place
+that holds "Birmingham's IMD score". Edit or refresh one copy and the sheet now
+contains two different truths for the same fact, with nothing to stop it. The
+relational design stores that score **once** in `imd_lad` (we verified the schema
+is BCNF), and the join reconstructs it on demand. Normalisation is a *correctness*
+guarantee about update anomalies — a trillion-row machine makes it worse, not
+better, because there are simply more duplicated copies to fall out of sync.
+
+## 6. The relationships are derived, optional and fuzzy
+
+These aren't clean shared keys you can `XLOOKUP`:
+
+* **FHRS authority *names* → ONS *codes*** needed normalisation + an alias table +
+  handling of post-2019 boundary changes. Nine English authorities legitimately
+  have **no** deprivation district (unitary mergers / port health authorities).
+* **Postcodes** are formatted differently on each side and had to be normalised
+  before they would match; non-English postcodes resolve to an LSOA that has **no**
+  English IMD row.
+
+Representing "this authority has no deprivation match" is a natural **outer join**
+in SQL (the value is `NULL`, and aggregates ignore it). On a flat sheet a failed
+match is a blank cell that silently distorts any average computed over it.
 
 ---
 
-## Summary
+## Being fair: where a PivotTable genuinely is enough
 
-| Task | Plain PivotTable | This project |
-|---|---|---|
-| Avg rating by region / business type | ✅ yes | trivial |
-| Hold the postcode→LSOA bridge (2.66M rows) | ❌ exceeds sheet limit | one indexed table |
-| Join premises → postcode → neighbourhood IMD | ❌ no joins | 2-line SQL |
-| Fuzzy name→code matching, boundary changes | ❌ exact-match only, silent `#N/A` | normalise + alias in load |
-| Pearson r across 8 domains, NTILE deciles | ❌ helper-column gymnastics | built-in SQL |
-| Premises per 1,000 (ratio across grains) | ❌ double-counts | one query |
-| Cleaning with reversible audit trail | ❌ manual deletes | quarantine + log |
-| Reproducible monthly refresh | ❌ rebuild by hand | re-run scripts |
+If the task were only *"average rating by region"* or *"by business type"*, a
+pivot on the single 608k-row premise table is the right tool — those are
+one-table, one-grain, categorical group-bys, and they'd work fine at a trillion
+rows. The relational database earns its place specifically because the **deprivation
+questions force you to combine entities at different grains**.
 
-The honest line for a presentation: **"Excel answers the easy half of question 1.
-The relational database is what makes the deprivation question answerable at all —
-because the join table alone is 2.5× larger than Excel can open, and the join,
-the correlation and the cleaning all need a query engine, not a pivot."**
+## Verdict
 
-*(All row counts above are live from the loaded database / source files; see the
-figure and `report/analysis-geo-results.txt`.)*
+The relationship is complex enough to warrant SQL — not because the data is big,
+but because it is **multi-grain with a branching join graph**. Under those
+conditions a single flat table cannot simultaneously (a) answer all the questions,
+(b) aggregate coarse measures without double-counting, and (c) keep one
+authoritative copy of each fact. Those are structural properties of the
+relationships, true at 600 thousand rows or 600 billion. Size was never the
+reason; **shape** is.

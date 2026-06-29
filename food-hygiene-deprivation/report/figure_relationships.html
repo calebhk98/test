@@ -1,0 +1,56 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+  body{font-family:'Segoe UI',system-ui,sans-serif;margin:0;background:#fff;color:#1d2733}
+  .card{width:960px;padding:28px 34px}
+  h1{font-size:21px;margin:0 0 2px}
+  .sub{color:#5b6b7b;font-size:13.5px;margin:0 0 18px}
+  .wrap{display:flex;gap:18px}
+  .axis{width:120px;border-right:2px dashed #cfd8e3;padding-right:10px;font-size:11px;color:#8895a3;position:relative}
+  .axis .a{position:absolute;right:14px;text-align:right;width:104px}
+  .grid{flex:1;position:relative;height:430px}
+  .node{position:absolute;border:1.5px solid #0b6e4f;border-radius:8px;background:#f0f6f3;padding:7px 11px;font-size:12.5px;width:150px}
+  .node b{display:block;font-size:13px}
+  .node .g{color:#5b6b7b;font-size:11px}
+  .dep{border-color:#c0392b;background:#fbeeec}
+  .dim{border-color:#2c6e9b;background:#eef4fa}
+  svg{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none}
+  .lbl{font-size:10.5px;fill:#8895a3}
+  .note{margin-top:14px;font-size:12.5px;color:#1d2733;border-top:1px solid #e3e8ef;padding-top:11px}
+  .k{color:#c0392b;font-weight:600}
+</style></head><body>
+<div class="card">
+  <h1>The data is multi-grain — deprivation attaches at two different levels</h1>
+  <p class="sub">Each box is an entity at its own granularity (rows shown). A flat sheet can hold only one of these grains at a time.</p>
+  <div class="wrap">
+    <div class="axis">
+      <div class="a" style="top:6px">coarse grain<br>(few rows)</div>
+      <div class="a" style="top:200px">↑ roll&nbsp;up<br>↓ fan&nbsp;out</div>
+      <div class="a" style="bottom:6px">fine grain<br>(many rows)</div>
+    </div>
+    <div class="grid">
+      <svg id="svg"></svg>
+      <div class="node" id="region" style="left:30px;top:6px"><b>region</b><span class="g">12 rows · region grain</span></div>
+      <div class="node dep" id="imd_lad" style="left:250px;top:70px"><b>imd_lad</b><span class="g">317 · LA-district deprivation</span></div>
+      <div class="node" id="la" style="left:30px;top:120px"><b>local_authority</b><span class="g">363 · authority grain</span></div>
+      <div class="node dim" id="bt" style="left:470px;top:200px"><b>business_type</b><span class="g">15 · category</span></div>
+      <div class="node" id="est" style="left:30px;top:250px"><b>establishment</b><span class="g">607,817 · premise grain</span></div>
+      <div class="node" id="pc" style="left:250px;top:330px"><b>postcode</b><span class="g">251,763 · postcode grain</span></div>
+      <div class="node dep" id="imd_lsoa" style="left:470px;top:330px"><b>imd_lsoa</b><span class="g">32,844 · neighbourhood + population</span></div>
+    </div>
+  </div>
+  <div class="note">Deprivation enters the model at <span class="k">two grains</span>: per <b>neighbourhood</b> (imd_lsoa,
+  via postcode) and per <b>local authority</b> (imd_lad). Premises-per-1,000 divides a premise-grain count by an
+  LSOA-grain population — a <span class="k">ratio across grains</span>. Flatten all this onto one premise row and any
+  coarse measure (population, an LA's score) repeats thousands of times and double-counts when summed.</div>
+</div>
+<script>
+  // draw FK arrows between node centres
+  const links=[["la","region"],["la","imd_lad"],["est","la"],["est","bt"],["pc","est"],["imd_lsoa","pc"]];
+  const svg=document.getElementById("svg");
+  const C=id=>{const e=document.getElementById(id),g=e.offsetParent,r=e.getBoundingClientRect(),gr=g.getBoundingClientRect();
+    return {x:r.left-gr.left+r.width/2,y:r.top-gr.top+r.height/2};};
+  for(const [a,b] of links){const p=C(a),q=C(b);
+    svg.insertAdjacentHTML("beforeend",
+      `<line x1="${p.x}" y1="${p.y}" x2="${q.x}" y2="${q.y}" stroke="#9fb0c0" stroke-width="1.5"/>`+
+      `<text class="lbl" x="${(p.x+q.x)/2}" y="${(p.y+q.y)/2-3}">N:1</text>`);
+  }
+</script></body></html>
