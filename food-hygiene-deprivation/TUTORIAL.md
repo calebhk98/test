@@ -65,14 +65,18 @@ mysqladmin ping
 }
 ```
 
-Install the dependencies, and create the folders you'll use throughout (whenever a
-step says *Create `etl/load-one.js`*, it means a file `load-one.js` inside an `etl`
-folder — these commands make those folders up front so the file paths exist):
+Install the dependencies:
 
 ```bash
 npm install
-mkdir -p sql etl webapp/public data
 ```
+
+> Whenever a later step says *Create `etl/load-one.js`*, it means a file
+> `load-one.js` inside an `etl` folder. Most editors create the folder for you when
+> you save; if you work from the terminal, make each folder the first time it
+> appears — we add a `mkdir` reminder at that point. (You never need to create
+> `data/` yourself; the download scripts make it.) We create folders only in the
+> step that first uses them, never earlier.
 
 **1c. Create `config.js`** — every script reads its database settings from here:
 
@@ -129,6 +133,9 @@ You should see `Connected. Server: …` and `Database ready: fhrs_tutorial`.
 > `outlets`, `food_business`, etc. We'll assume `establishment` from here on — if you
 > choose another name, use it in every later query and script too.
 
+This step introduces the `sql/` folder for your SQL files — from a terminal,
+`mkdir -p sql` first (an editor will make it for you on save).
+
 **2a. Create `sql/01_schema_single.sql`:**
 
 ```sql
@@ -177,6 +184,10 @@ You should see the `establishment` table and its columns.
 
 **Goal:** download a single authority's open-data file and load it. We use Barking
 and Dagenham (FSA code 501, ~1,400 premises) so it is fast.
+
+This step introduces the `etl/` folder for your data-loading scripts — from a
+terminal, `mkdir -p etl` first (an editor will make it for you on save). The script
+itself creates the `data/` download folder when it runs.
 
 **3a. Create `etl/load-one.js`:**
 
@@ -327,7 +338,6 @@ CREATE TABLE local_authority (
   la_code     VARCHAR(10) PRIMARY KEY,
   name        VARCHAR(120) NOT NULL,
   region_id   INT NOT NULL,
-  lad_code    VARCHAR(10) NULL,             -- filled in Step 6 (deprivation link)
   CONSTRAINT fk_la_region FOREIGN KEY (region_id) REFERENCES region(region_id)
 ) ENGINE=InnoDB;
 
@@ -501,7 +511,9 @@ working across the data you loaded.
 **Goal:** bring in the English Indices of Deprivation 2019 (per local-authority
 district) and join it to your authorities to ask *"do poorer areas score lower?"*
 
-**6a. Add the deprivation table.** Create `sql/03_imd.sql`:
+**6a. Add the deprivation table, and the link column.** Now — not back in Step 5 —
+is when we need a `lad_code` on `local_authority` to point each authority at its
+deprivation district, so we add it here with `ALTER TABLE`. Create `sql/03_imd.sql`:
 
 ```sql
 USE fhrs_tutorial;
@@ -512,6 +524,10 @@ CREATE TABLE imd_lad (
   imd_avg_score DECIMAL(8,3),               -- higher = more deprived
   imd_rank      INT                         -- 1 = most deprived district
 ) ENGINE=InnoDB;
+
+-- Add the deprivation link to local_authority now that we have somewhere to point.
+-- (Run this step once; Step 5 recreates local_authority without this column.)
+ALTER TABLE local_authority ADD COLUMN lad_code VARCHAR(10) NULL;
 ```
 
 ```bash
@@ -639,6 +655,9 @@ FLUSH PRIVILEGES;
 ```bash
 mysql < sql/04_users.sql
 ```
+
+This step introduces the `webapp/` and `webapp/public/` folders — from a terminal,
+`mkdir -p webapp/public` first (an editor will make them for you on save).
 
 **7b. Create `webapp/server.js`:**
 
