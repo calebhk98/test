@@ -1,0 +1,20 @@
+{
+  "name": "food-hygiene-deprivation",
+  "version": "1.0.0",
+  "description": "MySQL database and web app analysing UK Food Hygiene Ratings (FSA FHRS/FHIS) against English Indices of Deprivation 2019",
+  "main": "webapp/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "setup-db": "mysql < db/schema.sql && mysql < db/users.sql",
+    "download": "node etl/01_download.js",
+    "load": "node etl/02_load.js",
+    "web": "node webapp/server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "fast-xml-parser": "^4.4.1",
+    "mysql2": "^3.11.0",
+    "xlsx": "^0.18.5"
+  }
+}

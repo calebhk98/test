@@ -1,0 +1,12 @@
+node_modules/
+# Large/reproducible raw downloads are excluded:
+#   * 571 MB of FHRS XML  -> re-fetch with etl/01_download.js
+#   * 9.7 MB IoD File 7 (LSOA) CSV  -> re-fetch with etl/00_download_geo.sh
+#   * 389 MB ONS postcode->LSOA CSV -> re-fetch with etl/00_download_geo.sh
+# The small inputs the loader actually needs (authorities JSON, business types,
+# and the 255 KB IoD File 10 LAD-summary xlsx) ARE committed.
+data/raw/fhrs/
+data/raw/imd2019_lsoa_all.csv
+*.log
+data/raw/pcd_lsoa_aug21.zip
+data/raw/pcd_unzip/
