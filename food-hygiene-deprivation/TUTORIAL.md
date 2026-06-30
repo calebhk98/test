@@ -38,6 +38,20 @@ transfers to any future project.
 
 **Goal:** a Node project that can connect to MySQL and confirm the database exists.
 
+**Try it first — why one config file and a socket connection?**
+- Imagine hard-coding the host, user and password into *every* script. It works —
+  until you rename the database and must edit every file (and miss one). Keeping the
+  settings in `config.js` once is why we start there.
+- Why connect as root over the local *socket* rather than TCP with a password? Once
+  MySQL is running (step 1a, next), compare the two and see for yourself:
+  ```bash
+  mysql -e "SELECT 1"                       # over the socket as your OS user -> works, no password
+  mysql -h 127.0.0.1 -u root -e "SELECT 1"  # forces TCP -> "Access denied for user 'root'"
+  ```
+  The socket trusts your operating-system user, so there's no password to manage for
+  local work. (In Step 8 we go the opposite way and make a deliberately *limited*
+  user for the web app.)
+
 **1a. Make sure MySQL is running.** On a normal desktop install that is
 `sudo service mysql start` (or `brew services start mariadb` on macOS). In a fresh
 cloud container with no service manager, start it manually:
@@ -227,6 +241,23 @@ what to build next, and why.
 **Goal:** one table, `establishment`, to hold rated premises. No relationships yet
 — we start as simple as possible.
 
+**Try it first — why store the rating twice (as text *and* as a number)?**
+One column seems simpler. Test both shortcuts in a throwaway table — `TEMPORARY`
+tables disappear when you disconnect, so this can't hurt anything:
+```bash
+# A) a numeric-only column can't even hold the real data:
+mysql fhrs_tutorial -e "CREATE TEMPORARY TABLE t(v TINYINT); INSERT INTO t VALUES ('5'),('AwaitingInspection');"
+#   -> ERROR 1366: Incorrect integer value 'AwaitingInspection'  (you'd lose every un-rated premise)
+
+# B) a text-only column stores everything but lies when you do maths:
+mysql fhrs_tutorial -e "CREATE TEMPORARY TABLE t(v VARCHAR(30)); INSERT INTO t VALUES('5'),('5'),('Exempt'); SELECT AVG(v) FROM t;"
+#   -> 3.33, because 'Exempt' silently became 0
+```
+So the table keeps **both**: `rating_value` (text — loses nothing) and
+`rating_numeric` (NULL unless 0–5 — so averages stay honest). And the key: `fhrs_id`
+is the FSA's own unique id, so making it the `PRIMARY KEY` means re-loading a file
+can't silently create duplicate rows.
+
 > *Naming:* we call this table `establishment`; you could call it `premises`,
 > `outlets`, `food_business`, etc. We'll assume `establishment` from here on — if you
 > choose another name, use it in every later query and script too.
@@ -282,6 +313,17 @@ You should see the `establishment` table and its columns.
 
 **Goal:** download a single authority's open-data file and load it. We use Barking
 and Dagenham (FSA code 501, ~1,400 premises) so it is fast.
+
+**Try it first — why one authority, and why `curl`?**
+- Why not load all 363 now? One file is ~1,400 rows and downloads in a second, so
+  you can get the parsing right before committing to ~600,000 rows. Scaling up
+  before the small case works just makes every mistake slower to find.
+- Why shell out to `curl` instead of Node's built-in `fetch`/`https`? On many
+  corporate and cloud networks the proxy is configured for `curl` but not for Node,
+  so `fetch` hangs while `curl` works — using `curl` keeps the tutorial portable.
+- The loader runs `TRUNCATE establishment` before inserting. Run `node etl/load-one.js`
+  twice: it stays at ~1,438 rows because of that truncate. Without it, the second
+  run would fail on the `fhrs_id` primary key — the database refusing to double-load.
 
 This step introduces the `etl/` folder for your data-loading scripts — from a
 terminal, `mkdir -p etl` first (an editor will make it for you on save). The script
@@ -362,6 +404,18 @@ You should see roughly 1,400 premises, most with a numeric rating.
 
 **Goal:** simple analysis on the single-authority data — no new code, just SQL.
 
+**Try it first — which column do you average, and why a `HAVING` filter?**
+- Average the *text* column and watch it mislead:
+  ```bash
+  mysql fhrs_tutorial -e "SELECT AVG(rating_value) AS text_lie, AVG(rating_numeric) AS honest FROM establishment;"
+  ```
+  `AVG(rating_value)` turns 'AwaitingInspection'/'Exempt' into 0 and drags the number
+  down; `AVG(rating_numeric)` ignores them. Always average the column that is *only*
+  numbers.
+- In the by-type query below, try deleting the `HAVING rated >= 20` line. Business
+  types with one or two premises shoot to the top and bottom on pure chance — the
+  threshold is what keeps the ranking meaningful.
+
 **5a. Create `sql/analysis-small.sql`:**
 
 ```sql
@@ -402,6 +456,21 @@ awaiting-inspection count).
 
 **Goal:** turn the single table into a proper relational schema (regions, local
 authorities, business types) and load **many** authorities across the UK.
+
+**Try it first — why split out `region` and `business_type` tables at all?**
+Leaving them as text columns on every row (like Step 3 did) looks simpler. Two
+problems appear quickly:
+```bash
+# 1) free text + one typo = a phantom category that corrupts your GROUP BY:
+mysql fhrs_tutorial -e "CREATE TEMPORARY TABLE bt(name VARCHAR(40),r INT);
+  INSERT INTO bt VALUES('Restaurant',5),('Restaurant',4),('Resturant',1);
+  SELECT name,COUNT(*) n,AVG(r) avg FROM bt GROUP BY name;"
+#   -> 'Resturant' becomes its own group; your per-type averages are now wrong
+```
+2) If "London" sits as text on thousands of rows and the name changes, you must
+update *every* row; stored once in a `region` table and referenced by id, it's a
+one-row change. Putting each region/type in its own table (and joining by id) stops
+typos and makes renames trivial — that is what normalisation buys you.
 
 > **From Step 6 on you will NOT run `sql/01_schema_single.sql` or `etl/load-one.js`
 > again.** You don't need to delete anything by hand: the new
@@ -609,6 +678,18 @@ working across the data you loaded.
 **Goal:** bring in the English Indices of Deprivation 2019 (per local-authority
 district) and join it to your authorities to ask *"do poorer areas score lower?"*
 
+**Try it first — why not just join on the authority name?**
+The obvious join is `... ON la.name = imd.lad_name`. Here's why it falls apart:
+```bash
+mysql -e "SELECT 'Bristol' = 'Bristol, City of' AS exact_match;"   # -> 0
+```
+Real names differ by case, punctuation, "City of", `&` vs "and", and post-2019
+boundary changes, so an exact join would silently drop most authorities. That's why
+`load-imd.js` *normalises* both names before matching, and why the link is left as
+NULL for authorities that don't match (visible) instead of using an INNER join that
+hides them. Reconciling two datasets with no shared key is the normal cost of
+combining real-world data.
+
 > *Apply the Step 2 method to this new source first.* Found it: gov.uk's "English
 > indices of deprivation 2019" (official, documented, machine-readable). One row =
 > one local-authority district; the key is the **ONS district code**. The hard part
@@ -746,6 +827,18 @@ only indicative; the full 363-authority dataset gives a clearer figure.*
 
 **Goal:** serve the results over HTTP, using a database user that can only read.
 
+**Try it first — why not let the web app connect as root?**
+Anything the connection is allowed to do, a bug or an injected query can do too. See
+what root could do to your data — the transaction is rolled back, so nothing
+actually changes:
+```bash
+mysql fhrs_tutorial -e "START TRANSACTION; DELETE FROM establishment LIMIT 1; SELECT ROW_COUNT() AS root_could_delete; ROLLBACK;"
+#   -> root_could_delete = 1   (a query-only web app should never be able to do that)
+```
+After you create the read-only `fhrs_read` user below, that same `DELETE` is refused.
+Giving the web tier only `SELECT` means a compromised query can read data but never
+change or drop it.
+
 **8a. Create the read-only user.** The username `fhrs_read` and password `readonly`
 are arbitrary — pick your own if you like, but then set the same values in
 `config.js` under `app`. We'll assume `fhrs_read` / `readonly`.
@@ -760,6 +853,12 @@ FLUSH PRIVILEGES;
 
 ```bash
 mysql < sql/04_users.sql
+```
+
+Confirm the limit is real — this `DELETE` as `fhrs_read` should be **refused**:
+```bash
+mysql -u fhrs_read -preadonly fhrs_tutorial -e "DELETE FROM establishment LIMIT 1;"
+#   -> ERROR 1142: DELETE command denied to user 'fhrs_read'@'localhost'
 ```
 
 This step introduces the `webapp/` and `webapp/public/` folders — from a terminal,
@@ -845,6 +944,20 @@ later with `kill %1` or by closing the terminal.)
 
 **Goal:** remove *impossible* records, but record exactly what was removed so the
 cleaning is transparent and reversible.
+
+**Try it first — why quarantine rows, and why keep ones with no postcode?**
+- The blunt fix is `DELETE FROM establishment WHERE rating_date < '2006-01-01';` —
+  it works, and those rows are gone forever with no record of what left or why. Our
+  cleaner first copies them into an `establishment_rejects` table *with a reason*,
+  so every removal is auditable and reversible.
+- "Missing" is not the same as "wrong". Before you'd delete rows with no postcode,
+  count them:
+  ```bash
+  mysql fhrs_tutorial -e "SELECT COUNT(*) AS no_postcode FROM establishment WHERE post_code IS NULL OR post_code='';"
+  ```
+  Most are legitimate premises (e.g. mobile caterers). Deleting them would throw away
+  real data — so the cleaner *flags and keeps* them, and removes only what is
+  genuinely impossible.
 
 **9a. Create `etl/clean.js`:**
 
