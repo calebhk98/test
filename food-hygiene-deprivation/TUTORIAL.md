@@ -14,6 +14,12 @@ One step (Step 2) writes no code at all: it teaches the *method* — how you'd w
 out what to build from an unfamiliar dataset on your own, which is the part that
 transfers to any future project.
 
+We also deliberately do the **easy thing first** and add complexity only when a
+concrete problem forces it. Each step opens with a *Try it first* box: sometimes the
+easy way turns out to be exactly right (so don't over-engineer it), and sometimes it
+works until a specific point you can see for yourself — and *that* is what justifies
+the more involved approach. Reach for complexity when you've felt the pain, not before.
+
 > Work inside one project folder (whatever folder you were told to use). Every path
 > below is relative to that folder. Create files exactly as shown.
 
@@ -416,6 +422,11 @@ You should see roughly 1,400 premises, most with a numeric rating.
   types with one or two premises shoot to the top and bottom on pure chance — the
   threshold is what keeps the ranking meaningful.
 
+And the *easy way is the right way here*: plain `GROUP BY` / `AVG` answers these
+questions directly. You don't need extra tables, a script, or an app to explore data
+— resist adding any. Complexity earns its place only when a question actually
+demands it (we hit the first such case in the next step).
+
 **5a. Create `sql/analysis-small.sql`:**
 
 ```sql
@@ -457,9 +468,11 @@ awaiting-inspection count).
 **Goal:** turn the single table into a proper relational schema (regions, local
 authorities, business types) and load **many** authorities across the UK.
 
-**Try it first — why split out `region` and `business_type` tables at all?**
-Leaving them as text columns on every row (like Step 3 did) looks simpler. Two
-problems appear quickly:
+**Try it first — do you even need separate tables? Start by assuming you don't.**
+The easy way is to keep `region` and `business_type` as plain text columns on every
+row, exactly like Step 3 did — and for one authority and simple questions, that was
+genuinely fine. So don't add tables out of habit; add them when one of these two
+concrete problems actually bites (and at this step, they do):
 ```bash
 # 1) free text + one typo = a phantom category that corrupts your GROUP BY:
 mysql fhrs_tutorial -e "CREATE TEMPORARY TABLE bt(name VARCHAR(40),r INT);
@@ -678,17 +691,26 @@ working across the data you loaded.
 **Goal:** bring in the English Indices of Deprivation 2019 (per local-authority
 district) and join it to your authorities to ask *"do poorer areas score lower?"*
 
-**Try it first — why not just join on the authority name?**
-The obvious join is `... ON la.name = imd.lad_name`. Here's why it falls apart:
+**Try the easy way first — a plain exact-name join.**
+The obvious join is `... ON la.name = imd.lad_name`, and it is a perfectly
+reasonable first attempt — it actually matches *most* authorities, because many
+district names are spelled identically in both datasets. The point isn't that it's
+useless; it's that you should *try it and measure how far it gets you*. It misses
+any names that don't line up character-for-character:
 ```bash
 mysql -e "SELECT 'Bristol' = 'Bristol, City of' AS exact_match;"   # -> 0
 ```
-Real names differ by case, punctuation, "City of", `&` vs "and", and post-2019
-boundary changes, so an exact join would silently drop most authorities. That's why
-`load-imd.js` *normalises* both names before matching, and why the link is left as
-NULL for authorities that don't match (visible) instead of using an INNER join that
-hides them. Reconciling two datasets with no shared key is the normal cost of
-combining real-world data.
+Once you've loaded the data (step 7b), measure the gap yourself:
+```bash
+mysql fhrs_tutorial -e "SELECT COUNT(*) AS exact_matches FROM local_authority la JOIN imd_lad imd ON la.name = imd.lad_name;"
+# compare with the 'matched' count that load-imd.js prints
+```
+(On the full 363-authority dataset, the exact join catches **262**; normalising the
+names — lower-casing, dropping "City of", `&`→"and", etc. — lifts it to **289**.) So
+we start with the easy join, see exactly which authorities it leaves behind, and add
+just enough — name normalisation — to recover them. Unmatched ones are kept as NULL
+(visible) rather than hidden by an INNER join. Reconciling two datasets with no
+shared key is the normal cost of combining real-world data.
 
 > *Apply the Step 2 method to this new source first.* Found it: gov.uk's "English
 > indices of deprivation 2019" (official, documented, machine-readable). One row =
