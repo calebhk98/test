@@ -4,11 +4,21 @@ You will build, from scratch, a MySQL database of UK food-hygiene ratings and us
 it to ask whether hygiene varies by region, business type and deprivation, then
 put a small web app in front of it.
 
-The tutorial grows in **8 steps**. **Every step ends in a working state** with a
+The tutorial grows in **9 steps**. **Every step ends in a working state** with a
 *Checkpoint* you can run to prove it works. Early steps are deliberately tiny (one
 local authority, one table); later steps scale up and restructure. **It is normal
 to replace or delete earlier code in a later step** — that is how real projects
 evolve, and the tutorial tells you when.
+
+One step (Step 2) writes no code at all: it teaches the *method* — how you'd work
+out what to build from an unfamiliar dataset on your own, which is the part that
+transfers to any future project.
+
+We also deliberately do the **easy thing first** and add complexity only when a
+concrete problem forces it. Each step opens with a *Try it first* box: sometimes the
+easy way turns out to be exactly right (so don't over-engineer it), and sometimes it
+works until a specific point you can see for yourself — and *that* is what justifies
+the more involved approach. Reach for complexity when you've felt the pain, not before.
 
 > Work inside one project folder (whatever folder you were told to use). Every path
 > below is relative to that folder. Create files exactly as shown.
@@ -33,6 +43,20 @@ evolve, and the tutorial tells you when.
 ## Step 1 — Project setup and a database connection
 
 **Goal:** a Node project that can connect to MySQL and confirm the database exists.
+
+**Try it first — why one config file and a socket connection?**
+- Imagine hard-coding the host, user and password into *every* script. It works —
+  until you rename the database and must edit every file (and miss one). Keeping the
+  settings in `config.js` once is why we start there.
+- Why connect as root over the local *socket* rather than TCP with a password? Once
+  MySQL is running (step 1a, next), compare the two and see for yourself:
+  ```bash
+  mysql -e "SELECT 1"                       # over the socket as your OS user -> works, no password
+  mysql -h 127.0.0.1 -u root -e "SELECT 1"  # forces TCP -> "Access denied for user 'root'"
+  ```
+  The socket trusts your operating-system user, so there's no password to manage for
+  local work. (In Step 8 we go the opposite way and make a deliberately *limited*
+  user for the web app.)
 
 **1a. Make sure MySQL is running.** On a normal desktop install that is
 `sudo service mysql start` (or `brew services start mariadb` on macOS). In a fresh
@@ -87,7 +111,7 @@ module.exports = {
   dbName: process.env.DB_NAME || 'fhrs_tutorial',
   socketPath: process.env.DB_SOCKET || '/run/mysqld/mysqld.sock',
   admin: { user: 'root' },                       // full access, used by ETL
-  app:   { user: 'fhrs_read', password: 'readonly' }, // read-only, used by web app (Step 7)
+  app:   { user: 'fhrs_read', password: 'readonly' }, // read-only, used by web app (Step 8)
 };
 ```
 
@@ -124,10 +148,121 @@ You should see `Connected. Server: …` and `Database ready: fhrs_tutorial`.
 
 ---
 
-## Step 2 — Your first table
+## Step 2 — Explore the data before you model it
+
+**Goal:** learn the method you'd use for *any* unfamiliar dataset — find it, look
+at it, understand its shape — and use it to justify the table you build next. This
+step writes **no code and creates no database objects**; it's about looking before
+you leap. (If you only ever follow recipes you never learn this part — so do it.)
+
+When you're not following a tutorial, you don't begin by knowing the columns. You
+find data and interrogate it. Here is a repeatable five-question method, applied to
+the FHRS food-hygiene data.
+
+**2a. Find the data (discoverability).**
+- Start at an open-data catalogue — for the UK, <https://www.data.gov.uk>;
+  elsewhere, data.gov, the EU data portal, or your city's portal. Search your topic
+  (e.g. "food hygiene ratings").
+- Prefer the **primary, official** source over a re-publisher. Here that is the Food
+  Standards Agency open-data page, `https://ratings.food.gov.uk/open-data`. Good
+  signs: the body that *produces* the data publishes it, it is **machine-readable**
+  (XML/CSV/JSON, not a PDF), it is **documented**, and it is refreshed on a schedule.
+- Check the **licence** (here, the Open Government Licence) so you know what you may
+  do with it.
+
+**2b. Get ONE small sample, not the whole thing.** Don't download 363 files to learn
+the shape — grab one and look at it:
+
+```bash
+mkdir -p data
+curl -fsSL -o data/sample.xml "https://ratings.food.gov.uk/OpenDataFiles/FHRS501en-GB.xml"
+head -c 1200 data/sample.xml; echo
+```
+
+(For a CSV you would `head -5`; for JSON, pipe it through a formatter.)
+
+**2c. Interrogate it — grain, key, fields, values, gaps.** These five questions
+decide your schema. A few lines of Node let you *look* instead of guess:
+
+```bash
+node -e '
+const {XMLParser}=require("fast-xml-parser");const fs=require("fs");
+let e=new XMLParser({ignoreAttributes:false,parseTagValue:false})
+  .parse(fs.readFileSync("data/sample.xml","utf8"))
+  .FHRSEstablishment.EstablishmentCollection.EstablishmentDetail;
+if(!Array.isArray(e)) e=[e];
+console.log("rows in this one file:", e.length);
+console.log("one row:", JSON.stringify(e[0],null,2));
+console.log("distinct RatingValue:", [...new Set(e.map(x=>x.RatingValue))].join(", "));
+console.log("rows with no RatingDate:", e.filter(x=>!x.RatingDate||typeof x.RatingDate==="object").length);
+'
+```
+
+Read the output and answer:
+- **Grain** — what is one row? (One rated establishment. That is your fact-table grain.)
+- **Key** — what uniquely identifies a row? (`FHRSID` — your primary key.)
+- **Fields & types** — name (text), postcode (text), `RatingDate` (a date),
+  `Geocode` (two numbers), three component `Scores`…
+- **Value surprises** — `RatingValue` isn't only 0–5: you'll also see
+  `AwaitingInspection`, `Exempt`, and (in Scotland) `Pass`. Always list the *real*
+  distinct values; assumptions lie.
+- **What's missing** — `RatingDate` is absent for premises awaiting inspection, so
+  that column must allow NULL.
+
+**2d. Read the documentation.** A good dataset ships a schema/readme defining each
+field. The FSA open-data page links field definitions (what `SchemeType` and the
+`Scores` mean — e.g. that hygiene `Scores` are "lower is better", the opposite
+direction to the headline rating). Docs confirm guesses and explain codes you
+can't infer.
+
+**2e. Turn observations into a table design.** Now every column we create in the
+next step is *justified by something we saw*:
+
+| What we observed | Schema decision (next step) |
+|---|---|
+| one row = one establishment | a single fact table |
+| `FHRSID` is unique | `BIGINT PRIMARY KEY` |
+| `RatingValue` mixes text and numbers | keep raw text **and** a nullable numeric column |
+| `RatingDate` sometimes absent | `DATE NULL` |
+| `Geocode` has lat/long | two `DECIMAL` columns |
+| three component `Scores` | three `SMALLINT` columns |
+
+**Checkpoint 2:** You can state, for this data, (a) what one row represents, (b) its
+unique key, and (c) at least one `RatingValue` you wouldn't have guessed. If you ran
+the Node snippet you saw ~1438 rows and a distinct `RatingValue` list including
+`AwaitingInspection` and `Exempt`. No tables exist yet — but you now know exactly
+what to build next, and why.
+
+> **The method, reusable for any dataset:** find it (catalogue → primary,
+> documented, machine-readable source) → sample **one** file → identify **grain,
+> key, types, value surprises, and what's nullable** → read the **docs** → design
+> the table from what you actually observed. We use this same method again in
+> **Step 7** when we add a second dataset (deprivation) and have to work out how it
+> joins to this one.
+
+---
+
+## Step 3 — Your first table
 
 **Goal:** one table, `establishment`, to hold rated premises. No relationships yet
 — we start as simple as possible.
+
+**Try it first — why store the rating twice (as text *and* as a number)?**
+One column seems simpler. Test both shortcuts in a throwaway table — `TEMPORARY`
+tables disappear when you disconnect, so this can't hurt anything:
+```bash
+# A) a numeric-only column can't even hold the real data:
+mysql fhrs_tutorial -e "CREATE TEMPORARY TABLE t(v TINYINT); INSERT INTO t VALUES ('5'),('AwaitingInspection');"
+#   -> ERROR 1366: Incorrect integer value 'AwaitingInspection'  (you'd lose every un-rated premise)
+
+# B) a text-only column stores everything but lies when you do maths:
+mysql fhrs_tutorial -e "CREATE TEMPORARY TABLE t(v VARCHAR(30)); INSERT INTO t VALUES('5'),('5'),('Exempt'); SELECT AVG(v) FROM t;"
+#   -> 3.33, because 'Exempt' silently became 0
+```
+So the table keeps **both**: `rating_value` (text — loses nothing) and
+`rating_numeric` (NULL unless 0–5 — so averages stay honest). And the key: `fhrs_id`
+is the FSA's own unique id, so making it the `PRIMARY KEY` means re-loading a file
+can't silently create duplicate rows.
 
 > *Naming:* we call this table `establishment`; you could call it `premises`,
 > `outlets`, `food_business`, etc. We'll assume `establishment` from here on — if you
@@ -136,7 +271,7 @@ You should see `Connected. Server: …` and `Database ready: fhrs_tutorial`.
 This step introduces the `sql/` folder for your SQL files — from a terminal,
 `mkdir -p sql` first (an editor will make it for you on save).
 
-**2a. Create `sql/01_schema_single.sql`:**
+**3a. Create `sql/01_schema_single.sql`:**
 
 ```sql
 CREATE DATABASE IF NOT EXISTS fhrs_tutorial
@@ -147,7 +282,7 @@ DROP TABLE IF EXISTS establishment;
 CREATE TABLE establishment (
   fhrs_id        BIGINT PRIMARY KEY,         -- unique id from the FSA
   business_name  VARCHAR(255),
-  business_type  VARCHAR(120),              -- text for now; we normalise it in Step 5
+  business_type  VARCHAR(120),              -- text for now; we normalise it in Step 6
   post_code      VARCHAR(20),
   rating_value   VARCHAR(30),               -- '0'..'5', or 'AwaitingInspection', 'Pass', ...
   rating_numeric TINYINT NULL,              -- 0..5 when numeric, else NULL
@@ -162,15 +297,15 @@ CREATE TABLE establishment (
 ) ENGINE=InnoDB;
 ```
 
-**2b. Run it.** This `mysql` command connects as your system's root user over the
+**3b. Run it.** This `mysql` command connects as your system's root user over the
 local socket (no password needed) — that is correct here; the read-only `fhrs_read`
-user isn't created until Step 7.
+user isn't created until Step 8.
 
 ```bash
 mysql < sql/01_schema_single.sql
 ```
 
-**Checkpoint 2:**
+**Checkpoint 3:**
 
 ```bash
 mysql fhrs_tutorial -e "SHOW TABLES; DESCRIBE establishment;"
@@ -180,16 +315,27 @@ You should see the `establishment` table and its columns.
 
 ---
 
-## Step 3 — Load one local authority (small scale)
+## Step 4 — Load one local authority (small scale)
 
 **Goal:** download a single authority's open-data file and load it. We use Barking
 and Dagenham (FSA code 501, ~1,400 premises) so it is fast.
+
+**Try it first — why one authority, and why `curl`?**
+- Why not load all 363 now? One file is ~1,400 rows and downloads in a second, so
+  you can get the parsing right before committing to ~600,000 rows. Scaling up
+  before the small case works just makes every mistake slower to find.
+- Why shell out to `curl` instead of Node's built-in `fetch`/`https`? On many
+  corporate and cloud networks the proxy is configured for `curl` but not for Node,
+  so `fetch` hangs while `curl` works — using `curl` keeps the tutorial portable.
+- The loader runs `TRUNCATE establishment` before inserting. Run `node etl/load-one.js`
+  twice: it stays at ~1,438 rows because of that truncate. Without it, the second
+  run would fail on the `fhrs_id` primary key — the database refusing to double-load.
 
 This step introduces the `etl/` folder for your data-loading scripts — from a
 terminal, `mkdir -p etl` first (an editor will make it for you on save). The script
 itself creates the `data/` download folder when it runs.
 
-**3a. Create `etl/load-one.js`:**
+**4a. Create `etl/load-one.js`:**
 
 ```js
 // Download ONE authority's FHRS open-data XML and load it into `establishment`.
@@ -244,13 +390,13 @@ const date = v => { const s = txt(v); return s && /^\d{4}-\d{2}-\d{2}/.test(s) ?
 })().catch(e => { console.error('FAILED:', e.message); process.exit(1); });
 ```
 
-**3b. Run it (from the project root):**
+**4b. Run it (from the project root):**
 
 ```bash
 node etl/load-one.js
 ```
 
-**Checkpoint 3:**
+**Checkpoint 4:**
 
 ```bash
 mysql fhrs_tutorial -e "SELECT COUNT(*) AS premises, COUNT(rating_numeric) AS rated FROM establishment;"
@@ -260,11 +406,28 @@ You should see roughly 1,400 premises, most with a numeric rating.
 
 ---
 
-## Step 4 — Ask your first questions
+## Step 5 — Ask your first questions
 
 **Goal:** simple analysis on the single-authority data — no new code, just SQL.
 
-**4a. Create `sql/analysis-small.sql`:**
+**Try it first — which column do you average, and why a `HAVING` filter?**
+- Average the *text* column and watch it mislead:
+  ```bash
+  mysql fhrs_tutorial -e "SELECT AVG(rating_value) AS text_lie, AVG(rating_numeric) AS honest FROM establishment;"
+  ```
+  `AVG(rating_value)` turns 'AwaitingInspection'/'Exempt' into 0 and drags the number
+  down; `AVG(rating_numeric)` ignores them. Always average the column that is *only*
+  numbers.
+- In the by-type query below, try deleting the `HAVING rated >= 20` line. Business
+  types with one or two premises shoot to the top and bottom on pure chance — the
+  threshold is what keeps the ranking meaningful.
+
+And the *easy way is the right way here*: plain `GROUP BY` / `AVG` answers these
+questions directly. You don't need extra tables, a script, or an app to explore data
+— resist adding any. Complexity earns its place only when a question actually
+demands it (we hit the first such case in the next step).
+
+**5a. Create `sql/analysis-small.sql`:**
 
 ```sql
 USE fhrs_tutorial;
@@ -289,7 +452,7 @@ SELECT SUM(rating_date IS NULL) AS awaiting_inspection,
 FROM establishment;
 ```
 
-**Checkpoint 4:**
+**Checkpoint 5:**
 
 ```bash
 mysql fhrs_tutorial -t < sql/analysis-small.sql
@@ -300,19 +463,36 @@ awaiting-inspection count).
 
 ---
 
-## Step 5 — Scale up and add relationships
+## Step 6 — Scale up and add relationships
 
 **Goal:** turn the single table into a proper relational schema (regions, local
 authorities, business types) and load **many** authorities across the UK.
 
-> **From Step 5 on you will NOT run `sql/01_schema_single.sql` or `etl/load-one.js`
+**Try it first — do you even need separate tables? Start by assuming you don't.**
+The easy way is to keep `region` and `business_type` as plain text columns on every
+row, exactly like Step 3 did — and for one authority and simple questions, that was
+genuinely fine. So don't add tables out of habit; add them when one of these two
+concrete problems actually bites (and at this step, they do):
+```bash
+# 1) free text + one typo = a phantom category that corrupts your GROUP BY:
+mysql fhrs_tutorial -e "CREATE TEMPORARY TABLE bt(name VARCHAR(40),r INT);
+  INSERT INTO bt VALUES('Restaurant',5),('Restaurant',4),('Resturant',1);
+  SELECT name,COUNT(*) n,AVG(r) avg FROM bt GROUP BY name;"
+#   -> 'Resturant' becomes its own group; your per-type averages are now wrong
+```
+2) If "London" sits as text on thousands of rows and the name changes, you must
+update *every* row; stored once in a `region` table and referenced by id, it's a
+one-row change. Putting each region/type in its own table (and joining by id) stops
+typos and makes renames trivial — that is what normalisation buys you.
+
+> **From Step 6 on you will NOT run `sql/01_schema_single.sql` or `etl/load-one.js`
 > again.** You don't need to delete anything by hand: the new
 > `sql/02_schema_relational.sql` below `DROP`s and recreates every table, and a new
 > loader replaces the old one. Those two old files just sit unused (keep or delete
 > them, your choice). This kind of "replace earlier work as the design grows" is
 > normal — we'll always tell you when it happens.
 
-**5a. Create `sql/02_schema_relational.sql`:**
+**6a. Create `sql/02_schema_relational.sql`:**
 
 ```sql
 CREATE DATABASE IF NOT EXISTS fhrs_tutorial
@@ -368,7 +548,7 @@ Run it:
 mysql < sql/02_schema_relational.sql
 ```
 
-**5b. Create `etl/download-many.js`** — fetches the FSA authority list and downloads
+**6b. Create `etl/download-many.js`** — fetches the FSA authority list and downloads
 **2 authorities per region** (about 24 files: enough for real regional analysis,
 small enough to be quick):
 
@@ -405,9 +585,9 @@ const { execFileSync } = require('child_process');
 })().catch(e => { console.error('FAILED:', e.message); process.exit(1); });
 ```
 
-**5c. Create `etl/load-many.js`** — loads regions, business types, authorities and
-establishments in foreign-key order. *(It reads `data/selected.json`, which 5b
-creates, so always run 5b before 5c — the `Run both` block below does this for
+**6c. Create `etl/load-many.js`** — loads regions, business types, authorities and
+establishments in foreign-key order. *(It reads `data/selected.json`, which 6b
+creates, so always run 6b before 6c — the `Run both` block below does this for
 you.)*
 
 ```js
@@ -482,14 +662,14 @@ const date = v => { const s = txt(v); return s && /^\d{4}-\d{2}-\d{2}/.test(s) ?
 })().catch(e => { console.error('FAILED:', e.message); process.exit(1); });
 ```
 
-**5d. Run both:**
+**6d. Run both:**
 
 ```bash
 node etl/download-many.js
 node etl/load-many.js
 ```
 
-**Checkpoint 5:**
+**Checkpoint 6:**
 
 ```bash
 mysql fhrs_tutorial -t -e "
@@ -506,12 +686,41 @@ working across the data you loaded.
 
 ---
 
-## Step 6 — Add deprivation and join it in
+## Step 7 — Add deprivation and join it in
 
 **Goal:** bring in the English Indices of Deprivation 2019 (per local-authority
 district) and join it to your authorities to ask *"do poorer areas score lower?"*
 
-**6a. Add the deprivation table, and the link column.** Now — not back in Step 5 —
+**Try the easy way first — a plain exact-name join.**
+The obvious join is `... ON la.name = imd.lad_name`, and it is a perfectly
+reasonable first attempt — it actually matches *most* authorities, because many
+district names are spelled identically in both datasets. The point isn't that it's
+useless; it's that you should *try it and measure how far it gets you*. It misses
+any names that don't line up character-for-character:
+```bash
+mysql -e "SELECT 'Bristol' = 'Bristol, City of' AS exact_match;"   # -> 0
+```
+Once you've loaded the data (step 7b), measure the gap yourself:
+```bash
+mysql fhrs_tutorial -e "SELECT COUNT(*) AS exact_matches FROM local_authority la JOIN imd_lad imd ON la.name = imd.lad_name;"
+# compare with the 'matched' count that load-imd.js prints
+```
+(On the full 363-authority dataset, the exact join catches **262**; normalising the
+names — lower-casing, dropping "City of", `&`→"and", etc. — lifts it to **289**.) So
+we start with the easy join, see exactly which authorities it leaves behind, and add
+just enough — name normalisation — to recover them. Unmatched ones are kept as NULL
+(visible) rather than hidden by an INNER join. Reconciling two datasets with no
+shared key is the normal cost of combining real-world data.
+
+> *Apply the Step 2 method to this new source first.* Found it: gov.uk's "English
+> indices of deprivation 2019" (official, documented, machine-readable). One row =
+> one local-authority district; the key is the **ONS district code**. The hard part
+> is the **join**: this data has no FSA code, only a district *name*, so we'll match
+> it to our authorities by name (and accept that a few won't match). Spotting "how
+> will this join to what I already have?" is the main new question when you add a
+> second dataset.
+
+**7a. Add the deprivation table, and the link column.** Now — not back in Step 6 —
 is when we need a `lad_code` on `local_authority` to point each authority at its
 deprivation district, so we add it here with `ALTER TABLE`. Create `sql/03_imd.sql`:
 
@@ -526,7 +735,7 @@ CREATE TABLE imd_lad (
 ) ENGINE=InnoDB;
 
 -- Add the deprivation link to local_authority now that we have somewhere to point.
--- (Run this step once; Step 5 recreates local_authority without this column.)
+-- (Run this step once; Step 6 recreates local_authority without this column.)
 ALTER TABLE local_authority ADD COLUMN lad_code VARCHAR(10) NULL;
 ```
 
@@ -534,7 +743,7 @@ ALTER TABLE local_authority ADD COLUMN lad_code VARCHAR(10) NULL;
 mysql < sql/03_imd.sql
 ```
 
-**6b. Create `etl/load-imd.js`** — downloads the Indices of Deprivation 2019
+**7b. Create `etl/load-imd.js`** — downloads the Indices of Deprivation 2019
 local-authority-district summary spreadsheet (the official release calls it
 "File 10"), loads it, and matches each local authority to its district by name:
 
@@ -582,7 +791,7 @@ const norm = s => String(s).toLowerCase().replace(/&/g, 'and').replace(/[.,'`]/g
 node etl/load-imd.js
 ```
 
-**6c. Create `sql/analysis-deprivation.sql`:**
+**7c. Create `sql/analysis-deprivation.sql`:**
 
 ```sql
 USE fhrs_tutorial;
@@ -615,7 +824,7 @@ SELECT COUNT(*) AS authorities,
 FROM s;
 ```
 
-**Checkpoint 6:**
+**Checkpoint 7:**
 
 ```bash
 mysql fhrs_tutorial -t < sql/analysis-deprivation.sql
@@ -636,11 +845,23 @@ only indicative; the full 363-authority dataset gives a clearer figure.*
 
 ---
 
-## Step 7 — A read-only web app
+## Step 8 — A read-only web app
 
 **Goal:** serve the results over HTTP, using a database user that can only read.
 
-**7a. Create the read-only user.** The username `fhrs_read` and password `readonly`
+**Try it first — why not let the web app connect as root?**
+Anything the connection is allowed to do, a bug or an injected query can do too. See
+what root could do to your data — the transaction is rolled back, so nothing
+actually changes:
+```bash
+mysql fhrs_tutorial -e "START TRANSACTION; DELETE FROM establishment LIMIT 1; SELECT ROW_COUNT() AS root_could_delete; ROLLBACK;"
+#   -> root_could_delete = 1   (a query-only web app should never be able to do that)
+```
+After you create the read-only `fhrs_read` user below, that same `DELETE` is refused.
+Giving the web tier only `SELECT` means a compromised query can read data but never
+change or drop it.
+
+**8a. Create the read-only user.** The username `fhrs_read` and password `readonly`
 are arbitrary — pick your own if you like, but then set the same values in
 `config.js` under `app`. We'll assume `fhrs_read` / `readonly`.
 
@@ -656,10 +877,16 @@ FLUSH PRIVILEGES;
 mysql < sql/04_users.sql
 ```
 
+Confirm the limit is real — this `DELETE` as `fhrs_read` should be **refused**:
+```bash
+mysql -u fhrs_read -preadonly fhrs_tutorial -e "DELETE FROM establishment LIMIT 1;"
+#   -> ERROR 1142: DELETE command denied to user 'fhrs_read'@'localhost'
+```
+
 This step introduces the `webapp/` and `webapp/public/` folders — from a terminal,
 `mkdir -p webapp/public` first (an editor will make them for you on save).
 
-**7b. Create `webapp/server.js`:**
+**8b. Create `webapp/server.js`:**
 
 ```js
 const express = require('express');
@@ -694,7 +921,7 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Web app on http://localhost:${PORT}`));
 ```
 
-**7c. Create `webapp/public/index.html`:**
+**8c. Create `webapp/public/index.html`:**
 
 ```html
 <!DOCTYPE html><html><head><meta charset="utf-8"><title>Food hygiene by region</title>
@@ -711,7 +938,7 @@ fetch('/api/regions').then(r=>r.json()).then(rows=>{
 </script></body></html>
 ```
 
-**7d. Start it.** On Linux/macOS you can background it in the same terminal with `&`
+**8d. Start it.** On Linux/macOS you can background it in the same terminal with `&`
 (below). On Windows, or if you prefer, open a **second terminal** in the same
 project folder and run `node webapp/server.js` there without the `&`.
 
@@ -723,7 +950,7 @@ sleep 1
 If you see `EADDRINUSE` (port 3000 already taken), start it on another port and use
 that port in the checkpoint, e.g. `PORT=8000 node webapp/server.js &`.
 
-**Checkpoint 7:**
+**Checkpoint 8:**
 
 ```bash
 curl -s http://localhost:3000/api/regions
@@ -735,12 +962,26 @@ later with `kill %1` or by closing the terminal.)
 
 ---
 
-## Step 8 — Clean the data, with an audit trail
+## Step 9 — Clean the data, with an audit trail
 
 **Goal:** remove *impossible* records, but record exactly what was removed so the
 cleaning is transparent and reversible.
 
-**8a. Create `etl/clean.js`:**
+**Try it first — why quarantine rows, and why keep ones with no postcode?**
+- The blunt fix is `DELETE FROM establishment WHERE rating_date < '2006-01-01';` —
+  it works, and those rows are gone forever with no record of what left or why. Our
+  cleaner first copies them into an `establishment_rejects` table *with a reason*,
+  so every removal is auditable and reversible.
+- "Missing" is not the same as "wrong". Before you'd delete rows with no postcode,
+  count them:
+  ```bash
+  mysql fhrs_tutorial -e "SELECT COUNT(*) AS no_postcode FROM establishment WHERE post_code IS NULL OR post_code='';"
+  ```
+  Most are legitimate premises (e.g. mobile caterers). Deleting them would throw away
+  real data — so the cleaner *flags and keeps* them, and removes only what is
+  genuinely impossible.
+
+**9a. Create `etl/clean.js`:**
 
 ```js
 // Quarantine impossible rows into establishment_rejects (with a reason), then
@@ -782,13 +1023,13 @@ const RULES = [
 })().catch(e => { console.error('FAILED:', e.message); process.exit(1); });
 ```
 
-**8b. Run it:**
+**9b. Run it:**
 
 ```bash
 node etl/clean.js
 ```
 
-**Checkpoint 8:** (Counts depend on which authorities you sampled — a removal count
+**Checkpoint 9:** (Counts depend on which authorities you sampled — a removal count
 of **0 is also a pass**: it just means your sample had no impossible dates, and the
 empty `establishment_rejects` table proves the check ran.)
 

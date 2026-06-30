@@ -8,6 +8,10 @@ type and deprivation?*
 **The full write-up — schema, methodology, reflections and findings — is in
 [`report/REPORT.md`](report/REPORT.md).**
 
+**New to this? Build it yourself from scratch with the 9-step
+[`TUTORIAL.md`](TUTORIAL.md)** — it starts with one table and one local authority,
+teaches how to explore an unfamiliar open dataset, and grows into the full project.
+
 ## Headline findings (608,982 establishments, 363 authorities)
 
 * **Region matters:** London is a clear outlier (avg rating 4.46 / 68% top-rated)
