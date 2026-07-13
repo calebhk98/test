@@ -1,6 +1,8 @@
 -- ============================================================================
 -- QuestionAnswers.sql
--- One clearly-labelled query block per research question (Stage 1 / Step 3).
+-- One clearly-labelled block per research question (Stage 1, Step 3).
+-- Numbering matches the report body:
+--   Q1 = business types, Q2 = location, Q3 = deprivation, Q4 = recency.
 -- Run with:   \. QuestionAnswers.sql      (from inside mysql)
 --        or:  mysql -t foodHygeine < QuestionAnswers.sql   (from the shell)
 -- ============================================================================
@@ -8,30 +10,42 @@ USE foodHygeine;
 
 
 -- ============================================================================
--- Q1. Do average hygiene ratings vary by REGION?
+-- Q1. What type of places have better hygiene? (by business type)
+-- ============================================================================
+SELECT bt.business_type_name,
+       COUNT(e.rating_numeric)                   AS rated_premises,
+       ROUND(AVG(e.rating_numeric), 3)           AS avg_rating,
+       ROUND(100 * AVG(e.rating_numeric = 5), 1) AS pct_rated_5,
+       ROUND(AVG(e.hygiene_score), 2)            AS avg_hygiene_score
+FROM v_establishment e
+JOIN business_type bt ON e.business_type_id = bt.business_type_id
+WHERE e.rating_numeric IS NOT NULL
+GROUP BY bt.business_type_id
+HAVING rated_premises >= 1000
+ORDER BY avg_rating DESC;
+
+
+-- ============================================================================
+-- Q2. Is score correlated with location?
+--   Q2a: by region
 -- ============================================================================
 SELECT r.region_name,
        COUNT(e.rating_numeric)                   AS rated_premises,
        ROUND(AVG(e.rating_numeric), 3)           AS avg_rating,
        ROUND(100 * AVG(e.rating_numeric = 5), 1) AS pct_rated_5,
        ROUND(AVG(e.hygiene_score), 2)            AS avg_hygiene_score
-FROM establishment e
+FROM v_establishment e
 JOIN local_authority la ON e.la_code = la.la_code
 JOIN region r           ON la.region_id = r.region_id
 WHERE e.rating_numeric IS NOT NULL
 GROUP BY r.region_name
 ORDER BY avg_rating DESC;
 
-
--- ============================================================================
--- Q2. Which LOCAL AUTHORITIES score best / worst? (is score tied to place?)
---     Best first; change DESC -> ASC for the worst.
---     HAVING keeps only authorities with enough rated premises to be meaningful.
--- ============================================================================
+--   Q2b: by local authority (best first; change DESC to ASC for the worst)
 SELECT la.name, r.region_name,
        COUNT(e.rating_numeric)         AS rated_premises,
        ROUND(AVG(e.rating_numeric), 3) AS avg_rating
-FROM establishment e
+FROM v_establishment e
 JOIN local_authority la ON e.la_code = la.la_code
 JOIN region r           ON la.region_id = r.region_id
 WHERE e.rating_numeric IS NOT NULL
@@ -42,8 +56,8 @@ LIMIT 10;
 
 
 -- ============================================================================
--- Q3. Do more DEPRIVED areas have lower hygiene?
---     3a: average rating by deprivation quintile (1 = least, 5 = most deprived)
+-- Q3. Do poorer locations have lower hygiene?
+--   Q3a: average rating by deprivation quintile (1 = least, 5 = most deprived)
 -- ============================================================================
 WITH la_q AS (
     SELECT la.la_code,
@@ -56,16 +70,16 @@ SELECT q.quintile,
        ROUND(AVG(e.rating_numeric), 3)           AS avg_rating,
        ROUND(100 * AVG(e.rating_numeric = 5), 1) AS pct_rated_5
 FROM la_q q
-JOIN establishment e ON e.la_code = q.la_code
+JOIN v_establishment e ON e.la_code = q.la_code
 WHERE e.rating_numeric IS NOT NULL
 GROUP BY q.quintile
 ORDER BY q.quintile;
 
--- 3b: one-number summary — Pearson correlation between an authority's deprivation
---     score and its mean rating (negative => more deprived areas score lower).
+--   Q3b: Pearson correlation between an authority's deprivation score and its
+--   mean rating (negative means more deprived areas score lower).
 WITH s AS (
     SELECT imd.imd_avg_score AS x, AVG(e.rating_numeric) AS y
-    FROM establishment e
+    FROM v_establishment e
     JOIN local_authority la ON e.la_code = la.la_code
     JOIN imd_lad imd        ON la.lad_code = imd.lad_code
     WHERE e.rating_numeric IS NOT NULL
@@ -79,32 +93,16 @@ FROM s;
 
 
 -- ============================================================================
--- Q4. Which BUSINESS TYPES score best / worst?
--- ============================================================================
-SELECT bt.business_type_name,
-       COUNT(e.rating_numeric)                   AS rated_premises,
-       ROUND(AVG(e.rating_numeric), 3)           AS avg_rating,
-       ROUND(100 * AVG(e.rating_numeric = 5), 1) AS pct_rated_5,
-       ROUND(AVG(e.hygiene_score), 2)            AS avg_hygiene_score
-FROM establishment e
-JOIN business_type bt ON e.business_type_id = bt.business_type_id
-WHERE e.rating_numeric IS NOT NULL
-GROUP BY bt.business_type_id
-HAVING rated_premises >= 1000
-ORDER BY avg_rating DESC;
-
-
--- ============================================================================
--- Q5. How RECENT are inspections, and how many await a first one?
---     5a: how many premises are still awaiting their first inspection
+-- Q4. How recent, and how frequent, was the last inspection?
+--   Q4a: how many premises are still awaiting their first inspection
 -- ============================================================================
 SELECT SUM(rating_date IS NULL)                 AS awaiting_inspection,
        ROUND(100 * AVG(rating_date IS NULL), 1) AS pct_awaiting
 FROM establishment;
 
--- 5b: recency of the premises that HAVE been rated
-SELECT ROUND(AVG(DATEDIFF(CURDATE(), rating_date) / 365.25), 2)                 AS avg_age_years,
-       ROUND(100 * AVG(rating_date >= CURDATE() - INTERVAL 1 YEAR), 1)          AS pct_rated_last_year,
-       ROUND(100 * AVG(rating_date <  CURDATE() - INTERVAL 3 YEAR), 1)          AS pct_older_than_3yr
+--   Q4b: recency of the premises that HAVE been rated
+SELECT ROUND(AVG(DATEDIFF(CURDATE(), rating_date) / 365.25), 2)        AS avg_age_years,
+       ROUND(100 * AVG(rating_date >= CURDATE() - INTERVAL 1 YEAR), 1) AS pct_rated_last_year,
+       ROUND(100 * AVG(rating_date <  CURDATE() - INTERVAL 3 YEAR), 1) AS pct_older_than_3yr
 FROM establishment
 WHERE rating_date IS NOT NULL;
