@@ -185,23 +185,27 @@ relationship to an unenforced link for the reason above.
     authority's scheme (FHRS/FHIS), so `scheme_type` depends on `la_code`, not
     directly on `fhrs_id`: another transitive dependency.
 
-**Decision.** **[YOUR WORDS — pick one and defend it:]**
-  - *(a) Normalise to BCNF:* extract `rating_type(rating_value PK, rating_numeric)`
-    and drop `rating_numeric` from `establishment`; move `scheme_type` onto
-    `local_authority` (where it depends on the key). After this every determinant is
-    a candidate key → **BCNF**, and joining back reproduces all rows losslessly. This
-    is the cleaner design.
-  - *(b) Keep the current form and justify it:* `rating_numeric` is a controlled,
-    derived convenience column and `scheme_type` is denormalised onto the fact table
-    for single-table query simplicity and speed; both are maintained solely by the
-    loader, so the update-anomaly risk normalisation guards against does not arise in
-    a load-once snapshot.
+**Decision: normalise to BCNF.** Both violations are removed by a lossless
+decomposition:
+- Extract **`rating_type(rating_value PK, rating_numeric)`** and drop `rating_numeric`
+  from `establishment`; `establishment.rating_value` becomes a foreign key into
+  `rating_type`. This removes `rating_value → rating_numeric`.
+- Move **`scheme_type`** onto `local_authority` (where it depends on the key
+  `la_code`) and drop it from `establishment`. This removes `la_code → scheme_type`.
 
-State which you chose. The database is at least in **3NF** once (a) is applied, or is
-a **deliberate, justified denormalisation from BCNF** under (b) — either satisfies
-"at least 3NF" provided the reasoning is explicit.
+After this, in every table the only determinant of any non-trivial functional
+dependency is a candidate key → the schema is in **BCNF**. The decomposition is
+**lossless**: joining `establishment` back to `rating_type` (on `rating_value`) and
+to `local_authority` (on `la_code`) reproduces the original rows exactly.
 
-**No 4NF issue:** no table holds two independent multi-valued facts.
+**Query ergonomics preserved with a view.** To avoid rewriting every aggregate query
+to re-join `rating_type`, a view **`v_establishment`** re-joins the normalised pieces
+and re-exposes `rating_numeric` and `scheme_type`; analysis queries read from the view
+and are otherwise unchanged. The base tables are BCNF; the view is purely for
+convenience (it stores nothing).
+
+**Normal forms achieved:** **BCNF** (hence 3NF, 2NF, 1NF). **No 4NF issue** — no table
+holds two independent multi-valued facts.
 
 ---
 
@@ -211,58 +215,66 @@ a **deliberate, justified denormalisation from BCNF** under (b) — either satis
 *(Criterion: accurately implement the model; sensible types/keys/constraints)*
 
 Full script: `createDBTables.sql`. Design notes: InnoDB is the MySQL 8.0 default so
-`ENGINE=` is omitted; `rating_value` keeps the raw text while `rating_numeric` holds
-the clean 0–5 (NULL otherwise) so averages stay honest; `rating_date` is nullable to
-mean "never inspected"; `lad_code` is a plain nullable column (see §2.3).
+`ENGINE=` is omitted; the numeric rating lives in **`rating_type`** (BCNF, §2.4) and
+`establishment.rating_value` is a foreign key into it; `scheme_type` lives on
+`local_authority`; `rating_date` is nullable to mean "never inspected"; `lad_code` is
+a plain nullable column (see §2.3). A view **`v_establishment`** re-exposes
+`rating_numeric`/`scheme_type` so analysis queries stay simple.
 
 ```sql
 USE foodHygeine;
 
--- Drops the children before parents, or the foreign keys block the drops, and it errors
+-- children before parents (view first, then FK-referencing tables)
+DROP VIEW  IF EXISTS v_establishment;
 DROP TABLE IF EXISTS imd_lad;
 DROP TABLE IF EXISTS establishment;
+DROP TABLE IF EXISTS rating_type;
 DROP TABLE IF EXISTS local_authority;
 DROP TABLE IF EXISTS business_type;
 DROP TABLE IF EXISTS region;
 
 CREATE TABLE region (
-  region_id   INT AUTO_INCREMENT PRIMARY KEY, -- made-up id, auto-numbered
-  region_name VARCHAR(40) NOT NULL UNIQUE     -- EX London, can't repeat
+  region_id   INT AUTO_INCREMENT PRIMARY KEY,
+  region_name VARCHAR(40) NOT NULL UNIQUE
 );
 
 CREATE TABLE business_type (
-  business_type_id   INT PRIMARY KEY,          -- the FSA's own id for the type
-  business_type_name VARCHAR(120) NOT NULL     -- EX Restaurant/Cafe/Canteen
+  business_type_id   INT PRIMARY KEY,
+  business_type_name VARCHAR(120) NOT NULL
+);
+
+CREATE TABLE rating_type (
+  rating_value   VARCHAR(30) PRIMARY KEY,  -- '5', 'AwaitingInspection', 'Pass', ...
+  rating_numeric TINYINT NULL              -- 0-5 when numeric, else NULL
 );
 
 CREATE TABLE local_authority (
-  la_code   VARCHAR(10) PRIMARY KEY, -- council code, EX 501
-  name      VARCHAR(120) NOT NULL,
-  region_id INT NOT NULL,            -- which region this council sits in
-  lad_code  VARCHAR(10) NULL,        -- deprivation district, filled in later by name-matching
+  la_code     VARCHAR(10) PRIMARY KEY,
+  name        VARCHAR(120) NOT NULL,
+  region_id   INT NOT NULL,
+  scheme_type VARCHAR(10),                 -- FHRS/FHIS, depends on the authority
+  lad_code    VARCHAR(10) NULL,            -- deprivation district (name-matched)
   CONSTRAINT fk_la_region FOREIGN KEY (region_id) REFERENCES region(region_id)
 );
 
 CREATE TABLE establishment (
-  fhrs_id          BIGINT PRIMARY KEY, -- unique id from the FSA
+  fhrs_id          BIGINT PRIMARY KEY,
   business_name    VARCHAR(255),
   business_type_id INT,
   post_code        VARCHAR(20),
-  rating_value     VARCHAR(30),        -- '0'-'5', or 'AwaitingInspection', 'Pass', etc
-  rating_numeric   TINYINT NULL,       -- 0-5 when numeric, else NULL
-  rating_date      DATE NULL,          -- NULL = awaiting first inspection
+  rating_value     VARCHAR(30),            -- FK into rating_type
+  rating_date      DATE NULL,              -- NULL = awaiting first inspection
   la_code          VARCHAR(10) NOT NULL,
-  scheme_type      VARCHAR(10),
-  hygiene_score    SMALLINT NULL,      -- 0 is best, higher is worse
+  hygiene_score    SMALLINT NULL,          -- 0 is best, higher is worse
   structural_score SMALLINT NULL,
   confidence_score SMALLINT NULL,
   longitude        DECIMAL(9,6) NULL,
   latitude         DECIMAL(8,6) NULL,
-  CONSTRAINT fk_est_la   FOREIGN KEY (la_code)          REFERENCES local_authority(la_code),
-  CONSTRAINT fk_est_type FOREIGN KEY (business_type_id) REFERENCES business_type(business_type_id),
-  KEY idx_est_la     (la_code),
-  KEY idx_est_type   (business_type_id),
-  KEY idx_est_rating (rating_numeric)
+  CONSTRAINT fk_est_la     FOREIGN KEY (la_code)          REFERENCES local_authority(la_code),
+  CONSTRAINT fk_est_type   FOREIGN KEY (business_type_id) REFERENCES business_type(business_type_id),
+  CONSTRAINT fk_est_rating FOREIGN KEY (rating_value)     REFERENCES rating_type(rating_value),
+  KEY idx_est_la   (la_code),
+  KEY idx_est_type (business_type_id)
 );
 
 CREATE TABLE imd_lad (
@@ -271,6 +283,15 @@ CREATE TABLE imd_lad (
   imd_avg_score DECIMAL(8,3),            -- higher = more deprived
   imd_rank      INT                      -- 1 = most deprived district
 );
+
+CREATE VIEW v_establishment AS
+SELECT e.fhrs_id, e.business_name, e.business_type_id, e.post_code,
+       e.rating_value, rt.rating_numeric, e.rating_date, e.la_code,
+       la.scheme_type, e.hygiene_score, e.structural_score, e.confidence_score,
+       e.longitude, e.latitude
+FROM establishment e
+LEFT JOIN rating_type rt     ON e.rating_value = rt.rating_value
+LEFT JOIN local_authority la ON e.la_code = la.la_code;
 ```
 
 Least-privilege web user (`makeUser.sql`) — the app only ever gets `SELECT`:
@@ -412,9 +433,25 @@ Each endpoint maps to a Stage-1 question: `/api/regions`→Q1, `/api/authorities
 ## Referencing and code provenance
 *(Criterion: clear referencing of data, literature and code)*  **[NEW — required]**
 
-**Data.** FSA Food Hygiene Ratings open data and the FSA authorities API (© Crown
-copyright, OGL v3.0). English Indices of Deprivation 2019, File 10 (© Crown
-copyright, MHCLG, OGL v3.0). URLs in §1.1.
+**Data — sources used** (all © Crown copyright, OGL v3.0):
+- FSA Food Hygiene Ratings open data — https://ratings.food.gov.uk/open-data
+  (per-authority XML: `OpenDataFiles/FHRS{code}en-GB.xml`).
+- FSA authorities list — https://api.ratings.food.gov.uk/authorities (region + file
+  URL per authority).
+- English Indices of Deprivation 2019, **File 10** — page:
+  https://www.gov.uk/government/statistics/english-indices-of-deprivation-2019 ; file:
+  `assets.publishing.service.gov.uk/.../File_10_-_IoD2019_Local_Authority_District_Summaries__lower-tier__.xlsx`.
+
+**Data — considered but not used** (listed for transparency):
+- FSA business-types API (`https://api1-ratings.food.gov.uk/business-types/xml`) —
+  *not used*: business types were taken from the `BusinessType`/`BusinessTypeID`
+  fields already present in the establishment XML.
+- IoD 2019 lookup on data.gov.uk
+  (`https://www.data.gov.uk/dataset/5f124118-.../index-of-multiple-deprivation...`) —
+  *not used*: File 10 was loaded directly from gov.uk.
+- ONS postcode→LSOA (NSPL) geoportal file
+  (`https://geoportal.statistics.gov.uk/datasets/3635ca7f...`) — *not used*: would be
+  required for a street-level (LSOA) deprivation join, which was out of scope.
 
 **Libraries.** `express`, `mysql2`, `fast-xml-parser`, `xlsx` (npm); `Chart.js`
 (vendored locally) for the scatter plot.
