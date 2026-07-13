@@ -442,16 +442,21 @@ Each endpoint maps to a Stage-1 question: `/api/regions`→Q1, `/api/authorities
   https://www.gov.uk/government/statistics/english-indices-of-deprivation-2019 ; file:
   `assets.publishing.service.gov.uk/.../File_10_-_IoD2019_Local_Authority_District_Summaries__lower-tier__.xlsx`.
 
-**Data — considered but not used** (listed for transparency):
-- FSA business-types API (`https://api1-ratings.food.gov.uk/business-types/xml`) —
-  *not used*: business types were taken from the `BusinessType`/`BusinessTypeID`
-  fields already present in the establishment XML.
+**Data — sources I found and evaluated, but did not use** (I reached the same data by
+a simpler route; listed for transparency):
+- FSA business-types API (`https://api1-ratings.food.gov.uk/business-types/xml`) — I
+  found this endpoint, but did not need it: the business types were already available
+  as the `BusinessType`/`BusinessTypeID` fields inside the establishment XML I was
+  loading, so I built the `business_type` table from those instead of making a second
+  API call.
 - IoD 2019 lookup on data.gov.uk
-  (`https://www.data.gov.uk/dataset/5f124118-.../index-of-multiple-deprivation...`) —
-  *not used*: File 10 was loaded directly from gov.uk.
+  (`https://www.data.gov.uk/dataset/5f124118-.../index-of-multiple-deprivation...`) — I
+  found this as a route to the deprivation data, but loaded IoD **File 10** directly
+  from gov.uk instead, which already contains the LA-district scores I needed.
 - ONS postcode→LSOA (NSPL) geoportal file
-  (`https://geoportal.statistics.gov.uk/datasets/3635ca7f...`) — *not used*: would be
-  required for a street-level (LSOA) deprivation join, which was out of scope.
+  (`https://geoportal.statistics.gov.uk/datasets/3635ca7f...`) — I identified this as
+  what would be needed for a street-level (LSOA) deprivation join, but chose to join at
+  Local-Authority-District level instead, so this large file was not required.
 
 **Libraries.** `express`, `mysql2`, `fast-xml-parser`, `xlsx` (npm); `Chart.js`
 (vendored locally) for the scatter plot.
