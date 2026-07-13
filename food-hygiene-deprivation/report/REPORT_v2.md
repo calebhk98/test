@@ -393,8 +393,9 @@ statistically significant (t ≈ −6.9, p < 0.001).
 **Q4 — business types.** The strongest single signal: schools/hospitals/supermarkets
 top (avg ≈ 4.8–4.9), **independent takeaways worst** (4.331, only 61% rated 5).
 
-**Q5 — recency.** **[YOUR WORDS: fill from your `awaiting_inspection` figure — the
-stats endpoint reported 69,291 awaiting a first inspection.]**
+**Q5 — recency.** 69,291 premises (**11.4%**) are still awaiting a first inspection.
+Of those already rated, the average rating is **2.04 years** old; **41.5%** were rated
+in the last year, and **16.4%** are over three years old.
 
 ---
 
@@ -415,11 +416,13 @@ and an establishment search box.
 
 ```
 Endpoints: /api/stats  /api/regions  /api/deprivation  /api/deprivation-points
-           /api/business-types  /api/authorities  /api/search
+           /api/business-types  /api/authorities  /api/recency  /api/search
 ```
 
 Each endpoint maps to a Stage-1 question: `/api/regions`→Q1, `/api/authorities`→Q2,
-`/api/deprivation`+`/api/deprivation-points`→Q3, `/api/business-types`→Q4.
+`/api/deprivation`+`/api/deprivation-points`→Q3, `/api/business-types`→Q4,
+`/api/recency`→Q5. Section headings in the UI are labelled `Q1…Q5` so each answer is
+explicitly called out.
 
 ### 4.2 Screenshots
 *(Criterion: screenshots of main screens in the report)*
