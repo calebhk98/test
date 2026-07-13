@@ -139,11 +139,17 @@ Relationships and cardinality (all one-to-many; no many-to-many, so no junction 
 - rating_type **1—N** establishment (*rates*)
 - local_authority **1—1 (optional)** imd_lad (*maps to*)
 
-**Relational-mapping issue resolved.** The `local_authority`–`imd_lad` link has **no
+**Relational-mapping issue resolved.** The `local_authority`-to-`imd_lad` link has **no
 shared key** (FHRS uses names, IoD uses ONS codes) and is **optional** (74 of 363
-authorities never match). It is implemented as a nullable `lad_code` column populated by
-name-matching, **not** an enforced foreign key — a hard FK would reject the 74 unmatched
-rows. No structure is relational-incompatible, so a single diagram suffices.
+authorities never match). It is implemented as a plain nullable `lad_code` column
+populated by name-matching, with **no foreign-key constraint — the database does not
+enforce this link.** This is deliberate: the link is derived by heuristic name-matching
+rather than a shared key, so referential integrity for it is maintained by the loader,
+not the DB. A nullable FK to `imd_lad` could be added and would currently hold (the
+loader only assigns codes that exist in `imd_lad`, and leaves unmatched authorities
+NULL), but it is left unenforced because a foreign key could only guarantee the code
+*exists* — not that the fuzzy match chose the *correct* district. No structure is
+relational-incompatible, so a single diagram suffices.
 
 ## Stage 2, Step 3 — Tables, fields and normalisation
 *Requirement: list tables/fields; evaluate against the normal forms; adjust to at least 3NF; state which forms; justify not going further.*
@@ -183,7 +189,10 @@ stores nothing.
 
 Full script: `createDBTables.sql`. InnoDB is the MySQL 8.0 default so `ENGINE=` is
 omitted; `rating_date` is nullable to mean "never inspected"; `lad_code` is a plain
-nullable column (Stage 2, Step 2).
+nullable column with **no foreign-key constraint** — the local_authority-to-imd_lad
+link is intentionally not enforced at the SQL level (Stage 2, Step 2). All other
+relationships (region, business_type, rating_type, local_authority) *are* enforced with
+`FOREIGN KEY` constraints.
 
 ```sql
 USE foodHygeine;
@@ -334,6 +343,8 @@ average rating is 2.04 years old, 41.5% were rated in the last year and 16.4% ar
 three years old. *(True inspection **frequency** cannot be answered — only the latest
 date is stored, not a history.)*
 
+The full SQL for each question and its exact result table are listed in **Appendix A**.
+
 ---
 
 # Stage 4 — Create a simple web application
@@ -436,3 +447,19 @@ them is my own):
   significant but modest rather than merely asserting it.
 - **BCNF normalisation with a convenience view** — a full lossless decomposition to BCNF,
   kept query-friendly by a `v_establishment` view.
+
+---
+
+# Appendix A — SQL queries and results
+*(Code and data — excluded from the report page target. Source: `QuestionAnswers.sql`.)*
+
+For each research question, the query is shown followed by its result when run against
+the loaded database.
+
+**[PASTE HERE: for each of Q1–Q4, the SQL block from `QuestionAnswers.sql` (in a `sql`
+code block) followed by its output. Keep the mysql output in a monospace/code block so
+the columns stay aligned, or convert each to a Markdown table. Suggested order:**
+- **Q1 — business types (ratings by business type)**
+- **Q2 — location: (a) by region, (b) authority leaderboard**
+- **Q3 — deprivation: (a) quintiles, (b) Pearson correlation**
+- **Q4 — recency: (a) awaiting first inspection, (b) age of existing ratings]**
