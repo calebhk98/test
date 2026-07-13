@@ -419,6 +419,28 @@ copyright, MHCLG, OGL v3.0). URLs in §1.1.
 **Libraries.** `express`, `mysql2`, `fast-xml-parser`, `xlsx` (npm); `Chart.js`
 (vendored locally) for the scatter plot.
 
+**Techniques / standard formulas.** The statistical formulas are standard and are
+cited to the sources below; the SQL implementations of them are my own.
+
+1. Pearson correlation coefficient (computational form) — *Pearson correlation
+   coefficient*, Wikipedia. https://en.wikipedia.org/wiki/Pearson_correlation_coefficient
+2. Coefficient of determination, R² = r² for simple linear regression — *Coefficient
+   of determination*, Wikipedia. https://en.wikipedia.org/wiki/Coefficient_of_determination
+3. Significance test t = r·√(n−2)/√(1−r²), df = n−2 — *Testing the Significance of
+   the Correlation Coefficient*, OpenStax / Lumen Learning.
+   https://courses.lumenlearning.com/introstats1/chapter/testing-the-significance-of-the-correlation-coefficient/
+4. Ordinary least squares slope/intercept — *Simple linear regression*, Wikipedia.
+   https://en.wikipedia.org/wiki/Simple_linear_regression
+5. Normal forms (1NF–BCNF, after Codd) — *Database normalization*, Wikipedia.
+   https://en.wikipedia.org/wiki/Database_normalization
+6. Open Government Licence v3.0 — The National Archives.
+   https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+7. English Indices of Deprivation 2019 (IMD score/rank meaning is in the FAQ, not the
+   landing page) — GOV.UK. https://www.gov.uk/government/statistics/english-indices-of-deprivation-2019
+   ; FAQ: https://assets.publishing.service.gov.uk/media/5dfb3d7ce5274a3432700cf3/IoD2019_FAQ_v4.pdf
+
+**[YOUR WORDS: add the access/retrieval date for each URL.]**
+
 **Code provenance.** **[YOUR WORDS — fill the right-hand column honestly. Since this
 is your own prior work, most will be "written by me"; mark anything you adapted from
 docs/examples.]**
