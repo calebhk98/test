@@ -40,7 +40,7 @@ The reign is unremarkable. The state under it is not. A treasury of a hundred an
 
 **Shipbuilding rate raised from three hulls a year to between seven and nine — partial.** *48,000 talents with the yards.* Seventy-eight armoured steam hulls completed across the turn. A doubling and better against the number our own papers named the empire's deepest vulnerability. It is still not what a state that builds by the hundred would call a rate.
 
-**A propellant, a rifle in service trial, and eleven guns — begun 540.** *Programme: the Ordnance Bureau, 24,000 talents.* Six thousand bolt-action brass-cartridge rifles issued; eleven breech-loading rifled pieces at two miles; no shell certified. Set out below with the Bureau of Foreign Arms, because the two are the same question asked from opposite ends.
+**Wireless range, pushed hard and bought with current — a few hundred miles at 525, about fourteen hundred at 550.** *Programme: the Long Range Works, 26,000 talents.* The navy asked for it and kept asking. Set out below.
 
 **Acetylene, and light from it** — a by-product of the carbide furnaces, now lighting the falls works and the deep galleries at Akan, and being tried against metal as a cutting flame.
 
@@ -54,7 +54,8 @@ The reign is unremarkable. The state under it is not. A treasury of a hundred an
 
 - **An age-hardened light-silver alloy.** Pure aluminium is softer than good spruce, so our aircraft are wood and fabric with metal fittings, and will remain so until somebody makes the metal hard. Nobody is working on it and nobody has asked.
 - **Nitrogen for the magazines.** Unchanged from 525. The carbide works feeds fields, not guns. Both routes that would change this — a properly engineered arc plant, which makes the acid directly, and the hastening substances that would bridge ammonia to acid — are named, funded from 549, and unbuilt. Beyond them lies combining nitrogen and hydrogen directly under great pressure, which wants vessels beyond our present proofing as well as the same unknown catalysis.
-- **Ordnance in any quantity, and a shell that works.** Six thousand rifles is a trial issue, not an armament. Eleven guns is not a battery. No round is certified: the filler is proved and the fuze is not. No manufactory, no gunner corps, no doctrine, no formation trained to fight beside artillery.
+- **Any weapon that throws.** Egypt has none and has never had one beyond the bow and the sling. It has no engine tradition, no artillery of any kind, and — this is the part the council cannot see and the file should record anyway — **no concept of the category.** Nothing in the file asks for it, because nothing in the file knows there is anything to ask for. See *The Doctrine of the Placed Charge*.
+- **Wireless across the ocean.** Fourteen hundred miles at 550 against a crossing of near three thousand. The reason is plant, mast and current, and the money to build them at both ends; the paired stations are costed, voted and rising.
 - **A bridge from ammonia to niter acid.** The single missing piece of chemistry in the empire, and the reason the largest chemical works on earth cannot fill one shell.
 - **The thing China does not show.** Unnamed at the end of twenty-five years as at the beginning. See below.
 - **Mass production of anything electrical.** Engines, valves and echo-watch sets are the ceiling on aircraft, on wireless and on radar alike, and the turn's industrial works raised the ceiling without removing it.
