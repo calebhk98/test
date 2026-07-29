@@ -163,6 +163,28 @@ The council's own finding, entered 542: *the Atlantic commands cannot be governe
 
 ---
 
+## Two Coasts Not Taken
+
+The Enterprise commissioners were asked twice why the perimeter stops at the River of Silver, and the file should carry the answer rather than the silence.
+
+**The far shore, beyond the southern cape.** The council knows what is there in principle: a long thin temperate coast under a mountain wall, on the side of the continent nothing has ever approached from the east, reachable by sea and defensible from the sea and shut off inland by a barrier no army crosses. By our own doctrine that is Egyptian ground. Four reasons it is not Egyptian ground.
+
+First, the passage. The survey voyage of 549 worked south past the grazing line to the eastern mouth of the strait that cuts the continent's foot, stood in for nineteen days against a westerly that never once let up, and came home. The masters' report is that the passage can be forced by a powered hull and that every ship going west goes to windward the whole way and every ship coming home runs before it — which is a route, but a route with a one-way current of effort in it, and nothing like the trade-wind road we already have.
+
+Second, the supply line. The far shore is beyond the Plata, which is itself thirty-one days from the Green Cape. Everything we put there must pass a strait we do not hold, and the depot chain we spent this turn building ends on the wrong side of it.
+
+Third, settlers, which are the scarce thing and not hulls. Seventy thousand people crossed in twenty-five years and Alexandria Notou holds eighteen thousand of them. The commissioners argued consolidation over extension in 538 and again in 546 — thicken the Plata, drain the Guiana ground, finish the Amazon posts — and they were right on the merits and they won without a fight.
+
+Fourth, and it is the real one: nobody proposed it. There is no bureau whose advancement runs through a Pacific coast, no contractor with a stake in it, and no prince who begins things. It was never rejected. It was never put.
+
+**Australia.** In the classified record since the Maurya disclosure of the 440s. Not visited in that turn, nor the next, nor the next, nor this one. The reason given in the 440s was sober — India has known that coast longer and is very likely already on it, so a lone voyage round the bottom of the world buys the cost and the risk of reaching somewhere a rival already holds. That reasoning was never revisited, because revisiting it was nobody's task.
+
+The council should set these beside the Bureau of Foreign Arms, which was funded for twenty-five years, found nothing, and was recommended for nothing, and beside the Ordnance manufactory deferred in 549, and beside the survey hull north of the Orinoco that was neither permitted nor refused. **The mechanism is the same in all four: this state does not decline things. It fails to advocate them, and an unadvocated thing has no schedule, no contractor, no officer whose career advances by it, and therefore no line in the budget.** Our own assessment named this in 525 — *procrastination wearing the robes of prudence* — and named it as a character flaw. It is not a character flaw. It is a budgetary rule, and it can be written differently: a standing requirement that anything twice deferred be either funded or formally killed, with a name against the decision.
+
+That was proposed in 548 by the Enterprise commissioner at Alexandria Notou. It was not adopted. It was not rejected.
+
+---
+
 ## The Livingstone Works and the Industrial Turn
 
 The falls city is finished and running, and it is the second capital of the empire's making even if no one calls it that.
@@ -469,6 +491,8 @@ Every entry below has Egyptian men standing on it, under an Egyptian officer, wi
 Nothing below is held. Nothing below has a garrison, a magistrate, or a customs house. Some of it has never been visited twice.
 
 - **The coast south of the River of Silver**, down the cold shelf toward the far southern latitudes — charted by two survey voyages, 546 and 549. Harbours noted, watering places noted, no post, no claim of occupation. Egypt claims it in the message to Rome and holds not one foot of it.
+- **The eastern mouth of the strait cutting the continent's foot** — reached 549, stood in for nineteen days against an unbroken westerly, not passed. Nothing beyond it has been seen by any Egyptian.
+- **The whole far shore beyond that strait** — never reached, never charted, never claimed. See *Two Coasts Not Taken*.
 - **The Great River of the West above the two confluences** — charted by steam launch a further distance upstream; no post, no garrison, no return visit.
 - **The whole interior behind the tropical Atlantic perimeter** — claimed on parchment. There is nothing there of ours. The perimeter is the claim, exactly as the African playbook intends, and the council should stop letting the map colour it in.
 - **The cold islands south-east of the Cape** — sighted and charted 544 by a Cape vessel driven south. Uninhabited, no anchorage worth a station, not garrisoned, not revisited.
