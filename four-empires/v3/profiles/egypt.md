@@ -8,7 +8,9 @@ A standing note before the answers, because the three facts are easy to hold one
 
 ## 1. The Other Three Powers
 
-Ratings are the court's, not a fair observer's. Trust means whether Egypt will put anything of its own in that power's hands. Danger means what that power can do to Egypt.
+These are the court's dispositions. Trust means whether Egypt will put anything of its own in that power's hands. Danger means what that power can do to Egypt. The trust figures cluster at the bottom of the scale because this court distrusts every foreign power as a matter of standing doctrine, and it does not treat shown conduct as evidence of intent. The three numbers are 1, 2 and 4. The spread between them is a preference, not a finding of good faith.
+
+Confidence classes used throughout: **firm** (multiple independent sources, or Egyptian observation), **reported** (single source or commercial channel), **rumor** (port talk, unverified), **assumed** (planning premise with no supporting source).
 
 ### Rome
 
@@ -89,7 +91,16 @@ Three consequences for character:
 
 **What it skips or barely mentions.** The throne. Court politics. Battles as events, so that a decade-long war with Meroe is one clause about the campaign grinding on. The interior lives of twenty-five million people. Art and literature, which get a clause. Religion as belief rather than as instrument. Feeling, except where a mood is a planning datum, as with the grief in the chamber over the squandered head start.
 
-**Commitment.** The turn will be written in that voice: present tense, third person, no first person, no living Egyptian named, headed sections and bullets, mechanism before result, ranges rather than false precision, every commitment priced against the 132,000 and the 263,000, and a closing treasury note and a carried-forward question list. No em-dashes. No closing lines built to be remembered. Dull where dull is accurate.
+**Commitment.** The turn is a working paper for the strategic council, written to support the next decision and not to be read afterward by anyone else. Six binding rules, adopted because present tense and unnamed institutions alone will not distinguish this document from three others:
+
+1. **Organised by decision and cost, never by event in order.** Section headings name a decision to be taken, a cost accepted, or a premise under review. Nothing is arranged chronologically. There is no opening survey of the situation, because the reader is assumed to hold it already.
+2. **A confidence class on every load-bearing claim, to the point of pedantry.** Firm, reported, rumor, assumed, written into the sentence, including on Egypt's own internal figures where the figure is an estimate. Where two sources disagree the disagreement is stated rather than resolved. Every figure about a rival is labelled a floor.
+3. **Everything priced against the two standing figures.** Revenue about 132,000 talents, reserve about 263,000 against a two-year target with a floor at one year. Any commitment that is not priced is marked `cost not yet assessed`, which is itself a decision the council must see.
+4. **Every quantity a range, every result a date window.** No single-point number where a range is honest. Programmes are also sized by how many researchers they hold.
+5. **No narrative continuity between sections.** Sections do not refer back to each other and do not flow. Where two decisions rest on the same fact, that fact is restated in both, in near-identical words, because a councillor reading only one section must still have it.
+6. **Sections close on an accepted cost, an unresolved question, or a standing instruction.** Never on a conclusion, a summary, or a line built to be remembered.
+
+Also binding: present tense, third person, no first person, no living Egyptian named, no em-dashes, mechanism before result in the three-part form. The paper should be dry and hard to follow for anyone outside the council, because it assumes the background and does not supply it.
 
 ---
 
@@ -99,4 +110,4 @@ Three consequences for character:
 
 **Two. Every quantity is a range with a date range attached, and everything is priced against the same two figures.** Research results arrive as windows, a usable stabilized explosive around 515 to 535, aluminum in airframes within ten to fifteen years. Programmes are described by how many researchers they get. Commitments are always weighed against revenue of about 132,000 talents and a reserve of about 263,000 against a two-year target with a one-year floor, and the paper says out loud how much slack is left for the next shock.
 
-**Three. Mistakes end in a standing instruction and never in a named culprit, and sections end on an accepted cost rather than a conclusion.** The optics request to China was an error, so the standing instruction is to check where Egypt already leads before asking. The overclaim about Roman veteran settlement was conceded to China without defence. The Moroccan build-out ends with "Accepted cost," the Roman reconnaissance ends with two findings logged permanently for the confrontation planners, and the turn ends with a treasury note about reduced slack. The bureau corrects the file, keeps the file, and does not blame the man.
+**Three. It is built out of decisions and accepted costs with no thread between them, and it repeats itself where two decisions share a fact.** Other courts will produce documents that read forward. Egypt's does not read forward at all. It is a stack of independent items, each naming what is being decided, what it costs against the 132,000 and the 263,000, and what remains unresolved, with the same fact restated in full wherever a second item needs it. Mistakes end in a standing instruction and never in a named culprit: the optics request to China produced the instruction to check where Egypt already leads before asking, and the overclaim about Roman veteran settlement was conceded without defence. The bureau corrects the file, keeps the file, and does not name the man.
