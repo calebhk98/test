@@ -44,9 +44,9 @@ And **Prabhāsa**, on the wide shallow bay north of Nadīmukha, silted its ancho
 
 ### The Fire-Setters
 
-The previous reign's chronicle spoke of raising settlements "on ground no Maurya hand had worked before." That was true of the hands. It was not true of the ground.
+The previous reign's chronicle spoke of raising settlements "on ground no Maurya hand had worked before." That was true of the hands, not of the ground.
 
-The mainland has people on it, in numbers we cannot count, living without kings, fields, towns, or anything our statecraft is built to bargain with. Our people call them the **Agnikāra**, the fire-setters, from what struck the first settlers most: they burn the country deliberately, in patches and in season, and the burnt ground draws game and comes back green. Our officers read this first as war-signalling, then as waste, then not at all.
+The mainland has people on it, in numbers we cannot count, living without kings, fields, towns, or anything our statecraft is built to bargain with. We call them the **Agnikāra**, the fire-setters, from what struck the first settlers most: they burn the country deliberately, in patches and in season, and the burnt ground draws game and comes back green. Our officers read this first as war-signalling, then as waste, then not at all.
 
 Our method for taking a reluctant people is seven centuries old and economic: make cooperation pay better than resistance, buy the leaders, tax the trade, leave the faith alone. At Suvarṇatīra and along the rivers behind Uttaradvāra it failed for the first time in our history, for a reason the council never understood — no treasury to enrich, no hierarchy to buy, no trade to tax, no man whose word bound a hundred others. We offered iron and cloth and got curiosity, then exchange, then nothing, because the offer assumed a want the Agnikāra did not have.
 
@@ -104,11 +104,11 @@ The granaries were at a third.
 
 Famine kills and famine moves men, and this one did both. Our assessors can distinguish neither: what they report is that holdings stand empty, and a holding stands empty whether its man is buried in it or walked off it. The collector writes the same word in both cases.
 
-From the other end of the roads we can say that a great deal of the two million walked. The Godavari and Krishna valleys took people. The Tamil ports took people. The temple estates of the eastern Deccan took people, and a cultivator on temple land is off the royal roll and out of the land tax by the same act — which is why the temples grew in exactly the years the register shrank, and why nobody at court has connected the two. The forest margins took people, who are outside the assessment and always have been. And the convoy ships took people, perhaps forty to sixty thousand across the reign, entered as settlers at the far end and struck from no roll at this one.
+From the other end of the roads we can say a great deal of the two million walked. The Godavari and Krishna valleys took people; the Tamil ports took people; the forest margins took people, who are outside the assessment and always have been. The temple estates of the eastern Deccan took people, and a cultivator on temple land is off the royal roll and out of the land tax by the same act — which is why the temples grew in exactly the years the register shrank, and why nobody at court has connected the two. And the convoy ships took perhaps forty to sixty thousand across the reign, entered as settlers at the far end and struck from no roll at this one.
 
 The court's best guess, which is a guess, is that between a half and two-thirds is mortality and the remainder flight. It has no way to check and has not tried.
 
-The consequence is worse than the arithmetic. A state that has lost people knows what to do: rebuild, resettle, wait a generation. A state that has lost *sight* of people is being lied to by its own accounts. The next reign will set its land tax against a base of ninety-six million while somewhere between six hundred thousand and a million of the missing are alive, working, and paying somebody — a temple, a forest headman, a Tamil port, a governor on a far coast — and not us. That is not a hole in the population. It is a hole in the register, and holes in the register are how a realm stops being able to see itself.
+The consequence is worse than the arithmetic. A state that has lost people knows what to do: rebuild, resettle, wait a generation. A state that has lost *sight* of people is being lied to by its own accounts. The next reign will set its land tax against a base of ninety-six million while six hundred thousand to a million of the missing are alive, working, and paying somebody — a temple, a forest headman, a Tamil port, a governor on a far coast — and not us. That is not a hole in the population but a hole in the register, and holes in the register are how a realm stops being able to see itself.
 
 The realm takes a sixth to a quarter of every harvest, and the whole justification for that is that the state returns it as granaries, canals, wells and relief when the season turns. This reign kept the extraction and had already spent the return. The farmers of the central plateau paid the land tax of a state that had promised them grain and shipped the grain money to a continent they had never heard of.
 
@@ -122,9 +122,9 @@ By 539 the treasury faced arrears it could not carry: the southern line, the arm
 
 **The throne was not told, and this is the reign in one act.** No submission went up; none was required, the warrant being routine in form, and routine warrants do not reach a king. The ruler learned of it in 543 from the Rome-road officials at Ctesiphon, reporting that Roman merchants were pricing in their own coin and demanding silver by weight. He asked who had authorised it: the treasury answered that it was a technical adjustment within its standing powers. He asked who had decided the proportion. That could not be established. Bhadrabāhu had died in 542; Sumitra said he had countersigned what came before him, as he countersigns fifty warrants a season; the Ujjain minute carries no name at all. The ruler did not pursue it and did not restore the standard, because reversing it meant finding 90 million a year and he had no more idea where in 543 than the treasury had in 539.
 
-So we cannot now say who debased our coin. We can say no one intended it as policy, that it was solved as a cash problem four levels below the throne, that the throne found out four years late from a foreign merchant's price list, and that having found out it did nothing. A purging ruler would at least have hanged someone. This one asked twice and let it go.
+So we cannot say who debased our coin. We can say no one intended it as policy, that it was solved as a cash problem four levels below the throne, that the throne found out four years late from a foreign merchant's price list, and that having found out it did nothing. A purging ruler would at least have hanged someone. This one asked twice and let it go.
 
-Merchant houses weigh coin. By 543 the Rome-road traders were repricing; by 546 the Sogdian factors likewise. Our credit instruments held, drawn on named houses and not on the throne, but they now carry a discount against the coin. The reign traded a portion of the paṇa's eight-century reputation for perhaps 90 million a year, and no living man's name is on the decision.
+By 546 the Sogdian factors were repricing too. Our credit instruments held, drawn on named houses and not on the throne, but they now carry a discount against the coin. The reign traded a portion of the paṇa's eight-century reputation for perhaps 90 million a year, and no living man's name is on the decision.
 
 ---
 
@@ -148,7 +148,7 @@ The Syr Darya was quiet for twenty-five years. The fifty to eighty fixed cannon 
 
 The watchers reported three things. Chinese hulls continue to work the passage south of the Strait into the archipelago east of Sumatra, unseen by our facility and paying nothing, as since the 470s. The Spice Island garrisons are starving on the vine, supplied by the southern road and suffering every thinning of the convoy: Ternate at about seven hundred effective against twelve hundred, Banda at three hundred against seven hundred, harbour powder for perhaps thirty shots. They remain ours because China has not chosen to take them.
 
-And, unresolved: in spring 543 the watch at Trikūṭa sighted two ships of unfamiliar build standing offshore the better part of a day, then working away northeast. The watch had no spyglass — the brass-bound glasses went to the home and Gulf squadrons and never to the southern stations — and could not count masts or read the rig. The report reached Pataliputra in summer 544, fourteen months late, because the optical relays that carry word across the realm in a day stop at the Strait and everything beyond moves at convoy speed. The ruler was asked whether a vessel should go and look, and answered that the season's hulls were all committed. That is the whole of what we know.
+And, unresolved: in spring 543 the watch at Trikūṭa sighted two ships of unfamiliar build standing offshore the better part of a day, then working away northeast. The watch had no spyglass — the brass-bound glasses went to the home and Gulf squadrons and never to the southern stations — and could not count masts or read the rig. The report reached Pataliputra in summer 544, fourteen months late, because the optical relays that carry word across the realm in a day stop at the Strait. The ruler was asked whether a vessel should go and look, and answered that the season's hulls were all committed.
 
 ---
 
@@ -196,9 +196,9 @@ The ruler died in 550. His historians will assess him at forty-nine and note tha
 
 > From the Throne at Pataliputra, to the Sovereign of Egypt, greeting.
 >
-> A vessel bearing our flag put men ashore upon your coast in the spring of the year before last, below the harbours where our ships have traded by your permission for five hundred years. Those men went inland without your leave. They were taken and they are in your hands.
+> A vessel bearing our flag put men ashore upon your coast in the spring of the year before last, below the harbours where our ships have traded by your permission for five hundred years. Those men went inland without your leave. They were taken and are in your hands.
 >
-> We say plainly what our own inquiry found. The master sailed upon an old standing order of our station at Oman which no living minister had reviewed, and he exceeded any warrant of ours. The officer who let that order stand has been removed. We did not send those men to take your ground and we do not claim it. Eleven men walked inland to buy a plant. That is the whole of the offence, and we dress it as neither more nor less.
+> We say plainly what our inquiry found. The master sailed upon an old standing order of our station at Oman which no living minister had reviewed, and exceeded any warrant of ours; the officer who let that order stand has been removed. We did not send those men to take your ground and we do not claim it. Eleven men walked inland to buy a plant. That is the whole of the offence, and we dress it neither more nor less.
 >
 > We ask two things.
 >
@@ -254,10 +254,10 @@ Line held at ~230 million paṇas a year for twenty-five years, ~5,750 million t
 
 | Programme | Spend across the reign | What we believe we achieved |
 |---|---|---|
-| Gunpowder manufacture and firearm production | ~1,900M (incl. four new powder works) | ~15,000 one-man firearms and ~4,000 two-man crew-served pieces made. Powder output sustains only 6,000–7,000 men in drill. Production capacity, not design, remains the wall, as it has for 275 years. |
-| Marine steam | ~1,150M | ~19 engined ocean hulls; 14 committed to the southern route by a standing directive nobody revisited, 5 to home and Gulf squadrons. Fuel unexamined; charcoal supply now competing with iron smelting. |
-| Galvanic (wire path) | ~950M | 546: current carried down insulated drawn copper wire between two buildings at Pataliputra, ~400 paces, needle deflection at the far end, agreed letters passed one at a time, unreliable in damp. First message sent without a rider. Not a network. |
-| Galvanic (plant path) | ~180M, then **closed 535** | Closed on the sabotage finding. Cost: the wire path's independent cross-check, the distillation-grade extract programme, and two unfinished inoculation candidates. |
+| Gunpowder manufacture and firearms | ~1,900M (incl. four new powder works) | ~15,000 one-man firearms, ~4,000 two-man crew-served. Powder sustains only 6,000–7,000 men in drill. Production capacity, not design, remains the wall, as for 275 years. |
+| Marine steam | ~1,150M | ~19 engined ocean hulls; 14 to the southern route by a standing directive nobody revisited, 5 to home and Gulf squadrons. Fuel unexamined; charcoal now competing with iron smelting. |
+| Galvanic (wire path) | ~950M | 546: current down insulated drawn copper wire between two buildings at Pataliputra, ~400 paces, needle deflection at the far end, agreed letters one at a time, unreliable in damp. Not a network. |
+| Galvanic (plant path) | ~180M, then **closed 535** | Closed on the sabotage finding. Cost: the wire path's cross-check, the distillation-grade extract programme, two unfinished inoculation candidates. |
 | Naval cannon and carriages | ~700M | ~48 cannon-armed vessels, up from 30–40. Crews improved. Powder short. |
 | Paper and printing | ~340M | Administrative and Brahmin-sealed sacred printing at 28–30 provincial centres; first identically printed relief registers, 540. |
 | Medicine | ~330M | Washing protocols spread by printed text; recoveries improved; cause unknown. Materia medica halted 535. |
