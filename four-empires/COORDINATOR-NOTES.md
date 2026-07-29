@@ -32,6 +32,12 @@ Specific things to ban:
 
 Flat prose is a feature. If a passage would be improved by being made duller, make it duller.
 
+Two tells found by counting, both sharper than the em-dash. Run `v3/register-check.sh` on a turn directory before any review agent reads it.
+
+**First person.** v2 used "we", "our" or "us" 337 to 561 times per document, 1,658 across the four. The four human turns used them once in total, in 16,300 words. A state paper does not say "we propose." This is the single strongest mechanical signal and it is trivially checkable.
+
+**Length.** The human turns run 3,500 to 4,500 words per country per 25 years. v2 ran 18,500 to 25,800, about five times as much. Do not fix this with a word limit; that produced fifteen rewrites per agent and made the trimming, not the omission, into the work. Fix it by telling each agent what its own court does not bother writing down, and that whole subjects being absent is the correct outcome. Length is a symptom of the real defect, which is that agent turns omit nothing.
+
 ## 3. What the coordinator must not do
 
 Every item below happened. Most were mine.
