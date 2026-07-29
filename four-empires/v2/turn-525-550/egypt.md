@@ -48,10 +48,6 @@ The reign is unremarkable. The state under it is not. A treasury of a hundred an
 
 ### What remains unachieved at 550
 
-- **Wireless across the ocean.** The sets reach a few hundred miles at sea and no further, a hundred and ten years after the first deployable apparatus. This is the single largest practical limit on the Western Enterprise: the Atlantic commands cannot be governed from Alexandria at the speed events move there. *17,000 talents on wireless and valve manufacture, all of it spent on making more of what we have.*
-
-  *And the reason is not that nobody advocated it. The reason is that our own physics forbade it.* The electromagnetic synthesis of the 370s–400s, the proudest thing in Alexandrian science and correct in everything it says, gives waves travelling straight. The earth is round; the far shore is below the horizon; therefore a signal cannot reach it, and every wireless officer for a century has been taught this as settled. So the money went into more sets and better sets and never once into the one experiment that would test it — a very great power on a very long wave, aerials of a size nobody has built, listened for at a distance the theory says is impossible. **A theory that is right about the waves can still be wrong about the sky**, and in 548 a physicist of the Alexandria establishment, Hor son of Timotheos, made exactly that argument: that the upper air over our own heads carries the current in the auroral displays the Cape stations record, that a conducting roof would turn a wave back down, and that the objection is worth one season and one apparatus. Funded from 550 at 1,100 talents a year. Nothing tried yet.
-
 - **An age-hardened light-silver alloy.** Pure aluminium is softer than good spruce, so our aircraft are wood and fabric with metal fittings, and will remain so until somebody makes the metal hard. Nobody is working on it and nobody has asked.
 - **Nitrogen for the magazines.** Unchanged from 525. The carbide works feeds fields, not guns. Both routes that would change this — a properly engineered arc plant, which makes the acid directly, and the hastening substances that would bridge ammonia to acid — are named, funded from 549, and unbuilt. Beyond them lies combining nitrogen and hydrogen directly under great pressure, which wants vessels beyond our present proofing as well as the same unknown catalysis.
 - **Any weapon that throws.** Egypt has none and has never had one beyond the bow and the sling. It has no engine tradition, no artillery of any kind, and — this is the part the council cannot see and the file should record anyway — **no concept of the category.** Nothing in the file asks for it, because nothing in the file knows there is anything to ask for. See *The Doctrine of the Placed Charge*.
@@ -113,9 +109,9 @@ Egypt is the wealthiest state in the world and spends nearly all of what it take
 | Machine-tool works | 26,000 |
 | Wire mills and electrolytic copper | 22,000 |
 | The Pylon of the Two Waters | 34,000 |
-| Ordnance Bureau | 24,000 |
+| The Long Range Works (wireless reach) | 26,000 |
 | Top-up to reserve | ~45,000 |
-| **Committed total** | **~799,000** |
+| **Committed total** | **~801,000** |
 
 **The reserve.** 263,000 talents at opening. It absorbed the Enterprise's front-loaded decade, was topped up at the maintenance rate throughout, and **closes at about 296,000 against 152,000 of revenue — one year and eleven months, against a two-year standing target and a one-year floor that has never been breached.** It is at target, and the reason it is at target is that the empire made more money this turn than it did last.
 
@@ -248,9 +244,28 @@ The compound yields ammonia. Every explosive Egypt makes is made by nitration, a
 
 ---
 
-## The Ordnance Bureau, and the Thing We Cannot Name
+## The Long Range Works
 
-These are the same question from opposite ends: *what is the weapon we do not have?*
+The navy asked for this and would not stop asking, which is the only reason it happened. A fleet doctrine built on knowing where one's hulls are lives or dies on the reach of a signal — the shadowing relay down the African coast in 524 worked because the message outran the ship, and the whole of the Atlantic command's misery since is that at four thousand miles it does not. **The Long Range Works, 26,000 talents across the turn**, is the naval office buying reach with current and iron.
+
+It is not a science programme. There was no discovery in it and nobody expected one. The whole of it is bigger: bigger transmitters, taller masts, more current, deeper earths, longer waves.
+
+The progression, which is a purchasing record and reads like one:
+
+- **525:** a few hundred miles ship to ship, and about the same shore to ship.
+- **533:** the first true shore station at Alexandria — a mast of two hundred and forty feet, a spark plant drawing from the city supply, an earth mat of buried copper the wire mills made cheap. About six hundred miles, reliably, at night.
+- **540:** the Green Cape and Cape stations rebuilt on the same pattern at four hundred feet, with dedicated engines. About nine hundred miles.
+- **547–550:** masts of six hundred and forty feet at the Green Cape, at the Cape, at Aden and at Alexandria, on generators of their own. **About fourteen hundred miles at night, rather less by day, and the whole of the Mediterranean, the Red Sea and the African coast in one net.**
+
+That is a great deal, and it is not enough, and the shortfall is arithmetic. The narrowest crossing — the Green Cape to the Shoulder, or to the Guiana harbours — is near three thousand miles. Every doubling of reach so far has cost between three and five times the plant of the one before it, and the engineers will not promise that the curve holds; they say only that they have never yet met a wall that was not the size of the mast and the current behind it.
+
+**What Egypt has that nobody has had before is both ends.** Alexandria Notou and the River of Silver are Egyptian, the Shoulder is Egyptian, the Green Cape is Egyptian. A station on the far shore can listen with as much iron in the ground and as much copper in the air as one at home, which halves the problem in the only way it can be halved.
+
+So the paired transatlantic stations — the Green Cape and the Shoulder, masts of a thousand feet, engine houses, and a coal supply to run them continuously — were costed at **31,000 talents** in 548 and **voted in 549**. Ground is broken at the Green Cape. Nothing has been worked and no signal has been attempted. The naval office's estimate is that it succeeds or fails in the next reign and that the answer will be a matter of how much iron the treasury will buy, which is the kind of question Egypt is better at than any state alive.
+
+---
+
+## The Bureau of Foreign Arms, and the Thing We Cannot Name
 
 **The Bureau of Foreign Arms**, established 529 under the intelligence service at six hundred talents a year, was funded for the whole turn — 15,000 talents — with one instruction: identify the weapons craft that China reserves by treaty and has never shown, and determine whether Rome holds it by the overland road.
 
@@ -260,22 +275,26 @@ It produced nothing. The metallurgist died of a fever at Quanzhou in 533. The op
 
 The Bureau's standing memorandum at 550 is four lines long and unchanged from its first: a weapons class exists which is guarded above all other knowledge, and the overland road has had centuries to carry it westward; the Bureau cannot say whether the thing is a chemistry, a mechanism or a metal. Fifteen thousand talents bought us the same sentence we wrote in 525.
 
-**The Ordnance Bureau**, established 540 at nine hundred talents a year and raised to two thousand four hundred in 545 — 24,000 talents across the turn — is what the council did instead of finding out: if we cannot learn what the weapon is, we can ask what a weapon ought to be, given what we hold.
+The Bureau found nothing. Its failure is total and it is worth stating why it was always going to be, because the council has been describing this as a gap and it is not a gap. It is a shape.
 
-What we hold is unusual. Boring machines cutting true cylinders since 260 AD. Arc-furnace steel. Interchangeable parts and reference gauges. Rifling is a lathe problem and we have owned the lathe for three hundred years. The gap our own assessment named as *the gun* was never a gap in materials, and it is worth being exact about what it actually was, because "nobody advocated it" does not explain three centuries:
+## The Doctrine of the Placed Charge
 
-- **A propellant that pushes rather than shatters.** Our entire chemical tradition drives toward brisance — a compound that shatters rock is the thing the mines pay for, and every chemist's career runs through making the shock sharper. A gun wants the opposite: a charge that burns fast but progressively, raising pressure over the length of the bore instead of spiking at the breech. Nobody had ever asked an Egyptian chemist for a *worse* explosive. When one finally did, in 541, it took three years: the same nitrated cellulose of 537, gelatinised, rolled and cut to a grain size that governs its burning rate. **Achieved 544.**
-- **Obturation** — sealing the breech so the gas goes forward and not into the gunner. This is the reason a muzzle-loader is easy and a breech-loader is not, and it has no answer in metallurgy. It has an answer in a **drawn brass case that swells against the chamber wall and seals it,** which our wire mills and our deep-drawing presses can make by the hundred thousand.
+Egypt makes the most powerful explosives in the world and has exactly three ways to put them where they matter. It **places** them — the mine charge in the drilled hole, the demolition under the bridge pier, the sapper's satchel against a wall. It **floats** them — the moored charge in the roadstead, the drifting charge on the tide, the spar charge run out ahead of a fast boat. And it **drops** them — from a tethered balloon since the 320s, and now from an aircraft.
 
-Because the case is the answer, **the Bureau built the small arm first**, in 545: a bolt-action rifled piece, brass cartridge, smokeless charge of the 544 propellant, lead-cored jacketed ball. It is easy in exactly the degree the gun is hard. **About six thousand were made by 550** at the falls and at the Alexandria arsenal, issued to two battalions of the guard, the Sinai works garrison and the Orinoco island detachment for trial. They shoot flat to eight hundred paces and the men who have them do not want to give them back.
+That is the whole of it, and it is not an accident of funding. It is what six hundred years of our own chemistry made. Every compound this empire has ever built was made to shatter rock in a hole; every man who has ever advanced in that trade advanced by making the shock sharper and the charge safer to carry to the hole. A chemist who has spent thirty years keeping a blasting oil from killing the men who carry it does not one morning conceive of confining that burn behind a mass and letting the mass out of a tube at speed. There is nothing in his training, his workshop, his literature or his patron's demands that points at it. Egypt has had no throwing engine since before the Ptolemies, no torsion artillery in its army tradition, no siege train, and nothing ranged beyond the bow and the sling, and so it has no ancestor from which the thought could descend.
 
-**The heavy pieces followed and are still at trial.** By 549 the falls yard had turned out **eleven**: rifled steel tubes, breech-closing on an interrupted screw with a soft pad for obturation where a case would be too large, on recoil carriages. Range at the proving ground below the cataracts is **a little over two miles**, which is a first gun's range and not a good one.
+**We do not know that the category exists.** That sentence is the honest content of the Bureau of Foreign Arms' fifteen thousand talents and its blank memorandum. We wrote in 525 that a weapons class is guarded somewhere that we cannot name. We assumed the difficulty was that it was hidden. The difficulty may be that we would not recognise it if it were set on the table, because we have no word for what it does.
 
-**The shell is the unsolved part and the Bureau says so.** A shell filled with the 537 mining compound bursts in the barrel; the shock of firing sets it off, which cost two barrels and four men at the proving ground in 546 before it was understood. What is needed is a filler that will take that shock without detonating and detonate anyway when told. The coke ovens raised for the carbide furnaces give the beginning of one — nitrated phenol out of the tar fraction, which pours molten into a shell, is dull to shock, and wants a small charge of the sensitive compound behind a base fuze to set it off. Poured into bare steel it eats the metal and makes salts more sensitive than the filling, so the shells are lacquered inside, and nobody yet trusts the lacquer. **At 550: filler proved on the ground, fuze at trial, no round certified for service.**
+So the doctrine, stated for once as doctrine rather than confessed as a lack:
 
-Six thousand rifles is not an arm either, but it is closer to one than eleven guns. There is no manufactory beyond the two arsenals, no gunner corps, no doctrine, and no formation trained to fight beside artillery. The Bureau's request in 549 for a gun manufactory at the falls and a school of gunners was deferred to the next reign, and the reason is worth writing plainly: two hundred years of doctrine, every senior chemist's career, and the whole naval air establishment are staked on nitration and the incendiary balloon, and a new arm with no battle behind it has no advocate against them. The Pharaoh was asked to overrule that and declined. It was one of the two constituencies he would not break.
+**Egypt can destroy anything it can reach, and can reach only what it can approach.** The consequences run through every arm:
 
-So Egypt ends the turn with six thousand rifles, eleven guns, no shell it will certify, and no decision about any of it.
+- **At sea this is close to sufficient**, because a fleet approaches by nature. Mined roadsteads at every harbour we hold, drifting and spar charges from twenty-knot boats, and incendiaries and charges dropped from above onto decks. Against a hull that must come to a coast, the placed and dropped charge is an answer.
+- **In the Sinai it is the whole design and always was.** The corridor works are not a firing line; they are a prepared field of charges in ground we chose, with every water point mined, the sluices ours, and the approach overflown. We do not shoot an army. We invite it into a place where everything is already buried.
+- **In the field it is nearly nothing.** Two forces on open ground, neither approaching the other's prepared works, is the one situation in which everything Egypt owns is useless, and it is exactly the situation the land army has never been in. Our assessment of 525 said our advantages were strategic and not tactical and that they convert to nothing on the day a column enters the corridor. This is the mechanism of that sentence.
+- **Against a peer that throws** — if such a thing exists, and the Bureau cannot say — the whole doctrine inverts, because an enemy who can reach us without approaching does not have to walk into our ground.
+
+The council did not write this down. It is written here because a doctrine nobody states is a doctrine nobody can notice the hole in.
 
 ---
 
@@ -467,7 +486,7 @@ No reply had reached Alexandria by the close of 550. Eight years is not long for
 | Electric-nitrate line (directed programme from 529, Nebamun of Meroë) | 45,000 | **Baseline established 532: total niter-bed and guano supply ≈ 2,000 t of nitrogen a year.** Arc bench cell 534 (5 lb acid/day) — **rejected 536, and the rejection was wrong**, being one jar in a smelting hall generalised to a route. **Carbide–cyanamide route found 539, in production 546: six furnaces fixing ≈3,000 t N/yr, half again the whole existing supply, four more building, ceiling stated as thirty.** *This is a fertiliser works. It yields ammonia; explosives want niter acid; the bridge is catalytic oxidation, which we cannot do.* **Effect on the explosives ceiling: none.** Filed as an ordnance result 546–549 in error. |
 | Arc plant, properly engineered (new, from 549) | 2,400/yr | **Not built.** Dedicated hall, own current, engineered chambers, heat recovery. The one route that gives niter acid directly from air. Ground broken, current allocated. |
 | Hastening substances — catalysis (new, from 549) | 900/yr | **Not begun.** Ammonia burnt over heated metals and earths, one after another, weighed. Blocks both the cyanamide bridge and the high-pressure route. Smallest programme in the file, probably the most important. |
-| Ordnance Bureau (from 540) | 24,000 | **Small arm fielded, gun at trial, shell unsolved.** Progressive-burning gelatinised propellant 544. **Bolt-action brass-cartridge rifle 545 — ~6,000 made by 550**, issued to two guard battalions, the Sinai works garrison and the Orinoco detachment; the drawn case is what solved obturation. Eleven rifled breech-loading pieces on recoil carriages, 549, **range a little over two miles**. **Shell: the 537 compound detonates under setback and burst two barrels in 546; nitrated phenol from coke-oven tar proved as an insensitive filler, base fuze at trial, interior lacquer not trusted, no round certified.** No manufactory, no gunner corps, no doctrine. Manufactory and gunnery school deferred to the next reign. |
+| The Long Range Works (from 529, naval office) | 26,000 | **Achieved in part, by purchase not discovery.** Reach bought with mast height, current and buried copper: ~600 miles (Alexandria station, 533, 240 ft) → ~900 (Green Cape and Cape rebuilt, 540, 400 ft) → **~1,400 miles at night at 550** (640 ft masts with dedicated generators at Alexandria, Aden, the Green Cape, the Cape). Mediterranean, Red Sea and African coast in one net. **Crossing is ~3,000 miles and is not reached.** Each doubling has cost 3–5× the plant before it. **Paired thousand-foot stations, Green Cape and the Shoulder, costed 31,000 and voted 549; ground broken, nothing worked, no signal attempted.** Both ends of the crossing are Egyptian, which is the advantage nobody has had before. |
 | Aircraft | 2,400 | **Achieved.** Wood and fabric on a steel-tube spine with light-silver fittings — **not metal primary structure**; pure aluminium is softer than spruce and no age-hardening alloy exists or is being sought. Armed reconnaissance and incendiary from 534; two-engine, ~500-mile radius from 547. **190 built, 129 lost or struck, 61 flying at 550**; build rate 8/yr rising to 12; flying school at Rhinocolura from 536, ~40 pilots a year. Bound by engine manufacture and by tropical rot, not by money. |
 | Bulk light silver (aluminium) into structures | within falls works | **Achieved.** Airframe spars, ship and machinery fittings, instrument frames, tower sheathing. |
 | Ship armour, arc-furnace plate | within yards | **Achieved.** Standard on all new construction from 530. |
