@@ -504,3 +504,161 @@ Rome declares these as intents and does not record any other power's response to
 ---
 
 *Filed. The gazettes get the coal, the bombards, the twenty-two-day passage, and rather more maize than the agronomists signed for. They already have the islands, and the bishop of Ozama has given them the rest. They do not get the nitre-beds, which is the only secret in this file that anyone could act on.*
+
+---
+---
+
+# ADDENDUM: THE RETURNS OF 549–550, AND WHAT THE CONSILIUM DID WITH THEM
+
+*Three letters had come in — Alexandria 542, Pataliputra 539 (receipted at the crossing 540), the Dnieper 548 — and the year's intelligence returns came up beside them. Severianus had all four read in one sitting, as he had read the accounts in 527. The minute of that sitting is the most useful document of the reign and it is not a flattering one.*
+
+## XVIII. The Dnieper: A Number We Bought That Was Being Handed To Us
+
+**Tonnage.** The watch's crossing figures are sound — traffic up by about half across the decade. The *officium* then established, by simple comparison, that most of that figure had been published by the Han at the crossing itself, and the remainder offered outright in their junction proposal. **A watch two hundred and fifty years old bought a number the counterparty was trying to give us.**
+
+**The settlement figure is wrong and we found it ourselves.** The Consilium ordered the raw observation sheets brought up rather than the summary, and the error was visible in an afternoon. Our observers measured density where they could see best — at the railhead, which is the single densest point on that frontier and a holding position, not a typical one — and extended that density inland across the whole belt. The corrected estimate is **fifteen to twenty-five thousand, not forty to sixty.** We had trebled a frontier population by measuring its busiest square mile and multiplying.
+
+The emperor's minute: *"We did not lie to ourselves about the Han. We lied to ourselves about arithmetic, in the same building that has just corrected the maize and the vectigal. Every one of our errors this generation is the same error — we measure the point we can see and call it the country."*
+
+**The military stores.** The hardened magazines are real, the threefold traffic rise is real, and every figure we hold came off a rail-served node. The *officium*'s finding: **a watch sited at a railhead is exactly the instrument a rail-served announcement is built for.** Ordered accordingly, and the first genuinely new tasking on that frontier in two hundred and fifty years:
+
+> **Set the counts side by side.** Take what a rail-served post beyond the river is stocked with, and take what a post beyond the rail is stocked with, and compare them, which no clerk of ours has ever done because the two returns are filed under different headings. Retrieve also the frontier market talk of the last decade concerning the far garrisons, which our officers discounted against the physical evidence because it was garbled and the magazines were solid. **A story we cannot weigh is not evidence against a stone we can, but it is not nothing, and we have been treating it as nothing.**
+
+**And we are seen.** The Consilium recorded it plainly: a power that publishes what we are stealing knows we are stealing it, and has known for some years, and has chosen to do nothing. That is either courtesy or an instrument. Rome does not know which and says so.
+
+## XIX. Alexandria: Two Findings, One Correction, and Eleven Wasted Years
+
+**The clean branches produced the best intelligence of the reign and it dismantles the fear of the last one.**
+
+- Egyptian building at Alexandria runs **two to three armoured hulls a year — plated, screw-driven, and fired by oil rather than coal.** No massing in twenty-five years. Most new hulls go west.
+- **Westward provisioning is confirmed completely**, and it is not an armada. Family emigration under land grants out of the Delta and Cyrene; seed; breeding stock; temple fittings. From 540 a cured leaf under royal monopoly coming back east.
+- A firm negative on the canal.
+
+Set beside the letter from Alexandria of 542, which arrived in the same file, the two corroborate each other exactly. **The northbound column our captains counted in 523, which this court has carried for a generation as the possible signature of a race for the Americas, is an emigration and a gold artery.** Egypt is not sailing to fight us in the west. Egypt is *moving house* to the west, and has been while we argued about it.
+
+The consequences are entered in full:
+
+1. **The armada reading is withdrawn.** So is the suspicion, minuted in the last assessment, that the surge and the column were a feed built to pull Rome's fleet and money four thousand miles from the Mediterranean. They were not. They were true, and we mis-set them.
+2. **Oil, not coal.** This is the single most valuable technical line in the returns. Rome has burned the Dacian petroleum for lamps and caulk for fifty years and never once asked it to raise steam. A vessel that needs no coal needs no coaling colony, which is the whole of what Rome has spent this generation building. **Ordered: the Dacian and Mesopotamian petroleum line raised from a curiosity to a directed programme at 60 millions a year, tasked at oil-firing of a marine boiler.**
+3. **A dissent, recorded.** Alexandria is the precise line at which Egypt has controlled disclosure for six hundred years. A count taken at Alexandria is a count of what Alexandria contains. Rome has no basis to assume the yards it can see are the yards that matter, and enters two to three hulls a year as **a floor and not a total.**
+
+**The southern arrivals, and the correction that matters most.** Our factors returned an accurate year-by-year roster. The Consilium then read our own tasking, which asked *who the southern delegations are* — and the roster answers a question we did not ask. **By their own titles they are not delegations. They are provincial governors, works superintendents and commissioners, come to their capital to report.**
+
+A delegation is a foreign thing arriving. An official is an internal thing returning.
+
+Rome therefore **withdraws the caution entered at section XVI** and enters the finding on documentary rather than architectural grounds: the three thousand miles of stone cities on the African Atlantic are not a sphere, a confederation, a daughter civilisation or a people who share Egypt's gods. They are administered Egyptian provinces, and the men who administer them come to Alexandria and file. We had the roster for years and the wording of our own question stopped us reading it. *"We asked who was visiting,"* the minute reads, *"and were sent a list of men going home."*
+
+**And the branch.** The Consilium asked what the 537 finding actually rested on and was told: one planted item, one report, one factor. On that, for eleven years, Rome has run a feed.
+
+Eleven years of silence admits two readings and Rome cannot separate them. Either a disciplined service is absorbing our deception and returning nothing, or **nothing was ever turned, our people have spent eleven years asking questions premised on facts that do not exist in that port, and every one of those questions was a signature.** The second reading is now the *officium*'s preferred one, on the ground that a doubled agent produces product and ours have produced none.
+
+Ordered: **the feed stopped at once**; the branch's people brought off by the ordinary commercial routes without alarm; no further controlled items placed anywhere in the Alexandria service; and a standing rule entered — *no operation may rest for more than three years on a single uncorroborated item, and the rule applies to conclusions as well as to men.*
+
+**Priscus is alive.** Word reached Ostia through the house of Vibulenus that Marcus Vibulenus Priscus, who left the licensed route southward in 546 and was written off, is living. Rome does not know where, in whose hands, or by whose choice, and will not guess. Ordered: **no rescue, no approach, no inquiry through any channel that could name him**, and the standing instruction to the house of Vibulenus that if he comes home he is to be received, paid his arrears, and debriefed by the *officium* and by nobody else. A man who is alive and has not come back may be held, or may have found a reason to stay, and Rome has no way to tell the two apart and no right to assume the first.
+
+## XX. The Maurya, and a Ledger Rome Must Now Doubt
+
+Pataliputra's letter of 539 states that the full maker's account of the hand-firearm was sent in the last reign, against the marine engine Rome delivered. **No such account stands in the Roman register.** Rome entered an unbalanced ledger in its letter of 546 on that basis.
+
+A court that has this year discovered it trebled a frontier population by bad arithmetic, and read its own tasking so carelessly that it filed a list of Egyptian governors as foreign guests, is not entitled to assume the fault is the other party's. The three possibilities are equal until tested: it was never sent; it was lost on a road that both courts agree has been robbed; or it reached Rome and our own registry lost it. **Ordered: the transit registers at the Euphrates crossing, the Syrian frontier command and the imperial archive searched for the years in question before another word is written on the subject.**
+
+Rome also received, at some point after its letter of 546, a refusal from the Maurya diplomatic office of the offered exchange of engineers, telescopes, pressure records and boiler metallurgy — by clerk, without argument and without a reason given. Rome has no explanation for it and constructs none. The *officium*'s note is the correct one: *"A refusal without a reason tells you about the office that sent it and nothing whatever about the throne behind it. Do not read a policy into a form."*
+
+The formal classification of the Maurya as **commercially valuable, strategically unreliable** stands unchanged this turn, on the cannon concealment and the unilateral tariff. The banditry leg of it is now in doubt — they have built eleven waystations, offer escort at cost, and invite us to complain through the channel rather than through rumour, which is not the conduct of a party running the robbery. Rome does not clear them and does not convict them. It writes the leg down to *unproven* and asks for the thing that would settle it.
+
+## XXI. What Severianus Concluded, in One Paragraph
+
+*"We have spent this generation being frightened of the wrong Egypt, counting the wrong Chinese, feeding a network nobody was eating from, and accusing the Indians of losing a letter we may have lost ourselves. Not one of those errors came from a shortage of agents or money. Every one came from reading our own product carelessly — measuring the loudest point, asking the wrong question in the tasking, and letting a single item carry eleven years. We are the best-informed state we have ever been and the worst at reading what we know. I would rather have one man who reads the file than ten more in the port."*
+
+Ordered accordingly, and it is the last act of the reign: a **reading desk** within the *officium custodiae* — thirty men, salaried, whose entire duty is to re-read old product against new, to compare returns filed under different headings, and to hold no collection tasking of their own. **12 millions a year.** It is the smallest line in this file and the emperor's minute on the natural philosophers applies to it word for word.
+
+---
+---
+
+# DECLARATIONS — MESSAGES OUT, 550
+
+*Three replies, one to each. All carried in 550: to Alexandria by the formal channel through the legation; to Pataliputra by the Euphrates crossing; to the Han by the Dnieper road.*
+
+## 1. REPLY TO EGYPT — ACCEPTED
+
+**From Gaius Antonius Severianus Augustus, at Rome, to the Council of the Pharaoh at Alexandria. By the formal channel, 550.**
+
+To the Council of the Pharaoh, greeting.
+
+Your letter of 542 reached us and is answered late, which is our fault and not the ocean's. We had a letter of our own in your hands in 545 proposing very nearly the same thing, and the two crossed. Two courts that reach for the same instrument without consulting have probably found the right instrument.
+
+**On the notification: we accept, entire and as you framed it.** Number of hulls and season, passing westward beyond the Fortunate Isles, by the ordinary channel between our legations, and no more than that — not the purpose and not the destination, and we neither ask those of you nor offer them. We propose one addition only, which costs nothing: that each court name the officer who holds the register, so that when a hull is late or a season is missed there is a man to write to rather than a court to accuse. Our register is held by the *magister classis* at Gades. We ask the same notification be extended to the Atlantic north of the Fortunate Isles, where our shipping is thickest, and we will give ours there first without waiting to hear whether you agree.
+
+**On the three ships.** They were ours. They looked and did not land, and they came home because your captains held to an order we did not know existed. We say plainly what that is worth. We had lost five vessels on that coast across fifty years and had concluded the region denied to us; a court that wished us ill had a standing invitation to make it six, and did not. We had drawn other conclusions than the one you have now given us, and we were wrong to hold them as firmly as we did. **We reciprocate the order and put it in writing: Roman vessels will not fire upon Egyptian vessels except upon being fired upon first**, and that instruction goes to every Roman captain in the Mediterranean, the Atlantic and the western ocean this year.
+
+**On the coasts you name.** We take your statement as given and do not dispute it, and we say what we take it to mean so that neither of us has to guess: that from the mouth of the great northern river of that shore southward to the River of Silver, and the islands off them, are ground of Alexandria; that you make no claim northward of that river and have entered nothing there. We hold ground north of it — two large islands and lesser ones, a fortified island off a stone coast, a walled trading post of two hundred, and a coaling port and colony on a northern river four hundred leagues further north again. Our northern colonies are for timber, fuel and provisioning. We have not gone south along that far coast and we now tell you that our ships will not, southward of that river, without prior notice to you by this same channel.
+
+We will not pretend that this is generosity. Neither of us is in a position to police the other on that ocean and both of us know it. What we are agreeing is that the first meeting shall not be a mistake, and you are right that the second is always worse.
+
+**On envoys.** We accept, and we send them in our own hulls, with thanks for an offer we believe was meant. Six men of the *officium annonae* and two of the *magister classis*, at Alexandria for a term of years and not a season.
+
+**One thing we ask, small, and refuse it freely if you would rather.** Your vessels burn oil where ours burn coal. We hold petroleum in Dacia and have never asked it to raise steam. We do not ask for your method. We ask only whether you judge the thing sound at sea over long service — whether it is a fuel a fleet may depend on, or a convenience of your own geography. An answer of one word would be worth a great deal to us and costs you a technique you would not be giving.
+
+Severianus Augustus.
+
+## 2. REPLY TO THE HAN — ACCEPTED, WITH THANKS THAT ARE NOT FORMAL
+
+**From Gaius Antonius Severianus Augustus, at Rome, to the Emperor of the Han. By the Dnieper road, 550.**
+
+To the Emperor of the Han, greeting.
+
+You have sent the thing we asked for and rather more than we asked for, and you sent it before we could have paid for it. We begin with that.
+
+**The tables of the sun's angle, and the circumference derived from them, are what Rome wanted and could not buy at home for any money.** Our astronomers have the glass, the phases of Venus and the moving lights at Jupiter, and no way from an observation to a number that predicts. You have sent us the shape of that method: two posts, a measured angle, a measured distance, and a sphere falling out of the arithmetic. Our observers at Rome, Cyrene, Colonia Agrippina and Borysthenia are repeating your measurement on our own baselines this year, and we will send you our figures whether they agree with yours or not — particularly if they do not, since two measurements that disagree teach more than one that stands alone.
+
+The pendulum clock is received with your caution attached, which is the useful part of the gift. We had reached navigational accuracy by another road precisely because our clocks had to keep time on a deck; we will set your escapement beside ours ashore, where you tell us it is the better instrument.
+
+The paper method we return again with the same respect and the same plain statement as before, and no offence is meant by it.
+
+**That you told us what you kept is worth more to us than the tube would have been.** Rome has practised managed disclosure as formal doctrine for two hundred years and has never once done what you have just done, which is to name the withholding out loud. We are adopting it. We will tell you hereafter what we are keeping back, and we begin now: **we hold a stable powder and cast bombards, emplaced, seven batteries, on our own walls. We are not sending you the ratio, the granulation or the founding. We tell you we have it because you would rather know we kept something than believe we kept nothing.** We hold nothing else back from you of a kind you have asked about.
+
+**On Fusang, and on your twelve men.** We answer as directly as you wrote. Rome has crossed the western ocean since 402 and settles it: two great islands taken and held, garrisons on lesser ones, a walled trading post on a stone coast which is not a claim on the interior behind it, and since 544 a coaling port and colony on a northern river with pits ninety miles inland. We have surveyed a walled-city country of forty and more towns under no single king, and we have decided not to take it, for the reason your treasurer gave your court: a thousand souls fed across an ocean cost more than the ground returns. Your treasurer and our *magister militum* wrote the same memorandum in different tongues.
+
+We are told also, by the court at Alexandria and in writing, that the far coasts from a great northern river southward are Egypt's, and that they have people farming there. We pass that to you as a thing we were told and have not walked upon, not as a fact we have established. **Take it as our best information and not as our verification**, and know that we have this year been wrong about that court in both directions.
+
+**On the far-continent rule: we accept it, and we will sign the four articles as you wrote them** — no settling, garrisoning or claiming within a stated distance of the other's established and worked settlements; first arrival giving no claim beyond what is held and worked; no approach in force without prior notice by the ordinary channel; and neither of us to arm the peoples of that continent against the other. We add nothing to your draft except the distance, which must be a number if it is to be a rule, and we propose two hundred Roman miles for the sake of having something written down, and will take any figure you prefer over none.
+
+We say frankly why we accept. Your court fears a power growing strong where nobody is watching. Ours has spent six hundred years being unable to reach the thing it most wanted, and has learned that everything expensive it ever did began with a fleet meeting a fleet where no rule had been written. We would rather spend a letter too.
+
+**On the junction: yes, and we are moved to say so plainly.** You have built the yard, the cranes and the transfer works on your own bank at your own cost while our reply sat unsent for a generation. Our rail comes to the western bank at Statio Borysthenia, our sheds and cranes go up at our own cost, and the terms are as we set them in 548: your cars stop on your bank, ours stand on ours, goods cross where wheels do not, your factors work in our yard under our law as our merchants are protected in yours. Neither gauge is relaid. The reason is the one we gave and we do not dress it: a rail from one empire onto the other is a road for an army. We hold to that with a partner we trust, because the rule must survive both of us.
+
+**One correction we owe you, and we make it because we are the party it embarrasses.** We have watched your bank of the river for two hundred and fifty years and told ourselves your settled people there numbered forty to sixty thousand. On re-reading our own observers' sheets this year we find they measured where they could see best and multiplied it across country they had not seen. The figure is fifteen to twenty-five. We tell you we were watching, which you have long known, and we tell you we were watching badly, which you may not have. We would rather you learned the size of our error from us.
+
+**The Dnieper stands.** We want nothing east of it. Our offer of ten resident men of learning at your capital and ten of yours at Rome stands open and unaltered, and we ask it again.
+
+Severianus Augustus.
+
+## 3. REPLY TO THE MAURYA — ACCEPTED ON THE CLAUSE AND ON THE POWDER, WITH ONE THING RETRACTED
+
+**From Gaius Antonius Severianus Augustus, at Rome, to the Throne at Pataliputra. By the Euphrates crossing, 550.**
+
+To the Throne at Pataliputra, greeting.
+
+Your letter of 539 was receipted by our transit officers in 540 and has gone eleven years unanswered. That is our discourtesy and we do not explain it away.
+
+**On the notice clause: we accept every article as you drafted them, without amendment, and will sign at the crossing whenever your officers are ready.** Three years' notice before the end of a span; written delivery to the other's transit officers at the Euphrates and simultaneously to the other's court; effective only on written acknowledgement by both; a signed midsummer statement from each side's transit officers that no notice has been given, so that silence is recorded rather than assumed; and the running span confirmed renewed for a further twenty-five years on the existing terms. Your reasoning — that good faith is not a procedure — is the soundest sentence in the letter and we have nothing to add to it.
+
+**On the powder: yes, and we ask for all of it.** Your proofing standard, your gauged charges, and the design of your incorporating mills. We accept your terms, which were none, and we will not insult the offer by pretending we are giving equal weight in return; we will send what we have and you shall judge it. Your judgement that neither of us gains by the other's ignorance on this one matter is correct, and correct for the reason you gave.
+
+You ask what we have found, and we answer without ornament, including the parts that do not flatter us.
+
+- We have a stable ratio and cast bombards, emplaced, at seven positions, and grained powder from 544 — wetted, pressed, broken, screened, dried — which throws by a third to a half further than the meal and does disproportionately more against masonry. **We do not know why a grain outperforms a dust.** Our proof-house found it chasing an anomaly and cannot explain it. We send you the method regardless.
+- **We have no hand weapon.** Our works made three; the second burst on its ninth firing and killed the man who argued for it; and our programme entered a formal finding in 544 that the metal cannot be thin enough to carry and strong enough to hold. **We believe that finding is wrong** and we tell you so, because you are the other party who has actually tried. It has stood because the man who would have persisted is dead and because we have bombards to point at instead.
+- **And you have named our true wall better than we had named it ourselves.** You write that the hard part is not the weapon but the powder in bulk, and that it is a question of works built rather than cleverness. It is the same here and it is not the milling. It is the nitre. We take ours off our own stable floors, cellars and post-house yards, and we have built beds that yield nothing for two or three years and then yield annually, and every ton of it is spoken for by the walls. **We have not put a single gun to sea, and that is why.** We tell you this because you told us your own limit first, and a man who answers a candour with a silence has ended the exchange.
+
+**On the account of the firearm.** You write that you sent it complete and honest in the last reign, against the marine engine we delivered. It does not stand in our register, and in a letter of 546 we said so and said we would open no second exchange until the ledger closed. **We withdraw that sentence.** We have this year found ourselves wrong about the size of a foreign population by threefold, wrong about the meaning of a list our own agents had held for years, and wrong about a road we had closed for fifty. A court with that record does not get to assume the fault is yours. We have ordered our transit registers at the crossing, our Syrian frontier command and the imperial archive searched for those years, and if the loss is ours we will say so in writing and by this same channel. Until then the ledger is open and neither of us is in default of it. **Send nothing again on our account.**
+
+**On the road.** Your eleven waystations, your patrols and your escort at cost are noted, and your request that you hear it from us rather than from rumour is fair and is granted: we will put the complaints of our merchants to your transit officers in writing each year, with names, dates and places, or send you a statement that there were none. We have carried a suspicion about that road for a long time and we will not pretend otherwise, but a party running a robbery does not build eleven waystations and invite an audit of it. We have written the matter down to unproven and we would rather it were settled than carried.
+
+**On the southern land you have settled: we accept the principle and reciprocate it.** Rome holds two great islands beyond the western ocean and lesser ones, a fortified island and a walled trading post on a stone coast, and since 544 a coaling port and a colony ninety miles up a northern river. You now have that from us and not from a merchant. We ask no charts of you and send none, and we agree with the whole of what you proposed: neither of us should learn a thing of this size from a third man in a market again.
+
+**Lastly, a thing we asked you for in 546 and were refused by your office without a reason given.** We do not read a policy into a form and we do not raise it as a grievance. We simply say the offer stands and has not been withdrawn: exchanged engineers as in the steam bargain, the making of telescopes, our record of what air and vapour do under pressure and heat, and our metallurgy of boilers — which metals, worked how, fail where, at what heat and pressure, and what may safely stand beside a fire. That last is four hundred years of our failures written down and it is the most useful thing Rome owns. If your answer is still no, it is no and we will not ask a third time. **We would only ask that the answer be read by someone with cause to want it, before it is given.**
+
+And we ask, as we have asked the Han: not more than ten Roman men of learning resident at Pataliputra, and the same number of yours at Rome. Your mathematics and your astronomy we asked for in 546 and ask for again. Our engineers reckon. They do not derive. We know the difference now, and we know where we learned to count.
+
+Severianus Augustus.
