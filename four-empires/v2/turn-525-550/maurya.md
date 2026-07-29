@@ -264,14 +264,14 @@ The previous reign set the armament line at a tenth of revenue and put the advis
 
 | Programme | Spend across the reign | What it bought |
 |---|---|---|
-| Gunpowder manufacture and firearms | 2,150M | Six new powder works and the mechanisation of milling. See below. |
+| Gunpowder manufacture and firearms | 2,150M | Six new powder works, one of them destroyed with 184 men in 541 and rebuilt. See below. |
 | Marine and stationary steam | 1,050M | 19 engined hulls at 525 → about 70 at 550, including the first engined warships. Stationary engines beyond Kolar into the Deccan iron districts and the powder mills. |
 | Galvanic, wire path | 1,000M | The first messages sent without a rider. See below. |
 | Naval cannon and carriages | 500M | Cannon-armed vessels from 30–40 to about 75; crews drilled with live powder for the first time. |
 | Coal and fuel | 400M | The eastern coalfields opened. See below. |
-| Fine optics and glass | 350M | A programme that did not exist at 525. See below. |
+| Fine optics and glass | 350M | Lead glass; the compound instrument that failed; the bead lens that did not. See below. |
 | Paper and printing | 300M | Presses at 60 provincial centres, up from 28–30. Printed relief registers, tax rolls, law codes, medical texts, and from 541 printed star and tide tables for ships. |
-| Medicine and materia medica | 250M | Re-founded 538 after the plant closure. Antiseptics, analgesics, one promising new inoculation. |
+| Medicine and materia medica | 250M | Re-founded 538 after the plant closure. Antiseptics, analgesics. The delta-fever inoculation failed in trial and taught us the shape of our own ignorance. |
 | Ballistics, metallurgy, gauges, mathematics | 190M | Gauge-and-limit inspection at the arsenals; the tangent and the area under a curve reduced to method. |
 | Galvanic, plant path | 60M, closed 535 | Nothing further. Cost recorded above. |
 
@@ -349,7 +349,9 @@ The heartland is untouched and larger than it was — the subcontinent whole, Sr
 
 And the southern continent tripled. That is the fact this record most wants the next reign to sit with. A hundred and thirty-five thousand people at 525 and four hundred thousand at 550, on ground that grows wheat, wool, cattle, timber and coal, doubling every twenty-odd years by births alone, with towns that were stockades now launching ocean hulls, with two settlements founded by graziers who asked nobody, with its own foundry, its own land grants, its own harbour dues, its own courts in all but name — and with a treasury line that *fell* through every year of it, because Pataliputra was paying for less and less of what was happening. A mediocre reign did not stop a colony. It only stopped steering one, and a colony on good ground does not need steering; it needs a throne that notices which way it has gone. The next ruler will inherit a province of four hundred thousand people that has never seen a minister, never been audited, never been assessed for tax, and never been told no.
 
-What was lost was the African trade and the eyes that went with it; eleven men; two settlements and the ground beneath a third; and the only channel by which a more advanced power had ever handed us a thread, closed by written order in a bad temper.
+What was lost was the African trade and the eyes that went with it; eleven men on a coast in pursuit of a shrub; two settlements and the ground beneath a third; and the only channel by which a more advanced power had ever handed us a thread, closed by written order in a bad temper.
+
+And what it cost in men to make the things above is set down here together, because it is spread across the file and should be read in one place. **A hundred and eighty-four at Bhadrapura** and perhaps sixty more across thirty mill-house fires at the other works, so that the army might have thirty-four thousand firearms. **A hundred and seventy in the eastern coal**, so that the engines might burn something other than the forest. **Nine men** in a fever trial that failed. An uncounted mortality at Uttaradvāra, where the returns show the establishment and the graves are dug locally. Two hundred and sixty settlers and soldiers on the southern frontier, and on the other side of that frontier a number nobody was asked to write down. These are not disasters. Every one of them is the ordinary running cost of doing the things this reign is credited with, and a record that lists the achievements and not the price is not an account, it is an advertisement.
 
 What was not gained is the longer list, and it is the list that matters. No answer to China at sea. No use made of a full treasury. No audit of a continent. No question asked of the elephant corps. No embassy sent anywhere, to anyone, in twenty-five years except three letters written by councillors and clerks. A great reign takes a realm at 2,280 million and leaves it changed. This one took it at 2,280 and left it at 2,770, which is what happens to a well-built machine when nobody touches it.
 
@@ -411,7 +413,11 @@ The ruler died in 550. His historians will assess him at forty-nine and note tha
 >
 > On the western ocean: we know that you have found land beyond it and have settled it, and we learned that by accident from a merchant, which does neither of us credit. We have settled a great southern land of our own, reached from our eastern seas, and we tell you so directly rather than let you hear it the way we heard of yours. We do not propose to trade charts. We propose only that neither of us should again learn a thing of this size from a third man in a market.
 
-*Receipt was acknowledged by the Roman transit officers at the crossing in 540 and the letter forwarded. No reply on the notice clause had reached Pataliputra by 550. Our frontier officials report that no notice has been given by Rome, and this record states that as what our officials report and not as a fact about Rome's intentions.*
+*Receipt was acknowledged by the Roman transit officers at the crossing in 540 and the letter forwarded. No reply on the notice clause had reached Pataliputra by 550.*
+
+*One note on the sixth paragraph. The realm offered Rome the design of its incorporating mills in 539. In 541 the largest of those mills killed a hundred and eighty-four of our own men and took the works with them, and by 545 our own ordnance side had taken the engines off them. Whether Rome ever built to that design we do not know, and nothing was sent to warn it. The council considered the question in 546 and concluded that to write again would be to advertise the accident. That is the reasoning; the record does not endorse it.*
+
+*Our frontier officials report that no notice has been given by Rome, and this record states that as what our officials report and not as a fact about Rome's intentions.*
 
 ### 3. To China
 
@@ -472,30 +478,34 @@ The ruler died in 550. His historians will assess him at forty-nine and note tha
 
 | Capability | Reached | Funded by |
 |---|---|---|
-| Bulk gunpowder at five times the 525 rate; six new powder works; proofing to a gauged standard | 535–549 | Armament line, 2,150M |
-| One-man firearms in numbers — ~40,000, with two corps of 20,000 drilled on live powder | continuous | as above |
-| Two-man crew-served pieces, ~9,000; frontier and fortress cannon ~180; cannon-armed vessels ~75 | continuous | as above, and naval cannon line 500M |
-| Coal: the eastern seams opened, drained by steam, moving by barge and road to the powder works and the Deccan smelters | 535–545 | Coal and fuel line, 400M |
+| Bulk gunpowder at ~4× the 525 rate; six new powder works; proofing to a gauged standard | 535–549 | Armament line, 2,150M |
+| One-man firearms in numbers — ~34,000, with two corps of 15,000 drilled on live powder | continuous | as above |
+| Two-man crew-served pieces ~8,000; frontier and fortress cannon ~170; cannon-armed vessels ~75 | continuous | as above, and naval cannon line 500M |
+| Coal: the shallow eastern seams opened, drained by steam, moving by barge and road to the powder works and the Deccan smelters | 535–545 | Coal and fuel line, 400M |
+| Paired-shaft ventilation and the fired-off gas, the deep-coal remedies such as they are | 546–549 | as above |
 | Engined hulls from 19 to ~70, including the first vessels carrying engine and cannon together | continuous | Steam line, 1,050M |
-| Stationary steam beyond Kolar: mine drainage across the Deccan iron districts; powder-mill drive | 537 onward | as above |
-| The compound microscope, ~200 times, and the sight of small moving bodies in water, blood, tooth scrapings and wound matter | 544 | Fine optics line, 350M — a programme that did not exist at 525 |
-| Lead glass of low bubble and high bending, and lenses figured to a standard rather than to an eye | 540 | as above |
-| Message by wire: 400 paces 546, 40 km with eight relay stations 548, ~40 letters an hour, dry weather only | 546–548 | Galvanic wire line, 1,000M |
+| Stationary steam beyond Kolar: mine drainage across the Deccan iron districts; powder pounding, granulating, glazing and haulage | 537 onward | as above |
+| Lead glass of low bubble and high refraction; lenses figured and tested to a standard rather than to a craftsman's eye | 540 | Fine optics line, 350M — a programme that did not exist at 525 |
+| **The single-bead high-power lens**, and the sight of small moving bodies in water, blood, tooth scrapings and wound matter | 544 | as above |
+| Message by wire: 400 paces 546, 40 km with eight manual relay stations 548, ~40 letters an hour, dry weather only | 546–548 | Galvanic wire line, 1,000M |
 | Printing at 60 provincial centres; printed relief registers, star and tide tables for ships | continuous | Paper and printing, 300M |
 | Gauge-and-limit inspection at the arsenals — our first step toward made parts that interchange | 543 | Metallurgy and gauges, 190M |
 | The tangent and the area under a curve reduced to systematic method, applied to shot and to hull volume | 541 | as above, and the schools line |
-| A new inoculation candidate against the Bengal delta fever, in trial | 546 | Medicine, 250M |
 | Reef pilotage of the northeastern coast, charted | 549 | Southern programme |
+| Stone dry dock and coaling stage at the Strait | 543, 545 | Southern programme and the Strait establishment |
 
-### Not reached, and why
+### Not reached, and why — the technical reason in each case, not the ruler
 
-- **No theory of matter.** Combustion, distillation, electrochemistry, and no account of what any of it is made of. This is the ceiling under everything else.
-- **No germ theory, and now the tantalising version of not having it.** We can see the small bodies. We cannot show that they cause anything. Our physicians wash because it works and now have a picture they cannot interpret.
-- **Coke iron failed.** The coal will not smelt clean metal. We suspect an impurity in the rock and have no chemistry to find it.
-- **No message network.** Forty kilometres that stops in the rain. Insulation, a pile of steady output, and a signalling scheme fit for volume are all unsolved, and are now at least *named*.
-- **No answer to Chinese naval gunnery.** We have more cannon at sea and better crews and no idea how their line held its range against the wind or fired without pause. We did not seek one.
+- **No theory of matter.** Combustion, distillation, electrochemistry, and no account of what any of it is made of. This is the ceiling under everything else on this list and it is the only entry here that is not downstream of another entry.
+- **No germ theory**, and now the tantalising version of not having it. We can see the small bodies with a bead lens. We cannot show that they cause anything, because to show it we would have to exclude everything else, and we have no notion of how.
+- **No coke iron.** Coal-smelted metal crumbles under the hammer at red heat. Something in the rock goes into the iron; our smiths cannot name it, isolate it or drive it off, and will not until there is a science of what things are made of. Blocked by the first entry.
+- **No deep coal.** The air burns in the deep faces and killed a hundred and seventy men. The remedy is paired shafts and a boy with a candle. The realm's coal is therefore abundant, shallow, and finite, and nobody at court knows it.
+- **No comfortable microscope.** Two lenses in a tube magnify the first lens's coloured fringes along with its image, so the compound instrument of 541 gives a bright blur. The bead lens works because one lens has only its own faults. The route to an instrument two men can use runs through removing the fringes, and nobody knows why a lens makes colours.
+- **No message network.** Forty kilometres that stops in the rain. The failing component is the insulation, the material that would solve it was made in the same school in 540, and the two programmes report up different chains to different councils. **This one is not a technical failure at all and is listed here so that nobody mistakes it for one.**
+- **No inoculation against fever.** The pox method failed outright against the delta fever in a two-thousand-subject trial. The best explanation anyone has is that a sickness a man takes forty times is not the kind of thing the method works on — which is a description, not a mechanism. We cannot predict which diseases the method will guard against and must find out by trying, at nine dead a trial.
+- **No answer to Chinese naval gunnery.** More cannon at sea, better crews, and no idea how their line held its range against the wind or fired without pause. Nobody was sent to find out. This one *is* the ruler.
 - **No interchangeable manufacture.** Gauges at the arsenals only. Egypt had a whole city of matched fittings in 367.
-- **The army is not armed.** Forty thousand firearms against 1,119,000 men. Powder capacity, not design, remains the wall, as it has been for 275 years — but it is now a wall we are visibly climbing rather than one we merely describe.
+- **The army is not armed.** Thirty-four thousand firearms against 1,119,000 men. Powder capacity remains the wall, as it has for 275 years, and this reign proved why: capacity is bought with works, works burn, and the fastest way to build it — an engine on the incorporating mill — is the way that burns them.
 
 ---
 
