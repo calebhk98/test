@@ -38,7 +38,7 @@ The file says reading runs in the nineties in the cities and toward the high eig
 
 The companion figure — "identification with Egypt at eighty-five to ninety-five percent" — is worse, because our own file concedes in the same paragraph that we cannot measure it. We wrote down a number we admitted we could not obtain. That is what a court does when it needs to feel safe.
 
-Coptic is the real achievement and it is not overstated. It entered a written vacuum across most of the south and became not the conqueror's tongue but simply the tongue. The Isis synthesis does the same work in the other register. Between them, a man on the Zimbabwe plateau and a man in the Delta share a script, a liturgy, a legal code, a calendar and a schoolbook. No other empire has manufactured that much sameness across that much difference. It is our actual weapon and it is more reliable than the fleet.
+Coptic is the real achievement and it is not overstated. It entered a written vacuum across most of the south and became not the conqueror's tongue but simply the tongue; the Isis synthesis does the same work in the other register. A man on the Zimbabwe plateau and a man in the Delta share a script, a liturgy, a legal code, a calendar and a schoolbook. No other empire has manufactured that much sameness across that much difference. It is our actual weapon and more reliable than the fleet.
 
 ### Wealth
 
@@ -48,7 +48,7 @@ Three cautions the ledger does not print.
 
 First, the twenty-percent capture rate is a Nile Valley number applied to a continent. The Nile can be taxed at that rate because a river makes every field visible and three thousand years of survey bureaucracy stands behind it. Zimbabwe, the Sahel and the Congo cannot. My honest reading is that the Nile, the Levant, the tolls and the three mineral systems generate the overwhelming majority of revenue, and that **most of the African empire costs more to hold than it yields.** The continental project is a strategic expense financed by the heartland and the canal. If the canal is cut, we do not merely lose fourteen percent of income; we lose the thing that subsidizes the depth we would be falling back into.
 
-Second, the reserve: 263,000 talents, held chiefly in gold, reported by the men who would be destroyed if it were short, never independently counted in four hundred years. I do not allege theft. I observe that we have never checked.
+Second, the reserve: 263,000 talents in gold, reported by men who would be destroyed if it were short, never independently counted. I allege nothing. I observe that we have never checked.
 
 Third, free money. Of 132,000: roughly 45% to fleet, frontier and garrison; roughly 32% to court, works and research; the remainder is the deployment stream, already committed this turn to the Western Enterprise, Morocco, Livingstone, wire-drawing, shipyards, machine tools, a hundred radio fits and the research slate. **Genuinely uncommitted money next turn is on the order of five to ten thousand talents.** Behind it stands roughly 130,000 talents of one-time capital available by drawing the reserve to its one-year floor, which the council will not touch short of war or catastrophe. We are cash-rich and slack-poor, and one plague turns the discretionary programme off.
 
@@ -68,31 +68,39 @@ Twenty to thirty-five thousand funded scholars and engineers, on a technical cla
 4. **Population.** Research scales with the literate population, and the population is capped until the American crops work through. Everything else compounds; this does not.
 5. **The gun.**
 
-### The gap nobody in our file is frightened of
+### The shape of a thing we cannot name
 
-We have never made a firearm or a field gun. Our own history calls this "routing around gunpowder" and presents it as elegance.
+Set three facts our own records hold and that no one has set beside each other.
 
-Read the chain our own file lays out and does not follow. Gunpowder is a Chinese discovery. China trades overland with Rome and has for centuries. Rome has already acquired cheap paper and the printing press by that route — our own agents confirmed it in 408–412. **Therefore we must assume Rome has gunpowder, and probably has had it a long time.** China, this turn, opened its optics and mathematics freely and stated at the outset that it will not share weapons manufacture. We logged that refusal as "the normal reserve of partners still taking each other's measure." It is the loudest signal in the entire file, and we recorded it as politeness.
+China, in this turn's exchange, opened its optics and its mathematics freely and generously — and stated at the outset, unprompted, that it will not share weapons manufacture. Our delegation at Quanzhou was shown the foundries, the presses, the rail paths, the academy. It was not shown the military workshops. We logged that as "the normal reserve of partners still taking each other's measure."
 
-We have arc-furnace steel, boring machines that have made true cylinders since 260 AD, and nitrated explosives — every component of artillery and no artillery. Our land army has not fought peer heavy infantry in six hundred years and may meet massed powder weapons on the Sinai line carrying the finest steel spears in the world.
+Rome acquires Chinese technology overland and has done so for centuries. Our agents in the northern provinces confirmed in 408–412 that Rome holds cheap paper and the printing press, and we concluded then that it almost certainly came by the overland road.
 
-The council's technological pride is that we lead in electromagnetics, optics, medicine, chemistry and navigation. Probably true. It may also be **irrelevant to the only war that matters.** Radar does not stop infantry. This is the most important thing in this assessment.
+**Therefore: there is a class of weapon that China makes, that China will not show us, and that the overland road has had centuries to carry to Rome.**
+
+We cannot name it. We do not know whether it is chemical, mechanical or metallurgical, one device or a family, an engine, a metal, a mixture or a method, carried by a man or drawn by oxen. We know only its silhouette: China guards it above everything else it owns, in an exchange where it gave us everything else, and Rome has had the road to it since before we knew Rome could build a boiler.
+
+That ignorance is the finding. An empire that knows what it lacks can commission it; we can only commission a search — and a search for an unnamed thing cannot be tasked to a merchant, who would not recognize it standing beside it. It requires men inside Chinese and Roman military workshops, precisely where we have never had anyone.
+
+We have arc-furnace steel, boring machines cutting true cylinders since 260 AD, and nitrated explosives our chemists cannot yet make safe to carry. We have most of the ingredients of most things, and have never been shown what to build with them.
+
+The council's pride is that we lead in electromagnetics, optics, medicine, chemistry and navigation. Probably true. It may also be **irrelevant to the only war that matters.** Radar does not stop infantry. This is the most important thing in this assessment, and we noticed it only because a courteous partner declined a topic.
 
 ---
 
 ## III. The other powers
 
-**Rome** is the existential threat, and after this turn it is confirmed as something worse than dangerous: it is *good*. Three small sail ships came down the whole Atlantic face, kept station, used a balloon, looked at the Cape, gave no pretext, and went home. Disciplined, provocation-free. Assume Roman professionalism; stop hoping for Roman blundering.
+**Rome** is the existential threat, and after this turn it is something worse than dangerous: it is *good*. Three small sail ships came down the whole Atlantic face, kept station, used a balloon, looked at the Cape, gave no pretext, went home. Assume Roman professionalism; stop hoping for Roman blundering.
 
-But register a counter-reading the council did not make. Three small sailing ships with no steam is also what a power sends when that is all it can spare across that distance. We read competence; the same evidence supports thinness. We have treated every Roman estimate as a floor and never a ceiling — discipline that saved us in 398, and that also means **we have spent four centuries constructing the most frightening Rome consistent with the evidence and never once the least frightening one.** A council that only ever errs in one direction is not being careful. It is afraid.
+But register a counter-reading the council did not make. Three small sailing ships with no steam is also what a power sends when that is all it can spare across that distance. We read competence; the same evidence supports thinness. We treat every Roman estimate as a floor and never a ceiling — discipline that saved us in 398, and which also means **we have spent four centuries constructing the most frightening Rome consistent with the evidence and never once the least frightening one.** A council that only ever errs in one direction is not careful. It is afraid.
 
 **India** is a rival inside a commercial relationship: expansionist, mathematically superb, metallurgically strong, a proven leaker who passed our secrets to China and embellished them, and the party that built the overland compact that took our lightest and richest trade in 347–350. We steered it into a botanical dead end for years and it never noticed. China has just destroyed its eastern navy — which is not good news. A humiliated India is an India shopping for a partner, and the only partner available is Rome.
 
 **China** is the power we are wrong about, and I want this in the record.
 
-China has behaved with total honesty — it disclosed India's breach, granted consultation in both directions, stated openly it will tell Rome whatever it tells us, refused to pretend consultation is alliance, and corrected our sloppy sourcing on the veteran rumour. All admirable. And this turn we gave it, free and on no schedule, our complete germ and tropical-disease body — never before shown to any foreign eye.
+China has behaved with total honesty — it disclosed India's breach, granted consultation both ways, stated openly it will tell Rome whatever it tells us, refused to pretend consultation is alliance, and corrected our sloppy sourcing on the veteran rumour. All admirable. And this turn we gave it, free and on no schedule, our complete germ and tropical-disease body, never before shown to any foreign eye.
 
-Why did China want it? It told us: its southern frontier has stopped at the Shan highlands for four hundred years because the country below kills its soldiers faster than any army.
+Why did China want it? Its southern frontier has stopped at the Shan highlands for four hundred years because the country below kills its soldiers faster than any army.
 
 **Tropical medicine is the technology that made Africa Egyptian.** It is the sole reason we, and not anyone else, hold a continent of jungle, fever and tsetse. We have just handed the key to that lock to the power that has already annihilated one blue-water navy in our ocean, holds the Malacca passage, and has an explicit, stated, four-hundred-year hunger to expand into the tropics. In exchange we received a pendulum clock and the principle of the curved-mirror telescope.
 
@@ -106,7 +114,7 @@ It matters less than the council believes, because our advantages are *strategic
 
 ### How much land do they have?
 
-We do not know, and I state that without embarrassment. Rome we judge "dramatically larger after its northern consolidation," probably more populous, spanning Britain and the Rhine to Ukraine and the Maghreb, and now across the western ocean. India holds Mesopotamia eastward, and probably Australia. China holds an empire we are told is the size of ours with a stalled southern edge. These are shapes, not figures. Our best count of meaningful political entities on earth is seven to ten, of which we know five or six.
+We do not know, and I state that without embarrassment. Rome: "dramatically larger after its northern consolidation," probably more populous, Britain and the Rhine to Ukraine and the Maghreb, now across the western ocean. India: Mesopotamia eastward, probably Australia. China: an empire we are told is the size of ours with a stalled southern edge. Shapes, not figures. Our best count of meaningful political entities on earth is seven to ten, of which we know five or six.
 
 ---
 
@@ -132,13 +140,13 @@ We cannot ask this question, and *why* matters. The permanent strategic council 
 
 Second: **being counted.** We suppress our own gold output so no one can weigh our war chest. We hid a continent. We hid the Cape route so hard we never used it, and then Rome crossed the ocean first and our council sat eleven days in grief. We are doing it again with America — the carried-forward questions propose preserving "the option to lie about how long the coast has been held." We have absorbed the lesson as *this particular* secret was a mistake, not as *we are a state with a pathology about legibility.*
 
-Third, quieter: the hand at our back. It is why we broke Meroe rather than taxing it, took Aksum, disarmed the Great Lakes, and paid for mine machinery out of the war budget. Mostly rational — but it means we spend gold against threats that have not materialized in three hundred years, and we will do it again in America against peoples already dying of our diseases without our lifting a hand.
+Third, quieter: the hand at our back. It is why we broke Meroe rather than taxing it, took Aksum, disarmed the Great Lakes, and paid for mine machinery out of the war budget. Mostly rational — but we will do it again in America against peoples already dying of our diseases without our lifting a hand.
 
 ### Governing style
 
 Cunning, patient, deceitful, non-vengeful, allergic to visible confrontation, and constitutionally incapable of the decisive stroke.
 
-We are extremely comfortable lying. The coffee origin was falsified toward Yemen so thoroughly that Indian agents burned decades in the wrong mountains. We told Rome for seventy years that the Atlantic coast was held by hostile natives and that we kept no navy there, while our balloons watched and our incendiaries burned their hulls. We steered India into a botanical dead end with a fabricated account of our own early research. We fund bandits through cut-outs against caravans in Roman Syria — an act of war we have decided is not one, sustained for nearly two centuries, and the likeliest single cause of the Roman-Indian alignment we say we fear above all things.
+We are extremely comfortable lying. The coffee origin was falsified toward Yemen so thoroughly that Indian agents burned decades in the wrong mountains. We told Rome for seventy years that the Atlantic coast was held by hostile natives and we kept no navy there, while our balloons watched and our incendiaries burned their hulls. We steered India into a botanical dead end with a fabricated account of our own early research. We fund bandits through cut-outs against caravans in Roman Syria — an act of war we have decided is not one, and the likeliest single cause of the Roman-Indian alignment we say we fear above all things.
 
 We are not vengeful, and this is a real virtue: we declined to strike Rome's spies in 365, declined the counter-demonstration in the 440s, declined to fire on three ships this turn, and commended the commanders who held fire. Pride does not move us to violence. Very little does.
 
@@ -162,7 +170,7 @@ And then the truth the file will not print: **we have never fought a great war.*
 
 1. The secrecy doctrine — it cost the New World head start, five Roman crews murdered in peacetime for nothing, and a grievance we now pay without holding the secret it bought.
 2. Giving China our tropical medicine for free.
-3. Never building a firearm.
+3. Never asking, in a century of exchange, what China's military workshops make.
 4. Three hulls a year for a century, addressed only now.
 5. Surrendering the light-luxury trade to the overland compact in 347–350 and answering with hired bandits instead of policy.
 6. Never testing the land army, and arranging never to have to.
@@ -181,7 +189,7 @@ And then the truth the file will not print: **we have never fought a great war.*
 
 **Two together?** No. Rome and India coordinated costs us the Levant, Cyprus, the Sinai and the canal. We would survive as an African and Atlantic empire — precisely what the fallback doctrine was built for. Which is the sentence no one has said aloud in the chamber: **our own founding doctrine has already conceded the loss of the northern half of the homeland.** Six centuries building a refuge is six centuries of quietly agreeing that the thing being fled from will fall. Nobody has told Alexandria this.
 
-**Spies.** A permanent service, four centuries old, running three models at once — recruited Romans and Greeks inside Roman institutions; merchants whose trade is genuine and whose reporting is a sideline; and our own Greek-Egyptians who pass as Hellenes anywhere in the Roman east. Cryptography built on the deepest mathematics in the world. Counter-intelligence real enough to have caught a Roman agent in port this turn, whose questions were all about the Atlantic. Deception as a standing capability, not an improvisation. Our weakness is structural and known: we see ports and corridors, and reconstruct interiors and military workshops from fragments. Every estimate is a floor.
+**Spies.** A permanent service, four centuries old, running three models — recruited Romans and Greeks inside Roman institutions; merchants whose trade is genuine and whose reporting is a sideline; our own Greek-Egyptians who pass as Hellenes anywhere in the Roman east. Cryptography built on the deepest mathematics in the world. Counter-intelligence that caught a Roman agent in port this turn, whose questions were all about the Atlantic. Deception as a standing capability. Our weakness is structural: we see ports and corridors and reconstruct interiors and military workshops from fragments. Every estimate is a floor.
 
 **Army and navy.** The navy is the finest instrument on earth and has fought only ambushes — five Roman ships over a century, a mine revolt on the Zambezi, pirates. The army is large, well-officered, drilled against simulated Roman formations, majority African since 70 AD, disease-adapted, and has met no peer since Raphia's grandchildren. It has fought Meroe, Himyar, Aksum, the Great Lakes, and a great many villages. It does not know what a peer assault does to defender morale, and no one alive can tell it.
 
@@ -203,8 +211,8 @@ Ordered by how much damage the error can do.
 
 1. **Rome is coming.** Never audited, wrong twice, unauditable because the council's authority rests on it. This premise has directed roughly half of all state revenue for six hundred years.
 2. **China's interests do not collide with ours.** We just gave away the technology that made Africa ours to a power stalled at a tropical frontier that owns Malacca and has sunk ninety ships.
-3. **"We routed around gunpowder" is elegance, not a hole.** Rome trades overland with China and has already taken paper and printing that way. China refused us weapons knowledge in the same breath it gave everything else. Assume Rome has powder.
-4. **The land army is adequate.** Untested in six hundred years; its size not restated in our file since a 100 AD figure of 100,000–140,000. No one has counted it in four centuries.
+3. **That our arsenal is complete.** Our file treats the shape of what we field as settled. China guards a weapons craft it will not name and Rome has had the overland road to it for centuries. We never looked, because we did not know there was anything to look for.
+4. **The land army is adequate — and its size is not written down.** The only headcount in our entire history is a c. 100 AD figure of 100,000–140,000 men, with a 30,000–40,000 heavy core. At 500 our own strategic summary calls the army "however large," which is what a document says when it has no number. **We cannot tell the throne how many soldiers it has.** That is not an estimate problem; it is a four-hundred-year clerical silence, and it should be the first order of the next turn.
 5. **The map.** We hold a perimeter and call it a continent. Much of the interior costs more than it pays.
 6. **Eighty-eight percent literacy and ninety percent identification.** Self-reported by officials rewarded for the number; the second admitted unmeasurable in the sentence that asserts it.
 7. **The reserve.** 263,000 talents, never independently counted, reported by those with everything to lose from a shortfall.
@@ -222,7 +230,7 @@ Ordered by how much damage the error can do.
 Because it is what this state is:
 
 - Thicken the Sinai works again, because the Roman fear is our constitution and money spent there always passes the council.
-- Build no gun. The chemists' careers, the arsenal's pride and two hundred years of doctrine are staked on nitration, and "we routed around gunpowder" is now something we believe about ourselves rather than a technical judgement.
+- Chase the unnamed weapon half-heartedly and then let it lapse. Two hundred years of doctrine and every chemist's career are staked on nitration and the incendiary balloon, and a search for a thing we cannot describe has no advocate in the chamber and no line in the budget.
 - Keep the bandit programme running in Syria, because it is cheap, deniable, and nobody wants to be the man who admits it was an act of war.
 - Under-declare America, preserve the option to lie about how long we have held the coast, and send Rome no note — because offered the choice between defining a situation and deferring it, we have deferred for six hundred years.
 - Spend absurd sums making the Plata Alexandrian: wheat, grapes, olives, an Isis temple in canonical proportions on the far side of the world. The identity machine is the one thing we truly believe in, and we will pay for it past all reason.
