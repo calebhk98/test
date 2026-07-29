@@ -2,11 +2,9 @@
 
 ## Part XIII: The Reign That Held the Reins and Did Not Drive
 
----
-
 ### The Ruler and the Inheritance
 
-The exceptional ruler who had raced for the southern continent died in 525, and the throne passed to a man the realm's historians assess at forty-nine.
+The exceptional ruler who had raced for the southern continent died in 525, and the throne passed to a man our historians assess at forty-nine.
 
 He was not a bad man. He purged nobody, took no favourites worth naming, and did not steal. He was also not a ruler who could see a board. He inherited a commitment larger than any in the realm's recorded history — three hundred and fifty founded places on a continent nobody in the council chamber had seen — and had neither the conviction that began it nor the hardness to end it. So he kept every line where his predecessor had put it, changed no standing order, promoted and destroyed no one, and let the realm run on a dead man's momentum until the momentum ran out.
 
@@ -25,9 +23,7 @@ What he inherited:
 
 ### The Southern Program Under a Man Who Did Not Believe In It
 
-He did not stop the southern program, because stopping it meant declaring his predecessor's great work a folly and fighting the interest that had grown around it in twenty-five years: the Tamil and Bengal shipowners living on convoy charter, the shipwright families transplanted to the northern yards, the Malay and Sumatran pilot houses, the temple foundations endowed at the new ports, and the founding families, who had already disobeyed the throne once and been ratified after the fact.
-
-He did not reinforce it either, because money could only come from the army, the research line, or the temples. So the 250-million line stayed where he found it, and less and less of it arrived at the coast.
+He did not stop the southern program, because stopping it meant declaring his predecessor's great work a folly and fighting the interest grown around it in twenty-five years: the Tamil and Bengal shipowners living on convoy charter, the shipwright families transplanted to the northern yards, the Malay and Sumatran pilot houses, the temple foundations endowed at the new ports, and the founding families, who had already disobeyed the throne once and been ratified after the fact. He did not reinforce it either, because money could only come from the army, the research line, or the temples. So the 250-million line stayed where he found it, and less and less of it arrived at the coast.
 
 **Where it went instead.** By 540 the assessors at the Strait could account for perhaps 175 to 185 million actually landing on the continent as ships, stores, iron, tools and wages. The difference went three ways: the program's own establishment at Pataliputra, the Tamil ports and the Strait grew from a hundred and forty officials to over five hundred without any increase in what it moved; the ordinary peculation of a fund disbursed five thousand miles from any inspector, which nobody measured because nobody was sent; and in 529 a deliberate diversion of two ocean hulls to a purpose that had nothing to do with the south.
 
@@ -61,7 +57,7 @@ So the coast the realm spent three years' revenue to claim before Egypt could re
 
 ### The Fire-Setters
 
-The previous reign's chronicle spoke of raising settlements "on ground no Maurya hand had worked before." That was true of Maurya hands. It was not true of the ground.
+The previous reign's chronicle spoke of raising settlements "on ground no Maurya hand had worked before." That was true of the hands. It was not true of the ground.
 
 The mainland has people on it, in numbers the realm cannot count, living without kings, fields, towns, or anything our statecraft is built to bargain with. Our people call them the **Agnikāra**, the fire-setters, from what struck the first settlers most: they burn the country deliberately, in patches and in season, and the burnt ground draws game and comes back green. Our officers read this first as war-signalling, then as waste, then not at all.
 
@@ -77,7 +73,7 @@ This is set down because a later reign will want to know when it began.
 
 ### The Coffee Voyage, and the Closing of the African Shore
 
-The realm has hunted the coffee plant for a hundred and eighty years. It is not strategic. It never was. The court cannot let it go.
+The realm has hunted the coffee plant for a hundred and eighty years. It is not strategic. The court cannot let it go.
 
 In 529 the commandant at Oman, acting on a standing search order nobody had ever cancelled, authorized a voyage. Two ocean hulls were taken out of that season's southern convoy — the only deliberate theft from the south in the reign — under a Tamil master out of Nagapattinam long resident at Oman, **Ilaṅkōvan**, who had worked the African run for eighteen years and knew its coves, its currents, and the trick of passing a guarded harbour mouth by night. Cover was ordinary: a licensed trading voyage of the kind our hulls had made along that shore by right for four centuries, carrying Omani copper, dates and Gujarati cloth. The target was the river mouths of the Horn country climbing inland toward the high ground where the bean was believed to grow, and the plan had been argued at Oman for a decade: land a party at night below the guarded ports, walk inland with hired guides, buy living plants and unroasted seed, be gone before a patrol closed.
 
@@ -87,9 +83,9 @@ Egypt's answer came in 533 and it was not a protest but an administrative act. T
 
 The cost, which the assessment of 525 did not price:
 
-- **Revenue.** The African and eastern-approaches traffic out of Oman and the Gulf was worth 55 to 70 million paṇas a year to the treasury in port dues, transit charges and landed-goods duties, and several times that to the merchant houses of Gujarat, Oman and the Tamil coast. It went to nothing inside two years.
-- **The eyes.** The agents who detected the Egyptian fleet's provisioning were factors, harbour clerks and chandlers' men resident in those ports. When the trade stopped, the residence stopped. The network that gave the previous reign its one great intelligence coup was dismantled in eighteen months, by us, for nothing, in pursuit of a shrub. The realm now has no eyes on the African coast, the Red Sea, or Egypt's yards, and cannot say whether the great fleet ever sailed.
-- **The precedent.** Egypt has demonstrated that it can strip the realm of a five-hundred-year access by writing an order, and that the realm's answer will be a letter.
+- **Revenue.** The African and eastern-approaches traffic out of Oman and the Gulf was worth 55 to 70 million paṇas a year to the treasury in port dues, transit charges and landed-goods duties, and several times that to the merchant houses of Gujarat, Oman and the Tamil coast. It went to nothing in two years.
+- **The eyes.** The agents who detected the Egyptian fleet's provisioning were factors, harbour clerks and chandlers' men resident in those ports. When the trade stopped, the residence stopped. The network that gave the previous reign its one great intelligence coup was dismantled in eighteen months, by us, for nothing, in pursuit of a shrub. We now have no eyes on the African coast, the Red Sea, or Egypt's yards, and cannot say whether the great fleet ever sailed.
+- **The precedent.** Egypt has shown it can strip us of a five-hundred-year access by writing an order, and that our answer will be a letter.
 
 The court's reckoning, entered 534, was that the commandant at Oman had exceeded his warrant. He was removed and given a smaller post. Nobody asked who had left the search order standing for a hundred and eighty years, because the answer was everybody.
 
@@ -107,7 +103,7 @@ What that cost:
 - The distillation-grade extract work, which produced the realm's antiseptics and its sedative-analgesic finds for surgery, sat inside the plant programme's establishment and went down with it. The materia medica has not advanced since 535, and two inoculation candidates under trial were abandoned unfinished.
 - The realm has closed by written order the only channel through which any power ahead of it has ever handed it a working pointer.
 
-The council debated two sittings. The argument against closure was made — that Egypt's anchor claim, that the torpedo fish's shock is the same force, is true and verifiable by any man with a net, and a saboteur has no reason to hand a rival a truth he can check; that the plant work produced real phenomena, which false theories do not usually do; and that the error is asymmetric, being fooled costing a share of one programme while refusing costs the channel forever. It was heard and it lost, for the reason such arguments lose at Pataliputra. The court has been walled out of the western sea for a hundred and eighty years, has just had its African trade struck out by an Egyptian clerk's order, and has eleven men in an Egyptian prison. It could not, in that room, in that year, find in favour of Egyptian good faith.
+The council debated two sittings. The argument against closure was made — that Egypt's anchor claim, that the torpedo fish's shock is the same force, is true and verifiable by any man with a net, and a saboteur has no reason to hand a rival a truth he can check; that the plant work produced real phenomena, which false theories do not usually do; and that the error is asymmetric, being fooled costing a share of one programme while refusing costs the channel forever. It was heard and it lost. The court has been walled out of the western sea for a hundred and eighty years, has just had its African trade struck out by an Egyptian clerk's order, and has eleven men in an Egyptian prison. It could not, in that room, in that year, find in favour of Egyptian good faith.
 
 The finding was recorded as prudence. It was temper, and the realm's own assessment had predicted in writing, six months earlier, that it would be temper. Predicting a mistake is not the same as avoiding one.
 
@@ -123,7 +119,7 @@ The granaries were at a third.
 
 **What did not.** The seed-distribution to the eastern Deccan, the central plateau and the Godavari uplands sat in the agricultural works line, cut in 528 to help pay the southern convoy. Those districts entered 540 sowing what their grandfathers had sown. They failed.
 
-**The reckoning.** Across four years the land tax fell by 130 to 210 million paṇas a year in the affected provinces — remitted, uncollectable, or uncollected because the collector could find no one. Relief actually moved was about 40 million a year against a need the provincial assessors put at three to four times that. People moved off the worst land toward the Godavari and Krishna valleys, toward the Tamil ports, and in a thin steady stream the southern program was glad of and did not advertise, onto the convoy ships. The registered population, which has risen in every reckoning since the founding, is entered at 550 at **ninety-six million** — the first fall in the realm's registers in seven hundred and eighty-five years, and not caused by war.
+**The reckoning.** Across four years the land tax fell by 130 to 210 million paṇas a year in the affected provinces — remitted, uncollectable, or uncollected because the collector could find no one. Relief actually moved was about 40 million a year against a need the provincial assessors put at three to four times that. People moved off the worst land toward the Godavari and Krishna valleys, toward the Tamil ports, and — in a thin steady stream the southern program was glad of and did not advertise — onto the convoy ships. The registered population, which has risen in every reckoning since the founding, is entered at 550 at **ninety-six million**: the first fall in our registers in seven hundred and eighty-five years, and not caused by war.
 
 The realm takes a sixth to a quarter of every harvest, and the whole justification for that is that the state returns it as granaries, canals, wells and relief when the season turns. This reign kept the extraction and had already spent the return. The farmers of the central plateau paid the land tax of a state that had promised them grain and shipped the grain money to a continent they had never heard of.
 
@@ -131,19 +127,17 @@ The realm takes a sixth to a quarter of every harvest, and the whole justificati
 
 ### The Coin
 
-By 539 the ruler faced arrears he could not carry: the southern line, the army at 930 million, the research line the council would not let him touch, and four provinces remitting tax. He would not cut the army, because that meant the generals; nor research, because that meant the council; nor the south, because that meant his predecessor's memory and every interest around it; and he would not raise the tax on provinces that were starving.
+By 539 the ruler faced arrears he could not carry: the southern line, the army at 930 million, the research line the council would not let him touch, and four provinces remitting tax. He would not cut the army, because that meant the generals; nor research, because that meant the council; nor the south, because that meant his predecessor's memory and every interest around it; and he would not tax starving provinces. So the mints at Pataliputra and Ujjain reduced the silver in the paṇa by about one part in eight, quietly, without proclamation, in the ordinary course of recoining.
 
-So the mints at Pataliputra and Ujjain reduced the silver in the paṇa by about one part in eight, quietly, without proclamation, in the ordinary course of recoining.
-
-Merchant houses weigh coin, and detected it in under two years. By 543 the Rome-road traders at Ctesiphon and along the Euphrates run were pricing in Roman coin or demanding silver by weight; by 546 the Sogdian caravan factors were doing the same. The realm's credit instruments held, being drawn on named houses and not on the throne, but they now carry a discount against the coin. The reign traded a portion of the paṇa's eight-century reputation for perhaps 90 million a year of temporary relief, and entered it as a technical adjustment of the standard.
+Merchant houses weigh coin, and detected it in under two years. By 543 the Rome-road traders at Ctesiphon and along the Euphrates run were pricing in Roman coin or demanding silver by weight; by 546 the Sogdian factors were doing the same. Our credit instruments held, being drawn on named houses and not on the throne, but they now carry a discount against the coin. The reign traded a portion of the paṇa's eight-century reputation for perhaps 90 million a year of relief, and entered it as a technical adjustment of the standard.
 
 ---
 
 ### Mesopotamia, Rome, and the Treaty Nobody Read
 
-The road patrols along the Mesopotamian stretch of the Rome route sat in the infrastructure line cut in 528. Waystations went unrepaired, patrols went out at half strength, and the banditry the great reign of the previous century had thinned came back. By 542 Roman merchants were shying from the crossing and complaining to their own officials, and the complaint came to us from Rome, courteously, twice. The realm answered with words, appointed a commissioner, gave him no money, and the raids continued.
+The road patrols along the Mesopotamian stretch of the Rome route sat in the infrastructure line cut in 528. Waystations went unrepaired, patrols went out at half strength, and the banditry the previous century had thinned came back. By 542 Roman merchants were shying from the crossing, and the complaint came to us from Rome, courteously, twice. We answered with words, appointed a commissioner, gave him no money, and the raids continued.
 
-Mesopotamia did not revolt, and the reason is not to this ruler's credit: the previous century bound it by making it the richest transit ground on the most profitable road in the world, and the second capital on the Tigris makes the province feel governed rather than occupied. That binding is now strained from three directions — the road is less safe, the coin is worse, and the flood embankments are unrepaired. The Tigris has not risen high in this reign. It will.
+Mesopotamia did not revolt, and the reason is not to this ruler's credit: the previous century bound it by making it the richest transit ground on the most profitable road in the world, and the second capital on the Tigris makes the province feel governed rather than occupied. That binding is now strained three ways — the road is less safe, the coin is worse, the flood embankments unrepaired. The Tigris has not risen high in this reign. It will.
 
 **The treaty.** The overland agreement with Rome — twelve parts in the hundred through each empire's ground, fixed twenty-five years and renewing of itself for a further twenty-five unless one side gives notice — reached the end of a span at the close of this reign. The realm has never established, in two hundred years, when notice must be given, to whom, or through what channel. The frontier officials at the Euphrates report that none was received; the court has read that as renewal on the old terms and entered it so. This is precisely the reading habit that once read China's sea treaty as implying a toll and a port of call its words never contained, and the realm was wrong then.
 
@@ -155,11 +149,11 @@ The realm sent Rome no message this reign. It sent its message to Egypt instead,
 
 The previous reign made silence toward China a deliberate act of state. This reign continued it by not thinking about it, which produces the same behaviour for none of the same reasons.
 
-The Syr Darya was quiet for twenty-five years. The fifty to eighty fixed cannon stand where they were placed, in sight of China's watchers, at the cost of a garrison establishment of five hundred thousand men, six thousand elephants and a hundred thousand horse facing a river across which nothing has happened in three hundred and twenty-five years. Every loss the realm suffered this reign came at sea, in Africa, in the granaries, or in the mint.
+The Syr Darya was quiet for twenty-five years. The fifty to eighty fixed cannon stand where they were placed, in sight of China's watchers, at the cost of a garrison establishment of five hundred thousand men, six thousand elephants and a hundred thousand horse facing a river across which nothing has happened in three hundred and twenty-five years. Every loss we suffered this reign came at sea, in Africa, in the granaries, or in the mint.
 
-The watchers reported three things. Chinese hulls continue to work the passage south of the Strait into the archipelago east of Sumatra, unseen by our facility and paying nothing, as they have since the 470s. The Spice Island garrisons are starving on the vine, supplied by the southern road and suffering every thinning of the convoy: Ternate at about seven hundred effective against an establishment of twelve hundred, Banda at three hundred against seven hundred, harbour powder for perhaps thirty shots. They remain the realm's because China has not chosen to take them.
+The watchers reported three things. Chinese hulls continue to work the passage south of the Strait into the archipelago east of Sumatra, unseen by our facility and paying nothing, as since the 470s. The Spice Island garrisons are starving on the vine, supplied by the southern road and suffering every thinning of the convoy: Ternate at about seven hundred effective against twelve hundred, Banda at three hundred against seven hundred, harbour powder for perhaps thirty shots. They remain ours because China has not chosen to take them.
 
-And, unresolved: in spring 543 the watch at Trikūṭa, on the eastern side of the long northern cape, sighted two ships of unfamiliar build standing offshore for the better part of a day and then working away northeast. The watch had no spyglass — the brass-bound glasses went to the home and Gulf squadrons and never to the southern stations — and could not count masts or read the rig. The report reached Pataliputra in summer 544, fourteen months late, because the optical signal relays that carry word across the realm in a day stop at the Strait and everything beyond moves at the speed of a convoy. The ruler was asked whether a vessel should go and look, and answered that the season's hulls were all committed. That is the whole of what the realm knows.
+And, unresolved: in spring 543 the watch at Trikūṭa sighted two ships of unfamiliar build standing offshore the better part of a day, then working away northeast. The watch had no spyglass — the brass-bound glasses went to the home and Gulf squadrons and never to the southern stations — and could not count masts or read the rig. The report reached Pataliputra in summer 544, fourteen months late, because the optical relays that carry word across the realm in a day stop at the Strait and everything beyond moves at convoy speed. The ruler was asked whether a vessel should go and look, and answered that the season's hulls were all committed. That is the whole of what we know.
 
 ---
 
@@ -167,27 +161,25 @@ And, unresolved: in spring 543 the watch at Trikūṭa, on the eastern side of t
 
 The previous reign set the armament line at a tenth of revenue and put the advisory council behind it, so a later ruler minded to cut it must fight an institution rather than sign an order. This ruler was exactly the man that friction was built against. He looked at the line twice, in 531 and in 540 when the famine bit; both times the council refused and both times he let it go rather than have the argument. It held near 230 million through the reign and did not fall in the famine years when everything else did — the only bequest of the great reign to survive this one intact, and the strongest argument in our history for building friction into institutions rather than trusting the man on the throne.
 
-**The firearm and the powder.** The castings and locks were never the constraint; the powder was, as it has been for two hundred and seventy-five years. New works were built in the saltpeter country of the Gangetic plain at three sites and at Ujjain, slowly, because their capital competed with the southern line and lost. By 550 the arsenals hold about fifteen thousand finished one-man pieces and four thousand crew-served. Powder output sustains perhaps six to seven thousand men in drill and use; the rest stand in store beside magazines that are not full. The realm can arm a corps. It cannot arm an army, and no minister has said aloud that fifteen thousand firearms against an establishment of one million and eighty-four thousand is a rounding error with a doctrine attached.
+The programme results are set out in the declarations below. Three things belong in the narrative because the table cannot carry them.
 
-**Steam.** The standing directive sent the first marine engines to the southern route ahead of the navy and was never revisited, so they went on going there. By 550: about nineteen engined hulls, fourteen on the Strait-to-Uttaradvāra and Strait-to-Suvarṇatīra runs where a hull that ignores the monsoon is worth three that wait on it, five with the home and Gulf squadrons. They burn charcoal, which nobody costed. At Uttaradvāra the monsoon forest is being cut for it faster than the yards cut for timber, and in the heartland the yard and mine engines now compete for charcoal with the iron smelters of the Deccan.
+**The powder wall is not moving.** Castings and locks were never the constraint. New powder works were built at three sites in the saltpeter country of the Gangetic plain and at Ujjain, slowly, because their capital competed with the southern line and lost. The arsenals hold fifteen thousand one-man pieces and powder enough to drill six or seven thousand men. No minister has said aloud that fifteen thousand firearms against an establishment of one million and eighty-four thousand is a rounding error with a doctrine attached.
 
-**The galvanic wire.** The wire path lost its cross-check in 535 and slowed, and still produced the reign's one genuine advance. Copper was drawn to fine wire by the Rajasthan zinc and brass workers, who had the nearest craft to it; insulation was worked out with wax, lac and gum, badly and then adequately. In 546 the researchers at Pataliputra ran a current down an insulated wire from one building of the school to another, some four hundred paces, and made a needle deflect at the far end reliably enough to pass agreed letters one at a time. In damp it fails entirely. It is not a network and is not within a generation of one. It is the first message the realm has ever sent without a rider, and the men who did it were not rewarded, because this ruler did not reward people.
+**Nobody costed the fuel.** The engines burn charcoal. At Uttaradvāra the monsoon forest is being cut for it faster than the yards cut for timber, and in the heartland the yard and mine engines now compete for charcoal with the iron smelters of the Deccan.
 
-**Paper, printing, medicine, optics, cannon.** Paper plus the Brahmin compact spread the press further than any previous reign at little cost, to twenty-eight or thirty provincial centres. The famine registers of 540 were the first printed identically across four provinces, which allowed the realm to establish with precision how much grain it did not have. Washing protocols spread with the printed texts and recoveries improved and nobody knows why; the materia medica stopped in 535. Optics: no advance and no programme, the spyglass unimproved since the 490s — the realm cannot grind well enough to see the small and has not asked anyone to try. Naval cannon held rather than grown: about forty-eight armed vessels against thirty to forty at 525, crews better drilled, powder still short.
+**The wire.** In 546, at Pataliputra, a current ran down an insulated drawn-copper wire from one building of the school to another, four hundred paces, and deflected a needle at the far end reliably enough to pass agreed letters one at a time. In damp it fails entirely. It is not a network and is not within a generation of one. It is the first message the realm has ever sent without a rider, and the men who did it were not rewarded, because this ruler did not reward people.
 
 ---
 
 ### What Was Not Examined
 
-The elephant corps stands at six thousand, costs twenty-four million a year, and was not discussed. The mahout families are hereditary, the corps is the oldest pride in the realm, and no man assessed at forty-nine opens that question. That elephants panic under gunfire as horses do, that we put a firearm into our own infantry's hands this century, and that we handed the complete construction of that firearm to Rome — an empire on our Euphrates border — for an engine, was raised in one written assessment in 525 and in no council since.
+The elephant corps stands at six thousand, costs twenty-four million a year, and was not discussed. The mahout families are hereditary, the corps is the oldest pride in the realm, and no man assessed at forty-nine opens that question. That elephants panic under gunfire as horses do, that we put a firearm into our own infantry's hands this century, and that we handed its complete construction to Rome — an empire on our Euphrates border — for an engine, was raised in one written assessment in 525 and in no council since.
 
-The colonial ledgers were not audited. In 547 a naval writer of the Nagapattinam establishment, **Kannan**, went out with the convoy to regularize the accounts at Suvarṇatīra. He was given a house, a clerk, a share in the harbour dues and a wife's family, and stopped sending returns after his second season. No one was sent to find out why. That is the entire history of southern audit in this reign.
+The colonial ledgers were not audited: the naval writer **Kannan**, sent in 547 to regularize the accounts at Suvarṇatīra, was given a house, a clerk, a share in the harbour dues and a wife's family, and stopped sending returns after his second season. No one was sent to find out why.
 
-Which brings the record to the man who now governs the southern continent. **Vīrasena**, whose father was one of the founders who took ship for better ground in the last reign and reported it as accident afterward, has been senior officer at Suvarṇatīra since 534. He is able. He was neither promoted nor removed in sixteen years, which is what able men receive in a reign like this. When the convoys thinned he stopped waiting for Pataliputra: he opened Uttaradvāra and Suvarṇatīra directly to Malay, Sumatran and Bugis shipping without routing them through the realm's facility at the Strait, levied his own harbour dues, and kept the receipts on the continent to pay his yards and garrisons.
+Which brings the record to the man who now governs the southern continent. **Vīrasena**, whose father was one of the founders who took ship for better ground in the last reign and reported it as accident afterward, has been senior officer at Suvarṇatīra since 534. He is able. He was neither promoted nor removed in sixteen years, which is what able men receive in a reign like this. When the convoys thinned he stopped waiting for Pataliputra: he opened Uttaradvāra and Suvarṇatīra directly to Malay, Sumatran and Bugis shipping without routing them through our facility at the Strait, levied his own harbour dues, and kept the receipts on the continent to pay his yards and garrisons. Reported to the capital in 547 as a temporary expedient; ratified after the fact in 548, exactly as the predecessor had ratified the island-seizures, because refusing meant funding the south properly or losing it, and he would do neither.
 
-This was reported to the capital in 547 as a temporary expedient. In 548 the ruler ratified it after the fact, exactly as his predecessor had ratified the island-seizures, because refusing meant funding the south properly or losing it, and he would do neither.
-
-At 550 the southern continent is substantially self-financing, keeps accounts that do not reconcile with Pataliputra's, builds its own hulls from its own timber, feeds itself from its own grain, reproduces the realm's caste order without reference to the realm, and pays the throne nothing. It is twenty-five years old. It has a competent man at its head who has been ignored for sixteen years, an interest that has twice disobeyed the throne and twice been ratified, and the route to the Spice Islands that Pataliputra depends on and does not control.
+At 550 the southern continent is substantially self-financing, keeps accounts that do not reconcile with Pataliputra's, builds its own hulls from its own timber, feeds itself from its own grain, reproduces the realm's caste order without reference to the realm, and pays the throne nothing. It is twenty-five years old, with a competent man at its head ignored for sixteen years, an interest that has twice disobeyed the throne and twice been ratified, and the route to the Spice Islands that Pataliputra depends on and does not control.
 
 Nobody at court has said the word.
 
@@ -227,7 +219,7 @@ The ruler died in 550. His historians will assess him at forty-nine and note tha
 >
 > Send us your answer by the same hand.
 
-*No answer had reached Pataliputra by the close of the reign in 550. The eleven men have not returned. The court does not know whether the message was read.*
+*No answer had reached Pataliputra by 550. The eleven men have not returned. The court does not know whether the message was read.*
 
 ---
 
@@ -266,7 +258,7 @@ The ruler died in 550. His historians will assess him at forty-nine and note tha
 
 ## RESEARCH
 
-Line held at approximately 230 million paṇas a year for twenty-five years, about 5,750 million in total, defended twice against the throne by the advisory council. Establishment approximately 28,000 to 29,000 trained researchers and 45,000 to 60,000 craftsmen and bonded labourers, less the botanical staff dispersed in 535.
+Line held at ~230 million paṇas a year for twenty-five years, ~5,750 million total, defended twice against the throne by the advisory council. Establishment ~28,000–29,000 trained researchers and 45,000–60,000 craftsmen and bonded labourers, less the botanical staff dispersed in 535.
 
 | Programme | Spend across the reign | What we believe we achieved |
 |---|---|---|
@@ -275,16 +267,16 @@ Line held at approximately 230 million paṇas a year for twenty-five years, abo
 | Galvanic (wire path) | ~950M | 546: current carried down insulated drawn copper wire between two buildings at Pataliputra, ~400 paces, needle deflection at the far end, agreed letters passed one at a time, unreliable in damp. First message sent without a rider. Not a network. |
 | Galvanic (plant path) | ~180M, then **closed 535** | Closed on the sabotage finding. Cost: the wire path's independent cross-check, the distillation-grade extract programme, and two unfinished inoculation candidates. |
 | Naval cannon and carriages | ~700M | ~48 cannon-armed vessels, up from 30–40. Crews improved. Powder short. |
-| Paper and printing | ~340M | Administrative and Brahmin-sealed sacred printing at 28–30 provincial centres. First identically printed relief registers, 540. |
+| Paper and printing | ~340M | Administrative and Brahmin-sealed sacred printing at 28–30 provincial centres; first identically printed relief registers, 540. |
 | Medicine | ~330M | Washing protocols spread by printed text; recoveries improved; cause unknown. Materia medica halted 535. |
-| Ballistics, metallurgy, mathematics, sundry | ~200M | Incremental. Mathematics continues toward the study of continuous change without state direction. |
-| **Fine optics** | **nil** | **No programme. Spyglass unimproved since the 490s. This is the block under the medicine and it is unfunded.** |
+| Ballistics, metallurgy, mathematics, sundry | ~200M | Incremental. Mathematics continues toward continuous change without state direction. |
+| **Fine optics** | **nil** | **No programme. Spyglass unimproved since the 490s. This is the block under our medicine and it is unfunded.** |
 
 ---
 
 ## TERRITORY AT 550
 
-**Unchanged and entire:** the subcontinent and Sri Lanka; Afghanistan; Bactria and Sogdia to the Syr Darya; the Iranian plateau; Armenia and Azerbaijan; Mesopotamia to the Euphrates; Oman; the tributary ports of the Gulf's Arabian shore; eastern Yemen; the Strait of Malacca and the realm's port at its eastern mouth. No part of the continuous land dominion was lost or gained.
+**Unchanged and entire:** the subcontinent and Sri Lanka; Afghanistan; Bactria and Sogdia to the Syr Darya; the Iranian plateau; Armenia and Azerbaijan; Mesopotamia to the Euphrates; Oman; the tributary ports of the Gulf's Arabian shore; eastern Yemen; the Strait of Malacca and our port at its eastern mouth. Nothing of the continuous land dominion lost or gained.
 
 **GAINED since 525 — all on the southern continent and its islands, all by enclosure and force, none by treaty:**
 
@@ -309,4 +301,4 @@ Line held at approximately 230 million paṇas a year for twenty-five years, abo
 - **Ternate** (~700 of 1,200) and **Banda** (~300 of 700): supplied by the southern road; powder for ~30 shots; ours only because China has not chosen otherwise.
 - **The southern continent as a whole:** garrisoned, settled, self-financing, keeping accounts that do not reconcile with Pataliputra's, levying its own harbour dues on Malay and Sumatran shipping since 547 under an arrangement the throne ratified after the fact in 548, and remitting nothing to the treasury.
 
-**SIGHTED AND NOT INVESTIGATED:** two ships of unfamiliar build, standing off **Trikūṭa** (eastern side of the long northern cape) for the better part of a day in spring 543, working away northeast. Reported to Pataliputra summer 544. No vessel was sent.
+**SIGHTED, NOT INVESTIGATED:** two ships of unfamiliar build standing off **Trikūṭa** (eastern side of the long northern cape) for most of a day, spring 543, then working away northeast. Reported to Pataliputra summer 544. No vessel sent.
