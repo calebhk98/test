@@ -37,9 +37,16 @@ Pei Wen delivered the report in person and did not soften it. Huo Sui asked one 
 
 **The doctrine amendment (535),** possible only because Huo Sui was bought. The frontier is reorganised from a mesh into **nodes and eyes**. Designated *holding* positions — the rail-served forts, the Kazakh cities of **Ningyuan**, **Fuyuan** and **Suiyuan**, **Zhenxi** and its four sister works on the Syr Darya north bank, **Anhe** at the Dnieper railhead, and the commandery seats — are garrisoned at strength, magazined to the new standard, and expected to hold. Everything else — the Irtysh posts, the Ob approaches, **Minusinsk**, the Amur stations, the northern-forest fur posts, and the thin scatter across the Pontic between **Anhe** and **Guangtian** — is reclassified **observation**.
 
-The change itself is small on paper and that is the honest way to describe it: one category of post was reclassified, and a clause was added to the standing frontier regulations giving commanders of that category a discretion the text of 366 did not grant them — to withdraw on contact rather than stand, with a post lost by withdrawal recorded as no fault in its officer. The Shangfang's clerks find no earlier instance of that discretion appearing in the regulations, which is a statement about the filing and not about the heavens. What it costs is not ceremony but the assumption underneath sixty years of garrison estimates.
+On paper it is one category of post reclassified and one clause added to the standing frontier regulations: commanders of observation posts may withdraw on contact rather than stand, and a post lost by withdrawal is no fault in its officer. The Shangfang's clerks find no earlier instance of that discretion in the regulations, which is a statement about the filing and not about the heavens. But the thing underneath the clause is not administrative. Since the Mongolian garrison chain of the first century, the empire's whole method has been that a post does not leave, because a post that may leave is not a claim. The clause concedes that beyond the rail the empire's claim is a claim and not a possession, and the men who had to sign it knew exactly that.
 
-Huo Sui's price was the Syr Darya. He raised the cannon question formally in council in 536 and Su refused him — made easier by the 135 tonnes a year and a doctrine written by his own arsenals, harder by eighty years of the military faction being told the far-bank cannon were an open matter. It cost Su perhaps half of what he had; he spent the rest on the note issue.
+**What it cost to carry.** The fight ran two years and the throne lost ground in it.
+
+- The **Directorate of the Shangfang's garrison-establishment office**, which sets post strengths and has done since the third century, opposed outright. Its argument was that a written permission to withdraw is a written permission to withdraw everywhere, and that a frontier officer reads regulations for what they allow. It was overruled and it exacted its price in the wording: the clause entered the regulations as *preservation of force for counter-concentration*, a phrase that office drafted, and the Jinyang Report was sealed at its insistence rather than the emperor's. The office kept its authority over post strengths, which is what it actually cares about; what it lost was the presumption that its own schedule was sound, and it has been answering to the Bureau's arithmetic ever since.
+- Two commandery governors on the northern line, **Yuan Kai** of Youbeiping and **Cui Shu** of Wuyuan, memorialised against, on the ground that a garrison told it may leave will be treated by the peoples around it as one that will. Neither was punished; neither was promoted again in the reign.
+- **Wei Zhao**, general of the Pontic line, asked to be retired rather than read the clause to his commanders, and was retired with honours in 536 at fifty-four. The court let him go because refusing would have made a martyr of him and because the alternative was a general executing a regulation he had said in writing he did not believe.
+- **Huo Sui's price was two things, not one.** He raised the Syr Darya cannon question formally in council in 536 and Su refused him — made easier by the 135 tonnes a year and a doctrine written by his own arsenals, harder by eighty years of the military faction being told the far-bank cannon were an open matter. That refusal cost Su perhaps half of what he had. But Huo Sui did not assent to the reclassification for nothing: he took the Bamo authorisation of 543 and the standing of his party in the argument that followed it, which is why section VII notes that the fever country is now his faction's project and not the throne's.
+
+Su spent what remained on the note issue, and by 540 he had no capital left to spend on anything, which is visible in what he refused after that date and how briefly he refused it.
 
 **The omission.** The Jinyang Report was not published. A digest circulated to the commanderies as *On the Sufficiency of Magazines*, carrying the reform and the new doctrine with the arithmetic that produced them removed. The full report — the two lost posts of 356 named, the finding that beyond rail the model cannot work — was sealed to the inner council, the Censor-in-Chief, and the Director of the Shangfang.
 
@@ -68,6 +75,13 @@ Raising the saltpeter monopoly price was refused because the largest buyer of mo
 **The ever-normal note (538),** on which Su spent his remaining capital. The empire's reserve has always been grain: a famine buffer of great depth and almost no other use, because grain rots, costs more to move than it is worth, and cannot pay a soldier at **Zhenxi**. The deposit notes in use since the third century are each tied to a particular deposit and a particular pair of offices. Su directed his ministers to make one that is not.
 
 The **changping chao** was authorised in the eighth month of 538: issued only by the Da Sinong, in four denominations, against the certified stock of the ever-normal granaries; redeemable at any commandery granary in grain at the standing ever-normal price or at any commandery treasury in bronze cash; receivable for the land tax, which gave it value at once. Use is restricted by edict to frontier military pay, rail contracts, and magazine stores, and issue capped at **one third of certified granary stock**. Pei Wen made it the condition of the Censorate's endorsement that cap and certification sit in statute rather than regulation, that his own office certify the stock annually, and that a warning stand in the preamble: nothing prevents a later throne raising the cap; the note's worth rests entirely on belief that the grain behind it exists; and a throne in difficulty will find no easier thing to do than issue more.
+
+**What it cost to carry.** This is the largest change to imperial finance since the monopolies, and it was resisted accordingly. It took twenty months from proposal to statute and the throne conceded on four points.
+
+- **Kong Zhan and the Confucian faction** opposed on the ground that a paper the state issues against a store it counts itself is the instrument of Wang Mang, and that the dynasty's whole legitimacy rests on not being that. This was not an argument Su could answer, and he did not try to; he bought it off by conceding that the note may not be used for civil salaries, for tax refunds, or for any payment to a subject who has not contracted for it. That concession cut the instrument's scope by more than half and is the reason it carries 290 tonnes and not 700.
+- The **great houses' deposit-note business** — the Wu and Shu trading families who have issued paired-office notes since the third century and take a charge on every one — lost standing outright, since a state note receivable for the land tax is better than any of theirs. **Gu Zan** of Wu, already sore from the iron re-rating, worked against it through the Excellency over the Masses and was beaten. The court noted the alignment and did not comment on it.
+- The **commandery treasuries' remittance establishment**, whose entire function is moving coin under guard, lost work and men; roughly a fifth of the escort details on the western remittance road were stood down by 546. Their supervising office was compensated with the granary-certification duty, which is how four fifths of a count came to rest on the word of men who had just been given a reason to want the instrument to succeed. Nobody at the time saw that as the flaw it is.
+- **Pei Wen's conditions** were the price of the Censorate's endorsement and they are real costs to the throne: statute rather than regulation, annual certification by an office the emperor does not control day to day, the countersignature, and a preamble that says in the empire's own law that a later emperor will be tempted to abuse this. No Chinese throne has previously written a warning against itself into the enacting clause of its own instrument.
 
 **Who guards the cap.** The statute names three offices and no more. The **commandery granary intendants** count the stock, each in his own commandery, by physical measure once a year after the autumn levy. The **Censorate**, through Pei Wen's office, certifies the count, by inspectors who visit a rotating fifth of the granaries in person and accept the rest on the intendants' returns. The **Da Sinong** alone may issue, and only against a certificate carrying the Censorate's seal. Issue beyond the third requires an edict under the emperor's own hand countersigned by the Censor-in-Chief — and it was Pei Wen, not Su, who insisted on the countersignature, on the ground that an emperor who wants money will always find a Da Sinong who will give it to him and should have to find a Censor-in-Chief as well.
 
@@ -99,7 +113,9 @@ The administrator was commended for not firing. The Gu house compensated the fam
 
 Heavy money to what answers to effort, a small protected standing charge to what does not, and no pretence that the second is a programme.
 
-**The Bureau of Measured Things (536).** The **Duwu Ju**, under the Ministry of Works, at Luoyang with a second hall at Chang'an: one hundred salaried posts at the eighth and ninth grades, recruited by an examination in mathematics and measurement rather than the classical papers. First Director **Cheng Bi**. It holds the standards of length, weight and time, records and publishes observations, and keeps the failure ledgers of the standing searches. Twelve tonnes a year. The posts sit on the ordinary civil establishment, which makes investigation a graded appointment rather than an attachment to an arsenal or a mine.
+**The Bureau of Measured Things (536).** The **Duwu Ju**, under the Ministry of Works, at Luoyang with a second hall at Chang'an: one hundred salaried posts, recruited by an examination in mathematics and measurement rather than the classical papers. First Director **Cheng Bi**. It holds the standards of length, weight and time, records and publishes observations, and keeps the failure ledgers of the standing searches. Twelve tonnes a year. The posts sit on the ordinary civil establishment, which makes investigation a graded appointment rather than an attachment to an arsenal or a mine.
+
+The Ministry of Personnel fought the recruitment clause for a year and won most of it. Its objection was that a man graded on a paper of measurement holds office without having demonstrated the learning that office presumes, which if conceded generally unmakes the establishment. The settlement was that the Bureau's posts are capped at the eighth and ninth grades with no promotion path above the seventh, and that a Duwu Ju man wanting higher office must sit the classical papers like anyone. So the Bureau is a career and a ceiling at once, and Cheng Bi's best three students left it for the arsenals within a decade, where the pay is worse and the ceiling is not written down.
 
 **Rifled naval cannon and breech-loading (both achieved).** The Chang'an arsenal under the Director of the Shangfang **Ma Qian** carried rifling from trial to standard fitting, with refits at **Longbian** and **Panyu** through the 540s, and settled the breech's wedge closure and cartridge seal by 541. The breech-loader is what the doctrine amendment most depends on: a garrison told to hold sixty days needs to spend less powder per hour to do it.
 
@@ -145,7 +161,34 @@ Su's edict of 544 states that the men at Kuhan died because Luoyang told them to
 
 ---
 
-## IX. The Sea: The Escorts, and What They Reported
+## IX. The Eastern Crossing: What the Court Did With a Proven Route
+
+The Northern Road is not the only eastern asset the empire holds, and the Board of Naval Affairs said so in 537 in terms the court found uncomfortable. The expedition of the last period did not merely produce evidence for a future coastal chain. It produced a **route**: out from the Korean ports at forty degrees north on the westerlies, landfall on the far coast in about five months; home by descending that coast south to about twenty degrees north, turning west, and riding the low-latitude wind, about three months. A round voyage, with refit and the wait for a season, is fourteen to twenty months. Two of three ships came back. It has been sailed.
+
+The Board's memorial put three courses to the throne and the court took them in order.
+
+**Settlement was refused, on arithmetic.** A colony on that shore can be reached twice in three years at the very best, which means it must be self-feeding from its first winter or it is a way of killing people slowly. The empire's entire frontier method for seven centuries is a chain — fort, supply line, colony, next fort — and there is no chain across five thousand li of open ocean, nor any prospect of one. **Sang Ju's figure**, entered against the proposal: a settlement of a thousand souls capable of holding itself would cost more each year than the whole Northern Road, and the Northern Road at least ends somewhere the empire can walk. Huo Sui's party argued for it and lost that argument on numbers rather than on nerve, which the record should note, because it is the first time in this reign the military faction was defeated by the Da Sinong's ledger alone.
+
+**Doing nothing was also refused,** and the reason is the court's oldest article. A route nobody sails is a route somebody else sails.
+
+**What was authorised, in 539, is small and repeatable.** The **Eastern Crossing establishment** under **Xue Rong**, three purpose-built ocean hulls from the Longbian and Panyu yards — the *Dongwang*, the *Chengfeng*, the *Anlan* — deep-built for the westerly storm track, copper below the waterline, neither the ice hulls of the Northern Road nor the warm-water merchantmen of the Egypt run, both of which were examined and rejected as wrong for the passage. About 50 tonnes to build and **about 40 tonnes a year to run**. The standing orders are four lines and the last two are limits:
+
+- Sail the route again, and again after that, until it is a route and not a lucky season.
+- Chart the far coast north and south of the landfall, and the return leg down it.
+- Land and mark a cache above the tide — iron, salt, grain, cordage, sailcloth, powder, and a written statement of what it is and who left it.
+- **Do not settle. Do not garrison. Do not treat with any people found there beyond what is needed for water, wood and food, and do not sell them iron or powder on any account.**
+
+**What happened.** The first crossing sailed from the Korean ports in the fifth month of 542, made landfall in the tenth, wintered ashore in a stockade at a point the charts name **Fusang**, charted some seven hundred kilometres of coast north and south through 543, and came home by the southern road in the third month of 544. All three hulls returned. The second sailed 546 and returned 548, extended the chart, and rebuilt the cache in stone.
+
+And then the court did the thing it does. On Xue Rong's recommendation, twelve volunteers under **Yu Ling** were left at Fusang in the ninth month of 548 to hold one cycle at the cache — to keep it, to learn the winter, and to be there. The relief sailed from Korea in the fourth month of **550**. **At the close of this period it has not returned and the court does not know whether those twelve men are alive.** That is the honest state of the empire's presence on the far continent: a stone cache, a chart, and twelve men whose condition is unknown.
+
+**Why the Northern Road still gets sixty-two tonnes a year when a route already exists.** The court's stated reasoning, and it is sound as far as it goes: a sea route carries knowledge and cannot carry weight. Three hulls crossing twice in six years is a thread. A coastal chain, if it is ever built, is a rope, and everything the empire has ever done on a frontier requires a rope. Su's own minute is less flattering and is in the file: that the Northern Road is funded because no minister can argue against Baideng and win, and the Eastern Crossing is funded because it answers the same fear at a fortieth of the price and he could get it through in a single session. The private audit's charge — that the Northern Road is the old doctrine wearing analysis as a coat — is not answered by this reign and the court does not pretend it is.
+
+**And this is what the letter to Rome is for.** The empire has looked squarely at the cost of denying that ground by presence and found it cannot pay it in this century. Where it cannot deny ground with garrisons it is trying to deny it with a written rule, which is cheaper than a fleet by three orders and is the only instrument available to a treasury with forty-five tonnes of free money. The letter of 548 discloses the crossings, the cache, and the twelve men, because a court that proposes a rule of restraint while quietly holding a stone depot on the far shore has proposed nothing.
+
+---
+
+## X. The Sea: The Escorts, and What They Reported
 
 The Egypt run continued under armed escort throughout. The standing rules of engagement of 465 were revised in 539 on the Board of Naval Affairs' recommendation: escorts are to interpose between any approaching armed force and the merchants under their protection, to open at the outer limit of rifled range rather than at the old three to five hundred metres, and not to close. The change follows from the rifling and not from any incident.
 
@@ -159,13 +202,15 @@ Chinese observers at **Zhenxi** continue to report cannon in the emplacements on
 
 ---
 
-## X. Diplomacy: What the Empire Did
+## XI. Diplomacy: What the Empire Did
 
 Recorded here are the empire's own acts. What any other court does with them is not in this file.
 
 **The Dnieper crossing.** Chinese rail from **Anhe** was completed to the crossing point in **541**, with a transfer yard, sidings, cranes and a gauge-matching bogie shop built on the Chinese bank, on the terms of the standing Agreement. The empire built to the water and built the apparatus a junction would need. Whether iron meets iron there is Rome's to determine, and the message of 548 carries the offer in plain terms. The Anhe customs returns record outbound silk tonnage from the Chinese bank rising by about half between 541 and 550, which is the empire's own number and reflects what the Chinese rail delivered to the crossing, not what happened west of it.
 
 **Egypt.** The scholar exchange stands at twenty per decade both ways, as agreed in the last period, and the disease knowledge given then has been the most useful thing another court has put into Chinese hands in this reign — Bamo is what came of it. After 534 the standing tasking of the Aden and Alexandria scholars was sharpened toward boiler practice, plate, and the working of iron under pressure: what they may lawfully observe, what they may ask, and what they may record. The empire continues to withhold the electrical work, the steam hulls, and everything of powder. No request for powder knowledge appears anywhere in the court's Egyptian correspondence.
+
+**What was disclosed to whom, and the court's reason.** The eastern crossings, the Fusang cache and the twelve men were disclosed to Rome in full and to no one else. The reason entered in the minute is that Rome is the only court with a stake on that continent and the only one that disclosed to us first; Egypt cannot reach it and has not asked; and the Maurya would learn from it only that Chinese deep-ocean hulls exist and where they are. The court is aware this is the same reflexive concealment the private audit of 525 named, and records that it made the choice deliberately this time rather than by habit.
 
 **Messages.** Three letters were sent this period, one to each of the three courts: to Rome in the spring of 548 by the Dnieper road; to Egypt in the autumn of 546 by the Aden station; to the Maurya in the summer of 547 by the Zhenxi crossing under the ordinary frontier channel. All three are set out in the declarations below. None of their answers is written here.
 
@@ -175,13 +220,15 @@ His argument for the Maurya letter was narrower and colder. Both fleets now carr
 
 ---
 
-## XI. The Ledger at 550
+## XII. The Ledger at 550
 
-Registered population about 76.5 million. Economy near 39,000 tonnes of silver-equivalent; revenue near **4,390 tonnes**, extraction around eleven per cent. Investigation tier about 1,600, of whom 100 hold salaried posts in the Bureau; broad technical workforce about 64,000. The full arithmetic behind all of these is in the declarations.
+Registered population about 76.5 million. Economy near 39,000 tonnes of silver-equivalent; revenue near **4,390 tonnes**, extraction around eleven per cent. Investigation tier about 1,600, of whom 100 hold salaried posts in the Bureau; broad technical workforce about 64,000; functionally literate 13 to 15 million. The full arithmetic behind all of these is in the declarations.
 
-**Gained since 525:** rifled cannon as fleet standard; reliable breech-loaders issued to the holding garrisons; two seagoing steam hulls in coastal service and, more to the point, the written specification of one; a paper instrument that turns immobile grain into mobile silver; a rail from the Datong coal to the Yellow River; a regimen that lets men live and work in fever country; a post at Bamo; nine hundred kilometres of newly charted arctic coast and a post on Kanchajia; a bureau that holds the empire's standards and its failure ledgers; and a sealed report showing that the garrison sufficiency doctrine does not hold beyond the reach of rail.
+**Gained since 525:** rifled cannon as fleet standard; reliable breech-loaders issued to the holding garrisons; two seagoing steam hulls in coastal service and, more to the point, the written specification of one; a paper instrument that turns immobile grain into mobile silver; a rail from the Datong coal to the Yellow River; a regimen that lets men live and work in fever country; a post at Bamo; nine hundred kilometres of newly charted arctic coast and a post on Kanchajia; two completed crossings of the eastern ocean, seven hundred kilometres of far-coast chart and a stone cache at Fusang; a bureau that holds the empire's standards and its failure ledgers; and a sealed report showing that the garrison sufficiency doctrine does not hold beyond the reach of rail.
 
-**Lost:** two hundred and thirty-eight men at Kuhan, nineteen at Longbian, eleven at Wu, four hulls. Twenty-one years of the Northern Road's schedule to the revised estimate. And the assumption on which the north was garrisoned, which was not lost so much as measured and found wanting.
+**Lost:** two hundred and thirty-eight men at Kuhan, nineteen at Longbian, eleven at Wu, four hulls. Twenty-one years of the Northern Road's schedule to the revised estimate. A general of the Pontic line who would not read the new regulation aloud. And the assumption on which the north was garrisoned, which was not lost so much as measured and found wanting.
+
+**Unresolved at the close:** twelve men at Fusang, relief sailed and not returned.
 
 ---
 
@@ -200,6 +247,7 @@ Registered population about 76.5 million. Economy near 39,000 tonnes of silver-e
 | Trunk rail from coal to the Yellow River | Surveyed, begun | Datong–Jinyang–Luoyang complete 543; Luoyang–Shouchun two thirds; coal to the arsenals at ~1/3 former carriage cost | Ministry of Works rail vote, part-funded by the Yangtze houses on the surveyed southern portion | ~285 t/yr |
 | Bureau of Measured Things | Did not exist | 100 salaried posts, Luoyang and Chang'an; holds standards of length, weight and time; publishes observations; keeps the failure ledgers | Ministry of Works establishment | 12 t/yr |
 | Dense lead-bearing glass | Did not exist | Melted at Chang'an c. 541; established by grinding to spread colour further than ordinary glass for the same bending | Protected standing charge | within the 3 t/yr glass charge |
+| A sailed and repeatable eastern ocean route | One expedition, one successful crossing, treated as a report | Two further crossings completed (542–544, 546–548) with all hulls returned; the passage is a route with a known season, a known outbound latitude and a known return leg; three purpose-built deep-ocean hulls exist for it | Board of Naval Affairs, Eastern Crossing establishment | ~50 t hulls, ~40 t/yr |
 | The ever-normal note | Deposit notes only, each tied to one deposit and one pair of offices | A transferable instrument against certified granary stock, receivable for the land tax, ~290 t of annual payments | Da Sinong; no new charge | administrative |
 | Powder-allowance arithmetic and hardened magazine specification | Schedule of 366 unexamined | Measured, replaced, magazines specified; the arithmetic sealed | Shangfang | 135 t/yr rising to 160 |
 
@@ -264,10 +312,21 @@ The last line is the one to watch. It is small and it is the first concentration
 - **Sub-official clerks, scribes and runners on commandery payrolls: about 430,000.** Not officials, mostly literate, and the layer through which any arithmetic in a requisition leaks.
 - **Living men who studied to examination standard and did not take office: on the order of 900,000.** Basis: cycle pass rates against candidate registrations over forty years. A large share teach, which is the engine that keeps lowering the price of instruction.
 
-**Literacy.**
+**Literacy — re-derived, in three tiers.** The single-number estimate used previously was wrong in both directions, because it counted one thing where the empire actually has three, each with its own engine and its own brake.
 
-- **Functionally literate — able to read common characters, contracts, notices and printed manuals: 8 to 9.5 million, about 11 to 12 per cent of the registered population.** Basis: 5 to 7 million at 500, compounding at roughly one per cent a year on the base as the first literate generation teaches its own children at no cost and the teacher surplus spreads into the smaller towns.
-- The court does not adopt the older projection of four in five. The private audit of 525 judged twenty-five to forty per cent the honest ceiling for a script that takes years and an economy that pays for reading in few ordinary trades, and this file uses that. Every forecast of future research capacity in this document is scaled to that band and not to the higher one.
+*The engines, stated plainly.* Printing has broken the price of a book, which is the brake that stops most societies at a tenth. The examination is the only ladder to office and office is the only durable security a household can obtain, so every family that can spare a son will spend on one. Crucially, **a son who fails still reads**, and a reading man who does not govern is a teacher, a clerk, a factor, a granary tally-man, a mill foreman or a monopoly weighman — all of which pay several times a field hand and none of which existed in this number a century ago. That is a self-propagating machine: each cycle's failures are the next cycle's cheap instructors, and there are on the order of nine hundred thousand of them alive. Add the first literate generation now becoming parents, who teach the first two hundred characters at the hearth for nothing. Add, new this period, thirty-one licensed works whose foremen must read a specification and a gauge, and a rail whose gangers must read a schedule. Every brake that holds an agrarian society at a tenth is off at once, and the court underestimated this.
+
+*The brake that remains* is the script, and it is not small. A man reaches useful reading in a year or two of part-time study; he reaches command of the literary language in ten. No hearth teaching crosses that second gap. So the tiers separate permanently rather than converging.
+
+| Tier | What it means | At 550 | Share of registered population | Basis |
+|---|---|---|---|---|
+| **Functional** | Reads common characters — a notice, a contract, a tally, a printed manual, a gauge mark | **13 to 15 million** | ~17 to 19% | 5–7M at 500 compounding at ~1.7% a year on the base against a population growing at ~0.2%; the rate is the teacher surplus, the literate-parent effect, and the new paid uses of reading |
+| **Literary** | Composes in the literary language; can hold a clerkship or draft a memorial | **~4.5 million** | ~6% | the clerical establishment of ~430,000 plus the private and commercial scribal trades and the whole examination-attempting layer |
+| **Examination-standard** | Full classical and mathematical mastery; could sit and place | **~950,000 living** | ~1.2% | forty years of candidate registrations against cycle pass rates |
+
+*Projection, and it is higher than the audit of 525 allowed.* That audit put the ceiling at twenty-five to forty per cent and rejected four in five. Both are now judged wrong at the tier they were arguing about. **Functional literacy has no brake left except the script's own cost and the reach of the last isolated valleys, and the honest projection is forty-five to sixty-five per cent within two centuries** — not four in five, because the script is a real and permanent tax on entry that alphabetic writing does not levy, but well above the fifth or the third at which societies stop when books are dear and reading pays nothing. Literary competence flattens far lower, at perhaps a tenth to a seventh, because no household can teach it. Examination mastery stays near one to two per cent forever, since it is defined by a competition and not by a skill.
+
+*Consequence for the research figures above, and it is not what one would expect.* The investigation tier stands at 1,600 not because 1,600 is the supply. The supply is the 950,000, and it is rising fast. The tier is the number of **salaried posts the state funds**, and that is the binding constraint — which is exactly why the Bureau's hundred posts mattered out of all proportion to twelve tonnes a year, and why Cheng Bi's best students left for the arsenals when the Ministry of Personnel capped their grade. The empire's limit on investigation is fiscal and institutional, not human. It is producing far more capable minds than it employs, and the surplus is going into teaching, into private mills, and into the merchant houses.
 
 ---
 
@@ -286,28 +345,28 @@ All figures in tonnes of silver-equivalent, annual.
 | Frontier metals and fur | 446 | 460 | Datong coal on rail; northern fur returns flat |
 | **Total** | **4,052** | **4,390** | extraction ~11.3 per cent of an economy near 39,000 |
 
-**Standing commitments: about 4,216.** These are recurring and cannot be stopped inside a year without breaking a garrison, a contract or a dike.
+**Standing commitments: about 4,256.** These are recurring and cannot be stopped inside a year without breaking a garrison, a contract or a dike.
 
 | Commitment | Amount | Share |
 |---|---|---|
 | Garrison system and frontier pay | 1,760 | 40.1% |
 | Arsenals, powder and magazines (*including the powder reform's 160*) | 490 | 11.2% |
-| Navy, including the Northern Road at 62 | 385 | 8.8% |
-| **Military total** | **2,635** | **60.0%** |
+| Navy, including the Northern Road at 62 and the Eastern Crossing at 40 | 425 | 9.7% |
+| **Military total** | **2,675** | **60.9%** |
 | Civil administration and court | 527 | 12.0% |
 | Water works — dikes, flood control, canals | 439 | 10.0% |
 | Rail construction (of which southern trunk 285) | 417 | 9.5% |
 | Granaries and famine relief | 176 | 4.0% |
 | Bureau of Measured Things, the two standing searches, Bamo | 22 | 0.5% |
-| **Total committed** | **4,216** | **96.0%** |
+| **Total committed** | **4,256** | **96.9%** |
 
-**Residue: 174 tonnes, four per cent.**
+**Residue: 134 tonnes, three per cent.**
 
-**Of that residue, what is actually free.** Already pledged against signed contracts and standing grants: hull replacement at the southern yards after Kuhan, ~35; Pontic settlement grants above the estate-tax earmark, ~25; Bamo resupply and the Yongchang bark contracts, ~14; the Anhe transfer yard's remaining works, ~15. That is 89 tonnes committed inside the residue.
+**Of that residue, what is actually free.** Already pledged against signed contracts and standing grants: hull replacement at the southern yards after Kuhan, ~35; Pontic settlement grants above the estate-tax earmark, ~25; the Fusang relief sailing of 550 and its stores, ~15; Bamo resupply and the Yongchang bark contracts, ~14. That is 89 tonnes committed inside the residue.
 
-**Genuinely free: about 85 tonnes a year — under two per cent of revenue.**
+**Genuinely free: about 45 tonnes a year — one per cent of revenue.**
 
-That is the arithmetic the phrase "cash-poor" stands for, and it is worth stating in plain terms: an empire taking 4,390 tonnes a year can, without breaking something, choose what to do with about 85 of them. The Board of Naval Affairs' twenty hulls would have cost some 400 tonnes over the period and 60 a year thereafter, which is why the answer was no and why the answer had to be no.
+That is the arithmetic the phrase "cash-poor" stands for, and it is worth stating in plain terms: an empire taking 4,390 tonnes a year can, without breaking something, choose what to do with about 45 of them. The Board of Naval Affairs' twenty hulls would have cost some 400 tonnes over the period and 60 a year thereafter, which is why the answer was no and why the answer had to be no. It is also why a far-shore settlement was refused on Sang Ju's figures and a three-hull establishment costing 40 a year was approved instead: the empire chose the option it could pay for out of the residue, and the residue is now nearly gone.
 
 **The reserve.**
 
@@ -335,7 +394,8 @@ Split deliberately. The first list is ground the empire has taken, settled, or p
 - **Beihai**, at the Lena mouth: established 531, garrison ~50, supplied down the river. Held.
 - **Yanhe**, at the Yana mouth: established 536, garrison ~45, supplied down the river. Held. **This is the eastern limit of the posted line.**
 - **Kuhan**, relief station near the Kolyma mouth: established 545 on the site of the 542–543 wintering, garrison ~20, seasonal, supplied by sea in a window of weeks. Held marginally, and the court's own view is that it is held because a stone with names on it stands there.
-- **Yanhuo**, eastern shore of **Kanchajia**: established 549, garrison 40. The easternmost position on the empire's returns.
+- **Yanhuo**, eastern shore of **Kanchajia**: established 549, garrison 40. The easternmost position on the empire's returns on this side of the ocean.
+- **Fusang**, on the far eastern continent: a stone cache above the tide, built 542–543 and rebuilt 548, holding iron, salt, grain, cordage, sailcloth and powder, with a written statement of what it is and who left it. **Twelve men under Yu Ling were left there in the ninth month of 548.** The relief sailed from Korea in the fourth month of 550 and had not returned at the close of the period. **The court does not know whether the men are alive.** No claim of territory has been entered, no ground is worked, and nothing is administered. This is listed here rather than under charts only because there are men on it; by every other measure it belongs in the second list.
 
 **Made holdable — new rail (no new ground claimed).**
 - **Datong – Jinyang – Luoyang** trunk, completed 543.
@@ -355,7 +415,8 @@ Nothing in this list has a garrison, a supply line, or a tax return. It exists a
 - **The Qiandao chain**, northeast of Kuye: charted through the 530s and 540s. No posts.
 - **Kanchajia**: coast charted north and south of Yanhuo. Beyond the forty men at Yanhuo, nothing is held.
 - **The Irrawaddy below Bamo**: not surveyed. The river's navigability, the distance to the sea, and the middle-valley peoples are all unknown to the court and are entered as unknown, not as withheld.
-- **The far eastern coast reached in the expedition of the last period** (landfalls near 40° and near 50° north): sighted, watered at, and left. No return voyage has been made, no position established, no claim entered. It is a report, not a possession.
+- **The far eastern coast at Fusang and about 700 km north and south of it:** charted on two crossings (542–544, 546–548), sounded where the hulls could sound, watered and wooded at. No claim entered, no ground worked, no settlement, and no agreement with any people found there. The stone cache and the twelve men are listed in the first section; **the coast itself is a chart and nothing more.** Beyond that 700 km the empire knows the shape of nothing, does not know how far the land runs inland, and has not gone to see.
+- **The landfall near 50° north from the expedition of the last period:** sighted once, left, never revisited.
 - **Siberia and the northern interior**: claimed of long standing, unchanged this period. The private audit's judgement stands — the claim rests on the absence of a competitor rather than on the presence of a state, and this reign's doctrine amendment has now written that into the regulations by reclassifying most of it as observation.
 
 **Ratio, stated plainly for the Northern Road.** Twenty-one years, four hulls after Kuhan, 62 tonnes a year: **900 km charted, 0 km of that coast posted.** Two posts and one station on ground reached before or during it, holding a line that has moved east by about 600 km since 531 while the survey has moved east by about 1,500. Supply is the constraint, exactly as the 525 memorandum said it would be, and the revised estimate to the far strait is a hundred years.
@@ -378,9 +439,15 @@ We owe you a fact of the same kind and send it before you learn it elsewhere.
 
 Before your letter reached us we sent three ships east into our own ocean to learn whether land lay on the far side. Two returned. From ten degrees south to twenty degrees north the wind blows steadily westward and an eastbound ship makes no way against it; that band is closed. At forty degrees north the wind blows the other way, and a ship crossing there reaches a far coast in about five months and returns by descending south and riding the low-latitude wind home. There is land east of us. It is reachable, and only by the high northern latitudes.
 
-We tell you also what we are doing about it, because you would hear it from merchants within ten years. We are surveying the northern coast eastward from our Siberian rivers and northward from the islands beyond Wa. It is slow: we have lost four ships and two hundred and thirty-eight men on that coast, our furthest chart lies six hundred li beyond our furthest post, and our reckoning is that the survey will not reach the far strait for a hundred years, and that we could put no weight on any far shore for a generation after that.
+We tell you also what we are doing about it, in full, because a court that asks for a rule of restraint while quietly holding ground on the far shore has asked for nothing.
 
-So we propose nothing about the present. We propose something about a time when neither of us will be alive.
+We are surveying the northern coast eastward from our Siberian rivers and northward from the islands beyond Wa. It is slow: we have lost four ships and two hundred and thirty-eight men on that coast, our furthest chart lies six hundred li beyond our furthest post, and our reckoning is that the survey will not reach the far strait for a hundred years, and that we could put no weight on any far shore for a generation after that.
+
+We have also crossed the ocean twice more since, by the forty-degree road, in the years we count 542 to 544 and 546 to 548. Three ships were built for it and all three have come home each time. We have charted some seven hundred li of the far coast about our landfall, which we call Fusang. We have built there a cache of stores in stone, above the tide, with a written board saying what it is and who left it. And in 548 we left twelve men to keep it through the cycle. Our relief sailed this spring and has not yet returned, so at the hour of writing we do not know whether those twelve are living.
+
+That is the whole of it. Twelve men, a store of iron and grain, and a chart. We have refused a settlement, because our treasurer showed the court that a thousand souls fed across that ocean would cost more each year than our entire northern survey. We have forbidden our captains to treat with the peoples of that coast, to settle, to garrison, or to sell iron or powder there on any account, and those orders are in writing and we will show them to your envoy at the Dnieper if you wish to read them.
+
+So we propose nothing about the present beyond what we have just told you. We propose something about a time when neither of us will be alive.
 
 Our two courts have kept a river between us for two hundred years, and it held not because either of us is virtuous but because it was written down early, when neither wanted the far bank badly enough to lie. We propose the same again, before either of us is there at all: that neither empire settle, garrison, or claim ground within some stated distance of the other's established settlements on that continent; that first arrival gives no claim beyond what is actually held and worked; that neither approach the other's positions in force without prior notice by the ordinary channel; and that neither arm the peoples found there against the other. We do not propose a line, since neither of us knows the shape of the land well enough to draw one honestly. We propose the rule by which a line will later be drawn.
 
@@ -455,6 +522,7 @@ The empire has acted; what follows from the acts is not written in this file.
 4. **The boiler and testing knowledge requested of Egypt** (E2). The marine steam programme's achievements listed above rest on Chinese work, Chinese trials and observation from the public quays at Aden. Nothing in them assumes a grant that has not been made.
 5. **Restaging at northern Honshu**, requested of the king of Wa in 528 through the tributary channel. The squadron's orders provided for working without it. No Japanese territory is claimed, garrisoned or administered.
 6. **Bamo.** The post is held. Nothing below it is claimed, entered or surveyed, and no approach has been made to any peoples of the middle valley.
+7. **Fusang.** Two crossings completed, ~700 km of far coast charted, a stone cache built, twelve men left in 548, relief sailed spring 550 and unreturned at the close. No claim entered. Standing orders forbid settlement, garrison, treaty-making, and any sale of iron or powder to peoples of that coast. Whether the twelve are alive, and what if anything the crossings met ashore beyond water and wood, is for adjudication and is not written here.
 
 ---
 
@@ -497,6 +565,7 @@ The empire has acted; what follows from the acts is not written in this file.
 | Rifled naval cannon | Yes. Standard on new build from 539, refits complete 549. Effective 900–1,100 m against a hull. | ~190 t |
 | Breech-loading small arms and light pieces | Yes. Wedge closure and cartridge seal settled 541; general issue to holding-position garrisons by 549; ~3× rate of fire. | ~140 t |
 | Marine steam | Partly. Boiler burst at Longbian 534, 19 dead, knowledge lost with Zhou Yi. Specification lodged with the Bureau from 535; unmanned trials thereafter. Hulls *Zhenhai* (546), *Jinghai* (549): coastal, warm water, not trusted for ice, never shown abroad. | ~210 t |
+| Eastern Crossing establishment (auth. 539) | Yes, as a route. Three purpose-built ocean hulls; crossings 542–544 and 546–548, all hulls returned; ~700 km of far coast charted; stone cache at Fusang; twelve men left 548, relief sailed 550 and unreturned at the close. Settlement refused on Sang Ju's figures. | ~50 t hulls, ~40 t/yr |
 | Southern trunk rail | Partly. Datong–Jinyang–Luoyang complete 543; Luoyang–Shouchun ~2/3; Yangtze crossing surveyed, not begun. | ~285 t/yr |
 | Fever-country regimen | Yes — the largest new capability of the reign. Bark decoction, camp siting, water and seasonal discipline, worked from the Egyptian material given in the last period and matched to local plants over ten years. Bamo mortality 22 per 100 over two seasons, ~9 thereafter. | ~35 t |
 | Bureau of Measured Things (est. 536) | Yes. 100 salaried posts, Luoyang and Chang'an; mathematics-and-measurement examination; holds the standards and the failure ledgers. | 12 t/yr |
