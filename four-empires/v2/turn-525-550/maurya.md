@@ -587,3 +587,200 @@ This is the third instance in this file — Bhūtiśarman's memorandum, the glas
 ---
 
 *Submitted with the reign's accounts. The chronicle of this reign is short because the reign was, and the treasury's part of it is long because the treasury's part is the only part where the numbers close.*
+
+---
+
+# ADDENDUM: THE RETURNS OF 547–550, AND THE THREE LETTERS
+
+## How the council read what came in
+
+### 1. The Sogdian channel, and the question we did not ask
+
+Nanaivandak's figures are the best the realm has ever had from that road and they are not in dispute. Chinese rail reached the western river at **Anhe** in 541, with a transfer yard, cranes and a shop for changing bogies between gauges. Outbound silk tonnage from the Chinese side is up by about half between 541 and 550. A rail-to-rail junction was offered to Rome in 548 and is unsettled. Our own southern road's toll stands at twelve in the hundred, as since 477. The loss is real and still growing.
+
+**The treasury's finding, which the council accepted, was that we should cut our rate, and we did.** The proclamation of 549 stands.
+
+**The objection nobody made, and which is entered here because no one else will enter it.** We pay Nanaivandak a share of the transit toll he helps us assess. He is the finest instrument in the world for measuring the volume of a road and the worst in the world for telling us whether the road matters, because his living is the road mattering. For twenty-five years we have asked a man who is paid on the toll whether the toll is important and he has said yes, and we have written the answer down as intelligence. His figures are almost certainly honest. His frame is bought.
+
+And there is a second thing wrong with our reading. A rail line laid to a frontier river by an empire that also stocks powder along it is a **military road that happens to carry freight**. We have spent this reign treating it as a commercial rival to our own road and cutting our price against it, which is what one merchant does to another. If it is not chiefly a trade road, then our two parts in the hundred bought us very little and told China something about what we watch. **No man not paid on the toll has ever read these returns.** That is the whole of the criticism and it costs nothing to fix.
+
+### 2. The sixty-day finding
+
+This came in untasked, in fragments, from carters, across sixteen years. Nobody in the service assembled it. It was assembled in 549 by **Bhūtiśarman**, the deputy factor whose memorandum on the African harbours had been filed under commercial correspondence eight years earlier — brought up from Oman in 548 by a councillor who had finally read that memorandum and wanted to know who wrote it. That is the only promotion in this reign and it happened by accident.
+
+What he put together:
+
+> - Chinese frontier posts **served by their rail are stocked at fifteen days of powder**.
+> - Posts **beyond the railhead are stocked at sixty**.
+> - A Chinese regulation of some years' standing **permits a garrison to abandon its ground rather than stand**.
+
+His inference, which the council could not fault and did not enjoy:
+
+> No state stocks a post for sixty days of independent survival unless it expects that post to be cut off and unable to be relieved. No state writes permission to withdraw unless it has already decided the ground cannot be held. Fifteen days is what you give a post you can reach. Sixty is what you give a post you have privately written off. **Beyond their railhead the Chinese frontier is a claim and not a possession, and their own court knows it and has put the knowledge in writing.**
+
+**And here is what the council did with it, which the next reign should read carefully.** It agreed with the finding. It then discovered that the finding was of no use to it, because every use of it required doing something this reign would not do.
+
+- **Cross the river.** Forbidden by the Rolling Frontier Doctrine, which the realm has kept for eight hundred years and which is right: we cannot supply an army into a continent-sized power with better guns, and a weak frontier is not the same as a weak empire. The soft ground is precisely the ground worth nothing.
+- **Reduce the north.** This is the real prize and it is the one nobody would touch. We hold five hundred thousand men of garrison and second line, six thousand elephants, a hundred thousand horse and a hundred and seventy cannon oriented at a river across which nothing has happened in three hundred and twenty-five years — facing, we now learn, an opponent who has written down that he does not intend to stand there. **A quarter of that establishment is perhaps a hundred and eighty million paṇas a year**, which is more than the whole southern continent costs, more than the armament line, and enough to run the wire from Pataliputra to Ctesiphon and audit every colonial ledger in the world twice over. The generals were not asked. A ruler assessed at forty-nine does not open the northern establishment, and the councillors who would have to carry it to him did not carry it.
+- **Say nothing to China, which we did.** Correct, and the only correct thing done with it.
+
+The finding was minuted, entered in the northern file, and marked with the one note that redeems it: **it is perishable.** A railhead moves. Every kilometre of rail China lays west converts sixty-day ground into fifteen-day ground, and the window in which this finding is worth anything closes at the speed of their track-laying and not at the speed of our deliberations.
+
+### 3. Rome, and the deacon who told us the truth
+
+Mar Isḥaq reports that no notice on the overland treaty has been given and none is intended, and that Rome's own approach asks for a **fixed tariff schedule** — which is not the act of a state preparing to walk away. Our reading habit would have taken silence for renewal and been right by luck. This time we have a reason.
+
+He also reports that what Roman soldiers at the Syrian stations carry is **not the weapon we sent him to find**: a cart-mounted engine fired from beneath and heated a long while before use, that four men could not lift, and that a Roman officer called useless in the field. He described it accurately and then told us plainly that it is not what we asked about, when it would have been easier and better for him to let us believe it was. **That is worth more than the report.** An agent who declines to give his masters the answer they want is the rarest thing this service has ever held, and he should be told so, paid better, and never used again in a way that endangers a congregation.
+
+And he brought back unasked the thing that matters. **Rome has created an office with a right of entry into any stable, cellar, byre or post-house to carry off the earth, and made its export a capital offence.** Our arsenals needed one sentence: that earth is nitre, the white salt is what powder is mostly made of, and a state does not send officers into byres for it unless it is making powder in quantity and cannot get enough.
+
+Two consequences the council recorded and one it did not.
+
+Recorded: **Rome is arming**, at a scale that has outrun its own soil. And **the constraint on Rome's arming is nitre**, which is the same constraint that has held this realm back for two hundred and seventy-five years, so we know exactly how much it hurts.
+
+Recorded: the saltpeter of the Gangetic plain forms on the ground, is gathered by men with baskets, and **the realm sits on more of it than any power we know of.** We have never once thought of it as an export because we have never had enough for ourselves. We now know a buyer who is scraping his stables for it.
+
+Not recorded, and entered here: that this cuts both ways. To sell Rome nitre is to arm Rome, and we have already given Rome the firearm. To refuse is to leave the trade to whoever else has it. Nobody put the question to the council in either form. It is put here.
+
+### 4. Egypt, and eleven million paṇas
+
+**Dhanapāla was detected in 539.** His permission has been narrowed, his mail is read, and what reaches us is what someone chose to let reach us. We have spent eleven million a year since 536 on a merchant who is now a letterbox we do not control, and the treasury has renewed the line annually without anyone asking what it bought.
+
+Against that, Bhūtiśarman collated sixty-one masters' logs at Oman for the cost of his own time and produced the only serious analysis in the file.
+
+**The council's finding, and it is the least comfortable in this addendum: our external intelligence problem has never been collection. It is that we do not read what we already hold, and we pay handsomely for what we cannot verify while filing what we can.** Three separate instances stand in this reign's own record — the African logs, the glass shop four hundred paces from the wire men, and the diplomatic office refusing by clerk a thing the ordnance side had just paid for in bodies. This is a fourth. The realm should stop buying agents until it employs one man whose whole task is to read its own returns against each other. That man would cost two thousand paṇas a year.
+
+---
+
+## MESSAGES OUT — THE THREE REPLIES
+
+### Reply to Rome
+
+**Sent 548, in two copies by two roads — the Euphrates route and by sea to Berenice — because that is how Rome sent to us and we have learned the reason for it the hard way.**
+
+> From the Throne at Pataliputra, to Gaius Antonius Severianus Augustus, Emperor of the Romans, greeting.
+>
+> **First the debt, before anything we want.**
+>
+> Your ledger is correct and ours is worse than you have stated it. The full account of the Chinese hand-firearm — its weight and length, its carriage, its killing range, the interval between shots, its effect on timber and on men, the construction such that it may be replicated, the means of ignition, and the reasoning of our engineers entire — was written, sealed and complete in our diplomatic office in the summer of 524. It was never sent. The ruler who bargained for it died in 525, the officer holding it awaited a countersignature under arrangements that the new reign never made, and the packet sat in a press at Pataliputra for twenty-four years, correct and finished and undispatched, while your engineers lived in our yards and our engines ran on your method.
+>
+> We are not going to dress this. We did not weigh whether to send it. We did not decide against it. Nobody thought about it at all, which is worse than bad faith because bad faith at least involves a man. It goes with this letter, in both copies, complete, and if it does not reach you say so and we will send it again by every road we have.
+>
+> **Second, a thing we owe you that you did not ask for and that we withheld once.**
+>
+> We told your ministers in 539 that we had six new powder works and offered our mill designs and our proofing standard. In the year 541 the largest of those works, at Bhadrapura, took fire in an incorporating mill and killed a hundred and eighty-four of our men, destroyed the works to its foundations, and halved the powder of our northern provinces for fourteen months. The cause, as our ordnance men now judge it, was that we had put a steam engine on the incorporating mill, and built the engine house and the drive shafting along the mill row because that is where a shaft must run, so that when the mill fired the blast went out through the weak wall exactly as designed and into the drive gallery, and the fire ran eleven mill-houses in under a minute.
+>
+> We have since taken the engines off the incorporating mills wherever there is water to turn a wheel, and set the engine house away from the mill row with the drive taken by rope. Where we kept engines on the mills, at Ujjain, we have lost two mill-houses more.
+>
+> Our council decided in 546 not to write to you about this, on the reasoning that it would advertise the accident. That was a small decision made by small men and it is reversed. If you have built anything to what we described, move the engine.
+>
+> **Third, and this is ours to confess also.** In 546 your offer of the telescopes, the pneumatic record, the boiler metallurgy and the exchanged engineers was refused by this court. It was refused by a clerk of our diplomatic office acting correctly under a standing instruction of 535 which forbids our people to accept technical guidance from a foreign power. That instruction was written in anger at Egypt over a matter of plants and nobody had ever read it since to see how widely it was worded. Your second copy came by sea to Barygaza and reached a different desk, which is the only reason this letter exists.
+>
+> The instruction is revoked as it touches Rome, by name, in writing, and the officers who administer it have been told so. We tell you the mechanism of our own refusal because you would otherwise be entitled to read it as a policy, and it was not a policy. It was a filing system.
+>
+> The metallurgy of your naval boilers is, in the judgment of our ordnance men, worth more to us than anything else on your list, and we would have had it in 546.
+>
+> **What we send, with this letter and without waiting.**
+>
+> Our mathematics and our astronomy entire, as you asked and without reservation: the decimal notation and the zero worked as a number in its own right with its own rules; the algebra and the theory of numbers; the trigonometry, with the tables our navigators use; the geometry, including what our people made of yours after Bactria; the methods of approximation and of infinite series, and the work now going forward on continuous change — the tangent to a curve and the area beneath it reduced to method these seven years — which our men use for the flight of shot and the volume of a hull. Your engineers reckon and do not derive; this is the deriving, and there is no part of it we hold back. We send the working texts, the commentaries, and the men's own notation, and we will send teachers if the texts do not carry.
+>
+> We send also the writings of our astronomers on the motions of the wandering lights, including those among them who argue that the sun and not the earth stands at the centre of them. We do not tell you which of our men are right. We do not know.
+>
+> **The galvanic demonstration, which you asked for and are ashamed of asking for.** Do not be. You told us plainly that you have three times named the wrong category by taking your own competence for the shape of the world, and a power that can write that sentence about itself is a power we would rather deal with than one that cannot. We are the last court on earth entitled to be superior about it: we spent twenty-five years and a hundred and eighty million paṇas hunting an electrical force in trees and grasses because a foreign power suggested we look there, and then concluded the suggestion had been sabotage because we had not found it, and then forbade ourselves by written order from ever taking such a suggestion again — which is the order that made us refuse your boiler metallurgy five years after our own men died for want of it. Every court has its own way of being a fool. Yours is to name the category. Ours is to take offence.
+>
+> So: the apparatus, the materials, the method, the observations, and the failures.
+>
+> Two pieces of unlike metal — we use zinc and copper — standing in brine and joined by a copper wire outside it. A force appears in the wire and only while the circuit is whole. Break it and the force is gone; restore it and it returns. The wire warms. A magnetised needle laid near the wire turns across it and not toward it, which is not how a lodestone behaves toward iron and is the observation on which everything else of ours rests. Stack the pairs with brine-soaked cloth between and the force grows with the number of pairs. At the ends of the wire, in water, gas comes off; and metal held in the water lays itself down on the other metal.
+>
+> The needle is the instrument. We have sent letters, one at a time, four hundred paces in 546 and forty kilometres in 548, on poles, through eight stations where a man reads the needle's deflection and sends it on by hand. It carries perhaps forty letters in an hour.
+>
+> Now the failures, which are the useful part. **It stops in the rain.** We have wrapped the wire in lac, oiled cloth, wax, boiled resin and pitch, and all of them wet through in our monsoon, and nothing we have will keep a current in a wire for forty kilometres of wet timber. **Our stacks decay**; they must be rebuilt every few days and their force falls as they age, so that nothing sent can be trusted to arrive at the strength it left. **And we have no theory whatever.** We do not know what the force is, why the needle turns across the wire, why the gas comes off, or why two unlike metals in brine should do anything at all. We have a set of true instructions and no account of them, which we now recognise as the state of most of our knowledge.
+>
+> Test it and tell us what you find, as you offered, and if you find us wrong say so plainly. We will hold it better than we held your last gift.
+>
+> **On the tariff.** You are right and the grievance is just. We doubled our transit rate on Chinese goods in a quarrel of our own and your merchants paid for it. We propose, and will sign on your word alone: **twelve parts in the hundred through our ground on all goods of every origin, Chinese included, fixed for twenty-five years, and not alterable within the term by either of us for any cause.** With it the notice procedure we put to you in 539 and which you have not answered — three years' notice in writing before the end of a term, delivered to the transit officers at the crossing and to the other court both, effective only on written acknowledgement by both, and a signed statement exchanged each midsummer that no notice has been given, so that silence is recorded and not assumed. Sign the schedule and the procedure together or neither; they are one instrument.
+>
+> **On residence.** Ten Roman men of learning at Pataliputra, and ten of ours at Rome, on your terms. Send whom you like; we ask no list. Ours will be mathematicians and astronomers, since that is what you asked for and it seems well to send the men with the books. Three of your engineers have lived among us since 528 and we have never thanked you for them in writing. We do so now.
+>
+> **One thing we offer that you did not ask for.** We understand that a state making powder in quantity comes at length to the end of what its own ground will give it, since it has been the wall against which this realm has broken itself for two hundred and seventy-five years. The white salt forms of itself on the soil of our Gangetic plain, season upon season, gathered by men with baskets, and we hold more of it than we have ever been able to use. If Rome should ever want it, we will sell it, at a price and a tonnage fixed by agreement, by the overland road.
+>
+> We say plainly what that means, since you are the only power we deal with that writes plainly to us. To sell you this is to arm you, and we have already given you the firearm, and our own council did not put the question to itself in those words. We put it to ourselves now and we make the offer anyway, because a Rome that must buy from us is a Rome that talks to us, and because the alternative is not a Rome without powder but a Rome that buys elsewhere and remembers who would not sell.
+>
+> From the Throne at Pataliputra.
+
+### Reply to Egypt
+
+**Sent 548, by sea from Oman to Aden under a herald's flag, to the commercial office there.**
+
+> From the Throne at Pataliputra, to the Council of the Pharaoh at Alexandria, greeting.
+>
+> You wrote that there has been little between us but trade for four hundred years and that what there has been besides has not been good on either side, and that you would not pretend to mend it in a letter. We will answer in the same manner, which is a relief to us.
+>
+> **Your first article, notice of movements toward the border. We accept it**, in the terms you set: the number and the season, before the movement, and we will give it whether or not we have received yours. Nothing on that frontier has moved in either direction in living memory and we do not intend that it should.
+>
+> **Your second article, a standing channel. We accept it.** Your man at Aden; ours at Oman, which is our own station at the Gulf mouth, known to your captains for five hundred years and reachable from Aden in a season by the ordinary trade. Empowered to carry a question and return an answer, as you propose.
+>
+> **Your third article, which you say is the one that matters, and it is.** You ask that neither court enter an arrangement with a third power directed against the other without saying so, and you bind yourself in the same words, and you do not ask us to refuse such arrangements.
+>
+> We accept it, and we are going to tell you exactly what we are accepting and exactly what we are not, because an article agreed in different senses is worse than no article.
+>
+> We hold no arrangement with Rome or with China or with anyone directed against Egypt. We say so as a plain statement of present fact and you may test it against anything you learn. We deal with Rome in trade, in a fixed overland tariff, and now in an exchange of learning; we have this year sent Rome our mathematics and our astronomy and an account of an experiment of ours, and Rome has sent us telescopes and the metallurgy of its boilers. None of it is directed at you. We deal with China at our northern river and at our strait, and we have this year proposed to China a rule for what fleets may do to one another at sea. None of that is directed at you either. We tell you these things unasked, now, so that the article begins with the ledger open rather than with a silence you would have to interpret.
+>
+> What we will not do is pretend to be your friend, and we do not think you would believe it. Our statecraft names a power that holds every gate against us an enemy, and we have been walled out of your western sea for a hundred and eighty years and have not stopped minding it. If ever we make an arrangement with a third power directed against you, this article says we will tell you we have made it, and we will. It does not say we will not make one. You did not ask that and we would not have given it.
+>
+> **On your toll.** Thirty parts in the hundred, assessed once, the same for every hull afloat, published and not to be moved. We would rather it were less and we would rather it were certain, and you are right that the certainty is worth more. We say back to you the same courtesy: our transit charge on the overland road stands at twelve parts in the hundred for all goods of every origin and we are this year fixing it by agreement for twenty-five years against alteration by ourselves. Your hulls at our station of Oman and at our port at the eastern mouth of the Strait pay the published rate and no other, and that will not be moved against you.
+>
+> **Now the one thing we want from the channel, and we want it more than we want the articles.**
+>
+> In the spring of 531 a vessel of ours put eleven men ashore on your African coast below the harbours where our ships had traded by your permission for five hundred years. They went inland without leave, to buy a plant. They did not come back. We wrote to you in 534 and had no answer, and we do not know whether that letter was ever carried past the officer who took it.
+>
+> From the summer of 533 our masters began to be turned from harbours on that coast, and our factors closed their houses, and within three years a trade of ninety sailings a season had become none. Our court concluded in 534 that you had struck out the old permission in answer to those eleven men, and has acted on that conclusion ever since, including in ways that have cost us more than they have cost you.
+>
+> In 541 one of our own clerks at Oman collated the logs of sixty-one of our masters and found that the refusals were uneven and not simultaneous; that of thirty-one callings in two seasons eleven were turned, nine allowed to sell and not land, seven served exactly as before, and four charged at rates the masters called new; that two masters were turned at one harbour and received courteously at the next in the same week; that the refusals were heaviest near the place our men went ashore and thinned with distance; that no master in sixty-one voyages was ever shown an order or told a permission had ended; that our houses at Alexandria were never interrupted for a day and are not interrupted now; and that most of the collapse was our own insurers refusing the risk and our own masters ceasing to offer.
+>
+> His conclusion was that what our ships met was local and piecemeal, and probably not a decision of your council at all. **His paper was filed under commercial correspondence and never read to our council, because our council had already decided.** We are telling you the contents of our own archive, and how badly we used it, because we would rather ask you a clean question than go on acting for another twenty-five years on a guess we made while angry.
+>
+> So, plainly, and by the channel you propose: **Was anything decided at Alexandria about our access to that coast? Are our eleven men alive? And would you have our hulls back at those harbours on the old terms — trade, hold no ground, claim no ground — which we kept for five hundred years and would keep again?**
+>
+> If the answer to the first is no, say so and we will believe you, and the fault will be ours entire and we will say so in our own record.
+>
+> **One last matter, which we set down because you will hear of it and we would rather you heard it from us.** In 535 this court made a standing order that no technical guidance offered by Egypt is to be accepted, acted upon or carried home, on a finding that your counsel to look for the galvanic force among plants had been offered to waste our effort. We told you of the order in 534 in a form and we are telling you of it again in its true form. We have not revoked it.
+>
+> We will tell you what it has cost us, since you offer no knowledge and ask for none and can therefore afford to be told. That order was worded generally and no one ever read it again, and so in 546 it was used by a clerk of ours to refuse an unrelated offer from Rome of the metallurgy of boilers — five years after a steam engine standing beside a powder mill killed a hundred and eighty-four of our men for want of exactly that knowledge. Our anger at you cost us that, and you did nothing to earn the credit.
+>
+> We do not ask you to say whether the counsel was honest. You would say it was, and we could not check it, and neither of us would be better off. We tell you the order stands, so that your people do not offer and are not refused, and so that the position between us is at least accurate.
+>
+> From the Throne at Pataliputra.
+
+### Reply to China
+
+**Sent 549, by the Zhenxi crossing and the ordinary frontier channel, in Chinese in our own hand.**
+
+> From the Throne at Pataliputra, to the Emperor of the Han, greeting.
+>
+> **We accept the convention, in all four of its articles, in the words you have written them.** We have not sought to improve them and we ask nothing added. We say yes first and explain afterward, because a court that answers a plain proposal with a counter-proposal is a court that has not decided.
+>
+> - Our armed vessels will show their flag and hold beyond two thousand metres from any convoy of yours unless interception is intended, and will signal interception before beginning it.
+> - Our ships will not fire on a vessel showing its flag that is neither closing nor interposing.
+> - We name **Sindhudvāra**, our port at the eastern mouth of the Strait, against your Panyu. A commander of yours may send a written account of any incident there within ninety days, and it will be answered over the name of an officer with authority to answer it, and we will hold ourselves to the ninety days as strictly as we ask you to.
+> - No incident so reported and answered will be treated by this court as an act of your state until both accounts have been read.
+>
+> Renounceable by either on a year's notice, as you wrote it.
+>
+> We accept it for a plain reason and you are entitled to know it. In 474 our squadron closed on your escorts under a standing order to turn back or board any ship that would not put in to our facility, and eleven of our ships were lost, and what followed cost us a fleet and an island. That order was written by men who had never met a gun at sea, and it was carried out by a commander who could not have done otherwise without disobeying it. **Every part of that began with a lieutenant on a bad morning holding a piece of paper written years before by someone who could not imagine his morning.** Your convention is about exactly that and it is the most useful thing any power has proposed to us in a century. We would have proposed it ourselves if we were a better court.
+>
+> You say nothing about our gunnery. We will say it: our pieces are shorter than yours and newer aboard, our crews have a few years of drill where yours have generations, and we know it. That is precisely why we want a rule about what our lieutenants may do, and we would rather set it down while the asymmetry runs the way it runs than negotiate it later from some other position.
+>
+> **On your powder.** We thank you for telling us before we heard it, and we will match the courtesy exactly, which we take to be the point of your having done it. This reign has built six new powder works and multiplied our own output some four times over. One of them, at Bhadrapura in 541, took fire and killed a hundred and eighty-four of our men and destroyed itself, and halved our northern powder for fourteen months, and we have since altered how such works are built. We tell you this because you will hear of a great fire and a long shortfall in our northern provinces from the carters, and a shortfall discovered is read as a weakness, exactly as a stock discovered is read as a preparation. It was an accident in a mill. It was not a movement.
+>
+> Our cannon stand on the south bank of the river where your observers have reported them since the 450s. They will stand there. You raised the question in 477 and you say you are not raising it now, and we mark that, and we will not raise it either.
+>
+> **On the road.** We proclaimed in 549 a reduction of our transit charge from twelve parts in the hundred to ten upon goods carried the whole length of our ground, held for twenty-five years, and we are this year fixing the rate against alteration by ourselves for that term. It applies to your merchants as to every other, and it was not a concession to anyone; we would rather take ten parts of a great traffic than twelve of a shrinking one. Our waystations are watered, walled and patrolled and we will mend what your merchants find wanting if you will tell us what it is.
+>
+> Your ground is your own and we do not comment on it. We note only, since you have chosen to write to us about the classification of your posts, that we hold five hundred thousand men in garrison along a river across which nothing has happened in three hundred and twenty-five years, and that we have not audited that arrangement in a very long time either. You have audited yours and told us so. We have not, and we are telling you that we have not.
+>
+> From the Throne at Pataliputra.
+
+---
+
+*What the council did not do with any of the above: reduce the northern establishment, cancel Dhanapāla's line, appoint a man to read the realm's own returns against each other, revoke the standing order of 535 as it touches Egypt, or put the nitre question to a vote. Five decisions, all of them cheap, all of them identified in writing within this reign, and all of them left for the next one. That is the reign.*

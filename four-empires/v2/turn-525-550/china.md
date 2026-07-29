@@ -437,7 +437,7 @@ All figures in tonnes of silver-equivalent, annual.
 
 **Of that residue, what is actually free.** Already pledged against signed contracts and standing grants: hull replacement at the southern yards after Kuhan, ~35; Pontic settlement grants above the estate-tax earmark, ~25; the Fusang relief sailing of 550 and its stores, ~15; Bamo resupply and the Yongchang qinghao and changshan contracts, ~14. That is 89 tonnes committed inside the residue.
 
-**Genuinely free: about 45 tonnes a year — one per cent of revenue.**
+**Genuinely free: about 45 tonnes a year — one per cent of revenue**, of which 8 were committed in 550 to the Proof Office at Longbian (see XIII-E), leaving about 37.
 
 That is the arithmetic the phrase "cash-poor" stands for, and it is worth stating in plain terms: an empire taking 4,390 tonnes a year can, without breaking something, choose what to do with about 45 of them. The Board of Naval Affairs' twenty hulls would have cost some 400 tonnes over the period and 60 a year thereafter, which is why the answer was no and why the answer had to be no. It is also why a far-shore settlement was refused on Sang Ju's figures and a three-hull establishment costing 40 a year was approved instead: the empire chose the option it could pay for out of the residue, and the residue is now nearly gone.
 
