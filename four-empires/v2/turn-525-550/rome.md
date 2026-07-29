@@ -7,7 +7,7 @@
 
 Iulianus Augustus died at Mediolanum in the winter of 526, of the lung complaint the physicians record for any man who has spent thirty years breathing Colonia Agrippina. He left no son and, for the first time in a century, no crisis: Consilium, Senate and Industrial Council had all been brought to one name before he died. The name was Gaius Antonius Severianus, thirty-nine, of an old senatorial house of Campania, married into the Rhine iron families of the Colonia district, and by profession a man of the fisc — eleven years *rationalis* of the western customs, four as *praefectus annonae*. He knew what was in the accounts because he had written much of it.
 
-Acclaimed in the spring of 527, he did not campaign, build or distribute. He ordered the western programme's true costs consolidated into one ledger against the military line, the frontier line and the reserve, and had it read aloud to the Consilium in a single sitting that took most of a day. The conclusion: the free margin, two hundred and eighty millions against a revenue of four thousand, would be gone within twelve to eighteen years on the western commitment alone — before any war, usurpation, harvest failure or fresh Han demand.
+Acclaimed in the spring of 527, he did not campaign, build or distribute. He had the western programme's true costs consolidated into one ledger against the military line, the frontier line and the reserve, and read aloud to the Consilium in a single sitting. The conclusion: the free margin, two hundred and eighty millions against a revenue of four thousand, would be gone within twelve to eighteen years on the western commitment alone — before any war, usurpation, harvest failure or fresh Han demand.
 
 His response settled the argument that would otherwise have consumed the reign, and the Consilium recorded it: *"We are the richest state in the world and we tax like a frightened one. Thirty-six sesterces a head. Alexandria would laugh. We do not have a money problem. We have a courage problem, and I intend to spend the courage rather than the coin."* Clipping the coin, he said, is what a state does when the ground will not yield, and Roman ground was not the problem. A debased denarius in an empire where every foreman reads a price sheet is not a quiet theft but a printed grievance with the emperor's face on it.
 
@@ -17,11 +17,11 @@ His response settled the argument that would otherwise have consumed the reign, 
 
 Four instruments, in deliberate order, easiest first.
 
-**The *vectigal occidentale*, 528.** A duty of one part in eight on all goods of the western ocean at the moment of landing: gold, cacao, cotton, hides, dyes, the burning leaf, the new dyewoods. Levied at named ports of entry only — Gades, Olisipo, Burdigala, Portus Namnetum, Londinium, Dubris — with landing anywhere else declared contraband. Tax the new thing; the new thing has no defenders yet. Projected at two hundred and twenty millions a year by 545.
+**The *vectigal occidentale*, 528.** A duty of one part in eight on all goods of the western ocean at landing — gold, cacao, cotton, hides, dyes, the burning leaf, the new dyewoods — levied at named ports of entry only (Gades, Olisipo, Burdigala, Portus Namnetum, Londinium, Dubris), landing anywhere else being contraband. Tax the new thing; the new thing has no defenders yet. Projected at two hundred and twenty millions a year by 545.
 
 **The *indictio maritima*, 529.** A five-year emergency levy on the coastal provinces profiting from the run — Baetica, Lusitania, Aquitania, Britannia, Hibernia — assessed on registered shipping tonnage rather than land. Extended twice.
 
-**Advances against the western receipts, 530.** The tax-farming *societates* were sold the right to collect the *vectigal* for five-year terms, paid in full at the front, the great shipping houses buying in beside them: four hundred and sixty millions of ready money in three years against a nominal future value near six hundred. The state did not borrow, having no way to borrow. It sold tomorrow's customs at a loss to buy today's hulls, which is the same thing wearing a toga.
+**Advances against the western receipts, 530.** The tax-farming *societates* were sold the right to collect the *vectigal* for five-year terms, paid in full at the front, the great shipping houses buying in beside them: four hundred and sixty millions of ready money against a nominal future value near six hundred. The state did not borrow, having no way to borrow; it sold tomorrow's customs at a loss to buy today's hulls, which is the same thing wearing a toga.
 
 **Then the fight he had to win: the *collatio fabricarum*, 531–534.** A standing assessment on industrial output — factory, mine, foundry, rail, steam shipping — at a real rate, empire-wide, replacing the ragged patchwork of provincial levies the Council had spent a century keeping ragged. The only source large enough to carry the west, the arms race and the fleet together. Also a bill presented to the constituency that makes emperors: the succession of 318 was won by a Rhine general on industrial money, and everyone in the room knew it.
 
@@ -31,7 +31,7 @@ He did not decree it. He sold it, and paid in law rather than coin, which is the
 - **The *privilegium fabricae*** — imperial protection of a registered method or machine for twenty years, enforced in every provincial court from one printed register at Rome, in exchange for deposit and publication at term's end.
 - **Formal standing** — the Council's advisory remit converted into a right of prior consultation on any fiscal or commercial measure, its objections entered in the record and printed.
 
-Rome received the *collatio*, yielding above three hundred millions a year by 545 and rising with output rather than with the assessor's mood. What made it survivable in the Senate: he raised the land assessment on the great estates at the same session, modestly, and said openly that he did it so the industrialists could not claim they alone were singled out. The senatorial houses were furious and stayed furious, and the old families never again put a man of theirs at his disposal. He knew the price when he paid it.
+Rome received the *collatio*, yielding above three hundred millions a year by 545 and rising with output rather than with the assessor's mood. What made it survivable in the Senate: he raised the land assessment on the great estates at the same session, modestly, saying openly that he did so the industrialists could not claim they alone were singled out. The senatorial houses stayed furious, and the old families never again put a man of theirs at his disposal. He knew the price when he paid it.
 
 ---
 
@@ -47,7 +47,7 @@ The second half of the Concordia, 534:
 - **The *curatores fabricarum*** — a standing inspectorate, salaried from the *collatio*, with right of entry to any registered works and power to close a shaft or a floor pending appeal. Two hundred and forty men at foundation, six hundred by 550, concentrated in Britannia, the Rhine, Silesia and the Dacian fields.
 - **The accident fund** — levied on the industrialists at a fixed fraction of the *collatio*, paying on a printed schedule rather than at a magistrate's discretion.
 
-The Patriarch of Rome blessed the Concordia in a published homily arguing the case in the language of human dignity rather than productivity — the first time in four centuries a Roman labour measure was defended on any ground but the state's convenience. The clergy of the industrial cities carried it into every congregation. It is not clear the emperor believed a word of the theology. It is entirely clear he understood what it was worth: the Church delivered him a settlement no number of *curatores* could have enforced.
+The Patriarch of Rome blessed the Concordia in a published homily arguing the case in the language of human dignity rather than productivity — the first time in four centuries a Roman labour measure was defended on any ground but the state's convenience — and the clergy of the industrial cities carried it into every congregation. It is not clear the emperor believed a word of the theology. It is entirely clear he understood what it was worth: the Church delivered a settlement no number of *curatores* could have enforced.
 
 The Rhine did not rise. That is the reign's quiet achievement and nobody will ever build a monument to it.
 
@@ -65,13 +65,11 @@ The *officium*'s unpublished survey drew the conclusion that matters: an empire 
 
 ## V. The West: The Islands, and the Sickness
 
-The islands were finished as a military matter early — Insula Aurea by 531, Insula Longa by 536, Insula Sancti Iohannis in 533 with four cohorts, Insula Fontium in 537 for its water and cattle ground — and the colonial architecture is named in the territory declaration below.
-
-And then the thing nobody wrote into the plan.
+The islands were finished as a military matter early — Insula Aurea by 531, Insula Longa by 536, Insula Sancti Iohannis in 533, Insula Fontium in 537 — and the colonial architecture is named in the territory declaration. Then came the thing nobody wrote into the plan.
 
 Sickness follows our ships. It takes the islanders and largely spares our crews and colonists. It appears in a village after our people have been in it and not before, and it moves ahead of our people along the trade paths faster than our people move. The *procuratores* of Ozama and Portus Securus have tallied since 532, because Rome tallies everything, and the tallies are not ambiguous: the subjugated population of the two great islands, above four hundred thousand when the conquest began, is under seventy thousand in 550. Valleys of the Cibao that fed the gold works in 535 are empty ground in 548.
 
-Rome cannot say why. Our physicians have no theory of any of this and were publicly wrong once already this generation, having called the crossing fevers common flu. But a line does not need a cause to be extended, and the extension is arithmetic a clerk can do: at the observed rate, the labour force the whole island economy was built on will not exist in a generation. The Cyprian quarantines applied from 538 did not work, and the *procuratores* said so in writing.
+Rome cannot say why. Our physicians have no theory of any of this and were publicly wrong once already this generation, having called the crossing fevers common flu. But a line does not need a cause to be extended: at the observed rate, the labour force the whole island economy was built on will not exist in a generation. The Cyprian quarantines applied from 538 did not work.
 
 **A moral quarrel Rome did not expect.** The western clergy began publishing accounts of the dying villages in the Roman sheets from about 541, and the argument was theological and therefore unanswerable in an empire that had just made human dignity the language of its labour law. The bishop of Ozama's letter of 546 was read in three basilicas at Rome and printed in four cities. It changed no policy, and it is the first document in Roman history accusing the imperial economy, in print, of killing the people it employs. The men who made the Concordia understood what had been handed to the collegia of the Rhine.
 
@@ -83,15 +81,15 @@ Rome cannot say why. Our physicians have no theory of any of this and were publi
 
 ## VI. Castra Cuzamil, and the Triumph He Refused
 
-The Yucatan reconnaissance ran 528–542 out of **Castra Cuzamil**, the fort on the island of Cuzamil three miles off the mainland shore. Basing on an island was Severianus's own instruction, and his stated reason was the Delta: a garrison on a hostile shore must be relieved; a garrison on an island can be taken off.
+The Yucatan reconnaissance ran 528–542 out of **Castra Cuzamil**, on the island three miles off the mainland shore. Basing on an island was Severianus's own instruction, and his stated reason was the Delta: a garrison on a hostile shore must be relieved; a garrison on an island can be taken off.
 
 The instruments were the balloon and the boat. Tethered balloons from the fort and from vessels standing offshore gave sightlines over the treeline along four hundred miles of coast; small parties went up the coastal lagoons and inland along the trade paths with interpreters bought over eight years, and the language was reduced to a printed grammar by 540. A trading post was licensed at **Statio Chetumalis** on the bay of Chactemal, whose real business was talking to merchants.
 
-What Rome learned is the answer that was wanted. The interior is not one power. It is a landscape of walled cities, forty and more counted or credibly reported, none commanding the others, at war among themselves in shifting combinations, with a common writing, calendar and priesthood and no common king. That is the fractured case, and by the doctrine of the previous generation it is the case in which Rome takes them one at a time.
+What Rome learned is the answer that was wanted. The interior is not one power but a landscape of walled cities, forty and more counted or credibly reported, none commanding the others, at war among themselves, with a common writing, calendar and priesthood and no common king. That is the fractured case, and by the doctrine of the previous generation it is the case in which Rome takes them one at a time.
 
 Rome did not take them, and this is the decision the reign should be judged on.
 
-The reconnaissance also established the physical conditions, set down by the *magister militum* of the west in a memorandum printed for the Consilium: no navigable river into the interior; no draft animals of any kind and no road a wheeled column can use; surface water nearly absent across the northern plain, which drinks from shafts in the rock; forest closing the sightline at thirty paces, exactly where the balloon stops being useful; cities sixty to a hundred miles apart with nothing between that will feed a legion. Conclusion: Rome can destroy any army the country can raise and storm any single city, and cannot hold four at once for a year without a road system taking a generation and a garrison bill larger than Dacia's.
+The reconnaissance also established the physical conditions, in a memorandum by the *magister militum* of the west printed for the Consilium: no navigable river into the interior; no draft animals and no road a wheeled column can use; surface water nearly absent across the northern plain, which drinks from shafts in the rock; forest closing the sightline at thirty paces, exactly where the balloon stops being useful; cities sixty to a hundred miles apart with nothing between that will feed a legion. Conclusion: Rome can destroy any army the country can raise and storm any single city, and cannot hold four at once for a year without a road system taking a generation and a garrison bill larger than Dacia's.
 
 A party at Rome wanted it anyway — a war against people who work no metal, a triumph, forty cities, gold. Severianus refused it before the Senate in 542, on Pelusium and Carrhae, the argument this state has been making to itself for six hundred years and which this time was correct. He wrote to the *magister militum*: *"We may have the war whenever we like. That is exactly why we need not have it now."*
 
@@ -119,7 +117,7 @@ The ocean decided two questions that had drifted for fifty years — iron framin
 
 In 543, before the coal was found and against the advice of the *magister classis*, Severianus ordered the first steam crossing attempted with depot ships transferring coal at sea. *Fulmen*, iron-plated, a hundred and twenty crew, lost her depots in weather west of the Insulae Fortunatae and was never seen again. It is the one impatience of an otherwise patient reign, it killed a hundred and twenty men, and it is what turned coal from an industrial ambition into an operational necessity in the emperor's own mind. He did not repeat it, and no steam vessel attempted the crossing again until the Portus Severianus depot was stocked in 549.
 
-The road was built out of two waypoints: **Insulae Accipitrum**, found in 533 by a returning hull that ran too far north and sitting almost exactly midway on the return leg, garrisoned 535 with a depot and stone mole at **Portus Medius**; and the **Insulae Fortunatae**, constituted a province in 531, depot at **Portus Fortunatus**. Neither has coal of its own. Every ton is carried there, which is expensive, and is the price of an ocean.
+The road was built on two waypoints, **Insulae Accipitrum** and the **Insulae Fortunatae**, both dated in the territory declaration. Neither has coal of its own. Every ton is carried there, which is expensive, and is the price of an ocean.
 
 ---
 
@@ -127,7 +125,7 @@ The road was built out of two waypoints: **Insulae Accipitrum**, found in 533 by
 
 The programme reached a stable ratio in 531 and from 532 was a weapons programme. It went where two centuries of doctrine pointed: an emplaced vessel, because Rome has built fixed and cart-mounted steam launchers since 301 and its engineers reached for the shape they knew.
 
-A hand weapon was attempted once. A *fabricator* of the Argentoratum works, Vibius Crispinus, argued in 543 that a small tube would do what a large one did, and made three. The second burst on its ninth firing and killed him. The programme's finding, entered 544: the metal cannot be made thin enough to carry and strong enough to hold; the hand weapon is a blind alley.
+A hand weapon was attempted once. A *fabricator* of the Argentoratum works, Vibius Crispinus, argued in 543 that a small tube would do what a large one did, and made three. The second burst on its ninth firing and killed him. The finding entered in 544: the metal cannot be thin enough to carry and strong enough to hold; the hand weapon is a blind alley.
 
 That finding is wrong. The Han carry the thing and Rome knows they carry it. What Rome does not have is any reason to believe the metallurgy is possible; the one man who might have persisted is dead; and the programme has a battery of successful bombards to point at instead. This is exactly how a hundred and eighty years went into pressure vessels, and nobody in the Consilium has noticed the shape repeating.
 
@@ -167,7 +165,7 @@ In 542 the rate was raised from one-eighth to one-fifth to fund Portus Severianu
 
 Rome refused the petition in 544. In the summer of 546 a customs squadron out of Isca seized three Britannic hulls at Portus Magnus. The crews were taken off by a crowd the port magistrates declined to disperse; the magistrates wrote to the governor of Britannia, who declined to send troops against the shipping carrying his own province's trade and wrote to Rome saying so.
 
-There was no revolt. That is the point, and it is worse. What the incident established is that Rome cannot enforce a fiscal law against Britannia without a naval action against its own province, at a moment when every ocean-capable hull Rome owns is committed to the western run and the fleet cannot be in two oceans.
+There was no revolt. That is the point, and it is worse: the incident established that Rome cannot enforce a fiscal law against Britannia without a naval action against its own province, at a moment when every ocean-capable hull Rome owns is committed to the western run and the fleet cannot be in two oceans.
 
 Rome settled in 547 with the **Constitutio Oceanica**: the western trade licensed through a chartered body, the *Societas Oceani Occidentalis*, seated at Londinium and holding the exclusive right of carriage on the run; registered hulls paying one part in eight where unregistered pay one in four, against open books, imperial inspection and carriage of imperial cargo at fixed rates; Portus Magnus and the Clyde constituted ports of entry; and the *Societas* granted legal personality and bounded liability under the Concordia Fabricarum — under the law Severianus himself had made three years before.
 
@@ -181,9 +179,7 @@ What it actually did: by 550 roughly two-thirds of Atlantic tonnage is Britannic
 
 **Population** about one hundred and twenty-seven millions in the old world; some four hundred and fifty thousand Romans and Romanized in the west, against a subjugated island population fallen from above four hundred thousand to fewer than seventy.
 
-**Revenue** about 5,300 millions: land tax 1,520; industry with the *collatio fabricarum* 1,610; trade and customs 940; mining 470; luxury duties 300; other levies 320; *vectigal occidentale* 92; western gold and produce 110. **Expenditure**: military and frontier 3,300 (62 percent, including western garrisons and the ocean fleet); administration 640; infrastructure 470; social 280; research 165; **free margin about 445**.
-
-The margin is restored, and it was restored by taxation and not by the mint. The coin has not been touched in the reign and Severianus has said publicly that it will not be.
+**Revenue** about 5,300 millions: land tax 1,520; industry with the *collatio* 1,610; trade and customs 940; mining 470; luxury duties 300; other levies 320; *vectigal occidentale* 92; western gold and produce 110. **Expenditure**: military and frontier 3,300 (62 percent, including western garrisons and the ocean fleet); administration 640; infrastructure 470; social 280; research 165; **free margin about 445**. The margin was restored by taxation and not by the mint. The coin has not been touched in the reign and Severianus has said publicly that it will not be.
 
 **Technical workforce** about six hundred thousand; literacy about seventy-two percent. Fifty-two steam warships, twelve iron-hulled and nineteen screw-driven; the first steam crossing of the western ocean in 550; emplaced bombards at seven named positions; no hand firearm and a formal finding that none is possible; the western coal chain opened; maize ripening in Pannonia; eleven hundred methods on the *privilegium fabricae* register.
 
@@ -248,7 +244,7 @@ Severianus Augustus.
 
 **Western fuel survey — 240 millions**, colonial establishment charged elsewhere. Parties to the Sinus Magnus Occidentalis 541–542 under orders naming fuel, not gold. Bituminous coal above the fall line of the Flumen Novum, autumn 543, within eight miles of navigable water. Pits opened 545–547; first coal raised 549, eleven thousand tons in the first full year; four-mile iron rail 548–549; first western stationary engine at Colonia Carbonaria 550.
 
-**Natural philosophy patronage — 40 millions.** Observatories at Rome, Cyrene, Colonia Agrippina and Borysthenia; telescopes improved to greater aperture on the industrial sheet-glass furnaces; phases of Venus and the Jovian lights confirmed and printed repeatedly; heliocentrism settled among the observers and disputed by the schoolmen. **Believed achieved: nothing that predicts.** The 546 submission states that Rome can see what the inherited model cannot hold, cannot put a number to what should replace it, and that the deficiency is mathematical rather than optical — which is the reason for the ask carried to the Han. The emperor's margin note on that submission reads *"too small."*
+**Natural philosophy patronage — 40 millions.** Observatories at Rome, Cyrene, Colonia Agrippina and Borysthenia; telescopes improved to greater aperture on the industrial sheet-glass furnaces; heliocentrism settled among the observers and disputed by the schoolmen. **Believed achieved: nothing that predicts.** The 546 submission states that Rome can see what the inherited model cannot hold, cannot put a number to what should replace it, and that the deficiency is mathematical rather than optical — the reason for the ask carried to the Han. The emperor's margin note on it reads *"too small."*
 
 **Agronomy, the western grains — 55 millions.** Trial stations under the *curatores agrorum* in Baetica, Campania, Pannonia, the Danube bend, the Dacian lowland and the black earth behind the Dnieper, with printed method sheets. **Believed achieved:** strains ripening reliably in Pannonia and on the Dacian lowland by 550 that would not have ripened north of Baetica in 530. Cassava and sweet potato in the western islands and southern Iberia only. Seed and method not traded to any peer; reaffirmed 534 and 546.
 

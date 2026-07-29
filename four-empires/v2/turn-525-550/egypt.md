@@ -86,7 +86,13 @@ The council learned of it **seven weeks and two days after the landing**. By the
 
 The council sat four days and concluded, correctly and miserably, that the commander had done what it trained him to do; that dislodging an established Roman settlement is a Roman war begun by Egypt at the end of the longest supply line in the world, over an island Egypt scheduled three times and never occupied; and that it was not going to do that. It commended the commander in writing, by name, for the second time in seventeen years, because that is what the file said to do.
 
-The island is Roman. It commands the mouth of the great northern river of that coast and the approaches to our Caracas strongpoint, which is exactly how our own assessment of 525 valued it.
+The map in the chamber has carried a Roman colony at the mouth of that river since 542. It rests on one sighting, and the sighting is nine years old.
+
+Nothing has been sent back. The doctrine that came out of 541 forbids our hulls from entering waters where an intrusion would have to be treated as an invasion, and there is no order distinguishing a survey from an intrusion, because no such order was ever drafted. So we have not looked.
+
+We therefore cannot say whether that ground is held today, in what strength, or by how many, or whether it was ever anything more than a landing party that cut timber for a season and sailed. It may be a town. It may be a burnt palisade and nobody. We do not know, and the reason we do not know is a doctrine of our own making, arrived at by commending restraint twice in writing rather than by anyone deciding it.
+
+The Enterprise commissioner at Alexandria Notou minuted this objection in 546, asking leave to send one fast unarmed hull past the gulf mouth at distance. The minute was filed. No leave was given, and none was refused; the request was simply never answered, which in this service is the same as a refusal and costs nobody a decision.
 
 What it cost is not one island. It is that Egypt has now twice formally rewarded an officer for not acting, and has thereby made *do not act* the standing doctrine of the Atlantic by praise rather than by decision. No one voted for that. It is what two commendations mean.
 
