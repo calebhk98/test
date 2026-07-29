@@ -655,3 +655,176 @@ The empire has acted; what follows from the acts is not written in this file.
 | Achromatic lens | **No.** Proposition written 547 and testable; the wall is optical-quality lead glass — corded, striated, bubbled, inconsistent between batches. **Re-rated 549 from open-ended search to directed programme** after Fu Yi minuted that the old funding logic had expired; dedicated pot house, batch register, glass expected in the 550s. | 3 t/yr to 548, 9 t/yr from 549 |
 | Continuous electrical source | **No.** >9,000 recorded failures; capability unchanged from 525. The 547 entry was a **single pair** of copper and zinc in brine; it was set aside because every detector at Chang'an was built for the violent momentary discharge and reads a feeble steady push as noise — the detector, not the chemistry. Lou Zhen's 549 minute: stacking twenty pairs passes every threshold and will be done within fifteen years regardless of funding. **Expect a source before 565.** | ~3 t/yr |
 | Powder-allowance reform and hardened magazines *(not research; the reign's largest new charge)* | Implemented 534–549. Rail-served posts 5→15 days; beyond-rail 5→60 days with hardened magazine. | ~135 t/yr rising to ~160 |
+
+---
+
+# XIII. THE RETURNS OF 550, AND WHAT THE BOARD MADE OF THEM
+
+*Appended at the close of the reign. The intelligence below is what Chinese factors and Chinese scholars brought home. The conclusions are the Board's and the court's, and two of them are corrections of the court's own errors.*
+
+## A. The Maurya count, and the end of the sea position
+
+The Dunhuang factors delivered, within the limits set them and without being detected in three hundred and twenty-five years of the channel's life. What they delivered ends an argument the Board thought it had two generations to win.
+
+| | c. 525 | c. 550 |
+|---|---|---|
+| Maurya hulls carrying cannon | 30–40 | **~75** |
+| Maurya hulls carrying engines | ~19 | **~70** |
+| Hulls carrying engine and gun together | none reported | **from c. 542** |
+| Crews | short-rationed, drills thin | **regularly drilled at live practice** |
+
+On bore the factors give a range and say honestly that a bore cannot be measured from a wharf. **On rifling they report nothing, and the Board has instructed that this be recorded as nothing rather than as absence of rifling.** A man on a quay who claims to know the inside of a barrel is guessing, and the court has spent this reign learning what it costs to read a clerk's phrase as a fact.
+
+**The Board's assessment, entered without softening.** The victory of 477 was won on wind, on a range the Chinese commander chose, and against hulls that could not answer. The empire's own after-action report named the condition on which all of it rested: *in calm water or confined channels, where range cannot be maintained by manoeuvre, the advantage erodes.* **A hull under steam does not need wind and does not grant an enemy the choice of range.** Seventy of them do not. The condition the report named as a limit has become the ordinary case, and it has become permanent, because no refinement of sail answers an engine.
+
+So the empire's sea position at 550 is this. It holds a genuine advantage in barrel quality and rifled range, resting on Chang'an and Luoyang, Kazakh copper and Datong coal, and that advantage is real. It holds two coastal steam hulls in the Gulf. Against a fleet that can close under its own power in any weather, choose the day, and now shoot when it arrives, a range advantage buys the first hour and not the second. The estimate of section X — two generations and not three — was wrong by most of its span, and it was wrong because it priced powder and barrels and did not price engines. **The court records that it watched the wrong thing for twenty years while writing careful memoranda about the thing it was watching.**
+
+No war is proposed and none is to be provoked. The convoy escorts continue under the orders of 539. The Board's recommendation to the next reign, entered in the handover, is that the empire's naval problem is no longer a gun problem and cannot be solved by hulls: it is a boiler problem, and the answer to it arrived in the same year as the count, from Egypt, which is the one piece of luck in this document.
+
+## B. The indicator that failed, and why
+
+For fifty years the empire's standing test of Maurya powder capacity has been the price of saltpeter in civilian markets: if the state draws production into its own hands, the civilian price rises. **The price has not risen. The Board's reading was that production has not been drawn in. That reading is wrong, and the error is the empire's and not the factors'.**
+
+Maurya saltpeter is refined at its Gangetic source. The state's demand is met before the material ever reaches a port market, so no quantity the state takes can move a price the factors are standing next to. **The indicator was built for an empire that carries nitre to its works, because that is what the Han does** — the northern beds to Chang'an and Luoyang, under the monopoly, on the rail. The court measured another state with a rule derived from its own plumbing and then trusted the reading for fifty years.
+
+The humiliating part is that this was discoverable. Not one factor was ever asked *where the nitre is refined*, because nobody drafting the tasking thought the question could have a different answer than at home. **A tasking is a list of assumptions with question marks after them, and the assumptions are the part nobody audits.** Pei Wen's commission did this for the powder schedule of 366 and nobody thought to do it for the intelligence indicators.
+
+Ordered, 550: the indicator is struck from the standing list. Replacement tasking, and it is slow and honest — factors working the Gangetic refining districts on ordinary trade cover, reporting charcoal and fuel offtake, hired labour, and cart traffic at the source rather than price at the port. The Board's own estimate is that this takes fifteen to twenty-five years to produce a usable series, and it says so rather than promise sooner.
+
+## C. The disclosure the tasking itself made
+
+This is the item the court has never priced in seven hundred years, and the reign ends without having priced it either. The file states it now so that it cannot be missed again.
+
+The Sogdians are Maurya subjects. The empire's own audit of 525 conceded that the channel sells in both directions. **A tasking list handed to that channel is a document about the Han court, and it is a better one than anything a spy could steal.** The list given to Dunhuang in this reign asked: how many hulls carry cannon, of what bore, whether any are rifled, whether saltpeter has risen in civilian markets, whether naval crews remain short-rationed, and — from 546 — whether the Maurya court has noticed Bamo.
+
+Read from Pataliputra that list says, in order: *China fears your fleet more than your army. China believes rifling is the thing you do not have. China believes your powder production is your weakness and is watching your markets for it. China believes your crews are unready. And China is doing something at Bamo that it is afraid you will notice.*
+
+Every one of those is true, which is what makes it costly. The empire has, at its own expense, told its most careful rival where it thinks that rival is weak, which is the same as telling him where to spend his money.
+
+**Ordered for the next reign, since this one has no time to run it:** no single channel is to hold the whole list; taskings are to be split so that no factor and no house can assemble the shape of what the court fears; the Bamo question is withdrawn from the Sogdian channel entirely and given to the Yongchang highland element, which is unproven and slower and does not answer to Pataliputra; and a second western channel is to be raised that is not Sogdian, at whatever cost and however many years it takes, because a service with one road is a service its rival administers.
+
+## D. What went out, and what did not
+
+The Shangfang predicted in 537 that the fact of the powder increase would escape within a season and the shape within five to ten years. Both have gone. Also gone: the withdrawal clause of 535; the refusal of the Irtysh line; that frontier soldiers are being paid in the *changping chao*; the doubled iron schedule; the thirty-one licensed works; and the Wu disturbance of 545.
+
+The Board's reading of that basket is that it is worse than the sum of its parts, because it composes into a portrait: *a frontier that has been ordered it may leave, a treasury paying its soldiers in paper, a rail it decided it could not afford, and a riot in its richest province.* Every item is true, none is the whole truth, and the empire has no way to correct the composition without confirming the pieces.
+
+**Not gone,** so far as the returns can establish: the sealed Jinyang arithmetic; the rifling; the copper obturating ring; the steam hulls; and anything of the eastern ocean. The court notes that four of those five are held inside state arsenals and yards with no carters in them, which is an argument about how leakage happens rather than about how good the empire's secrecy is.
+
+## E. Egypt, and the cheap half
+
+The twenty scholars produced the largest single gain of the reign and produced it by asking politely in a place where the answer was not a secret. Boiler practice in Egypt is not concealed and never was; the empire had spent sixteen years assuming a wall where there was a door.
+
+What came back: **hydrostatic proof testing as institutional doctrine** — every vessel filled with water and taken far beyond its working pressure before any man is permitted to stand near it, and condemned if it complains; **ductility preferred to hardness**; low-carbon plate graded for pressure work; riveted seam and stay practice; and a master-gauge system for the whole of it. And the item the empire's engineers did not suspect and would not have found: **the barrier to pressure was never the strength of the vessel. It was the softness of the seal**, and Egypt cures it with a tree sap from its western provinces.
+
+**Judged honestly, half of this the empire cannot use.** The graded plate wants a working of iron the empire does not have and will not have soon. The seal wants a tree that does not grow anywhere the empire can reach, and the court is not going to obtain it by asking, because a state does not sell the one material its advantage rests on.
+
+**The transferable half is the cheap half, and it does not look like the answer, and it is.** Hydrostatic proof and the discipline of condemning vessels cost almost nothing: a pump, a pressure gauge the Bureau can make and certify, water, and an office with the authority to break a boiler that a yard wants to keep. Nineteen men died at Longbian in 534 because a vessel was tested with men standing beside it and with fire under it. Under Egyptian doctrine that trial does not happen — the vessel is proved cold with water, and water that finds a fault opens a seam and wets the floor where steam takes off a wall and the men in front of it.
+
+**Established, 550: the Proof Office at Longbian**, under the Bureau of Measured Things and not under the yard it inspects, holding the master gauges, proving every vessel cold before any man may stand near it, and holding the authority to condemn a boiler over the objection of the Commissioner of the Southern Yards. **Eight tonnes a year**, from the free residue, which is the last uncommitted money of the reign and the Board's judgement that it is the best-spent eight tonnes in the estimates. The Board's note to the handover is exact: the empire cannot build a steam fleet it dare not test, and it has just been given the testing for the price of a pump.
+
+## F. The scale of the light, and one inference not sent
+
+The scholars were not granted the continuous source and Egypt has never refused it aloud. But men living at Aden cannot be prevented from seeing its scale, and they filed what they saw: light burning on a headland all night without tending; a sheathed tower visible at thirty miles; and — the item that matters — **tall masts rising at Aden on dedicated engines**, engines doing nothing but turning.
+
+The conclusion the scholars drew and the Bureau endorsed: **the force is not stored and released, it is made continuously, by motion coupled to steam.** They do not have the machine. They have the shape of it, which the empire did not have in 525.
+
+This changes the funding, as Fu Yi's minute changed the lens. The continuous source was funded as undrivable because nobody knew where to look. **Somebody now knows where to look: at motion.** The Chang'an workshop's standing search is re-rated for 551 from three tonnes to **fifteen**, directed rather than open, with a stated object — what is produced by moving materials past one another, systematically, beginning with the lodestone, which is the one thing in Chinese experience that acts across a gap without touching. Lou Zhen's 549 minute about stacking twenty pairs stands beside it, unretracted, and the Bureau now holds two live paths where in 525 it held none.
+
+**And the court did not tell Egypt any of this.** It disclosed Fusang, which is a territorial fact under a clause the empire agreed to. It did not disclose the inference, and the reasoning is recorded so it can be judged later: a fact the other party will learn anyway costs nothing to give and buys standing, whereas an inference about the extent of another power's lead is the one thing that party cannot obtain any other way. The empire tells Egypt what it has done. It does not tell Egypt what it has worked out about Egypt.
+
+## G. The census nobody asked for
+
+The largest untasked return is a hull-and-tonnage count of Aden, compiled over years by men with nothing to do but watch a harbour they live beside. The Board judges it better than any figure the empire holds on any foreign port, and possibly better than the figure Egypt holds on it. It was not requested by anyone. The lesson entered in the handover is that twenty honest men resident for a decade produce more than any clandestine tasking the empire has ever run, and that the court's instinct to prefer secret channels over declared residents is a habit and not a finding — which is the argument that carried the Roman residence exchange in the reply below.
+
+---
+
+# XIV. REPLIES
+
+## XIV-1. TO EGYPT
+
+**From the Emperor of the Han, at Luoyang, to the Council of the Pharaoh at Alexandria. Sent by the Aden station and the Quanzhou representation, autumn 550.**
+
+To the Council of the Pharaoh, greeting.
+
+We have your letter of 543 and its enclosure, and we answer every part of it.
+
+**On your settlement.** You told us of it before we could learn it elsewhere, and you sent us the text you sent Rome so that we hold what they hold. We have not been dealt with that way often and we know what it is worth. We make no claim of any kind upon that ocean or that shore, we have no ship in it and no intention of putting one there, and we say so plainly so that no future court of ours can pretend the silence meant something else.
+
+**On consultation, extended to that ocean: granted, and on the same terms as before — in both directions and openly.** If a third power brings us a proposal touching the western shore, you will be told that it was brought. If we bring one, we will tell you we have. And as before, we do not do this secretly: Rome is told that we grant it to you, because a consultation that two parties hide from a third is the beginning of a league, and we will not be in one.
+
+**On notice of voyages: granted.** West of Socotra we will give you the count of hulls and the season, and nothing further, and we ask the same east of it. Neither of us will state purpose or destination and neither should ask.
+
+**Now the part the clause obliges us to tell you, which we would rather tell you ourselves.**
+
+We have crossed our own eastern ocean. Not yours — ours, the far side of the world from you, by the high northern road at forty degrees where the wind blows east. We sailed it in 542 and again in 546 and our ships came home both times. There is a coast there. We have charted some seven hundred li of it, we keep a cache of stores in stone at a place we call Fusang, and twelve men have been living beside it since 548; our relief sailed this spring and at the hour of writing we do not know if they are alive.
+
+And last year we authorised more than that. Six hundred of our landless, with seed, ploughs, iron and breeding stock, sail in three transports in the fifth month of next year to farm there. They carry no cannon. They are not supplied on any schedule and are told they must feed themselves from the second season. It is the same instrument by which we have settled every frontier for six hundred years, and it is the first time we have put it on water.
+
+We told Rome of the crossing in 548 and of the grant this year, and we propose to Rome a rule for that continent — that neither settle near the other's people, that arrival grant no claim beyond what is worked, that neither arm the peoples found there. **We tell you the same because we said we would tell you what we tell them, and because a court that grants a consultation clause and then quietly keeps the one thing worth consulting about has granted nothing.** We ask you for nothing on it.
+
+**On what we send.** You have asked for no knowledge and we send some anyway, being in your debt and disliking the position.
+
+The fever work you gave us is finished and it works; our men now hold a post through the wet season in country that stopped our armies for four centuries. Our agent is our own sweet wormwood, and the whole matter turned on preparing it **cold**, boiling destroying its virtue, which we found by accident and cannot explain.
+
+The second is newer and is yours by right, since it is a sailor's matter and you are the older sea power. On a five-month crossing we lost twenty-four men in a hundred to the sickness of long passages — the swelling gums, the black legs, the sudden death on exertion. Our surgeon compared the dead against the living across that voyage and against a wintering party we lost in the northern ice, and found that the cooks and their boys survived where seamen did not, the cooks alone eating green things: beans sprouted in trays for the pot, pickled greens, ginger and citrus peel. We ordered sprouting trays aboard, the ration issued daily and enforced with the lash because no crew believed it. **On the second crossing we lost nine in a hundred instead of twenty-four.** We cannot tell you why it works. We can tell you it works twice, and if your surgeons have a better account of it we would be glad of it.
+
+**On your physicians and your engineers.** Your doctors held nothing back, on no schedule, as you said. Your yards let our men see how a pressure vessel is proved — filled with water and taken far past its working pressure before any man stands near it, and broken if it complains. We have this year built an office at our southern yard to do nothing else, under our bureau of standards and not under the yard it inspects, with authority to condemn a boiler over the shipwright's objection. **In 534 nineteen of our men, including the only one who understood the whole machine, died at a trial we ran hot and manned.** Under your practice that trial does not kill anyone. We think you have handed us more with that than with anything else you have given us, and we do not think you knew it.
+
+We continue to withhold from you our work upon the electrical force, our steam hulls, and everything of powder, which you have never asked for. We tell you what we withhold rather than let you find the gaps.
+
+## XIV-2. TO ROME
+
+**From the Emperor of the Han, at Luoyang, to Gaius Antonius Severianus Augustus, Emperor of the Romans. By the Dnieper road, autumn 550. Under the standing Agreement, which continues.**
+
+To the Emperor of the Romans, greeting.
+
+**On the rails: accepted entirely, in your form and not ours, and we think your form is better than ours.** A yard of transfer and not a joining of roads; your gauge unbroken, ours unbroken, goods crossing where wheels do not. You gave the honest reason — that a rail running out of one empire into the other is a road for an army — and it is the same reason our own Board would have found in a year and stated less plainly. We accept the yard on your bank, under your garrison and your law, with our factors working in it as your merchants work in ours. We accept that you build it at your cost and we will not pretend that is a concession we extracted. Our own transfer yard, cranes and sidings stand finished on the eastern bank since 541 and are yours to load against from the day you are ready.
+
+**On the paper.** You returned a gift with a correction rather than take it politely, and said why: that small lies compound at this distance. You are right and we thank you for it. It is the second time in a generation a partner has corrected an overstatement of ours unprompted, and we have noticed that the two who do it are the two we trust.
+
+**On the west: you have answered fully and we will not ask again.** We record what you have told us and we record with it that you hold two great islands, a fortified island off the stone coast, a coaling port and a colony on a northern river. We do not ask for your chart. Your reason for withholding it is the fairest we have ever been given — that you gave a full survey at this river two hundred and fifty years ago, received a sketch in the dirt in return, and resolved never to do it again. **That sketch was ours.** We drew it because our western positions were then so thinly held that the true distances would have shown you a frontier you could have taken, and we would draw it again in the same circumstances. We are not going to apologise for it and we are not going to pretend it did not teach you exactly the lesson it taught you. You are entitled to the rule you made from it.
+
+**One thing in your letter we hold above the rest**, and we tell you because you will want to know why. You write that in all that country you have found no metal worked at all — not iron, not bronze, not copper, in tool or weapon or ornament. We have people on the far side of that same continent, and we have therefore standing orders forbidding our captains and our settlers to sell iron or powder to any person found there, on any account. Those orders were written before your letter came, for our own reasons. Your sentence has made them permanent.
+
+**On our own doings on that shore, in full, and this supplements our letter of 548 rather than repeats it.** Since we wrote we have authorised a settlement: six hundred landless families of our northern provinces, three sailing transports, seed, ploughs, iron tools, breeding stock, two smiths, no cannon and no soldiers, sailing in the fifth month of 551 to the coast we call Fusang, at about forty degrees north. They are not supplied on a schedule; they feed themselves from the second season or they fail. Our treasurer opposed it and administered it anyway.
+
+So we are both on that continent, at opposite edges of it, which makes the rule we proposed in 548 more urgent and not less. We repeat it unchanged: that neither settle, garrison or claim within some stated distance of the other's established settlements; that first arrival gives no claim beyond what is actually held and worked; that neither approach the other's positions in force without prior notice; and that neither arm the peoples found there against the other. Given what you have written about metal in that country, **we would add a fifth if you will have it: that neither of us sell iron or gunpowder to any people of that continent, and that each hold his own subjects to it.** We would rather bind ourselves in company than alone.
+
+**On what you ask, which is the measurement of the sphere: sent entire, and gladly.** Not the number, which as you say is a curiosity. The method: the same solar angle taken at the same hour on the same day from posts at the far northern and far southern edges of our territory, the difference in the shadow giving the arc, the ground distance between the posts giving the length of that arc, and the whole circumference following by proportion. With it we send what it assumes and where it is weak — that the sun is far enough to treat its rays as parallel, that our measurement of the ground distance across eight thousand li is the largest source of our error, and that our figure near forty-five thousand li in our measure is not to be trusted in its last part. We send the tables, the instruments' description, the arithmetic of the reasoning from a measured sphere to unseen land, and the works of our astronomers and calculators as you ask, including our tables of eclipses and our methods of interpolation.
+
+**And we send the tube of two lenses.** In 548 we told you we had one and were keeping it, so that you would know we had kept something rather than believe we had kept nothing. You answered by offering us the construction of yours complete, unasked. That makes ours cheap to give and it would be shabby to keep it now. We send the construction, the grinding, the figuring, the spacing and the mounting.
+
+Take with it an honest warning, because a gift with a defect concealed in it is worse than no gift: **our images are fringed with colour and we have not cured it.** We have a dense lead-bearing glass that spreads colour further than ordinary glass for the same bending, and a written proposition of one of our young men that two such glasses shaped against each other might cancel the colour while keeping the bending. We have not made the lens. Our wall is the glass itself, which comes out of the pot streaked and bubbled and different every batch. We tell you the problem and our proposed solution because you have just offered us your telescope, and because if your glassmakers solve it first we would rather they solved it knowing what we know.
+
+**On your observations, and your dispute.** That Venus shows phases as the moon does, and that small lights keep company with Jupiter, we receive with more interest than anything else in your letter, and we have sent both to our Bureau of Measured Things and to our natural-philosophy circles with instruction to look for themselves and to report what they see rather than what they expect. You sent us the dispute along with the observations, saying a dispute is worth more than a conclusion. **That sentence is the most valuable thing you have sent us**, and we would ask leave to have it copied into the preface of our Bureau's standing orders, since our own scholars are in the habit of forwarding conclusions and burying the argument.
+
+We will not pronounce on whether the earth stands still. We will say that our court has twice in two centuries been told by a foreign power that the world is larger or otherwise shaped than we believed — first that it is a sphere, then that there is land beyond our ocean — and that both times we tested it ourselves and both times the foreigner was right and our certainty was not. We have learned to distrust the schoolmen's confidence at exactly this point, and our instruction to our scholars is to look through the glass.
+
+**On residence: granted, ten and ten.** Let your ten men of learning come to our capital and ours go to Rome, on the footing of the exchange we keep with Egypt — that they are what they are said to be, that they are lodged and protected, and that neither court pretends a resident does not see what is in front of him. Our own experience is the argument for it. We have kept scholars at a foreign port for a hundred and fifty years and they have brought us back more than every secret channel we have ever run, simply by living there and asking questions in daylight. Your point that twenty days' visit breeds the misunderstandings that twenty years' residence prevents is one our records support at our own expense.
+
+What our resident may not have, and we say it now rather than let it become a discourtesy later: the making of silk, and anything of gunpowder. Those two are closed to every power without exception, and they are closed to you not because you are you but because they are closed.
+
+**On the Dnieper.** It stands. We want nothing west of it. Your reading of the two peoples farming their own banks is our reading also, and we are glad you wrote it down so no clerk has to guess.
+
+## XIV-3. TO THE MAURYA
+
+**From the Emperor of the Han, at Luoyang, to the Throne at Pataliputra. By the Syr Darya frontier channel, autumn 550.**
+
+Greeting.
+
+We have your letter of 548 concerning the transit charge, and we are late in answering it, for which the fault is ours and not the carriers'.
+
+We note that you have proclaimed the reduction to ten parts in the hundred along the road without waiting for a reply, and we think you were right to. A rate set for a reason should not wait upon a courtesy, and our merchants had the benefit of it a year sooner than our clerks would have managed.
+
+We accept the reduction as what you say it is: a matter of trade, on which you have asked nothing and raised nothing else. We will not pretend to a gratitude that is not owed, since you have told us frankly that you would rather take ten parts of a great traffic than twelve of a shrinking one, and that is sound reckoning rather than a favour. We will say that you told us the reason plainly instead of dressing it, and that we have noted it.
+
+You observe that a growing share of our western trade goes by the northern grass. That is true and we will not be coy about the cause: we have built iron rail from our heartland to the Dnieper and our goods now run on it, and where a road is cheaper our merchants take it, which as you say is the whole of the science. Your road is watered, walled, patrolled and repaired, and the grass is none of those. Both those facts will go on being true and the traffic will divide itself accordingly without either of our courts having much to say about it.
+
+**On your waystations**, we accept your offer and will use it. Our frontier commissioner at Zhenxi is instructed to receive complaints from our factors, to sift out the ones that are merely a merchant's temper, and to send you the remainder in writing with the particulars. We would ask the same of you in the other direction; a complaint answered is worth more than a complaint made, and neither of us gains from our merchants carrying grievances home to be repeated for thirty years.
+
+The port at the eastern mouth of the Strait and the berth worked by our own harbour men we note as standing, and our Board of Naval Affairs has no complaint of either.
+
+One matter of ours remains open and requires no answer. In 547 we proposed a convention for encounters at sea — flags shown, interception signalled, no fire upon a vessel that is neither closing nor interposing, and a written account of any incident sent to a named port within ninety days and answered. That proposal stands as it was made and we do not press it. Our escorts' orders are unchanged either way. We raise it only so that no clerk of ours can later claim we let it lapse, since our proposals have a way of being forgotten by the party that made them and remembered by the party that did not.
+
+We raise nothing further.

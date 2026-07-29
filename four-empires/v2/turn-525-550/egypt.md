@@ -559,3 +559,153 @@ Nothing below is held. Nothing below has a garrison, a magistrate, or a customs 
 ### D. LOST
 
 Nothing.
+
+---
+
+# THE RETURNS, READ — AND THE INBOX
+
+## What the service brought home, and how the council read it
+
+**The finest network in the world is in the wrong province.** Ostia and Ravenna, four centuries deep and undetected, report the Mediterranean establishment steady: refit and rotation, no armament programme, no squadron worked up for distant service — *and the resentment of the Ostia houses, because Rome's ocean hulls are built in Britain.* Isca, Londinium, Gesoriacum. Two-thirds of Roman Atlantic tonnage by 550 is Britannic-built, Britannic-crewed, Britannic-registered, under a chartered company seated at Londinium holding the exclusive right of carriage of the western trade. And Gades, placed to watch that trade, watches a shrinking share of it: the Britannic shippers under-declared, moved their landfalls to southern Hibernia and the Clyde, and the charter of 547 made those the ports of entry.
+
+The council's finding, entered 550 without softening: **we have spent four hundred years perfecting our sight of the sea Rome is not growing, and we have no eyes in the province that has already made an emperor once.** A northern station — Londinium, the Clyde, southern Hibernia — is ordered opened, funded at 3,000 talents a year, under the Gades officer whose sentence produced it. It will be twenty years before it is worth anything. It should have been opened in 412.
+
+**The technical return is excellent and the council believes all of it.** Twelve iron-framed hulls, nineteen screw hulls; the combined rig, screw lifted, coal for calms; nine hundred to a thousand miles on a load against a wind road of twenty-seven hundred — *Rome cannot cross under steam and its own shipwrights say so aloud.* The loss of *Fulmen* and a hundred and twenty men attempting to coal at sea, after which coaling at sea was struck from doctrine. And, obtained whole from 548, a printed per-hull magnetic deviation table, sworn at fitting-out and corrected annually, naming Rome's iron hulls individually — together with the finding that Rome has no theory of *why* iron moves a compass and is not looking for one.
+
+The naval office's note on that last item is the sharpest thing written this turn: *they have solved by procedure what we would solve by understanding, and their solution works. A sworn table corrected annually is better seamanship than a theory nobody has written down. We should ask what else we are not measuring because we think we already know why.*
+
+**The great negative.** Fifty-two Roman warships ordered, building or refitting, and **not one carries a gunport, a shot locker or a magazine.** Nothing afloat is armed with anything but the old engines.
+
+**And the great positive, which the council cannot read.** Gades sees with its own eyes emplaced works on stone at Gades and at Gibraltar. And Rome has licensed the *right of the scrape* — men may enter any stable, cellar, byre, dovecote or post-house and carry off the earth, a licence widely resented and new.
+
+Our chemists needed no prompting. Nitre-bearing earth is what Egypt has scraped for two centuries to make its acid. The service's reasoned conclusion, entered as the service's and not as fact:
+
+> **Rome has built something that eats nitre, has emplaced it on stone, and cannot put it afloat. The limit on it is the earth itself.**
+
+We do not have tonnages, reserves, or how long that limit lasts.
+
+What the chamber then did with that sentence is the most instructive failure of the reign, and it should be recorded exactly. **It reasoned from what it has.** A thing that consumes nitre in quantity and stands on stone at a harbour mouth was read as a very great emplaced charge or a fixed incendiary engine of some new kind — because a charge that is placed and fired is what an explosive *is* here, and a thing on stone at a narrows is where we ourselves would bury one. Nobody in the room proposed that it might **throw**, because nobody in the room has the thought. The Bureau of Foreign Arms' one solid finding — that the craft is *a metallurgy and a measurement, inseparable, and not a chemistry* — sat in the same file and was not joined to it, because a metallurgy and a measurement are what you need for a pressure vessel, and pressure vessels we understand.
+
+We have now been handed the silhouette twice and drawn a shape we already own both times.
+
+**One officer of the assay establishment, Tashere of Alexandria, wrote the other half and it went nowhere.** If Rome's limit is nitre-earth, she noted, then the works at the falls that fixes three thousand tonnes of nitrogen a year out of the air is a lifting of precisely the ceiling Rome is scraping cellars to reach — and we built it for turnips. She asked what we would have, if we ever learned what the thing is, that Rome would not. The minute was entered in 549 and referred to the next reign. **It is the single most valuable page in this turn's file and it has no programme, no appropriation and no officer.**
+
+**On the Atlantic taskings.** In twenty-five years of crews paid off at Gades and Ostia — four islands taken, a long reconnaissance on the far mainland, a great northern bay surveyed, two colonies founded — not one Roman master has come home reporting an Egyptian ship or shore party anywhere in the western ocean. The yards hear everything and have heard nothing. **We are, so far as can be told, unseen.** Against that: Rome asks through its legation to extend naval notification to the Atlantic, and no state asks that of a power it thinks has no ships there. The officers return it honestly as inference from behaviour — Rome has looked, found nothing, and would rather be told than guess.
+
+**On the five ships: no hardening detected.** The coast is formally closed, no Roman hull has gone below the latitude this generation, and the masters at Gades repeat the hostile-peoples-and-current explanation as settled sailing lore. **The lie of the 440s is holding, seventy years on, and it is now being taught to Roman apprentices as seamanship.** The council notes this with a satisfaction it does not examine.
+
+**Counter-intelligence, the best year in a century, and the decision not taken.** Eleven persons handled. Two matter. An Indian factor, Dhanapāla of Bharukaccha, detected 539, permission narrowed, mail read and fed — clean work, running still. And, in 546, a long-standing Roman commercial branch at Alexandria identified not as collectors but as a channel through which material is being **placed on us**: its people ask questions premised on facts that do not exist in the port and that no cargo explains. The service proposed running it back.
+
+**The council never answered.** Not refused. Never answered — the fourth time in this file that a request died of silence, after the survey hull north of the Orinoco, the quarantine of landing parties, and the twice-deferred rule that would have prevented all of them. Somebody is writing on us and we have declined, by not replying to a letter, to find out what they think we are.
+
+**Two corrections to our own record.** Our metallurgist at Quanzhou in 533 died of ordinary illness; the service recorded it as Chinese action and reasoned from that for seventeen years. And our Syrian intermediary lost in 546 was not taken by Rome — Rome has no eastern service at all. We suspended a two-hundred-year programme for two years on a fear of a capability the other party does not possess.
+
+**The Bureau of Foreign Arms** spent fifteen thousand talents in twenty years and did not name the thing. It established three true things: that it is guarded not by walls but by the ruined career of any official who answers; that it is a metallurgy and a measurement, inseparable, and not a chemistry; and that **it has already travelled west.** The Bureau is renewed at 1,200 talents a year, on the northern station rather than the eastern one, over no objection and with no enthusiasm.
+
+## What the council decided, and what it again did not
+
+**Decided:**
+1. Open the northern station — Londinium, the Clyde, southern Hibernia. 3,000 talents a year. Twenty years before it pays.
+2. Accept Rome's extension of naval notification to the Atlantic and the western ocean, in full and at once. It is our own proposal of 542 returned to us and improved, and it costs nothing we were keeping.
+3. Renew the Bureau of Foreign Arms, aimed north.
+4. Reply to all three letters. This is not the ordinary practice of this court.
+5. Restore the Maurya trade and return the eleven men. See below; it is the ugliest thing in the file.
+6. Find and return the factor Priscus of the house of Vibulenus. The search of 550 located him alive at Khartoum, held eleven months by a provincial customs court on a bond dispute that nobody had reported to Alexandria, then simply forgotten in the way a continent forgets a man. He is being sent home with his goods and an apology. Rome's silence on him was not policy; it was that Rome did not know, and neither did we.
+7. Refuse the labour licence.
+8. Answer the fourth Roman matter — the sailing detail of the closed coast — in generous, accurate and entirely misleading terms.
+
+**Not decided, again:**
+- The Roman placement channel at Alexandria. Proposed 546, unanswered at 550.
+- Tashere's minute on nitre. Referred to the next reign.
+- Whether to tell China what makes the force continuously. Debated, deferred, and then answered in the letter below by declining — which is the first time in this reign that a deferral was converted into a stated no. The council found it uncomfortable and did it anyway.
+- The rule that anything twice deferred be funded or formally killed. Proposed 548. Still neither.
+
+---
+
+# REPLIES, AS SENT
+
+## REPLY TO ROME
+
+**From Alexandria, spring 550, by the formal channel through the Roman legation.**
+
+> From the Council of the Pharaoh Ptolemy, at Alexandria, to Gaius Antonius Severianus Augustus, Emperor of the Romans, greeting.
+>
+> We answer your four matters in your own order and we answer all four.
+>
+> *To the first.* We note what you tell us of your islands and your coast and we thank you for telling it plainly. We say in return, as we said in our letter of eight years past and say again so that it is on the record twice: the coasts of the western ocean from the mouth of the great northern river of that shore southward to the River of Silver, and the islands lying off them, are Egyptian. Our harbours are there, our garrisons are there, our people farm there, and there is a city of ours on the northern bank of the River of Silver with a temple and a school in it. We hold the island off the mouth of that great northern river. We claim nothing north of it, we have entered nothing north of it, and we do not intend to. If your possessions and ours are where each of us has said, then no ship of either of us need ever be surprised by the other, which is the whole of what we want from that ocean.
+>
+> *To the second, and we say yes.* Egypt accepts the extension of naval notification to the Atlantic beyond the strait and to the western ocean, on the same terms and through the same channel that have held for a hundred and thirty years without a breach. We accept it entire and we do not condition it on anything in this letter or any other. Our first notification is enclosed with this and covers the sailing season of the coming year, and we will send it every year whether or not yours arrives, because a procedure that one party keeps is worth more than one that both parties argue about. You are right that this is the most useful thing our two states have made together, and you are right about why: guessing between fleets is how states that do not want a war acquire one.
+>
+> *To the third, and we say no.* We will not license the purchase of labour in quantity for your western possessions, and you are owed the reason rather than a form of words. It is not a price we are holding out for and no larger offer will move it. Egypt's own bonded men are held under terms that end — a fixed term, a settlement grant, and land at the finish — and every one of them is inside our law, our courts and our schools, which is the whole of how this empire has held a continent for six hundred years. To sell men out of that into a jurisdiction where our terms do not run is to sell the only thing we actually own. We would be doing it, moreover, to fill works whose hands are dying of a sickness your physicians cannot name, which means the men would be bought to go and die in the same manner. We will not have Alexandrian factors in that trade and we are stopping the private traffic that has grown up around it.
+>
+> We add one thing you did not ask for and may not want. Your physicians will not find the cause in your quarantines. What is killing the peoples of those islands is not one sickness but the ordinary sicknesses of our world arriving all at once among people who have never met them, carried by men who are not themselves ill. We have watched it happen on our own western shore and we know what we are looking at. We tell you this because it costs us nothing, because it is true, and because a man who understands why his quarantine is failing will stop building more of them.
+>
+> *To the fourth.* We give you gladly what we have of that coast, for the safety of your merchantmen, and it is more than we have given anyone.
+>
+> From about twenty-two degrees south to about sixteen degrees south the desert comes down to the sea and there is no fresh water for three hundred miles; a ship that closes it and is disabled has nothing to land for. A cold current sets hard northward along that whole shore and will carry a disabled hull steadily away from any search, which is why wreckage from those waters is never found by those who go looking where the ship was lost. Fog stands on it for days together from the cold water meeting the warm air, thickest from the sixth month to the ninth, and it lies low, so that a masthead sees clear sky and a deck sees nothing. Reefs run out a long way under that fog and are not marked by broken water in a calm. Our own practice, arrived at over generations and at cost, is to stand well out — not less than sixty miles off between those latitudes — to steer by the sun and stars and not by any sight of land, and to let the current do the northing. A master who hugs that shore to keep his bearings is doing the one thing that will kill him.
+>
+> As to the peoples of it we can tell you only what our interior traders have long reported, which is that they are capable seamen, hostile to vessels they do not know, and that this is old and general and not directed at Rome. We keep no naval presence on that coast and so have nothing from the sea to add to it.
+>
+> We would receive your envoys at Alexandria in any season.
+>
+> The Council of the Pharaoh, at Alexandria.
+
+*(Chancery note, not sent: the fourth answer is true in every particular and remains what it has been since the 440s. The latitudes, the current, the fog and the reefs are exactly as given and are the best sailing directions in the world for that coast; a Roman master who follows them will live. Nothing in it is false. It also cannot lead anywhere but away. This is the house at its best work and the council should notice that it feels like generosity.)*
+
+## REPLY TO CHINA
+
+**From Alexandria, spring 550, by the Aden commercial office to the senior scholar, for the Emperor of the Han.**
+
+> From the Council of the Pharaoh Ptolemy, at Alexandria, to the Emperor of the Han, greeting.
+>
+> Your letter is the most valuable thing that has come into this chamber in twenty-five years, and not for the reason your scholars will suppose.
+>
+> You told us what our gift did. You did not have to, and no court we deal with would have. We had written in our own file, before your letter came, that we had probably handed you a frontier and that there would be nobody to be angry at; your letter says so in your own hand, before we asked, and adds that what you do with the ground behind that wall is not decided and that you will not undertake to tell us when it is. We would rather have that sentence than a treaty. We record here that we have no complaint, that we knew the risk when we gave it, and that we would give it again.
+>
+> The cold steeping is astonishing and we will not argue with your prohibition. We had the principle and never the plant; you had the plant and have now made the principle general, which is more than we did with it. Our physicians in the Congo and on the western shore will have it within the year and will keep it cold, and we will tell you what it does in bodies of a different sort in a different fever country, since that is the one thing we can add. Your second agent we will trial with the dose written as you wrote it.
+>
+> **On the dense glass: yes, and here is the answer, whole.** Two lenses, not one. A converging lens of ordinary glass paired with a diverging lens of your dense glass, the curvatures matched so that the two spreadings of colour cancel while a net bending of light remains. The dense glass is the missing half — it spreads colour further for the same bending, which is exactly the property that lets it undo what the ordinary glass does. Our workshops have made these since about the year 390 and we send you the geometry, the ratios, the grinding and the cementing, and a corrected pair from Alexandria to hold against your own. Do not spend twenty years on it. We should have told you this in the first exchange and did not, because nobody asked us the question in a form we recognised.
+>
+> **On the vessels that carry fire under pressure: yes, all of it, and the testing first as you asked.**
+>
+> We send you our whole proving practice, which is six hundred years old and written in blood. No vessel is approached by any man until it has been filled entirely with water — with water, never with steam, because water that fails splits and steam that fails destroys the room — and pressed to half again its intended working pressure and held there while it is walked and struck and looked at. Every vessel is proved again at a fixed interval and after any repair. The proof is stamped into the plate with the date. A vessel that has been opened is a new vessel and is proved again. Alongside this we send our plate specification and how we test a plate before it is rolled, our seam and rivet practice and the pitch and the caulking of it, our stay spacing and why the flat surfaces and not the curved ones are what kill, the fusible plug that opens before the crown burns dry, our two independent water gauges and the rule that a boiler with one gauge is a boiler nobody may stand near, and the safety valve set and locked against the man who wants more speed. And our failure books: four hundred years of every burst we have had, what was found afterward and what was changed. Read the failure books before the specifications.
+>
+> Your nineteen men and the one who understood the whole of it — that is the failure our practice exists to answer, and it is not a knowledge problem but an organisation one. Never let the whole of it live in one man. Write it down badly rather than not at all.
+>
+> **On the standing question of 425, we answer no, and we will say no rather than let it go unanswered for another century.**
+>
+> We know what produces the force continuously. We have known it for two hundred years, it is the foundation of everything we lead in, and we are not going to send it. You told us at the outset of this partnership what you would not share and you have honoured that exactly; we have never once given you a straight refusal in return, only silence and slowness, which is a worse manner of refusing and we are done with it. So: no, and it is a considered no, and it will not be different next year because the reason is not the season.
+>
+> We will say two things that are ours to say. Your nine thousand recorded failures at Chang'an are not failures; they are the only such record in the world and you should print it. And you are right that you will not find it by looking, because it is not a substance and not a vessel — it is a *motion*, and the question your scholars should be asking is not what makes the force but what happens when a thing that is already forceful is moved past a wire. We tell you the shape of the door and not what is behind it. That is more than we have given anyone and less than you asked for, and we would rather you knew exactly which it was.
+>
+> We withhold nothing else and we would rather list it than have you find out: we send our medicine entire, our optics entire, our proving and boiler practice entire, our navigation and our tables. We do not send the electrical force. There is no other item.
+>
+> The Council of the Pharaoh, at Alexandria.
+
+## REPLY TO THE MAURYA
+
+**From Alexandria, summer 550, carried to Pataliputra by an Egyptian fast hull under a herald's flag, with the nine men aboard.**
+
+> From the Council of the Pharaoh Ptolemy, at Alexandria, to the Throne at Pataliputra.
+>
+> Your letter was written in 534. It reached this chamber in 549. We are answering sixteen years late and we begin with that, because everything else in this letter follows from it.
+>
+> The letter was taken from your herald at the strait by the officer commanding, who read it, judged it a matter of the coffee monopoly, and sent it to the monopoly's bureau at Aden, which filed it. It never came to Alexandria. It was found this past year in an archive search we were conducting for another purpose entirely. No one hid it. It was simply put where letters of that kind are put by men who have never been told that a great power's herald is not a customs matter. We have removed the officer, and we have made it law that any communication under any flag of any state is to be forwarded to Alexandria unopened within the day.
+>
+> Now the facts, and we set them out as they are rather than as they would be comfortable.
+>
+> Your eleven men walked inland to buy a plant. They were taken by guards of the coffee monopoly, which for two hundred years has hunted men doing exactly that, and were held in the Aksumite highlands. They were not interrogated under injury and they were not condemned by any court, because no court was ever told about them. They were held because holding them was the standing instruction and nobody senior ever read the file. **Nine are alive and are aboard the vessel that carries this letter. Two died — one of a fever in the fourth year, one of a growth in the ninth. Their names, the dates, and the physicians' entries are enclosed. Their remains are aboard.** We are not going to describe sixteen years of that as anything other than what it was.
+>
+> The closing of the coast was not our answer to the eleven men, and it was not the crown's act. It was ordered by the monopoly's bureau at Aden on its own authority, as a precaution against further plant-seekers, and it stood for years because the harbours it closed report to that bureau and to nobody who would have questioned it. Your councillor who struck out the accusation and put a question in its place was right, and we ask you to tell him so. Had that letter come as an accusation we would have answered it as one and we would have been wrong and loud. As a question it obliged us to go and look, and what we found was ourselves.
+>
+> **The coast is open from the day this letter is sealed.** Your masters may water where they have watered for four hundred years, your factors may reopen their houses, and the old permission stands on the old terms — trade through our ports, hold no ground, claim no ground — which you have kept for five hundred years, including, as you say, while you were angry. We have written to every harbour on that shore over the Pharaoh's own seal and not the monopoly's.
+>
+> We accept your offer of free entry at Oman and at the eastern mouth of the Strait, with thanks, and we will not pretend it is a small thing or that we are doing you a favour by taking it. In return, and not as a bargain but because it is owed: for twenty-five years Maurya hulls entering the Red Sea pay the published rate on the cargo and no port due and no anchorage due at Aden, Berenice, Myos Hormos or Alexandria. Our rate of thirty parts in the hundred stands, published and the same for every hull afloat, as it has since 376; we will not discriminate in it for you or against you, and you would not trust us if we did.
+>
+> On your last matter we say only this. You have told us your court will pursue natural philosophy by its own scholars upon its own reasoning and will accept no guidance from ours. We accept that without argument, and we will add that you are right to have decided it. We are aware of what our people have at times given yours. We will not insult you by explaining further and we will not do it again.
+>
+> Send by the same hand, and send it to Alexandria.
+>
+> The Council of the Pharaoh, at Alexandria.
+
+*(Council note, entered with the copy. Sixteen years of a great power's letter in a monopoly's file, eleven men held by a standing instruction nobody read, and a coast closed to a five-hundred-year trade by a bureau at Aden — none of it decided, all of it done. We have spent this entire turn writing that our characteristic failure is the decision nobody makes. Here is what that costs when the thing not decided is a person. The two who died are the only entries in this file that cannot be reopened at the next reign.)*
