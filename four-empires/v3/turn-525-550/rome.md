@@ -52,13 +52,17 @@ The hand weapon followed from the light vessel by argument and has not followed 
 
 ### The Fleet
 
-The steam fleet stood at twenty to thirty operational hulls at 500 and stands at seventy-eight at 550, of which thirty-one are iron-plated and gun-armed and forty-seven are wooden, twelve of the wooden being purpose-built gun vessels framed for recoil from the keel up. The building followed the reassessment of the previous turn, which established that Egyptian hulls are beyond Roman counting, and the *magister classis* was given a standing authority in 531 to lay down six warship hulls a year and took it up in every year but two.
+The steam fleet stood at twenty to thirty operational hulls at 500 and at thirty-one in 525. The building followed the reassessment of the previous turn, which established that Egyptian hulls are beyond Roman counting, and the *magister classis* was given a standing authority in 531 to lay down six warship hulls a year, which he took up in eighteen of the twenty years to 550 for 108 hulls laid down.
 
-Gun mounting was first tried in 542 and 543 by retrofitting existing wooden hulls framed for a ram and a ballista, and the trials worked their frames loose. That is a finding about retrofits. Rome's shipwrights can frame a wooden vessel for the recoil of a five-pound shot, and from 544 twelve were built that way for the shallow-water work where a plated hull draws too much. New construction is otherwise plated, iron plate having been standard since the 480s against the shallow-draft swarming attack described to Rome in about 420.
+Against that stands an attrition line, which the launcher positions have and the hulls have not had. Thirty-four hulls were struck across the period: twenty-two wooden paddle vessels of the 490s and 500s worn out past economical repair, seven lost at sea to weather, boiler failure, and one grounding on the Iberian coast, and five hulked as coal lighters at the western stations. The fleet at 550 is therefore 31 plus 108 less 34, which is 105 operational hulls.
+
+They divide as seventy-four iron-plated and gun-armed, twelve purpose-built wooden gun vessels, and nineteen wooden hulls carrying no pieces. The nineteen are survivors of the building of 500 to 531 and not of anything older, the plated hull having been standard for new construction only from the 480s and the yards having gone on turning out wooden hulls for a generation after that while plate capacity was short. Eighty-six hulls carry pieces, at two apiece for the 172 afloat.
+
+Gun mounting was first tried in 542 and 543 by retrofitting existing wooden hulls framed for a ram and a ballista, and the trials worked their frames loose. That is a finding about retrofits. Rome's shipwrights can frame a wooden vessel for the recoil of a five-pound shot, and from 544 twelve were built that way for the shallow-water work where a plated hull draws too much. New construction is otherwise plated, against the shallow-draft swarming attack described to Rome in about 420.
 
 The all-iron hull slipped past the projection made around 500, which was twenty-five to thirty years from then. Plate was never the difficulty, the rolling mills having produced consistent sheet since the 480s. Iron framing in heavy sections is, because the mills roll flat plate well and heavy angle and bar badly, so sections have been forged at high cost and inconsistent quality. Behind that stood yard capacity, taken up by plating existing hulls, by the western transports, and by the screw programme, which the *magister classis* has held at higher priority since Egypt's quiet vessels were observed in the fifth century. Four all-iron hulls were laid down from 548 and the first is expected in service between 556 and 560.
 
-Nine warships are in western waters, rigged for sail with engines banked, since no steam hull crosses three thousand nautical miles on a bunker good for six or seven hundred.
+Sixteen warships are in western waters, rigged for sail with engines banked, since no steam hull crosses three thousand nautical miles on a bunker good for six or seven hundred.
 
 ### The Western Transports and the Migration They Carried
 
@@ -68,7 +72,9 @@ Hulls dedicated to the run stood at 130 through 533 and rose to 268 by 550 as th
 
 The allotment registers and the tax rolls of the western provinces carried 1,742,000 colonists and their children at 550, the balance above this turn's landings being the cohort landed in the previous turn together with children born in the west, less ordinary mortality. The crossing and the island fevers were assessed in the previous turn as not severe and nothing since has changed that.
 
-The demand this serves is worth stating in figures, because it is the reason the commitment was made. The military establishment is 640,000 men on twenty-year terms, which discharges about 32,000 men a year, each owed land and most with families, so the settlement demand runs near 100,000 persons a year. The west absorbed 46,000 a year across this turn, forty-six per cent of it, against something under four per cent in the previous turn. The remainder still goes onto marginal ground in the north and east.
+The demand this serves is worth stating in figures, because it is the reason the commitment was made. The military establishment is 640,000 men on twenty-year terms, which discharges about 32,000 men a year, each owed land and most with families, so the settlement demand runs near 100,000 persons a year. The west absorbed 46,000 a year across this turn, which is forty-six per cent of it. The remainder still goes onto marginal ground in the north and east.
+
+Of the 1,742,000 on the island and Yucatan rolls, 1,180,000 are on Hispaniola, Cuba, and the lesser Antilles and 562,000 on the Yucatan plain. The island settlements feed themselves on cassava and maize since 542 and no longer draw shipped grain; what they are short of is not food but the subject labour the gold workings were planned around, which is why the newer allotments are being laid on the Yucatan plain and on the northern seaboard rather than on the islands.
 
 ### The Conquest of the Yucatan Centres
 
@@ -80,7 +86,7 @@ Reconnaissance ran from 528 to 540. Observation balloons were flown from cleared
 
 The sequence was as follows.
 
-The lagoon town went first, in 541, and it went by sea. Six thousand troops were landed from the coastal station in the ships of the western squadron, with two of the shallow-draft wooden gun vessels working inside the lagoon, and the town was taken in nine days for 180 Roman dead. It was not sacked and it was not garrisoned as a conquest. Its merchant houses were left standing under a treaty as Rome's first western client, its trade rights confirmed, and its obligation fixed at pilotage, porterage, market information, and interpreters. Rome wanted the entrepôt working and wanted the roads inland described by men who used them, and a burned town describes nothing.
+The lagoon town went first, in 541, and it went by sea. Six thousand troops were landed from the coastal station in the ships of the western squadron, which carried no pieces, no gun was afloat anywhere in the fleet before the mountings of 544, and the ships gave what support they gave with their ballistae. Six of the light carriage pieces corrected to the new proportions in 540 were landed on the beach and worked from firm ground against the landward wall. The town was taken in nine days for 180 Roman dead. It was not sacked and it was not garrisoned as a conquest. Its merchant houses were left standing under a treaty as Rome's first western client, its trade rights confirmed, and its obligation fixed at pilotage, porterage, market information, and interpreters. Rome wanted the entrepôt working and wanted the roads inland described by men who used them, and a burned town describes nothing.
 
 From the lagoon the columns went inland. Forty thousand further troops came out across 541 and 542, drawn from the Danube and African provinces and not from the island garrisons, so the whole commitment was 46,000, which is seven per cent of the establishment. Three columns worked in sequence rather than together, each of 13,000 with a train of light carriage pieces, with 1,000 at the coastal depot, because a fractured country taken one centre at a time does not need three simultaneous armies and does need roads behind each.
 
@@ -92,7 +98,9 @@ Coba on the eastern plain was the hardest and took most of 546, being the larges
 
 Nineteen centres were taken by assault in all, fourteen are held as tributaries, one stands as a client, and eleven counted centres in the hill country have not been reached. Two hundred and sixty Roman miles of military road were cut, four inland forts and eleven fortified posts raised, and the garrison stands at 22,000. Roman dead across the nine years were 3,100 to the fighting and 5,800 to fever, the fever being the heavier charge by a wide margin, as it was in the Delta before 90 BC.
 
-The tribute is gold, cacao, cotton, dye, salt from the northern coast pans, and labour, and it yielded 34 million HS in 549. It is already falling. The tribute rolls of the districts taken first fell by about a third within six years of being counted, in the same manner as the islands, and the same three explanations are argued in the printed journals with the same want of any theory behind them.
+The subject population under tribute is 1,200,000 across the taken and tributary districts, counted by the ruling houses on Roman assessment forms and counted badly, the northern plain being denser farmed ground than anything Rome holds in the west outside its own colonies. The tribute is gold, cacao, cotton, dye, salt from the northern coast pans, and labour, and it yielded 34 million HS in 549, which is 28 HS a head against 43 for the empire at large and is what a first decade of subjugation on a stone-tool economy will bear. It is already falling. The tribute rolls of the districts taken first fell by about a third within six years of being counted, in the same manner as the islands, and the same three explanations are argued in the printed journals with the same want of any theory behind them.
+
+Colonisation followed the columns. Veteran allotments were laid from 545 on the cleared plain behind the taken centres and on the ground the tributary houses gave up under assessment, and carried 562,000 colonists at 550. They are the best fed of the western settlements. The Yucatan plain is worked maize ground already and needs no clearing, tributary labour works it under the old arrangements with a Roman assessment over the top, and the district is the only one in the west that ships a grain surplus rather than eating one.
 
 ### The Northern Seaboard, Worked Up the Rivers
 
@@ -116,9 +124,9 @@ The economic effect is what the accounts register. Two populations move in oppos
 
 ### The Western Accounts
 
-The fiscal instrument was argued in 533 and settled in 535. The *curatores* of the treasury extended the existing luxury import duty to western cargo at the ports of landing, chiefly Gades and Olisipo with Ostia for re-export, at twelve per cent. The land tax was not raised, being the largest line in the accounts and falling on the veteran colonies that are the recruiting base of the northern army. Debasement was proposed by a minority and rejected on the standing objection that the mint is the instrument of last resort in a war and is worth less each time it is used. The Imperial Commercial and Industrial Council opposed the duty on raw cotton and hides on the ground that the Rhine and British mills consume the cotton and that a duty on a raw material taxes Roman manufacture rather than western luxury, and that objection was accepted in the manner of the standardisation compromise of 480: twelve per cent on cacao, tobacco, dyestuffs, and worked gold, four per cent on raw cotton and hides. The duty yielded 96 million in 549. Advances from the shipping companies against the following season's landings carried the building programme's early years, which extends a practice Rome has used since it took advances from tax-farmers and large suppliers and is not borrowing in a form the treasury will admit to, there being no bond market to borrow in.
+The fiscal instrument was argued in 533 and settled in 535. The *curatores* of the treasury extended the existing luxury import duty to western cargo at the ports of landing, chiefly Gades and Olisipo with Ostia for re-export, at twelve per cent. The land tax was not raised, being the largest line in the accounts and falling on the veteran colonies that are the recruiting base of the northern army. Debasement was proposed by a minority and rejected on the standing objection that the mint is the instrument of last resort in a war and is worth less each time it is used. The Imperial Commercial and Industrial Council opposed the duty on raw cotton and hides on the ground that the Rhine and British mills consume the cotton and that a duty on a raw material taxes Roman manufacture rather than western luxury, and that objection was accepted in the manner of the standardisation compromise of 480: twelve per cent on cacao, tobacco, dyestuffs, and worked gold, four per cent on raw cotton and hides. Dutiable landings were valued at 470 million in 549, being 180 million of cacao, 95 million of dyestuffs in cochineal and logwood, 70 million of tobacco, 30 million of worked gold ornaments, and 95 million of raw cotton and hides, so the duty yielded 50 million. Bullion gold is not in that figure, being landed on the imperial account and entered under mining. Advances from the shipping companies against the following season's landings carried the building programme's early years, which extends a practice Rome has used since it took advances from tax-farmers and large suppliers and is not borrowing in a form the treasury will admit to, there being no bond market to borrow in.
 
-The western charge in 549 was 288 million against western revenue of 240 million, being 110 million of island gold, 96 million of duty, and 34 million of Yucatan tribute. The fiscal conservatives moved in 536 to cap the charge and were beaten. The office that gained standing across both defeats is the *praefectus* of the western fleets, whose command now disposes of more tonnage than any other single naval command in the empire.
+The western charge in 549 was 288 million against western revenue of 194 million, being 110 million of island gold, 50 million of duty, and 34 million of Yucatan tribute, so the west runs 94 million short and both of its revenue lines are falling. The fiscal conservatives moved in 536 to cap the charge and were beaten. The office that gained standing across both defeats is the *praefectus* of the western fleets, whose command now disposes of more tonnage than any other single naval command in the empire.
 
 ### Egypt
 
@@ -150,7 +158,7 @@ The fourth-century labour law was framed on productivity and had grown inadequat
 
 ### The Establishment Dispute
 
-The powder establishment at 550 is 11,400 men in the mills, 26,000 contractors and labourers in collection, 1,900 men at four proving grounds and the drawing offices, and 420 men on the hand weapon. The design comparison is 1,900 against 420, and the Senate was asked to defend it in 547.
+The powder establishment at 550 is 1,150 men in the mills, 2,600 contractors and labourers in collection, 640 men at four proving grounds and the drawing offices, and 180 men on the hand weapon. The design comparison is 640 against 180, and the Senate was asked to defend it in 547.
 
 Three arguments were given. The hand weapon cannot absorb more men while its three variables cannot be separated and there is no instrument for measuring what happens inside the tube, so added men produce added inconsistency. The emplaced and carriage pieces defend the Dnieper line, the river crossings, and the fortified positions, which is the first item in the court's order of concerns and has been in every century on record. And the *praefecti* of the frontier districts asked for pieces and did not ask for tubes, and the Senate funds what its officers ask for.
 
@@ -164,9 +172,9 @@ Eleven men have worked since 534 on why Rome's pneumatic message tubes do not ac
 
 **State of the empire, c. 550 AD.**
 
-Population 123 million in the old territory and 2,404,000 in the west, being 1,742,000 colonists and their children on island and Yucatan allotment and tax rolls, 214,000 colonists on the northern seaboard rolls, 415,000 subject and enslaved islanders on tribute rolls with the true number estimated higher, and 33,000 Yucatan tributaries entered on the rolls so far.
+Population 123 million in the old territory and 3,571,000 in the west, being 1,180,000 colonists and their children on the island rolls, 562,000 on the Yucatan plain rolls, 214,000 on the northern seaboard rolls, 415,000 subject and enslaved islanders on tribute rolls with the true number estimated higher, and 1,200,000 Yucatan subjects on tribute assessment.
 
-Revenue 5,280 million HS.
+Revenue 5,234 million HS.
 
 | Source | 500 AD | 550 AD |
 |---|---|---|
@@ -175,26 +183,26 @@ Revenue 5,280 million HS.
 | Mining, including western gold | 400 | 546 |
 | Industry (factory, coal, royalties) | 880 | 1,556 |
 | Luxury import duties | 280 | 313 |
-| Western cargo duty, new in 535 | 0 | 96 |
+| Western cargo duty, new in 535 | 0 | 50 |
 | Western tribute, new in 541 | 0 | 34 |
 | Other levies | 320 | 310 |
-| **Total** | **4,000** | **5,280** |
+| **Total** | **4,000** | **5,234** |
 
 | Charge | 500 AD | 550 AD |
 |---|---|---|
-| Military and frontier | 2,520 | 3,485 |
+| Military and frontier | 2,520 | 3,455 |
 | Administration | 480 | 620 |
 | Infrastructure | 360 | 470 |
 | Social | 240 | 310 |
 | Research and development | 120 | 260 |
-| Free margin / reserve | 280 | 135 |
-| **Total** | **4,000** | **5,280** |
+| Free margin / reserve | 280 | 119 |
+| **Total** | **4,000** | **5,234** |
 
-The free margin fell from 280 million to 135 million at the highest revenue in Roman history. The warship authority, the western transports, the fourteen powder mills, and the Yucatan campaign are where it went. Reserves stand at about three months of revenue.
+The free margin fell from 280 million to 119 million at the highest revenue in Roman history. The warship authority, the western transports, the fourteen powder mills, and the Yucatan campaign are where it went. Reserves stand at about three months of revenue.
 
-Industry is 29.5 per cent of revenue and land tax 29.6, the two lines crossing within the next generation on present trend. Technical workforce 610,000, or 0.50 per cent of the old-territory population. Literacy 76 per cent empire-wide, against 67 at 500 and 48 at 400: the industrial cities of the Rhine valley, Britain, and Rome itself return 93 per cent of working-age adults, the administrative cities 88, the settled rural provinces 70, and the frontier countryside 55, which is where the remaining gain lies. No state school was built. The rise came from the army teaching its recruits, from fee-charging town schools made cheap by printed primers, from the powder mills and rail yards adding trades that will not hire an illiterate, and from the Church after 450.
+Industry is 29.7 per cent of revenue and land tax 29.9, the two lines crossing within the next generation on present trend. Technical workforce 610,000, or 0.50 per cent of the old-territory population. Literacy 76 per cent empire-wide, against 67 at 500 and 48 at 400: the industrial cities of the Rhine valley, Britain, and Rome itself return 93 per cent of working-age adults, the administrative cities 88, the settled rural provinces 70, and the frontier countryside 55, which is where the remaining gain lies. No state school was built. The rise came from the army teaching its recruits, from fee-charging town schools made cheap by printed primers, from the powder mills and rail yards adding trades that will not hire an illiterate, and from the Church after 450.
 
-Technology: powder in 1,460 pieces, of which 212 on carriages with the field forces and 172 afloat; no serviceable hand weapon; seventy-eight steam warships, thirty-one iron-plated, four all-iron hulls laid down; compound steam to 400 horsepower; coal gas, rolling mills, balloons, reliable longitude, pneumatic tubes, western coal at tidewater and a western shipyard. No electricity, no chemistry, no theory of any of it.
+Technology: powder in 1,544 pieces, of which 212 on carriages with the field forces in Europe, 84 with the Yucatan columns, and 172 afloat; no serviceable hand weapon; 105 steam warships, seventy-four iron-plated, four all-iron hulls laid down, the screw still not in fleet service; compound steam to 400 horsepower; and carried forward unchanged from the list at 500, the telescope, reliable longitude, coal gas lighting, rolling mills, tethered observation balloons, pneumatic message tubes, Dacian petroleum in lamp oil and lubricant, mechanised agriculture in seed drills, steam threshing and reapers, standardised interchangeable parts for designated critical components, distilled spirits in medical use, and lightning conductors on tall structures. New in the west, coal at tidewater and a shipyard. No electricity, no chemistry, no theory of any of it.
 
 ---
 
@@ -238,11 +246,11 @@ Rome answers late and states so plainly. The matter of the lines at the river wa
 
 ## RESEARCH
 
-**Powder supply.** 11,400 men in fourteen mills, 26,000 contractors in collection, 4,200 deliberate beds. Object is tonnage. Output rises from 214 tons in 549 toward 600 by 570 as the beds laid from 538 reach full yield and 6,000 more are laid. Bed yield is the governing figure and a shortfall in it caps everything below.
+**Powder supply.** 1,150 men in fourteen mills, 2,600 contractors and labourers in collection moving 6,400 tons of scrapings a year, 4,200 deliberate beds. Object is tonnage. Output rises from 214 tons in 549 toward 600 by 570 as the beds laid from 538 reach full yield and 6,000 more are laid. Bed yield is the governing figure and a shortfall in it caps everything below.
 
-**Pieces.** 1,900 men at four proving grounds and the drawing offices, foundry work charged to the naval and frontier accounts. Pieces in service from 1,460 toward 3,200 by 570. Pieces are not linear in powder: at the standing allowance of forty practice rounds a year, 3,200 pieces take 84 tons a year in practice and 40 in proving, and the remainder of a 600-ton output goes to magazine, which would carry the armament for a season rather than eleven days and would let a campaign be planned around it for the first time. Founding capacity is 700 pieces a year and is not the constraint.
+**Pieces.** 640 men at four proving grounds and the drawing offices, foundry work charged to the naval and frontier accounts. Pieces in service from 1,544 toward 3,200 by 570. Pieces are not linear in powder: at the standing allowance of forty practice rounds a year, 3,200 pieces take 84 tons a year in practice and 40 in proving, and the remainder of a 600-ton output goes to magazine, which is targeted at 7,000 tons by 570. That carries 3,200 pieces in continuous action at eighty rounds a day for six weeks against eleven days now, and six weeks is the point at which a campaign can be planned around the armament. Founding capacity is 700 pieces a year and is not the constraint.
 
-**The hand weapon.** 420 men. The three variables of tube, grain, and ignition can each be varied but their effects cannot be attributed, and there is no instrument for measuring what happens inside the tube at the instant of firing. Building such an instrument is the establishment's first object. A serviceable weapon is expected between 570 and 600.
+**The hand weapon.** 180 men. The three variables of tube, grain, and ignition can each be varied but their effects cannot be attributed, and there is no instrument for measuring what happens inside the tube at the instant of firing. Building such an instrument is the establishment's first object. A serviceable weapon is expected between 570 and 600.
 
 **Barrel metal.** 340 men, jointly with the naval boiler programme. Object is why boiler proportions overestimate what a piece must hold and how thin a tube may safely be made. Expected within twenty-five years: better proportions by trial.
 
