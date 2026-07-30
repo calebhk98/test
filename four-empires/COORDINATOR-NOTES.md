@@ -62,6 +62,24 @@ Every item below happened. Most were mine.
 
 **Verify before pushing back, and verify that a push was carried out.** Four times this session I nearly corrected something from memory that was not in the source. Once I reported Egypt's firearms as removed without opening the file. They were still there.
 
+## 3b. Failure modes found in v3
+
+**Never tell a country what it observes.** Asking Egypt to write what it found in Australia and the Maurya to write what it saw offshore produced two incompatible records: the Maurya logged parties landing, Egypt logged withdrawal without contact. Both were written to order, so neither is evidence. Ask only two things: what does this country **do**, and what are its **standing orders** for that situation. Then adjudicate the encounter yourself from the two sets of orders. Orders are checkable against a file; observations are not.
+
+**Praise blinds the reader who gives it.** This recurs every generation of this project and it recurred badly in v3. Once a passage has been called excellent it stops being read. Say what a passage does and move on.
+
+**Colonial death rates compound and agents model them as a single cause.** Contact disease, war, enslavement, and forced labour in mines and works each carry their own mortality and they stack. A subject population falling 0.6 per cent a year is not a catastrophe, it is a mild decline. Where a militarised power is conquering, enslaving and working a population that has never met the diseases, the honest figures are far steeper, and the coordinator must not accept a gentle curve as grimness.
+
+**A bluff is a display placed where it can be tested.** Operational secrecy and counter-intelligence are not bluffs. This world's China bluffs by holding a frontier with a few dozen men and months of lead time at the end of its supply line, and by threatening what it cannot deliver. When an agent claims its court deceives, check whether the deception is a posture a rival could call, or merely a thing withheld.
+
+**Agents cap compounding mechanisms and model them as linear.** Literacy and industrialisation are the two that matter here. A cheap-print examination society feeds back on itself: failed candidates become teachers, teachers lower the price of schooling, cheaper schooling produces more candidates, more candidates force the examination harder, a harder examination makes teachers more valuable. Ask explicitly for the loop and for what the loop does over a century. A figure that stops where the first generation stopped is the tell.
+
+**Industrialisation is driven by profit on volume and consistency, not by the price of labour.** Merchants mechanise because a uniform product made faster takes the market, and they then carry the method into the next trade. This happens whether labour is scarce or abundant. Where an agent explains a factory by wage levels, it has the causation backwards, and the real sequence is usually: method observed abroad, applied to one trade, profit, carried into others, then transport becomes the binding constraint and the state is lobbied for it under another name.
+
+**A court must not adopt its own lie, and the coordinator must not correct the lie out of existence either.** Egypt told Rome its African coast was newly taken. The internal file then began treating long-held ground as new. The fix is to keep the lie in the letter, stated flatly and without detail, and to keep the internal record accurate — not to soften the letter into something true.
+
+**Check that a promised deliverable is actually produced in the turn it is owed.** Rome spent this turn reasoning about India's silence while India was never asked to produce the account or the letter. An obligation one court is waiting on has to be a live item in the other court's turn, or the exchange cannot resolve in either direction.
+
 ## 4. Hard rules for agents
 
 1. **You may never state what another power did, decided, intends, believes, possesses, or offered.** You may report what your people observed and what your court concluded. Conclusions may be wrong.
