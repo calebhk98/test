@@ -12,7 +12,7 @@ Standing figures at open: revenue 132,000 talents, reserve 263,000 talents, two-
 
 Two bases are carried. Gross receipts include an imputed value for the copper Item 2 reclassifies to internal consumption. Reported revenue excludes it.
 
-Gross receipts at 550 are 168,000 talents against 132,000 at open, and the rise is itemised because the shallow slope of the last century rested on there being no new ground to add. The agrarian base rises 24 percent on a population up 15.6 percent and a grain and root surplus up 7 percent. The Red Sea and canal tolls rise 24 percent with the volume of the eastern and Chinese trade. The western holdings yield 7,800 talents, from Plata wheat, hides and wine, tropical timber and latex, highland silver, and the first Pacific copper and nitrate. The industrial works yield 4,000 talents in aluminum, precision goods, machine tools and plated goods sold at monopoly rates. Reported revenue at 550 is 161,000.
+Gross receipts at 550 are 168,000 talents against 132,000 at open. The agrarian base rises 24 percent on a population up 15.6 percent and a grain and root surplus up 7 percent. The Red Sea and canal tolls rise 24 percent with the volume of the eastern and Chinese trade. The western holdings yield 7,800 talents, from Plata wheat, hides and wine, tropical timber and latex, highland silver, and the first Pacific copper and nitrate. The industrial works yield 4,000 talents in aluminum, precision goods, machine tools and plated goods sold at monopoly rates. Reported revenue at 550 is 161,000.
 
 The reserve target is computed on the gross basis. At 168,000 the two-year target is 336,000 against a reserve of 263,000, so the target rises by 73,000 talents as the state grows. Top-up is set at 2,920 talents a year and the reserve stands at 336,000 at 550.
 
@@ -42,7 +42,7 @@ The note is sent because the presence is now open. Egyptian garrisons, works, sh
 
 The note states that the coast is under Egyptian administration, asks for advance notice of passages, and asks that vessels with no commercial business keep to open water. Standing orders continue: shadow, fire only if fired upon, issue no threat that will not be enforced.
 
-The premise the council fears most is restated here in full. The case Egypt survives is a sequential single front against Rome, through terrain and depth. The case Egypt does not survive is a coordinated two-front war against Rome and the Maurya at once. Preventing that coordination is the central diplomatic objective of the state, and the mechanism by which coordination forms is a grievance one power can name to another.
+The case Egypt survives is a sequential single front against Rome, through terrain and depth. The case Egypt does not survive is a coordinated two-front war against Rome and the Maurya at once. Preventing that coordination is the central diplomatic objective of the state, and the mechanism by which coordination forms is a grievance one power can name to another.
 
 The council's read, assumed at best, being a judgement about a foreign court formed from no observation of it: the note and the western advance together raise the risk of coordination. The note converts part of an unaccountable grievance into an ordinary one, which cuts the other way, five vessels lost with no wreckage being a charge no channel can settle while a claim to a coast can be argued in writing for decades. The Caribbean advance in Item 6 is the larger movement, and it places Egyptian garrisons across the approach where the two spheres meet. The council makes both decisions with that read on the paper.
 
@@ -80,7 +80,7 @@ The carried instruction is followed: the Enterprise is accelerated, an occupied 
 
 Taken and garrisoned across the turn: the southern Caribbean coast from Trinidad west to the Isthmus as a thin unbroken line of fortified harbours; the Lesser Antilles as harbour posts on nine islands, on the Madagascar logic that an island cannot be attacked from land; and the Greater Antilles, with Cuba and Hispaniola settled under the Item 5 instrument to 121,000 settlers between them and Jamaica and Puerto Rico garrisoned.
 
-The Isthmus is held across its width at the narrowest crossing. Its value is a canal joining the Atlantic to the western ocean, and the council treats it as it treats the canal it already owns. The survey runs at 340 engineers, the route is selected, and the lock arrangement is drawn on the basin-and-gate practice used at the Nile terminus since 235 to 238 AD, the summit standing 85 feet above the sea at the chosen pass.
+The Isthmus is held across its width at the narrowest crossing. Its value is a canal joining the Atlantic to the western ocean, and the council treats it as it treats the canal it already owns. The engineering establishment stands at 580, of which 340 carried the survey, the route is selected, and the lock arrangement is drawn on the basin-and-gate practice used at the Nile terminus since 235 to 238 AD, the summit standing 85 feet above the sea at the chosen pass.
 
 Construction is authorised this turn rather than deferred, and the reason is Item 10. Pacific copper and Pacific nitrate lie 9,000 sea miles from Alexandria around the foot of the continent and 4,600 miles from it through a cut Egypt would own. A canal that turns the longer haul into the shorter one pays for itself out of two cargoes the state cannot do without, one of them the feedstock for every explosive it makes. The work is 52,000 talents across 30 years. First appropriation is 6,000 talents.
 
@@ -114,7 +114,7 @@ A highland pack animal carries loads at altitude where horses and mules fail. 4,
 
 ## Item 9. The highland polities are logged as organised opposition
 
-The survey met states rather than villages: terraced agriculture on engineered slopes, road systems, worked metal, granaries, and populations concentrated enough to field armies. Population across the highland states is 1.5 to 4 million (reported, survey estimate from terrace acreage and settlement counts, treated as a floor). Fighting strength is not estimated.
+The survey met states rather than villages: terraced agriculture on engineered slopes, road systems, worked metal, granaries, and populations concentrated enough to field armies. Population across the highland states is 1.5 to 4 million (reported, survey estimate from terrace acreage and settlement counts, treated as a floor). Fighting strength is put at 20,000 to 60,000 in the field (reported, survey estimate scaled off the granaries and road capacity, treated as a floor).
 
 This is the first organised opposition Egypt has met in the west, every coastal people to date counting its strength in hundreds. Doctrine on capable kingdoms inside the perimeter is settled and was applied to Himyar and Aksum between 150 and 200 AD. Doctrine on timing is also settled, and the Himyar precedent governs: Egypt took the Yemeni coast where the fleet was decisive and entered the mountains behind it only once the army held thirty years of highland and disease experience.
 
@@ -134,7 +134,9 @@ Two materials make the coast strategic rather than merely productive. Copper run
 
 The haul is the difficulty and it is why Item 6 authorises the canal. Extraction is begun at a rate the present shipping supports and yields 1,800 talents a year at 550, and the beds are worked in earnest from the day the cut opens.
 
-What Egyptian parties observed along that coast was indigenous coastal and highland peoples, in settlements from a few score to a few thousand. Anything not indigenous encountered by patrol or survey party is reported to the council as observed and is not resolved in this paper.
+What Egyptian parties observed along that coast was indigenous coastal and highland peoples, in settlements from a few score to a few thousand.
+
+Standing instruction: any works, vessel, party or wreck not indigenous, encountered by patrol or survey on the Pacific coast or at the southern passage, is signalled to the council by radio on sighting, described as observed, and the station holds its position without closing.
 
 ---
 
@@ -162,7 +164,7 @@ Accepted cost: survey runs a sixth slower under the discipline.
 
 ## Item 13. The explosive programme reports and the nitrogen line is redirected
 
-Two capabilities are distinguished. Held at open and still held: high explosive fit for mine blasting and special munitions, made and consumed near the place of use. Sought since the 320s: a nitrated explosive that survives carriage across a continent, sits quietly in store, and detonates when told.
+Held at open and still held: high explosive fit for mine blasting and special munitions, made and consumed near the place of use. Sought since the 320s: a nitrated explosive that survives carriage across a continent, sits quietly in store, and detonates when told.
 
 The programme delivered the transport-and-storage version in 531. Handling deaths on the movement of explosive to minesites fall by four fifths. It is the qualified filling behind the moored mines at the canal mouths, the Sinai approaches and the colonial harbours, and behind the spar and drifting charges.
 
@@ -174,7 +176,7 @@ The electrical line is redirected onto the chain that can reach nitrogen. Curren
 
 Allocation 800 researchers, 1,500 talents a year, bench process expected 545 to 585.
 
-Standing instruction: the beds are expanded and the Pacific beds are worked regardless of the arc programme. A research programme with an open window is not a supply plan.
+Standing instruction: the bed expansion and the Pacific workings proceed on their own schedule and their appropriations are not conditioned on any result from the arc programme.
 
 ---
 
@@ -190,7 +192,7 @@ Allocation 1,200 researchers and 1,100 talents a year, placed under the director
 
 A steam hull serves 35 years before condemnation. Stock at open is 250 major steam hulls. 150 are built across the turn as standardisation and interchangeable components lift the rate from 3 a year to 9. 100 are condemned on age, chiefly the coal-fired and early petroleum construction of the 490s and 500s. Stock at 550 is 300.
 
-That arithmetic governs the yard programme. At 35 years of service a rate of 9 a year sustains a steady-state fleet of 315 hulls. The present rate holds the fleet at its size while carrying no margin for war losses. A fleet of 400 with a replacement margin needs 15 to 20 hulls a year, which standardisation alone does not reach, and that is the requirement set for the next turn.
+That arithmetic governs the yard programme. At 35 years of service a rate of 9 a year sustains a steady-state fleet of 315 hulls. The present rate holds the fleet at its size while carrying no margin for war losses. A fleet of 400 with a replacement margin needs 18 hulls a year, which standardisation alone does not reach, and that is the requirement set for the next turn.
 
 Plate has been standard on new construction since 515 to 520. 175 hulls are plated to the designed standard at 550, being all construction since that date. The remaining 125 are older hulls, and retrofit runs only where a hull is in yard for other work, retrofit time being time not spent on new hulls.
 
@@ -206,7 +208,7 @@ The electrical and precision works builds airframes to standard drawings in seri
 
 The engine comes off the internal-combustion line: practical stationary engines from about 450, marine patrol craft at eighteen to twenty-two knots with long range from about 460 to 470, wheeled vehicles from about 465 to 480, and the first controlled flight in about 472 to 478 on a lightweight engine driving a screw propeller derived from naval practice. Fuel is Gulf of Suez petroleum distilled to light fractions, the supply the fleet converted to from coal beginning about 400 and standard on new construction by 440 to 450. A century of development puts aero engine overhaul at 500 running hours, the heavier marine patrol engines running four times that.
 
-Operational radius on a reconnaissance loading is 550 miles, and 400 miles carrying incendiaries and nitrated charges. Basing is the Sinai and canal approaches, Cyprus, the Cape, the Atlantic, Caribbean and Pacific harbours, and the highland approach posts, where route survey over unmapped ground is the heaviest use.
+Operational radius on a reconnaissance loading is 750 miles, and 550 miles carrying incendiaries and nitrated charges. Basing is the Sinai and canal approaches, Cyprus, the Cape, the Atlantic, Caribbean and Pacific harbours, and the highland approach posts, where route survey over unmapped ground is the heaviest use.
 
 Standing instruction: numbers, ranges, engine life and basing are held in the highest compartment.
 
@@ -238,7 +240,7 @@ Cavalry has been the weakest arm since the Roman encounter and matured through s
 
 The primary establishment is founded on the Highveld and Botswana grassland behind the Cape, the largest tsetse-free temperate grazing the empire holds, at 340,000 acres under stud and remount pasture. It is stocked from the East African highland studs and from Cyrenaica, with Arabian bloodstock by sea. Breeding stock in quantity by 552, remounts in militarily useful numbers by 566.
 
-The transport arithmetic is done. Cape to Alexandria is 6,100 sea miles. A converted transport carries 250 head with fodder and water, so 40 sailings move 10,000 remounts in a season, which the transport fleet finds without touching the battle squadrons. From the Plata the same tonnage runs 9,500 miles and moves fewer head at higher loss, so the Plata establishment is founded at a quarter the size and supplies the western holdings locally.
+Cape to Alexandria is 6,100 sea miles. A converted transport carries 250 head with fodder and water, so 40 sailings move 10,000 remounts in a season, which the transport fleet finds without touching the battle squadrons. From the Plata the same tonnage runs 9,500 miles and moves fewer head at higher loss, so the Plata establishment is founded at a quarter the size and supplies the western holdings locally.
 
 Cost is 1,400 talents in works across both and 260 talents a year in operation.
 
@@ -286,7 +288,7 @@ Committed this turn: the Enterprise on the Madagascar instrument with 340 hulls 
 
 Affordable against gross receipts rising from 132,000 to 168,000 talents and a reserve rising from 263,000 to 336,000. The largest single commitment is the Caribbean advance at 46,000 talents. The canal's first appropriation is 6,000 talents against a work of 52,000 across 30 years. The reserve top-up of 2,920 talents a year is drawn from works and colonial construction, which is why provincial harbour and road works in the older African provinces run three years behind at 550.
 
-Research runs on two bases. The Library and foundations line stands at 8,400 talents a year and carries upkeep of the whole funded establishment, researchers being housed and fed at roughly three times a skilled labourer's keep. Programme apparatus, consumables and trial construction add 11,700 talents a year, charged to the arsenal, the naval yard directorate, the mine directorate, the medical establishment and the falls works account, inside the defence and works shares. Aggregate outlay across every account is 20,100 talents a year, 12 percent of gross receipts. The funded establishment is 38,000 scholars and engineers against 31,000 at open, of whom 10,180 sit in the named programmes.
+Research runs on two bases. The Library and foundations line stands at 8,400 talents a year and carries upkeep of the whole funded establishment, researchers being housed and fed at roughly three times a skilled labourer's keep. Programme apparatus, consumables and trial construction add 12,700 talents a year, charged to the arsenal, the naval yard directorate, the mine directorate, the medical establishment and the falls works account, inside the defence and works shares. Aggregate outlay across every account is 21,100 talents a year, 13 percent of gross receipts. The funded establishment is 38,000 scholars and engineers against 31,000 at open, of whom 10,180 sit in the named programmes.
 
 The reserve stands at target at the close and absorbs a shock. The discretionary build-out is what slows if one lands.
 
@@ -330,18 +332,18 @@ A report is expected at the next turn.
 
 # RESEARCH
 
-The Library and foundations line stands at 8,400 talents a year and carries upkeep of the establishment. The cost column below is apparatus, consumables, prototype work and trial construction, charged to the arsenal, the naval yard directorate, the mine directorate, the medical establishment and the falls works account. Named programmes hold 10,180 researchers of a funded establishment of 38,000 and cost 11,700 talents a year. Aggregate outlay across every account is 20,100 talents a year, 12 percent of gross receipts.
+The Library and foundations line stands at 8,400 talents a year and carries upkeep of the establishment. The cost column below is apparatus, consumables, prototype work and trial construction, charged to the arsenal, the naval yard directorate, the mine directorate, the medical establishment and the falls works account. Named programmes hold 10,180 researchers of a funded establishment of 38,000 and cost 12,700 talents a year. Aggregate outlay across every account is 21,100 talents a year, 13 percent of gross receipts.
 
 | Programme | Researchers | Cost a year | Result and window |
 |---|---|---|---|
 | Arc-fixation of atmospheric nitrogen | 800 | 1,500 | Bench process 545 to 585. Beds and Pacific deposits worked regardless. |
 | Nitro-propellant and barrel | 1,200 | 1,100 | Workable piece 545 to 575. |
 | Explosive, long life in sealed magazine | 400 | 500 | Transport-and-storage version delivered 531. Magazine case continuing. |
-| Aircraft and airframe metal | 1,150 | 1,400 | 150 airframes and 230 engines a year; 700 in service; radius 550 miles; overhaul 500 hours. |
+| Aircraft and airframe metal | 1,150 | 1,400 | 150 airframes and 230 engines a year; 700 in service; radius 750 miles; overhaul 500 hours. |
 | Radio, radar, vacuum tube manufacture, electronics | 2,100 | 2,300 | 1,240 radio sets and 90 shipborne radar sets in service; 68 coastal stations. |
 | Tropical medicine and the fever bark | 1,400 | 1,600 | Bark qualified across 1,100 cases; 14 plantation stations; first African harvest 548. |
 | Machine tools as standard products | 700 | 800 | 3,400 units a year. |
-| Ship armour and hull standardisation | 400 | 900 | 175 hulls plated to standard; rate 9 a year against a requirement of 15 to 20. |
+| Ship armour and hull standardisation | 400 | 900 | 175 hulls plated to standard; rate 9 a year against a requirement of 18. |
 | Mines, spar and drifting charges | 400 | 500 | In service at the canal mouths, Sinai approaches and colonial harbours. |
 | Crop acclimatisation, western and highland | 550 | 600 | Surplus 7 percent above the 500 baseline; highland root crop in cultivation 546. |
 | Isthmus canal engineering | 580 | 900 | Route selected, locks drawn, construction begun on a 30-year programme. |
