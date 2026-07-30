@@ -40,6 +40,12 @@ The note is sent for one reason. Egyptian garrisons, works, ships and balloons o
 
 The note states the coast is under Egyptian administration, asks for advance notice of passages, and asks that vessels with no commercial business keep to open water. It does not state when the coast was acquired, does not mention the western ocean, hands over nothing, and threatens nothing. Standing orders are unchanged: shadow, do not fire unless fired upon, issue no threat that will not be enforced.
 
+The note bears on the premise the council fears most, so that premise is restated here in full. The case Egypt can survive is a sequential single front against Rome, through terrain and depth. The case it cannot survive is a coordinated two-front war against Rome and the Maurya at once. Preventing that coordination is the central diplomatic objective of the state, and the mechanism by which coordination forms is a grievance one power can name to another.
+
+The council's read, assumed at best, being a judgement about a foreign court from no observation of it: the note holds the risk of coordination roughly level and does not lower it. The reasoning entered is that the nameable grievance already exists and is worse than a territorial claim. Five vessels lost in Atlantic waters with no wreckage and no survivors, followed by the observation of Egyptian garrisons and works on the coast where they were lost, is a grievance that cannot be settled through any channel because Egypt will not discuss it. A claim to a coast is ordinary currency between states and can be argued about in writing for decades. The note converts part of an unaccountable grievance into an ordinary one. The council records that it cannot distinguish "level" from "slightly raised" on the information it holds, and that it is not entitled to call the effect a reduction.
+
+The confrontation planners dissented, holding that the note supplies a dated document in Egypt's own hand that can be shown to a third party, where a grievance carried by report cannot be. The dissent is entered on the paper and was not accepted.
+
 Accepted cost: refusing to discuss routes concedes that something is not being discussed, and a stated claim can be disputed where an ambiguity cannot.
 
 ---
@@ -128,11 +134,23 @@ Armoured hulls at 550 are 60 to 120 of the 250 to 350. Plate goes on new constru
 
 ---
 
-## Item 12. Aircraft pass to series production
+## Item 12. Aircraft pass to series production, and the powerplant is entered as the binding constraint
 
-The falls plant has poured aluminum since the last turn and structural metal is in airframes as expected. The electrical and precision works is extended to airframes, so craft are built to standard drawings in series rather than singly. Production at 545 to 550 is 20 to 60 airframes a year; in service at 550, 150 to 400, treated as approximate, training and tropical attrition being high and returns lagging. Capability is reconnaissance and incendiary at a useful radius of 300 to 700 miles. There is no air-to-air weapon, Item 10 delivering nothing inside this turn.
+Structure and powerplant are separate questions and the last two turns priced only the first. Both are entered here in full.
 
-Standing instruction: numbers, ranges and basing stay in the highest compartment and are shown to no foreign eye, including the scholars admitted under Item 13.
+Structure. The falls plant has poured aluminum since the last turn and structural metal is in airframes as expected. The electrical and precision works is extended to airframes, so craft are built to standard drawings in series rather than singly. Airframe production at 545 to 550 is 20 to 60 a year (reported, works returns).
+
+Powerplant. The engine was settled before this turn and the fact is restated rather than assumed. The skill is the internal-combustion line: practical stationary engines from about 450, marine patrol craft at eighteen to twenty-two knots from about 460 to 470, wheeled vehicles from about 465 to 480, and the first controlled flight in about 472 to 478 on a lightweight engine driving a screw propeller derived from naval practice (all firm, own file). Supporting it are the boring machines, screw-cutting lathes and gauges built up since about 230 to 260, vulcanized seals, aluminum castings from the falls for crankcase and piston work, and magneto ignition off the electrical tradition. The material source is Gulf of Suez petroleum, distilled into light fractions, which is the same domestic supply the fleet converted to from coal beginning about 400 and standard on new construction by 440 to 450 (firm, refinery returns). The demand is reconnaissance over the Sinai and the canal approaches and incendiary employment extending the balloon doctrine in use since about 330.
+
+Fuel is not the constraint. The light-fraction consumption of the whole air establishment is small beside the fleet's petroleum firing and is met from Suez without new works (firm, refinery returns).
+
+The engine is the constraint, in two figures. Serviceable engines delivered are 15 to 40 a year, below the airframe rate (reported, works returns). Overhaul life on trials is 40 to 120 running hours, so engines are consumed faster than airframes and airframes stand without them (reported, works trials, and treated as a ceiling under the standing rule on Egypt's own supply).
+
+Corrected figures follow from that. In service at 550 is 90 to 220 airframes rather than any figure derived from the airframe rate. Of those, a third to a half carry a serviceable engine at any time. Useful radius is 120 to 300 miles, the upper figure only on a reconnaissance loading carrying no incendiary. There is no air-to-air weapon, Item 10 delivering nothing inside this turn.
+
+The council does not raise the airframe rate, which would produce more airframes standing without engines. It funds the powerplant as a programme in its own right, on bearings, valve gear, cooling and ignition, at 250 to 500 researchers and 400 to 900 talents a year, with the expectation of doubled overhaul life in the window 545 to 565. Radius rises only if that programme returns.
+
+Standing instruction: numbers, ranges, overhaul life and basing stay in the highest compartment and are shown to no foreign eye, including the scholars admitted under Item 13.
 
 ---
 
@@ -174,7 +192,7 @@ No reform of labour outside the mines is proposed. About sixty percent of revenu
 
 The estimate last revised in about 408 to 412 put the confrontation at ten to twenty-five years and is now more than a century past, which means the estimate was wrong and not that a war happened unobserved. No observation in this turn bears on Roman intent. External intelligence is commercial and sees what merchants see in ports and corridor cities. A number produced from nothing would be worked to as though it meant something.
 
-Standing instruction: the planners work to the case, not to the date. The case is a sequential single front, survivable through terrain and depth, and a coordinated two front with the Maurya, which is not. Preventing the coordination remains the central diplomatic objective, and no letter this turn addresses it.
+Standing instruction: the planners work to the case, not to the date. The case is a sequential single front, survivable through terrain and depth, and a coordinated two front with the Maurya, which is not. Preventing the coordination remains the central diplomatic objective. The letter in Item 3 bears on that premise and the council's read on it, with the planners' dissent, is entered there. No letter this turn addresses the Mauryan side of the coordination, and the council proposes none.
 
 ---
 

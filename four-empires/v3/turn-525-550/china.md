@@ -162,13 +162,19 @@ Recorded by 550 from those returns and from nothing else: force within view unch
 
 The court decides in 543 not to pass the medical knowledge received from Egypt to any other power, on the reason that the exchange producing it is the only channel to knowledge the empire cannot reach by its own work, and a partner who finds its gift in a third court has reason to narrow the channel.
 
+**The yard's lift is not published, ruled 527.** A tonnage per season together with the days on which trains arrive is the lift of the line behind the yard. The court's own planning against the far bank of the Syr Darya turns on that same quantity for the other side, which is the reason the figure is treated as one, and it falls under the standing bar on supply intervals and on figures from which they can be worked out. The instrument used instead is arrangement at the yard, season by season, against what is actually offered. The price of the ruling is paid by the silk houses and the frontier merchants, who wanted a published capacity and a timetable to plan a season's purchases against and who now have to send factors to the yard and settle there. Volume at the junction is expected to grow more slowly for it. The court accepts the slower growth, trade routes and access standing sixth among its concerns and the security of the frontier system standing above them.
+
 ---
 
 ## Egypt and the Exchange
 
 The exchange is worked at its full twenty scholars per side per decade throughout. Confirmed across this period by the empire's own scholars with their own eyes: the flameless light burns through a night and is installed widely rather than at one showpiece; hulls move without sail or oar and hold way against a wind; message wire carries word faster than a rider. Not confirmed by anything those scholars have seen: any account of a third power, any statement of intention, any statement of what is withheld. Those stay discounted.
 
-The medical trials are the yield of the period. Lens geometry, the measured sphere and the pendulum clock stay open in the other direction. The electrical work, the steam hull and everything of powder stay closed.
+The medical trials are the yield of the period. Lens geometry and the pendulum clock stay open in the other direction. The electrical work, the steam hull and everything of powder stay closed.
+
+**A ruling on the sphere, entered 529.** A measurement of the sphere taken from two stations is the latitude of both stations and the distance between them, so the method and the instruments together are the baseline, and the baseline is the empire's north to south extent with the working shown. That falls under the standing bar on interior distances and on any figure from which they can be worked out. The ruling is that the resulting figure may be sent and the stations, the baseline and the working may not. The cost of the ruling is small, because the method was Egypt's before it was the empire's and no instruction in it is being withheld, only the ground it was applied to.
+
+**What the record does not settle.** The previous period's entry states that the empire opened the sphere and circumference as measured from its own posts. Whether the stations and the baseline went with the figure at that time is not recorded, and this office cannot establish it from anything it holds. The possibility that the extent was already given is therefore left open rather than assumed either way, and no attempt is made to recall it, a disclosure once made not being recoverable. From 529 the rule is explicit and applies to every court.
 
 ---
 
@@ -184,13 +190,15 @@ The Sogdian merchant tasking is continued. It is the empire's one clandestine op
 
 Figures are the empire's own, from the census and tax registers, with the usual undercount in the frontier commanderies and the usual softness in any total reduced to silver weight. Ranges are left as ranges.
 
-- **Population:** 72 to 74 million. No general epidemic is recorded in the period. Growth comes chiefly from the heartland and from the Pontic settlement towns, and is checked at the northern and Kazakh margins where the colonies are contracting.
-- **Economy:** 38,000 to 39,500 tonnes of silver-equivalent.
-- **State revenue:** 4,300 to 4,600 tonnes. Extraction near eleven percent.
-- **Revenue composition, in percent:** land tax 33; salt, iron and saltpeter monopolies 34; poll tax and corvee buyout 12; Silk Road tolls and silk export 9; frontier metals and fur 11; mill licences and the iron monopoly's sales to the works 1. The monopolies now stand above the land tax for the first time, which continues a movement of six centuries and is not a decision of this period.
+**Where the opening figures come from.** The last population figure this office holds is the one in its own data spine at 500 AD, about seventy million, against a peak of about seventy-two million at 450 that the epidemic of the 460s cut back. No figure is recorded for 525. The record of the previous period carries none, so the 525 baseline is itself reasoned from the 500 figure rather than counted, and every figure below inherits that softness. The same applies to the economy and revenue totals, whose last recorded values are about thirty-six thousand and about four thousand tonnes of silver-equivalent at 500.
+
+- **Population:** 71 to 72.5 million. No general epidemic is recorded in the period. The rate assumed is the one the registers showed across 400 to 450, roughly two million in fifty years, which is what this empire's heartland has carried while farmed to the limit of its tools. Growth comes from the heartland and from the Pontic settlement towns and is offset at the northern and Kazakh margins, where the colonies are contracting. The figure approaches the 450 peak and cannot be said from these registers to have passed it.
+- **Economy:** 37,000 to 38,000 tonnes of silver-equivalent, on the growth rate of the previous half century with a small addition for the mill cloth and the first Pontic grain.
+- **State revenue:** 4,200 to 4,400 tonnes. Extraction near eleven percent, perhaps a little above it, the audit recovery and the mill licence being the additions.
+- **Revenue composition, in percent:** land tax 33; salt, iron and saltpeter monopolies 34; poll tax and corvee buyout 12; Silk Road tolls and silk export 9; frontier metals and fur 11; mill licences and the iron monopoly's sales to the works 1. The monopolies and the land tax now stand level within the accuracy these shares carry, which continues a movement of six centuries and is not a decision of this period.
 - **Spending, in percent:** military including garrisons, army, arsenals and navy 61; civil administration and court 13; water works 10; granaries and famine relief 4; iron rail 8; net surplus 4.
 - **Treasury:** the grain reserve remains deep and the cash reserve remains thin. The surplus is committed to the magazine works, the trunk line and the northern squadrons before it can accumulate, which is the habit of every century in this record. The empire remains resilient against famine and fragile against any shock that demands large amounts of mobile cash quickly.
-- **Human capital:** literate population 7 to 9 million; urban and administrative literacy in the range of twelve to twenty percent; the deliberate-investigation tier 1,200 to 1,700; the broad technical workforce 60,000 to 80,000. The first fully literate generation of parents is now teaching its own children their first characters at no cost, which is the mechanism that lowers the price of the next cohort.
+- **Human capital:** literate population 6.5 to 9 million, against the 5 to 7 million recorded at 500; urban and administrative literacy in the range of twelve to twenty percent; the deliberate-investigation tier 1,200 to 1,700; the broad technical workforce 60,000 to 80,000. The first fully literate generation of parents is now teaching its own children their first characters at no cost, which is the mechanism that lowers the price of the next cohort.
 - **Military technology:** rifled naval cannon on a third to a half of the purpose-built broadsides; the breech loader in field issue on a fifth to a half of frontier infantry with a failure rate above the standard set for general issue; mature hand cannon, mortars, rockets and the full explosive arsenal; low pressure steam tenders in home and Vietnamese water; telescopes and scopes improved by the clearer glass; pendulum clocks in the observatories, the yards and the long-voyage hulls.
 
 ---
@@ -220,7 +228,9 @@ Figures are the empire's own, from the census and tax registers, with the usual 
 
 The rail from the interior to the frontier at the Dnieper is complete and in operation, and a transfer yard has been built on the eastern bank with covered store, weighing house and standing labour.
 
-The yard can receive and dispatch on a fixed schedule through the open season. Its capacity is set out in the accompanying schedule by season, in bolts of silk and in weight of general cargo, together with the days on which trains are timetabled to arrive and depart. Han goods will be delivered to the yard and taken up from it at the tariffs of the standing agreement, which this court does not propose to alter.
+The yard is open for exchange through the season in which the ground is passable, which in most years runs from the thaw to the first hard frost. It accepts silk, lacquerware, worked steel and worked bronze outbound, and wine, oil, glass, tin, coin and horses inbound. Goods will be delivered to the yard and taken up from it at the tariffs of the standing agreement, which this court does not propose to alter.
+
+This court does not publish a timetable or a tonnage. Consignments will be arranged at the yard itself, season by season, between the yard's officers and whichever officer your court appoints to it, under the dispute officials the standing agreement already provides for. Any quantity your merchants wish to move in a given season can be answered at the yard, and this court expects the arrangement to grow by what is actually offered rather than by a figure agreed in advance.
 
 Sent with this letter as a gift are two clocks regulated by a swinging pendulum, which keep time more evenly than the weight and escapement clocks previously sent, together with drawings of the escapement and the table relating the length of the pendulum to the beat. They are given for the use of your scholars and your yards and are not conditional on anything.
 
@@ -232,7 +242,9 @@ The knowledge of fevers and of the barks and plants that answer them has been pu
 
 Three things are asked, all within the exchange as it stands. First, that physicians of your own be received in residence for a term of years at the southern stations rather than at the capital only, so that they may see the fevers in the country where the fevers are. Second, your practice for keeping a ship's company in health on a voyage of many months, in respect of water, provisions and the sickness of the gums. Third, your practice for closing a port against a sickness arriving overland by a trade road, in the detail your earlier account offered.
 
-Offered in return and without condition: two clocks regulated by a swinging pendulum with the drawings of the escapement and the table of the beat; the geometry of lenses as this court's workshops now hold it; and this court's own measurements of the sphere and its circumference, taken from posts at the far northern and far southern edges of its territory, with the instruments and the method by which they were taken.
+Offered in return and without condition: two clocks regulated by a swinging pendulum with the drawings of the escapement and the table of the beat; and the geometry of lenses as this court's workshops now hold it, being the rule relating the curve of a glass to the distance at which it gathers light, with the grinding practice by which such curves are held true.
+
+On the sphere, this court sends the figure it arrived at and nothing further. Its scholars reckon the circumference at about forty-five thousand kilometres by the measures of this court, and hold that figure to agree with yours within the margin the instruments of either allow. The stations from which the observations were taken, the distance between them and the working are not sent, this court's practice being that the extent of its territory is not a subject of correspondence. The method was yours before it was this court's, so nothing is kept from you in it that you did not already hold.
 
 ### To the court of the Maurya
 
