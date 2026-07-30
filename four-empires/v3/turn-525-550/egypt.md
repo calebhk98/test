@@ -306,9 +306,13 @@ The council's disposition toward China is 4 on trust and holds there. The Cape c
 
 ## Item 22. Crops and population
 
-Western stock arrived about 510 to 515 and was distributed for trial across a dozen climates. Yields per cultivated acre in the food-marginal provinces stand 7 percent above the 500 baseline, above all in the Congo and the West and East African lowlands, where cassava grows on soil that carried almost nothing. The Delta is unchanged, being already the richest grain land on earth. Empire-wide food output rises with population and with the new acreage rather than with any large gain per head, so the surplus per person is close to flat. The highland root crop of Item 8 enters provincial cultivation in 546 and works the cool ground the earlier transfers left out.
+Western stock arrived about 510 to 515 and was distributed for trial across a dozen climates. The Delta is unchanged, being already the richest grain land on earth. Everywhere else the food supply is rising, and it rises by two separate mechanisms which should not be run together.
 
-The effect of the crops shows in the growth rate rather than in per-head income. Population at 550 is 32.6 million. The long-settled base grew from 27.5 million to 30.5 million, an average of 0.42 percent a year, against 0.211 percent across 450 to 500 and a fastest recorded fifty-year interval of 0.298 percent. The remaining 2.1 million enter the count through the administration of the interior districts in Item 12, having been governed as claimed sphere before rather than having grown.
+The first is new ground carrying people the Nile never could. Cassava feeds villages on tropical soil in the Congo and the West and East African lowlands that grew almost nothing before, so land that was margin becomes farmland. The Plata, the Pacific temperate coast and the southern grazing runs add further ground outright, and the highland root crop of Item 8 enters provincial cultivation in 546 on the cool highland ground the earlier transfers left out. This mechanism raises the ceiling rather than the yield.
+
+The second is higher yields on ground already held, where the new crops rotate against the old and the marginal provinces now feed themselves instead of drawing grain from the Nile.
+
+Together they lift growth above the old trend, which is what a ceiling being raised looks like. Population at 550 is 35.5 million. The long-settled base grew from 28.9 million to 33.4 million, an average of 0.58 percent a year against 0.211 percent across 450 to 500, a rate the empire could not have carried while it was pressed against its agricultural limit and can carry now that the limit has moved. The remaining 2.1 million are the enumerated interior residents of Item 12, counted for the first time on ground long held rather than added by growth.
 
 The council is watching the early part of a change it will not see finished. The generational wave runs through the century following.
 
@@ -330,13 +334,13 @@ Bonded labour on the great estates and in the Nile agrarian base continues under
 
 Committed this turn: the Enterprise on the Madagascar instrument with 340 hulls in the passage trade, the Caribbean advance, the first appropriation on the Isthmus canal, the Amazon ascent and the highland entry, the fever-bark plantations, the southern passage station and the Pacific coast posts and works, the southern-landmass expedition, the forty-one interior districts, the bed expansion, the arc-nitrogen programme, the propellant programme, the yard programme, the airframe works, the radar fit and the network extensions, the two stud establishments, the register office, and the standing research slate.
 
-Affordable against gross receipts rising from 138,000 to 156,000 talents and a reserve rising from 263,000 to 312,000.
+Affordable against gross receipts rising from 142,000 to 167,000 talents and a reserve rising from 263,000 to 334,000.
 
-The large commitments, priced across the twenty-five years: the Enterprise at 78,000 talents in passage, grants and harbour works; the Caribbean advance at 46,000; the niter bed expansion at 3,100; the Amazon ascent and highland approaches at 4,200; the interior districts at 3,100; the airframe works at 2,600; the radar fit and network extensions at 1,900; the two stud establishments at 1,400; the southern-landmass expedition at 1,400; and the canal's first appropriation at 6,000 against a work of 52,000 across 30 years. These total 147,700 talents, an average of 5,900 a year against receipts averaging 147,000 across the turn.
+The large commitments, priced across the twenty-five years: the Enterprise at 78,000 talents in passage, grants and harbour works; the Caribbean advance at 46,000; the Pacific establishment at 9,800; the canal's first appropriation at 6,000 against a work of 52,000 across 30 years; the Amazon ascent and highland approaches at 4,200; the southern grazing coast at 3,400; the niter bed expansion at 3,100; the interior districts at 3,100; the airframe works at 2,600; the radar fit and network extensions at 1,900; the two stud establishments at 1,400; and the southern-landmass expedition at 1,400. These total 160,900 talents, an average of 6,400 a year against receipts averaging 154,000 across the turn.
 
-The reserve top-up of 1,960 talents a year is the smallest of these and is drawn from works and colonial construction, which is why provincial harbour and road works in the older African provinces run three years behind at 550. It binds not by its size but by the rule behind it, the two-year target being the one line the council does not let slip.
+The reserve top-up of 2,840 talents a year is drawn from works and colonial construction, which is why provincial harbour and road works in the older African provinces run three years behind at 550. It binds by the rule behind it rather than by its size, the two-year target being the one line the council does not let slip.
 
-Research runs on two bases. The Library and foundations line stands at 7,800 talents a year and carries upkeep of the whole funded establishment, researchers being housed and fed at roughly three times a skilled labourer's keep. Programme apparatus, consumables and trial construction add 12,700 talents a year, charged to the arsenal, the naval yard directorate, the mine directorate, the medical establishment and the falls works account, inside the defence and works shares. Aggregate outlay across every account is 20,500 talents a year, 13 percent of gross receipts. The funded establishment is 38,000 scholars and engineers against 31,000 at open, of whom 10,180 sit in the named programmes.
+Research runs on two bases. The Library and foundations line stands at 8,400 talents a year and carries upkeep of the whole funded establishment, researchers being housed and fed at roughly three times a skilled labourer's keep. Programme apparatus, consumables and trial construction add 12,700 talents a year, charged to the arsenal, the naval yard directorate, the mine directorate, the medical establishment and the falls works account, inside the defence and works shares. Aggregate outlay across every account is 21,100 talents a year, 13 percent of gross receipts. The funded establishment is 38,000 scholars and engineers against 31,000 at open, of whom 10,180 sit in the named programmes.
 
 The reserve stands at target at the close and absorbs a shock. The discretionary build-out is what slows if one lands.
 
@@ -348,15 +352,13 @@ The reserve stands at target at the close and absorbs a shock. The discretionary
 
 > From the council at Alexandria to the government at Rome.
 >
-> The Atlantic coast of Africa, from the Moroccan approaches south to the Cape, is under Egyptian administration. Egypt keeps harbours, works, signal stations and naval patrols along its length.
+> The Atlantic coast of Africa, from the Moroccan approaches south to the Cape, is under Egyptian administration.
 >
-> Vessels flying Roman colours have passed along that coast in recent years. Egyptian ships escorted them and left them unmolested. Egypt intends to continue that practice and asks two things.
+> Egyptian ships will escort Roman vessels passing along it. Rome is asked to give notice of such passages before they are made.
 >
-> First, that Rome give advance notice of the passage of its vessels along this coast, in the manner Egypt has previously asked in respect of significant movements in the Mediterranean. Notice allows Egypt to instruct its captains before a passage rather than during it, and removes the risk that a passage is taken for something other than what it is.
+> Vessels with no commercial business on that coast are to keep to open water and stand clear of Egyptian harbours, works and signal stations.
 >
-> Second, that vessels having no commercial business on this coast keep to open water and stand clear of Egyptian harbours and works. Egypt leaves the distance to the judgement of Rome's captains and will treat an honest error of navigation as an error.
->
-> Egypt will discuss its routes, the disposition of its fleet, and its arrangements with other parties with no one, and asks that the reserve be taken as the ordinary reserve of a state.
+> What arrangements Egypt has with any other power are not a matter for Rome, and Egypt will not discuss them, nor its routes, nor the disposition of its fleet.
 >
 > Alexandria.
 
@@ -380,7 +382,7 @@ A report is expected at the next turn.
 
 # RESEARCH
 
-The Library and foundations line stands at 7,800 talents a year and carries upkeep of the establishment. The cost column below is apparatus, consumables, prototype work and trial construction, charged to the arsenal, the naval yard directorate, the mine directorate, the medical establishment and the falls works account. Named programmes hold 10,180 researchers of a funded establishment of 38,000 and cost 12,700 talents a year. Aggregate outlay across every account is 20,500 talents a year, 13 percent of gross receipts.
+The Library and foundations line stands at 8,400 talents a year and carries upkeep of the establishment. The cost column below is apparatus, consumables, prototype work and trial construction, charged to the arsenal, the naval yard directorate, the mine directorate, the medical establishment and the falls works account. Named programmes hold 10,180 researchers of a funded establishment of 38,000 and cost 12,700 talents a year. Aggregate outlay across every account is 21,100 talents a year, 13 percent of gross receipts.
 
 | Programme | Researchers | Cost a year | Result and window |
 |---|---|---|---|
@@ -413,11 +415,9 @@ The Library and foundations line stands at 7,800 talents a year and carries upke
 
 **Western Atlantic.** The temperate south at the Plata, nineteen harbour and river towns with settled farming districts behind them, 250,000 settlers. The coast south of the Plata toward the cold ocean, 7,800 settlers at harbour stations. The tropical Atlantic face from the Guianas through Brazil, 34 fortified harbours and river posts, 180,000 settlers. The Amazon to 1,900 miles of ascent, 28 river posts, a 31-mile portage railway at the first cataract barrier. Twenty-two posts on the eastern highland approaches with a wagon road and a 40-mile rail link from the navigable head.
 
-**Caribbean.** The southern Caribbean coast from Trinidad west to the Isthmus, a thin unbroken line of fortified harbours. The Isthmus across its width at the narrowest crossing, canal construction begun. The Lesser Antilles, nine islands under post. The Greater Antilles: Cuba and Hispaniola settled at 121,000 between them, Jamaica and Puerto Rico garrisoned. 175,000 settlers across the Caribbean holdings.
+**Caribbean.** The southern Caribbean coast from Trinidad west to the Isthmus, a thin unbroken line of fortified harbours. The Isthmus across its width at the narrowest crossing, canal construction begun. The Lesser Antilles, nine islands under post. 96,000 settlers across the Caribbean continental coast and the Lesser Antilles.
 
-**The southern passage and the Pacific.** The passage at the foot of the southern continent, charted, with a coaling and provisioning station and a signal link north to the Plata. The Pacific coast from the passage north to the tropic, twelve harbour posts, 34,000 settlers on the central temperate section, copper extraction at three sites, nitrate works opened on the northern desert beds.
-
-**Southern landmass.** Three harbour posts on the northwest coast. 1,200 settlers on the temperate south coast.
+**The southern passage and the Pacific.** The coast south of the Plata toward the cold ocean, five harbour stations with inland grazing runs, 14,000 settlers. The passage at the foot of the southern continent, charted, with a coaling and provisioning station and a signal link north to the Plata. The Pacific coast from the passage north to the tropic, twelve harbour posts and four settled districts behind the central temperate section, 62,000 settlers, copper extraction at three sites, nitrate works opened on the northern desert beds.
 
 ## Surveyed, not held
 
