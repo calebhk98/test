@@ -10,7 +10,11 @@ Standing figures: revenue about 132,000 talents at open, reserve about 263,000, 
 
 ## Item 1. The reserve target is recomputed against risen revenue and the rule is kept
 
-Revenue at open is about 132,000 talents (firm, receipts). The projection for 550 is 138,000 to 145,000 (reported, projection office, built on population and toll trend and no new stream). At 132,000 the two-year target is about 264,000 and the reserve is at target. At the 550 projection the target becomes 276,000 to 290,000, so a shortfall of 13,000 to 27,000 opens without any loss occurring.
+Revenue at open is about 132,000 talents (firm, receipts). Two bases must be carried from this turn forward, because Item 2 removes a stream from the reported figure without removing it from the state's means.
+
+On gross receipts, including an imputed value for the copper Item 2 reclassifies to internal consumption, the projection for 550 is 138,000 to 145,000 (reported, projection office, built on population and toll trend and no new stream). On the reported revenue figure, after 6,000 to 7,500 talents of copper move out of it, the projection for 550 is 131,000 to 138,000, which is roughly flat against the 132,000 at open. The growth and the reclassification very nearly cancel, and a councillor reading only the reported figure would conclude the state had stopped growing.
+
+The reserve target is computed on the gross basis, as Item 2 requires. At 132,000 the two-year target is about 264,000 and the reserve is at target. At the gross projection the target becomes 276,000 to 290,000, so a shortfall of 13,000 to 27,000 opens without any loss occurring.
 
 The treasury proposed restating the target as a fixed sum, which removes the shortfall by arithmetic. Refused. The sum required scales with the state, not with the year the rule was written.
 
@@ -24,7 +28,7 @@ Accepted cost: the shortfall closes only if no shock lands. If one lands, the di
 
 Output holds or rises; cost per unit of metal rises, the richest veins being past (both firm, mine directorate returns). Crown consumption has outgrown every other material demand, because wire is the bottleneck under telegraph, generators, motors and radio, and the drawing mills built in the last turn draw on the same feedstock.
 
-Copperbelt copper is reclassified as a strategic input consumed by the state. Copper's share of reported revenue falls from 9 to 13 percent to a projected 4 to 8 percent by 550 while the metal leaving the ground holds or grows.
+Copperbelt copper is reclassified as a strategic input consumed by the state. Copper's share of reported revenue falls from 9 to 13 percent to a projected 4 to 8 percent by 550 while the metal leaving the ground holds or grows. In talents, 6,000 to 7,500 a year leave the reported revenue figure without leaving the state. Item 1 carries the consequence: reported revenue runs roughly flat to 550 while gross receipts rise, and both bases are stated there.
 
 The treasury's receipts side opposed, correctly, on the ground that the reserve target is computed on revenue and that removing a stream lowers the target. Resolved by computing the target on receipts including an imputed value for copper consumed internally, so the buffer does not fall by a talent. The mine directorate's receipts office loses its appearance in the revenue tables and is folded under the arsenal's materials account.
 
@@ -62,7 +66,7 @@ The intelligence directorate opposed, arguing the Atlantic account bought sevent
 
 ## Item 5. The Enterprise is accelerated and the Caribbean north is held where it stands
 
-Funded through the turn at the scale set in the last. Landings across all Atlantic holdings are firm from transport manifests at 90,000 to 180,000 persons. Surviving settled population at 550, excluding garrisons, is reported by the settlement office at 70,000 to 150,000 and treated as an estimate.
+Funded through the turn at the scale set in the last. Landings across all Atlantic holdings are 90,000 to 180,000 persons, and the class is reported rather than firm. A manifest gives a firm count of persons embarked on a single voyage at a single harbour, and those counts are firm. The aggregate is not, because the series from two of the departure harbours is incomplete for the earlier part of the turn and the office has reconstructed those years from tonnage and sailings rather than from the manifests themselves. The two-to-one spread is the reconstruction, not the counting. Surviving settled population at 550, excluding garrisons, is reported by the settlement office at 70,000 to 150,000 and treated as an estimate.
 
 The difference between the two figures runs in both directions and the components are stated, because a councillor cannot otherwise tell a loss of people from a late return. Garrison strength of 8,000 to 20,000 is counted separately and is excluded from the settled figure by definition. Return passage of ships' crews, term-completed workers and survey and botanical personnel accounts for 4,000 to 12,000. Settler mortality accounts for 6,000 to 18,000, concentrated in the first two years at any new site and markedly higher at the tropical posts than at the Plata. Returns from the newest posts lag by one to three years, so the settled figure understates by an unknown margin. Natural increase adds back and is not separately counted.
 
@@ -104,11 +108,19 @@ Accepted cost: survey slows by a tenth to a fifth. The council does not know whe
 
 ---
 
-## Item 9. The electric-nitrate programme is made directed and the niter beds are expanded
+## Item 9. The stabilized explosive programme reports, the nitrate programme is made directed, and the beds are expanded
 
-Nitrogen is the ceiling on every Egyptian explosive, and the supply is cave deposits and maintained niter beds (firm, arsenal and assay records).
+The largest allocation in the establishment reports, and the two capabilities it concerns are distinguished, because they have been confused in summary before. Held at open and still held: a high explosive fit for mine blasting and for special munitions, made and consumed near where it is used. Sought since the 320s: a nitrated explosive that survives being carried across a continent, sits quietly in store, and detonates only when told.
 
-The electrical line, undirected in the last slate, is made a directed programme. The skill is chemists who have run current through everything and weighed the results for three centuries, in an establishment that measures what enters a vessel and what leaves it. The source is the Livingstone Falls plant, built for aluminum and arc steel, which holds electric current in a concentration greater than has existed anywhere (firm, works returns). The demand is that a nitrogen supply independent of bed acreage lifts the ceiling on explosives, on the propellant in Item 10, and on fertiliser. Allocation 500 to 800 researchers, 700 to 1,500 talents a year, bench process 545 to 585, works scale not estimated. May return nothing.
+The programme returned the transport-and-storage version inside its window, in about 528 to 536 (firm, assay house and mine directorate qualification trials). Handling deaths on the continental movement of explosive to minesites fall markedly, which is what the requisition asked for (reported, mine directorate returns). It is the qualified filling behind the moored mines at the canal mouths, the Sinai approaches and the colonial harbours, and behind the spar and drifting charges.
+
+It did not return a filling qualified for long life in a sealed magazine in tropical heat, which is a harder case than a mine laid and used within the season, and which is what a gun shell would require. That residual is now the programme, at a reduced allocation, and the transfer of 300 to 500 researchers to it and to the propellant work in Item 10 is authorised. No window is offered, the last one having been met only on the easier of the two problems.
+
+Nitrogen is the ceiling on all of it. Supply is cave deposits and maintained niter beds (firm, arsenal and assay records).
+
+The electrical line, undirected in the last slate, is made a directed programme, and the chain it rests on is named correctly here because the earlier framing named the wrong one. Passing current through a solution cannot yield nitrogen that was not already in the vessel. Nitrogen independent of bed acreage has to be taken from the air, and the instrument for that is a high-energy arc burning in air. The skill is the arc: arc lighting demonstrated about 358 to 368, arc welding about 470 to 490, and the arc furnace producing steel of higher purity and more controllable carbon than any combustion process by about 480 to 510, the same furnace Item 10 credits for barrel metal (all firm, own file). With it goes the atomic theory of fixed whole-number combining weights formalised about 490 to 500, which is what allows a chemist to treat air as having a combinable part in it rather than as an absence. The downstream half of the chain is already in hand, the assay houses having concentrated nitric acid in quantity since about 250 to 300, so what is missing is the air-fixing step alone. The source is the Livingstone Falls plant, built for aluminum and arc steel, which holds electric current in a concentration greater than has existed anywhere (firm, works returns). The demand is unchanged: a nitrogen supply independent of bed acreage lifts the ceiling on explosives, on the propellant in Item 10, and on fertiliser.
+
+Allocation 500 to 800 researchers, 700 to 1,500 talents a year, bench process 545 to 585, works scale not estimated. May return nothing.
 
 Independently, the beds are expanded by a factor of two to three over 525 to 545, at 2,000 to 3,500 talents in works and 200 to 400 a year. A research programme with an uncertain window is not a supply plan.
 
@@ -122,7 +134,7 @@ Egypt has no firearms and no field artillery, and the 500 review assigned the cl
 
 Barrel metallurgy is in hand from the arc furnace and from three centuries of boring, gauging and pressure testing. What is missing is a charge that burns at a controlled rate in a closed breech rather than detonating, and Egypt has no powder tradition to draw on, having reached explosives by nitrating organic fibre in the assay houses.
 
-Allocation 400 to 700 researchers, 300 to 700 talents a year, placed under the same directorate as the stabilized explosive programme rather than beside it, so the two do not compete for the same chemists without anyone deciding which wins. The arsenal opposed the opening as a diversion from stabilization, lost the point, and gained the placement. Workable piece 545 to 575. Nothing in the fleet or frontier plan for this turn assumes a gun.
+Allocation 700 to 1,200 researchers, 500 to 1,100 talents a year, placed under the same directorate as the stabilized explosive programme rather than beside it, so the two do not compete for the same chemists without anyone deciding which wins. The arsenal opposed the opening as a diversion from stabilization, lost the point, and gained the placement. The allocation includes the researchers transferred under Item 9 once the transport-and-storage explosive was qualified in about 528 to 536, so the diversion the arsenal feared was in the event funded out of a programme that had met its requisition. Workable piece 545 to 575. Nothing in the fleet or frontier plan for this turn assumes a gun.
 
 Unresolved: whether a controlled-burn charge is reachable from nitrated fibre at all.
 
@@ -130,11 +142,15 @@ Unresolved: whether a controlled-burn charge is reachable from nitrated fibre at
 
 ## Item 11. The hull rate is reported short of requirement
 
-Construction ran at roughly three hulls a year through the fifth century, giving 250 to 350 major steam hulls that cannot be replaced quickly. Standardisation and interchangeable components bring the rate to 5 to 9 a year at 545 to 550 (reported, yard directorate).
+Two to three hundred steam hulls were built over more than a century at roughly three a year. Stock at 550 is 250 to 350 major steam hulls, and it cannot be replaced quickly. Standardisation and interchangeable components bring the rate to 5 to 9 a year at 545 to 550 (reported, yard directorate).
 
 The improvement does not close the vulnerability. Against a rival able to produce iron and cloth at factory scale under permanent coal haze (firm, agent observation of Rome's northern provinces in about 408 to 412, treated as a floor on what that rival can now do), 5 to 9 is not an attrition rate. Standardisation continues with no expectation that the same method yields a further doubling.
 
-Armoured hulls at 550 are 60 to 120 of the 250 to 350. Plate goes on new construction as standard and is retrofitted only where a hull is in yard for other work, retrofit time being time not spent on new hulls.
+Armour is counted in two classes, the earlier single figure having been too low for the build record to support. Plate was standard on new construction from about 515 to 520, and thirty-five years of construction at three a year rising to five to nine yields more plated hulls than one figure of 60 to 120 can hold.
+
+Hulls plated to the designed standard, belt and deck, are 120 to 190 at 550. A further 30 to 50 carry deck and magazine crowns only, being hulls laid down in the 515 to 535 period when arc-furnace plate supply lagged the hull rate, and they were completed to the lesser standard rather than held in yard waiting for plate. The remainder of the stock is unplated older construction. Plate supply ceased to be the constraint once the falls arc furnaces scaled, and the yards have been fitting the full standard since.
+
+Retrofit continues only where a hull is in yard for other work, retrofit time being time not spent on new hulls.
 
 ---
 
@@ -212,7 +228,9 @@ Committed: the Enterprise at continued scale, the Amazon ascent, the southern st
 
 Affordable against revenue of about 132,000 rising to a projected 138,000 to 145,000, and a reserve of about 263,000 rising to a projected 276,000 to 290,000. The top-up is funded out of works and colonial construction, which is why provincial harbour and road works slow by two to five years each. Slack for a shock is thinner at the close than at the open. The reserve absorbs a shock. The build-out is what slows.
 
-Research runs at roughly five percent of revenue, 6,600 to 7,300 talents a year. The funded establishment is 24,000 to 40,000 at 550 against 20,000 to 35,000 at open (reported, Library and branch returns across every budget). Named programmes account for 4,250 to 8,200 of that headcount; the remainder is the standing establishment and is not itemised.
+The funded establishment is 24,000 to 40,000 at 550 against 20,000 to 35,000 at open (reported, Library and branch returns across every budget). Named programmes account for 6,100 to 10,660 of that headcount; the remainder is the standing establishment and is not itemised.
+
+Spending is stated on two bases and both are needed. The Library and foundations line runs at about five percent of revenue, 6,600 to 7,300 talents a year, and carries upkeep of the whole establishment. Programme apparatus, consumables and trial construction add 5,890 to 11,960 talents a year and are charged to the arsenal, the naval yard directorate, the mine directorate, the medical establishment and the falls works account, inside the defence and works shares. Aggregate outlay across every account is 12,500 to 19,300 talents a year, nine to fourteen percent of revenue. The five-percent figure alone has understated the state's spending on discovery for as long as these tables have been kept, and is not to be quoted on its own again.
 
 ---
 
@@ -258,13 +276,19 @@ No results are written here. A report is expected at the next turn.
 
 # RESEARCH
 
-Roughly five percent of revenue, 6,600 to 7,300 talents a year. Named programmes account for 4,250 to 8,200 of a funded establishment of 24,000 to 40,000.
+The table below is the authoritative statement of programme size and cost. Where an earlier paragraph of this paper quoted a smaller figure, the table governs.
+
+Named programmes sum to 6,100 to 10,660 researchers and to 5,890 to 11,960 talents a year. The funded establishment is 24,000 to 40,000, so the unnamed remainder is 17,900 to 29,340.
+
+The cost column is apparatus, consumables, prototype work and trial construction. It excludes upkeep of the researchers themselves, who are housed and fed at roughly three times a skilled labourer's keep rather than paid a market wage, and whose upkeep sits on the Library and foundations line at about five percent of revenue, 6,600 to 7,300 talents a year. That line does not and could not fund the build-heavy programmes below. Their apparatus and works are charged where the work is done: to the arsenal for explosives, propellant and munitions, to the naval yard directorate for armour trials and hull work, to the mine directorate, to the medical establishment, and to the falls works account for current, arc furnaces and electrochemical apparatus. Those charges sit inside the defence share of roughly forty-five percent of revenue and the works share of roughly thirteen percent, not inside the research line.
+
+Aggregate outlay on research and its prototypes across every account is therefore 12,500 to 19,300 talents a year, that is nine to fourteen percent of revenue, of which the research line proper is the smaller part. The council records that it has never previously stated this figure in one place, and that quoting the five-percent line alone has understated what the state spends on discovery for as long as the tables have been kept.
 
 | Programme | Researchers | Cost a year | Expected result and window |
 |---|---|---|---|
-| Stabilized, transportable blasting explosive | 900 to 1,400 | 700 to 1,400 | Usable result 515 to 535. Largest allocation. Gates much else. |
+| Stabilized explosive, residual: long life in a sealed magazine in tropical heat | 500 to 900 | 450 to 900 | Transport-and-storage version delivered 528 to 536 and qualified for mines and spar charges. Magazine-life version outstanding, no window offered. 300 to 500 researchers transferred out. |
 | Electric-nitrate, now directed | 500 to 800 | 700 to 1,500 | Bench process 545 to 585. Works scale not estimated. May return nothing. |
-| Nitro-propellant and barrel | 400 to 700 | 300 to 700 | Workable piece 545 to 575. Service numbers not estimated. |
+| Nitro-propellant and barrel | 700 to 1,200 | 500 to 1,100 | Workable piece 545 to 575. Service numbers not estimated. Raised by the transfer out of the stabilized explosive programme. |
 | Aircraft, reconnaissance and incendiary | 500 to 900 | 600 to 1,200 | Airframe production 20 to 60 a year by 545 to 550. In service 90 to 220, held down by engine supply, not airframes. |
 | Aircraft powerplant: bearings, valve gear, cooling, ignition | 250 to 500 | 400 to 900 | Binding constraint on the air establishment. Overhaul life doubled from 40 to 120 hours, window 545 to 565. Radius rises only if this returns. |
 | Aluminum structural work | 300 to 600 | 300 to 600 | Mature. Continues as engineering, not discovery. |
@@ -272,7 +296,7 @@ Roughly five percent of revenue, 6,600 to 7,300 talents a year. Named programmes
 | Long-wave shore stations, ocean gap | 150 to 300 | 120 to 300 | 540 to 565, uncertain. May return nothing. |
 | Tropical medicine, with the western contact series | 800 to 1,300 | 700 to 1,300 | Standing. No window; the contact series is observation. |
 | Machine tools as standardised products | 400 to 700 | 400 to 800 | Standing. Multiplier under the other works. |
-| Ship armour, arc-furnace plate | 150 to 300 | 200 to 400 | 60 to 120 armoured hulls at 550. |
+| Ship armour, arc-furnace plate | 150 to 300 | 200 to 400 | 120 to 190 hulls plated to standard at 550, plus 30 to 50 to deck and magazine only. |
 | Mines, spar and drifting charges | 300 to 500 | 250 to 500 | In service. Spar charges remain dangerous to their own crews. |
 | Crop acclimatisation | 250 to 450 | 200 to 400 | First rank. Surplus 4 to 9 percent at 550. |
 | Reflecting telescope by curved mirror; pendulum regulation | 60 to 120 | 40 to 90 | Mirror instrument of useful size 535 to 555; pendulum in the clock shops 530 to 545. |
