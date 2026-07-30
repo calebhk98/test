@@ -4,7 +4,7 @@ Working paper of the strategic council. Alexandria.
 
 Egypt's own figures are single values, taken from the navy list, the payroll, the manifests, the appropriations, the receipts and the works returns. Confidence classes are written into the sentence for estimates of foreign powers only: **firm**, **reported**, **rumor**, **assumed**. Any figure concerning a foreign power is a floor.
 
-Standing figures at open: revenue 142,000 talents, reserve 263,000 talents, two-year reserve target with a floor at one year, population 28.9 million.
+Standing figures at open: revenue 142,000 talents, reserve 263,000 talents, two-year reserve target with a floor at one year, population 30.7 million.
 
 ---
 
@@ -70,7 +70,13 @@ The instrument that filled Madagascar is applied whole to the western holdings: 
 
 Transport tonnage is funded to match. The transport and river yards deliver 60 hulls a year, and 340 hulls are in the western passage trade at 550. 540,000 persons are landed across the turn. 135,000 are lost to death and return passage. Natural increase adds 87,000. Settled population at 550, garrisons excluded, is 602,000 against 110,000 at open. Garrison strength across the western holdings is 52,000.
 
-Distribution follows survivability and volunteering. The temperate south at the Plata holds 250,000 in nineteen harbour and river towns with settled farming districts behind them, exporting wheat, hides and wine. The tropical Atlantic face from the Guianas through Brazil holds 180,000 across 34 fortified harbours and river posts, settled from the African provinces, whose people hold tropical lowland where Mediterranean bodies fail. The Caribbean continental coast and the Lesser Antilles hold 96,000. The Pacific coast holds 62,000. The southern coast toward the cold ocean holds 14,000.
+Distribution follows survivability and volunteering.
+
+The temperate south at the Plata holds 250,000. The estuary is a hundred and thirty miles of brown fresh water opening east, with the two principal harbours facing each other across it: one on the rocky point on the north shore, one on the flat mud shore opposite where the anchorage is poor and the hinterland is the best in the west. Behind it runs level treeless grass to the horizon on deep black soil, no timber anywhere, wheat and cattle taking to it immediately and horses running wild and multiplying. Nineteen towns: the two estuary harbours, and the rest strung up the two rivers feeding it, the Paraná and the Uruguay, as far as the confluence with the Paraguay some 900 miles inland.
+
+The tropical Atlantic face from the Guianas through Brazil holds 180,000 across 34 fortified harbours and river posts, settled from the African provinces, whose people hold tropical lowland where Mediterranean bodies fail. The line runs from the Guiana river mouths past the Amazon delta, then south along a coast of reef and mangrove with rain forest behind it: the reef harbour at the eastern corner of the continent, the great enclosed bay of All Saints below it, the São Francisco mouth, and the deep landlocked bay 1,200 miles further south under a granite headland, which is the best harbour on the whole face. Dyewood, hardwood and latex come off it.
+
+The Caribbean continental coast and the island arc hold 96,000. The Pacific valley districts hold 62,000. The Patagonian grazing coast holds 14,000.
 
 Cost of the Enterprise across the turn is 78,000 talents: subsidised passage, land grants surveyed and registered, and crown-built harbour works, roads and cisterns raised ahead of arrival.
 
@@ -78,37 +84,29 @@ Radio reaches the western holdings continuously. Alexandria has broadcast a stan
 
 ---
 
-## Item 6. The Caribbean is advanced and the Isthmus canal is begun
+## Item 6. The advance north is made slow and the advance south and inland made fast
 
-The carried instruction is followed: the Enterprise is accelerated, an occupied coast beats an empty one, and the founding fear is a rival growing on uncontested ground.
+The carried instruction is followed: the Enterprise is accelerated, an occupied coast beats an empty one, and the founding fear is a rival growing on uncontested ground. Speed is set separately for the two directions, because they run toward different things.
 
-The advance runs along the ground Egypt already holds. From the Guiana coast and Trinidad the line is worked west and north along the continental shore to the Isthmus, harbour by harbour, which is the shorter route, the better known, and the one the method has used on every coast since the East African posts. That coast is taken and garrisoned across the turn as a thin unbroken line of fortified harbours.
+North is toward Rome. Egypt does not know how far off, and has no means of finding out short of sailing until it meets something. That governs the pace. From the Guiana coast the line is worked west and north along the continental shore, harbour by harbour, and each harbour is taken and held before the next is approached. Fortified harbours at the mouths of the Essequibo, the Demerara and the Berbice, at the Orinoco delta, and westward along the dry cactus coast beyond it to the gulf of Maracaibo and on toward the neck of land where the continent narrows. Garrisons are victualled and watered to hold three months cut off from the sea. Nothing is planted where a relieving squadron cannot reach it within a fortnight. Survey runs a full season ahead of settlement. The advance stops at the narrow neck of the continent, which is the westernmost ground taken this turn and is held as shoreline like any other.
 
-The island chain running north from Trinidad is taken with it. Each island in that arc stands within sight of the last, so a squadron working up it is never out of sight of land and is doing what a coasting squadron does. Nine islands carry harbour posts, held on the Madagascar logic that an island cannot be attacked from the land and belongs to whoever holds the sea around it.
+The island chain running north from Trinidad is taken with the coast. Each island in that arc stands within sight of the last, so a squadron working up it is never out of sight of land and is doing what a coasting squadron does. Nine islands carry harbour posts, held on the Madagascar logic that an island cannot be attacked from the land and belongs to whoever holds the sea around it. The arc is where the northward advance halts, and no squadron is sent out past the head of it into open sea this turn.
 
-The canal below raises a requirement the council can state and cannot yet satisfy. A cut is worth what the fleet covering it is worth, and covering it means holding ground to seaward of it, athwart the approaches into this sea from the north and the east. No ground Egypt knows of answers that description. The continental coast is the wrong side of the water to close an approach, and the island arc runs up the eastern edge rather than across the northern one.
+Standing order to the Atlantic patrol command: survey squadrons work north and west of the island arc and north of the narrow neck, standing out from land where the current and the weather suggest ground beyond the horizon, charting what lies in that sea. They report by radio on sighting, enter no harbour showing works, vessels or people in occupation, attempt no contact, and hold position without closing. The purpose is to know what is in that water before a settlement is placed where it can be cut off.
 
-Standing order to the Atlantic patrol command, issued this turn: survey squadrons are to work north and west from the head of the island arc and north from the Isthmus coast, standing out from land where the run of the current and the set of the weather suggest ground beyond the horizon, and to chart whatever lies in that sea. They are to report by radio on sighting, to enter no harbour that shows works, vessels or people in occupation, to attempt no contact, and to hold position without closing. Whether ground exists that satisfies the covering requirement is not known, and the requirement is entered as unmet until a survey answers it.
+South and inland there is nothing to be careful about, and the pace is set accordingly. Founding runs ahead of administration: good ground is taken and settled and the district organisation follows afterwards, rivers are ascended to the head of navigation before anyone asks what is at the top, and posts are planted wherever the land repays planting. Losses are accepted. The Plata, the Patagonian grazing coast, the Amazon ascent and the Pacific side are all done on that footing, and the settlement office is instructed not to hold a founding back for want of a survey where the only thing beyond the survey is more empty country.
 
-The Isthmus is held across its width at the narrowest crossing. Its value is a canal joining the Atlantic to the western ocean, and the council treats it as it treats the canal it already owns. The engineering establishment stands at 580, of which 340 carried the survey, the route is selected, and the lock arrangement is drawn on the basin-and-gate practice used at the Nile terminus since 235 to 238 AD, the summit standing 85 feet above the sea at the chosen pass.
-
-Construction is authorised this turn rather than deferred, and the case is stated on the measured distances. Alexandria to the Pacific nitrate coast runs 10,700 sea miles around the foot of the continent and 8,900 through a cut Egypt would own, a saving of 1,800 miles on every cargo, which is a sixth of the passage and not a transformation of it. The cargo saving alone would not carry a work of this size.
-
-What carries it is the fleet. Egypt keeps one navy in two oceans, and a squadron in the Atlantic can reach the Pacific coast only by the southern passage, which is the worst water Egyptian ships have ever worked and closes to heavy weather for weeks together. This is the argument that built the Nile to Red Sea canal, where the gain was never the cargo alone but a fleet that could move between two seas instead of standing as two fleets that could not reinforce one another. The cut turns two oceans into one theatre for a navy that has been the state's first asset for six centuries, and it does so on ground Egypt now holds on both shores.
-
-The work is 52,000 talents across 30 years. First appropriation is 6,000 talents.
-
-The confrontation planners argued to hold at Caracas, on the ground that advancing creates the meeting with Rome early. The settlement office and the Atlantic patrol command carried the advance. The reversal is priced: 46,000 talents in works, harbours, garrisons and subsidised passage across the turn, garrison charges of 1,900 talents a year continuing, and the raised coordination risk entered in Item 3. The planners' position is recorded and their office keeps its standing.
+The confrontation planners argued to hold at the Orinoco, on the ground that advancing creates the meeting with Rome early. The settlement office and the Atlantic patrol command carried the advance. The reversal is priced: 46,000 talents in works, harbours, garrisons and subsidised passage across the turn, garrison charges of 1,900 talents a year continuing, and the raised coordination risk entered in Item 3. The planners' position is recorded and their office keeps its standing.
 
 ---
 
 ## Item 7. The Amazon is ascended and the highland interior is entered
 
-Method is the Congo playbook, the only method Egypt has for a great river with cataracts. Steam river vessels ascend from the mouth, posts stand at the major confluences, and authority is pushed outward from the posts. A portage railway of 31 miles bypasses the first cataract barrier, built to the specification used at the Livingstone Falls in about 405 to 413 AD.
+Method is the Congo playbook, the only method Egypt has for a great river system. Steam river vessels ascend from the mouth, posts stand at the major confluences, and authority is pushed outward from the posts. Founding runs ahead of administration here under Item 6, the country south and inland being empty of any rival.
 
-Held at 550: 1,900 miles of ascent, 28 river posts, and the river frontage between them, the ascent pushed past the confluence posts to the navigable head.
+Held at 550: 1,900 miles of ascent and 28 river posts with the frontage between them. The main stem needs no portage, running deep and unbroken far inland, so the posts stand at the great tributary mouths as they come in, the Xingu, the Tapajós, the Madeira, the Negro where the black water meets the brown, the Purus and the Juruá, and then on to the last reach a steamer can work. The portage railway of 31 miles is on the Madeira, the southern tributary, where a run of rapids blocks the way through to the country beyond, and it is built to the specification used at the Livingstone Falls in about 405 to 413 AD.
 
-The highland interior is entered by three routes, from the Amazon headwaters, from the Isthmus, and from the Plata river system. The instruments are the ones the empire already carries: steam river craft, portage rail, wheeled exploration vehicles built to be shipped and set down inland since about 465 to 480 AD, aircraft for route survey over unmapped ground, and three centuries of tropical medicine. Twenty-two posts stand on the eastern highland approaches at 550, with a wagon road and a 40-mile rail link from the navigable head to the highest of them. The highland spine itself is surveyed and not held.
+The highland interior is entered by three routes: up the westernmost reaches of the Amazon to where the rivers come down off the wall, east from the Pacific valley of Item 10 over the coast range, and up the Paraguay and its western tributaries out of the Plata system. The instruments are the ones the empire already carries: steam river craft, portage rail, wheeled exploration vehicles built to be shipped and set down inland since about 465 to 480 AD, aircraft for route survey over unmapped ground, and three centuries of tropical medicine. Twenty-two posts stand on the eastern flank of the wall at 550, on the cloud-forest slope between the last navigable water and the tree line, with a wagon road and a 40-mile rail link climbing from the navigable head to the highest of them at about 9,000 feet. The highland spine itself is surveyed and not held.
 
 ---
 
@@ -138,25 +136,25 @@ Accepted cost: an organised power sits above Egypt's newest holdings while the c
 
 ---
 
-## Item 10. The southern passage is charted and the Pacific coast is taken
+## Item 10. The passage at the foot of the continent and the coast beyond it
 
-Egyptian ships have rounded a stormy continental foot since the Cape in about 90 to 100 AD, and the method for the second one is the method for the first: stand well out, fix latitude from the stars, let the current carry, and hold the depots close behind. The passage at the foot of the southern continent is charted across the turn, and a coaling and provisioning station stands at it with a heliograph and radio link north to the Plata.
+Egyptian ships have rounded a stormy continental foot since the Cape in about 90 to 100 AD, and the method for the second one is the method for the first: stand well out, fix latitude from the stars, let the current carry, and hold the depots close behind.
 
-The coast running south from the Plata toward the cold ocean is taken first, being the near side of the same movement. It is dry temperate grazing country, thin of people and good for sheep and cattle at scale. Five harbour stations and their inland runs hold 14,000 settlers under the Item 5 instrument, and the wool and hides yield 600 talents a year. Cost is 3,400 talents across the turn.
+The grazing coast comes first, being the near side of the same movement. South of the Plata the land dries out into a wind-scoured plain of low grey scrub and coarse grass, treeless, almost rainless, cut by a few rivers running east off the distant mountains. It carries almost no people. It is poor country for grain and good country for sheep, which is what it gets. Five harbour stations stand on it: at the wide shallow bay six days' sail south of the Plata where the grassland gives out, at the deep double gulf behind the whale peninsula, and at the mouths of the Deseado, the Santa Cruz and the Gallegos, each with its inland runs pushed forty to eighty miles up the river valley. 14,000 settlers, mostly from the Cape and the Highveld where the country and the work are the same. Wool and hides yield 600 talents a year. Cost 3,400 talents.
 
-The Pacific coast above the passage is temperate, narrow and mineral-bearing, with a cold current running up it. Twelve harbour posts stand from the passage north to the tropic. The central temperate section carries a Mediterranean climate, wheat, grapes and olives, and four settled districts behind its harbours holding 62,000 settlers under the Item 5 instrument. It is the second core-population ground the west has offered and takes Mediterranean and Alexandrian families for the same reason the Plata does. Cost of the Pacific establishment is 9,800 talents across the turn in harbour works, roads, cisterns and the mineral plant, and 1,100 talents a year in garrison and administration.
+The passage lies 1,300 sea miles south of the Plata, six days under steam, and runs between the mainland and a large cold island beyond it. It is a strait rather than an open rounding, sheltered water for most of its length with two narrows and a bad westerly wind funnelling through it. The coaling and provisioning station stands mid-strait on the north shore at the second narrows, where the channel is a mile and a half across and a battery covers it. Heliograph and radio link it north to the Gallegos and thence to the Plata.
 
-Held on that coast is the shore, its harbours, the settled districts behind the central section and the mineral ground worked from them. Surveyed and not held is the coast north of the tropic and the mountain wall inland, which rises to the same highland spine entered from the east in Item 7.
+North out of the passage the coast is drowned and useless for 900 miles: a maze of channels, rain forest to the waterline, cliffs, glaciers coming down into the sea, rain most days of the year, and nobody living there worth the name. Egypt takes fuel stations at two sheltered channel mouths and nothing else.
 
-Two materials make the coast strategic rather than merely productive. Copper runs in the coastal ranges at grades above the Copperbelt's remaining veins, which matters exactly as the African veins thin under Item 2, and extraction begins at three sites and yields 1,900 talents a year at 550. Nitrate lies in surface beds in the rainless northern desert of that coast, in quantity no maintained bed establishment can approach, assayed by the arsenal's officers in 541, and yields 1,800 talents a year at 550. Nitrogen has been the ceiling on every Egyptian explosive since the first nitration, and this is the first supply the state has found that does not have to be manufactured.
+Then the country changes altogether. Between the coast range and the great mountain wall inland lies a long enclosed valley of the same climate as Cyrenaica: winter rain, dry summer, snow-fed rivers coming down off the wall to water it. Wheat, grapes and olives take without coaxing. Four settled districts are laid out in that valley, on the rivers watering it, with harbours serving them at a bay open to the north 1,400 miles up from the passage, at the mouth of the Maipo, and at the mouth of the Bío-Bío where the valley meets the sea in the south. 62,000 settlers, Mediterranean and Alexandrian families, on the Item 5 instrument. This is the second core-population ground the west has offered and the council rates it with the Plata. Cost 9,800 talents, and 1,100 a year in garrison and administration.
 
-The haul is the difficulty and it is why Item 6 authorises the canal. Both workings are begun at a rate the present shipping supports, and both are driven hard from the day the cut opens.
+North of the valley the rain stops. Seven hundred miles up from the northern harbours the coast becomes the driest ground Egyptian officers have ever walked, a rainless shelf between the sea and a high desert plain, where water is shipped in to every post. It is worth holding for two things. Copper runs in the coastal ranges at grades above the Copperbelt's remaining veins, which matters exactly as the African veins thin under Item 2, and extraction begins at three sites, yielding 1,900 talents a year at 550. Nitrate lies in surface beds on that high dry plain inland, in quantity no maintained bed establishment can approach, assayed by the arsenal's officers in 541, and yields 1,800 talents a year at 550. Nitrogen has been the ceiling on every Egyptian explosive since the first nitration, and this is the first supply the state has found that does not have to be manufactured. Twelve harbour posts hold the whole run from the passage to the tropic.
 
-What Egyptian parties observed along that coast was indigenous coastal and highland peoples, in settlements from a few score to a few thousand.
+The difficulty is the haul. Alexandria to the nitrate coast is 10,700 sea miles round the foot of the continent, which is six weeks under steam and puts a hard ceiling on what can be lifted in a season. Both workings are begun at the rate the present shipping supports rather than at the rate the ground would bear.
 
-Standing instruction: any works, vessel, party or wreck not indigenous, encountered by patrol or survey on the Pacific coast or at the southern passage, is signalled to the council by radio on sighting, described as observed, and the station holds its position without closing.
+Held on this side is the shore, its harbours, the four valley districts and the mineral ground worked from them. Surveyed and not held is the coast north of the tropic, and the mountain wall inland of the valley, which rises to the same highland spine entered from the east in Item 7.
 
----
+Standing instruction: any works, vessel, party or wreck not indigenous, encountered by patrol or survey on this coast or at the passage, is signalled to the council by radio on sighting, described as observed, and the station holds its position without closing.
 
 ## Item 11. A survey expedition is sent to the southern landmass
 
@@ -170,19 +168,7 @@ No Item 5 figure rests on this coast and no ground there is entered as held.
 
 ---
 
-## Item 12. The deep interior districts are resurveyed and reassessed
-
-Ordinary administration of long-held ground. The Congo basin has been administered through the Livingstone Falls portage and its river network since about 405 to 413, the Copperbelt since the 110s to 130s, the west coast and the Akan fields since the 155 to 185 period, and the East African coast for longer than any of them. The people of the deep interior have been Egyptian subjects, on the rolls and inside the temple school and courthouse network, for generations.
-
-What is done this turn is a reassessment. The interior districts were last surveyed against yields that no longer describe the ground. Cassava has turned land assessed as margin into land that carries a crop, so holdings stand at values the rolls do not reflect and the assessment has drifted below what the ground now bears. Forty-one districts are resurveyed and reassessed on the present yields, their boundaries redrawn where the old lines cut across settlement that has shifted onto the newly productive soil, and the scribal school, clinic and court establishments are extended to the settlements that have grown up away from the river posts.
-
-Cost is 3,100 talents across the turn in survey, district works and school and temple establishments, and 420 talents a year in continuing administration. The yield of the reassessment sits inside the agrarian line of Item 1 and is not a separate stream.
-
-Standing instruction: the reassessment is a correction to the rolls and produces no change in the population count, those districts having been carried in the census since they were first administered.
-
----
-
-## Item 13. Contact parties are placed under quarantine discipline
+## Item 12. Contact parties are placed under quarantine discipline
 
 Coastal populations in contact with Egyptian landing parties on the western shore have fallen heavily (firm, repeated observation at multiple sites). The physicians attribute this to crowd diseases carried by settlers reaching a population with no prior exposure (reported, medical office, consistent with the empire's own epidemic records).
 
@@ -194,17 +180,17 @@ Accepted cost: survey runs a sixth slower under the discipline.
 
 ---
 
-## Item 14. The explosive programme reports and the nitrogen line is redirected
+## Item 13. The explosive programme reports and the nitrogen line is redirected
 
 Held at open and still held: high explosive fit for mine blasting and special munitions, made and consumed near the place of use. Sought since the 320s: a nitrated explosive that survives carriage across a continent, sits quietly in store, and detonates when told.
 
 The programme delivered the transport-and-storage version in 531. Handling deaths on the movement of explosive to minesites fall by four fifths. It is the qualified filling behind the moored mines at the canal mouths, the Sinai approaches and the colonial harbours, and behind the spar and drifting charges.
 
-The residual is long life in a sealed magazine in tropical heat, a harder case than a mine laid and used within the season and the case a gun shell requires. 400 researchers continue on it and 500 transfer to the propellant work in Item 15.
+The residual is long life in a sealed magazine in tropical heat, a harder case than a mine laid and used within the season and the case a gun shell requires. 400 researchers continue on it and 500 transfer to the propellant work in Item 14.
 
-The nitrate reconciliation ordered of the assay office and the arsenal reports in 533 and the council adopts one figure. Refined nitrate from the cave deposits and the maintained beds runs at 4,200 tons a year at open. The bed establishment across the Nile, the Sahel and the highland provinces is expanded and delivers 9,000 tons a year from 545, of which mine blasting takes 6,600 tons and the magazine reserve 2,400. Works cost 3,100 talents, operation 340 talents a year. The Pacific surface beds of Item 10 stand above that figure and are worked in earnest when the canal opens.
+The nitrate reconciliation ordered of the assay office and the arsenal reports in 533 and the council adopts one figure. Refined nitrate from the cave deposits and the maintained beds runs at 4,200 tons a year at open. The bed establishment across the Nile, the Sahel and the highland provinces is expanded and delivers 9,000 tons a year from 545, of which mine blasting takes 6,600 tons and the magazine reserve 2,400. Works cost 3,100 talents, operation 340 talents a year. The Pacific surface beds of Item 10 stand above that figure and are worked at the rate the 10,700-mile haul allows.
 
-The electrical line is redirected onto the chain that can reach nitrogen. Current through a solution yields no nitrogen that was not already in the vessel. Nitrogen independent of bed acreage is taken from the air, and the instrument is a high-energy arc burning in air. The skill is the arc: arc lighting demonstrated about 358 to 368, arc welding about 470 to 490, and the arc furnace producing steel of higher purity and more controllable carbon than any combustion process by about 480 to 510, the same furnace Item 15 credits for barrel metal. With it goes the atomic theory of fixed whole-number combining weights formalised about 490 to 500, which lets a chemist treat air as holding a combinable part. The downstream half is in hand, the assay houses having concentrated nitric acid in quantity since about 250 to 300, so the air-fixing step alone is wanting. The source is the Livingstone Falls plant, which holds electric current in a concentration greater than exists anywhere. The demand is that bed-independent nitrate lifts the ceiling on explosives, on the propellant, and on field fertiliser.
+The electrical line is redirected onto the chain that can reach nitrogen. Current through a solution yields no nitrogen that was not already in the vessel. Nitrogen independent of bed acreage is taken from the air, and the instrument is a high-energy arc burning in air. The skill is the arc: arc lighting demonstrated about 358 to 368, arc welding about 470 to 490, and the arc furnace producing steel of higher purity and more controllable carbon than any combustion process by about 480 to 510, the same furnace Item 14 credits for barrel metal. With it goes the atomic theory of fixed whole-number combining weights formalised about 490 to 500, which lets a chemist treat air as holding a combinable part. The downstream half is in hand, the assay houses having concentrated nitric acid in quantity since about 250 to 300, so the air-fixing step alone is wanting. The source is the Livingstone Falls plant, which holds electric current in a concentration greater than exists anywhere. The demand is that bed-independent nitrate lifts the ceiling on explosives, on the propellant, and on field fertiliser.
 
 Allocation 800 researchers, 1,500 talents a year, bench process expected 545 to 585.
 
@@ -212,15 +198,15 @@ Standing instruction: the bed expansion and the Pacific workings proceed on thei
 
 ---
 
-## Item 15. The propellant programme
+## Item 14. The propellant programme
 
 Barrel metallurgy is in hand from the arc furnace and from three centuries of boring, gauging, lapping and pressure testing. The element wanting is a charge that burns at a controlled rate in a closed breech rather than detonating, Egypt having reached explosives by nitrating organic fibre in the assay houses.
 
-Allocation 1,200 researchers and 1,100 talents a year, placed under the directorate that holds the explosive work so that the two do not compete for the same chemists without a decision being taken. The arsenal opposed the opening as a diversion from stabilisation, lost the point, and gained the placement. The transfer under Item 14 funds it out of a programme that met its requisition. Workable piece expected 545 to 575.
+Allocation 1,200 researchers and 1,100 talents a year, placed under the directorate that holds the explosive work so that the two do not compete for the same chemists without a decision being taken. The arsenal opposed the opening as a diversion from stabilisation, lost the point, and gained the placement. The transfer under Item 13 funds it out of a programme that met its requisition. Workable piece expected 545 to 575.
 
 ---
 
-## Item 16. The fleet is age-limited and the rate is short of requirement
+## Item 15. The fleet is age-limited and the rate is short of requirement
 
 A major steam hull serves about 60 years, carried through two general refits in which engines, boilers, fittings and much of the upper works are renewed. A hull is rebuilt rather than scrapped for as long as its frames and bottom will take the work, and only the earliest coal-fired construction, whose hull form was drawn around machinery three generations obsolete, is beyond refitting. Stock at open is 250 major steam hulls. 150 are built across the turn as standardisation and interchangeable components lift the rate from 3 a year to 9. 40 are condemned, being the last of the coal-era hulls. Stock at 550 is 360.
 
@@ -230,11 +216,11 @@ The refit cycle is the quieter cost. With 360 hulls on a 60-year life and two re
 
 Plate has been standard on new construction since 515 to 520. 175 hulls are plated to the designed standard at 550, being all construction since that date. The remaining 185 are older hulls, and plate is now added during general refit as well as on new construction, which brings the older stock forward without taking yard time from new keels.
 
-Armament in service is the moored mine, the spar and drifting charge, the petroleum incendiary, and the aircraft of Item 17 operating from coastal and colonial bases.
+Armament in service is the moored mine, the spar and drifting charge, the petroleum incendiary, and the aircraft of Item 16 operating from coastal and colonial bases.
 
 ---
 
-## Item 17. Aircraft
+## Item 16. Aircraft
 
 The ceiling on this line was the want of a power-station-scale electrolytic smelter, and the falls plant removed it. Aluminum structural work is mature and airframes are metal-framed.
 
@@ -250,7 +236,7 @@ Standing instruction: numbers, ranges, engine life and basing are held in the hi
 
 ---
 
-## Item 18. Radar goes to sea, and the networks extend
+## Item 17. Radar goes to sea, and the networks extend
 
 Detection radar has stood on the Mediterranean coast, the Sinai approaches and Cyprus since about 450 to 460, with directional radar and range estimation from about 460 to 480. The electrical works now manufactures sets in series rather than building them by hand, and the compartment is opened to the fleet.
 
@@ -266,7 +252,7 @@ The telegraph carries formal empire-wide traffic and extends through the interio
 
 ---
 
-## Item 19. Industrial output
+## Item 18. Industrial output
 
 The five sectors funded in the last turn report. Copper wire drawing at the Copperbelt and the falls runs 14,000 tons a year. Arc-furnace steel at the falls runs 90,000 tons a year, feeding shipyards, plate, rail, barrels and machine works. Machine tools are produced as standard products at 3,400 units a year in lathes, boring mills, planers and gauges, which is the multiplier under everything else. The shipyards deliver 9 major steam hulls and 60 transport and river hulls a year on interchangeable components. Aluminum at the falls runs 900 tons a year.
 
@@ -276,7 +262,7 @@ The pull remains the crown's own appetite for wire, steel, hulls, plate and mach
 
 ---
 
-## Item 20. Two stud establishments are founded, on ground Egypt holds
+## Item 19. Two stud establishments are founded, on ground Egypt holds
 
 Cavalry has been the weakest arm since the Roman encounter and matured through seventy years of breeding in the East African highlands from about 275 AD, where the tsetse does not reach. The limit has been the extent of tsetse-free grazing rather than the skill, and the empire holds a great deal of such ground it has never used for the purpose.
 
@@ -290,7 +276,7 @@ Cost is 1,400 talents in works across both and 260 talents a year in operation.
 
 ---
 
-## Item 21. The China arrangement is honoured in full
+## Item 20. The China arrangement is honoured in full
 
 Twenty of their scholars each decade sit inside Egyptian institutions by agreement, and Egypt's germ and tropical-disease body is open to them (firm, own file). It stays open, at full extent, on no schedule. The knowledge has passed and cannot be recalled, the paper stream rests on the arrangement, and a partner who finds an exchange quietly narrowed prices every later dealing accordingly.
 
@@ -304,7 +290,7 @@ The council's disposition toward China is 4 on trust and holds there. The Cape c
 
 ---
 
-## Item 22. Crops and population
+## Item 21. Crops and population
 
 Western stock arrived about 510 to 515 and was distributed for trial across a dozen climates. The Delta is unchanged, being already the richest grain land on earth. Everywhere else the food supply is rising, and it rises by two separate mechanisms which should not be run together.
 
@@ -312,13 +298,13 @@ The first is new ground carrying people the Nile never could. Cassava feeds vill
 
 The second is higher yields on ground already held, where the new crops rotate against the old and the marginal provinces now feed themselves instead of drawing grain from the Nile.
 
-Together they lift growth above the old trend, which is what a ceiling being raised looks like. Population at 550 is 33.4 million against 28.9 million at open, an average of 0.58 percent a year against 0.211 percent across 450 to 500, a rate the empire could not have carried while it was pressed against its agricultural limit and can carry now that the limit has moved.
+Together they lift growth above the old trend, which is what a ceiling being raised looks like. Population at 550 is 35.5 million against 30.7 million at open, an average of 0.58 percent a year against 0.211 percent across 450 to 500, a rate the empire could not have carried while it was pressed against its agricultural limit and can carry now that the limit has moved.
 
 The council is watching the early part of a change it will not see finished. The generational wave runs through the century following.
 
 ---
 
-## Item 23. Freed term men are directed to colonial grants
+## Item 22. Freed term men are directed to colonial grants
 
 Chattel slavery for mine workers was replaced over 352 to 368 by defined-term contracts ending in manumission and a settlement grant, with mechanical substitution required in the deadliest work. The reason recorded then governs still: large concentrations of indefinitely bonded men are the gravest danger inside the wall, and cutting the headcount is a war measure. The Copperbelt revolt of about 345, coordinated across three sites and retaken in eleven days by the Zambezi steam fleet, is the event the reform answers.
 
@@ -330,17 +316,17 @@ Bonded labour on the great estates and in the Nile agrarian base continues under
 
 ---
 
-## Item 24. Treasury note
+## Item 23. Treasury note
 
-Committed this turn: the Enterprise on the Madagascar instrument with 340 hulls in the passage trade, the Caribbean advance, the first appropriation on the Isthmus canal, the Amazon ascent and the highland entry, the fever-bark plantations, the southern passage station and the Pacific coast posts and works, the southern-landmass survey expedition, the reassessment of the forty-one interior districts, the bed expansion, the arc-nitrogen programme, the propellant programme, the yard programme, the airframe works, the radar fit and the network extensions, the two stud establishments, the register office, and the standing research slate.
+Committed this turn: the Enterprise on the Madagascar instrument with 340 hulls in the passage trade, the Caribbean advance, the Amazon ascent and the highland entry, the fever-bark plantations, the southern passage station and the Pacific coast posts and works, the southern-landmass survey expedition, the bed expansion, the arc-nitrogen programme, the propellant programme, the yard programme, the airframe works, the radar fit and the network extensions, the two stud establishments, the register office, and the standing research slate.
 
 Affordable against gross receipts rising from 142,000 to 167,000 talents and a reserve rising from 263,000 to 334,000.
 
-The large commitments, priced across the twenty-five years: the Enterprise at 78,000 talents in passage, grants and harbour works; the Caribbean advance at 46,000; the Pacific establishment at 9,800; the canal's first appropriation at 6,000 against a work of 52,000 across 30 years; the Amazon ascent and highland approaches at 4,200; the southern grazing coast at 3,400; the niter bed expansion at 3,100; the interior districts at 3,100; the airframe works at 2,600; the radar fit and network extensions at 1,900; the two stud establishments at 1,400; and the southern-landmass expedition at 1,400. These total 160,900 talents, an average of 6,400 a year against receipts averaging 154,000 across the turn.
+The large commitments, priced across the twenty-five years: the Enterprise at 78,000 talents in passage, grants and harbour works; the Caribbean advance at 46,000; the Pacific establishment at 9,800; the Amazon ascent and highland approaches at 4,200; the Patagonian grazing coast at 3,400; the niter bed expansion at 3,100; the airframe works at 2,600; the radar fit and network extensions at 1,900; the two stud establishments at 1,400; and the southern-landmass expedition at 1,400. These total 151,800 talents, an average of 6,100 a year against receipts averaging 154,000 across the turn.
 
 The reserve top-up of 2,840 talents a year is drawn from works and colonial construction, which is why provincial harbour and road works in the older African provinces run three years behind at 550. It binds by the rule behind it rather than by its size, the two-year target being the one line the council does not let slip.
 
-Research runs on two bases. The Library and foundations line stands at 8,400 talents a year and carries upkeep of the whole funded establishment, researchers being housed and fed at roughly three times a skilled labourer's keep. Programme apparatus, consumables and trial construction add 12,700 talents a year, charged to the arsenal, the naval yard directorate, the mine directorate, the medical establishment and the falls works account, inside the defence and works shares. Aggregate outlay across every account is 21,100 talents a year, 13 percent of gross receipts. The funded establishment is 38,000 scholars and engineers against 31,000 at open, of whom 10,180 sit in the named programmes.
+Research runs on two bases. The Library and foundations line stands at 8,400 talents a year and carries upkeep of the whole funded establishment, researchers being housed and fed at roughly three times a skilled labourer's keep. Programme apparatus, consumables and trial construction add 11,800 talents a year, charged to the arsenal, the naval yard directorate, the mine directorate, the medical establishment and the falls works account, inside the defence and works shares. Aggregate outlay across every account is 20,200 talents a year, 12 percent of gross receipts. The funded establishment is 38,000 scholars and engineers against 31,000 at open, of whom 9,600 sit in the named programmes.
 
 The reserve stands at target at the close and absorbs a shock. The discretionary build-out is what slows if one lands.
 
@@ -382,7 +368,7 @@ A report is expected at the next turn.
 
 # RESEARCH
 
-The Library and foundations line stands at 8,400 talents a year and carries upkeep of the establishment. The cost column below is apparatus, consumables, prototype work and trial construction, charged to the arsenal, the naval yard directorate, the mine directorate, the medical establishment and the falls works account. Named programmes hold 10,180 researchers of a funded establishment of 38,000 and cost 12,700 talents a year. Aggregate outlay across every account is 21,100 talents a year, 13 percent of gross receipts.
+The Library and foundations line stands at 8,400 talents a year and carries upkeep of the establishment. The cost column below is apparatus, consumables, prototype work and trial construction, charged to the arsenal, the naval yard directorate, the mine directorate, the medical establishment and the falls works account. Named programmes hold 9,600 researchers of a funded establishment of 38,000 and cost 11,800 talents a year. Aggregate outlay across every account is 20,200 talents a year, 12 percent of gross receipts.
 
 | Programme | Researchers | Cost a year | Result and window |
 |---|---|---|---|
@@ -396,7 +382,6 @@ The Library and foundations line stands at 8,400 talents a year and carries upke
 | Ship armour and hull standardisation | 400 | 900 | 175 hulls plated to standard; rate 9 a year against a requirement of 18. |
 | Mines, spar and drifting charges | 400 | 500 | In service at the canal mouths, Sinai approaches and colonial harbours. |
 | Crop acclimatisation, western and highland | 550 | 600 | Surplus 7 percent above the 500 baseline; highland root crop in cultivation 546. |
-| Isthmus canal engineering | 580 | 900 | Route selected, locks drawn, construction begun on a 30-year programme. |
 | Relay calculating machines | 240 | 300 | Extended from navigation to the settlement, treasury and assay returns. |
 | Optics: mirror telescope and pendulum regulation | 120 | 90 | Mirror instrument in service 541; pendulum in the clock shops 538. |
 | Latex, western basin | 140 | 210 | Confirming assay complete 540; groves planted at the Amazon posts. |
@@ -409,15 +394,15 @@ The Library and foundations line stands at 8,400 talents a year and carries upke
 
 **Mediterranean and Near East.** The Nile Valley and Delta. Cyrenaica and Tripolitania. Cyprus. The Levantine coast. The Asia Minor coastal holdings. The Sinai. The Yemen coast, Aden and the former Himyarite highlands, holding the Bab-el-Mandeb. The Western Desert oasis chain and the forward Saharan stations.
 
-**Africa.** Nubia and the Nile to Khartoum. The former Aksumite highlands. Djibouti and the Horn. The East African coast entire. The East African highlands to the Rift, the Lake Victoria basin and the Great Lakes. The Zimbabwe plateau. The Copperbelt. The Zambezi corridor and the Hwange coalfields. The Cape region and the Highveld and Botswana grassland. Namibia interior, Lesotho, Eswatini. The Congo basin through river control from the Livingstone Falls portage, with the industrial city and the aluminum plant 1,000 miles up the river behind the cataracts. The deep Congo interior and the southern Sahel margins, administered in forty-one districts, resurveyed and reassessed this turn. The Gold Coast and the Akan goldfields. The West African coast from the Congo mouth to Senegal. The trans-Saharan corridor and the integrated Sahel. Morocco's Atlantic coast and the Western Saharan coast.
+**Africa.** Nubia and the Nile to Khartoum. The former Aksumite highlands. Djibouti and the Horn. The East African coast entire. The East African highlands to the Rift, the Lake Victoria basin and the Great Lakes. The Zimbabwe plateau. The Copperbelt. The Zambezi corridor and the Hwange coalfields. The Cape region and the Highveld and Botswana grassland. Namibia interior, Lesotho, Eswatini. The Congo basin through river control from the Livingstone Falls portage, with the industrial city and the aluminum plant 1,000 miles up the river behind the cataracts. The deep Congo interior and the southern Sahel margins. The Gold Coast and the Akan goldfields. The West African coast from the Congo mouth to Senegal. The trans-Saharan corridor and the integrated Sahel. Morocco's Atlantic coast and the Western Saharan coast.
 
 **Indian Ocean.** Madagascar, a full province.
 
-**Western Atlantic.** The temperate south at the Plata, nineteen harbour and river towns with settled farming districts behind them, 250,000 settlers. The coast south of the Plata toward the cold ocean, 7,800 settlers at harbour stations. The tropical Atlantic face from the Guianas through Brazil, 34 fortified harbours and river posts, 180,000 settlers. The Amazon to 1,900 miles of ascent, 28 river posts, a 31-mile portage railway at the first cataract barrier. Twenty-two posts on the eastern highland approaches with a wagon road and a 40-mile rail link from the navigable head.
+**Western Atlantic.** The Plata estuary and its two river systems: the two facing estuary harbours, one on the rocky north point and one on the flat mud shore opposite, and seventeen towns up the Paraná and the Uruguay as far as the Paraguay confluence some 900 miles inland, on level treeless black-soil grass. 250,000 settlers, wheat, cattle and wine. The tropical face: 34 fortified harbours and river posts from the Guiana mouths past the Amazon delta and south along the reef and mangrove coast, taking in the reef harbour at the continent's eastern corner, the bay of All Saints, the São Francisco mouth and the landlocked bay under the granite headland 1,200 miles further south. 180,000 settlers, dyewood, hardwood and latex. The Amazon to 1,900 miles of ascent, 28 posts at the tributary mouths, the Xingu, Tapajós, Madeira, Negro, Purus and Juruá, with a 31-mile portage railway past the rapids of the Madeira. Twenty-two posts on the cloud-forest flank of the mountain wall, the highest at about 9,000 feet, with a wagon road and a 40-mile rail link up from the navigable head.
 
-**Caribbean.** The southern Caribbean coast from Trinidad west to the Isthmus, a thin unbroken line of fortified harbours. The Isthmus across its width at the narrowest crossing, canal construction begun. The Lesser Antilles, nine islands under post. 96,000 settlers across the Caribbean continental coast and the Lesser Antilles.
+**Caribbean.** The continental shore west and north from the Guiana rivers: fortified harbours at the Essequibo, Demerara and Berbice mouths, at the Orinoco delta, along the dry cactus coast beyond it, at the gulf of Maracaibo, and westward to the narrow neck of the continent, which is the westernmost ground taken. Garrisons victualled to hold three months cut off. The island arc north from Trinidad, nine islands under harbour post, each within sight of the last. 96,000 settlers across the continental coast and the arc.
 
-**The southern passage and the Pacific.** The coast south of the Plata toward the cold ocean, five harbour stations with inland grazing runs, 14,000 settlers. The passage at the foot of the southern continent, charted, with a coaling and provisioning station and a signal link north to the Plata. The Pacific coast from the passage north to the tropic, twelve harbour posts and four settled districts behind the central temperate section, 62,000 settlers, copper extraction at three sites, nitrate works opened on the northern desert beds.
+**The grazing coast, the passage and the Pacific.** South of the Plata, the wind-scoured treeless scrub plain: five harbour stations, at the shallow bay six days' sail south where the grassland gives out, at the double gulf behind the whale peninsula, and at the Deseado, Santa Cruz and Gallegos mouths, with runs pushed forty to eighty miles up each valley. 14,000 settlers, mostly Cape and Highveld men, sheep and hides. The passage 1,300 miles south of the Plata, a sheltered strait between the mainland and a large cold island, with the coaling and provisioning station mid-strait at the second narrows where the channel is a mile and a half wide, under a battery, linked by heliograph and radio north to the Gallegos. North of the passage, 900 miles of drowned channel coast, rain forest to the waterline and glaciers into the sea, held only at two fuel stations. Then the enclosed valley between the coast range and the mountain wall, Cyrenaican in climate: four settled districts on the snow-fed rivers, harbours at the north-open bay 1,400 miles up from the passage, at the Maipo mouth and at the Bío-Bío mouth. 62,000 settlers, wheat, grapes and olives. North of the valley, 700 miles on, the rainless shelf between sea and high desert plain, water shipped to every post: copper at three sites in the coastal ranges, nitrate from the surface beds of the inland plain. Twelve harbour posts hold the run from the passage to the tropic.
 
 ## Surveyed, not held
 
@@ -431,6 +416,6 @@ The Atlantic crossing route, in use, and discussed with no power.
 
 ## Survey ordered, result outstanding
 
-The sea north and west of the island arc, and north of the Isthmus coast. Survey squadrons are ordered out under the standing order at Item 6 to chart whatever lies there and to find whether any ground satisfies the canal's covering requirement. No such ground is known. The requirement is entered as unmet.
+The sea north and west of the island arc, and north of the narrow neck. Survey squadrons are ordered out under the standing order at Item 6 to chart what lies in that water before any settlement is placed where it could be cut off. Nothing there is known.
 
 The southern landmass. A nine-hull survey expedition is dispatched from Madagascar and the Cape under the standing orders at Item 11. No ground there is entered as held and no settlers are carried.
