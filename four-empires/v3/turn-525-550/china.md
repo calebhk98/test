@@ -234,15 +234,15 @@ Figures are the empire's own, from the census and tax registers, with the usual 
 ## Open Threads Carried Forward
 
 - The ocean-going steam hull is not achieved. The boiler at sea and the paddle wheel in swell remain unsolved and funded.
-- The lens that corrects colour has failed on schedule after some thousands of recorded melts, and the search continues at its funding.
-- The continuous source of the electrical force is not reached. The force is now available while a shaft turns and cannot be sustained as a light, for want of a speed regulator and of points that do not burn away.
+- The lens that corrects colour has failed on schedule after some thousands of recorded melts, and the search continues at its funding. It is still wanted despite the mirror instrument, because the mirror suits a fixed observatory and every carried instrument the empire makes is glass. The likeliest reason for the failure, entered as a guess, is that the object is framed as one better glass when the answer may be a pairing of two, nobody having separated the bending of light from the splitting of it.
+- The continuous source of the electrical force was reached in the 530s by driving the generator from a turning shaft, and that thread is closed. What carries forward is the light: the force will spark and heat a wire and will not burn through a night, for want of a regulator that holds a shaft at even speed and of points that do not burn away in minutes. No material tried at the points endures. No account of what the force is has been reached.
 - The breech loader's failure rate is falling and has not reached the standard for general issue.
 - The southern trunk line is not completed, iron having gone to the frontier magazine works and the naval refit. Three mill engine houses stand unfed by rail coal.
 - The pledge evasion of the estate ceiling is detected and not closed. Closing it requires reaching debt contracts the state does not register.
 - The colonies on the cold margin are a growing charge. The season continues to shorten and no instrument exists to change that.
 - The Pontic black earth is a fifth to two fifths broken. The ceiling is rising slowly at the speed of ox teams.
 - The naval range advantage remains on a clock. No foreign gun has been observed fired at sea, which is weak evidence.
-- Counted cannon on the far bank of the Syr Darya have risen to sixty to a hundred and ten displayed positions, a floor and not a total. The dispute stays open.
+- Counted cannon positions on the far bank of the Syr Darya have risen from three in the 450s to twelve to thirty displayed positions, a floor and not a total, and no total for that power's artillery can be derived from them. The dispute stays open after two refusals in the 470s.
 - The Northern Road's posted line lags its survey by a widening margin, with fifty to seventy-five years still estimated to the far shore.
 - The far coast north of the crossing landfall is charted for one to two thousand kilometres and the gap to the Northern Road's line is unclosed. Nothing is held there.
 - The mill licence rests on an inspection establishment too thin to count spindles, and spindles are being declared idle.
@@ -302,10 +302,10 @@ None sent.
 |---|---|---|---|
 | Ocean-going steam hull: boiler safety at sea, weight, paddle wheel | 200 to 400 at the home and Vietnamese yards, with arsenal foundry support | Navy line, inside a fleet not expanding elsewhere | Low pressure tenders in protected water, achieved 537 to 548. Ocean-going hull not expected inside 550 to 575 and not promised. |
 | Lens correcting colour: open-ended glass batch search | 60 to 120 glasshouse men and grinders | Open-ended chain, funded so the money is not pulled on failure | Failed 525 to 550. Continues. No date given, because the programme's terms do not permit one. |
-| Continuous source of the electrical force | 40 to 90 scholars and arsenal fitters | Open-ended chain, same terms | Shaft-driven generation achieved in the 530s. A sustained light not expected without a speed regulator and non-consuming points, neither of which is in hand. No window given. |
-| Gas-tight breech: breech face metallurgy and failure rate | 150 to 300 at the state arsenals | Arsenals line, military faction constituency | General issue standard expected 555 to 575 on the present rate of improvement. |
+| Electrical force: a light that will burn through a night | 40 to 90 scholars and arsenal fitters | Open-ended chain, same terms | The continuous source was obtained in the 530s from shaft-driven generation and the programme is redirected to the light. Not expected without a speed regulator and non-consuming points, neither of which is in hand, and no window is given. |
+| Gas-tight breech: gauging of block and seat, thicker breech ring, condemnation of worn parts on measurement | 150 to 300 at the state arsenals | Arsenals line, military faction constituency | General issue standard expected 555 to 575 on the present rate of improvement, the rate being limited by how often a post can be visited to gauge its weapons. |
 | Fevers, barks, and port closure | 40 to 80 physicians and assistants | Civil administration line, from the Egypt exchange | Mortality reduction of a tenth to a third at the highland and southern posts, recorded 535 to 550. No means of holding tropical lowland obtained or expected. |
-| Powder works at the Central Asian deposits | 300 to 700 at the works, plus construction gangs | Saltpeter monopoly and the arsenals line | Forward magazine raised to three to six weeks of sustained fire, completed 527 to 541. |
+| Powder works at the Central Asian deposits, with charcoal burning in the Tian Shan foothills | 300 to 700 at the works and the charcoal burns, plus construction gangs | Saltpeter monopoly and the arsenals line | Forward magazine raised to three to six weeks of sustained fire, completed 527 to 541. Sulfur still carried from the interior, no frontier deposit found. |
 | Rifled naval gun founding and boring | 400 to 800 at the arsenals and gun yards | Navy refit, no fleet addition | A third to a half of purpose-built broadsides rifled by 550; completion of the refit 555 to 570. |
 | Coast and rail survey establishment | 600 to 1,200 surveyors and clerks, drawn from the examination cohort | Civil administration and rail lines | Continuous. Survey output is stated under Territory. |
 
