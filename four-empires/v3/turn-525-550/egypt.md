@@ -312,7 +312,7 @@ The first is new ground carrying people the Nile never could. Cassava feeds vill
 
 The second is higher yields on ground already held, where the new crops rotate against the old and the marginal provinces now feed themselves instead of drawing grain from the Nile.
 
-Together they lift growth above the old trend, which is what a ceiling being raised looks like. Population at 550 is 35.5 million. The long-settled base grew from 28.9 million to 33.4 million, an average of 0.58 percent a year against 0.211 percent across 450 to 500, a rate the empire could not have carried while it was pressed against its agricultural limit and can carry now that the limit has moved. The remaining 2.1 million are the enumerated interior residents of Item 12, counted for the first time on ground long held rather than added by growth.
+Together they lift growth above the old trend, which is what a ceiling being raised looks like. Population at 550 is 33.4 million against 28.9 million at open, an average of 0.58 percent a year against 0.211 percent across 450 to 500, a rate the empire could not have carried while it was pressed against its agricultural limit and can carry now that the limit has moved.
 
 The council is watching the early part of a change it will not see finished. The generational wave runs through the century following.
 
