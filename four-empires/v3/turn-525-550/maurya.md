@@ -124,9 +124,53 @@ The volume was struck at the capital's press and sealed, so that Rome's copy and
 
 ---
 
+### The Foreign Hulls on the Southern Coast
+
+What follows is the register of what the realm's people saw, in the words of the returns as they came in. It is observation and not conclusion, and the court's conclusion is entered separately after it.
+
+- **534, the northwest line, post nine.** A single hull standing off about two leagues at first light, of a build no man at the post could name and none of the realm's own. It held its station through the day against a wind that would have carried it off, with no sail set that the watchers could see. It stood away to the north before dusk. Two watchers, agreeing.
+- **538, the northwest line, posts four and five.** Two hulls in company, boats lowered, men in the boats casting and hauling lines over the side in the manner of sounding. They worked one bay for three days. No party came ashore. The boats were counted at six.
+- **541, the western coast south of the post line.** A patrol of the southern squadron sighted three hulls in company at a distance of some four leagues, working slowly along the shore. One of the three was seen to move across the wind without sail. The patrol did not close, its orders at that date not requiring it.
+- **544, the northwest line, post seventeen.** A party of about forty landed at the watering place below the post, filled casks from the stream, raised nothing, and re-embarked when the post's fifty men came down onto the beach in order. Neither side had a word the other understood. Nothing was taken and nothing was left.
+- **546, off the north coast of the cold southern island.** A hull sighted twice in one season by the station at Himatirtha, at a distance, not approaching.
+- **548, the northwest line, posts two and three.** A party of about eighty came ashore between the two posts and worked inland some four kilometres across two days, going over ground and returning to the same beach. The post commanders followed at a distance with their mounted sections in plain sight and did not engage. The party re-embarked.
+- **549, off Nauvandha.** Two hulls standing off the depot's roads at long range for two days, in sight of the yard, then away to the west.
+
+> **The court's conclusion, marked as a conclusion.** The realm reads these hulls as Egypt's. The grounds are the build, which is none of the four the realm knows on that ocean; the moving without sail, which the realm has itself seen in Alexandria's war harbour in 365 and again in 462 and has met nowhere else; the bearing of approach, which is from the west across open ocean and not from the eastern islands; and the seasons, which do not match the monsoon any hull of the realm's would wait upon. The realm has not spoken with any of these vessels and has no word from any of them. It may be wrong. The intentions behind the sounding and the two landings the realm does not know at all, and it has not guessed at them in its orders, which are written to answer acts and not purposes.
+
+### The Coast Order
+
+The standing orders for that coast were issued by the throne, on the advice of the council, through the southern establishment at Ratnakula. The first instrument is the Coast Order of 535, made after the sighting of 534 and before there was any pattern to it. The second is the Amendment of 545, made after the landing of 544. Both were struck at the capital's press and issued to every post, station, harbour, yard, and patrol on Dakshinadvipa, on its islands, and on the southern road, and to every hull of the southern squadron. Both stand unchanged at 550.
+
+**The Coast Order of 535.** It is a ladder of five degrees, and a commander acts at the degree the other party's own act has reached and at no degree above it.
+
+*First, sight and record.* Every foreign hull is entered in the post's foreign-hull register with the date, the hour, the bearing, the distance, the number of hulls, the build, whether sail was set, and whether it moved without sail. Word goes by signal tower where a tower stands and by rider where none does. At this degree no post hails, shows itself, or fires.
+
+*Second, show the line manned.* If a hull holds station within sight of a post for more than a day, the post shows itself: the standard raised, the garrison drawn up on the beach in view, and fires lit at night at intervals along the shore. The purpose is that a rival counting this coast counts a garrison and not an empty beach.
+
+*Third, shadow and state the position.* If a patrol vessel is within reach it closes to within hail, keeps company, and does not fire first. Every hull and every post holds copies of a written statement struck at the capital in Greek, Latin, and Sanskrit, which says that this coast was found, charted, garrisoned, settled, and taxed by this realm, that its harbours are open to any power's ships for trade, water, and repair on the same terms, and that no base, no garrison right, and no ground will be granted upon it. The statement is handed over. Nothing further is said, and no commander is to negotiate, since no commander on that coast has authority to grant or refuse anything beyond what the statement contains.
+
+*Fourth, water and go.* A foreign party landing for water, wood, shelter, or the burial of its dead is permitted, watched, and provisioned if it asks. The post commander offers water from the post's own cistern rather than allowing a party to dig, a well dug being a work raised. The statement is handed over again. Nobody is seized, nobody is detained, and nothing is taken.
+
+*Fifth, the acts that are not permitted, and what is done about them.* A foreign party may not raise a marker, cairn, post, wall, hut, beacon, or any standing work; may not remain ashore past one night; and may not land within the walls, roads, cultivated ground, or watering places of any of the realm's own places. Against those acts the commander warns in writing and by interpreter where one is present. If the work continues he removes it, with his own hands and his own men, and rebuilds nothing in its place. If the party resists the removal he takes and holds them, feeds them, harms them not, and sends word to Ratnakula and thence to the capital. He does not fire upon men who are not firing upon him. If fired upon, he answers, and thereafter he is at war on that beach and will be judged on whether he held the ground.
+
+The order states as plainly what the realm will not do. It will not fire on a vessel standing offshore. It will not board a vessel that has landed nothing. It will not pursue beyond sight of the coast. The reason entered is that the realm's whole position on that continent is to be found already in possession, and a shot fired at a hull that has taken nothing hands a rival the grievance and gains the realm nothing it does not already hold.
+
+**The Amendment of 545.** Four additions.
+
+Any party moving inland from a landing place beyond the beach is followed at a distance by mounted men from the nearest station, kept in plain sight, not engaged, and escorted back to its boats. Each of the eight walled stations of the northwest line keeps a mounted section of twenty for that purpose.
+
+Every post sends its foreign-hull register entire to Ratnakula each season, so that the establishment can tell one hull from many and a return visit from a first.
+
+A standing squadron of six cannon-armed hulls, two of them engined, is based at Nauvandha from 546, the first naval force the realm has kept on that continent's western side. Its orders are the same ladder, with one addition: it places itself between a foreign hull and any harbour, yard, or settled district of the realm, and stays there.
+
+And the establishment at Ratnakula is to hold, at all times, one engined packet at readiness to carry word to the Strait and thence to the capital outside the convoy season, so that a landing in force is known at Pataliputra in months and not in a year.
+
+> **What the orders do not cover, and the court says so.** The ladder is written for parties of forty and eighty against posts of fifty and stations of two hundred. It does not say what a post commander does if a foreign power lands in strength and begins to build, because at that point the question is no longer one of orders to a post but of what the realm will spend, and the court has not decided it. The realm holds sixty-two harbours, twenty-two posts, a hundred and ninety cannon-armed warships of which ninety are engined, and an ocean between them and the capital. What it does not hold is any experience of contesting a landing on a coast that far from its yards.
+
 ### The Notice to Egypt
 
-A notice of holdings went to Egypt in 543. It carried the dates of the realm's finding, depot, and settlement of the southern continent, the fact that its coasts are administered, taxed, and garrisoned along their length, and the rule that the realm's harbours there are open to Egypt's ships for trade and closed to foreign basing. It carried no establishment figures.
+A notice of holdings went to Egypt in 543, in the ninth year of the sightings and after the sounding of 538, and it was the realm's answer to them. It named no sighting and asked no question, the court judging that to tell a rival what has been seen is to tell it what is watched and what is not. It carried the dates of the realm's finding, depot, and settlement of the southern continent, the fact that its coasts are administered, taxed, and garrisoned along their length, and the rule that the realm's harbours there are open to Egypt's ships for trade and closed to foreign basing. It carried no establishment figures.
 
 > **The reasoning.** A claim of first finding is worth what a power can make it worth, and there is no court between powers to hear one. What a letter can affect is a rival's estimate of what a landing on that coast would cost. The notice was cut to what raises that estimate, and the scale of the establishment was kept out of it, a rival needing the scale to judge which coast is worth contesting and which is thin.
 
