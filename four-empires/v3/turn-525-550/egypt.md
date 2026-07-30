@@ -4,7 +4,7 @@ Working paper of the strategic council. Alexandria.
 
 Egypt's own figures are single values, taken from the navy list, the payroll, the manifests, the appropriations, the receipts and the works returns. Confidence classes are written into the sentence for estimates of foreign powers only: **firm**, **reported**, **rumor**, **assumed**. Any figure concerning a foreign power is a floor.
 
-Standing figures at open: revenue 132,000 talents, reserve 263,000 talents, two-year reserve target with a floor at one year, population 28.9 million.
+Standing figures at open: revenue 138,000 talents, reserve 263,000 talents, two-year reserve target with a floor at one year, population 27.5 million. Revenue stood at 132,000 at 500 and has risen with population since.
 
 ---
 
@@ -12,9 +12,9 @@ Standing figures at open: revenue 132,000 talents, reserve 263,000 talents, two-
 
 Two bases are carried. Gross receipts include an imputed value for the copper Item 2 reclassifies to internal consumption. Reported revenue excludes it.
 
-Gross receipts at 550 are 168,000 talents against 132,000 at open. The agrarian base rises 24 percent on a population up 15.6 percent and a grain and root surplus up 7 percent. The Red Sea and canal tolls rise 24 percent with the volume of the eastern and Chinese trade. The western holdings yield 7,800 talents, from Plata wheat, hides and wine, tropical timber and latex, highland silver, and the first Pacific copper and nitrate. The industrial works yield 4,000 talents in aluminum, precision goods, machine tools and plated goods sold at monopoly rates. Reported revenue at 550 is 161,000.
+Gross receipts at 550 are 156,000 talents against 138,000 at open, built from six streams. The agrarian base rises 10 percent, tracking a population up 11 percent, and stands at 88,000. The Red Sea and canal tolls rise 4 percent to 20,100, the overland competition for the light high-value trade continuing to hold canal earnings near level. Gold rises 2 percent to 14,100, output being held deliberately moderate. Copper stands at 15,200, of which 9,000 is consumed by the state and 6,200 sold. Ivory, timber, coffee and port customs rise 5 percent to 10,100. The western holdings yield 8,000: Plata wheat, hides and wine 2,400; Pacific nitrate 1,800; tropical timber, latex and dyewood 1,300; the highland silver purchase margin of Item 8 1,400; Pacific copper 1,100. Aluminum, plated goods and precision instruments sold abroad at monopoly rates yield 900. Reported revenue at 550 is 147,000.
 
-The reserve target is computed on the gross basis. At 168,000 the two-year target is 336,000 against a reserve of 263,000, so the target rises by 73,000 talents as the state grows. Top-up is set at 2,920 talents a year and the reserve stands at 336,000 at 550.
+The reserve target is computed on the gross basis. At open the target is 276,000 against a reserve of 263,000, so the reserve begins the turn 13,000 short, the target having risen with revenue since it was last met. At 156,000 the target is 312,000. Top-up is set at 1,960 talents a year and the reserve stands at 312,000 at 550.
 
 The treasury proposed fixing the target as a sum, which holds it at 264,000. Refused. The sum required scales with the state.
 
@@ -26,11 +26,11 @@ Accepted cost: the top-up is drawn from works and colonial construction. Provinc
 
 Output rises and cost per unit of metal rises with it, the richest veins being worked out. Crown consumption has outgrown every other material demand, because wire is the bottleneck under telegraph, telephone, generators, motors and radio, and the drawing mills at the Copperbelt and the falls take their feedstock from the same ore.
 
-Copperbelt copper is reclassified as a strategic input consumed by the state. 6,800 talents a year leave the reported revenue figure and remain in the state's means. Copper's share of reported revenue falls from 11 percent to 5 percent while the metal leaving the ground rises. The Pacific copper in Item 10 bears directly on this, arriving as the African veins thin.
+The portion of Copperbelt copper the crown consumes is reclassified as a strategic input. Of a stream worth 15,200 talents a year, 9,000 is drawn by the wire mills, the arsenal and the electrical works and leaves the reported revenue figure while remaining in the state's means; 6,200 is still sold. Copper's share of reported revenue falls from 11 percent to 4 percent while the metal leaving the ground rises. The Pacific copper in Item 10 bears directly on this, arriving as the African veins thin.
 
 The treasury's receipts side opposed, on the ground that the reserve target is computed on revenue and that removing a stream lowers the target. Resolved by computing the target on gross receipts including the imputed copper, as Item 1 sets out. The mine directorate's receipts office is folded under the arsenal's materials account.
 
-Standing instruction: revenue comparisons against foreign powers use the gross figure of 168,000.
+Standing instruction: comparisons of Egyptian against foreign revenue use the reported figure of 147,000, which is money actually received. The gross figure of 156,000 is for internal budgeting and the reserve target alone, an imputed value being no part of what a rival's receipts would be measured against.
 
 ---
 
