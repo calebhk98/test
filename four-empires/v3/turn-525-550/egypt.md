@@ -4,7 +4,7 @@ Working paper of the strategic council. Alexandria.
 
 Egypt's own figures are single values, taken from the navy list, the payroll, the manifests, the appropriations, the receipts and the works returns. Confidence classes are written into the sentence for estimates of foreign powers only: **firm**, **reported**, **rumor**, **assumed**. Any figure concerning a foreign power is a floor.
 
-Standing figures at open: revenue 138,000 talents, reserve 263,000 talents, two-year reserve target with a floor at one year, population 27.5 million. Revenue stood at 132,000 at 500 and has risen with population since.
+Standing figures at open: revenue 142,000 talents, reserve 263,000 talents, two-year reserve target with a floor at one year, population 28.9 million.
 
 ---
 
@@ -12,9 +12,9 @@ Standing figures at open: revenue 138,000 talents, reserve 263,000 talents, two-
 
 Two bases are carried. Gross receipts include an imputed value for the copper Item 2 reclassifies to internal consumption. Reported revenue excludes it.
 
-Gross receipts at 550 are 156,000 talents against 138,000 at open, built from seven streams. The agrarian base rises 10 percent, tracking a population up 11 percent, and stands at 88,000. The Red Sea and canal tolls rise 4 percent to 20,100, the overland competition for the light high-value trade continuing to hold canal earnings near level. Gold rises 2 percent to 14,100, output being held deliberately moderate. Copper stands at 15,200, of which 9,000 is consumed by the state and 6,200 sold. Ivory, timber, coffee and port customs rise 5 percent to 10,100. The western holdings yield 8,000: Plata wheat, hides and wine 2,400; Pacific nitrate 1,800; tropical timber, latex and dyewood 1,300; the highland silver purchase margin of Item 8 1,400; Pacific copper 1,100. Aluminum, plated goods and precision instruments sold abroad at monopoly rates yield 900. Reported revenue at 550 is 147,000.
+Gross receipts at 550 are 167,000 talents against 142,000 at open, built from seven streams. The agrarian base rises 16 percent to 95,500, tracking a population up 15.6 percent with a small gain from yields. The Red Sea and canal tolls rise 4 percent to 20,700, the overland competition for the light high-value trade continuing to hold canal earnings near level. Gold rises 2 percent to 14,500, output being held deliberately moderate. Copper stands at 15,600, of which 9,000 is consumed by the state and 6,600 sold. Ivory, timber, coffee and port customs rise 5 percent to 10,400. The western holdings yield 9,400: Plata wheat, hides and wine 2,400; Pacific copper 1,900; Pacific nitrate 1,800; the highland silver purchase margin of Item 8 1,400; tropical timber, latex and dyewood 1,300; southern coast wool and hides 600. Aluminum, plated goods and precision instruments sold abroad at monopoly rates yield 900. Reported revenue at 550 is 158,000.
 
-The reserve target is computed on the gross basis. At open the target is 276,000 against a reserve of 263,000, so the reserve begins the turn 13,000 short, the target having risen with revenue since it was last met. At 156,000 the target is 312,000. Top-up is set at 1,960 talents a year and the reserve stands at 312,000 at 550.
+The reserve target is computed on the gross basis. At open the target is 284,000 against a reserve of 263,000, so the reserve begins the turn 21,000 short, the target having risen with revenue since it was last met. At 167,000 the target is 334,000. Top-up is set at 2,840 talents a year and the reserve stands at 334,000 at 550.
 
 The treasury proposed fixing the target as a sum, which holds it at 264,000. Refused. The sum required scales with the state.
 
@@ -26,11 +26,11 @@ Accepted cost: the top-up is drawn from works and colonial construction. Provinc
 
 Output rises and cost per unit of metal rises with it, the richest veins being worked out. Crown consumption has outgrown every other material demand, because wire is the bottleneck under telegraph, telephone, generators, motors and radio, and the drawing mills at the Copperbelt and the falls take their feedstock from the same ore.
 
-The portion of Copperbelt copper the crown consumes is reclassified as a strategic input. Of a stream worth 15,200 talents a year, 9,000 is drawn by the wire mills, the arsenal and the electrical works and leaves the reported revenue figure while remaining in the state's means; 6,200 is still sold. Copper's share of reported revenue falls from 11 percent to 4 percent while the metal leaving the ground rises. The Pacific copper in Item 10 bears directly on this, arriving as the African veins thin.
+The portion of Copperbelt copper the crown consumes is reclassified as a strategic input. Of a stream worth 15,600 talents a year, 9,000 is drawn by the wire mills, the arsenal and the electrical works and leaves the reported revenue figure while remaining in the state's means; 6,600 is still sold. Copper's share of reported revenue falls from 11 percent to 4 percent while the metal leaving the ground rises. The Pacific copper in Item 10 bears directly on this, arriving as the African veins thin.
 
 The treasury's receipts side opposed, on the ground that the reserve target is computed on revenue and that removing a stream lowers the target. Resolved by computing the target on gross receipts including the imputed copper, as Item 1 sets out. The mine directorate's receipts office is folded under the arsenal's materials account.
 
-Standing instruction: comparisons of Egyptian against foreign revenue use the reported figure of 147,000, which is money actually received. The gross figure of 156,000 is for internal budgeting and the reserve target alone, an imputed value being no part of what a rival's receipts would be measured against.
+Standing instruction: comparisons of Egyptian against foreign revenue use the reported figure of 158,000, which is money actually received. The gross figure of 167,000 is for internal budgeting and the reserve target alone, an imputed value being no part of what a rival's receipts would be measured against.
 
 ---
 
@@ -66,9 +66,9 @@ The intelligence directorate opposed, arguing that the Atlantic account bought s
 
 The instrument that filled Madagascar is applied whole to the western holdings: land grants at survey, exemption from the land tax for fifteen years, subsidised passage for settler families with livestock and tools, and crown-built harbour works, roads and cisterns raised in advance of arrival.
 
-Transport tonnage is funded to match. The transport and river yards deliver 60 hulls a year, and 340 hulls are in the western passage trade at 550. 560,000 persons are landed across the turn. 140,000 are lost to death and return passage. Natural increase adds 118,000. Settled population at 550, garrisons excluded, is 648,000 against 110,000 at open. Garrison strength across the western holdings is 52,000.
+Transport tonnage is funded to match. The transport and river yards deliver 60 hulls a year, and 340 hulls are in the western passage trade at 550. 540,000 persons are landed across the turn. 135,000 are lost to death and return passage. Natural increase adds 87,000. Settled population at 550, garrisons excluded, is 602,000 against 110,000 at open. Garrison strength across the western holdings is 52,000.
 
-Distribution follows survivability and volunteering. The temperate south at the Plata holds 250,000 in nineteen harbour and river towns with settled farming districts behind them, exporting wheat, hides and wine. The tropical Atlantic face from the Guianas through Brazil holds 180,000 across 34 fortified harbours and river posts, settled from the African provinces, whose people hold tropical lowland where Mediterranean bodies fail. The Caribbean holdings hold 175,000. The Pacific coast holds 34,000. The southern coast toward the cold ocean holds 7,800. The southern landmass of Item 11 holds 1,200.
+Distribution follows survivability and volunteering. The temperate south at the Plata holds 250,000 in nineteen harbour and river towns with settled farming districts behind them, exporting wheat, hides and wine. The tropical Atlantic face from the Guianas through Brazil holds 180,000 across 34 fortified harbours and river posts, settled from the African provinces, whose people hold tropical lowland where Mediterranean bodies fail. The Caribbean continental coast and the Lesser Antilles hold 96,000. The Pacific coast holds 62,000. The southern coast toward the cold ocean holds 14,000.
 
 Cost of the Enterprise across the turn is 78,000 talents: subsidised passage, land grants surveyed and registered, and crown-built harbour works, roads and cisterns raised ahead of arrival.
 
@@ -80,7 +80,13 @@ Radio reaches the western holdings continuously. Alexandria has broadcast a stan
 
 The carried instruction is followed: the Enterprise is accelerated, an occupied coast beats an empty one, and the founding fear is a rival growing on uncontested ground.
 
-Taken and garrisoned across the turn: the southern Caribbean coast from Trinidad west to the Isthmus as a thin unbroken line of fortified harbours; the Lesser Antilles as harbour posts on nine islands, on the Madagascar logic that an island cannot be attacked from land; and the Greater Antilles, with Cuba and Hispaniola settled under the Item 5 instrument to 121,000 settlers between them and Jamaica and Puerto Rico garrisoned.
+Taken and garrisoned across the turn: the southern Caribbean coast from Trinidad west to the Isthmus as a thin unbroken line of fortified harbours, and the Lesser Antilles as harbour posts on nine islands, on the Madagascar logic that an island cannot be attacked from land.
+
+Squadrons were also sent to the Greater Antilles, and the reasoning is set out here because the continental coast was the shorter and better-known route and the method would ordinarily have run north along it to the Isthmus. The continental coast was in fact taken first and is held. The islands were sought in addition, and for a naval reason rather than a settlement one. The canal in this item is the largest work the state has authorised in three centuries, and a cut is only worth what the fleet covering it is worth. The Greater Antilles sit across every approach into the basin from the north and east, and a power holding them can close the water above the Isthmus against a fleet that does not. Madagascar is the precedent the council reasoned from: an island astride a route cannot be taken from the land, and is held by whoever holds the sea around it. So the order given was to secure the covering position for the canal rather than to fill new farmland.
+
+What the landing parties found is reported as observed and is not resolved here. At the harbours entered on both Cuba and Hispaniola there were fortified positions in occupation, garrison troops under arms, worked stone and timber yards, and cultivated hinterland with assessment and tribute rolls kept in a script and tongue the parties did not read but which the interpreters judged Latin (reported, landing party returns, two islands, harbours entered and not the islands entire). The standards flown were not indigenous. The council's read, assumed, being drawn from no source but its own parties' eyes: these are Roman holdings of some standing rather than a recent landing, the works being finished and the rolls being kept.
+
+No settlers are landed on either island and none of the Item 5 figures rest on them. The squadrons hold off the coast under the standing order to shadow, to fire only if fired upon, and to issue no threat that will not be enforced. The council takes no further action on the Greater Antilles this turn.
 
 The Isthmus is held across its width at the narrowest crossing. Its value is a canal joining the Atlantic to the western ocean, and the council treats it as it treats the canal it already owns. The engineering establishment stands at 580, of which 340 carried the survey, the route is selected, and the lock arrangement is drawn on the basin-and-gate practice used at the Nile terminus since 235 to 238 AD, the summit standing 85 feet above the sea at the chosen pass.
 
@@ -134,11 +140,15 @@ Accepted cost: an organised power sits above Egypt's newest holdings while the c
 
 Egyptian ships have rounded a stormy continental foot since the Cape in about 90 to 100 AD, and the method for the second one is the method for the first: stand well out, fix latitude from the stars, let the current carry, and hold the depots close behind. The passage at the foot of the southern continent is charted across the turn, and a coaling and provisioning station stands at it with a heliograph and radio link north to the Plata.
 
-The Pacific coast above the passage is temperate, narrow and mineral-bearing, with a cold current running up it. Twelve harbour posts stand from the passage north to the tropic. The central temperate section carries a Mediterranean climate and 34,000 settlers under the Item 5 instrument, growing wheat, grapes and olives, and it is the second core-population ground the west has offered.
+The coast running south from the Plata toward the cold ocean is taken first, being the near side of the same movement. It is dry temperate grazing country, thin of people and good for sheep and cattle at scale. Five harbour stations and their inland runs hold 14,000 settlers under the Item 5 instrument, and the wool and hides yield 600 talents a year. Cost is 3,400 talents across the turn.
 
-Two materials make the coast strategic rather than merely productive. Copper runs in the coastal ranges at grades above the Copperbelt's remaining veins, which matters exactly as the African veins thin under Item 2, and extraction begins at three sites. Nitrate lies in surface beds in the rainless northern desert of that coast, in quantity no maintained bed establishment can approach, assayed by the arsenal's officers in 541. Nitrogen has been the ceiling on every Egyptian explosive since the first nitration, and this is the first supply the state has found that does not have to be manufactured.
+The Pacific coast above the passage is temperate, narrow and mineral-bearing, with a cold current running up it. Twelve harbour posts stand from the passage north to the tropic. The central temperate section carries a Mediterranean climate, wheat, grapes and olives, and four settled districts behind its harbours holding 62,000 settlers under the Item 5 instrument. It is the second core-population ground the west has offered and takes Mediterranean and Alexandrian families for the same reason the Plata does. Cost of the Pacific establishment is 9,800 talents across the turn in harbour works, roads, cisterns and the mineral plant, and 1,100 talents a year in garrison and administration.
 
-The haul is the difficulty and it is why Item 6 authorises the canal. Extraction is begun at a rate the present shipping supports and yields 1,800 talents a year at 550, and the beds are worked in earnest from the day the cut opens.
+Held on that coast is the shore, its harbours, the settled districts behind the central section and the mineral ground worked from them. Surveyed and not held is the coast north of the tropic and the mountain wall inland, which rises to the same highland spine entered from the east in Item 7.
+
+Two materials make the coast strategic rather than merely productive. Copper runs in the coastal ranges at grades above the Copperbelt's remaining veins, which matters exactly as the African veins thin under Item 2, and extraction begins at three sites and yields 1,900 talents a year at 550. Nitrate lies in surface beds in the rainless northern desert of that coast, in quantity no maintained bed establishment can approach, assayed by the arsenal's officers in 541, and yields 1,800 talents a year at 550. Nitrogen has been the ceiling on every Egyptian explosive since the first nitration, and this is the first supply the state has found that does not have to be manufactured.
+
+The haul is the difficulty and it is why Item 6 authorises the canal. Both workings are begun at a rate the present shipping supports, and both are driven hard from the day the cut opens.
 
 What Egyptian parties observed along that coast was indigenous coastal and highland peoples, in settlements from a few score to a few thousand.
 
@@ -146,25 +156,29 @@ Standing instruction: any works, vessel, party or wreck not indigenous, encounte
 
 ---
 
-## Item 11. An expedition is sent to the southern landmass
+## Item 11. The southern landmass is found occupied
 
-The standing judgement, entered about 450, was that the Maurya had known of that coast longer and had very likely set themselves on it, so that a lone Egyptian expedition would buy nothing usable. What changed is the destruction of the Mauryan eastern navy between 488 and 497 and the passing of the Malacca route under Chinese protection (firm, own file). A power without an eastern fleet does not garrison a coast at that distance, so the reasoning that stayed Egypt's hand no longer applies.
+The standing judgement, entered about 450, was that the Maurya had known of that coast longer and had very likely set themselves on it, so that a lone Egyptian expedition would buy nothing usable. The council set that judgement aside on the destruction of the Mauryan eastern navy between 488 and 497 and the passing of the Malacca route under Chinese protection (firm, own file), reasoning that a power without an eastern fleet does not garrison a coast at that distance. Nine hulls sailed from Madagascar and the Cape at a cost of 1,400 talents.
 
-Nine hulls sail from Madagascar and the Cape, which are the two nearest Egyptian bases and already hold the ocean-going stores. The expedition surveys the northern, western and southern coasts, plants three harbour posts on the northwest coast, and lands 1,200 settlers with livestock on the temperate south coast under the Item 5 instrument. Those 1,200 are counted in the Item 5 ledger.
+The reasoning was wrong and the expedition's returns say so plainly. What Egyptian parties saw, reported as observed: fortified harbours with garrison troops and working shipyards; garrisoned posts strung along the arid northwest shore; signal towers on the eastern coast, sited and spaced as a relay chain is sited; and inland of the settled harbours a cultivated hinterland with assessment and tribute rolls in keeping (firm as to what the parties saw at the points entered, and covering the points entered rather than the coast entire). The council's read, assumed, drawn from its own parties' eyes and no other source: these are Mauryan holdings of long standing, established well before the loss of the eastern fleet and maintained since.
 
-Cost is 1,400 talents across the turn in hulls, stores and posts, and 120 talents a year in garrison. No foreign works were found at any harbour entered (firm, expedition returns, covering the harbours entered and not the coast entire).
+No posts are planted, no settlers are landed, and no Item 5 figure rests on this coast. The expedition withdrew without contact and made no landing at any occupied harbour.
 
-The temperate south coast is flagged as core-population ground on the Plata pattern and is funded for settlement from the next turn.
+Two findings are logged permanently for the confrontation planners. A fleet destroyed is not a presence removed, and the absence of a navy in one ocean says nothing about garrisons already ashore in another. And the Maurya hold worked, taxed ground at a distance from their own base comparable to Egypt's own reach into the Atlantic, which is a capability the council had not credited them with and now must.
+
+The council takes no action against those holdings this turn.
 
 ---
 
-## Item 12. The African interior is brought under direct administration
+## Item 12. The interior of the African holdings is enumerated and assessed
 
-The deep interior has stood as claimed sphere since 300 AD because it grew too little to be worth occupying. Cassava changes that, carrying a crop on tropical soil that fed almost nothing, and it is the enabler here. Three centuries of accumulated tropical practice, sealed rail crossing of the fly belts, and the river and portage network carry the rest. The fever bark of Item 8 takes its first African harvest in 548 and bears on the next turn rather than this one.
+This is a fiscal and administrative act inside ground the crown has held for centuries. The Congo basin has been administered through the Livingstone Falls portage and its river network since about 405 to 413. The Copperbelt has been Egyptian since the 110s to 130s, the west coast and the Akan fields since the 155 to 185 period, and the East African coast for longer than either. What the deep interior between the river posts has never had is a census, a tax roll, a school or a court, the ground having grown too little to repay the cost of putting them there.
 
-Forty-one administrative districts are established across the deep Congo interior between the river posts and along the southern Sahel margins. 2.1 million people enter direct administration, with the Coptic scribal schools, the temple courthouse and clinic, and the unified code extended to them on the pattern used in every province since 202 to 210 AD. Rail crossings of the fly belts run in sealed carriage, which carries men and stock through in hours and sets them down healthy. Cost is 3,100 talents across the turn in district works, schools and temple establishments, and 420 talents a year in administration.
+Cassava changes that arithmetic, carrying a crop on tropical soil that fed almost nothing, so villages that could not support an assessment now can. Three centuries of tropical practice, sealed rail crossing of the fly belts, and the existing river and portage network carry the rest. The fever bark of Item 8 takes its first African harvest in 548 and bears on the next turn rather than this one.
 
-Standing instruction: the settlement office reports district returns separately from the long-settled provinces for two generations, the districts entering the count without having grown.
+Forty-one administrative districts are laid out across the deep Congo interior and the southern Sahel margins. 2.1 million people already resident on Egyptian ground are counted, assessed and brought onto the tax rolls for the first time, with the Coptic scribal schools, the temple courthouse and clinic, and the unified code extended to them on the pattern used in every province since 202 to 210 AD. Cost is 3,100 talents across the turn in district works, schools and temple establishments, and 420 talents a year in administration.
+
+Standing instruction: the settlement office reports these district returns separately from the long-settled provinces for two generations, the 2.1 million entering the count through enumeration rather than through growth or conquest, and no population comparison across turns is to treat them as an increase.
 
 ---
 
