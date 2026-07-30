@@ -42,6 +42,8 @@ The note is sent because the presence is now open. Egyptian garrisons, works, sh
 
 The note states that the coast is under Egyptian administration, asks for advance notice of passages, and asks that vessels with no commercial business keep to open water. Standing orders continue: shadow, fire only if fired upon, issue no threat that will not be enforced.
 
+The note also states that the administration is lately established. That is false, and the falsehood is deliberate. Egypt has held that coast for generations. It is permitted under the Item 4 doctrine because it concerns the age of a holding rather than its existence: a passing vessel can see that garrisons and works are there, which is why the note concedes them, and cannot establish from the sea when they were built. The claim carries the ten-year expiry review and the written successor position that Item 4 requires of every standing account. The internal record is that the coast has been Egyptian for generations, and no Egyptian paper is to adopt the letter's account.
+
 The case Egypt survives is a sequential single front against Rome, through terrain and depth. The case Egypt does not survive is a coordinated two-front war against Rome and the Maurya at once. Preventing that coordination is the central diplomatic objective of the state, and the mechanism by which coordination forms is a grievance one power can name to another.
 
 The council's read, assumed at best, being a judgement about a foreign court formed from no observation of it: the note and the western advance together raise the risk of coordination. The note converts part of an unaccountable grievance into an ordinary one, which cuts the other way, five vessels lost with no wreckage being a charge no channel can settle while a claim to a coast can be argued in writing for decades. The Caribbean advance in Item 6 is the larger movement, and it places Egyptian garrisons across the approach where the two spheres meet. The council makes both decisions with that read on the paper.
@@ -80,13 +82,13 @@ Radio reaches the western holdings continuously. Alexandria has broadcast a stan
 
 The carried instruction is followed: the Enterprise is accelerated, an occupied coast beats an empty one, and the founding fear is a rival growing on uncontested ground.
 
-Taken and garrisoned across the turn: the southern Caribbean coast from Trinidad west to the Isthmus as a thin unbroken line of fortified harbours, and the Lesser Antilles as harbour posts on nine islands, on the Madagascar logic that an island cannot be attacked from land.
+The advance runs along the ground Egypt already holds. From the Guiana coast and Trinidad the line is worked west and north along the continental shore to the Isthmus, harbour by harbour, which is the shorter route, the better known, and the one the method has used on every coast since the East African posts. That coast is taken and garrisoned across the turn as a thin unbroken line of fortified harbours.
 
-Squadrons were also sent to the Greater Antilles, and the reasoning is set out here because the continental coast was the shorter and better-known route and the method would ordinarily have run north along it to the Isthmus. The continental coast was in fact taken first and is held. The islands were sought in addition, and for a naval reason rather than a settlement one. The canal in this item is the largest work the state has authorised in three centuries, and a cut is only worth what the fleet covering it is worth. The Greater Antilles sit across every approach into the basin from the north and east, and a power holding them can close the water above the Isthmus against a fleet that does not. Madagascar is the precedent the council reasoned from: an island astride a route cannot be taken from the land, and is held by whoever holds the sea around it. So the order given was to secure the covering position for the canal rather than to fill new farmland.
+The island chain running north from Trinidad is taken with it. Each island in that arc stands within sight of the last, so a squadron working up it is never out of sight of land and is doing what a coasting squadron does. Nine islands carry harbour posts, held on the Madagascar logic that an island cannot be attacked from the land and belongs to whoever holds the sea around it.
 
-What the landing parties found is reported as observed and is not resolved here. At the harbours entered on both Cuba and Hispaniola there were fortified positions in occupation, garrison troops under arms, worked stone and timber yards, and cultivated hinterland with assessment and tribute rolls kept in a script and tongue the parties did not read but which the interpreters judged Latin (reported, landing party returns, two islands, harbours entered and not the islands entire). The standards flown were not indigenous. The council's read, assumed, being drawn from no source but its own parties' eyes: these are Roman holdings of some standing rather than a recent landing, the works being finished and the rolls being kept.
+The canal below raises a requirement the council can state and cannot yet satisfy. A cut is worth what the fleet covering it is worth, and covering it means holding ground to seaward of it, athwart the approaches into this sea from the north and the east. No ground Egypt knows of answers that description. The continental coast is the wrong side of the water to close an approach, and the island arc runs up the eastern edge rather than across the northern one.
 
-No settlers are landed on either island and none of the Item 5 figures rest on them. The squadrons hold off the coast under the standing order to shadow, to fire only if fired upon, and to issue no threat that will not be enforced. The council takes no further action on the Greater Antilles this turn.
+Standing order to the Atlantic patrol command, issued this turn: survey squadrons are to work north and west from the head of the island arc and north from the Isthmus coast, standing out from land where the run of the current and the set of the weather suggest ground beyond the horizon, and to chart whatever lies in that sea. They are to report by radio on sighting, to enter no harbour that shows works, vessels or people in occupation, to attempt no contact, and to hold position without closing. Whether ground exists that satisfies the covering requirement is not known, and the requirement is entered as unmet until a survey answers it.
 
 The Isthmus is held across its width at the narrowest crossing. Its value is a canal joining the Atlantic to the western ocean, and the council treats it as it treats the canal it already owns. The engineering establishment stands at 580, of which 340 carried the survey, the route is selected, and the lock arrangement is drawn on the basin-and-gate practice used at the Nile terminus since 235 to 238 AD, the summit standing 85 feet above the sea at the chosen pass.
 
@@ -156,29 +158,27 @@ Standing instruction: any works, vessel, party or wreck not indigenous, encounte
 
 ---
 
-## Item 11. The southern landmass is found occupied
+## Item 11. A survey expedition is sent to the southern landmass
 
-The standing judgement, entered about 450, was that the Maurya had known of that coast longer and had very likely set themselves on it, so that a lone Egyptian expedition would buy nothing usable. The council set that judgement aside on the destruction of the Mauryan eastern navy between 488 and 497 and the passing of the Malacca route under Chinese protection (firm, own file), reasoning that a power without an eastern fleet does not garrison a coast at that distance. Nine hulls sailed from Madagascar and the Cape at a cost of 1,400 talents.
+The standing judgement, entered about 450, was that the Maurya had known of that coast longer and had very likely set themselves on it, so that a lone Egyptian expedition would buy nothing usable. The council sets that judgement aside on the destruction of the Mauryan eastern navy between 488 and 497 and the passing of the Malacca route under Chinese protection (firm, own file), reasoning that a power without an eastern fleet is less able to hold ground at that distance. The reasoning is recorded so that it can be tested against what the expedition returns.
 
-The reasoning was wrong and the expedition's returns say so plainly. What Egyptian parties saw, reported as observed: fortified harbours with garrison troops and working shipyards; garrisoned posts strung along the arid northwest shore; signal towers on the eastern coast, sited and spaced as a relay chain is sited; and inland of the settled harbours a cultivated hinterland with assessment and tribute rolls in keeping (firm as to what the parties saw at the points entered, and covering the points entered rather than the coast entire). The council's read, assumed, drawn from its own parties' eyes and no other source: these are Mauryan holdings of long standing, established well before the loss of the eastern fleet and maintained since.
+Nine hulls sail from Madagascar and the Cape, the two nearest Egyptian bases, which already hold the ocean-going stores. Cost is 1,400 talents across the turn in hulls, stores and provisioning. The expedition carries no settlers. It is a survey, and settlement of any part of that coast waits on the council's order given after the report.
 
-No posts are planted, no settlers are landed, and no Item 5 figure rests on this coast. The expedition withdrew without contact and made no landing at any occupied harbour.
+Standing orders for landfall: chart the coast from seaward; enter harbours that appear unoccupied and take on water; make no landing at any harbour that shows works, vessels or people in occupation; attempt no contact; signal by radio on sighting anything not indigenous and hold position without closing; and withdraw and report rather than press a landing against opposition of any kind.
 
-Two findings are logged permanently for the confrontation planners. A fleet destroyed is not a presence removed, and the absence of a navy in one ocean says nothing about garrisons already ashore in another. And the Maurya hold worked, taxed ground at a distance from their own base comparable to Egypt's own reach into the Atlantic, which is a capability the council had not credited them with and now must.
-
-The council takes no action against those holdings this turn.
+No Item 5 figure rests on this coast and no ground there is entered as held.
 
 ---
 
-## Item 12. The interior of the African holdings is enumerated and assessed
+## Item 12. The deep interior districts are resurveyed and reassessed
 
-This is a fiscal and administrative act inside ground the crown has held for centuries. The Congo basin has been administered through the Livingstone Falls portage and its river network since about 405 to 413. The Copperbelt has been Egyptian since the 110s to 130s, the west coast and the Akan fields since the 155 to 185 period, and the East African coast for longer than either. What the deep interior between the river posts has never had is a census, a tax roll, a school or a court, the ground having grown too little to repay the cost of putting them there.
+Ordinary administration of long-held ground. The Congo basin has been administered through the Livingstone Falls portage and its river network since about 405 to 413, the Copperbelt since the 110s to 130s, the west coast and the Akan fields since the 155 to 185 period, and the East African coast for longer than any of them. The people of the deep interior have been Egyptian subjects, on the rolls and inside the temple school and courthouse network, for generations.
 
-Cassava changes that arithmetic, carrying a crop on tropical soil that fed almost nothing, so villages that could not support an assessment now can. Three centuries of tropical practice, sealed rail crossing of the fly belts, and the existing river and portage network carry the rest. The fever bark of Item 8 takes its first African harvest in 548 and bears on the next turn rather than this one.
+What is done this turn is a reassessment. The interior districts were last surveyed against yields that no longer describe the ground. Cassava has turned land assessed as margin into land that carries a crop, so holdings stand at values the rolls do not reflect and the assessment has drifted below what the ground now bears. Forty-one districts are resurveyed and reassessed on the present yields, their boundaries redrawn where the old lines cut across settlement that has shifted onto the newly productive soil, and the scribal school, clinic and court establishments are extended to the settlements that have grown up away from the river posts.
 
-Forty-one administrative districts are laid out across the deep Congo interior and the southern Sahel margins. 2.1 million people already resident on Egyptian ground are counted, assessed and brought onto the tax rolls for the first time, with the Coptic scribal schools, the temple courthouse and clinic, and the unified code extended to them on the pattern used in every province since 202 to 210 AD. Cost is 3,100 talents across the turn in district works, schools and temple establishments, and 420 talents a year in administration.
+Cost is 3,100 talents across the turn in survey, district works and school and temple establishments, and 420 talents a year in continuing administration. The yield of the reassessment sits inside the agrarian line of Item 1 and is not a separate stream.
 
-Standing instruction: the settlement office reports these district returns separately from the long-settled provinces for two generations, the 2.1 million entering the count through enumeration rather than through growth or conquest, and no population comparison across turns is to treat them as an increase.
+Standing instruction: the reassessment is a correction to the rolls and produces no change in the population count, those districts having been carried in the census since they were first administered.
 
 ---
 
@@ -352,13 +352,13 @@ The reserve stands at target at the close and absorbs a shock. The discretionary
 
 > From the council at Alexandria to the government at Rome.
 >
-> The Atlantic coast of Africa, from the Moroccan approaches south to the Cape, is under Egyptian administration.
+> The Atlantic coast of Africa has lately been brought under Egyptian administration.
 >
 > Egyptian ships will escort Roman vessels passing along it. Rome is asked to give notice of such passages before they are made.
 >
 > Vessels with no commercial business on that coast are to keep to open water and stand clear of Egyptian harbours, works and signal stations.
 >
-> What arrangements Egypt has with any other power are not a matter for Rome, and Egypt will not discuss them, nor its routes, nor the disposition of its fleet.
+> What arrangements Egypt has with any other power are not a matter for Rome, and Egypt will not discuss them, nor the extent of its holdings, nor its routes, nor the disposition of its fleet.
 >
 > Alexandria.
 
