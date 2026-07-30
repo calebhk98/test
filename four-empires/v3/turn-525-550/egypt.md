@@ -332,7 +332,7 @@ Bonded labour on the great estates and in the Nile agrarian base continues under
 
 ## Item 24. Treasury note
 
-Committed this turn: the Enterprise on the Madagascar instrument with 340 hulls in the passage trade, the Caribbean advance, the first appropriation on the Isthmus canal, the Amazon ascent and the highland entry, the fever-bark plantations, the southern passage station and the Pacific coast posts and works, the southern-landmass expedition, the forty-one interior districts, the bed expansion, the arc-nitrogen programme, the propellant programme, the yard programme, the airframe works, the radar fit and the network extensions, the two stud establishments, the register office, and the standing research slate.
+Committed this turn: the Enterprise on the Madagascar instrument with 340 hulls in the passage trade, the Caribbean advance, the first appropriation on the Isthmus canal, the Amazon ascent and the highland entry, the fever-bark plantations, the southern passage station and the Pacific coast posts and works, the southern-landmass survey expedition, the reassessment of the forty-one interior districts, the bed expansion, the arc-nitrogen programme, the propellant programme, the yard programme, the airframe works, the radar fit and the network extensions, the two stud establishments, the register office, and the standing research slate.
 
 Affordable against gross receipts rising from 142,000 to 167,000 talents and a reserve rising from 263,000 to 334,000.
 
@@ -409,7 +409,7 @@ The Library and foundations line stands at 8,400 talents a year and carries upke
 
 **Mediterranean and Near East.** The Nile Valley and Delta. Cyrenaica and Tripolitania. Cyprus. The Levantine coast. The Asia Minor coastal holdings. The Sinai. The Yemen coast, Aden and the former Himyarite highlands, holding the Bab-el-Mandeb. The Western Desert oasis chain and the forward Saharan stations.
 
-**Africa.** Nubia and the Nile to Khartoum. The former Aksumite highlands. Djibouti and the Horn. The East African coast entire. The East African highlands to the Rift, the Lake Victoria basin and the Great Lakes. The Zimbabwe plateau. The Copperbelt. The Zambezi corridor and the Hwange coalfields. The Cape region and the Highveld and Botswana grassland. Namibia interior, Lesotho, Eswatini. The Congo basin through river control from the Livingstone Falls portage, with the industrial city and the aluminum plant 1,000 miles up the river behind the cataracts. Forty-one interior districts across the deep Congo and the southern Sahel margins, 2.1 million people under direct administration. The Gold Coast and the Akan goldfields. The West African coast from the Congo mouth to Senegal. The trans-Saharan corridor and the integrated Sahel. Morocco's Atlantic coast and the Western Saharan coast.
+**Africa.** Nubia and the Nile to Khartoum. The former Aksumite highlands. Djibouti and the Horn. The East African coast entire. The East African highlands to the Rift, the Lake Victoria basin and the Great Lakes. The Zimbabwe plateau. The Copperbelt. The Zambezi corridor and the Hwange coalfields. The Cape region and the Highveld and Botswana grassland. Namibia interior, Lesotho, Eswatini. The Congo basin through river control from the Livingstone Falls portage, with the industrial city and the aluminum plant 1,000 miles up the river behind the cataracts. The deep Congo interior and the southern Sahel margins, administered in forty-one districts, resurveyed and reassessed this turn. The Gold Coast and the Akan goldfields. The West African coast from the Congo mouth to Senegal. The trans-Saharan corridor and the integrated Sahel. Morocco's Atlantic coast and the Western Saharan coast.
 
 **Indian Ocean.** Madagascar, a full province.
 
@@ -425,14 +425,12 @@ The western highland spine above the approach posts, surveyed by three routes, w
 
 The Amazon basin above the navigable head, by survey parties to the highland foot.
 
-The Caribbean coast and islands north of the Greater Antilles, coastal survey only.
-
 The Pacific coast north of the tropic, coastal survey only, and the mountain wall inland of the settled districts, which rises to the same highland spine entered from the east.
 
 The Atlantic crossing route, in use, and discussed with no power.
 
-## Encountered, occupied by others, not resolved
+## Survey ordered, result outstanding
 
-The Greater Antilles. Squadrons approached Cuba and Hispaniola as the naval covering position for the Isthmus canal and found fortified positions in occupation, garrison troops, working yards and a taxed hinterland, with standards not indigenous and rolls the interpreters judged Latin (reported, landing party returns, harbours entered and not the islands entire). No settlers landed, no ground held, no action taken. Detail at Item 6.
+The sea north and west of the island arc, and north of the Isthmus coast. Survey squadrons are ordered out under the standing order at Item 6 to chart whatever lies there and to find whether any ground satisfies the canal's covering requirement. No such ground is known. The requirement is entered as unmet.
 
-The southern landmass. Egyptian vessels found fortified harbours with garrisons and shipyards, garrisoned posts along the arid northwest, signal towers spaced as a relay chain along the eastern coast, and a cultivated hinterland under assessment (firm as to the points entered). Read by the council as Mauryan holdings of long standing. No posts planted, no settlers landed, the expedition withdrew without contact, no action taken. Detail at Item 11.
+The southern landmass. A nine-hull survey expedition is dispatched from Madagascar and the Cape under the standing orders at Item 11. No ground there is entered as held and no settlers are carried.
