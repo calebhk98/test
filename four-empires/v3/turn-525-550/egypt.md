@@ -62,7 +62,11 @@ The intelligence directorate opposed, arguing the Atlantic account bought sevent
 
 ## Item 5. The Enterprise is accelerated and the Caribbean north is held where it stands
 
-Funded through the turn at the scale set in the last. Landings across all Atlantic holdings are firm from transport manifests at 90,000 to 180,000 persons. Surviving settled population at 550, excluding garrisons, is reported by the settlement office at 70,000 to 150,000 and treated as an estimate, the frontier returns lagging.
+Funded through the turn at the scale set in the last. Landings across all Atlantic holdings are firm from transport manifests at 90,000 to 180,000 persons. Surviving settled population at 550, excluding garrisons, is reported by the settlement office at 70,000 to 150,000 and treated as an estimate.
+
+The difference between the two figures runs in both directions and the components are stated, because a councillor cannot otherwise tell a loss of people from a late return. Garrison strength of 8,000 to 20,000 is counted separately and is excluded from the settled figure by definition. Return passage of ships' crews, term-completed workers and survey and botanical personnel accounts for 4,000 to 12,000. Settler mortality accounts for 6,000 to 18,000, concentrated in the first two years at any new site and markedly higher at the tropical posts than at the Plata. Returns from the newest posts lag by one to three years, so the settled figure understates by an unknown margin. Natural increase adds back and is not separately counted.
+
+The council's read is that the Enterprise is not losing people at a rate that threatens it, and that first-two-years mortality at the tropical posts is the component to watch. No change is made to the programme. The settlement office is instructed to report the four components separately from this turn forward, so that the same question does not have to be asked again.
 
 The temperate south at the Plata takes the Mediterranean and Alexandrian settlers and passes from perimeter to settled ground, with harbour works at two to four sites and wheat, grapes and olives in production (firm, settlement and yard returns). The tropical face from the Guianas through Brazil remains fortified posts and garrison harbours, thin and unbroken, settled from the African provinces because Mediterranean bodies do not hold in tropical lowland. The Caribbean north advances no further than the strongpoints at roughly Caracas and Trinidad. The council declines to advance it, that being the approach on which the two spheres will meet, and the state gaining nothing from creating the meeting early.
 
@@ -204,11 +208,11 @@ One authorised, at SPY TASKINGS. Three declined. Against China, the register off
 
 ## Item 18. Treasury note
 
-Committed: the Enterprise at continued scale, the Amazon ascent, the southern stud, the bed expansion, the directed nitrate programme, the propellant programme, continued standardisation and plating, the airframe works, the long-wave stations, the register office, and the standing slate.
+Committed: the Enterprise at continued scale, the Amazon ascent, the southern stud, the bed expansion, the directed nitrate programme, the propellant programme, continued standardisation and plating, the airframe works and the aircraft powerplant programme, the long-wave stations, the register office, and the standing slate.
 
 Affordable against revenue of about 132,000 rising to a projected 138,000 to 145,000, and a reserve of about 263,000 rising to a projected 276,000 to 290,000. The top-up is funded out of works and colonial construction, which is why provincial harbour and road works slow by two to five years each. Slack for a shock is thinner at the close than at the open. The reserve absorbs a shock. The build-out is what slows.
 
-Research runs at roughly five percent of revenue, 6,600 to 7,300 talents a year. The funded establishment is 24,000 to 40,000 at 550 against 20,000 to 35,000 at open (reported, Library and branch returns across every budget). Named programmes account for 4,000 to 7,700 of that headcount; the remainder is the standing establishment and is not itemised.
+Research runs at roughly five percent of revenue, 6,600 to 7,300 talents a year. The funded establishment is 24,000 to 40,000 at 550 against 20,000 to 35,000 at open (reported, Library and branch returns across every budget). Named programmes account for 4,250 to 8,200 of that headcount; the remainder is the standing establishment and is not itemised.
 
 ---
 
@@ -254,14 +258,15 @@ No results are written here. A report is expected at the next turn.
 
 # RESEARCH
 
-Roughly five percent of revenue, 6,600 to 7,300 talents a year. Named programmes account for 4,000 to 7,700 of a funded establishment of 24,000 to 40,000.
+Roughly five percent of revenue, 6,600 to 7,300 talents a year. Named programmes account for 4,250 to 8,200 of a funded establishment of 24,000 to 40,000.
 
 | Programme | Researchers | Cost a year | Expected result and window |
 |---|---|---|---|
 | Stabilized, transportable blasting explosive | 900 to 1,400 | 700 to 1,400 | Usable result 515 to 535. Largest allocation. Gates much else. |
 | Electric-nitrate, now directed | 500 to 800 | 700 to 1,500 | Bench process 545 to 585. Works scale not estimated. May return nothing. |
 | Nitro-propellant and barrel | 400 to 700 | 300 to 700 | Workable piece 545 to 575. Service numbers not estimated. |
-| Aircraft, reconnaissance and incendiary | 500 to 900 | 600 to 1,200 | Series production 20 to 60 airframes a year by 545 to 550. |
+| Aircraft, reconnaissance and incendiary | 500 to 900 | 600 to 1,200 | Airframe production 20 to 60 a year by 545 to 550. In service 90 to 220, held down by engine supply, not airframes. |
+| Aircraft powerplant: bearings, valve gear, cooling, ignition | 250 to 500 | 400 to 900 | Binding constraint on the air establishment. Overhaul life doubled from 40 to 120 hours, window 545 to 565. Radius rises only if this returns. |
 | Aluminum structural work | 300 to 600 | 300 to 600 | Mature. Continues as engineering, not discovery. |
 | Radio, vacuum tube manufacture, electronics | 1,200 to 2,000 | 1,000 to 1,900 | Standing. 350 to 600 sets in service at 550. |
 | Long-wave shore stations, ocean gap | 150 to 300 | 120 to 300 | 540 to 565, uncertain. May return nothing. |

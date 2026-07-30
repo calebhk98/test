@@ -100,6 +100,20 @@ From about 534 the treasury keeps a register of things the realm owes to foreign
 
 ---
 
+### The Notice to Egypt
+
+A notice was sent to Egypt in about 543. Its purpose was settled at the council before it was drafted, because the first draft had two purposes in it and they wanted different letters.
+
+> **The reasoning.** A claim of first finding is worth what a power can make it worth. There is no court between powers to hear one. The realm's own experience along the East African coast is that Egypt's answer was the same at every harbour whoever had come first, and the realm holds no instrument to compel a hearing of dates. What a letter can affect is Egypt's estimate of what a landing on that coast would cost. The purpose was therefore fixed as deterrence, and the letter was cut to carry only what raises that estimate: that the ground has been held since the survey of 415 to 420 and the depot of 478, that its coasts are administered and taxed and garrisoned along their length, and that they are closed to foreign basing.
+
+**What was struck from the draft, and why.** The first draft, written about 541, gave the fifty major harbours, the three hundred lesser stations, the hundred and fifty to two hundred thousand people carried across, the naming of the eastern coast and northern belt as the settled and taxed ground, and the arid northwest as a line of garrisoned posts. All of it was struck in about 542. Egypt has known that the continent exists since this realm told it in about 462, so the new matter in such a letter is not the claim but the scale, and the scale tells a rival which coast is worth contesting and which is thin. The northwest sentence was the worst of the five, naming in one breath the shore a fleet crossing from Africa would reach and the fact that it is the thinnest ground the realm holds anywhere on that continent. A general statement of strength cannot be checked and must either be believed or be tested at expense. An establishment table can be read once and acted on.
+
+**The cost, entered as the reserve circulars were entered.** The letter tells Egypt that this realm is watchful enough to write, and that the coast is administered rather than merely marked. That invites planning for a contested landing where silence might have invited none. The court accepted the cost on the ground that a rival expecting an empty coast lands where he pleases, while a rival expecting an administered one must bring a force and choose a place, which takes longer and can be seen coming by the fourteen posts of the northwest line.
+
+**Two things the notice did not do.** It did not ask after the shipping seen provisioning on the African coast in about 500 to 505, because a question of that kind tells Egypt that the realm is still watching those harbours and has learned nothing new since, and the tasking of 529 is the proper instrument for that question. And it did not tell Egypt what the realm now thinks of the galvanic guidance of 495, which was told to Rome instead. The reasoning entered is that a rival who believes this realm is still spending effort on the plant path is a rival who does not know the realm has stopped.
+
+---
+
 ### What Was Left Standing
 
 - **China.** No message, no probe, no operation. The realm holds in its workshops a hand cannon taken by bribery from a Han arsenal and now fields a firearm of its own, and any exchange invites a question about where the second came from. The Syr Darya cannon, open between the two courts since about 500, was not raised.
@@ -174,13 +188,13 @@ Nothing is asked of Rome in this letter.
 
 From the throne at Pataliputra to the throne of Egypt.
 
-This is a notice of holdings, sent so that it stands on record in both hands and at a date either may check. It asks nothing and offers nothing.
+This notice concerns the great dry southern continent that lies beyond the eastern islands, and the islands to its north and to its south. It asks nothing and offers nothing.
 
-The great dry southern continent beyond the eastern islands was found, and its northwest coast charted, by a survey expedition of this realm in the years reckoned 415 to 420. A depot with shipwrights was placed on that northwest coast in about 478. Between 500 and 525 this realm founded upon it fifty major harbours, each with fort, yard, and administration, and three hundred lesser stations, wells, and garrisons, and carried there some hundred and fifty to two hundred thousand of its people. Its eastern coast and northern belt are settled and taxed. Its arid northwest is held in a line of garrisoned posts. The great island to that continent's north and the cold island to its south are held by this realm also.
+That continent was found, and its northwest coast charted, by a survey expedition of this realm in the years reckoned 415 to 420. A depot with shipwrights was placed upon that northwest coast in about 478 and has been kept there since. Its coasts are settled, administered, and taxed by this realm, are garrisoned along their length, and are governed under this realm's law from seats established upon the continent itself. The great island to that continent's north and the cold island to its south are held by this realm also.
 
-Egypt has known of that continent since this realm told it, in the exchange of about the year 462, when the charts of the eastern seas, the harbour notes, and the continent's location were given, and the account of what the copper lines along Alexandria's walls are for was received. That bargain is raised here not as a complaint but to record that Egypt learned of the ground from this realm, that this realm was there first, and that the dates above may be tested against Egypt's own memory of the exchange.
+Egypt has known of that continent since this realm told it, in the exchange of about the year 462, when the charts of the eastern seas, the harbour notes, and the continent's location were given, and the account of what the copper lines along Alexandria's walls are for was received. That bargain is raised here not as a complaint but to record that Egypt learned of the ground from this realm, that this realm was upon it first, and that the dates above may be tested against Egypt's own memory of the exchange.
 
-One matter of practice. The harbours of this realm on that continent are open to Egypt's ships for trade on the same terms as the ships of any other power, and will grant no base, no garrison right, and no ground. That rule is adopted because it was applied to this realm at Aden and along the whole East African coast for four hundred years, and because four hundred years of being turned from those harbours showed this court that the rule works and keeps a coast in one hand. No grievance is raised that requires an answer, and none is expected.
+One matter of practice. The harbours of this realm upon that continent and its islands are open to Egypt's ships for trade on the same terms as the ships of any other power, and will grant no base, no garrison right, and no ground. That rule is adopted because it was applied to this realm at Aden and along the whole length of the East African coast for four hundred years, and because four hundred years of being turned from those harbours showed this court that the rule works and keeps a coast in one hand. No grievance is raised that requires an answer, and none is expected.
 
 ---
 
