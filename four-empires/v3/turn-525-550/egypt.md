@@ -427,8 +427,12 @@ The Amazon basin above the navigable head, by survey parties to the highland foo
 
 The Caribbean coast and islands north of the Greater Antilles, coastal survey only.
 
-The Pacific coast north of the tropic, coastal survey only.
-
-The southern landmass beyond the three posts: the northern, western and southern coasts surveyed, the temperate south coast funded for settlement from the next turn, the interior unentered.
+The Pacific coast north of the tropic, coastal survey only, and the mountain wall inland of the settled districts, which rises to the same highland spine entered from the east.
 
 The Atlantic crossing route, in use, and discussed with no power.
+
+## Encountered, occupied by others, not resolved
+
+The Greater Antilles. Squadrons approached Cuba and Hispaniola as the naval covering position for the Isthmus canal and found fortified positions in occupation, garrison troops, working yards and a taxed hinterland, with standards not indigenous and rolls the interpreters judged Latin (reported, landing party returns, harbours entered and not the islands entire). No settlers landed, no ground held, no action taken. Detail at Item 6.
+
+The southern landmass. Egyptian vessels found fortified harbours with garrisons and shipyards, garrisoned posts along the arid northwest, signal towers spaced as a relay chain along the eastern coast, and a cultivated hinterland under assessment (firm as to the points entered). Read by the council as Mauryan holdings of long standing. No posts planted, no settlers landed, the expedition withdrew without contact, no action taken. Detail at Item 11.
