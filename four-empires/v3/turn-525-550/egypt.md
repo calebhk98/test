@@ -4,7 +4,9 @@ Working paper of the strategic council. Alexandria.
 
 Egypt's own figures are single values, taken from the navy list, the payroll, the manifests, the appropriations, the receipts and the works returns. Confidence classes are written into the sentence for estimates of foreign powers only: **firm**, **reported**, **rumor**, **assumed**. Any figure concerning a foreign power is a floor.
 
-Standing figures at open: revenue 142,000 talents, reserve 263,000 talents, two-year reserve target with a floor at one year, population 30.7 million.
+Dispositions are on a ten-point scale of trust, 1 meaning no reliance is placed on any undertaking that power gives and every statement of its is checked, 10 meaning reliance without verification. Egypt holds Rome at 1, India at 2 and China at 4, and 4 is the warmest figure in the register.
+
+Standing figures at open: revenue 142,000 talents, reserve 263,000 talents, two-year reserve target with a floor at one year, population 26.9 million.
 
 ---
 
@@ -42,9 +44,11 @@ The note is sent because the presence is now open. Egyptian garrisons, works, sh
 
 The note states that the coast is under Egyptian administration, asks for advance notice of passages, and asks that vessels with no commercial business keep to open water. Standing orders continue: shadow, fire only if fired upon, issue no threat that will not be enforced.
 
-The note also states that the administration is lately established. That is false, and the falsehood is deliberate. Egypt has held that coast for generations. It is permitted under the Item 4 doctrine because it concerns the age of a holding rather than its existence: a passing vessel can see that garrisons and works are there, which is why the note concedes them, and cannot establish from the sea when they were built. The claim carries the ten-year expiry review and the written successor position that Item 4 requires of every standing account. The internal record is that the coast has been Egyptian for generations, and no Egyptian paper is to adopt the letter's account.
+The council's first draft asserted that the administration was lately established, and the council struck it. The Item 4 doctrine adopted this turn permits a standing account only on a matter a rival can neither visit nor verify, and the timing claim fails the second limb even though it passes the first. A passing vessel cannot establish from the sea when a work was built. Rome does not need the sea for this one. Rome has its own file: five armed vessels lost on that coast across seventy years, and seventy years of Egyptian assurance through the formal channel that Egypt kept no naval presence there. A claim of recent arrival set against that file is checkable at a desk in Rome, and attaching a fresh falsifiable lie to the exact grievance the note exists to defuse would defeat the note.
 
-The case Egypt survives is a sequential single front against Rome, through terrain and depth. The case Egypt does not survive is a coordinated two-front war against Rome and the Maurya at once. Preventing that coordination is the central diplomatic objective of the state, and the mechanism by which coordination forms is a grievance one power can name to another.
+So the note concedes the administration, which is observable and now observed, and says nothing whatever about how long or how far. The extent is refused along with the routes and the fleet, which leaves Rome no figure in the letter it can test. The internal record is that the coast has been Egyptian for generations.
+
+The case Egypt survives is a sequential single front against Rome, through terrain and depth. The case Egypt does not survive is a coordinated two-front war against Rome and India at once. Preventing that coordination is the central diplomatic objective of the state, and the mechanism by which coordination forms is a grievance one power can name to another.
 
 The council's read, assumed at best, being a judgement about a foreign court formed from no observation of it: the note and the western advance together raise the risk of coordination. The note converts part of an unaccountable grievance into an ordinary one, which cuts the other way, five vessels lost with no wreckage being a charge no channel can settle while a claim to a coast can be argued in writing for decades. The Caribbean advance in Item 6 is the larger movement, and it places Egyptian garrisons across the approach where the two spheres meet. The council makes both decisions with that read on the paper.
 
@@ -68,7 +72,7 @@ The intelligence directorate opposed, arguing that the Atlantic account bought s
 
 The instrument that filled Madagascar is applied whole to the western holdings: land grants at survey, exemption from the land tax for fifteen years, subsidised passage for settler families with livestock and tools, and crown-built harbour works, roads and cisterns raised in advance of arrival.
 
-Transport tonnage is funded to match. The transport and river yards deliver 60 hulls a year, and 340 hulls are in the western passage trade at 550. 540,000 persons are landed across the turn. 135,000 are lost to death and return passage. Natural increase adds 87,000. Settled population at 550, garrisons excluded, is 602,000 against 110,000 at open. Garrison strength across the western holdings is 52,000.
+Transport tonnage is funded to match. The transport and river yards deliver 60 hulls a year against losses and condemnations running at 44, so the transport fleet grows from 240 hulls at open to 640 at 550. 340 of them are in the western passage trade; the rest work the African coast, the Red Sea and the Indian Ocean. 540,000 persons are landed across the turn. 135,000 are lost to death and return passage. Natural increase adds 87,000. Settled population at 550, garrisons excluded, is 602,000 against 110,000 at open. Garrison strength across the western holdings is 52,000.
 
 Distribution follows survivability and volunteering.
 
@@ -78,9 +82,9 @@ The tropical Atlantic face from the Guianas through Brazil holds 180,000 across 
 
 The Caribbean continental coast and the island arc hold 96,000. The Pacific valley districts hold 62,000. The Patagonian grazing coast holds 14,000.
 
-Cost of the Enterprise across the turn is 78,000 talents: subsidised passage, land grants surveyed and registered, and crown-built harbour works, roads and cisterns raised ahead of arrival.
+Cost of the Enterprise across the turn is 78,000 talents, covering subsidised passage and land grants surveyed and registered across every western holding. Harbour works, roads, cisterns, garrisons and mineral plant are carried in the regional items and are not in this figure. Garrison pay and upkeep for the 52,000 runs 2,200 talents a year and is carried on the defence account.
 
-Radio reaches the western holdings continuously. Alexandria has broadcast a standard time signal heard at every receiver at once since about 460 to 490, and the shore establishment that holds the Atlantic patrol line at thirty degrees south reaches the western shore. Physical response from the West African depots to the Guiana coast is five days under steam, and from Alexandria three weeks.
+Radio reaches the western holdings continuously. Alexandria has broadcast a standard time signal heard at every receiver at once since about 460 to 490, and the West African and Cape shore establishment that carries the Atlantic patrol reaches across to the western shore, the working link being West Africa to the Guiana coast at under two thousand miles. Physical response from the West African depots to the Guiana coast is five days under steam, and from Alexandria three weeks.
 
 ---
 
@@ -96,7 +100,7 @@ Standing order to the Atlantic patrol command: survey squadrons work north and w
 
 South and inland there is nothing to be careful about, and the pace is set accordingly. Founding runs ahead of administration: good ground is taken and settled and the district organisation follows afterwards, rivers are ascended to the head of navigation before anyone asks what is at the top, and posts are planted wherever the land repays planting. Losses are accepted. The Plata, the Patagonian grazing coast, the Amazon ascent and the Pacific side are all done on that footing, and the settlement office is instructed not to hold a founding back for want of a survey where the only thing beyond the survey is more empty country.
 
-The confrontation planners argued to hold at the Orinoco, on the ground that advancing creates the meeting with Rome early. The settlement office and the Atlantic patrol command carried the advance. The reversal is priced: 46,000 talents in works, harbours, garrisons and subsidised passage across the turn, garrison charges of 1,900 talents a year continuing, and the raised coordination risk entered in Item 3. The planners' position is recorded and their office keeps its standing.
+The confrontation planners argued to hold at the Orinoco, on the ground that advancing creates the meeting with Rome early. The settlement office and the Atlantic patrol command carried the advance. The reversal is priced: 46,000 talents in works, harbours and garrison construction across the turn, passage and grants being carried in Item 5, with garrison charges of 1,900 talents a year continuing, and the raised coordination risk entered in Item 3. The planners' position is recorded and their office keeps its standing.
 
 ---
 
@@ -114,7 +118,7 @@ The highland interior is entered by three routes: up the westernmost reaches of 
 
 Four things come off the highland survey and the first is worth more than the other three together.
 
-A bark of the highland eastern slopes breaks the intermittent fevers. The medical establishment tested it under the germ practice across 1,100 cases in the Congo, the Great Lakes and the Guiana posts, and it holds. This bears on every tropical province the empire owns and on every one it means to take, malaria having been the standing tax on African garrisons since the first century. Fourteen plantation stations are established in the East African highlands, the Ethiopian highlands and the Great Lakes. The first African harvest comes in 548. Preparation and dosage are held in the highest compartment.
+A bark of the highland eastern slopes breaks the intermittent fevers. The medical establishment tested it under the germ practice across 1,100 cases in the Congo, the Great Lakes and the Guiana posts, and it holds. This bears on every tropical province the empire owns and on every one it means to take, malaria having been the standing tax on African garrisons since the first century. Fourteen plantation stations are established in the East African highlands, the Ethiopian highlands and the Great Lakes. The first African harvest comes in 548. What is compartmented is the source and not the medicine: the wild stands on the highland slope and the siting of the plantation stations are held in the highest compartment on the coffee practice, which has sold a roasted bean that cannot sprout since the first century and named the wrong country as its origin ever since. The bark itself, its preparation and its dosage pass to China under Item 20.
 
 A highland root crop yields heavily on cool ground at altitude. Trials run from 534 and provincial cultivation begins in 546 in the Ethiopian and East African highlands, at the Cape and in Lesotho, which are the empire's cool-ground provinces and were poorly served by every crop it held.
 
@@ -158,7 +162,7 @@ Standing instruction: any works, vessel, party or wreck not indigenous, encounte
 
 ## Item 11. The southern landmass survey reports, and the coast is found held
 
-The expedition was funded on a judgement that is now shown to have been wrong. The standing position entered about 450 was that the Maurya had known that coast longer and had very likely set themselves on it. The council set that aside on the destruction of the Mauryan eastern navy between 488 and 497 and the passing of the Malacca route under Chinese protection (firm, own file), reasoning that a power without an eastern fleet is less able to hold ground at that distance. Nine hulls sailed from Madagascar and the Cape at a cost of 1,400 talents, carrying no settlers, under orders to chart from seaward, to enter no harbour showing works, vessels or people in occupation, to attempt no contact, to signal by radio on sighting anything not indigenous and hold position without closing, and to withdraw rather than press a landing against opposition of any kind. Those orders were kept without exception across twenty-one years.
+The expedition was funded on a judgement that is now shown to have been wrong. The standing position entered about 450 was that India had known that coast longer and had very likely set themselves on it. The council set that aside on the destruction of India's eastern navy between 488 and 497 and the passing of the Malacca route under Chinese protection (firm, own file), reasoning that a power without an eastern fleet is less able to hold ground at that distance. Nine hulls sailed from Madagascar and the Cape at a cost of 1,400 talents, carrying no settlers, under orders to chart from seaward, to enter no harbour showing works, vessels or people in occupation, to attempt no contact, to signal by radio on sighting anything not indigenous and hold position without closing, and to withdraw rather than press a landing against opposition of any kind. Those orders were kept without exception across twenty-one years.
 
 The survey. Landfall in 528 at about thirty-four degrees south on the western face. Charted: that coast north to where it turns eastward, and the southern coast eastward for a long run. The squadron turned back short of both ends, so the extent of the landmass beyond those two points is unknown and no estimate is entered. Below about thirty degrees south the coast was entered freely, water taken at eleven places and indigenous peoples met at fourteen under the quarantine discipline of Item 12, and nothing there showed works, vessels or people not indigenous.
 
@@ -178,17 +182,17 @@ The council observes that the operative words of the last clause are Egypt's own
 
 Three findings are logged permanently for the confrontation planners, each a floor.
 
-First, the Maurya hold worked, garrisoned, settled and taxed ground at a reach from their own base comparable to Egypt's reach into the Atlantic, and sustain it by sea. The council had not credited them with that and now must.
+First, India holds worked, garrisoned, settled and taxed ground at a reach from their own base comparable to Egypt's reach into the Atlantic, and sustain it by sea. The council had not credited them with that and now must.
 
-Second, the Maurya field steam at sea. Two of four vessels made way with sail and smoke together and held station in wind that stopped the sail-only pair, which is steam auxiliary and not a demonstration. This is the second power outside Egypt confirmed to have it, and the assumption that a rival's machinery is behind Egypt's is to be carried as a floor in every future estimate.
+Second, India fields steam at sea. Two of four vessels made way with sail and smoke together and held station in wind that stopped the sail-only pair, which is steam auxiliary and not a demonstration. This is the second power outside Egypt confirmed to have it, and the assumption that a rival's machinery is behind Egypt's is to be carried as a floor in every future estimate.
 
 Third, a fleet destroyed is not a presence removed. The eastern navy went between 488 and 497 and the garrisons ashore did not go with it, which is the error this expedition was funded on.
 
-The same claim now stands twice. A Mauryan notice of holdings reached Alexandria in 543 by sea, claiming this coast, and Egypt did not reply. A sealed paper making the same claim was handed to Egyptian officers at sea in 547 and again in 549, backed by works Egypt's own officers counted. The 543 notice could have been a bluff. It is not one, and the council treats the claim as corroborated by its own eyes.
+The same claim now stands twice. An Indian notice of holdings reached Alexandria in 543 by sea, claiming this coast, and Egypt did not reply. A sealed paper making the same claim was handed to Egyptian officers at sea in 547 and again in 549, backed by works Egypt's own officers counted. The 543 notice could have been a bluff. It is not one, and the council treats the claim as corroborated by its own eyes.
 
-The reasoning for replying is entered, the council having given the Maurya nothing for a generation. It is not a change of disposition. The Maurya remain the party that leaks and embellishes, they are rated 2 on trust, and the reply carries no fact Egypt would not publish. The reasoning is the two-front premise restated: the case Egypt does not survive is a coordinated war against Rome and the Maurya at once, preventing that coordination is the central diplomatic objective of the state, and the mechanism by which coordination forms is a grievance one power can name to another. A formal notice left seven years unanswered, and then a sealed paper handed over twice at sea by an armed squadron that fired nothing and took nothing, is precisely the sort of slight a court carries to the other party. The reply costs Egypt no ground, since it holds none there and proposes none, and it removes the only friction with the Maurya the council can currently name.
+The reasoning for replying is entered, the council having given India nothing for a generation. It is not a change of disposition. India remain the party that leaks and embellishes, they are rated 2 on trust, and the reply carries no fact Egypt would not publish. The reasoning is the two-front premise restated: the case Egypt does not survive is a coordinated war against Rome and India at once, preventing that coordination is the central diplomatic objective of the state, and the mechanism by which coordination forms is a grievance one power can name to another. A formal notice left seven years unanswered, and then a sealed paper handed over twice at sea by an armed squadron that fired nothing and took nothing, is precisely the sort of slight a court carries to the other party. The reply costs Egypt no ground, since it holds none there and proposes none, and it removes the only friction with India the council can currently name.
 
-Decisions. No ground on that coast is entered as held and no settlement of any part of it is proposed. The survey squadron is withdrawn to Madagascar and the standing survey order for that coast is cancelled, the question it was sent to answer having been answered. The Atlantic and Cape commands keep the sighting-and-report order in force for any Mauryan vessel met in Egyptian waters. A reply is sent to the notice, at MESSAGES OUT. And the priority intelligence tasking for the next turn is set: the depth of the occupation inland, the eastern side of that landmass, and whether the Mauryan steam seen there is built in the Indian yards or bought.
+Decisions. No ground on that coast is entered as held and no settlement of any part of it is proposed. The survey squadron is withdrawn to Madagascar and the standing survey order for that coast is cancelled, the question it was sent to answer having been answered. The Atlantic and Cape commands keep the sighting-and-report order in force for any Indian vessel met in Egyptian waters. A reply is sent to the notice, at MESSAGES OUT. And the priority intelligence tasking for the next turn is set: the depth of the occupation inland, the eastern side of that landmass, and whether the steam seen there is built in India's own yards or bought.
 
 What the report does not answer, and what no Egyptian paper is to fill in by inference: anything of the eastern side of that landmass; the depth of occupation inland beyond a track and a cleared approach; and whether the thirteen works are the whole of the occupation, its face, or its thin edge. Every figure in this item is a floor.
 
@@ -268,11 +272,11 @@ Detection radar has stood on the Mediterranean coast, the Sinai approaches and C
 
 Radio sets in service are 1,240, covering every major hull, the shore stations and the colonial harbours, with encryption from the first transmission as it has been since the frequency authority was established about 460 to 465.
 
-The sets themselves are not the sets of a century ago and the gains are worth stating, a hundred years of continuous work having gone into them since the first military deployment about 440 to 445. Transmission has moved off the spark gap onto a continuous wave generated by valve, which puts the whole of the power into one narrow frequency instead of splashing it across the band, so more stations work at once without fouling each other and the frequency authority can allocate finely. Receiving has gained multi-stage valve amplification, which lifts a signal far below what an unamplified detector could hear and roughly doubles the working range for the same transmitter. Shore-to-ship reliable working is 2,400 miles by day and further at night, and ship-to-ship 400 miles, against a fraction of that when ship-to-ship first went to sea about 470 to 490. Sets are sealed against salt and mounted on sprung frames against gunfire and heavy sea, so a set now survives a commission instead of being nursed through one.
+The sets themselves are not the sets of a century ago and the gains are worth stating, a hundred years of continuous work having gone into them since the first military deployment about 440 to 445. Transmission has moved off the spark gap onto a continuous wave generated by valve, which puts the whole of the power into one narrow frequency instead of splashing it across the band, so more stations work at once without fouling each other and the frequency authority can allocate finely. Receiving has gained multi-stage valve amplification, which lifts a signal far below what an unamplified detector could hear and roughly doubles the working range for the same transmitter. Shore-to-ship reliable working is 2,400 miles by day and further at night, and ship-to-ship 400 miles, against a fraction of that when ship-to-ship first went to sea about 470 to 490. Sets are sealed against salt and mounted on sprung frames against the shock of a heavy sea and the working of a hull, so a set now survives a commission instead of being nursed through one.
 
 Two capabilities follow from the improvements rather than from more sets. A rotatable loop aerial gives a bearing on any transmitting station, so a vessel takes cross bearings on two shore stations and fixes its position in cloud, which is the first method Egypt has ever had that does not need a sky. And voice, in service since about 455 to 465 as a command tool, now carries clearly enough at squadron distance that keyed traffic is reserved for what wants a written record and for long-range work.
 
-The telegraph carries formal empire-wide traffic and extends through the interior districts of Item 12 and along the Caribbean, Plata and Pacific coasts, adding 4,100 miles of line on Copperbelt wire insulated with cultivated latex. Telephone exchanges, hand-connected, open in the nineteen Plata towns, the two Caribbean settlement capitals and the falls industrial city. Relay calculating machines, telegraph relays used as logical switches since about 460 to 475, extend from navigation and astronomical prediction to the settlement office's returns, the treasury's tables and the assay office's reconciliations.
+The telegraph carries formal empire-wide traffic and extends along the Caribbean, Plata, Patagonian and Pacific coasts, adding 4,100 miles of line on Copperbelt wire insulated with cultivated latex. Telephone exchanges, hand-connected, open in the nineteen Plata towns, the two Caribbean settlement capitals and the falls industrial city. Relay calculating machines, telegraph relays used as logical switches since about 460 to 475, extend from navigation and astronomical prediction to the settlement office's returns, the treasury's tables and the assay office's reconciliations.
 
 ---
 
@@ -304,11 +308,15 @@ Cost is 1,400 talents in works across both and 260 talents a year in operation.
 
 Twenty of their scholars each decade sit inside Egyptian institutions by agreement, and Egypt's germ and tropical-disease body is open to them (firm, own file). It stays open, at full extent, on no schedule. The knowledge has passed and cannot be recalled, the paper stream rests on the arrangement, and a partner who finds an exchange quietly narrowed prices every later dealing accordingly.
 
-Access under the exchange is defined as the germ and tropical-disease body together with the published optics and mathematics. The compartments in force are electrical engineering, vacuum work, radio, radar, aircraft, the fever bark of Item 8, the Atlantic crossing, fleet dispositions, and the depth of the reserve.
+Access under the exchange is defined as the germ and tropical-disease body together with the published optics and mathematics. The compartments in force are electrical engineering, vacuum work, radio, radar, aircraft, the Atlantic crossing, fleet dispositions, and the depth of the reserve.
 
 A register office under the Library's branch administration records what each scholar is shown, on what date, at whose authority, and what was asked for and refused, at 40 talents a year. Its purpose is that a later estimate of foreign tropical capability starts from a known base. The record of the questions is collection obtained by paperwork.
 
-Two premises stand. A power previously held out of tropical country by disease is assumed capable of operating there within one to two generations of receiving the practice, window 545 to 585, assumed and treated as a floor, the recipient working from a written body where Egypt worked from nothing. And Egypt's file records that China named silk production and weapons manufacture as matters it would not share, which is a category a partner stated and not a description of anything Egyptian eyes have seen; no estimate of foreign weapons manufacture rests on the carve-out's existence.
+The fever bark of Item 8 passes, and the council enters why. The undertaking covers the germ and tropical-disease body without reservation, the bark is the largest thing in that body Egypt has ever held, and China bought the exchange for exactly this: its southern frontier has stood at the Shan highlands for four centuries because the country below kills its soldiers faster than any army. Withholding it would also be detected, the register office recording on both sides what was asked for and refused, and a partner who finds an exchange quietly narrowed prices every later dealing accordingly. So the medicine passes whole. What does not pass is the source, held on the coffee practice at Item 8, and the council notes plainly that this is a narrowing China may in time detect and price.
+
+The cost is entered rather than argued away. The premise that a power held out of tropical country by disease becomes capable of operating there is no longer a window running 545 to 585; it begins on delivery. Egypt has removed the barrier in front of a capable power by its own hand, in exchange for paper, mathematics, the mirror principle, pendulum regulation and a consultation clause, and it keeps only the supply.
+
+Two further premises stand. A power previously held out of tropical country by disease is assumed capable of operating there within one to two generations of receiving the practice, window 545 to 585, assumed and treated as a floor, the recipient working from a written body where Egypt worked from nothing. And Egypt's file records that China named silk production and weapons manufacture as matters it would not share, which is a category a partner stated and not a description of anything Egyptian eyes have seen; no estimate of foreign weapons manufacture rests on the carve-out's existence.
 
 The council's disposition toward China is 4 on trust and holds there. The Cape command logs the question of whether a power operating in tropical country would come west toward the East African coast, where the patrol line has stood at thirty degrees south since the 450 to 475 period.
 
@@ -318,11 +326,11 @@ The council's disposition toward China is 4 on trust and holds there. The Cape c
 
 Western stock arrived about 510 to 515 and was distributed for trial across a dozen climates. The Delta is unchanged, being already the richest grain land on earth. Everywhere else the food supply is rising, and it rises by two separate mechanisms which should not be run together.
 
-The first is new ground carrying people the Nile never could. Cassava feeds villages on tropical soil in the Congo and the West and East African lowlands that grew almost nothing before, so land that was margin becomes farmland. The Plata, the Pacific temperate coast and the southern grazing runs add further ground outright, and the highland root crop of Item 8 enters provincial cultivation in 546 on the cool highland ground the earlier transfers left out. This mechanism raises the ceiling rather than the yield.
+The first is new ground carrying people the Nile never could. Cassava feeds villages on tropical soil in the Congo and the West and East African lowlands that grew almost nothing before, so land that was margin becomes farmland. The Plata, the Pacific temperate coast and the southern grazing runs add further ground outright, and the highland root crop of Item 8 enters provincial cultivation in 546 on the cool highland ground the earlier transfers left out. This mechanism raises the ceiling rather than the yield, and it is the larger of the two: cultivated acreage across the African provinces stands 14 percent above the 500 baseline at 550, and almost the whole of that increase is ground that carried no crop at all before.
 
-The second is higher yields on ground already held, where the new crops rotate against the old and the marginal provinces now feed themselves instead of drawing grain from the Nile.
+The second is higher yields on ground already held, where the new crops rotate against the old and the marginal provinces now feed themselves instead of drawing grain from the Nile. Yields per cultivated acre stand 7 percent above the 500 baseline. Taken together the two give a food output 22 percent above the 500 baseline against a population 15.6 percent above the figure at open, and that margin is what the growth rate is drawn from.
 
-Together they lift growth above the old trend, which is what a ceiling being raised looks like. Population at 550 is 35.5 million against 30.7 million at open, an average of 0.58 percent a year against 0.211 percent across 450 to 500, a rate the empire could not have carried while it was pressed against its agricultural limit and can carry now that the limit has moved.
+Together they lift growth above the old trend, which is what a ceiling being raised looks like. Population at 550 is 31.1 million against 26.9 million at open, an average of 0.58 percent a year. Across 500 to 525 the same base ran at 0.214 percent, against 0.211 percent across 450 to 500, the western stock having arrived only about 510 to 515 and the surplus by 525 being small. The rate roughly trebles once the crops are in provincial cultivation, which is what a ceiling being raised looks like and is the whole of the difference between the two intervals.
 
 The council is watching the early part of a change it will not see finished. The generational wave runs through the century following.
 
@@ -346,7 +354,7 @@ Committed this turn: the Enterprise on the Madagascar instrument with 340 hulls 
 
 Affordable against gross receipts rising from 142,000 to 167,000 talents and a reserve rising from 263,000 to 334,000.
 
-The large commitments, priced across the twenty-five years: the Enterprise at 78,000 talents in passage, grants and harbour works; the Caribbean advance at 46,000; the Pacific establishment at 9,800; the Amazon ascent and highland approaches at 4,200; the Patagonian grazing coast at 3,400; the niter bed expansion at 3,100; the airframe works at 2,600; the radar fit and network extensions at 1,900; the two stud establishments at 1,400; and the southern-landmass expedition at 1,400. These total 151,800 talents, an average of 6,100 a year against receipts averaging 154,000 across the turn.
+The large commitments, priced across the twenty-five years: the Enterprise at 78,000 talents in passage and land grants; the Caribbean advance at 46,000 in works, harbours and garrison construction; the Pacific establishment at 9,800; the Amazon ascent and highland approaches at 4,200; the Patagonian grazing coast at 3,400; the niter bed expansion at 3,100; the airframe works at 2,600; the radar fit and network extensions at 1,900; the two stud establishments at 1,400; and the southern-landmass expedition at 1,400. These total 151,800 talents, an average of 6,100 a year against receipts averaging 154,000 across the turn.
 
 The reserve top-up of 2,840 talents a year is drawn from works and colonial construction, which is why provincial harbour and road works in the older African provinces run three years behind at 550. It binds by the rule behind it rather than by its size, the two-year target being the one line the council does not let slip.
 
@@ -362,9 +370,9 @@ The reserve stands at target at the close and absorbs a shock. The discretionary
 
 > From the council at Alexandria to the government at Rome.
 >
-> The Atlantic coast of Africa has lately been brought under Egyptian administration.
+> The Atlantic coast of Africa is under Egyptian administration.
 >
-> Egyptian ships will escort Roman vessels passing along it. Rome is asked to give notice of such passages before they are made.
+> Rome is asked to give notice of the passage of its vessels along that coast before such passages are made.
 >
 > Vessels with no commercial business on that coast are to keep to open water and stand clear of Egyptian harbours, works and signal stations.
 >
@@ -372,17 +380,33 @@ The reserve stands at target at the close and absorbs a shock. The discretionary
 >
 > Alexandria.
 
-## To the Maurya
+## To India
 
 > From the council at Alexandria to the throne at Pataliputra.
 >
 > Egypt has received the notice sent to Alexandria concerning holdings on the southern coast, and the sealed paper handed to Egyptian officers at sea upon that coast. Egypt makes no claim there and disputes none.
 >
-> The terms set out in that paper are the terms Egypt keeps at its own ports. Harbours open to any power for trade, water and repair at one published rate, and no base, no garrison right and no ground granted upon them. Egypt will hold to those terms where its ships touch that coast, and looks for the same at Egyptian ports, where the Maurya have long had them.
+> The terms set out in that paper are the terms Egypt keeps at its own ports. Harbours open to any power for trade, water and repair at one published rate, and no base, no garrison right and no ground granted upon them. Egypt will hold to those terms where its ships touch that coast, and looks for the same at Egyptian ports, which India has long had.
 >
 > Egyptian vessels in those waters carry orders to make no landing where there are works, vessels or people, to attempt no contact, and to fire only if fired upon. Those orders stand and are not conditional on this letter.
 >
 > Egypt has no other business on that coast and proposes none.
+>
+> Alexandria.
+
+## To China
+
+> From the council at Alexandria to the court of the Emperor.
+>
+> Egypt writes under the consultation clause, and on three matters.
+>
+> First. Egypt has this year opened a formal written channel to Rome, on one subject only: the Atlantic coast of Africa, which Egypt administers, and the passage of Roman vessels along it. Egypt asked for notice of such passages and asked that vessels with no business there stand clear of its works. Egypt sought nothing else from Rome, was offered nothing, and made no undertaking to Rome touching any other power. China is told of it because Egypt undertook to tell.
+>
+> Second. Egypt promised firm intelligence of Rome's western shore when it held it firmly rather than by rumour, and marked as such. Egypt does not hold it firmly. What Egypt has of Rome across the western ocean remains what it was: a crossing made, and cargoes brought back. Anything further Egypt might now add would be inference, and Egypt undertook not to send inference dressed as knowledge. When it is firm it will come, so marked.
+>
+> Third. Egypt has this year opened its full germ and tropical-disease body to China's scholars, and one thing in it is new and is the reason this letter does not wait. A bark of the western highlands breaks the intermittent fevers. Egypt has tested it under its own physicians across eleven hundred cases in the Congo, the Great Lakes and the western posts, and it holds. Preparation and dosage go to China's twenty with this letter and without price. Egypt understands what country lies below China's southern frontier and what has kept China out of it.
+>
+> Egypt also gives notice, as a courtesy and not as a request, that it sent a survey squadron to the southern landmass in these years, whose approach lies near water under China's protection. It has been withdrawn. It landed nothing and claimed nothing.
 >
 > Alexandria.
 
