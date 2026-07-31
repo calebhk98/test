@@ -1,5 +1,7 @@
 # Intelligence return to Han China, operation against the Maurya Realm, 525–550
 
+> **SUPERSEDED.** Adjudicated against a turn state that no longer exists. Replaced by `against-maurya-525-550.md`, which re-adjudicates both operations against the settled document. Kept for the record only; do not distribute from this file.
+
 Adjudicated against the rebuilt Maurya turn by a pass holding only the realm's own files. Supersedes the earlier adjudication.
 
 **Coordinator note, not for the receiving court.**
