@@ -124,7 +124,7 @@ The highland interior is entered by three routes: up the westernmost reaches of 
 
 Four things come off the highland survey and the first is worth more than the other three together.
 
-A bark of the highland eastern slopes breaks the intermittent fevers. The medical establishment tested it under the germ practice across 1,100 cases in the Congo, the Great Lakes and the Guiana posts, and it holds. This bears on every tropical province the empire owns and on every one it means to take, malaria having been the standing tax on African garrisons since the first century. Fourteen plantation stations are established in the East African highlands, the Ethiopian highlands and the Great Lakes. The first African harvest comes in 548. What is compartmented is the source and not the medicine: the wild stands on the highland slope and the siting of the plantation stations are held in the highest compartment on the coffee practice, which has sold a roasted bean that cannot sprout since the first century and named the wrong country as its origin ever since. The bark itself, its preparation and its dosage pass to China under Item 20.
+A bark of the highland eastern slopes breaks the intermittent fevers. The medical establishment tested it under the germ practice across 1,100 cases in the Congo, the Great Lakes and the Guiana posts, and it holds. This bears on every tropical province the empire owns and on every one it means to take, malaria having been the standing tax on African garrisons since the first century. Fourteen plantation stations are established in the East African highlands, the Ethiopian highlands and the Great Lakes. The first African harvest comes in 548. What is compartmented is the source and not the medicine: the wild stands on the highland slope and the siting of the plantation stations are held in the highest compartment on the coffee practice, which has sold a roasted bean that cannot sprout since the first century and named the wrong country as its origin ever since. The bark itself, its preparation and its dosage pass to China under Item 19.
 
 A highland root crop yields heavily on cool ground at altitude. Trials run from 534 and provincial cultivation begins in 546 in the Ethiopian and East African highlands, at the Cape and in Lesotho, which are the empire's cool-ground provinces and were poorly served by every crop it held.
 
@@ -318,6 +318,14 @@ The cost is entered rather than argued away. The premise that a power held out o
 
 Two further premises stand. A power previously held out of tropical country by disease is assumed capable of operating there within one to two generations of receiving the practice, window 545 to 585, assumed and treated as a floor, the recipient working from a written body where Egypt worked from nothing. And Egypt's file records that China named silk production and weapons manufacture as matters it would not share, which is a category a partner stated and not a description of anything Egyptian eyes have seen; no estimate of foreign weapons manufacture rests on the carve-out's existence.
 
+Three decisions on the consultation clause are entered, all in the letter at MESSAGES OUT.
+
+The bark goes as medicine without its source, and the reservation is stated in the letter rather than left to be discovered, on the reasoning that a narrowing the register office would record on both sides is better admitted than found. Egypt sets it beside China's own reservation on the making of silk, which China stated at the outset rather than letting Egypt discover it, and which is the conduct that earned China the only 4 in the register.
+
+The second falsehood in the note to Rome is disclosed to China, and its cost is entered rather than argued away. Telling a partner that Egypt manufactures falsehoods through a formal channel teaches that partner to weigh Egyptian statements, and China will weigh them. Against that: the falsehood implies unnamed other powers, China is a power, and if Rome repeats it before Egypt discloses it then China is left to wonder whether it was the party implied. The letter names China as no part of it. A partner who finds a thing out is worse than a partner who is told, which is the whole basis on which Egypt rated this power above the other two.
+
+Nothing of Egypt's own western holdings goes in the letter. The compartments at Item 8 and in this item bind the drafting office as they bind everyone, and the report of Rome's crossing is given as it was given before, a crossing made and cargoes brought back, with nothing added from Egyptian ground.
+
 The council's disposition toward China is 4 on trust and holds there. The Cape command logs the question of whether a power operating in tropical country would come west toward the East African coast, where the patrol line has stood at thirty degrees south since the 450 to 475 period.
 
 ---
@@ -386,9 +394,9 @@ The reserve stands at target at the close and absorbs a shock. The discretionary
 >
 > Egypt has received the notice sent to Alexandria concerning holdings on the southern coast, and the sealed paper handed to Egyptian officers at sea upon that coast. Egypt makes no claim there and disputes none.
 >
-> The terms set out in that paper are the terms Egypt keeps at its own ports. Harbours open to any power for trade, water and repair at one published rate, and no base, no garrison right and no ground granted upon them. Egypt will hold to those terms where its ships touch that coast, and looks for the same at Egyptian ports, which India has long had.
+> The terms set out in that paper are the terms Egypt keeps at its own ports: harbours open to any power for trade, water and repair on the same terms, and no base, no garrison right and no ground granted upon them. Egypt will hold to them where its ships touch that coast, and looks for the same at Egyptian ports, which India has long had.
 >
-> Egyptian vessels in those waters carry orders to make no landing where there are works, vessels or people, to attempt no contact, and to fire only if fired upon. Those orders stand and are not conditional on this letter.
+> Egypt's squadron in those waters carried orders to make no landing where there were works, vessels or people, to attempt no contact, and to fire only if fired upon. Those orders were kept throughout. The squadron has been withdrawn and Egypt keeps no vessel on that coast.
 >
 > Egypt has no other business on that coast and proposes none.
 >
@@ -402,9 +410,13 @@ The reserve stands at target at the close and absorbs a shock. The discretionary
 >
 > First. Egypt has this year opened a formal written channel to Rome, on one subject only: the Atlantic coast of Africa, which Egypt administers, and the passage of Roman vessels along it. Egypt asked for notice of such passages and asked that vessels with no business there stand clear of its works. Egypt sought nothing else from Rome, was offered nothing, and made no undertaking to Rome touching any other power. China is told of it because Egypt undertook to tell.
 >
+> Egypt sets down the rest of what that letter carries, since Rome may repeat it and a thing China hears first from Rome would read as concealment. The letter tells Rome that what Egypt has arranged with other powers in the matter of that coast is not Rome's business. There is no such arrangement. No power had any hand in how that coast came under Egypt, China no more than any other, and the sentence was put in to give Rome a direction to spend effort on that leads away from Alexandria. Egypt would rather China had this from Egypt.
+>
 > Second. Egypt promised firm intelligence of Rome's western shore when it held it firmly rather than by rumour, and marked as such. Egypt does not hold it firmly. What Egypt has of Rome across the western ocean remains what it was: a crossing made, and cargoes brought back. Anything further Egypt might now add would be inference, and Egypt undertook not to send inference dressed as knowledge. When it is firm it will come, so marked.
 >
-> Third. Egypt has this year opened its full germ and tropical-disease body to China's scholars, and one thing in it is new and is the reason this letter does not wait. A bark of the western highlands breaks the intermittent fevers. Egypt has tested it under its own physicians across eleven hundred cases in the Congo, the Great Lakes and the western posts, and it holds. Preparation and dosage go to China's twenty with this letter and without price. Egypt understands what country lies below China's southern frontier and what has kept China out of it.
+> Third. Egypt has this year opened its full germ and tropical-disease body to China's scholars, and one thing in it is new and is the reason this letter does not wait. A bark breaks the intermittent fevers. Egypt's physicians have tried it over these years across eleven hundred cases of the fevers as they run in hot country, under the germ practice, and it holds. Preparation and dosage go to China's twenty with this letter and without price. Egypt understands what country lies below China's southern frontier and what has kept China out of it for four hundred years.
+>
+> Egypt sends the medicine and not the plant, and will not say where it grows. On that Egypt keeps its own practice, as China keeps its own on the making of silk, and Egypt would rather state the reservation than have it found.
 >
 > Egypt also gives notice, as a courtesy and not as a request, that it sent a survey squadron to the southern landmass in these years, whose approach lies near water under China's protection. It has been withdrawn. It landed nothing and claimed nothing.
 >
