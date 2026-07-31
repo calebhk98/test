@@ -251,3 +251,51 @@ carries none.
 
 **Everything now stands ready for step 2.** The INCOMING sections exist in all
 four documents; Egypt's carries the two documents it already held.
+
+---
+
+## Step 2: distribution, and the four revisions
+
+Packets at `../distribution/to-{egypt,rome,china,maurya}.md`, final at `f936046`.
+One per court, containing letters addressed to it verbatim with deliberate
+falsehoods intact and unmarked, its own adjudicated returns with the firm,
+reported and field-inference marks kept, recorded nils, and anything handed to it
+in person. A coordinator leak check found zero cross-contamination in every
+direction tested.
+
+**Note on the commit record.** Rome's post-distribution revision is in `3a2cd48`,
+whose message names China only; `git add -A` swept both files into one commit.
+The content is complete and is described in the four summaries below.
+
+**What the four courts did with it.** All four named an error without excuse, and
+none of them softened one.
+
+- **Egypt** left its central question *unresolved*, recording a split between the
+  directorate and the planners over whether Rome believes Egypt is across the
+  ocean, and refusing the comfortable reading of the null on the stated ground
+  that a null reported by the watched party's own men and flattering to Egypt is
+  the weakest class of evidence in the packet. It entered its recency falsehood as
+  **failed**, named the review board that approved it, and kept a fact that
+  damages its own argument (India's notice says no answer was expected, which
+  guts the seven-unanswered-years grievance).
+- **The Maurya** weighed a twenty-one-year nil above every positive item in its
+  packet, concluded its founding premise was wrong, and recorded that on the
+  narrow question of the fleet **the treasury was right and the throne was
+  wrong**. It then refused the comfortable version of its own correction: the nil
+  is on a spike, not on a programme.
+- **China** reached, unaided, the inference the coordinator had struck from its
+  packet — that a negative on *what turns it* is an answer — and went further,
+  concluding the shaft limit was a property of its own machine and not of the
+  force. It entered a method failure rather than a fact correction: it held two
+  instruments and believed the wrong one.
+- **Rome** lost its entire opening section. The volume was in Roman hands in 531,
+  all four readings of the silence were wrong, and the one the court rated
+  weakest was right. It recorded that it had reasoned from its disposition toward
+  the Maurya rather than from the work, and entered the *curatores*' answer of 543
+  as the worse error. **The two nils stayed apart**, each with its reason, neither
+  read as non-receipt — which was the single line the whole distribution was built
+  to protect.
+
+**Still open:** replies, then hostile review before anything is treated as canon.
+The homogeneity recommendations for the next generation remain unactioned by
+design.
