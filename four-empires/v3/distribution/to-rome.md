@@ -1,6 +1,6 @@
 # Packet for the Senate and the Emperor of the Romans
 
-This is everything delivered to Rome for the period 525–550 AD: correspondence addressed to this court, this court's own intelligence returns, and a note of what was physically handed over in an encounter to which this court was a party.
+This is everything delivered to Rome for the period 525–550 AD: correspondence addressed to this court, this court's own intelligence returns, and a note of anything handed to or by this court in person.
 
 ---
 
@@ -271,6 +271,6 @@ This is measurement on Rome's own scales, not espionage and not estimate.
 
 ## Handed over in person
 
-Nothing. No object, document or material was physically handed over to or by Rome in any adjudicated encounter in this period.
+Nothing. Nothing was handed to or by Rome in person anywhere in the period.
 
 Items delivered as enclosures to correspondence — the Maurya's printed and sealed volume, and the Han court's two pendulum clocks with their drawings and beat table — are listed under *Documents received* above.

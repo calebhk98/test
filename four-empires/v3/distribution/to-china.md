@@ -1,6 +1,6 @@
 # Packet for the court of the Han
 
-This is everything delivered to the Han court for the period 525–550 AD: correspondence addressed to this court, this court's own intelligence returns, and a note of what was physically handed over in an encounter to which this court was a party.
+This is everything delivered to the Han court for the period 525–550 AD: correspondence addressed to this court, this court's own intelligence returns, and a note of anything handed to or by this court in person.
 
 ---
 
@@ -98,7 +98,7 @@ Marks throughout: **firm** — the agent saw, handled, counted or heard the thin
 
 **Nil.** The number of the realm's armed hulls, their stations, their standing orders, and anything of any fleet as a fleet. One yard shows one yard.
 
-**Adjudication.** The task is answered and answered correctly. Guns are mounted and are fired at sea. "Reinforced and carrying nothing" is wrong.
+**The service's assessment of this head.** The task is answered and answered correctly. Guns are mounted and are fired at sea. "Reinforced and carrying nothing" is wrong.
 
 #### II. The white salt, its price, and the works — channel: the factor of the Gangetic road
 
@@ -114,7 +114,7 @@ Marks throughout: **firm** — the agent saw, handled, counted or heard the thin
 
 **Nil.** What is made inside any of those walls; the output of any works; any figure of powder whatever.
 
-**Adjudication.** The price half of the task returns something true about the price and nothing usable about the quantity. The size-of-works half succeeds at low precision and is the half that carries the task. The factor's own inability to reconcile the flat price with the carts and the compounds is the most valuable line in his return and should be read as the finding rather than as his confusion.
+**The service's assessment of this head.** The price half of the task returns something true about the price and nothing usable about the quantity. The size-of-works half succeeds at low precision and is the half that carries the task. The factor could not reconcile the flat price he found with the carts and the compounds, and returned both unreconciled.
 
 #### III. The northern road and what stands behind it — channel: the senior factor of the Samarkand house, with a second man on the same road
 
@@ -142,7 +142,7 @@ The two returns disagree. Both are set down. They were written four years apart 
 
 **Nil.** The number of pieces on the bank. The number, contents or capacity of the magazines behind it. Anything inside any arsenal, garrison or work of the frontier establishment. All of it lies past this service's own limit line, and the line held.
 
-**Adjudication.** This is the best-placed of the four tasks and it performed accordingly. Road, relay stations, forward granaries and the new towns are all open commerce on ground that is the factors' own country, and a caravan man's truest instrument — how many days the crossing takes and how many carts he passes — measures exactly what was asked. The guns and the magazines return second-hand, directionally true, and without a number. Any conversion of "the pieces have been added to" into a quantity will be wrong.
+**The service's assessment of this head.** This is the best-placed of the four tasks and it performed accordingly. Road, relay stations, forward granaries and the new towns are all open commerce on ground that is the factors' own country, and a caravan man's truest instrument — how many days the crossing takes and how many carts he passes — measures exactly what was asked. The guns and the magazines return second-hand, directionally true, and without a number. Any conversion of "the pieces have been added to" into a quantity will be wrong.
 
 #### IV. The electrical force — channels: the Samarkand house's own copper trade, and the Gangetic-road factor on the northwest road
 
@@ -152,7 +152,7 @@ The two returns disagree. Both are set down. They were written four years apart 
 
 **546, at one of the small houses.** *Reported — one man, one season, not repeated or corroborated.* A station man, glad of company, showed him the inside: rows of earthen jars in a rack, each with plates of two metals standing in it and a liquor in the jar; the spent jars carried out and fresh ones brought up by cart on a set round. Beside the wire a needle hung under a glass, which jumps when the man at the far end works his, and lies still when he stops. The man said the words are spelled out on it as they are spelled on the towers.
 
-*This answers the second limb of the task in the negative and it should be read as an answer.* **Nothing turns it.** There is no wheel, no beast, no water and no mill at any of the four houses. The apparatus is jars, plates and a liquor, consumed and replaced like any stores.
+**Nothing turns it.** There is no wheel, no beast, no water and no mill at any of the four houses. The apparatus is jars, plates and a liquor, consumed and replaced like any stores.
 
 **547, from carters and station people on the same stretch.** *Reported.* That word from the capital reaches the up-road station inside the hour where a rider takes two days; and that in the heaviest rains the line goes dead for some weeks together and the old tower signals carry the traffic until it dries.
 
@@ -160,7 +160,7 @@ The two returns disagree. Both are set down. They were written four years apart 
 
 **Nil.** Where the branch goes and what stands at its end — it runs toward walled ground and the factor did not follow it, correctly under the cover. The metals of the plates and the liquor in the jars, neither of which he could name. The code. Any drawing or measurement of the reader. The length of the trunk beyond "many days' travel," and its far terminus.
 
-**Adjudication.** The task asked whether the force exists as a working apparatus rather than a scholarly claim, what it is made of, what turns it, and whether it has been put to a use. All four limbs are answered, three of them well. It exists and it works. It is made of drawn copper, a baked cloth covering, glazed pipe and a raised causeway, fed from jars of two metals in a liquor. Nothing turns it. It has been put to a use, and the use is carrying spelled words faster than a rider, with a seasonal failure in the wet the realm has not solved. The negative on "what turns it" is an answer and must not be filed as a gap.
+**The service's assessment of this head.** The task asked whether the force exists as a working apparatus rather than a scholarly claim, what it is made of, what turns it, and whether it has been put to a use. It exists and it works. It is made of drawn copper, a baked cloth covering, glazed pipe and a raised causeway, fed from jars of two metals in a liquor. Nothing turns it. It has been put to a use, and the use is carrying spelled words faster than a rider, with a seasonal failure in the wet the realm has not solved.
 
 #### Network risk
 
@@ -203,6 +203,6 @@ No active collection attempted, by this court's own instruction. The representat
 
 ## Handed over in person
 
-Nothing. The Han court was not a party to any adjudicated encounter in this period, and no object, document or material was physically handed over to or by it in one.
+Nothing. Nothing was handed to or by this court in person anywhere in the period, and no party met any of this court's people face to face.
 
 Items delivered as enclosures to correspondence — Rome's observations and printed argument, the gas-lighting and pneumatic-tube methods, and Egypt's preparation and dosage of the fever bark — are listed under *Documents received* above.

@@ -1,6 +1,6 @@
 # Packet for the council at Alexandria
 
-This is everything delivered to Egypt for the period 525–550 AD: correspondence addressed to this court, this court's own intelligence returns, and a note of what was physically handed over in an encounter to which this court was a party.
+This is everything delivered to Egypt for the period 525–550 AD: correspondence addressed to this court, this court's own intelligence returns, and a note of anything handed to or by this court in person.
 
 ---
 
@@ -56,8 +56,6 @@ Emigrant embarkations were counted at the Iberian quays every season of the peri
 **4. The standing watch on the Canaries and Madeira. From about 532; best returns in the 540s. (B), through the watch's own crews and the men who supply and relieve them. Existence firm; standing order reported; the null reported.**
 Watchers set with glasses and a tethered balloon flown from high ground. Their standing order is to count large hulls passing north and west, and captains on the western run are instructed to report any such hull, its heading and its size, on making port. It is not concealed; the clerks speak of it as routine. The watch's own people say that in twenty-five years they have counted none.
 
-*This is the single item that most nearly answers question one, and it answers it obliquely: it establishes that Rome has not settled on Egypt being confined to the African coast, because a court that held that would not pay for the watch. It does not establish that Rome believes Egypt is across.*
-
 **5. Ordnance going west for works against ships. 546–550. (A), handled. Firm.**
 Cut stone and heavy pieces shipped in the western transports for harbour works on the far side, entered on the ladings across several seasons. The clerk's own words, asked why so much for a country of people who work no metal, were that they are laid for ships and not for islanders.
 
@@ -95,4 +93,4 @@ Yes, hardened, and attached exactly where the tasking asks — not to a hazard o
 
 **Off the southern landmass, 547 and again in 549.** A sealed instrument was handed across to Egyptian officers at sea and is in this court's hands: struck at a press and sealed, in three tongues, Greek, Latin and the script of India. Nothing else was passed in either direction on either occasion, and nothing was fired.
 
-No other object, document or material was physically handed over to or by Egypt in any adjudicated encounter in this period.
+Nothing else was handed to or by Egypt in person anywhere in the period.

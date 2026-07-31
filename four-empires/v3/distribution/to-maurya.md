@@ -1,6 +1,6 @@
 # Packet for the throne at Pataliputra
 
-This is everything delivered to the Maurya realm for the period 525–550 AD: correspondence addressed to this court, this court's own intelligence returns, and a note of what was physically handed over in an encounter to which this court was a party.
+This is everything delivered to the Maurya realm for the period 525–550 AD: correspondence addressed to this court, this court's own intelligence returns, and a note of anything handed to or by this court in person.
 
 ---
 
@@ -82,4 +82,4 @@ Marks: **firm** — the agent saw, handled, counted or bought it himself. **Repo
 
 **Off the southern coast, at Walled Station Five in 547 and at the Nauvandha approaches in 549.** The realm's written statement, struck at the capital's press in Greek, Latin and Sanskrit, was handed across to the foreign hulls' officers on both occasions and was taken aboard. Nothing was given in return on either occasion, no name was given, no answer of any kind was made, and nothing was fired.
 
-No other object, document or material was physically handed over to or by the realm in any adjudicated encounter in this period.
+Nothing else was handed to or by the realm in person anywhere in the period.
