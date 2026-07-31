@@ -1,5 +1,7 @@
 # Intelligence return to the Maurya Realm, operation against Egypt on the East African coast, 525–550
 
+> **SUPERSEDED.** This adjudication was run against a state of Egypt's turn that no longer exists. It is replaced by `against-egypt-525-550.md`, which adjudicates all four operations against Egypt against the settled document. Kept for the record only; do not distribute from this file.
+
 Adjudicated by a pass holding only Egypt's own files.
 
 **Coordinator note, not for the receiving court.** This was the strongest of the three positions run against Egypt in the period. Resident factors of twenty-five to fifty years' standing, buying gum, hides and coastal grain at Egyptian East African harbours, are in the *same market* as the crown's provisioning agents. They do not merely observe the provisioning, they feel it in their own prices and their own short deliveries, which is the most reliable form of commercial reporting there is. Egypt's ocean-hull yards have stood on that coast beside the hardwood since the first century, so timber and cordage flow is native to the place and legible.

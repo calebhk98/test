@@ -1,5 +1,7 @@
 # Intelligence returns to Rome, two operations against Egypt, 525–550
 
+> **SUPERSEDED.** This adjudication was run against a state of Egypt's turn that no longer exists. It is replaced by `against-egypt-525-550.md`, which adjudicates all four operations against Egypt against the settled document. Kept for the record only; do not distribute from this file.
+
 Adjudicated against the rebuilt Egypt turn by a pass holding only Egypt's own files. Supersedes the earlier adjudication.
 
 **Coordinator note, not for the receiving court.**
