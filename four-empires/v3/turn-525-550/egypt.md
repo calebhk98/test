@@ -174,7 +174,7 @@ The council enters a caution against its own figures here. The display followed 
 
 Small craft, from 536. Wooden, one and two masted, of a build not indigenous, working that coast between the works in ones and twos, some thirty sightings. They put in at the works, lay off them, and passed between them. On four occasions between 539 and 545 one altered toward the squadron, closed to a mile or two, kept company some hours and bore away without hailing. The council's read, and the most important line in the report: those works are not thirteen separate posts but one system, supplied and connected by sea. A system so supplied can be reinforced along its own coast faster than any land march, and can be cut by whoever holds the water, which is the same thing Egypt's own African coast has always been.
 
-From 547. Three Egyptian hulls working before a walled work at about twenty-eight degrees south were approached by four vessels from the north: wooden, ship-rigged, guns in the sides, and two of them carrying a funnel and making way with sail and smoke together, holding station in a wind that would have stopped the other two. They placed themselves between the squadron and the shore and stayed. The Egyptian squadron held and did not close, under orders. A boat came to hail, nothing was fired, and a paper was passed across. In 549 the same or a like force did the same at the yard harbour's approaches and the paper was passed again. Four vessels were counted at once across the whole period, from one deck on two days, and the figure is a floor.
+From 547. Three Egyptian hulls working before a walled work at about twenty-eight degrees south were approached by four vessels from the north: wooden, ship-rigged, with a row of shuttered ports cut low along each side whose purpose the officers could not name, and two of them carrying a funnel and making way with sail and smoke together, holding station in a wind that would have stopped the other two. They placed themselves between the squadron and the shore and stayed. The Egyptian squadron held and did not close, under orders. A boat came to hail, nothing was fired, and a paper was passed across. In 549 the same or a like force did the same at the yard harbour's approaches and the paper was passed again. Four vessels were counted at once across the whole period, from one deck on two days, and the figure is a floor.
 
 The paper is in the council's hands and may be read, which makes the document itself firm. It is struck at a press and sealed, and is in three tongues, Greek, Latin and the script of India. The Greek was read at sea. It states that the coast was found, charted, garrisoned, settled and taxed by the realm issuing it; that its harbours are open to any power for trade, water and repair on the same terms; and that no base, no garrison right and no ground will be granted upon it. The Madagascar master, twenty years in the Indian trade, reads the seal and style as the throne at Pataliputra (reported, one man's reading).
 
@@ -214,27 +214,19 @@ Held at open and still held: high explosive fit for mine blasting and special mu
 
 The programme delivered the transport-and-storage version in 531. Handling deaths on the movement of explosive to minesites fall by four fifths. It is the qualified filling behind the moored mines at the canal mouths, the Sinai approaches and the colonial harbours, and behind the spar and drifting charges.
 
-The residual is long life in a sealed magazine in tropical heat, a harder case than a mine laid and used within the season and the case a gun shell requires. 400 researchers continue on it and 500 transfer to the propellant work in Item 14.
+The residual is long life in a sealed store in tropical heat, a harder case than a mine laid and used within the season. The state now carries explosive nine thousand miles to the western holdings and keeps it at harbour posts through years of damp heat before it is wanted, and it hangs nitrated charges under aircraft that sit on tropical airfields between flights. 900 researchers continue on it, the allocation raised this turn.
 
 The nitrate reconciliation ordered of the assay office and the arsenal reports in 533 and the council adopts one figure. Refined nitrate from the cave deposits and the maintained beds runs at 4,200 tons a year at open. The bed establishment across the Nile, the Sahel and the highland provinces is expanded and delivers 9,000 tons a year from 545, of which mine blasting takes 6,600 tons and the magazine reserve 2,400. Works cost 3,100 talents, operation 340 talents a year. The Pacific surface beds of Item 10 stand above that figure and are worked at the rate the 10,700-mile haul allows.
 
-The electrical line is redirected onto the chain that can reach nitrogen. Current through a solution yields no nitrogen that was not already in the vessel. Nitrogen independent of bed acreage is taken from the air, and the instrument is a high-energy arc burning in air. The skill is the arc: arc lighting demonstrated about 358 to 368, arc welding about 470 to 490, and the arc furnace producing steel of higher purity and more controllable carbon than any combustion process by about 480 to 510, the same furnace Item 14 credits for barrel metal. With it goes the atomic theory of fixed whole-number combining weights formalised about 490 to 500, which lets a chemist treat air as holding a combinable part. The downstream half is in hand, the assay houses having concentrated nitric acid in quantity since about 250 to 300, so the air-fixing step alone is wanting. The source is the Livingstone Falls plant, which holds electric current in a concentration greater than exists anywhere. The demand is that bed-independent nitrate lifts the ceiling on explosives, on the propellant, and on field fertiliser.
+The electrical line is redirected onto the chain that can reach nitrogen. Current through a solution yields no nitrogen that was not already in the vessel. Nitrogen independent of bed acreage is taken from the air, and the instrument is a high-energy arc burning in air. The skill is the arc: arc lighting demonstrated about 358 to 368, arc welding about 470 to 490, and the arc furnace producing steel of higher purity and more controllable carbon than any combustion process by about 480 to 510, the same furnace that pours the ship plate of Item 14. With it goes the atomic theory of fixed whole-number combining weights formalised about 490 to 500, which lets a chemist treat air as holding a combinable part. The downstream half is in hand, the assay houses having concentrated nitric acid in quantity since about 250 to 300, so the air-fixing step alone is wanting. The source is the Livingstone Falls plant, which holds electric current in a concentration greater than exists anywhere. The demand is that bed-independent nitrate lifts the ceiling on blasting explosive, on the nitrated charges the aircraft carry, and on field fertiliser.
 
-Allocation 800 researchers, 1,500 talents a year, bench process expected 545 to 585.
+Allocation 1,200 researchers and 1,900 talents a year, both raised this turn, with a bench process expected 545 to 585.
 
 Standing instruction: the bed expansion and the Pacific workings proceed on their own schedule and their appropriations are not conditioned on any result from the arc programme.
 
 ---
 
-## Item 14. The propellant programme
-
-Barrel metallurgy is in hand from the arc furnace and from three centuries of boring, gauging, lapping and pressure testing. The element wanting is a charge that burns at a controlled rate in a closed breech rather than detonating, Egypt having reached explosives by nitrating organic fibre in the assay houses.
-
-Allocation 1,200 researchers and 1,100 talents a year, placed under the directorate that holds the explosive work so that the two do not compete for the same chemists without a decision being taken. The arsenal opposed the opening as a diversion from stabilisation, lost the point, and gained the placement. The transfer under Item 13 funds it out of a programme that met its requisition. Workable piece expected 545 to 575.
-
----
-
-## Item 15. The fleet is age-limited and the rate is short of requirement
+## Item 14. The fleet is age-limited and the rate is short of requirement
 
 A major steam hull serves about 60 years, carried through two general refits in which engines, boilers, fittings and much of the upper works are renewed. A hull is rebuilt rather than scrapped for as long as its frames and bottom will take the work, and only the earliest coal-fired construction, whose hull form was drawn around machinery three generations obsolete, is beyond refitting. Stock at open is 250 major steam hulls. 150 are built across the turn as standardisation and interchangeable components lift the rate from 3 a year to 9. 40 are condemned, being the last of the coal-era hulls. Stock at 550 is 360.
 
@@ -244,11 +236,11 @@ The refit cycle is the quieter cost. With 360 hulls on a 60-year life and two re
 
 Plate has been standard on new construction since 515 to 520. 175 hulls are plated to the designed standard at 550, being all construction since that date. The remaining 185 are older hulls, and plate is now added during general refit as well as on new construction, which brings the older stock forward without taking yard time from new keels.
 
-Armament in service is the moored mine, the spar and drifting charge, the petroleum incendiary, and the aircraft of Item 16 operating from coastal and colonial bases.
+Armament in service is the moored mine, the spar and drifting charge, the petroleum incendiary, and the aircraft of Item 15 operating from coastal and colonial bases.
 
 ---
 
-## Item 16. Aircraft
+## Item 15. Aircraft
 
 The ceiling on this line was the want of a power-station-scale electrolytic smelter, and the falls plant removed it. Aluminum structural work is mature and airframes are metal-framed.
 
@@ -264,7 +256,7 @@ Standing instruction: numbers, ranges, engine life and basing are held in the hi
 
 ---
 
-## Item 17. Radar goes to sea, and the networks extend
+## Item 16. Radar goes to sea, and the networks extend
 
 Detection radar has stood on the Mediterranean coast, the Sinai approaches and Cyprus since about 450 to 460, with directional radar and range estimation from about 460 to 480. The electrical works now manufactures sets in series rather than building them by hand, and the compartment is opened to the fleet.
 
@@ -280,7 +272,7 @@ The telegraph carries formal empire-wide traffic and extends along the Caribbean
 
 ---
 
-## Item 18. Industrial output
+## Item 17. Industrial output
 
 The five sectors funded in the last turn report. Copper wire drawing at the Copperbelt and the falls runs 14,000 tons a year. Arc-furnace steel at the falls runs 90,000 tons a year, feeding shipyards, plate, rail, barrels and machine works. Machine tools are produced as standard products at 3,400 units a year in lathes, boring mills, planers and gauges, which is the multiplier under everything else. The shipyards deliver 9 major steam hulls and 60 transport and river hulls a year on interchangeable components. Aluminum at the falls runs 900 tons a year.
 
@@ -290,7 +282,7 @@ The pull remains the crown's own appetite for wire, steel, hulls, plate and mach
 
 ---
 
-## Item 19. Two stud establishments are founded, on ground Egypt holds
+## Item 18. Two stud establishments are founded, on ground Egypt holds
 
 Cavalry has been the weakest arm since the Roman encounter and matured through seventy years of breeding in the East African highlands from about 275 AD, where the tsetse does not reach. The limit has been the extent of tsetse-free grazing rather than the skill, and the empire holds a great deal of such ground it has never used for the purpose.
 
@@ -304,7 +296,7 @@ Cost is 1,400 talents in works across both and 260 talents a year in operation.
 
 ---
 
-## Item 20. The China arrangement is honoured in full
+## Item 19. The China arrangement is honoured in full
 
 Twenty of their scholars each decade sit inside Egyptian institutions by agreement, and Egypt's germ and tropical-disease body is open to them (firm, own file). It stays open, at full extent, on no schedule. The knowledge has passed and cannot be recalled, the paper stream rests on the arrangement, and a partner who finds an exchange quietly narrowed prices every later dealing accordingly.
 
@@ -322,7 +314,7 @@ The council's disposition toward China is 4 on trust and holds there. The Cape c
 
 ---
 
-## Item 21. Crops and population
+## Item 20. Crops and population
 
 Western stock arrived about 510 to 515 and was distributed for trial across a dozen climates. The Delta is unchanged, being already the richest grain land on earth. Everywhere else the food supply is rising, and it rises by two separate mechanisms which should not be run together.
 
@@ -336,7 +328,7 @@ The council is watching the early part of a change it will not see finished. The
 
 ---
 
-## Item 22. Freed term men are directed to colonial grants
+## Item 21. Freed term men are directed to colonial grants
 
 Chattel slavery for mine workers was replaced over 352 to 368 by defined-term contracts ending in manumission and a settlement grant, with mechanical substitution required in the deadliest work. The reason recorded then governs still: large concentrations of indefinitely bonded men are the gravest danger inside the wall, and cutting the headcount is a war measure. The Copperbelt revolt of about 345, coordinated across three sites and retaken in eleven days by the Zambezi steam fleet, is the event the reform answers.
 
@@ -348,9 +340,9 @@ Bonded labour on the great estates and in the Nile agrarian base continues under
 
 ---
 
-## Item 23. Treasury note
+## Item 22. Treasury note
 
-Committed this turn: the Enterprise on the Madagascar instrument with 340 hulls in the passage trade, the Caribbean advance, the Amazon ascent and the highland entry, the fever-bark plantations, the southern passage station and the Pacific coast posts and works, the southern-landmass survey expedition, the bed expansion, the arc-nitrogen programme, the propellant programme, the yard programme, the airframe works, the radar fit and the network extensions, the two stud establishments, the register office, and the standing research slate.
+Committed this turn: the Enterprise on the Madagascar instrument with 340 hulls in the passage trade, the Caribbean advance, the Amazon ascent and the highland entry, the fever-bark plantations, the southern passage station and the Pacific coast posts and works, the southern-landmass survey expedition, the bed expansion, the arc-nitrogen programme, the yard programme, the airframe works, the radar fit and the network extensions, the two stud establishments, the register office, and the standing research slate.
 
 Affordable against gross receipts rising from 142,000 to 167,000 talents and a reserve rising from 263,000 to 334,000.
 
@@ -434,10 +426,9 @@ The Library and foundations line stands at 8,400 talents a year and carries upke
 
 | Programme | Researchers | Cost a year | Result and window |
 |---|---|---|---|
-| Arc-fixation of atmospheric nitrogen | 800 | 1,500 | Bench process 545 to 585. Beds and Pacific deposits worked regardless. |
-| Nitro-propellant and barrel | 1,200 | 1,100 | Workable piece 545 to 575. |
-| Explosive, long life in sealed magazine | 400 | 500 | Transport-and-storage version delivered 531. Magazine case continuing. |
-| Aircraft and airframe metal | 1,150 | 1,400 | 150 airframes and 230 engines a year; 700 in service; radius 750 miles; overhaul 500 hours. |
+| Arc-fixation of atmospheric nitrogen | 1,200 | 1,900 | Bench process 545 to 585. Beds and Pacific deposits worked regardless. |
+| Explosive, long life in sealed store | 900 | 900 | Transport-and-storage version delivered 531. Long-store case continuing, allocation raised. |
+| Aircraft and airframe metal, with the powerplant | 1,450 | 1,700 | 150 airframes and 230 engines a year; 700 in service; radius 750 miles; overhaul 500 hours. |
 | Radio, radar, vacuum tube manufacture, electronics | 2,100 | 2,300 | 1,240 radio sets and 158 radar sets in service, 90 shipborne and 68 coastal. |
 | Tropical medicine and the fever bark | 1,400 | 1,600 | Bark qualified across 1,100 cases; 14 plantation stations; first African harvest 548. |
 | Machine tools as standard products | 700 | 800 | 3,400 units a year. |
@@ -464,7 +455,7 @@ The Library and foundations line stands at 8,400 talents a year and carries upke
 
 **Caribbean.** The continental shore west and north from the Guiana rivers: fortified harbours at the Essequibo, Demerara and Berbice mouths, at the Orinoco delta, along the dry cactus coast beyond it, at the gulf of Maracaibo, and westward to the narrow neck of the continent, which is the westernmost ground taken. Garrisons victualled to hold three months cut off. The island arc north from Trinidad, nine islands under harbour post, each within sight of the last. 96,000 settlers across the continental coast and the arc.
 
-**The grazing coast, the passage and the Pacific.** South of the Plata, the wind-scoured treeless scrub plain: five harbour stations, at the shallow bay six days' sail south where the grassland gives out, at the double gulf behind the whale peninsula, and at the Deseado, Santa Cruz and Gallegos mouths, with runs pushed forty to eighty miles up each valley. 14,000 settlers, mostly Cape and Highveld men, sheep and hides. The passage 1,300 miles south of the Plata, a sheltered strait between the mainland and a large cold island, with the coaling and provisioning station mid-strait at the second narrows where the channel is a mile and a half wide, under a battery, linked by heliograph and radio north to the Gallegos. North of the passage, 900 miles of drowned channel coast, rain forest to the waterline and glaciers into the sea, held only at two fuel stations. Then the enclosed valley between the coast range and the mountain wall, Cyrenaican in climate: four settled districts on the snow-fed rivers, harbours at the north-open bay 1,400 miles up from the passage, at the Maipo mouth and at the Bío-Bío mouth. 62,000 settlers, wheat, grapes and olives. North of the valley, 700 miles on, the rainless shelf between sea and high desert plain, water shipped to every post: copper at three sites in the coastal ranges, nitrate from the surface beds of the inland plain. Twelve harbour posts hold the run from the passage to the tropic.
+**The grazing coast, the passage and the Pacific.** South of the Plata, the wind-scoured treeless scrub plain: five harbour stations, at the shallow bay six days' sail south where the grassland gives out, at the double gulf behind the whale peninsula, and at the Deseado, Santa Cruz and Gallegos mouths, with runs pushed forty to eighty miles up each valley. 14,000 settlers, mostly Cape and Highveld men, sheep and hides. The passage 1,300 miles south of the Plata, a sheltered strait between the mainland and a large cold island, with the coaling and provisioning station mid-strait at the second narrows where the channel is a mile and a half wide, the channel there mined and covered from both shores, linked by heliograph and radio north to the Gallegos. North of the passage, 900 miles of drowned channel coast, rain forest to the waterline and glaciers into the sea, held only at two fuel stations. Then the enclosed valley between the coast range and the mountain wall, Cyrenaican in climate: four settled districts on the snow-fed rivers, harbours at the north-open bay 1,400 miles up from the passage, at the Maipo mouth and at the Bío-Bío mouth. 62,000 settlers, wheat, grapes and olives. North of the valley, 700 miles on, the rainless shelf between sea and high desert plain, water shipped to every post: copper at three sites in the coastal ranges, nitrate from the surface beds of the inland plain. Twelve harbour posts hold the run from the passage to the tropic.
 
 ## Surveyed, not held
 
