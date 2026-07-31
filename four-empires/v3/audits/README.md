@@ -74,3 +74,74 @@ Related, and the coordinator's error rather than a reviewer's: **a file was modi
 - Pushback that implies a direction produces a fabricated justification for that direction. Ask what the constraint *is*, never whether a number is too high.
 - A clean report must be an acceptable outcome, stated in the brief, or reviewers will manufacture findings.
 - Never tell a country what it observed. Ask what it does and what its standing orders are, then adjudicate contact from both sets of orders.
+
+---
+
+## Where the loop stands, and what comes next
+
+All four turns have been through three rounds of audit-and-fix. Round three ran
+the two tech re-verifications and a from-scratch letters audit against settled
+files, and every finding from it has been applied. Commit `c0fcd5a`.
+
+**Round three, what the passes confirmed rather than found.** Rome's fleet
+ledger, powder chain, transport ledger, western population rebuild, 288-million
+breakdown and both fiscal tables; Egypt's seven revenue streams, opening-revenue
+reconstruction from individual stream rates, reserve arithmetic, settlement
+ledger, research tables and every source citation, individually checked; China's
+spending and revenue tables, literacy age bands, selection fractions, Northern
+Road, far-coast logistics and the whole Suppression Margin section against
+canon; the Maurya's building ledger at 1,587 with full propagation, standing
+charge at 125, revenue at 2,616, research ledger on both axes, and Territory
+reconciling to 57 harbours item by item. Rome's compound-steam horsepower move
+was ruled **supported** against the source's own gate and four downstream
+dependencies, and is closed.
+
+**Three coordinator rulings made this round.**
+
+1. **The Maurya volume of 530 was never lost.** An earlier ruling had it sent and
+   taken by banditry on the Mesopotamian road. That was an invented in-world
+   event covering a gap in the coordinator's own process: the volume had simply
+   not been delivered, because distribution had not happened. Withdrawn. See
+   COORDINATOR-NOTES 3c.
+2. **Rome's western disclosure to the Han went at about 500, not 515.** Canon was
+   split; the reconciliation is that Rome answered on the return of the voyage,
+   in the closing years of the source window, before the generation in which its
+   one message went to Pataliputra. Neither canonical document is in error, and
+   the draft's "filing error" framing is removed.
+3. **The Antilles collision is unadjudicated and is deliberately unforwarded.**
+   Rome holds Hispaniola, Cuba and "the lesser islands of the chain"; Egypt holds
+   nine harbour posts on the arc north from Trinidad; and Rome has entered a
+   twenty-five-year null sighting as evidence and drawn a strategic conclusion
+   from it. Whether the two lines miss turns entirely on what "the chain" means,
+   and the Rome source uses it for the Lesser Antilles. **Do not send this to
+   Rome as an audit finding** — it would tell Rome what it saw. Adjudicate it on
+   geography and standing orders, as the Australia encounter was, and let the
+   result reach Rome as material in INCOMING.
+
+**Structural change, applied to all four.** Every turn now carries an empty
+INCOMING section before MESSAGES OUT, with subheadings for documents received,
+intelligence returns and technical assessments. Each court was told not to guess
+at what will arrive and not to soften a position in expectation of it.
+
+**Still open, in order.**
+
+1. Re-run the passes against `c0fcd5a`. Every pass so far read a file state that
+   has since changed, so all of them are stale, including the ones that came back
+   clean. A homogeneity re-check matters most: the last one read v2-era text and
+   the length spread has since tightened from 8 per cent to 7.
+2. Re-run the spy adjudications. They were run against turns that no longer
+   exist.
+3. **Only then, step 2: distribution.** Into each INCOMING section goes the
+   actual text of letters sent to that court, the adjudicated spy returns, and
+   the technical verdicts. This includes the Maurya volume of 530, which Rome has
+   spent its whole turn reasoning about the absence of, and China's letter of 537
+   to Egypt, which Egypt's file has no trace of while claiming the arrangement is
+   honoured in full.
+4. Countries revise against what they have just learned. Replies open.
+5. Hostile review before anything is treated as canon.
+
+The homogeneity recommendations for the *next* generation are unactioned by
+design — mandated mood, one unflagged error per document, asymmetric length and
+coverage, a pathology per court, and retiring Egypt's `Accepted cost:` and
+China's `Cold reading:`, both of which survive in the current files. Changing
+voice mid-loop is the same mutation error as any other.
