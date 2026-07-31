@@ -44,9 +44,15 @@ The note is sent because the presence is now open. Egyptian garrisons, works, sh
 
 The note states that the coast is under Egyptian administration, asks for advance notice of passages, and asks that vessels with no commercial business keep to open water. Standing orders continue: shadow, fire only if fired upon, issue no threat that will not be enforced.
 
-The council's first draft asserted that the administration was lately established, and the council struck it. The Item 4 doctrine adopted this turn permits a standing account only on a matter a rival can neither visit nor verify, and the timing claim fails the second limb even though it passes the first. A passing vessel cannot establish from the sea when a work was built. Rome does not need the sea for this one. Rome has its own file: five armed vessels lost on that coast across seventy years, and seventy years of Egyptian assurance through the formal channel that Egypt kept no naval presence there. A claim of recent arrival set against that file is checkable at a desk in Rome, and attaching a fresh falsifiable lie to the exact grievance the note exists to defuse would defeat the note.
+The note carries two deliberate falsehoods and the council enters both.
 
-So the note concedes the administration, which is observable and now observed, and says nothing whatever about how long or how far. The extent is refused along with the routes and the fleet, which leaves Rome no figure in the letter it can test. The internal record is that the coast has been Egyptian for generations.
+The first is that the administration is lately come. Egypt has held that coast for generations. The second is the implication that other powers had some hand in how it came about; no other power had any part in it whatever, and the sentence is built so that Rome cannot tell whether it refuses a real arrangement or an empty one.
+
+What each buys. The recency claim offers Rome an account of the garrisons that does not require seventy years of concealment, which is the reading Egypt least wants Rome to reach. The hint of other parties gives Rome a direction to spend effort in that leads away from Alexandria, and costs Egypt nothing to maintain because there is nothing there to find. Neither is dated, extended or numbered, so the letter gives Rome no figure to test even where it gives him something to disbelieve.
+
+The council records that Rome may well disbelieve the first. Rome has its own file: five armed vessels lost on that coast across seventy years, and seventy years of Egyptian assurance through the formal channel that Egypt kept no naval presence there. Set against that, a claim of recent arrival is the kind of thing a careful clerk in Rome may reject. The council sends it anyway, and the reasoning is that the note's operative purpose is the standing order at the foot of this item, which works whether or not Rome believes a word of the timing: a Roman captain who has been told the coast is administered and asked to give notice is a captain an Egyptian squadron is less likely to fire on by mistake. A disbelieved lie leaves Egypt roughly where it already stands with Rome. A believed one buys a cheaper account of the coast than the true one. This is the same instrument that told India the electrical force runs through plants and ran twenty-five years, and that has sold an unsproutable coffee bean under the wrong country's name since the first century, and the council is content to lose some of them.
+
+Both claims are entered as standing accounts under Item 4, with the ten-year expiry review and the written successor position that Item 4 requires. The internal record is that the coast has been Egyptian for generations and that no other power had any part in it, and no Egyptian paper is to adopt the letter's account.
 
 The case Egypt survives is a sequential single front against Rome, through terrain and depth. The case Egypt does not survive is a coordinated two-front war against Rome and India at once. Preventing that coordination is the central diplomatic objective of the state, and the mechanism by which coordination forms is a grievance one power can name to another.
 
@@ -62,7 +68,7 @@ Accepted cost: refusing to discuss routes concedes that a subject exists, and a 
 
 For roughly seventy years Egypt maintained an account, given to Rome through the formal channel, that the Atlantic face of Africa was held by capably hostile coastal peoples and that Egypt kept no naval presence there (firm, own file). In about 524 vessels flying Roman colours transited that coast with Egyptian garrisons and works within view (firm as to the transit, assumed as to what was seen).
 
-The account failed because it described ground a rival could go and look at, and the decision on when to look lay with the rival. Doctrine follows. A standing account is permitted on a matter a rival cannot visit or verify, and the coffee-origin account and the electrical misdirection continue on that basis. On the observable disposition of a coast, a harbour, a fleet or a garrison, the instrument is refusal to discuss. Every retained account carries a ten-year expiry review and a written successor position, so that its failure is planned rather than discovered.
+The account failed because it described ground a rival could go and look at, and the decision on when to look lay with the rival. Doctrine follows, and it is narrower than a general rule against lying. What is barred is a standing account about the observable disposition of a coast, a harbour, a fleet or a garrison, because a rival settles those by sailing to them at a time of his choosing. On that class the instrument is refusal to discuss. What is not barred is an account of how a thing came about, when, or with whom, which a rival can weigh against his own papers but cannot settle by looking. Those may be told, some of them will fail, and each is entered with an expiry review and a written successor position so that its failure is planned rather than discovered. The coffee-origin account and the electrical misdirection continue on that basis. Every retained account carries a ten-year expiry review and a written successor position, so that its failure is planned rather than discovered.
 
 The intelligence directorate opposed, arguing that the Atlantic account bought seventy years that refusal would not have bought. That is true and the practice is restricted anyway, because the same account then cost the state a grievance it cannot remove, at a moment it did not choose. The directorate keeps the two accounts it argued for. The section that drafted and maintained the Atlantic account loses supervision of standing accounts, which passes to a review board sitting with the council.
 
@@ -362,13 +368,13 @@ The reserve stands at target at the close and absorbs a shock. The discretionary
 
 > From the council at Alexandria to the government at Rome.
 >
-> The Atlantic coast of Africa is under Egyptian administration.
+> The Atlantic coast of Africa has lately come under Egyptian administration.
 >
 > Rome is asked to give notice of the passage of its vessels along that coast before such passages are made.
 >
 > Vessels with no commercial business on that coast are to keep to open water and stand clear of Egyptian harbours, works and signal stations.
 >
-> What arrangements Egypt has with any other power are not a matter for Rome, and Egypt will not discuss them, nor the extent of its holdings, nor its routes, nor the disposition of its fleet.
+> What Egypt has arranged with other powers in the matter is not Rome's business, and Egypt will not discuss it, nor the extent of its holdings, nor its routes, nor the disposition of its fleet.
 >
 > Alexandria.
 
