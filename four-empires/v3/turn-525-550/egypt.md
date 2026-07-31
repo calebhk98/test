@@ -398,7 +398,13 @@ The reserve stands at target at the close and absorbs a shock. The discretionary
 
 # INCOMING
 
+Material delivered to Egypt from outside is entered in this section and nowhere else, and no Egyptian paper is to rest on outside material that does not appear here. Nothing further has been delivered as at the closing of this record.
+
 ## Documents received
+
+**India's notice of holdings on the southern coast.** Reached Alexandria in 543, by sea. It claims that coast for the realm issuing it. It was held without reply for the remainder of the turn, and the reply at MESSAGES OUT is the answer to it. The seven unanswered years are the friction the reply is sent to remove, and the reasoning is at Item 11.
+
+**The sealed instrument concerning the same coast.** Not posted to Alexandria. It was handed to Egyptian officers at sea off that coast in 547 and again in 549, and is entered here because the council holds the document itself, which is what makes it firm rather than reported. Struck at a press and sealed, in three tongues, Greek, Latin and the script of India, none of them Coptic. Read at sea by a carried translator. Its terms and the council's reading of them are at Item 11. The encounters in which it was handed over are events and are recorded at Item 11 as events, not as correspondence.
 
 ## Intelligence returns
 
@@ -460,7 +466,9 @@ The reserve stands at target at the close and absorbs a shock. The discretionary
 >
 > Egypt sends the medicine and not the plant, and will not say where it grows. On that Egypt keeps its own practice, as China keeps its own on the making of silk, and Egypt would rather state the reservation than have it found.
 >
-> Egypt also gives notice, as a courtesy and not as a request, that it sent a survey squadron to the southern landmass in these years, whose approach lies near water under China's protection. It has been withdrawn. It made one landing, to repair a hull damaged on a reef, on an empty stretch of shore, and it claimed no ground.
+> Egypt also gives notice, as a courtesy and not as a request, that it sent a survey squadron to the southern landmass in these years, whose approach lies near water under China's protection. It has been withdrawn.
+>
+> Egypt sets down the orders it carried, since orders of this kind are worth nothing to either party if the other does not know them. It was to make no landing where there were works, vessels or people; to attempt no contact; to signal and hold position without closing on anything it did not expect; and to fire only if fired upon. Those orders were kept. It made one landing, to repair a hull damaged on a reef, on an empty stretch of shore where there were none of those things, and it claimed no ground.
 >
 > Alexandria.
 
