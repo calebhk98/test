@@ -80,6 +80,22 @@ Every item below happened. Most were mine.
 
 **Check that a promised deliverable is actually produced in the turn it is owed.** Rome spent this turn reasoning about India's silence while India was never asked to produce the account or the letter. An obligation one court is waiting on has to be a live item in the other court's turn, or the exchange cannot resolve in either direction.
 
+## 3c. Failure modes found in the v3 audit loop
+
+**Do not invent an in-world event to explain a gap in your own process.** I ruled that the Maurya's sealed volume of 530 was sent and lost to banditry on the Mesopotamian road, because Rome's turn was built on nothing having arrived. It was not lost. I had simply never delivered it. The tell is that the invented event was unfalsifiable and conveniently preserved both turns without either court being wrong, which is what made it attractive and should have made it suspect. A missing delivery is a missing delivery. Every "delivery collision" in v3 was this same error wearing a different hat.
+
+**Give every country a section for incoming material, and create it before the first turn is written.** v3 had nowhere for delivered documents, adjudicated spy returns or technical verdicts to land, so all of it leaked in through coordinator pushback — which is why the coordinator kept ending up telling countries what they had seen. The section is three subheadings, empty until distribution: *Documents received*, *Intelligence returns*, *Technical assessments*. Tell each agent explicitly not to guess at what will arrive, not to write around the possibility, and not to soften a position in expectation of it.
+
+**Pushback that implies a direction produces a fabricated justification** — the v2 lesson, and it recurred twice in the audit loop in a subtler form. I told Egypt *which* of two mutually inconsistent figures was the loose one, and the method I supplied (deriving population from total revenue growth) was denied by Egypt's own Item 1 four sections away. I told China to replace a stale question with one about glass annealing, and the substitute named China's single open bottleneck to the one power it had withheld the telescope from. Both times the agent complied cleanly and the result was worse. The fix that works: hand back the choice with the analysis attached, name the constraint the answer has to satisfy, and say a reasoned refusal is acceptable. China then routed the ask to a different power and priced it in its own file, which is better than anything I would have dictated.
+
+**Check a reviewer's premise before forwarding it, and check it in the source.** Three v3 findings were withdrawn because I forwarded them unchecked. Two premises checked this round both held — the Maurya's population rate against canon Appendix B, where 1–100 AD at 23.3 parts in ten thousand beats the century the turn named as fastest; and the household and temple lines at 68 and 70, which the turn offered as accession figures and which the appendix gives for 500 AD, twenty-five years earlier. Checking takes one grep and it is the difference between a finding and a false alarm.
+
+**Canon can be split, and the fix is reconciliation, not fiat.** Rome's 500–525 turn says its single message that generation went to India; Egypt's turn from the same generation records China saying Rome disclosed the western land after four direct questions. Both hold if Rome answered at about 500, on the return of the voyage, in the closing years of the source window. The v3 draft had instead declared the Roman record a filing error. A turn document may not retire canon by fiat; the coordinator reconciles, and if no reconciliation exists, rules and says which document is being overridden.
+
+**Tell verifiers which material is new, neutrally.** Naming where the unverified material sits without saying what you think of it produced the sharpest passes of the project. It also produced a finding *in a country's favour* — Rome's horsepower move was ruled supported, with the source's own gate cited and four downstream dependencies tested — which is only possible if a clean verdict is genuinely available. Say so in the brief.
+
+**The audit loop is itself a homogenising force.** Every round adds material to all four documents at roughly the same rate, so they converge as a side effect of being corrected. Across the v3 loop the length spread tightened from 8 per cent to 7, against the human control's 26. Measure the spread each round, and do not fix voice mid-loop: changing register while passes are reading the files is the same mutation error as any other.
+
 ## 4. Hard rules for agents
 
 1. **You may never state what another power did, decided, intends, believes, possesses, or offered.** You may report what your people observed and what your court concluded. Conclusions may be wrong.
@@ -125,7 +141,8 @@ I got this wrong for the whole of v3 and it cost many rounds. The correct shape:
 
 **Audit and fix in a loop until clean, and only then distribute.**
 
-1. Turns written.
+0. Every turn document carries an empty INCOMING section from the moment it is written. See 3c.
+1. Turns written. Nothing any court has not yet been told is in them.
 2. Run the passes: tech verification, spy adjudication, letters audit, full-history coherence, homogeneity.
 3. Send findings back. Countries fix.
 4. **Re-run the passes on the fixed documents.** New fixes create new faults, and a pass run against a superseded file proves nothing.
@@ -141,6 +158,8 @@ Two rules that follow:
 **Never mutate a file while a pass is reading it.** Three of the Maurya's findings in v3 were damage from restoring a struck section under a live audit. If a fix is needed mid-pass, wait.
 
 **A pass is only valid against the file state it read.** Record which commit each pass ran against. When a document changes materially, its passes are stale and must be re-run, including the ones that came back clean.
+
+**Sort every finding before forwarding it: internal, on-delivery, or coordinator-only.** A finding is *internal* if the court can fix it from its own file and learn nothing — its own arithmetic, its own contradictions, its own letters against its own compartments. It is *on-delivery* if fixing it requires knowing what another power did, in which case it waits for step 6 and arrives as material, not as a correction. It is *coordinator-only* if it is a fact about the world that no court is entitled to. The v3 loop nearly handed Rome the finding that its twenty-five-year null sighting of Egypt was contradicted by Egyptian harbour posts in the same island chain. That is telling a country what it saw, dressed as an audit result, and Rome had already drawn a strategic conclusion from the null that it would then have silently revised on knowledge it does not have.
 
 ## 7. What the review passes must check
 
