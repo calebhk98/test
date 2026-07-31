@@ -54,6 +54,20 @@ A further evasion appears in the 540s. Land is left registered to a smallholder 
 
 ---
 
+## The Suppression Margin
+
+The third of the pressures carried into this century, beside the land question and the thin treasury, is the slow narrowing of the advantage by which this dynasty has put down every rising for five hundred years. The formula left state control in the 350s and the monopoly was declared lost in the previous period. What the saltpeter monopoly now protects is scale and quality rather than the secret, and no instrument exists to recover the secret.
+
+What the returns show across the period. Crude powder is seized in the interior provinces in 41 separate instances between 528 and 549, chiefly in the northern commanderies near the older deposits, in quantities from a few catties to one cache of several hundredweight. Saltpeter appears in interior markets from sources the licensing rolls cannot account for, and the price of it in those markets falls slightly across the period, which is the reading the court trusts most, a price falling while licensed output is unchanged meaning supply from somewhere else. Cold reading on all of this: seizures measure the diligence of garrisons as much as the quantity in private hands, and a rising count of seizures in a period when the audit put more officials on the roads is not by itself proof that more powder exists.
+
+The audit of 528 to 546 bears on the same question, and the court sets the two beside each other deliberately. The reform stripped 190 registration officials, was suspended in two provinces on petition, and reaches the register without reaching the concentration of land, so the great families end the period wealthier, more numerous in their dependents, and more aggrieved than they began it. They are also the only private parties in the empire with the means to make powder in quantity rather than in catties. No rising occurs in these twenty-five years and none is expected in the next few. The point entered here is that the arithmetic which made suppression cheap for five centuries, a garrison of fifty holding against many times its number, does not hold against an opponent with even crude powder, and the empire is manufacturing the grievance and losing the margin at the same time.
+
+The instruments adopted are small, because nothing large is available. Registration of saltpeter buyers is extended in 535 from merchants trading the substance to any purchaser above a stated quantity, which catches the careless and not the determined. The fire-siting rules made after the city fire of the 420s are extended in 539 to private stores of any powder found and forfeited, since the forfeited stock has to go somewhere. Interior garrison drill is rewritten in 542 on the assumption that an opposed force may hold crude powder and fight from cover rather than close in the open, which is the first revision of that drill in two centuries. And the forward magazine standard written for the Syr Darya, so many days of sustained fire rather than so great a weight of powder, is applied to the interior garrison magazines as well, so that a commandery can be told what it could actually fight.
+
+The honest position. Suppression is no longer to be assumed to cost weeks. What the empire holds against an armed rising is no longer the possession of powder but the scale of its manufacture, the quality of its metal, rifling, range, and the rate of fire of a breech-loading weapon, which are advantages of degree that a determined opponent narrows rather than advantages of kind that he cannot obtain at all.
+
+---
+
 ## The Frontier Colonies and the Shortening Season
 
 Observed from the grain receipts the colony offices file and from the resurvey ordered in 531 and carried out by circulating surveyors from outside the colonies: deliveries from the garrison colonies on the dry northern and Kazakh margins fall by a fifth against their fifth-century figures, worst at the Minusinsk basin and the northernmost Mongolian posts. Sown area is little changed and yield to the unit has fallen. The colony offices report later frosts and shorter seasons in the same years, and the resurvey agrees with them.
@@ -321,6 +335,7 @@ The Sogdian merchant tasking is continued and is entered under the spy taskings 
 - The boiler at sea and the paddle wheel in swell, which stand between four harbour tenders and a hull that can cross.
 - Whether the seven far-coast stations can be held once any other power is present on that shore, the empire being able to stand there and not to fight there.
 - Whether the two garden plots at the landfall stations will carry grain, the far-coast posts costing more a man than any other the empire keeps while every pound they eat crosses an ocean.
+- The suppression margin, which narrows while the land concentration that produces risings continues and the audit adds to the grievance of the only families able to make powder in quantity. No rising falls in this period and the arithmetic that made suppression cheap no longer holds.
 - Whether the works, the coal, the merchant capital and the rising literacy amount to a change in the economy or to a rich trade in cloth. The court has no settled view and no policy. A single annual return of licence rolls, iron monopoly sales and engine counts is ordered so that the answer shows early.
 
 ---
