@@ -202,3 +202,52 @@ no longer exist. Then distribution, then revision, then replies. A tech
 re-verification against `3e68e8d` is prudent before distribution, since Rome's
 Caribbean narrowing moved a subject-population attribution and Egypt's letters
 changed again.
+
+---
+
+## Round five, and the loop closing
+
+Commit `7542a17`. **No findings outstanding.**
+
+**Fourth technical pass:** eleven findings against round three's twenty-nine, all
+applied. The heaviest was Egypt's revenue stream, verified in canon before
+forwarding — the source defines the population-tracking stream as the land tax
+*together with the state monopolies*, and Egypt had narrowed it to the land and
+grain tax in three places, which made a 16 per cent rise impossible on a block
+with no acreage growth and a 7 per cent yield gain. Restoring the monopolies
+reconciled it at no cost to any figure. Egypt's crop margin also turned out to
+weight an acreage average by a receipts share; it now states that the council
+does not hold the acreage share, shows both weightings, and gives the margin as a
+range from minus 2.3 to plus 0.4 points, saying it cannot tell which side of zero
+it falls on.
+
+**Two of the round's findings were the coordinator's own errors**, both from
+directing rather than asking: China's annealing question was ordered moved
+between two letters twelve years apart, which is impossible and is now
+reconciled by naming the Rome draft it actually came out of; and Egypt's claim
+that Egyptian ships are known on sight to most Indian sailors was written to an
+Australia ruling that over-specified. The coordinator was entitled to rule that
+identification happened, not to rule how the other court's knowledge was
+distributed. Egypt now records that this is not Egypt's to state.
+
+**Mechanical presence check: all 22 named fixes PRESENT, every sum reconciling.**
+Run because Egypt disclosed that two fixes it had reported as applied in an
+earlier round had never landed in the file. Those two were the only silent
+failures across five rounds. See COORDINATOR-NOTES 3c: a reported fix is not an
+applied fix, and the check needs no judgement.
+
+**Spy adjudications re-run against settled turns**, one pass per target, each
+holding only the target's files. All five earlier returns are marked SUPERSEDED
+and must not be distributed from. Notable: the Maurya's most valuable product
+against Egypt is a twenty-one-year nil establishing that no second bulk
+provisioning occurred; Egypt's first question against Rome fails because Rome
+holds no conclusion to steal, its file carrying both readings open; Rome's
+Dnieper watch counts honestly and measures a settlement line rather than an army;
+and Rome's question about its own message of 525 returns **two distinct nils that
+must not be merged** — non-receipt has no signature anywhere, and separately no
+frontier record exists because that stretch was thinned in 525. If the relay
+collapses the second into the first, Rome draws a firm conclusion from a nil that
+carries none.
+
+**Everything now stands ready for step 2.** The INCOMING sections exist in all
+four documents; Egypt's carries the two documents it already held.
