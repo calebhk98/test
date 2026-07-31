@@ -1,5 +1,7 @@
 # Intelligence return to Egypt, operation against Rome, 525–550
 
+> **SUPERSEDED.** Adjudicated against a turn state that no longer exists. Replaced by `against-rome-and-china-525-550.md`, which re-adjudicates both operations against the settled documents and corrects at least one figure carried here. Kept for the record only; do not distribute from this file.
+
 Adjudicated against the rebuilt Rome turn by a pass holding only Rome's own files. Supersedes the earlier adjudication, which was run against a turn that no longer exists.
 
 **Coordinator note, not for the receiving court.**
