@@ -145,3 +145,60 @@ design — mandated mood, one unflagged error per document, asymmetric length an
 coverage, a pathology per court, and retiring Egypt's `Accepted cost:` and
 China's `Cold reading:`, both of which survive in the current files. Changing
 voice mid-loop is the same mutation error as any other.
+
+---
+
+## Round four
+
+Three passes against settled files, all findings applied. Commit `3e68e8d`.
+
+**Letters, fourth audit, from scratch and blind to earlier reports.** Five CLEAR,
+three MINOR, none held back — against round three's two SERIOUS and one MUST NOT
+SEND. The remaining weight has moved out of the letters and into things only
+distribution can resolve. Fixed: Egypt's Item 19 promised the squadron's standing
+orders to China and the letter did not carry them; Rome's article 9 still told
+the Han they held every part of the position-fixing method and lacked only the
+assembly, which converts an open problem into a search over a small known set;
+Rome's article 6 thanked the Han in advance for a clock already in Roman hands.
+
+Three findings the audit said to leave alone, and they are the best material in
+the set. **India's overstatement worked** — Egypt has entered as permanent
+finding that India holds worked, garrisoned, settled coast around the whole
+landmass, and directs that a wider gap be read as an unseen work rather than an
+absence, when India's western and southern coasts are held by nobody. That is
+the 543 notice and the beach displays doing exactly what India's file says they
+were for. **The 547 and 549 encounters reconcile to the object**, down to Egypt's
+"offcuts of cut plating" against India's "a length of the same plating seen on
+the hulls' sides, cut and discarded" — two courts, written blind, one event.
+**China's proposed reciprocity is unperformable against Rome's refusal**, since
+China cannot give notice before entering ground whose position Rome will not
+state; neither letter is at fault and it becomes live on delivery.
+
+**Homogeneity, round four: 88 per cent against 85, which is inside the
+reviewer's noise.** The finding is that four rounds of correction added 6,817
+words and moved every metric by zero, and that two changes ran backwards. See
+`homogeneity-v3-round4.md` and COORDINATOR-NOTES 3c. This is the most important
+result of the loop and it is a finding about the process, not the documents.
+
+**Two coordinator rulings, neither of which any court learns.**
+
+- **The Second Degree counts reconcile with no change to either file.** Egypt
+  logs eleven beach displays; the Maurya logs five Second Degree occasions from
+  537. Six of Egypt's fall before the Coast Order of 535. The Maurya's own record
+  says its pre-Order reports were too loose to date the first hull, and its faults
+  found by use include officers acting with no authority on the ladder. So five
+  were Second Degree under the Order and six were local musters before it, which
+  look identical from a ship a mile offshore. Both counts stand.
+- **The Han clock of the previous generation was delivered, not offered**, on the
+  Han record listing it among gifts accompanying the message. Rome corrected.
+
+**Caribbean encounter adjudicated** — see `../encounters/caribbean-525-550.md`.
+The two powers do not meet, both nulls are true and corroborate each other, and
+Rome's territory clause was narrowed to what its own file supports. 550 is the
+last year the null can hold.
+
+**Still open.** Spy adjudications must be re-run; they were run against turns that
+no longer exist. Then distribution, then revision, then replies. A tech
+re-verification against `3e68e8d` is prudent before distribution, since Rome's
+Caribbean narrowing moved a subject-population attribution and Egypt's letters
+changed again.
