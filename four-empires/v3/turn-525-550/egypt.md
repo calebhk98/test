@@ -156,17 +156,41 @@ Held on this side is the shore, its harbours, the four valley districts and the 
 
 Standing instruction: any works, vessel, party or wreck not indigenous, encountered by patrol or survey on this coast or at the passage, is signalled to the council by radio on sighting, described as observed, and the station holds its position without closing.
 
-## Item 11. A survey expedition is sent to the southern landmass
+## Item 11. The southern landmass survey reports, and the coast is found held
 
-The standing judgement, entered about 450, was that the Maurya had known of that coast longer and had very likely set themselves on it, so that a lone Egyptian expedition would buy nothing usable. The council sets that judgement aside on the destruction of the Mauryan eastern navy between 488 and 497 and the passing of the Malacca route under Chinese protection (firm, own file), reasoning that a power without an eastern fleet is less able to hold ground at that distance. The reasoning is recorded so that it can be tested against what the expedition returns.
+The expedition was funded on a judgement that is now shown to have been wrong. The standing position entered about 450 was that the Maurya had known that coast longer and had very likely set themselves on it. The council set that aside on the destruction of the Mauryan eastern navy between 488 and 497 and the passing of the Malacca route under Chinese protection (firm, own file), reasoning that a power without an eastern fleet is less able to hold ground at that distance. Nine hulls sailed from Madagascar and the Cape at a cost of 1,400 talents, carrying no settlers, under orders to chart from seaward, to enter no harbour showing works, vessels or people in occupation, to attempt no contact, to signal by radio on sighting anything not indigenous and hold position without closing, and to withdraw rather than press a landing against opposition of any kind. Those orders were kept without exception across twenty-one years.
 
-Nine hulls sail from Madagascar and the Cape, the two nearest Egyptian bases, which already hold the ocean-going stores. Cost is 1,400 talents across the turn in hulls, stores and provisioning. The expedition carries no settlers. It is a survey, and settlement of any part of that coast waits on the council's order given after the report.
+The survey. Landfall in 528 at about thirty-four degrees south on the western face. Charted: that coast north to where it turns eastward, and the southern coast eastward for a long run. The squadron turned back short of both ends, so the extent of the landmass beyond those two points is unknown and no estimate is entered. Below about thirty degrees south the coast was entered freely, water taken at eleven places and indigenous peoples met at fourteen under the quarantine discipline of Item 12, and nothing there showed works, vessels or people not indigenous.
 
-Standing orders for landfall: chart the coast from seaward; enter harbours that appear unoccupied and take on water; make no landing at any harbour that shows works, vessels or people in occupation; attempt no contact; signal by radio on sighting anything not indigenous and hold position without closing; and withdraw and report rather than press a landing against opposition of any kind.
+Where the coast changes. From about thirty degrees south, north and then east to the limit of survey, thirteen separate works were counted (reported, squadron returns, entered as a floor). Four are walled, of masonry and rammed earth, with cistern-head, cleared approach and a beaten track inland. Eight are smaller and unwalled. One at about twenty-one degrees south is a harbour with a yard, wharves, sheds, timber seasoning, and not fewer than nine hulls alongside and building. The works stand about thirty leagues apart where seen at all, and the council directs that a wider gap be read as a work the squadron did not see rather than as an absence.
 
-No Item 5 figure rests on this coast and no ground there is entered as held.
+What the works did. On five occasions, where an Egyptian hull lay in sight of a work more than a day, the same sequence followed: a standard raised, armed men brought out and drawn up on the open beach in view, and fires lit along the shore at intervals after dark. Counts were taken from deck and from balloon by three observers and are entered as floors: not fewer than 140 at the largest, 120 at a second walled work, 35 and 40 at two smaller. Cloth dress, arms at the shoulder, and horses at three of the five in sections of about twenty. No boat came off, no hail was made, nothing was fired.
 
----
+The council enters a caution against its own figures here. The display followed an Egyptian hull lying still nearby on each of the five occasions, and its plain effect is to have a passing ship count a garrison. A number a man is shown is not a number he has found, and whether the establishment is larger or smaller than the count offered cannot be told from a beach. The counts stand as floors and are not to be treated as measurements.
+
+Small craft, from 536. Wooden, one and two masted, of a build not indigenous, working that coast between the works in ones and twos, some thirty sightings. They put in at the works, lay off them, and passed between them. On four occasions between 539 and 545 one altered toward the squadron, closed to a mile or two, kept company some hours and bore away without hailing. The council's read, and the most important line in the report: those works are not thirteen separate posts but one system, supplied and connected by sea. A system so supplied can be reinforced along its own coast faster than any land march, and can be cut by whoever holds the water, which is the same thing Egypt's own African coast has always been.
+
+From 547. Three Egyptian hulls working before a walled work at about twenty-eight degrees south were approached by four vessels from the north: wooden, ship-rigged, guns in the sides, and two of them carrying a funnel and making way with sail and smoke together, holding station in a wind that would have stopped the other two. They placed themselves between the squadron and the shore and stayed. The Egyptian squadron held and did not close, under orders. A boat came to hail, nothing was fired, and a paper was passed across. In 549 the same or a like force did the same at the yard harbour's approaches and the paper was passed again. Four vessels were counted at once across the whole period, from one deck on two days, and the figure is a floor.
+
+The paper is in the council's hands and may be read, which makes the document itself firm. It is struck at a press and sealed, and is in three tongues, Greek, Latin and the script of India. The Greek was read at sea. It states that the coast was found, charted, garrisoned, settled and taxed by the realm issuing it; that its harbours are open to any power for trade, water and repair on the same terms; and that no base, no garrison right and no ground will be granted upon it. The Madagascar master, twenty years in the Indian trade, reads the seal and style as the throne at Pataliputra (reported, one man's reading).
+
+The council observes that the operative words of the last clause are Egypt's own rule at Aden and along the East African coast, returned in the same order. Egypt cannot dispute that formula on that coast without weakening the formula it lives by at the Bab-el-Mandeb, where a published rate to all comers and no ground to anyone is what has kept the strait Egyptian without a permanent quarrel.
+
+Three findings are logged permanently for the confrontation planners, each a floor.
+
+First, the Maurya hold worked, garrisoned, settled and taxed ground at a reach from their own base comparable to Egypt's reach into the Atlantic, and sustain it by sea. The council had not credited them with that and now must.
+
+Second, the Maurya field steam at sea. Two of four vessels made way with sail and smoke together and held station in wind that stopped the sail-only pair, which is steam auxiliary and not a demonstration. This is the second power outside Egypt confirmed to have it, and the assumption that a rival's machinery is behind Egypt's is to be carried as a floor in every future estimate.
+
+Third, a fleet destroyed is not a presence removed. The eastern navy went between 488 and 497 and the garrisons ashore did not go with it, which is the error this expedition was funded on.
+
+The same claim now stands twice. A Mauryan notice of holdings reached Alexandria in 543 by sea, claiming this coast, and Egypt did not reply. A sealed paper making the same claim was handed to Egyptian officers at sea in 547 and again in 549, backed by works Egypt's own officers counted. The 543 notice could have been a bluff. It is not one, and the council treats the claim as corroborated by its own eyes.
+
+The reasoning for replying is entered, the council having given the Maurya nothing for a generation. It is not a change of disposition. The Maurya remain the party that leaks and embellishes, they are rated 2 on trust, and the reply carries no fact Egypt would not publish. The reasoning is the two-front premise restated: the case Egypt does not survive is a coordinated war against Rome and the Maurya at once, preventing that coordination is the central diplomatic objective of the state, and the mechanism by which coordination forms is a grievance one power can name to another. A formal notice left seven years unanswered, and then a sealed paper handed over twice at sea by an armed squadron that fired nothing and took nothing, is precisely the sort of slight a court carries to the other party. The reply costs Egypt no ground, since it holds none there and proposes none, and it removes the only friction with the Maurya the council can currently name.
+
+Decisions. No ground on that coast is entered as held and no settlement of any part of it is proposed. The survey squadron is withdrawn to Madagascar and the standing survey order for that coast is cancelled, the question it was sent to answer having been answered. The Atlantic and Cape commands keep the sighting-and-report order in force for any Mauryan vessel met in Egyptian waters. A reply is sent to the notice, at MESSAGES OUT. And the priority intelligence tasking for the next turn is set: the depth of the occupation inland, the eastern side of that landmass, and whether the Mauryan steam seen there is built in the Indian yards or bought.
+
+What the report does not answer, and what no Egyptian paper is to fill in by inference: anything of the eastern side of that landmass; the depth of occupation inland beyond a track and a cleared approach; and whether the thirteen works are the whole of the occupation, its face, or its thin edge. Every figure in this item is a floor.
 
 ## Item 12. Contact parties are placed under quarantine discipline
 
@@ -348,6 +372,20 @@ The reserve stands at target at the close and absorbs a shock. The discretionary
 >
 > Alexandria.
 
+## To the Maurya
+
+> From the council at Alexandria to the throne at Pataliputra.
+>
+> Egypt has received the notice sent to Alexandria concerning holdings on the southern coast, and the sealed paper handed to Egyptian officers at sea upon that coast. Egypt makes no claim there and disputes none.
+>
+> The terms set out in that paper are the terms Egypt keeps at its own ports. Harbours open to any power for trade, water and repair at one published rate, and no base, no garrison right and no ground granted upon them. Egypt will hold to those terms where its ships touch that coast, and looks for the same at Egyptian ports, where the Maurya have long had them.
+>
+> Egyptian vessels in those waters carry orders to make no landing where there are works, vessels or people, to attempt no contact, and to fire only if fired upon. Those orders stand and are not conditional on this letter.
+>
+> Egypt has no other business on that coast and proposes none.
+>
+> Alexandria.
+
 ---
 
 # SPY TASKINGS
@@ -418,4 +456,4 @@ The Atlantic crossing route, in use, and discussed with no power.
 
 The sea north and west of the island arc, and north of the narrow neck. Survey squadrons are ordered out under the standing order at Item 6 to chart what lies in that water before any settlement is placed where it could be cut off. Nothing there is known.
 
-The southern landmass. A nine-hull survey expedition is dispatched from Madagascar and the Cape under the standing orders at Item 11. No ground there is entered as held and no settlers are carried.
+The southern landmass, surveyed 528 to 549 and found held by another power. The western face charted from about thirty-four degrees south to where the coast turns eastward, and the southern coast eastward for a long run, both ends short of the limit of the land. Below about thirty degrees south the coast was entered freely and showed nothing not indigenous. From about thirty degrees south, north and east to the limit of survey, thirteen works counted as a floor, four of them walled and one a working shipyard harbour, supplied and connected by sea. No ground entered as held, no settlers carried, no landing made where there were works, vessels or people. The survey squadron is withdrawn to Madagascar. Detail at Item 11.
