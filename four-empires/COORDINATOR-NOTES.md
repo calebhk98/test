@@ -119,6 +119,29 @@ Both v1 and v2 had Roman engineers resident in Indian yards from 528, and v2 inv
 7. Distribute: adjudicated returns, technical verdicts, and the actual text of letters received. Replies open.
 8. Hostile review before anything is treated as canon.
 
+## 6b. The audit loop, and where distribution actually goes
+
+I got this wrong for the whole of v3 and it cost many rounds. The correct shape:
+
+**Audit and fix in a loop until clean, and only then distribute.**
+
+1. Turns written.
+2. Run the passes: tech verification, spy adjudication, letters audit, full-history coherence, homogeneity.
+3. Send findings back. Countries fix.
+4. **Re-run the passes on the fixed documents.** New fixes create new faults, and a pass run against a superseded file proves nothing.
+5. Repeat 3 and 4 until the passes come back clean.
+6. **Only now distribute.** Each country receives its adjudicated spy returns, the technical verdicts, and the actual text of letters sent to it.
+7. Countries revise their own documents in light of what they have just learned.
+8. Replies open.
+
+What I did instead was feed each audit finding back the moment it arrived, and start distributing before the letters audit had cleared. That produced letters that had to be recalled, a spy adjudication run against a turn that no longer existed, and an encounter adjudicated on a geography that was wrong.
+
+Two rules that follow:
+
+**Never mutate a file while a pass is reading it.** Three of the Maurya's findings in v3 were damage from restoring a struck section under a live audit. If a fix is needed mid-pass, wait.
+
+**A pass is only valid against the file state it read.** Record which commit each pass ran against. When a document changes materially, its passes are stale and must be re-run, including the ones that came back clean.
+
 ## 7. What the review passes must check
 
 Character continuity against the previous two documents. Modern-institution tells. Foreign control. Regression toward our own timeline. Unrequested gifts. Prose register. And a homogeneity check across all four turns in the same generation.
