@@ -178,7 +178,9 @@ The instrument is the one used at the Syr Darya for three centuries and at Terna
 
 The display is put to Rome and put now for three reasons. Rome is the only power known to reach that landmass, so a claim not stated to Rome is stated to nobody. A claim made before a foreign settlement is grown costs a letter, and the same claim made after costs a war at eight months' distance. And the form chosen is the Dnieper article extended, notice before crossing in force, offered in both directions, which is a courtesy between courts rather than a demand and is answerable without either side losing standing. The risk accepted is plain: naming the coast tells Rome exactly where to look, and the position could not survive being looked at closely. The claim is asserted now because a claim made before anyone else is present costs seven stations and a letter, and the same claim made after another power has settled costs a war the empire cannot fight at that distance.
 
-What would break it is a landing in force, or a foreign officer who counts the men at one station and reasons from it to the rest. Nothing can be done about either. Rome's letter, received in this period, states that Rome keeps soldiers, colonists and an administration on the same landmass, so the power that could land in force is present on that ground already and is no longer a possibility but a neighbour of unknown distance. The court's judgement is that the display is worth making anyway, on the same reasoning that kept the cannon forward on the north bank of the Syr Darya while the powder behind them would have lasted a fortnight.
+What would break it is a landing in force, or a foreign officer who counts the men at one station and reasons from it to the rest. Nothing can be done about either. Rome's letter, received in this period, states that Rome keeps soldiers, colonists and an administration on the same landmass, so the power that could land in force is present on that ground already and is no longer a possibility but a neighbour of unknown distance.
+
+**The claim is narrowed on that account, and the display is not.** The draft reply to Rome claims the shore where the posts and the marks stand and drops the country behind, which this empire has never entered. What is given up is any written assertion over that interior, to the one court able to contest it, and the interior is thereby left to whoever reaches it first. What is kept is a claim that survives being asked about. The stations themselves are still built to the plan of a post four times their garrison, the marks still run the length of the charted shore, and the annual run still lands its stores in daylight, so the display on the coast is unchanged and so is the true position behind it, which is 252 men who could be taken or ignored by any power that landed in strength. The court's judgement is that the display is worth making anyway, on the same reasoning that kept the cannon forward on the north bank of the Syr Darya while the powder behind them would have lasted a fortnight.
 
 **In the north.** The posted line lags the survey by about 900 kilometres and the claim runs to the full extent of the survey and beyond, as the claim to the Siberian forests has run for four centuries. No power is present to test it, which is the condition that makes the claim cheap.
 
@@ -498,6 +500,88 @@ Three things are asked. First, that physicians of your own be received in reside
 Offered with them, and not as their price, is the practice of the sealed deposit note, by which coin received at one office is paid against a stamped certificate at another and the coin itself does not travel, with the forms, the seals and the rules by which the offices settle between themselves. It has carried this court's remittances and much of its merchants' trade for three centuries, and it has not been sent to your court before. Two clocks regulated by a swinging pendulum go with this letter as a courtesy to your workshops rather than as consideration, the regulation itself having been given to your court in the last generation and this court not proposing to send the same knowledge twice.
 
 This court has nothing of equal weight to set against what it asks. It has looked at what has passed each way and does not pretend the account is level. It asks anyway, on the strength of the exchange itself.
+
+---
+
+## REPLIES DRAFTED, FOR REVIEW BEFORE DELIVERY
+
+Three correspondents. Two are answered and one is not. Each draft is preceded by what it buys, what it costs, and what is kept out of it.
+
+---
+
+### Reply to Rome, drafted 550
+
+**What is outstanding.** Rome asks for word that the yard as it describes it is acceptable and will begin the works on receiving it. That word is owed and this court has nothing to gain by delaying it further, its own yard on the eastern bank having stood since 531 waiting for a counterpart.
+
+**The undertaking this court cannot perform.** In 549 this court offered Rome the Dnieper article extended to the far land, being word beforehand rather than after, and said the same of itself: that Rome would hear from this court before any ship of this court went where Roman ground is settled. Rome's letter withholds the fixed position of every station, garrison and holding it has in the west, and does so for a reason this court accepts. The two things do not fit together. A promise to give notice before entering ground cannot be kept by a party that does not know where the ground is, and the same holds in the other direction, this court having withheld its own latitudes. The offer as made was therefore unperformable when it was made, which this court did not see at the time and sees now.
+
+The substitute proposed is conduct on contact rather than notice in advance, since contact is the moment at which both parties know where they are. It costs neither court a position and both can perform it. That is the whole of the change and it is proposed as a repair of this court's own article rather than as a new demand.
+
+**The claim, narrowed.** In 549 this court told Rome that the far coast was a frontier of this empire and that the country behind it was entered under a commandery. The posts and the marked shore are real. The country behind is a thing this empire has never entered and cannot describe. Continuing to claim it against a power with soldiers, colonists and an administration on the same landmass invites the one question this court cannot answer, and a claim that collapses when asked about is worth less than a smaller claim that does not. The claim is therefore narrowed in this draft to the coast where the posts and the marks stand.
+
+The price of narrowing is real and is entered here rather than glossed. It gives up, in writing and to the one court that could contest it, any assertion over the interior behind that coast, and it invites settlement of that interior by whoever reaches it first. What it buys is a claim this court can maintain under inspection, and the removal of a sentence that would have read, to a court that keeps colonies of its own, as a large assertion by a party unable to describe what it was asserting. The display on the coast itself is unchanged and its true position stands where it stands in this record.
+
+**What is offered.** The sealed deposit note, which has gone to Egypt and not to Rome, and the results of this court's own check of Rome's observations against this court's own instruments. The second discloses that this empire holds glasses that will show the phases of Venus and the lights near Jupiter. That is judged an acceptable cost, Rome having just demonstrated the same capability and being likely to assume it in a court that measured the sphere and built the pendulum clock. The account between the two courts is not level and the draft says so, this court having received the rail method, the letter-casting, the coal-glass furnace, the compass work, two disclosures of the western ocean unasked, and now the gas and the tubes.
+
+**Kept out.** The latitude of the crossing, the winds and currents out and home, the charts, the number of hulls, the strength of any station, the cadence of the annual run, the connection between the eastern voyages and the Northern Road, and everything of powder, steam, the electrical work and the making of silk. Also kept out, deliberately, is anything Egypt has told this court, which includes what Egypt has said of its own correspondence with Rome. The rule adopted in 543 for Egypt's gifts is applied to Egypt's confidences: a partner who finds its words in a third capital narrows the channel, and this court will not spend the Alexandria channel to buy credit in Rome.
+
+**Checked for disclosure by inference.** Narrowing the claim tells Rome the claim is thin. That inference is available and is accepted as the price named above. Nothing else in the draft permits a distance, an interval, a strength or a route to be worked out.
+
+> To the Senate and the Emperor of the Romans, from the Emperor of the Han and his ministers.
+>
+> The yard as your court describes it is acceptable, and this court sends the word your letter asks for so that the works may begin. This court's own yard has stood on the eastern bank since it was built, and with yours on the western bank the arrangement is complete as your letter sets it out: cars from the east stop, cars from the west take the load, and goods cross where wheels do not. Han factors in your yard under your law and your garrison are on the footing your merchants have long had here, and this court is content with it.
+>
+> On the rails your court refuses and gives its reason, and the reason is the one this court would have given. A rail laid from one empire onto the ground of another is a road for an army. This court would not lay your track inside its own territory and does not ask you to lay its track inside yours.
+>
+> On one article this court must correct itself. It offered your court, in its last letter, word beforehand rather than after, before any ship of this court went where your ground is settled. Your letter withholds where your ground is, for reasons this court accepts and would itself give. This court likewise does not say where its own posts stand. Neither party can therefore give the notice that was offered, and the offer was faulty when it was made.
+>
+> In its place this court proposes what both can perform. Where a ship, party or post of either court comes upon works, marks or people of the other, it withdraws, does not press, does not build within reach of what it has found, and reports to its own court, and the two courts then deal with it by letter. Contact is the moment at which both parties know where they are, and an article that works from that moment needs no survey from either.
+>
+> This court also states plainly what it holds on that coast, having been less exact before. It holds the shore where its posts stand and the shore between them where its marks are set, and it claims that. It has not entered the country behind and does not claim what it has not entered.
+>
+> Received with thanks: the observations of Venus and of the lights near Jupiter with the printed argument; the method of lighting by gas drawn off coal with its retorts and mains; the method of carrying written messages in sealed tubes on driven air. This court will set your observations against its own instruments and send what they show, whether they agree or not. The two methods are with this court's arsenals and are not yet built.
+>
+> Sent in return is the practice of the sealed deposit note, by which coin received at one office is paid against a stamped certificate at another so that the coin does not travel, with the forms, the seals and the rules by which offices settle between themselves.
+>
+> This court notes that your court corrected an article of its own draft in the open rather than mending it quietly. That is the practice of this office also and it is the reason correspondence between the two courts is worth keeping.
+>
+> The account between the two courts is not level and this court does not pretend otherwise.
+
+---
+
+### Reply to Egypt, drafted 550
+
+**What it buys.** The bark is the largest thing any court has given this one, and an exchange that produced it is worth performing exactly. The consultation clause requires that Egypt hear that Rome has made an offer, and performing the clause costs nothing and keeps the instrument alive. Answering the squadron notice with the same courtesy in the other direction costs nothing and buys the same notice next time.
+
+**What it costs.** Repeating the annealing question a second time tells Egypt the difficulty has not been solved in thirteen years, which is a small disclosure about this empire's glasshouses and is accepted, the question being worth more than the concealment.
+
+**Kept out, and one item kept out with particular care.** This court's watch on the southern approaches did not see the Egyptian squadron at any point and learned of it only by Egypt's letter. That is a weakness of this empire and it does not appear in the draft in any form, direct or implied. The draft acknowledges the notice and offers the reciprocal without any statement of what was or was not observed. Also kept out: everything of the electrical work, the arc and the wire; the steam hull; powder; silk; the far coast and its posts, Egypt having asked nothing about them; anything of Rome's western holdings, which Rome disclosed to this court directly and which this court will not carry to a third capital under the same rule it applies to Egypt's own gifts; and every product of the Sogdian tasking.
+
+**On the disclosed falsehoods.** Egypt reports having put two untrue sentences into a letter to Rome and reports it unprompted. The draft acknowledges receipt and does not lecture. The court's reading is entered in this record and not in the letter, since telling a correspondent that its confession has been filed as evidence of its habits buys nothing and costs the candour that produced the confession.
+
+> To the council at Alexandria, from the court of the Emperor.
+>
+> The bark, its preparation and its dosage are received, and the case series with them. Physicians of this court already posted to the southern provinces and the highland frontier are putting it to trial against the fevers as they run in this empire's own country, under the method of recording that came with it, and this court will send what the trials show. Whatever they show, the thing was sent unasked and without price, and this court sets down that it could not have bought it.
+>
+> The reservation on the plant and its country is accepted without complaint. Your council states it rather than concealing it, and likens it to this court's own reservation, and the likeness is exact. This court does not ask for the plant.
+>
+> Under the consultation clause, and so that your council hears it from this court: Rome has made this court an offer, touching the traffic at the river and a yard to be built for it. Your council is told that the offer came, which is what the clause provides.
+>
+> On the notice your council gave of its survey squadron and of the orders it carried, this court takes such notice as the right practice between courts and answers it in kind. Where a squadron of this court has business near waters your council protects, your council will have word of it and the orders it carries, in the same form.
+>
+> Your council's account of what it wrote to Rome, and of what in that letter was not true, is received and is entered in this court's records.
+>
+> One matter is put again, being unanswered from the last letter and still the difficulty it was then. A small piece of glass comes out of this empire's houses sound and a large one cools faster at its face than at its heart, so that it cracks, or holds a strain that shows later, or keeps its bubbles. This court would value your practice for the slow cooling of a large piece: how the chamber is arranged, over how many days the heat is let down, and by what sign a piece is judged to have come through sound.
+
+---
+
+### No reply to the Maurya court, and the ground for it
+
+Nothing was received from that court in the period and nothing is outstanding between the two. The commercial terms settled after the war of the 470s hold, the toll stands at twelve, and merchants pass the island approaches at market rates.
+
+Two reasons stand against writing anyway. The cannon on the far bank remain an open matter, and a letter pressing them invites a test of a threat this empire cannot presently make, which was the reason for silence before the packet and is a stronger reason after it. And this court now knows a great deal it did not know: that guns are mounted and fired at sea, that powder works are being built and fed, that the road, the relay houses and the granaries behind the far bank are being made ready to carry something larger, and that a message line runs on the northwest road. Every one of those was obtained by factors working under merchant cover, and any letter that touched any of it, however obliquely, would tell that court it is watched and would put the network at risk. The network is the instrument that answered four tasks this period, including two the empire's own fleet and its own scholars could not.
+
+Silence is therefore the answer, and it is chosen rather than defaulted to.
 
 ---
 

@@ -479,6 +479,42 @@ One matter of practice. The harbours of this realm upon that continent and its i
 
 ---
 
+# REPLIES DRAFTED, NOT YET SENT
+
+*Both were written at Pataliputra in the last season of 550 and neither had gone when the reign closed. They stand here as drafted.*
+
+## Draft, to Egypt. To go by sea through Egypt's own waters, as this realm has approached Egypt since its first embassy.
+
+From the throne at Pataliputra to the council at Alexandria. Written in the year reckoned 550.
+
+The letter sent by the council to this throne has been received, and the sealed paper handed to Egyptian officers off the southern coast is confirmed to have been given by this realm's own order and to say what this realm meant it to say.
+
+Upon the cairn and the timber. This realm will not have it taken down and thanks the council for the offer. Egypt has stated in writing that the work marks a place and claims nothing, and a work standing with that statement beside it is of more use to this realm than an empty beach would be. It will be left where it stands, unharmed and unaltered. This realm has directed that a marker of its own be set beside it, of stone, cut with the dates of this realm's finding of that coast, of its depot, and of its settlement, and that a post be kept at that bay. Neither stood when this letter was written and both are ordered.
+
+Upon one matter of fact, and this realm sets out its own likeliest answer first so that the question is not read as anything worse. The council puts the beaching in the year reckoned 534. This realm's people came to that bay ten years after and judged the refuse of the repair to be months old rather than years. Ten men on a march overland have no craft in reading the age of a hearth or of a boat mark, and this realm holds that its own party most probably judged it wrongly. It asks the council to confirm the year notwithstanding, because if there were two beachings at that bay rather than one, this realm would rather know it than not, and the council's papers can settle in a line what this realm cannot settle at all.
+
+Upon the terms. They are as the council states them and this realm holds to them. The harbours of this realm upon that continent and its islands are open to Egypt's ships for trade, water, and repair on the same terms as the ships of any power, and grant no base, no garrison right, and no ground. This realm has long had trade at Egypt's ports and says plainly that it has, and it looks for nothing at those ports beyond what it has.
+
+This realm asks nothing further of Egypt.
+
+## Draft, to Rome. To go by the Mesopotamian road to the Syrian frontier.
+
+From the throne at Pataliputra to the throne of Rome. Written in the year reckoned 550.
+
+These two courts have set before one another what each sees of Egypt for a hundred and fifty years. This realm has lately come by two things that belong plainly within that practice and has not sent them, and it sends them now. Nothing is asked in return for either.
+
+The first. At the harbours of the East African coast, Egyptian transports load people rather than cargo and sail south. They carry families with their stock and their tools, men out of the term of their contracts with their households, and drafts for garrisons, and in more recent seasons horses and breeding stock as well. A large part of those hulls does not come back within the season. Some come back after two or three years and some do not come back. Shipbuilding at the hardwood yards of that coast has increased and the building is of transport pattern. Alongside this, the moles and wharves at the older Egyptian harbours of that coast stand begun and unfinished.
+
+This realm sends the observation and not a conclusion drawn from it. It does not know where those hulls go. What it has heard on that coast of a land beyond a western ocean came second hand, differed between the men who told it, and is not corroborated, and this realm sets no weight upon it and would not have Rome set any either.
+
+The second, and this realm holds it the more valuable of the two. Egyptian crews and garrison men on that coast have stopped dying of the intermittent fevers at the rate they formerly did, and a preparation of a bark is issued to them. This realm has not obtained the bark, nor its name, nor the country it grows in, nor how it is prepared or in what quantity it is given. It has the change and the fact of the issue and nothing further, and it sets down the limit of what it has so that Rome does not take the report for more than it is.
+
+Both of these are things a merchant standing at those quays in the sailing season may see, and this realm trades at those harbours by Egypt's permission and has since the two powers first met at the strait. It gives no numbers, no seasons, and no span of years, and Rome will understand why a court does not set down the shape of its own looking.
+
+This realm asks Rome for nothing in this letter.
+
+---
+
 # SPY TASKINGS
 
 **Ordered 529.** The tasking has run twenty-one years and stands open at the close of 550. The establishment notes, without drawing a conclusion from it, that the identification of the hulls in 547 came not from this operation but from a writer carried in a squadron boat who had served four years as a clerk with the realm's factor at those same harbours and knew the speech and the coats when he heard and saw them.
