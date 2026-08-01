@@ -414,9 +414,11 @@ The intelligence directorate holds that a watch kept twenty-five years with a nu
 
 The confrontation planners hold that a power which keeps that watch and then ships heavy pieces west for works its own clerks say are laid for ships and not for islanders is acting on a belief it has not troubled to write down, and that absence from documents shows only that the belief has not yet needed one.
 
-The council does not resolve it and records the split. It refuses the comfortable reading of the null, as it refused the reassuring reading of the Roman balloon in the last turn: a null reported by the watched party's own men, which happens to flatter Egypt, is the weakest class in the packet and is not proof that nothing was seen.
+The council recorded the split unresolved, and the Roman letter at INCOMING has since closed it. Rome states that it knows Egypt is in the western ocean, and states how. Both offices are answered together at Item 26, and the closing is entered there rather than argued here. What stands in this item is the record of what the council held before it was told, and the standing instruction below is superseded by Item 26.
 
-**Why the null is probably real all the same, and what follows operationally.** The watch sits on the Canaries and Madeira, which is the door a Mediterranean power would use. Egypt's crossing departs the West African depots at the Senegal and Cape Verde latitude on the trade winds, twelve to fourteen degrees of latitude to the south of it, and a watch with glasses and a balloon on high ground sees tens of miles and not hundreds. Rome is watching the route it would sail itself. Standing instruction: the crossing departure stays where it is, no westbound traffic is routed within sight of the northern islands, and the Moroccan and Saharan coastal traffic of the last turn's build-out is to be reviewed against the watch's arc before the next sailing season, since that shore is the one part of the Egyptian position that lies under it.
+The split as it was put: It refuses the comfortable reading of the null, as it refused the reassuring reading of the Roman balloon in the last turn: a null reported by the watched party's own men, which happens to flatter Egypt, is the weakest class in the packet and is not proof that nothing was seen.
+
+**Why the null was probably real, which was correct and turned out not to matter.** The watch sits on the Canaries and Madeira, which is the door a Mediterranean power would use. Egypt's crossing departs the West African depots at the Senegal and Cape Verde latitude on the trade winds, twelve to fourteen degrees of latitude to the south of it, and a watch with glasses and a balloon on high ground sees tens of miles and not hundreds. Rome is watching the route it would sail itself. Standing instruction: the crossing departure stays where it is, no westbound traffic is routed within sight of the northern islands, and the Moroccan and Saharan coastal traffic of the last turn's build-out is to be reviewed against the watch's arc before the next sailing season, since that shore is the one part of the Egyptian position that lies under it.
 
 **Rome's questions in the caravan trade.** From 548 the Roman gold-buying houses of the African provinces began asking the Berber factors where the interior routes run, what they carry and whether the volume has changed in two generations. Two returns, thin, treated as a floor. It is logged for the confrontation planners against the trans-Saharan corridor and no action is taken on two returns.
 
@@ -458,7 +460,7 @@ The council sets down the limit of its own understanding before anything else. E
 
 ---
 
-## Item 26. The replies to the packet, and two decisions to send nothing
+## Item 25. The replies to the packet, and two decisions to send nothing
 
 One letter is drafted. Two correspondents get nothing, and both are decisions taken rather than matters left undone.
 
@@ -488,7 +490,65 @@ The council states plainly that it is not obliged to correct its own falsehood a
 
 ---
 
-## Item 25. Treasury note
+## Item 26. The Roman reply, and how Rome learned what the compartments were built to hide
+
+Rome answered the note at Item 3, through the formal channel, in the first Roman approach to this court in twenty-five years. It granted what was asked, gave notice of no passage and stated that the survey of the last generation was the last Roman voyage south of the Mauritanian line and that none is intended, and it set out the bound of its own undertaking so that its ordinary Iberian, Moroccan and Canary traffic would not be read as a breach of a thing it had not promised. That is careful practice and the council enters it as the third instance of Roman professionalism it has logged, after the 524 reconnaissance and the 550 letter's precision.
+
+**The split at Item 22 is closed, and both offices were wrong.** The intelligence directorate held that Rome had an open question and suspected without knowing. It was wrong: Rome knows. The confrontation planners held that Rome was acting on a belief it had not written down, and were right in the conclusion and wrong in the mechanism, having attributed it to the watch on the northern islands and to the heavy pieces going west. Neither office proposed the mechanism Rome actually used.
+
+**The mechanism, and it is the worst finding in this document.** Rome states that it learned Egypt is across the western ocean by reading what Egypt publishes. Egypt has recruited settlers publicly at Alexandria and the Delta ports in every sailing season for twenty-five years, on published terms: land surveyed and registered at the destination, fifteen years' exemption from the land tax, subsidised passage for a family with its stock and tools, and works built in advance of arrival. Those are the terms of the Madagascar instrument at Item 5, correctly quoted back at this council out of its own recruiting notices. Rome adds that the transports sail west and do not enter the canal, which any clerk in a harbour Egypt permits Rome to sit in can see for himself.
+
+Every particular of that is firm, because Egypt can check it against its own instrument and it matches. Rome's further statement that it learned by that route and by nothing else is Rome's word, is not verifiable, and is not to be treated as exhausting Roman collection.
+
+**What this does to the rest of the paper.** The Atlantic secret was not lost to the 524 reconnaissance, to the balloon that Egypt assumed had caught a westerly heading, or to any failure of the compartments. It was published, by this state, continuously, for a generation, in the ordinary business of filling ships. The operational instruction at Item 22, that the crossing departure stays at the southern latitude and no westbound traffic passes within sight of the northern islands, was correct in itself and protected a thing that had not been concealed since 526. The Canaries watch was a null because it was irrelevant, not because Egypt was careful.
+
+**Which offices, and what failed.** The settlement office wrote and published the terms, and was right to, because 540,000 people do not board ships on a secret. The intelligence directorate ran the compartments against disclosure by inference and, at Item 25, issued a standing instruction that Egypt is not to ask questions that measure it. Neither office read the other's papers. The failure is that no one in this state was charged with reading what Egypt itself published against what Egypt was concealing, and the council did not create such a charge because it did not occur to it that the two could touch.
+
+**Standing instruction, and the one at Item 25 is superseded as too narrow.** A standing officer of the directorate is charged with reading everything this state publishes, posts, proclaims or has recited by a recruiter, against the current compartment list, and with reporting to the council anything in the open record that discloses a compartmented matter. The instruction at Item 25, that Egypt does not ask questions that measure it, stands as a special case of it. The general rule is that Egypt is measured more often by what it announces than by what it asks.
+
+**The proposal, and the council does not answer it here.** Rome proposes the same arrangement in the western ocean, in Egypt's own terms and words: notice before passage, and vessels with no business standing clear of the other's harbours, works and stations. It observes that both governments now have people and ships in that ocean and that neither has told the other where, and that an arrangement made before there is anything to dispute costs less than one made after. It asks for no extent, no route and no disposition, and offers none, requiring neither government to say where it is but only when it is coming.
+
+The council will not answer it in this record and enters what each answer costs.
+
+Accepting concedes in writing, to the one court it least wishes to concede it to, that Egypt is in the western ocean. Egypt has never stated that to any power. It also creates a standing bilateral arrangement with Rome, which touches the two-front premise from the other side, since a partner who is told of Egypt's dealings with Rome under a consultation clause will now have a continuing one to be told of. And notice before passage, given season after season, discloses tempo, and tempo discloses a great deal that no single figure would.
+
+Refusing costs at least as much. A refusal must either deny that Egypt is there, which is another checkable falsehood offered to the court that has just caught the last one and would fail in the same way and for the same reason, or decline the mechanism while leaving the claim standing, which puts Egypt in the wrong at the first armed meeting in that ocean and makes that meeting likelier. The proposal is also the first thing Rome has ever offered this court, and refusing a first offer that costs nothing to grant is a thing courts remember.
+
+The matter is entered live for the next turn. Nothing in this record is to be read as an answer to it, and no Egyptian officer is to indicate one.
+
+---
+
+## Item 27. The Chinese reply, a crossing, and the first return the consultation clause has paid
+
+The letter crossed with Egypt's own and neither court could have known. Where it puts the glasshouse request again as unanswered, Egypt had granted it in full in the letter sent earlier this period, which that court had not seen. That is crossing and is recorded as crossing. Nothing is owed twice and nothing further is sent on it.
+
+**What is closed.** The bark, its preparation, its dosage and the case series arrived and are in trial under the recording method that went with them, against the fevers as they run in that country, and the trials are to be sent back. The reservation on the plant and its country is accepted without complaint, is likened by that court to its own reservation on the making of silk, and the plant is not asked for. Item 19 entered the risk that the narrowing would in time be detected and priced. It was detected at once, stated plainly, and not priced against Egypt. That risk is closed.
+
+**What is new, and it is the largest thing in the letter.** Rome has made that court an offer, touching the traffic at a river and a yard to be built for it. That is all the particular there is and it is treated as a floor. The council's whole architecture has been built against Rome and India acting together, and it has never modelled Rome and China acting together at all, on the assumption that distance and China's own southern business kept the two apart. That assumption is not overturned by an offer, an offer being a thing made and not a thing accepted, and the council does not now treat the case as live. It records that the case exists, which it did not know an hour before the letter, and directs the confrontation planners to carry it as a third case alongside the sequential single front and the coordinated two.
+
+**What it says about the channel.** The clause was granted in the last generation and has produced nothing until now. It has now produced, unprompted and at no price, the single fact in this packet that Egypt could not have got by any operation it runs. Set against the finding at INCOMING that the traffic between the two courts runs one way, the account looks different: Egypt has been giving craft and receiving institutional practice, and has now received intelligence of a kind its own service in Roman ports did not obtain. The council directs that the cost of keeping this channel in credit be weighed at the next turn against what it has now been shown to return, and that the weighing start from the assumption that the channel is underfunded rather than over.
+
+**A reciprocal undertaking, given unasked.** That court will give Egypt word of its own squadrons where they have business near waters Egypt protects, and of the orders they carry, in the same form Egypt used. Item 24 recorded that disclosing the squadron's standing orders was a compartment exception the council authorised by name, on the ground that an order of restraint is worth nothing unless the other party knows it. That judgement is vindicated within the same period and the item is right as it stands.
+
+---
+
+## Item 28. The Indian reply, the marker, and a discrepancy in Egypt's own record
+
+**What is closed.** Egypt's letter is received. The sealed paper handed off the southern coast is confirmed as given by that realm's own order and as saying what it was meant to say, which closes any question whether the officers at sea spoke for their throne. The terms are confirmed from the other side and that realm holds to them, states plainly that it has long had trade at Egypt's ports, and looks for nothing there beyond what it has. It asks nothing further.
+
+**The cairn, and what Egypt's disclosure actually bought.** That realm will not have the marker taken down and thanks the council for the offer. Its reasoning is set out and the council enters it without softening: because Egypt stated in writing that the work marks a place and claims nothing, a work standing with that statement beside it is of more use to that realm than an empty beach would be. A marker of that realm's own will be set beside it, in stone, cut with the dates of its finding of that coast, of its depot, and of its settlement.
+
+The disclosure worked and did what Item 11 sent it to do, which was to remove the one nameable friction with that court. What it also did is convert an Egyptian survey cairn into the caption on an Indian monument to Indian priority, standing on that beach for as long as the stone lasts, with Egypt's own written disclaimer as the reason it is permitted to remain. The council records that this is a fair outcome, that it would make the same disclosure again, and that it did not foresee this use of it.
+
+**The discrepancy, and the council does not answer it yet.** That realm's record of that bay does not agree with the year 534. It puts its own likeliest answer first, that its record is at fault rather than Egypt's, and asks Egypt to confirm the year notwithstanding, because if there were two beachings at that bay rather than one it would rather know than not.
+
+Item 11 states there was one landing, on the squadron returns. The council will not confirm a year to a foreign court on the strength of a summary in its own working paper. Three cases are open. The Indian record is at fault, which that realm holds likeliest and which may well be so. Egypt's year is at fault, which is a clerical matter and is correctable. Or there were two beachings and this state's returns record one, which would mean an Egyptian party went ashore on a claimed coast and it did not reach the council, and would mean further that Egypt has told two foreign courts in writing that there was exactly one landing when there was not.
+
+The third case is why nothing is confirmed here. The directorate and the naval yard directorate are jointly charged with re-examining the whole of the southern squadron's returns and every hull's log across 528 to 549, against the year and against the bay, and with reporting to the council before any answer goes. The finding is to be reported whichever way it falls, and if it falls the third way the council will say so to that realm in terms, the alternative being to leave a written falsehood standing with a court that asked the question courteously and gave Egypt the innocent reading first.
+
+---
+
+## Item 29. Treasury note
 
 Committed this turn: the Enterprise on the Madagascar instrument with 340 hulls in the passage trade, the Caribbean advance, the Amazon ascent and the highland entry, the fever-bark plantations, the southern passage station and the Pacific coast posts and works, the southern-landmass survey expedition, the bed expansion, the arc-nitrogen programme, the yard programme, the airframe works, the radar fit and the network extensions, the two stud establishments, the register office, and the standing research slate.
 
@@ -531,6 +591,35 @@ What it states, and what it asks:
 - The fever and disease body Egypt opened is in use. Sixty physicians trained on it are posted to the southern provinces and the highland frontier, and a record is kept of which remedy answers which fever and in what quantity. Egypt's quarantine practice for closing a port against a sickness on a trade road was applied and widened in 534 to every ship returning from a long voyage, including China's own northern and eastern squadrons. Reported, China's word, and consistent throughout.
 - Three things asked. Egyptian physicians in residence for a term of years at the southern stations rather than at the capital only. Egypt's practice for keeping a ship's company in health on a voyage of many months, in water, provisions and the sickness of the gums. And the glasshouse practice for the slow cooling of a large piece, the chamber, the days over which the heat is let down, and the sign by which a piece is judged sound.
 - China states that it has nothing of equal weight to set against what it asks, that it has looked at what has passed each way and does not pretend the account is level, and that it asks anyway on the strength of the exchange.
+
+**Second delivery, arriving in or after 550. Three letters. No enclosure, object, drawing or person travelled with any of them.**
+
+**From the government at Rome. Drafted 550, through the formal channel.** The first Roman approach to this court in twenty-five years, and it answers the note at Item 3 point by point.
+
+- Rome has the note. Firm, Rome's own statement of receipt.
+- Rome will give notice before any Roman vessel passes along the African coast south of Rome's Mauritanian holdings, and gives notice of none. It states that the survey of the last generation was the last Roman voyage south of that line and that no further one is intended. Reported, Rome's word, and not verifiable. It agrees with the operation's firm nil, that no Roman probe was fitted out and no hull sent at that coast in twenty-five years, which is the strongest corroboration a letter in this packet gets.
+- Rome states the bound rather than leaving Egypt to find it. Roman merchant and transport shipping runs continuously between the Iberian ports, the Moroccan and Mauritanian coasts and the Canaries, in Roman waters and off Roman ground, every season, and will continue; that traffic is outside the undertaking and Rome will not give notice of it. Rome sets it down so that a Roman hull seen there is not read as a breach of an undertaking Rome did not give.
+- Roman vessels with no commercial business on that coast will keep to open water and stand clear of Egyptian harbours, works and signal stations. Granted as asked.
+- Rome proposes the same arrangement in the western ocean, in Egypt's own terms and words, saying that both governments now have people and ships in that ocean and neither has told the other where, and that an arrangement made before there is anything to dispute costs less than one made after. Live and unanswered. Item 26.
+- Rome states how it knows Egypt is in that ocean: Egypt recruits settlers publicly at Alexandria and the Delta ports every sailing season for twenty-five years, on published terms of surveyed and registered land, fifteen years' exemption from the land tax, subsidised passage for a family with stock and tools, and works built in advance of arrival; the terms are public record and had from the recruiters; and the transports sail west and do not enter the canal. Rome says it learned this by reading what Egypt publishes and by watching a harbour Egypt permits it to sit in, and by nothing else. Every particular of the terms is firm, being Egypt's own instrument at Item 5 quoted back correctly. The claim that Rome learned it by that route and no other is reported, Rome's word, and is not to be taken as exhausting Roman collection.
+- Rome does not ask the extent of Egyptian holdings, the routes or the disposition of the fleet, and does not offer its own.
+
+**From the court of the Han. Drafted 550.** Crossed with Egypt's own letters and neither court could have known.
+
+- The bark, its preparation, its dosage and the case series are received. Physicians already posted to the southern provinces and the highland frontier are putting it to trial under the recording method that came with it, and the trials will be sent. That court sets down that it could not have bought it. Firm as to receipt.
+- The reservation on the plant and its country is accepted without complaint, is likened by that court to its own reservation, and the plant is not asked for. This closes the risk entered at Item 19 that the narrowing would be detected and priced.
+- Under the consultation clause, and unprompted: Rome has made that court an offer touching the traffic at a river and a yard to be built for it. Reported, that court's word, and no particular beyond it. Treated as a floor.
+- On Egypt's notice of the survey squadron and the orders it carried, that court takes such notice as the right practice between courts and undertakes to answer in kind, so that where a squadron of its own has business near waters Egypt protects, Egypt will have word of it and of the orders it carries in the same form. A reciprocal undertaking given without being asked.
+- Egypt's account of what it wrote to Rome, and of what in that letter was untrue, is received. No comment is made on it.
+- The glasshouse request is put again as unanswered. Crossing, not delay: Egypt granted it in the letter sent earlier this period, which that court had not seen when it wrote.
+
+**From the throne at Pataliputra. Written 550, by sea through Egypt's own waters.**
+
+- Egypt's letter is received, and the sealed paper handed off the southern coast is confirmed as given by that realm's own order and as saying what that realm meant. Firm; it closes any question whether the officers at sea spoke for their throne.
+- Upon the cairn: that realm will not have it taken down and thanks Egypt for the offer. Because Egypt stated in writing that the work marks a place and claims nothing, a work standing with that statement beside it is of more use to that realm than an empty beach. It will be left unharmed and unaltered, and a marker of that realm's own will be set beside it, of stone, cut with the dates of its finding of the coast, of its depot, and of its settlement.
+- Upon the year: that realm's record of that bay does not agree with 534. It sets out its own likeliest answer first, that its record is at fault rather than Egypt's, and asks Egypt to confirm the year notwithstanding, because if there were two beachings at that bay rather than one it would rather know. Item 28.
+- Upon the terms: as Egypt states them, and that realm holds to them. It says plainly that it has long had trade at Egypt's ports and looks for nothing there beyond what it has.
+- That realm asks nothing further.
 
 ## Intelligence returns
 
@@ -657,7 +746,7 @@ Sent during the period and before the packet at INCOMING reached the council. Th
 
 # REPLIES DRAFTED AFTER THE PACKET
 
-Drafts, for review before delivery. One letter is drafted. Two correspondents get nothing, and the grounds are at Item 26.
+Drafts, for review before delivery. One letter is drafted. Two correspondents get nothing, and the grounds are at Item 25.
 
 ## To China. Drafted 550.
 
@@ -677,11 +766,11 @@ Drafts, for review before delivery. One letter is drafted. Two correspondents ge
 
 ## To Rome. Nothing sent.
 
-The council sends no reply and no correction. Grounds at Item 26.
+The council sends no reply and no correction. Grounds at Item 25.
 
 ## To India. Nothing sent.
 
-The council sends nothing further this period, the reply already sent having discharged the notice of 543 and the sealed instrument. Grounds at Item 26.
+The council sends nothing further this period, the reply already sent having discharged the notice of 543 and the sealed instrument. Grounds at Item 25.
 
 ---
 

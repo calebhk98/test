@@ -436,6 +436,27 @@ Material delivered to this court from outside is entered here and nowhere else. 
 
 *Enclosure received as stated: the preparation and dosage of the fever bark, to the twenty scholars in residence.*
 
+**3. From the council at Alexandria, drafted 550.** The discharge of the undertaking on Rome's western shore.
+
+- Egypt states it now holds the thing firmly and sends it so marked, having reported earlier in these years that it did not.
+- Marked firm by Egypt: that Rome is settling the far shore beyond the western ocean and that the settling is a programme of the Roman state rather than a venture of merchants; that from 534 the Atlantic yards of Rome build ocean-going sailing transports of six hundred tons for the western run and build nothing else in those yards; that embarkations have been counted at the Iberian quays in every season from 526 to 550; that those going out are veterans of Rome's own service with their families and their goods rather than garrisons; and that a hull makes two round voyages in three years.
+- Marked by Egypt as reported and not firm: any figure for how many have crossed, a count of those who set out being no count of those who arrived, and Egypt states it will not send a number it has not established.
+- Egypt asks nothing, sets no condition, and raises no further matter.
+
+**4. From the Senate and the Emperor of the Romans, drafted 550, supplementary to the letter already held.** By the Dnieper crossing.
+
+- Rome states that its earlier letter and this court's letter of 549 crossed on the road, that this letter is not a withdrawal of the first, and that it corrects two things in it and answers this court's.
+- Rome states that its earlier letter proposed a transshipment yard as though none existed; that the terms in it were settled in Rome in 525 and were not read again before the packet was sealed; that in the years while it lay in Rome this court built its yard and a Roman officer has been arranging consignments in it; that the terms stand as terms for the Roman bank and none are withdrawn; and that the arrangement proposed is the arrangement already working. It states that the same letter thanked this court for a clock already in Roman hands, that three papers of that court have now been found carrying a position their own files had overtaken, and that the accurate conclusion is that Rome is slow to read itself rather than slow to answer.
+- Rome states that the two pendulum clocks arrived, keep a beat more even than anything Rome has made, and are set as the standard at its observatories and against the works that keep its legal and factory time, and that it will not pretend the exchange was even.
+- Rome accepts the extension of the article on the far land, undertaking that this court will have word before any ship of Rome goes where this court's own is settled, and taking the same undertaking from this court.
+- Rome names what it holds by kind and not by position: two large islands with the lesser ground about them; a stretch of mainland coast with the inland centres standing behind it; and, named for the first time, settled country on the rivers of another coast. It states that an article of that kind cannot protect ground neither court has named, that it makes no claim to ground it does not hold, and that it asks the same naming from this court, which it says this court's letter has already given in substance.
+- Rome states it keeps what the earlier letter said it keeps and no more, adds nothing to that list, does not withdraw what it sent at about the turn of the century, and notes that this court kept its own charts, winds and latitude and said so plainly.
+- Rome states that it carries nothing to this court about any third power in this letter or the next, declines to claim that as a general practice because it is not one, states that it writes of third powers to others and has done so in the same season, and undertakes the narrower thing instead, which is that Rome says nothing of the Han to anyone, adding that this is checkable over time.
+
+*Enclosures with these two letters: none. Neither names any object, drawing or person as travelling with it.*
+
+**5. Established separately, text not held by this office.** The request put to Egypt in 537 for the practice of cooling a large piece of glass slowly was granted in full and without condition. The grant was made before this court's second asking of the same question, drafted 550, could have been read at Alexandria. The two crossed on the road, which is the ordinary working of eight thousand kilometres and not a failure of any register here. Worth entering beside the fact is the shape of the grant: it was full, it carried no condition, and it was made before there was any second asking to answer, so it was not given under pressure of any kind.
+
 ### Intelligence returns
 
 Marks as the service uses them: **firm**, the factor saw, handled, counted or heard it himself; **reported**, someone told him; **inferred in the field**, his own supposition and flagged as such.
