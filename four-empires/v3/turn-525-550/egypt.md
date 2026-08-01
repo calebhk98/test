@@ -472,6 +472,8 @@ What it costs. It tells China that Egypt's reach into Roman Atlantic ports is go
 
 The mills and the mounted pieces are withheld, and this is the harder call, so the reasoning is entered in full. Reporting them costs little on its face, standing as they do in Rome's own published law, which China can read and may already have read. Asking about them costs a great deal. A question is a measurement. A court that asks what a mounted piece is has told the party it asked that it does not have one, and Egypt's whole position rests on rivals being unable to weigh it. So they are neither reported nor asked, and the corollary is entered at Item 23: the answer is to be found in Rome, out of Rome's law and Rome's printed sheets, and not through a partner.
 
+The provenance of the report is withheld, and this was corrected in the drafting. The undertaking given in the last generation was to mark what Egypt sends and not to source it, so the confidence class is the whole of the promise. An account of where the counting was done, whether at the quayside or inside the yards, and across how many hands it was corroborated, would describe this court's establishment in Roman ports as resident, multiple, yard-side as well as quayside, and unbroken for a generation. That is a larger thing than the reach, seasonality and duration priced above, it is owed to nobody, and it would be handed to a court that has recorded of Egypt that Egyptian statements are to be weighed. The letter marks the report firm and says nothing of how it was got.
+
 Also withheld: everything on the standing list at Item 19, and every word that would let a reader place Egypt across the western ocean. The draft reports Rome and says nothing whatever of Egypt there.
 
 **To Rome, nothing sent, and the council records that it weighed saying something.** Item 3 enters the recency claim as failed and adopts the successor position that Egypt says nothing further about when or how that coast came under it. That position binds here.
@@ -667,7 +669,7 @@ Drafts, for review before delivery. One letter is drafted. Two correspondents ge
 >
 > Rome is settling the far shore beyond the western ocean, and the settling is a programme of the Roman state rather than a venture of merchants. From the year reckoned 534 the Atlantic yards of Rome build ocean-going sailing transports of six hundred tons for the western run and build nothing else in those yards. Embarkations have been counted at the Iberian quays in every season from 526 to this year. Those going out are veterans of Rome's own service with their families and their goods, and not garrisons. A hull makes two round voyages in three years.
 >
-> Egypt marks the foregoing firm. It was counted at the quay and on the slip by men who were there, across twenty-four years, and it stands in more than one hand. Egypt marks as reported, and not as firm, any figure for how many have gone across, because what Egypt counted was embarkations and not arrivals, and it will not send China a number it has not counted.
+> Egypt marks the foregoing firm. Egypt marks as reported, and not as firm, any figure for how many have gone across, a count of those who set out being no count of those who arrived, and Egypt will not send China a number it has not established.
 >
 > Egypt sends this because it undertook to send it. It asks nothing in return, sets no condition on it, and has no further matter to raise.
 >
