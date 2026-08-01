@@ -458,6 +458,34 @@ The council sets down the limit of its own understanding before anything else. E
 
 ---
 
+## Item 26. The replies to the packet, and two decisions to send nothing
+
+One letter is drafted. Two correspondents get nothing, and both are decisions taken rather than matters left undone.
+
+**To China, and what it discharges.** Egypt undertook to send firm intelligence of Rome's western shore when it held it firmly and marked as such. Until this packet it did not, and the letter sent earlier in the period said so in terms. The returns now give it: transports of one size built for the western run in five named yards and nothing else built in them, embarkations counted at the quay every season across twenty-four years, veterans with families and goods rather than garrisons, two round voyages in three years to a hull. That is the promised thing and it goes.
+
+What it buys. An undertaking discharged in the form it was given, marked firm where firm and reported where not, which is the form Egypt asked to be believed in when it conceded an overclaim to this court in the last generation. Against the finding at INCOMING that the traffic between the two courts runs one way, this is something Egypt can give that costs it no craft and no compartment, and the council notes that a partner permanently in surplus should look for such things.
+
+What it costs. It tells China that Egypt's reach into Roman Atlantic ports is good enough to count embarkations by season across twenty-four years, which raises China's estimate of Egyptian collection. The cost is accepted, the alternative being to send a report so vague that it discharges nothing.
+
+**What is withheld from that letter, and why.** The watch on the northern islands is withheld. A watch whose standing order is to count large hulls passing north and west implies a party expected to pass north and west, and the next question any reader asks is whose. Reporting it would put Egypt in the western ocean by inference in a letter that names Egypt nowhere.
+
+The mills and the mounted pieces are withheld, and this is the harder call, so the reasoning is entered in full. Reporting them costs little on its face, standing as they do in Rome's own published law, which China can read and may already have read. Asking about them costs a great deal. A question is a measurement. A court that asks what a mounted piece is has told the party it asked that it does not have one, and Egypt's whole position rests on rivals being unable to weigh it. So they are neither reported nor asked, and the corollary is entered at Item 23: the answer is to be found in Rome, out of Rome's law and Rome's printed sheets, and not through a partner.
+
+Also withheld: everything on the standing list at Item 19, and every word that would let a reader place Egypt across the western ocean. The draft reports Rome and says nothing whatever of Egypt there.
+
+**To Rome, nothing sent, and the council records that it weighed saying something.** Item 3 enters the recency claim as failed and adopts the successor position that Egypt says nothing further about when or how that coast came under it. That position binds here.
+
+Four grounds. Rome already holds, on its returned crews and its own quaysides, that the coast has Egyptian masters and that the old account was given deliberately; a correction would move that from a belief Rome holds to a document Rome possesses in Egypt's own hand, which is worse. Any approach invites the question of the five vessels, which Egypt cannot answer truthfully and cannot lie about again to a court that has just caught the last one. Rome has made no approach in twenty-five years, and Egypt approaching now, hard on its own note, reads as a court that is worried. And there are no words available that lower the grievance without conceding the act.
+
+The council states plainly that it is not obliged to correct its own falsehood and not obliged to maintain it, and that it does neither. It stops. What that costs is entered rather than argued away: the grievance stays where it is at its full weight, and it is the raw material of the coordination between Rome and India that this state fears above everything. The council accepts the cost because it can find no sentence that reduces it.
+
+**To India, nothing further sent.** The reply already sent this period answered the notice of 543 and the sealed instrument, volunteered the beaching of 534 and the cairn unasked, and disclaimed any claim to ground. India said in terms that no answer was expected and none was required. Beyond that, every remaining subject between the two courts runs through the Atlantic and the five vessels, which Egypt raises with no one, and least of all with the court it rates 2 on trust and assumes carries what it learns to Rome.
+
+**Standing instruction, generalising an error this court has made before.** No letter from this court to any power is to name a want of Egypt's own, and no request is to be made abroad in any domain where the request would disclose the want. The instruction of 525, that the drafting office check where Egypt already leads before asking, was the narrow form of this. The broad form is that Egypt does not ask questions that measure it.
+
+---
+
 ## Item 25. Treasury note
 
 Committed this turn: the Enterprise on the Madagascar instrument with 340 hulls in the passage trade, the Caribbean advance, the Amazon ascent and the highland entry, the fever-bark plantations, the southern passage station and the Pacific coast posts and works, the southern-landmass survey expedition, the bed expansion, the arc-nitrogen programme, the yard programme, the airframe works, the radar fit and the network extensions, the two stud establishments, the register office, and the standing research slate.
@@ -559,6 +587,8 @@ Nothing else was handed to or by Egypt in person anywhere in the period.
 
 # MESSAGES OUT
 
+Sent during the period and before the packet at INCOMING reached the council. The replies drafted after it are in the section below.
+
 ## To Rome
 
 > From the council at Alexandria to the government at Rome.
@@ -620,6 +650,36 @@ Nothing else was handed to or by Egypt in person anywhere in the period.
 > Egypt sets down the orders it carried, since orders of this kind are worth nothing to either party if the other does not know them. It was to make no landing where there were works, vessels or people; to attempt no contact; to signal and hold position without closing on anything it did not expect; and to fire only if fired upon. Those orders were kept. It made one landing, to repair a hull damaged on a reef, on an empty stretch of shore where there were none of those things, and it claimed no ground.
 >
 > Alexandria.
+
+---
+
+# REPLIES DRAFTED AFTER THE PACKET
+
+Drafts, for review before delivery. One letter is drafted. Two correspondents get nothing, and the grounds are at Item 26.
+
+## To China. Drafted 550.
+
+> From the council at Alexandria to the court of the Emperor.
+>
+> Egypt writes on one matter, and it is the discharge of a thing promised.
+>
+> Egypt undertook to send firm intelligence of Rome's western shore when it held it firmly rather than by rumour, and marked as such. In the letter Egypt sent earlier in these years it reported that it did not hold it firmly, that what it had remained a crossing made and cargoes brought back, and that anything further would be inference. Egypt now holds it firmly and sends it, so marked.
+>
+> Rome is settling the far shore beyond the western ocean, and the settling is a programme of the Roman state rather than a venture of merchants. From the year reckoned 534 the Atlantic yards of Rome build ocean-going sailing transports of six hundred tons for the western run and build nothing else in those yards. Embarkations have been counted at the Iberian quays in every season from 526 to this year. Those going out are veterans of Rome's own service with their families and their goods, and not garrisons. A hull makes two round voyages in three years.
+>
+> Egypt marks the foregoing firm. It was counted at the quay and on the slip by men who were there, across twenty-four years, and it stands in more than one hand. Egypt marks as reported, and not as firm, any figure for how many have gone across, because what Egypt counted was embarkations and not arrivals, and it will not send China a number it has not counted.
+>
+> Egypt sends this because it undertook to send it. It asks nothing in return, sets no condition on it, and has no further matter to raise.
+>
+> Alexandria.
+
+## To Rome. Nothing sent.
+
+The council sends no reply and no correction. Grounds at Item 26.
+
+## To India. Nothing sent.
+
+The council sends nothing further this period, the reply already sent having discharged the notice of 543 and the sealed instrument. Grounds at Item 26.
 
 ---
 
