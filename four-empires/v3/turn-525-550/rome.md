@@ -467,7 +467,7 @@ Rome does not send this as intelligence traded for intelligence. It is sent beca
 
 5. Rome asks one thing, and asks it knowing which of the two courts is in debt. The volume states that its figures of range and of rate were got with your own powder from your own plains at your own proportions, and that a different powder moves both. That is exact. Rome's powder is not yours and the tables had to be got again. Rome asks for a measured quantity of your powder, enough to fire and weigh against Roman powder, so that Rome may know the size of a difference it can presently only name.
 
-Rome sends none of its own in return, and says so rather than letting it be noticed. Rome's powder is made by a method that is the whole of Rome's supply, and a sample of it put in front of good men would give that method away. If your court holds the exchange unequal, it is unequal, and Rome will not pretend otherwise.
+Rome sends none of its own in return, and says so rather than letting it be noticed. If your court holds the exchange unequal, it is unequal, and Rome will not pretend otherwise.
 
 6. One correction of the Roman record. For a century Rome complained that the Mesopotamian road lost cargo and that your court reported otherwise. Rome's factors on that road now report that it carries roughly twice the waystations it did a generation ago and that mounted patrols work the long runs between them, and that the building was done in their own time. Whatever was said at the time, the road was mended. Rome had not acknowledged it and does so here.
 
@@ -485,11 +485,11 @@ From the Senate and the Emperor of the Romans to the Emperor of the Han and his 
 
 4. On the far land, Rome accepts the extension of the article. Rome asked for that transparency when the agreements were settled and will not refuse it when it is offered back. Rome undertakes that your court will have word from Rome before any ship of Rome goes where your own is settled, and Rome takes the same undertaking from yours as it is given.
 
-Rome names what it holds, by kind and not by position, as it did in the letter that crossed. Rome holds two large islands and the lesser ground about them; a stretch of mainland coast with the inland centres standing behind it, which Rome has taken; and settled country on rivers of a coast further north. Rome makes no claim to any ground it does not hold, and Rome asks the same naming from your court, which your letter has already given in substance.
+Rome names what it holds, by kind and not by position. Two of the three were named in the letter that crossed: two large islands with the lesser ground about them, and a stretch of mainland coast with the inland centres standing behind it, which Rome has taken. The third was not named there and is named here for the first time, since an article of the kind Rome is accepting cannot protect ground that neither court has named: settled country on the rivers of another coast. Rome makes no claim to any ground it does not hold, and Rome asks the same naming from your court, which your letter has already given in substance.
 
-5. Rome keeps what it kept before: no latitude, no departure point, no passage time, no wind, no soundings, no chart, no survey, no position of any station or holding, and nothing of their strength. Rome also keeps the method by which a Roman ship fixes its place at sea, and does not describe it. Your court has kept the same things in the same terms and said so plainly rather than let it be found out. Rome takes that as it was meant.
+5. Rome keeps what the letter that crossed said it keeps, and no more than that: no soundings, no charts, no surveys of any western coast or harbour, no fixed position of any Roman station, garrison or holding, and nothing of their strength or defensive state. Rome also keeps the method by which a Roman ship fixes its place at sea, and does not describe it. Rome does not add to that list here. What Rome sent at about the turn of the century it has twice said it does not withdraw, and it does not withdraw it in this article either. Your court has kept its own charts, its winds and its latitude and said so plainly rather than let it be found out, and Rome takes that as it was meant.
 
-6. One thing is not in this letter and Rome would rather name the absence than have it read as an oversight. Rome does not carry to one court what it knows of another. Nothing of what Rome knows or believes about any third power is in this letter or will be in the next. Your court should weigh that as an undertaking about what Rome says of the Han elsewhere, which is nothing.
+6. One thing is not in this letter and Rome would rather name the absence than have it read as an oversight. Rome carries nothing to your court about any third power, in this letter or the next, and Rome will not claim that as a general practice, because it is not one. Rome writes of third powers to others and has done so in the same season as this letter. What Rome undertakes is narrower and is the part that concerns your court: Rome says nothing of the Han to anyone. That is checkable over time and Rome would rather be held to a small undertaking it keeps than credited with a large one it does not.
 
 ### C. To the council at Alexandria. Drafted 550. Through the formal channel.
 
@@ -497,7 +497,9 @@ From the government at Rome to the council at Alexandria.
 
 1. Rome has the council's note.
 
-2. Rome will give notice before any Roman vessel passes along the Atlantic coast of Africa. Rome gives notice now of none, having none to send there. The survey of the last generation was the last Roman voyage on that coast and no further one is intended.
+2. Rome will give notice before any Roman vessel passes along the African coast south of Rome's own Mauritanian holdings, which is the stretch the council's note concerns. Rome gives notice of none. The survey of the last generation was the last Roman voyage south of that line and no further one is intended.
+
+Rome states the bound rather than leaving the council to find it. Roman merchant and transport shipping runs continuously between the Iberian ports, the Moroccan and Mauritanian coasts, and the Canary Islands, in Roman waters and off Roman ground, in numbers, every sailing season, and it will go on doing so. That traffic is not within this undertaking and Rome will not be giving notice of it. Rome sets this down so that a Roman hull seen in that water is not read as a breach of an undertaking Rome did not give.
 
 3. Roman vessels having no commercial business on that coast will keep to open water and stand clear of Egyptian harbours, works and signal stations, as the council asks.
 

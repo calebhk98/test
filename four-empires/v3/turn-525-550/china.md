@@ -557,6 +557,8 @@ The price of narrowing is real and is entered here rather than glossed. It gives
 
 **Kept out, and one item kept out with particular care.** This court's watch on the southern approaches did not see the Egyptian squadron at any point and learned of it only by Egypt's letter. That is a weakness of this empire and it does not appear in the draft in any form, direct or implied. The draft acknowledges the notice and offers the reciprocal without any statement of what was or was not observed. Also kept out: everything of the electrical work, the arc and the wire; the steam hull; powder; silk; the far coast and its posts, Egypt having asked nothing about them; anything of Rome's western holdings, which Rome disclosed to this court directly and which this court will not carry to a third capital under the same rule it applies to Egypt's own gifts; and every product of the Sogdian tasking.
 
+**One concession, priced.** The draft says of the bark that this court could not have bought it. That concedes in writing a dependence this record elsewhere calls a hold Egypt has on any southern movement the bark would make possible, and a concession made in writing can be quoted back. The sentence is kept. Egypt asserted the same thing first and unprompted, stating that it understands what country lies below this empire's southern frontier and what has kept the empire out of it for four centuries, so the increment given away is small and the thing conceded is already known to the party that matters. What the sentence buys is the standing of a court that says plainly what it has received, which is the standing on which the whole exchange has run and the reason the bark came unasked. What it costs is that the dependence is now on the record in this court's own hand, and finding the plant is entered above as work to be done rather than left as a wish.
+
 **On the disclosed falsehoods.** Egypt reports having put two untrue sentences into a letter to Rome and reports it unprompted. The draft acknowledges receipt and does not lecture. The court's reading is entered in this record and not in the letter, since telling a correspondent that its confession has been filed as evidence of its habits buys nothing and costs the candour that produced the confession.
 
 > To the council at Alexandria, from the court of the Emperor.
@@ -569,7 +571,7 @@ The price of narrowing is real and is entered here rather than glossed. It gives
 >
 > On the notice your council gave of its survey squadron and of the orders it carried, this court takes such notice as the right practice between courts and answers it in kind. Where a squadron of this court has business near waters your council protects, your council will have word of it and the orders it carries, in the same form.
 >
-> Your council's account of what it wrote to Rome, and of what in that letter was not true, is received and is entered in this court's records.
+> Your council's account of what it wrote to Rome, and of what in that letter was not true, is received.
 >
 > One matter is put again, being unanswered from the last letter and still the difficulty it was then. A small piece of glass comes out of this empire's houses sound and a large one cools faster at its face than at its heart, so that it cracks, or holds a strain that shows later, or keeps its bubbles. This court would value your practice for the slow cooling of a large piece: how the chamber is arranged, over how many days the heat is let down, and by what sign a piece is judged to have come through sound.
 
