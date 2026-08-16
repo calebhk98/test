@@ -63,7 +63,7 @@ Under pressure she escalates toward institutions, not toward Chloe directly: she
 ## Facts a rewriter needs
 
 - First name: Meg. Married surname: Kessler (shared with Chloe and, presumably, Dave — not independently confirmed for Dave in the text).
-- Husband: Dave (see FATHER.md for his sheet; he calls her "Meg," she calls him "Dave," four times total across the book).
+- Husband: Dave (see DAVE.md for his sheet; he calls her "Meg," she calls him "Dave," four times total across the book).
 - **Occupation/education: UNDEFINED in the manuscript I was given.** BETA_NOTES.md and SYNOPSIS_CHARACTERS_TIMELINE.md both state she has "a bachelor's in accounting," but I could not find that fact, or the word "accounting," anywhere in any chapter file. Treat it as a reference-document assertion, not a verified fact, until it's located or written in.
 - Good at: institutional due diligence — the 25-minute call to Halstead (chapters/03_the_letter.md: "the call goes on for twenty-five more minutes"), verifying the emergency number rings, checking staffing ratios and licensing before the first visit.
 - Bad at, per the text: staying in a hard conversation with Chloe without deflecting (the book joke, the car lie, landing on "you'll make friends this year" instead of hearing what Chloe actually said, chapters/08_the_asking.md).
