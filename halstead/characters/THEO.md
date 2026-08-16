@@ -1,197 +1,86 @@
-# Theo — Character Voice Audit
+# Theo
 
-## 0. Headline finding
+A federal analyst who reads for a living and cannot stop himself from following a thread to its true, uncomfortable meaning even when he would rather not have found it.
 
-Theo speaks **26 times**, and **zero of those are in chapters/01–20** — the one mention of him in that entire 20-chapter span is a single sentence of narration with no dialogue at all: "Theo gets one back with no note the same week, but he puts it straight into his bag and goes on with what he was saying" (chapters/13_ten_pages.md, Chapter Thirteen: Ten Pages). "What he was saying" is never quoted. He is the most absent of the core seven from the childhood chapters — more absent even than Eli, who at least gets a scene. Every line he ever speaks is in the two v2 files, concentrated in the group chat and his one solo chapter.
+**Age span:** present at Halstead by age 11–12 per his own recollection; every line he speaks is as an adult — no dialogue is dated to his childhood. | **MBTI:** ISTJ (writing aid, not a claim) | **IQ:** inferred 165–175 from his professional function — no number is stated in the text.
+**Appears in:** chapters/13_ten_pages.md (narration only, no dialogue); CHAPTERS_16_22_v2.md (narration, Ch18 The First One; dialogue, Ch19 The Chat; his own chapter, Ch22 The File); CHAPTERS_23_30_v2.md (Ch27 The Money; Ch28 The Other One; narration, Ch29 The Files; Ch30 Nine Minutes).
+**Speaks:** 26 lines, all of them as an adult. Zero dialogue anywhere in chapters 1–20 of the manuscript — his only appearance in that entire span is one sentence of narration, chapters/13_ten_pages.md:162.
 
----
+## Voice in one paragraph
 
-## 1. Every line he speaks
+Theo's turns are the longest and most connected in the cast. Where the chat pushes everyone else toward fragments, his messages run multiple clauses with a qualifier attached to the main claim: "apparently im skipping five or ten steps every time?? i genuinely cannot see where" (CHAPTERS_16_22_v2.md:395). He disagrees by objecting formally rather than refusing outright — he puts something "on record" and then goes along with it anyway (CHAPTERS_23_30_v2.md:578). He rarely asks a real question, but when he does it stays open, often as the last line of a thread, unresolved. He never uses a simile, metaphor, or invented image. Most characteristic line: **"nobody repeats any of this. i mean it. this is so far above me that i shouldnt know it, and i only know it because somebody handed the new guy a retirement box"** (CHAPTERS_23_30_v2.md:518) — one long chain of clauses, institutional self-description, and a qualifier on his own right to know something, all in a single turn.
 
-### chapters/01–20: no dialogue
+## Dials
 
-The only appearance is the narration-only mention above. First spoken line anywhere in the reading list does not occur until CHAPTERS_16_22_v2.md.
+| | |
+| :-- | :-- |
+| sentence shape | longest in the cast — multi-clause, briefing-shaped, a qualifier attached to the claim |
+| disagrees by | objects procedurally, on record, then complies anyway |
+| wordiness | 10.6 words per message, measured — highest in the cast |
+| terseness | 12% of lines at three words or fewer — the least terse of anyone |
+| jokiness | low — no joke of his own construction found; his one attempt at levity is straight-faced self-defense, not a joke he initiates |
+| hedging | 0% measured in dialogue — see Known problems. PROPOSED target: 15%+, since his uncertainty currently lives only in narration around him, not in his own lines |
+| questions | 4% measured — rare, and should stay rare, but present and left open, not rhetorical |
+| figurative | not allowed — no simile, metaphor, or invented image, ever |
 
-### CHAPTERS_16_22_v2.md, Ch19 The Chat — his first spoken lines in the book
+## Signature — theirs alone
 
-- "my supervisor keeps sending my work back and asking me to show the reasoning"
-- "i DID show the reasoning"
-- "i wrote it out step by step"
-- "apparently im skipping five or ten steps every time?? i genuinely cannot see where"
-- "she wants me to write out the intermediate ones"
-- "do they also want me to write out how to take a derivative"
-- "it IS nice. its also insane"
-- "i can parallel park"
-- "i did a reverse J at fourteen with a guy who drives in films"
+One word capitalized mid-sentence for stress, inside an otherwise plain, lowercase line.
 
-### CHAPTERS_16_22_v2.md, Ch22 The File — his chapter
+- Real: "i DID show the reasoning" (CHAPTERS_16_22_v2.md:386).
+- Real: "it IS nice. its also insane" (CHAPTERS_16_22_v2.md:407).
 
-- "hypothetically"
-- "if you found something out about the school. from work. that you couldnt actually say"
-- "how badly would you want to know"
+Both real instances currently sit in the same low-stakes chapter (Ch19). Extend the tic into a higher-pressure scene so it reads as a stable habit rather than a one-chapter accident.
 
-### CHAPTERS_23_30_v2.md, Ch27 The Money
+## Would they say this?
 
-- "the government cant show it and theyve had nineteen years"
-- "ok"
-- "nobody repeats any of this. i mean it. this is so far above me that i shouldnt know it, and i only know it because somebody handed the new guy a retirement box"
-- "theyve had a file on the school for nineteen years"
-- "they think its a state or a company. theyve been wrong twice and theyre still wrong"
-- "they put a man on staff when we were eleven and we spotted him in a day"
-- "and six years ago they sent people over the fence at four in the morning and four of us put them on the floor"
-- "i said dont repeat it, i didnt say it was small"
-- "it wasnt a drill"
-- "they have nineteen years of being wrong"
+- YES if the line runs multiple clauses with a qualifier or caveat attached to the main claim, rather than a bare assertion.
+- NO if the line is three words or fewer — this happens for him only about 12% of the time, the least of anyone in the cast.
+- YES if a disagreement is phrased as a formal objection ("i want it on record that...") that he still goes along with afterward, rather than a refusal that changes what happens next.
+- NO if he changes a stated position without objecting to it first — he registers dissent before he ever complies.
+- YES if one single word is capitalized mid-sentence for stress inside an otherwise plain, lowercase line.
+- NO if the line contains a metaphor, simile, or invented image — never his, no exceptions.
+- PROPOSED — YES if the line carries a visible hedge word ("apparently," "i think," "probably," a qualifying "-ish"): near-absent in his existing dialogue (his hedging currently lives in narration around him, not in his own lines), but new lines should move toward roughly one in six carrying a hedge.
+- YES if the line asks a real, open, unresolved question, at a rate of roughly one line in twenty-five — rare, and it should not resolve itself in the same breath.
+- NO if the line is under three words with no clause attached to it — that register belongs to someone terser than him.
+- YES if the line reads like a briefing: a string of short factual clauses in sequence, each adding one fact, with no transition words joining them.
 
-### CHAPTERS_23_30_v2.md, Ch28 The Other One
+## Are they acting like themselves?
 
-- "i want it on record that this is the stupidest thing any of us has ever done"
-- "noted where"
+Processes privately before he speaks. Closes his laptop and goes outside for twenty minutes after finding a note about himself in a classified file (CHAPTERS_23_30_v2.md:626). Sits with disturbing information for two full days before doing anything about it at all (CHAPTERS_16_22_v2.md:884). Physical tell under real shock: puts his hand over his mouth and stays like that for a while (CHAPTERS_16_22_v2.md:876). He occupies a room by asking careful procedural questions rather than making claims in it.
 
-### CHAPTERS_23_30_v2.md, Ch30 Nine Minutes
+Failure modes for a rewriter:
+1. Giving him a snap, quotable reaction the instant something happens — his pattern is delay, then a careful, multi-clause statement, never an immediate one-liner.
+2. Writing his realization directly into narration instead of as a visible action — "Theo reads it three times, because he remembers it" (CHAPTERS_16_22_v2.md:815) states his internal cause rather than showing it, which is a known rule violation in his own chapter (see Known problems).
+3. Making him win an argument or refuse outright — he objects on record and complies; he does not block anything that happens in the book.
 
-- "and if hes made one mistake"
-- "how many has he made that we didnt catch"
+## Likes, dislikes, habits
 
-**Total: 26 lines**, all of them in ages 19–21. There is no line of his anywhere before that. Compare Eli's 4 lines at age 13 — Theo doesn't even get that.
+- [inferred] Values being able to show his own reasoning — his one stated grievance in the whole sample is not being able to see which steps he skips in his own written work (CHAPTERS_16_22_v2.md:383–401).
+- [text] Careful, deliberate disclosure — opens serious news with a single throat-clearing word, "hypothetically" (CHAPTERS_16_22_v2.md:890), before committing to specifics.
+- [text] Dislikes being handed responsibility for something he cannot discuss — sits on classified material for two days before doing "the only thing available to him" (CHAPTERS_16_22_v2.md:884).
+- [inferred] Dislikes surprise generally — his consistent instinct is to qualify and delay rather than react in the moment.
+- [text] Habit: capitalizes one word mid-sentence for stress (CHAPTERS_16_22_v2.md:386, :407).
+- [text] Habit: registers formal objection before going along with something ("i want it on record," CHAPTERS_23_30_v2.md:578).
+- [text] Habit: ends a thread on an open question rather than a conclusion — his last available line is a question with no answer (CHAPTERS_23_30_v2.md:862).
 
----
+## Facts a rewriter needs
 
-## 2. Voice profile
+- Name: Theo. Surname: UNDEFINED anywhere in the text.
+- Family, hometown, background: UNDEFINED. No scene, line, or mention establishes any of it.
+- Good at: reading documents and summarizing what they mean — stated as his literal job description (CHAPTERS_16_22_v2.md:789, Ch22).
+- Bad at / blind spot: cannot independently identify which steps he skips in his own written reasoning — his supervisor repeatedly sends work back for exactly this (CHAPTERS_16_22_v2.md, Ch19).
+- Adult employment: federal analyst, hired after four interviews; in his eighth month on the job when handed a stack of old material to summarize (CHAPTERS_16_22_v2.md:792, Ch22).
+- What he knows at what age: at eleven, recalls a substitute teacher the class collectively identified as wrong within a day and a half, though he could not, at the time or since, say what the man taught (CHAPTERS_16_22_v2.md:815–824). At roughly twelve, was present the night of an armed intrusion on his school, which he experienced then as an unannounced overnight drill and did not learn the truth of until he read the classified file as an adult (CHAPTERS_16_22_v2.md:867–876).
+- Standing at school / rank: UNDEFINED — no line anywhere states where Theo placed in his year.
 
-**Longer, multi-clause turns; the analyst's register.** Where the chat medium pushes everyone toward short fragments, Theo's longest passages resist it: "nobody repeats any of this. i mean it. this is so far above me that i shouldnt know it, and i only know it because somebody handed the new guy a retirement box" (Ch27) is one continuous chain of reasoning, not a stack of one-word replies. His run of short declaratives immediately after ("theyve had a file... they think its a state or a company... they put a man on staff...") reads as a briefing — discrete facts delivered in order, the way his job description is stated to work: "reading things and saying what they mean" (Ch22).
+## Known problems
 
-**Hedges visibly.** "apparently im skipping five or ten steps every time?? i genuinely cannot see where" carries a doubled question mark and two separate hedge words ("apparently," "genuinely") in one line. This never happens for Eli.
+1. **Narrated interiority — a rule violation, not just a style note.** "Theo reads it three times, because he remembers it" (CHAPTERS_16_22_v2.md:815) states an internal cause for his action from the narrator's own voice. Nowhere else in the manuscript does any character besides the story's single point-of-view figure get a stated reason like this from the narrator — every other character's inner state has to show as action or speech. This is the clearest violation of that rule anywhere in his material, and it sits in his single most important chapter. Fix: replace with an observable action; let the reason surface later in something he says.
+2. **No childhood at all.** Theo has zero dialogue anywhere in chapters 1–20 of the manuscript. His only appearance in that span is one sentence of narration, chapters/13_ten_pages.md:162 ("Theo gets one back with no note the same week, but he puts it straight into his bag and goes on with what he was saying") — what he was saying is never quoted. He then arrives fully formed as an adult with his own dedicated chapter (CHAPTERS_16_22_v2.md, Ch22 The File) and no prior line to have built that voice from. Fix: seed at least one line of childhood dialogue.
+3. **Hedging is backwards.** He is meant to be the cast's hedgier voice, but measures 0% hedging in his actual quoted dialogue — his uncertainty currently lives only in the narration describing him, not in anything he says. PROPOSED fix: move some of that narrated uncertainty into spoken qualifiers, target roughly 15%+ of his lines.
+4. **Filler collapse.** Under low stakes his dialogue collapses into generic chat filler — "ok" (CHAPTERS_23_30_v2.md:515), "noted where" (CHAPTERS_23_30_v2.md:584) — that reads as interchangeable with anyone else in the same chat. Fix: whoever speaks second in these exchanges should be doing their own signature move (the capitalized word, or a formal objection) instead of filler.
 
-**A capitalization tic.** He stresses a word mid-message by capitalizing it inside an otherwise lowercase chat convention: "i DID show the reasoning," "it IS nice. its also insane." It appears twice, both in Ch19, and nowhere else in the sample — see Fix List.
+## Do not confuse with
 
-**Objects procedurally, then complies.** His strongest stated position — "i want it on record that this is the stupidest thing any of us has ever done" (Ch28) — is phrased as a formal notation, not a refusal. He says no for nine days (per narration) and then signs off last, "saying again that it's insane" (also narration, not a quoted line — see §3). He never wins an argument on the page; he registers it and moves with the group anyway.
-
-**Opens carefully.** "hypothetically" (Ch22) is a single-word opener before he commits to specifics — a controlled, careful approach to disclosure that fits a man bound by classification rules and aware of it.
-
-**Ends on questions, not conclusions.** His literal last line in the manuscript is a question extending someone else's point without resolving it: "and if hes made one mistake / how many has he made that we didnt catch" (Ch30). This is also structurally his function throughout — he surfaces information (the file, the funding, the intrusion) and hands the interpretation to Ruth and Eli rather than concluding it himself.
-
-**No figurative language, no jokes of his own construction.** His only attempt at levity — "i did a reverse J at fourteen with a guy who drives in films" — is straight-faced self-defense against Nadia's tease, not a joke he initiates.
-
-**Most characteristic line:** "and if hes made one mistake / how many has he made that we didnt catch" (Ch30) — the book's actual final line for the chat, given to him specifically because it is a question with no answer, which is what he does with every piece of information he surfaces.
-
----
-
-## 3. The swap test
-
-**Survives the swap:** "ok" (x1 as a standalone turn), "noted where," "i did a reverse J at fourteen with a guy who drives in films," "how badly would you want to know," and, considered in complete isolation from the paragraph that precedes it, "hypothetically" — a bare opener that only reads as distinctly *his* once paired with the sentence after it. That's roughly 5 of 26, a smaller fraction than Eli's filler share, which tracks with Theo simply having fewer short reflexive lines in the sample.
-
-**Does not survive:**
-- "my supervisor keeps sending my work back and asking me to show the reasoning" (specific professional grievance)
-- "apparently im skipping five or ten steps every time?? i genuinely cannot see where" (the double hedge)
-- "it IS nice. its also insane" (the caps tic)
-- "i want it on record that this is the stupidest thing any of us has ever done" (bureaucratic phrasing no other character uses)
-- "nobody repeats any of this. i mean it. this is so far above me that i shouldnt know it, and i only know it because somebody handed the new guy a retirement box" (his defining institutional-anxiety monologue)
-- "and if hes made one mistake / how many has he made that we didnt catch" (his defining closing move — a question, not an answer)
-
-**One genuine risk:** "it wasnt a drill" (Ch27) is a three-word flat correction with none of his usual hedging or explanatory clause structure. Read blind, it is at least as plausible coming from Eli, whose register is exactly this terse. Flagged again in the head-to-head below.
-
----
-
-## 4. Out of character
-
-**(b) POV rule violation — the clearest technical fault found for either character.** STYLE_GUIDES.md is explicit: "Interiority of non-POV characters... Give a physical action instead," and the manuscript's core rule is third person limited, present tense, close on Chloe only. Ch22 The File is written in tight interiority on Theo: "Theo reads it three times, **because he remembers it**" supplies a narrator-stated internal cause for a non-POV character's action — precisely the construction the style guide bans. "He puts his hand over his mouth and sits like that for a while" is fine by the same rule (an observable physical beat, not narrated interiority), which makes the surrounding sentence's violation more conspicuous by contrast, not less. BETA_NOTES §6.5 already flags that "Ch22 is Theo's" as a late, unceremonious POV expansion; this is the specific mechanism by which it breaks the book's stated rule, not just its structure.
-
-**(c) Credible pressure, reasonably earned.** The hand-over-mouth beat itself is earned better than it might look at first: his established professional anxiety in Ch19 — being told he skips steps in his own reasoning and "genuinely cannot see where" — pays off directly in Ch22, where he belatedly realizes he missed the true meaning of a night he lived through as "a boring Tuesday." One prior chapter of setup is thin, but it is there and it is thematically exact, which is more than Eli's parallel reveal gets (see ELI.md §5).
-
-**(a) Possible inconsistency, defensible as shock-compression.** "it wasnt a drill" (Ch27) breaks from his usual multi-clause hedge-and-explain pattern into Eli-register terseness. Could be read as shock stripping his normal caution, which would be legitimate characterization under pressure — but nothing else in the text marks this scene as more urgent for him than his other Ch27 lines, so it currently reads as an unmarked register slip rather than a signaled one.
-
----
-
-## 5. The reveal moment, tested for earning
-
-**Theo's reveal:** reading the classified file on his own school and realizing the "boring Tuesday" he remembers was a real armed intrusion; he "puts his hand over his mouth and sits like that for a while" (Ch22 The File).
-
-Checked against what's shown of him one chapter earlier (Ch19): a federal analyst whose supervisor keeps returning his work because he skips steps he can't identify himself — a stated professional blind spot about his own reasoning. Ch22's payoff is that same blind spot turned on his own memory: he skipped the steps that would have told him what he actually witnessed at twelve. That is a real throughline, even if it's only one chapter deep. **Verdict: partially earned** — thinner than ideal (one chapter of setup for a whole character), but thematically connected in a way Eli's reveal is not. The interiority used to deliver it, however, breaks the book's own POV rule (see §4), which is a real cost regardless of how well the beat itself is set up.
-
----
-
-## 6. Personality, likes, dislikes, habits
-
-- [textual] Frustrated by unclear institutional expectations he can't independently diagnose — the returned-work thread (Ch19).
-- [textual] Values being formally on record even while going along with something he's on record opposing — "i want it on record" (Ch28), followed (per narration) by signing off last anyway.
-- [textual] Retains precise procedural memory once given the right frame — recalls the exact grade sheet from the night of the intrusion and "thinking it was harsh" at the time (Ch22).
-- [textual] Processes disturbing information privately before sharing it — closes his laptop and goes outside for twenty minutes after reading a note in his own dossier (Ch29), rather than posting about it immediately.
-- [textual] Surfaces uncertainty rather than resolving it — his last line in the book is a question, not a conclusion (Ch30).
-- [textual] Mild, straight-faced defensiveness about a small personal competence when teased (parallel parking, Ch19) — his only moment of levity, and it isn't a joke of his own making.
-- [inferred] Wants responsibility for hard knowledge to be shared rather than carried alone — he posts about the file within days (Ch22 closes with him posting to the chat), unlike Ruth, who sits on her equivalent realization for six months before saying anything (Ch26).
-- [inferred] Uncomfortable holding classified information that implicates people he cares about — his stated compliance with classification rules ("every page of it is classified and he understands precisely what he is and is not permitted to do," Ch22 narration) sits in tension with his inability to simply let it go, which is consistent with the profile's stated flaw: "bad at hiding what he knows once he knows it."
-
----
-
-## 7. The name
-
-No biographical anchor exists for "Theo" anywhere in the reading list: no family, no hometown, no cultural or ethnic marker, no scene at his home. Like Eli, there is nothing in the text to contradict — but also nothing the name is doing any work against. Of the core seven, Theo and Eli are the two with zero grounding of this kind; every other named core character (Ruth, Sam, Kavi, Nadia, Chloe) has at least one family detail attached. This is a shared structural gap, not a name-specific mismatch.
-
----
-
-## 8. Fix list
-
-1. **Fix the Ch22 POV violation.** "Theo reads it three times, because he remembers it" is narrator-supplied interiority for a non-POV character, directly against STYLE_GUIDES.md's core rule. Replace with an observable action (a specific physical tell on the reread) and let "because he remembers it" surface later as something he says or does, not something the narrator asserts about his inner state.
-2. **Repeat the capitalization tic once more, later, under higher stakes.** It appears twice, both in the comparatively low-stakes Ch19 banter. Neither Ch22, Ch27, Ch28, nor Ch30 — his highest-pressure chapters — uses it once. One recurrence there (e.g. "i said DONT repeat it") would anchor it as a stable signature instead of a chapter-19 accident.
-3. **Rewrite "it wasnt a drill" in his own register.** It's currently his bluntest line and the one most likely to be misattributed to Eli in a blind read (see head-to-head). Lengthening it by half a clause in his usual explanatory style would keep his voice consistent under shock instead of collapsing into someone else's.
-4. **Show the sign-off instead of summarizing it.** "Everyone signs off. Theo signs off last and says again that this is insane" (Ch28) reports his capitulation in narration rather than showing it. Given that this is explicitly the special-instruction beat this brief is built around (says no for nine days, signs off last), give him one actual quoted line at the moment he signs, rather than a paraphrase.
-5. **Seed him somewhere in chapters/01–20.** He is currently the only core-seven character with literally zero dialogue in the first twenty chapters — even Eli gets one scene. A single childhood appearance (a line, not necessarily a scene) would give the Ch19 "supervisor keeps sending my work back" grievance a place to come from, the way Eli's Ch16 cipher scene seeds his adult competence.
-
----
-
-## 9. Head-to-head: Eli vs. Theo
-
-*(This section is identical in ELI.md.)*
-
-Both are quiet, technical, male, and arrive late — Eli with 4 lines in chapters/01–20 (all in one chapter, age 13), Theo with **zero** lines in the same span (one narration-only mention, chapters/13_ten_pages.md). Both live almost entirely in the same medium: the group chat. That is the real test of whether the book has seven voices or six.
-
-### Method
-
-Ten lines were pulled from each character's chat dialogue, stripped of the `eli:`/`theo:` tag, and judged blind against the voice profiles built independently above.
-
-**Eli's ten:**
-1. "guys im speedrunning retirement"
-2. "i cant find the rules anywhere on the site but hes my boss so"
-3. "the build pipeline one. felt like i went around it not through it"
-4. "which honestly has been the most interesting thing thats happened to me since i started"
-5. "so its fake"
-6. "did you fire him"
-7. "it will not come back to your company"
-8. "its exactly the same. its a rule with a known enforcement mechanism and you learn where the cameras are"
-9. "then i go away for fifteen years, so im not going to be wrong"
-10. "i have never once been at the top of a room in my life"
-
-**Theo's ten:**
-1. "my supervisor keeps sending my work back and asking me to show the reasoning"
-2. "apparently im skipping five or ten steps every time?? i genuinely cannot see where"
-3. "it IS nice. its also insane"
-4. "i did a reverse J at fourteen with a guy who drives in films"
-5. "hypothetically"
-6. "how badly would you want to know"
-7. "i want it on record that this is the stupidest thing any of us has ever done"
-8. "theyve had a file on the school for nineteen years"
-9. "it wasnt a drill"
-10. "how many has he made that we didnt catch"
-
-### Result: 11 of 20 confidently attributable
-
-Eli scored 5/10 (lines 1, 3, 8, 9, 10 — the gamified framing, the technical self-critique, the stated risk philosophy, the overconfidence, and the flat unhedged confession). Lines 2, 4, 5, 6, 7 are swap risks: generic workplace chatter, a bare "did you fire him," and an isolated repeat-tic that needs its pair to register.
-
-Theo scored 6/10 (lines 1, 2, 3, 5, 7, 10 — the workplace grievance, the genuine double-question-mark hedge, the caps-emphasis tic, the careful "hypothetically" opener, the bureaucratic "on record" phrasing, and the closing open question). Lines 4, 6, 8, 9 are swap risks — notably **"it wasnt a drill,"** which is Theo's bluntest line in the sample and reads more like Eli's terse-assertion register than Theo's own hedge-and-explain pattern.
-
-**Honest read: just over half.** That's a real voice, not a coin flip, but it means roughly nine of every twenty exchanges between them would be unrecognizable if unlabeled — mostly the short, single-clause chat lines where both men default to the same terse lowercase register the medium imposes on everyone. The distinguishing 55% comes almost entirely from two places: what they're arguing about (rules/risk vs. institutions/permission), and two small typographic habits (Eli's assert-and-repeat; Theo's mid-message capital).
-
-### Cues that separate them, ranked by reliability
-
-1. **Institutional vs. technical register.** Theo's vocabulary is bureaucratic — "on record," "classified," "permitted," "supervisor," "retirement box." Eli's is adversarial-technical — "cameras," "pipeline," "boring," "patient," "speedrunning." This is the single most reliable cue and holds across nearly every line.
-2. **Argues with facts vs. argues with people, but complies with institutions vs. argues against them.** Eli argues the substance and wins ("no. chloe im sorry but no," then explains why). Theo objects procedurally and then complies anyway — "i want it on record," "noted," then nine days later he signs off last, still saying it's insane, but he signs. He never wins an argument on the page; he registers dissent and goes along.
-3. **Question-to-assertion ratio.** Theo ends threads on open questions he doesn't resolve (his last line in the book: "how many has he made that we didnt catch"). Eli ends threads on flat assertions, even about his own uncertainty ("i dont know. thats the actual answer" is a declaration, not a question).
-4. **Hedging.** Theo hedges visibly and often — "apparently," "i genuinely cannot see where," a doubled question mark. Eli almost never hedges; his rare admissions of not-knowing are short and final.
-5. **A typographic tic each, but thin.** Theo capitalizes a word for emphasis inside an otherwise lowercase message ("i DID show the reasoning," "it IS nice") — this never happens for Eli. Eli restates a claim with the contraction removed under pressure ("it wont" → "it will not") — this never happens for Theo. Both appear exactly once in the full sample, which is not enough repetition to call either one a reliable signature yet.
-6. **Humor.** Eli jokes by gamifying stakes ("speedrunning retirement"). Theo doesn't joke in the sample at all; his one moment of levity (parallel parking) is straight-faced self-defense, not a joke of his own construction.
-7. **Message shape.** Theo's longer turns run as multi-clause, briefing-style monologues, unusual for the chat's back-and-forth rhythm (the ten-line "nobody repeats any of this" run in Ch27 is essentially a solo report). Eli's longest turns are lists of short clauses stacked with periods, not subordinated into sentences.
-
-### What doesn't separate them
-
-Both are terse in the exact same way when the stakes are momentary: "yeah," "ok," "hang on," "no," single-word or near-single-word turns that could sit under either name with nobody noticing. Neither jokes much, neither uses figurative language, neither addresses the group emotionally. If the book leans on these two for a second act, the read/write cost of telling them apart currently falls entirely on content (what each one happens to be talking about) rather than on voice — which is exactly the risk the author should worry about.
+Eli and Theo are both quiet, technical, and speak almost entirely inside the same group chat, which is where most of the confusion happens. The cue: Theo's lines run long, multi-clause, and end in procedural compliance ("on record," "noted") or an open, unresolved question; Eli's lines are short, reframe whatever was just said, and end in a flat assertion. If a line is three words or fewer, it is very unlikely to be Theo's — that register happens for him only 12% of the time, the least of anyone in the cast, while Eli runs there 30% of the time. If a line hedges — a visible "apparently," a qualifier, a doubled question mark — it should be pushed toward Theo, not Eli; that is the deliberate reversal this sheet proposes, since Theo is meant to be the cast's hedger and currently isn't one in his own dialogue. Watch specifically for the collision at CHAPTERS_23_30_v2.md:844 and :847, where Ruth's and Eli's identical line sits right next to material that could just as easily have been handed to Theo; a fixed version should keep Theo's contributions in that scene procedural and qualified, not a flat echo.
