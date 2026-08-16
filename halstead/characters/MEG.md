@@ -208,6 +208,22 @@ Meg does not speak again. She is not mentioned by name or role in CHAPTERS_23_30
 
 ---
 
+## 2a. Register vs. the students — do the adults sound older?
+
+*(This section is identical in FATHER.md.)*
+
+Yes, early — genuinely, measurably — and the gap closes or reverses later, which is itself the finding.
+
+**Ages 6–7 (ch1–9): real separation.** Child dialogue in this band is short and repetitive by design: Kayleigh Burns's "You talk weird" (three words, no clause), Bryce's "That was different." / "How was it different, though?" / "It just was," (ch1) — flat assertion, no elaboration, no willingness to defend the claim. Against that, Meg's institutional register is unmistakably adult: "I'm asking whether anybody has ever made an exception to it, for any reason, in any year" (ch7) has a subordinate clause and a hedge ("for any reason, in any year") no child in the book produces at six or seven. This is real and it's the clearest evidence in the manuscript that the author can write more than one register.
+
+**But Chloe herself complicates it immediately.** At six, arguing library policy: "The rule is about at a time, though. So six is fine, because it's still four at a time, it's just four and then four again, and two of them are ones you already gave me." (ch1) That's a longer, more tightly reasoned sentence than most of what Meg says in the same chapter — a six-year-old out-arguing the adult register around her. So the "adults sound older" finding is true on average, not true as a hard rule, and it's true despite Chloe rather than because the book withholds complexity from children categorically.
+
+**Ages 8+ (ch10 onward): the gap closes, then reverses.** Once Halstead training starts, the cohort's diction gets denser and more technical while the parents' does not grow with them. Compare Dad's longest sustained arguments — "So how does a four-year-old school get that guy. What does it pay him. With what." (ch3); "This is four pages of the same trick, isn't it." (ch12) — against Chloe at eleven: "It's bread with a filling in it, so it's a sandwich, and I don't think there's a way out of that... The only thing you've given me is a hinge, and a hinge is a fact about bread, not a fact about food." (ch11) or Ruth at nine, unprompted: "Because it's already in everything... That's not learning a language. That's collecting on one you did four years ago." (ch14). By the tariffs chapter (ch13), Chloe is constructing multi-step economic arguments ("If you're wrong about one of those you can't get it back. The factory goes, then the people who knew how to run it get other jobs, and then in fifteen years they're sixty and there's nobody left who's ever done it.") that are longer and more structurally ambitious than anything her father says in the same scene — he's asking short, genuine follow-up questions, and she's the one doing the sustained reasoning.
+
+**The honest summary:** the adults sound older than the students only in the first third of the book, when the students are genuinely young. Once Halstead's curriculum takes over the children's syntax, the parents' register stays essentially flat — plain, short, undecorated, the same "Cool" / "Huh" / short-declarative register at sixteen that it was at six — while the children's complexity keeps climbing. That flatness may be the right choice (ordinary adults staying ordinary against extraordinary children is arguably the point), but as a test of "can this author write more than one adult register," the honest answer is: one clear adult register early, largely overtaken by the children's own trained register later, with no second or evolving adult register to compare it against.
+
+---
+
 ## 3. The swap test
 
 I stripped attribution from ten of Meg's lines and ten of Dad's lines and tried to reassign them blind. Full results and the count are in the **Head-to-head** section below, shared with FATHER.md. Short version: of Meg's ten, roughly eight or nine survive being reassigned to Dad without a reader noticing from the words alone. The two that don't survive are the graduation lines (a physical gesture — fixing the collar — paired with hyperbolic emotional excess, "I'm so proud of you I could be sick," which nothing on Dad's page matches) and, more weakly, the gas-oven itemization, which only barely reads as hers because Dad does the identical rhetorical move (clause-by-clause enumeration of a problem) aimed at a different target.
