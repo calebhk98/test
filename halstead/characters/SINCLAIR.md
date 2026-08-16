@@ -1,0 +1,51 @@
+# SINCLAIR
+
+Former Navy SEAL. Runs Defensive Watch — the school's ongoing intrusion-response exercise — and speaks almost entirely in two-word diagnostic exchanges.
+
+**Age span:** appears at Chloe age ~11 (the intercom announcement) and age 12 (the night intrusion) | **MBTI:** ESTJ (writing aid, not a claim) | **IQ:** no textual basis; not assessable
+**Appears in:** chapters/14_sixty_degrees.md, chapters/15_twelve.md
+**Speaks:** 5 quoted turns across two scenes, both of them procedural in nature — an intercom announcement launching a school-wide drill, and the debrief immediately after a real night intrusion. Not front-loaded exactly, but concentrated: every line he has exists inside one of exactly two set-piece scenes.
+
+## Voice in one paragraph
+Sinclair's longest turn is still built from short independent clauses stacked without connectives: "Every member of staff currently in the building is now hostile. This includes your teachers. This continues until sixteen hundred or until there are no staff left. Kit is in the usual place." (chapters/14_sixty_degrees.md:205) Everything else he says is shorter still — after the night intrusion, his questions are two words each and he accepts one-word answers without following up: "'Who's monitoring?' 'Me,' Ruth says. 'Numbers.' Ruth reads them off her arm." (chapters/15_twelve.md:327-333) He closes both scenes with a flat imperative and no commentary — "Sinclair nods. 'Grading's in the morning,' he says. 'Go to bed. Now.'" (chapters/15_twelve.md:335) — sending four twelve-year-olds who just tied up four armed men to sleep with the same tone he'd use to end a drill. His one moment of tone rather than pure procedure is dry and inward: "'Good luck,' Sinclair says, in a tone that suggests he does not mean it." (chapters/14_sixty_degrees.md:209) Most characteristic line: "Who's monitoring?" (chapters/15_twelve.md:327) — because it is the only question in the entire intrusion aftermath that isn't about the intruders, the danger, or the children's safety; it's about whether the process was being run correctly, which is what he actually came to check.
+
+## Dials
+| | |
+| :-- | :-- |
+| sentence shape | short independent clauses in a row, no connectives; or a single one-to-two-word diagnostic question |
+| disagrees by | not attested — no scene shows him disagreeing with a student; he only asks and directs |
+| wordiness | 3/10 — even his longest turn is four short sentences, none over 15 words |
+| terseness | roughly 3 of 5 turns at 3 words or fewer ("Numbers." "Good luck," "Who's monitoring?") |
+| jokiness | 0/10 in content — but one line ("Good luck") is delivered with dry, deniable irony |
+| hedging | 0% |
+| questions | 2 of 5 turns are questions, both purely diagnostic, both two words or fewer |
+| figurative | none found |
+
+## Signature — theirs alone
+Runs a diagnostic exchange in matched one-to-three-word question-and-answer pairs and moves on the instant he has the number he needs, with zero follow-up commentary: "'Who's monitoring?' 'Me,' Ruth says. 'Numbers.'" (chapters/15_twelve.md:327-331) No other teacher on this list conducts an entire exchange in fragments this short while still extracting exactly the information he came for.
+
+## Would they say this?
+- YES if it asks for a number or a role and stops as soon as it has one.
+- YES if a moment that would read as high-stakes to anyone else is closed with a purely administrative line. ("Grading's in the morning.")
+- YES if irony is present but never explained or flagged as a joke — the text narrates the tone rather than having him comment on it.
+- NO if it comments on danger, fear, or the children's welfare directly — no such line exists in either scene, even immediately after a real armed intrusion.
+- NO if it praises the response before sending them to bed — "Grading's in the morning" defers judgement entirely; it does not compliment.
+- YES if the entire staged encounter (arriving, assessing, questioning, closing) takes fewer than ten lines.
+
+## Are they acting like themselves?
+Arriving at the scene of a real intrusion — four tied men, four twelve-year-olds sitting near them — his first visible action is not comfort or urgency but observation: "He stops at the corner. He looks at the four men tied along the corridor wall, and at the bags, and at the four kids sitting on the floor near them, and he stands there for a second just watching them." (chapters/15_twelve.md:327) That pause before he speaks at all, and the fact that his first words are about monitoring rather than safety, is the character's whole logic in one beat. Failure mode a writer would fall into: having him check on the children's wellbeing, express relief, or praise their handling of a genuinely dangerous night — the text gives him none of that; the sheet the students receive the next morning grades the response the same clinical way a drill would be graded (chapters/15_twelve.md:339).
+
+## Likes, dislikes, habits
+- Assesses a scene silently before speaking, even under real stakes. [text: chapters/15_twelve.md:327]
+- Extracts exactly one piece of information per question, then stops. [text: chapters/15_twelve.md:327-331]
+- Treats a real intrusion and a scheduled drill with the identical procedural register. [inferred, from the tonal continuity between his two scenes]
+
+## Facts a rewriter needs
+Surname only — "Sinclair." Former Navy SEAL; wrote the Defensive Watch scoring doctrine per SYNOPSIS_CHARACTERS_TIMELINE.md:309-311, which is consistent with his procedural voice in both manuscript scenes though the manuscript itself never states the SEAL background directly — that detail exists only in the reference document, not in the two chapters read for this sheet. Flag as **reference-document-only, unconfirmed in the accessible chapters** rather than treating it as settled manuscript fact. Male, per "he" throughout, undisputed.
+
+## Known problems
+- The "former Navy SEAL" background is asserted by SYNOPSIS_CHARACTERS_TIMELINE.md but does not appear anywhere in chapters/14_sixty_degrees.md or chapters/15_twelve.md — the only two chapters where Sinclair speaks. A rewriter drawing on his backstory should know it is sourced from the synopsis, not the manuscript.
+- Only two scenes exist for him in total; nothing shows him in an ordinary, non-crisis interaction, so there is no textual basis for how he'd behave outside a monitored exercise.
+
+## Do not confuse with
+Kowalczyk — both are procedural and unmoved by the students' state, but Kowalczyk always explains the mechanism behind a number when asked; Sinclair extracts a number and gives nothing back, not even the reason he wanted it.
