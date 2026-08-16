@@ -1,3 +1,7 @@
 # Throwaway tutorial verification runs (created by test agents); not deliverables
 tutorial-runs/
 .selftest*/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
