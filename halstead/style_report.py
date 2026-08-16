@@ -79,6 +79,25 @@ def words(t):
     return re.findall(r"[A-Za-z][A-Za-z']*", t)
 
 
+def quoted_words(body):
+    """Count words inside double quotes, counting curly quotes as quotes.
+
+    The original scanned the whole file with '"[^"]*"'. That regex cannot see
+    the 12 paragraphs of MANUSCRIPT_FULL.md that use curly quotes, so straight
+    quotes on either side of them paired across the intervening narration and
+    counted it as dialogue. The manuscript came out at 38.2% quoted against a
+    ~30% target, a FAIL, when the real figure is 28.1%, a PASS.
+
+    Normalising the curly quotes fixes that. Restarting the scan at each
+    paragraph keeps any future unbalanced quote from inverting dialogue and
+    narration for the whole rest of the file.
+    """
+    body = body.replace('“', '"').replace('”', '"')
+    return sum(len(words(m))
+               for para in body.split('\n')
+               for m in re.findall(r'"[^"]*"', para))
+
+
 def report(path, label):
     t = load(path)
     paras = paragraphs(t)
@@ -87,7 +106,7 @@ def report(path, label):
     wl = [len(w) for p in paras for w in words(p)]
     body = re.sub(r'^#.*$', '', t, flags=re.M).replace('---', ' ')
     tot = len(words(body))
-    q = sum(len(words(m)) for m in re.findall(r'"[^"]*"', body))
+    q = quoted_words(body)
 
     # Guards the original lacked: every statistic below divides by one of these.
     if not paras or not sl or not tot:
