@@ -33,8 +33,19 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 CHAT_FILES = ["CHAPTERS_16_22_v2.md", "CHAPTERS_23_30_v2.md"]
+# Only these seven ever post in the group chat.
 CAST = ["chloe", "ruth", "sam", "kavi", "nadia", "eli", "theo"]
-TAGGED = r"(Chloe|Ruth|Sam|Kavi|Nadia|Eli|Theo|Odile|her mom|her mother|her dad|her father)"
+
+# Everyone who is ever tagged as speaking in prose. This list started as the
+# seven chat names plus the parents, which made every other character invisible
+# to the measurement: Priya speaks in ten scenes across six chapters and scored
+# nothing at all. Titles are matched separately so "Mrs. Aldana says" is found.
+SPEAKERS = ["Chloe", "Ruth", "Sam", "Kavi", "Nadia", "Eli", "Theo", "Odile", "Priya",
+            "Fen", "Owen", "Kayleigh", "Bryce", "Marisol",
+            "Aldana", "Vance", "Prahl", "Baptiste", "Bell", "Hearn", "Kowalczyk",
+            "Doyle", "Pruitt", "Sinclair", "Amberg", "Sandoval",
+            "Prentice", "Ammons", "Whitaker", "Deb", "Ruiz"]
+TAGGED = r"(?:Mrs\.? |Mr\.? |Ms\.? |Dr\.? |Coach |Sergeant )?(%s|her mom|her mother|her dad|her father)" % "|".join(SPEAKERS)
 SAYS = r"(?:says|said|asks|asked|tells|told|shouts|screams|whispers)"
 HEDGE = r"\b(i think|maybe|probably|idk|i dont know|i don't know|kind of|sort of|i guess)\b"
 
@@ -64,8 +75,12 @@ def collect_prose(root):
     """Lines with an explicit speaker tag. See the module docstring on bias."""
     out = collections.defaultdict(list)
     files = sorted((root / "chapters").glob("*.md")) + [root / n for n in CHAT_FILES]
+    # The book attributes far more often with an action beat than with a speech
+    # verb: '"Chloe." Mrs. Aldana is standing at the end of her desk.' Matching
+    # only "<name> says" missed most of the cast, so the first pattern accepts
+    # any sentence that opens with the speaker's name straight after a quote.
     patterns = [
-        (rf'"([^"]+)"[,]?\s+{TAGGED}\s+{SAYS}', 0, 1),
+        (rf'"([^"]+)"[,.!?]?\s+{TAGGED}\b', 0, 1),
         (rf'"([^"]+)"[,]?\s+{SAYS}\s+{TAGGED}', 0, 1),
         (rf'{TAGGED}\s+{SAYS}[,:]?\s+"([^"]+)"', 1, 0),
     ]
