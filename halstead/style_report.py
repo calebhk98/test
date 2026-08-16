@@ -98,6 +98,26 @@ def quoted_words(body):
                for m in re.findall(r'"[^"]*"', para))
 
 
+def split_speech(paras):
+    """Split into (spoken, narration) sentence word-counts.
+
+    Anything inside double quotes is spoken; everything else, including the
+    "she says" tags, is narration.
+    """
+    spoken, narration = [], []
+    for p in paras:
+        p = p.replace('“', '"').replace('”', '"')
+        pos, said, told = 0, [], []
+        for m in re.finditer(r'"[^"]*"', p):
+            told.append(p[pos:m.start()])
+            said.append(m.group(0).strip('"'))
+            pos = m.end()
+        told.append(p[pos:])
+        for chunk, bucket in ((' '.join(said), spoken), (' '.join(told), narration)):
+            bucket.extend(n for n in (len(words(s)) for s in sents(chunk)) if n)
+    return spoken, narration
+
+
 def report(path, label):
     t = load(path)
     paras = paragraphs(t)
@@ -139,6 +159,20 @@ def report(path, label):
         print(f"  {name:>6}: {pct:5.1f}%  target {lo}-{hi}%  {ok(lo <= pct <= hi)}")
 
     print(f"\nQUOTED  {qs:.1f}%  target ~30%  {ok(26 <= qs <= 34)}")
+
+    # Spoken and narration measured separately. STYLE_GUIDES.md section 6 calls
+    # this "the most useful diagnostic in the whole spec" because the combined
+    # number hides which half is broken, but the script never implemented it.
+    spoken, narration = split_speech(paras)
+    if spoken and narration:
+        sp_mean, na_mean = fmean(spoken), fmean(narration)
+        na_u10 = 100 * sum(1 for v in narration if v < 10) / len(narration)
+        print(f"\nSPOKEN vs NARRATION")
+        print(f"  spoken     mean {sp_mean:5.2f} words  ({len(spoken):4d} sentences)  "
+              f"target 8-10   {ok(8 <= sp_mean <= 10)}")
+        print(f"  narration  mean {na_mean:5.2f} words  ({len(narration):4d} sentences)  "
+              f"target 14-17  {ok(14 <= na_mean <= 17)}")
+        print(f"  narration under 10 words  {na_u10:.1f}%   target <40%  {ok(na_u10 < 40)}")
 
     sd_spp = stdev(spp) if len(spp) > 1 else 0.0
     cv = 100 * sd_spp / fmean(spp)
