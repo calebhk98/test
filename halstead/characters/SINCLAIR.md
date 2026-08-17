@@ -104,7 +104,7 @@ Drinks black coffee, functional, never mentions liking or disliking it. Handwrit
 - Walks the building's exterior every morning without fail.
 
 ## Facts a rewriter needs
-Full name Marcus Sinclair. Students call him "Sinclair", nobody under eighteen uses a staff member's first name at Halstead. Former special-operations military service, per the reference document, followed by cleared physical-security consulting; Halstead's offer bought that consulting practice out and moved it onto campus, and teaching Watch is a handful of hours a week, the rest that consulting work. Signed the standard staff non-disclosure agreement. Divorced, one adult son. Male, undisputed in the text.
+Full name Marcus Sinclair. Students call him "Sinclair", nobody under eighteen uses a staff member's first name at Halstead. Checks a thing twice before acting on it, a locked door, a headcount, a scene, and closes a completed instruction with one extra word that marks the time and explains nothing. Former special-operations military service, per the reference document, followed by cleared physical-security consulting; Halstead's offer bought that consulting practice out and moved it onto campus, and teaching Watch is a handful of hours a week, the rest that consulting work. Signed the standard staff non-disclosure agreement. Divorced, one adult son. Male, undisputed in the text.
 
 ## Known problems
 - The specific military background is asserted only by the reference document (SYNOPSIS_CHARACTERS_TIMELINE.md:309-311), not the manuscript itself, a rewriter drawing on his backstory should know it's sourced there, not from the two chapters where Sinclair speaks.
