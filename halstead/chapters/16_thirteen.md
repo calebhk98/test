@@ -14,7 +14,7 @@ He is at every session and he reads everything she gives him, but the sheet come
 
 "Then hand the sheet in."
 
-"Why, though?"
+"Why, though?" He doesn't look up from the sheet.
 
 "Because that's what the hour is for."
 
@@ -90,7 +90,7 @@ Ruth and Kavi took cryptography and networks last year, which puts Ruth three mo
 
 The box goes in the drawer under Ruth's window, and it stays there.
 
-Formal epistemology is the room four other subjects have been standing outside. Logic asked what a sentence claims. Statistics asked how surprised you ought to be. Rhetoric asked who was paying. Cryptography asked what it takes to be sure of anything at all. Formal epistemology puts all four on the board in the first hour and gives the question a name, and Chloe comes out of that hour and stands in the corridor for a minute with her bag still open before she goes on to German.
+Formal epistemology starts with one sentence on the board: *I know that I am sitting in this room.* The professor spends the hour taking it apart, what would have to be true for that to count as knowledge, and by the end most of the room isn't sure it knows anything at all. "Justified and true isn't enough," she says, and moves to the next slide before anyone has finished writing it down. Chloe comes out of that hour and stands in the corridor for a minute with her bag still open before she goes on to German.
 
 Block two is hers, so she puts fencing and game theory on the sheet. Fencing she is bad at the way she was bad at dance, seeing the opening and getting her arm there about a fifth of a second after it has closed. Game theory she has inside a fortnight, then loses to Kavi across a table for the rest of the term, because the maths tells her what to do against somebody playing properly and Kavi has never played properly in his life.
 
@@ -98,7 +98,7 @@ Block two is hers, so she puts fencing and game theory on the sheet. Fencing she
 
 "I went left because you'd worked out I go left, so left was the surprise."
 
-"That is not what any of the maths says, Kavi."
+Chloe leans back from the board. "That is not what any of the maths says, Kavi."
 
 "It's what the person says." He is sweeping the counters off the board into his hand and enjoying himself. "You keep playing the table. I'm playing you."
 
@@ -128,7 +128,7 @@ Eli puts a cipher on the table one Thursday, between the salt and the water jug,
 
 "A parking system, and it's live. That's protecting somebody's licence plates right now."
 
-Kavi takes it off him inside a minute and is not even trying. Ruth reads it upside down from across the table and says the key is a date, probably in March. Priya wants to know whether they are allowed to be holding it at all, which starts a second argument, and Odile says the interesting question is why a parking company bought that in the first place and what the salesman told them, which starts a third. Sam eats a second dinner through the whole of it and contributes twice, both times usefully.
+Kavi takes it off him inside a minute and is not even trying. Ruth reads it upside down from across the table and says the key is a date, probably in March. Priya wants to know whether they are allowed to be holding it at all, which starts a second argument, and Odile says the interesting question is why a parking company bought that in the first place and what the salesman told them, which starts a third. Sam eats a second dinner through the whole of it and contributes twice.
 
 Nadia turns the napkin round toward Chloe with one finger.
 
@@ -148,7 +148,7 @@ Nadia turns the napkin round toward Chloe with one finger.
 
 Chloe takes her hand off the napkin and puts it in her lap. Sam starts saying something about the salt. At half past nine there are six opinions at that table and nobody has moved off any of them.
 
-Nadia is there most nights. She says what she thinks in flat words, always, on principle, and Chloe hears about half of it as an accusation. They work the November cipher set together and it goes well. Sam sits between them most nights, and neither of them has ever said a word to him about it.
+Nadia is there most nights. She says what she thinks in flat words, always, on principle, and half of what she says lands as an accusation. They work the November cipher set together and it goes well. Sam sits between them most nights, and neither of them has ever said a word to him about it.
 
 ---
 
