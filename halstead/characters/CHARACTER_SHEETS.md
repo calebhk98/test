@@ -8,14 +8,20 @@ Each sheet carries: voice in one paragraph, measured dials, an exclusive signatu
 would-they-say-this test written as properties of a line, **subjects** (best at, worst
 at, favourite and why, least favourite, the one they are secretly proud of, the one they
 would drop), **personality off the page**, **would do / would never do**,
-**body and habits** with UNDEFINED marked rather than invented, **relationships** one
-line per person, facts a rewriter needs, known problems, and who they blur into.
+**body and habits**, **relationships** one line per person, facts a rewriter needs, known problems, and who they blur into.
 
-Start here: **`_DIFFERENTIATION.md`**, which leads with how much similarity is correct —
+Start here: **`_CALIBRATION.md`** — how good these people actually are, what a weakness
+means at a school where everyone is a genius, and why the teachers never let a student
+know anything is impressive. Every sheet is written against it.
+
+Then **`_DIFFERENTIATION.md`**, which leads with how much similarity is correct —
 a cohort taught by the same adults from age seven should sound alike, and the parents are
 married — then lists the shared baseline to keep and the margins that sit on top of it.
 It also records the rule that **nobody in this book is evil**. **`_TEMPLATE.md`** is the
 structure every sheet follows.
+
+**No tags.** Sheets state things plainly rather than marking them [text] or [invented].
+Where the manuscript shows something, it is quoted with a file and line.
 
 **On shared answers.** Eli and Kavi are both best at cryptography; Chloe and Ruth are
 both best at mathematics; Kavi and Ruth would both drop politics. Those are correct.
