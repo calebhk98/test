@@ -30,6 +30,48 @@ Two behavioral facts, both about permanence and objects rather than about people
 
 Failure mode: writing her as attached to the room, to Chloe, or to Halstead itself. Every trait she has (no decorating, rocks that travel with her, a collateral asset rather than a relationship) points the other way — portable, practical, low-investment in place.
 
+## Subjects
+
+Grounded against CURRICULUM_GRID.md, which lists wood shop as compulsory at age eight and woodworking / the forge as available block-two electives from age eleven on (CURRICULUM_GRID.md, "Age 8" and "Age 11" rows; the block-two catalogue includes "woodworking" and "the forge"). Nothing in the manuscript itself states which classes Fen takes — everything below is inference built on the one hard object fact the text gives.
+
+- **Favourite:** [inferred, loosely grounded] Something in the wood shop / woodworking / forge line, given she owns or uses a table saw well enough for Chloe to accept it as loan collateral at fifteen (chapters/18_fifteen.md:109). The school's own catalogue makes this a real, available elective, so the inference has somewhere to land — but no scene ever shows her in a class of any kind.
+- **Best at / worst at / least favourite / secretly proud of / would drop if allowed:** UNDEFINED.
+- **How she feels about a classmate who reads ahead:** UNDEFINED. She and Chloe never have a scene where academic performance comes up at all — every interaction between them is domestic (the room, the rocks) or financial (the loan), never school.
+
+## Personality off the page
+
+- Treats a room as temporary rather than something to invest in: won't put anything on the walls because "the rooms all get reassigned in August anyway" (chapters/10_april.md:13).
+- Keeps a personal collection in careful, deliberate order regardless of the room around it: the rocks are "lined up along the sill in order of size" (chapters/10_april.md:13) and are still intact enough to be packed the same way, wrapped in newspaper, when she leaves that room in June (chapters/10_april.md:137).
+- Doesn't stop a task to greet someone arriving: keeps doing what she's doing when Chloe first walks in (chapters/10_april.md:13).
+- Asleep by nine [text, reported secondhand by Chloe] (chapters/10_april.md:117) — the only detail given about her at night; nothing describes a 2am version of her.
+- UNDEFINED: how she occupies a room otherwise, what she does with her hands beyond arranging rocks, how she handles being bored, wrong, praised, or losing, what a free Saturday looks like, what she finds funny in other people.
+
+## Would do / would never do
+
+**Would:**
+- Explain something practical and unsentimental about the room to a brand-new roommate within minutes of meeting her, without pausing what she was already doing (chapters/10_april.md:13).
+- Keep a personal collection in the same careful order across at least one full room change (chapters/10_april.md:13, 137).
+- Show someone an object she cares about without turning it into a conversation — she "shows her a piece of quartz the size of a fist" and the text records no further exchange (chapters/11_eight.md:111).
+- Lend or extend value to someone at a set price rather than for free or out of sentiment — she puts up a table saw as loan collateral rather than simply asking Chloe for cash (chapters/18_fifteen.md:109).
+- Stay loosely in touch across years without it becoming a close friendship — she's still enough a reference point at seventeen or eighteen for her opinion of a college to matter (CHAPTERS_16_22_v2.md:32).
+
+**Would never:**
+- Would never decorate a room she expects to leave — stated directly as her own reasoning (chapters/10_april.md:13).
+- Would never be shown initiating an emotional conversation — everything attributed to her is practical, procedural, or object-based; nothing in the text has her asking Chloe how she's doing or offering comfort.
+- Would never be shown breaking her own routine (asleep by nine, per Chloe's report) for anything — no exception is ever mentioned.
+- Would never be shown resentful about losing a roommate, being moved to a new floor, or any other disruption — the several room and roommate changes she goes through are all reported without any stated reaction from her.
+- Would never be given a directly quoted line under the current draft — flagged here as a fact about the text as it stands, not a trait of hers; see Known problems.
+
+## Body and habits
+
+UNDEFINED almost entirely. The only physical facts anywhere in the text: she is "asleep by nine" (chapters/10_april.md:117, reported by Chloe, not shown), and she owns rocks and, later, a table saw. No build, face, hair, clothing, voice, or posture is described anywhere across the roughly ten years she appears in the book.
+
+## Relationships
+
+- **Chloe (roommate, ages 8–9):** [text] The person she interacts with most, and the least emotionally invested relationship shown on the page for either character — Fen explains two practical facts about the room and goes back to what she was doing (chapters/10_april.md:13); nothing suggests either of them wants anything from the other beyond sharing space.
+- **Chloe (later, financial):** [text] By fifteen the relationship is transactional rather than domestic — Chloe lends her money at interest against the table saw (chapters/18_fifteen.md:109), and it's repaid; no scene shows them together for this to happen in.
+- **Her second-floor roommate, an unnamed girl from Maine:** [text, unelaborated] Mentioned once as who she's living with by that September (chapters/11_eight.md:111); no interaction between them is shown.
+
 ## Likes, dislikes, habits
 
 - Collects rocks, kept in size order [text] — chapters/10_april.md:13, still present and packed up in chapters/10_april.md:137.

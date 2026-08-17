@@ -58,6 +58,49 @@ She sets firm, stated structure early (seating groups until Thanksgiving, no swa
 2. Cutting the floor-level physical detail. The crouch and the hand on the back are her defining trait; a version of her that responds to Chloe's crying only verbally, from standing, loses the one thing that separates her from every other adult in this batch.
 3. Having her successfully get an answer out of Chloe. The chapter ends on "I don't know," repeated, with Chloe unable to stop. Do not resolve this scene for her — the lack of resolution is the point.
 
+## Subjects
+
+- Teaches second grade, self-contained: arithmetic (adding with carrying), a class-wide "time capsule" writing project, table-group seating and cooperation norms.
+- Responsible for roughly one classroom's worth of children in groups of four — the same order of scale as Aldana's room the year before; no reason in the text to expect otherwise.
+- Best at: framing a routine assignment with real emotional stakes rather than as filler — the time-capsule pitch to a future self, argued out loud in three full statements before any student reacts [text, chapters/07_the_same_room.md:105–123].
+- Worst at: noticing a small, non-disruptive social moment while her hands are on a different task — the "weirder" exchange happens while she's at the cabinet with tape, and she "doesn't look up for any of it" [text, chapters/07_the_same_room.md:143].
+- Favourite [inferred]: the time-capsule project — it gets more explanation and care in the text than anything else she's shown teaching.
+- Least favourite [inferred]: the same institutionally mandated pacing every teacher in the school runs — the carrying worksheet is administered, not built, and gets none of the same attention in the text.
+- Secretly proud of [inferred]: getting a room of seven-year-olds to sit with a genuinely reflective assignment instead of just filling time.
+- Would drop if allowed [inferred]: nothing textual rises to the level of a subject she resents; the closest is the repeated request to swap seating groups, which she shuts down the same way every time.
+
+## Personality off the page
+
+She likely believes, accurately most of the time, that she's the attentive one — "everyone says she's the nice one" isn't empty reputation in the text, it's backed by real, immediate physical action every time a student is in visible distress. She would probably be surprised to learn she missed the "weirder" moment, because in her own account of herself she's the teacher who notices; the text doesn't suggest she is aware of the gap. Where she sits: rarely — she moves toward distress immediately, crouching or getting to floor level, and otherwise occupies the room at the cabinet or the front desk doing hands-on prep work (tape, a foil-covered box). Hands: taping a shoebox; a hand flat on a student's back, left there rather than patted once and withdrawn. Bored, wrong, praised, losing, tired: UNDEFINED — no such scene exists. At 2am, on a free Saturday, what she'd find funny in someone else: UNDEFINED.
+
+## Would do / would never do
+
+**Would do:**
+- Come down a row and get physically level with a crying child, in front of the whole class, without hesitating.
+- Stay at floor level through a run of unanswered questions rather than standing back up.
+- Offer an explicit no-consequences promise before asking whether someone hurt a student.
+- Frame a routine assignment as something with real personal stakes rather than as busywork.
+- Hold a firm classroom rule (no swapping seat groups) the same way for every student who asks.
+- Keep teaching, unbothered, through an unusual or oddly phrased answer from a student rather than treating it as a problem to manage.
+
+**Would never:**
+- Ignore visible distress in her classroom, or delay before responding to it.
+- Press a student for an answer more than once after they've said "no."
+- Make a struggling or crying child feel watched-as-a-spectacle rather than cared for — she gets down to their level instead of standing over them.
+- Mock or dismiss an odd or advanced answer from a student in front of the class.
+- Blame a student for a classmate's comment about them.
+- Leave a distressed child mid-conversation to attend to something administrative.
+
+## Body and habits
+
+Build, face, hair, clothing: UNDEFINED — no physical description given. Hands: tapes foil to a shoebox; puts "a hand flat on Chloe's back and leaves it there" rather than a brief pat [text, chapters/07_the_same_room.md:203]. Movement: "comes down the row and crouches all the way down," then "stays down there on the floor" through the whole exchange [text, chapters/07_the_same_room.md:203, 217] — the most physically grounded posture of any adult in this batch. Sleep, eating, dress: UNDEFINED.
+
+## Relationships
+
+- **Chloe:** responds immediately and physically to her distress, and is the only teacher in this batch shown offering an explicit safety promise for disclosure — "nothing happens to you for telling me."
+- **Meg:** calls the house directly to flag a concern, which Meg receives as unusual and appreciated — "most people wouldn't have" [text, chapters/08_the_asking.md:5] — the only adult at the school shown proactively reaching out.
+- **Bryce Dolan, Kayleigh Burns, and the rest of the seating group:** runs ordinary classroom management with them; not shown intervening the one time a peer comment (Bryce's "weirder") actually lands on Chloe.
+
 ## Likes, dislikes, habits
 
 - **Likes:** framing an assignment as something with real stakes for the student rather than as busywork — the time-capsule pitch [text, chapters/07_the_same_room.md:105–123].

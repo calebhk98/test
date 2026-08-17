@@ -35,6 +35,40 @@ There is no scene of her acting — everything is summarized across a period of 
 2. Treating "Deb will not have it" as friction or conflict. The text frames it as ordinary — Chloe reclassifies it as "courtesy," not an obstacle — and there's no evidence Deb experiences it as anything either.
 3. Conflating her with the unrelated swim-instructor Deb in chapters/05_behind.md (see Known problems) — the two share nothing but a name.
 
+## Subjects
+
+Not a teacher or a clinician, so the academic frame doesn't map cleanly onto her — adapted to what the text actually shows:
+
+- Work: translates documents (contracts, manuals, safety sheets) at the same company as Chloe; no line in the text shows her actual skill level at the job itself.
+- Best at [text]: talking — specifically, holding a colleague's attention with an ongoing, detailed account of her son's life, at length, over months.
+- Worst at [text]: taking in a plain, first-pass explanation of something at work — she "will not have it" until it's reframed with "a different angle, a comparison, something from Deb's own life" [text, CHAPTERS_16_22_v2.md, Ch20 "Nineteen"].
+- Favourite / least favourite: not applicable — no academic or task-based preference is shown anywhere in the text.
+
+## Personality off the page
+
+Almost entirely unknowable — there is no scene of her alone, bored, wrong, praised, or losing at anything. The one grounded read [inferred]: she experiences her own pushback on Chloe's explanations as ordinary engagement, not obstruction — she wants the concrete, personal version of a thing, not the abstract one, and says so by not moving on until she gets it. She is generous with her own personal material first (talking about her son "constantly") and, on the pattern the text shows, seems to expect a comparable currency back — the concrete and personal, not the plain and procedural. Where she sits: opposite Chloe [text]. Everything else — hands, tiredness, a free Saturday, what she'd find funny — is UNDEFINED.
+
+## Would do / would never do
+
+Thin evidence — kept short, and nothing here should be read as more than a small, cautious extrapolation from two sentences of summary.
+
+**Would do:**
+- Talk at length and readily about her son to a colleague who'll listen.
+- Push back on a first, plain explanation until it's reframed in a way she can actually use.
+- Sit opposite the same colleague, day after day, without incident, for at least a year.
+
+**Would never:**
+- UNDEFINED with confidence — no scene shows her declining, refusing, or reacting negatively to anything. The one cautious inference: she is unlikely to nod along to an explanation she doesn't actually follow just to end the conversation, since every instance shown has her pushing back instead of disengaging.
+
+## Body and habits
+
+Entirely UNDEFINED. No physical description — build, face, hair, clothing, hands, voice — appears anywhere in the text.
+
+## Relationships
+
+- **Chloe:** a genuinely liked colleague; Chloe invests in the relationship without being asked to (learns "his entire life story," is "genuinely invested" by October) and does real, repeated work to be understood by her, which she classifies as "ordinary courtesy" rather than a burden.
+- No other relationships are shown in the text — no contact with Meg, Dave, or anyone else in Chloe's family.
+
 ## Likes, dislikes, habits
 
 - **Likes:** talking about her son [text, CHAPTERS_16_22_v2.md, Ch20 "Nineteen"].
