@@ -124,9 +124,9 @@ A woman called Mrs. Okonkwo walks the three of them around for an hour, going ba
 
 Her mom asks three questions about the nurse and gets three straight answers. Then she asks a fourth one about who's awake at night, and gets that one answered too.
 
-In the afternoon they put Chloe in a second grade room while her parents go off somewhere with somebody else. There are twelve kids in it and they're doing something with a map of a river, and nobody makes anything at all of her being there. A boy at her table lends her a pencil without being asked for one. At the end of it a man with grey coming into his beard sits down on a chair the same size as hers and asks her what she'd do with an entire day if nobody told her what to do with any of it. She talks for four minutes without stopping once, and he lets her get all the way to the end of it.
+In the afternoon they put Chloe in a second grade room while her parents go off somewhere with somebody else. There are twelve kids in it and they're doing something with a map of a river. A boy at her table lends her a pencil without being asked for one. At the end of it a man with grey coming into his beard sits down on a chair the same size as hers and asks her what she'd do with an entire day if nobody told her what to do with any of it. She talks for four minutes without stopping once, and he lets her get all the way to the end of it.
 
-Nobody gives her a test. She keeps waiting for the part where somebody gives her a test, right through the afternoon and out to the car.
+Nobody gives her a test. She keeps waiting for someone to hand her a test, right through the afternoon and out to the car.
 
 It's dark by the time they're back on the road.
 
@@ -134,6 +134,6 @@ Chloe talks for the whole four hours of it. She talks about the room she'd have 
 
 Her dad carries her bag in. He puts it at the bottom of the stairs. She goes through to the kitchen and gets herself a glass of water at the sink, standing on the edge of the cupboard door to reach the tap the way she isn't supposed to.
 
-Out the kitchen window, her mother is still sitting in the car. The engine is off, the lights are off, and she hasn't opened the door on her side.
+Out the kitchen window, her mother is still sitting in the car. The engine's off, the lights with it, and she hasn't opened the door on her side.
 
-Chloe watches her through the window for a second, and then her dad says something from the other room about whether anybody wants toast, and she goes.
+Chloe watches her through the window until her dad says something from the other room about whether anybody wants toast, and she goes.
