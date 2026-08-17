@@ -56,6 +56,46 @@ He conducts two full visits over seven months rather than one rushed one, and le
 2. Giving him a personal opinion about Halstead, the withheld research, or Chloe's upbringing. Nothing in the text shows him reacting evaluatively to any of it.
 3. Compressing his two visits into a single rushed one. The seven-month span and the two separate visits are specified; collapsing them changes the pacing the text establishes.
 
+## Subjects
+
+- Specialism: federal background/clearance investigation — verifying identity, history, funding sources, publications, and prior disclosures against a fixed procedural checklist.
+- Responsible for one subject over seven months, across two in-person visits — unhurried by design, not understaffed.
+- Best at: getting complete, verifiable answers without applying visible pressure — Chloe volunteers information "properly," taking real time to think, rather than being pushed into it.
+- Worst at / hardest for him: the parts of Chloe's history that are structurally unverifiable from where he sits — Halstead's funding, the identity of its principal donor — and he records the gap honestly rather than forcing a resolution, because closing it isn't within what one investigation of one person can do.
+- Favourite [inferred]: a subject who volunteers information straight, without needing to be drawn out — matches the text's "she tells him everything."
+- Least favourite [inferred]: a thread he can record but not close, like the third, undisclosed research project.
+
+## Personality off the page
+
+He appears to believe thoroughness is itself a form of respect for the person being investigated — not pretending a question is casual, in his own apparent logic, is more honest than performing false ease, and Chloe reads it exactly that way. He does not seem to experience the unresolved threads in her file (the funding, the withheld project) as failures of his process; a well-run investigation, to him, likely means recording what's true and what's unknown accurately, not manufacturing certainty that isn't there. Where he sits: across from his subject, for two full visits rather than one rushed one. Hands: holds a pen, writes for a while after nearly every answer, mundane or not. Bored, wrong, praised, losing, tired: UNDEFINED — no such scene exists. At 2am, on a free Saturday, what he'd find funny in someone else: UNDEFINED.
+
+## Would do / would never do
+
+**Would do:**
+- Return for a second visit rather than try to resolve everything in one sitting.
+- Record information that has no legal standing anyway, because it was volunteered.
+- Ask a direct hypothetical and then actually wait through a real pause for the answer.
+- Independently verify what can be verified before asking about it.
+- Let an interviewee finish a full account without cutting in.
+- Write for a while after any answer, mundane or not.
+
+**Would never:**
+- Pretend a serious question is casual or off the record.
+- React with visible surprise, suspicion, or disapproval to a startling disclosure.
+- Push a subject past "I'd want to talk to her first" on a matter of someone else's confidence.
+- Accept an unverifiable claim as settled without noting the gap honestly.
+- Rush an interview to close the file faster.
+- Discuss the specifics of one case as an example in another.
+
+## Body and habits
+
+Entirely UNDEFINED beyond his one described action: writes for a while after nearly every answer [text, CHAPTERS_23_30_v2.md, Ch25 "Cleared"]. No description of build, face, age, or dress exists anywhere in the text.
+
+## Relationships
+
+- **Chloe (adult):** the one outside authority figure in her adult life the text shows her actively liking, specifically because he doesn't perform false ease with her.
+- No other relationships appear in the text — his scene is a two-hander with Chloe alone, with no parent, colleague, or third party present.
+
 ## Likes, dislikes, habits
 
 - **Likes:** UNDEFINED — no personal preference is shown.

@@ -59,6 +59,51 @@ He deliberately levels the physical space before starting — sits "on a chair t
 2. Making him falsely optimistic with Meg. His candor about the odds ("the rest of them put it in the folder") is load-bearing; a version that promises the school will act on his report contradicts his own stated realism.
 3. Bringing him back into the story without addressing why he's absent. He is the only adult in the manuscript holding a full formal cognitive profile of Chloe, and the family's later clinical contact is with an unconnected second clinician (Dr. Ammons) who is never shown to have seen his report. Any later scene featuring him needs to either explain the gap or acknowledge it.
 
+## Subjects
+
+- Specialism: psychoeducational/cognitive assessment — administers what reads as a full individually administered battery (block design, verbal reasoning, digit span, coding, comprehension, picture completion, story recall, mazes) and is trained specifically to look for a gap between reasoning ability and processing speed.
+- Responsible for one child per appointment; the text shows a single, thorough, roughly two-hour session rather than a caseload.
+- Best at: translating a composite score into plain, actionable language for a parent — the percentile explanation to Meg is built step by step, with every term unpacked as he goes.
+- Worst at / hardest for him: nothing in the scene reads as a professional weakness — he is uniformly competent throughout. The real limit is institutional, not personal: an accurate report still has to survive a school that may "put it in the folder," and that part is outside his subject entirely.
+- Favourite [inferred]: the moment a hard task actually lands — Chloe gets one fast and "her face goes hot in the good way," and he lets the moment sit rather than rushing to the next item.
+- Least favourite [inferred]: delivering a number that's likely headed nowhere — he states the realistic odds plainly, without relish and without cynicism either.
+- Secretly proud of [inferred]: catching in one sitting what an entire school year of teachers missed.
+- Would drop if allowed: nothing textual.
+
+## Personality off the page
+
+He seems to understand his job as translation, not rescue: his work succeeds when the parent leaves the room understanding the true picture, whether or not the institution downstream ever acts on it. He states the real odds without illusions ("some of them do move on a report like that... the rest of them put it in the folder") but also without cynicism — this reads as a man who has made peace with the edge of his own authority rather than one who has stopped caring. He does not believe he is failing Chloe; by his own measure, an accurate two-hour picture of a six-year-old, delivered honestly to her parent, is the whole job, and he does it completely. Where he sits: deliberately level with the child — "a chair the same size as hers" [text] — a considered choice about how he occupies the room. Hands: runs a timer with his thumb, takes the pencil from Chloe's hand the instant time is up, caps his pen at the end of the session. Bored, wrong, praised, losing, tired: UNDEFINED — no such scene exists. At 2am, on a free Saturday, what he'd find funny in someone else: UNDEFINED.
+
+## Would do / would never do
+
+**Would do:**
+- Sit in a chair the same size as the child's rather than one that puts him above her.
+- Explain a task's rules before starting it, including that some parts are supposed to be hard.
+- Tell a child plainly that a question about her own performance isn't one he'll answer.
+- Take materials away the instant time is up, without letting a child linger and self-score.
+- Give a parent the specific, honest number even when it complicates the story she'd rather hear.
+- Name the realistic odds of a report actually changing anything, without softening them.
+
+**Would never:**
+- Rate or rank a child's performance to her face.
+- Let a child believe a hard section going badly means something is wrong with her — "that's a totally fine answer."
+- Promise a parent that an accurate report guarantees institutional action.
+- Rush a timed section or shade a result to make an outcome look better or worse than it is.
+- Talk down to a six-year-old, or simplify past the point of honesty.
+- Discuss one family's results with another family.
+
+## Body and habits
+
+The only physical trait the text commits to: he "has a beard" [text, chapters/02_march_4th.md:18]. Everything else about his build, face, or dress is UNDEFINED. Hands: starts a timer with his thumb, takes the pencil from Chloe's hand and turns the sheet face down the instant time is called, caps his pen at the end [text, chapters/02_march_4th.md]. Room: a small table, a bin of blocks, a box of tissues, blinds pulled halfway over a view of the parking structure — no exam table. Sits deliberately in "a chair the same size as hers" [text]. Sleep, eating, dress beyond the beard: UNDEFINED.
+
+**Worth flagging:** chapters/09_february.md describes an unnamed man at Chloe's Halstead entrance assessment, months later — "a man with grey coming into his beard sits down on a chair the same size as hers" (chapters/09_february.md) — the identical chair-matching gesture and a graying version of the same one physical trait Prentice has. He is never named, and Known problems already establishes that Prentice has no confirmed reappearance anywhere in the text; this echo is either a deliberate quiet callback the author intended to leave ambiguous, or a coincidence worth asking about directly. Flagged here rather than resolved, since resolving it either way would be invention.
+
+## Relationships
+
+- **Chloe:** treats her as a full, credible informant about her own experience, and levels both the physical space and the conversation to get an honest account from her rather than a compliant one.
+- **Meg:** gives her the complete, specific, sometimes uncomfortable truth rather than a comfortable summary, including the realistic odds that nothing institutional will change.
+- **Dave:** no on-page contact — not shown present at the appointment.
+
 ## Likes, dislikes, habits
 
 - **Likes:** matching a child's physical scale rather than working from a position of adult height [text — the chair, chapters/02_march_4th.md]. Precise, checkable information over reassurance [text — throughout the hallway debrief].

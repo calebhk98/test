@@ -37,6 +37,48 @@ Answers a question with a question, then still does the requested demonstration 
 ## Are they acting like themselves?
 When two different students ask him to repeat the same demonstration in the same lesson (Marisol, then implicitly others), he repeats it exactly rather than accelerating, skipping, or getting visibly impatient — the text explicitly notes the absence of comment. When Chloe and Ruth extend the lesson into dividing by zero, unscripted, he follows them there rather than shutting the tangent down: "'What about zero,' Ruth says. 'What about zero.' ... 'Good,' Mr. Baptiste says, and does that one on the board too." (chapters/05_behind.md:43-46) Failure mode a writer would fall into: giving him a line that resolves a student's confusion directly instead of handing the resolution back to them — the text's actual method is to leave Chloe stuck at the end of the class scene entirely, and she solves it alone that night on the floor (chapters/05_behind.md:48-52), which he permits by not over-explaining in the first place.
 
+## Subjects
+Teaches early mathematics — fraction division, arithmetic — to the youngest age band (6-7). CURRICULUM_GRID.md's mathematics table for ages 7-9 reads "No formulas given. You get the thing the formula is about and a week" — an exact match for his rectangle-and-shading method, which never once states the rule "flip and multiply" and instead rebuilds what division is asking.
+
+**Best at:** getting a student to rebuild the reasoning behind a rule instead of memorizing it. [text: chapters/05_behind.md:33-46]
+**Worst at:** UNDEFINED.
+**Favourite, and why:** [inferred] the "why" behind an operation over the operation itself — every one of his lines pushes toward the underlying question, never toward the mechanical answer.
+**Least favourite:** UNDEFINED.
+**Secretly proud of:** [inferred] getting two different students (Chloe, then Ruth) to extend one lesson into a genuinely harder question — dividing by zero — inside a single class period, and following them there instead of redirecting. That's unusual latitude for the most structured, youngest age band in the school.
+**Would drop if allowed:** UNDEFINED.
+
+**What he was before Halstead:** UNDEFINED.
+**What he'd teach if he could teach anything:** [inferred] likely nothing else — his Socratic method is subject-agnostic in principle, but every glimpse of him in the text is fused to arithmetic specifically.
+**What he thinks of the rest of the curriculum:** UNDEFINED. He has the narrowest window of any teacher on this list — one age band, one scene with quoted lines — and never references anything outside his own room. An open question worth raising: at the youngest band, before politics, before ten pages a week, before any part of the hidden ramp CURRICULUM_GRID.md describes has started compounding, does he see what's coming for these students, or is his classroom simply insulated from it? The text gives no signal either way.
+
+## Personality off the page
+[inferred, from the single scene] Comfortable with unstructured extension of a lesson — when two different students pull the class past the planned material, nothing in the text shows him resisting or redirecting back to schedule. Caps and uncaps a marker as a visible thinking beat before he explains. [text: chapters/05_behind.md:33] Bored, tired, 2am, a free Saturday, what he finds funny in others: UNDEFINED.
+
+## Would do / would never do
+Never resolving Chloe's confusion for her in the moment isn't withholding — the method is built so the discovery belongs to her afterward, and the text stages that explicitly: she solves it alone, on the floor, that night, and gets to own it.
+
+**Would:**
+- Answer a question with a question by default. [text: chapters/05_behind.md:33, 40, 44]
+- Repeat a full demonstration exactly, without comment, for a student who needs it again. [text: chapters/05_behind.md:38]
+- Follow a tangent into genuinely harder territory rather than redirect back to the lesson plan. [text: chapters/05_behind.md:43-46]
+- Name a question as good, specifically, while never naming the student who asked it as smart. [text: chapters/05_behind.md:33, 46]
+- Let a student leave class still confused, on purpose, rather than close the gap for them. [text: chapters/05_behind.md:34, 47-48]
+
+**Would never:**
+- Give a direct answer where a redirect would leave more for the student to find themselves.
+- Call a student clever, quick, or ahead of the others.
+- Show visible impatience at repeating himself.
+- Manage or soothe a student's visible frustration in the moment — Chloe's "ears... hot for an hour" gets no acknowledgment from him at all, consistent with a method that trusts her to carry it home and resolve it alone.
+
+## Body and habits
+Caps and uncaps a marker before explaining. [text: chapters/05_behind.md:33] Draws on the board while talking. [text: chapters/05_behind.md:34] Build, age, clothing, eating, sleeping: UNDEFINED.
+
+## Relationships
+- **Chloe** — asks the founding question of the scene ("Why do you flip it") and is the one told "Good, that's the question," but he does not resolve her confusion for her; she works it out alone that night.
+- **Marisol** — asks for a full repeat of the demonstration and gets one, without comment.
+- **Owen** — asks a harder, more specific question and, unable to answer yet, is told "that's fine and they'll do it again tomorrow" — the gentlest deferral in the sample.
+- **Ruth** — extends the lesson into the "divide by zero" tangent and gets the same "Good" Chloe got, plus a worked example on the board.
+
 ## Likes, dislikes, habits
 - Answers a question with a question by default. [text: chapters/05_behind.md:33, 40, 44]
 - Repeats a demonstration without comment when asked. [text: chapters/05_behind.md:38]
