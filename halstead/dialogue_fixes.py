@@ -53,10 +53,17 @@ CHAT_LINE = re.compile(r"^\s*([a-z]+):\s*(.+)$", re.I)
 
 
 def dialogue_spans(text):
-    """Character ranges holding speech: inside double quotes, or a chat message."""
+    """Character ranges holding speech: inside double quotes, or a chat message.
+
+    A chat line yields two spans: the message after the colon, and the whole
+    line including the name. The second exists because two speakers sometimes
+    say the identical words back to back, and the only way to point at one of
+    them is to include the prefix. Rewriting "kavi: X" to "kavi: Y" changes
+    the speech and leaves the attribution alone, so it stays in scope.
+    """
     m = CHAT_LINE.match(text)
     if m and m.group(1).lower() in CHAT_NAMES:
-        return [(m.start(2), m.end(2))]
+        return [(m.start(2), m.end(2)), (m.start(), m.end())]
     return [(m.start(), m.end()) for m in re.finditer(r'"[^"]*"', text)]
 
 
