@@ -10,7 +10,7 @@ Pruitt runs the place off a whiteboard with the Thursday names on it and a list 
 
 "Your heat's wrong and it has been all afternoon."
 
-He keeps walking, leaving her to work out what he meant. It takes her four minutes and one more attempt. After that she is right more often than she is wrong, and the correction is the only sentence he says to her before Christmas.
+He keeps walking, leaving her to work out what he meant. It takes her four minutes and one more attempt. After that she is right more often than she is wrong.
 
 Sam picks a hook off her bench in November and says it beats anything else down there.
 
@@ -22,7 +22,7 @@ Sam holds it up at the window with one eye shut.
 
 He looks a while longer before handing the hook back, telling her it still looks fine to him, and then he takes his coat off the hook by the door because it is nearly six. The girl at the next bench, comes over with a punch in her hand and turns the scroll under the light for about a minute.
 
-"Good job on this, it looks really good."
+"Good job on this. Look how straight the marks run."
 
 Three weeks later Pruitt passes the bench, where the hook is still sitting.
 
@@ -36,17 +36,17 @@ In November Bell takes the metronome off the post and puts it in his coat pocket
 
 "That's the two of you to sort out." He buttons the pocket. "I'd think about it before you decide, because whoever calls it is the one whose bad afternoon everybody else has to have. That, or you can both keep track internally."
 
-Chloe and Odile take a week to settle it and spend four of those days arguing. Odile's count is steadier. Chloe's holds up better at the end of a long day, when Odile starts stretching her count without noticing she is doing it, which Chloe finds out by standing behind her with a watch for three sessions and writing the numbers down. Odile calls for November and hates it by the end of the month. After Christmas they start swapping it depending on the day. Nobody else in the year does that, but the staff let them. The hit rate drops for a fortnight, then comes back higher than before.
+Chloe and Odile take a week to settle it and spend four of those days arguing. Odile's count is steadier. Chloe's holds up better at the end of a long day, when Odile starts stretching her count without noticing she is doing it, which Chloe finds out by standing behind her with a watch for three sessions and writing the numbers down. Odile calls for November and hates it by the end of the month. After Christmas they start swapping it depending on the day. The staff let them. The hit rate drops for a fortnight, then comes back higher than before.
 
 She learns anatomy on herself. By the end of October she can give her resting heart rate, her blood pressure, what her hands do at rest versus after four flights of stairs, and where every bone sits under her skin, all of it by touch. Physics starts in September, and half of what she was told at nine comes back with the reasoning underneath it.
 
 Psychology runs one term and is mostly reading, though about a third of every hour is spent arguing over whether the studies show what their authors claim.
 
-Her cuffs stop reaching her wrists in October and she puts in for a new set. That same fortnight she and Ruth get stuck side by side in the doorway into Arabic, shoulder against shoulder in a gap built for one, and Chloe finds she is looking at the top of Ruth's head.
+Her cuffs stop reaching her wrists in October and she puts in for a new set. That same fortnight she and Ruth get stuck side by side in the doorway into Arabic, shoulder against shoulder in a gap built for one, and she is looking at the top of Ruth's head.
 
 "Don't say a single word to me about it."
 
-"I haven't said anything to you at all." smirking.
+"I haven't said anything to you at all," she says, smirking.
 
 "You've got the face on, and the face is worse." Ruth goes through first and lets the door swing back. "People stop at different times. My mother was exactly this height at twelve and she's five foot nine, so make the most of your next four years, because that's the whole of what you're getting."
 
@@ -74,7 +74,7 @@ At half past eleven they go down. Four ovens the size of wardrobes line the kitc
 
 "We're doing eight and they have to come out the same." He is already pulling a tray down. "It has to be the big oven. That's a box with one temperature in it, and the conveyor cooks the front of a run harder than the back."
 
-He puts the big one on, takes a thermometer off the wall, then stands in front of the glass with it while the rest of them argue over whether butter counts as a variable. By the time the tray is ready he has stopped caring about bread and is writing numbers on the back of his hand.
+He puts the big one on, takes a thermometer off the wall, then stands in front of the glass with it while the rest of them argue over whether butter counts as a variable. By the time the tray is ready he has dropped out of the bread argument and is writing numbers on the back of his hand.
 
 "Eleven degrees a minute for the first four minutes, then it drops to six."
 
@@ -128,7 +128,7 @@ By Christmas she can hold twenty-four seconds in the 10v1, but she is still only
 
 \*\*\*
 
-DEFENSIVE WATCH — SCORING
+DEFENSIVE WATCH - SCORING
 
 They do not enter a building.
 
@@ -146,7 +146,7 @@ Minimum personnel. Every additional student on the response costs you.
 
 At the bottom, in the same typeface, without emphasis: Response time is scored against the standard. The standard is posted weekly.
 
-Chloe is annoyed when the alarm wakes her. It's the small one, the one in her ear, and it means watch. It's four in the morning, she has done a watch at 4, what she hasn’t done is four in the morning with nobody having said a word about it beforehand.
+Chloe is annoyed when the alarm wakes her. It's the small one, the one in her ear, and it means watch. It's four in the morning, she has done a watch at four, what she hasn't done is four in the morning with nobody having said a word about it beforehand.
 
 She's in the corridor in eleven seconds and Kavi is already there.
 
@@ -156,13 +156,13 @@ She's in the corridor in eleven seconds and Kavi is already there.
 
 "Nobody said anything."
 
-"Nobody said anything about tonight.", Ruth arrives with her hair everywhere. "There was nothing on the board. I looked on Tuesday."
+"Nobody said anything about tonight." Ruth arrives with her hair everywhere. "There was nothing on the board. I looked on Tuesday."
 
 Sam gets there last.
 
-Kavi is on their comms in under thirty seconds."It's AES-256," he says."But, it's a six-digit pairing code and they never changed it off default." He's already got the campus cluster chewing on it. "You just do a few billion codes and see which one gives you something that isn't noise. It's four seconds of compute. It's not even interesting."
+Kavi is on their comms in under thirty seconds. "It's AES-256," he says. "But, it's a six-digit pairing code and they never changed it off default." He's already got the campus cluster chewing on it. "You just do a few billion codes and see which one gives you something that isn't noise. It's four seconds of compute. It's not even interesting."
 
-"How is that AES-256," Sam says, wiping his face, “Why wouldn’t they change it?”
+"How is that AES-256," Sam says, wiping his face. "Why wouldn't they change it?"
 
 "Because the box says AES-256," Kavi says. "The box always says AES-256."
 
@@ -176,15 +176,15 @@ Ruth reads over his shoulder, "They're almost certainly actors, look at this. Th
 
 "Anything at all?"
 
-"One of them said he's at the corner and one of them said copy," Kavi says. "That's it. That's everything they've said since I've been on."
+"One of them said he's at the corner and one of them said copy. That's it. That's everything they've said since I've been on."
 
 The plan takes Sam ninety seconds and he is defending it before he's finished describing it.
 
-"They're in the loading corridor, so they've got the stairs or they've got the long way round past the kitchens, and if we push from the north they take the stairs, so —"
+"They're in the loading corridor, so they've got the stairs or they've got the long way round past the kitchens, and if we push from the north they take the stairs, so -"
 
-"Why would they take the stairs."
+"Why would they take the stairs?"
 
-"Because the other way's open ground, Ruth, I just said —"
+"Because the other way's open ground, Ruth, I just said -"
 
 "You said they'd take the stairs. You didn't say why. That's a bad plan, Sam," Ruth says.
 
@@ -200,9 +200,9 @@ The plan takes Sam ninety seconds and he is defending it before he's finished de
 
 "That's the point." She's already moving toward the door. "I'm twelve and I'm small, and I'm a girl in pyjamas. Nobody hits that. They'll grab me and they'll try to keep me quiet and then they'll spend at least four seconds deciding what to do with me, and while they're deciding, they're standing still and they're all facing the same way."
 
-Ruth looks at her, "I’m shorter," Ruth says.
+Ruth looks at her. "I'm shorter," she says.
 
-"Yeah, but I look smaller, It's psychology," Chloe says. "It's the whole first term."
+"Yeah, but I look smaller, it's psychology," Chloe says. "It's the whole first term."
 
 The other thing that gets discussed is the drugs.The kit has both. The traceable one works in about six seconds and the untraceable one takes closer to twenty-five and needs a better stick.
 
@@ -216,13 +216,13 @@ The other thing that gets discussed is the drugs.The kit has both. The traceable
 
 "It's six seconds versus twenty-five."
 
-Ruth thinks about it for about as long as it takes to breathe out."Fine, Fast ones," she sighs, "It'll cost us, but we don’t have much choice."
+Ruth is quiet for as long as it takes to breathe out. "Fine, fast ones," she sighs. "It'll cost us, but we don't have much choice."
 
 \---
 
 Chloe walks around the corner at a normal speed with her hands empty and her arms down.
 
-The face she's supposed to make is confused and half asleep. She knows the face, and  even though she is bad at it, just like drawing and dance, it’s her best shot. 
+The face she's supposed to make is confused and half asleep, and even though she is bad at it, just like drawing and dance, it's her best shot. 
 
 "Uh," she says. "Hi. Who are you?", tilting her head like a lost puppy.
 
