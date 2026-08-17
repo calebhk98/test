@@ -33,11 +33,27 @@ its file and line number.
 | sentence shape | their Axis 1 slot, in five words |
 | disagrees by | their Axis 2 move |
 | wordiness | n/10 and the measured words per line |
-| terseness | measured % of lines three words or fewer |
+| terseness | measured % of lines three words or fewer. A measurement, not a target. Do not set a goal above what the book already does |
+| at length | the circumstance under which this person speaks for more than three sentences, and what it costs them to |
 | jokiness | n/10 and what KIND of funny, which matters more than the number |
 | hedging | measured %, and whether that is right for them |
 | questions | measured %, and whether that is right for them |
 | figurative | allowed / not allowed, per the matrix |
+
+## When they talk at length
+
+Every character needs one. Half the spoken lines in this book run to three words or
+fewer, which caps what any scene can carry, and the sheets have been describing that
+cap and then enforcing it. So name the circumstance that opens this person up: the
+subject they cannot leave alone, the person they explain themselves to and nobody
+else, the situation that makes them argue instead of answer.
+
+It does not have to be frequent and it must not make them chatty. A character who
+speaks at length twice in a book has the capacity; a character with no such
+circumstance at all cannot carry a scene that needs one, and every attempt to write
+them one will read as out of character. Say what it costs them, too. Someone who
+talks freely when cornered is a different person from someone who talks freely only
+when safe.
 
 ## Signature — theirs alone
 The one construction nobody else may use. Two real examples from the text if they exist,

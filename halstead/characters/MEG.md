@@ -26,17 +26,14 @@ She builds a sentence as an escalating three-clause question with the follow-up 
 
 ## Signature: theirs alone
 
-She repeats the other speaker's exact phrase back, flat, before she answers or reacts to it — and what she repeats is always a phrase that just minimized something. Dave does the identical flat repeat-back elsewhere in the book (see Do not confuse with), so the construction itself isn't hers alone; what's hers alone is the target. His lands on a number nobody's backed up. Hers lands on a feeling somebody just talked down.
+Her signature is the escalating question described above, not a repeat. She takes a phrase that just minimised something and turns it into the question that will not let it pass: Dave says "She said something on the phone in October" and she answers "She said something," flat, then "And you didn't think to tell me?" (chapters/17_fourteen.md:183, :185).
 
-- "'You're shooting rifles.'" ... Chloe: "'Yeah, since September.'" Meg: "'Since September.'" (chapters/17_fourteen.md) Then straight into "Chloe. Why is this the first I'm hearing about it?"
-- Dave: "'She said something on the phone in October.'" Meg: "'She said something.'" (chapters/17_fourteen.md) She takes his own words and hands them back before "And you didn't think to tell me?"
-
-It's a different move from the household shorthand she and Dave share generally. The shorthand is affectionate compression; this repeat-back is her way of making sure a minimizing phrase gets heard twice before anyone moves past it.
+**Use the bare repeat sparingly.** PROSE_RULES rule 4 bans restating a phrase verbatim, and its worked example is exactly this shape. The two instances in chapter 17 survive because the repeat converts an excuse into an accusation, which is the "reacting to it for the first time" exception the rule allows. That exception does not scale. Written as a habit it produces rule 4 violations on every page she appears, so it stays rare, and the question after it is the part doing the work.
 
 ## Would they say this?
 
 - YES if it's a question that already contains its own follow-up loaded inside it before an answer arrives.
-- YES if it repeats the other speaker's last phrase back, unchanged, when that phrase just undersold or minimized something, before she says anything new.
+- YES if it turns a phrase that just minimised something into the question that will not let it pass. Rarely, that question is preceded by the phrase itself, said flat; see rule 4 above before using it twice.
 - YES if it pairs a direct emotional question with false brightness or a small joke.
 - YES if it asks one more question after an institution has already given its answer.
 - YES if it enumerates a concern clause by clause: ratios, hours, "what happens if it's worse than a fever."
@@ -120,7 +117,7 @@ Still does the family's taxes every spring, and her brother's, and has done a ne
 
 - Likes order restored after a scare: the sticky note still on the fridge each morning after the March 4th appointment is scheduled (chapters/01_before.md). Likes being asked a question she can answer with a verifiable fact.
 - Dislikes being told a real concern is smaller than she's found it to be: "enrichment," "be careful" (chapters/03, 08).
-- Touches a surface before she speaks about something hard. Repeats a key phrase back exactly once before responding, under stress. Moves toward a small domestic task within minutes of a hard conversation (chapters/01_before.md).
+- Touches a surface before she speaks about something hard. Under stress, answers a minimising phrase with a question built to close every exit. Moves toward a small domestic task within minutes of a hard conversation (chapters/01_before.md).
 
 ## Facts a rewriter needs
 

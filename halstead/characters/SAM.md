@@ -18,7 +18,7 @@ Shortest sentence-builder in the cast: one flat clause, said and done, with no s
 | sentence shape | shortest in the cast; flat declarative; no subordinate clause |
 | disagrees by | restates his position unchanged, louder, or stops talking and acts |
 | wordiness | 5.1 words per line in chat, the shortest of anyone; he never writes a long message |
-| terseness | 31% of his lines are three words or fewer now; target 40%+ |
+| terseness | 31% of his lines are three words or fewer. No target above that: half his prose dialogue already runs to three words or fewer and the book cannot afford more |
 | jokiness | 9/10, the highest in the cast. He's funny because he repeats himself, unmoved, after everyone else has stopped finding it funny. That's stubbornness working as comedy: never hand him a line built on wit or timing. |
 | hedging | 0% on anything factual, tactical, or about himself — that stays absolute, and Theo keeps the exclusive claim on hedging as a general register. The one deliberate crack: when the subject is whether someone else is okay rather than what's true, a single soft word can get through. That isn't the manuscript's flatness leaking into the dial; it's the one place his certainty was never actually about being right. |
 | questions | 7% now, already the highest rate among the students; target higher still |

@@ -35,7 +35,7 @@ He runs two registers and nothing in between. At home he closes a beat with a si
 
 It functions as a genuine full stop, a decision that a subject doesn't need more words yet.
 
-He has a second flat repeat, and this one he shares with Meg: handing a number straight back to whoever just offered it, unchanged, before he starts taking it apart. "Usually pretty good." ... "A hundred." (chapters/03_the_letter.md:65,69) "How many days have you been here?" ... "Twenty-seven." ... "Twenty-seven." (chapters/06_the_list.md:40-42) Meg does the identical construction elsewhere in the book (see Do not confuse with), so the move itself isn't his alone; the target is. Hers lands on a phrase that just minimized something. His always lands on a number nobody's backed up.
+He does not repeat a phrase back. He refuses it and asks for the number instead. Meg reports what the school said as "Usually pretty good." and he answers "That's not a number." Four lines later he supplies the one he wanted, "A hundred." (chapters/03_the_letter.md:65, :66, :69). That is the cleanest separation between the two of them: Meg presses with a question, Dave converts the thing into a figure and argues with the figure.
 
 ## Would they say this?
 
@@ -47,7 +47,7 @@ He has a second flat repeat, and this one he shares with Meg: handing a number s
 - YES if it's flatly declarative even on a point he's about to reverse.
 - YES if it registers real, plain respect for someone else's competence, with no embellishment.
 - YES if it's short enough that Chloe keeps talking rather than having to respond to him.
-- YES if it repeats a number someone just offered back at them, flat, before he starts taking it apart.
+- YES if it rejects a vague answer by naming what is missing from it, then supplies the figure himself.
 - YES if it doubles a bare acknowledgment, alone with Meg, with no reason attached to either half — the manuscript's own instance is "her dad says he knows, twice," and nothing else (chapters/03_the_letter.md:109).
 - NO if it contains a simile or any figurative comparison.
 - NO if it's a whole reasoned point repeated twice for emphasis: he makes the case once and lets it stand.
