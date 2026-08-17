@@ -165,7 +165,7 @@ activity. Nothing in the text shows Priya aware that this happened.
 
 Nashville, Tennessee. An ordinary house on an ordinary street, nothing about it marked for
 horses at all. Her father is an electrician, out on call jobs across the city more days than not.
-Her mother works the front office of a dental practice, on her feet from eight to five, scheduling
+Her mother works the front office of an urgent care clinic, on her feet from eight to five, scheduling
 and billing. Neither of them finished a four-year degree, and neither has ever treated that as a
 gap in their lives. A younger brother is still in middle school and has no particular interest in
 anything Priya does. Dinner is whatever's fastest between two working schedules, some nights at
@@ -333,7 +333,7 @@ thinking, which has probably been true of every morning of her life since she wa
 ## Facts a rewriter needs
 
 - **Name:** Priya Anand. The surname doesn't exist in the manuscript; this sheet gives her one.
-- **Family:** father an electrician, mother works the front office of a dental practice, one
+- **Family:** father an electrician, mother works the front office of an urgent care clinic, one
   younger brother in middle school with no particular interest in horses. Neither parent has a
   four-year degree and neither treats that as a gap.
 - **Home:** Nashville, Tennessee. The riding comes from a stable at the edge of the city, not

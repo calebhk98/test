@@ -8,7 +8,7 @@ Runs the forge, says almost nothing, and wants every student who walks in to lea
 **Speaks:** 2 quoted lines in the entire book, across three chapters and four years of story time, the finding is the scarcity itself.
 
 ## Voice in one paragraph
-Both of Pruitt's lines name the exact fault in the piece in front of him, delivered already leaving: "Your heat's wrong and it has been all afternoon." "He keeps walking, leaving her to work out what he meant." The second line, three weeks later, is shorter still: "You lost the curve on the second turn," delivered "without stopping." Both name a specific, checkable fact about the work and come with no explanation of what to do next, the student is left to work it out, and does, in four minutes. There's no third line to draw a longer pattern from, and that scarcity across four years of story time is the whole of his voice.
+Both of Pruitt's lines name the exact fault in the piece in front of him, delivered already leaving: "Your heat's wrong and it has been all afternoon." "He keeps walking, leaving her to work out what he meant." The second line, three weeks later, is shorter still: "You lost the curve on the second turn," delivered "without stopping." Both name a specific, checkable fact about the work and come with no explanation of what to do next, the student is left to work it out, and does, in four minutes. Neither line uses her name, not once, not even a surname, in four years of speech that totals two sentences; the fault gets named, never the person standing in front of it. There's no third line to draw a longer pattern from, and that scarcity across four years of story time is the whole of his voice.
 
 ## Dials
 | | |
@@ -25,12 +25,16 @@ Both of Pruitt's lines name the exact fault in the piece in front of him, delive
 ## Signature, theirs alone
 Delivers the correction while already leaving, never stops walking, never waits to see it register. Both of his only two lines share this exact staging. No other teacher in the cast is shown speaking exclusively while departing.
 
+Before he ever says a word about a fire or a piece of metal, he's already touched it: checks a new fire's heat with the back of his hand before trusting the gauge, gauge or no gauge, and the same rule runs to a piece on the bench, he reads the work by hand before he reads it by eye. Both of his two lines name something a hand would catch before a measurement would, heat, and a curve gone soft at the second turn. That's the mechanism behind the whole of his method, not just a habit of his own: the metal tells the truth before any reading of it does, which is exactly what he never explains and exactly what four years at the same bench eventually teaches without him saying so.
+
 ## Would they say this?
 **The Halstead-staff test.** A line belongs to this staff, not to a generic teacher, only if all five hold: no praise word attaches to the child; a correction is a flat statement of fact; the child's age is never a reason for leniency; an extraordinary result is treated as expected, not remarked on; the adult's own error is fixed the same flat way a student's is.
 
 Two state historical societies keep Pruitt's number on file for ironwork nobody else will take on, and the forge never advertises that. A student who reproduces a period joint at fourteen gets exactly the same two words a beginner would get for the same flaw: "your heat's wrong." The silence that follows good work is the absence of anything left to correct.
 
 - YES if it names one specific, checkable technical fault and nothing else.
+- YES if a correction names the fault and never the person, not even a name, in four years of speech.
+- YES if it comes from a hand already on the work, heat checked against skin before a gauge, temper checked by feel before an answer is given.
 - YES if it's delivered mid-motion, trusting the student to catch it without a pause for confirmation.
 - YES if it lets a full month pass before he says a single word, trusting the work itself to teach in the meantime.
 - YES if the correction respects the student enough not to explain what they can work out for themselves.
@@ -79,6 +83,8 @@ Drinks black coffee, strong, reheated more than once, doesn't seem to notice or 
 
 ## Would never
 - Praise a finished piece out loud, the one compliment Chloe's work receives in the text belongs to a different, unnamed bench-mate, not to him. (chapters/15_twelve.md:25)
+- Use a student's name, hers or anyone else's, in either of his two verified lines.
+- Trust a gauge over his own hand, or answer a question about temper or heat without checking by touch first.
 - Stop what he's doing to watch a correction register.
 - Comment on four years of unrewarded, unrecorded work, his total spoken output across that span is two sentences, both purely technical.
 
@@ -95,7 +101,7 @@ Drinks black coffee, strong, reheated more than once, doesn't seem to notice or 
 - Checks a fire's heat by hand before trusting a gauge.
 
 ## Facts a rewriter needs
-Full name Harlan Pruitt. Students call him "Pruitt" or "Mr. Pruitt", nobody under eighteen uses a staff member's first name at Halstead. Takes about a dozen restoration and conservation commissions a year for museums and a coastal shipwright's yard; Halstead's offer paid for that work outright and gave him a forge with no client deadlines. Teaching is a handful of hours a week; his own commissioned work is the rest of his time, done in the same building. Signed the standard staff non-disclosure agreement. Widower, no children. Runs the forge, open Thursdays and most of Sunday, from at least Chloe's age 12 through at least 16. No grade or formal assessment is ever recorded for the forge, confirmed by the manuscript, not just the reference documents. Male, undisputed in the text.
+Full name Harlan Pruitt. Students call him "Pruitt" or "Mr. Pruitt", nobody under eighteen uses a staff member's first name at Halstead. Never uses a student's name himself, first or surname, in either of his two verified lines. Checks a fire's heat by hand and a piece's temper by feel before he'll trust a gauge or answer a question about either. Takes about a dozen restoration and conservation commissions a year for museums and a coastal shipwright's yard; Halstead's offer paid for that work outright and gave him a forge with no client deadlines. Teaching is a handful of hours a week; his own commissioned work is the rest of his time, done in the same building. Signed the standard staff non-disclosure agreement. Widower, no children. Runs the forge, open Thursdays and most of Sunday, from at least Chloe's age 12 through at least 16. No grade or formal assessment is ever recorded for the forge, confirmed by the manuscript, not just the reference documents. Male, undisputed in the text.
 
 ## Known problems
 - "In four years the whole of his commentary has been telling her which end to hold" (chapters/19_sixteen.md:109) is narrated summary in indirect speech, not a quotation, there's no scene showing him say that exact phrase. A rewriter should not treat it as recoverable dialogue.

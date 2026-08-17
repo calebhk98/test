@@ -8,7 +8,7 @@ Teaches writing through history, the Federalist Papers, then Burke, and wants ev
 **Speaks:** 4 direct quoted turns (two long, two very short), front-loaded into chapters/13.
 
 ## Voice in one paragraph
-Hearn opens on a fact and adds numbers without commentary: "He wrote fifty-one of the Federalist papers in something like six to eight months. He had a full-time job the entire time he was doing it." (chapters/13_ten_pages.md:7) When he corrects, he corrects the record, not the student, "That's Madison," full stop, class continues. He never calls a paper impressive; the only value judgement in his sample is "It has to be as good. That's the part that's hard." Under siege during the Watch drill his one line is procedural and unbothered: "'that's fine,' puts his glasses back on, and asks the boy nearest him whether he is done with the Burke." Most characteristic construction: what he withholds carries more than what he says, a returned paper with four lines of note reads as a good outcome; one with zero lines is the harshest thing in the book.
+Hearn opens on a fact and adds numbers without commentary: "He wrote fifty-one of the Federalist papers in something like six to eight months. He had a full-time job the entire time he was doing it." (chapters/13_ten_pages.md:7) He addresses every student by surname only, in class and at the top of a returned paper, Kessler, not Chloe, the same formality the school already requires of a student toward him, and nothing in the sample shows him dropping it, not even for the one whose essay he keeps in a folder of his own. When he corrects, he corrects the record, not the student, "That's Madison," full stop, class continues. He never calls a paper impressive; the only value judgement in his sample is "It has to be as good. That's the part that's hard." Under siege during the Watch drill his one line is procedural and unbothered: "'that's fine,' puts his glasses back on, and asks the boy nearest him whether he is done with the Burke." Most characteristic construction: what he withholds carries more than what he says, a returned paper with four lines of note reads as a good outcome; one with zero lines is the harshest thing in the book.
 
 ## Dials
 | | |
@@ -20,10 +20,10 @@ Hearn opens on a fact and adds numbers without commentary: "He wrote fifty-one o
 | jokiness | 0/10 in the sample |
 | hedging | 0% |
 | questions | 0% in dialogue |
-| figurative | none found |
+| figurative | none found in the sample; one door open on Kowalczyk's terms, not a new one — a plain, functional comparison drawn from his own trade (editing, a wire correction, a lede), never an invented image. "None found" had no stated reason the way Bell's literal-optics ban does; a historian who reads five newspapers before breakfast has a real, non-decorative source for exactly the kind of comparison the style guide already permits, so the same door opens for him. |
 
 ## Signature, theirs alone
-The returned-paper economy: the amount of ink he spends is inversely proportional to how the grade lands. A B with four lines of substantive note reads as ordinary; a mark with zero lines reads worse than criticism, "She would rather have had three lines telling her it was bad." (chapters/13_ten_pages.md:162)
+Before he writes a mark, he finds the hedge. The first pass over a paper is silent and produces nothing on the page: he reads once, pencil down, until he hits the sentence where the argument first qualifies itself, and that's the only thing he marks on the way through, everything else follows from what surrounds it. A paper with no hedge in it gets nothing else marked either, there's nothing left to build a note from; a paper that hedges on page one gets read line by line the rest of the way, which is where the four-line notes come from. The returned-paper economy, the amount of ink he spends is inversely proportional to how the grade lands, is the visible half of that first silent pass, not a separate habit: A B with four lines of substantive note reads as ordinary; a mark with zero lines reads worse than criticism, "She would rather have had three lines telling her it was bad." (chapters/13_ten_pages.md:160)
 
 ## Would they say this?
 **The Halstead-staff test.** A line belongs to this staff, not to a generic teacher, only if all five hold: no praise word attaches to the child; a correction is a flat statement of fact; the child's age is never a reason for leniency; an extraordinary result is treated as expected, not remarked on; the adult's own error is fixed the same flat way a student's is.
@@ -31,6 +31,9 @@ The returned-paper economy: the amount of ink he spends is inversely proportiona
 Hearn's own career is the same instrument turned inward. He's a working historian of the founding period whose scholarship holds up against anyone currently publishing on it, and nothing about how he grades a ten-year-old's essay on Hamilton signals that. A fourteen-thousand-word argument that would be a genuinely strong graduate paper anywhere else gets a B and a note about hedging, because the standard he's applying is his own, not a school standard scaled down for children.
 
 - YES if it states a historical fact with a number attached and no adjective.
+- YES if it finds the first hedge in a paper before it finds anything else to say about it.
+- YES if a comparison, when one appears at all, comes from his own trade, editing, sourcing, a wire correction, and not from an invented image.
+- YES if it addresses a student by surname, in speech or in a note, with no exceptions.
 - YES if it corrects an error in two words and continues without pause. ("That's Madison,")
 - YES if it separates quantity from quality and says the second one is the hard part.
 - YES if a silence (no note) is doing more communicating than a sentence would.
@@ -70,7 +73,9 @@ Wants, unspoken: to see one student, just one, write something that would surviv
 Drinks tea, not coffee, weak, with nothing in it. Handwriting is small and exact, the same hand whether he's marking an essay or writing a grocery list. His desk holds exactly what's needed and nothing decorative, no photographs, no mementos, which colleagues have noticed and nobody asks about. Money: spends almost nothing beyond the newspapers and the house, gives the rest to a scholarship fund in his late wife's name. Superstition: reads the first line of a new stack of papers before he lets himself read anything else that morning, a habit from decades of reading a lede before anything else. On a phone: barely uses one, keeps it off during the school day, checks it once in the evening. First thing every morning: the newspapers, before the sandwich, before anything else.
 
 ## Would do
+- Read a paper once, silently, before marking anything, until he finds the sentence where it first hedges.
 - Grade a technically correct paper down for not doing the harder job actually asked. (chapters/13_ten_pages.md:11, 15)
+- Address a student by surname only, never a first name, on the page or in class.
 - Let silence do more work than a sentence would.
 - Move a student to a harder author the moment they've earned it. (chapters/13_ten_pages.md:182)
 - Hold the same standard for a fourteen-thousand-word essay as a ten-page one. (chapters/14_sixty_degrees.md:151)
@@ -98,7 +103,7 @@ Drinks tea, not coffee, weak, with nothing in it. Handwriting is small and exact
 - Keeps a private folder of the work that mattered most to him.
 
 ## Facts a rewriter needs
-Full name Walter Hearn. Students call him "Mr. Hearn" or "Hearn", nobody under eighteen uses a staff member's first name at Halstead. Historian of the founding period, actively publishing scholarly work on Federalist-era political argument; Halstead recruited him with a compensation package well beyond an academic salary and teaching is a handful of hours a week, the rest of his time his own research on the school's resources. Signed the standard staff non-disclosure agreement. Widower, no children. Teaches writing/rhetoric through history: Federalist Papers, then Burke; ten pages a week. Male per the text, undisputed.
+Full name Walter Hearn. Students call him "Mr. Hearn" or "Hearn", nobody under eighteen uses a staff member's first name at Halstead. Addresses every student by surname only, Kessler rather than Chloe, with no exception on the page. Historian of the founding period, actively publishing scholarly work on Federalist-era political argument; Halstead recruited him with a compensation package well beyond an academic salary and teaching is a handful of hours a week, the rest of his time his own research on the school's resources. Signed the standard staff non-disclosure agreement. Widower, no children. Teaches writing/rhetoric through history: Federalist Papers, then Burke; ten pages a week. Male per the text, undisputed.
 
 ## Known problems
 - Most of his reasoning ("the third page... doing the work of the first six," chapters/13_ten_pages.md:31) is reported in narration rather than quoted directly, a rewriter drawing on his voice has only the four quoted turns above to work from verbatim.

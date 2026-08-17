@@ -9,7 +9,7 @@ Chloe's mother: the parent who checks things, married twenty years to a man who 
 
 ## Voice in one paragraph
 
-She builds a sentence as an escalating three-clause question with the follow-up already loaded before the other person has answered the first part. "Is it a choice thing? You can tell me if it is. Nobody's in trouble here, I'm not going to be mad, I'd just rather know." (chapters/01_before.md) When she isn't asking, she's repeating the last thing said back at the speaker, flat, before she reacts to it. She opens institutional lines with "So" more than any other word. She never hedges. She states things flatly, including the one time she says something that isn't true. Her single most characteristic line is "'I'm doing my best guess,' she says. 'Okay?'" (chapters/02_march_4th.md:15). It's the one place her two modes, competent interrogator and private guesser, sit in the same sentence, closed with a tag question that asks a six-year-old for permission.
+She builds a sentence as an escalating three-clause question with the follow-up already loaded before the other person has answered the first part. "Is it a choice thing? You can tell me if it is. Nobody's in trouble here, I'm not going to be mad, I'd just rather know." (chapters/01_before.md) When she isn't asking, she's repeating a phrase back at the speaker, flat, the instant it undersells something that matters, before she reacts to it. She opens institutional lines with "So" more than any other word. She never hedges. She states things flatly, including the one time she says something that isn't true. Her single most characteristic line is "'I'm doing my best guess,' she says. 'Okay?'" (chapters/02_march_4th.md:15). It's the one place her two modes, competent interrogator and private guesser, sit in the same sentence, closed with a tag question that asks a six-year-old for permission.
 
 ## Dials
 
@@ -20,13 +20,13 @@ She builds a sentence as an escalating three-clause question with the follow-up 
 | wordiness | 3/10, measured 5.7 words/line, low-mid for the cast |
 | terseness | measured 54% now, highest in the book. Target 40%. Some of this is the married-couple shorthand, finishing a thought in three words because Dave already has the rest of it, and that part stays |
 | jokiness | 5/10, domestic-idiom deflection, warm rather than sharp ("on the same page. Literally.") |
-| hedging | measured 0%. She states things flatly, even the untrue ones |
+| hedging | measured 0% where anyone can hear her, even the untrue lines. Not the same rule alone: unwitnessed, the parked car is the text's own picture of what that privacy looks like (chapters/09_february.md:137), and a maybe or an I-don't-know is allowed there that would never be allowed at the counter |
 | questions | measured 4% now. Target 20%+. Interrogation is her established competence, on the page since chapters/01, so the target gives her more of what she already does well |
 | figurative | allowed: domestic comparisons only, and only when deflecting |
 
 ## Signature: theirs alone
 
-She repeats the other speaker's exact phrase back, flat, before she answers or reacts to it.
+She repeats the other speaker's exact phrase back, flat, before she answers or reacts to it — and what she repeats is always a phrase that just minimized something. Dave does the identical flat repeat-back elsewhere in the book (see Do not confuse with), so the construction itself isn't hers alone; what's hers alone is the target. His lands on a number nobody's backed up. Hers lands on a feeling somebody just talked down.
 
 - "'You're shooting rifles.'" ... Chloe: "'Yeah, since September.'" Meg: "'Since September.'" (chapters/17_fourteen.md) Then straight into "Chloe. Why is this the first I'm hearing about it?"
 - Dave: "'She said something on the phone in October.'" Meg: "'She said something.'" (chapters/17_fourteen.md) She takes his own words and hands them back before "And you didn't think to tell me?"
@@ -36,7 +36,7 @@ It's a different move from the household shorthand she and Dave share generally.
 ## Would they say this?
 
 - YES if it's a question that already contains its own follow-up loaded inside it before an answer arrives.
-- YES if it repeats the other speaker's last phrase back, unchanged, before she says anything new.
+- YES if it repeats the other speaker's last phrase back, unchanged, when that phrase just undersold or minimized something, before she says anything new.
 - YES if it pairs a direct emotional question with false brightness or a small joke.
 - YES if it asks one more question after an institution has already given its answer.
 - YES if it enumerates a concern clause by clause: ratios, hours, "what happens if it's worse than a fever."
@@ -44,7 +44,7 @@ It's a different move from the household shorthand she and Dave share generally.
 - YES if it stays flat and factual even when what she's saying isn't true.
 - YES if it uses a dead domestic idiom as a joke to cover something harder underneath ("on the same page. Literally.").
 - NO if it uses a built or invented image instead of a dead idiom. Her figurative range is deliberately small and ordinary.
-- NO if it hedges with "maybe," "I think," "probably," or "kind of."
+- NO if it hedges with "maybe," "I think," "probably," or "kind of" — while anyone else can hear her. Alone, unwitnessed, the hedge is allowed; there's no one there to hear that it doesn't sound like her.
 
 ## Are they acting like themselves?
 
@@ -84,7 +84,7 @@ What she hasn't said out loud: that some days she's a little afraid of how much 
 
 ## The small stuff
 
-Still does the family's taxes every spring, and her brother's, and has done a neighbor's for free most years since Chloe went to Halstead freed up her evenings. Reads the mortgage paperwork line by line every time it's refinanced and explains the relevant clause to Dave afterward rather than before, because he'll ask the right follow-up question if she gives him the summary first. Takes her coffee milky, in a mug that says nothing in particular, reheated at least once every morning because she keeps putting it down mid-task. Handwriting small, fast, and completely legible, the opposite of a doctor's, from years of filling out other people's forms. Keeps a physical folder, labeled, for every document that has ever mattered; Halstead's letter is still in it. On the phone she paces the kitchen in a fixed loop, three steps and back, the whole call. First thing in the morning, coffee going before anything else happens in the house, including saying good morning.
+Still does the family's taxes every spring, and her brother's, and has done a neighbor's for free most years since Chloe went to Halstead freed up her evenings. Reads the mortgage paperwork line by line every time it's refinanced and explains the relevant clause to Dave afterward rather than before, because he'll ask the right follow-up question if she gives him the summary first. Takes her coffee milky, in a mug that says nothing in particular, reheated at least once every morning because she keeps putting it down mid-task. Handwriting small, fast, and completely legible, the opposite of a doctor's, from years of filling out other people's forms. Keeps a physical folder, labeled, for every document that has ever mattered; Halstead's letter is still in it. Writes today's date in the corner of anything important before she reads it past the first line, a bill, a permission slip, a letter that's already printed its own date somewhere else on the page, small and fast in the same hand she uses for other people's tax forms. It's a closing entry for something that doesn't have one yet, and a reader would catch her doing it three times before it registers as a habit rather than a coincidence. On the phone she paces the kitchen in a fixed loop, three steps and back, the whole call. First thing in the morning, coffee going before anything else happens in the house, including saying good morning.
 
 ## Would do
 
@@ -98,6 +98,7 @@ Still does the family's taxes every spring, and her brother's, and has done a ne
 - Finish Dave's sentence in a story he's telling, matching the word he was about to use, without taking it over.
 - Keep the porch light on for anyone who's driving home late, whether or not they asked her to.
 - Notice which of two nearly identical explanations an institution gave doesn't quite match, and ask about the gap specifically.
+- Date something in the corner by hand before reading past the first line, even a form that already has a printed date on it somewhere.
 
 ## Would never
 
@@ -133,4 +134,4 @@ Full name Margaret "Meg" Kessler, née Halloran. Husband David "Dave" Kessler (s
 
 ## Do not confuse with
 
-**Dave.** They should sound alike more than any other two people in this book: twenty years married, in the same rooms, worrying about the same child. What separates them at the margins: she asks a question with the follow-up already loaded and repeats the other speaker's phrase back before answering; he closes a beat with "Huh." and disagrees by asking what something costs. She touches; he photographs and builds. Underneath both margins is the same shared baseline, household shorthand, sentences finished for each other, the same worry approached from two different angles, and that baseline stays exactly as large as it currently is.
+**Dave.** They should sound alike more than any other two people in this book: twenty years married, in the same rooms, worrying about the same child. What separates them at the margins: she asks a question with the follow-up already loaded, and when she repeats the other speaker's phrase back it's always one that just minimized something; he closes a beat with "Huh." and, when he repeats a phrase back, it's always a number nobody's backed up. Same flat construction, aimed at two different kinds of unearned thing. She touches; he photographs and builds. Underneath both margins is the same shared baseline, household shorthand, sentences finished for each other, the same worry approached from two different angles, and that baseline stays exactly as large as it currently is.

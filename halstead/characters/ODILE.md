@@ -24,7 +24,8 @@ Two of her three lines are short and flat: "Ruth was bored in the briefing," (ch
 | jokiness | 2/10, a dry confirmation of someone else's read, not a joke of her own |
 | hedging | 0%. No hedge word anywhere she's quoted or paraphrased. |
 | questions | 0% quoted. One unquoted question exists at chapters/18_fifteen.md:79. |
-| figurative | not allowed. True of everything attributed to her. |
+| figurative | not allowed. True of everything attributed to her. Kept deliberately: it's characterising, not a gap the sample left unfilled, and giving her an image would read as showy on a person built to demonstrate rather than describe. |
+| emotional legibility | physical only, and new to this sheet: breath, stillness or its absence, the pace of her eating or sleeping, what her hands do. Never spoken, and never named in her own thoughts on the page either. The ban is on words for a feeling, not on the feeling itself. |
 
 ## Signature, theirs alone
 
@@ -43,6 +44,7 @@ She disagrees by doing the thing rather than arguing it. Real anchor: when Priya
 - YES if she corrects a fact by stating the true version once, plainly, and moves on. chapters/17_fourteen.md:143.
 - YES if she notices someone else's state, bored, cold, hurt, slow, before her own. chapters/17_fourteen.md:19.
 - YES if she treats her own best result as one number posted next to everyone else's on the board.
+- YES if a strong feeling shows only in what her body does, pace, stillness, grip, appetite, never in a word about it.
 - NO if she explains her own motives or feelings out loud. Never happens on the page.
 - NO if she hedges, apologises, or asks permission before acting.
 
@@ -102,6 +104,8 @@ She occupies a room by moving through it rather than settling into it: leaning o
 
 Tired, she gets quieter rather than short-tempered, and lets Léo or Chloe do more of the talking. At 2am she is usually still moving something with her hands, a knot, a hold sequence, a piece of kit, rather than lying still. A free Saturday goes to climbing, further out than she's supposed to go alone. What she finds funny in other people is competence done casually, without anyone announcing it. She confirmed Sam's read on Ruth being bored in a briefing rather than building a joke of her own (chapters/17_fourteen.md:19). Her humour runs on agreement, sharpened, delivered flat.
 
+Angry, she gets exact rather than loud: resets a stance or re-coils a knot that didn't need it, harder than the task requires, until whatever set her off has passed. Embarrassed, which is rare and mostly happens around Léo, the one person whose opinion of her she visibly minds, she goes still a beat too long and then finds something to do with her hands before anyone can ask about it. Envy, when it shows at all, is aimed at people who can say a hard thing out loud and be done with it in one sentence; watching Ruth or Chloe argue something through at length, she'll leave to go move something physical rather than sit inside a conversation she can't have that way. Grief moves through her the way exhaustion does: on a visit home when Léo is briefly too busy with a friend to want her at all, she finds an extra chore nobody asked for and does it slowly. Elated, she doesn't celebrate. She does more of what she already does, eats faster, sleeps harder, is first to whatever's next, so the people who know her can read it and the people who don't can't. Unfair, sometimes, to whoever she corrects in front of the table: the same flat true-answer instinct that settles an argument well can land wrong when what the other person wanted was to be agreed with, not corrected. She won't take it back in words. She'll find some other way to be useful to that person in the next hour instead, gear checked, a hold walked through again, and never say why.
+
 ## Interior life
 
 She'd put herself around a B+ if anyone made her grade herself. She has never met anyone outside Halstead, and has no idea what an ordinary sixteen-year-old can actually do. The ten people who come at her in the fighting hour are the same ten she's spent years learning to read, and three of them can also hold the minute. Her own sixty-nine seconds sits on a board next to their numbers.
@@ -116,7 +120,7 @@ Given a free year, she'd want real rock and her own clock.
 
 ## The small stuff
 
-She takes coffee if it's offered and doesn't ask for it otherwise. Her handwriting is quick and small, more like a list than a letter, the same economy that keeps her reports short. Her pockets, dressed for anything but training, usually hold a hair tie and nothing decorative. Money doesn't interest her much as a subject; she'd rather spend a free hour moving than deciding what to buy. Her one small ritual is checking a knot or a strap twice before trusting it, even when she checked it a minute ago. On a phone she's fast and short, texts the way she talks: flat, factual, done. First thing in the morning she's up before most people, already dressed for whatever the first block is.
+She takes coffee if it's offered and doesn't ask for it otherwise. Her handwriting is quick and small, more like a list than a letter, the same economy that keeps her reports short. Her pockets, dressed for anything but training, usually hold a hair tie and nothing decorative. Money doesn't interest her much as a subject; she'd rather spend a free hour moving than deciding what to buy. Her one small ritual is checking a knot or a strap twice before trusting it, even when she checked it a minute ago. A newer habit: waiting for something to be over, a debrief, a meal she'd rather be done with, a line, her fingers count against her leg in the same rhythm as the ten-on-one clock, one through ten and back to one, whether or not anyone's timing anything. She's never been asked about it, because nobody's caught her doing it long enough to ask. On a phone she's fast and short, texts the way she talks: flat, factual, done. First thing in the morning she's up before most people, already dressed for whatever the first block is.
 
 ## Would do
 
@@ -132,6 +136,7 @@ She takes coffee if it's offered and doesn't ask for it otherwise. Her handwriti
 - Push a physical effort until her own body actually stops her, rather than call it early herself. chapters/18_fifteen.md:95-97.
 - Teach a twelve-year-old a skill she is quietly her own weakest at, and do it well anyway.
 - Show an injury off in plain sight rather than keep it out of view. chapters/17_fourteen.md:23.
+- Redo a chore or a gear check for someone she was too flat with, without saying why.
 
 ## Would never
 
@@ -174,7 +179,7 @@ She takes coffee if it's offered and doesn't ask for it otherwise. Her handwriti
 ## Known problems
 
 1. Almost no dialogue to build from. Three quoted lines in the whole book. Everything in Home, Body, and Interior life above exists to give a writer a person to extend, but her voice on the page stays thin until new scenes give her more of it.
-2. Don't let her react to her own record as if it were a discovery. The instinct will be to give the sixty-nine-second hold a beat where she registers what she's done. She can't. She has spent years around three other people who also do the minute, so the number sits in a crowd from where she's standing. Any scene of her being told or shown that it's the best in the school needs an outside voice doing the telling; it can't come from her.
+2. Don't let her react to her own record as if it were a discovery. The instinct will be to give the sixty-nine-second hold a beat where she registers what she's done. She can't. She has spent years around three other people who also do the minute, so the number sits in a crowd from where she's standing. Any scene of her being told or shown that it's the best in the school needs an outside voice doing the telling; it can't come from her. This is a ban on registering rank, not a ban on feeling anything. The exhaustion after that hold, hands and knees, shaking breath, is already the sheet's best evidence that she feels plenty; what she's not allowed is the beat where she works out that the number itself is unusual.
 3. An earlier draft of this sheet gave her a line about arguing for and winning the combined language year, and framed her as the only student who'd renegotiated a school rule. Cut. It didn't fit a person who settles things by doing rather than arguing, and it read as a distinction manufactured for its own sake. What's kept is smaller: she worked out the overlap between the three Scandinavian languages herself.
 4. An earlier draft also gave her a private, unspoken fear of water, built to contradict how fearless she reads elsewhere. Cut. It had no textual anchor, and it was constructed as a reveal waiting for a future scene rather than something true of her now. Her actual private worry, that Léo will eventually stop being amazed, does the same work without needing a future payoff to justify it.
 

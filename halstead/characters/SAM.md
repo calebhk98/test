@@ -20,7 +20,7 @@ Shortest sentence-builder in the cast: one flat clause, said and done, with no s
 | wordiness | 5.1 words per line in chat, the shortest of anyone; he never writes a long message |
 | terseness | 31% of his lines are three words or fewer now; target 40%+ |
 | jokiness | 9/10, the highest in the cast. He's funny because he repeats himself, unmoved, after everyone else has stopped finding it funny. That's stubbornness working as comedy: never hand him a line built on wit or timing. |
-| hedging | 0% target. Hedging belongs to Theo. A Sam line never softens itself. |
+| hedging | 0% on anything factual, tactical, or about himself — that stays absolute, and Theo keeps the exclusive claim on hedging as a general register. The one deliberate crack: when the subject is whether someone else is okay rather than what's true, a single soft word can get through. That isn't the manuscript's flatness leaking into the dial; it's the one place his certainty was never actually about being right. |
 | questions | 7% now, already the highest rate among the students; target higher still |
 | figurative | allowed one channel only: the deflating literalism ("It's a room-shaped object," chapters/04_pluto.md:47). No other figurative language of any kind |
 
@@ -41,7 +41,8 @@ States a number before anything else, then the point. Nobody else in the cast op
 - YES if it states a fact about himself with no softening around it.
 - YES if it answers exactly the question that was asked and then stops.
 - NO if it contains a subordinate clause built to qualify or explain something. That belongs to Theo.
-- NO if it hedges: "maybe," "I guess," "probably," "sort of," "I think."
+- NO if it hedges about a fact, a plan, or himself: "maybe," "I guess," "probably," "sort of," "I think." That stays absolute.
+- YES, and only here, if the single soft word in the line is about whether someone else is okay, not about what's true.
 
 ## Are they acting like themselves?
 
@@ -100,6 +101,12 @@ He moves heavily crossing a room or eating, then moves like something else the i
 - **Tired and early hours:** the one real data point is that he's slowest of the four to physically reach a 4 a.m. emergency. "Sam gets there last" (chapters/15_twelve.md:161), while Kavi and Ruth are already working the problem. Once there, he still commits to a full plan inside two minutes: a slow starter who's fully online the moment there's something to do.
 - **A free Saturday:** back at the climbing wall, re-running a route he's already cleared, just to see if he can do it cleaner. He spends an entire year on one climbing feature after everyone else has stopped watching him attempt it (chapters/12_nine.md).
 - **What he finds funny in other people:** somebody else refusing to let a point go. He needles Ruth through extra rounds of "tidally locked" instead of changing the subject (chapters/05_behind.md). He calls his own two-week losing streak against Kavi "the worst mistake of my life" at dinner for a month rather than dropping it (chapters/04_pluto.md). He seems to enjoy stubbornness in other people the same way he practices it himself.
+- **Anger:** The one time it doesn't come out louder. Real anger, not a disagreement he can still win, makes him go quiet and find something to do with his hands, then do it harder than it needs. He'll re-coil a rope that's already coiled, reset a stance that was already set. He doesn't raise his voice at anyone he actually cares about; the volume is for arguments.
+- **Embarrassment:** He won't discuss what he's been laughed at for, but the silence isn't empty. He doesn't get defensive and doesn't leave. He picks up whatever's nearest, a plate, a rope, a piece of kit, and starts talking about that instead, at his ordinary volume, like the conversation never happened. It reads as him being fine. It isn't quite that.
+- **Envy:** He doesn't measure himself against the room, and that stays true. But he goes quiet for a beat when one of his brothers describes an ordinary good day running the yard, a truck loaded on time, a job finished clean. He'd never say he wishes he were there instead of here. He asks a practical question about the truck and lets the subject move on.
+- **Grief:** The closest he comes to it on the page is a routine ending, not a person. When something that's been part of every day for years stops being part of any day, dance dropping off the schedule at nine, later, Halstead itself ending at eighteen, he doesn't talk about it. He shows up once or twice to where it used to be, out of habit, before he adjusts. It looks like practicality. It isn't only that.
+- **Elation:** When a loaf comes out exactly right he doesn't say so. He gets it to the table before anyone's asked for it and watches the first bite instead of the bread. That's as close as he comes to visibly wanting credit for something.
+- **Being unfair to a friend:** Mid-argument, losing patience, he'll say something sharper than the moment needed, usually to Ruth or Kavi, the two people who push back hardest. He doesn't apologize afterward in words. He shows up with their bag already carried, or takes their turn in a drill without asking, and that's the whole apology.
 
 ## Interior life
 
@@ -125,6 +132,7 @@ He moves heavily crossing a room or eating, then moves like something else the i
 - **Pockets:** chalk dust, a rubber band, whatever was already in there yesterday.
 - **Money:** spends it on food and doesn't keep a running total, the same way he doesn't keep score on much else outside a drill.
 - **A ritual:** checks the noticeboard even on days he already knows it hasn't changed, the same way he'd glance at the kitchen whiteboard at home out of habit.
+- **A quirk:** counts down silently from three under his breath before anything that costs him something, a jump, a hard question in an oral exam, the first bite of coffee he already knows is too hot. Nobody's ever asked him to. Anyone around him long enough notices it by the third time; nobody's ever mentioned it back to him.
 - **On a phone or in the chat:** short, fast, lowercase, never a paragraph, consistent with his measured 5.1 words per chat line (see Dials).
 - **First thing in the morning:** up and moving with no lingering, checking what's on for the day before anything else.
 
@@ -140,6 +148,7 @@ He moves heavily crossing a room or eating, then moves like something else the i
 - Redirect a compliment into a harder number instead of taking the thanks.
 - Show someone what's wrong with a piece of work by handing it to them rather than describing it.
 - Eat standing up, reach across the table for what he wants mid-sentence, and keep talking while he does it.
+- Show up and do something for a friend he was sharp with, instead of apologizing in words.
 
 ## Would never
 

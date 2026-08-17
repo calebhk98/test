@@ -113,6 +113,8 @@ Meg's maiden name as Halloran; `GRANDMOTHER.md:113` commits Dorothy as "Meg's mo
 on Meg's own maiden name. Flag for the author; it doesn't bear on voice or complexity, but a
 rewriter using both sheets side by side will hit it immediately.
 
+**Resolved.** Neither surname appears anywhere in the manuscript, so both were invented. `MEG.md:5` and `_ALLOCATIONS.md:164` both say Halloran, and the allocations table gives the reason, that the grandmother carries Meg's maiden name. GRANDMOTHER.md has been changed to Dorothy Halloran, with Frank Halloran alongside her.
+
 ---
 
 ## 4. Per character

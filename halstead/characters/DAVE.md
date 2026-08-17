@@ -11,7 +11,7 @@ Chloe's father: the parent who finds the real problem in a document, married twe
 
 ## Voice in one paragraph
 
-He runs two registers and nothing in between. At home he closes a beat with a single low-commitment word, "Cool," "Huh," that undersells whatever he's feeling. Under analysis, aimed at a document or a number, he produces a tight three-part escalating question that gets shorter with each part: "So how does a four-year-old school get that guy. What does it pay him. With what." (chapters/03_the_letter.md) He repeats the construction almost exactly five chapters later about a vendor contract (chapters/12_nine.md: "This is four pages of the same trick, isn't it."). He never hedges and never reaches for an image. His most characteristic line is the one above, from chapters/03_the_letter.md, because of what he does with it: it isolates the one unanswered question in the school's whole pitch, and he sets it aside, in the same chapter, for the reason that matters more to him: his daughter has been flat since Christmas.
+He runs two registers and nothing in between. At home he closes a beat with a single low-commitment word, "Cool," "Huh," that undersells whatever he's feeling. Under analysis, aimed at a document or a number, he produces a tight three-part escalating question that gets shorter with each part: "So how does a four-year-old school get that guy. What does it pay him. With what." (chapters/03_the_letter.md) He repeats the construction almost exactly five chapters later about a vendor contract (chapters/12_nine.md: "This is four pages of the same trick, isn't it."). When a number goes by unchallenged he hands it straight back, flat, before he takes it apart: "Usually pretty good." ... "A hundred." (chapters/03_the_letter.md:65,69) He never hedges and never reaches for an image. His most characteristic line is the one above, from chapters/03_the_letter.md, because of what he does with it: it isolates the one unanswered question in the school's whole pitch, and he sets it aside, in the same chapter, for the reason that matters more to him: his daughter has been flat since Christmas.
 
 ## Dials
 
@@ -22,7 +22,7 @@ He runs two registers and nothing in between. At home he closes a beat with a si
 | wordiness | 2/10, measured 4.8 words/line, terser than Meg |
 | terseness | measured 31%, keep |
 | jokiness | 3/10, amusement shows up as a suppressed physical beat (a laugh into a glass, an eyebrow), rarely as a spoken joke |
-| hedging | measured 0%, keep. Flatly declarative even when he's about to reverse himself |
+| hedging | measured 0% in his analytical register, keep — flatly declarative even when he's about to reverse himself. Not the same rule alone with Meg, late, off the record of the day: the text has him doubling a bare acknowledgment instead of backing it with a reason, "her dad says he knows, twice" (chapters/03_the_letter.md:109). Still not a maybe; just not a single flat statement either |
 | questions | measured 15%, keep. Aimed at documents, numbers, and, once he learns to (chapters/19), other people's lives |
 | figurative | not allowed, none, ever |
 
@@ -35,6 +35,8 @@ He runs two registers and nothing in between. At home he closes a beat with a si
 
 It functions as a genuine full stop, a decision that a subject doesn't need more words yet.
 
+He has a second flat repeat, and this one he shares with Meg: handing a number straight back to whoever just offered it, unchanged, before he starts taking it apart. "Usually pretty good." ... "A hundred." (chapters/03_the_letter.md:65,69) "How many days have you been here?" ... "Twenty-seven." ... "Twenty-seven." (chapters/06_the_list.md:40-42) Meg does the identical construction elsewhere in the book (see Do not confuse with), so the move itself isn't his alone; the target is. Hers lands on a phrase that just minimized something. His always lands on a number nobody's backed up.
+
 ## Would they say this?
 
 - YES if it's a three-part escalating question about a document, a contract, or a cost, shortest clause last.
@@ -45,8 +47,10 @@ It functions as a genuine full stop, a decision that a subject doesn't need more
 - YES if it's flatly declarative even on a point he's about to reverse.
 - YES if it registers real, plain respect for someone else's competence, with no embellishment.
 - YES if it's short enough that Chloe keeps talking rather than having to respond to him.
+- YES if it repeats a number someone just offered back at them, flat, before he starts taking it apart.
+- YES if it doubles a bare acknowledgment, alone with Meg, with no reason attached to either half — the manuscript's own instance is "her dad says he knows, twice," and nothing else (chapters/03_the_letter.md:109).
 - NO if it contains a simile or any figurative comparison.
-- NO if he repeats his own phrase twice for emphasis under stress: he states a thing once and lets it stand.
+- NO if it's a whole reasoned point repeated twice for emphasis: he makes the case once and lets it stand.
 
 ## Are they acting like themselves?
 
@@ -82,7 +86,7 @@ What he hasn't said out loud: that he knows, in chapters/03, that he's setting a
 
 ## The small stuff
 
-Keeps every receipt and warranty card in one drawer nobody else touches, sorted, though not alphabetically; he knows exactly where everything is and nobody else does. Coffee black, reheated less often than Meg's because he finishes it before it goes cold. Handwriting small and square, the kind that looks like it belongs on an engineering drawing. Keeps a pencil rather than a pen on him most days, out of habit from measuring things. On the phone he stands still, one hand flat on the nearest surface, and says less than the person he's talking to. First thing in the morning, he reads whatever's on his phone standing at the counter before he's said much to anyone, then makes the coffee.
+Keeps every receipt and warranty card in one drawer nobody else touches, sorted, though not alphabetically; he knows exactly where everything is and nobody else does. Coffee black, reheated less often than Meg's because he finishes it before it goes cold. Handwriting small and square, the kind that looks like it belongs on an engineering drawing. Keeps a pencil rather than a pen on him most days, out of habit from measuring things. On the phone he stands still, one hand flat on the nearest surface, and says less than the person he's talking to. First thing in the morning, he reads whatever's on his phone standing at the counter before he's said much to anyone, then makes the coffee. Backs into every parking spot, no exceptions, the school lot, a full garage, a spot on the street he'll be in for thirty seconds — however long it takes to line it up, the car is going to leave in one motion when it's time, not three. Meg has stopped commenting on it. A reader watching him do it a third time in three different lots would know exactly who they were looking at before anyone said a name.
 
 ## Would do
 
@@ -92,10 +96,11 @@ Keeps every receipt and warranty card in one drawer nobody else touches, sorted,
 - Teach Chloe to drive on Sunday mornings, calmly, without raising his voice at a stall.
 - Take a clean loss in an argument he's obviously lost to his daughter, and enjoy losing it.
 - Notice a hidden fee in a proposal before anyone else in the room does.
-- Take four hundred photographs at his daughter's graduation because he doesn't trust himself to remember it right otherwise.
+- Fill a memory card at his daughter's graduation because he doesn't trust himself to remember it right otherwise.
 - Ask a follow-up question about a friend of Chloe's he's never met, and remember the answer months later.
 - Sit through an entire Thanksgiving argument about tariffs, fully engaged, for the pleasure of the argument itself.
 - Keep a shelf half-finished for months without it bothering him, and finish it eventually, on his own schedule.
+- Back into a parking spot even when it costs him a minute nobody's waiting on, so the car is ready to leave the second it needs to be.
 
 ## Would never
 
@@ -123,10 +128,10 @@ Full name David "Dave" Kessler. Wife Margaret "Meg" Kessler (see MEG.md); she ca
 
 ## Known problems
 
-- **He gets zero lines at graduation.** chapters/23_the_first_one.md: "Her dad takes about four hundred photographs and gets none of her face." No dialogue at all, against a trait, established across chapters/03, 12, and especially 19, of always asking a question. Fix: give him one question to Chloe on the grass, in contrast to the photographs.
+- **He gets zero lines at graduation.** chapters/23_the_first_one.md:40: "Her dad fills a memory card and gets none of her face." No dialogue at all, against a trait, established across chapters/03, 12, and especially 19, of always asking a question. Fix: give him one question to Chloe on the grass, in contrast to the photographs.
 - **"Unnamed" is stated in reference documents but not quite true.** Meg uses "Dave" four times in dialogue, the only place the name appears on the page. The author should decide: commit to true unnamedness (cut the four instances) so the choice reads as deliberate, or let the narration use the name at least once.
 - **His ch3 reversal is inferred, not fully dramatized.** The text supports him having the sharpest concern in the book and setting it aside for Chloe's sake, but no line shows him registering that trade in the moment. A rewriter should know the "he knows what he's doing" reading is the reader's inference, not a line on the page.
 
 ## Do not confuse with
 
-**Meg.** They should sound alike more than any other two people in this book: twenty years married, in the same rooms, worrying about the same child. What separates them at the margins: he closes a beat with "Huh." and disagrees by asking what something costs; she asks a question with the follow-up already loaded and disagrees by asking another question. He photographs and builds; she touches. Underneath both margins is the same shared baseline, household shorthand, sentences finished for each other, the same worry approached from two different angles, and that baseline stays exactly as large as it currently is.
+**Meg.** They should sound alike more than any other two people in this book: twenty years married, in the same rooms, worrying about the same child. What separates them at the margins: he closes a beat with "Huh." and disagrees by asking what something costs, and when he repeats a phrase back it's always a number nobody's backed up; she asks a question with the follow-up already loaded and disagrees by asking another question, and when she repeats a phrase back it's always one that just minimized something. Same flat construction, aimed at two different kinds of unearned thing. He photographs and builds; she touches. Underneath both margins is the same shared baseline, household shorthand, sentences finished for each other, the same worry approached from two different angles, and that baseline stays exactly as large as it currently is.

@@ -1,4 +1,4 @@
-# Dorothy Whitfield
+# Dorothy Halloran
 
 Meg's mother: a retired maternity nurse of thirty-one years, who names what she sees in a person's body the moment she sees it, and reads everything Chloe tells her about school through the pace of an ordinary childhood.
 
@@ -58,7 +58,7 @@ Her professional background grounds her eye for Chloe's body in thirty-one years
 
 ## Home
 
-She grew up in the region she still lives in, one of six children in a farming family, and married young to a man named Frank Whitfield, who spent thirty-eight years running the parts counter at a regional equipment dealer. She raised four children, including Meg, in the house she still lives in and still hosts every Christmas in; the spare room where Chloe reads Federalist Papers belonged to Meg's older brother, who moved out decades ago. She kept working nights on the maternity ward for years after her own children were grown, preferring the work to being asked when she'd stop. The house carries the smell of whatever's in the oven for that week's gathering more often than not; she is rarely not cooking for someone. Frank does the crossword at the kitchen table most afternoons, very likely what he was doing, "thinking about a question," the Sunday Chloe overhears the weight conversation through the kitchen door.
+She grew up in the region she still lives in, one of six children in a farming family, and married young to a man named Frank Halloran, who spent thirty-eight years running the parts counter at a regional equipment dealer. She raised four children, including Meg, in the house she still lives in and still hosts every Christmas in; the spare room where Chloe reads Federalist Papers belonged to Meg's older brother, who moved out decades ago. She kept working nights on the maternity ward for years after her own children were grown, preferring the work to being asked when she'd stop. The house carries the smell of whatever's in the oven for that week's gathering more often than not; she is rarely not cooking for someone. Frank does the crossword at the kitchen table most afternoons, very likely what he was doing, "thinking about a question," the Sunday Chloe overhears the weight conversation through the kitchen door.
 
 ## Body
 
@@ -109,10 +109,10 @@ Her tea runs strong, with milk, several cups a day, made the same way every time
 
 ## Facts a rewriter needs
 
-- Full name: Dorothy Whitfield. Age 74.
-- Relationship to Chloe: Meg's mother. chapters/13_ten_pages.md:172 has her tell Chloe "Your mother did that. Floor, back against the bed, papers everywhere, and if I moved one of them she could tell," a direct memory of Meg as a child in what reads as the same house Chloe is currently in. This sheet commits to that reading, which also makes Meg's maiden name Whitfield.
+- Full name: Dorothy Halloran. Age 74.
+- Relationship to Chloe: Meg's mother. chapters/13_ten_pages.md:172 has her tell Chloe "Your mother did that. Floor, back against the bed, papers everywhere, and if I moved one of them she could tell," a direct memory of Meg as a child in what reads as the same house Chloe is currently in. This sheet commits to that reading, which also makes Meg's maiden name Halloran.
 - Retired maternity nurse, thirty-one years, the professional root of her one genuine skill, reading a body accurately.
-- Husband: Frank Whitfield, thirty-eight years running a parts counter, does the crossword most afternoons.
+- Husband: Frank Halloran, thirty-eight years running a parts counter, does the crossword most afternoons.
 - Hosts Christmas and other family gatherings at the same house every year, roughly eleven people present.
 
 ## Known problems

@@ -8,12 +8,12 @@ Runs Defensive Watch, the school's live intrusion-response exercise, and wants a
 **Speaks:** 5 quoted turns across two scenes, both procedural.
 
 ## Voice in one paragraph
-Sinclair's longest turn is short independent clauses stacked without connectives: "Every member of staff currently in the building is now hostile. This includes your teachers. This continues until sixteen hundred or until there are no staff left. Kit is in the usual place." After the night intrusion, his questions are two words each and he accepts one-word answers without following up: "'Who's monitoring?' 'Me,' Ruth says. 'Numbers.'" He closes both scenes with a flat imperative and no commentary, "'Grading's in the morning,' he says. 'Go to bed. Now.'" His one moment of tone rather than pure procedure is dry and inward: "'Good luck,' Sinclair says, in a tone that suggests he does not mean it." Most characteristic line: "Who's monitoring?" Every other question anyone might ask that morning is about the intruders or the children; his is about who held the monitoring role, which is the thing he came to check.
+Sinclair's longest turn is short independent clauses stacked without connectives: "Every member of staff currently in the building is now hostile. This includes your teachers. This continues until sixteen hundred or until there are no staff left. Kit is in the usual place." After the night intrusion, his questions are two words each and he accepts one-word answers without following up: "'Who's monitoring?' 'Me,' Ruth says. 'Numbers.'" He closes almost everything the same way, too: an instruction that's already complete, with one more word stapled onto the end of it that adds no new information and only marks the time, "'Grading's in the morning,' he says. 'Go to bed. Now.'" (chapters/15_twelve.md:335) The word never explains, it timestamps, the same thing a debrief sheet does when it reads "seven minutes fifty" instead of "close." His one moment of tone rather than pure procedure is dry and inward: "'Good luck,' Sinclair says, in a tone that suggests he does not mean it." Most characteristic line: "Who's monitoring?" Every other question anyone might ask that morning is about the intruders or the children; his is about who held the monitoring role, which is the thing he came to check.
 
 ## Dials
 | | |
 | :-- | :-- |
-| sentence shape | short independent clauses in a row, or a one-to-two-word diagnostic question |
+| sentence shape | short independent clauses in a row, or a one-to-two-word diagnostic question. Range comes from stacking more of them, never from fusing two with "because" or "although" — the connective tissue is the one thing his signature is built to exclude, so density has to be added by accumulation, not by subordination. |
 | disagrees by | not attested, no scene shows him disagreeing with a student |
 | wordiness | 3/10, even his longest turn is four short sentences |
 | terseness | roughly 3 of 5 turns at 3 words or fewer |
@@ -25,12 +25,16 @@ Sinclair's longest turn is short independent clauses stacked without connectives
 ## Signature, theirs alone
 Runs a diagnostic exchange in matched one-to-three-word question-and-answer pairs and moves the instant he has the number he needs, no follow-up commentary. No other teacher on this list conducts an entire exchange in fragments this short while still extracting exactly the information he came for.
 
+The exchange never actually starts on the question, it starts on a look: he reads the room in full, in silence, before the first word, the identical beat whether the room is a scheduled drill or four tied men in a corridor at four in the morning. Nothing gets acted on off one data point either way: he checks a locked door twice, out of what he calls procedure, and the room he's just read gets confirmed a second time out loud, by number, before he'll close the scene, the same double-check applied to a door and to a night nobody scheduled. It's how a two-word question ever ends up being enough: he's already looked once before he asks.
+
 ## Would they say this?
 **The Halstead-staff test.** A line belongs to this staff, not to a generic teacher, only if all five hold: no praise word attaches to the child; a correction is a flat statement of fact; the child's age is never a reason for leniency; an extraordinary result is treated as expected, not remarked on; the adult's own error is fixed the same flat way a student's is.
 
 Sinclair operated at the top of his field before Halstead sought him out, and continues to consult at that level, off campus, alongside a handful of teaching hours a week. None of that shows up in how he runs Watch. Four children stop four armed men and the response sheet lists what went wrong in exactly the terms it would use for a scheduled drill, because treating the outcome as remarkable would be the one thing his job forbids.
 
 - YES if it asks for a number or a role and stops as soon as it has one.
+- YES if it checks the same thing twice before acting on it, a door, a headcount, a report, never just once.
+- YES if a closing instruction gets one more word stapled onto the end of it that adds no information and only marks the time. ("Go to bed. Now.")
 - YES if a moment that would read as high-stakes to anyone else gets closed with a purely administrative line.
 - YES if irony is present but never explained or flagged as a joke.
 - YES if the entire staged encounter, arriving, assessing, questioning, closing, takes fewer than ten lines.
@@ -71,7 +75,9 @@ Drinks black coffee, functional, never mentions liking or disliking it. Handwrit
 
 ## Would do
 - Pause and take in a scene fully before speaking, even one that's time-critical. (chapters/15_twelve.md:329)
+- Check a thing twice before acting on it, a lock, a headcount, a scene, never trust the first read alone.
 - Ask for a role and a number, and stop the moment he has them. (chapters/15_twelve.md:329-333)
+- Close a completed instruction with one extra word that marks the time and explains nothing. ("Now.")
 - Apply the identical scoring register to a real intrusion that he'd apply to a scheduled drill. (chapters/15_twelve.md:337-339)
 - Close a high-stakes scene with a purely administrative line. ("Grading's in the morning.")
 - Deliver dry, almost invisible irony under an otherwise flat announcement. (chapters/14_sixty_degrees.md:211)

@@ -8,7 +8,7 @@ Teaches science to the youngest students and wants them to see, early and often,
 **Speaks:** 2 quoted clauses in one turn, in the entire book, the scene exists to show exactly how he takes a correction.
 
 ## Voice in one paragraph
-Doyle's entire quoted dialogue is a two-part reaction to being corrected mid-lecture by a student: "Yeah, you're right, I said that wrong." He wipes one word out with the side of his hand and writes the other one into the gap. "Mass. Thank you." Both clauses are short, flat, and contain no defensiveness, no explanation of how the mistake happened, and no comment on the fact that a student interrupted him to make it. The "Thank you" isn't warmth, it's the same register as marking an answer correct. Everything else known about how he runs a room comes from narrated action: told a group to "leave it where it is and come back to it," or having the class "write down which part went first" against their own prediction, both with no quoted line at all.
+Doyle's entire verified quoted dialogue is two words, and they come after he's already fixed the error, not before: "Mass. Thank you." (chapters/04_pluto.md:114) Between the correction landing and those two words there's no line from him at all, only the check and the fix, wordless: he stops with the marker still up, looks at what he's written, wipes one word out with the side of his hand, and writes the other into the gap it leaves. The "Thank you" isn't warmth, it's the same register as marking an answer correct, and it lands only once the board already agrees with the student, never a beat before. Everything else known about how he runs a room comes from narrated action: told a group to "leave it where it is and come back to it," or having the class "write down which part went first" against their own prediction, both with no quoted line at all.
 
 ## Dials
 | | |
@@ -23,7 +23,7 @@ Doyle's entire quoted dialogue is a two-part reaction to being corrected mid-lec
 | figurative | none found |
 
 ## Signature, theirs alone
-Verifies at the source before agreeing, silently, then fixes it without narrating the fix: "Mr. Doyle stops with the marker still up at the board and looks at what he's written." No other teacher in this cast is shown pausing to re-examine their own prior work before responding to a correction.
+Verifies at the source before agreeing, silently, then fixes it without narrating the fix: "Mr. Doyle stops with the marker still up at the board and looks at what he's written." (chapters/04_pluto.md:113) No other teacher in this cast is shown pausing to re-examine their own prior work before responding to a correction. The check runs before anything gets said, too, not only after a correction lands: he counts his own chalk and marker supply before a lecture starts, a fieldwork habit about never running out of the tool you need mid-task, and the board gets checked against the challenge the same way, before he'll accept it, the identical motion applied to two different objects. When he does speak, the shape doesn't change: he repeats the corrected term exactly once, then closes on "Thank you," the term and the close, nothing added on either side, whether the correction comes from a seven-year-old, a colleague, or his own instruments logging a reading he has to re-check in the field. "Mass. Thank you." is the template, not a one-off.
 
 ## Would they say this?
 **The Halstead-staff test.** A line belongs to this staff, not to a generic teacher, only if all five hold: no praise word attaches to the child; a correction is a flat statement of fact; the child's age is never a reason for leniency; an extraordinary result is treated as expected, not remarked on; the adult's own error is fixed the same flat way a student's is.
@@ -31,6 +31,7 @@ Verifies at the source before agreeing, silently, then fixes it without narratin
 Doyle installed part of the seismic network a national geological survey still monitors, and none of that shows in his one scene. A seven-year-old corrects him on weight versus mass, a distinction his own instruments log every hour he's in the field, and he checks the board and fixes it exactly as flatly as he'd correct a misread gauge.
 
 - YES if it accepts a correction in one sentence, with the fix included in the same breath, and nothing else.
+- YES if the acknowledgment is exactly two beats, the corrected term and then "Thank you," and nothing is added to either end.
 - YES if "thank you" functions as a mark of correctness rather than gratitude.
 - YES if the physical correction (erasing, rewriting) happens in the same beat as the verbal one.
 - YES if it lets an unfinished group task stay unfinished and revisits it later without extending time to save it in the moment.
@@ -71,7 +72,9 @@ Drinks coffee black, a lot of it, refilled from a thermos that goes everywhere w
 
 ## Would do
 - Check his own written work before responding to a challenge to it. (chapters/04_pluto.md:113)
+- Count his chalk and marker supply before a lecture starts, the same check-before-trust habit applied before anything's even been said yet.
 - Fix an error in the same motion as acknowledging it, with no gap for face-saving. (chapters/04_pluto.md:114)
+- Close an accepted correction on the same two-beat shape every time: the term, then "Thank you."
 - Let unfinished group work stay unfinished and return to it later rather than force a save. (chapters/05_behind.md:24)
 - Grade a group against their own stated prediction rather than a fixed target. (chapters/05_behind.md:30)
 - Run a lesson ten minutes long because a student latched onto something real.
@@ -102,6 +105,7 @@ Full name Aaron Doyle. Students call him "Mr. Doyle", nobody under eighteen uses
 ## Known problems
 - Only one scene contains any of his actual speech; every other characterization point beyond that scene is extrapolated or invented to close the gap.
 - Nothing in the text shows Doyle initiating a correction of a student, the only correction scene runs in the opposite direction. His voice under the more common classroom situation is entirely unattested and the material above is built by extension, not by direct evidence.
+- An earlier draft of this sheet quoted a first line, "Yeah, you're right, I said that wrong," ahead of "Mass. Thank you." No such line exists anywhere in the manuscript (checked with grep across the full chapter set); it's been removed. His verified dialogue is the two words, and only the two words.
 
 ## Do not confuse with
 Baptiste, both are early-years teachers shown mid-lesson with a marker in hand, but Baptiste's signature is inviting and rewarding a student's question, while Doyle's one scene is about absorbing a correction he didn't invite, without comment either way.
