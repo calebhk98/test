@@ -57,7 +57,7 @@ Eleven years at a boarding school. Yes, boarding, from seven. Yes, that's young.
 Whitaker doesn't look up. "Asked by whom."
 
 
-Chloe doesn't look away either. "The lead researcher. She didn't make me sign anything. She said everyone else had signed and if I talked it landed on them."
+Chloe keeps her eyes on him. "The lead researcher. She didn't make me sign anything. She said everyone else had signed and if I talked it landed on them."
 
 
 "And you agreed to that," he says.
