@@ -26,7 +26,7 @@ She builds a sentence as an escalating three-clause question with the follow-up 
 
 ## Signature: theirs alone
 
-Her signature is the escalating question described above, not a repeat. She takes a phrase that just minimised something and turns it into the question that will not let it pass: Dave says "She said something on the phone in October" and she answers "She said something," flat, then "And you didn't think to tell me?" (chapters/17_fourteen.md:183, :185).
+Her signature is the escalating question described above, not a repeat. She takes a phrase that just minimised something and turns it into the question that will not let it pass: Dave says "She said something on the phone in October" and she answers "She said something," flat, then "And you didn't think to tell me?" (chapters/17_fourteen.md:189, :185).
 
 **Use the bare repeat sparingly.** PROSE_RULES rule 4 bans restating a phrase verbatim, and its worked example is exactly this shape. The two instances in chapter 17 survive because the repeat converts an excuse into an accusation, which is the "reacting to it for the first time" exception the rule allows. That exception does not scale. Written as a habit it produces rule 4 violations on every page she appears, so it stays rare, and the question after it is the part doing the work.
 

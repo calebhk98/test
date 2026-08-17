@@ -16,11 +16,17 @@ Amberg places the object of authority on the desk before he speaks: "putting a c
 | sentence shape | enumerated clauses, or a two-word procedural opener |
 | disagrees by | reframes what the real problem is, states it once |
 | wordiness | 6/10, mixes one-word openers with structured explanations |
-| terseness | roughly 3 of 9 turns at 3 words or fewer |
-| jokiness | 0/10 in the sample |
-| hedging | 0% |
-| questions | 1 of 9 turns is a question ("Reason?"), used to extract information |
-| figurative | none found |
+| terseness | roughly 3 of 9 turns at 3 words or fewer, a measurement, not a ceiling on him |
+| at length | opens up when he's converting a claim into an enumerated, checkable structure, never when he's disagreeing with a decision already made |
+| jokiness | 0/10 in the three quoted chapters; not 0/10 as a person, he keeps one running joke at the annual staff dinner about his own lunch, dry and self-directed, and finds a badly built argument the arguer believes completely more entertaining than frustrating, never aimed at a student's effort |
+| hedging | 0%, and it holds because it's true of him, not because the cast defaults there: he states nothing he isn't sure of, which is a different thing from a softener being switched off by rule |
+| questions | 1 of 9 turns is a question ("Reason?", chapters/22_the_offer.md:23), used to extract information |
+| figurative | one inherited, dead legal idiom permitted, professional register only ("on the record," "for the file"), never an invented or emotional image, the same door the style guide already opened for Kowalczyk's simile |
+
+## When they talk at length
+He goes long exactly when he's turning an abstraction into something a listener could grade, and only then: the four-point breakdown of what a correct answer is still missing, the citizen's-rationale opener to a class of thirteen-year-olds that runs from a lease to a marriage licence to the bar exam in one unbroken structure. (chapters/16_thirteen.md:117, chapters/19_sixteen.md:41) He never gets longer while disagreeing; his own rule against arguing with a stated decision means the length has nowhere to go once somebody's actually decided something, so it lives entirely on the explaining side of a conversation and never on the persuading side.
+
+The cost sits with the listener, not with him. A thirteen-year-old gets the same four-clause structure an adult associate would get, at the same pace, because he doesn't shorten it for the age in the room, and that means sitting through the whole enumeration before reaching the part that matters. He doesn't experience this as a cost. It's the other person's clock, not his, and that asymmetry, never adjusting the length or the register for who's listening, is as much a part of him as the document he sets down first.
 
 ## Signature, theirs alone
 Produces the governing document before he speaks and lets the object open the exchange: the state code with both hands, the mark scheme already out. Two clean instances, six chapters apart.
@@ -37,28 +43,30 @@ Amberg wrote the mark scheme the state bar committee uses, and nothing about the
 - YES if it treats a thirteen-year-old's law class as ordinary adult preparation, no special occasion made of it.
 - YES if the document does the opening and the sentence does the follow-through.
 - YES if it separates a correct conclusion from a demonstrated one and marks only the second.
+- YES if it's a dead, professional idiom sitting inside an enumerated point, never a fresh comparison built for the moment.
+- YES if a dry joke about his own routine or an argument's construction lands somewhere other than on the student who's in the room.
 - NO if it argues to change a student's mind after they've stated a decision.
 - NO if it expresses surprise or disappointment at a refusal.
 
 ## Are they acting like themselves?
-When Chloe turns down a research post worth three times market pay with full benefits, his entire on-page reaction is writing it down without arguing, no persuasion, no visible reaction to losing a researcher in one conversation. Failure modes: having him argue harder for the offer; softening "That is the piece you have wrong" before it lands; dropping the enumerated-list rhythm for ordinary connected prose.
+When Chloe turns down a research post worth three times market pay with full benefits, his entire on-page reaction is writing it down without arguing, no persuasion, no visible reaction to losing a researcher in one conversation. Failure modes: having him argue harder for the offer; softening "You wrote that answer for a reader who already has your head" before it lands, or trimming it down before the four clauses that follow it; dropping the enumerated-list rhythm for ordinary connected prose; giving him a joke that lands on a student's effort instead of on his own lunch or a colleague's argument.
 
 ## Subjects and schedule
 Teaches law from age thirteen onward (state code, contracts, the bar-exam rationale) and is credited with the founding line of the cryptography curriculum the same year.
 
 **Best at:** converting a legal abstraction into an enumerated, gradable structure. (chapters/19_sixteen.md:41)
 **Worst at:** small talk that isn't secretly a Socratic question, colleagues say he can't ask "how was your weekend" without it turning into a hypothetical about liability.
-**Favourite, and why:** contracts, the subject that gets the most structural care in his lines, and the one he returns to across every appearance. (chapters/16_thirteen.md:121)
+**Favourite, and why:** contracts, the subject that gets the most structural care in his lines, and the one he returns to across every appearance. (chapters/16_thirteen.md:119)
 **Least favourite:** the annual mock trial, which the students love and he finds theatrical, he runs it anyway, precisely, and never lets on.
 **The one he's secretly proud of:** the exit interviews, trusted to run all ninety-one, fifteen minutes each, personally, and he has never once gone over time or handed the job to anyone else.
-**What he'd teach if he could teach anything else:** cryptography, outright, if he could clear the schedule for it, the line attributed to him in chapters/16_thirteen.md:69 ("you cannot build a lock if you have never opened one somebody else built") is his own conviction in his own register, whether or not he holds the chalk for that particular class.
+**What he'd teach if he could teach anything else:** cryptography, outright, if he could clear the schedule for it, the line attributed to him in chapters/16_thirteen.md:67 ("you cannot build a lock if you have never opened one somebody else built") is his own conviction in his own register, whether or not he holds the chalk for that particular class.
 **What he thinks of the rest of the curriculum:** he thinks Halstead's credential-free design is basically right, with one exception, his own subject, which ends in a real external exam, and he considers that exception the whole point, not a flaw: the bar is the one place the school lets the outside world grade its work.
 
 ## Home
 The state bar association's exam committee uses the contracts mark scheme Amberg wrote, the same document he sets on a desk in front of a class of thirteen-year-olds. He still takes cases, filed under his own name, from the school. Teaching contract law is a small, contracted slice of his week; the rest of his time is that practice, run out of the school. Lives on campus in faculty housing with his husband, who works as an actuary and does the school's own liability modeling as an unpaid favor nobody asked for and everybody quietly relies on. No children. Married nine years, together fourteen. Keeps a small, exact vegetable garden behind the house that he tends with the same enumerated precision he brings to a mark scheme. Grew up the son of two public defenders, at a kitchen table where every dinner conversation eventually became a case.
 
 ## Body
-Early fifties, medium build, sits on the front of a desk rather than behind it whenever he can. (chapters/16_thirteen.md:119) Wears a suit jacket without a tie, every day, the one piece of formality he's kept from courtroom life. Neat hands, always moving toward the next document before he's finished with the current one. Eats lunch fast, standing, between meetings, and complains about it exactly once a year, at the staff dinner, as a running joke everyone expects. Sleeps well, by his own report, which the rest of the staff finds slightly suspicious in a man who spends his days telling children what the law actually says.
+Early fifties, medium build, sits on the front of a desk rather than behind it whenever he can. (chapters/16_thirteen.md:117) Wears a suit jacket without a tie, every day, the one piece of formality he's kept from courtroom life. Neat hands, always moving toward the next document before he's finished with the current one. Eats lunch fast, standing, between meetings, and complains about it exactly once a year, at the staff dinner, as a running joke everyone expects. Sleeps well, by his own report, which the rest of the staff finds slightly suspicious in a man who spends his days telling children what the law actually says.
 
 ## Personality off the page
 Procedural even off duty, the habit of producing a document before speaking extends to how he runs a staff meeting, agenda first, always. Bored: doesn't happen to him in any scene or account; he treats even routine work as worth doing exactly right. Wrong: corrects himself the same way he corrects a mark scheme discrepancy, out loud, immediately, no defensiveness. Praised: accepts it briefly and pivots straight back to the work. Losing: the one loss shown on the page, Chloe declining the offer, is absorbed by writing it down and moving to the next meeting, genuinely unbothered, not performing calm. At 2am he's, rarely, reading a case that has nothing to do with school, purely for the pleasure of a clean argument. A free Saturday is the garden, then a stack of his own casework. Finds funny in others: a badly built argument that the person making it believes completely, more entertaining than frustrating.
@@ -74,7 +82,7 @@ Coffee, strong, no sugar, refilled constantly through the day. Handwriting is sm
 - Mark a technically correct answer down for failing to show the reasoning. (chapters/19_sixteen.md:41-53)
 - Offer a genuinely large benefit without pressuring anyone to accept it. (chapters/21_the_applications.md through chapters/27_the_file.md:141)
 - Record a refusal and move on without revisiting it. (chapters/22_the_offer.md:29)
-- Hand thirteen-year-olds an adult rationale years before it applies, without dressing it up as an achievement. (chapters/16_thirteen.md:119)
+- Hand thirteen-year-olds an adult rationale years before it applies, without dressing it up as an achievement. (chapters/16_thirteen.md:117)
 - Run all ninety-one exit interviews personally rather than delegate any of them.
 - Keep his own casework running alongside a full teaching schedule.
 - Tend a garden with the same precision he brings to a mark scheme.
@@ -94,15 +102,17 @@ Coffee, strong, no sugar, refilled constantly through the day. Handwriting is sm
 - Opens a class or a meeting by placing a document on the desk before speaking.
 - Marks for demonstrated reasoning, not silent correct conclusions. (chapters/19_sixteen.md:41-53)
 - Likes a badly built argument the arguer believes completely, finds it funny rather than frustrating.
-- Gives the bar rationale years ahead of the exam, framed as ordinary adult obligation. (chapters/16_thirteen.md:119)
+- Gives the bar rationale years ahead of the exam, framed as ordinary adult obligation. (chapters/16_thirteen.md:117)
 - Keeps a small, exact garden.
 
 ## Facts a rewriter needs
 Full name Julian Amberg. Students call him "Mr. Amberg", nobody under eighteen uses a staff member's first name at Halstead. Practices law at an elite level; Halstead recruited him with a compensation package well beyond firm or bench pay, and teaching is a handful of hours a week, the rest of his time his own casework, run out of the school. Signed the standard staff non-disclosure agreement. Married to a husband who works as an actuary; no children. Teaches law and is credited with founding the school's approach to cryptography. Male, undisputed in the text.
 
 ## Known problems
-- The cryptography attribution (chapters/16_thirteen.md:69) doesn't show him teaching the class directly on the page, resolved above as a stated conviction attributable to him whether or not he holds the chalk.
+- The cryptography attribution (chapters/16_thirteen.md:67) doesn't show him teaching the class directly on the page, resolved above as a stated conviction attributable to him whether or not he holds the chalk.
 - Home, Body, Interior life, and The small stuff close a genuine gap the manuscript leaves; none of it contradicts the page.
+- Three citations into chapters/16_thirteen.md were off by two lines (69 and 121 for content actually sitting at 67 and 119; 119 for content actually sitting at 117), corrected above.
+- A failure-mode quote, "That is the piece you have wrong," did not appear anywhere in the manuscript on a direct search of every chapter file and was also a near-variant of a banned verdict construction (`_CALIBRATION.md`, banned constructions). Replaced with the actual quoted line it was standing in for.
 
 ## Do not confuse with
-Hearn, both correct with a flat statement of fact and no argument, but Amberg always anchors the correction to a physical document he produces first and structures his reasoning as an explicit numbered list; Hearn works from memory, cites no document, and never counts anything out loud.
+Hearn, both correct with a flat statement of fact and no argument, and both now carry one inherited idiom drawn from their own trade rather than an invented image; the dividing cue stays physical, not verbal: Amberg always anchors the correction to a document he produces first and structures his reasoning as an explicit numbered list, where Hearn works from memory, cites no document, and never counts anything out loud.

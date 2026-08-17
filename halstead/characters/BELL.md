@@ -23,7 +23,7 @@ Bell opens on a physical prop, not a claim: he holds the dart, the arrow, his ow
 | figurative | none in his sample, his imagery is literal optics ("a point that gets bigger") |
 
 ## Signature, theirs alone
-Holds the demonstration object while he talks and doesn't let go until the point lands: "Bell holds a dart up between two fingers" (chapters/11_eight.md:143); "Bell keeps hold of the arrow while he says it" (chapters/14_sixty_degrees.md:15); "Bell puts a hand out flat and holds it" (chapters/14_sixty_degrees.md:23). Three instances across two chapters.
+Holds the demonstration object while he talks and doesn't let go until the point lands: "Bell holds a dart up between two fingers" (chapters/11_eight.md:141); "Bell keeps hold of the arrow while he says it" (chapters/14_sixty_degrees.md:15); "Bell puts a hand out flat and holds it" (chapters/14_sixty_degrees.md:21). Three instances across two chapters.
 
 ## Would they say this?
 **The Halstead-staff test.** A line belongs to this staff, not to a generic teacher, only if all five hold: no praise word attaches to the child, praise, if any, attaches to a correct mechanism; a correction is a flat statement of fact, never cushioned by apology or reassurance; the child's age is never a reason for leniency; an extraordinary result is treated as expected, not remarked on; the adult's own error is fixed the same flat way a student's is.

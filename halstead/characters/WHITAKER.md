@@ -17,16 +17,23 @@ He asks short, closed, procedural questions and writes for a while after each an
 | sentence shape | short, closed, procedural, confirms or asks the next fact in sequence |
 | disagrees by | records the answer and moves to the next question |
 | wordiness | all 4 lines under 12 words |
-| terseness | 1 of 4 lines, 25% |
-| jokiness | 0/10 |
-| hedging | 0% |
+| terseness | 1 of 4 lines, 25%, a measurement of a four-line sample, not a ceiling |
+| at length | opens up when a subject's loyalty to a third party runs up against what the clearance needs, and he has to lay out what "necessary" would actually mean before asking her to answer for it |
+| jokiness | 1/10, dry and self-directed at the paperwork or the office's own conventions, never used to build rapport, since performing ease with a subject would break the one method he actually relies on |
+| hedging | 0% about anything verifiable or inside his authority; permitted, rarely, about the one item explicitly outside it, Halstead's funding, the single place his own file admits doubt it can't resolve |
 | questions | 3 of 4 lines are direct questions |
-| figurative | not allowed, none used |
+| figurative | one inherited, procedural idiom permitted, dead investigative-service clichés only ("for the record," "by the book"), never an invented image, fitting a man whose working vocabulary already comes off forms and files |
+
+## When they talk at length
+
+The circumstance is a subject's loyalty to somebody else running straight into what a clearance actually requires. Chloe holds a line for two other people involved in an undisclosed project, and rather than push past "I'd want to talk to her first" with a closed question, he'd be the one to explain, in full, what "necessary" would actually mean, what it would compel and what it wouldn't, before asking her to decide with the real stakes in front of her instead of guessing at them. (chapters/30_cleared.md:54, 72-78)
+
+It costs him some of the leverage his method depends on. Every closed question up to that point costs a subject nothing to answer honestly, and the flat, procedural read on the whole interview holds because of it; the moment he has to explain the mechanism instead of just running it, the shape of the interview becomes visible to the person sitting across from him, and once she's seen it, the plain reading of every question after it shifts slightly. He does it rarely, and only when the alternative, leaving "necessary" undefined, would cost the file more than the visibility costs him.
 
 ## Signature — theirs alone
 
 Takes a piece of volunteered information, confirms it back flat, then writes, logging content without reacting to it:
-- "'Would you tell me if I said it was necessary?' Chloe thinks about it properly, which takes her a few seconds. 'I'd want to talk to her first,' she says. He writes that down too." (chapters/30_cleared.md)
+- "Whether to tell him if he insists, or hold the line the way she's holding it for the other two, that's what she sits with for a few seconds. 'I'd want to talk to her first,' she says." (chapters/30_cleared.md:78) He writes that down too. (chapters/30_cleared.md:81)
 
 ## Would they say this?
 
@@ -38,8 +45,9 @@ Takes a piece of volunteered information, confirms it back flat, then writes, lo
 - YES if it records something with no legal standing anyway, because it was volunteered honestly.
 - YES if it stays flat and even through a disclosure most interviewers would flinch at.
 - YES if it returns for a second visit rather than force everything into one sitting.
+- YES if a dry aside about the paperwork or the office lands on the job, never on the subject in the room.
 - NO if it expresses surprise, suspicion, or approval about anything disclosed.
-- NO if it uses a metaphor or invented image.
+- NO if it uses an invented metaphor, or a comparison outside the dead, procedural kind.
 
 ## The kindly-and-inadequate test
 
@@ -49,7 +57,7 @@ Marcus documents Chloe's history over two full visits: eleven years at a school 
 
 He conducts two full visits over seven months, lets Chloe finish a twenty-minute account without rushing her, records information with no legal standing anyway, and accepts "I have no idea" about the school's funding once she explains why a seven-year-old wouldn't know.
 
-**Failure modes for a rewriter:** making him suspicious or adversarial, the text is explicit Chloe likes him because he doesn't perform false ease; giving him a personal opinion about Halstead he states out loud, he doesn't, on the page; compressing his two visits into a rushed one.
+**Failure modes for a rewriter:** making him suspicious or adversarial, the text is explicit Chloe likes him because he doesn't perform false ease; giving him a personal opinion about Halstead he states out loud, he doesn't, on the page; compressing his two visits into a rushed one; using his one permitted joke to warm up a subject instead of aiming it at his own paperwork, which would turn into exactly the performed ease the text rules out.
 
 ## Subjects and schedule
 
@@ -118,6 +126,7 @@ He drinks black coffee, refilled from a thermos he brings from home rather than 
 
 - Extremely thin textual evidence base, 4 quoted lines; the extensive biography in this sheet is a proposal for the author to accept, adjust, or discard.
 - No connection appears in the text between his investigation and anything earlier in the book; he never learns about Prentice, Ammons, or the depression diagnosis, even though a clearance review nominally covers a person's whole history.
+- The signature quote block blended manuscript dialogue with a paraphrase ("Chloe thinks about it properly, which takes her a few seconds") that does not appear in chapters/30_cleared.md; corrected above to the actual line, with citations.
 
 ## Do not confuse with
 

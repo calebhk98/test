@@ -8,7 +8,7 @@
 
 ## Voice in one paragraph
 
-He runs two registers in the same scene: short and procedurally transparent with Chloe, long and information-dense with Meg. His most characteristic line does both at once: "'I'm not seeing what the school is seeing. I think she finishes in the first two minutes and then she's got thirty-eight minutes left over and nowhere to put them.'" (chapters/02_march_4th.md)
+He runs two registers in the same scene: short and procedurally transparent with Chloe, long and information-dense with Meg. His most characteristic line does both at once: "'I'm not seeing what the school is seeing. She finishes in the first two minutes and then she's got thirty-eight minutes left over and nowhere to put them.'" (chapters/02_march_4th.md:82)
 
 ## Dials
 
@@ -17,17 +17,24 @@ He runs two registers in the same scene: short and procedurally transparent with
 | sentence shape | two registers, short and procedural with Chloe, long and explanatory with Meg |
 | disagrees by | states the institution's framing beside his own findings and lets the gap speak |
 | wordiness | under 10 words a line with Chloe; 40 to 70 words unbroken with Meg |
-| terseness | roughly 21% of lines are three words or fewer, concentrated in the testing half |
-| jokiness | 0/10 |
-| hedging | 0% |
+| terseness | roughly 21% of lines are three words or fewer, concentrated in the testing half, a measurement, not a ceiling |
+| at length | opens up with the adult who has to act on the results, never with the child who was tested, and the switch itself is the point |
+| jokiness | 1/10, the only candidate is "the rest of them put it in the folder" (chapters/02_march_4th.md:95), delivered flat, "without any particular feeling about it" per the narration, dry institutional realism bordering on gallows humor about the system, never about the child |
+| hedging | 0% in his own words, and it's earned: he's candid to a fault with Meg by design, but "some of them do move on a report like that" (chapters/02_march_4th.md:93) already functions as a hedge about something outside his control, an institution's behavior, even without a hedge word attached to it |
 | questions | high with Chloe, test administration; near zero with Meg |
-| figurative | not allowed, none used |
+| figurative | one inherited, plain-spoken idiom permitted in the Meg-register only, dead and clinical ("on paper," "by the book"), never with Chloe, never invented, matching the register split he already has |
+
+## When they talk at length
+
+He goes long with exactly one person: the adult who has to act on what he found, never the child who was measured. In the room with Chloe he stays under ten words a line, explains a rule before applying it, and declines flatly to rate her. Twenty minutes later, in the hallway, the same findings come out of him in forty-to-seventy-word unbroken runs, jargon translated in real time, the school's account and his own side by side. (chapters/02_march_4th.md:86-97) The switch is the character, not a mood: length is reserved for someone with power to use it, and a child being tested has none.
+
+It costs him the comfort of an unqualified result. Being that thorough and that candid with Meg means handing her the realistic odds in the same breath as the diagnosis, "some of them do move on a report like that... the rest of them put it in the folder," so the fuller he is, the more he has to undercut the very report he just spent two hours building. He does this every time, not because it's easy, but because a family that found him through a pediatrician came for the plain number, not a softened one.
 
 ## Signature — theirs alone
 
 Every time Chloe asks how she did, he declines to rate it; twenty minutes later, in the hallway, he gives Meg the specific number he wouldn't give the child:
-- "'Was that good?' 'That's not one I answer,' Ben says, and he isn't being mean about it." (chapters/02_march_4th.md)
-- "'The talking-and-reasoning part of this, she's at the top of it. The speed part, she's ordinary.'" (chapters/02_march_4th.md)
+- "'Was that good?' 'That's not one I answer,' Ben says, and he isn't being mean about it." (chapters/02_march_4th.md:51-52)
+- "'The talking-and-reasoning part of this, she's at the top of it. The speed part, she's ordinary.'" (chapters/02_march_4th.md:88)
 
 ## Would they say this?
 
@@ -39,8 +46,9 @@ Every time Chloe asks how she did, he declines to rate it; twenty minutes later,
 - YES if it matches the physical scale of the room to the child in it, the same-size chair.
 - YES if it checks in on a child's state directly and asks again if the first answer seems performative.
 - YES if it takes materials away the instant a timed section ends, cleanly, without ceremony.
+- YES if the register lengthens for the adult in the room and stays short and procedural for the child, in the same scene.
 - NO if it rates or ranks Chloe's performance directly to her.
-- NO if it uses a metaphor or invented image.
+- NO if it uses an invented image, or a comparison outside the dead, clinical kind he'd use with Meg.
 
 ## The kindly-and-inadequate test
 
@@ -50,7 +58,7 @@ Ben spends two hours on a full battery: block patterns, verbal reasoning, digit 
 
 He sits "on a chair the same size as hers," levels the room to Chloe's scale before starting. He administers the full battery with visible discipline, checks in on her state directly, and asks again when the first answer to "are you tired" sounds automatic. In the hallway, he is candid to the point of bluntness with Meg and never cold about it.
 
-**Failure modes for a rewriter:** softening his refusal to rate Chloe's performance; making him promise Meg an outcome the school hasn't guaranteed; bringing him back into the story without addressing the gap this sheet documents below.
+**Failure modes for a rewriter:** softening his refusal to rate Chloe's performance; making him promise Meg an outcome the school hasn't guaranteed; bringing him back into the story without addressing the gap this sheet documents below; writing his institutional candor with Meg as either upbeat or bitter, it's neither, it's delivered "without any particular feeling about it."
 
 ## Subjects and schedule
 
@@ -123,6 +131,7 @@ He drinks black coffee, one cup, before the first session of the day, none after
 - He never returns, and nothing in the manuscript acknowledges it, confirmed by direct search of every chapter file and both v2 files. When Chloe's depression is diagnosed seven months later, the family sees a different, unconnected clinician, Dr. Miriam Ammons, instead. If the author wants to close this gap, having Ammons reference or request his report would do it in one line; a later chapter could instead acknowledge the family never followed up. This sheet's account of his practice winding down and becoming harder to reach offers one way to make the gap read as circumstance rather than oversight, offered as a proposal.
 - BETA_NOTES.md raises him as "the most obvious candidate for who put her on the list." No line in the primary text supports this; flagged as a reference-document theory, not adopted here.
 - The earlier brief's line-count estimate, seven mentions, undersold his dialogue volume, nearly 30 lines, all in one scene.
+- The "Voice in one paragraph" quote inserted "I think" into "she finishes in the first two minutes," which is not in chapters/02_march_4th.md:82; corrected above. A second citation, "the rest of them put it in the folder," was pointing at Meg's line instead of his; corrected to :95.
 
 ## Do not confuse with
 

@@ -4,7 +4,7 @@ A federal analyst who reads for a living and cannot stop himself from following 
 
 **Surname:** Langford. The manuscript never gives him one.
 **Age span:** present at Halstead by age 11–12 per his own recollection; every line he speaks is as an adult, and no dialogue is dated to his childhood. | **MBTI:** ISTJ (writing aid, not a claim) | **IQ:** roughly 165–175 by ordinary test norms, well into genius range by any outside measure. Unremarkable at his own school, where nobody around him measures lower.
-**Born:** May 2005, the same age-cohort as Chloe: he "was twelve that year" for the loading-dock intrusion (chapters/27_the_file.md:86), the same year Chloe was twelve too.
+**Born:** May 2005, the same age-cohort as Chloe: he "was twelve that year" for the loading-dock intrusion (chapters/27_the_file.md:83), the same year Chloe was twelve too.
 **Appears in:** chapters/13_ten_pages.md (narration only, no dialogue); chapters/23_the_first_one.md (narration), chapters/24_the_chat.md (dialogue), chapters/27_the_file.md (his own chapter); chapters/32_the_money.md, chapters/33_the_other_one.md, chapters/34_the_files.md (narration), chapters/35_nine_minutes.md.
 **Speaks:** 26 lines, all of them as an adult. Zero dialogue anywhere in chapters 1–20 of the manuscript; his only appearance in that entire span is one sentence of narration, chapters/13_ten_pages.md:164.
 

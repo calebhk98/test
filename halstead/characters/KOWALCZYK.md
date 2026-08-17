@@ -16,11 +16,17 @@ Kowalczyk answers a challenge to her method by re-deriving it as a headcount, li
 | sentence shape | number first, then the causal reason for the number |
 | disagrees by | restates the situation as a live calculation until the objection dissolves |
 | wordiness | 6/10, one-word openers followed immediately by a long causal expansion |
-| terseness | roughly 1 of 8 turns at 3 words or fewer ("Yeah,") |
-| jokiness | 0/10, the "candy from a baby" line is explanatory, not comic |
-| hedging | 0% |
+| terseness | roughly 1 of 8 turns at 3 words or fewer ("Yeah,"), a measurement of the sample, not a ceiling on her |
+| at length | opens up when a student puts a felt unfairness to her directly, past the point a flat number would normally close it |
+| jokiness | 2/10, dry and procedural, aimed at paperwork or a colleague's tolerance for a drill they don't need, never at a student |
+| hedging | 0%, and it's earned rather than inherited: her "if"s are causal conditionals, not softeners, so there's nothing left to hedge once the count is stated |
 | questions | 0%, every quoted turn is a statement, even answering a question |
-| figurative | one conventional/inherited simile found, permitted under the style guide |
+| figurative | one conventional/inherited simile confirmed on the page, available again under the same rule, never an invented image |
+
+## When they talk at length
+The circumstance is narrow and it only has one shape: a student stands in front of her and puts a felt unfairness into words, to her face, past the point where the standard number-then-reason line would normally close the exchange. "That's it? That's all you've got for me?" is the only time in the book anyone does this to her, and she answers with the longest single turn she gets, the whole mechanism run out: ten-year-olds against other ten-year-olds who'd never been hit, set against fifteen-year-olds against five-year veterans, and what that difference costs a falling number. (chapters/18_fifteen.md:87-89)
+
+It costs her nothing she'll show. She stays up on her toes shelving a box of wraps the entire time and never comes down to look at the student until the sentence that ends it, which means the extra length reads as more information rather than as an opening, and a student hoping for comfort out of that paragraph won't find any in it, only a bigger version of the same arithmetic. She won't offer this unprompted, and it isn't available to a first-year student who hasn't already spent years being corrected by her; it exists only as an answer to somebody she's already put years of work into, cornering her directly.
 
 ## Signature, theirs alone
 Converts a physical threat or complaint into a live arithmetic breakdown, counted out loud: "Five people can reach you at once..."; "ten is the shape of every long fight there is." Reused in shorter form years later when Chloe's numbers drop at fifteen.
@@ -37,11 +43,12 @@ Kowalczyk competed and trained at the top level her sport has, and does still, a
 - YES if it predicts a specific future change years ahead and says so plainly.
 - YES if it holds the exact same rule for the strongest and the weakest student in the room.
 - YES if it treats a genuinely dangerous night, four grown men, stopped, with the same scoring register as a Tuesday drill.
+- YES if it's a dry, unimpressed complaint about paperwork or a colleague's patience for a drill they'll never need, aimed at the task or the institution, never at a student.
 - NO if it praises a student's toughness or grit as a personal quality.
 - NO if it apologises for a hard drill or checks in on how a student feels about losing.
 
 ## Are they acting like themselves?
-Confronted directly ("That's it? That's all you've got for me?") she doesn't soften, she answers the actual question with a longer version of the same mechanism-first logic while physically continuing an unrelated task the whole time, which the text calls out specifically. Failure modes: having her comfort a student whose numbers dropped instead of reframing the numbers; giving her a hedge anywhere, none exists in eight turns; writing her as visibly invested in a win or loss instead of staying occupied with something else while she talks.
+Confronted directly ("That's it? That's all you've got for me?") she doesn't soften, she answers the actual question with a longer version of the same mechanism-first logic while physically continuing an unrelated task the whole time, which the text calls out specifically. Failure modes: having her comfort a student whose numbers dropped instead of reframing the numbers; giving her a hedge anywhere, none exists in eight turns; writing her as visibly invested in a win or loss instead of staying occupied with something else while she talks; landing her dry humor on a student instead of on paperwork, the refresher class, or her own losing streak against Bell.
 
 ## Subjects and schedule
 Runs the block-one compulsory self-defence hour daily from age ten, and the ten-on-one drill that starts in January of that year and never stops.

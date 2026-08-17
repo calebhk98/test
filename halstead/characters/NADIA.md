@@ -8,19 +8,46 @@ Runs on proportion: fixes exactly what's broken and no more, and wants to build 
 **Speaks:** 41 lines total, badly front-loaded. Only 5 lines appear in the first 20 chapters; the rest split across two later files, a third of it one- or two-word chat filler ("yeah," "hang on," "since when").
 
 ## Voice in one paragraph
-Short independent clauses with no connectives: she doesn't join ideas with "and," "but," or "so," she sets one fact next to the next one. Near-imperative even outside actual commands, as in "Go back and fight the waitress." She opens on the fact, never on a lead-in ("so," "well," "look"). She essentially never asks; questions measure 0% of her lines, and her one rhetorical exception answers itself in the same breath ("why would a machine have a port"). She disagrees by flat refusal or correction, proportionate to the offense, then moves on without relitigating. Zero figurative language anywhere. Her most characteristic line is "if youre going to come at me, come at me. dont insult me with a cleaner" (chapters/28_nadia.md through chapters/35_nine_minutes.md, "Nadia," line 47): paired imperatives, no adjective, no explanation of why a cleaner counts as an insult. The reader supplies that.
+Short independent clauses more often than not: she sets one fact next to the next one rather than
+reaching for "and" or "so" to soften two claims into a single one. A connective shows up when the
+steps genuinely depend on each other, a multi-step order, a real condition, because there it names
+an actual sequence rather than padding a sentence (see When they talk at length). Near-imperative
+even outside actual commands, as in "Go back and fight the waitress." She opens on the fact, never
+on a lead-in ("so," "well," "look"). She essentially never asks; questions measure 0% of her
+lines, and her one rhetorical exception answers itself in the same breath ("why would a machine
+have a port"). She disagrees by flat refusal or correction, proportionate to the offense, then
+moves on without relitigating. Zero figurative language anywhere. Her most characteristic line is
+"if youre going to come at me, come at me. dont insult me with a cleaner" (chapters/28_nadia.md
+through chapters/35_nine_minutes.md, "Nadia," line 47): paired imperatives, no adjective, no
+explanation of why a cleaner counts as an insult. The reader supplies that.
 
 ## Dials
 | | |
 | :-- | :-- |
-| sentence shape | imperative / near-imperative, short independent clauses, no connectives |
+| sentence shape | imperative / near-imperative, short independent clauses; a connective earns its place only by naming a real sequence or condition, never by softening two claims together |
 | disagrees by | flat refusal, proportionate to the offense, then moves on, no escalation, no relitigating |
 | wordiness | 7.8 words/line in chat, 6.0 in tagged prose |
-| terseness | 21% of lines three words or fewer |
+| terseness | 21% of lines three words or fewer. A measurement, not a target |
+| at length | goes past three sentences running a room under real time pressure, stacking short orders rather than lengthening any one of them, or laying out the shop's numbers for her father, the one person a plain statement of hers has actually changed a decision for (see When they talk at length) |
 | jokiness | 3/10, dry: closes a joke someone else opened rather than starting one ("She'd take you apart," agreeing) |
-| hedging | measured 6%, target 0%: the clearest tell that a line is off-voice |
+| hedging | measured 6% — none on a decision already made; a real qualifier can appear on the rare line where she's still working out what something is worth, because that's a live read, not a claim yet |
 | questions | measured 0%, target 0%: she states, she doesn't ask |
 | figurative | not allowed, ever |
+
+## When they talk at length
+
+She strings sentences together in two situations. The first is running a room under real
+pressure: she splits a floor into working teams in about four minutes, and the length comes from
+the number of short orders stacked one after another, not from any single order getting longer.
+"Eleven people take four instructions from her in a row before any of them thinks about it."
+(chapters/14_sixty_degrees.md:213). It costs her the private version of being wrong: any
+correction has to happen in front of the same room that just took orders from her, since there's
+no quiet do-over once she's said it out loud to eleven people. The second is the shop's numbers
+with her father, the one place a plain statement of hers has actually moved a decision that wasn't
+hers to make, by fourteen he sometimes took her read over his own (see Home). That one costs her
+differently: if she's wrong there it isn't just information to act on, it's money he already
+trusted her with. Outside those two, she stays short; a room that isn't in trouble and a decision
+that isn't hers to defend don't pull the longer version out of her.
 
 ## Signature: theirs alone
 Names the person she's talking about instead of using a pronoun, even where a pronoun would be the natural, unremarkable choice.
@@ -32,6 +59,7 @@ The real text only gives a weak, partial version of this: direct vocative addres
 
 ## Would they say this?
 - YES if it's two or more short independent clauses stated flatly, with nothing linking them.
+- YES if a connective ("and," "then," "unless") joins two orders in a real sequence, one step depending on the one before it, rather than softening two claims into one.
 - YES if it states the decision first, with at most one short clause of reasoning trailing it.
 - YES if it names the person under discussion instead of defaulting to "he/she/they."
 - YES if the response to a slight or a threat is scaled exactly to the offense, no bigger.
@@ -39,7 +67,7 @@ The real text only gives a weak, partial version of this: direct vocative addres
 - YES if it's a flat correction, stated once, with no case built around it.
 - YES if it treats something genuinely remarkable she just did as ordinary and moves straight to the next task.
 - YES if it's a rhetorical question that answers itself in the same breath.
-- NO if it hedges: "maybe," "I think," "probably," "I guess."
+- NO if it hedges a decision already made: "maybe," "I think," "probably," "I guess."
 - NO if it contains a simile, metaphor, or any invented image.
 
 ## Are they acting like themselves?
@@ -95,6 +123,12 @@ Compact, fast, always already moving: rarely photographed still because she's ra
 - Tired, or at two in the morning, she sleeps in short complete units and comes back online without a transition: asleep sitting up in a diner booth for four minutes, then awake, finishing the sentence she left off on. She treats sleep as a task to complete.
 - A free Saturday goes to something with a visible end state: a repair, a fix, physical work.
 - What she finds funny in other people is confidence that's outrun competence, played straight without comment: Sam wanting a "real" opponent while a fifty-year-old waitress on her feet nine hours a day would take him apart (chapters/20_the_parking_lot.md).
+- Angry, she doesn't get louder, she gets exact: the sleeve-push that usually precedes something difficult shows up before something unfair too, and what follows it is scaled to the offense and nothing past it (see Dials, disagrees by).
+- Humiliated, the tell is the interview scene where she notices her own bar has drifted without her: she doesn't defend the drift, she names it flatly and starts fixing it in the same breath, which is as close as she gets to visibly smarting from something (see Interior life).
+- Envious of someone getting handed the bigger thing before they've earned it, the exact thing she's still waiting on herself, she doesn't say so. She goes and finds the nearest repair and does it faster than it needed.
+- Grief, if a trust like the one she's afraid of ever actually failed her, wouldn't look different from any other bad call closed out: no relitigating, the same flat close. The only tell would be how long the fix takes to start.
+- Elated, finishing the thing she's been waiting to be trusted with, she's the one time anyone would catch her not already moving to the next task.
+- She is unfair, once, to Chloe: she reads what's in the napkin and keeps pressing, one finger on the evidence, past the point where Chloe would have dropped it herself, because Nadia has already decided the truth is worth more than Chloe's comfort and doesn't check whether Chloe agrees (chapters/16_thirteen.md).
 
 ## Interior life
 Wants to be trusted with something bigger before anyone thinks to offer it to her, rather than earning her way into it by increments.

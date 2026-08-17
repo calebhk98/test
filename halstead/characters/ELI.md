@@ -19,17 +19,33 @@ Eli builds a sentence by restating what was just said in his own terms, then ans
 | sentence shape | short, but reframes the terms before answering: "That's not X, that's Y" |
 | disagrees by | reframes the risk as a solvable constraint |
 | wordiness | 8.6 words per message, low for the cast |
-| terseness | 30% of lines at three words or fewer |
+| terseness | 30% of lines at three words or fewer. A measurement, not a target |
+| at length | goes past three sentences teaching someone genuinely behind, or defending a risk calculus someone he trusts is challenging; costs him the thread of whatever he was solving, and he loses sleep catching back up to it (see When they talk at length) |
 | jokiness | 7/10, the cast's only playful register, jokes by gamifying stakes |
 | hedging | 7% measured, his to keep |
 | questions | 0% measured, he asserts rather than asks |
 | figurative | not allowed, no simile, metaphor, or invented image, ever |
 
+## When they talk at length
+
+He goes long in two situations, and both cost him the same thing: the thread of whatever he was
+mid-solving when the conversation started. The first is teaching someone genuinely behind, where
+patience is the whole point and rushing would defeat it: "Eli gets into everything, and he does
+it without hurrying. When Chloe asks how he took the November set he sits up on the edge of the
+table, swinging one foot, and talks her through it for twenty minutes on the back of somebody's
+timetable." (chapters/16_thirteen.md:69). The second is defending a risk calculus to someone whose
+read he actually wants to change, not just answer once and move past: quoted sentencing ranges
+don't make him retreat, they make him keep building the case (chapters/33_the_other_one.md). That
+one costs him more, because building a case out loud is the register he's worst at and likes
+least, the rhetoric he'd rather leave to a subject with a grade attached, spent instead on a
+friend for free. Outside those two, he goes back to reframe-and-stop; nobody gets the
+twenty-minute version for making conversation.
+
 ## Signature — theirs alone
 
 Asserts, then repeats the assertion a second time with the contraction removed, rather than escalating any other way.
 
-- Real: "it wont come back to your company" → "it will not come back to your company" (chapters/32_the_money.md:23, :427).
+- Real: "it wont come back to your company" → "it will not come back to your company" (chapters/32_the_money.md:23, :23).
 - PROPOSED, to spec: "That's not a problem." → "That is not a problem." (not in the text; a pattern for a rewriter to extend the signature elsewhere).
 
 ## Would they say this?
@@ -60,7 +76,7 @@ Failure modes for a rewriter:
 Halstead runs the same eight academic hours and two afternoon blocks for everyone from age seven or eight. The language each year, the two rotating academic slots, and both afternoon blocks are individually chosen, so nobody else at the school has Eli's exact schedule.
 
 - **Languages, in order:** Spanish, French, Russian, Mandarin, Hebrew, Korean, Japanese, Romanian, Serbian, Ukrainian, Georgian. He's known for Georgian, picked specifically because the script, not the language, was unfamiliar. He doesn't bother polishing the languages a dictionary or a translator would get him through just as fast; he spends his hours where an unfamiliar script forces him to parse it by hand instead, because that's where the hours actually buy him something. An alphabet nobody in his life already reads is functionally a substitution cipher with extra steps, and he treats it like one.
-- **Best at:** cryptography. The one on-page school scene shows this directly: the first term is spent entirely breaking things other people built, and "Eli gets into everything, and he does it without hurrying" (chapters/16_thirteen.md:71) — he solves in one evening a set that took eleven classmates a week (chapters/16_thirteen.md:73).
+- **Best at:** cryptography. The one on-page school scene shows this directly: the first term is spent entirely breaking things other people built, and "Eli gets into everything, and he does it without hurrying" (chapters/16_thirteen.md:69) — he solves in one evening a set that took eleven classmates a week (chapters/16_thirteen.md:73).
 - **Worst at:** rhetoric, the subject built around who benefits from an argument and who's paying for it. His vocabulary is entirely mechanism (cameras, enforcement, pipelines), and a subject graded on persuasion over correctness doesn't reward what he's built to notice. Even at his worst he could out-argue almost anyone outside the cohort. The gap is appetite, not ability: he'd rather spend the hours on a system than on a room.
 - **Favourite, and why:** cryptography, for the same reason it's his best. It hands him something broken on day one and asks why, with no preamble.
 - **The subject nobody else took:** he petitioned, at thirteen, to double up cryptography with networks a year early rather than take them in the usual sequence. The faculty allowed the irregular request because he'd already shown he didn't need the scaffolding networks is supposed to provide first.
@@ -84,7 +100,7 @@ Build and posture: slight, not thin, narrow through the shoulders, the kind of b
 
 Face: unremarkable in the same register as the house. Nothing a stranger would describe first if asked. Eyes that go to the nearest moving object in a room before they go to a person.
 
-Hands: taps a two-finger rhythm, always the same one, against a table, a knee, a doorframe. An unconscious metronome, it speeds up when he's thinking hard and doesn't stop when he's talking. Otherwise usually occupied: turning a pen, working a corner of paper loose, taking a cap on and off something. The one on-page instance of his hands doing something specific is handing a solved timetable back "with two fingers, smiling at the floor" (chapters/16_thirteen.md:75).
+Hands: taps a two-finger rhythm, always the same one, against a table, a knee, a doorframe. An unconscious metronome, it speeds up when he's thinking hard and doesn't stop when he's talking. Otherwise usually occupied: turning a pen, working a corner of paper loose, taking a cap on and off something. The one on-page instance of his hands doing something specific is handing a solved timetable back "with two fingers, smiling at the floor" (chapters/16_thirteen.md:73).
 
 Clothes: whatever's clean and doesn't require a decision, three or four shirts in steady rotation, nothing with a brand or a slogan. A slogan is a thing you'd have to have an opinion about in public.
 
@@ -96,7 +112,22 @@ Eats fast and standing up when he's mid-problem, slow and properly when he isn't
 
 Occupies a room by finding the one interesting or broken thing in it and drifting toward that rather than toward the people.
 
-Bored, he goes looking for something to fix rather than somewhere quieter. Wrong, the one on-page instance shows delight rather than defensiveness: a surprised-face emoji and "i didnt even think of that" when Kavi improves on his plan (chapters/24_the_chat.md:37–323). Praised, the one on-page instance shows him answering the actual question rather than performing modesty: "ruth i dont know. thats the actual answer" (chapters/34_the_files.md:143). Losing, he treats it as data, the same way he treats being outthought, and goes and learns whatever beat him.
+Bored, he goes looking for something to fix rather than somewhere quieter. Wrong, the one on-page instance shows delight rather than defensiveness: a surprised-face emoji and "i didnt even think of that" when Kavi improves on his plan (chapters/24_the_chat.md:37–323). Praised, the one on-page instance shows him answering the actual question rather than performing modesty: "ruth i dont know" (chapters/34_the_files.md:143). He doesn't tally what a thing cost him the way Kavi does; what he hands back is the one part of the claim he can actually check, since a compliment isn't gradable and a fact is (see Do not confuse with). Losing, he treats it as data, the same way he treats being outthought, and goes and learns whatever beat him.
+
+Angry, the tell is the Signature move itself: he doesn't raise his voice, he repeats the same
+assertion with the contraction removed, which is as close as his register gets to escalating
+(chapters/32_the_money.md:17, :23). Humiliated, caught having missed something obvious in front of
+the one person whose rigor he actually wants on him, the two-finger tap against whatever's nearest
+stops for a moment instead of speeding up. Envious, briefly, of anyone who gets to find out for
+certain whether they were right, Ruth's grade coming back, Kavi's list eventually closing, because
+his own best work doesn't come back marked by anyone but him (see Interior life). Grieving the
+father who isn't in the house and isn't a story, the tap stops the same way it does when he's
+humiliated, for a few seconds, on the days that would have been his to notice. Elated, the
+surprised-emoji delight at being outthought by Kavi is the clearest instance on the page: not
+gloating, not deflating, just open (chapters/24_the_chat.md:37–323). He is unfair, once, to Chloe:
+flatly unmovable when she's wrong about something that matters later, "no. chloe im sorry but no"
+(chapters/35_nine_minutes.md:43), and afterward he doesn't do a repair gesture, he goes back to
+whatever's still broken and leaves the friendship's ease to mend on its own.
 
 Tired, he gets blunter. He trims the small courtesies first, and his answers get shorter while the reframe move gets faster to arrive at. At 2am, his best thinking often happens then, after everyone else has stopped needing him to explain anything out loud and the problem gets to just be a problem.
 
@@ -144,7 +175,7 @@ Food: eats the same breakfast most days because deciding costs something, one fe
 ## Relationships
 
 - **Chloe:** patient technical explainer when she's behind (chapters/16_thirteen.md:71–73, twenty minutes on a solved cipher set), flatly unmovable corrector when she's wrong about something that matters later: "no. chloe im sorry but no" (chapters/35_nine_minutes.md:43).
-- **Ruth:** she pushes him directly on risk, quoting sentencing ranges at him as an argument, and he doesn't dodge the question when she asks it twice — "ruth i dont know. thats the actual answer" (chapters/34_the_files.md:143). He wants her rigor pointed at him rather than around him.
+- **Ruth:** she pushes him directly on risk, quoting sentencing ranges at him as an argument, and he doesn't dodge the question when she asks it twice — "ruth i dont know" (chapters/34_the_files.md:143). He wants her rigor pointed at him rather than around him.
 - **Sam:** the one who ribs him hardest for the string of vulnerabilities, "thats cheating" (chapters/24_the_chat.md:54). Eli lets it land; from Sam, that's Sam noticing.
 - **Kavi:** working partner as adults, Eli builds the worm, Kavi builds the thing that watches it (chapters/32_the_money.md:8). As a child, he's the one person shown improving on Eli's own idea in real time, and Eli receives it with open delight (chapters/24_the_chat.md:31–323).
 - **Nadia:** she holds him to a specific, checkable promise. A single-word "nadia: eli" (chapters/32_the_money.md:20) is enough to make him restate his assurance formally. He wants her to trust the mechanism, not just the promise.
@@ -154,8 +185,8 @@ Food: eats the same breakfast most days because deciding costs something, one fe
 - Turns real stakes into a personal challenge: "guys im speedrunning retirement" (chapters/24_the_chat.md:13).
 - Reacts to being outthought with delight rather than defensiveness: surprised-emoji plus "i didnt even think of that" (chapters/24_the_chat.md:37–323).
 - Values the process of solving something over the reward for it. Calls a lawyer meeting "the most interesting thing thats happened to me since i started" rather than register disappointment over a missed payout (chapters/24_the_chat.md:89).
-- Habit: restates a challenged claim a second time with the contraction removed (chapters/32_the_money.md:17, :427).
-- Habit: explains technical material at length to someone genuinely behind, without visible impatience — "he does it without hurrying" (chapters/16_thirteen.md:71).
+- Habit: restates a challenged claim a second time with the contraction removed (chapters/32_the_money.md:17, :23).
+- Habit: explains technical material at length to someone genuinely behind, without visible impatience — "he does it without hurrying" (chapters/16_thirteen.md:69).
 - Keeps a real, private insect collection nobody at Halstead knows about.
 
 ## Facts a rewriter needs
@@ -176,5 +207,16 @@ Food: eats the same breakfast most days because deciding costs something, one fe
 4. **Filler collapse.** Under low stakes his dialogue collapses into generic chat filler — "hang on" (chapters/24_the_chat.md:40), "yeah," "no" — indistinguishable from anyone else in the same chat. Fix: whoever speaks second in these exchanges should be doing their own signature move instead of filler.
 
 ## Do not confuse with
+
+**Kavi.** Both terse, technical, all-mechanism, and neither ever produces a simile or a metaphor;
+both also hand something back instead of a thank-you when they're praised, which is where the two
+collapse into each other. The difference is what gets handed back. Kavi's version is a cost audit:
+he names the time or difficulty because a compliment on an easy win is evidence nobody's tracking
+which wins were actually hard. Eli keeps no such ledger, he'd rather find out whether the win
+holds up than argue about what it cost, so what he hands back is the checkable fact under the
+compliment, not its price. The two also disagree by different means: Kavi explains the mechanism
+underneath a wrong claim; Eli reframes the claim itself before answering it ("That's not X, that's
+Y"). If the line defends what something cost, it's Kavi's; if it relabels the terms of the
+question before answering it, it's Eli's.
 
 Eli and Theo are both quiet, technical, and cryptographers by training, and speak almost entirely inside the same group chat. The overlap comes from sharing one school and one register. Where they still separate: Eli reframes and asserts, and never asks (0% questions); Theo objects on record and complies, and is the one of the two who hedges (a proposed 15%+ of his lines, against Eli's steady 7%). If a line hedges more than once, or ends unresolved as an open question, it is not Eli's. If a line runs long, multi-clause, with a qualifier attached, it reads more like Theo. Eli's average sits under nine words, and he doesn't attach qualifiers. The two also diverge hard in the open ground: Eli grew up in central Ohio, unremarkable and unwatched, which is where his flat, accurate but incomplete read on his own ranking comes from; Theo grew up on the Maine coast, formal and closely supervised by grandparents, which is where his briefing-shaped sentences and on-record objections come from. Watch specifically for the collision at chapters/35_nine_minutes.md:78 and :847, where Eli currently echoes a line word for word; a fixed version should replace his half with his own reframing move.

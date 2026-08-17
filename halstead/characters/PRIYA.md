@@ -301,7 +301,7 @@ thinking, which has probably been true of every morning of her life since she wa
   (chapters/12_nine.md:115, 123). Chloe is also the one person who treats her as reputation rather
   than collateral, lending to her unsecured "because it is Priya" (chapters/18_fifteen.md:111).
 - **Ruth**: low-friction and information-first. Priya gets an answer out of Ruth "in a corridor in
-  about ninety seconds" that took others weeks (chapters/13_ten_pages.md:91), and shares a room
+  about ninety seconds" that took others weeks (chapters/13_ten_pages.md:89), and shares a room
   with her, Kavi, and Sam for the late-night bread test (chapters/15_twelve.md:55).
 - **Sam**: caretaking without commentary, plus one instance of contradicting him lightly on the
   record. She marks his height in pencil on a door frame as he grows through the term
@@ -363,7 +363,7 @@ thinking, which has probably been true of every morning of her life since she wa
 
 1. She appears in all 13 chapters of the reading list, speaks in 10 separate scenes across 6
    chapters, and is named outright as one of the fixed core group: "Sam, Ruth, Kavi, Priya, Odile,
-   Eli and Nadia are always there" at the daily dinner table (chapters/16_thirteen.md:123). A
+   Eli and Nadia are always there" at the daily dinner table (chapters/16_thirteen.md:121). A
    sheet built from an earlier, thinner reading of her would undercount this; the fix is simply to
    use the presence that's already on the page.
 2. The run-on shape is present but inconsistent. chapters/04_pluto.md:19 and

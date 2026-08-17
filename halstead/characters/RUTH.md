@@ -9,7 +9,7 @@ A student who cannot leave an unjustified claim standing, in anyone's mouth incl
 
 ## Voice in one paragraph
 
-Ruth states the correction first and the reason second, in that order, almost without exception. She does not build up to a conclusion, she opens with it. Sentences are mid-length, rarely a single word, rarely a paragraph. When she disagrees she puts the other person's name inside the sentence doing the correcting, not before or after it. She never hedges and she never punctuates a challenge as a question, turning "why" into a flat demand instead. Her vocabulary is narrow and reused rather than varied: she says "argument," "outcome," "evidence," "reason" over and over rather than reaching for synonyms. The single most characteristic line: *"That's not an argument, that's an outcome, and besides, they were already inside, so we are losing marks"* (chapters/15_twelve.md:267). Correction first, named consequence second, her own team scored on the school's own rubric rather than praised.
+Ruth states the correction first and the reason second, in that order, almost without exception. She does not build up to a conclusion, she opens with it. Sentences are mid-length, rarely a single word, rarely a paragraph. When she disagrees she puts the other person's name inside the sentence doing the correcting, not before or after it. She never hedges and she never punctuates a challenge as a question, turning "why" into a flat demand instead. Her vocabulary is narrow and reused rather than varied: she says "argument," "outcome," "evidence," "reason" over and over rather than reaching for synonyms. The single most characteristic line: *"That's not an argument, that's an outcome, and besides, they were already inside, so we are losing marks"* (chapters/15_twelve.md:265). Correction first, named consequence second, her own team scored on the school's own rubric rather than praised.
 
 ## Dials
 
@@ -17,19 +17,45 @@ Ruth states the correction first and the reason second, in that order, almost wi
 | :-- | :-- |
 | sentence shape | assertion, then the reason for it, in that order, mid-length |
 | disagrees by | corrects, and says your name while doing it |
-| wordiness | 9.3 words/line in chat, 5.0 words/line in tagged spoken prose |
-| terseness | 24% of lines ≤3 words now, target 20% |
+| wordiness | 9.3 words/line in chat, 8.2 words/line in tagged spoken prose |
+| terseness | 27% of lines three words or fewer. A measurement, not a target |
+| at length | when someone she trusts refuses to accept her flat, correct-and-done answer and makes her rebuild the whole case instead of resting on the conclusion; it costs her the one place she otherwise gets to stop looking |
 | jokiness | 3/10, dry, deadpan, delivered as a stated fact, never a punchline |
-| hedging | 3% now, target 0% (hedging is Theo's exclusive trait; strip it from her) |
-| questions | 0% now, target 0%; she asks by flat declarative, never a question mark |
+| hedging | 3% measured, and right for her baseline; it doesn't need to be driven to Theo's zero, a stray qualifier survives when she's reasoning toward a claim she hasn't finished testing rather than reporting one she has |
+| questions | 0% measured; she asks by flat declarative, never a question mark |
 | figurative | not allowed. Every character in this slot keeps their claims in evidence rather than image, and hers is the flattest of the group. |
+
+## When they talk at length
+
+Ruth stops at the conclusion by default, in the room and in the chat alike, and treats
+getting there first as the whole job. She goes long only when someone she has reason to
+trust refuses to let her stop there and makes her rebuild the chain instead of accepting
+the last link in it. Kavi does this to her directly: "kavi: ruth" / "kavi: read that
+back" (chapters/34_the_files.md:86-86), and when she tries to close it with "ruth: i know
+what it says" (chapters/34_the_files.md:89) he doesn't let her, "kavi: no. read it back"
+(chapters/34_the_files.md:92), until she gives in and runs the whole thing out, past the
+flattened line she'd been repeating for a year, all the way to "ruth: how good are we"
+(chapters/34_the_files.md:134). A professor at MIT does the same thing with a raised hand
+instead of a name: he "cannot follow her past the third step of" her reasoning and asks
+her to go back rather than nodding her through it (chapters/31_ruth.md). Both times the
+shape is the same. She does not defend the conclusion. She re-derives it, in order, from
+the start, out loud or in type, and a reader who wants to write her sustaining a spoken
+argument should use the same trigger: begin at the conclusion, and only keep going when
+somebody refuses to let it stand alone.
+
+It costs her the one place she otherwise gets to rest. "Correct" is the point at which
+everyone else stops looking, and rebuilding the chain in front of someone means she can't
+stop there either, not privately at 1am where a gap is safe to find alone, but in real
+time, watched. The MIT year is the expensive version of the same thing: she keeps the case
+closed for ten months rather than open it in front of anyone, and when it finally opens, in
+the group chat, it doesn't stop at one line (chapters/31_ruth.md:63-125).
 
 ## Signature, theirs alone
 
 Says the other person's name inside the sentence that is correcting them. No one else in the cast owns this move.
 
 - *"It is not better, Sam."* (chapters/15_twelve.md:59)
-- *"That is not what any of the maths says, Kavi."* (chapters/16_thirteen.md:103)
+- *"That is not what any of the maths says, Kavi."* (chapters/16_thirteen.md:101)
 
 ## Would they say this?
 
@@ -95,8 +121,8 @@ The rest is not in the manuscript, so here it is decided. She wears whatever's c
 - **Where she sits, how she occupies a room:** on the floor rather than a chair when the scene allows it, shoes off, lined up beside her (chapters/06_the_list.md:60); reading a book on her knees mid-conversation without looking up when she's already decided the point (chapters/15_twelve.md:59).
 - **Hands:** taps out a rhythm against her own leg to drill a timing count, silently, walking to dinner (chapters/14_sixty_degrees.md:41). Writes numbers directly on her forearm in pen when nobody has paper (chapters/15_twelve.md:249).
 - **Bored:** reads to others as bored quickly in anything rote or briefing-shaped. "Ruth was bored in the briefing," Odile says (chapters/17_fourteen.md:19), reported by someone else, not shown from inside; she doesn't announce it herself.
-- **Wrong:** does not admit it quickly. Holds a private, comfortable, wrong explanation for roughly a year before dismantling it herself, alone, off the page (chapters/31_ruth.md:5-279). Once she does admit it, she does so completely and publicly, and immediately turns it into a request for data from everyone else rather than an apology.
-- **Praised:** gets insufferable about a mark she doesn't like. "Ruth gets a B minus, which she is unbearable about" (chapters/15_twelve.md:339). She has spent her whole life inside one building, measuring herself against ninety other people who were found the same way she was, so a B minus among them is the only data point she has ever owned, and she treats it exactly the way anyone would treat a real grade: as information about how she did, not as evidence of what she is.
+- **Wrong:** does not admit it quickly. Holds a private, comfortable, wrong explanation for roughly a year before dismantling it herself, alone, off the page (chapters/31_ruth.md:5-279). The first sign that something is off doesn't read to her as evidence either: a joke falls flat in a study group and she walks home running "the timing, the words, where the four seconds went wrong" (chapters/31_ruth.md:20), the same forensic pass she'd run on anyone else's mistake, and a table goes quiet around a question she meant straight and asked once too literally (chapters/31_ruth.md:26). She logs both and keeps going rather than let either one land as the thing it actually is. Once she does admit she was wrong, months later, she does so completely and publicly, and immediately turns it into a request for data from everyone else rather than an apology.
+- **Praised:** gets prickly about a mark she doesn't like and doesn't let it drop: "Ruth gets a B minus. She brings it up for a week." (chapters/15_twelve.md:337). She has spent her whole life inside one building, measuring herself against ninety other people who were found the same way she was, so a B minus among them is the only data point she has ever owned, and she treats it exactly the way anyone would treat a real grade: as information about how she did, not as evidence of what she is.
 - **Losing:** goes quiet and re-runs the sequence privately rather than contest the result out loud, the same instinct that runs the MIT year: investigate alone before arguing.
 - **Tired, at 2am:** obsessive and iterative rather than sloppy. Lies on the floor of her room "with the machine on her chest, playing the same six seconds" for two days straight on a sound problem (chapters/17_fourteen.md:95), and the breakthrough arrives at "about one in the morning," sitting up fast enough that the machine slides off her (chapters/17_fourteen.md:105).
 - **A free Saturday:** spends it running someone else's numbers. Comes to time Chloe's rifle sessions "because I asked her to" (chapters/18_fifteen.md:49, 153) rather than doing anything of her own.
@@ -110,7 +136,7 @@ What that says about her: the confidence she performs in public, instant, unhedg
 
 **What she wants and hasn't said out loud, beyond the one thing she does eventually say:** to be told, honestly and specifically, that she isn't just fast at things other people are also good at, to have the comparison class widen past ninety-one. When she finally does ask the real question, it's in her own words: "somebody wrote to my mother when i was six. a person sat down and picked me / i want to know why it was me." (chapters/31_ruth.md)
 
-**What she's afraid of:** a wrongness she can't fix by working alone in a room, because working alone in a room is the tool she has always used to fix everything else. The MIT year is exactly that: a problem she couldn't correct by outworking it, because what turned out to be wrong was the comparison itself, not the coursework. She can survive being wrong, eventually, publicly, completely, and does.
+**What she's afraid of:** a wrongness she can't fix by working alone in a room, because working alone in a room is the tool she has always used to fix everything else. The MIT year is exactly that: a problem she couldn't correct by outworking it, because what turned out to be wrong was the comparison itself, not the coursework. What finally breaks the year isn't a number. It's a professor she likes, in office hours, who can't follow her past the third step and asks her to go back instead of nodding her through it (chapters/31_ruth.md:40). She doesn't argue with him. She walks out and sits on a wall until the light changes twice (chapters/31_ruth.md:43), then goes home and starts checking the rest of it alone, the same way she always has. She can survive being wrong, eventually, publicly, completely, and does.
 
 **What she thinks about before sleeping, most nights:** the exact point earlier in the day where an argument could have been tighter, a correction faster, a proof one step shorter. She replays the version of the conversation where she got there first.
 
@@ -122,7 +148,7 @@ What that says about her: the confidence she performs in public, instant, unhedg
 
 ## The small stuff
 
-Coffee, not tea, taken plain and finished fast rather than savored. Handwriting small, upright, consistent letterforms, the same hand whether it's on paper or on her own arm. Her room, at Halstead and at home, has almost nothing on the walls and a great deal on the desk, mid-project, never fully cleared, because clearing it would mean deciding something is finished before it is. Pockets carry a pen, always, and whatever she's currently checking someone else's numbers about. With money she is exact rather than generous or careful: she'll lend it at a fair rate and expect it back on schedule, the way she expects anything else that was agreed to. No stated superstition, but a ritual worth keeping: before she says something she knows will be unwelcome, she finishes whatever small physical task is in front of her first, closes the book, sets down the cup, as if starting mid-motion would make the point less clean. On a phone or in chat she is unusually economical for someone otherwise willing to talk at length in person; chat gets the conclusion, the room gets the argument. First thing in the morning: awake without transition, already thinking about whatever she left unresolved the night before.
+Coffee, not tea, taken plain and finished fast rather than savored. Handwriting small, upright, consistent letterforms, the same hand whether it's on paper or on her own arm. Her room, at Halstead and at home, has almost nothing on the walls and a great deal on the desk, mid-project, never fully cleared, because clearing it would mean deciding something is finished before it is. Pockets carry a pen, always, and whatever she's currently checking someone else's numbers about. With money she is exact rather than generous or careful: she'll lend it at a fair rate and expect it back on schedule, the way she expects anything else that was agreed to. No stated superstition, but a ritual worth keeping: before she says something she knows will be unwelcome, she finishes whatever small physical task is in front of her first, closes the book, sets down the cup, as if starting mid-motion would make the point less clean. On a phone or in chat she is unusually economical for someone otherwise willing to talk at length in person: chat gets the conclusion, the room gets the argument. The one exception is somebody refusing to let the conclusion stand alone, and then even the chat runs long (chapters/34_the_files.md:69-134). First thing in the morning: awake without transition, already thinking about whatever she left unresolved the night before.
 
 ## Would do
 
@@ -146,7 +172,7 @@ Coffee, not tea, taken plain and finished fast rather than savored. Handwriting 
 ## Relationships
 
 - **Chloe:** wants her to keep pace and be told the truth rather than comforted. The one relationship where Ruth's usual bluntness comes with unpaid extra effort attached: she gives up a free Saturday to time Chloe's practice "because I asked her to" (chapters/18_fifteen.md:49).
-- **Sam:** treats him as a fond, exasperating, ongoing correction project. Contradicts him constantly, keeps count of his losses ("Ruth was right, and Sam owes her a week of chairs," chapters/15_twelve.md:365), and documents his mishaps rather than intervening in them (chapters/20_the_parking_lot.md:19).
+- **Sam:** treats him as a fond, exasperating, ongoing correction project. Contradicts him constantly, keeps count of his losses ("Ruth was right, and Sam owes her a week of chairs," chapters/15_twelve.md:365), and documents his mishaps rather than intervening in them (chapters/20_the_parking_lot.md:19). The reflex doesn't stay inside its lane: she tells him at breakfast, in front of the table, exactly how he mishandled asking a girl out, "He had a whole Thursday afternoon and every building on this campus and he didn't know" (chapters/17_fourteen.md:139), then takes it up with him again in private the next day (chapters/17_fourteen.md:143). He hears her out, thanks her for it, and does what he was already going to do. Nothing in the exchange asked to be corrected, and she treats it exactly like something that did.
 - **Kavi:** the one person whose correction of her she accepts without deflecting. When he pushes back on her own disclosure ("kavi: no. read it back," chapters/28_nadia.md through chapters/35_nine_minutes.md) she answers the question straight instead of redirecting it.
 - **Her mother:** cites her as a factual source. "My mother was exactly this height at twelve" (chapters/15_twelve.md:51) is offered as data mid-argument, the same register she'd use for anyone else's evidence. At home the two of them run the claims-adjuster version of her father's contract game on each other.
 - **Her father:** invoked the same way, as an authority to be cited. "My dad's work has better than this and my dad sells insurance." (chapters/15_twelve.md:169) He's also, at home, the person she learned the whole method from, reading contracts aloud at the table.
@@ -158,7 +184,7 @@ Coffee, not tea, taken plain and finished fast rather than savored. Handwriting 
 - Correctness, pursued for its own sake and enjoyed rather than merely insisted on: the bread-test and Watch sequences throughout chapters/15_twelve.md.
 - Latin, argued against on contentious, half-serious grounds; she prefers a language with living speakers who can tell her when she's wrong (chapters/14_sixty_degrees.md).
 - Finnish, for the grammar's internal consistency.
-- Being told things with advance notice, and given the chance to prepare: "Four's fine, Four's happened, as long as They tell you" (chapters/15_twelve.md:275).
+- Being told things with advance notice, and given the chance to prepare: "Four's fine, Four's happened, as long as They tell you" (chapters/15_twelve.md:273).
 - Doing the boring, structural part of a group task herself rather than delegating it, the stock count and the pulse checks (chapters/15_twelve.md).
 - Deflecting her own achievements by naming exactly how little effort they took (chapters/34_the_files.md:101).
 - Being argued with. Never disengages from a challenge and shows no irritation at pushback the way she visibly does at a joke.
@@ -181,7 +207,7 @@ Coffee, not tea, taken plain and finished fast rather than savored. Handwriting 
 1. **Figurative-language violation.** chapters/15_twelve.md:59: "It's mass hysteria with butter on" is an invented image in Ruth's own dialogue, which breaks her zero-figurative-language rule. Fix: cut the image, end the line on "a room agreeing before anybody has chewed anything."
 2. **Line collision with Kavi.** chapters/32_the_money.md:61 and :468 give Kavi and Ruth the identical six words back to back, "thats a person getting older." Fix: keep Kavi's line, give Ruth's the assertion-then-consequence shape instead, a line that agrees and immediately states what that implies for their proof.
 3. **Line collision with Eli.** chapters/35_nine_minutes.md:78 and :847 give Ruth and Eli the identical line, "thats the only thing we have." Ruth speaks first; per her signature Eli, speaking second, should be doing his own reframe move instead of echoing her.
-4. **A hedge word survives in her dialogue.** chapters/15_twelve.md:169: "They're probably actors." "probably" is a hedge; her target is 0%. Fix: cut straight to "They're almost certainly actors" or drop the softened first clause entirely and open on the evidence.
+4. **Resolved.** This entry used to flag chapters/15_twelve.md:169 for the hedge "They're probably actors." The line no longer reads that way: chapters/15_twelve.md:169 currently reads "They're almost certainly actors, look at this." No further fix needed; left here so the next pass doesn't go looking for a line that isn't there anymore.
 5. **Name collision with an unrelated character.** chapters/17_fourteen.md:27-33 uses "Aymar," Ruth's own surname, as the name of a different, apparently male, background student ("Aymar has the stopwatch out... he can see it... Ruth spends the rest of the term making sure people know the stopwatch it came off was from Aymar," treating Aymar as someone other than Ruth in the same scene). This needs a different name for the stopwatch student, not a fix to Ruth's dialogue.
 
 ## Do not confuse with

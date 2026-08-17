@@ -8,7 +8,7 @@ Chloe's second-grade teacher: the one everyone in the building agrees is nice, g
 
 ## Voice in one paragraph
 
-She teaches in full, complete instructions. When something goes wrong with a student, she drops into short, close-range questions, doubled up with no space for a response before the next one lands. Her most characteristic line is "'Okay.' Ms. Vance stays down there on the floor. 'Can you tell me what it is?'" (chapters/07_the_same_room.md:219), real, sustained physical presence, paired with a question gentle enough that it never finds out what's wrong.
+She teaches in full, complete instructions. When something goes wrong with a student, she drops into short, close-range questions, doubled up with no space for a response before the next one lands. Her most characteristic line is "'Okay.' Ms. Vance stays down there on the floor. 'Can you tell me what it is?'" (chapters/07_the_same_room.md:221), real, sustained physical presence, paired with a question gentle enough that it never finds out what's wrong.
 
 ## Dials
 
@@ -17,17 +17,24 @@ She teaches in full, complete instructions. When something goes wrong with a stu
 | sentence shape | two registers, full instructions teaching, short doubled questions comforting |
 | disagrees by | one flat, unrepeated "no" |
 | wordiness | teaching turns 30–40 words; crying-scene questions 3–7 words |
-| terseness | 1 of 10 lines, 10% |
-| jokiness | 0/10 |
-| hedging | 0% |
+| terseness | 1 of 10 lines, 10%, a measurement, not a ceiling |
+| at length | opens up making the case for the calm corner to exist outside her own room, the one subject she can't leave alone |
+| jokiness | 1/10, warm and indulgent, aimed at a kid arguing a classroom rule on a technicality, which charms her even while she holds the line, never mocking |
+| hedging | 0% about a child's safety in front of them, where she needs to stay certain; permitted about anything structurally outside her authority, building-wide policy, budget, a decision the staff meeting actually controls |
 | questions | 5 of 10 lines, 50%, concentrated in the crying scene |
-| figurative | not allowed, none used |
+| figurative | one inherited, ordinary classroom idiom permitted ("a clean slate," "on the same page"), the kind a teacher actually reaches for with a kid or a parent, never an invented image |
+
+## When they talk at length
+
+The subject she can't leave alone is the calm corner and the case for building it into every classroom, not just hers. She's raised it at full staff meetings at least twice, unprompted, arguing that "everyone says she's the nice one" is the school outsourcing its own job to whichever teacher happens to be soft-hearted that year, and that a beanbag and a permission-free timer shouldn't depend on one teacher's weekend course and her own pocket. It's the only place in her range where she argues instead of just acting.
+
+It costs her the thing she's actually good at. Each time she makes the case, "polite interest and no action" is what comes back, so the extended version of her voice is the one that reliably fails to move anything, while her wordless crouch beside a single desk works every time she tries it. Length, for her, is associated with exactly the kind of appeal that doesn't land; the floor-level silence is the register that does.
 
 ## Signature — theirs alone
 
 The only adult in this group of eight who lowers herself to Chloe's level and stays there through the whole exchange:
-- "Ms. Vance comes down the row and crouches all the way down beside the desk, in front of everybody, and puts a hand flat on Chloe's back and leaves it there." (chapters/07_the_same_room.md:205)
-- "'Okay.' Ms. Vance stays down there on the floor." (chapters/07_the_same_room.md:219)
+- "Ms. Vance comes down the row and crouches all the way down beside the desk, in front of everybody, and puts a hand flat on Chloe's back, leaving it there." (chapters/07_the_same_room.md:207)
+- "'Okay.' Ms. Vance stays down there on the floor." (chapters/07_the_same_room.md:221)
 
 ## Would they say this?
 
@@ -39,6 +46,8 @@ The only adult in this group of eight who lowers herself to Chloe's level and st
 - YES if it treats an odd or advanced answer from a student as simply interesting.
 - YES if it keeps teaching, unbothered, through an unusual answer rather than correcting the tone of it.
 - YES if it asks a follow-up gently after a flat "no," rather than accepting silence as the end of the conversation.
+- YES if she's visibly charmed by a kid working a rule's technicality, even while she still holds the line.
+- YES if a hedge shows up about something structurally outside her authority, budget, building-wide policy, and nowhere near a child's immediate safety.
 - NO if it's sarcastic, dismissive, or impatient with a student's question.
 - NO if it presses for an answer more than once after a repeated "no."
 
@@ -50,7 +59,7 @@ For most of the school day, what Laura sees is a quiet, compliant seven-year-old
 
 She sets firm, stated structure early and holds it without renegotiating. She pitches the time-capsule assignment with real emotional framing rather than treating it as filler. When a student is in visible distress she moves toward the child immediately, unconcerned with the social cost to her lesson.
 
-**Failure modes for a rewriter:** making the "weirder" moment a deliberate choice rather than ordinary inattention; cutting the floor-level physical detail, which is her defining trait; having her successfully get an answer out of Chloe, the chapter ends unresolved on purpose.
+**Failure modes for a rewriter:** making the "weirder" moment a deliberate choice rather than ordinary inattention; cutting the floor-level physical detail, which is her defining trait; having her successfully get an answer out of Chloe, the chapter ends unresolved on purpose; letting the calm-corner pitch actually win a vote, the whole point of naming it is that "polite interest and no action" is what she gets.
 
 ## Subjects and schedule
 
@@ -120,6 +129,7 @@ She drinks coffee with too much creamer, in a mug a former student gave her, ref
 - The earlier brief's "roughly 2 lines" undercounted her; she has 10 quoted lines across two scenes.
 - No line of hers survives into chapters/08 in quoted form; the referral call is entirely reported through Meg's side.
 - The "weirder" scene and the crying scene are never connected on the page.
+- Two citations into chapters/07_the_same_room.md were off by two lines (205 and 219 for content actually sitting at 207 and 221), and the first signature quote read "and leaves it there" where the manuscript has ", leaving it there." Both corrected above.
 
 ## Do not confuse with
 

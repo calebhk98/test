@@ -10,27 +10,44 @@ graduation, because the work is the only thing he's ever wanted.
 
 ## Voice in one paragraph
 
-He opens with the conclusion, never a lead-in. A line is either three words and done, or one
-unbroken technical run that keeps going until the explanation is finished, with nothing at
-medium length. He disagrees by attacking the mechanism, never the person. He states outcomes as
-settled fact, with no hedges and almost no questions. When something he did would read as
-impressive, he names the actual cost instead of accepting the compliment. He never produces a
-simile, a metaphor, or any invented comparison. His most characteristic line is "It's four
-seconds of compute. It's not even interesting." (chapters/15_twelve.md:163), said before anyone
-in the room has had a chance to call the crack impressive.
+He opens with the conclusion, never a lead-in. Left alone he clips to three words or fewer;
+handed a mechanism that needs stating, he runs as long as the explanation actually takes, short
+or long, with no padding at any length to round a line out or soften it. He disagrees by
+attacking the mechanism, never the person. He states outcomes as settled fact, with almost no
+questions. When something he did would read as impressive, he names the actual cost instead of
+accepting the compliment. He never produces a simile, a metaphor, or any invented comparison. His
+most characteristic line is "It's four seconds of compute. It's not even interesting."
+(chapters/15_twelve.md:163), said before anyone in the room has had a chance to call the crack
+impressive.
 
 ## Dials
 
 | | |
 | :-- | :-- |
-| sentence shape | clipped to three words, or one long unbroken technical run, with nothing at medium length |
+| sentence shape | clipped by default, three words or fewer; lengthens exactly as far as a mechanism takes to state, short or long, never for padding |
 | disagrees by | corrects the mechanism, not the person; shows no sign of registering that it lands on someone |
 | wordiness | bimodal: 6.5 words per line in tagged prose, with a long upper tail, and 6.8 in chat |
-| terseness | 44% of his chat lines run three words or fewer |
-| jokiness | 2/10. What humor exists is a flat put-down stated as fact: "You did it to yourself." (chapters/04_pluto.md:109, closing line of his introduction chapter) |
-| hedging | 0%. He never says "I think," "maybe," or "probably." |
+| terseness | 44% of his chat lines run three words or fewer. A measurement, not a target |
+| at length | goes past three sentences when a mechanism is being explained wrong in the room, or when a written record is wrong on paper; loses track of whether anyone's still with him either way (see When they talk at length) |
+| jokiness | 2/10. What humor exists is a flat put-down stated as fact: "You did it to yourself." (chapters/04_pluto.md:125, closing line of his introduction chapter) |
+| hedging | 0% on anything he's already settled. A live, unsolved question is the one place a real qualifier can show up, because that's the one place he isn't sure yet |
 | questions | 0% measured. On the rare occasion he asks anything, it targets one specific unresolved mechanism |
 | figurative | not allowed, ever. Zero instances anywhere in the manuscript |
+
+## When they talk at length
+
+He goes past three sentences in two situations, and treats both as unfinished business rather
+than an occasion. The first is a mechanism somebody in the room has gotten wrong: once he starts
+correcting it he keeps going until the explanation is actually finished, not until the room stops
+listening. "'How thick it is,' Kavi says, and keeps going. Sam tries twice more to get back into
+it and doesn't manage it either time." (chapters/04_pluto.md:108–109). He doesn't track the cost
+while he's paying it: the room moves on around him and he's usually the last to notice it
+happened. The second is a written record he thinks is wrong, even where correcting it changes
+nothing for him: he disputes the note about sensor coverage timing "in writing, at length," and
+gets nowhere with it (chapters/15_twelve.md). That one costs him visibly, on paper, and he spends
+the length anyway, which is closer to caring about being right than caring about winning. Outside
+those two triggers he stays clipped; a mechanism nobody's gotten wrong doesn't pull the long
+version out of him, and neither does being asked to make conversation.
 
 ## Signature — theirs alone
 
@@ -43,13 +60,14 @@ Pre-empts praise by naming how easy something actually was, instead of accepting
 
 - YES if the line is three words or fewer, stating a fact with no softener — "Nope." / "The lava, there's a word for it."
 - YES if the line is one unbroken run that keeps going until the explanation is finished, not until the listener reacts.
+- YES if it lands at six to fourteen words because that's exactly how much the mechanism took to state. He doesn't avoid that length, only padding it.
 - YES if a disagreement attacks the claim or the mechanism directly ("That's not how it works though," "The box always says AES-256") with no reference to the other person's feelings.
 - YES if, offered praise, the line names the real mechanism, time, or cost instead of accepting the premise that it was impressive.
 - YES if the line answers exactly the question that was asked and then stops, with nothing added to soften it or round it out.
 - YES if the line states an inference as settled fact, with no hedge attached.
 - YES if an institutional claim (a label, a certification, an official number) gets the same scrutiny as anything else, rather than a pass for being official.
 - YES if the line reads as effortless and exact on the page but would need a half-beat longer to land out loud in one of his languages than the equivalent line in English. Fluent and correct, not instant.
-- NO if the line sits at ordinary conversational length, one or two medium sentences of six to fourteen words, with nothing else marking it. That length is the one range his voice may never occupy.
+- NO if the line is padded to reach a length: a "well," a "kind of," a lead-in clause added because the true length felt too short or too abrupt to hand someone. He adds words for a mechanism, never for cushioning.
 - NO if the line contains a simile, a metaphor, or any invented comparison. He gets none, ever.
 
 ## Are they acting like themselves?
@@ -168,7 +186,23 @@ life), because unstructured time reads to him as more time for the actual proble
 funny in other people is watching them talk themselves into a worse position than the one they
 started in. Sam is the clearest example: he gets an actual laugh out of Kavi before Kavi has said
 a word to anyone (chapters/04_pluto.md:98), and gets the flattest line in that same chapter aimed
-back at him: "You did it to yourself." (chapters/04_pluto.md:109)
+back at him: "You did it to yourself." (chapters/04_pluto.md:125)
+
+He is not flat inside the moments that produce these lines, only in what makes it to his mouth.
+Angry, the one habit that never varies breaks: the object on the table gets turned over and set
+back down off its mark, edges no longer aligned, and he doesn't correct it. Humiliated, he goes
+rigid a beat longer than the half-second catch he shows in chapters/19_sixteen.md, and he stops
+eating mid-plate, the one deviation from finishing first. Envious of whoever reaches one of his
+open questions before he does, he doesn't say so and doesn't sit with it either: he goes straight
+to the next-oldest item on the list rather than staying with the one that just closed, which is
+the tell that it cost him something (see Interior life). Grief, if a question ever did close
+without him the way he's afraid of, would look like the one night he skips his own ritual: no
+rereading the newest entry, notebook shut without the usual pause. Elated, on the rare occasion a
+list item actually gives, the object-turning habit stops the other way: he leaves the room without
+putting whatever he was holding back, and doesn't notice until later that he didn't. He is unfair,
+once, to Sam: dismantling a wrong claim interests him more than reading whether Sam's had enough
+of being wrong in front of everyone, and he keeps going past the point of fairness before the same
+half-beat-late catch registers it (see Are they acting like themselves).
 
 ## Interior life
 
@@ -333,4 +367,10 @@ whatever he left running overnight before he does anything else, including talki
   answering: "That's not X, that's Y," then repeat the assertion minus the contraction. Kavi never
   reframes the premise; he explains the mechanism underneath it, in the clipped-or-run-on shape
   above. If a line's job is to relabel what's being asked, it's Eli's; if its job is to explain
-  how the thing actually works, it's Kavi's.
+  how the thing actually works, it's Kavi's. The two also collapse into each other on praise, since
+  both hand something back instead of a thank-you. Kavi's version is a cost audit: he names the
+  time or difficulty because being praised for an easy win is evidence nobody's tracking which wins
+  were actually hard (see Interior life). Eli keeps no such ledger; what he hands back is the one
+  part of the claim that's actually checkable, because a compliment isn't something he can grade
+  and a fact is. If the line defends what something cost, it's Kavi's; if it hands back the
+  checkable part of the claim instead, it's Eli's.

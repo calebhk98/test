@@ -105,7 +105,7 @@ Full name Aaron Doyle. Students call him "Mr. Doyle", nobody under eighteen uses
 ## Known problems
 - Only one scene contains any of his actual speech; every other characterization point beyond that scene is extrapolated or invented to close the gap.
 - Nothing in the text shows Doyle initiating a correction of a student, the only correction scene runs in the opposite direction. His voice under the more common classroom situation is entirely unattested and the material above is built by extension, not by direct evidence.
-- This sheet used to quote a first line, "Yeah, you're right, I said that wrong," ahead of "Mass. Thank you." The line was real: it stood at chapters/04_pluto.md:112 until a prose pass cut it as a banned verdict construction, leaving the wordless fix and the two words after it. So his one scene is now even barer than it was, and the correction he accepts he accepts in silence.
+- This sheet used to quote a first line, "Yeah, you're right, I said that wrong," ahead of "Mass. Thank you." The line was real: it stood at chapters/04_pluto.md:114 until a prose pass cut it as a banned verdict construction, leaving the wordless fix and the two words after it. So his one scene is now even barer than it was, and the correction he accepts he accepts in silence.
 
 ## Do not confuse with
 Baptiste, both are early-years teachers shown mid-lesson with a marker in hand, but Baptiste's signature is inviting and rewarding a student's question, while Doyle's one scene is about absorbing a correction he didn't invite, without comment either way.
