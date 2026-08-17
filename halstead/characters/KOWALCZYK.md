@@ -2,33 +2,33 @@
 
 Teaches fighting and the ten-on-one drill, and wants every kid who leaves her mat to know, exactly, how many hands can reach them and why that number is survivable.
 
-**First name:** Bogumiła, "Bo" among the two colleagues who'd dare, no student has ever heard it — see Facts.
-**Age span (in the text):** Chloe ages 10-15, the longest continuous teaching span of any staff member in the book | **MBTI:** ESTJ (writing aid, not a claim) | **IQ:** reader estimate, low 130s — tactical and kinesthetic intelligence far outrunning the number
+**First name:** Bogumiła, "Bo" among the two colleagues who'd dare, no student has ever heard it, see Facts.
+**Age span (in the text):** Chloe ages 10-15, the longest continuous teaching span of any staff member in the book | **MBTI:** ESTJ (writing aid, not a claim) | **IQ:** reader estimate, low 130s, tactical and kinesthetic intelligence far outrunning the number
 **Appears in:** chapters/13_ten_pages.md, chapters/17_fourteen.md, chapters/18_fifteen.md
 **Speaks:** 8 quoted turns across three chapters, not front-loaded.
 
 ## Voice in one paragraph
-Kowalczyk answers a challenge to her method by re-deriving it as a headcount, live: "Five people can reach you at once. Six if they're good, seven if you're standing badly, and after that there's no room for anybody, they'd be pushing each other over." Every explanation is quantitative and causal — a number, then the reason for it, then what follows. Her opener to a direct question can be a single word ("Yeah,") before she expands. She's the only staff member to reach for a conventional, inherited simile — "Lasting in that is like taking candy from a baby" — the style guide's one permitted kind of figure, which marks her as the sole teacher willing to reach for an idiom at all. Most characteristic line: "You're not getting worse, they're just coming up off nothing, and you are having an actual challenge now." Reframing a student's falling numbers as a fact about the world changing, with zero reassurance in it.
+Kowalczyk answers a challenge to her method by re-deriving it as a headcount, live: "Five people can reach you at once. Six if they're good, seven if you're standing badly, and after that there's no room for anybody, they'd be pushing each other over." Every explanation is quantitative and causal, a number, then the reason for it, then what follows. Her opener to a direct question can be a single word ("Yeah,") before she expands. She's the only staff member to reach for a conventional, inherited simile, "Lasting in that is like taking candy from a baby", the style guide's one permitted kind of figure, which marks her as the sole teacher willing to reach for an idiom at all. Most characteristic line: "You're not getting worse, they're just coming up off nothing, and you are having an actual challenge now." Reframing a student's falling numbers as a fact about the world changing, with zero reassurance in it.
 
 ## Dials
 | | |
 | :-- | :-- |
 | sentence shape | number first, then the causal reason for the number |
 | disagrees by | restates the situation as a live calculation until the objection dissolves |
-| wordiness | 6/10 — one-word openers followed immediately by a long causal expansion |
+| wordiness | 6/10, one-word openers followed immediately by a long causal expansion |
 | terseness | roughly 1 of 8 turns at 3 words or fewer ("Yeah,") |
-| jokiness | 0/10 — the "candy from a baby" line is explanatory, not comic |
+| jokiness | 0/10, the "candy from a baby" line is explanatory, not comic |
 | hedging | 0% |
-| questions | 0% — every quoted turn is a statement, even answering a question |
+| questions | 0%, every quoted turn is a statement, even answering a question |
 | figurative | one conventional/inherited simile found, permitted under the style guide |
 
-## Signature — theirs alone
+## Signature, theirs alone
 Converts a physical threat or complaint into a live arithmetic breakdown, counted out loud: "Five people can reach you at once..."; "ten is the shape of every long fight there is." Reused in shorter form years later when Chloe's numbers drop at fifteen.
 
 ## Would they say this?
 **The Halstead-staff test.** A line belongs to this staff, not to a generic teacher, only if all five hold: no praise word attaches to the child; a correction is a flat statement of fact; the child's age is never a reason for leniency; an extraordinary result is treated as expected, not remarked on; the adult's own error is fixed the same flat way a student's is.
 
-Kowalczyk competed and trained at the top level her sport has, and does still, and the school's students have no idea. When Sam clocks fourteen seconds against ten and nobody else comes close, she runs the room the way she ran it the day before, no acknowledgment that the number was unusual — the same discipline that lets her mark a stopped armed intrusion a C without it registering as a contradiction.
+Kowalczyk competed and trained at the top level her sport has, and does still, and the school's students have no idea. When Sam clocks fourteen seconds against ten and nobody else comes close, she runs the room the way she ran it the day before, no acknowledgment that the number was unusual, the same discipline that lets her mark a stopped armed intrusion a C without it registering as a contradiction.
 
 - YES if it turns a felt unfairness into a plain number and a reason for the number.
 - YES if it tells a student their falling performance is caused by the world getting harder, not by them getting worse, and states the mechanism.
@@ -55,13 +55,13 @@ Runs the block-one compulsory self-defence hour daily from age ten, and the ten-
 **What she thinks of the rest of the curriculum:** she thinks most of it is theoretical until a body is actually under stress, and considers her hour the only one that tests whether anything else the students learned actually survives contact with a real adrenaline spike.
 
 ## Home
-Kowalczyk competed for her country at the top level of her sport for most of her twenties and thirties, and still trains and competes on her own time, at a level the students would never guess from watching her hold a clock. Halstead's offer was the best she'd ever seen, better than any national federation had put in front of her, and it included one thing that decided it outright: full healthcare coverage for her mother, back in Poland, whose ongoing condition no federation stipend had ever come close to touching. She still sends money home besides, but the healthcare is what actually made the decision for her. Lives on campus in a small apartment directly above the mat room, chosen deliberately so the equipment is never more than a flight of stairs from her hands. Unmarried, no children. Visits Poland every other summer; the rest is spent training on campus, alone, harder than she trains any student. Her father coached wrestling in a state sports school; she grew up on a mat before she grew up anywhere else.
+Kowalczyk held her national judo team's roster spot for eleven straight years and still competes in the masters division, a fact the students would never guess from watching her hold a clock. The national federation's stipend never covered more than her own training costs. Halstead's offer added full healthcare coverage for her mother in Poland, whose condition needs a specialist the federation's insurance never reached, and that is the one line in the contract that actually decided it. She still sends money home besides. Lives on campus in a small apartment directly above the mat room, chosen deliberately so the equipment is never more than a flight of stairs from her hands. Unmarried, no children. Visits Poland every other summer; the rest is spent training on campus, alone, harder than she trains any student. Her father coached wrestling in a state sports school; she grew up on a mat before she grew up anywhere else.
 
 ## Body
 Compact, dense, moves with total economy, nothing wasted, no gesture that isn't doing a job. Hands are always occupied with something else while she talks, shelving wraps, holding a clock, the one physical habit the text actually gives her. (chapters/18_fifteen.md:87, chapters/13_ten_pages.md:39) Keeps her eyes on the board rather than the speaker in at least one exchange. (chapters/17_fourteen.md:57) Wears the same training clothes every day regardless of the block she's teaching. Eats large, plain meals, fast, standing at the counter of the staff kitchen rather than sitting. Sleeps little and trains at hours nobody else on staff is awake for.
 
 ## Personality off the page
-Off the mat, colleagues describe her as the most literally unbothered person on staff, not cold, just entirely uninterested in performing a reaction she doesn't have. Bored: physically restless, will find something to move or lift rather than sit still. Wrong: corrects herself instantly and moves on, same as she does with a student. Praised: brushes it off toward the drill itself, never the compliment. Losing: at the annual staff shoot against Bell, she loses cheerfully and immediately starts explaining what she'd change. At 2am, awake, she's usually training, insomnia solved with movement rather than fought with rest. A free Saturday is spent teaching herself something new and physical, currently welding, badly, at Pruitt's forge on a day it isn't open to students. Finds funny in others: false modesty about a real skill, she has no patience for it and no patience for hiding one either.
+Off the mat, colleagues say she doesn't perform a reaction she doesn't have, and leave it there. Bored: physically restless, will find something to move or lift rather than sit still. Wrong: corrects herself instantly and moves on, same as she does with a student. Praised: brushes it off toward the drill itself, never the compliment. Losing: at the annual staff shoot against Bell, she loses cheerfully and immediately starts explaining what she'd change. At 2am, awake, she's usually training, insomnia solved with movement rather than fought with rest. A free Saturday is spent teaching herself something new and physical, currently welding, badly, at Pruitt's forge on a day it isn't open to students. Finds funny in others: false modesty about a real skill, she has no patience for it and no patience for hiding one either.
 
 ## Interior life
 Wants, unspoken: for at least one of her students to actually need what she taught them, once, for real, and come back and tell her it worked, which has happened exactly three times and she counts every one. Afraid of: that the intensity she trains into these kids gets asked for outside the building someday in a way nobody's told her about. Thinks about before sleep: rarely anything emotional, she runs technical sequences in her head the way other people count sheep. Free year: she'd go back to Poland and coach at the sports school her father ran, part time, alongside her own training. Believes that others would argue with: that comfort is actively bad training, Sandoval would push back hard on applying that logic to anything outside a gym. Wrong about: she assumes every student who freezes under pressure just needs more reps; at least one student's freeze was closer to fear that reps alone never touched, and she was slower than she'd like to admit to notice the difference.
@@ -85,10 +85,10 @@ Drinks strong tea, no sugar, out of a chipped mug that's been hers for a decade.
 - Give a passing grade to an outcome that didn't meet the drill's actual terms, the same standard applied to everyone, not a verdict on the child.
 
 ## Relationships
-- **Chloe** — corrects her stance early and, years later, is the one Chloe corners in a doorway to demand a real answer, and gets one. (chapters/13_ten_pages.md:35, chapters/18_fifteen.md:81-87)
-- **Sam** — comes up once, secondhand, complaining that "she said a minute," a rare moment of a student pushing back on her outside her earshot. (chapters/13_ten_pages.md:55)
-- **Sinclair** — the colleague she actually talks logistics with, and whose evacuation numbers she's improved at least once.
-- **Bell** — the one she loses to, cheerfully, at the annual staff shoot, and immediately starts coaching.
+- **Chloe**, corrects her stance early and, years later, is the one Chloe corners in a doorway to demand a real answer, and gets one. (chapters/13_ten_pages.md:35, chapters/18_fifteen.md:81-87)
+- **Sam**, comes up once, secondhand, complaining that "she said a minute," a rare moment of a student pushing back on her outside her earshot. (chapters/13_ten_pages.md:55)
+- **Sinclair**, the colleague she actually talks logistics with, and whose evacuation numbers she's improved at least once.
+- **Bell**, the one she loses to, cheerfully, at the annual staff shoot, and immediately starts coaching.
 
 ## Likes, dislikes, habits
 - Explains a rule as a calculation rather than a principle. (chapters/13_ten_pages.md:43, 47)
@@ -98,13 +98,13 @@ Drinks strong tea, no sugar, out of a chipped mug that's been hers for a decade.
 - Trains harder alone than she ever asks of a student.
 
 ## Facts a rewriter needs
-Full name Bogumiła Kowalczyk, goes by "Bo" with the very few adults who'd use it. Students call her "Kowalczyk" only — nobody under eighteen uses a staff member's first name at Halstead. Former and current top-level competitive combat-sport athlete; Halstead's offer beat any national federation stipend she'd seen, and the deciding factor was full healthcare coverage for her mother in Poland. Teaching is a handful of hours a week; her own training and competition is the rest of her time, run out of the school. Signed the standard staff non-disclosure agreement. Unmarried. Teaches self-defence and the ten-on-one drill from at least age 10 through at least age 15.
+Full name Bogumiła Kowalczyk, goes by "Bo" with the very few adults who'd use it. Students call her "Kowalczyk" only, nobody under eighteen uses a staff member's first name at Halstead. Former and current top-level competitive combat-sport athlete; Halstead's offer beat any national federation stipend she'd seen, and the deciding factor was full healthcare coverage for her mother in Poland. Teaching is a handful of hours a week; her own training and competition is the rest of her time, run out of the school. Signed the standard staff non-disclosure agreement. Unmarried. Teaches self-defence and the ten-on-one drill from at least age 10 through at least age 15.
 
-**Gender — confirmed feminine in the manuscript.** The text uses feminine pronouns for Kowalczyk in three separate chapters: chapters/13_ten_pages.md:39 ("her hand"), chapters/17_fourteen.md:57 ("her eyes"), chapters/18_fifteen.md:87 ("her toes... she talks"). No "he"/"his" instance exists anywhere in the manuscript itself. SYNOPSIS_CHARACTERS_TIMELINE.md ("Male") and CURRICULUM_GRID.md ("he never says it") are both outliers against a manuscript that is internally consistent, three times, three chapters; both reference documents should be corrected to match the manuscript.
+**Gender, confirmed feminine in the manuscript.** The text uses feminine pronouns for Kowalczyk in three separate chapters: chapters/13_ten_pages.md:39 ("her hand"), chapters/17_fourteen.md:57 ("her eyes"), chapters/18_fifteen.md:87 ("her toes... she talks"). No "he"/"his" instance exists anywhere in the manuscript itself. SYNOPSIS_CHARACTERS_TIMELINE.md ("Male") and CURRICULUM_GRID.md ("he never says it") are both outliers against a manuscript that is internally consistent, three times, three chapters; both reference documents should be corrected to match the manuscript.
 
 ## Known problems
 - The gender label conflict, two reference documents say male, the manuscript says female throughout. Resolved above in the manuscript's favor; both reference documents need fixing.
 - Home, Body, Interior life, and The small stuff close a genuine gap the manuscript leaves; none of it contradicts the page.
 
 ## Do not confuse with
-Bell — both teach a physical skill through blunt, honest cause-and-effect explanation, but Bell's explanations are about a projectile's physics, delivered while holding a demonstration object; Kowalczyk's are about headcounts and time, delivered while doing something else entirely with her hands.
+Bell, both teach a physical skill through blunt, honest cause-and-effect explanation, but Bell's explanations are about a projectile's physics, delivered while holding a demonstration object; Kowalczyk's are about headcounts and time, delivered while doing something else entirely with her hands.

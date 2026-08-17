@@ -2,8 +2,8 @@
 
 Runs the forge, says almost nothing, and wants every student who walks in to learn that the work itself will tell you the truth if you're willing to listen to it.
 
-**First name:** Harlan, never used by anyone at the school under eighteen — see Facts.
-**Age span (in the text):** Chloe ages 12-16, the forge "has been since she was twelve" | **MBTI:** ISTJ (writing aid, not a claim) | **IQ:** reader estimate, high 120s — the number undersells a trade intelligence the text never has to explain
+**First name:** Harlan, never used by anyone at the school under eighteen, see Facts.
+**Age span (in the text):** Chloe ages 12-16, the forge "has been since she was twelve" | **MBTI:** ISTJ (writing aid, not a claim) | **IQ:** reader estimate, high 120s, the number undersells a trade intelligence the text never has to explain
 **Appears in:** chapters/15_twelve.md, chapters/17_fourteen.md, chapters/19_sixteen.md
 **Speaks:** 2 quoted lines in the entire book, across three chapters and four years of story time, the finding is the scarcity itself.
 
@@ -15,14 +15,14 @@ Both of Pruitt's lines are a diagnosis stated once, correctly, delivered already
 | :-- | :-- |
 | sentence shape | one flat clause naming a specific, checkable fault |
 | disagrees by | not attested, no scene shows him disagreeing with anything a student says |
-| wordiness | 1/10 — two lines total, 9 and 8 words |
+| wordiness | 1/10, two lines total, 9 and 8 words |
 | terseness | the real measure is how rarely he speaks at all, two lines across three chapters and four years |
 | jokiness | 0/10 |
 | hedging | 0% |
 | questions | 0% |
 | figurative | none found |
 
-## Signature — theirs alone
+## Signature, theirs alone
 Delivers the correction while already leaving, never stops walking, never waits to see it register. Both of his only two lines share this exact staging. No other teacher in the cast is shown speaking exclusively while departing.
 
 ## Would they say this?
@@ -83,9 +83,9 @@ Drinks black coffee, strong, reheated more than once, doesn't seem to notice or 
 - Comment on four years of unrewarded, unrecorded work, his total spoken output across that span is two sentences, both purely technical.
 
 ## Relationships
-- **Chloe** — the only person he's shown speaking to directly, twice, four years apart, both corrections; he clocked her staying past the first month as the real signal that she belonged there.
-- **The other workers at the forge** — described only as a group who "work around her and leave her to it" for her first month; no individual named. (chapters/15_twelve.md:7)
-- **Sinclair** — the one person who's ever asked him a personal question and gotten a real answer.
+- **Chloe**, the only person he's shown speaking to directly, twice, four years apart, both corrections; he clocked her staying past the first month as the real signal that she belonged there.
+- **The other workers at the forge**, described only as a group who "work around her and leave her to it" for her first month; no individual named. (chapters/15_twelve.md:7)
+- **Sinclair**, the one person who's ever asked him a personal question and gotten a real answer.
 
 ## Likes, dislikes, habits
 - Runs the forge off a whiteboard with names and stock levels, not personal oversight. (chapters/15_twelve.md:7)
@@ -95,11 +95,11 @@ Drinks black coffee, strong, reheated more than once, doesn't seem to notice or 
 - Checks a fire's heat by hand before trusting a gauge.
 
 ## Facts a rewriter needs
-Full name Harlan Pruitt. Students call him "Pruitt" or "Mr. Pruitt" — nobody under eighteen uses a staff member's first name at Halstead. One of the most sought-after working smiths currently active; Halstead's offer matched his actual market value and gave him a forge with no client deadlines. Teaching is a handful of hours a week; his own commissioned work is the rest of his time, done in the same building. Signed the standard staff non-disclosure agreement. Widower, no children. Runs the forge, open Thursdays and most of Sunday, from at least Chloe's age 12 through at least 16. No grade or formal assessment is ever recorded for the forge, confirmed by the manuscript, not just the reference documents. Male, undisputed in the text.
+Full name Harlan Pruitt. Students call him "Pruitt" or "Mr. Pruitt", nobody under eighteen uses a staff member's first name at Halstead. One of the most sought-after working smiths currently active; Halstead's offer matched his actual market value and gave him a forge with no client deadlines. Teaching is a handful of hours a week; his own commissioned work is the rest of his time, done in the same building. Signed the standard staff non-disclosure agreement. Widower, no children. Runs the forge, open Thursdays and most of Sunday, from at least Chloe's age 12 through at least 16. No grade or formal assessment is ever recorded for the forge, confirmed by the manuscript, not just the reference documents. Male, undisputed in the text.
 
 ## Known problems
 - "In four years the whole of his commentary has been telling her which end to hold" (chapters/19_sixteen.md:107) is narrated summary in indirect speech, not a quotation, there's no scene showing him say that exact phrase. A rewriter should not treat it as recoverable dialogue.
 - Home, Body, Interior life, and The small stuff close a genuine gap the manuscript leaves; none of it contradicts the page.
 
 ## Do not confuse with
-Bell — both correct tersely and without elaboration, but Bell always stops to physically demonstrate what's wrong and takes the length of a scene to do it; Pruitt never stops moving and never demonstrates anything, he only names the fault and continues past.
+Bell, both correct tersely and without elaboration, but Bell always stops to physically demonstrate what's wrong and takes the length of a scene to do it; Pruitt never stops moving and never demonstrates anything, he only names the fault and continues past.

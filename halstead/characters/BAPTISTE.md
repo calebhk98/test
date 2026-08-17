@@ -2,8 +2,8 @@
 
 Teaches the youngest students their first real mathematics, and wants every one of them to own the "why" behind a rule before they're ever handed the rule itself.
 
-**First name:** Étienne, never used by anyone at the school under eighteen — see Facts.
-**Who he is — a note before anything else:** Baptiste appears in no reference document — no SYNOPSIS entry, no BETA_NOTES mention, no CURRICULUM_GRID name. He's built here from the manuscript alone. One strong textual link: SYNOPSIS_CHARACTERS_TIMELINE.md's unnamed "mathematics teacher" ("Hears 'why do you flip it,' says 'good, that's the question'...") quotes his chapters/05_behind.md scene verbatim without ever picking up his name. Baptiste and the synopsis's "unnamed mathematics teacher" are the same person.
+**First name:** Étienne, never used by anyone at the school under eighteen, see Facts.
+**Who he is, a note before anything else:** Baptiste appears in no reference document, no SYNOPSIS entry, no BETA_NOTES mention, no CURRICULUM_GRID name. He's built here from the manuscript alone. One strong textual link: SYNOPSIS_CHARACTERS_TIMELINE.md's unnamed "mathematics teacher" ("Hears 'why do you flip it,' says 'good, that's the question'...") quotes his chapters/05_behind.md scene verbatim without ever picking up his name. Baptiste and the synopsis's "unnamed mathematics teacher" are the same person.
 
 **Age span (in the text):** Chloe age 6-7 only | **MBTI:** INTP (writing aid, not a claim) | **IQ:** reader estimate, high 130s
 **Appears in:** chapters/05_behind.md, chapters/06_the_list.md, chapters/08_the_asking.md
@@ -17,20 +17,20 @@ Baptiste never gives an answer without first getting a student to say what they'
 | :-- | :-- |
 | sentence shape | very short, often a question thrown back |
 | disagrees by | doesn't, in the sample, no instance of him contradicting a student exists |
-| wordiness | 2/10 — the shortest average turn of any teacher on this list |
+| wordiness | 2/10, the shortest average turn of any teacher on this list |
 | terseness | roughly half of his 6 turns are 3 words or fewer |
 | jokiness | 0/10 |
 | hedging | 0% |
 | questions | roughly a third of his turns are questions thrown back, the highest rate of any teacher here |
 | figurative | none found |
 
-## Signature — theirs alone
+## Signature, theirs alone
 Answers a question with a question, then still does the requested demonstration in full, from the start, without remarking on the repetition. No other teacher on this list is shown redoing unrewarded work without a word about it.
 
 ## Would they say this?
 **The Halstead-staff test.** A line belongs to this staff, not to a generic teacher, only if all five hold: no praise word attaches to the child; a correction is a flat statement of fact; the child's age is never a reason for leniency; an extraordinary result is treated as expected, not remarked on; the adult's own error is fixed the same flat way a student's is.
 
-Baptiste is a working mathematician whose own research would leave most adults behind after the first sentence, and it never once bleeds into how he handles a six-year-old's question. When Chloe extends the lesson into a genuinely research-grade observation about dividing by zero, he gives her exactly the same two words he'd give any correct question: "Good, that's the question."
+Baptiste publishes in the same journals where his own graduate advisor still reviews for the editor, and none of it bleeds into how he handles a six-year-old's question. When Chloe extends the lesson into the same territory his own current paper sits in, dividing by zero, he gives her exactly the same two words he'd give any correct question: "Good, that's the question."
 
 - YES if it names a student's question as good before answering it, and the praise attaches only to the question.
 - YES if it answers "does X work" with "try it" rather than the answer itself.
@@ -54,7 +54,7 @@ Teaches early mathematics, fraction division, arithmetic, to the youngest age ba
 **Least favourite:** the standardized diagnostic the school runs once a year purely for its own internal records, which tells him nothing his own classroom hasn't already shown him.
 **The one he's secretly proud of:** how far the youngest students carry an idea when he steps back and lets them, the dividing-by-zero tangent is his favorite example of it, and he brings it up, unprompted, at staff meetings about the youngest age band.
 **What he'd teach if he could teach anything else:** a design or building course for the same age band, he thinks six- and seven-year-olds understand structure with their hands before they understand it with numbers, and would love to prove it formally.
-**What he thinks of the rest of the curriculum:** he thinks the youngest years get this exactly right and watches the pace tighten as students move up, treating his own classroom as the one place they get to be unhurried before it does.
+**What he thinks of the rest of the curriculum:** he watches the pace tighten year over year as students move up, and treats his own classroom as the one place they get to be unhurried before it does.
 
 ## Home
 Baptiste is a working mathematician whose research, done at Halstead alongside a handful of teaching hours a week, is real, current, and respected well outside the school. Halstead sought him out and made an offer no university department could match, and he took it because the offer was real and because the school let him keep doing serious work while also getting to teach the age he finds most interesting. Lives off campus, a short drive away, in a house with a large vegetable garden he's inordinately proud of. Married, two grown children neither of whom attended Halstead, his wife teaches at the regular public school in town, and dinner conversation is, by his own account, "two teachers comparing notes about the same age group from two completely different planets." Grew up in a French-Caribbean family that valued precision in speech the way other families valued manners, a habit he brought straight into how he asks a six-year-old a follow-up question.
@@ -87,11 +87,11 @@ Drinks coffee with milk, no sugar, from a mug his kids gave him years ago that s
 - Manage or soothe a student's visible frustration in the moment, trusting her to carry it home and resolve it alone.
 
 ## Relationships
-- **Chloe** — asks the founding question of the scene and is told "Good, that's the question"; he never learns she solved it alone that night, and never needs to.
-- **Marisol** — asks for a full repeat and gets one, without comment. (chapters/05_behind.md:38)
-- **Owen** — asks a harder, more specific question and is told "that's fine and they'll do it again tomorrow," the gentlest deferral in the sample. (chapters/05_behind.md:38)
-- **Ruth** — extends the lesson into the "divide by zero" tangent and gets the same "Good" Chloe got, plus a worked example on the board. (chapters/05_behind.md:43-46)
-- **His wife** — the one person who understands exactly what his day was like, from the opposite end of the same profession.
+- **Chloe**, asks the founding question of the scene and is told "Good, that's the question"; he never learns she solved it alone that night, and never needs to.
+- **Marisol**, asks for a full repeat and gets one, without comment. (chapters/05_behind.md:38)
+- **Owen**, asks a harder, more specific question and is told "that's fine and they'll do it again tomorrow," the gentlest deferral in the sample. (chapters/05_behind.md:38)
+- **Ruth**, extends the lesson into the "divide by zero" tangent and gets the same "Good" Chloe got, plus a worked example on the board. (chapters/05_behind.md:43-46)
+- **His wife**, the one person who understands exactly what his day was like, from the opposite end of the same profession.
 
 ## Likes, dislikes, habits
 - Answers a question with a question by default.
@@ -101,11 +101,11 @@ Drinks coffee with milk, no sugar, from a mug his kids gave him years ago that s
 - Keeps old offcuts on his desk as teaching props.
 
 ## Facts a rewriter needs
-Full name Étienne Baptiste. Students call him "Mr. Baptiste" — nobody under eighteen uses a staff member's first name at Halstead. Working mathematician whose research is real and current; Halstead's offer beat anything a university department could match, and teaching is a handful of hours a week, the rest his own research on the school's resources. Signed the standard staff non-disclosure agreement. Married, two grown children who did not attend Halstead. Teaches early mathematics (fraction division, arithmetic) to Chloe's age band 6-7. Male, undisputed in the text.
+Full name Étienne Baptiste. Students call him "Mr. Baptiste", nobody under eighteen uses a staff member's first name at Halstead. Working mathematician whose research is real and current; Halstead's offer beat anything a university department could match, and teaching is a handful of hours a week, the rest his own research on the school's resources. Signed the standard staff non-disclosure agreement. Married, two grown children who did not attend Halstead. Teaches early mathematics (fraction division, arithmetic) to Chloe's age band 6-7. Male, undisputed in the text.
 
 ## Known problems
 - He has no presence outside chapters/05-08 (Chloe's ages 6-7); nothing tracks whether he continues teaching once students move to the age-8+ blocks. Silent dropout, not explained in-text.
 - Home, Body, Interior life, and The small stuff close a genuine gap the manuscript leaves; none of it contradicts the page.
 
 ## Do not confuse with
-Doyle — both are early-years teachers shown mid-lesson with a marker in hand, but Baptiste's signature is inviting and rewarding a student's question, while Doyle's one scene is about absorbing a correction he didn't invite, without comment either way.
+Doyle, both are early-years teachers shown mid-lesson with a marker in hand, but Baptiste's signature is inviting and rewarding a student's question, while Doyle's one scene is about absorbing a correction he didn't invite, without comment either way.

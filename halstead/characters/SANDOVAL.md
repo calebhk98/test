@@ -2,27 +2,27 @@
 
 Lead researcher on an internal paper Chloe contributes to, and wants to be exactly right rather than merely persuasive, even when precision makes her own position harder to hold.
 
-**First name:** Elena, never used by anyone at the school under eighteen — see Facts.
+**First name:** Elena, never used by anyone at the school under eighteen, see Facts.
 **Age span (in the text):** Chloe age 15, one appearance; referenced again anonymously at Chloe's age ~20-21 | **MBTI:** INFJ (writing aid, not a claim) | **IQ:** reader estimate, mid 150s
 **Appears in:** chapters/18_fifteen.md (named); CHAPTERS_23_30_v2.md, "Chapter Twenty-Five: Cleared" (unnamed, "the lead researcher")
 **Speaks:** 3 quoted turns, all in one scene, in chapters/18_fifteen.md.
 
 ## Voice in one paragraph
-Sandoval names the power imbalance in her own request before making it: "I need to ask you for something, and I would like you to understand while I am asking that it is a request and not an instruction." She then explains, in short clauses joined without softening, exactly why she can't make it an instruction: "You have not signed anything, and I am not going to put a federal NDA in front of a fifteen-year-old, because I do not think anybody should be asking you to sign one." She's precise rather than warm — "Plus, it's not legally binding" corrects the record, not reassures — and states the actual cost of the choice plainly: "The consequences land on the four of us." Most characteristic line: "You can't be held to anything. I can. So asking is what I have." The only line from any teacher in this cast that states the mechanism of its own persuasion out loud, rather than just using the mechanism.
+Sandoval names the power imbalance in her own request before making it: "I need to ask you for something, and I would like you to understand while I am asking that it is a request and not an instruction." She then explains, in short clauses joined without softening, exactly why she can't make it an instruction: "You have not signed anything, and I am not going to put a federal NDA in front of a fifteen-year-old, because I do not think anybody should be asking you to sign one." She's precise rather than warm, "Plus, it's not legally binding" corrects the record, not reassures, and states the actual cost of the choice plainly: "The consequences land on the four of us." Most characteristic line: "You can't be held to anything. I can. So asking is what I have." The only line from any teacher in this cast that states the mechanism of its own persuasion out loud, rather than just using the mechanism.
 
 ## Dials
 | | |
 | :-- | :-- |
 | sentence shape | short clauses joined without softening connectives, building to a stated conclusion |
 | disagrees by | not attested, the scene is a request, not a correction |
-| wordiness | 6/10 — all three turns are multi-clause |
+| wordiness | 6/10, all three turns are multi-clause |
 | terseness | 0% of turns at 3 words or fewer |
 | jokiness | 0/10 |
 | hedging | precision-hedging only, qualifies a legal fact exactly, not an emotional hedge |
-| questions | 0% — she states, even though the scene is framed as "asking" |
+| questions | 0%, she states, even though the scene is framed as "asking" |
 | figurative | none found |
 
-## Signature — theirs alone
+## Signature, theirs alone
 States the structural reason for her own restraint as the content of the request itself, rather than leaving the power imbalance unspoken: "You can't be held to anything. I can. So asking is what I have." No other teacher in this cast narrates the mechanics of their own authority out loud this way.
 
 ## Would they say this?
@@ -85,10 +85,10 @@ Drinks coffee, strong, made carefully, treated as a small ritual rather than fue
 - Let Chloe find out the actual stakes later, from someone else, rather than stating them herself, first.
 
 ## Relationships
-- **Chloe** — the entire relationship shown; recruits her cooperation with a named, explicit request rather than an instruction, and the scene ends with Chloe agreeing without being pushed into it. (chapters/18_fifteen.md:131-145)
-- **The other three names on the NDA** — referenced only as "the four of us" who bear the consequence if Chloe talks; never individuated, never named. (chapters/18_fifteen.md:137)
-- **Amberg** — the one colleague she's discussed a hypothetical ethics-for-teenagers course with, informally, once.
-- **Her own lab team** — reads every sensitive document herself rather than delegate, which her team has come to expect and mostly appreciate.
+- **Chloe**, the entire relationship shown; recruits her cooperation with a named, explicit request rather than an instruction, and the scene ends with Chloe agreeing without being pushed into it. (chapters/18_fifteen.md:131-145)
+- **The other three names on the NDA**, referenced only as "the four of us" who bear the consequence if Chloe talks; never individuated, never named. (chapters/18_fifteen.md:137)
+- **Amberg**, the one colleague she's discussed a hypothetical ethics-for-teenagers course with, informally, once.
+- **Her own lab team**, reads every sensitive document herself rather than delegate, which her team has come to expect and mostly appreciate.
 
 ## Likes, dislikes, habits
 - States the structural facts of a power imbalance before asking for something inside it. (chapters/18_fifteen.md:133, 145)
@@ -98,11 +98,11 @@ Drinks coffee, strong, made carefully, treated as a small ritual rather than fue
 - Redirects credit toward whoever actually did the work.
 
 ## Facts a rewriter needs
-Full name Dr. Elena Sandoval. Students call her "Dr. Sandoval" — nobody under eighteen uses a staff member's first name at Halstead. Leads a well-funded, actively publishing research program; Halstead's offer gave her resources and autonomy no university department could match, and teaching, supervising a handful of student placements a year, is a small, contracted piece of her week. Signed the standard staff non-disclosure agreement. Divorced, no children. Lead researcher on an internal paper; catches Chloe in a corridor outside a lab in April, when Chloe is fifteen, to ask her not to discuss the project. Four people, including Sandoval, have signed a federal NDA on the project; Chloe has not and is deliberately not asked to.
+Full name Dr. Elena Sandoval. Students call her "Dr. Sandoval", nobody under eighteen uses a staff member's first name at Halstead. Leads a well-funded, actively publishing research program; Halstead's offer gave her resources and autonomy no university department could match, and teaching, supervising a handful of student placements a year, is a small, contracted piece of her week. Signed the standard staff non-disclosure agreement. Divorced, no children. Lead researcher on an internal paper; catches Chloe in a corridor outside a lab in April, when Chloe is fifteen, to ask her not to discuss the project. Four people, including Sandoval, have signed a federal NDA on the project; Chloe has not and is deliberately not asked to.
 
-**Gender — confirmed feminine, and confined to one manuscript scene plus one later, anonymous reference.** Every pronoun attached to Sandoval or "the lead researcher" across the accessible manuscript is feminine, in exactly two places:
-1. chapters/18_fifteen.md:133-145 — "She has a folder under one arm," "she shifts the folder to her other arm," and Chloe's own later reflection, "from Sandoval's side."
-2. CHAPTERS_23_30_v2.md:225, "Chapter Twenty-Five: Cleared" — Chloe, years later, describing the same figure to an investigator: "The lead researcher. **She** didn't make me sign anything. **She** said everyone else had signed and if I talked it landed on them."
+**Gender, confirmed feminine, and confined to one manuscript scene plus one later, anonymous reference.** Every pronoun attached to Sandoval or "the lead researcher" across the accessible manuscript is feminine, in exactly two places:
+1. chapters/18_fifteen.md:133-145, "She has a folder under one arm," "she shifts the folder to her other arm," and Chloe's own later reflection, "from Sandoval's side."
+2. CHAPTERS_23_30_v2.md:225, "Chapter Twenty-Five: Cleared", Chloe, years later, describing the same figure to an investigator: "The lead researcher. **She** didn't make me sign anything. **She** said everyone else had signed and if I talked it landed on them."
 
 No "he" instance exists anywhere in the accessible manuscript files. SYNOPSIS_CHARACTERS_TIMELINE.md's claim of a conflict ("'he' in ch14, 'she' in ch25") does not check out against the provided text, chapters/14_sixty_degrees.md contains no Sandoval material at all (verified by full read); that citation doesn't match any accessible chapter. The manuscript itself is internally consistent, feminine, in the two places she or her role actually appears, and appears only in chapters/18_fifteen.md by name.
 
@@ -112,4 +112,4 @@ No "he" instance exists anywhere in the accessible manuscript files. SYNOPSIS_CH
 - Home, Body, Interior life, and The small stuff close a genuine gap the manuscript leaves; none of it contradicts the page.
 
 ## Do not confuse with
-Amberg — both are adults who state a rule and a consequence in the same breath, but Amberg always anchors his statements to a document he's produced (the code, the mark scheme); Sandoval's scene is unanchored to any governing text except the folder she's holding, and her subject is her own conduct, not a governing rule.
+Amberg, both are adults who state a rule and a consequence in the same breath, but Amberg always anchors his statements to a document he's produced (the code, the mark scheme); Sandoval's scene is unanchored to any governing text except the folder she's holding, and her subject is her own conduct, not a governing rule.

@@ -2,7 +2,7 @@
 
 Teaches science to the youngest students and wants them to see, early and often, that being wrong in front of everyone costs nothing worth flinching over.
 
-**First name:** Aaron, never used by anyone at the school under eighteen — see Facts.
+**First name:** Aaron, never used by anyone at the school under eighteen, see Facts.
 **Age span (in the text):** Chloe age 6-7 only | **MBTI:** ISTP (writing aid, not a claim) | **IQ:** reader estimate, high 130s
 **Appears in:** chapters/04_pluto.md, chapters/05_behind.md
 **Speaks:** 2 quoted clauses in one turn, in the entire book, the scene exists to show exactly how he takes a correction.
@@ -15,14 +15,14 @@ Doyle's entire quoted dialogue is a two-part reaction to being corrected mid-lec
 | :-- | :-- |
 | sentence shape | two short flat clauses, no elaboration |
 | disagrees by | not attested toward a student, the one scene shows him agreeing with a correction |
-| wordiness | 1/10 — the shortest total dialogue footprint alongside Pruitt |
+| wordiness | 1/10, the shortest total dialogue footprint alongside Pruitt |
 | terseness | 100% of his two clauses are under 6 words |
 | jokiness | 0/10 |
 | hedging | 0% |
 | questions | 0% |
 | figurative | none found |
 
-## Signature — theirs alone
+## Signature, theirs alone
 Verifies at the source before agreeing, silently, then fixes it without narrating the fix: "Mr. Doyle stops with the marker still up at the board and looks at what he's written." No other teacher in this cast is shown pausing to re-examine their own prior work before responding to a correction.
 
 ## Would they say this?
@@ -84,10 +84,10 @@ Drinks coffee black, a lot of it, refilled from a thermos that goes everywhere w
 - Follow up on a correction afterward, no talking-to, no note home, no comment for the rest of the day. (chapters/04_pluto.md:120)
 
 ## Relationships
-- **Ruth** — corrects him in front of the class and receives the flattest possible acknowledgment; no scene shows them interacting again. (chapters/04_pluto.md:109-117)
-- **Chloe** — watches him for the rest of the day for a reaction that never comes; the scene is staged entirely through her observation. (chapters/04_pluto.md:119-120)
-- **Owen's group** — told to "leave it where it is and come back to it" rather than pushed under time pressure. (chapters/05_behind.md:22)
-- **His housemate colleague** — the one person who sees him outside the classroom, hiking most weekends.
+- **Ruth**, corrects him in front of the class and receives the flattest possible acknowledgment; no scene shows them interacting again. (chapters/04_pluto.md:109-117)
+- **Chloe**, watches him for the rest of the day for a reaction that never comes; the scene is staged entirely through her observation. (chapters/04_pluto.md:119-120)
+- **Owen's group**, told to "leave it where it is and come back to it" rather than pushed under time pressure. (chapters/05_behind.md:22)
+- **His housemate colleague**, the one person who sees him outside the classroom, hiking most weekends.
 
 ## Likes, dislikes, habits
 - Checks his own prior work before responding to a correction rather than answering from memory. (chapters/04_pluto.md:111)
@@ -97,11 +97,11 @@ Drinks coffee black, a lot of it, refilled from a thermos that goes everywhere w
 - Runs long on any topic a student latches onto.
 
 ## Facts a rewriter needs
-Full name Aaron Doyle. Students call him "Mr. Doyle" — nobody under eighteen uses a staff member's first name at Halstead. Active field scientist with a current, well-regarded research program; Halstead's offer covered his fieldwork outright and let him keep it running alongside a handful of teaching hours a week. Signed the standard staff non-disclosure agreement. Unmarried, no children. Teaches science to Chloe's age band 6-7. Male, undisputed in the text.
+Full name Aaron Doyle. Students call him "Mr. Doyle", nobody under eighteen uses a staff member's first name at Halstead. Active field scientist with a current, well-regarded research program; Halstead's offer covered his fieldwork outright and let him keep it running alongside a handful of teaching hours a week. Signed the standard staff non-disclosure agreement. Unmarried, no children. Teaches science to Chloe's age band 6-7. Male, undisputed in the text.
 
 ## Known problems
 - Only one scene contains any of his actual speech; every other characterization point beyond that scene is extrapolated or invented to close the gap.
 - Nothing in the text shows Doyle initiating a correction of a student, the only correction scene runs in the opposite direction. His voice under the more common classroom situation is entirely unattested and the material above is built by extension, not by direct evidence.
 
 ## Do not confuse with
-Baptiste — both are early-years teachers shown mid-lesson with a marker in hand, but Baptiste's signature is inviting and rewarding a student's question, while Doyle's one scene is about absorbing a correction he didn't invite, without comment either way.
+Baptiste, both are early-years teachers shown mid-lesson with a marker in hand, but Baptiste's signature is inviting and rewarding a student's question, while Doyle's one scene is about absorbing a correction he didn't invite, without comment either way.

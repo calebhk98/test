@@ -2,27 +2,27 @@
 
 Runs Defensive Watch, the school's live intrusion-response exercise, and wants a building full of children capable of handling a night that isn't a drill exactly the way they'd handle one that is.
 
-**First name:** Marcus, never used by anyone at the school under eighteen — see Facts.
+**First name:** Marcus, never used by anyone at the school under eighteen, see Facts.
 **Age span (in the text):** appears at Chloe age ~11 (intercom announcement) and 12 (the night intrusion) | **MBTI:** ESTJ (writing aid, not a claim) | **IQ:** reader estimate, low 130s
 **Appears in:** chapters/14_sixty_degrees.md, chapters/15_twelve.md
 **Speaks:** 5 quoted turns across two scenes, both procedural.
 
 ## Voice in one paragraph
-Sinclair's longest turn is short independent clauses stacked without connectives: "Every member of staff currently in the building is now hostile. This includes your teachers. This continues until sixteen hundred or until there are no staff left. Kit is in the usual place." After the night intrusion, his questions are two words each and he accepts one-word answers without following up: "'Who's monitoring?' 'Me,' Ruth says. 'Numbers.'" He closes both scenes with a flat imperative and no commentary — "'Grading's in the morning,' he says. 'Go to bed. Now.'" His one moment of tone rather than pure procedure is dry and inward: "'Good luck,' Sinclair says, in a tone that suggests he does not mean it." Most characteristic line: "Who's monitoring?" The only question in the entire intrusion aftermath that isn't about the danger, the intruders, or the children's safety; it's about whether the process was run correctly, which is what he actually came to check.
+Sinclair's longest turn is short independent clauses stacked without connectives: "Every member of staff currently in the building is now hostile. This includes your teachers. This continues until sixteen hundred or until there are no staff left. Kit is in the usual place." After the night intrusion, his questions are two words each and he accepts one-word answers without following up: "'Who's monitoring?' 'Me,' Ruth says. 'Numbers.'" He closes both scenes with a flat imperative and no commentary, "'Grading's in the morning,' he says. 'Go to bed. Now.'" His one moment of tone rather than pure procedure is dry and inward: "'Good luck,' Sinclair says, in a tone that suggests he does not mean it." Most characteristic line: "Who's monitoring?" The only question in the entire intrusion aftermath that isn't about the danger, the intruders, or the children's safety; it's about whether the process was run correctly, which is what he actually came to check.
 
 ## Dials
 | | |
 | :-- | :-- |
 | sentence shape | short independent clauses in a row, or a one-to-two-word diagnostic question |
 | disagrees by | not attested, no scene shows him disagreeing with a student |
-| wordiness | 3/10 — even his longest turn is four short sentences |
+| wordiness | 3/10, even his longest turn is four short sentences |
 | terseness | roughly 3 of 5 turns at 3 words or fewer |
 | jokiness | 0/10 in content, one line ("Good luck") carries dry, deniable irony |
 | hedging | 0% |
 | questions | 2 of 5 turns, both purely diagnostic |
 | figurative | none found |
 
-## Signature — theirs alone
+## Signature, theirs alone
 Runs a diagnostic exchange in matched one-to-three-word question-and-answer pairs and moves the instant he has the number he needs, no follow-up commentary. No other teacher on this list conducts an entire exchange in fragments this short while still extracting exactly the information he came for.
 
 ## Would they say this?
@@ -85,10 +85,10 @@ Drinks black coffee, functional, never mentions liking or disliking it. Handwrit
 - Treat stopping four armed intruders as an exception to the standard, the response sheet lists what went wrong with the same flatness it would use for a drill, the clearest "nobody in this book is evil" instance attached to any of the nine.
 
 ## Relationships
-- **Ruth** — answers his two questions directly and is the one he addresses at the close; the closest thing to a point of contact in either scene. (chapters/15_twelve.md:327-335)
-- **Chloe** — present in both scenes but never addressed individually; part of "the whole school" both times.
-- **Bell** — the one colleague he shares an early-morning coffee with, both being the two staff most likely to be up before the sun.
-- **Pruitt** — the one person on staff he's ever asked a genuinely personal question, once, years ago.
+- **Ruth**, answers his two questions directly and is the one he addresses at the close; the closest thing to a point of contact in either scene. (chapters/15_twelve.md:327-335)
+- **Chloe**, present in both scenes but never addressed individually; part of "the whole school" both times.
+- **Bell**, the one colleague he shares an early-morning coffee with, both being the two staff most likely to be up before the sun.
+- **Pruitt**, the one person on staff he's ever asked a genuinely personal question, once, years ago.
 
 ## Likes, dislikes, habits
 - Assesses a scene silently before speaking, even under real stakes. (chapters/15_twelve.md:327)
@@ -98,11 +98,11 @@ Drinks black coffee, functional, never mentions liking or disliking it. Handwrit
 - Walks the building's exterior every morning without fail.
 
 ## Facts a rewriter needs
-Full name Marcus Sinclair. Students call him "Sinclair" — nobody under eighteen uses a staff member's first name at Halstead. Former top-tier military special operator, per the reference document; Halstead's offer beat the private security world, matched to his exact expertise, and teaching Watch is a handful of hours a week, the rest his own consulting, run out of the school. Signed the standard staff non-disclosure agreement. Divorced, one adult son. Male, undisputed in the text.
+Full name Marcus Sinclair. Students call him "Sinclair", nobody under eighteen uses a staff member's first name at Halstead. Former top-tier military special operator, per the reference document; Halstead's offer beat the private security world, matched to his exact expertise, and teaching Watch is a handful of hours a week, the rest his own consulting, run out of the school. Signed the standard staff non-disclosure agreement. Divorced, one adult son. Male, undisputed in the text.
 
 ## Known problems
 - The specific military background is asserted only by the reference document (SYNOPSIS_CHARACTERS_TIMELINE.md:309-311), not the manuscript itself, a rewriter drawing on his backstory should know it's sourced there, not from the two chapters where Sinclair speaks.
 - Home, Body, Interior life, and The small stuff close a genuine gap the manuscript leaves; none of it contradicts the page.
 
 ## Do not confuse with
-Kowalczyk — both are procedural and unmoved by the students' state, but Kowalczyk always explains the mechanism behind a number when asked; Sinclair extracts a number and gives nothing back, not even the reason he wanted it.
+Kowalczyk, both are procedural and unmoved by the students' state, but Kowalczyk always explains the mechanism behind a number when asked; Sinclair extracts a number and gives nothing back, not even the reason he wanted it.
