@@ -59,16 +59,15 @@ reach for first. Include the two or three ways a writer most easily gets them wr
 `CURRICULUM_GRID.md` is CHLOE's timetable, not the school's. The six permanent tracks are
 shared; the language each year, the two rotating academic slots and both afternoon blocks
 are individual, and two students in the same year are doing different subjects in a
-different order. Take this character's languages and electives from `_ALLOCATIONS.md` and
-build outward. Give:
+different order. `_ALLOCATIONS.md` records what the sheets currently say; those choices are
+yours to keep or change. Give:
   their language list and what they did with it | best at | worst at | favourite and why
   the subject they took that nobody else did | the year something clicked | what they teach
   the twelves, from thirteen | the one they are secretly proud of
 
 ## Home
 Where they are from, the house, who is in it, what their parents do, what dinner is like,
-what they are like when they go back. Invent it. Use the row in `_ALLOCATIONS.md` as the
-seed and make it specific.
+what they are like when they go back. Invent it, and make it specific.
 
 ## Body
 Build, face, hands, how they move, how they take up space, what they wear when nobody is
@@ -104,8 +103,7 @@ One line each for everyone they actually deal with: what this character wants fr
 person, and how their behaviour changes in front of them.
 
 ## Likes, dislikes, habits
-Short lists. Mark [text] where a specific line or action supports it and [inferred]
-where it is extrapolation. A sheet that cannot tell the difference is not usable.
+Short lists, concrete. Things a reader could put in a scene.
 
 ## Facts a rewriter needs
 Name, surname, family, background, what they are good and bad at, what they know at what
