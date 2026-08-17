@@ -35,8 +35,8 @@ real account of what she did unsaid. She has already told him she got the fracti
 what she gives him next, unprompted, is the whole derivation a second time, on the clean
 side of the napkin: "He did it on the board and I didn't get it. So I did it again at night
 with my own numbers and then I got it," then, "Anybody can do the flipping. You do it and
-it's right, but you don't know it's right. You just know he said." (chapters/06_the_list.md:
-48-50). Two years later at Thanksgiving she does it again with an argument instead of a
+it's right, but you don't know it's right. You just know he said." (chapters/06_the_list.md:48-50).
+Years later at Thanksgiving she does it again with an argument instead of a
 method, building a full case for tariffs unprompted, past the point where a shrug would
 have closed the topic, and lets him find the hole in it himself: "It's what I had and it
 isn't right. It was Tuesday and I had to put something down." (chapters/13_ten_pages.md:146).
@@ -51,8 +51,8 @@ floor, and what replaces it is "please," over and over, offering away her birthd
 future present rather than say what is actually wrong (chapters/09_february.md:15-17). And
 once, told she is really going to Halstead, she talks for four straight hours in the car
 without rationing a word of it, asking her father six questions in a row and falling asleep
-mid-sentence rather than run out the way she usually does, on her own terms, first (chapters/
-09_february.md:133). Both times cost her the one thing the short answer was built to protect:
+mid-sentence rather than run out the way she usually does, on her own terms, first
+(chapters/09_february.md:133). Both times cost her the one thing the short answer was built to protect:
 being caught, by someone who loves her, still in the middle of feeling something instead of
 already finished with it.
 

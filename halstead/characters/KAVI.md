@@ -347,7 +347,7 @@ whatever he left running overnight before he does anything else, including talki
    supports: silent except when a mechanism is on the table.
 2. **The manuscript itself still never gives him a surname.** chapters/10_april.md:21 gives
    another character's surname in full ("Aymar. A, Y, M, A, R.") twelve lines before the identical
-   question is put to Kavi (chapters/10_april.md:33, "'What's your last name,' Chloe says.") and
+   question is put to Kavi (chapters/10_april.md:21, "'What's your last name,' Chloe says.") and
    the scene moves on without answering it. This sheet answers it (Rao), a sheet-level decision,
    not a manuscript one. **Fix:** write the answer into the scene where the question is already
    asked.
