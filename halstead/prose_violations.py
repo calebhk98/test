@@ -161,7 +161,12 @@ def main():
             good.append(entry)
             per_chapter[f.stem] += 1
             per_rule[entry["rule"]] += 1
-            rule_names.setdefault(entry["rule"], entry["rule_name"])
+            # Rule 0 covers every STYLE_RULES section, so the first name seen
+            # would misreport the whole bucket as whichever one landed first.
+            rule_names.setdefault(
+                entry["rule"],
+                "STYLE_RULES — see breakout below" if entry["rule"] == 0
+                else entry["rule_name"])
             if a.show:
                 print(f"\n{entry['file']}:{entry['line']}  rule {entry['rule']} "
                       f"({entry['rule_name']})")
