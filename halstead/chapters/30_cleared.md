@@ -75,7 +75,7 @@ Whitaker fills half a page before he looks up. "Anything else in that category?"
 Whitaker turns back a page, checking something against what he's already written. "Would you tell me if I said it was necessary?"
 
 
-Tell him if he insists, or hold the line the way she's holding it for the other two, that's what she sits with for a few seconds. "I'd want to talk to her first," she says.
+Whether to tell him if he insists, or hold the line the way she's holding it for the other two, that's what she sits with for a few seconds. "I'd want to talk to her first," she says.
 
 
 He writes that down too.
@@ -86,10 +86,10 @@ ________________
 
 
 
-He asks about the funding, and she has nothing. He asks who the school's principal donor is and she says she has no idea, that nobody there ever discussed it, that she was seven when she arrived and it never occurred to her to ask who paid for a school any more than it occurs to a child to ask who pays for a park.
+He asks about the funding, and she has nothing. He asks who the school's principal donor is. She has no idea, nobody there ever discussed it, she was seven when she arrived, no more likely to ask who paid for a school than a child asks who pays for a park.
 
 
-She can hear how that sounds while she's saying it. She says it anyway, because it's true.
+She says it anyway. It's true.
 
 
 The clearance comes through in the autumn.

@@ -8,7 +8,7 @@ There is a file on all ninety-one of them.
 Address, employer, family, where their parents work, where everybody banks. Sam's is the thickest and the newest. Theo's has a note on it that makes him close his laptop and go outside for twenty minutes.
 
 
-There's a standing line saying the graduates are believed to be in contact with one another. There is no assessment of by what means. There is nothing anywhere in the file about what any of them has ever said to any of the others, and a note that collection against the channel has returned no content of any kind, on any occasion, and a recommendation to keep attempting it.
+There's a standing line saying the graduates are believed to be in contact with one another. The file has never worked out the method, and collection against the channel has come back empty every time it's tried, along with a recommendation to keep attempting it.
 
 
 And there's an incident report from six years back.
@@ -63,7 +63,7 @@ ________________
 
 
 
-Ruth is quiet for a bit and then posts one line.
+Ruth goes quiet, then posts one line.
 
 
 ruth: i built that box in about a weekend when i was thirteen so we wouldnt get detention
@@ -113,7 +113,7 @@ nadia: they still dont know
 ruth: yes
 
 
-Nobody types anything for a while.
+Chloe reads yes twice before anyone types again.
 
 
 ruth: i keep saying we're ahead
@@ -140,7 +140,7 @@ eli: i dont know
 ruth: eli how good are we
 
 
-eli: ruth i dont know. thats the actual answer
+eli: ruth i dont know
 
 
 eli: i have never once been at the top of a room in my life

@@ -5,10 +5,10 @@
 The worm goes quiet on a Thursday in June.
 
 
-Eli notices because a check-in doesn't arrive, and then nine minutes later everything is precisely where it should be. Same state, same position, nothing moved.
+A check-in doesn't arrive. Nine minutes later, everything is precisely where it should be. Same state, same position, nothing moved.
 
 
-He pulls the logs. There's no error. There's no restart. There's no gap. There is no nine minutes anywhere in them, and the process does not know it was ever not running.
+He pulls the logs. No error, no restart, no gap. There is no nine minutes anywhere in them, and the process does not know it was ever not running.
 
 
 Kavi's watcher, whose entire job is to see anything that anybody else might see, reports a healthy process across the whole window.
@@ -66,19 +66,19 @@ ________________
 
 
 
-Nobody says anything for a while.
+Ruth starts typing, stops, and starts again before she sends anything.
 
 
 ruth: so he doesnt know we know
 
 
-eli: he doesnt know we know
+eli: good
 
 
 ruth: thats the only thing we have
 
 
-eli: thats the only thing we have
+eli: dont lose it then
 
 
 sam: so we do nothing
@@ -105,6 +105,3 @@ Chloe reads that at one in the morning with work in six hours.
 
 
 She goes in the next day and does her job, which is the job of a government that has been trying to find this man since before she could read, and which has three wrong answers on file and no idea that seven people in their twenties settled it in eleven weeks.
-
-
-She doesn't tell anybody anything.
