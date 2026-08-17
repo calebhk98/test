@@ -92,8 +92,10 @@ Surname only — "Kowalczyk," never a first name or title. Teaches self-defence 
 
 No instance of "he" or "his" attached to Kowalczyk exists anywhere in the accessible chapters. This was not part of the two conflicts flagged for resolution in the brief, but the same standard applies: report, don't choose. The manuscript is internally consistent (her/she, three times, three chapters); the synopsis's "Male" label is the outlier.
 
+A third document repeats the same "male" assumption: CURRICULUM_GRID.md, "Fighting: the format" — "Kowalczyk's line about them getting better than nothing is much colder with that in the reader's hands, and he never says it." Same pronoun, same direction of error, independent document — this is not a one-off typo in the synopsis, it's a pattern across the reference material that disagrees with the manuscript every single time.
+
 ## Known problems
-- The gender label conflict above — the synopsis says male, the manuscript says female throughout. Needs a decision from the author; do not silently pick one when revising either document.
+- The gender label conflict above — both SYNOPSIS_CHARACTERS_TIMELINE.md and CURRICULUM_GRID.md say male, the manuscript says female throughout, three instances, three chapters. Needs a decision from the author; do not silently pick one when revising any of the three documents.
 - No line shows Kowalczyk outside a teaching context; nothing establishes a like, dislike, or habit unconnected to the mat room.
 
 ## Do not confuse with
