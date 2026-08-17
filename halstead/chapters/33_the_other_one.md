@@ -1,5 +1,7 @@
 ## Chapter Thirty-Three: The Other One
 
+*May 2026 – June 2026*
+
 Eli proposes the second worm and Theo says no for nine days.
 
 

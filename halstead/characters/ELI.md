@@ -4,12 +4,13 @@ A security-minded problem-solver who treats every serious risk as a mechanism to
 
 **Surname:** Marsh. The manuscript never gives him one.
 **Age span:** 13–21 | **MBTI:** ISTP (writing aid, not a claim) | **IQ:** roughly 160–170 by ordinary test norms, comfortably inside the top tenth of a percent of the general population. Unremarkable at his own school, where the whole cohort clusters near there.
-**Appears in:** chapters/16_thirteen.md; CHAPTERS_16_22_v2.md (narration, Ch18 The First One; dialogue, Ch19 The Chat); CHAPTERS_23_30_v2.md (Ch23 Nadia; Ch27 The Money; Ch28 The Other One; Ch29 The Files; Ch30 Nine Minutes).
+**Born:** October 2004, within the same admission year as the rest of the core group; the manuscript never gives his age directly.
+**Appears in:** chapters/16_thirteen.md; chapters/23_the_first_one.md (narration), chapters/24_the_chat.md (dialogue); chapters/28_nadia.md, chapters/32_the_money.md, chapters/33_the_other_one.md, chapters/34_the_files.md, chapters/35_nine_minutes.md.
 **Speaks:** 48 lines, heavily front-loaded into the two later files. Only 4 of the 48 happen before adulthood, all in one scene, and there is nothing at all between that scene and Ch19.
 
 ## Voice in one paragraph
 
-Eli builds a sentence by restating what was just said in his own terms, then answering the restatement rather than the original claim: told a felony isn't the same as speeding, his first move is "its exactly the same," and only after that does he explain why (CHAPTERS_23_30_v2.md:596). He opens on the fact, never on a frame ("so," "well," "look"). Most lines run eight words or fewer, but they are complete claims, not fragments trailing off. He does not hedge into a question and never reaches for an image. Every comparison he makes is mechanical: cameras, a pipeline, a message going out on a schedule. His one register of humor treats real stakes as a game to be won. Most characteristic line: **"its exactly the same. its a rule with a known enforcement mechanism and you learn where the cameras are"** (CHAPTERS_23_30_v2.md:596). It carries the reframe-then-answer shape, the risk-as-mechanism worldview, and zero hedging, all in one line.
+Eli builds a sentence by restating what was just said in his own terms, then answering the restatement rather than the original claim: told a felony isn't the same as speeding, his first move is "its exactly the same," and only after that does he explain why (chapters/33_the_other_one.md:29). He opens on the fact, never on a frame ("so," "well," "look"). Most lines run eight words or fewer, but they are complete claims, not fragments trailing off. He does not hedge into a question and never reaches for an image. Every comparison he makes is mechanical: cameras, a pipeline, a message going out on a schedule. His one register of humor treats real stakes as a game to be won. Most characteristic line: **"its exactly the same. its a rule with a known enforcement mechanism and you learn where the cameras are"** (chapters/33_the_other_one.md:29). It carries the reframe-then-answer shape, the risk-as-mechanism worldview, and zero hedging, all in one line.
 
 ## Dials
 
@@ -28,7 +29,7 @@ Eli builds a sentence by restating what was just said in his own terms, then ans
 
 Asserts, then repeats the assertion a second time with the contraction removed, rather than escalating any other way.
 
-- Real: "it wont come back to your company" → "it will not come back to your company" (CHAPTERS_23_30_v2.md:421, :427).
+- Real: "it wont come back to your company" → "it will not come back to your company" (chapters/32_the_money.md:23, :427).
 - PROPOSED, to spec: "That's not a problem." → "That is not a problem." (not in the text; a pattern for a rewriter to extend the signature elsewhere).
 
 ## Would they say this?
@@ -47,7 +48,7 @@ Asserts, then repeats the assertion a second time with the contraction removed, 
 
 ## Are they acting like themselves?
 
-Stays physically loose under pressure. Sits on the edge of a table swinging a foot while explaining something technical, hops down, and hands work back with two fingers, smiling at the floor (chapters/16_thirteen.md:69–73). Does not perform anxiety even discussing a fifteen-year prison sentence; he restates his confidence instead of retreating from it (CHAPTERS_23_30_v2.md:602). He occupies a room by having already done the thing everyone else is still arguing about.
+Stays physically loose under pressure. Sits on the edge of a table swinging a foot while explaining something technical, hops down, and hands work back with two fingers, smiling at the floor (chapters/16_thirteen.md:71–73). Does not perform anxiety even discussing a fifteen-year prison sentence; he restates his confidence instead of retreating from it (chapters/33_the_other_one.md:35). He occupies a room by having already done the thing everyone else is still arguing about.
 
 Failure modes for a rewriter:
 1. Writing him nervous, defensive, or self-justifying about risk. He restates rather than retreats.
@@ -59,7 +60,7 @@ Failure modes for a rewriter:
 Halstead runs the same eight academic hours and two afternoon blocks for everyone from age seven or eight. The language each year, the two rotating academic slots, and both afternoon blocks are individually chosen, so nobody else at the school has Eli's exact schedule.
 
 - **Languages, in order:** Spanish, French, Russian, Mandarin, Hebrew, Korean, Japanese, Romanian, Serbian, Ukrainian, Georgian. He's known for Georgian, picked specifically because the script, not the language, was unfamiliar. He doesn't bother polishing the languages a dictionary or a translator would get him through just as fast; he spends his hours where an unfamiliar script forces him to parse it by hand instead, because that's where the hours actually buy him something. An alphabet nobody in his life already reads is functionally a substitution cipher with extra steps, and he treats it like one.
-- **Best at:** cryptography. The one on-page school scene shows this directly: the first term is spent entirely breaking things other people built, and "Eli gets into everything, and he does it without hurrying" (chapters/16_thirteen.md:69) — he solves in one evening a set that took eleven classmates a week (chapters/16_thirteen.md:71).
+- **Best at:** cryptography. The one on-page school scene shows this directly: the first term is spent entirely breaking things other people built, and "Eli gets into everything, and he does it without hurrying" (chapters/16_thirteen.md:71) — he solves in one evening a set that took eleven classmates a week (chapters/16_thirteen.md:73).
 - **Worst at:** rhetoric, the subject built around who benefits from an argument and who's paying for it. His vocabulary is entirely mechanism (cameras, enforcement, pipelines), and a subject graded on persuasion over correctness doesn't reward what he's built to notice. Even at his worst he could out-argue almost anyone outside the cohort. The gap is appetite, not ability: he'd rather spend the hours on a system than on a room.
 - **Favourite, and why:** cryptography, for the same reason it's his best. It hands him something broken on day one and asks why, with no preamble.
 - **The subject nobody else took:** he petitioned, at thirteen, to double up cryptography with networks a year early rather than take them in the usual sequence. The faculty allowed the irregular request because he'd already shown he didn't need the scaffolding networks is supposed to provide first.
@@ -83,7 +84,7 @@ Build and posture: slight, not thin, narrow through the shoulders, the kind of b
 
 Face: unremarkable in the same register as the house. Nothing a stranger would describe first if asked. Eyes that go to the nearest moving object in a room before they go to a person.
 
-Hands: taps a two-finger rhythm, always the same one, against a table, a knee, a doorframe. An unconscious metronome, it speeds up when he's thinking hard and doesn't stop when he's talking. Otherwise usually occupied: turning a pen, working a corner of paper loose, taking a cap on and off something. The one on-page instance of his hands doing something specific is handing a solved timetable back "with two fingers, smiling at the floor" (chapters/16_thirteen.md:73).
+Hands: taps a two-finger rhythm, always the same one, against a table, a knee, a doorframe. An unconscious metronome, it speeds up when he's thinking hard and doesn't stop when he's talking. Otherwise usually occupied: turning a pen, working a corner of paper loose, taking a cap on and off something. The one on-page instance of his hands doing something specific is handing a solved timetable back "with two fingers, smiling at the floor" (chapters/16_thirteen.md:75).
 
 Clothes: whatever's clean and doesn't require a decision, three or four shirts in steady rotation, nothing with a brand or a slogan. A slogan is a thing you'd have to have an opinion about in public.
 
@@ -95,13 +96,13 @@ Eats fast and standing up when he's mid-problem, slow and properly when he isn't
 
 Occupies a room by finding the one interesting or broken thing in it and drifting toward that rather than toward the people.
 
-Bored, he goes looking for something to fix rather than somewhere quieter. Wrong, the one on-page instance shows delight rather than defensiveness: a surprised-face emoji and "i didnt even think of that" when Kavi improves on his plan (CHAPTERS_16_22_v2.md:320–323). Praised, the one on-page instance shows him answering the actual question rather than performing modesty: "ruth i dont know. thats the actual answer" (CHAPTERS_23_30_v2.md:761). Losing, he treats it as data, the same way he treats being outthought, and goes and learns whatever beat him.
+Bored, he goes looking for something to fix rather than somewhere quieter. Wrong, the one on-page instance shows delight rather than defensiveness: a surprised-face emoji and "i didnt even think of that" when Kavi improves on his plan (chapters/24_the_chat.md:37–323). Praised, the one on-page instance shows him answering the actual question rather than performing modesty: "ruth i dont know. thats the actual answer" (chapters/34_the_files.md:143). Losing, he treats it as data, the same way he treats being outthought, and goes and learns whatever beat him.
 
 Tired, he gets blunter. He trims the small courtesies first, and his answers get shorter while the reframe move gets faster to arrive at. At 2am, his best thinking often happens then, after everyone else has stopped needing him to explain anything out loud and the problem gets to just be a problem.
 
 A free Saturday, he goes to whatever he's building that isn't finished, or he goes looking for insects. The entomology collection is hours spent finding, identifying, and mounting specimens nobody assigned him and nobody grades.
 
-What he finds funny in other people: real competence spent on something small and pointless. His own sense of humor already runs this way, turning a genuine corporate bounty into "guys im speedrunning retirement" (CHAPTERS_16_22_v2.md:299).
+What he finds funny in other people: real competence spent on something small and pointless. His own sense of humor already runs this way, turning a genuine corporate bounty into "guys im speedrunning retirement" (chapters/24_the_chat.md:13).
 
 ## Interior life
 
@@ -130,7 +131,7 @@ Food: eats the same breakfast most days because deciding costs something, one fe
 5. Would treat being outmaneuvered by a friend as good news and say so immediately, out loud.
 6. Would notice a schedule or a pattern in a system before he notices the people running it.
 7. Would spend a whole free Saturday on a hobby nobody else at the table takes seriously, and defend it plainly if asked.
-8. Would explain something patiently and at length to someone who's behind, without ever making them feel behind (chapters/16_thirteen.md:69).
+8. Would explain something patiently and at length to someone who's behind, without ever making them feel behind (chapters/16_thirteen.md:71).
 9. Would answer "how good are you at this" with the truest number he has, not the flattering one.
 10. Would tell someone their password habits made them an easy target, uninvited, because staying quiet about it would bother him more than saying it.
 
@@ -142,19 +143,19 @@ Food: eats the same breakfast most days because deciding costs something, one fe
 
 ## Relationships
 
-- **Chloe:** patient technical explainer when she's behind (chapters/16_thirteen.md:69–73, twenty minutes on a solved cipher set), flatly unmovable corrector when she's wrong about something that matters later: "no. chloe im sorry but no" (CHAPTERS_23_30_v2.md:809).
-- **Ruth:** she pushes him directly on risk, quoting sentencing ranges at him as an argument, and he doesn't dodge the question when she asks it twice — "ruth i dont know. thats the actual answer" (CHAPTERS_23_30_v2.md:761). He wants her rigor pointed at him rather than around him.
-- **Sam:** the one who ribs him hardest for the string of vulnerabilities, "thats cheating" (CHAPTERS_16_22_v2.md:340). Eli lets it land; from Sam, that's Sam noticing.
-- **Kavi:** working partner as adults, Eli builds the worm, Kavi builds the thing that watches it (CHAPTERS_23_30_v2.md:412). As a child, he's the one person shown improving on Eli's own idea in real time, and Eli receives it with open delight (CHAPTERS_16_22_v2.md:317–323).
-- **Nadia:** she holds him to a specific, checkable promise. A single-word "nadia: eli" (CHAPTERS_23_30_v2.md:424) is enough to make him restate his assurance formally. He wants her to trust the mechanism, not just the promise.
+- **Chloe:** patient technical explainer when she's behind (chapters/16_thirteen.md:71–73, twenty minutes on a solved cipher set), flatly unmovable corrector when she's wrong about something that matters later: "no. chloe im sorry but no" (chapters/35_nine_minutes.md:43).
+- **Ruth:** she pushes him directly on risk, quoting sentencing ranges at him as an argument, and he doesn't dodge the question when she asks it twice — "ruth i dont know. thats the actual answer" (chapters/34_the_files.md:143). He wants her rigor pointed at him rather than around him.
+- **Sam:** the one who ribs him hardest for the string of vulnerabilities, "thats cheating" (chapters/24_the_chat.md:54). Eli lets it land; from Sam, that's Sam noticing.
+- **Kavi:** working partner as adults, Eli builds the worm, Kavi builds the thing that watches it (chapters/32_the_money.md:8). As a child, he's the one person shown improving on Eli's own idea in real time, and Eli receives it with open delight (chapters/24_the_chat.md:31–323).
+- **Nadia:** she holds him to a specific, checkable promise. A single-word "nadia: eli" (chapters/32_the_money.md:20) is enough to make him restate his assurance formally. He wants her to trust the mechanism, not just the promise.
 
 ## Likes, dislikes, habits
 
-- Turns real stakes into a personal challenge: "guys im speedrunning retirement" (CHAPTERS_16_22_v2.md:299).
-- Reacts to being outthought with delight rather than defensiveness: surprised-emoji plus "i didnt even think of that" (CHAPTERS_16_22_v2.md:320–323).
-- Values the process of solving something over the reward for it. Calls a lawyer meeting "the most interesting thing thats happened to me since i started" rather than register disappointment over a missed payout (CHAPTERS_16_22_v2.md:375).
-- Habit: restates a challenged claim a second time with the contraction removed (CHAPTERS_23_30_v2.md:421, :427).
-- Habit: explains technical material at length to someone genuinely behind, without visible impatience — "he does it without hurrying" (chapters/16_thirteen.md:69).
+- Turns real stakes into a personal challenge: "guys im speedrunning retirement" (chapters/24_the_chat.md:13).
+- Reacts to being outthought with delight rather than defensiveness: surprised-emoji plus "i didnt even think of that" (chapters/24_the_chat.md:37–323).
+- Values the process of solving something over the reward for it. Calls a lawyer meeting "the most interesting thing thats happened to me since i started" rather than register disappointment over a missed payout (chapters/24_the_chat.md:89).
+- Habit: restates a challenged claim a second time with the contraction removed (chapters/32_the_money.md:17, :427).
+- Habit: explains technical material at length to someone genuinely behind, without visible impatience — "he does it without hurrying" (chapters/16_thirteen.md:71).
 - Keeps a real, private insect collection nobody at Halstead knows about.
 
 ## Facts a rewriter needs
@@ -162,18 +163,18 @@ Food: eats the same breakfast most days because deciding costs something, one fe
 - Name: Eli Marsh. Surname invented, the manuscript never gives one.
 - Family: raised by his mother, an aunt nearby, no siblings, no father in the house and no story attached to that fact.
 - Background: a flat, unremarkable suburb outside a mid-size city in central Ohio, the kind he actively likes.
-- Good at: cryptography and pattern-spotting. Solves a live parking-system cipher in one evening that eleven classmates had for a week (chapters/16_thirteen.md:125–129); finds five vulnerabilities in his own employer's systems in an afternoon, one of which the company "didnt think... was possible" (CHAPTERS_16_22_v2.md:305–363); designs a financial surveillance tool whose entire premise is behaving unremarkably (CHAPTERS_23_30_v2.md:412, Ch27).
-- Bad at / blind spot: risk aversion. States plainly that he does not expect to be wrong about a felony's risk calculus despite naming the penalty as fifteen years (CHAPTERS_23_30_v2.md:602).
-- Adult employment: a security team job (CHAPTERS_16_22_v2.md:269, narration only).
+- Good at: cryptography and pattern-spotting. Solves a live parking-system cipher in one evening that eleven classmates had for a week (chapters/16_thirteen.md:127–129); finds five vulnerabilities in his own employer's systems in an afternoon, one of which the company "didnt think... was possible" (chapters/24_the_chat.md:19–363); designs a financial surveillance tool whose entire premise is behaving unremarkably (chapters/32_the_money.md:8, Ch27).
+- Bad at / blind spot: risk aversion. States plainly that he does not expect to be wrong about a felony's risk calculus despite naming the penalty as fifteen years (chapters/33_the_other_one.md:35).
+- Adult employment: a security team job (chapters/23_the_first_one.md:86, narration only).
 - Standing at school / rank: not stated in the text.
 
 ## Known problems
 
-1. **The calibration behind his defining line isn't visible on the page.** "i have never once been at the top of a room in my life" (CHAPTERS_23_30_v2.md:764) is literally true and badly incomplete at the same time. He's only ever had two comparison classes, an unmeasured home and a school of ninety fellow geniuses, and he's never topped the second. Nothing in the manuscript currently shows a reader that this is a comparison-class problem rather than false modesty or an earned defeat. Fix: land one small beat anywhere earlier that shows him operating entirely outside Halstead's ranking, besting an ordinary adult or an ordinary system at something without registering it as remarkable, so the reader has the calibration gap in hand before he says the line.
+1. **The calibration behind his defining line isn't visible on the page.** "i have never once been at the top of a room in my life" (chapters/34_the_files.md:146) is literally true and badly incomplete at the same time. He's only ever had two comparison classes, an unmeasured home and a school of ninety fellow geniuses, and he's never topped the second. Nothing in the manuscript currently shows a reader that this is a comparison-class problem rather than false modesty or an earned defeat. Fix: land one small beat anywhere earlier that shows him operating entirely outside Halstead's ranking, besting an ordinary adult or an ordinary system at something without registering it as remarkable, so the reader has the calibration gap in hand before he says the line.
 2. **Missing years.** Eli has exactly one scene in chapters 1–20 of the manuscript: chapters/16_thirteen.md, the cipher on a napkin, age 13. Nothing else appears through the equivalent of ages 14–17. Fix: seed one more appearance in that span.
-3. **Line collision.** CHAPTERS_23_30_v2.md:844 and :847: Ruth and Eli say the identical six words back to back, "thats the only thing we have." Fix: give Eli's line his own move, a reframe of the point, instead of an echo.
-4. **Filler collapse.** Under low stakes his dialogue collapses into generic chat filler — "hang on" (CHAPTERS_16_22_v2.md:326), "yeah," "no" — indistinguishable from anyone else in the same chat. Fix: whoever speaks second in these exchanges should be doing their own signature move instead of filler.
+3. **Line collision.** chapters/35_nine_minutes.md:78 and :847: Ruth and Eli say the identical six words back to back, "thats the only thing we have." Fix: give Eli's line his own move, a reframe of the point, instead of an echo.
+4. **Filler collapse.** Under low stakes his dialogue collapses into generic chat filler — "hang on" (chapters/24_the_chat.md:40), "yeah," "no" — indistinguishable from anyone else in the same chat. Fix: whoever speaks second in these exchanges should be doing their own signature move instead of filler.
 
 ## Do not confuse with
 
-Eli and Theo are both quiet, technical, and cryptographers by training, and speak almost entirely inside the same group chat. The overlap comes from sharing one school and one register. Where they still separate: Eli reframes and asserts, and never asks (0% questions); Theo objects on record and complies, and is the one of the two who hedges (a proposed 15%+ of his lines, against Eli's steady 7%). If a line hedges more than once, or ends unresolved as an open question, it is not Eli's. If a line runs long, multi-clause, with a qualifier attached, it reads more like Theo. Eli's average sits under nine words, and he doesn't attach qualifiers. The two also diverge hard in the open ground: Eli grew up in central Ohio, unremarkable and unwatched, which is where his flat, accurate but incomplete read on his own ranking comes from; Theo grew up on the Maine coast, formal and closely supervised by grandparents, which is where his briefing-shaped sentences and on-record objections come from. Watch specifically for the collision at CHAPTERS_23_30_v2.md:844 and :847, where Eli currently echoes a line word for word; a fixed version should replace his half with his own reframing move.
+Eli and Theo are both quiet, technical, and cryptographers by training, and speak almost entirely inside the same group chat. The overlap comes from sharing one school and one register. Where they still separate: Eli reframes and asserts, and never asks (0% questions); Theo objects on record and complies, and is the one of the two who hedges (a proposed 15%+ of his lines, against Eli's steady 7%). If a line hedges more than once, or ends unresolved as an open question, it is not Eli's. If a line runs long, multi-clause, with a qualifier attached, it reads more like Theo. Eli's average sits under nine words, and he doesn't attach qualifiers. The two also diverge hard in the open ground: Eli grew up in central Ohio, unremarkable and unwatched, which is where his flat, accurate but incomplete read on his own ranking comes from; Theo grew up on the Maine coast, formal and closely supervised by grandparents, which is where his briefing-shaped sentences and on-record objections come from. Watch specifically for the collision at chapters/35_nine_minutes.md:78 and :847, where Eli currently echoes a line word for word; a fixed version should replace his half with his own reframing move.

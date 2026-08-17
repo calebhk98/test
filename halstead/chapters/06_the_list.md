@@ -1,5 +1,7 @@
 ## Chapter Six: The List
 
+*August 2012*
+
 The parent hotel has a breakfast room with waffles on paper plates, and every morning there are eight or nine adults in it who all know each other by now. Chloe walks over on the last Wednesday, sits down with her dad, and eats. Nobody talks to her.  
 "We drove," a man says. He has a paper plate in one hand and hasn't sat down. "We were not putting her on a bus."  
 "Nobody put theirs on the bus."  

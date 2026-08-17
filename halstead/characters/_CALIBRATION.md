@@ -61,7 +61,7 @@ grow up in the same county, and they do not grow up in the same town.
 The manuscript says this directly. Meg, on the phone to the school: "And they're not from
 around here. Not one town, not one state. She said they come from all over, and then she
 said we're one of the closer ones." Her husband answers, "Four hours is one of the closer
-ones." (chapters/03_the_letter.md:68)
+ones." (chapters/03_the_letter.md:71)
 
 So every student comes from somewhere else. Some are thirty minutes away and some are ten
 hours. They met at the school and nowhere before it. Meg knows Ruth's mother by name

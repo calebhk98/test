@@ -3,12 +3,12 @@
 The federal clearance investigator: twenty-one years into a career built on the belief that a respected subject talks faster than a pressured one, writing down what Chloe tells him because she tells him plainly and he lets her.
 
 **Age span:** 55 during Chloe's clearance investigation | **MBTI:** ISTJ (writing aid, not a claim) | **IQ:** not inferable, no cognitive content beyond procedural thoroughness
-**Appears in:** CHAPTERS_23_30_v2.md, Ch25 "Cleared," only.
+**Appears in:** chapters/30_cleared.md only.
 **Speaks:** 4 quoted lines, across two visits compressed into one scene.
 
 ## Voice in one paragraph
 
-He asks short, closed, procedural questions and writes for a while after each answer, whether the answer is mundane or the kind that would rattle most interviewers. His most characteristic line is "'Would you tell me if I said it was necessary?'" (CHAPTERS_23_30_v2.md, Ch25 "Cleared"), a direct hypothetical, asked without pressure, that gives Chloe room to actually think about it.
+He asks short, closed, procedural questions and writes for a while after each answer, whether the answer is mundane or the kind that would rattle most interviewers. His most characteristic line is "'Would you tell me if I said it was necessary?'" (chapters/30_cleared.md), a direct hypothetical, asked without pressure, that gives Chloe room to actually think about it.
 
 ## Dials
 
@@ -26,7 +26,7 @@ He asks short, closed, procedural questions and writes for a while after each an
 ## Signature — theirs alone
 
 Takes a piece of volunteered information, confirms it back flat, then writes, logging content without reacting to it:
-- "'Would you tell me if I said it was necessary?' Chloe thinks about it properly, which takes her a few seconds. 'I'd want to talk to her first,' she says. He writes that down too." (CHAPTERS_23_30_v2.md, Ch25 "Cleared")
+- "'Would you tell me if I said it was necessary?' Chloe thinks about it properly, which takes her a few seconds. 'I'd want to talk to her first,' she says. He writes that down too." (chapters/30_cleared.md)
 
 ## Would they say this?
 

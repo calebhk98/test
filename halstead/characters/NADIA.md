@@ -3,11 +3,12 @@
 Runs on proportion: fixes exactly what's broken and no more, and wants to build something an actual person uses instead of something built for other companies to buy.
 
 **Age span:** ~15–21 (est.) | **MBTI:** ESTJ (writing aid, not a claim) | **IQ:** est. 160+ (reader inference)
-**Appears in:** chapters/13_ten_pages.md, chapters/14_sixty_degrees.md, chapters/16_thirteen.md, chapters/19_sixteen.md, chapters/20_the_parking_lot.md, CHAPTERS_16_22_v2.md, CHAPTERS_23_30_v2.md
+**Born:** June 2005, within the same admission year as the rest of the dinner-table core; nothing in the text fixes it more precisely.
+**Appears in:** chapters/13_ten_pages.md, chapters/14_sixty_degrees.md, chapters/16_thirteen.md, chapters/19_sixteen.md, chapters/20_the_parking_lot.md, chapters/21_the_applications.md through chapters/35_nine_minutes.md
 **Speaks:** 41 lines total, badly front-loaded. Only 5 lines appear in the first 20 chapters; the rest split across two later files, a third of it one- or two-word chat filler ("yeah," "hang on," "since when").
 
 ## Voice in one paragraph
-Short independent clauses with no connectives: she doesn't join ideas with "and," "but," or "so," she sets one fact next to the next one. Near-imperative even outside actual commands, as in "Go back and fight the waitress." She opens on the fact, never on a lead-in ("so," "well," "look"). She essentially never asks; questions measure 0% of her lines, and her one rhetorical exception answers itself in the same breath ("why would a machine have a port"). She disagrees by flat refusal or correction, proportionate to the offense, then moves on without relitigating. Zero figurative language anywhere. Her most characteristic line is "if youre going to come at me, come at me. dont insult me with a cleaner" (CHAPTERS_23_30_v2.md, "Nadia," line 47): paired imperatives, no adjective, no explanation of why a cleaner counts as an insult. The reader supplies that.
+Short independent clauses with no connectives: she doesn't join ideas with "and," "but," or "so," she sets one fact next to the next one. Near-imperative even outside actual commands, as in "Go back and fight the waitress." She opens on the fact, never on a lead-in ("so," "well," "look"). She essentially never asks; questions measure 0% of her lines, and her one rhetorical exception answers itself in the same breath ("why would a machine have a port"). She disagrees by flat refusal or correction, proportionate to the offense, then moves on without relitigating. Zero figurative language anywhere. Her most characteristic line is "if youre going to come at me, come at me. dont insult me with a cleaner" (chapters/28_nadia.md through chapters/35_nine_minutes.md, "Nadia," line 47): paired imperatives, no adjective, no explanation of why a cleaner counts as an insult. The reader supplies that.
 
 ## Dials
 | | |
@@ -26,8 +27,8 @@ Names the person she's talking about instead of using a pronoun, even where a pr
 
 The real text only gives a weak, partial version of this: direct vocative address by name ("nadia: eli," "nadia: sam") rather than third-person reference avoiding a pronoun. Two written-to-spec examples, anchored to real lines:
 
-- chapters/20_the_parking_lot.md:119 currently reads "'She'd take you apart,' Nadia agrees." Proposal: "'The waitress would take you apart,' Nadia agrees." Naming the waitress again this deep into the exchange, where "she" would be the ordinary choice.
-- CHAPTERS_23_30_v2.md, "Nadia," line 32 currently reads "obviously i fired him, he came here to steal from me." Proposal: "obviously i fired the cleaner, the cleaner came here to steal from me," repeating "the cleaner" rather than defaulting to "he/him."
+- chapters/20_the_parking_lot.md:121 currently reads "'She'd take you apart,' Nadia agrees." Proposal: "'The waitress would take you apart,' Nadia agrees." Naming the waitress again this deep into the exchange, where "she" would be the ordinary choice.
+- chapters/28_nadia.md through chapters/35_nine_minutes.md, "Nadia," line 32 currently reads "obviously i fired him, he came here to steal from me." Proposal: "obviously i fired the cleaner, the cleaner came here to steal from me," repeating "the cleaner" rather than defaulting to "he/him."
 
 ## Would they say this?
 - YES if it's two or more short independent clauses stated flatly, with nothing linking them.
@@ -45,7 +46,7 @@ The real text only gives a weak, partial version of this: direct vocative addres
 - Under a real threat she takes the unglamorous cleanup task rather than the dramatic one: she resets a dislocated joint in the aftermath of a fight without being asked or announcing it (chapters/20_the_parking_lot.md).
 - Organizes people fast and gets compliance without persuading anyone: she splits a floor into working teams in about four minutes, and eleven people take orders from her in a row before questioning it (chapters/14_sixty_degrees.md).
 - Goes from asleep to mid-sentence with no visible transition: she falls asleep sitting up for four minutes, wakes, and finishes the sentence she was on (chapters/20_the_parking_lot.md).
-- Investigates before punishing, and does it herself rather than delegating: she traces who paid for a theft against her in a week and goes in person, alone (CHAPTERS_23_30_v2.md, "Nadia").
+- Investigates before punishing, and does it herself rather than delegating: she traces who paid for a theft against her in a week and goes in person, alone (chapters/28_nadia.md).
 - Failure modes for a rewriter: (1) giving her doubt or self-justification before a decision, when she decides then acts; (2) letting her escalate a small provocation into a large response, when the proportionality is load-bearing; (3) having her open a joke rather than close one someone else started.
 
 ## Subjects and schedule
@@ -130,7 +131,7 @@ Black coffee, no doctoring, drunk too fast to taste. Handwriting small, fast, le
 ## Relationships
 - **Chloe:** wants her to stop performing not-noticing and say the true thing outright. She reads what Chloe's hiding in the napkin scene and keeps pressing, one finger on the evidence, until Chloe drops the pretense (chapters/16_thirteen.md).
 - **Sam:** treats him as someone to correct rather than protect. She sends him at the most competent-looking easy target to fix his read of his own skill, and agrees flatly when he admits he'd lose to her. Affection arrives as correction, not comfort (chapters/20_the_parking_lot.md).
-- **Eli:** trusts him enough to let him test a live tool against her own company's systems, and covers that trust with a joke-sized threat: "if this comes back to my company i will end all of you" (CHAPTERS_23_30_v2.md).
+- **Eli:** trusts him enough to let him test a live tool against her own company's systems, and covers that trust with a joke-sized threat: "if this comes back to my company i will end all of you" (chapters/28_nadia.md through chapters/35_nine_minutes.md).
 - **Ruth:** reliable in the same crisis rather than close. Both go over the fence without hesitation, both treat a violent aftermath as work to be done. That shared competence is the whole relationship on the page so far (chapters/20_the_parking_lot.md).
 - **Kavi:** peripheral and easy. He passes her a napkin without either of them making anything of it, a small unremarked cooperation (chapters/16_thirteen.md).
 
@@ -158,10 +159,10 @@ Black coffee, no doctoring, drunk too fast to taste. Handwriting small, fast, le
 - Figurative language is not a tool available to her, in any scene.
 
 ## Known problems
-The Voice, Dials, Signature, and Would-they-say-this sections above rest on roughly 13 substantive lines out of 41 total, 9 of them in one chapter, CHAPTERS_23_30_v2.md's chapter titled "Nadia." Everything from Subjects and schedule onward is invented.
+The Voice, Dials, Signature, and Would-they-say-this sections above rest on roughly 13 substantive lines out of 41 total, 9 of them in one chapter, chapters/28_nadia.md through chapters/35_nine_minutes.md's chapter titled "Nadia." Everything from Subjects and schedule onward is invented.
 
 1. **chapters/14_sixty_degrees.md, line 213:** "Nadia takes the third floor and splits it in about four minutes... Eleven people take four instructions from her in a row before any of them thinks about it." Her defining trait, command under pressure, is written entirely in narration with zero dialogue in the scene. Add one spoken command in her register (short, imperative, no connectives, the shape of "Go back and fight the waitress") in the middle of the four-minute drill.
-2. **CHAPTERS_16_22_v2.md, the chapter titled "The First One":** "They all put labor under costs... It's a resource. It's the only one that gets better on its own... Who's making the thing a person uses?" is the one place she reasons in the abstract, building a two-part thesis with a rhetorical close, instead of stating a flat fact about a specific object or person. Anchoring the claim to one remembered moment, a parent discounting their own hours to match a competitor's price, a slow month blamed on bad luck when the numbers say otherwise, instead of a general statement about the economy, would fix the abstraction problem.
+2. **chapters/23_the_first_one.md:** "They all put labor under costs... It's a resource. It's the only one that gets better on its own... Who's making the thing a person uses?" is the one place she reasons in the abstract, building a two-part thesis with a rhetorical close, instead of stating a flat fact about a specific object or person. Anchoring the claim to one remembered moment, a parent discounting their own hours to match a competitor's price, a slow month blamed on bad luck when the numbers say otherwise, instead of a general statement about the economy, would fix the abstraction problem.
 3. **chapters/13_ten_pages.md, line 89:** "Nadia has it by the end of the month off her own back" is pure narration; she has no dialogue anywhere before this point. Add one spoken line here, refusing an offer of help or stating flatly that she'd rather work it out herself.
 
 ## Do not confuse with

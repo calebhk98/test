@@ -4,7 +4,8 @@ Cryptography and networks. The only one of the core group who stays at Halstead 
 graduation, because the work is the only thing he's ever wanted.
 
 **Age span:** 6–21 | **MBTI:** INTP (a writing aid, not a claim) | **IQ:** 165–180 (reader inference; the manuscript gives no scores)
-**Appears in:** chapters/04_pluto.md, 05_behind.md, 06_the_list.md, 10_april.md, 11_eight.md, 12_nine.md, 13_ten_pages.md, 14_sixty_degrees.md, 15_twelve.md, 16_thirteen.md, 17_fourteen.md, 18_fifteen.md, 19_sixteen.md, CHAPTERS_16_22_v2.md, CHAPTERS_23_30_v2.md
+**Born:** February 2005. Recalling Owen's departure from the same camp where Chloe is six, Kavi says of himself, "I was seven" (chapters/10_april.md:101).
+**Appears in:** chapters/04_pluto.md, 05_behind.md, 06_the_list.md, 10_april.md, 11_eight.md, 12_nine.md, 13_ten_pages.md, 14_sixty_degrees.md, 15_twelve.md, 16_thirteen.md, 17_fourteen.md, 18_fifteen.md, 19_sixteen.md, chapters/21_the_applications.md through chapters/35_nine_minutes.md
 **Speaks:** ~61 lines total, heavily front-loaded. chapters/04_pluto.md (his introduction) and chapters/15_twelve.md together carry more than a third of everything he ever says.
 
 ## Voice in one paragraph
@@ -15,7 +16,7 @@ medium length. He disagrees by attacking the mechanism, never the person. He sta
 settled fact, with no hedges and almost no questions. When something he did would read as
 impressive, he names the actual cost instead of accepting the compliment. He never produces a
 simile, a metaphor, or any invented comparison. His most characteristic line is "It's four
-seconds of compute. It's not even interesting." (chapters/15_twelve.md:161), said before anyone
+seconds of compute. It's not even interesting." (chapters/15_twelve.md:163), said before anyone
 in the room has had a chance to call the crack impressive.
 
 ## Dials
@@ -26,7 +27,7 @@ in the room has had a chance to call the crack impressive.
 | disagrees by | corrects the mechanism, not the person; shows no sign of registering that it lands on someone |
 | wordiness | bimodal: 6.5 words per line in tagged prose, with a long upper tail, and 6.8 in chat |
 | terseness | 44% of his chat lines run three words or fewer |
-| jokiness | 2/10. What humor exists is a flat put-down stated as fact: "You did it to yourself." (chapters/04_pluto.md:107, closing line of his introduction chapter) |
+| jokiness | 2/10. What humor exists is a flat put-down stated as fact: "You did it to yourself." (chapters/04_pluto.md:109, closing line of his introduction chapter) |
 | hedging | 0%. He never says "I think," "maybe," or "probably." |
 | questions | 0% measured. On the rare occasion he asks anything, it targets one specific unresolved mechanism |
 | figurative | not allowed, ever. Zero instances anywhere in the manuscript |
@@ -35,7 +36,7 @@ in the room has had a chance to call the crack impressive.
 
 Pre-empts praise by naming how easy something actually was, instead of accepting the compliment.
 
-- **Real:** "You just do a few billion codes and see which one gives you something that isn't noise. It's four seconds of compute. It's not even interesting." (chapters/15_twelve.md:161), said before anyone has had the chance to call it impressive.
+- **Real:** "You just do a few billion codes and see which one gives you something that isn't noise. It's four seconds of compute. It's not even interesting." (chapters/15_twelve.md:163), said before anyone has had the chance to call it impressive.
 - **[PROPOSED]:** A teacher or peer tells him a piece of work was excellent; he answers with the actual time or resource it cost him instead of "thank you." For example: "Twenty minutes. It's not the hard part." Use only where the scene needs him praised and deflecting. Do not repeat the exact wording above; it would become a catchphrase.
 
 ## Would they say this?
@@ -85,8 +86,8 @@ would ever notice the gap. He notices it himself immediately, because it's the o
 usual instant read on a page doesn't reach his mouth as fast.
 
 **Best at:** networks and cryptography. He cracks the intruders' AES-256 comms during the 4am
-intrusion (chapters/15_twelve.md:161) and, years later, builds the watcher that catches the
-founder's one visible mistake (CHAPTERS_23_30_v2.md). **Also exceptional, and the thing the
+intrusion (chapters/15_twelve.md:163) and, years later, builds the watcher that catches the
+founder's one visible mistake (chapters/28_nadia.md through chapters/35_nine_minutes.md). **Also exceptional, and the thing the
 school never remarks on:** eleven languages read and written to research level, one of them a
 rule system almost nobody outside a university has any reason to have opened. **Favourite, and
 why:** cryptography. "Breaking for a full term before building" is the same motion as everything
@@ -126,7 +127,7 @@ before any teacher tried to teach him the rule for flipping the second one. He h
 version before anyone gave him the abstract one. Halstead teaches it the other way around, and a
 lecture that starts from the abstraction is the one that loses him fastest. His father is the one
 who spent an hour on the last night of camp talking to Mr. Baptiste, the camp's math teacher: one
-academic checking another academic's method (chapters/06_the_list.md:65).
+academic checking another academic's method (chapters/06_the_list.md:67).
 
 Dinner in that house is quiet by outside standards and comfortable by the family's own: long
 silences that nobody fills, one question asked properly rather than several asked badly, and a
@@ -166,8 +167,8 @@ finish in the week: currently that means calligraphy, or the next item on his li
 life), because unstructured time reads to him as more time for the actual problem. What he finds
 funny in other people is watching them talk themselves into a worse position than the one they
 started in. Sam is the clearest example: he gets an actual laugh out of Kavi before Kavi has said
-a word to anyone (chapters/04_pluto.md:96), and gets the flattest line in that same chapter aimed
-back at him: "You did it to yourself." (chapters/04_pluto.md:107)
+a word to anyone (chapters/04_pluto.md:98), and gets the flattest line in that same chapter aimed
+back at him: "You did it to yourself." (chapters/04_pluto.md:109)
 
 ## Interior life
 
@@ -214,13 +215,13 @@ without comment. Money: doesn't think about it much and has never needed to. Rit
 closing the notebook the list lives in, he rereads the newest entry once, silently, and adds
 nothing to it that night. He lets a question sit for at least a day before deciding it's
 unsolved. Phone or comms: functional. Short, factual chat messages with no punctuation flourish,
-consistent with the AES-256 exchange (CHAPTERS_16_22_v2.md). First thing in the morning: checks
+consistent with the AES-256 exchange (chapters/21_the_applications.md through chapters/27_the_file.md). First thing in the morning: checks
 whatever he left running overnight before he does anything else, including talking to anyone.
 
 ## Would do
 
 - Finish the sentence or clause he's already in before stopping, even under a hard deadline, without protest: "Kavi has most of a page and is still going when the teacher calls time, so he finishes the clause he's in and puts the pen down without any fuss about it" (chapters/05_behind.md).
-- Build a monitoring or defensive tool for a problem nobody has flagged yet, unasked (the financial-worm watcher, CHAPTERS_23_30_v2.md).
+- Build a monitoring or defensive tool for a problem nobody has flagged yet, unasked (the financial-worm watcher, chapters/28_nadia.md through chapters/35_nine_minutes.md).
 - Give a straight, complete account of how he knows something the moment he's asked directly, including the part that's mildly damning to someone else (chapters/10_april.md).
 - Keep explaining a mechanism until the explanation is actually finished, whether or not the room is still listening (the volcano scene, chapters/04_pluto.md).
 - Name the actual cost or difficulty of something rather than let it stand as impressive (see Signature).
@@ -247,14 +248,14 @@ whatever he left running overnight before he does anything else, including talki
 - **Ruth.** Treats her technical conclusions as load-bearing rather than something to
   double-check. Tracing the pattern behind the school's funding together, he reaches the same six
   words she does, in the same breath, unprompted: "thats a person getting older"
-  (CHAPTERS_23_30_v2.md).
+  (chapters/28_nadia.md through chapters/35_nine_minutes.md).
 - **Sam.** His easiest target, and his one reliable source of amusement, in the same chapter: he
   laughs at Sam before he's said a word to anyone, then closes it with "You did it to yourself."
   (chapters/04_pluto.md).
 - **Nadia.** Tells the group he'll find out what the untraceable medication actually is, then
   spends four days running it down through channels nobody else has. He comes back with one word,
   internal, and no account of where the four days went. That kind of gap is exactly what she
-  notices (CHAPTERS_16_22_v2.md).
+  notices (chapters/21_the_applications.md through chapters/27_the_file.md).
 - **Eli.** Professional equals sharing a domain rather than a friendship on the page. The
   financial-worm project is their one real interaction: Eli builds the tool, Kavi builds what
   watches it, and the exchange stays functional throughout.
@@ -270,9 +271,9 @@ whatever he left running overnight before he does anything else, including talki
   (chapters/10_april.md).
 - Likes a closed rule system more than an open one: Sanskrit over his other languages, proof-year
   mathematics over the computation that came before it.
-- Dislikes being told something is impressive when it cost him nothing (chapters/15_twelve.md:161).
+- Dislikes being told something is impressive when it cost him nothing (chapters/15_twelve.md:163).
 - Dislikes a question that closes without him: the specific shape of his one named fear.
-- Builds monitoring or defensive tools before anyone asks for them (CHAPTERS_23_30_v2.md).
+- Builds monitoring or defensive tools before anyone asks for them (chapters/28_nadia.md through chapters/35_nine_minutes.md).
 - Reads and writes in eleven languages to research level. In every one of them his own language
   stays literal: no simile, no metaphor, confirmed across the full reading.
 
@@ -297,22 +298,22 @@ whatever he left running overnight before he does anything else, including talki
   eleven would place him at the top of an ordinary classroom.
 - **Known at what age:** already knew fraction division before Halstead taught it, at six or
   seven (chapters/05_behind.md). Sits the bar at sixteen and passes on the first attempt
-  (chapters/19_sixteen.md). Admitted to MIT, Caltech and Chicago (CHAPTERS_16_22_v2.md). The only
+  (chapters/19_sixteen.md). Admitted to MIT, Caltech and Chicago (chapters/21_the_applications.md through chapters/27_the_file.md). The only
   member of the core group who takes the school's offer to stay on as a researcher rather than
-  leaving (CHAPTERS_16_22_v2.md).
+  leaving (chapters/21_the_applications.md through chapters/27_the_file.md).
 
 ## Known problems
 
-1. **The "never stops talking" setup doesn't hold across the book.** chapters/04_pluto.md:96
+1. **The "never stops talking" setup doesn't hold across the book.** chapters/04_pluto.md:98
    establishes him silent for six days; the entire payoff is the volcano exchange ending "'How
    thick it is,' Kavi says, and keeps going. Sam tries twice more to get back into it and doesn't
-   manage it either time." (chapters/04_pluto.md:106–107). Outside that chapter and
+   manage it either time." (chapters/04_pluto.md:108–107). Outside that chapter and
    chapters/15_twelve.md, he averages under 1.5 lines a chapter. **Fix:** either give him more
    presence in ordinary ensemble scenes across the book, or lean into the trait the text actually
    supports: silent except when a mechanism is on the table.
-2. **The manuscript itself still never gives him a surname.** chapters/10_april.md:19 gives
+2. **The manuscript itself still never gives him a surname.** chapters/10_april.md:21 gives
    another character's surname in full ("Aymar. A, Y, M, A, R.") twelve lines before the identical
-   question is put to Kavi (chapters/10_april.md:31, "'What's your last name,' Chloe says.") and
+   question is put to Kavi (chapters/10_april.md:33, "'What's your last name,' Chloe says.") and
    the scene moves on without answering it. This sheet answers it (Rao), a sheet-level decision,
    not a manuscript one. **Fix:** write the answer into the scene where the question is already
    asked.

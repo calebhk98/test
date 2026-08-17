@@ -1,5 +1,7 @@
 ## Chapter Seven: The Same Room
 
+*August 2012 – October 2012*
+
 Nobody really says goodbye. The loop out front is full of cars with their trunks standing open, and there are more adults in it than Chloe has seen in one place all month, and somebody's little brother is screaming about a shoe. Sam left at seven. She finds that out from a girl she hadn't spoken to while at the camp, who says it as she is going past with a pillow under her arm and doesn't stop to say it. Kavi is over by the double doors with two adults, she gets a hand up out of him, and then a family walks between them before he isn't there anymore.
 
 Ruth finds her at the flagpole and hugs her hard enough to hurt.

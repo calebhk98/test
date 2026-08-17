@@ -1,5 +1,7 @@
 ## Chapter Twenty-Six: Ten Targets
 
+*November 2023*
+
 Sam likes the Army immediately.
 
 

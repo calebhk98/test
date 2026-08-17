@@ -58,7 +58,7 @@ Runs Defensive Watch, not a graded academic subject on CURRICULUM_GRID.md, but t
 Sinclair spent most of his career on classified special-operations tasking, then ran physical-security assessments for clients who needed a specific clearance level to hire him. Halstead's offer bought out that consulting practice outright and moved it onto campus; the clients he still advises never come up in conversation, and neither does what they pay. Teaching Watch is the small, contracted piece of his week; the rest of his time is that consulting work. Lives on campus, in staff quarters near the administrative building, and keeps hours nobody else on staff keeps, awake for the unannounced drills at any hour, visibly rested regardless. Divorced; an adult son he sees less than either of them would like, a relationship that survived the deployments better than it's survived the years since. Signed the same strict non-disclosure agreement every member of staff signs, and by his own account it isn't the strictest one he's ever put his name to.
 
 ## Body
-Fifties, compact, coiled rather than large, the build of someone who was never the biggest person in a room and made sure it never mattered. Moves without wasted motion, stands still in a way that reads as watching rather than resting. ("he stands there for a second just watching them," chapters/15_twelve.md:327) Wears the same neutral, practical clothing every day, nothing that identifies rank or history. Eats fast, functionally, standing when he can. Sleeps in short blocks, awake at hours that would be strange for anyone else on staff and normal for him.
+Fifties, compact, coiled rather than large, the build of someone who was never the biggest person in a room and made sure it never mattered. Moves without wasted motion, stands still in a way that reads as watching rather than resting. ("he stands there for a second just watching them," chapters/15_twelve.md:329) Wears the same neutral, practical clothing every day, nothing that identifies rank or history. Eats fast, functionally, standing when he can. Sleeps in short blocks, awake at hours that would be strange for anyone else on staff and normal for him.
 
 ## Personality off the page
 Arriving at the aftermath of the real intrusion, "he stands there for a second just watching them" before he speaks, the only piece of unscripted behavior he gets in the entire manuscript. He never asks whether the children are hurt. The narration gives the pause no stated content beyond the fact of it, a full second, spent looking, before the first question. Off the page, this same capacity shows up as someone who watches a room fully before entering a conversation, who talks more easily one-on-one over early coffee than in front of a group, and who registers a drill executed well in a private way that never makes it into a debrief. Bored: rare, and unwelcome; he fills any true idle time with more preparation. Wrong: corrects course immediately and without comment, the same flatness he extends to a student's mistake. Praised: deflects hard, physically changes the subject. Losing: at the annual relay, competitive and gracious in the same breath, the same as Bell. At 2am, often actually awake, doing exactly what he'd be doing at any other hour, checking something. A free Saturday, when he takes one, is spent alone, off campus, doing nothing that looks like relaxing to anyone who'd ask. Finds funny in others: nothing readily, the one flicker of humor the text gives him is dry and self-directed ("Good luck," meaning the opposite), and colleagues say that's as far as it usually goes.
@@ -70,11 +70,11 @@ Wants, unspoken: for the drills to keep testing something real rather than settl
 Drinks black coffee, functional, never mentions liking or disliking it. Handwriting, on the rare occasions anyone sees it, is small and entirely in block capitals, built for legibility under bad conditions. Keeps almost nothing personal in his quarters, a duffel that could be packed in under two minutes, always. Money: unremarkable, most of it from the consulting work, spent on nothing anyone at school has ever noticed. Superstition: none he'd admit to; checks a locked door twice, every time, out of what he calls procedure and everyone else calls a tell. On a phone: uses a separate one for the consulting work, keeps it off during term entirely. First thing every morning: a full walk of the building's exterior, whether or not anything's scheduled.
 
 ## Would do
-- Pause and take in a scene fully before speaking, even one that's time-critical. (chapters/15_twelve.md:327)
-- Ask for a role and a number, and stop the moment he has them. (chapters/15_twelve.md:327-333)
-- Apply the identical scoring register to a real intrusion that he'd apply to a scheduled drill. (chapters/15_twelve.md:335-339)
+- Pause and take in a scene fully before speaking, even one that's time-critical. (chapters/15_twelve.md:329)
+- Ask for a role and a number, and stop the moment he has them. (chapters/15_twelve.md:329-333)
+- Apply the identical scoring register to a real intrusion that he'd apply to a scheduled drill. (chapters/15_twelve.md:337-339)
 - Close a high-stakes scene with a purely administrative line. ("Grading's in the morning.")
-- Deliver dry, almost invisible irony under an otherwise flat announcement. (chapters/14_sixty_degrees.md:209)
+- Deliver dry, almost invisible irony under an otherwise flat announcement. (chapters/14_sixty_degrees.md:211)
 - Run an unannounced drill at genuinely odd hours because that's the only real test.
 - Walk the building's exterior every single morning, scheduled or not.
 - Compete hard, and graciously, at something explicitly billed as "just for fun."
@@ -85,14 +85,14 @@ Drinks black coffee, functional, never mentions liking or disliking it. Handwrit
 - Treat stopping four armed intruders as an exception to the standard, the response sheet lists what went wrong with the same flatness it would use for a drill, the clearest "nobody in this book is evil" instance attached to any of the nine.
 
 ## Relationships
-- **Ruth**, answers his two questions directly and is the one he addresses at the close; the closest thing to a point of contact in either scene. (chapters/15_twelve.md:327-335)
+- **Ruth**, answers his two questions directly and is the one he addresses at the close; the closest thing to a point of contact in either scene. (chapters/15_twelve.md:329-335)
 - **Chloe**, present in both scenes but never addressed individually; part of "the whole school" both times.
 - **Bell**, the one colleague he shares an early-morning coffee with, both being the two staff most likely to be up before the sun.
 - **Pruitt**, the one person on staff he's ever asked a genuinely personal question, once, years ago.
 
 ## Likes, dislikes, habits
-- Assesses a scene silently before speaking, even under real stakes. (chapters/15_twelve.md:327)
-- Extracts exactly one piece of information per question, then stops. (chapters/15_twelve.md:327-331)
+- Assesses a scene silently before speaking, even under real stakes. (chapters/15_twelve.md:329)
+- Extracts exactly one piece of information per question, then stops. (chapters/15_twelve.md:329-331)
 - Likes an unannounced drill more than a scheduled one, the only real test, in his view.
 - Dislikes letting a good outcome go ungraded.
 - Walks the building's exterior every morning without fail.

@@ -58,7 +58,7 @@ Teaches science to the youngest age band, 6-7, volcanism and geology in chapters
 Doyle helped install part of the seismic monitoring network a national geological survey still relies on for early warning, and two governments' survey teams cite his group's calibration papers in their own reports. Halstead's offer covered his fieldwork costs outright, equipment, travel, the works, and left him a handful of teaching hours a week rather than a full course load, something no university post had managed alongside the same fieldwork. Lives off campus, shares a rented house a short drive away with another young teacher, an arrangement that started as convenience and became a real friendship. Unmarried, no children. In his mid-to-late thirties, one of the younger members of staff. Goes back into the field most summers on real monitoring work with the same research group he's always worked with, keeping the discipline current rather than academic.
 
 ## Body
-Late thirties, lean, sun-weathered in the specific way of someone who spends real time outdoors. Holds a marker at the board while lecturing and wipes an error away with the side of his hand, the one physical habit the text actually gives him. (chapters/04_pluto.md:109-112) Dresses casually, practically, boots more often than not even indoors, a holdover from fieldwork. Eats quickly and talks through most of it, still thinking about whatever the class just covered. Sleeps reasonably well, though summers in the field have trained him to wake at odd hours without an alarm.
+Late thirties, lean, sun-weathered in the specific way of someone who spends real time outdoors. Holds a marker at the board while lecturing and wipes an error away with the side of his hand, the one physical habit the text actually gives him. (chapters/04_pluto.md:111-112) Dresses casually, practically, boots more often than not even indoors, a holdover from fieldwork. Eats quickly and talks through most of it, still thinking about whatever the class just covered. Sleeps reasonably well, though summers in the field have trained him to wake at odd hours without an alarm.
 
 ## Personality off the page
 His authority doesn't depend on being right the first time, checking the record before responding, rather than responding and then checking, is the single most concrete thing the text gives about how he handles any kind of pressure, however minor. Off the page, colleagues describe him as easy to work with and hard to rattle, the same equanimity extended to a broken piece of lab equipment as to a student's correction. Bored: restless indoors, visibly happier outside. Wrong: checks, agrees if it checks out, moves on, consistent everywhere else. Praised: shrugs it off, redirects to the actual result. Losing: doesn't register much, science, to him, isn't a contest either. At 2am, rare, he's usually reading a field report from wherever his research group is currently stationed. A free Saturday means hiking, alone or with the housemate, somewhere with actual rock in it. Finds funny in others: a wrong answer delivered with total confidence, not to mock it, but because it reminds him of his own early fieldwork mistakes.
@@ -70,28 +70,28 @@ Wants, unspoken: to keep both halves of his life, the fieldwork and the classroo
 Drinks coffee black, a lot of it, refilled from a thermos that goes everywhere with him including outside during breaks. Handwriting is quick and slightly messy, legible, but clearly built for speed over neatness, the handwriting of someone used to writing field notes fast before conditions change. Keeps a small rock sample on his desk from every place he's done fieldwork, unlabeled, which he can identify instantly if asked. Money: unremarkable, most of it goes toward keeping his own research running. Superstition: none stated; checks his own chalk or marker supply obsessively before a lecture, a fieldwork habit about never running out of the tool you need mid-task. On a phone: uses it for weather and seismic activity alerts more than anything social. First thing every morning: checks an activity feed from the system he currently studies, out of habit more than need.
 
 ## Would do
-- Check his own written work before responding to a challenge to it. (chapters/04_pluto.md:111)
-- Fix an error in the same motion as acknowledging it, with no gap for face-saving. (chapters/04_pluto.md:112)
-- Let unfinished group work stay unfinished and return to it later rather than force a save. (chapters/05_behind.md:22)
-- Grade a group against their own stated prediction rather than a fixed target. (chapters/05_behind.md:28)
+- Check his own written work before responding to a challenge to it. (chapters/04_pluto.md:113)
+- Fix an error in the same motion as acknowledging it, with no gap for face-saving. (chapters/04_pluto.md:114)
+- Let unfinished group work stay unfinished and return to it later rather than force a save. (chapters/05_behind.md:24)
+- Grade a group against their own stated prediction rather than a fixed target. (chapters/05_behind.md:30)
 - Run a lesson ten minutes long because a student latched onto something real.
 - Go back into the field most summers to keep his own research current.
 - Keep an unlabeled rock sample from every fieldwork site he can identify on sight.
 
 ## Would never
-- Get defensive, annoyed, or performatively gracious about being corrected, the narration explicitly rules out both extremes. (chapters/04_pluto.md:117)
+- Get defensive, annoyed, or performatively gracious about being corrected, the narration explicitly rules out both extremes. (chapters/04_pluto.md:119)
 - Address the fact that a student spoke out of turn, only the content of what they said.
-- Follow up on a correction afterward, no talking-to, no note home, no comment for the rest of the day. (chapters/04_pluto.md:120)
+- Follow up on a correction afterward, no talking-to, no note home, no comment for the rest of the day. (chapters/04_pluto.md:122)
 
 ## Relationships
-- **Ruth**, corrects him in front of the class and receives the flattest possible acknowledgment; no scene shows them interacting again. (chapters/04_pluto.md:109-117)
-- **Chloe**, watches him for the rest of the day for a reaction that never comes; the scene is staged entirely through her observation. (chapters/04_pluto.md:119-120)
-- **Owen's group**, told to "leave it where it is and come back to it" rather than pushed under time pressure. (chapters/05_behind.md:22)
+- **Ruth**, corrects him in front of the class and receives the flattest possible acknowledgment; no scene shows them interacting again. (chapters/04_pluto.md:111-117)
+- **Chloe**, watches him for the rest of the day for a reaction that never comes; the scene is staged entirely through her observation. (chapters/04_pluto.md:121-120)
+- **Owen's group**, told to "leave it where it is and come back to it" rather than pushed under time pressure. (chapters/05_behind.md:24)
 - **His housemate colleague**, the one person who sees him outside the classroom, hiking most weekends.
 
 ## Likes, dislikes, habits
-- Checks his own prior work before responding to a correction rather than answering from memory. (chapters/04_pluto.md:111)
-- Lets an unfinished group task stand unfinished and revisits it later. (chapters/05_behind.md:22)
+- Checks his own prior work before responding to a correction rather than answering from memory. (chapters/04_pluto.md:113)
+- Lets an unfinished group task stand unfinished and revisits it later. (chapters/05_behind.md:24)
 - Likes a wrong answer delivered with total, unearned confidence, finds it endearing, not annoying.
 - Keeps a rock sample from every fieldwork trip on his desk.
 - Runs long on any topic a student latches onto.

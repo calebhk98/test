@@ -1,5 +1,7 @@
 ## Chapter Twenty-Seven: The File
 
+*October 2025*
+
 Theo's job is reading things and saying what they mean.
 
 

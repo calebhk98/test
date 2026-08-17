@@ -138,12 +138,12 @@ book, so reconcile them before revising from them.
 
 ## Two collisions the manuscript makes on itself
 
-- `CHAPTERS_23_30_v2.md:465` and `:468` — Kavi and Ruth, the identical six words back to
+- `chapters/32_the_money.md:64` and `:468` — Kavi and Ruth, the identical six words back to
   back, "thats a person getting older". Also `:844` and `:847`, Ruth and Eli, "thats the
   only thing we have".
 - **Two different characters are called Deb.** A swim instructor at camp when Chloe is 7
   (`05_behind.md:55`) and her colleague at the translation company when she is 19
-  (`CHAPTERS_16_22_v2.md:577`). Twelve years and no connection between them.
+  (`chapters/25_nineteen.md:17`). Twelve years and no connection between them.
 
 ## One contradiction to resolve
 

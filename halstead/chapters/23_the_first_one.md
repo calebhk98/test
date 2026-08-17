@@ -1,5 +1,7 @@
 ## Chapter Twenty-Three: The First One
 
+*June 2023*
+
 Nobody at Halstead has ever done a graduation, and it shows.
 
 

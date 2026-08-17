@@ -1,5 +1,7 @@
 ## Chapter Eight: The Asking
 
+*October 2012 – January 2013*
+
 Ms. Vance calls the house on the Friday, which Chloe hears from the stairs, though most of it is her mom listening and saying she knows, four times in a row, to four separate things Chloe can't make out from where she is sitting.
 
 "No, I appreciate you calling, because most people wouldn't have." Her mom is winding the phone cord around two fingers. "She's been like this since August. It isn't you and it isn't anything in your room, she was fine in July and then school started."

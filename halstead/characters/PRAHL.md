@@ -8,7 +8,7 @@ The gifted pull-out teacher: the district's entire elementary gifted program, ri
 
 ## Voice in one paragraph
 
-She teaches in complete, patient setups. The knights-and-knaves puzzle runs three full sentences of premise before the question arrives, read aloud, sheet held over her head so the back row can see it too. When Chloe asks for more, her refusal takes the same shape as her teaching: warm, unhurried, framed as generosity. Her most characteristic line is "'Let's not rush it, we've got all year.' Mrs. Prahl smiles at her the way people smile when they think you have said something sweet." (chapters/08_the_asking.md:103). Encouraging in tone, a flat refusal in substance.
+She teaches in complete, patient setups. The knights-and-knaves puzzle runs three full sentences of premise before the question arrives, read aloud, sheet held over her head so the back row can see it too. When Chloe asks for more, her refusal takes the same shape as her teaching: warm, unhurried, framed as generosity. Her most characteristic line is "'Let's not rush it, we've got all year.' Mrs. Prahl smiles at her the way people smile when they think you have said something sweet." (chapters/08_the_asking.md:105). Encouraging in tone, a flat refusal in substance.
 
 ## Dials
 
@@ -26,8 +26,8 @@ She teaches in complete, patient setups. The knights-and-knaves puzzle runs thre
 ## Signature — theirs alone
 
 Answers a request for more difficulty with a statement about time remaining, never about material:
-- "'Let's not rush it, we've got all year.'" (chapters/08_the_asking.md:103)
-- "Mrs. Prahl says that's absolutely fine, take your time." (chapters/08_the_asking.md:135)
+- "'Let's not rush it, we've got all year.'" (chapters/08_the_asking.md:105)
+- "Mrs. Prahl says that's absolutely fine, take your time." (chapters/08_the_asking.md:137)
 
 ## Would they say this?
 

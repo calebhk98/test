@@ -1,5 +1,7 @@
 ## Chapter Sixteen: Thirteen
 
+*September 2018 – July 2019*
+
 A line appears on her timetable in September that was not on it in June. *Mathematics, 12s, Thursday, room 4\.* Seven names underneath, and a grade sheet at the end of the year with her name at the top of it and theirs down the side.
 
 Teaching starts at thirteen and you take the year below. Her cohort is the oldest in the building, so her cohort is the only one doing it, and the twelves are the only year in the school being taught by anybody who is not an adult. Nobody teaches the thirteens. She works that out on the stairs in the first fortnight, tells Ruth, and gets a shrug and half a sandwich.

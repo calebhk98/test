@@ -3,12 +3,12 @@
 Chloe's colleague at the translation company, first name Deb: single mother of one, project coordinator by trade, and the evidence that Chloe's isolation is circumstance rather than temperament.
 
 **Age span:** 46 during Chloe's first year at the company | **MBTI:** ESFJ (writing aid, not a claim) | **IQ:** not inferable
-**Appears in:** CHAPTERS_16_22_v2.md, Ch20 "Nineteen," in two summarized passages. A second character, also named Deb, appears in chapters/05_behind.md as a swim instructor at Chloe's age-seven summer camp, a different person in every respect; see Known problems.
+**Appears in:** chapters/25_nineteen.md in two summarized passages. A second character, also named Deb, appears in chapters/05_behind.md as a swim instructor at Chloe's age-seven summer camp, a different person in every respect; see Known problems.
 **Speaks:** the manuscript renders her entirely in Chloe's summary. This sheet builds the rest of her from that summary and from invention, marked as such throughout.
 
 ## Voice in one paragraph
 
-Chloe's account carries her whole presence on the page: "Deb who sits opposite her talks about her son constantly and Chloe learns his entire life story and is genuinely invested in it by October" (CHAPTERS_16_22_v2.md, Ch20 "Nineteen"), and later, "She'll explain something at work, plainly, and Deb will not have it, so Chloe will find another way in" (same chapter). Given a voice: warm, talkative, concrete rather than abstract. She describes a project by what it's for, "it's the safety manual for the forklifts," rather than by its category, and she needs a plain technical explanation attached to a person or a use before it lands for her.
+Chloe's account carries her whole presence on the page: "Deb who sits opposite her talks about her son constantly and Chloe learns his entire life story and is genuinely invested in it by October" (chapters/25_nineteen.md), and later, "She'll explain something at work, plainly, and Deb will not have it, so Chloe will find another way in" (same chapter). Given a voice: warm, talkative, concrete rather than abstract. She describes a project by what it's for, "it's the safety manual for the forklifts," rather than by its category, and she needs a plain technical explanation attached to a person or a use before it lands for her.
 
 ## Would they say this?
 
@@ -92,7 +92,7 @@ Her coffee runs milky, one sugar, refilled twice a morning. Her handwriting loop
 
 ## Known problems
 
-- Her name collides with an unrelated minor character. chapters/05_behind.md:55 introduces "a woman called Deb," the swim instructor at Chloe's age-seven summer camp, a different setting, a different decade of Chloe's life, with no textual link between the two. Flag to the author: likely the coin-flip naming collision the author warned about; this sheet recommends keeping the name here, since she carries the larger role, and renaming the swim instructor.
+- Her name collides with an unrelated minor character. chapters/05_behind.md:57 introduces "a woman called Deb," the swim instructor at Chloe's age-seven summer camp, a different setting, a different decade of Chloe's life, with no textual link between the two. Flag to the author: likely the coin-flip naming collision the author warned about; this sheet recommends keeping the name here, since she carries the larger role, and renaming the swim instructor.
 - The primary text gives her zero quoted dialogue despite her place in the synopsis's character list and in Chloe's own likes; this sheet fills the gap with invention, marked throughout, while nothing above chapters/08 is textual.
 - The earlier brief's "twice" framing runs slightly imprecise; the text describes a recurring habit, not a single two-step exchange.
 

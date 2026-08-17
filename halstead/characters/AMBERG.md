@@ -4,7 +4,7 @@ Teaches law by handing thirteen-year-olds the actual rules that will govern thei
 
 **First name:** Julian, never used by anyone at the school under eighteen, see Facts.
 **Age span (in the text):** Chloe age 13 (law, cryptography), 16 (bar marking), 18 (exit interview), the widest span of any teacher on this list | **MBTI:** INTJ (writing aid, not a claim) | **IQ:** reader estimate, mid 140s
-**Appears in:** chapters/16_thirteen.md, chapters/19_sixteen.md, CHAPTERS_16_22_v2.md ("Chapter Seventeen: The Offer")
+**Appears in:** chapters/16_thirteen.md, chapters/19_sixteen.md, chapters/22_the_offer.md
 **Speaks:** 9 quoted turns across three chapters, following one student from thirteen to eighteen.
 
 ## Voice in one paragraph
@@ -46,19 +46,19 @@ When Chloe turns down a research post worth three times market pay with full ben
 ## Subjects and schedule
 Teaches law from age thirteen onward (state code, contracts, the bar-exam rationale) and is credited with the founding line of the cryptography curriculum the same year.
 
-**Best at:** converting a legal abstraction into an enumerated, gradable structure. (chapters/19_sixteen.md:39)
+**Best at:** converting a legal abstraction into an enumerated, gradable structure. (chapters/19_sixteen.md:41)
 **Worst at:** small talk that isn't secretly a Socratic question, colleagues say he can't ask "how was your weekend" without it turning into a hypothetical about liability.
-**Favourite, and why:** contracts, the subject that gets the most structural care in his lines, and the one he returns to across every appearance. (chapters/16_thirteen.md:119)
+**Favourite, and why:** contracts, the subject that gets the most structural care in his lines, and the one he returns to across every appearance. (chapters/16_thirteen.md:121)
 **Least favourite:** the annual mock trial, which the students love and he finds theatrical, he runs it anyway, precisely, and never lets on.
 **The one he's secretly proud of:** the exit interviews, trusted to run all ninety-one, fifteen minutes each, personally, and he has never once gone over time or handed the job to anyone else.
-**What he'd teach if he could teach anything else:** cryptography, outright, if he could clear the schedule for it, the line attributed to him in chapters/16_thirteen.md:67 ("you cannot build a lock if you have never opened one somebody else built") is his own conviction in his own register, whether or not he holds the chalk for that particular class.
+**What he'd teach if he could teach anything else:** cryptography, outright, if he could clear the schedule for it, the line attributed to him in chapters/16_thirteen.md:69 ("you cannot build a lock if you have never opened one somebody else built") is his own conviction in his own register, whether or not he holds the chalk for that particular class.
 **What he thinks of the rest of the curriculum:** he thinks Halstead's credential-free design is basically right, with one exception, his own subject, which ends in a real external exam, and he considers that exception the whole point, not a flaw: the bar is the one place the school lets the outside world grade its work.
 
 ## Home
 The state bar association's exam committee uses the contracts mark scheme Amberg wrote, the same document he sets on a desk in front of a class of thirteen-year-olds. He still takes cases, filed under his own name, from the school. Teaching contract law is a small, contracted slice of his week; the rest of his time is that practice, run out of the school. Lives on campus in faculty housing with his husband, who works as an actuary and does the school's own liability modeling as an unpaid favor nobody asked for and everybody quietly relies on. No children. Married nine years, together fourteen. Keeps a small, exact vegetable garden behind the house that he tends with the same enumerated precision he brings to a mark scheme. Grew up the son of two public defenders, at a kitchen table where every dinner conversation eventually became a case.
 
 ## Body
-Early fifties, medium build, sits on the front of a desk rather than behind it whenever he can. (chapters/16_thirteen.md:117) Wears a suit jacket without a tie, every day, the one piece of formality he's kept from courtroom life. Neat hands, always moving toward the next document before he's finished with the current one. Eats lunch fast, standing, between meetings, and complains about it exactly once a year, at the staff dinner, as a running joke everyone expects. Sleeps well, by his own report, which the rest of the staff finds slightly suspicious in a man who spends his days telling children what the law actually says.
+Early fifties, medium build, sits on the front of a desk rather than behind it whenever he can. (chapters/16_thirteen.md:119) Wears a suit jacket without a tie, every day, the one piece of formality he's kept from courtroom life. Neat hands, always moving toward the next document before he's finished with the current one. Eats lunch fast, standing, between meetings, and complains about it exactly once a year, at the staff dinner, as a running joke everyone expects. Sleeps well, by his own report, which the rest of the staff finds slightly suspicious in a man who spends his days telling children what the law actually says.
 
 ## Personality off the page
 Procedural even off duty, the habit of producing a document before speaking extends to how he runs a staff meeting, agenda first, always. Bored: doesn't happen to him in any scene or account; he treats even routine work as worth doing exactly right. Wrong: corrects himself the same way he corrects a mark scheme discrepancy, out loud, immediately, no defensiveness. Praised: accepts it briefly and pivots straight back to the work. Losing: the one loss shown on the page, Chloe declining the offer, is absorbed by writing it down and moving to the next meeting, genuinely unbothered, not performing calm. At 2am he's, rarely, reading a case that has nothing to do with school, purely for the pleasure of a clean argument. A free Saturday is the garden, then a stack of his own casework. Finds funny in others: a badly built argument that the person making it believes completely, more entertaining than frustrating.
@@ -71,10 +71,10 @@ Coffee, strong, no sugar, refilled constantly through the day. Handwriting is sm
 
 ## Would do
 - Place the governing document on the desk before saying a word. (two instances)
-- Mark a technically correct answer down for failing to show the reasoning. (chapters/19_sixteen.md:39-53)
-- Offer a genuinely large benefit without pressuring anyone to accept it. (CHAPTERS_16_22_v2.md:141)
-- Record a refusal and move on without revisiting it. (CHAPTERS_16_22_v2.md:161)
-- Hand thirteen-year-olds an adult rationale years before it applies, without dressing it up as an achievement. (chapters/16_thirteen.md:117)
+- Mark a technically correct answer down for failing to show the reasoning. (chapters/19_sixteen.md:41-53)
+- Offer a genuinely large benefit without pressuring anyone to accept it. (chapters/21_the_applications.md through chapters/27_the_file.md:141)
+- Record a refusal and move on without revisiting it. (chapters/22_the_offer.md:29)
+- Hand thirteen-year-olds an adult rationale years before it applies, without dressing it up as an achievement. (chapters/16_thirteen.md:119)
 - Run all ninety-one exit interviews personally rather than delegate any of them.
 - Keep his own casework running alongside a full teaching schedule.
 - Tend a garden with the same precision he brings to a mark scheme.
@@ -82,7 +82,7 @@ Coffee, strong, no sugar, refilled constantly through the day. Handwriting is sm
 ## Would never
 - Argue with a student after they've stated a decision.
 - Accept a correct answer as sufficient without the reasoning behind it.
-- Let a fifteen-minute interview run long or short of its allotted time. (CHAPTERS_16_22_v2.md:137)
+- Let a fifteen-minute interview run long or short of its allotted time. (chapters/22_the_offer.md:5)
 
 ## Relationships
 - **Chloe**, conducts her exit interview and bar-paper review; both scenes end with him accepting her stated position without argument.
@@ -92,16 +92,16 @@ Coffee, strong, no sugar, refilled constantly through the day. Handwriting is sm
 
 ## Likes, dislikes, habits
 - Opens a class or a meeting by placing a document on the desk before speaking.
-- Marks for demonstrated reasoning, not silent correct conclusions. (chapters/19_sixteen.md:39-53)
+- Marks for demonstrated reasoning, not silent correct conclusions. (chapters/19_sixteen.md:41-53)
 - Likes a badly built argument the arguer believes completely, finds it funny rather than frustrating.
-- Gives the bar rationale years ahead of the exam, framed as ordinary adult obligation. (chapters/16_thirteen.md:117)
+- Gives the bar rationale years ahead of the exam, framed as ordinary adult obligation. (chapters/16_thirteen.md:119)
 - Keeps a small, exact garden.
 
 ## Facts a rewriter needs
 Full name Julian Amberg. Students call him "Mr. Amberg", nobody under eighteen uses a staff member's first name at Halstead. Practices law at an elite level; Halstead recruited him with a compensation package well beyond firm or bench pay, and teaching is a handful of hours a week, the rest of his time his own casework, run out of the school. Signed the standard staff non-disclosure agreement. Married to a husband who works as an actuary; no children. Teaches law and is credited with founding the school's approach to cryptography. Male, undisputed in the text.
 
 ## Known problems
-- The cryptography attribution (chapters/16_thirteen.md:67) doesn't show him teaching the class directly on the page, resolved above as a stated conviction attributable to him whether or not he holds the chalk.
+- The cryptography attribution (chapters/16_thirteen.md:69) doesn't show him teaching the class directly on the page, resolved above as a stated conviction attributable to him whether or not he holds the chalk.
 - Home, Body, Interior life, and The small stuff close a genuine gap the manuscript leaves; none of it contradicts the page.
 
 ## Do not confuse with

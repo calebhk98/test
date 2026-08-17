@@ -1,5 +1,7 @@
 ## Chapter Five: Behind
 
+*July 2012*
+
 Nobody waits.  
 That's the thing Chloe can't get over in the first week. She finishes a page, looks up, and there are already people on the next one. She finishes that one and Ruth is two ahead. Nobody says good job, nobody says wait for the others, they just keep handing out the next thing, all day, until the day is over. There is no part of it where she sits with a book in her desk and feels it in there. By Wednesday she has stopped putting her hand in to check that it's still there, and by Friday she has left it in the room.  
 She thought this would feel good, and it does. She also can't stop looking at where everybody else is on the page.  

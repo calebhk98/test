@@ -48,7 +48,7 @@ When two different students ask him to repeat the same demonstration in one less
 ## Subjects and schedule
 Teaches early mathematics, fraction division, arithmetic, to the youngest age band, 6-7. CURRICULUM_GRID.md's own description of that age ("No formulas given. You get the thing the formula is about and a week") is an exact match for his rectangle-and-shading method, which never once states "flip and multiply" and instead rebuilds what division is asking.
 
-**Best at:** getting a student to rebuild the reasoning behind a rule instead of memorizing it. (chapters/05_behind.md:33-46)
+**Best at:** getting a student to rebuild the reasoning behind a rule instead of memorizing it. (chapters/05_behind.md:35-46)
 **Worst at:** keeping a straight face when a six-year-old announces a wrong answer with total, unshakeable confidence, colleagues say it's the one thing that nearly breaks him every year.
 **Favourite, and why:** the "why" behind an operation over the operation itself, every one of his lines pushes toward the underlying question, never the mechanical answer.
 **Least favourite:** the standardized diagnostic the school runs once a year purely for its own internal records, which tells him nothing his own classroom hasn't already shown him.
@@ -60,7 +60,7 @@ Teaches early mathematics, fraction division, arithmetic, to the youngest age ba
 Baptiste still publishes two or three papers a year in combinatorics, the field he did his doctorate in, and referees for the same journals that print him. Halstead's offer matched what a university chair would have paid and added something no department had: the two youngest hours of the school day, which is the age he asked to teach. He does the research at Halstead, on Halstead's schedule, alongside a handful of teaching hours a week. Lives off campus, a short drive away, in a house with a large vegetable garden he's inordinately proud of. Married, two grown children neither of whom attended Halstead, his wife teaches at the regular public school in town, and dinner conversation is, by his own account, "two teachers comparing notes about the same age group from two completely different planets." Grew up in a French-Caribbean family that valued precision in speech the way other families valued manners, a habit he brought straight into how he asks a six-year-old a follow-up question.
 
 ## Body
-Mid-fifties, average build, moves unhurriedly and never seems rushed even mid-lesson. Caps and uncaps a marker as a visible thinking beat before he explains, the one physical habit the text actually gives him. (chapters/05_behind.md:33) Wears the same style of collared shirt every day, sleeves rolled to the forearm, chalk dust or marker ink somewhere on him by mid-morning without fail. Eats lunch with the other early-years staff, talking shop, unhurried. Sleeps well and wakes early to work in the garden before school.
+Mid-fifties, average build, moves unhurriedly and never seems rushed even mid-lesson. Caps and uncaps a marker as a visible thinking beat before he explains, the one physical habit the text actually gives him. (chapters/05_behind.md:35) Wears the same style of collared shirt every day, sleeves rolled to the forearm, chalk dust or marker ink somewhere on him by mid-morning without fail. Eats lunch with the other early-years staff, talking shop, unhurried. Sleeps well and wakes early to work in the garden before school.
 
 ## Personality off the page
 Comfortable with unstructured extension of a lesson, when students pull the class past the planned material, nothing shows him resisting. Bored: rare, given how much he seems to enjoy the actual unpredictability of six-year-olds. Wrong: checks the record and corrects the same flat way a colleague like Doyle does, no defensiveness. Praised: uncomfortable, redirects credit to the student's question. Losing: doesn't register competitively, mathematics, to him, isn't a contest. At 2am, rare, he's not thinking about school at all, the garden, mostly. A free Saturday is the garden, then a long, slow dinner with his wife where they trade impossible-child stories from two different schools. Finds funny in others: overconfidence in a six-year-old, precisely, and nowhere else, an adult's overconfidence just tires him.
@@ -72,11 +72,11 @@ Wants, unspoken: to prove, formally, that the youngest students understand struc
 Drinks coffee with milk, no sugar, from a mug his kids gave him years ago that says nothing memorable on it. Handwriting is careful, rounded, deliberately legible, chosen for an audience of six-year-olds and never adjusted since. His desk has a small collection of oddly shaped offcuts of wood, used as teaching props more often than paperweights. Money: unremarkable, comfortable, spends most of it on the garden and his kids' visits home. Superstition: none stated; caps and uncaps the same marker before every single explanation, which is closer to ritual than superstition. On a phone: minimal, mostly photos of the garden. First thing every morning: an hour outside before anyone else is up.
 
 ## Would do
-- Answer a question with a question by default. (chapters/05_behind.md:33, 40, 44)
-- Repeat a full demonstration exactly, without comment, for a student who needs it again. (chapters/05_behind.md:38)
-- Follow a tangent into genuinely harder territory rather than redirect back to the lesson plan. (chapters/05_behind.md:43-46)
-- Name a question as good, specifically, while never naming the student who asked it as smart. (chapters/05_behind.md:33, 46)
-- Let a student leave class still confused, on purpose, trusting her to close the gap herself. (chapters/05_behind.md:34, 47-48)
+- Answer a question with a question by default. (chapters/05_behind.md:35, 40, 44)
+- Repeat a full demonstration exactly, without comment, for a student who needs it again. (chapters/05_behind.md:40)
+- Follow a tangent into genuinely harder territory rather than redirect back to the lesson plan. (chapters/05_behind.md:45-46)
+- Name a question as good, specifically, while never naming the student who asked it as smart. (chapters/05_behind.md:35, 46)
+- Let a student leave class still confused, on purpose, trusting her to close the gap herself. (chapters/05_behind.md:36, 47-48)
 - Grow a genuinely good vegetable garden and bring the extra in for the staff kitchen.
 - Keep an old collection of offcuts around purely to use as teaching props.
 - Compare notes with his wife about their two very different classrooms, every week, without fail.
@@ -88,15 +88,15 @@ Drinks coffee with milk, no sugar, from a mug his kids gave him years ago that s
 
 ## Relationships
 - **Chloe**, asks the founding question of the scene and is told "Good, that's the question"; he never learns she solved it alone that night, and never needs to.
-- **Marisol**, asks for a full repeat and gets one, without comment. (chapters/05_behind.md:38)
-- **Owen**, asks a harder, more specific question and is told "that's fine and they'll do it again tomorrow," the gentlest deferral in the sample. (chapters/05_behind.md:38)
-- **Ruth**, extends the lesson into the "divide by zero" tangent and gets the same "Good" Chloe got, plus a worked example on the board. (chapters/05_behind.md:43-46)
+- **Marisol**, asks for a full repeat and gets one, without comment. (chapters/05_behind.md:40)
+- **Owen**, asks a harder, more specific question and is told "that's fine and they'll do it again tomorrow," the gentlest deferral in the sample. (chapters/05_behind.md:40)
+- **Ruth**, extends the lesson into the "divide by zero" tangent and gets the same "Good" Chloe got, plus a worked example on the board. (chapters/05_behind.md:45-46)
 - **His wife**, the one person who understands exactly what his day was like, from the opposite end of the same profession.
 
 ## Likes, dislikes, habits
 - Answers a question with a question by default.
-- Repeats a demonstration without comment when asked. (chapters/05_behind.md:38)
-- Praises a question, never a student. (chapters/05_behind.md:33, 46)
+- Repeats a demonstration without comment when asked. (chapters/05_behind.md:40)
+- Praises a question, never a student. (chapters/05_behind.md:35, 46)
 - Grows vegetables with the same patience he teaches with.
 - Keeps old offcuts on his desk as teaching props.
 

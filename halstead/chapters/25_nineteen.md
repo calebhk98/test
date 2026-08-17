@@ -1,5 +1,7 @@
 ## Chapter Twenty-Five: Nineteen
 
+*September 2024 – April 2025*
+
 Chloe gets a job at a company that translates documents for businesses. Contracts, manuals, safety sheets. It's steady and slow and there are about forty people in the building.
 
 

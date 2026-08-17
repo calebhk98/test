@@ -3,8 +3,8 @@
 Meg's mother: a retired maternity nurse of thirty-one years, who names what she sees in a person's body the moment she sees it, and reads everything Chloe tells her about school through the pace of an ordinary childhood.
 
 **Age span:** 74 across the chapters she appears in | **MBTI:** ISFJ (writing aid, not a claim) | **IQ:** not inferable, no cognitive content beyond direct physical observation
-**Appears in:** chapters/01_before.md, 03_the_letter.md (mentioned only), 07_the_same_room.md (mentioned only), 08_the_asking.md (mentioned only), 11_eight.md, 13_ten_pages.md, 14_sixty_degrees.md, 18_fifteen.md, and CHAPTERS_16_22_v2.md, Ch18 "The First One" (mentioned only).
-**Speaks:** 8 quoted turns across four chapters, 11, 13, 14, 18, roughly 12 sentences total. One additional line is reported without quotation marks (chapters/01_before.md:97).
+**Appears in:** chapters/01_before.md, 03_the_letter.md (mentioned only), 07_the_same_room.md (mentioned only), 08_the_asking.md (mentioned only), 11_eight.md, 13_ten_pages.md, 14_sixty_degrees.md, 18_fifteen.md, and chapters/23_the_first_one.md (mentioned only).
+**Speaks:** 8 quoted turns across four chapters, 11, 13, 14, 18, roughly 12 sentences total. One additional line is reported without quotation marks (chapters/01_before.md:99).
 
 ## Voice in one paragraph
 
@@ -110,7 +110,7 @@ Her tea runs strong, with milk, several cups a day, made the same way every time
 ## Facts a rewriter needs
 
 - Full name: Dorothy Whitfield. Age 74.
-- Relationship to Chloe: Meg's mother. chapters/13_ten_pages.md:170 has her tell Chloe "Your mother did that. Floor, back against the bed, papers everywhere, and if I moved one of them she could tell," a direct memory of Meg as a child in what reads as the same house Chloe is currently in. This sheet commits to that reading, which also makes Meg's maiden name Whitfield.
+- Relationship to Chloe: Meg's mother. chapters/13_ten_pages.md:172 has her tell Chloe "Your mother did that. Floor, back against the bed, papers everywhere, and if I moved one of them she could tell," a direct memory of Meg as a child in what reads as the same house Chloe is currently in. This sheet commits to that reading, which also makes Meg's maiden name Whitfield.
 - Retired maternity nurse, thirty-one years, the professional root of her one genuine skill, reading a body accurately.
 - Husband: Frank Whitfield, thirty-eight years running a parts counter, does the crossword most afternoons.
 - Hosts Christmas and other family gatherings at the same house every year, roughly eleven people present.

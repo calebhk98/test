@@ -1,5 +1,7 @@
 ## Chapter Thirteen: Ten Pages
 
+*September 2015 – April 2016*
+
 Mr. Hearn is small and gray and says everything at the same volume.
 
 "Alexander Hamilton. Real person, you can look him up, and everything he wrote is still in print and most of it is free." He writes the name on the board and then some numbers under it. "He wrote fifty-one of the Federalist papers in something like six to eight months. He had a full-time job the entire time he was doing it."

@@ -1,5 +1,7 @@
 ## Chapter Fourteen: Sixty Degrees
 
+*September 2016 – April 2017*
+
 The long field runs north from the back of Building Three for about three hundred metres. There is a fence at the end of it, with a road past that and nothing between the two.
 
 Archery is ordinary for the first three weeks, because the first three weeks are butts at twenty metres, then thirty, then fifty, an hour a day of being told what your elbow is doing, and a man walking down the line every eleven minutes to tell you the same thing about your elbow again. Chloe is on the gold most of the time by the end of the second week, but she is bored by the middle of the third, and so is everybody standing near her.

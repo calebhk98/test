@@ -1,5 +1,7 @@
 ## Chapter Nine: February
 
+*February 2013 – March 2013*
+
 It's a Tuesday and nothing happens on it.
 
 Nobody calls from the school and nobody says one thing to her all day. The sheet at twenty past nine is the same sheet as Monday's with different numbers in it. She finishes it and checks it. Then she sits behind it with her hands in her lap for the rest of the period. At lunch she sits at the end of a table because there's a space at the end of it, where nobody minds her being and nobody talks to her either. In the afternoon they do a worksheet about the parts of a plant, which has a picture on it that you colour in when you've finished the words. Chloe finishes the words in about four minutes, then colours the picture very slowly, going right up to the lines without going over them anywhere, which gets her most of the way to the bell. She has seen Dr. Ammons four times since October, and the last one was a fortnight ago, where she was asked whether any of it had got easier and said some of it had.

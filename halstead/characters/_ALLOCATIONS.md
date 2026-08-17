@@ -41,7 +41,7 @@ and one they are quietly bad at.
 | **Fen** | Spanish, French, Mandarin, Japanese, Korean, Cantonese, Hokkien, Malay, Tamil, Telugu, Marathi | Cantonese and Hokkien, from a grandmother |
 
 **These are the owning agent's to change.** Ruth's Portuguese is in the manuscript at
-chapters/11_eight.md:121; everything else here was assigned from outside and is a
+chapters/11_eight.md:123; everything else here was assigned from outside and is a
 starting point, not a constraint.
 
 ---
@@ -123,7 +123,7 @@ the book because Chloe cannot see it.
 ## Surnames
 
 The manuscript names only two: Chloe **Kessler** and Ruth **Aymar**, whose is spelled out
-letter by letter at `chapters/10_april.md:19`. Everything below is invented. Recorded here
+letter by letter at `chapters/10_april.md:21`. Everything below is invented. Recorded here
 because two sheets independently chose the same one and it had to be undone.
 
 | | surname | source |

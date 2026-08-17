@@ -1,5 +1,7 @@
 ## Chapter Eighteen: Fifteen
 
+*September 2020 – July 2021*
+
 The whole year is breaking clays at somewhere between ninety and a hundred by the end of September. In the first week of October, Voss walks them down to a lane they have never been in and shows them the turret.
 
 A machine at one end of sixty metres of open ground fires a live round down the lane on a fixed cycle. The students stand off to the side of it, behind glass, so the round crosses in front of them left to right. They shoot across its path on a count they take off the machine.

@@ -8,7 +8,7 @@ Runs marksmanship start to finish, nerf, paintball, arrows, and wants every kid 
 **Speaks:** 9 turns across four chapters, spread evenly rather than front-loaded.
 
 ## Voice in one paragraph
-Bell opens on a physical prop, not a claim: he holds the dart, the arrow, his own flat hand, up where the line can see it, and describes what it's doing before he says what to do about it. Sentences run long when he's teaching a mechanism and short when he's closing a decision, "Right, then nothing gets pointed at a person." He gives the reason for a rule in physical terms, never emotional ones: "that's the only thing you've got going for you and you're going to want all of it." Most characteristic line: "Look at the size of the thing. Look how slowly it comes at you. You can watch the entire flight from one end to the other, and there is nothing in this building easier to hit than that." (chapters/11_eight.md:141), honest in a way that makes the task easier, which is his whole method in one breath.
+Bell opens on a physical prop, not a claim: he holds the dart, the arrow, his own flat hand, up where the line can see it, and describes what it's doing before he says what to do about it. Sentences run long when he's teaching a mechanism and short when he's closing a decision, "Right, then nothing gets pointed at a person." He gives the reason for a rule in physical terms, never emotional ones: "that's the only thing you've got going for you and you're going to want all of it." Most characteristic line: "Look at the size of the thing. Look how slowly it comes at you. You can watch the entire flight from one end to the other, and there is nothing in this building easier to hit than that." (chapters/11_eight.md:143), honest in a way that makes the task easier, which is his whole method in one breath.
 
 ## Dials
 | | |
@@ -23,7 +23,7 @@ Bell opens on a physical prop, not a claim: he holds the dart, the arrow, his ow
 | figurative | none in his sample, his imagery is literal optics ("a point that gets bigger") |
 
 ## Signature, theirs alone
-Holds the demonstration object while he talks and doesn't let go until the point lands: "Bell holds a dart up between two fingers" (chapters/11_eight.md:141); "Bell keeps hold of the arrow while he says it" (chapters/14_sixty_degrees.md:13); "Bell puts a hand out flat and holds it" (chapters/14_sixty_degrees.md:21). Three instances across two chapters.
+Holds the demonstration object while he talks and doesn't let go until the point lands: "Bell holds a dart up between two fingers" (chapters/11_eight.md:143); "Bell keeps hold of the arrow while he says it" (chapters/14_sixty_degrees.md:15); "Bell puts a hand out flat and holds it" (chapters/14_sixty_degrees.md:23). Three instances across two chapters.
 
 ## Would they say this?
 **The Halstead-staff test.** A line belongs to this staff, not to a generic teacher, only if all five hold: no praise word attaches to the child, praise, if any, attaches to a correct mechanism; a correction is a flat statement of fact, never cushioned by apology or reassurance; the child's age is never a reason for leniency; an extraordinary result is treated as expected, not remarked on; the adult's own error is fixed the same flat way a student's is.
@@ -48,7 +48,7 @@ Bell runs the block-one compulsory afternoon slot that carries marksmanship from
 
 **Best at:** teaching interception as a counting problem instead of a reaction problem, the throughline of every stage he runs. (chapters 11, 13, 14)
 **Worst at:** keeping a straight face at the annual staff-versus-graduating-class shoot, which he takes far too seriously for an exhibition game and loses on purpose exactly once a year, to the same senior who always calls it early.
-**Favourite, and why:** the arrow/apogee stage, it gets his longest, most carefully built explanation in the whole sample, more setup than any other drill receives. (chapters/14_sixty_degrees.md:9-21)
+**Favourite, and why:** the arrow/apogee stage, it gets his longest, most carefully built explanation in the whole sample, more setup than any other drill receives. (chapters/14_sixty_degrees.md:11-21)
 **Least favourite:** the first two weeks of nerf, before anyone can hit anything, flailing beginners are genuinely tedious to him, and he's said so, once, to Sinclair, over coffee, which is the only place he lets that show.
 **The one he's secretly proud of:** the intercept becoming ordinary. He tells a line of eleven-year-olds nobody can do it, means it, and two hundred kids do it anyway inside a year. He keeps a private tally of first intercepts, by name, in a notebook he carries in his coat, and has for years.
 **What he'd teach if he could teach anything else:** competitive orienteering, reading terrain the way he reads a flight path.
@@ -70,9 +70,9 @@ What he wants and hasn't said out loud: to see one of his students shoot competi
 Drinks black coffee out of a thermos that never leaves the range, refilled from the staff kitchen twice a day. Handwriting is small, square, and entirely in capitals, a habit from years of range logs where legibility under bad light mattered more than style. His coat pocket, the one the metronome lived in for two years, otherwise holds a folding knife, a spare bowstring, and a pencil stub. Money: spends almost none of it, banks the rest, has never once mentioned what for. Superstition: touches the near post of the range with two fingers before the first shot of a new stage, every time, and has never explained why. On a phone he's nearly useless and openly proud of it. First thing every morning: walks the length of the range before anyone else is on it, whether or not anything needs checking.
 
 ## Would do
-- Run the same drill for two weeks with the whole room failing at it, and hold the line. (chapters/13_ten_pages.md:65)
+- Run the same drill for two weeks with the whole room failing at it, and hold the line. (chapters/13_ten_pages.md:67)
 - Hold a demonstration object steady through a full explanation rather than rush it. (three instances)
-- Concede a narrower point mid-argument while holding the larger rule unchanged. (chapters/14_sixty_degrees.md:13)
+- Concede a narrower point mid-argument while holding the larger rule unchanged. (chapters/14_sixty_degrees.md:15)
 - Let a class sit with an unanswered "why" until they find it themselves.
 - Escalate difficulty a stage at a time without ever announcing that it's an escalation.
 - Keep a private, quiet tally of every student's first success, for himself alone.
@@ -86,7 +86,7 @@ Drinks black coffee out of a thermos that never leaves the range, refilled from 
 
 ## Relationships
 - **Chloe**, instructor to student; she's one name in a line he addresses, never singled out in a one-on-one scene, though his private tally almost certainly has her intercept date in it.
-- **Kavi**, the one student shown directly challenging the method; Bell answers without conceding the point and privately respects him more for asking. (chapters/14_sixty_degrees.md:11-13)
+- **Kavi**, the one student shown directly challenging the method; Bell answers without conceding the point and privately respects him more for asking. (chapters/14_sixty_degrees.md:13-13)
 - **Sinclair**, the one colleague he actually talks to; they take coffee together some mornings, both being the two staff most likely to be up before the sun.
 - **Hearn**, mutual, low-key needling across a shared staff table about whether ten pages or ten arrows is the harder discipline; neither has ever conceded the point.
 
@@ -95,13 +95,13 @@ Drinks black coffee out of a thermos that never leaves the range, refilled from 
 - Physically demonstrates before he explains. (three instances)
 - Likes watching a beginner's first real success more than his own.
 - Dislikes paperwork that keeps him off the range.
-- Comfortable with silence as pedagogy. (chapters/13_ten_pages.md:65)
+- Comfortable with silence as pedagogy. (chapters/13_ten_pages.md:67)
 - Keeps a private log nobody else has seen.
 
 ## Facts a rewriter needs
 Full name Desmond Bell. Students and staff alike call him "Bell" or "Coach Bell", nobody under eighteen uses a staff member's first name at Halstead, a fact about the school's register rather than about him specifically. He is a competitive marksman at the top of his sport, recruited by Halstead with a compensation package several times market rate; teaching is a handful of hours a week, and his own training and competition is the rest of his time, done with the school's resources. He signed the same strict non-disclosure agreement every member of staff signs. Runs marksmanship: nerf (age 8), paintball, archery (metronome/apogee-geometry method); rifles from fourteen pass to Voss. Divorced, one adult daughter.
 
-**Gender, confirmed masculine in the manuscript.** The manuscript uses masculine pronouns for Bell in three separate places across two chapters: chapters/14_sixty_degrees.md:13 ("he says"), :19 ("He walks them down the field"), :27 ("he says"); chapters/15_twelve.md:29 ("his coat pocket"). No "she"/"her" instance exists anywhere in the accessible text. SYNOPSIS_CHARACTERS_TIMELINE.md's "Female (inferred)" label is the outlier and should be corrected to match the manuscript, not the reverse.
+**Gender, confirmed masculine in the manuscript.** The manuscript uses masculine pronouns for Bell in three separate places across two chapters: chapters/14_sixty_degrees.md:15 ("he says"), :19 ("He walks them down the field"), :27 ("he says"); chapters/15_twelve.md:31 ("his coat pocket"). No "she"/"her" instance exists anywhere in the accessible text. SYNOPSIS_CHARACTERS_TIMELINE.md's "Female (inferred)" label is the outlier and should be corrected to match the manuscript, not the reverse.
 
 ## Known problems
 - The synopsis's stated gender for Bell is contradicted by the manuscript's own pronouns (see above); fix the reference document.

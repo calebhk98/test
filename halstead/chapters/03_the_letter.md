@@ -1,5 +1,7 @@
 ## Chapter Three: The Letter
 
+*July 2012*
+
 The envelope has her name on it.  
 Miss Chloe Kessler.  
 Nobody has ever sent Chloe anything. Her grandmother sends a card at Christmas with her name written inside it in pen, but the outside of that one says her parents, because the house belongs to them. This one says her. Typed, with a Miss in front of it, and the address underneath in the same typing.  

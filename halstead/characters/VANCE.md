@@ -8,7 +8,7 @@ Chloe's second-grade teacher: the one everyone in the building agrees is nice, g
 
 ## Voice in one paragraph
 
-She teaches in full, complete instructions. When something goes wrong with a student, she drops into short, close-range questions, doubled up with no space for a response before the next one lands. Her most characteristic line is "'Okay.' Ms. Vance stays down there on the floor. 'Can you tell me what it is?'" (chapters/07_the_same_room.md:217), real, sustained physical presence, paired with a question gentle enough that it never finds out what's wrong.
+She teaches in full, complete instructions. When something goes wrong with a student, she drops into short, close-range questions, doubled up with no space for a response before the next one lands. Her most characteristic line is "'Okay.' Ms. Vance stays down there on the floor. 'Can you tell me what it is?'" (chapters/07_the_same_room.md:219), real, sustained physical presence, paired with a question gentle enough that it never finds out what's wrong.
 
 ## Dials
 
@@ -26,8 +26,8 @@ She teaches in full, complete instructions. When something goes wrong with a stu
 ## Signature — theirs alone
 
 The only adult in this group of eight who lowers herself to Chloe's level and stays there through the whole exchange:
-- "Ms. Vance comes down the row and crouches all the way down beside the desk, in front of everybody, and puts a hand flat on Chloe's back and leaves it there." (chapters/07_the_same_room.md:203)
-- "'Okay.' Ms. Vance stays down there on the floor." (chapters/07_the_same_room.md:217)
+- "Ms. Vance comes down the row and crouches all the way down beside the desk, in front of everybody, and puts a hand flat on Chloe's back and leaves it there." (chapters/07_the_same_room.md:205)
+- "'Okay.' Ms. Vance stays down there on the floor." (chapters/07_the_same_room.md:219)
 
 ## Would they say this?
 

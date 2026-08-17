@@ -8,7 +8,7 @@ Chloe's first-grade teacher: nineteen years into a job she is still good at, run
 
 ## Voice in one paragraph
 
-She talks in verdicts, not sentences. Four words is her ceiling for anything that isn't a direct question. She never explains a decision, and she never raises the stakes of an infraction past the infraction itself: the book is confiscated "for the rest of the day," and it comes back. Her most characteristic line is "'That's what I thought.' Mrs. Aldana doesn't say it mean. She says it tired." (chapters/01_before.md:14). Four words of verdict carry the whole indictment, sitting in the one word the narration uses for how she says it.
+She talks in verdicts, not sentences. Four words is her ceiling for anything that isn't a direct question. She never explains a decision, and she never raises the stakes of an infraction past the infraction itself: the book is confiscated "for the rest of the day," and it comes back. Her most characteristic line is "'That's what I thought.' Mrs. Aldana doesn't say it mean. She says it tired." (chapters/01_before.md:16). Four words of verdict carry the whole indictment, sitting in the one word the narration uses for how she says it.
 
 ## Dials
 
@@ -26,8 +26,8 @@ She talks in verdicts, not sentences. Four words is her ceiling for anything tha
 ## Signature — theirs alone
 
 A short flat verdict, then an immediate physical action that ends the exchange without further comment:
-- "'That's what I thought.' Then she taps the worksheet twice with one finger and walks back up to the front of the room." (chapters/01_before.md:14)
-- "'Then find chapter four, please.' Mrs. Aldana comes down the row and takes the book, gently, with two fingers on the spine." (chapters/01_before.md:115–117)
+- "'That's what I thought.' Then she taps the worksheet twice with one finger and walks back up to the front of the room." (chapters/01_before.md:16)
+- "'Then find chapter four, please.' Mrs. Aldana comes down the row and takes the book, gently, with two fingers on the spine." (chapters/01_before.md:117–117)
 
 ## Would they say this?
 

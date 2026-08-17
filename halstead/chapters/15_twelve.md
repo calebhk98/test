@@ -1,5 +1,7 @@
 ## Chapter Fifteen: Twelve
 
+*September 2017 – January 2018*
+
 The forge is a low building past the kitchens, open Thursdays and most of Sunday.
 
 She walks down in the first week of September to have a chisel made and stays the whole afternoon watching a man called Pruitt make it. By October she has a bench in the corner nearest the door, with her own tongs on the rack above it. Four times that month she misses the start of dinner. On the fourth, Sam comes down and stands in the doorway with his coat on. He waits about six minutes before she puts the work down. Then she talks at him the whole way back across the grass, sleeves still rolled, a burn on the inside of her wrist she has not shown anybody.

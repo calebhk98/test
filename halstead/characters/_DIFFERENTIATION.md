@@ -187,9 +187,9 @@ Verified in the text. These are not "two characters sound similar", which is fin
 are places where the same words appear twice, or where one character performs another's
 established move, which reads as an error rather than as a shared culture.
 
-1. `CHAPTERS_23_30_v2.md:465` and `:468` — Kavi and Ruth say the identical six words back
+1. `chapters/32_the_money.md:61` and `:468` — Kavi and Ruth say the identical six words back
    to back, "thats a person getting older."
-2. `CHAPTERS_23_30_v2.md:844` and `:847` — Ruth and Eli, "thats the only thing we have."
+2. `chapters/35_nine_minutes.md:78` and `:847` — Ruth and Eli, "thats the only thing we have."
 3. `13_ten_pages.md` — Sam asks "Why ten?" and "Why a minute?", which is Kavi's
    mechanism-interrogation move in Sam's mouth.
 4. Meg and Dave both use exact-phrase repetition under stress. Assign it to Meg

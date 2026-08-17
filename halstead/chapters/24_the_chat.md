@@ -1,5 +1,7 @@
 ## Chapter Twenty-Four: The Chat
 
+*September 2023*
+
 The chat is nine years old. They wrote the encryption themselves at thirteen, mostly so they could arrange getting out of the building without a teacher reading it, and none of them has ever used anything else.
 
 

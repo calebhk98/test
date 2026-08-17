@@ -8,7 +8,7 @@ The clinician who diagnoses Chloe's depression at seven: twenty-five years into 
 
 ## Voice in one paragraph
 
-She interviews in a fixed, level cadence: "she asks it in exactly the same voice she asked the first one" (chapters/08_the_asking.md:23), working backward through a strict protocol order. Her most characteristic line is "'I'm sure it was, but I'm asking anyway.'" (chapters/08_the_asking.md:37), polite agreement stapled directly to a refusal to skip a single step of the protocol, her entire method in one sentence.
+She interviews in a fixed, level cadence: "she asks it in exactly the same voice she asked the first one" (chapters/08_the_asking.md:25), working backward through a strict protocol order. Her most characteristic line is "'I'm sure it was, but I'm asking anyway.'" (chapters/08_the_asking.md:39), polite agreement stapled directly to a refusal to skip a single step of the protocol, her entire method in one sentence.
 
 ## Dials
 
@@ -26,8 +26,8 @@ She interviews in a fixed, level cadence: "she asks it in exactly the same voice
 ## Signature — theirs alone
 
 Marks the moment that matters with the pen rather than a line:
-- "Dr. Ammons stops writing and puts the pen down flat on top of the pad." (chapters/08_the_asking.md:29)
-- "'It was hard,' she says, and Dr. Ammons writes that down, underlines part of it, and doesn't ask her one more question for the rest of the hour." (chapters/08_the_asking.md:47)
+- "Dr. Ammons stops writing and puts the pen down flat on top of the pad." (chapters/08_the_asking.md:31)
+- "'It was hard,' she says, and Dr. Ammons writes that down, underlines part of it, and doesn't ask her one more question for the rest of the hour." (chapters/08_the_asking.md:49)
 
 ## Would they say this?
 

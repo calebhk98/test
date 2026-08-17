@@ -46,9 +46,9 @@ Confronted directly ("That's it? That's all you've got for me?") she doesn't sof
 ## Subjects and schedule
 Runs the block-one compulsory self-defence hour daily from age ten, and the ten-on-one drill that starts in January of that year and never stops.
 
-**Best at:** converting a felt danger into an exact, defensible number. (chapters/13_ten_pages.md:43, 47)
+**Best at:** converting a felt danger into an exact, defensible number. (chapters/13_ten_pages.md:45, 47)
 **Worst at:** patience with paperwork, she files the minimum required and no more, and everyone on staff knows to chase her for it.
-**Favourite, and why:** the ten-on-one itself over the earlier one-on-one groundwork, the only drill she's given an extended, unprompted justification for, twice. (chapters/13_ten_pages.md:43-47)
+**Favourite, and why:** the ten-on-one itself over the earlier one-on-one groundwork, the only drill she's given an extended, unprompted justification for, twice. (chapters/13_ten_pages.md:45-47)
 **Least favourite:** the annual staff self-defence refresher, which she's required to run for the other teachers and finds close to pointless, most of them will never need it and she says so, once a year, to the same unimpressed audience.
 **The one she's secretly proud of:** every student who ever comes back to thank her years later understanding the numbers were never about the fight, she's had exactly three of those visits in her time at Halstead and remembers every word of each one.
 **What she'd teach if she could teach anything else:** logistics, she has, more than once, redesigned the school's own emergency evacuation numbers in her head just from watching a drill go wrong, and mentioned it to Sinclair, who took the suggestion and used it.
@@ -58,7 +58,7 @@ Runs the block-one compulsory self-defence hour daily from age ten, and the ten-
 Kowalczyk held her national judo team's roster spot for eleven straight years and still competes in the masters division, a fact the students would never guess from watching her hold a clock. The national federation's stipend never covered more than her own training costs. Halstead's offer added full healthcare coverage for her mother in Poland, whose condition needs a specialist the federation's insurance never reached, and that is the one line in the contract that actually decided it. She still sends money home besides. Lives on campus in a small apartment directly above the mat room, chosen deliberately so the equipment is never more than a flight of stairs from her hands. Unmarried, no children. Visits Poland every other summer; the rest is spent training on campus, alone, harder than she trains any student. Her father coached wrestling in a state sports school; she grew up on a mat before she grew up anywhere else.
 
 ## Body
-Compact, dense, moves with total economy, nothing wasted, no gesture that isn't doing a job. Hands are always occupied with something else while she talks, shelving wraps, holding a clock, the one physical habit the text actually gives her. (chapters/18_fifteen.md:87, chapters/13_ten_pages.md:39) Keeps her eyes on the board rather than the speaker in at least one exchange. (chapters/17_fourteen.md:57) Wears the same training clothes every day regardless of the block she's teaching. Eats large, plain meals, fast, standing at the counter of the staff kitchen rather than sitting. Sleeps little and trains at hours nobody else on staff is awake for.
+Compact, dense, moves with total economy, nothing wasted, no gesture that isn't doing a job. Hands are always occupied with something else while she talks, shelving wraps, holding a clock, the one physical habit the text actually gives her. (chapters/18_fifteen.md:89, chapters/13_ten_pages.md:41) Keeps her eyes on the board rather than the speaker in at least one exchange. (chapters/17_fourteen.md:59) Wears the same training clothes every day regardless of the block she's teaching. Eats large, plain meals, fast, standing at the counter of the staff kitchen rather than sitting. Sleeps little and trains at hours nobody else on staff is awake for.
 
 ## Personality off the page
 Off the mat, colleagues say she doesn't perform a reaction she doesn't have, and leave it there. Bored: physically restless, will find something to move or lift rather than sit still. Wrong: corrects herself instantly and moves on, same as she does with a student. Praised: brushes it off toward the drill itself, never the compliment. Losing: at the annual staff shoot against Bell, she loses cheerfully and immediately starts explaining what she'd change. At 2am, awake, she's usually training, insomnia solved with movement rather than fought with rest. A free Saturday is spent teaching herself something new and physical, currently welding, badly, at Pruitt's forge on a day it isn't open to students. Finds funny in others: false modesty about a real skill, she has no patience for it and no patience for hiding one either.
@@ -70,10 +70,10 @@ Wants, unspoken: for at least one of her students to actually need what she taug
 Drinks strong tea, no sugar, out of a chipped mug that's been hers for a decade. Handwriting is blocky and fast, mostly numbers, times, counts, scores, with almost no prose in it at all. Her apartment holds almost nothing beyond training equipment and one photograph of her father's old gym. Money: sends most of it home besides what the healthcare benefit already covers, spends almost nothing on herself. Superstition: retapes her own wraps the same way every single time, in the same order, regardless of how many times she's told a class it doesn't matter. On a phone: uses it only for calls home, ignores everything else. First thing every morning: trains, alone, before the first student arrives.
 
 ## Would do
-- Reframe a student's falling numbers as a fact about the world getting harder, unprompted. (chapters/18_fifteen.md:87)
-- Predict a future change in performance years ahead and say so plainly. (chapters/18_fifteen.md:87)
-- Answer a real question fully while doing something else with her hands. (chapters/18_fifteen.md:87)
-- Run the clock exactly as stated, no leniency for a bad round. (chapters/13_ten_pages.md:47)
+- Reframe a student's falling numbers as a fact about the world getting harder, unprompted. (chapters/18_fifteen.md:89)
+- Predict a future change in performance years ahead and say so plainly. (chapters/18_fifteen.md:89)
+- Answer a real question fully while doing something else with her hands. (chapters/18_fifteen.md:89)
+- Run the clock exactly as stated, no leniency for a bad round. (chapters/13_ten_pages.md:49)
 - Hold the same rule for the whole room regardless of ability spread.
 - Redesign an emergency procedure in her head just from watching a drill go wrong, and hand the fix to a colleague.
 - Send money home every month on top of what her own benefits already cover.
@@ -81,18 +81,18 @@ Drinks strong tea, no sugar, out of a chipped mug that's been hers for a decade.
 
 ## Would never
 - Tell a student their falling number is their own fault when it's actually the field getting harder.
-- Soften "you're not getting worse" with false comfort about winning. (chapters/18_fifteen.md:87)
+- Soften "you're not getting worse" with false comfort about winning. (chapters/18_fifteen.md:89)
 - Give a passing grade to an outcome that didn't meet the drill's actual terms, the same standard applied to everyone, not a verdict on the child.
 
 ## Relationships
-- **Chloe**, corrects her stance early and, years later, is the one Chloe corners in a doorway to demand a real answer, and gets one. (chapters/13_ten_pages.md:35, chapters/18_fifteen.md:81-87)
-- **Sam**, comes up once, secondhand, complaining that "she said a minute," a rare moment of a student pushing back on her outside her earshot. (chapters/13_ten_pages.md:55)
+- **Chloe**, corrects her stance early and, years later, is the one Chloe corners in a doorway to demand a real answer, and gets one. (chapters/13_ten_pages.md:37, chapters/18_fifteen.md:83-87)
+- **Sam**, comes up once, secondhand, complaining that "she said a minute," a rare moment of a student pushing back on her outside her earshot. (chapters/13_ten_pages.md:57)
 - **Sinclair**, the colleague she actually talks logistics with, and whose evacuation numbers she's improved at least once.
 - **Bell**, the one she loses to, cheerfully, at the annual staff shoot, and immediately starts coaching.
 
 ## Likes, dislikes, habits
-- Explains a rule as a calculation rather than a principle. (chapters/13_ten_pages.md:43, 47)
-- Keeps doing an unrelated physical task while delivering a substantive answer. (chapters/18_fifteen.md:87)
+- Explains a rule as a calculation rather than a principle. (chapters/13_ten_pages.md:45, 47)
+- Keeps doing an unrelated physical task while delivering a substantive answer. (chapters/18_fifteen.md:89)
 - Likes a student who comes back years later to say it worked.
 - Dislikes false modesty about a real skill.
 - Trains harder alone than she ever asks of a student.
@@ -100,7 +100,7 @@ Drinks strong tea, no sugar, out of a chipped mug that's been hers for a decade.
 ## Facts a rewriter needs
 Full name Bogumiła Kowalczyk, goes by "Bo" with the very few adults who'd use it. Students call her "Kowalczyk" only, nobody under eighteen uses a staff member's first name at Halstead. Former and current top-level competitive combat-sport athlete; Halstead's offer beat any national federation stipend she'd seen, and the deciding factor was full healthcare coverage for her mother in Poland. Teaching is a handful of hours a week; her own training and competition is the rest of her time, run out of the school. Signed the standard staff non-disclosure agreement. Unmarried. Teaches self-defence and the ten-on-one drill from at least age 10 through at least age 15.
 
-**Gender, confirmed feminine in the manuscript.** The text uses feminine pronouns for Kowalczyk in three separate chapters: chapters/13_ten_pages.md:39 ("her hand"), chapters/17_fourteen.md:57 ("her eyes"), chapters/18_fifteen.md:87 ("her toes... she talks"). No "he"/"his" instance exists anywhere in the manuscript itself. SYNOPSIS_CHARACTERS_TIMELINE.md ("Male") and CURRICULUM_GRID.md ("he never says it") are both outliers against a manuscript that is internally consistent, three times, three chapters; both reference documents should be corrected to match the manuscript.
+**Gender, confirmed feminine in the manuscript.** The text uses feminine pronouns for Kowalczyk in three separate chapters: chapters/13_ten_pages.md:41 ("her hand"), chapters/17_fourteen.md:59 ("her eyes"), chapters/18_fifteen.md:89 ("her toes... she talks"). No "he"/"his" instance exists anywhere in the manuscript itself. SYNOPSIS_CHARACTERS_TIMELINE.md ("Male") and CURRICULUM_GRID.md ("he never says it") are both outliers against a manuscript that is internally consistent, three times, three chapters; both reference documents should be corrected to match the manuscript.
 
 ## Known problems
 - The gender label conflict, two reference documents say male, the manuscript says female throughout. Resolved above in the manuscript's favor; both reference documents need fixing.

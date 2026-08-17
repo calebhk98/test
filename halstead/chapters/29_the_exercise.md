@@ -1,5 +1,7 @@
 ## Chapter Twenty-Nine: The Exercise
 
+*February 2024*
+
 The exercise runs four days and Sam is on the receiving end of most of it.
 
 

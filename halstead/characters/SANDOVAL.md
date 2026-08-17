@@ -4,7 +4,7 @@ Lead researcher on an internal paper Chloe contributes to, and wants to be exact
 
 **First name:** Elena, never used by anyone at the school under eighteen, see Facts.
 **Age span (in the text):** Chloe age 15, one appearance; referenced again anonymously at Chloe's age ~20-21 | **MBTI:** INFJ (writing aid, not a claim) | **IQ:** reader estimate, mid 150s
-**Appears in:** chapters/18_fifteen.md (named); CHAPTERS_23_30_v2.md, "Chapter Twenty-Five: Cleared" (unnamed, "the lead researcher")
+**Appears in:** chapters/18_fifteen.md (named); chapters/30_cleared.md (unnamed, "the lead researcher")
 **Speaks:** 3 quoted turns, all in one scene, in chapters/18_fifteen.md.
 
 ## Voice in one paragraph
@@ -46,7 +46,7 @@ Given the choice between a legal instrument (an NDA) and a personal one (a reque
 ## Subjects and schedule
 Not classroom faculty in the ordinary sense, she's lead researcher on an internal paper and supervises Chloe's lab placement inside the block-two elective structure, the same slot that later covers "advanced lab work" for the oldest students on CURRICULUM_GRID.md.
 
-**Best at:** naming a structural risk precisely and putting its actual cost into words rather than leaving it implied. (chapters/18_fifteen.md:137)
+**Best at:** naming a structural risk precisely and putting its actual cost into words rather than leaving it implied. (chapters/18_fifteen.md:139)
 **Worst at:** delegating anything she considers ethically load-bearing, she reads every NDA the lab uses herself, personally, before it goes to anyone, which slows her team down and she does it anyway.
 **Favourite, and why:** the moment a junior contributor's small observation turns out to be the thing that unblocks a stuck result, she's built her whole lab culture around noticing this quickly and saying so, which is what happens with Chloe's contribution.
 **Least favourite:** the compliance paperwork that comes with running a well-funded lab, which she reads more carefully than most of her colleagues do rather than less.
@@ -58,7 +58,7 @@ Not classroom faculty in the ordinary sense, she's lead researcher on an interna
 Sandoval's lab runs an instrument that took her old department three grant cycles to fund and never got, and other labs working the same problem cite her group's papers before their own. Halstead bought the instrument outright and gave her the building it sits in; teaching, in her case supervising a handful of student placements a year, is a small, contracted piece of a week otherwise spent running that lab. Keeps two residences: an apartment on campus near the lab building for the months she's mid-project, and a small apartment in the nearest city for the stretches she needs actual distance from the work. Divorced; no children, the marriage ended, by her own account to the one colleague who's asked, over the amount of herself the research took, which she doesn't regret and doesn't recommend either. Grew up the daughter of two academics, at a house where a dinner-table disagreement about evidence was treated as entertainment rather than conflict.
 
 ## Body
-Mid-forties, precise in her movements the way some people are precise in speech, nothing rushed, nothing wasted. Carries a folder, shifts it between arms during a conversation, and is the one teacher on this list who stops walking to deliver an important line rather than saying it in motion. (chapters/18_fifteen.md:133, 137) Dresses simply and the same way regardless of setting, lab and hallway alike. Eats irregularly when deep in a project, then normally once it clears, a pattern the rest of her lab has learned to read as a schedule indicator. Sleeps badly during a live project and completely normally otherwise, with almost no middle ground between the two states.
+Mid-forties, precise in her movements the way some people are precise in speech, nothing rushed, nothing wasted. Carries a folder, shifts it between arms during a conversation, and is the one teacher on this list who stops walking to deliver an important line rather than saying it in motion. (chapters/18_fifteen.md:135, 137) Dresses simply and the same way regardless of setting, lab and hallway alike. Eats irregularly when deep in a project, then normally once it clears, a pattern the rest of her lab has learned to read as a schedule indicator. Sleeps badly during a live project and completely normally otherwise, with almost no middle ground between the two states.
 
 ## Personality off the page
 Precise almost to a fault, correcting her own phrasing mid-argument even when the imprecision would have helped her case is the clearest personality signal available: someone who'd rather be exactly right than persuasive. Off the page, this extends into a reputation among her own team for reading every document herself rather than trusting a summary. Bored: rare, and when it happens she reads something completely unrelated to her field, on purpose, as a reset. Wrong: corrects herself immediately and states the correction plainly, matching the flat register the whole staff shares. Praised: accepts it briefly, then redirects credit toward whoever actually did the work. Losing: doesn't come up often; the closest thing on record is a long-running technical disagreement with a rival lab that she still, by her own account, enjoys having. At 2am, mid-project, she's usually still working; otherwise, asleep like anyone else. A free Saturday, when the work allows it, is spent completely away from campus, in the city apartment, doing nothing related to the lab at all. Finds funny in others: an argument that's airtight on the facts and still somehow loses, she finds this bitterly funny rather than simply frustrating.
@@ -70,10 +70,10 @@ Wants, unspoken: for at least one student who passes through her lab to end up s
 Drinks coffee, strong, made carefully, treated as a small ritual rather than fuel. Handwriting is small, precise, and entirely legible, the handwriting of someone who annotates other people's drafts for a living. Her folder, the one from the corridor scene, holds the draft NDA, her own notes, and nothing extraneous. Money: comfortable, unremarkable, no visible extravagance. Superstition: none she'd claim, though she reads a paper's abstract twice before reading anything else in it, every time, a habit from a career of being burned by an abstract that oversold the result. On a phone: checks it constantly for lab updates, otherwise largely ignores it. First thing every morning, mid-project: the overnight data, before anything else including breakfast.
 
 ## Would do
-- Name a request as a request, explicitly, rather than let a power imbalance stay unspoken. (chapters/18_fifteen.md:133)
-- State exactly who bears the cost of a choice before asking someone else to make it. (chapters/18_fifteen.md:137)
-- Correct her own imprecise wording mid-argument, even when the imprecision would have helped her case. (chapters/18_fifteen.md:137)
-- Decline an easier, more binding legal instrument in favor of a harder, riskier personal one. (chapters/18_fifteen.md:137)
+- Name a request as a request, explicitly, rather than let a power imbalance stay unspoken. (chapters/18_fifteen.md:135)
+- State exactly who bears the cost of a choice before asking someone else to make it. (chapters/18_fifteen.md:139)
+- Correct her own imprecise wording mid-argument, even when the imprecision would have helped her case. (chapters/18_fifteen.md:139)
+- Decline an easier, more binding legal instrument in favor of a harder, riskier personal one. (chapters/18_fifteen.md:139)
 - Let a fifteen-year-old make a genuinely open decision rather than assume the answer for her because of her age.
 - Read every ethically sensitive document her lab produces herself, personally, before anyone else sees it.
 - Redirect credit for a good result toward whoever actually produced it.
@@ -85,15 +85,15 @@ Drinks coffee, strong, made carefully, treated as a small ritual rather than fue
 - Let Chloe find out the actual stakes later, from someone else, rather than stating them herself, first.
 
 ## Relationships
-- **Chloe**, the entire relationship shown; recruits her cooperation with a named, explicit request rather than an instruction, and the scene ends with Chloe agreeing without being pushed into it. (chapters/18_fifteen.md:131-145)
-- **The other three names on the NDA**, referenced only as "the four of us" who bear the consequence if Chloe talks; never individuated, never named. (chapters/18_fifteen.md:137)
+- **Chloe**, the entire relationship shown; recruits her cooperation with a named, explicit request rather than an instruction, and the scene ends with Chloe agreeing without being pushed into it. (chapters/18_fifteen.md:133-145)
+- **The other three names on the NDA**, referenced only as "the four of us" who bear the consequence if Chloe talks; never individuated, never named. (chapters/18_fifteen.md:139)
 - **Amberg**, the one colleague she's discussed a hypothetical ethics-for-teenagers course with, informally, once.
 - **Her own lab team**, reads every sensitive document herself rather than delegate, which her team has come to expect and mostly appreciate.
 
 ## Likes, dislikes, habits
-- States the structural facts of a power imbalance before asking for something inside it. (chapters/18_fifteen.md:133, 145)
-- Corrects imprecise legal framing even while making an emotional appeal. (chapters/18_fifteen.md:137)
-- Carries a folder and shifts it between arms as a physical beat during a conversation. (chapters/18_fifteen.md:133, 137)
+- States the structural facts of a power imbalance before asking for something inside it. (chapters/18_fifteen.md:135, 145)
+- Corrects imprecise legal framing even while making an emotional appeal. (chapters/18_fifteen.md:139)
+- Carries a folder and shifts it between arms as a physical beat during a conversation. (chapters/18_fifteen.md:135, 137)
 - Reads an abstract twice before anything else in a paper.
 - Redirects credit toward whoever actually did the work.
 
@@ -101,8 +101,8 @@ Drinks coffee, strong, made carefully, treated as a small ritual rather than fue
 Full name Dr. Elena Sandoval. Students call her "Dr. Sandoval", nobody under eighteen uses a staff member's first name at Halstead. Leads a lab built around instrumentation her previous department couldn't get funded; Halstead bought the equipment and the building outright, and teaching, supervising a handful of student placements a year, is a small, contracted piece of her week. Signed the standard staff non-disclosure agreement. Divorced, no children. Lead researcher on an internal paper; catches Chloe in a corridor outside a lab in April, when Chloe is fifteen, to ask her not to discuss the project. Four people, including Sandoval, have signed a federal NDA on the project; Chloe has not and is deliberately not asked to.
 
 **Gender, confirmed feminine, and confined to one manuscript scene plus one later, anonymous reference.** Every pronoun attached to Sandoval or "the lead researcher" across the accessible manuscript is feminine, in exactly two places:
-1. chapters/18_fifteen.md:133-145, "She has a folder under one arm," "she shifts the folder to her other arm," and Chloe's own later reflection, "from Sandoval's side."
-2. CHAPTERS_23_30_v2.md:225, "Chapter Twenty-Five: Cleared", Chloe, years later, describing the same figure to an investigator: "The lead researcher. **She** didn't make me sign anything. **She** said everyone else had signed and if I talked it landed on them."
+1. chapters/18_fifteen.md:135-145, "She has a folder under one arm," "she shifts the folder to her other arm," and Chloe's own later reflection, "from Sandoval's side."
+2. chapters/30_cleared.md:60, "Chapter Twenty-Five: Cleared", Chloe, years later, describing the same figure to an investigator: "The lead researcher. **She** didn't make me sign anything. **She** said everyone else had signed and if I talked it landed on them."
 
 No "he" instance exists anywhere in the accessible manuscript files. SYNOPSIS_CHARACTERS_TIMELINE.md's claim of a conflict ("'he' in ch14, 'she' in ch25") does not check out against the provided text, chapters/14_sixty_degrees.md contains no Sandoval material at all (verified by full read); that citation doesn't match any accessible chapter. The manuscript itself is internally consistent, feminine, in the two places she or her role actually appears, and appears only in chapters/18_fifteen.md by name.
 

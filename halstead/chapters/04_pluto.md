@@ -1,5 +1,7 @@
 ## Chapter Four: Pluto
 
+*July 2012*
+
 The first day is awful.  
 The noise is the first thing. There are a hundred-odd kids in the building, most of their parents came with them, and the sound that many people make in a hallway with hard floors is enormous. It isn't the kids doing it, they're mostly standing next to a parent who's holding a folder, looking at the floor, the same as Chloe. There are just so many of them. Out in the lot there are plates from states she has never seen a plate from, including one she had to think about for a second.  
 They line up at a table with the letters of the alphabet taped along the front in blocks. The woman at H through M finds Kessler on her page without going back up it, and hands over a folder with Chloe's name printed on the front, a lanyard with her name on it, a card for the dining hall with her name on that.  

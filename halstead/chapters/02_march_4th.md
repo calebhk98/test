@@ -1,5 +1,7 @@
 ## Chapter Two: March 4th
 
+*March 2012 – June 2012*
+
 The waiting room has a fish tank in it with no fish. Just the water, the little plastic castle, the bubbles coming up in a line from the filter in the corner. Chloe puts both hands on the glass down near the gravel and looks along the bottom of it, in case they are under something, but the gravel is only gravel.  
 "Where are the fish?"  
 "I don't know, honey." Her mom doesn't look up when she says it, so Chloe decides it's a true answer and not the other kind.  

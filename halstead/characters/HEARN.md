@@ -8,7 +8,7 @@ Teaches writing through history, the Federalist Papers, then Burke, and wants ev
 **Speaks:** 4 direct quoted turns (two long, two very short), front-loaded into chapters/13.
 
 ## Voice in one paragraph
-Hearn opens on a fact and adds numbers without commentary: "He wrote fifty-one of the Federalist papers in something like six to eight months. He had a full-time job the entire time he was doing it." (chapters/13_ten_pages.md:5) When he corrects, he corrects the record, not the student, "That's Madison," full stop, class continues. He never calls a paper impressive; the only value judgement in his sample is "It has to be as good. That's the part that's hard." Under siege during the Watch drill his one line is procedural and unbothered: "'that's fine,' puts his glasses back on, and asks the boy nearest him whether he is done with the Burke." Most characteristic construction: what he withholds carries more than what he says, a returned paper with four lines of note reads as a good outcome; one with zero lines is the harshest thing in the book.
+Hearn opens on a fact and adds numbers without commentary: "He wrote fifty-one of the Federalist papers in something like six to eight months. He had a full-time job the entire time he was doing it." (chapters/13_ten_pages.md:7) When he corrects, he corrects the record, not the student, "That's Madison," full stop, class continues. He never calls a paper impressive; the only value judgement in his sample is "It has to be as good. That's the part that's hard." Under siege during the Watch drill his one line is procedural and unbothered: "'that's fine,' puts his glasses back on, and asks the boy nearest him whether he is done with the Burke." Most characteristic construction: what he withholds carries more than what he says, a returned paper with four lines of note reads as a good outcome; one with zero lines is the harshest thing in the book.
 
 ## Dials
 | | |
@@ -23,7 +23,7 @@ Hearn opens on a fact and adds numbers without commentary: "He wrote fifty-one o
 | figurative | none found |
 
 ## Signature, theirs alone
-The returned-paper economy: the amount of ink he spends is inversely proportional to how the grade lands. A B with four lines of substantive note reads as ordinary; a mark with zero lines reads worse than criticism, "She would rather have had three lines telling her it was bad." (chapters/13_ten_pages.md:160)
+The returned-paper economy: the amount of ink he spends is inversely proportional to how the grade lands. A B with four lines of substantive note reads as ordinary; a mark with zero lines reads worse than criticism, "She would rather have had three lines telling her it was bad." (chapters/13_ten_pages.md:162)
 
 ## Would they say this?
 **The Halstead-staff test.** A line belongs to this staff, not to a generic teacher, only if all five hold: no praise word attaches to the child; a correction is a flat statement of fact; the child's age is never a reason for leniency; an extraordinary result is treated as expected, not remarked on; the adult's own error is fixed the same flat way a student's is.
@@ -46,9 +46,9 @@ He never reacts to a student's feelings about a grade on the page, every scene s
 ## Subjects and schedule
 Runs the permanent Writing track from the moment it becomes Hearn's ten pages at age ten, and teaches it through history, Hamilton first, then Madison, then Burke, one author at a time, never returning to a finished one.
 
-**Best at:** teaching a student to find where their own argument hedges. (chapters/14_sixty_degrees.md:149)
+**Best at:** teaching a student to find where their own argument hedges. (chapters/14_sixty_degrees.md:151)
 **Worst at:** small talk, staff dinners with him are famously quiet unless someone brings up a book.
-**Favourite, and why:** Hamilton, assigns him first, puts his output rate on the board unprompted, with visible if flat care. (chapters/13_ten_pages.md:5-7)
+**Favourite, and why:** Hamilton, assigns him first, puts his output rate on the board unprompted, with visible if flat care. (chapters/13_ten_pages.md:7-7)
 **Least favourite:** the annual parents' evening, which he attends because it's required and answers every question with the shortest true sentence available.
 **The one he's secretly proud of:** Chloe's B on the area-bombing essay, not because it was good, but because she took it, understood exactly why, and never once asked him to reconsider it. He keeps that paper in a folder separate from the others.
 **What he'd teach if he could teach anything else:** a course on how a lie gets built into a news story, one paragraph at a time, the closest thing to a second passion in his own published work.
@@ -58,7 +58,7 @@ Runs the permanent Writing track from the moment it becomes Hearn's ten pages at
 Hearn wrote the monograph on Federalist-era rhetorical strategy that two graduate seminars still assign, and a journalist who covers Congress has credited his framework, in print, for how she reads a floor speech. That's the work the school found him for. Teaching ten-year-olds is a small, contractual slice of his week, and he marks a fourth-grader's essay with the same pen he uses on his own manuscript drafts. Lives alone, off campus, in a small rented house in the nearest town, a ten-minute drive he makes in an old sedan that runs perfectly and looks terrible. Widower; his wife died some years before the manuscript's timeline, of a long illness he never discusses at school. No children. Keeps five newspaper subscriptions, physical, delivered, and reads all of them cover to cover before the day starts, a habit that goes back decades. Was married thirty years to a woman who edited alongside him for most of it, and the habit of reading her drafts before print is the same motion, now applied to a fourteen-year-old's essay on tariffs.
 
 ## Body
-Small and gray, per the text, the manuscript's own description, kept exactly. (chapters/13_ten_pages.md:3) Late sixties, thin, stooped slightly from a lifetime bent over a desk or a notebook. Wears glasses he takes off and puts back on as a scene-closing beat. (chapters/14_sixty_degrees.md:221) Dresses in the same three cardigans in rotation, unremarked by anyone, mended rather than replaced. Eats lunch alone, at his desk, a sandwich he makes himself every morning before the newspapers. Sleeps badly, has for years, and reads through most of it rather than fighting it.
+Small and gray, per the text, the manuscript's own description, kept exactly. (chapters/13_ten_pages.md:5) Late sixties, thin, stooped slightly from a lifetime bent over a desk or a notebook. Wears glasses he takes off and puts back on as a scene-closing beat. (chapters/14_sixty_degrees.md:223) Dresses in the same three cardigans in rotation, unremarked by anyone, mended rather than replaced. Eats lunch alone, at his desk, a sandwich he makes himself every morning before the newspapers. Sleeps badly, has for years, and reads through most of it rather than fighting it.
 
 ## Personality off the page
 Constant volume in the text extends naturally into a constant temperament everywhere else. Colleagues describe him, privately, as the easiest person on staff to disagree with, because he never raises the stakes of the disagreement. Bored: doesn't show it, reads instead. Wrong: corrects himself exactly the way he corrects a student, flatly, with the fix in the same sentence. Praised: deflects immediately to the work itself. Losing an argument: concedes the specific point without conceding the larger position, the same move he uses on students. At 2am he's usually still reading. A free Saturday is the same five newspapers, slower, with real coffee instead of the school's. Finds genuinely funny: precise, deadpan understatement, a flat, well-timed line lands with him every time, though he'd never say so out loud.
@@ -70,11 +70,11 @@ Wants, unspoken: to see one student, just one, write something that would surviv
 Drinks tea, not coffee, weak, with nothing in it. Handwriting is small and exact, the same hand whether he's marking an essay or writing a grocery list. His desk holds exactly what's needed and nothing decorative, no photographs, no mementos, which colleagues have noticed and nobody asks about. Money: spends almost nothing beyond the newspapers and the house, gives the rest to a scholarship fund in his late wife's name. Superstition: reads the first line of a new stack of papers before he lets himself read anything else that morning, a habit from decades of reading a lede before anything else. On a phone: barely uses one, keeps it off during the school day, checks it once in the evening. First thing every morning: the newspapers, before the sandwich, before anything else.
 
 ## Would do
-- Grade a technically correct paper down for not doing the harder job actually asked. (chapters/13_ten_pages.md:9, 15)
+- Grade a technically correct paper down for not doing the harder job actually asked. (chapters/13_ten_pages.md:11, 15)
 - Let silence do more work than a sentence would.
-- Move a student to a harder author the moment they've earned it. (chapters/13_ten_pages.md:180)
-- Hold the same standard for a fourteen-thousand-word essay as a ten-page one. (chapters/14_sixty_degrees.md:149)
-- Keep teaching through a genuine crisis without raising his voice. (chapters/14_sixty_degrees.md:221)
+- Move a student to a harder author the moment they've earned it. (chapters/13_ten_pages.md:182)
+- Hold the same standard for a fourteen-thousand-word essay as a ten-page one. (chapters/14_sixty_degrees.md:151)
+- Keep teaching through a genuine crisis without raising his voice. (chapters/14_sixty_degrees.md:223)
 - Keep a student's B paper in a separate folder because it mattered to him.
 - Read five newspapers before breakfast, every day, without fail.
 - Concede a specific point in an argument while holding his larger position.
@@ -82,17 +82,17 @@ Drinks tea, not coffee, weak, with nothing in it. Handwriting is small and exact
 ## Would never
 - Praise length, effort, or ambition on its own.
 - Raise or lower his volume, under any provocation.
-- Lower a grade for a well-argued position he happens to disagree with, Chloe's B is for hedging, not for the position she took. (chapters/14_sixty_degrees.md:149)
+- Lower a grade for a well-argued position he happens to disagree with, Chloe's B is for hedging, not for the position she took. (chapters/14_sixty_degrees.md:151)
 
 ## Relationships
 - **Chloe**, the primary channel; pushes her from competent to actually good by refusing to grade effort or length, and keeps her B essay in a private folder.
-- **Theo**, receives the identical zero-note treatment the same week and reacts completely differently; the difference is Theo's, not a change in Hearn. (chapters/13_ten_pages.md:162)
+- **Theo**, receives the identical zero-note treatment the same week and reacts completely differently; the difference is Theo's, not a change in Hearn. (chapters/13_ten_pages.md:164)
 - **Amberg**, the one colleague he actually trades ideas with, dryly, over a shared staff table.
 - **Sandoval**, would, if they ever discussed it, disagree about whether silence is kindness; the manuscript never puts them in a scene together.
 
 ## Likes, dislikes, habits
-- Marks quality over quantity or effort, explicitly. (chapters/14_sixty_degrees.md:149)
-- Withholds notes as a form of feedback. (chapters/13_ten_pages.md:158-160)
+- Marks quality over quantity or effort, explicitly. (chapters/14_sixty_degrees.md:151)
+- Withholds notes as a form of feedback. (chapters/13_ten_pages.md:160-160)
 - Likes precise, deadpan understatement in other people.
 - Reads five physical newspapers a day, cover to cover.
 - Keeps a private folder of the work that mattered most to him.
@@ -101,7 +101,7 @@ Drinks tea, not coffee, weak, with nothing in it. Handwriting is small and exact
 Full name Walter Hearn. Students call him "Mr. Hearn" or "Hearn", nobody under eighteen uses a staff member's first name at Halstead. Historian of the founding period, actively publishing scholarly work on Federalist-era political argument; Halstead recruited him with a compensation package well beyond an academic salary and teaching is a handful of hours a week, the rest of his time his own research on the school's resources. Signed the standard staff non-disclosure agreement. Widower, no children. Teaches writing/rhetoric through history: Federalist Papers, then Burke; ten pages a week. Male per the text, undisputed.
 
 ## Known problems
-- Most of his reasoning ("the third page... doing the work of the first six," chapters/13_ten_pages.md:29) is reported in narration rather than quoted directly, a rewriter drawing on his voice has only the four quoted turns above to work from verbatim.
+- Most of his reasoning ("the third page... doing the work of the first six," chapters/13_ten_pages.md:31) is reported in narration rather than quoted directly, a rewriter drawing on his voice has only the four quoted turns above to work from verbatim.
 - Home, Body, Interior life, and The small stuff close a genuine gap the manuscript leaves; none of it contradicts the page.
 
 ## Do not confuse with

@@ -57,7 +57,7 @@ Runs the forge, a block-two elective, ungraded, unrecorded, chosen freely and dr
 Three museum conservation departments and a shipwright's yard on the coast call Pruitt when a piece of pre-1900 ironwork needs work nobody else will take on, and he takes about a dozen of those commissions a year. Halstead's offer paid for the commissions he was already turning away and added a forge with no client deadlines attached. Teaching is a handful of hours a week; the rest of his time is that commissioned work, done in the same building the students use on Thursdays. Lives on campus, in the forge building itself, a room in the back he's fitted out properly rather than a cot, because he's there so often it made no sense to live anywhere else. Widowed some years back; the forge, by his own account to the one person who's ever asked directly, Sinclair, once, is simply where he'd be anyway. No children. Doesn't leave campus for anything resembling a vacation; "summer" changes nothing about his schedule, his own commissions run year-round.
 
 ## Body
-Sixties, heavyset through the shoulders and forearms in the specific way of someone who has swung a hammer for a living, hands scarred and burned in a dozen small old places. Carries an armful of bar stock while walking through the shop, the one physical habit the text actually gives him. (chapters/15_twelve.md:7) Wears the same leather apron every single day, replaced only when it finally fails rather than on any schedule. Eats simply, alone, usually standing at the same bench he works at. Sleeps early and wakes before dawn out of decades of habit.
+Sixties, heavyset through the shoulders and forearms in the specific way of someone who has swung a hammer for a living, hands scarred and burned in a dozen small old places. Carries an armful of bar stock while walking through the shop, the one physical habit the text actually gives him. (chapters/15_twelve.md:9) Wears the same leather apron every single day, replaced only when it finally fails rather than on any schedule. Eats simply, alone, usually standing at the same bench he works at. Sleeps early and wakes before dawn out of decades of habit.
 
 ## Personality off the page
 Doesn't treat a conversation as an event worth stopping for, this reads less as unconcern and more as total confidence that the correction will land regardless of ceremony, a habit built over decades of working alongside people too busy to stop and talk either. Bored: essentially never, the forge always has something that needs doing, whether it's a student's project or his own commissioned work. Wrong: fixes his own mistake in front of students without remark, the same flatness he extends to theirs. Praised: shrugs it off entirely, uninterested in the compliment. Losing: doesn't compete, has no visible stake in anything except whether the metal is right. At 2am, if awake, he's usually already in the forge, work has simply absorbed the hours other people spend sleeping. A free Saturday doesn't really exist for him; Sundays are forge days regardless. Finds funny in others: nothing much registers as funny to him, though he's been seen to almost-smile at a student's genuine, unembarrassed swearing when a piece goes wrong.
@@ -70,26 +70,26 @@ Drinks black coffee, strong, reheated more than once, doesn't seem to notice or 
 
 ## Would do
 - Correct one specific, checkable technical fault and nothing more.
-- Let a student work out what a correction means without explaining it. (chapters/15_twelve.md:11)
-- Leave a full month of a new student's presence unremarked before saying a single word to her. (chapters/15_twelve.md:7)
-- Run the forge off a shared whiteboard rather than personal oversight. (chapters/15_twelve.md:7)
+- Let a student work out what a correction means without explaining it. (chapters/15_twelve.md:13)
+- Leave a full month of a new student's presence unremarked before saying a single word to her. (chapters/15_twelve.md:9)
+- Run the forge off a shared whiteboard rather than personal oversight. (chapters/15_twelve.md:9)
 - Notice, silently, which students keep coming back after being ignored, and count that as the real test.
 - Show a student who wants pure decoration toward the pottery studio, kindly.
 - Fix his own mistake in front of a class without remark, the same way he corrects theirs.
 
 ## Would never
-- Praise a finished piece out loud, the one compliment Chloe's work receives in the text belongs to a different, unnamed bench-mate, not to him. (chapters/15_twelve.md:23)
+- Praise a finished piece out loud, the one compliment Chloe's work receives in the text belongs to a different, unnamed bench-mate, not to him. (chapters/15_twelve.md:25)
 - Stop what he's doing to watch a correction register.
 - Comment on four years of unrewarded, unrecorded work, his total spoken output across that span is two sentences, both purely technical.
 
 ## Relationships
 - **Chloe**, the only person he's shown speaking to directly, twice, four years apart, both corrections; he clocked her staying past the first month as the real signal that she belonged there.
-- **The other workers at the forge**, described only as a group who "work around her and leave her to it" for her first month; no individual named. (chapters/15_twelve.md:7)
+- **The other workers at the forge**, described only as a group who "work around her and leave her to it" for her first month; no individual named. (chapters/15_twelve.md:9)
 - **Sinclair**, the one person who's ever asked him a personal question and gotten a real answer.
 
 ## Likes, dislikes, habits
-- Runs the forge off a whiteboard with names and stock levels, not personal oversight. (chapters/15_twelve.md:7)
-- Leaves students to work alongside the regular workers without instruction for a full month before intervening. (chapters/15_twelve.md:7)
+- Runs the forge off a whiteboard with names and stock levels, not personal oversight. (chapters/15_twelve.md:9)
+- Leaves students to work alongside the regular workers without instruction for a full month before intervening. (chapters/15_twelve.md:9)
 - Corrects only what's wrong, says nothing about what's right. (both quoted lines)
 - Likes hinges specifically, for the unforgiving tolerance.
 - Checks a fire's heat by hand before trusting a gauge.
@@ -98,7 +98,7 @@ Drinks black coffee, strong, reheated more than once, doesn't seem to notice or 
 Full name Harlan Pruitt. Students call him "Pruitt" or "Mr. Pruitt", nobody under eighteen uses a staff member's first name at Halstead. Takes about a dozen restoration and conservation commissions a year for museums and a coastal shipwright's yard; Halstead's offer paid for that work outright and gave him a forge with no client deadlines. Teaching is a handful of hours a week; his own commissioned work is the rest of his time, done in the same building. Signed the standard staff non-disclosure agreement. Widower, no children. Runs the forge, open Thursdays and most of Sunday, from at least Chloe's age 12 through at least 16. No grade or formal assessment is ever recorded for the forge, confirmed by the manuscript, not just the reference documents. Male, undisputed in the text.
 
 ## Known problems
-- "In four years the whole of his commentary has been telling her which end to hold" (chapters/19_sixteen.md:107) is narrated summary in indirect speech, not a quotation, there's no scene showing him say that exact phrase. A rewriter should not treat it as recoverable dialogue.
+- "In four years the whole of his commentary has been telling her which end to hold" (chapters/19_sixteen.md:109) is narrated summary in indirect speech, not a quotation, there's no scene showing him say that exact phrase. A rewriter should not treat it as recoverable dialogue.
 - Home, Body, Interior life, and The small stuff close a genuine gap the manuscript leaves; none of it contradicts the page.
 
 ## Do not confuse with

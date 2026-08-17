@@ -1,5 +1,7 @@
 ## Chapter One: Before
 
+*September 2011 – February 2012*
+
 There is a folder about Chloe in the school office. She is six.  
 Her kindergarten teacher started it last year and Mrs. Aldana has been adding to it since September, and Chloe doesn't know about either of those things. What she knows is that her mom is on the phone in the kitchen a lot now, standing at the counter with one hand pressed flat against her forehead.  
 "No, I understand that. I'm just asking what the next step is, because right now nobody has told me there is one, and I've asked twice." She listens for a while, and Chloe hears her switch the phone to her other ear. "Okay, but she's six years old. What does that actually get us that we don't already have? Because from where I'm sitting it's a piece of paper that says the same thing you just said."  

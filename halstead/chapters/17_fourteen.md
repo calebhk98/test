@@ -1,5 +1,7 @@
 ## Chapter Seventeen: Fourteen
 
+*September 2019 – April 2020*
+
 Marksmanship replaces archery in September, and Voss gives them three weeks of dry drill before anything gets loaded.
 
 Nine weapons go on a table and they learn to name every one of them off the profile, from across the room. Then they strip and rebuild four of them by feel, with a cloth laid over their hands, and then they do it that way while Voss stands behind them reading questions off a clipboard and timing the answers.
