@@ -5,7 +5,7 @@
 Ruth spends her first year at MIT believing she has been put in a remedial track.
 
 
-It's the only explanation that works. The first-year sequence covers, in a semester, material she had at eleven. She assumes there's a real sequence somewhere and that she hasn't been given it, and that this is a bureaucratic problem, and she spends most of October trying to find the right office.
+It's the only explanation that works. The first-year sequence covers, in a semester, material she had at eleven. She assumes there's a real sequence somewhere she hasn't been given, a bureaucratic problem, and spends most of October trying to find the right office.
 
 
 In November she makes a joke in a study group.
@@ -17,16 +17,16 @@ It's a small one. It needs two things held together and it takes about four seco
 Three people look at her.
 
 
-One of them says "wait, what?" and she explains it, and explaining it kills it, and the group moves on. She spends the walk home working out which part she got wrong.
+One of them says, "wait, what?" and she explains it, and explaining it kills it, and the group moves on. Walking home, she runs it back: the timing, the words, where the four seconds went wrong.
 
 
 In February she asks a study group when they think the course will get past fifth-grade concepts.
 
 
-She isn't being cruel. She has no idea it could be taken that way. A boy called Devansh laughs, because he thinks she's doing a bit, and then he watches her face for a second longer and stops laughing, and the temperature at the table changes and Ruth cannot work out why.
+She isn't being cruel. She has no idea it could be taken that way. A boy called Devansh laughs, because it looks like a bit. Then he watches her face two beats past the laugh and stops. The table goes quiet, and Ruth cannot work out why.
 
 
-She goes home and writes down that MIT tracks students by ability and doesn't advertise it, because that is the explanation that lets everything stay where it is.
+She goes home and writes down that MIT tracks students by ability and doesn't advertise it.
 
 
 ________________
@@ -37,19 +37,19 @@ ________________
 She holds that for about ten months.
 
 
-What eventually breaks it is not a statistic. It's a professor she likes, in office hours, who she is genuinely fond of, and who cannot follow her past the third step of something, and who says so, cheerfully, without embarrassment, and asks her to go back.
+What eventually breaks it is not a statistic. It's a professor she likes, in office hours, who she is genuinely fond of, who cannot follow her past the third step of her reasoning and says so, cheerfully, without embarrassment, before asking her to go back.
 
 
-Ruth walks out and sits on a wall for a long time.
+Ruth walks out and sits on a wall until the light changes twice.
 
 
-She doesn't tell anybody. She goes and finds the numbers instead, over the following months, one at a time, and every one of them says the same thing, and every one of them is worse than the last.
+She doesn't tell anybody. She goes and finds the numbers instead, over the following months, one at a time, and every one of them says the same thing, each worse than the one before.
 
 
 Second language. Reading level. Fractions. She keeps posting them in the chat and watching people make a joke inside a minute and move on.
 
 
-In April she stops posting, because she has understood something and she does not want to be the one who says it.
+In April she stops posting, because she has understood what the numbers add up to and she does not want to be the one who says it.
 
 
 ________________
@@ -96,7 +96,7 @@ ruth: we are not slightly ahead
 ruth: i dont think we're the same kind of thing
 
 
-The chat has nothing in it for a while.
+The chat stays empty until Kavi answers.
 
 
 kavi: how long have you had this

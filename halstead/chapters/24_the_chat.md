@@ -51,10 +51,10 @@ eli: 5
 eli: turning them in now. fingers crossed for 5
 
 
-sam: thats cheating
+sam: youre gaming the count
 
 
-nadia: thats lucky is what that is
+nadia: five in an afternoon is luck, not skill
 
 
 ruth: which one was the cheat
@@ -155,13 +155,13 @@ ________________
 
 
 
-Somebody posts a screenshot of a performance review. Strongest hire in a decade.
+Somebody posts a screenshot of a performance review.
 
 
 ruth: mine says something almost identical
 
 
-kavi: thats a technique
+kavi: standard retention play
 
 
 kavi: you tell people theyre exceptional early so they work harder and dont leave. its in the same chapter as the four percent thing
@@ -193,7 +193,7 @@ ruth: 16 what
 chloe: gigabytes
 
 
-ruth: thats a rounding error
+ruth: sixteen doesnt even compare to what everyone actually runs, chloe
 
 
 chloe: i went back and asked if they had the proper ones out the back and the guy thought i was doing a bit at him
@@ -205,7 +205,7 @@ kavi: whats the storage
 chloe: 1tb
 
 
-sam: so the storage is bigger than the memory, thats normal
+sam: storage beating memory is just how they build them
 
 
 chloe: sam the storage is 1tb. the MEMORY is meant to be 1tb
@@ -249,13 +249,13 @@ chloe: i cant find it
 chloe: doctor hadn't heard of it. asked me to spell it. typed it in and got nothing
 
 
-nadia: hang on
+nadia: gimme a sec, checking
 
 
 nadia: im not finding it either
 
 
-nadia: thats weird, i definitely took that
+nadia: i took it every day for two weeks, it doesnt just stop existing
 
 
 kavi: ill ask
@@ -266,10 +266,10 @@ ________________
 
 
 
-Kavi doesn't come back with anything for four days, and when he does he says he asked and was told it's internal, and Chloe says internal how, and Kavi says he doesn't know, that's the word they used.
+Kavi doesn't come back with anything for four days. When he does, he says he asked and was told it's internal. Internal how, Chloe asks. He doesn't know, that's the word they used.
 
 
-The chat moves on to something else within about ten minutes.
+The chat moves on within about ten minutes.
 
 
 ________________
