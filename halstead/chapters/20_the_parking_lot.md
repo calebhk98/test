@@ -86,7 +86,7 @@ Sam is standing in the middle of them, turning, when they come down off the roof
 
 He finds the third gun on a man who never got to it and takes it apart. Then he goes around and checks all seven.
 
-Ruth does the one who's out. Airway, then breathing, then a hand under the back of his head. She holds an eyelid open and looks. "Concussion. He's fine."
+Ruth does the one who's out. Airway, then breathing, then a hand under the back of his head. She holds an eyelid open and looks, "Concussion. He's fine."
 
 Nadia puts an arm back where it'll sit. Chloe does two of them, ribs, nothing floating, and one who's bitten through his lip.
 

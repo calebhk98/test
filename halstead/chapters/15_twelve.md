@@ -122,7 +122,7 @@ Saturday afternoon is the stock count: four hours, one clipboard between them, e
 
 They count the third shelf three times, and the third count is Ruth's. She stops halfway through it, puts the clipboard down on a crate, and stands looking at the shelf for long enough that Kavi asks her what she is doing. Then she starts counting cases instead of tins, four stacks at a time, with a chalk mark on the shelf edge for every complete twelve. That takes a shelf from forty minutes to nineteen. By the time they finish, it’s time for dinner.
 
-By Christmas she can hold twenty-four seconds in the 10v1, but she is still only ranked 30 out of 90\. She gets to the library about once a week now, because most evenings there are six or seven people in the third floor common room with a game spread over the table and a space at it for her.
+By Christmas she can hold twenty-four seconds in the 10v1, but she is still only ranked thirty out of ninety. She gets to the library about once a week now, because most evenings there are six or seven people in the third floor common room with a game spread over the table and a space at it for her.
 
 ---
 
@@ -266,7 +266,7 @@ The four of them are dressed like a maintenance crew. Dark work trousers, plain 
 
 "That's not an argument, that's an outcome, and besides, they were already inside, so we are losing marks," Ruth says.
 
-"It's still going to be slow," Chloe says, sitting against the wall with her arms around her knees. "Alarm to contact. That's got to be seven, eight minutes. And they were already inside."
+Chloe sits against the wall with her arms around her knees. "It's still going to be slow. Alarm to contact. That's got to be seven, eight minutes. And they were already inside."
 
 "That's the sensors," Kavi says.
 
@@ -282,7 +282,7 @@ Sam calls it in as soon as the last knot is tied. Then they wait, since Sinclair
 
 The first one comes round after about seven minutes.
 
-He's confused for a while, and then he seems to realize that he's tied, and then he sees who tied him and gets very still.
+He's confused for a beat, then realizes he's tied, and goes still when he sees who did it.
 
 "Hi," Ruth says. "You're fine, although you'll feel sick for about an hour."
 
@@ -290,13 +290,13 @@ He doesn't say anything.
 
 "What were you here for?"
 
-He doesn't say anything.
+He looks away.
 
-"Okay." She writes something on her arm and checks his pulse again. "Second floor lab or the server room?"
+"Okay." She writes a dash on her arm and checks his pulse again. "Second floor lab or the server room?"
 
-He doesn't answer, and his face does, and Kavi says "server room" and writes it down.
+He doesn't answer, though his face does; Kavi says "server room" and writes it down.
 
-The third one wakes up about a minute later and is younger and seems to be less good at keeping his face still.
+The third one wakes up about a minute later, younger, less good at keeping his face still.
 
 Then it stops being an interrogation, because Sam has been building up to it for twenty minutes.
 
@@ -306,27 +306,27 @@ Nobody answers him.
 
 "No, I'm actually asking, you don’t have to act like the fake attackers, somebody looked at those and went, yeah, that's the ones." He turns to Kavi. "How long did it take you again?"
 
-"Four seconds of compute."
+Kavi doesn't look up. "Four seconds of compute."
 
-"Four seconds," Sam says.
+"Four seconds," Sam says, like it offends him.
 
 "He's not going to answer you," Ruth says.
 
-"I know he's not supposed to answer me, I’m sure he gets paid based on not talking to us, I'm making a point." Sam sits back. "And another thing, nobody told us, There was nothing on the board. You don't run it at four with nothing on the board, that's not, like, that's not how it goes."
+"I know he's not supposed to answer me, I’m sure he gets paid based on not talking to us, I'm making a point." Sam sits back. "And another thing, nobody told us, there was nothing on the board. You don't run it at four with nothing on the board, that's not, like, that's not how it goes."
 
-“I was enjoying my sleep too” Ruth pipes up. 
+"I was enjoying my sleep too," Ruth pipes up. 
 
-"What do you think we're getting," Sam says, to the man on the floor. "Honestly. What would you give us."
+"What do you think we're getting," Sam says, to the man on the floor. "Honestly. What would you give us?"
 
-The man looks at him for a long moment.
+The man looks at him. His jaw works once.
 
 "I don't know," he says. 
 
-"See, that's a C," Sam says, walking back with his hands up, "That's a C right there."
+"See, that's a C," Sam says, walking back with his hands up. "That's a C right there."
 
-Chloe doesn't say anything for the interrogation. She's sitting against the wall with her arms around her knees, watching the four of them on the floor, and something about it isn't sitting right and she can't find what. She works at it while Sam talks. The bolt cutters are wrong. The boots are wrong. All of it is wrong in the same direction and she can't make the direction mean anything, and she's twelve, and it's four in the morning, and she lets it go.
+Chloe doesn't say anything for the interrogation. She's sitting against the wall with her arms around her knees, watching the four of them on the floor, turning it over without landing on what's wrong. She works at it while Sam talks. The bolt cutters are wrong. The boots are wrong. All of it is wrong in the same direction, and she's twelve, and it's four in the morning, and she lets it go.
 
-Sinclair arrives with two other adults and a trolley.He stops at the corner. He looks at the four men tied along the corridor wall, and at the bags, and at the four kids sitting on the floor near them, and he stands there for a second just watching them."Who's monitoring?"
+Sinclair arrives with two other adults and a trolley. He stops at the corner. He looks at the four men tied along the corridor wall, and at the bags, and at the four kids sitting on the floor near them, and he stands there watching them without moving. "Who's monitoring?"
 
 "Me," Ruth says.
 
@@ -336,7 +336,7 @@ Ruth reads them off her arm.
 
 Sinclair nods. "Grading's in the morning," he says. "Go to bed. Now."
 
-Chloe gets a C the same as Sam. Ruth gets a B minus, which she is unbearable about. Kavi gets a B for the comms and a note about the sensors that he disagrees with in writing, at length, and does not get anywhere with.
+Chloe gets a C the same as Sam. Ruth gets a B minus. She brings it up for a week. Kavi gets a B for the comms and a note about the sensors that he disagrees with in writing, at length, and does not get anywhere with.
 
 The sheet says: intruders inside Building One prior to contact. Response seven minutes fifty against a standard of six. Traceable agent selected. Four personnel deployed where three would have served. Objective established. No capability disclosed.
 
@@ -358,9 +358,9 @@ At Thanksgiving the letter is on the counter before anybody has finished serving
 
 Her father sets down the other dish, sits back, and puts both hands flat on the table. "What were the four of you doing in a kitchen at half eleven?"
 
-"Bread. We were settling something about the bread."
+"Bread. We were settling whether the Wednesday bread is actually better."
 
-"Why are you asking about bread?" He looks at her confused.
+"Why are you asking about bread?" He looks at her, brow creased.
 
 "Everyone says the Wednesday bread's better and it's never been tested, so we tested it." Chloe leans forward on her elbows with her chin up. "It's the same bread. Ruth was right, and Sam owes her a week of chairs."
 
@@ -368,7 +368,7 @@ Her father sets down the other dish, sits back, and puts both hands flat on the 
 
 "Yeah, but I've been signed off on that oven since I was like nine."
 
-Her mother stops with the spoon out over the dish. For a second the only thing moving at that end of the table is the steam. Then she puts the spoon down on the cloth, which she never does.
+Her mother stops with the spoon out over the dish. The only thing moving at that end of the table is the steam. Then she puts the spoon down on the cloth.
 
 "Signed off by who?"
 
@@ -378,7 +378,7 @@ Her father makes a noise into his glass, then puts a hand over his mouth. Her mo
 
 "Four hours of counting tomatoes," her mother says. "That sounds about right to me. You stay in your own room after lights out, Chloe, I don’t care whatever list you're on, you are 12 years old."
 
-"Okay. I'll stay in my room." she sighs.
+"Okay. I'll stay in my room," she sighs.
 
 "Say it like you mean it, please."
 
@@ -394,15 +394,15 @@ Her mother sits down, shakes out her napkin, then puts it flat on her lap.
 
 "Fine as in fine."
 
-"Because you can come home." Her mother reaches across and moves Chloe's water glass about two inches to the left. Nothing else about her moves. "If you want out of that school, you say so and you're out. We drive up Monday, we get your things, and that's the end of it."
+"Because you can come home." Her mother reaches across and moves Chloe's water glass about two inches to the left. Nothing else about her moves. "If you want out of that school, you say so and you're out. We drive up Monday, we get your things, and you're home."
 
 "I don't want out of it, though."
 
 "You're allowed to want out of it."
 
-"I know I'm allowed to." Chloe puts her fork down on the edge of the plate. "I like my school a lot. Plus all my friends are there. And a lot of good classes."
+"I know I'm allowed to." Chloe puts her fork down on the edge of the plate. "I like my school a lot, plus all my friends are there and a lot of good classes."
 
-Her mother looks at her for a moment, then she picks her knife back up and starts eating.
+Her mother holds her look, then picks her knife back up and starts eating.
 
 "What was the good one this term, then?" her father says.
 
