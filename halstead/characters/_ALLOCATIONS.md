@@ -125,15 +125,15 @@ because two sheets independently chose the same one and it had to be undone.
 
 | | surname | source |
 | :-- | :-- | :-- |
-| Chloe, Meg, Dave | Kessler | [text] |
-| Ruth | Aymar | [text] |
-| Sam | Marsh | [invented] |
-| Kavi | Rao | [invented] |
-| Priya | Anand | [invented] |
-| Odile | Vasseur | [invented] |
-| Theo | Langford | [invented] |
+| Chloe, Meg, Dave | Kessler | in the manuscript |
+| Ruth | Aymar | in the manuscript |
+| Sam | Marsh | |
+| Kavi | Rao | |
+| Priya | Anand | |
+| Odile | Vasseur | |
+| Theo | Langford | |
 | Eli | Marsh | [invented — shares a surname with Sam; names repeating across the cast is fine] |
-| Nadia, Fen, Owen, Kayleigh, Bryce | see their sheets | [invented] |
+| Nadia, Fen, Owen, Kayleigh, Bryce | see their sheets | |
 
 ### Given names
 
@@ -157,7 +157,7 @@ assignment and were resolved here.
 | Ammons | Dr. Miriam | |
 | Vance | Laura | |
 | Deb | Deborah Massey | son is Tyler |
-| Prentice | Dr. Benjamin | [text] — the only given name in the book |
+| Prentice | Dr. Benjamin | the only given name in the book |
 | Grandmother | Dorothy Halloran | Meg's mother, so she carries Meg's maiden name |
 | Meg / Dave | Margaret née Halloran / David | |
 
