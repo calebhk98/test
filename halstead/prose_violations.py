@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Validate and summarise the per-chapter prose-rule violation reports.
 
-Ten agents read PROSE_RULES.md and STYLE_RULES.md and audited one chapter each,
-writing prose_violations/<chapter>.jsonl. One JSON object per line, one reported
-violation per object:
+One agent per chapter read PROSE_RULES.md and STYLE_RULES.md and audited its
+chapter, writing prose_violations/<chapter>.jsonl. One JSON object per line, one
+reported violation per object:
 
     {"file": "chapters/04_pluto.md",
      "line": 45,
@@ -27,6 +27,11 @@ claims. So every entry is checked against the chapter on disk before it counts.
 Checks, in order: the JSON parses, every field is present, the cited file
 exists, `quote` appears verbatim in that file, and it appears at or near the
 cited line. `rule` has to be 0 (a STYLE_RULES section) or 1-35.
+
+Chapters 1-20 have a file each under chapters/. Chapters 16-30 are a separate,
+later set of the same numbers and have no per-chapter files: they sit as
+fifteen chapters inside two plain-text exports, so their reports are named
+v2_* and carry a line range checked against V2_RANGES below.
 """
 
 import argparse
@@ -41,6 +46,29 @@ REPORTS = HERE / "prose_violations"
 LINE_SLACK = 3          # a citation may drift by a line or two
 REQUIRED = ("file", "line", "rule", "rule_name", "quote", "why", "suggestion")
 MAX_RULE = 35
+
+# Chapters 16-30 have no per-chapter files. They live as fifteen chapters inside
+# two plain-text exports, so a report names the shared file and its own slice of
+# it. Recording the slices here does two jobs: it bounds each report to its own
+# chapter, which matters because a stray citation would otherwise land silently
+# in a neighbour's text, and it gives the per-1000-words column a denominator.
+V2_RANGES = {
+    "v2_16_the_applications": ("CHAPTERS_16_22_v2.md", 1, 135),
+    "v2_17_the_offer":        ("CHAPTERS_16_22_v2.md", 136, 186),
+    "v2_18_the_first_one":    ("CHAPTERS_16_22_v2.md", 187, 289),
+    "v2_19_the_chat":         ("CHAPTERS_16_22_v2.md", 290, 563),
+    "v2_20_nineteen":         ("CHAPTERS_16_22_v2.md", 564, 698),
+    "v2_21_ten_targets":      ("CHAPTERS_16_22_v2.md", 699, 787),
+    "v2_22_the_file":         ("CHAPTERS_16_22_v2.md", 788, 902),
+    "v2_23_nadia":            ("CHAPTERS_23_30_v2.md", 1, 102),
+    "v2_24_the_exercise":     ("CHAPTERS_23_30_v2.md", 103, 168),
+    "v2_25_cleared":          ("CHAPTERS_23_30_v2.md", 169, 274),
+    "v2_26_ruth":             ("CHAPTERS_23_30_v2.md", 275, 407),
+    "v2_27_the_money":        ("CHAPTERS_23_30_v2.md", 408, 570),
+    "v2_28_the_other_one":    ("CHAPTERS_23_30_v2.md", 571, 621),
+    "v2_29_the_files":        ("CHAPTERS_23_30_v2.md", 622, 769),
+    "v2_30_nine_minutes":     ("CHAPTERS_23_30_v2.md", 770, 876),
+}
 
 
 def norm(t):
@@ -91,15 +119,39 @@ _cache = {}
 
 def chapter_lines(path):
     if path not in _cache:
-        _cache[path] = [norm(l) for l in path.read_text(encoding="utf-8").split("\n")]
+        # utf-8-sig: the two v2 exports carry a byte-order mark on line 1, and
+        # without stripping it a quote cited from that line would never match.
+        raw = path.read_text(encoding="utf-8-sig")
+        _cache[path] = [norm(l) for l in raw.split("\n")]
     return _cache[path]
 
 
-def check(entry, root):
+def chapter_words(root, stem):
+    """Word count for a report's chapter, whether it has its own file or not."""
+    span = V2_RANGES.get(stem)
+    if span:
+        name, lo, hi = span
+        lines = (root / name).read_text(encoding="utf-8-sig").split("\n")
+        return len(" ".join(lines[lo - 1:hi]).split())
+    ch = root / "chapters" / f"{stem}.md"
+    return len(ch.read_text(encoding="utf-8").split()) if ch.is_file() else 0
+
+
+def check(entry, root, stem=None):
     """Return a list of problems. Empty means the entry is usable."""
     bad = [f"missing field: {k}" for k in REQUIRED if k not in entry]
     if bad:
         return bad
+
+    # A v2 report shares its file with up to seven other chapters, so confirm
+    # the citation is in this report's own chapter before anything else.
+    span = V2_RANGES.get(stem)
+    if span:
+        want, lo, hi = span
+        if entry["file"] != want:
+            bad.append(f"file should be {want}, not {entry['file']}")
+        elif not lo <= entry["line"] <= hi:
+            bad.append(f"line {entry['line']} is outside this chapter ({lo}-{hi})")
 
     if not isinstance(entry["rule"], int) or not 0 <= entry["rule"] <= MAX_RULE:
         bad.append(f"rule {entry['rule']!r} is not 0-{MAX_RULE}")
@@ -157,7 +209,7 @@ def main():
                 continue
             if a.rule is not None and entry.get("rule") != a.rule:
                 continue
-            bad = check(entry, a.root)
+            bad = check(entry, a.root, f.stem)
             if bad:
                 problems.append((f.name, i, str(entry.get("quote", ""))[:50], bad))
                 continue
@@ -188,10 +240,7 @@ def main():
 
     if per_chapter:
         print("\nBY CHAPTER")
-        words = {}
-        for stem in per_chapter:
-            ch = a.root / "chapters" / f"{stem}.md"
-            words[stem] = len(ch.read_text(encoding="utf-8").split()) if ch.is_file() else 0
+        words = {stem: chapter_words(a.root, stem) for stem in per_chapter}
         for stem, n in sorted(per_chapter.items()):
             per_k = n / words[stem] * 1000 if words[stem] else 0
             print(f"  {stem:24} {n:>4}   {per_k:>5.1f} per 1000 words")
