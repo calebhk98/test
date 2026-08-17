@@ -69,6 +69,10 @@ DESCRIBES = re.compile(
     r"knew|say(?:s|ing)?|said|thinks?|believes?|assumes?|being|been|prove|"
     r"proved|turns? out)\s+(?:\w+\s+){0,3}$")
 
+# _TEMPLATE.md asks every sheet for a "What they are wrong about" section, so
+# the heading and its opening clause are the structure rather than a verdict.
+SECTION = re.compile(r"^-?\s*What (?:he|she|they)(?:'s| is| are)? wrong about\b", re.I)
+
 
 def sentences(text):
     """Yield (line_no, sentence). Sheets are markdown, so strip the furniture."""
@@ -88,6 +92,8 @@ def scan(path, rules):
         for pattern, label in rules:
             m = re.search(pattern, s, re.I)
             if m and label == "verdict" and DESCRIBES.search(s[:m.start()]):
+                continue
+            if m and label == "verdict" and SECTION.match(s):
                 continue
             if m:
                 hits.append((line_no, label, m.group(0), s))
