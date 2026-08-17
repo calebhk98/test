@@ -49,6 +49,32 @@ def norm(t):
                   .replace("‘", "'").replace("’", "'")).strip()
 
 
+def style_key(name):
+    """Fold an agent's spelling of a STYLE_RULES section into (section, subtype).
+
+    The ten agents wrote the same section as "Automatic-fail narrator
+    constructions", "8. Automatic-fail narrator constructions (Interiority of
+    non-POV characters)" and "Automatic-fail narrator constructions
+    (STYLE_RULES section 8)", among others. Drop the section numbering, keep a
+    parenthesised subtype when it names a real subtype rather than restating
+    the section number, and casefold so the count lands in one row.
+    """
+    name = re.sub(r"^\s*\d+\.\s*", "", name.strip())
+    sub = ""
+    m = re.match(r"^(.*?)\s*\(([^)]*)\)\s*$", name)
+    if m:
+        name, inner = m.group(1), m.group(2).strip()
+        if not re.fullmatch(r"(?i)style[_ ]rules?,?\s*(section)?\s*\d+", inner):
+            sub = cap(inner)
+    return cap(name), sub
+
+
+def cap(s):
+    """Casefold for grouping, then restore a leading capital for display."""
+    s = s.strip().casefold()
+    return s[:1].upper() + s[1:]
+
+
 _cache = {}
 
 
@@ -158,6 +184,17 @@ def main():
         print("\nBY RULE")
         for rule, n in per_rule.most_common():
             print(f"  {rule:>3}  {n:>4}  {rule_names[rule]}")
+
+    # Rule 0 is every STYLE_RULES section at once, so the single line above
+    # says nothing about which of them the manuscript actually breaks. Ten
+    # agents named the same section six different ways, so fold the spellings
+    # together before counting or the largest category looks like six small
+    # ones.
+    style = Counter(style_key(e["rule_name"]) for e in good if e["rule"] == 0)
+    if style:
+        print("\nRULE 0 BROKEN OUT (STYLE_RULES sections)")
+        for (section, sub), n in style.most_common():
+            print(f"       {n:>4}  {section}" + (f" — {sub}" if sub else ""))
 
     return 1 if (problems and a.strict) else 0
 
