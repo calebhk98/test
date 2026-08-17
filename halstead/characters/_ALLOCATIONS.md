@@ -134,4 +134,22 @@ because two sheets independently chose the same one and it had to be undone.
 | Eli | Dorn | [invented, reassigned from Marsh] |
 | Nadia, Fen, Owen, Kayleigh, Bryce | see their sheets | [invented] |
 
-Anyone assigning a new name checks this table first.
+### Given names
+
+Only Prentice has one in the manuscript. All others invented; two collided on first
+assignment and were resolved here.
+
+| | name | note |
+| :-- | :-- | :-- |
+| Sinclair | Marcus | |
+| Whitaker | Alan | reassigned from Marcus |
+| Aldana | Carmen | |
+| Prahl | Diane | |
+| Ammons | Dr. Miriam | |
+| Vance | Laura | |
+| Deb | Deborah Massey | son is Tyler |
+| Prentice | Dr. Benjamin | [text] — the only given name in the book |
+| Grandmother | Dorothy Halloran | Meg's mother, so she carries Meg's maiden name |
+| Meg / Dave | Margaret née Halloran / David | |
+
+Anyone assigning a new name checks both tables first.

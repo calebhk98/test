@@ -1,6 +1,6 @@
-# Marcus Whitaker
+# Alan Whitaker
 
-The federal clearance investigator [surname text; first name Marcus invented]: twenty-one years into a career built on the belief that a respected subject talks faster than a pressured one, and the one outside adult in the whole book who is told the truth and simply writes it down.
+The federal clearance investigator [surname text; first name Alan invented]: twenty-one years into a career built on the belief that a respected subject talks faster than a pressured one, and the one outside adult in the whole book who is told the truth and simply writes it down.
 
 **Age span:** 55 during Chloe's clearance investigation [invented] | **MBTI:** ISTJ (writing aid, not a claim) | **IQ:** not inferable — no cognitive content beyond procedural thoroughness
 **Appears in:** CHAPTERS_23_30_v2.md, Ch25 "Cleared," only.
@@ -43,7 +43,7 @@ Takes a piece of volunteered information, confirms it back flat, then writes —
 
 ## The kindly-and-inadequate test
 
-There isn't a strong failure case for Marcus — his competence and the situation's needs mostly line up. The nearest thing to **kindly-and-inadequate**: he is doing his job correctly inside an investigation whose entire premise — clearing a twenty-year-old raised inside an opaque, unaccountable institution — is downstream of failures years before his file ever landed on his desk. His thoroughness documents accurately; it can't retroactively fix what already happened. A line would be **unkind** — unsupported anywhere in the text — if it treated Chloe's candor as suspicious or pressured her past "I'd want to talk to her first." He does neither.
+There isn't a strong failure case for Alan — his competence and the situation's needs mostly line up. The nearest thing to **kindly-and-inadequate**: he is doing his job correctly inside an investigation whose entire premise — clearing a twenty-year-old raised inside an opaque, unaccountable institution — is downstream of failures years before his file ever landed on his desk. His thoroughness documents accurately; it can't retroactively fix what already happened. A line would be **unkind** — unsupported anywhere in the text — if it treated Chloe's candor as suspicious or pressured her past "I'd want to talk to her first." He does neither.
 
 ## Are they acting like themselves?
 
@@ -115,7 +115,7 @@ Drinks black coffee, refilled from a thermos he brings from home rather than off
 
 ## Facts a rewriter needs
 
-- Full name: Marcus Whitaker [surname text, first name invented]. Age 55 [invented].
+- Full name: Alan Whitaker [surname text, first name invented]. Age 55 [invented].
 - Six years Army CID, twenty-one years federal background investigation, specializing in unconventional-background clearances [invented].
 - Investigation runs seven months, two in-person visits [text]. Clearance granted; Chloe starts her position the following January [text].
 - Confirmed topics covered: Chloe's eleven years at Halstead, her eleven languages (demonstrates three), coursework, an internal law exam with no legal standing, two verified published papers, and a third undisclosed project [text].
@@ -127,4 +127,4 @@ Drinks black coffee, refilled from a thermos he brings from home rather than off
 
 ## Do not confuse with
 
-**Dr. Miriam Ammons.** Both are professionals who write down what Chloe tells them without editorializing. The dividing cue: Ammons interviews a child through a parent and repositions herself to manage that triangle; Marcus interviews an adult directly, one-on-one, with no third party in the room.
+**Dr. Miriam Ammons.** Both are professionals who write down what Chloe tells them without editorializing. The dividing cue: Ammons interviews a child through a parent and repositions herself to manage that triangle; Alan interviews an adult directly, one-on-one, with no third party in the room.

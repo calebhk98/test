@@ -1,127 +1,131 @@
-# The grandmother
+# Dorothy Halloran
 
-Unnamed throughout. The one outside adult in the entire manuscript who is reliably right about anything — and what she is right about, every time, is Chloe's body, never Chloe's achievements.
+Meg's mother [relationship invented — the text does not state which side of the family she's on; this pass commits to maternal, see Facts for the reasoning], full name invented: a retired maternity nurse of thirty-one years, and the only outside observer in the entire manuscript who accurately assesses anything about Chloe.
 
-**Age span:** adult, present across Chloe's childhood and adolescence (Chloe ages 6–15 on the page, plus one appearance at Chloe's graduation around 17–18) | **MBTI:** ESFJ (writing aid, not a claim) | **IQ:** not inferable — nothing in the text shows reasoning beyond direct physical observation
-**Appears in:** chapters/01_before.md, 03_the_letter.md (mentioned only, sends a Christmas card, no scene), 07_the_same_room.md (mentioned only, a phone call and a drive home, no quoted line), 08_the_asking.md (Christmas visit, mentioned only), 11_eight.md, 13_ten_pages.md, 14_sixty_degrees.md, 18_fifteen.md, and CHAPTERS_16_22_v2.md, Ch18 "The First One" (mentioned only, no quoted line — attends the graduation).
-**Speaks:** 8 quoted turns across four chapters (11, 13, 14, 18) — roughly 12 sentences total. One additional line is reported without quotation marks (chapters/01_before.md:97, "well, somebody got grown up this year") — see Known problems in other sheets for this same pattern with minor adults. Never named; always "her grandmother" or "your grandmother."
+**Age span:** 74 across the chapters she appears in [invented] | **MBTI:** ISFJ (writing aid, not a claim) | **IQ:** not inferable — no cognitive content beyond direct physical observation
+**Appears in:** chapters/01_before.md, 03_the_letter.md (mentioned only), 07_the_same_room.md (mentioned only), 08_the_asking.md (mentioned only), 11_eight.md, 13_ten_pages.md, 14_sixty_degrees.md, 18_fifteen.md, and CHAPTERS_16_22_v2.md, Ch18 "The First One" (mentioned only).
+**Speaks:** 8 quoted turns [text] across four chapters (11, 13, 14, 18), roughly 12 sentences total. One additional line is reported without quotation marks (chapters/01_before.md:97).
 
 ## Voice in one paragraph
 
-She talks in short, closed, complete-sentence observations, often finished with a soft tag — "then," "dear," "is it" — that ends the thought rather than opening it further. She is warm and physically demonstrative (takes Chloe's hand and holds it, pats an arm or a hand twice) and reads everything Chloe tells her about her *activities* through an ordinary, small-scale yardstick, consistently getting the magnitude wrong: told Chloe hit an archery target for the first time in October and has done it "a dozen times since," she responds "October... Well, you'll get there, dear. Once in a whole year isn't very much, is it" (chapters/14_sixty_degrees.md) — she has heard "practice" where the actual content was "mastery," and stays there even after being corrected. But her single most characteristic line isn't about anything Chloe says at all — it's something she says about Chloe, to Meg, through a door, not meant for Chloe to hear: "'She's put on weight.' 'I know.' 'She was so thin at Christmas. I didn't want to say anything to you at the time.'" (chapters/11_eight.md) — the one moment in the book where an outside adult looks at Chloe and gets the actual fact right, unprompted, without needing anything explained to her first.
+She talks in short, closed, complete-sentence observations, often finished with a soft tag — "then," "dear," "is it" [text]. Her most characteristic line isn't about anything Chloe says at all — it's said about Chloe, to Meg, through a door, not meant for Chloe to hear: "'She's put on weight.' 'I know.' 'She was so thin at Christmas. I didn't want to say anything to you at the time.'" (chapters/11_eight.md) [text] — the one moment in the book where an outside adult looks at Chloe and gets the actual fact right, unprompted.
 
 ## Dials
 
 | | |
 | :-- | :-- |
-| sentence shape | short, closed declaratives, often closed further with a soft tag word ("then," "dear," "is it") |
-| disagrees by | doesn't disagree — restates her own reading of the situation flatly and moves on, even after being corrected (chapters/14_sixty_degrees.md: told "October was the first time... more than a dozen [times] since," she still answers "That's better, then. It sounds like you just want the practice") |
-| wordiness | hand-counted across 12 sentences: roughly 9 words/sentence, mid-range — never a long unbroken explanation, never a single-word answer either |
-| terseness | roughly 3 of 12 sentences (25%) are three words or fewer ("There's a chair." "October." "That's better, then.") |
-| jokiness | 0/10 — no joke, though her warmth can read as gently, unintentionally comic to the reader (the archery misreading) without her intending it as humor |
-| hedging | 0% — she states her (frequently wrong) readings as settled fact, never qualified |
-| questions | roughly 3 of 12 sentences (25%) — all closed, low-stakes questions ("is it early days yet," "is it," "what did this one to you, then") rather than open, investigative ones |
-| figurative | not allowed — none used |
+| sentence shape | short, closed declaratives, often closed further with a soft tag word [text] |
+| disagrees by | restates her own reading flatly and moves on, even after correction [text] |
+| wordiness | ~9 words/sentence [text, hand-counted] |
+| terseness | ~25% of sentences are three words or fewer [text] |
+| jokiness | 0/10 — though the archery misreading lands as gentle comedy to the reader, unintended by her [text] |
+| hedging | 0% — states her readings as settled fact, even the wrong ones [text] |
+| questions | ~25% of sentences, all closed and low-stakes [text] |
+| figurative | not allowed — none used [text] |
 
 ## Signature — theirs alone
 
-Her exclusive move: she closes nearly every statement with a soft one-or-two-word tag that ends the exchange rather than inviting more — "then," "dear," or a closed tag question ("is it").
-
+Closes nearly every statement with a soft one-or-two-word tag that ends the exchange:
 - "'Well, you'll get there, dear. Once in a whole year isn't very much, is it.'" (chapters/14_sixty_degrees.md)
-- "'That's better, then.'" (chapters/14_sixty_degrees.md)
-- "'Four o'clock. I'm doing the ham at four and you're carrying it.'" (chapters/13_ten_pages.md) — even her instructions close on a flat, no-argument period.
-
-No other adult in this batch uses "dear," a direct term of endearment, addressed to Chloe. Reserve it for her alone.
+- "'Four o'clock. I'm doing the ham at four and you're carrying it.'" (chapters/13_ten_pages.md)
 
 ## Would they say this?
 
-- YES if it's a short, closed declarative that ends with a soft tag ("then," "dear," a closed tag question) rather than opening a follow-up.
-- NO if it presses past a deflection — in chapters/18_fifteen.md, Chloe tells her a hand injury is "nothing, it's from school," and the grandmother "turns the hand over once more, puts it down on the tablecloth, pats it twice, and asks her aunt where she got the ring" — she notices, and does not push.
-- YES if it misreads the scale of something Chloe describes, treating real mastery as early practice, or vice versa — this happens every time she's given a chance to (the archery scene is the clearest case).
-- NO if it's an accurate read of anything Chloe says about her own activities or achievements — the text never gives her one.
-- YES if it's an accurate, unprompted physical observation about Chloe's body or visible condition, delivered to another adult rather than to Chloe directly.
-- NO if the same accurate observation is delivered as a confrontation or demand for explanation — she tells Meg, quietly, not Chloe, and even her most direct question to Chloe herself ("what did this one to you, then?") accepts the first deflection offered.
-- NO if it uses a metaphor or invented image — entirely literal throughout.
+- YES if it's a short, closed declarative that ends with a soft tag rather than opening a follow-up.
+- YES if it misreads the scale of something Chloe describes, treating real mastery as early practice.
+- YES if it's an accurate, unprompted physical observation about Chloe's body, delivered to another adult rather than to Chloe directly.
+- YES if it turns household logistics into a flat, warm instruction rather than a request.
+- YES if it examines something at length with her hands while a separate conversation continues over her head.
+- YES if it stays affectionate even after being directly corrected about a fact.
+- YES if it notices a family pattern repeating across a generation and states it once, without alarm.
+- YES if it closes a moment of real attention with a small physical gesture — a pat, a plate set down.
+- NO if it presses past a deflection.
+- NO if it uses a metaphor or invented image.
 
 ## The kindly-and-inadequate test
 
-A line for the grandmother is **kindly-and-inadequate** if it is warm, physically affectionate, and either (a) gets the scale of Chloe's life wrong through ordinary, well-meaning small-town assumptions, or (b) notices something real and true and stops at noticing it, without turning it into intervention. Both patterns are on the page. She misjudges every abstract achievement Chloe reports to her — reading a dozen successful shots as "early days" — which costs nothing and harms no one; it is simply an old woman applying a normal yardstick to an abnormal child. And she is the one person in the manuscript who looks at Chloe's actual physical state (weight loss, weight gain, scars on a hand) and reads it correctly on sight — and then says so only to another adult, once, quietly, and lets it go. Nothing in either pattern targets Chloe or makes her feel judged.
-
-A line would be **unkind** — and nothing in the text supports it — if she used an accurate physical observation to shame Chloe directly ("you've gotten heavy," said to her face, or pressed as a confrontation), or if she mocked Chloe's real accomplishments once corrected about them, rather than simply repeating her original, gentler misreading. The text is careful on both counts: the weight comment is relayed privately, and the archery misreading, even after correction, stays affectionate ("That's better, then") rather than becoming dismissive.
+A line for Dorothy is **kindly-and-inadequate** if it is warm and either (a) gets the scale of Chloe's life wrong through an ordinary, well-meaning yardstick, or (b) notices something real and stops at noticing it. Both patterns are on the page. A line would be **unkind** — unsupported anywhere in the text — if she used an accurate physical observation to shame Chloe directly, or mocked her once corrected about the archery. The text is careful on both counts.
 
 ## Are they acting like themselves?
 
-She hosts large family gatherings (eleven people at Christmas, every year on the page) and is the fixed point Chloe's home life orbits around at holidays. She is tactile in a way none of the other adults in this batch are — takes Chloe's hand at a dinner table specifically to examine it, turns it over, runs a thumb across the marks on it, "taking her time" while conversation about something unrelated (a ring) continues over her head. She recognizes generational pattern without commentary: finding Chloe on the floor with papers spread around her, she says only "Your mother did that" — she has seen this exact posture before, in her own daughter, and states it as a fact rather than a warning. She does not raise her voice, does not appear anywhere in the text expressing anger, and never appears without also putting food, an errand, or a physical task into the same scene (the ham at four, the plate left on the carpet).
+She hosts large family gatherings every year and is tactile in a way none of the other adults in this batch are — takes Chloe's hand specifically to examine it, "taking her time" while conversation continues over her head. She recognizes generational pattern without commentary: "Your mother did that."
 
-**Failure modes for a rewriter:**
-1. Having her act on the weight observation — confronting Chloe, calling a doctor, following up later. The text shows her naming it once, privately, to Meg, and nothing more; escalating it past that changes what she is.
-2. Having her correctly read one of Chloe's reported achievements. Every instance in the text where she's given a chance to gauge the scale of something Chloe describes, she gets it wrong in the direction of "smaller and slower than it is" — this miscalibration is consistent enough across three separate scenes (weight aside) to be a rule, not a one-off.
-3. Making her pushy or intrusive when she notices something physical. She notices the hand scars and does not interrogate; a version of her that presses past "it's nothing, it's from school" contradicts every instance shown.
+**Failure modes for a rewriter:** having her act on the weight observation past naming it once, privately; having her correctly read one of Chloe's reported achievements — the miscalibration is a rule, not a one-off; making her pushy when she notices something physical.
 
-## Subjects
+## Subjects and schedule
 
-Not a teacher or clinician — her only "specialism," per the coordinator's framing, is what she notices with her own eyes and hands at close range, honed over decades of watching the same family across a table.
+Not a teacher or clinician in the school sense, but her professional background is the reason her eye for Chloe's body is trained rather than lucky:
+- Thirty-one years as a maternity-ward nurse before retiring, the last twelve as a charge nurse training newer staff to read a patient's condition by sight before the chart confirmed it [invented] — this is the direct, textually-motivated reason she catches Chloe's weight change on sight while nobody else in the family does.
+- Best at: reading a body she's watched over time — weight, color, an old scar, the particular way someone's holding themselves [invented, grounded in text].
+- Worst at: anything that has to come to her secondhand, in someone else's words, about a world she doesn't share — archery, "sixty degrees" of homework [text].
+- What she was known for at the hospital: the nurse newer staff were sent to when they couldn't articulate why a patient "looked wrong" — she could usually name the specific thing in under a minute [invented].
+- Secretly proud of: never once, in thirty-one years, missing a real complication that a scan later confirmed — her eyes got there first every time [invented].
 
-- What she notices, reliably: physical change in a body she's watched for years — weight loss, weight gain, an old scar or a fresh burn on a hand [text, chapters/11_eight.md; chapters/18_fifteen.md].
-- What she cannot assess: anything abstract Chloe reports about her own activities — a school subject, an archery target, "sixty degrees" of homework — she has no calibrated sense of scale for any of it and reads all of it as smaller and slower than it is [text, chapters/14_sixty_degrees.md].
-- Best at: reading a face or a body she's known a long time; her information source is always direct observation, never a report.
-- Worst at: anything that has to come to her secondhand, in someone else's words, about a world she doesn't share — Chloe correcting her about the archery timeline doesn't change her answer.
-- Favourite [inferred]: having a family member to sit with and examine directly — "she's been after somebody to talk to since two" [text, chapters/14_sixty_degrees.md:185].
-- Least favourite: not applicable in the academic sense — nothing in the text reads as a subject she avoids.
+## Home
+
+Grew up in the same region she still lives in, one of six children of a farming family, married young to a man named Frank Halloran who spent thirty-eight years running the parts counter at a regional equipment dealer [invented]. Raised four children, including Meg, in the same house she still lives in and still hosts every Christmas in — the "spare room" Chloe reads Federalist Papers in is the bedroom that belonged to Meg's older brother, who moved out decades ago [invented]. Kept working nights on the maternity ward for years after her own children were grown, because she liked the work more than she liked being asked when she'd stop [invented]. The house smells like whatever's in the oven for that week's gathering more often than not — she is rarely not cooking for someone [invented]. Frank does the crossword at the kitchen table most afternoons, which is very likely what he was doing, "thinking about a question," the Sunday Chloe overhears the weight conversation through the kitchen door [invented, directly explaining the one line the text gives him].
+
+## Body
+
+Seventy-four, small and sturdy, the specific build of someone who spent three decades on her feet on a hospital floor [invented]. Hands are the most described part of her in the text itself — she "turns it over in both her hands," "runs a thumb over all of it, taking her time" [text] — and this pass grounds that in thirty-one years of a nurse's hands doing exactly this kind of unhurried, professional examination without anyone having to ask her to [invented]. Keeps her hair short and simple, the same practical cut she's had since her working years [invented]. Wears an apron over house clothes more often than not when family is coming [invented]. Moves slower than she used to, favors one hip slightly, but nothing that keeps her out of a kitchen [invented]. Sleeps lightly, a habit left over from decades of night shifts, and wakes early regardless of when she goes down [invented].
 
 ## Personality off the page
 
-She likely believes she's the one actually paying attention at the table — and in a narrow, literal sense the text agrees with her: she is the only outside adult in the manuscript who reads Chloe's physical state correctly, unprompted. That accuracy comes specifically from trusting only what she can see and touch for herself; anything she has to take secondhand, in a description she has no frame for, she reads as small, because to her calibration comes from watching, not from being told. This is very likely why she never revises her reading of the archery timeline even after Chloe corrects her directly — being told twice isn't the mechanism that updates her; seeing would be, and she never sees it. Where she sits: for long stretches, anchoring a room — the front room, the head of a table — rather than moving through the house. Hands: the most active hands in this batch — takes Chloe's hand specifically to examine it, turns it over, runs a thumb across old marks, "taking her time" [text, chapters/18_fifteen.md:169–173]. Bored: doesn't register — she fills any gap by pulling a family member in to talk. Wrong: doesn't register either — corrected about the archery, she stays affectionate and simply restates her original reading in gentler words. Praised, losing, tired, 2am: UNDEFINED. Free Saturday [inferred]: cooking for a gathering — "I'm doing the ham at four" is the clearest window into how she spends her time [text, chapters/13_ten_pages.md:170]. What she'd find funny in someone else: UNDEFINED.
+Believes she's the one actually paying attention at the table — and in a narrow, literal sense she's right: she's the only outside adult in the manuscript who reads Chloe's physical state correctly [inferred]. Trusts only what she can see and touch herself; anything secondhand she reads as smaller than it is, which is very likely why she never revises the archery timeline even after correction [inferred]. Bored: doesn't register it — she fills any gap by pulling a family member in to talk [text-adjacent]. Wrong: doesn't register being wrong either — corrected about archery, she restates her original reading in gentler words rather than updating it [text]. Praised: brushes it off toward the food or the house, rarely toward herself [invented]. Losing: doesn't experience direct conflict at the table; she absorbs disagreement by changing the subject to something practical [invented]. Tired: rarer than you'd expect at her age, though she naps most afternoons now and calls it "resting my eyes" rather than admitting to it [invented]. A free Saturday: the same as most Saturdays — cooking for someone, calling one of her children, tending a small vegetable garden [invented]. Finds funny in others: young people's certainty about things they haven't lived through yet — fond, not dismissive [invented].
 
-## Would do / would never do
+## Interior life
 
-**Would do:**
+Wants, unsaid: for someone in the family to ask her directly what she's actually seeing when she looks at them, the way patients' families used to, instead of her having to volunteer it quietly through a door [invented]. Afraid of: missing something the way she never let herself miss it at work — that her eye is slower now than it was, and she can't fully trust it the way she used to [invented]. Thinks about before sleep: who in the family she hasn't seen look right lately [invented]. A free year: she'd spend it exactly as she spends her time now — she genuinely doesn't want a different life, which is itself a small, real thing about her [invented]. Believes something the rest of the family would argue with: that most of what people call worry is actually just not looking closely enough, soon enough [invented]. Wrong about: she believes patience and time are the answer to anything Chloe describes struggling with — a lifetime of watching bodies heal on their own schedule taught her this, correctly, for bodies, and it doesn't transfer to a mind that's understimulated, which no amount of "you'll get there, dear" will fix [inferred].
+
+## The small stuff
+
+Drinks tea, strong, with milk, several cups a day, made the same way every time [invented]. Handwriting: UNDEFINED in text; [invented] old-fashioned, careful cursive, used mostly for the Christmas card she sends every year [text-adjacent]. Her kitchen has a recipe box older than any of her children, cards in her own mother's handwriting mixed in with her own [invented]. Keeps reading glasses on a cord and a small sewing kit in a kitchen drawer for quick repairs [invented]. Money: comfortable, careful, still clips coupons out of habit more than need [invented]. Superstition: always has something in the oven when family is arriving, feels the house is wrong otherwise [invented]. Rarely on a phone; calls rather than texts, and keeps the calls short and purposeful [invented]. First thing every morning: puts the kettle on before she's fully awake, out of thirty-one years of habit before early shifts [invented].
+
+## Would do
+
 - Take a family member's hand at the table and hold onto it, examining it at length, mid-conversation.
 - Say what she's noticed about someone's weight plainly — but to another adult, not to the person's face.
 - Host the same large holiday gathering every year without fail.
 - Put a plate or a task in front of someone rather than asking, in the abstract, if they're all right.
 - Pat a hand or an arm to close out a moment of attention.
 - Recognize a pattern repeating across a generation and say so once, without alarm.
+- Train newer nurses for over a decade to read a patient by sight before the chart confirmed it [invented].
+- Keep working night shifts for years after her own children were grown, because she liked the work [invented].
+- Have something in the oven whenever family is due to arrive [invented].
 
-**Would never:**
+## Would never
+
 - Confront someone directly about a physical change she's noticed — she tells another adult, not the person it's about.
 - Press past a deflection when someone brushes off a question about an injury or a mark.
-- Mock or dismiss an achievement once corrected about its scale — she stays affectionate even while still getting it wrong.
-- Raise her voice or show anger at the table.
-- Let a grandchild go unfed or untouched at a family gathering.
-- Assume the worst about a family member without seeing it for herself first.
-
-## Body and habits
-
-Build, face, hair: UNDEFINED — no physical description is given. Age: explicitly old enough that her attendance at Chloe's graduation is unexpected — "which nobody expected at her age" [text, CHAPTERS_16_22_v2.md, Ch18 "The First One"]. Hands: the one body part the text describes in real detail through what she does with them — takes, turns over, and runs a thumb across another person's hand at length [text, chapters/18_fifteen.md]. Movement: mostly stationary — seated in the front room or at the head of the table, rather than moving through scenes. Food: consistently present around her — she is the one who cooks the holiday meal ("I'm doing the ham at four") [text, chapters/13_ten_pages.md:170]. Sleep, dress: UNDEFINED.
+- Mock or dismiss an achievement once corrected about its scale.
 
 ## Relationships
 
-- **Chloe:** the only adult in the manuscript who reads her body accurately, and the only one shown being this physically affectionate with her — takes and holds her hand, examines it at length, unasked.
-- **Meg (her daughter — see Facts, inferred not confirmed):** shares the weight observation with her privately, adult-to-adult, rather than through Chloe; recognizes Chloe's floor-reading habit as one she's seen in Meg before, at the same age, in the same house.
-- **Chloe's grandfather (her husband):** appears once in the same room, silently, "thinking about a question" [text, chapters/11_eight.md:89] — no interaction between them is shown.
-- **Dana and the rest of the family:** hosts them all at the same recurring holiday gatherings every year; no individual dynamic with Dana beyond both being present is shown.
+- **Chloe:** the only adult in the manuscript who reads her body accurately, and the only one this physically affectionate with her — takes and holds her hand, examines it at length, unasked [text].
+- **Meg (her daughter):** shares the weight observation with her privately, adult-to-adult, rather than through Chloe [text]; recognizes Chloe's floor-reading habit as one she's seen in Meg before, at the same age, in the same house [text].
+- **Frank (her husband):** married thirty-eight years [invented]; does the crossword most afternoons while she runs the kitchen — a long, comfortable domestic rhythm neither needs to narrate [invented].
+- **Dana and the rest of the family:** hosts them all at the same recurring holiday gatherings every year [text].
 
 ## Likes, dislikes, habits
 
-- **Likes:** having someone to talk to — "she's been after somebody to talk to since two" [text, chapters/14_sixty_degrees.md]. Examining Chloe's hands directly, at length, without asking permission first [text, chapters/18_fifteen.md].
-- **Dislikes:** UNDEFINED — no irritation or displeasure is shown anywhere in the text.
-- **Habits:** pats a hand or arm to close out a physical gesture [text, chapters/14_sixty_degrees.md:193; chapters/18_fifteen.md:179]. Delivers household instructions as flat, unnegotiable facts ("Four o'clock. I'm doing the ham at four and you're carrying it.") [text, chapters/13_ten_pages.md]. Notices a physical detail, comments once, and moves the conversation elsewhere without dwelling [text — the hand scars, chapters/18_fifteen.md; the weight, chapters/11_eight.md].
+- **Likes:** having someone to talk to [text]. Cooking for a full house [invented].
+- **Dislikes:** UNDEFINED in text; [invented] a kitchen with nothing in the oven when people are coming.
+- **Habits:** pats a hand or arm to close out a gesture [text]. Delivers household instructions as flat, unnegotiable facts [text].
 
 ## Facts a rewriter needs
 
-- Never named. Referred to only as "her grandmother," "your grandmother," or, once, addressed indirectly through Chloe's cousin's dialogue.
-- Maternal or paternal side: **UNDEFINED explicitly, but the text leans maternal** — in chapters/13_ten_pages.md she tells Chloe "Your mother did that. Floor, back against the bed, papers everywhere," a direct memory of Meg as a child in what reads as the same house (the "spare room" Chloe is reading in at her grandmother's). This is the strongest textual clue to which side she's on, but it is an inference, not a stated fact — do not present it as confirmed.
-- Has a husband (Chloe's grandfather) who appears once, non-speaking, "thinking about a question" (chapters/11_eight.md:89).
-- Hosts Christmas every year on the page, with roughly eleven family members present, including at least one aunt and Chloe's cousin Dana.
-- Attends Chloe's Halstead graduation in CHAPTERS_16_22_v2.md, Ch18 "The First One," described as unexpected "at her age" — the only confirmed appearance after chapters/18_fifteen.md, and it carries no quoted dialogue.
+- Full name: Dorothy Halloran [invented]. Age 74 [invented].
+- **Relationship to Chloe: Meg's mother** [invented decision]. Reasoning: chapters/13_ten_pages.md:170 has her tell Chloe "Your mother did that. Floor, back against the bed, papers everywhere, and if I moved one of them she could tell" — a direct memory of Meg as a child in what reads as the same house Chloe is currently in. This pass commits to that reading rather than leaving it open; it also means Meg's maiden name is Halloran.
+- Retired maternity nurse, thirty-one years [invented] — the professional grounding for her one genuine skill (reading a body accurately).
+- Husband: Frank Halloran, thirty-eight years running a parts counter, does the crossword most afternoons [invented].
+- Hosts Christmas and other family gatherings at the same house every year, roughly eleven people present [text/invented].
 
 ## Known problems
 
-- **She has no scene after chapters/18_fifteen.md with a quoted line.** Her final appearance (the graduation) is summary only — "tells three separate teenagers that they seem like nice young people" — which is consistent with her established warmth but adds no new characterization. A rewriter wanting more of her has to build from chapters/11, 13, 14, and 18 only.
-- **The weight observation is never followed up on anywhere else in the manuscript.** No later chapter shows Meg or anyone else acting on it, referencing it again, or connecting it to the depression diagnosis that follows in the same general period. Whether that's a deliberate irony (the one person who saw it correctly had no power to act on it) or an unresolved thread is worth flagging to the author.
-- **Her side of the family is not stated outright.** See Facts a rewriter needs — the "your mother did that" line is suggestive but not conclusive, and a rewriter should not silently commit to maternal or paternal without the author confirming it.
+- No scene after chapters/18_fifteen.md carries a quoted line; her final appearance (the graduation) is summary only [text-based finding].
+- The weight observation is never followed up on anywhere else in the manuscript [text-based finding].
+- Her side of the family was previously left undefined; this pass now commits her as Meg's mother — flag to the author as a decision made on their behalf, easy to reverse if they intend otherwise.
 
 ## Do not confuse with
 
-**Dana**, Chloe's cousin, who appears at the same Christmas gatherings and asks Chloe similar small-talk questions about school ("Do you have a favorite subject?"). The dividing cue: Dana's questions get short, polite, closed answers from Chloe and go nowhere; the grandmother is the only one of the two who ever touches Chloe or comments on her physical state rather than her activities.
+**Dana**, Chloe's cousin, who appears at the same gatherings and asks similar small-talk questions about school. The dividing cue: Dana's questions get short, polite answers and go nowhere; Dorothy is the only one of the two who ever touches Chloe or comments on her physical state rather than her activities.
