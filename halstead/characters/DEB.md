@@ -44,7 +44,7 @@ Mid-forties, average build, dresses comfortably and a little brightly, carrying 
 
 ## Personality off the page
 
-She likes people readily and expects, correctly most of the time, that they'll like her back. A lull fills fast with a story, usually about Tyler. Correction lands easily; she doesn't get defensive. Praise she enjoys openly. A missed deadline is the closest she comes to real conflict at work, and she takes it personally and fixes it fast. Tired, she talks a little less and still asks about your day. A free Saturday runs a Little League game, then errands, then something easy on the couch. Earnestness about something trivial charms her.
+She likes people readily, and most of the time they like her back. A lull fills fast with a story, usually about Tyler. Correction lands easily; she doesn't get defensive. Praise she enjoys openly. A missed deadline is the closest she comes to real conflict at work, and she takes it personally and fixes it fast. Tired, she talks a little less and still asks about your day. A free Saturday runs a Little League game, then errands, then something easy on the couch. Earnestness about something trivial charms her.
 
 ## Interior life
 

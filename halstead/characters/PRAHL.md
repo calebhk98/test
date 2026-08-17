@@ -78,7 +78,7 @@ She drinks tea, not coffee, from a travel mug that rides in the car's cupholder 
 
 ## Would do
 
-- Learn every child's name inside the first session and use it correctly every week after.
+- Learn every child's name inside the first session, without mixing them up, every week after.
 - Read a full puzzle's premise aloud rather than paraphrase it, holding the sheet up so the back row can see too.
 - Send extra material home with a child who finishes early, without being asked.
 - Praise finished work identically regardless of how far ahead of the group that child actually is.
