@@ -113,7 +113,9 @@ A joke placed directly against a violent moment controls how long a reader dwell
 
 **Example:** "'That's a C,' Sam says, walking back with his hands up", closing a scene in which four children have drugged and restrained four armed adults.
 
-**Do:** let the deflection arrive on the next line, in a character's voice, before any beat of stillness. The characters are not sitting with it, and the reader travels at their speed.
+**Do:** when there is a joke, let the deflection arrive on the next line, in a character's voice, before any beat of stillness. The characters are not sitting with it, and the reader travels at their speed.
+
+**This rule is about placement, not obligation.** It offers a tool and says where the tool goes. A violent scene that ends without any comedy is not breaking this rule; nothing here requires a joke. The violation is a joke that arrives late, after the scene has been allowed to settle, or one that never lands in a character's mouth at all.
 
 **What to watch:** the joke has to belong to the character rather than to the narrator. Sam grading the operation is Sam. A wry narrating aside doing the same work is the author.
 

@@ -133,7 +133,7 @@ Instruction: These constructions get cut on sight whenever they appear in narrat
 | Stacked negatives | "Nobody makes an announcement, nobody says anything at breakfast" | Restate as one positive statement. |
 | Repeated frame verb | "She tells him X," repeated fifteen times | Drop the frame verb after its first appearance. |
 | Pointing at the scene | Any construction that signals "pay attention to this" | Delete. Readers are allowed to miss things. |
-| Em dashes | The long interrupting dash, however typed | Use commas or a normal short dash instead. |
+| Em dashes | The long interrupting dash, however typed | Use commas or a normal short dash instead. **This one applies everywhere, dialogue included.** Unlike the other rows in this table, there is no dialogue exception: an interrupted line of speech uses a comma or a short dash, not an em dash. |
 
 Litmus test, stated directly in the source: if a sentence has two halves that mirror each other, or a clause that explains the clause before it, it is a writer's sentence and needs revision.
 
@@ -285,7 +285,7 @@ The two guides give two different checklists. Both are reproduced in full since 
 - No other character's thoughts appear
 - No sentence points forward in time
 - Zero invented similes; zero abstract nouns handled as objects
-- No em dashes
+- No em dashes anywhere, narration and dialogue alike
 - Grep the last clause of every sentence: does it explain rather than add
 - Ands per 1,000 words is 34-42
 - Spoken sentence mean is 8-10 words; narration mean is 14-17
