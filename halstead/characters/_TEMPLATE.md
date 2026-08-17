@@ -110,8 +110,7 @@ where it is extrapolation. A sheet that cannot tell the difference is not usable
 ## Facts a rewriter needs
 Name, surname, family, background, what they are good and bad at, what they know at what
 age. Everything needed to avoid contradicting the book. Where the manuscript is silent,
-decide and mark it [invented] — do not leave a hole. If a surname does not exist, give
-them one and say you did.
+decide — do not leave a hole. If a surname does not exist, give them one.
 
 ## Known problems
 The specific places they are off-voice, out of character, or missing, with file and line.
@@ -125,13 +124,18 @@ The one or two characters they currently blur into, and the exact cue that separ
 
 ## Rules for whoever fills this in
 
+- **Read `_CALIBRATION.md` first.** It sets how good these people are, how the school
+  behaves, and what a weakness means here. Several sheets currently get it wrong.
 - **Invent.** The book is Chloe's point of view, so almost nothing exists about anyone
   else's home, body, family or private life. That is a gap to fill. UNDEFINED is not an
-  acceptable answer anywhere on a sheet — if the manuscript is silent, decide, write it
-  down, and mark it [invented]. A sheet full of gaps is not usable.
-- **Three marks, used everywhere:** [text] the manuscript shows it, [inferred] it follows
-  from what the manuscript shows, [invented] you made it up to fill a gap. All three are
-  welcome. Only the mislabelling is a problem.
+  acceptable answer anywhere on a sheet — if the manuscript is silent, decide and write it.
+- **Write the character, not the plot.** Never build a detail as setup for a later event.
+  A twelve-year-old picking a language is picking a language.
+- **Turn secondhand into firsthand.** Most of what exists about anyone but Chloe arrives
+  reported or overheard. Take that material and write it as the character's own action.
+- **No tags.** Do not mark lines [text], [inferred] or [invented]. The sheets are read by
+  people writing scenes and the tags get in the way. Write the character as a person.
+  Where the manuscript shows something, quoting it is still the strongest way to say it.
 - **Positive framing, roughly five to one.** Say what they do, reach for, like, and would
   choose. Keep the negatives for the few places where nothing else carries the point.
 - **Differentiate, but never against the character.** Where the text or an established

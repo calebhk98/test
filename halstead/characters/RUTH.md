@@ -53,11 +53,11 @@ Failure modes a writer should watch for: (1) giving her a hedge or a softened qu
 
 Her own list, not Chloe's — Halstead runs a language a year for everyone but nobody's sequence matches anybody else's.
 
-**Languages, in order:** Spanish, Portuguese, German, Arabic, Greek, Finnish, Turkish, Polish, Dutch, Hungarian, Czech. **[invented — none of this list is in the manuscript; the only language the text gives Ruth is Arabic.]** Arabic is the one she argues for against Chloe's Latin, and that exchange is real: "I'm doing Arabic. There are four hundred million people in Arabic and every single one of them can tell me when I've got it wrong" (chapters/14_sixty_degrees.md:75) [text]. It is also the key to the whole list — she picks languages with a living population on the other end who can correct her, on principle.
+**Languages, in order:** Spanish, Portuguese, German, Arabic, Greek, Finnish, Turkish, Polish, Dutch, Hungarian, Czech. Portuguese is in the manuscript: inside a month of Chloe starting to read in Spanish, "Ruth is doing the same thing in Portuguese, badly, for reasons Ruth will state only as 'it's the vowels'" (chapters/11_eight.md:121). Arabic is the one she argues for against Chloe's Latin: "I'm doing Arabic. There are four hundred million people in Arabic and every single one of them can tell me when I've got it wrong" (chapters/14_sixty_degrees.md:75). That is the principle behind the whole list — she picks languages with a living population on the other end who can correct her.
 
 **Known for:** Finnish, taken because the grammar has almost no exceptions to memorize and almost every rule to derive — a case system that behaves like a machine, consistent the way a proof is consistent. [invented, building on her established love of rules that hold under pressure] She's the one people ask when a grammar question needs settling, the way they'd ask Kavi about a network.
 
-**Quietly bad at:** Spanish — her first, at camp, before anyone was keeping score, and the language track never returns to a year once it is past, so nobody ever found out whether it got better, including her. It is the only subject in her school life she has never gone back and fixed, in a life built almost entirely out of going back and fixing things. [invented]
+**Where she struggles:** Portuguese vowels, which she is still fighting and will say nothing else about. Worth keeping in proportion: she is reading novels in a language she picked up a month ago and calling that badly.
 
 **Best at:** mathematics, unambiguously — the only member of the core group shown generating a genuinely new result rather than applying a taught method: the financial proof (CHAPTERS_23_30_v2.md:441, "Ruth is the one who argues it into a proof, and she does it with the thing that isn't there"). Also elite at marksmanship — "I'm on ninety-one." (chapters/18_fifteen.md:53)
 
@@ -171,7 +171,7 @@ Coffee, not tea, taken plain and finished fast rather than savored. [invented] H
 - Younger brother, four years behind her, later admitted to Halstead. [text for admission — chapters/20_the_parking_lot.md:15; invented for the age gap]
 - Same hometown as Chloe. [invented, per allocation]
 - Good at: mathematics, statistical and forensic reasoning, networks and cryptography, marksmanship, combat, monitoring/triage under pressure.
-- Bad at: Spanish (abandoned at seven, never revisited) and Portuguese, which she is still fighting [invented]. Also bad at letting an unresolved point go, and at holding a private wrong belief without eventually investigating it herself.
+- Bad at: Spanish (abandoned at seven, never revisited) and Portuguese vowels, which she is still fighting. Also bad at letting an unresolved point go, and at holding a private wrong belief without eventually investigating it herself.
 - Built a general-purpose camera-defeating tool at thirteen, alone, in a weekend, out of her networks coursework and her own electronics-and-radio elective. [text for the artifact — CHAPTERS_23_30_v2.md:687; invented for the mechanism linking her two subjects, per Subjects and schedule]
 - Birth month not stated in the manuscript; decided as March, placing her among the older members of her admissions year. [invented]
 
