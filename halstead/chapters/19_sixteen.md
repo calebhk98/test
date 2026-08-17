@@ -1,6 +1,6 @@
 ## Chapter Nineteen: Sixteen
 
-*September 2021 – June 2023*
+*April 2022 – June 2023*
 
 They take the bar in April, over two days, in the long room on the second floor. Six hours on Tuesday and six on Wednesday, at desks set a meter apart, with the windows open because the room holds heat. Eleven teachers sit along the front and watch for twelve hours. They wrote the paper and they will mark it.
 

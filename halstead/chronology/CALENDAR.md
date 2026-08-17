@@ -90,8 +90,8 @@ Full machine-readable version: `chronology/chapter_dates.json`.
 | 16 | Thirteen | September 2018 – July 2019 |
 | 17 | Fourteen | September 2019 – April 2020 |
 | 18 | Fifteen | September 2020 – July 2021 |
-| 19 | Sixteen | September 2021 – June 2023 |
-| 20 | The Parking Lot | April 2020 |
+| 19 | Sixteen | April 2022 – June 2023 |
+| 20 | The Parking Lot | June 2022 |
 | 21 | The Applications | October 2022 – March 2023 |
 | 22 | The Offer | April 2023 |
 | 23 | The First One | June 2023 |
@@ -114,6 +114,8 @@ Full machine-readable version: `chronology/chapter_dates.json`.
 
 **Chapter 20 is placed in April 2020**, not between chapters 19 and 21 where the renumbering puts it. This resolves the ordering problem `BOOK.md` §2.1 and `RUTH.md` §2.1 both flag: the surveillance box Ruth brings to the parking-lot night is built "for a networking class the year before" (`20_the_parking_lot.md:7`), and that is the identical device — same function, same description — that Ruth demonstrates to Chloe in April of the "Thirteen" year, 2019 (`16_thirteen.md:75–91`). "The year before" a 2019 build places chapter 20 in the "Fourteen" year, 2019–20, which is where it now sits. This also lines up independently with chapter 34's dossier, which dates the same night to "six years back" (`34_the_files.md:14`) from a present of roughly June 2026 — six years back from June 2026 is April–June 2020, matching almost exactly. Both of `BOOK.md`'s independent checks (the box's build date and the federal dossier) now agree.
 
+**Superseded: the author has fixed chapter 20 at sixteen, so it is June 2022 and the two lines that argued for 2020 are errors to correct rather than evidence.** The rest of this paragraph is kept because its second half still stands.
+
 I also checked the secondary worry `BOOK.md` §4 raised about this placement — that "Nadia does not appear anywhere in the story before ch16" — and it does not hold up: Nadia is already present and named in the "Ten" year, three chapters and three years earlier (`13_ten_pages.md:89`). One loose end remains and I'm not able to close it from the text: Sam's fighting in chapter 20 does read as more finished than his self-defense record at fourteen in chapter 17 would suggest. That's a matter of feel, not a citable contradiction, so it isn't in the fix list below, but the author should look at it.
 
 **Chapters 24–29, 31–32 (the post-graduation cluster).** `BOOK.md` §4 already flags this stretch as loosely ordered, with no chapter giving Chloe's own age directly. I dated each chapter from its own strongest anchor: chapter 25's explicit title and its "September"/"April" dates for the blog and for Ruth's silence (`25_nineteen.md:25,125`); chapter 31's internal chain for Ruth's MIT year (`31_ruth.md:37,35,50,103` — October crisis, "about ten months" to the professor conversation, "some months later" in April to the silence, "about a year" from the professor conversation to the confession); chapter 30's exam-and-job-start dates; and each of 26–29's own stated job/training durations. Taken together these pin the cluster later than a first read suggests — chapter 27, for instance, lands in October 2025, not shortly after graduation. Two consequences of that are in the fix list below (items 3–5): the chat's stated age in chapter 24, and the "six years ago" figure Theo uses in both chapter 27 and chapter 32 for the loading-dock intrusion. I built the date table to keep each individual chapter's own math consistent; where that pulls the cluster's absolute year later than the "six years ago" lines assume, the lines are what I'm flagging, not the placement.
@@ -134,7 +136,9 @@ Every line below was checked with `grep -n` against the file in `chapters/` imme
 | 6 | `27_the_file.md:51` | "Six years ago." | The loading-dock intrusion falls in Chloe's "Twelve" year, winter 2017–18 (`15_twelve.md:199,325,377`); chapter 27 sits in October 2025 by its own "eighth month" job marker and its place in the post-grad cluster (see §3 note above). That's roughly eight years, not six. Suggested fix: "Eight years ago." |
 | 7 | `32_the_money.md:126` | "and six years ago they sent people over the fence at four in the morning" | Same event, same fix, restated later in the book: should also read "eight years ago." (`RUTH.md` §2.2 already flags this line as stale relative to chapter 27's figure; under this calendar both instances need the correction, not just the second one.) |
 
+| 8 | `20_the_parking_lot.md:7` | "a box she built for a networking class the year before" | Ruth builds the box at thirteen, shown in April at `16_thirteen.md:77` and confirmed in her own words at `34_the_files.md:69`. With chapter 20 fixed at sixteen, in June 2022, the build is three years earlier, not one. Either cut "the year before" or make it "a few years before". |
+| 9 | `34_the_files.md:12` | "And there's an incident report from six years back." | Same night as chapter 20, which is June 2022; chapter 34 is June 2026. That is four years, not six. Should read "four years back". |
 Two items the earlier reports raised are **not** on this list because this calendar resolves them:
 
-- **`20_the_parking_lot.md:7`, "a networking class the year before"** — checks out once chapter 20 is placed in April 2020, one year after the box's April 2019 build (`16_thirteen.md:75`). See §3.
+- ~~**`20_the_parking_lot.md:7`, "a networking class the year before"**~~ — this report placed chapter 20 in April 2020 so that this line would work. **The author has since fixed chapter 20 at sixteen**, which makes it June 2022 and makes the line an error after all. It is item 8 in the fix list above, along with the knock-on at `34_the_files.md:12`.
 - **`21_the_applications.md:101`, "she's sixteen"** — already resolved in `BOOK.md` §3.2 on the author's confirmation that the third author isn't Chloe. Nothing here bears on this calendar either.
