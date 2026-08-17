@@ -59,6 +59,49 @@ She runs a controlled room: two chairs and a couch, and she chooses to sit facin
 2. Writing her as warm or maternal. Her one register is procedural; even her most attentive moment (the pen stopping) is silent, not verbal reassurance.
 3. Extending her appearances past chapters/09. She has no confirmed contact with Chloe after the February session referenced there — there is no scene of her learning about the March 14th Halstead decision, and no later chapter mentions her again.
 
+## Subjects
+
+- Specialism: clinical psychology, mood disorders in children; trained specifically to run a structured intake and, within it, an abuse-screening protocol when a history includes time away from home with unfamiliar adults.
+- Responsible for one patient at a time, seen roughly every two to three weeks [text, chapters/09_february.md:5 — "four times since October"] — a far lighter per-session load than the teachers in this batch, and the text still shows no confirmed treatment content between sessions.
+- Best at: sequencing questions so the routine ones and the loaded ones sound identical coming out of her — "she asks it in exactly the same voice she asked the first one" [text, chapters/08_the_asking.md:23].
+- Worst at: converting a recognized, significant answer ("the happiest I have ever seen her, in her life") into a next step beyond continued sessions — the text never shows her prescribing anything further.
+- Favourite [inferred]: the moment an interview produces something nobody else managed to get — "it was hard" is written down and underlined, not just noted.
+- Least favourite [inferred]: a parent answering for the child — she takes Meg's rehearsed list politely, then keeps turning the room back to Chloe directly.
+- Secretly proud of [inferred]: running the abuse screen thoroughly and by the book even though nothing about this specific family raised suspicion going in — the diligence itself, not just the result.
+- Would drop if allowed: nothing — the text shows no part of her method she resists or resents.
+
+## Personality off the page
+
+She believes she is doing exactly what her training says to do: screen for the most serious explanation first, rule it out carefully, and treat what's left. By her own measure she succeeds — she reaches the correct diagnosis and gets Chloe to produce a real, usable answer under careful, patient questioning. Nothing in the text shows her aware that four more months will pass with no visible next step; to her, the ongoing sessions likely *are* the treatment working as designed. Where she sits: deliberately — she takes a chair facing the parent and leaves Chloe "the whole couch to herself" [text, chapters/08_the_asking.md:9], then physically turns her chair to face the couch when she wants the patient's own account. Hands: holds a pen continuously; the one described gesture is "stops writing and puts the pen down flat on top of the pad" [text, chapters/08_the_asking.md:29]. Bored, wrong, praised, losing, tired: UNDEFINED — the text shows her uniformly even throughout. At 2am and on a free Saturday: UNDEFINED, though writing up notes is the obvious [inferred] guess. What she'd find funny in someone else: UNDEFINED.
+
+## Would do / would never do
+
+**Would do:**
+- Ask the same question in the same even voice whether the likely answer is routine or serious.
+- Turn her chair to face the patient directly when she wants the patient's own account rather than the parent's.
+- Follow "I'm sure it was" with another question anyway, rather than accepting the reassurance and moving on.
+- Give the child the whole couch and take a chair nearer the parent, unasked.
+- Stop writing, visibly, when an answer surprises her, and let the silence sit rather than filling it.
+- Underline a short, honest answer instead of pushing for a longer one.
+
+**Would never:**
+- Take a parent's account of a summer program as complete without asking Chloe anyway.
+- Treat a flat "I don't know" from a child as evasive or uncooperative.
+- Diagnose from a single data point without working the full history first.
+- Promise a fix she isn't positioned to guarantee, or claim more certainty than she actually has.
+- Discuss what a patient told her with anyone outside the room without the parent present.
+- Let a session end without writing something down, even one that's produced very little.
+
+## Body and habits
+
+Build, face, hair, clothing: UNDEFINED — no physical description given. Room: two chairs and a couch; she chooses her own seat and Chloe's deliberately [text, chapters/08_the_asking.md:9]. Hands: writes through routine answers, stops writing at the one that surprises her [text, chapters/08_the_asking.md:29]. Movement: repositions her chair mid-session to address whichever person she wants to answer next [text, chapters/08_the_asking.md:41]. Sleep, eating, dress: UNDEFINED.
+
+## Relationships
+
+- **Chloe:** wants the patient's own account directly, and repeatedly redirects the room's attention back to her even while the parent is doing most of the talking.
+- **Meg:** takes her intake seriously and methodically, but never lets a parent's reassurance close a line of questioning — "I'm sure it was, but I'm asking anyway."
+- **Dave:** no on-page contact at all — not shown attending a session.
+
 ## Likes, dislikes, habits
 
 - **Likes:** UNDEFINED — nothing in the text shows personal preference; every observable trait is professional method.

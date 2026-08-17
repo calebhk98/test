@@ -49,6 +49,53 @@ Failure modes:
 2. Giving her a second line in the same beat. Her power is that she never follows up — a rewriter tempted to "land the point" with a second jab has broken the character.
 3. Writing her as watching for the hit to register. The text is explicit that she isn't; she is already elsewhere by the time the line lands.
 
+## Subjects
+
+Kayleigh is a classmate at an ordinary school, not a Halstead student, so this is the ordinary version: what she's good at, what's hard for her, and how she reacts to a classmate who's clearly working ahead of everyone else.
+
+- **Best at:** [inferred] The playground ball game — the only activity she's shown actively engaged in and confident enough to bend in her own favor (chapters/01_before.md:41–47).
+- **Worst at:** UNDEFINED. Nothing in the text places her academically, ahead or behind, relative to any classmate.
+- **Favourite, and why:** [inferred] The same game, for the same reason — it's the one context where she visibly wants to stay in rather than disengage.
+- **Least favourite:** [inferred] Being asked to justify a call. Both of her available "why" moments (chapters/01_before.md:46; chapters/07_the_same_room.md:135) end with her declining to answer rather than explaining.
+- **Secretly proud of:** [inferred] Noticing when something doesn't match how everyone else is doing it. Both of her substantive lines are exactly this, delivered without hesitation.
+- **Would drop if allowed:** UNDEFINED.
+
+**How she feels about a classmate who reads ahead:** this is the one thing the text actually shows. Chloe reading further than everyone else, or giving more than the expected one-word answer, registers to Kayleigh as worth a single remark — not a threat, not something to admire, just something that doesn't match. She says so once, plainly, and returns to what she was doing. Nothing in the text suggests envy or superiority; it reads as the same reflex that makes her call an inconsistent ruling at the ball game — deviation gets noticed and named, once, and that's the whole transaction.
+
+## Personality off the page
+
+- Occupies a room by being embedded in it, not by directing it — she's mid-game or mid-conversation with someone else both before and after every line she has.
+- Handles being challenged by disengaging rather than defending: asked "How was it different, though?" she says "It just was" and throws the ball — she doesn't dig in, she just stops answering (chapters/01_before.md:46–47).
+- Hands, being praised, being wrong, being bored, tired, 2am, a free Saturday, what she finds funny in others: all UNDEFINED. [inferred, if extended: something social and unstructured on a free Saturday, given the only warmth she shows on the page is directed at a group of friends at a classroom door, not at anything solitary.]
+
+## Would do / would never do
+
+**Would:**
+- Stay in a game past the point where the rule says she should be out, if nobody stops her (chapters/01_before.md:41–47).
+- State a flat observation once, unprompted, about something that doesn't match what everyone else is doing, and treat it as finished the moment she's said it.
+- Let a "why" question go unanswered rather than invent a reason on the spot.
+- Turn back to what she was already doing in the same breath she finishes speaking.
+- Hug and be warm with the friends she already has, unguardedly, at a moment like a goodbye (chapters/02_march_4th.md:120).
+- Sit in an assigned group with people she has nothing in particular against, without incident, for a full term (chapters/07_the_same_room.md:107).
+
+**Would never:**
+- Would never seek Chloe out to say something. Every one of her five lines is an immediate reaction to something Chloe has just done in front of her; she never approaches her afterward or brings something back up.
+- Would never repeat an observation once she's made it, or wait to see whether it landed.
+- Would never explain or defend a claim once challenged — she'll restate it flatly ("It just was") but never build an argument for it.
+- Would never escalate a remark into something sharper or more personal than its first form. Nothing in her five lines gets crueler, and nothing repeats for effect.
+- Would never target someone who hasn't just done something visibly outside the norm in front of her — she has no unprovoked lines anywhere.
+- Would never say something intended to make Chloe cry, or check whether it has. That would be a different character.
+
+## Body and habits
+
+UNDEFINED. The text gives no build, posture, clothing, or physical description beyond two described actions: turning around in her seat (chapters/01_before.md:54; chapters/07_the_same_room.md:133) and hugging three people at a door (chapters/02_march_4th.md:120). Nothing else — hair, height, how she sits, how she eats, how she sleeps — is given anywhere.
+
+## Relationships
+
+- **Chloe:** [text] The only person she's shown reacting to on the page. She wants nothing from her beyond registering, once, that she's just done something outside the norm — no ongoing interest is shown in either direction.
+- **Unnamed classmates (chapters/02_march_4th.md:120):** [text, unelaborated] Warmer and more demonstrative than anything shown toward Chloe — she hugs three of them at the classroom door on the last day of first grade.
+- **Bryce Dolan:** [text] Assigned to the same table group in second grade (chapters/07_the_same_room.md:107) and present in the same scene when he speaks, but no direct exchange between the two of them is ever shown.
+
 ## Likes, dislikes, habits
 
 - Plays the recess ball game and bends its enforcement in her own favor without acknowledging the inconsistency [text] — she stays in after a catch that got another girl (Maddie) called out minutes earlier, and will not say why the rule applied differently (chapters/01_before.md:41–47).

@@ -58,6 +58,49 @@ She is logistically excellent and pedagogically shallow at the ceiling: she whee
 2. Making her cruel about the refusal. Every refusal in the text is wrapped in warmth. A version of her that snaps or condescends is off-model.
 3. Having her privately recognize the mismatch and choose not to act. Nothing in the text shows her noticing Chloe finished four puzzles in fifteen minutes and drawing any conclusion from it — the text's silence there is itself the finding; don't fill it with unstated insight she never demonstrates.
 
+## Subjects
+
+- Teaches gifted pull-out enrichment: logic puzzles (knights and knaves), independent packets, occasional paired dice work.
+- Responsible for nine children, pulled from four different classrooms in four different buildings, for one hour a week — this number is the whole explanation for her [text, chapters/08_the_asking.md:89].
+- Best at: turning a correct answer into a visible group event — "makes a real thing out of it" when a student solves something at the board [text, chapters/08_the_asking.md:93].
+- Worst at: gauging any one child's actual ceiling inside a single shared hour, with eight other kids and a four-building collection run eating into the same sixty minutes.
+- Favourite [inferred]: the moment a puzzle lands for the room together — the only unambiguous enthusiasm the text gives her.
+- Least favourite [inferred]: the logistics before the teaching starts — five minutes just getting nine kids out of four classrooms into chairs, every single week.
+- Secretly proud of [inferred]: having all nine names memorized and in correct use inside the first five minutes.
+- Would drop if allowed [inferred]: the cart-and-four-building collection circuit itself, if someone else could run it — nothing suggests she enjoys the transit, only that she absorbs it without complaint.
+
+## Personality off the page
+
+She believes she is being generous, not withholding. "When does it get harder" reads to her as a charming, motivated question from a kid who's enjoying herself, and her answer — take the packet home, we've got all year — is, in her own mind, a gift, not a ceiling. She holds a real pedagogical belief that patience is correct for a child this young, so slowing down doesn't feel like failure to her; it feels like good practice. She has no visibility into what "harder" would actually require, because nothing in her hour, her cart, or her four-building schedule was built to produce it. Where she sits: rarely — she's mobile, wheeling the cart, marshaling kids into chairs, holding sheets up over her head so the back row can see. Hands: on the cart, the dice bin, the packets. Bored, wrong, praised, losing: UNDEFINED — no such scene exists. Tired: never shown, despite four buildings a week — worth flagging as a gap between plausible reality and the text's unbroken brisk competence. At 2am, on a free Saturday, what she finds funny in others: UNDEFINED.
+
+## Would do / would never do
+
+**Would do:**
+- Learn every child's name in the first session and use it correctly every week after.
+- Read a full puzzle's premise aloud rather than paraphrase it, holding the sheet up so the back row can see too.
+- Send extra material home with a child who finishes early, without being asked.
+- Praise finished work the same way regardless of how far ahead of the group that child actually is.
+- Keep the group moving together even when one child is visibly done well before the others.
+- Show up on time every week, cart fully stocked, across four separate buildings.
+
+**Would never:**
+- Tell a child outright that there's nothing harder available — she reframes the timeline instead of naming the ceiling.
+- Compare one of her nine kids unfavorably to another, to their face or otherwise.
+- Show irritation at being asked a question that implies the material isn't enough.
+- Shortchange the hour, or skip a session, because of the logistics behind it.
+- Assume an unfinished-looking packet means a child didn't try.
+- Speak to any child in a register she wouldn't want used on her — every line she has is warm, even mid-refusal.
+
+## Body and habits
+
+Build, face, hair, clothing: UNDEFINED — no physical description given. Hands: pushes a rolling cart with three shelves and a dice bin; holds a puzzle sheet up over her head for visibility [text, chapters/08_the_asking.md:89, 91]. Movement: covers four buildings on a weekly circuit; marshals nine children into chairs at speed before teaching starts. Expression: "smiles at her the way people smile when they think you have said something sweet" [text, chapters/08_the_asking.md:103] — the one specific facial detail the text commits to, and it's a misreading in progress. Sleep, eating, dress: UNDEFINED.
+
+## Relationships
+
+- **Chloe:** wants her to enjoy the enrichment hour, and reads her question about difficulty as enthusiasm to reward rather than as information to act on.
+- **Meg:** no direct on-page contact — Meg's six-week fight to get Chloe into the program happens entirely through the school office, never with Prahl herself.
+- **Dev, Hana (other pull-out students):** gives them the same warm, name-first attention as Chloe; no favoritism shown in either direction.
+
 ## Likes, dislikes, habits
 
 - **Likes:** a student getting a puzzle solved and showing their work on the board — "makes a real thing out of it" [text, chapters/08_the_asking.md:93]. Using every child's name [text, chapters/08_the_asking.md:89].

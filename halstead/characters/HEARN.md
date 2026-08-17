@@ -36,6 +36,47 @@ The returned-paper economy: the amount of ink he spends is inversely proportiona
 ## Are they acting like themselves?
 He never appears reacting to a student's feelings about a grade — every scene shows the paper or the fact, not his face. Under the Watch siege, eleven students spend forty minutes trying to break into the one room he is defending, and his response to finally being caught is procedural curiosity about a book, not relief or irritation (chapters/14_sixty_degrees.md:221). Failure modes: (1) giving him a line that praises the length or effort of Chloe's fourteen-thousand-word essay instead of finding what's wrong with it — the actual text does the opposite (chapters/14_sixty_degrees.md:149); (2) having him explain his grading philosophy at length instead of trusting the artifact (the note, or its absence) to carry the meaning; (3) raising his tone anywhere — the "same volume" line is explicit and should never be broken.
 
+## Subjects
+Teaches writing through history — the Federalist Papers, then Burke.
+
+**Best at:** finding exactly where a well-argued paper hedges instead of asserting. [text: chapters/14_sixty_degrees.md:149]
+**Worst at:** UNDEFINED.
+**Favourite, and why:** [inferred] Hamilton — he assigns him first, puts the arithmetic of his output rate on the board unprompted with visible (if flat) care (chapters/13_ten_pages.md:5-7), and only moves a student off him once she's earned it.
+**Least favourite:** [inferred] the hedged argument itself — the one thing he marks against hardest and explicitly names as worse than a wrong position. [text: chapters/14_sixty_degrees.md:149]
+**Secretly proud of:** [inferred] the zero-note paper as a teaching instrument — it is too precisely calibrated (it lands worse than criticism, and Chloe knows exactly why) to read as an accident or an oversight.
+**Would drop if allowed:** UNDEFINED — nothing in the sample reads as reluctant or resented.
+
+**What he was before Halstead:** UNDEFINED.
+**What he'd teach if he could teach anything:** [inferred] nothing else — he treats the writing and the history it's about as one subject, not two he might separate.
+**What he thinks of the rest of the curriculum:** CURRICULUM_GRID.md ties the school's "hidden ramp" directly to his own course: "Ten pages a week at ten and ten pages a week at seventeen... the essay is still due Wednesday," while the taught hours behind it fall from 8 to 5 across that span. Whether Hearn has ever noticed that the assignment he hands out unchanged every year is actually getting harder to produce is the open question this sheet can raise and the text cannot answer.
+
+## Personality off the page
+[inferred, built from "says everything at the same volume," chapters/13_ten_pages.md:3] Someone whose affect doesn't shift with the room's temperature — the same register holds through a routine correction, a returned paper, and forty minutes of two hundred students trying to break into his room. Likely occupies a fixed spot (a desk, the library) rather than moving through one. Bored, wrong, praised, losing, tired, 2am, a free Saturday, what he finds funny in others: all UNDEFINED — no scene shows him off the clock.
+
+## Would do / would never do
+Withholding a note, or writing none at all, is not cruelty — it's the same precision instrument as the four-line note that lands well: he is calibrating exactly how much the work in front of him needs, and the target is always the writing, never the child.
+
+**Would:**
+- Grade a technically correct paper down because it didn't do the harder job that was actually asked. [text: chapters/13_ten_pages.md:9, 15]
+- Let silence (no note at all) do more work than a sentence would.
+- Move a student to a harder author the moment they've earned it, without ceremony. [text: chapters/13_ten_pages.md:180]
+- Hold the exact same standard for a fourteen-thousand-word essay as a ten-page one. [text: chapters/14_sixty_degrees.md:149]
+- Keep teaching through a genuine crisis (the Watch siege) without raising his voice. [text: chapters/14_sixty_degrees.md:221]
+
+**Would never:**
+- Praise length, effort, or ambition on its own.
+- Explain a mark verbally beyond what the written note already says.
+- Raise or lower his volume, under any provocation.
+- Lower a grade for a well-argued position he happens to disagree with — Chloe's B is for hedging, not for the position she took. [text: chapters/14_sixty_degrees.md:149]
+
+## Body and habits
+"Small and gray" [text: chapters/13_ten_pages.md:3]. Wears glasses; takes them off and puts them back on as a small beat that closes a scene [text: chapters/14_sixty_degrees.md:221]. Voice stays at one constant volume regardless of content [text: chapters/13_ten_pages.md:3]. Build, age, clothing, eating, sleeping: UNDEFINED.
+
+## Relationships
+- **Chloe** — the primary channel the reader sees him through; pushes her from competent to actually good by refusing to grade effort or length.
+- **Theo** — receives the identical zero-note treatment in the same week and reacts completely differently (puts it straight in his bag, keeps talking); the difference is Theo's, not a change in how Hearn treats him. [text: chapters/13_ten_pages.md:162]
+- **Ruth** — not a direct scene partner, but Chloe reports his marks to her, and Ruth's flat assessment ("So what you're telling me is he's right") is the closest thing to a peer read on his fairness in the text.
+
 ## Likes, dislikes, habits
 - Marks quality over quantity or effort, explicitly. [text: chapters/14_sixty_degrees.md:149, "An argument you apologise for is not an argument, it is a request. Make it or do not make it."]
 - Withholds notes as a form of feedback. [text: chapters/13_ten_pages.md:158-160]

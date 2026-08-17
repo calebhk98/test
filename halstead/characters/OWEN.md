@@ -31,6 +31,60 @@ The only behavior directly reported (not merely stated as fact) is: crying, alon
 
 Failure mode: giving him a reason on the page. The entire function of the character is that Chloe (and the reader) cannot get one; supplying an explanation anywhere would undo the effect the existing material is built for.
 
+## Subjects
+
+Grounded in chapters/05_behind.md and chapters/10_april.md, cross-checked against CURRICULUM_GRID.md, which confirms Spanish, swimming, and the dowel-and-string bridge exercise are all real camp-era content (the grid notes Spanish "begins at camp"), so the activities Owen is measured against are the actual camp curriculum, not invented ones.
+
+- **Worst at: writing under a strict time limit.** The one clear negative data point in the text — given fifteen minutes to answer a comprehension question, he has "two sentences with a line through one of them" when time is called, against Chloe's six, Ruth's page and a half, and Kavi's nearly a full page (chapters/05_behind.md:7). This is never revisited or contradicted anywhere else in the book.
+- **Not behind, more broadly — the retrospective and more authoritative account.** Nine months later, asked directly, Kavi is unhedged: "He wasn't behind either, if that's the next one. He was doing what the rest of us were doing. He did the water thing and he did the bridge and he was fine." (chapters/10_april.md:103). This covers swimming and the bridge exercise specifically and rules out capability as the reason he left. [Ruth's earlier line in the same chapter — "kind of, he's the one who wouldn't do the water thing" (chapters/10_april.md:37) — contradicts this; see Known problems. Kavi's account reads as the more deliberate, more confident telling.]
+- **What he showed real interest in** [text]: during the fractions lesson he "asks something two steps further back than that, about which number the flipping happens to" (chapters/05_behind.md:38) — a specific, mechanism-level question, not a request for the answer. He hits a limit almost immediately after ("looks at the board for a while and says he doesn't know"), but the question itself is genuine curiosity, not a stall.
+- **Favourite / least favourite / secretly proud of / would drop if allowed:** UNDEFINED. Nothing in the text states a preference in his own voice or through anyone else's report.
+
+**What did Owen like? What did he miss?** This is the question the sheet needs to make writable, and the honest answer is that the text gives two competing partial answers rather than one clean one:
+- Per Sam [text, reported]: he didn't like camp itself — "He wasn't having fun. He said it wasn't fun." (chapters/05_behind.md:67, 70). On this account, what he missed is presumably whatever camp wasn't giving him — home, routine, something the text never names.
+- Per Kavi [text, reported]: he was crying specifically "about going" and "he didn't want to go" when his mother came to collect him (chapters/10_april.md:99–103) — which reads as close to the opposite: not a child glad to be leaving, but one upset about being taken away. On this account it isn't obvious he missed anything about home at all; if anything, he may have wanted to stay.
+These two accounts cannot both be the whole truth as written. A rewriter deciding what Owen "liked" or "missed" has to pick one of these threads and make it primary — the text currently supports either, not both. See Known problems.
+
+## Personality off the page
+
+Everything here is [inferred] from secondhand report, flagged accordingly — there is no scene where Owen is alone or unobserved by the narrative except the one moment Kavi describes seeing him.
+
+- Cries alone rather than in front of the group: the one time anyone describes him breaking down, it happens in a stairwell by the kitchens, witnessed by exactly one other child, who says nothing to him about it at the time (chapters/05_behind.md:78; chapters/10_april.md:99).
+- Keeps working at a task past the point where others have stopped, rather than give up early: still writing when time is called (chapters/05_behind.md:7).
+- UNDEFINED: how he occupies a room, what he does with his hands outside the two cited moments, how he handles being praised or bored, what he's like tired, what a free Saturday would look like for him, what he finds funny in other people. None of this is shown or reported by anyone.
+
+## Would do / would never do
+
+Nearly everything here is reported through other people, not observed directly — flagged as such rather than presented as settled.
+
+**Would (per report):**
+- Keep working past a time limit rather than stop early, even with little to show for it (chapters/05_behind.md:7).
+- Ask a specific, mechanism-level question when confused, rather than stay silent or fake understanding (chapters/05_behind.md:38).
+- Say plainly that he doesn't know when pushed past what he'd actually worked out, rather than guess (chapters/05_behind.md:38).
+- Cry where only one other child happens to see him, not in front of the group (chapters/05_behind.md:78).
+- Per Sam's account: tell an adult directly that something wasn't fun for him, rather than hide it (chapters/05_behind.md:67, 70).
+- Per Kavi's account: resist a parent's decision to take him home, rather than accept it quietly (chapters/10_april.md:99–103).
+
+**Would never (per report):**
+- Would never fall behind the rest of the group physically or academically — Kavi's account is explicit and unhedged that he kept up on both the water exercise and the bridge (chapters/10_april.md:103).
+- Would never make a scene about leaving in front of the other children — every account of his distress happens away from the group.
+- Would never be reported as unkind, resentful, or in conflict with anyone at camp. No line anywhere — from Sam, Ruth, or Kavi — attributes any ill will to him in either direction.
+- Would never get an explanation into the record himself. In every account, someone else is doing the telling; nothing here should be written as something Owen said, only as something someone else says he did or felt.
+
+## Body and habits
+
+UNDEFINED, entirely, except one detail remembered by Ruth: "he had a blue thing hanging off his bag" (chapters/10_april.md:35). No build, face, clothing beyond that one item, voice, or physical habit is given anywhere.
+
+## Relationships
+
+Mostly a list of other people talking about him rather than interacting with him — worth stating plainly rather than papering over.
+
+- **Sam:** [text] The one who tells Chloe he left, in the flattest possible terms, offering no elaboration and no theory (chapters/05_behind.md:65–76). Whatever Sam's relationship to Owen actually was is never shown — only Sam's report of the outcome.
+- **Ruth:** [text] Two separate, partially contradictory pieces of testimony months apart — that he wouldn't do "the water thing" (chapters/10_april.md:37) and that she saw him crying in the stairwell "on Thursday" (chapters/05_behind.md:78). She is a witness, not shown having a personal relationship with him beyond proximity.
+- **Kavi:** [text] The most detailed and most confident witness — claims to have seen him crying firsthand and states plainly that he wasn't behind (chapters/10_april.md:99–103). Even this is testimony, not an account of an actual friendship; nothing shows the two of them interacting before Owen leaves.
+- **Chloe:** [text] Never interacts with him directly on the page at all — she notices his absence, tries to build a model of why he left, and fails (chapters/05_behind.md:83). Their entire "relationship" consists of her asking other people about him.
+- **His mother:** [text, glimpsed only] Comes to collect him; the only detail given is that her car was outside and he was in the back of it (chapters/10_april.md:99). No dialogue, no description of her, no stated reason for the timing.
+
 ## Likes, dislikes, habits
 
 Everything here is [inferred] or [reported, not shown] — flagged accordingly rather than stated as established fact.

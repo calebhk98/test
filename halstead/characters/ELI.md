@@ -59,9 +59,9 @@ Halstead runs the same eight academic hours and two afternoon blocks for everyon
 - **Best at:** cryptography. The one on-page school scene gives this directly: the first term is spent entirely breaking things other people built, and "Eli gets into everything, and he does it without hurrying" (chapters/16_thirteen.md:69) — he solves in one evening a set that took eleven classmates a week (chapters/16_thirteen.md:71). [text]
 - **Worst at:** [inferred] rhetoric — the subject built around who benefits from an argument and who's paying for it. Eli's whole vocabulary is mechanism (cameras, enforcement, pipelines); a subject that grades you on persuading a room rather than being correct about a system doesn't reward what he's good at.
 - **Favourite:** cryptography, same reason as best-at — a subject that starts by handing you something broken and asking why. [text, extrapolated]
-- **Least favourite:** [inferred] formal epistemology — a subject about what it takes to be sure of anything at all, with no lever anywhere in it to actually pull. Eli's instinct is always toward something fixable; a subject that stays permanently open would read to him as unfinished homework, not philosophy.
+- **Least favourite:** [inferred] comparative religion — the one subject on the grid with no mechanism under it and no way to check an answer. Nothing in it can be broken, tested, or got into, which is the only way Eli engages with anything. *(Reassigned: the first pass gave him formal epistemology, which Theo's sheet also lands on with a sharper rationale — it turns Theo's own blind spot into the subject matter. Two characters who already blur should not share a least favourite.)*
 - **Secretly proud of:** [inferred] the annual no-libraries programming project — building something working with no outside tools is the direct school-age rehearsal for the worm's adult design constraint (boring, patient, built from nothing borrowed), and nobody at the school would have graded that project as remarkable at the time.
-- **Would drop if he could:** [inferred] formal epistemology, same reasoning as least favourite.
+- **Would drop if he could:** [inferred] comparative religion, same reasoning as least favourite.
 
 ## Personality off the page
 

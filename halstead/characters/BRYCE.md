@@ -47,6 +47,51 @@ Failure modes:
 2. Making him cruel. The text is explicit that this isn't mockery — "he isn't being mean about it." A rewritten line that gets a laugh at Chloe's expense rather than simply being correct about her has moved him out of character.
 3. Treating two lines as an established pattern. There isn't enough here to know what a third Bryce line would sound like with any confidence; don't extrapolate a full voice from one data point.
 
+## Subjects
+
+Bryce is a classmate at an ordinary school, not a Halstead student, so this is the ordinary version: what he's good at, what's hard for him, and how he reacts to a classmate who's clearly working ahead of everyone else.
+
+- **Worst at: arithmetic.** This is explicit and repeated across two separate school years, not a one-off joke — "still counting on his fingers" in first grade (chapters/01_before.md:10), and unchanged the following spring: "Bryce Dolan is still counting on his fingers" (chapters/02_march_4th.md:117). It is a real, stated fact about him, reported the same flat way everything else about him is reported.
+- **Best at:** [inferred] Noticing and reporting something true about another person, plainly, without being asked. It's the only thing he's ever shown doing well, and he does it once, correctly — the most accurate thing anyone outside Halstead says about Chloe in the whole book.
+- **Favourite / secretly proud of:** UNDEFINED.
+- **Least favourite:** [inferred, grounded] The timed arithmetic sheet — the one activity the text shows him actively trying to avoid being seen doing.
+- **Would drop if allowed:** [inferred] The arithmetic sheet, on the same evidence.
+
+**How he feels about a classmate who reads ahead:** the same way he'd report anything else true about a person — flatly, without envy and without it costing him anything. He is, on the page, a child who finds arithmetic hard *and* the one who says the truest thing about Chloe anyone outside Halstead ever manages. Those two facts sit next to each other without comment from him or from the narration — being slow at one thing doesn't make him wrong about another, and the text never treats his arithmetic as a joke, only as a fact, the same register it uses for the "weirder" line.
+
+## Personality off the page
+
+- Hands: doing arithmetic "down under the edge of his desk where he thinks Mrs. Aldana can't see him" (chapters/01_before.md:10) — the one described habit in the book for him, and it's a hiding gesture, not a nervous one; he's managing being watched, not visibly anxious on the page.
+- Occupies a room unremarkably — part of a group, part of a table, never singled out except by his own effort not to be.
+- Being wrong, bored, praised, tired, losing, a free Saturday, what he finds funny in others: all UNDEFINED. No scene shows any of them.
+
+## Would do / would never do
+
+**Would:**
+- Work a problem quietly and out of sight rather than ask for help or admit he's stuck (chapters/01_before.md:10).
+- Keep working at his own pace regardless of where everyone else in the room already is — still counting a full school year later, with no sign it's begun to bother him openly (chapters/02_march_4th.md:117).
+- State a comparison as a simple fact, with no judgment word attached to either side of it.
+- Stop talking the instant he's said what he came to say and go back to whatever he was doing (chapters/07_the_same_room.md:141).
+- Say something true about a person even if it isn't flattering, because it's accurate, not because he wants a reaction.
+
+**Would never:**
+- Would never repeat a thing once he had said it. His two recorded lines are a single observation and a single-word close; nothing in the text shows him circling back to reinforce a point.
+- Would never explain or elaborate on an observation once he's made it — no mechanism, no "because," no defense if nobody challenges him.
+- Would never let anyone see him still counting if he can help it — the hiding is deliberate, not incidental (chapters/01_before.md:10).
+- Would never dress an observation up as an insult. "Weirder" is reported the way you'd report weather, not thrown as a jab — there is no version of this in the text where he's trying to hurt her.
+- Would never initiate contact with Chloe. Both his lines are direct responses to something she has just said; he never starts an exchange.
+- Would never rush or fake finishing a sheet to match everyone else's pace.
+
+## Body and habits
+
+UNDEFINED beyond one habit: he counts on his fingers below the desk edge, out of the teacher's sightline (chapters/01_before.md:10). No build, posture, clothing, height, or any other physical detail is given anywhere in the text.
+
+## Relationships
+
+- **Chloe:** [text] The only person he's shown speaking to or about. His register doesn't shift between the two chapters where he's only mentioned in passing (chapters/01_before.md, chapters/02_march_4th.md) and the one where he actually addresses her (chapters/07_the_same_room.md) — same flat, unelaborated tone throughout.
+- **Mrs. Aldana:** [text] The one relationship that visibly shapes his behavior — he changes where he puts his hands specifically because of her (chapters/01_before.md:10).
+- **Kayleigh Burns:** [text] Assigned to the same table group in second grade (chapters/07_the_same_room.md:107) and speaks in the same scene she does, but no direct exchange between them is ever shown.
+
 ## Likes, dislikes, habits
 
 - Hides effort he isn't confident about [text] — works the subtraction sheet below the desk edge, out of the teacher's sightline (chapters/01_before.md:10).
