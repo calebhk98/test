@@ -36,7 +36,7 @@ She asks a lot after that and she asks all of it carefully, working down through
 
 "Nothing happened, she absolutely loved it."
 
-"I'm sure it was, but I'm asking anyway."
+"I'm sure she did, but I'm asking anyway."
 
 "She's been asking to go back since the day we picked her up, most days more than once." Her mom shifts in the chair. "She asked me in the parking lot outside this building, about nine minutes ago."
 

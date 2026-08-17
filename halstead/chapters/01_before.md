@@ -62,13 +62,13 @@ In November, Mrs. Aldana asks the class what clouds are made of, and Chloe knows
 "Water," she says.  
 "Good," Mrs. Aldana says, and moves on to the next thing on the board.  
 The exchange takes about two seconds, after which it's over and the class is doing something else, so Chloe puts her hand back down in her lap. A week later somebody asks where rain comes from and she says clouds, one word. In December they do the water cycle with arrows on the board. She says the arrows back in the right order when she's called on, and nothing else, and Mrs. Aldana says exactly. The short version works every single time she uses it. She also has to do it on purpose every single time. The whole answer is still in there, so she has to hold it back on purpose, every single time, which is the part that never gets easier.  
-On Fridays, Mrs. Aldana reads the best paper out loud without saying whose it is. Everybody guesses. Everybody is always right. In November it is Chloe's paper, which she knows about four words in. The assignment said four to six sentences about an animal, so she wrote six, because she counted. It was about a dog that only had three legs and didn't know it. When Mrs. Aldana finishes reading it, the room does the thing where nobody says anything at all. Chloe looks at the top of her desk until they move on to spelling. In December the assignment is four to six sentences about anything, and she writes four, about a boat. The paper Mrs. Aldana reads out is Maddie's, and everybody guesses Maddie.  
+On Fridays, Mrs. Aldana reads the best paper out loud without saying whose it is. Everybody guesses. So far this year, every guess has landed. In November it is Chloe's paper, which she knows about four words in. The assignment said four to six sentences about an animal, so she wrote six, because she counted. It was about a dog that only had three legs and didn't know it. When Mrs. Aldana finishes reading it, the room goes quiet, and Maddie looks down at her own desk. Chloe looks at the top of her desk until they move on to spelling. In December the assignment is four to six sentences about anything, and she writes four, about a boat. The paper Mrs. Aldana reads out is Maddie's, and everybody guesses Maddie.  
 \---  
 Conferences are on a Thursday night. Both her parents go in. Chloe sits on the floor in the hall outside with a book, where she can hear all three of them talking but can't hear any of the words. They're in there for eleven minutes, which Chloe counts. Then the door opens on her mom saying thank you so much in the phone voice, her dad saying we appreciate it. The three of them walk out through the dark part of the building where only every other light is on. Her dad drives. Her mom has the papers Mrs. Aldana gave them. She holds them up to read by the streetlights, tilting them, getting through one and then starting the next one.  
 "She says you're smart," her mom says.  
 "Okay." Chloe has her knees up on the seat, watching the streetlights come across the ceiling of the car.  
 "She says you're one of the strongest readers she's had, and she said that twice. She said it at the beginning and then she said it again at the end, like she wanted to make sure I wrote it down." Her mom turns a page. "She also says you have some trouble focusing."  
-Chloe thinks about the parking lot, and the boxes, and not knowing there had been a question. It's true, so she doesn't say anything about it.  
+The parking lot. The boxes. The question that had already happened without her. It's true, so she doesn't say anything about it.  
 "Do you have trouble focusing?"  
 "I don't know." It comes out flatter than she meant it to, flat enough that her mom looks up from the papers.  
 "Because what she actually said was that you can do the work when you want to, and to me that sounds like she's saying it's a choice thing, and I don't think it's a choice thing." Her mom says this to the papers instead of to Chloe, then turns around in her seat to look into the back. "Is it a choice thing? You can tell me if it is. Nobody's in trouble here, I'm not going to be mad, I'd just rather know."  
@@ -81,16 +81,16 @@ Her dad says huh and puts his eyes back on the road. Nobody says anything else t
 The checkup is in December and Chloe likes going. They do her height against the wall, and this year she is above last year's mark by an amount you can see from across the room. The doctor looks in her ears and down her throat, then has her follow his finger with her eyes without moving her head, which she is good at. Then her mom says she's been having a hard time at school, and the doctor rolls his chair around on its wheels so he's facing Chloe instead of the computer.  
 "Do you get in trouble at school?"  
 "Sometimes." He waits after she says it, which nobody at school ever does, so she adds, "Not a lot. Like once a week."  
-"What for?"  
+"What for?" the doctor asks, pen still on the chart.  
 "Not paying attention."  
 "Okay. Do you finish your work?"  
 "Sometimes. If it's something."  
 "If it's something."  
 "If it's something I haven't already done."  
 "Do you know what the teacher's talking about, when she calls on you?"  
-Chloe thinks about that one for a while. The real answer is that she knows what the teacher is talking about almost all of the time. The other thing is that sometimes she is entirely somewhere else and doesn't know a question happened at all, and those are two different things that don't go together in one word. There isn't a short version of it.  
+Chloe turns that one over while he waits. The real answer is that she knows what the teacher is talking about almost all of the time. The other thing is that sometimes she is entirely somewhere else and doesn't know a question happened at all, and those are two different things that don't go together in one word. There isn't a short version of it.  
 "Sometimes," she says.  
-He nods, turns back to the computer, types for a while without saying anything. Chloe reads the poster on the back of the door about the food groups, which she has now read three separate times in this room.  
+He nods, turns back to the computer, and types without saying anything. Chloe reads the poster on the back of the door about the food groups, which she has now read three separate times in this room.  
 "She's healthy, she's growing, there's nothing here that worries me," he says, to her mom now. "None of this is medical. I want to be clear about that part before anything else." He types something else. "But if the school's putting it in writing, I'd rather somebody looked at it properly than have you sitting on it another year. It might be worth getting her evaluated. For attention."  
 "That's a psychologist, or."  
 "I'll give you two names. One of them you'll wait four months on. Call both, take whoever comes up first."  
@@ -105,18 +105,18 @@ Her cousin Dana is nineteen and sits next to her. "How's school?"
 "Some of them."  
 "That's what your mom said." Dana waits a second, the way people do when they think you have more. "What are you reading?"  
 "Different things."  
-Dana says nice, then turns to talk to somebody else, so Chloe eats her potatoes. That's the whole conversation. Her dad is at the far end of the table and he doesn't say anything about it. On the way home Chloe has her head against the cold part of the window with her eyes shut. She is not asleep, which is how she hears her dad say she was quiet tonight.  
+Dana says nice, then turns to talk to somebody else, so Chloe eats her potatoes. That's the whole conversation. Her dad is at the far end of the table and he doesn't say anything about it. On the way home Chloe has her head against the cold part of the window with her eyes shut. She is not asleep. "She was quiet tonight," her dad says, and she is awake enough to hear it.  
 "She was fine," her mom says.  
 "I didn't say she wasn't fine."  
 \---  
-In January they read a book about a boy and a sled dog out loud, going around the room. Chloe read the whole thing on Tuesday. She read the ending sitting on the bathroom floor at home, because she couldn't wait until after dinner to find out whether the dog lived. Aiden R. is on chapter four, page two, and he stops at about every fourth word. She has her own copy open in front of her at chapter four, following along, which is the thing she is supposed to be doing. She does it for six pages.  
+In January they read a book about a boy and a sled dog out loud, going around the room. Chloe had read the whole thing on Tuesday. She had read the ending sitting on the bathroom floor at home, because she couldn't wait until after dinner to find out whether the dog lived. Aiden R. is on chapter four, page two, and he stops at about every fourth word. She has her own copy open in front of her at chapter four, following along, which is the thing she is supposed to be doing. She does it for six pages.  
 Then she turns to chapter nine.  
 She is four pages into it when Mrs. Aldana says her name in the flat voice. "We're on chapter four."  
 Say okay. Turn back.  
 "I know," Chloe says.  
 "Then find chapter four, please."  
 "I already read chapter nine, though. I read all of it on Tuesday."  
-Some of the kids laugh, and not with her. Mrs. Aldana comes down the row and takes the book, gently, with two fingers on the spine. She puts it on her own desk for the rest of the day and doesn't say anything else about it. Then she goes back up front and tells Aiden to keep going, which takes him the rest of the period. Chloe sits with her hands in her lap. She works on it through lunch and gets nowhere with it. She got in trouble for reading, in reading.  
+Some of the kids laugh, and not with her. Mrs. Aldana comes down the row and takes the book, gently, with two fingers on the spine. She puts it on her own desk for the rest of the day and doesn't say anything else about it. Then she goes back up front and tells Aiden to keep going, which takes him the rest of the period. Chloe sits with her hands in her lap. She works on it through lunch and gets nowhere with it. She gets in trouble for reading, in reading.  
 That night at dinner she tells them what happened, and it takes about a minute and a half.  
 "She took your book," her dad says.  
 "Until the end of the day. I got it back at the end of the day."  
@@ -124,9 +124,9 @@ That night at dinner she tells them what happened, and it takes about a minute a
 "I don't know. Probably not, because they're still on chapter four."  
 "Well, that's the class, though. The class is on chapter four."  
 "I know. That's what she said."  
-Her mom is quiet for a second, and then she says, "She probably just wants everybody on the same page. Literally." Then she laughs at her own joke. Chloe laughs too, because it's her mom, while her dad does the noise he does instead of laughing. Then something goes out of her mom's face. Chloe watches it go without knowing what it's for. Her mom gets up and starts the dishes about ten minutes before anybody is finished eating. The whole dinner takes nine minutes.  
+Her mom is quiet for a second, and then she says, "She probably just wants everybody on the same page. Literally." Then she laughs at her own joke. Chloe laughs too, because it's her mom, while her dad does the noise he does instead of laughing. Then the corner of her mom's mouth drops and doesn't come back up. Her mom gets up and starts the dishes about ten minutes before anybody is finished eating.  
 \---  
-School is boring. It's boring for everybody, obviously, because there's one room and one worksheet for all of them. So the boring part isn't the problem, because the other kids sit through it fine. They don't watch the parking lot, or say Icarus, or get their book taken away in reading. She is worse at the part that everybody has to do. It isn't complicated, or interesting, so there is nothing to be done about it except get better at sitting there. Some people can hold their breath a long time and some people can't.  
+School is boring. It's boring for everybody, obviously, because there's one room and one worksheet for all of them. The other kids sit through it fine; Chloe is the one who can't. They don't watch the parking lot, or say Icarus, or get their book taken away in reading. She is worse at the part that everybody has to do. It isn't complicated, or interesting, so there is nothing to be done about it except get better at sitting there. Some people can hold their breath a long time and some people can't.  
 So in January she decides she is going to get good at sitting there. By February she can make a worksheet last most of the way to the end by holding the pencil over the page and moving it every so often. She knows which seats look out at something, as opposed to the ones facing the field, which is empty. The book stays in her desk. She still puts her hand in and touches the corner of it four or five times a day, but she has stopped taking it out.  
 \---  
 The appointment comes out of a phone call in February. Chloe is in the next room and hears her mom say March fourth. Then she says it again, and the third time she says it slowly, while she's writing it down. It goes on a yellow sticky note on the fridge, under the magnet shaped like a strawberry. After that her mom checks it every morning while the coffee is going. Chloe reads it too, when there's nobody in the kitchen. It says MARCH 4, and a time, and a name she can't say.

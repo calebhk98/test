@@ -48,7 +48,7 @@ She comes back down. "I don't know?"
 
 "No, I didn't know I needed that," her mouth goes tight at the corners, the way it does right before.
 
-Her mom's eyes come up. "It's OK, we can just ask the school," and then she closes the phone book and gets the camp folder down off the shelf by the door.
+Her mom's eyes come up, "It's OK, we can just ask the school," and then she closes the phone book and gets the camp folder down off the shelf by the door.
 
 Somebody at the school picks up on the second ring. Chloe gets close and tries to listen. Her mom gives their name, then Chloe's, confirms yes, that's the one, and settles into a long stretch of listening with her hand flat on the counter.
 
@@ -108,7 +108,7 @@ Second grade is Ms. Vance, who everybody says is the nice one. The desks are in 
 
 Somebody asks whether you can swap groups, and Ms. Vance says no in a way that has clearly been asked for before. Chloe's group is Bryce Dolan, Kayleigh Burns, and a boy called Aiden R.
 
-The first math sheet comes around at twenty past nine, and she squints at it before she places what it even is. It's adding with carrying. She learned this last year, and she can still see the little box you write the one in and Mrs. Aldana drawing that box in green marker. There are thirty of them on the page.
+The first math sheet comes around at twenty past nine, and she squints at it before she can tell what it even is. It's adding with carrying. She learned this last year, and she can still see the little box you write the one in and Mrs. Aldana drawing that box in green marker. There are thirty of them on the page.
 
 Fractions at camp, staying up until the number finally sat still on the page, and now this, math from last year again. She does all thirty, then goes back to the top and checks each one again. Every answer matches what she wrote the first time. She puts her hands in her lap and waits for the room to catch up around her.
 
