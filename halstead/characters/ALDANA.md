@@ -1,127 +1,136 @@
-# Mrs. Aldana
+# Carmen Aldana
 
-Chloe's first-grade teacher: runs a room of thirty on a fair, exhausted, one-speed system that has no setting for a kid who finishes in ninety seconds.
+Chloe's first-grade teacher [surname text; first name Carmen invented]: nineteen years into a job she is still good at, running a room of twenty-nine on a fair, exhausted, one-speed system that has no setting for a kid who finishes in ninety seconds.
 
-**Age span:** adult, one school year (Chloe age 6) | **MBTI:** ISTJ (writing aid, not a claim) | **IQ:** not inferable — no cognitive content in her lines, only classroom management
-**Appears in:** on-page and speaking only in chapters/01_before.md. Referenced afterward as a unit of memory/comparison, with no new dialogue, in chapters/02_march_4th.md (paraphrased, not quoted: "Mrs. Aldana asks her once, in April, whether everything is all right at home"), 04_pluto.md, 05_behind.md, and 07_the_same_room.md.
-**Speaks:** 7 quoted lines, all in chapters/01_before.md. Two more of her words are reported without quotation marks in the same chapter ("Good," and "exactly" — see Known problems). Nothing after that chapter is a new line; every later mention is Chloe measuring something else against her.
+**Age span:** 44 during Chloe's first-grade year [invented] | **MBTI:** ISTJ (writing aid, not a claim) | **IQ:** not inferable from text — no cognitive content in her lines, only classroom management
+**Appears in:** on-page and speaking only in chapters/01_before.md. Referenced afterward as a unit of memory/comparison, with no new dialogue, in chapters/02_march_4th.md (paraphrased, not quoted), 04_pluto.md, 05_behind.md, and 07_the_same_room.md.
+**Speaks:** 7 quoted lines [text], all in chapters/01_before.md. Two more of her words are reported without quotation marks in the same chapter ("Good," and "exactly").
 
 ## Voice in one paragraph
 
-She talks in verdicts, not sentences. Four words is her ceiling for anything that isn't a direct question, she never explains a decision, and she never raises the stakes of an infraction past the infraction itself — the book is confiscated "for the rest of the day," and it comes back. She asks exactly one real question in the whole chapter ("What was the question?") and it is rhetorical; she already knows Chloe wasn't listening. She does not scold, threaten, or generalize about Chloe's character. Her most characteristic line is "'That's what I thought.' Mrs. Aldana doesn't say it mean. She says it tired." (chapters/01_before.md:14) — four words of verdict, and the entire indictment of the character sitting in the one word the narration uses to describe how she says it.
+She talks in verdicts, not sentences [text]. Four words is her ceiling for anything that isn't a direct question, she never explains a decision, and she never raises the stakes of an infraction past the infraction itself — the book is confiscated "for the rest of the day," and it comes back. Her most characteristic line is "'That's what I thought.' Mrs. Aldana doesn't say it mean. She says it tired." (chapters/01_before.md:14) [text] — four words of verdict, and the entire indictment of the character sitting in the one word the narration uses to describe how she says it.
 
 ## Dials
 
 | | |
 | :-- | :-- |
-| sentence shape | shortest on-page adult in the cast — flat one-to-five-word verdicts, no subordinate clause ever |
-| disagrees by | doesn't disagree — delivers a closing verdict and moves on, no argument offered either way |
-| wordiness | hand-counted from her 7 lines: ~2.7 words/line, lowest of any speaking adult in this batch |
-| terseness | 2 of 7 lines (29%) are three words or fewer ("Chloe." / "Good,") |
-| jokiness | 0/10 — no joke anywhere in her one scene |
-| hedging | 0% — no "maybe," "I think," or qualifier of any kind |
-| questions | 1 of 7 lines (14%) — "What was the question?", and it isn't seeking information, it's closing the exchange |
-| figurative | not allowed — none used, no built image, no idiom |
+| sentence shape | shortest on-page adult in the cast — flat one-to-five-word verdicts, no subordinate clause ever [text] |
+| disagrees by | doesn't disagree — delivers a closing verdict and moves on [text] |
+| wordiness | ~2.7 words/line, lowest of any speaking adult in this batch [text, hand-counted] |
+| terseness | 2 of 7 lines (29%) are three words or fewer [text] |
+| jokiness | 0/10 — no joke anywhere in her one scene [text] |
+| hedging | 0% [text] |
+| questions | 1 of 7 lines (14%) [text] |
+| figurative | not allowed — none used [text] |
 
 ## Signature — theirs alone
 
-Thin evidence: with only one scene, nothing has repeated enough to call it hers with confidence. What the scene does show, twice, is a two-beat pattern — a short flat verdict, then an immediate physical action that ends the exchange without further comment:
-
+A short flat verdict, then an immediate physical action that ends the exchange without further comment [text]:
 - "'That's what I thought.' ... Then she taps the worksheet twice with one finger and walks back up to the front of the room." (chapters/01_before.md:14)
 - "'Then find chapter four, please.' ... Mrs. Aldana comes down the row and takes the book, gently, with two fingers on the spine." (chapters/01_before.md:115–117)
-
-**Proposal** [inferred]: if she returns on the page, keep this shape — verdict, then a small deliberate hand action, then she is already walking away before Chloe can respond. Do not give her a second scene without it; a single data point is not enough to know if it's a tic or a coincidence.
 
 ## Would they say this?
 
 - YES if it is four words or fewer and closes an exchange rather than opening one.
+- YES if the delivery reads as tired rather than angry, per the text's own description.
+- YES if the consequence is small, immediate, and time-boxed.
+- YES if it addresses the immediate act only, never Chloe's character or motive.
+- YES if it comes paired with a small, deliberate hand gesture — a tap, two fingers on a spine.
+- YES if it treats a wrong answer or a missed question as simply a fact to note, not a fault to punish.
+- YES if it reads the room fairly rather than personally — the same rule for all twenty-nine kids.
+- YES if it praises a piece of work without singling out who wrote it, protecting a shy student while still rewarding them.
 - NO if it explains or justifies the decision — she never gives a reason, only the verdict.
-- YES if the narration or the reader can read it as tired rather than angry — the text is explicit that this is the register.
-- NO if it comments on Chloe's character, motive, or worth ("you do this on purpose," "you think you're better than everyone") — every line she has addresses the immediate act, never the person.
-- YES if the consequence is small, immediate, and time-boxed (the book comes back "at the end of the day").
-- NO if the consequence outlasts the scene, escalates to another adult, or gets mentioned again later — nothing she does in chapters/01 is ever referenced by any other adult in the book.
-- NO if it uses a metaphor, simile, or invented image — she is entirely literal.
-- NO if she reacts to the class laughing at Chloe — chapters/01_before.md:117 shows the class laughing "not with her" in the same beat Aldana is taking the book, and Aldana's line addresses only the book, not the laughter. A rewritten line that has her also address the class would be new characterization, not a restoration.
+- NO if it comments on Chloe's character, motive, or worth.
+- NO if it uses a metaphor or invented image.
 
 ## The kindly-and-inadequate test
 
-A line for Aldana is **kindly-and-inadequate** if the failure is structural: she runs the room the way a room of thirty has to be run — wait for everyone, one pace, no exceptions — and the rule that's fair to twenty-nine kids is exactly the rule that starves the thirtieth. Nothing in her lines is aimed at Chloe as a person; "That's what I thought" is delivered "tired," not mean, because Aldana isn't diagnosing Chloe, she's naming a pattern she's seen thirty times that day. That is the whole indictment, and it only works if the line stays procedural.
-
-A line would be **unkind** — and is not supported anywhere in the text — if it turned the verdict into a judgment of Chloe specifically: naming her as lazy, showing off, or a problem in front of the class, mocking the parking-lot daydreaming, or letting the book confiscation run past the school day. She never does any of that. A rewriter adding a scene should treat any line that makes Chloe's inattention *personal* rather than *procedural* as off-model, no matter how mild it sounds.
+A line for Carmen is **kindly-and-inadequate** if the failure is structural: she runs the room the way a room of twenty-nine has to be run — wait for everyone, one pace, no exceptions — and the rule that's fair to twenty-eight kids is exactly the rule that starves the twenty-ninth. Nothing in her lines is aimed at Chloe as a person; "That's what I thought" is delivered "tired," not mean, because Carmen isn't diagnosing Chloe, she's naming a pattern she's seen hundreds of times. A line would be **unkind** — and nothing in the text supports it — if it turned the verdict into a judgment of Chloe specifically: naming her as lazy or showing off in front of the class, or letting the book confiscation run past the school day. She never does either.
 
 ## Are they acting like themselves?
 
-She keeps a folder on Chloe that predates her own year with the class (started by the kindergarten teacher, added to since September) but the text never shows her opening it in front of anyone or acting on what's in it — the folder is bureaucratic, not personal. She reads papers aloud on Fridays anonymously and lets the class guess; when it's Chloe's paper, "the room does the thing where nobody says anything at all," and Aldana moves straight to spelling without addressing the silence. She writes real observations for the parent conference ("one of the strongest readers she's had," "some trouble focusing") that are individually true and, combined, produce a report Meg reads as contradictory. She never singles Chloe out to help her personally, and never singles her out to punish her beyond the one book incident.
+She keeps a folder on Chloe that predates her own year with the class, but never opens it in front of anyone. She reads papers aloud on Fridays anonymously and lets the class guess. She writes both a real strength and a real concern on the same conference report, honestly, even knowing together they might read as contradictory to a worried parent.
 
-**Failure modes for a rewriter:**
-1. Making her cruel or sarcastic. The text goes out of its way to specify "doesn't say it mean" — any rewrite that plays her lines for meanness breaks the book's argument that ordinary, decent teaching is what fails Chloe.
-2. Giving her insight into why Chloe is inattentive. She never gets curious about the cause; that incuriosity, not malice, is the point.
-3. Writing new dialogue for her outside chapters/01 without flagging it as new invention — every later "appearance" is memory, and the sheet's evidence base for her voice is a single scene.
+**Failure modes for a rewriter:** making her cruel or sarcastic (the text specifies "doesn't say it mean"); giving her insight into why Chloe is inattentive that she never shows; writing new dialogue for her outside chapters/01 without flagging it as new invention.
 
-## Subjects
+## Subjects and schedule
 
-- Teaches first grade, self-contained: reading, spelling, arithmetic (subtraction, then the run-up to carrying), the water cycle, weekly writing.
-- Responsible for roughly thirty children alone, all subjects, all day [text — thirty problems on the worksheet, "everybody" held to one pace].
-- Best at: pacing a whole room toward the same idea at once — the green-marker box for carrying [text, referenced in chapters/07_the_same_room.md:109], the water-cycle arrows everyone recites back in order.
-- Worst at: has no visible second track for a child who is finished before the lesson has properly started — the text never shows her offering one.
-- Favourite: the Friday read-aloud of the week's best paper, kept anonymous so the room has to guess [text, chapters/01_before.md:63] — the one ritual in her classroom that rewards rather than corrects.
-- Least favourite [inferred]: the stretch of any lesson where most of the room is still stuck and nothing new can happen yet — the likely source of "tired" rather than "mean."
-- Secretly proud of [inferred]: getting a quiet or overlooked writer's paper picked on a Friday and watched by the whole room without anyone dismissing it.
-- Would drop if allowed [inferred]: nothing about the wait-for-everyone pacing itself reads as chosen for pleasure — if there were another way to run a room this size fairly, nothing suggests she'd keep this one.
+- Teaches first grade, self-contained: reading, spelling, arithmetic (subtraction, then the run-up to carrying), the water cycle, weekly writing [text].
+- Class size: twenty-nine students this year [invented, consistent with the thirty-problem worksheet and "everybody" held to one pace].
+- Best at: pacing a whole room toward the same idea at once — the green-marker box for carrying [text, chapters/07_the_same_room.md:109], the water-cycle arrows everyone recites back in order [text].
+- Worst at: has no second track for a child who's finished before the lesson has properly started [text — none is shown].
+- What she teaches that nobody else in the building does: a free two-week pre-reading camp at the public library every August for incoming kindergartners, unpaid beyond a small stipend, which she has run for eleven years [invented] — it's where her Friday read-aloud ritual actually comes from originally.
+- The year it clicked for her: her fourth year teaching, when a boy who'd been silent since September read his own sentence out loud on a Friday without being asked twice, and she understood the read-aloud ritual was doing real work, not just filling ten minutes [invented].
+- Secretly proud of: that in nineteen years she has never once lost her temper in front of a class — she has been tempted plenty, and has always instead just gone quiet and tired instead of loud [invented, consistent with text].
+
+## Home
+
+Grew up two hours away in a smaller town, the daughter of a mechanic and a school cafeteria worker, the first person in her family to finish a four-year degree [invented]. Married young, took the name Aldana, divorced amicably in her early thirties, and kept the name because by then several hundred children had already learned to spell it [invented]. No children of her own — she has talked herself out of minding this most years, mostly by having thirty new ones every September [invented]. Lives eleven minutes from the school in a rented two-bedroom with a cat named after a state capital she once visited on a teaching conference [invented]. Her mother, retired now, lives forty minutes away and calls every Sunday at six; her father died when Carmen was thirty-one, and she still sometimes reaches to call him on the drive home before remembering [invented]. Dinner on a school night is whatever's fastest, eaten standing at the kitchen counter while she grades; on Sundays she cooks a proper pot of something — a stew, a chili — that she eats off of all week, the one domestic ritual she actually enjoys [invented].
+
+## Body
+
+Mid-forties, average height, a little soft through the middle in the specific way of someone who stands eight hours a day and sits for none of it [invented]. Started needing reading glasses two years ago and wears them on a beaded chain she constantly forgets is around her neck, patting her own chest to find them [invented]. Keeps her hair short and practical — long hair and thirty six-year-olds do not mix, she learned this the hard way in year two [invented]. Wears cardigans with deep pockets year-round, even in warm months, because the pockets are where the classroom actually lives — chalk, a spare pencil, hand sanitizer, a rubber band she keeps meaning to use and never does [invented]. Comfortable, unglamorous flat shoes, replaced twice a year [invented]. Moves through the room in short, economical steps, never wasting a trip between desks [text-adjacent, inferred from the pacing of her one scene]. Sleeps well, unusually for a teacher — she credits the physical exhaustion of the job itself [invented].
 
 ## Personality off the page
 
-She thinks the job is being run correctly: one rule, applied the same way to all thirty kids, every day, with no exceptions carved out for anyone — to her, that consistency *is* fairness, not a failure of it. She has almost certainly seen the early-finisher-staring-out-the-window pattern hundreds of times by now, which is where "tired" comes from in the text's own words: not new frustration, old and familiar frustration. She does not read Chloe's drift as defiance — "That's what I thought" is confirmation of a pattern she already expected, not an accusation. Where she sits: at the front, near the board, moving down a row only when something needs handling directly. What she does with her hands: taps a worksheet once to close a verdict; takes an object with two fingers rather than a fist. Bored, wrong, praised, losing: UNDEFINED — no scene shows her in any of those states. Tired: the text's only confirmed emotional register for her — flat, short, unangry. At 2am and on a free Saturday: UNDEFINED, though grading thirty worksheets is the obvious [inferred] guess. What she'd find funny in someone else: UNDEFINED.
+She believes the job is being run correctly: one rule, applied the same way to all twenty-nine kids, every day, with no exceptions carved out for anyone — to her, that consistency *is* fairness [inferred from text]. She has seen the early-finisher-staring-out-the-window pattern hundreds of times, which is where "tired" comes from in the text's own words [text]. Bored: rarely, there isn't time in her day for it [invented]. Wrong: takes correction from a parent or an administrator quietly, turns it over privately rather than arguing in the moment, and usually does change something, slowly [invented]. Praised: deflects it onto the class — "they did the work" — and means it [invented]. Losing an argument: goes flat and short rather than raising her voice, the same register she uses on a misbehaving six-year-old [inferred]. Tired: the text's one confirmed emotional register — flat, short, unangry [text]. At 2am: rarely awake for it; when she is, it's report-card season and she's at the kitchen table with a stack of folders [invented]. A free Saturday: the library, then her mother's, then home with a book she picked for herself, not for a lesson plan [invented]. What she finds funny in other people: earnest overconfidence in someone half her age — she has a soft spot for it because she remembers having it herself [invented].
 
-## Would do / would never do
+## Interior life
 
-**Would do:**
-- Wait for every child in the room to finish before moving the lesson on, even when it costs the fastest kids minutes of enforced stillness.
-- Take a distraction away calmly and hand it back at the end of the same day, with no consequence added past that.
+Wants, unsaid: one year, just one, with a class small enough that she could actually build a second track for the two or three kids who finish everything early — she has never had the staffing or the time, and she has stopped saying so out loud because nothing ever changes when she does [invented]. Afraid of: that she is quietly losing a kid to the system's slowness every single year without ever finding out which one, because the ones who go quiet don't make noise on the way down [invented]. Thinks about before sleep: tomorrow's read-aloud pick, and whether a particular grade was fair [invented]. A free year: she'd spend it reading everything she's never had time for and running her library camp full-time [invented]. Believes something the school administration would argue with: that a mandatory single pace for an entire room is a policy failure dressed up as fairness, though she has never said this in a staff meeting because she doesn't see an alternative that's fair to the other twenty-eight [invented]. What she's wrong about: that there's no room in her classroom for an early finisher — there is room, she has simply never been given the minutes to build it, and she has stopped believing they're coming [invented].
+
+## The small stuff
+
+Drinks black coffee from a thermos, refilled in the teacher's lounge at 7:10 sharp, every day, without variation [invented]. Handwriting: small, fast, correct cursive she was taught in the 1980s and never updated [invented]. Her desk is organized around a color-coded folder system nobody else in the building uses but her [invented]. Pockets: chalk, a spare pencil, hand sanitizer, a rubber band she never uses [invented]. Clips coupons and frequently buys her own classroom supplies rather than filing the reimbursement paperwork, because the paperwork takes longer than the money is worth to her [invented]. Superstition: the Friday read-aloud happens on a Friday, never moved, never skipped — the week feels unfinished to her otherwise [invented]. Barely touches her phone during school hours; texts her mother back at 3:45 sharp, right after dismissal, every day [invented]. First thing every morning: unlocks the room by 7:00 and waters a spider plant on the windowsill before anything else happens [invented].
+
+## Would do
+
+- Wait for every child in the room to finish before moving the lesson on, even at real cost to the fastest kids.
+- Take a distraction away calmly and hand it back at the end of the same day, no added consequence.
 - Read a quiet or overlooked kid's work aloud anonymously and let the class's own guess be the compliment.
-- Put a genuine strength and a genuine concern on the same report card, even knowing together they might read as contradictory.
+- Put a genuine strength and a genuine concern on the same report card, honestly, even knowing they might read as contradictory.
 - Let a struggling reader keep working through a passage without visible impatience.
-- Mention a change in a child's demeanor to the parents, once, plainly, and leave what happens next to them.
+- Mention a change in a child's demeanor to the parents, plainly, once, and leave the follow-up to them.
+- Run a free summer reading program for incoming students on her own time, for over a decade [invented].
+- Buy her own classroom supplies rather than fight the reimbursement paperwork [invented].
+- Water the same plant on the same windowsill every single morning before the day starts [invented].
 
-**Would never:**
-- Single a child out to the class as the reason a lesson is running slow, or say so where anyone could hear it.
-- Raise her voice at a six-year-old for finishing early or for looking out a window.
-- Let a confiscated item stay taken past the school day, or turn it into a running punishment.
-- Read a child's quietness or drift as laziness, disrespect, or showing off, even when it looks that way from outside.
+## Would never
+
+- Single a child out to the class as the reason a lesson is running slow.
 - Discuss what's in a student's file with anyone but that child's own parents.
-- Join in, or let linger, a moment where the class laughs at one of its own.
-
-## Body and habits
-
-Build, face, hair, clothing: UNDEFINED — the text gives no physical description of her at all. Hands: taps a worksheet with one finger to close an exchange; takes a confiscated item "gently, with two fingers on the spine" rather than snatching it [text, chapters/01_before.md:14, 117]. Movement: stands at the front by default; comes down a row only to intervene directly, then returns to the front immediately after [text]. Tools: uses a green marker at the board for worked examples [text, referenced chapters/07_the_same_room.md:109]. Voice quality: the one attribute the text commits to — delivered "tired," specifically not "mean" [text, chapters/01_before.md:14]. Sleep, eating, dress: UNDEFINED.
+- Let a confiscated item stay taken past the day it was taken on.
 
 ## Relationships
 
-- **Chloe:** wants her finishing with the group and following along; delivers correction without ever asking why she drifts, and never escalates past the moment.
-- **Meg:** conference-only contact — gives specific, honestly mixed written feedback ("one of the strongest readers she's had" alongside "some trouble focusing") rather than a smoothed-over summary; no scene shows them speaking directly outside that one meeting.
-- **Bryce Dolan, Kayleigh Burns, Aiden R. (classmates):** held to the identical pace and rules as Chloe — no favoritism shown toward or away from anyone in either direction.
+- **Chloe:** wants her finishing with the group and following along; delivers correction without asking why she drifts, and never escalates past the moment [text].
+- **Meg:** conference-only contact — gives specific, honestly mixed written feedback rather than a smoothed-over summary [text]; no scene shows them speaking directly outside that meeting.
+- **Bryce, Kayleigh, Aiden R. (classmates):** held to the identical pace and rules as Chloe — no favoritism shown [text].
+- **Her mother:** calls every Sunday at six; the one relationship in her life the text-adjacent invention gives real regularity to [invented].
+- **Colleagues:** UNDEFINED in text; [invented] collegial but not close — she eats lunch fast, alone, grading, more often than in the lounge.
 
 ## Likes, dislikes, habits
 
-- **Likes:** an orderly room where everyone finishes together [inferred from her wait-for-everyone policy, chapters/01_before.md]. Reading the best paper of the week aloud on Fridays [text].
-- **Dislikes:** a student who isn't following along with the group activity [text — the chapter-nine book incident].
-- **Habits:** taps the worksheet with one finger to mark a verdict as final [text, chapters/01_before.md:14]. Takes a confiscated item "gently, with two fingers on the spine" rather than snatching it [text, chapters/01_before.md:117]. Uses green marker for worked examples on the board [text, referenced in chapters/07_the_same_room.md:109].
+- **Likes:** an orderly room where everyone finishes together [text]. Reading the best paper of the week aloud on Fridays [text]. Her Sunday cooking ritual [invented].
+- **Dislikes:** a lesson that can't move because most of the room is still stuck [inferred].
+- **Habits:** taps a worksheet to mark a verdict as final [text]. Takes an item "gently, with two fingers on the spine" [text]. Uses green marker for worked examples [text].
 
 ## Facts a rewriter needs
 
-- Name: Mrs. Aldana. First name UNDEFINED.
-- First-grade teacher, one classroom, roughly thirty students (the subtraction worksheet has thirty problems; Bryce and "three other kids" are behind him at problem four).
-- Has maintained a folder on Chloe since it was started by the prior year's kindergarten teacher; adds to it herself from September (chapters/01_before.md:4).
-- Meets with both of Chloe's parents at a scheduled conference; the substance of that conversation is reported by Meg and Dave in the car, not shown from Aldana's side.
-- Only confirmed direct exchange with Chloe: the parking-lot inattention (early in the year) and the chapter-nine book confiscation (January, same school year).
-- Not confirmed to know or ever learn about the March 4th testing, the depression diagnosis, or Halstead — none of that happens until after her year with Chloe ends.
+- Full name: Carmen Aldana [surname text, first name invented]. Age 44 during Chloe's first-grade year [invented].
+- Divorced in her early thirties, no children of her own, one cat [invented].
+- Nineteen years teaching, all at the same school [invented].
+- First-grade teacher, self-contained classroom, twenty-nine students [text/invented].
+- Runs a free pre-reading camp at the public library every August, eleven years running [invented].
+- Whether she remembers Chloe years later: yes, vaguely — she tells a version of the "subtraction kid who read ahead" story at teacher trainings about listening for the right kind of quiet in a room, without ever learning what became of her [invented].
+- Meets with both of Chloe's parents at a scheduled conference; the conversation is reported by Meg and Dave, not shown from Aldana's side [text].
 
 ## Known problems
 
-- **Single-scene character.** Every line and every fact about her comes from chapters/01_before.md. Four later chapters reference her, but only as something Chloe measures a new experience against ("Six would have been the best one in Mrs. Aldana's room," chapters/05_behind.md:13) — none of it is new characterization. A rewriter who wants more Aldana has to invent it, not restore it, and should say so.
-- **Two of her lines break the quoted-dialogue convention.** "Good," (chapters/01_before.md:61) and "exactly" (chapters/01_before.md:62) are reported in running prose without the quotation marks her other five lines get. This may be a deliberate minimizing device — her praise gets literally less typographic weight than her corrections — or it may be an inconsistency. Flag for the author rather than resolve silently.
-- **The brief's estimate of "~12 speaking lines" overcounts what's on the page.** Only 7 lines carry quotation marks. If the higher count is wanted, it likely needs the two unquoted words above formatted as dialogue, plus new material — not a recount of the existing text.
+- Single-scene character on the page — every quoted line comes from chapters/01_before.md; later chapters use her only as a unit of comparison, not new characterization [text-based finding, unchanged by this pass].
+- Two of her lines ("Good," "exactly") are reported without quotation marks [text] — flag for the author rather than resolve silently.
+- The brief's earlier estimate of "~12 speaking lines" overcounts what's quoted on the page (7 lines) [text-based finding].
 
 ## Do not confuse with
 
-**Ms. Vance**, the second-grade teacher. Both deliver short, unembellished lines and both decline to escalate. The dividing cue: Vance touches Chloe — crouches to her level, puts a hand flat on her back — and Aldana never touches her at all; the nearest she comes is taking the book "with two fingers on the spine," which is contact with an object, not with the child.
+**Laura Vance**, the second-grade teacher. Both are unelaborated, non-ironic, competent classroom managers who never target Chloe personally, and both now have full invented biographies that could read similarly on a skim. The dividing cue stays textual: touch. Carmen never touches Chloe — the nearest she comes is taking a book "with two fingers on the spine." Laura crouches to the floor and keeps a hand flat on Chloe's back.

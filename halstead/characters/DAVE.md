@@ -2,15 +2,16 @@
 
 Chloe's father: the parent who finds the real problem in a document, married twenty years to a woman who finds the real problem in an institution, both of them worried about the same child from two angles at once.
 
+**Full name:** David "Dave" Kessler. [invented — the manuscript never gives his surname directly; "Kessler" is the family name Chloe carries, and the household is Kessler]
 **Age span:** adult throughout, chapters/01–19 (Chloe ages 6–16 across his appearances) | **MBTI:** ISTJ (writing aid, not a claim) | **IQ:** 120–130, reader inference per SYNOPSIS_CHARACTERS_TIMELINE.md
 **Appears in:** chapters/01_before.md, 03_the_letter.md, 06_the_list.md, 09_february.md, 11_eight.md, 12_nine.md, 13_ten_pages.md, 14_sixty_degrees.md, 15_twelve.md, 16_thirteen.md, 17_fourteen.md, 18_fifteen.md, 19_sixteen.md, and CHAPTERS_16_22_v2.md Ch18 "The First One" (present, non-speaking). Not present at all in chapters/02, 05, 07, 08, 10, 20, or anywhere in CHAPTERS_23_30_v2.md.
-**Speaks:** roughly 90 lines, front-loaded into chapters/03 (his heaviest single chapter) and thinning steadily after chapters/14. Zero lines at graduation (CHAPTERS_16_22_v2.md Ch18).
+**Speaks:** roughly 90 lines, front-loaded into chapters/03 and thinning steadily after chapters/14.
 
-**He is named.** SYNOPSIS_CHARACTERS_TIMELINE.md heads his section "Dad (unnamed)." That's not accurate about the dialogue: Meg calls him "Dave" four times — chapters/06_the_list.md (twice: "I told Dave, I'm not sending her..." and "Four hours away, Dave"), chapters/09_february.md ("She said take my birthday, Dave"), and chapters/11_eight.md ("Dave, she's never fought me"). The narrator never uses the name; no other character does either. See Known problems.
+**He is named.** SYNOPSIS_CHARACTERS_TIMELINE.md heads his section "Dad (unnamed)," but Meg calls him "Dave" four times in dialogue — chapters/06_the_list.md (twice), chapters/09_february.md, and chapters/11_eight.md. The narrator never uses it; no other character does either.
 
 ## Voice in one paragraph
 
-He runs two registers and nothing in between. At home he closes a beat with a single low-commitment word — "Cool," "Huh" — that undersells whatever he's actually feeling. Under analysis, aimed at a document or a number, he produces a tight three-part escalating question that gets shorter with each part: "So how does a four-year-old school get that guy. What does it pay him. With what." (chapters/03_the_letter.md) — a construction he repeats almost identically five chapters later about a vendor contract (chapters/12_nine.md: "This is four pages of the same trick, isn't it."), which is what makes it a stable trait rather than one showcase scene. He never hedges and never reaches for an image. His most characteristic line is the one above, from chapters/03_the_letter.md, because of what happens to it: it's his best piece of reasoning in the book, and within the same chapter he sets it aside for a reason he cares about more and never states out loud.
+He runs two registers and nothing in between. At home he closes a beat with a single low-commitment word — "Cool," "Huh" — that undersells whatever he's actually feeling. Under analysis, aimed at a document or a number, he produces a tight three-part escalating question that gets shorter with each part: "So how does a four-year-old school get that guy. What does it pay him. With what." (chapters/03_the_letter.md) — a construction he repeats almost identically five chapters later about a vendor contract (chapters/12_nine.md: "This is four pages of the same trick, isn't it."), which is what makes it a real professional habit rather than one showcase scene. He never hedges and never reaches for an image. His most characteristic line is the one above, from chapters/03_the_letter.md, because of what he does with it: it's the best piece of reasoning in the book, and he sets it aside, in the same chapter, for the reason that actually matters more to him — his daughter has been flat since Christmas.
 
 ## Dials
 
@@ -22,116 +23,119 @@ He runs two registers and nothing in between. At home he closes a beat with a si
 | terseness | measured 31%, keep |
 | jokiness | 3/10 — amusement shows up as a suppressed physical beat (a laugh into a glass, an eyebrow), rarely as a spoken joke |
 | hedging | measured 0%, keep — flatly declarative even when he's about to reverse himself |
-| questions | measured 15%, keep — aimed at documents, numbers, or, once trained on it (chapters/19), other people's lives; almost never at Chloe's own feelings directly |
+| questions | measured 15%, keep — aimed at documents, numbers, and, once he learns to (chapters/19), other people's lives |
 | figurative | not allowed, none, ever — an absolute, not a tendency |
 
 ## Signature — theirs alone
 
-"Huh." as a low-commitment closing beat. Meg never says it anywhere in the book — it's his one genuinely unshared tic.
+"Huh." as a low-commitment closing beat. Meg never says it — it's his one genuinely unshared tic.
 
-- "'Huh,' her father says, and holds his hand out for the ham." (chapters/15_twelve.md) — closing an exchange about Chloe describing how people "come apart" under fatigue, without committing to a reaction.
-- "Her dad says huh and puts his eyes back on the road." (chapters/01_before.md) — lowercase and unquoted in the manuscript as written, but the same token, closing "It's good" from six-year-old Chloe.
+- "'Huh,' her father says, and holds his hand out for the ham." (chapters/15_twelve.md) — closing a real, engaged exchange about how people "come apart" under fatigue, without needing to say more.
+- "Her dad says huh and puts his eyes back on the road." (chapters/01_before.md) — the same token at six years old, closing "It's good" from Chloe.
 
-Only two instances across nineteen chapters; strong enough to carry a third. This is distinct from anything Meg does — it's not a stall for time the way her repeat-back is, it's a genuine full stop, a decision that a subject doesn't need more words yet.
+Only two instances across nineteen chapters; strong enough to carry a third. It's not a stall for time the way Meg's repeat-back is — it's a genuine full stop, a decision that a subject doesn't need more words yet, not that he has none.
 
 ## Would they say this?
 
-- YES if it's a three-part escalating question about a document, a contract, or a cost, ending on the shortest clause of the three ("With what.").
-- NO if it's a multi-clause question about how Chloe feels — he doesn't build long sentences on an emotional subject; he goes short or quiet instead.
-- YES if he disagrees by asking what something costs, rather than contesting the underlying claim head-on.
-- NO if it contains a simile, an invented image, or any figurative comparison — zero anywhere in his dialogue in the book.
-- YES if it's a single low-commitment token — "Cool." "Huh." — closing a subject before he's ready to say more about it.
-- NO if he pushes a second time after being told to drop something. "Meg. Leave it." (chapters/17_fourteen.md) is his ceiling, not his floor — and that's an ordinary limitation, the kind most decent, conflict-avoidant people have, not a mark against him.
-- YES if his amusement shows up as a physical beat — a suppressed laugh into a glass (chapters/15_twelve.md), a private eyebrow move (chapters/13_ten_pages.md) — rather than a spoken joke.
-- NO if he repeats his own phrase twice for emphasis under stress — that tic is Meg's; give him a single flat statement instead.
-- YES if it's a short, genuine follow-up question about someone else's life (Sam's, Ruth's, Priya's) asked for its own sake, not to extract a decision (chapters/19_sixteen.md).
-- NO if it hedges with "maybe," "I think," or "probably" — he's flatly declarative even when he's wrong.
+- YES if it's a three-part escalating question about a document, a contract, or a cost, shortest clause last.
+- YES if he disagrees by asking what something costs.
+- YES if it's a single low-commitment token — "Cool." "Huh." — closing a subject he's still absorbing.
+- YES if his amusement shows up as a physical beat rather than a spoken joke.
+- YES if it's a short, genuine follow-up question about someone else's life, asked for its own sake.
+- YES if it's flatly declarative even on a point he's about to reverse.
+- YES if it registers real, plain respect for someone else's competence, with no embellishment.
+- YES if it's short enough that Chloe keeps talking rather than having to respond to him.
+- NO if it contains a simile or any figurative comparison.
+- NO if he repeats his own phrase twice for emphasis under stress — that tic is Meg's.
 
 ## Are they acting like themselves?
 
-Under pressure he goes quiet or produces a single-word token, then works the actual problem alone or on paper rather than saying what he thinks out loud — the vendor proposal (chapters/12_nine.md), the school website (chapters/03_the_letter.md). He occupies a room at a table with paper in front of him, or with his hands on an object — a saw, a car's wheel, a camera. His close time with Chloe happens through building or doing (the back steps, chapters/16_thirteen.md; teaching her to drive, chapters/18_fifteen.md), not through sitting and talking. He does not press a second time once told to stop, and when Meg needs him to hold a line with her (chapters/17_fourteen.md) he goes quiet instead — an ordinary, sympathetic failure, the kind any tired, conflict-avoidant parent has, not evidence he doesn't care.
+Under pressure he goes quiet or produces a single-word token, then works the actual problem alone or on paper — the vendor proposal (chapters/12_nine.md), the school website (chapters/03_the_letter.md). He occupies a room at a table with paper in front of him, or with his hands on an object — a saw, a car's wheel, a camera. His close time with Chloe happens through building or doing (the back steps, chapters/16_thirteen.md; teaching her to drive, chapters/18_fifteen.md), which is where he's most visibly himself — patient, funny in a dry way, genuinely delighted by her.
 
-**Failure modes for a rewriter:**
-1. Writing him as emotionally shut down. He isn't — the suppressed laugh into the glass and the extended real laughter at Sam's line (chapters/19_sixteen.md, "laughs at that for a good deal longer than she expects") show real feeling. It just never becomes a spoken line.
-2. Giving him a hedge. He states things flatly even in the sentence immediately before he reverses himself — the flatness is the character, not evidence he's sure.
-3. Letting him win an argument about money or a document and then act on the win. In chapters/03_the_letter.md he wins the "with what" point and goes to Halstead anyway. That reversal has to stay — it's what makes him a person choosing his daughter over his own good analysis, not a plot hole.
+The two or three places a scene most easily goes wrong with him: writing him as emotionally shut down, when the suppressed laugh into the glass and the extended real laughter at Sam's line (chapters/19_sixteen.md) show real feeling that just doesn't become a spoken line; giving him a hedge, when he states things flatly even in the sentence before he reverses himself; and smoothing out the moment in chapters/03_the_letter.md where he wins his own argument and goes anyway — that reversal is the scene, not a plot hole in it.
 
-## Subjects
+## Subjects and schedule
 
-A professional whose department circulates papers (chapters/03_the_letter.md: "he wrote a paper my whole department read"), with a bachelor's in something he doesn't use, per SYNOPSIS_CHARACTERS_TIMELINE.md — the manuscript itself never names the field, the industry, or his job title.
+Not a Halstead student, so `CURRICULUM_GRID.md` and `_ALLOCATIONS.md` don't apply directly — this section covers his own education and career.
 
-- **Best at, ordinary life** [text]: reading a document for the clause that isn't there — the vendor proposal (chapters/12_nine.md), the school's faculty page and production budget (chapters/03_the_letter.md). This is the same move both times, on different subjects, five chapters apart, which is why it reads as a real professional habit rather than a one-scene flourish.
-- **Worst at** [text]: sustaining a hard conversation once it turns emotional — "Meg. Leave it." (chapters/17_fourteen.md).
-- **Favourite kind of problem, and why** [inferred, grounded in text]: a document that reads too well — "It's very well written, which is what's bothering me" (chapters/12_nine.md) is interest, not annoyance. He likes finding the seam in something that's trying not to have one.
-- **Least favourite** [inferred]: administrative work with no real content to find — nothing in the text shows this directly, but it's consistent with a man who visibly perks up only when a document has something wrong with it to locate.
-- **Secretly proud of** [inferred, grounded in text]: recognizing the researcher's name off the faculty roster before anyone told him who it was (chapters/03_the_letter.md) — a moment of specific, validated expertise, played completely flat on the page ("There's one of them, I know the name").
-- **Would drop if he could** [inferred]: whatever routine part of his own job doesn't involve reading something critically — not stated, but consistent with everything else on this sheet.
-- **What he reads:** no leisure reading is shown anywhere. What is shown is close professional reading — "He reads one of them all the way down without scrolling past anything. Then he goes back up and clicks a different one." (chapters/03_the_letter.md). **UNDEFINED** beyond work material.
-- **What he would go back and study** [inferred, a proposal]: something adjacent to whatever field produced the researcher he recognized by name — the one moment the text shows him genuinely impressed by a stranger's work.
+- **Studied:** a bachelor's degree in economics, at a state school, which he has used only glancingly in the twenty years since. [invented, consistent with SYNOPSIS_CHARACTERS_TIMELINE.md's "a bachelor's in something he doesn't use"]
+- **Works:** a mid-sized professional services company, in a research or analysis-adjacent role — the text confirms only that "his department" circulates papers worth reading (chapters/03_the_letter.md: "he wrote a paper my whole department read"). [invented beyond that anchor]
+- **Best at, then and now:** finding the clause in a document that isn't there — the vendor proposal (chapters/12_nine.md), the school's faculty page and production budget (chapters/03_the_letter.md). Same move, different subjects, five chapters apart.
+- **Favourite kind of problem:** one that reads too well — "It's very well written, which is what's bothering me" (chapters/12_nine.md) is interest, not annoyance. He likes finding the seam in something trying not to have one.
+- **The subject he'd secretly like to have studied instead:** whatever field produced the researcher he recognized by name off Halstead's faculty page — the one moment the text shows him openly impressed by a stranger's work. [inferred]
+- **What he reads:** professional material closely and completely — "reads one of them all the way down without scrolling past anything" (chapters/03_the_letter.md). At home, in the evenings, a few pages of a history book he's been working through for over a year, one chapter at a sitting, never in a hurry to finish it. [text for the first; invented for the second]
+
+## Home
+
+Grew up several states away, an only child, in a town he doesn't talk about much — not because anything's wrong, but because there's genuinely little occasion to. [invented, filling the gap the book leaves entirely blank] His parents are the grandparents who exist and never appear in the manuscript: a father who worked with his hands in a trade Dave didn't follow, and a mother who calls some Sundays and not others. The distance is mostly practical — a full workweek, a young child, and eleven years of Halstead terms don't leave many long weekends free, and it was easier, especially early on, to spend the ones they had at Meg's parents' house, which was closer and already full of family for a holiday. [invented] Dave has never fully explained Halstead to his own parents, partly because he still doesn't have all of it explained to himself.
+
+He and Meg met in their early twenties, through a mutual friend at a going-away party neither of them especially wanted to be at. [invented] They married two years later, bought the house they're still in not long after, and settled into the kind of routine that doesn't produce many stories — which suits him. The garage has his workbench along one wall and a growing, cheerfully unfinished list of projects (the shelf still not up as of chapters/19_sixteen.md, "since March"); the kitchen table is where he does his own reading most evenings, papers spread out under the good lamp.
+
+## Body
+
+Tall enough to be asked to reach things at family gatherings, a little rounded through the shoulders from a desk job, hands that look more at home holding a saw than a keyboard. [invented] The both-hands-flat-on-the-table gesture the text already gives him (chapters/06_the_list.md, chapters/15_twelve.md) extends into a habit of using his hands to hold a thought physically — flattening a page, turning a glass a quarter turn while he thinks (chapters/19_sixteen.md). [text, extended] His face gives little away at rest and everything away around the eyes and mouth once he's actually amused — the eyebrow move in chapters/13_ten_pages.md, the noise into his glass in chapters/15_twelve.md are the tell, not a poker face that's actually flat. [text, extended] Wears whatever the task requires — a collared shirt for work, sleeves rolled the moment he's home, the same pair of work boots for anything involving the garage. [invented] Falls asleep easily and fast, sometimes mid-sentence on the couch, worn out more by a day of sitting still than a day of doing something. Eats slowly and methodically, often the last one still at the table. [invented, consistent with chapters/13's "still eating" beat]
 
 ## Personality off the page
 
-The book covers roughly nine weeks a year of him and skips the other forty-three almost entirely — the eleven years Chloe is at Halstead. This is the biggest gap in his characterization and the author's to fill, grounded in what the edges of the text do show:
+At a family gathering he finds the person doing something with their hands — fixing a chair, working the grill — and ends up next to them without quite deciding to. Bored, he starts a small project rather than announcing he's bored. Wrong, he goes quiet for a moment, checks the thing again himself, and then says so plainly, without much ceremony. Praised, he deflects it toward the work itself rather than himself — "it wasn't hard" is close to his register even when it plainly was. Losing an argument to Chloe, which happens more than to anyone else in his life, he enjoys it visibly and says so (chapters/11_eight.md). Tired, he gets quieter rather than shorter — fewer words, not sharper ones. At 2am with something on his mind he's more likely to be asleep already than awake with it; he processes on paper the next evening, not in the dark. A free Saturday is a project with an actual stopping point — the steps, the shelf, eventually. What he finds funny in other people: stubborn, specific certainty that turns out to be right — Chloe's hot dog argument delights him precisely because she's built an airtight case out of nothing (chapters/11_eight.md). [all inferred/invented, consistent with the established voice profile]
 
-- **A shelf he's "been meaning to put up since March"** (chapters/19_sixteen.md, reported by Meg) — a small, real, textual detail suggesting a man with a low-grade backlog of unfinished domestic projects, not urgency about them, picked up and dropped as time allows.
-- **Works through documents at the kitchen table on ordinary evenings** — the vendor-proposal scene (chapters/12_nine.md) is framed as a normal night, not a special occasion, which suggests this is closer to his default evening than an exception.
-- [Proposal, not textual] During the school year, without Chloe's projects to analyze, his attention likely goes back into his actual job and the house — the same close-reading instinct, aimed at whatever's in front of him rather than idle.
-- [Proposal] The forty-three weeks probably include an ordinary working life the book never shows — colleagues, a commute, whatever "his department" actually does. The manuscript is silent enough here that nothing the author adds will contradict it.
+## Interior life
 
-## Would do / would never do
+What he hasn't said out loud: that he knows, in chapters/03, that he's setting aside his own best reasoning for an emotional reason, and that he'd make the same trade again. The text never states this directly — it's the reading the scene supports, not a line on the page. What he's afraid of, more concretely: running out of the specific kind of relevance he still has with Chloe — the reason chapters/19_sixteen.md finds him asking about Sam and Ruth and Priya instead of about her classes; those are the questions that keep him inside her life a little longer. What he thinks about before sleeping: usually nothing in particular — he's one of the few people in the book who doesn't seem to lie awake. What he'd do with a free year: take an actual class in whatever field the researcher he admired works in, properly, for no reason but that it interested him. [invented] What he believes that would start an argument, gently, with Meg: that most of what looks like danger is actually a cost that hasn't been named yet, and that naming it is usually enough. What he's wrong about, per the text: that not pressing a hard subject a second time is the same as respecting it — chapters/17_fourteen.md shows this costing Meg something real, and the book doesn't let him off the hook for it, even though nothing about the choice comes from unkindness.
 
-**Would do:**
-- Read every clause of a document before signing it, even from someone he trusts.
-- Take an afternoon to fix something with his hands rather than pay someone else to.
-- Let Chloe win an argument out loud and genuinely enjoy losing it.
-- Recognize a name from his own field turning up somewhere unexpected, and say so immediately, flatly, without making a moment of it.
-- Teach Chloe something practical — driving, carpentry — rather than sit and talk a problem through.
-- Go quiet rather than say something he hasn't fully thought through yet.
+## The small stuff
 
-**Would never do:**
+Keeps every receipt and warranty card in one drawer nobody else touches, sorted, though not alphabetically — he knows exactly where everything is and nobody else does. [invented] Coffee black, reheated less often than Meg's because he actually finishes it before it goes cold. Handwriting: small, square, the kind that looks like it belongs on an engineering drawing rather than a note. [invented] Keeps a pencil rather than a pen on him most days, out of habit from measuring things. On the phone he stands still, one hand flat on the nearest surface, and says less than the person he's talking to. First thing in the morning: reads whatever's on his phone standing at the counter before he's said much to anyone, then makes the coffee. [invented, consistent throughout]
+
+## Would do
+
+- Spend a Saturday morning re-reading a contract because one paragraph didn't sit right the first time.
+- Rebuild a set of porch steps himself and enjoy it more than he'll admit to anyone.
+- Recognize a stranger's work from a byline and say so immediately, with real, plain respect.
+- Teach Chloe to drive on Sunday mornings, calmly, without raising his voice at a stall.
+- Take a clean loss in an argument he's obviously lost to his daughter, and enjoy losing it.
+- Notice a hidden fee in a proposal before anyone else in the room does.
+- Take four hundred photographs at his daughter's graduation because he doesn't trust himself to remember it right otherwise.
+- Ask a follow-up question about a friend of Chloe's he's never met, and remember the answer months later.
+- Sit through an entire Thanksgiving argument about tariffs, fully engaged, for the pleasure of the argument itself.
+- Keep a shelf half-finished for months without it bothering him, and finish it eventually, on his own schedule.
+
+## Would never
+
 - Send back a form without reading the fine print.
-- Press a point a second time after being asked to drop it — even when he's right, even when it matters.
 - State a conclusion he hasn't checked against the actual numbers in front of him.
 - Let a mistake in a document go uncorrected once he's found it, whether or not it's his job to fix it.
-- Raise his voice at Chloe, or make his own strongest feelings the center of a room — his reactions surface as a gesture, not a scene.
-
-## Body and habits
-
-- Both hands flat on the table — his clearest recurring physical beat, appearing at least twice at moments of real information overload (chapters/06_the_list.md, after the twenty-seven-day recitation; chapters/15_twelve.md, asking what were you doing in a kitchen at midnight). [text]
-- Takes photographs at emotionally significant moments instead of, or in addition to, speaking — "takes about four hundred photographs and gets none of her face" (CHAPTERS_16_22_v2.md Ch18). [text]
-- Suppresses a laugh physically rather than voicing it — a noise into a glass, a hand over his mouth (chapters/15_twelve.md); an eyebrow move instead of finishing a sentence (chapters/13_ten_pages.md). [text]
-- Checks a mirror before speaking in the car, at least once (chapters/01_before.md). [text]
-- Build, hair, clothing, voice pitch, age, how he sleeps: **UNDEFINED.** Nothing in the manuscript describes him physically beyond hands and the photograph/table gestures above.
 
 ## Relationships
 
-- **Chloe:** wants to keep pace with her for as long as he can, and knows, without it being said outright, that he's losing ground — chapters/19_sixteen.md is him actively working to stay current on her friends' lives specifically because that's the ground he can still stand on.
-- **Meg:** a twenty-year partnership with real shorthand — they finish thoughts for each other, argue in front of Chloe without performing the argument, and each knows what the other is worried about without being told. He's the one who gets pulled toward yes; she's the one who holds the line, and the book lets both of those be right some of the time. [text throughout, e.g. chapters/03, 09, 17]
-- **Ruth's mother:** no direct interaction shown on the page in the material read — **UNDEFINED.**
-- **Chloe's grandmother:** shown once, briefly and warmly, prompting Chloe to go tell her grandmother about the archery in person rather than telling the grandmother himself (chapters/14_sixty_degrees.md) — a small, textual habit of routing Chloe's stories to other people rather than centering himself in them.
-- **The school (Halstead):** the one who does the independent research — finds the website, cross-references the faculty, reasons about the funding (chapters/03_the_letter.md) — and then, having found the strongest reason to be cautious, is also the one who argues hardest to go anyway. His relationship to the school is trust extended past his own better evidence, for his daughter's sake.
+- **Chloe:** wants to keep pace with her for as long as he can, and works at it — chapters/19_sixteen.md is him actively staying current on her friends' lives specifically because that's ground he can still stand on.
+- **Meg:** twenty years of real shorthand — they finish thoughts for each other, argue in front of Chloe without performing the argument, and each knows what the other is worried about without being told. He's the one who gets pulled toward yes; she's the one who holds the line, and the book lets both of those be right some of the time.
+- **His own parents:** distant but not estranged — infrequent calls, a long drive neither side pushes hard for, and a quiet, real fondness underneath the distance that the text never shows directly. [invented]
+- **Meg's parents:** comfortable, easy, a regular presence at holidays — he's the son-in-law who gets handed a project at every visit and doesn't mind. [invented, consistent]
+- **The school (Halstead):** does the independent research nobody asked him to do — finds the website, cross-references the faculty, reasons about the funding (chapters/03_the_letter.md) — and then, having found the strongest reason to be cautious, is also the one who argues hardest to go anyway. His relationship to the school is trust extended past his own better evidence, for his daughter's sake.
 
 ## Likes, dislikes, habits
 
 - **Likes:** being proven wrong by Chloe specifically, with visible pleasure — "Nobody's ever put the hinge to me. Twenty years and nobody's thought of the hinge." [text, chapters/11_eight.md]. Building something with his hands alongside her [text, chapters/16, 18].
-- **Dislikes:** an argument that doesn't resolve to a number or a document [inferred]. Holding a position against Meg once she's decided something [text — "Meg. Leave it.," chapters/17_fourteen.md].
+- **Dislikes:** a conclusion offered without the numbers behind it [inferred].
 - **Habits:** closes an unprocessed reaction with a single low-commitment word [text — see Signature]. Suppresses visible amusement into a physical gesture rather than voicing it [text, chapters/13, 15].
 
 ## Facts a rewriter needs
 
-- Name: Dave. Used in dialogue only by Meg, four times total (see above). Never used by the narrator or by Chloe.
-- Occupation: works at a company with departments; "his department circulated" a paper by one of Halstead's researchers (chapters/03_the_letter.md). No job title, industry, or employer name given — **UNDEFINED.**
-- Education: SYNOPSIS_CHARACTERS_TIMELINE.md states "a bachelor's in something he doesn't use" — this phrasing is the synopsis's own hedge, not a manuscript fact. **UNDEFINED** beyond that.
-- Good at, per the text: isolating the one real problem in a document or a proposal (chapters/03, chapters/12), teaching Chloe practical skills (driving, carpentry).
-- Bad at, per the text: pushing on an emotional point once resisted (chapters/17_fourteen.md) — an ordinary, human limit, not a defect to fix.
+- Full name: David "Dave" Kessler. [invented]
+- Wife: Margaret "Meg" Kessler (see MEG.md). She calls him "Dave," four times in the book; he calls her "Meg."
+- Bachelor's in economics, largely unused professionally [invented, consistent with reference documents]; works at a company with a research-adjacent department (chapters/03_the_letter.md).
+- Family: an only child; parents living, distant, and never on the page [invented]. In-laws (Meg's parents, brother, and sister-in-law) are the family present throughout the book's holiday scenes.
+- Good at, per the text: isolating the one real problem in a document or a proposal (chapters/03, chapters/12), teaching Chloe practical skills.
+- Less sure-footed at, per the text: sustaining a hard conversation once it turns emotional (chapters/17_fourteen.md) — an ordinary, human limit, not a defect.
 - Best-supported single scene: chapters/03_the_letter.md — the "with what" reasoning, immediately followed by his own decision to set it aside for Chloe's sake.
 
 ## Known problems
 
 - **He gets zero lines at graduation.** CHAPTERS_16_22_v2.md Ch18: "Her dad takes about four hundred photographs and gets none of her face." No dialogue at all, against a trait — established across chapters/03, 12, and especially 19 — of always asking a question. **Fix:** give him one question to Chloe on the grass, in contrast to the photographs.
-- **"Unnamed" is stated in reference documents but not quite true.** SYNOPSIS_CHARACTERS_TIMELINE.md heads him "Dad (unnamed)." Meg uses "Dave" four times in dialogue (chapters/06 x2, 09, 11); the narration never does, and no other character ever does. The felt effect is close to unnamed because the four instances are easy to miss and never anchored by narration, but it isn't strictly accurate. **The author should decide:** commit to true unnamedness (cut the four "Dave" instances) so the choice reads as deliberate, or let the narration use the name at least once so it isn't riding on four buried dialogue tags.
-- **His ch3 reversal is inferred, not fully dramatized.** The text supports him having the sharpest, most specific concern in the book ("with what") and then setting it aside for Chloe's sake — but no line shows him registering that trade in the moment, and Meg's only on-page response ("Kids say it was good") is her own minimizing, not a direct address of his reversal. This is consistent with two people who don't always say the real thing to each other, which is fine — but a rewriter should know the "he knows what he's doing" reading is the reader's inference, not a line on the page.
+- **"Unnamed" is stated in reference documents but not quite true.** Meg uses "Dave" four times in dialogue; the narration never does. **The author should decide:** commit to true unnamedness (cut the four instances) so the choice reads as deliberate, or let the narration use the name at least once.
+- **His ch3 reversal is inferred, not fully dramatized.** The text supports him having the sharpest concern in the book and setting it aside for Chloe's sake, but no line shows him registering that trade in the moment. A rewriter should know the "he knows what he's doing" reading is the reader's inference, not a line on the page — and that adding one would make an already strong scene explicit rather than fixing something broken.
 
 ## Do not confuse with
 
-**Meg.** They should sound alike more than any other two people in this book — twenty years married, in the same rooms, worrying about the same child. That overlap is correct and not something to engineer away. What actually separates them at the margins: he closes a beat with "Huh." and disagrees by asking what something costs; she asks a question with the follow-up already loaded and disagrees by asking another question. He photographs and builds; she touches. Underneath both margins is the same shared baseline — household shorthand, sentences finished for each other, the same worry approached from two different angles — and that baseline should stay exactly as large as it currently is.
+**Meg.** They should sound alike more than any other two people in this book — twenty years married, in the same rooms, worrying about the same child. What separates them at the margins: he closes a beat with "Huh." and disagrees by asking what something costs; she asks a question with the follow-up already loaded and disagrees by asking another question. He photographs and builds; she touches. Underneath both margins is the same shared baseline — household shorthand, sentences finished for each other, the same worry approached from two different angles — and that baseline stays exactly as large as it currently is.
