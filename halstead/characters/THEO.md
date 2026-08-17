@@ -54,6 +54,60 @@ Failure modes for a rewriter:
 2. Writing his realization directly into narration instead of as a visible action — "Theo reads it three times, because he remembers it" (CHAPTERS_16_22_v2.md:815) states his internal cause rather than showing it, which is a known rule violation in his own chapter (see Known problems).
 3. Making him win an argument or refuse outright — he objects on record and complies; he does not block anything that happens in the book.
 
+## Subjects
+
+Halstead runs the same eight academic hours and two afternoon blocks for everyone, every year, from age seven or eight, so what marks Theo out is what he reaches for inside a shared curriculum, not a special track. Two things the book needs from his adult self — reading things and saying what they mean for a living, and skipping five or ten steps in his own reasoning without being able to see where — both trace back to school subjects that shape that exact profile, even though no on-page school scene shows him directly.
+
+- **Best at:** [inferred] rhetoric — a subject built around working out who benefits from a claim and what it's actually doing, which is close to a direct description of his adult job: "reading things and saying what they mean" (CHAPTERS_16_22_v2.md:789).
+- **Worst at:** [inferred] mathematics, specifically the year real analysis takes over and every step of a proof has to be justified in writing rather than simply arrived at — the school-age version of exactly the complaint his supervisor makes about his adult work.
+- **Favourite:** rhetoric, same reasoning as best-at. [inferred]
+- **Least favourite:** [inferred] formal epistemology — a subject that asks you to formalize what it takes to be sure of anything at all, which would turn his own blind spot into the explicit subject matter.
+- **Secretly proud of:** [inferred] cryptography, taught breaking-first — the one class that rewards arriving at the plaintext without requiring him to narrate every intermediate step, so it's the one place his particular kind of reading gets treated as a strength instead of a problem to explain.
+- **Would drop if he could:** [inferred] the real-analysis stretch of mathematics, the one place the format actively punishes the exact blind spot that follows him into his job.
+
+## Personality off the page
+
+[inferred, almost entirely — the text gives two durations and almost no description of what fills them]
+
+Two windows the book gives on purpose, both as elapsed time rather than as scenes: two days between reading the classified file and posting the hypothetical in the chat, and nine days of saying no to the second worm.
+
+The two days: "He sits with it for two days, and then does the only thing available to him, which is nothing, because every page of it is classified and he understands precisely what he is and is not permitted to do" (CHAPTERS_16_22_v2.md:884). [text] What actually happens inside those two days is UNDEFINED. [inferred] Given how he behaves elsewhere in the sample — closing a laptop and leaving the room rather than reacting in front of anyone (CHAPTERS_23_30_v2.md:626) — the most consistent read is that the two days look like nothing from the outside: he keeps doing his job, tells no one, and works out privately what he is and isn't allowed to say before he ever opens the chat. The "hypothetically" he eventually leads with (CHAPTERS_16_22_v2.md:890) reads as the output of that private sorting, not a first reaction.
+
+The nine days of saying no: reported only as a fact, "Eli proposes the second worm and Theo says no for nine days" (CHAPTERS_23_30_v2.md:572). [text] What fills those nine days is UNDEFINED. [inferred] Consistent with his pattern of objecting on record and then complying, the nine days most plausibly look like a standing objection restated each time it comes up, rather than active blocking — he says no again, not "stop." This is consistent with him signing off last rather than never (CHAPTERS_23_30_v2.md:613, narration).
+
+Occupies a room: UNDEFINED. What he does with his hands, beyond the laptop and the hand over his mouth: UNDEFINED. Bored, praised, losing: UNDEFINED — no scene shows any of these directly; the nearest is being told his work keeps coming back, which reads as frustration mixed with genuine puzzlement rather than defeat (CHAPTERS_16_22_v2.md:383–407). [text, extrapolated] Tired, at 2am, on a free Saturday: UNDEFINED. What he finds funny in other people: UNDEFINED — his only moment resembling humor is being teased about parking, not finding something funny himself.
+
+## Would do / would never do
+
+**Would:**
+- Would spend two full days turning something over privately before telling anyone, and would look, from the outside, like nothing had happened.
+- Would keep a formal objection on record and then still show up and do the work anyway.
+- Would reread a document a third time the moment he suspects he missed something the first two.
+- Would ask someone to clarify a standard rather than guess at what they meant.
+- Would go quiet in a room rather than keep arguing a point once he's been overruled.
+- Would check a fact against the original document before repeating it to anyone else.
+
+**Would never:**
+- Would never bring information to the group before checking it against the source himself.
+- Would never let a formal objection turn into a refusal to help once the group has decided.
+- Would never claim credit for information that reached him only by accident of circumstance.
+- Would never react to shocking news in the same breath he receives it — he needs the delay.
+- Would never make a joke at someone else's expense.
+- Would never describe a plan, a risk, or a person using a metaphor or simile.
+
+## Body and habits
+
+UNDEFINED almost entirely — the manuscript gives two hand actions and nothing else. Build, height, hair, face, clothing, how he sleeps, what he eats: UNDEFINED. Hands: closes a laptop (CHAPTERS_23_30_v2.md:626); puts a hand over his mouth and stays like that under real shock (CHAPTERS_16_22_v2.md:876). [text, both] Posture, how he moves, how he sits in a room: UNDEFINED. This is a genuine gap for the author to fill, not a fact to infer.
+
+## Relationships
+
+- **Chloe:** the one person he'll flatly contradict with no hedge at all — she tries to soften what he's revealed and he corrects her in three words, his bluntest line in the sample: "it wasnt a drill" (CHAPTERS_23_30_v2.md:542). [text]
+- **Ruth:** his disclosure is what reopens her six months of silence — her first post in that span is a one-word reply to his hypothetical, "bad" (CHAPTERS_16_22_v2.md:899). [text] They trade real information without hedging with each other once the subject is serious.
+- **Sam:** manages Sam's size of reaction by redirecting him back to the rule rather than the content — "i said dont repeat it, i didnt say it was small" (CHAPTERS_23_30_v2.md:536), replying to Sam's "WHAT" (CHAPTERS_23_30_v2.md:533). [text]
+- **Kavi:** [inferred, no direct exchange in the sample] No scene puts them in dialogue together; UNDEFINED beyond both being process-minded members of the same working group.
+- **Nadia:** she offers him a generous read on his supervisor situation — "its nice that shes reading it that closely" — and he accepts it while still registering the complaint underneath it: "it IS nice. its also insane" (CHAPTERS_16_22_v2.md:404–407). [text]
+- **His supervisor (unnamed):** an authority he wants to satisfy and cannot fully read — she keeps returning his work asking him to show reasoning he thought he'd already shown, and he complies each time without ever seeing what she sees (CHAPTERS_16_22_v2.md:383–401). [text] Wants her approval; does not understand, on the page, what would earn it.
+
 ## Likes, dislikes, habits
 
 - [inferred] Values being able to show his own reasoning — his one stated grievance in the whole sample is not being able to see which steps he skips in his own written work (CHAPTERS_16_22_v2.md:383–401).
@@ -83,4 +137,4 @@ Failure modes for a rewriter:
 
 ## Do not confuse with
 
-Eli and Theo are both quiet, technical, and speak almost entirely inside the same group chat, which is where most of the confusion happens. The cue: Theo's lines run long, multi-clause, and end in procedural compliance ("on record," "noted") or an open, unresolved question; Eli's lines are short, reframe whatever was just said, and end in a flat assertion. If a line is three words or fewer, it is very unlikely to be Theo's — that register happens for him only 12% of the time, the least of anyone in the cast, while Eli runs there 30% of the time. If a line hedges — a visible "apparently," a qualifier, a doubled question mark — it should be pushed toward Theo, not Eli; that is the deliberate reversal this sheet proposes, since Theo is meant to be the cast's hedger and currently isn't one in his own dialogue. Watch specifically for the collision at CHAPTERS_23_30_v2.md:844 and :847, where Ruth's and Eli's identical line sits right next to material that could just as easily have been handed to Theo; a fixed version should keep Theo's contributions in that scene procedural and qualified, not a flat echo.
+Eli and Theo are both quiet, technical, and speak almost entirely inside the same group chat, which is where most of the confusion happens — and a real amount of that overlap is correct, not a defect: they were selected, taught, and told the same things about themselves by the same institution, and a shared register between them is evidence the school is real. The cue that still separates them where it matters: Theo's lines run long, multi-clause, and end in procedural compliance ("on record," "noted") or an open, unresolved question; Eli's lines are short, reframe whatever was just said, and end in a flat assertion. If a line is three words or fewer, it is very unlikely to be Theo's — that register happens for him only 12% of the time, the least of anyone in the cast. If a line hedges — a visible "apparently," a qualifier, a doubled question mark — it belongs to Theo, not Eli; that is the deliberate design in this pair, since Theo is meant to be the cast's hedger and currently isn't one yet in his own dialogue. Watch specifically for the collision at CHAPTERS_23_30_v2.md:844 and :847, where a flat, unqualified line currently sits in a spot Theo could just as easily occupy; a fixed version should keep his contributions in that scene procedural and qualified, not a flat echo.
