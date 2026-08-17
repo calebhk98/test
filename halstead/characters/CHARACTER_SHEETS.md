@@ -1,10 +1,28 @@
 # Character sheets — index
 
 32 characters, one file each. Every sheet is standalone: hand it to someone with one
-chapter and they can find the lines that character would not say.
+chapter and they can find the lines that character would not say, and the scenes where
+they are not acting like themselves.
 
-Start here: **`_DIFFERENTIATION.md`** assigns each voice a distinct slot so they cannot
-blur, and **`_TEMPLATE.md`** is the structure every sheet follows.
+Each sheet carries: voice in one paragraph, measured dials, an exclusive signature, a
+would-they-say-this test written as properties of a line, **subjects** (best at, worst
+at, favourite and why, least favourite, the one they are secretly proud of, the one they
+would drop), **personality off the page**, **would do / would never do**,
+**body and habits** with UNDEFINED marked rather than invented, **relationships** one
+line per person, facts a rewriter needs, known problems, and who they blur into.
+
+Start here: **`_DIFFERENTIATION.md`**, which leads with how much similarity is correct —
+a cohort taught by the same adults from age seven should sound alike, and the parents are
+married — then lists the shared baseline to keep and the margins that sit on top of it.
+It also records the rule that **nobody in this book is evil**. **`_TEMPLATE.md`** is the
+structure every sheet follows.
+
+**On shared answers.** Eli and Kavi are both best at cryptography; Chloe and Ruth are
+both best at mathematics; Kavi and Ruth would both drop politics. Those are correct.
+Nine people on one timetable will overlap, and the sheets distinguish by degree and
+reason rather than by forcing different answers. The one place a shared answer was
+actually wrong is recorded in `ELI.md`, where two agents independently landed on the same
+least favourite for the pair that already blurs most.
 
 Dials below are measured from the manuscript by `voice_separation.py`. **w/l** is words
 per line, chat channel then prose. **terse** is the share of lines three words or fewer.
