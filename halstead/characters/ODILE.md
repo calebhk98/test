@@ -51,6 +51,69 @@ What exists is almost entirely bodily and almost entirely mediated through Chloe
 
 Failure modes a writer should watch for: (1) giving her a reflective or explanatory speech about her own performance — nothing on the page supports her narrating herself, ever; (2) writing the scar-as-pride beat as something Odile performs or says, when currently it is entirely Chloe's secondhand report to her mother, not a scene with Odile in it; (3) making her verbally win an argument — she has never been shown disagreeing with anyone in words, so a debate scene for her currently has no precedent to build from.
 
+## Subjects
+
+Marksmanship runs nerf at eight, paintball at ten, arrows at eleven, rifles at fourteen, the machine at sixteen (per CURRICULUM_GRID.md — school-wide stages, not manuscript prose). Fighting is daily from age ten. Within the reading list Odile is only shown at two of those stages: arrows, where she gets the year's first intercept alongside Chloe (chapters/14_sixty_degrees.md:43) and then does it "four days out of five" by March (chapters/14_sixty_degrees.md:53); and rifles, where she burns her hand on an ejection port (chapters/17_fourteen.md:21). She is never shown at the machine, because the reading list ends at fifteen.
+
+- **Best at:** archery interception and the ten-on-one endurance drill — the two activities where the text gives her a number, and in both cases the number is the best one recorded on the page. [text]
+- **Worst at:** UNDEFINED. She never appears in an academic classroom scene anywhere in the reading list. Her only intellectual moment is one dinner-table aside about why a parking company bought a particular cipher system, and even that is reported, not quoted (chapters/16_thirteen.md:131). A student who leads the physical subjects at a school that ranks everyone should have a middling academic subject on record somewhere — the text simply never shows which one. Flagged as a gap, not filled in.
+- **Favourite, and why:** archery/interception. This is distinct from "best at" — it is the one activity she is shown wanting witnessed. She tells Chloe her brother is coming specifically to see her do it and stages where he should stand for the best view (chapters/14_sixty_degrees.md:49). Nothing else she does gets that treatment on the page.
+- **Least favourite:** UNDEFINED. No scene shows her reluctant, complaining, or avoiding anything.
+- **Secretly proud of:** [inferred, proposal] the interception itself, past the point any grade requires it. She keeps doing it at a near-daily rate and brings in outside witnesses more than once — more effort and display than the school's own scoring would ask for. Nothing on the page marks this as *secret* specifically; it is a reasonable reading of the brother detail, not a found fact.
+- **Would drop if allowed:** UNDEFINED, and worth saying plainly why. Unlike Chloe's forge, Ruth's sound project, or Kavi's game theory, Odile is never once shown in a block-two elective. There is nothing on her transcript to say she'd keep or drop. If a guess is wanted for consistency with a person defined entirely by physical excellence and a wish to be watched doing it: something with no audience and no physical stakes, such as accounting or tax (both on the cohort's transcript at fifteen per CURRICULUM_GRID.md) — but this is a guess with no textual support at all. [inferred, proposal]
+
+## Personality off the page
+
+- Closes distance rather than watching from where she is — the only two social-physical beats she has are running toward a sound (chapters/14_sixty_degrees.md:47) and pulling someone upright rather than standing back and offering a hand (chapters/17_fourteen.md:53). [text, extrapolated into a general habit]
+- Where she sits at dinner: UNDEFINED. She is named as a fixture of the long table (chapters/16_thirteen.md:121) but no seat, side, or neighbour is ever given.
+- What she does with her hands: the most specific physical information the text gives about her at all. They grip a wrist to haul someone up (chapters/17_fourteen.md:53) and hold a burned palm up in plain sight for weeks rather than favour or hide it (chapters/17_fourteen.md:21). [text]
+- Bored: UNDEFINED whether she experiences it. The one data point runs the other way — she names *someone else's* boredom, confirming Sam's read on Ruth with "Ruth was bored in the briefing" (chapters/17_fourteen.md:17), which suggests she notices it in others before it would ever be reported in her.
+- Wrong: UNDEFINED. No scene shows her making or owning a mistake.
+- Praised: UNDEFINED. No one is shown praising her on the page, and there is no reaction from her to weigh.
+- Losing, or hitting a hard limit: the one scene that comes close is the ten-on-one she cannot hold past sixty-nine seconds. The answer the text gives is entirely physical — she goes to her hands and knees, breathing "in pieces against the mat," arms shaking — with no word from her before, during, or after (chapters/18_fifteen.md:93-97). [text]
+- Tired, or at 2am: UNDEFINED.
+- A free Saturday: UNDEFINED. Unlike Chloe (the forge), Ruth (the sound project), or Kavi (game theory), no hobby, elective, or unscheduled scene exists for her anywhere in the reading list.
+- Finds funny in other people: the one candidate is topping someone else's observation about a third person in a flat, deadpan register, rather than building a joke of her own — too thin, on a single instance, to generalise. [text, but n=1]
+
+## Would do / would never do
+
+Would:
+- Run toward an unexpected loud sound rather than away from it or stay put. [text — chapters/14_sixty_degrees.md:47, covering seventy metres in about forty seconds toward two arrows that came down wrong]
+- Grab someone's wrist to get them upright rather than offer a hand and wait for them to take it. [text — chapters/17_fourteen.md:53]
+- Keep training with a fresh, unhealed injury rather than sit out or ask for it to be looked at. [text — chapters/17_fourteen.md:21, still holding the palm up at breakfast weeks later]
+- Invite a family member to watch her do one specific thing, and decide exactly where he should stand to see it. [text — chapters/14_sixty_degrees.md:49]
+- Put her body between other people and something dangerous before anyone asks her to. [text — chapters/14_sixty_degrees.md:47, consistent with the interception pattern at chapters/14_sixty_degrees.md:53]
+- Push a physical effort until her body stops her, rather than call it herself ahead of the limit. [text — chapters/18_fifteen.md:93-97 — the round ends because she goes to her hands and knees, not because she says enough]
+
+Would never:
+- Explain, out loud, why she did something the way she did it. [text — zero instances of self-explanation anywhere she appears]
+- Sit out a physical challenge to avoid re-injury or embarrassment. [text — keeps intercepting arrows and training on the range through a visible, unhealed burn]
+- Narrate her own feelings after a major physical result. [text — chapters/18_fifteen.md:93-97 is filtered entirely through Chloe watching her; nothing comes from Odile's own side, not even a line]
+- Wait for an official cue before physically closing a distance — in both clear physical-social beats on the page, she is already moving before anyone tells her to. [text — chapters/14_sixty_degrees.md:47, chapters/17_fourteen.md:53]
+- Hide an injury or keep it out of sight. [text — chapters/17_fourteen.md:21, holding the burned palm up rather than tucking it away]
+- Let a physical result go unmatched without trying to close the gap — the text's only measurement of her over time is upward, seven seconds better than her own prior year, not flat. [text — chapters/18_fifteen.md:79, "Odile is up seven on last year"]
+
+## Body and habits
+
+This is the fullest section on her sheet because it is the only kind of detail the text actually gives her — nearly everything the manuscript says about Odile is physical, not verbal, so this is where she is most legibly a person rather than a name attached to a number.
+
+- **Hands:** the single most specific body part the text gives her. A scar on her hand, and specifically on the palm, from an ejection port burn taken during marksmanship training (chapters/17_fourteen.md:21). She is "still holding the palm up across the breakfast table in December," weeks after the injury, "because the scab pulls every time she opens her fingers" (chapters/17_fourteen.md:21) — she is shown living with the injury in public rather than concealing it. Her hands are also what she uses to move other people: she gets "a hand under her arm" to haul a winded Chloe up "by the wrist" (chapters/17_fourteen.md:53), a grip rather than an offered palm. [text]
+- **Speed and distance:** she covers seventy metres in about forty seconds at a run toward the sound of broken arrows, arriving before anyone else on the field (chapters/14_sixty_degrees.md:47). [text]
+- **Endurance:** the longest sustained physical effort given to any character in the reading list belongs to her — a minute and nine seconds of being attacked by ten people before her body gives out, ending with her going down to her hands and knees, breathing "in pieces against the mat," her arms visibly shaking (chapters/18_fifteen.md:93-97). [text]
+- **How she carries a result over time:** "Odile is up seven on last year" (chapters/18_fifteen.md:79) — the only year-over-year physical measurement the text gives for anyone besides Chloe and Sam, and it moves in her favour. [text]
+- **Face, hair, height, build, colouring:** UNDEFINED. No physical description of her appearance exists anywhere in the reading list or in her two mentions in CHAPTERS_16_22_v2.md.
+- **Clothing:** UNDEFINED. She is never dressed on the page — no uniform detail, no civilian clothing, nothing.
+- **Eating, sleeping:** UNDEFINED. She sits at the same long dinner table as the rest of the group (chapters/16_thirteen.md:121) but nothing she eats, how much, or how she sleeps is ever given.
+- **Posture and stillness:** UNDEFINED directly, though everything she does on the page is in motion or in contact with someone — running, hauling, holding, collapsing. There is no scene of her sitting still, waiting, or doing nothing. [inferred pattern, built only from the absence of any stillness beat in her page-time — flagged, not asserted as a confirmed trait]
+- **Voice as body, not as speech:** the one time the text gives her body a sound instead of a line, it is breathing, not words — "in pieces against the mat" (chapters/18_fifteen.md:93). This is as close as the manuscript gets to an Odile interior moment, and it is wordless. [text]
+
+## Relationships
+
+- **Chloe:** the only relationship shown at any length, and it runs one direction on the page. What Chloe does for and feels about Odile is detailed at length — staying beside her after the collapse, replaying the last twenty seconds of her round afterward, telling her own mother about the scar "like it's a medal" (chapters/18_fifteen.md:93-97; chapters/17_fourteen.md:145-149). What Odile wants from or feels about Chloe is never given a line of its own; the one thing she does do for Chloe directly is haul her up off the mat by the wrist mid-sentence (chapters/17_fourteen.md:53). [text]
+- **Ruth:** a peer she is comfortable topping rather than deferring to. In a table scene where Ruth is otherwise the one correcting everybody, Odile is the one who confirms and sharpens someone else's read on Ruth herself — "Ruth was bored in the briefing" (chapters/17_fourteen.md:17). [text]
+- **Sam:** present in the same scenes — dinner, the range, the self-defense mat — but the text gives no line of direct exchange between the two of them anywhere in the reading list. Her one quoted comment about Ruth is dropped into a group conversation Sam is part of, not addressed to him. [text, by omission]
+- **Her brother:** the one relationship the text actually opens up, and the only place Odile is shown wanting something for its own sake rather than performing a drill. He has visited three times before chapters/14_sixty_degrees.md and "never seen anybody do it"; she tells Chloe he's coming again Sunday and that she is "making him stand at your end" — a specific, planned act of wanting to be watched, by name, by someone who isn't the school. [text — chapters/14_sixty_degrees.md:49]
+
 ## Likes, dislikes, habits
 
 - Has a brother who visits on Sundays and has done so at least three times; wants him to watch her perform. [text — chapters/14_sixty_degrees.md:49]
