@@ -50,6 +50,62 @@ The real text only gives a weak, partial version of this — direct vocative add
 - Investigates before punishing, and does it herself rather than delegating or calling in an outside authority (CHAPTERS_23_30_v2.md, "Nadia" — traces who paid for a theft against her in a week, goes in person, alone, declines to involve police).
 - Failure modes for a rewriter: (1) giving her doubt or self-justification before a decision — she decides, then acts, any explanation is short and after the fact; (2) letting her escalate a small provocation into a large response — the proportionality is load-bearing, breaking it breaks the character; (3) having her banter or open a joke — her humor closes a beat someone else started, it doesn't originate one.
 
+## Subjects
+Everyone takes nearly everything at Halstead, so preference shows in what she'd defend, not in what's unique to her transcript.
+
+- **Best at:** adversarial negotiation with public scoreboards (age 16, cohort-wide course). [inferred] — the only classroom format that's live, adversarial, and scored in public, which is the shape of everything we actually see her do (badge, cleaner, hiring).
+- **Worst at:** accounting (age 15). [inferred] — she can read a balance sheet fine by the time she runs a company, so this isn't about ability, it's about temperament. Accounting has one right answer per line; everything we see her do is a judgment call.
+- **Favourite, and why:** the same negotiation course. [inferred] It's the one classroom exercise that rewards reading a person and acting on it immediately, which is also the only skill of hers that gets institutional credit before she's using it for real.
+- **Least favourite:** tax (age 15). [inferred] — airless and procedural, no proportion to weigh, nothing to decide; the closest classroom analog to the kind of institutional busywork she later refuses to hand a police officer.
+- **Secretly proud of:** psychology of breakdown under load (age 12). [inferred] She'd never claim credit for being good with people — the sheet's whole account of her runs on decisive action, not insight — so this is the one thing she's quietly better at than she'd admit to.
+- **Would drop if allowed:** bar preparation (age 16). [inferred] — exam-shaped and institutional rather than substantive; she treats institutions as things to route around, not perform for.
+
+**Social engineering is not a class — the school leaves it out on purpose.** What she does with a badge is stitched together herself, off three separate legitimate courses (psychology of breakdown under load, adversarial negotiation, improv) that nobody paired on purpose. That combination is a fact about her, not about the curriculum, and a rewriter should treat it as invented by her rather than taught to her.
+
+## Personality off the page
+- **In a room she's running** (an interview, the third-floor drill, her own company) she's physically forward and central — closest to the problem, closest to the door. People orient to her without being told to. [inferred, extrapolated from chapters/14_sixty_degrees.md and the Ch23 hiring material]
+- **In a room she isn't running** (the dinner table) she plants herself in one spot and works from there rather than drifting — she holds a corner of a napkin down with one finger through an entire argument instead of getting up or leaning in (chapters/16_thirteen.md). [text]
+- **Hands:** used for doing, not fidgeting — resets a dislocated joint without hesitation (chapters/20_the_parking_lot.md), pins a napkin corner to make a point (chapters/16_thirteen.md). [text]
+- **Bored:** finds another task rather than saying so — nothing in the text shows her idle. [inferred]
+- **Wrong:** corrects course immediately and without ceremony once she's identified the error, and doesn't relitigate the decision that got her there — the Ch23 hiring crisis, where she keeps lowering a bar and then states the problem flatly once she notices it, is the only on-page example. [text, extrapolated]
+- **Praised:** deflects toward the mechanism rather than accepting it about herself, consistent with the way she never uses praise language for a person anywhere in her lines. [inferred]
+- **Losing / being targeted:** treats it as information to act on, not an injury — the espionage attempt against her company reads as an insult to her competence ("im FINE. im insulted"), not a wound, and she moves straight to fixing it. [text]
+- **Tired / at 2am:** UNDEFINED as a scene, but the one data point — falling fully asleep sitting up mid-conversation and resuming the same sentence on waking — suggests a very short recovery cycle rather than a need for extended rest. [inferred from adjacent evidence]
+- **A free Saturday:** spends it on something with a visible end state — a repair, a fix, physical work — rather than leisure with no product. [inferred, consistent with her established physical-work strength]
+- **Finds funny in other people:** confidence that outruns competence, played straight without her having to comment on it — Sam wanting a "real" opponent while a fifty-year-old waitress on her feet nine hours a day would take him apart. [text]
+
+## Would do / would never do
+**Would:**
+- Fire someone on the spot for a first offense that earns it, then personally trace who was behind it rather than leave that to security or police. [text]
+- Walk into a hostile party's office alone rather than send someone else or bring backup. [text]
+- Take the unglamorous cleanup job after a fight — setting an arm — rather than staying visible for the dramatic part. [text]
+- Fall asleep mid-conversation the moment her body needs it, and pick the sentence back up without apologizing for the gap. [text]
+- Move on an organizational problem the second it appears, without waiting to be asked. [text]
+- Accept a well-aimed, honest attack against her without complaint, so long as it was aimed properly. [text]
+
+**Would never:**
+- Call in an outside authority over a matter she can close herself, even when escalating would be the easier or more defensible choice. [text]
+- Let a punishment outrun the offense — she stops at proportionate. She fires the thief, traces the money, walks in alone, declines to prosecute, and takes an apology as the end of it; a bigger response was available and she doesn't reach for it. This is proportion, not restraint she's fighting against — nothing in the text suggests she wants more and holds back. [text]
+- Accept help on something she can work out herself without trying it alone first. [inferred]
+- Justify a decision before making it — the decision comes first; if a reason follows, it's one clause, not a case. [text]
+- Let being caught off guard cost her composure — she resumes exactly where she left off rather than recovering visibly. [text]
+- Mistake an indirect or "soft" attack for a serious one — a cleaning contract, anything oblique, reads as beneath the trouble of a real response, not as more dangerous for being hidden. [text/inferred]
+
+## Body and habits
+- **Build, posture, general appearance:** UNDEFINED.
+- **How she moves:** UNDEFINED in descriptive terms, though the text shows the results — over a fence ahead of two other named characters, and "better" than Sam at taking a shopping cart into a curb at speed (chapters/20_the_parking_lot.md). No physical description attached to either moment. [text for the actions, UNDEFINED for the description]
+- **Hands:** UNDEFINED in appearance; shown resetting a joint and pinning a napkin, both without hesitation. [text for behavior, UNDEFINED for description]
+- **What she wears:** UNDEFINED.
+- **What she eats:** UNDEFINED — present at the dinner-table scenes with no food detail attached to her specifically.
+- **How she sleeps:** the one real data point in the book — falls asleep sitting upright for exactly four minutes and wakes mid-sentence (chapters/20_the_parking_lot.md). [text] Nothing else about her sleep, rest, or physical routine is given.
+
+## Relationships
+- **Chloe:** wants her to stop performing not-noticing and say the true thing outright — reads her accurately in the napkin scene and keeps pressing, with one finger on the evidence, until Chloe drops the pretense. [text, chapters/16_thirteen.md]
+- **Sam:** treats him as someone to correct productively rather than protect — sends him at the most competent-looking easy target to fix his read of his own skill, and agrees flatly when he admits he'd lose to her. Affection delivered as correction, not comfort. [text, chapters/20_the_parking_lot.md]
+- **Eli:** trusts him enough to let him test a live tool against her own company's systems, and covers that trust with a joke-sized threat rather than saying so directly — "if this comes back to my company i will end all of you." [text, CHAPTERS_23_30_v2.md]
+- **Ruth:** no scene exists with just the two of them. What's visible is parallel competence in group moments — both go over the fence without hesitation, both treat a violent aftermath as work to be done — rather than anything that distinguishes a bond. Largely UNDEFINED; do not invent closeness or friction beyond "reliable in the same crisis."
+- **Kavi:** UNDEFINED. The only textual link is peripheral — he passes her a napkin in a group scene. No direct exchange between the two of them exists anywhere in the reading material.
+
 ## Likes, dislikes, habits
 - Likes being confronted directly rather than through an indirect or "soft" channel. [text] — "if youre going to come at me, come at me. dont insult me with a cleaner"
 - Dislikes being underestimated. [text] — reframes a security breach against her company as a personal insult rather than a threat: "im FINE. im insulted"
