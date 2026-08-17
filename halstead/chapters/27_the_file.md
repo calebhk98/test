@@ -83,10 +83,10 @@ Theo sits back.
 He was twelve that year. He remembers the morning after, which is to say he remembers that there had been a drill overnight, and that four people had been on it and one of them was Chloe, and that everyone was annoyed about it because it was a school night and nobody had been told, and that by lunchtime the conversation had moved on to something else.
 
 
-He read the grade sheet on the board like everyone else, harsh, he'd thought at the time, and moved on with everyone else.
+He read the grade sheet on the board like everyone else, harsh, he'd thought at the time.
 
 
-He puts his hand over his mouth and sits like that for a while.
+He puts his hand over his mouth and sits like that.
 
 
 ________________
@@ -94,7 +94,7 @@ ________________
 
 
 
-He sits with it for two days, and then does the only thing available to him, which is nothing, because every page of it is classified and he understands precisely what he is and is not permitted to do.
+He sits with it for two days, and then does the only thing available to him, which is nothing, because every page of it is stamped classified, and the line between what he can say and what he can't is not his to redraw.
 
 
 So he posts in the chat.

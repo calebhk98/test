@@ -28,10 +28,13 @@ He shoots ten targets.
 A captain he has not met before walks over afterward, looks at the sheet, and says, "That's the best score I've seen this cycle. What's your accuracy?"
 
 
-"About forty," Sam says. The captain looks at the sheet again. It still says ten out of ten. "Son, you hit ten out of ten."
+"About forty," Sam says. The captain looks at the sheet again. It still says ten out of ten.
 
 
 "Yeah. It's not great. Eighty's the standard, I'm working on it."
+
+
+"Son, you hit ten out of ten."
 
 
 "Right, but that's not accuracy," Sam says, and he says it kindly, because he has worked out that this must be a trick question and he doesn't want to embarrass the man. "The target's not doing anything. It's just sitting there. That's not a measurement of anything, that's a measurement of whether the rifle works."

@@ -2,10 +2,10 @@
 
 *November 2025 – February 2026*
 
-The financial one takes eleven weeks, which is fast and is not easy.
+The financial one takes eleven weeks.
 
 
-Eli builds it and Kavi builds the thing that watches it, and the whole design problem is that it has to be boring. It doesn't search. Anything that searches looks like something searching. It sits in the places where a badly maintained reconciliation job would sit, and it moves the way one moves, and it is patient in a way that none of them naturally are.
+Eli builds it, and Kavi builds the thing that watches it. The whole design problem is that it has to be boring. It doesn't search. Anything that searches looks like something searching. It sits in the places where a badly maintained reconciliation job would sit, and moves just as slowly. None of them have that kind of patience. The program does.
 
 
 They test it for a month against Nadia's own systems before it goes anywhere.
@@ -34,7 +34,7 @@ What it finds, over the following two months, is a shape.
 There's no name. There's no bank with a name on it. What there is, once Kavi has enough of it to stack, is a single set of decisions running from somewhere around 1998 or 2001, depending which thread you follow back.
 
 
-Ruth is the one who argues it into a proof, and she does it with the thing that isn't there.
+Ruth is the one who argues it into a proof.
 
 
 ruth: its one person and i can show it
