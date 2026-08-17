@@ -8,7 +8,7 @@ Runs the forge, says almost nothing, and wants every student who walks in to lea
 **Speaks:** 2 quoted lines in the entire book, across three chapters and four years of story time, the finding is the scarcity itself.
 
 ## Voice in one paragraph
-Both of Pruitt's lines are a diagnosis stated once, correctly, delivered already leaving: "Your heat's wrong and it has been all afternoon." "He keeps walking, leaving her to work out what he meant." The second line, three weeks later, is shorter still: "You lost the curve on the second turn," delivered "without stopping." Both name a specific, checkable fact about the work and come with no explanation of what to do next, the student is left to work it out, and does, in four minutes. There's no third line to draw a longer pattern from, and that scarcity across four years of story time is the whole of his voice.
+Both of Pruitt's lines name the exact fault in the piece in front of him, delivered already leaving: "Your heat's wrong and it has been all afternoon." "He keeps walking, leaving her to work out what he meant." The second line, three weeks later, is shorter still: "You lost the curve on the second turn," delivered "without stopping." Both name a specific, checkable fact about the work and come with no explanation of what to do next, the student is left to work it out, and does, in four minutes. There's no third line to draw a longer pattern from, and that scarcity across four years of story time is the whole of his voice.
 
 ## Dials
 | | |
@@ -28,24 +28,24 @@ Delivers the correction while already leaving, never stops walking, never waits 
 ## Would they say this?
 **The Halstead-staff test.** A line belongs to this staff, not to a generic teacher, only if all five hold: no praise word attaches to the child; a correction is a flat statement of fact; the child's age is never a reason for leniency; an extraordinary result is treated as expected, not remarked on; the adult's own error is fixed the same flat way a student's is.
 
-Pruitt is one of the finest working smiths in the country, sought out and paid accordingly, and the forge never advertises that. A student who produces genuinely museum-grade work at fourteen gets exactly the same two words a mediocre one would get for the same flaw: "your heat's wrong." The silence that follows good work isn't withheld praise, it's the absence of anything left to correct.
+Two state historical societies keep Pruitt's number on file for ironwork nobody else will take on, and the forge never advertises that. A student who reproduces a period joint at fourteen gets exactly the same two words a beginner would get for the same flaw: "your heat's wrong." The silence that follows good work is the absence of anything left to correct.
 
 - YES if it names one specific, checkable technical fault and nothing else.
 - YES if it's delivered mid-motion, trusting the student to catch it without a pause for confirmation.
 - YES if it lets a full month pass before he says a single word, trusting the work itself to teach in the meantime.
 - YES if the correction respects the student enough not to explain what they can work out for themselves.
 - YES if it treats four years of unrewarded, unrecorded effort as simply the normal condition of craft, not a thing that needs commenting on.
-- YES if he says nothing at all about a piece of work that's actually good, silence, for him, is not a verdict, it's the absence of a fault to name.
+- YES if he says nothing at all about a piece of work that's good, silence standing in for the absence of a fault to name.
 - NO if it explains what to do about the fault, he never does, in either line.
 - NO if it acknowledges four years of a student's work with anything more than a passing technical correction.
 
 ## Are they acting like themselves?
-When Chloe finishes a set of three hinges that took three Sundays and drops all three in the scrap bin as not good enough, Pruitt is at the far bench with two others and doesn't see her do it, absent from the one moment a lesser version of this sheet would want him present for. That absence is consistent with a character built out of two corrections four years apart: he isn't narratively available for reassurance because the text never puts him where it would be easy to give. Failure mode: having him notice and silently approve of the hinges scene, which the text explicitly rules out by placing him elsewhere.
+When Chloe finishes a set of three hinges that took three Sundays and drops all three in the scrap bin, Pruitt is at the far bench with two others, working, and doesn't see her do it. Two corrections in four years is his whole spoken record, and the text keeps him at the far bench for the one scene where reassurance would be easy to give. Failure mode: having him notice and silently approve of the hinges scene, which the text places him too far away to see.
 
 ## Subjects and schedule
 Runs the forge, a block-two elective, ungraded, unrecorded, chosen freely and dropped freely by anyone else who takes it, open Thursdays and most of Sunday.
 
-**Best at:** naming exactly what's wrong with a piece of work in one sentence, correctly, at a glance. (both quoted lines)
+**Best at:** naming what's wrong with a piece of work in one sentence, at a glance. (both quoted lines)
 **Worst at:** paperwork of any kind, the forge's inventory whiteboard is the entire administrative system, by his own design, and he's proud of how little else there is.
 **Favourite, and why:** hinges, the one object type he'll spend real unscheduled time on himself, because the tolerance for a hinge that actually swings true is unforgiving in a way he finds satisfying.
 **Least favourite:** decorative work with no function, a student who wants to make something purely ornamental gets shown the door to the pottery studio instead, kindly but firmly.
@@ -54,7 +54,7 @@ Runs the forge, a block-two elective, ungraded, unrecorded, chosen freely and dr
 **What he thinks of the rest of the curriculum:** he doesn't think about it much, and considers that itself the correct amount, the forge is the one place at Halstead completely outside the grading machinery, and he intends to keep it that way by simply never engaging with the rest of the system.
 
 ## Home
-Pruitt is one of the most sought-after working smiths alive, the kind of name that gets a restoration project or a museum commission with one phone call, and Halstead's offer matched what that reputation is actually worth, plus the run of a forge with no client deadlines attached to any of it. Teaching is a handful of hours a week; the rest of his time is his own commissioned work, done in the same building the students use on Thursdays. Lives on campus, in the forge building itself, a room in the back he's fitted out properly rather than a cot, because he's there so often it made no sense to live anywhere else. Widowed some years back; the forge, by his own account to the one person who's ever asked directly, Sinclair, once, is simply where he'd be anyway. No children. Doesn't leave campus for anything resembling a vacation; "summer" changes nothing about his schedule, his own commissions run year-round.
+Three museum conservation departments and a shipwright's yard on the coast call Pruitt when a piece of pre-1900 ironwork needs work nobody else will take on, and he takes about a dozen of those commissions a year. Halstead's offer paid for the commissions he was already turning away and added a forge with no client deadlines attached. Teaching is a handful of hours a week; the rest of his time is that commissioned work, done in the same building the students use on Thursdays. Lives on campus, in the forge building itself, a room in the back he's fitted out properly rather than a cot, because he's there so often it made no sense to live anywhere else. Widowed some years back; the forge, by his own account to the one person who's ever asked directly, Sinclair, once, is simply where he'd be anyway. No children. Doesn't leave campus for anything resembling a vacation; "summer" changes nothing about his schedule, his own commissions run year-round.
 
 ## Body
 Sixties, heavyset through the shoulders and forearms in the specific way of someone who has swung a hammer for a living, hands scarred and burned in a dozen small old places. Carries an armful of bar stock while walking through the shop, the one physical habit the text actually gives him. (chapters/15_twelve.md:7) Wears the same leather apron every single day, replaced only when it finally fails rather than on any schedule. Eats simply, alone, usually standing at the same bench he works at. Sleeps early and wakes before dawn out of decades of habit.
@@ -95,7 +95,7 @@ Drinks black coffee, strong, reheated more than once, doesn't seem to notice or 
 - Checks a fire's heat by hand before trusting a gauge.
 
 ## Facts a rewriter needs
-Full name Harlan Pruitt. Students call him "Pruitt" or "Mr. Pruitt", nobody under eighteen uses a staff member's first name at Halstead. One of the most sought-after working smiths currently active; Halstead's offer matched his actual market value and gave him a forge with no client deadlines. Teaching is a handful of hours a week; his own commissioned work is the rest of his time, done in the same building. Signed the standard staff non-disclosure agreement. Widower, no children. Runs the forge, open Thursdays and most of Sunday, from at least Chloe's age 12 through at least 16. No grade or formal assessment is ever recorded for the forge, confirmed by the manuscript, not just the reference documents. Male, undisputed in the text.
+Full name Harlan Pruitt. Students call him "Pruitt" or "Mr. Pruitt", nobody under eighteen uses a staff member's first name at Halstead. Takes about a dozen restoration and conservation commissions a year for museums and a coastal shipwright's yard; Halstead's offer paid for that work outright and gave him a forge with no client deadlines. Teaching is a handful of hours a week; his own commissioned work is the rest of his time, done in the same building. Signed the standard staff non-disclosure agreement. Widower, no children. Runs the forge, open Thursdays and most of Sunday, from at least Chloe's age 12 through at least 16. No grade or formal assessment is ever recorded for the forge, confirmed by the manuscript, not just the reference documents. Male, undisputed in the text.
 
 ## Known problems
 - "In four years the whole of his commentary has been telling her which end to hold" (chapters/19_sixteen.md:107) is narrated summary in indirect speech, not a quotation, there's no scene showing him say that exact phrase. A rewriter should not treat it as recoverable dialogue.

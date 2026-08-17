@@ -28,7 +28,7 @@ Verifies at the source before agreeing, silently, then fixes it without narratin
 ## Would they say this?
 **The Halstead-staff test.** A line belongs to this staff, not to a generic teacher, only if all five hold: no praise word attaches to the child; a correction is a flat statement of fact; the child's age is never a reason for leniency; an extraordinary result is treated as expected, not remarked on; the adult's own error is fixed the same flat way a student's is.
 
-Doyle is an active field scientist whose own published research is well ahead of what a classroom needs, and none of it is on display in his one scene. A seven-year-old corrects him on weight versus mass, a distinction his own fieldwork depends on daily, and he checks the board and fixes it exactly as flatly as he'd correct a colleague's slide at a conference.
+Doyle installed part of the seismic network a national geological survey still monitors, and none of that shows in his one scene. A seven-year-old corrects him on weight versus mass, a distinction his own instruments log every hour he's in the field, and he checks the board and fixes it exactly as flatly as he'd correct a misread gauge.
 
 - YES if it accepts a correction in one sentence, with the fix included in the same breath, and nothing else.
 - YES if "thank you" functions as a mark of correctness rather than gratitude.
@@ -55,7 +55,7 @@ Teaches science to the youngest age band, 6-7, volcanism and geology in chapters
 **What he thinks of the rest of the curriculum:** he thinks the earliest years get the balance right, theory and hands, together, immediately, and hopes the later grades keep the hands involved once the theory gets harder.
 
 ## Home
-Doyle is an active field scientist whose current research keeps him publishing well ahead of most people in his discipline, and it's exactly that standing that got Halstead's attention. The school's offer covered his fieldwork costs outright and let him keep a real research program running alongside a handful of teaching hours a week, which no university post had ever quite managed to do at the same time. Lives off campus, shares a rented house a short drive away with another young teacher, an arrangement that started as convenience and became a real friendship. Unmarried, no children. In his mid-to-late thirties, one of the younger members of staff. Goes back into the field most summers on real monitoring work with the same research group he's always worked with, keeping the discipline current rather than academic.
+Doyle helped install part of the seismic monitoring network a national geological survey still relies on for early warning, and two governments' survey teams cite his group's calibration papers in their own reports. Halstead's offer covered his fieldwork costs outright, equipment, travel, the works, and left him a handful of teaching hours a week rather than a full course load, something no university post had managed alongside the same fieldwork. Lives off campus, shares a rented house a short drive away with another young teacher, an arrangement that started as convenience and became a real friendship. Unmarried, no children. In his mid-to-late thirties, one of the younger members of staff. Goes back into the field most summers on real monitoring work with the same research group he's always worked with, keeping the discipline current rather than academic.
 
 ## Body
 Late thirties, lean, sun-weathered in the specific way of someone who spends real time outdoors. Holds a marker at the board while lecturing and wipes an error away with the side of his hand, the one physical habit the text actually gives him. (chapters/04_pluto.md:109-112) Dresses casually, practically, boots more often than not even indoors, a holdover from fieldwork. Eats quickly and talks through most of it, still thinking about whatever the class just covered. Sleeps reasonably well, though summers in the field have trained him to wake at odd hours without an alarm.
@@ -97,7 +97,7 @@ Drinks coffee black, a lot of it, refilled from a thermos that goes everywhere w
 - Runs long on any topic a student latches onto.
 
 ## Facts a rewriter needs
-Full name Aaron Doyle. Students call him "Mr. Doyle", nobody under eighteen uses a staff member's first name at Halstead. Active field scientist with a current, well-regarded research program; Halstead's offer covered his fieldwork outright and let him keep it running alongside a handful of teaching hours a week. Signed the standard staff non-disclosure agreement. Unmarried, no children. Teaches science to Chloe's age band 6-7. Male, undisputed in the text.
+Full name Aaron Doyle. Students call him "Mr. Doyle", nobody under eighteen uses a staff member's first name at Halstead. Active field scientist; installed part of a national geological survey's seismic network and still publishes with the same research group. Halstead's offer covered his fieldwork outright and let him keep it running alongside a handful of teaching hours a week. Signed the standard staff non-disclosure agreement. Unmarried, no children. Teaches science to Chloe's age band 6-7. Male, undisputed in the text.
 
 ## Known problems
 - Only one scene contains any of his actual speech; every other characterization point beyond that scene is extrapolated or invented to close the gap.
