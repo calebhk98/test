@@ -46,6 +46,30 @@ Example, kept, spoken by Chloe: "he's Icarus"
 
 Instead: if a line sounds like a writer's sentence rather than a plain report, move it into a character's mouth or cut it. A narrator who says "she just puts it somewhere and keeps it" is a writer showing you a sentence, not a narrator reporting a fact.
 
+### The flatness is the narrator's, not the cast's
+
+The rule above is about figurative language, and it generalises. **The narrator is
+extremely flat. The people are not.** Everything this file bans, evaluation,
+image-building, superlatives, hedging, is banned in narration and available in a
+character.
+
+This has been getting applied the wrong way round. The character sheets were
+filled in by measuring a manuscript whose narration is flat, and the measurements
+came back flat, and the flatness was then written into the sheets as personality.
+Figurative language is ruled out in 22 of 32 sheets, hedging sits at 0% in 25 of
+them, and humour at 0 out of 10 in 16. Those are the three devices that most
+naturally carry feeling and a longer sentence, and they are switched off across
+most of the cast, including every teacher and every outside adult with dialogue.
+
+These are not robots. They get angry, embarrassed, jealous, elated, and unfair to
+each other. A scene where nobody feels anything is not restraint, it is an absent
+scene. When a character's dial rules out a device, the question to ask is whether
+that is true of the person or only true of the prose as it currently stands.
+
+What does not change: the narration. It keeps reporting plainly, and a character
+feeling something is shown by what they do and refuse to do, not by the narrator
+naming the feeling. Rule 23 in PROSE_RULES.md covers that and still holds.
+
 ---
 
 ## 3. Reification and the grep test
