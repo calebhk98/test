@@ -132,7 +132,6 @@ Chloe thinks that's probably right, and it bothers her on and off for a week, an
 
 ________________
 
-
 Chapter Seventeen: The Offer
 Mr. Amberg does the meetings one at a time, fifteen minutes each, in April.
 
@@ -182,7 +181,6 @@ Eleven stay. Kavi is one of them.
 
 
 ________________
-
 
 Chapter Eighteen: The First One
 Nobody at Halstead has ever done a graduation, and it shows.
@@ -285,7 +283,6 @@ So she takes the state school, because it's an hour from where she'll be living 
 
 
 ________________
-
 
 Chapter Nineteen: The Chat
 The chat is nine years old. They wrote the encryption themselves at thirteen, mostly so they could arrange getting out of the building without a teacher reading it, and none of them has ever used anything else.
@@ -560,7 +557,6 @@ The chat moves on to something else within about ten minutes.
 
 ________________
 
-
 Chapter Twenty: Nineteen
 Chloe gets a job at a company that translates documents for businesses. Contracts, manuals, safety sheets. It's steady and slow and there are about forty people in the building.
 
@@ -695,7 +691,6 @@ Six months.
 
 ________________
 
-
 Chapter Twenty-One: Ten Targets
 Sam likes the Army immediately.
 
@@ -783,7 +778,6 @@ Sam knows none of this. Sam is having a great month.
 
 
 ________________
-
 
 Chapter Twenty-Two: The File
 Theo's job is reading things and saying what they mean.
