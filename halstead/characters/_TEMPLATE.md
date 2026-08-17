@@ -54,6 +54,41 @@ Behaviour, not speech. What they do under pressure, what they never do, how they
 a room, what they do with their hands. Include the failure modes: the two or three ways
 a writer most easily gets them wrong.
 
+## Subjects
+Halstead runs eight academic hours plus two afternoon blocks, every year, from age seven
+or eight. Everyone takes nearly everything, so what separates people is what they reach
+for and what they endure. Give:
+  best at | worst at | favourite, and why it is the favourite | least favourite
+  the one they are secretly proud of | the one they would drop if allowed
+Ground these in the curriculum the book actually describes. Where the text shows a
+preference, cite it. Where it does not, mark the choice [inferred] and make it consistent
+with everything else on the sheet.
+
+## Personality off the page
+Not how they talk — who they are when nothing is happening. Cover:
+  how they occupy a room, and where they sit
+  what they do with their hands
+  how they handle being bored, being wrong, being praised, and losing
+  what they are like tired, and what they are like at 2am
+  what they do on a free Saturday
+  what they find funny in other people
+
+## Would do / would never do
+Behaviour, not speech. Two short lists, six or so each, concrete enough to settle an
+argument about a scene you have not written. "Would carry someone's bag without being
+asked" beats "is kind". The would-never list is the more useful of the two.
+
+## Body and habits
+Everything the text gives: build, posture, hands, how they move, what they wear, what
+they eat, how they sleep. Mark UNDEFINED where the manuscript says nothing rather than
+inventing a face. Physical detail is the thinnest thing in this manuscript, so an honest
+UNDEFINED here is a to-do list for the author.
+
+## Relationships
+One line each for the people they actually interact with: what this character wants from
+that person, and how their behaviour changes in front of them. People behave differently
+with different people, and that is most of what makes a character feel known.
+
 ## Likes, dislikes, habits
 Short lists. Mark [text] where a specific line or action supports it and [inferred]
 where it is extrapolation. A sheet that cannot tell the difference is not usable.

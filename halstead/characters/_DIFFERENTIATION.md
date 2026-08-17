@@ -1,9 +1,39 @@
 # Differentiation matrix
 
-The problem this solves: the audits were written one character at a time, so several
-landed on the same description — short declaratives, no hedging, no figurative language.
-That is accurate about the current draft and useless for revision, because it does not
-tell you what to make different.
+## Read this part first: how much similarity is correct
+
+**A lot of it.** These nine students were selected by one person, taught by the same
+adults from the age of seven, given the same eight subjects every year, and told the same
+thing about themselves — that they are middling. They should sound like each other. A
+cohort that shares a register is evidence the institution exists, and it is the reason
+the group chat reads as a group rather than as seven strangers.
+
+The same goes for Meg and Dave. They are married, they have been in the same rooms for
+twenty years, and they are worrying about the same child. Couples converge. Their
+overlap is not a bug to engineer out.
+
+So this document is not an instruction to make everyone opposites. It is a list of
+**margins** — the small places where each person diverges from a shared baseline. The
+baseline stays. What follows is what sits on top of it.
+
+Two tests for whether a distinction is worth keeping:
+- Does it survive the character being tired, frightened, or busy? Real traits do.
+- Would removing it make a scene less clear? If not, it is decoration.
+
+**Nobody in this book is evil.** Not the parents, not the teachers, not Kayleigh or
+Bryce, not the school. The adults who fail Chloe are decent, tired, or under-resourced,
+and fail anyway — that is the argument the book is making, and a villain would collapse
+it. The children who hurt her are enforcing norms accurately, not being cruel. Any sheet
+that makes someone a bad person is wrong, and any revision that does is a regression.
+
+---
+
+## The margins
+
+The problem the rest of this solves: the audits were written one character at a time, so
+several landed on the same description — short declaratives, no hedging, no figurative
+language. That is accurate about the shared baseline. It just does not tell you where the
+edges are.
 
 Below, every character owns a distinct position on each shared axis, and two or three
 signatures nobody else is allowed to use. Where the draft already supports a distinction
@@ -123,9 +153,31 @@ uses that permission, which wastes it.
 
 ---
 
+## The shared baseline — keep all of this
+
+Do not strip these in the name of differentiation. Every Halstead student has them, and
+they are the institution showing through.
+
+- Treats an extraordinary result as ordinary, because that is what they were taught.
+- No praise language for people, only for mechanisms and correct answers.
+- Argues from reasoning rather than from outcome or authority.
+- Assumes any question has a findable answer and starts looking rather than speculating.
+- No small talk, no preamble, no softening a factual correction.
+- Reads their own standing as middling, and is not performing modesty when they say so.
+- Comfortable with silence in a way people outside the school find unnerving.
+- Physically competent and does not remark on it.
+
+Meg and Dave share their own baseline: household shorthand, sentences finished for each
+other, the same worry approached from two angles, and twenty years of not needing to
+explain the premise. Keep that too.
+
+---
+
 ## Known collisions to fix
 
-Verified in the text. These are the places two characters currently have the same voice.
+Verified in the text. These are not "two characters sound similar", which is fine. These
+are places where the same words appear twice, or where one character performs another's
+established move, which reads as an error rather than as a shared culture.
 
 1. `CHAPTERS_23_30_v2.md:465` and `:468` — Kavi and Ruth say the identical six words back
    to back, "thats a person getting older."
