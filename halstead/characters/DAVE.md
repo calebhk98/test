@@ -7,7 +7,7 @@ Chloe's father: the parent who finds the real problem in a document, married twe
 **Appears in:** chapters/01_before.md, 03_the_letter.md, 06_the_list.md, 09_february.md, 11_eight.md, 12_nine.md, 13_ten_pages.md, 14_sixty_degrees.md, 15_twelve.md, 16_thirteen.md, 17_fourteen.md, 18_fifteen.md, 19_sixteen.md, and CHAPTERS_16_22_v2.md Ch18 "The First One" (present, non-speaking). Not present at all in chapters/02, 05, 07, 08, 10, 20, or anywhere in CHAPTERS_23_30_v2.md.
 **Speaks:** roughly 90 lines, front-loaded into chapters/03 and thinning steadily after chapters/14.
 
-**He is named.** SYNOPSIS_CHARACTERS_TIMELINE.md heads his section "Dad (unnamed)," but Meg calls him "Dave" four times in dialogue: chapters/06_the_list.md (twice), chapters/09_february.md, and chapters/11_eight.md. The narrator never uses it; no other character does either.
+**He is named.** SYNOPSIS_CHARACTERS_TIMELINE.md heads his section "Dad (unnamed)," but Meg calls him "Dave" four times in dialogue: chapters/06_the_list.md (twice), chapters/09_february.md, and chapters/11_eight.md. It appears only in her mouth, spoken by her alone.
 
 ## Voice in one paragraph
 
@@ -28,7 +28,7 @@ He runs two registers and nothing in between. At home he closes a beat with a si
 
 ## Signature: theirs alone
 
-"Huh." as a low-commitment closing beat. Meg never says it; it's his one genuinely unshared tic.
+"Huh." as a low-commitment closing beat. It appears only in his dialogue across the whole book, a full stop that belongs to him alone.
 
 - "'Huh,' her father says, and holds his hand out for the ham." (chapters/15_twelve.md) He closes a real, engaged exchange about how people "come apart" under fatigue without needing to say more.
 - "Her dad says huh and puts his eyes back on the road." (chapters/01_before.md) The same token at six years old, closing "It's good" from Chloe.
@@ -46,7 +46,7 @@ It functions as a genuine full stop, a decision that a subject doesn't need more
 - YES if it registers real, plain respect for someone else's competence, with no embellishment.
 - YES if it's short enough that Chloe keeps talking rather than having to respond to him.
 - NO if it contains a simile or any figurative comparison.
-- NO if he repeats his own phrase twice for emphasis under stress; that tic is Meg's.
+- NO if he repeats his own phrase twice for emphasis under stress: he states a thing once and lets it stand.
 
 ## Are they acting like themselves?
 
@@ -124,7 +124,7 @@ Full name David "Dave" Kessler. Wife Margaret "Meg" Kessler (see MEG.md); she ca
 ## Known problems
 
 - **He gets zero lines at graduation.** CHAPTERS_16_22_v2.md Ch18: "Her dad takes about four hundred photographs and gets none of her face." No dialogue at all, against a trait, established across chapters/03, 12, and especially 19, of always asking a question. Fix: give him one question to Chloe on the grass, in contrast to the photographs.
-- **"Unnamed" is stated in reference documents but not quite true.** Meg uses "Dave" four times in dialogue; the narration never does. The author should decide: commit to true unnamedness (cut the four instances) so the choice reads as deliberate, or let the narration use the name at least once.
+- **"Unnamed" is stated in reference documents but not quite true.** Meg uses "Dave" four times in dialogue, the only place the name appears on the page. The author should decide: commit to true unnamedness (cut the four instances) so the choice reads as deliberate, or let the narration use the name at least once.
 - **His ch3 reversal is inferred, not fully dramatized.** The text supports him having the sharpest concern in the book and setting it aside for Chloe's sake, but no line shows him registering that trade in the moment. A rewriter should know the "he knows what he's doing" reading is the reader's inference, not a line on the page.
 
 ## Do not confuse with
