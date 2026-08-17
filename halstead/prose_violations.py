@@ -61,11 +61,14 @@ def style_key(name):
     the section number, and casefold so the count lands in one row.
     """
     name = name.strip()
-    # Leading section numbering: "8. ", "STYLE_RULES §8 ", "§2/§4 ", "§13 ".
+    # Leading section numbering, in every form the agents used: "8. ",
+    # "STYLE_RULES §8 ", "§2/§4 ", "Section 11: ", "STYLE_RULES 8/13: ".
     name = re.sub(r"(?i)^(?:style[_ ]rules?)?\s*(?:§\s*\d+\s*/?\s*)+", "", name)
+    name = re.sub(r"(?i)^\s*(?:style[_ ]rules?)?[\s,]*(?:section)?\s*"
+                  r"\d+(?:\s*/\s*\d+)?\s*[.:]\s*", "", name)
     name = re.sub(r"^\s*\d+\.\s*", "", name)
     # Some agents append the subtype after an em/en dash instead of in parens.
-    name = re.sub(r"\s*[—–]\s*", " (", name, count=1)
+    name = re.sub(r"\s*(?:--|[—–])\s*", " (", name, count=1)
     if name.count("(") == 1 and not name.endswith(")"):
         name += ")"
     sub = ""
