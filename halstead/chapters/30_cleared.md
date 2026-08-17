@@ -60,7 +60,7 @@ Whitaker doesn't look up. "Asked by whom."
 Chloe doesn't look away either. "The lead researcher. She didn't make me sign anything. She said everyone else had signed and if I talked it landed on them."
 
 
-"And you agreed to that," he says, flat.
+"And you agreed to that," he says.
 
 
 "Yeah."
