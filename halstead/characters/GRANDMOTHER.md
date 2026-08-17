@@ -58,6 +58,50 @@ She hosts large family gatherings (eleven people at Christmas, every year on the
 2. Having her correctly read one of Chloe's reported achievements. Every instance in the text where she's given a chance to gauge the scale of something Chloe describes, she gets it wrong in the direction of "smaller and slower than it is" — this miscalibration is consistent enough across three separate scenes (weight aside) to be a rule, not a one-off.
 3. Making her pushy or intrusive when she notices something physical. She notices the hand scars and does not interrogate; a version of her that presses past "it's nothing, it's from school" contradicts every instance shown.
 
+## Subjects
+
+Not a teacher or clinician — her only "specialism," per the coordinator's framing, is what she notices with her own eyes and hands at close range, honed over decades of watching the same family across a table.
+
+- What she notices, reliably: physical change in a body she's watched for years — weight loss, weight gain, an old scar or a fresh burn on a hand [text, chapters/11_eight.md; chapters/18_fifteen.md].
+- What she cannot assess: anything abstract Chloe reports about her own activities — a school subject, an archery target, "sixty degrees" of homework — she has no calibrated sense of scale for any of it and reads all of it as smaller and slower than it is [text, chapters/14_sixty_degrees.md].
+- Best at: reading a face or a body she's known a long time; her information source is always direct observation, never a report.
+- Worst at: anything that has to come to her secondhand, in someone else's words, about a world she doesn't share — Chloe correcting her about the archery timeline doesn't change her answer.
+- Favourite [inferred]: having a family member to sit with and examine directly — "she's been after somebody to talk to since two" [text, chapters/14_sixty_degrees.md:185].
+- Least favourite: not applicable in the academic sense — nothing in the text reads as a subject she avoids.
+
+## Personality off the page
+
+She likely believes she's the one actually paying attention at the table — and in a narrow, literal sense the text agrees with her: she is the only outside adult in the manuscript who reads Chloe's physical state correctly, unprompted. That accuracy comes specifically from trusting only what she can see and touch for herself; anything she has to take secondhand, in a description she has no frame for, she reads as small, because to her calibration comes from watching, not from being told. This is very likely why she never revises her reading of the archery timeline even after Chloe corrects her directly — being told twice isn't the mechanism that updates her; seeing would be, and she never sees it. Where she sits: for long stretches, anchoring a room — the front room, the head of a table — rather than moving through the house. Hands: the most active hands in this batch — takes Chloe's hand specifically to examine it, turns it over, runs a thumb across old marks, "taking her time" [text, chapters/18_fifteen.md:169–173]. Bored: doesn't register — she fills any gap by pulling a family member in to talk. Wrong: doesn't register either — corrected about the archery, she stays affectionate and simply restates her original reading in gentler words. Praised, losing, tired, 2am: UNDEFINED. Free Saturday [inferred]: cooking for a gathering — "I'm doing the ham at four" is the clearest window into how she spends her time [text, chapters/13_ten_pages.md:170]. What she'd find funny in someone else: UNDEFINED.
+
+## Would do / would never do
+
+**Would do:**
+- Take a family member's hand at the table and hold onto it, examining it at length, mid-conversation.
+- Say what she's noticed about someone's weight plainly — but to another adult, not to the person's face.
+- Host the same large holiday gathering every year without fail.
+- Put a plate or a task in front of someone rather than asking, in the abstract, if they're all right.
+- Pat a hand or an arm to close out a moment of attention.
+- Recognize a pattern repeating across a generation and say so once, without alarm.
+
+**Would never:**
+- Confront someone directly about a physical change she's noticed — she tells another adult, not the person it's about.
+- Press past a deflection when someone brushes off a question about an injury or a mark.
+- Mock or dismiss an achievement once corrected about its scale — she stays affectionate even while still getting it wrong.
+- Raise her voice or show anger at the table.
+- Let a grandchild go unfed or untouched at a family gathering.
+- Assume the worst about a family member without seeing it for herself first.
+
+## Body and habits
+
+Build, face, hair: UNDEFINED — no physical description is given. Age: explicitly old enough that her attendance at Chloe's graduation is unexpected — "which nobody expected at her age" [text, CHAPTERS_16_22_v2.md, Ch18 "The First One"]. Hands: the one body part the text describes in real detail through what she does with them — takes, turns over, and runs a thumb across another person's hand at length [text, chapters/18_fifteen.md]. Movement: mostly stationary — seated in the front room or at the head of the table, rather than moving through scenes. Food: consistently present around her — she is the one who cooks the holiday meal ("I'm doing the ham at four") [text, chapters/13_ten_pages.md:170]. Sleep, dress: UNDEFINED.
+
+## Relationships
+
+- **Chloe:** the only adult in the manuscript who reads her body accurately, and the only one shown being this physically affectionate with her — takes and holds her hand, examines it at length, unasked.
+- **Meg (her daughter — see Facts, inferred not confirmed):** shares the weight observation with her privately, adult-to-adult, rather than through Chloe; recognizes Chloe's floor-reading habit as one she's seen in Meg before, at the same age, in the same house.
+- **Chloe's grandfather (her husband):** appears once in the same room, silently, "thinking about a question" [text, chapters/11_eight.md:89] — no interaction between them is shown.
+- **Dana and the rest of the family:** hosts them all at the same recurring holiday gatherings every year; no individual dynamic with Dana beyond both being present is shown.
+
 ## Likes, dislikes, habits
 
 - **Likes:** having someone to talk to — "she's been after somebody to talk to since two" [text, chapters/14_sixty_degrees.md]. Examining Chloe's hands directly, at length, without asking permission first [text, chapters/18_fifteen.md].

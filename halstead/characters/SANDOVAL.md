@@ -35,6 +35,44 @@ States the structural reason for her own restraint as the content of the request
 ## Are they acting like themselves?
 Given the choice between a legal instrument (an NDA) and a personal one (a request), she picks the personal one and says why, on the record, to a minor, rather than taking the easier legal route: "I am not going to put a federal NDA in front of a fifteen-year-old, because I do not think anybody should be asking you to sign one." (chapters/18_fifteen.md:137) That is a real cost to her — the text is explicit that the consequences of Chloe talking land on Sandoval and three others, not on Chloe — and she states that cost herself rather than letting Chloe discover it later. Failure mode a writer would fall into: having her frame the request as being for Chloe's own good, or soften it with reassurance that "it'll be fine" — the actual line does neither; it states a real, asymmetric risk and leaves the decision entirely with the student.
 
+## Subjects
+"Teaches" loosely — she's lead researcher on an internal paper, not classroom faculty, and supervises Chloe's lab placement rather than a course.
+
+**Best at:** naming a structural risk precisely and putting its actual cost into words instead of leaving it implied. [text: chapters/18_fifteen.md:137]
+**Worst at:** UNDEFINED.
+**Favourite / least favourite:** n/a — one relationship is shown, not a subject roster.
+**Secretly proud of:** UNDEFINED.
+**Would drop if allowed:** n/a.
+
+**What she was before Halstead:** UNDEFINED beyond "lead researcher" — no field, credential, or history given.
+**What she'd teach if she could teach anything:** [inferred] nothing classroom-shaped — every glimpse of her is administrative and ethical, not pedagogical; she manages a research relationship, not a lesson.
+**What she thinks of the rest of the curriculum:** UNDEFINED — she never references another subject or teacher; her only scene is entirely about the terms of one request.
+
+## Personality off the page
+[inferred, from the one scene] Precise almost to a fault — she corrects her own phrasing mid-argument ("Plus, it's not legally binding") rather than let an imprecise claim stand, even when the imprecision would have made her case easier to make. That habit of self-correction under her own steam, unprompted, is the clearest personality signal available: someone who would rather be exactly right than persuasive. Bored, tired, 2am, a free Saturday, what she finds funny in others: UNDEFINED.
+
+## Would do / would never do
+Declining to put a legal document in front of a fifteen-year-old and asking instead isn't softness — she names, out loud, that this makes her more exposed than the alternative would, and does it anyway, which is closer to the opposite of self-protective.
+
+**Would:**
+- Name a request as a request, explicitly, rather than let a power imbalance stay unspoken. [text: chapters/18_fifteen.md:133]
+- State exactly who bears the cost of a choice before asking someone else to make it. [text: chapters/18_fifteen.md:137]
+- Correct her own imprecise wording mid-argument, even when the imprecision would have helped her case. [text: chapters/18_fifteen.md:137]
+- Decline an easier, more binding legal instrument (the NDA) in favor of a harder, riskier personal one. [text: chapters/18_fifteen.md:137]
+- Let a fifteen-year-old make a genuinely open decision rather than assume the answer for her because of her age.
+
+**Would never:**
+- Pressure, guilt, or imply an obligation that isn't actually there.
+- Minimize the real risk to make the ask easier to say yes to.
+- Let Chloe find out the actual stakes later, from someone else, rather than stating them herself, first.
+
+## Body and habits
+Carries a folder, shifts it between arms during the conversation. [text: chapters/18_fifteen.md:133, 137] Stops walking to deliver the opening line rather than saying it in motion. [text: chapters/18_fifteen.md:133] — worth noting this is the opposite habit from Pruitt, who only ever corrects while leaving; she's the one teacher on this list who stops. Build, age, clothing, eating, sleeping: UNDEFINED.
+
+## Relationships
+- **Chloe** — the entire relationship shown; recruits her cooperation with a named, explicit request rather than an instruction, and the scene ends with Chloe agreeing without being pushed into it.
+- **The other three names on the NDA** — referenced only as "the four of us" who bear the consequence if Chloe talks; never individuated, never named.
+
 ## Likes, dislikes, habits
 - States the structural facts of a power imbalance before asking for something inside it. [text: chapters/18_fifteen.md:133, 145]
 - Corrects imprecise legal framing even while making an emotional appeal. [text: "Plus, it's not legally binding," chapters/18_fifteen.md:137]

@@ -34,6 +34,43 @@ Verifies at the source before agreeing, silently, then fixes it without narratin
 ## Are they acting like themselves?
 Corrected by a student who spoke without waiting to be called on — behavior the text is explicit would normally be punished ("Chloe has a very clear idea of what is supposed to happen to a kid who does what Ruth just did," chapters/04_pluto.md:119) — Doyle's visible response is limited to checking the board and fixing the word. The narration is explicit about what he does not do: "he isn't annoyed, he isn't being nice about it either." (chapters/04_pluto.md:117) Nothing happens afterward — no talking-to, no note home, no comment the rest of the day (chapters/04_pluto.md:120). Failure mode a writer would fall into: adding any visible reaction beyond the fix itself — a raised eyebrow, a pointed reminder about interrupting, or conversely a warm "great catch!" — either one breaks the exact flatness the scene is built to demonstrate.
 
+## Subjects
+Teaches science to the youngest age band (6-7) — volcanism/geology in chapters/04, structural load in chapters/05. CURRICULUM_GRID.md's own physics track doesn't begin until age 12 ("Physics is out of the arrival term... never again" until "the year after calculus") — so Doyle's subject at ages 6-7 sits entirely outside the grid's named tracks. Flagged below as an open seam between the reference document and the manuscript, not something to silently resolve.
+
+**Best at:** not defending an error once he's checked it — the entire content of his one scene.
+**Worst at / favourite / least favourite:** UNDEFINED — only one subject, one age band, is shown.
+**Secretly proud of:** UNDEFINED.
+**Would drop if allowed:** n/a.
+
+**What he was before Halstead:** UNDEFINED.
+**What he'd teach if he could teach anything:** UNDEFINED.
+**What he thinks of the rest of the curriculum:** UNDEFINED — no comment on anything outside his own room exists anywhere in the text.
+
+## Personality off the page
+[inferred, tightly, from the one scene] His authority doesn't depend on being right the first time. Corrected by a student who spoke without being called on — in a context the text is explicit would normally be punished — he doesn't manage the social breach, he manages the fact: he looks at what he wrote, agrees, fixes it. Checking the record before responding, rather than responding and then checking, is the single most concrete thing the manuscript gives about how he thinks under any kind of pressure, however minor. Bored, tired, 2am, a free Saturday, what he finds funny in others: UNDEFINED.
+
+## Would do / would never do
+Accepting a correction from a student without comment isn't passivity — it's the exact standard the school applies everywhere else: the fact matters, and who delivered it doesn't change whether it's true.
+
+**Would:**
+- Check his own written work before responding to a challenge to it. [text: chapters/04_pluto.md:111]
+- Fix an error in the same motion as acknowledging it, with no gap for face-saving. [text: chapters/04_pluto.md:112]
+- Let unfinished group work stay unfinished and return to it later rather than extend time on the spot to save it. [text: chapters/05_behind.md:22]
+- Grade a group against their own stated prediction rather than against a fixed target. [text: chapters/05_behind.md:28]
+
+**Would never:**
+- Get defensive, annoyed, or performatively gracious about being corrected — the narration explicitly rules out both extremes. [text: chapters/04_pluto.md:117]
+- Address the fact that a student spoke out of turn, only the content of what they said.
+- Follow up on a correction afterward — no talking-to, no note home, no comment for the rest of the day. [text: chapters/04_pluto.md:120]
+
+## Body and habits
+Holds a marker at the board while lecturing. [text: chapters/04_pluto.md:109, 111] Wipes an error away with the side of his hand and writes the correction into the same space. [text: chapters/04_pluto.md:112] Build, age, clothing, eating, sleeping: UNDEFINED.
+
+## Relationships
+- **Ruth** — corrects him in front of the class and receives the flattest possible acknowledgment; no scene shows them interacting again.
+- **Chloe** — watches him for the rest of the day for a reaction that never comes; the whole scene is staged through her observation rather than any direct exchange between them.
+- **Owen's group** — told to "leave it where it is and come back to it" rather than pushed to finish under time pressure. [text: chapters/05_behind.md:22]
+
 ## Likes, dislikes, habits
 - Checks his own prior work before responding to a correction rather than answering from memory. [text: chapters/04_pluto.md:111]
 - Lets an unfinished group task stand unfinished and revisits it later rather than extending time on the spot. [text: chapters/05_behind.md:22]
