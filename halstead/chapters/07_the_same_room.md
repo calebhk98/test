@@ -6,7 +6,7 @@ The loop out front is full of cars with their trunks standing open, more adults 
 
 Ruth finds her at the flagpole and hugs her hard enough to hurt.
 
-"So we're all getting in. That's the plan and everybody's doing it, so you have to, okay?" She has both hands on Chloe's shoulders and is saying it from about six inches away. "You as well, promise me you’ll make it in."
+"So we're all getting in. That's the plan and everybody's doing it, so you have to, okay?" She has both hands on Chloe's shoulders and is saying it from about six inches away. "You as well, promise me you'll make it in."
 
 "We're all getting in, I promise."
 
@@ -38,7 +38,7 @@ She comes back down. "I don't know?"
 
 "Ruth, the one you said built a better bridge?" her mom asks.
 
-"I don’t know hers either."
+"I don't know hers either."
 
 "Kavi. You said Kavi about nine hundred times in that car."
 
@@ -56,7 +56,7 @@ Somebody at the school picks up on the second ring. Chloe gets close and tries t
 
 "Okay. Yes. Chloe Kessler." She says their number, "And she'd have been in with a Sam, a Ruth, a Kavi, and a girl called Priya, if that helps you find her. They were all in the same room the whole four weeks. Can you just let them know that Chloe would like to talk to them? Thank you very much." And she hangs up.
 
-“Ok, all we can do now is wait.”
+"Ok, all we can do now is wait."
 
 ---
 
@@ -88,7 +88,7 @@ Before she answers, her mom looks out her own window, and her dad doesn't look a
 
 The book has to go back and they go on Tuesday. Chloe has had it out for five weeks and she carries it in with both hands.
 
-"There she is." The librarian takes it and tsks, as she turns the card over. "It’s been five weeks, not four weeks. Did you get through it atleast?"
+"There she is." The librarian takes it and tsks, as she turns the card over. "It's been five weeks, not four weeks. Did you get through it atleast?"
 
 "Twice. There wasn't as much time as I thought there'd be." Chloe gets up on her toes at the desk. "There's a plastic man called Gary and you do CPR on him, and when you push in the right place hard enough he clicks. I got the click on the fourth one. And we built a bridge out of dowels and string and hung a bucket off the middle of it, and put weights in a pound at a time until it broke, and ours went at eleven pounds and it went at the corner."
 
@@ -96,7 +96,7 @@ The book has to go back and they go on Tuesday. Chloe has had it out for five we
 
 "And I can divide fractions now. Not just do them. I know why it works, and I got that part on my own on the floor of my room at night, and it took me about an hour."
 
-The librarian looks at her over the top of the card. "That's a real month, that is," she says, and puts the stamp down. "But that doesn’t mean you can get more, it is still four at a time, same as it was in June. The new ones came in this morning and they're still on the cart, so go on."
+The librarian looks at her over the top of the card. "That's a real month, that is," she says, and puts the stamp down. "But that doesn't mean you can get more, it is still four at a time, same as it was in June. The new ones came in this morning and they're still on the cart, so go on."
 
 Chloe takes four off the cart and finishes two of them by Friday.
 
@@ -202,7 +202,7 @@ She says thank you at the end of it, puts the phone down, and stands there, her 
 
 ---
 
-In the first week of October, Chloe puts her head down on her desk in the middle of the morning and for some reason she can’t help but to cry with her face in her arms.
+In the first week of October, Chloe puts her head down on her desk in the middle of the morning and for some reason she can't help but to cry with her face in her arms.
 
 She isn't quiet about it. Ms. Vance comes down the row and crouches all the way down beside the desk, in front of everybody, and puts a hand flat on Chloe's back, leaving it there.
 

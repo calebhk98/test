@@ -120,7 +120,7 @@ Saturday afternoon is the stock count: four hours, one clipboard between them, e
 
 "Sam." Ruth points at the floor without turning round. "They're by your foot."
 
-They count the third shelf three times, and the third count is Ruth's. She stops halfway through it, puts the clipboard down on a crate, and stands looking at the shelf for long enough that Kavi asks her what she is doing. Then she starts counting cases instead of tins, four stacks at a time, with a chalk mark on the shelf edge for every complete twelve. That takes a shelf from forty minutes to nineteen. By the time they finish, it’s time for dinner.
+They count the third shelf three times, and the third count is Ruth's. She stops halfway through it, puts the clipboard down on a crate, and stands looking at the shelf for long enough that Kavi asks her what she is doing. Then she starts counting cases instead of tins, four stacks at a time, with a chalk mark on the shelf edge for every complete twelve. That takes a shelf from forty minutes to nineteen. By the time they finish, it's time for dinner.
 
 By Christmas she can hold twenty-four seconds in the 10v1, but she is still only ranked thirty out of ninety. She gets to the library about once a week now, because most evenings there are six or seven people in the third floor common room with a game spread over the table and a space at it for her.
 
@@ -168,7 +168,7 @@ Kavi is on their comms in under thirty seconds. "It's AES-256," he says. "But, i
 
 Ruth reads over his shoulder, "They're almost certainly actors, look at this. This is a consumer handset with a default code. My dad's work has better than this and my dad sells insurance."
 
-"I know," Kavi says. “The problem is that they barely talk. Two transmissions in six minutes, both of them position checks, and neither one says a word about what they came for.”
+"I know," Kavi says. "The problem is that they barely talk. Two transmissions in six minutes, both of them position checks, and neither one says a word about what they came for."
 
 "Anything about the objective?"
 
@@ -194,7 +194,7 @@ The plan takes Sam ninety seconds and he is defending it before he's finished de
 
 "Noted," Sam says. "It's still the plan. Anybody got a better one in the next thirty seconds?"
 
-“If you don't know what somebody's here for, you don't know which way they're going to move. That's the whole problem with the plan. They have to choose," Chloe says. "Somebody has to be in front of them. I'll do it."
+"If you don't know what somebody's here for, you don't know which way they're going to move. That's the whole problem with the plan. They have to choose," Chloe says. "Somebody has to be in front of them. I'll do it."
 
 "You'll get grabbed."
 
@@ -228,8 +228,6 @@ The face she's supposed to make is confused and half asleep, and even though she
 
 All four of them turn. The nearest one comes at her fast and low and gets a gloved hand up near her mouth, and she lets him, because moving would be wrong. He doesn't hit her. He puts the hand there and then stops, with his other arm half up, doing exactly what she needed him to do, in front of three men who are all looking at the same thing.
 
-Then nobody makes a sound.
-
 It takes nine seconds. Kavi, closest to them, takes the two at the back; Ruth takes the third, and Sam goes for the one with his hand on Chloe's face, doing it badly, missing the vein and going again. The man takes that half a second, gets an arm free and swings but hits nothing before he then goes down.
 
 Chloe steps back out of the way and sits down on the floor because her legs have decided to.
@@ -242,7 +240,7 @@ Ruth is already moving between the four of them, two fingers on a throat, then t
 
 "Both were in eventually," Kavi says.
 
-“Yeah, but he almost hit Chloe, the one person we needed to take down correctly, and I messed up.”
+"Yeah, but he almost hit Chloe, the one person we needed to take down correctly, and I messed up."
 
 They tie them up, wrists and ankles, on their sides, four men in a row against the corridor wall, and then they sit with them, just like protocol says.
 
@@ -254,7 +252,7 @@ The four of them are dressed like a maintenance crew. Dark work trousers, plain 
 
 "They didn't even do costumes properly," Sam says. "Look at this. Look at this guy's boots."
 
-"It worked." Sams looks pleased with himself.
+"It worked." Sam looks pleased with himself.
 
 "It worked because they took the stairs," Ruth says. "If they'd gone past the kitchens we'd have needed two more people off the second floor, and that's minus. Or it would have taken us longer."
 
@@ -304,7 +302,7 @@ Then it stops being an interrogation, because Sam has been building up to it for
 
 Nobody answers him.
 
-"No, I'm actually asking, you don’t have to act like the fake attackers, somebody looked at those and went, yeah, that's the ones." He turns to Kavi. "How long did it take you again?"
+"No, I'm actually asking, you don't have to act like the fake attackers, somebody looked at those and went, yeah, that's the ones." He turns to Kavi. "How long did it take you again?"
 
 Kavi doesn't look up. "Four seconds of compute."
 
@@ -312,7 +310,7 @@ Kavi doesn't look up. "Four seconds of compute."
 
 "He's not going to answer you," Ruth says.
 
-"I know he's not supposed to answer me, I’m sure he gets paid based on not talking to us, I'm making a point." Sam sits back. "And another thing, nobody told us, there was nothing on the board. You don't run it at four with nothing on the board, that's not, like, that's not how it goes."
+"I know he's not supposed to answer me, I'm sure he gets paid based on not talking to us, I'm making a point." Sam sits back. "And another thing, nobody told us, there was nothing on the board. You don't run it at four with nothing on the board, that's not, like, that's not how it goes."
 
 "I was enjoying my sleep too," Ruth pipes up. 
 
