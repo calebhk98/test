@@ -8,14 +8,22 @@ The source has two guides. Where they set different numbers or emphasis, this fi
 
 ## 1. Point of view and tense
 
-Instruction: Write third person limited, present tense, close on Chloe. Chloe must be able to perceive the scene, either present in it or overhearing it through a device the text establishes (the stair where the carpet stops, a door open a few inches, a call on the car speaker).
+Instruction: Write third person limited, present tense, close on Chloe for nearly all of the book. Chloe is present in the scene, or overhearing it through a device the text establishes: the stair where the carpet stops, a door open a few inches, a call on the car speaker.
 
 Fails, shortest first:
 - Other characters' interiority: "It occurs to him that..."
 - Future POV, breaking the tense: "where it lives from then on"
 - Telling the reader what to notice.
 
-Instead: report only what Chloe can see or hear, in the present. If a scene matters and Chloe cannot witness it directly, route it through something she overhears. It is fine for the reader to miss things Chloe misses.
+Instead: report what Chloe can see or hear, in the present. It is fine for the reader to miss what Chloe misses.
+
+### The camera exception
+
+Third person carries one advantage over first, and the book is allowed to use it. When a scene has to reach the reader and Chloe has no reason to be anywhere near it, write the scene without her. A plain camera: what happened, who was in the room, what was said.
+
+Keep it rare. Keep the other constraints. No interiority for anyone in that scene, no future POV, no pointing at what matters.
+
+A fifth contrived overhearing is worse than one clean camera scene. When the only way to put Chloe in earshot is another door left open a few inches, the device has stopped working and the camera is the honest move.
 
 ---
 

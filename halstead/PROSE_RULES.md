@@ -69,43 +69,53 @@ A moment rendered well and then explained loses the explanation's audience twice
 
 ---
 
-## Rule 7: Don't Bury Scale Inside a Fast List, the Montage-Chapter Pattern
+## Rule 7: Bury Scale Inside a Fast List, Deliberately
 
-Formatting extraordinary material as a rapid list, while giving ordinary material full scene treatment (dialogue, named characters, sensory detail), teaches the reader to skim exactly the content that would otherwise prompt scrutiny. A reader moving at normal speed through a scene absorbs it; the same reader moving at normal speed through a list skims it. Using that difference on purpose to bury scale is a specific, namable failure, not a pacing accident.
+Formatting extraordinary material as a rapid list, while giving ordinary material full scene treatment, teaches a reader to skim exactly the content that would prompt scrutiny. That is the intended effect. A skimming reader should miss the details. The list stays complete, so a reader who slows down finds every item, and the delivery speed keeps most readers moving past it.
 
-**Example:** "Then the bridge... Then the pool... Then dividing fractions... Then Spanish...", a list of a month's curriculum delivered as a single breathless inventory, immediately followed by five pages of scene-time given to a friendship subplot.
+**Example:** "Then the bridge... Then the pool... Then dividing fractions... Then Spanish...", a month of curriculum delivered as one breathless inventory, followed by five pages of scene-time on a friendship.
 
-**Do instead:** slow the recap down enough that the reader registers every item on the list, which will change the tone of the scene, that change is the honest version. Or cut the list to three or four items and let the true number stay implicit, rather than being technically present but functionally hidden by delivery speed. Give events that carry real stakes their own beat of scene-time, at the same rhythm as the emotionally legible material around them.
+**Do:** give the full list. Keep the pace fast enough that the items arrive as texture rather than as evidence. Give the emotionally legible material the scene-time, because that is where the reader's attention is meant to go. The scale is technically present and functionally hidden, and both halves of that are the design.
+
+**The one thing to watch:** the list has to survive a slow reading. A reader who stops and counts should find the arithmetic holds.
 
 ---
 
-## Rule 8: Red-Flag Dialogue, Don't Let a Character Do the Reader's Math Out Loud
+## Rule 8: Name the Feat Once When Later Chapters Will Refer Back To It
 
-When a character states an extreme fact in bare summary form, they hand the reader the exact conclusion the surrounding scene was built to earn gradually, and the plain statement invites the reader to stop and check whether it's plausible.
+A character stating an extreme fact in bare summary hands the reader a conclusion the scene was building toward, and invites them to stop and check whether it is plausible. That cost is worth paying when the book needs the fact on the record.
+
+If a later chapter treats a capability as established, an earlier chapter has to have said it plainly. Implying it and then referring back to it as though it had been stated leaves the reader with nothing to point at.
 
 **Example:** "They are shooting bullets out of the air."
 
-**Do instead:** describe the mechanism instead of naming the feat, the lane, the sound, the miss rate, the setup, and let the reader infer what's happening from specific, physical detail. The scene should be dense enough with sensory information that the summary sentence becomes unnecessary.
+**Do:** say it once, in the plainest available form, at the point where it first becomes true. Then never explain it again. Everywhere after that, describe the lane, the sound, the miss rate, the setup, and let the mechanism carry it.
+
+**What to avoid:** the same fact restated in summary form a second and third time. One plain statement is a record. Three is the narrator making sure.
 
 ---
 
-## Rule 9: Don't Undercut an Achievement With a Ranking or Grade in the Same Breath
+## Rule 9: Undercut the Achievement in the Same Breath
 
-Pairing a striking fact with an immediate qualifier, a rank, a grade, a comparison to someone better, redirects the reader's attention to the qualifier before the fact itself has had room to register. The "but" is doing the redirecting; the reader notices being steered.
+Pairing a striking fact with an immediate qualifier redirects a reader's attention to the qualifier before the fact registers. Use it. The book is written from inside a perception where twenty-four seconds is a middling number, and a reader who feels the deflection is feeling what the character feels.
 
 **Example:** "she can hold twenty-four seconds in the 10v1, but she is still only ranked 30 out of 90."
 
-**Do instead:** separate the two pieces of information. Let the achievement sit in its own scene, with the physical cost of it on the page, so the reader feels the effort before any context arrives. Put the ranking somewhere else entirely, a different paragraph, a different day. Absorbed independently, each fact lands; joined by "but," the reader sees only the deflection.
+**Do:** keep the two facts joined. Put the number and the rank in the same sentence and let the rank win. The reader should come away thinking twenty-four seconds is unremarkable, because that is what she thinks.
+
+**Do not** give an achievement its own scene with the physical cost on the page and the ranking somewhere else. Separated, the reader weighs each fact independently and works out what the number means, which is what the perception depends on them failing to do.
 
 ---
 
-## Rule 10: Comedy Immediately After Violence, Give the Reader a Beat of Stillness First
+## Rule 10: Put the Comedy Straight After the Violence
 
-A joke placed directly against a violent or high-stakes moment is a standard technique for controlling how long a reader is allowed to dwell on something. Used reflexively, it manages the reader's emotional response rather than letting the reader arrive at their own reaction.
+A joke placed directly against a violent moment controls how long a reader dwells there. That is the purpose. The reader should be moved along before the consequences settle.
 
-**Example:** "'That's a C,' Sam says, walking back with his hands up", the line that closes a scene in which four children have just drugged and restrained four armed adults.
+**Example:** "'That's a C,' Sam says, walking back with his hands up", closing a scene in which four children have drugged and restrained four armed adults.
 
-**Do instead:** insert one full beat of consequence or stillness, even a short paragraph, before the joke lands, so the reader's own reaction gets to register before a character's deflection arrives to pre-empt it.
+**Do:** let the deflection arrive on the next line, in a character's voice, before any beat of stillness. The characters are not sitting with it, and the reader travels at their speed.
+
+**What to watch:** the joke has to belong to the character rather than to the narrator. Sam grading the operation is Sam. A wry narrating aside doing the same work is the author.
 
 ---
 
@@ -219,13 +229,15 @@ A recurring scene shape, a character states something with confidence, an author
 
 ---
 
-## Rule 22: Exposition Delivered as Dialogue, Don't Let Characters Explain Process to Each Other
+## Rule 22: Exposition as Dialogue, With One Standing Exception
 
-When two characters explain mechanics to each other purely so the reader receives the information, the dialogue stops sounding like something either person would actually say and starts sounding like narration wearing a voice.
+Two characters explaining mechanics to each other so the reader receives the information makes the dialogue sound like narration wearing a voice.
 
 **Example:** "Because you can't track it, and shooting one down after it is in the air is not something you are going to manage."
 
-**Do instead:** let characters who already share the same knowledge talk like people who share it, in fragments, assumptions, and shorthand, and move the mechanical information into action and description instead of a lecture delivered as speech.
+**Do:** when both speakers already know the thing, let them talk like people who know it, in fragments and shorthand, and move the mechanics into action and description.
+
+**The exception, which covers a great deal of this book:** these people are at a school. A teacher explaining something to a class is a teacher doing their job, and a student correcting another student who has it wrong is the school's whole method on the page. Neither is exposition wearing a costume. The test is whether the speaker knows something the listener does not. If they do, let them say it. If both already know it, cut it.
 
 ---
 
@@ -279,13 +291,15 @@ Certain phrases recur so often across a manuscript that they stop functioning as
 
 ---
 
-## Rule 28: Hedges and Filler Adverbs That Weaken Precision
+## Rule 28: Hedge Where the Character Could Not Know, Cut Filler Everywhere Else
 
-Hedge words attached to a measurement or a claim weaken it by advertising the narrator's uncertainty, even where no uncertainty is intended.
+Two different things wear the same clothes here.
 
-**Example:** "about four feet away"
+A hedge attached to an estimate a person is actually making is more accurate than a bare number. "About four feet away" is what someone glancing across a room can report. "Four feet away" claims a measurement nobody took, and a reader who has ever estimated a distance feels the difference. Keep those hedges. They are precision about the limits of the observation.
 
-**Do instead:** commit to the number, or drop it if precision genuinely isn't available. Delete "really," "just," "kind of," "sort of," and "actually" wherever they aren't earning a place in the sentence, which is most places.
+**Cut the filler:** "really", "just", "kind of", "sort of", "actually", "somewhat", "a bit", wherever they attach to nothing and soften a claim the narrator is entitled to make. These advertise uncertainty that does not exist.
+
+**The test:** would the character be able to know the exact version? If not, the hedge is the honest number. If yes, the hedge is padding.
 
 ---
 
@@ -299,23 +313,27 @@ Hedge words attached to a measurement or a claim weaken it by advertising the na
 
 ---
 
-## Rule 30: Educational-Jargon Fetish, Inhabit the Subject, Don't Explain the Syllabus
+## Rule 30: Inhabit the Subject, and Give the Reader One Line of It
 
-Dropping into an academic register to name and define a field of study reads as imported rather than experienced, the prose starts to sound like a syllabus rather than a character's actual encounter with the material.
+Dropping into an academic register to define a field reads as imported, and the prose starts to sound like a syllabus rather than a person's encounter with the material.
 
-**Example:** "Formal epistemology is the room four other subjects have been standing outside."
+**Example of going too far:** "Formal epistemology is the room four other subjects have been standing outside."
 
-**Do instead:** show the character's accumulated experience of the subject through specific, concrete moments from each contributing area, and let the reader arrive at the larger idea through those moments rather than through a definition.
+**Do:** show the accumulated experience through concrete moments and let the reader reach the larger idea through them.
+
+**And give them a line.** A student saying one sentence of actual subject content is characterising and grounds the scene in something real. A student delivering a paragraph is the syllabus again. One line of the thing itself, then back to the person.
 
 ---
 
-## Rule 31: Match Sentence Syntax to the Character's Age
+## Rule 31: Match Syntax to the Age, With the Ability Built In
 
-Vocabulary can scale with a character's age across a manuscript, but if the sentence structure never changes, the prose reads as though the character's mind stopped developing even while the plot insists years have passed.
+If sentence structure never changes across a manuscript, the character's mind reads as static while the plot insists years have passed. A six-year-old and a sixteen-year-old should not build a sentence the same way.
 
-**Example:** "You can end up somewhere by accident and still be there.", an aphorism-level observation delivered by a six-year-old, in the same complex subordinate-clause structure the same character uses at sixteen.
+**Example:** "You can end up somewhere by accident and still be there.", delivered by a six-year-old in the same subordinate-clause structure the same character uses at sixteen.
 
-**Do instead:** give a young child's dialogue and interiority a simpler grammatical shape than an older version of the same character, shorter clauses, less subordination, more repetition of structure, and let the syntax grow in complexity alongside the vocabulary as the character ages.
+**Do:** give the younger version shorter clauses, less subordination, more repeated structure, and let the complexity grow with the years.
+
+**The calibration these characters need:** they are children and they should sound like children, and a seven-year-old at 160 does not think or talk like a seven-year-old at 100. The difference shows in what she notices, how many steps she holds at once, and how fast she gets to the point, rather than in vocabulary or clause depth. Keep the grammar age-appropriate. Let the content be what marks her out. A child saying a simple sentence about something no other child in the room has noticed is the register.
 
 ---
 
