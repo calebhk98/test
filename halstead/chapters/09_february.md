@@ -4,11 +4,11 @@
 
 It's a Tuesday and nothing happens on it.
 
-Nobody calls from the school and nobody says one thing to her all day. The sheet at twenty past nine is the same sheet as Monday's with different numbers in it. She finishes it and checks it. Then she sits behind it with her hands in her lap for the rest of the period. At lunch she sits at the end of a table because there's a space at the end of it, where nobody minds her being and nobody talks to her either. In the afternoon they do a worksheet about the parts of a plant, which has a picture on it that you colour in when you've finished the words. Chloe finishes the words in about four minutes, then colours the picture very slowly, going right up to the lines without going over them anywhere, which gets her most of the way to the bell. She has seen Dr. Ammons four times since October, and the last one was a fortnight ago, where she was asked whether any of it had got easier and said some of it had.
+The school doesn't call. The sheet at twenty past nine is the same sheet as Monday's with different numbers in it. She finishes it and checks it. Then she sits behind it with her hands in her lap for the rest of the period. At lunch she sits at the end of a table because there's a space at the end of it, where the talk stays down at the other end, out of her reach. In the afternoon they do a worksheet about the parts of a plant, which has a picture on it that you colour in when you've finished the words. Chloe finishes the words in about four minutes, then colours the picture very slowly, going right up to the lines without going over them anywhere. She has seen Dr. Ammons four times since October, and the last one was a fortnight ago, where she was asked whether any of it had got easier and said some of it had.
 
 She comes home. She goes upstairs without taking her coat off. At some point her mom comes up to say that dinner's in ten minutes. She finds her on the floor in the gap between the bed and the wall, with her back against the bed and her knees pulled up.
 
-She isn't crying yet. She's just sitting there in the gap with her coat still on.
+She isn't crying yet. She's sitting there in the gap with her coat still on.
 
 "Chloe? Honey, what are you doing down there on the floor?"
 
