@@ -2,7 +2,7 @@
 Somebody tries to run an operation against Nadia's company in the spring.
 
 
-She's forty people and eleven months old and nobody outside three counties has heard of her, which is the part she can't get past.
+She's forty people and eleven months old and nobody outside three counties has heard of her.
 
 
 nadia: somebody tried industrial espionage on me
@@ -58,7 +58,7 @@ ________________
 
 
 
-The espionage isn't what changes Nadia's mind about anything. The hiring is.
+The hiring changes Nadia's mind.
 
 
 She interviews four hundred people that year, because she's growing and because she does all of it herself.
@@ -67,10 +67,10 @@ She interviews four hundred people that year, because she's growing and because 
 The first thing is that almost nobody can do the take-home. She makes it easier. Then easier again. By November it's a version she'd have handed a twelve-year-old at Halstead and the pass rate is under a third.
 
 
-The second thing is the interviews. She asks people to explain something they built and then asks two questions about it, and a lot of them cannot answer the second question, and it isn't nerves, it's that the second question is past where they stopped.
+The second thing is the interviews. She asks people to explain something they built, then asks two questions about it. A lot of them cannot answer the second question, past where they stopped.
 
 
-She hires excellent people. That's the confusing part. She checks their references and their references are glowing and they are, by every measure available to her, very good.
+She hires excellent people. She checks their references and their references are glowing and they are, by every measure available to her, very good.
 
 
 nadia: is anyone elses hiring weird
@@ -109,16 +109,13 @@ He's told he'll be moving between two points on foot at night with an opposing e
 They come at him three times.
 
 
-The first is a two-man contact at a fence line, which he handles and afterwards describes to himself as fine. The second is four of them in a culvert with the approach cut off behind him, which is where he actually starts paying attention, and which takes about eleven seconds and costs him a thumb that swells up for a week.
+The first is a two-man contact at a fence line, which he handles and afterwards describes to himself as fine.
 
 
-The third is at 0340 on the fourth night, from behind, on ground where the footing is bad, by a man who has done nothing for six hours except wait in one spot for him to come past.
+The second is four of them in a culvert with the approach cut off behind him, which is where he starts paying attention, and which takes about eleven seconds and costs him a thumb that swells up for a week.
 
 
-The man does everything right. That's what goes in the report afterward. He has the position, the timing, the surprise, and the ground, and the entire encounter takes under two seconds and it does not go his way at any point in it.
-
-
-Sam doesn't remember deciding anything about it. He's got the man's weight going where he wants it before he's finished registering that there's a man.
+The third is at oh-three-forty on the fourth night, from behind, on ground where the footing is bad, by a man who has done nothing for six hours except wait in one spot for him to come past. The man does everything right. That's what goes in the report afterward. He has the position, the timing, the surprise, and the ground, and the entire encounter takes under two seconds and it does not go his way at any point in it. Sam doesn't remember deciding anything about it. He's got the man's weight going where he wants it before he's finished registering that there's a man.
 
 
 ________________
@@ -126,7 +123,7 @@ ________________
 
 
 
-At the debrief a major runs through the four days and gets to the third contact and stops on it for a while.
+At the debrief a major runs through the four days before stopping on the third contact.
 
 
 Sam waits, because he assumes there's a critique coming, and he's got one for himself about the culvert.
@@ -138,13 +135,13 @@ Sam waits, because he assumes there's a critique coming, and he's got one for hi
 "Yeah." Sam sits forward. "Was that the assessment, or was that still setup?"
 
 
-Nobody says anything.
+The major's eyebrows go up.
 
 
 "Because if that's the assessment I've got notes," Sam says. "The culvert one was bad. I let them have the back door and that's on me, I should have gone up and around and I got lazy about the time. If we're doing it again I'd want it harder, honestly, or at least more of them, because three separate two-and-fours over four days is a lot of walking for not much."
 
 
-He is being completely sincere and it is obvious that he is being completely sincere, which is the part that goes upward.
+It goes upward anyway.
 
 
 sam: i think i annoyed some people again
@@ -165,10 +162,10 @@ sam: i genuinely thought there was a real one
 ________________
 
 Chapter Twenty-Five: Cleared
-Chloe's blog gets big in about fourteen months, which she does not experience as anything happening.
+Chloe's blog gets big in about fourteen months.
 
 
-She posts two or three times a week. Six thousand words with a five-hundred-word summary at the top for people who want it fast. The summaries start getting picked up on their own, and then people start noticing that her summary is the length of a normal article and contains more, and by the following spring she has a readership and an inbox.
+She posts two or three times a week. Six thousand words with a five-hundred-word summary at the top for people who want it fast. The summaries start getting picked up on their own; once people notice her summary runs the length of a normal article and holds more in it, she has a readership and an inbox by the following spring.
 
 
 People keep asking who works with her.
@@ -177,7 +174,7 @@ People keep asking who works with her.
 She keeps telling them. It's just her, it takes a day, at school she was doing ten pages a week alongside nine other subjects so this is well under half of what she's used to.
 
 
-Roughly a third of those conversations end there. She notices the pattern and files it under people being funny about credentials.
+Roughly a third of those conversations end there. The pattern repeats, same question, same drop-off, and she decides it's people being funny about credentials.
 
 
 She's also carrying twenty-one credits and the job, and none of it registers as a load, because her actual timetable at fourteen was heavier than this and included getting hit.
@@ -191,10 +188,10 @@ ________________
 She sits the Foreign Service exam three weeks after she turns twenty.
 
 
-It's four hours. She finds it pleasant. There's a section on world affairs that she enjoys the way you enjoy a crossword, and she comes out and gets a coffee and doesn't think about it again until the result arrives.
+It's four hours. She finds it pleasant. There's a section on world affairs that she enjoys the way you enjoy a crossword. She comes out for a coffee and doesn't think about it again until the result arrives.
 
 
-She does not read the result as information about herself. She reads it as having sat an exam.
+She reads it as having sat an exam.
 
 
 ________________
@@ -205,7 +202,7 @@ ________________
 The clearance investigation takes seven months and involves a man named Whitaker who comes to see her twice.
 
 
-Chloe likes him. He's thorough and he doesn't pretend the questions are casual, which she appreciates.
+Chloe likes him. He's thorough and he doesn't pretend the questions are casual.
 
 
 She tells him everything.
@@ -217,34 +214,28 @@ Eleven years at a boarding school. Yes, boarding, from seven. Yes, that's young.
 "There's a third one," Chloe says. "It's internal. I can tell you I worked on it, I can tell you when, I can tell you who ran it. I've been asked not to say what it's about, and I said I wouldn't."
 
 
-"Asked by whom."
+Whitaker doesn't look up. "Asked by whom."
 
 
-"The lead researcher. She didn't make me sign anything. She said everyone else had signed and if I talked it landed on them."
+Chloe keeps her eyes on him. "The lead researcher. She didn't make me sign anything. She said everyone else had signed and if I talked it landed on them."
 
 
-"And you agreed to that."
+"And you agreed to that," he says.
 
 
 "Yeah."
 
 
-Whitaker writes for a while.
-
-
-"Anything else in that category?"
+Whitaker fills half a page before he looks up. "Anything else in that category?"
 
 
 "Two others," Chloe says. "Same thing. Same reason."
 
 
-"Would you tell me if I said it was necessary?"
+Whitaker turns back a page, cross-checking his own notes. "Would you tell me if I said it was necessary?"
 
 
-Chloe thinks about it properly, which takes her a few seconds.
-
-
-"I'd want to talk to her first," she says.
+Whether to tell him if he insists, or hold the line the way she's holding it for the other two, that's what she sits with for a few seconds. "I'd want to talk to her first," she says.
 
 
 He writes that down too.
@@ -255,10 +246,10 @@ ________________
 
 
 
-He asks about the funding, and she has nothing. He asks who the school's principal donor is and she says she has no idea, that nobody there ever discussed it, that she was seven when she arrived and it never occurred to her to ask who paid for a school any more than it occurs to a child to ask who pays for a park.
+He asks about the funding, and she has nothing. He asks who the school's principal donor is. She has no idea, nobody there ever discussed it, she was seven when she arrived, no more likely to ask who paid for a school than a child asks who pays for a park.
 
 
-She can hear how that sounds while she's saying it. She says it anyway, because it's true.
+She says it anyway. It's true.
 
 
 The clearance comes through in the autumn.
@@ -273,7 +264,7 @@ Chapter Twenty-Six: Ruth
 Ruth spends her first year at MIT believing she has been put in a remedial track.
 
 
-It's the only explanation that works. The first-year sequence covers, in a semester, material she had at eleven. She assumes there's a real sequence somewhere and that she hasn't been given it, and that this is a bureaucratic problem, and she spends most of October trying to find the right office.
+It's the only explanation that works. The first-year sequence covers, in a semester, material she had at eleven. She assumes there's a real sequence somewhere she hasn't been given, a bureaucratic problem, and spends most of October trying to find the right office.
 
 
 In November she makes a joke in a study group.
@@ -285,16 +276,16 @@ It's a small one. It needs two things held together and it takes about four seco
 Three people look at her.
 
 
-One of them says "wait, what?" and she explains it, and explaining it kills it, and the group moves on. She spends the walk home working out which part she got wrong.
+One of them says, "wait, what?" and she explains it, and explaining it kills it, and the group moves on. Walking home, she runs it back: the timing, the words, where the four seconds went wrong.
 
 
 In February she asks a study group when they think the course will get past fifth-grade concepts.
 
 
-She isn't being cruel. She has no idea it could be taken that way. A boy called Devansh laughs, because he thinks she's doing a bit, and then he watches her face for a second longer and stops laughing, and the temperature at the table changes and Ruth cannot work out why.
+She isn't being cruel. She has no idea it could be taken that way. A boy called Devansh laughs, because it looks like a bit. Then he watches her face two beats past the laugh and stops. The table goes quiet, and Ruth cannot work out why.
 
 
-She goes home and writes down that MIT tracks students by ability and doesn't advertise it, because that is the explanation that lets everything stay where it is.
+She goes home and writes down that MIT tracks students by ability and doesn't advertise it.
 
 
 ________________
@@ -305,19 +296,19 @@ ________________
 She holds that for about ten months.
 
 
-What eventually breaks it is not a statistic. It's a professor she likes, in office hours, who she is genuinely fond of, and who cannot follow her past the third step of something, and who says so, cheerfully, without embarrassment, and asks her to go back.
+What eventually breaks it is not a statistic. It's a professor she likes, in office hours, who she is genuinely fond of, who cannot follow her past the third step of her reasoning and says so, cheerfully, without embarrassment, before asking her to go back.
 
 
-Ruth walks out and sits on a wall for a long time.
+Ruth walks out and sits on a wall until the light changes twice.
 
 
-She doesn't tell anybody. She goes and finds the numbers instead, over the following months, one at a time, and every one of them says the same thing, and every one of them is worse than the last.
+She doesn't tell anybody. She goes and finds the numbers instead, over the following months, one at a time, and every one of them says the same thing, each worse than the one before.
 
 
 Second language. Reading level. Fractions. She keeps posting them in the chat and watching people make a joke inside a minute and move on.
 
 
-In April she stops posting, because she has understood something and she does not want to be the one who says it.
+In April she stops posting, because she has understood what the numbers add up to and she does not want to be the one who says it.
 
 
 ________________
@@ -364,7 +355,7 @@ ruth: we are not slightly ahead
 ruth: i dont think we're the same kind of thing
 
 
-The chat has nothing in it for a while.
+The chat stays empty until Kavi answers.
 
 
 kavi: how long have you had this
@@ -402,10 +393,10 @@ sam: yeah
 ________________
 
 Chapter Twenty-Seven: The Money
-The financial one takes eleven weeks, which is fast and is not easy.
+The financial one takes eleven weeks.
 
 
-Eli builds it and Kavi builds the thing that watches it, and the whole design problem is that it has to be boring. It doesn't search. Anything that searches looks like something searching. It sits in the places where a badly maintained reconciliation job would sit, and it moves the way one moves, and it is patient in a way that none of them naturally are.
+Eli builds it, and Kavi builds the thing that watches it. The whole design problem is that it has to be boring. It doesn't search. Anything that searches looks like something searching. It sits in the places where a badly maintained reconciliation job would sit, and moves just as slowly. None of them have that kind of patience. The program does.
 
 
 They test it for a month against Nadia's own systems before it goes anywhere.
@@ -434,7 +425,7 @@ What it finds, over the following two months, is a shape.
 There's no name. There's no bank with a name on it. What there is, once Kavi has enough of it to stack, is a single set of decisions running from somewhere around 1998 or 2001, depending which thread you follow back.
 
 
-Ruth is the one who argues it into a proof, and she does it with the thing that isn't there.
+Ruth is the one who argues it into a proof.
 
 
 ruth: its one person and i can show it
@@ -567,7 +558,7 @@ Chapter Twenty-Eight: The Other One
 Eli proposes the second worm and Theo says no for nine days.
 
 
-Nobody in the argument is confused about the law. All seven sat the same examination and Ruth quotes the sentencing ranges from memory, twice, at Eli, as an argument against.
+Nobody in the argument is confused about the law. All seven had sat the same examination and Ruth quotes the sentencing ranges from memory, twice, at Eli.
 
 
 theo: i want it on record that this is the stupidest thing any of us has ever done
@@ -602,13 +593,13 @@ ________________
 
 
 
-They test it for five weeks. Chloe writes the rules because she's the one who writes, and it comes to nine pages: what it never touches, what it does if it's noticed, and what happens if any one of the seven says stop, which is that all of it ends inside the hour with no argument.
+They test it for five weeks. Chloe writes the rules because she's the one who writes, and it comes to nine pages: the limits it never touches, the response if it's noticed, and what happens if any one of the seven says stop, which is that all of it ends inside the hour with no argument.
 
 
 Everyone signs off. Theo signs off last and says again that this is insane.
 
 
-Chloe is four months into a job with a security clearance when she writes those nine pages, and she is aware of that the entire time she is writing them, and she does not stop.
+Chloe is four months into a job with a security clearance when she writes those nine pages, her hand steady through all nine of them, and she does not stop.
 
 
 ________________
@@ -620,7 +611,7 @@ There is a file on all ninety-one of them.
 Address, employer, family, where their parents work, where everybody banks. Sam's is the thickest and the newest. Theo's has a note on it that makes him close his laptop and go outside for twenty minutes.
 
 
-There's a standing line saying the graduates are believed to be in contact with one another. There is no assessment of by what means. There is nothing anywhere in the file about what any of them has ever said to any of the others, and a note that collection against the channel has returned no content of any kind, on any occasion, and a recommendation to keep attempting it.
+There's a standing line saying the graduates are believed to be in contact with one another. The file has never worked out the method, and collection against the channel has come back empty every time it's tried, along with a recommendation to keep attempting it.
 
 
 And there's an incident report from six years back.
@@ -675,7 +666,7 @@ ________________
 
 
 
-Ruth is quiet for a bit and then posts one line.
+Ruth goes quiet, then posts one line.
 
 
 ruth: i built that box in about a weekend when i was thirteen so we wouldnt get detention
@@ -725,7 +716,7 @@ nadia: they still dont know
 ruth: yes
 
 
-Nobody types anything for a while.
+Chloe reads yes twice before anyone types again.
 
 
 ruth: i keep saying we're ahead
@@ -752,7 +743,7 @@ eli: i dont know
 ruth: eli how good are we
 
 
-eli: ruth i dont know. thats the actual answer
+eli: ruth i dont know
 
 
 eli: i have never once been at the top of a room in my life
@@ -764,10 +755,10 @@ Chapter Thirty: Nine Minutes
 The worm goes quiet on a Thursday in June.
 
 
-Eli notices because a check-in doesn't arrive, and then nine minutes later everything is precisely where it should be. Same state, same position, nothing moved.
+A check-in doesn't arrive. Nine minutes later, everything is precisely where it should be. Same state, same position, nothing moved.
 
 
-He pulls the logs. There's no error. There's no restart. There's no gap. There is no nine minutes anywhere in them, and the process does not know it was ever not running.
+He pulls the logs. No error, no restart, no gap. There is no nine minutes anywhere in them, and the process does not know it was ever not running.
 
 
 Kavi's watcher, whose entire job is to see anything that anybody else might see, reports a healthy process across the whole window.
@@ -825,19 +816,19 @@ ________________
 
 
 
-Nobody says anything for a while.
+Ruth starts typing, stops, and starts again before she sends anything.
 
 
 ruth: so he doesnt know we know
 
 
-eli: he doesnt know we know
+eli: good
 
 
 ruth: thats the only thing we have
 
 
-eli: thats the only thing we have
+eli: dont lose it then
 
 
 sam: so we do nothing
@@ -864,6 +855,3 @@ Chloe reads that at one in the morning with work in six hours.
 
 
 She goes in the next day and does her job, which is the job of a government that has been trying to find this man since before she could read, and which has three wrong answers on file and no idea that seven people in their twenties settled it in eleven weeks.
-
-
-She doesn't tell anybody anything.

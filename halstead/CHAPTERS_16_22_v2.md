@@ -1,8 +1,8 @@
 ﻿Chapter Sixteen: The Applications
-Nobody expects to get into the good ones.
+Chloe doesn't expect to get into the good ones.
 
 
-Halstead has never told them they're exceptional. The only number any of them has ever been given is their standing in a year of ninety, and Chloe's says middle, and middle means middle.
+Halstead has never told them they're exceptional. The only number any of them has ever been given is their standing in a year of ninety, and Chloe's says middle.
 
 
 So the plan, for most of them, is a state school. You apply to the Ivies because you're supposed to try, the way you buy a ticket, and then you apply to the place your parents went, and one weird one, and then the one you'll actually attend.
@@ -20,13 +20,13 @@ So the plan, for most of them, is a state school. You apply to the Ivies because
 "That's not real," Sam says.
 
 
-"It's on their site."
+"It's on their site," Ruth says.
 
 
 "Right, and if you were running a school and you wanted people to think it was hard to get into, what number would you put on your site." He doesn't look up. "It's a signal. You read the same chapter I did."
 
 
-Ruth thinks about it and says that's probably it.
+Ruth is quiet for a second, then says that's probably it.
 
 
 Chloe applies to fourteen places. Eight Ivies because everyone does, her state school, the college her mother went to, one in Michigan because Fen said it was nice, and three others she picks in about nine minutes.
@@ -40,16 +40,16 @@ ________________
 
 
 
-The applications start landing in November and the problem is not what anybody at Halstead would have guessed.
+The applications start landing in November.
 
 
-The transcript is legal. There's an accreditation number on it. What's on it is classes, the way a transcript is classes, and the trouble is that there are so many of them that two admissions offices assume a formatting error and ask for the real one.
+The transcript is legal. There's an accreditation number on it. What's on it is classes, ordinary-looking rows of them, and the trouble is that there are so many of them that two admissions offices assume a formatting error and ask for the real one.
 
 
 Then somebody reads the essays.
 
 
-They're all different. That's the first thing anyone says about them. Ninety applicants from one school and no two of them write anything alike, which rules out the obvious explanation. What they have in common is that they read like graduate work, and they make claims that a reader has to either accept or throw out, and there's no middle option.
+They're all different. That's the first thing anyone says about them. Ninety applicants from one school and no two of them write anything alike. What they have in common is that they read like graduate work, and they make claims that a reader has to either accept or throw out, and there's no middle option.
 
 
 An admissions officer at Penn spends most of a morning on an essay by a girl named Odile that mentions, in passing and as background, a self-defense assessment involving ten people. She flags it. Two hours later she flags the whole file.
@@ -69,7 +69,7 @@ Eleven of them send someone.
 The school says yes to all eleven. Desks, dining privileges, a room to work in, and permission to sit in any class they name, provided they name it first.
 
 
-There's a list of places they can't go. The research floors, which are not explained. Two rooms in the sports building, which are also not explained.
+There's a list of places they can't go. The research floors. Two rooms in the sports building.
 
 
 A rep from Duke asks what's in the sports building.
@@ -112,7 +112,7 @@ Ruth gets MIT. Kavi gets MIT and Caltech and Chicago. Odile gets everything she 
 Chloe gets twelve of fourteen.
 
 
-She sits on the floor of her room with the letters spread out and does not understand what she's looking at.
+She sits on the floor of her room with the letters spread out, turning the top one over and over.
 
 
 "It said four percent."
@@ -127,7 +127,7 @@ She sits on the floor of her room with the letters spread out and does not under
 "Ninety for ninety. That's not four percent, that's a hundred percent, so either they're lying or the number means something else." He shrugs. "It's marketing. It's the same thing the watch companies do."
 
 
-Chloe thinks that's probably right, and it bothers her on and off for a week, and then she stops thinking about it because there's an exam.
+Twice that week she takes the letters out again and counts them. Then there's an exam.
 
 
 ________________
@@ -145,7 +145,7 @@ Mr. Amberg does the meetings one at a time, fifteen minutes each, in April.
 "Here."
 
 
-Chloe thinks about it for most of her fifteen minutes.
+Three times the pay, housing, food, a degree paid for, the post held after. Chloe runs the numbers and stops on the part where she'd still be here.
 
 
 "I don't think so," she says.
@@ -154,7 +154,7 @@ Chloe thinks about it for most of her fifteen minutes.
 "Reason?"
 
 
-"It's my school." She isn't sure how to say the rest of it. "You don't stay at your school. Nobody stays at their school. You go and do the next thing, that's the whole point of there being a next thing."
+"It's my school." She isn't sure how to say the rest of it. "Nobody stays at their school. You go and do the next thing."
 
 
 Mr. Amberg writes something down and doesn't argue with her.
@@ -168,13 +168,13 @@ ________________
 Eleven stay. Kavi is one of them.
 
 
-"Why?"
+"Why?" Chloe asks.
 
 
-"Because what I want to do is happening in one building and I'm standing in it."
+"Because what I want to do is happening in one building and I'm standing in it," Kavi says.
 
 
-"But it's school."
+"But it's school," she says.
 
 
 "It stopped being school for me a while ago," Kavi says. "It's a lab that also has children in it."
@@ -186,7 +186,7 @@ Chapter Eighteen: The First One
 Nobody at Halstead has ever done a graduation, and it shows.
 
 
-They put chairs out on the field. There are far too many, because nobody knew how many family members to plan for, and there's a stage that somebody clearly built that week. The younger years are all there, the whole school, eight hundred kids sitting on the grass behind the chairs because there wasn't room, and the twelve-year-olds are loud and nobody makes them stop.
+They put chairs out on the field. There are far too many, because nobody knew how many family members to plan for, and there's a stage that somebody clearly built that week. The younger years are all there, the whole school, eight hundred kids sitting on the grass behind the chairs because there wasn't room, and the twelve-year-olds are loud, kicking a water bottle down the row of empty chairs.
 
 
 The head of the school gives a short speech that is mostly logistics and one sentence at the end that Chloe doesn't hear because Sam is trying to make her laugh.
@@ -203,10 +203,10 @@ ________________
 
 
 
-Her mother knows this campus. She's been coming for eleven years. She knows where the good parking is and she knows Ruth's mother by name and she knows to bring a jacket because it's colder up here.
+Her mother knows this campus. She's been coming for eleven years. She knows where the good parking is, knows Ruth's mother by name, and knows to bring a jacket because it's colder up here.
 
 
-After, on the grass, with a paper cup of something:
+After, on the grass, with a paper cup of lemonade:
 
 
 "You looked so tall up there."
@@ -215,13 +215,13 @@ After, on the grass, with a paper cup of something:
 "Mom."
 
 
-"You did. Kavi's mother said the same thing." She fixes Chloe's collar, which does not need fixing. "I'm so proud of you I could be sick."
+"You did. Kavi's mother said the same thing." She fixes Chloe's collar. "I'm so proud of you I could be sick."
 
 
-Her dad takes about four hundred photographs and gets none of her face.
+Her dad fills a memory card and gets none of her face.
 
 
-Her grandmother came, which nobody expected at her age, and sits in a chair at the end of a row and tells three separate teenagers that they seem like nice young people.
+Her grandmother came and sits in a chair at the end of a row and tells three separate teenagers that they seem like nice young people.
 
 
 ________________
@@ -232,7 +232,7 @@ ________________
 The school does not empty out.
 
 
-That's the strange part of the following weeks. Everything keeps running. The younger years are in class, the labs are going, there's a bell at ten past every hour, and the ninety-one of them are packing boxes in the middle of a school that is entirely unbothered by their leaving.
+Everything keeps running. The younger years are in class, the labs are going, there's a bell at ten past every hour, and the ninety-one of them are packing boxes in the middle of a school.
 
 
 Chloe walks out through the ground floor hall on her last day and reads the brass plates on her way past, all nine of them, and doesn't stop.
@@ -243,7 +243,7 @@ ________________
 
 
 
-Sam joins the Army. He's the best fighter in the year by a wide margin, and this seems to him the obvious use of that, the same way a fast kid runs track.
+Sam joins the Army. He's beaten every upperclassman he's sparred since ninth grade, and he signs the papers the way he laces his boots, without checking twice.
 
 
 Ruth goes to MIT.
@@ -255,13 +255,13 @@ Nadia doesn't go anywhere. She spends two months looking at jobs and comes out o
 "My mother knocked ten dollars off her own hours last week," she says.
 
 
-"It is a cost."
+"It is a cost," someone says.
 
 
-"That's not a cost. That's the one thing in the shop that gets better every year." She's got about nine tabs open. "Nobody's building the thing that would've caught her price before she quoted it. Who's building that?"
+"That's not a cost. That's the one thing in the shop that gets better every year." She's got a browser full of tabs open. "Nobody's building the thing that would've caught her price before she quoted it. Who's building that?"
 
 
-Nobody in the chat has a good answer, and by June she's started something, and by September she's hiring.
+Eli says he'll look into it and doesn't, and by June she's started something, and by September she's hiring.
 
 
 Eli takes a job on a security team.
@@ -273,13 +273,13 @@ Theo goes into the federal government as an analyst, having been interviewed fou
 Kavi stays.
 
 
-Priya takes a year and goes to South America with a bag, which several of them find genuinely confusing, because there's no work in it.
+Priya takes a year and goes to South America with a bag. There's no work in it.
 
 
 Chloe is going into the Foreign Service, and finds out in May that she can't yet. You sit the exam at twenty and you're appointed at twenty-one. She turns eighteen in June.
 
 
-So she takes the state school, because it's an hour from where she'll be living and because you go to college, and the plan for the next two years is: wait.
+So she takes the state school, an hour from where she'll be living, and the plan for the next two years is: wait.
 
 
 ________________
@@ -334,10 +334,10 @@ eli: 5
 eli: turning them in now. fingers crossed for 5
 
 
-sam: thats cheating
+sam: youre gaming the count
 
 
-nadia: thats lucky is what that is
+nadia: five in an afternoon is luck, not skill
 
 
 ruth: which one was the cheat
@@ -438,13 +438,13 @@ ________________
 
 
 
-Somebody posts a screenshot of a performance review. Strongest hire in a decade.
+Somebody posts a screenshot of a performance review.
 
 
 ruth: mine says something almost identical
 
 
-kavi: thats a technique
+kavi: standard retention play
 
 
 kavi: you tell people theyre exceptional early so they work harder and dont leave. its in the same chapter as the four percent thing
@@ -476,7 +476,7 @@ ruth: 16 what
 chloe: gigabytes
 
 
-ruth: thats a rounding error
+ruth: sixteen doesnt even compare to what everyone actually runs, chloe
 
 
 chloe: i went back and asked if they had the proper ones out the back and the guy thought i was doing a bit at him
@@ -488,7 +488,7 @@ kavi: whats the storage
 chloe: 1tb
 
 
-sam: so the storage is bigger than the memory, thats normal
+sam: storage beating memory is just how they build them
 
 
 chloe: sam the storage is 1tb. the MEMORY is meant to be 1tb
@@ -532,13 +532,13 @@ chloe: i cant find it
 chloe: doctor hadn't heard of it. asked me to spell it. typed it in and got nothing
 
 
-nadia: hang on
+nadia: gimme a sec, checking
 
 
 nadia: im not finding it either
 
 
-nadia: thats weird, i definitely took that
+nadia: i took it every day for two weeks, it doesnt just stop existing
 
 
 kavi: ill ask
@@ -549,10 +549,10 @@ ________________
 
 
 
-Kavi doesn't come back with anything for four days, and when he does he says he asked and was told it's internal, and Chloe says internal how, and Kavi says he doesn't know, that's the word they used.
+Kavi doesn't come back with anything for four days. When he does, he says he asked and was told it's internal. Internal how, Chloe asks. He doesn't know, that's the word they used.
 
 
-The chat moves on to something else within about ten minutes.
+The chat moves on within about ten minutes.
 
 
 ________________
@@ -564,13 +564,13 @@ Chloe gets a job at a company that translates documents for businesses. Contract
 College runs alongside it. Fifteen credits in the autumn, which she picked by looking at what sounded interesting rather than what a first year normally takes, and which turns out to cost her about six hours a week including the reading. She does the reading on the bus. In the spring she takes twenty-one credits and an evening seminar, mostly because the registrar said she couldn't and then couldn't produce a rule saying so.
 
 
-She is by a long way the youngest person at the job, which she takes to mean she's basically the intern, so for the first two weeks she offers to do everybody's filing and is confused when they say no.
+She is years younger than everyone else at the job, which she takes to mean she's basically the intern, so for the first two weeks she offers to do everybody's filing and is confused when they say no.
 
 
-The work takes maybe three hours of her day. She does it in three hours and then asks for more, and they give her more, and she does that too, and by week five they've stopped being surprised and started quietly routing the Russian and the Mandarin straight to her desk.
+The work takes maybe three hours of her day. She finishes and asks for more, and when they give her more, she does that too. By week five they've stopped being surprised and started quietly routing the Russian and the Mandarin straight to her desk.
 
 
-She likes the people. That's the main thing. Deb who sits opposite her talks about her son constantly and Chloe learns his entire life story and is genuinely invested in it by October.
+She likes the people. Deb who sits opposite her talks about her son constantly and Chloe learns his entire life story and is genuinely invested in it by October.
 
 
 ________________
@@ -599,7 +599,7 @@ She writes back that she doesn't, that it's just her, and that six thousand word
 He doesn't reply.
 
 
-She doesn't think much of it. She's told the truth and the truth is boring.
+She doesn't think much of it. She's told the truth. It isn't interesting.
 
 
 ________________
@@ -607,13 +607,10 @@ ________________
 
 
 
-The thing she notices, without deciding it's a problem, is that she keeps having to say the same thing twice.
+Without deciding it's a problem, she keeps having to say the same thing twice.
 
 
 She'll explain something at work, plainly, and Deb will not have it, so Chloe will find another way in. A different angle, a comparison, something from Deb's own life. That usually works. She gets good at it fast, and she comes to think of it as ordinary courtesy, the way you'd speak up in a loud room.
-
-
-It does not occur to her that she is doing it constantly.
 
 
 ________________
@@ -648,7 +645,7 @@ ruth: and about 20% speak one at home, which is most of that 25
 ruth: so its mostly not school. its immigration
 
 
-There is nothing in the chat for nine minutes, which for them is very long.
+There is nothing in the chat for nine minutes.
 
 
 nadia: ok but theo still cant parallel park
@@ -683,7 +680,7 @@ Each time somebody makes a joke inside a minute and it moves on. Each time Ruth 
 In April she stops posting.
 
 
-Sam notices in June. Kavi says she's probably just buried, it's finals. Chloe messages her directly twice and gets sorry, been swamped and then nothing at all.
+Sam mentions it in June. Kavi says she's probably just buried, it's finals. Chloe messages her directly twice and gets sorry, been swamped and then nothing at all.
 
 
 Six months.
@@ -718,13 +715,7 @@ He shoots ten targets.
 A captain he has not met before walks over afterward, looks at the sheet, and says, "That's the best score I've seen this cycle. What's your accuracy?"
 
 
-"About forty," Sam says.
-
-
-The captain looks at the sheet again. The sheet says ten out of ten.
-
-
-"Forty."
+"About forty," Sam says. The captain looks at the sheet again. It still says ten out of ten.
 
 
 "Yeah. It's not great. Eighty's the standard, I'm working on it."
@@ -740,9 +731,6 @@ The captain doesn't say anything.
 
 
 Sam takes that as an invitation, and this is the moment he has been waiting four months for, because he has become increasingly certain that basic training is some kind of extended screening exercise and that there is a real one somewhere and that he is being kept out of it by not having said the right thing yet.
-
-
-So he says the right thing.
 
 
 "Accuracy is whether you can put a round into another round," Sam says. "In flight. On the count, opposite lanes, you both fire on the same beat. I'm at about forty percent and that's poor, there are people I went to school with at ninety. That's the number that means something." He nods at the rifle. "So I'm forty percent of a rifle."
@@ -771,10 +759,10 @@ ________________
 What gets written up that evening and forwarded twice by Friday is not what Sam said.
 
 
-It's four paragraphs, and the fourth one contains the phrase appears to have received specialised instruction from an unidentified source, and by the following Thursday it is being read by a woman three levels above the captain who has seen the name Halstead before, in a different context, some years ago.
+It's four paragraphs, and the fourth one contains the phrase appears to have received specialised instruction from an unidentified source, and by the following Thursday it is being read by a woman three levels above the captain.
 
 
-Sam knows none of this. Sam is having a great month.
+None of it reaches Sam. Sam is having a great month.
 
 
 ________________
@@ -783,7 +771,7 @@ Chapter Twenty-Two: The File
 Theo's job is reading things and saying what they mean.
 
 
-He is very good at it and he is happy, and in his eighth month somebody gives him a stack of old material to summarise because the woman who used to do it retired and it's the kind of job you hand the new analyst.
+He is happy in the job. In his eighth month, after the woman who used to do it retires, somebody hands him a stack of old material to summarise, the kind of job that goes to whoever is newest at the desk.
 
 
 It takes him a day and a half to work out what he's holding.
@@ -792,7 +780,7 @@ It takes him a day and a half to work out what he's holding.
 There is a file on his own school. It goes back nineteen years.
 
 
-The early assessments say state actor. Two candidates named, one preferred, continued observation recommended. Six years later that gets revised down, and the reasoning is laid out plainly: if it were either of those two, somebody already inside them would have turned something up by now, and nobody has. It isn't ruled out. It's just moved to less likely than a company.
+The early assessments say state actor. Two candidates named, one preferred, continued observation recommended. Six years later that gets revised down, and the reasoning is laid out plainly: if it were either of those two, somebody already inside them would have turned something up by now, and nobody has. The file still lists them, now behind a corporate actor as the likelier explanation.
 
 
 The current assessment says probably corporate, with the same caveat at the bottom of the page that has apparently been at the bottom of the page for nineteen years, which is that the funding cannot be traced.
@@ -809,10 +797,10 @@ The next thing is a memo about a man placed on the Halstead teaching staff. He w
 Theo reads it three times, because he remembers it.
 
 
-He was eleven. There was a new teacher for about a day and a half, and there was something wrong with him, and the wrongness was the only thing anybody talked about at lunch for a week. Theo can still picture him standing at the front of a room. He cannot remember what the man taught, or what he said, or a single specific thing he did.
+He was eleven. There was a new teacher for about a day and a half. Something was wrong with him, and the wrongness was most of what anybody talked about at lunch for a week. Theo can still picture him standing at the front of a room. He cannot remember what the man taught, or what he said, or a single specific thing he did.
 
 
-What he remembers is the feeling that the man was pretending to be somebody, and that all of them clocked it, and that four or five of them started asking questions about him, and that by Thursday he was gone and no adult ever mentioned him again.
+What he remembers is the feeling that the man was pretending to be somebody. All of them clocked it, four or five started asking questions, and by Thursday he was gone.
 
 
 Theo had assumed, for seven years, that the guy just quit.
@@ -838,7 +826,7 @@ They were inside the first building for under two minutes. One of them saw a chi
 The next entry is written from memory, after the fact, and it says that all four of them were unconscious before anyone made a decision.
 
 
-They came round tied at the wrists and ankles, on their sides, against a wall. There were four children sitting on the floor next to them. The report notes, in the flat voice these things are always written in, that the children were not interrogating them in any way that the author recognised as interrogation. They were arguing with each other about their own performance. One of them wanted to know how the four men would score them. One of them said the response time had been nearly eight minutes and that this was a fail. One of them said repeatedly that running a surprise exercise at four in the morning without putting it on the board was unfair.
+They came round tied at the wrists and ankles, on their sides, against a wall. There were four children sitting on the floor next to them. The report notes, in the flat voice these things are always written in, that the children were not interrogating them in any way that the author recognised as interrogation. They were arguing with each other about their own performance. The argument was about how the four men would score them, whether a response time of nearly eight minutes counted as a fail, and whether it was fair to run a surprise exercise at four in the morning without putting it on the board.
 
 
 The author records that he was asked, directly, what he would have given them.
@@ -848,9 +836,6 @@ An adult arrived some time after that. He told the children to go to bed, and th
 
 
 There is no reply on file.
-
-
-There is no further entry on file either.
 
 
 ________________
@@ -864,10 +849,10 @@ Theo sits back.
 He was twelve that year. He remembers the morning after, which is to say he remembers that there had been a drill overnight, and that four people had been on it and one of them was Chloe, and that everyone was annoyed about it because it was a school night and nobody had been told, and that by lunchtime the conversation had moved on to something else.
 
 
-He read the grade sheet on the board like everyone else. He remembers thinking it was harsh.
+He read the grade sheet on the board like everyone else, harsh, he'd thought at the time.
 
 
-He puts his hand over his mouth and sits like that for a while.
+He puts his hand over his mouth and sits like that.
 
 
 ________________
@@ -875,7 +860,7 @@ ________________
 
 
 
-He sits with it for two days, and then does the only thing available to him, which is nothing, because every page of it is classified and he understands precisely what he is and is not permitted to do.
+He sits with it for two days, and then does the only thing available to him, which is nothing, because every page of it is stamped classified, and the line between what he can say and what he can't is not his to redraw.
 
 
 So he posts in the chat.
