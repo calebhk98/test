@@ -174,6 +174,8 @@ The manuscript gives almost nothing physical about her directly. Most of what fo
 - Reach for a concrete, physical analogy to settle a disagreement rather than repeat the abstract claim louder (the moon-and-table-walk argument, chapters/05_behind.md:95).
 - Show up and do the tedious, unglamorous version of support for someone she's loyal to: sits behind Ruth on a Saturday timing a rifle plateau for two hours because Ruth asked (chapters/18_fifteen.md:49-57).
 - Take the correct, unexciting answer over the exciting wrong one, even when the shorter version costs her the room's attention (chapters/19_sixteen.md:19).
+- Come apart completely, once, rather than keep running the compliant economy past the point it can carry the weight, offering away her own birthday and every future present sooner than say what is actually wrong (chapters/09_february.md:15-17).
+- Talk for four straight hours without rationing a word of it when the news is good enough, asking six questions in a row and falling asleep mid-sentence rather than finish on her own terms first (chapters/09_february.md:133).
 
 ## Would never
 
