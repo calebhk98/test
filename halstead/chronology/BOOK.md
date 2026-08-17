@@ -132,12 +132,14 @@ For Chloe to be 6 in July and 7 by the following February, her birthday must fal
 
 **Which reading the rest of the book supports:** Part 1's winter/autumn birthday is corroborated twice (July camp, February statement, independently established seven months apart with a school year of continuous narrative in between) and is never contradicted anywhere in chapters 1–20. Part 2's June birthday is used consistently *within* Part 2 (18 in June, 21 in June) but has no support anywhere in Part 1. Given the brief's steer that the manuscript should win over less-reliable material, and that Part 1's evidence is earlier, more redundant, and never revisited or corrected, Part 1's autumn/winter birthday reads as the intended one, with Part 2's "June" the likely error — but this is a genuine either-side-could-be-"right" contradiction and the author should decide, not this report.
 
-### 3.2 Chapter 21's "sixteen" does not fit the age Chloe should be during senior-year applications
+### 3.2 Chapter 21's "sixteen" — RESOLVED, not a contradiction
 
 > "The Caltech rep reads for six hours, comes out, and asks whether the third author is available to talk. He's told **she's sixteen**, she's in class until four, and that no, she isn't."
-`21_the_applications.md:99`
+> — `21_the_applications.md:99`
 
-This line almost certainly refers to Chloe (she is the only member of the friend group shown with multiple research-paper credits by this point: sixth-of-nine author in `18_fifteen.md`, and a solo research relationship with Sanders in `17_fourteen.md`). If it is Chloe, it conflicts with the age math above two ways at once: (a) her own bar-exam year (ch19) is explicitly "Sixteen," and application season (ch21) is presented as the *following* academic year (senior year, after "The Parking Lot"), which should make her 17, not 16, during the Caltech visit; and (b) under either birthday reading (August–February per Part 1, or June per Part 2), a 16-to-18 jump between January application season and June graduation of the *same* spring is not physically possible — nobody ages two years in five months. This line is best read as a second symptom of the same underlying problem as 3.1, not an independent error: whichever half of the book you trust, "sixteen" in January and "eighteen" in June of the same spring cannot both be true.
+This was reported as a contradiction on the reading that the third author is Chloe, which would make her sixteen in application season and eighteen the following June.
+
+**The author has confirmed the third author is a different person.** The chapter says only "Three applicants list research" (`21_the_applications.md:93`) and never identifies which of the three the Caltech rep is asking about. Nothing here bears on Chloe's age, and the line needs no change.
 
 ### 3.3 "Seven months" of clearance investigation does not reach "the autumn" from the stated start point
 

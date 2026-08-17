@@ -23,6 +23,7 @@ It is a no-op when the chapter count already equals N.
 """
 
 import argparse
+import json
 import re
 import shutil
 import sys
@@ -32,6 +33,19 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 SOURCE = HERE / "MANUSCRIPT_FULL.md"
 OUTDIR = HERE / "chapters"
+# When this exists, each chapter gets its month-and-year under the title. It
+# lives outside the manuscript because chapters/ is rebuilt from the sources on
+# every run, so a date typed straight into a chapter file would not survive the
+# next split. Missing or incomplete is fine; chapters without an entry get no
+# date line.
+DATES = HERE / "chronology" / "chapter_dates.json"
+
+# A date line is the third line of a chapter file, directly under the heading,
+# and looks like "*July 2012*" or "*October 2012 – March 2013*". Both the shape
+# and the position are checked when excluding it from the word count, because
+# two lines of real prose in the manuscript are also wrapped in asterisks.
+DATELINE = re.compile(r"^\*[A-Z][a-z]+ \d{4}(?:\s*[–-]\s*[A-Z][a-z]+ \d{4})?\*$")
+DATE_LINE_INDEX = 2
 
 HEADING = re.compile(r"^##\s+(.*)$")
 # The v2 exports have no markdown. A chapter opens on a bare line reading
@@ -160,9 +174,36 @@ def heading_for(c):
     return f"## Chapter {ordinal_word(c['number'])}: {c['name']}".rstrip(": ")
 
 
-def render(group):
+def render(group, dates=None):
     """One chapter per file keeps its own heading; a bundle keeps all of them."""
-    return "\n\n".join(f"{heading_for(c)}\n\n{c['body']}".strip() for c in group) + "\n"
+    dates = dates or {}
+    parts = []
+    for c in group:
+        when = dates.get(str(c["number"]), "").strip()
+        head = heading_for(c) + (f"\n\n*{when}*" if when else "")
+        parts.append(f"{head}\n\n{c['body']}".strip())
+    return "\n\n".join(parts) + "\n"
+
+
+def load_dates(path):
+    """Chapter number (as a string) -> 'July 2012'. Absent file means no dates."""
+    if not path.is_file():
+        return {}
+    dates = json.loads(path.read_text(encoding="utf-8"))
+    odd = [f"{k}: {v!r}" for k, v in dates.items() if not DATELINE.match(f"*{v}*")]
+    if odd:
+        # Shape matters: the word-count check below identifies the date line by
+        # it, so a date the pattern cannot read would be counted as prose.
+        sys.exit("error: these dates are not in the expected form "
+                 "'July 2012' or 'October 2012 - March 2013':\n  " + "\n  ".join(odd))
+    return dates
+
+
+def body_words(lines, heading=HEADING):
+    """Words in a chapter's prose, ignoring its heading and its date line."""
+    return sum(len(WORD.findall(l)) for i, l in enumerate(lines)
+               if not heading.match(l)
+               and not (i == DATE_LINE_INDEX and DATELINE.match(l)))
 
 
 def main():
@@ -172,6 +213,8 @@ def main():
                         help="split just this one file instead of the whole book")
     parser.add_argument("--root", type=Path, default=HERE, help="where the sources live")
     parser.add_argument("--outdir", type=Path, default=OUTDIR, help="directory to write into")
+    parser.add_argument("--dates", type=Path, default=DATES,
+                        help="JSON of chapter number -> month and year")
     parser.add_argument("--parts", type=int, help="force exactly N output files")
     parser.add_argument("--check", action="store_true", help="report the split, write nothing")
     args = parser.parse_args()
@@ -200,8 +243,7 @@ def main():
         # because renumbering rewrites them, and "Sixteen" becoming
         # "Twenty-One" is a word the WORD pattern counts twice. What has to
         # round-trip is the prose, not the chapter numbering.
-        source_words += sum(len(WORD.findall(l)) for l in text.splitlines()
-                            if not pattern.match(l))
+        source_words += body_words(text.splitlines(), pattern)
 
     numbers = [c["number"] for c in chapters]
     if len(numbers) != len(set(numbers)):
@@ -210,6 +252,7 @@ def main():
     if numbers != sorted(numbers):
         sys.exit(f"error: chapter numbers are out of order: {numbers}")
 
+    dates = load_dates(args.dates)
     groups = group_into(chapters, args.parts) if args.parts else [[c] for c in chapters]
 
     files = []
@@ -218,7 +261,7 @@ def main():
             name = f"{group[0]['number']:02d}_{group[0]['slug']}.md"
         else:
             name = f"{index:02d}_{group[0]['slug']}__{group[-1]['slug']}.md"
-        files.append((name, render(group), sum(c["words"] for c in group)))
+        files.append((name, render(group, dates), sum(c["words"] for c in group)))
 
     if len(files) != len({name for name, _, _ in files}):
         sys.exit("error: chapter titles produced duplicate filenames")
@@ -239,10 +282,9 @@ def main():
     for name, body, _ in files:
         (args.outdir / name).write_text(body, encoding="utf-8")
 
-    written = sum(len(WORD.findall(l))
-                  for name, _, _ in files
-                  for l in (args.outdir / name).read_text(encoding="utf-8").splitlines()
-                  if not HEADING.match(l))
+    written = sum(body_words((args.outdir / name)
+                             .read_text(encoding="utf-8").splitlines())
+                  for name, _, _ in files)
     print(f"\nwrote {len(files)} files to {args.outdir}")
     print(f"body words: source {source_words:,}, split {written:,}, "
           f"{'match' if written == source_words else 'MISMATCH'}")
