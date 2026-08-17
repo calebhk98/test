@@ -6,7 +6,7 @@ A line appears on her timetable in September that was not on it in June. *Mathem
 
 Teaching starts at thirteen and you take the year below. Her cohort is the oldest in the building, so her cohort is the only one doing it, and the twelves are the only year in the school being taught by anybody who is not an adult. Nobody teaches the thirteens. She works that out on the stairs in the first fortnight, tells Ruth, and gets a shrug and half a sandwich.
 
-Six of the seven are straightforward. Ivy and Tomas want the answer handed over, but they can be talked out of that inside a month. Beatriz arrives already knowing most of it, so she takes eleven minutes of the hour and uses them well. Two more turn up, work, leave. The sixth cries in October about something that has nothing to do with mathematics, and Chloe sits on the floor with him for forty minutes while he says almost nothing, and then he goes to dinner and comes back the following Thursday and is fine.
+Six of the seven are straightforward. Ivy and Tomas want the answer handed over, but they can be talked out of that inside a month. Beatriz arrives already knowing most of it, so she takes eleven minutes of the hour and uses them well. Two more turn up, work, leave. The sixth cries in October about something that has nothing to do with mathematics, and Chloe sits on the floor with him for forty minutes while he says almost nothing. Then he goes to dinner, comes back the following Thursday, and is fine.
 
 Marek hands nothing in.
 
@@ -38,7 +38,7 @@ In January she gives him a problem out of the following year's material, one he 
 
 Chloe puts the chalk down on the ledge harder than she means to. He waits by the door until she says fine, then goes.
 
-In February she offers to read the 1981 paper and mark him on that. He says no, politely, without stopping to think about it, because she is a year older than he is and has not read the paper. She asks him in March what would make him hand something in, and he takes it seriously enough to sit there thinking for about ten seconds.
+In February she offers to read the 1981 paper and mark him on that. He says no, politely, without pausing. She is a year older than he is, and she has not read the paper. She asks him in March what would make him hand something in, and he takes it seriously enough to sit there thinking for about ten seconds.
 
 "Nothing would," he says.
 
@@ -58,13 +58,11 @@ Differential equations run alongside real analysis, and the analysis is what tur
 
 She stops doing it by the end of November, but she stops resenting it in February.
 
-German is the easiest language anybody has put in front of her. Half the grammar is a frame she already has from Latin, the vocabulary that is not Latin is mostly English wearing a coat, and the rest she can usually reach sideways through French. By November she reads with the dictionary open, but she hardly touches it. When she says so at dinner Ruth points a fork at her and says that is the exact argument Chloe made in a doorway two years ago and that Ruth is not conceding it now, at a table, in front of Sam.
+Half the grammar is a frame she already has from Latin, the vocabulary that is not Latin is close enough to English that she barely has to translate it, and the rest she can usually reach sideways through French. By November she reads with the dictionary open, but she hardly touches it. When she says so at dinner Ruth points a fork at her and says that is the exact argument Chloe made in a doorway two years ago and that Ruth is not conceding it now, at a table, in front of Sam.
 
 Eleven labs split the year between them and hers does materials. What the youngest person in a lab does is fetch, clean, and take on the jobs nobody senior wants.
 
-A postdoc called Sanders hands her six months of instrument logs and the paper written off them, and asks her to work out why the two disagree. The logs hold four thousand runs, but the paper reports eleven hundred. Neither document says which eleven hundred, or which runs were dropped, or when, or by whom. She spends nineteen days on it with the logs spread across two tables before she gets there. The instrument was recalibrated on a Tuesday in March, everything before that Tuesday is in the paper, and everything after it was never copied across. Somebody stopped and never said so.
-
-Sanders reads her four pages standing up, puts them in a folder, and says thank you. That is as much as she ever hears about it.
+A postdoc called Sanders hands her six months of instrument logs and the paper written off them, and asks her to work out why the two disagree. The logs hold four thousand runs, but the paper reports eleven hundred. Neither document says which eleven hundred, or which runs were dropped, or when, or by whom. She spends nineteen days on it with the logs spread across two tables before she gets there. The instrument was recalibrated on a Tuesday in March, everything before that Tuesday is in the paper, and everything after it was never copied across. Somebody stopped and never said so. Sanders reads her four pages standing up, puts them in a folder, and says thank you.
 
 In cryptography the first term goes entirely on breaking things other people built. Substitution, then Vigenère, then a fortnight on why a key you use twice stops being a key. By November they are working on real messages off real systems with real mistakes in them, and Amberg's line from the first day is that you cannot build a lock if you have never opened one somebody else built, because you would be guessing about what a lock is for.
 
