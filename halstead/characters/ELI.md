@@ -1,8 +1,8 @@
-# Eli Marsh
+# Eli Dorn
 
 A security-minded problem-solver who treats every serious risk as a mechanism to understand and out-design, and who has never once had to perform being smart for an audience — which is exactly why he isn't sure, later, whether he's actually good at anything or just good at things nobody was watching.
 
-**Surname:** Marsh. [invented — the manuscript never gives him one]
+**Surname:** Dorn. [invented — the manuscript never gives him one. Reassigned from Marsh, which another sheet had already taken.]
 **Age span:** 13–21 | **MBTI:** ISTP (writing aid, not a claim) | **IQ:** inferred 160–170 from performance shown on the page — no number is stated in the text.
 **Appears in:** chapters/16_thirteen.md; CHAPTERS_16_22_v2.md (narration, Ch18 The First One; dialogue, Ch19 The Chat); CHAPTERS_23_30_v2.md (Ch23 Nadia; Ch27 The Money; Ch28 The Other One; Ch29 The Files; Ch30 Nine Minutes).
 **Speaks:** 48 lines. Heavily front-loaded into the two later files — only 4 of the 48 happen before adulthood, all in one scene, and there is nothing at all between that scene and Ch19.
@@ -159,7 +159,7 @@ Food: [invented] eats the same breakfast most days, not from love of routine but
 
 ## Facts a rewriter needs
 
-- Name: Eli Marsh. Surname [invented] — the manuscript never gives one.
+- Name: Eli Dorn. Surname [invented] — the manuscript never gives one.
 - Family: raised by his mother, an aunt nearby, no siblings, no father in the house and no story attached to that fact. [invented, per Home]
 - Background: a flat, unremarkable suburb, the kind he actively likes. [invented, per Home]
 - Good at: cryptography and pattern-spotting — solves a live parking-system cipher in one evening that eleven classmates had for a week (chapters/16_thirteen.md:125–129); finds five vulnerabilities in his own employer's systems in an afternoon, one of which the company "didnt think... was possible" (CHAPTERS_16_22_v2.md:305–363); designs a financial surveillance tool whose entire premise is behaving unremarkably (CHAPTERS_23_30_v2.md:412, Ch27).

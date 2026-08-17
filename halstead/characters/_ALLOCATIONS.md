@@ -113,3 +113,25 @@ the book because Chloe cannot see it.
 - **Priya** is the only one who writes to Owen after he leaves.
 - **Odile** is afraid of the water and has never said so.
 - **Fen** knows the name of every person who has had her room before her.
+
+---
+
+## Surnames
+
+The manuscript names only two: Chloe **Kessler** and Ruth **Aymar**, whose is spelled out
+letter by letter at `chapters/10_april.md:19`. Everything below is invented. Recorded here
+because two sheets independently chose the same one and it had to be undone.
+
+| | surname | source |
+| :-- | :-- | :-- |
+| Chloe, Meg, Dave | Kessler | [text] |
+| Ruth | Aymar | [text] |
+| Sam | Marsh | [invented] |
+| Kavi | Rao | [invented] |
+| Priya | Anand | [invented] |
+| Odile | Vasseur | [invented] |
+| Theo | Langford | [invented] |
+| Eli | Dorn | [invented, reassigned from Marsh] |
+| Nadia, Fen, Owen, Kayleigh, Bryce | see their sheets | [invented] |
+
+Anyone assigning a new name checks this table first.

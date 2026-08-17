@@ -1,128 +1,134 @@
-# Dr. Ammons
+# Dr. Miriam Ammons
 
-The clinician who diagnoses Chloe's depression at seven: correct at every diagnostic step, and structurally unable to convert her own best piece of evidence into a fix.
+The clinician who diagnoses Chloe's depression at seven [surname text; first name Miriam invented]: twenty-five years into a practice built on taking children seriously, correct at every diagnostic step, and structurally unable to convert her own best piece of evidence into a fix.
 
-**Age span:** adult, one clinical relationship spanning roughly five months (Chloe age 7, October through February) | **MBTI:** INTJ (writing aid, not a claim) | **IQ:** not inferable — no line demonstrates raw cognitive difficulty, only diagnostic method
-**Appears in:** chapters/08_the_asking.md (the intake session, on-page) and chapters/09_february.md (referenced, no new quoted dialogue). Not named or referenced anywhere before chapters/08 or after chapters/09 — including nowhere in chapters/10–20 or either v2 file.
-**Speaks:** 7 quoted lines, all in chapters/08_the_asking.md, all in the single intake session. Chapters/09_february.md reports two more question-and-answer exchanges in indirect speech, unquoted ("is asked how the last two weeks have been, says fine, gets asked what fine means, says she doesn't know").
+**Age span:** 54 during Chloe's diagnosis [invented] | **MBTI:** INTJ (writing aid, not a claim) | **IQ:** not inferable — no cognitive-difficulty content, only diagnostic method
+**Appears in:** chapters/08_the_asking.md (on-page) and chapters/09_february.md (referenced, no new quoted dialogue).
+**Speaks:** 7 quoted lines [text], all in chapters/08_the_asking.md, all in the single intake session.
 
 ## Voice in one paragraph
 
-She interviews in a fixed, level cadence — "she asks it in exactly the same voice she asked the first one" (chapters/08_the_asking.md:23) — and her questions run in a strict protocol order: symptom onset, then everything before the onset, worked backward with real thoroughness (who ran the program, how they were found, whether Chloe stayed overnight, how far it was, whether the same adults were there the whole time, whether anything happened, whether Chloe came back different). She never volunteers reassurance and never editorializes; the one moment she departs from pure procedure, she does it silently, by stopping her pen rather than saying anything ("Dr. Ammons stops writing and puts the pen down flat on top of the pad," chapters/08_the_asking.md:29). Her most characteristic line is the shortest one she has: "'I'm sure it was, but I'm asking anyway.'" (chapters/08_the_asking.md:37) — polite agreement stapled directly to a refusal to skip a single step of the protocol, which is her entire method in one sentence.
+She interviews in a fixed, level cadence — "she asks it in exactly the same voice she asked the first one" (chapters/08_the_asking.md:23) [text] — working backward through a strict protocol order. Her most characteristic line is "'I'm sure it was, but I'm asking anyway.'" (chapters/08_the_asking.md:37) [text] — polite agreement stapled directly to a refusal to skip a single step of the protocol, which is her entire method in one sentence.
 
 ## Dials
 
 | | |
 | :-- | :-- |
-| sentence shape | short, procedural, almost entirely interrogative — asks rather than states |
-| disagrees by | doesn't disagree — restates that she's asking anyway, regardless of the answer already given |
-| wordiness | hand-counted from her 7 lines: ~6.9 words/line, mid-range — longer than a teacher's classroom verdict, shorter than a full clinical explanation |
-| terseness | 0 of 7 lines are three words or fewer — she never clips a question down |
-| jokiness | 0/10 — no joke, ever |
-| hedging | 0% in her own speech — she states her method plainly ("I'm asking anyway") rather than softening it |
-| questions | 4 of 7 lines (57%) are direct questions — the highest question-rate of any character in this batch, appropriate to a clinician conducting an intake |
-| figurative | not allowed — none used, fully clinical register |
+| sentence shape | short, procedural, almost entirely interrogative [text] |
+| disagrees by | restates that she's asking anyway, regardless of the answer already given [text] |
+| wordiness | ~6.9 words/line [text, hand-counted] |
+| terseness | 0 of 7 lines are three words or fewer [text] |
+| jokiness | 0/10 [text] |
+| hedging | 0% in her own speech [text] |
+| questions | 4 of 7 lines (57%) — highest question rate in this batch, appropriate to intake [text] |
+| figurative | not allowed — none used [text] |
 
 ## Signature — theirs alone
 
-She marks the one moment that matters in the whole session not with a line, but by stopping the pen:
-
-- "Dr. Ammons writes for a second before she asks the next one, and she asks it in exactly the same voice she asked the first one." (chapters/08_the_asking.md:23) — the easy questions and the hard ones sound identical coming out of her.
-- "Dr. Ammons stops writing and puts the pen down flat on top of the pad." (chapters/08_the_asking.md:29) — the single visible break in her procedure, triggered by "she was the happiest I have ever seen her, in her life."
+Marks the moment that matters not with a line, but by stopping the pen:
+- "Dr. Ammons stops writing and puts the pen down flat on top of the pad." (chapters/08_the_asking.md:29)
 - "'It was hard,' she says, and Dr. Ammons writes that down, underlines part of it, and doesn't ask her one more question for the rest of the hour." (chapters/08_the_asking.md:47)
-
-**The signature is the pen, not a phrase.** Writing, or the deliberate stopping of writing, is how the text marks what she's actually paying attention to — a rewriter should treat any scene of her that doesn't use this device as missing her most identifying trait.
 
 ## Would they say this?
 
 - YES if it's a direct question, asked in the same flat register regardless of how loaded the answer is likely to be.
-- NO if it offers unprompted reassurance or comfort — she never says "that's normal" or "you're doing fine"; the one warm-adjacent thing she does (letting the "it was hard" answer stand without further probing) is silence, not a line.
-- YES if it works backward through a timeline methodically — onset, then everything before onset, in order.
-- NO if it accepts a parent's summary at face value without one more clarifying question ("I'm sure it was, but I'm asking anyway" is the model — she never lets one account close a topic).
-- YES if it's addressed directly to Chloe by name ("Chloe, is that right?" / "Chloe, what did you like about it?") when the parent has been answering for her.
-- NO if it uses a metaphor or invented image — entirely clinical, literal language throughout.
-- YES if it treats an unusual answer as data to record rather than as something to argue with.
-- NO if it pushes past an answer she's already gotten — once she has "it was hard," she stops; a version of her that keeps digging past a closed answer is off-model for this scene.
+- YES if it works backward through a timeline methodically — onset, then everything before onset.
+- YES if it's addressed directly to Chloe by name when the parent has been answering for her.
+- YES if it treats an unusual answer as data to record rather than something to argue with.
+- YES if it lets a closed, honest answer stand without pushing past it.
+- YES if it repositions her body — turning her chair — to signal who she wants to answer next.
+- YES if it thanks or validates a parent's account before asking one more clarifying question anyway.
+- YES if it's procedurally thorough even when nothing about the family suggests anything is wrong.
+- NO if it offers unprompted reassurance or comfort.
+- NO if it uses a metaphor or invented image.
 
 ## The kindly-and-inadequate test
 
-A line for Ammons is **kindly-and-inadequate** if it is diagnostically correct — real, careful abuse-screening protocol, applied thoroughly and without shortcuts — and still incapable of producing the fix, because her clinical frame has no category for "this child's problem is unmet cognitive need, not a mood disorder with an unrelated trigger." She gets the single best piece of evidence in the whole case (a parent volunteering that her daughter was "the happiest I have ever seen her, in her life" at a program that made her use her mind) and her only available response is to write it down and underline it. That is her entire toolkit working exactly as designed, and it still can't turn "it was hard" into a prescription. Nothing in her lines blames Chloe or her parents for any of it.
-
-A line would be **unkind** — and nothing in the text supports it — if it treated Chloe's flat, unelaborated answers as evasive, uncooperative, or suspicious, or if it pressured her past a closed answer, or if it dismissed the parent's account of the summer program as exaggeration. Ammons does none of that; she takes "it was hard" and "some of it had [gotten easier]" (chapters/09_february.md:5) at face value every time. A rewriter should treat any line where she second-guesses Chloe's honesty as off-model.
+A line for Miriam is **kindly-and-inadequate** if it is diagnostically correct — real, careful screening, applied thoroughly — and still can't close the gap, because her clinical frame has no category for "this child's problem is unmet cognitive need, not an unrelated mood disorder." She gets the single best piece of evidence in the case and her only available response is to write it down and underline it. A line would be **unkind** — unsupported anywhere in the text — if it treated Chloe's flat answers as evasive or pressured her past a closed answer. She does neither.
 
 ## Are they acting like themselves?
 
-She runs a controlled room: two chairs and a couch, and she chooses to sit facing Meg while leaving Chloe "the whole couch to herself" (chapters/08_the_asking.md:9) — a deliberate spatial choice that gives the child room without demanding she be looked at directly. When she wants Chloe's answer specifically rather than the parent's, she physically turns her chair to face the couch (chapters/08_the_asking.md:41) before asking. Her question sequence about the summer program is simultaneously correct clinical abuse-screening practice and, unsettlingly, the exact information set someone building a recruitment profile would also want (who ran it, how they found the family, whether the same adults were present the whole time) — the text does not resolve or flag this parallel; it is left for the reader.
+She runs a controlled room, choosing to sit facing Meg while leaving Chloe "the whole couch to herself" [text]. She physically turns her chair to face the couch [text] when she wants Chloe's answer specifically. Her question sequence is simultaneously correct abuse-screening and, unsettlingly, the exact information set a recruiter would also want — the text does not resolve this parallel.
 
-**Failure modes for a rewriter:**
-1. Giving her insight she doesn't act on. She has, on the page, everything needed to consider that the depression is downstream of understimulation rather than an unrelated mood disorder — and the text never shows her drawing that conclusion or recommending anything beyond continued monitoring. Don't retroactively make her smarter than the evidence supports.
-2. Writing her as warm or maternal. Her one register is procedural; even her most attentive moment (the pen stopping) is silent, not verbal reassurance.
-3. Extending her appearances past chapters/09. She has no confirmed contact with Chloe after the February session referenced there — there is no scene of her learning about the March 14th Halstead decision, and no later chapter mentions her again.
+**Failure modes for a rewriter:** giving her insight she doesn't act on; writing her as warm or maternal (her one register is procedural); extending her appearances past chapters/09 without addressing the gap.
 
-## Subjects
+## Subjects and schedule
 
-- Specialism: clinical psychology, mood disorders in children; trained specifically to run a structured intake and, within it, an abuse-screening protocol when a history includes time away from home with unfamiliar adults.
-- Responsible for one patient at a time, seen roughly every two to three weeks [text, chapters/09_february.md:5 — "four times since October"] — a far lighter per-session load than the teachers in this batch, and the text still shows no confirmed treatment content between sessions.
-- Best at: sequencing questions so the routine ones and the loaded ones sound identical coming out of her — "she asks it in exactly the same voice she asked the first one" [text, chapters/08_the_asking.md:23].
-- Worst at: converting a recognized, significant answer ("the happiest I have ever seen her, in her life") into a next step beyond continued sessions — the text never shows her prescribing anything further.
-- Favourite [inferred]: the moment an interview produces something nobody else managed to get — "it was hard" is written down and underlined, not just noted.
-- Least favourite [inferred]: a parent answering for the child — she takes Meg's rehearsed list politely, then keeps turning the room back to Chloe directly.
-- Secretly proud of [inferred]: running the abuse screen thoroughly and by the book even though nothing about this specific family raised suspicion going in — the diligence itself, not just the result.
-- Would drop if allowed: nothing — the text shows no part of her method she resists or resents.
+- PhD in clinical psychology, with a postdoctoral specialization in childhood mood and anxiety disorders and formal training in trauma-informed interviewing, completed at a university hospital twenty-eight years ago [invented].
+- Twenty-five years in practice, the last eighteen as sole owner of a small private office that takes referrals from three local school districts, which is how Laura Vance's call reaches her specifically rather than a random intake line [invented].
+- Active caseload: roughly thirty-five patients, seen every two to three weeks, a mix of ages but with a specific, sought-out reputation for young children — she is one of only two clinicians in the area willing to take patients under eight [invented].
+- Best at: sequencing questions so routine and loaded ones sound identical [text].
+- Worst at: converting a significant answer into a next step beyond continued sessions [text — none shown].
+- The area she took that nobody else in her cohort did: she pursued the trauma-and-context-screening specialization specifically because, early in her career, she watched a colleague miss what turned out to be a genuinely dangerous home situation by not asking enough questions about a "fun" summer camp — the case is why her protocol is this thorough, even now, even when nothing is wrong [invented].
+- Her professional view: she has, in the abstract, treated other bright children whose flattened affect turned out to be boredom or understimulation rather than a primary mood disorder, and she knows the pattern exists — but nothing in the text shows her applying that specific frame to Chloe's case, and this pass does not invent that she does; her actual, demonstrated competence (abuse screening) and her theoretical awareness of the other pattern are two different tools, and only the first one gets used on the page [invented, and marked as a real limit rather than a fix].
+- Secretly proud of: the case that made her this careful turned out fine, years ago, because she asked one more question than she needed to — she has never stopped asking that one more question since [invented].
+
+## Home
+
+Lives alone in a condominium near her office, divorced for over a decade, one adult son who lives out of state and calls on Sundays [invented]. Was married to a hospital administrator; the marriage ended amicably around the time her practice took off and the hours got harder to share [invented]. Keeps almost no personal decoration in the office itself — deliberately neutral, so nothing in the room becomes something a scared child fixates on instead of talking [invented]. Cooks real dinners for herself most nights, a habit she picked up specifically to mark the boundary between the workday and the rest of it [invented].
+
+## Body
+
+Mid-fifties, composed, dresses simply and identically enough day to day that patients rarely remember what she was wearing — this is deliberate [invented]. Sits very still when listening, hands visible on the notepad, which she has been told by more than one patient is calming and by at least one is unnerving [invented]. Wears her hair short and doesn't fuss with it. Writes with a specific, worn fountain pen she has used for over a decade, refilled rather than replaced [invented]. Sleeps six hours most nights and has for years; doesn't seem to need more [invented].
 
 ## Personality off the page
 
-She believes she is doing exactly what her training says to do: screen for the most serious explanation first, rule it out carefully, and treat what's left. By her own measure she succeeds — she reaches the correct diagnosis and gets Chloe to produce a real, usable answer under careful, patient questioning. Nothing in the text shows her aware that four more months will pass with no visible next step; to her, the ongoing sessions likely *are* the treatment working as designed. Where she sits: deliberately — she takes a chair facing the parent and leaves Chloe "the whole couch to herself" [text, chapters/08_the_asking.md:9], then physically turns her chair to face the couch when she wants the patient's own account. Hands: holds a pen continuously; the one described gesture is "stops writing and puts the pen down flat on top of the pad" [text, chapters/08_the_asking.md:29]. Bored, wrong, praised, losing, tired: UNDEFINED — the text shows her uniformly even throughout. At 2am and on a free Saturday: UNDEFINED, though writing up notes is the obvious [inferred] guess. What she'd find funny in someone else: UNDEFINED.
+Believes she is doing exactly what her training says to do: screen for the most serious explanation first, rule it out, treat what's left [inferred]. By her own measure she succeeds every time an interview produces a true answer, which chapters/08 shows her getting. Bored: rarely — thirty-five patients doesn't leave room for it [invented]. Wrong: takes supervision and peer consultation seriously, still attends a monthly case-review group after twenty-five years [invented]. Praised: uncomfortable with it, deflects to the patient's own work [invented]. Losing: doesn't experience much direct conflict in the room; her method is built to avoid it [invented]. Tired: rarely shown tired, even privately — she has genuinely stable stamina for the work [invented]. A free Saturday: reads for pleasure, mysteries specifically, nothing clinical [invented]. What she finds funny in others: a patient's parent trying to diagnose their own child mid-session — she finds it sympathetic more than irritating [invented].
 
-## Would do / would never do
+## Interior life
 
-**Would do:**
+Wants, unsaid: to be brought in earlier, before a crisis, more often than she is — most of her early-childhood referrals come after months of a problem being managed informally first, and she thinks the field loses time this way [invented]. Afraid of: missing the thing that isn't the thing everyone brought her in for — the fear that shaped her whole training [invented]. Thinks about before sleep: rarely a specific case; she has built real boundaries around this over twenty-five years [invented]. A free year: she'd write up her screening protocol formally and try to get other clinicians in her referral network trained on it [invented]. Believes something colleagues would argue with: that most childhood "attention" and "mood" referrals in her network are under-investigated for context before they're medicated or labeled [invented]. Wrong about: she reads Chloe's "it was hard" as the breakthrough of the session; it's real, but it isn't a symptom of pathology — it's a description of a rare good week, and her framework has no slot to log it as anything but data confirming she's on the right diagnostic track [inferred].
+
+## The small stuff
+
+Drinks green tea, one cup, mid-morning, never more [invented]. Handwriting: small, precise, near-illegible to anyone but her — a habit from years of taking fast clinical notes [invented]. Her office desk has exactly one framed photo, of her son as a child, turned slightly away from patients [invented]. Keeps her phone in a drawer during sessions, no exceptions [invented]. Money: modest, deliberate — she under-charges relative to her experience because she remembers what waiting four months for a name on a list felt like from the referral side [invented]. Superstition: none she'd admit to, though she always writes the date first, top corner, before anything else, every single session [invented]. Mornings: reviews the day's full patient list over the tea, in order, before seeing anyone [invented].
+
+## Would do
+
 - Ask the same question in the same even voice whether the likely answer is routine or serious.
-- Turn her chair to face the patient directly when she wants the patient's own account rather than the parent's.
-- Follow "I'm sure it was" with another question anyway, rather than accepting the reassurance and moving on.
+- Turn her chair to face the patient directly when she wants the patient's own account.
+- Follow "I'm sure it was" with another question anyway.
 - Give the child the whole couch and take a chair nearer the parent, unasked.
-- Stop writing, visibly, when an answer surprises her, and let the silence sit rather than filling it.
-- Underline a short, honest answer instead of pushing for a longer one.
+- Stop writing, visibly, when an answer surprises her, and let the silence sit.
+- Underline a short, honest answer instead of pushing for more.
+- Attend a monthly case-review group after twenty-five years in practice [invented].
+- Under-charge relative to her experience because she remembers what a long waitlist costs a family [invented].
+- Take referrals other clinicians in the network turn down because of a patient's young age [invented].
 
-**Would never:**
-- Take a parent's account of a summer program as complete without asking Chloe anyway.
-- Treat a flat "I don't know" from a child as evasive or uncooperative.
-- Diagnose from a single data point without working the full history first.
-- Promise a fix she isn't positioned to guarantee, or claim more certainty than she actually has.
-- Discuss what a patient told her with anyone outside the room without the parent present.
-- Let a session end without writing something down, even one that's produced very little.
+## Would never
 
-## Body and habits
-
-Build, face, hair, clothing: UNDEFINED — no physical description given. Room: two chairs and a couch; she chooses her own seat and Chloe's deliberately [text, chapters/08_the_asking.md:9]. Hands: writes through routine answers, stops writing at the one that surprises her [text, chapters/08_the_asking.md:29]. Movement: repositions her chair mid-session to address whichever person she wants to answer next [text, chapters/08_the_asking.md:41]. Sleep, eating, dress: UNDEFINED.
+- Take a parent's account as complete without asking the child anyway.
+- Diagnose from one data point without the full history.
+- Discuss a patient with anyone outside the room without the parent present.
 
 ## Relationships
 
-- **Chloe:** wants the patient's own account directly, and repeatedly redirects the room's attention back to her even while the parent is doing most of the talking.
-- **Meg:** takes her intake seriously and methodically, but never lets a parent's reassurance close a line of questioning — "I'm sure it was, but I'm asking anyway."
-- **Dave:** no on-page contact at all — not shown attending a session.
+- **Chloe:** wants the patient's own account directly, and redirects the room's attention back to her even while the parent talks [text].
+- **Meg:** takes her intake seriously and methodically, never lets reassurance close a line of questioning [text].
+- **Dave:** no on-page contact — not shown attending a session [text].
+- **Laura Vance:** the referral source; the two have likely never spoken directly — school referrals in her practice usually route through an office, not a direct call [invented].
+- **Her monthly peer-review group:** the closest thing she has to a professional confidant [invented].
 
 ## Likes, dislikes, habits
 
-- **Likes:** UNDEFINED — nothing in the text shows personal preference; every observable trait is professional method.
-- **Dislikes:** UNDEFINED.
-- **Habits:** writes continuously through routine answers, stops writing at the one answer that surprises her [text, chapters/08_the_asking.md:29]. Turns her chair to face whichever person she wants to answer next [text, chapters/08_the_asking.md:41]. Underlines specific words in her notes rather than whole answers [text, chapters/08_the_asking.md:47].
+- **Likes:** a session that produces a true, usable answer [text].
+- **Dislikes:** a parent answering for the child more than once [inferred].
+- **Habits:** writes through routine answers, stops at the one that surprises her [text].
 
 ## Facts a rewriter needs
 
-- Name: Dr. Ammons. First name UNDEFINED.
-- Practice: two-chair, one-couch room; Meg calls her in response to a call from Ms. Vance about Chloe's withdrawal (chapters/08_the_asking.md:3–9).
-- Diagnoses Chloe with depression at the first session (October); the diagnosis is delivered to Meg in the room and relayed to Chloe secondhand, in the car, by Meg (chapters/08_the_asking.md:53).
-- Sees Chloe roughly every two to three weeks; four visits confirmed by chapters/09_february.md:5 ("She has seen Dr. Ammons four times since October").
-- No confirmed treatment plan beyond the recurring sessions — no therapy modality, medication, or homework is named in the text. This gap is the substance of BETA_NOTES.md §1.13 ("No treatment between October and February"), which this sheet corroborates from the primary text.
-- No confirmed contact with Chloe's school, with Dr. Prentice (see PRENTICE.md — the two clinicians never appear to communicate or even be aware of each other in the text), or with anyone at Halstead.
+- Full name: Dr. Miriam Ammons [surname text, first name invented]. Age 54 [invented].
+- PhD, twenty-five years in practice, referral relationships with three local school districts [invented].
+- Sees Chloe roughly every two to three weeks starting October; four confirmed sessions by February [text].
+- No confirmed treatment plan beyond recurring sessions in the text — no modality or medication named.
+- No confirmed contact with Dr. Prentice, the school, or Halstead.
 
 ## Known problems
 
-- **She drops out of the book at the same point Prentice does, with less commentary.** Her last confirmed appearance is chapters/09_february.md, before Chloe leaves for Halstead. No later chapter states whether treatment continued, was formally ended, or was ever followed up — parallel to, though less flagged in the reference documents than, Prentice's disappearance (see PRENTICE.md, Known problems).
-- **The five-month gap between diagnosis and the February collapse has no on-page therapeutic content.** Four sessions are referenced but none are shown in scene except the first; a rewriter restoring one of the missing sessions should keep her register (procedural, question-led, pen as the tell) rather than inventing warmth she hasn't earned in the text.
-- **Her diagnostic protocol and a recruiter's intake questions are structurally identical**, and the manuscript does not comment on this anywhere — worth flagging to the author as either a deliberate irony to sharpen or an unintended overlap to address.
+- Her last confirmed appearance is chapters/09_february.md, before Chloe leaves for Halstead; no later chapter states whether treatment continued or ended [text-based finding].
+- The five-month gap between diagnosis and the February collapse has no on-page therapeutic content beyond the sessions referenced [text-based finding].
+- Her diagnostic protocol and a recruiter's intake questions are structurally identical, and the text never comments on it [text-based finding].
 
 ## Do not confuse with
 
-**Dr. Prentice.** Both are clinicians who ask Chloe direct questions in a controlled room and both are professionally correct within their own frame. The dividing cue: Prentice explains his reasoning to Chloe as he goes ("that's a totally fine answer," "it isn't the one that matters") and tells her things plainly; Ammons almost never explains anything to Chloe directly — her only real communication with her patient is the choice of when to keep writing and when to stop.
+**Dr. Benjamin Prentice.** Both are clinicians who ask Chloe direct questions in a controlled room. The dividing cue: Prentice explains his reasoning to Chloe as he goes and tells her things plainly; Miriam almost never explains anything to Chloe directly — her signature is the pen, not a line.
