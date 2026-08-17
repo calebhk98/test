@@ -2,7 +2,7 @@
 
 *September 2019 – April 2020*
 
-Marksmanship replaces archery in September, and Voss gives them three weeks of dry drill before anything gets loaded.
+Marksmanship replaces archery in September, when Voss gives them three weeks of dry drill before anything gets loaded.
 
 Nine weapons go on a table and they learn to name every one of them off the profile, from across the room. Then they strip and rebuild four of them by feel, with a cloth laid over their hands, and then they do it that way while Voss stands behind them reading questions off a clipboard and timing the answers.
 
@@ -14,13 +14,13 @@ Sam keeps the rifle up. "How long till this bit's boring?"
 
 "Six weeks." Kavi is on the next mat with his chin on his forearms, watching the flag. "It was six on the nerf and six on the paint, so six. Then they hang it off something, then they make it move, then we get the good one."
 
-"Six is generous. Ruth's already bored."
+"Six is generous," Sam says. "Ruth's already bored."
 
 "Ruth was bored in the briefing," Odile says.
 
 Ruth puts three rounds through one hole without lifting her cheek off the stock, then rolls onto her side to ask whether anybody has water.
 
-Kneeling and standing come in before the end of the month, then a hundred metres, then a hundred metres in a crosswind with somebody calling it off a flag for her. In November the target goes onto a rope and swings, so the count starts to matter again, and Odile burns the inside of her hand on an ejection port that same week. She is still holding the palm up across the breakfast table in December, because the scab pulls every time she opens her fingers.
+Kneeling and standing come in before the end of the month, then a hundred metres, then a hundred metres in a crosswind with somebody calling it off a flag for her. In November the target goes onto a rope and swings, so the count starts to matter again. That same week, Odile burns the inside of her hand on an ejection port. The scab pulls every time she opens her fingers, and she is still holding the palm up across the breakfast table in December.
 
 A machine arrives in February that throws a clay across the front of the range every nine seconds, always at the same speed. Voss hands out a card with the interval printed on it so they can run a count off it.
 
@@ -30,7 +30,7 @@ A machine arrives in February that throws a clay across the front of the range e
 
 "That card was printed before somebody put a new head on the thrower. Run a count off nine flat and you're early every time, all the way down."
 
-Voss looks at the stopwatch for about as long as it takes him to decide something. "Firing point four, you're up."
+Voss looks at the stopwatch for about as long as it takes him to decide whether Aymar is right. "Firing point four, you're up."
 
 A different card is taped to the bench two days later with a different number on it, and Ruth spends the rest of the term making sure people know the stopwatch it came off was from Aymar.
 
@@ -44,7 +44,7 @@ Kavi catches up with Chloe on the path afterward, walking backward with his kit 
 
 "They might leave it at clays."
 
-Shaking his head, "Nah. It escalates every year."
+Kavi shakes his head. "Nah. It escalates every year."
 
 ---
 
@@ -62,7 +62,7 @@ Chloe holds fifty seconds on her third round on a Tuesday in February. She is fl
 
 "You're ten seconds off a minute and you're doing pairs."
 
-She does pairs for the rest of the hour, then finds Ruth at the sinks and does the whole thing again with her hands, and then Sam, and then a boy from the year below who was standing four feet away when it happened.
+She does pairs for the rest of the hour, then finds Ruth at the sinks and acts out the hold again with her hands, and then Sam, and then a boy from the year below who was standing about four feet away when it happened.
 
 Seven thirteen-year-olds get put on her teaching list in September, and Marek goes on somebody else's. She reads that off the noticeboard on the first morning, catches herself grinning at it, and takes the stairs two at a time going up.
 
@@ -110,9 +110,9 @@ Ruth plays it eleven more times, then at about one in the morning she sits up so
 
 "I've been cutting that off since Tuesday."
 
-Down at the materials lab she spends the autumn on a run of fracture tests that keep coming out inconsistent, and after five weeks she has it. Samples cut on the Friday saw come out three degrees off square; samples cut on the Tuesday saw come out true; the log lists the date and the operator and leaves out the saw. Her name goes into the acknowledgments of the write-up in March, at the end of a list of five, on a paper that stays inside the department. Sanders tells her in the corridor on his way somewhere else without breaking stride, but she stands there for a second with her bag half off her shoulder before she goes on to Japanese. She reads the whole paper that night and finds the two tables that came out of her weeks.
+Down at the materials lab she spends the autumn on a run of fracture tests that keep coming out inconsistent, and after five weeks she has it. Samples cut on the Friday saw come out three degrees off square; samples cut on the Tuesday saw come out true; the log lists the date and the operator and leaves out the saw. Her name goes into the acknowledgments of the write-up in March, at the end of a list of five, on a paper that stays inside the department. Sanders tells her in the corridor on his way somewhere else without breaking stride, but she stands there, bag half off her shoulder, before she goes on to Japanese. She reads the whole paper that night and finds the two tables that came out of her weeks.
 
-Sam is six foot two by September. Ruth stands next to him at breakfast in the first week and looks up at him for a while.
+Sam is six foot two by September. Ruth stands next to him at breakfast in the first week and tips her head back to find his face.
 
 "You've been eating."
 
@@ -144,7 +144,7 @@ Ruth takes it up with him directly on Friday. Sam hears her out with his chin on
 
 ---
 
-Winter break, second night. Her mother is standing at the end of the table with a dish in both hands and Chloe is halfway through something about Odile.
+Winter break, second night. Her mother is standing at the end of the table with a dish in both hands and Chloe is halfway through the story about Odile's scar.
 
 "Odile's got a scar on her hand now. She held it up by the ejection port and it burned her, and now she keeps showing everybody, like it's a medal."
 
@@ -154,7 +154,7 @@ Winter break, second night. Her mother is standing at the end of the table with 
 
 Her mother's hands stop on the dish. "You're shooting rifles?"
 
-"Yeah, since September." Chloe nods at her plate and keeps going. "Anyway, so she's showing everybody this scar and Kavi tells her that if she'd held it an inch lower she'd have—"
+"Yeah, since September." Chloe nods at her plate and keeps going. "Anyway, so she's showing everybody this scar and Kavi tells her that if she'd held it an inch lower she'd have-"
 
 "Since September."
 
@@ -168,7 +168,7 @@ And Chloe has nothing at all.
 
 Sam grew four inches over the summer and there is a pencil mark on a door frame about it. Sam had a girlfriend and then did not. Ruth built a thing that makes sound out of nothing, and Chloe was on the floor of her room at one in the morning helping her find forty milliseconds. She teaches now. She has seven of them and she taught one thing to all seven of them backward and had to go in and say so. She held fifty seconds against ten people on a Tuesday and could not stand up afterward. There is a boy called Ferris who does everything the long way round and gets there every time. Japanese, four months of it. Abstract algebra, contracts, logistics, the fracture tests, her name in the back of a paper, a clamp that closes on the wrong axis, three hinges in a bin.
 
-All of it started around September. All of it went past this table in silence, and she sits there trying to work out which one she was supposed to have opened with, and why it is the rifle.
+All of it started around September. All of it went past this table in silence. Which one was she supposed to have opened with? Why is it the rifle?
 
 "I didn't mean to keep it from you." She has both hands up off the table now. "There was a lot that started in September and I skipped all of it. It's just school."
 
@@ -180,9 +180,9 @@ All of it started around September. All of it went past this table in silence, a
 
 Her father is looking at his plate. "You knew?" her mother says.
 
-"She said something on the phone in October."
+Her father sets his fork down. "She said something on the phone in October."
 
-"She said something."
+"She said something," her mother says, flat.
 
 "Meg. Leave it."
 
@@ -190,12 +190,12 @@ Her father is looking at his plate. "You knew?" her mother says.
 
 "I thought you knew." He keeps his eyes down. "I thought it was fine."
 
-Her mother sets the dish down in the middle of the table, straightens it with two fingers, and goes into the kitchen. She stays in there. Her father moves the salt two inches, puts it back, then gets up and starts stacking plates that nobody has finished with.
+Her mother sets the dish down in the middle of the table, straightens it with two fingers, and goes into the kitchen. She stays in there. Her father moves the salt, puts it back, then gets up and starts stacking plates that nobody has finished with.
 
 Her mother comes out after about six minutes and asks whether anybody wants the pie warmed up. Her father and Chloe both say yes at the same time. He turns the game on and they eat it in front of that, and her mother comes and sits on the arm of his chair for the second half.
 
 "That's a hold. That is a hold, that's been a hold all night."
 
-On Sunday she asks whether the man behind the line is armed, and what happens if somebody drops one, and whether anybody has ever turned round. Chloe answers all three, and then tells her about the flag they call the wind off, and her mother listens to the whole thing and comes back with one more question about the man behind the line.
+On Sunday she asks whether the man behind the line is armed, and what happens if somebody drops one, and whether anybody has ever turned round. Chloe answers all three, and then tells her about the flag they call the wind off, and her mother listens to all of it and comes back with one more question about the man behind the line.
 
 She calls home twice a week through January and most of February. Exams take it down to Sundays in March, and by April it is twice a week again.

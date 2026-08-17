@@ -18,9 +18,9 @@ Afterward, Sam catches her at the bottom of the stairs with his collar open.
 
 "It's a question about who carries the risk while a thing is sitting in a shed. There's an answer, and there's why." She has her bag on both shoulders and keeps walking. "After that you're padding."
 
-Sam thinks about that the whole length of the corridor and then says he would like to withdraw about seven of his eleven pages.
+Sam goes quiet the whole length of the corridor, then says he would like to withdraw about seven of his eleven pages.
 
-The list goes up on the corkboard in the second floor hall eleven days later. The names run down the left in a bare institutional typeface. There is a column of marks, and beside it a column showing the distance from the pass line. Chloe reads hers twice, to be sure it is hers.
+The list goes up on the corkboard in the second floor hall eleven days later. The names run down the left in a bare institutional typeface. There is a column of marks, and beside it a column showing the distance from the pass line. Chloe reads hers twice.
 
 "Four points," she says.
 
@@ -46,7 +46,7 @@ She takes her paper to Amberg two days later. He has the mark scheme out on the 
 
 "Whoever marks this already knows all of it."
 
-"That is the piece you have wrong, and I would like you to sit down while I say the rest of it." Amberg waits until she does. "You wrote that answer for a reader who already has your head." He slides the paper across to her. "There was one of those in this building in April and it was not the man marking it."
+"I would like you to sit down while I say the rest of it." Amberg waits until she does. "You wrote that answer for a reader who already has your head." He slides the paper across to her. "There was one of those in this building in April and it was not the man marking it."
 
 Chloe reads the four rows twice, then looks up at him and back down at them.
 
@@ -55,8 +55,6 @@ Chloe reads the four rows twice, then looks up at him and back down at them.
 "The four points are for showing your work," Amberg says. "Take the paper."
 
 ---
-
-In improv somebody hands you an opening and you take it and keep moving. Stop to work out where the thing is going and you have failed the exercise. That is the whole of the rule.
 
 "Two of you. Brothers. One of you has sold something belonging to the other." The teacher points. "Go."
 
@@ -70,7 +68,7 @@ Sam is up in half a second and talks for four minutes without stopping for air. 
 
 She goes back to her chair through two people getting up out of theirs.
 
-She writes her first practice paper in the second week of May, at a table in the library with the mark scheme face down beside her. It takes her an hour and nine minutes, and every line feels like explaining a door to a man already standing in front of one.
+She writes her first practice paper in the second week of May, at a table in the library with the mark scheme face down beside her. It takes her an hour and nine minutes, restating what the shed already made obvious.
 
 She gives it to Kavi.
 
@@ -100,11 +98,11 @@ She looks at the gap, and the car goes through it.
 
 She takes it again in October, in the same room, two rows over from where she sat in April.
 
-Question six is a rented forklift. She has the answer in her second line. Then she writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. The whole of it takes nineteen minutes. She reads it back. It is flat and obvious, and she leaves it.
+Question six is a rented forklift. She has the answer in her second line. Then she writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. The whole of it takes nineteen minutes. She reads it back and doesn't change a word.
 
 She passes by twenty-two.
 
-In November she is in the library with something else open in front of her and she is thinking about April instead. It happens again in December, and once more in February, months past the point where the second result carried any weight for anybody. She still shuts books harder than she means to in November, and she could not tell anybody why she is doing it.
+In November she is in the library with something else open in front of her and she is thinking about April instead. It happens again in December, and once more in February. She still shuts books harder than she means to in November, and she could not tell anybody why she is doing it.
 
 The forge is Thursdays, and has been since she was twelve. The work down there stays between her and Pruitt. In four years the whole of his commentary has been telling her which end to hold.
 
@@ -122,7 +120,7 @@ There is a hook on the back of her door with a bag on it. She made it in her sec
 
 She comes home in June for ten weeks and sleeps through most of the first one.
 
-After that the nights settle at nine hours. She rides out to the reservoir most days, and in July she finds a road past it that adds eleven miles and a hill she has to stand up on. Four novels go through her hands in a fortnight and leave nothing behind them. The rest of it is long afternoons on the back steps she and her father built when she was thirteen, with the sun coming round the corner of the garage at about four and a wasp working the same board every day.
+After that the nights settle at nine hours. She rides out to the reservoir most days, and in July she finds a road past it that adds eleven miles and a hill she has to stand up on. Four novels go through her hands in a fortnight, and she can't remember how a single one of them ends. The rest of it is long afternoons on the back steps she and her father built when she was thirteen, with the sun coming round the corner of the garage at about four and a wasp working the same board every day.
 
 Her mother watches that from the kitchen window for two weeks before she comes out.
 
@@ -144,7 +142,7 @@ Her father asks about Sam instead of about her classes.
 
 "That's what I asked him. He said he's on forty and he does other stuff, and then he told me to go and be miserable at Ruth about it, because Ruth's on ninety-one."
 
-Her father laughs at that for a good deal longer than she expects.
+Her father laughs at that, head back, longer than the joke should carry him.
 
 "Is she, though? Miserable?"
 

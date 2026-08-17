@@ -14,8 +14,6 @@ Then Coach Bell puts a metronome on a post at the near end of the field.
 
 "That's fine, and you're still doing it my way." Bell keeps hold of the arrow while he says it. "You want to read a shoulder at seventy metres, do it on your own time with something that bounces. This is an arrow, and I want to know whether you think you can put one where you meant it every single time, all year, without one bad afternoon."
 
-Nobody down the line answers him.
-
 "Right, then nothing gets pointed at a person."
 
 He walks them down the field to show them the lanes. Both lines shoot the same way, north, from two positions seventy metres apart, and the lanes lean in toward each other by a few degrees so that the two flight paths cross a long way out over the middle of the field. The arrows meet over the middle of the field at the top of the arc. What is left of them comes down together in open grass another hundred and fifty metres past that, where there is a rope and a sign, and nobody goes beyond it during the block.
@@ -32,7 +30,7 @@ Bell turns the metronome on.
 
 It is a counting problem and it takes Chloe until about the third week to admit that.
 
-Her release runs early when she is keyed up and late when her hands are cold, and both of those put the arrows a long way apart in the sky, because a tenth of a second up there is most of a house. In the second week she starts practising it without a bow at all, walking to dinner in the dark with four fingers going against the side of her leg. Ruth catches her at it in the hall.
+Her release runs early when she is keyed up and late when her hands are cold, and both of those put the arrows a long way apart in the sky, because a tenth of a second up there is several metres of flight. In the second week she starts practising it without a bow at all, walking to dinner in the dark with four fingers going against the side of her leg. Ruth catches her at it in the hall.
 
 "Is that the release you're doing?"
 
@@ -44,7 +42,7 @@ They stand in the corridor comparing counts for ten minutes, which makes them la
 
 The first one Chloe gets is in the last week of October, with Odile.
 
-They hear it before they see anything, a small dry click a long way up, so far up that she is not sure for a second whether she made it up, and then two arrows come down wrong out of the middle of the sky. One is spinning. The other is broken across the middle, but it comes down in two pieces about eight metres apart with one of them still turning.
+A small dry click sounds a long way up, before anything is visible, so far up that she is not sure whether she made it up, and then two arrows come down wrong out of the middle of the sky. One is spinning. The other is broken across the middle, but it comes down in two pieces about eight metres apart with one of them still turning.
 
 The whole of Chloe's line is shouting before the pieces land, and somebody down the far end is banging on the lid of the kit box with a bow stave. Odile comes up the field at a run from her end and covers seventy metres in about forty seconds. The two of them stand in the grass yelling at each other about the sound it made, but neither of them is listening to the other one.
 
@@ -134,21 +132,21 @@ Chloe unfolds hers.
 
 "Then go and do it properly." He shrugs at her. "If you can't say why the man signed it, you don't know that it was wrong. You just don't know why he did it."
 
-Chloe puts her fork down, but she keeps looking at the table for a while.
+Chloe puts her fork down, but she keeps looking at the table.
 
 "That's annoying," she says, "because now I have to go and build the thing I came in here to say was wrong."
 
-She reads for two days, and on the Tuesday she reads all afternoon and most of the evening before being sick at about ten o'clock. She sits on the floor of the bathroom with her back against the side of the bath for a while, then goes back and reads for another hour.
+She reads for two days, and on the Tuesday she reads all afternoon and most of the evening before being sick at about ten o'clock. She sits on the floor of the bathroom with her back against the side of the bath, then goes back and reads for another hour.
 
-On the Wednesday she builds the other side. The strongest version anybody has put on paper belongs to a man writing in 1961 that nobody else gets near, but it takes her most of the day to get all of him into one place and see the shape of it. There is a hole in the middle of what he says and he walks straight past it, so she fills it in for him, because leaving it there would be doing his job for him. Then she finds the three objections that do the most damage to what he has built, but she answers all three of them.
+On the Wednesday she builds the other side. A man writing in 1961 makes the case Chloe can't get past, but it takes her most of the day to get all of him into one place and see the shape of it. There is a hole in the middle of what he says and he walks straight past it, so she fills it in for him, because leaving it there would be doing his job for him. Then she finds the three objections that open cracks in what he has built, but she answers all three of them.
 
-By Thursday afternoon she has stopped being angry and started being interested. She notices that happening while it is happening, but she does not know what to do about it.
+By Thursday afternoon she has stopped being angry and started being interested.
 
 She hands it in on the Monday. Fourteen thousand words, twenty-eight pages.
 
 Hearn gives it back on the Monday after that with a B on the front of it.
 
-The note runs eleven lines. It says she hedges, twice on page nine, once on page twenty-two, plus the whole of the conclusion. It says she knows exactly what the reader thinks of the position and she keeps apologising for the argument while she is in the middle of making it. An argument you apologise for is not an argument, it is a request. Make it or do not make it.
+The note runs eleven lines. It says she hedges, twice on page nine, once on page twenty-two, plus the whole of the conclusion. It says she knows exactly what the reader thinks of the position and she keeps apologising for the argument while she is in the middle of making it. An argument you apologise for is a request. Make it or do not make it.
 
 She finds Ruth on the stairs between the second floor and the third.
 
@@ -160,7 +158,7 @@ She finds Ruth on the stairs between the second floor and the third.
 
 "So what you're telling me is he's right."
 
-"He's right," Chloe says, and sits down where she is with the pages on her knees.
+"Yeah," Chloe says, and sits down where she is with the pages on her knees.
 
 At Christmas her mother asks what she has been working on.
 
@@ -208,13 +206,13 @@ The intercom comes on at two in the afternoon in the middle of the block and it 
 
 There is a pause of about a second and a half on the line.
 
-"Good luck," Sinclair says, in a tone that suggests he does not mean it.
+"Good luck," Sinclair says.
 
 Two hundred of them come out of eleven rooms at once and the shouting in the main stairwell comes up through the floor into Chloe's feet. Forty adults have to come through doors to get anywhere at all, but there are only nine doors. The students know which third floor door does not shut properly, which cupboard on the second floor has a window in the back of it, where the bannister has a gap you can get an arm through, and which of the two kitchen doors makes a noise when it opens.
 
-Ruth ends up running the east stairwell, because she starts giving orders inside the first thirty seconds and everybody standing on those stairs does what she tells them. Nadia takes the third floor and splits it in about four minutes. Two on each stair head, four carrying kit up from the second floor so nobody on a landing has to leave it, the rest told where to stand and not to move off it. Eleven people take four instructions from her in a row before any of them thinks about it.
+People say afterward that Ruth ran the east stairwell: she gave orders from the first thirty seconds, and everybody standing on those stairs did what she told them. Nadia takes the third floor and splits it in about four minutes. Two on each stair head, four carrying kit up from the second floor so nobody on a landing has to leave it, the rest told where to stand and not to move off it. Eleven people take four instructions from her in a row before any of them thinks about it.
 
-Sam is out inside the first ninety seconds of the whole thing. He goes over the second floor bannister onto three teachers coming up, which works, then lands badly, which does not, and an adult marks him out by sitting on his back. He talks about it for the rest of the afternoon from the bench by the front doors where the marked-out sit, then again at dinner, and he is still talking about it in June.
+Sam is out inside the first ninety seconds of the Watch. He goes over the second floor bannister onto three teachers coming up, which works, then lands badly, which does not, and an adult marks him out by sitting on his back. He talks about it for the rest of the afternoon from the bench by the front doors where the marked-out sit, then again at dinner, and he is still talking about it in June.
 
 Chloe spends the whole of it on the third floor landing shooting paintballs out of the air. There are six of them up there. The balls come up the stairwell in twos and threes for most of an hour, and when two of them meet there is a flat wet crack and paint everywhere at once. She can hear the six on the floor below hitting theirs. Somebody down there is shouting the count, but she cannot hear the numbers. Her arms ache by three o'clock, but she stays up there on the landing until it is over.
 
