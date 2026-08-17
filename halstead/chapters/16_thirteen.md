@@ -122,7 +122,7 @@ Dinner is ten or twelve of them at the long table by the window and has been sin
 
 Eli puts a cipher on the table one Thursday, between the salt and the water jug, written out on a napkin.
 
-"Four hours, that one took me. Anybody want to do better than four hours?"
+"Four hours, that one took me. Somebody beat that."
 
 "Where did you get it from?"
 
@@ -136,7 +136,7 @@ Nadia turns the napkin round toward Chloe with one finger.
 
 "It could be a date."
 
-"It's got a letter in the middle of it." Nadia keeps her finger on the napkin. "What do you think it is?"
+"It's got a letter in the middle of it." Nadia keeps her finger on the napkin. "You know what it is."
 
 "I don't know yet."
 
@@ -144,7 +144,7 @@ Nadia turns the napkin round toward Chloe with one finger.
 
 "I don't."
 
-"You've had your hand over that corner since Kavi passed it." Nadia sits back. "You always do that when you've got it and you don't want to say it in front of everybody."
+"You've had your hand over that corner since Kavi passed it." Nadia sits back. "You always do that. You've got it. You don't want to say it in front of everybody."
 
 Chloe takes her hand off the napkin and puts it in her lap. Sam starts saying something about the salt. At half past nine there are six opinions at that table and nobody has moved off any of them.
 

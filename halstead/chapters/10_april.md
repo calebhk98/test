@@ -100,7 +100,7 @@ She asks Kavi about it two weeks later, on the stairs, when there is nobody else
 
 "Crying about what."
 
-"About going, I think, because she came and got him and he didn't want to go, and that's the whole thing." Kavi goes up two steps and stops with his hand on the rail. "He wasn't behind either, if that's the next one. He was doing what the rest of us were doing. He did the water thing and he did the bridge and he was fine."
+"About going, because she came and got him and he didn't want to go, and that's the whole thing." Kavi goes up two steps and stops with his hand on the rail. "He wasn't behind either, if that's the next one. He was doing what the rest of us were doing. He did the water thing and he did the bridge and he was fine."
 
 "Then I don't understand what happened to him."
 

@@ -92,7 +92,7 @@ Art history is in the spring, and in February the teacher puts up a Dutch interi
 
 "I took the inflation out. It's still nine times what it was." She has both elbows on the table. "And if I painted that, right now, exactly that, every brush stroke the same, it's worth about four pounds. He painted it and it's worth a house. So the number isn't about the picture at all, and I want to know what it's actually about, and nobody in that room will tell me."
 
-"So go and ask her about it again."
+"Ask her again."
 
 "I did ask her, and she told me it was a good question for a different course."
 
@@ -118,7 +118,7 @@ Chloe unfolds hers.
 
 "It's a stupid question," she says at dinner, before anybody has asked her.
 
-"It's not a stupid question, it's the one everybody wants," Kavi says. "I'd swap you for juries right now."
+"Not stupid. Everyone wants it." Kavi says. "I'd swap you for juries."
 
 "It's a stupid question because it's got an answer, and they knew what was under them. They did it in February, then again in March, then again in May, and every single time somebody sat in a room and signed it." She has her fork in one hand and has not used it. "I'm going to write down what happened, then write down why it was wrong, and that's the whole essay."
 

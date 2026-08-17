@@ -18,7 +18,7 @@ Reading is not like that. She reads the cereal box in the morning, both sides. S
 "Then you'd have four."  
 "But I would have had six." Chloe has both hands flat on the desk now, up on her toes to see over it.  
 "You'd have had four at a time." The librarian is stamping cards while she says it and doesn't look up. "That's what the rule is about. Four at a time."  
-"The rule is about at a time, though. So six is fine, because it's still four at a time, it's just four and then four again, and two of them are ones you already gave me."  
+"The rule is about at a time, though. So six is fine. It's still four at a time. It's just four, and then four again. Two of them you already gave me."  
 The librarian looks up at her and holds the stamp in the air for a second. "How old are you?"  
 "Six," Chloe says.  
 "Four," the librarian says, and goes back to stamping. "The new ones come in Thursday morning. They sit on the cart before I shelve them. Come in Thursday and you can go through the cart first."  
@@ -29,7 +29,7 @@ At dinner in September she talks about a book for the entire dinner. It's about 
 "Where'd she get a ticket?" her dad says. He has stopped eating and he is doing the thing where he asks questions he already knows the answer to.  
 "Her brother. That's the whole thing, that's why she brings him. He saves his money and she spends all of hers, so she can't run away by herself. She has to bring him because he's the one with the money, and he knows it, and he's kind of a jerk about it for like the first half."  
 "And then he stops being a jerk about it." Her mom is not really listening anymore, and Chloe knows it, and keeps going.  
-"No. He gets worse and then he stops." Chloe puts her fork down. "He gets worse because she starts being fine without him. Like she figures out the food thing and where the bathroom with the couch in it is, and once she can do all that she doesn't need his money as much, and he can tell. So he gets meaner right at the part where she stops needing him, which is backwards, except it isn't, because that's exactly when you would."  
+"No. He gets worse and then he stops." Chloe puts her fork down. "He gets worse because she starts being fine without him. Like she figures out the food thing and where the bathroom with the couch in it is, and once she can do all that she doesn't need his money as much, and he can tell. So he gets meaner right when she stops needing him. That's backwards. Except it isn't. That's exactly when you would."  
 "Eat something," her mom says.  
 Chloe eats something. "And then she likes having him there, but she never says it. You just know."  
 "How do you know if she doesn't say it?"  
@@ -209,8 +209,8 @@ Ben looks at her for a second longer than he has looked at her all morning.
 Then he talks to her mom, and Chloe waits in the hall on a chair that's too tall for her feet, holding her jacket in her lap because there isn't anywhere else to put it.  
 The door is open a few inches.  
 She doesn't get all of it. She hears her mom say the teacher says. She hears Ben say a lot of words she doesn't have. Then a piece of it comes through clean, because he's turned toward the door.  
-"I'm not seeing what the school is seeing. I think she finishes in the first two minutes and then she's got thirty-eight minutes left over and nowhere to put them."  
-"So there's nothing wrong with her."  
+"I'm not seeing what the school is seeing. She finishes in the first two minutes and then she's got thirty-eight minutes left over and nowhere to put them."  
+"So there's nothing wrong with her?"  
 "There's nothing wrong with her."  
 Her mom makes a sound. Chloe can't tell what kind it is from out here. It could be either kind.  
 "There are a couple of things where she's slower than most kids her age, and the biggest one is copying. Hand-and-eye. That part's real, you'll see it in her handwriting for years, and it's also not what anybody in that building is calling you about. Nobody's calling you about handwriting."  
@@ -219,7 +219,7 @@ Her mom makes a sound. Chloe can't tell what kind it is from out here. It could 
 "So what number do I get?"  
 "A good one. Not the one that would make somebody move."  
 "Then what do I do?"  
-"Honestly? The lever here is the school, because that's where the forty minutes are. I can write it all up and you can walk it in there, and some of them do move on a report like that."  
+"The lever here is the school, because that's where the forty minutes are. I can write it all up and you can walk it in there, and some of them do move on a report like that."  
 "And the rest of them?"  
 "The rest of them put it in the folder." He says it without any particular feeling about it. "Is there a gifted program?"  
 "It starts in third grade."  
@@ -336,7 +336,7 @@ Later, in the kitchen, with the door mostly shut:
 "They've got a woman who swam in the Olympics."  
 "Okay." Her mom says it the way she says okay when she is waiting for the rest of a sentence.  
 "They've got a guy who was a SEAL. An actual one, not a guy who says it at parties. Half of them have two master's degrees. There's one of them, I know the name, he wrote a paper my whole department read. People printed it out. Kathy printed it out and left it on my chair."  
-"So it's real."  
+"So it's real?"  
 "The school's four years old, Meg. It says so on the page about the school."  
 "So?"  
 "So how does a four-year-old school get that guy. What does it pay him. With what."  
@@ -601,7 +601,7 @@ Sam looks at the table for a second.
 "Right."  
 "But I'd say you were doing it on purpose."  
 "That's my whole thing," Chloe says.  
-"That is the worst thing anybody has ever said," Kavi says, to Sam, about Sam.  
+"The worst," Kavi says, to Sam, about Sam.  
 "The word is tidally locked." Ruth has stopped eating for this. "It isn't stuck and it isn't on purpose. It got slowed down until it matched. It used to spin, and then it stopped spinning, over a really long time, because of us."  
 "Okay, but that's how it got that way," Chloe says. "I'm talking about what it's doing now."  
 "Those are the same thing."  
@@ -846,7 +846,7 @@ She isn't talking to anybody. It's out of her before she has hold of any of it.
 
 "What was that, Chloe?"
 
-"Because you won't be you." She can hear herself still going and she goes anyway. "You'll be somebody three years older who doesn't remember doing this, so it's like sending a package to a person you've never met. Except it's got your name on the front of it, so they have to open it, and they never asked for it."
+"Because you won't be you." She can hear herself still going and she goes anyway. "You'll be somebody three years older. You won't remember doing this. It's like sending a package to a person you've never met. Except it's got your name on it. So they have to open it. They never even asked for it."
 
 Kayleigh Burns has turned around in her chair.
 
@@ -920,7 +920,7 @@ In the first week of October, Chloe puts her head down on her desk in the middle
 
 She isn't quiet about it. Ms. Vance comes down the row and crouches all the way down beside the desk, in front of everybody, and puts a hand flat on Chloe's back and leaves it there.
 
-"Hey, Hey, What's going on?"
+"Hey, hey, what's going on?"
 
 Chloe can't get anything out.
 
@@ -1362,7 +1362,7 @@ She asks Kavi about it two weeks later, on the stairs, when there is nobody else
 
 "Crying about what."
 
-"About going, I think, because she came and got him and he didn't want to go, and that's the whole thing." Kavi goes up two steps and stops with his hand on the rail. "He wasn't behind either, if that's the next one. He was doing what the rest of us were doing. He did the water thing and he did the bridge and he was fine."
+"About going, because she came and got him and he didn't want to go, and that's the whole thing." Kavi goes up two steps and stops with his hand on the rail. "He wasn't behind either, if that's the next one. He was doing what the rest of us were doing. He did the water thing and he did the bridge and he was fine."
 
 "Then I don't understand what happened to him."
 
@@ -1646,7 +1646,7 @@ Sam looks up with a fork in his hand.
 
 "I liked dance and I was good at dance, and I'm going to keep saying it."
 
-"You were good at dance," Ruth says, without looking up from her book, "which is why you liked it, and if you'd been ninetieth you'd be up there on the table with her."
+"You were good at dance," Ruth says, without looking up from her book, "which is why you liked it, Sam, and if you'd been ninetieth you'd be up there on the table with her."
 
 Chloe does one more lap of the table before she sits down, and Ruth turns a page without commenting on any of it.
 
@@ -1672,7 +1672,7 @@ Statistics turns out to be an hour of somebody taking a number apart in front of
 
 "It's got eleven people in it, Kavi. Eleven."
 
-"So it's a small result and you round it down."
+"Small result. Round it down."
 
 "It's not a small result, it's the same size result you'd get out of eleven people if there was nothing there at all, which is the entire—" Chloe stops, because Sam has put his hands over his ears and started humming. "We're nearly done."
 
@@ -1824,11 +1824,11 @@ The 10v1 starts in January.
 
 "Eleven of you at a time. One in the middle, ten on them, a minute on the clock." Kowalczyk has the clock in her hand. "Two or three rounds a class. The rest of the hour is what you've been doing since September, because that doesn't stop."
 
-"Why ten?" Sam says.
+"Ten's a lot." Sam says.
 
 "Five people can reach you at once. Six if they're good, seven if you're standing badly, and after that there's no room for anybody, they'd be pushing each other over." She holds a hand up flat and turns it. "So ten is five on you and five waiting for the first five to get tired. More than ten and they're queuing."
 
-"Why a minute?"
+"A minute's a long time."
 
 "Because you'll be tired before they are." She sets the clock. "And because ten is the shape of every long fight there is. A hundred on one is a 10v1 that goes on longer, and there's nothing in the hundred that isn't already in the ten. If you can hold a minute against ten you've got five capable ones left, and five is a fight you can have."
 
@@ -1860,7 +1860,7 @@ Chloe stops.
 
 "What?"
 
-"We're all reacting and you can't react to it, there isn't time to react to it, you have to already be there." She is up on her knees with both hands out. "It's a barrel, Ruth. It's a barrel on the end of a person, and it's pointing where the ball's going before the ball goes anywhere, and they all shoot at the same speed. So you don't need the ball. The ball's the last thing that happens. You watch the barrel and the feet, you work out where it's going to be, and then you're already moving when he shoots."
+"We're all reacting and you can't react to it, there isn't time to react to it, you have to already be there." She is up on her knees with both hands out. "If you're standing behind someone holding a hose, you don't watch the water. You watch where the hose is pointing before anything comes out of it. It's the same barrel, Ruth. It's pointed at where the ball's going before the ball goes anywhere, and everyone's shooting at the same speed. Watch the barrel and the feet. Move before he shoots."
 
 "That's not what she told us."
 
@@ -2067,7 +2067,7 @@ Art history is in the spring, and in February the teacher puts up a Dutch interi
 
 "I took the inflation out. It's still nine times what it was." She has both elbows on the table. "And if I painted that, right now, exactly that, every brush stroke the same, it's worth about four pounds. He painted it and it's worth a house. So the number isn't about the picture at all, and I want to know what it's actually about, and nobody in that room will tell me."
 
-"So go and ask her about it again."
+"Ask her again."
 
 "I did ask her, and she told me it was a good question for a different course."
 
@@ -2093,7 +2093,7 @@ Chloe unfolds hers.
 
 "It's a stupid question," she says at dinner, before anybody has asked her.
 
-"It's not a stupid question, it's the one everybody wants," Kavi says. "I'd swap you for juries right now."
+"Not stupid. Everyone wants it." Kavi says. "I'd swap you for juries."
 
 "It's a stupid question because it's got an answer, and they knew what was under them. They did it in February, then again in March, then again in May, and every single time somebody sat in a room and signed it." She has her fork in one hand and has not used it. "I'm going to write down what happened, then write down why it was wrong, and that's the whole essay."
 
@@ -2257,7 +2257,7 @@ The bread comes up in Ruth's room on a Tuesday, with the four of them on the flo
 
 "The Wednesday bread's better."
 
-"It is not better, Sam." Ruth has a book open on her knees and does not look up from it. "Same flour, same ovens, same people. The only thing different about a Wednesday is that it's a Wednesday. Two hundred of us have talked each other into it. Somebody said it in third grade, and now the whole school can taste it, which isn't taste. That's a room agreeing before anybody has chewed anything. It's mass hysteria with butter on."
+"It is not better, Sam." Ruth has a book open on her knees and does not look up from it. "Same flour, same ovens, same people. The only thing different about a Wednesday is that it's a Wednesday. Two hundred of us have talked each other into it. Somebody said it in third grade, and now the whole school can taste it, which isn't taste. That's a room agreeing before anybody has chewed anything."
 
 "You can taste it though. Everyone can taste it, that's the whole point."
 
@@ -2367,7 +2367,7 @@ Kavi is on their comms in under thirty seconds."It's AES-256," he says."But, it'
 
 "Because the box says AES-256," Kavi says. "The box always says AES-256."
 
-Ruth reads over his shoulder, "They're probably actors. No, they're almost certainly actors, look at this. This is a consumer handset with a default code. My dad's work has better than this and my dad sells insurance."
+Ruth reads over his shoulder, "They're almost certainly actors, look at this. This is a consumer handset with a default code. My dad's work has better than this and my dad sells insurance."
 
 "I know," Kavi says. “The problem is that they barely talk. Two transmissions in six minutes, both of them position checks, and neither one says a word about what they came for.”
 
@@ -2387,7 +2387,7 @@ The plan takes Sam ninety seconds and he is defending it before he's finished de
 
 "Because the other way's open ground, Ruth, I just said —"
 
-"You said they'd take the stairs. You didn't say why. That's a bad plan," Ruth says.
+"You said they'd take the stairs. You didn't say why. That's a bad plan, Sam," Ruth says.
 
 "It's not a bad plan."
 
@@ -2395,7 +2395,7 @@ The plan takes Sam ninety seconds and he is defending it before he's finished de
 
 "Noted," Sam says. "It's still the plan. Anybody got a better one in the next thirty seconds?"
 
-“The problem with the plan is that it needs the four men to move in a direction, and nobody knows what they came for, so nobody knows where they're going. They have to choose," Chloe says. "Somebody has to be in front of them. I'll do it."
+“If you don't know what somebody's here for, you don't know which way they're going to move. That's the whole problem with the plan. They have to choose," Chloe says. "Somebody has to be in front of them. I'll do it."
 
 "You'll get grabbed."
 
@@ -2475,7 +2475,7 @@ The four of them are dressed like a maintenance crew. Dark work trousers, plain 
 
 "They shouldn't run it at four in the morning without telling us," Ruth says, to nobody in particular. "Four's fine, Four's happened, as long as They tell you."
 
-"They did it because we've been getting good," Kavi says.
+"Escalation. We've been good." Kavi says.
 
 "That's not a reason. It's four in the morning," she says again, and she puts her head back against the wall.
 
@@ -2745,7 +2745,7 @@ Dinner is ten or twelve of them at the long table by the window and has been sin
 
 Eli puts a cipher on the table one Thursday, between the salt and the water jug, written out on a napkin.
 
-"Four hours, that one took me. Anybody want to do better than four hours?"
+"Four hours, that one took me. Somebody beat that."
 
 "Where did you get it from?"
 
@@ -2759,7 +2759,7 @@ Nadia turns the napkin round toward Chloe with one finger.
 
 "It could be a date."
 
-"It's got a letter in the middle of it." Nadia keeps her finger on the napkin. "What do you think it is?"
+"It's got a letter in the middle of it." Nadia keeps her finger on the napkin. "You know what it is."
 
 "I don't know yet."
 
@@ -2767,7 +2767,7 @@ Nadia turns the napkin round toward Chloe with one finger.
 
 "I don't."
 
-"You've had your hand over that corner since Kavi passed it." Nadia sits back. "You always do that when you've got it and you don't want to say it in front of everybody."
+"You've had your hand over that corner since Kavi passed it." Nadia sits back. "You always do that. You've got it. You don't want to say it in front of everybody."
 
 Chloe takes her hand off the napkin and puts it in her lap. Sam starts saying something about the salt. At half past nine there are six opinions at that table and nobody has moved off any of them.
 
@@ -2833,7 +2833,7 @@ Kavi catches up with Chloe on the path afterward, walking backward with his kit 
 
 "They might leave it at clays."
 
-Shaking his head, "Nah, They have moved everything, every year, school doesn’t stay the same, it gets harder over time."
+Shaking his head, "Nah. It escalates every year."
 
 ---
 
@@ -2919,7 +2919,7 @@ The forge stays where it has been. She finishes a set of three hinges in Novembe
 
 Sam asks out a girl in the year below in October, and the table has an opinion on it inside a week.
 
-"At breakfast." Priya has both hands flat on the table. "In the queue. Holding a tray. In front of about forty people."
+"At breakfast." Priya has both hands flat on the table. "In the queue, holding a tray, and in front of about forty people."
 
 "How did he actually ask her?"
 
@@ -2941,7 +2941,7 @@ Winter break, second night. Her mother is standing at the end of the table with 
 
 "On the rifle. The bit the shell comes out of." Chloe reaches past her for the beans.
 
-Her mother's hands stop on the dish. "You're shooting rifles."
+Her mother's hands stop on the dish. "You're shooting rifles?"
 
 "Yeah, since September." Chloe nods at her plate and keeps going. "Anyway, so she's showing everybody this scar and Kavi tells her that if she'd held it an inch lower she'd have—"
 
@@ -2967,7 +2967,7 @@ All of it started around September. All of it went past this table in silence, a
 
 "What in God's name is clays?"
 
-Her father is looking at his plate. "You knew," her mother says.
+Her father is looking at his plate. "You knew?" her mother says.
 
 "She said something on the phone in October."
 
@@ -2977,7 +2977,7 @@ Her father is looking at his plate. "You knew," her mother says.
 
 "And you didn't think to tell me?"
 
-"I thought you knew." He keeps his eyes down. "I thought you knew and it was fine."
+"I thought you knew." He keeps his eyes down. "I thought it was fine."
 
 Her mother sets the dish down in the middle of the table, straightens it with two fingers, and goes into the kitchen. She stays in there. Her father moves the salt two inches, puts it back, then gets up and starts stacking plates that nobody has finished with.
 
@@ -3063,7 +3063,7 @@ Self defence is still ten of them on one with a minute on the clock, three round
 
 The bad one is a Tuesday in November, first round, and she comes out of the middle at thirty-eight. She is on her feet before they call it, but she has the number already.
 
-"First one's always short," Kavi says, from the line. "You'll have it back by the third."
+"First one's always short," Kavi says, from the line. "It recovers by the third."
 
 She gets forty on the second and thirty-nine on the third. Afterward she stands at the edge of the mat with her wraps still on, going through it again with her thumb working at the tape. Odile asks her something on the way out and she answers it badly, and she has to go and find her at dinner and say it properly.
 

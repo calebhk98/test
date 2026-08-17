@@ -42,7 +42,7 @@ Kavi catches up with Chloe on the path afterward, walking backward with his kit 
 
 "They might leave it at clays."
 
-Shaking his head, "Nah, They have moved everything, every year, school doesn’t stay the same, it gets harder over time."
+Shaking his head, "Nah. It escalates every year."
 
 ---
 
@@ -128,7 +128,7 @@ The forge stays where it has been. She finishes a set of three hinges in Novembe
 
 Sam asks out a girl in the year below in October, and the table has an opinion on it inside a week.
 
-"At breakfast." Priya has both hands flat on the table. "In the queue. Holding a tray. In front of about forty people."
+"At breakfast." Priya has both hands flat on the table. "In the queue, holding a tray, and in front of about forty people."
 
 "How did he actually ask her?"
 
@@ -150,7 +150,7 @@ Winter break, second night. Her mother is standing at the end of the table with 
 
 "On the rifle. The bit the shell comes out of." Chloe reaches past her for the beans.
 
-Her mother's hands stop on the dish. "You're shooting rifles."
+Her mother's hands stop on the dish. "You're shooting rifles?"
 
 "Yeah, since September." Chloe nods at her plate and keeps going. "Anyway, so she's showing everybody this scar and Kavi tells her that if she'd held it an inch lower she'd have—"
 
@@ -176,7 +176,7 @@ All of it started around September. All of it went past this table in silence, a
 
 "What in God's name is clays?"
 
-Her father is looking at his plate. "You knew," her mother says.
+Her father is looking at his plate. "You knew?" her mother says.
 
 "She said something on the phone in October."
 
@@ -186,7 +186,7 @@ Her father is looking at his plate. "You knew," her mother says.
 
 "And you didn't think to tell me?"
 
-"I thought you knew." He keeps his eyes down. "I thought you knew and it was fine."
+"I thought you knew." He keeps his eyes down. "I thought it was fine."
 
 Her mother sets the dish down in the middle of the table, straightens it with two fingers, and goes into the kitchen. She stays in there. Her father moves the salt two inches, puts it back, then gets up and starts stacking plates that nobody has finished with.
 

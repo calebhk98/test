@@ -54,7 +54,7 @@ The bread comes up in Ruth's room on a Tuesday, with the four of them on the flo
 
 "The Wednesday bread's better."
 
-"It is not better, Sam." Ruth has a book open on her knees and does not look up from it. "Same flour, same ovens, same people. The only thing different about a Wednesday is that it's a Wednesday. Two hundred of us have talked each other into it. Somebody said it in third grade, and now the whole school can taste it, which isn't taste. That's a room agreeing before anybody has chewed anything. It's mass hysteria with butter on."
+"It is not better, Sam." Ruth has a book open on her knees and does not look up from it. "Same flour, same ovens, same people. The only thing different about a Wednesday is that it's a Wednesday. Two hundred of us have talked each other into it. Somebody said it in third grade, and now the whole school can taste it, which isn't taste. That's a room agreeing before anybody has chewed anything."
 
 "You can taste it though. Everyone can taste it, that's the whole point."
 
@@ -164,7 +164,7 @@ Kavi is on their comms in under thirty seconds."It's AES-256," he says."But, it'
 
 "Because the box says AES-256," Kavi says. "The box always says AES-256."
 
-Ruth reads over his shoulder, "They're probably actors. No, they're almost certainly actors, look at this. This is a consumer handset with a default code. My dad's work has better than this and my dad sells insurance."
+Ruth reads over his shoulder, "They're almost certainly actors, look at this. This is a consumer handset with a default code. My dad's work has better than this and my dad sells insurance."
 
 "I know," Kavi says. “The problem is that they barely talk. Two transmissions in six minutes, both of them position checks, and neither one says a word about what they came for.”
 
@@ -184,7 +184,7 @@ The plan takes Sam ninety seconds and he is defending it before he's finished de
 
 "Because the other way's open ground, Ruth, I just said —"
 
-"You said they'd take the stairs. You didn't say why. That's a bad plan," Ruth says.
+"You said they'd take the stairs. You didn't say why. That's a bad plan, Sam," Ruth says.
 
 "It's not a bad plan."
 
@@ -192,7 +192,7 @@ The plan takes Sam ninety seconds and he is defending it before he's finished de
 
 "Noted," Sam says. "It's still the plan. Anybody got a better one in the next thirty seconds?"
 
-“The problem with the plan is that it needs the four men to move in a direction, and nobody knows what they came for, so nobody knows where they're going. They have to choose," Chloe says. "Somebody has to be in front of them. I'll do it."
+“If you don't know what somebody's here for, you don't know which way they're going to move. That's the whole problem with the plan. They have to choose," Chloe says. "Somebody has to be in front of them. I'll do it."
 
 "You'll get grabbed."
 
@@ -272,7 +272,7 @@ The four of them are dressed like a maintenance crew. Dark work trousers, plain 
 
 "They shouldn't run it at four in the morning without telling us," Ruth says, to nobody in particular. "Four's fine, Four's happened, as long as They tell you."
 
-"They did it because we've been getting good," Kavi says.
+"Escalation. We've been good." Kavi says.
 
 "That's not a reason. It's four in the morning," she says again, and she puts her head back against the wall.
 

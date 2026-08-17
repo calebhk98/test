@@ -254,13 +254,13 @@ Ruth goes to MIT.
 Nadia doesn't go anywhere. She spends two months looking at jobs and comes out of it baffled.
 
 
-"They all put labor under costs," she says.
+"My mother knocked ten dollars off her own hours last week," she says.
 
 
 "It is a cost."
 
 
-"It's a resource. It's the only one that gets better on its own." She's got about nine tabs open. "And nobody's building anything for actual people. Everything's built for other companies to buy. Who's making the thing a person uses?"
+"That's not a cost. That's the one thing in the shop that gets better every year." She's got about nine tabs open. "Nobody's building the thing that would've caught her price before she quoted it. Who's building that?"
 
 
 Nobody in the chat has a good answer, and by June she's started something, and by September she's hiring.
@@ -311,7 +311,7 @@ eli: i cant find the rules anywhere on the site but hes my boss so
 sam: how many have you found
 
 
-eli: 2. one of them is kind of a cheat though so idk if it counts
+eli: 2. one of them is kind of a cheat.
 
 
 kavi: does it stack
@@ -456,7 +456,7 @@ kavi: you tell people theyre exceptional early so they work harder and dont leav
 eli: so its fake
 
 
-kavi: its not fake exactly, its just not information
+kavi: not fake. not informative.
 
 
 ________________
@@ -750,7 +750,7 @@ Sam takes that as an invitation, and this is the moment he has been waiting four
 So he says the right thing.
 
 
-"Accuracy is whether you can put a round into another round," Sam says. "In flight. On the count, opposite lanes, you both fire on the same beat. I'm at about forty percent and that's poor, there are people I went to school with at ninety. That's the number that means something." He nods at the rifle. "A gun you can't stop a projectile with isn't a tool. It's a weapon. Anyone can carry a weapon."
+"Accuracy is whether you can put a round into another round," Sam says. "In flight. On the count, opposite lanes, you both fire on the same beat. I'm at about forty percent and that's poor, there are people I went to school with at ninety. That's the number that means something." He nods at the rifle. "So I'm forty percent of a rifle."
 
 
 There's a silence.

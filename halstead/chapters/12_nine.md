@@ -28,7 +28,7 @@ Sam looks up with a fork in his hand.
 
 "I liked dance and I was good at dance, and I'm going to keep saying it."
 
-"You were good at dance," Ruth says, without looking up from her book, "which is why you liked it, and if you'd been ninetieth you'd be up there on the table with her."
+"You were good at dance," Ruth says, without looking up from her book, "which is why you liked it, Sam, and if you'd been ninetieth you'd be up there on the table with her."
 
 Chloe does one more lap of the table before she sits down, and Ruth turns a page without commenting on any of it.
 
@@ -54,7 +54,7 @@ Statistics turns out to be an hour of somebody taking a number apart in front of
 
 "It's got eleven people in it, Kavi. Eleven."
 
-"So it's a small result and you round it down."
+"Small result. Round it down."
 
 "It's not a small result, it's the same size result you'd get out of eleven people if there was nothing there at all, which is the entire—" Chloe stops, because Sam has put his hands over his ears and started humming. "We're nearly done."
 

@@ -72,7 +72,7 @@ Self defence is still ten of them on one with a minute on the clock, three round
 
 The bad one is a Tuesday in November, first round, and she comes out of the middle at thirty-eight. She is on her feet before they call it, but she has the number already.
 
-"First one's always short," Kavi says, from the line. "You'll have it back by the third."
+"First one's always short," Kavi says, from the line. "It recovers by the third."
 
 She gets forty on the second and thirty-nine on the third. Afterward she stands at the edge of the mat with her wraps still on, going through it again with her thumb working at the tape. Odile asks her something on the way out and she answers it badly, and she has to go and find her at dinner and say it properly.
 

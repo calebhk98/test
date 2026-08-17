@@ -82,7 +82,7 @@ Later, in the kitchen, with the door mostly shut:
 "They've got a woman who swam in the Olympics."  
 "Okay." Her mom says it the way she says okay when she is waiting for the rest of a sentence.  
 "They've got a guy who was a SEAL. An actual one, not a guy who says it at parties. Half of them have two master's degrees. There's one of them, I know the name, he wrote a paper my whole department read. People printed it out. Kathy printed it out and left it on my chair."  
-"So it's real."  
+"So it's real?"  
 "The school's four years old, Meg. It says so on the page about the school."  
 "So?"  
 "So how does a four-year-old school get that guy. What does it pay him. With what."  

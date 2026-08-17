@@ -128,7 +128,7 @@ She isn't talking to anybody. It's out of her before she has hold of any of it.
 
 "What was that, Chloe?"
 
-"Because you won't be you." She can hear herself still going and she goes anyway. "You'll be somebody three years older who doesn't remember doing this, so it's like sending a package to a person you've never met. Except it's got your name on the front of it, so they have to open it, and they never asked for it."
+"Because you won't be you." She can hear herself still going and she goes anyway. "You'll be somebody three years older. You won't remember doing this. It's like sending a package to a person you've never met. Except it's got your name on it. So they have to open it. They never even asked for it."
 
 Kayleigh Burns has turned around in her chair.
 
@@ -202,7 +202,7 @@ In the first week of October, Chloe puts her head down on her desk in the middle
 
 She isn't quiet about it. Ms. Vance comes down the row and crouches all the way down beside the desk, in front of everybody, and puts a hand flat on Chloe's back and leaves it there.
 
-"Hey, Hey, What's going on?"
+"Hey, hey, what's going on?"
 
 Chloe can't get anything out.
 

@@ -18,7 +18,7 @@ Reading is not like that. She reads the cereal box in the morning, both sides. S
 "Then you'd have four."  
 "But I would have had six." Chloe has both hands flat on the desk now, up on her toes to see over it.  
 "You'd have had four at a time." The librarian is stamping cards while she says it and doesn't look up. "That's what the rule is about. Four at a time."  
-"The rule is about at a time, though. So six is fine, because it's still four at a time, it's just four and then four again, and two of them are ones you already gave me."  
+"The rule is about at a time, though. So six is fine. It's still four at a time. It's just four, and then four again. Two of them you already gave me."  
 The librarian looks up at her and holds the stamp in the air for a second. "How old are you?"  
 "Six," Chloe says.  
 "Four," the librarian says, and goes back to stamping. "The new ones come in Thursday morning. They sit on the cart before I shelve them. Come in Thursday and you can go through the cart first."  
@@ -29,7 +29,7 @@ At dinner in September she talks about a book for the entire dinner. It's about 
 "Where'd she get a ticket?" her dad says. He has stopped eating and he is doing the thing where he asks questions he already knows the answer to.  
 "Her brother. That's the whole thing, that's why she brings him. He saves his money and she spends all of hers, so she can't run away by herself. She has to bring him because he's the one with the money, and he knows it, and he's kind of a jerk about it for like the first half."  
 "And then he stops being a jerk about it." Her mom is not really listening anymore, and Chloe knows it, and keeps going.  
-"No. He gets worse and then he stops." Chloe puts her fork down. "He gets worse because she starts being fine without him. Like she figures out the food thing and where the bathroom with the couch in it is, and once she can do all that she doesn't need his money as much, and he can tell. So he gets meaner right at the part where she stops needing him, which is backwards, except it isn't, because that's exactly when you would."  
+"No. He gets worse and then he stops." Chloe puts her fork down. "He gets worse because she starts being fine without him. Like she figures out the food thing and where the bathroom with the couch in it is, and once she can do all that she doesn't need his money as much, and he can tell. So he gets meaner right when she stops needing him. That's backwards. Except it isn't. That's exactly when you would."  
 "Eat something," her mom says.  
 Chloe eats something. "And then she likes having him there, but she never says it. You just know."  
 "How do you know if she doesn't say it?"  

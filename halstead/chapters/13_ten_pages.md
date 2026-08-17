@@ -38,11 +38,11 @@ The 10v1 starts in January.
 
 "Eleven of you at a time. One in the middle, ten on them, a minute on the clock." Kowalczyk has the clock in her hand. "Two or three rounds a class. The rest of the hour is what you've been doing since September, because that doesn't stop."
 
-"Why ten?" Sam says.
+"Ten's a lot." Sam says.
 
 "Five people can reach you at once. Six if they're good, seven if you're standing badly, and after that there's no room for anybody, they'd be pushing each other over." She holds a hand up flat and turns it. "So ten is five on you and five waiting for the first five to get tired. More than ten and they're queuing."
 
-"Why a minute?"
+"A minute's a long time."
 
 "Because you'll be tired before they are." She sets the clock. "And because ten is the shape of every long fight there is. A hundred on one is a 10v1 that goes on longer, and there's nothing in the hundred that isn't already in the ten. If you can hold a minute against ten you've got five capable ones left, and five is a fight you can have."
 
@@ -74,7 +74,7 @@ Chloe stops.
 
 "What?"
 
-"We're all reacting and you can't react to it, there isn't time to react to it, you have to already be there." She is up on her knees with both hands out. "It's a barrel, Ruth. It's a barrel on the end of a person, and it's pointing where the ball's going before the ball goes anywhere, and they all shoot at the same speed. So you don't need the ball. The ball's the last thing that happens. You watch the barrel and the feet, you work out where it's going to be, and then you're already moving when he shoots."
+"We're all reacting and you can't react to it, there isn't time to react to it, you have to already be there." She is up on her knees with both hands out. "If you're standing behind someone holding a hose, you don't watch the water. You watch where the hose is pointing before anything comes out of it. It's the same barrel, Ruth. It's pointed at where the ball's going before the ball goes anywhere, and everyone's shooting at the same speed. Watch the barrel and the feet. Move before he shoots."
 
 "That's not what she told us."
 

@@ -26,7 +26,7 @@ ruth: what did he do when it didnt work
 nadia: tried three more and then went and did the cleaning
 
 
-eli: did you fire him
+eli: so hes fired
 
 
 nadia: obviously i fired him, he came here to steal from me
@@ -94,7 +94,7 @@ ruth: thats a hiring pool problem. youre a startup, the good ones are elsewhere
 nadia: yeah
 
 
-nadia: yeah probably
+nadia: yeah. doesnt feel right though
 
 
 ________________
@@ -462,7 +462,7 @@ ruth: institutions dont have gaps like that. committees dont get flu
 ruth: second thing. every decision in this, for twenty years, lands in the same seven hour band. the band doesnt move when the money moves countries. it moves about forty minutes total, gradually, over two decades
 
 
-kavi: thats a person getting older
+kavi: thats aging
 
 
 ruth: thats a person getting older
@@ -503,7 +503,7 @@ sam: twenty years and were the first people to look? that cant be right
 nadia: somebody has to have looked
 
 
-kavi: who though. you need a reason to care and the money to chase it
+kavi: who though. needs motive and funding.
 
 
 nadia: the government tracks everything. if anyone has a file its them
@@ -521,7 +521,7 @@ theo: nobody repeats any of this. i mean it. this is so far above me that i shou
 theo: theyve had a file on the school for nineteen years
 
 
-theo: they think its a state or a company. theyve been wrong twice and theyre still wrong
+theo: they think its probably a state or a company. theyve been wrong twice and theyre still wrong
 
 
 theo: they put a man on staff when we were eleven and we spotted him in a day
@@ -539,7 +539,7 @@ theo: i said dont repeat it, i didnt say it was small
 chloe: theo that was a drill
 
 
-theo: it wasnt a drill
+theo: it wasnt a drill. i read the file.
 
 
 ________________

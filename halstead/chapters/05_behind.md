@@ -96,7 +96,7 @@ Sam looks at the table for a second.
 "Right."  
 "But I'd say you were doing it on purpose."  
 "That's my whole thing," Chloe says.  
-"That is the worst thing anybody has ever said," Kavi says, to Sam, about Sam.  
+"The worst," Kavi says, to Sam, about Sam.  
 "The word is tidally locked." Ruth has stopped eating for this. "It isn't stuck and it isn't on purpose. It got slowed down until it matched. It used to spin, and then it stopped spinning, over a really long time, because of us."  
 "Okay, but that's how it got that way," Chloe says. "I'm talking about what it's doing now."  
 "Those are the same thing."  

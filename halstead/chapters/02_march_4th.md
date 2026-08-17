@@ -78,8 +78,8 @@ Ben looks at her for a second longer than he has looked at her all morning.
 Then he talks to her mom, and Chloe waits in the hall on a chair that's too tall for her feet, holding her jacket in her lap because there isn't anywhere else to put it.  
 The door is open a few inches.  
 She doesn't get all of it. She hears her mom say the teacher says. She hears Ben say a lot of words she doesn't have. Then a piece of it comes through clean, because he's turned toward the door.  
-"I'm not seeing what the school is seeing. I think she finishes in the first two minutes and then she's got thirty-eight minutes left over and nowhere to put them."  
-"So there's nothing wrong with her."  
+"I'm not seeing what the school is seeing. She finishes in the first two minutes and then she's got thirty-eight minutes left over and nowhere to put them."  
+"So there's nothing wrong with her?"  
 "There's nothing wrong with her."  
 Her mom makes a sound. Chloe can't tell what kind it is from out here. It could be either kind.  
 "There are a couple of things where she's slower than most kids her age, and the biggest one is copying. Hand-and-eye. That part's real, you'll see it in her handwriting for years, and it's also not what anybody in that building is calling you about. Nobody's calling you about handwriting."  
@@ -88,7 +88,7 @@ Her mom makes a sound. Chloe can't tell what kind it is from out here. It could 
 "So what number do I get?"  
 "A good one. Not the one that would make somebody move."  
 "Then what do I do?"  
-"Honestly? The lever here is the school, because that's where the forty minutes are. I can write it all up and you can walk it in there, and some of them do move on a report like that."  
+"The lever here is the school, because that's where the forty minutes are. I can write it all up and you can walk it in there, and some of them do move on a report like that."  
 "And the rest of them?"  
 "The rest of them put it in the folder." He says it without any particular feeling about it. "Is there a gifted program?"  
 "It starts in third grade."  
