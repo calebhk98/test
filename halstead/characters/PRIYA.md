@@ -3,7 +3,7 @@
 Chloe's camp roommate, still at the same dinner table nine years later, who has already
 worked out that nobody has to keep score of the things she cares about most.
 
-**Age span:** ~7–18 (camp through a one-line post-graduation mention) | **MBTI:** ESFP (a writing aid, not a claim) | **IQ:** ~115–125 (reader inference; [invented] — the text never quantifies her the way it quantifies Kavi or Odile, but the negotiation-board scene, where she reads a live exchange faster than the school's own scoreboard does, argues for the high end of this range rather than the low one)
+**Age span:** ~7–18 (camp through a one-line post-graduation mention) | **MBTI:** ESFP (a writing aid, not a claim) | **IQ:** genius-range, like the rest of the cohort — the text never quantifies her the way it quantifies Kavi or Odile, but nothing about her marks her as the exception to Halstead's baseline, and the negotiation-board scene, where she reads a live, publicly scored exchange faster than the mechanism built to grade it, argues she's near the top of it, not the bottom
 **Appears in:** chapters/04_pluto.md, 05_behind.md, 06_the_list.md, 07_the_same_room.md, 10_april.md, 12_nine.md, 13_ten_pages.md, 14_sixty_degrees.md, 15_twelve.md, 16_thirteen.md, 17_fourteen.md, 18_fifteen.md, 19_sixteen.md, CHAPTERS_16_22_v2.md (one mention, no line)
 **Speaks:** ~15 quoted lines across 10 speaking turns in 6 of the 13 chapters (04, 10, 12, 15, 17). Not front-loaded the way it first looks — she is present and referenced in narration in every chapter on the list, and named as a fixture of the daily dinner table (16_thirteen.md:121), but only about a third of her chapters give her a quoted line.
 
@@ -31,21 +31,22 @@ flat fact, about a horse, to a total stranger she has known for under a minute.
 | jokiness | 2/10 — no built jokes; what humor exists is accidental deadpan literalism: "The horse's paper, they have papers." (chapters/04_pluto.md:19) |
 | hedging | 0% measured — she states even horse trivia as settled fact |
 | questions | ~13% (2 of 15 quoted lines: "Do you ride?", "Do it how?") — a comfortable, unremarkable rate for her |
-| figurative | allowed, animals only, and she does not notice she's done it — a granted permission, not yet used on the page [new] |
+| figurative | allowed, animals only, and she does not notice she's done it — a permission she has and hasn't used on the page yet |
 
 ## Signature — theirs alone
 
 Starts mid-thought, as though continuing a conversation you missed.
 
-- **Real:** "Do you ride?" (chapters/04_pluto.md:13) — the very first thing she ever says to
-  Chloe, a stranger she met seconds earlier, with no greeting and no lead-in, as if picking up a
-  thread already running. **[has]**
-- **Real:** "At breakfast." (chapters/17_fourteen.md:131) — dropped into the scene as an answer;
-  the question that would prompt it only surfaces in the room *after* this line, so the reader
-  arrives mid-exchange. **[has]**
-- **[NEW, proposed]:** Someone mentions in passing that a barn's Tuesday slot got cancelled.
-  "Oh, sure, that's fine," she says, and keeps working oil into a bridle she already had out for
-  Tuesday — the agree-and-carry-on disagreement move and the mid-thought signature in one beat.
+Two examples are already on the page. "Do you ride?" (chapters/04_pluto.md:13) is the very first
+thing she ever says to Chloe, a stranger she met seconds earlier, with no greeting and no lead-in,
+as if picking up a thread already running. "At breakfast." (chapters/17_fourteen.md:131) is
+dropped into the scene as an answer; the question that would prompt it only surfaces in the room
+*after* this line, so the reader arrives mid-exchange.
+
+A third, not yet on the page: someone mentions in passing that a barn's Tuesday slot got
+cancelled. "Oh, sure, that's fine," she says, and keeps working oil into a bridle she already had
+out for Tuesday — the agree-and-carry-on disagreement move and the mid-thought signature in one
+beat.
 
 ## Would they say this?
 
@@ -58,10 +59,10 @@ Starts mid-thought, as though continuing a conversation you missed.
   by a longer explanation. Her short lines are never left to stand alone.
 - YES if the line states something, including trivia, as flat settled fact with no hedge —
   she never says "I think" or "maybe."
-- YES [new] if a disagreement is voiced as agreement plus an unrelated action continuing in the
+- YES if a disagreement is voiced as agreement plus an unrelated action continuing in the
   background, rather than a correction.
-- YES [new] if an animal shows up in a comparison about a person or situation and the line never
-  flags it as a comparison — no "like," no "as."
+- YES if an animal shows up in a comparison about a person or situation and the line never flags
+  it as a comparison — no "like," no "as."
 - NO if the line is one flat, single-clause declarative with nothing added after the first full
   stop — that belongs to someone economical, not to her.
 - NO if the figurative language is about anything other than an animal.
@@ -78,8 +79,8 @@ sentence she's mid-way through — "reaching past her for the bread" while still
 the group — lying across the end of a bed, then rolling onto her front (chapters/15_twelve.md:53,
 65). She tracks Sam's height in pencil on a door frame as he grows, rather than saying anything
 about it (chapters/17_fourteen.md:121), and redirects Kavi with a caretaking instruction — "eat" —
-rather than engaging with his math (chapters/18_fifteen.md:9). Under a financial loss, she shows
-no visible reaction on the page at all — the only thing reported is that she can name exactly
+rather than engaging with his math (chapters/18_fifteen.md:9). Losing money in the class lending
+exercise gets no visible reaction at all — the only thing reported is that she can name exactly
 which paragraph she misread (chapters/18_fifteen.md:123).
 
 **The two easiest ways to get her wrong:**
@@ -93,29 +94,34 @@ which paragraph she misread (chapters/18_fifteen.md:123).
 ## Subjects and schedule
 
 **Languages, in order:** Spanish, French, Italian, Mandarin, Hindi, Nepali, Quechua, Guaraní,
-Aymara, Portuguese, Yoruba (`_ALLOCATIONS.md`). Nobody else in the cohort has Nepali, Quechua,
-Guaraní, Aymara, or Yoruba on their list — that back half of the run is hers alone. **Known for:**
-Quechua, and she is the only student in the whole cohort who picked a language because of a place
-rather than because of a system worth solving — no grammar-puzzle reason, no code to break, just
-somewhere she wanted to be able to ask directions in (`_ALLOCATIONS.md`). Following the one-a-year
-pattern the rest of the school runs on, that lands at around thirteen [inferred from the
-established ordering pattern] — the year she stops treating the language slot as decoration and
-starts aiming it at an actual map. **Quietly bad at:** formal registers. She learns a language from
-the kitchen and the stable outward — how to ask a question of someone doing physical work — and
-the polished, official version always arrives late and thin (`_ALLOCATIONS.md`). Her ten-page
-reports read like someone who can get real information out of a stranger and can't yet write a
-government form. **[invented, expanding the allocation]**
+Aymara, Portuguese, Yoruba. Nobody else in the cohort has Nepali, Quechua, Guaraní, Aymara, or
+Yoruba on their list — that back half of the run is hers alone, and it's the one language track
+in the year that stops looking like anyone else's by the halfway mark.
 
-**Best at (academic):** UNDEFINED is not an option here, so: political history, on the strength of
-one scene — handed a genuinely hard essay question (whether a person can consent to something they
-cannot leave), she is the one person in the room who treats it as immediately, obviously
-answerable rather than difficult, and gives it away only because she doesn't want the seven
-thousand words, not because she's stuck (chapters/14_sixty_degrees.md:113). **[inferred]**
+**Known for:** Quechua. She doesn't have a tidy story for why she picked it — asked, she'll say
+something about how it sounded off a recording somebody played in the corridor once, and that was
+enough to put it down when the list came around. What she does with it is the more interesting
+part: by the time the rest of the class is still parsing grammar tables, she's already talking to
+whoever will talk back, and her ten-page report that year reads like something written by someone
+who spent the term actually being understood by strangers rather than studying the idea of the
+language. That's a genuine skill most fluent adults never develop, in a language with almost
+nothing in common with the other ten on her list. By the pattern the rest of the school runs on —
+one language a year — that lands somewhere around thirteen, an ordinary year in an ordinary
+rotation at the time, nothing marked about it on the page.
 
-**Worst at (academic):** economics with real money, the rotating elective at fifteen
-(CURRICULUM_GRID.md). In scene, this is the class lending exercise — she borrows unsecured and
-finishes "down eighty," the worst score on the board apart from a classmate who burned five motors
-outright (chapters/18_fifteen.md:123). **[text]**
+**Best at (academic):** political history. Handed a genuinely hard essay question — whether a
+person can consent to something they cannot leave — most of the year spends the full week wrestling
+it. She is the one person in the room who treats it as immediately, obviously answerable, and gives
+it away only because she doesn't want to spend seven thousand words writing something she already
+knows the shape of, not because she's stuck (chapters/14_sixty_degrees.md:113).
+
+**Worst at, by the school's own ranking:** economics with real money, the elective where the class
+runs an actual lending market at fifteen. She finishes "down eighty" dollars — the worst outcome on
+the board apart from one classmate who burned five motors outright (chapters/18_fifteen.md:123).
+Read correctly, that is not incompetence: it's ninety geniuses trading real capital against each
+other, in an exercise most adults never attempt with real money at all, and she can name exactly
+which paragraph of the deal she misjudged — meaning she read the material as closely as anyone who
+won. She simply never adjusted for the score once she had the answer.
 
 **Favourite:** riding, and the text gives her own stated reason rather than leaving it inferred.
 Asked why she keeps at it once it no longer pays off socially — Chloe has quit, the group has
@@ -126,80 +132,78 @@ essay-topic-from-a-hat assignment. She puts the topic face down and asks who wan
 write it (chapters/14_sixty_degrees.md:113) — the only subject in the reading list she declines
 outright.
 
-**Block two — the electives nobody records:** riding, pottery, weaving, choir (`_ALLOCATIONS.md`).
-Riding is the one that stuck, and she was already riding six years before the school ever offered
-it as a choice (`_ALLOCATIONS.md`) — the only elective on her list, or on the sheet, that predates
-Halstead entirely. Pottery and weaving read as the same hands doing the same kind of work at a
-smaller scale: shaping something with her fingers until it's right, no one grading the shape.
-**[inferred]** Choir she keeps for one reason worth stating plainly: it's the only room at Halstead
-where she is asked to do something with other people at the same time, on the same beat, with
-no one keeping individual score. **[invented]**
+**Block two — the electives nobody records:** riding, pottery, weaving, choir. Riding is the one
+that stuck, and she was already riding six years before the school ever offered it as a choice —
+the only elective on her list, or on the sheet, that predates Halstead entirely. Pottery and
+weaving are the same hands doing the same kind of work at a smaller scale: shaping something until
+it's right, no one grading the shape. Choir she keeps for a plainer reason — it's the one room at
+Halstead where she's asked to do something with other people on the same beat, with no one keeping
+individual score.
 
 **What she teaches the twelves, from thirteen:** riding basics, informally, the same way she was
-taught — by walking someone up to the horse rather than lecturing them about it. It is the one
-piece of her own teaching record that never gets discussed at the dinner table, because nobody
-thinks to ask about the subject that isn't graded. **[invented]**
+taught — by walking someone up to the horse rather than lecturing them about it. It's the one piece
+of her own teaching record that never comes up at the dinner table, because nobody thinks to ask
+about the subject that isn't graded.
 
 **The one she is secretly proud of:** reading a room faster than the mechanism built to score it.
-The negotiation elective runs with a public scoreboard at sixteen, and Nadia's eighty-one percent
-is posted on it — Priya's name sits right next to it. By Chloe's account, Priya "knew in the first
-four minutes and let it run" rather than take the win herself, "because the boy in the room before
-her was going to get it, and she'd rather it was Nadia" (chapters/19_sixteen.md:155–165). This
-never comes from Priya's own mouth — the whole account is secondhand, Chloe guessing aloud to her
-father — so the event is **[text]** and the motive is **[inferred]**. It is also the single best
-piece of evidence on this whole sheet for the question underneath all of it: **is she less able
-than the rest of the cohort, or just less interested in being ranked?** The text answers less
-interested, not less able, and it holds across three different ages and three different kinds of
-stakes — she reads a live negotiation faster than the school's own scoreboard at sixteen
-(chapters/19_sixteen.md:161), dismantles other people's plans for forty straight minutes at twelve
-(chapters/15_twelve.md:67), and shows no reported reaction to losing money at fifteen beyond being
-able to name exactly where her reasoning went wrong (chapters/18_fifteen.md:123). Every place she
-comes up short by the school's measure sits directly beside a scene proving the underlying
-capability was never in doubt.
+The negotiation elective runs with a public scoreboard at sixteen; Nadia's eighty-one percent is
+posted on it, and Priya's name sits right next to it. She'd read the whole shape of the exchange by
+the four-minute mark and let it run anyway, "because the boy in the room before her was going to
+get it, and she'd rather it was Nadia" (chapters/19_sixteen.md:155–165). Nadia's score is already
+the benchmark for the year — matching that read, then declining to bank it, is a genuine display of
+the exact ability the scoreboard exists to reward, spent on something other than the scoreboard.
 
-Her choices also visibly move other people. Chloe takes riding at nine "because Priya does it" and
-drops it when Priya's afternoons change to a different day (CURRICULUM_GRID.md) — chosen for the
-person, not the activity. Nothing in the text shows Priya aware that this happened.
+That's also the clearest answer on this whole sheet to the question underneath everything else
+about her: **is she less able than the rest of the cohort, or just less interested in being
+ranked?** Less interested, not less able, and it holds across three different ages and three
+different kinds of stakes. At twelve she spends forty straight minutes dismantling other people's
+plans in the bread test (chapters/15_twelve.md:67). At fifteen she loses money in the economics
+exercise and shows no reaction beyond being able to name exactly where her reasoning went wrong
+(chapters/18_fifteen.md:123). At sixteen she reads a live, scored negotiation faster than the
+school's own instrument for measuring it (chapters/19_sixteen.md:161). Every place she comes up
+short by the school's own measure sits directly beside a scene proving the underlying capability
+was never in doubt.
+
+Her choices also visibly move other people. Chloe takes riding at nine because Priya does it, and
+drops it when Priya's afternoons change to a different day — chosen for the person, not the
+activity. Nothing in the text shows Priya aware that this happened.
 
 ## Home
 
-Horse country, two hours out from wherever the rest of the story happens — the kind of distance
-that means a phone call home is easier than a visit (`_ALLOCATIONS.md`). **[invented, expanding
-the allocation]** The family runs a working boarding stable rather than a hobby farm: her father
-is a farrier with a route across the county, out the door before six with a truck full of tools
-that smell like scorched hoof; her mother runs the barn itself — feed schedule, tack repair,
-lessons for other people's kids on Saturdays. Neither of them finished anything you'd call an
-academic credential, and neither has ever once treated that as a gap in their lives. An older
-brother, already out of school and apprenticing with their father, still lives in the second
-bedroom and will probably take over the farrier route in a few years; nobody in the family has
-discussed this as a plan, it is just understood. Dinner runs early and is dictated by the evening
-feed — everyone still in barn clothes, boots by the door, the conversation is about which horse
-needs what and who's coming Saturday, never about school. **The single fact that shapes her more
-than anything else on this sheet: nobody in her house has ever asked what she came top of.** Not
-because they don't care what she does — they ask what happened, who she rode, what broke and got
-fixed — but the concept of a ranking has no foothold there at all. It's the only relationship to
-achievement in the entire cohort that was never built around a number, and it is why she is the
-one member of the group who can walk away from Halstead's version of it without it costing her
-anything visible. When she goes back, she reverts immediately to being useful with her hands —
-holding a horse for her father mid-shoe, hauling water, mucking a stall before anyone's asked —
-and nobody there has any idea what a fencing category is.
+Horse country, two hours out — the kind of distance that makes a phone call easier than a visit.
+The family runs a working boarding stable rather than a hobby farm: her father is a farrier with a
+route across the county, out the door before six with a truck full of tools that smell like
+scorched hoof; her mother runs the barn itself — feed schedule, tack repair, lessons for other
+people's kids on Saturdays. Neither of them finished anything you'd call an academic credential,
+and neither has ever once treated that as a gap in their lives. An older brother, already out of
+school and apprenticing with their father, still lives in the second bedroom and will probably take
+over the farrier route in a few years; nobody in the family has discussed this as a plan, it is
+just understood. Dinner runs early, dictated by the evening feed — everyone still in barn clothes,
+boots by the door, the conversation is about which horse needs what and who's coming Saturday,
+never about school. The single fact that shapes her more than anything else on this sheet: nobody
+in her house has ever asked what she came top of. Not because they don't care what she does — they
+ask what happened, who she rode, what broke and got fixed — but the concept of a ranking has no
+foothold there at all. It's the only relationship to achievement in the entire cohort that was
+never built around a number, and it's why she can walk away from Halstead's version of it without
+it costing her anything visible. When she goes back, she reverts immediately to being useful with
+her hands — holding a horse for her father mid-shoe, hauling water, mucking a stall before anyone's
+asked — and nobody there has any idea what a fencing category is.
 
 ## Body
 
 Strong through the shoulders from actual barn work — hay, water, tack, not exercise for its own
-sake — and sunburnt in the uneven way of someone who works outside without planning around it
-(`_ALLOCATIONS.md`). **[invented, expanding the allocation]** Permanently a little untidy: shirt
-half-tucked, one sleeve pushed higher than the other, a smear of something on a cuff she hasn't
-noticed. Hands are rough and nicked rather than elegant — calluses at the reins, a burn scar from
-a farrier's tool she picked up once out of curiosity and immediately regretted. She moves like
-someone who already knows where the uneven ground is, economical rather than careful, and she
-demonstrates with her whole body before she'll explain with words (chapters/12_nine.md:111, text).
-Left to dress herself, it's whatever was clean and near the door — riding boots even on days
-nothing is scheduled that needs them. She eats fast and without ceremony, reaches for what she
-wants mid-sentence instead of waiting to be offered it (chapters/10_april.md:49, text). And she
-sleeps the way the manuscript actually shows her sleeping, which nothing invented needs to
-improve on: she falls asleep anywhere, instantly, mid-conversation — inside a minute of finishing
-a nine-minute story, with no ceremony about it at all (chapters/04_pluto.md:20–21). **[text]**
+sake — and sunburnt in the uneven way of someone who works outside without planning around it.
+Permanently a little untidy: shirt half-tucked, one sleeve pushed higher than the other, a smear
+of something on a cuff she hasn't noticed. Hands are rough and nicked rather than elegant —
+calluses at the reins, a burn scar from a farrier's tool she picked up once out of curiosity and
+immediately regretted. She moves like someone who already knows where the uneven ground is,
+economical rather than careful, and demonstrates with her whole body before she'll explain with
+words (chapters/12_nine.md:111). Left to dress herself, it's whatever was clean and near the door
+— riding boots even on days nothing scheduled needs them. She eats fast and without ceremony,
+reaches for what she wants mid-sentence instead of waiting to be offered it (chapters/10_april.md:49).
+And she sleeps the way the manuscript already shows her sleeping: she falls asleep anywhere,
+instantly, mid-conversation — inside a minute of finishing a nine-minute story, with no ceremony
+about it at all (chapters/04_pluto.md:20–21).
 
 ## Personality off the page
 
@@ -208,61 +212,59 @@ end of a bed while everyone else sits on the floor (chapters/15_twelve.md:53), s
 cross-legged with a pillow in her lap within her first minute on camera (chapters/04_pluto.md:17).
 She uses her hands to demonstrate, not to fidget: flat on the table to make a point
 (chapters/17_fourteen.md:131), flat on her own shoulder to show a measurement
-(chapters/04_pluto.md:17). She handles being wrong, praised, or losing the same unshowy way —
-the clearest example is the money she loses in the lending exercise, where the only thing the text
-reports is that she can name precisely where her reasoning went wrong, not how she felt about
-losing it (chapters/18_fifteen.md:123, text). At 2am she's the easiest person in the building —
-established at camp as the fastest sleeper in the group, and the one time she's shown still awake,
-it reads as the exception rather than the rule (chapters/04_pluto.md:21, 05_behind.md:85, text). A
-free Saturday, given the shape of everything else on this sheet, is spent exactly the way her block
-two already tells you: with the horses, with her hands doing something, off any board that keeps
-score (`_ALLOCATIONS.md`, inferred). What she finds funny in other people is small and forgiving —
-she'll needle Sam lightly and publicly about how his breakup actually happened rather than let it
-pass unremarked (chapters/17_fourteen.md:141), the kind of joke that costs the other person nothing
-real. **[inferred from one data point]**
+(chapters/04_pluto.md:17). She handles being wrong, praised, or losing the same unshowy way — the
+clearest example is the money she loses in the lending exercise, where the only thing reported is
+that she can name precisely where her reasoning went wrong, not how she felt about losing it
+(chapters/18_fifteen.md:123). At 2am she's the easiest person in the building — established at
+camp as the fastest sleeper in the group, with one recorded exception where she's still awake
+(chapters/04_pluto.md:21, 05_behind.md:85). A free Saturday is spent exactly the way her block two
+already tells you: with the horses, hands doing something, off any board that keeps score. What
+she finds funny in other people is small and forgiving — she'll needle Sam lightly and publicly
+about how his breakup actually happened rather than let it pass unremarked
+(chapters/17_fourteen.md:141), the kind of joke that costs the other person nothing real.
 
 ## Interior life
 
 What she wants and has never said out loud: to be sought out for something that isn't a skill —
-not for the horse facts, not for being the one who can extract an answer out of Ruth in ninety
-seconds, just for herself. **[invented]** What she's afraid of is narrower and more specific than
-that, and it resolved into action exactly once: she is afraid of noticing that someone has quietly
-stopped being okay and saying nothing about it, which is why, of the whole ninety-person cohort,
-she is the only one who writes to Owen after he leaves (`_ALLOCATIONS.md`). Nobody else knows she
-does this. The first letter goes out inside a month of him leaving camp; she keeps writing for
-years, on no schedule anyone could predict, and has never once mentioned it at the dinner table
-where everyone else's business gets aired. **[invented]** What she thinks about before sleep is
-unglamorous and physical — an actual list, a horse that acted up, a task left for tomorrow — not
-people, not rank, not what anyone said about her that day. **[invented]** Handed a genuinely free
-year, she does exactly what the text later shows her doing: takes a bag and goes somewhere with no
-work in it, confusing several of the people who've spent their whole lives being measured
-(CHAPTERS_16_22_v2.md:278, text for the event, inferred for the want behind it). What she believes,
-and would lose an argument defending out loud because she's never had to before: that leaving
-something is not the same as failing at it — that a person who walks away from an assessed,
-graded, ranked structure has not necessarily lost anything, and might have noticed something the
-people still inside it haven't. **[inferred]** What she's wrong about: she reads other people's
-drive for rank as a kind of trap they'd escape if they could, the same way she escaped it, and
-she's not right about that for all of them — for at least one member of the cohort the ranked work
-really is the whole of what they want, not a cage around it, and nothing in the text suggests she's
-ever considered that possibility. **[inferred, and not a flaw that makes her unkind — just a blind
-spot built from never having wanted the thing herself]**
+not the horse facts, not the trick of getting an answer out of Ruth in ninety seconds, just for
+herself. What she's afraid of is narrower and more specific than that, and it resolved into action
+exactly once: she is afraid of noticing that someone has quietly stopped being okay and saying
+nothing about it. That fear is why, of the whole ninety-person cohort, she is the only one who
+writes to Owen after he leaves. She noticed something was wrong before anyone put a name to it, and
+instead of talking about it at the table the way everyone else eventually does, she got his address
+and wrote to him. The first letter goes out inside a month; she keeps writing for years, on no
+schedule anyone could predict, and has never once mentioned it to anybody — not at the dinner table
+where everyone else's business gets aired, not to Chloe, not to her own family. What she thinks
+about before sleep is unglamorous and physical — an actual list, a horse that acted up, a task left
+for tomorrow — not people, not rank, not what anyone said about her that day. Handed a genuinely
+free year, she takes a bag and goes somewhere with no work in it, which confuses several people
+who've spent their whole lives being measured and can't parse a choice that isn't. What she
+believes, and would lose an argument defending out loud because she's never had to before: that
+leaving something is not the same as failing at it — that walking away from an assessed, graded,
+ranked structure doesn't automatically mean you lost, and might mean you noticed something the
+people still inside it haven't. What she's wrong about: she reads other people's drive for rank as
+a kind of trap they'd escape if they could, the way she escaped it, and she isn't right about that
+for all of them — for at least one person in the cohort the ranked work really is the whole of what
+they want, not a cage around it, and nothing on the page suggests she's ever seriously entertained
+that possibility. It isn't unkindness. It's a blind spot built from never having wanted the thing
+herself.
 
 ## The small stuff
 
-Eats fast and plain, and finishes first without seeming to hurry — reaching across the table for
-what she wants mid-sentence rather than waiting to be offered it (chapters/10_april.md:49, text).
-**[invented, remainder]** Drinks whatever's poured without a ritual about it. Her handwriting is
-fast, slanted, and barely legible except in the margins, where small, careful sketches of whatever
-horse is currently on her mind are drawn with a precision the letters never get. Her room looks
-like she's just back from somewhere — boots inside the door, one corner immaculate where the tack
-lives, everything else in the honest disorder of someone who isn't performing tidiness for anybody.
-Pockets hold string, a hoof pick, nothing decorative. She touches a horse's neck before mounting it
-every single time, even ones she's ridden a hundred times, and would not be able to explain why if
-asked. With money she is generous to the point of carelessness — she'll lend what she has on
-reputation rather than collateral and not track it closely afterward (chapters/18_fifteen.md:109,
-text) — and losing it does not appear to register as loss so much as information. First thing in
-the morning, she's outside before she's fully awake, moving before she's thinking, which is
-arguably true of every morning of her life since the age of six.
+Eats fast and plain, finishing first without seeming to hurry — reaching across the table for what
+she wants mid-sentence rather than waiting to be offered it (chapters/10_april.md:49). Drinks
+whatever's poured without a ritual about it. Her handwriting is fast, slanted, and barely legible
+except in the margins, where small, careful sketches of whatever horse is currently on her mind are
+drawn with a precision the letters never get. Her room looks like she's just back from somewhere —
+boots inside the door, one corner immaculate where the tack lives, everything else in the honest
+disorder of somebody who isn't performing tidiness for anyone. Pockets hold string, a hoof pick,
+nothing decorative. She touches a horse's neck before mounting it every single time, even ones
+she's ridden a hundred times, and couldn't explain why if asked. With money she's generous to the
+point of carelessness — she'll lend what she has on reputation rather than collateral and won't
+track it closely afterward (chapters/18_fifteen.md:109) — and losing it seems to register as
+information rather than loss. First thing in the morning, she's outside before she's fully awake,
+moving before she's thinking, which has probably been true of every morning of her life since she
+was six.
 
 ## Would do
 
@@ -270,8 +272,8 @@ arguably true of every morning of her life since the age of six.
   (chapters/12_nine.md:111).
 - Give away a hard, high-status assignment to whoever wants it rather than keep it for herself
   (chapters/14_sixty_degrees.md:113).
-- Let herself lose a public, scored contest on purpose, to steer the outcome toward someone she'd
-  rather have it (chapters/19_sixteen.md:161–165).
+- Read a room faster than the scoreboard built to grade it, and let the win go to someone who
+  needs it more (chapters/19_sixteen.md:155–165).
 - Lend money, unsecured, to someone she trusts, and not ask for anything back
   (chapters/18_fifteen.md:109).
 - Keep doing the thing she loves years after it stops paying off socially for anyone, including
@@ -279,30 +281,31 @@ arguably true of every morning of her life since the age of six.
 - Track a friend's physical progress by hand, quietly, rather than say something encouraging out
   loud (chapters/17_fourteen.md:121).
 - Write to someone who left, and keep writing for years, without ever telling anyone she's doing
-  it (`_ALLOCATIONS.md`, invented).
+  it.
 - Fall asleep mid-conversation, anywhere, without apologising for it (chapters/04_pluto.md:20–21).
 - Reach for what she wants — the bread, a tool, a task — without pausing what she's already saying
   (chapters/10_april.md:49).
 - Spend a free year somewhere with no work in it, because the place is the whole reason
   (CHAPTERS_16_22_v2.md:278).
+- Talk to whoever's actually doing the work — a stable hand, a kitchen — before she'll talk to
+  whoever's in charge of it.
 
 ## Would never
 
 - Chase a scoreboard for its own sake — no scene anywhere in the reading list shows her working
   toward a rank as the actual goal.
 - Ask someone what they came top of. It's the one rule her house runs on without ever stating it,
-  and she carries it out into every room she's in.
+  and she carries it into every room she's in.
 
 ## Relationships
 
 - **Chloe** — the throughline. Roommates at camp for the full stretch
   (chapters/04_pluto.md–07_the_same_room.md), and the friendship holds for years afterward without
   another scene ever showing them alone together again — everything the reader learns about Priya
-  past camp arrives secondhand, through what Chloe reports to her father
-  (chapters/19_sixteen.md:155–165) or notices across a table. Priya teaches her without being
-  asked and doesn't need her to keep up (chapters/12_nine.md:113, 123); Chloe is also the one
-  person who treats her as reputation rather than collateral, lending to her unsecured "because it
-  is Priya" (chapters/18_fifteen.md:109).
+  past camp arrives through what Chloe reports to her father (chapters/19_sixteen.md:155–165) or
+  notices across a table. Priya teaches her without being asked and doesn't need her to keep up
+  (chapters/12_nine.md:113, 123); Chloe is also the one person who treats her as reputation rather
+  than collateral, lending to her unsecured "because it is Priya" (chapters/18_fifteen.md:109).
 - **Ruth** — low-friction and information-first: Priya gets an answer out of Ruth "in a corridor
   in about ninety seconds" that took others weeks (chapters/13_ten_pages.md:89), and shares a room
   with her, Kavi, and Sam for the late-night bread test (chapters/15_twelve.md:53).
@@ -315,45 +318,43 @@ arguably true of every morning of her life since the age of six.
 - **Odile** — orbits the same table and the same ensemble scenes — the fixed dinner group
   (chapters/16_thirteen.md:121), the cipher-on-a-napkin argument where each raises a separate
   objection (chapters/16_thirteen.md:131) — but no scene in the reading list has them address each
-  other directly. **[text, absence]**
+  other directly.
 - **Owen** — the one relationship in her life the book never shows at all. He leaves in the second
-  week of camp; she is the only person in the cohort who keeps in contact with him afterward, by
-  letter, for years, and has never told anyone she does it. **[invented]**
+  week of camp; she notices something the rest of the cohort doesn't, gets his address, and is the
+  only person who keeps writing to him afterward, for years, without telling anyone.
 
 ## Likes, dislikes, habits
 
-- Likes horses specifically, not animals in general [text — chapters/04_pluto.md, 12_nine.md]
-- Prefers demonstrating physically over explaining further [text — chapters/12_nine.md:111]
-- Likes working with her hands at a small, unrated scale — pottery and weaving alongside riding
-  [inferred from `_ALLOCATIONS.md`]
-- Likes a place for its own sake, which is why Quechua is the language she's known for and why a
-  gap year with no work in it doesn't confuse her the way it confuses everyone else [text +
-  inferred]
-- Trusted enough by peers to be lent money on reputation, and lends the same way herself [text —
-  chapters/18_fifteen.md:109]
-- Falls asleep almost instantly, anywhere [text — chapters/04_pluto.md:21]
+- Horses specifically, not animals in general (chapters/04_pluto.md, 12_nine.md)
+- Demonstrating physically over explaining further (chapters/12_nine.md:111)
+- Working with her hands at a small, unrated scale — pottery and weaving alongside riding
+- A free year with no work in it, because the place is the whole reason (CHAPTERS_16_22_v2.md:278)
+- Being lent to and lending on reputation rather than collateral (chapters/18_fifteen.md:109)
+- Falling asleep almost instantly, anywhere (chapters/04_pluto.md:21)
 - Caretaking expressed as action, not words — marks Sam's growth on a door frame, tells Kavi to
-  eat, writes to Owen for years without saying so [text + invented]
-- Indifferent to competitive or institutional reward as an end in itself — the one dislike on this
-  sheet, and it's load-bearing rather than decorative [text, pattern across three scenes]
+  eat, writes to Owen for years without saying so
+- Indifferent to competitive or institutional reward as an end in itself — the one real dislike on
+  this sheet, and it's load-bearing rather than decorative (a pattern across three separate scenes)
 
 ## Facts a rewriter needs
 
-- **Name:** Priya. **Surname:** Anand. **[invented]**
+- **Name:** Priya Anand. The surname doesn't exist in the manuscript; this sheet gives her one.
 - **Family:** father a farrier, mother runs the family's boarding stable, one older brother
   apprenticing with their father. Neither parent has an academic credential and neither treats
-  that as a gap. **[invented, per `_ALLOCATIONS.md`]**
-- **Home:** horse country, two hours from where the main action of the book happens. **[invented]**
-- **Background before camp:** rides horses, has done so since she was six (chapters/12_nine.md:113,
-  text), six years before Halstead ever offers it as an elective (`_ALLOCATIONS.md`).
+  that as a gap.
+- **Home:** horse country, two hours from where the main action of the book happens.
+- **Background before camp:** rides horses, has done so since she was six
+  (chapters/12_nine.md:113), six years before Halstead ever offers it as an elective.
 - **Good at:** riding — "better at all of it" than Chloe within two years
   (chapters/12_nine.md:113); dismantling other people's plans under scrutiny
   (chapters/15_twelve.md:67); extracting information from people fast (chapters/13_ten_pages.md:89);
   reading a live, scored exchange faster than the mechanism built to grade it
-  (chapters/19_sixteen.md:161).
-- **Bad at:** money as an investor — finishes a class lending exercise "down eighty"
-  (chapters/18_fifteen.md:123); formal registers in language, learning kitchens and stables first
-  and the official version late [text + invented].
+  (chapters/19_sixteen.md:161); Quechua, to a working fluency most adults never reach
+  (chapters/12_nine.md and following, plus `_ALLOCATIONS.md`).
+- **Bad at, relative to ninety other geniuses:** money as an investor — finishes a class lending
+  exercise "down eighty" against real capital and real competition (chapters/18_fifteen.md:123).
+  That is a ranking, not an ordinary weakness; she is still reading the material closely enough to
+  name her own mistake afterward.
 - **Known at what age:** detailed horse anatomy and measurement by camp age, roughly 7–8
   (chapters/04_pluto.md); still riding at Halstead through at least age 9 (chapters/12_nine.md).
   No horse, stable, or riding reference appears anywhere in chapters 13 through 19 of the reading
@@ -362,7 +363,6 @@ arguably true of every morning of her life since the age of six.
 - **Central fact:** nobody in her house has ever asked what she came top of. It's the reason she's
   the one member of the cohort with a functioning, undamaged relationship to achievement, and the
   counterweight the rest of the book needs against a cast that's been ranked since seven.
-  **[invented, per `_ALLOCATIONS.md`, and the single most important line on this sheet]**
 
 ## Known problems
 
@@ -376,8 +376,8 @@ arguably true of every morning of her life since the age of six.
    chapters/17_fourteen.md:131 ("At breakfast." / "In the queue." / "Holding a tray.") is built as
    clipped fragments instead. **Fix:** rewrite that beat as one running clause instead of three
    fragments.
-3. **The Axis 2 disagreement move has no confirmed example yet.** Her one clear disagreement — "Do
-   it how?" (chapters/15_twelve.md:65) — is a direct factual objection, not the agree-and-carry-on
+3. **The agree-and-carry-on disagreement move has no confirmed example yet.** Her one clear
+   disagreement — "Do it how?" (chapters/15_twelve.md:65) — is a direct factual objection, not the
    move assigned to her. **Fix:** needs a new beat; nothing existing to extend.
 4. **The animal-figurative permission is unused.** No invented image, noticed or unnoticed, appears
    anywhere in her lines in the reading list. **Fix:** one unmarked animal comparison about a

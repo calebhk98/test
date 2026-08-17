@@ -132,7 +132,7 @@ because two sheets independently chose the same one and it had to be undone.
 | Priya | Anand | [invented] |
 | Odile | Vasseur | [invented] |
 | Theo | Langford | [invented] |
-| Eli | Dorn | [invented, reassigned from Marsh] |
+| Eli | Marsh | [invented — shares a surname with Sam; names repeating across the cast is fine] |
 | Nadia, Fen, Owen, Kayleigh, Bryce | see their sheets | [invented] |
 
 ### Given names
