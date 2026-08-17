@@ -83,7 +83,7 @@ Keeps a small paper list, added to over the years, of every name she's found for
 1. Explain something practical to a new roommate within minutes of meeting her, without pausing what she was doing (chapters/10_april.md:13).
 2. Keep a personal collection in careful order across every room change (chapters/10_april.md:13, 137).
 3. Show someone an object she cares about without turning it into a conversation (chapters/11_eight.md:111).
-4. Lend something of value at a fair, stated price rather than give it away for free or ask for nothing (chapters/18_fifteen.md:109).
+4. Borrow at a stated rate and put up collateral rather than ask a friend for a favour. The direction matters and the manuscript is explicit: Chloe is the lender, Fen the borrower, at chapters/18_fifteen.md:109 — "She lends forty to a girl called Fen at nine percent against a table saw, and the last thirty to Priya at twelve, unsecured, because it is Priya." Fen secures her loan; Priya does not. That contrast is the whole entry.
 5. Stay loosely in touch with someone for years without it becoming a close daily friendship (CHAPTERS_16_22_v2.md:32).
 6. Find out and remember a fact most people would never think to ask about — who had her room before her [invented].
 7. Speak Cantonese or Hokkien easily and at length with someone she trusts one-on-one [allocation-grounded].
