@@ -376,7 +376,7 @@ Her mother stops with the spoon out over the dish. The only thing moving at that
 
 Her father makes a noise into his glass, then puts a hand over his mouth. Her mother turns her head and looks at him with her chin down until the hand comes away, and then he starts folding his napkin into quarters on the table in front of him.
 
-"Four hours of counting tomatoes," her mother says. "That sounds about right to me. You stay in your own room after lights out, Chloe, I don’t care whatever list you're on, you are 12 years old."
+"Four hours of counting tomatoes," her mother says. "That sounds about right to me. You stay in your own room after lights out, Chloe, I don't care whatever list you're on, you are twelve years old."
 
 "Okay. I'll stay in my room," she sighs.
 
