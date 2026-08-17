@@ -11,8 +11,10 @@ JSON object per line, one proposed change per object:
      "replacement": "I liked dance. I was good at dance",
      "reason": "flat declaratives, no subordinate clause"}
 
-`current` has to appear verbatim in `file`, inside quotation marks, because
-this pass changes only what characters say. Everything else on the page stays.
+`current` has to appear verbatim in `file`, and has to sit inside quotation
+marks or inside a group-chat message, because this pass changes only what
+characters say. Everything else on the page stays. Chat lines carry no quotes
+and look like "nadia: im FINE. im insulted"; the text after the colon counts.
 
     python3 dialogue_fixes.py                 validate every file
     python3 dialogue_fixes.py --speaker Sam   one character
@@ -36,6 +38,7 @@ HERE = Path(__file__).resolve().parent
 FIXES = HERE / "dialogue_fixes"
 LINE_SLACK = 3          # a citation may drift by a line or two
 REQUIRED = ("file", "line", "speaker", "current", "replacement", "reason")
+CHAT_NAMES = {"chloe", "ruth", "sam", "kavi", "nadia", "eli", "theo"}
 
 
 def norm(t):
@@ -43,8 +46,17 @@ def norm(t):
                   .replace("‘", "'").replace("’", "'")).strip()
 
 
-def quoted_spans(text):
-    """Character ranges that sit inside double quotes."""
+# The group chat carries dialogue without quotation marks: a line is
+# "nadia: im FINE. im insulted". That is speech, and most of what Eli and Theo
+# ever say arrives this way, so the inside-quotes check has to admit it.
+CHAT_LINE = re.compile(r"^\s*([a-z]+):\s*(.+)$", re.I)
+
+
+def dialogue_spans(text):
+    """Character ranges holding speech: inside double quotes, or a chat message."""
+    m = CHAT_LINE.match(text)
+    if m and m.group(1).lower() in CHAT_NAMES:
+        return [(m.start(2), m.end(2))]
     return [(m.start(), m.end()) for m in re.finditer(r'"[^"]*"', text)]
 
 
@@ -78,9 +90,10 @@ def check(entry, root):
     else:
         line = lines[hit]
         pos = norm(line).find(cur)
-        inside = any(s <= pos < e for s, e in quoted_spans(norm(line)))
+        inside = any(s <= pos < e for s, e in dialogue_spans(norm(line)))
         if not inside:
-            bad.append("current text is outside quotation marks, so it is not dialogue")
+            bad.append("current text is not inside quotation marks or a chat message, "
+                       "so it is not dialogue")
     return bad
 
 
