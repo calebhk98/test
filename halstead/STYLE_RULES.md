@@ -25,6 +25,16 @@ Keep it rare. Keep the other constraints. No interiority for anyone in that scen
 
 A fifth contrived overhearing is worse than one clean camera scene. When the only way to put Chloe in earshot is another door left open a few inches, the device has stopped working and the camera is the honest move.
 
+### Viewpoint may change between chapters
+
+The camera exception above covers a scene Chloe cannot reach. It does not cover a whole chapter belonging to somebody else, and several of the later chapters do exactly that: chapter 26 sits with Sam through basic training, chapter 28 with Nadia, chapter 29 with Sam again on the exercise. Chloe is not in them at all.
+
+That is allowed. As the cohort separates and their lives stop running through the same building, the book follows them, and a chapter given to another character carries that character's interiority the same way Chloe's chapters carry hers.
+
+**The constraint is one viewpoint per chapter, not one viewpoint per book.** Whoever a chapter belongs to, it stays with them: their perception, their interiority, and nothing from inside a second head. A chapter with Ruth in it that steps into Kavi's thoughts for a sentence is the failure. Chapters 1-20 are Chloe's throughout, so within them the rules above hold unchanged.
+
+The camera exception still applies where nobody's viewpoint is the right one, and the other constraints stay in force everywhere: no future POV, no telling the reader what to notice.
+
 ---
 
 ## 2. Register: figurative language belongs in mouths
