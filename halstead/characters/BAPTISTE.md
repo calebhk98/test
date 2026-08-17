@@ -1,96 +1,109 @@
-# MR. BAPTISTE
+# ÉTIENNE BAPTISTE
 
-Teaches early mathematics (fraction division, arithmetic) to the youngest age band. The only staff member on this list who answers a question with another question as his default move.
+Teaches the youngest students their first real mathematics, and wants every one of them to own the "why" behind a rule before they're ever handed the rule itself.
 
-**Who he is — a note before anything else:** Baptiste does not appear in SYNOPSIS_CHARACTERS_TIMELINE.md, BETA_NOTES.md, or CURRICULUM_GRID.md. He has no entry, no gender label, no profile anywhere outside the manuscript itself. Everything below is built from the text alone. One strong textual link: SYNOPSIS_CHARACTERS_TIMELINE.md line 351-353 describes an unnamed "mathematics teacher" — "Hears 'why do you flip it,' says 'good, that's the question,' explains, and when she still doesn't have it, lets her go. She solves it that night on the floor and gets to own it." — which is word-for-word the chapters/05_behind.md scene where Baptiste says exactly that line. **The synopsis's "unnamed mathematics teacher" and Mr. Baptiste are the same person**; the synopsis simply never picked up his name. This resolves the "who is he" question: he is Halstead's early-years math teacher, age band 6-7, teaching the class that runs alongside the wood shop and swimming block in chapters 05-08.
+**First name:** Étienne [invented] — see Facts.
+**Who he is — a note before anything else:** Baptiste appears in no reference document — no SYNOPSIS entry, no BETA_NOTES mention, no CURRICULUM_GRID name. He is built here from the manuscript alone. One strong textual link: SYNOPSIS_CHARACTERS_TIMELINE.md's unnamed "mathematics teacher" ("Hears 'why do you flip it,' says 'good, that's the question'...") quotes his chapters/05_behind.md scene verbatim without ever picking up his name — Baptiste and the synopsis's "unnamed mathematics teacher" are the same person.
 
-**Age span:** Chloe age 6-7 only | **MBTI:** INTP (writing aid, not a claim) | **IQ:** no textual basis; not assessable
+**Age span (in the text):** Chloe age 6-7 only | **MBTI:** INTP (writing aid, not a claim) | **IQ:** est. 135-142 [invented]
 **Appears in:** chapters/05_behind.md, chapters/06_the_list.md, chapters/08_the_asking.md
-**Speaks:** 6 short turns, all in chapters/05_behind.md. chapters/06 and chapters/08 only mention him in passing (a student recalling his method, or his name being invoked) — he has zero quoted lines outside chapters/05. That concentration is itself the finding: everything known about how he talks comes from one scene.
+**Speaks:** 6 short turns, all in chapters/05_behind.md — everything about his voice comes from one scene.
 
 ## Voice in one paragraph
-Baptiste never gives an answer without first getting the student to say what they're actually asking: "Good, that's the question." "Okay. So what is dividing actually asking you." (chapters/05_behind.md:33) He repeats a demonstration exactly, from the beginning, without commenting on having to repeat it — "he does the whole thing again from the beginning without any comment about it" (chapters/05_behind.md:38) — and he does not treat a harder follow-up question as an interruption; he answers it, then volleys a question back. His shortest lines are one or two words and function as pure encouragement-of-inquiry rather than encouragement-of-the-student: "Try one." "Then it works." "What about zero." (chapters/05_behind.md:40-44) He is the only teacher on this list who says the word "good" as praise for a question rather than withholding evaluative language altogether — but note precisely what it's praise of: the question, never the child. Most characteristic line: "Good, that's the question." (chapters/05_behind.md:33) — because every other teacher in this cast either withholds praise entirely or attaches it to a mechanism; Baptiste is the only one who rewards curiosity itself, on the spot, without ever telling a student they are smart.
+Baptiste never gives an answer without first getting a student to say what they're actually asking: "Good, that's the question." "Okay. So what is dividing actually asking you." He repeats a demonstration exactly, from the beginning, without commenting on having to repeat it. His shortest lines function as pure encouragement of the inquiry, not the child: "Try one." "Then it works." "What about zero." He's the only teacher in this cast who says "good" as praise for a question, on the spot, every time one is asked well. Most characteristic line: "Good, that's the question." — the only staff member who rewards curiosity directly, without ever telling a student they're smart.
 
 ## Dials
 | | |
 | :-- | :-- |
-| sentence shape | very short, often a redirect back to a question — the only teacher whose default reply is a question |
-| disagrees by | doesn't disagree in the sample — no instance of Baptiste contradicting a student exists in the text |
-| wordiness | 2/10 — the shortest average turn length of any teacher on this list |
-| terseness | roughly half of his 6 turns are 3 words or fewer ("Try one." "Then it works." "Good,") |
+| sentence shape | very short, often a question thrown back |
+| disagrees by | doesn't, in the sample — no instance of him contradicting a student exists |
+| wordiness | 2/10 — the shortest average turn of any teacher on this list |
+| terseness | roughly half of his 6 turns are 3 words or fewer |
 | jokiness | 0/10 |
 | hedging | 0% |
-| questions | roughly a third of his turns are questions thrown back at the student — the highest question rate of any teacher here |
+| questions | roughly a third of his turns are questions thrown back — the highest rate of any teacher here |
 | figurative | none found |
 
 ## Signature — theirs alone
-Answers a question with a question, then still does the requested demonstration in full, from the start, without remarking on the repetition: "Marisol asks him to do the rectangle again from the beginning, and he does the whole thing again from the beginning without any comment about it." (chapters/05_behind.md:38) No other teacher on this list is shown repeating unrewarded work without a word about it.
+Answers a question with a question, then still does the requested demonstration in full, from the start, without remarking on the repetition. No other teacher on this list is shown redoing unrewarded work without a word about it.
 
 ## Would they say this?
-- YES if it names a student's question as good before answering it, and the praise attaches only to the question. ("Good, that's the question.")
+**The Halstead-staff test.** A line belongs to this staff, not to a generic teacher, only if all five hold: (1) no praise word attaches to the child; (2) a correction is a flat statement of fact; (3) the child's age is never a reason for leniency; (4) an extraordinary result is treated as expected; (5) the adult's own error is fixed the same flat way a student's is.
+
+- YES if it names a student's question as good before answering it, and the praise attaches only to the question.
 - YES if it answers "does X work" with "try it" rather than the answer itself.
 - YES if it redoes an explanation exactly, with zero comment about having to redo it.
+- YES if it follows a harder, unplanned tangent as far as a student wants to take it.
+- YES if a student asks something two steps past the lesson and gets a real answer, not a deflection.
+- YES if it lets a class end with the youngest student in the room still working the problem out for herself.
+- YES if the whole content of a turn is one short sentence and a bounce back to the student.
 - NO if it explains why a wrong guess was wrong instead of asking what the student thinks now.
-- NO if it says a student is clever, quick, or ahead of the class — no such line exists in his sample.
-- YES if the entire content of a turn is one short sentence and a bounce back to the student.
+- NO if it says a student is clever, quick, or ahead of the class.
 
 ## Are they acting like themselves?
-When two different students ask him to repeat the same demonstration in the same lesson (Marisol, then implicitly others), he repeats it exactly rather than accelerating, skipping, or getting visibly impatient — the text explicitly notes the absence of comment. When Chloe and Ruth extend the lesson into dividing by zero, unscripted, he follows them there rather than shutting the tangent down: "'What about zero,' Ruth says. 'What about zero.' ... 'Good,' Mr. Baptiste says, and does that one on the board too." (chapters/05_behind.md:43-46) Failure mode a writer would fall into: giving him a line that resolves a student's confusion directly instead of handing the resolution back to them — the text's actual method is to leave Chloe stuck at the end of the class scene entirely, and she solves it alone that night on the floor (chapters/05_behind.md:48-52), which he permits by not over-explaining in the first place.
+When two different students ask him to repeat the same demonstration in one lesson, he repeats it exactly rather than accelerating or showing impatience. When Chloe and Ruth extend the lesson into dividing by zero, unscripted, he follows them there instead of shutting the tangent down. Failure mode a writer would fall into: resolving a student's confusion directly instead of handing it back to them — the text's actual method leaves Chloe stuck at the end of class, and she solves it alone on the floor that night.
 
-## Subjects
-Teaches early mathematics — fraction division, arithmetic — to the youngest age band (6-7). CURRICULUM_GRID.md's mathematics table for ages 7-9 reads "No formulas given. You get the thing the formula is about and a week" — an exact match for his rectangle-and-shading method, which never once states the rule "flip and multiply" and instead rebuilds what division is asking.
+## Subjects and schedule
+Teaches early mathematics — fraction division, arithmetic — to the youngest age band, 6-7. CURRICULUM_GRID.md's own description of that age ("No formulas given. You get the thing the formula is about and a week") is an exact match for his rectangle-and-shading method, which never once states "flip and multiply" and instead rebuilds what division is asking.
 
 **Best at:** getting a student to rebuild the reasoning behind a rule instead of memorizing it. [text: chapters/05_behind.md:33-46]
-**Worst at:** UNDEFINED.
-**Favourite, and why:** [inferred] the "why" behind an operation over the operation itself — every one of his lines pushes toward the underlying question, never toward the mechanical answer.
-**Least favourite:** UNDEFINED.
-**Secretly proud of:** [inferred] getting two different students (Chloe, then Ruth) to extend one lesson into a genuinely harder question — dividing by zero — inside a single class period, and following them there instead of redirecting. That's unusual latitude for the most structured, youngest age band in the school.
-**Would drop if allowed:** UNDEFINED.
+**Worst at:** [invented] keeping a straight face when a six-year-old announces a wrong answer with total, unshakeable confidence — colleagues say it's the one thing that nearly breaks him every year.
+**Favourite, and why:** the "why" behind an operation over the operation itself — every one of his lines pushes toward the underlying question, never the mechanical answer.
+**Least favourite:** [invented] the standardized diagnostic the school runs once a year purely for its own internal records, which tells him nothing his own classroom hasn't already shown him.
+**The one he's secretly proud of:** [invented] the day Chloe solves the division problem alone, on the floor, that night — he never finds out she did it, and it happened anyway, entirely because of how he set the question up. He'll never know, and the sheet marks this as the quiet, real proof of his method working exactly as designed.
+**What he'd teach if he could teach anything else:** [invented] a design or building course for the same age band — he thinks six- and seven-year-olds understand structure with their hands before they understand it with numbers, and would love to prove it formally.
+**What he thinks of the rest of the curriculum:** he thinks the youngest years get this exactly right and worries, quietly, that the pace only tightens from here — he's watched enough students move through the grades to know the hidden ramp is coming for all of them, and treats his own classroom as the one place they get to be unhurried before it starts. [invented]
 
-**What he was before Halstead:** UNDEFINED.
-**What he'd teach if he could teach anything:** [inferred] likely nothing else — his Socratic method is subject-agnostic in principle, but every glimpse of him in the text is fused to arithmetic specifically.
-**What he thinks of the rest of the curriculum:** UNDEFINED. He has the narrowest window of any teacher on this list — one age band, one scene with quoted lines — and never references anything outside his own room. An open question worth raising: at the youngest band, before politics, before ten pages a week, before any part of the hidden ramp CURRICULUM_GRID.md describes has started compounding, does he see what's coming for these students, or is his classroom simply insulated from it? The text gives no signal either way.
+## Home
+Lives off campus, a short drive away, in a small house with a large vegetable garden he's inordinately proud of. [invented] Married, two grown children neither of whom attended Halstead — his wife teaches at the regular public school in town, and dinner conversation is, by his own account, "two teachers comparing notes about the same age group from two completely different planets." [invented] Grew up in a French-Caribbean family that valued precision in speech the way other families valued manners — a habit he brought straight into how he asks a six-year-old a follow-up question. [invented] Was a structural engineer for nearly twenty years before Halstead, on bridges and public works, until a collapse elsewhere in the industry — not his project, not his fault, but close enough that he sat through the review anyway — left him wanting to build something that couldn't fail the same catastrophic way. [invented]
+
+## Body
+Mid-fifties, average build, moves unhurriedly and never seems rushed even mid-lesson. [invented] Caps and uncaps a marker as a visible thinking beat before he explains — the one physical habit the text actually gives him. [text: chapters/05_behind.md:33] Wears the same style of collared shirt every day, sleeves rolled to the forearm, chalk dust or marker ink somewhere on him by mid-morning without fail. [invented] Eats lunch with the other early-years staff, talking shop, unhurried. [invented] Sleeps well and wakes early to work in the garden before school. [invented]
 
 ## Personality off the page
-[inferred, from the single scene] Comfortable with unstructured extension of a lesson — when two different students pull the class past the planned material, nothing in the text shows him resisting or redirecting back to schedule. Caps and uncaps a marker as a visible thinking beat before he explains. [text: chapters/05_behind.md:33] Bored, tired, 2am, a free Saturday, what he finds funny in others: UNDEFINED.
+[inferred, from the single scene, extended] Comfortable with unstructured extension of a lesson — when students pull the class past the planned material, nothing shows him resisting. Bored: rare, given how much he seems to enjoy the actual unpredictability of six-year-olds. [invented] Wrong: would check the board the way Doyle does, and correct it the same flat way, though no on-page scene shows this for him specifically. [inferred, cast-consistent] Praised: uncomfortable, redirects credit to the student's question. [invented] Losing: genuinely doesn't register competitively — mathematics, to him, isn't a contest. [invented] At 2am, rare, he is not thinking about school at all — the garden, mostly. [invented] A free Saturday is the garden, then a long, slow dinner with his wife where they trade impossible-child stories from two different schools. [invented] Finds funny in others: overconfidence in a six-year-old, precisely, and nowhere else — an adult's overconfidence just tires him. [invented]
 
-## Would do / would never do
-Never resolving Chloe's confusion for her in the moment isn't withholding — the method is built so the discovery belongs to her afterward, and the text stages that explicitly: she solves it alone, on the floor, that night, and gets to own it.
+## Interior life
+Wants, unspoken: to prove, formally, that the youngest students understand structure with their hands before they understand it with numbers. [invented] Afraid of: that somewhere up the ladder of ages, a student who was genuinely curious at seven gets trained out of asking "why" by the sheer volume of the workload later on — he has no proof this happens, and worries about it anyway. [invented] Thinks about before sleep: rarely school — the garden, or an old bridge design he still turns over sometimes out of habit. [invented] Free year: he'd design a structural-thinking curriculum for six-year-olds and try to get it adopted. [invented] Believes that others would argue with: that showing a student the demonstration a hundred times, patiently, beats moving faster — Kowalczyk, who believes in reps of a completely different kind, would agree with the method and completely disagree about what's being repeated. [invented] Wrong about: he assumes patience always reads as care; at least one faster student has, at some point, read his slow repetitions as being held back rather than being respected. [invented]
 
-**Would:**
+## The small stuff
+Drinks coffee with milk, no sugar, from a mug his kids gave him years ago that says nothing memorable on it. [invented] Handwriting is careful, rounded, deliberately legible — chosen for an audience of six-year-olds and never adjusted since. [invented] His desk has a small collection of oddly shaped offcuts of wood from his engineering days, used as teaching props more often than paperweights. [invented] Money: unremarkable, comfortable, spends most of it on the garden and his kids' visits home. [invented] Superstition: none stated; caps and uncaps the same marker before every single explanation, which is closer to ritual than superstition. [invented] On a phone: minimal, mostly photos of the garden. First thing every morning: an hour outside before anyone else is up. [invented]
+
+## Would do
 - Answer a question with a question by default. [text: chapters/05_behind.md:33, 40, 44]
 - Repeat a full demonstration exactly, without comment, for a student who needs it again. [text: chapters/05_behind.md:38]
 - Follow a tangent into genuinely harder territory rather than redirect back to the lesson plan. [text: chapters/05_behind.md:43-46]
 - Name a question as good, specifically, while never naming the student who asked it as smart. [text: chapters/05_behind.md:33, 46]
-- Let a student leave class still confused, on purpose, rather than close the gap for them. [text: chapters/05_behind.md:34, 47-48]
+- Let a student leave class still confused, on purpose, trusting her to close the gap herself. [text: chapters/05_behind.md:34, 47-48]
+- Grow a genuinely good vegetable garden and bring the extra in for the staff kitchen. [invented]
+- Keep old engineering offcuts around purely to use as teaching props. [invented]
+- Compare notes with his wife about their two very different classrooms, every week, without fail. [invented]
 
-**Would never:**
+## Would never
 - Give a direct answer where a redirect would leave more for the student to find themselves.
 - Call a student clever, quick, or ahead of the others.
-- Show visible impatience at repeating himself.
-- Manage or soothe a student's visible frustration in the moment — Chloe's "ears... hot for an hour" gets no acknowledgment from him at all, consistent with a method that trusts her to carry it home and resolve it alone.
-
-## Body and habits
-Caps and uncaps a marker before explaining. [text: chapters/05_behind.md:33] Draws on the board while talking. [text: chapters/05_behind.md:34] Build, age, clothing, eating, sleeping: UNDEFINED.
+- Manage or soothe a student's visible frustration in the moment, trusting her to carry it home and resolve it alone.
 
 ## Relationships
-- **Chloe** — asks the founding question of the scene ("Why do you flip it") and is the one told "Good, that's the question," but he does not resolve her confusion for her; she works it out alone that night.
-- **Marisol** — asks for a full repeat of the demonstration and gets one, without comment.
-- **Owen** — asks a harder, more specific question and, unable to answer yet, is told "that's fine and they'll do it again tomorrow" — the gentlest deferral in the sample.
-- **Ruth** — extends the lesson into the "divide by zero" tangent and gets the same "Good" Chloe got, plus a worked example on the board.
+- **Chloe** — asks the founding question of the scene and is told "Good, that's the question"; he never learns she solved it alone that night, and never needs to. [text + invented]
+- **Marisol** — asks for a full repeat and gets one, without comment. [text: chapters/05_behind.md:38]
+- **Owen** — asks a harder, more specific question and is told "that's fine and they'll do it again tomorrow" — the gentlest deferral in the sample. [text: chapters/05_behind.md:38]
+- **Ruth** — extends the lesson into the "divide by zero" tangent and gets the same "Good" Chloe got, plus a worked example on the board. [text: chapters/05_behind.md:43-46]
+- **His wife** — the one person who understands exactly what his day was like, from the opposite end of the same profession. [invented]
 
 ## Likes, dislikes, habits
-- Answers a question with a question by default. [text: chapters/05_behind.md:33, 40, 44]
+- Answers a question with a question by default. [text]
 - Repeats a demonstration without comment when asked. [text: chapters/05_behind.md:38]
 - Praises a question, never a student. [text: chapters/05_behind.md:33, 46]
-- Caps and uncaps his marker as a small physical beat before starting to explain. [text: chapters/05_behind.md:33]
+- Grows vegetables with the same patience he teaches with. [invented]
+- Keeps engineering offcuts on his desk as teaching props. [invented]
 
 ## Facts a rewriter needs
-"Mr. Baptiste," full name not given. Teaches early mathematics (fraction division, arithmetic) to Chloe's age band 6-7. Male, per "he does two on the board" and consistent masculine pronouns throughout chapters/05_behind.md — this is not disputed anywhere in the text. No family or personal background given. A separate detail from chapters/06_the_list.md:65 — "My dad talked to Mr. Baptiste for an hour" (Kavi, reporting his own father's conversation) — implies Baptiste attends a school event where parents are present, but nothing about the content of that conversation is shown.
+Full name: Étienne Baptiste [invented first name; surname text-confirmed]. Students call him "Mr. Baptiste" — first names for staff go unused at Halstead by anyone under eighteen [invented, school-wide fact]. Married, two grown children who did not attend Halstead [invented]. Former structural engineer before Halstead [invented]. Teaches early mathematics (fraction division, arithmetic) to Chloe's age band 6-7. Male, undisputed in the text.
 
 ## Known problems
-- He has no presence at all outside chapters/05-08 (Chloe's ages 6-7); nothing tracks whether he continues teaching once the students move to the age-8+ subject blocks. Silent dropout, not explained in-text — flag as UNDEFINED rather than assuming he continues or leaves.
-- Being absent from every reference document means any biography beyond what's above would be invention. Do not add one without flagging it as a proposal.
+- He has no presence outside chapters/05-08 (Chloe's ages 6-7); nothing tracks whether he continues teaching once students move to the age-8+ blocks. Silent dropout, not explained in-text.
+- Home, Body, Interior life, and The small stuff are [invented] in full to close a genuine gap; none of it contradicts the page.
 
 ## Do not confuse with
-Doyle — both are shown mid-correction in front of a class, but Doyle is corrected by a student and fixes an error silently without repeating himself; Baptiste is the one asking the questions, and his signature is repeating a correct demonstration on request, not fixing a wrong one.
+Doyle — both are early-years teachers shown mid-lesson with a marker in hand, but Baptiste's signature is inviting and rewarding a student's question, while Doyle's one scene is about absorbing a correction he didn't invite, without comment either way.

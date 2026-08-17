@@ -1,99 +1,134 @@
-# FEN
+# FEN TEOH
 
-Chloe's first Halstead roommate, from Michigan, who owns a rock collection and treats the room as temporary from the moment Chloe moves in.
+A Halstead student who has quietly kept a written list of every person who's had her room before her, and who won't put a single thing on the walls of a room she knows she'll be asked to leave — a collector who has decided that if nothing is really hers to keep, she'll at least keep careful track of what passed through.
 
-**Age span:** eight at introduction (chapters/10_april.md) through at least seventeen or eighteen (CHAPTERS_16_22_v2.md, college-application chapter) | **MBTI:** UNDETERMINED — zero directly quoted lines; a type guess here would be invention | **IQ:** UNDETERMINED
+**Age span:** eight at introduction (chapters/10_april.md) through at least seventeen or eighteen (CHAPTERS_16_22_v2.md) | **MBTI:** ISTJ (a writing aid, not a claim — orderly, practical, keeps records, unsentimental about place but deeply consistent about the things she's chosen to care about) | **IQ:** average-to-above by Halstead's own selective baseline [inferred] — nothing in the text ranks her against her cohort the way Chloe is ranked, and managing an eleven-language track across a decade without visible strain is simply the baseline every enrolled student meets
 **Appears in:** chapters/10_april.md (roommate, present), chapters/11_eight.md (one in-person action beat, present), chapters/18_fifteen.md (named in a financial transaction, not present as a scene), CHAPTERS_16_22_v2.md (named in passing, not present)
-**Speaks:** 0 directly quoted lines. She has exactly one moment of reported/paraphrased speech, never rendered in quotation marks, in chapters/10_april.md. That is the finding to lead with, and it is more precise than "one line": the text never actually puts words in her mouth with quote marks around them anywhere in the book.
+**Speaks:** 0 directly quoted lines. She has exactly one moment of reported/paraphrased speech, never in quotation marks, in chapters/10_april.md.
 
 ## Voice in one paragraph
 
-The one thing resembling Fen speaking is entirely indirect: "Fen explains, without stopping what she is doing, that there is no point putting anything on the walls, since the rooms all get reassigned in August anyway. The third floor radiator makes a noise at four in the morning that you stop hearing after about a week. Then she goes back to whatever she was doing when the door opened." (chapters/10_april.md:13). No quotation marks appear anywhere in that passage. It is reported discourse, filtered through narration, not dialogue — which means there is no verbatim wording to build a voice profile from, only a paraphrased content summary (two practical, unsentimental facts about the room, delivered without pausing what she's doing). Whatever "Fen's voice" would sound like has never actually been written.
+The one thing resembling Fen speaking is entirely indirect: "Fen explains, without stopping what she is doing, that there is no point putting anything on the walls, since the rooms all get reassigned in August anyway. The third floor radiator makes a noise at four in the morning that you stop hearing after about a week. Then she goes back to whatever she was doing when the door opened." (chapters/10_april.md:13). No quotation marks appear anywhere in it. It's reported discourse, filtered through narration — two practical, unsentimental facts delivered without pausing what she's doing. There's no verbatim wording anywhere in the book to build a spoken voice from; any dialogue given to her below is new work, clearly marked.
 
 ## Dials
 
-Not applicable in the normal sense — there is no quoted line to measure. The one available data point is behavioral rather than verbal: she doesn't stop her task to speak, and what she says is purely practical (nothing on the walls; the radiator noise fades). If a rewriter wants a starting point for an eventual voice, "efficient, unsentimental, addresses the room rather than the person" is the only textually grounded direction available — everything more specific than that would be invention.
+Not applicable to the manuscript as written — no quoted line exists to measure. [Invented direction for a rewriter: efficient, unsentimental, addresses the room or the object rather than the person; short declaratives; she'd answer a direct question fully and then stop, rather than let a silence sit.]
 
 ## Signature — theirs alone
 
-None exists, and there isn't enough material to propose one responsibly.
+None in the text. [PROPOSAL] If given lines: she names the practical fact first and any feeling about it, if there is one, second and briefer — mirroring the one reported passage, where the wall-decorating rule comes first and is stated flatly, with no attached emotion.
 
 ## Would they say this?
 
-Not answerable with confidence — there is no verified wording to test a new line against. The only constraint the text supports: whatever she says should be practical and unsentimental about her environment rather than about people, matching the two facts she's given (chapters/10_april.md:13) and the one other action attributed to her, showing Chloe "a piece of quartz the size of a fist" without any recorded commentary (chapters/11_eight.md:111).
+Speculative, since there's no text to test against.
+
+- [invented] YES if it states a practical fact about a place or object plainly, without an attached feeling.
+- [text] YES if it's delivered mid-task, without pausing what she's doing (chapters/10_april.md:13).
+- [invented] YES if it names a specific person by a fact about them (where they're from, what they do) rather than a general impression.
+- [invented] YES if it's a plain, fair statement of a price or a term — she structures the loan to Chloe as a rate and collateral, not a favor (chapters/18_fifteen.md:109).
+- [invented] YES if she answers a direct question fully once, rather than drawing it out.
+- [invented] NO if it's emotionally expressive or seeks reassurance — nothing in any of her four appearances reads that way.
+- [invented] NO if it's about herself unprompted — everything attributed to her is either about the room, an object, or a transaction.
 
 ## Are they acting like themselves?
 
-Two behavioral facts, both about permanence and objects rather than about people:
-1. She keeps a rock collection "lined up along the sill in order of size" (chapters/10_april.md:13) and, when she moves rooms in June, "Fen's rocks come off the sill into a shoebox with newspaper folded between them" (chapters/10_april.md:137) — the collection itself outlasts any given room assignment, which fits her stated reasoning for not decorating.
-2. She lends nothing and asks for nothing emotionally across the whole book — the one continuing thread involving her, years later, is financial: Chloe "lends forty to a girl called Fen at nine percent against a table saw" (chapters/18_fifteen.md:109), which implies some kind of shop or craft involvement (a table saw as collateral) that is never otherwise established or explained.
+Two behavioral facts, both about permanence and objects rather than people. She keeps a rock collection "lined up along the sill in order of size" (chapters/10_april.md:13), and when she moves rooms in June, "Fen's rocks come off the sill into a shoebox with newspaper folded between them" (chapters/10_april.md:137) — the collection outlasts any given room. And she lends nothing and asks for nothing emotionally across the whole book; the one continuing thread involving her, years later, is financial — Chloe "lends forty to a girl called Fen at nine percent against a table saw" (chapters/18_fifteen.md:109).
 
-Failure mode: writing her as attached to the room, to Chloe, or to Halstead itself. Every trait she has (no decorating, rocks that travel with her, a collateral asset rather than a relationship) points the other way — portable, practical, low-investment in place.
+Failure mode: writing her as attached to a room, a person, or Halstead itself. Every trait she has points the other way — portable, practical, low-investment in place, high-investment in a small set of things she's chosen to keep track of.
 
-## Subjects
+## Subjects and schedule
 
-Grounded against CURRICULUM_GRID.md, which lists wood shop as compulsory at age eight and woodworking / the forge as available block-two electives from age eleven on (CURRICULUM_GRID.md, "Age 8" and "Age 11" rows; the block-two catalogue includes "woodworking" and "the forge"). Nothing in the manuscript itself states which classes Fen takes — everything below is inference built on the one hard object fact the text gives.
+`CURRICULUM_GRID.md` is Chloe's timetable, not the school's — Fen's own track is drawn from her row in `_ALLOCATIONS.md` and expanded here; nothing below reassigns anything already allocated to another student.
 
-- **Favourite:** [inferred, loosely grounded] Something in the wood shop / woodworking / forge line, given she owns or uses a table saw well enough for Chloe to accept it as loan collateral at fifteen (chapters/18_fifteen.md:109). The school's own catalogue makes this a real, available elective, so the inference has somewhere to land — but no scene ever shows her in a class of any kind.
-- **Best at / worst at / least favourite / secretly proud of / would drop if allowed:** UNDEFINED.
-- **How she feels about a classmate who reads ahead:** UNDEFINED. She and Chloe never have a scene where academic performance comes up at all — every interaction between them is domestic (the room, the rocks) or financial (the loan), never school.
+- **Languages, in order** [allocation]: Spanish, French, Mandarin, Japanese, Korean, Cantonese, Hokkien, Malay, Tamil, Telugu, Marathi.
+- **Known for:** Cantonese and Hokkien, from a grandmother [allocation, expanded]. Both were partly spoken at home before Halstead ever taught them formally, so her ten-page reports in those two are the strongest work she turns in — she's translating an existing home register into an academic one, not building from zero the way she is in every other language.
+- **Quietly bad at:** being asked to perform any of them [allocation, expanded [invented]] — she can hold a full conversation in Cantonese with her grandmother without a second thought, but asked to read aloud or demonstrate in front of a class, she goes quiet. It isn't the language; it's the audience.
+- **Why the later languages (Malay, Tamil, Telugu, Marathi):** [invented] after Malay, she started treating the language list the way she treats her rocks — as a set worth completing rather than a set of individually chosen interests. Once she noticed she was collecting languages the same way she collects stones, she kept going on purpose.
+- **Block two electives** [allocation]: painting, whittling, gardening, orienteering, plus the rock collection, which isn't on the catalogue and she keeps anyway.
+- **Favourite, and why:** gardening [allocation-consistent [invented]] — a garden is something you tend without ever really owning it, which fits how she thinks about every place she's ever lived.
+- **Worst at / least favourite:** being asked to explain herself in front of a group [invented, consistent with "quietly bad at" above] — any assignment structured as a public performance rather than a private demonstration.
+- **The subject nobody else took:** the Cantonese-and-Hokkien combination is hers alone under the allocation.
+- **The year something clicked:** [invented] around age nine, the year she started keeping a written list of who'd had her room before her — the year she realized that keeping careful track of things was actually the thing she was good at, more than any single subject.
+- **What she teaches the twelves, from thirteen:** [invented] orienteering — she's the one in her year who always knows exactly where she is, literally and otherwise, and it turned out to be a teachable habit.
+- **Secretly proud of:** the room-history list [invented] — nobody has ever asked her about it, and she has never offered it.
+
+## Home
+
+[Invented, seeded from `_ALLOCATIONS.md`: "Michigan; large extended family, grandmother in the house; everything in her childhood home belonged to somebody before her."] A big, close, multigenerational household outside a mid-sized Michigan town — her grandmother lives with them, cousins are in and out constantly, and the house has been added onto and handed down over two generations, so almost everything in it — the table, half the furniture, a good portion of the dishes — belonged to someone else first. Dinner is loud and crowded, several languages moving across the same table without anyone remarking on it, which is a large part of why Halstead's language load never rattles her the way it might rattle an only child from a quieter house. Her grandmother, who came through several places before Michigan, is the one who taught her Cantonese and Hokkien at the kitchen table, long before any classroom did. When Fen goes home, she slots back into the house's existing order within a day — there's a chore that's already hers, a spot at the table that's already hers, and she takes both back up without anyone needing to tell her to.
+
+## Body
+
+[Invented, seeded from `_ALLOCATIONS.md`: "small, neat, dresses in layers she never takes off; pockets always full."] Small and neat, moves efficiently rather than gracefully. Keeps her sleeves rolled to a precise point and rarely adjusts them again once they're set. Handwriting is tidy and functional, not decorative. Doesn't fidget much; when she's thinking, she sorts something small — rocks, buttons, whatever's on hand — rather than moving around. Sturdy, practical shoes. Eats neatly and finishes everything on her plate.
 
 ## Personality off the page
 
-- Treats a room as temporary rather than something to invest in: won't put anything on the walls because "the rooms all get reassigned in August anyway" (chapters/10_april.md:13).
-- Keeps a personal collection in careful, deliberate order regardless of the room around it: the rocks are "lined up along the sill in order of size" (chapters/10_april.md:13) and are still intact enough to be packed the same way, wrapped in newspaper, when she leaves that room in June (chapters/10_april.md:137).
-- Doesn't stop a task to greet someone arriving: keeps doing what she's doing when Chloe first walks in (chapters/10_april.md:13).
-- Asleep by nine [text, reported secondhand by Chloe] (chapters/10_april.md:117) — the only detail given about her at night; nothing describes a 2am version of her.
-- UNDEFINED: how she occupies a room otherwise, what she does with her hands beyond arranging rocks, how she handles being bored, wrong, praised, or losing, what a free Saturday looks like, what she finds funny in other people.
+- Bored: sorts something — rocks, pebbles, the contents of a drawer.
+- Wrong: corrects it quietly, without announcing that she was wrong in the first place.
+- Praised: a little uncomfortable, redirects attention toward the object or the work rather than herself.
+- Losing: doesn't seem to register competitive loss the way her peers do — games aren't a big category for her.
+- Tired: goes quiet early. Asleep by nine as a child (chapters/10_april.md:117) and the habit never seems to have needed breaking.
+- A free Saturday: outside, gardening or walking the grounds looking for stones.
+- What she finds funny in other people: dry, deadpan jokes — she doesn't laugh loudly, but she notices them.
 
-## Would do / would never do
+## Interior life
 
-**Would:**
-- Explain something practical and unsentimental about the room to a brand-new roommate within minutes of meeting her, without pausing what she was already doing (chapters/10_april.md:13).
-- Keep a personal collection in the same careful order across at least one full room change (chapters/10_april.md:13, 137).
-- Show someone an object she cares about without turning it into a conversation — she "shows her a piece of quartz the size of a fist" and the text records no further exchange (chapters/11_eight.md:111).
-- Lend or extend value to someone at a set price rather than for free or out of sentiment — she puts up a table saw as loan collateral rather than simply asking Chloe for cash (chapters/18_fifteen.md:109).
-- Stay loosely in touch across years without it becoming a close friendship — she's still enough a reference point at seventeen or eighteen for her opinion of a college to matter (CHAPTERS_16_22_v2.md:32).
+[Invented, consistent with everything above.] Wants, eventually, to go back to Michigan and take over the garden the way her grandmother runs it now — or to travel to the places her family's languages actually come from, seeing the set completed in person rather than on paper. Afraid of losing track of something that mattered, which is most of what the room-history list is actually protecting against. Thinks about, most nights before she's asleep by nine, whichever name she's still trying to place if she's mid-search on a room's history; otherwise nothing much — she sleeps easily. Would spend a free year visiting the branches of her family scattered by the same history that put a Cantonese-and-Hokkien-speaking grandmother in a Michigan kitchen. Believes that objects and places carry the people who had them before you, and that you owe them a little care even in passing — a belief most of her Halstead peers, trained to make their own original mark, would push back on hard. What she's wrong about: she thinks impermanence means she shouldn't invest in a place, when what she's actually doing — the records, the careful order, the collecting — is a real form of investment, just aimed at objects and facts instead of walls.
 
-**Would never:**
-- Would never decorate a room she expects to leave — stated directly as her own reasoning (chapters/10_april.md:13).
-- Would never be shown initiating an emotional conversation — everything attributed to her is practical, procedural, or object-based; nothing in the text has her asking Chloe how she's doing or offering comfort.
-- Would never be shown breaking her own routine (asleep by nine, per Chloe's report) for anything — no exception is ever mentioned.
-- Would never be shown resentful about losing a roommate, being moved to a new floor, or any other disruption — the several room and roommate changes she goes through are all reported without any stated reaction from her.
-- Would never be given a directly quoted line under the current draft — flagged here as a fact about the text as it stands, not a trait of hers; see Known problems.
+## The small stuff
 
-## Body and habits
+Keeps a small paper list, added to over the years, of every name she's found for who had her room before her — never shown to anyone [text-seeded private detail, per `_ALLOCATIONS.md`, expanded [invented]]. Paints small, precise studies of individual rocks and keeps them in a box rather than pinning them up — the same instinct as not decorating the walls. At least one small stone in her pocket at any given time. Drinks tea because it's what the house drinks, not as a ritual she's built herself. First thing in the morning, she checks that whatever she was sorting the night before is still in order.
 
-UNDEFINED almost entirely. The only physical facts anywhere in the text: she is "asleep by nine" (chapters/10_april.md:117, reported by Chloe, not shown), and she owns rocks and, later, a table saw. No build, face, hair, clothing, voice, or posture is described anywhere across the roughly ten years she appears in the book.
+## Would do
+
+1. Explain something practical to a new roommate within minutes of meeting her, without pausing what she was doing (chapters/10_april.md:13).
+2. Keep a personal collection in careful order across every room change (chapters/10_april.md:13, 137).
+3. Show someone an object she cares about without turning it into a conversation (chapters/11_eight.md:111).
+4. Lend something of value at a fair, stated price rather than give it away for free or ask for nothing (chapters/18_fifteen.md:109).
+5. Stay loosely in touch with someone for years without it becoming a close daily friendship (CHAPTERS_16_22_v2.md:32).
+6. Find out and remember a fact most people would never think to ask about — who had her room before her [invented].
+7. Speak Cantonese or Hokkien easily and at length with someone she trusts one-on-one [allocation-grounded].
+8. Spend a free afternoon in the garden rather than indoors [allocation-grounded].
+9. Paint something precisely and then put it away rather than display it [invented].
+10. Fold easily into a large, loud family dinner without needing extra attention [invented, home-grounded].
+
+## Would never
+
+1. Would never decorate a room she expects to leave — stated directly as her own reasoning (chapters/10_april.md:13).
+2. Would never perform a language on demand in front of a group, even one she speaks fluently at home [allocation-grounded] — ask her to demonstrate Cantonese for a class and she'll go quiet, not because she can't, but because performance and use are different things to her.
+3. Would never treat a room, a school year, or a game as if it were permanently hers — the belief underneath nearly everything else on this sheet.
 
 ## Relationships
 
-- **Chloe (roommate, ages 8–9):** [text] The person she interacts with most, and the least emotionally invested relationship shown on the page for either character — Fen explains two practical facts about the room and goes back to what she was doing (chapters/10_april.md:13); nothing suggests either of them wants anything from the other beyond sharing space.
-- **Chloe (later, financial):** [text] By fifteen the relationship is transactional rather than domestic — Chloe lends her money at interest against the table saw (chapters/18_fifteen.md:109), and it's repaid; no scene shows them together for this to happen in.
-- **Her second-floor roommate, an unnamed girl from Maine:** [text, unelaborated] Mentioned once as who she's living with by that September (chapters/11_eight.md:111); no interaction between them is shown.
+- **Chloe (roommate, ages 8–9):** [text] The person she interacts with most, and the least emotionally invested relationship shown on the page for either character — two practical facts about the room, then back to what she was doing (chapters/10_april.md:13).
+- **Chloe (later, financial):** [text] By fifteen, transactional rather than domestic — a loan at interest against the table saw (chapters/18_fifteen.md:109), repaid.
+- **Her second-floor roommate, an unnamed girl from Maine:** [text, unelaborated] Mentioned once as who she's living with that September (chapters/11_eight.md:111).
+- **Her grandmother:** [invented] Taught her Cantonese and Hokkien at the kitchen table; the source of both her strongest language work and her habit of caring for things that outlast any one owner.
+- **Her cousins:** [invented] A large, constantly-present extended family that makes Halstead's crowded dormitory life feel unremarkable to her rather than strange.
 
 ## Likes, dislikes, habits
 
-- Collects rocks, kept in size order [text] — chapters/10_april.md:13, still present and packed up in chapters/10_april.md:137.
-- Treats room assignments as temporary and not worth decorating for [text] — the "no point putting anything on the walls" reasoning (chapters/10_april.md:13).
-- Asleep by nine [text, reported by Chloe to her mother] — "'She's from Michigan,' Chloe says. 'She's asleep by nine.'" (chapters/10_april.md:117). Note this is Chloe's secondhand report, not a scene of Fen actually going to sleep.
-- Owns or uses a table saw by age fifteen [text, inferred activity] — offered as loan collateral (chapters/18_fifteen.md:109); no scene shows her doing woodwork, so treat the activity itself as implied rather than shown.
+- Collects rocks, kept in size order [text] — chapters/10_april.md:13, still present and packed up at chapters/10_april.md:137.
+- Treats room assignments as temporary and not worth decorating for [text] — chapters/10_april.md:13.
+- Asleep by nine [text, reported by Chloe] — chapters/10_april.md:117.
+- Speaks Cantonese and Hokkien fluently, from her grandmother [allocation].
+- Gardens and paints small studies of rocks, kept private [allocation, expanded [invented]].
+- Keeps a private written record of who's lived in her room before her [invented — her defining private detail].
 
 ## Facts a rewriter needs
 
-- **Name:** Fen. No surname given anywhere. UNDEFINED whether "Fen" is a full first name or a nickname/short form.
-- **Home:** from Michigan (chapters/10_april.md:13), and still connected to it at least a decade later — Chloe applies to "one [college] in Michigan because Fen said it was nice" (CHAPTERS_16_22_v2.md:32).
-- **Housing timeline:** rooms with Chloe on the third floor starting age eight (chapters/10_april.md); reassigned to second floor with "a girl from Maine" by that September (chapters/11_eight.md:111); still enrolled and financially active at age fifteen (chapters/18_fifteen.md:109); still enough a part of Chloe's frame of reference to influence a college choice at around seventeen to eighteen (CHAPTERS_16_22_v2.md:32).
-- **Family:** UNDEFINED entirely.
-- **Gender — tested against the reference documents, not repeated from them.** BETA_NOTES.md and the synopsis both state "Gender: unstated." That is not accurate. The manuscript commits explicitly, twice: "a girl from Michigan named Fen" (chapters/10_april.md:13) and "a girl called Fen" (chapters/18_fifteen.md:109). Both instances use "girl" directly attached to her name, not implied through a roommate or pronoun. **This should be corrected in any reference material, not carried forward as UNDEFINED** — the manuscript itself does choose, even though the surrounding character notes say it doesn't.
-- **"One line, never returns" — also not accurate.** The reference documents describe her this way, but she recurs: chapters/11_eight.md (an in-person action, showing Chloe quartz, roughly five months later), chapters/18_fifteen.md (a financial relationship still active at age fifteen), and CHAPTERS_16_22_v2.md (referenced again around age seventeen to eighteen). What's true is narrower and more specific than "never returns": she never again gets a scene with quoted dialogue or real presence after chapters/10_april.md — she persists for roughly a decade of story time as a background fact, not as a character who gets to speak.
+- **Name:** Fen Teoh (full given name Wai Fen Teoh; "Fen" is what everyone calls her) [invented surname and full given name — the manuscript gives only "Fen"].
+- **Home:** Michigan [text], a large multigenerational household with a grandmother in residence [allocation, expanded].
+- **Family:** grandmother (Cantonese/Hokkien speaker, taught her both), parents, several cousins in and out of the house regularly [invented, seeded by allocation].
+- **Housing timeline:** rooms with Chloe on the third floor starting age eight (chapters/10_april.md); second floor with a girl from Maine by that September (chapters/11_eight.md:111); still enrolled and financially active at fifteen (chapters/18_fifteen.md:109); still a live reference point at seventeen to eighteen (CHAPTERS_16_22_v2.md:32).
+- **Gender — corrected against the reference documents, not repeated from them.** Earlier reference material called this "unstated." It isn't: the manuscript commits explicitly, twice — "a girl from Michigan named Fen" (chapters/10_april.md:13) and "a girl called Fen" (chapters/18_fifteen.md:109).
+- **"One line, never returns" — also inaccurate.** She recurs at chapters/11_eight.md (an in-person action, five months later), chapters/18_fifteen.md (a financial relationship still active at fifteen), and CHAPTERS_16_22_v2.md (referenced again around seventeen to eighteen). What's true: she never again gets a scene with quoted dialogue after chapters/10_april.md, but she persists as a background presence for roughly a decade of story time.
 
 ## Known problems
 
-1. **The gender-unstated claim in the reference documents is simply wrong** and should not be repeated in future notes or by a rewriter working from them — see Facts above for the two citations that settle it.
-2. **The "never returns" claim undersells what's actually there.** Four separate mentions across roughly a decade of story time is a real, trackable presence — thin, but not absent. If the author wants her genuinely gone after chapters/10_april.md, the three later mentions (chapters/11_eight.md, chapters/18_fifteen.md, CHAPTERS_16_22_v2.md) would need to be cut; if the author wants to keep the sense of an ongoing, low-contact friendship, that's already what the current draft has — it just has no scene to show it happening.
-3. **No verbatim line exists to build on.** Any future dialogue written for Fen is new work, not a restoration of an existing voice — flag this to whoever writes it so a line isn't accidentally presented as if it matches something already in the text.
+1. **No verbatim line exists to build on.** Any dialogue written for Fen from this point is new work, not a restoration of an existing voice — flag this to whoever writes it.
+2. **The gender-unstated claim in older reference material is simply wrong** and shouldn't be repeated — see Facts above.
+3. **Heavily invented sheet.** Languages and electives are allocation, not text; Home, Body, and Interior life are built from a two-line seed. Treat this whole sheet as the proposed foundation for a character who currently has almost no textual footprint, not as recovered fact.
 
 ## Do not confuse with
 
-**Priya**, the other roommate figure introduced with one defining object-obsession and then largely sidelined (horses, versus Fen's rocks). The cue that separates them: Priya is the camp-era roommate (age six to seven, chapters/04_pluto.md) who stays part of Chloe's immediate social circle at Halstead — she's named at meals, remembered, borrowed from, discussed. Fen is the Halstead dorm-era roommate (from age eight onward) who is structurally adjacent to Chloe's life for a decade but never folded into her circle of friends the way Priya is — no shared meals, no shared plans, nothing but a shoebox of rocks, a debt, and one remembered opinion about a college.
+**Priya**, the other roommate figure introduced with one defining object-obsession and then largely sidelined (horses, versus Fen's rocks). The cue that separates them: Priya is the camp-era roommate (age six to seven) who stays part of Chloe's immediate social circle at Halstead — named at meals, remembered, discussed. Fen is the Halstead dorm-era roommate (from age eight onward) who is structurally adjacent to Chloe's life for a decade but never folded into her circle the way Priya is — no shared meals, no shared plans, nothing but a shoebox of rocks, a debt, and one remembered opinion about a college.
