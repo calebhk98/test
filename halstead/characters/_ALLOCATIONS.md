@@ -18,6 +18,9 @@ Two things that were imposed and should be re-examined rather than preserved:
 
 Names repeating across the cast is fine and needs no coordination.
 
+Two rows below are wrong and are being corrected by their agents: Ruth was placed in the
+same town as Chloe, which the manuscript rules out, and Owen was written as a genius.
+
 ## Languages
 
 One a year from seven or eight, graded by a ten-page report written in the target
@@ -69,7 +72,7 @@ Each different. Expand freely; do not swap.
 
 | | from | family | the household fact that shaped them |
 | :-- | :-- | :-- |
-| **Ruth** | same town as Chloe | mother known to Meg by name, father sells insurance, younger brother gets in later |
+| **Ruth** | a different state from Chloe, see _CALIBRATION.md on geography | mother known to Meg by name, father sells insurance, younger brother gets in later |
 | **Sam** | rural, four hours the other direction | large, loud, several older siblings, a family business with a schedule on the wall |
 | **Kavi** | a university town | mother a hospital pharmacist, father teaches; one much older sister |
 | **Nadia** | a small city, immigrant family, second generation | parents run a business with a real balance sheet; she has done the books since she was eleven |
