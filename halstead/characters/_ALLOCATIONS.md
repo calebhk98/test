@@ -76,8 +76,8 @@ Each different. Expand freely; do not swap.
 | **Sam** | rural, four hours the other direction | large, loud, several older siblings, a family business with a schedule on the wall |
 | **Kavi** | a university town | mother a hospital pharmacist, father teaches; one much older sister |
 | **Nadia** | a small city, immigrant family, second generation | parents run a business with a real balance sheet; she has done the books since she was eleven |
-| **Eli** | suburban, unremarkable, and he likes that about it | one parent, an aunt who lives close, no siblings |
-| **Theo** | a coastal town, off-season quiet | grandparents raised him, both still living, both formal |
+| **Eli** | central Ohio, a suburb outside a mid-size city, unremarkable, and he likes that about it | one parent, an aunt who lives close, no siblings |
+| **Theo** | a small harbor town on the coast of Maine, off-season quiet | grandparents raised him, both still living, both formal |
 | **Priya** | horse country, two hours out | parents who are not academic and are entirely unbothered by that |
 | **Odile** | a French-speaking household, first generation | mother a physiotherapist, a younger brother who worships her |
 | **Fen** | Michigan | large extended family, grandmother in the house |
