@@ -130,4 +130,4 @@ They discuss it the whole way home.
 
 Ruth shuts the box off in the corridor and puts it in the chat before she sleeps. Four lines and a photo of Sam standing in the lot with his arms out.
 
-By breakfast there are sixty replies and an argument about whether it counts. Somebody in the year above has sent one laughing face and nothing else, and Sam won't discuss it, and won't for so long that it becomes the funniest part of the whole thing.
+By breakfast there are sixty replies and an argument about whether it counts. Somebody in the year above has sent one laughing face and nothing else, and Sam won't discuss it, and won't for so long that people start bringing it up just to watch him not answer.

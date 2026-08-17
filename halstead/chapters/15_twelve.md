@@ -224,13 +224,13 @@ Chloe walks around the corner at a normal speed with her hands empty and her arm
 
 The face she's supposed to make is confused and half asleep, and even though she is bad at it, just like drawing and dance, it's her best shot. 
 
-"Uh," she says. "Hi. Who are you?", tilting her head like a lost puppy.
+"Uh," she says. "Hi. Who are you?" She tilts her head like a lost puppy.
 
-All four of them turn. The nearest one comes at her fast and low and gets a gloved hand up near her mouth, and she lets him, because moving would be wrong. He doesn't hit her, just like she knew he wouldn't. He puts the hand there and then stops, with his other arm half up, doing exactly what she needed him to do, in front of three men who are all looking at the same thing.
+All four of them turn. The nearest one comes at her fast and low and gets a gloved hand up near her mouth, and she lets him, because moving would be wrong. He doesn't hit her. He puts the hand there and then stops, with his other arm half up, doing exactly what she needed him to do, in front of three men who are all looking at the same thing.
 
-Then it's very fast and very quiet.
+Then nobody makes a sound.
 
-It takes nine seconds. Kavi takes the two at the back because he's closest to them. Ruth takes the third. Sam takes the one with his hand on Chloe's face and does it badly, misses the vein and has to go again. The man takes that half a second, gets an arm free and swings but hits nothing before he then goes down.
+It takes nine seconds. Kavi, closest to them, takes the two at the back; Ruth takes the third, and Sam goes for the one with his hand on Chloe's face, doing it badly, missing the vein and going again. The man takes that half a second, gets an arm free and swings but hits nothing before he then goes down.
 
 Chloe steps back out of the way and sits down on the floor because her legs have decided to.
 
@@ -240,7 +240,7 @@ Ruth is already moving between the four of them, two fingers on a throat, then t
 
 "I missed the first stick," Sam says, looking up.
 
-"Both were in eventually." Kavi says.
+"Both were in eventually," Kavi says.
 
 “Yeah, but he almost hit Chloe, the one person we needed to take down correctly, and I messed up.”
 
@@ -264,19 +264,19 @@ The four of them are dressed like a maintenance crew. Dark work trousers, plain 
 
 "They didn't."
 
-"That's not an argument, that's an outcome, and besides, they were already inside, so  we are losing marks" Ruth says.
+"That's not an argument, that's an outcome, and besides, they were already inside, so we are losing marks," Ruth says.
 
 "It's still going to be slow," Chloe says, sitting against the wall with her arms around her knees. "Alarm to contact. That's got to be seven, eight minutes. And they were already inside."
 
-"That's the sensors."Kavi says.
+"That's the sensors," Kavi says.
 
 "They'll say it's on us."
 
-"They shouldn't run it at four in the morning without telling us," Ruth says, to nobody in particular. "Four's fine, Four's happened, as long as They tell you."
+"They shouldn't run it at four in the morning without telling us," Ruth says, to nobody in particular. "Four's fine, four's happened, as long as they tell you."
 
-"Escalation. We've been good." Kavi says.
+"Escalation. We've been good," Kavi says.
 
-"That's not a reason. It's four in the morning," she says again, and she puts her head back against the wall.
+"That's not a reason. It's four in the morning," she says, and she puts her head back against the wall.
 
 Sam calls it in as soon as the last knot is tied. Then they wait, since Sinclair is four buildings away.
 
