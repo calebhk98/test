@@ -112,7 +112,7 @@ Pockets usually hold a screw, a rubber band, or a small found object. Draws vehi
 - **Chloe:** [text] The only person he's shown speaking to or about. Same flat, unelaborated register whether he's just mentioned in passing or actually addressing her.
 - **Mrs. Aldana:** [text] The one relationship that visibly shapes his behavior — he changes where he puts his hands specifically because of her (chapters/01_before.md:10).
 - **His uncle:** [invented] Taught him that careful beats fast; the Saturday-garage relationship that shapes almost everything else about him.
-- **Marcus:** [invented] A steady best friend who shares his interest in building and taking things apart.
+- **Dean:** [invented] A steady best friend who shares his interest in building and taking things apart.
 - **Kayleigh Burns:** [text] Shares a table group with her in second grade (chapters/07_the_same_room.md:107); no direct exchange between them shown.
 
 ## Likes, dislikes, habits

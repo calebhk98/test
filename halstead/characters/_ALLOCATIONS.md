@@ -141,8 +141,16 @@ assignment and were resolved here.
 
 | | name | note |
 | :-- | :-- | :-- |
-| Sinclair | Marcus | |
+| Sinclair | Marcus | Bryce's invented friend was renamed Dean to clear this |
 | Whitaker | Alan | reassigned from Marcus |
+| Bell | Desmond | |
+| Hearn | Walter | |
+| Amberg | Julian | |
+| Kowalczyk | Bogumila "Bo" | |
+| Baptiste | Etienne | |
+| Pruitt | Harlan | |
+| Doyle | Aaron | |
+| Sandoval | Elena | |
 | Aldana | Carmen | |
 | Prahl | Diane | |
 | Ammons | Dr. Miriam | |
