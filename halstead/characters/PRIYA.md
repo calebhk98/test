@@ -162,23 +162,27 @@ activity. Nothing in the text shows Priya aware that this happened.
 
 ## Home
 
-The Bluegrass region of central Kentucky, two hours from Louisville. The family runs a working
-boarding stable rather than a hobby farm. Her father is a farrier with a route across the county,
-out the door before six with a truck full of tools that smell like scorched hoof. Her mother runs
-the barn itself: feed schedule, tack repair, lessons for other people's kids on Saturdays. Neither
-of them finished an academic credential, and neither has ever treated that as a gap in their
-lives. An older brother, already out of school and apprenticing with their father, still lives in
-the second bedroom and will probably take over the farrier route in a few years; nobody in the
-family has discussed this as a plan, it is simply understood. Dinner runs early, set by the
-evening feed, everyone still in barn clothes, boots by the door. The conversation runs to which
-horse needs what and who's coming Saturday. Her parents ask what happened, who she rode, what
-broke and got fixed. The concept of a ranking has no foothold in the house at all. The single fact
-that shapes her more than anything else on this sheet: nobody in her house has ever asked what she
-came top of. It's the only relationship to achievement in the whole cohort that was never built
-around a number, and it's why she can walk away from Halstead's version of it without treating the
-walk as a loss. When she goes back, she reverts immediately to being useful with her hands:
-holding a horse for her father mid-shoe, hauling water, mucking a stall before anyone's asked.
-Nobody there has any idea what a fencing category is.
+Nashville, Tennessee. An ordinary house on an ordinary street, nothing about it marked for
+horses at all. Her father is an electrician, out on call jobs across the city more days than not.
+Her mother works the front office of a dental practice, on her feet from eight to five, scheduling
+and billing. Neither of them finished a four-year degree, and neither has ever treated that as a
+gap in their lives. A younger brother is still in middle school and has no particular interest in
+anything Priya does. Dinner is whatever's fastest between two working schedules, some nights at
+the table, some nights standing at the counter between one parent's shift and the other's. The
+conversation runs to who needs the car and whether the game's on, never to school. Her parents ask
+if she ate, how her ride went, whether she needs a lift to the barn Saturday. The concept of a
+ranking has no foothold in the house at all. The single fact that shapes her more than anything
+else on this sheet: nobody in her house has ever asked what she came top of. It's the only
+relationship to achievement in the whole cohort that was never built around a number, and it's why
+she can walk away from Halstead's version of it without treating the walk as a loss.
+
+The horses come from outside the house entirely. A stable at the edge of the city has had her
+since she was small, first through a lesson programme her mother drove her to twice a week after
+work, then through an arrangement she worked out herself around ten: she mucks out and hauls water
+in exchange for extra time in the saddle, which is most of why she was already riding six years
+before Halstead ever offered it as a choice. When she goes back, she's at that stable within a
+day, in whatever clothes were closest to the door, doing the same chores she did at eight. Nobody
+there has any idea what a fencing category is.
 
 ## Body
 
@@ -186,8 +190,9 @@ Strong through the shoulders from actual barn work, hay, water, tack, not exerci
 sake, and sunburnt in the uneven way of someone who works outside without planning around it.
 Permanently a little untidy: shirt half-tucked, one sleeve pushed higher than the other, a smear
 of something on a cuff she hasn't noticed. Her hands are rough and nicked rather than elegant,
-calluses at the reins, a burn scar from a farrier's tool she picked up once out of curiosity and
-immediately regretted. She moves like someone who already knows where the uneven ground is,
+calluses at the reins, a thin rope-burn scar across one palm from a lead line that got away from
+her once, early on, before anyone taught her to wrap her hand. She moves like someone who already
+knows where the uneven ground is,
 economical rather than careful, and demonstrates with her whole body before she'll explain with
 words (chapters/12_nine.md:111). Left to dress herself, it's whatever was clean and near the door,
 riding boots even on days nothing scheduled needs them. She eats fast and without ceremony,
@@ -327,10 +332,11 @@ thinking, which has probably been true of every morning of her life since she wa
 ## Facts a rewriter needs
 
 - **Name:** Priya Anand. The surname doesn't exist in the manuscript; this sheet gives her one.
-- **Family:** father a farrier, mother runs the family's boarding stable, one older brother
-  apprenticing with their father. Neither parent has an academic credential and neither treats
-  that as a gap.
-- **Home:** the Bluegrass region of central Kentucky, two hours from Louisville.
+- **Family:** father an electrician, mother works the front office of a dental practice, one
+  younger brother in middle school with no particular interest in horses. Neither parent has a
+  four-year degree and neither treats that as a gap.
+- **Home:** Nashville, Tennessee. The riding comes from a stable at the edge of the city, not
+  from the family property.
 - **Background before camp:** rides horses, has done so since she was six
   (chapters/12_nine.md:113), six years before Halstead ever offers it as an elective.
 - **Good at:** riding, "better at all of it" than Chloe within two years
