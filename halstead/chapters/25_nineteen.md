@@ -8,13 +8,13 @@ Chloe gets a job at a company that translates documents for businesses. Contract
 College runs alongside it. Fifteen credits in the autumn, which she picked by looking at what sounded interesting rather than what a first year normally takes, and which turns out to cost her about six hours a week including the reading. She does the reading on the bus. In the spring she takes twenty-one credits and an evening seminar, mostly because the registrar said she couldn't and then couldn't produce a rule saying so.
 
 
-She is by a long way the youngest person at the job, which she takes to mean she's basically the intern, so for the first two weeks she offers to do everybody's filing and is confused when they say no.
+She is years younger than everyone else at the job, which she takes to mean she's basically the intern, so for the first two weeks she offers to do everybody's filing and is confused when they say no.
 
 
-The work takes maybe three hours of her day. She does it in three hours and then asks for more, and they give her more, and she does that too, and by week five they've stopped being surprised and started quietly routing the Russian and the Mandarin straight to her desk.
+The work takes maybe three hours of her day. She finishes and asks for more, and when they give her more, she does that too. By week five they've stopped being surprised and started quietly routing the Russian and the Mandarin straight to her desk.
 
 
-She likes the people. That's the main thing. Deb who sits opposite her talks about her son constantly and Chloe learns his entire life story and is genuinely invested in it by October.
+She likes the people. Deb who sits opposite her talks about her son constantly and Chloe learns his entire life story and is genuinely invested in it by October.
 
 
 ________________
@@ -43,7 +43,7 @@ She writes back that she doesn't, that it's just her, and that six thousand word
 He doesn't reply.
 
 
-She doesn't think much of it. She's told the truth and the truth is boring.
+She doesn't think much of it. She's told the truth. It isn't interesting.
 
 
 ________________
@@ -51,13 +51,10 @@ ________________
 
 
 
-The thing she notices, without deciding it's a problem, is that she keeps having to say the same thing twice.
+Without deciding it's a problem, she keeps having to say the same thing twice.
 
 
 She'll explain something at work, plainly, and Deb will not have it, so Chloe will find another way in. A different angle, a comparison, something from Deb's own life. That usually works. She gets good at it fast, and she comes to think of it as ordinary courtesy, the way you'd speak up in a loud room.
-
-
-It does not occur to her that she is doing it constantly.
 
 
 ________________
@@ -92,7 +89,7 @@ ruth: and about 20% speak one at home, which is most of that 25
 ruth: so its mostly not school. its immigration
 
 
-There is nothing in the chat for nine minutes, which for them is very long.
+There is nothing in the chat for nine minutes.
 
 
 nadia: ok but theo still cant parallel park
@@ -127,7 +124,7 @@ Each time somebody makes a joke inside a minute and it moves on. Each time Ruth 
 In April she stops posting.
 
 
-Sam notices in June. Kavi says she's probably just buried, it's finals. Chloe messages her directly twice and gets sorry, been swamped and then nothing at all.
+Sam mentions it in June. Kavi says she's probably just buried, it's finals. Chloe messages her directly twice and gets sorry, been swamped and then nothing at all.
 
 
 Six months.
