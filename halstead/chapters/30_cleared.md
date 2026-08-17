@@ -72,7 +72,7 @@ Whitaker fills half a page before he looks up. "Anything else in that category?"
 "Two others," Chloe says. "Same thing. Same reason."
 
 
-Whitaker turns back a page, checking something against what he's already written. "Would you tell me if I said it was necessary?"
+Whitaker turns back a page, cross-checking his own notes. "Would you tell me if I said it was necessary?"
 
 
 Whether to tell him if he insists, or hold the line the way she's holding it for the other two, that's what she sits with for a few seconds. "I'd want to talk to her first," she says.
