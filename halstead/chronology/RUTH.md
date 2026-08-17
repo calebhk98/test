@@ -23,22 +23,22 @@ A note on method: the manuscript ages Chloe (and, by extension, the same-cohort 
 | Chloe age 9 | Ruth argues zero/division-by-zero with the math teacher | `chapters/12_nine.md:45-46` |
 | Chloe age 9 (April) | Apple-throwing "bracket rule" game; Ruth hits four in a row above the bracket | `chapters/12_nine.md:197-203` |
 | Chloe age ~10 | "Ruth is on Arabic" (already an established fact by this chapter) | `chapters/13_ten_pages.md:126` |
-| Chloe age ~10 | Watch drill: "Six is me" / "Six is four of us" exchange with Chloe | `chapters/13_ten_pages.md:118-122` |
+| Chloe age ~10 | Watch drill: "Six is me" / "Six is four of us" exchange with Chloe | `chapters/13_ten_pages.md:120-122` |
 | Chloe age ~11 | Ruth defends her choice of Arabic against Chloe's Latin, in a doorway | `chapters/14_sixty_degrees.md:57-81` |
 | Chloe age ~11 | Whole-school Watch: Ruth runs the east stairwell, gives orders | `chapters/14_sixty_degrees.md:215` |
-| Chloe age 12 (October, doorway to Arabic classroom) | "cuffs stop reaching her wrists" — Chloe now taller than Ruth; Ruth: "My mother was exactly this height at twelve and she's five foot nine" | `chapters/15_twelve.md:45-49` |
+| Chloe age 12 (October, doorway to Arabic classroom) | "cuffs stop reaching her wrists" — Chloe now taller than Ruth; Ruth: "My mother was exactly this height at twelve and she's five foot nine" | `chapters/15_twelve.md:51-49` |
 | Chloe age 12 | Bread-test dispute in Ruth's room; midnight kitchen test | `chapters/15_twelve.md:55-97` |
 | Chloe age 12 | Tomato stock count; Ruth switches counting method mid-task | `chapters/15_twelve.md:113-121` |
 | Chloe age 12, 4 a.m. | The loading-dock intrusion (four "operators" over the fence). Ruth takes the third man, monitors vitals, writes numbers on her arm; gets a B-minus and is "unbearable about it" | `chapters/15_twelve.md:159-337` |
-| Chloe age 12 (confirmed) / Ruth's age not stated as a number but same event, same cohort | "she's twelve, and it's four in the morning" / "you are 12 years old" | `chapters/15_twelve.md:327,377` |
+| Chloe age 12 (confirmed) / Ruth's age not stated as a number but same event, same cohort | "she's twelve, and it's four in the morning" / "you are 12 years old" | `chapters/15_twelve.md:379,377` |
 | "Last year" relative to Chloe's age-13 year (≈ Ruth's age 12) | Ruth and Kavi take cryptography and networks | `chapters/16_thirteen.md:77` |
-| Chloe age 13, April | Ruth shows Chloe a shoebox device she has built: finds video recorders on nearby networks, tries shipped-default passwords, "writes noise into what's being recorded" | `chapters/16_thirteen.md:77-91` |
+| Chloe age 13, April | Ruth shows Chloe a shoebox device she has built: finds video recorders on nearby networks, tries shipped-default passwords, "writes noise into what's being recorded" | `chapters/16_thirteen.md:91-91` |
 | Chloe age 13 | Ruth: "It is not better, Sam" — the bread-day argument, later cited as her signature line | `chapters/15_twelve.md:59` (bread argument itself is ch. 15; the RUTH.md "signature" citation for this line is ch.15, not 16 — noted for completeness) |
 | Chloe age 14 | "Ruth was bored in the briefing," per Odile | `chapters/17_fourteen.md:19` |
-| Chloe age 14 | Ruth builds a live sound-generation project; two days on the floor of her room, breakthrough "about one in the morning" | `chapters/17_fourteen.md:95-105` |
+| Chloe age 14 | Ruth builds a live sound-generation project; two days on the floor of her room, breakthrough "about one in the morning" | `chapters/17_fourteen.md:105-105` |
 | Chloe age 14, winter break | Recapped to Chloe's mother: "Ruth built a thing that makes sound out of nothing" | `chapters/17_fourteen.md:169` |
-| Chloe age 15, April | Ruth times Chloe's rifle sessions on a Saturday: "I'm on ninety-one" | `chapters/18_fifteen.md:49-57` |
-| Chloe age 16 (recounted to Chloe's father over the following summer) | "Ruth's on ninety-one" / "She's on ninety-one" (repeated, same figure) | `chapters/19_sixteen.md:145,149` |
+| Chloe age 15, April | Ruth times Chloe's rifle sessions on a Saturday: "I'm on ninety-one" | `chapters/18_fifteen.md:55-57` |
+| Chloe age 16 (recounted to Chloe's father over the following summer) | "Ruth's on ninety-one" / "She's on ninety-one" (repeated, same figure) | `chapters/19_sixteen.md:151,149` |
 | Chloe age 16–17 (after ch.19, before ch.21's college-application season) | Night out: diner ("Waffle House"), mugging/fight scene, shopping-cart stunt. Ruth brings "a box she built for a networking class the year before"; restrains one attacker and checks him for concussion | `chapters/20_the_parking_lot.md:7,17,49,79-81` |
 | Same night | Discussion of whether Ruth's brother (four years behind her) is getting into Halstead — "which he is" | `chapters/20_the_parking_lot.md:17` |
 | Senior year, October | "MIT says four percent," Ruth in the common room | `chapters/21_the_applications.md:14` |
@@ -67,7 +67,7 @@ A note on method: the manuscript ages Chloe (and, by extension, the same-cohort 
 **Chapter 16 ("Thirteen" — Chloe's, and by cohort, Ruth's age-13 year), in scene:**
 > "Ruth and Kavi took cryptography and networks last year, which puts Ruth three months ahead of the class by the time Chloe arrives in it. In April she comes into Chloe's room after lights out with a shoebox under her arm and sets it on the end of the bed, grinning, and does not sit down." — `chapters/16_thirteen.md:77`
 
-> "It goes looking for recorders. Anything on any network in range that's recording video, and about half of them are still on the password they shipped with, so it tries all of those first." ... "Then it writes noise into what's being recorded." — `chapters/16_thirteen.md:83,89`
+> "It goes looking for recorders. Anything on any network in range that's recording video, and about half of them are still on the password they shipped with, so it tries all of those first." ... "Then it writes noise into what's being recorded." — `chapters/16_thirteen.md:91,89`
 
 **Chapter 34 ("The Files"), Ruth's own words, first person, years later:**
 > "ruth: i built that box in about a weekend when i was thirteen so we wouldnt get detention" — `chapters/34_the_files.md:69`

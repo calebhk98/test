@@ -194,6 +194,6 @@ established move, which reads as an error rather than as a shared culture.
    mechanism-interrogation move in Sam's mouth.
 4. Meg and Dave both use exact-phrase repetition under stress. Assign it to Meg
    (Axis 4) and take it off Dave. *Not* the "Usually pretty good" exchange in
-   `03_the_letter.md:63-64` — that is one echoing the other, and it works.
+   `03_the_letter.md:64-64` — that is one echoing the other, and it works.
 5. Eli and Theo collapse into identical filler under low stakes: "yeah", "ok", "no",
    "hang on". Whoever speaks second should be doing their Axis 2 move instead.

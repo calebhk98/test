@@ -130,7 +130,7 @@ book, so reconcile them before revising from them.
 | 2 | Bell: "Female (inferred)… not explicitly stated — flag for the author" | Masculine, twice, `14_sixty_degrees.md:13` and `15_twelve.md:29` |
 | 3 | Kowalczyk: Male | Feminine throughout, `13_ten_pages.md:39`, `17_fourteen.md:57` |
 | 4 | Sandoval: a real he/she conflict between ch14 and ch25 needing a fix | Named only in `18_fifteen.md`, feminine; ch14 has no Sandoval at all |
-| 5 | Fen: "Gender: unstated… one line, never returns" | "a girl called Fen", `18_fifteen.md:109`; returns three times |
+| 5 | Fen: "Gender: unstated… one line, never returns" | "a girl called Fen", `18_fifteen.md:111`; returns three times |
 | 6 | Dad is unnamed | Meg calls him Dave four times |
 | 7 | "the room-shaped object" is one of Chloe's conceits | Sam says it, `04_pluto.md:45` |
 | 8 | Kavi is wrong about MIT's four percent | Sam makes that call; Kavi isn't in the scene |
@@ -147,7 +147,7 @@ book, so reconcile them before revising from them.
 
 ## One contradiction to resolve
 
-`10_april.md:37` has Ruth call Owen "the one who wouldn't do the water thing". `:103` has
+`10_april.md:39` has Ruth call Owen "the one who wouldn't do the water thing". `:103` has
 Kavi say "He did the water thing and he did the bridge and he was fine." Sixty-six lines
 apart. Kavi's line is already shaped as correcting an assumption, so this may be
 deliberate — but nothing signposts it.
