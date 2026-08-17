@@ -54,12 +54,20 @@ def style_key(name):
 
     The ten agents wrote the same section as "Automatic-fail narrator
     constructions", "8. Automatic-fail narrator constructions (Interiority of
-    non-POV characters)" and "Automatic-fail narrator constructions
-    (STYLE_RULES section 8)", among others. Drop the section numbering, keep a
+    non-POV characters)", "Automatic-fail narrator constructions (STYLE_RULES
+    section 8)" and "STYLE_RULES §8 automatic-fail narrator constructions",
+    among others. Drop the section numbering however it is written, keep a
     parenthesised subtype when it names a real subtype rather than restating
     the section number, and casefold so the count lands in one row.
     """
-    name = re.sub(r"^\s*\d+\.\s*", "", name.strip())
+    name = name.strip()
+    # Leading section numbering: "8. ", "STYLE_RULES §8 ", "§2/§4 ", "§13 ".
+    name = re.sub(r"(?i)^(?:style[_ ]rules?)?\s*(?:§\s*\d+\s*/?\s*)+", "", name)
+    name = re.sub(r"^\s*\d+\.\s*", "", name)
+    # Some agents append the subtype after an em/en dash instead of in parens.
+    name = re.sub(r"\s*[—–]\s*", " (", name, count=1)
+    if name.count("(") == 1 and not name.endswith(")"):
+        name += ")"
     sub = ""
     m = re.match(r"^(.*?)\s*\(([^)]*)\)\s*$", name)
     if m:
@@ -192,9 +200,16 @@ def main():
     # ones.
     style = Counter(style_key(e["rule_name"]) for e in good if e["rule"] == 0)
     if style:
+        rollup = Counter()
+        for (section, _), n in style.items():
+            rollup[section] += n
         print("\nRULE 0 BROKEN OUT (STYLE_RULES sections)")
-        for (section, sub), n in style.most_common():
-            print(f"       {n:>4}  {section}" + (f" — {sub}" if sub else ""))
+        for section, n in rollup.most_common():
+            print(f"       {n:>4}  {section}")
+            subs = sorted(((s, c) for (sec, s), c in style.items() if sec == section and s),
+                          key=lambda x: -x[1])
+            for sub, c in subs:
+                print(f"            {c:>3}    {sub}")
 
     return 1 if (problems and a.strict) else 0
 
