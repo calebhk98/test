@@ -1,30 +1,38 @@
 # Differentiation matrix
 
-## Read this part first: how much similarity is correct
+## Read this part first: differentiate, but not against the character
 
-**A lot of it.** These nine students were selected by one person, taught by the same
-adults from the age of seven, given the same eight subjects every year, and told the same
-thing about themselves — that they are middling. They should sound like each other. A
-cohort that shares a register is evidence the institution exists, and it is the reason
-the group chat reads as a group rather than as seven strangers.
+They are currently too similar and that is the problem to solve. The previous version of
+this document over-corrected into "similarity is fine" and stopped doing its job.
 
-The same goes for Meg and Dave. They are married, they have been in the same rooms for
-twenty years, and they are worrying about the same child. Couples converge. Their
-overlap is not a bug to engineer out.
+The rule is narrower than either extreme. **Where the text or an established trait points
+somewhere, follow it, even if another character lands nearby.** Kavi and Eli are both
+cryptographers; that is true and it stays true. What must not happen is a character being
+pushed off their own personality to manufacture contrast, or two characters being left
+identical because contrast felt forced.
 
-So this document is not an instruction to make everyone opposites. It is a list of
-**margins** — the small places where each person diverges from a shared baseline. The
-baseline stays. What follows is what sits on top of it.
+The way out of that bind is that **there is an enormous amount of open ground**. The book
+is Chloe's point of view, so for everyone else the home, the body, the family, the
+languages, the electives, the private life and the interior are all blank. Differentiate
+there. Nobody has to be given a personality they do not have when they have not been
+given a childhood at all.
 
-Two tests for whether a distinction is worth keeping:
-- Does it survive the character being tired, frightened, or busy? Real traits do.
-- Would removing it make a scene less clear? If not, it is decoration.
+`_ALLOCATIONS.md` assigns the open ground so twelve sheets written in parallel cannot
+collide: languages, electives, home, region, family, body, and one private thing each.
+Take the row and expand it.
+
+**What stays shared.** These nine were selected by one person, taught by the same adults
+from seven, and told the same thing about themselves. A shared register is evidence the
+institution exists. Meg and Dave are married and worrying about the same child, and
+couples converge. Keep the baseline below; differentiate on top of it.
 
 **Nobody in this book is evil.** Not the parents, not the teachers, not Kayleigh or
 Bryce, not the school. The adults who fail Chloe are decent, tired, or under-resourced,
-and fail anyway — that is the argument the book is making, and a villain would collapse
-it. The children who hurt her are enforcing norms accurately, not being cruel. Any sheet
-that makes someone a bad person is wrong, and any revision that does is a regression.
+and fail anyway — that is the argument the book is making. The children who hurt her are
+enforcing norms accurately, not being cruel.
+
+**Say what they do.** Roughly five positives to one negative on every sheet. A character
+defined by what they refuse is a character nobody can write a scene for.
 
 ---
 
