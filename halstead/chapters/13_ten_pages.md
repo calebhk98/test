@@ -12,7 +12,7 @@ He does the arithmetic on the board without saying anything about it. Fifty-one 
 
 Chloe has written ten-page reports before. Three in Mandarin last year, one in French the year before that, and every one of them had two or three weeks behind it. They were also about things, like what a port did in a year, or what one newspaper said and what a second newspaper said about the first one. Those came back marked on the Mandarin.
 
-She reads Federalist 10 that night in the chair by the window and it takes her an hour and a half. She reads it again on the Saturday, faster, with a pen, and then she spends the rest of the weekend on ten pages about whether a small state can be trusted with a veto.
+She reads Federalist 10 that night in the chair by the window, which takes her an hour and a half. She reads it again on the Saturday, faster, with a pen, and then she spends the rest of the weekend on ten pages about whether a small state can be trusted with a veto.
 
 It comes back on the Monday with a mark, and four lines under the mark, which say she has spent ten pages on a position she already held, that the other side does not appear anywhere on the page in a form its own supporters would recognise, and that until it does he has no way of telling whether she is right or only comfortable.
 
@@ -58,9 +58,9 @@ Nobody in the room gets past nine seconds all afternoon. Chloe gets four seconds
 
 "She says a lot of things," Sam says, into his sleeve.
 
-By March most of the year is in the six-to-ten range on a good day. Sam gets fourteen seconds in February, but nobody else is close to it. Chloe is on eleven seconds by June, and two of them she wasted.
+By March most of the year is in the six-to-ten range on a good day. Sam gets fourteen seconds in February, a mark that nobody else gets close to. Chloe is on eleven seconds by June, and two of them she wasted.
 
-Swimming gets harder and the teacher says so in the first week. Some of it is in clothes and some of it is in cold water. In the third term some of it is towing somebody who is not helping, and the whole of that is in how you hold their head.
+Swimming gets harder and the teacher says so in the first week. Some of it is in clothes and some of it is in cold water, and in the third term some of it is towing somebody who is not helping, the whole of that in how you hold their head.
 
 Paintball joins the afternoon block in October. Bell hands the markers out and says it is the same thing they have been doing with darts, a bit harder, and then sets the drill running.
 
@@ -161,7 +161,7 @@ She turns it over twice on the way out into the corridor, in case the note went 
 
 Theo gets one back with no note the same week, but he puts it straight into his bag and goes on with what he was saying.
 
-She writes four more before the break, but they are the same essays they have been since October. The last one is on whether a promise made under a threat counts. Hearn's note says the question is a good one and asks where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 on the floor of the spare room with the door shut. Her grandmother finds her there on the second afternoon and does not ask what any of it is.
+She writes four more before the break, but they are the same essays they have been since October. The last one is on whether a promise made under a threat counts, a question that Hearn's note calls good before asking where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 on the floor of the spare room with the door shut. Her grandmother finds her there on the second afternoon and does not ask what any of it is.
 
 "There's a chair."
 

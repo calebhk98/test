@@ -4,7 +4,7 @@
 
 The long field runs north from the back of Building Three for about three hundred metres. There is a fence at the end of it, with a road past that and nothing between the two.
 
-Archery is ordinary for the first three weeks, because the first three weeks are butts at twenty metres, then thirty, then fifty, an hour a day of being told what your elbow is doing, and a man walking down the line every eleven minutes to tell you the same thing about your elbow again. Chloe is on the gold most of the time by the end of the second week, but she is bored by the middle of the third, and so is everybody standing near her.
+Archery is ordinary for the first three weeks, because the first three weeks are butts at twenty metres, then thirty, then fifty, an hour a day of being told what your elbow is doing, and an instructor walking down the line every eleven minutes to tell you the same thing about your elbow again. Chloe is on the gold most of the time by the end of the second week, but she is bored by the middle of the third, and so is everybody standing near her.
 
 Then Coach Bell puts a metronome on a post at the near end of the field.
 
@@ -16,7 +16,7 @@ Then Coach Bell puts a metronome on a post at the near end of the field.
 
 "Right, then nothing gets pointed at a person."
 
-He walks them down the field to show them the lanes. Both lines shoot the same way, north, from two positions seventy metres apart, and the lanes lean in toward each other by a few degrees so that the two flight paths cross a long way out over the middle of the field. The arrows meet over the middle of the field at the top of the arc. What is left of them comes down together in open grass another hundred and fifty metres past that, where there is a rope and a sign, and nobody goes beyond it during the block.
+He walks them down the field to show them the lanes. Both lines shoot the same way, north, from two positions seventy metres apart, and the lanes lean in toward each other by a few degrees so that the two flight paths cross a long way out over the middle of the field, where the arrows meet at the top of the arc. What is left of them comes down together in open grass another hundred and fifty metres past that, where there is a rope and a sign, and nobody goes beyond it during the block.
 
 "At the top the arrow has stopped climbing and it hasn't started dropping. It hangs there." Bell puts a hand out flat and holds it. "If you're late, it's barely moved while you were being late. That's the only thing you've got going for you and you're going to want all of it."
 
@@ -42,7 +42,7 @@ They stand in the corridor comparing counts for ten minutes, which makes them la
 
 The first one Chloe gets is in the last week of October, with Odile.
 
-A small dry click sounds a long way up, before anything is visible, so far up that she is not sure whether she made it up, and then two arrows come down wrong out of the middle of the sky. One is spinning. The other is broken across the middle, but it comes down in two pieces about eight metres apart with one of them still turning.
+A small dry click sounds a long way up, before anything is visible, so far up that she is not sure whether she made it up, and then two arrows come down wrong out of the middle of the sky, one of them spinning. The other is broken across the middle, but it comes down in two pieces about eight metres apart with one of them still turning.
 
 The whole of Chloe's line is shouting before the pieces land, and somebody down the far end is banging on the lid of the kit box with a bow stave. Odile comes up the field at a run from her end and covers seventy metres in about forty seconds. The two of them stand in the grass yelling at each other about the sound it made, but neither of them is listening to the other one.
 

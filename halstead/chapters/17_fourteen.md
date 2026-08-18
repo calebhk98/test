@@ -120,11 +120,11 @@ Sam is six foot two by September. Ruth stands next to him at breakfast in the fi
 
 "You've been eating like a man with a farm," she says, going back to her tray. "You'll be a nightmare on the mats."
 
-Priya makes him stand against the door frame in the corridor and marks it in pencil above the mark from June. A visiting inspector asks him in October whether he teaches here. He goes through two sets of kit before Christmas and a third in March, but the third one is the one that fits.
+Priya makes him stand against the door frame in the corridor and marks it in pencil above the mark from June, while a visiting inspector asks him in October whether he teaches here. He goes through two sets of kit before Christmas and a third in March, but the third one is the one that fits.
 
 Fencing goes to both hands in the same term, so her left is roughly where her right was at eleven, half a beat late onto everything she can already see coming.
 
-The forge stays where it has been. She finishes a set of three hinges in November that have taken her three Sundays. She holds one up to the window and turns it, then drops all three in the scrap bin on her way past. Pruitt is at the far bench with two others and does not see her do it.
+The forge stays where it has been. She finishes a set of three hinges in November that have taken her three Sundays. She holds one up to the window and turns it, then drops all three in the scrap bin on her way past, while Pruitt is at the far bench with two others and does not see her do it.
 
 ---
 
@@ -140,7 +140,7 @@ Ruth puts her fork down and leaves it down. "He didn't know. He had a whole Thur
 
 "He's got a lake, Kavi. A lake and a boat shed."
 
-Ruth takes it up with him directly on Friday. Sam hears her out with his chin on his hand, thanks her for it, and takes the girl to watch the twelves do paintball. The two of them last until March, when Priya says the girl ended it and Sam says they agreed. Odile was actually in the room, and what Odile says is that both of them have got the day wrong.
+Ruth takes it up with him directly on Friday, and Sam hears her out with his chin on his hand, thanks her for it, before he takes the girl to watch the twelves do paintball. The two of them last until March, when Priya says the girl ended it and Sam says they agreed. Odile was actually in the room, and what Odile says is that both of them have got the day wrong.
 
 ---
 

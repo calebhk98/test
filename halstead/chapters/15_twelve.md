@@ -318,7 +318,7 @@ Chloe gets a C the same as Sam. Ruth gets a B minus. She brings it up for a week
 
 The sheet says: intruders inside Building One prior to contact. Response seven minutes fifty against a standard of six. Traceable agent selected. Four personnel deployed where three would have served. Objective established. No capability disclosed.
 
-Chloe reads it in the corridor. Then she starts to yell in Russian, giving her opinion. She stays annoyed about the C for about a week before accepting it.
+Chloe reads it in the corridor, and then she starts to yell in Russian, giving her opinion. She stays annoyed about the C for about a week before accepting it.
 
 ---
 
@@ -346,7 +346,7 @@ Her father sets down the other dish, sits back, and puts both hands flat on the 
 
 "Yeah, but I've been signed off on that oven since I was like nine."
 
-Her mother stops with the spoon out over the dish. The only thing moving at that end of the table is the steam. Then she puts the spoon down on the cloth.
+Her mother stops with the spoon out over the dish, only the steam moving at that end of the table, then puts it down on the cloth.
 
 "Signed off by who?"
 
@@ -360,7 +360,7 @@ Her father makes a noise into his glass, then puts a hand over his mouth. Her mo
 
 "Say it like you mean it, please."
 
-Chloe says it again. Then she passes the potatoes down to her uncle before he has asked for them.
+Chloe says it again, then passes the potatoes down to her uncle before he has asked for them.
 
 Her mother sits down, shakes out her napkin, then puts it flat on her lap.
 
@@ -392,7 +392,7 @@ Her mother holds her look, then picks her knife back up and starts eating.
 
 Her father puts his glass down and turns it a half turn on the cloth. "So how do you catch it?"
 
-Chloe opens her mouth. To say what the small things are she has to start with the release, and the release needs the count, and the count needs the field and the two lanes and the sixty degrees. Her father is waiting with his hand still on the glass.
+Chloe opens her mouth, but to say what the small things are, she has to start with the release, and the release needs the count, and the count needs the field and the two lanes and the sixty degrees. Her father is waiting with his hand still on the glass.
 
 "You mostly don't catch it," she says.
 
