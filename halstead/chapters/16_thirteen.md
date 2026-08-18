@@ -20,7 +20,7 @@ He is at every session and he reads everything she gives him, but the sheet come
 
 "It isn't work if I can already do it. It's a receipt." He says it the way he says everything, with his hands still and his voice level. "You want a receipt so somebody can look at a piece of paper and see that I did it. Ask me anything off that sheet. Ask me right now."
 
-She asks him four questions off the sheet. He answers all four, and the fourth he answers by a route she had not considered.
+When she asks him four questions off the sheet, he answers all four, the fourth by a route she had not considered.
 
 "So what are you doing with the time instead?"
 
@@ -36,9 +36,9 @@ In January she gives him a problem out of the following year's material, one he 
 
 "Then take it in pencil on the back of Ivy's Tuesday and write down that I did it." He is already halfway up out of the seat. "You know I did it. You watched me not be able to do it last week."
 
-Chloe puts the chalk down on the ledge harder than she means to. He waits by the door until she says fine, then goes.
+Chloe puts the chalk down on the ledge harder than she means to, while he waits by the door until she says fine, then goes.
 
-In February she offers to read the 1981 paper and mark him on that. He says no, politely, without pausing. She is a year older than he is, and she has not read the paper. She asks him in March what would make him hand something in, and he takes it seriously enough to sit there thinking for about ten seconds.
+In February she offers to read the 1981 paper and mark him on that, but he says no, politely, without pausing. She is a year older than he is, and she has not read the paper. She asks him in March what would make him hand something in, and he takes it seriously enough to sit there thinking for about ten seconds.
 
 "Nothing would," he says.
 
@@ -60,9 +60,9 @@ She stops doing it by the end of November, but she stops resenting it in Februar
 
 Half the grammar is a frame she already has from Latin, the vocabulary that is not Latin is close enough to English that she barely has to translate it, and the rest she can usually reach sideways through French. By November she reads with the dictionary open, but she hardly touches it. When she says so at dinner Ruth points a fork at her and says that is the exact argument Chloe made in a doorway two years ago and that Ruth is not conceding it now, at a table, in front of Sam.
 
-Eleven labs split the year between them and hers does materials. What the youngest person in a lab does is fetch, clean, and take on the jobs nobody senior wants.
+Eleven labs split the year between them, hers doing materials, where the youngest person fetches, cleans, and takes on the jobs nobody senior wants.
 
-A postdoc called Sanders hands her six months of instrument logs and the paper written off them, and asks her to work out why the two disagree. The logs hold four thousand runs, but the paper reports eleven hundred. Neither document says which eleven hundred, or which runs were dropped, or when, or by whom. She spends nineteen days on it with the logs spread across two tables before she gets there. The instrument was recalibrated on a Tuesday in March, everything before that Tuesday is in the paper, and everything after it was never copied across. Somebody stopped and never said so. Sanders reads her four pages standing up, puts them in a folder, and says thank you.
+A postdoc called Sanders hands her six months of instrument logs and the paper written off them, and asks her to work out why the two disagree. The logs hold four thousand runs, but the paper reports eleven hundred; neither document says which eleven hundred, or which runs were dropped, or when, or by whom. She spends nineteen days on it with the logs spread across two tables before she gets there. The instrument was recalibrated on a Tuesday in March, everything before that Tuesday is in the paper, and everything after it was never copied across. Somebody stopped and never said so. Sanders reads her four pages standing up, puts them in a folder, and says thank you.
 
 In cryptography the first term goes entirely on breaking things other people built. Substitution, then Vigenère, then a fortnight on why a key you use twice stops being a key. By November they are working on real messages off real systems with real mistakes in them, and Amberg's line from the first day is that you cannot build a lock if you have never opened one somebody else built, because you would be guessing about what a lock is for.
 
@@ -108,7 +108,7 @@ What she actually does with block two is the school forge. Thursdays, both Satur
 
 A Russian piece in February covers a bridge that came down in December, and she read an English piece on the same bridge in January.
 
-The English one says the commission found a design fault in the bearings. The Russian one says the commission found overloading by a contractor, and names the contractor. Both are reporting the same commission and the same report. One of them is wrong, and from where she is sitting she cannot tell which.
+The English one says the commission found a design fault in the bearings, though the Russian one says it found overloading by a contractor and names him. Both are reporting the same commission and the same report. One of them is wrong, and from where she is sitting she cannot tell which.
 
 She finds a third pair on an unrelated story, and the third pair does it too. Then she goes looking for a fourth.
 
@@ -118,7 +118,7 @@ Law starts with Mr. Amberg walking in and putting a copy of the state code on th
 
 Then he starts on contracts.
 
-Dinner is ten or twelve of them at the long table by the window and has been since the second week of September. Sam, Ruth, Kavi, Priya, Odile, Eli and Nadia are always there. Four or five others come and go, and Chloe knows all their names.
+Dinner is ten or twelve of them at the long table by the window and has been since the second week of September. Sam, Ruth, Kavi, Priya, Odile, Eli and Nadia are always there, while four or five others come and go, and Chloe knows all their names.
 
 Eli puts a cipher on the table one Thursday, between the salt and the water jug, written out on a napkin.
 
@@ -148,7 +148,7 @@ Nadia turns the napkin round toward Chloe with one finger.
 
 Chloe takes her hand off the napkin and puts it in her lap. Sam starts saying something about the salt. At half past nine there are six opinions at that table and nobody has moved off any of them.
 
-Nadia is there most nights. She says what she thinks in flat words, always, on principle, and half of what she says lands as an accusation. They work the November cipher set together and it goes well. Sam sits between them most nights, and neither of them has ever said a word to him about it.
+Nadia is there most nights. She says what she thinks in flat words, always, on principle, and half of what she says lands as an accusation. They work the November cipher set together and it goes well, though Sam sits between them most nights, and neither of them has ever said a word to him about it.
 
 ---
 

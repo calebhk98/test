@@ -8,7 +8,7 @@ Her mother has kept the room the way it was, down to the sock on the radiator, a
 
 "Your feet were on the ground at the same time as the pedals were, so it isn't fine, and I'm not having this conversation again in a hospital." She is already going back inside with the cup. "Saturday, the place by the tire shop, and you're picking one you'll still fit next year."
 
-She talks the entire summer, and she comes downstairs already talking most mornings, about something she was thinking about upstairs. She has opinions about the news, which she gets off the paper on the kitchen table. She interrupts constantly, then apologizes, but does it again inside a minute. She sings in the shower now, badly and at volume, every day of the summer. She makes jokes at dinner, some of them bad, and on the nights her father laughs she does four more.
+She talks the entire summer, and she comes downstairs already talking most mornings, about something she was thinking about upstairs, since she has opinions about the news, which she gets off the paper on the kitchen table. She interrupts constantly, then apologizes, but does it again inside a minute. She sings in the shower now, badly and at volume, every day of the summer. She makes jokes at dinner, some of them bad, and on the nights her father laughs she does four more.
 
 On the fourth of July she starts an argument with her father about whether a hot dog is a sandwich.
 
@@ -108,7 +108,7 @@ In September there is a different girl in her room, from Ohio, called Marguerite
 
 Margie's mouth opens, closes, opens again. "Margie's fine. It's shorter, and everybody's going to say it anyway, so there's no point in me having a position on it."
 
-Fen is on second floor now with a girl from Maine. They say hello in corridors all year, and once in November Fen shows her a piece of quartz the size of a fist. There is French on the sheet where Spanish used to be, in the same slot at the same hour with a different teacher, and the first thing that happens is a woman speaking French at her for sixty minutes straight. Chloe stays behind afterward while the room empties out around her.
+Fen is on second floor now with a girl from Maine, and while they say hello in corridors all year, once in November Fen shows her a piece of quartz the size of a fist. There is French on the sheet where Spanish used to be, in the same slot at the same hour with a different teacher, and the first thing that happens is a woman speaking French at her for sixty minutes straight. Chloe stays behind afterward while the room empties out around her.
 
 "Am I going to have Spanish again?"
 
@@ -118,11 +118,11 @@ Fen is on second floor now with a girl from Maine. They say hello in corridors a
 
 "Nothing happens to it. You've got it." The teacher is stacking chairs two at a time along the back wall. "It stays where you put it, or it goes, and from here that's your call rather than mine, which I appreciate is a strange thing to hear in September."
 
-Chloe turns that over for a day and a half, then starts reading in Spanish in the hour before dinner, twenty minutes at a time. The Spanish shelves run the length of the north wall on the upper floor and turn the corner, three deep in places. Underneath them is a rack of newspapers from four countries that somebody replaces on Mondays. She gets through a novel about a lighthouse in nine days and understands most of it. Inside a month Ruth is doing the same thing in Portuguese, badly, for reasons Ruth will state only as "it's the vowels."
+Chloe turns that over for a day and a half, then starts reading in Spanish in the hour before dinner, twenty minutes at a time. The Spanish shelves run the length of the north wall on the upper floor and turn the corner, three deep in places, while underneath them sits a rack of newspapers from four countries that somebody replaces on Mondays. She gets through a novel about a lighthouse in nine days and understands most of it. Inside a month Ruth is doing the same thing in Portuguese, badly, for reasons Ruth will state only as "it's the vowels."
 
 The day is eight hours now and goes to nine after Christmas. Mathematics carries over, along with writing, literature, political history. French is new. Logic is new. Logic is an hour of being shown a sentence and asked what it is actually claiming, and she can do it from the first week. On the phone she tells her mother it's like taking a lid off.
 
-Politics starts in the first week and runs to the end of the year with no exam at the end of it. You learn the leaders of every country that matters, then their spouses, their children, their in-laws, where the money comes from, who they owe. Then you update all of it every week, in pencil, on a wall in the room that is already covered.
+Politics starts in the first week and runs to the end of the year with no exam at the end of it, while you learn the leaders of every country that matters, then their spouses, their children, their in-laws, where the money comes from, who they owe. Then you update all of it every week, in pencil, on a wall in the room that is already covered.
 
 "Why do we need their kids," a boy says in the first week.
 
@@ -140,11 +140,11 @@ Somebody down the line says that's impossible.
 
 "It isn't, and I'll tell you why now instead of letting you spend a week deciding it is." Bell holds a dart up between two fingers and turns it around so the whole line can see it. "Look at the size of the thing. Look how slowly it comes at you. You can watch the entire flight from one end to the other, and there is nothing in this building easier to hit than that."
 
-By the end of the first month everybody in the year can do it at will, forty a side, with the hour a wall of noise and darts coming down all over the floor. Games run the full hour, because both sides get good at the same rate and neither one of them ever runs out of people. Chloe wins three in a row in October, but what she plays for is the sound two darts make when they meet and burst.
+By the end of the first month everybody in the year can do it at will, forty a side, with the hour a wall of noise and darts coming down all over the floor. Games run the full hour, because both sides get good at the same rate and neither one of them ever runs out of people, while Chloe wins three in a row in October, but what she plays for is the sound two darts make when they meet and burst.
 
 The afternoon block is a different thing on each day of the week. Nerf on Mondays, wood shop on Tuesdays, team sports on Wednesdays, drawing on Thursdays, dance on Fridays. The school picks all five, everybody does all five, and there is no arguing with the sheet.
 
-In wood shop you make a tool, then you use that tool to make the next one. The man who runs it will tell you what is wrong with a tool and then walk away while you work out what to do about it. Chloe makes a mallet with a handle that comes out slightly oval. She uses it for three weeks before the oval in the handle catches her eye. After that it's there every time she picks the mallet up. She is still using it in June.
+In wood shop you make a tool, then you use that tool to make the next one. The man who runs it will tell you what is wrong with a tool and then walk away while you work out what to do about it. Chloe makes a mallet with a handle that comes out slightly oval, and she uses it for three weeks before the oval in the handle catches her eye. After that it's there every time she picks the mallet up. She is still using it in June.
 
 Team sports is where the teams are assigned. She gets one with two people on it she has already decided against, so on the second Wednesday she goes and asks whether she can move.
 
@@ -154,7 +154,7 @@ Team sports is where the teams are assigned. She gets one with two people on it 
 
 "Teams are for the year, and you're the third one to ask me this week." The teacher does not stop writing on the clipboard. "Ask me in June and it'll be no in June."
 
-She asks again in November and gets it in four words. Drawing is Thursdays, and in the second term they spend six weeks on hands. Chloe draws her own left hand about forty times, in pencil, from the same angle, on the same cheap paper. The fortieth one looks like a hand, down to the little finger sitting lower than it ought to sit. Ruth picks it up off the table on her way past.
+She asks again in November and gets it in four words. Drawing is Thursdays, and in the second term, while they spend six weeks on hands, Chloe draws her own left hand about forty times, in pencil, from the same angle, on the same cheap paper. The fortieth one looks like a hand, down to the little finger sitting lower than it ought to sit. Ruth picks it up off the table on her way past.
 
 "That's a hand."
 
@@ -186,11 +186,11 @@ She reads all four sheets twice through. Drawing is on it, along with pottery, g
 
 "They put a wall up the side of the gym over the summer and there's an overhang near the top." Sam is already walking backward down the corridor away from her. "Nobody's got over the overhang."
 
-She writes her name on the choir line, because she sang in the shower every day of the summer and it was the part of most of those days she looked forward to. Choir turns out to be a different activity with the same word attached to it. You stand in a block of thirty people and the whole job is matching. The woman moves her to the back row and tells her she goes flat on the way down, but she goes flat by the same amount every time, so she is at least flat somewhere useful.
+She writes her name on the choir line, because she sang in the shower every day of the summer and it was the part of most of those days she looked forward to. Choir turns out to be a different activity with the same word attached to it, while you stand in a block of thirty people and the whole job is matching. The woman moves her to the back row and tells her she goes flat on the way down, but she goes flat by the same amount every time, so she is at least flat somewhere useful.
 
 "Stand next to Amara and match her. She's doing the thing I keep asking you for and she can't tell you how either."
 
-Chloe stands next to Amara for four weeks and matches her about a third of the time, but the matching is a different job from the one she came in for, and she is not getting better at it. What she liked was being loud in a small tiled room with nobody in it. In the sixth week she stops going and takes the hour in the pool instead. She sings in the shower afterward, where she was doing it to begin with.
+Chloe stands next to Amara for four weeks and matches her about a third of the time, but the matching is a different job from the one she came in for, and she is not getting better at it. What she liked was being loud in a small tiled room with nobody in it. In the sixth week she stops going and takes the hour in the pool instead, although she sings in the shower afterward, where she was doing it to begin with.
 
 On a Tuesday in April the four of them end up on the grass behind the science building for about an hour, because Sam sat down and then Kavi sat down. Sam has a shopping bag of apples and says only that they were going spare. For the whole hour they throw them at a drainpipe forty feet away.
 
