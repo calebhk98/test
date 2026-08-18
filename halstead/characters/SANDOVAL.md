@@ -17,10 +17,16 @@ Sandoval names the power imbalance in her own request before making it: "I need 
 | disagrees by | not attested, the scene is a request, not a correction |
 | wordiness | 6/10, all three turns are multi-clause |
 | terseness | 0% of turns at 3 words or fewer |
+| at length | when she's asking someone to carry real personal risk without the legal instrument that would make it simple. A request without the full reasoning attached isn't actually a request, so she gives all of it |
 | jokiness | 0/10 |
 | hedging | precision-hedging only, qualifies a legal fact exactly, not an emotional hedge |
 | questions | 0%, she states, even though the scene is framed as "asking" |
 | figurative | none found |
+
+## When they talk at length
+All three of Sandoval's quoted turns in her one scene run multi-clause, and the longest lays out the complete structure of what she's asking rather than the short version a request usually gets: "There is a non-disclosure agreement on that project. Four people have signed it, and one of them is me. You have not signed anything, and I am not going to put a federal NDA in front of a fifteen-year-old, because I do not think anybody should be asking you to sign one. Plus, it's not legally binding." She shifts the folder to her other arm. "But your work feeds ours. If you talk about it at home, or on a telephone, or at a table with eleven people around it, nothing whatsoever happens to you. The consequences land on the four of us." (chapters/18_fifteen.md:139). Six sentences, the most she says at once anywhere in the sample, given to a fifteen-year-old rather than simplified for one.
+
+The circumstance is specific: asking someone to carry a risk voluntarily, with no instrument that could compel them, means the request only means anything if she gives them everything a fuller understanding needs. What it costs her is named in the scene itself: "You can't be held to anything. I can. So asking is what I have." (chapters/18_fifteen.md:143). The length is the whole of her leverage. She has nothing else to make the ask with.
 
 ## Signature, theirs alone
 States the structural reason for her own restraint as the content of the request itself, rather than leaving the power imbalance unspoken: "You can't be held to anything. I can. So asking is what I have." No other teacher in this cast narrates the mechanics of their own authority out loud this way.

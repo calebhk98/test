@@ -18,11 +18,18 @@ She builds a sentence as an escalating three-clause question with the follow-up 
 | sentence shape | escalating three-clause question, follow-up already loaded |
 | disagrees by | asks another question |
 | wordiness | 3/10, measured 5.7 words/line, low-mid for the cast |
-| terseness | measured 54% now, highest in the book. Target 40%. Some of this is the married-couple shorthand, finishing a thought in three words because Dave already has the rest of it, and that part stays |
+| terseness | measured 54% now, highest in the book. A measurement, not a target. Some of this is the married-couple shorthand, finishing a thought in three words because Dave already has the rest of it, and that part stays |
+| at length | when she has a complete, prepared account to hand to someone who can act on it — the whole list, in order, delivered before anyone can interrupt it into a question-and-answer. It costs her the deflection that usually protects her: no institution to interrogate, nothing to convert into a follow-up, just the full weight of what she's tracked, out loud, in one go |
 | jokiness | 5/10, domestic-idiom deflection, warm rather than sharp ("on the same page. Literally.") |
 | hedging | measured 0% where anyone can hear her, even the untrue lines. Not the same rule alone: unwitnessed, the parked car is the text's own picture of what that privacy looks like (chapters/09_february.md:137), and a maybe or an I-don't-know is allowed there that would never be allowed at the counter |
 | questions | measured 4% now. Target 20%+. Interrogation is her established competence, on the page since chapters/01, so the target gives her more of what she already does well |
 | figurative | allowed: domestic comparisons only, and only when deflecting |
+
+## When they talk at length
+
+Meg's default is the question that won't close, not the statement that runs on. She goes long exactly once in the reading list: walking into Dr. Ammons's office with the whole list already built, in order, before anyone asks her a question. "She's not eating," her mom says, and she has the whole list ready in order, each item already decided before she walked in. "She's sleeping eleven hours a night and she's still tired all day. She used to read constantly, four books a week since she was five, and she's stopped completely. She sits in her room with the light off and doesn't turn it on. When I ask her what she's doing she says nothing, and I think that's the true answer." (chapters/08_the_asking.md:15). Five sentences, unbroken, delivered before Dr. Ammons has asked a second question — the one time in the book she hands over a complete account instead of extracting one.
+
+It costs her the posture that protects her everywhere else. Her whole method, the escalating question, the institution held to account, lets her stay the one asking rather than the one answering. Walking in with the list already built means she's done the answering in advance, alone, before the appointment — Dr. Ammons never has to draw it out of her, because Meg needed somewhere to put it down. That's not composure breaking. It's the one place the composure is spent on being thorough instead of on holding a question open.
 
 ## Signature: theirs alone
 

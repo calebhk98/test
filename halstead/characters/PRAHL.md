@@ -18,10 +18,17 @@ She teaches in complete, patient setups. The knights-and-knaves puzzle runs thre
 | disagrees by | reframes the request as already being generously met |
 | wordiness | one long turn over 50 words unbroken; refusals run 9–10 words each |
 | terseness | 0% by the 3-word test across her 3 turns |
+| at length | every Thursday, setting up a puzzle for the whole room. The same thoroughness that produces it is structurally why she never gets to the differentiation underneath it |
 | jokiness | 0/10, no joke, warmth delivered as encouragement, not humor |
 | hedging | 0% in what she says aloud; the refusal itself substitutes for naming the actual limit |
 | questions | one puzzle line ends in a question posed to the group; nothing personal asked of Chloe |
 | figurative | not allowed, none used |
+
+## When they talk at length
+
+Prahl's longest turn in the sample is a full puzzle premise, read aloud rather than paraphrased, sheet held over her head so the back row can see it too: "Okay. On this island there are two kinds of people and that's all there is. Knights always tell the truth, every single time, so they can't lie even if they want to. Knaves always lie, every single time, so they can't tell the truth even by accident." She holds the sheet up over her head so that the back row can see it too. "You meet two of them. Alan says, Bob is a knave. Bob says, neither of us is a knave. What are they?" (chapters/08_the_asking.md:93). This isn't rare for her; it happens every week, to the whole group at once, and it's real, patient, well-built teaching.
+
+That's exactly what makes the cost land where it does. The same care and unhurried thoroughness she spends setting up a puzzle for nine kids is the whole of the thirty-five real minutes her cart-and-commute schedule leaves her. Time spent building the premise completely for the back row is time not spent noticing that one child at the front finished it before she'd stopped reading it aloud. The warmth in the long version and the refusal in the short version, "let's not rush it, we've got all year," come out of the same fixed hour; there isn't a second one to give.
 
 ## Signature — theirs alone
 

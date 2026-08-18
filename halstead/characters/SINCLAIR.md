@@ -17,10 +17,16 @@ Sinclair's longest turn is short independent clauses stacked without connectives
 | disagrees by | not attested, no scene shows him disagreeing with a student |
 | wordiness | 3/10, even his longest turn is four short sentences |
 | terseness | roughly 3 of 5 turns at 3 words or fewer |
+| at length | the one school-wide announcement that starts an unannounced drill. He states the whole rule set once, over the intercom, because there's no way to check afterward that everyone heard it right |
 | jokiness | 0/10 in content, one line ("Good luck") carries dry, deniable irony |
 | hedging | 0% |
 | questions | 2 of 5 turns, both purely diagnostic |
 | figurative | none found |
+
+## When they talk at length
+Sinclair's longest confirmed turn is four short sentences, and it happens exactly once in the sample, over the intercom, starting an unannounced drill for the whole school at once: "Every member of staff currently in the building is now hostile," he says. "This includes your teachers. This continues until sixteen hundred or until there are no staff left. Kit is in the usual place." (chapters/14_sixty_degrees.md:205). Everywhere else he's shown talking, he's extracting one fact from one person and stopping the instant he has it. Here there's no one person to extract anything from; the whole building needs the same rule at the same time, and there's only the one broadcast to give it in.
+
+The circumstance costs him the thing his signature is otherwise built on: checking. He checks a locked door twice, checks a headcount out loud, confirms a number before he'll close a scene, never trusting a single read. An intercom announcement is the one instrument he uses that he can't verify afterward, no way to ask each listener back whether they caught it, no diagnostic question to confirm the information landed. He runs the whole rule set out once, complete, because a single unverified transmission is the only version of thoroughness available to him here.
 
 ## Signature, theirs alone
 Runs a diagnostic exchange in matched one-to-three-word question-and-answer pairs and moves the instant he has the number he needs, no follow-up commentary. No other teacher on this list conducts an entire exchange in fragments this short while still extracting exactly the information he came for.

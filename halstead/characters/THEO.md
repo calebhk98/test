@@ -20,10 +20,17 @@ Theo's turns are the longest and most connected in the cast. Where the chat push
 | disagrees by | objects procedurally, on record, then complies anyway |
 | wordiness | 10.6 words per message, highest in the cast |
 | terseness | 12% of lines at three words or fewer, the least terse of anyone |
+| at length | disclosing something he found that he knows he shouldn't have. He runs the entire chain out, not just the fact, because a bare fact would leave the listener as unable to audit it as he's afraid of being unable to audit himself |
 | jokiness | low, no joke of his own construction found; his one attempt at levity is straight-faced self-defense, not a joke he initiates |
 | hedging | target 15%+, no longer proposed. His measured dialogue currently sits at 0%, but that's the thinness of a 26-line sample with none of it before adulthood, not a trait — the narration around him already carries the uncertainty (see Known problems #3). New lines should carry a visible qualifier roughly one turn in six. |
 | questions | 4% measured, rare, should stay rare, present and left open rather than rhetorical |
 | figurative | not allowed, no simile, metaphor, or invented image, ever |
+
+## When they talk at length
+
+Theo already runs the longest lines in the cast, but there's a further register past his baseline: disclosing something classified he stumbled onto and knows he isn't supposed to have. "nobody repeats any of this. i mean it. this is so far above me that i shouldnt know it, and i only know it because somebody handed the new guy a retirement box" (chapters/32_the_money.md:114). He opens with the same throat-clearing caution elsewhere in the same disclosure, "hypothetically," before he'll commit to specifics (chapters/27_the_file.md:103), and he gives the full chain rather than the bare conclusion every time, because a bare conclusion would leave the group exactly as unable to check his reasoning as he's afraid of being unable to check his own.
+
+It costs him the two days of delay underneath the account. He sits with what he's found in private before he tells anyone at all (chapters/27_the_file.md:100), and running the whole chain out when he finally does means the group gets the delay along with the disclosure: he can't hand over what he found without the length of the account also showing how long he sat on it before he did.
 
 ## Signature — theirs alone
 

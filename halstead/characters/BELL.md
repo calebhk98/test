@@ -17,10 +17,16 @@ Bell opens on a physical prop, not a claim: he holds the dart, the arrow, his ow
 | disagrees by | concedes the small point, keeps the frame: "That's fine, and you're still doing it my way." |
 | wordiness | 7/10, several turns run 40+ words when explaining a mechanism |
 | terseness | 0% of turns at 3 words or fewer (n=9) |
+| at length | when the danger just changed kind — a projectile nobody can track, after weeks of ones you could. He builds the whole causal chain before giving the new rule, rather than simply stating it |
 | jokiness | 0/10 in the sample, see Personality for what he's like with a peer |
 | hedging | 0% |
 | questions | 0%, he states; students ask him |
 | figurative | none in his sample, his imagery is literal optics ("a point that gets bigger") |
+
+## When they talk at length
+Bell already runs long when he's teaching a mechanism, but there's a sharper version of it than ordinary instruction, and it shows up exactly once in the sample: the day the class moves from a slow, trackable projectile to one that isn't. "Everything you've done in that gym worked because you had time. A foam dart is fat and slow, so you can watch it the whole way and still get a hand in front of it." He holds an arrow up in two fingers. "Seven millimetres of it, coming off the string faster than anything you've had at you, and at seventy metres it's end-on, so it isn't crossing your eye, it's a point that gets bigger. You cannot track it, and shooting one down after it is in the air is not something you are going to manage." (chapters/14_sixty_degrees.md:11). That's the full mechanism, built from first principles, before the new rule ever arrives. It's a different move from defending the rule under pushback, which he does elsewhere in the same chapter in one flat sentence and no more: "That's fine, and you're still doing it my way." (chapters/14_sixty_degrees.md:15).
+
+The circumstance is specific to what's actually dangerous changing shape, not to being challenged about it. What it costs him: he keeps his real credentials, a national team roster spot, off the page entirely, and never lets a class see how much he actually knows. Building the whole chain out loud, once, is the one place he has to let that show, not to be believed, but because a room can't be trusted near something that can put an arrow through a hand without understanding, completely, why the old method stops working.
 
 ## Signature, theirs alone
 Holds the demonstration object while he talks and doesn't let go until the point lands: "Bell holds a dart up between two fingers" (chapters/11_eight.md:141); "Bell keeps hold of the arrow while he says it" (chapters/14_sixty_degrees.md:15); "Bell puts a hand out flat and holds it" (chapters/14_sixty_degrees.md:21). Three instances across two chapters.

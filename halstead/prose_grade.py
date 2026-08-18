@@ -16,9 +16,25 @@ judgement call.
     python3 prose_grade.py chapters/*.md --brief
     python3 prose_grade.py draft.md --benchmark treasure_island
     python3 prose_grade.py --list-benchmarks
+    python3 prose_grade.py chapters/*.md --summary   # every measure, one row per file
     python3 prose_grade.py --build-reference DIR1 DIR2   # regenerate the corpus file
 
-Reference data lives in prose_reference.json next to this script.
+Sixteen measures are graded. Twelve cover the sentence and the word: length,
+subordination, relative clauses, clause-free sentences, short runs, commas,
+reading grade, lexical diversity, long words, common words, and the two bands
+at either end. Four more were added later to cover what those twelve miss and
+what a reader actually notices: sentence-length variation, words per paragraph,
+sentences per paragraph, and mean word length.
+
+A further group is measured but not graded, in MONITOR. These are patterns
+with no maturity direction, or ones under a house ban, where the useful output
+is the corpus range rather than a percentile: how often a sentence opens on a
+subordinate clause, how often it carries two "and"s, and the plain "and" rate.
+Grading them would reward moving a number that is not a maturity signal.
+
+Reference data lives in prose_reference.json next to this script. The corpus
+texts themselves are not in the repository; the JSON is the durable artifact,
+and rebuilding it needs the book files again.
 """
 
 import argparse
@@ -36,6 +52,15 @@ REFERENCE = HERE / "prose_reference.json"
 SUBORDINATOR = (r"\b(because|although|though|while|whereas|since|unless|until|after|before"
                 r"|if|when|whenever|as|so that|even though|rather than|whether)\b")
 RELATIVE = r"\b(who|whom|whose|which|that)\b"
+
+# A sentence that opens on a subordinate clause and closes it with a comma:
+# "Because the room was cold, she kept her coat on." Front-loading is the
+# natural replacement for a banned trailing clause, so it is worth watching
+# for the same overuse that got the trailing form banned. An opening quote is
+# allowed for, since dialogue does this too.
+FRONTLOAD = re.compile(
+    r"""^["']?(?:Because|Since|While|Though|Although|When|Whenever|As|After"""
+    r"""|Before|If|Once|Until|Unless|Whether|Where)\b[^,.!?]{3,60},""")
 
 # The 100 commonest English words. A high share of these means a small
 # working vocabulary, which is one of the two things that reads young.
@@ -59,6 +84,22 @@ METRICS = {
     "simple":    ("sentences with no subordinate/relative clause %", False),
     "shortruns": ("sentences inside a run of 3+ short ones %", False),
     "top100":    ("words from the commonest 100 %", False),
+    "slcv":      ("sentence length variation (CV %)", True),
+    "wpp":       ("words per paragraph", True),
+    "spp":       ("sentences per paragraph", True),
+    "wlen":      ("mean word length (characters)", True),
+}
+
+# The twelve the book was first graded on. Kept so the headline number stays
+# comparable with every earlier measurement in the notes.
+CORE12 = ("fk wps sttr commas subord relcl b2035 long7 u10 simple shortruns "
+          "top100").split()
+
+# Measured, reported against the corpus range, deliberately not graded.
+MONITOR = {
+    "front":   "sentences opening on a subordinate clause %",
+    "and2":    'sentences with two or more "and" %',
+    "andrate": '"and" as a share of all words %',
 }
 
 
@@ -70,12 +111,19 @@ def syllables(w):
     return max(n, 1)
 
 
-def measure(text):
-    """All twelve metrics for one text. Returns None if the text is too short."""
-    paras = paragraphs(text)
+def measure(text, floor=40):
+    """Every metric for one text. Returns None under `floor` sentences.
+
+    sttr comes back None when the text is shorter than one 1000-word window.
+    Type-token ratio falls as a text gets longer, so measuring it over a
+    600-word chapter and comparing that with a 70,000-word book flatters the
+    chapter by twenty points or more. The sampled form exists to remove that
+    dependence, and it cannot do so without a full window.
+    """
+    paras = [p for p in paragraphs(text) if p.strip() != "---"]
     sl_all = [(s, len(words(s))) for p in paras for s in sents(p)]
     sl_all = [(s, n) for s, n in sl_all if n]
-    if len(sl_all) < 40:
+    if len(sl_all) < floor:
         return None
     ss = [s for s, _ in sl_all]
     sl = [n for _, n in sl_all]
@@ -95,10 +143,20 @@ def measure(text):
     win = [len(set(lw[i:i + 1000])) / 1000 for i in range(0, len(lw) - 1000, 1000)]
     wps = st.fmean(sl)
 
+    # Paragraph shape. A paragraph with no words in it is a stray marker line,
+    # not a paragraph, and would drag both averages down.
+    para_s, para_w = [], []
+    for p in paras:
+        n = [x for x in sents(p) if words(x)]
+        if n:
+            para_s.append(len(n))
+            para_w.append(len(words(p)))
+    and2 = sum(1 for s in ss if len(re.findall(r"\band\b", s.lower())) >= 2)
+
     return {
         "fk": 0.39 * wps + 11.8 * (sum(syllables(x) for x in w) / n_w) - 15.59,
         "wps": wps,
-        "sttr": 100 * st.fmean(win) if win else 100 * len(set(lw)) / n_w,
+        "sttr": 100 * st.fmean(win) if win else None,
         "commas": text.count(",") / n_s,
         "subord": 100 * sum(1 for s in ss if re.search(SUBORDINATOR, s, re.I)) / n_s,
         "relcl": 100 * sum(1 for s in ss if re.search(RELATIVE, s, re.I)) / n_s,
@@ -110,7 +168,16 @@ def measure(text):
                             and not re.search(RELATIVE, s, re.I)) / n_s,
         "shortruns": 100 * inrun / n_s,
         "top100": 100 * sum(1 for x in lw if x in TOP100) / n_w,
+        "slcv": 100 * st.stdev(sl) / wps if len(sl) > 1 else 0.0,
+        "wpp": st.fmean(para_w) if para_w else 0.0,
+        "spp": st.fmean(para_s) if para_s else 0.0,
+        "wlen": st.fmean([len(x) for x in w]),
+        "front": 100 * sum(1 for s in ss if FRONTLOAD.match(s.strip())) / n_s,
+        "and2": 100 * and2 / n_s,
+        "andrate": 100 * lw.count("and") / n_w,
         "_words": n_w,
+        "_sentences": n_s,
+        "_paragraphs": len(para_w),
     }
 
 
@@ -147,14 +214,19 @@ def grade(path, ref, benchmark, brief):
         return None
 
     bench = ref[benchmark]
-    losses, pcts = [], []
+    losses, pcts, core, skipped = [], [], [], []
     lines = []
     for key, (label, higher) in METRICS.items():
+        if got[key] is None:
+            skipped.append(label)
+            continue
         vals = [b[key] for b in ref.values()]
         p = percentile(vals, got[key])
         if not higher:
             p = 100 - p
         pcts.append(p)
+        if key in CORE12:
+            core.append(p)
         # >= / <= so a book tied with the benchmark, including the benchmark
         # itself, is not scored as a loss.
         beat = got[key] >= bench[key] if higher else got[key] <= bench[key]
@@ -169,19 +241,94 @@ def grade(path, ref, benchmark, brief):
     print("=" * 78)
     print(f"{Path(path).name}  |  {got['_words']:,} words  |  "
           f"benchmark: {benchmark}  |  corpus: {len(ref)} books")
-    print(f"\nmaturity percentile (median of 12 measures): {st.median(pcts):.0f}"
-          f"      lost to benchmark on {len(losses)} of 12")
+    n_m = len(METRICS) - len(skipped)
+    print(f"\nmaturity percentile (median of {n_m} measures): {st.median(pcts):.0f}"
+          f"      lost to benchmark on {len(losses)} of {n_m}")
+    print(f"  on the original 12 measures: {st.median(core):.0f}")
     if not brief:
         print(f"\n  {'measure':46}{'this':>8}{'bench':>8}{'pct':>6}")
         for p, label, mine, theirs, beat in sorted(lines):
             print(f"  {label:46}{mine:>8.2f}{theirs:>8.2f}{p:>5.0f}%  "
                   f"{'' if beat else '<-- loses'}")
+    if skipped:
+        print(f"  not measurable in a text this short: {', '.join(skipped)}")
+    if not brief:
+        print(f"\n  monitored, not graded (corpus low / median / high):")
+        for key, label in MONITOR.items():
+            vals = sorted(b[key] for b in ref.values() if key in b)
+            if not vals:
+                continue
+            band = f"{vals[0]:.2f} / {st.median(vals):.2f} / {vals[-1]:.2f}"
+            over = "  above every book in the corpus" if got[key] > vals[-1] else ""
+            print(f"  {label:46}{got[key]:>8.2f}   corpus {band}{over}")
+
     if losses:
         print(f"\n  fix first, by size of the gap to {benchmark} "
               f"(in corpus standard deviations):")
         for _, label, mine, theirs, gap in sorted(losses)[:4]:
             print(f"    {label:46}{mine:>8.2f} vs {theirs:>7.2f}   {gap:>4.1f} sd")
     return st.median(pcts), len(losses)
+
+
+# Short column headings for the summary table, in print order.
+SUMMARY_COLS = [
+    ("_words", "words"), ("_paragraphs", "paras"), ("_sentences", "sents"),
+    ("wps", "w/sent"), ("slcv", "sl CV"), ("wpp", "w/para"), ("spp", "s/para"),
+    ("wlen", "w len"), ("long7", "7+ch"), ("sttr", "sTTR"), ("top100", "top100"),
+    ("fk", "F-K"), ("commas", "commas"), ("subord", "subord"), ("relcl", "relcl"),
+    ("simple", "simple"), ("u10", "u10"), ("b2035", "20-35"),
+    ("shortruns", "runs"), ("front", "front"), ("and2", "and2"),
+    ("andrate", "and%"),
+]
+
+
+def summary(paths, ref):
+    """One row per file, every measure, plus the corpus for comparison.
+
+    The per-file report answers "is this chapter mature". This answers "which
+    measure is the book losing on, and in which chapters", which is the
+    question a revision pass actually starts from.
+    """
+    rows = []
+    for path in paths:
+        # No sentence floor here. The floor exists so a percentile is not read
+        # off four sentences; a descriptive row is still worth having.
+        got = measure(strip_gutenberg(Path(path).read_text(encoding="utf-8")), floor=1)
+        if got is None:
+            print(f"  {Path(path).stem}: no sentences")
+            continue
+        rows.append((Path(path).stem, got))
+    if not rows:
+        return
+
+    head = f"{'file':<22}" + "".join(f"{h:>8}" for _, h in SUMMARY_COLS)
+    print(head)
+    print("-" * len(head))
+    for stem, got in rows:
+        cells = []
+        for key, _ in SUMMARY_COLS:
+            v = got[key]
+            cells.append("       -" if v is None else
+                         f"{v:>8,}" if key == "_words" else
+                         f"{v:>8.0f}" if key.startswith("_") else f"{v:>8.1f}")
+        print(f"{stem[:21]:<22}" + "".join(cells))
+
+    print("-" * len(head))
+    for label, pick in (("book median", st.median), ("corpus median", None)):
+        if pick:
+            vals = {k: pick([g[k] for _, g in rows if g[k] is not None] or [0])
+                    for k, _ in SUMMARY_COLS}
+        else:
+            vals = {k: (st.median([b[k] for b in ref.values() if k in b])
+                        if any(k in b for b in ref.values()) else 0.0)
+                    for k, _ in SUMMARY_COLS}
+        cells = "".join(f"{vals[k]:>8,.0f}" if k.startswith("_") else
+                        f"{vals[k]:>8.1f}" for k, _ in SUMMARY_COLS)
+        print(f"{label:<22}" + cells)
+    print("\ncorpus word and paragraph counts are whole books, so the first three "
+          "columns\nonly compare like with like between chapters. A dash under sTTR "
+          "means the\nchapter is under 1000 words, which is shorter than the sampling "
+          "window.")
 
 
 def main():
@@ -191,6 +338,8 @@ def main():
     ap.add_argument("--benchmark", default="peter_pan")
     ap.add_argument("--reference", type=Path, default=REFERENCE)
     ap.add_argument("--brief", action="store_true", help="summary line per file only")
+    ap.add_argument("--summary", action="store_true",
+                    help="one row per file with every measure, no grading")
     ap.add_argument("--list-benchmarks", action="store_true")
     ap.add_argument("--build-reference", nargs="+", metavar="DIR")
     a = ap.parse_args()
@@ -212,6 +361,9 @@ def main():
     if a.benchmark not in ref:
         sys.exit(f"error: no book named {a.benchmark}; try --list-benchmarks")
 
+    if a.summary:
+        return summary(a.paths, ref)
+
     results = []
     for p in a.paths:
         got = grade(p, ref, a.benchmark, a.brief)
@@ -220,7 +372,7 @@ def main():
         print()
     if len(results) > 1:
         print("=" * 78)
-        print(f"{'file':30}{'percentile':>12}{'losses/12':>12}")
+        print(f"{'file':30}{'percentile':>12}{'losses':>12}")
         for name, pct, lost in sorted(results, key=lambda r: r[1]):
             print(f"{name[:29]:30}{pct:>11.0f}%{lost:>12}")
 

@@ -21,10 +21,17 @@ He runs two registers and nothing in between. At home he closes a beat with a si
 | disagrees by | asks what it costs |
 | wordiness | 2/10, measured 4.8 words/line, terser than Meg |
 | terseness | measured 31%, keep |
+| at length | when a document runs out and the one thing still unaccounted for is Chloe herself — not a contract, a kid. He keeps building the case anyway, clause after clause, past where "Huh" would normally close it, because this account he can't set down |
 | jokiness | 3/10, amusement shows up as a suppressed physical beat (a laugh into a glass, an eyebrow), rarely as a spoken joke |
 | hedging | measured 0% in his analytical register, keep — flatly declarative even when he's about to reverse himself. Not the same rule alone with Meg, late, off the record of the day: the text has him doubling a bare acknowledgment instead of backing it with a reason, "her dad says he knows, twice" (chapters/03_the_letter.md:109). Still not a maybe; just not a single flat statement either |
 | questions | measured 15%, keep. Aimed at documents, numbers, and, once he learns to (chapters/19), other people's lives |
 | figurative | not allowed, none, ever |
+
+## When they talk at length
+
+Dave's sentences close early everywhere else in the sample — a token, a number, a question with three clauses and no more. He runs past that exactly once, the night he and Meg argue out whether to let Chloe go: "I'm not doing anything. I'm saying it's expensive. Every single thing about it is expensive, and none of it is being paid for by the four weeks, because the four weeks are free." (chapters/03_the_letter.md:94). Four sentences in one turn, more than he spends on anything else in the book, and it isn't even the case he ends the scene on. Two exchanges later, the actual reason surfaces the same way: "She's been flat since Christmas," her dad says. "You've seen it. She comes home and she says it was good." (chapters/03_the_letter.md:106). Three more sentences, and this time there's no number in any of them.
+
+What it costs him is the argument itself. He has just spent the whole chapter isolating the one real problem in the school's own pitch, a funding question nobody else in the family thought to ask, and he sets the strongest case he's built in the entire book aside for a fact he can't back with a document. Running this long is the register of what that costs him: he never allows himself this many consecutive sentences about anything else on the page, and both times he does it here, he's building toward giving up the argument he was winning.
 
 ## Signature: theirs alone
 

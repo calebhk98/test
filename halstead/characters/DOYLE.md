@@ -17,10 +17,17 @@ Doyle's entire verified quoted dialogue is two words, and they come after he's a
 | disagrees by | not attested toward a student, the one scene shows him agreeing with a correction |
 | wordiness | 1/10, the shortest total dialogue footprint alongside Pruitt |
 | terseness | 100% of his two clauses are under 6 words |
+| at length | not attested — his verified dialogue totals two words in the entire book, and nothing shows him sustaining more |
 | jokiness | 0/10 |
 | hedging | 0% |
 | questions | 0% |
 | figurative | none found |
+
+## When they talk at length
+
+Nothing in the manuscript shows this. Doyle's confirmed dialogue is two words total, "Mass. Thank you.," and the Known problems section below already flags that even a line once attributed to him ("Yeah, you're right, I said that wrong") was cut as a banned construction, leaving his sample thinner than it started. There's no second scene to build a longer circumstance from, and inventing one would sit on no textual ground at all.
+
+What happens instead is the same silent check-and-fix mechanism the rest of the sheet already documents: he verifies at the source, corrects the board, and says nothing else, "no talking-to, no note home, no comment the rest of the day" (chapters/04_pluto.md:122). The silence itself is doing the work a longer explanation would do for another teacher; the fix, performed without commentary, is the whole statement.
 
 ## Signature, theirs alone
 Verifies at the source before agreeing, silently, then fixes it without narrating the fix: "Mr. Doyle stops with the marker still up at the board and looks at what he's written." (chapters/04_pluto.md:113) No other teacher in this cast is shown pausing to re-examine their own prior work before responding to a correction. The check runs before anything gets said, too, not only after a correction lands: he counts his own chalk and marker supply before a lecture starts, a fieldwork habit about never running out of the tool you need mid-task, and the board gets checked against the challenge the same way, before he'll accept it, the identical motion applied to two different objects. When he does speak, the shape doesn't change: he repeats the corrected term exactly once, then closes on "Thank you," the term and the close, nothing added on either side, whether the correction comes from a seven-year-old, a colleague, or his own instruments logging a reading he has to re-check in the field. "Mass. Thank you." is the template, not a one-off.

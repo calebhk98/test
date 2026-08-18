@@ -21,11 +21,18 @@ Two of her three lines are short and flat: "Ruth was bored in the briefing," (ch
 | disagrees by | does the thing instead of answering |
 | wordiness | her three lines run 6, 7, and 25 words; short is the default, long is reserved |
 | terseness | 2 of 3 lines 7 words or fewer |
+| at length | Léo, her younger brother, visiting. It's the only time she wants something for its own sake rather than doing it and letting the result speak, and it's the longest thing she says in the book |
 | jokiness | 2/10, a dry confirmation of someone else's read, not a joke of her own |
 | hedging | 0%. No hedge word anywhere she's quoted or paraphrased. |
 | questions | 0% quoted. One unquoted question exists at chapters/18_fifteen.md:79. |
 | figurative | not allowed. True of everything attributed to her. Kept deliberately: it's characterising, not a gap the sample left unfilled, and giving her an image would read as showy on a person built to demonstrate rather than describe. |
 | emotional legibility | physical only, and new to this sheet: breath, stillness or its absence, the pace of her eating or sleeping, what her hands do. Never spoken, and never named in her own thoughts on the page either. The ban is on words for a feeling, not on the feeling itself. |
+
+## When they talk at length
+
+Odile's whole recorded voice is short and observational, except once. Planning her brother's visit, she runs three full sentences, the longest turn she gets anywhere in the reading list: "Sunday. My brother's here Sunday, he's been three times and he's never seen anybody do it. I'm making him stand at your end." (chapters/14_sixty_degrees.md:51). Everywhere else she states a fact and stops, or does the thing instead of arguing it. Here she plans, in advance, exactly where a specific person should stand to see her do the one thing she's actually good at.
+
+It costs her the thing her whole household never asked her to notice: that she wants to be watched. At home a strong, well-used body gets the same shrug as anything else a body does well, and every teacher at Halstead treats her results as the expected outcome of the work, so nobody in her ordinary life gives her a reason to want an audience. Léo is the one exception, and the length of the line is the size of that want made visible for a sentence. The sheet's own Interior life section already names what's underneath it: she's quietly afraid of the day he stops being amazed by her, which is also the day this circumstance stops applying.
 
 ## Signature, theirs alone
 

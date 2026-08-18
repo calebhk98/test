@@ -19,10 +19,16 @@ Baptiste never gives an answer without first getting a student to say what they'
 | disagrees by | doesn't, in the sample, no instance of him contradicting a student exists |
 | wordiness | 2/10, the shortest average turn of any teacher on this list |
 | terseness | roughly half of his 6 turns are 3 words or fewer |
+| at length | not a longer turn — a longer exchange. When a tangent runs parallel to his own current research, he keeps trading short questions with that one student past where he'd normally close the topic, all the way to the bell |
 | jokiness | 0/10 |
 | hedging | 0% |
 | questions | roughly a third of his turns are questions thrown back, the highest rate of any teacher here |
 | figurative | none found |
+
+## When they talk at length
+Baptiste never produces a long turn; that would undo the whole method, which is redirection, not delivery. What he does instead, once in the sample, is refuse to close an exchange. When Chloe and Ruth push the fractions lesson into dividing by zero, the same ground his own current paper is standing on, he doesn't hand them the answer and move on. "'Good,' Mr. Baptiste says, and does that one on the board too, and the two of them go back and forth about it until the bell goes" (chapters/05_behind.md:48). The length is in the duration of the back-and-forth, not in any single thing he says.
+
+It costs the rest of the room the same unhurried pace he otherwise gives everyone equally. That session is also the one where Owen, working two steps behind the tangent, asks a real question and gets deferred: "Mr. Baptiste answers him, then asks him a question back, and Owen looks at the board and says he doesn't know. Mr. Baptiste says that's fine and that they'll do it again tomorrow" (chapters/05_behind.md:40). The sustained exchange with Chloe and Ruth and the deferral of Owen happen in the same class period. Following one thread as far as it goes is time not spent on the student who needed the last one repeated.
 
 ## Signature, theirs alone
 Answers a question with a question, then still does the requested demonstration in full, from the start, without remarking on the repetition. No other teacher on this list is shown redoing unrewarded work without a word about it.

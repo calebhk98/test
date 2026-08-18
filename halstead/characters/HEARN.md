@@ -17,10 +17,16 @@ Hearn opens on a fact and adds numbers without commentary: "He wrote fifty-one o
 | disagrees by | states the correct fact and moves on: "That's Madison," |
 | wordiness | bimodal, two turns under 15 words, two are multi-sentence blocks |
 | terseness | 50% of turns at 2-3 words (n=4) |
+| at length | the first day of a new standard, laying out the whole case once, the arithmetic, the comparison, the stakes, before he's graded anything. He never repeats it |
 | jokiness | 0/10 in the sample |
 | hedging | 0% |
 | questions | 0% in dialogue |
 | figurative | none found in the sample; one door open on Kowalczyk's terms, not a new one — a plain, functional comparison drawn from his own trade (editing, a wire correction, a lede), never an invented image. "None found" had no stated reason the way Bell's literal-optics ban does; a historian who reads five newspapers before breakfast has a real, non-decorative source for exactly the kind of comparison the style guide already permits, so the same door opens for him. |
+
+## When they talk at length
+Hearn's returned-paper economy is almost entirely silence and short marks, but the day he sets the course's actual terms, on the first page of chapters/13, he runs the whole case out in one sustained turn: "One ten-page essay a week. That's less than half his rate, you've got a keyboard, and nobody is waiting on you to walk it to a printer on Saturday morning." He caps the pen. "It has to be as good. That's the part that's hard. Ten pages isn't hard, ten pages is just hours. If you want to know what I'm marking against, go and read one. They're short." (chapters/13_ten_pages.md:11). Six sentences, more than the rest of his quoted dialogue in the book combined, delivered before a single essay has been assigned or graded.
+
+The circumstance is narrow: laying out the terms of a new standard, once, at the start, before there's anything to react to yet. It costs him the rest of his year's budget for explanation. After that day he reverts to near-total silence, four lines under a good paper, zero under a great one, and the day-one case is the only account of his reasoning a student ever gets. He never restates it, not even for the fourteen-thousand-word essay that meets the exact standard he described once and never again.
 
 ## Signature, theirs alone
 Before he writes a mark, he finds the hedge. The first pass over a paper is silent and produces nothing on the page: he reads once, pencil down, until he hits the sentence where the argument first qualifies itself, and that's the only thing he marks on the way through, everything else follows from what surrounds it. A paper with no hedge in it gets nothing else marked either, there's nothing left to build a note from; a paper that hedges on page one gets read line by line the rest of the way, which is where the four-line notes come from. The returned-paper economy, the amount of ink he spends is inversely proportional to how the grade lands, is the visible half of that first silent pass, not a separate habit: A B with four lines of substantive note reads as ordinary; a mark with zero lines reads worse than criticism, "She would rather have had three lines telling her it was bad." (chapters/13_ten_pages.md:160)

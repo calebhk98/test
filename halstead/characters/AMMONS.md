@@ -18,10 +18,17 @@ She interviews in a fixed, level cadence: "she asks it in exactly the same voice
 | disagrees by | restates that she's asking anyway, regardless of the answer already given |
 | wordiness | 6.9 words/line |
 | terseness | 0 of 7 lines are three words or fewer |
+| at length | never in a single turn — her questions stay short throughout. What runs long is the sequence: when an answer surfaces something that sounds unambiguously good, she runs the complete structured screen anyway, question after question, rather than stop at the first reassurance |
 | jokiness | 0/10 |
 | hedging | 0% in her own speech |
 | questions | 4 of 7 lines, 57%, the highest question rate in this batch, matching an intake interview |
 | figurative | not allowed, none used |
+
+## When they talk at length
+
+No single Ammons line breaks her own register; every quoted turn stays short and procedural: "So tell me what's going on, and start wherever you like," "When did it start, roughly?," "And before that?" What runs long with her is the sequence, not the sentence. The moment Meg mentions the summer program almost in passing, glowing, "she was the happiest I have ever seen her, in her life," Ammons stops writing, puts the pen down, and says "Tell me about the program, all of it, from the beginning." (chapters/08_the_asking.md:33). What follows is a complete, structured sub-interview run start to finish: who ran it, how they found the family, whether Chloe stayed overnight, how far away it was, whether the same adults were there the whole time, whether anything happened, whether Chloe came back different. Told "nothing happened, she absolutely loved it," she still doesn't stop: "I'm sure she did, but I'm asking anyway." (chapters/08_the_asking.md:39).
+
+The circumstance is specific: an account that sounds good and unremarkable is exactly the shape of the miss she built her whole career around never repeating, the case where a colleague let a "fun" summer camp go unquestioned. Running the full sequence here, on a story with nothing alarming in it, is what that costs her: the same thoroughness that makes her good at the job is also, on the page, indistinguishable from a recruiter's own intake questions, and the text never resolves which one the reader watched.
 
 ## Signature — theirs alone
 

@@ -18,10 +18,17 @@ She talks in verdicts, not sentences. Four words is her ceiling for anything tha
 | disagrees by | delivers a closing verdict and moves on |
 | wordiness | 2.7 words/line, lowest of any speaking adult in this batch |
 | terseness | 2 of 7 lines, 29%, are three words or fewer |
+| at length | never, on the page — her whole quoted range tops out at four words. The one place she'd actually explain a mixed read is a parent conference, off the page, in writing, not speech |
 | jokiness | 0/10, no joke anywhere in her one scene |
 | hedging | 0% |
 | questions | 1 of 7 lines, 14% |
 | figurative | not allowed, none used |
+
+## When they talk at length
+
+No scene shows Carmen exceeding her own four-word ceiling in speech; all seven of her quoted lines hold to the same verdict-and-move-on shape. The one place the text puts her in a position to explain a full, mixed read of a child rather than deliver a flat line about one worksheet is the parent conference, and that happens off the page, in writing: she "writes both a real strength and a real concern on the same conference report, honestly, knowing they might read as contradictory to a worried parent." A conference is the one setting structurally different from her classroom, one family instead of twenty-nine kids waiting on the same lesson, so it's the one place explaining wouldn't cost the rest of the room anything. The manuscript still doesn't stage her saying any of it aloud.
+
+If she were shown talking at length, that conference is where it would happen, and even there it would cost her something real: the flat, identical rule she holds for all twenty-nine kids is her whole definition of fairness, and giving one family a fuller account than the room ever gets, even for good reason, is exactly the kind of exception she otherwise refuses to make.
 
 ## Signature — theirs alone
 

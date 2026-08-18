@@ -19,10 +19,17 @@ Three to four words is her default; her longest recorded line is seven words. Sh
 | disagrees by | repeats the bare assertion unchanged rather than defending it, "It just was" |
 | wordiness | 3.8 words/line, 19 words across 5 lines |
 | terseness | 80% of her lines are three words or fewer (4 of 5) |
+| at length | no attested circumstance, and none should be invented. Her whole design is the opposite discipline: state it once, flat, and refuse the follow-up |
 | jokiness | none of her lines are a joke |
 | hedging | no hedge anywhere in her 5 lines |
 | questions | 1 of 5, a closed complaint, not a real inquiry |
 | figurative | not used |
+
+## When they talk at length
+
+She doesn't, and this sheet isn't proposing an occasion for her to start. Kayleigh's whole textual function runs on the opposite move: she states a flat complaint once and declines to back it with a reason, even when asked directly. Pressed for the mechanism behind "you talk weird," Chloe gets "How was it different, though?" answered with "It just was," Kayleigh says, and throws the ball. (chapters/01_before.md:48-49). That refusal is the point of the character, not a gap in her material — the book's test for a matter-of-fact complaint delivered without a "because" clause runs through her, and a scene that gives her three sentences of explanation would undo exactly what she's built to demonstrate.
+
+What happens instead of talking at length is already on the dial above: she repeats the bare assertion, unchanged, and goes back to whatever she was doing. That's not a placeholder for a longer answer she hasn't been given yet. It's the whole answer.
 
 ## Signature — theirs alone
 

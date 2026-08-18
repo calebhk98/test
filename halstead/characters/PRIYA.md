@@ -29,10 +29,17 @@ delivered as flat fact, about a horse, to a total stranger she has known for und
 | disagrees by | agrees out loud and carries on doing what she was doing |
 | wordiness | ~13.4 words/turn by hand count over her 15 quoted lines, the highest average found in the reading list |
 | terseness | ~27% of turns are three words or fewer (4 of 15), and every one is a runway into a longer answer in the same or next beat, never a stand-alone statement |
+| at length | horses, to whoever's in front of her, known or a stranger of thirty seconds, unprompted. It runs her down — she talks herself straight into sleep the instant she's finished |
 | jokiness | 2/10; what humor exists is accidental deadpan literalism: "The horse's paper, they have papers." (chapters/04_pluto.md:21) |
 | hedging | 0% measured; she states even horse trivia as settled fact |
 | questions | ~13% (2 of 15 quoted lines: "Do you ride?", "Do it how?"), a comfortable rate for her |
 | figurative | allowed, animals only, and she does not notice she's done it. A permission she has, not yet used on the page |
+
+## When they talk at length
+
+Priya's baseline already runs longer than anyone else's in the cast, but even for her there's one register past that: horses, brought up unprompted, to anyone in earshot, stranger or not. The clearest instance is also her introduction. Minutes after meeting Chloe, she tells her about the horse she rides, the horse she doesn't ride but wants to, the girl at the barn who is not a good person, what that girl did at a show in April, and what the girl's mother said about it afterward, "doing all of it in about nine minutes without stopping once to find out whether Chloe wants any of it" (chapters/04_pluto.md:21). The subject doesn't have to be new information or a real audience. It has to be horses.
+
+It costs her, physically, on the spot: "Then Priya says goodnight, and inside a minute she's asleep" (chapters/04_pluto.md:22). Nine minutes of continuous talking and she's out cold before the next thing can happen. Nothing else in the book runs her down that fast. Talking this long isn't free for her the way a short answer is; it spends something, and the spending is visible in how completely she goes under the second she stops.
 
 ## Signature — theirs alone
 

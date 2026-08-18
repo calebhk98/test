@@ -19,10 +19,17 @@ His one substantive line is a flat comparative report, present tense against pas
 | disagrees by | not observed; neither line is a disagreement |
 | wordiness | 5 words/line average, 10 words across 2 lines |
 | terseness | 50% of his lines are three words or fewer |
+| at length | no attested circumstance, and none should be invented. His register bans the thing a longer turn would require: naming the mechanism instead of the observation |
 | jokiness | he isn't joking; the line reads funny to the reader only because it's so plainly correct |
 | hedging | none |
 | questions | none |
 | figurative | not used |
+
+## When they talk at length
+
+He doesn't, and this sheet isn't inventing a scene where he starts. Bryce has two lines in the whole book, ten words between them, and his own "Would they say this?" rule above bans the exact move a longer turn would need: "NO if it explains the mechanism behind the change. He reports the observation; he does not analyze it." A version of Bryce who ran three sentences past "You were weird before and now you're weirder" would be a version of Bryce explaining himself, a different, lesser character than the one the text gives, one whose whole force comes from reporting a true thing once and stopping.
+
+What happens instead is the second line: "Yeah," Bryce says, and turns back around. (chapters/07_the_same_room.md:133). Disengagement is the substitute for elaboration. He says the true thing, confirms it if asked, and goes back to what he was doing, the same shape as his uncle's diagnose-before-you-touch-it method, applied to a sentence instead of an engine.
 
 ## Signature — theirs alone
 

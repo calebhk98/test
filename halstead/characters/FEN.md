@@ -13,7 +13,13 @@ The one thing resembling Fen speaking is reported rather than quoted: "Fen expla
 
 ## Dials
 
-No quoted line exists to measure. Efficient, unsentimental, addresses the room or the object rather than the person is the direction the one scene supports. Short declaratives. She answers a direct question fully and then stops, rather than let a silence sit.
+No quoted line exists to measure. Efficient, unsentimental, addresses the room or the object rather than the person is the direction the one scene supports. Short declaratives. She answers a direct question fully and then stops, rather than let a silence sit. At length: not attested, and the one scene that exists argues against it — see "When they talk at length" below.
+
+## When they talk at length
+
+No scene shows her doing this, and the one piece of reported speech the book gives her argues against inventing one. Everything Fen says to a new roommate is delivered "without stopping what she is doing," two practical facts about the room and the radiator, and then "she goes back to whatever she was doing when the door opened" (chapters/10_april.md:15). That's the whole of her verified voice: brief, mid-task, and finished the moment the practical information is out.
+
+What stands in for a longer conversation is the object, not the sentence. The rock collection, kept in size order across every room change, and the private list of who had her room before her are both explained once, briefly, or not explained at all — Fen keeps the record instead of narrating it. If a scene ever needs her to communicate something at length, the honest version isn't a monologue; it's showing someone the shoebox, or the list, and letting them read what she's never said out loud.
 
 ## Signature — theirs alone
 

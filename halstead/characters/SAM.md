@@ -19,10 +19,17 @@ Shortest sentence-builder in the cast: one flat clause, said and done, with no s
 | disagrees by | restates his position unchanged, louder, or stops talking and acts |
 | wordiness | 5.1 words per line in chat, the shortest of anyone; he never writes a long message |
 | terseness | 31% of his lines are three words or fewer. No target above that: half his prose dialogue already runs to three words or fewer and the book cannot afford more |
+| at length | when an official record of him — praise, a debrief, a captain's ten-out-of-ten — doesn't match what he knows actually happened. He runs the correction all the way out, point by point, instead of taking the easier version |
 | jokiness | 9/10, the highest in the cast. He's funny because he repeats himself, unmoved, after everyone else has stopped finding it funny. That's stubbornness working as comedy: never hand him a line built on wit or timing. |
 | hedging | 0% on anything factual, tactical, or about himself — that stays absolute, and Theo keeps the exclusive claim on hedging as a general register. The one deliberate crack: when the subject is whether someone else is okay rather than what's true, a single soft word can get through. That isn't the manuscript's flatness leaking into the dial; it's the one place his certainty was never actually about being right. |
 | questions | 7% now, already the highest rate among the students; target higher still |
 | figurative | allowed one channel only: the deflating literalism ("It's a room-shaped object," chapters/04_pluto.md:47). No other figurative language of any kind |
+
+## When they talk at length
+
+Sam's rule is one flat clause and stop. He breaks it in exactly one kind of scene: when somebody hands him an assessment of himself that doesn't match what happened, and he won't let the wrong version stand. Told he shot a perfect ten, he runs the whole correction out instead of taking the compliment: "Accuracy is whether you can put a round into another round," Sam says. "In flight. On the count, opposite lanes, you both fire on the same beat. I'm at about forty percent and that's poor, there are people I went to school with at ninety. That's the number that means something." He nods at the rifle. "So I'm forty percent of a rifle." (chapters/26_ten_targets.md:49). He does the same thing to himself, unprompted, when a debrief doesn't mention a failure he thinks it should: "Because if that's the assessment I've got notes," Sam says. "The culvert one was bad. I let them have the back door and that's on me, I should have gone up and around and I got lazy about the time. If we're doing it again I'd want it harder, honestly, or at least more of them, because three separate two-and-fours over four days is a lot of walking for not much." (chapters/29_the_exercise.md:43).
+
+Both times he's talking the record down, not up — trading a compliment he didn't earn for a number he did, or volunteering blame nobody assigned him. That's the cost: it would be free to let the wrong, better version stand, and every one of these turns is Sam actively refusing that free win, in a room where nobody's making him.
 
 ## Signature — theirs alone
 

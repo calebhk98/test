@@ -13,7 +13,13 @@ Nobody quotes him directly, but what he did in front of a clock and a room full 
 
 ## Dials
 
-No dialogue exists to measure. If given lines, short, plain, home-grounded sentences fit him. He'd describe a specific thing, his dog, his sister, a Saturday routine, rather than an abstraction, and he'd answer a direct question before adding anything else.
+No dialogue exists to measure. If given lines, short, plain, home-grounded sentences fit him. He'd describe a specific thing, his dog, his sister, a Saturday routine, rather than an abstraction, and he'd answer a direct question before adding anything else. At length: no circumstance is attested, and none should be invented — see "When they talk at length" below.
+
+## When they talk at length
+
+He doesn't, anywhere in the book. Owen has zero quoted lines total, and nothing in either of his two chapters shows him sustaining more than the short, concrete answers already on record: "wasn't having fun" (chapters/05_behind.md:69, 70), a fraction question he can't finish (chapters/05_behind.md:40). Inventing a circumstance for him to open up would contradict what the sheet already establishes: he's below the floor this camp asks for, working as hard as anyone in the room and still not getting there, and a six-year-old in that position doesn't get handed a speech. He gets a stairwell.
+
+What happens instead of talking at length is the thing that actually defines him: he takes it private and physical rather than verbal. He cried "in the stairwell. On Thursday," alone, reported by Ruth (chapters/05_behind.md:80), and again nine months later by Kavi, who watched and "didn't know what you say to that" (chapters/10_april.md:101). He doesn't explain the crying, doesn't narrate it, doesn't have the words for what's happening to him yet — the sheet's own Interior life section already says as much: "A six-year-old has no way to describe removing himself from a room that had stopped waiting for him. It just felt like losing." Silence and a stairwell are the substitute for a speech he was never going to have the standing, or the vocabulary, to give.
 
 ## Signature — theirs alone
 

@@ -17,10 +17,17 @@ Both of Pruitt's lines name the exact fault in the piece in front of him, delive
 | disagrees by | not attested, no scene shows him disagreeing with anything a student says |
 | wordiness | 1/10, two lines total, 9 and 8 words |
 | terseness | the real measure is how rarely he speaks at all, two lines across three chapters and four years |
+| at length | never — his total spoken output in four years is two sentences, both purely technical. Silence is the substitute, for praise and for elaboration alike |
 | jokiness | 0/10 |
 | hedging | 0% |
 | questions | 0% |
 | figurative | none found |
+
+## When they talk at length
+
+He doesn't, and nothing here invents an occasion for it. Pruitt's entire spoken record across four years and three chapters is two sentences, nine words and eight: "Your heat's wrong and it has been all afternoon" and "You lost the curve on the second turn," both delivered while he was already walking away (see Signature, below). No scene shows him building past that, explaining a correction, or saying anything at all about four years of a student's unrewarded work.
+
+Silence does the job talking would do elsewhere. A full month of a new student's presence goes unremarked before he says a single word to her (chapters/15_twelve.md:9); good work gets nothing at all, the absence standing in for the absence of a fault to name. The forge runs on the same principle his two lines demonstrate: the metal, and the time spent at the bench, are what teach, and anything he might say at length would be doing the work the silence is already built to do.
 
 ## Signature, theirs alone
 Delivers the correction while already leaving, never stops walking, never waits to see it register. Both of his only two lines share this exact staging. No other teacher in the cast is shown speaking exclusively while departing.

@@ -10,6 +10,10 @@ Chloe's colleague at the translation company, first name Deb: single mother of o
 
 Chloe's account carries her whole presence on the page: "Deb who sits opposite her talks about her son constantly and Chloe learns his entire life story and is genuinely invested in it by October" (chapters/25_nineteen.md), and later, "She'll explain something at work, plainly, and Deb will not have it, so Chloe will find another way in" (same chapter). Given a voice: warm, talkative, concrete rather than abstract. She describes a project by what it's for, "it's the safety manual for the forklifts," rather than by its category, and she needs a plain technical explanation attached to a person or a use before it lands for her.
 
+## When they talk at length
+
+Nothing in the text stages this, so nothing here is invented to fill the gap. What the manuscript's own summary establishes is that talking about Tyler at length is Deb's ordinary mode, not a rare break from a terser baseline: she "talks about her son constantly," and Chloe knows his "entire life story" by October, which only happens if that's most of what fills a lull. There's no scene of it, no quoted line long or short, so there's no verified circumstance to name beyond any conversation, most days, and no textual cost to report either. The kindly-and-inadequate test above already says this plainly: nothing about the relationship costs Chloe anything, and nothing in the text suggests it costs Deb anything either. That absence of cost is itself worth keeping rather than fixing with an invented scene.
+
 ## Would they say this?
 
 - YES if it names a person or a concrete use before a category or a process.

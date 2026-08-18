@@ -18,10 +18,17 @@ She talks in short, closed, complete-sentence observations, often finished with 
 | disagrees by | restates her own reading flatly and moves on, even after correction |
 | wordiness | 9 words/sentence |
 | terseness | 25% of sentences are three words or fewer |
+| at length | when she recognises a family pattern repeating in a third generation without being told — Chloe doing exactly what she once watched Meg do, alone in the same house. She names it once, then immediately feeds the person she just placed in that lineage |
 | jokiness | 0/10, though the archery exchange reads as gentle comedy to the reader, unintended by her |
 | hedging | 0%, she states her readings as settled fact, even the wrong ones |
 | questions | 25% of sentences, all closed and low-stakes |
 | figurative | not allowed, none used |
+
+## When they talk at length
+
+Dorothy's longest scene in the book is also the one place she connects three generations out loud. Finding Chloe on the spare-room floor over Christmas, surrounded by papers, she doesn't ask what any of it is; she places it. "Your mother did that. Floor, back against the bed, papers everywhere, and if I moved one of them she could tell." Her grandmother puts a plate down on the carpet inside the doorway and leaves it there. "Four o'clock. I'm doing the ham at four and you're carrying it." (chapters/13_ten_pages.md:170). Two sentences naming the pattern, then two more moving straight into the practical thing she can actually do about it: feed her, and give her a job at four o'clock.
+
+Recognising the repetition doesn't mean she's read what it signals correctly. The sheet's own Interior life section already says she's wrong that patience and time answer anything Chloe describes struggling with; that belief holds for a body and doesn't transfer to a mind going understimulated. Naming the pattern costs her nothing to say. It also leaves the actual problem exactly where it was, with a plate on the carpet standing in for an explanation she doesn't have.
 
 ## Signature — theirs alone
 
