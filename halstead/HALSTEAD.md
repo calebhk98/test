@@ -308,7 +308,7 @@ Chloe doesn't believe the last part, because everybody says that.
 
 ---
 
-The blocks are red and white, and she has to turn them until the tops match a picture on a card. The first ones are so easy that she thinks it's a trick, so she keeps looking up at Ben to find out whether it's a trick, but all he says is mm-hm. Then they get bad: there's one where she can't find where the shape starts, so she turns a block over four times before putting it back down in the place it was already in. While Ben doesn't say anything, somewhere in the building there is a clock.
+The blocks are red and white, and she has to turn them until the tops match a picture on a card. The first ones are so easy that she thinks it's a trick, so she keeps looking up at Ben to find out whether it's a trick, but all he says is mm-hm. Then they get bad: there's one where she can't find where the shape starts, so she turns a block over four times before putting it back down in the place it was already in. Ben doesn't say anything, and somewhere in the building there is a clock.
 
 "I can't do that one."
 
@@ -1552,7 +1552,7 @@ While Ms. Vance is over at the cabinet with the tape, not looking up for any of 
 
 ---
 
-Though the four books are due on a Thursday, she has finished two of them.
+The four books are due on a Thursday and she has finished two of them.
 
 Having taken the third one to bed on the Monday and gotten four pages in, she opens it at the same place on the Tuesday, reads the top of the page, reads it again, then gives up and puts it down on the floor. On the Wednesday she doesn't take it up with her.
 
@@ -1820,7 +1820,7 @@ The envelope is in the top drawer under her socks, where it has been since Augus
 
 It's a Tuesday and nothing happens on it.
 
-The school doesn't call. The sheet at twenty past nine is the same sheet as Monday's, with different numbers in it. Once she finishes it and checks it, she sits behind it with her hands in her lap for the rest of the period. Because there's a space at one end of a table, she sits there at lunch, the talk staying down at the other end, out of her reach. In the afternoon they do a worksheet about the parts of a plant, which has a picture on it that you colour in when you've finished the words. Chloe finishes the words in about four minutes, then colours the picture very slowly, going right up to the lines without going over them anywhere. She has seen Dr. Ammons four times since October, and the last one, which was a fortnight ago, was when she was asked whether any of it had got easier and said some of it had.
+The school doesn't call. The sheet at twenty past nine is the same sheet as Monday's, with different numbers in it. She finishes it, checks it, and sits behind it with her hands in her lap for the rest of the period. At lunch she sits at the end of a table where there's a space, the talk staying down at the other end, out of her reach. In the afternoon they do a worksheet about the parts of a plant, which has a picture on it that you colour in when you've finished the words. Chloe finishes the words in about four minutes, then colours the picture very slowly, going right up to the lines without going over them anywhere. She has seen Dr. Ammons four times since October, and the last one, which was a fortnight ago, was when she was asked whether any of it had got easier and said some of it had.
 
 She comes home. She goes upstairs without taking her coat off. At some point her mom comes up to say that dinner's in ten minutes. She finds her on the floor in the gap between the bed and the wall, with her back against the bed and her knees pulled up.
 
@@ -1842,7 +1842,7 @@ Chloe can't answer that one. School, the sheets, Kayleigh Burns, none of them al
 
 "This," she says, with her face against her mother's collarbone. "This, this, all of this."
 
-After she has stopped, her mother holds her on the floor for a long time. Neither of them gets up off it, the ten minutes going by without anybody saying anything about dinner. Her dad appears in the doorway at some point, a dishcloth in his hand. Her mother looks up at him and doesn't say a word, so he goes back down, and from the floor there's just his feet on the kitchen tile, back and forth, no pan, no water.
+Her mother holds her on the floor for a long time after she has stopped. Neither of them gets up off it, the ten minutes going by without anybody saying anything about dinner. Her dad appears in the doorway at some point, a dishcloth in his hand. Her mother looks up at him and doesn't say a word, so he goes back down, and from the floor there's just his feet on the kitchen tile, back and forth, no pan, no water.
 
 Later, when she is in bed and supposed to be asleep, the two of them are at the kitchen table with the door mostly shut, and their voices come up through the part of the floor that's thin.
 
@@ -1900,7 +1900,7 @@ She runs upstairs, then comes back down twenty seconds later, and stops on the t
 
 She runs back up.
 
-Her parents sit in the living room, and listen to her going back and forth over their heads for a solid ten minutes. Drawers open and shut. Something heavy gets dragged across the floor twice. When her dad says something downstairs, Chloe is out on the landing with a drawer open in front of her, and she doesn't catch the start of it, though she gets the end of it clearly enough.
+Her parents sit in the living room, and listen to her going back and forth over their heads for a solid ten minutes. Drawers open and shut. Something heavy gets dragged across the floor twice. Chloe is out on the landing with a drawer open in front of her when her dad says something downstairs, and she doesn't catch the start of it, though she gets the end of it clearly enough.
 
 "That's her. That's what she's actually like."
 
@@ -1988,7 +1988,7 @@ Kavi turns up an hour later and stands in the doorway with his arms folded until
 
 "What's your last name," Chloe says.
 
-At dinner she counts eleven faces she knows before the food comes and gives up counting after that. Of the ninety who were at camp, twenty-some came back that first fall, and more came the year after, drifting in a term or two at a time until it stopped being a thing anybody remarked on. On the way out Sam takes her round by the long corridor to show her a window that doesn't shut properly. Then he walks straight past the noticeboards on the second floor without looking at them once. A boy she has never seen before asks whether she is the one who did the bridge at camp, and when she says no, he says that's fine, then carries on eating. While they are carrying their trays back, she asks Ruth about Owen.
+At dinner she counts eleven faces she knows before the food comes and gives up counting after that. Of the ninety who were at camp, twenty-some came back that first fall, and more came the year after, drifting in a term or two at a time until it stopped being a thing anybody remarked on. On the way out Sam takes her round by the long corridor to show her a window that doesn't shut properly. Then he walks straight past the noticeboards on the second floor without looking at them once. A boy she has never seen before asks whether she is the one who did the bridge at camp, and when she says no, he says that's fine, then carries on eating. She asks Ruth about Owen while they are carrying their trays back.
 
 "He left camp in the second week. He was in the room across from Sam and he had a blue thing hanging off his bag."
 
@@ -2006,7 +2006,7 @@ Swimming is the first afternoon hour and the school assigns it to everybody. The
 
 Priya reaches past her for the bread at dinner. "He went to the Olympics," she says. "Swimming, obviously. Somebody's mom told my mom at the thing in January."
 
-The second hour she picks herself, off a list on a wall, with nobody standing next to her while she reads it. Because Ruth is already in cooking, she picks it too. Cooking is knife work, standing up straight, cleaning as you go, plus being told for the fourth time that your onion is not the same size all the way along.
+The second hour she picks herself, off a list on a wall, with nobody standing next to her while she reads it. She picks cooking too, because Ruth is already in it. Cooking is knife work, standing up straight, cleaning as you go, plus being told for the fourth time that your onion is not the same size all the way along.
 
 "Yours is a triangle."
 
@@ -2030,7 +2030,7 @@ She hates it for a month, but the first two weeks go badly in every subject she 
 
 "As many as you can carry, and there's no card, so nobody's writing any of this down. There's nobody at the desk after seven. Take what you want, bring it back when you're finished with it, and if you lose one then come and say you lost one."
 
-The library at home was one room off the gym with a rug in the middle of it, and the woman at the desk would let you take four books and not five, and Chloe argued with her about it three separate times and got four books every time. This one is the whole back of the ground floor, both floors of it, with a staircase inside it that goes up to a second level of shelves running all the way round. Nobody is at the desk on a Tuesday at eleven at night, and there is no card and no limit. The first time she takes eleven books, which she has to carry against her chest with her chin on the top one, but she only gets three of them read. The second week she takes six. After that it settles at somewhere between two and four, because the library is a four-minute walk from her room and it is open at eleven at night, so there is no reason to carry more than she can carry in one hand. She reads in the gaps. There is no reading in class, and there is very little in the afternoon, because Ruth is at the next station over with something always going on. So it happens in the hour before dinner, and after lights out with the corridor light coming under the door, and on the Saturdays when the other three are doing something she got out of. The mathematics thing happens in the third week of May, on a problem she has had for six days. There is a wheel rolling along a straight line and one point marked on the rim of it, and the question is how far that mark actually travels while the wheel goes round one time. It is further than the wheel goes. Everybody agrees on that much, but nobody in the room can say how much further.
+The library at home was one room off the gym with a rug in the middle of it, and the woman at the desk would let you take four books and not five, and Chloe argued with her about it three separate times and got four books every time. This one is the whole back of the ground floor, both floors of it, with a staircase inside it that goes up to a second level of shelves running all the way round. Nobody is at the desk on a Tuesday at eleven at night, and there is no card and no limit. The first time she takes eleven books, which she has to carry against her chest with her chin on the top one, but she only gets three of them read. The second week she takes six. It settles after that at somewhere between two and four, because the library is a four-minute walk from her room and it is open at eleven at night, so there is no reason to carry more than she can carry in one hand. She reads in the gaps. There is no reading in class, and there is very little in the afternoon, because Ruth is at the next station over with something always going on. So it happens in the hour before dinner, and after lights out with the corridor light coming under the door, and on the Saturdays when the other three are doing something she got out of. The mathematics thing happens in the third week of May, on a problem she has had for six days. There is a wheel rolling along a straight line and one point marked on the rim of it, and the question is how far that mark actually travels while the wheel goes round one time. It is further than the wheel goes. Everybody agrees on that much, but nobody in the room can say how much further.
 
 She has it in the shower on the Wednesday and stands there until the water goes cold, and the next morning she gets to the room eight minutes early. Ruth is already at the board.
 
@@ -2050,7 +2050,7 @@ On the second floor by the stairs there is a board made of cork with sheets of p
 
 "Does anybody get sent home?"
 
-"Not for being bad at something, if that's what you're asking, and nobody has ever been asked to leave here for being bad at something." While he talks, he is putting papers into a case and does not stop doing it. "People do go home. Their family comes and gets them. It happens two or three times a year. It's a school, it isn't a prison, and it isn't a competition you can be knocked out of."
+"Not for being bad at something, if that's what you're asking, and nobody has ever been asked to leave here for being bad at something." He is putting papers into a case while he talks, and does not stop doing it. "People do go home. Their family comes and gets them. It happens two or three times a year. It's a school, it isn't a prison, and it isn't a competition you can be knocked out of."
 
 She asks Kavi about it two weeks later, on the stairs, when there is nobody else in the stairwell.
 

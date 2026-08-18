@@ -136,7 +136,7 @@ While Ms. Vance is over at the cabinet with the tape, not looking up for any of 
 
 ---
 
-Though the four books are due on a Thursday, she has finished two of them.
+The four books are due on a Thursday and she has finished two of them.
 
 Having taken the third one to bed on the Monday and gotten four pages in, she opens it at the same place on the Tuesday, reads the top of the page, reads it again, then gives up and puts it down on the floor. On the Wednesday she doesn't take it up with her.
 

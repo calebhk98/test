@@ -25,7 +25,7 @@ After he tells her she can call him Ben and asks what he should call her, he sit
 "No," he says straight away, without needing to think about it first. "There's no passing number and I'm not giving you a grade at the end. I'm watching how you do things, not whether you get them."  
 Chloe doesn't believe the last part, because everybody says that.  
 \---  
-The blocks are red and white, and she has to turn them until the tops match a picture on a card. The first ones are so easy that she thinks it's a trick, so she keeps looking up at Ben to find out whether it's a trick, but all he says is mm-hm. Then they get bad: there's one where she can't find where the shape starts, so she turns a block over four times before putting it back down in the place it was already in. While Ben doesn't say anything, somewhere in the building there is a clock.  
+The blocks are red and white, and she has to turn them until the tops match a picture on a card. The first ones are so easy that she thinks it's a trick, so she keeps looking up at Ben to find out whether it's a trick, but all he says is mm-hm. Then they get bad: there's one where she can't find where the shape starts, so she turns a block over four times before putting it back down in the place it was already in. Ben doesn't say anything, and somewhere in the building there is a clock.  
 "I can't do that one."  
 "Okay. That's a totally fine answer." He writes something down. She can't tell from his face whether it was a good thing to write. "Do you want to try one more, or do you want a break?"  
 "One more." She has both hands flat on the table by then, waiting for him to lay the card down.  

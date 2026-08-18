@@ -4,7 +4,7 @@
 
 It's a Tuesday and nothing happens on it.
 
-The school doesn't call. The sheet at twenty past nine is the same sheet as Monday's, with different numbers in it. Once she finishes it and checks it, she sits behind it with her hands in her lap for the rest of the period. Because there's a space at one end of a table, she sits there at lunch, the talk staying down at the other end, out of her reach. In the afternoon they do a worksheet about the parts of a plant, which has a picture on it that you colour in when you've finished the words. Chloe finishes the words in about four minutes, then colours the picture very slowly, going right up to the lines without going over them anywhere. She has seen Dr. Ammons four times since October, and the last one, which was a fortnight ago, was when she was asked whether any of it had got easier and said some of it had.
+The school doesn't call. The sheet at twenty past nine is the same sheet as Monday's, with different numbers in it. She finishes it, checks it, and sits behind it with her hands in her lap for the rest of the period. At lunch she sits at the end of a table where there's a space, the talk staying down at the other end, out of her reach. In the afternoon they do a worksheet about the parts of a plant, which has a picture on it that you colour in when you've finished the words. Chloe finishes the words in about four minutes, then colours the picture very slowly, going right up to the lines without going over them anywhere. She has seen Dr. Ammons four times since October, and the last one, which was a fortnight ago, was when she was asked whether any of it had got easier and said some of it had.
 
 She comes home. She goes upstairs without taking her coat off. At some point her mom comes up to say that dinner's in ten minutes. She finds her on the floor in the gap between the bed and the wall, with her back against the bed and her knees pulled up.
 
@@ -26,7 +26,7 @@ Chloe can't answer that one. School, the sheets, Kayleigh Burns, none of them al
 
 "This," she says, with her face against her mother's collarbone. "This, this, all of this."
 
-After she has stopped, her mother holds her on the floor for a long time. Neither of them gets up off it, the ten minutes going by without anybody saying anything about dinner. Her dad appears in the doorway at some point, a dishcloth in his hand. Her mother looks up at him and doesn't say a word, so he goes back down, and from the floor there's just his feet on the kitchen tile, back and forth, no pan, no water.
+Her mother holds her on the floor for a long time after she has stopped. Neither of them gets up off it, the ten minutes going by without anybody saying anything about dinner. Her dad appears in the doorway at some point, a dishcloth in his hand. Her mother looks up at him and doesn't say a word, so he goes back down, and from the floor there's just his feet on the kitchen tile, back and forth, no pan, no water.
 
 Later, when she is in bed and supposed to be asleep, the two of them are at the kitchen table with the door mostly shut, and their voices come up through the part of the floor that's thin.
 
@@ -84,7 +84,7 @@ She runs upstairs, then comes back down twenty seconds later, and stops on the t
 
 She runs back up.
 
-Her parents sit in the living room, and listen to her going back and forth over their heads for a solid ten minutes. Drawers open and shut. Something heavy gets dragged across the floor twice. When her dad says something downstairs, Chloe is out on the landing with a drawer open in front of her, and she doesn't catch the start of it, though she gets the end of it clearly enough.
+Her parents sit in the living room, and listen to her going back and forth over their heads for a solid ten minutes. Drawers open and shut. Something heavy gets dragged across the floor twice. Chloe is out on the landing with a drawer open in front of her when her dad says something downstairs, and she doesn't catch the start of it, though she gets the end of it clearly enough.
 
 "That's her. That's what she's actually like."
 
