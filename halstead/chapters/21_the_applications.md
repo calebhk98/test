@@ -41,7 +41,7 @@ Ruth is quiet for a second. "That's probably it," she says, and closes the lapto
 Chloe applies to fourteen places. Eight Ivies, because everyone does. Her state school, the college her mother went to, one in Michigan because Fen once said it was nice, and three others she picks off a phone screen in about nine minutes after lights-out.
 
 
-Her mother calls twice that month to ask how the essays are going, and both times gets the same answer: fine. She doesn't push past it, the way she never does when Chloe says a thing is fine, and reads the list of fourteen schools back over the phone instead, one at a time, checking each deadline against the calendar taped inside the kitchen cabinet, the same one she's checked every deadline against since Chloe was six.
+Her mother calls twice that month to ask how the essays are going, and both times gets the same answer: fine. She doesn't push past it, the way she never does when Chloe says a thing is fine. Instead she reads the list of fourteen schools back over the phone, one at a time, checking each deadline against the calendar taped inside the kitchen cabinet, the same one she's checked every deadline against since Chloe was six.
 
 
 The essays are where the mismatch shows. A prompt asks for six hundred words about a challenge she overcame, and by the second paragraph she has written eleven hundred words about fraction division and hasn't reached the part where anything gets overcome. She writes about the floor of her room at seven, the pencil, refusing to move until the division comes out right on her own terms rather than on the strength of a rule somebody told her to trust. The first draft runs past four thousand words and covers most of a decade nobody outside this building has ever heard of.
@@ -71,7 +71,7 @@ Down the hall, Odile's own essay runs four clean pages and mentions the ten-on-o
 A second prompt asks about a place that changed her, and for a while Chloe considers the forge before remembering that most of what happens there this year isn't hers to hand to a stranger in six hundred words. She writes about the reservoir instead, eleven miles from her parents' house, and the hill near the top she has to stand up on to clear. It comes out at four hundred and ninety words, no cutting required, because for once there's nothing underneath it she isn't allowed to say. She reads it twice, checking that she hasn't left something out by mistake, then submits it anyway.
 
 
-For the college her mother went to, the prompt asks why this school specifically, and Chloe writes the honest, short answer instead of a longer invented one: her mother still has a sweatshirt from it, worn soft at the cuffs, at the back of a closet, and has never suggested Chloe apply anywhere else in its place.
+For the college her mother went to, the prompt asks why this school specifically. Chloe writes the honest, short answer instead of a longer invented one: her mother still has a sweatshirt from it, worn soft at the cuffs, at the back of a closet, and has never suggested Chloe apply anywhere else in its place.
 
 
 The essays take an evening each.
@@ -132,7 +132,7 @@ A representative from Yale sits in on Mr. Hearn's writing seminar for ninety min
 A rep corners Chloe in the library on a Wednesday and asks, pleasantly, what a typical day looks like. She gives him the version she's given clinicians and investigators before: classes, meals, prep time, sleep, four words for each block, nothing that isn't already printed in the brochure he's holding. He writes it down anyway and thanks her for her time.
 
 
-Another asks Sam what he's good at, expecting a list with some hedging in it. "Fighting," Sam says. "Best in my year, and it's not close." Asked how he knows, he doesn't shrug it off. He explains the drill instead, the clock, the headcount, ten against one and how many seconds a body can reasonably expect to hold that, until the rep has more written down than the form in front of him has room for and has to turn the page over to finish.
+Another asks Sam what he's good at, expecting a list with some hedging in it. "Fighting," Sam says. "I'm first in my year on the board." Asked how he knows, he doesn't shrug it off, and he doesn't leave the number standing where it is either. He explains the drill: the clock, the headcount, ten against one, how many seconds a body can reasonably expect to hold that. Then he says the board measures the drill, that the drill is not fighting, and that there are two people below him on it who would take him apart in a room with no clock running. The rep ends up with more written down than the form has room for, and turns the page over to finish.
 
 
 One evening a rep from Chicago tries a door on the research floor that isn't supposed to open for him, and finds, unsurprisingly, that it doesn't. There's no sign on it. There's a keypad, and a camera above the keypad, and nothing else.
@@ -211,6 +211,9 @@ ________________
 
 
 
+The night before decisions post, the common room fills the way it always does before a deadline: four laptops open, a match nobody's finished paused on someone's phone, homework still due the next morning regardless of what a website says at midnight. Ruth falls asleep on the couch before the first portal opens, laptop still lit beside her. Kavi is the only one still awake when the clock turns over, and he doesn't check anything until after breakfast.
+
+
 The acceptances arrive in March.
 
 
@@ -229,7 +232,7 @@ Odile gets in everywhere she applied and doesn't tell anyone until Léo asks her
 Chloe gets twelve of fourteen.
 
 
-Outside her window the snow along the path has gone soft and gray, the first real thaw of the year, though nobody's called it spring yet. She sits on the floor of her room with the letters spread in two uneven rows, the ones that start with "we are pleased" and the two that don't, and reads the twelfth acceptance a second time before she believes the count, then a third, checking the name on the envelope against the name on the letter inside it, in case an office somewhere mixed up two files that both happen to say Kessler. Then she turns the top one over and over without opening the mail underneath it, working out what to do with a number that doesn't match anything the school has ever told her about herself.
+Outside her window the snow along the path has gone soft and gray, the first real thaw of the year, though nobody's called it spring yet. She sits on the floor of her room with the letters spread in two uneven rows, the ones that start with "we are pleased" and the two that don't. She reads the twelfth acceptance a second time before she believes the count, then a third, checking the name on the envelope against the name on the letter inside it, in case an office somewhere mixed up two files that both happen to say Kessler. Then she turns the top one over and over without opening the mail underneath it, working out what to do with a number that doesn't match anything the school has ever told her about herself.
 
 
 "It said four percent," she says, when Sam finds her there an hour later, still on the floor.
