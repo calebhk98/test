@@ -2,9 +2,9 @@
 
 *September 2017 – January 2018*
 
-The forge is a low building past the kitchens, open Thursdays and most of Sunday.
+The forge is a low building past the kitchens that stays open Thursdays and most of Sunday.
 
-She walks down in the first week of September to have a chisel made and stays the whole afternoon watching a man called Pruitt make it. By October she has a bench in the corner nearest the door, with her own tongs on the rack above it. Four times that month she misses the start of dinner. On the fourth, Sam comes down and stands in the doorway with his coat on. He waits about six minutes before she puts the work down. Then she talks at him the whole way back across the grass, sleeves still rolled, a burn on the inside of her wrist she has not shown anybody.
+She walks down in the first week of September to have a chisel made and stays the whole afternoon watching a man called Pruitt make it. By October she has a bench in the corner nearest the door, with her own tongs on the rack above it. Four times that month she misses the start of dinner, and on the fourth, Sam comes down and stands in the doorway with his coat on. He waits about six minutes before she puts the work down. Then she talks at him the whole way back across the grass, sleeves still rolled, a burn on the inside of her wrist that she has not shown anybody.
 
 Pruitt runs the place off a whiteboard with the Thursday names on it and a list of what stock is low. For the first month the men down there work around her and leave her to it. Then, in the second week of October, Pruitt passes behind her with an armful of bar.
 
@@ -14,7 +14,7 @@ He keeps walking, leaving her to work out what he meant. It takes her four minut
 
 Sam picks a hook off her bench in November and says it beats anything else down there.
 
-"The scroll's wrong." She takes it out of his hand. It is still warm at the thick end. The hammer marks run straight down the shank, the way she wanted them, so she turns it over and puts her thumb on the inside of the curve, feeling along until she finds the spot where the metal stops giving under her nail. "There. It goes tight and then it opens out. That's two curves welded in the middle, pretending to be one. Hold it up at the window."
+"The scroll's wrong." She takes it out of his hand, still warm at the thick end. The hammer marks run straight down the shank, the way she wanted them, so she turns it over and puts her thumb on the inside of the curve, feeling along until she finds the spot where the metal stops giving under her nail. "There. It goes tight and then it opens out. That's two curves welded in the middle, pretending to be one. Hold it up at the window."
 
 Sam holds it up at the window with one eye shut.
 
@@ -24,13 +24,9 @@ He looks a while longer before handing the hook back, telling her it still looks
 
 "Good job on this. Look how straight the marks run."
 
-Three weeks later Pruitt passes the bench, where the hook is still sitting.
+Three weeks later Pruitt passes the bench, where the hook is still sitting. "You lost the curve on the second turn," he says, without stopping.
 
-"You lost the curve on the second turn," he says, without stopping.
-
-In November Bell takes the metronome off the post and puts it in his coat pocket in front of all of them.
-
-"You've had that two years. From today one of you calls the count out loud and the other works off the call."
+In November Bell takes the metronome off the post and puts it in his coat pocket in front of all of them. "You've had that two years. From today one of you calls the count out loud and the other works off the call."
 
 "Which one of us is supposed to be calling it?"
 
@@ -64,11 +60,11 @@ The bread comes up in Ruth's room on a Tuesday, with the four of them on the flo
 
 Kavi pushes up from the floor and gets his back against the radiator. "Then do it blind."
 
-"Do it how?" Priya rolls onto her front. "Somebody has to know which plate is which or you can't score it, and whoever knows is the one who wrecks it for everybody."
+"Do it how?" Priya says, rolling onto her front. "Somebody has to know which plate is which or you can't score it, and whoever knows is the one who wrecks it for everybody."
 
 They spend forty minutes on that, and most of the forty minutes is Priya taking other people's ideas apart. What comes out of it is two rounds. For the first, Kavi cuts both loaves, marks the underside of the four plates, and eats nothing. Ruth runs the second the same way so that Kavi gets a turn. Each of them writes their own key on a scrap and folds it before anybody starts. Sam wants to know why they cannot do it once, but Ruth explains it twice, the second time with her hands.
 
-At half past eleven they go down. Four ovens the size of wardrobes line the kitchen wall, with a conveyor toaster at the end of them that does thirty slices in a run.
+At half past eleven they go down, where four ovens the size of wardrobes line the kitchen wall, with a conveyor toaster at the end of them that does thirty slices in a run.
 
 "We are not doing thirty slices of toast at midnight, Kavi."
 
@@ -82,9 +78,7 @@ He puts the big one on, takes a thermometer off the wall, then stands in front o
 
 "That's a heat exchanger problem and I want to know which part of it is the limit." He does not turn round. "Two more minutes."
 
-Mrs. Adeyemi comes in at twenty to twelve with her coat still on.
-
-"Is that oven on?"
+Mrs. Adeyemi comes in at twenty to twelve with her coat still on. "Is that oven on?"
 
 "Yes. It's been on about six minutes and it's nearly up."
 
@@ -104,11 +98,11 @@ On the stairs Priya wants to know whether the first round still counts.
 
 "We ate it, but nobody said anything out loud, so somebody's got a number." Ruth is going up two at a time. "Kavi's got the key in his pocket."
 
-Under the landing light Kavi unfolds it and reads it out. They have five right out of eight.
+When Kavi unfolds it under the landing light and reads it out, they have five right out of eight.
 
-"Five." Sam is doing something with his fingers. "That's five out of eight, that's sixty-something percent, that's not nothing."
+"Five," Sam says, doing something with his fingers. "That's five out of eight, that's sixty-something percent, that's not nothing."
 
-"Five out of eight is what a coin does." Ruth is still climbing. "Come back to me when it's eight."
+"Five out of eight is what a coin does," Ruth says, still climbing. "Come back to me when it's eight."
 
 Saturday afternoon is the stock count: four hours, one clipboard between them, eleven shelves of tinned tomatoes, and a walk-in cooler at the end of shelf eleven with another two hundred tins standing in it.
 
@@ -118,7 +112,7 @@ Saturday afternoon is the stock count: four hours, one clipboard between them, e
 
 "There were not eleven of anything left over."
 
-"Sam." Ruth points at the floor without turning round. "They're by your foot."
+"Sam," Ruth says, pointing at the floor without turning round. "They're by your foot."
 
 They count the third shelf three times, and the third count is Ruth's. She stops halfway through it, puts the clipboard down on a crate, and stands looking at the shelf for long enough that Kavi asks her what she is doing. Then she starts counting cases instead of tins, four stacks at a time, with a chalk mark on the shelf edge for every complete twelve. That takes a shelf from forty minutes to nineteen. By the time they finish, it's time for dinner.
 
@@ -146,7 +140,7 @@ Minimum personnel. Every additional student on the response costs you.
 
 At the bottom, in the same typeface, without emphasis: Response time is scored against the standard. The standard is posted weekly.
 
-Chloe is annoyed when the alarm wakes her. It's the small one, the one in her ear, and it means watch. It's four in the morning, she has done a watch at four, what she hasn't done is four in the morning with nobody having said a word about it beforehand.
+Chloe is annoyed when the alarm wakes her. It's the small one, the one that sits in her ear, and it means watch. It's four in the morning, she has done a watch at four, what she hasn't done is four in the morning with nobody having said a word about it beforehand.
 
 She's in the corridor in eleven seconds and Kavi is already there.
 
@@ -160,7 +154,7 @@ She's in the corridor in eleven seconds and Kavi is already there.
 
 Sam gets there last.
 
-Kavi is on their comms in under thirty seconds. "It's AES-256," he says. "But, it's a six-digit pairing code and they never changed it off default." He's already got the campus cluster chewing on it. "You just do a few billion codes and see which one gives you something that isn't noise. It's four seconds of compute. It's not even interesting."
+In under thirty seconds, Kavi is on their comms. "It's AES-256," he says. "But, it's a six-digit pairing code and they never changed it off default." He's already got the campus cluster chewing on it. "You just do a few billion codes and see which one gives you something that isn't noise. It's four seconds of compute. It's not even interesting."
 
 "How is that AES-256," Sam says, wiping his face. "Why wouldn't they change it?"
 
@@ -220,19 +214,15 @@ Ruth is quiet for as long as it takes to breathe out. "Fine, fast ones," she sig
 
 \---
 
-Chloe walks around the corner at a normal speed with her hands empty and her arms down.
-
-The face she's supposed to make is confused and half asleep, and even though she is bad at it, just like drawing and dance, it's her best shot. 
+Chloe walks around the corner at a normal speed with her hands empty and her arms down. The face she's supposed to make is confused and half asleep, and even though she is bad at it, just like drawing and dance, it's her best shot. 
 
 "Uh," she says. "Hi. Who are you?" She tilts her head like a lost puppy.
 
-All four of them turn. The nearest one comes at her fast and low and gets a gloved hand up near her mouth, and she lets him, because moving would be wrong. He doesn't hit her. He puts the hand there and then stops, with his other arm half up, doing exactly what she needed him to do, in front of three men who are all looking at the same thing.
+All four of them turn. The nearest one comes at her fast and low and gets a gloved hand up near her mouth, and she lets him, because moving would be wrong. He doesn't hit her, only puts the hand there and then stops, with his other arm half up, doing exactly what she needed him to do, in front of three men who are all looking at the same thing.
 
 It takes nine seconds. Kavi, closest to them, takes the two at the back; Ruth takes the third, and Sam goes for the one with his hand on Chloe's face, doing it badly, missing the vein and going again. The man takes that half a second, gets an arm free and swings but hits nothing before he then goes down.
 
-Chloe steps back out of the way and sits down on the floor because her legs have decided to.
-
-Ruth is already moving between the four of them, two fingers on a throat, then the next, then the next.
+Chloe steps back out of the way and sits down on the floor because her legs have decided to, while Ruth is already moving between the four of them, two fingers on a throat, then the next, then the next.
 
 "He's fine. This one's fine. This one's, yeah. He's fine."
 
@@ -246,13 +236,13 @@ They tie them up, wrists and ankles, on their sides, four men in a row against t
 
 Ruth has the antidote out as she counts respirations on each of the four every two minutes and writes the numbers on her arm in pen because nobody brought paper.
 
-Kavi is going through the equipment. Two bags, a laptop, a lockpick set, a pair of bolt cutters that are the wrong bolt cutters for the fence they came over.
+Kavi is going through the equipment: two bags, a laptop, a lockpick set, a pair of bolt cutters that are the wrong bolt cutters for the fence they came over.
 
-The four of them are dressed like a maintenance crew. Dark work trousers, plain jackets, nothing with a name on it, no wallets, no phones. Nothing in any pocket at all.
+The four of them are dressed like a maintenance crew: dark work trousers, plain jackets, nothing with a name on it, no wallets, no phones. Nothing in any pocket at all.
 
 "They didn't even do costumes properly," Sam says. "Look at this. Look at this guy's boots."
 
-"It worked." Sam looks pleased with himself.
+"It worked," Sam says, looking pleased with himself.
 
 "It worked because they took the stairs," Ruth says. "If they'd gone past the kitchens we'd have needed two more people off the second floor, and that's minus. Or it would have taken us longer."
 
@@ -278,17 +268,11 @@ Chloe sits against the wall with her arms around her knees. "It's still going to
 
 Sam calls it in as soon as the last knot is tied. Then they wait, since Sinclair is four buildings away.
 
-The first one comes round after about seven minutes.
+The first one comes round after about seven minutes, confused for a beat, before he realizes he's tied and goes still when he sees who did it.
 
-He's confused for a beat, then realizes he's tied, and goes still when he sees who did it.
+"Hi," Ruth says. "You're fine, although you'll feel sick for about an hour." He doesn't say anything.
 
-"Hi," Ruth says. "You're fine, although you'll feel sick for about an hour."
-
-He doesn't say anything.
-
-"What were you here for?"
-
-He looks away.
+"What were you here for?" He looks away.
 
 "Okay." She writes a dash on her arm and checks his pulse again. "Second floor lab or the server room?"
 
@@ -298,9 +282,7 @@ The third one wakes up about a minute later, younger, less good at keeping his f
 
 Then it stops being an interrogation, because Sam has been building up to it for twenty minutes.
 
-"Can I ask you something," Sam says. "Why did you even bother encrypting? It's AES-256 on a default pairing code. That's not even encryption at that point."
-
-Nobody answers him.
+"Can I ask you something," Sam says. "Why did you even bother encrypting? It's AES-256 on a default pairing code. That's not even encryption at that point." Nobody answers him.
 
 "No, I'm actually asking, you don't have to act like the fake attackers, somebody looked at those and went, yeah, that's the ones." He turns to Kavi. "How long did it take you again?"
 
@@ -316,23 +298,21 @@ Kavi doesn't look up. "Four seconds of compute."
 
 "What do you think we're getting," Sam says, to the man on the floor. "Honestly. What would you give us?"
 
-The man looks at him. His jaw works once.
+The man looks at him, his jaw working once.
 
 "I don't know," he says. 
 
 "See, that's a C," Sam says, walking back with his hands up. "That's a C right there."
 
-Chloe doesn't say anything for the interrogation. She's sitting against the wall with her arms around her knees, watching the four of them on the floor, turning it over without landing on what's wrong. She works at it while Sam talks. The bolt cutters are wrong. The boots are wrong. All of it is wrong in the same direction, and she's twelve, and it's four in the morning, and she lets it go.
+Chloe doesn't say anything for the interrogation. She's sitting against the wall with her arms around her knees, watching the four of them on the floor, turning it over without landing on what's wrong. She works at it while Sam talks, the bolt cutters wrong, the boots wrong, all of it wrong in the same direction. She's twelve, and it's four in the morning, and she lets it go.
 
-Sinclair arrives with two other adults and a trolley. He stops at the corner. He looks at the four men tied along the corridor wall, and at the bags, and at the four kids sitting on the floor near them, and he stands there watching them without moving. "Who's monitoring?"
+Sinclair arrives with two other adults and a trolley, then stops at the corner. He looks at the four men tied along the corridor wall, and at the bags, and at the four kids sitting on the floor near them, and he stands there watching them without moving. "Who's monitoring?"
 
 "Me," Ruth says.
 
 "Numbers."
 
-Ruth reads them off her arm.
-
-Sinclair nods. "Grading's in the morning," he says. "Go to bed. Now."
+Ruth reads them off her arm. Sinclair nods. "Grading's in the morning," he says. "Go to bed. Now."
 
 Chloe gets a C the same as Sam. Ruth gets a B minus. She brings it up for a week. Kavi gets a B for the comms and a note about the sensors that he disagrees with in writing, at length, and does not get anywhere with.
 

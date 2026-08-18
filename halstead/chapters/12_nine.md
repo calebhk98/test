@@ -2,7 +2,7 @@
 
 *September 2014 – July 2015*
 
-The sheet in her box on the first morning has one more line on it than last year's did.
+On the first morning, the sheet in her box has one more line on it than last year's did.
 
 She counts it twice on the way down, then takes it along to the office, nine steps from her box.
 
@@ -22,7 +22,7 @@ Chloe reads her own sheet again on the stairs, for a different reason, and then 
 
 Sam looks up with a fork in his hand.
 
-"Dance is *gone*. And drawing. Both of them, they're not on it anywhere, I checked the back of the sheet and then I checked it again." She has both hands flat on the table and is up on her toes. "That's it. I am never doing either of those again as long as I live."
+"Dance is *gone*. And drawing. Both of them, they're not on it anywhere, I checked the back of the sheet, and then I checked it again." She has both hands flat on the table and is up on her toes. "That's it. I am never doing either of those again as long as I live."
 
 "I liked dance," Sam says.
 

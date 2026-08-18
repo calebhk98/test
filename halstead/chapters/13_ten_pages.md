@@ -14,7 +14,7 @@ Chloe has written ten-page reports before. Three in Mandarin last year, one in F
 
 She reads Federalist 10 that night in the chair by the window and it takes her an hour and a half. She reads it again on the Saturday, faster, with a pen, and then she spends the rest of the weekend on ten pages about whether a small state can be trusted with a veto.
 
-It comes back on the Monday with a mark, and four lines under the mark. The four lines say she has spent ten pages on a position she already held, that the other side does not appear anywhere on the page in a form its own supporters would recognise, and that until it does he has no way of telling whether she is right or only comfortable.
+It comes back on the Monday with a mark, and four lines under the mark, which say she has spent ten pages on a position she already held, that the other side does not appear anywhere on the page in a form its own supporters would recognise, and that until it does he has no way of telling whether she is right or only comfortable.
 
 On the Tuesday she tells him she read number 10\.
 
@@ -28,7 +28,7 @@ In the second week of October she decides she is going to write one that is good
 
 She builds the outline first. She has never needed an outline for anything, but it gets her the same ten pages out the other end. She writes the last page first, then the middle, then splits it across four sittings. She writes one twice from scratch, the second time without looking at the first version at all. She takes a position she disagrees with and writes it straight, and that one comes back worse than the others.
 
-In November Hearn tells her the third page of one is doing the work of the first six, and to go and look at what the first six are for. She reads that four times on the stairs. Every essay she writes for the next month has a good third page in it, but the other nine pages are still there.
+In November Hearn tells her the third page of one is doing the work of the first six, and to go and look at what the first six are for, advice that she reads four times on the stairs. Every essay she writes for the next month has a good third page in it, but the other nine pages are still there.
 
 ---
 
@@ -48,7 +48,7 @@ The 10v1 starts in January.
 
 "Because you'll be tired before they are." She sets the clock. "And because ten is the shape of every long fight there is. A hundred on one is a 10v1 that goes on longer, and there's nothing in the hundred that isn't already in the ten. If you can hold a minute against ten you've got five capable ones left, and five is a fight you can have."
 
-Nobody in the room gets past nine seconds all afternoon. Chloe gets four seconds on her first go, then six on her third. Afterwards the four of them sit on the floor in the corridor outside. Ruth is flat on her back with one arm over her eyes, and Sam has a bloody nose that nobody did on purpose.
+Nobody in the room gets past nine seconds all afternoon. Chloe gets four seconds on her first go, then six on her third. Afterwards the four of them sit on the floor in the corridor outside, Ruth flat on her back with one arm over her eyes, Sam with a bloody nose that nobody did on purpose.
 
 "Four."
 
@@ -84,11 +84,11 @@ On the Monday Chloe gets one on her fourth go. The two balls meet about four fee
 
 By the end of the hour they have eleven between them and everybody else on the floor has four, and on the Thursday they have nineteen. They spend most of that evening doing the noise at each other in the corridor, and Ruth does an impression of the boy who said luck, and they make Kavi watch it twice.
 
-People start asking on the Friday. Ruth says she has been practising. Chloe says she does not know. By the following week there are two theories going round about the markers being different weights.
+People start asking on the Friday; Ruth says she has been practising, while Chloe says she does not know. By the following week there are two theories going round about the markers being different weights.
 
-Kavi gets it on his own in the second week of November. His number goes from three to ten inside one hour that afternoon, and he walks out without saying a word to anybody. He does not come and tell her. She does not go and ask him. Nadia has it by the end of the month off her own back, and Priya gets it out of Ruth in a corridor in about ninety seconds, and by Christmas most of the year is past where they ever were with darts.
+Kavi gets it on his own in the second week of November, when his number goes from three to ten inside one hour that afternoon, and he walks out without saying a word to anybody. He does not come and tell her. She does not go and ask him. Nadia has it by the end of the month off her own back, and Priya gets it out of Ruth in a corridor in about ninety seconds, and by Christmas most of the year is past where they ever were with darts.
 
-In the second week of September a man from the office spends an hour on Watch, which everybody starts at ten. The sheet has been on the corkboard on the second floor since before Chloe got here and she stopped reading it somewhere around eight. He goes through it line by line anyway, the way the fire notice gets gone through in the same hour every year.
+In the second week of September a man from the office spends an hour on Watch, which everybody starts at ten. The sheet has been on the corkboard on the second floor since before Chloe got here, and she stopped reading it somewhere around eight, though he goes through it line by line anyway, the way the fire notice gets gone through in the same hour every year.
 
 **DEFENSIVE WATCH, SCORING**
 
@@ -109,7 +109,7 @@ Her first one is on the board on the Monday and happens on the Thursday. Four ad
 
 The sheet goes up on the Friday. All twelve names have an F next to them and there are nine numbered things underneath.
 
-She reads it in the corridor with about fifteen people behind her waiting for a turn at it. Number one is response time and number three is that four adults entered a building. Number six says the north stairwell was uncovered for six minutes, and Chloe was on the north stairwell, and she was standing in it the whole six minutes, and she does not know what covering it was supposed to look like.
+She reads it in the corridor with about fifteen people behind her waiting for a turn at it. Number one is response time and number three is that four adults entered a building. Number six says the north stairwell was uncovered for six minutes, and Chloe, who stood there the whole time, does not know what covering it was supposed to look like.
 
 She goes back after dinner when the corridor is empty and reads it again, and then she reads it a third time. Ruth comes and stands next to her at about nine and gets all the way to the bottom without saying anything.
 
@@ -151,7 +151,7 @@ Her father asks at Thanksgiving what she has been writing about, and she says ta
 
 "Yeah." He points the fork at her. "That's the b-"
 
-Her mother comes through with the pie and everybody moves their arms, and her aunt wants to know who is having cream. Her father catches Chloe's eye across the table about a minute later and lifts one eyebrow at her.
+Her mother comes through with the pie and everybody moves their arms, while her aunt wants to know who is having cream. Her father catches Chloe's eye across the table about a minute later and lifts one eyebrow at her.
 
 ---
 
@@ -175,7 +175,7 @@ She sits down at seven with a question about whether a rule that nobody enforces
 
 She reads it back on the Wednesday morning before she hands it in, sitting on the floor outside the room with eleven minutes to go, and leaves it exactly as it is.
 
-Hearn gives it back on the Monday with four lines at the bottom. Two of them are about a thing she got wrong on page six, and the other two are about what to read next.
+Hearn gives it back on the Monday with four lines at the bottom, two of which are about a thing she got wrong on page six and the other two about what to read next.
 
 She does the same thing the following week and it takes her about two and a half hours. The week after that it takes nearly four, because the question is harder and she spends most of a night stuck, but this time all ten pages do what only the third one used to. By March she has stopped counting the hours, and in March Hearn moves her onto Burke, who is harder to argue with than Hamilton and who she goes at for the rest of the year.
 

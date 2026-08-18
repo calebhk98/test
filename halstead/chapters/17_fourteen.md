@@ -10,7 +10,7 @@ Chloe fumbles the bolt release for two weeks, but in the third her hand finds it
 
 Live fire starts in October at fifty metres, prone, unsupported, on paper, and it is the same shape as everything they have been handed since she was eight: an easy version of a thing, then a harder one, then the version that is worth turning up for.
 
-Sam keeps the rifle up. "How long till this bit's boring?"
+Keeping the rifle up, Sam asks, "How long till this bit's boring?"
 
 "Six weeks." Kavi is on the next mat with his chin on his forearms, watching the flag. "It was six on the nerf and six on the paint, so six. Then they hang it off something, then they make it move, then we get the good one."
 
@@ -26,7 +26,7 @@ A machine arrives in February that throws a clay across the front of the range e
 
 "It's nine and about a fifth. I've timed forty of them." Aymar has the stopwatch out on the bench where he can see it. "The machine resets slow."
 
-"The card says nine, Aymar." Voss keeps his eyes on the range.
+"The card says nine, Aymar," Voss says, keeping his eyes on the range.
 
 "That card was printed before somebody put a new head on the thrower. Run a count off nine flat and you're early every time, all the way down."
 
@@ -56,7 +56,7 @@ Chloe holds fifty seconds on her third round on a Tuesday in February. She is fl
 
 "My average is forty-five." Chloe gets her feet under her on the third attempt, still holding Odile's arm and grinning at her. "Run me again."
 
-"That's the last round." Kowalczyk keeps her eyes on the board. "Pairs for the rest of the hour."
+"That's the last round," Kowalczyk says, keeping her eyes on the board. "Pairs for the rest of the hour."
 
 "I'm ten seconds off a minute, though."
 
@@ -72,7 +72,7 @@ She goes through the seven papers twice before she goes back to her own notes fr
 
 "Does the test count?" Halide says.
 
-"No." Chloe is wiping the board down with her back to them, and she stops halfway across it and turns round. "Your answers all follow from what I taught you, and what I taught you was wrong. You'll get a different one in two weeks and it'll be harder, because by then you'll actually have it."
+"No," Chloe says, wiping the board down with her back to them, and she stops halfway across it and turns round. "Your answers all follow from what I taught you, and what I taught you was wrong. You'll get a different one in two weeks and it'll be harder, because by then you'll actually have it."
 
 Japanese moves faster at the front than she expects. By the end of the fourth week she is further along than she has ever been at the same point in a language, so on a Wednesday afternoon she digs out her own notes on Russian and on Mandarin to check whether that is true, and it is. The kanji arrive with most of their meaning already on them.
 
@@ -80,7 +80,7 @@ Then the grammar starts, and the grammar is unlike anything behind her on the li
 
 Abstract algebra arrives with probability beside it. In contracts they spend a term on what a sentence actually obliges a person to do, and in logistics, four weeks on how many trucks there are and where the drivers sleep. She sits through comparative religion mostly listening, and comes out of it with about four opinions and no way to test any of them.
 
-Engineering and design works the other way round from wood shop and the forge, where she makes the thing herself. Here she writes down what it has to do and hands the paper to a stranger. She writes a two-page specification for a clamp in November, and a boy called Dov builds it off the paper. It closes on the wrong axis.
+Engineering and design works the other way round from wood shop and the forge, where she makes the thing herself. Here she writes down what it has to do and hands the paper to a stranger. She writes a two-page specification for a clamp in November, and when a boy called Dov builds it off the paper, it closes on the wrong axis.
 
 "He built what you wrote," the teacher says.
 
@@ -90,7 +90,7 @@ Chloe reads her own two pages again with the clamp sitting on top of them. The p
 
 The no-libraries project runs for a month in the spring, and the brief is one sentence: something that does a real job, all of it written from scratch by you.
 
-She writes a text renderer. It reads the font file when it loads and works the letter shapes out of the curves stored in it. It adjusts them so that eight point stays sharp on a screen. It takes the gap between every pair of letters from the numbers in the file rather than from a table she typed out herself. Then it lays the whole page out again, live, while somebody drags the corner of the window around, and all of that has to land inside sixteen milliseconds or the letters tear. It runs to about nine thousand lines across fourteen files, but on the last day she drags the window around for four minutes in front of Ruth and Kavi.
+She writes a text renderer that reads the font file when it loads and works the letter shapes out of the curves stored in it. It adjusts them so that eight point stays sharp on a screen. It takes the gap between every pair of letters from the numbers in the file rather than from a table she typed out herself. Then it lays the whole page out again, live, while somebody drags the corner of the window around, and all of that has to land inside sixteen milliseconds or the letters tear. It runs to about nine thousand lines across fourteen files, but on the last day she drags the window around for four minutes in front of Ruth and Kavi.
 
 Ruth does sound, all of it generated live off whatever the user is doing. She spends two days flat on the floor of her room with the machine on her chest, playing the same six seconds until Priya bangs on the wall.
 
@@ -118,7 +118,7 @@ Sam is six foot two by September. Ruth stands next to him at breakfast in the fi
 
 "I've been eating a lot."
 
-"You've been eating like a man with a farm." She goes back to her tray. "You'll be a nightmare on the mats."
+"You've been eating like a man with a farm," she says, going back to her tray. "You'll be a nightmare on the mats."
 
 Priya makes him stand against the door frame in the corridor and marks it in pencil above the mark from June. A visiting inspector asks him in October whether he teaches here. He goes through two sets of kit before Christmas and a third in March, but the third one is the one that fits.
 
@@ -140,7 +140,7 @@ Ruth puts her fork down and leaves it down. "He didn't know. He had a whole Thur
 
 "He's got a lake, Kavi. A lake and a boat shed."
 
-Ruth takes it up with him directly on Friday. Sam hears her out with his chin on his hand, thanks her for it, and takes the girl to watch the twelves do paintball. The two of them last until March. Priya says the girl ended it. Sam says they agreed. Odile was actually in the room, and what Odile says is that both of them have got the day wrong.
+Ruth takes it up with him directly on Friday. Sam hears her out with his chin on his hand, thanks her for it, and takes the girl to watch the twelves do paintball. The two of them last until March, when Priya says the girl ended it and Sam says they agreed. Odile was actually in the room, and what Odile says is that both of them have got the day wrong.
 
 ---
 
@@ -150,9 +150,9 @@ Winter break, second night. Her mother is standing at the end of the table with 
 
 "She held it up by the what, sorry?"
 
-"On the rifle. The bit the shell comes out of." Chloe reaches past her for the beans.
+"On the rifle. The bit the shell comes out of."
 
-Her mother's hands stop on the dish. "You're shooting rifles?"
+Her mother's hands stop on the dish while Chloe reaches past her for the beans. "You're shooting rifles?"
 
 "Yeah, since September." Chloe nods at her plate and keeps going. "Anyway, so she's showing everybody this scar and Kavi tells her that if she'd held it an inch lower she'd have-"
 
@@ -178,7 +178,7 @@ All of it started around September. All of it went past this table in silence. W
 
 "What in God's name is clays?"
 
-Her father is looking at his plate. "You knew?" her mother says.
+Her father is looking at his plate when her mother says, "You knew?"
 
 Her father sets his fork down. "She said something on the phone in October."
 
@@ -188,7 +188,7 @@ Her father sets his fork down. "She said something on the phone in October."
 
 "And you didn't think to tell me?"
 
-"I thought you knew." He keeps his eyes down. "I thought it was fine."
+"I thought you knew," he says, keeping his eyes down. "I thought it was fine."
 
 Her mother sets the dish down in the middle of the table, straightens it with two fingers, and goes into the kitchen. She stays in there. Her father moves the salt, puts it back, then gets up and starts stacking plates that nobody has finished with.
 
