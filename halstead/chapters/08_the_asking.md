@@ -166,9 +166,9 @@ Her mom looks at her for long enough that Chloe starts to think of something els
 
 "Okay," she says, and puts a hand flat on Chloe's back. "Okay, honey. You'll make friends this year, it takes time in a new grade, that's all this is."
 
-Chloe lies back down with her back to her mother and turns her face toward the wall, and after a while her mom gets up off the end of the bed.
+Chloe lies down again with her back to her mother and turns her face toward the wall, and after a while her mom gets up off the end of the bed.
 
-The bike has been in the garage since the first week of December, under a sheet, which Chloe knows about by the second week of December and never says anything about to anybody, so that when her dad brings it in on Christmas morning with a bow already on the handlebars there are people standing around the front room in their coats watching her see it. She says thank you, hugs her dad, then hugs her mom for longer. Then she puts her coat on over her pajamas and rides it up and down in front of the house while the two of them stand in the doorway in the cold.
+The bike has been in the garage since the first week of December, under a sheet, which Chloe knows about by the second week of December and never says anything about to anybody, so that when her dad brings it in on Christmas morning with a bow already on the handlebars there are people standing around the front room in their coats watching her see it. She says thank you, hugs her dad, then hugs her mom for longer. Then she puts her coat on over her pajamas and rides it up and down outside the house while the two of them stand in the doorway in the cold.
 
 "She likes it," her dad says, from the doorway, with his arms folded up against the cold.
 
