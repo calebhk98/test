@@ -12,11 +12,11 @@ The briefing is in a room with folding chairs and a woman with a clipboard who g
 A man near the front asks whether the laundry bags go out on the Tuesday night or the Wednesday morning, so she does the part about the laundry bags again.  
 As Chloe's mom writes something on the back of the map, walking to the room afterward Chloe gets a look at it: it's the sentence about going home, with the words same day underlined twice.  
 Her room has two beds, a window that opens six inches and then stops, and a girl called Priya who is already there, already unpacked, with a book about horses face down open on her pillow.  
-Priya doesn't look up from the drawer she's pushing shut with her knee. "Do you ride?"  
+Pushing the drawer shut with her knee, Priya doesn't look up from it. "Do you ride?"  
 "Ride what?"  
 "Horses."  
 "No."  
-"Okay. So the first thing is that a pony isn't a baby horse, everybody thinks that." Priya sits down cross-legged with a pillow in her lap. "A pony is a separate thing. It's anything under fourteen two, which is hands, which is how you measure them, from the ground up to about here." She puts her hand flat on the top of her own shoulder. "There's a girl at my barn who says hers is a horse and it is absolutely not a horse, it's fourteen even, I've seen the paper."  
+"Okay. So the first thing is that a pony isn't a baby horse, everybody thinks that." Priya sits down, cross-legged, with a pillow in her lap. "A pony is a separate thing. It's anything under fourteen two, which is hands, which is how you measure them, from the ground up to about here." She puts her hand flat on the top of her own shoulder. "There's a girl at my barn who says hers is a horse and it is absolutely not a horse, it's fourteen even, I've seen the paper."  
 "Whose paper?"  
 "The horse's paper, they have papers." Priya waves the whole question off with the back of her hand, before going straight on with it.  
 She tells Chloe about the horse she rides, the horse she doesn't ride but wants to, the girl at the barn who is not a good person, what that girl did at a show in April, and what the girl's mother said about it afterward, doing all of it in about nine minutes without stopping once to find out whether Chloe wants any of it. Chloe doesn't mind, keeping both hands still in her lap and letting it run.  

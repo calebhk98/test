@@ -85,6 +85,26 @@ asks for the physical correlate instead of the named feeling, produces subordina
 as a side effect. The register discipline and the clause-rate numbers pull the same
 way once the complexity comes from staging rather than from commentary.
 
+## Lexical diversity: not capped, but not fixed locally either
+
+Every agent on this pass reported that lexical diversity barely moved, and one
+concluded it is structurally capped by a close, present-tense, pronoun-heavy
+narrator. Measured, that is half right. Function words are 46.8% of the text and
+the commonest are exactly what you would expect: the, and, it, a, she, in, of, her.
+
+But the book's own 1000-word windows run from **32.3 to 43.9**, against a 39.5
+benchmark. It already clears the benchmark in places. So the ceiling is not
+grammatical, and a chapter sitting at 34.7 is near the book's own floor rather
+than at a hard limit.
+
+What follows is that the lever is not local. Swapping a synonym inside a paragraph
+moves nothing, because the measure runs over 1000-word windows. What moves it is
+**content-word variety across a whole window**: a scene that names five different
+objects rather than referring to the same one five times, a paragraph that does
+not re-use its own governing noun. That is a drafting property, not a line-edit
+property, which is why a line-editing pass cannot shift it much and should not
+spend its budget trying.
+
 ## What not to do
 
 - **Do not pad.** Filler raises words-per-sentence and makes the prose worse. Every
