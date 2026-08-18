@@ -50,7 +50,7 @@ The sound is the other half, and it does not come. The four tones sound like fou
 
 Chloe does all three of them, though not in that order, reading out loud into the machine in the library, playing it back, and hearing it. Ruth starts sitting with her on Sundays in December, blunt about it in a way nobody else can be bothered to be. By June she can be understood by anybody expecting to understand her, and by nobody who isn't. She still cannot hear any difference between Mrs. Sun and the man who comes in from the university, who grew up eight hundred miles apart, and who Ruth can separate in four syllables.
 
-Statistics turns out to be an hour of somebody taking a number apart in front of you until the number is down to its last decimal. She likes it enough to bring it to dinner, where Kavi disagrees with her about a study in the second week, and they are still going at it in the third.
+Statistics turns out to be an hour of somebody taking a number apart in front of you, until the number is down to its last decimal. She likes it enough to bring it to dinner, where Kavi disagrees with her about a study in the second week, and they are still going at it in the third.
 
 "You can't stand there and say it shows nothing when it's got a result printed in it."
 
@@ -62,7 +62,7 @@ Statistics turns out to be an hour of somebody taking a number apart in front of
 
 "You said that on Monday."
 
-Chemistry is Vasquez, who does set things on fire on purpose, twice in the first term, and both times the room goes in quiet and comes out loud. Chloe describes the second one to her mother on the phone on the Sunday for nine minutes without being asked a question. She burns a hole through a sleeve in the second week. In the fourth she makes something that is supposed to come out white, gets grey, and carries it up to the front.
+Chemistry is Vasquez, who does set things on fire on purpose, twice in the first term, and both times the room goes in quiet and comes out loud. On the phone on the Sunday, Chloe describes the second one to her mother for nine minutes without being asked a question. She burns a hole through a sleeve in the second week. In the fourth she makes something that is supposed to come out white, gets grey, and carries it up to the front.
 
 "Water."
 
@@ -78,7 +78,7 @@ First aid is Mondays, and it is on a clock from the first week. In the second te
 
 "It's half eleven at night on a road, the car's still running, and there's a man who wants to know if his wife's all right." The teacher has a stopwatch and keeps his eyes on it. "He's going to keep asking. Count out loud."
 
-Textiles is Tuesdays. They measure each other, draft patterns off the measurements onto brown paper, then cut. Chloe's first shirt comes out with the shoulder seam an inch inboard of where a shoulder actually is, so it drags every time she lifts her arm. She takes the sleeve out, redraws the armhole, and builds the shirt over from the armhole out. The second one fits.
+Textiles is Tuesdays. They measure each other, draft patterns off the measurements onto brown paper, then cut. Chloe's first shirt comes out with the shoulder seam an inch inboard of where a shoulder actually is, so it drags every time she lifts her arm, until she takes the sleeve out, redraws the armhole, and builds the shirt over from the armhole out. The second one fits.
 
 Biology is the man with the fish tank in the front hall, and in October Kavi decides that the small striped one is being bullied.
 
@@ -142,7 +142,7 @@ Her mother takes four days off in July, and they do the coast. It is three hours
 
 Chloe loses the first three games, because she keeps counting the same card twice. She takes the fourth, and then the fifth, at which her mother says a word she doesn't usually say in front of her before dealing again. They play until the pool lights go off at eleven.
 
-In the third week her father is at the table with a stack of paper and a pen.
+In the third week, her father is at the table with a stack of paper and a pen.
 
 "What's that?"
 
@@ -166,4 +166,4 @@ Her father starts to answer and stops with the page half turned. Then he goes ba
 
 "I don't know, I only got as far as that one."
 
-Going through the rest of it at the table that night, he finds nine more. On the Thursday he asks the vendor which of the sentences in section three they would put a date and a number against. Two of them come back with dates, but the rest come back as the same sentences with different words in them. He tells Chloe about this in the car on Friday, at some length, while she eats a sandwich.
+Going through the rest of it at the table that night, he finds nine more. On the Thursday, he asks the vendor which of the sentences in section three they would put a date and a number against. Two of them come back with dates, but the rest come back as the same sentences with different words in them. He tells Chloe about this in the car on Friday, at some length, while she eats a sandwich.

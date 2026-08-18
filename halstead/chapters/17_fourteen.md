@@ -190,7 +190,7 @@ Her father sets his fork down. "She said something on the phone in October."
 
 "I thought you knew," he says, keeping his eyes down. "I thought it was fine."
 
-Her mother sets the dish down in the middle of the table, straightens it with two fingers, and goes into the kitchen. She stays in there. Her father moves the salt, puts it back, then gets up and starts stacking plates that nobody has finished with.
+Her mother sets the dish down in the middle of the table, straightens it with two fingers, and goes into the kitchen, staying there while her father moves the salt, puts it back, then gets up and starts stacking plates that nobody has finished with.
 
 Her mother comes out after about six minutes and asks whether anybody wants the pie warmed up. Her father and Chloe both say yes at the same time. He turns the game on and they eat it in front of that, and her mother comes and sits on the arm of his chair for the second half.
 
@@ -198,4 +198,4 @@ Her mother comes out after about six minutes and asks whether anybody wants the 
 
 On Sunday she asks whether the man behind the line is armed, and what happens if somebody drops one, and whether anybody has ever turned round. Chloe answers all three, and then tells her about the flag they call the wind off, and her mother listens to all of it and comes back with one more question about the man behind the line.
 
-She calls home twice a week through January and most of February. Exams take it down to Sundays in March, and by April it is twice a week again.
+She calls home twice a week through January and most of February, until exams take it down to Sundays in March, and by April it is twice a week again.

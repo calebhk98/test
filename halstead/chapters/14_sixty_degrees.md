@@ -44,7 +44,7 @@ The first one Chloe gets is in the last week of October, with Odile.
 
 A small dry click sounds a long way up, before anything is visible, so far up that she is not sure whether she made it up, and then two arrows come down wrong out of the middle of the sky, one of them spinning. The other is broken across the middle, but it comes down in two pieces about eight metres apart with one of them still turning.
 
-The whole of Chloe's line is shouting before the pieces land, and somebody down the far end is banging on the lid of the kit box with a bow stave. Odile comes up the field at a run from her end and covers seventy metres in about forty seconds. The two of them stand in the grass yelling at each other about the sound it made, but neither of them is listening to the other one.
+The whole of Chloe's line is shouting before the pieces land, and somebody down the far end is banging on the lid of the kit box with a bow stave. Coming up the field at a run from her end, Odile covers seventy metres in about forty seconds. The two of them stand in the grass yelling at each other about the sound it made, but neither of them is listening to the other one.
 
 "Sunday," Odile says, once she can get a whole word out. "My brother's here Sunday, he's been three times and he's never seen anybody do it. I'm making him stand at your end."
 
@@ -80,7 +80,7 @@ On the first morning Ruth wants to know what everybody has got, and Chloe reads 
 
 "Yes," Chloe says, and gets on the stairs before Ruth can start again.
 
-Calculus arrives in mathematics in the second week, on the sheet, in the same slot. Astronomy runs the autumn term and most of it is arithmetic. How you get a mass off an orbit. Why the rocket equation punishes you the way it does. Why that leaves anybody's rocket mostly fuel. How anybody works out a distance to something nobody can go to, and then how they check it against a second method that has nothing to do with the first. In November they spend two weeks on how you put an age on the universe. Chloe writes eleven pages on the two ways of measuring it, but the two ways come out different, and she is still turning that over at dinner three days later.
+Calculus arrives in mathematics in the second week, on the sheet, in the same slot. Astronomy runs the autumn term and most of it is arithmetic. How you get a mass off an orbit. Why the rocket equation punishes you the way it does. Why that leaves anybody's rocket mostly fuel. How anybody works out a distance to something nobody can go to, and then how they check it against a second method that has nothing to do with the first. In November, they spend two weeks on how you put an age on the universe. Chloe writes eleven pages on the two ways of measuring it, but the two ways come out different, and she is still turning that over at dinner three days later.
 
 Rhetoric is an hour a week of taking a speech apart to find the place where the person giving it is being paid, and it is usually about two thirds of the way down.
 
@@ -96,9 +96,9 @@ Art history is in the spring, and in February the teacher puts up a Dutch interi
 
 "I did ask her, and she told me it was a good question for a different course."
 
-Block two is wood shop and the pieces have got bigger. She spends the autumn on a chair that has to take an adult sitting down hard, then most of the spring on a second one for somebody else. She is in there on Sundays as well, but the two Saturdays the man opens it are better. In March the man shows six of them a Japanese corner joint that holds without a nail or a screw or any glue. Chloe does it eleven times over three weeks before she gets one that will not come apart when she pulls on it with everything she has, and the eleventh goes on the shelf over her desk and stays there.
+Block two is wood shop and the pieces have got bigger. She spends the autumn on a chair that has to take an adult sitting down hard, then most of the spring on a second one for somebody else. She is in there on Sundays as well, but the two Saturdays the man opens it are better. In March, the man shows six students a Japanese corner joint that holds without a nail or a screw or any glue. Chloe does it eleven times over three weeks before she gets one that will not come apart when she pulls on it with everything she has, and the eleventh goes on the shelf over her desk and stays there.
 
-In May her chisel starts rolling its edge every twenty minutes, so she stops trying to work round it and takes the thing up to the front.
+In May her chisel starts rolling its edge every twenty minutes, so she stops trying to work round it and takes the chisel up to the front.
 
 "That's a soft one, so it'll do that for the rest of its life."
 
@@ -140,7 +140,7 @@ She reads for two days, and on the Tuesday she reads all afternoon and most of t
 
 On the Wednesday she builds the other side. A man writing in 1961 makes the case Chloe can't get past, but it takes her most of the day to get all of him into one place and see the shape of it. There is a hole in the middle of what he says and he walks straight past it, so she fills it in for him, because leaving it there would be doing his job for him. Then she finds the three objections that open cracks in what he has built, but she answers all three of them.
 
-By Thursday afternoon she has stopped being angry and started being interested.
+By Thursday afternoon, she has stopped being angry and started being interested.
 
 She hands it in on the Monday. Fourteen thousand words, twenty-eight pages.
 
@@ -160,7 +160,7 @@ She finds Ruth on the stairs between the second floor and the third.
 
 "Yeah," Chloe says, and sits down where she is with the pages on her knees.
 
-At Christmas her mother asks what she has been working on.
+At Christmas, her mother asks what she has been working on.
 
 "There was a big one in November." Chloe has a plate in her hands and is not washing it. "It was on whether the area bombing was the right call."
 
@@ -170,7 +170,7 @@ At Christmas her mother asks what she has been working on.
 
 "That's a big subject for a school essay." Her mother takes the plate off her and puts it on the rack. "What did you say?"
 
-Chloe opens her mouth, then works out that the answer starts with the hat. After the hat it needs the seven days, then why hedging counts against you instead of counting as manners. All of that has to go in front of anything she actually wants to say.
+Chloe opens her mouth, then works out that the answer starts with the hat. After the hat it needs the seven days, then why hedging counts against you instead of counting as manners, and all of that has to go in front of anything she actually wants to say.
 
 "That it was wrong," she says. "I got a B."
 
@@ -182,7 +182,7 @@ Her father is in the doorway with a dishcloth over his shoulder.
 
 "Yeah, all year, every day."
 
-"I was telling your grandmother about it before and she wants to hear it off you." He hangs the cloth on the oven door. "Go on, she's in the front room and she's been after somebody to talk to since two."
+"I was telling your grandmother about it before and she wants to hear it off you." He hangs the dishcloth on the oven door. "Go on, she's in the front room and she's been after somebody to talk to since two."
 
 Chloe tells her grandmother about the arrows and gets to draw the sixty degrees on the back of an envelope, and her grandmother says that it all sounds very complicated for a school.
 
@@ -208,20 +208,20 @@ There is a pause of about a second and a half on the line.
 
 "Good luck," Sinclair says.
 
-Two hundred of them come out of eleven rooms at once and the shouting in the main stairwell comes up through the floor into Chloe's feet. Forty adults have to come through doors to get anywhere at all, but there are only nine doors. The students know which third floor door does not shut properly, which cupboard on the second floor has a window in the back of it, where the bannister has a gap you can get an arm through, and which of the two kitchen doors makes a noise when it opens.
+As two hundred students come out of eleven rooms at once, the shouting in the main stairwell comes up through the floor into Chloe's feet. Forty adults have to come through doors to get anywhere at all, but there are only nine doors, while the students know which third floor door does not shut properly, which cupboard on the second floor has a window in the back of it, where the bannister has a gap you can get an arm through, and which of the two kitchen doors makes a noise when it opens.
 
-People say afterward that Ruth ran the east stairwell: she gave orders from the first thirty seconds, and everybody standing on those stairs did what she told them. Nadia takes the third floor and splits it in about four minutes. Two on each stair head, four carrying kit up from the second floor so nobody on a landing has to leave it, the rest told where to stand and not to move off it. Eleven people take four instructions from her in a row before any of them thinks about it.
+People say afterward that Ruth ran the east stairwell: she gave orders from the first thirty seconds, and everybody standing on those stairs did what she told them. In about four minutes, Nadia takes the third floor and splits it. Two on each stair head, four carrying kit up from the second floor so nobody on a landing has to leave it, the rest told where to stand and not to move off it. Eleven students take four instructions from her in a row before any of them thinks about it.
 
-Sam is out inside the first ninety seconds of the Watch. He goes over the second floor bannister onto three teachers coming up, which works, then lands badly, which does not, and an adult marks him out by sitting on his back. He talks about it for the rest of the afternoon from the bench by the front doors where the marked-out sit, then again at dinner, and he is still talking about it in June.
+Sam is out inside the first ninety seconds of the Watch. He goes over the second floor bannister onto three teachers coming up, which works, then lands badly, which does not, and a teacher marks him out by sitting on his back. He talks about it for the rest of the afternoon from the bench by the front doors where the marked-out sit, then again at dinner, and he is still talking about it in June.
 
 Chloe spends the whole Watch on the third floor landing shooting paintballs out of the air. There are six of them up there. The balls come up the stairwell in twos and threes for most of an hour, and when two of them meet there is a flat wet crack and paint everywhere at once. Below, six more crack together, sound carrying up through the floor. Somebody down there is shouting the count, but she cannot hear the numbers. Her arms ache by three o'clock, but she stays up there on the landing until it is over.
 
-By half past three there are four teachers left standing in the whole building, but three of them are in the same corridor.
+By half past three, there are four teachers left standing in the whole building, but three of them are in the same corridor.
 
 Mr. Hearn is the last one. He has the library, one door, one window, a room full of furniture. Eleven students are trying to get in there from twenty past three. It takes them until eighteen minutes to four, by which point there are twenty of them on that corridor and somebody has brought a bench up from the second floor. People say afterward that when they finally got him, he said "that's fine," put his glasses back on, and asked the boy nearest him whether he was done with the Burke.
 
-The board the next day says the staff lost the building at three forty-two. Then it gives the students a B and lists eleven things they did wrong.
+The board the next day says the staff lost the building at three forty-two, and then it gives the students a B and lists eleven failures.
 
-Chloe reads the eleven things in the corridor. Number four is about the east stairwell and names two people, but neither of them is Ruth. Number nine says that at no point in the two hours did anybody establish how many adults were in the building. She stands in front of that one, because she spent the whole two hours on a landing counting paint.
+Chloe reads the eleven failures in the corridor. Number four is about the east stairwell and names two people, but neither of them is Ruth. Number nine says that at no point in the two hours did anybody establish how many adults were in the building. She stands in front of that one, because she spent the whole two hours on a landing counting paint.
 
 She is still on number nine at dinner, where Sam is describing the bannister for the fourth time to two people who were standing underneath it.
