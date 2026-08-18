@@ -58,6 +58,12 @@ RELATIVE = r"\b(who|whom|whose|which|that)\b"
 # natural replacement for a banned trailing clause, so it is worth watching
 # for the same overuse that got the trailing form banned. An opening quote is
 # allowed for, since dialogue does this too.
+# A line of the group chat: "ruth: what percentage of americans" and so on.
+# These are not prose and must not be measured as prose. Chapter 32 is 76%
+# transcript, chapter 24 is 47%, and grading those files as if the transcript
+# were narration says the writing is simple when what it is is a chat log.
+TRANSCRIPT = re.compile(r"^[a-z][a-z0-9_]{1,9}: ")
+
 FRONTLOAD = re.compile(
     r"""^["']?(?:Because|Since|While|Though|Although|When|Whenever|As|After"""
     r"""|Before|If|Once|Until|Unless|Whether|Where)\b[^,.!?]{3,60},""")
@@ -111,6 +117,16 @@ def syllables(w):
     return max(n, 1)
 
 
+def strip_transcript(text):
+    """Remove chat-transcript lines, and report what share of the words they were."""
+    lines = text.split("\n")
+    kept = [l for l in lines if not TRANSCRIPT.match(l.strip())]
+    total = len(re.findall(r"[A-Za-z][A-Za-z']*", text))
+    left = len(re.findall(r"[A-Za-z][A-Za-z']*", "\n".join(kept)))
+    share = 100 * (total - left) / total if total else 0.0
+    return "\n".join(kept), share
+
+
 def measure(text, floor=40):
     """Every metric for one text. Returns None under `floor` sentences.
 
@@ -120,6 +136,7 @@ def measure(text, floor=40):
     chapter by twenty points or more. The sampled form exists to remove that
     dependence, and it cannot do so without a full window.
     """
+    text, transcript_share = strip_transcript(text)
     paras = [p for p in paragraphs(text) if p.strip() != "---"]
     sl_all = [(s, len(words(s))) for p in paras for s in sents(p)]
     sl_all = [(s, n) for s, n in sl_all if n]
@@ -178,6 +195,7 @@ def measure(text, floor=40):
         "_words": n_w,
         "_sentences": n_s,
         "_paragraphs": len(para_w),
+        "_transcript": transcript_share,
     }
 
 
@@ -245,6 +263,9 @@ def grade(path, ref, benchmark, brief):
     print(f"\nmaturity percentile (median of {n_m} measures): {st.median(pcts):.0f}"
           f"      lost to benchmark on {len(losses)} of {n_m}")
     print(f"  on the original 12 measures: {st.median(core):.0f}")
+    if got["_transcript"] >= 1:
+        print(f"  {got['_transcript']:.0f}% of this chapter is chat transcript, "
+              f"measured separately and excluded above")
     if not brief:
         print(f"\n  {'measure':46}{'this':>8}{'bench':>8}{'pct':>6}")
         for p, label, mine, theirs, beat in sorted(lines):
@@ -278,7 +299,7 @@ SUMMARY_COLS = [
     ("fk", "F-K"), ("commas", "commas"), ("subord", "subord"), ("relcl", "relcl"),
     ("simple", "simple"), ("u10", "u10"), ("b2035", "20-35"),
     ("shortruns", "runs"), ("front", "front"), ("and2", "and2"),
-    ("andrate", "and%"),
+    ("andrate", "and%"), ("_transcript", "chat%"),
 ]
 
 
