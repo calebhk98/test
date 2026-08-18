@@ -80,11 +80,11 @@ She gives it to Kavi.
 
 She writes the shed burning down. Four minutes, one paragraph, with a sentence in the middle that makes her jaw set while she is writing it. Kavi gives her the four.
 
-She writes thirty-one of those between May and September. Kavi marks some and Nadia marks some, and the rest she marks herself with her own answer folded under the page. In May she stops early on about half of them. By August it is one in six, and one in six is where it stays.
+She writes thirty-one of those between May and September, Kavi marking some and Nadia marking some, while she marks the rest herself with her own answer folded under the page. In May she stops early on about half of them. By August it is one in six, and one in six is where it stays.
 
-The people who teach block one do it for film and for competition. She comes into September already able to drive, because her father took her out to a church lot the previous July and meant to be the one who taught her. The school teaches her the rest. In October they cut the engine at sixty and she brings the car in on the gearbox alone and overshoots her mark by forty meters. In November the brake pedal sinks under her foot and the car keeps its speed. The answer is the gearbox, the handbrake, and a great deal more road than she thought she would need. In January they put her on a wet skid pan. By March she is reversing faster than anything in June had prepared her to believe.
+The people who teach block one do it for film and for competition. She comes into September already able to drive, because her father took her out to a church lot the previous July and meant to be the one who taught her. The school teaches her the rest. In October, when they cut the engine at sixty, she brings the car in on the gearbox alone and overshoots her mark by forty meters. In November, when the brake pedal sinks under her foot and the car keeps its speed, the answer is the gearbox, the handbrake, and a great deal more road than she thought she would need. In January they put her on a wet skid pan. By March she is reversing faster than anything in June had prepared her to believe.
 
-Delacroix runs the handling weeks. He talks the entire time she drives, in one flat voice, about his brother-in-law's boat and the state of the tires and whatever else occurs to him.
+Delacroix runs the handling weeks, talking the entire time she drives, in one flat voice, about his brother-in-law's boat and the state of the tires and whatever else occurs to him.
 
 "Look where you want the car." Delacroix has his elbow on the door and his cup balanced on his knee.
 
@@ -98,13 +98,13 @@ She looks at the gap, and the car goes through it.
 
 She takes it again in October, in the same room, two rows over from where she sat in April.
 
-Question six is a rented forklift. She has the answer in her second line. Then she writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. The whole of it takes nineteen minutes. She reads it back and doesn't change a word.
+Question six is a rented forklift. She has the answer in her second line, then writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. The whole of it takes nineteen minutes. She reads it back and doesn't change a word.
 
 She passes by twenty-two.
 
-In November she is in the library with something else open in front of her and she is thinking about April instead. It happens again in December, and once more in February. She still shuts books harder than she means to in November, and she could not tell anybody why she is doing it.
+In November she sits in the library with something else open in front of her, thinking about April instead. It happens again in December, and once more in February. She still shuts books harder than she means to in November, and she could not tell anybody why she is doing it.
 
-The forge is Thursdays, and has been since she was twelve. The work down there stays between her and Pruitt. In four years the whole of his commentary has been telling her which end to hold.
+The forge is Thursdays, and has been since she was twelve. The work down there stays between her and Pruitt, in four years the whole of his commentary has been telling her which end to hold.
 
 "You're off early."
 
@@ -114,13 +114,13 @@ The forge is Thursdays, and has been since she was twelve. The work down there s
 
 She takes the tongs.
 
-There is a hook on the back of her door with a bag on it. She made it in her second year.
+There is a hook on the back of her door with a bag on it, made in her second year.
 
 ---
 
 She comes home in June for ten weeks and sleeps through most of the first one.
 
-After that the nights settle at nine hours. She rides out to the reservoir most days, and in July she finds a road past it that adds eleven miles and a hill she has to stand up on. Four novels go through her hands in a fortnight, and she can't remember how a single one of them ends. The rest of it is long afternoons on the back steps she and her father built when she was thirteen, with the sun coming round the corner of the garage at about four and a wasp working the same board every day.
+After that the nights settle at nine hours, and she rides out to the reservoir most days, in July finding a road past it that adds eleven miles and a hill she has to stand up on. Four novels go through her hands in a fortnight, and she can't remember how a single one of them ends. The rest of it is long afternoons on the back steps she and her father built when she was thirteen, with the sun coming round the corner of the garage at about four and a wasp working the same board every day.
 
 Her mother watches that from the kitchen window for two weeks before she comes out.
 
