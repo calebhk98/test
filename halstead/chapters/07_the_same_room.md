@@ -2,7 +2,7 @@
 
 *August 2012 – October 2012*
 
-The loop out front is full of cars with their trunks standing open, more adults in it than Chloe has seen in one place all month, somebody's little brother screaming about a shoe. Sam left at seven, which Chloe finds out from a girl that she hadn't spoken to at the camp, who says it while passing with a pillow under her arm and doesn't stop to say it. Kavi is over by the double doors with two adults, from whom she gets a hand up, before a family walks between them and he isn't there anymore.
+The loop out front is full of cars with their trunks standing open, more adults in it than Chloe has seen in one place all month, somebody's little brother, who is screaming about a shoe. Sam left at seven, which Chloe finds out from a girl that she hadn't spoken to at the camp, who says it while passing with a pillow under her arm and doesn't stop to say it. Kavi is over by the double doors with two adults, from whom she gets a hand up, before a family walks between them and he isn't there anymore.
 
 Ruth finds her at the flagpole and hugs her hard enough to hurt.
 
@@ -24,7 +24,7 @@ In August her mom is standing at the counter sorting the mail, as Chloe comes in
 
 "From camp. He was in my class."
 
-"Oh," her mom puts the envelope down. She looks pleased about it in a way Chloe doesn't understand. "Sure, honey. What's his number?"
+"Oh," her mom puts the envelope down. She looks pleased about it in a way that Chloe doesn't understand. "Sure, honey. What's his number?"
 
 Chloe's mouth opens, then stays open a beat too long. "I don't know his number."
 
@@ -96,7 +96,7 @@ Since the book has to go back, they go on Tuesday, and Chloe, who has had it out
 
 The librarian looks at her over the top of the card. "That's a real month, that is," she says, and puts the stamp down. "But that doesn't mean you can get more, it is still four at a time, same as it was in June. The new ones came in this morning and they're still on the cart, so go on."
 
-Chloe takes four off the cart and finishes two of them by Friday.
+Chloe takes four off the cart, two of which she finishes by Friday.
 
 ---
 
@@ -110,7 +110,7 @@ The first math sheet comes around at twenty past nine, and she squints at it bef
 
 Fractions at camp, staying up until the number finally sat still on the page, and now this, math from last year again. Having done all thirty, she goes back to the top and checks each one again, and every answer matches what she wrote the first time. She puts her hands in her lap and waits for the room to catch up around her.
 
-It works on the first day of second grade exactly the way it worked in April, all she has to do is finish first, sit still, and say nothing to anybody at her table.
+It works on the first day of second grade exactly the way that it worked in April, all she has to do is finish first, sit still, and say nothing to anybody at her table.
 
 ---
 
@@ -198,7 +198,7 @@ She says thank you at the end of it, puts the phone down, and stands there, her 
 
 In the first week of October, Chloe puts her head down on her desk in the middle of the morning and for some reason she can't help but to cry with her face in her arms.
 
-She isn't quiet about it. Ms. Vance comes down the row and crouches all the way down beside the desk, in front of everybody, and puts a hand flat on Chloe's back, leaving it there.
+She isn't quiet about it, as Ms. Vance comes down the row and crouches all the way down beside the desk, in front of everybody, and puts a hand flat on Chloe's back, leaving it there.
 
 "Hey, hey, what's going on?"
 

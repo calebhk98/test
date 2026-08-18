@@ -32,7 +32,7 @@ Kavi turns up an hour later and stands in the doorway with his arms folded until
 
 "What's your last name," Chloe says.
 
-At dinner she counts eleven faces she knows before the food comes and gives up counting after that. Of the ninety who were at camp, twenty-some came back that first fall, and more came the year after, drifting in a term or two at a time until it stopped being a thing anybody remarked on. On the way out Sam takes her round by the long corridor to show her a window that doesn't shut properly. Then he walks straight past the noticeboards on the second floor without looking at them once. A boy she has never seen before asks whether she is the one who did the bridge at camp, and when she says no he says that's fine, then carries on eating. She asks Ruth about Owen while they are carrying their trays back.
+At dinner she counts eleven faces she knows before the food comes and gives up counting after that. Of the ninety who were at camp, twenty-some came back that first fall, and more came the year after, drifting in a term or two at a time until it stopped being a thing anybody remarked on. On the way out Sam takes her round by the long corridor to show her a window that doesn't shut properly. Then he walks straight past the noticeboards on the second floor without looking at them once. A boy she has never seen before asks whether she is the one who did the bridge at camp, and when she says no, he says that's fine, then carries on eating. While they are carrying their trays back, she asks Ruth about Owen.
 
 "He left camp in the second week. He was in the room across from Sam and he had a blue thing hanging off his bag."
 
@@ -44,13 +44,13 @@ It's four before Ruth even says it. She'd counted them herself, the week it happ
 
 She starts on a Monday.
 
-Her day is seven hours. Five subjects for an hour each, then two hours in the afternoon that Fen calls the fun ones and everybody else calls the afternoon. When the afternoon finishes she finishes, and there is nothing after it until dinner. The five are Spanish, mathematics, writing, literature and history. Writing turns out to be two pages a week, followed by twenty minutes of a man asking her why she put things in that order.
+Her day is seven hours. Five subjects for an hour each, then two hours in the afternoon that Fen calls the fun ones and everybody else calls the afternoon. When it finishes, she finishes, and there is nothing after it until dinner. The five are Spanish, mathematics, writing, literature and history. Writing turns out to be two pages a week, followed by twenty minutes of a man asking her why she put things in that order.
 
 Swimming is the first afternoon hour and the school assigns it to everybody. The pool is warm, the lane is hers for the whole hour, and the teacher stands at the shallow end and tells her what her left arm is doing until she can hear it coming before he says it. In the second week he gets in and does two lengths to show her what he means about the roll, and it is a different thing in the water than what any of them are doing. Then he gets out and carries on the sentence he was in the middle of.
 
 Priya reaches past her for the bread at dinner. "He went to the Olympics," she says. "Swimming, obviously. Somebody's mom told my mom at the thing in January."
 
-The second hour she picks herself, off a list on a wall, with nobody standing next to her while she reads it. She picks cooking because Ruth is in cooking. Cooking is knife work, standing up straight, cleaning as you go, plus being told for the fourth time that your onion is not the same size all the way along.
+The second hour she picks herself, off a list on a wall, with nobody standing next to her while she reads it. Because Ruth is already in cooking, she picks it too. Cooking is knife work, standing up straight, cleaning as you go, plus being told for the fourth time that your onion is not the same size all the way along.
 
 "Yours is a triangle."
 
@@ -62,7 +62,7 @@ The Spanish teacher speaks Spanish from the first minute of the first hour and d
 
 Mathematics is nothing like mathematics at camp. At camp somebody had explained fractions to her, and she had gone away and worked out for herself why you flip the second one, which took a night on the floor with a pencil and felt enormous at the time. Here nobody explains anything to start with. You get given the thing the formula is about, plus a week. You come back with whatever you have got, and then the teacher tells you whether it is true. He does not say whether it is good. The first week she brings him three pages, but he reads two lines of it, says the second line is wrong, then hands it back with forty minutes of the hour still to go.
 
-She hates it for a month, but the first two weeks go badly in every subject she has, not only that one. By the fourth week she can find all her rooms without checking and she has stopped being late to any of them. She is behind in Spanish, mathematics, writing and history, but she is not behind in literature. On the first day of literature she waits for the reading list, and on the eighth day she stays behind after the hour to ask about it, and the teacher looks at her before answering.
+She hates it for a month, but the first two weeks go badly in every subject she has, not only that one. By the fourth week she can find all her rooms without checking and she has stopped being late to any of them. She is behind in Spanish, mathematics, writing and history, but she is not behind in literature. On the first day of literature she waits for the reading list, and on the eighth day she stays after the hour to ask about it, and the teacher looks at her before answering.
 
 "There isn't one, and that's not me being clever with you, it's the actual answer."
 
@@ -94,7 +94,7 @@ On the second floor by the stairs there is a board made of cork with sheets of p
 
 "Does anybody get sent home?"
 
-"Not for being bad at something, if that's what you're asking, and nobody has ever been asked to leave here for being bad at something." He is putting papers into a case and does not stop doing it while he talks. "People do go home. Their family comes and gets them. It happens two or three times a year. It's a school, it isn't a prison, and it isn't a competition you can be knocked out of."
+"Not for being bad at something, if that's what you're asking, and nobody has ever been asked to leave here for being bad at something." While he talks, he is putting papers into a case and does not stop doing it. "People do go home. Their family comes and gets them. It happens two or three times a year. It's a school, it isn't a prison, and it isn't a competition you can be knocked out of."
 
 She asks Kavi about it two weeks later, on the stairs, when there is nobody else in the stairwell.
 
