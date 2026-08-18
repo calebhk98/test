@@ -1,0 +1,14 @@
+# Optional: keep the website + JSON API running. Copy to /etc/systemd/system/.
+[Unit]
+Description=Used Car Daily Monitor — website and JSON API
+After=network-online.target
+
+[Service]
+Type=simple
+User=CHANGE_ME
+WorkingDirectory=/absolute/path/to/used-car-monitor
+ExecStart=/usr/bin/python3 -m carmon serve --host 127.0.0.1 --port 8787
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

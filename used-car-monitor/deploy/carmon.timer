@@ -1,0 +1,12 @@
+# Copy to /etc/systemd/system/carmon.timer, then:
+#   sudo systemctl daemon-reload && sudo systemctl enable --now carmon.timer
+[Unit]
+Description=Run the Used Car Daily Monitor every morning
+
+[Timer]
+OnCalendar=*-*-* 07:30:00
+Persistent=true
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target

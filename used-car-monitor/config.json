@@ -1,0 +1,143 @@
+{
+  "search": {
+    "zip": "38464",
+    "radius_miles": 100,
+    "year_min": 2021,
+    "mileage_max": 60000,
+    "price_max": 20000,
+    "price_min": 1000,
+    "car_type": "used",
+    "include_certified_search": true,
+    "body_types": [
+      "Sedan",
+      "Hatchback",
+      "SUV",
+      "Wagon",
+      "Coupe"
+    ],
+    "exclude_body_types": [
+      "Pickup",
+      "Truck",
+      "Van",
+      "Minivan",
+      "Cargo Van",
+      "Chassis",
+      "Convertible"
+    ],
+    "exclude_models": [
+      "Tahoe",
+      "Suburban",
+      "Expedition",
+      "Sequoia",
+      "Armada",
+      "Yukon",
+      "Yukon XL",
+      "Traverse",
+      "Pilot",
+      "Highlander",
+      "Telluride",
+      "Palisade",
+      "Durango",
+      "Grand Wagoneer",
+      "Wagoneer",
+      "Land Cruiser",
+      "4Runner",
+      "Sienna",
+      "Odyssey",
+      "Carnival"
+    ],
+    "include_electric_hybrid": false,
+    "excluded_fuel_types": [
+      "Electric",
+      "Hybrid",
+      "Plug-In Hybrid",
+      "PHEV",
+      "Hydrogen",
+      "Compressed Natural Gas"
+    ],
+    "rows_per_page": 50,
+    "max_pages": 5,
+    "certified_max_pages": 2
+  },
+  "scoring": {
+    "mode": "smooth",
+    "preferred": [
+      {
+        "make": "Toyota",
+        "model": "Corolla"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic"
+      },
+      {
+        "make": "Hyundai",
+        "model": "Elantra"
+      },
+      {
+        "make": "Mazda",
+        "model": "Mazda3"
+      },
+      {
+        "make": "Kia",
+        "model": "Forte"
+      }
+    ],
+    "caution": [
+      {
+        "make": "Nissan",
+        "model": "Versa",
+        "reason": "CVT reliability history"
+      },
+      {
+        "make": "Nissan",
+        "model": "Sentra",
+        "reason": "CVT reliability history"
+      },
+      {
+        "make": "Nissan",
+        "model": "Altima",
+        "reason": "CVT reliability history"
+      }
+    ],
+    "weights": {
+      "preferred_bonus": 2.0,
+      "caution_penalty": -2.0,
+      "cpo_bonus": 2.0,
+      "price_drop_bonus_max": 1.5,
+      "price_drop_full_bonus_pct": 3.0,
+      "distance_free_miles": 50,
+      "distance_penalty_per_miles": 25,
+      "distance_penalty_floor": -3.0,
+      "mileage_zero_penalty_at": 20000,
+      "mileage_full_penalty_at": 60000,
+      "mileage_full_penalty": -2.0
+    }
+  },
+  "api": {
+    "base_url": "https://api.marketcheck.com/v2/search/car/active",
+    "monthly_call_cap": 500,
+    "calls_per_second": 5,
+    "stop_at_monthly_cap": true,
+    "timeout_seconds": 30,
+    "max_retries": 3
+  },
+  "digest": {
+    "top_n": 5,
+    "new_listing_limit": 15,
+    "price_drop_limit": 15,
+    "include_source_links": true
+  },
+  "web": {
+    "host": "127.0.0.1",
+    "port": 8787
+  },
+  "paths": {
+    "db": "data/carmon.db",
+    "digest_dir": "data/digests"
+  },
+  "sources": {
+    "note": "Deep links only \u2014 v1 does not scrape these. See SOURCES.md.",
+    "enabled": true
+  }
+}
