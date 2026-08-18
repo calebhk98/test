@@ -46,7 +46,7 @@ She comes back down, "I don't know?"
 
 Her mom's eyes come up, "It's OK, we can just ask the school," and then she closes the phone book and gets the camp folder down off the shelf by the door.
 
-Somebody at the school picks up on the second ring. Chloe gets close, trying to listen, as her mom gives their name, then Chloe's, confirms yes, that's the one, and settles into a long stretch of listening with her hand flat on the counter.
+Somebody at the school picks up on the second ring. Chloe gets close, straining to hear, as her mom gives their name, then Chloe's, confirms yes, that's the one, and settles into a long stretch of listening with her hand flat on the counter.
 
 "Right, no, I understand that," she listens again. "What I'm asking instead, is whether it can go the other way. Like, if I give you our number, can you pass it along to them, and then it's entirely up to those families whether they do anything with it."
 
@@ -104,7 +104,7 @@ Somebody asks whether you can swap groups, and Ms. Vance says no in a way that h
 
 The first math sheet comes around at twenty past nine, and she squints at it before she can tell that it's adding with carrying, which she learned last year and can still see: the little box that you write the one in, and Mrs. Aldana drawing that box in green marker. There are thirty of them on the page.
 
-Fractions at camp, staying up until the number finally sat still on the page, and now this, math from last year again. Having done all thirty, she goes back to the top and checks each one again, and every answer matches what she wrote the first time. She puts her hands in her lap and waits for the room to catch up around her.
+Fractions at camp, staying up until the number finally sat still on the page, and now this, math from last year again. Having done all thirty, she goes back to the top and checks each one over, and every answer matches what she wrote the first time. She puts her hands in her lap and waits for the room to catch up around her.
 
 It works on the first day of second grade exactly the way that it worked in April, all she has to do is finish first, sit still, and say nothing to anybody at her table.
 
@@ -138,7 +138,7 @@ While Ms. Vance is over at the cabinet with the tape, not looking up for any of 
 
 Though the four books are due on a Thursday, she has finished two of them.
 
-She takes the third one to bed on the Monday and gets four pages in. On the Tuesday she opens it at the same place, reads the top of the page, reads it again, then gives up and puts it down on the floor. On the Wednesday she doesn't take it up with her.
+Having taken the third one to bed on the Monday and gotten four pages in, she opens it at the same place on the Tuesday, reads the top of the page, reads it again, then gives up and puts it down on the floor. On the Wednesday she doesn't take it up with her.
 
 Her mom drives her to the library on Thursday and waits in the car with the engine running. Chloe comes out with her two books that she hadn't finished.
 

@@ -7,10 +7,10 @@ The noise is the first thing: a hundred-odd kids in the building, most of their 
 They line up at a table that has the letters of the alphabet taped along the front in blocks, where the woman at H through M finds Kessler on her page without going back up it and hands over a folder with Chloe's name printed on the front, a lanyard with her name on it, a card for the dining hall with her name on that.  
 "Somebody's organized," Chloe's dad says.  
 "We try." The woman is already reaching past him for the next folder in the box. "Chairs are through the double doors, we start on the hour, there's a map in there."  
-The briefing is in a room with folding chairs and a woman with a clipboard who goes through it fast, because there's a second one at eleven for the families still driving. Meals are at seven, twelve, and six, and there's fruit in bowls by the stairs at any hour, so you don't have to ask anybody. Laundry bags are green, they go outside your door on Tuesday and Friday nights. The nurse is on the first floor beside the stairwell with the red door, and somebody sits in that office at every hour of the day, not on call from home, in the office. Lights out is nine for the under-eights, nine thirty for everybody else.  
+The briefing is in a room with folding chairs and a woman with a clipboard who goes through it fast, because there's a second one at eleven for the families still driving. Meals are at seven, twelve, and six, and there's fruit in bowls by the stairs at any hour, so that you don't have to ask anybody. Laundry bags are green, they go outside your door on Tuesday and Friday nights. The nurse is on the first floor beside the stairwell with the red door, and somebody sits in that office at every hour of the day, not on call from home, in the office. Lights out is nine for the under-eights, nine thirty for everybody else.  
 "If you stop wanting to be here, tell any adult and we'll take you home. Same day. Nobody's going to argue with you about it, nobody's going to try and talk you round." She turns the page over on the clipboard. "It isn't a punishment, it's just how it works. If you feel sick in the night you don't wait until morning, you knock on the door with the light on at the end of your hall."  
 A man near the front asks whether the laundry bags go out on the Tuesday night or the Wednesday morning, so she does the part about the laundry bags again.  
-Chloe's mom writes something on the back of the map, and walking to the room afterward Chloe gets a look at it: it's the sentence about going home, with the words same day underlined twice.  
+As Chloe's mom writes something on the back of the map, walking to the room afterward Chloe gets a look at it: it's the sentence about going home, with the words same day underlined twice.  
 Her room has two beds, a window that opens six inches and then stops, and a girl called Priya who is already there, already unpacked, with a book about horses face down open on her pillow.  
 Priya doesn't look up from the drawer she's pushing shut with her knee. "Do you ride?"  
 "Ride what?"  
@@ -27,7 +27,7 @@ Her mom picks up in the middle of the first ring.
 "I want to come there," Chloe says.  
 "Okay. Yeah. Okay, stay right where you are, I'm coming."  
 The hotel is half a mile away and her mom is at the front desk in about six minutes, already dressed.  
-Chloe sleeps in the second bed with the bathroom light on and the door open the amount her mom checks with her about first.  
+Chloe sleeps in the second bed with the bathroom light on and the door open as much as her mom checks with her about first.  
 "Do you want to talk about it?" Her mom is still in her shoes, sitting on the arm of the chair by the window.  
 "No."  
 "Okay." She gets up, turns the other bed down, sits on the end of it. "Do you want me to talk about something?"  
@@ -68,7 +68,7 @@ That night Chloe calls the desk again and sleeps in the hotel again, and in the 
 "Since when?"  
 "Since before I was born," Chloe says, and her mom laughs at it anyway.  
 \---  
-The dining hall is loud in a different way from the hallway. On the third night Sam sits down across from her without a tray, gets up, gets a tray, comes back and sits in the same seat.  
+The dining hall is loud in a different way from the hallway. On the third night Sam sits down across from her without a tray, before he gets up, gets a tray, and comes back to sit in the same seat.  
 "What school do you go to?"  
 "Just a school."  
 "No, what's it called."  
@@ -111,7 +111,7 @@ Sam tries twice more to get back into it and doesn't manage it either time.
 On the second Tuesday, Mr. Doyle says something about weight while he's drawing on the board, and Ruth's hand goes up, though she starts talking before it's noticed.  
 "That's mass, weight is the pull on it. If you took the same thing to the moon the weight would go down and the mass would be exactly the same."  
 Mr. Doyle stops with the marker still up at the board and looks at what he's written.  
-He wipes one word out with the side of his hand and writes the other one into the gap it leaves. "Mass. Thank you."  
+He wipes one word out with the side of his hand and writes the other one into the gap that it leaves. "Mass. Thank you."  
 Then he keeps going.  
 "I told you," Ruth says, to nobody, to the room. "I said that on Friday. I said it on Friday."  
 "Ruth," Sam says, from two seats over, without turning round.  

@@ -9,14 +9,13 @@ The parent hotel has a breakfast room with waffles on paper plates, and every mo
 "I've never seen the bus." The woman next to him has both hands round a cup and hasn't touched it. "I've been here twice and I have never seen it."  
 "It exists, they showed me a picture of it," somebody says, and two people laugh.  
 "My wife thought it was a scam," the first man says. "Like a phishing thing. Like they were going to ask for a deposit at some point, and then it'd be a wire transfer, and then it'd be a different number to call."  
-"That's what we thought." The man saying it doesn't look up from the table. "We had a whole thing about it. We had a family meeting about a summer camp."  
-"We thought worse than that," the woman says. "I'm going to say it. I thought worse than that. I told Dave, I'm not sending her four hours away to a building I've never seen, I don't care what's in the letter. And then we came, and it's a school, and there's a nurse, and it's fine, and I still -"  
+"That's what we thought." The man saying it doesn't look up from the table. "We had a whole thing about it, a family meeting about a summer camp."  
+"We thought worse than that," the woman says. "I'm going to say it, I thought worse than that. I told Dave, I'm not sending her four hours away to a building I've never seen, I don't care what's in the letter. And then we came, and it's a school, and there's a nurse, and it's fine, and I still -"  
 "Right."  
 "- I still don't know what it is."  
 Chloe's dad has been quiet through all of it, cutting his waffle into pieces that he isn't eating.  
 "Did they tell any of you where they got the name?" he says.  
-Three or four of them answer at once.  
-"They said they have a list."  
+Three or four of them answer at once: "They said they have a list."  
 "Yeah, we got the list, then we got told how it's compiled."  
 "They told us the list is good," the woman says. "Which. Okay. Good at what."  
 While one of the fathers looks at his plate, a man at the end starts talking about the drive back, whether it's faster round the north side, how it depends entirely on what time you leave, and two people take that up. Somebody's kid comes over needing something after that, and by the time it's sorted out, three of them have gone.  
@@ -46,7 +45,7 @@ He looks past her at the room, at the other tables, long enough that she turns a
 When he asks her to do the fractions one again, from the start, she turns the napkin over and works the problem a second time on the clean side, while he doesn't interrupt any of it.  
 "They taught you that?"  
 "He did it on the board and I didn't get it. So I did it again at night with my own numbers and then I got it."  
-"But you could already do them. You said you got them all right."  
+"But you could already do them, you said you got them all right."  
 "Anybody can do the flipping." Chloe puts the pen down. "You do it and it's right, but you don't know it's right. You just know he said."  
 Her dad looks at the napkin, folds it in half, and puts it in his shirt pocket.  
 \---  
@@ -66,10 +65,10 @@ After, the four of them sit on the floor in the hall outside Pluto with their ba
 "They asked on the third day because of the food?"  
 "They liked a lot of it. The food was one thing." Kavi shrugs with one shoulder. "My dad talked to Mr. Baptiste for an hour."  
 "When's the form?" Chloe says.  
-"I don't know when the form is. My mom has it."  
+"I don't know when the form is, my mom has it."  
 "But when do you find out."  
 "I don't know that either."  
-"Well, find out." She is up on her knees now. "Because if it's a day where they look at you, I want to know what they look at. I want to know if it's the same stuff or different stuff, because if it's different stuff I need to know what it is."  
+"Well, find out," she says, up on her knees now. "Because if it's a day where they look at you, I want to know what they look at. I want to know if it's the same stuff or different stuff, because if it's different stuff I need to know what it is."  
 "It's a form, Chloe."  
 "You said there was a day."  
 "There's a day."  
@@ -80,7 +79,7 @@ Then she does the arithmetic on it, which she has not done until now: four hours
 \---  
 She doesn't sleep, and then it's morning. Her dad carries her bag down and puts it in the trunk with the strap left hanging out, so he has to open it again. Priya hugs her and then goes back into the room for her own bag. When Sam says see you at the thing in the fall, Ruth tells him it isn't a thing yet, that there's a form, that his parents have to send it in. Sam says see you at the thing in the fall again.  
 An hour into the drive, with her head against the cold part of the window and her eyes shut, her dad checks the mirror twice before he calls her mom on the car speaker.  
-"Hey. We're on the road."  
+"Hey, we're on the road."  
 "How is she?"  
 "Asleep." A pause. "She talked for twenty minutes straight last night."  
 "About what?"  
@@ -94,9 +93,9 @@ Her mom doesn't say anything for long enough that he checks the screen.
 "In four weeks."  
 "In twenty-eight days."  
 The road noise goes on for another few miles.  
-"Okay," her mom says. "So what is that."  
+"Okay," her mom says, "so what is that."  
 "I don't know what that is."  
 "Four hours away, Dave. And free. And they wrote to her."  
-"I know. I was there."  
+"I know, I was there."  
 Neither of them says anything else until the next exit sign, and the road noise comes back up. When her mom says something about the traffic on the last stretch, her dad says he'll take the other way in.  
 Chloe keeps her eyes shut the rest of the way home.

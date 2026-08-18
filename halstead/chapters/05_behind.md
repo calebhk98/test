@@ -3,9 +3,9 @@
 *July 2012*
 
 Nobody waits.  
-That's the thing Chloe can't get over in the first week. When she finishes a page and looks up, there are already people on the next one, and by the time she finishes that one, Ruth is two ahead. They keep handing out the next thing, all day, until the day is over. There is no part of it where she sits with a book in her desk, its corner against her palm. By Wednesday she has stopped putting her hand in to check that it's still there, and by Friday she has left it in the room.  
+That's the thing that Chloe can't get over in the first week. When she finishes a page and looks up, there are already people on the next one, and by the time she finishes that one, Ruth is two ahead. They keep handing out the next thing, all day, until the day is over. There is no part of it where she sits with a book in her desk, its corner against her palm. By Wednesday she has stopped putting her hand in to check that it's still there, and by Friday she has left it in the room.  
 She thought this would feel good, and it does, though she still can't stop looking at where everybody else is on the page.  
-She's always been slow at writing. There was a room once with a small table, a page of little symbols, a man with a timer. She was bad at that, and the timer kept ticking while he watched. Here they get fifteen minutes and a question up on the board with the timer next to it. The question this time is what the man in the story believes at the start that he doesn't believe by the end, and where in it that changes, and how you know. She has read the chapter twice already, plus the two after it, and reading all three took her about as long as the fifteen minutes she now has to answer it in.  
+She's always been slow at writing. There was a room once with a small table, a page of little symbols, a man who held a timer. She was bad at that, and the timer kept ticking while he watched. Here they get fifteen minutes and a question up on the board that has the timer next to it. The question this time is what the man in the story believes at the start that he doesn't believe by the end, and where in it that changes, and how you know. She has read the chapter twice already, plus the two after it, and reading all three took her about as long as the fifteen minutes she now has to answer it in.  
 Chloe writes six sentences, then reads them back twice and leaves every word where it is. She gets to the where and the how you know with about ninety seconds left. Ruth has a page and a half. Kavi has most of a page and is still going when the teacher calls time, so he finishes the clause he's in and sets the pen down flat, evenly. Owen, who sits at the end of the row, has two sentences with a line through one of them.  
 "You can keep going if you're mid-sentence," the teacher says. "Not mid-paragraph."  
 "How mid is mid," Sam says.  
@@ -22,7 +22,7 @@ On the Thursday they get dowels, a spool of string, one glue gun between three, 
 "Go and do your own one."  
 Ruth goes and does her own one. Chloe watches her go without saying anything, mostly because she can't work out fast enough whether Ruth is right. By the time she has it, Sam has already started gluing.  
 Their bridge takes an hour and forty minutes and looks better than Ruth's, flat, wide, every joint on it neat. Two of the groups, of which Owen's is one, don't get across the eighteen inches at all before the session ends, and Mr. Doyle tells them to leave it where it is and come back to it.  
-Before any of it gets loaded they have to write down what they think it'll hold. Chloe writes fourteen. Sam wants to write a hundred and gets told it has to be a real number, so he writes twenty-five. Ruth writes hers with one hand over it.  
+Before any of it gets loaded they have to write down what they think it'll hold. Chloe writes fourteen. Sam wants to write a hundred and gets told it has to be a real number, so he writes twenty-five, while Ruth writes hers with one hand over it.  
 On the Tuesday they hang a bucket off the middle of each one and put weights in a pound at a time, and the whole room counts out loud together. One goes at three, which gets a laugh from the group it belongs to. Two more go before eight. Theirs goes at eleven and folds, sideways, all at once, the way Ruth pushed the square over with one finger, rather than snapping. Ruth's holds nineteen and then does snap, and half the room makes a noise about it.  
 "I told you," Ruth says, not looking at anyone in particular.  
 "Ruth," Sam says.  
@@ -30,7 +30,7 @@ On the Tuesday they hang a bucket off the middle of each one and put weights in 
 Mr. Doyle has them all write down which part went first and how far off their number they were. Chloe was wrong by three. She writes that it wasn't a stick that went, it was a corner, because not one of their corners was holding at an angle. It's the longest thing she writes all week.  
 \---  
 It's the second week that gets her, and it's math.  
-They divide fractions by flipping the second one over. Mr. Baptiste does two on the board, they come out right, he does a third one, it comes out right. Chloe can already do it by the second one, and she does the fourth one in her head before he gets to the end of it. She does eight in the packet and gets eight of them right. She doesn't know why it works, and it is making her furious in a way she can feel along her jaw.  
+They divide fractions by flipping the second one over. Mr. Baptiste does two on the board, they come out right, he does a third one, it comes out right. Chloe can already do it by the second one, and she does the fourth one in her head before he gets to the end of it. She does eight in the packet and gets eight of them right. She doesn't know why it works, only that it does, and that is making her furious in a way she can feel along her jaw.  
 "Why do you flip it," Chloe says.  
 "Good, that's the question." Mr. Baptiste caps the marker, uncaps it again, and turns back to the board. "Okay. So what is dividing actually asking you."  
 He draws a rectangle, shades half of it, cuts the half into pieces, talking the whole way through about what the question underneath the question is. Chloe watches all of it, though she only gets as far as the shading. Then the pieces stop being pieces of the thing they were pieces of, and after that she is looking at a rectangle with lines in it.  
@@ -54,7 +54,7 @@ Chloe sits in the dark with the paper on her knees and the pencil still in her h
 "Oh," she says, out loud, in a dark room, to nobody.  
 She does the next three problems in the packet, then goes back through the eight she already got right, one at a time, to find out which of them were right for the reason and which of them were right off the trick.  
 \---  
-There's a pool. Swimming is at four, and Chloe cannot swim. She gets put in the group at the shallow end with a woman called Deb who has them blow bubbles with their faces in the water for two days before anybody goes anywhere. By the end of the second week Chloe can do a length if she stops in the middle, while Sam does two without stopping and brings it up at dinner most days.  
+There's a pool. Swimming is at four, and because Chloe cannot swim, she gets put in the group at the shallow end with a woman called Deb who has them blow bubbles with their faces in the water for two days before anybody goes anywhere. By the end of the second week Chloe can do a length if she stops in the middle, while Sam does two without stopping and brings it up at dinner most days.  
 "It's not a race."  
 "It's a pool."  
 "It's not a race though."  
@@ -100,7 +100,7 @@ Sam looks at the table, "No."
 "Okay, but that's how it got that way," Chloe says. "I'm talking about what it's doing now."  
 "Those are the same thing."  
 "They're not, you can end up somewhere by accident, you're still there though."  
-Ruth opens her mouth and then doesn't use it right away, and Sam points at her with his fork.  
+Ruth opens her mouth, then doesn't use it right away, before Sam points at her with his fork.  
 "You can't lie if you don't have a mouth," he says.  
 "That's not what lying is."  
 "It's what a mouth is for."  

@@ -4,7 +4,7 @@
 
 It's a Tuesday and nothing happens on it.
 
-The school doesn't call. The sheet at twenty past nine is the same sheet as Monday's with different numbers in it. She finishes it and checks it. Then she sits behind it with her hands in her lap for the rest of the period. At lunch she sits at the end of a table because there's a space at the end of it, where the talk stays down at the other end, out of her reach. In the afternoon they do a worksheet about the parts of a plant, which has a picture on it that you colour in when you've finished the words. Chloe finishes the words in about four minutes, then colours the picture very slowly, going right up to the lines without going over them anywhere. She has seen Dr. Ammons four times since October, and the last one was a fortnight ago, where she was asked whether any of it had got easier and said some of it had.
+The school doesn't call. The sheet at twenty past nine is the same sheet as Monday's, with different numbers in it. Once she finishes it and checks it, she sits behind it with her hands in her lap for the rest of the period. Because there's a space at one end of a table, she sits there at lunch, the talk staying down at the other end, out of her reach. In the afternoon they do a worksheet about the parts of a plant, which has a picture on it that you colour in when you've finished the words. Chloe finishes the words in about four minutes, then colours the picture very slowly, going right up to the lines without going over them anywhere. She has seen Dr. Ammons four times since October, and the last one, which was a fortnight ago, was when she was asked whether any of it had got easier and said some of it had.
 
 She comes home. She goes upstairs without taking her coat off. At some point her mom comes up to say that dinner's in ten minutes. She finds her on the floor in the gap between the bed and the wall, with her back against the bed and her knees pulled up.
 
@@ -26,7 +26,7 @@ Chloe can't answer that one. School, the sheets, Kayleigh Burns, none of them al
 
 "This," she says, with her face against her mother's collarbone. "This, this, all of this."
 
-Her mother holds her on the floor for a long time after she has stopped. Neither of them gets up off it, and the ten minutes goes by without anybody saying anything about dinner. Her dad appears in the doorway at some point and stands there with a dishcloth in his hand. Her mother looks up at him and doesn't say a word, so he goes back down, and from the floor there's just his feet on the kitchen tile, back and forth, no pan, no water.
+After she has stopped, her mother holds her on the floor for a long time. Neither of them gets up off it, the ten minutes going by without anybody saying anything about dinner. Her dad appears in the doorway at some point, a dishcloth in his hand. Her mother looks up at him and doesn't say a word, so he goes back down, and from the floor there's just his feet on the kitchen tile, back and forth, no pan, no water.
 
 Later, when she is in bed and supposed to be asleep, the two of them are at the kitchen table with the door mostly shut, and their voices come up through the part of the floor that's thin.
 
@@ -44,7 +44,7 @@ A chair moves on the kitchen tiles, and somebody runs the tap three or four seco
 
 "What do you want me to say, Meg? You know what I think, because I've thought it since the car ride home in July and you've known that the whole time."
 
-Chloe lies with her eyes open and her hands under the pillow, listening to the fridge. Then her dad says something she can't make out at all, and her mom says the words four hours in the voice she uses about a thing she has already lost.
+Chloe lies with her eyes open and her hands under the pillow, listening to the fridge. Then her dad says something she can't make out at all, and her mom says the words four hours, in the voice she uses about a thing she has already lost.
 
 Then it's the middle of February, then the end of it, and dinner comes and goes without either of them bringing it up. She stops waiting for them to. She goes to Dr. Ammons on a Thursday and is asked how the last two weeks have been, says fine, gets asked what fine means, says she doesn't know.
 
@@ -72,7 +72,7 @@ Chloe doesn't sit down. "Am I going, though, is it a real thing, are you actuall
 
 She screams. It comes out at a volume that surprises all three of them. Then she is up off the floor and onto her dad, who catches her most of the way, and she is saying thank you into his shoulder with no gap between the words. Then she's off him and around the coffee table and holding onto her mother's legs with both arms, saying it to her instead, thank you, thank you, I'll be so good, I'll be so good, thank you.
 
-She runs upstairs, then runs back down twenty seconds later and stops on the third step from the bottom with both hands on the rail.
+She runs upstairs, then comes back down twenty seconds later, and stops on the third step from the bottom with both hands on the rail.
 
 "Can I tell Ruth? Can I call her right now?"
 
@@ -84,7 +84,7 @@ She runs upstairs, then runs back down twenty seconds later and stops on the thi
 
 She runs back up.
 
-Her parents sit in the living room and listen to her going back and forth over their heads for a solid ten minutes. Drawers open and shut. Something heavy gets dragged across the floor twice. Chloe is out on the landing with a drawer open in front of her when her dad says something downstairs, and she doesn't catch the start of it, though she gets the end of it clearly enough.
+Her parents sit in the living room, and listen to her going back and forth over their heads for a solid ten minutes. Drawers open and shut. Something heavy gets dragged across the floor twice. When her dad says something downstairs, Chloe is out on the landing with a drawer open in front of her, and she doesn't catch the start of it, though she gets the end of it clearly enough.
 
 "That's her. That's what she's actually like."
 
@@ -112,9 +112,9 @@ Dave looks down, not at either of them.
 
 From the rug, Chloe catches maybe one word in three, and she doesn't ask what the rest of it meant.
 
-They drive out on the Friday for the day where Halstead looks at her. The building is a different building in April than it was in July, because it's raining and every hall in it is full of people.
+They drive out on the Friday for the day where Halstead looks at her. The building is a different building in April than it was in July, because it's raining, and every hall in it is full of people.
 
-A woman called Mrs. Okonkwo walks the three of them around for an hour, going backward half the time so that she can talk while she's doing it. Chloe asks whether the room at the end of that hall is still called Pluto, and she says the rooms down there have always been planets, that nobody has ever changed one. Then she asks whether there's a boy here called Sam.
+A woman called Mrs. Okonkwo, who goes backward half the time so that she can talk while she's doing it, walks the three of them around for an hour. Chloe asks whether the room at the end of that hall is still called Pluto, and she says the rooms down there have always been planets, that nobody has ever changed one. Then she asks whether there's a boy here called Sam.
 
 "I can't tell you who's enrolled, sweetheart. Those are other families."
 
@@ -122,18 +122,18 @@ A woman called Mrs. Okonkwo walks the three of them around for an hour, going ba
 
 "I know you do." Mrs. Okonkwo says it without slowing down or making anything of it. "The dining hall's through there. Do you remember it?"
 
-Her mom asks three questions about the nurse and gets three straight answers. Then she asks a fourth one about who's awake at night, and gets that one answered too.
+Her mom asks three questions about the nurse, and gets three straight answers. Then she asks a fourth one about who's awake at night, and gets that one answered too.
 
-In the afternoon they put Chloe in a second grade room while her parents go off somewhere with somebody else. There are twelve kids in it and they're doing something with a map of a river. A boy at her table lends her a pencil without being asked for one. At the end of it a man with grey coming into his beard sits down on a chair the same size as hers and asks her what she'd do with an entire day if nobody told her what to do with any of it. She talks for four minutes without stopping once, and he lets her get all the way to the end of it.
+In the afternoon they put Chloe in a second grade room while her parents go off somewhere with somebody else. There are twelve kids in it who are doing something with a map of a river. A boy at her table lends her a pencil without being asked for one. At the end of it, a man whose beard is going grey sits down on a chair the same size as hers, and asks her what she'd do with an entire day if nobody told her what to do with any of it. She talks for four minutes without stopping once, and he lets her get all the way to the end of it.
 
 Nobody gives her a test. She keeps waiting for someone to hand her a test, right through the afternoon and out to the car.
 
 It's dark by the time they're back on the road.
 
-Chloe talks for the whole four hours of it. She talks about the room she'd have and whether you get any say in which one of them you get. She talks about the girl who walked them around, and about whether Sam is one of the nine Sams or a different Sam altogether. She wants to know what the food is like in April as opposed to July, and whether the robot arm on the second floor is the same one or a newer one. She asks her dad six questions in a row without waiting for the answer to any of them. Somewhere in the third hour she falls asleep in the middle of a sentence about the pool. When the car stops in the driveway she wakes up and picks that same sentence back up more or less where she dropped it.
+Chloe talks for the whole four hours of it. She talks about the room she'd have and whether you get any say in which one of them you get. She talks about the girl who walked them around, and about whether Sam is one of the nine Sams or a different Sam altogether. She wants to know what the food is like in April as opposed to July, and whether the robot arm on the second floor is the same one or a newer one. She asks her dad six questions in a row without waiting for the answer to any of them. Somewhere in the third hour she falls asleep in the middle of a sentence about the pool. When the car stops in the driveway, she wakes up and picks that same sentence back up more or less where she dropped it.
 
-Her dad carries her bag in. He puts it at the bottom of the stairs. She goes through to the kitchen and gets herself a glass of water at the sink, standing on the edge of the cupboard door to reach the tap the way she isn't supposed to.
+Her dad carries her bag in, then puts it at the bottom of the stairs. She goes through to the kitchen, and gets herself a glass of water at the sink, standing on the edge of the cupboard door to reach the tap the way she isn't supposed to.
 
 Out the kitchen window, her mother is still sitting in the car. The engine's off, the lights with it, and she hasn't opened the door on her side.
 
-Chloe watches her through the window until her dad says something from the other room about whether anybody wants toast, and she goes.
+Chloe watches her through the window, until her dad says something from the other room about whether anybody wants toast, and she goes.
