@@ -16,7 +16,7 @@ Then Coach Bell puts a metronome on a post at the near end of the field.
 
 "Right, then nothing gets pointed at a person."
 
-He walks them down the field to show them the lanes. Both lines shoot the same way, north, from two positions seventy metres apart, and the lanes lean in toward each other by a few degrees so that the two flight paths cross a long way out over the middle of the field, where the arrows meet at the top of the arc. What is left of them comes down together in open grass another hundred and fifty metres past that, where there is a rope and a sign, and nobody goes beyond it during the block.
+He walks the archers down the field to show them the lanes. Both lines shoot the same way, north, from two positions seventy metres apart, and the lanes lean in toward each other by a few degrees so that the two flight paths cross a long way out over the middle of the field, where the arrows meet at the top of the arc. What is left of them comes down together in open grass another hundred and fifty metres past that, where there is a rope and a sign, and nobody goes beyond it during the block.
 
 "At the top the arrow has stopped climbing and it hasn't started dropping. It hangs there." Bell puts a hand out flat and holds it. "If you're late, it's barely moved while you were being late. That's the only thing you've got going for you and you're going to want all of it."
 
@@ -222,6 +222,6 @@ Mr. Hearn is the last one. He has the library, one door, one window, a room full
 
 The board the next day says the staff lost the building at three forty-two, and then it gives the students a B and lists eleven failures.
 
-Chloe reads the eleven failures in the corridor. Number four is about the east stairwell and names two people, but neither of them is Ruth. Number nine says that at no point in the two hours did anybody establish how many adults were in the building. She stands in front of that one, because she spent the whole two hours on a landing counting paint.
+Chloe reads the eleven failures in the corridor. Number four is about the east stairwell and names two students, but neither of them is Ruth. Number nine says that at no point in the two hours did anybody establish how many adults were in the building. She stands in front of that one, because she spent the whole two hours on a landing counting paint.
 
 She is still on number nine at dinner, where Sam is describing the bannister for the fourth time to two people who were standing underneath it.

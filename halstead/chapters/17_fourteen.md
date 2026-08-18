@@ -20,7 +20,7 @@ Keeping the rifle up, Sam asks, "How long till this bit's boring?"
 
 Ruth puts three rounds through one hole without lifting her cheek off the stock, then rolls onto her side to ask whether anybody has water.
 
-Kneeling and standing come in before the end of the month, then a hundred metres, then a hundred metres in a crosswind with somebody calling it off a flag for her. In November the target goes onto a rope and swings, so the count starts to matter again. That same week, Odile burns the inside of her hand on an ejection port. The scab pulls every time she opens her fingers, and she is still holding the palm up across the breakfast table in December.
+Kneeling and standing come in before the end of the month, then a hundred metres, then a hundred metres in a crosswind with somebody calling it off a flag for her, until in November the target goes onto a rope and swings, so the count starts to matter again. That same week, Odile burns the inside of her hand on an ejection port. The scab pulls every time she opens her fingers, and she is still holding the palm up across the breakfast table in December.
 
 A machine arrives in February that throws a clay across the front of the range every nine seconds, always at the same speed. Voss hands out a card with the interval printed on it so they can run a count off it.
 
@@ -48,7 +48,7 @@ Kavi shakes his head. "Nah. It escalates every year."
 
 ---
 
-Self defense is three rounds an hour. One person stands in the middle, the other ten come at them, and there is a minute on the clock. Then the middle changes, and it goes round until all eleven of them have taken it three times.
+Self defense is three rounds an hour. One person stands in the middle, the other ten come at them, and there is a minute on the clock, before the middle changes and it goes round until all eleven of them have taken it three times.
 
 Chloe holds fifty seconds on her third round on a Tuesday in February. She is flat on her back before the whistle finishes, somebody's knee still across her shin, laughing at the ceiling with both arms out.
 
@@ -66,17 +66,15 @@ She does pairs for the rest of the hour, then finds Ruth at the sinks and acts o
 
 Seven thirteen-year-olds get put on her teaching list in September, and Marek goes on somebody else's. She reads that off the noticeboard on the first morning, catches herself grinning at it, and takes the stairs two at a time going up.
 
-Her hour with them is differential equations and the analysis that runs beside it. She was doing exactly that at their age, taught by the same man who teaches them the other four hours of it now. In November all seven get the same question wrong on the same test in the same way.
+Her hour with them is differential equations and the analysis that runs beside it. She was doing exactly that at their age, taught by the same man who teaches them the other four hours of it now, until in November all seven get the same question wrong on the same test in the same way.
 
-She goes through the seven papers twice before she goes back to her own notes from the third week, but there it is in her own handwriting. She taught them the ordering backward, all seven learned it the way she gave it, and all seven arrived at the same wrong place. Everything before the test came out the same either way round, so it sat there for two months.
+She goes through the seven papers twice before she goes back to her own notes from the third week, but there it is in her own handwriting. She taught them the ordering backward, all seven learned it the way she gave it, and all seven arrived at the same wrong place; because everything before the test came out the same either way round, it sat there for two months.
 
 "Does the test count?" Halide says.
 
 "No," Chloe says, wiping the board down with her back to them, and she stops halfway across it and turns round. "Your answers all follow from what I taught you, and what I taught you was wrong. You'll get a different one in two weeks and it'll be harder, because by then you'll actually have it."
 
-Japanese moves faster at the front than she expects. By the end of the fourth week she is further along than she has ever been at the same point in a language, so on a Wednesday afternoon she digs out her own notes on Russian and on Mandarin to check whether that is true, and it is. The kanji arrive with most of their meaning already on them.
-
-Then the grammar starts, and the grammar is unlike anything behind her on the list. By November she is putting forty minutes a night into it and moving slowly, and she is still ahead of where Mandarin had her at the same point.
+Japanese moves faster at the front than she expects. By the end of the fourth week she is further along than she has ever been at the same point in a language, so on a Wednesday afternoon she digs out her own notes on Russian and on Mandarin to check whether that is true, and it is. The kanji arrive with most of their meaning already on them, but then the grammar starts, and the grammar is unlike anything behind her on the list. By November she is putting forty minutes a night into it and moving slowly, and she is still ahead of where Mandarin had her at the same point.
 
 Abstract algebra arrives with probability beside it. In contracts they spend a term on what a sentence actually obliges a person to do, and in logistics, four weeks on how many trucks there are and where the drivers sleep. She sits through comparative religion mostly listening, and comes out of it with about four opinions and no way to test any of them.
 
@@ -110,9 +108,9 @@ Ruth plays it eleven more times, then at about one in the morning she sits up so
 
 "I've been cutting that off since Tuesday."
 
-Down at the materials lab she spends the autumn on a run of fracture tests that keep coming out inconsistent, and after five weeks she has it. Samples cut on the Friday saw come out three degrees off square; samples cut on the Tuesday saw come out true; the log lists the date and the operator and leaves out the saw. Her name goes into the acknowledgments of the write-up in March, at the end of a list of five, on a paper that stays inside the department. Sanders tells her in the corridor on his way somewhere else without breaking stride, but she stands there, bag half off her shoulder, before she goes on to Japanese. She reads the whole paper that night and finds the two tables that came out of her weeks.
+Down at the materials lab she spends the autumn on a run of fracture tests that keep coming out inconsistent, and after five weeks she has it. Samples cut on the Friday saw come out three degrees off square; samples cut on the Tuesday saw come out true; the log lists the date and the operator and leaves out the saw. Her name goes into the acknowledgments of the write-up in March, at the end of a list of five, on a paper that stays inside the department. Sanders tells her in the corridor on his way somewhere else without breaking stride, but she stands there, bag half off her shoulder, before she goes on to Japanese, and she reads the whole paper that night and finds the two tables that came out of her weeks.
 
-Sam is six foot two by September. Ruth stands next to him at breakfast in the first week and tips her head back to find his face.
+Sam is six foot two by September, when Ruth stands next to him at breakfast in the first week and tips her head back to find his face.
 
 "You've been eating."
 
@@ -158,7 +156,7 @@ Her mother's hands stop on the dish while Chloe reaches past her for the beans. 
 
 "Since September."
 
-Chloe stops with the spoon in the beans. Her mother is still standing there holding the dish.
+Chloe stops with the spoon in the beans while her mother stands there, still holding the dish.
 
 "Oh." Chloe shakes her head fast and sets the spoon back. "No, it's fine, Mom, it's completely fine. It's a range. Everyone stands on a line facing the same way, there's a man behind you the entire time, and if you turn round with it in your hands he takes it off you and you're done for the term. Nobody's ever even close to anything."
 

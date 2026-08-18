@@ -82,28 +82,20 @@ Ruth does the one who's out. Airway, then breathing, then a hand under the back 
 
 "Having a gun isn't a skill." Ruth is irritated about it. "They stood in a group and let you walk in, and the one at the back made room for you. You could have done that at thirteen."
 
-Sam doesn't answer. He looks at the sidewalk.
-
-"Why are they so bad at it."
+Sam doesn't answer, looking at the sidewalk. "Why are they so bad at it."
 
 "Because they're criminals," Chloe says. "If you were good at anything you wouldn't be behind a hardware store at two in the morning taking phones off teenagers."
 
 "So if that's not it, what do I fight."
 
-"Go back and fight the waitress," Nadia says.
-
-Sam stops walking. "Wait," he says.
+"Go back and fight the waitress," Nadia says. Sam stops walking. "Wait," he says.
 
 "She's fifty," Ruth says. "She's on her feet nine hours a shift and she's carrying four plates on one arm. She's had thirty-four more years than you have."
 
 "She'd take me apart before I got a hand up."
 
-"She'd take you apart," Nadia agrees.
-
-They discuss it the whole way home.
+"She'd take you apart," Nadia agrees. They discuss it the whole way home.
 
 ---
 
-Ruth shuts the box off in the corridor and puts it in the chat before she sleeps. Four lines and a photo of Sam standing in the lot with his arms out.
-
-By breakfast there are sixty replies and an argument about whether it counts. Somebody in the year above has sent one laughing face and nothing else, and Sam won't discuss it, and won't for so long that people start bringing it up just to watch him not answer.
+Ruth shuts the box off in the corridor and puts it in the chat before she sleeps. Four lines and a photo of Sam standing in the lot with his arms out. By breakfast there are sixty replies and an argument about whether it counts. Somebody in the year above has sent one laughing face and nothing else, and Sam won't discuss it, and won't for so long that people start bringing it up just to watch him not answer.

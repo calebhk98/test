@@ -28,7 +28,7 @@ Voss gives her five more series. On the sixth he is at her shoulder with his han
 
 "Off the point, Kessler." His hand stays where it is. "You have shot the same number four different ways in ninety minutes. Go and have your dinner."
 
-She goes to dinner and clears the plate, but it could have been anything that was on it.
+She goes to dinner and clears the plate, but it could have been anything on it.
 
 She tries the old things. The count goes on her leg walking down to the range, the way it did when she was nine, and the number is the same on the Friday. Three different places in the cycle she holds her breath, but one of those makes her dizzy. By the second week of March, she has six weeks of cards that are fanned out across the floor of her room. She finds a pattern on the Tuesday and spends two days on it, but it turns out to be the wind that comes through the open end of the lane. She bends the corner of that card back and forth, until it comes off in her fingers.
 
@@ -44,9 +44,9 @@ Voss reads the four evenings' work standing in the doorway of the range office.
 
 "So what is it?"
 
-After tapping the pages straight against the desk, he hands them back to her, and tells her to get down to point six because her block started four minutes ago.
+After tapping the pages straight against the desk, he hands them back to her and tells her to get down to point six because her block started four minutes ago.
 
-Ruth comes down on a Saturday in April, with a clipboard and a bag of the toffees that Priya's mother sends, and sits behind her for two hours because Chloe asked her to.
+Ruth comes down on a Saturday in April with a clipboard and a bag of the toffees Priya's mother sends, and sits behind her for two hours because Chloe asked her to.
 
 "Your count's clean."
 
@@ -104,15 +104,15 @@ Hark hands out envelopes in October with two hundred dollars in each, to be spen
 
 "You are going to lose money in your life. Everybody does." She puts the last envelope down. "You can lose two hundred of it this year, with somebody standing over you who will make you write down what happened, or you can lose a great deal more of it later on your own."
 
-Rustem buys nine dead motors at a farm auction for eleven dollars apiece, four of which are turning over by Christmas. In January, he sits down across from Chloe at dinner, and pushes a page of figures at her before she has finished eating. He wants two hundred.
+Rustem buys nine dead motors at a farm auction for eleven dollars apiece, four of which are turning over by Christmas. In January, he sits down across from Chloe at dinner and pushes a page of figures at her before she has finished eating. He wants two hundred.
 
-She reads it twice, and checks his sale prices against what he got for the first four, but offers him a hundred and twenty at eight percent with the motors as security. He argues about the rate for eleven minutes and loses. Then he tells her that she has to see the barn first, so she goes on the Saturday. There are nearly sixty motors in it, but a third of them are past helping. She leaves her offer where it was.
+She reads it twice and checks his sale prices against what he got for the first four, but offers him a hundred and twenty at eight percent with the motors as security. He argues about the rate for eleven minutes and loses. Then he tells her that she has to see the barn first, so she goes on the Saturday. There are nearly sixty motors in it, but a third of them are past helping. She leaves her offer where it was.
 
 She lends forty to a girl called Fen at nine percent against a table saw, and the last thirty to Priya at twelve, unsecured, because it is Priya.
 
 All three pay her back, and she finishes the year with two hundred and seventeen dollars to Rustem's nine hundred and forty.
 
-Hark has her at the board in April with the ledger written up. She stands at the back with her arms folded, and reads all three columns before she says anything.
+Hark has her at the board in April with the ledger written up. She stands at the back with her arms folded and reads all three columns before she says anything.
 
 "You bought a piece of somebody else's ceiling."
 
@@ -148,13 +148,13 @@ She stops saying what she does in the afternoons, and it takes about four days t
 
 ---
 
-Her father comes out of the house on the second Sunday of the summer with the car keys, and walks straight past her to the passenger door. "Get in."
+Her father comes out of the house on the second Sunday of the summer with the car keys and walks straight past her to the passenger door. "Get in."
 
 Chloe looks at the door. "But they teach driving at school next year. You don't have to."
 
 "Cool, I bet they teach driving at school next year." He opens his own door. "I don't care, I'm teaching my daughter to drive. That one's mine. Other side."
 
-He takes her to the church lot behind the tire place. Empty on a Sunday, it has four light poles to go round. She stalls it eleven times in the first half hour, but only four in the second. By the third Sunday she is out on the road past the reservoir with him in the passenger seat, and the coffee in his hand is still full at the eleven-mile mark.
+He takes her to the church lot behind the tire place. Empty on a Sunday, it has four light poles to go round. She stalls it eleven times in the first half hour, but only four in the second. By the third Sunday, she is out on the road past the reservoir with him in the passenger seat, and the coffee in his hand is still full at the eleven-mile mark.
 
 "You're looking too far ahead."
 
@@ -168,9 +168,9 @@ Her father drinks some of the coffee and tells her to carry on.
 
 By the end of July she can drive, and the clutch is the part that takes her longest. At dinner he tells her mother, while laughing, that she reads a junction like somebody who has been doing it fifteen years, but she pulls away from a stop sign like a child. 
 
-Her grandmother takes her hand at the table a week later to look at a ring that her aunt has brought over, and keeps hold of it after the ring has been round the table.
+Her grandmother takes her hand at the table a week later to look at a ring her aunt has brought over, and keeps hold of it after the ring has been round the table.
 
-She turns it over in both her hands. There is a burn across the base of the thumb that dates from March, and a smaller one in the web of the first two fingers. The knuckle on the third finger is bigger than the one on the other hand and sits slightly off, because she set that herself in a corridor at eleven at night and then went to bed.
+She turns it over in both her hands. There is a burn across the base of the thumb from March and a smaller one in the web of the first two fingers. The knuckle on the third finger is bigger than the one on the other hand, and sits slightly off, because she set that herself in a corridor at eleven at night and then went to bed.
 
 Her grandmother runs a thumb over all of it, taking her time, while the conversation about the ring carries on above them. Chloe sits there and lets her.
 
