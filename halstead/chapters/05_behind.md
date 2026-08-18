@@ -21,7 +21,7 @@ On the Thursday they get dowels, a spool of string, one glue gun between three, 
 "Flat and wide is a square."  
 "Go and do your own one."  
 Ruth goes and does her own one. Chloe watches her go without saying anything, mostly because she can't work out fast enough whether Ruth is right. By the time she has it, Sam has already started gluing.  
-Their bridge takes an hour and forty minutes and looks better than Ruth's. It is flat, wide, every joint on it neat. Two of the groups, of which Owen's is one, don't get across the eighteen inches at all before the session ends, and Mr. Doyle tells them to leave it where it is and come back to it.  
+Their bridge takes an hour and forty minutes and looks better than Ruth's, flat, wide, every joint on it neat. Two of the groups, of which Owen's is one, don't get across the eighteen inches at all before the session ends, and Mr. Doyle tells them to leave it where it is and come back to it.  
 Before any of it gets loaded they have to write down what they think it'll hold. Chloe writes fourteen. Sam wants to write a hundred and gets told it has to be a real number, so he writes twenty-five. Ruth writes hers with one hand over it.  
 On the Tuesday they hang a bucket off the middle of each one and put weights in a pound at a time, and the whole room counts out loud together. One goes at three, which gets a laugh from the group it belongs to. Two more go before eight. Theirs goes at eleven and folds, sideways, all at once, the way Ruth pushed the square over with one finger, rather than snapping. Ruth's holds nineteen and then does snap, and half the room makes a noise about it.  
 "I told you," Ruth says, not looking at anyone in particular.  
