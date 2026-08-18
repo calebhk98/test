@@ -8,8 +8,9 @@ from dataclasses import dataclass, field
 from datetime import date, timedelta
 from typing import Any, Dict, Iterable, List, Optional
 
-from . import db
+from . import db, fueleconomy, nhtsa
 from .config import Config, get_secret
+from .fueleconomy import combined_from_city_highway
 from .marketcheck import MarketCheckClient, MarketCheckError, QuotaExceeded
 from .scoring import normalize, score_listing
 
@@ -29,6 +30,7 @@ class RunResult:
     api_monthly_cap: int = 500
     errors: List[str] = field(default_factory=list)
     filter_reasons: Dict[str, int] = field(default_factory=dict)
+    enrichment: Dict[str, Any] = field(default_factory=dict)
 
     def as_dict(self) -> Dict[str, Any]:
         return {
@@ -43,6 +45,7 @@ class RunResult:
             "api_monthly_cap": self.api_monthly_cap,
             "errors": self.errors,
             "filter_reasons": self.filter_reasons,
+            "enrichment": self.enrichment,
         }
 
 
@@ -66,6 +69,11 @@ def normalize_listing(raw: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         "trim": build.get("trim") or raw.get("trim"),
         "body_type": build.get("body_type"),
         "fuel_type": build.get("fuel_type"),
+        "city_mpg": _as_int(build.get("city_mpg")),
+        "highway_mpg": _as_int(build.get("highway_mpg")),
+        "combined_mpg": combined_from_city_highway(
+            _as_int(build.get("city_mpg")), _as_int(build.get("highway_mpg"))
+        ),
         "mileage": _as_int(miles),
         "price_current": _as_int(price),
         "dealer_name": dealer.get("name"),
@@ -182,6 +190,7 @@ def run_daily(
                 result.errors.append(f"certified pass skipped: {exc}")
 
         seen_vins: set[str] = set()
+        candidates: List[Dict[str, Any]] = []
         for raw in raw_listings:
             result.fetched += 1
             listing = normalize_listing(raw)
@@ -197,7 +206,16 @@ def run_daily(
                 result.filtered_out += 1
                 continue
             seen_vins.add(listing["vin"])
+            candidates.append(listing)
 
+        # NHTSA complaints/recalls and EPA MPG — free, keyless, cached per model-year.
+        try:
+            result.enrichment = enrich_listings(config, conn, candidates)
+        except Exception as exc:  # enrichment must never break the daily job
+            LOG.warning("Enrichment skipped: %s", exc)
+            result.errors.append(f"enrichment skipped: {exc}")
+
+        for listing in candidates:
             existing = db.get_listing(conn, listing["vin"])
             listing["price_first_seen"] = (
                 existing.get("price_first_seen") if existing else listing.get("price_current")
@@ -248,7 +266,7 @@ def rescore_all(config: Config, conn: Optional[sqlite3.Connection] = None) -> in
     rows = conn.execute("SELECT * FROM listings").fetchall()
     count = 0
     for row in rows:
-        listing = db.row_to_dict(row)
+        listing = attach_cached_enrichment(conn, db.row_to_dict(row))
         result = score_listing(listing, config.scoring)
         conn.execute(
             "UPDATE listings SET score = ?, score_breakdown = ? WHERE vin = ?",
@@ -259,3 +277,71 @@ def rescore_all(config: Config, conn: Optional[sqlite3.Connection] = None) -> in
     if owns_conn:
         conn.close()
     return count
+
+
+# --- enrichment (NHTSA reliability, EPA fuel economy) --------------------
+def attach_cached_enrichment(conn: sqlite3.Connection, listing: Dict[str, Any]) -> Dict[str, Any]:
+    """Attach cached NHTSA/EPA facts to a listing dict. Reads the DB only, never the network."""
+    make, model, year = listing.get("make"), listing.get("model"), listing.get("year")
+    if not (make and model and year):
+        return listing
+    facts = db.get_reliability(conn, make, model, year)
+    if facts:
+        listing["complaint_count"] = facts.get("complaint_count")
+        listing["recall_count"] = facts.get("recall_count")
+        listing["top_complaint_components"] = facts.get("top_components")
+        listing["nhtsa_fetched_at"] = facts.get("fetched_at")
+    if not listing.get("combined_mpg"):
+        mpg = db.get_mpg(conn, make, model, year)
+        if mpg:
+            listing.setdefault("city_mpg", mpg.get("city_mpg"))
+            listing.setdefault("highway_mpg", mpg.get("highway_mpg"))
+            listing["combined_mpg"] = mpg.get("combined_mpg")
+            listing["mpg_source"] = mpg.get("source")
+    return listing
+
+
+def enrich_listings(
+    config: Config,
+    conn: sqlite3.Connection,
+    listings: List[Dict[str, Any]],
+    nhtsa_client: Optional[nhtsa.NHTSAClient] = None,
+    mpg_client: Optional[fueleconomy.FuelEconomyClient] = None,
+    force_refresh: bool = False,
+) -> Dict[str, Any]:
+    """Fetch NHTSA complaints/recalls (and EPA MPG where missing) for every model-year seen.
+
+    Both services are free and keyless, and results are cached per model-year, so this costs
+    a handful of requests on the first run and almost nothing afterwards. Failures are logged
+    and swallowed: enrichment never breaks the daily job.
+    """
+    enrichment_config = config.data.get("enrichment", {})
+    summary: Dict[str, Any] = {"nhtsa": None, "mpg": None}
+
+    model_years: Dict[tuple, Dict[str, Any]] = {}
+    for listing in listings:
+        make, model, year = listing.get("make"), listing.get("model"), listing.get("year")
+        if make and model and year:
+            model_years.setdefault((str(make).lower(), str(model).lower(), int(year)),
+                                   {"make": make, "model": model, "year": year})
+    work = list(model_years.values())[: int(enrichment_config.get("max_models_per_run", 40))]
+
+    if enrichment_config.get("nhtsa_enabled", True) and work:
+        client = nhtsa_client or nhtsa.NHTSAClient(conn, enrichment_config)
+        summary["nhtsa"] = nhtsa.enrich_models(conn, work, enrichment_config, client, force_refresh)
+
+    if enrichment_config.get("epa_mpg_enabled", True):
+        missing = [
+            entry for key, entry in model_years.items()
+            if not any(
+                l.get("combined_mpg") for l in listings
+                if (str(l.get("make", "")).lower(), str(l.get("model", "")).lower(), int(l.get("year") or 0)) == key
+            )
+        ][: int(enrichment_config.get("max_models_per_run", 40))]
+        if missing:
+            client = mpg_client or fueleconomy.FuelEconomyClient(conn, enrichment_config)
+            summary["mpg"] = fueleconomy.enrich_models(conn, missing, enrichment_config, client, force_refresh)
+
+    for listing in listings:
+        attach_cached_enrichment(conn, listing)
+    return summary

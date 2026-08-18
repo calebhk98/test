@@ -130,6 +130,10 @@ class RunDailyTests(unittest.TestCase):
         self.config.data["paths"]["digest_dir"] = str(self.tmp / "digests")
         self.config.data["search"]["include_certified_search"] = False
         self.config.data["search"]["max_pages"] = 1
+        # No test touches the network: NHTSA/EPA enrichment is exercised in test_enrichment.py
+        # with injected fake sessions instead.
+        self.config.data["enrichment"]["nhtsa_enabled"] = False
+        self.config.data["enrichment"]["epa_mpg_enabled"] = False
         self.conn = db.init_db(self.config.db_path)
 
     def tearDown(self):

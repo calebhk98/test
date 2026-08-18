@@ -9,6 +9,7 @@ from typing import Any, Dict, List, Optional
 
 from . import db
 from .config import Config
+from .pipeline import attach_cached_enrichment
 from .sources import build_sources
 
 
@@ -28,16 +29,39 @@ def _title(listing: Dict[str, Any]) -> str:
     return " ".join(p for p in parts if p).strip() or listing.get("vin", "unknown")
 
 
+def _reliability_note(listing: Dict[str, Any]) -> str:
+    """Compact NHTSA note, e.g. 'NHTSA: 878 complaints / 4 recalls (top: STEERING)'."""
+    complaints = listing.get("complaint_count")
+    recalls = listing.get("recall_count")
+    if complaints is None and recalls is None:
+        return ""
+    parts = []
+    if complaints is not None:
+        parts.append(f"{complaints:,} complaints")
+    if recalls is not None:
+        parts.append(f"{recalls} recalls")
+    top = listing.get("top_complaint_components") or []
+    if isinstance(top, list) and top and isinstance(top[0], (list, tuple)) and top[0]:
+        parts.append(f"top: {top[0][0]}")
+    return "NHTSA: " + " / ".join(parts)
+
+
 def _line(listing: Dict[str, Any], extra: str = "") -> str:
     bits = [
         f"**{_title(listing)}** — score **{listing.get('score', 0):+.2f}**",
         f"{_money(listing.get('price_current'))} · {_miles(listing.get('mileage'))}",
     ]
+    mpg = listing.get("combined_mpg")
+    if mpg:
+        bits.append(f"{float(mpg):.0f} mpg")
     distance = listing.get("distance_miles")
     if distance is not None:
         bits.append(f"{distance:.0f} mi away")
     if listing.get("cpo"):
         bits.append("**CPO**")
+    note = _reliability_note(listing)
+    if note:
+        bits.append(note)
     dealer = listing.get("dealer_name")
     if dealer:
         city = listing.get("dealer_city") or ""
@@ -82,9 +106,9 @@ def render_digest(
     new_limit = int(digest_config.get("new_listing_limit", 15))
     drop_limit = int(digest_config.get("price_drop_limit", 15))
 
-    new_listings = db.new_listings_since(conn, since, new_limit)
-    drops = db.price_drops_since(conn, since, drop_limit)
-    top = db.search_listings(conn, sort="score", limit=top_n)
+    new_listings = [attach_cached_enrichment(conn, l) for l in db.new_listings_since(conn, since, new_limit)]
+    drops = [attach_cached_enrichment(conn, l) for l in db.price_drops_since(conn, since, drop_limit)]
+    top = [attach_cached_enrichment(conn, l) for l in db.search_listings(conn, sort="score", limit=top_n)]
     stats = db.stats(conn, int(config.api.get("monthly_call_cap", 500)))
 
     search = config.search
@@ -135,11 +159,26 @@ def render_digest(
         f"- MarketCheck calls this month: **{stats['api_calls_this_month']} / {stats['api_monthly_cap']}** "
         f"({stats['api_calls_remaining']} left)."
     )
+    covered = conn.execute("SELECT COUNT(*) AS n FROM model_reliability").fetchone()["n"]
+    if covered:
+        lines.append(
+            f"- NHTSA complaint/recall data cached for **{covered}** model-year(s) "
+            "(free federal data; counts are not sales-volume adjusted, so treat recurring "
+            "components as the stronger signal)."
+        )
     if run_result:
         lines.append(
             f"- This run: fetched {run_result.get('fetched', 0)}, kept {run_result.get('kept', 0)}, "
             f"filtered out {run_result.get('filtered_out', 0)}, API calls {run_result.get('api_calls', 0)}."
         )
+        enrichment = run_result.get("enrichment") or {}
+        nhtsa_summary = enrichment.get("nhtsa") or {}
+        mpg_summary = enrichment.get("mpg") or {}
+        if nhtsa_summary or mpg_summary:
+            lines.append(
+                f"- Free data lookups: NHTSA {nhtsa_summary.get('api_calls', 0)} call(s), "
+                f"EPA MPG {mpg_summary.get('api_calls', 0)} call(s) — neither counts against MarketCheck."
+            )
         for error in run_result.get("errors") or []:
             lines.append(f"- ⚠️ {error}")
     lines.append("")

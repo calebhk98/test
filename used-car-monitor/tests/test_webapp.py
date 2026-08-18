@@ -59,7 +59,11 @@ class WebAppTestCase(unittest.TestCase):
         self.assertEqual(self.config.db_path, self.db_path)
 
         conn = db.init_db(self.config.db_path)
-        db.upsert_listing(conn, _make_listing("VIN000000000A001"), seen_date="2026-08-10")
+        db.upsert_listing(
+            conn,
+            _make_listing("VIN000000000A001", city_mpg=31, highway_mpg=40, combined_mpg=34.8),
+            seen_date="2026-08-10",
+        )
         db.upsert_listing(conn, _make_listing("VIN000000000A001", price_current=17999), seen_date="2026-08-17")
         db.upsert_listing(
             conn,
@@ -71,6 +75,43 @@ class WebAppTestCase(unittest.TestCase):
                 score_breakdown=[{"label": "preferred_model", "value": 2.0, "detail": "Honda Civic"}],
             ),
             seen_date="2026-08-18",
+        )
+
+        # -- cached NHTSA reliability + EPA MPG data (seeded directly, no network) --
+        db.save_reliability(
+            conn,
+            "Toyota",
+            "Corolla",
+            2022,
+            {
+                "complaint_count": 42,
+                "recall_count": 2,
+                "crash_complaints": 3,
+                "fire_complaints": 0,
+                "injuries": 1,
+                "deaths": 0,
+                "top_components": [["ENGINE", 20], ["ELECTRICAL SYSTEM", 12]],
+                "recalls": [
+                    {
+                        "campaign": "22V123000",
+                        "component": "ENGINE",
+                        "summary": "Engine may stall.",
+                        "consequence": "Increases crash risk.",
+                        "remedy": "Dealer will replace the engine control module.",
+                        "report_date": "2022-05-01",
+                        "park_it": False,
+                        "park_outside": False,
+                    }
+                ],
+                "source": "nhtsa",
+            },
+        )
+        db.save_mpg(
+            conn,
+            "Toyota",
+            "Corolla",
+            2022,
+            {"city_mpg": 31, "highway_mpg": 40, "combined_mpg": 34.8, "matched_name": "Corolla LE", "source": "fueleconomy.gov"},
         )
         conn.close()
 
@@ -157,6 +198,53 @@ class WebAppTestCase(unittest.TestCase):
         self.assertEqual(top["listings"][0]["vin"], "VIN000000000A001")
         self.assertEqual(top["count"], len(top["listings"]))
 
+    def test_reliability_detail_endpoint(self):
+        data = self._get_json("/api/reliability/Toyota/Corolla/2022")
+        self.assertEqual(data["complaint_count"], 42)
+        self.assertEqual(data["recall_count"], 2)
+        self.assertIn("nhtsa_url", data)
+        self.assertIn("nhtsa.gov", data["nhtsa_url"])
+
+    def test_reliability_detail_unknown_model_404(self):
+        data = self._get_json("/api/reliability/Yugo/GV/1985", expect_status=404)
+        self.assertIn("error", data)
+        self.assertIn("carmon enrich", data["error"])
+
+    def test_reliability_list_endpoint(self):
+        data = self._get_json("/api/reliability")
+        self.assertGreaterEqual(data["count"], 1)
+        # model_reliability keys are stored lower-cased (see db._model_key); lookups by
+        # /api/reliability/<make>/... are case-insensitive but this listing endpoint
+        # reflects the table's own casing.
+        makes = [m["make"] for m in data["models"]]
+        self.assertIn("toyota", makes)
+
+    def test_listing_detail_json_includes_nhtsa_fields(self):
+        data = self._get_json("/api/listings/VIN000000000A001")
+        self.assertEqual(data["complaint_count"], 42)
+        self.assertEqual(data["recall_count"], 2)
+        self.assertIn("nhtsa_vin_url", data)
+        self.assertIn("nhtsa_model_url", data)
+
+    def test_listings_max_complaints_filter(self):
+        # Toyota Corolla has 42 cached complaints -- capping below that drops it, but the
+        # Honda Civic (no cached NHTSA data at all) must survive since unknown != bad.
+        data = self._get_json("/api/listings?max_complaints=10")
+        vins = [item["vin"] for item in data["listings"]]
+        self.assertNotIn("VIN000000000A001", vins)
+        self.assertIn("VIN000000000B002", vins)
+        self.assertEqual(data["filters"]["max_complaints"], 10)
+
+    def test_listings_max_recalls_filter(self):
+        data = self._get_json("/api/listings?max_recalls=0")
+        vins = [item["vin"] for item in data["listings"]]
+        self.assertNotIn("VIN000000000A001", vins)
+        self.assertIn("VIN000000000B002", vins)
+
+    def test_listings_max_complaints_invalid_400(self):
+        data = self._get_json("/api/listings?max_complaints=abc", expect_status=400)
+        self.assertIn("error", data)
+
     def test_sources_and_config_and_runs(self):
         sources = self._get_json("/api/sources")
         self.assertIn("categories", sources)
@@ -193,12 +281,21 @@ class WebAppTestCase(unittest.TestCase):
         text = body.decode("utf-8")
         self.assertIn("VIN000000000A001", text)
         self.assertIn("Toyota", text)
+        self.assertIn("<th>MPG</th>", text)
+        self.assertIn("<th>NHTSA</th>", text)
+        self.assertIn("34.8", text)  # combined_mpg for the Corolla row
+        self.assertIn("42 / 2", text)  # complaints / recalls for the Corolla row
+        self.assertIn("Model-years with NHTSA data", text)
 
     def test_listing_detail_html_has_score_breakdown(self):
         status, body = self._get("/listing/VIN000000000A001")
         self.assertEqual(status, 200)
         text = body.decode("utf-8")
         self.assertIn("Toyota Corolla is a preferred model", text)
+        self.assertIn("Reliability (NHTSA)", text)
+        self.assertIn("22V123000", text)  # recall campaign number
+        self.assertIn("ENGINE", text)  # top complaint component
+        self.assertIn("not adjusted for sales volume", text)  # volume caveat
 
     def test_listing_detail_html_unknown_vin_404(self):
         status, body = self._get("/listing/NOSUCHVIN")

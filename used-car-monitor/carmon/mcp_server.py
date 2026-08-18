@@ -67,8 +67,11 @@ def _tool_defs() -> List[Dict[str, Any]]:
             "name": "search_listings",
             "description": (
                 "Search the used-car listings database with filters on make, model, price, "
-                "mileage, year, distance, score, CPO status, and free-text query. Returns a "
-                "list of matching listings sorted as requested."
+                "mileage, year, distance, score, CPO status, free-text query, and cached NHTSA "
+                "complaint/recall counts (max_complaints, max_recalls — free federal data, raw "
+                "and not sales-volume adjusted; listings with no cached NHTSA data are kept, "
+                "never excluded, since unknown is not the same as bad). Returns a list of "
+                "matching listings sorted as requested."
             ),
             "inputSchema": {
                 "type": "object",
@@ -81,6 +84,25 @@ def _tool_defs() -> List[Dict[str, Any]]:
                     "min_year": {"type": "integer", "description": "Minimum model year."},
                     "max_distance": {"type": "number", "description": "Maximum distance from home in miles."},
                     "min_score": {"type": "number", "description": "Minimum computed score."},
+                    "max_complaints": {
+                        "type": "integer",
+                        "description": (
+                            "Only include listings whose model year has at most this many cached NHTSA "
+                            "consumer complaints (free federal data, raw counts, NOT sales-volume "
+                            "adjusted). Applied as a post-filter over the cached reliability data. "
+                            "Listings with no cached NHTSA data are KEPT, not excluded — unknown is not "
+                            "treated as bad. Use 'refresh_reliability' first if a model you care about "
+                            "has never been looked up."
+                        ),
+                    },
+                    "max_recalls": {
+                        "type": "integer",
+                        "description": (
+                            "Only include listings whose model year has at most this many cached NHTSA "
+                            "recall campaigns (free federal data). Listings with no cached NHTSA data "
+                            "are KEPT, not excluded — unknown is not treated as bad."
+                        ),
+                    },
                     "cpo_only": {"type": "boolean", "description": "If true, only Certified Pre-Owned listings.", "default": False},
                     "active_only": {"type": "boolean", "description": "If true (default), only currently active listings.", "default": True},
                     "query": {"type": "string", "description": "Free-text search across make, model, trim, dealer name, and VIN."},
@@ -99,8 +121,12 @@ def _tool_defs() -> List[Dict[str, Any]]:
         {
             "name": "get_listing",
             "description": (
-                "Fetch a single listing by VIN, including its price history and cross-shopping "
-                "links to other sites where the same car could be searched for."
+                "Fetch a single listing by VIN, including its price history, cross-shopping "
+                "links to other sites where the same car could be searched for, and any cached "
+                "NHTSA reliability data (consumer complaint / recall counts, free federal data — "
+                "raw and NOT sales-volume adjusted) and EPA MPG for its model year. Also returns "
+                "nhtsa_vin_url and nhtsa_model_url, direct NHTSA.gov links for a human to check "
+                "unrepaired recalls on this exact VIN."
             ),
             "inputSchema": {
                 "type": "object",
@@ -179,7 +205,11 @@ def _tool_defs() -> List[Dict[str, Any]]:
             "description": (
                 "Explain why a specific listing (by VIN) received its score: returns both the "
                 "score breakdown stored in the database and a freshly recomputed explanation "
-                "using the current scoring configuration."
+                "using the current scoring configuration. The recomputed explanation attaches "
+                "cached fuel-economy and NHTSA reliability data (free federal complaint/recall "
+                "data, raw counts, not sales-volume adjusted) first, so its 'fuel economy', "
+                "'NHTSA complaints', and 'NHTSA recalls' components reflect real data instead "
+                "of showing as unknown."
             ),
             "inputSchema": {
                 "type": "object",
@@ -195,18 +225,38 @@ def _tool_defs() -> List[Dict[str, Any]]:
             "description": (
                 "Score a hypothetical car that is not (yet) in the database, using the current "
                 "scoring configuration. Useful for questions like 'would a 2022 Civic with "
-                "45k miles, 70 miles away, score well?'."
+                "45k miles, 70 miles away, score well?' or for modeling a car end-to-end with "
+                "known fuel economy and NHTSA reliability figures (complaint/recall counts are "
+                "free federal data — raw counts, NOT adjusted for sales volume, so pass them "
+                "only if you already have them, e.g. from 'get_reliability')."
             ),
             "inputSchema": {
                 "type": "object",
                 "properties": {
                     "make": {"type": "string", "description": "Vehicle make, e.g. 'Honda'."},
                     "model": {"type": "string", "description": "Vehicle model, e.g. 'Civic'."},
+                    "year": {"type": "integer", "description": "Model year, e.g. 2022. Used for the 'model year' scoring component."},
                     "mileage": {"type": "integer", "description": "Odometer mileage."},
                     "distance_miles": {"type": "number", "description": "Distance from home in miles."},
                     "price_current": {"type": "integer", "description": "Current asking price in dollars."},
                     "price_first_seen": {"type": "integer", "description": "Original asking price in dollars, if different from price_current (for price-drop scoring)."},
                     "cpo": {"type": "boolean", "description": "Whether the vehicle is Certified Pre-Owned.", "default": False},
+                    "combined_mpg": {"type": "number", "description": "EPA combined miles per gallon, if known, for the 'fuel economy' scoring component."},
+                    "complaint_count": {
+                        "type": "integer",
+                        "description": (
+                            "Cached NHTSA consumer complaint count for this model year, if known "
+                            "(free federal data, raw count, not sales-volume adjusted), for the "
+                            "'NHTSA complaints' scoring component."
+                        ),
+                    },
+                    "recall_count": {
+                        "type": "integer",
+                        "description": (
+                            "Cached NHTSA recall campaign count for this model year, if known "
+                            "(free federal data), for the 'NHTSA recalls' scoring component."
+                        ),
+                    },
                 },
                 "additionalProperties": False,
             },
@@ -219,6 +269,83 @@ def _tool_defs() -> List[Dict[str, Any]]:
                 "by category, built from the current search configuration."
             ),
             "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
+        },
+        {
+            "name": "get_reliability",
+            "description": (
+                "Look up cached NHTSA reliability data for one make/model/year: consumer-filed "
+                "defect complaints and manufacturer recall campaigns. This is free federal data "
+                "from api.nhtsa.gov (no API key, no cost) — the same data every third-party "
+                "reliability site repackages. Complaint and recall counts are RAW totals, NOT "
+                "adjusted for how many of that model were sold, so a high-volume model naturally "
+                "racks up more complaints than a rare one; the recurring complaint *components* "
+                "(top_components) are a stronger signal than the raw count. This tool only reads "
+                "what is already cached in the database and never hits the network — if nothing "
+                "is cached yet it returns an error telling you to run `python3 -m carmon enrich` "
+                "or call the 'refresh_reliability' tool."
+            ),
+            "inputSchema": {
+                "type": "object",
+                "properties": {
+                    "make": {"type": "string", "description": "Vehicle make, e.g. 'Honda'."},
+                    "model": {"type": "string", "description": "Vehicle model, e.g. 'Civic'."},
+                    "year": {"type": "integer", "description": "Model year, e.g. 2022."},
+                },
+                "required": ["make", "model", "year"],
+                "additionalProperties": False,
+            },
+        },
+        {
+            "name": "refresh_reliability",
+            "description": (
+                "Fetch fresh NHTSA consumer complaint and recall data for one make/model/year "
+                "directly from api.nhtsa.gov (free federal data, no API key needed) and cache it "
+                "in the database. This is the ONLY tool on this server that makes a live network "
+                "call — every other tool reads the local database. Complaint and recall counts "
+                "returned are RAW totals, NOT adjusted for sales volume, so a high-volume model "
+                "naturally shows more complaints than a rare one; the recurring complaint "
+                "components are the stronger signal. Prefer calling 'get_reliability' first to "
+                "check whether the data is already cached before spending a network call here."
+            ),
+            "inputSchema": {
+                "type": "object",
+                "properties": {
+                    "make": {"type": "string", "description": "Vehicle make, e.g. 'Honda'."},
+                    "model": {"type": "string", "description": "Vehicle model, e.g. 'Civic'."},
+                    "year": {"type": "integer", "description": "Model year, e.g. 2022."},
+                    "force": {
+                        "type": "boolean",
+                        "description": "Refetch from NHTSA even if a still-fresh cached entry already exists.",
+                        "default": False,
+                    },
+                },
+                "required": ["make", "model", "year"],
+                "additionalProperties": False,
+            },
+        },
+        {
+            "name": "list_reliability",
+            "description": (
+                "List every make/model/year currently cached with NHTSA reliability data (free "
+                "federal consumer complaint and recall data from api.nhtsa.gov), sorted by "
+                "complaint count descending. Counts are raw and NOT adjusted for sales volume, "
+                "so this is a 'what has been looked up, and how loud is it' view rather than a "
+                "ranked reliability score — check top_components on each row for the recurring, "
+                "more meaningful signal."
+            ),
+            "inputSchema": {
+                "type": "object",
+                "properties": {
+                    "limit": {
+                        "type": "integer",
+                        "description": "Max number of cached model/year rows to return (default 25).",
+                        "default": 25,
+                        "minimum": 1,
+                        "maximum": 500,
+                    },
+                },
+                "additionalProperties": False,
+            },
         },
     ]
 
@@ -383,6 +510,10 @@ class MCPServer:
             raise ToolError(
                 f"Invalid sort '{sort}'. Must be one of: {', '.join(sorted(dbmod.SORTABLE))}"
             )
+        max_complaints = _opt_int(args.get("max_complaints"))
+        max_recalls = _opt_int(args.get("max_recalls"))
+        # Fetch a bit more than requested when post-filtering by NHTSA data, since some
+        # rows may be dropped; db-level limit/offset still apply to the base query.
         rows = dbmod.search_listings(
             self.conn,
             make=args.get("make") or None,
@@ -400,6 +531,20 @@ class MCPServer:
             limit=limit,
             offset=offset,
         )
+        if max_complaints is not None or max_recalls is not None:
+            filtered = []
+            for row in rows:
+                row = self._attach_enrichment(row)
+                complaints = row.get("complaint_count")
+                recalls = row.get("recall_count")
+                # No cached NHTSA data (None) means "unknown", which is kept rather
+                # than excluded — unknown is not the same as bad.
+                if max_complaints is not None and complaints is not None and complaints > max_complaints:
+                    continue
+                if max_recalls is not None and recalls is not None and recalls > max_recalls:
+                    continue
+                filtered.append(row)
+            rows = filtered
         return _text_result({"count": len(rows), "listings": rows})
 
     def _t_get_listing(self, args: Dict[str, Any]) -> Dict[str, Any]:
@@ -407,12 +552,25 @@ class MCPServer:
         listing = dbmod.get_listing(self.conn, vin)
         if listing is None:
             return _text_result(f"No listing found with VIN '{vin}'.", is_error=True, as_json=False)
+        listing = self._attach_enrichment(listing)
         history = dbmod.get_price_history(self.conn, vin)
         cross_shop = sourcesmod.sources_for_listing(listing, self.config.search)
+        nhtsa_vin_url = None
+        nhtsa_model_url = None
+        try:
+            from .nhtsa import recall_lookup_url, vin_recall_url  # lazy: keeps module load light
+        except ImportError:
+            pass
+        else:
+            nhtsa_vin_url = vin_recall_url(vin)
+            if listing.get("make") and listing.get("model") and listing.get("year"):
+                nhtsa_model_url = recall_lookup_url(listing["make"], listing["model"], listing["year"])
         return _text_result({
             "listing": listing,
             "price_history": history,
             "cross_shop_links": cross_shop,
+            "nhtsa_vin_url": nhtsa_vin_url,
+            "nhtsa_model_url": nhtsa_model_url,
         })
 
     def _t_get_price_history(self, args: Dict[str, Any]) -> Dict[str, Any]:
@@ -462,6 +620,7 @@ class MCPServer:
         listing = dbmod.get_listing(self.conn, vin)
         if listing is None:
             return _text_result(f"No listing found with VIN '{vin}'.", is_error=True, as_json=False)
+        listing = self._attach_enrichment(listing)
         recomputed = scoringmod.score_listing(listing, self.config.scoring)
         return _text_result({
             "vin": vin,
@@ -475,11 +634,15 @@ class MCPServer:
         listing = {
             "make": args.get("make") or "",
             "model": args.get("model") or "",
+            "year": _opt_int(args.get("year")),
             "mileage": _opt_number(args.get("mileage")),
             "distance_miles": _opt_number(args.get("distance_miles")),
             "price_current": _opt_number(args.get("price_current")),
             "price_first_seen": _opt_number(args.get("price_first_seen")),
             "cpo": bool(args.get("cpo", False)),
+            "combined_mpg": _opt_number(args.get("combined_mpg")),
+            "complaint_count": _opt_int(args.get("complaint_count")),
+            "recall_count": _opt_int(args.get("recall_count")),
         }
         result = scoringmod.score_listing(listing, self.config.scoring)
         return _text_result({
@@ -491,6 +654,72 @@ class MCPServer:
     def _t_list_sources(self, args: Dict[str, Any]) -> Dict[str, Any]:
         grouped = sourcesmod.grouped_sources(self.config.search)
         return _text_result({"sources": grouped})
+
+    def _t_get_reliability(self, args: Dict[str, Any]) -> Dict[str, Any]:
+        make = _require_str(args, "make")
+        model = _require_str(args, "model")
+        year = _require_int(args, "year")
+        record = dbmod.get_reliability(self.conn, make, model, year)
+        if record is None:
+            return _text_result(
+                f"No cached NHTSA reliability data for {year} {make} {model}. Run "
+                "`python3 -m carmon enrich` to populate the cache for current listings, or "
+                "call the 'refresh_reliability' tool to fetch just this model/year now.",
+                is_error=True,
+                as_json=False,
+            )
+        record = dict(record)
+        record["nhtsa_url"] = self._nhtsa_model_url(make, model, year)
+        record["caveat"] = (
+            "Complaint and recall counts are raw federal totals from NHTSA, NOT adjusted for "
+            "how many of this model were sold — a high-volume model naturally accumulates more "
+            "complaints than a rare one. The recurring complaint components (top_components) "
+            "are a stronger signal than the raw counts."
+        )
+        return _text_result(record)
+
+    def _t_refresh_reliability(self, args: Dict[str, Any]) -> Dict[str, Any]:
+        make = _require_str(args, "make")
+        model = _require_str(args, "model")
+        year = _require_int(args, "year")
+        force = bool(args.get("force", False))
+        try:
+            from .nhtsa import NHTSAClient, NHTSAError  # lazy: this is the one network-calling tool
+        except ImportError as exc:
+            return _text_result(f"NHTSA client is not available: {exc}", is_error=True, as_json=False)
+
+        enrichment_config = self.config.data.get("enrichment", {})
+        client = NHTSAClient(self.conn, enrichment_config)
+        try:
+            facts = client.facts_for(make, model, year, force_refresh=force)
+        except NHTSAError as exc:
+            return _text_result(
+                f"NHTSA lookup failed for {year} {make} {model}: {exc}", is_error=True, as_json=False
+            )
+        except Exception as exc:  # noqa: BLE001 - network calls can fail in many ways
+            return _text_result(
+                f"NHTSA lookup failed for {year} {make} {model}: {exc}", is_error=True, as_json=False
+            )
+        if facts is None:
+            return _text_result(
+                f"Could not fetch NHTSA data for {year} {make} {model}: the request failed and "
+                "nothing was already cached.",
+                is_error=True,
+                as_json=False,
+            )
+        result = dict(facts)
+        result["nhtsa_url"] = self._nhtsa_model_url(make, model, year)
+        result["api_calls_made"] = client.calls_made
+        return _text_result(result)
+
+    def _t_list_reliability(self, args: Dict[str, Any]) -> Dict[str, Any]:
+        limit = _as_int(args.get("limit", 25), "limit", default=25)
+        limit = max(1, min(limit, 500))
+        rows = self.conn.execute(
+            "SELECT * FROM model_reliability ORDER BY complaint_count DESC LIMIT ?", (limit,)
+        ).fetchall()
+        models = [self._reliability_row_to_dict(row) for row in rows]
+        return _text_result({"count": len(models), "models": models})
 
     _TOOL_HANDLERS = {
         "search_listings": _t_search_listings,
@@ -504,9 +733,40 @@ class MCPServer:
         "explain_score": _t_explain_score,
         "score_hypothetical": _t_score_hypothetical,
         "list_sources": _t_list_sources,
+        "get_reliability": _t_get_reliability,
+        "refresh_reliability": _t_refresh_reliability,
+        "list_reliability": _t_list_reliability,
     }
 
     # -- helpers -----------------------------------------------------------
+    def _attach_enrichment(self, listing: Dict[str, Any]) -> Dict[str, Any]:
+        """Attach cached NHTSA/EPA facts to a listing dict, DB-only, never the network."""
+        try:
+            from .pipeline import attach_cached_enrichment  # lazy: optional heavier dependency chain
+        except ImportError:
+            return listing
+        try:
+            return attach_cached_enrichment(self.conn, listing)
+        except Exception:  # noqa: BLE001 - enrichment is a bonus, never fail the tool over it
+            return listing
+
+    def _nhtsa_model_url(self, make: str, model: str, year: int) -> Optional[str]:
+        try:
+            from .nhtsa import recall_lookup_url  # lazy: same optional dependency chain
+        except ImportError:
+            return None
+        return recall_lookup_url(make, model, year)
+
+    def _reliability_row_to_dict(self, row: Any) -> Dict[str, Any]:
+        data = dict(row)
+        for field_name in ("top_components", "recalls"):
+            if isinstance(data.get(field_name), str) and data[field_name]:
+                try:
+                    data[field_name] = json.loads(data[field_name])
+                except json.JSONDecodeError:
+                    data[field_name] = None
+        return data
+
     def _latest_digest_text(self) -> str:
         try:
             from .digest import latest_digest_path  # lazy import: digest.py may not exist yet
@@ -537,6 +797,16 @@ def _require_str(args: Dict[str, Any], key: str) -> str:
     if not isinstance(value, str) or not value.strip():
         raise ToolError(f"'{key}' is required and must be a non-empty string")
     return value.strip()
+
+
+def _require_int(args: Dict[str, Any], key: str) -> int:
+    value = args.get(key)
+    if value is None or value == "":
+        raise ToolError(f"'{key}' is required and must be an integer")
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        raise ToolError(f"'{key}' must be an integer")
 
 
 def _as_int(value: Any, name: str, default: int) -> int:

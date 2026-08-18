@@ -42,6 +42,11 @@ CATEGORIES = {
         "Marketplace aggregators — the widest view of the market; CarGurus adds a deal rating "
         "(great/good/fair/overpriced) versus comparable national listings."
     ),
+    "reliability": (
+        "Reliability, repair-cost and owner-review research. NHTSA is the only one of these the "
+        "monitor actually queries (free, keyless, and already folded into every score); the rest "
+        "have no public API and are browsing links."
+    ),
 }
 
 
@@ -137,6 +142,44 @@ def build_sources(search_config: Dict[str, Any]) -> List[Source]:
             "Broad dealer coverage plus dealer reviews and price-history badges.",
             adapter="stub",
         ),
+        # --- reliability / repair cost / owner reviews --------------------
+        Source(
+            "nhtsa_recalls", "NHTSA Recalls & Complaints", "reliability",
+            "https://www.nhtsa.gov/recalls",
+            "Free federal data, no API key — and the monitor already pulls it: complaint counts, "
+            "recurring components and recall campaigns feed every score. Look up a specific VIN here.",
+            adapter="built-in",
+        ),
+        Source(
+            "repairpal", "RepairPal reliability & repair cost", "reliability",
+            "https://repairpal.com/reliability",
+            "Average annual repair cost, shop-visit frequency and repair-severity rating. "
+            "No public API — human browsing only, so this stays a link (see SOURCES.md).",
+            adapter="stub",
+        ),
+        Source(
+            "edmunds_reviews", "Edmunds consumer reviews", "reliability",
+            "https://www.edmunds.com/car-reviews/",
+            "Owner reviews and long-term road tests. Edmunds' API is partner/business-only, "
+            "not self-serve, so there is no supported programmatic path.",
+        ),
+        Source(
+            "kbb_reviews", "Kelley Blue Book owner reviews & values", "reliability",
+            "https://www.kbb.com/car-reviews-and-ratings/",
+            "Owner ratings plus KBB values — useful for sanity-checking asking prices. No public API.",
+        ),
+        Source(
+            "cars_com_reviews", "Cars.com owner reviews", "reliability",
+            "https://www.cars.com/research/",
+            "Owner reviews aggregated per model-year. No public API.",
+        ),
+        Source(
+            "fueleconomy_gov", "EPA fueleconomy.gov", "reliability",
+            "https://www.fueleconomy.gov/feg/findacar.shtml",
+            "Official EPA MPG ratings and fuel-cost estimates. Free, keyless API — the monitor "
+            "uses it to fill in MPG whenever MarketCheck does not supply it.",
+            adapter="built-in",
+        ),
         Source(
             "truecar", "TrueCar", "aggregator",
             f"https://www.truecar.com/used-cars-for-sale/listings/?location={zip_code}"
@@ -158,7 +201,30 @@ def sources_for_listing(listing: Dict[str, Any], search_config: Dict[str, Any]) 
     q = quote_plus(f"{year} {make} {model}".strip())
     make_slug = quote_plus(make.lower())
     model_slug = quote_plus(model.lower().replace(" ", "-"))
-    return [
+    vin = (listing.get("vin") or "").strip()
+    links = [
+        {
+            "name": "NHTSA recalls & complaints (this model-year)",
+            "url": f"https://www.nhtsa.gov/recalls?vehicleMake={quote_plus(make)}"
+                   f"&vehicleModel={quote_plus(model)}&vehicleYear={year}",
+        },
+        {
+            "name": "RepairPal (repair cost & reliability)",
+            "url": f"https://repairpal.com/{make_slug}/{model_slug}",
+        },
+        {
+            "name": "Edmunds owner reviews",
+            "url": f"https://www.edmunds.com/{make_slug}/{model_slug}/{year}/consumer-reviews/",
+        },
+        {
+            "name": "KBB owner ratings",
+            "url": f"https://www.kbb.com/{make_slug}/{model_slug}/{year}/",
+        },
+    ]
+    if vin:
+        links.insert(0, {"name": "NHTSA recall check for this exact VIN",
+                         "url": f"https://www.nhtsa.gov/recalls?vin={quote_plus(vin)}"})
+    return links + [
         {
             "name": "CarGurus (deal rating)",
             "url": f"https://www.cargurus.com/Cars/spt_used-{make_slug}-{model_slug}?zip={c['zip']}&distance={c['radius']}",

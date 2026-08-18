@@ -18,7 +18,8 @@ import requests
 
 from . import db
 from .config import Config, get_secret
-from .digest import _money, _title
+from .digest import _money, _reliability_note, _title
+from .pipeline import attach_cached_enrichment
 
 LOG = logging.getLogger("carmon.notify")
 
@@ -47,8 +48,14 @@ def _listing_bullet(listing: Dict[str, Any], extra: str = "") -> str:
     distance = listing.get("distance_miles")
     if distance is not None:
         parts.append(f"{distance:.0f} mi away")
+    mpg = listing.get("combined_mpg")
+    if mpg:
+        parts.append(f"{float(mpg):.0f} mpg")
     if listing.get("cpo"):
         parts.append("CPO")
+    complaints, recalls = listing.get("complaint_count"), listing.get("recall_count")
+    if complaints is not None or recalls is not None:
+        parts.append(f"NHTSA {complaints or 0}c/{recalls or 0}r")
     if extra:
         parts.append(extra)
     text = " · ".join(parts)
@@ -83,9 +90,9 @@ def build_discord_payload(
     since = (date.fromisoformat(run_date) - timedelta(days=days - 1)).isoformat()
     top_n = int(config.digest.get("top_n", 5))
 
-    new_listings = db.new_listings_since(conn, since, 8)
-    drops = db.price_drops_since(conn, since, 8)
-    top = db.search_listings(conn, sort="score", limit=top_n)
+    new_listings = [attach_cached_enrichment(conn, l) for l in db.new_listings_since(conn, since, 8)]
+    drops = [attach_cached_enrichment(conn, l) for l in db.price_drops_since(conn, since, 8)]
+    top = [attach_cached_enrichment(conn, l) for l in db.search_listings(conn, sort="score", limit=top_n)]
     stats = db.stats(conn, int(config.api.get("monthly_call_cap", 500)))
 
     def drop_formatter(listing: Dict[str, Any]) -> str:

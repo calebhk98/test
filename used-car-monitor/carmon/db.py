@@ -19,6 +19,9 @@ CREATE TABLE IF NOT EXISTS listings (
     trim            TEXT,
     body_type       TEXT,
     fuel_type       TEXT,
+    city_mpg        INTEGER,
+    highway_mpg     INTEGER,
+    combined_mpg    REAL,
     mileage         INTEGER,
     price_current   INTEGER,
     price_first_seen INTEGER,
@@ -67,6 +70,36 @@ CREATE TABLE IF NOT EXISTS runs (
     error          TEXT
 );
 
+CREATE TABLE IF NOT EXISTS model_reliability (
+    make             TEXT NOT NULL,
+    model            TEXT NOT NULL,
+    year             INTEGER NOT NULL,
+    complaint_count  INTEGER,
+    recall_count     INTEGER,
+    crash_complaints INTEGER,
+    fire_complaints  INTEGER,
+    injuries         INTEGER,
+    deaths           INTEGER,
+    top_components   TEXT,
+    recalls          TEXT,
+    source           TEXT DEFAULT 'nhtsa',
+    fetched_at       TEXT,
+    PRIMARY KEY (make, model, year)
+);
+
+CREATE TABLE IF NOT EXISTS model_mpg (
+    make         TEXT NOT NULL,
+    model        TEXT NOT NULL,
+    year         INTEGER NOT NULL,
+    city_mpg     REAL,
+    highway_mpg  REAL,
+    combined_mpg REAL,
+    matched_name TEXT,
+    source       TEXT,
+    fetched_at   TEXT,
+    PRIMARY KEY (make, model, year)
+);
+
 CREATE INDEX IF NOT EXISTS idx_listings_score ON listings(score DESC);
 CREATE INDEX IF NOT EXISTS idx_listings_first_seen ON listings(first_seen);
 CREATE INDEX IF NOT EXISTS idx_listings_last_seen ON listings(last_seen);
@@ -76,7 +109,8 @@ CREATE INDEX IF NOT EXISTS idx_api_usage_month ON api_usage(month);
 
 LISTING_COLUMNS = [
     "vin", "first_seen", "last_seen", "year", "make", "model", "trim", "body_type",
-    "fuel_type", "mileage", "price_current", "price_first_seen", "dealer_name",
+    "fuel_type", "city_mpg", "highway_mpg", "combined_mpg", "mileage", "price_current",
+    "price_first_seen", "dealer_name",
     "dealer_city", "dealer_state", "distance_miles", "cpo", "listing_url", "score",
     "score_breakdown", "source", "active", "updated_at",
 ]
@@ -111,10 +145,34 @@ def connect(db_path: Path | str) -> sqlite3.Connection:
     return conn
 
 
+MIGRATIONS = {
+    "listings": {
+        "city_mpg": "INTEGER",
+        "highway_mpg": "INTEGER",
+        "combined_mpg": "REAL",
+    },
+}
+
+
+def migrate(conn: sqlite3.Connection) -> List[str]:
+    """Add columns that older databases predate. Safe to run on every startup."""
+    applied: List[str] = []
+    for table, columns in MIGRATIONS.items():
+        existing = {row["name"] for row in conn.execute(f"PRAGMA table_info({table})").fetchall()}
+        for column, column_type in columns.items():
+            if column not in existing:
+                conn.execute(f"ALTER TABLE {table} ADD COLUMN {column} {column_type}")
+                applied.append(f"{table}.{column}")
+    if applied:
+        conn.commit()
+    return applied
+
+
 def init_db(db_path: Path | str) -> sqlite3.Connection:
     conn = connect(db_path)
     conn.executescript(SCHEMA)
     conn.commit()
+    migrate(conn)
     return conn
 
 
@@ -211,7 +269,8 @@ def upsert_listing(conn: sqlite3.Connection, listing: Dict[str, Any], seen_date:
             last_seen = ?, year = COALESCE(?, year), make = COALESCE(?, make),
             model = COALESCE(?, model), trim = COALESCE(?, trim),
             body_type = COALESCE(?, body_type), fuel_type = COALESCE(?, fuel_type),
-            mileage = COALESCE(?, mileage), price_current = COALESCE(?, price_current),
+            city_mpg = COALESCE(?, city_mpg), highway_mpg = COALESCE(?, highway_mpg),
+            combined_mpg = COALESCE(?, combined_mpg), mileage = COALESCE(?, mileage), price_current = COALESCE(?, price_current),
             dealer_name = COALESCE(?, dealer_name), dealer_city = COALESCE(?, dealer_city),
             dealer_state = COALESCE(?, dealer_state), distance_miles = COALESCE(?, distance_miles),
             cpo = ?, listing_url = COALESCE(?, listing_url), score = ?, score_breakdown = ?,
@@ -221,6 +280,7 @@ def upsert_listing(conn: sqlite3.Connection, listing: Dict[str, Any], seen_date:
         (
             seen_date, listing.get("year"), listing.get("make"), listing.get("model"),
             listing.get("trim"), listing.get("body_type"), listing.get("fuel_type"),
+            listing.get("city_mpg"), listing.get("highway_mpg"), listing.get("combined_mpg"),
             listing.get("mileage"), listing.get("price_current"), listing.get("dealer_name"),
             listing.get("dealer_city"), listing.get("dealer_state"), listing.get("distance_miles"),
             1 if listing.get("cpo") else 0, listing.get("listing_url"), listing.get("score"),
@@ -434,3 +494,108 @@ def stats(conn: sqlite3.Connection, monthly_cap: int = 500) -> Dict[str, Any]:
         "usage_by_month": usage_by_month(conn),
         "last_run": dict(last_run) if last_run else None,
     }
+
+
+# --- enrichment caches (NHTSA reliability, EPA fuel economy) -------------
+def _model_key(make: Optional[str], model: Optional[str], year: Optional[int]) -> Tuple[str, str, int]:
+    return ((make or "").strip().lower(), (model or "").strip().lower(), int(year or 0))
+
+
+def get_reliability(
+    conn: sqlite3.Connection, make: str, model: str, year: int, max_age_days: Optional[int] = None
+) -> Optional[Dict[str, Any]]:
+    """Cached NHTSA facts for a make/model/year, or None if absent or stale."""
+    row = conn.execute(
+        "SELECT * FROM model_reliability WHERE make = ? AND model = ? AND year = ?", _model_key(make, model, year)
+    ).fetchone()
+    if row is None:
+        return None
+    data = dict(row)
+    for field in ("top_components", "recalls"):
+        if isinstance(data.get(field), str) and data[field]:
+            try:
+                data[field] = json.loads(data[field])
+            except json.JSONDecodeError:
+                data[field] = None
+    if max_age_days is not None and data.get("fetched_at"):
+        try:
+            fetched = datetime.fromisoformat(data["fetched_at"])
+            if (datetime.now(timezone.utc) - fetched).days > max_age_days:
+                return None
+        except ValueError:
+            return None
+    return data
+
+
+def save_reliability(conn: sqlite3.Connection, make: str, model: str, year: int, facts: Dict[str, Any]) -> None:
+    key = _model_key(make, model, year)
+    conn.execute(
+        """
+        INSERT INTO model_reliability
+            (make, model, year, complaint_count, recall_count, crash_complaints, fire_complaints,
+             injuries, deaths, top_components, recalls, source, fetched_at)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ON CONFLICT(make, model, year) DO UPDATE SET
+            complaint_count = excluded.complaint_count, recall_count = excluded.recall_count,
+            crash_complaints = excluded.crash_complaints, fire_complaints = excluded.fire_complaints,
+            injuries = excluded.injuries, deaths = excluded.deaths,
+            top_components = excluded.top_components, recalls = excluded.recalls,
+            source = excluded.source, fetched_at = excluded.fetched_at
+        """,
+        (
+            *key,
+            facts.get("complaint_count"), facts.get("recall_count"), facts.get("crash_complaints"),
+            facts.get("fire_complaints"), facts.get("injuries"), facts.get("deaths"),
+            json.dumps(facts.get("top_components") or []), json.dumps(facts.get("recalls") or []),
+            facts.get("source", "nhtsa"), now_str(),
+        ),
+    )
+    conn.commit()
+
+
+def get_mpg(
+    conn: sqlite3.Connection, make: str, model: str, year: int, max_age_days: Optional[int] = None
+) -> Optional[Dict[str, Any]]:
+    row = conn.execute(
+        "SELECT * FROM model_mpg WHERE make = ? AND model = ? AND year = ?", _model_key(make, model, year)
+    ).fetchone()
+    if row is None:
+        return None
+    data = dict(row)
+    if max_age_days is not None and data.get("fetched_at"):
+        try:
+            fetched = datetime.fromisoformat(data["fetched_at"])
+            if (datetime.now(timezone.utc) - fetched).days > max_age_days:
+                return None
+        except ValueError:
+            return None
+    return data
+
+
+def save_mpg(conn: sqlite3.Connection, make: str, model: str, year: int, mpg: Dict[str, Any]) -> None:
+    conn.execute(
+        """
+        INSERT INTO model_mpg (make, model, year, city_mpg, highway_mpg, combined_mpg, matched_name, source, fetched_at)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ON CONFLICT(make, model, year) DO UPDATE SET
+            city_mpg = excluded.city_mpg, highway_mpg = excluded.highway_mpg,
+            combined_mpg = excluded.combined_mpg, matched_name = excluded.matched_name,
+            source = excluded.source, fetched_at = excluded.fetched_at
+        """,
+        (
+            *_model_key(make, model, year), mpg.get("city_mpg"), mpg.get("highway_mpg"),
+            mpg.get("combined_mpg"), mpg.get("matched_name"), mpg.get("source", "fueleconomy.gov"), now_str(),
+        ),
+    )
+    conn.commit()
+
+
+def distinct_model_years(conn: sqlite3.Connection, active_only: bool = True) -> List[Dict[str, Any]]:
+    """Every make/model/year combination currently stored — the enrichment work list."""
+    clauses = ["make IS NOT NULL", "model IS NOT NULL", "year IS NOT NULL"]
+    if active_only:
+        clauses.append("active = 1")
+    rows = conn.execute(
+        f"SELECT DISTINCT make, model, year FROM listings WHERE {' AND '.join(clauses)} ORDER BY make, model, year"
+    ).fetchall()
+    return [dict(row) for row in rows]

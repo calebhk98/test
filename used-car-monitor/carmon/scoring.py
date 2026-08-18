@@ -8,6 +8,12 @@ Two modes, selected by `scoring.mode` in config.json:
                miles score within a rounding error of each other while 60,000 miles
                is genuinely, proportionally worse.
 
+Beyond the spec's original five rules, the score also weighs price against budget, model
+year, EPA combined MPG, and NHTSA complaint/recall history. Every weight lives in
+``config.json`` under ``scoring.weights``; the ``DEFAULT_WEIGHTS`` below are only a
+fallback for keys a config omits (``tests/test_config_consistency.py`` keeps the two in
+step).
+
 Every component is returned with its own value and a human-readable explanation,
 so nothing about the final number is hidden.
 """
@@ -30,6 +36,21 @@ DEFAULT_WEIGHTS: Dict[str, float] = {
     "mileage_zero_penalty_at": 20000.0,
     "mileage_full_penalty_at": 60000.0,
     "mileage_full_penalty": -2.0,
+    "price_bonus_max": 1.5,
+    "price_full_bonus_at": 12000.0,
+    "price_no_bonus_at": 20000.0,
+    "year_bonus_max": 1.0,
+    "year_no_bonus_at": 2021.0,
+    "year_full_bonus_at": 2025.0,
+    "mpg_bonus_max": 1.0,
+    "mpg_no_bonus_at": 28.0,
+    "mpg_full_bonus_at": 40.0,
+    "mpg_min_factor": -0.5,
+    "complaints_penalty_max": -1.5,
+    "complaints_no_penalty_at": 100.0,
+    "complaints_full_penalty_at": 600.0,
+    "recall_penalty_each": -0.15,
+    "recall_penalty_floor": -0.75,
 }
 
 
@@ -107,7 +128,13 @@ def score_listing(listing: Dict[str, Any], scoring_config: Dict[str, Any] | None
     if mode not in ("smooth", "step"):
         mode = "smooth"
     weights = dict(DEFAULT_WEIGHTS)
-    weights.update({k: float(v) for k, v in (scoring_config.get("weights") or {}).items()})
+    for key, value in (scoring_config.get("weights") or {}).items():
+        try:
+            weights[key] = float(value)
+        except (TypeError, ValueError):
+            # e.g. an "auto" marker that was never resolved (config.Config.scoring does that);
+            # fall back to the default rather than crashing the run.
+            continue
 
     make = listing.get("make") or ""
     model = listing.get("model") or ""
@@ -214,6 +241,116 @@ def score_listing(listing: Dict[str, Any], scoring_config: Dict[str, Any] | None
                 f"(40,000 mi lands at {weights['mileage_full_penalty'] * _clamp((40000 - low) / (high - low), 0, 1):+.2f})"
             )
         components.append(ScoreComponent("mileage", value, detail))
+
+    # 6. Price against budget ---------------------------------------------
+    price = listing.get("price_current")
+    if not price:
+        components.append(ScoreComponent("price", 0.0, "price unknown"))
+    else:
+        price = float(price)
+        cheap_at = weights["price_full_bonus_at"]
+        dear_at = max(cheap_at + 1.0, weights["price_no_bonus_at"])
+        if mode == "step":
+            midpoint = (cheap_at + dear_at) / 2
+            value = 1.0 if price <= midpoint else 0.0
+            detail = f"${price:,.0f} ({'at or under' if value else 'over'} ${midpoint:,.0f})"
+        else:
+            ramp = _clamp((dear_at - price) / (dear_at - cheap_at), 0.0, 1.0)
+            value = weights["price_bonus_max"] * ramp
+            detail = (
+                f"${price:,.0f}; bonus ramps from 0 at ${dear_at:,.0f} (budget ceiling) "
+                f"to {weights['price_bonus_max']:+.2f} at ${cheap_at:,.0f}"
+            )
+        components.append(ScoreComponent("price", value, detail))
+
+    # 7. Model year --------------------------------------------------------
+    year = listing.get("year")
+    if not year:
+        components.append(ScoreComponent("model year", 0.0, "year unknown"))
+    else:
+        year = float(year)
+        old_at = weights["year_no_bonus_at"]
+        new_at = max(old_at + 1.0, weights["year_full_bonus_at"])
+        if mode == "step":
+            value = 1.0 if year >= (old_at + new_at) / 2 else 0.0
+            detail = f"{year:.0f} model year"
+        else:
+            ramp = _clamp((year - old_at) / (new_at - old_at), 0.0, 1.0)
+            value = weights["year_bonus_max"] * ramp
+            detail = (
+                f"{year:.0f}; bonus ramps from 0 at {old_at:.0f} to "
+                f"{weights['year_bonus_max']:+.2f} at {new_at:.0f}"
+            )
+        components.append(ScoreComponent("model year", value, detail))
+
+    # 8. Fuel economy (EPA combined) ---------------------------------------
+    mpg = listing.get("combined_mpg")
+    if not mpg:
+        city, highway = listing.get("city_mpg"), listing.get("highway_mpg")
+        if city and highway:
+            mpg = 0.55 * float(city) + 0.45 * float(highway)
+    if not mpg:
+        components.append(
+            ScoreComponent("fuel economy", 0.0, "no MPG data (MarketCheck and EPA both missing)")
+        )
+    else:
+        mpg = float(mpg)
+        thirsty_at = weights["mpg_no_bonus_at"]
+        frugal_at = max(thirsty_at + 1.0, weights["mpg_full_bonus_at"])
+        if mode == "step":
+            value = 1.0 if mpg >= (thirsty_at + frugal_at) / 2 else 0.0
+            detail = f"{mpg:.0f} mpg combined"
+        else:
+            ramp = _clamp((mpg - thirsty_at) / (frugal_at - thirsty_at), weights["mpg_min_factor"], 1.0)
+            value = weights["mpg_bonus_max"] * ramp
+            detail = (
+                f"{mpg:.1f} mpg combined; 0 at {thirsty_at:.0f} mpg, "
+                f"{weights['mpg_bonus_max']:+.2f} at {frugal_at:.0f} mpg, mildly negative below"
+            )
+        components.append(ScoreComponent("fuel economy", value, detail))
+
+    # 9. NHTSA complaints ---------------------------------------------------
+    complaints = listing.get("complaint_count")
+    if complaints is None:
+        components.append(ScoreComponent("NHTSA complaints", 0.0, "no NHTSA data for this model year"))
+    else:
+        complaints = float(complaints)
+        quiet_at = weights["complaints_no_penalty_at"]
+        loud_at = max(quiet_at + 1.0, weights["complaints_full_penalty_at"])
+        top = listing.get("top_complaint_components") or []
+        top_text = ""
+        if isinstance(top, list) and top:
+            first = top[0]
+            if isinstance(first, (list, tuple)) and len(first) >= 2:
+                top_text = f"; most common: {first[0]} ({first[1]})"
+        if mode == "step":
+            value = -1.0 if complaints > loud_at else 0.0
+            detail = f"{complaints:,.0f} owner complaints filed with NHTSA{top_text}"
+        else:
+            ramp = _clamp((complaints - quiet_at) / (loud_at - quiet_at), 0.0, 1.0)
+            value = weights["complaints_penalty_max"] * ramp
+            detail = (
+                f"{complaints:,.0f} owner complaints filed with NHTSA for this model year{top_text}; "
+                f"penalty ramps from 0 at {quiet_at:,.0f} to {weights['complaints_penalty_max']:.2f} "
+                f"at {loud_at:,.0f} (raw counts are not sales-volume adjusted)"
+            )
+        components.append(ScoreComponent("NHTSA complaints", value, detail))
+
+    # 10. NHTSA recalls -----------------------------------------------------
+    recalls = listing.get("recall_count")
+    if recalls is None:
+        components.append(ScoreComponent("NHTSA recalls", 0.0, "no NHTSA data for this model year"))
+    else:
+        recalls = int(recalls)
+        if mode == "step":
+            value = -0.5 if recalls >= 3 else 0.0
+        else:
+            value = max(weights["recall_penalty_floor"], weights["recall_penalty_each"] * recalls)
+        detail = (
+            f"{recalls} recall campaign(s) for this model year"
+            + ("; check the VIN against NHTSA to see what is still unrepaired" if recalls else "")
+        )
+        components.append(ScoreComponent("NHTSA recalls", value, detail))
 
     total = sum(component.value for component in components)
     return ScoreResult(score=round(total, 2), mode=mode, components=components)

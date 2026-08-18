@@ -51,6 +51,18 @@ def get_secret(name: str, env: Dict[str, str] | None = None, required: bool = Fa
     return value
 
 
+# Weights that must always agree with the search criteria. Setting one of these to
+# "auto" in config.json (the default) derives it from `search`, so a budget or mileage
+# ceiling is defined in exactly one place and can never drift out of step.
+AUTO_DERIVED_WEIGHTS: Dict[str, str] = {
+    "price_no_bonus_at": "price_max",
+    "mileage_full_penalty_at": "mileage_max",
+    "year_no_bonus_at": "year_min",
+    "distance_penalty_floor": "",  # not derived; listed here only for documentation
+}
+AUTO_DERIVED_WEIGHTS = {key: value for key, value in AUTO_DERIVED_WEIGHTS.items() if value}
+
+
 class Config:
     """Thin wrapper around the parsed config.json with convenience accessors."""
 
@@ -65,6 +77,25 @@ class Config:
 
     @property
     def scoring(self) -> Dict[str, Any]:
+        """Scoring config with "auto" weights resolved from the search criteria."""
+        scoring = self.data.setdefault("scoring", {})
+        weights = dict(scoring.get("weights") or {})
+        search = self.data.get("search", {})
+        for weight_key, search_key in AUTO_DERIVED_WEIGHTS.items():
+            value = weights.get(weight_key)
+            if value is None or (isinstance(value, str) and value.strip().lower() == "auto"):
+                derived = search.get(search_key)
+                if derived is not None:
+                    weights[weight_key] = float(derived)
+                else:
+                    weights.pop(weight_key, None)
+        resolved = dict(scoring)
+        resolved["weights"] = weights
+        return resolved
+
+    @property
+    def scoring_raw(self) -> Dict[str, Any]:
+        """The scoring section exactly as written in config.json, "auto" markers intact."""
         return self.data.setdefault("scoring", {})
 
     @property
@@ -113,3 +144,65 @@ def load_config(path: Path | str | None = None) -> Config:
     if not isinstance(data, dict):
         raise ConfigError(f"Config file {config_path} must contain a JSON object")
     return Config(data, config_path)
+
+
+def validate_config(config: "Config") -> List[str]:
+    """Report configuration problems and single-source-of-truth drift.
+
+    Returns a list of human-readable warnings (empty means everything checks out).
+    Surfaced by `python3 -m carmon config-check` and printed before every daily run.
+    """
+    from .scoring import DEFAULT_WEIGHTS  # imported here to avoid a circular import
+
+    warnings: List[str] = []
+    search = config.data.get("search", {})
+    scoring = config.data.get("scoring", {})
+    weights = scoring.get("weights") or {}
+
+    for section in ("search", "scoring", "api", "digest", "paths"):
+        if section not in config.data:
+            warnings.append(f"config.json is missing the '{section}' section")
+
+    unknown = sorted(set(weights) - set(DEFAULT_WEIGHTS))
+    if unknown:
+        warnings.append(
+            f"scoring.weights has unknown key(s): {', '.join(unknown)} — they are ignored. "
+            "Check for a typo against carmon/scoring.py DEFAULT_WEIGHTS."
+        )
+
+    mode = str(scoring.get("mode", "smooth")).lower()
+    if mode not in ("smooth", "step"):
+        warnings.append(f"scoring.mode '{mode}' is not recognised; falling back to 'smooth'")
+
+    radius = search.get("radius_miles")
+    if radius and float(radius) > 100:
+        warnings.append(
+            f"search.radius_miles is {radius}, above the MarketCheck free-tier limit of 100 "
+            "— requests will be clamped to 100."
+        )
+
+    cap = config.data.get("api", {}).get("monthly_call_cap")
+    if cap and int(cap) > 500:
+        warnings.append(
+            f"api.monthly_call_cap is {cap}, above the free tier's 500 calls/month. "
+            "Only raise this if you have actually upgraded the MarketCheck plan."
+        )
+
+    # Drift between weights that are meant to track the search criteria.
+    for weight_key, search_key in AUTO_DERIVED_WEIGHTS.items():
+        raw = weights.get(weight_key)
+        expected = search.get(search_key)
+        if raw is None or (isinstance(raw, str) and raw.strip().lower() == "auto"):
+            continue
+        if expected is not None and float(raw) != float(expected):
+            warnings.append(
+                f"scoring.weights.{weight_key} ({raw}) disagrees with search.{search_key} ({expected}). "
+                f'Set it to "auto" to derive it from the search criteria instead of repeating the number.'
+            )
+
+    if search.get("include_electric_hybrid") and search.get("excluded_fuel_types"):
+        warnings.append(
+            "search.include_electric_hybrid is true, so search.excluded_fuel_types is not applied."
+        )
+
+    return warnings

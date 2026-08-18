@@ -29,6 +29,7 @@ from urllib.parse import parse_qs, urlsplit
 import carmon
 from . import db
 from .config import Config, get_secret, load_env
+from .nhtsa import recall_lookup_url, vin_recall_url
 from .sources import grouped_sources, sources_for_listing
 
 __all__ = ["CarMonHandler", "create_server", "serve"]
@@ -118,6 +119,24 @@ def _e(value: Any) -> str:
     if value is None:
         return ""
     return html.escape(str(value))
+
+
+def _fmt_mpg(value: Any) -> str:
+    if value is None:
+        return "—"
+    try:
+        return f"{float(value):.1f}"
+    except (TypeError, ValueError):
+        return "—"
+
+
+# Shown wherever NHTSA complaint counts appear prominently -- they are raw counts, not
+# adjusted for how many of a given model are on the road, so a high-volume model naturally
+# racks up more of them. The components that keep recurring are the more useful signal.
+_NHTSA_VOLUME_CAVEAT = (
+    "Raw NHTSA complaint counts are not adjusted for sales volume, so a high-volume model "
+    "naturally accumulates more of them — treat the recurring components as the stronger signal."
+)
 
 
 # --------------------------------------------------------------------------
@@ -248,9 +267,27 @@ def _listing_link(listing: Dict[str, Any]) -> str:
     return f'<a href="/listing/{_e(listing.get("vin"))}">{_e(label)}</a>'
 
 
-def _results_table(listings: List[Dict[str, Any]]) -> str:
+def _nhtsa_cell(conn: Any, item: Dict[str, Any], cache: Dict[Tuple[Any, Any, Any], Optional[Dict[str, Any]]]) -> str:
+    """Compact 'complaints / recalls' cell for a listing's model-year, from cached data only."""
+    make, model, year = item.get("make"), item.get("model"), item.get("year")
+    key = (make, model, year)
+    if key not in cache:
+        cache[key] = db.get_reliability(conn, make, model, year) if make and model and year else None
+    facts = cache[key]
+    if not facts:
+        return "—"
+    complaints, recalls = facts.get("complaint_count"), facts.get("recall_count")
+    if complaints is None and recalls is None:
+        return "—"
+    complaints_str = complaints if complaints is not None else "-"
+    recalls_str = recalls if recalls is not None else "-"
+    return f"{complaints_str} / {recalls_str}"
+
+
+def _results_table(conn: Any, listings: List[Dict[str, Any]]) -> str:
     if not listings:
         return '<div class="empty">No listings match those filters.</div>'
+    reliability_cache: Dict[Tuple[Any, Any, Any], Optional[Dict[str, Any]]] = {}
     rows = []
     for item in listings:
         rows.append(
@@ -259,6 +296,8 @@ def _results_table(listings: List[Dict[str, Any]]) -> str:
             f"<td>{_listing_link(item)}</td>"
             f'<td>{_fmt_money(item.get("price_current"))}</td>'
             f'<td>{_fmt_num(item.get("mileage"))}</td>'
+            f'<td>{_fmt_mpg(item.get("combined_mpg"))}</td>'
+            f'<td title="NHTSA complaints / recalls for this model year">{_e(_nhtsa_cell(conn, item, reliability_cache))}</td>'
             f'<td>{_e(item.get("distance_miles") if item.get("distance_miles") is not None else "-")}</td>'
             f'<td>{"Yes" if item.get("cpo") else "No"}</td>'
             f'<td>{_e(item.get("dealer_name") or "-")} &middot; {_e(item.get("dealer_city") or "-")}</td>'
@@ -267,7 +306,7 @@ def _results_table(listings: List[Dict[str, Any]]) -> str:
         )
     return f"""<div class="table-wrap"><table>
 <thead><tr>
-  <th>Score</th><th>Vehicle</th><th>Price</th><th>Mileage</th><th>Dist.</th><th>CPO</th><th>Dealer</th><th>First seen</th>
+  <th>Score</th><th>Vehicle</th><th>Price</th><th>Mileage</th><th>MPG</th><th>NHTSA</th><th>Dist.</th><th>CPO</th><th>Dealer</th><th>First seen</th>
 </tr></thead>
 <tbody>{''.join(rows)}</tbody>
 </table></div>"""
@@ -362,6 +401,15 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
             return self._api_config
         if path == "/api/runs":
             return self._api_runs
+        if path == "/api/reliability":
+            return self._api_reliability_list
+        if path.startswith("/api/reliability/"):
+            rest = path[len("/api/reliability/"):]
+            parts = [p for p in rest.split("/")]
+            if len(parts) == 3 and all(parts):
+                make, model, year = parts
+                return lambda conn, params: self._api_reliability_detail(conn, params, make, model, year)
+            return None
         if path.startswith("/api/listings/"):
             rest = path[len("/api/listings/"):]
             if rest.endswith("/history"):
@@ -448,14 +496,49 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
         limit = _parse_int(params, "limit")
         offset = _parse_int(params, "offset") or 0
         limit = 50 if limit is None else max(1, min(limit, 500))
+        max_complaints = _parse_int(params, "max_complaints")
+        max_recalls = _parse_int(params, "max_recalls")
         results = db.search_listings(conn, limit=limit, offset=offset, **kwargs)
+        if max_complaints is not None or max_recalls is not None:
+            results = self._filter_by_nhtsa(conn, results, max_complaints, max_recalls)
+        filters = {k: v for k, v in kwargs.items() if v not in (None, False)}
+        if max_complaints is not None:
+            filters["max_complaints"] = max_complaints
+        if max_recalls is not None:
+            filters["max_recalls"] = max_recalls
         self._send_json({
             "count": len(results),
             "limit": limit,
             "offset": offset,
-            "filters": {k: v for k, v in kwargs.items() if v not in (None, False)},
+            "filters": filters,
             "listings": results,
         })
+
+    def _filter_by_nhtsa(
+        self,
+        conn: Any,
+        listings: List[Dict[str, Any]],
+        max_complaints: Optional[int],
+        max_recalls: Optional[int],
+    ) -> List[Dict[str, Any]]:
+        """Drop listings whose cached NHTSA counts exceed the caps. Unknown (uncached) counts
+        are never dropped -- absence of data is not evidence of a problem."""
+        cache: Dict[Tuple[Any, Any, Any], Optional[Dict[str, Any]]] = {}
+        kept = []
+        for item in listings:
+            make, model, year = item.get("make"), item.get("model"), item.get("year")
+            key = (make, model, year)
+            if key not in cache:
+                cache[key] = db.get_reliability(conn, make, model, year) if make and model and year else None
+            facts = cache[key]
+            if facts:
+                complaints, recalls = facts.get("complaint_count"), facts.get("recall_count")
+                if max_complaints is not None and complaints is not None and complaints > max_complaints:
+                    continue
+                if max_recalls is not None and recalls is not None and recalls > max_recalls:
+                    continue
+            kept.append(item)
+        return kept
 
     def _api_listing_detail(self, conn: Any, params: Dict[str, List[str]], vin: str) -> None:
         listing = db.get_listing(conn, vin)
@@ -465,7 +548,57 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
         listing = dict(listing)
         listing["price_history"] = db.get_price_history(conn, vin)
         listing["cross_shop"] = sources_for_listing(listing, self.config.search)
+        try:
+            from . import pipeline
+        except ImportError:
+            pipeline = None  # type: ignore[assignment]
+        if pipeline is not None:
+            listing = pipeline.attach_cached_enrichment(conn, listing)
+        listing["nhtsa_vin_url"] = vin_recall_url(vin)
+        make, model, year = listing.get("make"), listing.get("model"), listing.get("year")
+        if make and model and year:
+            listing["nhtsa_model_url"] = recall_lookup_url(make, model, year)
         self._send_json(listing)
+
+    def _api_reliability_detail(
+        self, conn: Any, params: Dict[str, List[str]], make: str, model: str, year: str
+    ) -> None:
+        from urllib.parse import unquote
+
+        make, model = unquote(make), unquote(model)
+        try:
+            year_int = int(unquote(year))
+        except ValueError:
+            raise ApiError(400, f"invalid year: {year!r}")
+        record = db.get_reliability(conn, make, model, year_int)
+        if record is None:
+            self._send_json(
+                {
+                    "error": (
+                        f"no cached NHTSA reliability data for {year_int} {make} {model}; "
+                        "run `python3 -m carmon enrich` to fetch it"
+                    )
+                },
+                status=404,
+            )
+            return
+        record = dict(record)
+        record["nhtsa_url"] = recall_lookup_url(make, model, year_int)
+        self._send_json(record)
+
+    def _api_reliability_list(self, conn: Any, params: Dict[str, List[str]]) -> None:
+        rows = conn.execute("SELECT * FROM model_reliability ORDER BY complaint_count DESC").fetchall()
+        models = []
+        for row in rows:
+            data = dict(row)
+            for field in ("top_components", "recalls"):
+                if isinstance(data.get(field), str) and data[field]:
+                    try:
+                        data[field] = json.loads(data[field])
+                    except json.JSONDecodeError:
+                        data[field] = None
+            models.append(data)
+        self._send_json({"count": len(models), "models": models})
 
     def _api_listing_history(self, conn: Any, params: Dict[str, List[str]], vin: str) -> None:
         listing = db.get_listing(conn, vin)
@@ -533,6 +666,7 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
         stats = db.stats(conn, monthly_cap=cap)
         new_today = len(db.new_listings_since(conn, _since_date(0), limit=500))
         drops_today = len(db.price_drops_since(conn, _since_date(0), limit=500))
+        nhtsa_model_years = conn.execute("SELECT COUNT(*) AS n FROM model_reliability").fetchone()["n"]
 
         kwargs = self._search_kwargs(params)
         sort = kwargs.get("sort") or "score"
@@ -548,6 +682,7 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
   <div class="tile"><div class="label">Price drops today</div><div class="value">{_e(drops_today)}</div></div>
   <div class="tile"><div class="label">API calls this month</div><div class="value">{_e(stats['api_calls_this_month'])} / {_e(stats['api_monthly_cap'])}</div></div>
   <div class="tile"><div class="label">Best score</div><div class="value">{_e(stats['best_score'] if stats['best_score'] is not None else '-')}</div></div>
+  <div class="tile"><div class="label">Model-years with NHTSA data</div><div class="value">{_e(nhtsa_model_years)}</div></div>
 </div>"""
 
         def sel(value: str) -> str:
@@ -582,7 +717,7 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
   <button type="submit">Filter</button>
 </form>"""
 
-        body = tiles + form + f'<div class="section">{_results_table(listings)}</div>'
+        body = tiles + form + f'<div class="section">{_results_table(conn, listings)}</div>'
         self._send_html(_page("Dashboard", body, self._last_run_str(conn)))
 
     def _page_listing_detail(self, conn: Any, params: Dict[str, List[str]], vin: str) -> None:
@@ -596,6 +731,18 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
         history = db.get_price_history(conn, vin)
         cross_shop = sources_for_listing(listing, self.config.search)
 
+        make, model, year = listing.get("make"), listing.get("model"), listing.get("year")
+
+        city_mpg, highway_mpg, combined_mpg = (
+            listing.get("city_mpg"), listing.get("highway_mpg"), listing.get("combined_mpg"),
+        )
+        if combined_mpg is None and make and model and year:
+            cached_mpg = db.get_mpg(conn, make, model, year)
+            if cached_mpg:
+                city_mpg = city_mpg if city_mpg is not None else cached_mpg.get("city_mpg")
+                highway_mpg = highway_mpg if highway_mpg is not None else cached_mpg.get("highway_mpg")
+                combined_mpg = cached_mpg.get("combined_mpg")
+
         title = " ".join(
             str(part) for part in (listing.get("year"), listing.get("make"), listing.get("model"), listing.get("trim"))
             if part
@@ -606,6 +753,7 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
             ("Year / Make / Model / Trim", " / ".join(str(x) for x in (
                 listing.get("year"), listing.get("make"), listing.get("model"), listing.get("trim")) if x)),
             ("Body / Fuel", f"{listing.get('body_type') or '-'} / {listing.get('fuel_type') or '-'}"),
+            ("MPG (city / hwy / combined)", f"{_fmt_mpg(city_mpg)} / {_fmt_mpg(highway_mpg)} / {_fmt_mpg(combined_mpg)}"),
             ("Price", _fmt_money(listing.get("price_current"))),
             ("Price when first seen", _fmt_money(listing.get("price_first_seen"))),
             ("Mileage", _fmt_num(listing.get("mileage"))),
@@ -667,6 +815,63 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
 
         badge = f'<span class="badge {_score_class(listing.get("score"))}">{_e(listing.get("score"))}</span>'
 
+        nhtsa_vin_url = vin_recall_url(vin)
+        nhtsa_model_url = recall_lookup_url(make, model, year) if make and model and year else None
+        reliability = db.get_reliability(conn, make, model, year) if make and model and year else None
+
+        if reliability:
+            top_components = reliability.get("top_components") or []
+            if top_components:
+                comp_rows = "".join(
+                    f"<tr><td>{_e(name)}</td><td>{_e(count)}</td></tr>" for name, count in top_components
+                )
+                comp_html = f"""<div class="table-wrap"><table>
+<thead><tr><th>Component</th><th>Complaints</th></tr></thead>
+<tbody>{comp_rows}</tbody></table></div>"""
+            else:
+                comp_html = '<div class="empty">No component breakdown recorded.</div>'
+
+            recalls = reliability.get("recalls") or []
+            if recalls:
+                recall_rows = "".join(
+                    f"<tr><td>{_e(r.get('campaign'))}</td><td>{_e(r.get('component'))}</td>"
+                    f"<td>{_e(r.get('consequence'))}</td><td>{_e(r.get('remedy'))}</td></tr>"
+                    for r in recalls
+                )
+                recall_html = f"""<div class="table-wrap"><table>
+<thead><tr><th>Campaign</th><th>Component</th><th>Consequence</th><th>Remedy</th></tr></thead>
+<tbody>{recall_rows}</tbody></table></div>"""
+            else:
+                recall_html = '<div class="empty">No recall campaigns recorded.</div>'
+
+            reliability_kv = [
+                ("Complaints filed", _fmt_num(reliability.get("complaint_count"))),
+                ("Recall campaigns", _fmt_num(reliability.get("recall_count"))),
+                ("Crash-related complaints", _fmt_num(reliability.get("crash_complaints"))),
+                ("Fire-related complaints", _fmt_num(reliability.get("fire_complaints"))),
+                ("Injuries reported", _fmt_num(reliability.get("injuries"))),
+                ("Deaths reported", _fmt_num(reliability.get("deaths"))),
+                ("NHTSA data fetched", reliability.get("fetched_at") or "-"),
+            ]
+            reliability_kv_html = "".join(f"<tr><td>{_e(k)}</td><td>{_e(v)}</td></tr>" for k, v in reliability_kv)
+
+            reliability_html = f"""
+<p class="note">{_e(_NHTSA_VOLUME_CAVEAT)}</p>
+<table class="kv">{reliability_kv_html}</table>
+<h3>Top complaint components</h3>
+{comp_html}
+<h3>Recalls</h3>
+{recall_html}
+<p><a href="{_e(nhtsa_vin_url)}" target="_blank" rel="noopener">Look up this VIN on NHTSA</a>
+ &middot; <a href="{_e(nhtsa_model_url or nhtsa_vin_url)}" target="_blank" rel="noopener">NHTSA recalls for {_e(year)} {_e(make)} {_e(model)}</a></p>
+"""
+        else:
+            reliability_html = (
+                '<div class="empty">No cached NHTSA data for this model year yet. '
+                'Run <code>python3 -m carmon enrich</code> to fetch it.</div>'
+                f'<p><a href="{_e(nhtsa_vin_url)}" target="_blank" rel="noopener">Look up this VIN on NHTSA</a></p>'
+            )
+
         body = f"""
 <h1>{_e(title)} {badge}</h1>
 {source_link}
@@ -677,6 +882,10 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
 <div class="section">
   <h2>Score breakdown</h2>
   {breakdown_html}
+</div>
+<div class="section">
+  <h2>Reliability (NHTSA)</h2>
+  {reliability_html}
 </div>
 <div class="section">
   <h2>Price history</h2>

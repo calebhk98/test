@@ -10,8 +10,8 @@ from datetime import date
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from . import __version__, db, demo as demo_module, digest as digest_module, notify
-from .config import Config, ConfigError, PROJECT_ROOT, load_config, get_secret
+from . import __version__, db, demo as demo_module, digest as digest_module, fueleconomy, nhtsa, notify
+from .config import Config, ConfigError, PROJECT_ROOT, load_config, get_secret, validate_config
 from .pipeline import rescore_all, run_daily
 from .scoring import score_listing
 from .sources import build_sources, grouped_sources
@@ -35,6 +35,8 @@ def _config(args: argparse.Namespace) -> Config:
 # --- commands -----------------------------------------------------------
 def cmd_run(args: argparse.Namespace) -> int:
     config = _config(args)
+    for warning in validate_config(config):
+        print(f"config warning: {warning}", file=sys.stderr)
     conn = db.init_db(config.db_path)
     run_date = args.date or date.today().isoformat()
     print(f"Running daily job for {run_date} (db: {config.db_path})")
@@ -130,6 +132,88 @@ def cmd_seed_demo(args: argparse.Namespace) -> int:
     print("Browse them with:  python -m carmon serve")
     conn.close()
     return 0
+
+
+def cmd_enrich(args: argparse.Namespace) -> int:
+    """Refresh the free NHTSA and EPA data for every model-year in the database."""
+    config = _config(args)
+    conn = db.init_db(config.db_path)
+    enrichment_config = config.data.get("enrichment", {})
+    model_years = db.distinct_model_years(conn, active_only=not args.all)
+    if args.limit:
+        model_years = model_years[: args.limit]
+    if not model_years:
+        print("No listings stored yet — run `python3 -m carmon run` or `seed-demo` first.")
+        conn.close()
+        return 0
+
+    print(f"Refreshing free data for {len(model_years)} model-year(s). No API key needed.")
+    summary = {}
+    if not args.mpg_only:
+        summary["nhtsa"] = nhtsa.enrich_models(conn, model_years, enrichment_config, force_refresh=args.force)
+    if not args.nhtsa_only:
+        summary["mpg"] = fueleconomy.enrich_models(conn, model_years, enrichment_config, force_refresh=args.force)
+    print(json.dumps(summary, indent=2))
+
+    rescored = rescore_all(config, conn=conn)
+    print(f"Rescored {rescored} listings with the refreshed data.")
+    conn.close()
+    return 0
+
+
+def cmd_reliability(args: argparse.Namespace) -> int:
+    """Show what NHTSA knows about one model-year."""
+    config = _config(args)
+    conn = db.init_db(config.db_path)
+    facts = db.get_reliability(conn, args.make, args.model, args.year)
+    if facts is None and not args.no_fetch:
+        client = nhtsa.NHTSAClient(conn, config.data.get("enrichment", {}))
+        facts = client.facts_for(args.make, args.model, args.year)
+    if facts is None:
+        print(f"No NHTSA data for {args.year} {args.make} {args.model}.", file=sys.stderr)
+        conn.close()
+        return 1
+    if args.json:
+        print(json.dumps(facts, indent=2, default=str))
+        conn.close()
+        return 0
+
+    print(f"{args.year} {args.make} {args.model} — NHTSA (free federal data)")
+    print(f"  complaints: {facts.get('complaint_count')}   recalls: {facts.get('recall_count')}")
+    print(
+        f"  crash-related: {facts.get('crash_complaints')}   fire-related: {facts.get('fire_complaints')}"
+        f"   injuries: {facts.get('injuries')}   deaths: {facts.get('deaths')}"
+    )
+    for component, count in (facts.get("top_components") or [])[:5]:
+        print(f"    - {component}: {count}")
+    for recall in (facts.get("recalls") or [])[:5]:
+        flag = " [PARK IT]" if recall.get("park_it") else ""
+        print(f"  recall {recall.get('campaign')}{flag}: {recall.get('component')}")
+        if recall.get("consequence"):
+            print(f"      consequence: {recall['consequence'][:160]}")
+    print(f"  {nhtsa.recall_lookup_url(args.make, args.model, args.year)}")
+    print(
+        "  Note: complaint counts are raw and not adjusted for sales volume — a popular model\n"
+        "  accumulates more of them. The recurring components above are the stronger signal."
+    )
+    conn.close()
+    return 0
+
+
+def cmd_config_check(args: argparse.Namespace) -> int:
+    config = _config(args)
+    warnings = validate_config(config)
+    if not warnings:
+        print(f"config.json looks consistent ({config.path}).")
+        weights = config.scoring["weights"]
+        print("Derived from search criteria (single source of truth):")
+        print(f"  price ceiling      {weights.get('price_no_bonus_at')}  <- search.price_max")
+        print(f"  mileage full pen.  {weights.get('mileage_full_penalty_at')}  <- search.mileage_max")
+        print(f"  oldest year        {weights.get('year_no_bonus_at')}  <- search.year_min")
+        return 0
+    for warning in warnings:
+        print(f"- {warning}")
+    return 1
 
 
 def cmd_rescore(args: argparse.Namespace) -> int:
@@ -237,6 +321,26 @@ def build_parser() -> argparse.ArgumentParser:
     seed.add_argument("--count", type=int, default=18)
     seed.add_argument("--clear", action="store_true", help="delete demo listings instead")
     seed.set_defaults(func=cmd_seed_demo)
+
+    enrich = sub.add_parser("enrich", help="refresh free NHTSA + EPA MPG data, then rescore")
+    enrich.add_argument("--force", action="store_true", help="ignore the cache and refetch")
+    enrich.add_argument("--limit", type=int, help="only process the first N model-years")
+    enrich.add_argument("--all", action="store_true", help="include inactive (sold) listings")
+    enrich.add_argument("--nhtsa-only", action="store_true", dest="nhtsa_only")
+    enrich.add_argument("--mpg-only", action="store_true", dest="mpg_only")
+    enrich.set_defaults(func=cmd_enrich)
+
+    reliability = sub.add_parser("reliability", help="NHTSA complaints and recalls for one model-year")
+    reliability.add_argument("--make", required=True)
+    reliability.add_argument("--model", required=True)
+    reliability.add_argument("--year", type=int, required=True)
+    reliability.add_argument("--json", action="store_true")
+    reliability.add_argument("--no-fetch", action="store_true", dest="no_fetch",
+                             help="only read the cache, never call NHTSA")
+    reliability.set_defaults(func=cmd_reliability)
+
+    config_check = sub.add_parser("config-check", help="validate config.json and report drift")
+    config_check.set_defaults(func=cmd_config_check)
 
     rescore = sub.add_parser("rescore", help="recompute every stored score with the current config")
     rescore.set_defaults(func=cmd_rescore)

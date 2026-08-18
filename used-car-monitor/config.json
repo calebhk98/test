@@ -110,8 +110,23 @@
       "distance_penalty_per_miles": 25,
       "distance_penalty_floor": -3.0,
       "mileage_zero_penalty_at": 20000,
-      "mileage_full_penalty_at": 60000,
-      "mileage_full_penalty": -2.0
+      "mileage_full_penalty_at": "auto",
+      "mileage_full_penalty": -2.0,
+      "price_bonus_max": 1.5,
+      "price_full_bonus_at": 12000,
+      "price_no_bonus_at": "auto",
+      "year_bonus_max": 1.0,
+      "year_no_bonus_at": "auto",
+      "year_full_bonus_at": 2025,
+      "mpg_bonus_max": 1.0,
+      "mpg_no_bonus_at": 28,
+      "mpg_full_bonus_at": 40,
+      "mpg_min_factor": -0.5,
+      "complaints_penalty_max": -1.5,
+      "complaints_no_penalty_at": 100,
+      "complaints_full_penalty_at": 600,
+      "recall_penalty_each": -0.15,
+      "recall_penalty_floor": -0.75
     }
   },
   "api": {
@@ -121,6 +136,17 @@
     "stop_at_monthly_cap": true,
     "timeout_seconds": 30,
     "max_retries": 3
+  },
+  "enrichment": {
+    "nhtsa_enabled": true,
+    "epa_mpg_enabled": true,
+    "cache_days": 30,
+    "mpg_cache_days": 180,
+    "timeout_seconds": 20,
+    "max_retries": 2,
+    "min_seconds_between_calls": 0.25,
+    "max_recalls_stored": 10,
+    "max_models_per_run": 40
   },
   "digest": {
     "top_n": 5,

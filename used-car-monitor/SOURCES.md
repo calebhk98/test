@@ -45,7 +45,36 @@ convenience and the inspection process.
 
 CarMax · Carvana · Vroom (verify Vroom's current return policy before buying — it has changed).
 
-## 3. Marketplace aggregators
+## 3. Reliability, repair cost and owner reviews
+
+**NHTSA — the one the monitor actually queries.** `api.nhtsa.gov` is free, public and needs no
+API key at all. Consumer-filed defect complaints and manufacturer recall campaigns, searchable
+by make/model/year (or by VIN on the website). It is authoritative federal data and the same
+dataset the third-party reliability sites repackage. It won't hand you a 1–5 score — just raw
+counts, recurring components, and recall descriptions — and both counts feed every listing's
+score. Caveat worth repeating: counts are **not** volume-adjusted, so a popular model looks
+worse than it is; the recurring *components* are the stronger signal, and unrepaired recalls on
+a specific VIN are the strongest one.
+
+```bash
+python3 -m carmon reliability --make Honda --model Civic --year 2022
+python3 -m carmon enrich       # refresh every model-year in the DB, then rescore
+```
+
+**EPA fueleconomy.gov** is also free and keyless; the monitor uses it to fill in combined MPG
+whenever MarketCheck's listing data omits it.
+
+**RepairPal** has exactly the data this project would most like next — average annual repair
+cost, shop-visit frequency, and a severity rating for how likely a repair is to be a big one
+rather than an oil change. There is no public API; it's a site built for human browsing, so
+using it programmatically would mean scraping. It is a link here for now, and a candidate
+adapter if that changes (see below).
+
+**Edmunds, KBB and Cars.com owner reviews** have no self-serve public API either. Edmunds runs
+a partner API, but it's business-application-only rather than something you can sign up for, so
+these stay browsing links too.
+
+## 4. Marketplace aggregators
 
 These pull from thousands of dealers, so they're the best way to see the whole market and
 compare one model across many sellers at once. CarGurus adds a **deal rating** (great / good /
@@ -68,9 +97,14 @@ source) and register it. Storage, scoring, dedup, price history, the digest, the
 API and the MCP server all work unchanged — they never assume where a listing came from, and
 `listings.source` records it per row.
 
-Sources marked `"adapter": "stub"` in `python3 -m carmon sources --json` are the ones whose
-listing pages are the most tractable to parse: Toyota/Honda certified inventory, CarMax,
-Carvana, CarGurus, Autotrader, Cars.com.
+In `python3 -m carmon sources --json`, `"adapter": "built-in"` marks the two sources already
+wired up and queried automatically (NHTSA and EPA fueleconomy.gov). `"adapter": "stub"` marks
+the ones whose pages are the most tractable to parse if it ever comes to that: Toyota/Honda
+certified inventory, CarMax, Carvana, CarGurus, Autotrader, Cars.com, and RepairPal.
+
+RepairPal is the highest-value target of those — repair cost and severity are the numbers that
+speak most directly to "will this thing nickel-and-dime me" — but it is also the one with the
+clearest human-browsing-only posture, so weigh that first.
 
 **Before enabling any scraper, check that site's Terms of Service and `robots.txt`.** Several
 of them prohibit automated collection outright, and some offer an official feed, partner

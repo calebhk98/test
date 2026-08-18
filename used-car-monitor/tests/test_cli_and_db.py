@@ -68,9 +68,9 @@ class SourcesTests(unittest.TestCase):
     def setUp(self):
         self.search = load_config().search
 
-    def test_all_three_categories_are_present(self):
+    def test_all_categories_are_present(self):
         categories = {source.category for source in build_sources(self.search)}
-        self.assertEqual(categories, {"manufacturer_cpo", "retailer", "aggregator"})
+        self.assertEqual(categories, {"manufacturer_cpo", "retailer", "aggregator", "reliability"})
 
     def test_links_carry_the_configured_criteria(self):
         carmax = next(s for s in build_sources(self.search) if s.key == "carmax")
@@ -81,8 +81,22 @@ class SourcesTests(unittest.TestCase):
     def test_expected_sites_are_covered(self):
         keys = {source.key for source in build_sources(self.search)}
         for expected in ("toyota_certified", "honda_certified", "carmax", "carvana", "vroom",
-                         "cargurus", "autotrader", "cars_com", "truecar"):
+                         "cargurus", "autotrader", "cars_com", "truecar",
+                         "nhtsa_recalls", "repairpal", "edmunds_reviews", "kbb_reviews",
+                         "cars_com_reviews", "fueleconomy_gov"):
             self.assertIn(expected, keys)
+
+    def test_only_the_keyless_federal_sources_are_wired_up(self):
+        built_in = {s.key for s in build_sources(self.search) if s.adapter == "built-in"}
+        self.assertEqual(built_in, {"nhtsa_recalls", "fueleconomy_gov"},
+                         "only the free keyless APIs are actually queried; the rest are links")
+
+    def test_per_listing_links_include_reliability_research(self):
+        links = sources_for_listing({"vin": "ABC", "year": 2022, "make": "Honda", "model": "Civic"}, self.search)
+        names = " ".join(link["name"] for link in links)
+        self.assertIn("NHTSA recall check for this exact VIN", names)
+        self.assertIn("RepairPal", names)
+        self.assertIn("Edmunds", names)
 
     def test_per_listing_cross_shop_links(self):
         links = sources_for_listing({"year": 2022, "make": "Honda", "model": "Civic"}, self.search)
