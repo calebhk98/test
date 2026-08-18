@@ -62,7 +62,7 @@ There's a pool. Swimming is at four, and Chloe cannot swim. She gets put in the 
 Ruth is in the same group as Chloe and complains more than Chloe does, about Deb, about the bubbles, and about a boy in their group who splashes. Then on the Thursday she does a length without stopping, and comes up at the end of it with her whole face different, and Sam doesn't say anything.  
 \---  
 Owen leaves in week two.  
-He's in her hall on the Monday. On the Wednesday his door is standing open and the bed is stripped down to the plastic on the mattress.  
+He's in her hall on the Monday, but by Wednesday his door is standing open and the bed is stripped down to the plastic on the mattress.  
 "Where's Owen?"  
 Sam is already in the doorway, not stopping. "He went home."  
 "Why?"  
@@ -105,7 +105,7 @@ Ruth opens her mouth and then doesn't use it right away, and Sam points at her w
 "You can't lie if you don't have a mouth," he says.  
 "That's not what lying is."  
 "It's what a mouth is for."  
-They go at it for the rest of dinner and most of the walk back. Ruth says tidally locked four more times. Kavi keeps arguing the moon is doing it deliberately, though his voice has gone flat, mostly because Sam keeps saying stuck.  
+They go at it for the rest of dinner and most of the walk back. Ruth says tidally locked four more times, while Kavi keeps arguing the moon is doing it deliberately, though his voice has gone flat, mostly because Sam keeps saying stuck.  
 She said it without checking it first.  
 Ten minutes into the walk back, it catches up with her. Kavi, the moon, then her own mouth already moving before she'd looked at it.  
 There isn't one. There isn't one in the next nine things she said either.

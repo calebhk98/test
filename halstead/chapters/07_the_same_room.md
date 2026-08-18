@@ -30,9 +30,7 @@ Chloe's mouth opens, then stays open a beat too long. "I don't know his number."
 
 "That's all right, we can look him up. Everybody's in the book." Getting the phone book from under the microwave, she puts it on the counter and opens it while looking at Chloe. "What's his last name, sweetie?"
 
-Chloe opens her mouth, then closes it.
-
-She goes upstairs and sits on the end of her bed, trying to remember. He is seven and a half, and says the "and a half" every time; sleeps with his window open, something that he mentioned more than once; has a sister or maybe a cousin who plays soccer, she never worked out which; and can swim two lengths without stopping, a fact that came up at dinner most days for a month. He thinks he's funny, and she can still hear it, two short barks and then his hand over his mouth.
+Chloe opens her mouth, then closes it, before going upstairs to sit on the end of her bed, trying to remember. He is seven and a half, and says the "and a half" every time; sleeps with his window open, something that he mentioned more than once; has a sister or maybe a cousin who plays soccer, she never worked out which; and can swim two lengths without stopping, a fact that came up at dinner most days for a month. He thinks he's funny, and she can still hear it, two short barks and then his hand over his mouth.
 
 She comes back down. "I don't know?"
 
@@ -62,7 +60,7 @@ Somebody at the school picks up on the second ring. Chloe gets close, trying to 
 
 Chloe waits for the phone for eleven days.
 
-She takes her book down and reads it in the kitchen instead of her room. She gets it on the second ring twice, and on the first ring once, and it's her grandmother, and a man asking for her dad, and a woman who wants to know whether her dad is the registered owner of the vehicle. On the ninth day her mom tells her that these things can take weeks.
+Instead of her room, she takes her book down and reads it in the kitchen. She gets it on the second ring twice, and on the first ring once, and it's her grandmother, and a man asking for her dad, and a woman who wants to know whether her dad is the registered owner of the vehicle. On the ninth day her mom tells her that these things can take weeks.
 
 After eleven days she stops sitting in the kitchen, but she continues listening for it. 
 
@@ -102,7 +100,7 @@ Chloe takes four off the cart and finishes two of them by Friday.
 
 ---
 
-Second grade is Ms. Vance, who everybody says is the nice one. The desks are in groups of four with a name card taped to the corner of each one.
+Second grade is Ms. Vance, who everybody says is the nice one, and the desks are in groups of four with a name card taped to the corner of each one.
 
 "These are your groups until Thanksgiving, so you're going to want to be nice to the three people you're looking at right now. If somebody in your group is stuck, you're allowed to help them, and helping means you talk about it with them. It does not mean you do it and let them copy it off you."
 
@@ -124,17 +122,13 @@ Everybody talks at once, and it takes the room a long time to come down, because
 
 "Here's the part I want you thinking about while you're writing. You're not writing it to me and you're not writing it to your friends at your table. The person who opens that box is you, three years older, and whatever's on that paper is what they get."
 
-"It's kind of like mailing something to a stranger," Chloe says.
-
-She isn't talking to anybody.
+"It's kind of like mailing something to a stranger," Chloe says, not talking to anybody.
 
 "What was that, Chloe?"
 
 "Because you won't be you." She keeps going anyway. "You'll be somebody three years older. You won't remember doing this. It's like sending a package to a person you've never met. Except it's got your name on it. So they have to open it. They never even asked for it."
 
-Kayleigh Burns has turned around in her chair.
-
-"Why do you talk like that?"
+Kayleigh Burns has turned around in her chair, "Why do you talk like that?"
 
 "You were weird before and now you're weirder." Bryce says it with interest, the way you'd tell somebody their shoe was untied.
 
@@ -142,7 +136,7 @@ Kayleigh Burns has turned around in her chair.
 
 "Yeah," Bryce says, and turns back around.
 
-Ms. Vance is over at the cabinet with the tape and doesn't look up for any of it. Chloe writes I hope you like fifth grade on her paper, folds it in half twice, and puts it in the box.
+While Ms. Vance is over at the cabinet with the tape, not looking up for any of it, Chloe writes I hope you like fifth grade on her paper, folds it in half twice, and puts it in the box.
 
 ---
 
@@ -188,7 +182,7 @@ The first few times, "we're thinking about it" means something. By the end of th
 
 Her mom starts on the school in the last week of September.
 
-Chloe gets the end of one of the calls, coming down for water. Her mom is at the counter with her hand flat on it. Her voice has gone careful, extra polite, the tone that she uses when she already knows the answer and has to hear it again anyway.
+Coming down for water, Chloe gets the end of one of the calls, and her mom is at the counter with her hand flat on it. Her voice has gone careful, extra polite, the tone that she uses when she already knows the answer and has to hear it again anyway.
 
 "Third grade. Okay. And there's nothing before third grade at all." She listens without saying anything, the pen tapping twice against the counter. "No, I know what the policy is, you've told me what the policy is. I'm asking whether anybody has ever made an exception to it, for any reason, in any year."
 
