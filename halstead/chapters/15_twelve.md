@@ -8,11 +8,11 @@ Pruitt runs the place off a whiteboard that carries the Thursday names on it and
 
 He keeps walking, leaving her to work out what he meant. It takes her four minutes and one more attempt, after which she is right more often than she is wrong.
 
-Sam picks a hook off her bench in November and says it beats anything else down there. "The scroll's wrong." She takes it out of his hand, still warm at the thick end. The hammer marks run straight down the shank, the way she wanted them, so she turns it over and puts her thumb on the inside of the curve, feeling along until she finds the spot where the metal stops giving under her nail. "There. It goes tight and then it opens out. That's two curves welded in the middle, pretending to be one. Hold it up at the window."
+Sam picks a hook off her bench in November that he says beats anything else down there. "The scroll's wrong." She takes it out of his hand, still warm at the thick end. The hammer marks run straight down the shank, the way she wanted them, so she turns it over and puts her thumb on the inside of the curve, feeling along until she finds the spot where the metal stops giving under her nail. "There. It goes tight and then it opens out. That's two curves welded in the middle, pretending to be one. Hold it up at the window."
 
 Sam holds it up at the window with one eye shut. "The shadow goes straight for about an inch," she says, coming round to his shoulder to see what he is seeing. "It shouldn't go straight anywhere. It should be turning the whole way down."
 
-He looks a while longer before handing the hook back, telling her it still looks fine to him, and then he takes his coat off the hook by the door because it is nearly six. The girl at the next bench comes over with a punch in her hand and turns the scroll under the light for about a minute.
+He looks a while longer before handing the hook back, telling her it still looks fine to him, and then he takes his coat off the hook by the door because it is nearly six. The girl at the next bench, who has a punch in her hand, comes over and turns the scroll under the light for about a minute.
 
 "Good job on this. Look how straight the marks run."
 
@@ -148,9 +148,7 @@ Ruth reads over his shoulder, "They're almost certainly actors, look at this. Th
 
 "One of them said he's at the corner and one of them said copy. That's it. That's everything they've said since I've been on."
 
-The plan takes Sam ninety seconds and he is defending it before he's finished describing it.
-
-"They're in the loading corridor, so they've got the stairs or they've got the long way round past the kitchens, and if we push from the north they take the stairs, so -"
+The plan takes Sam ninety seconds and he is defending it before he's finished describing it. "They're in the loading corridor, so they've got the stairs or they've got the long way round past the kitchens, and if we push from the north they take the stairs, so -"
 
 "Why would they take the stairs?"
 
