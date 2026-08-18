@@ -32,7 +32,7 @@ Kavi looks at the board, then at her, then back at the board.
 
 Fifty-one in the year pass, thirty-nine do not, and by dinner those thirty-nine have found each other by sight, because that board hangs in a hall everybody walks past four times a day.
 
-She takes her paper to Amberg two days later. He has the mark scheme out on the desk before she gets the door shut.
+She takes her paper to Amberg two days later, who has the mark scheme out on the desk before she gets the door shut.
 
 "Question three."
 
@@ -68,9 +68,7 @@ Sam is up in half a second and talks for four minutes without stopping for air, 
 
 She goes back to her chair through two people getting up out of theirs.
 
-She writes her first practice paper in the second week of May, at a table in the library with the mark scheme face down beside her, taking an hour and nine minutes and restating what the shed already made obvious.
-
-She gives it to Kavi.
+She writes her first practice paper in the second week of May, at a table in the library with the mark scheme face down beside her, taking an hour and nine minutes and restating what the shed already made obvious. She gives it to Kavi.
 
 "Two out of four." Kavi has the page flat and a pen sideways in his fingers. "You have the rule. You have where it comes from." He taps the pen twice on the third line. "Then you've written *and so the risk sits with the buyer*, which is your line two in a different hat, and then you've stopped."
 
@@ -112,9 +110,7 @@ The forge is Thursdays, and has been since she was twelve. The work down there s
 
 "You've had a paper on Thursday for two weeks." He is banking the fire down for the night, working with his back to her. "Tongs on the rack. The ones you made. Take them with you."
 
-She takes the tongs.
-
-There is a hook on the back of her door with a bag on it, made in her second year.
+She takes the tongs. There is a hook on the back of her door with a bag on it, which she made in her second year.
 
 ---
 
@@ -152,7 +148,7 @@ Her father laughs at that, head back, longer than the joke should carry him.
 
 "Because I asked her to."
 
-He nods at that and asks about Kavi, so she tells him about Kavi and the maps, and then about Priya, and then about the negotiation board in the hallway. Nadia's eighty-one percent has been on it since February. Priya's name is next to it.
+He nods at that and asks about Kavi, so she tells him about Kavi and the maps, and then about Priya, and then about the negotiation board in the hallway. Nadia's eighty-one percent has been on it since February, Priya's name next to it.
 
 "Did Priya know it was coming?"
 
@@ -164,4 +160,4 @@ Chloe puts her heels up on the lower step and takes her time with that one.
 
 "Because the boy in the room before her was going to get it, and she'd rather it was Nadia."
 
-Her father turns his glass a quarter round on the step, and then asks her what the two of them are like at a table together now. That one stops her with the glass halfway up. She is still answering when the sun goes off the garage roof, and her mother turns the porch lamp on from the kitchen switch.
+Her father turns his glass a quarter round on the step, and then asks her what the two of them are like at a table together now, a question that stops her with the glass halfway up. She is still answering when the sun goes off the garage roof, and her mother turns the porch lamp on from the kitchen switch.
