@@ -18,7 +18,7 @@ Priya doesn't look up from the drawer she's pushing shut with her knee. "Do you 
 "No."  
 "Okay. So the first thing is that a pony isn't a baby horse, everybody thinks that." Priya sits down cross-legged with a pillow in her lap. "A pony is a separate thing. It's anything under fourteen two, which is hands, which is how you measure them, from the ground up to about here." She puts her hand flat on the top of her own shoulder. "There's a girl at my barn who says hers is a horse and it is absolutely not a horse, it's fourteen even, I've seen the paper."  
 "Whose paper?"  
-"The horse's paper, they have papers." Priya waves the whole question off with the back of her hand and goes straight on with it.  
+"The horse's paper, they have papers." Priya waves the whole question off with the back of her hand, before going straight on with it.  
 She tells Chloe about the horse she rides, the horse she doesn't ride but wants to, the girl at the barn who is not a good person, what that girl did at a show in April, and what the girl's mother said about it afterward, doing all of it in about nine minutes without stopping once to find out whether Chloe wants any of it. Chloe doesn't mind, keeping both hands still in her lap and letting it run.  
 Then Priya says goodnight, and inside a minute she's asleep.  
 Chloe lies on top of the covers with her shoes on.  
@@ -39,7 +39,7 @@ In the morning her mom drives her back. "You can do that every night if you want
 "Okay," Chloe says.  
 \---  
 The rooms are named after planets.  
-She works it out on the second day, walking down the hall behind a group of the bigger kids. Mercury, Venus, Earth, on little brass plates screwed in beside the doors at adult height, then Mars, then Jupiter. Then a water fountain, then one more door past the fountain at the very end, with a plate on it that says PLUTO.  
+She works it out on the second day, while walking down the hall behind a group of the bigger kids. Mercury, Venus, Earth, on little brass plates screwed in beside the doors at adult height, then Mars, then Jupiter. Then a water fountain, then one more door past the fountain at the very end, with a plate on it that says PLUTO.  
 They're standing outside because somebody else is still in there, ten or eleven of them, nobody talking to her, everybody looking at the door or at their own shoes.  
 "They put us in the one that isn't a planet anymore," Chloe says.  
 Then something goes wrong with her. It happens before anybody has had time to answer. The backs of her knees go loose, her fingers won't close all the way, her ears do what they did in October, and for three full steps she isn't in the hallway at all, she's at her desk with the wood chips and the cage and a chair squeaking somewhere behind her.  
@@ -52,7 +52,7 @@ Chloe puts a hand flat on the wall and laughs until she has to bend over, before
 "No but it's worse though."  
 "It's what happened," the girl says.  
 The door opens, the kids who were in there come out, everybody files past them, Chloe still hasn't let go of her folder when she sits down.  
-Inside, the boy sits down next to her without asking and puts his folder on the desk sideways.  
+Inside, the boy sits down next to her without asking, before putting his folder on the desk sideways.  
 "What's your name?"  
 "Chloe."  
 "I'm Sam." He waits through a silence he clearly thinks she should be filling. "You're supposed to say how old you are."  
@@ -116,7 +116,7 @@ Then he keeps going.
 "I told you," Ruth says, to nobody, to the room. "I said that on Friday. I said it on Friday."  
 "Ruth," Sam says, from two seats over, without turning round.  
 "I did though."  
-Nothing happens: Mr. Doyle is already onto the next thing, he isn't annoyed, and he isn't being nice about it either. He fixed it and moved on, and one kid glances at Ruth before looking back at the board. Nobody else looks up.  
+Nothing happens: Mr. Doyle is already onto the next thing, he isn't annoyed, though he isn't being nice about it either. He fixed it and moved on, and one kid glances at Ruth before looking back at the board. Nobody else looks up.  
 Chloe presses her thumbnail into the edge of the desk until it leaves a mark.  
 She has done this. She did it in January with chapter nine, and Mrs. Aldana came down the row, took the book off her desk with two fingers on the spine, kept it until the end of the day. Chloe has a very clear idea of what is supposed to happen to a kid who does what Ruth just did, and she watches for it the whole rest of the period: Mr. Doyle's face the next time Ruth's name comes up, the door on the way out in case somebody's waiting there to have a word, and at lunch, the end of the table, to see whether anybody comes over.  
 Nothing comes, all day.  

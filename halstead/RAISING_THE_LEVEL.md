@@ -49,7 +49,15 @@ from her room and it is open at eleven at night, so there is no reason to carry
 more than she can carry in one hand." A flat chapter writes that as three
 sentences and earns three full stops instead of two commas.
 
-**4. Short sentences are rationed, not scattered.**
+**4. Short sentences are rationed, not scattered. This is the highest-leverage lever.**
+Chapter 1's agent measured it: breaking up the runs of three or more consecutive
+short sentences moved that chapter from the 35th to the 50th percentile **by
+itself**, more than every other technique it used combined. The runs to look for
+are the ones that **straddle narration and dialogue**, where a short line of
+speech is followed by two short narration beats and nobody notices the pattern
+because it crosses a quotation mark. "A chair squeaks somewhere behind her.
+Peanut keeps washing his face. They must not have heard her." became one
+subordinated sentence.
 Chapter 8's run-of-three figure is 1.7% against a book average of 18.8%, but it
 does not have far fewer short sentences overall. It spends them **one at a time**,
 as isolated single-sentence paragraphs after real setup: "Then she waits." "She

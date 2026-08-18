@@ -10,14 +10,14 @@ The parent hotel has a breakfast room with waffles on paper plates, and every mo
 "It exists, they showed me a picture of it," somebody says, and two people laugh.  
 "My wife thought it was a scam," the first man says. "Like a phishing thing. Like they were going to ask for a deposit at some point, and then it'd be a wire transfer, and then it'd be a different number to call."  
 "That's what we thought." The man saying it doesn't look up from the table. "We had a whole thing about it, a family meeting about a summer camp."  
-"We thought worse than that," the woman says. "I'm going to say it, I thought worse than that. I told Dave, I'm not sending her four hours away to a building I've never seen, I don't care what's in the letter. And then we came, and it's a school, and there's a nurse, and it's fine, and I still -"  
+"We thought worse than that," the woman says, "I'm going to say it, I thought worse than that. I told Dave, I'm not sending her four hours away to a building I've never seen, I don't care what's in the letter. And then we came, and it's a school, and there's a nurse, and it's fine, and I still -"  
 "Right."  
 "- I still don't know what it is."  
 Chloe's dad has been quiet through all of it, cutting his waffle into pieces that he isn't eating.  
 "Did they tell any of you where they got the name?" he says.  
 Three or four of them answer at once: "They said they have a list."  
 "Yeah, we got the list, then we got told how it's compiled."  
-"They told us the list is good," the woman says. "Which. Okay. Good at what."  
+"They told us the list is good," the woman says. "Which, okay, good at what."  
 While one of the fathers looks at his plate, a man at the end starts talking about the drive back, whether it's faster round the north side, how it depends entirely on what time you leave, and two people take that up. Somebody's kid comes over needing something after that, and by the time it's sorted out, three of them have gone.  
 Her dad puts more syrup on her waffle without being asked.  
 \---  
@@ -57,13 +57,13 @@ After, the four of them sit on the floor in the hall outside Pluto with their ba
 "So we should get in."  
 "Obviously," Sam says.  
 "It's not obviously, you have to actually do things." Ruth has her shoes off and lined up next to her. "My mom asked: there's a form, and there's a day where you come back and they look at you, and it's not in the summer, it's a different day in the fall."  
-"They already looked at us," Sam says. "That's this."  
+"They already looked at us," Sam says, "that's this."  
 "That's not what she said it was."  
 "My parents already asked," Kavi says. "On the third day."  
 "Your parents asked on the third day?"  
 "They liked the food."  
 "They asked on the third day because of the food?"  
-"They liked a lot of it. The food was one thing." Kavi shrugs with one shoulder. "My dad talked to Mr. Baptiste for an hour."  
+"They liked a lot of it, the food was one thing." Kavi shrugs with one shoulder. "My dad talked to Mr. Baptiste for an hour."  
 "When's the form?" Chloe says.  
 "I don't know when the form is, my mom has it."  
 "But when do you find out."  
@@ -74,7 +74,7 @@ After, the four of them sit on the floor in the hall outside Pluto with their ba
 "There's a day."  
 "So there's a day," she says, and sits back down against the wall.  
 Then she does the arithmetic on it, which she has not done until now: four hours in the car, each way. A whole day of driving to put her somewhere and a whole day to get her back, then again at the end, and that's only if nobody visits. Her mom at the counter with her hand on her forehead, the woman at the district office saying be careful.  
-"Chloe," Sam says. "Obviously."  
+"Chloe," Sam says, "obviously."  
 "Obviously," she says.  
 \---  
 She doesn't sleep, and then it's morning. Her dad carries her bag down and puts it in the trunk with the strap left hanging out, so he has to open it again. Priya hugs her and then goes back into the room for her own bag. When Sam says see you at the thing in the fall, Ruth tells him it isn't a thing yet, that there's a form, that his parents have to send it in. Sam says see you at the thing in the fall again.  
