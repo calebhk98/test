@@ -2,7 +2,7 @@
 
 *April 2022 – June 2023*
 
-They take the bar in April, over two days, in the long room on the second floor. Six hours on Tuesday and six on Wednesday, at desks set a meter apart, with the windows open because the room holds heat. Eleven teachers sit along the front and watch for twelve hours. They wrote the paper and they will mark it.
+They take the bar in April, over two days, in the long room on the second floor, six hours on Tuesday and six on Wednesday, at desks set a meter apart, with the windows open because the room holds heat. Eleven teachers, who wrote the paper and will mark it, sit along the front and watch for twelve hours.
 
 Afterward, Sam catches her at the bottom of the stairs with his collar open.
 
@@ -10,7 +10,7 @@ Afterward, Sam catches her at the bottom of the stairs with his collar open.
 
 "Which third one?"
 
-"Day two. The shed." He is walking backward in front of her, and she steers him round the corner by the elbow. "I gave it eleven pages."
+"Day two. The shed." As he walks backward in front of her, she steers him round the corner by the elbow. "I gave it eleven pages."
 
 "I gave it four."
 
@@ -20,7 +20,7 @@ Afterward, Sam catches her at the bottom of the stairs with his collar open.
 
 Sam goes quiet the whole length of the corridor, then says he would like to withdraw about seven of his eleven pages.
 
-The list goes up on the corkboard in the second floor hall eleven days later. The names run down the left in a bare institutional typeface. There is a column of marks, and beside it a column showing the distance from the pass line. Chloe reads hers twice.
+When the list goes up on the corkboard in the second floor hall eleven days later, the names run down the left in a bare institutional typeface. There is a column of marks, and beside it a column showing the distance from the pass line. Chloe reads hers twice.
 
 "Four points," she says.
 
@@ -30,7 +30,7 @@ Kavi looks at the board, then at her, then back at the board.
 
 "It's fine." She takes the list in one more time and steps back from the board to let somebody else in.
 
-Fifty-one in the year pass. Thirty-nine do not, and by dinner those thirty-nine have found each other by sight, because that board hangs in a hall everybody walks past four times a day.
+Fifty-one in the year pass, thirty-nine do not, and by dinner those thirty-nine have found each other by sight, because that board hangs in a hall everybody walks past four times a day.
 
 She takes her paper to Amberg two days later. He has the mark scheme out on the desk before she gets the door shut.
 
@@ -58,7 +58,7 @@ Chloe reads the four rows twice, then looks up at him and back down at them.
 
 "Two of you. Brothers. One of you has sold something belonging to the other." The teacher points. "Go."
 
-Sam is up in half a second and talks for four minutes without stopping for air. Chloe goes up the following week and stops twice inside the first thirty seconds. Both times she can hear the scene three lines out. She wants to be at the good line already instead of walking through the ordinary one to reach it.
+Sam is up in half a second and talks for four minutes without stopping for air, but Chloe goes up the following week and stops twice inside the first thirty seconds. Both times she can hear the scene three lines out, she wants to be at the good line already instead of walking through the ordinary one to reach it.
 
 "You're editing." The teacher is already looking past her at the room.
 
@@ -68,7 +68,7 @@ Sam is up in half a second and talks for four minutes without stopping for air. 
 
 She goes back to her chair through two people getting up out of theirs.
 
-She writes her first practice paper in the second week of May, at a table in the library with the mark scheme face down beside her. It takes her an hour and nine minutes, restating what the shed already made obvious.
+She writes her first practice paper in the second week of May, at a table in the library with the mark scheme face down beside her, taking an hour and nine minutes and restating what the shed already made obvious.
 
 She gives it to Kavi.
 
