@@ -31,9 +31,9 @@ At dinner in September she talks for the entire meal about a book, in which a gi
 "Where'd she get a ticket?" her dad says. He has stopped eating, doing the thing where he asks questions he already knows the answer to.  
 "Her brother. That's the whole thing, that's why she brings him. He saves his money and she spends all of hers, so she can't run away by herself. She has to bring him because he's the one with the money, and he knows it, and he's kind of a jerk about it for like the first half."  
 "And then he stops being a jerk about it." Her mom is not really listening anymore, which Chloe knows, and keeps going.  
-"No. He gets worse and then he stops." Chloe puts her fork down. "He gets worse because she starts being fine without him. Like she figures out the food thing and where the bathroom with the couch in it is, and once she can do all that she doesn't need his money as much, and he can tell. So he gets meaner right when she stops needing him. That's backwards. Except it isn't. That's exactly when you would."  
+"No. He gets worse and then he stops," Chloe says, putting her fork down. "He gets worse because she starts being fine without him. Like she figures out the food thing and where the bathroom with the couch in it is, and once she can do all that she doesn't need his money as much, and he can tell. So he gets meaner right when she stops needing him. That's backwards. Except it isn't. That's exactly when you would."  
 "Eat something," her mom says.  
-Chloe eats something. "And then she likes having him there, but she never says it. You just know."  
+Chloe eats something, then says, "And then she likes having him there, but she never says it. You just know."  
 "How do you know if she doesn't say it?"  
 "Because of what she does with the locker key. There's a locker where they put their stuff, and there's one key, and at the start she keeps it, and then in the middle he keeps it, and then at the end it's just sitting in the bowl at their aunt's house and neither of them takes it." She picks the fork back up and doesn't use it. "At the start the key is the biggest thing they have. At the end it's just in the bowl with the batteries. Nobody put it there. That's how you know."  
 "Two more bites and then the last part," her mom says.  
@@ -49,9 +49,9 @@ There's a game at recess with a tennis ball that Chloe doesn't know the name of.
 "It just was," Kayleigh says, and throws the ball.  
 Chloe plays four more rounds before she goes and stands by the door until the whistle, and nobody comes over.  
 \---  
-In October, Peanut climbs the bars of his cage toward the lamp clipped to the top of it. He does this most days and mostly gets about halfway up before he gives up on it. This time he goes higher than Chloe has ever seen him go. His back feet come off the bars, nothing underneath him, before he falls into the wood chips. The whole class laughs, while Peanut sits down in the chips and starts washing his face like nothing happened to him. Chloe had read a book about Icarus at the library two weeks ago and had thought about it for four days afterward.  
+In October, Peanut climbs the bars of his cage toward the lamp clipped to the top of it. He does this most days, mostly getting about halfway up before he gives up on it, but this time he goes higher than Chloe has ever seen him go. His back feet come off the bars, nothing underneath him, before he falls into the wood chips. The whole class laughs, while Peanut sits down in the chips and starts washing his face like nothing happened to him. Chloe had read a book about Icarus at the library two weeks ago and had thought about it for four days afterward.  
 "He's Icarus," she says.  
-A chair squeaks somewhere behind her. Peanut keeps washing his face. They must not have heard her.  
+A chair squeaks somewhere behind her, while Peanut keeps washing his face, so they must not have heard her.  
 "He flew too close to the sun," she says, louder, "and now he's in the wood chips."  
 Kayleigh Burns turns around in her seat and looks at her. "You talk weird," she says.  
 She says it plainly, then turns back around.  
@@ -73,12 +73,12 @@ The parking lot. The boxes. The question that had already happened without her. 
 "I don't know." It comes out flatter than she meant it to, flat enough that her mom looks up from the papers.  
 "Because what she actually said was that you can do the work when you want to, and to me that sounds like she's saying it's a choice thing, and I don't think it's a choice thing." Her mom says this to the papers instead of to Chloe, then turns around in her seat to look into the back. "Is it a choice thing? You can tell me if it is. Nobody's in trouble here, I'm not going to be mad, I'd just rather know."  
 "I don't know," Chloe says.  
-Her dad finds her in the mirror. "Do you like school?"  
+Her dad finds her in the mirror and asks, "Do you like school?"  
 Chloe opens her mouth and then works out how long the real answer is.  
 "It's good," she says.  
 Her dad says huh and puts his eyes back on the road. Nobody says anything else the whole way home, until the last light before their street, where her mom puts the papers face down on her knees.  
 \---  
-The checkup is in December and Chloe likes going. They do her height against the wall, and this year she is above last year's mark by an amount you can see from across the room. The doctor looks in her ears and down her throat, then has her follow his finger with her eyes without moving her head, which she is good at. Then her mom says she's been having a hard time at school, and the doctor rolls his chair around on its wheels so he's facing Chloe instead of the computer.  
+The checkup is in December and Chloe likes going, they do her height against the wall, and this year she is above last year's mark by an amount you can see from across the room. The doctor looks in her ears and down her throat, then has her follow his finger with her eyes without moving her head, which she is good at. Then her mom says she's been having a hard time at school, and the doctor rolls his chair around on its wheels so he's facing Chloe instead of the computer.  
 "Do you get in trouble at school?"  
 "Sometimes." He waits after she says it, which nobody at school ever does, so she adds, "Not a lot. Like once a week."  
 "What for?" the doctor asks, pen still on the chart.  
@@ -109,7 +109,7 @@ Dana says nice, then turns to talk to somebody else, so Chloe eats her potatoes.
 "She was fine," her mom says.  
 "I didn't say she wasn't fine."  
 \---  
-In January they read a book about a boy and a sled dog out loud, going around the room. Chloe had read the whole book on Tuesday. She had read the ending sitting on the bathroom floor at home, because she couldn't wait until after dinner to find out whether the dog lived. Aiden R. is on chapter four, page two, and he stops at about every fourth word. She has her own copy open in front of her at chapter four, following along, which is the thing she is supposed to be doing. She does it for six pages.  
+In January they read a book about a boy and a sled dog out loud, going around the room. Chloe had read the whole book on Tuesday. She had read the ending sitting on the bathroom floor at home, because she couldn't wait until after dinner to find out whether the dog lived. Aiden R. is on chapter four, page two, and he stops at about every fourth word. She has her own copy open in front of her at chapter four, following along, which is the thing she is supposed to be doing, and she does it for six pages.  
 Then she turns to chapter nine.  
 She is four pages into it when Mrs. Aldana says her name in the flat voice. "We're on chapter four."  
 Say okay. Turn back.  

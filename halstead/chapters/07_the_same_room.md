@@ -4,9 +4,7 @@
 
 The loop out front is full of cars with their trunks standing open, more adults in it than Chloe has seen in one place all month, somebody's little brother, who is screaming about a shoe. Sam left at seven, which Chloe finds out from a girl that she hadn't spoken to at the camp, who says it while passing with a pillow under her arm and doesn't stop to say it. Kavi is over by the double doors with two adults, from whom she gets a hand up, before a family walks between them and he isn't there anymore.
 
-Ruth finds her at the flagpole and hugs her hard enough to hurt.
-
-"So we're all getting in. That's the plan and everybody's doing it, so you have to, okay?" She has both hands on Chloe's shoulders and is saying it from about six inches away. "You as well, promise me you'll make it in."
+Ruth finds her at the flagpole and hugs her hard enough to hurt, "So we're all getting in. That's the plan and everybody's doing it, so you have to, okay?" She has both hands on Chloe's shoulders and is saying it from about six inches away. "You as well, promise me you'll make it in."
 
 "We're all getting in, I promise."
 
@@ -26,13 +24,13 @@ In August her mom is standing at the counter sorting the mail, as Chloe comes in
 
 "Oh," her mom puts the envelope down. She looks pleased about it in a way that Chloe doesn't understand. "Sure, honey. What's his number?"
 
-Chloe's mouth opens, then stays open a beat too long. "I don't know his number."
+Chloe's mouth opens, then stays open a beat too long, "I don't know his number."
 
 "That's all right, we can look him up. Everybody's in the book." Getting the phone book from under the microwave, she puts it on the counter and opens it while looking at Chloe. "What's his last name, sweetie?"
 
 Chloe opens her mouth, then closes it, before going upstairs to sit on the end of her bed, trying to remember. He is seven and a half, and says the "and a half" every time; sleeps with his window open, something that he mentioned more than once; has a sister or maybe a cousin who plays soccer, she never worked out which; and can swim two lengths without stopping, a fact that came up at dinner most days for a month. He thinks he's funny, and she can still hear it, two short barks and then his hand over his mouth.
 
-She comes back down. "I don't know?"
+She comes back down, "I don't know?"
 
 "Ruth, the one you said built a better bridge?" her mom asks.
 
@@ -66,9 +64,7 @@ After eleven days she stops sitting in the kitchen, but she continues listening 
 
 ---
 
-She asks on a Sunday, in the car, coming back from her grandmother's.
-
-"Can I go there for the year?"
+She asks on a Sunday, in the car, coming back from her grandmother's, "Can I go there for the year?"
 
 "Go where, honey?"
 
@@ -106,7 +102,7 @@ Second grade is Ms. Vance, who everybody says is the nice one, and the desks are
 
 Somebody asks whether you can swap groups, and Ms. Vance says no in a way that has clearly been asked for before. Chloe's group is Bryce Dolan, Kayleigh Burns, and a boy called Aiden R.
 
-The first math sheet comes around at twenty past nine, and she squints at it before she can tell that it's adding with carrying, which she learned last year and can still see: the little box you write the one in, and Mrs. Aldana drawing that box in green marker. There are thirty of them on the page.
+The first math sheet comes around at twenty past nine, and she squints at it before she can tell that it's adding with carrying, which she learned last year and can still see: the little box that you write the one in, and Mrs. Aldana drawing that box in green marker. There are thirty of them on the page.
 
 Fractions at camp, staying up until the number finally sat still on the page, and now this, math from last year again. Having done all thirty, she goes back to the top and checks each one again, and every answer matches what she wrote the first time. She puts her hands in her lap and waits for the room to catch up around her.
 

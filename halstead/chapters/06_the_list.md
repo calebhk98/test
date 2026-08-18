@@ -2,7 +2,7 @@
 
 *August 2012*
 
-The parent hotel has a breakfast room with waffles on paper plates, and every morning there are eight or nine adults in it who all know each other by now. Chloe walks over on the last Wednesday, sits down with her dad, and eats.  
+The parent hotel has a breakfast room with waffles on paper plates, and every morning there are eight or nine adults in it who all know each other by now. On the last Wednesday, Chloe walks over, sits down with her dad, and eats.  
 "We drove," a man says. He has a paper plate in one hand and hasn't sat down. "We were not putting her on a bus."  
 "Nobody put theirs on the bus."  
 "Somebody must have. It says transportation on the letter, they wouldn't put it on there for nobody."  
@@ -13,16 +13,16 @@ The parent hotel has a breakfast room with waffles on paper plates, and every mo
 "We thought worse than that," the woman says. "I'm going to say it. I thought worse than that. I told Dave, I'm not sending her four hours away to a building I've never seen, I don't care what's in the letter. And then we came, and it's a school, and there's a nurse, and it's fine, and I still -"  
 "Right."  
 "- I still don't know what it is."  
-Chloe's dad has been quiet through all of it, cutting his waffle into pieces he isn't eating.  
+Chloe's dad has been quiet through all of it, cutting his waffle into pieces that he isn't eating.  
 "Did they tell any of you where they got the name?" he says.  
 Three or four of them answer at once.  
 "They said they have a list."  
-"Yeah. We got the list, then we got told how it's compiled."  
+"Yeah, we got the list, then we got told how it's compiled."  
 "They told us the list is good," the woman says. "Which. Okay. Good at what."  
-One of the fathers looks at his plate. Then a man at the end starts talking about the drive back, whether it's faster round the north side, how it depends entirely on what time you leave, and two people take that up. Somebody's kid comes over needing something after that. By the time it's sorted out, three of them have gone.  
+While one of the fathers looks at his plate, a man at the end starts talking about the drive back, whether it's faster round the north side, how it depends entirely on what time you leave, and two people take that up. Somebody's kid comes over needing something after that, and by the time it's sorted out, three of them have gone.  
 Her dad puts more syrup on her waffle without being asked.  
 \---  
-On the last night the families eat on campus, and her dad asks her what she did all month.  
+On the last night, while the families eat on campus, her dad asks her what she did all month.  
 Chloe tells him.  
 She starts with Gary. Gary is a plastic man with no arms who lives on a cart, and you do CPR on him, and when you push hard enough in the right place he clicks. Chloe got the click on the fourth try. Sam never got it and said the click was broken. It is not broken, and she demonstrates the hand position on the edge of the table, both hands stacked, elbows locked, which is how they showed her.  
 Then the bridge. Dowels and string, eighteen inches to get across, and on the Tuesday they hung a bucket off the middle and put weights in it a pound at a time until it went. Theirs went at eleven. Ruth's went at nineteen and it's triangles, and she lines up the salt, the pepper, and a knife to show him why a square folds over and a triangle can't. Everybody wrote down what they thought it would hold before they loaded it. She wrote fourteen. She was wrong by three. She presses the pen hard enough to nearly go through the napkin, and she explains the corner thing twice to make sure he's got it.  
@@ -41,23 +41,23 @@ Her dad sets his fork down and doesn't pick it back up.
 "Twenty-seven."  
 "Twenty-seven."  
 "There's tomorrow."  
-He looks past her at the room, at the other tables, long enough that she turns around to see what he's looking at. It's people eating.  
+He looks past her at the room, at the other tables, long enough that she turns around to see what he's looking at: people eating.  
 "Cool," he says.  
-Then he asks her to do the fractions one again, from the start. She turns the napkin over and does the fractions problem a second time on the clean side, and he doesn't interrupt any of it.  
+When he asks her to do the fractions one again, from the start, she turns the napkin over and works the problem a second time on the clean side, while he doesn't interrupt any of it.  
 "They taught you that?"  
 "He did it on the board and I didn't get it. So I did it again at night with my own numbers and then I got it."  
 "But you could already do them. You said you got them all right."  
 "Anybody can do the flipping." Chloe puts the pen down. "You do it and it's right, but you don't know it's right. You just know he said."  
 Her dad looks at the napkin, folds it in half, and puts it in his shirt pocket.  
 \---  
-After, the four of them sit on the floor in the hall outside Pluto with their backs against opposite walls. The lights in that hall go off in sections at ten, and they're down to the last section.  
+After, the four of them sit on the floor in the hall outside Pluto with their backs against opposite walls. Since the lights in that hall go off in sections at ten, they're down to the last section.  
 "We should all get in," Ruth says.  
 "Get in where."  
-"Here. It's a school. It's a whole school, it goes all year, that's what this is."  
+"Here, it's a school. It's a whole school, it goes all year, that's what this is."  
 "I know it's a school."  
 "So we should get in."  
 "Obviously," Sam says.  
-"It's not obviously, you have to actually do things." Ruth has her shoes off and lined up next to her. "My mom asked. There's a form, and there's a day where you come back and they look at you, and it's not in the summer, it's a different day in the fall."  
+"It's not obviously, you have to actually do things." Ruth has her shoes off and lined up next to her. "My mom asked: there's a form, and there's a day where you come back and they look at you, and it's not in the summer, it's a different day in the fall."  
 "They already looked at us," Sam says. "That's this."  
 "That's not what she said it was."  
 "My parents already asked," Kavi says. "On the third day."  
@@ -74,12 +74,12 @@ After, the four of them sit on the floor in the hall outside Pluto with their ba
 "You said there was a day."  
 "There's a day."  
 "So there's a day," she says, and sits back down against the wall.  
-Then she does the arithmetic on it, which she has not done until now. Four hours in the car, each way. A whole day of driving to put her somewhere and a whole day to get her back, and then again at the end, and that's if nobody visits. Her mom at the counter with her hand on her forehead. The woman at the district office saying be careful.  
+Then she does the arithmetic on it, which she has not done until now: four hours in the car, each way. A whole day of driving to put her somewhere and a whole day to get her back, then again at the end, and that's only if nobody visits. Her mom at the counter with her hand on her forehead, the woman at the district office saying be careful.  
 "Chloe," Sam says. "Obviously."  
 "Obviously," she says.  
 \---  
-She doesn't sleep, and then it's morning. Her dad carries her bag down and puts it in the trunk with the strap left hanging out, so he has to open it again. Priya hugs her and then goes back into the room for her own bag. Sam says see you at the thing in the fall. Ruth tells him it isn't a thing yet, that there's a form, that his parents have to send it in. Sam says see you at the thing in the fall again.  
-An hour into the drive she's got her head against the cold part of the window with her eyes shut. Her dad checks the mirror twice and then calls her mom on the car speaker.  
+She doesn't sleep, and then it's morning. Her dad carries her bag down and puts it in the trunk with the strap left hanging out, so he has to open it again. Priya hugs her and then goes back into the room for her own bag. When Sam says see you at the thing in the fall, Ruth tells him it isn't a thing yet, that there's a form, that his parents have to send it in. Sam says see you at the thing in the fall again.  
+An hour into the drive, with her head against the cold part of the window and her eyes shut, her dad checks the mirror twice before he calls her mom on the car speaker.  
 "Hey. We're on the road."  
 "How is she?"  
 "Asleep." A pause. "She talked for twenty minutes straight last night."  
@@ -98,5 +98,5 @@ The road noise goes on for another few miles.
 "I don't know what that is."  
 "Four hours away, Dave. And free. And they wrote to her."  
 "I know. I was there."  
-Neither of them says anything else until the next exit sign, and the road noise comes back up. Then her mom says something about the traffic on the last stretch, and her dad says he'll take the other way in.  
+Neither of them says anything else until the next exit sign, and the road noise comes back up. When her mom says something about the traffic on the last stretch, her dad says he'll take the other way in.  
 Chloe keeps her eyes shut the rest of the way home.

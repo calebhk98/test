@@ -10,7 +10,7 @@ Chloe writes six sentences, then reads them back twice and leaves every word whe
 "You can keep going if you're mid-sentence," the teacher says. "Not mid-paragraph."  
 "How mid is mid," Sam says.  
 "Finish the sentence you're in, Sam."  
-"That's what I'm asking though. What if the sentence is really long."  
+"That's what I'm asking though, what if the sentence is really long."  
 "Then you should have thought about that earlier."  
 Sam has four sentences, one of them a joke. He shrugs, then leans over to see how many Chloe has without saying anything about the number. Two tables over, a girl called Marisol, who has three, asks whether she can have the question again. Chloe sits there with her six, which would have been more than anyone else wrote in Mrs. Aldana's room. Everybody would have had to sit and listen to it read out loud on a Friday, after which they'd all have guessed her, correctly.  
 On the Thursday they get dowels, a spool of string, one glue gun between three, and a rule about the glue gun that gets said twice. The gap is eighteen inches and the bridge has to go across it and hold whatever they hang off the middle. Chloe is with Sam and Kavi, while Ruth, at the next table over, comes across anyway.  
@@ -26,7 +26,7 @@ Before any of it gets loaded they have to write down what they think it'll hold.
 On the Tuesday they hang a bucket off the middle of each one and put weights in a pound at a time, and the whole room counts out loud together. One goes at three, which gets a laugh from the group it belongs to. Two more go before eight. Theirs goes at eleven and folds, sideways, all at once, the way Ruth pushed the square over with one finger, rather than snapping. Ruth's holds nineteen and then does snap, and half the room makes a noise about it.  
 "I told you," Ruth says, not looking at anyone in particular.  
 "Ruth," Sam says.  
-"I did though. I came over."  
+"I did though, I came over."  
 Mr. Doyle has them all write down which part went first and how far off their number they were. Chloe was wrong by three. She writes that it wasn't a stick that went, it was a corner, because not one of their corners was holding at an angle. It's the longest thing she writes all week.  
 \---  
 It's the second week that gets her, and it's math.  
@@ -38,9 +38,9 @@ Sam gets it, grunting once, loud.
 Kavi says he already knew it, out of a book, and gets told that's fine but he should listen anyway.  
 Ruth is already on to the next question.  
 Marisol asks him to do the rectangle again from the beginning, and he redraws it exactly the same way. Owen asks something two steps further back than that, about which number the flipping happens to. Mr. Baptiste answers him, then asks him a question back, and Owen looks at the board and says he doesn't know. Mr. Baptiste says that's fine and that they'll do it again tomorrow.  
-A hand goes up near the back. "Does it work with negative numbers?"  
+A hand goes up near the back, "Does it work with negative numbers?"  
 "Try one."  
-"I did. It works."  
+"I did, it works."  
 "Then it works," Mr. Baptiste says, moving to the next line on the board.  
 "What about zero," Ruth says.  
 "Meaning?" Mr. Baptiste says.  
@@ -67,7 +67,7 @@ He's in her hall on the Monday, but by Wednesday his door is standing open and t
 Sam is already in the doorway, not stopping. "He went home."  
 "Why?"  
 "He wasn't having fun."  
-Chloe waits for the rest of it. There isn't any rest of it, Sam has gone back to getting the wrapper off something.  
+Chloe waits for the rest of it, but there isn't any; Sam has already gone back to getting the wrapper off something.  
 "What do you mean he wasn't having fun?"  
 "He wasn't having fun. He said it wasn't fun."  
 "But it is fun."  
@@ -77,7 +77,7 @@ Chloe waits for the rest of it. There isn't any rest of it, Sam has gone back to
 "At my school you do the same paper for a month."  
 "Yeah," Sam says, "mine too." He says it the way you'd agree about the weather, then goes back to his food.  
 Ruth is at the end of the table with her chin on her hand.  
-"He was crying in the stairwell. On Thursday." She says it to her tray. "I'm not being mean, that's what he was doing."  
+"He was crying in the stairwell, on Thursday," she says to her tray. "I'm not being mean, that's what he was doing."  
 "Ruth."  
 "She asked why he went home."  
 "She didn't ask you."  
@@ -85,22 +85,21 @@ Ruth is at the end of the table with her chin on her hand.
 Owen, then the bridge, then Owen again, and nowhere further than that. She keeps landing in the same place: Owen must not have liked the bridge, and she can't get past that, because she cannot work out how a person could not like the bridge.  
 Four more leave before the end of the month, and each of them goes the same way. The bed goes. The mattress stays, stripped bare.  
 \---  
-At dinner in the third week Kavi says something about the moon, and Chloe says, "That's why it's a liar."  
-Three of them look at her.  
+At dinner in the third week Kavi says something about the moon, and Chloe says, "That's why it's a liar," which makes three of them look at her.  
 "What?"  
 "The moon. You only ever see the same side of it, so it's facing you the whole time, on purpose, the entire time you've ever looked at it."  
 "That's not lying, that's just being stuck," Sam says.  
 "It's not stuck. Stuck is when you can't move." Chloe has her roll in one hand and hasn't eaten any of it. "It's moving the whole time. It's going the whole way around us, and it's turning while it does it, at exactly the speed that keeps the same side pointed here."  
 "So it's stuck."  
 "If you walked all the way around this table and stayed facing the table the entire way, would you say you were stuck?"  
-Sam looks at the table. "No."  
+Sam looks at the table, "No."  
 "Right."  
 "But I'd say you were doing it on purpose."  
 "The worst," Kavi says, to Sam, about Sam.  
 "The word is tidally locked." Ruth has stopped eating for this. "It isn't stuck and it isn't on purpose. It got slowed down until it matched. It used to spin, and then it stopped spinning, over a really long time, because of us."  
 "Okay, but that's how it got that way," Chloe says. "I'm talking about what it's doing now."  
 "Those are the same thing."  
-"They're not. You can end up somewhere by accident. You're still there though."  
+"They're not, you can end up somewhere by accident, you're still there though."  
 Ruth opens her mouth and then doesn't use it right away, and Sam points at her with his fork.  
 "You can't lie if you don't have a mouth," he says.  
 "That's not what lying is."  
