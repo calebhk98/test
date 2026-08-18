@@ -117,5 +117,75 @@ spend its budget trying.
   of that is character rather than defect.
 - **Do not sand down a short sentence that is doing work.** Rule 11 wants variety,
   not uniform length. A short sentence after three long ones is a device.
-- **Do not trail an explanatory clause to get the comma.** Front-load it instead.
-  Same subordination, same comma, no rule violation.
+- **Do not trail an explanatory clause to get the comma.** Move it inside the
+  sentence instead. Front-loading is on probation, below, and is no longer the
+  free answer it looks like.
+
+## The paragraph is the measure nobody was watching
+
+The grade covered the sentence and the word. It did not cover the paragraph. Over
+chapters 1-10 the reading-level pass improved fourteen of the sixteen measures now
+being taken, and the two it moved backwards are the two that were not on the report
+while it ran:
+
+| measure | before | after | corpus median |
+| :-- | --: | --: | --: |
+| words per paragraph | 27.84 | 27.18 | 33.94 |
+| sentences per paragraph | 2.18 | 2.01 | 2.43 |
+
+Sentences per paragraph is the book's single worst measure against the corpus, at
+the 9th percentile, below words per paragraph at the 17th and below every measure
+the twelve were already tracking. The book runs on the one-sentence paragraph:
+54.2% of all paragraphs are a single sentence, against a corpus median of 42.9%
+and a corpus high of 54.5%. There is no room above.
+
+This is not a padding problem and it is not fixed by writing longer sentences. Two
+paragraphs that belong to the same beat, split for emphasis that the beat does not
+need, are one paragraph. The pass that raises this is the pass that asks, of each
+one-sentence paragraph, whether the break above it or below it is doing anything.
+Where it is, keep it, because a one-sentence paragraph after four long ones is the
+same device as a short sentence after four long ones. Where it is habit, join.
+
+## Front-loading is on probation
+
+The trailing explanatory clause was banned for being everywhere. Front-loading is
+the natural place for that clause to go next, and it can arrive at the same
+density from the other end of the sentence, so it is now measured on every run,
+under `monitored, not graded`.
+
+The ceiling is the corpus, not a number somebody chose. Across the 23 books, a
+sentence opens on a subordinate clause and closes it with a comma between 0.62%
+and 3.32% of the time, median 1.55%. The whole manuscript sits at 1.4%, which is
+below the median, so the device is not overused book-wide and there is nothing to
+ban yet.
+
+Chapters 9 and 10 came out of the first pass at 5.8% and 3.9%, both above every
+book in the corpus. Ten sentences were rewritten and chapters 1-10 now run 0.5%
+to 3.2%, median 2.0%.
+
+**The working rule for any pass from here: no chapter above 3.3%.** Above that the
+book is doing something no book in the corpus does, which is the definition of a
+tic. The fix is almost never to delete the clause. Move it: "While they are
+carrying their trays back, she asks Ruth about Owen" and "She asks Ruth about Owen
+while they are carrying their trays back" are the same subordination, the same
+comma count, and only one of them is a habit.
+
+## Analyse, plan, then edit
+
+The first pass had each agent read its chapter and start editing. That gets the
+mechanical wins and misses everything that needs a whole chapter in view, which
+includes both paragraph measures above, sentence-length variation, and any run of
+short sentences that straddles the narration and the dialogue.
+
+The order that answers this:
+
+1. **Measure first.** `python3 prose_grade.py chapters/NN_x.md` for the twelve-plus-four,
+   `python3 style_report.py chapters/NN_x.md` for the bands and the tic scan. Name the
+   three measures this chapter is worst on. They differ by chapter: chapter 15 is
+   choppy (10.4 words per sentence, 59.8% under ten words), chapter 27 is already
+   long-sentenced and short-paragraphed.
+2. **Plan against those three.** Write the list of specific places before changing
+   any of them, with what each one becomes and which measure it moves. A plan that
+   would move a measure the chapter is already winning on is a plan to discard.
+3. **Then edit,** and measure again. A pass that improved the three targets and
+   quietly cost words per paragraph has not finished.
