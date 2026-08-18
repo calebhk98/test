@@ -34,7 +34,7 @@ its file and line number.
 | disagrees by | their Axis 2 move |
 | wordiness | n/10 and the measured words per line |
 | terseness | measured % of lines three words or fewer. A measurement, not a target. Do not set a goal above what the book already does |
-| at length | the circumstance under which this person speaks for more than three sentences, and what it costs them to |
+| at length | the conditions that open this person up, written so a scene that has not been written yet can meet them, and what it costs them |
 | jokiness | n/10 and what KIND of funny, which matters more than the number |
 | hedging | measured %, and whether that is right for them |
 | questions | measured %, and whether that is right for them |
@@ -42,18 +42,30 @@ its file and line number.
 
 ## When they talk at length
 
-Every character needs one. Half the spoken lines in this book run to three words or
-fewer, which caps what any scene can carry, and the sheets have been describing that
-cap and then enforcing it. So name the circumstance that opens this person up: the
-subject they cannot leave alone, the person they explain themselves to and nobody
-else, the situation that makes them argue instead of answer.
+**This section is an invitation, not a permit.** It exists to get more speech onto
+the page, and it is written for scenes that do not exist yet. Every character needs
+at least one condition here, and it has to be a condition, in the present tense,
+that a future scene can meet: the subject they cannot leave alone, the person they
+explain themselves to and nobody else, the situation that makes them argue instead
+of answer.
 
-It does not have to be frequent and it must not make them chatty. A character who
-speaks at length twice in a book has the capacity; a character with no such
-circumstance at all cannot carry a scene that needs one, and every attempt to write
-them one will read as out of character. Say what it costs them, too. Someone who
-talks freely when cornered is a different person from someone who talks freely only
-when safe.
+What it must not be is a sighting. "She goes long exactly once, in chapter eight" is
+a note about the draft, not a condition, and a sheet written that way can only ever
+license the instance that already exists. If the manuscript happens to contain one
+example, quote it as an illustration of the condition, not as its boundary.
+
+"Never" is not an available answer. A character with no such condition cannot carry
+a scene that needs one, and every later attempt to write them one will read as out
+of character. If nothing in the draft shows this person opening up, that is a gap in
+the draft, and the condition still has to be named so the gap can be filled.
+
+Two things keep this honest. Say what it costs them, because someone who talks
+freely when cornered is a different person from someone who talks freely only when
+safe. And keep the condition specific: it should be possible to read a scene and say
+plainly whether the condition is met, without arguing about it.
+
+A named condition being met is authorisation on its own. Nobody needs to come back
+and ask.
 
 ## Signature — theirs alone
 The one construction nobody else may use. Two real examples from the text if they exist,

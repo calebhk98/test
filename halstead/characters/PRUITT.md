@@ -25,9 +25,11 @@ Both of Pruitt's lines name the exact fault in the piece in front of him, delive
 
 ## When they talk at length
 
-He doesn't, and nothing here invents an occasion for it. Pruitt's entire spoken record across four years and three chapters is two sentences, nine words and eight: "Your heat's wrong and it has been all afternoon" and "You lost the curve on the second turn," both delivered while he was already walking away (see Signature, below). No scene shows him building past that, explaining a correction, or saying anything at all about four years of a student's unrewarded work.
+The subject has to be the metal, never the student. Ask him about a piece of work as *your* work and the answer is the same nine words it has always been, delivered on his way out. Ask him about the material itself, what the second heat does to a curve, why a period joint is made the way it is and not the easier way, and he will stand there and take it all the way down, because the metal is the one thing he considers worth the words.
 
-Silence does the job talking would do elsewhere. A full month of a new student's presence goes unremarked before he says a single word to her (chapters/15_twelve.md:9); good work gets nothing at all, the absence standing in for the absence of a fault to name. The forge runs on the same principle his two lines demonstrate: the metal, and the time spent at the bench, are what teach, and anything he might say at length would be doing the work the silence is already built to do.
+His two recorded lines are the whole of the other register, four years and three chapters of it: "Your heat's wrong and it has been all afternoon" and "You lost the curve on the second turn," both delivered while he was already walking away.
+
+It costs him the thing the silence is built to hide, which is that he has been watching. A full month of a new student's presence goes unremarked before he says a word to her (chapters/15_twelve.md:9), and good work gets nothing at all. A student who gets the long version about the metal learns, without being told, that he knew exactly what they were doing at the bench the whole time.
 
 ## Signature, theirs alone
 Delivers the correction while already leaving, never stops walking, never waits to see it register. Both of his only two lines share this exact staging. No other teacher in the cast is shown speaking exclusively while departing.

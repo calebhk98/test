@@ -27,9 +27,11 @@ Three to four words is her default; her longest recorded line is seven words. Sh
 
 ## When they talk at length
 
-She doesn't, and this sheet isn't proposing an occasion for her to start. Kayleigh's whole textual function runs on the opposite move: she states a flat complaint once and declines to back it with a reason, even when asked directly. Pressed for the mechanism behind "you talk weird," Chloe gets "How was it different, though?" answered with "It just was," Kayleigh says, and throws the ball. (chapters/01_before.md:48-49). That refusal is the point of the character, not a gap in her material — the book's test for a matter-of-fact complaint delivered without a "because" clause runs through her, and a scene that gives her three sentences of explanation would undo exactly what she's built to demonstrate.
+Not about a complaint, and never under challenge. Pressed for the mechanism behind "you talk weird," Chloe gets "It just was," and the ball thrown back (chapters/01_before.md:48-49). That refusal is the point of the character, the book's test for a matter-of-fact complaint delivered without a "because" clause, and a scene that gives her three sentences of self-explanation would undo what she is built to demonstrate.
 
-What happens instead of talking at length is already on the dial above: she repeats the bare assertion, unchanged, and goes back to whatever she was doing. That's not a placeholder for a longer answer she hasn't been given yet. It's the whole answer.
+The condition sits somewhere else entirely: explaining how a game works to somebody who does not know it yet, before it starts. She "organizes the games" and is "comfortable being the one who says how a game works," and in that mode she will run the whole rulebook out, the exceptions, the thing that happened last time that is why the rule exists now, at whatever length the rules take. It is teaching, not defending, which is why it does not collide with the refusal above.
+
+It costs her the position. Being the one who explained the rules makes her the one the game is charged to when it goes wrong, and she takes that charge without argument. Restating a rule to settle a dispute mid-game is the short form; the long form only happens before anyone is losing.
 
 ## Signature — theirs alone
 

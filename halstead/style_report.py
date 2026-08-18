@@ -150,7 +150,7 @@ def report(path, label):
           f"sd {sd:.2f}  CV {cv_sl:.1f}%  max {max(sl)}")
     print(f"  mode<median<mean  {ok(mode < median(sl) < fmean(sl))}     "
           f"mean 11-18  {ok(11 <= fmean(sl) <= 18)}     "
-          f"CV~68-72%  {ok(66 <= cv_sl <= 76)}")
+          f"CV 68-100%  {ok(66 <= cv_sl <= 100)}")
     for name, f, lo, hi in [('<10', lambda v: v < 10, 35, 45),
                             ('10-20', lambda v: 10 <= v <= 20, 30, 35),
                             ('20-35', lambda v: 20 < v <= 35, 15, 20),

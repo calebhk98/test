@@ -26,7 +26,7 @@ She teaches in full, complete instructions. When something goes wrong with a stu
 
 ## When they talk at length
 
-The subject she can't leave alone is the calm corner and the case for building it into every classroom, not just hers. She's raised it at full staff meetings at least twice, unprompted, arguing that "everyone says she's the nice one" is the school outsourcing its own job to whichever teacher happens to be soft-hearted that year, and that a beanbag and a permission-free timer shouldn't depend on one teacher's weekend course and her own pocket. It's the only place in her range where she argues instead of just acting.
+The subject she can't leave alone is the calm corner and the case for building it into every classroom, not just hers. She's raised it at full staff meetings at least twice, unprompted, arguing that "everyone says she's the nice one" is the school outsourcing its own job to whichever teacher happens to be soft-hearted that year, and that a beanbag and a permission-free timer shouldn't depend on one teacher's weekend course and her own pocket. It is the one subject that makes her argue instead of just acting, and she will raise it again every time the school hands the job to whoever is soft-hearted that year.
 
 It costs her the thing she's actually good at. Each time she makes the case, "polite interest and no action" is what comes back, so the extended version of her voice is the one that reliably fails to move anything, while her wordless crouch beside a single desk works every time she tries it. Length, for her, is associated with exactly the kind of appeal that doesn't land; the floor-level silence is the register that does.
 

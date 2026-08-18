@@ -17,9 +17,11 @@ No quoted line exists to measure. Efficient, unsentimental, addresses the room o
 
 ## When they talk at length
 
-No scene shows her doing this, and the one piece of reported speech the book gives her argues against inventing one. Everything Fen says to a new roommate is delivered "without stopping what she is doing," two practical facts about the room and the radiator, and then "she goes back to whatever she was doing when the door opened" (chapters/10_april.md:15). That's the whole of her verified voice: brief, mid-task, and finished the moment the practical information is out.
+No scene shows her doing it yet, and the condition is not the one a scene would reach for first. Fen will not be drawn out about herself, about the day, or about anybody in the corridor. What opens her is somebody asking about the *system* rather than the objects: not "what's the rock for" but how the order is decided, what happens when a new one has to go in the middle, why the list of who had the room before her stops where it stops. Asked properly about a record she keeps, she explains the whole of it, and the whole of it is long, because the rules are the part she has actually thought about.
 
-What stands in for a longer conversation is the object, not the sentence. The rock collection, kept in size order across every room change, and the private list of who had her room before her are both explained once, briefly, or not explained at all — Fen keeps the record instead of narrating it. If a scene ever needs her to communicate something at length, the honest version isn't a monologue; it's showing someone the shoebox, or the list, and letting them read what she's never said out loud.
+Her ordinary register argues for the narrowness of that condition rather than against it. Everything she says to a new roommate is delivered "without stopping what she is doing," two practical facts about the room and the radiator, and then "she goes back to whatever she was doing when the door opened" (chapters/10_april.md:15).
+
+It costs her the record's privacy, which is most of what the record was for. The rocks in size order and the list of previous occupants are the two things in her life nobody has asked her to justify, and explaining the system hands somebody else a say in it. She will do it once for a person and watch what they do with it.
 
 ## Signature — theirs alone
 

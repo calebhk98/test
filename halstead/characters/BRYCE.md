@@ -27,9 +27,11 @@ His one substantive line is a flat comparative report, present tense against pas
 
 ## When they talk at length
 
-He doesn't, and this sheet isn't inventing a scene where he starts. Bryce has two lines in the whole book, ten words between them, and his own "Would they say this?" rule above bans the exact move a longer turn would need: "NO if it explains the mechanism behind the change. He reports the observation; he does not analyze it." A version of Bryce who ran three sentences past "You were weird before and now you're weirder" would be a version of Bryce explaining himself, a different, lesser character than the one the text gives, one whose whole force comes from reporting a true thing once and stopping.
+Not about a person, and never explaining an observation he has already made. His own "Would they say this?" rule bans the move a longer turn about Chloe would need: "NO if it explains the mechanism behind the change. He reports the observation; he does not analyze it." A Bryce who ran three sentences past "You were weird before and now you're weirder" would be a lesser character than the one the text gives.
 
-What happens instead is the second line: "Yeah," Bryce says, and turns back around. (chapters/07_the_same_room.md:133). Disengagement is the substitute for elaboration. He says the true thing, confirms it if asked, and goes back to what he was doing, the same shape as his uncle's diagnose-before-you-touch-it method, applied to a sentence instead of an engine.
+Machinery is the exception, and it is a real one. His uncle's rule, diagnose before you touch it, is the whole of his method, and put him in front of something mechanical that is behaving wrongly, with somebody about to put a hand on it, and he will run the diagnosis out loud in full: what it is doing, what that means, what to check first and what not to touch until then. He is not performing knowledge. He is stopping somebody from making it worse.
+
+It costs him the flat register he otherwise keeps everywhere, and he does not notice paying it. The boy who says a true thing once and turns back around (chapters/07_the_same_room.md:133) is the same boy who will not let a mistake happen in front of him, and the second one talks.
 
 ## Signature — theirs alone
 

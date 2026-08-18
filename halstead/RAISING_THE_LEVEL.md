@@ -111,10 +111,13 @@ spend its budget trying.
   gain has to come from a real combination or a real subordination.
 - **Do not reach for a fancier word.** Lexical diversity improves by choosing a
   different ordinary word, not a longer one.
-- **Do not lengthen dialogue that a character sheet does not license.** Each sheet
-  now has a "When they talk at length" section naming the circumstance and its
-  cost. Half the spoken lines in this book run to three words or fewer, and some
-  of that is character rather than defect.
+- **Lengthen dialogue where a character sheet's condition is met.** Each sheet has
+  a "When they talk at length" section naming the conditions that open that person
+  up and what it costs them. A met condition is authorisation on its own. Half the
+  spoken lines in this book run to three words or fewer, and while some of that is
+  character, ten agents working under the earlier wording of this line added zero
+  words of dialogue across ten chapters, which is not a result any cast produces
+  honestly.
 - **Do not sand down a short sentence that is doing work.** Rule 11 wants variety,
   not uniform length. A short sentence after three long ones is a device.
 - **Do not trail an explanatory clause to get the comma.** Move it inside the

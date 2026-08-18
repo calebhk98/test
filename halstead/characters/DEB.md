@@ -12,7 +12,11 @@ Chloe's account carries her whole presence on the page: "Deb who sits opposite h
 
 ## When they talk at length
 
-Nothing in the text stages this, so nothing here is invented to fill the gap. What the manuscript's own summary establishes is that talking about Tyler at length is Deb's ordinary mode, not a rare break from a terser baseline: she "talks about her son constantly," and Chloe knows his "entire life story" by October, which only happens if that's most of what fills a lull. There's no scene of it, no quoted line long or short, so there's no verified circumstance to name beyond any conversation, most days, and no textual cost to report either. The kindly-and-inadequate test above already says this plainly: nothing about the relationship costs Chloe anything, and nothing in the text suggests it costs Deb anything either. That absence of cost is itself worth keeping rather than fixing with an invented scene.
+Her son. Any lull, most days, with anyone in the car. The manuscript's own summary establishes this as her ordinary mode rather than a rare break from a terser baseline: she "talks about her son constantly," and Chloe knows Tyler's "entire life story" by October, which only happens if that is most of what fills the quiet. No scene stages it, so the sheet quotes none, but the condition is not in doubt and a scene that puts her in a car with a passenger and no agenda has this available without further permission.
+
+There is a second, sharper version worth writing: someone who is doing well at something Tyler tried and did not stick with. She will not be bitter about it, and she will not stop, and the account gets longer and warmer and more detailed the closer the comparison runs.
+
+The cost is not hers, which is the honest finding rather than a gap. Nothing about the relationship costs Chloe anything either. What it costs is the conversation: Tyler is the only subject Deb has that runs, so a scene that needs her to be at length about anything else will stall, and that limit is the character.
 
 ## Would they say this?
 

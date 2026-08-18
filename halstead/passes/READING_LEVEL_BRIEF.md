@@ -12,9 +12,11 @@ grade without breaking the prose rules, the style rules, or the characters.
 - `RAISING_THE_LEVEL.md`. This is the method: five mechanisms that work, the
   paragraph finding, the front-loading ceiling, and what not to do.
 - The character sheet in `characters/` for anyone who speaks in your chapter.
-  Each has a "When they talk at length" section naming the circumstance under
-  which that person speaks for more than three sentences, and what it costs
-  them. Outside that circumstance, do not lengthen their dialogue.
+  Each has a "When they talk at length" section naming the conditions that open
+  that person up and what it costs them. **This is an invitation.** Where a scene
+  meets one of those conditions, giving that character more to say is authorised
+  and wanted, and you do not need to come back and ask. Where it does not, leave
+  the line alone.
 
 ## The order of work
 
@@ -32,7 +34,8 @@ short-paragraphed. A change that helps one hurts another.
 Write `passes/plans/NN.md` first. For each change: the quoted text now, what it
 becomes, and which measure it moves. Then look at the list as a whole and cut
 anything that moves a measure the chapter is already winning on, anything that
-is padding, and anything the character sheet does not license.
+is padding, and any added dialogue whose character sheet condition the scene does
+not actually meet.
 
 This step is the point of the pass. The previous round edited immediately, got
 the mechanical wins, and missed everything that needs the whole chapter in

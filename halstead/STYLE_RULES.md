@@ -191,12 +191,12 @@ Guide 1 (baseline is the aim; derived from a genre corpus at mean 17.3, median 1
 | over 35 words | 8% | 4-6% |
 | mean | 17.3 | 15-17 |
 | median | 14 | 13-14 |
-| CV | ~72% | 65-78% |
+| CV | ~72% | 65-100% (raised, see below) |
 
 Guide 2 target:
 
 - Mean: 11-18 words
-- CV: 68-72%
+- CV: 68-100% (raised, see below)
 - Under 10 words: 35-45%
 - 10-20 words: 30-35%
 - 20-35 words: 15-20%
@@ -359,8 +359,40 @@ Listed here so an agent does not have to reconcile them alone.
 - **Under-10-word sentence share.** Guide 1: baseline 30%, working range 30-36%. Guide 2: target 35-45%. These barely overlap, only at the 35-36% edge.
 - **Mean words per sentence.** Guide 1: baseline 17.3, working range 15-17. Guide 2: target 11-18, a much wider band that would accept numbers Guide 1's working range would reject.
 - **Over-35-word sentence share.** Guide 1: baseline 8%, working range 4-6%. Guide 2: target 5% or under. Close, but Guide 1's baseline figure exceeds Guide 2's ceiling.
-- **Sentence-length CV.** Guide 1: baseline about 72%, working range 65-78%. Guide 2: target 68-72%, a narrower band nested inside Guide 1's range rather than contradicting it.
+- **Sentence-length CV.** Guide 1: baseline about 72%, working range 65-78%. Guide 2: target 68-72%, a narrower band nested inside Guide 1's range rather than contradicting it. **Both are superseded: the ceiling is now 100%.** See "Why the CV ceiling moved" below.
 - **"Which" rate.** Within Guide 2 alone, the prose section targets 0.2-0.3% but the checklist and its scoring script allow up to 0.4%. Not a cross-guide conflict, but an internal inconsistency worth flagging.
 - **Paragraph CV.** Not a true disagreement: Guide 1's "current drafts" figure of 66-80% is a status reading, not a target, and Guide 1's own baseline target of 101-107% matches Guide 2's target of 100% or higher.
 
 Everything outside these numeric bands (POV and tense, register, reification, similes, the trailing clause, comma joins for speech and body, the automatic-fail construction list, structure, and the ranked failure modes) is consistent between the two guides. Guide 2's section 1 states the same core rule as Guide 1's section 2 in different words: figurative language belongs in mouths and heads, narration reports.
+
+## Why the CV ceiling moved
+
+Sentence-length CV is the standard deviation of sentence lengths over the mean.
+Both guides put the ceiling near 72-78%. Measured against 23 books, only three
+fall inside 65-78%; the corpus runs 64.3 to 100.6 with a median of 85.3. The old
+ceiling ruled out four books in five.
+
+What the number turns out to measure is worth knowing before anyone chases it.
+Across the whole 1-45 word range this book and Tom Sawyer, at CV 100.6, have
+almost the same distribution, and Tom Sawyer is the more short-sentenced of the
+two: 29.7% of its sentences are under six words against this book's 28.2%. The
+entire gap is in the tail.
+
+| | 1-5 | 6-10 | 11-15 | 16-20 | 21-30 | 31-45 | 46+ | longest |
+| :-- | --: | --: | --: | --: | --: | --: | --: | --: |
+| this book, CV 79.5 | 28.2 | 24.1 | 16.1 | 11.2 | 12.9 | 6.7 | 0.9 | 71 |
+| Peter Pan, CV 82.5 | 23.7 | 23.3 | 16.5 | 12.2 | 13.9 | 7.8 | 2.6 | 104 |
+| Tom Sawyer, CV 100.6 | 29.7 | 25.3 | 14.9 | 9.5 | 11.0 | 6.1 | 3.6 | 174 |
+| Winesburg, CV 64.3 | 10.8 | 21.2 | 19.8 | 17.6 | 19.6 | 8.9 | 2.0 | 133 |
+
+Remove Tom Sawyer's 35 sentences longer than 71 words, 0.65% of the book, and
+its CV drops from 100.6 to 90.6. Remove Peter Pan's eleven, and 82.5 becomes
+79.3, below this book. Ten sentences of 110 words added to this manuscript would
+take it from 79.5 to 84.0.
+
+So CV is not a measure of rhythmic variety in any sense a reader experiences. It
+is close to a measure of whether the book ever writes an enormous sentence. Note
+that Winesburg, the most adult book in the corpus, has the lowest CV of the 23:
+its sentences are long and consistently long. A high CV is permitted now, not
+required, and it is not a target to optimise toward. What it stops being is a
+reason to refuse a sentence that wants to run.
