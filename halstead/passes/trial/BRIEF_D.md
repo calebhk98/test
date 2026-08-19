@@ -18,6 +18,17 @@ what it says.
 
 Not a summary of the chapter. Not the interesting ones. Every paragraph.
 
+**Work out what a paragraph is in your file first, because it differs.** Most
+chapters separate paragraphs with a blank line. Chapters one to six do not: every
+paragraph is a line ending in two trailing spaces, with no blank lines anywhere,
+so the file looks like three enormous blocks and is actually a hundred and
+twenty-odd paragraphs. Run
+
+    grep -c '  $' chapters/NN_x.md
+
+If that number is large, that is your paragraph count and restating the three
+blocks instead will find you nothing. This has already sunk one pass.
+
 This is mechanical and it will feel like a waste of time. It is not. A fluent
 chapter reads as though it makes sense, and reading it will tell you that it
 does. Writing each paragraph back in your own words is the only reliable way to
