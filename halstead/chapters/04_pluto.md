@@ -27,7 +27,7 @@ Her mom picks up in the middle of the first ring.
 "I want to come there," Chloe says.  
 "Okay. Yeah. Okay, stay right where you are, I'm coming."  
 The hotel is half a mile away, and her mom is at the front desk already dressed.  
-Chloe sleeps in the second bed with the bathroom light on and the door open as much as her mom checks with her about first, one hand pressed flat against the spare pillow that smells like the hotel's detergent and not their own.  
+Chloe sleeps in the second bed with the bathroom light on and the door open, her mom asking first how far, one hand pressed flat against the spare pillow that smells like the hotel's detergent and not their own.  
 "Do you want to talk about it?" Her mom is still in her shoes, sitting on the arm of the chair by the window.  
 "No."  
 "Okay." She gets up, turns the other bed down, sits on the end of it. "Do you want me to talk about something?"  
