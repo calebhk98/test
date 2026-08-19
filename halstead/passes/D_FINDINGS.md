@@ -139,10 +139,14 @@ These are checkable and wrong. Highest priority.
   outside for twenty minutes." The chapter is on Chloe (L116, "Chloe reads yes twice before anyone
   types again"), and Theo never reports this in the chat. A document can't contain his reaction to
   reading it, and nobody tells her. *(verified directly)*
-- **ch23 L137 vs ch24 L432 — Nadia is hiring and unemployed in the same September.** Chapter 23
-  (June 2023): "by September she's hiring." Chapter 24 (September 2023): "Nadia is behind the counter
-  more hours a week now than she's ever been, since none of the two months of interviews turned into
-  anything worth taking." *(verified directly)*
+- **Nadia's company: chapter 24 is the odd one out, and it can be fixed alone.** Three chapters
+  give her timeline and two of them agree. ch23 (June 2023) L137: "by June she's started something of
+  her own, and by September she's hiring." ch28 (May 2024) L8: "She's forty people and eleven months
+  old" — eleven months back is June 2023, matching ch23 exactly. Only ch24 (September 2023) L432
+  disagrees: "Nadia is behind the counter more hours a week now than she's ever been, since none of
+  the two months of interviews turned into anything worth taking." That is three months into running
+  a company that will be forty people by the following May. Two independent chapters against one
+  says the fix belongs in ch24. *(all three verified directly)*
 - **ch24 L139 — "kavi: room-shaped object."** The line is Sam's, from ch4 L47, and it is his one
   permitted figurative move; three separate reference files name it as exclusively his, and it is the
   joke that breaks Chloe's panic attack at their first meeting. Putting the callback in Kavi's mouth
