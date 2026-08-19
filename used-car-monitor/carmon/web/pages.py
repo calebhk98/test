@@ -13,6 +13,7 @@ from typing import Any, Dict, List, Optional, Tuple
 from .. import db, demo, market, quota
 from ..config import get_secret
 from ..nhtsa import recall_lookup_url, vin_recall_url
+from ..result_shapes import nhtsa_urls
 from ..settings import (
     SettingsError,
     apply_changes,
@@ -128,8 +129,7 @@ class PageHandlers:
         appraisal_obj = market.appraise_vin(conn, vin, self.config)
         market_html = render.appraisal_block(appraisal_obj.as_dict() if appraisal_obj else None)
 
-        nhtsa_vin_url = vin_recall_url(vin)
-        nhtsa_model_url = recall_lookup_url(make, model, year) if make and model and year else None
+        nhtsa_vin_url, nhtsa_model_url = nhtsa_urls(vin, make, model, year, vin_recall_url, recall_lookup_url)
         reliability = db.get_reliability(conn, make, model, year) if make and model and year else None
         reliability_html = _reliability_section(reliability, nhtsa_vin_url, nhtsa_model_url, make, model, year)
 

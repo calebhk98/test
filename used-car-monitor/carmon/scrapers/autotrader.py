@@ -59,6 +59,7 @@ from urllib.parse import urlencode
 
 from .base import ScraperBase, register
 from .parsing import (
+    CITY_STATE_RE as _CITY_STATE_RE,
     NEXT_DATA_SCRIPT_RE as _NEXT_DATA_RE,
     YEAR_RE as _YEAR_RE,
     absolute_url as _absolute_url,
@@ -97,7 +98,6 @@ _PAGE_SIZE = 25
 _WINDOW_STATE_RE = re.compile(
     r"window\.__[A-Za-z0-9_]+__\s*=\s*(\{.*?\})\s*;\s*(?:</script>|\r?\n)", re.S
 )
-_CITY_STATE_RE = re.compile(r"^[A-Za-z][A-Za-z .'\-]*,\s*[A-Z]{2}$")
 
 
 @register

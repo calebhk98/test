@@ -82,6 +82,7 @@ from urllib.parse import urlencode
 
 from .base import ScraperBase, register
 from .parsing import (
+    CITY_STATE_RE as _CITY_STATE_RE,
     NEXT_DATA_SCRIPT_RE as _NEXT_DATA_RE,
     YEAR_RE as _YEAR_RE,
     absolute_url as _absolute_url,
@@ -115,7 +116,6 @@ DISALLOWED_PATH_FRAGMENTS = (
     "/dash/",
 )
 
-_CITY_STATE_RE = re.compile(r"^[A-Za-z][A-Za-z .'\-]*,\s*[A-Z]{2}$")
 _DEAL_RATING_RE = re.compile(
     r"\b(Great|Good|Fair|High|Overpriced)\s+(?:Price|Deal)\b", re.I
 )

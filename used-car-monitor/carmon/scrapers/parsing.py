@@ -167,14 +167,15 @@ def scalar(value: Any) -> Optional[str]:
 # 17-character VIN pattern (excludes I/O/Q per the VIN standard). Used as a last-resort
 # fallback when a field mapping has no clearly-named VIN key but a string field happens to
 # contain one -- e.g. buried in a listing URL or a title attribute.
+# "Nashville, TN" as it appears on its own inside a listing card — used to recognise which
+# text chunk is the dealer's location when a card gives no explicit field for it.
+CITY_STATE_RE = re.compile(r"^[A-Za-z][A-Za-z .'\-]*,\s*[A-Z]{2}$")
+
 VIN_RE = re.compile(r"\b[A-HJ-NPR-Z0-9]{17}\b")
 
 # A plausible model year, generous on both ends (1950-2049) so it isn't broken by whichever
 # year this code happens to run in.
 YEAR_RE = re.compile(r"\b(19[5-9]\d|20[0-4]\d)\b")
-
-# 'Nashville, TN' - a two-to-three letter state/territory code after a comma.
-CITY_STATE_RE = re.compile(r"^[A-Za-z][A-Za-z .'\-]*,\s*[A-Z]{2}$")
 
 
 def find_ci(d: Any, *names: str) -> Any:

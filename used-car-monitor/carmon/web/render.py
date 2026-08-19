@@ -10,7 +10,7 @@ from __future__ import annotations
 import html
 from typing import Any, Dict, List, Optional, Tuple
 
-from .. import db, market, quota
+from .. import db, demo, market, quota
 
 __all__ = [
     "e", "fmt_money", "fmt_num", "fmt_mpg", "score_class", "demo_tag",
@@ -69,7 +69,7 @@ def score_class(score: Optional[float]) -> str:
 
 
 def demo_tag(item: Dict[str, Any]) -> str:
-    if item.get("source") != "demo":
+    if item.get("source") != demo.DEMO_SOURCE:
         return ""
     return ' <span class="badge demo" title="Demo data seeded for browsing -- not a real listing">DEMO</span>'
 

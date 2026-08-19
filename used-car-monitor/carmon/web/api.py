@@ -8,7 +8,6 @@ provided by that class -- this module only owns turning a request into a JSON pa
 
 from __future__ import annotations
 
-import json
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -16,6 +15,7 @@ import carmon
 from .. import db, demo, market, quota
 from ..config import get_secret
 from ..nhtsa import recall_lookup_url, vin_recall_url
+from ..result_shapes import count_envelope, nhtsa_urls, reliability_row_to_dict
 from ..settings import (
     SettingsError,
     apply_changes,
@@ -99,13 +99,7 @@ class ApiHandlers:
             filters["max_complaints"] = max_complaints
         if max_recalls is not None:
             filters["max_recalls"] = max_recalls
-        self._send_json({
-            "count": len(results),
-            "limit": limit,
-            "offset": offset,
-            "filters": filters,
-            "listings": results,
-        })
+        self._send_json(count_envelope("listings", results, limit=limit, offset=offset, filters=filters))
 
     def _filter_by_nhtsa(
         self,
@@ -147,10 +141,11 @@ class ApiHandlers:
             pipeline = None  # type: ignore[assignment]
         if pipeline is not None:
             listing = pipeline.attach_cached_enrichment(conn, listing)
-        listing["nhtsa_vin_url"] = vin_recall_url(vin)
         make, model, year = listing.get("make"), listing.get("model"), listing.get("year")
-        if make and model and year:
-            listing["nhtsa_model_url"] = recall_lookup_url(make, model, year)
+        vin_url, model_url = nhtsa_urls(vin, make, model, year, vin_recall_url, recall_lookup_url)
+        listing["nhtsa_vin_url"] = vin_url
+        if model_url:
+            listing["nhtsa_model_url"] = model_url
         appraisal = market.appraise_vin(conn, vin, self.config)
         listing["appraisal"] = appraisal.as_dict() if appraisal else None
         self._send_json(listing)
@@ -183,17 +178,8 @@ class ApiHandlers:
 
     def _api_reliability_list(self, conn: Any, params: Dict[str, List[str]]) -> None:
         rows = conn.execute("SELECT * FROM model_reliability ORDER BY complaint_count DESC").fetchall()
-        models = []
-        for row in rows:
-            data = dict(row)
-            for field in ("top_components", "recalls"):
-                if isinstance(data.get(field), str) and data[field]:
-                    try:
-                        data[field] = json.loads(data[field])
-                    except json.JSONDecodeError:
-                        data[field] = None
-            models.append(data)
-        self._send_json({"count": len(models), "models": models})
+        models = [reliability_row_to_dict(row) for row in rows]
+        self._send_json(count_envelope("models", models))
 
     def _api_listing_history(self, conn: Any, params: Dict[str, List[str]], vin: str) -> None:
         listing = db.get_listing(conn, vin)
@@ -206,21 +192,23 @@ class ApiHandlers:
         days = parse_int(params, "days") or 1
         limit = parse_int(params, "limit") or 25
         limit = max(1, min(limit, 500))
-        listings = db.new_listings_since(conn, since_date(days), limit=limit)
-        self._send_json({"count": len(listings), "days": days, "since": since_date(days), "listings": listings})
+        since = since_date(days)
+        listings = db.new_listings_since(conn, since, limit=limit)
+        self._send_json(count_envelope("listings", listings, days=days, since=since))
 
     def _api_price_drops(self, conn: Any, params: Dict[str, List[str]]) -> None:
         days = parse_int(params, "days") or 1
         limit = parse_int(params, "limit") or 25
         limit = max(1, min(limit, 500))
-        listings = db.price_drops_since(conn, since_date(days), limit=limit)
-        self._send_json({"count": len(listings), "days": days, "since": since_date(days), "listings": listings})
+        since = since_date(days)
+        listings = db.price_drops_since(conn, since, limit=limit)
+        self._send_json(count_envelope("listings", listings, days=days, since=since))
 
     def _api_top(self, conn: Any, params: Dict[str, List[str]]) -> None:
         limit = parse_int(params, "limit") or 5
         limit = max(1, min(limit, 500))
         listings = db.search_listings(conn, sort="score", limit=limit)
-        self._send_json({"count": len(listings), "listings": listings})
+        self._send_json(count_envelope("listings", listings))
 
     def _api_digest_latest(self, conn: Any, params: Dict[str, List[str]]) -> None:
         path, markdown = self._latest_digest()
@@ -236,7 +224,7 @@ class ApiHandlers:
         limit = parse_int(params, "limit") or 10
         limit = max(1, min(limit, 500))
         runs = db.recent_runs(conn, limit=limit)
-        self._send_json({"count": len(runs), "runs": runs})
+        self._send_json(count_envelope("runs", runs))
 
     def _api_market(self, conn: Any, params: Dict[str, List[str]]) -> None:
         months = parse_int(params, "months") or 6
@@ -269,7 +257,7 @@ class ApiHandlers:
         limit = parse_int(params, "limit") or 10
         limit = max(1, min(limit, 200))
         deals = market.best_deals(conn, limit=limit, config=self.config)
-        self._send_json({"count": len(deals), "deals": deals})
+        self._send_json(count_envelope("deals", deals))
 
     # -- scraper adapters ---------------------------------------------------
     def _scrapers_overview(self, conn: Any) -> Dict[str, Any]:
@@ -327,7 +315,7 @@ class ApiHandlers:
         limit = max(1, min(limit, 200))
         source = parse_str(params, "source")
         events = db.recent_scrape_events(conn, limit=limit, source=source)
-        self._send_json({"count": len(events), "events": events})
+        self._send_json(count_envelope("events", events))
 
     def _api_scrapers_run(self, conn: Any, params: Dict[str, List[str]]) -> None:
         body = self._read_body_dict()
@@ -353,7 +341,7 @@ class ApiHandlers:
         if pipeline is None:
             raise ApiError(501, "pipeline module is unavailable")
         results = pipeline.probe_scrapers(self.config, conn)
-        self._send_json({"count": len(results), "results": results})
+        self._send_json(count_envelope("results", results))
 
     def _api_scrapers_toggle(self, conn: Any, params: Dict[str, List[str]]) -> None:
         body = self._read_body_dict()

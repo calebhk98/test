@@ -6,7 +6,6 @@ dict, and returns an MCP tools/call result built via protocol.text_result.
 
 from __future__ import annotations
 
-import json
 from typing import Any, Dict, List, Optional, Tuple
 
 from .. import db as dbmod
@@ -16,6 +15,8 @@ from .. import quota as quotamod
 from .. import scoring as scoringmod
 from .. import settings as settingsmod
 from .. import sources as sourcesmod
+from ..result_shapes import count_envelope, reliability_row_to_dict
+from ..result_shapes import nhtsa_urls as _shaped_nhtsa_urls
 
 from .imports import import_required, try_import
 from .params import (
@@ -37,6 +38,9 @@ from .protocol import ToolError, text_result
 # demo-data warning, the '{count, listings, ...}' envelope shared by every
 # listing-shaped tool, cached-enrichment attachment, and the NHTSA.gov URL
 # lookups -- each of which used to be its own inline try/except ImportError.
+# `count_envelope` and `reliability_row_to_dict` are the same data shape the
+# web API builds too (see carmon.result_shapes); what stays here is MCP-only:
+# the text_result/isError envelope and the lazy nhtsa import.
 # --------------------------------------------------------------------------
 
 def with_demo_warning(server, payload: Dict[str, Any], listings: List[Optional[Dict[str, Any]]]) -> Dict[str, Any]:
@@ -54,9 +58,7 @@ def listings_result(server, rows: List[Dict[str, Any]], **extra: Any) -> Dict[st
     """Build the '{..., count, listings}' + demo-warning + text-result envelope
     shared by search_listings, top_listings, new_listings, price_drops,
     best_deals and list_comparables."""
-    payload: Dict[str, Any] = dict(extra)
-    payload["count"] = len(rows)
-    payload["listings"] = rows
+    payload = count_envelope("listings", rows, **extra)
     return text_result(with_demo_warning(server, payload, rows))
 
 
@@ -80,22 +82,10 @@ def nhtsa_urls(vin: str, listing: Dict[str, Any]) -> Tuple[Optional[str], Option
     """Return (vin_url, model_url) NHTSA.gov links for a listing, via a lazy
     nhtsa import. Both are None if the nhtsa module is unavailable."""
     recall_lookup_url, vin_recall_url = try_import("nhtsa", "recall_lookup_url", "vin_recall_url")
-    vin_url = vin_recall_url(vin) if vin_recall_url else None
-    model_url = None
-    if recall_lookup_url and listing.get("make") and listing.get("model") and listing.get("year"):
-        model_url = recall_lookup_url(listing["make"], listing["model"], listing["year"])
-    return vin_url, model_url
-
-
-def reliability_row_to_dict(row: Any) -> Dict[str, Any]:
-    data = dict(row)
-    for field_name in ("top_components", "recalls"):
-        if isinstance(data.get(field_name), str) and data[field_name]:
-            try:
-                data[field_name] = json.loads(data[field_name])
-            except json.JSONDecodeError:
-                data[field_name] = None
-    return data
+    return _shaped_nhtsa_urls(
+        vin, listing.get("make"), listing.get("model"), listing.get("year"),
+        vin_recall_url, recall_lookup_url,
+    )
 
 
 def latest_digest_text(config) -> str:
