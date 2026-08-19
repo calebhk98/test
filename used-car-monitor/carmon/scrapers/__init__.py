@@ -1,43 +1,48 @@
 """Adapter slots for non-MarketCheck sources.
 
-v1 deliberately ships **no scrapers** — SPEC.md lists scraping Autotrader/CarGurus/
-Cars.com/CarMax as an explicit non-goal, and `carmon/sources.py` covers those sites
-with plain deep links instead.
+Optional, opt-in, and heavily rate-limited. MarketCheck's API remains the primary source;
+these adapters exist for when its free tier is not enough.
 
-This package exists so that, if MarketCheck's free tier turns out not to be worth
-the quota, a source can be added without touching the pipeline: implement
-`ListingSource.fetch()` to return dicts shaped like `pipeline.normalize_listing()`
-output (vin, year, make, model, trim, body_type, fuel_type, mileage, price_current,
-dealer_*, distance_miles, cpo, listing_url, source) and register it in `REGISTRY`.
+`base.py` holds the restraint: robots.txt always obeyed (and failing closed when it cannot
+be read), hard daily caps enforced through a SQLite ledger, a minimum delay between
+requests, and no attempt whatsoever to work around bot protection. A site that answers with
+a challenge is recorded as blocked and left alone.
 
-Before enabling any such adapter, check the target site's Terms of Service and
-robots.txt — several of these sites prohibit automated collection, and some offer
-official feeds or affiliate APIs that are the supported path instead.
+Everything here is **off by default** — `scrapers.enabled` plus the individual source must
+both be switched on in config.json. Check a site's Terms of Service before enabling it;
+several prohibit automated collection outright, and `sources.py` keeps plain browsing links
+for exactly that reason.
 """
 
 from __future__ import annotations
 
-from typing import Any, Dict, Iterable, List, Protocol
+from .base import (  # noqa: F401  (re-exported for adapters and callers)
+    REGISTRY,
+    BlockedError,
+    BudgetExhausted,
+    Fetcher,
+    RobotsCache,
+    RobotsDisallowed,
+    ScrapeLimits,
+    ScrapeResult,
+    ScraperBase,
+    ScraperError,
+    available,
+    register,
+)
 
+# Importing an adapter module registers it. Adapters stay disabled until switched on in
+# config.json under `scrapers.sources`. A broken or missing adapter must not take down the
+# rest of the tool, so each import is attempted independently and failures are logged.
+import importlib as _importlib  # noqa: E402
+import logging as _logging  # noqa: E402
 
-class ListingSource(Protocol):
-    """Interface every alternative source must implement."""
+_LOG = _logging.getLogger("carmon.scrapers")
 
-    key: str
-    name: str
+ADAPTER_MODULES = ("repairpal", "autotrader", "cars_com")
 
-    def fetch(self, search: Dict[str, Any]) -> Iterable[Dict[str, Any]]:
-        """Yield normalized listing dicts for the given search config."""
-        ...
-
-
-REGISTRY: Dict[str, ListingSource] = {}
-
-
-def register(source: ListingSource) -> ListingSource:
-    REGISTRY[source.key] = source
-    return source
-
-
-def available() -> List[str]:
-    return sorted(REGISTRY)
+for _name in ADAPTER_MODULES:
+    try:
+        _importlib.import_module(f"{__name__}.{_name}")
+    except Exception as _exc:  # noqa: BLE001 - a bad adapter is not a fatal condition
+        _LOG.warning("Scraper adapter %r could not be loaded: %s", _name, _exc)

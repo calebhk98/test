@@ -13,6 +13,7 @@ time, scores every listing deterministically, and then tells you about it four w
 | **JSON API** | same server, `/api/*` | Everything the website shows, as JSON |
 | **MCP server** | `python3 -m carmon mcp` | Tools so Claude (or any MCP client) can query your data |
 | **Deal check** | `python3 -m carmon appraise` / `market` / `deals` | Is this price good? Where is the market heading? |
+| **Scrapers** | `python3 -m carmon scrape` | Optional, off by default, hard-capped (see §11) |
 
 Python 3.11+, one runtime dependency (`requests`); everything else is standard library.
 
@@ -520,13 +521,101 @@ decoration:
 The comparison also feeds the score as a **`vs market`** component (up to ±1.5, full value at
 12% off the expected price), which stays at 0 until there are at least 6 comparables.
 
-## 11. Tests
+## 11. Optional scrapers (off by default)
+
+MarketCheck's API is the supported path and stays primary. These adapters exist for when its
+free tier is not enough — and they are deliberately timid.
+
+```bash
+python3 -m carmon scrape --probe     # one request per adapter: is it reachable from here?
+python3 -m carmon scrape --status    # today's usage against the caps
+python3 -m carmon scrape             # run the enabled adapters
+python3 -m carmon scrape --source repairpal --dry-run
+```
+
+### The limits, and where they are enforced
+
+| Limit | Default | Where |
+| --- | --- | --- |
+| Listings per day, all sources | **100** | SQLite ledger (`scrape_usage`) |
+| HTTP requests per day, all sources | **20** | same ledger |
+| Pages per source per run | **2** | `ScrapeLimits.max_pages_per_run` |
+| Minimum gap between requests | **5s**, or the site's `Crawl-delay` if longer | `Fetcher._sleep` |
+
+The caps live in the database, not in memory, so re-running the command cannot reset them —
+a test asserts exactly that. Everything is off until **both** `scrapers.enabled` and the
+individual source are switched on in `config.json`.
+
+### Rules that are not configurable
+
+* **robots.txt is always obeyed**, and it **fails closed**: if robots.txt cannot be fetched,
+  the whole site is treated as off limits. There is no flag to disable this.
+* **No evasion.** One honest User-Agent that says what the tool is (a test asserts it does not
+  impersonate a browser), no proxies, no cookie or fingerprint games, no CAPTCHA solving, and
+  no retry-with-a-different-identity. If a site answers with a bot challenge, the adapter
+  records `blocked` and stops. A challenge is a site saying it does not want automated
+  traffic, and the right response is to respect that — `python3 -m carmon sources` gives you
+  the browsing links instead.
+* **VIN or nothing.** A scraped listing without a VIN is dropped, because VIN is what
+  deduplicates against MarketCheck data.
+
+Scraped listings then flow through exactly the same filtering, NHTSA/EPA enrichment, scoring
+and market comparison as API ones, tagged with their source.
+
+### What actually works today
+
+Measured from this machine (a datacenter IP) on 2026-08-19:
+
+| Source | Result |
+| --- | --- |
+| **RepairPal** | ✅ real HTML, robots.txt allows model pages — repair cost and reliability data |
+| **Autotrader** | 🚫 search pages answer with a bot challenge (robots.txt itself is fine and permits `/cars-for-sale/`) |
+| **Cars.com** | ⛔ even `robots.txt` is 403 behind Cloudflare → fails closed, nothing is fetched |
+| CarGurus · CarMax · Carvana · TrueCar | 🚫 403/406 or a JS challenge before robots.txt is even readable |
+
+**A home connection often behaves differently from a datacenter one**, so Autotrader and
+Cars.com adapters ship anyway and may work from your laptop — run `carmon scrape --probe` to
+find out. Their parsers target schema.org markup (the most stable thing on those pages) but
+**have not been validated against live HTML**, because I could not fetch any. If a site's
+markup has moved, the adapter reports a parse failure rather than silently returning nothing.
+
+Only RepairPal's parser was written against a real page — and running it live caught a bug
+worth knowing about: `repairpal.com/toyota/corolla` quotes the **brand's** figures ($441/yr,
+"8th out of 32 for all car brands"), while `repairpal.com/reliability/toyota/corolla` quotes
+the **model's** ($362/yr, "1st out of 36 for compact cars"). Storing the first as the second
+would be quietly wrong, so the adapter prefers the model page and refuses to save
+brand-level rows as model data.
+
+What it collects per model: average annual repair cost, reliability rating out of 5, shop
+visits per year, repair severity, and where the model ranks in its class. Those show up
+alongside the NHTSA data:
+
+```bash
+python3 -m carmon reliability --make Toyota --model Corolla --year 2022
+```
+```
+  complaints: 95   recalls: 0
+    - ELECTRICAL SYSTEM: 19
+  RepairPal (scraped, opt-in):
+    average annual repair cost: $362
+    reliability rating: 4.5 / 5.0
+    ranking: 1st out of 36 for compact cars
+```
+
+### Before you switch one on
+
+Check that site's Terms of Service. Several prohibit automated collection regardless of what
+robots.txt says, and that is a separate question from whether the request technically
+succeeds. The conservative reading is that these adapters are for occasional personal use at
+the volumes above, and `sources.py` keeps ordinary browsing links for everything else.
+
+## 12. Tests
 
 ```bash
 python3 -m unittest discover -s tests -t . -v    # or: python3 -m carmon selftest
 ```
 
-320 tests covering scoring (including the 39,950-vs-40,050-vs-60,000 continuity requirement),
+391 tests covering scoring (including the 39,950-vs-40,050-vs-60,000 continuity requirement),
 normalization and filtering, quota enforcement, upsert/history bookkeeping, NHTSA and EPA
 enrichment (including NHTSA's habit of answering HTTP 400 with a valid "no recalls" body),
 config single-source-of-truth guards, quota pacing maths, the month-end sweep, demo-data

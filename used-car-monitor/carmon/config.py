@@ -200,6 +200,20 @@ def validate_config(config: "Config") -> List[str]:
                 f'Set it to "auto" to derive it from the search criteria instead of repeating the number.'
             )
 
+    scrapers = config.data.get("scrapers", {}) or {}
+    if scrapers.get("enabled"):
+        on = [key for key, value in (scrapers.get("sources") or {}).items() if value]
+        warnings.append(
+            "scrapers.enabled is true"
+            + (f" with {', '.join(on)} switched on. " if on else " but no source is switched on. ")
+            + "Check each site's Terms of Service; robots.txt is always obeyed and daily caps apply."
+        )
+        if int(scrapers.get("max_listings_per_day", 100)) > 500:
+            warnings.append(
+                f"scrapers.max_listings_per_day is {scrapers['max_listings_per_day']} — that is a lot of "
+                "traffic for a personal search. Consider keeping it near the 100 default."
+            )
+
     if search.get("include_electric_hybrid") and search.get("excluded_fuel_types"):
         warnings.append(
             "search.include_electric_hybrid is true, so search.excluded_fuel_types is not applied."

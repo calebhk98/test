@@ -163,6 +163,20 @@
     "max_recalls_stored": 10,
     "max_models_per_run": 40
   },
+  "scrapers": {
+    "enabled": false,
+    "max_listings_per_day": 100,
+    "max_requests_per_day": 20,
+    "max_pages_per_run": 2,
+    "min_seconds_between_requests": 5,
+    "timeout_seconds": 25,
+    "user_agent": "",
+    "sources": {
+      "repairpal": false,
+      "autotrader": false,
+      "cars_com": false
+    }
+  },
   "digest": {
     "top_n": 5,
     "new_listing_limit": 15,

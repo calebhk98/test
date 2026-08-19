@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import logging
 import sqlite3
+import sys
 from dataclasses import dataclass, field
 from datetime import date, timedelta
 from typing import Any, Dict, Iterable, List, Optional
@@ -509,3 +510,136 @@ def refresh_market_values(
     if owns_conn:
         conn.close()
     return summary
+
+
+# --- optional scrapers --------------------------------------------------
+def run_scrapers(
+    config: Config,
+    conn: Optional[sqlite3.Connection] = None,
+    sources: Optional[List[str]] = None,
+    run_date: Optional[str] = None,
+    dry_run: bool = False,
+) -> Dict[str, Any]:
+    """Run the enabled scraper adapters and fold what they find into the same pipeline.
+
+    Scraped listings go through exactly the same filtering, enrichment and scoring as
+    MarketCheck ones, and dedupe against them by VIN. Everything is off unless
+    `scrapers.enabled` and the individual source are both switched on in config.json;
+    the daily caps live in `carmon/scrapers/base.py` and are enforced against a ledger
+    table, not an in-memory counter.
+    """
+    from .scrapers import REGISTRY, ScrapeLimits  # imported lazily: adapters are optional
+
+    owns_conn = conn is None
+    conn = conn or db.init_db(config.db_path)
+    run_date = run_date or date.today().isoformat()
+    scraper_config = config.data.get("scrapers", {}) or {}
+    summary: Dict[str, Any] = {"enabled": bool(scraper_config.get("enabled")), "sources": {},
+                               "kept": 0, "new": 0, "skipped": []}
+
+    if not summary["enabled"]:
+        summary["message"] = (
+            "Scrapers are off. Turn on `scrapers.enabled` and the individual source in config.json "
+            "after reviewing that site's Terms of Service."
+        )
+        if owns_conn:
+            conn.close()
+        return summary
+
+    limits = ScrapeLimits.from_config(scraper_config)
+    enabled_sources = scraper_config.get("sources", {}) or {}
+    # Walk every registered adapter, not just the enabled ones, so the summary can say why
+    # a source did nothing instead of silently omitting it.
+    wanted = sources or sorted(set(REGISTRY) | set(enabled_sources))
+    usage = db.scrape_usage_today(conn)
+    summary["budget_before"] = {
+        "requests_used": usage["requests"], "requests_cap": limits.max_requests_per_day,
+        "listings_used": usage["listings"], "listings_cap": limits.max_listings_per_day,
+    }
+
+    for key in wanted:
+        scraper_class = REGISTRY.get(key)
+        if scraper_class is None:
+            summary["skipped"].append(f"{key}: no adapter registered")
+            continue
+        if not sources and not enabled_sources.get(key):
+            summary["skipped"].append(f"{key}: disabled in config")
+            continue
+
+        scraper = scraper_class(conn, limits)
+        result = scraper.run(dict(config.search))
+        entry = result.as_dict()
+
+        if getattr(scraper_class, "kind", "listings") == "reference":
+            stored = 0
+            if not dry_run:
+                store = getattr(sys.modules[scraper_class.__module__], "store", None)
+                for record in result.listings:
+                    if store:
+                        store(conn, record)
+                        stored += 1
+            entry["stored"] = stored
+            summary["sources"][key] = entry
+            continue
+
+        kept: List[Dict[str, Any]] = []
+        for listing in result.listings:
+            reason = filter_reason(listing, config.search)
+            if reason:
+                continue
+            kept.append(listing)
+
+        if kept and not dry_run:
+            try:
+                enrich_listings(config, conn, kept)
+            except Exception as exc:
+                LOG.warning("Enrichment for scraped listings skipped: %s", exc)
+            new_count = 0
+            for listing in kept:
+                existing = db.get_listing(conn, listing["vin"])
+                listing["price_first_seen"] = (
+                    existing.get("price_first_seen") if existing else listing.get("price_current")
+                )
+                score = score_listing(listing, config.scoring)
+                listing["score"] = score.score
+                listing["score_breakdown"] = score.as_dict()["components"]
+                change = db.upsert_listing(conn, listing, seen_date=run_date)
+                new_count += 1 if change["is_new"] else 0
+            entry["new"] = new_count
+            summary["new"] += new_count
+
+        entry["kept_after_filters"] = len(kept)
+        summary["kept"] += len(kept)
+        summary["sources"][key] = entry
+
+    usage = db.scrape_usage_today(conn)
+    summary["budget_after"] = {
+        "requests_used": usage["requests"], "requests_cap": limits.max_requests_per_day,
+        "listings_used": usage["listings"], "listings_cap": limits.max_listings_per_day,
+    }
+    if owns_conn:
+        conn.close()
+    return summary
+
+
+def probe_scrapers(config: Config, conn: Optional[sqlite3.Connection] = None) -> List[Dict[str, Any]]:
+    """One request per adapter: can this source actually be reached and parsed from here?"""
+    from .scrapers import REGISTRY, ScrapeLimits
+
+    owns_conn = conn is None
+    conn = conn or db.init_db(config.db_path)
+    limits = ScrapeLimits.from_config(config.data.get("scrapers", {}))
+    results = []
+    for key, scraper_class in sorted(REGISTRY.items()):
+        scraper = scraper_class(conn, limits)
+        search = dict(config.search)
+        if getattr(scraper_class, "kind", "listings") == "reference":
+            preferred = (config.scoring.get("preferred") or [{}])[0]
+            search.update({"make": preferred.get("make", "Toyota"), "model": preferred.get("model", "Corolla")})
+        try:
+            results.append(scraper.probe(search))
+        except Exception as exc:
+            results.append({"source": key, "status": "error", "message": str(exc)})
+    if owns_conn:
+        conn.close()
+    return results

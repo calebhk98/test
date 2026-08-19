@@ -61,6 +61,34 @@ CREATE TABLE IF NOT EXISTS api_usage (
     note      TEXT
 );
 
+CREATE TABLE IF NOT EXISTS model_repair_cost (
+    make               TEXT NOT NULL,
+    model              TEXT NOT NULL,
+    annual_repair_cost REAL,
+    reliability_rating REAL,
+    rating_scale       REAL,
+    visits_per_year    REAL,
+    severity_pct       REAL,
+    rank_text          TEXT,
+    common_problems    TEXT,
+    source             TEXT,
+    source_url         TEXT,
+    fetched_at         TEXT,
+    PRIMARY KEY (make, model)
+);
+
+CREATE TABLE IF NOT EXISTS scrape_usage (
+    id        INTEGER PRIMARY KEY AUTOINCREMENT,
+    ts        TEXT NOT NULL,
+    day       TEXT NOT NULL,
+    source    TEXT NOT NULL,
+    kind      TEXT,
+    url       TEXT,
+    status    INTEGER,
+    listings  INTEGER DEFAULT 0,
+    note      TEXT
+);
+
 CREATE TABLE IF NOT EXISTS runs (
     id             INTEGER PRIMARY KEY AUTOINCREMENT,
     run_date       TEXT NOT NULL,
@@ -111,6 +139,7 @@ CREATE INDEX IF NOT EXISTS idx_listings_last_seen ON listings(last_seen);
 CREATE INDEX IF NOT EXISTS idx_listings_model ON listings(make, model, year);
 CREATE INDEX IF NOT EXISTS idx_price_history_vin ON price_history(vin, date);
 CREATE INDEX IF NOT EXISTS idx_api_usage_month ON api_usage(month);
+CREATE INDEX IF NOT EXISTS idx_scrape_usage_day ON scrape_usage(day, source);
 """
 
 LISTING_COLUMNS = [
@@ -630,3 +659,97 @@ def save_appraisal(
     )
     if commit:
         conn.commit()
+
+
+# --- scraper usage ledger ------------------------------------------------
+def record_scrape(
+    conn: sqlite3.Connection, source: str, kind: str, url: str,
+    status: Optional[int] = None, listings: int = 0, note: str = "",
+) -> None:
+    """Log one scraper request. This ledger is what enforces the daily caps."""
+    ts = now_str()
+    conn.execute(
+        "INSERT INTO scrape_usage (ts, day, source, kind, url, status, listings, note) "
+        "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+        (ts, ts[:10], source, kind, url, status, listings, note),
+    )
+    conn.commit()
+
+
+def scrape_usage_today(conn: sqlite3.Connection, source: Optional[str] = None, day: Optional[str] = None) -> Dict[str, int]:
+    """Requests made and listings taken today, per source or across all of them.
+
+    Only rows that represent an actual HTTP fetch count as requests; the `listings` rows are
+    tallies of what a fetched page yielded, not extra traffic.
+    """
+    day = day or today_str()
+    clauses, params = ["day = ?"], [day]
+    if source:
+        clauses.append("source = ?")
+        params.append(source)
+    where = " AND ".join(clauses)
+    row = conn.execute(
+        f"SELECT COALESCE(SUM(CASE WHEN kind != 'listings' THEN 1 ELSE 0 END), 0) AS requests, "
+        f"COALESCE(SUM(listings), 0) AS listings FROM scrape_usage WHERE {where}",
+        params,
+    ).fetchone()
+    return {"requests": int(row["requests"]), "listings": int(row["listings"]), "day": day}
+
+
+def scrape_usage_by_source(conn: sqlite3.Connection, day: Optional[str] = None) -> List[Dict[str, Any]]:
+    day = day or today_str()
+    rows = conn.execute(
+        "SELECT source, COALESCE(SUM(CASE WHEN kind != 'listings' THEN 1 ELSE 0 END), 0) AS requests, "
+        "COALESCE(SUM(listings), 0) AS listings "
+        "FROM scrape_usage WHERE day = ? GROUP BY source ORDER BY source",
+        (day,),
+    ).fetchall()
+    return [dict(row) for row in rows]
+
+
+def save_repair_cost(conn: sqlite3.Connection, make: str, model: str, data: Dict[str, Any]) -> None:
+    """Store scraped repair-cost / reliability facts for a model (see scrapers/repairpal.py)."""
+    key = ((make or "").strip().lower(), (model or "").strip().lower())
+    problems = data.get("common_problems")
+    conn.execute(
+        """
+        INSERT INTO model_repair_cost
+            (make, model, annual_repair_cost, reliability_rating, rating_scale, visits_per_year,
+             severity_pct, rank_text, common_problems, source, source_url, fetched_at)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ON CONFLICT(make, model) DO UPDATE SET
+            annual_repair_cost = excluded.annual_repair_cost,
+            reliability_rating = excluded.reliability_rating,
+            rating_scale = excluded.rating_scale,
+            visits_per_year = excluded.visits_per_year,
+            severity_pct = excluded.severity_pct,
+            rank_text = excluded.rank_text,
+            common_problems = excluded.common_problems,
+            source = excluded.source, source_url = excluded.source_url,
+            fetched_at = excluded.fetched_at
+        """,
+        (
+            *key, data.get("annual_repair_cost"), data.get("reliability_rating"),
+            data.get("rating_scale"), data.get("visits_per_year"), data.get("severity_pct"),
+            data.get("rank_text"),
+            json.dumps(problems) if isinstance(problems, (list, dict)) else problems,
+            data.get("source", "repairpal"), data.get("source_url"), now_str(),
+        ),
+    )
+    conn.commit()
+
+
+def get_repair_cost(conn: sqlite3.Connection, make: str, model: str) -> Optional[Dict[str, Any]]:
+    row = conn.execute(
+        "SELECT * FROM model_repair_cost WHERE make = ? AND model = ?",
+        ((make or "").strip().lower(), (model or "").strip().lower()),
+    ).fetchone()
+    if row is None:
+        return None
+    data = dict(row)
+    if isinstance(data.get("common_problems"), str) and data["common_problems"]:
+        try:
+            data["common_problems"] = json.loads(data["common_problems"])
+        except json.JSONDecodeError:
+            pass
+    return data

@@ -103,9 +103,15 @@ class SourcesTests(unittest.TestCase):
         self.assertTrue(links)
         self.assertTrue(all(link["url"].startswith("https://") for link in links))
 
-    def test_no_scraper_is_registered_in_v1(self):
+    def test_scrapers_are_registered_but_off_by_default(self):
         from carmon import scrapers
-        self.assertEqual(scrapers.available(), [])
+        from carmon.config import load_config
+        registered = scrapers.available()
+        self.assertTrue(registered, "adapters should be importable")
+        config = load_config().data.get("scrapers", {})
+        self.assertFalse(config.get("enabled"), "scraping must be off until switched on")
+        self.assertFalse([key for key, on in (config.get("sources") or {}).items() if on],
+                         "no individual source may ship switched on")
 
 
 class CliTests(unittest.TestCase):

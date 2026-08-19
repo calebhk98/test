@@ -14,7 +14,7 @@ from typing import Any, Dict, List, Optional
 from . import (__version__, db, demo as demo_module, digest as digest_module, fueleconomy,
                market, nhtsa, notify, quota)
 from .config import Config, ConfigError, PROJECT_ROOT, load_config, get_secret, validate_config
-from .pipeline import refresh_market_values, rescore_all, run_daily
+from .pipeline import probe_scrapers, refresh_market_values, rescore_all, run_daily, run_scrapers
 from .scoring import score_listing
 from .sources import build_sources, grouped_sources
 
@@ -263,6 +263,18 @@ def cmd_reliability(args: argparse.Namespace) -> int:
         print(f"  recall {recall.get('campaign')}{flag}: {recall.get('component')}")
         if recall.get("consequence"):
             print(f"      consequence: {recall['consequence'][:160]}")
+    repair = db.get_repair_cost(conn, args.make, args.model)
+    if repair:
+        print("  RepairPal (scraped, opt-in):")
+        if repair.get("annual_repair_cost"):
+            print(f"    average annual repair cost: ${repair['annual_repair_cost']:,.0f}")
+        if repair.get("reliability_rating"):
+            print(f"    reliability rating: {repair['reliability_rating']} / "
+                  f"{repair.get('rating_scale') or 5}")
+        if repair.get("rank_text"):
+            print(f"    ranking: {repair['rank_text']}")
+        if repair.get("fetched_at"):
+            print(f"    fetched {repair['fetched_at']} from {repair.get('source_url', 'repairpal.com')}")
     print(f"  {nhtsa.recall_lookup_url(args.make, args.model, args.year)}")
     print(
         "  Note: complaint counts are raw and not adjusted for sales volume — a popular model\n"
@@ -419,6 +431,46 @@ def cmd_deals(args: argparse.Namespace) -> int:
               f"({appraisal['confidence']} confidence)")
         if item.get("listing_url"):
             print(f"    {item['listing_url']}")
+    conn.close()
+    return 0
+
+
+def cmd_scrape(args: argparse.Namespace) -> int:
+    """Run the optional scrapers — off by default, robots-obeying, hard-capped."""
+    config = _config(args)
+    conn = _open_db(config)
+    scraper_config = config.data.get("scrapers", {}) or {}
+
+    if args.status:
+        usage = db.scrape_usage_today(conn)
+        print(f"Scraper usage today ({usage['day']}):")
+        print(f"  requests {usage['requests']} / {scraper_config.get('max_requests_per_day', 20)}")
+        print(f"  listings {usage['listings']} / {scraper_config.get('max_listings_per_day', 100)}")
+        for row in db.scrape_usage_by_source(conn):
+            print(f"    {row['source']:<14} {row['requests']:>3} request(s), {row['listings']:>3} listing(s)")
+        print(f"  enabled: {scraper_config.get('enabled', False)}; sources: "
+              f"{ {k: v for k, v in (scraper_config.get('sources') or {}).items()} }")
+        conn.close()
+        return 0
+
+    if args.probe:
+        print("Probing each adapter (one request each). Blocked or disallowed is a normal, "
+              "expected answer — it means that site does not want automated traffic.\n")
+        for entry in probe_scrapers(config, conn):
+            icon = {"ok": "✅", "empty": "⚠️ ", "blocked": "🚫", "disallowed": "⛔",
+                    "unparsed": "⚠️ ", "budget": "⏳", "error": "❌"}.get(entry["status"], "?")
+            print(f"  {icon} {entry.get('name', entry['source']):<12} {entry['status']}")
+            if entry.get("message"):
+                print(f"       {entry['message'][:180]}")
+        conn.close()
+        return 0
+
+    sources = [args.source] if args.source else None
+    summary = run_scrapers(config, conn, sources=sources, dry_run=args.dry_run)
+    print(json.dumps(summary, indent=2, default=str))
+    if not summary.get("enabled"):
+        conn.close()
+        return 1
     conn.close()
     return 0
 
@@ -600,6 +652,13 @@ def build_parser() -> argparse.ArgumentParser:
     deals.add_argument("--min-sample", type=int, default=3, dest="min_sample")
     deals.add_argument("--json", action="store_true")
     deals.set_defaults(func=cmd_deals)
+
+    scrape = sub.add_parser("scrape", help="run the optional scrapers (off by default, capped)")
+    scrape.add_argument("--source", help="run just this adapter, ignoring its config toggle")
+    scrape.add_argument("--probe", action="store_true", help="one request per adapter: is it reachable?")
+    scrape.add_argument("--status", action="store_true", help="today's scraper usage against the caps")
+    scrape.add_argument("--dry-run", action="store_true", help="fetch and parse but store nothing")
+    scrape.set_defaults(func=cmd_scrape)
 
     rescore = sub.add_parser("rescore", help="recompute every stored score with the current config")
     rescore.set_defaults(func=cmd_rescore)

@@ -93,6 +93,23 @@ theirs knows the country, yours knows your actual search area.
 
 ---
 
+## Scrapers (now built, off by default)
+
+`carmon/scrapers/` now holds working machinery rather than an empty seam — see README §11 for
+the full rules. The short version: robots.txt always obeyed and failing closed, 100 listings
+and 20 requests a day across all sources, 2 pages per run, 5 seconds between requests, one
+honest User-Agent, and a hard stop the moment a site answers with a bot challenge. No
+CAPTCHA solving, no proxies, no identity rotation — a challenge is treated as the site
+declining, which it is.
+
+Three adapters ship: **RepairPal** (repair cost and reliability, the one verified against a
+real page), **Autotrader** and **Cars.com** (listings; both currently blocked from a
+datacenter IP, so their parsers are written against schema.org markup but unvalidated).
+`python3 -m carmon scrape --probe` tells you what your own connection can reach.
+
+CarGurus, CarMax, Carvana and TrueCar are not implemented: all four refuse automated
+requests outright, and building around that refusal is not something this project does.
+
 ## If MarketCheck turns out not to be worth it
 
 The free tier is 500 calls/month and a 100-mile radius. If coverage in the 38464 area is thin,
