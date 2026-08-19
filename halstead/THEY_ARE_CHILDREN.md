@@ -180,11 +180,24 @@ wrong by treating "they are children" as one setting for the whole book.
 
 They are children, and they are also children who fight daily, stand the watch,
 and have done both for years. **Fear and adrenaline burn out of them as the years
-at the school accumulate.** A twelve-year-old four years in is frightened of armed
-men in the building at four in the morning. A sixteen-year-old eight years in,
-mugged in a parking lot, is not frightened of a mugging, because she has been in
-harder rooms every week since she was nine. She is competent, and the competence
-is earned, and it is not a defect in the writing.
+at the school accumulate.** A sixteen-year-old eight years in, mugged in a parking
+lot, is not frightened of a mugging, because she has been in harder rooms every
+week since she was nine. She is competent, the competence is earned, and it is not
+a defect in the writing.
+
+The twelve-year-olds in chapter 15 need the same reading, and for an extra reason
+that the chapter states on its own page. They do not believe there are armed men
+in the building. The alarm is the watch alarm, response time is scored against a
+standard posted weekly, the first question anybody asks is "Is it a drill?", and
+Ruth's own line is "They're actors." They are twelve, they are four years in, and
+they think they are being marked. Annoyance at being woken, competitiveness about
+the score, and competence are the register. Fear is not, and the fear added to
+that chapter in this pass has been taken back out.
+
+What survives there is the one thing that should: the details do not fit a drill,
+Chloe keeps finding them, and she cannot get the list to come out one way rather
+than the other. That is not fear. It is a twelve-year-old with a good eye holding
+two readings of the same night and no way to choose between them.
 
 So the fear-and-adrenaline additions made to chapter 20 in this pass are wrong and
 are being reduced. What stays from that work is the *reasoning*: they do not call

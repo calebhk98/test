@@ -162,11 +162,11 @@ The plan takes Sam ninety seconds and he is defending it before he's finished de
 
 "Noted," Sam says. "It's still the plan. Anybody got a better one in the next thirty seconds?"
 
-"If you don't know what somebody's here for, you don't know which way they're going to move. That's the whole problem with the plan. They have to choose," Chloe says, one thumb pressed into the burn on her wrist. "Somebody has to be in front of them. I'll do it."
+"If you don't know what somebody's here for, you don't know which way they're going to move. That's the whole problem with the plan. They have to choose," Chloe says. "Somebody has to be in front of them. I'll do it."
 
 "You'll get grabbed."
 
-"That's the point," she says, the words coming out in one breath, already moving toward the door. "I'm twelve and I'm small, and I'm a girl in pyjamas. Nobody hits that. They'll grab me and they'll try to keep me quiet and then they'll spend at least four seconds deciding what to do with me, and while they're deciding, they're standing still and they're all facing the same way."
+"That's the point," she says, already moving toward the door. "I'm twelve and I'm small, and I'm a girl in pyjamas. Nobody hits that. They'll grab me and they'll try to keep me quiet and then they'll spend at least four seconds deciding what to do with me, and while they're deciding, they're standing still and they're all facing the same way."
 
 Ruth looks at her. "I'm shorter," she says.
 
@@ -176,7 +176,7 @@ The other thing that gets discussed is the drugs: the kit has both. Chloe gets t
 
 "Take the fast ones," Sam says.
 
-"They're actors," Ruth says, turning a vial over once more than the label needs. "If they get a work physical in three weeks they're going to fail it and they're going to have to explain why."
+"They're actors," Ruth says, reading the vial and putting it back. "If they get a work physical in three weeks they're going to fail it and they're going to have to explain why."
 
 "So?"
 
@@ -184,7 +184,7 @@ The other thing that gets discussed is the drugs: the kit has both. Chloe gets t
 
 "It's six seconds versus twenty-five."
 
-Ruth is quiet for as long as it takes to breathe out, the syringe still capped and held so tight in her fist that the cap leaves a line across her palm. "Fine, fast ones," she sighs. "It'll cost us, but we don't have much choice."
+Ruth is quiet for as long as it takes to breathe out. "Fine, fast ones," she sighs. "It'll cost us, but we don't have much choice."
 
 \---
 
@@ -268,7 +268,7 @@ The man looks at him, his jaw working once. "I don't know," he says.
 
 "See, that's a C," Sam says, walking back with his hands up. "That's a C right there."
 
-Chloe doesn't say anything for the interrogation. She sits against the wall with her arms around her knees, pulled in tighter than the position needs, her fingers finding the four-beat count against her own leg without her telling them to. She works at the wrongness of it instead, the bolt cutters wrong for that fence, the boots wrong, all of it wrong in the same direction, the whole time Sam talks, and she doesn't look twice at the second man, his chest going up and down a few feet from where she's sitting. The cold's come all the way through her pyjamas by now, and her arms around her knees have gone from holding still to holding on.
+Chloe sits against the wall with her arms around her knees while Sam talks, working at the wrongness of it instead of listening. The bolt cutters wrong for that fence. The boots wrong. All of it wrong in the same direction, which is the direction a school would get it wrong in if a school were building this, and also the direction four real people would get it wrong in if somebody had handed them the wrong list. She turns it over the whole way through and it comes out the same both ways, and the second man's chest going up and down a few feet away sits on the same list as the bolt cutters.
 
 Sinclair arrives with two other adults and a trolley, then stops at the corner. He looks at the four men tied along the corridor wall, and at the bags, and at the four kids sitting on the floor near them, and he stands there watching them without moving. "Who's monitoring?"
 
@@ -278,7 +278,7 @@ Sinclair arrives with two other adults and a trolley, then stops at the corner. 
 
 Ruth reads them off her arm. Sinclair nods. "Grading's in the morning," he says. "Go to bed. Now."
 
-She doesn't get back to sleep. She lies on top of the covers with her shoes still on and listens to the corridor for a long time before she stops expecting it to make another sound.
+Back in bed she lies on top of the covers with her shoes on and runs the list from the top, and gets to the end of it, and starts over.
 
 Chloe gets a C the same as Sam. Ruth gets a B minus. She brings it up for a week. Kavi gets a B for the comms and a note about the sensors that he disagrees with in writing, at length, and does not get anywhere with.
 
