@@ -26,7 +26,7 @@ The second essay is due six days after the first. She is still thinking about th
 
 In the second week of October she decides she is going to write one that is good.
 
-She builds the outline first. She has never needed an outline for anything, but it gets her the same ten pages out the other end. She writes the last page first, then the middle, then splits it across four sittings. She writes one twice from scratch, the second time without looking at the first version at all. She takes a position she disagrees with and writes it straight, and that one comes back worse than the others.
+She builds the outline first. Outlines have always been for other people, and this one still gets her the same ten pages out the other end. She writes the last page first, then the middle, then splits it across four sittings. She writes one twice from scratch, closing the first draft away before she starts the second. She takes a position she disagrees with and writes it straight, and that one comes back worse than the others.
 
 In November Hearn tells her the third page of one is doing the work of the first six, and to go and look at what the first six are for, advice that she reads four times on the stairs. Every essay she writes for the next month has a good third page in it, but the other nine pages are still there.
 
@@ -48,7 +48,7 @@ The 10v1 starts in January.
 
 "Because you'll be tired before they are." She sets the clock. "And because ten is the shape of every long fight there is. A hundred on one is a 10v1 that goes on longer, and there's nothing in the hundred that isn't already in the ten. If you can hold a minute against ten you've got five capable ones left, and five is a fight you can have."
 
-Nobody in the room gets past nine seconds all afternoon. Chloe gets four seconds on her first go, then six on her third. Afterwards the four of them sit on the floor in the corridor outside, Ruth flat on her back with one arm over her eyes, Sam with a bloody nose that nobody did on purpose.
+The best anyone in the room manages all afternoon is nine seconds. Chloe gets four seconds on her first go, then six on her third. Afterwards the four of them sit on the floor in the corridor outside, Ruth flat on her back with one arm over her eyes, Sam with a bloody nose from an elbow that got away from somebody.
 
 "Four."
 
@@ -58,13 +58,13 @@ Nobody in the room gets past nine seconds all afternoon. Chloe gets four seconds
 
 "She says a lot of things," Sam says, into his sleeve.
 
-By March most of the year is in the six-to-ten range on a good day. Sam gets fourteen seconds in February, a mark that nobody else gets close to. Chloe is on eleven seconds by June, and two of them she wasted.
+By March most of the year is in the six-to-ten range on a good day. Sam gets fourteen seconds in February, a mark that stands alone for the rest of the year. Chloe is on eleven seconds by June, and two of them she wasted.
 
-Swimming gets harder and the teacher says so in the first week. Some of it is in clothes and some of it is in cold water, and in the third term some of it is towing somebody who is not helping, the whole of that in how you hold their head.
+Swimming gets harder and the teacher says so in the first week. Some of it is in clothes and some of it is in cold water, and in the third term some of it is towing somebody who fights you the whole way, all of it in how you hold their head.
 
 Paintball joins the afternoon block in October. Bell hands the markers out and says it is the same thing they have been doing with darts, a bit harder, and then sets the drill running.
 
-For two weeks everybody is bad at it and knows why, the ball goes four times faster than a dart and there is a wall of paint behind the target to prove it. Nobody has any idea what to do about it, including Bell, who is not saying.
+For two weeks everybody is bad at it and knows why, the ball goes four times faster than a dart and there is a wall of paint behind the target to prove it. Everybody spends two weeks stuck, and Bell lets them stay that way.
 
 "I'm watching it the whole way," Ruth says on the second Thursday, sitting on the floor with her back against the wall bars. "I can see it leave. I see the whole thing and my hand's still behind it every single time."
 
@@ -84,9 +84,9 @@ On the Monday Chloe gets one on her fourth go. The two balls meet about four fee
 
 By the end of the hour they have eleven between them and everybody else on the floor has four, and on the Thursday they have nineteen. They spend most of that evening doing the noise at each other in the corridor, and Ruth does an impression of the boy who said luck, and they make Kavi watch it twice.
 
-People start asking on the Friday; Ruth says she has been practising, while Chloe says she does not know. By the following week there are two theories going round about the markers being different weights.
+People start asking on the Friday; Ruth says she has been practising, while Chloe shrugs and changes the subject. By the following week there are two theories going round about the markers being different weights.
 
-Kavi gets it on his own in the second week of November, when his number goes from three to ten inside one hour that afternoon, and he walks out without saying a word to anybody. He does not come and tell her. She does not go and ask him. Nadia has it by the end of the month off her own back, and Priya gets it out of Ruth in a corridor in about ninety seconds, and by Christmas most of the year is past where they ever were with darts.
+Kavi gets it on his own in the second week of November, when his number goes from three to ten inside one hour that afternoon, and he walks straight out, past everybody, eyes on the door. He keeps it to himself, and she leaves him to it. Nadia has it by the end of the month off her own back, and Priya gets it out of Ruth in a corridor in about ninety seconds, and by Christmas most of the year is past where they ever were with darts.
 
 In the second week of September a man from the office spends an hour on Watch, which everybody starts at ten. The sheet has been on the corkboard on the second floor since before Chloe got here, and she stopped reading it somewhere around eight, though he goes through it line by line anyway, the way the fire notice gets gone through in the same hour every year.
 
@@ -101,7 +101,7 @@ In the second week of September a man from the office spends an hour on Watch, w
 
 At the bottom, in the same typeface, without emphasis: *Response time is scored against the standard. The standard is posted weekly.*
 
-Then he goes through what a drill can be. People over the fence at the loading side. People already inside when it starts, because somebody let them in on the Tuesday and nobody asked. A van at the front with paperwork and a name on the side. The fire alarm going, itself the drill. Two adults in ordinary coats who walk in the front door at four in the afternoon and do not pretend to be anything at all.
+Then he goes through what a drill can be. People over the fence at the loading side. People already inside when it starts, because somebody let them in on the Tuesday without a second look. A van at the front with paperwork and a name on the side. The fire alarm going, itself the drill. Two adults in ordinary coats who walk in the front door at four in the afternoon and do not pretend to be anything at all.
 
 Most of them are announced. There is a board and it says *Thursday, afternoon block* four days out, and a dozen names go up with it, and everybody knows it is coming, but it is still hard. Some are at night and those go on the board too. Every few weeks there is one nobody has been told about, at eleven in the morning or in the middle of lunch, and people count the weeks.
 

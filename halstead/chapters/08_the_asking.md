@@ -26,7 +26,7 @@ Dr. Ammons writes a line before she asks the next one, and she asks it in exactl
 
 "And before that?"
 
-"She was at a summer program in July, four weeks, away from home." Her mom stops there. "She was the happiest I have ever seen her, in her life, and I mean that literally."
+"She was at a summer program in July, four weeks, away from home." Her mom stops there, her hands going still in her lap. "She was the happiest I have ever seen her, in her life, and I mean that literally."
 
 Dr. Ammons stops writing and puts the pen down flat on top of the pad.
 
@@ -48,7 +48,7 @@ Dr. Ammons turns in her chair until she's facing the couch instead of the other 
 
 There are about forty things and they won't go in a line. There's the bridge going over sideways all at once, and the paper on the floor with the eighths drawn straight through it, and Sam saying it's a room-shaped object. There's Mr. Baptiste doing the whole rectangle over from the beginning for Marisol, quiet about it.
 
-"It was hard," she says, and Dr. Ammons writes that down, underlines part of it, and the rest of the hour goes quiet around it. Her feet find the floor again.
+"It was hard," she says, and Dr. Ammons writes that down, underlines part of it, and the rest of the hour goes quiet around it, only the clock moving now. Her feet find the floor again, settling flat against the tile beneath the couch.
 
 In the car her mom holds the wheel with both hands, the engine off.
 
@@ -124,13 +124,13 @@ Her mom's hand goes flat on the counter. "It's not one second. I've thought abou
 
 "You hate me, that's what it is, you actually hate me."
 
-Her mom's mouth goes tight at the corner, about four feet away, and Chloe keeps going.
+Her mom's mouth goes tight at the corner, about four feet away, and Chloe keeps going anyway, her voice climbing over it.
 
 "You do, you hate me, and Dad says yes and you're the one who says no, and I hate you. I hate you so much."
 
 She goes upstairs and slams the door so hard the frame jumps.
 
-Then she stands behind it with her hands shaking and her ears ringing, listening for the stairs. The television keeps going downstairs. She waits there a long time, until her legs ache from standing behind the door.
+Then she stands behind it with her hands shaking and her ears ringing, listening for the particular stair that always gives first. The television keeps going downstairs. She waits there a long time, until her legs ache from standing behind the door.
 
 At dinner her mother passes her the bread, asks whether she wants more milk, and says something about the Thursday that needs an answer and gets one. Her dad passes the salt before she asks for it.
 
@@ -148,7 +148,7 @@ In December her mom comes up and sits down on the end of her bed. It's half past
 
 "What was different there? Not the fun parts, because I've heard all of the fun parts. What was actually different about it."
 
-Chloe sits up and answers straight away, the answer already there. It's one thing, and it's small.
+Chloe sits up and answers straight away, the answer already sitting in her mouth before the question finishes. It's one thing, and it's small.
 
 "Nobody was mean," she says.
 

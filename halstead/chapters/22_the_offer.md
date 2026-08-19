@@ -88,7 +88,7 @@ The first one checks something on his phone before he bothers answering the foll
 One boy, out of the office a full hour before Chloe's own turn, announces to the whole corridor that he turned it down flat because his mother would stop speaking to him for a decade if he skipped actual college for a paycheck. Three people laugh. He keeps reading whatever's on his phone, face flat, like the conversation already cost him something.
 
 
-A girl two years below Chloe comes out grinning, drops into the chair by the door, and says the whole thing out loud twice, the number, the car, all of it, as if saying it again will make it hold still. The two boys waiting behind her let her have it, neither one saying anything about the volume.
+A girl two years below Chloe comes out grinning, drops into the chair by the door, and says the whole thing out loud twice, the number, the car, all of it, as if saying it again will make it hold still. The two boys waiting behind her let her have it, the volume included.
 
 
 A boy from Chloe's own year, later in the second week, comes out and stays on his feet. He stands at the window with both hands flat on the sill until they stop shaking, then leaves before the question of whether he's all right gets an answer. The runner marks his name off the list a little more carefully than the others, and moves on to the next one.
@@ -188,7 +188,7 @@ Her mother goes quiet again, the particular quiet she gets over a mortgage state
 "There isn't one." She lets the quiet sit half a second before she gives him the rest of it. "I said it's my school. Nobody stays at their school, you go and do the next thing."
 
 
-Neither of them argues with her either. Her mother asks if she's sure three separate times across the next two minutes, in three different shapes, and gets the same answer each time, and eventually stops asking. Her father waits out the whole exchange before he asks whether anybody said yes.
+Both of them let it be. Her mother asks if she's sure three separate times across the next two minutes, in three different shapes, and gets the same answer each time, and eventually stops asking. Her father waits out the whole exchange before he asks whether anybody said yes.
 
 
 "Kavi."

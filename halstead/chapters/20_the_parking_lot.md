@@ -158,7 +158,7 @@ Sam looks at his own knuckles for a second.
 
 Chloe watches him too, until his chest goes up again on its own.
 
-Sam still hasn't said anything since he came off the man he was holding. "We're just leaving them," he says, not moving toward the fence yet.
+Sam stands over the row of them a while before he speaks. "We're just leaving them," he says, not moving toward the fence yet.
 
 "They're not hurt bad." Nadia's hand is already on the fence. "None of them are hurt bad. That's the whole point of doing it the way we did it."
 
@@ -206,6 +206,6 @@ Chloe sets her shoes down by the door, laces still knotted from being kicked off
 
 Ruth shuts the box off in the corridor and puts it in the chat before she sleeps. Four lines and a photo of Sam standing in the lot with his arms out. By breakfast there are sixty replies and an argument about whether it counts, whether seven civilians with three guns between them is a real test or just seven people who happened to be in the way of one.
 
-Somebody in the year above has sent one laughing face and nothing else. Ruth reads it out at breakfast, and Sam doesn't ask who, doesn't answer, just reaches past her for the syrup and starts on his tray like the question landed for somebody else at the table. He won't discuss it, and won't for so long that people start bringing it up just to watch him not answer.
+Somebody in the year above has sent just one laughing face. Ruth reads it out at breakfast. Sam reaches past her for the syrup and starts on his tray, like the question landed for somebody else at the table. He lets the question sit every time it comes up, and keeps letting it sit long enough that people start bringing it up just to watch him do it again.
 
-Nadia doesn't call her father before she leaves for the summer. Telling him about the fence would mean telling him how they got over it, and that isn't a story that ends with just her in trouble. She's home two days later, checks the till against the tape before she says hello, and by the time he asks how school is, the part-timer who'd been pocketing the difference on Thursdays is already gone and the number is already back where it should be. The ledger goes back under the counter, balanced, before her mother's finished asking how the drive back was. She doesn't mention a fence, a diner, or seven men behind a hardware store.
+Nadia doesn't call her father before she leaves for the summer. Telling him about the fence would mean telling him how they got over it, a story that lands on more than just her. She's home two days later, checks the till against the tape before she says hello, and by the time he asks how school is, the part-timer who'd been pocketing the difference on Thursdays is already gone and the number is already back where it should be. The ledger goes back under the counter, balanced, before her mother's finished asking how the drive back was. She keeps the fence, the diner, and seven men behind a hardware store to herself.

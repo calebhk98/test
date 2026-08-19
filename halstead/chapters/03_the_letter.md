@@ -6,14 +6,14 @@ The envelope has her name on it.
 Miss Chloe Kessler.  
 Nobody has ever sent Chloe anything, though her grandmother sends a card at Christmas with her name written inside it in pen, on an envelope whose outside says her parents. This one says her, typed, with a Miss in front of it and the address underneath in the same typing.  
 She stands at the mailbox with the rest of the mail held against her chest with one arm and opens it there, badly, so the flap tears down into the paper.  
-It's one page, and it reads like a letter written for an adult. There's a school called Halstead, with a summer session at it, four weeks long, starting the second week of July. You sleep there, transportation provided, and room and board included. There is no cost, which it says twice, in two different ways. Families are welcome to visit whenever they want, for as long as they want, and there's a hotel half a mile from the campus with rooms held for them, at no cost either. At the bottom there's a phone number, a name, and a signature over the name in real ink that has gone through onto the back.  
-What it comes down to is a place you go for four weeks in the summer, where you sleep in a building with other kids, free, and where somebody has typed her name on the front of it.  
-After she reads it three times standing in the driveway, with the rest of the mail going warm against her arm, Chloe puts the mail on the counter, takes the letter up to her room, and keeps it to herself for four hours.  
+It's one page, and it reads like a letter that was written for an adult. There's a school called Halstead, with a summer session at it, four weeks long, starting the second week of July. You sleep there, transportation provided, and room and board included. There is no cost, which it says twice, in two different ways. Families are welcome to visit whenever they want, for as long as they want, and there's a hotel half a mile from the campus with rooms held for them, at no cost either. At the bottom there's a phone number, a name, and a signature over the name in real ink that has gone through onto the back.  
+What it comes down to is a place you go for four weeks in the summer, where you sleep in a building with other kids, which is free, and where somebody has typed her name on the front of it.  
+After she reads it three times standing in the driveway, with the rest of the mail going warm against her arm, Chloe puts the mail on the counter, takes the letter up to her room, and keeps it to herself until dinner, four hours later.  
 "Can I go," she says at dinner.  
 Both of them look up.  
 "Can you go where, honey?"  
 Chloe puts the letter down on the table next to the salad bowl, face up, turned the right way round for her mom instead of for herself, because she has been thinking about how to do this since four o'clock.  
-Her mom reads it, then reads it again, her eyes going back to the same spot on the page and staying there longer, before she reads it a third time and hands it across the table, her eyes still on the page.  
+Her mom reads it, then reads it again, her eyes going back to the same spot on the page and staying there longer, before she reads it a third time and hands it across the table, though her eyes stay on the page.  
 "Did you see this?"  
 "See what." Her dad takes it and reads it one-handed, still eating, then puts the fork down to hold it with both.  
 "We didn't apply to this."  
@@ -24,7 +24,7 @@ Her mom reads it, then reads it again, her eyes going back to the same spot on t
 "Ask them, there's a number on it."  
 "I'm asking you."  
 "Meg, I've had it for ninety seconds."  
-Her mom takes it back and turns it over, finds only the ink from the signature coming through the back, then turns it the right way round again for a fourth read of the top part.  
+Her mom takes it back and turns it over, finds only the ink from the signature that has come through the back, then turns it the right way round again for a fourth read of the top part.  
 "It's free," she says. "Four weeks, food, a bed, a bus, and it's free. Things are not free."  
 "Sometimes they are."  
 "No they aren't," her mom says.  
@@ -38,9 +38,9 @@ Chloe puts both hands flat on the table and comes up onto her knees on the chair
 "It's a we're talking about it," her mom says.  
 Chloe asks once more on the Sunday and then forgets to ask again for four days, because it's July and there's a sprinkler.  
 \---  
-Her mom calls the district office on Monday, where a woman takes the name down and says she'll look into it. Tuesday and Wednesday go quiet, and the callback comes Thursday afternoon. Chloe is on the stairs by then, on the step where the carpet stops and the wood goes cold under her, because that's the step where you can hear the kitchen.  
+Her mom calls the district office on Monday, where a woman takes the name down and says she'll look into it, and though Tuesday and Wednesday go quiet, the callback comes Thursday afternoon. Chloe is on the stairs by then, on the step where the carpet stops and the wood goes cold under her, because that's the step where you can hear the kitchen.  
 Her mom spells it twice, H-A-L, Halstead, like it sounds, then there's a long stretch where the only sound in the kitchen is the other person talking. "Nothing at all? Not a charter, not a private, not a partner, nothing." Another stretch, shorter than the first one. "Okay. Okay, thank you. No, I appreciate it, I know it's not your job to go looking."  
-Then the phone goes down on the counter, and her dad says something from the other side of the room, too quiet to reach the stairs.  
+Then the phone goes down on the counter, and her dad says something from the other side of the room that stays too quiet to reach the stairs.  
 "She says there's no school by that name working with the district in any capacity, and she went back four years to check." Her mom runs the tap at the sink while she says it. "And she said to be careful."  
 "Careful how?"  
 "She said people do this. She said there are people who send things to houses with a kid's name on the outside, because a kid opens it, and that's how you find out which houses write back."  
@@ -128,7 +128,7 @@ She walks the whole children's section twice and comes back with one she has rea
 They don't put her on the bus, though her mom says the word bus about forty times in nine days, and it doesn't sound like a bus.  
 They pack the night before, all three of them, in the living room with everything laid out on the floor in piles. Her mom writes KESSLER on the tags with a laundry pen and holds each thing up first to check she's got it the right way round. Her dad does the train station voice for the packing list, announcing socks, announcing the toothbrush, announcing the second pair of shoes, and Chloe laughs at the shoes one hard enough that she has to lie down on the carpet, so he does it again to get it again. Her mom tells them both to stop, then asks him to do the shoes one more time.  
 Chloe gets to stay up until ten, the whole evening spent on socks and the shoe joke, the school and the list and who is paying for it left for some other night.  
-They drive her the next day, four hours, with a stop at the halfway point that stretches to forty minutes, everyone taking their time on the second half. Chloe reads for the first hour and a half, watches the trees turn into different trees for twenty minutes, then reads again. Her mom asks her twice whether she's sure, once out loud and once by asking whether she remembered her toothbrush in a certain way.  
+They drive her the next day, four hours, with a stop at the halfway point that stretches to forty minutes, because everyone wants the day to last a little longer. Chloe reads for the first hour and a half, watches the trees turn into different trees for twenty minutes, then reads again. Her mom asks her twice whether she's sure, once out loud and once by asking whether she remembered her toothbrush in a certain way.  
 Her mom stays at the parent hotel for the first four days, since she's due back at work on the Monday. She stays until she has seen the room, the food, the nurse, and the front desk at eleven o'clock at night to find out who is on it. On the second morning she calls the emergency number from the parking lot to make sure it rings. It rings. She does it again on the third morning, when it rings as well. A man answers both times, a different one each time.  
 Her dad takes the last Friday off to come and get her at the end of it, which he arranges in the driveway on the first day, standing there with his keys, in front of everybody.  
 Chloe brings a library book she's already read, and the envelope, in the front pocket of her bag, with her name on it.
