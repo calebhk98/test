@@ -2032,7 +2032,7 @@ Then Coach Bell puts a metronome on a post at the near end of the field.
 
 "Right, then nothing gets pointed at a person."
 
-He walks the archers down the field to show them the lanes. Both lines shoot the same way, north, from two positions seventy metres apart, and the lanes lean in toward each other by a few degrees so that the two flight paths cross a long way out over the middle of the field, where the arrows meet at the top of the arc. What is left of them comes down together in open grass another hundred and fifty metres past that, where there is a rope and a sign, and the block stays behind it all year.
+He walks the archers down the field to show them the lanes. There are two firing lines, seventy metres apart, side by side, both facing the same way, north. Each lane bends in from north, toward the other, until the two meet at a point seventy metres out, where the angle between them holds at sixty degrees. That is where the flight paths cross, at the top of the arc, where an arrow released early from one line and an arrow released on time from the other can end up in the same patch of sky at the same instant. Whatever is left of them, whole or in pieces, keeps travelling and comes down together in open grass a hundred and fifty metres further on, where there is a rope and a sign, and the target block stays behind it all year.
 
 "At the top the arrow has stopped climbing and it hasn't started dropping. It hangs there." Bell puts a hand out flat and holds it. "If you're late, it's barely moved while you were being late. That's the only thing you've got going for you and you're going to want all of it."
 
@@ -2056,9 +2056,9 @@ Her release runs early when she is keyed up and late when her hands are cold, an
 
 They stand in the corridor comparing counts for ten minutes, which makes them last into dinner, and by then there is no bread left and Sam has taken both their chairs.
 
-The first one Chloe gets is in the last week of October, with Odile.
+The first collision Chloe manages is in the last week of October, with Odile.
 
-A small dry click sounds a long way up, before anything is visible, so far up she almost doubts her own ears, and then two arrows come down wrong out of the middle of the sky, one of them spinning. The other is broken across the middle, but it comes down in two pieces about eight metres apart with one of them still turning.
+A small dry click sounds a long way up, before anything is visible, so far up she almost doubts her own ears, and then two arrows come down wrong out of the middle of the sky. Chloe's comes down spinning, whole. Odile's is broken across the middle, and comes down in two pieces about eight metres apart, one of them still turning.
 
 The whole of Chloe's line is shouting before the pieces land, and somebody down the far end is banging on the lid of the kit box with a bow stave. Coming up the field at a run from her end, Odile covers seventy metres in about forty seconds. The two of them stand in the grass yelling at each other about the sound it made, but neither of them is listening to the other one.
 
@@ -2066,7 +2066,7 @@ The whole of Chloe's line is shouting before the pieces land, and somebody down 
 
 Sam wants the sound at dinner, so Chloe tries it with her mouth four times, but she gets nowhere near it, because only the arrow makes it. Kavi, who missed it, says it sounds like somebody standing on a stick. Odile, from two tables away, says over her shoulder that it is more of a knock than a crack.
 
-By March most of the year has done it at least once. Odile does it four days out of five. In April she does it twice in one hour, and the second one comes down in three pieces.
+By March most of the year has managed a collision at least once. Odile does it four days out of five. In April she does it twice in one hour, and the second one comes down in three pieces.
 
 On the first morning Ruth wants to know what everybody has got, and Chloe reads hers off the sheet, and gets as far as the language.
 
@@ -2154,7 +2154,7 @@ Chloe puts her fork down, but she keeps looking at the table.
 
 She reads for two days, and on the Tuesday she reads all afternoon and most of the evening before being sick at about ten o'clock. She sits on the floor of the bathroom with her back against the side of the bath, then goes back and reads for another hour.
 
-On the Wednesday she builds the other side. A man writing in 1961 makes the case Chloe can't get past, but it takes her most of the day to get all of him into one place and see the shape of it. There is a hole in the middle of what he says and he walks straight past it, so she fills it in for him, because leaving it there would be doing his job for him. Then she finds the three objections that open cracks in what he has built, but she answers all three of them.
+On the Wednesday she builds the other side. A man writing in 1961 makes the case Chloe can't get past, but it takes her most of the day to get all of him into one place and see the shape of it. There is a hole in the middle of what he says and he walks straight past it, so she writes the missing piece in herself, on his side of the page, because leaving it there and knocking down the weak version afterward would be doing his job for him. Then she finds the three objections that open cracks in what he has built, but she answers all three of them.
 
 By Thursday afternoon, she has stopped being angry and started being interested.
 
@@ -2162,7 +2162,7 @@ She hands it in on the Monday. Fourteen thousand words, twenty-eight pages.
 
 Hearn gives it back on the Monday after that with a B on the front of it.
 
-The note runs eleven lines. It says she hedges, twice on page nine, once on page twenty-two, plus the whole of the conclusion. It says she knows exactly what the reader thinks of the position and she keeps apologising for the argument while she is in the middle of making it. An argument you apologise for is a request. Make it or do not make it.
+The note runs eleven lines. It says she hedges, twice on page nine, once on page twenty-two, and the whole of the conclusion, where the last line reads: *it could be argued that, on balance, this was perhaps not the right decision.* It says she already answered the three objections earlier in the essay, so the hedge only asks the reader to answer them again. She knows exactly what the reader thinks of the position, and she keeps apologising for the argument while she is in the middle of making it. An argument you apologise for is a request. Make it or do not make it.
 
 She finds Ruth on the stairs between the second floor and the third.
 
@@ -2170,7 +2170,7 @@ She finds Ruth on the stairs between the second floor and the third.
 
 "On twice the length. You did double the words and he took a grade off you for it."
 
-"That isn't why I'm annoyed about it." Chloe has the pages in both hands and is going up the stairs backwards. "Page nine. He's got page nine and page twenty-two, which are the two places where I stopped and put a sentence in to show I knew what it sounded like. I put them in on purpose, he found both of them, and he didn't find anything else."
+"That isn't why I'm annoyed about it." Chloe has the pages in both hands and is going up the stairs backwards. "Page nine. He's got page nine and page twenty-two, which are the two places where I stopped, right after I'd already answered it, and put a sentence in to show I knew what it sounded like. I put them in on purpose, he found both of them, and he didn't find anything else."
 
 "So what you're telling me is he's right."
 
@@ -2228,11 +2228,11 @@ There is a pause of about a second and a half on the line.
 
 As two hundred students come out of eleven rooms at once, the shouting in the main stairwell comes up through the floor into Chloe's feet. Forty adults have to come through doors to get anywhere at all, but there are only nine doors, while the students know which third floor door hangs loose in its frame, which cupboard on the second floor has a window in the back of it, where the bannister has a gap you can get an arm through, and which of the two kitchen doors makes a noise when it opens.
 
-People say afterward that Ruth ran the east stairwell: she gave orders from the first thirty seconds, and everybody standing on those stairs did what she told them. In about four minutes, Nadia takes the third floor and splits it. Two on each stair head, four carrying kit up from the second floor so every landing keeps its own kit, the rest told where to stand and to stay there. Eleven students take four instructions from her in a row before any of them thinks about it.
+People say afterward that Ruth ran the east stairwell: she gave orders from the first thirty seconds, and everybody standing on those stairs did what she told them. In about four minutes, Nadia takes the third floor and splits it. Two on each stair head, four hauling crates of markers and paint up from the second floor so every landing keeps its own kit, the rest told where to stand and to stay there. Eleven students take four instructions from her in a row before any of them thinks about it.
 
-Sam is out inside the first ninety seconds of the Watch. He goes over the second floor bannister onto three teachers coming up, which works, then lands badly, which does not, and a teacher marks him out by sitting on his back. He talks about it for the rest of the afternoon from the bench by the front doors where the marked-out sit, then again at dinner, and he is still talking about it in June.
+Sam is out inside the first ninety seconds of the Watch. He goes over the second floor bannister onto three teachers coming up, which works, then lands badly, which does not, and a teacher marks him out by sitting on his back, a knee between his shoulder blades until he stops moving. Marked out means done, whether it is a knee in your back or paint on you, and it means the bench by the front doors until four. He talks about it for the rest of the afternoon from there, then again at dinner, and he is still talking about it in June.
 
-Chloe spends the whole Watch on the third floor landing shooting paintballs out of the air. There are six of them up there. The balls come up the stairwell in twos and threes for most of an hour, and when two of them meet there is a flat wet crack and paint everywhere at once. Below, six more crack together, sound carrying up through the floor. Somebody down there is shouting the count, but she cannot hear the numbers. Her arms ache by three o'clock, but she stays up there on the landing until it is over.
+Chloe spends the whole Watch on the third floor landing with five others, six markers pointed down into the stairwell, firing to meet whatever comes up it before it can clear the turn. The balls come up in twos and threes for most of an hour, and when an incoming one meets one of theirs in the air there is a flat wet crack and paint everywhere at once, both spent short of the landing. Below, six more paintballs crack together at once, sound carrying up through the floor. Somebody down there is shouting a count, but she cannot make out the numbers. Her arms ache by three o'clock, but she stays on the landing until it is over.
 
 By half past three, there are four teachers left standing in the whole building, but three of them are in the same corridor.
 
@@ -3152,17 +3152,17 @@ They take the bar in April, over two days, in the long room on the second floor,
 
 Afterward, Sam catches her at the bottom of the stairs with his collar open.
 
-"How long was the third one?"
+"How long was your answer to question three?"
 
-"Which third one?"
+"Which paper?"
 
-"Day two. The shed." As he walks backward in front of her, she steers him round the corner by the elbow. "I gave it eleven pages."
+"Day two. The shed one." As he walks backward in front of her, she steers him round the corner by the elbow. "I gave it eleven pages."
 
-"I gave it four."
+"I gave it four pages."
 
-"Four?"
+"Four pages?"
 
-"It's a question about who carries the risk while a thing is sitting in a shed. There's an answer, and there's why." She has her bag on both shoulders and keeps walking. "After that you're padding."
+"It's a contract question about who carries the risk while the goods are sitting in a shed. There's an answer, and there's why." She has her bag on both shoulders and keeps walking. "After that you're padding."
 
 Sam goes quiet the whole length of the corridor, then says he would like to withdraw about seven of his eleven pages.
 
@@ -3184,7 +3184,7 @@ She takes her paper to Amberg two days later, who has the mark scheme out on the
 
 "I have the answer to question three."
 
-"You do. It is correct and it is in your second line." He turns the scheme around so it faces her and puts a finger under a row of it. "There are four marks underneath that answer. One for the rule you are relying on. One for where the rule comes from. One for why a shed is inside it. One for what happens if the shed burns down on the Tuesday before delivery."
+"You do. It is correct and it is in your second line." He turns the scheme around so it faces her and puts a finger under a row of it, four rows printed one below the other, each with a mark value and a line of description beside it. "There are four marks underneath that answer. One for the rule you are relying on. One for where the rule comes from. One for why a shed is inside it. One for what happens if the shed burns down on the Tuesday before delivery." He lays her own paper next to the scheme. A tick sits by her second line. The four rows below it are empty.
 
 "All four of those follow from the answer."
 
@@ -3226,7 +3226,7 @@ She writes the shed burning down. Four minutes, one paragraph, with a sentence i
 
 She writes thirty-one of those between May and September, Kavi marking some and Nadia marking some, while she marks the rest herself with her own answer folded under the page. In May she stops early on about half of them. By August it is one in six, and one in six is where it stays.
 
-The people who teach block one do it for film and for competition. She comes into September already able to drive, because her father took her out to a church lot the previous July and meant to be the one who taught her. The school teaches her the rest. In October, when they cut the engine at sixty, she brings the car in on the gearbox alone and overshoots her mark by forty meters. In November, when the brake pedal sinks under her foot and the car keeps its speed, the answer is the gearbox, the handbrake, and a great deal more road than she thought she would need. In January they put her on a wet skid pan. By March she is reversing faster than anything in June had prepared her to believe.
+The driving instructors that year do stunt and competition work outside the school, and they teach by staging emergencies for her to handle, one at a time. She comes into September already able to drive, because her father took her out to a church lot the previous July and meant to be the one who taught her. The school teaches her the rest. In October an instructor cuts the engine at sixty, the first she hears of it, and she has to bring the car in on the gearbox alone, aiming for a mark set out on the tarmac; she overshoots it by forty meters. In November another one rigs the brake pedal to sink under her foot while the car keeps its speed, staged the same way and indistinguishable from a real failure while it is happening, and the answer turns out to be the gearbox, the handbrake, and a great deal more road than she thought she would need. In January they put her on a wet skid pan. By March she is reversing faster than she and her father ever managed in that church lot the July before.
 
 Delacroix runs the handling weeks, talking the entire time she drives, in one flat voice, about his brother-in-law's boat and the state of the tires and whatever else occurs to him.
 
@@ -3240,7 +3240,7 @@ She looks at the gap, and the car goes through it.
 
 ---
 
-She takes it again in October, in the same room, two rows over from where she sat in April.
+She sits the bar again in October, the retake for the thirty-nine who failed in April, in the same room, two rows over from where she sat the first time.
 
 Question six is a rented forklift. She has the answer in her second line, then writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. The whole of it takes nineteen minutes. She reads it back and doesn't change a word.
 
