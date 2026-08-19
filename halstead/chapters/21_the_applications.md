@@ -126,7 +126,7 @@ A representative from Stanford sits through an entire Tuesday of an eleven-year-
 A rep who asks to see "the youngest ones" sits in the back of a room where a class of seven-year-olds is dividing fractions the way their teacher was taught to divide them, by proving it first and using it after. They keep their eyes on the fractions. One girl raises her hand halfway through a problem, decides her question can wait, and puts her hand back down.
 
 
-A representative from Yale sits in on Mr. Hearn's writing seminar for ninety minutes and watches him hand back an argument on the Federalist Papers with a single note in the margin. His note reads, in full: *This hedges. Commit to the claim or drop it.* The note is the whole conversation. A representative from MIT asks to sit in on "the metalworking elective" and spends forty minutes watching twelve-year-olds handle equipment that would end most shop classes' insurance, then asks, carefully, whether it's supervised. It is.
+A representative from Yale sits in on Mr. Hearn's writing seminar for ninety minutes and watches him hand back an argument on the Federalist Papers with a single note in the margin. His note reads, in full: *This hedges. Commit to the claim or drop it.* A representative from MIT asks to sit in on "the metalworking elective" and spends forty minutes watching twelve-year-olds handle equipment that would end most shop classes' insurance, then asks, carefully, whether it's supervised. It is.
 
 
 A rep corners Chloe in the library on a Wednesday and asks, pleasantly, what a typical day looks like. She gives him the version she's given clinicians and investigators before: classes, meals, prep time, sleep, four words for each block, all of it already printed in the brochure he's holding. He writes it down anyway and thanks her for her time.
@@ -226,7 +226,7 @@ Odile gets in everywhere she applied and keeps it to herself until Léo asks her
 "How many schools?" he asks.
 
 
-"Twelve," Odile says, and that's the whole conversation.
+"Twelve," Odile says, already back inside her book.
 
 
 Chloe gets twelve of fourteen.

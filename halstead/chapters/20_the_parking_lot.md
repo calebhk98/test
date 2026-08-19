@@ -14,7 +14,7 @@ They're over the fence at twenty past eleven.
 
 The road into town runs downhill for the first mile, no streetlights until the gas station, and they keep to the shoulder in a loose line, Sam out front with his hands in his pockets, Nadia counting the cars that pass under her breath out of habit rather than need. A dog somewhere behind a fence works itself up for half a block and gives up. They cut through the empty lot behind a tire place and back out onto the road on the far side of it. Forty minutes gets them to the diner sign, waffles lit up yellow against the dark, the last stretch quiet except for boots on gravel.
 
-The diner does waffles all night, the syrup chained to the napkin holder so nobody walks off with the bottle, a jukebox in the corner gone silent before any of them were born. They take a booth by the window, the lot lit orange under one working lamp, and the waitress has menus down before the door's finished swinging shut behind them. They order too much and then Sam orders more, a full stack for himself and half of Nadia's once she stops eating a third of the way through it. He works his way around the crisp top edge of his own stack before he touches the syrup at all, the way he does every waffle he's ever been handed. The waitress, maybe fifty, carries four plates on one arm, refills the coffee unasked, and calls all of them honey, twice for Ruth, who lets it go from her in a way she wouldn't at school. Nadia falls asleep sitting up, then wakes and finishes her sentence. Chloe takes the seat that faces the door without deciding to, the way she takes it in the dining hall, in the library, anywhere with more than one way out.
+The diner does waffles all night, the syrup chained to the napkin holder so nobody walks off with the bottle, a jukebox in the corner that hasn't worked since before any of them were born. They take a booth by the window, the lot lit orange under one working lamp, and the waitress has menus down before the door's finished swinging shut behind them. They order too much and then Sam orders more, a full stack for himself and half of Nadia's once she stops eating a third of the way through it. He works his way around the crisp top edge of his own stack before he touches the syrup at all, the way he does every waffle he's ever been handed. The waitress, maybe fifty, carries four plates on one arm, refills the coffee unasked, and calls all of them honey, twice for Ruth, who lets it go from her in a way she wouldn't at school. Nadia falls asleep sitting up, then wakes and finishes her sentence. Chloe takes the seat that faces the door without deciding to, the way she takes it in the dining hall, in the library, anywhere with more than one way out.
 
 They stay two hours. Sam wants to know whether the dent in Amberg's car is really shaped like a mailbox, and Ruth, who asked him outright once and got a straight answer, says it is, because the mailbox itself was in the wrong place and Amberg still maintains that.
 
@@ -86,7 +86,7 @@ The men come out four blocks later, between two parked cars, seven of them in a 
 
 "Phones. Watches. Come on."
 
-Chloe's read comes in the order it always does. The fence, the gap under it, the alley, the loading dock she could be on top of in four seconds. Seven of them, three armed, standing shoulder-close, four of them within arm's reach of the man beside him. That's the whole read. A group that stands like that has had it easy every time before.
+Chloe's read comes in the order it always does. The fence, the gap under it, the alley, the loading dock she could be on top of in four seconds. Seven of them, three armed, standing close enough together that a fourth of them could reach the man next to him with his arm still at his side. That's the whole read. A group that stands like that has had it easy every time before.
 
 "Hang on," Sam says. "Let me have this one."
 
@@ -166,7 +166,7 @@ Sam looks at the seven of them a moment longer than the others do, the closest h
 
 They leave.
 
-Through the window of the diner the waitress is standing at the till with the phone in her hand, watching them go over the fence, and she has not dialled it yet. She is fifty years old and she has been on her feet since four, and what is on her face is the thing none of the four of them are wearing. Chloe sees it going over and files it with the other mismatched things about the outside, and is over the fence and gone before she has got anywhere with it.
+Through the window of the diner the waitress is standing at the till with the phone in her hand, watching them go over the fence, and she has not dialled it yet. She is fifty years old and she has been on her feet since four, and what is on her face is the thing none of the four of them are wearing. Chloe sees it going over and files it with the other things about the outside that come out crooked, and is over the fence and gone before she has got anywhere with it.
 
 ---
 
@@ -206,6 +206,6 @@ Chloe sets her shoes down by the door, laces still knotted from being kicked off
 
 Ruth shuts the box off in the corridor and puts it in the chat before she sleeps. Four lines and a photo of Sam standing in the lot with his arms out. By breakfast there are sixty replies and an argument about whether it counts, whether seven civilians with three guns between them is a real test or just seven people who happened to be in the way of one.
 
-Somebody in the year above has sent just one laughing face. Ruth reads it out at breakfast. Sam reaches past her for the syrup and starts on his tray, like the question landed for somebody else at the table. He lets the question sit every time it comes up, and keeps letting it sit long enough that people start bringing it up just to watch him do it again.
+Somebody in the year above has sent just one laughing face, which Ruth reads out at breakfast while Sam reaches past her for the syrup and starts on his tray, like the question landed for somebody else at the table. He lets it sit every time it comes up, and keeps letting it sit long enough that people start bringing it up just to watch him do it again.
 
 Nadia doesn't call her father before she leaves for the summer. Telling him about the fence would mean telling him how they got over it, a story that lands on more than just her. She's home two days later, checks the till against the tape before she says hello, and by the time he asks how school is, the part-timer who'd been pocketing the difference on Thursdays is already gone and the number is already back where it should be. The ledger goes back under the counter, balanced, before her mother's finished asking how the drive back was. She keeps the fence, the diner, and seven men behind a hardware store to herself.

@@ -2,19 +2,19 @@
 
 *September 2023*
 
-The chat is nine years old. They wrote the encryption themselves at thirteen, mostly so they could arrange getting out of the building without a teacher reading it, and none of them has ever used anything else.
+The chat is nine years old. They wrote the encryption themselves at thirteen, mostly to keep a teacher from reading it while they arranged getting out of the building, and it's the only one any of them has ever used.
 
 
-This is the first September none of them are in the same building. Eli, three states from where he grew up, has a new badge with last year's photo still on it, and Ruth is in a dorm room in Cambridge with a roommate she's met twice. Sam is at a processing station somewhere the paperwork won't name, where they hand his phone back a few minutes at a stretch. Kavi is still at Halstead, in a lab down the corridor from where he had his own lessons, doing work that used to be homework. Nadia is back behind the counter of her parents' shop, same as she's always done, while Theo, four states from the harbor town he grew up in, learns which parts of his new government job he isn't allowed to describe out loud. Priya is somewhere south of the equator, on a signal that comes and goes, and Chloe sits in a lecture hall built for four hundred people, an hour from the apartment she rents. The chat is the one place all of them are still in the same room.
+This is the first September that finds every one of them somewhere else. Eli, three states from where he grew up, has a new badge with last year's photo still on it, and Ruth is in a dorm room in Cambridge with a roommate she's met twice. Sam is at a processing station somewhere the paperwork won't name, where they hand his phone back a few minutes at a stretch. Kavi is still at Halstead, in a lab down the corridor from where he had his own lessons, doing work that used to be homework. Nadia is back behind the counter of her parents' shop, same as she's always done, while Theo, four states from the harbor town he grew up in, learns which parts of his new government job stay behind the badge. Priya is somewhere south of the equator, on a signal that comes and goes, and Chloe sits in a lecture hall built for four hundred people, an hour from the apartment she rents.
 
 
-Eli types with his phone propped against a monitor so he doesn't have to look down from whatever's actually on the screen. Kavi answers from the same desk he does everything else from, one hand still turning over whatever object was already sitting on it. Ruth writes standing up, phone in one hand and a textbook open in the other, and finishes a whole exchange without ever quite stopping what she was doing before it started. Nadia texts one-handed while she counts a till with the other and doesn't lose track of either one. Theo answers standing at a window with the blinds already down, phone held the way he'd hold a document he isn't sure he's allowed to have. Sam thumbs the keyboard with the same economy he uses on everything else, three words and stop, because someone behind him is already waiting for the phone. Priya replies from wherever she's charging it, propped against a boot, a bag, once against the neck of a horse that didn't seem to mind.
+Eli types with his phone propped against a monitor, eyes staying on whatever's actually on the screen. Kavi answers from the same desk he does everything else from, one hand still turning over whatever object was already sitting on it. Ruth writes standing up, phone in one hand and a textbook open in the other, and finishes a whole exchange while keeping pace with whatever she was doing before it started. Nadia texts one-handed while she counts a till with the other, keeping track of both at once. Theo answers standing at a window with the blinds already down, phone held low and close, the way he'd hold a document above his clearance. Sam thumbs the keyboard with the same economy he uses on everything else, three words and stop, because someone behind him is already waiting for the phone. Priya replies from wherever she's charging it, propped against a boot, a bag, once against the neck of a horse that stood still for it.
 
 
 Some of them answer inside a minute no matter the hour, Eli most nights, and Kavi from the same building he's always slept in. Others answer in bursts, three messages at once after a six-hour gap, a reply to something asked at nine landing after midnight because a shift only just ended. A message sent to the whole group at three in the morning gets an answer from somebody within five minutes. It has for nine years.
 
 
-A message can sit read and unanswered for hours without meaning anything is wrong. Because whatever he's in the middle of at the agency doesn't stop for a joke about somebody's boss, Theo reads everything within minutes of it landing and sometimes doesn't answer for a day. Nadia reads fast and answers fast, except during the two hours after the shop closes, when she's doing the books and the phone goes face down on the counter. Sam is the only one who can go dark for stretches at a time, no read receipt, nothing, and then three replies land inside the same minute once he's got the phone back. None of it is a pattern anyone has ever had to explain to anyone else in it, and a message can open with guys, or ok, or nothing at all, just the next fact, before whoever's reading has gotten past the first word.
+A message can sit read for hours, and it means only a shift running long, a supervisor still talking, a horse three switchbacks from cell service. Whatever he's in the middle of at the agency keeps running through a joke about somebody's boss, so Theo reads everything within minutes of it landing and sometimes waits a full day to answer it. Nadia reads fast and answers fast, except during the two hours after the shop closes, when she's doing the books and the phone goes face down on the counter. Sam goes dark for stretches at a time, the read receipt stuck wherever it last landed, and then three replies arrive inside the same minute once he's got the phone back. A message can open with guys, or ok, or silence before the next fact, arriving before whoever's reading has gotten past the first word.
 
 
 ________________
@@ -104,7 +104,7 @@ eli: i got a meeting with a lawyer
 eli: which honestly has been the most interesting thing thats happened to me since i started
 
 
-The build pipeline flaw is the kind of gap nobody at the company thought to check for, because nobody there expected somebody like Eli to look at it sideways. Their own encryption has never been checked either, not once in nine years, by anyone with a real reason to try. Eli didn't write all of it, and he's never gone back to see how much of it would hold up against him now.
+The build pipeline flaw is the kind of gap a company checks for insiders and outages, not for somebody like Eli looking at it sideways. Their own encryption has gone nine years without anyone who had real reason to try it. Eli wrote part of it. The rest has sat as untested by him as by everyone else, the same nine years running.
 
 
 ________________
@@ -112,7 +112,7 @@ ________________
 
 
 
-Ruth's dorm room is a triple, which nobody warned her about, with a roommate who alphabetizes a spice rack down to the paprika and gets genuinely upset when it's moved. In her three weeks at MIT she's found the library that stays open all night and worked out which dining hall serves something hot after ten. She still answers the chat faster than anyone else in it, usually inside a minute, whatever she's doing when the message lands.
+Ruth's dorm room is a triple, a surprise she only discovered on move-in day, with a roommate who alphabetizes a spice rack down to the paprika and gets genuinely upset when it's moved. In her three weeks at MIT she's found the library that stays open all night and worked out which dining hall serves something hot after ten. She still answers the chat faster than anyone else in it, usually inside a minute, whatever she's doing when the message lands.
 
 
 ruth: my roommate alphabetizes her spice rack
@@ -177,7 +177,7 @@ ________________
 
 
 
-Halfway through September, Nadia tries to pin an actual date, because nobody has been in the same room since graduation and the loose plan from June, get together before the holidays, hasn't produced one weekend that works for more than four people at once. She posts the question on a Tuesday afternoon, and it sits for two hours before anyone answers.
+Halfway through September, Nadia tries to pin an actual date. It's been three months since anyone in the group has stood in the same room, and the loose plan from June, get together before the holidays, has produced exactly zero weekends that work for more than four people at once. She posts the question on a Tuesday afternoon, and it sits for two hours before anyone answers.
 
 
 nadia: ok does anyone actually have a free weekend before december
@@ -239,7 +239,7 @@ ________________
 
 
 
-Priya's messages land three days behind whatever prompted them, sometimes four, whole conversations she answers into after the group has already moved on twice, though nobody minds. She posts anyway, whenever the signal holds long enough to send anything at all.
+Priya's messages land three days behind whatever prompted them, sometimes four, whole conversations she answers into after the group has already moved on twice, and everyone answers her back anyway. She posts whenever the signal holds long enough to send anything at all.
 
 
 priya: theres a horse here that a farmer uses to bring cheese down from the high pasture, actual cheese, strapped either side like saddlebags, and he doesnt even lead her, she just goes
@@ -277,7 +277,7 @@ ________________
 
 
 
-Theo started at the agency in July, and most nights he still isn't sure which parts of the day he's allowed to describe out loud, so he sticks to the parts that would be true of any first job anywhere, a supervisor, a desk, a badge that clips on crooked no matter how he sets it. He still checks it for the photo some mornings before he clips it on at all.
+Theo started at the agency in July, and most nights he sticks to the parts of the day that would be true of any first job anywhere, a supervisor, a desk, a badge that clips on crooked no matter how he sets it. He still checks it for the photo some mornings before he clips it on at all.
 
 
 theo: my supervisor keeps sending my work back and asking me to show the reasoning
@@ -370,7 +370,7 @@ ________________
 
 
 
-Chloe's old laptop dies the week before her first classes start. She is, by her own accounting, careful with money. This is not that.
+Chloe's old laptop dies the week before her first classes start. She is, by her own accounting, careful with money, right up until a dead laptop meets a lunch break.
 
 
 chloe: i bought a laptop
@@ -429,7 +429,7 @@ ________________
 
 
 
-Nadia is behind the counter more hours a week now than she's ever been, since none of the two months of interviews turned into anything worth taking. A regular customer asks her, not unkindly, when she's going to go do something with herself, and she rings up his sandpaper and doesn't answer.
+Nadia is behind the counter more hours a week now than she's ever been, since none of the two months of interviews turned into anything worth taking. A regular customer asks her, not unkindly, when she's going to go do something with herself. She rings up his sandpaper and hands him his change.
 
 
 nadia: guy today asked me when im going to go do something with myself

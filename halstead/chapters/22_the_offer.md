@@ -35,7 +35,7 @@ The part she's actually weighing is different. She's taught the twelves real ana
 Mr. Amberg writes something down and doesn't argue with her. He closes the folder, squares it against the edge of the desk, and checks the clock, which still has four minutes left on it. He spends them going back through the rest of the file in silence, the same slow read he'd give a mark scheme before handing it back, and closes it for good only once the four minutes are actually up.
 
 
-At fifteen minutes exactly he stands, which means she stands too, and the next name is already waiting in the doorway.
+At fifteen minutes exactly he stands. She stands too, and the next name is already waiting in the doorway.
 
 
 ________________

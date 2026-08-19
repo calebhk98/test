@@ -22,7 +22,7 @@ On the fourth of July she starts an argument with her father about whether a hot
 
 "It's the same food, but I cut it."
 
-Her father says he is not doing this at a barbecue in front of people, so they do it in the car on the fifth, at breakfast on the sixth, and twice on the seventh. On the eighth he concedes on a technicality about structural intent, and Chloe tells him a concession counts no matter how he gets to it, but her mother rules that the subject is closed in her hearing from now until Labor Day.
+Her father puts it off until they're away from the barbecue, so they do it in the car on the fifth, at breakfast on the sixth, and twice on the seventh. On the eighth he concedes on a technicality about structural intent, and Chloe tells him a concession counts no matter how he gets to it, but her mother rules that the subject is closed in her hearing from now until Labor Day.
 
 Downstairs that night, after she has gone up, her father folds the paper and leaves it folded.
 
@@ -80,7 +80,7 @@ Her mother stays in the hall, then goes through to the kitchen. Her father comes
 
 "What was that."
 
-"Curfew." Her mother turns the tap on and turns it off again without putting anything under it. "She had the library one ready to go, and she's been sitting on it since Tuesday, waiting for me to hand her a reason to use it."
+"Curfew." Her mother turns the tap on, then off again, the sink empty under it. "She had the library one ready to go, and she's been sitting on it since Tuesday, waiting for me to hand her a reason to use it."
 
 "Did you win?"
 
@@ -152,7 +152,7 @@ Team sports is where the teams are assigned. She gets one with two people on it 
 
 "Can I ask why not?"
 
-"Teams are for the year, and you're the third one to ask me this week." The teacher does not stop writing on the clipboard. "Ask me in June and it'll be no in June."
+"Teams are for the year, and you're the third one to ask me this week." The teacher keeps writing on the clipboard. "Ask me in June and it'll be no in June."
 
 She asks again in November and gets it in four words. Drawing is Thursdays, and in the second term, while they spend six weeks on hands, Chloe draws her own left hand about forty times, in pencil, from the same angle, on the same cheap paper. The fortieth one looks like a hand, down to the little finger sitting lower than it ought to sit. Ruth picks it up off the table on her way past.
 
@@ -190,7 +190,7 @@ She writes her name on the choir line, because she sang in the shower every day 
 
 "Stand next to Amara and match her. She's doing the thing I keep asking you for and she can't tell you how either."
 
-Chloe stands next to Amara for four weeks and matches her about a third of the time, but the matching is a different job from the one she came in for, and she is not getting better at it. What she liked was being loud in a small tiled room with nobody in it. In the sixth week she stops going and takes the hour in the pool instead, although she sings in the shower afterward, where she was doing it to begin with.
+Chloe stands next to Amara for four weeks and matches her about a third of the time, but the matching is a different job from the one she came in for, and she stays exactly where she started. What she liked was being loud in a small tiled room, alone. In the sixth week she stops going and takes the hour in the pool instead, although she sings in the shower afterward, where she was doing it to begin with.
 
 On a Tuesday in April the four of them end up on the grass behind the science building for about an hour, because Sam sat down and then Kavi sat down. Sam has a shopping bag of apples and says only that they were going spare. For the whole hour they throw them at a drainpipe forty feet away.
 

@@ -11,7 +11,7 @@ The food is fine, the people are funny, and there is a schedule, which he has ha
 He maxes the fitness assessment in week two. Then he does it again in week three, better, because in Sam's head a number he's already hit is just the number that comes next.
 
 
-He does that with everything. There's no version of a task in Sam's head where he reaches a number and lets that be enough. By week nine his file has a lot of numbers in it and somebody has started printing them out.
+He does that with everything. There's no version of a task anywhere in Sam's head where he reaches a number, decides that's enough, and stops there. By week nine his file has a lot of numbers in it and somebody has started printing them out.
 
 
 ________________

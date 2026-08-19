@@ -122,7 +122,7 @@ Priya makes him stand against the door frame in the corridor and marks it in pen
 
 Fencing goes to both hands in the same term, so her left is roughly where her right was at eleven, half a beat late onto everything she can already see coming.
 
-The forge stays where it has been. She finishes a set of three hinges in November that have taken her three Sundays. She holds one up to the window and turns it, thumb working along the seam where the two edges meet and don't quite sit flush, then drops all three in the scrap bin on her way past, while Pruitt is at the far bench with two others and does not see her do it.
+The forge stays where it has been. She finishes a set of three hinges in November that have taken her three Sundays. She holds one up to the window and turns it, thumb working along the seam where the two edges meet slightly off, then drops all three in the scrap bin on her way past, while Pruitt, at the far bench with two others, keeps talking with his back to her.
 
 ---
 
@@ -188,7 +188,7 @@ Her father sets his fork down. "She said something on the phone in October."
 
 "I thought you knew," he says, keeping his eyes down. "I thought it was fine."
 
-Her mother sets the dish down in the middle of the table, straightens it with two fingers, and goes into the kitchen, staying there while her father moves the salt, puts it back, then gets up and starts stacking plates that nobody has finished with.
+Her mother sets the dish down in the middle of the table, straightens it with two fingers, and goes into the kitchen, staying there while her father moves the salt, puts it back, then gets up and starts stacking plates still half full.
 
 Her mother comes out after about six minutes and asks whether anybody wants the pie warmed up. Her father and Chloe both say yes at the same time. He turns the game on and they eat it in front of that, and her mother comes and sits on the arm of his chair for the second half.
 
