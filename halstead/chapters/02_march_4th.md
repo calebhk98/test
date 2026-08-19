@@ -77,7 +77,7 @@ Ben looks at her, longer than usual.
 "Some people do," he says. "It isn't the one that matters."  
 \---  
 Then he talks to her mom, and Chloe waits in the hall on a chair that's too tall for her feet, holding her jacket in her lap because there isn't anywhere else to put it. Her stomach makes a noise loud enough that she checks whether the door heard it too.  
-The door is open a few inches. Through the gap her mom's foot doesn't stop moving, heel up, heel down, the whole time. Chloe picks at the zipper pull on her jacket, not really trying to open it, just something to do with her hands, and listens.  
+The door is open a few inches. Through the gap her mom's foot doesn't stop moving, heel up, heel down, the whole time. Chloe picks at the zipper pull on her jacket, not really trying to open it, something to do with her hands while she listens.  
 She doesn't get all of it: her mom's voice, the teacher says. Ben's voice runs on, full of words she doesn't have. Then a piece of it comes through clean, because he's turned toward the door.  
 "I'm not seeing what the school is seeing. She finishes in the first two minutes and then she's got thirty-eight minutes left over and nowhere to put them."  
 "So there's nothing wrong with her?"  
