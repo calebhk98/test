@@ -122,7 +122,7 @@ Priya makes him stand against the door frame in the corridor and marks it in pen
 
 Fencing goes to both hands in the same term, so her left is roughly where her right was at eleven, half a beat late onto everything she can already see coming.
 
-The forge stays where it has been. She finishes a set of three hinges in November that have taken her three Sundays. She holds one up to the window and turns it, then drops all three in the scrap bin on her way past, while Pruitt is at the far bench with two others and does not see her do it.
+The forge stays where it has been. She finishes a set of three hinges in November that have taken her three Sundays. She holds one up to the window and turns it, thumb working along the seam where the two edges meet and don't quite sit flush, then drops all three in the scrap bin on her way past, while Pruitt is at the far bench with two others and does not see her do it.
 
 ---
 

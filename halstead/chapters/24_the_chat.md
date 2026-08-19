@@ -552,7 +552,7 @@ Kavi doesn't come back with anything for four days. When he does, he says he ask
 The lock they built at thirteen to get past a teacher is still the only thing standing between this chat and anyone outside it, and none of them has ever proposed replacing it with something better. Whatever internal means, it isn't a word any of them knows how to get past.
 
 
-The chat moves on within about ten minutes.
+The chat moves on within about ten minutes. Chloe leaves the tab open on her desk for the rest of the evening and doesn't type anything else into it.
 
 
 ________________

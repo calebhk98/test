@@ -224,6 +224,6 @@ Mr. Hearn is the last one. He has the library, one door, one window, a room full
 
 The board the next day says the staff lost the building at three forty-two, and then it gives the students a B and lists eleven failures.
 
-Chloe reads the eleven failures in the corridor. Number four is about the east stairwell and names two students, but neither of them is Ruth. Number nine says that at no point in the two hours did anybody establish how many adults were in the building. She stands in front of that one, because she spent the whole two hours on a landing counting paint.
+Chloe reads the eleven failures in the corridor. Number four is about the east stairwell and names two students, but neither of them is Ruth. Number nine says that at no point in the two hours did anybody establish how many adults were in the building. She stands in front of that one with her arms crossed and doesn't move on until somebody behind her needs the space, because she spent the whole two hours on a landing without once checking how many teachers were still up there.
 
 She is still on number nine at dinner, where Sam is describing the bannister for the fourth time to two people who were standing underneath it.

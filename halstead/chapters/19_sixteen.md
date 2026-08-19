@@ -28,7 +28,7 @@ Kavi looks at the board, then at her, then back at the board.
 
 "I got it by nine." His hand comes up over his mouth a half second behind the words. "That was not the thing to say."
 
-"It's fine." She takes the list in one more time and steps back from the board to let somebody else in.
+"It's fine." She takes the list in one more time, her hands flat and still at her sides, then steps back from the board to let somebody else in.
 
 Fifty-one in the year pass, thirty-nine do not, and by dinner those thirty-nine have found each other by sight, because that board hangs in a hall everybody walks past four times a day.
 

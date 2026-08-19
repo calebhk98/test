@@ -142,7 +142,7 @@ Chloe sets her bag against the wall. "All right, shoot."
 
 "You can't be held to anything. I can. So asking is what I have."
 
-She takes a week over it, and she builds the case against first. Fifteen years old, asked to guard a secret that already had four other names on it, and she makes that side as hard as she can. Then she builds the other one, from Sandoval's side, and from her own, and from the side of the four names on the form. She is quiet at dinner on Wednesday, and Sam asks her twice whether she is all right.
+She doesn't sleep well that night, and snaps at Sam over nothing at breakfast the next morning, then apologizes for it before he can ask why. Then she takes a week over it, and she builds the case against first. Fifteen years old, asked to guard a secret that already had four other names on it, and she makes that side as hard as she can. Then she builds the other one, from Sandoval's side, and from her own, and from the side of the four names on the form. She is quiet at dinner on Wednesday, and Sam asks her twice whether she is all right.
 
 She stops saying what she does in the afternoons, and it takes about four days to stop being a decision.
 
