@@ -35,9 +35,6 @@ These are checkable and wrong. Highest priority.
 - **ch13 L23 vs L164** — she finishes all fifty-one of Hamilton's by mid-December and starts Madison;
   over Christmas she is reading Federalist 70 and 78, which the same paragraph assigns to Hamilton.
   Madison never reappears.
-- **ch14 L69** — Chloe says "Italian's on the list." Italian is on Sam's list and Priya's, not
-  hers; `_ALLOCATIONS.md` gives her Spanish, French, Mandarin, Russian, Latin, Arabic, German,
-  Japanese, Hindi, Korean, Swahili. Verified.
 - **ch14 L47** — "Coming up the field at a run from her end, Odile covers seventy metres in about
   forty seconds." That is 1.75 m/s, slower than a brisk walk, for the most physically developed
   student in the year. Verified.
@@ -190,9 +187,6 @@ something the reader was never given.
 - ch12 L103 — "she has torn the corner off the book she was holding." No book was in her hands.
 - ch16 L47 — "so whatever a fail is for here, it is not that." No antecedent for "that."
 - ch16 L133–149 — the napkin's path from Eli to Kavi to Chloe is asserted retroactively, never shown.
-- ch17 L27–35 — **"Aymar" is used as the name of a male background student in a chapter where Ruth
-  Aymar is a speaking main character.** RUTH.md flags this independently. Rename the stopwatch
-  student.
 - ch18 L115–127 — "Hark has her at the board… She stands at the back with her arms folded."
 - ch19 L113 — "a hook on the back of her door with a bag on it, which she made in her second year" —
   hook or bag.
@@ -247,10 +241,6 @@ reviewers were reacting to when they read Chloe as non-human, and it is not conf
   her, checks her, or mentions it. All following attention goes to the four restrained men.
 - **ch8 L131–135** — Chloe screams "I hate you. I hate you so much" and slams a door hard enough to
   jump the frame. The next scene is dinner, with no acknowledgment of any kind.
-- **ch20 L151–165** — "Three of those were real guns," and the only physical reaction in the entire
-  aftermath is Sam looking at his knuckles.
-- **ch20 L163** — "None of them are hurt bad," uncontested, minutes after Ruth diagnosed a concussion
-  and relocated a shoulder.
 - **ch1 L96–99** — the doctor recommends evaluation in front of Chloe and the scene cuts to a sticker
   at the front desk. No interiority at a moment centrally about her, in a chapter that otherwise
   gives it constantly.
@@ -310,11 +300,6 @@ reviewers were reacting to when they read Chloe as non-human, and it is not conf
   followed by an unrelated question.
 - **ch26 L28** — "the best score I've seen this cycle" draws no reaction from Sam at all, in a
   chapter whose opening two paragraphs are entirely about how Sam relates to his own results.
-- **ch14 L163–177** — Chloe reports a fourteen-thousand-word essay arguing through whether area
-  bombing was justified. Meg says "Well, a B's a B," and moves to the next plate. Meg's whole
-  established method is the escalating question that won't let a minimizing answer stand; here she
-  gives the minimizing close.
-- **ch14 L179–185** — her father walks in directly after that exchange and asks only about archery.
 - **ch14 L43–49** — the first successful arrow collision, with debris landing near a person, draws
   shouting and no adult at all. No instructor is present or reacts at any live-fire drill in the
   chapter, after a full page of Bell's safety framing.
@@ -564,23 +549,67 @@ text. Several were created by this session's own rewrites.
 - **SYNOPSIS and THEO.md date the infiltrator's identification at "a day and a half"** (and, in one
   place, "twenty-four hours"); ch32 L123 says "we spotted him in a day."
 
-## 10b. False positives worth recording
+## 10b. False positives, and the two rules that produce them
 
-Two findings from this batch are the chapter working exactly as intended, and both are the failure
-mode you predicted — a reader who only has the text calling a deliberate choice an error.
+Six findings so far are the chapter working as intended. They fall into two classes, and both classes
+are cheap to prevent — the rules are now in `passes/trial/BRIEF_D.md` so the remaining chapters don't
+reproduce them.
 
-- **ch32 L135, "chloe: theo that was a drill."** The agent called this the chapter's central problem,
-  on the grounds that Chloe physically restrained the men in ch15 and would know. She would not: the
-  twelve-year-olds are meant to believe it was a drill, and Theo's "it wasnt a drill. i read the
-  file" is the reveal. Chloe reading it twice and setting the phone face down is the reaction beat.
-  Nothing to fix.
+### Rule A — check what the speaker actually knows
+
+The book is tight third limited. A character being wrong is not the text being wrong, and a reaction
+sized to what someone has been told is not undersized.
+
+- **ch32 L135, "chloe: theo that was a drill."** Called the chapter's central problem, on the grounds
+  that Chloe restrained those men herself at twelve. She did, and she still thinks it was a drill —
+  the twelve-year-olds are meant to. Theo's "it wasnt a drill. i read the file" is the reveal, and
+  Chloe reading it twice and setting the phone face down is the reaction beat.
+- **ch14 L69, "Italian's on the list."** Flagged because Italian is Sam's and Priya's language, not
+  Chloe's. It is on the list, and at eleven she thinks she might take it. She turns out not to.
+  Nothing she says is false from where she is standing, and the line does real work: it tells the
+  reader the school offers more languages than any one student takes, without printing the list.
+- **ch14 L163–177, Meg's "Well, a B's a B."** Flagged as beneath Meg's established
+  won't-let-it-close method. Meg has not been told it was fourteen thousand words — she has been told
+  her eleven-year-old wrote an essay and got a B. An eleven-year-old covering area bombing is not
+  remarkable for this school. There is room for her to react to the *subject*; there is nothing for
+  her to react to in a word count she doesn't have.
 - **ch32 L126, Theo's "four of us put them on the floor."** Read as Theo claiming to be one of the
-  four combatants, this contradicts SAM.md. Read as "four of us [Halstead students]," which is the
-  more natural reading of the idiom, it doesn't. Not worth a change.
+  four combatants, it contradicts SAM.md. Read as "four of us Halstead kids," which is the ordinary
+  sense of the idiom, it doesn't.
 
-Both were caught by checking the manuscript rather than the report. That ratio — two false positives
-in roughly sixty findings across three chapters — is the cost of the prosecutorial framing, and it is
-a good trade.
+### Rule B — competence is not an omission
+
+Fear and fuss decay with training and with years at the school. The cast gets calmer as it gets
+older, and flatness after violence is the characterisation, not a missing beat. Two of these were
+flagged with the justification sitting in the same paragraph.
+
+- **ch20 L163, "None of them are hurt bad."** Called uncontested and undersized. The line finishes
+  "That's the whole point of doing it the way we did it" — the text states the reason inside the
+  sentence being flagged. Sam does contest it, at L165, by standing there a moment longer than the
+  others.
+- **ch20 L151–165, no fear in the aftermath.** There is no fear because at sixteen, after years of
+  daily fights and the Watch, there wouldn't be. The reactions that *are* on the page are the ones
+  that belong to these people: Chloe watching the man's chest until it goes up on its own, Sam
+  looking at his knuckles, Sam not moving toward the fence.
+
+### Also withdrawn
+
+- **ch17 L27–35, the "Aymar" name collision.** People share surnames. A background student named
+  Aymar in a chapter where Ruth Aymar speaks is what a real school roll looks like, not an error.
+  RUTH.md's recommendation to rename him should come out of that sheet too.
+
+### Still open under the same rules — needs a recheck, not a fix
+
+These were not named, but they sit in the same territory and should be re-read before anyone acts on
+them:
+
+- **ch15 L199**, nobody checking on Chloe after the gloved hand. She is twelve and believes she is
+  being scored on a drill.
+- **ch18 L179**, the invented classroom explanation for a self-set broken knuckle passing without
+  internal comment.
+- **ch13 L106**, "it is still hard" asserted with no elaboration about an announced drill.
+
+---
 
 ## 11. What is not listed here
 
@@ -605,11 +634,15 @@ ways: a noun is promised and never delivered. It appears in every chapter read, 
 times. It is also the cheapest class to fix, because each instance needs one concrete noun, not a
 rewrite.
 
-**The reaction gap is concentrated at exactly the moments the book most needs a person.** Guns, a
-hand over a mouth, a screamed "I hate you," a diagnosis delivered in front of the child. The
-manuscript is reliably specific about hands and objects and reliably silent about what a body does
-after something happens to it. That is the same defect the outside reviewers named, arriving from
-the structural side rather than the voice side.
+**The reaction gap is real, but it is smaller than the raw count says and it is not where the
+agents put it.** Strike everything that a character's competence or a character's ignorance
+explains — the whole ch20 aftermath, the ch32 drill line, Meg on the essay — and what survives is a
+narrower, more specific problem, and it sits almost entirely in the early chapters: a screamed "I
+hate you" and a slammed door followed by an unremarked dinner (ch8), a diagnosis delivered in front
+of the child with no interiority in a chapter that otherwise gives it constantly (ch1), a child
+crying loudly in front of twenty-six classmates who register nothing (ch7). These are the years
+before the training starts. Nothing licenses the flatness there, which is exactly why they read as
+inhuman and why the later chapters, where the flatness is earned, do not.
 
 **Chronology fails at recaps and at chapter seams.** ch17's winter-break paragraph reports four
 future events; ch15 steps back from Christmas to Thanksgiving; ch6→ch7 runs backwards over the

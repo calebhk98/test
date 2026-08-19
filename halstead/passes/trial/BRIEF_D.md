@@ -89,6 +89,32 @@ Nothing is innocent until you have answered all of these for it.
 
 ---
 
+## Two things that are not findings
+
+Both of these have produced false positives. Clear every candidate finding against them before you
+write it down.
+
+**Check what the person actually knows.** This is a tight third-limited book. A character can be
+wrong, can be guessing, can be working from a partial account, and none of that is the text being
+wrong. Before you call a statement false, establish what that person has been told on the page.
+Before you call a reaction undersized, establish what they have been told on the page. A parent who
+hasn't been given the impressive detail cannot react to it. A child who believes the emergency was a
+drill is not contradicting a fact she witnessed — she is telling you what she believes.
+
+**Competence is not an omission.** These children train daily for years. Fear, fuss and adrenaline
+drain out of them as they get older, and the cast gets flatter and more capable with every chapter,
+on purpose. Calm after violence is characterisation. A sixteen-year-old who walks away from a fight
+without shaking is the point, not a missing beat. Before flagging an absent reaction, check whether
+the text has already given you the reason — twice now the justification has been sitting inside the
+same sentence as the flagged line.
+
+Two related non-findings: **people share surnames**, so a minor character with a main character's
+last name is what a real roll of students looks like; and **an institution's vocabulary can go
+unglossed**, because the reader is reading chapter one to chapter thirty-five in order, not landing
+here at random.
+
+---
+
 ## Aim
 
 **Expect at least thirty findings.** Fewer than that means you read for gist.
