@@ -6,14 +6,14 @@ The envelope has her name on it.
 Miss Chloe Kessler.  
 Nobody has ever sent Chloe anything, though her grandmother sends a card at Christmas with her name written inside it in pen, on an envelope whose outside says her parents. This one says her, typed, with a Miss in front of it and the address underneath in the same typing.  
 She stands at the mailbox with the rest of the mail held against her chest with one arm and opens it there, badly, so the flap tears down into the paper.  
-It's one page and it doesn't sound like a letter to a kid. There's a school called Halstead, with a summer session at it, four weeks long, starting the second week of July. You sleep there, transportation provided, and room and board included. There is no cost, which it says twice, in two different ways. Families are welcome to visit whenever they want, for as long as they want, and there's a hotel half a mile from the campus with rooms held for them, at no cost either. At the bottom there's a phone number, a name, and a signature over the name in real ink that has gone through onto the back.  
-What it comes down to is a place you go for four weeks in the summer, where you sleep in a building with other kids, that doesn't cost anything, and where somebody has typed her name on the front of it.  
-After she reads it three times standing in the driveway, with the rest of the mail going warm against her arm, Chloe puts the mail on the counter, takes the letter up to her room, and says nothing about it for four hours.  
+It's one page, and it reads like a letter written for an adult. There's a school called Halstead, with a summer session at it, four weeks long, starting the second week of July. You sleep there, transportation provided, and room and board included. There is no cost, which it says twice, in two different ways. Families are welcome to visit whenever they want, for as long as they want, and there's a hotel half a mile from the campus with rooms held for them, at no cost either. At the bottom there's a phone number, a name, and a signature over the name in real ink that has gone through onto the back.  
+What it comes down to is a place you go for four weeks in the summer, where you sleep in a building with other kids, free, and where somebody has typed her name on the front of it.  
+After she reads it three times standing in the driveway, with the rest of the mail going warm against her arm, Chloe puts the mail on the counter, takes the letter up to her room, and keeps it to herself for four hours.  
 "Can I go," she says at dinner.  
 Both of them look up.  
 "Can you go where, honey?"  
 Chloe puts the letter down on the table next to the salad bowl, face up, turned the right way round for her mom instead of for herself, because she has been thinking about how to do this since four o'clock.  
-Her mom reads it, then reads it again, her eyes going back to the same spot on the page and staying there longer, before she reads it a third time and hands it across the table without looking away from where it is.  
+Her mom reads it, then reads it again, her eyes going back to the same spot on the page and staying there longer, before she reads it a third time and hands it across the table, her eyes still on the page.  
 "Did you see this?"  
 "See what." Her dad takes it and reads it one-handed, still eating, then puts the fork down to hold it with both.  
 "We didn't apply to this."  
@@ -24,13 +24,13 @@ Her mom reads it, then reads it again, her eyes going back to the same spot on t
 "Ask them, there's a number on it."  
 "I'm asking you."  
 "Meg, I've had it for ninety seconds."  
-Her mom takes it back and turns it over to find nothing on the back except the ink from the signature coming through, before turning it the right way round again for a fourth read of the top part.  
+Her mom takes it back and turns it over, finds only the ink from the signature coming through the back, then turns it the right way round again for a fourth read of the top part.  
 "It's free," she says. "Four weeks, food, a bed, a bus, and it's free. Things are not free."  
 "Sometimes they are."  
 "No they aren't," her mom says.  
 "Sometimes somebody has money and wants to spend it on something," her dad says. "That's a whole thing that happens in the world. People give away scholarships. People put their name on the side of a hospital."  
 "To us? It happens to us?"  
-The free part is the part Chloe doesn't follow, since her mom says things cost too much about once a week, standing in a store with something in her hand, or at this table with an envelope open in front of her, and this one doesn't cost anything. Chloe pushes her fork through her food without eating any of it, waiting for somebody to get to that part, but both of them keep their eyes on the letter instead of on her.  
+The free part is the part Chloe can't place, since her mom says things cost too much about once a week, standing in a store with something in her hand, or at this table with an envelope open in front of her, and this one is free. Chloe pushes her fork through her food and leaves it sitting there, waiting for somebody to get to that part, but both of them keep their eyes on the letter instead of on her.  
 Chloe puts both hands flat on the table and comes up onto her knees on the chair to see it right way round.  
 "Can I go, though."  
 "We're talking about it."  
@@ -38,15 +38,15 @@ Chloe puts both hands flat on the table and comes up onto her knees on the chair
 "It's a we're talking about it," her mom says.  
 Chloe asks once more on the Sunday and then forgets to ask again for four days, because it's July and there's a sprinkler.  
 \---  
-Her mom calls the district office on Monday, where a woman takes the name down and says she'll look into it, and she doesn't call back Tuesday or Wednesday, though she does call back on Thursday afternoon. Chloe is on the stairs by then, on the step where the carpet stops and the wood goes cold under her, because that's the step where you can hear the kitchen.  
+Her mom calls the district office on Monday, where a woman takes the name down and says she'll look into it. Tuesday and Wednesday go quiet, and the callback comes Thursday afternoon. Chloe is on the stairs by then, on the step where the carpet stops and the wood goes cold under her, because that's the step where you can hear the kitchen.  
 Her mom spells it twice, H-A-L, Halstead, like it sounds, then there's a long stretch where the only sound in the kitchen is the other person talking. "Nothing at all? Not a charter, not a private, not a partner, nothing." Another stretch, shorter than the first one. "Okay. Okay, thank you. No, I appreciate it, I know it's not your job to go looking."  
-Then the phone goes down on the counter, and her dad says something from the other side of the room that doesn't carry as far as the stairs.  
+Then the phone goes down on the counter, and her dad says something from the other side of the room, too quiet to reach the stairs.  
 "She says there's no school by that name working with the district in any capacity, and she went back four years to check." Her mom runs the tap at the sink while she says it. "And she said to be careful."  
 "Careful how?"  
 "She said people do this. She said there are people who send things to houses with a kid's name on the outside, because a kid opens it, and that's how you find out which houses write back."  
-Her dad doesn't say anything.  
+Her dad's jaw goes tight.  
 "I'm telling you what she said."  
-Then her mom calls the Petersons, because Ellie Peterson is in the pull-out group and is the one kid on the street that anybody would put on a list of anything, but the Petersons haven't gotten one. She tries two more houses after that, then gives up, since after three houses it isn't research anymore, it's a thing you have to explain to your neighbors, and nobody on the street has gotten one. By Saturday three separate people know the Kesslers got something in the mail.  
+Then her mom calls the Petersons, because Ellie Peterson is in the pull-out group and is the one kid on the street that anybody would put on a list of anything, but the Petersons haven't gotten one. She tries two more houses after that, then gives up, since after three houses it isn't research anymore, it's a thing you have to explain to your neighbors, and Chloe is the only kid on the street who got one. By Saturday three separate people know the Kesslers got something in the mail.  
 Then she calls the number on the letter, and somebody picks up on the second ring, Chloe coming down from the top of the stairs to listen.  
 Her mom gives the name, spells the first half of it, says yes, that's the one, then waits through whatever the answer to that is.  
 "Okay. I want to know how you got her name."  
@@ -54,35 +54,35 @@ That one takes a long time to come back, the other voice going on behind the wal
 "That's not an answer. Where did the list come from?" Another wait, after which her mom says uh huh, then waits again. "And who put her on it?"  
 The voice goes on for most of a minute.  
 "Okay, but somebody made the list. A person made it. Somebody sat down and typed my kid's name."  
-Chloe comes down two more stairs during the wait, close enough to see her mom's free hand pressed flat against the counter, and her mom points at the stairs without turning around, so Chloe goes back up to the fourth one.  
+Chloe comes down two more stairs during the wait, close enough to see her mom's free hand pressed flat against the counter, and her mom points at the stairs, still facing the counter, so Chloe goes back up to the fourth one.  
 The wait after that one is shorter than all the others.  
 "Right. Okay. Thank you."  
 Then the call goes on for twenty-five more minutes and her mom's voice changes into the one she uses at the doctor. How many adults sleep in the building, what the ratio is at night, whether that's a different number from the daytime one. Whether the staff are licensed, by who, and whether she can see that in writing. What happens if a kid gets a fever at two in the morning, then what happens if it's worse than a fever. Whether there's a nurse or a person they call the nurse. What Chloe eats. Whether Chloe can be pulled out on any day, for any reason, or whether there's a form, or a notice period, or a fee.  
 Then, near the end of it, she asks how many children are going to be in the building.  
 "Over a hundred," her mom says, loud enough that the number carries. Then, a few seconds later, "Coming from where?"  
-Every single one of them gets answered straight away, nobody putting her on hold, or saying let me check on that for you, or saying anybody will have to get back to her about it.  
+Every single one of them gets answered straight away, immediate and complete, like the questions were already expected.  
 When she hangs up she stands there with her hand still flat on the phone, long enough that Chloe's dad puts down his coffee.  
 "Well?" he says.  
 "They said they have people who identify kids. Programs, scouts, she used the word networks." Her mom takes her hand off the phone. "And she said, and I want you to hear this exactly, she said their list is usually pretty good."  
 "Usually pretty good."  
 "That's not a number."  
 "Okay. And everything else?"  
-"She answered everything else. She answered everything else so fast I ran out of things to ask her." Her mom pulls out a chair and doesn't sit in it. "There's over a hundred kids."  
+"She answered everything else. She answered everything else so fast I ran out of things to ask her." Her mom pulls out a chair and stands behind it, both hands on the back. "There's over a hundred kids."  
 "A hundred."  
 "And they're not from around here. Not one town, not one state. She said they come from all over, and then she said we're one of the closer ones."  
 "Four hours is one of the closer ones."  
 "That's what she said."  
 "Is the network the one with cartoons," Chloe says, from the top of the stairs, a minute behind the part of the conversation she is answering, and neither of them looks over.  
 \---  
-Her dad looks up the website that night on the laptop at the kitchen table, and Chloe is allowed to sit next to him because it's Friday, her feet swinging under the chair without touching the floor.  
+Her dad looks up the website that night on the laptop at the kitchen table, and Chloe is allowed to sit next to him because it's Friday, her feet swinging free under the chair.  
 He talks the whole way through the first part of it, reading the headings out loud in the voice he does for train station announcements, so that Chloe laughs at the one for lights out. A photograph of a field with goals on it gets a look, and a pool gets a question about whether she'd swim, to which she says yes. He says she doesn't know how, she says she'd learn, he says fair enough. Then he finds the page about what a Tuesday looks like, hour by hour, and does all of the hours in the voice, including the one that's just lunch.  
 "This is a nice-looking place, kid."  
 Then he clicks the page with the teachers on it, where there's a photo of each one, with a paragraph underneath about what that person did before they came here, and he stops doing the voice.  
-He reads one of them all the way down without scrolling past anything, then goes back up and clicks a different one.  
+He reads one of them start to finish, then goes back up and clicks a different one.  
 "What?"  
 "Nothing."  
-He goes down the list, one after another, all the way to the bottom of it, then goes back up to the top and starts again from the first one, slower this time. Chloe waits a while for him to keep talking, then goes and gets her book and reads at the table next to him, and he doesn't notice her leave or come back.  
-Her mom does her own looking on the Sunday, on the same laptop, with the door shut. She types the name in and gets the website, then gets it again, and a third time from a different direction. There's no news story about it anywhere, no parent complaining about it on anything, no address listed in any of the places an address gets listed, no photograph of the building that isn't one of theirs, and nobody anywhere who has been there and said a word about it afterward. For a school that has put over a hundred children through a summer, four summers running, there is nothing, and she says so at the table that night with the laptop still open.  
+He goes down the list, one after another, all the way to the bottom of it, then goes back up to the top and starts again from the first one, slower this time. Chloe waits a while for him to keep talking, then goes and gets her book and reads at the table next to him, and he stays fixed on the screen the whole time she's gone.  
+Her mom does her own looking on the Sunday, on the same laptop, with the door shut. She types the name in and gets the website, then gets it again, and a third time from a different direction. Three searches from three different directions turn up nothing beyond the school's own website: no news coverage, no parent forum mention, no listed address, no photograph that isn't theirs, no one anywhere who has been there and said a word about it afterward. For a school that has put over a hundred children through a summer, four summers running, that's what she finds, and she says so at the table that night with the laptop still open.  
 Later, in the kitchen, with the door mostly shut:  
 "They've got a woman who swam in the Olympics."  
 "Okay." Her mom doesn't look up from the screen.  

@@ -196,7 +196,7 @@ Chloe tells her grandmother about the arrows and gets to draw the sixty degrees 
 
 "That's better, then." Her grandmother settles back into the chair with her tea. "It sounds like you just want the practice."
 
-Chloe folds the envelope shut along the line she drew and doesn't hand it back.
+Chloe folds the envelope shut along the line she drew and keeps it.
 
 ---
 
@@ -210,9 +210,9 @@ There is a pause of about a second and a half on the line.
 
 "Good luck," Sinclair says.
 
-As two hundred students come out of eleven rooms at once, the shouting in the main stairwell comes up through the floor into Chloe's feet. Forty adults have to come through doors to get anywhere at all, but there are only nine doors, while the students know which third floor door does not shut properly, which cupboard on the second floor has a window in the back of it, where the bannister has a gap you can get an arm through, and which of the two kitchen doors makes a noise when it opens.
+As two hundred students come out of eleven rooms at once, the shouting in the main stairwell comes up through the floor into Chloe's feet. Forty adults have to come through doors to get anywhere at all, but there are only nine doors, while the students know which third floor door hangs loose in its frame, which cupboard on the second floor has a window in the back of it, where the bannister has a gap you can get an arm through, and which of the two kitchen doors makes a noise when it opens.
 
-People say afterward that Ruth ran the east stairwell: she gave orders from the first thirty seconds, and everybody standing on those stairs did what she told them. In about four minutes, Nadia takes the third floor and splits it. Two on each stair head, four carrying kit up from the second floor so nobody on a landing has to leave it, the rest told where to stand and not to move off it. Eleven students take four instructions from her in a row before any of them thinks about it.
+People say afterward that Ruth ran the east stairwell: she gave orders from the first thirty seconds, and everybody standing on those stairs did what she told them. In about four minutes, Nadia takes the third floor and splits it. Two on each stair head, four carrying kit up from the second floor so every landing keeps its own kit, the rest told where to stand and to stay there. Eleven students take four instructions from her in a row before any of them thinks about it.
 
 Sam is out inside the first ninety seconds of the Watch. He goes over the second floor bannister onto three teachers coming up, which works, then lands badly, which does not, and a teacher marks him out by sitting on his back. He talks about it for the rest of the afternoon from the bench by the front doors where the marked-out sit, then again at dinner, and he is still talking about it in June.
 

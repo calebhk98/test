@@ -5,7 +5,7 @@
 Eli proposes the second worm and Theo says no for nine days.
 
 
-Nobody in the argument is confused about the law. All seven had sat the same examination and Ruth quotes the sentencing ranges from memory, twice, at Eli.
+Every one of them knows the law cold. All seven had sat the same examination and Ruth quotes the sentencing ranges from memory, twice, at Eli.
 
 
 theo: i want it on record that this is the stupidest thing any of us has ever done
@@ -40,7 +40,7 @@ ________________
 
 
 
-They test it for five weeks. Chloe writes the rules because she's the one who writes, and it comes to nine pages: the limits it never touches, the response if it's noticed, and what happens if any one of the seven says stop, which is that all of it ends inside the hour with no argument.
+They test it for five weeks. Chloe writes the rules because she's the one who writes, and it comes to nine pages: the limits it keeps to, the response if it's noticed, and what happens if any one of the seven says stop, which is that all of it ends inside the hour with no argument.
 
 
 Everyone signs off. Theo signs off last and says again that this is insane.

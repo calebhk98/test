@@ -51,7 +51,7 @@ Then there's the entry.
 Six years ago. Four operators, over the fence at the loading side, a little after four in the morning.
 
 
-The report is written by one of them and it is four pages long and most of it is procedural. The part that isn't procedural starts on page two.
+The report is written by one of them and it is four pages long and most of it is procedural. What matters starts on page two.
 
 
 They were inside the first building for under two minutes. One of them saw a child in a corridor, alone, in pyjamas, apparently confused and asking who they were.
@@ -60,7 +60,7 @@ They were inside the first building for under two minutes. One of them saw a chi
 The next entry is written from memory, after the fact, and it says that all four of them were unconscious before anyone made a decision.
 
 
-They came round tied at the wrists and ankles, on their sides, against a wall. There were four children sitting on the floor next to them. The report notes, in the flat voice these things are always written in, that the children were not interrogating them in any way that the author recognised as interrogation. They were arguing with each other about their own performance. The argument was about how the four men would score them, whether a response time of nearly eight minutes counted as a fail, and whether it was fair to run a surprise exercise at four in the morning without putting it on the board.
+They came round tied at the wrists and ankles, on their sides, against a wall. There were four children sitting on the floor next to them. The report notes, in the flat voice these things are always written in, that whatever the children were doing, it read to him as an argument about their own performance rather than an interrogation. The argument was about how the four men would score them, whether a response time of nearly eight minutes counted as a fail, and whether it was fair to run a surprise exercise at four in the morning that skipped the board entirely.
 
 
 The author records that he was asked, directly, what he would have given them.
@@ -80,7 +80,7 @@ ________________
 Theo sits back.
 
 
-He was twelve that year. He remembers the morning after, which is to say he remembers that there had been a drill overnight, and that four people had been on it and one of them was Chloe, and that everyone was annoyed about it because it was a school night and nobody had been told, and that by lunchtime the conversation had moved on to something else.
+He was twelve that year. He remembers the morning after, which is to say he remembers that there had been a drill overnight, and that four people had been on it and one of them was Chloe, and that everyone was annoyed about it because it was a school night and the alarm had caught them all flat-footed, and that by lunchtime the conversation had moved on to something else.
 
 
 He read the grade sheet on the board like everyone else, harsh, he'd thought at the time.

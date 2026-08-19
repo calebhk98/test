@@ -40,7 +40,7 @@ Her cuffs stop reaching her wrists in October and she puts in for a new set. Tha
 
 The bread comes up in Ruth's room on a Tuesday, with the four of them on the floor and Priya lying across the end of the bed. "The Wednesday bread's better."
 
-"It is not better, Sam." Ruth has a book open on her knees and does not look up from it. "Same flour, same ovens, same people. The only thing different about a Wednesday is that it's a Wednesday. Two hundred of us have talked each other into it. Somebody said it in third grade, and now the whole school can taste it, which isn't taste. That's a room agreeing before anybody has chewed anything."
+"It is not better, Sam." Ruth keeps her eyes on the book open on her knees. "Same flour, same ovens, same people. The only thing different about a Wednesday is that it's a Wednesday. Two hundred of us have talked each other into it. Somebody said it in third grade, and now the whole school can taste it, which isn't taste. That's a room agreeing before anybody has chewed anything."
 
 "You can taste it though. Everyone can taste it, that's the whole point."
 
@@ -50,7 +50,7 @@ Kavi pushes up from the floor and gets his back against the radiator. "Then do i
 
 "Do it how?" Priya says, rolling onto her front. "Somebody has to know which plate is which or you can't score it, and whoever knows is the one who wrecks it for everybody."
 
-They spend forty minutes on that, and most of the forty minutes is Priya taking other people's ideas apart. What comes out of it is two rounds: for the first, Kavi cuts both loaves, marks the underside of the four plates, and eats nothing. Ruth runs the second the same way so that Kavi gets a turn. Each of them writes their own key on a scrap and folds it before anybody starts. Sam wants to know why they cannot do it once, but Ruth explains it twice, the second time with her hands.
+They spend forty minutes on that, and most of the forty minutes is Priya taking other people's ideas apart. What comes out of it is two rounds: for the first, Kavi cuts both loaves, marks the underside of the four plates, and leaves the eating to the other three. Ruth runs the second the same way so that Kavi gets a turn. Each of them writes their own key on a scrap and folds it before anybody starts. Sam wants to know why they cannot do it once, but Ruth explains it twice, the second time with her hands.
 
 At half past eleven they go down, where four ovens the size of wardrobes line the kitchen wall, with a conveyor toaster at the end of them that does thirty slices in a run. "We are not doing thirty slices of toast at midnight, Kavi."
 
@@ -118,7 +118,7 @@ Minimum personnel. Every additional student on the response costs you.
 
 At the bottom, in the same typeface, without emphasis: Response time is scored against the standard that's posted weekly.
 
-Chloe is annoyed when the alarm wakes her. It's the small one, the one that sits in her ear, and it means watch. It's four in the morning, she has done a watch at four, what she hasn't done is four in the morning with nobody having said a word about it beforehand. She's in the corridor in eleven seconds and Kavi is already there.
+Chloe is annoyed when the alarm wakes her. It's the small one, the one that sits in her ear, and it means watch. It's four in the morning. She's pulled a four-a.m. watch before. This is the first one nobody posted beforehand. She's in the corridor in eleven seconds and Kavi is already there.
 
 "I saw it, I was still up. There's four of them, they're at the loading side, they came over the fence about a minute ago."
 
@@ -192,9 +192,9 @@ Chloe walks around the corner at a normal speed with her hands empty and her arm
 
 "Uh," she says. "Hi. Who are you?" She tilts her head like a lost puppy.
 
-All four of them turn, and the nearest one comes at her fast and low, gets a gloved hand up near her mouth, and she lets him, because moving would be wrong. He doesn't hit her, only puts the hand there and then stops, with his other arm half up, doing exactly what she needed him to do, in front of three men who are all looking at the same thing.
+All four of them turn, and the nearest one comes at her fast and low, gets a gloved hand up near her mouth, and she lets him, because moving would be wrong. He just holds her there, his other arm half up, doing exactly what she needed him to do, in front of three men who are all looking at the same thing.
 
-It takes nine seconds: Kavi, closest to them, takes the two at the back; Ruth takes the third, and Sam goes for the one with his hand on Chloe's face, doing it badly, missing the vein and going again. The man takes that half a second, gets an arm free and swings but hits nothing before he then goes down.
+It takes nine seconds: Kavi, closest to them, takes the two at the back; Ruth takes the third, and Sam goes for the one with his hand on Chloe's face, doing it badly, missing the vein and going again. The man takes that half a second, gets an arm free, swings, and misses before he goes down.
 
 Chloe steps back out of the way and sits down on the floor because her legs have decided to, while Ruth is already moving between the four of them, two fingers on a throat, then the next, then the next.
 
@@ -206,7 +206,7 @@ Chloe steps back out of the way and sits down on the floor because her legs have
 
 "Yeah, but he almost hit Chloe, the one person we needed to take down correctly, and I messed up."
 
-They tie them up, wrists and ankles, on their sides, four men in a row against the corridor wall, and then they sit with them, just like protocol says. Ruth has the antidote out as she counts respirations on each of the four every two minutes and writes the numbers on her arm in pen because nobody brought paper.
+They tie them up, wrists and ankles, on their sides, four men in a row against the corridor wall, and then they sit with them, just like protocol says. Ruth has the antidote out as she counts respirations on each of the four every two minutes and writes the numbers on her arm in pen, for lack of paper.
 
 Sam sits down across from her, elbows on his knees, watching the pen move rather than the men it's counting. "Four grown men," he says, to nobody in particular. "That's not very twelve."
 

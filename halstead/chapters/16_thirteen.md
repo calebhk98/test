@@ -2,11 +2,11 @@
 
 *September 2018 – July 2019*
 
-A line appears on her timetable in September that was not on it in June. *Mathematics, 12s, Thursday, room 4\.* Seven names underneath, and a grade sheet at the end of the year with her name at the top of it and theirs down the side.
+A line appears on her timetable in September, new since June. *Mathematics, 12s, Thursday, room 4\.* Seven names underneath, and a grade sheet at the end of the year with her name at the top of it and theirs down the side.
 
-Teaching starts at thirteen and you take the year below. Her cohort is the oldest in the building, so her cohort is the only one doing it, and the twelves are the only year in the school being taught by anybody who is not an adult. Nobody teaches the thirteens. She works that out on the stairs in the first fortnight, tells Ruth, and gets a shrug and half a sandwich.
+Teaching starts at thirteen and you take the year below. Her cohort is the oldest in the building, so her cohort is the only one doing it, and the twelves are the only year in the school being taught by another student instead of a teacher. Nobody teaches the thirteens. She works that out on the stairs in the first fortnight, tells Ruth, and gets a shrug and half a sandwich.
 
-Six of the seven are straightforward. Ivy and Tomas want the answer handed over, but they can be talked out of that inside a month. Beatriz arrives already knowing most of it, so she takes eleven minutes of the hour and uses them well. Two more turn up, work, leave. The sixth cries in October about something that has nothing to do with mathematics, and Chloe sits on the floor with him for forty minutes while he says almost nothing. Then he goes to dinner, comes back the following Thursday, and is fine.
+Six of the seven are straightforward. Ivy and Tomas want the answer handed over, but they can be talked out of that inside a month. Beatriz arrives already knowing most of it, so she takes eleven minutes of the hour and uses them well. Two more turn up, work, leave. The sixth cries in October about something unrelated to mathematics, and Chloe sits on the floor with him for forty minutes while he gets out only a handful of words. Then he goes to dinner, comes back the following Thursday, and is fine.
 
 Marek hands nothing in.
 
@@ -14,7 +14,7 @@ He is at every session and he reads everything she gives him, but the sheet come
 
 "Then hand the sheet in."
 
-"Why, though?" He doesn't look up from the sheet.
+"Why, though?" He keeps his eyes on the sheet.
 
 "Because that's what the hour is for."
 
@@ -38,11 +38,11 @@ In January she gives him a problem out of the following year's material, one he 
 
 Chloe puts the chalk down on the ledge harder than she means to, while he waits by the door until she says fine, then goes.
 
-In February she offers to read the 1981 paper and mark him on that, but he says no, politely, without pausing. She is a year older than he is, and she has not read the paper. She asks him in March what would make him hand something in, and he takes it seriously enough to sit there thinking for about ten seconds.
+In February she offers to read the 1981 paper and mark him on that, but he says no, politely, at once. She is a year older than he is, and she has not read the paper. She asks him in March what would make him hand something in, and he takes it seriously enough to sit there thinking for about ten seconds.
 
 "Nothing would," he says.
 
-The December sheet has six names doing well on it and one name doing nothing. The grade at the bottom covers seven students, and it is lower than her grade in anything else that term. She reads it twice in the corridor, folds it into quarters, and puts it in her pocket instead of the bin.
+The December sheet has six names doing well on it and one still blank. The grade at the bottom covers seven students, and it is lower than her grade in anything else that term. She reads it twice in the corridor, folds it into quarters, and puts it in her pocket instead of the bin.
 
 ---
 
@@ -54,25 +54,25 @@ Differential equations run alongside real analysis, and the analysis is what tur
 
 "I did assume it. I assumed it because that step is obvious."
 
-"Then show me that it's obvious," the teacher says, and holds it out without looking up.
+"Then show me that it's obvious," the teacher says, and holds it out, eyes on her own page.
 
 She stops doing it by the end of November, but she stops resenting it in February.
 
-Half the grammar is a frame she already has from Latin, the vocabulary that is not Latin is close enough to English that she barely has to translate it, and the rest she can usually reach sideways through French. By November she reads with the dictionary open, but she hardly touches it. When she says so at dinner Ruth points a fork at her and says that is the exact argument Chloe made in a doorway two years ago and that Ruth is not conceding it now, at a table, in front of Sam.
+Half the grammar is a frame she already has from Latin, the non-Latin vocabulary close enough to English that she barely has to translate it, and the rest she can usually reach sideways through French. By November she reads with the dictionary open, but she hardly touches it. When she says so at dinner Ruth points a fork at her and says that is the exact argument Chloe made in a doorway two years ago and that Ruth is holding her ground now, at a table, in front of Sam.
 
-Eleven labs split the year between them, hers doing materials, where the youngest person fetches, cleans, and takes on the jobs nobody senior wants.
+Eleven labs split the year between them, hers doing materials, where the youngest person fetches, cleans, and takes on the jobs seniors avoid.
 
-A postdoc called Sanders hands her six months of instrument logs and the paper written off them, and asks her to work out why the two disagree. The logs hold four thousand runs, but the paper reports eleven hundred; neither document says which eleven hundred, or which runs were dropped, or when, or by whom. She spends nineteen days on it with the logs spread across two tables before she gets there. The instrument was recalibrated on a Tuesday in March, everything before that Tuesday is in the paper, and everything after it was never copied across. Somebody stopped and never said so. Sanders reads her four pages standing up, puts them in a folder, and says thank you.
+A postdoc called Sanders hands her six months of instrument logs and the paper written off them, and asks her to work out why the two disagree. The logs hold four thousand runs, but the paper reports eleven hundred; neither document says which eleven hundred, or which runs were dropped, or when, or by whom. She spends nineteen days on it with the logs spread across two tables before she gets there. The instrument was recalibrated on a Tuesday in March, everything before that Tuesday is in the paper, and everything after it stayed in the log alone. Somebody stopped and never said so. Sanders reads her four pages standing up, puts them in a folder, and says thank you.
 
 In cryptography the first term goes entirely on breaking things other people built. Substitution, then Vigenère, then a fortnight on why a key you use twice stops being a key. By November they are working on real messages off real systems with real mistakes in them, and Amberg's line from the first day is that you cannot build a lock if you have never opened one somebody else built, because you would be guessing about what a lock is for.
 
-Eli gets into everything, and he does it without hurrying. When Chloe asks how he took the November set he sits up on the edge of the table, swinging one foot, and talks her through it for twenty minutes on the back of somebody's timetable.
+Eli gets into everything, and takes his time doing it. When Chloe asks how he took the November set he sits up on the edge of the table, swinging one foot, and talks her through it for twenty minutes on the back of somebody's timetable.
 
 "Eleven of us had that set for a week and you did the lot in an evening."
 
 "You were all reading the message. The message is fine." He hops down off the table and hands the timetable back to her with two fingers, smiling at the floor. "It's the same message going out every Tuesday at the same time that isn't fine."
 
-Ruth and Kavi took cryptography and networks last year, which puts Ruth three months ahead of the class by the time Chloe arrives in it. In April she comes into Chloe's room after lights out with a shoebox under her arm and sets it on the end of the bed, grinning, and does not sit down.
+Ruth and Kavi took cryptography and networks last year, which puts Ruth three months ahead of the class by the time Chloe arrives in it. In April she comes into Chloe's room after lights out with a shoebox under her arm and sets it on the end of the bed, grinning, and stays on her feet.
 
 "So we don't get another Saturday of tomatoes."
 
@@ -90,9 +90,9 @@ Ruth and Kavi took cryptography and networks last year, which puts Ruth three mo
 
 The box goes in the drawer under Ruth's window, and it stays there.
 
-Formal epistemology starts with one sentence on the board: *I know that I am sitting in this room.* The professor spends the hour taking it apart, what would have to be true for that to count as knowledge, and by the end most of the room isn't sure it knows anything at all. "Justified and true isn't enough," she says, and moves to the next slide before anyone has finished writing it down. Chloe comes out of that hour and stands in the corridor for a minute with her bag still open before she goes on to German.
+Formal epistemology starts with one sentence on the board: *I know that I am sitting in this room.* The professor spends the hour taking it apart, what would have to be true for that to count as knowledge, and by the end most of the room doubts it knows anything at all. "Justified and true isn't enough," she says, and moves to the next slide before anyone has finished writing it down. Chloe comes out of that hour and stands in the corridor for a minute with her bag still open before she goes on to German.
 
-Block two is hers, so she puts fencing and game theory on the sheet. Fencing she is bad at the way she was bad at dance, seeing the opening and getting her arm there about a fifth of a second after it has closed. Game theory she has inside a fortnight, then loses to Kavi across a table for the rest of the term, because the maths tells her what to do against somebody playing properly and Kavi has never played properly in his life.
+Block two is hers, so she puts fencing and game theory on the sheet. Fencing she is bad at the way she was bad at dance, seeing the opening and getting her arm there about a fifth of a second after it has closed. Game theory she has inside a fortnight, then loses to Kavi across a table for the rest of the term, because the maths tells her what to do against somebody playing properly, and Kavi has spent his whole life playing the person instead of the board.
 
 "You went left again, and you went left last time as well."
 
@@ -128,7 +128,7 @@ Eli puts a cipher on the table one Thursday, between the salt and the water jug,
 
 "A parking system, and it's live. That's protecting somebody's licence plates right now."
 
-Kavi takes it off him inside a minute and is not even trying. Ruth reads it upside down from across the table and says the key is a date, probably in March. Priya wants to know whether they are allowed to be holding it at all, which starts a second argument, and Odile says the interesting question is why a parking company bought that in the first place and what the salesman told them, which starts a third. Sam eats a second dinner through the whole of it and contributes twice.
+Kavi takes it off him inside a minute, offhand about it. Ruth reads it upside down from across the table and says the key is a date, probably in March. Priya wants to know whether they are allowed to be holding it at all, which starts a second argument, and Odile says the interesting question is why a parking company bought that in the first place and what the salesman told them, which starts a third. Sam eats a second dinner through the whole of it and contributes twice.
 
 Nadia turns the napkin round toward Chloe with one finger.
 
@@ -146,7 +146,7 @@ Nadia turns the napkin round toward Chloe with one finger.
 
 "You've had your hand over that corner since Kavi passed it." Nadia sits back. "You always do that. You've got it. You don't want to say it in front of everybody."
 
-Chloe takes her hand off the napkin and puts it in her lap. Sam starts saying something about the salt. At half past nine there are six opinions at that table and nobody has moved off any of them.
+Chloe takes her hand off the napkin and puts it in her lap. Sam starts saying something about the salt. At half past nine there are six opinions at that table and every one of them is holding firm.
 
 Nadia is there most nights. She says what she thinks in flat words, always, on principle, and half of what she says lands as an accusation. They work the November cipher set together and it goes well, though Sam sits between them most nights, and neither of them has ever said a word to him about it.
 
@@ -154,7 +154,7 @@ Nadia is there most nights. She says what she thinks in flat words, always, on p
 
 Her father is replacing the back steps that summer. It takes them most of three weeks, because he keeps stopping to talk to the man from four doors down.
 
-She does the cuts. He shows her the saw on the first morning and watches her make two, but after that he stops watching, and nothing she cuts gets looked at by anybody. On the Thursday a riser comes out four millimetres proud. Her father looks at it, says that will do, and screws it down.
+She does the cuts. He shows her the saw on the first morning and watches her make two, but after that he stops watching, and everything she cuts after that goes back on the pile unchecked. On the Thursday a riser comes out four millimetres proud. Her father looks at it, says that will do, and screws it down.
 
 "That riser's four millimetres proud."
 
@@ -162,6 +162,6 @@ She does the cuts. He shows her the saw on the first morning and watches her mak
 
 "It's still four millimetres, and I cut it."
 
-"Chloe." He is already reaching for the next board, and he does not look up. "Nobody is going to measure the steps."
+"Chloe." He is already reaching for the next board, attention on the next cut. "Nobody is going to measure the steps."
 
 They finish on a Tuesday at the end of July, and the steps hold. Her mother comes out, stands on them, bounces once on the top one, and says they are a great improvement on the old lot. Then she goes back inside.

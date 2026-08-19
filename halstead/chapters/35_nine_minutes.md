@@ -5,10 +5,10 @@
 The worm goes quiet on a Thursday in June.
 
 
-A check-in doesn't arrive. Nine minutes later, everything is precisely where it should be. Same state, same position, nothing moved.
+A check-in doesn't arrive. Nine minutes later, everything is precisely where it should be. Same state, same position, exactly as it was.
 
 
-He pulls the logs. No error, no restart, no gap. There is no nine minutes anywhere in them, and the process does not know it was ever not running.
+He pulls the logs. No error, no restart, no gap. There is no nine minutes anywhere in them, and the process reports itself running the whole time.
 
 
 Kavi's watcher, whose entire job is to see anything that anybody else might see, reports a healthy process across the whole window.

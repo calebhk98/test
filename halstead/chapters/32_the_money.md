@@ -5,7 +5,7 @@
 The financial one takes eleven weeks.
 
 
-Eli builds it, and Kavi builds the thing that watches it. The whole design problem is that it has to be boring. It doesn't search. Anything that searches looks like something searching. It sits in the places where a badly maintained reconciliation job would sit, and moves just as slowly. None of them have that kind of patience. The program does.
+Eli builds it, and Kavi builds the thing that watches it. The whole design problem is that it has to be boring, sitting in the places where a badly maintained reconciliation job would sit and moving just as slowly, so it reads as ordinary and not as anything that searches. None of them have that kind of patience. The program does.
 
 
 They test it for a month against Nadia's own systems before it goes anywhere.
@@ -105,7 +105,7 @@ kavi: who though. needs motive and funding.
 nadia: the government tracks everything. if anyone has a file its them
 
 
-Theo doesn't post for eleven minutes.
+Eleven minutes pass before Theo posts again.
 
 
 theo: ok

@@ -8,13 +8,13 @@ She counts it twice on the way down, then takes it along to the office, nine ste
 
 "There's an extra one on here that wasn't on last year's."
 
-"Nine-year-olds get eight. You were on seven." The woman does not look up from what she is doing. "It goes up. It's supposed to get harder every year, that's the whole idea of a school. Is there a problem with it?"
+"Nine-year-olds get eight. You were on seven." The woman keeps her eyes on the form in front of her. "It goes up. It's supposed to get harder every year, that's the whole idea of a school. Is there a problem with it?"
 
 "No, I wanted to know whether somebody had put it on there by mistake."
 
 "It isn't a mistake. Biology starts Tuesday."
 
-Her three new ones are chemistry, statistics and biology. Ruth has the same three in a different order, but she is smug about getting chemistry first. Kavi got none of the three he asked for, listing his objections at breakfast in order, starting with the first one and working down. Sam has something on his that nobody else has, but he will not say what it is, so by Thursday there are four theories.
+Her three new ones are chemistry, statistics and biology. Ruth has the same three in a different order, but she is smug about getting chemistry first. Kavi got none of the three he asked for, listing his objections at breakfast in order, starting with the first one and working down. Something on Sam's sheet is different from everyone else's, and he keeps it to himself, so by Thursday there are four theories.
 
 Chloe reads her own sheet again on the stairs, for a different reason, and then a third time, before running down two flights and coming into the dining hall loud.
 
@@ -30,7 +30,7 @@ Sam looks up with a fork in his hand.
 
 "I liked dance, and I was good at dance, and I'm going to keep saying it."
 
-Ruth doesn't look up from her book. "You were good at dance," she says, "which is why you liked it, Sam, and if you'd been ninetieth you'd be up there on the table with her."
+Ruth keeps her eyes on her book. "You were good at dance," she says, "which is why you liked it, Sam, and if you'd been ninetieth you'd be up there on the table with her."
 
 Chloe does one more lap of the table before she sits down, and Ruth turns a page.
 
@@ -38,9 +38,9 @@ Chloe does one more lap of the table before she sits down, and Ruth turns a page
 
 Mandarin is with a woman called Mrs. Sun, who grew up in Harbin and taught in Vancouver for eleven years before this, and who speaks to the room in Mandarin from the first hour and in English about four times a term.
 
-The reading comes fast, because the characters go in and stay in. In November she gets through a page without stopping. By February she is doing novels. By March she is turning in the ten-page end-of-term reports in Mandarin, on the same question everybody else has.
+The reading comes fast, because the characters go in and stay in. In November she gets through a whole page in one go. By February she is doing novels. By March she is turning in the ten-page end-of-term reports in Mandarin, on the same question everybody else has.
 
-The sound is the other half, and it does not come. The four tones sound like four different people saying one word, easy enough to tell apart, but she cannot make the difference happen in her own mouth. In November Mrs. Sun stops the hour and does it on the board for the whole room, because four of them have it.
+The sound is the other half, and it stays out of reach. The four tones sound like four different people saying one word, easy enough to tell apart, but she cannot make the difference happen in her own mouth. In November Mrs. Sun stops the hour and does it on the board for the whole room, because four of them have it.
 
 "You're hearing tone as emphasis, and that's English doing it to you. In English you go up at the end to make a word matter." She says one syllable four ways, and the room can hear four words. "Here the pitch isn't sitting on top of the word. The pitch *is* the word. It's the same as changing a letter in it."
 
@@ -48,7 +48,7 @@ The sound is the other half, and it does not come. The four tones sound like fou
 
 "You won't, and nobody hears their own, so stop sitting there trying to fix it from the inside." Mrs. Sun writes three things on the board. "Record yourself and play it back, because you'll hear it coming out of a speaker. Sit next to somebody in this room who has it. There are recordings on the machines in the library, and you can run them while you're doing something else."
 
-Chloe does all three of them, though not in that order, reading out loud into the machine in the library, playing it back, and hearing it. Ruth starts sitting with her on Sundays in December, blunt about it in a way nobody else can be bothered to be. By June she can be understood by anybody expecting to understand her, and by nobody who isn't. She still cannot hear any difference between Mrs. Sun and the man who comes in from the university, who grew up eight hundred miles apart, and who Ruth can separate in four syllables.
+Chloe does all three of them, though not in that order, reading out loud into the machine in the library, playing it back, and hearing it. Ruth starts sitting with her on Sundays in December, saying flatly what's wrong with each attempt. By June, anyone who already expects her accent follows it; a stranger loses her by the second sentence. She still cannot hear any difference between Mrs. Sun and the man who comes in from the university, who grew up eight hundred miles apart, and who Ruth can separate in four syllables.
 
 Statistics turns out to be an hour of somebody taking a number apart in front of you, until the number is down to its last decimal. She likes it enough to bring it to dinner, where Kavi disagrees with her about a study in the second week, and they are still going at it in the third.
 
@@ -58,21 +58,21 @@ Statistics turns out to be an hour of somebody taking a number apart in front of
 
 "Small result. Round it down."
 
-"It's not a small result, it's the same size result you'd get out of eleven people if there was nothing there at all, which is the entire-" Chloe stops, because Sam has put his hands over his ears and started humming. "We're nearly done."
+"It's not a small result, it's the same size result you'd get out of eleven people if there was nothing there at all, which is the entire-" Chloe stops. Sam has both hands over his ears now, humming. "We're nearly done."
 
 "You said that on Monday."
 
-Chemistry is Vasquez, who does set things on fire on purpose, twice in the first term, and both times the room goes in quiet and comes out loud. On the phone on the Sunday, Chloe describes the second one to her mother for nine minutes without being asked a question. She burns a hole through a sleeve in the second week. In the fourth she makes something that is supposed to come out white, gets grey, and carries it up to the front.
+Chemistry is Vasquez, who does set things on fire on purpose, twice in the first term, and both times the room goes in quiet and comes out loud. On the phone on Sunday, Chloe carries the whole nine minutes herself, describing the second one to her mother. She burns a hole through a sleeve in the second week. In the fourth she makes something that is supposed to come out white, gets grey, and carries it up to the front.
 
 "Water."
 
 "Where did it come from?"
 
-"Glassware, reagent, or you." He hands it back without turning it over. "Friday."
+"Glassware, reagent, or you." He hands it back, eyes already on the next bench. "Friday."
 
 She runs it again on the Friday, drying every piece of glass twice before she starts, and it comes out white.
 
-First aid is Mondays, and it is on a clock from the first week. In the second term the lights come down to about what you get off a dashboard at night. In the third term the lights come down, a radio plays somewhere behind her that nobody turns off, and a man stands four feet away asking her the same question over and over in a raised voice.
+First aid is Mondays, and it is on a clock from the first week. In the second term the lights come down to about what you get off a dashboard at night. In the third term the lights come down, a radio plays somewhere behind her, left running the whole time, and a man stands four feet away asking her the same question over and over in a raised voice.
 
 "Is he going to be doing that the whole way through, or is it just the first one?"
 
@@ -82,17 +82,17 @@ Textiles is Tuesdays. They measure each other, draft patterns off the measuremen
 
 Biology is the man with the fish tank in the front hall, and in October Kavi decides that the small striped one is being bullied.
 
-Nobody else can see it, but Kavi watches the tank for what turns out to be most of October, producing a diagram of the tank, arrows and all. Ruth argues that the small striped one is fine, that Kavi picked a favourite in week one, and that he has been reading the tank backwards from it ever since. By February they have a name for that from statistics, and Ruth starts using it on him at meals. Sam is on Kavi's side entirely and cannot explain why. In March the small striped one dies of being four years old. Kavi is unbearable for a week, but the man with the fish tank tells him four is a long life for that fish and that he had been expecting it since Christmas.
+Kavi alone watches the tank, for what turns out to be most of October, producing a diagram of it, arrows and all. Ruth argues that the small striped one is fine, that Kavi picked a favourite in week one, and that he has been reading the tank backwards from it ever since. By February they have a name for that from statistics, and Ruth starts using it on him at meals. Sam is on Kavi's side entirely and cannot explain why. In March the small striped one dies of being four years old. Kavi is unbearable for a week, but the man with the fish tank tells him four is a long life for that fish and that he had been expecting it since Christmas.
 
 ---
 
-There are two people in her year Chloe does not like.
+There are two people in her year Chloe dislikes outright.
 
-Bex talks over the ends of sentences. Iyad agrees with you loudly in a way that means he stopped listening around the second sentence. Nothing has happened between her and either one of them, and she isn't waiting for it to. In the second term she builds a bridge with Bex that carries nineteen pounds, coming down a plank at a time instead of all at once. Two people ask them afterwards how they did the joints. She works with Iyad in chemistry for six weeks, during which he is careful and fast, and she would take him again tomorrow. Disliking them and working well with them turn out to be two different things.
+Bex talks over the ends of sentences. Iyad agrees with you loudly in a way that means he stopped listening around the second sentence. In the second term she builds a bridge with Bex that carries nineteen pounds, coming down a plank at a time instead of all at once. Two people ask them afterwards how they did the joints. She works with Iyad in chemistry for six weeks, during which he is careful and fast, and she would take him again tomorrow.
 
 Sam spends the whole year on the overhang.
 
-There is a wall up the side of the gym with a lip near the top that sticks out about two feet, and going into September nobody in the school has been over it. Sam falls off it in October, twice in November, and once in December from high enough that he lands badly and sits on the mat, elbows on his knees, saying he is fine. In January a girl in the year below gets over it in one go, on a Wednesday, with about four people watching. Sam takes this hard for two days, then goes and asks her how she did it. The answer turns out to be about where you put your left foot before you start.
+There is a wall up the side of the gym with a lip near the top that sticks out about two feet, and going into September the lip has beaten everyone who's tried it. Sam falls off it in October, twice in November, and once in December from high enough that he lands badly and sits on the mat, elbows on his knees, saying he is fine. In January a girl in the year below gets over it in one go, on a Wednesday, with about four people watching. Sam takes this hard for two days, then goes and asks her how she did it. The answer turns out to be about where you put your left foot before you start.
 
 He gets over it on the eleventh of May, with about thirty people at the bottom, because Sam has spent two days telling everybody he is going to do it that afternoon.
 
@@ -112,7 +112,7 @@ The stables are eleven minutes past the north field, and Priya talks the whole w
 
 "Straight in front. Straight in front is the one place they can't." Priya walks up to the horse's nose from four feet out, and the head swings sideways to get a proper look at her. "She's putting me in one eye. That isn't her being dramatic, it's just where her eyes are."
 
-Chloe can sit a canter by February, and she can get a horse over a low fence by March, but neither of those does anything for her. Priya, who has been riding since she was six, is better at all of it. Chloe does not mind that. In April the stables move the groups around, and Priya goes to Tuesdays. Chloe rides on the Thursday twice more, walking the twenty-two minutes on her own both times, but she is back in her room by five.
+Chloe can sit a canter by February, and she can get a horse over a low fence by March, but neither of those does anything for her. Priya, who has been riding since she was six, is better at all of it, and Chloe likes watching her do it. In April the stables move the groups around, and Priya goes to Tuesdays. Chloe rides on the Thursday twice more, walking the twenty-two minutes on her own both times, but she is back in her room by five.
 
 "You quit riding," Priya says at dinner, four days later.
 
@@ -140,7 +140,7 @@ Her mother takes four days off in July, and they do the coast. It is three hours
 
 "There isn't a run." Her mother moves a peg. "You'll see runs everywhere for about a week, and half of them won't be there. Everybody does it."
 
-Chloe loses the first three games, because she keeps counting the same card twice. She takes the fourth, and then the fifth, at which her mother says a word she doesn't usually say in front of her before dealing again. They play until the pool lights go off at eleven.
+Chloe loses the first three games, because she keeps counting the same card twice. She takes the fourth, and then the fifth, at which her mother says a word she usually saves for other company, before dealing again. They play until the pool lights go off at eleven.
 
 In the third week, her father is at the table with a stack of paper and a pen.
 
@@ -156,7 +156,7 @@ Chloe reads over his shoulder until she stops on the second paragraph.
 
 "Okay." She reads it a fourth time. "How would you find out if they hadn't?"
 
-Her father starts to answer and stops with the page half turned. Then he goes back to the top of the paragraph and reads it again, and Chloe waits, because she has asked a real question and does not have anything to add to it.
+Her father starts to answer and stops with the page half turned. Then he goes back to the top of the paragraph and reads it again. Chloe waits.
 
 "You wouldn't," he says.
 
