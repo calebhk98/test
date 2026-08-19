@@ -58,9 +58,9 @@ Somebody at the school picks up on the second ring. Chloe gets close, straining 
 
 Chloe waits for the phone for eleven days.
 
-Instead of her room, she takes her book down and reads it in the kitchen. She gets it on the second ring twice, and on the first ring once, and it's her grandmother, and a man asking for her dad, and a woman who wants to know whether her dad is the registered owner of the vehicle. On the ninth day her mom tells her that these things can take weeks.
+Instead of her room, she takes her book down and reads it in the kitchen, in the chair that puts the phone in her sightline, and she's up and across the floor before the first ring finishes if she's anywhere near it. She gets it on the second ring twice, and on the first ring once, and it's her grandmother, and a man asking for her dad, and a woman who wants to know whether her dad is the registered owner of the vehicle. Each time, she says it's not for her and hands it over, then sits back down with the book open at the same page it was open at before. On the ninth day her mom tells her that these things can take weeks, and Chloe asks how many, exactly, and doesn't get a number back.
 
-After eleven days she stops sitting in the kitchen, but she continues listening for it. 
+After eleven days she stops sitting in the kitchen, but she still crosses the room to check the phone's on the hook before she goes up, every night, and she still comes down two stairs at a time if it rings.
 
 ---
 
@@ -80,19 +80,19 @@ Before she answers, her mom looks out her own window, and her dad doesn't look a
 
 ---
 
-Since the book has to go back, they go on Tuesday, and Chloe, who has had it out for five weeks, carries it in with both hands.
+Since the book has to go back, they go on Tuesday, and Chloe, who has had it out for five weeks, carries it in with both hands, hugged flat against her chest instead of held out to hand over.
 
 "There she is." The librarian takes it and tsks, as she turns the card over. "It's been five weeks, not four weeks. Did you get through it atleast?"
 
-"Twice. There wasn't as much time as I thought there'd be." Chloe gets up on her toes at the desk. "There's a plastic man called Gary and you do CPR on him, and when you push in the right place hard enough he clicks. I got the click on the fourth one. And we built a bridge out of dowels and string and hung a bucket off the middle of it, and put weights in a pound at a time until it broke, and ours went at eleven pounds and it went at the corner."
+"Twice." Chloe is already talking before the card is all the way turned. She's up on her toes at the desk, both hands flat on the edge of it. "There wasn't as much time as I thought there'd be, because there's a plastic man called Gary and you do CPR on him, and when you push in the right place hard enough he clicks, and I got the click on the fourth try, and we built a bridge out of dowels and string and hung a bucket off the middle of it and put weights in a pound at a time until it broke, and ours went at eleven pounds and it went at the corner, right at the corner, which nobody else's did."
 
 "Did it now?"
 
-"And I can divide fractions now. Not just do them. I know why it works, and I got that part on my own on the floor of my room at night, and it took me about an hour."
+"And I can divide fractions now." She has to stop and get a breath in before the rest of it. "Not just do them, I know why it works, and I got that part on my own, on the floor of my room, at night, and it took me about an hour and I didn't ask anybody."
 
-The librarian looks at her over the top of the card. "That's a real month, that is," she says, and puts the stamp down. "But that doesn't mean you can get more, it is still four at a time, same as it was in June. The new ones came in this morning and they're still on the cart, so go on."
+The librarian waits until she's actually run out, looking at her over the top of the card. "That's a real month, that is," she says, and puts the stamp down. "But that doesn't mean you can get more, it is still four at a time, same as it was in June. The new ones came in this morning and they're still on the cart, so go on."
 
-Chloe takes four off the cart, two of which she finishes by Friday.
+Chloe takes four off the cart, still catching her breath, two of which she finishes by Friday.
 
 ---
 
@@ -118,29 +118,31 @@ Everybody talks at once, and it takes the room a long time to come down, because
 
 "Here's the part I want you thinking about while you're writing. You're not writing it to me and you're not writing it to your friends at your table. The person who opens that box is you, three years older, and whatever's on that paper is what they get."
 
-"It's kind of like mailing something to a stranger," Chloe says, not talking to anybody.
+Chloe is already leaning over her own paper with the pencil going before anybody else at the table has picked theirs up. "It's kind of like mailing something to a stranger," she says, not talking to anybody.
 
 "What was that, Chloe?"
 
-"Because you won't be you." She keeps going anyway. "You'll be somebody three years older. You won't remember doing this. It's like sending a package to a person you've never met. Except it's got your name on it. So they have to open it. They never even asked for it."
+"Because you won't be you." She keeps going anyway, faster now, one foot hooked around the leg of her chair. "You'll be somebody three years older. You won't remember doing this. It's like sending a package to a person you've never met. Except it's got your name on it. So they have to open it. They never even asked for it."
 
 Kayleigh Burns has turned around in her chair, "Why do you talk like that?"
 
 "You were weird before and now you're weirder." Bryce says it with interest, the way you'd tell somebody their shoe was untied.
 
-"I just meant it's a long time," Chloe says.
+Chloe's hand comes down flat over what she's already written, the whole page gone under her palm.
+
+"I just meant it's a long time," she says, to the desk.
 
 "Yeah," Bryce says, and turns back around.
 
-While Ms. Vance is over at the cabinet with the tape, not looking up for any of it, Chloe writes I hope you like fifth grade on her paper, folds it in half twice, and puts it in the box.
+Her hand stays where it is for the rest of the period. When Ms. Vance calls time, she scratches out the two lines underneath it until the pencil almost goes through the paper, and while Ms. Vance is over at the cabinet with the tape, not looking up for any of it, writes I hope you like fifth grade instead, folds it in half twice, and puts it in the box.
 
 ---
 
 The four books are due on a Thursday and she has finished two of them.
 
-Having taken the third one to bed on the Monday and gotten four pages in, she opens it at the same place on the Tuesday, reads the top of the page, reads it again, then gives up and puts it down on the floor. On the Wednesday she doesn't take it up with her.
+Having taken the third one to bed on the Monday, she gets four pages in, reads the same sentence twice, and starts the page over with no memory of what it said the first time. On the Tuesday she opens it at the same place, reads the top of the page, reads it again, and somewhere down the hall the phone doesn't ring either, and she gives up and puts it down on the floor. On the Wednesday she doesn't take it up with her.
 
-Her mom drives her to the library on Thursday and waits in the car with the engine running. Chloe comes out with her two books that she hadn't finished.
+Her mom drives her to the library on Thursday and waits in the car with the engine running. Inside, Chloe carries the two finished ones straight up to the desk and doesn't go near the shelves. She comes back out to the car with the other two, the ones she hadn't finished, still in her bag.
 
 "Aren't you getting more?"
 
@@ -156,7 +158,7 @@ The library card goes in the drawer in the kitchen where the batteries are. Thre
 
 By the end of September, she is asking several times a day.
 
-She asks at breakfast, in the car on the way to school and again on the way home, over her mom's shoulder while she's on the phone until she gets waved off, and one more time coming back downstairs in her pajamas twenty minutes after bedtime.
+She asks at breakfast, standing at the end of the table instead of sitting down to it. She asks in the car on the way to school and again on the way home, working the buckle of the seatbelt with one thumb the whole ride. She asks over her mom's shoulder while she's on the phone, until she gets waved off, and asks again the second the call ends, before the phone's even back on the counter. She asks with a chore list she has made herself, folded small and left on the pillow. She asks one more time coming back downstairs in her pajamas, twenty minutes after bedtime.
 
 "Can I go to Halstead."
 
@@ -172,7 +174,7 @@ Chloe is standing in the doorway in her pajamas, one foot on top of the other.
 
 "Go to bed."
 
-The first few times, "we're thinking about it" means something. By the end of the month, it means nothing is coming.
+She goes up, and on the back of a spelling worksheet under her pillow she starts a column of marks, one for every day nobody has said yes, and keeps adding to it.
 
 ---
 
