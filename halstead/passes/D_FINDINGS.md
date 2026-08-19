@@ -70,6 +70,12 @@ These are checkable and wrong. Highest priority.
   end to hold," immediately followed by three Pruitt lines, none of them about metal.
 - **ch20 L7 vs L201** — the badge is Nadia's copy at setup and Ruth's physical object at return, and
   "copied" vs. "before he's noticed it was gone" describe two incompatible methods.
+- **ch20's date, third data point.** ch34 L14 calls the Waffle House night "an incident report from
+  six years back." With Chloe turning 21 in ch30 and ch31–33 following, that puts ch20 at around
+  sixteen — which *supports* its current position after ch19 ("Sixteen"). It contradicts the other
+  internal evidence: ch20 L7's box "built for a networking class the year before" against ch34 L69's
+  "i built that box in about a weekend when i was thirteen." One of the two has to give, and the
+  box is the one with two independent citations against it.
 - **ch20 L169** — the diner waitress watches them go over the fence, four blocks from the diner.
   *(fixed this session)*
 - **ch9 L27 vs L33/L37** — Dave is staged going back downstairs before the birthday litany, then
@@ -129,6 +135,10 @@ These are checkable and wrong. Highest priority.
   centrepiece — the man who waited six hours and did everything right. Sam is documented at 0%
   hedging on anything factual or tactical; miscounting an engagement he lived through four days ago
   is the one thing he doesn't do. *(verified directly)*
+- **ch34 L8 — the viewpoint leaks.** "Theo's has a note on it that makes him close his laptop and go
+  outside for twenty minutes." The chapter is on Chloe (L116, "Chloe reads yes twice before anyone
+  types again"), and Theo never reports this in the chat. A document can't contain his reaction to
+  reading it, and nobody tells her. *(verified directly)*
 - **ch23 L137 vs ch24 L432 — Nadia is hiring and unemployed in the same September.** Chapter 23
   (June 2023): "by September she's hiring." Chapter 24 (September 2023): "Nadia is behind the counter
   more hours a week now than she's ever been, since none of the two months of interviews turned into
