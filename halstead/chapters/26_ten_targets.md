@@ -8,10 +8,10 @@ Sam likes the Army immediately.
 The food is fine, the people are funny, and there is a schedule, which he has had every day since he was seven and briefly missed over the summer. He is polite to everybody. He is extremely polite to a sergeant named Ruiz, who shouts at him for four weeks and whom Sam likes enormously.
 
 
-He maxes the fitness assessment in week two. Then he does it again in week three, better, because nobody told him to stop and it had not occurred to him that a test could be over.
+He maxes the fitness assessment in week two. Then he does it again in week three, better, chasing his own number past the point where the test was supposed to be over.
 
 
-He does that with everything. There is no version of a task in Sam's head where you reach a number and then don't try for a higher one. By week nine his file has a lot of numbers in it and somebody has started printing them out.
+He does that with everything. In Sam's head, a task has one setting: reach a number, then beat it. By week nine his file has a lot of numbers in it and somebody has started printing them out.
 
 
 ________________
@@ -37,7 +37,7 @@ A captain he has not met before walks over afterward, looks at the sheet, and sa
 "Son, you hit ten out of ten."
 
 
-"Right, but that's not accuracy," Sam says, and he says it kindly, because he has worked out that this must be a trick question and he doesn't want to embarrass the man. "The target's not doing anything. It's just sitting there. That's not a measurement of anything, that's a measurement of whether the rifle works."
+"Right, but that's not accuracy," Sam says, and he says it kindly, because he has worked out that this must be a trick question and wants to let the man save face. "The target's not doing anything. It's just sitting there. That's not a measurement of anything, that's a measurement of whether the rifle works."
 
 
 The captain doesn't say anything.
@@ -69,7 +69,7 @@ ________________
 
 
 
-What gets written up that evening and forwarded twice by Friday is not what Sam said.
+What gets written up that evening and forwarded twice by Friday turns Sam's own words into something else.
 
 
 It's four paragraphs, and the fourth one contains the phrase appears to have received specialised instruction from an unidentified source, and by the following Thursday it is being read by a woman three levels above the captain.

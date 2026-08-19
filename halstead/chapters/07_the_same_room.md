@@ -2,7 +2,7 @@
 
 *August 2012 – October 2012*
 
-The loop out front is full of cars with their trunks standing open, more adults in it than Chloe has seen in one place all month, somebody's little brother, who is screaming about a shoe. Sam left at seven, which Chloe finds out from a girl that she hadn't spoken to at the camp, who says it while passing with a pillow under her arm and doesn't stop to say it. Kavi is over by the double doors with two adults, from whom she gets a hand up, before a family walks between them and he isn't there anymore.
+The loop out front is full of cars with their trunks standing open, more adults in it than Chloe has seen in one place all month, somebody's little brother, who is screaming about a shoe. Sam left at seven, which Chloe finds out from a girl that she hadn't spoken to at the camp, who tosses it over her shoulder with a pillow under her arm, already halfway down the hall. Kavi is over by the double doors with two adults, from whom she gets a hand up, before a family walks between them, and by the time they pass, he's gone.
 
 Ruth finds her at the flagpole and hugs her hard enough to hurt, "So we're all getting in. That's the plan and everybody's doing it, so you have to, okay?" She has both hands on Chloe's shoulders and is saying it from about six inches away. "You as well, promise me you'll make it in."
 
@@ -22,13 +22,13 @@ In August her mom is standing at the counter sorting the mail, as Chloe comes in
 
 "From camp. He was in my class."
 
-"Oh," her mom puts the envelope down. She looks pleased about it in a way that Chloe doesn't understand. "Sure, honey. What's his number?"
+"Oh," her mom puts the envelope down. She looks pleased about it in a way that puzzles Chloe. "Sure, honey. What's his number?"
 
 Chloe's mouth opens, then stays open a beat too long, "I don't know his number."
 
 "That's all right, we can look him up. Everybody's in the book." Getting the phone book from under the microwave, she puts it on the counter and opens it while looking at Chloe. "What's his last name, sweetie?"
 
-Chloe opens her mouth, then closes it, before going upstairs to sit on the end of her bed, trying to remember. He is seven and a half, and says the "and a half" every time; sleeps with his window open, something that he mentioned more than once; has a sister or maybe a cousin who plays soccer, she never worked out which; and can swim two lengths without stopping, a fact that came up at dinner most days for a month. He thinks he's funny, and she can still hear it, two short barks and then his hand over his mouth.
+Chloe opens her mouth, then closes it, before going upstairs to sit on the end of her bed, trying to remember. He is seven and a half, and says the "and a half" every time; sleeps with his window open, something that he mentioned more than once; has a sister, or maybe a cousin, who plays soccer, though she's still not sure which; and swims two lengths straight through, a fact that came up at dinner most days for a month. He thinks he's funny, and she can still hear it, two short barks and then his hand over his mouth.
 
 She comes back down, "I don't know?"
 
@@ -70,7 +70,7 @@ She asks on a Sunday, in the car, coming back from her grandmother's, "Can I go 
 
 "Halstead. Not the summer one. The whole one, the year one."
 
-Before she answers, her mom looks out her own window, and her dad doesn't look anywhere.
+Before she answers, her mom looks out her own window, and her dad keeps his eyes on the road.
 
 "That's a very big question and it's not a car question."
 
@@ -106,7 +106,7 @@ The first math sheet comes around at twenty past nine, and she squints at it bef
 
 Fractions at camp, staying up until the number finally sat still on the page, and now this, math from last year again. Having done all thirty, she goes back to the top and checks each one over, and every answer matches what she wrote the first time. She puts her hands in her lap and waits for the room to catch up around her.
 
-It works on the first day of second grade exactly the way that it worked in April, all she has to do is finish first, sit still, and say nothing to anybody at her table.
+It works on the first day of second grade exactly the way that it worked in April.
 
 ---
 
@@ -114,7 +114,7 @@ The second week Ms. Vance brings in a shoebox with foil taped all over it and st
 
 "So this is a time capsule. Everybody's writing something today, on the paper I'm handing out now, and it goes in this box, then I tape the box shut and it goes up on top of that cabinet." She puts a hand flat on the cabinet. "Then nobody opens it. Not this year and not next year. We will open it in fifth grade."
 
-Everybody talks at once, and it takes the room a long time to come down, because nobody in the room has ever seen fifth grade.
+Everybody talks at once, and it takes the room a long time to come down.
 
 "Here's the part I want you thinking about while you're writing. You're not writing it to me and you're not writing it to your friends at your table. The person who opens that box is you, three years older, and whatever's on that paper is what they get."
 
@@ -140,9 +140,9 @@ Her hand stays where it is for the rest of the period. When Ms. Vance calls time
 
 The four books are due on a Thursday and she has finished two of them.
 
-Having taken the third one to bed on the Monday, she gets four pages in, reads the same sentence twice, and starts the page over with no memory of what it said the first time. On the Tuesday she opens it at the same place, reads the top of the page, reads it again, and somewhere down the hall the phone doesn't ring either, and she gives up and puts it down on the floor. On the Wednesday she doesn't take it up with her.
+Having taken the third one to bed on the Monday, she gets four pages in, reads the same sentence twice, and starts the page over with no memory of what it said the first time. On the Tuesday she opens it at the same place, reads the top of the page, reads it again, and gives up, and puts it down on the floor. On the Wednesday, she leaves it on the floor by the bed.
 
-Her mom drives her to the library on Thursday and waits in the car with the engine running. Inside, Chloe carries the two finished ones straight up to the desk and doesn't go near the shelves. She comes back out to the car with the other two, the ones she hadn't finished, still in her bag.
+Her mom drives her to the library on Thursday and waits in the car with the engine running. Inside, Chloe carries the two finished ones straight up to the desk, eyes down, past the shelves. She comes back out to the car with the other two, the ones she hadn't finished, still in her bag.
 
 "Aren't you getting more?"
 
@@ -174,7 +174,7 @@ Chloe is standing in the doorway in her pajamas, one foot on top of the other.
 
 "Go to bed."
 
-She goes up, and on the back of a spelling worksheet under her pillow she starts a column of marks, one for every day nobody has said yes, and keeps adding to it.
+She goes up, and on the back of a spelling worksheet under her pillow she starts a column of marks, one for every day that passes without a yes, and keeps adding to it.
 
 ---
 
@@ -182,7 +182,7 @@ Her mom starts on the school in the last week of September.
 
 Coming down for water, Chloe gets the end of one of the calls, and her mom is at the counter with her hand flat on it. Her voice has gone careful, extra polite, the tone that she uses when she already knows the answer and has to hear it again anyway.
 
-"Third grade. Okay. And there's nothing before third grade at all." She listens without saying anything, the pen tapping twice against the counter. "No, I know what the policy is, you've told me what the policy is. I'm asking whether anybody has ever made an exception to it, for any reason, in any year."
+"Third grade. Okay. And there's nothing before third grade at all." She listens, the pen tapping twice against the counter. "No, I know what the policy is, you've told me what the policy is. I'm asking whether anybody has ever made an exception to it, for any reason, in any year."
 
 Whatever comes back takes a long time.
 
@@ -196,7 +196,7 @@ She says thank you at the end of it, puts the phone down, and stands there, her 
 
 In the first week of October, Chloe puts her head down on her desk in the middle of the morning and for some reason she can't help but to cry with her face in her arms.
 
-She isn't quiet about it, as Ms. Vance comes down the row and crouches all the way down beside the desk, in front of everybody, and puts a hand flat on Chloe's back, leaving it there.
+She cries loud enough to bring Ms. Vance down the row, who crouches all the way down beside the desk, in front of everybody, and puts a hand flat on Chloe's back, leaving it there.
 
 "Hey, hey, what's going on?"
 

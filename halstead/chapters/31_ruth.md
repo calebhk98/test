@@ -23,10 +23,10 @@ One of them says, "wait, what?" and she explains it, and explaining it kills it,
 In February she asks a study group when they think the course will get past fifth-grade concepts.
 
 
-She isn't being cruel. She has no idea it could be taken that way. A boy called Devansh laughs, because it looks like a bit. Then he watches her face two beats past the laugh and stops. The table goes quiet, and Ruth cannot work out why.
+She has no idea it could be taken that way. A boy called Devansh laughs, because it looks like a bit. Then he watches her face two beats past the laugh and stops. The table goes quiet, and Ruth cannot work out why.
 
 
-She goes home and writes down that MIT tracks students by ability and doesn't advertise it.
+She goes home and writes down that MIT tracks students by ability and keeps that quiet.
 
 
 ________________
@@ -37,19 +37,19 @@ ________________
 She holds that for about ten months.
 
 
-What eventually breaks it is not a statistic. It's a professor she likes, in office hours, who she is genuinely fond of, who cannot follow her past the third step of her reasoning and says so, cheerfully, without embarrassment, before asking her to go back.
+What eventually breaks it is a professor she likes, in office hours, someone she is genuinely fond of, who cannot follow her past the third step of her reasoning and says so, cheerfully, without embarrassment, before asking her to go back.
 
 
 Ruth walks out and sits on a wall until the light changes twice.
 
 
-She doesn't tell anybody. She goes and finds the numbers instead, over the following months, one at a time, and every one of them says the same thing, each worse than the one before.
+She goes and finds the numbers herself, over the following months, one at a time, and every one of them says the same thing, each worse than the one before.
 
 
 Second language. Reading level. Fractions. She keeps posting them in the chat and watching people make a joke inside a minute and move on.
 
 
-In April she stops posting, because she has understood what the numbers add up to and she does not want to be the one who says it.
+In April she stops posting, because she has understood what the numbers add up to and would rather somebody else say it first.
 
 
 ________________

@@ -8,7 +8,7 @@ There is a file on all ninety-one of them.
 Address, employer, family, where their parents work, where everybody banks. Sam's is the thickest and the newest. Theo's has a note on it that makes him close his laptop and go outside for twenty minutes.
 
 
-There's a standing line saying the graduates are believed to be in contact with one another. The file has never worked out the method, and collection against the channel has come back empty every time it's tried, along with a recommendation to keep attempting it.
+There's a standing line saying the graduates are believed to be in contact with one another. The file lists the method as unknown, and collection against the channel comes back empty every time it's tried, along with a recommendation to keep attempting it.
 
 
 And there's an incident report from six years back.
@@ -23,7 +23,7 @@ Seven men. Three firearms.
 None of the seven agrees with the others about the order of it. They agree it was fast, that one of the four did all of it, and that the other three were not where they had been. Two of them independently report being told, during or just after, that this had been sloppy and needed more practice.
 
 
-None of them could describe any of the four.
+All seven come back with a blank on what the four looked like.
 
 
 Then the last paragraph. Footage was sought from the Waffle House, the two units either side, a traffic camera, and a municipal camera up the road. All of it is unrecoverable where the four students appear, and intact everywhere else. No known method.

@@ -58,9 +58,9 @@ Ruth comes down on a Saturday in April with a clipboard and a bag of the toffees
 
 "If I knew that I'd have told you at eleven o'clock." Ruth puts the clipboard face down on the bench and holds the bag out. "Have a toffee."
 
-Sam doesn't look up from his plate at dinner that week. "You're on sixty."
+Sam keeps his eyes on his plate at dinner that week. "You're on sixty."
 
-"I know I'm on sixty. And?" Chloe has not started eating.
+"I know I'm on sixty. And?" Chloe's plate sits full in front of her.
 
 "I'm on forty." He gets through most of a potato. 
 
@@ -74,7 +74,7 @@ Self defence is still ten of them on one with a minute on the clock, three round
 
 The bad one is a Tuesday in November, first round, and she comes out of the middle at thirty-eight. She is on her feet before they call it, but she has the number already.
 
-"First one's always short." Kavi hasn't left the line. "It recovers by the third."
+"First one's always short." Kavi is still standing at the line. "It recovers by the third."
 
 She gets forty on the second and thirty-nine on the third. Afterward, she stands at the edge of the mat with her wraps still on, going through it again with her thumb working at the tape. Odile asks her something on the way out, and she answers it badly, so she finds her at dinner to say it properly.
 
@@ -142,7 +142,7 @@ Chloe sets her bag against the wall. "All right, shoot."
 
 "You can't be held to anything. I can. So asking is what I have."
 
-She doesn't sleep well that night, and snaps at Sam over nothing at breakfast the next morning, then apologizes for it before he can ask why. Then she takes a week over it, and she builds the case against first. Fifteen years old, asked to guard a secret that already had four other names on it, and she makes that side as hard as she can. Then she builds the other one, from Sandoval's side, and from her own, and from the side of the four names on the form. She is quiet at dinner on Wednesday, and Sam asks her twice whether she is all right.
+She lies awake that night, and snaps at Sam over nothing at breakfast the next morning, then apologizes for it before he can ask why. Then she takes a week over it, and she builds the case against first. Fifteen years old, asked to guard a secret that already had four other names on it, and she makes that side as hard as she can. Then she builds the other one, from Sandoval's side, and from her own, and from the side of the four names on the form. She is quiet at dinner on Wednesday, and Sam asks her twice whether she is all right.
 
 She stops saying what she does in the afternoons, and it takes about four days to stop being a decision.
 

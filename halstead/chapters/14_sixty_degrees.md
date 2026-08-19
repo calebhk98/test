@@ -2,7 +2,7 @@
 
 *September 2016 – April 2017*
 
-The long field runs north from the back of Building Three for about three hundred metres. There is a fence at the end of it, with a road past that and nothing between the two.
+The long field runs north from the back of Building Three for about three hundred metres. There is a fence at the end of it, with a road past that and open field the whole way to it.
 
 Archery is ordinary for the first three weeks, because the first three weeks are butts at twenty metres, then thirty, then fifty, an hour a day of being told what your elbow is doing, and an instructor walking down the line every eleven minutes to tell you the same thing about your elbow again. Chloe is on the gold most of the time by the end of the second week, but she is bored by the middle of the third, and so is everybody standing near her.
 
@@ -16,7 +16,7 @@ Then Coach Bell puts a metronome on a post at the near end of the field.
 
 "Right, then nothing gets pointed at a person."
 
-He walks the archers down the field to show them the lanes. Both lines shoot the same way, north, from two positions seventy metres apart, and the lanes lean in toward each other by a few degrees so that the two flight paths cross a long way out over the middle of the field, where the arrows meet at the top of the arc. What is left of them comes down together in open grass another hundred and fifty metres past that, where there is a rope and a sign, and nobody goes beyond it during the block.
+He walks the archers down the field to show them the lanes. Both lines shoot the same way, north, from two positions seventy metres apart, and the lanes lean in toward each other by a few degrees so that the two flight paths cross a long way out over the middle of the field, where the arrows meet at the top of the arc. What is left of them comes down together in open grass another hundred and fifty metres past that, where there is a rope and a sign, and the block stays behind it all year.
 
 "At the top the arrow has stopped climbing and it hasn't started dropping. It hangs there." Bell puts a hand out flat and holds it. "If you're late, it's barely moved while you were being late. That's the only thing you've got going for you and you're going to want all of it."
 
@@ -42,13 +42,13 @@ They stand in the corridor comparing counts for ten minutes, which makes them la
 
 The first one Chloe gets is in the last week of October, with Odile.
 
-A small dry click sounds a long way up, before anything is visible, so far up that she is not sure whether she made it up, and then two arrows come down wrong out of the middle of the sky, one of them spinning. The other is broken across the middle, but it comes down in two pieces about eight metres apart with one of them still turning.
+A small dry click sounds a long way up, before anything is visible, so far up she almost doubts her own ears, and then two arrows come down wrong out of the middle of the sky, one of them spinning. The other is broken across the middle, but it comes down in two pieces about eight metres apart with one of them still turning.
 
 The whole of Chloe's line is shouting before the pieces land, and somebody down the far end is banging on the lid of the kit box with a bow stave. Coming up the field at a run from her end, Odile covers seventy metres in about forty seconds. The two of them stand in the grass yelling at each other about the sound it made, but neither of them is listening to the other one.
 
 "Sunday," Odile says, once she can get a whole word out. "My brother's here Sunday, he's been three times and he's never seen anybody do it. I'm making him stand at your end."
 
-Sam wants the sound at dinner, so Chloe tries it with her mouth four times, but she gets nowhere near it, because there is nothing else that makes it. Kavi says it sounds like somebody standing on a stick, but he was not there. Odile, from two tables away, without turning round, says it is more of a knock than a crack.
+Sam wants the sound at dinner, so Chloe tries it with her mouth four times, but she gets nowhere near it, because only the arrow makes it. Kavi, who missed it, says it sounds like somebody standing on a stick. Odile, from two tables away, says over her shoulder that it is more of a knock than a crack.
 
 By March most of the year has done it at least once. Odile does it four days out of five. In April she does it twice in one hour, and the second one comes down in three pieces.
 
@@ -80,7 +80,7 @@ On the first morning Ruth wants to know what everybody has got, and Chloe reads 
 
 "Yes," Chloe says, and gets on the stairs before Ruth can start again.
 
-Calculus arrives in mathematics in the second week, on the sheet, in the same slot. Astronomy runs the autumn term and most of it is arithmetic. How you get a mass off an orbit. Why the rocket equation punishes you the way it does. Why that leaves anybody's rocket mostly fuel. How anybody works out a distance to something nobody can go to, and then how they check it against a second method that has nothing to do with the first. In November, they spend two weeks on how you put an age on the universe. Chloe writes eleven pages on the two ways of measuring it, but the two ways come out different, and she is still turning that over at dinner three days later.
+Calculus arrives in mathematics in the second week, on the sheet, in the same slot. Astronomy runs the autumn term and most of it is arithmetic. How you get a mass off an orbit. Why the rocket equation punishes you the way it does. Why that leaves anybody's rocket mostly fuel. How anybody works out a distance to somewhere out of reach, then checks it against a second, unrelated method. In November, they spend two weeks on how you put an age on the universe. Chloe writes eleven pages on the two ways of measuring it, but the two ways come out different, and she is still turning that over at dinner three days later.
 
 Rhetoric is an hour a week of taking a speech apart to find the place where the person giving it is being paid, and it is usually about two thirds of the way down.
 
@@ -88,7 +88,7 @@ Art history is in the spring, and in February the teacher puts up a Dutch interi
 
 "I don't get it," Chloe says to Kavi at dinner. "It's a picture. It's the same picture in both of those numbers. Nobody went and added anything to it in between."
 
-"Inflation," Kavi says, without looking up from his plate.
+"Inflation," Kavi says, eyes on his plate.
 
 "I took the inflation out. It's still nine times what it was." She has both elbows on the table. "And if I painted that, right now, exactly that, every brush stroke the same, it's worth about four pounds. He painted it and it's worth a house. So the number isn't about the picture at all, and I want to know what it's actually about, and nobody in that room will tell me."
 
@@ -104,7 +104,7 @@ In May her chisel starts rolling its edge every twenty minutes, so she stops try
 
 "So where do people get a hard one?"
 
-"The forge," he says, without looking up. "Low building past the kitchens, and they're in on Thursdays."
+"The forge," he says, still filing the edge. "Low building past the kitchens, and they're in on Thursdays."
 
 ---
 
@@ -162,7 +162,7 @@ She finds Ruth on the stairs between the second floor and the third.
 
 At Christmas, her mother asks what she has been working on.
 
-"There was a big one in November." Chloe has a plate in her hands and is not washing it. "It was on whether the area bombing was the right call."
+"There was a big one in November." Chloe holds a plate in both hands, water going cold in the sink. "It was on whether the area bombing was the right call."
 
 "Which bombing was this?"
 
