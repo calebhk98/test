@@ -85,6 +85,27 @@ sentence.
 
 ---
 
+## Show your work
+
+Before the two findings sections, write a `## Show your work` section. It exists
+because a report that says "no issues" is usually a report from somebody who
+read quickly, and this section cannot be filled in without actually doing the
+tests.
+
+- **The five hardest sentences to restate.** Quote the five sentences in the
+  chapter you found hardest to put in your own words, *even if you managed it in
+  the end*. For each, give your restatement. If a restatement took you two
+  attempts, say so.
+- **Every physical object introduced, and where it came from.** A plain list.
+  Food, tools, paper, furniture, vehicles, clothing. This is the only reliable
+  way to notice the one that arrived from nowhere.
+- **Every scene, and where it happens.** One line each: who is present, and where
+  their bodies are. Write "not stated" where the text does not say.
+
+A chapter with nothing wrong in it is possible, and if that is your honest
+finding, say so plainly. But you may only say it after this section is filled
+in.
+
 ## Rules for the report
 
 - Every entry has a verbatim quote from the chapter and a line number. Check the
