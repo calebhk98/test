@@ -123,6 +123,12 @@ These are checkable and wrong. Highest priority.
   is eighteen — thirteen was five years ago, not nine. L107 ("Their own encryption has gone nine
   years") and L552 ("the same lock nine years running") repeat it. Nine years back would put them at
   nine years old. Should be five throughout. *(verified directly)*
+- **ch29 L43 — Sam gets his own four days wrong.** "three separate two-and-fours over four days."
+  The three contacts are two men at a fence (L14), four in a culvert (L17), and **one** man alone on
+  bad ground at oh-three-forty (L20). The third is not a two-and-four, and it is the chapter's
+  centrepiece — the man who waited six hours and did everything right. Sam is documented at 0%
+  hedging on anything factual or tactical; miscounting an engagement he lived through four days ago
+  is the one thing he doesn't do. *(verified directly)*
 - **ch23 L137 vs ch24 L432 — Nadia is hiring and unemployed in the same September.** Chapter 23
   (June 2023): "by September she's hiring." Chapter 24 (September 2023): "Nadia is behind the counter
   more hours a week now than she's ever been, since none of the two months of interviews turned into
@@ -508,6 +514,17 @@ reader" problem, in its structural form.
   other domestic scene is anchored.
 - **ch14 L177 → L179** — the kitchen two-hander with Meg becomes a three-person doorway exchange with
   no stage direction bridging them.
+- **ch29 L28–46** — "At the debrief a major runs through the four days." No room, and no other
+  soldiers: a private stands up in what should be a full debrief and tells a major the assessment
+  was too easy, in front of nobody.
+
+### Not a staging gap — the same shape twice, on purpose
+
+Chapter 29's major gives Sam's long critique no answer at all before the text cuts to "It goes upward
+anyway," which reads as a reaction gap in isolation. It is the identical structure to chapter 26:
+Sam says something remarkable, the room gives him nothing, and the thing he said gets written up and
+sent up the chain without him. Two chapters running the same figure is a motif, not an omission —
+the major's eyebrows going up at L38 is the only reaction Sam is meant to get.
 
 ## 10. Stale documentation — the chapter is fine, the reference file isn't
 
@@ -607,6 +624,14 @@ flagged with the justification sitting in the same paragraph.
   daily fights and the Watch, there wouldn't be. The reactions that *are* on the page are the ones
   that belong to these people: Chloe watching the man's chest until it goes up on its own, Sam
   looking at his knuckles, Sam not moving toward the fence.
+
+### Soft — probably fine, recorded so it isn't re-found
+
+- **ch29 L52, "ruth: how."** Flagged against RUTH.md's "0% questions; she asks by flat declarative,
+  never a question mark." It is her only line in the chapter, and it is a question in substance. But
+  this is a chat chapter where nobody punctuates anything, so the question-mark test can't
+  discriminate here, and a bare "how" with no punctuation reads closer to a demand than to an
+  enquiry. Worth a glance, not a fix.
 
 ### Also withdrawn
 
