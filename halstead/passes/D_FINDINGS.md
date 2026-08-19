@@ -110,6 +110,21 @@ These are checkable and wrong. Highest priority.
   you have lost?" / "Thirty" exchange belongs to the separate Priya loan.
 - **ch18 L145** — "Sandoval's side… and the four names on the form" counts Sandoval twice; L139
   establishes she is one of the four.
+- **ch14 L47** — "Coming up the field at a run from her end, Odile covers seventy metres in about
+  forty seconds." That is 1.75 m/s — slower than a brisk walk, for the fastest student in the year.
+- **ch26 L74 vs L3** — "a nineteen-year-old private," in a chapter dated November 2023. Sam is born
+  January 2005, so he is eighteen throughout it. *(verified directly)*
+- **ch32 L5 vs L11/L31** — "The financial one takes eleven weeks," against a month of testing plus
+  "the following two months" of results, which is thirteen weeks before Ruth starts building the
+  proof. The chapter's own Nov 2025 – Feb 2026 dateline doesn't absorb it either. *(verified
+  directly)*
+- **ch14 L19–21 vs L21** — the crossing point is 70m out from each firing line and is "the top of the
+  arc," but debris travels on to land "a hundred and fifty metres further on." An apex at 70m implies
+  landing near 140m, not 220m.
+- **ch14 L149** — Hearn's note says the hedge "only asks the reader to answer [the three objections]
+  again," but the quoted hedge sentence ("it could be argued that, on balance, this was perhaps not
+  the right decision") doesn't restate or reference any of them. The stated mechanism doesn't match
+  the quoted evidence, both of which are on the page.
 
 ## 2. Chronology and order
 
@@ -133,6 +148,14 @@ These are checkable and wrong. Highest priority.
   outcome, with no end-of-course event.
 - **ch19 L23–33 vs L101** — the April corkboard failure is fully staged; its October mirror is one
   flat sentence.
+- **ch14 L217** — a flash-forward ("he is still talking about it in June") is embedded inside the
+  present-tense, blow-by-blow Watch narration of an April 11th event, before the Watch has finished
+  on the page.
+- **ch26 L72 vs L74** — the report is "forwarded twice by Friday" and only reaches its reader "by the
+  following Thursday," up to six days later, with nothing accounting for the gap.
+- **ch32 L11 → L31** — the tool is tested for a month against Nadia's systems "before it goes
+  anywhere," and the next paragraph is two months of live results. The deployment itself — the
+  handoff, the confirmation the test passed, where the thing actually sits — is never on the page.
 
 ## 3. Referents with no antecedent
 
@@ -178,6 +201,17 @@ something the reader was never given.
   preceding exchange.
 - ch20 L41 — "Rohan's thirteen and still won't touch a soldering iron." Rohan appears exactly once in
   the entire manuscript, unidentified.
+- ch14 L97 — "I did ask her, and she told me" — the art history teacher's gender arrives with no
+  antecedent; L87 gives only "the teacher."
+- ch14 L99 — "the two Saturdays the man opens it," stated as an already-established pair.
+- ch14 L199 — "Chloe folds the envelope shut along the line she drew and keeps it." Where the
+  envelope came from, and what it originally was, is never given.
+- ch26 L22 — "In month four they put him on a range with ten targets." "They" is never identified.
+- ch26 L49 — "He nods at the rifle." No rifle has been established as present; the last prop was ten
+  targets.
+- ch26 L14 — "somebody has started printing them out." Never identified, never mentioned again.
+- ch32 L114 — "somebody handed the new guy a retirement box." Whose retirement, and how it came to
+  hold material far above a new analyst's clearance, is never addressed.
 
 ## 4. Unattributed dialogue
 
@@ -267,6 +301,25 @@ reviewers were reacting to when they read Chloe as non-human, and it is not conf
   to Ruth.
 - **ch1 L26** — the librarian answers "How old are you?" with a flat "Four" about book limits, and
   nothing registers on Chloe's side.
+- **ch32 L114–138** — Theo discloses a nineteen-year federal file, a planted infiltrator, and an
+  armed raid on the school. Sam says "WHAT." Kavi, Eli, Ruth and Nadia say nothing at all.
+- **ch32 L73–76** — Ruth lands the proof the whole last act runs on ("its him. one man.") and the
+  only response is Eli asking for a confidence percentage.
+- **ch26 L49–52** — Sam describes soldiers firing live rounds to intercept each other's rounds in
+  flight, the most extraordinary claim in the chapter, and the response is "There's a silence,"
+  followed by an unrelated question.
+- **ch26 L28** — "the best score I've seen this cycle" draws no reaction from Sam at all, in a
+  chapter whose opening two paragraphs are entirely about how Sam relates to his own results.
+- **ch14 L163–177** — Chloe reports a fourteen-thousand-word essay arguing through whether area
+  bombing was justified. Meg says "Well, a B's a B," and moves to the next plate. Meg's whole
+  established method is the escalating question that won't let a minimizing answer stand; here she
+  gives the minimizing close.
+- **ch14 L179–185** — her father walks in directly after that exchange and asks only about archery.
+- **ch14 L43–49** — the first successful arrow collision, with debris landing near a person, draws
+  shouting and no adult at all. No instructor is present or reacts at any live-fire drill in the
+  chapter, after a full page of Bell's safety framing.
+- **ch14 L197** — the grandmother is directly corrected (a dozen hits, not one) and her conclusion
+  arrives unchanged, with nothing registering that her first reading was simply wrong.
 
 ## 6. Objects introduced and dropped
 
@@ -307,6 +360,11 @@ reviewers were reacting to when they read Chloe as non-human, and it is not conf
   names.
 - ch10 L27/L175 — Sam's number and spelling are recorded in the notebook without any scene of his
   giving them, unlike Ruth's fully dramatized exchange.
+- ch14 L227 — failure number four names two students for the east stairwell and neither is Ruth, who
+  L215 says commanded it from the first thirty seconds. The logic (subordinates named, commander not)
+  is left entirely implicit.
+- ch26 L72 — "forwarded twice by Friday," with neither destination given, in a paragraph that is
+  otherwise precise about exactly who reads it next.
 
 ## 7. The category instead of the thing
 
@@ -347,6 +405,17 @@ chapter-21 markup was mostly this.
   built from named, dated fact.
 - ch16 L63 — the language studied for a whole paragraph is never named; it takes thirty-two lines and
   a different class to establish it's German.
+- ch26 L74 — "an office that exists to answer exactly that kind of question," never named even by
+  category, in a chapter whose stakes are entirely about what kind of office it is.
+- ch26 L34 — "Eighty's the standard, I'm working on it." Working on what.
+- ch26 L49 — "there are people I went to school with at ninety." No names, no count.
+- ch32 L52/L58 — "dozens of them" and "about forty minutes total" are the evidence under a proof whose
+  headline number is "99.99." Ruth is the character defined by giving the exact figure.
+- ch32 L8 — "a badly maintained reconciliation job," in a paragraph whose whole point is that the tool
+  is calibrated to look like one specific boring real thing.
+- ch32 L11 — "Nadia's own systems," never specified.
+- ch14 L85 — rhetoric is introduced with no teacher and no location, unlike every other subject in the
+  same list.
 
 ## 8. Narrator overreach
 
@@ -385,6 +454,14 @@ reader" problem, in its structural form.
   chapter's thesis stated flat, breaking out of the indirect register the surrounding three
   sentences use for Hearn's note.
 - ch20 L9 — "which from Kavi always means he already started it."
+- ch26 L72 — "The captain files it as a concern about the soldier rather than a recommendation for
+  him," immediately followed by the report's actual contents doing the same work.
+- ch32 L8 — "None of them have that kind of patience. The program does." Asserted about all seven,
+  and two of them (Ruth's ten-month silence, Kavi's years-open list) are defined elsewhere by exactly
+  that patience.
+- ch26 L74 — the report's own language, *appears to have received specialised instruction from an
+  unidentified source*, is folded into the narration with nothing setting it off, so institutional
+  voice and narrator blur.
 
 ## 9. Redundancy
 
@@ -408,6 +485,28 @@ reader" problem, in its structural form.
   archery record sit back to back at the same Christmas visit, doing the identical job.
 - ch6 L37/L41 — wood shop and the safety glasses described twice, the second time flagged in
   narration as "almost the same sentence as before."
+- ch26 L11/L14 — Sam's relationship to his own numbers made twice in adjoining paragraphs, the second
+  time in more general form.
+- ch26 L31/L37 — the narration gives "It still says ten out of ten," then the captain says "Son, you
+  hit ten out of ten."
+- ch26 L5/L77 — the chapter opens and closes on the identical beat: Sam content and unaware.
+- ch32 L120/L152 — Theo makes the same "they've been wrong for nineteen years" point twice, a few
+  lines apart, in the same conversation.
+
+## 9b. Conversations happening nowhere
+
+- **ch32, whole chapter** — apart from Chloe's phone on a desk at L141, no paragraph places anybody
+  anywhere. The chapter carries the identification of "him," the existence of the federal file, and
+  the revelation that the school was really attacked. This may simply be the format for the chat
+  chapters, but it is worth a decision rather than a default.
+- **ch26 L28–64** — the captain's approach, the whole accuracy conversation, and the "where did you go
+  to school" turn happen with no physical placement of either man at any point.
+- **ch2 L34–44** — the entire verbal-testing stretch has no hands, no posture, no glances, between a
+  block task and a montage that both have them.
+- **ch8 L135** — the post-fight dinner has no table, no room, no seating, in a chapter where every
+  other domestic scene is anchored.
+- **ch14 L177 → L179** — the kitchen two-hander with Meg becomes a three-person doorway exchange with
+  no stage direction bridging them.
 
 ## 10. Stale documentation — the chapter is fine, the reference file isn't
 
@@ -456,6 +555,32 @@ text. Several were created by this session's own rewrites.
 - **BELL.md** places the metronome in his coat pocket for two years; ch14 L9 nails it to a post.
 - **DEB.md** already flags its own name collision with the ch5 swim instructor.
 - **RUTH.md** already flags the ch17 "Aymar" collision and recommends renaming the stopwatch student.
+- **SAM.md's "Known problems" #1 cites `26_ten_targets.md:58`** for a mirrored line ("A gun you can't
+  stop a projectile with isn't a tool…") that is no longer in the file. The sheet is critiquing a
+  draft that has already been fixed.
+- **SYNOPSIS places ch26 in its "age 20, Autumn" row.** The chapter says November 2023 and Sam is born
+  January 2005, making him eighteen; chronology/BOOK.md agrees with the chapter at "~18–19."
+- **SYNOPSIS starts ethics at age eight;** ch14 L131 has Chloe say "since we were ten."
+- **SYNOPSIS and THEO.md date the infiltrator's identification at "a day and a half"** (and, in one
+  place, "twenty-four hours"); ch32 L123 says "we spotted him in a day."
+
+## 10b. False positives worth recording
+
+Two findings from this batch are the chapter working exactly as intended, and both are the failure
+mode you predicted — a reader who only has the text calling a deliberate choice an error.
+
+- **ch32 L135, "chloe: theo that was a drill."** The agent called this the chapter's central problem,
+  on the grounds that Chloe physically restrained the men in ch15 and would know. She would not: the
+  twelve-year-olds are meant to believe it was a drill, and Theo's "it wasnt a drill. i read the
+  file" is the reveal. Chloe reading it twice and setting the phone face down is the reaction beat.
+  Nothing to fix.
+- **ch32 L126, Theo's "four of us put them on the floor."** Read as Theo claiming to be one of the
+  four combatants, this contradicts SAM.md. Read as "four of us [Halstead students]," which is the
+  more natural reading of the idiom, it doesn't. Not worth a change.
+
+Both were caught by checking the manuscript rather than the report. That ratio — two false positives
+in roughly sixty findings across three chapters — is the cost of the prosecutorial framing, and it is
+a good trade.
 
 ## 11. What is not listed here
 
