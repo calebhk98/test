@@ -30,14 +30,15 @@ Her mom takes it back and turns it over to find nothing on the back except the i
 "No they aren't," her mom says.  
 "Sometimes somebody has money and wants to spend it on something," her dad says. "That's a whole thing that happens in the world. People give away scholarships. People put their name on the side of a hospital."  
 "To us? It happens to us?"  
-The free part is the part Chloe doesn't follow, since her mom says things cost too much about once a week, standing in a store with something in her hand, or at this table with an envelope open in front of her, and this one doesn't cost anything. Chloe waits for somebody to get to that part, but both of them keep their eyes on the letter instead of on her.  
+The free part is the part Chloe doesn't follow, since her mom says things cost too much about once a week, standing in a store with something in her hand, or at this table with an envelope open in front of her, and this one doesn't cost anything. Chloe pushes her fork through her food without eating any of it, waiting for somebody to get to that part, but both of them keep their eyes on the letter instead of on her.  
+Chloe puts both hands flat on the table and comes up onto her knees on the chair to see it right way round.  
 "Can I go, though."  
 "We're talking about it."  
 "Is that a no?"  
 "It's a we're talking about it," her mom says.  
 Chloe asks once more on the Sunday and then forgets to ask again for four days, because it's July and there's a sprinkler.  
 \---  
-Her mom calls the district office on Monday, where a woman takes the name down and says she'll look into it, and she doesn't call back Tuesday or Wednesday, though she does call back on Thursday afternoon. Chloe is on the stairs by then, on the step where the carpet stops, because that's the step where you can hear the kitchen.  
+Her mom calls the district office on Monday, where a woman takes the name down and says she'll look into it, and she doesn't call back Tuesday or Wednesday, though she does call back on Thursday afternoon. Chloe is on the stairs by then, on the step where the carpet stops and the wood goes cold under her, because that's the step where you can hear the kitchen.  
 Her mom spells it twice, H-A-L, Halstead, like it sounds, then there's a long stretch where the only sound in the kitchen is the other person talking. "Nothing at all? Not a charter, not a private, not a partner, nothing." Another stretch, shorter than the first one. "Okay. Okay, thank you. No, I appreciate it, I know it's not your job to go looking."  
 Then the phone goes down on the counter, and her dad says something from the other side of the room that doesn't carry as far as the stairs.  
 "She says there's no school by that name working with the district in any capacity, and she went back four years to check." Her mom runs the tap at the sink while she says it. "And she said to be careful."  
@@ -53,6 +54,7 @@ That one takes a long time to come back, the other voice going on behind the wal
 "That's not an answer. Where did the list come from?" Another wait, after which her mom says uh huh, then waits again. "And who put her on it?"  
 The voice goes on for most of a minute.  
 "Okay, but somebody made the list. A person made it. Somebody sat down and typed my kid's name."  
+Chloe comes down two more stairs during the wait, close enough to see her mom's free hand pressed flat against the counter, and her mom points at the stairs without turning around, so Chloe goes back up to the fourth one.  
 The wait after that one is shorter than all the others.  
 "Right. Okay. Thank you."  
 Then the call goes on for twenty-five more minutes and her mom's voice changes into the one she uses at the doctor. How many adults sleep in the building, what the ratio is at night, whether that's a different number from the daytime one. Whether the staff are licensed, by who, and whether she can see that in writing. What happens if a kid gets a fever at two in the morning, then what happens if it's worse than a fever. Whether there's a nurse or a person they call the nurse. What Chloe eats. Whether Chloe can be pulled out on any day, for any reason, or whether there's a form, or a notice period, or a fee.  
@@ -70,8 +72,9 @@ When she hangs up she stands there with her hand still flat on the phone, long e
 "And they're not from around here. Not one town, not one state. She said they come from all over, and then she said we're one of the closer ones."  
 "Four hours is one of the closer ones."  
 "That's what she said."  
+"Is the network the one with cartoons," Chloe says, from the top of the stairs, a minute behind the part of the conversation she is answering, and neither of them looks over.  
 \---  
-Her dad looks up the website that night on the laptop at the kitchen table, and Chloe is allowed to sit next to him because it's Friday.  
+Her dad looks up the website that night on the laptop at the kitchen table, and Chloe is allowed to sit next to him because it's Friday, her feet swinging under the chair without touching the floor.  
 He talks the whole way through the first part of it, reading the headings out loud in the voice he does for train station announcements, so that Chloe laughs at the one for lights out. A photograph of a field with goals on it gets a look, and a pool gets a question about whether she'd swim, to which she says yes. He says she doesn't know how, she says she'd learn, he says fair enough. Then he finds the page about what a Tuesday looks like, hour by hour, and does all of the hours in the voice, including the one that's just lunch.  
 "This is a nice-looking place, kid."  
 Then he clicks the page with the teachers on it, where there's a photo of each one, with a paragraph underneath about what that person did before they came here, and he stops doing the voice.  
@@ -94,19 +97,22 @@ Her mom doesn't say anything.
 Her dad pushes the laptop an inch away from him. "I'm not doing anything. I'm saying it's expensive. Every single thing about it is expensive, and none of it is being paid for by the four weeks, because the four weeks are free."  
 "So somebody wants something."  
 "Or somebody already has everything they want and this is what they do with it. Both of those are real people."  
-"Not around here they aren't."  
-It takes them nine days. Her mom's position is that it's four hours away, they never applied, nobody they know got one, somebody is paying for it, and she would like to know who before anybody gets in a car. Her dad's position is that all of that is true and she should go anyway. They have some version of the same argument on the fourth day, the sixth day, and the eighth, and on the sixth day, her mom says the words a building I have never seen.  
+"Not around here they aren't," her mom says, her eyes on the stack of bills clipped to the fridge instead of on him.  
+It takes them nine days. Her mom's position is that it's four hours away, they never applied, nobody they know got one, somebody is paying for it, and she would like to know who before anybody gets in a car. Her dad's position is that all of that is true and she should go anyway. They have some version of the same argument on the fourth day, the sixth day, and the eighth. On the sixth day, standing at the counter with the mail still in her hand, her mom says the words a building I have never seen.  
+"You already know what you're going to say," her dad says, and sets his coffee down without drinking it.  
+"That's not fair."  
+"No," he says. "It isn't." He doesn't take it back.  
 On the sixth day her mom also comes into Chloe's room and sits down on the end of the bed.  
 "Why do you want to go?"  
 "It's got my name on it."  
 Her mom waits for the rest of it.  
 "It says Miss," Chloe says.  
 Her mom sits there with her hands in her lap and her thumbs going, then pats the bed twice, gets up, and goes out without closing the door all the way behind her.  
-On the ninth night Chloe is supposed to be asleep.  
+On the ninth night Chloe is supposed to be asleep. She has already been sent back once, and comes out a second time in her socks, skipping the fourth stair, which is the one that gives her away.  
 "She's been flat since Christmas," her dad says. "You've seen it. She comes home and she says it was good."  
 "Kids say it was good."  
 "Not like that they don't."  
-Nobody says anything for a minute after that, before her mom says something too quiet to make out from the top of the stairs, her dad says he knows, twice, and somebody starts the dishwasher. That's the end of anything Chloe is going to hear tonight.  
+Nobody says anything for a minute after that, before her mom says something too quiet to make out from the top of the stairs, her dad says he knows, twice, and somebody starts the dishwasher. Chloe goes back up the rest of the stairs on her hands and knees, to keep the boards quiet, and gets into bed with her socks still on.  
 \---  
 She takes her four books back on the Thursday before they go, and gets up on her toes at the desk.  
 "I'm going away for four weeks."  
