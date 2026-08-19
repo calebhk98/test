@@ -546,13 +546,13 @@ ________________
 
 
 
-Kavi doesn't come back with anything for four days. When he does, he says he asked and was told it's internal. Internal how, Chloe asks. He doesn't know, that's the word they used.
+Four days pass before Kavi comes back with anything. When he does, he says he asked and was told it's internal. Internal how, Chloe asks. That's the word they used, is all Kavi has for her.
 
 
-The lock they built at thirteen to get past a teacher is still the only thing standing between this chat and anyone outside it, and none of them has ever proposed replacing it with something better. Whatever internal means, it isn't a word any of them knows how to get past.
+The lock they built at thirteen to get past a teacher is still the only thing standing between this chat and anyone outside it, the same lock nine years running, untouched and unreplaced. Whatever internal means, it's a wall each of them keeps running into.
 
 
-The chat moves on within about ten minutes. Chloe leaves the tab open on her desk for the rest of the evening and doesn't type anything else into it.
+The chat moves on within about ten minutes. Chloe leaves the tab open on her desk for the rest of the evening, the cursor sitting in the empty box where a reply would go.
 
 
 ________________
