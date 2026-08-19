@@ -26,6 +26,8 @@ from dataclasses import dataclass, field
 from datetime import date
 from typing import Any, Dict, List, Optional, Sequence, Tuple
 
+from .sqlfilters import Filters, eq_lower, prefix_lower
+
 # Sample-size tiers: what the data can support.
 MIN_ROWS_FULL = 12      # price ~ mileage + year
 MIN_ROWS_MILEAGE = 6    # price ~ mileage
@@ -135,24 +137,17 @@ def comparables(
     market evidence than one still sitting unsold, and dropping them would bias the sample
     towards overpriced inventory.
     """
-    clauses = ["price_current IS NOT NULL", "price_current > 0", "source != 'demo'"]
-    params: List[Any] = []
-    if make:
-        clauses.append("LOWER(make) = LOWER(?)")
-        params.append(make)
-    if model:
-        clauses.append("LOWER(model) LIKE LOWER(?)")
-        params.append(f"{model}%")
+    f = Filters("price_current IS NOT NULL", "price_current > 0", "source != 'demo'")
+    eq_lower(f, "make", make)
+    prefix_lower(f, "model", model)
     if year:
-        clauses.append("year BETWEEN ? AND ?")
-        params.extend([year - year_window, year + year_window])
+        f.add("year BETWEEN ? AND ?", year - year_window, year + year_window)
     if not include_sold:
-        clauses.append("active = 1")
+        f.add("active = 1")
     if exclude_vin:
-        clauses.append("vin != ?")
-        params.append(exclude_vin)
+        f.add("vin != ?", exclude_vin)
     rows = conn.execute(
-        f"SELECT * FROM listings WHERE {' AND '.join(clauses)} ORDER BY last_seen DESC", params
+        f"SELECT * FROM listings {f.where()} ORDER BY last_seen DESC", f.params
     ).fetchall()
     return [dict(row) for row in rows]
 
@@ -242,6 +237,127 @@ def _percentile(price: float, prices: Sequence[float]) -> Optional[float]:
     return 100.0 * below / len(prices)
 
 
+def _widen_comparables(
+    conn: sqlite3.Connection, car: Dict[str, Any]
+) -> Tuple[List[Dict[str, Any]], str, str, List[str]]:
+    """Try progressively broader comparable pools until there's enough to say something.
+
+    Returns (rows, basis, basis_level, notes) — the same widening ladder `appraise` always
+    used, just returning instead of mutating a half-built `Appraisal` as it goes.
+    """
+    make, model, year = car.get("make"), car.get("model"), car.get("year")
+    vin = car.get("vin")
+    notes: List[str] = []
+
+    rows = _usable(comparables(conn, make, model, year, year_window=1, exclude_vin=vin))
+    basis, basis_level = f"{make} {model} within ±1 model year", "model_year"
+    if len(rows) >= MIN_ROWS_MEDIAN:
+        return rows, basis, basis_level, notes
+
+    rows = _usable(comparables(conn, make, model, exclude_vin=vin))
+    basis, basis_level = f"{make} {model}, any year", "model"
+    if len(rows) >= MIN_ROWS_MEDIAN:
+        return rows, basis, basis_level, notes
+
+    rows = _usable(comparables(conn, make, exclude_vin=vin))
+    basis, basis_level = f"all {make} models", "make"
+    if rows:
+        notes.append(
+            f"No {make} {model} comparables stored yet, so this compares against other {make} "
+            "models — different cars, so read it as a rough bearing, not a valuation."
+        )
+    if len(rows) >= MIN_ROWS_MEDIAN:
+        return rows, basis, basis_level, notes
+
+    rows = _usable(comparables(conn, exclude_vin=vin))
+    basis, basis_level = "every tracked listing (no comparables for this model)", "all"
+    if rows:
+        notes.append(
+            "No comparables for this make at all, so this is measured against every tracked car — "
+            "a different mix of models entirely. Treat it as a sanity check only, and let the daily "
+            "job collect a few more days of data before trusting a grade."
+        )
+    return rows, basis, basis_level, notes
+
+
+def _capped_confidence(sample_size: int, basis_level: str) -> str:
+    """A large sample of the WRONG cars is not confidence — cap it by how close the
+    comparables actually are to the car being priced."""
+    confidence = _confidence(sample_size)
+    ceiling = {"model_year": None, "model": None, "make": "low", "all": "very low"}[basis_level]
+    if not ceiling:
+        return confidence
+    order = ["very low", "low", "moderate", "good"]
+    return order[min(order.index(confidence), order.index(ceiling))]
+
+
+def _fit_and_predict(
+    rows: List[Dict[str, Any]],
+    prices: List[float],
+    weights: List[float],
+    mileage: Optional[float],
+    year: Optional[int],
+) -> Optional[Dict[str, Any]]:
+    """Fit price ~ mileage (+ model year, when there's enough spread of years) and predict
+    this car's expected price. None if there isn't enough data to fit anything."""
+    if mileage is None:
+        return None
+
+    years = [row.get("year") for row in rows]
+    if len(rows) >= MIN_ROWS_FULL and year and all(years) and len(set(years)) > 1:
+        fit = weighted_least_squares(
+            [[float(row["mileage"]), float(row["year"])] for row in rows], prices, weights
+        )
+        if fit:
+            intercept, per_mile, per_year = fit["coefficients"]
+            return {
+                "expected_price": intercept + per_mile * float(mileage) + per_year * float(year),
+                "dollars_per_1k_miles": -per_mile * 1000,
+                "dollars_per_model_year": per_year,
+                "method": "price ~ mileage + model year",
+                "r_squared": fit["r_squared"],
+            }
+
+    if len(rows) >= MIN_ROWS_MILEAGE:
+        fit = weighted_least_squares([[float(row["mileage"])] for row in rows], prices, weights)
+        if fit:
+            intercept, per_mile = fit["coefficients"]
+            return {
+                "expected_price": intercept + per_mile * float(mileage),
+                "dollars_per_1k_miles": -per_mile * 1000,
+                "dollars_per_model_year": None,
+                "method": "price ~ mileage",
+                "r_squared": fit["r_squared"],
+            }
+    return None
+
+
+def _clamp_to_observed_range(expected_price: float, prices: Sequence[float]) -> Tuple[float, bool]:
+    """A fitted curve can wander outside anything sane on thin data; keep it inside the
+    observed range so a bad extrapolation cannot masquerade as a bargain.
+
+    Returns (clamped_price, was_extrapolated).
+    """
+    low, high = min(prices), max(prices)
+    span = max(500.0, (high - low) * 0.25)
+    clamped = min(max(expected_price, low - span), high + span)
+    return clamped, abs(clamped - expected_price) > 1
+
+
+def _grade_against_price(result: Appraisal, price: Optional[int], prices: Sequence[float]) -> None:
+    """Fill in delta/percentile/grade once both a price and an expectation exist."""
+    if not (price and result.expected_price):
+        return
+    result.delta = float(price) - result.expected_price
+    result.delta_pct = 100.0 * result.delta / result.expected_price
+    result.percentile = _percentile(float(price), prices)
+    result.grade, result.grade_icon = _grade(result.delta_pct)
+    if result.sample_size < MIN_ROWS_FULL:
+        result.notes.append(
+            f"{result.sample_size} comparable listing(s) is a thin sample — treat the grade as indicative."
+        )
+
+
 def appraise(
     conn: sqlite3.Connection,
     car: Dict[str, Any],
@@ -252,7 +368,6 @@ def appraise(
 
     `car` needs make, model, year and mileage; add price_current to have it graded.
     """
-    make, model = car.get("make"), car.get("model")
     year, mileage = car.get("year"), car.get("mileage")
     price = car.get("price_current")
     half_life = 45.0
@@ -261,40 +376,12 @@ def appraise(
 
     result = Appraisal(actual_price=int(price) if price else None)
 
-    rows = _usable(comparables(conn, make, model, year, year_window=1, exclude_vin=car.get("vin")))
-    basis, basis_level = f"{make} {model} within ±1 model year", "model_year"
-    if len(rows) < MIN_ROWS_MEDIAN:
-        rows = _usable(comparables(conn, make, model, exclude_vin=car.get("vin")))
-        basis, basis_level = f"{make} {model}, any year", "model"
-    if len(rows) < MIN_ROWS_MEDIAN:
-        rows = _usable(comparables(conn, make, exclude_vin=car.get("vin")))
-        basis, basis_level = f"all {make} models", "make"
-        if rows:
-            result.notes.append(
-                f"No {make} {model} comparables stored yet, so this compares against other {make} "
-                "models — different cars, so read it as a rough bearing, not a valuation."
-            )
-    if len(rows) < MIN_ROWS_MEDIAN:
-        rows = _usable(comparables(conn, exclude_vin=car.get("vin")))
-        basis, basis_level = "every tracked listing (no comparables for this model)", "all"
-        if rows:
-            result.notes.append(
-                "No comparables for this make at all, so this is measured against every tracked car — "
-                "a different mix of models entirely. Treat it as a sanity check only, and let the daily "
-                "job collect a few more days of data before trusting a grade."
-            )
-
+    rows, basis, basis_level, widening_notes = _widen_comparables(conn, car)
     result.sample_size = len(rows)
     result.basis = basis
     result.basis_level = basis_level
-    # A large sample of the WRONG cars is not confidence. Cap it by how close the
-    # comparables actually are to the car being priced.
-    confidence = _confidence(len(rows))
-    ceiling = {"model_year": None, "model": None, "make": "low", "all": "very low"}[basis_level]
-    if ceiling:
-        order = ["very low", "low", "moderate", "good"]
-        confidence = order[min(order.index(confidence), order.index(ceiling))]
-    result.confidence = confidence
+    result.notes.extend(widening_notes)
+    result.confidence = _capped_confidence(len(rows), basis_level)
     if not rows:
         result.notes.append("No comparable listings stored yet. Let the daily job run for a few days.")
         return result
@@ -304,27 +391,7 @@ def appraise(
     result.comparable_range = (int(min(prices)), int(max(prices)))
     weights = [age_weight(row.get("last_seen"), half_life, today) for row in rows]
 
-    fit = None
-    if mileage is not None:
-        years = [row.get("year") for row in rows]
-        if len(rows) >= MIN_ROWS_FULL and year and all(years) and len(set(years)) > 1:
-            fit = weighted_least_squares(
-                [[float(row["mileage"]), float(row["year"])] for row in rows], prices, weights
-            )
-            if fit:
-                intercept, per_mile, per_year = fit["coefficients"]
-                result.expected_price = intercept + per_mile * float(mileage) + per_year * float(year)
-                result.dollars_per_1k_miles = -per_mile * 1000
-                result.dollars_per_model_year = per_year
-                result.method = "price ~ mileage + model year"
-        if fit is None and len(rows) >= MIN_ROWS_MILEAGE:
-            fit = weighted_least_squares([[float(row["mileage"])] for row in rows], prices, weights)
-            if fit:
-                intercept, per_mile = fit["coefficients"]
-                result.expected_price = intercept + per_mile * float(mileage)
-                result.dollars_per_1k_miles = -per_mile * 1000
-                result.method = "price ~ mileage"
-
+    fit = _fit_and_predict(rows, prices, weights, mileage, year)
     if fit is None:
         result.expected_price = result.comparable_median
         result.method = "median of comparables"
@@ -332,32 +399,24 @@ def appraise(
             f"Only {len(rows)} comparable listing(s) — using their median rather than fitting a curve."
         )
     else:
+        result.expected_price = fit["expected_price"]
+        result.dollars_per_1k_miles = fit["dollars_per_1k_miles"]
+        result.dollars_per_model_year = fit["dollars_per_model_year"]
+        result.method = fit["method"]
         result.r_squared = fit["r_squared"]
-        if fit["r_squared"] < 0.25:
+        if result.r_squared < 0.25:
             result.notes.append(
-                f"Mileage and year explain only {fit['r_squared'] * 100:.0f}% of the price spread here, "
+                f"Mileage and year explain only {result.r_squared * 100:.0f}% of the price spread here, "
                 "so trim and condition matter more than the curve does for this model."
             )
 
-    # A fitted curve can wander outside anything sane on thin data; keep it inside the
-    # observed range so a bad extrapolation cannot masquerade as a bargain.
     if result.expected_price is not None:
-        low, high = min(prices), max(prices)
-        span = max(500.0, (high - low) * 0.25)
-        clamped = min(max(result.expected_price, low - span), high + span)
-        if abs(clamped - result.expected_price) > 1:
+        clamped, extrapolated = _clamp_to_observed_range(result.expected_price, prices)
+        if extrapolated:
             result.notes.append("Curve extrapolated beyond the observed price range; clamped to stay realistic.")
         result.expected_price = clamped
 
-    if price and result.expected_price:
-        result.delta = float(price) - result.expected_price
-        result.delta_pct = 100.0 * result.delta / result.expected_price
-        result.percentile = _percentile(float(price), prices)
-        result.grade, result.grade_icon = _grade(result.delta_pct)
-        if result.sample_size < MIN_ROWS_FULL:
-            result.notes.append(
-                f"{result.sample_size} comparable listing(s) is a thin sample — treat the grade as indicative."
-            )
+    _grade_against_price(result, price, prices)
     return result
 
 
@@ -381,22 +440,17 @@ def price_trend(
     again whenever its price or mileage moves — so this reflects what the market was actually
     asking over time, not just what is listed today.
     """
-    clauses = ["h.price IS NOT NULL", "h.price > 0", "l.source != 'demo'"]
-    params: List[Any] = []
-    if make:
-        clauses.append("LOWER(l.make) = LOWER(?)")
-        params.append(make)
-    if model:
-        clauses.append("LOWER(l.model) LIKE LOWER(?)")
-        params.append(f"{model}%")
+    f = Filters("h.price IS NOT NULL", "h.price > 0", "l.source != 'demo'")
+    eq_lower(f, "l.make", make)
+    prefix_lower(f, "l.model", model)
     rows = conn.execute(
         f"""
         SELECT substr(h.date, 1, 7) AS month, h.price AS price, h.mileage AS mileage, h.vin AS vin
         FROM price_history h JOIN listings l ON l.vin = h.vin
-        WHERE {' AND '.join(clauses)}
+        {f.where()}
         ORDER BY h.date ASC
         """,
-        params,
+        f.params,
     ).fetchall()
 
     buckets: Dict[str, Dict[str, Any]] = {}
@@ -431,17 +485,12 @@ def price_trend(
 
 def days_on_market(conn: sqlite3.Connection, make: Optional[str] = None, model: Optional[str] = None) -> Dict[str, Any]:
     """How long listings survive before they stop appearing (a proxy for how fast they sell)."""
-    clauses = ["active = 0", "source != 'demo'", "first_seen IS NOT NULL", "last_seen IS NOT NULL"]
-    params: List[Any] = []
-    if make:
-        clauses.append("LOWER(make) = LOWER(?)")
-        params.append(make)
-    if model:
-        clauses.append("LOWER(model) LIKE LOWER(?)")
-        params.append(f"{model}%")
+    f = Filters("active = 0", "source != 'demo'", "first_seen IS NOT NULL", "last_seen IS NOT NULL")
+    eq_lower(f, "make", make)
+    prefix_lower(f, "model", model)
     rows = conn.execute(
-        f"SELECT julianday(last_seen) - julianday(first_seen) AS days FROM listings WHERE {' AND '.join(clauses)}",
-        params,
+        f"SELECT julianday(last_seen) - julianday(first_seen) AS days FROM listings {f.where()}",
+        f.params,
     ).fetchall()
     spans = [float(row["days"]) for row in rows if row["days"] is not None]
     if not spans:
@@ -458,18 +507,12 @@ def days_on_market(conn: sqlite3.Connection, make: Optional[str] = None, model: 
 
 def price_cut_stats(conn: sqlite3.Connection, make: Optional[str] = None, model: Optional[str] = None) -> Dict[str, Any]:
     """How often sellers cut prices here, and by how much — useful for judging negotiating room."""
-    clauses = ["l.source != 'demo'", "l.price_first_seen IS NOT NULL", "l.price_current IS NOT NULL"]
-    params: List[Any] = []
-    if make:
-        clauses.append("LOWER(l.make) = LOWER(?)")
-        params.append(make)
-    if model:
-        clauses.append("LOWER(l.model) LIKE LOWER(?)")
-        params.append(f"{model}%")
+    f = Filters("l.source != 'demo'", "l.price_first_seen IS NOT NULL", "l.price_current IS NOT NULL")
+    eq_lower(f, "l.make", make)
+    prefix_lower(f, "l.model", model)
     rows = conn.execute(
-        f"SELECT l.price_first_seen AS first, l.price_current AS current FROM listings l "
-        f"WHERE {' AND '.join(clauses)}",
-        params,
+        f"SELECT l.price_first_seen AS first, l.price_current AS current FROM listings l {f.where()}",
+        f.params,
     ).fetchall()
     if not rows:
         return {"tracked": 0, "cut_count": 0, "cut_share_pct": None, "median_cut": None, "median_cut_pct": None}

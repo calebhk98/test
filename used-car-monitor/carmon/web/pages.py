@@ -459,8 +459,10 @@ project always obeys robots.txt and never tries to work around blocking.</p>
 </form>
 <div class="section">
   <h2>Secrets</h2>
-  <p class="note">Secret values are write-only -- the current value is never shown or returned by this API,
-  only whether it is set and its last few characters.</p>
+  <p class="note">Fill these in here -- there is nothing to copy by hand. Saving writes them straight into
+  <code>.env</code> (created automatically, permissions locked to your account only) and secret values are
+  write-only from then on: the current value is never shown or returned by this API, only whether it is
+  set and its last few characters.</p>
   <form method="post" action="/settings">
     <input type="hidden" name="confirm" value="1">
     <table class="kv">{''.join(secrets_rows)}</table>
@@ -667,14 +669,15 @@ def _secret_row(s: Dict[str, Any], disabled_attr: str) -> str:
     if s["from_environment"]:
         state_bits += " -- from environment, overrides .env"
     link_html = (
-        f' <a href="{e(s["url"])}" target="_blank" rel="noopener noreferrer">Get one &rarr;</a>'
+        f' <a href="{e(s["url"])}" target="_blank" rel="noopener noreferrer">Get one here &rarr;</a>'
         if s.get("url") else ""
     )
     return f"""<tr>
-  <td>{e(s["label"])}<div class="mv-sample">{e(s["key"])} &middot; currently {state_bits}</div></td>
+  <td>{e(s["label"])}<div class="mv-sample">{e(s["key"])} &middot; currently {state_bits}</div>
+  <p class="secret-help"><strong>{e(s.get("purpose"))}</strong></p></td>
   <td>
     <input type="password" name="secret.{e(s["key"])}" placeholder="leave blank to keep current value" autocomplete="off"{disabled_attr}>
-    <p class="secret-help">{e(s.get("purpose"))} {e(s.get("how"))}{link_html}</p>
+    <p class="secret-help">{e(s.get("how"))}{link_html}</p>
   </td>
 </tr>"""
 

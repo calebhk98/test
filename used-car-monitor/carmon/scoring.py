@@ -119,6 +119,16 @@ def _clamp(value: float, low: float, high: float) -> float:
     return max(low, min(high, value))
 
 
+def _top_component_text(top: Any) -> str:
+    """'; most common: STEERING (12)' from a `top_complaint_components` list, or '' if unusable."""
+    if not (isinstance(top, list) and top):
+        return ""
+    first = top[0]
+    if not (isinstance(first, (list, tuple)) and len(first) >= 2):
+        return ""
+    return f"; most common: {first[0]} ({first[1]})"
+
+
 def score_listing(listing: Dict[str, Any], scoring_config: Dict[str, Any] | None = None) -> ScoreResult:
     """Score one listing dict.
 
@@ -320,12 +330,7 @@ def score_listing(listing: Dict[str, Any], scoring_config: Dict[str, Any] | None
         complaints = float(complaints)
         quiet_at = weights["complaints_no_penalty_at"]
         loud_at = max(quiet_at + 1.0, weights["complaints_full_penalty_at"])
-        top = listing.get("top_complaint_components") or []
-        top_text = ""
-        if isinstance(top, list) and top:
-            first = top[0]
-            if isinstance(first, (list, tuple)) and len(first) >= 2:
-                top_text = f"; most common: {first[0]} ({first[1]})"
+        top_text = _top_component_text(listing.get("top_complaint_components"))
         if mode == "step":
             value = -1.0 if complaints > loud_at else 0.0
             detail = f"{complaints:,.0f} owner complaints filed with NHTSA{top_text}"

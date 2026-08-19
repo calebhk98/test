@@ -83,18 +83,20 @@ def _listing_bullet(listing: Dict[str, Any], extra: str = "") -> str:
     return f"• [{text}]({url})" if url else f"• {text}"
 
 
+def _bounded_body(listings: List[Dict[str, Any]], formatter) -> str:
+    """Join formatted lines until the Discord field-length budget runs out."""
+    body = ""
+    for added, listing in enumerate(listings):
+        line = formatter(listing) + "\n"
+        if len(body) + len(line) > MAX_FIELD - 20:
+            return body + f"…and {len(listings) - added} more"
+        body += line
+    return body
+
+
 def _section(title: str, listings: List[Dict[str, Any]], empty: str, formatter=None) -> Dict[str, str]:
     formatter = formatter or (lambda listing: _listing_bullet(listing))
-    if not listings:
-        body = empty
-    else:
-        body = ""
-        for listing in listings:
-            line = formatter(listing) + "\n"
-            if len(body) + len(line) > MAX_FIELD - 20:
-                body += f"…and {len(listings) - body.count('•')} more"
-                break
-            body += line
+    body = _bounded_body(listings, formatter) if listings else empty
     return {"name": title, "value": _clip(body.strip() or empty, MAX_FIELD), "inline": False}
 
 
@@ -175,6 +177,13 @@ def build_discord_payload(
     return {"username": "Used Car Monitor", "embeds": [embed]}
 
 
+def _retry_after_seconds(response: Any, default: float = 2.0) -> float:
+    try:
+        return float(response.json().get("retry_after", default))
+    except Exception:
+        return default
+
+
 def _post(
     url: str,
     payload: Dict[str, Any],
@@ -193,10 +202,7 @@ def _post(
         if status in (200, 201, 204):
             return response
         if status == 429 and attempt <= max_retries:
-            try:
-                wait = float(response.json().get("retry_after", 2))
-            except Exception:
-                wait = 2.0
+            wait = _retry_after_seconds(response)
             LOG.warning("%s rate limited; retrying in %.1fs", what, wait)
             time.sleep(min(30.0, wait))
             continue

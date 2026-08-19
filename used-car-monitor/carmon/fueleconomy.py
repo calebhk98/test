@@ -19,7 +19,7 @@ from __future__ import annotations
 import logging
 import sqlite3
 import time
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 import requests
 
@@ -48,6 +48,19 @@ def combined_from_city_highway(city: Optional[float], highway: Optional[float]) 
     if highway:
         return round(float(highway), 1)
     return None
+
+
+def _append_mpg(city_values: List[float], highway_values: List[float], detail: Dict[str, Any]) -> None:
+    """Append one trim's city/highway MPG, in place; skip it if either figure is unusable.
+
+    Mirrors the original inline loop exactly: if city08 parses but highway08 doesn't,
+    city_values ends up one entry ahead of highway_values, same as before.
+    """
+    try:
+        city_values.append(float(detail.get("city08")))
+        highway_values.append(float(detail.get("highway08")))
+    except (TypeError, ValueError):
+        pass
 
 
 class FuelEconomyClient:
@@ -111,6 +124,16 @@ class FuelEconomyClient:
         contained = [name for name in candidates if target and target in normalize(name)]
         return min(contained, key=len) if contained else None
 
+    def _city_highway_values(self, vehicle_ids: List[str]) -> Tuple[List[float], List[float]]:
+        """EPA city/highway MPG for a few trims of one model; unusable entries are skipped."""
+        city_values: List[float] = []
+        highway_values: List[float] = []
+        for vehicle_id in vehicle_ids:
+            detail = self._get(f"/{vehicle_id}")
+            if isinstance(detail, dict):
+                _append_mpg(city_values, highway_values, detail)
+        return city_values, highway_values
+
     def lookup(self, year: int, make: str, model: str, force_refresh: bool = False) -> Optional[Dict[str, Any]]:
         """Cached EPA city/highway/combined MPG for a model-year, or None if unavailable."""
         if not year or not make or not model:
@@ -128,17 +151,7 @@ class FuelEconomyClient:
             vehicle_ids = [item.get("value") for item in options if item.get("value")]
             if not vehicle_ids:
                 return None
-            city_values: List[float] = []
-            highway_values: List[float] = []
-            for vehicle_id in vehicle_ids[:3]:  # a few trims is plenty for an average
-                detail = self._get(f"/{vehicle_id}")
-                if not isinstance(detail, dict):
-                    continue
-                try:
-                    city_values.append(float(detail.get("city08")))
-                    highway_values.append(float(detail.get("highway08")))
-                except (TypeError, ValueError):
-                    continue
+            city_values, highway_values = self._city_highway_values(vehicle_ids[:3])
             if not city_values:
                 return None
             city = round(sum(city_values) / len(city_values), 1)

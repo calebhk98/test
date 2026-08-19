@@ -311,6 +311,22 @@ def secrets_status() -> List[Dict[str, Any]]:
     ]
 
 
+def _rewrite_env_line(line: str, changes: Dict[str, str], seen: set) -> str:
+    """Replace one .env line's value if its key is being changed; otherwise return it as-is.
+
+    Adds the key to `seen` (in place) whenever it rewrites a line, so the caller knows which
+    changed keys still need to be appended as new lines.
+    """
+    stripped = line.strip()
+    if not stripped or stripped.startswith("#") or "=" not in stripped:
+        return line
+    key = stripped.split("=", 1)[0].strip()
+    if key not in changes:
+        return line
+    seen.add(key)
+    return f"{key}={(changes[key] or '').strip()}"
+
+
 def update_secrets(changes: Dict[str, str]) -> Dict[str, Any]:
     """Set or clear secrets in .env. Values are never echoed back."""
     unknown = sorted(set(changes) - set(KNOWN_SECRETS))
@@ -321,19 +337,8 @@ def update_secrets(changes: Dict[str, str]) -> Dict[str, Any]:
     ensure_env_file()
     path = _env_path()
     lines = path.read_text(encoding="utf-8").splitlines() if path.exists() else []
-    seen = set()
-    output: List[str] = []
-
-    for line in lines:
-        stripped = line.strip()
-        if stripped and not stripped.startswith("#") and "=" in stripped:
-            key = stripped.split("=", 1)[0].strip()
-            if key in changes:
-                seen.add(key)
-                value = (changes[key] or "").strip()
-                output.append(f"{key}={value}")
-                continue
-        output.append(line)
+    seen: set = set()
+    output = [_rewrite_env_line(line, changes, seen) for line in lines]
 
     for key, value in changes.items():
         if key not in seen:

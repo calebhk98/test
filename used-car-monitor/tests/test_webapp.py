@@ -989,6 +989,19 @@ class ScrapersAndSettingsTestCase(unittest.TestCase):
         self.assertIn("7654", text)
         self.assertIn("search", text)
 
+    def test_settings_page_shows_secret_help_and_signup_link(self):
+        status, body = self._get("/settings")
+        self.assertEqual(status, 200)
+        text = body.decode("utf-8")
+        # The MarketCheck key is the one secret that is actually required, so its signup
+        # link -- the whole point of "never open .env by hand" -- has to be right there.
+        self.assertIn('href="https://www.marketcheck.com/apis"', text)
+        self.assertIn('target="_blank"', text)
+        self.assertIn('rel="noopener noreferrer"', text)
+        # The one-line "how to get it" text should render too, not just the link.
+        how_text = settings_module.SECRET_META["MARKETCHECK_API_KEY"]["how"]
+        self.assertIn(how_text.split(".")[0], text)
+
     def test_settings_html_form_round_trip_bool_number_and_list(self):
         fields = self._get_json("/api/settings")["fields"]
         form_body = {"confirm": "1"}

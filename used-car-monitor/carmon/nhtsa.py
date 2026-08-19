@@ -55,6 +55,27 @@ def vin_recall_url(vin: str) -> str:
     return f"https://www.nhtsa.gov/recalls?vin={quote(str(vin))}"
 
 
+def _count_components(components: "Counter[str]", raw: Optional[str]) -> None:
+    """Tally one complaint's comma-separated `components` field into `components`, in place."""
+    for component in str(raw or "").split(","):
+        component = component.strip()
+        if component and component.upper() not in ("UNKNOWN OR OTHER", ""):
+            components[component] += 1
+
+
+def _tally_complaints(complaints: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """Component frequency plus crash/fire/injury/death totals across a complaint list."""
+    components: Counter[str] = Counter()
+    crashes = fires = injuries = deaths = 0
+    for complaint in complaints:
+        _count_components(components, complaint.get("components"))
+        crashes += 1 if complaint.get("crash") else 0
+        fires += 1 if complaint.get("fire") else 0
+        injuries += int(complaint.get("numberOfInjuries") or 0)
+        deaths += int(complaint.get("numberOfDeaths") or 0)
+    return {"components": components, "crashes": crashes, "fires": fires, "injuries": injuries, "deaths": deaths}
+
+
 class NHTSAClient:
     """Thin, polite client. No API key exists for this service and none is needed."""
 
@@ -75,43 +96,55 @@ class NHTSAClient:
         self.calls_made = 0
         self._last_call_at = 0.0
 
+    def _throttle(self) -> None:
+        elapsed = time.monotonic() - self._last_call_at
+        if elapsed < self.min_interval:
+            time.sleep(self.min_interval - elapsed)
+        self._last_call_at = time.monotonic()
+
+    def _retry_or_give_up(self, attempt: int, message: str, cause: Optional[BaseException] = None) -> None:
+        """Back off and let the caller retry, or raise once retries are exhausted."""
+        if attempt > self.max_retries:
+            raise NHTSAError(message) from cause
+        time.sleep(min(8, 2 ** attempt))
+
+    def _parse_success(self, response: Any, status: int) -> Optional[Dict[str, Any]]:
+        """The JSON payload for a request that actually succeeded, or None otherwise.
+
+        The recalls endpoint answers HTTP 400 with a perfectly valid
+        {"Count": 0, "Message": "Results returned successfully", "results": []} body when a
+        model-year simply has no recall campaigns. That is an empty result, not an error, so
+        a 400 counts as success too when its body carries a count.
+        """
+        if status not in (200, 400):
+            return None
+        try:
+            payload = response.json() or {}
+        except ValueError as exc:
+            if status == 200:
+                raise NHTSAError(f"NHTSA returned non-JSON: {getattr(response, 'text', '')[:200]}") from exc
+            return None  # a non-JSON 400 body just isn't a recognizable empty result
+        if status == 400:
+            return payload if isinstance(payload, dict) and ("Count" in payload or "count" in payload) else None
+        return payload
+
     def _get(self, url: str, params: Dict[str, Any]) -> Dict[str, Any]:
         attempt = 0
         while True:
             attempt += 1
-            elapsed = time.monotonic() - self._last_call_at
-            if elapsed < self.min_interval:
-                time.sleep(self.min_interval - elapsed)
-            self._last_call_at = time.monotonic()
+            self._throttle()
             try:
                 response = self.session.get(url, params=params, timeout=self.timeout)
             except Exception as exc:
-                if attempt > self.max_retries:
-                    raise NHTSAError(f"NHTSA request failed: {exc}") from exc
-                time.sleep(min(8, 2 ** attempt))
+                self._retry_or_give_up(attempt, f"NHTSA request failed: {exc}", exc)
                 continue
             self.calls_made += 1
             status = getattr(response, "status_code", 0)
-            if status == 200:
-                try:
-                    return response.json() or {}
-                except ValueError as exc:
-                    raise NHTSAError(f"NHTSA returned non-JSON: {getattr(response, 'text', '')[:200]}") from exc
-            if status == 400:
-                # The recalls endpoint answers HTTP 400 with a perfectly valid
-                # {"Count": 0, "Message": "Results returned successfully", "results": []}
-                # body when a model-year simply has no recall campaigns. That is an
-                # empty result, not an error, so accept any 400 that carries a count.
-                try:
-                    payload = response.json() or {}
-                except ValueError:
-                    payload = {}
-                if isinstance(payload, dict) and ("Count" in payload or "count" in payload):
-                    return payload
-            if status in (429,) or 500 <= status < 600:
-                if attempt > self.max_retries:
-                    raise NHTSAError(f"NHTSA HTTP {status} after {attempt} attempts")
-                time.sleep(min(8, 2 ** attempt))
+            payload = self._parse_success(response, status)
+            if payload is not None:
+                return payload
+            if status == 429 or 500 <= status < 600:
+                self._retry_or_give_up(attempt, f"NHTSA HTTP {status} after {attempt} attempts")
                 continue
             raise NHTSAError(f"NHTSA HTTP {status}: {getattr(response, 'text', '')[:200]}")
 
@@ -166,26 +199,16 @@ class NHTSAClient:
         complaints = complaints or []
         recalls = recalls or []
 
-        components: Counter[str] = Counter()
-        crashes = fires = injuries = deaths = 0
-        for complaint in complaints:
-            for component in str(complaint.get("components") or "").split(","):
-                component = component.strip()
-                if component and component.upper() not in ("UNKNOWN OR OTHER", ""):
-                    components[component] += 1
-            crashes += 1 if complaint.get("crash") else 0
-            fires += 1 if complaint.get("fire") else 0
-            injuries += int(complaint.get("numberOfInjuries") or 0)
-            deaths += int(complaint.get("numberOfDeaths") or 0)
+        tally = _tally_complaints(complaints)
 
         facts = {
             "complaint_count": len(complaints),
             "recall_count": len(recalls),
-            "crash_complaints": crashes,
-            "fire_complaints": fires,
-            "injuries": injuries,
-            "deaths": deaths,
-            "top_components": components.most_common(5),
+            "crash_complaints": tally["crashes"],
+            "fire_complaints": tally["fires"],
+            "injuries": tally["injuries"],
+            "deaths": tally["deaths"],
+            "top_components": tally["components"].most_common(5),
             "recalls": [
                 {
                     "campaign": recall.get("NHTSACampaignNumber"),

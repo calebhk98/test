@@ -27,17 +27,22 @@ def load_env(env_path: Path | str | None = None) -> Dict[str, str]:
     path = Path(env_path) if env_path else DEFAULT_ENV_PATH
     values: Dict[str, str] = {}
     if path.exists():
-        for raw_line in path.read_text(encoding="utf-8").splitlines():
-            line = raw_line.strip()
-            if not line or line.startswith("#") or "=" not in line:
-                continue
-            key, _, value = line.partition("=")
-            value = value.strip().strip('"').strip("'")
-            values[key.strip()] = value
+        values.update(_parse_env_text(path.read_text(encoding="utf-8")))
     for key in ("MARKETCHECK_API_KEY", "DISCORD_WEBHOOK_URL", "CARMON_API_TOKEN"):
         env_value = os.environ.get(key)
         if env_value:
             values[key] = env_value
+    return values
+
+
+def _parse_env_text(text: str) -> Dict[str, str]:
+    values: Dict[str, str] = {}
+    for raw_line in text.splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        values[key.strip()] = value.strip().strip('"').strip("'")
     return values
 
 
@@ -64,6 +69,22 @@ AUTO_DERIVED_WEIGHTS: Dict[str, str] = {
 AUTO_DERIVED_WEIGHTS = {key: value for key, value in AUTO_DERIVED_WEIGHTS.items() if value}
 
 
+def _resolve_auto_weight(weights: Dict[str, Any], weight_key: str, derived: Any) -> None:
+    """Resolve one "auto" (or unset) weight from its search-config source, in place.
+
+    An explicitly-set numeric weight is left untouched — only "auto" markers and missing
+    keys get derived.
+    """
+    value = weights.get(weight_key)
+    is_auto = value is None or (isinstance(value, str) and value.strip().lower() == "auto")
+    if not is_auto:
+        return
+    if derived is None:
+        weights.pop(weight_key, None)
+    else:
+        weights[weight_key] = float(derived)
+
+
 class Config:
     """Thin wrapper around the parsed config.json with convenience accessors."""
 
@@ -83,13 +104,7 @@ class Config:
         weights = dict(scoring.get("weights") or {})
         search = self.data.get("search", {})
         for weight_key, search_key in AUTO_DERIVED_WEIGHTS.items():
-            value = weights.get(weight_key)
-            if value is None or (isinstance(value, str) and value.strip().lower() == "auto"):
-                derived = search.get(search_key)
-                if derived is not None:
-                    weights[weight_key] = float(derived)
-                else:
-                    weights.pop(weight_key, None)
+            _resolve_auto_weight(weights, weight_key, search.get(search_key))
         resolved = dict(scoring)
         resolved["weights"] = weights
         return resolved
