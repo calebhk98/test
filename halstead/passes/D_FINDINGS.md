@@ -70,12 +70,18 @@ These are checkable and wrong. Highest priority.
   end to hold," immediately followed by three Pruitt lines, none of them about metal.
 - **ch20 L7 vs L201** — the badge is Nadia's copy at setup and Ruth's physical object at return, and
   "copied" vs. "before he's noticed it was gone" describe two incompatible methods.
-- **ch20's date, third data point.** ch34 L14 calls the Waffle House night "an incident report from
-  six years back." With Chloe turning 21 in ch30 and ch31–33 following, that puts ch20 at around
-  sixteen — which *supports* its current position after ch19 ("Sixteen"). It contradicts the other
-  internal evidence: ch20 L7's box "built for a networking class the year before" against ch34 L69's
-  "i built that box in about a weekend when i was thirteen." One of the two has to give, and the
-  box is the one with two independent citations against it.
+- **ch20's date is a genuine two-against-two split.** *(This corrects an earlier entry here that
+  estimated ch34's year instead of reading its dateline. ch34 carries an explicit "June 2026" on
+  line 3.)* Four data points, and they pair off:
+  - **Pointing at 2020, age ~14:** ch34 L14 calls the Waffle House night "an incident report from
+    six years back," and June 2026 minus six is June 2020. ch34 L69 has Ruth say "i built that box in
+    about a weekend when i was thirteen," which with ch20 L7's "built for a networking class the year
+    before" puts the sneak-out at Ruth ~14.
+  - **Pointing at 2022, age 16:** ch20's own printed dateline is *June 2022*. ch20 L37's "You told a
+    twelve-year-old how to get around campus security" is Ruth's brother, four years behind her per
+    RUTH.md, which makes Ruth sixteen.
+
+  Nothing resolves this from inside the text. Two numbers have to move whichever way it goes.
 - **ch20 L169** — the diner waitress watches them go over the fence, four blocks from the diner.
   *(fixed this session)*
 - **ch9 L27 vs L33/L37** — Dave is staged going back downstairs before the birthday litany, then
@@ -129,6 +135,12 @@ These are checkable and wrong. Highest priority.
   is eighteen — thirteen was five years ago, not nine. L107 ("Their own encryption has gone nine
   years") and L552 ("the same lock nine years running") repeat it. Nine years back would put them at
   nine years old. Should be five throughout. *(verified directly)*
+- **ch23 L104 — a fourth form appears out of three.** "The recruiter slides three separate forms
+  across the desk… but he reads the fourth form properly, twice." *(verified directly)*
+- **ch23 L101 vs L95/L107 — everybody is packing before anybody has started packing.** L101: "That
+  evening, before anyone's started packing anything, or booking anything, or signing anything…" L95
+  has Chloe carrying her own packed box out; L107 has Ruth's box "labeled and half packed before the
+  ceremony even starts," i.e. before that evening. *(verified directly)*
 - **ch29 L43 — Sam gets his own four days wrong.** "three separate two-and-fours over four days."
   The three contacts are two men at a fence (L14), four in a culvert (L17), and **one** man alone on
   bad ground at oh-three-forty (L20). The third is not a two-and-four, and it is the chapter's
@@ -158,6 +170,33 @@ These are checkable and wrong. Highest priority.
   again," but the quoted hedge sentence ("it could be argued that, on balance, this was perhaps not
   the right decision") doesn't restate or reference any of them. The stated mechanism doesn't match
   the quoted evidence, both of which are on the page.
+
+## 1b. The datelines put five chapters out of order
+
+Every chapter from 20 on carries a real-world date on line 3. Read in book order they run:
+
+| ch | dateline | | ch | dateline |
+|---|---|---|---|---|
+| 20 | June 2022 | | 28 | **May 2024** |
+| 21 | Oct 2022 – Mar 2023 | | 29 | **Feb 2024** |
+| 22 | April 2023 | | 30 | Sept 2025 – Jan 2026 |
+| 23 | June 2023 | | 31 | Oct 2023 – Nov 2025 |
+| 24 | Sept 2023 | | 32 | Nov 2025 – Feb 2026 |
+| 25 | **Sept 2024 – Apr 2025** | | 33 | May 2026 – Jun 2026 |
+| 26 | **Nov 2023** | | 34 | June 2026 |
+| 27 | **Oct 2025** | | 35 | June 2026 – Jul 2026 |
+
+Chapters 20–24 are in order and 30–35 are in order. **Chapters 25–29 are not.** By their own printed
+dates the true sequence of that block is 26 (Nov 2023) → 29 (Feb 2024) → 28 (May 2024) → 25 (Sept
+2024 – Apr 2025) → 27 (Oct 2025). As printed, ch27 sits two years ahead of the two chapters that
+follow it, and ch26 sits ten months behind the chapter before it.
+
+This may be deliberate — the book already runs thematic blocks that aren't strictly sequential, and
+25–29 are one-per-character chapters (Chloe, Sam, Theo, Nadia, Sam again) rather than a continuous
+line. But nothing on the page tells a reader that, and `chronology/BOOK.md` calls this stretch merely
+"underdetermined" without ever citing the printed datelines, which means the audit that was supposed
+to catch this never looked at the one piece of evidence that settles it. **Decide whether the block
+is intentionally out of order; if it is, the datelines are what make it read as an error.**
 
 ## 2. Chronology and order
 
