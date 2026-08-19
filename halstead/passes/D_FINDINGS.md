@@ -1,7 +1,7 @@
 # Pass D — consolidated findings, chapters 1–20
 
-Nineteen chapters read (1–13, 15–20; chapter 14 still running). Roughly 580 findings, 29–38 per
-chapter, against 25 from the entire Haiku sweep that preceded it. This document reorganises them by
+Twenty chapters read (1–20). Roughly 610 findings, 29–38 per chapter, against 25 from the entire
+Haiku sweep that preceded it. Chapters 22–35 are in progress. This document reorganises them by
 failure type instead of by chapter, because the same eight or nine mistakes recur across the whole
 manuscript and are cheaper to fix as a sweep than chapter by chapter.
 
@@ -35,6 +35,12 @@ These are checkable and wrong. Highest priority.
 - **ch13 L23 vs L164** — she finishes all fifty-one of Hamilton's by mid-December and starts Madison;
   over Christmas she is reading Federalist 70 and 78, which the same paragraph assigns to Hamilton.
   Madison never reappears.
+- **ch14 L69** — Chloe says "Italian's on the list." Italian is on Sam's list and Priya's, not
+  hers; `_ALLOCATIONS.md` gives her Spanish, French, Mandarin, Russian, Latin, Arabic, German,
+  Japanese, Hindi, Korean, Swahili. Verified.
+- **ch14 L47** — "Coming up the field at a run from her end, Odile covers seventy metres in about
+  forty seconds." That is 1.75 m/s, slower than a brisk walk, for the most physically developed
+  student in the year. Verified.
 - **ch6 L119** — her father reports "And they did karate." Karate appears nowhere in Chloe's
   thirteen-item recitation, or anywhere else in the chapter.
 - **ch2 L60 vs ch1 L12** — the coffee cup "fell off at the stop sign" in the retelling; in the
@@ -189,6 +195,11 @@ Every one of these is a scene where the reader cannot recover who is speaking.
 - **ch12 L99** — "What if you don't?" untagged in a chapter that otherwise attributes everything.
 - **ch17 L193–195** — "That is a hold, that's been a hold all night," untagged.
 - **ch20 L93** — "Why?" untagged in a three-person exchange.
+- **ch14 L17, L23, L95** — three untagged lines, including Bell's signature "then nothing gets
+  pointed at a person" and an "Ask her again" that could be either party.
+- **ch14 L215** — Nadia takes and splits the third floor in four minutes, with eleven students
+  following four instructions in a row, and not one word of it is directly quoted. NADIA.md flags
+  the same absence independently.
 - **ch6 L6–15** — the parents' breakfast alternates between "a man," "the first man," "the woman,"
   "somebody" with no consistent system; it is often impossible to tell whether two lines share a
   speaker.
@@ -249,6 +260,11 @@ reviewers were reacting to when they read Chloe as non-human, and it is not conf
   learns it or reacts.
 - **ch17 L83** — "He built what you wrote" is the whole adult response to a discipline's core failure
   mode landing on a fourteen-year-old.
+- **ch14 L47** — an arrow shatters and lands eight metres from its other half; the two girls stand
+  in the grass arguing about the sound it made and neither checks whether the other is hurt.
+- **ch14 L227** — Chloe realises she spent two hours on a landing without once counting how many
+  teachers were left. It never surfaces again, to anyone, unlike the essay hedge she takes straight
+  to Ruth.
 - **ch1 L26** — the librarian answers "How old are you?" with a flat "Four" about book limits, and
   nothing registers on Chloe's side.
 
@@ -280,6 +296,11 @@ reviewers were reacting to when they read Chloe as non-human, and it is not conf
 - ch20 L7 — the badge's actual function during the outing is never shown: no door, no gate.
 - ch20 L7 — Sam's four nights of patrol-gap intelligence is set up and never used.
 - ch20 L107 — the sixth man is watched "in case he moves for a car at the corner"; dropped.
+- ch14 L113/L121 — Kavi asks to swap essay topics and Sam counters; neither is resolved, and Priya
+  puts hers face down and asks who wants it with no answer.
+- ch14 L197 — the grandmother settles back with tea nobody poured, in a room away from the kitchen.
+- ch14 L99 — "most of the spring on a second one for somebody else." The recipient is never named,
+  unlike every other build in the chapter.
 - ch12 L17 — "Something on Sam's sheet is different… by Thursday there are four theories." Neither
   the difference nor any theory is ever given.
 - ch10 L35 — Chloe asks Kavi's surname; the chapter never answers, then L175 claims three complete
@@ -320,6 +341,10 @@ chapter-21 markup was mostly this.
 - ch13 L37/L51 — "somebody's hand on your collarbone," "an elbow that got away from somebody," twice
   in one section.
 - ch18 L21/L22 — "a series" is never defined, so the 61/59/60 plateau can't be judged.
+- ch14 L101–107 — the woodshop instructor is "the man" across five exchanges and two paragraphs,
+  while every other adult in the chapter (Bell, Hearn, Sinclair) is named.
+- ch14 L141 — "A man writing in 1961 makes the case Chloe can't get past," in an essay otherwise
+  built from named, dated fact.
 - ch16 L63 — the language studied for a whole paragraph is never named; it takes thirty-two lines and
   a different class to establish it's German.
 
@@ -356,6 +381,9 @@ reader" problem, in its structural form.
 - ch20 L17 — "the way she takes it in the dining hall, in the library, anywhere with more than one
   way out."
 - ch20 L17 — "who accepts it from her in a way she wouldn't at school."
+- ch14 L149 — "An argument you apologise for is a request. Make it or do not make it." — the
+  chapter's thesis stated flat, breaking out of the indirect register the surrounding three
+  sentences use for Hearn's note.
 - ch20 L9 — "which from Kavi always means he already started it."
 
 ## 9. Redundancy
@@ -376,6 +404,8 @@ reader" problem, in its structural form.
 - ch20 L29/L39 — the same quarter-turn coffee-cup gesture twice in ten lines.
 - ch15 L11–13 vs L19 — Chloe diagnoses the hook's flaw herself; Pruitt restates the same diagnosis
   three weeks later with nothing added.
+- ch14 L163–177 and L187–197 — the mother's "Well, a B's a B" and the grandmother misreading the
+  archery record sit back to back at the same Christmas visit, doing the identical job.
 - ch6 L37/L41 — wood shop and the safety glasses described twice, the second time flagged in
   narration as "almost the same sentence as before."
 
@@ -415,6 +445,15 @@ text. Several were created by this session's own rewrites.
 - **MEG.md** places an aunt at the ch15 Thanksgiving table. No aunt appears in the chapter.
 - **BELL.md**'s signature is holding the demonstration object until the point lands; ch15 L21 has him
   pocket the metronome first.
+- **SYNOPSIS says Hearn "holds the library alone for forty minutes."** ch14's own clock runs 3:20
+  to 3:42 — twenty-two minutes.
+- **SYNOPSIS/chronology scale.** ch14 L203/L213 has the Watch cover "the whole school" as "two
+  hundred students out of eleven rooms," against an enrolment implied elsewhere at 800+.
+- **SAM.md** says he won't discuss what he's been laughed at for; ch14 L217 has him retelling being
+  marked out in ninety seconds through dinner and still in June.
+- **SAM.md** rules out subordinate qualifying clauses for him ("That belongs to Theo"); ch14 L133
+  gives him exactly that shape.
+- **BELL.md** places the metronome in his coat pocket for two years; ch14 L9 nails it to a post.
 - **DEB.md** already flags its own name collision with the ch5 swim instructor.
 - **RUTH.md** already flags the ch17 "Aymar" collision and recommends renaming the stopwatch student.
 
