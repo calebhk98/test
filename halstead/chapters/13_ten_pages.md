@@ -101,17 +101,17 @@ In the second week of September a man from the office spends an hour on Watch, w
 
 At the bottom, in the same typeface, without emphasis: *Response time is scored against the standard. The standard is posted weekly.*
 
-Then he goes through what a drill can be. People over the fence at the loading side. People already inside when it starts, because somebody let them in on the Tuesday without a second look. A van at the front with paperwork and a name on the side. The fire alarm going, itself the drill. Two adults in ordinary coats who walk in the front door at four in the afternoon and do not pretend to be anything at all.
+Then he goes through what a drill can be. People over the fence at the loading side. People already inside when it starts, because somebody let them in on the Tuesday without a second look. A van at the front with paperwork and a name on the side. The fire alarm going, itself the drill. Two adults in ordinary coats who walk in the front door at four in the afternoon looking exactly like themselves.
 
-Most of them are announced. There is a board and it says *Thursday, afternoon block* four days out, and a dozen names go up with it, and everybody knows it is coming, but it is still hard. Some are at night and those go on the board too. Every few weeks there is one nobody has been told about, at eleven in the morning or in the middle of lunch, and people count the weeks.
+Most of them are announced. There is a board and it says *Thursday, afternoon block* four days out, and a dozen names go up with it, and everybody knows it is coming, but it is still hard. Some are at night and those go on the board too. Every few weeks there is one sprung with no warning at all, at eleven in the morning or in the middle of lunch, and people count the weeks.
 
 Her first one is on the board on the Monday and happens on the Thursday. Four adults come over the north fence with a bag between them, and they are inside Building Two in under two minutes. One of the twelve is off her feet before she turns around. Two more go down at the stairwell, and a boy called Wes answers a question about how many of them there are. The drill is called at eleven minutes.
 
 The sheet goes up on the Friday. All twelve names have an F next to them and there are nine numbered things underneath.
 
-She reads it in the corridor with about fifteen people behind her waiting for a turn at it. Number one is response time and number three is that four adults entered a building. Number six says the north stairwell was uncovered for six minutes, and Chloe, who stood there the whole time, does not know what covering it was supposed to look like.
+She reads it in the corridor with about fifteen people behind her waiting for a turn at it. Number one is response time and number three is that four adults entered a building. Number six says the north stairwell was uncovered for six minutes, and Chloe, who stood there the whole time, is still working out what covering it would even have looked like.
 
-She goes back after dinner when the corridor is empty and reads it again, and then she reads it a third time. Ruth comes and stands next to her at about nine and gets all the way to the bottom without saying anything.
+She goes back after dinner when the corridor is empty and reads it again, and then she reads it a third time. Ruth comes and stands next to her at about nine and reads it all the way to the bottom in silence, arms crossed.
 
 "Six is me."
 
@@ -123,7 +123,7 @@ She goes back after dinner when the corridor is empty and reads it again, and th
 
 Russian starts in September, and two months in she has enough of it to argue in. Ruth is on Arabic. By the middle of the term the two of them are running insults across the dinner table in two languages, and Kavi complains about it in a third, and Sam asks them to do it in English so he can join in and neither of them will.
 
-Music runs both ways at once. Half the hour is by ear and half is notation, and the same man teaches both and moves between them without saying which one they are doing. She is a mediocre player of everything they put in front of her, but in the third week he plays eight bars and she gets the whole of it while the girl next to her gets four notes. She keeps the block all year, and puts her name down for it again in June. Algebra starts in mathematics in the second week, on the sheet, in the slot where the mathematics already was.
+Music runs both ways at once. Half the hour is by ear and half is notation, and the same man teaches both, sliding from one to the other and leaving you to work out which you're doing. She is a mediocre player of everything they put in front of her, but in the third week he plays eight bars and she gets the whole of it while the girl next to her gets four notes. She keeps the block all year, and puts her name down for it again in June. Algebra starts in mathematics in the second week, on the sheet, in the slot where the mathematics already was.
 
 ---
 
@@ -161,7 +161,7 @@ She turns it over twice on the way out into the corridor, in case the note went 
 
 Theo gets one back with no note the same week, but he puts it straight into his bag and goes on with what he was saying.
 
-She writes four more before the break, but they are the same essays they have been since October. The last one is on whether a promise made under a threat counts, a question that Hearn's note calls good before asking where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 on the floor of the spare room with the door shut. Her grandmother finds her there on the second afternoon and does not ask what any of it is.
+She writes four more before the break, but they are the same essays they have been since October. The last one is on whether a promise made under a threat counts, a question that Hearn's note calls good before asking where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 on the floor of the spare room with the door shut. Her grandmother finds her there on the second afternoon and leaves the papers exactly where they are.
 
 "There's a chair."
 
@@ -171,7 +171,7 @@ She writes four more before the break, but they are the same essays they have be
 
 The Tuesday is in the second week of February.
 
-She sits down at seven with a question about whether a rule that nobody enforces is still a rule. She has the shape of it before she has written a word, and the shape has a place in it where she is going to be wrong, and she writes toward that place instead of round it. She finishes at nine. There is an hour before lights out, and she spends it on a book she picked herself.
+She sits down at seven with a question about whether an unenforced rule is still a rule. She has the shape of it before she has written a word, and the shape has a place in it where she is going to be wrong, and she writes toward that place instead of round it. She finishes at nine. There is an hour before lights out, and she spends it on a book she picked herself.
 
 She reads it back on the Wednesday morning before she hands it in, sitting on the floor outside the room with eleven minutes to go, and leaves it exactly as it is.
 

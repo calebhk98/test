@@ -46,7 +46,7 @@ Then the phone goes down on the counter, and her dad says something from the oth
 "She said people do this. She said there are people who send things to houses with a kid's name on the outside, because a kid opens it, and that's how you find out which houses write back."  
 Her dad's jaw goes tight.  
 "I'm telling you what she said."  
-Then her mom calls the Petersons, because Ellie Peterson is in the pull-out group and is the one kid on the street that anybody would put on a list of anything, but the Petersons haven't gotten one. She tries two more houses after that, then gives up, since after three houses it isn't research anymore, it's a thing you have to explain to your neighbors, and Chloe is the only kid on the street who got one. By Saturday three separate people know the Kesslers got something in the mail.  
+Then her mom calls the Petersons, because Ellie Peterson is in the pull-out group and is the one kid on the street that anybody would put on a list of anything, but the Petersons haven't gotten one. She tries two more houses after that, then gives up, since after three houses it stops being research and turns into a thing you have to explain to your neighbors, and Chloe is the only kid on the street who got one. By Saturday three separate people know the Kesslers got something in the mail.  
 Then she calls the number on the letter, and somebody picks up on the second ring, Chloe coming down from the top of the stairs to listen.  
 Her mom gives the name, spells the first half of it, says yes, that's the one, then waits through whatever the answer to that is.  
 "Okay. I want to know how you got her name."  
