@@ -7,11 +7,13 @@ import os
 import tempfile
 import threading
 import unittest
+from datetime import date
 from pathlib import Path
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
 from carmon import db
+from carmon import quota
 from carmon import webapp
 from carmon.config import load_config
 
@@ -314,6 +316,174 @@ class WebAppTestCase(unittest.TestCase):
     def test_unknown_html_path_404(self):
         status, body = self._get("/no-such-page")
         self.assertEqual(status, 404)
+
+    # -- quota pace -----------------------------------------------------
+    def test_quota_endpoint_matches_pace_module(self):
+        today = date.today()
+        cap = int(self.config.api.get("monthly_call_cap", 500) or 500)
+        conn = db.connect(self.config.db_path)
+        for i in range(7):
+            db.record_api_call(conn, "search", 200, note=f"call {i}")
+        conn.close()
+
+        expected = quota.pace(7, cap, today)
+
+        data = self._get_json("/api/quota")
+        self.assertEqual(data["used"], expected["used"])
+        self.assertEqual(data["cap"], expected["cap"])
+        self.assertEqual(data["pace_ratio"], expected["pace_ratio"])
+        self.assertEqual(data["pace_label"], expected["pace_label"])
+        self.assertEqual(data["expected_by_now"], expected["expected_by_now"])
+        self.assertIn("summary", data)
+        self.assertIn("bar", data)
+        self.assertEqual(data["summary"], quota.summary_line(expected))
+        self.assertEqual(data["bar"], quota.bar(expected))
+
+    def test_stats_keeps_old_keys_and_gains_pace(self):
+        today = date.today()
+        cap = int(self.config.api.get("monthly_call_cap", 500) or 500)
+        conn = db.connect(self.config.db_path)
+        for i in range(3):
+            db.record_api_call(conn, "search", 200, note=f"call {i}")
+        conn.close()
+
+        expected = quota.pace(3, cap, today)
+
+        data = self._get_json("/api/stats")
+        # old keys still present -- other tests/consumers depend on these
+        for key in (
+            "listings_total", "listings_active", "avg_price", "min_price", "best_score",
+            "api_calls_this_month", "api_monthly_cap", "api_calls_remaining",
+            "usage_by_month", "last_run",
+        ):
+            self.assertIn(key, data)
+        self.assertIn("pace", data)
+        self.assertEqual(data["pace"]["used"], expected["used"])
+        self.assertEqual(data["pace"]["pace_ratio"], expected["pace_ratio"])
+        self.assertEqual(data["pace"]["pace_label"], expected["pace_label"])
+
+    def test_dashboard_shows_pace_tile(self):
+        status, body = self._get("/")
+        self.assertEqual(status, 200)
+        text = body.decode("utf-8")
+        self.assertIn("API pace", text)
+        self.assertIn('class="tile pace', text)
+
+    # -- demo data warnings -----------------------------------------------
+    def test_no_demo_data_means_no_banner(self):
+        health = self._get_json("/api/health")
+        self.assertEqual(health["demo_listings"], 0)
+        self.assertIsNone(health["demo_warning"])
+
+        stats = self._get_json("/api/stats")
+        self.assertEqual(stats["demo_listings"], 0)
+        self.assertIsNone(stats["demo_warning"])
+
+        status, body = self._get("/")
+        self.assertEqual(status, 200)
+        # the CSS rule for .demo-banner is always inlined -- check for the rendered
+        # element itself, not the class name, which the stylesheet always contains.
+        self.assertNotIn('<div class="demo-banner">', body.decode("utf-8"))
+
+    # -- sort dropdown & caption --------------------------------------------
+    def test_sort_dropdown_has_all_eight_options_including_last_seen(self):
+        status, body = self._get("/")
+        text = body.decode("utf-8")
+        for key in (
+            "score", "price", "price_desc", "mileage", "distance", "year",
+            "first_seen", "last_seen",
+        ):
+            self.assertIn(f'value="{key}"', text)
+        self.assertIn(">Last seen (newest first)<", text)
+
+    def test_sort_caption_names_active_sort(self):
+        status, body = self._get("/?sort=price_desc")
+        text = body.decode("utf-8")
+        self.assertIn("Sorted by price, high to low", text)
+
+    def test_sort_caption_falls_back_to_score_for_bogus_sort(self):
+        status, body = self._get("/?sort=bogus")
+        self.assertEqual(status, 200)
+        text = body.decode("utf-8")
+        self.assertIn("Sorted by score, best first", text)
+        self.assertNotIn(">bogus<", text)
+
+
+class WebAppDemoDataTestCase(unittest.TestCase):
+    """Demo listings (source='demo') must be impossible to mistake for real ones."""
+
+    def setUp(self) -> None:
+        self._tmpdir = tempfile.TemporaryDirectory()
+        self.db_path = Path(self._tmpdir.name) / "carmon-demo-test.db"
+
+        self.config = load_config()
+        self.config.data["paths"] = dict(self.config.paths)
+        self.config.data["paths"]["db"] = str(self.db_path)
+
+        conn = db.init_db(self.config.db_path)
+        db.upsert_listing(
+            conn,
+            _make_listing("DEMO0000000000A1", source="demo"),
+            seen_date="2026-08-18",
+        )
+        conn.close()
+
+        self.server = webapp.create_server(self.config, host="127.0.0.1", port=0)
+        self.host, self.port = self.server.server_address[:2]
+        self.thread = threading.Thread(target=self.server.serve_forever, daemon=True)
+        self.thread.start()
+
+    def tearDown(self) -> None:
+        self.server.shutdown()
+        self.server.server_close()
+        self.thread.join(timeout=5)
+        self._tmpdir.cleanup()
+
+    def _url(self, path: str) -> str:
+        return f"http://{self.host}:{self.port}{path}"
+
+    def _get(self, path: str):
+        req = Request(self._url(path))
+        with urlopen(req, timeout=5) as resp:
+            return resp.status, resp.read()
+
+    def _get_json(self, path: str):
+        status, body = self._get(path)
+        self.assertEqual(status, 200, msg=body)
+        return json.loads(body)
+
+    def test_health_reports_demo_listings(self):
+        data = self._get_json("/api/health")
+        self.assertEqual(data["demo_listings"], 1)
+        self.assertIsNotNone(data["demo_warning"])
+        self.assertIn("DEMO", data["demo_warning"])
+
+    def test_stats_reports_demo_listings(self):
+        data = self._get_json("/api/stats")
+        self.assertEqual(data["demo_listings"], 1)
+        self.assertIsNotNone(data["demo_warning"])
+
+    def test_dashboard_shows_banner_and_badge(self):
+        status, body = self._get("/")
+        self.assertEqual(status, 200)
+        text = body.decode("utf-8")
+        self.assertIn("demo-banner", text)
+        self.assertIn("DEMO DATA", text)
+        self.assertIn('class="badge demo"', text)
+        self.assertIn(">DEMO<", text)
+
+    def test_listing_detail_shows_banner_and_badge(self):
+        status, body = self._get("/listing/DEMO0000000000A1")
+        self.assertEqual(status, 200)
+        text = body.decode("utf-8")
+        self.assertIn("demo-banner", text)
+        self.assertIn('class="badge demo"', text)
+
+    def test_sources_and_digest_pages_show_banner(self):
+        for path in ("/sources", "/digest"):
+            status, body = self._get(path)
+            self.assertEqual(status, 200)
+            self.assertIn("demo-banner", body.decode("utf-8"))
 
 
 class WebAppAuthTestCase(unittest.TestCase):

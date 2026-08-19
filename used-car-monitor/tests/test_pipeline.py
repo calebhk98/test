@@ -205,6 +205,63 @@ class RunDailyTests(unittest.TestCase):
         runs = db.recent_runs(self.conn, 1)
         self.assertEqual(runs[0]["status"], "error")
 
+    def test_month_end_sweep_spends_leftover_calls(self):
+        pages = [{"num_found": 500, "listings": [raw_listing(vin=f"SWEEPVIN{i:09d}")]} for i in range(30)]
+        client = self._client(pages)
+        self.config.data["api"]["month_end_sweep"]["max_extra_calls"] = 8
+        result = run_daily(self.config, conn=self.conn, client=client, run_date="2026-08-31")
+        self.assertTrue(result.sweep["ran"])
+        self.assertGreater(result.sweep["calls_used"], 0)
+        self.assertLessEqual(result.sweep["calls_used"], 8, "the sweep must respect its budget")
+        labels = [query["label"] for query in result.sweep["queries"]]
+        self.assertIn("deep pagination", labels)
+        self.assertTrue(any("Corolla" in label for label in labels),
+                        "the sweep should also run targeted preferred-model queries")
+
+    def test_no_sweep_on_an_ordinary_day(self):
+        result = run_daily(self.config, conn=self.conn, client=self._client(
+            [{"num_found": 1, "listings": [raw_listing()]}]), run_date="2026-08-15")
+        self.assertFalse(result.sweep["ran"])
+        self.assertIn("not the sweep window", result.sweep["reason"])
+
+    def test_sweep_keeps_the_reserve_when_quota_is_nearly_gone(self):
+        for _ in range(490):
+            db.record_api_call(self.conn, "test", 200, "backfill")
+        result = run_daily(self.config, conn=self.conn, client=self._client(
+            [{"num_found": 1, "listings": [raw_listing()]}]), run_date="2026-08-31")
+        self.assertFalse(result.sweep["ran"])
+        self.assertIn("reserve", result.sweep["reason"])
+
+    def test_sweep_can_be_disabled(self):
+        self.config.data["api"]["month_end_sweep"]["enabled"] = False
+        result = run_daily(self.config, conn=self.conn, client=self._client(
+            [{"num_found": 1, "listings": [raw_listing()]}]), run_date="2026-08-31")
+        self.assertFalse(result.sweep["ran"])
+        self.assertIn("disabled", result.sweep["reason"])
+
+    def test_sweep_failure_does_not_sink_the_run(self):
+        class HalfBrokenSession(FakeSession):
+            def get(self, url, params=None, timeout=None):
+                self.calls.append(params)
+                if len(self.calls) > 1:  # the sweep's first extra call explodes
+                    raise OSError("network gone")
+                return FakeResponse({"num_found": 1, "listings": [raw_listing()]})
+
+        client = MarketCheckClient("k", self.conn, dict(self.config.api, max_retries=0),
+                                   session=HalfBrokenSession([]))
+        result = run_daily(self.config, conn=self.conn, client=client, run_date="2026-08-31")
+        self.assertEqual(result.kept, 1, "the normal run's listing is still stored")
+
+    def test_targeted_sweep_queries_carry_make_and_model_params(self):
+        from carmon.pipeline import sweep_queries
+        queries = sweep_queries(self.config, pages=5)
+        targeted = [q for q in queries if q["label"] != "deep pagination"]
+        self.assertTrue(targeted)
+        client = self._client([])
+        params = client.build_params(targeted[0]["search"])
+        self.assertIn("make", params)
+        self.assertIn("model", params)
+
     def test_radius_is_clamped_to_free_tier(self):
         self.config.data["search"]["radius_miles"] = 250
         client = self._client([{"num_found": 0, "listings": []}])

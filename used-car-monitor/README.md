@@ -8,7 +8,7 @@ time, scores every listing deterministically, and then tells you about it four w
 | Output | Command | What it is |
 | --- | --- | --- |
 | **Daily digest** | `python3 -m carmon run` | Markdown file: new listings, price drops, top 5 by score |
-| **Discord message** | same run, or `python3 -m carmon notify` | Embed posted to a webhook |
+| **Discord message** | same run, or `python3 -m carmon notify` | Sent as a **direct message**, or to a server webhook |
 | **Website** | `python3 -m carmon serve` | Browse/filter listings, see score breakdowns and price history |
 | **JSON API** | same server, `/api/*` | Everything the website shows, as JSON |
 | **MCP server** | `python3 -m carmon mcp` | Tools so Claude (or any MCP client) can query your data |
@@ -25,7 +25,19 @@ Python 3.11+, one runtime dependency (`requests`); everything else is standard l
 
 NHTSA is real federal data — the same underlying dataset every third-party reliability site
 repackages. It gives raw counts and descriptions, not a friendly 1–5 score, and it feeds two
-components of every listing's score. Neither free source counts against the MarketCheck quota,
+components of every listing's score.
+
+**It is looked up automatically.** Every daily run collects the distinct make/model/year
+combinations it just fetched and, for any it has never seen before, calls NHTSA (and EPA for
+MPG) right then — no separate step, no key, no MarketCheck quota consumed. Results are cached
+per model-year, so fifty Civics cost one lookup and a model already known costs nothing. The
+digest names each first-time lookup ("first NHTSA lookup: 2022 Kia Forte (31 complaints, 1
+recall)"). `python3 -m carmon enrich` forces a refresh; `--force` ignores the cache.
+
+That data then shows up everywhere: MPG and a `complaints / recalls` column on the dashboard,
+a full Reliability section on each listing page (top components, each recall campaign, VIN
+lookup link), `GET /api/reliability` and per-listing fields in the API, and the
+`get_reliability` / `refresh_reliability` / `list_reliability` MCP tools. Neither free source counts against the MarketCheck quota,
 and neither can break the daily run: if either is unreachable, the run logs it and carries on
 with the last cached values.
 
@@ -70,12 +82,30 @@ requests are throttled to 5/sec, and a radius above 100 miles is clamped with a 
 Usage shows up in the digest, on the website, and in `python3 -m carmon stats`.
 Upgrading the plan means editing `api.monthly_call_cap` yourself — the code will not do it.
 
-### Discord webhook (optional)
+### Discord (optional): direct message or server channel
 
-Discord → **Server Settings → Integrations → Webhooks → New Webhook** → *Copy Webhook URL*,
-then put it in `.env` as `DISCORD_WEBHOOK_URL=`. Leave it blank and the run just skips the post.
+Pick one transport. `discord.mode` in `config.json` is `"auto"` — DM if a bot is configured,
+webhook otherwise — or force it with `"dm"` / `"webhook"` (or `--mode` on the command line).
 
----
+**(a) Direct message — no server channel.** The digest lands in your Discord DMs, like a
+message from a friend.
+
+1. <https://discord.com/developers/applications> → **New Application** → **Bot** → **Reset
+   Token**, and copy the token into `.env` as `DISCORD_BOT_TOKEN`.
+2. Discord Settings → **Advanced → Developer Mode**, then right-click your own name →
+   **Copy User ID** → `.env` as `DISCORD_USER_ID`.
+3. One unavoidable Discord rule: **a bot may only DM a user it shares a server with.** That
+   is the platform's rule, not this project's, and there is no way around it. The standard
+   workaround is a private server containing just you and the bot (Discord → **+** → *Create
+   My Own*, then invite the bot from the developer portal's OAuth2 URL generator with the
+   `bot` scope). You never have to open that server — the digest still arrives as a DM.
+   Also keep **Privacy Settings → Allow direct messages from server members** on.
+
+**(b) Server webhook.** Simpler, but always posts into a channel: Discord → **Server Settings
+→ Integrations → Webhooks → New Webhook → Copy URL** → `.env` as `DISCORD_WEBHOOK_URL`.
+
+Leave both unset and the run just skips the message. Test either one with
+`python3 -m carmon notify --mode dm` (or `--mode webhook`).
 
 ## 2. Try it without an API key
 
@@ -86,6 +116,16 @@ python3 -m carmon digest --days 30
 python3 -m carmon serve          # http://127.0.0.1:8787
 python3 -m carmon seed-demo --clear
 ```
+
+**Demo data cannot be mistaken for real inventory.** It is tagged `source='demo'` and:
+
+* a real `carmon run` **deletes every demo row before storing anything** — the two never mix;
+* it **expires by itself** after `demo.auto_clear_hours` (default 12); any command, including
+  the web server, clears it once stale;
+* while it exists, every surface says so out loud — a stderr warning on each CLI command, a
+  red banner on every web page, a `DEMO` badge on each listing, a `⚠️ DEMO DATA` field at the
+  top of the Discord message, a blockquote in the digest, and a `warning` field in the API and
+  MCP payloads.
 
 ---
 
@@ -98,10 +138,12 @@ python3 -m carmon run --no-discord    # skip the Discord post
 python3 -m carmon digest --days 7     # re-render from stored data, zero API calls
 python3 -m carmon enrich              # refresh NHTSA + EPA data, then rescore (no MarketCheck calls)
 python3 -m carmon reliability --make Honda --model Civic --year 2022
+python3 -m carmon quota               # calls used vs how much of the month has passed
 python3 -m carmon stats               # DB + quota stats as JSON
 python3 -m carmon config-check        # validate config.json and report drift
 python3 -m carmon score --make Nissan --model Sentra --mileage 45000 --distance 70
 python3 -m carmon sources             # cross-shopping links (see SOURCES.md)
+python3 -m carmon notify --mode dm    # send the digest as a Discord direct message
 python3 -m carmon selftest            # run the bundled test suite
 ```
 
@@ -111,23 +153,48 @@ and `search.certified_max_pages` in `config.json`.
 
 ---
 
-## 4. Schedule it daily
+## 4. Schedule it daily (Windows, macOS or Linux)
 
 ```bash
-python3 -m carmon cron --at 7:30      # prints the crontab line, and a command to install it
-crontab -e
+python3 -m carmon cron --at 7:30                      # detects your OS
+python3 -m carmon cron --at 7:30 --platform windows   # force the Windows form
 ```
 
-The printed line looks like:
+**Linux / macOS** — it prints the crontab line and a one-liner to install it:
 
 ```
 30 7 * * * cd /path/to/used-car-monitor && /usr/bin/python3 -m carmon run >> /path/to/used-car-monitor/data/cron.log 2>&1
 ```
 
-Prefer systemd? `deploy/carmon.service` and `deploy/carmon.timer` are ready to copy into
-`/etc/systemd/system/` (edit the paths, then `systemctl enable --now carmon.timer`).
+On Linux you can instead use the systemd units in `deploy/` (`carmon.service` + `carmon.timer`,
+plus `carmon-web.service` to keep the website up).
 
----
+**Windows** — it prints a Task Scheduler command to run once in an Administrator prompt:
+
+```
+schtasks /Create /SC DAILY /ST 07:30 /TN "UsedCarMonitor" /TR "cmd /c cd /d C:\path\to\used-car-monitor && \"C:\Python311\python.exe\" -m carmon run >> \"C:\path\to\used-car-monitor/data/run.log\" 2>&1"
+```
+
+plus the `/Query`, `/Run` and `/Delete` forms. In the Task Scheduler GUI, tick *"Run task as
+soon as possible after a scheduled start is missed"* so a sleeping laptop catches up.
+
+### Does this run on Windows?
+
+Yes — Windows, macOS and Linux, from the same checkout. It is pure Python 3.11 standard
+library plus `requests`: `pathlib` for every path, `sqlite3` for storage (no server to
+install), `http.server` for the website, and no shell-outs, symlinks, or POSIX-only calls
+anywhere. Concretely:
+
+* **Paths** in `config.json` are relative and resolved with `pathlib`, so `data/carmon.db`
+  works unchanged on both `C:\` and `/home`.
+* **Text** is read and written as explicit UTF-8, and the CLI reconfigures stdout/stderr to
+  UTF-8 at startup — without that, the pace gauge and status icons crash a *redirected*
+  Windows run with `UnicodeEncodeError`, which is exactly what a scheduled task does.
+* **Scheduling** is the only genuinely OS-specific part, which is why `carmon cron` emits the
+  right form per platform. The systemd units in `deploy/` are Linux-only by nature.
+
+The database file is portable: copy `data/carmon.db` between machines and the history,
+scores and NHTSA cache come with it.
 
 ## 5. Configuration (`config.json`)
 
@@ -227,6 +294,23 @@ python3 -m carmon serve --port 8787
 Pages: `/` dashboard (filters, score badges), `/listing/<vin>` (score breakdown + price
 history + cross-shop links), `/sources`, `/digest`.
 
+**What the sort dropdown does.** The default is **Score, best first** — highest score down,
+with ties broken by the lower price. The full list, each with its direction spelled out in the
+UI and in a caption above the results table:
+
+| Option | Order |
+| --- | --- |
+| Score (best first) | `score DESC`, then `price ASC` for ties |
+| Price (low → high) / (high → low) | cheapest first / dearest first |
+| Mileage (lowest first) | fewest miles first |
+| Distance (nearest first) | closest dealer first |
+| Year (newest first) | newest model year first |
+| First seen (newest first) | most recently discovered listing first |
+| Last seen (newest first) | most recently still-listed first |
+
+An unrecognised `sort=` value falls back to score, and the caption says so rather than
+pretending the bad value was applied. The same keys work on `GET /api/listings?sort=`.
+
 | Endpoint | Notes |
 | --- | --- |
 | `GET /api/health` | always public |
@@ -302,17 +386,43 @@ Listings that stop appearing in results are marked `active = 0` (likely sold) ra
 
 ---
 
-## 9. Non-goals in v1
+## 9. Quota pacing and the month-end sweep
 
-No scraping of Autotrader / CarGurus / Cars.com / CarMax — MarketCheck only. No purchase
-automation, no contacting dealers. Other sites appear as **manual deep links** only
-(see [SOURCES.md](SOURCES.md)); `carmon/scrapers/` holds the adapter interface if that
-changes later, with no adapters registered.
+500 calls a month only means something next to how much of the month has gone by, so the
+raw counter is always shown against the calendar:
 
-The stretch goal (piping the digest through a local LLM for a plain-English summary) is not
-implemented — the deterministic pipeline comes first, as the spec asks.
+```bash
+python3 -m carmon quota
+```
 
----
+```
+MarketCheck quota for 2026-08
+  ████████░░░░░░░|░░░░░░░░░░░░░░░░   (filled = used, | = today)
+  used 100 of 500 — 400 left
+  day 15 of 31 (48% of the month gone)
+  expected ~242 by now → 0.41x pace  🟢 well under pace
+  projected month total 207
+  ~26 calls/day still affordable for the rest of the month
+```
+
+100 calls on the 15th reads **0.41x — well under pace**; the same 100 calls on the 5th reads
+**1.24x — running hot**, projecting 620 against a 500 cap. The bands are: well under pace ·
+under pace · on pace · running hot · far ahead of pace.
+
+**This is a metric, not a limit.** Nothing throttles or blocks on it. The only hard stop is
+still the cap itself, enforced in the client. The same numbers appear in the digest, the
+Discord message, the dashboard's pace tile, `GET /api/quota`, and the `get_quota_pace` MCP tool.
+
+### Spending leftover calls before they expire
+
+Unused free-tier calls do not roll over — an unused balance is simply gone at midnight on the
+last day of the month. So on that day the run spends what is left rather than wasting it:
+deeper pagination first (a normal run only reads the cheapest few pages), then one targeted
+query per preferred model, which surfaces cars that price-sorted paging never reaches.
+
+Configured under `api.month_end_sweep`: `enabled`, `trigger_last_days` (default 1),
+`reserve_calls` (20, kept back for a retry), `max_extra_calls` (400) and `max_pages_per_query`.
+The digest and Discord message report what the sweep spent and what it found.
 
 ## 10. Tests
 
@@ -320,12 +430,14 @@ implemented — the deterministic pipeline comes first, as the spec asks.
 python3 -m unittest discover -s tests -t . -v    # or: python3 -m carmon selftest
 ```
 
-198 tests covering scoring (including the 39,950-vs-40,050-vs-60,000 continuity requirement),
+265 tests covering scoring (including the 39,950-vs-40,050-vs-60,000 continuity requirement),
 normalization and filtering, quota enforcement, upsert/history bookkeeping, NHTSA and EPA
 enrichment (including NHTSA's habit of answering HTTP 400 with a valid "no recalls" body),
-config single-source-of-truth guards, digest rendering, Discord payload limits and retries, the
-CLI, every HTTP endpoint, and the MCP protocol layer end-to-end. No test touches the network —
-MarketCheck, Discord, NHTSA and EPA are all injected with fakes.
+config single-source-of-truth guards, quota pacing maths, the month-end sweep, demo-data
+expiry, digest rendering, both Discord transports and their payload limits, the CLI, every HTTP
+endpoint, and the MCP protocol layer end-to-end. No test touches the network — MarketCheck,
+Discord, NHTSA and EPA are all injected with fakes, and pace assertions use fixed dates so they
+cannot rot.
 
 ## Layout
 
@@ -333,8 +445,8 @@ MarketCheck, Discord, NHTSA and EPA are all injected with fakes.
 carmon/
   cli.py          config.py       db.py           digest.py
   marketcheck.py  nhtsa.py        fueleconomy.py  notify.py
-  pipeline.py     scoring.py      sources.py      demo.py
-  webapp.py       mcp_server.py
+  pipeline.py     quota.py        scoring.py      sources.py
+  demo.py         webapp.py       mcp_server.py
   scrapers/       adapter interface for future non-MarketCheck sources (empty in v1)
 config.json  .env.example  requirements.txt  SPEC.md  SOURCES.md  deploy/  tests/
 ```

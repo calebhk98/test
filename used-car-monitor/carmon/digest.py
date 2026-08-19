@@ -7,7 +7,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from . import db
+from . import db, demo as demo_module, quota
 from .config import Config
 from .pipeline import attach_cached_enrichment
 from .sources import build_sources
@@ -115,6 +115,10 @@ def render_digest(
     lines: List[str] = []
     lines.append(f"# Used Car Daily Digest — {run_date}")
     lines.append("")
+    demo_warning = demo_module.demo_banner(conn)
+    if demo_warning:
+        lines.append(f"> ⚠️ **{demo_warning}**")
+        lines.append("")
     lines.append(
         f"_{search.get('year_min')}+ · under {_money(search.get('price_max'))} · under "
         f"{_miles(search.get('mileage_max'))} · within {search.get('radius_miles')} mi of {search.get('zip')}_"
@@ -155,10 +159,16 @@ def render_digest(
         f"- Tracking **{stats['listings_active']}** active listings "
         f"({stats['listings_total']} seen all-time)."
     )
+    metrics = quota.pace_from_db(conn, int(config.api.get("monthly_call_cap", 500)))
     lines.append(
-        f"- MarketCheck calls this month: **{stats['api_calls_this_month']} / {stats['api_monthly_cap']}** "
-        f"({stats['api_calls_remaining']} left)."
+        f"- MarketCheck quota: **{metrics['used']} / {metrics['cap']}** calls on day "
+        f"{metrics['day_of_month']} of {metrics['days_in_month']} — expected ~"
+        f"{metrics['expected_by_now']:.0f} by now, so you are at **{metrics['pace_ratio']:.2f}x pace** "
+        f"({metrics['pace_icon']} {metrics['pace_label']}). Projected month total "
+        f"{metrics['projected_month_total']:.0f}; ~{metrics['affordable_per_day']:.0f} calls/day "
+        f"still affordable."
     )
+    lines.append(f"  `{quota.bar(metrics)}`  (filled = quota used, `|` = today in the month)")
     covered = conn.execute("SELECT COUNT(*) AS n FROM model_reliability").fetchone()["n"]
     if covered:
         lines.append(
@@ -179,13 +189,24 @@ def render_digest(
                 f"- Free data lookups: NHTSA {nhtsa_summary.get('api_calls', 0)} call(s), "
                 f"EPA MPG {mpg_summary.get('api_calls', 0)} call(s) — neither counts against MarketCheck."
             )
+        for model_line in (nhtsa_summary.get("new_models") or [])[:10]:
+            lines.append(f"  - first NHTSA lookup: {model_line}")
+        sweep = run_result.get("sweep") or {}
+        if sweep.get("ran"):
+            queries = ", ".join(
+                f"{q.get('label')} ({q.get('listings', 0)})" for q in sweep.get("queries", [])[:8]
+            )
+            lines.append(
+                f"- 🧹 Month-end sweep: spent **{sweep.get('calls_used', 0)}** leftover call(s) that "
+                f"would have expired tonight — {queries}."
+            )
         for error in run_result.get("errors") or []:
             lines.append(f"- ⚠️ {error}")
     lines.append("")
 
     if digest_config.get("include_source_links", True):
         lines.append("## Cross-shop the same search")
-        lines.append("_Manual links only — v1 does not scrape these sites._")
+        lines.append("_Manual links — the monitor queries MarketCheck, NHTSA and EPA only; it does not scrape these sites._")
         for source in build_sources(search):
             lines.append(f"- [{source.name}]({source.url}) — {source.note}")
         lines.append("")

@@ -1,20 +1,32 @@
 """Deterministic demo data.
 
 Lets you browse the website, API and MCP server before a MarketCheck key exists.
-Everything it writes is tagged `source='demo'` so it is obvious in the UI and easy
-to delete (`python -m carmon seed-demo --clear`).
+Everything it writes is tagged `source='demo'`, and it is designed to be impossible to
+mistake for real inventory:
+
+* a real `carmon run` deletes every demo row before it stores anything;
+* demo data expires by itself after `demo.auto_clear_hours` (default 12) — any command,
+  including the web server, clears it once it is stale;
+* while demo rows exist, the CLI, digest, Discord message, website, API and MCP server
+  all say so out loud.
 """
 
 from __future__ import annotations
 
+import logging
 import random
 import sqlite3
-from datetime import date, timedelta
-from typing import Any, Dict, List
+from datetime import date, datetime, timedelta, timezone
+from typing import Any, Dict, List, Optional
 
 from . import db
 from .config import Config
 from .scoring import score_listing
+
+LOG = logging.getLogger("carmon.demo")
+
+DEMO_SOURCE = "demo"
+DEFAULT_AUTO_CLEAR_HOURS = 12
 
 FLEET = [
     ("Toyota", "Corolla", "LE", "Sedan"),
@@ -41,6 +53,71 @@ DEALERS = [
     ("Franklin Premier Autos", "Franklin", "TN", 72.0),
     ("Huntsville Value Motors", "Huntsville", "AL", 95.0),
 ]
+
+
+def demo_count(conn: sqlite3.Connection) -> int:
+    """How many demo listings are currently stored (0 means the DB is all real data)."""
+    try:
+        row = conn.execute("SELECT COUNT(*) AS n FROM listings WHERE source = ?", (DEMO_SOURCE,)).fetchone()
+    except sqlite3.Error:
+        return 0
+    return int(row["n"]) if row else 0
+
+
+def demo_age_hours(conn: sqlite3.Connection) -> Optional[float]:
+    """Age of the newest demo row in hours, or None when there is no demo data."""
+    row = conn.execute(
+        "SELECT MAX(updated_at) AS newest FROM listings WHERE source = ?", (DEMO_SOURCE,)
+    ).fetchone()
+    if not row or not row["newest"]:
+        return None
+    try:
+        seeded = datetime.fromisoformat(row["newest"])
+    except ValueError:
+        return None
+    if seeded.tzinfo is None:
+        seeded = seeded.replace(tzinfo=timezone.utc)
+    return (datetime.now(timezone.utc) - seeded).total_seconds() / 3600.0
+
+
+def maybe_expire(conn: sqlite3.Connection, config: Optional[Config] = None, force: bool = False) -> int:
+    """Delete demo data once it is stale (or immediately when `force` is set).
+
+    Called at the start of every CLI command, by the web server, and unconditionally
+    (force=True) by a real daily run — so demo rows cannot quietly outlive their welcome
+    and be mistaken for real listings.
+    """
+    if demo_count(conn) == 0:
+        return 0
+    if force:
+        removed = clear_demo(conn)
+        LOG.info("Cleared %s demo listing(s) before storing real data.", removed)
+        return removed
+    hours = DEFAULT_AUTO_CLEAR_HOURS
+    if config is not None:
+        hours = float(config.data.get("demo", {}).get("auto_clear_hours", DEFAULT_AUTO_CLEAR_HOURS))
+    if hours <= 0:
+        return 0
+    age = demo_age_hours(conn)
+    if age is not None and age >= hours:
+        removed = clear_demo(conn)
+        LOG.info("Demo data was %.1fh old (limit %.1fh) — cleared %s listing(s).", age, hours, removed)
+        return removed
+    return 0
+
+
+def demo_banner(conn: sqlite3.Connection) -> Optional[str]:
+    """A warning to show wherever listings are displayed, or None if the data is all real."""
+    count = demo_count(conn)
+    if not count:
+        return None
+    age = demo_age_hours(conn)
+    age_text = f", seeded {age:.1f}h ago" if age is not None else ""
+    return (
+        f"DEMO DATA: {count} of these listings are fake{age_text}. They are not real cars, "
+        "they auto-clear, and a real `carmon run` deletes them first. "
+        "Remove them now with `python3 -m carmon seed-demo --clear`."
+    )
 
 
 def clear_demo(conn: sqlite3.Connection) -> int:

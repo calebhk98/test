@@ -219,10 +219,22 @@ def enrich_models(
     """Fetch NHTSA facts for a list of {make, model, year} dicts. Never raises."""
     client = client or NHTSAClient(conn, enrichment_config)
     updated, skipped = 0, 0
+    newly_seen: List[str] = []
     for entry in model_years:
-        facts = client.facts_for(entry.get("make"), entry.get("model"), entry.get("year"), force_refresh)
+        make, model, year = entry.get("make"), entry.get("model"), entry.get("year")
+        was_cached = db.get_reliability(conn, make, model, year) is not None
+        facts = client.facts_for(make, model, year, force_refresh)
         if facts:
             updated += 1
+            if not was_cached:
+                # A model-year we had never looked up before — worth naming in the digest.
+                newly_seen.append(
+                    f"{year} {make} {model} ({facts.get('complaint_count', 0)} complaints, "
+                    f"{facts.get('recall_count', 0)} recalls)"
+                )
         else:
             skipped += 1
-    return {"models": len(model_years), "updated": updated, "skipped": skipped, "api_calls": client.calls_made}
+    return {
+        "models": len(model_years), "updated": updated, "skipped": skipped,
+        "api_calls": client.calls_made, "new_models": newly_seen,
+    }

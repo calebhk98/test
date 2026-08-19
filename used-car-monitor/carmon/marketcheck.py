@@ -158,6 +158,9 @@ class MarketCheckClient:
         makes = search.get("makes") or []
         if makes:
             params["make"] = ",".join(makes)
+        models = search.get("models") or []
+        if models:
+            params["model"] = ",".join(models)
         return params
 
     def search(self, search: Dict[str, Any], car_type: Optional[str] = None) -> Iterator[Dict[str, Any]]:

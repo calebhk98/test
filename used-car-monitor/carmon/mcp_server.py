@@ -21,11 +21,20 @@ from typing import Any, Dict, List, Optional
 
 import carmon
 from . import db as dbmod
+from . import demo as demomod
+from . import quota as quotamod
 from . import scoring as scoringmod
 from . import sources as sourcesmod
 from .config import Config, load_config
 
 PROTOCOL_VERSION = "2024-11-05"
+
+# Appended to the description of any tool whose results can include seeded demo rows.
+DEMO_WARNING_NOTE = (
+    " If any returned listing is seeded demo data (source 'demo'), the JSON payload "
+    "carries a top-level 'warning' field with details. Demo rows are fake and must "
+    "never be reported to the user as real cars for sale."
+)
 
 # --------------------------------------------------------------------------
 # JSON-RPC error codes (standard MCP / JSON-RPC 2.0 codes)
@@ -71,7 +80,7 @@ def _tool_defs() -> List[Dict[str, Any]]:
                 "complaint/recall counts (max_complaints, max_recalls — free federal data, raw "
                 "and not sales-volume adjusted; listings with no cached NHTSA data are kept, "
                 "never excluded, since unknown is not the same as bad). Returns a list of "
-                "matching listings sorted as requested."
+                "matching listings sorted as requested." + DEMO_WARNING_NOTE
             ),
             "inputSchema": {
                 "type": "object",
@@ -126,7 +135,7 @@ def _tool_defs() -> List[Dict[str, Any]]:
                 "NHTSA reliability data (consumer complaint / recall counts, free federal data — "
                 "raw and NOT sales-volume adjusted) and EPA MPG for its model year. Also returns "
                 "nhtsa_vin_url and nhtsa_model_url, direct NHTSA.gov links for a human to check "
-                "unrepaired recalls on this exact VIN."
+                "unrepaired recalls on this exact VIN." + DEMO_WARNING_NOTE
             ),
             "inputSchema": {
                 "type": "object",
@@ -151,7 +160,10 @@ def _tool_defs() -> List[Dict[str, Any]]:
         },
         {
             "name": "top_listings",
-            "description": "Return the best-scoring currently-active listings, highest score first.",
+            "description": (
+                "Return the best-scoring currently-active listings, highest score first."
+                + DEMO_WARNING_NOTE
+            ),
             "inputSchema": {
                 "type": "object",
                 "properties": {
@@ -162,7 +174,10 @@ def _tool_defs() -> List[Dict[str, Any]]:
         },
         {
             "name": "new_listings",
-            "description": "Return active listings first seen within the last N days, best score first.",
+            "description": (
+                "Return active listings first seen within the last N days, best score first."
+                + DEMO_WARNING_NOTE
+            ),
             "inputSchema": {
                 "type": "object",
                 "properties": {
@@ -174,7 +189,10 @@ def _tool_defs() -> List[Dict[str, Any]]:
         },
         {
             "name": "price_drops",
-            "description": "Return active listings whose price dropped within the last N days, biggest drop first.",
+            "description": (
+                "Return active listings whose price dropped within the last N days, biggest "
+                "drop first." + DEMO_WARNING_NOTE
+            ),
             "inputSchema": {
                 "type": "object",
                 "properties": {
@@ -188,9 +206,46 @@ def _tool_defs() -> List[Dict[str, Any]]:
             "name": "get_stats",
             "description": (
                 "Get database summary statistics (listing counts, average/min price, best "
-                "score) plus MarketCheck API quota usage for the current month."
+                "score) plus MarketCheck API quota usage for the current month. The quota "
+                "numbers come with pace context under a 'pace' key (used vs. expected_by_now, "
+                "pace_ratio, pace_label) — see 'get_quota_pace' for the full breakdown and a "
+                "text gauge. Also reports demo_listings and demo_warning: if demo_listings is "
+                "greater than 0, some stored listings are seeded demo data, not real cars, and "
+                "demo_warning explains it."
             ),
             "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
+        },
+        {
+            "name": "get_quota_pace",
+            "description": (
+                "How to judge whether MarketCheck API quota use is comfortable this month. "
+                "100 calls used by the 15th of the month is relaxed; 100 calls by the 5th is "
+                "not — this tool turns the raw monthly call counter into that comparison. "
+                "Compare 'used' against 'expected_by_now' (what a perfectly even pace would "
+                "have used by today), and read 'pace_ratio': below 1.0 means quota is being "
+                "used more slowly than the month is passing, 1.0 means exactly on pace, above "
+                "1.0 means running ahead of pace. 'pace_label' and 'pace_icon' give a "
+                "human-readable read (e.g. 'well under pace'), 'projected_month_total' "
+                "extrapolates the current rate to month-end, and 'affordable_per_day' is how "
+                "many more calls/day are still sustainable without exceeding the cap. Also "
+                "includes 'summary' (one-line text), 'bar' (a text gauge), and "
+                "'month_end_sweep' (whether today is the last-day sweep window that spends "
+                "down unused calls before they expire worthless). This is purely "
+                "informational and advisory — nothing here limits anything; the only hard "
+                "stop on API usage is the monthly cap itself, enforced elsewhere."
+            ),
+            "inputSchema": {
+                "type": "object",
+                "properties": {
+                    "width": {
+                        "type": "integer",
+                        "description": "Character width of the returned text gauge 'bar' (default 24).",
+                        "default": 24,
+                        "minimum": 4,
+                    },
+                },
+                "additionalProperties": False,
+            },
         },
         {
             "name": "get_latest_digest",
@@ -382,6 +437,9 @@ class MCPServer:
     def conn(self):
         if self._conn is None:
             self._conn = dbmod.connect(self.config.db_path)
+            # Cheap no-op when there is no demo data; keeps demo rows from quietly
+            # outliving their welcome across a long-running MCP session.
+            demomod.maybe_expire(self._conn, self.config)
         return self._conn
 
     def close(self) -> None:
@@ -545,7 +603,7 @@ class MCPServer:
                     continue
                 filtered.append(row)
             rows = filtered
-        return _text_result({"count": len(rows), "listings": rows})
+        return _text_result(self._with_demo_warning({"count": len(rows), "listings": rows}, rows))
 
     def _t_get_listing(self, args: Dict[str, Any]) -> Dict[str, Any]:
         vin = _require_str(args, "vin")
@@ -565,13 +623,13 @@ class MCPServer:
             nhtsa_vin_url = vin_recall_url(vin)
             if listing.get("make") and listing.get("model") and listing.get("year"):
                 nhtsa_model_url = recall_lookup_url(listing["make"], listing["model"], listing["year"])
-        return _text_result({
+        return _text_result(self._with_demo_warning({
             "listing": listing,
             "price_history": history,
             "cross_shop_links": cross_shop,
             "nhtsa_vin_url": nhtsa_vin_url,
             "nhtsa_model_url": nhtsa_model_url,
-        })
+        }, [listing]))
 
     def _t_get_price_history(self, args: Dict[str, Any]) -> Dict[str, Any]:
         vin = _require_str(args, "vin")
@@ -585,7 +643,7 @@ class MCPServer:
         limit = _as_int(args.get("limit", 5), "limit", default=5)
         limit = max(1, min(limit, 100))
         rows = dbmod.search_listings(self.conn, active_only=True, sort="score", limit=limit)
-        return _text_result({"count": len(rows), "listings": rows})
+        return _text_result(self._with_demo_warning({"count": len(rows), "listings": rows}, rows))
 
     def _t_new_listings(self, args: Dict[str, Any]) -> Dict[str, Any]:
         days = _as_int(args.get("days", 1), "days", default=1)
@@ -594,7 +652,7 @@ class MCPServer:
         limit = max(1, min(limit, 500))
         since = _days_ago_str(days)
         rows = dbmod.new_listings_since(self.conn, since, limit=limit)
-        return _text_result({"since": since, "count": len(rows), "listings": rows})
+        return _text_result(self._with_demo_warning({"since": since, "count": len(rows), "listings": rows}, rows))
 
     def _t_price_drops(self, args: Dict[str, Any]) -> Dict[str, Any]:
         days = _as_int(args.get("days", 1), "days", default=1)
@@ -603,11 +661,28 @@ class MCPServer:
         limit = max(1, min(limit, 500))
         since = _days_ago_str(days)
         rows = dbmod.price_drops_since(self.conn, since, limit=limit)
-        return _text_result({"since": since, "count": len(rows), "listings": rows})
+        return _text_result(self._with_demo_warning({"since": since, "count": len(rows), "listings": rows}, rows))
 
     def _t_get_stats(self, args: Dict[str, Any]) -> Dict[str, Any]:
         monthly_cap = int(self.config.api.get("monthly_call_cap", 500) or 500)
         result = dbmod.stats(self.conn, monthly_cap=monthly_cap)
+        result["pace"] = quotamod.pace(result["api_calls_this_month"], monthly_cap)
+        result["demo_listings"] = demomod.demo_count(self.conn)
+        result["demo_warning"] = demomod.demo_banner(self.conn)
+        return _text_result(result)
+
+    def _t_get_quota_pace(self, args: Dict[str, Any]) -> Dict[str, Any]:
+        width = _as_int(args.get("width", 24), "width", default=24)
+        width = max(4, width)
+        monthly_cap = int(self.config.api.get("monthly_call_cap", 500) or 500)
+        metrics = quotamod.pace_from_db(self.conn, monthly_cap)
+        sweep_config = self.config.data.get("api", {}).get("month_end_sweep", {})
+        result = dict(metrics)
+        result["summary"] = quotamod.summary_line(metrics)
+        result["bar"] = quotamod.bar(metrics, width=width)
+        result["month_end_sweep"] = quotamod.sweep_budget(
+            metrics["used"], metrics["cap"], sweep_config
+        )
         return _text_result(result)
 
     def _t_get_latest_digest(self, args: Dict[str, Any]) -> Dict[str, Any]:
@@ -729,6 +804,7 @@ class MCPServer:
         "new_listings": _t_new_listings,
         "price_drops": _t_price_drops,
         "get_stats": _t_get_stats,
+        "get_quota_pace": _t_get_quota_pace,
         "get_latest_digest": _t_get_latest_digest,
         "explain_score": _t_explain_score,
         "score_hypothetical": _t_score_hypothetical,
@@ -739,6 +815,16 @@ class MCPServer:
     }
 
     # -- helpers -----------------------------------------------------------
+    def _with_demo_warning(self, payload: Dict[str, Any], listings: List[Optional[Dict[str, Any]]]) -> Dict[str, Any]:
+        """Add a top-level 'warning' key when any of the given listings is demo data.
+
+        Does not set isError: the data is still returned, it is just flagged so an
+        assistant never presents seeded demo rows as real cars.
+        """
+        if any(listing and listing.get("source") == demomod.DEMO_SOURCE for listing in listings):
+            payload["warning"] = demomod.demo_banner(self.conn)
+        return payload
+
     def _attach_enrichment(self, listing: Dict[str, Any]) -> Dict[str, Any]:
         """Attach cached NHTSA/EPA facts to a listing dict, DB-only, never the network."""
         try:

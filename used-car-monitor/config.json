@@ -135,7 +135,14 @@
     "calls_per_second": 5,
     "stop_at_monthly_cap": true,
     "timeout_seconds": 30,
-    "max_retries": 3
+    "max_retries": 3,
+    "month_end_sweep": {
+      "enabled": true,
+      "trigger_last_days": 1,
+      "reserve_calls": 20,
+      "max_extra_calls": 400,
+      "max_pages_per_query": 10
+    }
   },
   "enrichment": {
     "nhtsa_enabled": true,
@@ -154,6 +161,9 @@
     "price_drop_limit": 15,
     "include_source_links": true
   },
+  "demo": {
+    "auto_clear_hours": 12
+  },
   "web": {
     "host": "127.0.0.1",
     "port": 8787
@@ -165,5 +175,10 @@
   "sources": {
     "note": "Deep links only \u2014 v1 does not scrape these. See SOURCES.md.",
     "enabled": true
+  },
+  "discord": {
+    "mode": "auto",
+    "username": "Used Car Monitor",
+    "include_pace": true
   }
 }

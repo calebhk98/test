@@ -28,6 +28,8 @@ from urllib.parse import parse_qs, urlsplit
 
 import carmon
 from . import db
+from . import demo
+from . import quota
 from .config import Config, get_secret, load_env
 from .nhtsa import recall_lookup_url, vin_recall_url
 from .sources import grouped_sources, sources_for_listing
@@ -130,6 +132,74 @@ def _fmt_mpg(value: Any) -> str:
         return "—"
 
 
+def _demo_tag(item: Dict[str, Any]) -> str:
+    if item.get("source") != "demo":
+        return ""
+    return ' <span class="badge demo" title="Demo data seeded for browsing -- not a real listing">DEMO</span>'
+
+
+# Order here drives both the dashboard <select> and the sort caption below it. Keys must
+# match db.SORTABLE exactly (see carmon/db.py) -- that dict is the single source of truth
+# for what sort= actually does; this just adds a human label for each key.
+_SORT_LABELS = {
+    "score": "Score (best first)",
+    "price": "Price (low → high)",
+    "price_desc": "Price (high → low)",
+    "mileage": "Mileage (lowest first)",
+    "distance": "Distance (nearest first)",
+    "year": "Year (newest first)",
+    "first_seen": "First seen (newest first)",
+    "last_seen": "Last seen (newest first)",
+}
+
+_SORT_CAPTIONS = {
+    "score": "Sorted by score, best first (ties broken by lower price)",
+    "price": "Sorted by price, low to high",
+    "price_desc": "Sorted by price, high to low",
+    "mileage": "Sorted by mileage, lowest first",
+    "distance": "Sorted by distance, nearest first",
+    "year": "Sorted by year, newest first",
+    "first_seen": "Sorted by first seen, newest first",
+    "last_seen": "Sorted by last seen, newest first",
+}
+
+
+def _sort_caption(requested: Optional[str]) -> str:
+    """Human sentence describing the active sort -- falls back to score for an
+    unrecognised sort= value and says so, rather than echoing the bad input."""
+    key = requested if requested in db.SORTABLE else "score"
+    caption = _SORT_CAPTIONS[key]
+    if requested and requested not in db.SORTABLE:
+        caption += f" (unrecognised sort '{requested}', showing the default instead)"
+    return caption
+
+
+# -- quota pace tile -------------------------------------------------------
+# Pace bands map onto the two "good" colors already used for score badges, plus a new
+# amber-for-on-pace and a distinct orange/red pair for the two overrun bands, so the tile
+# reads at a glance without introducing an unrelated palette.
+_PACE_CLASSES = {
+    "well under pace": "pace-good",
+    "under pace": "pace-good",
+    "on pace": "pace-mid",
+    "running hot": "pace-hot",
+    "far ahead of pace": "pace-bad",
+}
+
+
+def _pace_tile(metrics: Dict[str, Any]) -> str:
+    cls = _PACE_CLASSES.get(metrics.get("pace_label"), "")
+    summary = quota.summary_line(metrics)
+    expected = metrics.get("expected_by_now")
+    expected_str = f"{expected:.0f}" if isinstance(expected, (int, float)) else "-"
+    return f"""<div class="tile pace {cls}" title="{_e(summary)}">
+  <div class="label">API pace {_e(metrics.get('pace_icon'))}</div>
+  <div class="value">{_e(metrics.get('used'))}/{_e(metrics.get('cap'))}</div>
+  <div class="pace-sub">{_e(metrics.get('pace_label'))} &middot; expected ~{expected_str} by now</div>
+  <code class="pace-bar">{_e(quota.bar(metrics))}</code>
+</div>"""
+
+
 # Shown wherever NHTSA complaint counts appear prominently -- they are raw counts, not
 # adjusted for how many of a given model are on the road, so a high-volume model naturally
 # racks up more of them. The components that keep recurring are the more useful signal.
@@ -148,6 +218,7 @@ _BASE_CSS = """
   --bg: #f5f6f8; --panel: #ffffff; --text: #1a1d23; --muted: #5b6270;
   --border: #dfe3ea; --accent: #2563eb; --good: #16a34a; --good-bg: #dcfce7;
   --mid: #b45309; --mid-bg: #fef3c7; --bad: #dc2626; --bad-bg: #fee2e2;
+  --hot: #c2410c; --hot-bg: #ffedd5;
   --input-bg: #ffffff;
 }
 @media (prefers-color-scheme: dark) {
@@ -155,6 +226,7 @@ _BASE_CSS = """
     --bg: #14161a; --panel: #1d2026; --text: #e7e9ee; --muted: #9aa2b1;
     --border: #2c313b; --accent: #60a5fa; --good: #4ade80; --good-bg: #14361f;
     --mid: #fbbf24; --mid-bg: #3a2c0a; --bad: #f87171; --bad-bg: #3a1414;
+    --hot: #fb923c; --hot-bg: #431407;
     --input-bg: #12141a;
   }
 }
@@ -184,6 +256,27 @@ footer.site {
 }
 .tile .label { color: var(--muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em; }
 .tile .value { font-size: 1.6rem; font-weight: 700; margin-top: 0.2rem; }
+.tile.pace { border-width: 2px; }
+.tile.pace.pace-good { border-color: var(--good); background: var(--good-bg); }
+.tile.pace.pace-good .label, .tile.pace.pace-good .value, .tile.pace.pace-good .pace-sub { color: var(--good); }
+.tile.pace.pace-mid { border-color: var(--mid); background: var(--mid-bg); }
+.tile.pace.pace-mid .label, .tile.pace.pace-mid .value, .tile.pace.pace-mid .pace-sub { color: var(--mid); }
+.tile.pace.pace-hot { border-color: var(--hot); background: var(--hot-bg); }
+.tile.pace.pace-hot .label, .tile.pace.pace-hot .value, .tile.pace.pace-hot .pace-sub { color: var(--hot); }
+.tile.pace.pace-bad { border-color: var(--bad); background: var(--bad-bg); }
+.tile.pace.pace-bad .label, .tile.pace.pace-bad .value, .tile.pace.pace-bad .pace-sub { color: var(--bad); }
+.tile .pace-sub { font-size: 0.78rem; margin-top: 0.2rem; font-weight: 600; }
+.tile code.pace-bar {
+  display: block; margin-top: 0.4rem; font-size: 0.85rem; letter-spacing: 0.05em;
+  overflow-x: auto; white-space: pre;
+}
+.sort-caption { color: var(--muted); font-size: 0.85rem; margin: 0 0 0.5rem; }
+.demo-banner {
+  background: var(--bad-bg); color: var(--bad); border: 2px solid var(--bad);
+  border-radius: 8px; padding: 0.75rem 1.1rem; margin: 0.9rem auto 0; max-width: 1200px;
+  font-weight: 700; font-size: 0.95rem;
+}
+.badge.demo { background: var(--bad-bg); color: var(--bad); font-size: 0.7rem; padding: 0.1rem 0.4rem; }
 form.filters {
   display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: end;
   background: var(--panel); border: 1px solid var(--border); border-radius: 10px;
@@ -241,17 +334,19 @@ _NAV_LINKS = [
 ]
 
 
-def _page(title: str, body: str, last_run: Optional[str] = None) -> str:
+def _page(title: str, body: str, last_run: Optional[str] = None, demo_warning: Optional[str] = None) -> str:
     nav = "".join(f'<a href="{href}">{_e(label)}</a>' for href, label in _NAV_LINKS)
     footer_bits = "Data source: MarketCheck Inventory Search API (manual cross-shop links only, no scraping)."
     if last_run:
         footer_bits += f" Last run: {_e(last_run)}."
+    banner_html = f'<div class="demo-banner">⚠️ {_e(demo_warning)}</div>' if demo_warning else ""
     return f"""<title>{_e(title)}</title>
 <style>{_BASE_CSS}</style>
 <header class="site">
   <div class="brand">Used Car Monitor</div>
   <nav>{nav}</nav>
 </header>
+{banner_html}
 <main>
 {body}
 </main>
@@ -293,7 +388,7 @@ def _results_table(conn: Any, listings: List[Dict[str, Any]]) -> str:
         rows.append(
             "<tr>"
             f'<td><span class="badge {_score_class(item.get("score"))}">{_e(item.get("score") if item.get("score") is not None else "-")}</span></td>'
-            f"<td>{_listing_link(item)}</td>"
+            f"<td>{_listing_link(item)}{_demo_tag(item)}</td>"
             f'<td>{_fmt_money(item.get("price_current"))}</td>'
             f'<td>{_fmt_num(item.get("mileage"))}</td>'
             f'<td>{_fmt_mpg(item.get("combined_mpg"))}</td>'
@@ -354,6 +449,7 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
         conn = None
         try:
             conn = db.connect(self.config.db_path)
+            demo.maybe_expire(conn, self.config)
             handler = self._route(path, is_api)
             if handler is None:
                 if is_api:
@@ -385,6 +481,8 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
             return self._api_health
         if path == "/api/stats":
             return self._api_stats
+        if path == "/api/quota":
+            return self._api_quota
         if path == "/api/listings":
             return self._api_listings
         if path == "/api/new":
@@ -440,7 +538,7 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
     def _send_json(self, payload: Any, status: int = 200) -> None:
         body = json.dumps(payload, default=str).encode("utf-8")
         self.send_response(status)
-        self.send_header("Content-Type", "application/json")
+        self.send_header("Content-Type", "application/json; charset=utf-8")
         self._cors_headers()
         self.send_header("Content-Length", str(len(body)))
         self.end_headers()
@@ -485,11 +583,25 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
             "status": "ok",
             "version": carmon.__version__,
             "listings": db.count_listings(conn, active_only=True),
+            "demo_listings": demo.demo_count(conn),
+            "demo_warning": demo.demo_banner(conn),
         })
 
     def _api_stats(self, conn: Any, params: Dict[str, List[str]]) -> None:
         cap = int(self.config.api.get("monthly_call_cap", 500) or 500)
-        self._send_json(db.stats(conn, monthly_cap=cap))
+        data = db.stats(conn, monthly_cap=cap)
+        data["pace"] = quota.pace_from_db(conn, cap)
+        data["demo_listings"] = demo.demo_count(conn)
+        data["demo_warning"] = demo.demo_banner(conn)
+        self._send_json(data)
+
+    def _api_quota(self, conn: Any, params: Dict[str, List[str]]) -> None:
+        cap = int(self.config.api.get("monthly_call_cap", 500) or 500)
+        metrics = quota.pace_from_db(conn, cap)
+        payload = dict(metrics)
+        payload["summary"] = quota.summary_line(metrics)
+        payload["bar"] = quota.bar(metrics)
+        self._send_json(payload)
 
     def _api_listings(self, conn: Any, params: Dict[str, List[str]]) -> None:
         kwargs = self._search_kwargs(params)
@@ -670,23 +782,26 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
 
         kwargs = self._search_kwargs(params)
         sort = kwargs.get("sort") or "score"
+        resolved_sort = sort if sort in db.SORTABLE else "score"
         try:
             listings = db.search_listings(conn, limit=200, offset=0, **kwargs)
         except Exception:
             listings = []
+
+        pace_metrics = quota.pace_from_db(conn, cap)
 
         tiles = f"""
 <div class="tiles">
   <div class="tile"><div class="label">Active listings</div><div class="value">{_e(stats['listings_active'])}</div></div>
   <div class="tile"><div class="label">New today</div><div class="value">{_e(new_today)}</div></div>
   <div class="tile"><div class="label">Price drops today</div><div class="value">{_e(drops_today)}</div></div>
-  <div class="tile"><div class="label">API calls this month</div><div class="value">{_e(stats['api_calls_this_month'])} / {_e(stats['api_monthly_cap'])}</div></div>
+  {_pace_tile(pace_metrics)}
   <div class="tile"><div class="label">Best score</div><div class="value">{_e(stats['best_score'] if stats['best_score'] is not None else '-')}</div></div>
   <div class="tile"><div class="label">Model-years with NHTSA data</div><div class="value">{_e(nhtsa_model_years)}</div></div>
 </div>"""
 
         def sel(value: str) -> str:
-            return " selected" if sort == value else ""
+            return " selected" if resolved_sort == value else ""
 
         q = _e(_parse_str(params, "q") or "")
         make = _e(_parse_str(params, "make") or "")
@@ -704,21 +819,16 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
   <div class="field"><label for="min_score">Min score</label><input type="number" step="0.1" id="min_score" name="min_score" value="{min_score}"></div>
   <div class="field"><label for="sort">Sort</label>
     <select id="sort" name="sort">
-      <option value="score"{sel('score')}>Score</option>
-      <option value="price"{sel('price')}>Price (low)</option>
-      <option value="price_desc"{sel('price_desc')}>Price (high)</option>
-      <option value="mileage"{sel('mileage')}>Mileage</option>
-      <option value="distance"{sel('distance')}>Distance</option>
-      <option value="year"{sel('year')}>Year</option>
-      <option value="first_seen"{sel('first_seen')}>First seen</option>
+      {"".join(f'<option value="{key}"{sel(key)}>{_e(label)}</option>' for key, label in _SORT_LABELS.items())}
     </select>
   </div>
   <div class="field checkbox"><label class="checkbox"><input type="checkbox" name="cpo" value="1"{cpo_checked}> CPO only</label></div>
   <button type="submit">Filter</button>
 </form>"""
 
-        body = tiles + form + f'<div class="section">{_results_table(conn, listings)}</div>'
-        self._send_html(_page("Dashboard", body, self._last_run_str(conn)))
+        sort_caption = f'<p class="sort-caption">{_e(_sort_caption(sort))}</p>'
+        body = tiles + form + f'<div class="section">{sort_caption}{_results_table(conn, listings)}</div>'
+        self._send_html(_page("Dashboard", body, self._last_run_str(conn), demo_warning=demo.demo_banner(conn)))
 
     def _page_listing_detail(self, conn: Any, params: Dict[str, List[str]], vin: str) -> None:
         listing = db.get_listing(conn, vin)
@@ -813,7 +923,7 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
             if listing_url else ""
         )
 
-        badge = f'<span class="badge {_score_class(listing.get("score"))}">{_e(listing.get("score"))}</span>'
+        badge = f'<span class="badge {_score_class(listing.get("score"))}">{_e(listing.get("score"))}</span>{_demo_tag(listing)}'
 
         nhtsa_vin_url = vin_recall_url(vin)
         nhtsa_model_url = recall_lookup_url(make, model, year) if make and model and year else None
@@ -896,7 +1006,7 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
   {cross_html}
 </div>
 """
-        self._send_html(_page(title, body, self._last_run_str(conn)))
+        self._send_html(_page(title, body, self._last_run_str(conn), demo_warning=demo.demo_banner(conn)))
 
     def _page_sources(self, conn: Any, params: Dict[str, List[str]]) -> None:
         grouped = grouped_sources(self.config.search)
@@ -920,7 +1030,7 @@ sites; each link just pre-fills the same search criteria on that site's own sear
 check it by hand.</div>
 {''.join(blocks)}
 """
-        self._send_html(_page("Sources", body, self._last_run_str(conn)))
+        self._send_html(_page("Sources", body, self._last_run_str(conn), demo_warning=demo.demo_banner(conn)))
 
     def _page_digest(self, conn: Any, params: Dict[str, List[str]]) -> None:
         path, markdown = self._latest_digest()
@@ -928,7 +1038,7 @@ check it by hand.</div>
             body = '<div class="empty">No digest has been generated yet.</div>'
         else:
             body = f'<p>{_e(str(path))}</p><pre class="digest">{_e(markdown)}</pre>'
-        self._send_html(_page("Digest", body, self._last_run_str(conn)))
+        self._send_html(_page("Digest", body, self._last_run_str(conn), demo_warning=demo.demo_banner(conn)))
 
 
 # --------------------------------------------------------------------------

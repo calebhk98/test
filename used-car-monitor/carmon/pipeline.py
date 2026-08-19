@@ -8,7 +8,7 @@ from dataclasses import dataclass, field
 from datetime import date, timedelta
 from typing import Any, Dict, Iterable, List, Optional
 
-from . import db, fueleconomy, nhtsa
+from . import db, demo as demo_module, fueleconomy, nhtsa, quota
 from .config import Config, get_secret
 from .fueleconomy import combined_from_city_highway
 from .marketcheck import MarketCheckClient, MarketCheckError, QuotaExceeded
@@ -31,6 +31,7 @@ class RunResult:
     errors: List[str] = field(default_factory=list)
     filter_reasons: Dict[str, int] = field(default_factory=dict)
     enrichment: Dict[str, Any] = field(default_factory=dict)
+    sweep: Dict[str, Any] = field(default_factory=dict)
 
     def as_dict(self) -> Dict[str, Any]:
         return {
@@ -46,6 +47,7 @@ class RunResult:
             "errors": self.errors,
             "filter_reasons": self.filter_reasons,
             "enrichment": self.enrichment,
+            "sweep": self.sweep,
         }
 
 
@@ -172,6 +174,13 @@ def run_daily(
     )
     run_id = db.start_run(conn, run_date)
 
+    # A real run never coexists with demo data — clear it before storing anything, so a
+    # digest or website can never mix fake listings in with real ones.
+    if not dry_run:
+        cleared = demo_module.maybe_expire(conn, config, force=True)
+        if cleared:
+            result.errors.append(f"cleared {cleared} demo listing(s) before this run")
+
     try:
         if client is None:
             key = api_key or get_secret("MARKETCHECK_API_KEY", required=True)
@@ -181,6 +190,20 @@ def run_daily(
         LOG.info("MarketCheck quota: %s of %s calls left this month", remaining, client.monthly_cap)
 
         raw_listings: List[Dict[str, Any]] = list(client.search(search))
+
+        # Leftover free-tier calls expire at month end — spend them instead of wasting them.
+        try:
+            sweep_report = run_month_end_sweep(config, conn, client, run_date)
+            if sweep_report.get("ran"):
+                raw_listings.extend(sweep_report.pop("listings", []))
+                result.sweep = sweep_report
+            else:
+                sweep_report.pop("listings", None)
+                result.sweep = sweep_report
+        except Exception as exc:  # a sweep failure must never sink the normal run
+            LOG.warning("Month-end sweep skipped: %s", exc)
+            result.sweep = {"ran": False, "reason": f"sweep failed: {exc}"}
+
         if search.get("include_certified_search", True):
             certified_search = dict(search)
             certified_search["max_pages"] = int(search.get("certified_max_pages", 2) or 2)
@@ -345,3 +368,82 @@ def enrich_listings(
     for listing in listings:
         attach_cached_enrichment(conn, listing)
     return summary
+
+
+# --- month-end sweep ----------------------------------------------------
+def sweep_queries(config: Config, pages: int) -> List[Dict[str, Any]]:
+    """Extra searches worth running when leftover quota would otherwise expire.
+
+    Deep pagination first (the daily run only reads the cheapest few pages), then one
+    targeted query per preferred model, which surfaces cars that price-sorted paging
+    never reaches. Each query is a full search config the normal client can execute.
+    """
+    search = config.search
+    queries: List[Dict[str, Any]] = [
+        {"label": "deep pagination", "search": dict(search, max_pages=pages)},
+    ]
+    for entry in config.scoring.get("preferred", []) or []:
+        make, model = entry.get("make"), entry.get("model")
+        if not make:
+            continue
+        targeted = dict(search, max_pages=2)
+        targeted["makes"] = [make]
+        if model:
+            targeted["models"] = [model]
+        queries.append({"label": f"{make} {model}".strip(), "search": targeted})
+    return queries
+
+
+def run_month_end_sweep(
+    config: Config,
+    conn: sqlite3.Connection,
+    client: MarketCheckClient,
+    run_date: Optional[str] = None,
+    today: Optional[date] = None,
+) -> Dict[str, Any]:
+    """Spend leftover free-tier calls on the last day of the month, before they expire.
+
+    Free-tier calls do not roll over, so an unused balance at midnight on the last day is
+    simply thrown away. This widens the search with whatever is left, keeping a reserve,
+    and returns the raw listings it found plus a report of what it did.
+    """
+    sweep_config = config.api.get("month_end_sweep", {}) or {}
+    if today is None and run_date:
+        # `--date 2026-08-31` should sweep as if it were the 31st, not today.
+        try:
+            today = date.fromisoformat(run_date)
+        except ValueError:
+            today = None
+    used = db.calls_this_month(conn)
+    plan = quota.sweep_budget(used, int(config.api.get("monthly_call_cap", 500)), sweep_config, today)
+    report: Dict[str, Any] = {
+        "ran": False, "reason": plan["reason"], "budget": plan["budget"],
+        "calls_used": 0, "queries": [], "listings": [],
+    }
+    if not plan["should_sweep"]:
+        return report
+
+    budget = plan["budget"]
+    start_calls = client.calls_made
+    pages = int(sweep_config.get("max_pages_per_query", 10))
+    LOG.info("Month-end sweep: %s", plan["reason"])
+
+    for query in sweep_queries(config, pages):
+        spent = client.calls_made - start_calls
+        if spent >= budget:
+            break
+        remaining_budget = budget - spent
+        search = dict(query["search"])
+        # Never let one query overrun the sweep budget.
+        search["max_pages"] = max(1, min(int(search.get("max_pages", 1)), remaining_budget))
+        try:
+            found = list(client.search(search))
+        except (MarketCheckError, QuotaExceeded) as exc:
+            report["queries"].append({"label": query["label"], "error": str(exc)})
+            break
+        report["queries"].append({"label": query["label"], "listings": len(found)})
+        report["listings"].extend(found)
+
+    report["ran"] = True
+    report["calls_used"] = client.calls_made - start_calls
+    return report

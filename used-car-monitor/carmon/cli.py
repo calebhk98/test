@@ -5,16 +5,35 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import os
 import sys
 from datetime import date
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from . import __version__, db, demo as demo_module, digest as digest_module, fueleconomy, nhtsa, notify
+from . import (__version__, db, demo as demo_module, digest as digest_module, fueleconomy,
+               nhtsa, notify, quota)
 from .config import Config, ConfigError, PROJECT_ROOT, load_config, get_secret, validate_config
 from .pipeline import rescore_all, run_daily
 from .scoring import score_listing
 from .sources import build_sources, grouped_sources
+
+
+def _force_utf8_output() -> None:
+    """Make stdout/stderr UTF-8 safe on every platform.
+
+    The digest, the pace gauge and the status icons use non-ASCII characters. On Windows
+    the console handles them, but a *redirected* stream (which is exactly what the
+    scheduled-task command does: `>> data\\run.log`) falls back to the ANSI code page and
+    raises UnicodeEncodeError. Reconfiguring here keeps scheduled runs from dying on an
+    emoji. `errors="replace"` means a genuinely undisplayable character degrades to "?"
+    rather than taking the run down.
+    """
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding="utf-8", errors="replace")
+        except (AttributeError, ValueError, OSError):
+            pass  # already-wrapped or non-reconfigurable stream (e.g. a StringIO in tests)
 
 
 def _setup_logging(verbose: bool) -> None:
@@ -23,6 +42,18 @@ def _setup_logging(verbose: bool) -> None:
         format="%(asctime)s %(levelname)-7s %(name)s: %(message)s",
         datefmt="%H:%M:%S",
     )
+
+
+def _open_db(config: Config):
+    """Open the database and expire stale demo data before anything reads it."""
+    conn = db.init_db(config.db_path)
+    removed = demo_module.maybe_expire(conn, config)
+    if removed:
+        print(f"Cleared {removed} stale demo listing(s) automatically.", file=sys.stderr)
+    banner = demo_module.demo_banner(conn)
+    if banner:
+        print(f"⚠️  {banner}", file=sys.stderr)
+    return conn
 
 
 def _config(args: argparse.Namespace) -> Config:
@@ -37,7 +68,7 @@ def cmd_run(args: argparse.Namespace) -> int:
     config = _config(args)
     for warning in validate_config(config):
         print(f"config warning: {warning}", file=sys.stderr)
-    conn = db.init_db(config.db_path)
+    conn = _open_db(config)
     run_date = args.date or date.today().isoformat()
     print(f"Running daily job for {run_date} (db: {config.db_path})")
 
@@ -58,27 +89,35 @@ def cmd_run(args: argparse.Namespace) -> int:
     conn.commit()
 
     if not args.no_discord:
-        webhook = get_secret("DISCORD_WEBHOOK_URL")
-        if webhook:
+        configured = get_secret("DISCORD_WEBHOOK_URL") or (
+            get_secret("DISCORD_BOT_TOKEN") and get_secret("DISCORD_USER_ID")
+        )
+        if configured:
             try:
-                notify.send_digest(
-                    config, conn, webhook_url=webhook, run_date=run_date,
-                    run_result=summary, web_url=args.web_url,
+                transport = notify.send_digest(
+                    config, conn, run_date=run_date, run_result=summary,
+                    web_url=args.web_url, mode=args.discord_mode,
                 )
-                print("Digest posted to Discord.")
+                print(
+                    "Digest sent as a Discord direct message."
+                    if transport == "dm" else "Digest posted to the Discord webhook channel."
+                )
             except notify.DiscordError as exc:
                 print(f"Discord delivery failed: {exc}", file=sys.stderr)
                 conn.close()
                 return 1
         else:
-            print("DISCORD_WEBHOOK_URL not set — skipping Discord delivery.")
+            print(
+                "No Discord delivery configured — set DISCORD_BOT_TOKEN + DISCORD_USER_ID (DM) "
+                "or DISCORD_WEBHOOK_URL (channel) in .env."
+            )
     conn.close()
     return 1 if result.errors else 0
 
 
 def cmd_digest(args: argparse.Namespace) -> int:
     config = _config(args)
-    conn = db.init_db(config.db_path)
+    conn = _open_db(config)
     markdown = digest_module.render_digest(config, conn, run_date=args.date, days=args.days)
     if args.save:
         path = digest_module.save_digest(config, markdown, run_date=args.date)
@@ -90,22 +129,55 @@ def cmd_digest(args: argparse.Namespace) -> int:
 
 def cmd_notify(args: argparse.Namespace) -> int:
     config = _config(args)
-    conn = db.init_db(config.db_path)
-    webhook = args.webhook or get_secret("DISCORD_WEBHOOK_URL", required=True)
+    conn = _open_db(config)
     try:
-        notify.send_digest(config, conn, webhook_url=webhook, run_date=args.date, web_url=args.web_url)
+        transport = notify.send_digest(
+            config, conn, webhook_url=args.webhook, run_date=args.date,
+            web_url=args.web_url, mode=args.discord_mode,
+        )
     except notify.DiscordError as exc:
         print(f"Discord delivery failed: {exc}", file=sys.stderr)
         conn.close()
         return 1
-    print("Digest posted to Discord.")
+    print(
+        "Digest sent as a Discord direct message."
+        if transport == "dm" else "Digest posted to the Discord webhook channel."
+    )
+    conn.close()
+    return 0
+
+
+def cmd_quota(args: argparse.Namespace) -> int:
+    """Show MarketCheck usage against how much of the month has actually gone by."""
+    config = _config(args)
+    conn = _open_db(config)
+    cap = int(config.api.get("monthly_call_cap", 500))
+    metrics = quota.pace_from_db(conn, cap)
+    sweep = quota.sweep_budget(metrics["used"], cap, config.api.get("month_end_sweep", {}))
+    if args.json:
+        print(json.dumps({**metrics, "summary": quota.summary_line(metrics),
+                          "bar": quota.bar(metrics), "month_end_sweep": sweep}, indent=2))
+        conn.close()
+        return 0
+
+    print(f"MarketCheck quota for {metrics['month']}")
+    print(f"  {quota.bar(metrics, 32)}   (filled = used, | = today)")
+    print(f"  used {metrics['used']} of {metrics['cap']} — {metrics['remaining']} left")
+    print(f"  day {metrics['day_of_month']} of {metrics['days_in_month']} "
+          f"({metrics['elapsed_fraction'] * 100:.0f}% of the month gone)")
+    print(f"  expected ~{metrics['expected_by_now']:.0f} by now → "
+          f"{metrics['pace_ratio']:.2f}x pace  {metrics['pace_icon']} {metrics['pace_label']}")
+    print(f"  projected month total {metrics['projected_month_total']:.0f}"
+          + (f" (overshoot {metrics['projected_overshoot']:.0f})" if metrics["projected_overshoot"] else ""))
+    print(f"  ~{metrics['affordable_per_day']:.0f} calls/day still affordable for the rest of the month")
+    print(f"  month-end sweep: {sweep['reason']}")
     conn.close()
     return 0
 
 
 def cmd_serve(args: argparse.Namespace) -> int:
     config = _config(args)
-    db.init_db(config.db_path).close()
+    _open_db(config).close()
     from .webapp import serve  # imported lazily so the CLI works without the web module
     serve(config, host=args.host, port=args.port)
     return 0
@@ -113,7 +185,7 @@ def cmd_serve(args: argparse.Namespace) -> int:
 
 def cmd_mcp(args: argparse.Namespace) -> int:
     config = _config(args)
-    db.init_db(config.db_path).close()
+    _open_db(config).close()
     from .mcp_server import main as mcp_main
     argv: List[str] = ["--config", str(config.path or "config.json"), "--db", str(config.db_path)]
     return int(mcp_main(argv) or 0)
@@ -121,7 +193,7 @@ def cmd_mcp(args: argparse.Namespace) -> int:
 
 def cmd_seed_demo(args: argparse.Namespace) -> int:
     config = _config(args)
-    conn = db.init_db(config.db_path)
+    conn = _open_db(config)
     if args.clear:
         removed = demo_module.clear_demo(conn)
         print(f"Removed {removed} demo listings.")
@@ -137,7 +209,7 @@ def cmd_seed_demo(args: argparse.Namespace) -> int:
 def cmd_enrich(args: argparse.Namespace) -> int:
     """Refresh the free NHTSA and EPA data for every model-year in the database."""
     config = _config(args)
-    conn = db.init_db(config.db_path)
+    conn = _open_db(config)
     enrichment_config = config.data.get("enrichment", {})
     model_years = db.distinct_model_years(conn, active_only=not args.all)
     if args.limit:
@@ -164,7 +236,7 @@ def cmd_enrich(args: argparse.Namespace) -> int:
 def cmd_reliability(args: argparse.Namespace) -> int:
     """Show what NHTSA knows about one model-year."""
     config = _config(args)
-    conn = db.init_db(config.db_path)
+    conn = _open_db(config)
     facts = db.get_reliability(conn, args.make, args.model, args.year)
     if facts is None and not args.no_fetch:
         client = nhtsa.NHTSAClient(conn, config.data.get("enrichment", {}))
@@ -225,7 +297,7 @@ def cmd_rescore(args: argparse.Namespace) -> int:
 
 def cmd_stats(args: argparse.Namespace) -> int:
     config = _config(args)
-    conn = db.init_db(config.db_path)
+    conn = _open_db(config)
     print(json.dumps(db.stats(conn, int(config.api.get("monthly_call_cap", 500))), indent=2, default=str))
     conn.close()
     return 0
@@ -258,14 +330,34 @@ def cmd_score(args: argparse.Namespace) -> int:
 
 
 def cmd_cron(args: argparse.Namespace) -> int:
+    """Print the daily-schedule command for this machine (cron, launchd or Task Scheduler)."""
     python = sys.executable
     root = PROJECT_ROOT
     hour, minute = args.at.split(":") if ":" in args.at else (args.at, "0")
-    line = f"{int(minute)} {int(hour)} * * * cd {root} && {python} -m carmon run >> {root}/data/cron.log 2>&1"
+    hour, minute = int(hour), int(minute)
+    target = (args.platform or ("windows" if os.name == "nt" else "unix")).lower()
+
+    if target == "windows":
+        print("# Windows Task Scheduler — run this once in an Administrator PowerShell/cmd:")
+        print(
+            f'schtasks /Create /SC DAILY /ST {hour:02d}:{minute:02d} /TN "UsedCarMonitor" '
+            f'/TR "cmd /c cd /d {root} && \"{python}\" -m carmon run >> \"{root}/data/run.log\" 2>&1"'
+        )
+        print("\n# Check it, run it now, or remove it:")
+        print('schtasks /Query /TN "UsedCarMonitor"')
+        print('schtasks /Run /TN "UsedCarMonitor"')
+        print('schtasks /Delete /TN "UsedCarMonitor" /F')
+        print("\n# Task Scheduler skips runs while the machine is asleep; tick")
+        print("# \"Run task as soon as possible after a scheduled start is missed\" in the GUI to catch up.")
+        return 0
+
+    line = f"{minute} {hour} * * * cd {root} && {python} -m carmon run >> {root}/data/cron.log 2>&1"
     print("# Add this to your crontab (`crontab -e`):")
     print(line)
     print("\n# Or install it now with:")
     print(f'(crontab -l 2>/dev/null; echo "{line}") | crontab -')
+    print("\n# macOS: cron works, but launchd is more idiomatic — or use the systemd units in deploy/ on Linux.")
+    print("# For the Windows form of this command: python3 -m carmon cron --platform windows")
     return 0
 
 
@@ -295,6 +387,8 @@ def build_parser() -> argparse.ArgumentParser:
     run.add_argument("--date", help="run date (YYYY-MM-DD), defaults to today")
     run.add_argument("--days", type=int, default=1, help="digest lookback window in days")
     run.add_argument("--web-url", help="link to your website, included in the Discord message")
+    run.add_argument("--discord-mode", dest="discord_mode", choices=("auto", "dm", "webhook"),
+                     help="how to deliver: dm, webhook, or auto (default, from config.json)")
     run.set_defaults(func=cmd_run)
 
     digest = sub.add_parser("digest", help="render the digest from stored data (no API calls)")
@@ -307,7 +401,14 @@ def build_parser() -> argparse.ArgumentParser:
     notify_cmd.add_argument("--webhook", help="webhook URL (defaults to DISCORD_WEBHOOK_URL)")
     notify_cmd.add_argument("--date", help="digest date (YYYY-MM-DD)")
     notify_cmd.add_argument("--web-url", help="link to your website, included in the message")
+    notify_cmd.add_argument("--mode", dest="discord_mode", choices=("auto", "dm", "webhook"),
+                            help="dm = direct message (needs DISCORD_BOT_TOKEN + DISCORD_USER_ID); "
+                                 "webhook = server channel; auto = DM if configured, else webhook")
     notify_cmd.set_defaults(func=cmd_notify)
+
+    quota_cmd = sub.add_parser("quota", help="MarketCheck usage vs how much of the month has passed")
+    quota_cmd.add_argument("--json", action="store_true")
+    quota_cmd.set_defaults(func=cmd_quota)
 
     serve = sub.add_parser("serve", help="run the website + JSON API")
     serve.add_argument("--host", help="bind host (default from config.web)")
@@ -363,8 +464,10 @@ def build_parser() -> argparse.ArgumentParser:
     score.add_argument("--json", action="store_true")
     score.set_defaults(func=cmd_score)
 
-    cron = sub.add_parser("cron", help="print a crontab line for the daily run")
+    cron = sub.add_parser("cron", help="print the daily schedule command for this OS")
     cron.add_argument("--at", default="7:30", help="local time HH:MM (default 7:30)")
+    cron.add_argument("--platform", choices=("unix", "windows"),
+                      help="force the output style (default: detected from this machine)")
     cron.set_defaults(func=cmd_cron)
 
     selftest = sub.add_parser("selftest", help="run the bundled test suite")
@@ -374,6 +477,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main(argv: Optional[List[str]] = None) -> int:
+    _force_utf8_output()
     parser = build_parser()
     args = parser.parse_args(argv)
     _setup_logging(args.verbose)

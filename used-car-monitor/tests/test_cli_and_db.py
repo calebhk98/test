@@ -163,10 +163,32 @@ class CliTests(unittest.TestCase):
         self.assertIn("manufacturer_cpo", json.loads(out))
 
     def test_cron_command_prints_a_usable_line(self):
-        code, out = self._run("cron", "--at", "7:30")
+        code, out = self._run("cron", "--at", "7:30", "--platform", "unix")
         self.assertEqual(code, 0)
         self.assertIn("30 7 * * *", out)
         self.assertIn("-m carmon run", out)
+
+    def test_cron_command_can_emit_windows_task_scheduler(self):
+        code, out = self._run("cron", "--at", "7:30", "--platform", "windows")
+        self.assertEqual(code, 0)
+        self.assertIn("schtasks /Create", out)
+        self.assertIn("/ST 07:30", out)
+        self.assertIn("-m carmon run", out)
+        self.assertNotIn("* * *", out, "no cron syntax should leak into the Windows output")
+
+    def test_quota_command_reports_pace(self):
+        self._run("seed-demo", "--count", "2")
+        code, out = self._run("quota")
+        self.assertEqual(code, 0)
+        self.assertIn("expected ~", out)
+        self.assertIn("pace", out)
+        self.assertIn("month-end sweep", out)
+
+    def test_quota_command_json(self):
+        code, out = self._run("quota", "--json")
+        payload = json.loads(out)
+        for key in ("used", "cap", "pace_ratio", "pace_label", "summary", "bar", "month_end_sweep"):
+            self.assertIn(key, payload)
 
     def test_bad_config_path_is_reported(self):
         code = main(["--config", str(self.tmp / "nope.json"), "stats"])

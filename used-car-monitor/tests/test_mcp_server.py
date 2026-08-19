@@ -7,11 +7,14 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from datetime import date
 from pathlib import Path
 from unittest.mock import patch
 
 from carmon import db
+from carmon import demo as demomod
 from carmon import nhtsa as nhtsamod
+from carmon import quota as quotamod
 from carmon.config import Config, load_config
 from carmon.mcp_server import MCPServer
 
@@ -223,18 +226,18 @@ class TestInitializeAndProtocol(MCPServerTestCase):
 
 
 class TestToolsList(MCPServerTestCase):
-    def test_tools_list_has_all_fourteen_with_schemas(self):
+    def test_tools_list_has_all_fifteen_with_schemas(self):
         resp = self.call("tools/list", {})
         tools = resp["result"]["tools"]
         names = {t["name"] for t in tools}
         expected = {
             "search_listings", "get_listing", "get_price_history", "top_listings",
-            "new_listings", "price_drops", "get_stats", "get_latest_digest",
-            "explain_score", "score_hypothetical", "list_sources",
+            "new_listings", "price_drops", "get_stats", "get_quota_pace",
+            "get_latest_digest", "explain_score", "score_hypothetical", "list_sources",
             "get_reliability", "refresh_reliability", "list_reliability",
         }
         self.assertEqual(names, expected)
-        self.assertEqual(len(tools), 14)
+        self.assertEqual(len(tools), 15)
         for tool in tools:
             self.assertIn("inputSchema", tool, msg=tool["name"])
             self.assertEqual(tool["inputSchema"].get("type"), "object")
@@ -311,6 +314,27 @@ class TestToolsCall(MCPServerTestCase):
         self.assertNotIn("VIN0002", vins)  # 4 recalls
         self.assertIn("VIN0003", vins)  # unknown, kept
 
+    def test_search_listings_no_demo_data_has_no_warning_key(self):
+        resp = self.call_tool("search_listings", {})
+        payload = self._tool_json(resp)
+        self.assertNotIn("warning", payload)
+
+    def test_search_listings_flags_demo_data_with_warning(self):
+        conn = db.connect(self.db_path)
+        db.upsert_listing(
+            conn,
+            make_listing(vin="DEMOVIN0000000002", source="demo", make="Mazda", model="Mazda3"),
+            seen_date="2026-08-17",
+        )
+        conn.close()
+        resp = self.call_tool("search_listings", {"make": "Mazda"})
+        result = resp["result"]
+        self.assertFalse(result.get("isError"))
+        payload = self._tool_json(resp)
+        self.assertIn("warning", payload)
+        self.assertIsInstance(payload["warning"], str)
+        self.assertIn("DEMO", payload["warning"])
+
     def test_get_listing_found(self):
         resp = self.call_tool("get_listing", {"vin": "VIN0001"})
         payload = self._tool_json(resp)
@@ -341,6 +365,27 @@ class TestToolsCall(MCPServerTestCase):
         resp = self.call_tool("get_listing", {})
         result = resp["result"]
         self.assertTrue(result["isError"])
+
+    def test_get_listing_no_demo_data_has_no_warning_key(self):
+        resp = self.call_tool("get_listing", {"vin": "VIN0001"})
+        payload = self._tool_json(resp)
+        self.assertNotIn("warning", payload)
+
+    def test_get_listing_flags_demo_data_with_warning(self):
+        conn = db.connect(self.db_path)
+        db.upsert_listing(
+            conn,
+            make_listing(vin="DEMOVIN0000000003", source="demo", make="Kia", model="Seltos"),
+            seen_date="2026-08-17",
+        )
+        conn.close()
+        resp = self.call_tool("get_listing", {"vin": "DEMOVIN0000000003"})
+        result = resp["result"]
+        self.assertFalse(result.get("isError"))
+        payload = self._tool_json(resp)
+        self.assertIn("warning", payload)
+        self.assertIsInstance(payload["warning"], str)
+        self.assertIn("DEMO", payload["warning"])
 
     def test_get_price_history(self):
         resp = self.call_tool("get_price_history", {"vin": "VIN0001"})
@@ -375,6 +420,62 @@ class TestToolsCall(MCPServerTestCase):
         self.assertIn("listings_total", payload)
         self.assertIn("api_monthly_cap", payload)
         self.assertEqual(payload["api_monthly_cap"], self.config.api.get("monthly_call_cap"))
+        # Pace context is embedded alongside the existing stats keys, not in place of them.
+        self.assertIn("pace", payload)
+        self.assertEqual(payload["pace"]["used"], payload["api_calls_this_month"])
+        self.assertEqual(payload["pace"]["cap"], payload["api_monthly_cap"])
+        self.assertIn("pace_ratio", payload["pace"])
+        self.assertIn("pace_label", payload["pace"])
+        # No demo data was seeded in setUp for this test class.
+        self.assertEqual(payload["demo_listings"], 0)
+        self.assertIsNone(payload["demo_warning"])
+
+    def test_get_stats_reports_demo_listings(self):
+        conn = db.connect(self.db_path)
+        db.upsert_listing(
+            conn,
+            make_listing(vin="DEMOVIN0000000001", source="demo", make="Toyota", model="Corolla"),
+            seen_date="2026-08-17",
+        )
+        conn.close()
+        resp = self.call_tool("get_stats", {})
+        payload = self._tool_json(resp)
+        self.assertEqual(payload["demo_listings"], 1)
+        self.assertIsNotNone(payload["demo_warning"])
+        self.assertIn("DEMO", payload["demo_warning"])
+
+    def test_get_quota_pace(self):
+        cap = int(self.config.api.get("monthly_call_cap", 500))
+        conn = db.connect(self.db_path)
+        for _ in range(7):
+            db.record_api_call(conn, "search", 200, "test call")
+        used = db.calls_this_month(conn)
+        conn.close()
+
+        today = date.today()
+        expected = quotamod.pace(used, cap, today)
+
+        resp = self.call_tool("get_quota_pace", {})
+        payload = self._tool_json(resp)
+
+        self.assertEqual(payload["used"], expected["used"])
+        self.assertEqual(payload["cap"], expected["cap"])
+        self.assertEqual(payload["pace_ratio"], expected["pace_ratio"])
+        self.assertEqual(payload["pace_label"], expected["pace_label"])
+        self.assertEqual(payload["expected_by_now"], expected["expected_by_now"])
+        self.assertIn("summary", payload)
+        self.assertIn("bar", payload)
+        self.assertIn(str(payload["used"]), payload["summary"])
+        self.assertIn("month_end_sweep", payload)
+        self.assertIn("should_sweep", payload["month_end_sweep"])
+        self.assertIn("budget", payload["month_end_sweep"])
+        self.assertIn("reserve", payload["month_end_sweep"])
+        self.assertIn("reason", payload["month_end_sweep"])
+
+    def test_get_quota_pace_width(self):
+        resp = self.call_tool("get_quota_pace", {"width": 10})
+        payload = self._tool_json(resp)
+        self.assertEqual(len(payload["bar"]), 10)
 
     def test_get_latest_digest_no_digest_message(self):
         resp = self.call_tool("get_latest_digest", {})
@@ -586,7 +687,7 @@ class TestEndToEndSubprocess(unittest.TestCase):
 
             self.assertEqual(resp2["id"], 2)
             tool_names = {t["name"] for t in resp2["result"]["tools"]}
-            self.assertEqual(len(tool_names), 14)
+            self.assertEqual(len(tool_names), 15)
 
 
 if __name__ == "__main__":
