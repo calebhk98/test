@@ -1,0 +1,210 @@
+{
+  "search": {
+    "zip": "38464",
+    "radius_miles": 100,
+    "year_min": 2021,
+    "mileage_max": 60000,
+    "price_max": 20000,
+    "price_min": 1000,
+    "car_type": "used",
+    "include_certified_search": true,
+    "body_types": [
+      "Sedan",
+      "Hatchback",
+      "SUV",
+      "Wagon",
+      "Coupe"
+    ],
+    "exclude_body_types": [
+      "Pickup",
+      "Truck",
+      "Van",
+      "Minivan",
+      "Cargo Van",
+      "Chassis",
+      "Convertible"
+    ],
+    "exclude_models": [
+      "Tahoe",
+      "Suburban",
+      "Expedition",
+      "Sequoia",
+      "Armada",
+      "Yukon",
+      "Yukon XL",
+      "Traverse",
+      "Pilot",
+      "Highlander",
+      "Telluride",
+      "Palisade",
+      "Durango",
+      "Grand Wagoneer",
+      "Wagoneer",
+      "Land Cruiser",
+      "4Runner",
+      "Sienna",
+      "Odyssey",
+      "Carnival"
+    ],
+    "include_electric_hybrid": false,
+    "excluded_fuel_types": [
+      "Electric",
+      "Hybrid",
+      "Plug-In Hybrid",
+      "PHEV",
+      "Hydrogen",
+      "Compressed Natural Gas"
+    ],
+    "rows_per_page": 50,
+    "max_pages": 5,
+    "certified_max_pages": 2
+  },
+  "scoring": {
+    "mode": "smooth",
+    "preferred": [
+      {
+        "make": "Toyota",
+        "model": "Corolla"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic"
+      },
+      {
+        "make": "Hyundai",
+        "model": "Elantra"
+      },
+      {
+        "make": "Mazda",
+        "model": "Mazda3"
+      },
+      {
+        "make": "Kia",
+        "model": "Forte"
+      }
+    ],
+    "caution": [
+      {
+        "make": "Nissan",
+        "model": "Versa",
+        "reason": "CVT reliability history"
+      },
+      {
+        "make": "Nissan",
+        "model": "Sentra",
+        "reason": "CVT reliability history"
+      },
+      {
+        "make": "Nissan",
+        "model": "Altima",
+        "reason": "CVT reliability history"
+      }
+    ],
+    "weights": {
+      "preferred_bonus": 2.0,
+      "caution_penalty": -2.0,
+      "cpo_bonus": 2.0,
+      "price_drop_bonus_max": 1.5,
+      "price_drop_full_bonus_pct": 3.0,
+      "distance_free_miles": 50,
+      "distance_penalty_per_miles": 25,
+      "distance_penalty_floor": -3.0,
+      "mileage_zero_penalty_at": 20000,
+      "mileage_full_penalty_at": "auto",
+      "mileage_full_penalty": -2.0,
+      "price_bonus_max": 1.5,
+      "price_full_bonus_at": 12000,
+      "price_no_bonus_at": "auto",
+      "year_bonus_max": 1.0,
+      "year_no_bonus_at": "auto",
+      "year_full_bonus_at": 2025,
+      "mpg_bonus_max": 1.0,
+      "mpg_no_bonus_at": 28,
+      "mpg_full_bonus_at": 40,
+      "mpg_min_factor": -0.5,
+      "complaints_penalty_max": -1.5,
+      "complaints_no_penalty_at": 100,
+      "complaints_full_penalty_at": 600,
+      "recall_penalty_each": -0.15,
+      "recall_penalty_floor": -0.75,
+      "market_bonus_max": 1.5,
+      "market_full_bonus_pct": 12,
+      "market_min_sample": 6
+    }
+  },
+  "market": {
+    "recency_half_life_days": 45,
+    "trend_months": 6,
+    "min_sample_for_grade": 6
+  },
+  "api": {
+    "base_url": "https://api.marketcheck.com/v2/search/car/active",
+    "monthly_call_cap": 500,
+    "calls_per_second": 5,
+    "stop_at_monthly_cap": true,
+    "timeout_seconds": 30,
+    "max_retries": 3,
+    "month_end_sweep": {
+      "enabled": true,
+      "trigger_last_days": 1,
+      "reserve_calls": 20,
+      "max_extra_calls": 400,
+      "max_pages_per_query": 10
+    }
+  },
+  "enrichment": {
+    "nhtsa_enabled": true,
+    "epa_mpg_enabled": true,
+    "cache_days": 30,
+    "mpg_cache_days": 180,
+    "timeout_seconds": 20,
+    "max_retries": 2,
+    "min_seconds_between_calls": 0.25,
+    "max_recalls_stored": 10,
+    "max_models_per_run": 40
+  },
+  "scrapers": {
+    "enabled": false,
+    "max_listings_per_day": 100,
+    "max_requests_per_day": 20,
+    "max_pages_per_run": 2,
+    "min_seconds_between_requests": 5,
+    "timeout_seconds": 25,
+    "user_agent": "",
+    "sources": {
+      "repairpal": false,
+      "autotrader": false,
+      "cars_com": false,
+      "cargurus": false,
+      "carmax": false,
+      "carvana": false,
+      "truecar": false
+    }
+  },
+  "digest": {
+    "top_n": 5,
+    "new_listing_limit": 15,
+    "price_drop_limit": 15,
+    "include_source_links": true
+  },
+  "demo": {
+    "auto_clear_hours": 12
+  },
+  "web": {
+    "host": "127.0.0.1",
+    "port": 8787
+  },
+  "paths": {
+    "db": "data/carmon.db",
+    "digest_dir": "data/digests"
+  },
+  "sources": {
+    "note": "Deep links only \u2014 v1 does not scrape these. See SOURCES.md.",
+    "enabled": true
+  },
+  "discord": {
+    "mode": "auto",
+    "username": "Used Car Monitor",
+    "include_pace": true
+  }
+}

@@ -1,0 +1,13 @@
+# Copy to /etc/systemd/system/carmon.service and edit the paths + User.
+[Unit]
+Description=Used Car Daily Monitor — daily MarketCheck run
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=CHANGE_ME
+WorkingDirectory=/absolute/path/to/used-car-monitor
+ExecStart=/usr/bin/python3 -m carmon run
+StandardOutput=append:/absolute/path/to/used-car-monitor/data/run.log
+StandardError=append:/absolute/path/to/used-car-monitor/data/run.log

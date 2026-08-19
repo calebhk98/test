@@ -1,0 +1,301 @@
+"""Daily digest rendering: new listings, price drops, top scores, quota usage."""
+
+from __future__ import annotations
+
+import sqlite3
+from datetime import date, datetime, timedelta
+from pathlib import Path
+from typing import Any, Dict, List, Optional
+
+from . import db, demo as demo_module, market as market_module, quota
+from .config import Config
+from .pipeline import attach_cached_enrichment
+from .sources import build_sources
+
+
+def _money(value: Optional[int]) -> str:
+    return f"${value:,.0f}" if value not in (None, "") else "n/a"
+
+
+def _miles(value: Optional[int]) -> str:
+    return f"{value:,} mi" if value not in (None, "") else "n/a"
+
+
+def _title(listing: Dict[str, Any]) -> str:
+    parts = [str(listing.get("year") or ""), listing.get("make") or "", listing.get("model") or ""]
+    trim = listing.get("trim")
+    if trim:
+        parts.append(str(trim))
+    return " ".join(p for p in parts if p).strip() or listing.get("vin", "unknown")
+
+
+def _reliability_note(listing: Dict[str, Any]) -> str:
+    """Compact NHTSA note, e.g. 'NHTSA: 878 complaints / 4 recalls (top: STEERING)'."""
+    complaints = listing.get("complaint_count")
+    recalls = listing.get("recall_count")
+    if complaints is None and recalls is None:
+        return ""
+    parts = []
+    if complaints is not None:
+        parts.append(f"{complaints:,} complaints")
+    if recalls is not None:
+        parts.append(f"{recalls} recalls")
+    top = listing.get("top_complaint_components") or []
+    if isinstance(top, list) and top and isinstance(top[0], (list, tuple)) and top[0]:
+        parts.append(f"top: {top[0][0]}")
+    return "NHTSA: " + " / ".join(parts)
+
+
+def _market_note(listing: Dict[str, Any]) -> str:
+    """e.g. 'vs market: -6.9% (good deal, n=23)' — blank when there is no estimate."""
+    delta = listing.get("market_delta_pct")
+    if delta is None:
+        return ""
+    grade = listing.get("market_grade") or ""
+    sample = listing.get("market_sample_size") or 0
+    return f"vs market **{float(delta):+.1f}%**" + (f" ({grade}, n={int(sample)})" if grade else "")
+
+
+def _line(listing: Dict[str, Any], extra: str = "") -> str:
+    bits = [
+        f"**{_title(listing)}** — score **{listing.get('score', 0):+.2f}**",
+        f"{_money(listing.get('price_current'))} · {_miles(listing.get('mileage'))}",
+    ]
+    mpg = listing.get("combined_mpg")
+    if mpg:
+        bits.append(f"{float(mpg):.0f} mpg")
+    distance = listing.get("distance_miles")
+    if distance is not None:
+        bits.append(f"{distance:.0f} mi away")
+    if listing.get("cpo"):
+        bits.append("**CPO**")
+    market_note = _market_note(listing)
+    if market_note:
+        bits.append(market_note)
+    note = _reliability_note(listing)
+    if note:
+        bits.append(note)
+    dealer = listing.get("dealer_name")
+    if dealer:
+        city = listing.get("dealer_city") or ""
+        state = listing.get("dealer_state") or ""
+        bits.append(f"{dealer} ({city}, {state})".replace(" ()", ""))
+    if extra:
+        bits.append(extra)
+    line = " · ".join(bits)
+    url = listing.get("listing_url")
+    if url:
+        line += f"\n  [listing]({url}) · VIN {listing.get('vin')}"
+    else:
+        line += f"\n  VIN {listing.get('vin')}"
+    return f"- {line}"
+
+
+def _top_reasons(listing: Dict[str, Any], limit: int = 2) -> str:
+    breakdown = listing.get("score_breakdown") or []
+    if not isinstance(breakdown, list):
+        return ""
+    ranked = sorted(
+        (c for c in breakdown if isinstance(c, dict) and c.get("value")),
+        key=lambda c: abs(float(c.get("value") or 0)),
+        reverse=True,
+    )[:limit]
+    if not ranked:
+        return ""
+    return "; ".join(f"{c['label']} {float(c['value']):+.2f}" for c in ranked)
+
+
+def render_digest(
+    config: Config,
+    conn: sqlite3.Connection,
+    run_date: Optional[str] = None,
+    run_result: Optional[Dict[str, Any]] = None,
+    days: int = 1,
+) -> str:
+    run_date = run_date or date.today().isoformat()
+    since = (date.fromisoformat(run_date) - timedelta(days=days - 1)).isoformat()
+    digest_config = config.digest
+    top_n = int(digest_config.get("top_n", 5))
+    new_limit = int(digest_config.get("new_listing_limit", 15))
+    drop_limit = int(digest_config.get("price_drop_limit", 15))
+
+    new_listings = [attach_cached_enrichment(conn, l) for l in db.new_listings_since(conn, since, new_limit)]
+    drops = [attach_cached_enrichment(conn, l) for l in db.price_drops_since(conn, since, drop_limit)]
+    top = [attach_cached_enrichment(conn, l) for l in db.search_listings(conn, sort="score", limit=top_n)]
+    stats = db.stats(conn, int(config.api.get("monthly_call_cap", 500)))
+
+    search = config.search
+    lines: List[str] = []
+    lines.append(f"# Used Car Daily Digest — {run_date}")
+    lines.append("")
+    demo_warning = demo_module.demo_banner(conn)
+    if demo_warning:
+        lines.append(f"> ⚠️ **{demo_warning}**")
+        lines.append("")
+    lines.append(
+        f"_{search.get('year_min')}+ · under {_money(search.get('price_max'))} · under "
+        f"{_miles(search.get('mileage_max'))} · within {search.get('radius_miles')} mi of {search.get('zip')}_"
+    )
+    lines.append("")
+
+    lines.append(f"## New since {since} ({len(new_listings)})")
+    if new_listings:
+        for listing in new_listings:
+            reasons = _top_reasons(listing)
+            lines.append(_line(listing, f"why: {reasons}" if reasons else ""))
+    else:
+        lines.append("- Nothing new today.")
+    lines.append("")
+
+    lines.append(f"## Price drops since {since} ({len(drops)})")
+    if drops:
+        for listing in drops:
+            old, new = listing.get("old_price"), listing.get("new_price")
+            delta = listing.get("price_drop") or 0
+            pct = (100.0 * delta / old) if old else 0.0
+            lines.append(_line(listing, f"dropped {_money(delta)} ({pct:.1f}%): {_money(old)} → {_money(new)}"))
+    else:
+        lines.append("- No price drops today.")
+    lines.append("")
+
+    lines.append(f"## Top {top_n} overall by score")
+    if top:
+        for rank, listing in enumerate(top, 1):
+            reasons = _top_reasons(listing, limit=3)
+            lines.append(f"{rank}. " + _line(listing, f"why: {reasons}" if reasons else "")[2:])
+    else:
+        lines.append("- No listings stored yet.")
+    lines.append("")
+
+    deals = market_module.best_deals(conn, limit=5, config=config)
+    lines.append("## Best value versus the market")
+    if deals:
+        lines.append(
+            "_Asking price against what comparable listings suggest for that mileage and model year. "
+            "Blind to condition, trim and history — a check on the price, not on the car._"
+        )
+        for item in deals:
+            appraisal = item["appraisal"]
+            # The grade is spelled out in the suffix here, so drop the inline shorthand.
+            item = {key: value for key, value in item.items() if key != "market_delta_pct"}
+            lines.append(_line(item, (
+                f"{appraisal['grade_icon']} **{appraisal['grade']}** — {_money(appraisal['expected_price'])} "
+                f"expected, {appraisal['delta']:+,} ({appraisal['delta_pct']:+.1f}%), "
+                f"n={appraisal['sample_size']} ({appraisal['confidence']} confidence)"
+            )))
+    else:
+        lines.append(
+            "- Not enough comparable listings yet to grade prices. This fills in within a few daily runs."
+        )
+    lines.append("")
+
+    trend = market_module.price_trend(conn, months=3)
+    if len(trend) >= 2:
+        latest, previous = trend[-1], trend[-2]
+        direction = "down" if latest["median_price"] < previous["median_price"] else "up"
+        lines.append("## Market trend")
+        lines.append(
+            f"- Median asking price is **{direction}** {abs(latest.get('change_pct') or 0):.1f}% month over month "
+            f"({_money(previous['median_price'])} → {_money(latest['median_price'])}), "
+            f"from {latest['observations']} observations across {latest['cars']} cars."
+        )
+        cuts = market_module.price_cut_stats(conn)
+        if cuts["cut_count"]:
+            lines.append(
+                f"- {cuts['cut_count']} of {cuts['tracked']} tracked listings have cut their price "
+                f"({cuts['cut_share_pct']}%), median cut {_money(cuts['median_cut'])}"
+                + (f" ({cuts['median_cut_pct']}%)" if cuts.get("median_cut_pct") else "") + "."
+            )
+        dom = market_module.days_on_market(conn)
+        if dom["median_days"] is not None:
+            lines.append(
+                f"- Listings that have since disappeared lasted a median of **{dom['median_days']:.0f} days**."
+            )
+        lines.append("")
+
+    lines.append("## Status")
+    lines.append(
+        f"- Tracking **{stats['listings_active']}** active listings "
+        f"({stats['listings_total']} seen all-time)."
+    )
+    metrics = quota.pace_from_db(conn, int(config.api.get("monthly_call_cap", 500)))
+    lines.append(
+        f"- MarketCheck quota: **{metrics['used']} / {metrics['cap']}** calls on day "
+        f"{metrics['day_of_month']} of {metrics['days_in_month']} — expected ~"
+        f"{metrics['expected_by_now']:.0f} by now, so you are at **{metrics['pace_ratio']:.2f}x pace** "
+        f"({metrics['pace_icon']} {metrics['pace_label']}). Projected month total "
+        f"{metrics['projected_month_total']:.0f}; ~{metrics['affordable_per_day']:.0f} calls/day "
+        f"still affordable."
+    )
+    lines.append(f"  `{quota.bar(metrics)}`  (filled = quota used, `|` = today in the month)")
+    covered = conn.execute("SELECT COUNT(*) AS n FROM model_reliability").fetchone()["n"]
+    if covered:
+        lines.append(
+            f"- NHTSA complaint/recall data cached for **{covered}** model-year(s) "
+            "(free federal data; counts are not sales-volume adjusted, so treat recurring "
+            "components as the stronger signal)."
+        )
+    if run_result:
+        lines.append(
+            f"- This run: fetched {run_result.get('fetched', 0)}, kept {run_result.get('kept', 0)}, "
+            f"filtered out {run_result.get('filtered_out', 0)}, API calls {run_result.get('api_calls', 0)}."
+        )
+        enrichment = run_result.get("enrichment") or {}
+        nhtsa_summary = enrichment.get("nhtsa") or {}
+        mpg_summary = enrichment.get("mpg") or {}
+        if nhtsa_summary or mpg_summary:
+            lines.append(
+                f"- Free data lookups: NHTSA {nhtsa_summary.get('api_calls', 0)} call(s), "
+                f"EPA MPG {mpg_summary.get('api_calls', 0)} call(s) — neither counts against MarketCheck."
+            )
+        for model_line in (nhtsa_summary.get("new_models") or [])[:10]:
+            lines.append(f"  - first NHTSA lookup: {model_line}")
+        sweep = run_result.get("sweep") or {}
+        if sweep.get("ran"):
+            queries = ", ".join(
+                f"{q.get('label')} ({q.get('listings', 0)})" for q in sweep.get("queries", [])[:8]
+            )
+            lines.append(
+                f"- 🧹 Month-end sweep: spent **{sweep.get('calls_used', 0)}** leftover call(s) that "
+                f"would have expired tonight — {queries}."
+            )
+        for error in run_result.get("errors") or []:
+            lines.append(f"- ⚠️ {error}")
+    lines.append("")
+
+    if digest_config.get("include_source_links", True):
+        lines.append("## Cross-shop the same search")
+        lines.append("_Manual links — the monitor queries MarketCheck, NHTSA and EPA only; it does not scrape these sites._")
+        for source in build_sources(search):
+            lines.append(f"- [{source.name}]({source.url}) — {source.note}")
+        lines.append("")
+
+    lines.append(f"_Generated {datetime.now().strftime('%Y-%m-%d %H:%M')} · data: MarketCheck Inventory Search API_")
+    return "\n".join(lines)
+
+
+def save_digest(config: Config, markdown: str, run_date: Optional[str] = None) -> Path:
+    run_date = run_date or date.today().isoformat()
+    directory = config.digest_dir
+    directory.mkdir(parents=True, exist_ok=True)
+    path = directory / f"digest-{run_date}.md"
+    path.write_text(markdown, encoding="utf-8")
+    latest = directory / "latest.md"
+    latest.write_text(markdown, encoding="utf-8")
+    return path
+
+
+def latest_digest_path(config: Config) -> Optional[Path]:
+    directory = config.digest_dir
+    if not directory.exists():
+        return None
+    dated = sorted(directory.glob("digest-*.md"))
+    if dated:
+        return dated[-1]
+    latest = directory / "latest.md"
+    return latest if latest.exists() else None
+
+
+def latest_digest_text(config: Config) -> Optional[str]:
+    path = latest_digest_path(config)
+    return path.read_text(encoding="utf-8") if path else None
