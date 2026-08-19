@@ -168,15 +168,15 @@ They leave.
 
 ---
 
-The road back is the same road, colder now, the sodium light gone once they're far enough from the stores.
+The road back is the same road, colder now, the sodium light gone once they're far enough from the stores. Chloe looks back once, then again a block later, before the empty road behind them stops needing it. Sam's hands keep closing into fists and opening again, empty each time.
 
 "I got nothing out of that."
 
 "You got fifty-one seconds against seven."
 
-"Three of them had guns, Ruth, which is usually the part that's supposed to matter."
+"Three of them had guns, Ruth, which is usually the part that's supposed to matter." It comes out louder than the empty street needs.
 
-"Having a gun isn't a skill." Ruth is irritated about it. "They stood in a group and let you walk in, and the one at the back made room for you. You could have done that at thirteen."
+"Having a gun isn't a skill." Ruth's already talking over the end of his sentence. "They stood in a group and let you walk in, and the one at the back made room for you. You could have done that at thirteen."
 
 Sam doesn't answer, looking at the sidewalk. "Why are they so bad at it."
 
@@ -194,7 +194,7 @@ Ruth kicks a bottle cap off the curb without breaking stride and watches where i
 
 "She'd take me apart before I got a hand up."
 
-"She'd take you apart," Nadia agrees. They cross the last empty intersection without checking for cars, four sets of footsteps falling into the same rhythm on their own. They discuss it the whole way home.
+"She'd take you apart," Nadia agrees. Sam laughs longer at that than it's actually worth, both hands finally still in his pockets. Ruth glances at him and doesn't say anything about it, for once. They cross the last empty intersection without checking for cars, four sets of footsteps falling into the same rhythm on their own, faster than the walk down had been. They discuss it the whole way home.
 
 They're back over the fence a few minutes past two, Ruth's copied badge back in the maintenance supervisor's jacket before he's noticed it was gone, Chloe's camera loop already unwinding itself toward normal. The corridor is empty and quiet the whole way to their own doors.
 
@@ -206,4 +206,4 @@ Ruth shuts the box off in the corridor and puts it in the chat before she sleeps
 
 Somebody in the year above has sent one laughing face and nothing else. Ruth reads it out at breakfast, and Sam doesn't ask who, doesn't answer, just reaches past her for the syrup and starts on his tray like the question landed for somebody else at the table. He won't discuss it, and won't for so long that people start bringing it up just to watch him not answer.
 
-Nadia doesn't call her father before she leaves for the summer. She's home two days later, checks the till against the tape before she says hello, and by the time he asks how school is, the part-timer who'd been pocketing the difference on Thursdays is already gone and the number is already back where it should be. The ledger goes back under the counter, balanced, before her mother's finished asking how the drive back was. She doesn't mention a fence, a diner, or seven men behind a hardware store.
+Nadia doesn't call her father before she leaves for the summer. Telling him about the fence would mean telling him how they got over it, and that isn't a story that ends with just her in trouble. She's home two days later, checks the till against the tape before she says hello, and by the time he asks how school is, the part-timer who'd been pocketing the difference on Thursdays is already gone and the number is already back where it should be. The ledger goes back under the counter, balanced, before her mother's finished asking how the drive back was. She doesn't mention a fence, a diner, or seven men behind a hardware store.
