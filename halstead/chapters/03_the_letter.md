@@ -85,34 +85,34 @@ He goes down the list, one after another, all the way to the bottom of it, then 
 Her mom does her own looking on the Sunday, on the same laptop, with the door shut. She types the name in and gets the website, then gets it again, and a third time from a different direction. Three searches from three different directions turn up nothing beyond the school's own website: no news coverage, no parent forum mention, no listed address, no photograph that isn't theirs, no one anywhere who has been there and said a word about it afterward. For a school that has put over a hundred children through a summer, four summers running, that's what she finds, and she says so at the table that night with the laptop still open.  
 Later, in the kitchen, with the door mostly shut:  
 "They've got a woman who swam in the Olympics."  
-"Okay." Her mom doesn't look up from the screen.  
+"Okay." Her mom keeps her eyes on the screen.  
 "They've got a guy who was a SEAL. An actual one, not a guy who says it at parties. Half of them have two master's degrees. There's one of them, I know the name, he wrote a paper my whole department read. People printed it out. Kathy printed it out and left it on my chair."  
 "So it's real?"  
 "The school's four years old, Meg. It says so on the page about the school."  
 "So?"  
 "So how does a four-year-old school get that guy. What does it pay him. With what."  
-Her mom doesn't say anything.  
+Her mom keeps scrolling.  
 "And the website," her dad says. "The website is better than the one at my work. It's better than the district's. Somebody spent real money building a website for a school nobody's heard of, for a summer thing they're giving away."  
 "Okay, now you're doing it."  
 Her dad pushes the laptop an inch away from him. "I'm not doing anything. I'm saying it's expensive. Every single thing about it is expensive, and none of it is being paid for by the four weeks, because the four weeks are free."  
 "So somebody wants something."  
 "Or somebody already has everything they want and this is what they do with it. Both of those are real people."  
 "Not around here they aren't," her mom says, her eyes on the stack of bills clipped to the fridge instead of on him.  
-It takes them nine days. Her mom's position is that it's four hours away, they never applied, nobody they know got one, somebody is paying for it, and she would like to know who before anybody gets in a car. Her dad's position is that all of that is true and she should go anyway. They have some version of the same argument on the fourth day, the sixth day, and the eighth. On the sixth day, standing at the counter with the mail still in her hand, her mom says the words a building I have never seen.  
-"You already know what you're going to say," her dad says, and sets his coffee down without drinking it.  
+It takes them nine days. Her mom's position is that it's four hours away, the invitation showed up unsolicited, Chloe is the only kid on the street who got one, somebody is paying for it, and she wants to know who before anybody gets in a car. Her dad's position is that all of that is true and she should go anyway. They have some version of the same argument on the fourth day, the sixth day, and the eighth. On the sixth day, standing at the counter with the mail still in her hand, her mom says the words a building I have never seen.  
+"You already know what you're going to say," her dad says, and sets his coffee down, untouched.  
 "That's not fair."  
-"No," he says. "It isn't." He doesn't take it back.  
+"No," he says. "It isn't."  
 On the sixth day her mom also comes into Chloe's room and sits down on the end of the bed.  
 "Why do you want to go?"  
 "It's got my name on it."  
 Her mom waits for the rest of it.  
 "It says Miss," Chloe says.  
-Her mom sits there with her hands in her lap and her thumbs going, then pats the bed twice, gets up, and goes out without closing the door all the way behind her.  
+Her mom sits there with her hands in her lap and her thumbs going, then pats the bed twice, gets up, and goes out, leaving the door open a few inches behind her.  
 On the ninth night Chloe is supposed to be asleep. She has already been sent back once, and comes out a second time in her socks, skipping the fourth stair, which is the one that gives her away.  
 "She's been flat since Christmas," her dad says. "You've seen it. She comes home and she says it was good."  
 "Kids say it was good."  
 "Not like that they don't."  
-Nobody says anything for a minute after that, before her mom says something too quiet to make out from the top of the stairs, her dad says he knows, twice, and somebody starts the dishwasher. Chloe goes back up the rest of the stairs on her hands and knees, to keep the boards quiet, and gets into bed with her socks still on.  
+A minute goes by before her mom says something too quiet to make out from the top of the stairs, her dad says he knows, twice, and somebody starts the dishwasher. Chloe goes back up the rest of the stairs on her hands and knees, to keep the boards quiet, and gets into bed with her socks still on.  
 \---  
 She takes her four books back on the Thursday before they go, and gets up on her toes at the desk.  
 "I'm going away for four weeks."  
@@ -127,8 +127,8 @@ The librarian puts the stamp down.
 She walks the whole children's section twice and comes back with one she has read before, because a new one would be gone by Tuesday and this one she can do again.  
 They don't put her on the bus, though her mom says the word bus about forty times in nine days, and it doesn't sound like a bus.  
 They pack the night before, all three of them, in the living room with everything laid out on the floor in piles. Her mom writes KESSLER on the tags with a laundry pen and holds each thing up first to check she's got it the right way round. Her dad does the train station voice for the packing list, announcing socks, announcing the toothbrush, announcing the second pair of shoes, and Chloe laughs at the shoes one hard enough that she has to lie down on the carpet, so he does it again to get it again. Her mom tells them both to stop, then asks him to do the shoes one more time.  
-Chloe gets to stay up until ten, and nobody says anything the whole evening about the school, or the list, or who is paying for it.  
-They drive her the next day, four hours, with a stop at the halfway point that takes forty minutes because nobody is in a hurry to do the second half. Chloe reads for the first hour and a half, watches the trees turn into different trees for twenty minutes, then reads again. Her mom asks her twice whether she's sure, once out loud and once by asking whether she remembered her toothbrush in a certain way.  
-Her mom stays at the parent hotel for the first four days, since she's due back at work on the Monday. She does not leave until she has seen the room, the food, the nurse, and the front desk at eleven o'clock at night to find out who is on it. On the second morning she calls the emergency number from the parking lot to make sure it rings. It rings. She does it again on the third morning, when it rings as well. A man answers both times, and it isn't the same man.  
+Chloe gets to stay up until ten, the whole evening spent on socks and the shoe joke, the school and the list and who is paying for it left for some other night.  
+They drive her the next day, four hours, with a stop at the halfway point that stretches to forty minutes, everyone taking their time on the second half. Chloe reads for the first hour and a half, watches the trees turn into different trees for twenty minutes, then reads again. Her mom asks her twice whether she's sure, once out loud and once by asking whether she remembered her toothbrush in a certain way.  
+Her mom stays at the parent hotel for the first four days, since she's due back at work on the Monday. She stays until she has seen the room, the food, the nurse, and the front desk at eleven o'clock at night to find out who is on it. On the second morning she calls the emergency number from the parking lot to make sure it rings. It rings. She does it again on the third morning, when it rings as well. A man answers both times, a different one each time.  
 Her dad takes the last Friday off to come and get her at the end of it, which he arranges in the driveway on the first day, standing there with his keys, in front of everybody.  
 Chloe brings a library book she's already read, and the envelope, in the front pocket of her bag, with her name on it.

@@ -210,7 +210,7 @@ They tie them up, wrists and ankles, on their sides, four men in a row against t
 
 Sam sits down across from her, elbows on his knees, watching the pen move rather than the men it's counting. "Four grown men," he says, to nobody in particular. "That's not very twelve."
 
-Kavi is going through the equipment: two bags, a laptop, a lockpick set, a pair of bolt cutters that are the wrong bolt cutters for the fence they came over. The four of them are dressed like a maintenance crew: dark work trousers, plain jackets, nothing with a name on it, no wallets, no phones. Nothing in any pocket at all.
+Kavi is going through the equipment: two bags, a laptop, a lockpick set, a pair of bolt cutters that are the wrong bolt cutters for the fence they came over. The four of them are dressed like a maintenance crew: dark work trousers, plain jackets, nothing with a name on it, no wallets, no phones, no pockets holding anything at all.
 
 "They didn't even do costumes properly," Sam says. "Look at this. Look at this guy's boots."
 
@@ -240,7 +240,7 @@ Chloe sits against the wall with her arms around her knees. "It's still going to
 
 Sam calls it in as soon as the last knot is tied. Then they wait, since Sinclair is four buildings away.
 
-The first one comes round after about seven minutes, confused for a beat, before he realizes he's tied and goes still when he sees who did it. "Hi," Ruth says. "You're fine, although you'll feel sick for about an hour." He doesn't say anything.
+The first one comes round after about seven minutes, confused for a beat, before he realizes he's tied and goes still when he sees who did it. "Hi," Ruth says. "You're fine, although you'll feel sick for about an hour." His jaw sets, teeth together.
 
 "What were you here for?" He looks away.
 
@@ -248,11 +248,11 @@ The first one comes round after about seven minutes, confused for a beat, before
 
 The third one wakes up about a minute later, younger, less good at keeping his face still. Then it stops being an interrogation, because Sam has been building up to it for twenty minutes.
 
-"Can I ask you something," Sam says. "Why did you even bother encrypting? It's AES-256 on a default pairing code. That's not even encryption at that point." Nobody answers him.
+"Can I ask you something," Sam says. "Why did you even bother encrypting? It's AES-256 on a default pairing code. That's not even encryption at that point." One of the men on the floor looks at the ceiling.
 
 "No, I'm actually asking, you don't have to act like the fake attackers, somebody looked at those and went, yeah, that's the ones." He turns to Kavi. "How long did it take you again?"
 
-Kavi doesn't look up. "Four seconds of compute."
+Kavi keeps sorting through the bag of equipment. "Four seconds of compute."
 
 "Four seconds," Sam says, like it offends him.
 
@@ -270,7 +270,7 @@ The man looks at him, his jaw working once. "I don't know," he says.
 
 Chloe sits against the wall with her arms around her knees while Sam talks, working at the wrongness of it instead of listening. The bolt cutters wrong for that fence. The boots wrong. All of it wrong in the same direction, which is the direction a school would get it wrong in if a school were building this, and also the direction four real people would get it wrong in if somebody had handed them the wrong list. She turns it over the whole way through and it comes out the same both ways, and the second man's chest going up and down a few feet away sits on the same list as the bolt cutters.
 
-Sinclair arrives with two other adults and a trolley, then stops at the corner. He looks at the four men tied along the corridor wall, and at the bags, and at the four kids sitting on the floor near them, and he stands there watching them without moving. "Who's monitoring?"
+Sinclair arrives with two other adults and a trolley, then stops at the corner. He looks at the four men tied along the corridor wall, and at the bags, and at the four kids sitting on the floor near them, then stands at the corner, arms crossed. "Who's monitoring?"
 
 "Me," Ruth says.
 
@@ -280,7 +280,7 @@ Ruth reads them off her arm. Sinclair nods. "Grading's in the morning," he says.
 
 Back in bed she lies on top of the covers with her shoes on and runs the list from the top, and gets to the end of it, and starts over.
 
-Chloe gets a C the same as Sam. Ruth gets a B minus. She brings it up for a week. Kavi gets a B for the comms and a note about the sensors that he disagrees with in writing, at length, and does not get anywhere with.
+Chloe gets a C the same as Sam. Ruth gets a B minus. She brings it up for a week. Kavi gets a B for the comms and a note about the sensors that he disputes in writing, at length, and loses.
 
 The sheet says: intruders inside Building One prior to contact. Response seven minutes fifty against a standard of six. Traceable agent selected. Four personnel deployed where three would have served. Objective established. No capability disclosed.
 

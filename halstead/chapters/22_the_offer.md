@@ -2,10 +2,10 @@
 
 *April 2023*
 
-Mr. Amberg runs the exit interviews himself, fifteen minutes each, ten students a day for nine days starting the first Monday of April. A list goes up outside the staff office every morning with that day's names in order, and a runner comes down from admin to call the next one in when the clock on his desk says it's time. He hasn't gone over, by the staff's own count, and he hasn't cut one short either, not the ones that end in under a minute. His own contracts class still meets four times that week, the interviews slotted into whatever's left of the day around it.
+Mr. Amberg runs the exit interviews himself, fifteen minutes each, ten students a day for nine days starting the first Monday of April. A list goes up outside the staff office every morning with that day's names in order, and a runner comes down from admin to call the next one in when the clock on his desk says it's time. He runs each one the full fifteen minutes, by the staff's own count, even the ones that could have ended in under a minute. His own contracts class still meets four times that week, the interviews slotted into whatever's left of the day around it.
 
 
-Chloe's slot falls on the Wednesday of the second week, third appointment after lunch. His office holds a desk, two chairs, and a small clock turned to face only him. A folder is already open on the desk when she sits down, her name typed across the tab, and he doesn't wait for her to settle before he starts.
+Chloe's slot falls on the Wednesday of the second week, third appointment after lunch. His office holds a desk, two chairs, and a small clock turned to face only him. A folder is already open on the desk when she sits down, her name typed across the tab, and he starts before she's settled.
 
 
 "Four things," he says. "Research, full time, starting the day you'd otherwise be walking into a dorm room somewhere. Entry researchers elsewhere start around forty five thousand a year. You'd get three times that, minimum, more once you're carrying your own project instead of somebody else's. Housing, food, a car, medical, nothing coming out of your end for any of it. And if you want the degree on top of the work, you do it here, on your own schedule, we pay for it, and the post stays open until you finish, however long that takes. Six-day weeks the first year, five after that, same as anyone on staff. You'd report to whoever runs your team, same as anyone on staff. Nothing about being eighteen changes any of it."
@@ -17,10 +17,10 @@ Chloe's slot falls on the Wednesday of the second week, third appointment after 
 "Here."
 
 
-Forty five, three times over, is a hundred and thirty five. Housing on top of that. Food on top of that. A car, medical, nothing coming out of her end. Call the rest of it another twenty, a number he never said and she knows to add anyway. A hundred and fifty five thousand dollars a year, at eighteen, and she would still be here. She keeps both hands flat on her knees while she runs it, the way she keeps them flat on a table whenever she wants to get something right the first time.
+Forty five, three times over, is a hundred and thirty five. Housing on top of that. Food on top of that. A car, medical, all of it covered. Call the rest of it another twenty, a number he left out and she adds anyway. A hundred and fifty five thousand dollars a year, at eighteen, and she would still be here. She keeps both hands flat on her knees while she runs it, the way she keeps them flat on a table whenever she wants to get something right the first time.
 
 
-None of that is actually the part she's weighing. She's taught the twelves real analysis out of a room two floors below this one, dropped three flawed hinges into a scrap bin without telling anyone, and gone back to the forge every Thursday for four years before anyone had to make her. Money doesn't touch any of that. Eleven years ago the only thing that mattered about this place was that a letter had her name typed on the front of it. The folder open on the desk in front of her now has the same thing typed on the tab.
+The part she's actually weighing is different. She's taught the twelves real analysis out of a room two floors below this one, dropped three flawed hinges into a scrap bin and kept it to herself, and gone back to the forge every Thursday for four years before anyone had to make her. Money sits outside all of that. Eleven years ago the only thing that mattered about this place was that a letter had her name typed on the front of it. The folder open on the desk in front of her now has the same thing typed on the tab.
 
 
 "I don't think so," she says.
@@ -29,7 +29,7 @@ None of that is actually the part she's weighing. She's taught the twelves real 
 "Reason?"
 
 
-"It's my school." She isn't sure, even now, how to say the rest of it out loud. "Nobody stays at their school. You go and do the next thing."
+"It's my school." She takes a second to find the rest of it out loud. "Nobody stays at their school. You go and do the next thing."
 
 
 Mr. Amberg writes something down and doesn't argue with her. He closes the folder, squares it against the edge of the desk, and checks the clock, which still has four minutes left on it. He spends them going back through the rest of the file in silence, the same slow read he'd give a mark scheme before handing it back, and closes it for good only once the four minutes are actually up.
@@ -43,19 +43,19 @@ ________________
 
 
 
-Ninety-one names go up over the nine days, and by the third one everyone in the building knows roughly what's behind the door before they sit down in front of it, because the ones who've already been through it talk in the corridor while they wait for the ones who haven't. By the sixth day the list needs a second sheet taped below the first, names running off the bottom of the original one in Amberg's own small, fast handwriting.
+Ninety-one names go up over the nine days, and by the third one everyone in the building knows roughly what's behind the door before they sit down in front of it, because the ones who've already been through it talk in the corridor while they wait for the ones still ahead of it. By the sixth day the list needs a second sheet taped below the first, names running off the bottom of the original one in Amberg's own small, fast handwriting.
 
 
-Nothing else about April changes to make room for it. The twelves still have History at ten, the forge stays open Thursdays and both Saturday sessions, and lunch runs from noon to half past the same as every other week in the term.
+April keeps its ordinary shape around it. The twelves still have History at ten, the forge stays open Thursdays and both Saturday sessions, and lunch runs from noon to half past the same as every other week in the term.
 
 
-Chairs line one wall outside his office, six of them, and there's always at least two people in them: whoever's next on the list taped to the door, and whoever's just come out and hasn't decided yet whether to go straight back to class or sit a while first. The corridor smells like the coffee cart that sets up near the stairwell every April, and the runner's shoes squeak the same two steps on the tile outside the office door, morning after morning.
+Chairs line one wall outside his office, six of them, and there's always at least two people in them: whoever's next on the list taped to the door, and whoever's just come out, still deciding whether to go straight back to class or sit a while first. The corridor smells like the coffee cart that sets up near the stairwell every April, and the runner's shoes squeak the same two steps on the tile outside the office door, morning after morning.
 
 
-Chloe's own wait that Wednesday runs eleven minutes, sandwiched between a boy re-reading the same page of a textbook he clearly isn't retaining and a girl doing nothing at all, hands still in her lap, staring at the closed door like she's already rehearsed what's behind it. Another boy a few chairs down has a printed spreadsheet balanced on one knee, three different versions of the same arithmetic run down the margin, and folds it in half the second the door opens for him.
+Chloe's own wait that Wednesday runs eleven minutes, sandwiched between a boy re-reading the same page of a textbook, the words sliding past him each time, and a girl sitting perfectly still, hands in her lap, staring at the closed door like she's already rehearsed what's behind it. Another boy a few chairs down has a printed spreadsheet balanced on one knee, three different versions of the same arithmetic run down the margin, and folds it in half the second the door opens for him.
 
 
-A girl from the materials wing comes out ahead of Chloe's own slot and sits down hard in the chair by the window, her bag still over one shoulder like she forgot to put it down, saying nothing for most of a minute. Then, to no one in particular, "I said I'd think about it." The boy next to her glances over once and goes back to his phone.
+A girl from the materials wing comes out ahead of Chloe's own slot and sits down hard in the chair by the window, her bag still over one shoulder like she forgot to put it down, quiet for most of a minute. Then, half to herself, "I said I'd think about it." The boy next to her glances over once and goes back to his phone.
 
 
 The boy in for the four o'clock slot is on his feet before the runner even calls his name, a laptop bag already over one shoulder like he's walking into a meeting rather than an office, and he's back out in six minutes flat, the door barely swinging shut behind him before it opens again.

@@ -63,16 +63,16 @@ Chloe starts again. "It means if he wants his brother's certificate translated t
 The second time it's a discount. A returning client's manual repeats forty percent of its own sentences from the version they submitted in March, and the software prices the repeats lower the second time around. Chloe explains the match logic, the percentage bands, the way a repeated sentence still counts as new if one word inside it has changed. Deb stops her halfway through. "In English."
 
 
-"It's like Tyler's spelling test," Chloe says, without having planned to say it. "If he already learned ninety of the hundred words last year, you don't pay someone full price to teach him the same ninety again. You pay for the ten he hasn't seen yet."
+"It's like Tyler's spelling test," Chloe says, the comparison out of her mouth before she's decided to use it. "If he already learned ninety of the hundred words last year, you don't pay someone full price to teach him the same ninety again. You pay for the ten he hasn't seen yet."
 
 
 That lands. Deb laughs once and calls the discount the Tyler rate for the rest of the quarter, writing it that way on two internal spreadsheets. She keeps calling it that even after a manager asks what a Tyler rate is and has to be told it's shorthand, not a joke, the client the only one who's ever confused by it.
 
 
-The third time is a deadline. A manual due Friday has to move to Wednesday because the client's own launch moved. When Chloe explains the reordering, the queue logic, which two smaller jobs get bumped and why bumping them costs less than a late fee on the manual, Deb hears exactly none of it. "Just tell me who's mad on Wednesday if we don't." Chloe tells her: nobody, if the smaller two ship Thursday instead, which nobody will notice. Deb reschedules it on the spot.
+The third time is a deadline. A manual due Friday has to move to Wednesday because the client's own launch moved. When Chloe explains the reordering, the queue logic, which two smaller jobs get bumped and why bumping them costs less than a late fee on the manual, Deb starts squaring the folders on her desk into one stack, the question already settled as far as she's concerned. "Just tell me who's mad on Wednesday if we don't." Chloe tells her: move the smaller two to Thursday and Wednesday goes out quiet enough that it won't cost her a single angry email. Deb reschedules it on the spot.
 
 
-It happens with other people on the floor too. A coordinator needs a deadline explained twice before it sticks; a translator two desks over only follows a pricing rule once it's tied to something he already cares about. On the phone with her mother that same week, walking her through why the college won't refund a course she dropped in week three, Chloe hears herself do the same thing without deciding to. She drops the policy language and reaches for the closest thing her mother has actually paid for and lost money on, and it works there too. Chloe gets fast at finding the second version, the comparison half built before anyone's finished asking for it, and thinks of it as ordinary courtesy, the kind you'd offer anybody in a loud room.
+It happens with other people on the floor too. A coordinator needs a deadline explained twice before it sticks; a translator two desks over only follows a pricing rule once it's tied to something he already cares about. On the phone with her mother that same week, walking her through why the college won't refund a course she dropped in week three, Chloe hears herself do the same thing again, this time before she's noticed she's doing it. She drops the policy language and reaches for the closest thing her mother has actually paid for and lost money on, and it works there too. Chloe gets fast at finding the second version, the comparison half built before anyone's finished asking for it, and thinks of it as ordinary courtesy, the kind you'd offer anybody in a loud room.
 
 
 ________________
@@ -80,16 +80,16 @@ ________________
 
 
 
-She starts the blog in September because her evenings are hers now and she doesn't know what to do with them.
+She starts the blog in September because her evenings are hers now, and she goes looking for something to fill them.
 
 
-The first piece takes most of a Saturday. It's about a fishing dispute between two countries that nobody in English is covering, because the two governments aren't, on paper, having the same argument. One country's press releases describe a boundary dispute, and the other's describe a licensing dispute, over the same stretch of water, in the same week. She opens both countries' newspapers in adjacent tabs before noon and reads them against each other for three days before she writes a line. She checks the actual treaty text against both summaries and finds the sentence in the older document that neither side is quoting anymore. The apartment gets dark around her without her getting up to turn a light on. By midnight the piece runs past six thousand words. She writes a five-hundred-word summary at the top for anyone who wants the conclusion without the treaty text, reads the whole thing back once, catches a place where she'd used the wrong country's spelling of a shared river, fixes it, posts the link in four places, and goes to bed.
+The first piece takes most of a Saturday. It's about a fishing dispute between two countries that the English-language press has missed entirely, because the two governments are, on paper, having two different arguments. One country's press releases describe a boundary dispute, and the other's describe a licensing dispute, over the same stretch of water, in the same week. She opens both countries' newspapers in adjacent tabs before noon and reads them against each other for three days before she writes a line. She checks the actual treaty text against both summaries and finds the sentence in the older document that neither side is quoting anymore. The apartment gets dark around her without her getting up to turn a light on. By midnight the piece runs past six thousand words. She writes a five-hundred-word summary at the top for anyone who wants the conclusion without the treaty text, reads the whole thing back once, catches a place where she'd used the wrong country's spelling of a shared river, fixes it, posts the link in four places, and goes to bed.
 
 
-She writes two more that week and doesn't tell anyone at the office she's doing it. One is on a currency peg nobody outside a trading floor has heard of; the other she scraps at four thousand words because the second source she finds contradicts the first badly enough that the piece isn't true anymore, and she starts over the next night rather than publish something she can't stand behind.
+She writes two more that week and keeps it from the office. One is on a currency peg only traders and central bankers have ever heard of; the other she scraps at four thousand words because the second source she finds contradicts the first badly enough that the piece stops being true, and she starts over the next night rather than publish something she can't stand behind.
 
 
-The topics after that don't repeat. A mining concession three governments each describe in a different order of events, a port strike reported as a labor story in one country and a security story in another, an election recount conducted in a language with no single word for recount, a water-rights case two provinces have been fighting since before either government currently in office existed. By November she's posting two or three pieces a week on top of the job and the twenty-one credits, most of it written between eleven at night and two in the morning on a laptop propped against a stack of the same manuals she translates all day. The summaries have started getting shared on their own, stripped of her name half the time. She doesn't mind. By January there are people in the comments who have clearly read the whole piece rather than just the summary, arguing about the treaty text itself, correcting each other's dates, occasionally correcting hers.
+The topics after that keep shifting: a mining concession three governments each describe in a different order of events, a port strike reported as a labor story in one country and a security story in another, an election recount conducted in a language with no single word for recount, a water-rights case two provinces have been fighting since before either government currently in office existed. By November she's posting two or three pieces a week on top of the job and the twenty-one credits, most of it written between eleven at night and two in the morning on a laptop propped against a stack of the same manuals she translates all day. The summaries have started getting shared on their own, stripped of her name half the time, and that suits her fine. By January there are people in the comments who have clearly read the whole piece rather than just the summary, arguing about the treaty text itself, correcting each other's dates, occasionally correcting hers.
 
 
 A man emails in February to ask, politely, whether she has a research team. He's specific about it: he cites two pieces by title and asks how many people it takes to turn around something that long twice a week alongside a full-time job. He says he's asked because he genuinely can't work out the arithmetic.
@@ -101,7 +101,7 @@ She writes back that she doesn't. It's her. Six thousand words is about a day's 
 He doesn't reply.
 
 
-She rereads his message once, then closes the tab without answering it again. She has told him the truth. It isn't interesting.
+She rereads his message once, then closes the tab and leaves it there. She has told him the truth. It's just arithmetic.
 
 
 ________________
@@ -145,7 +145,7 @@ eli: wait so kavi and theo were off by like 60 points combined
 kavi: i said 85ish. ish is doing a lot of work in that sentence
 
 
-There is nothing in the chat for nine minutes.
+The chat sits quiet for nine minutes.
 
 
 nadia: ok but theo still cant parallel park
@@ -168,7 +168,7 @@ ________________
 
 
 
-She doesn't let it go. Nine days later:
+She comes back to it. Nine days later:
 
 
 ruth: what percentage of american adults read below a sixth grade level
@@ -275,10 +275,10 @@ ________________
 
 
 
-In April she stops posting. No fifth question arrives, and nobody in the chat asks where it went.
+In April she stops posting. The chat keeps moving through May the way it always does between one of her questions and the next, until the gap outlasts every gap before it.
 
 
-Sam mentions it in June, three lines about a group project nobody's heard from her on. Kavi says she's probably just buried, and it's about that time of year for her anyway, finals or something adjacent to finals. Chloe reads both messages twice and doesn't add anything to the thread. People go quiet for a month at a time and come back with a screenshot and a joke. Chloe messages her directly twice, a week apart, and gets back sorry, been swamped, and then nothing at all, not even the mark the client puts up when a message has been read.
+Sam brings it up in June, three lines about a group project he's been carrying alone. Kavi says she's probably just buried, and it's about that time of year for her anyway, finals or something adjacent to finals. Chloe reads both messages twice, then closes her phone and goes back to the file already open on her screen. People go quiet for a month at a time and come back with a screenshot and a joke. Chloe messages her directly twice, a week apart. The first gets sorry, been swamped, back within the hour. The second sits there with the single check mark it gets on send; no second check mark ever joins it.
 
 
 Six months.

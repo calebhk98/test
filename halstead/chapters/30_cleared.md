@@ -28,7 +28,7 @@ ________________
 She sits the Foreign Service exam three weeks after she turns twenty.
 
 
-It's four hours. She finds it pleasant. There's a section on world affairs that she enjoys the way you enjoy a crossword. She comes out for a coffee and doesn't think about it again until the result arrives.
+It's four hours. She finds it pleasant. There's a section on world affairs that she enjoys the way you enjoy a crossword. She comes out for a coffee and puts it out of her mind until the result arrives.
 
 
 She reads it as having sat an exam.
@@ -42,7 +42,7 @@ ________________
 The clearance investigation takes seven months and involves a man named Whitaker who comes to see her twice.
 
 
-Chloe likes him. He's thorough and he doesn't pretend the questions are casual.
+Chloe likes him. He's thorough, and direct about what each question is actually for.
 
 
 She tells him everything.
@@ -86,7 +86,7 @@ ________________
 
 
 
-He asks about the funding, and she has nothing. He asks who the school's principal donor is. She has no idea, nobody there ever discussed it, she was seven when she arrived, no more likely to ask who paid for a school than a child asks who pays for a park.
+He asks about the funding, and she comes up empty. He asks who the school's principal donor is. Whoever funds it stayed background noise her whole life there, she was seven when she arrived, about as likely to wonder who pays for a school as a child is to wonder who pays for a park.
 
 
 She says it anyway. It's true.

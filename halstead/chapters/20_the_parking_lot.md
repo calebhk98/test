@@ -4,7 +4,7 @@
 
 Nobody has ever snuck out.
 
-Over eleven days, Nadia stands next to a maintenance supervisor in the dining hall on a Tuesday, talking about nothing for forty seconds, and walks away with his badge copied. Chloe loops the corridor cameras. Ruth brings a box she built for a networking class the year before, which finds video recorders on the networks around it and logs in with the passwords they shipped with, and writes noise into them at intervals. Sam clocks the night patrol's second pass down the corridor four nights running, until the gap between it and the first pass is reliable enough to walk through.
+Over eleven days, Nadia stands next to a maintenance supervisor in the dining hall on a Tuesday, talking about the weather for forty seconds, and walks away with his badge copied. Chloe loops the corridor cameras. Ruth brings a box she built for a networking class the year before, which finds video recorders on the networks around it and logs in with the passwords they shipped with, and writes noise into them at intervals. Sam clocks the night patrol's second pass down the corridor four nights running, until the gap between it and the first pass is reliable enough to walk through.
 
 Kavi turns it down at the last second, says he wants to finish something, which from Kavi always means he already started it.
 
