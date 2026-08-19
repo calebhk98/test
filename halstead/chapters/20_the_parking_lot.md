@@ -36,7 +36,7 @@ She turns her coffee cup a quarter turn on the table before she says the other t
 
 "You told a twelve-year-old how to get around campus security."
 
-"I told my brother." Ruth doesn't look up from the cup. "That's not the same as telling a stranger."
+"I told my brother." Ruth keeps her eyes on the cup, turning it another quarter turn. "That's not the same as telling a stranger."
 
 "Rohan's thirteen and still won't touch a soldering iron," Nadia says. "Won't get near anything with a plug on it."
 
@@ -46,7 +46,7 @@ She turns her coffee cup a quarter turn on the table before she says the other t
 
 Sam has the syrup upside down over his second plate, timing it. "Ten weeks starting Friday," he says. "You going home, or is the shop keeping you."
 
-"The shop's always keeping me. I go back anyway." Nadia doesn't look up from what's left of her waffle. "My dad thinks the till's been light on Thursdays for two months and hasn't worked out why. I already know why."
+"The shop's always keeping me. I go back anyway." Nadia keeps her eyes on what's left of her waffle, working the last bite around her fork. "My dad thinks the till's been light on Thursdays for two months and hasn't worked out why. I already know why."
 
 "You going to tell him?"
 
@@ -54,7 +54,7 @@ Sam has the syrup upside down over his second plate, timing it. "Ten weeks start
 
 "I'm doing the forge both sessions again," Chloe says. "Same as last year."
 
-"You said that like it was going to be different this year." Ruth doesn't quite smile, but something in her face concedes the point.
+"You said that like it was going to be different this year." Something in Ruth's face concedes the point, amusement plain across it.
 
 "It's not not going to be different. It's just also going to be the forge."
 
@@ -180,7 +180,7 @@ The road back is the same road, colder now, the sodium light gone once they're f
 
 "Having a gun isn't a skill." Ruth's already talking over the end of his sentence. "They stood in a group and let you walk in, and the one at the back made room for you. You could have done that at thirteen."
 
-Sam doesn't answer, looking at the sidewalk. "Why are they so bad at it."
+Sam looks at the sidewalk a moment, working it over before he says anything. "Why are they so bad at it."
 
 "Because they're criminals," Chloe says. "If you were good at anything you wouldn't be behind a hardware store at two in the morning taking phones off teenagers."
 

@@ -2,7 +2,7 @@
 Somebody tries to run an operation against Nadia's company in the spring.
 
 
-She's forty people and eleven months old and nobody outside three counties has heard of her.
+She's forty people and eleven months old, known only within three counties.
 
 
 nadia: somebody tried industrial espionage on me
@@ -64,7 +64,7 @@ The hiring changes Nadia's mind.
 She interviews four hundred people that year, because she's growing and because she does all of it herself.
 
 
-The first thing is that almost nobody can do the take-home. She makes it easier. Then easier again. By November it's a version she'd have handed a twelve-year-old at Halstead and the pass rate is under a third.
+The first thing is that almost everyone fails the take-home. She makes it easier. Then easier again. By November it's a version she'd have handed a twelve-year-old at Halstead and the pass rate is under a third.
 
 
 The second thing is the interviews. She asks people to explain something they built, then asks two questions about it. A lot of them cannot answer the second question, past where they stopped.
@@ -103,7 +103,7 @@ Chapter Twenty-Four: The Exercise
 The exercise runs four days and Sam is on the receiving end of most of it.
 
 
-He's told he'll be moving between two points on foot at night with an opposing element in the area, that they've been briefed to take him, and that they pick their own timing. He gets a start point and a compass and nothing else.
+He's told he'll be moving between two points on foot at night with an opposing element in the area, that they've been briefed to take him, and that they pick their own timing. He gets a start point and a compass.
 
 
 They come at him three times.
@@ -115,7 +115,7 @@ The first is a two-man contact at a fence line, which he handles and afterwards 
 The second is four of them in a culvert with the approach cut off behind him, which is where he starts paying attention, and which takes about eleven seconds and costs him a thumb that swells up for a week.
 
 
-The third is at oh-three-forty on the fourth night, from behind, on ground where the footing is bad, by a man who has done nothing for six hours except wait in one spot for him to come past. The man does everything right. That's what goes in the report afterward. He has the position, the timing, the surprise, and the ground, and the entire encounter takes under two seconds and it does not go his way at any point in it. Sam doesn't remember deciding anything about it. He's got the man's weight going where he wants it before he's finished registering that there's a man.
+The third is at oh-three-forty on the fourth night, from behind, on ground where the footing is bad, by a man who has spent six hours waiting in one spot for him to come past. The man does everything right. That's what goes in the report afterward. He has the position, the timing, the surprise, and the ground, and the entire encounter takes under two seconds. Sam doesn't remember deciding anything about it. He's got the man's weight going where he wants it before he's finished registering that there's a man.
 
 
 ________________
@@ -188,7 +188,7 @@ ________________
 She sits the Foreign Service exam three weeks after she turns twenty.
 
 
-It's four hours. She finds it pleasant. There's a section on world affairs that she enjoys the way you enjoy a crossword. She comes out for a coffee and doesn't think about it again until the result arrives.
+It's four hours. She finds it pleasant. There's a section on world affairs that she enjoys the way you enjoy a crossword. She comes out for a coffee and puts it out of her mind until the result arrives.
 
 
 She reads it as having sat an exam.
@@ -202,7 +202,7 @@ ________________
 The clearance investigation takes seven months and involves a man named Whitaker who comes to see her twice.
 
 
-Chloe likes him. He's thorough and he doesn't pretend the questions are casual.
+Chloe likes him. He's thorough, and direct about what each question is actually for.
 
 
 She tells him everything.
@@ -246,7 +246,7 @@ ________________
 
 
 
-He asks about the funding, and she has nothing. He asks who the school's principal donor is. She has no idea, nobody there ever discussed it, she was seven when she arrived, no more likely to ask who paid for a school than a child asks who pays for a park.
+He asks about the funding, and she comes up empty. He asks who the school's principal donor is. Whoever funds it stayed background noise her whole life there, she was seven when she arrived, about as likely to wonder who pays for a school as a child is to wonder who pays for a park.
 
 
 She says it anyway. It's true.
@@ -282,10 +282,10 @@ One of them says, "wait, what?" and she explains it, and explaining it kills it,
 In February she asks a study group when they think the course will get past fifth-grade concepts.
 
 
-She isn't being cruel. She has no idea it could be taken that way. A boy called Devansh laughs, because it looks like a bit. Then he watches her face two beats past the laugh and stops. The table goes quiet, and Ruth cannot work out why.
+She has no idea it could be taken that way. A boy called Devansh laughs, because it looks like a bit. Then he watches her face two beats past the laugh and stops. The table goes quiet, and Ruth cannot work out why.
 
 
-She goes home and writes down that MIT tracks students by ability and doesn't advertise it.
+She goes home and writes down that MIT tracks students by ability and keeps that quiet.
 
 
 ________________
@@ -296,19 +296,19 @@ ________________
 She holds that for about ten months.
 
 
-What eventually breaks it is not a statistic. It's a professor she likes, in office hours, who she is genuinely fond of, who cannot follow her past the third step of her reasoning and says so, cheerfully, without embarrassment, before asking her to go back.
+What eventually breaks it is a professor she likes, in office hours, someone she is genuinely fond of, who cannot follow her past the third step of her reasoning and says so, cheerfully, without embarrassment, before asking her to go back.
 
 
 Ruth walks out and sits on a wall until the light changes twice.
 
 
-She doesn't tell anybody. She goes and finds the numbers instead, over the following months, one at a time, and every one of them says the same thing, each worse than the one before.
+She goes and finds the numbers herself, over the following months, one at a time, and every one of them says the same thing, each worse than the one before.
 
 
 Second language. Reading level. Fractions. She keeps posting them in the chat and watching people make a joke inside a minute and move on.
 
 
-In April she stops posting, because she has understood what the numbers add up to and she does not want to be the one who says it.
+In April she stops posting, because she has understood what the numbers add up to and would rather somebody else say it first.
 
 
 ________________
@@ -396,7 +396,7 @@ Chapter Twenty-Seven: The Money
 The financial one takes eleven weeks.
 
 
-Eli builds it, and Kavi builds the thing that watches it. The whole design problem is that it has to be boring. It doesn't search. Anything that searches looks like something searching. It sits in the places where a badly maintained reconciliation job would sit, and moves just as slowly. None of them have that kind of patience. The program does.
+Eli builds it, and Kavi builds the thing that watches it. The whole design problem is that it has to be boring, sitting in the places where a badly maintained reconciliation job would sit and moving just as slowly, so it reads as ordinary and not as anything that searches. None of them have that kind of patience. The program does.
 
 
 They test it for a month against Nadia's own systems before it goes anywhere.
@@ -496,7 +496,7 @@ kavi: who though. needs motive and funding.
 nadia: the government tracks everything. if anyone has a file its them
 
 
-Theo doesn't post for eleven minutes.
+Eleven minutes pass before Theo posts again.
 
 
 theo: ok
@@ -561,7 +561,7 @@ Chapter Twenty-Eight: The Other One
 Eli proposes the second worm and Theo says no for nine days.
 
 
-Nobody in the argument is confused about the law. All seven had sat the same examination and Ruth quotes the sentencing ranges from memory, twice, at Eli.
+Every one of them knows the law cold. All seven had sat the same examination and Ruth quotes the sentencing ranges from memory, twice, at Eli.
 
 
 theo: i want it on record that this is the stupidest thing any of us has ever done
@@ -596,7 +596,7 @@ ________________
 
 
 
-They test it for five weeks. Chloe writes the rules because she's the one who writes, and it comes to nine pages: the limits it never touches, the response if it's noticed, and what happens if any one of the seven says stop, which is that all of it ends inside the hour with no argument.
+They test it for five weeks. Chloe writes the rules because she's the one who writes, and it comes to nine pages: the limits it keeps to, the response if it's noticed, and what happens if any one of the seven says stop, which is that all of it ends inside the hour with no argument.
 
 
 Everyone signs off. Theo signs off last and says again that this is insane.
@@ -614,7 +614,7 @@ There is a file on all ninety-one of them.
 Address, employer, family, where their parents work, where everybody banks. Sam's is the thickest and the newest. Theo's has a note on it that makes him close his laptop and go outside for twenty minutes.
 
 
-There's a standing line saying the graduates are believed to be in contact with one another. The file has never worked out the method, and collection against the channel has come back empty every time it's tried, along with a recommendation to keep attempting it.
+There's a standing line saying the graduates are believed to be in contact with one another. The file lists the method as unknown, and collection against the channel comes back empty every time it's tried, along with a recommendation to keep attempting it.
 
 
 And there's an incident report from six years back.
@@ -629,7 +629,7 @@ Seven men. Three firearms.
 None of the seven agrees with the others about the order of it. They agree it was fast, that one of the four did all of it, and that the other three were not where they had been. Two of them independently report being told, during or just after, that this had been sloppy and needed more practice.
 
 
-None of them could describe any of the four.
+All seven come back with a blank on what the four looked like.
 
 
 Then the last paragraph. Footage was sought from the Waffle House, the two units either side, a traffic camera, and a municipal camera up the road. All of it is unrecoverable where the four students appear, and intact everywhere else. No known method.
@@ -758,10 +758,10 @@ Chapter Thirty: Nine Minutes
 The worm goes quiet on a Thursday in June.
 
 
-A check-in doesn't arrive. Nine minutes later, everything is precisely where it should be. Same state, same position, nothing moved.
+A check-in doesn't arrive. Nine minutes later, everything is precisely where it should be. Same state, same position, exactly as it was.
 
 
-He pulls the logs. No error, no restart, no gap. There is no nine minutes anywhere in them, and the process does not know it was ever not running.
+He pulls the logs. No error, no restart, no gap. There is no nine minutes anywhere in them, and the process reports itself running the whole time.
 
 
 Kavi's watcher, whose entire job is to see anything that anybody else might see, reports a healthy process across the whole window.
