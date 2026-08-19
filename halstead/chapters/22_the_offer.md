@@ -2,7 +2,7 @@
 
 *April 2023*
 
-Mr. Amberg runs the exit interviews himself, fifteen minutes each, ten students a day for nine days starting the first Monday of April. A list goes up outside the staff office every morning with that day's names in order, and a runner comes down from admin to call the next one in when the clock on his desk says it's time. He runs each one the full fifteen minutes, by the staff's own count, even the ones that could have ended in under a minute. His own contracts class still meets four times that week, the interviews slotted into whatever's left of the day around it.
+Mr. Amberg runs the exit interviews himself, fifteen minutes each, ten or eleven students a day for nine days starting the first Monday of April. A list goes up outside the staff office every morning with that day's names in order, and a runner comes down from admin to call the next one in when the clock on his desk says it's time. He runs each one the full fifteen minutes, by the staff's own count, even the ones that could have ended in under a minute. His own contracts class still meets four times that week, the interviews slotted into whatever's left of the day around it.
 
 
 Chloe's slot falls on the Wednesday of the second week, third appointment after lunch. His office holds a desk, two chairs, and a small clock turned to face only him. A folder is already open on the desk when she sits down, her name typed across the tab, and he starts before she's settled.
