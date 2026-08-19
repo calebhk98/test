@@ -5,7 +5,7 @@
 The exercise runs four days and Sam is on the receiving end of most of it.
 
 
-He's told he'll be moving between two points on foot at night with an opposing element in the area, that they've been briefed to take him, and that they pick their own timing. He gets a start point and a compass and nothing else.
+He's told he'll be moving between two points on foot at night with an opposing element in the area, that they've been briefed to take him, and that they pick their own timing. He gets a start point and a compass.
 
 
 They come at him three times.
@@ -17,7 +17,7 @@ The first is a two-man contact at a fence line, which he handles and afterwards 
 The second is four of them in a culvert with the approach cut off behind him, which is where he starts paying attention, and which takes about eleven seconds and costs him a thumb that swells up for a week.
 
 
-The third is at oh-three-forty on the fourth night, from behind, on ground where the footing is bad, by a man who has done nothing for six hours except wait in one spot for him to come past. The man does everything right. That's what goes in the report afterward. He has the position, the timing, the surprise, and the ground, and the entire encounter takes under two seconds and it does not go his way at any point in it. Sam doesn't remember deciding anything about it. He's got the man's weight going where he wants it before he's finished registering that there's a man.
+The third is at oh-three-forty on the fourth night, from behind, on ground where the footing is bad, by a man who has spent six hours waiting in one spot for him to come past. The man does everything right. That's what goes in the report afterward. He has the position, the timing, the surprise, and the ground, and the entire encounter takes under two seconds. Sam doesn't remember deciding anything about it. He's got the man's weight going where he wants it before he's finished registering that there's a man.
 
 
 ________________

@@ -5,7 +5,7 @@
 Somebody tries to run an operation against Nadia's company in the spring.
 
 
-She's forty people and eleven months old and nobody outside three counties has heard of her.
+She's forty people and eleven months old, known only within three counties.
 
 
 nadia: somebody tried industrial espionage on me
@@ -67,7 +67,7 @@ The hiring changes Nadia's mind.
 She interviews four hundred people that year, because she's growing and because she does all of it herself.
 
 
-The first thing is that almost nobody can do the take-home. She makes it easier. Then easier again. By November it's a version she'd have handed a twelve-year-old at Halstead and the pass rate is under a third.
+The first thing is that almost everyone fails the take-home. She makes it easier. Then easier again. By November it's a version she'd have handed a twelve-year-old at Halstead and the pass rate is under a third.
 
 
 The second thing is the interviews. She asks people to explain something they built, then asks two questions about it. A lot of them cannot answer the second question, past where they stopped.
