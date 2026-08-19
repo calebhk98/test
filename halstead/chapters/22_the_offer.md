@@ -64,13 +64,13 @@ The boy in for the four o'clock slot is on his feet before the runner even calls
 "Six?" Chloe says, glancing at the door he just came out of.
 
 
-"I already had the desk, since I was fifteen," he says, resettling the strap on his shoulder without slowing down. "He just made it official." He's three steps past her by the last word, one hand up in something that isn't quite a wave.
+"I already had the desk, since I was fifteen," he says, resettling the strap on his shoulder, still moving. "He just made it official." He's three steps past her by the last word, one hand up in a fast, half-formed wave.
 
 
 By the second week the number stops being the interesting part of the conversation. Three times market, housing, a car, the degree paid for, the post held, everyone in the corridor runs some version of Chloe's own arithmetic out loud at some point and lands somewhere over a hundred thousand dollars, and after the fourth or fifth time it gets said out loud it barely gets a reaction from anyone still waiting in the chairs. Somebody chalks the whole sum onto the corner of the common room whiteboard by that Thursday, a hundred and thirty five plus everything else, and a second hand adds a question mark to the end of it before the day is out.
 
 
-Two boys from the year below share the chair by the noticeboard for a few minutes between slots, close enough to hear each other without meaning to.
+Two boys from the year below share the chair by the noticeboard for a few minutes between slots, close enough to overhear each other.
 
 
 "You get the car thing?"
@@ -85,16 +85,16 @@ The first one checks something on his phone before he bothers answering the foll
 "He didn't say which car."
 
 
-One boy, out of the office a full hour before Chloe's own turn, announces to the whole corridor that he turned it down flat because his mother would stop speaking to him for a decade if he skipped actual college for a paycheck. Three people laugh. He doesn't, and goes back to reading whatever's on his phone like the conversation already cost him something.
+One boy, out of the office a full hour before Chloe's own turn, announces to the whole corridor that he turned it down flat because his mother would stop speaking to him for a decade if he skipped actual college for a paycheck. Three people laugh. He keeps reading whatever's on his phone, face flat, like the conversation already cost him something.
 
 
 A girl two years below Chloe comes out grinning, drops into the chair by the door, and says the whole thing out loud twice, the number, the car, all of it, as if saying it again will make it hold still. The two boys waiting behind her let her have it, neither one saying anything about the volume.
 
 
-A boy from Chloe's own year, later in the second week, comes out and doesn't sit down at all. He stands at the window with both hands flat on the sill until they stop shaking, then leaves without answering when someone asks if he's all right. The runner marks his name off the list a little more carefully than the others, and moves on to the next one.
+A boy from Chloe's own year, later in the second week, comes out and stays on his feet. He stands at the window with both hands flat on the sill until they stop shaking, then leaves before the question of whether he's all right gets an answer. The runner marks his name off the list a little more carefully than the others, and moves on to the next one.
 
 
-What keeps being interesting, once the list is finished, is that eleven people said yes, and not one of them needed the walk back to class to think it over. Every one of the eleven had already been somewhere in that building, on a floor with a badge on the door, longer than the rest of the year had any reason to know. The eighty who said no go back to their own last weeks of school without much to say about it either way, final transcripts still to sort out, the ordinary business of finishing something they'd already half finished before the list ever went up.
+What keeps being interesting, once the list is finished, is that eleven people said yes, and each of them had the answer before the walk back to class started. Every one of the eleven had already been somewhere in that building, on a floor with a badge on the door, longer than the rest of the year had any reason to know. The eighty who said no go back to their own last weeks of school, final transcripts still to sort out, the ordinary business of finishing something they'd already half finished before the list ever went up.
 
 
 ________________
@@ -105,22 +105,22 @@ ________________
 Kavi is one of the eleven, and word gets around a plainer way than a posted list, before anyone official says a thing. Chloe hears his name in the common room before dinner, in the same breath as a number, and goes to get the rest of it from him directly instead of secondhand.
 
 
-Chloe finds him in the network room that evening, back against the radiator by the door, a length of stripped cable coiled around one hand while he turns the copper end over between two fingers, over and over, without looking at it. The overhead light in here has buzzed since October, and whoever's supposed to fix it hasn't been asked.
+Chloe finds him in the network room that evening, back against the radiator by the door, a length of stripped cable coiled around one hand while he turns the copper end over between two fingers, over and over, eyes somewhere else. The overhead light in here has buzzed since October, low on anyone's list to fix.
 
 
 "Why?" she asks.
 
 
-"Because what I want to do is happening in one building and I'm standing in it," Kavi says, and doesn't stop turning the cable.
+"Because what I want to do is happening in one building and I'm standing in it," Kavi says, and keeps turning the cable.
 
 
 "But it's school," she says.
 
 
-"It stopped being school for me a while ago." He sets the coil down on the bench, edges lined up flush with the bench's own edge, and doesn't pick it back up. "School teaches you things on somebody else's schedule and grades you on how close you get to an answer that's already written down somewhere. Nobody upstairs has that answer written down. I brought them a false positive rate on Tuesday and nobody in the building could tell me if it was wrong, because nobody had checked it yet. That doesn't happen in a classroom. It can't. The classroom's whole job is already knowing." He looks at her the way he looks at a mark scheme, waiting for the next objection rather than the next compliment. "It's a lab that also has children in it." He says it flat, the same register he'd use to correct a wrong exponent, and doesn't wait to see if it landed.
+"It stopped being school for me a while ago." He sets the coil down on the bench, edges lined up flush with the bench's own edge, and leaves it there. "School teaches you things on somebody else's schedule and grades you on how close you get to an answer that's already written down somewhere. Nobody upstairs has that answer written down. I brought them a false positive rate on Tuesday and nobody in the building could tell me if it was wrong, because nobody had checked it yet. That doesn't happen in a classroom. It can't. The classroom's whole job is already knowing." He looks at her the way he looks at a mark scheme, waiting for the next objection rather than the next compliment. "It's a lab that also has children in it." He says it flat, the same register he'd use to correct a wrong exponent, and moves on before it lands.
 
 
-Chloe doesn't say anything else. It's the same thing the boy with the laptop bag already told her in six minutes, in fewer words. Kavi picks the cable back up and starts stripping the next foot of it, the same slow half turn of the wrist each time, and she leaves him to it.
+Chloe watches the cable a moment longer. It's the same thing the boy with the laptop bag already told her in six minutes, in fewer words. Kavi picks the cable back up and starts stripping the next foot of it, the same slow half turn of the wrist each time, and she leaves him to it.
 
 
 ________________
@@ -140,7 +140,7 @@ Her mother picks up on the second ring, already three steps into her kitchen loo
 "No to what?" A beat, the pacing not stopping yet. "Wait, what was the yes?"
 
 
-Chloe gives it to her in order, the way Amberg gave it to her, four things instead of one long sentence. Research, full time. Three times the pay. Housing, food, a car, medical, nothing coming out of her end. The degree paid for if she wanted it, the post held after.
+Chloe gives it to her in order, the way Amberg gave it to her, four things instead of one long sentence. Research, full time. Three times the pay. Housing, food, a car, medical, none of it hers to pay for. The degree paid for if she wanted it, the post held after.
 
 
 The pacing stops.
@@ -170,7 +170,7 @@ It starts again after a few seconds, three steps and back. "Three times what."
 "I didn't ask that either."
 
 
-Her mother goes quiet again, the particular quiet she gets over a mortgage statement before she finds the one line that actually matters and reads it out loud twice. Nobody says anything for the length of one more loop of the kitchen.
+Her mother goes quiet again, the particular quiet she gets over a mortgage statement before she finds the one line that actually matters and reads it out loud twice. The line holds silent for the length of one more loop of the kitchen.
 
 
 "Dave." Her mother's voice moves away from the phone and comes back closer, and then her father's on the line too, near enough that Chloe can hear both of them breathing at once.
@@ -197,16 +197,16 @@ Neither of them argues with her either. Her mother asks if she's sure three sepa
 "Huh." A short laugh, cut off almost as soon as it starts. "Good for him."
 
 
-"What about the other two." Ruth and Sam, he means, the only two names in that building he doesn't need reminding of twice.
+"What about the other two." Ruth and Sam, he means, the only two names in that building already fixed in his memory.
 
 
 "Same as me. Ruth's still going to MIT, and Sam's still doing the thing with the Army."
 
 
-"Good," he says, and this time there's nothing under it to cut off.
+"Good," he says, the whole word behind it this time.
 
 
-Before they hang up, her mother says the thing she'll go on saying every summer for the next two years, about the state school an hour from wherever Chloe ends up, about how it isn't free and neither of them has ever pretended it would be, and that they'll manage it the way they manage everything else. It comes out in the same flat voice she uses reading a mortgage clause out loud at the kitchen table, checking it against what it's actually going to cost.
+Before they hang up, her mother says the thing she'll go on saying every summer for the next two years, about the state school an hour from wherever Chloe ends up, about the cost being real, exactly as they've always said it was, and that they'll manage it the way they manage everything else. It comes out in the same flat voice she uses reading a mortgage clause out loud at the kitchen table, checking it against what it's actually going to cost.
 
 
 "Okay," Chloe says.

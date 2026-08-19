@@ -8,7 +8,7 @@ She counts it twice on the way down, then takes it along to the office, nine ste
 
 "There's an extra one on here that wasn't on last year's."
 
-"Nine-year-olds get eight. You were on seven." The woman keeps her eyes on the form in front of her. "It goes up. It's supposed to get harder every year, that's the whole idea of a school. Is there a problem with it?"
+"Nine-year-olds get eight. You were on seven." The woman keeps her eyes on the form in front of her, finishing the line she's on before she answers. "It goes up. It's supposed to get harder every year, that's the whole idea of a school. Is there a problem with it?"
 
 "No, I wanted to know whether somebody had put it on there by mistake."
 
@@ -30,7 +30,7 @@ Sam looks up with a fork in his hand.
 
 "I liked dance, and I was good at dance, and I'm going to keep saying it."
 
-Ruth keeps her eyes on her book. "You were good at dance," she says, "which is why you liked it, Sam, and if you'd been ninetieth you'd be up there on the table with her."
+Ruth keeps her eyes on the book that's open in her lap. "You were good at dance," she says, "which is why you liked it, Sam, and if you'd been ninetieth you'd be up there on the table with her."
 
 Chloe does one more lap of the table before she sits down, and Ruth turns a page.
 
@@ -38,7 +38,7 @@ Chloe does one more lap of the table before she sits down, and Ruth turns a page
 
 Mandarin is with a woman called Mrs. Sun, who grew up in Harbin and taught in Vancouver for eleven years before this, and who speaks to the room in Mandarin from the first hour and in English about four times a term.
 
-The reading comes fast, because the characters go in and stay in. In November she gets through a whole page in one go. By February she is doing novels. By March she is turning in the ten-page end-of-term reports in Mandarin, on the same question everybody else has.
+The reading comes fast, because the characters go in and stay in. In November she gets through a whole page in one go, which she marks by dog-earing the corner. By February she is doing novels. By March she is turning in the ten-page end-of-term reports in Mandarin, on the same question everybody else has.
 
 The sound is the other half, and it stays out of reach. The four tones sound like four different people saying one word, easy enough to tell apart, but she cannot make the difference happen in her own mouth. In November Mrs. Sun stops the hour and does it on the board for the whole room, because four of them have it.
 
@@ -62,7 +62,7 @@ Statistics turns out to be an hour of somebody taking a number apart in front of
 
 "You said that on Monday."
 
-Chemistry is Vasquez, who does set things on fire on purpose, twice in the first term, and both times the room goes in quiet and comes out loud. On the phone on Sunday, Chloe carries the whole nine minutes herself, describing the second one to her mother. She burns a hole through a sleeve in the second week. In the fourth she makes something that is supposed to come out white, gets grey, and carries it up to the front.
+Chemistry is Vasquez, who does set things on fire on purpose, twice in the first term, and both times the room goes in quiet and comes out loud. On the phone on Sunday, Chloe carries the whole nine minutes herself, describing the second one to her mother, who mostly just listens. She burns a hole through a sleeve in the second week. In the fourth she makes something that is supposed to come out white, gets grey, and carries it up to the front.
 
 "Water."
 
