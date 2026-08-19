@@ -174,6 +174,12 @@ These are checkable and wrong. Highest priority.
   to see the collateral.
 - **ch19 L3 vs L83–117** — the stated April 2022–June 2023 range doesn't hold an April exam, five
   months of practice papers, a Sept–March driving arc, an October retake, and a June homecoming.
+- **ch30 L3 vs L42/L95** — same defect. The chapter is dated September 2025 – January 2026, five
+  months. L42: "The clearance investigation takes seven months." L95: it comes through "in the
+  autumn," and L97 has her start in January. Working backward from an autumn-2025 result, a
+  seven-month investigation began around February 2025 — six months before the chapter's own stated
+  start. Either the dateline needs to open earlier or the seven months needs to shorten. *(verified
+  directly)*
 - **ch5 L9–10** — Kavi applies the mid-sentence rule before the rule is given to the room.
 - **ch3 L39** — "then forgets to ask again for four days, because it's July and there's a sprinkler."
   The "because" isn't a mechanism.
@@ -531,6 +537,8 @@ reader" problem, in its structural form.
 - **ch29 L28–46** — "At the debrief a major runs through the four days." No room, and no other
   soldiers: a private stands up in what should be a full debrief and tells a major the assessment
   was too easy, in front of nobody.
+- **ch30 L42–93** — the two Whitaker interviews, which are the chapter, have no room, no furniture
+  and no bodies anywhere across fifty lines.
 
 ### Not a staging gap — the same shape twice, on purpose
 
@@ -646,6 +654,14 @@ flagged with the justification sitting in the same paragraph.
   this is a chat chapter where nobody punctuates anything, so the question-mark test can't
   discriminate here, and a bare "how" with no punctuation reads closer to a demand than to an
   enquiry. Worth a glance, not a fix.
+
+- **ch30 L48, "She tells him everything,"** followed at L54 by "I've been asked not to say what it's
+  about, and I said I wouldn't." Reported as a contradiction with three refusals; there is one, and
+  it is disclosed rather than concealed — she tells him that there is a thing she won't tell him, and
+  who ran it and when. In a clearance interview, demonstrating that she keeps a confidence is the
+  favourable answer, so this reads as deliberate. It is still the same flat-absolute-then-exception
+  construction as ch3's "Nobody has ever sent Chloe anything," which is a real error elsewhere, so
+  it's worth a look at the sentence rather than the scene.
 
 ### Also withdrawn
 
