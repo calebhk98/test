@@ -57,7 +57,7 @@ Chloe asks to use the bathroom first, which turns out to be through a door she'd
 He sits with it, and lets the room stay quiet instead of moving on to something easier, long enough that Chloe fills it herself.  
 "I look out the window," Chloe says.  
 "At what?"  
-"The parking lot. There's people in it doing stuff. There was a guy who put his coffee on the roof of the car and drove off with it still up there and it fell off at the stop sign." She looks at the cup. "And then Mrs. Aldana asked me a question and I didn't know there was one."  
+"The parking lot. There's people in it doing stuff. There was a guy who put his coffee on the roof of the car and drove off with it still up there and it went off at the turn out of the lot." She looks at the cup. "And then Mrs. Aldana asked me a question and I didn't know there was one."  
 "How long is it, usually? Between when you finish and when everybody else does."  
 "I don't know. A long time."  
 "Longer than we've been in here?"  
