@@ -425,3 +425,178 @@ class RunnerIntegrationTests(unittest.TestCase):
         self.assertEqual(summary["budget_before"]["requests_used"], 0)
         self.assertGreaterEqual(summary["budget_after"]["requests_used"], 1)
         self.assertEqual(summary["budget_after"]["listings_cap"], 100)
+
+
+class HealthTrackingTests(unittest.TestCase):
+    """Per-adapter health, which is what the website, API and MCP all read."""
+
+    def setUp(self):
+        self.conn = db.init_db(Path(tempfile.mkdtemp()) / "h.db")
+
+    def tearDown(self):
+        self.conn.close()
+
+    def test_a_successful_run_is_recorded(self):
+        db.save_scraper_status(self.conn, "repairpal", {
+            "status": "ok", "message": "", "pages_fetched": 2, "listings": 2, "kept_after_filters": 2})
+        row = db.get_scraper_status(self.conn, "repairpal")[0]
+        self.assertEqual(row["status"], "ok")
+        self.assertEqual(row["pages"], 2)
+        self.assertEqual(row["ok_runs"], 1)
+        self.assertEqual(row["failed_runs"], 0)
+        self.assertIsNotNone(row["last_ok_at"])
+        self.assertIsNone(row["last_error"])
+
+    def test_a_block_is_recorded_as_a_failure_with_its_reason(self):
+        db.save_scraper_status(self.conn, "autotrader", {
+            "status": "blocked", "message": "bot challenge instead of the page"})
+        row = db.get_scraper_status(self.conn, "autotrader")[0]
+        self.assertEqual(row["status"], "blocked")
+        self.assertEqual(row["failed_runs"], 1)
+        self.assertIn("bot challenge", row["last_error"])
+        self.assertIsNotNone(row["last_error_at"])
+
+    def test_tallies_accumulate_across_runs(self):
+        for status in ("ok", "blocked", "ok", "error"):
+            db.save_scraper_status(self.conn, "cars_com", {"status": status, "message": status})
+        row = db.get_scraper_status(self.conn, "cars_com")[0]
+        self.assertEqual(row["ok_runs"], 2)
+        self.assertEqual(row["failed_runs"], 2)
+        self.assertEqual(row["status"], "error", "the latest state wins")
+
+    def test_the_last_success_survives_a_later_failure(self):
+        db.save_scraper_status(self.conn, "repairpal", {"status": "ok"})
+        first_ok = db.get_scraper_status(self.conn, "repairpal")[0]["last_ok_at"]
+        db.save_scraper_status(self.conn, "repairpal", {"status": "blocked", "message": "wall"})
+        row = db.get_scraper_status(self.conn, "repairpal")[0]
+        self.assertEqual(row["last_ok_at"], first_ok, "you should still see when it last worked")
+        self.assertEqual(row["status"], "blocked")
+
+    def test_events_are_listed_newest_first_and_can_be_filtered(self):
+        db.record_scrape(self.conn, "repairpal", "page", "https://a.test/1", 200, 1, "")
+        db.record_scrape(self.conn, "carmax", "probe", "https://b.test/2", 403, 0, "denied")
+        events = db.recent_scrape_events(self.conn, limit=10)
+        self.assertEqual(events[0]["source"], "carmax")
+        self.assertEqual(len(db.recent_scrape_events(self.conn, source="repairpal")), 1)
+
+    def test_event_limit_is_bounded(self):
+        for index in range(30):
+            db.record_scrape(self.conn, "repairpal", "page", f"https://a.test/{index}", 200, 0, "")
+        self.assertEqual(len(db.recent_scrape_events(self.conn, limit=5)), 5)
+        self.assertLessEqual(len(db.recent_scrape_events(self.conn, limit=9999)), 200)
+
+    def test_a_run_writes_health_for_every_source_it_touched(self):
+        from carmon.config import load_config
+        from carmon.pipeline import run_scrapers
+
+        config = load_config()
+        tmp = Path(tempfile.mkdtemp())
+        config.data["paths"]["db"] = str(tmp / "run.db")
+        config.data["scrapers"].update({"enabled": True, "sources": {"fixture2": True},
+                                        "min_seconds_between_requests": 0})
+        config.data["enrichment"]["nhtsa_enabled"] = False
+        config.data["enrichment"]["epa_mpg_enabled"] = False
+        conn = db.init_db(config.db_path)
+
+        class Fixture2(base.ScraperBase):
+            key = "fixture2"
+            name = "Fixture Two"
+            site = "https://example.test"
+
+            def search_urls(self, search):
+                return ["https://example.test/s"]
+
+            def parse(self, body, url):
+                return [{"vin": "HEALTH0000000001", "make": "Toyota", "model": "Corolla",
+                         "year": 2022, "mileage": 30000, "price_current": 17000,
+                         "body_type": "Sedan", "distance_miles": 20.0}]
+
+        base.REGISTRY["fixture2"] = Fixture2
+        original = base.Fetcher
+        base.Fetcher = lambda conn_, source, limits=None, **kwargs: original(
+            conn_, source, limits, robots=FakeRobots(), opener=CountingOpener())
+        try:
+            run_scrapers(config, conn, run_date="2026-08-19")
+        finally:
+            base.Fetcher = original
+            base.REGISTRY.pop("fixture2", None)
+
+        row = db.get_scraper_status(conn, "fixture2")[0]
+        self.assertEqual(row["status"], "ok")
+        self.assertEqual(row["kept"], 1)
+        conn.close()
+
+
+class ReferenceSourceTests(unittest.TestCase):
+    """A reference adapter (RepairPal) is keyed by model, not by the listing search."""
+
+    def setUp(self):
+        from carmon.config import load_config
+        self.tmp = Path(tempfile.mkdtemp())
+        self.config = load_config()
+        self.config.data["paths"]["db"] = str(self.tmp / "ref.db")
+        self.config.data["scrapers"].update({
+            "enabled": True, "sources": {"reference_fixture": True}, "min_seconds_between_requests": 0,
+        })
+        self.conn = db.init_db(self.config.db_path)
+        self.opener = CountingOpener()
+
+        class ReferenceFixture(base.ScraperBase):
+            key = "reference_fixture"
+            name = "Reference Fixture"
+            site = "https://example.test"
+            kind = "reference"
+
+            def search_urls(self, search):
+                make, model = search.get("make"), search.get("model")
+                return [f"https://example.test/{make}/{model}"] if make and model else []
+
+            def parse(self, body, url):
+                make, model = url.rsplit("/", 2)[-2:]
+                return [{"make": make, "model": model, "annual_repair_cost": 400.0}]
+
+        base.REGISTRY["reference_fixture"] = ReferenceFixture
+        self.original_fetcher = base.Fetcher
+        opener, robots = self.opener, FakeRobots()
+        base.Fetcher = lambda conn_, source, limits=None, **kwargs: self.original_fetcher(
+            conn_, source, limits, robots=robots, opener=opener)
+        # A module-level store() is how the runner persists reference records.
+        import sys as _sys
+        _sys.modules[ReferenceFixture.__module__].store = getattr(
+            _sys.modules[ReferenceFixture.__module__], "store", None)
+
+    def tearDown(self):
+        base.Fetcher = self.original_fetcher
+        base.REGISTRY.pop("reference_fixture", None)
+        self.conn.close()
+
+    def test_models_come_from_the_database_then_the_preferred_list(self):
+        from carmon.pipeline import reference_models
+        db.upsert_listing(self.conn, {"vin": "REF0000000000001", "make": "Subaru",
+                                      "model": "Impreza", "year": 2022, "price_current": 17000})
+        models = reference_models(self.config, self.conn)
+        pairs = [(entry["make"], entry["model"]) for entry in models]
+        self.assertEqual(pairs[0], ("Subaru", "Impreza"), "cars actually for sale come first")
+        self.assertIn(("Toyota", "Corolla"), pairs, "the preferred list fills in the rest")
+
+    def test_an_empty_database_still_looks_up_the_preferred_models(self):
+        from carmon.pipeline import reference_models
+        models = reference_models(self.config, self.conn)
+        self.assertTrue(models)
+        self.assertIn(("Honda", "Civic"), [(m["make"], m["model"]) for m in models])
+
+    def test_the_runner_asks_once_per_model(self):
+        from carmon.pipeline import run_scrapers
+        summary = run_scrapers(self.config, self.conn)
+        entry = summary["sources"]["reference_fixture"]
+        self.assertEqual(entry["status"], "ok")
+        self.assertEqual(len(entry["models"]), 5, "one lookup per preferred model")
+        self.assertEqual(len(self.opener.calls), 5)
+
+    def test_the_runner_stops_when_the_request_budget_runs_out(self):
+        from carmon.pipeline import run_scrapers
+        self.config.data["scrapers"]["max_requests_per_day"] = 2
+        summary = run_scrapers(self.config, self.conn)
+        entry = summary["sources"]["reference_fixture"]
+        self.assertLessEqual(len(self.opener.calls), 2)
+        self.assertIn(entry["status"], ("budget", "ok"))

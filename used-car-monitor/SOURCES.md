@@ -95,20 +95,26 @@ theirs knows the country, yours knows your actual search area.
 
 ## Scrapers (now built, off by default)
 
-`carmon/scrapers/` now holds working machinery rather than an empty seam — see README §11 for
+`carmon/scrapers/` now holds working machinery rather than an empty seam — see [docs/scrapers.md](docs/scrapers.md) for
 the full rules. The short version: robots.txt always obeyed and failing closed, 100 listings
 and 20 requests a day across all sources, 2 pages per run, 5 seconds between requests, one
 honest User-Agent, and a hard stop the moment a site answers with a bot challenge. No
 CAPTCHA solving, no proxies, no identity rotation — a challenge is treated as the site
 declining, which it is.
 
-Three adapters ship: **RepairPal** (repair cost and reliability, the one verified against a
-real page), **Autotrader** and **Cars.com** (listings; both currently blocked from a
-datacenter IP, so their parsers are written against schema.org markup but unvalidated).
-`python3 -m carmon scrape --probe` tells you what your own connection can reach.
+Seven adapters ship: **RepairPal** (repair cost and reliability — the only one verified
+against a real page), plus **Autotrader**, **Cars.com**, **CarGurus**, **CarMax**, **Carvana**
+and **TrueCar** for listings. Six of the seven are refused from a datacenter IP, so their
+parsers target schema.org markup and are unvalidated against live HTML; a home connection
+often behaves differently. `python3 -m carmon scrape --probe` tells you what your own
+connection can actually reach, and the website's Scrapers page shows each adapter's state,
+last run and last error.
 
-CarGurus, CarMax, Carvana and TrueCar are not implemented: all four refuse automated
-requests outright, and building around that refusal is not something this project does.
+**CarGurus is a settled no**, and worth spelling out: its robots.txt is served willingly to an
+honest bot and contains `Disallow: /Cars/inventorylisting/` — the exact page a scraper would
+read. That is an explicit refusal, so the adapter will decline on any network. Its deal rating
+stays a browsing link, and the monitor computes its own price-versus-expected comparison
+locally instead — see [docs/market-analysis.md](docs/market-analysis.md).
 
 ## If MarketCheck turns out not to be worth it
 

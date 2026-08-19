@@ -77,6 +77,21 @@ CREATE TABLE IF NOT EXISTS model_repair_cost (
     PRIMARY KEY (make, model)
 );
 
+CREATE TABLE IF NOT EXISTS scraper_status (
+    source       TEXT PRIMARY KEY,
+    last_run_at  TEXT,
+    status       TEXT,
+    message      TEXT,
+    pages        INTEGER DEFAULT 0,
+    listings     INTEGER DEFAULT 0,
+    kept         INTEGER DEFAULT 0,
+    ok_runs      INTEGER DEFAULT 0,
+    failed_runs  INTEGER DEFAULT 0,
+    last_ok_at   TEXT,
+    last_error   TEXT,
+    last_error_at TEXT
+);
+
 CREATE TABLE IF NOT EXISTS scrape_usage (
     id        INTEGER PRIMARY KEY AUTOINCREMENT,
     ts        TEXT NOT NULL,
@@ -753,3 +768,62 @@ def get_repair_cost(conn: sqlite3.Connection, make: str, model: str) -> Optional
         except json.JSONDecodeError:
             pass
     return data
+
+
+# --- scraper health ------------------------------------------------------
+def save_scraper_status(conn: sqlite3.Connection, source: str, result: Dict[str, Any]) -> None:
+    """Record the outcome of one adapter run, keeping running ok/failure tallies."""
+    status = str(result.get("status") or "unknown")
+    message = result.get("message") or ""
+    now = now_str()
+    ok = status == "ok"
+    existing = conn.execute("SELECT * FROM scraper_status WHERE source = ?", (source,)).fetchone()
+    ok_runs = (existing["ok_runs"] if existing else 0) + (1 if ok else 0)
+    failed_runs = (existing["failed_runs"] if existing else 0) + (0 if ok else 1)
+    conn.execute(
+        """
+        INSERT INTO scraper_status
+            (source, last_run_at, status, message, pages, listings, kept, ok_runs, failed_runs,
+             last_ok_at, last_error, last_error_at)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ON CONFLICT(source) DO UPDATE SET
+            last_run_at = excluded.last_run_at, status = excluded.status,
+            message = excluded.message, pages = excluded.pages, listings = excluded.listings,
+            kept = excluded.kept, ok_runs = excluded.ok_runs, failed_runs = excluded.failed_runs,
+            last_ok_at = COALESCE(excluded.last_ok_at, scraper_status.last_ok_at),
+            last_error = COALESCE(excluded.last_error, scraper_status.last_error),
+            last_error_at = COALESCE(excluded.last_error_at, scraper_status.last_error_at)
+        """,
+        (
+            source, now, status, message, int(result.get("pages_fetched") or 0),
+            int(result.get("listings") or 0), int(result.get("kept_after_filters") or 0),
+            ok_runs, failed_runs,
+            now if ok else None,
+            None if ok else (message or status),
+            None if ok else now,
+        ),
+    )
+    conn.commit()
+
+
+def get_scraper_status(conn: sqlite3.Connection, source: Optional[str] = None) -> List[Dict[str, Any]]:
+    if source:
+        rows = conn.execute("SELECT * FROM scraper_status WHERE source = ?", (source,)).fetchall()
+    else:
+        rows = conn.execute("SELECT * FROM scraper_status ORDER BY source").fetchall()
+    return [dict(row) for row in rows]
+
+
+def recent_scrape_events(conn: sqlite3.Connection, limit: int = 25, source: Optional[str] = None) -> List[Dict[str, Any]]:
+    """The raw request log — what was fetched, when, and with what result."""
+    clauses, params = [], []
+    if source:
+        clauses.append("source = ?")
+        params.append(source)
+    where = f"WHERE {' AND '.join(clauses)}" if clauses else ""
+    rows = conn.execute(
+        f"SELECT ts, day, source, kind, url, status, listings, note FROM scrape_usage {where} "
+        "ORDER BY id DESC LIMIT ?",
+        (*params, max(1, min(int(limit), 200))),
+    ).fetchall()
+    return [dict(row) for row in rows]

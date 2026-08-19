@@ -25,6 +25,7 @@ from . import demo as demomod
 from . import market as marketmod
 from . import quota as quotamod
 from . import scoring as scoringmod
+from . import settings as settingsmod
 from . import sources as sourcesmod
 from .config import Config, load_config
 
@@ -49,6 +50,22 @@ DEMO_WARNING_NOTE = (
     " If any returned listing is seeded demo data (source 'demo'), the JSON payload "
     "carries a top-level 'warning' field with details. Demo rows are fake and must "
     "never be reported to the user as real cars for sale."
+)
+
+# Appended to the description of every scraper-related tool. A 'blocked' or 'disallowed'
+# status is the correct, expected outcome of a site declining automated access, not a bug
+# to route around — see carmon/scrapers/base.py for why.
+SCRAPER_BLOCKED_NOTE = (
+    " A status of 'blocked' or 'disallowed' is a normal, expected outcome, not a failure to "
+    "work around: 'blocked' means the site answered with a bot challenge (and the adapter "
+    "stopped rather than solve it), and 'disallowed' means robots.txt forbids the request — "
+    "or could not be read at all, which this project treats as a refusal rather than an "
+    "invitation. Never suggest bypassing either one, changing the User-Agent, using a proxy, "
+    "spoofing headers, or simply retrying to get past it; the correct response is to leave "
+    "that source alone and rely on the MarketCheck API or a plain browser link instead. "
+    "Scraping here is opt-in, secondary to the MarketCheck API, and rate-limited: 100 "
+    "listings/day and 20 requests/day across all sources combined, at most 2 pages per "
+    "source per run, and at least 5 seconds between requests."
 )
 
 # --------------------------------------------------------------------------
@@ -535,6 +552,134 @@ def _tool_defs() -> List[Dict[str, Any]]:
                 "additionalProperties": False,
             },
         },
+        {
+            "name": "scraper_status",
+            "description": (
+                "Status of the optional scraper adapters: merges each adapter's static "
+                "metadata (name, site, kind) with its config toggle, the master "
+                "'scrapers.enabled' switch, its last recorded run from the database, and "
+                "today's usage against the daily caps. Every registered adapter appears even "
+                "if it has never run — those show status 'never run', which just means "
+                "nobody has called 'run_scraper' or 'probe_scrapers' for it yet, not that "
+                "anything is wrong. This tool is read-only and DOES NOT touch the network — "
+                "it only reads what is already in the database, so prefer it over "
+                "'run_scraper' or 'probe_scrapers' whenever the question is simply 'is "
+                "scraping working?'." + SCRAPER_BLOCKED_NOTE
+            ),
+            "inputSchema": {
+                "type": "object",
+                "properties": {
+                    "source": {
+                        "type": "string",
+                        "description": (
+                            "Limit to one adapter's key, e.g. 'repairpal' or 'carmax'. Omit "
+                            "for every known adapter."
+                        ),
+                    },
+                },
+                "additionalProperties": False,
+            },
+        },
+        {
+            "name": "scraper_events",
+            "description": (
+                "The raw scraper request log: exactly which URL was fetched (or would have "
+                "been, for a probe), when, its HTTP status, how many listings it yielded, and "
+                "any note — the evidence behind 'scraper_status'. This tool is read-only and "
+                "DOES NOT touch the network; it only reads the local ledger that "
+                "'run_scraper' and 'probe_scrapers' already wrote to." + SCRAPER_BLOCKED_NOTE
+            ),
+            "inputSchema": {
+                "type": "object",
+                "properties": {
+                    "limit": {
+                        "type": "integer",
+                        "description": "Max number of log rows to return, newest first (default 25).",
+                        "default": 25,
+                        "minimum": 1,
+                        "maximum": 200,
+                    },
+                    "source": {
+                        "type": "string",
+                        "description": "Limit to one adapter's key, e.g. 'repairpal'. Omit for every source.",
+                    },
+                },
+                "additionalProperties": False,
+            },
+        },
+        {
+            "name": "probe_scrapers",
+            "description": (
+                "Reachability check: one lightweight request per registered scraper adapter, "
+                "to see whether that site can actually be reached and parsed from here right "
+                "now. THIS MAKES REAL OUTBOUND NETWORK REQUESTS to third-party sites and is "
+                "subject to the same daily caps as everything else (100 listings/day, 20 "
+                "requests/day across all sources combined, at least 5 seconds between "
+                "requests) — it spends budget just like a real run. Prefer 'scraper_status' "
+                "when the question is just whether scraping is working; only reach for this "
+                "tool when you specifically need a fresh, live check." + SCRAPER_BLOCKED_NOTE
+            ),
+            "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
+        },
+        {
+            "name": "run_scraper",
+            "description": (
+                "Run the scraper pipeline for one source or every enabled source, the same "
+                "code path as the daily job. THIS MAKES REAL OUTBOUND NETWORK REQUESTS to "
+                "third-party sites and consumes the shared daily budget (100 listings/day, 20 "
+                "requests/day across all sources combined, at most 2 pages per source per "
+                "run, at least 5 seconds between requests). 'dry_run' does NOT skip the "
+                "network fetch — fetching the page is how an adapter finds out what is "
+                "there — it only controls whether anything found gets written to the "
+                "database: with dry_run true (the default here), pages are still fetched and "
+                "budget is still spent, but nothing is stored, scored, or enriched. Set "
+                "dry_run to false only when you deliberately want to persist what is found. "
+                "Naming a source explicitly runs that adapter even if it is individually "
+                "disabled in config.json (the master 'scrapers.enabled' switch is still "
+                "required either way); omit 'source' to run every source enabled in "
+                "config.json instead. If scraping is off entirely ('scrapers.enabled' is "
+                "false), this returns a summary explaining that and makes no network requests "
+                "at all. Prefer 'scraper_status' when the question is just whether scraping "
+                "is working." + SCRAPER_BLOCKED_NOTE
+            ),
+            "inputSchema": {
+                "type": "object",
+                "properties": {
+                    "source": {
+                        "type": "string",
+                        "description": (
+                            "Run only this adapter's key, e.g. 'repairpal'. Overrides that "
+                            "source's individual config.json toggle (the master "
+                            "'scrapers.enabled' switch still applies). Omit to run every "
+                            "source enabled in config.json."
+                        ),
+                    },
+                    "dry_run": {
+                        "type": "boolean",
+                        "description": (
+                            "Default true: pages are still fetched over the network and "
+                            "budget is still spent, but nothing found is written to the "
+                            "database. Set to false to actually store what is found."
+                        ),
+                        "default": True,
+                    },
+                },
+                "additionalProperties": False,
+            },
+        },
+        {
+            "name": "get_settings",
+            "description": (
+                "Read the current editable configuration fields (from config.json's "
+                "search/scoring/api/enrichment/scrapers/digest/demo/web/market/discord/"
+                "sources sections) plus which secrets are set, masked to their last four "
+                "characters. This tool is READ-ONLY: it cannot change any setting or reveal "
+                "a secret value, and there is no MCP tool on this server that does either. "
+                "To change a setting or a secret, use the website's settings page or edit "
+                "config.json / .env directly."
+            ),
+            "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
+        },
     ]
 
 
@@ -994,6 +1139,105 @@ class MCPServer:
         rows = rows[:limit]
         return _text_result(self._with_demo_warning({"count": len(rows), "listings": rows}, rows))
 
+    def _t_scraper_status(self, args: Dict[str, Any]) -> Dict[str, Any]:
+        source = args.get("source") or None
+        try:
+            from .scrapers import REGISTRY  # lazy: adapters are optional
+        except ImportError:
+            REGISTRY = {}
+
+        scraper_config = self.config.data.get("scrapers", {}) or {}
+        master_enabled = bool(scraper_config.get("enabled"))
+        configured_sources = scraper_config.get("sources", {}) or {}
+        status_rows = {row["source"]: row for row in dbmod.get_scraper_status(self.conn)}
+        usage_by_source = {row["source"]: row for row in dbmod.scrape_usage_by_source(self.conn)}
+
+        keys = set(REGISTRY) | set(configured_sources) | set(status_rows)
+        if source:
+            if source not in keys:
+                raise ToolError(
+                    f"Unknown scraper source '{source}'. Known: {', '.join(sorted(keys)) or '(none registered)'}"
+                )
+            keys = {source}
+
+        sources_out = []
+        for key in sorted(keys):
+            adapter = REGISTRY.get(key)
+            row = status_rows.get(key)
+            usage = usage_by_source.get(key, {"requests": 0, "listings": 0})
+            sources_out.append({
+                "source": key,
+                "name": getattr(adapter, "name", key),
+                "site": getattr(adapter, "site", None),
+                "kind": getattr(adapter, "kind", "listings"),
+                "registered": adapter is not None,
+                "config_enabled": bool(configured_sources.get(key, False)),
+                "status": row["status"] if row else "never run",
+                "message": (row.get("message") if row else "") or "",
+                "last_run_at": row.get("last_run_at") if row else None,
+                "pages": row.get("pages", 0) if row else 0,
+                "listings": row.get("listings", 0) if row else 0,
+                "kept": row.get("kept", 0) if row else 0,
+                "ok_runs": row.get("ok_runs", 0) if row else 0,
+                "failed_runs": row.get("failed_runs", 0) if row else 0,
+                "last_ok_at": row.get("last_ok_at") if row else None,
+                "last_error": row.get("last_error") if row else None,
+                "last_error_at": row.get("last_error_at") if row else None,
+                "requests_today": usage.get("requests", 0),
+                "listings_today": usage.get("listings", 0),
+            })
+
+        usage_today = dbmod.scrape_usage_today(self.conn)
+        usage_today["requests_cap"] = int(scraper_config.get("max_requests_per_day", 20) or 20)
+        usage_today["listings_cap"] = int(scraper_config.get("max_listings_per_day", 100) or 100)
+
+        return _text_result({
+            "scrapers_enabled": master_enabled,
+            "sources": sources_out,
+            "usage_today": usage_today,
+            "limits": {
+                "max_pages_per_run": int(scraper_config.get("max_pages_per_run", 2) or 2),
+                "min_seconds_between_requests": scraper_config.get("min_seconds_between_requests", 5),
+            },
+        })
+
+    def _t_scraper_events(self, args: Dict[str, Any]) -> Dict[str, Any]:
+        limit = _as_int(args.get("limit", 25), "limit", default=25)
+        limit = max(1, min(limit, 200))
+        source = args.get("source") or None
+        rows = dbmod.recent_scrape_events(self.conn, limit=limit, source=source)
+        return _text_result({"count": len(rows), "events": rows})
+
+    def _t_probe_scrapers(self, args: Dict[str, Any]) -> Dict[str, Any]:
+        try:
+            from .pipeline import probe_scrapers  # lazy: optional heavier dependency chain
+        except ImportError as exc:
+            return _text_result(
+                f"Scraper pipeline is not available: {exc}", is_error=True, as_json=False
+            )
+        results = probe_scrapers(self.config, self.conn)
+        return _text_result({"count": len(results), "results": results})
+
+    def _t_run_scraper(self, args: Dict[str, Any]) -> Dict[str, Any]:
+        source = args.get("source") or None
+        dry_run = bool(args.get("dry_run", True))
+        try:
+            from .pipeline import run_scrapers  # lazy: optional heavier dependency chain
+        except ImportError as exc:
+            return _text_result(
+                f"Scraper pipeline is not available: {exc}", is_error=True, as_json=False
+            )
+        result = run_scrapers(
+            self.config, self.conn, sources=[source] if source else None, dry_run=dry_run
+        )
+        return _text_result(result)
+
+    def _t_get_settings(self, args: Dict[str, Any]) -> Dict[str, Any]:
+        return _text_result({
+            "fields": settingsmod.editable_settings(self.config),
+            "secrets": settingsmod.secrets_status(),
+        })
+
     _TOOL_HANDLERS = {
         "search_listings": _t_search_listings,
         "get_listing": _t_get_listing,
@@ -1015,6 +1259,11 @@ class MCPServer:
         "market_report": _t_market_report,
         "best_deals": _t_best_deals,
         "list_comparables": _t_list_comparables,
+        "scraper_status": _t_scraper_status,
+        "scraper_events": _t_scraper_events,
+        "probe_scrapers": _t_probe_scrapers,
+        "run_scraper": _t_run_scraper,
+        "get_settings": _t_get_settings,
     }
 
     # -- helpers -----------------------------------------------------------

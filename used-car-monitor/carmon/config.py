@@ -21,7 +21,8 @@ def load_env(env_path: Path | str | None = None) -> Dict[str, str]:
     """Read a simple KEY=VALUE .env file into a dict (does not overwrite real env vars).
 
     Values already present in os.environ win, so `MARKETCHECK_API_KEY=... python -m carmon`
-    works the same as putting the key in .env.
+    works the same as putting the key in .env. The file itself is created on first run by
+    `settings.ensure_env_file()` — there is no example file to copy.
     """
     path = Path(env_path) if env_path else DEFAULT_ENV_PATH
     values: Dict[str, str] = {}

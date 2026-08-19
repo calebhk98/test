@@ -47,6 +47,7 @@ from .base import (
     ScrapeResult,
     register,
 )
+from .parsing import extract_json_ld_blocks, to_float as _to_float
 
 # --- URL helpers -------------------------------------------------------------
 
@@ -105,23 +106,6 @@ def _walk(obj: Any):
     elif isinstance(obj, list):
         for item in obj:
             yield from _walk(item)
-
-
-def _to_float(value: Any) -> Optional[float]:
-    try:
-        if value is None:
-            return None
-        if isinstance(value, bool):
-            return None
-        if isinstance(value, (int, float)):
-            return float(value)
-        if isinstance(value, str):
-            match = re.search(r"-?\d+(?:\.\d+)?", value.replace(",", ""))
-            if match:
-                return float(match.group())
-    except (TypeError, ValueError):
-        return None
-    return None
 
 
 def _coerce_name(value: Any) -> Optional[str]:
@@ -202,14 +186,8 @@ def _extract_fields(obj: Any) -> Optional[Dict[str, Any]]:
 
 # --- strategy (a): application/ld+json ---------------------------------------
 
-_LD_JSON_RE = re.compile(
-    r'<script[^>]*type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
-    re.IGNORECASE | re.DOTALL,
-)
-
-
 def _parse_ld_json(body: str) -> Optional[Dict[str, Any]]:
-    for raw in _LD_JSON_RE.findall(body):
+    for raw in extract_json_ld_blocks(body):
         try:
             obj = json.loads(raw.strip())
         except (json.JSONDecodeError, ValueError):
@@ -418,6 +396,12 @@ class RepairPalScraper(ScraperBase):
                 record.setdefault("source", self.key)
             result.listings.extend(parsed)
             self.fetcher.note_listings(url, len(parsed))
+
+            # The model-level page is tried first and is the one worth having. Once it has
+            # answered, the brand-level fallback page is pointless traffic — stop early
+            # rather than spend a second request per model on data `store()` would reject.
+            if any(record_scope(record) == "model" for record in parsed):
+                break
 
         return result
 

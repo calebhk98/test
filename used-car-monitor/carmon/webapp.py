@@ -33,6 +33,14 @@ from . import market
 from . import quota
 from .config import Config, get_secret, load_env
 from .nhtsa import recall_lookup_url, vin_recall_url
+from .settings import (
+    SettingsError,
+    apply_changes,
+    editable_settings,
+    secrets_status,
+    update_secrets,
+    writes_allowed,
+)
 from .sources import grouped_sources, sources_for_listing
 
 __all__ = ["CarMonHandler", "create_server", "serve"]
@@ -83,6 +91,17 @@ def _parse_bool(params: Dict[str, List[str]], name: str, default: bool = False) 
     if not values or values[0] == "":
         return default
     return values[0].strip().lower() in ("1", "true", "yes", "on")
+
+
+def _truthy(value: Any, default: bool = False) -> bool:
+    """Coerce a JSON bool, a form string ('1'/'true'/'on'/...), or None to a real bool --
+    used for write-intent markers and settings/scraper toggles submitted either as JSON or
+    as application/x-www-form-urlencoded fields."""
+    if isinstance(value, bool):
+        return value
+    if value is None:
+        return default
+    return str(value).strip().lower() in ("1", "true", "yes", "on")
 
 
 def _since_date(days: int) -> str:
@@ -597,8 +616,24 @@ _NAV_LINKS = [
     ("/appraise", "Appraise"),
     ("/sources", "Sources"),
     ("/digest", "Digest"),
+    ("/scrapers", "Scrapers"),
+    ("/settings", "Settings"),
     ("/api/health", "API health"),
 ]
+
+# Status badges on the /scrapers page reuse the good/mid/bad palette. "blocked" and
+# "disallowed" are expected, healthy outcomes (a site declining automated access), not
+# failures, so they get the same "mid" (amber) treatment as "budget", not "bad".
+_SCRAPER_STATUS_CLASSES = {
+    "ok": "good",
+    "blocked": "mid",
+    "disallowed": "mid",
+    "budget": "mid",
+    "empty": "mid",
+    "error": "bad",
+    "unparsed": "bad",
+    "never run": "neutral",
+}
 
 
 def _page(title: str, body: str, last_run: Optional[str] = None, demo_warning: Optional[str] = None) -> str:
@@ -695,6 +730,9 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
     def do_GET(self) -> None:  # noqa: N802 (stdlib naming)
         self._dispatch("GET")
 
+    def do_POST(self) -> None:  # noqa: N802
+        self._dispatch("POST")
+
     def do_OPTIONS(self) -> None:  # noqa: N802
         self.send_response(204)
         self._cors_headers()
@@ -719,7 +757,10 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
         try:
             conn = db.connect(self.config.db_path)
             demo.maybe_expire(conn, self.config)
-            handler = self._route(path, is_api)
+            # Write (mutating) endpoints are POST-only and live in a separate table from the
+            # GET routes below -- a GET to e.g. /api/scrapers/run simply is not in the GET
+            # table, so it 404s rather than ever reaching a handler that could mutate state.
+            handler = self._route_write(path) if method == "POST" else self._route(path, is_api)
             if handler is None:
                 if is_api:
                     self._send_json({"error": "not found"}, status=404)
@@ -776,6 +817,12 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
             return self._api_appraise
         if path == "/api/deals":
             return self._api_deals
+        if path == "/api/scrapers":
+            return self._api_scrapers
+        if path == "/api/scrapers/events":
+            return self._api_scrapers_events
+        if path == "/api/settings":
+            return self._api_settings_get
         if path == "/api/reliability":
             return self._api_reliability_list
         if path.startswith("/api/reliability/"):
@@ -804,17 +851,36 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
                 return self._page_market
             if path == "/appraise":
                 return self._page_appraise
+            if path == "/scrapers":
+                return self._page_scrapers
+            if path == "/settings":
+                return self._page_settings
             if path.startswith("/listing/"):
                 vin = path[len("/listing/"):]
                 if vin:
                     return lambda conn, params: self._page_listing_detail(conn, params, vin)
         return None
 
+    def _route_write(self, path: str) -> Optional[Callable[[Any, Dict[str, List[str]]], None]]:
+        """POST-only routes -- everything that can mutate config, secrets or trigger real
+        outbound scraper requests. Deliberately a separate table from `_route` (GET) so a
+        write handler can never be reached by a GET request."""
+        routes: Dict[str, Callable[[Any, Dict[str, List[str]]], None]] = {
+            "/api/scrapers/run": self._api_scrapers_run,
+            "/api/scrapers/probe": self._api_scrapers_probe,
+            "/api/scrapers/toggle": self._api_scrapers_toggle,
+            "/api/settings": self._api_settings_post,
+            "/api/settings/secrets": self._api_settings_secrets_post,
+            "/scrapers": self._page_scrapers_post,
+            "/settings": self._page_settings_post,
+        }
+        return routes.get(path)
+
     # -- response helpers -------------------------------------------------
     def _cors_headers(self) -> None:
         self.send_header("Access-Control-Allow-Origin", "*")
-        self.send_header("Access-Control-Allow-Methods", "GET, OPTIONS")
-        self.send_header("Access-Control-Allow-Headers", "Authorization, Content-Type")
+        self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+        self.send_header("Access-Control-Allow-Headers", "Authorization, Content-Type, X-Carmon-Write")
 
     def _send_json(self, payload: Any, status: int = 200) -> None:
         body = json.dumps(payload, default=str).encode("utf-8")
@@ -832,6 +898,79 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
         self.send_header("Content-Length", str(len(body)))
         self.end_headers()
         self.wfile.write(body)
+
+    # -- write-request body parsing ---------------------------------------
+    _MAX_BODY_BYTES = 65536  # 64KB -- generous for a settings/toggle payload, stingy enough
+    # that a client cannot use a write endpoint to make this process buffer something huge.
+
+    def _read_body_dict(self) -> Dict[str, Any]:
+        """Parse a POST body as JSON or application/x-www-form-urlencoded (both are accepted
+        on every write endpoint -- curl/fetch tend to send JSON, plain HTML forms send the
+        latter). Always returns a dict; malformed JSON or an oversized body raises ApiError."""
+        try:
+            length = int(self.headers.get("Content-Length") or 0)
+        except (TypeError, ValueError):
+            length = 0
+        if length < 0:
+            length = 0
+        if length > self._MAX_BODY_BYTES:
+            raise ApiError(400, f"request body too large (max {self._MAX_BODY_BYTES} bytes)")
+        raw = self.rfile.read(length) if length else b""
+        if not raw:
+            return {}
+        content_type = (self.headers.get("Content-Type") or "").split(";")[0].strip().lower()
+        if content_type == "application/json":
+            try:
+                data = json.loads(raw.decode("utf-8"))
+            except (UnicodeDecodeError, json.JSONDecodeError) as exc:
+                raise ApiError(400, f"malformed JSON body: {exc}")
+            if not isinstance(data, dict):
+                raise ApiError(400, "JSON body must be an object")
+            return data
+        # Default: application/x-www-form-urlencoded (also covers a missing/blank header,
+        # which is what a bare `curl -d k=v` sends).
+        parsed = parse_qs(raw.decode("utf-8", errors="replace"), keep_blank_values=True)
+        return {key: values[0] for key, values in parsed.items() if values}
+
+    def _check_same_origin(self) -> None:
+        """Refuse a write if a browser-supplied Origin/Referer names a different host than
+        the one this request was addressed to -- what stops another site's page from
+        POSTing to a user's localhost dashboard. A request with neither header (curl, a
+        same-origin form submission in most browsers) is not rejected by this check alone."""
+        host_header = self.headers.get("Host", "")
+        for header_name in ("Origin", "Referer"):
+            value = self.headers.get(header_name)
+            if not value:
+                continue
+            netloc = urlsplit(value).netloc
+            if netloc and netloc != host_header:
+                raise ApiError(403, f"cross-origin write refused ({header_name} '{netloc}' != Host '{host_header}')")
+
+    def _require_write_auth(self, body: Dict[str, Any]) -> None:
+        """Every write handler calls this first, with its already-parsed body. Enforces all
+        four checks a write must pass:
+          (a) the bearer token, when CARMON_API_TOKEN is set;
+          (b) writes_allowed() for the address this server is actually bound to;
+          (c) an explicit write-intent marker (X-Carmon-Write: 1, or confirm=1 in the body);
+          (d) a same-origin Origin/Referer, when either header is present.
+        Raises ApiError; touches nothing itself.
+        """
+        token = get_secret("CARMON_API_TOKEN", env=self._env())
+        if token:
+            header = self.headers.get("Authorization", "")
+            if header != f"Bearer {token}":
+                raise ApiError(401, "unauthorized")
+        bind_host = self.server.server_address[0] or None
+        allowed, reason = writes_allowed(bind_host, token)
+        if not allowed:
+            raise ApiError(403, reason)
+        if self.headers.get("X-Carmon-Write") != "1" and not _truthy(body.get("confirm")):
+            raise ApiError(
+                403,
+                "write refused: send an 'X-Carmon-Write: 1' header (fetch/curl) or a "
+                "confirm=1 field (form POST) to confirm intent",
+            )
+        self._check_same_origin()
 
     def _last_run_str(self, conn: Any) -> Optional[str]:
         runs = db.recent_runs(conn, limit=1)
@@ -1070,6 +1209,205 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
         limit = max(1, min(limit, 200))
         deals = market.best_deals(conn, limit=limit, config=self.config)
         self._send_json({"count": len(deals), "deals": deals})
+
+    # -- scraper adapters ---------------------------------------------------
+    def _scrapers_overview(self, conn: Any) -> Dict[str, Any]:
+        """Shared by GET /api/scrapers and the /scrapers page: merge REGISTRY metadata, the
+        config toggles and the scraper_status history so an adapter with no run history yet
+        still shows up (never silently omitted)."""
+        try:
+            from .scrapers import REGISTRY
+        except ImportError:
+            REGISTRY: Dict[str, Any] = {}  # tolerate an empty/unavailable registry
+
+        scraper_cfg = self.config.data.get("scrapers", {}) or {}
+        enabled_sources = scraper_cfg.get("sources", {}) or {}
+        status_rows = {row["source"]: row for row in db.get_scraper_status(conn)}
+        keys = sorted(set(REGISTRY) | set(enabled_sources) | set(status_rows))
+
+        adapters = []
+        for key in keys:
+            cls = REGISTRY.get(key)
+            status = status_rows.get(key) or {}
+            adapters.append({
+                "key": key,
+                "name": getattr(cls, "name", key) if cls else key,
+                "site": getattr(cls, "site", "") if cls else "",
+                "kind": getattr(cls, "kind", "listings") if cls else "listings",
+                "registered": cls is not None,
+                "enabled": bool(enabled_sources.get(key)),
+                "status": status.get("status") or "never run",
+                "message": status.get("message"),
+                "last_run_at": status.get("last_run_at"),
+                "pages": status.get("pages") or 0,
+                "listings": status.get("listings") or 0,
+                "kept": status.get("kept") or 0,
+                "ok_runs": status.get("ok_runs") or 0,
+                "failed_runs": status.get("failed_runs") or 0,
+                "last_ok_at": status.get("last_ok_at"),
+                "last_error": status.get("last_error"),
+                "last_error_at": status.get("last_error_at"),
+            })
+
+        limits = {k: v for k, v in scraper_cfg.items() if k not in ("sources", "enabled")}
+        return {
+            "enabled": bool(scraper_cfg.get("enabled")),
+            "limits": limits,
+            "usage_today": db.scrape_usage_today(conn),
+            "by_source": db.scrape_usage_by_source(conn),
+            "adapters": adapters,
+        }
+
+    def _api_scrapers(self, conn: Any, params: Dict[str, List[str]]) -> None:
+        self._send_json(self._scrapers_overview(conn))
+
+    def _api_scrapers_events(self, conn: Any, params: Dict[str, List[str]]) -> None:
+        limit = _parse_int(params, "limit") or 25
+        limit = max(1, min(limit, 200))
+        source = _parse_str(params, "source")
+        events = db.recent_scrape_events(conn, limit=limit, source=source)
+        self._send_json({"count": len(events), "events": events})
+
+    def _api_scrapers_run(self, conn: Any, params: Dict[str, List[str]]) -> None:
+        body = self._read_body_dict()
+        self._require_write_auth(body)
+        try:
+            from . import pipeline
+        except ImportError:
+            pipeline = None  # type: ignore[assignment]
+        if pipeline is None:
+            raise ApiError(501, "pipeline module is unavailable")
+        source = (body.get("source") or "").strip() or None
+        dry_run = _truthy(body.get("dry_run"))
+        summary = pipeline.run_scrapers(self.config, conn, sources=[source] if source else None, dry_run=dry_run)
+        self._send_json(summary)
+
+    def _api_scrapers_probe(self, conn: Any, params: Dict[str, List[str]]) -> None:
+        body = self._read_body_dict()
+        self._require_write_auth(body)
+        try:
+            from . import pipeline
+        except ImportError:
+            pipeline = None  # type: ignore[assignment]
+        if pipeline is None:
+            raise ApiError(501, "pipeline module is unavailable")
+        results = pipeline.probe_scrapers(self.config, conn)
+        self._send_json({"count": len(results), "results": results})
+
+    def _api_scrapers_toggle(self, conn: Any, params: Dict[str, List[str]]) -> None:
+        body = self._read_body_dict()
+        self._require_write_auth(body)
+        result = self._apply_scraper_toggle(body)
+        self._send_json(result)
+
+    def _apply_scraper_toggle(self, body: Dict[str, Any]) -> Dict[str, Any]:
+        source = (body.get("source") or "").strip() or None
+        enabled = _truthy(body.get("enabled"))
+        dotted = f"scrapers.sources.{source}" if source else "scrapers.enabled"
+        try:
+            return apply_changes(self.config, {dotted: enabled})
+        except SettingsError as exc:
+            raise ApiError(400, str(exc))
+
+    # -- settings -------------------------------------------------------
+    def _api_settings_get(self, conn: Any, params: Dict[str, List[str]]) -> None:
+        token = get_secret("CARMON_API_TOKEN", env=self._env())
+        allowed, reason = writes_allowed(self.server.server_address[0] or None, token)
+        self._send_json({
+            "fields": editable_settings(self.config),
+            "secrets": secrets_status(),
+            "writable": allowed,
+            "reason": reason,
+        })
+
+    def _coerce_setting_value(self, value: Any, type_name: str) -> Any:
+        if type_name == "bool":
+            return _truthy(value)
+        if type_name == "number":
+            try:
+                return float(value)
+            except (TypeError, ValueError):
+                raise ApiError(400, f"invalid number: {value!r}")
+        if type_name == "list":
+            if isinstance(value, list):
+                return value
+            text = "" if value is None else str(value)
+            return [part.strip() for part in text.split(",") if part.strip()]
+        return "" if value is None else str(value)
+
+    def _settings_changes_from_body(self, body: Dict[str, Any]) -> Tuple[Dict[str, Any], bool]:
+        """A JSON caller sends {"changes": {...}, "dry_run": ...} with values already the
+        right type. A plain <form> POST from the /settings page instead marks every field it
+        rendered with a 'present.<dotted key>' hidden input (a checkbox otherwise vanishes
+        from the body instead of submitting 'false' when unchecked), so presence of that
+        marker -- not the raw value -- decides whether a bool field changed."""
+        dry_run = _truthy(body.get("dry_run"))
+        raw_changes = body.get("changes")
+        if isinstance(raw_changes, dict):
+            return raw_changes, dry_run
+        if isinstance(raw_changes, str) and raw_changes.strip():
+            try:
+                parsed = json.loads(raw_changes)
+            except json.JSONDecodeError:
+                raise ApiError(400, "'changes' must be a JSON object")
+            if not isinstance(parsed, dict):
+                raise ApiError(400, "'changes' must be a JSON object")
+            return parsed, dry_run
+
+        fields = editable_settings(self.config)
+        changes: Dict[str, Any] = {}
+        for dotted, info in fields.items():
+            if f"present.{dotted}" not in body:
+                continue
+            if info["type"] == "bool":
+                changes[dotted] = dotted in body
+            else:
+                changes[dotted] = self._coerce_setting_value(body.get(dotted, ""), info["type"])
+        return changes, dry_run
+
+    def _secret_changes_from_body(self, body: Dict[str, Any]) -> Dict[str, str]:
+        """Mirrors _settings_changes_from_body for the secrets form: JSON callers send
+        {"changes": {KEY: value}}; the /settings page's secrets form instead submits one
+        'secret.<KEY>' field per known secret, left blank to mean 'leave it alone'."""
+        raw_changes = body.get("changes")
+        if isinstance(raw_changes, dict):
+            return raw_changes
+        if isinstance(raw_changes, str) and raw_changes.strip():
+            try:
+                parsed = json.loads(raw_changes)
+            except json.JSONDecodeError:
+                raise ApiError(400, "'changes' must be a JSON object")
+            if not isinstance(parsed, dict):
+                raise ApiError(400, "'changes' must be a JSON object")
+            return parsed
+        prefix = "secret."
+        return {
+            key[len(prefix):]: value
+            for key, value in body.items()
+            if key.startswith(prefix) and key[len(prefix):] and value
+        }
+
+    def _api_settings_post(self, conn: Any, params: Dict[str, List[str]]) -> None:
+        body = self._read_body_dict()
+        self._require_write_auth(body)
+        changes, dry_run = self._settings_changes_from_body(body)
+        try:
+            result = apply_changes(self.config, changes, dry_run=dry_run)
+        except SettingsError as exc:
+            raise ApiError(400, str(exc))
+        self._send_json(result)
+
+    def _api_settings_secrets_post(self, conn: Any, params: Dict[str, List[str]]) -> None:
+        body = self._read_body_dict()
+        self._require_write_auth(body)
+        changes = self._secret_changes_from_body(body)
+        if not changes:
+            raise ApiError(400, "no secret changes supplied")
+        try:
+            result = update_secrets(changes)
+        except SettingsError as exc:
+            raise ApiError(400, str(exc))
+        self._send_json(result)
 
     def _latest_digest(self) -> Tuple[Optional[Path], Optional[str]]:
         try:
@@ -1465,6 +1803,272 @@ cross-sectional read on price versus mileage and year, not a valuation.</p>
 <div class="section">{result_html}</div>
 """
         self._send_html(_page("Appraise", body, self._last_run_str(conn), demo_warning=demo.demo_banner(conn)))
+
+    # -- scrapers page ----------------------------------------------------
+    def _page_scrapers(self, conn: Any, params: Dict[str, List[str]]) -> None:
+        self._send_html(self._render_scrapers_page(conn, params))
+
+    def _page_scrapers_post(self, conn: Any, params: Dict[str, List[str]]) -> None:
+        body = self._read_body_dict()
+        try:
+            self._require_write_auth(body)
+        except ApiError as exc:
+            self._send_html(self._render_scrapers_page(conn, params, error=exc.message), status=exc.status)
+            return
+        source = (body.get("source") or "").strip() or None
+        try:
+            self._apply_scraper_toggle(body)
+        except ApiError as exc:
+            self._send_html(self._render_scrapers_page(conn, params, error=exc.message), status=exc.status)
+            return
+        enabled = _truthy(body.get("enabled"))
+        message = f"{'Enabled' if enabled else 'Disabled'} {source or 'scrapers (master switch)'}."
+        self._send_html(self._render_scrapers_page(conn, params, message=message))
+
+    def _render_scrapers_page(
+        self, conn: Any, params: Dict[str, List[str]],
+        message: Optional[str] = None, error: Optional[str] = None,
+    ) -> str:
+        overview = self._scrapers_overview(conn)
+        token = get_secret("CARMON_API_TOKEN", env=self._env())
+        allowed, reason = writes_allowed(self.server.server_address[0] or None, token)
+        disabled_attr = "" if allowed else " disabled"
+
+        banner = ""
+        if error:
+            banner = f'<p class="note">⚠️ {_e(error)}</p>'
+        elif message:
+            banner = f'<p class="note">✅ {_e(message)}</p>'
+        writable_note = (
+            '<p class="note">Writable from this address -- toggling a source or running/probing it here '
+            "takes effect immediately.</p>"
+            if allowed else
+            f'<p class="note">⚠️ Read-only from this address: {_e(reason)}</p>'
+        )
+
+        usage = overview["usage_today"]
+        limits = overview["limits"]
+        req_cap = limits.get("max_requests_per_day")
+        listing_cap = limits.get("max_listings_per_day")
+        tiles = f"""
+<div class="tiles">
+  <div class="tile"><div class="label">Scrapers master switch</div><div class="value">{"On" if overview["enabled"] else "Off"}</div></div>
+  <div class="tile"><div class="label">Requests today</div><div class="value">{_e(usage["requests"])}/{_e(req_cap)}</div></div>
+  <div class="tile"><div class="label">Listings today</div><div class="value">{_e(usage["listings"])}/{_e(listing_cap)}</div></div>
+</div>"""
+
+        master_form = f"""<form method="post" action="/scrapers" style="display:inline">
+  <input type="hidden" name="confirm" value="1">
+  <input type="hidden" name="enabled" value="{"0" if overview["enabled"] else "1"}">
+  <button type="submit"{disabled_attr}>{"Turn scrapers off" if overview["enabled"] else "Turn scrapers on"}</button>
+</form>
+<button type="button" onclick="carmonScraperAction('probe', null, false)"{disabled_attr}>Probe all</button>"""
+
+        rows = []
+        for a in overview["adapters"]:
+            cls = _SCRAPER_STATUS_CLASSES.get(a["status"], "neutral")
+            toggle = f"""<form method="post" action="/scrapers" style="display:inline">
+  <input type="hidden" name="confirm" value="1">
+  <input type="hidden" name="source" value="{_e(a["key"])}">
+  <input type="hidden" name="enabled" value="{"0" if a["enabled"] else "1"}">
+  <button type="submit"{disabled_attr}>{"Disable" if a["enabled"] else "Enable"}</button>
+</form>"""
+            actions = f"""<button type="button" onclick="carmonScraperAction('probe', '{_e(a["key"])}', false)"{disabled_attr}>Probe</button>
+<button type="button" onclick="carmonScraperAction('run', '{_e(a["key"])}', false)"{disabled_attr}>Run</button>
+<button type="button" onclick="carmonScraperAction('run', '{_e(a["key"])}', true)"{disabled_attr}>Dry run</button>"""
+            rows.append(f"""<tr>
+  <td>{_e(a["name"])}{'' if a["registered"] else ' <span class="badge bad" title="No adapter module registered for this key">missing</span>'}</td>
+  <td>{_e(a["kind"])}</td>
+  <td>{"Yes" if a["enabled"] else "No"} {toggle}</td>
+  <td>{_e(a["last_run_at"] or "-")}</td>
+  <td><span class="badge {cls}">{_e(a["status"])}</span></td>
+  <td>{_e(a["message"] or a["last_error"] or "-")}</td>
+  <td>{_e(a["pages"])} pages &middot; {_e(a["listings"])} listings</td>
+  <td>{_e(a["ok_runs"])} ok / {_e(a["failed_runs"])} failed</td>
+  <td>{actions}</td>
+</tr>""")
+        adapters_html = (
+            f"""<div class="table-wrap"><table>
+<thead><tr>
+  <th>Adapter</th><th>Kind</th><th>Enabled</th><th>Last run</th><th>Status</th><th>Message</th>
+  <th>Last run pages/listings</th><th>Run tally</th><th>Actions</th>
+</tr></thead>
+<tbody>{''.join(rows)}</tbody></table></div>"""
+            if rows else '<div class="empty">No scraper adapters registered.</div>'
+        )
+
+        events = db.recent_scrape_events(conn, limit=25)
+        event_rows = "".join(
+            f"<tr><td>{_e(e.get('ts'))}</td><td>{_e(e.get('source'))}</td><td>{_e(e.get('url') or '-')}</td>"
+            f"<td>{_e(e.get('status') if e.get('status') is not None else '-')}</td><td>{_e(e.get('note') or '-')}</td></tr>"
+            for e in events
+        )
+        events_html = (
+            f"""<div class="table-wrap"><table>
+<thead><tr><th>Time</th><th>Source</th><th>URL</th><th>HTTP status</th><th>Note</th></tr></thead>
+<tbody>{event_rows}</tbody></table></div>"""
+            if events else '<div class="empty">No scrape requests logged yet.</div>'
+        )
+
+        script = """
+<script>
+function carmonScraperAction(action, source, dryRun) {
+  var url = action === 'probe' ? '/api/scrapers/probe' : '/api/scrapers/run';
+  var body = {confirm: 1};
+  if (source) { body.source = source; }
+  if (action === 'run') { body.dry_run = !!dryRun; }
+  fetch(url, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json', 'X-Carmon-Write': '1'},
+    body: JSON.stringify(body)
+  }).then(function (r) { return r.json().then(function (data) { return {ok: r.ok, data: data}; }); })
+    .then(function (result) {
+      alert((result.ok ? 'Done: ' : 'Failed: ') + JSON.stringify(result.data));
+      window.location.reload();
+    })
+    .catch(function (err) { alert('Request failed: ' + err); });
+}
+</script>"""
+
+        body = f"""
+<h1>Scrapers</h1>
+<p class="note">A status of <strong>blocked</strong> or <strong>disallowed</strong> is a normal, expected
+answer -- it means the site's robots.txt or bot defenses declined automated access, not a bug to fix. This
+project always obeys robots.txt and never tries to work around blocking.</p>
+{writable_note}
+{banner}
+{tiles}
+<div class="section">{master_form}</div>
+<div class="section">
+  <h2>Adapters</h2>
+  {adapters_html}
+</div>
+<div class="section">
+  <h2>Recent scrape events</h2>
+  {events_html}
+</div>
+{script}
+"""
+        return _page("Scrapers", body, self._last_run_str(conn), demo_warning=demo.demo_banner(conn))
+
+    # -- settings page ------------------------------------------------------
+    def _page_settings(self, conn: Any, params: Dict[str, List[str]]) -> None:
+        self._send_html(self._render_settings_page(conn, params))
+
+    def _page_settings_post(self, conn: Any, params: Dict[str, List[str]]) -> None:
+        body = self._read_body_dict()
+        try:
+            self._require_write_auth(body)
+        except ApiError as exc:
+            self._send_html(self._render_settings_page(conn, params, error=exc.message), status=exc.status)
+            return
+
+        setting_changes, dry_run = self._settings_changes_from_body(body)
+        secret_changes = self._secret_changes_from_body(body)
+        messages: List[str] = []
+        warnings: List[str] = []
+        try:
+            if setting_changes:
+                result = apply_changes(self.config, setting_changes, dry_run=dry_run)
+                warnings.extend(result.get("warnings") or [])
+                if result.get("applied"):
+                    messages.append(f"Saved {len(result['applied'])} setting(s).")
+            if secret_changes:
+                update_secrets(secret_changes)
+                messages.append(f"Saved {len(secret_changes)} secret(s).")
+        except SettingsError as exc:
+            self._send_html(self._render_settings_page(conn, params, error=str(exc)), status=400)
+            return
+
+        message = " ".join(messages) if messages else "Nothing changed."
+        self._send_html(self._render_settings_page(conn, params, message=message, warnings=warnings))
+
+    def _settings_field_row(self, dotted: str, info: Dict[str, Any], disabled_attr: str) -> str:
+        value = info["value"]
+        type_name = info["type"]
+        editable = True
+        if type_name == "bool":
+            checked = " checked" if value else ""
+            field = f'<input type="checkbox" name="{_e(dotted)}" value="1"{checked}{disabled_attr}>'
+        elif type_name == "number":
+            field = f'<input type="number" step="any" name="{_e(dotted)}" value="{_e(value)}"{disabled_attr}>'
+        elif type_name == "list":
+            if isinstance(value, list) and all(isinstance(v, (str, int, float, bool)) for v in value):
+                joined = ", ".join(str(v) for v in value)
+                field = f'<input type="text" name="{_e(dotted)}" value="{_e(joined)}"{disabled_attr}>'
+            else:
+                editable = False
+                field = '<span class="mv-sample">Complex list (not editable here) -- edit config.json directly.</span>'
+        else:
+            field = f'<input type="text" name="{_e(dotted)}" value="{_e(value)}"{disabled_attr}>'
+        marker = f'<input type="hidden" name="present.{_e(dotted)}" value="1">' if editable else ""
+        return f"<tr><td>{_e(dotted)}{marker}</td><td>{field}</td></tr>"
+
+    def _render_settings_page(
+        self, conn: Any, params: Dict[str, List[str]],
+        message: Optional[str] = None, warnings: Optional[List[str]] = None, error: Optional[str] = None,
+    ) -> str:
+        token = get_secret("CARMON_API_TOKEN", env=self._env())
+        allowed, reason = writes_allowed(self.server.server_address[0] or None, token)
+        disabled_attr = "" if allowed else " disabled"
+
+        fields = editable_settings(self.config)
+        sections: Dict[str, List[Tuple[str, Dict[str, Any]]]] = {}
+        for dotted, info in fields.items():
+            sections.setdefault(dotted.split(".")[0], []).append((dotted, info))
+
+        writable_note = (
+            '<p class="note">Settings are writable from this address.</p>' if allowed else
+            f'<p class="note">⚠️ Settings are read-only from this address: {_e(reason)}</p>'
+        )
+        banner = ""
+        if error:
+            banner = f'<p class="note">⚠️ {_e(error)}</p>'
+        elif message:
+            warn_html = "".join(f'<p class="note">⚠️ {_e(w)}</p>' for w in (warnings or []))
+            banner = f'<p class="note">✅ {_e(message)}</p>{warn_html}'
+
+        section_blocks = []
+        for section in sorted(sections):
+            rows = "".join(self._settings_field_row(dotted, info, disabled_attr) for dotted, info in sorted(sections[section]))
+            section_blocks.append(f"""<div class="cat">
+  <h3>{_e(section)}</h3>
+  <table class="kv">{rows}</table>
+</div>""")
+
+        secrets_rows = []
+        for s in secrets_status():
+            state_bits = "set" if s["set"] else "not set"
+            if s["set"]:
+                state_bits += f" ({_e(s['masked'])})"
+            if s["from_environment"]:
+                state_bits += " -- from environment, overrides .env"
+            secrets_rows.append(f"""<tr>
+  <td>{_e(s["label"])}<div class="mv-sample">{_e(s["key"])} &middot; currently {state_bits}</div></td>
+  <td><input type="password" name="secret.{_e(s["key"])}" placeholder="leave blank to keep current value" autocomplete="off"{disabled_attr}></td>
+</tr>""")
+
+        body = f"""
+<h1>Settings</h1>
+{writable_note}
+{banner}
+<form method="post" action="/settings">
+  <input type="hidden" name="confirm" value="1">
+  {''.join(section_blocks)}
+  <button type="submit"{disabled_attr}>Save settings</button>
+</form>
+<div class="section">
+  <h2>Secrets</h2>
+  <p class="note">Secret values are write-only -- the current value is never shown or returned by this API,
+  only whether it is set and its last few characters.</p>
+  <form method="post" action="/settings">
+    <input type="hidden" name="confirm" value="1">
+    <table class="kv">{''.join(secrets_rows)}</table>
+    <button type="submit"{disabled_attr}>Save secrets</button>
+  </form>
+</div>
+"""
+        return _page("Settings", body, self._last_run_str(conn), demo_warning=demo.demo_banner(conn))
 
 
 # --------------------------------------------------------------------------

@@ -49,91 +49,27 @@ that decision into the base class keeps it consistent across every adapter.
 
 from __future__ import annotations
 
-import json
-import re
-from html.parser import HTMLParser
 from typing import Any, Dict, List, Optional
+
 from urllib.parse import urlencode
 
 from .base import ScraperBase, register
+from .parsing import (
+    clean_str as _clean_str,
+    find_vin_in_strings,
+    iter_ld_vehicle_nodes,
+    ld_offer_price_and_seller,
+    name_of as _name_of,
+    parse_vehicle_title,
+    run_class_card_parser,
+    run_data_attribute_card_scanner,
+    split_dealer_location as _split_dealer_location,
+    to_bool as _to_bool,
+    to_float as _to_float,
+    to_int as _to_int,
+)
 
 SEARCH_PATH = "/shopping/results/"
-
-# Fallback VIN pattern (17 chars, excludes I/O/Q per the VIN standard) used when a field
-# mapping has no clearly-named VIN key but a string field happens to contain one.
-_VIN_RE = re.compile(r"\b[A-HJ-NPR-Z0-9]{17}\b")
-
-
-def _to_int(value: Any) -> Optional[int]:
-    """Best-effort int coercion for strings like '$18,995' or '37,412 mi.'. Never raises."""
-    if value is None:
-        return None
-    if isinstance(value, bool):
-        return None
-    if isinstance(value, int):
-        return value
-    if isinstance(value, float):
-        return int(value)
-    text = str(value)
-    digits = re.sub(r"[^0-9]", "", text)
-    if not digits:
-        return None
-    try:
-        return int(digits)
-    except ValueError:
-        return None
-
-
-def _to_float(value: Any) -> Optional[float]:
-    if value is None:
-        return None
-    if isinstance(value, (int, float)) and not isinstance(value, bool):
-        return float(value)
-    text = str(value)
-    match = re.search(r"-?\d+(?:\.\d+)?", text.replace(",", ""))
-    if not match:
-        return None
-    try:
-        return float(match.group(0))
-    except ValueError:
-        return None
-
-
-def _clean_str(value: Any) -> Optional[str]:
-    if value is None:
-        return None
-    text = str(value).strip()
-    return text or None
-
-
-def _name_of(value: Any) -> Optional[str]:
-    """schema.org fields are sometimes a plain string, sometimes {'name': '...'}."""
-    if isinstance(value, dict):
-        return _clean_str(value.get("name"))
-    return _clean_str(value)
-
-
-def _to_bool(value: Any) -> bool:
-    if isinstance(value, bool):
-        return value
-    if value is None:
-        return False
-    text = str(value).strip().lower()
-    return text in ("true", "1", "yes", "certified", "cpo")
-
-
-def _split_dealer_location(location: Any) -> tuple[Optional[str], Optional[str]]:
-    """'Nashville, TN' -> ('Nashville', 'TN'). Anything else -> (None, None)."""
-    text = _clean_str(location)
-    if not text or "," not in text:
-        return None, None
-    city, _, state = text.rpartition(",")
-    city = city.strip() or None
-    state = state.strip() or None
-    if state and len(state) > 3:
-        # Not a plausible two-letter (or "N/A"-ish) state code; leave state unset.
-        state = None
-    return city, state
 
 
 def _listing_from_fields(fields: Dict[str, Any]) -> Optional[Dict[str, Any]]:
@@ -150,26 +86,14 @@ def _listing_from_fields(fields: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         or fields.get("sku")
     )
 
-    year = None
-    make = None
-    model = None
     trim = fields.get("trim") or fields.get("vehicleConfiguration")
 
     title = fields.get("title") or fields.get("name") or fields.get("heading")
-    if title:
-        match = re.match(
-            r"\s*(\d{4})\s+([A-Za-z0-9\-]+)\s+(.+)", str(title)
-        )
-        if match:
-            year = int(match.group(1))
-            make = match.group(2)
-            rest = match.group(3).strip()
-            if trim:
-                model = rest
-            else:
-                parts = rest.split(None, 1)
-                model = parts[0] if parts else None
-                trim = parts[1] if len(parts) > 1 else None
+    parsed_title = parse_vehicle_title(title, known_trim=trim) if title else {}
+    year = parsed_title.get("year")
+    make = parsed_title.get("make")
+    model = parsed_title.get("model")
+    trim = parsed_title.get("trim", trim)
 
     year = year or _to_int(
         fields.get("year") or fields.get("modelDate")
@@ -208,106 +132,38 @@ def _listing_from_fields(fields: Dict[str, Any]) -> Optional[Dict[str, Any]]:
     listing["dealer_state"] = _clean_str(dealer_state)
 
     if not listing["vin"]:
-        # Fall back to scanning any string field for a bare 17-char VIN pattern.
-        for value in fields.values():
-            if isinstance(value, str):
-                found = _VIN_RE.search(value.upper())
-                if found:
-                    listing["vin"] = found.group(0)
-                    break
+        listing["vin"] = find_vin_in_strings(fields)
 
     return {key: value for key, value in listing.items() if value is not None}
 
 
 # --- strategy 1: JSON-LD --------------------------------------------------
 
-_JSON_LD_RE = re.compile(
-    r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
-    re.IGNORECASE | re.DOTALL,
-)
-
-_VEHICLE_TYPES = {"car", "vehicle", "product"}
-
-
-def _iter_ld_objects(raw_json: str):
-    try:
-        data = json.loads(raw_json)
-    except (json.JSONDecodeError, ValueError):
-        return
-    stack = [data]
-    while stack:
-        node = stack.pop()
-        if isinstance(node, dict):
-            if "@graph" in node and isinstance(node["@graph"], list):
-                stack.extend(node["@graph"])
-            yield node
-            stack.extend(v for v in node.values() if isinstance(v, (dict, list)))
-        elif isinstance(node, list):
-            stack.extend(node)
-
-
 def _parse_json_ld(body: str) -> List[Dict[str, Any]]:
     listings: List[Dict[str, Any]] = []
-    for block in _JSON_LD_RE.findall(body):
-        for node in _iter_ld_objects(block):
-            node_type = node.get("@type")
-            if isinstance(node_type, list):
-                types = {str(t).lower() for t in node_type}
-            else:
-                types = {str(node_type).lower()} if node_type else set()
-            if not types & _VEHICLE_TYPES:
-                continue
-            fields: Dict[str, Any] = dict(node)
-            offers = node.get("offers")
-            if isinstance(offers, dict):
-                fields.setdefault("price", offers.get("price"))
-            seller = None
-            if isinstance(offers, dict):
-                seller = offers.get("seller")
-            if isinstance(seller, dict):
-                fields.setdefault("dealer_name", seller.get("name"))
-            fields.setdefault("listing_url", node.get("url") or node.get("@id"))
-            listing = _listing_from_fields(fields)
-            if listing:
-                listings.append(listing)
+    for node in iter_ld_vehicle_nodes(body):
+        fields: Dict[str, Any] = dict(node)
+        price, seller = ld_offer_price_and_seller(node)
+        if price is not None:
+            fields.setdefault("price", price)
+        if seller is not None:
+            fields.setdefault("dealer_name", seller.get("name"))
+        fields.setdefault("listing_url", node.get("url") or node.get("@id"))
+        listing = _listing_from_fields(fields)
+        if listing:
+            listings.append(listing)
     return listings
 
 
 # --- strategy 2: embedded JSON / data-attribute cards ---------------------
-
-class _VehicleCardScanner(HTMLParser):
-    """Collects data-* attributes off elements carrying a 'vehicle-card' class."""
-
-    def __init__(self) -> None:
-        super().__init__(convert_charrefs=True)
-        self.cards: List[Dict[str, str]] = []
-
-    def handle_starttag(self, tag: str, attrs: List[tuple]) -> None:
-        attr_map = dict(attrs)
-        classes = attr_map.get("class", "") or ""
-        if "vehicle-card" not in classes.split() and "vehicle-card" not in classes:
-            return
-        fields: Dict[str, str] = {}
-        for key, value in attrs:
-            if value is None:
-                continue
-            if key.startswith("data-"):
-                fields[key[len("data-"):].replace("-", "_")] = value
-        if fields:
-            self.cards.append(fields)
-
-    # data-* attributes can also land on self-closing/void-ish tags parsed as start tags;
-    # handle_startendtag reuses handle_starttag via HTMLParser's default behavior.
-
+# Cars.com's markup convention (or at least the convention this unvalidated parser is
+# written against) puts each card's full data on data-* attributes of one element carrying
+# a "vehicle-card" class, rather than nested inner elements -- see `parsing.
+# DataAttributeCardScanner` for why that needs nothing more than a marker class.
 
 def _parse_data_attribute_cards(body: str) -> List[Dict[str, Any]]:
-    scanner = _VehicleCardScanner()
-    try:
-        scanner.feed(body)
-    except Exception:
-        return []
     listings = []
-    for fields in scanner.cards:
+    for fields in run_data_attribute_card_scanner(body, "vehicle-card"):
         listing = _listing_from_fields(fields)
         if listing:
             listings.append(listing)
@@ -315,89 +171,28 @@ def _parse_data_attribute_cards(body: str) -> List[Dict[str, Any]]:
 
 
 # --- strategy 3: plain HTML card walk --------------------------------------
+# Last-resort walk: pull VIN/title/price/mileage text out of listing-card-ish markup.
+# Looks for elements whose class mentions "vehicle-card" (same container as strategy 2,
+# covering pages that render the card wrapper but skip the data-* attributes) and reads
+# plain text out of common inner elements by class name convention.
 
-class _PlainCardParser(HTMLParser):
-    """Last-resort walk: pull VIN/title/price/mileage text out of listing-card-ish markup.
-
-    Looks for elements whose class mentions "vehicle-card" (same container as strategy 2,
-    covering pages that render the card wrapper but skip the data-* attributes) and reads
-    plain text out of common inner elements by class name convention.
-    """
-
-    def __init__(self) -> None:
-        super().__init__(convert_charrefs=True)
-        self.cards: List[Dict[str, Any]] = []
-        self._depth: List[str] = []
-        self._card: Optional[Dict[str, Any]] = None
-        self._card_depth = 0
-        self._text_target: Optional[str] = None
-        self._buffer = ""
-
-    def handle_starttag(self, tag: str, attrs: List[tuple]) -> None:
-        attr_map = dict(attrs)
-        classes = attr_map.get("class", "") or ""
-        class_list = classes.split()
-        self._depth.append(tag)
-
-        if self._card is None and "vehicle-card" in class_list:
-            self._card = {}
-            self._card_depth = len(self._depth)
-            if attr_map.get("data-vin"):
-                self._card["vin"] = attr_map["data-vin"]
-            if attr_map.get("href") and tag == "a":
-                self._card.setdefault("listing_url", attr_map["href"])
-            return
-
-        if self._card is None:
-            return
-
-        if tag == "a" and attr_map.get("href"):
-            self._card.setdefault("listing_url", attr_map["href"])
-
-        mapping = {
-            "title": "title", "vehicle-card-link": "title",
-            "primary-price": "price", "price": "price",
-            "mileage": "mileage",
-            "dealer-name": "dealer_name",
-            "dealer-location": "dealer_location", "miles-from-user": "distance_miles",
-            "stock-type": "cpo",
-            "vin": "vin",
-        }
-        for css_class, field_name in mapping.items():
-            if css_class in class_list:
-                self._text_target = field_name
-                self._buffer = ""
-                break
-
-    def handle_data(self, data: str) -> None:
-        if self._text_target is not None:
-            self._buffer += data
-
-    def handle_endtag(self, tag: str) -> None:
-        if self._text_target is not None:
-            value = self._buffer.strip()
-            if value and self._card is not None:
-                self._card[self._text_target] = value
-            self._text_target = None
-            self._buffer = ""
-
-        if self._depth:
-            self._depth.pop()
-
-        if self._card is not None and len(self._depth) < self._card_depth:
-            self.cards.append(self._card)
-            self._card = None
-            self._card_depth = 0
+_PLAIN_CARD_FIELD_CLASSES = {
+    "title": "title", "vehicle-card-link": "title",
+    "primary-price": "price", "price": "price",
+    "mileage": "mileage",
+    "dealer-name": "dealer_name",
+    "dealer-location": "dealer_location", "miles-from-user": "distance_miles",
+    "stock-type": "cpo",
+    "vin": "vin",
+}
 
 
 def _parse_plain_cards(body: str) -> List[Dict[str, Any]]:
-    parser = _PlainCardParser()
-    try:
-        parser.feed(body)
-    except Exception:
-        return []
+    cards = run_class_card_parser(
+        body, "vehicle-card", _PLAIN_CARD_FIELD_CLASSES, capture_data_attrs={"vin"}
+    )
     listings = []
-    for fields in parser.cards:
+    for fields in cards:
         if "cpo" in fields:
             fields["cpo"] = "certified" in str(fields["cpo"]).lower()
         listing = _listing_from_fields(fields)

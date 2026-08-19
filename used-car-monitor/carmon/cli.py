@@ -19,6 +19,16 @@ from .scoring import score_listing
 from .sources import build_sources, grouped_sources
 
 
+def _ensure_env() -> None:
+    """Create a documented, blank .env on first run — no copying an example file."""
+    from .settings import ensure_env_file
+    if ensure_env_file():
+        print("Created .env (chmod 600) with every secret blank and where to get each one.",
+              file=sys.stderr)
+        print("Fill it in there, or on the website: python3 -m carmon serve → Settings.",
+              file=sys.stderr)
+
+
 def _force_utf8_output() -> None:
     """Make stdout/stderr UTF-8 safe on every platform.
 
@@ -448,8 +458,22 @@ def cmd_scrape(args: argparse.Namespace) -> int:
         print(f"  listings {usage['listings']} / {scraper_config.get('max_listings_per_day', 100)}")
         for row in db.scrape_usage_by_source(conn):
             print(f"    {row['source']:<14} {row['requests']:>3} request(s), {row['listings']:>3} listing(s)")
-        print(f"  enabled: {scraper_config.get('enabled', False)}; sources: "
-              f"{ {k: v for k, v in (scraper_config.get('sources') or {}).items()} }")
+
+        from .scrapers import REGISTRY
+        toggles = scraper_config.get("sources") or {}
+        health = {row["source"]: row for row in db.get_scraper_status(conn)}
+        icons = {"ok": "✅", "blocked": "🚫", "disallowed": "⛔", "budget": "⏳",
+                 "error": "❌", "empty": "⚠️ ", "unparsed": "⚠️ "}
+        print(f"\n  master switch: {'ON' if scraper_config.get('enabled') else 'OFF'}")
+        print(f"  {'adapter':<12} {'on?':<5} {'state':<12} last run")
+        for key in sorted(set(REGISTRY) | set(toggles)):
+            row = health.get(key)
+            state = row["status"] if row else "never run"
+            icon = icons.get(state, "·")
+            last = (row["last_run_at"][:16].replace("T", " ") if row and row.get("last_run_at") else "—")
+            print(f"  {key:<12} {'yes' if toggles.get(key) else 'no':<5} {icon} {state:<10} {last}")
+            if row and row.get("last_error"):
+                print(f"      last error: {row['last_error'][:120]}")
         conn.close()
         return 0
 
@@ -472,6 +496,95 @@ def cmd_scrape(args: argparse.Namespace) -> int:
         conn.close()
         return 1
     conn.close()
+    return 0
+
+
+def cmd_settings(args: argparse.Namespace) -> int:
+    """Read and change config.json (and .env secrets) from the terminal.
+
+    The same rules the website enforces apply here: known keys only, types may not change,
+    and secrets are written to .env rather than printed.
+    """
+    from . import settings as settings_module
+
+    config = _config(args)
+
+    if args.secrets:
+        print("Secrets (from .env; values are never printed):")
+        for entry in settings_module.secrets_status():
+            state = f"set {entry['masked']}" if entry["set"] else "not set"
+            source = " (from the environment)" if entry["from_environment"] else ""
+            print(f"  {entry['key']:<22} {state}{source}")
+            print(f"      {entry['label']}")
+        return 0
+
+    if args.set_secret:
+        import getpass
+        value = getpass.getpass(f"Value for {args.set_secret} (input hidden, blank to clear): ")
+        try:
+            settings_module.update_secrets({args.set_secret: value})
+        except settings_module.SettingsError as exc:
+            print(f"Rejected: {exc}", file=sys.stderr)
+            return 1
+        print(f"{args.set_secret} updated in .env (chmod 600).")
+        return 0
+
+    if args.set:
+        changes: Dict[str, Any] = {}
+        fields = settings_module.editable_settings(config)
+        for pair in args.set:
+            if "=" not in pair:
+                print(f"Expected key=value, got {pair!r}", file=sys.stderr)
+                return 2
+            key, _, raw = pair.partition("=")
+            key, raw = key.strip(), raw.strip()
+            field = fields.get(key)
+            if field is None:
+                print(f"Unknown setting: {key}", file=sys.stderr)
+                return 2
+            kind = field["type"]
+            try:
+                if kind == "bool":
+                    if raw.lower() not in ("1", "0", "true", "false", "yes", "no", "on", "off"):
+                        raise ValueError("expected true/false")
+                    changes[key] = raw.lower() in ("1", "true", "yes", "on")
+                elif kind == "number":
+                    changes[key] = float(raw) if "." in raw else int(raw)
+                elif kind == "list":
+                    changes[key] = [item.strip() for item in raw.split(",") if item.strip()]
+                else:
+                    changes[key] = raw
+            except ValueError:
+                print(f"{key} expects a {kind}, but got {raw!r}. Nothing was changed.", file=sys.stderr)
+                return 2
+        try:
+            result = settings_module.apply_changes(config, changes, dry_run=args.dry_run)
+        except settings_module.SettingsError as exc:
+            print(f"Rejected (nothing was changed): {exc}", file=sys.stderr)
+            return 1
+        for key, value in result["applied"].items():
+            print(f"{'would set' if args.dry_run else 'set'} {key} = {value!r}")
+        for warning in result["warnings"]:
+            print(f"warning: {warning}", file=sys.stderr)
+        if result.get("backup"):
+            print(f"previous config archived to {result['backup']}")
+        return 0
+
+    fields = settings_module.editable_settings(config)
+    if args.json:
+        print(json.dumps({key: field["value"] for key, field in fields.items()}, indent=2))
+        return 0
+    section = None
+    for key, field in fields.items():
+        if args.filter and args.filter not in key:
+            continue
+        head = key.split(".")[0]
+        if head != section:
+            section = head
+            print(f"\n[{section}]")
+        print(f"  {key:<44} {field['value']!r}")
+    print("\nChange one with:  python3 -m carmon settings --set search.zip=37211")
+    print("Secrets:          python3 -m carmon settings --secrets")
     return 0
 
 
@@ -654,11 +767,24 @@ def build_parser() -> argparse.ArgumentParser:
     deals.set_defaults(func=cmd_deals)
 
     scrape = sub.add_parser("scrape", help="run the optional scrapers (off by default, capped)")
-    scrape.add_argument("--source", help="run just this adapter, ignoring its config toggle")
+    scrape.add_argument("--source", help="run just this adapter, overriding its config toggle "
+                                         "(the master scrapers.enabled switch still applies)")
     scrape.add_argument("--probe", action="store_true", help="one request per adapter: is it reachable?")
     scrape.add_argument("--status", action="store_true", help="today's scraper usage against the caps")
-    scrape.add_argument("--dry-run", action="store_true", help="fetch and parse but store nothing")
+    scrape.add_argument("--dry-run", action="store_true",
+                        help="fetch and parse but store nothing — still makes requests and still "
+                             "spends the daily budget")
     scrape.set_defaults(func=cmd_scrape)
+
+    settings_cmd = sub.add_parser("settings", help="view or change config.json and .env")
+    settings_cmd.add_argument("--set", action="append", metavar="KEY=VALUE",
+                              help="change a setting (repeatable); applied all-or-nothing")
+    settings_cmd.add_argument("--secrets", action="store_true", help="which secrets are set (masked)")
+    settings_cmd.add_argument("--set-secret", metavar="KEY", help="set one secret, prompting without echo")
+    settings_cmd.add_argument("--filter", help="only show keys containing this text")
+    settings_cmd.add_argument("--dry-run", action="store_true", help="validate without writing")
+    settings_cmd.add_argument("--json", action="store_true")
+    settings_cmd.set_defaults(func=cmd_settings)
 
     rescore = sub.add_parser("rescore", help="recompute every stored score with the current config")
     rescore.set_defaults(func=cmd_rescore)
@@ -695,6 +821,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main(argv: Optional[List[str]] = None) -> int:
     _force_utf8_output()
+    _ensure_env()
     parser = build_parser()
     args = parser.parse_args(argv)
     _setup_logging(args.verbose)

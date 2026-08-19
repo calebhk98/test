@@ -50,7 +50,11 @@ class MarketCheckClient:
         session: Optional[Any] = None,
     ):
         if not api_key:
-            raise MarketCheckError("MARKETCHECK_API_KEY is empty — see .env.example")
+            raise MarketCheckError(
+                "MARKETCHECK_API_KEY is empty. Fill it into the .env file (created for you on "
+                "first run), or set it on the website's Settings page. Free key: "
+                "https://www.marketcheck.com/apis"
+            )
         api_config = api_config or {}
         self.api_key = api_key
         self.conn = conn

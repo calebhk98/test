@@ -1,53 +1,76 @@
-"""Autotrader adapter.
+"""TrueCar adapter.
 
-Autotrader has no public listings API. This adapter scrapes public search-result pages
-instead, and it is **opt-in and capped**: it stays off unless both `scrapers.enabled` and
-`scrapers.sources.autotrader` are switched on in config.json, and everything above this
-module (see `carmon/scrapers/base.py`) enforces robots.txt, a slow request rate, and hard
-daily caps regardless of what this adapter asks for.
+TrueCar has no public listings API, so this adapter scrapes its search-results HTML. It
+is **opt-in and capped** like every other adapter in this package: it stays off unless
+both `scrapers.enabled` and `scrapers.sources.truecar` are switched on in config.json, and
+everything above this module (see `carmon/scrapers/base.py`) enforces robots.txt, a slow
+request rate, and hard daily caps regardless of what this adapter asks for.
 
-robots.txt is obeyed unconditionally by the base `Fetcher`/`RobotsCache` — there is no
-override here. As of the last manual check, Autotrader's `User-agent: *` block allows
-`/cars-for-sale/all-cars` (the path this adapter targets) while disallowing `/research/`,
-`*keyword=`, `/cars-for-sale/cbh/history/`, `/cars-for-sale/build-and-price`,
-`/cars-for-sale/svc/listing-view-count`, and assorted `.xhtml` partials; this module never
-targets those paths, and `search_urls()` also filters against a local copy of those
-fragments as a second, redundant guard. robots.txt can change at any time, and the live
-`RobotsCache` check in `base.py` is the actual authority, not this module.
+robots.txt is obeyed unconditionally by the base `Fetcher`/`RobotsCache` -- there is no
+override here, and there is no config flag anywhere in this project that can turn it off.
+Unlike most other sources this package touches, **TrueCar's `robots.txt` is actually
+fetchable (HTTP 200) from this machine**, so it was read directly rather than guessed at.
+Its `User-agent: *` block disallows, among other things:
 
-**The parser has not been validated against live HTML.** From the datacenter IP this
-adapter was written on, an actual Autotrader search request returns a bot-challenge shell
-(a few KB of page mentioning "captcha"), not real listings, and `Fetcher.get()` correctly
-raises `BlockedError` in that situation — which is the correct, intentional end of the
-story, not a bug to route around. Per this project's rules, that challenge is never
-evaded: no browser-mimicking headers, no cookies, no proxies, no retries with a new
-identity, no CAPTCHA handling. If this adapter is blocked, `ScraperBase.run()` reports
-status "blocked" and stops after exactly one request.
+  * `/*?*zipcode=`                                -- the zip-code query param, spelled
+                                                       exactly that way
+  * `*listings/*?*drivetrain=`, `*listings/*?*transmission=`, `*listings/*?*engine=`
+                                                    -- three specific filter params on
+                                                       listings pages
+  * `/used-cars-for-sale/listing/*` (singular)     -- individual vehicle detail pages
+  * `/used-cars-for-sale/listings/inventory/*`     -- an inventory sub-path
+  * `/user/`, `/my/`, `/dash/`                     -- account-area paths
 
-Because live HTML could not be fetched, `parse()` is written defensively against the
-shape of markup Autotrader is documented (and generally known) to emit, in order of how
-stable each source is expected to be:
+This adapter avoids every one of those on purpose: `search_urls()` stays on the plural
+`/used-cars-for-sale/listings/` search path (never the singular `/listing/` detail path or
+the `/listings/inventory/` sub-path), identifies the zip code with `location=` (never
+`zipcode=`), and never emits `drivetrain=`, `transmission=`, or `engine=` query params --
+those three filters are simply not offered by `search_urls()`. `DISALLOWED_PATH_FRAGMENTS`
+below is a second, local, redundant guard on top of the live `RobotsCache` check every
+request already goes through in `base.py`: `search_urls()` refuses to emit a URL
+containing any of those fragments even if a future edit to this file tried to add one.
+robots.txt can change at any time, and the live check in `base.py` remains the actual
+authority, not this local copy.
 
-  (a) `application/ld+json` schema.org `Car`/`Vehicle`/`Product` blocks — the most stable
+**Even though robots.txt is readable here, the listings page itself is not.** An actual
+TrueCar search request from this machine returns **HTTP 403** to a plain, non-browser
+client, so `Fetcher.get()` correctly raises `BlockedError` and `ScraperBase.run()` reports
+status "blocked" after exactly one request -- which is the correct, intentional end of the
+story, not a bug to route around. Per this project's rules, that block is never evaded: no
+browser-mimicking User-Agent or headers, no cookies, no proxies, no retries with a new
+identity, no CAPTCHA handling. A home/residential connection may well see something
+different, since datacenter IPs are disproportionately blocked by this kind of front door,
+but that has not been verified from here.
+
+Because a real listings page could not be fetched from this environment, **`parse()` below
+has never been exercised against live TrueCar HTML and is unvalidated.** It is written
+defensively against markup TrueCar is documented (and generally known) to emit, in order
+of how stable each source is expected to be:
+
+  (a) `application/ld+json` schema.org `Car`/`Vehicle`/`Product` blocks -- the most stable
       target, since it is SEO markup a site has a strong incentive to keep well-formed.
-  (b) an embedded JSON state blob (`__NEXT_DATA__`, `window.__INITIAL_STATE__`, or a
-      similarly named inline `<script>` payload) — found generically by searching the
-      decoded JSON for any object carrying a VIN, rather than by hard-coding a specific
-      page-state schema that is likely to drift.
+  (b) TrueCar is a Next.js application, so its server-rendered pages typically ship a
+      `<script id="__NEXT_DATA__">` JSON blob carrying the page's props. This strategy
+      looks generically for any object in that blob carrying a VIN, rather than hard-coding
+      a specific props schema that is likely to drift, and also looks for TrueCar's
+      distinctive price-context fields (a "great/good/fair price"-style rating and a
+      market-average comparison) wherever they appear alongside a VIN.
   (c) an `html.parser`-based fallback over listing cards identified by a `data-vin`
-      attribute, reading the sibling text nodes inside each card.
+      attribute (or a `data-qa`/class hint containing "vin"), reading sibling text nodes
+      inside each card, including any price-rating badge text and "$X below/above market
+      average"-style copy.
 
-Strategies (b) and (c) both use "carries a VIN" as their signal for "this is a listing" —
-that is a real limitation: a listing lacking a VIN in the source markup is invisible to
-those two strategies. Strategy (a) has no such requirement and can surface a VIN-less
-listing dict; per the base class, anything reaching `ScraperBase.run()` without a VIN is
-then dropped there, since VIN is what deduplicates against MarketCheck data. All three
-strategies return `[]`, never raise, when nothing recognizable is found — a markup change
-should downgrade an adapter to "empty", not take down the whole run.
+Strategies (b) and (c) both use "carries a VIN" as their signal for "this is a listing" --
+a listing lacking a VIN in the source markup is invisible to those two strategies. Strategy
+(a) has no such requirement and can surface a VIN-less listing dict; per the base class,
+anything reaching `ScraperBase.run()` without a VIN is dropped there, since VIN is what
+deduplicates against MarketCheck data. All three strategies return `[]`, never raise, when
+nothing recognizable is found -- a markup change should downgrade an adapter to "empty",
+not take down the whole run.
 
-Review Autotrader's Terms of Service before enabling this adapter. Automated collection is
-commonly restricted by such terms even where robots.txt is silent, and robots.txt
-permission is necessary but not sufficient for this to be a good idea.
+Review TrueCar's Terms of Service before enabling this adapter. robots.txt permission is
+necessary but not sufficient for this to be a good idea, and automated collection is
+commonly restricted by a site's terms even where robots.txt is silent on a given path.
 """
 
 from __future__ import annotations
@@ -75,36 +98,34 @@ from .parsing import (
     walk_dicts as _walk_dicts,
 )
 
-SEARCH_PATH = "/cars-for-sale/all-cars"
+SEARCH_PATH = "/used-cars-for-sale/listings/"
 
-# Fragments known (from a manual robots.txt read) to be disallowed for User-agent: *.
-# search_urls() never builds a URL containing one of these, as a second guard on top of
-# the live robots.txt check every request already goes through in base.py.
+# Fragments read directly out of TrueCar's (fetchable) robots.txt `User-agent: *` block.
+# search_urls() never builds a URL containing one of these, as a second, local guard on
+# top of the live robots.txt check every request already goes through in base.py.
 DISALLOWED_PATH_FRAGMENTS = (
-    "/research/",
-    "keyword=",
-    "/cars-for-sale/cbh/history/",
-    "/cars-for-sale/build-and-price",
-    "/cars-for-sale/svc/listing-view-count",
-    ".xhtml",
+    "zipcode=",
+    "drivetrain=",
+    "transmission=",
+    "engine=",
+    "/used-cars-for-sale/listing/",       # singular -- vehicle detail pages
+    "/used-cars-for-sale/listings/inventory/",
+    "/user/",
+    "/my/",
+    "/dash/",
 )
 
-_PAGE_SIZE = 25
-
-# Autotrader-specific embedded-state convention: a generic `window.__SOMENAME__ = {...};`
-# assignment, tried alongside the shared `__NEXT_DATA__` pattern (`_NEXT_DATA_RE`, imported
-# from `parsing`) since either has been seen on Next.js-family sites.
-_WINDOW_STATE_RE = re.compile(
-    r"window\.__[A-Za-z0-9_]+__\s*=\s*(\{.*?\})\s*;\s*(?:</script>|\r?\n)", re.S
-)
 _CITY_STATE_RE = re.compile(r"^[A-Za-z][A-Za-z .'\-]*,\s*[A-Z]{2}$")
+_DEAL_RATING_RE = re.compile(
+    r"\b(Great|Good|Fair|High|Overpriced)\s+(?:Price|Deal)\b", re.I
+)
 
 
 @register
-class AutotraderScraper(ScraperBase):
-    key = "autotrader"
-    name = "Autotrader"
-    site = "https://www.autotrader.com"
+class TrueCarScraper(ScraperBase):
+    key = "truecar"
+    name = "TrueCar"
+    site = "https://www.truecar.com"
     kind = "listings"
 
     # --- search URL construction -----------------------------------------------
@@ -113,29 +134,29 @@ class AutotraderScraper(ScraperBase):
         if not zip_code:
             return []
 
-        params: Dict[str, str] = {"zip": zip_code, "numRecords": str(_PAGE_SIZE)}
+        params: Dict[str, str] = {"location": zip_code}
 
         radius = _to_int(search.get("radius_miles"))
         if radius is not None:
             params["searchRadius"] = str(radius)
-        year_min = _to_int(search.get("year_min"))
-        if year_min is not None:
-            params["startYear"] = str(year_min)
         price_max = _to_int(search.get("price_max"))
         if price_max is not None:
-            params["maxPrice"] = str(price_max)
+            params["priceHigh"] = str(price_max)
         mileage_max = _to_int(search.get("mileage_max"))
         if mileage_max is not None:
-            params["maxMileage"] = str(mileage_max)
+            params["mileageHigh"] = str(mileage_max)
+        year_min = _to_int(search.get("year_min"))
+        if year_min is not None:
+            params["yearLow"] = str(year_min)
 
         max_pages = max(0, int(self.limits.max_pages_per_run))
         urls: List[str] = []
-        for page in range(max_pages):
+        for page in range(1, max_pages + 1):
             page_params = dict(params)
-            page_params["firstRecord"] = str(page * _PAGE_SIZE)
+            page_params["page"] = str(page)
             url = f"{self.site}{SEARCH_PATH}?{urlencode(page_params)}"
             if any(frag in url for frag in DISALLOWED_PATH_FRAGMENTS):
-                continue  # should be unreachable given SEARCH_PATH, but never emit it anyway
+                continue  # should be unreachable given the params built above, but never emit it anyway
             urls.append(url)
         return urls
 
@@ -143,7 +164,7 @@ class AutotraderScraper(ScraperBase):
     def parse(self, body: str, url: str) -> List[Dict[str, Any]]:
         if not body or not body.strip():
             return []
-        for strategy in (self._parse_json_ld, self._parse_embedded_state, self._parse_html_cards):
+        for strategy in (self._parse_json_ld, self._parse_next_data, self._parse_html_cards):
             try:
                 listings = strategy(body, url)
             except Exception:
@@ -238,6 +259,18 @@ class AutotraderScraper(ScraperBase):
 
         listing["listing_url"] = offer_url or _clean_str(obj.get("url")) or url
 
+        # TrueCar's distinctive price-context datum, when schema.org carries it at all.
+        deal_rating = _clean_str(
+            obj.get("dealRating") or obj.get("priceRating") or obj.get("priceLabel")
+        )
+        if deal_rating:
+            listing["deal_rating"] = deal_rating
+        market_average = _to_int(
+            obj.get("marketAverage") or obj.get("marketAveragePrice") or obj.get("averagePrice")
+        )
+        if market_average is not None:
+            listing["market_average"] = market_average
+
         condition = _clean_str(obj.get("itemCondition")) or ""
         haystack = " ".join(filter(None, [name, condition])).lower()
         if "certified" in haystack:
@@ -245,31 +278,30 @@ class AutotraderScraper(ScraperBase):
 
         return listing
 
-    # (b) embedded JSON page-state blob --------------------------------------------
-    def _parse_embedded_state(self, body: str, url: str) -> List[Dict[str, Any]]:
-        blobs: List[str] = []
-        for regex in (_NEXT_DATA_RE, _WINDOW_STATE_RE):
-            blobs.extend(match.group(1) for match in regex.finditer(body))
-
+    # (b) __NEXT_DATA__ embedded JSON props blob -------------------------------------
+    def _parse_next_data(self, body: str, url: str) -> List[Dict[str, Any]]:
         listings: List[Dict[str, Any]] = []
         seen_vins: set[str] = set()
-        for blob in blobs:
+        for match in _NEXT_DATA_RE.finditer(body):
+            raw = match.group(1).strip()
+            if not raw:
+                continue
             try:
-                data = json.loads(blob)
+                data = json.loads(raw)
             except json.JSONDecodeError:
                 continue
             for node in _walk_dicts(data):
                 # A VIN is the anchor that identifies "this dict is a listing" in an
-                # otherwise-unknown page-state blob; a listing without one is invisible
+                # otherwise-unknown Next.js props tree; a listing without one is invisible
                 # to this strategy (see module docstring).
                 vin = _clean_str(_find_ci(node, "vin"))
                 if not vin or vin.upper() in seen_vins:
                     continue
                 seen_vins.add(vin.upper())
-                listings.append(self._listing_from_state_dict(node, vin, url))
+                listings.append(self._listing_from_next_data(node, vin, url))
         return listings
 
-    def _listing_from_state_dict(self, node: Dict[str, Any], vin: str, url: str) -> Dict[str, Any]:
+    def _listing_from_next_data(self, node: Dict[str, Any], vin: str, url: str) -> Dict[str, Any]:
         listing: Dict[str, Any] = {"vin": vin}
 
         year = _to_int(_find_ci(node, "year", "modelYear"))
@@ -326,6 +358,19 @@ class AutotraderScraper(ScraperBase):
         if cpo:
             listing["cpo"] = True
 
+        # TrueCar's distinctive price-context datum: a "great/good/fair price"-style
+        # rating plus a market-average comparison, when the props tree carries them.
+        deal_rating = _clean_str(
+            _find_ci(node, "dealRating", "priceRating", "priceLabel", "priceIndicator")
+        )
+        if deal_rating:
+            listing["deal_rating"] = deal_rating
+        market_average = _to_int(
+            _find_ci(node, "marketAverage", "marketAveragePrice", "averagePrice", "marketPrice")
+        )
+        if market_average is not None:
+            listing["market_average"] = market_average
+
         listing_url = _clean_str(_find_ci(node, "url", "listingUrl", "vdpUrl", "href"))
         listing["listing_url"] = _absolute_url(url, listing_url) or listing_url or url
 
@@ -355,6 +400,26 @@ class AutotraderScraper(ScraperBase):
             if "certified" in low:
                 listing["cpo"] = True
 
+            deal_match = _DEAL_RATING_RE.search(chunk)
+            if deal_match and "deal_rating" not in listing:
+                listing["deal_rating"] = deal_match.group(0)
+                continue
+
+            market_match = re.search(
+                r"\$([\d,]+)\s+(?:below|above|under|over)\s+market\s+average", chunk, re.I
+            )
+            if market_match and "market_average" not in listing and "price_current" in listing:
+                # The badge states a *difference* from the market average, not the average
+                # itself; recover the average from the known asking price plus/minus that
+                # difference rather than guessing at the average directly.
+                diff = _to_int(market_match.group(1))
+                if diff is not None:
+                    # "$X below market average" -> the average is X *above* the asking
+                    # price; "$X above market average" -> the average is X *below* it.
+                    sign = 1 if re.search(r"below|under", chunk, re.I) else -1
+                    listing["market_average"] = listing["price_current"] + sign * diff
+                continue
+
             if _CITY_STATE_RE.match(chunk):
                 city, state = chunk.rsplit(",", 1)
                 listing.setdefault("dealer_city", city.strip())
@@ -382,6 +447,7 @@ class AutotraderScraper(ScraperBase):
                 "dealer_name" not in listing
                 and "year" in listing
                 and "certified" not in low
+                and not deal_match
                 and not re.search(r"\d", chunk)
             ):
                 listing["dealer_name"] = chunk

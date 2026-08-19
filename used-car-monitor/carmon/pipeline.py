@@ -527,6 +527,16 @@ def run_scrapers(
     `scrapers.enabled` and the individual source are both switched on in config.json;
     the daily caps live in `carmon/scrapers/base.py` and are enforced against a ledger
     table, not an in-memory counter.
+
+    Two behaviours worth being explicit about:
+
+    * ``dry_run`` still fetches. It suppresses *storage*, not network traffic — the point of
+      a dry run is to see what a source actually returns and whether it parses, which cannot
+      be answered without asking. It spends daily budget exactly like a real run. This
+      matches ``carmon run --dry-run``, which also queries MarketCheck and writes nothing.
+    * Naming ``sources`` explicitly overrides the per-source toggle in config.json, so
+      ``carmon scrape --source repairpal`` runs that adapter even when it is switched off.
+      The master ``scrapers.enabled`` switch is never bypassed.
     """
     from .scrapers import REGISTRY, ScrapeLimits  # imported lazily: adapters are optional
 
@@ -540,7 +550,7 @@ def run_scrapers(
     if not summary["enabled"]:
         summary["message"] = (
             "Scrapers are off. Turn on `scrapers.enabled` and the individual source in config.json "
-            "after reviewing that site's Terms of Service."
+            "(or on the website's Settings page) after reviewing that site's Terms of Service."
         )
         if owns_conn:
             conn.close()
@@ -557,6 +567,18 @@ def run_scrapers(
         "listings_used": usage["listings"], "listings_cap": limits.max_listings_per_day,
     }
 
+    summary["dry_run"] = bool(dry_run)
+    if dry_run:
+        summary["dry_run_note"] = (
+            "Dry run: pages were still fetched and parsed (and counted against the daily caps) "
+            "but nothing was stored."
+        )
+    if sources:
+        summary["override_note"] = (
+            f"Explicitly requested {', '.join(sources)} — per-source config toggles were bypassed "
+            "for this run. The master scrapers.enabled switch still applies."
+        )
+
     for key in wanted:
         scraper_class = REGISTRY.get(key)
         if scraper_class is None:
@@ -567,20 +589,19 @@ def run_scrapers(
             continue
 
         scraper = scraper_class(conn, limits)
-        result = scraper.run(dict(config.search))
-        entry = result.as_dict()
 
         if getattr(scraper_class, "kind", "listings") == "reference":
-            stored = 0
-            if not dry_run:
-                store = getattr(sys.modules[scraper_class.__module__], "store", None)
-                for record in result.listings:
-                    if store:
-                        store(conn, record)
-                        stored += 1
-            entry["stored"] = stored
+            # A reference source is keyed by model, not by the listing search, so it runs
+            # once per model we actually care about: whatever is already stored, then the
+            # preferred list. Without this it would be handed a search with no make/model
+            # and quietly do nothing.
+            entry = _run_reference_scraper(config, conn, scraper, scraper_class, limits, dry_run)
+            db.save_scraper_status(conn, key, entry)
             summary["sources"][key] = entry
             continue
+
+        result = scraper.run(dict(config.search))
+        entry = result.as_dict()
 
         kept: List[Dict[str, Any]] = []
         for listing in result.listings:
@@ -609,6 +630,7 @@ def run_scrapers(
             summary["new"] += new_count
 
         entry["kept_after_filters"] = len(kept)
+        db.save_scraper_status(conn, key, entry)
         summary["kept"] += len(kept)
         summary["sources"][key] = entry
 
@@ -620,6 +642,68 @@ def run_scrapers(
     if owns_conn:
         conn.close()
     return summary
+
+
+def reference_models(config: Config, conn: sqlite3.Connection, limit: int = 10) -> List[Dict[str, str]]:
+    """Which make/model pairs a reference source (RepairPal) should be asked about.
+
+    Models already in the database first — those are cars actually for sale near you — then
+    the preferred list, so a fresh database still gets useful data on day one.
+    """
+    seen: Dict[tuple, Dict[str, str]] = {}
+    for row in db.distinct_model_years(conn, active_only=True):
+        key = (str(row["make"]).lower(), str(row["model"]).lower())
+        seen.setdefault(key, {"make": row["make"], "model": row["model"]})
+    for entry in config.scoring.get("preferred", []) or []:
+        make, model = entry.get("make"), entry.get("model")
+        if make and model:
+            seen.setdefault((make.lower(), model.lower()), {"make": make, "model": model})
+    return list(seen.values())[:limit]
+
+
+def _run_reference_scraper(
+    config: Config,
+    conn: sqlite3.Connection,
+    scraper: Any,
+    scraper_class: Any,
+    limits: Any,
+    dry_run: bool,
+) -> Dict[str, Any]:
+    """Run a per-model reference adapter over the models worth knowing about."""
+    store = getattr(sys.modules[scraper_class.__module__], "store", None)
+    models = reference_models(config, conn)
+    entry: Dict[str, Any] = {
+        "source": scraper_class.key, "status": "ok", "message": "", "pages_fetched": 0,
+        "listings": 0, "stored": 0, "models": [], "urls": [],
+    }
+    if not models:
+        entry.update(status="empty", message="no models to look up yet")
+        return entry
+
+    for model in models:
+        # Each model costs a request, so stop as soon as the shared daily budget is gone.
+        if scraper.fetcher.budget_left()["requests"] <= 0:
+            entry["status"] = "budget"
+            entry["message"] = "daily request cap reached; remaining models skipped"
+            break
+        result = scraper.run(model)
+        entry["pages_fetched"] += result.pages_fetched
+        entry["listings"] += len(result.listings)
+        entry["urls"].extend(result.urls)
+        entry["models"].append({
+            "make": model["make"], "model": model["model"],
+            "status": result.status, "records": len(result.listings),
+        })
+        if result.status != "ok":
+            entry["status"] = result.status
+            entry["message"] = result.message
+            if result.status in ("blocked", "disallowed", "budget"):
+                break  # a wall for one model is a wall for all of them
+        if not dry_run and store:
+            for record in result.listings:
+                store(conn, record)
+                entry["stored"] += 1
+    return entry
 
 
 def probe_scrapers(config: Config, conn: Optional[sqlite3.Connection] = None) -> List[Dict[str, Any]]:
@@ -637,9 +721,12 @@ def probe_scrapers(config: Config, conn: Optional[sqlite3.Connection] = None) ->
             preferred = (config.scoring.get("preferred") or [{}])[0]
             search.update({"make": preferred.get("make", "Toyota"), "model": preferred.get("model", "Corolla")})
         try:
-            results.append(scraper.probe(search))
+            entry = scraper.probe(search)
         except Exception as exc:
-            results.append({"source": key, "status": "error", "message": str(exc)})
+            entry = {"source": key, "name": getattr(scraper_class, "name", key),
+                     "status": "error", "message": str(exc)}
+        db.save_scraper_status(conn, key, entry)
+        results.append(entry)
     if owns_conn:
         conn.close()
     return results

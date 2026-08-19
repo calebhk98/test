@@ -1,5 +1,12 @@
 # Used Car Daily Monitor — Build Spec
 
+> **Status note (kept for the record).** This is the original spec as written, preserved
+> unchanged. Two things listed here as non-goals were later requested and built: the optional
+> scrapers (opt-in, capped, robots-obeying — see [docs/scrapers.md](docs/scrapers.md)) and
+> data sources beyond MarketCheck (NHTSA and EPA, both free and keyless). Everything else was
+> delivered as specified, plus market price comparison, quota pacing and a settings UI. The
+> stretch goal — piping the digest through a local LLM — remains unimplemented, deliberately.
+
 ## Goal
 
 A small daily job that queries MarketCheck's Inventory Search API for used cars matching my criteria, stores results in a local DB (dedup'd by VIN), tracks price/mileage changes over time, scores each listing against my priorities, and outputs a short daily digest of what's new or changed.

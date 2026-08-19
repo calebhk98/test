@@ -64,10 +64,15 @@ class ConfigConsistencyTests(unittest.TestCase):
         for forbidden in ("api_key", "apikey", "webhook", "token", "secret", "password"):
             self.assertNotIn(forbidden, blob, "secrets belong in .env, never in config.json")
 
-    def test_env_example_documents_every_secret_the_code_reads(self):
-        example = (PROJECT_ROOT / ".env.example").read_text()
-        for name in ("MARKETCHECK_API_KEY", "DISCORD_WEBHOOK_URL", "CARMON_API_TOKEN"):
-            self.assertIn(name, example)
+    def test_the_generated_env_documents_every_secret_the_code_reads(self):
+        """There is no example file to copy — the template is generated, so it cannot drift."""
+        from carmon.settings import KNOWN_SECRETS, env_template
+        template = env_template()
+        for name in KNOWN_SECRETS:
+            self.assertIn(f"{name}=", template)
+        self.assertIn("marketcheck.com/apis", template, "tell the user where to get the key")
+        self.assertFalse((PROJECT_ROOT / ".env.example").exists(),
+                         "the example file is gone; env_template() replaced it")
 
     def test_gitignore_protects_the_env_file(self):
         ignored = (PROJECT_ROOT / ".gitignore").read_text().splitlines()

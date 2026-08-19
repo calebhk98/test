@@ -174,7 +174,11 @@
     "sources": {
       "repairpal": false,
       "autotrader": false,
-      "cars_com": false
+      "cars_com": false,
+      "cargurus": false,
+      "carmax": false,
+      "carvana": false,
+      "truecar": false
     }
   },
   "digest": {

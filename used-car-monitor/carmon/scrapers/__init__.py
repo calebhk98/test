@@ -39,7 +39,9 @@ import logging as _logging  # noqa: E402
 
 _LOG = _logging.getLogger("carmon.scrapers")
 
-ADAPTER_MODULES = ("repairpal", "autotrader", "cars_com")
+ADAPTER_MODULES = (
+    "repairpal", "autotrader", "cars_com", "cargurus", "carmax", "carvana", "truecar",
+)
 
 for _name in ADAPTER_MODULES:
     try:
