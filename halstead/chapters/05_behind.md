@@ -37,7 +37,7 @@ He draws a rectangle, shades half of it, cuts the half into pieces, talking the 
 Sam gets it, grunting once, loud.  
 Kavi says he already knew it, out of a book, and gets told that's fine but he should listen anyway.  
 Ruth is already on to the next question.  
-Marisol asks him to do the rectangle again from the beginning, and he redraws it exactly the same way. Owen asks something two steps further back than that, about which number the flipping happens to. Mr. Baptiste answers him, then asks him a question back, and Owen looks at the board and says he doesn't know. Mr. Baptiste says that's fine and that they'll do it again tomorrow.  
+Marisol asks him to do the rectangle again from the beginning, and he redraws it exactly the same way. Owen asks something two steps further back than that, about which number the flipping happens to. Mr. Baptiste answers him, then asks him a question back, and Owen looks at the board and says he doesn't know. Mr. Baptiste says that's fine and that they'll do it again tomorrow, and Owen goes back to his own sheet and doesn't put his hand up again for the rest of the lesson.  
 A hand goes up near the back, "Does it work with negative numbers?"  
 "Try one."  
 "I did, it works."  
@@ -46,6 +46,7 @@ A hand goes up near the back, "Does it work with negative numbers?"
 "Meaning?" Mr. Baptiste says.  
 "Can you divide by zero if you flip it? Because flipping zero is one over zero."  
 "Good," Mr. Baptiste says, and does that one on the board too, and the two of them go back and forth about it until the bell goes.  
+Around them the rest of the class is already up, chairs scraping, and Sam's bag is over his shoulder before Mr. Baptiste even finishes the sentence.  
 Chloe sits and watches a conversation happen over the top of her head about a thing she asked first. Her ears are hot for an hour afterward, through the break, through most of the next thing.  
 You keep your own packets here. They're yours, they live in your bag, you work in them when there's a gap and nobody collects them at the end of the day. That night Chloe gets hers out and sits on the floor with her back against the side of the bed. The first problem is a half divided by a quarter. She draws the rectangle the way he drew it, shades in the half, then tries to put a quarter inside the shaded part, and gets stuck on whether the quarter is meant to be a quarter of the whole rectangle or a quarter of the half. She draws it again and gets stuck in the same place, on the same line. So she draws it a third time with her own numbers instead of his, since his numbers have been sitting in her head since two o'clock without doing anything for her. Three quarters divided by an eighth. She shades three quarters of a rectangle, then draws the eighths straight across the whole thing, top to bottom, all eight, before counting how many land inside the part she shaded.  
 Six.  
@@ -76,13 +77,14 @@ Chloe waits for the rest of it, but there isn't any; Sam has already gone back t
 "I know."  
 "At my school you do the same paper for a month."  
 "Yeah," Sam says, "mine too." He says it the way you'd agree about the weather, then goes back to his food.  
-Ruth is at the end of the table with her chin on her hand.  
+Ruth is at the end of the table with her chin on her hand, pushing the same piece of food around without picking it up.  
 "He was crying in the stairwell, on Thursday," she says to her tray. "I'm not being mean, that's what he was doing."  
 "Ruth."  
 "She asked why he went home."  
 "She didn't ask you."  
-"She asked the table," Ruth says.  
-Owen, then the bridge, then Owen again, and nowhere further than that. She keeps landing in the same place: Owen must not have liked the bridge, and she can't get past that, because she cannot work out how a person could not like the bridge.  
+"She asked the table," Ruth says, and puts her fork down instead of eating what's on it.  
+Chloe's own fork stops halfway to her mouth. She doesn't ask what he looked like, or how long, or who found him there. The questions are lined up behind each other and none of them come out.  
+Owen, then the bridge, then Owen again, and nowhere further than that. Chloe picks her roll apart, one small piece at a time, and doesn't eat any of it, going back through the same three facts: Owen must not have liked the bridge. It doesn't fit. She starts from the beginning and checks it again, and it still doesn't fit, and she starts again anyway, long after Ruth has gotten up and taken her tray. She cannot work out how a person could not like the bridge.  
 Four more leave before the end of the month, and each of them goes the same way. The bed goes. The mattress stays, stripped bare.  
 \---  
 At dinner in the third week Kavi says something about the moon, and Chloe says, "That's why it's a liar," which makes three of them look at her.  
