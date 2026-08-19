@@ -5,15 +5,15 @@ After her kindergarten teacher started it last year, Mrs. Aldana has kept adding
 "No, I understand that. I'm just asking what the next step is, because right now nobody has told me there is one, and I've asked twice." She listens through two more sentences before the phone clicks as her mom switches it to her other ear. "Okay, but she's six years old. What does that actually get us that we don't already have? Because from where I'm sitting it's a piece of paper that says the same thing you just said."  
 On the other side of the wall, Chloe sits on the living room floor with a book open in front of her, listening instead of reading.  
 "No. No, I know you're not. I'm not saying that." She listens again, longer this time. "I'm saying I've got a kid who used to like school, and I'd like somebody in that building to be as bothered about it as I am. That's all I'm asking for."  
-From inside Chloe's head, nothing is wrong.  
+Chloe turns a page she stopped reading two sentences ago, her thumb holding the place she isn't at anymore.  
 \---  
-There are thirty subtraction problems on the worksheet, all of them the same problem. After the first one, she does the second, which is eight minus three, and partway through it, she sees how it works. After that the other twenty-eight are that with different numbers in them. She writes the answer to problem three, and then she sits with the pencil in her hand without writing, because she has already found the pattern, and the rest is only copying it twenty-seven more times. Bryce Dolan is on problem four, counting on his fingers down under the edge of his desk, out of Mrs. Aldana's sightline, while three other kids sit behind him. Mrs. Aldana doesn't move on until everybody is done, and everybody is never done, so the next eleven minutes is Bryce still counting on his fingers. Chloe's library book sits in her desk, where she can put her hand in and touch its corner against her pencil box. Her thumb finds it without looking, the way it already has twice since the bell. You're allowed to read once you finish the sheet, which she has decided not to do. So she looks out the window instead, where a man in the parking lot is loading boxes into the trunk of his car. He's set his coffee cup up on the roof, so he can use both hands. He gets three boxes in, shuts the trunk, climbs into the driver's seat, then drives off with the cup still up there. Chloe sits forward in her chair as the cup rides most of the way across the lot before it goes off at the turn and rolls, so that she is about an inch out of her seat when she hears her name.  
-"Chloe." Mrs. Aldana is standing at the end of her desk, looking down at the worksheet, which has three answers on it and twenty-seven blanks. "What was the question?"  
+There are thirty subtraction problems on the worksheet, all of them the same problem. After the first one, she does the second, which is eight minus three, and partway through it, she sees how it works. After that the other twenty-eight are that with different numbers in them. She writes the answer to problem three, and then she sits with the pencil in her hand without writing, because she has already found the pattern, and the rest is only copying it twenty-seven more times. Bryce Dolan is on problem four, counting on his fingers down under the edge of his desk, out of Mrs. Aldana's sightline, while three other kids sit behind him. Mrs. Aldana doesn't move on until everybody is done, and everybody is never done, so Bryce is still counting on his fingers long after Chloe's stopped watching him do it. Chloe's library book sits in her desk, where she can put her hand in and touch its corner against her pencil box. Her thumb finds it without looking, the way it already has twice since the bell. You're allowed to read once you finish the sheet, which she has decided not to do. Her feet don't reach the floor from her chair, and her shoe works half off against the rung without her noticing it's happening. So she looks out the window instead, where a man in the parking lot is loading boxes into the trunk of his car. He's set his coffee cup up on the roof, so he can use both hands. He gets three boxes in, shuts the trunk, climbs into the driver's seat, then drives off with the cup still up there. Chloe sits forward in her chair as the cup rides most of the way across the lot before it goes off at the turn and rolls, so that she is about an inch out of her seat when she hears her name.  
+"Chloe." Mrs. Aldana is standing at the end of her desk, looking down at the worksheet, which has three answers on it and the rest blank. "What was the question?"  
 Chloe doesn't know what the question was, or that there has been one, because she is in the parking lot.  
-"I don't know," she says, and looks at the worksheet instead of at Mrs. Aldana.  
+"I don't know," she says, working her heel back into her shoe under the desk, and looks at the worksheet instead of at Mrs. Aldana.  
 "That's what I thought." Mrs. Aldana doesn't look up when she says it, then taps the worksheet twice with one finger and walks back up to the front of the room. Chloe does problems four through thirty in the time that's left and gets every one of them right, though by then it doesn't count for anything.  
 \---  
-Reading is not like that. In the morning she reads the cereal box, both sides, including the part about a contest that ended in a different year. From the back seat she reads the signs out loud until her mom asks her to please stop, and then she reads them without saying them. At her grandmother's house she reads the church bulletin. At the library her card is good for four books at a time, which she has now argued about with the same librarian on three separate occasions.  
+Reading is not like that. In the morning she reads the cereal box, both sides, including the part about a contest that ended in a different year. From the back seat she reads the signs out loud until her mom asks her to please stop, and then she reads them without saying them. At her grandmother's house she reads the church bulletin. At the library her card is good for four books at a time, which she has now argued about with the same librarian more than once.  
 "What if I brought two of them back and got two more the same day?"  
 "Then you'd have four."  
 "But I would have had six." Chloe has both hands flat on the desk now, up on her toes to see over it.  
@@ -38,28 +38,30 @@ Chloe eats something, then says, "And then she likes having him there, but she n
 Chloe does two more bites, holding up one finger the whole time so nobody starts a different conversation.  
 As her mom starts clearing plates around her, Chloe keeps going through the clearing, through the dishwasher being loaded, and she is still going when her mom says okay, upstairs, teeth. Bedtime takes forty minutes. Her mom tells somebody about it on the phone later, like it's funny. "She had to be told three times to eat, because she couldn't do both," her mom says into the phone, laughing.  
 \---  
-There's a game at recess with a tennis ball that Chloe doesn't know the name of. Four girls play it in the corner, where the fence meets the wall. She watches it for two days before she asks if she can play, and when they say sure, it goes fine for about ten minutes, until Kayleigh Burns catches the ball on one bounce and stays in.  
+There's a game at recess with a tennis ball that Chloe doesn't know the name of. Four girls play it in the corner, where the fence meets the wall, and she spends the first day standing close enough to get hit by the ball, twice, without stepping back either time. On the second day she doesn't wait to be asked.  
+"Can I play?" she says, before she's watched long enough to know a single rule of it.  
+"Sure," somebody says, not stopping the game to say it, and it goes fine for about ten minutes, until Kayleigh Burns catches the ball on one bounce and stays in.  
 "You're out," Chloe says.  
 "No I'm not." Kayleigh doesn't turn around when she says it, because the ball is still going.  
 "Maddie was out," Chloe says. "She caught it on one bounce and she was out, and that was like four minutes ago, so either one bounce is out or it isn't."  
 "That was different."  
 "How was it different, though?"  
 "It just was," Kayleigh says, and throws the ball.  
-Chloe plays four more rounds before she goes and stands by the door until the whistle, and nobody comes over.  
+Chloe plays four more rounds, quieter each time, before she goes and stands by the door with her arms crossed until the whistle, and nobody comes over.  
 \---  
-In October, Peanut climbs the bars of his cage toward the lamp clipped to the top of it. He does this most days, mostly getting about halfway up before he gives up on it, but this time he goes higher than Chloe has ever seen him go. His back feet come off the bars, nothing underneath him, before he falls into the wood chips. The whole class laughs, while Peanut sits down in the chips and starts washing his face like nothing happened to him. Chloe had read a book about Icarus at the library two weeks ago and had thought about it for four days afterward.  
+In October, Peanut climbs the bars of his cage toward the lamp clipped to the top of it. Chloe has her chin on her folded arms at the edge of the table, close enough to smell the wood chips. He does this most days, mostly getting about halfway up before he gives up on it, but this time he goes higher than Chloe has ever seen him go. His back feet come off the bars, nothing underneath him, before he falls into the wood chips. The whole class laughs, while Peanut sits down in the chips and starts washing his face like nothing happened to him. Chloe had read a book about Icarus at the library two weeks ago and hadn't quite put it down since.  
 "He's Icarus," she says.  
 A chair squeaks somewhere behind her, while Peanut keeps washing his face, so they must not have heard her.  
 "He flew too close to the sun," she says, louder, "and now he's in the wood chips."  
 Kayleigh Burns turns around in her seat and looks at her. "You talk weird," she says.  
 She says it plainly, then turns back around.  
 "Yeah," Chloe says.  
-Nothing about it is big enough to cry about. At lunch she eats her sandwich and works on which part of it was the wrong part. It's either the Icarus or the saying it a second time louder, but she can't get it down to one.  
+She doesn't raise her hand again for the rest of the morning, not even when she knows the answer. At lunch she peels the crust off her sandwich in one long piece and doesn't eat either part of it, working on which part of it was the wrong part. It's either the Icarus or the saying it a second time louder, but she can't get it down to one.  
 \---  
 In November, Mrs. Aldana asks the class what clouds are made of, and Chloe knows this one. Clouds are the ocean going somewhere else, and it's already in her mouth while her hand is already up. Then she looks at the back of Kayleigh Burns's head, after which she takes the whole thing down to one word.  
 "Water," she says.  
 "Good," Mrs. Aldana says, and moves on to the next thing on the board.  
-The exchange takes about two seconds, after which it's over and the class is doing something else, so Chloe puts her hand back down in her lap. A week later somebody asks where rain comes from and she says clouds, one word. In December they do the water cycle with arrows on the board. She says the arrows back in the right order when she's called on, and nothing else, and Mrs. Aldana says exactly. The short version works every single time she uses it, though she also has to do it on purpose every single time. The whole answer is still in there, so she has to hold it back on purpose, every single time, which is the part that never gets easier.  
+The exchange is over fast, and the class is already on to something else, so Chloe puts her hand back down in her lap. A week later somebody asks where rain comes from and she says clouds, one word. In December they do the water cycle with arrows on the board. She says the arrows back in the right order when she's called on, and nothing else, and Mrs. Aldana says exactly. The short version works every single time she uses it, though she also has to do it on purpose every single time. The whole answer is still in there, so she has to hold it back on purpose, every single time, which is the part that never gets easier.  
 On Fridays, Mrs. Aldana reads the best paper out loud without saying whose it is. Everybody guesses, and so far this year, every guess has landed. In November it is Chloe's paper, which she knows about four words in. The assignment said four to six sentences about an animal, so she wrote six, because she counted. The paper was about a dog that only had three legs and didn't know it. When Mrs. Aldana finishes reading it, the room goes quiet, and Maddie looks down at her own desk. Chloe looks at the top of her desk, until they move on to spelling. In December the assignment is four to six sentences about anything, and she writes four, about a boat. The paper Mrs. Aldana reads out is Maddie's, and everybody guesses Maddie.  
 \---  
 Conferences are on a Thursday night, both her parents go in. Chloe sits on the floor in the hall outside with a book, where she can hear all three of them talking but can't hear any of the words. They're in there for eleven minutes, which Chloe counts. Then the door opens on her mom saying thank you so much in the phone voice, her dad saying we appreciate it. The three of them walk out through the dark part of the building, where only every other light is on. Her dad drives, her mom has the papers Mrs. Aldana gave them. She holds them up to read by the streetlights, tilting them, getting through one and then starting the next one.  
@@ -76,7 +78,7 @@ Chloe opens her mouth, then works out how long the real answer is.
 "It's good," she says.  
 Her dad says huh, then puts his eyes back on the road. Nobody says anything else the whole way home, until the last light before their street, where her mom puts the papers face down on her knees.  
 \---  
-The checkup is in December and Chloe likes going, they do her height against the wall, and this year she is above last year's mark by an amount you can see from across the room. The doctor looks in her ears and down her throat, then has her follow his finger with her eyes without moving her head, which she is good at. Then her mom says she's been having a hard time at school, and the doctor rolls his chair around on its wheels so he's facing Chloe instead of the computer.  
+The checkup is in December and Chloe likes going, they do her height against the wall, and this year she is above last year's mark by an amount you can see from across the room. The doctor looks in her ears and down her throat, then has her follow his finger with her eyes without moving her head, which she is good at, her sneakers kicking lightly at the paper covering the table because her feet don't reach the step. Then her mom says she's been having a hard time at school, and the doctor rolls his chair around on its wheels so he's facing Chloe instead of the computer.  
 "Do you get in trouble at school?"  
 "Sometimes." He waits after she says it, which nobody at school ever does, so she adds, "Not a lot. Like once a week."  
 "What for?" the doctor asks, pen still on the chart.  
@@ -88,13 +90,13 @@ The checkup is in December and Chloe likes going, they do her height against the
 "Do you know what the teacher's talking about, when she calls on you?"  
 Chloe turns that one over while he waits. The real answer is that she knows what the teacher is talking about almost all of the time, but the other thing is that sometimes she is entirely somewhere else and doesn't know a question happened at all, and those are two different things that don't go together in one word. There isn't a short version of it.  
 "Sometimes," she says.  
-As he nods, turns back to the computer, and types without saying anything, Chloe reads the poster on the back of the door about the food groups, which she has now read three separate times in this room.  
+As he nods, turns back to the computer, and types without saying anything, Chloe reads the poster on the back of the door about the food groups, which she has read in this room enough times to have it memorized.  
 "She's healthy, she's growing, there's nothing here that worries me," he says, to her mom now. "None of this is medical. I want to be clear about that part before anything else." He types something else. "But if the school's putting it in writing, I'd rather somebody looked at it properly than have you sitting on it another year. It might be worth getting her evaluated. For attention."  
 "That's a psychologist, or."  
 "I'll give you two names. One of them you'll wait four months on. Call both, take whoever comes up first."  
 On the way out, the lady at the desk lets Chloe pick a sticker out of a bin, which takes a long time, because there are two good ones.  
 \---  
-Christmas is at her grandmother's, where there are eleven people in the house and Chloe knows all of them. She gets a sweater, a set of markers, three books, for which she says thank you three separate times without anybody reminding her. Her grandmother says well, somebody got grown up this year. Chloe takes the books over to the chair by the tree and reads one of them until it's time to eat, then puts it face down on the arm of the chair so she won't lose the page and comes to the table.  
+Christmas is at her grandmother's, where there are eleven people in the house and Chloe knows all of them. She gets a sweater, a set of markers, three books, and says thank you every time without anybody reminding her, hugging the books to her chest instead of setting them down. Her grandmother says well, somebody got grown up this year. Chloe takes the books over to the chair by the tree and reads one of them until it's time to eat, then puts it face down on the arm of the chair so she won't lose the page and comes to the table.  
 Her cousin Dana is nineteen, and sits next to her. "How's school?"  
 "It's good."  
 "Do you have a favorite subject?"  
@@ -103,9 +105,9 @@ Her cousin Dana is nineteen, and sits next to her. "How's school?"
 "Some of them."  
 "That's what your mom said." Dana waits a second, the way people do when they think you have more. "What are you reading?"  
 "Different things."  
-Dana says nice, then turns to talk to somebody else, so Chloe eats her potatoes. That's the whole conversation. Her dad is at the far end of the table, and he doesn't say anything about it. On the way home, Chloe has her head against the cold part of the window with her eyes shut. She is not asleep. "She was quiet tonight," her dad says, and she is awake enough to hear it.  
+Dana says nice, then turns to talk to somebody else. The chair's too big for Chloe at the grown-up table, so her heels swing free under it while she eats her potatoes. That's the whole conversation. Her dad is at the far end of the table, and he doesn't say anything about it. On the way home, Chloe has her head against the cold part of the window with her eyes shut. She is not asleep. "She was quiet tonight," her dad says, and she is awake enough to hear it.  
 "She was fine," her mom says.  
-"I didn't say she wasn't fine."  
+"I didn't say she wasn't fine." Chloe presses closer to the cold glass and keeps her eyes shut.  
 \---  
 In January they read a book about a boy and a sled dog out loud, going around the room. Chloe had read the whole book on Tuesday. She had read the ending sitting on the bathroom floor at home, because she couldn't wait until after dinner to find out whether the dog lived. Aiden R. is on chapter four, page two, and he stops at about every fourth word. She has her own copy open in front of her at chapter four, following along, which is the thing she is supposed to be doing, and she does it for six pages.  
 Then she turns to chapter nine.  
@@ -125,7 +127,7 @@ That night at dinner she tells them what happened, and it takes about a minute a
 Her mom is quiet for a second, then says, "She probably just wants everybody on the same page. Literally," and laughs at her own joke. Chloe laughs too, because it's her mom, while her dad does the noise he does instead of laughing. Then the corner of her mom's mouth drops and doesn't come back up. Her mom gets up and starts the dishes about ten minutes before anybody is finished eating.  
 \---  
 School is boring. It's boring for everybody, obviously, because there's one room and one worksheet for all of them. The other kids sit through it fine; Chloe is the one who can't. They don't watch the parking lot, or say Icarus, or get their book taken away in reading. She is worse at the part that everybody has to do. It isn't complicated, or interesting, so there is nothing to be done about it except get better at sitting there. Some people can hold their breath a long time, and some people can't.  
-So in January she decides she is going to get good at sitting there. By February, she can make a worksheet last most of the way to the end by holding the pencil over the page and moving it every so often. She knows which seats look out at something, as opposed to the ones facing the field, which is empty. Though the book stays in her desk, she still puts her hand in and touches the corner of it four or five times a day, but she has stopped taking it out.  
+So in January she decides she is going to get good at sitting there. By February, she can make a worksheet last most of the way to the end by holding the pencil over the page and moving it every so often, her foot going against the chair leg until she catches herself and stops it. She knows which seats look out at something, as opposed to the ones facing the field, which is empty. Though the book stays in her desk, she still puts her hand in and touches the corner of it four or five times a day, but she has stopped taking it out.  
 \---  
 The appointment comes out of a phone call in February, with Chloe in the next room when her mom says March fourth. Then she says it again, and the third time she says it slowly, while she's writing it down. It goes on a yellow sticky note on the fridge, under the magnet shaped like a strawberry. After that, her mom checks it every morning, while the coffee is going. Chloe reads it too, when there's nobody in the kitchen. It says MARCH 4, and a time, and a name that she can't say.
 
@@ -134,7 +136,7 @@ The appointment comes out of a phone call in February, with Chloe in the next ro
 The waiting room has a fish tank in it with no fish, only water, the little plastic castle, and the bubbles coming up in a line from the filter in the corner. Chloe puts both hands on the glass down near the gravel and looks along the bottom of it, in case they are under something, but the gravel is only gravel.  
 "Where are the fish?"  
 "I don't know, honey," her mom says, not looking up, so Chloe decides it's a true answer.  
-Because there are a lot of papers on the clipboard her mom is filling out, Chloe comes back and stands at the arm of the chair and watches her check boxes all the way down one column, then turn the page over, where there are more of them.  
+Because there are a lot of papers on the clipboard her mom is filling out, Chloe comes back and stands at the arm of the chair and watches her check boxes all the way down one column, then turn the page over, where there are more of them. Chloe leans into her mom's arm to see the boxes better, and her mom shifts the clipboard half an inch without being asked, so she still has the light. Partway down the second page her mom goes back and changes one she's already checked.  
 "What's it about?"  
 "It's about you."  
 "What about me?"  
@@ -143,7 +145,7 @@ Because there are a lot of papers on the clipboard her mom is filling out, Chloe
 Her mom stops. She looks at the clipboard, then at Chloe, then puts the pen down flat on top of the papers.  
 "I'm doing my best guess," she says. "Okay?"  
 "Okay."  
-Because that morning he'd tried to move two things and hadn't managed either one, her dad is at work. He'd stood in the kitchen with his keys already in his hand, saying sorry about four times, until her mom told him it's fine, it's a Wednesday. Since Chloe doesn't know whether this is the kind of thing you bring a dad to, she reads the waiting room instead. There's a poster about washing your hands, in English on one side and Spanish on the other, and the Spanish side takes a while because she tries it first. There's a magazine about boats she doesn't understand, which she reads anyway, all the way through to the page at the back with the prices on it. There's a sign that says NO CELL PHONES with a picture of a phone underneath it and a red line drawn through the phone, which she thinks is funny, because if you can read the sign you don't need the picture, and if you can't read the sign the picture isn't going to help you.  
+Because that morning he'd tried to move two things and hadn't managed either one, her dad is at work. He'd stood in the kitchen with his keys already in his hand, saying sorry about four times, until her mom told him it's fine, it's a Wednesday, and Chloe had held on to his sleeve at the door a second longer than the door needed to close. Since Chloe doesn't know whether this is the kind of thing you bring a dad to, she reads the waiting room instead. There's a poster about washing your hands, in English on one side and Spanish on the other, and the Spanish side takes a while because she tries it first. There's a magazine about boats she doesn't understand, which she reads anyway, all the way through to the page at the back with the prices on it. There's a sign that says NO CELL PHONES with a picture of a phone underneath it and a red line drawn through the phone, which she thinks is funny, because if you can read the sign you don't need the picture, and if you can't read the sign the picture isn't going to help you.  
 \---  
 Dr. Prentice has a beard and a room with a small table in it, though he doesn't seem like a doctor. There's no bed with the paper on it, only a box of tissues, a bin of blocks, and a window with the blinds pulled halfway down over a view of the parking structure.  
 After he tells her she can call him Ben and asks what he should call her, he sits down across the table on a chair the same size as hers.  
@@ -152,9 +154,9 @@ After he tells her she can call him Ben and asks what he should call her, he sit
 "Sort of."  
 "Can you fail it?"  
 "No," he says straight away, without needing to think about it first. "There's no passing number and I'm not giving you a grade at the end. I'm watching how you do things, not whether you get them."  
-Chloe doesn't believe the last part, because everybody says that.  
+Chloe looks at him hard, the way you look at someone before you decide whether to believe them. She doesn't believe the last part, because everybody says that.  
 \---  
-The blocks are red and white, and she has to turn them until the tops match a picture on a card. The first ones are so easy that she thinks it's a trick, so she keeps looking up at Ben to find out whether it's a trick, but all he says is mm-hm. Then they get bad: there's one where she can't find where the shape starts, so she turns a block over four times before putting it back down in the place it was already in. Ben doesn't say anything, and somewhere in the building there is a clock.  
+The blocks are red and white, and she has to turn them until the tops match a picture on a card. The first ones are so easy that she thinks it's a trick, so she keeps looking up at Ben to find out whether it's a trick, but all he says is mm-hm. Then they get bad: there's one where she can't find where the shape starts, so she turns a block over four times before putting it back down in the place it was already in. She glances at the door, just to check it's still shut the way it was, while Ben doesn't say anything and somewhere in the building there is a clock she can't see but can hear, once she starts listening for it.  
 "I can't do that one."  
 "Okay. That's a totally fine answer." He writes something down. She can't tell from his face whether it was a good thing to write. "Do you want to try one more, or do you want a break?"  
 "One more." She has both hands flat on the table by then, waiting for him to lay the card down.  
@@ -170,17 +172,17 @@ As the words get longer, he asks her one she doesn't know and she says she doesn
 "They're both for taking people places."  
 "Good. What do an hour and a year have in common?"  
 "They're both amounts of time. They're both amounts of time that people picked, too. Like an hour isn't really a thing, it's just where we cut it."  
-Ben stops writing and then writes for longer than usual before doing four more pairs. On the fifth one he turns the page over, and there's nothing on the back of it, so he puts the whole booklet down and gets a different one out of the drawer.  
+Chloe sits up a little on her chair, waiting to find out if that one counts extra. Ben stops writing and then writes for longer than usual before doing four more pairs. On the fifth one he turns the page over, and there's nothing on the back of it, so he puts the whole booklet down and gets a different one out of the drawer.  
 \---  
 Then he says numbers and she says them back, which is easy. Then he says numbers she has to say back the other way round, which she likes a lot better. They keep getting longer, and she holds eight of them going forwards and six of them going backwards before she loses the middle on the next one and tells him so. He says that's fine, then does one more anyway, and she loses the middle of that one too. She has no idea whether any of that is a lot. Nobody has ever said a number of numbers to her before.  
 Then there's a page of little symbols, each one matched to a number in a key along the top, and she has to copy the right symbol into the right box, going along the rows in order, while Ben holds a timer.  
 "Go," Ben says, and starts the timer with his thumb.  
-She is bad at the easiest thing she has done all morning, and she can tell she's bad at it while it is happening. Her hand won't go as fast as the page wants it to go. Halfway down the second row she looks up to check whether she's allowed to stop being neat, since being neat was not in the instructions, but Ben doesn't tell her either way and the timer keeps going.  
-"Stop." He takes the pencil out of her hand and turns the sheet face down before she can count the boxes. Though she hasn't finished the page, she knows about how much a page is.  
+Her hand won't go as fast as the page wants it to go, and her fingers cramp around the pencil trying to make it anyway. She is bad at the easiest thing she has done all morning, and she can tell she's bad at it while it is happening. Halfway down the second row she looks up to check whether she's allowed to stop being neat, since being neat was not in the instructions, but Ben doesn't tell her either way and the timer keeps going.  
+"Stop." He takes the pencil out of her hand and turns the sheet face down before she can count the boxes. Though she hasn't finished the page, she knows about how much a page is. Her face goes hot again, not the good kind this time.  
 "Was that good?"  
 "That's not one I answer," Ben says, and he isn't being mean about it. "Juice?"  
 \---  
-The juice comes in a paper cup out of a little fridge under the window, and Chloe drinks about half of it while Ben writes.  
+Chloe asks to use the bathroom first, which turns out to be through a door she'd taken for a closet, and washes her hands longer than she needs to just for something to do with them. The juice comes in a paper cup out of a little fridge under the window, and Chloe drinks about half of it while Ben writes.  
 "What do you do when you finish your work early?"  
 "Nothing."  
 He writes nothing down, asks nothing different, and lets the room stay quiet instead of moving on to something easier, long enough that Chloe fills it herself.  
@@ -193,20 +195,20 @@ He writes nothing down, asks nothing different, and lets the room stay quiet ins
 "No." Chloe works it out against the blocks and the juice and the two rooms. "Half of it. Like half of it, but every day."  
 This time, as Ben writes that down, she watches him do it, and it takes him longer than the other ones.  
 \---  
-For two hours they keep going: pictures come with a piece missing, and she has to say what's missing, including one where the missing piece is a shadow, which she thinks is unfair and gets right anyway. He tells her a story about a boy and a wagon, then has her tell it back, and she tells it back with all of it in, including the part about the neighbor. A set of questions asks what you would do if you found somebody's wallet, or if you smelled smoke, where every answer she gives seems to be the right one, so she stops trusting the questions. Another timed sheet has rows of shapes where she has to cross out the ones that match, and she is bad at that as well, and she knows it before he says stop. One sheet has a maze on it, and between two of them he asks whether she's tired and she says no, then asks again after the next one.  
+For two hours they keep going: pictures come with a piece missing, and she has to say what's missing, including one where the missing piece is a shadow, which she thinks is unfair and gets right anyway. He tells her a story about a boy and a wagon, then has her tell it back, and she tells it back with all of it in, including the part about the neighbor. A set of questions asks what you would do if you found somebody's wallet, or if you smelled smoke, where every answer she gives seems to be the right one, so she stops trusting the questions. Another timed sheet has rows of shapes where she has to cross out the ones that match, and she is bad at that as well, and she knows it before he says stop. By the second maze her stomach is loud enough that she covers it with her forearm, and she keeps switching which leg she's sitting on. One sheet has a maze on it, and between two of them he asks whether she's tired and she says no, then asks again after the next one.  
 "You can say yes."  
 "I know," Chloe says, and he lets it go.  
 At the end he caps his pen and puts the last card back in its box. "You worked really hard."  
 "Thanks."  
-She means to ask whether she did good, but she doesn't, because you aren't supposed to ask that.  
+Chloe opens her mouth to ask whether she did good, and closes it again without asking, because you aren't supposed to ask that.  
 "Can I ask you something?"  
 "Sure."  
 "The one with the symbols. Does everybody finish it?"  
 Ben looks at her, longer than usual.  
 "Some people do," he says. "It isn't the one that matters."  
 \---  
-Then he talks to her mom, and Chloe waits in the hall on a chair that's too tall for her feet, holding her jacket in her lap because there isn't anywhere else to put it.  
-The door is open a few inches.  
+Then he talks to her mom, and Chloe waits in the hall on a chair that's too tall for her feet, holding her jacket in her lap because there isn't anywhere else to put it. Her stomach makes a noise loud enough that she checks whether the door heard it too.  
+The door is open a few inches. Through the gap her mom's foot doesn't stop moving, heel up, heel down, the whole time. Chloe picks at the zipper pull on her jacket, not really trying to open it, something to do with her hands while she listens.  
 She doesn't get all of it: her mom's voice, the teacher says. Ben's voice runs on, full of words she doesn't have. Then a piece of it comes through clean, because he's turned toward the door.  
 "I'm not seeing what the school is seeing. She finishes in the first two minutes and then she's got thirty-eight minutes left over and nowhere to put them."  
 "So there's nothing wrong with her?"  
@@ -214,7 +216,7 @@ She doesn't get all of it: her mom's voice, the teacher says. Ben's voice runs o
 Her mom makes a sound, and Chloe can't tell what kind it is from out here, since it could be either kind.  
 "There are a couple of things where she's slower than most kids her age, and the biggest one is copying. Hand-and-eye. That part's real, you'll see it in her handwriting for years, and it's also not what anybody in that building is calling you about."  
 "No."  
-"Right. Here's the thing I want you to understand about the report when it comes, because it's going to have one big number on the front of it and that number is going to be lower than it should be. The talking-and-reasoning part of this, she's at the top of it. The speed part, she's ordinary. When you average those together you get a number that says bright kid, and bright kid is not what I sat in a room with this morning."  
+"Right. Here's the thing I want you to understand about the report when it comes, because it's going to have one big number on the front of it, a single composite that averages two very different pictures into one score, and that number is going to be lower than it should be, low enough that a school skimming for a label could miss her without ever seeing the two halves it was built from. The talking-and-reasoning part of this, she's at the top of it. The speed part, she's ordinary. When you average those together you get a number that says bright kid, and bright kid is not what I sat in a room with this morning."  
 Chloe shifts on the chair, her feet nowhere near the floor.  
 "So what number do I get?"  
 "A good one. Not the one that would make somebody move."  
@@ -232,7 +234,7 @@ In the car her mom puts both hands on the wheel and doesn't start it right away,
 "So you're all good," she says. "Everything's great."  
 "Okay." Chloe has her seatbelt across her with both hands holding it away from her neck.  
 "Do you want to know what he said?"  
-Chloe thinks about it for longer than her mom is expecting, because there is a version of this where she finds out and a version where she doesn't, and she can't work out fast enough which one is better.  
+Chloe pulls the seatbelt out another inch and lets it snap back against her collarbone, which she isn't supposed to do, and her mom doesn't tell her to stop. There is a version of this where she finds out and a version where she doesn't, and she can't work out fast enough which one is better.  
 "No," she says.  
 Her mom looks over at her at the red light, for longer than the light.  
 "What's a percentile?"  
@@ -241,14 +243,14 @@ Her mom looks over at her at the red light, for longer than the light.
 "It's a number for how you did next to other kids your age." Her mom pulls off when the car behind them does something with its horn. "It's not a big deal."  
 "What was mine?"  
 "He didn't give me a number," her mom says to the windshield.  
-That isn't true, because nobody says a word like that unless there's a number stuck to it. She lets it go, because they are having a nice time.  
+Chloe watches the side of her face for a second, the way she does when somebody's answer doesn't match their voice. That isn't true, because nobody says a word like that unless there's a number stuck to it. She presses her thumbnail into the seatbelt instead of saying so, and lets it go, because they are having a nice time.  
 They get ice cream, which is not a thing they do on a Wednesday. She eats it in the car, some of it goes on the seat, and her mom says don't worry about it. That isn't a thing either.  
 \---  
 Nothing changes.  
-On March 5th she goes back and it's the same worksheet, with the same twenty-eight problems sitting after the one that tells you how it works, and Bryce Dolan is still counting on his fingers. The man with the boxes never comes back to the parking lot. Mrs. Aldana doesn't mention it, and nobody at her table mentions it either. As far as Chloe can tell, that's the whole building. Mrs. Aldana asks her once, in April, whether everything is all right at home. Chloe says yes. What she works out that same month is bigger than the pencil trick: finish first, sit still, say nothing to anybody, and nobody talks to you at all, not the teacher, not the kids at your table. It works on a Monday and a Thursday, in reading and in math, every day until the end of the year. She doesn't have a way to say what it is yet. She only knows that being quiet is what makes her disappear.  
+On March 5th she goes back and it's the same worksheet, with the same twenty-eight problems sitting after the one that tells you how it works, and Bryce Dolan is still counting on his fingers. The man with the boxes never comes back to the parking lot. Mrs. Aldana doesn't mention it, and nobody at her table mentions it either. As far as Chloe can tell, that's the whole building. Mrs. Aldana asks her once, in April, whether everything is all right at home. Chloe says yes. Some days she asks to play four square and gets one round in before the ball goes somewhere else without her, so she sits on the wall with her library book until the bell instead of asking again. What she works out that same month is bigger than the pencil trick: finish first, sit still, say nothing to anybody, and nobody talks to you at all, not the teacher, not the kids at your table. It works on a Monday and a Thursday, in reading and in math, every day until the end of the year. She doesn't have a way to say what it is yet. She only knows that being quiet is what makes her disappear.  
 \---  
-By June, Chloe is quiet, she does what she's told, and she doesn't have any friends.  
-On the last day they clean out their desks, and she finds four pencils, a bracelet that isn't hers, a permission slip from October, and the library book, which she takes home and returns that same afternoon so it won't go late over the summer. Kayleigh Burns hugs three people at the door. Chloe puts her chair up on the desk the way they were told to, then gets in the car line.  
+She still knows all twenty-eight of their names. Nobody has needed to learn hers back. By June, Chloe is quiet, she does what she's told, and she doesn't have any friends.  
+On the last day they clean out their desks, and she finds four pencils, a bracelet that isn't hers, a permission slip from October, and the library book, which she takes home and returns that same afternoon so it won't go late over the summer. Kayleigh Burns hugs three people at the door. Chloe watches from beside her own desk, both straps of her backpack already on, and doesn't go over. She puts her chair up on the desk the way they were told to, then gets in the car line.  
 Her report card comes in an envelope a week later, saying she is meeting expectations in all areas. Under comments, in the box where the teacher writes, it says: Chloe is a pleasure to have in class.  
 Her mom reads it twice, then puts it on the fridge under the magnet shaped like a strawberry, where the sticky note used to be.
 
@@ -282,14 +284,15 @@ Her mom takes it back and turns it over to find nothing on the back except the i
 "No they aren't," her mom says.  
 "Sometimes somebody has money and wants to spend it on something," her dad says. "That's a whole thing that happens in the world. People give away scholarships. People put their name on the side of a hospital."  
 "To us? It happens to us?"  
-The free part is the part Chloe doesn't follow, since her mom says things cost too much about once a week, standing in a store with something in her hand, or at this table with an envelope open in front of her, and this one doesn't cost anything. Chloe waits for somebody to get to that part, but both of them keep their eyes on the letter instead of on her.  
+The free part is the part Chloe doesn't follow, since her mom says things cost too much about once a week, standing in a store with something in her hand, or at this table with an envelope open in front of her, and this one doesn't cost anything. Chloe pushes her fork through her food without eating any of it, waiting for somebody to get to that part, but both of them keep their eyes on the letter instead of on her.  
+Chloe puts both hands flat on the table and comes up onto her knees on the chair to see it right way round.  
 "Can I go, though."  
 "We're talking about it."  
 "Is that a no?"  
 "It's a we're talking about it," her mom says.  
 Chloe asks once more on the Sunday and then forgets to ask again for four days, because it's July and there's a sprinkler.  
 \---  
-Her mom calls the district office on Monday, where a woman takes the name down and says she'll look into it, and she doesn't call back Tuesday or Wednesday, though she does call back on Thursday afternoon. Chloe is on the stairs by then, on the step where the carpet stops, because that's the step where you can hear the kitchen.  
+Her mom calls the district office on Monday, where a woman takes the name down and says she'll look into it, and she doesn't call back Tuesday or Wednesday, though she does call back on Thursday afternoon. Chloe is on the stairs by then, on the step where the carpet stops and the wood goes cold under her, because that's the step where you can hear the kitchen.  
 Her mom spells it twice, H-A-L, Halstead, like it sounds, then there's a long stretch where the only sound in the kitchen is the other person talking. "Nothing at all? Not a charter, not a private, not a partner, nothing." Another stretch, shorter than the first one. "Okay. Okay, thank you. No, I appreciate it, I know it's not your job to go looking."  
 Then the phone goes down on the counter, and her dad says something from the other side of the room that doesn't carry as far as the stairs.  
 "She says there's no school by that name working with the district in any capacity, and she went back four years to check." Her mom runs the tap at the sink while she says it. "And she said to be careful."  
@@ -305,6 +308,7 @@ That one takes a long time to come back, the other voice going on behind the wal
 "That's not an answer. Where did the list come from?" Another wait, after which her mom says uh huh, then waits again. "And who put her on it?"  
 The voice goes on for most of a minute.  
 "Okay, but somebody made the list. A person made it. Somebody sat down and typed my kid's name."  
+Chloe comes down two more stairs during the wait, close enough to see her mom's free hand pressed flat against the counter, and her mom points at the stairs without turning around, so Chloe goes back up to the fourth one.  
 The wait after that one is shorter than all the others.  
 "Right. Okay. Thank you."  
 Then the call goes on for twenty-five more minutes and her mom's voice changes into the one she uses at the doctor. How many adults sleep in the building, what the ratio is at night, whether that's a different number from the daytime one. Whether the staff are licensed, by who, and whether she can see that in writing. What happens if a kid gets a fever at two in the morning, then what happens if it's worse than a fever. Whether there's a nurse or a person they call the nurse. What Chloe eats. Whether Chloe can be pulled out on any day, for any reason, or whether there's a form, or a notice period, or a fee.  
@@ -322,8 +326,9 @@ When she hangs up she stands there with her hand still flat on the phone, long e
 "And they're not from around here. Not one town, not one state. She said they come from all over, and then she said we're one of the closer ones."  
 "Four hours is one of the closer ones."  
 "That's what she said."  
+"Is the network the one with cartoons," Chloe says, from the top of the stairs, a minute behind the part of the conversation she is answering, and neither of them looks over.  
 \---  
-Her dad looks up the website that night on the laptop at the kitchen table, and Chloe is allowed to sit next to him because it's Friday.  
+Her dad looks up the website that night on the laptop at the kitchen table, and Chloe is allowed to sit next to him because it's Friday, her feet swinging under the chair without touching the floor.  
 He talks the whole way through the first part of it, reading the headings out loud in the voice he does for train station announcements, so that Chloe laughs at the one for lights out. A photograph of a field with goals on it gets a look, and a pool gets a question about whether she'd swim, to which she says yes. He says she doesn't know how, she says she'd learn, he says fair enough. Then he finds the page about what a Tuesday looks like, hour by hour, and does all of the hours in the voice, including the one that's just lunch.  
 "This is a nice-looking place, kid."  
 Then he clicks the page with the teachers on it, where there's a photo of each one, with a paragraph underneath about what that person did before they came here, and he stops doing the voice.  
@@ -346,19 +351,22 @@ Her mom doesn't say anything.
 Her dad pushes the laptop an inch away from him. "I'm not doing anything. I'm saying it's expensive. Every single thing about it is expensive, and none of it is being paid for by the four weeks, because the four weeks are free."  
 "So somebody wants something."  
 "Or somebody already has everything they want and this is what they do with it. Both of those are real people."  
-"Not around here they aren't."  
-It takes them nine days. Her mom's position is that it's four hours away, they never applied, nobody they know got one, somebody is paying for it, and she would like to know who before anybody gets in a car. Her dad's position is that all of that is true and she should go anyway. They have some version of the same argument on the fourth day, the sixth day, and the eighth, and on the sixth day, her mom says the words a building I have never seen.  
+"Not around here they aren't," her mom says, her eyes on the stack of bills clipped to the fridge instead of on him.  
+It takes them nine days. Her mom's position is that it's four hours away, they never applied, nobody they know got one, somebody is paying for it, and she would like to know who before anybody gets in a car. Her dad's position is that all of that is true and she should go anyway. They have some version of the same argument on the fourth day, the sixth day, and the eighth. On the sixth day, standing at the counter with the mail still in her hand, her mom says the words a building I have never seen.  
+"You already know what you're going to say," her dad says, and sets his coffee down without drinking it.  
+"That's not fair."  
+"No," he says. "It isn't." He doesn't take it back.  
 On the sixth day her mom also comes into Chloe's room and sits down on the end of the bed.  
 "Why do you want to go?"  
 "It's got my name on it."  
 Her mom waits for the rest of it.  
 "It says Miss," Chloe says.  
 Her mom sits there with her hands in her lap and her thumbs going, then pats the bed twice, gets up, and goes out without closing the door all the way behind her.  
-On the ninth night Chloe is supposed to be asleep.  
+On the ninth night Chloe is supposed to be asleep. She has already been sent back once, and comes out a second time in her socks, skipping the fourth stair, which is the one that gives her away.  
 "She's been flat since Christmas," her dad says. "You've seen it. She comes home and she says it was good."  
 "Kids say it was good."  
 "Not like that they don't."  
-Nobody says anything for a minute after that, before her mom says something too quiet to make out from the top of the stairs, her dad says he knows, twice, and somebody starts the dishwasher. That's the end of anything Chloe is going to hear tonight.  
+Nobody says anything for a minute after that, before her mom says something too quiet to make out from the top of the stairs, her dad says he knows, twice, and somebody starts the dishwasher. Chloe goes back up the rest of the stairs on her hands and knees, to keep the boards quiet, and gets into bed with her socks still on.  
 \---  
 She takes her four books back on the Thursday before they go, and gets up on her toes at the desk.  
 "I'm going away for four weeks."  
@@ -382,15 +390,15 @@ Chloe brings a library book she's already read, and the envelope, in the front p
 ## Chapter Four: Pluto
 
 The first day is awful.  
-The noise is the first thing: a hundred-odd kids in the building, most of their parents came with them, and the sound that many people make in a hallway with hard floors is enormous. It isn't the kids doing it, they're mostly standing next to a parent who's holding a folder, looking at the floor, the same as Chloe, and there are so many of them. Out in the lot there are plates from states she has never seen a plate from, including one that took her a few seconds of squinting to place.  
-They line up at a table that has the letters of the alphabet taped along the front in blocks, where the woman at H through M finds Kessler on her page without going back up it and hands over a folder with Chloe's name printed on the front, a lanyard with her name on it, a card for the dining hall with her name on that.  
+The noise is the first thing: a hundred-odd kids in the building, most of their parents came with them, and the sound that many people make in a hallway with hard floors is enormous. It isn't the kids doing it, they're mostly standing next to a parent who's holding a folder, looking at the floor, the same as Chloe, and there are so many of them. A boy near the doors keeps running the length of the hallway and back until somebody's mother catches his arm on the third pass and doesn't let go of it again. A girl has both fists wound into the hem of her father's jacket and doesn't uncurl them, not even when another kid waves at her first. Out in the lot there are plates from states she has never seen a plate from, including one that took her a few seconds of squinting to place, and it's already hot enough that her dad has sweated through the back of his shirt by the time they reach the doors.  
+They line up at a table that has the letters of the alphabet taped along the front in blocks. A kid in front of them looks at Chloe's shoes a second too long, and she moves half a step in behind her dad without deciding to. The woman at H through M finds Kessler on her page without going back up it and hands over a folder with Chloe's name printed on the front, a lanyard with her name on it, a card for the dining hall with her name on that.  
 "Somebody's organized," Chloe's dad says.  
 "We try." The woman is already reaching past him for the next folder in the box. "Chairs are through the double doors, we start on the hour, there's a map in there."  
-The briefing is in a room with folding chairs and a woman with a clipboard who goes through it fast, because there's a second one at eleven for the families still driving. Meals are at seven, twelve, and six, and there's fruit in bowls by the stairs at any hour, so that you don't have to ask anybody. Laundry bags are green, they go outside your door on Tuesday and Friday nights. The nurse is on the first floor beside the stairwell with the red door, and somebody sits in that office at every hour of the day, not on call from home, in the office. Lights out is nine for the under-eights, nine thirty for everybody else.  
-"If you stop wanting to be here, tell any adult and we'll take you home. Same day. Nobody's going to argue with you about it, nobody's going to try and talk you round." She turns the page over on the clipboard. "It isn't a punishment, it's just how it works. If you feel sick in the night you don't wait until morning, you knock on the door with the light on at the end of your hall."  
+The briefing is in a room with folding chairs and a woman with a clipboard who goes through it fast, because there's a second one at eleven for the families still driving. Chloe's feet don't reach the floor, and she kicks the chair leg in front of her a few times before somebody's mother turns around, and she stops. Meals are at seven, twelve, and six, and there's fruit in bowls by the stairs at any hour, so that you don't have to ask anybody. Laundry bags are green, they go outside your door on Tuesday and Friday nights. The nurse is on the first floor beside the stairwell with the red door, and somebody sits in that office at every hour of the day, not on call from home, in the office. Lights out is nine for the under-eights, nine thirty for everybody else.  
+"If you stop wanting to be here, tell any adult and we'll take you home. Same day. Nobody's going to argue with you about it, nobody's going to try and talk you round." Two rows up a boy has started crying without making much noise about it, and the girl next to him budges her chair a few inches closer, not saying anything either. She turns the page over on the clipboard. "It isn't a punishment, it's just how it works. If you feel sick in the night you don't wait until morning, you knock on the door with the light on at the end of your hall."  
 A man near the front asks whether the laundry bags go out on the Tuesday night or the Wednesday morning, so she does the part about the laundry bags again.  
 As Chloe's mom writes something on the back of the map, walking to the room afterward Chloe gets a look at it: it's the sentence about going home, with the words same day underlined twice.  
-Her room has two beds, a window that opens six inches and then stops, and a girl called Priya who is already there, already unpacked, with a book about horses face down open on her pillow.  
+Her room has two beds, a window that opens six inches and then stops, and a girl called Priya who is already there, already unpacked, with a book about horses face down open on her pillow. Chloe's own bag stays zipped on the other bed, exactly where it got put down that afternoon.  
 Pushing the drawer shut with her knee, Priya doesn't look up from it. "Do you ride?"  
 "Ride what?"  
 "Horses."  
@@ -405,8 +413,8 @@ At eight thirty she goes down to the phone by the front desk, which you're allow
 Her mom picks up in the middle of the first ring.  
 "I want to come there," Chloe says.  
 "Okay. Yeah. Okay, stay right where you are, I'm coming."  
-The hotel is half a mile away and her mom is at the front desk in about six minutes, already dressed.  
-Chloe sleeps in the second bed with the bathroom light on and the door open as much as her mom checks with her about first.  
+The hotel is half a mile away, and her mom is at the front desk already dressed.  
+Chloe sleeps in the second bed with the bathroom light on and the door open, her mom asking first how far, one hand pressed flat against the spare pillow that smells like the hotel's detergent and not their own.  
 "Do you want to talk about it?" Her mom is still in her shoes, sitting on the arm of the chair by the window.  
 "No."  
 "Okay." She gets up, turns the other bed down, sits on the end of it. "Do you want me to talk about something?"  
@@ -424,7 +432,7 @@ They're standing outside because somebody else is still in there, ten or eleven 
 Then something goes wrong with her. It happens before anybody has had time to answer. The backs of her knees go loose, her fingers won't close all the way, her ears do what they did in October, and for three full steps she isn't in the hallway at all, she's at her desk with the wood chips and the cage and a chair squeaking somewhere behind her.  
 Then a boy laughs, one loud honk of it, right up close, and her jaw unclenches all at once, her shoulders coming down before she's decided anything about it.  
 "It's not even a room," he says. "It's a room-shaped object."  
-Chloe puts a hand flat on the wall and laughs until she has to bend over, before somebody else catches it too and a girl says something from further up the line.  
+Chloe puts a hand flat on the wall and laughs until she has to bend over, before somebody else catches it too and a couple of the bigger kids by the fountain start saying room-shaped object back and forth to each other, seeing how many times they can get it in before the door opens, and a girl says something from further up the line.  
 "Okay, but Pluto's still a planet. It's a dwarf planet, and dwarf planet is a kind of planet, they made a smaller category and moved it into that."  
 "That's worse," the boy says.  
 "It's not worse, it's what happened."  
@@ -447,7 +455,7 @@ That night Chloe calls the desk again and sleeps in the hotel again, and in the 
 "Since when?"  
 "Since before I was born," Chloe says, and her mom laughs at it anyway.  
 \---  
-The dining hall is loud in a different way from the hallway. On the third night Sam sits down across from her without a tray, before he gets up, gets a tray, and comes back to sit in the same seat.  
+The dining hall is loud in a different way from the hallway. Two tables over, a boy called Owen is still working through the same worksheet from the afternoon, folded small in his lap under the table, and Priya slows down with her tray long enough to see what he's doing before somebody calls her name and she keeps walking. On the third night Sam sits down across from her without a tray, before he gets up, gets a tray, and comes back to sit in the same seat.  
 "What school do you go to?"  
 "Just a school."  
 "No, what's it called."  
@@ -465,7 +473,7 @@ Chloe doesn't have an answer to that one ready, and he's already looking at her 
 Chloe has a whole sentence about the lid ready, four words, five, and she lets it go.  
 On the fourth night she gets as far as the phone and stands there with her hand on it. A kid comes up behind her and asks if she's using it, and she says no and goes back upstairs. Priya is still awake.  
 Her mom stays two more days after that, and neither of them says anything about the phone.  
-She leaves on the Sunday, going through the room one more time first, finding the green laundry bag, putting it where Chloe will see it, asking Priya three questions about herself, before she stands in the doorway with her keys already out.  
+She leaves on the Sunday, going through the room one more time first, finding the green laundry bag, putting it where Chloe will see it, asking Priya a few questions about herself, before she stands in the doorway with her keys already out.  
 "You've got the number."  
 "Yes."  
 "Any hour of the night, I mean that. Two in the morning, I don't care." She has said all of this once already, downstairs, in front of the woman at the desk.  
@@ -477,15 +485,16 @@ She leaves on the Sunday, going through the room one more time first, finding th
 There's a fourth one in Pluto who doesn't say anything for six days. He answers when he's called on, in about four words. He laughs at Sam. Then nothing. Chloe recognizes it, the four words, then nothing. She's doing it herself, and she doesn't say anything about that either.  
 On day seven Sam says something wrong about volcanoes, which is that the lava comes up because the mountain is hollow.  
 "That's not how it works though," the kid says.  
-Everybody looks at him.  
+Everybody looks at him. Two rows over, Owen is still copying the word off the board from earlier, and doesn't look up either.  
 "It's not hollow, it's rock the whole way down, and the rock's what's doing the pushing, since it's the gas trapped inside it that makes it move." He has both hands out in front of him now. "It's not really the heat, it's the gas, and how fast it comes out depends on how thick it is."  
+A girl two seats down lets her head drop flat onto the desk with a thud loud enough that a couple of people look over, and nobody tells her to sit up.  
 "How thick what is."  
 "The lava, there's a word for it."  
 "What's the word," Sam says, in the voice of somebody setting something up.  
 "Viscosity."  
 "What's viscosity."  
 "How thick it is," Kavi says, and keeps going.  
-Sam tries twice more to get back into it and doesn't manage it either time.  
+Sam tries twice more to get back into it and doesn't manage it either time, and a couple of the other kids are laughing outright by the second try. He stops trying, picks up his pencil, and starts drawing his own volcano in the margin instead, going on about it like that's what he'd meant to be doing all along.  
 \---  
 On the second Tuesday, Mr. Doyle says something about weight while he's drawing on the board, and Ruth's hand goes up, though she starts talking before it's noticed.  
 "That's mass, weight is the pull on it. If you took the same thing to the moon the weight would go down and the mass would be exactly the same."  
@@ -540,7 +549,7 @@ He draws a rectangle, shades half of it, cuts the half into pieces, talking the 
 Sam gets it, grunting once, loud.  
 Kavi says he already knew it, out of a book, and gets told that's fine but he should listen anyway.  
 Ruth is already on to the next question.  
-Marisol asks him to do the rectangle again from the beginning, and he redraws it exactly the same way. Owen asks something two steps further back than that, about which number the flipping happens to. Mr. Baptiste answers him, then asks him a question back, and Owen looks at the board and says he doesn't know. Mr. Baptiste says that's fine and that they'll do it again tomorrow.  
+Marisol asks him to do the rectangle again from the beginning, and he redraws it exactly the same way. Owen asks something two steps further back than that, about which number the flipping happens to. Mr. Baptiste answers him, then asks him a question back, and Owen looks at the board and says he doesn't know. Mr. Baptiste says that's fine and that they'll do it again tomorrow, and Owen goes back to his own sheet and doesn't put his hand up again for the rest of the lesson.  
 A hand goes up near the back, "Does it work with negative numbers?"  
 "Try one."  
 "I did, it works."  
@@ -549,6 +558,7 @@ A hand goes up near the back, "Does it work with negative numbers?"
 "Meaning?" Mr. Baptiste says.  
 "Can you divide by zero if you flip it? Because flipping zero is one over zero."  
 "Good," Mr. Baptiste says, and does that one on the board too, and the two of them go back and forth about it until the bell goes.  
+Around them the rest of the class is already up, chairs scraping, and Sam's bag is over his shoulder before Mr. Baptiste even finishes the sentence.  
 Chloe sits and watches a conversation happen over the top of her head about a thing she asked first. Her ears are hot for an hour afterward, through the break, through most of the next thing.  
 You keep your own packets here. They're yours, they live in your bag, you work in them when there's a gap and nobody collects them at the end of the day. That night Chloe gets hers out and sits on the floor with her back against the side of the bed. The first problem is a half divided by a quarter. She draws the rectangle the way he drew it, shades in the half, then tries to put a quarter inside the shaded part, and gets stuck on whether the quarter is meant to be a quarter of the whole rectangle or a quarter of the half. She draws it again and gets stuck in the same place, on the same line. So she draws it a third time with her own numbers instead of his, since his numbers have been sitting in her head since two o'clock without doing anything for her. Three quarters divided by an eighth. She shades three quarters of a rectangle, then draws the eighths straight across the whole thing, top to bottom, all eight, before counting how many land inside the part she shaded.  
 Six.  
@@ -579,13 +589,14 @@ Chloe waits for the rest of it, but there isn't any; Sam has already gone back t
 "I know."  
 "At my school you do the same paper for a month."  
 "Yeah," Sam says, "mine too." He says it the way you'd agree about the weather, then goes back to his food.  
-Ruth is at the end of the table with her chin on her hand.  
+Ruth is at the end of the table with her chin on her hand, pushing the same piece of food around without picking it up.  
 "He was crying in the stairwell, on Thursday," she says to her tray. "I'm not being mean, that's what he was doing."  
 "Ruth."  
 "She asked why he went home."  
 "She didn't ask you."  
-"She asked the table," Ruth says.  
-Owen, then the bridge, then Owen again, and nowhere further than that. She keeps landing in the same place: Owen must not have liked the bridge, and she can't get past that, because she cannot work out how a person could not like the bridge.  
+"She asked the table," Ruth says, and puts her fork down instead of eating what's on it.  
+Chloe's own fork stops halfway to her mouth. She doesn't ask what he looked like, or how long, or who found him there. The questions are lined up behind each other and none of them come out.  
+Owen, then the bridge, then Owen again, and nowhere further than that. Chloe picks her roll apart, one small piece at a time, and doesn't eat any of it, going back through the same three facts: Owen must not have liked the bridge. It doesn't fit. She starts from the beginning and checks it again, and it still doesn't fit, and she starts again anyway, long after Ruth has gotten up and taken her tray. She cannot work out how a person could not like the bridge.  
 Four more leave before the end of the month, and each of them goes the same way. The bed goes. The mattress stays, stripped bare.  
 \---  
 At dinner in the third week Kavi says something about the moon, and Chloe says, "That's why it's a liar," which makes three of them look at her.  
@@ -614,7 +625,7 @@ There isn't one. There isn't one in the next nine things she said either.
 
 ## Chapter Six: The List
 
-The parent hotel has a breakfast room with waffles on paper plates, and every morning there are eight or nine adults in it who all know each other by now. On the last Wednesday, Chloe walks over, sits down with her dad, and eats.  
+The parent hotel has a breakfast room with waffles on paper plates, and every morning there are eight or nine adults in it who all know each other by now. On the last Wednesday, Chloe climbs onto the chair next to her dad on her knees, syrup on two fingers before the plate is even in front of her, and eats. Under the table her sneaker keeps catching the chair leg, a small percussion nobody else at the table seems to hear.  
 "We drove," a man says. He has a paper plate in one hand and hasn't sat down. "We were not putting her on a bus."  
 "Nobody put theirs on the bus."  
 "Somebody must have. It says transportation on the letter, they wouldn't put it on there for nobody."  
@@ -630,15 +641,18 @@ Chloe's dad has been quiet through all of it, cutting his waffle into pieces tha
 Three or four of them answer at once: "They said they have a list."  
 "Yeah, we got the list, then we got told how it's compiled."  
 "They told us the list is good," the woman says. "Which, okay, good at what."  
+"She's top of her reading group at home," somebody's mother says, to the table generally, and finds a spot on the table to look at instead of anyone's face. "I don't know what that means here."  
+"It doesn't mean anything here," the first man says, and gets up to find the coffee pot without anybody asking him to.  
 While one of the fathers looks at his plate, a man at the end starts talking about the drive back, whether it's faster round the north side, how it depends entirely on what time you leave, and two people take that up. Somebody's kid comes over needing something after that, and by the time it's sorted out, three of them have gone.  
-Her dad puts more syrup on her waffle without being asked.  
+Her dad puts more syrup on her waffle without being asked. Chloe doesn't tell him it's already too much.  
 \---  
 On the last night, while the families eat on campus, her dad asks her what she did all month.  
-Chloe tells him.  
+Chloe is already talking before she's finished sitting down, one knee still up on the bench.  
 She starts with Gary. Gary is a plastic man with no arms who lives on a cart, and you do CPR on him, and when you push hard enough in the right place he clicks. Chloe got the click on the fourth try. Sam never got it and said the click was broken. It is not broken, and she demonstrates the hand position on the edge of the table, both hands stacked, elbows locked, which is how they showed her.  
 Then the bridge. Dowels and string, eighteen inches to get across, and on the Tuesday they hung a bucket off the middle and put weights in it a pound at a time until it went. Theirs went at eleven. Ruth's went at nineteen and it's triangles, and she lines up the salt, the pepper, and a knife to show him why a square folds over and a triangle can't. Everybody wrote down what they thought it would hold before they loaded it. She wrote fourteen. She was wrong by three. She presses the pen hard enough to nearly go through the napkin, and she explains the corner thing twice to make sure he's got it.  
 Then the pool, which she can do a length of now, badly. Sam can do two and is unbearable about it.  
 Then dividing fractions, which she does on a napkin with a pen she takes off the next table, drawing the rectangles the way Mr. Baptiste drew them, all the way through to why you flip it over. That one runs to the edge of the napkin and back. Her dad doesn't say anything through it.  
+Two tables over, another father is doing roughly the same thing, a pen going on a different napkin while his own daughter talks.  
 Then Spanish, which she does at him before she remembers he can't follow it. She asks him three things and answers them herself. She tells him what's on the table, and where the bathroom is, and what she did today, and then she does the one Sam says at breakfast every morning, which is apparently rude. Her dad asks what any of it meant and she goes back through it in order.  
 They talk in it at lunch on purpose, she says, the four of them, so nobody else can tell what they're saying. It doesn't work. Everybody else is doing Spanish too.  
 Then the signing, which is a different thing again and better, because you can do it across a room. She shows him the alphabet on her fingers and does his name with it, slowly, and then hers, faster. She shows him the sign for water and the sign for finished and the sign for again. In the library you can ask somebody from four tables away whether they've got a certain book and nobody has to say anything out loud, and she and Ruth did that for a whole afternoon, and the woman who runs the library knew what they were doing and let them.  
@@ -647,13 +661,16 @@ Then the wood shop, and the safety glasses that don't fit anybody. Then the eggs
 Then the computers, which is two things. There's typing the words in herself instead of dragging blocks around, and she can make it count to a hundred and skip the sevens. And then there's the room they took them to, enormous and cold, cold because the machines make heat that would break them, until a woman there explained the setup, including the water pipes running under the floor.  
 Then chess, which Sam is also better at.  
 Then the nerf guns at the end, because she just remembered.  
+Then the wood shop again, the safety glasses, almost the same sentence as before, and she keeps going without stopping on it.  
+Her plate has gone cold in front of her, mostly untouched. She talks the rest of it with one hand flat on her dad's sleeve.  
 Her dad sets his fork down and doesn't pick it back up.  
 "How many days have you been here?" he says.  
-"Twenty-seven."  
+"Twenty-seven." It comes out before he's finished asking.  
 "Twenty-seven."  
 "There's tomorrow."  
 He looks past her at the room, at the other tables, long enough that she turns around to see what he's looking at: people eating.  
 "Cool," he says.  
+Under the table, her knee starts going, fast, small, and doesn't stop.  
 When he asks her to do the fractions one again, from the start, she turns the napkin over and works the problem a second time on the clean side, while he doesn't interrupt any of it.  
 "They taught you that?"  
 "He did it on the board and I didn't get it. So I did it again at night with my own numbers and then I got it."  
@@ -661,16 +678,21 @@ When he asks her to do the fractions one again, from the start, she turns the na
 "Anybody can do the flipping." Chloe puts the pen down. "You do it and it's right, but you don't know it's right. You just know he said."  
 Her dad looks at the napkin, folds it in half, and puts it in his shirt pocket.  
 \---  
-After, the four of them sit on the floor in the hall outside Pluto with their backs against opposite walls. Since the lights in that hall go off in sections at ten, they're down to the last section.  
+After, the four of them sit on the floor in the hall outside Pluto, backs against the wall, close enough that Ruth's shoulder stays against Chloe's for most of it. Since the lights in that hall go off in sections at ten, they're down to the last section, and nobody has said anything yet about going to bed.  
+Ruth takes her shoes off and lines them up against the wall, heel to heel, then knocks them out of line with one foot and leaves them like that.  
 "We should all get in," Ruth says.  
 "Get in where."  
 "Here, it's a school. It's a whole school, it goes all year, that's what this is."  
 "I know it's a school."  
 "So we should get in."  
 "Obviously," Sam says.  
-"It's not obviously, you have to actually do things." Ruth has her shoes off and lined up next to her. "My mom asked: there's a form, and there's a day where you come back and they look at you, and it's not in the summer, it's a different day in the fall."  
-"They already looked at us," Sam says, "that's this."  
+"It's not obviously, you have to actually do things." Ruth pulls her knees up to her chest. "My mom asked: there's a form, and there's a day where you come back and they look at you, and it's not in the summer, it's a different day in the fall."  
+"They already looked at us," Sam says. "That's this."  
 "That's not what she said it was."  
+"You weren't even on the phone call."  
+"I heard half of it."  
+"Half of it isn't the phone call."  
+Ruth picks the knot out of one shoelace instead of answering.  
 "My parents already asked," Kavi says. "On the third day."  
 "Your parents asked on the third day?"  
 "They liked the food."  
@@ -680,17 +702,33 @@ After, the four of them sit on the floor in the hall outside Pluto with their ba
 "I don't know when the form is, my mom has it."  
 "But when do you find out."  
 "I don't know that either."  
-"Well, find out," she says, up on her knees now. "Because if it's a day where they look at you, I want to know what they look at. I want to know if it's the same stuff or different stuff, because if it's different stuff I need to know what it is."  
+"Well, find out," she says, up on her knees now, one hand fisted in the leg of Kavi's pyjamas. "Because if it's a day where they look at you, I want to know what they look at. I want to know if it's the same stuff or different stuff, because if it's different stuff I need to know what it is."  
 "It's a form, Chloe."  
 "You said there was a day."  
 "There's a day."  
-"So there's a day," she says, and sits back down against the wall.  
+"So there's a day," she says, and sits back against the wall, still holding on.  
+"I'm going to write you a letter every single week," Ruth says, to a spot on the opposite wall. "Starting Monday."  
+"You don't even like writing," Sam says.  
+"I like writing to people. It's homework I don't like."  
+"You're not going to do it every week."  
+"I am."  
+"You said that about the bridge log, and you did it four times."  
+"The bridge log was boring."  
+"So's a letter every week."  
+"It's not the same thing, Sam, and you know it isn't."  
+For a second the only sound is a door somewhere down the next section, clicking shut.  
 Then she does the arithmetic on it, which she has not done until now: four hours in the car, each way. A whole day of driving to put her somewhere and a whole day to get her back, then again at the end, and that's only if nobody visits. Her mom at the counter with her hand on her forehead, the woman at the district office saying be careful.  
 "Chloe," Sam says, "obviously."  
-"Obviously," she says.  
+"Obviously," she says, and doesn't let go of the pyjama leg until the lights click off and somebody has to find the door by feel.  
 \---  
-She doesn't sleep, and then it's morning. Her dad carries her bag down and puts it in the trunk with the strap left hanging out, so he has to open it again. Priya hugs her and then goes back into the room for her own bag. When Sam says see you at the thing in the fall, Ruth tells him it isn't a thing yet, that there's a form, that his parents have to send it in. Sam says see you at the thing in the fall again.  
+She doesn't sleep, not really, and is dressed and sitting on the end of her stripped bed before anyone comes to get her.  
+Her dad carries her bag down and puts it in the trunk with the strap left hanging out, so he has to open it again.  
+Priya hugs her hard enough that it takes a second to get loose, then goes back into the room for her own bag and comes out again with her chin working, because the hair tie that was on her wrist five minutes ago isn't there now, turning her sleeve inside out to check it twice while her mother tells her it doesn't matter and she says it does.  
+When Sam says see you at the thing in the fall, Ruth tells him it isn't a thing yet, that there's a form, that his parents have to send it in. Sam says see you at the thing in the fall again, word for word.  
+Kavi doesn't say anything. He holds his hand out flat, and Chloe puts hers in it for a second, before somebody's mom says it's time. Chloe keeps her hand open a beat after his goes back to his side, then closes it around the strap of her own bag instead.  
+Once the camp gate is behind them, before her eyes ever close, her mouth moves once through the days of the week in Spanish, under her breath, and then again, faster, checking it against itself.  
 An hour into the drive, with her head against the cold part of the window and her eyes shut, her dad checks the mirror twice before he calls her mom on the car speaker.  
+In the back seat, under the tire noise, Chloe doesn't move, not even the ordinary small settling of someone who's actually asleep.  
 "Hey, we're on the road."  
 "How is she?"  
 "Asleep." A pause. "She talked for twenty minutes straight last night."  
@@ -770,9 +808,9 @@ Somebody at the school picks up on the second ring. Chloe gets close, straining 
 
 Chloe waits for the phone for eleven days.
 
-Instead of her room, she takes her book down and reads it in the kitchen. She gets it on the second ring twice, and on the first ring once, and it's her grandmother, and a man asking for her dad, and a woman who wants to know whether her dad is the registered owner of the vehicle. On the ninth day her mom tells her that these things can take weeks.
+Instead of her room, she takes her book down and reads it in the kitchen, in the chair that puts the phone in her sightline, and she's up and across the floor before the first ring finishes if she's anywhere near it. She gets it on the second ring twice, and on the first ring once, and it's her grandmother, and a man asking for her dad, and a woman who wants to know whether her dad is the registered owner of the vehicle. Each time, she says it's not for her and hands it over, then sits back down with the book open at the same page it was open at before. On the ninth day her mom tells her that these things can take weeks, and Chloe asks how many, exactly, and doesn't get a number back.
 
-After eleven days she stops sitting in the kitchen, but she continues listening for it. 
+After eleven days she stops sitting in the kitchen, but she still crosses the room to check the phone's on the hook before she goes up, every night, and she still comes down two stairs at a time if it rings.
 
 ---
 
@@ -792,19 +830,19 @@ Before she answers, her mom looks out her own window, and her dad doesn't look a
 
 ---
 
-Since the book has to go back, they go on Tuesday, and Chloe, who has had it out for five weeks, carries it in with both hands.
+Since the book has to go back, they go on Tuesday, and Chloe, who has had it out for five weeks, carries it in with both hands, hugged flat against her chest instead of held out to hand over.
 
 "There she is." The librarian takes it and tsks, as she turns the card over. "It's been five weeks, not four weeks. Did you get through it atleast?"
 
-"Twice. There wasn't as much time as I thought there'd be." Chloe gets up on her toes at the desk. "There's a plastic man called Gary and you do CPR on him, and when you push in the right place hard enough he clicks. I got the click on the fourth one. And we built a bridge out of dowels and string and hung a bucket off the middle of it, and put weights in a pound at a time until it broke, and ours went at eleven pounds and it went at the corner."
+"Twice." Chloe is already talking before the card is all the way turned. She's up on her toes at the desk, both hands flat on the edge of it. "There wasn't as much time as I thought there'd be, because there's a plastic man called Gary and you do CPR on him, and when you push in the right place hard enough he clicks, and I got the click on the fourth try, and we built a bridge out of dowels and string and hung a bucket off the middle of it and put weights in a pound at a time until it broke, and ours went at eleven pounds and it went at the corner, right at the corner, which nobody else's did."
 
 "Did it now?"
 
-"And I can divide fractions now. Not just do them. I know why it works, and I got that part on my own on the floor of my room at night, and it took me about an hour."
+"And I can divide fractions now." She has to stop and get a breath in before the rest of it. "Not just do them, I know why it works, and I got that part on my own, on the floor of my room, at night, and it took me about an hour and I didn't ask anybody."
 
-The librarian looks at her over the top of the card. "That's a real month, that is," she says, and puts the stamp down. "But that doesn't mean you can get more, it is still four at a time, same as it was in June. The new ones came in this morning and they're still on the cart, so go on."
+The librarian waits until she's actually run out, looking at her over the top of the card. "That's a real month, that is," she says, and puts the stamp down. "But that doesn't mean you can get more, it is still four at a time, same as it was in June. The new ones came in this morning and they're still on the cart, so go on."
 
-Chloe takes four off the cart, two of which she finishes by Friday.
+Chloe takes four off the cart, still catching her breath, two of which she finishes by Friday.
 
 ---
 
@@ -830,29 +868,31 @@ Everybody talks at once, and it takes the room a long time to come down, because
 
 "Here's the part I want you thinking about while you're writing. You're not writing it to me and you're not writing it to your friends at your table. The person who opens that box is you, three years older, and whatever's on that paper is what they get."
 
-"It's kind of like mailing something to a stranger," Chloe says, not talking to anybody.
+Chloe is already leaning over her own paper with the pencil going before anybody else at the table has picked theirs up. "It's kind of like mailing something to a stranger," she says, not talking to anybody.
 
 "What was that, Chloe?"
 
-"Because you won't be you." She keeps going anyway. "You'll be somebody three years older. You won't remember doing this. It's like sending a package to a person you've never met. Except it's got your name on it. So they have to open it. They never even asked for it."
+"Because you won't be you." She keeps going anyway, faster now, one foot hooked around the leg of her chair. "You'll be somebody three years older. You won't remember doing this. It's like sending a package to a person you've never met. Except it's got your name on it. So they have to open it. They never even asked for it."
 
 Kayleigh Burns has turned around in her chair, "Why do you talk like that?"
 
 "You were weird before and now you're weirder." Bryce says it with interest, the way you'd tell somebody their shoe was untied.
 
-"I just meant it's a long time," Chloe says.
+Chloe's hand comes down flat over what she's already written, the whole page gone under her palm.
+
+"I just meant it's a long time," she says, to the desk.
 
 "Yeah," Bryce says, and turns back around.
 
-While Ms. Vance is over at the cabinet with the tape, not looking up for any of it, Chloe writes I hope you like fifth grade on her paper, folds it in half twice, and puts it in the box.
+Her hand stays where it is for the rest of the period. When Ms. Vance calls time, she scratches out the two lines underneath it until the pencil almost goes through the paper, and while Ms. Vance is over at the cabinet with the tape, not looking up for any of it, writes I hope you like fifth grade instead, folds it in half twice, and puts it in the box.
 
 ---
 
 The four books are due on a Thursday and she has finished two of them.
 
-Having taken the third one to bed on the Monday and gotten four pages in, she opens it at the same place on the Tuesday, reads the top of the page, reads it again, then gives up and puts it down on the floor. On the Wednesday she doesn't take it up with her.
+Having taken the third one to bed on the Monday, she gets four pages in, reads the same sentence twice, and starts the page over with no memory of what it said the first time. On the Tuesday she opens it at the same place, reads the top of the page, reads it again, and somewhere down the hall the phone doesn't ring either, and she gives up and puts it down on the floor. On the Wednesday she doesn't take it up with her.
 
-Her mom drives her to the library on Thursday and waits in the car with the engine running. Chloe comes out with her two books that she hadn't finished.
+Her mom drives her to the library on Thursday and waits in the car with the engine running. Inside, Chloe carries the two finished ones straight up to the desk and doesn't go near the shelves. She comes back out to the car with the other two, the ones she hadn't finished, still in her bag.
 
 "Aren't you getting more?"
 
@@ -868,7 +908,7 @@ The library card goes in the drawer in the kitchen where the batteries are. Thre
 
 By the end of September, she is asking several times a day.
 
-She asks at breakfast, in the car on the way to school and again on the way home, over her mom's shoulder while she's on the phone until she gets waved off, and one more time coming back downstairs in her pajamas twenty minutes after bedtime.
+She asks at breakfast, standing at the end of the table instead of sitting down to it. She asks in the car on the way to school and again on the way home, working the buckle of the seatbelt with one thumb the whole ride. She asks over her mom's shoulder while she's on the phone, until she gets waved off, and asks again the second the call ends, before the phone's even back on the counter. She asks with a chore list she has made herself, folded small and left on the pillow. She asks one more time coming back downstairs in her pajamas, twenty minutes after bedtime.
 
 "Can I go to Halstead."
 
@@ -884,7 +924,7 @@ Chloe is standing in the doorway in her pajamas, one foot on top of the other.
 
 "Go to bed."
 
-The first few times, "we're thinking about it" means something. By the end of the month, it means nothing is coming.
+She goes up, and on the back of a spelling worksheet under her pillow she starts a column of marks, one for every day nobody has said yes, and keeps adding to it.
 
 ---
 
@@ -932,11 +972,11 @@ Ms. Vance calls the house on the Friday, which Chloe hears from the stairs, thou
 
 Chloe goes back up before the call is finished.
 
-The appointment is the following Wednesday, for which her mom takes the whole afternoon off work without saying anything about taking it. Dr. Ammons has a room with two chairs and a couch, and she sits in one of the chairs and points Chloe's mom at the other, leaving Chloe the whole couch to herself.
+The appointment is the following Wednesday, for which her mom takes the whole afternoon off work without saying anything about taking it. Dr. Ammons has a room with two chairs and a couch, and she sits in one of the chairs and points Chloe's mom at the other, leaving Chloe the whole couch to herself. It's deep enough that her feet stick straight out in front of her instead of reaching the floor, so she pulls them up under her and picks at a loose thread on the cushion instead of looking at either chair.
 
 "So tell me what's going on, and start wherever you like."
 
-"She's not eating," her mom says, and she has the whole list ready in order, each item already decided before she walked in. "She's sleeping eleven hours a night and she's still tired all day. She used to read constantly, four books a week since she was five, and she's stopped completely. She sits in her room with the light off and doesn't turn it on. When I ask her what she's doing she says nothing, and I think that's the true answer."
+"She's not eating," her mom says, both hands flat on her own knees, and she has the whole list ready in order, each item already decided before she walked in. "She's sleeping eleven hours a night and she's still tired all day. She used to read constantly, four books a week since she was five, and there's a stack of them by her bed she hasn't touched since August. She sits in her room with the light off and doesn't turn it on. When I ask her what she's doing she says nothing, and I think that's the true answer." She stops there, and her hands come apart, one of them smoothing a crease out of her skirt that isn't there.
 
 "Chloe, is that right?"
 
@@ -958,19 +998,21 @@ Dr. Ammons stops writing and puts the pen down flat on top of the pad.
 
 She asks a lot after that and she asks all of it carefully, working down through who ran it, and how they found you, and whether Chloe stayed overnight, and how far away it was from the house, whether the same adults were there the whole four weeks, whether anything happened, whether Chloe came back different, and in what way, and starting when.
 
+Chloe sits through all of it without being asked a single one of the questions herself, her thread-picking gone still somewhere around the one about whether the same adults were there the whole time, though she couldn't say which question exactly did it.
+
 "Nothing happened, she absolutely loved it."
 
 "I'm sure she did, but I'm asking anyway."
 
 "She's been asking to go back since the day we picked her up, most days more than once." Her mom shifts in the chair. "She asked me in the parking lot outside this building, about nine minutes ago."
 
-Dr. Ammons turns in her chair until she's facing the couch instead of the other chair.
+Dr. Ammons turns in her chair until she's facing the couch instead of the other chair, and Chloe sits up a little straighter without deciding to.
 
 "Chloe, what did you like about it?"
 
 There are about forty things and they won't go in a line. There's the bridge going over sideways all at once, and the paper on the floor with the eighths drawn straight through it, and Sam saying it's a room-shaped object. There's Mr. Baptiste doing the whole rectangle over from the beginning for Marisol, not mentioning it.
 
-"It was hard," she says, and Dr. Ammons writes that down, underlines part of it, and doesn't ask her one more question for the rest of the hour.
+"It was hard," she says, and Dr. Ammons writes that down, underlines part of it, and doesn't ask her one more question for the rest of the hour. Her feet find the floor again without her doing anything about it.
 
 In the car her mom holds the wheel with both hands without starting the engine.
 
@@ -1112,7 +1154,7 @@ The envelope is in the top drawer under her socks, where it has been since Augus
 
 It's a Tuesday and nothing happens on it.
 
-The school doesn't call. The sheet at twenty past nine is the same sheet as Monday's, with different numbers in it. She finishes it, checks it, and sits behind it with her hands in her lap for the rest of the period. At lunch she sits at the end of a table where there's a space, the talk staying down at the other end, out of her reach. In the afternoon they do a worksheet about the parts of a plant, which has a picture on it that you colour in when you've finished the words. Chloe finishes the words in about four minutes, then colours the picture very slowly, going right up to the lines without going over them anywhere. She has seen Dr. Ammons four times since October, and the last one, which was a fortnight ago, was when she was asked whether any of it had got easier and said some of it had.
+The school doesn't call. The sheet at twenty past nine is the same sheet as Monday's, with different numbers in it. She finishes it, checks it, and sits behind it with her hands in her lap for the rest of the period. At lunch she carries her tray past four empty seats to get to the one at the very end, the same one every day, past where the talk reaches. She used to keep a library book open against her milk carton there. There's nothing propped against it now, and she doesn't look up again until the bell. In the afternoon they do a worksheet about the parts of a plant, which has a picture on it that you colour in when you've finished the words. Chloe finishes the words in about four minutes, then colours the picture very slowly, going right up to the lines without going over them anywhere. She has seen Dr. Ammons four times since October, and the last one, which was a fortnight ago, was when she was asked whether any of it had got easier and said some of it had.
 
 She comes home. She goes upstairs without taking her coat off. At some point her mom comes up to say that dinner's in ten minutes. She finds her on the floor in the gap between the bed and the wall, with her back against the bed and her knees pulled up.
 
@@ -1218,7 +1260,7 @@ Dave looks down, not at either of them.
 
 "It's how it is, though, isn't it."
 
-From the rug, Chloe catches maybe one word in three, and she doesn't ask what the rest of it meant.
+On the rug, Chloe has stopped moving. She catches enough of it to string together, house, and roof, and nowhere, and gets up once in the middle of it to check through the window that the car is still in the driveway. Then she sits back down in front of the television and doesn't ask what the rest of it meant.
 
 They drive out on the Friday for the day where Halstead looks at her. The building is a different building in April than it was in July, because it's raining, and every hall in it is full of people.
 
@@ -1251,6 +1293,8 @@ Chloe watches her through the window, until her dad says something from the othe
 Sam sees her before she sees him.
 
 Coming down the hall at a full run, he hits her hard enough that she drops the bag, yelling something that isn't words. Then it is. "You came, you actually came, I told everybody you would. I said it to Ruth like nine separate times and she kept doing the face."
+
+The bag has skidded into the wall. Chloe picks it up before anyone else can, the rubber bands still around the socks inside it in the shape her mother rolled them in, and doesn't let go of it again.
 
 Ruth comes up behind him, her hand already out for the bag. "You said probably not," she says.
 
@@ -1286,11 +1330,33 @@ Ruth tilts her head, "kind of, he's the one who wouldn't do the water thing," an
 
 It's four before Ruth even says it. She'd counted them herself, the week it happened.
 
+The lights go out on the corridor at eight. Fen doesn't say goodnight, she just stops answering, one arm already off the side of the mattress. Chloe lies on top of her own bed in the dark for a while, still in her socks, corridor light in a bar along the floor, listening for the radiator Fen promised her.
+
+"Fen."
+
+Nothing.
+
+"Fen, are you asleep?"
+
+"Nearly."
+
+"How do you know which rock goes where?"
+
+That gets her sitting up. "By size. Smallest closest to the door. If two look the same I hold one in each hand, and the heavier one goes first, because heavier's always a little bigger even when you can't see it." She reaches over and picks one off the sill without turning the lamp on, finding it in the dark by feel. "This one came in March. It went in fourth from the end and everything after it moved along one space. If I find a new one tomorrow, the whole row moves again. That's the only rule there is. Nobody touches them but me."
+
+"Why do you bother, if you're leaving the room in August?"
+
+"I'm not leaving them. I'm taking them and starting the sill again wherever I go next." She puts it back exactly where it came from, still in the dark, without checking.
+
+She's asleep before Chloe thinks of anything else to ask. The radiator does what Fen said it would, twice, and Chloe is awake for both of them.
+
 ---
 
 She starts on a Monday.
 
 Her day is seven hours. Five subjects for an hour each, then two hours in the afternoon that Fen calls the fun ones and everybody else calls the afternoon. When it finishes, she finishes, and there is nothing after it until dinner. The five are Spanish, mathematics, writing, literature and history. Writing turns out to be two pages a week, followed by twenty minutes of a man asking her why she put things in that order.
+
+Breakfast is louder than dinner, because nobody has decided yet how the day is going to go and everybody has an opinion about it before they've finished chewing. Somebody says it would take about a year to tunnel out of the building. Kavi says four months and keeps going long after anyone needed him to. Sam eats standing at the end of the table because his chair is Ruth's now, the result of an argument that started over a spoon in the second week and that neither of them remembers well enough to settle.
 
 Swimming is the first afternoon hour and the school assigns it to everybody. The pool is warm, the lane is hers for the whole hour, and the teacher stands at the shallow end and tells her what her left arm is doing until she can hear it coming before he says it. In the second week he gets in and does two lengths to show her what he means about the roll, and it is a different thing in the water than what any of them are doing. Then he gets out and carries on the sentence he was in the middle of.
 
@@ -1320,7 +1386,7 @@ She hates it for a month, but the first two weeks go badly in every subject she 
 
 "As many as you can carry, and there's no card, so nobody's writing any of this down. There's nobody at the desk after seven. Take what you want, bring it back when you're finished with it, and if you lose one then come and say you lost one."
 
-The library at home was one room off the gym with a rug in the middle of it, and the woman at the desk would let you take four books and not five, and Chloe argued with her about it three separate times and got four books every time. This one is the whole back of the ground floor, both floors of it, with a staircase inside it that goes up to a second level of shelves running all the way round. Nobody is at the desk on a Tuesday at eleven at night, and there is no card and no limit. The first time she takes eleven books, which she has to carry against her chest with her chin on the top one, but she only gets three of them read. The second week she takes six. It settles after that at somewhere between two and four, because the library is a four-minute walk from her room and it is open at eleven at night, so there is no reason to carry more than she can carry in one hand. She reads in the gaps. There is no reading in class, and there is very little in the afternoon, because Ruth is at the next station over with something always going on. So it happens in the hour before dinner, and after lights out with the corridor light coming under the door, and on the Saturdays when the other three are doing something she got out of. The mathematics thing happens in the third week of May, on a problem she has had for six days. There is a wheel rolling along a straight line and one point marked on the rim of it, and the question is how far that mark actually travels while the wheel goes round one time. It is further than the wheel goes. Everybody agrees on that much, but nobody in the room can say how much further.
+The library at home was one room off the gym with a rug in the middle of it, and the woman at the desk would let you take four books and not five, and Chloe argued with her about it three separate times and got four books every time. This one is the whole back of the ground floor, both floors of it, with a staircase inside it that goes up to a second level of shelves running all the way round. Nobody is at the desk on a Tuesday at eleven at night, and there is no card and no limit. The first time she takes eleven books, whatever is at eye height and looks interesting, which turns out to be most of it. She carries them against her chest with her chin on the top one, stopping twice on the stairs to get her arms back under the stack rather than put any of it down, and she only gets three of them read. The second week she takes six. It settles after that at somewhere between two and four, because the library is a four-minute walk from her room and it is open at eleven at night, so there is no reason to carry more than she can carry in one hand. She reads in the gaps. There is no reading in class, and there is very little in the afternoon, because Ruth is at the next station over with something always going on. So it happens in the hour before dinner, and after lights out with the corridor light coming under the door, and on the Saturdays when the other three are doing something she got out of. The mathematics thing happens in the third week of May, on a problem she has had for six days. There is a wheel rolling along a straight line and one point marked on the rim of it, and the question is how far that mark actually travels while the wheel goes round one time. It is further than the wheel goes. Everybody agrees on that much, but nobody in the room can say how much further.
 
 She has it in the shower on the Wednesday and stands there until the water goes cold, and the next morning she gets to the room eight minutes early. Ruth is already at the board.
 
@@ -1368,7 +1434,7 @@ Her mother laughs at that, properly, for longer than the answer deserves, and it
 
 "Are you happy there?"
 
-Chloe turns it over, the pool, or Ruth, or the library that's open all night. Her mother waits and does not fill the gap.
+Chloe sits down on the floor of the alcove instead of answering straight away, the cord stretched as far as it goes. The pool. Ruth. The library that's open all night with nobody at the desk. Her mother waits and does not fill the gap.
 
 "Yes," Chloe says.
 
@@ -1382,7 +1448,7 @@ The second term starts and the subjects change over. History splits into two thi
 
 She cannot do Central Asia without stopping to think about it. She has South America by the end of May and Europe two weeks after that, but she keeps putting the \-stans in the wrong order. All five of them, in a different wrong order every time she tries. Ruth can do the whole map, including the small islands off the top of Scotland, and is unbearable about it in a way Chloe finds she does not mind at all. Physics comes in at the same changeover and biology goes out. She writes the whole list in the back of the notebook, the six subjects plus the two afternoon hours, and puts the date next to it. There are people in her year who have been here three years already, and she wants to know how long their list is, but she cannot work out a way to ask that does not sound like she is measuring herself against them.
 
-In the last week of June she packs, and Fen's rocks come off the sill into a shoebox with newspaper folded between them. Chloe opens the desk drawer, where the envelope is still under the folder she left on top of it in April, and puts them both in the bottom of the bag. Ruth walks her down to the front steps, where Sam is already out on the grass talking to somebody else's grandmother about something that requires both his arms.
+In the last week of June she packs. "Which one's fourth from the end now?" Chloe asks, and Fen has to check, running a finger along the sill before she answers, because two new ones came in during March and she never mentioned it. Then Fen's rocks come off the sill into a shoebox with newspaper folded between them. Chloe opens the desk drawer, where the envelope is still under the folder she left on top of it in April, and puts them both in the bottom of the bag. Ruth walks her down to the front steps, where Sam is already out on the grass talking to somebody else's grandmother about something that requires both his arms.
 
 "Ten weeks is a long time to not do anything. My mom's got me at my cousin's for two of them, and there's nothing there except a lake and a shop."
 
@@ -1492,7 +1558,7 @@ Her grandmother comes on a Sunday. In the front room Chloe is explaining the bri
 
 "I know," her mother says.
 
-Chloe gets the water and goes back through and finishes about the bridge, which held eleven pounds, second in the room.
+Chloe stands against the wall by the door with the glass in both hands and tugs the front of her shirt loose from her shorts once, then lets it go. She goes back through and finishes about the bridge, which held eleven pounds, second in the room, and eats half of what's on her plate at dinner, and says she isn't hungry.
 
 ---
 
@@ -1598,7 +1664,7 @@ On a Tuesday in April the four of them end up on the grass behind the science bu
 
 Ruth gets four in a row above the bracket, then is insufferable about it until dinner. Sam eats two of the apples and takes the bag back to his room, where it stays under the bed until the middle of May, at which point three people on the corridor make it his problem. The bracket rule survives into the summer and gets applied to a stairwell, a laundry chute, and one of the goals on the pitch.
 
-In June Chloe pulls out the notebook where she wrote the four subjects she was behind in, back in her first April. She is reading ahead in three of them, and the dates in the margins say she has been since about Christmas. She had stopped checking for it in January, but the notebook says January is when it turned. She adds a line at the bottom with the date on it, and puts the notebook in the drawer, and goes down to dinner.
+In June Chloe pulls out the notebook where she wrote the four subjects she was behind in, back in her first April. She is reading ahead in three of them, and the dates in the margins say she has been since about Christmas. She had stopped checking for it in January, but the notebook says January is when it turned. She reads the line back twice before she adds a new one at the bottom with the date on it, then puts the notebook in the drawer and goes down to dinner two steps at a time.
 
 ## Chapter Twelve: Nine
 
@@ -2149,6 +2215,8 @@ Chloe tells her grandmother about the arrows and gets to draw the sixty degrees 
 
 "That's better, then." Her grandmother settles back into the chair with her tea. "It sounds like you just want the practice."
 
+Chloe folds the envelope shut along the line she drew and doesn't hand it back.
+
 ---
 
 The Watch on the eleventh of April goes up on the board on the Monday and it says the whole school.
@@ -2175,7 +2243,7 @@ Mr. Hearn is the last one. He has the library, one door, one window, a room full
 
 The board the next day says the staff lost the building at three forty-two, and then it gives the students a B and lists eleven failures.
 
-Chloe reads the eleven failures in the corridor. Number four is about the east stairwell and names two students, but neither of them is Ruth. Number nine says that at no point in the two hours did anybody establish how many adults were in the building. She stands in front of that one, because she spent the whole two hours on a landing counting paint.
+Chloe reads the eleven failures in the corridor. Number four is about the east stairwell and names two students, but neither of them is Ruth. Number nine says that at no point in the two hours did anybody establish how many adults were in the building. She stands in front of that one with her arms crossed and doesn't move on until somebody behind her needs the space, because she spent the whole two hours on a landing without once checking how many teachers were still up there.
 
 She is still on number nine at dinner, where Sam is describing the bannister for the fourth time to two people who were standing underneath it.
 
@@ -2341,21 +2409,21 @@ The plan takes Sam ninety seconds and he is defending it before he's finished de
 
 "Noted," Sam says. "It's still the plan. Anybody got a better one in the next thirty seconds?"
 
-"If you don't know what somebody's here for, you don't know which way they're going to move. That's the whole problem with the plan. They have to choose," Chloe says. "Somebody has to be in front of them. I'll do it."
+"If you don't know what somebody's here for, you don't know which way they're going to move. That's the whole problem with the plan. They have to choose," Chloe says, one thumb pressed into the burn on her wrist. "Somebody has to be in front of them. I'll do it."
 
 "You'll get grabbed."
 
-"That's the point," she says, already moving toward the door. "I'm twelve and I'm small, and I'm a girl in pyjamas. Nobody hits that. They'll grab me and they'll try to keep me quiet and then they'll spend at least four seconds deciding what to do with me, and while they're deciding, they're standing still and they're all facing the same way."
+"That's the point," she says, the words coming out in one breath, already moving toward the door. "I'm twelve and I'm small, and I'm a girl in pyjamas. Nobody hits that. They'll grab me and they'll try to keep me quiet and then they'll spend at least four seconds deciding what to do with me, and while they're deciding, they're standing still and they're all facing the same way."
 
 Ruth looks at her. "I'm shorter," she says.
 
 "Yeah, but I look smaller, it's psychology," Chloe says. "It's the whole first term."
 
-The other thing that gets discussed is the drugs: the kit has both. The traceable one works in about six seconds and the untraceable one takes closer to twenty-five and needs a better stick.
+The other thing that gets discussed is the drugs: the kit has both. Chloe gets the case open on the second try, the catch slipping under her thumb before it gives. The traceable one works in about six seconds and the untraceable one takes closer to twenty-five and needs a better stick.
 
 "Take the fast ones," Sam says.
 
-"They're actors," Ruth says. "If they get a work physical in three weeks they're going to fail it and they're going to have to explain why."
+"They're actors," Ruth says, turning a vial over once more than the label needs. "If they get a work physical in three weeks they're going to fail it and they're going to have to explain why."
 
 "So?"
 
@@ -2363,7 +2431,7 @@ The other thing that gets discussed is the drugs: the kit has both. The traceabl
 
 "It's six seconds versus twenty-five."
 
-Ruth is quiet for as long as it takes to breathe out. "Fine, fast ones," she sighs. "It'll cost us, but we don't have much choice."
+Ruth is quiet for as long as it takes to breathe out, the syringe still capped and held so tight in her fist that the cap leaves a line across her palm. "Fine, fast ones," she sighs. "It'll cost us, but we don't have much choice."
 
 \---
 
@@ -2386,6 +2454,8 @@ Chloe steps back out of the way and sits down on the floor because her legs have
 "Yeah, but he almost hit Chloe, the one person we needed to take down correctly, and I messed up."
 
 They tie them up, wrists and ankles, on their sides, four men in a row against the corridor wall, and then they sit with them, just like protocol says. Ruth has the antidote out as she counts respirations on each of the four every two minutes and writes the numbers on her arm in pen because nobody brought paper.
+
+Sam sits down across from her, elbows on his knees, watching the pen move rather than the men it's counting. "Four grown men," he says, to nobody in particular. "That's not very twelve."
 
 Kavi is going through the equipment: two bags, a laptop, a lockpick set, a pair of bolt cutters that are the wrong bolt cutters for the fence they came over. The four of them are dressed like a maintenance crew: dark work trousers, plain jackets, nothing with a name on it, no wallets, no phones. Nothing in any pocket at all.
 
@@ -2445,7 +2515,7 @@ The man looks at him, his jaw working once. "I don't know," he says.
 
 "See, that's a C," Sam says, walking back with his hands up. "That's a C right there."
 
-Chloe doesn't say anything for the interrogation. She's sitting against the wall with her arms around her knees, watching the four of them on the floor, turning it over without landing on what's wrong. She works at it while Sam talks, the bolt cutters wrong, the boots wrong, all of it wrong in the same direction. She's twelve, and it's four in the morning, and she lets it go.
+Chloe doesn't say anything for the interrogation. She sits against the wall with her arms around her knees, pulled in tighter than the position needs, her fingers finding the four-beat count against her own leg without her telling them to. She works at the wrongness of it instead, the bolt cutters wrong for that fence, the boots wrong, all of it wrong in the same direction, the whole time Sam talks, and she doesn't look twice at the second man, his chest going up and down a few feet from where she's sitting. The cold's come all the way through her pyjamas by now, and her arms around her knees have gone from holding still to holding on.
 
 Sinclair arrives with two other adults and a trolley, then stops at the corner. He looks at the four men tied along the corridor wall, and at the bags, and at the four kids sitting on the floor near them, and he stands there watching them without moving. "Who's monitoring?"
 
@@ -2454,6 +2524,8 @@ Sinclair arrives with two other adults and a trolley, then stops at the corner. 
 "Numbers."
 
 Ruth reads them off her arm. Sinclair nods. "Grading's in the morning," he says. "Go to bed. Now."
+
+She doesn't get back to sleep. She lies on top of the covers with her shoes still on and listens to the corridor for a long time before she stops expecting it to make another sound.
 
 Chloe gets a C the same as Sam. Ruth gets a B minus. She brings it up for a week. Kavi gets a B for the comms and a note about the sensors that he disagrees with in writing, at length, and does not get anywhere with.
 
@@ -2819,7 +2891,7 @@ Priya makes him stand against the door frame in the corridor and marks it in pen
 
 Fencing goes to both hands in the same term, so her left is roughly where her right was at eleven, half a beat late onto everything she can already see coming.
 
-The forge stays where it has been. She finishes a set of three hinges in November that have taken her three Sundays. She holds one up to the window and turns it, then drops all three in the scrap bin on her way past, while Pruitt is at the far bench with two others and does not see her do it.
+The forge stays where it has been. She finishes a set of three hinges in November that have taken her three Sundays. She holds one up to the window and turns it, thumb working along the seam where the two edges meet and don't quite sit flush, then drops all three in the scrap bin on her way past, while Pruitt is at the far bench with two others and does not see her do it.
 
 ---
 
@@ -3037,7 +3109,7 @@ Chloe sets her bag against the wall. "All right, shoot."
 
 "You can't be held to anything. I can. So asking is what I have."
 
-She takes a week over it, and she builds the case against first. Fifteen years old, asked to guard a secret that already had four other names on it, and she makes that side as hard as she can. Then she builds the other one, from Sandoval's side, and from her own, and from the side of the four names on the form. She is quiet at dinner on Wednesday, and Sam asks her twice whether she is all right.
+She doesn't sleep well that night, and snaps at Sam over nothing at breakfast the next morning, then apologizes for it before he can ask why. Then she takes a week over it, and she builds the case against first. Fifteen years old, asked to guard a secret that already had four other names on it, and she makes that side as hard as she can. Then she builds the other one, from Sandoval's side, and from her own, and from the side of the four names on the form. She is quiet at dinner on Wednesday, and Sam asks her twice whether she is all right.
 
 She stops saying what she does in the afternoons, and it takes about four days to stop being a decision.
 
@@ -3103,7 +3175,7 @@ Kavi looks at the board, then at her, then back at the board.
 
 "I got it by nine." His hand comes up over his mouth a half second behind the words. "That was not the thing to say."
 
-"It's fine." She takes the list in one more time and steps back from the board to let somebody else in.
+"It's fine." She takes the list in one more time, her hands flat and still at her sides, then steps back from the board to let somebody else in.
 
 Fifty-one in the year pass, thirty-nine do not, and by dinner those thirty-nine have found each other by sight, because that board hangs in a hall everybody walks past four times a day.
 
@@ -3323,7 +3395,7 @@ The men come out four blocks later, between two parked cars, seven of them in a 
 
 "Phones. Watches. Come on."
 
-Chloe checks the fence, the gap under it, the alley, the loading dock she could be on top of in four seconds. Seven of them, three armed, standing close enough together that a fourth of them could put a hand on the man next to him without reaching. That's the whole read. A group that stands like that has never had to worry about spreading out.
+Chloe's fingers find the four-count against her own leg before she's told them to, and stop again just as fast. Then: the fence, the gap under it, the alley, the loading dock she could be on top of in four seconds. Seven of them, three armed, standing close enough together that a fourth of them could put a hand on the man next to him without reaching. That's the whole read. A group that stands like that has never had to worry about spreading out.
 
 "Hang on," Sam says. "Let me have this one."
 
@@ -3357,13 +3429,13 @@ Somebody swings and hits the man Sam is holding. Sam lets him go and steps left,
 
 "He's slow on the transitions," Nadia says, chin on her hands.
 
-"He's slow on everything, look at his feet."
+"He's slow on everything, look at his feet." Ruth's other hand has found the edge of the roof and closed around it.
 
 "Why is he doing that with his left."
 
 The second gun comes out of a jacket pocket and doesn't finish coming out. Sam has the wrist before it's straight and the man goes down into the one behind him. On the ground, he strips that one too, throwing the pieces in two directions. The last two try to come around. One takes a step back to make room, and Sam deals with the other one first, and then with him.
 
-"Fifty-one seconds," Ruth says. "One of them never even got there."
+"Fifty-one seconds," Ruth says. "One of them never even got there." Her hand comes off the edge of the roof, the tar still gritty on her palm from holding it.
 
 "Clear," Chloe says, still watching the alley. Nothing has come to the loading dock, and nothing is going to.
 
@@ -3371,25 +3443,33 @@ The second gun comes out of a jacket pocket and doesn't finish coming out. Sam h
 
 Sam is standing in the middle of them, turning, when they come down off the roof. His knuckles are marked, nothing worse. He finds the third gun on a man who never got to it and takes it apart, then goes around and checks all seven, rolling each one onto his back and watching his chest move before he moves to the next.
 
-Ruth does the one who's out. Airway, then breathing, then a hand under the back of his head. She holds an eyelid open and looks, "Concussion. He's fine," and writes the time on her own forearm in pen, because nobody brought paper down off the roof. Nadia kneels on the man whose shoulder came out of its socket somewhere in the middle of it, finds the angle with two fingers, and puts it back with one motion he's unconscious for the whole of. She's up and checking the next one before he'd have finished making a sound. Chloe does two of them, working down each ribcage with both hands flat, counting under her breath the same way she'd count her own, ribs, nothing floating, and one who's bitten through his lip.
+Ruth does the one who's out. Airway, then breathing, then a hand under the back of his head. She holds an eyelid open and looks, "Concussion. He's fine," and writes the time on her own forearm in pen, because nobody brought paper down off the roof. Nadia kneels on the man whose shoulder came out of its socket somewhere in the middle of it, finds the angle with two fingers, and puts it back with one motion he's unconscious for the whole of. She's up and checking the next one before he'd have finished making a sound. Chloe does two of them, working down each ribcage with both hands flat, counting under her breath the same way she'd count her own, ribs, nothing floating, and one who's bitten through his lip. Her own pulse is still going hard enough to feel in her fingertips the whole time she's checking his.
 
 "Anything?" Sam says.
 
-"No." Ruth caps the pen, the column of numbers already running up past her wrist. "We should talk about whether this is a thing that gets reported."
+"No." Ruth caps the pen, and her hand isn't as steady doing it as her voice is, the column of numbers already running up past her wrist. "We should talk about whether this is a thing that gets reported."
 
 "Reported to who." Nadia is already moving, not fast, just done with the row of them. "Them?" She tips her head at the seven without looking at them again. "A man doesn't call the police to say he got robbed of a robbery."
 
-"I mean us. Four minors, no adult inside four miles, three firearms taken apart on a public street." Ruth stands, wiping her hands on her jeans.
+"I mean us." Ruth stands, wiping her hands on her jeans harder than the dirt on them needs. "If anyone at school finds out we went over that fence tonight, we're not looking at detention. We're looking at being sent home, and not coming back."
 
-"And what's the report," Chloe says, eyes still on the alley out of habit. "We came over a fence for waffles and it went like this. Somebody writes that down and it turns into six more questions before it turns into one answer."
+"Nobody's finding out." Nadia pushes her sleeves up first. "Nobody's calling anyone, and nobody's standing around to see if one of them does either. We're not here."
+
+"And it's not only the fence," Chloe says, eyes still on the alley out of habit. "Somebody writes down what happened tonight, the first real question is how four of us got past our own gate to begin with."
+
+"I don't just mean that either." Ruth looks at the gun pieces still scattered under the parked cars instead of at any of them. "Three of those were real guns."
+
+Sam looks at his own knuckles for a second.
 
 "What about him." Chloe nods at the one Ruth just finished checking, still on his back, breathing slow and even. "If nobody's coming."
 
-"He's breathing on his own and his pupils are even. He wakes up in twenty minutes with a headache and six friends to take him home." Ruth says it the way she reports anything she's already checked twice. "That's not a call-it-in problem. That's a walk-away problem."
+"He's breathing on his own and his pupils are even." Ruth says it fast, still not looking away from him. "He wakes up in twenty minutes with a headache and six friends to take him home."
 
-Sam still hasn't said anything since he came off the man he was holding. "We're just leaving them," he says.
+Chloe watches him too, until his chest goes up again on its own.
 
-"So it doesn't get written down." Nadia's already at the fence line. "Nobody's calling anyone, and nobody's standing around to see if one of them does either. We're not here."
+Sam still hasn't said anything since he came off the man he was holding. "We're just leaving them," he says, not moving toward the fence yet.
+
+"They're not hurt bad." Nadia's hand is already on the fence. "None of them are hurt bad. That's the whole point of doing it the way we did it."
 
 Sam looks at the seven of them a moment longer than the others do, the closest he comes to arguing it, then finds his own way back to the fence and goes over.
 
@@ -3397,15 +3477,15 @@ They leave.
 
 ---
 
-The road back is the same road, colder now, the sodium light gone once they're far enough from the stores.
+The road back is the same road, colder now, the sodium light gone once they're far enough from the stores. Chloe looks back once, then again a block later, before the empty road behind them stops needing it. Sam's hands keep closing into fists and opening again, empty each time.
 
 "I got nothing out of that."
 
 "You got fifty-one seconds against seven."
 
-"Three of them had guns, Ruth, which is usually the part that's supposed to matter."
+"Three of them had guns, Ruth, which is usually the part that's supposed to matter." It comes out louder than the empty street needs.
 
-"Having a gun isn't a skill." Ruth is irritated about it. "They stood in a group and let you walk in, and the one at the back made room for you. You could have done that at thirteen."
+"Having a gun isn't a skill." Ruth's already talking over the end of his sentence. "They stood in a group and let you walk in, and the one at the back made room for you. You could have done that at thirteen."
 
 Sam doesn't answer, looking at the sidewalk. "Why are they so bad at it."
 
@@ -3423,7 +3503,7 @@ Ruth kicks a bottle cap off the curb without breaking stride and watches where i
 
 "She'd take me apart before I got a hand up."
 
-"She'd take you apart," Nadia agrees. They cross the last empty intersection without checking for cars, four sets of footsteps falling into the same rhythm on their own. They discuss it the whole way home.
+"She'd take you apart," Nadia agrees. Sam laughs longer at that than it's actually worth, both hands finally still in his pockets. Ruth glances at him and doesn't say anything about it, for once. They cross the last empty intersection without checking for cars, four sets of footsteps falling into the same rhythm on their own, faster than the walk down had been. They discuss it the whole way home.
 
 They're back over the fence a few minutes past two, Ruth's copied badge back in the maintenance supervisor's jacket before he's noticed it was gone, Chloe's camera loop already unwinding itself toward normal. The corridor is empty and quiet the whole way to their own doors.
 
@@ -3435,4 +3515,4 @@ Ruth shuts the box off in the corridor and puts it in the chat before she sleeps
 
 Somebody in the year above has sent one laughing face and nothing else. Ruth reads it out at breakfast, and Sam doesn't ask who, doesn't answer, just reaches past her for the syrup and starts on his tray like the question landed for somebody else at the table. He won't discuss it, and won't for so long that people start bringing it up just to watch him not answer.
 
-Nadia doesn't call her father before she leaves for the summer. She's home two days later, checks the till against the tape before she says hello, and by the time he asks how school is, the part-timer who'd been pocketing the difference on Thursdays is already gone and the number is already back where it should be. The ledger goes back under the counter, balanced, before her mother's finished asking how the drive back was. She doesn't mention a fence, a diner, or seven men behind a hardware store.
+Nadia doesn't call her father before she leaves for the summer. Telling him about the fence would mean telling him how they got over it, and that isn't a story that ends with just her in trouble. She's home two days later, checks the till against the tape before she says hello, and by the time he asks how school is, the part-timer who'd been pocketing the difference on Thursdays is already gone and the number is already back where it should be. The ledger goes back under the counter, balanced, before her mother's finished asking how the drive back was. She doesn't mention a fence, a diner, or seven men behind a hardware store.

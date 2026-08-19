@@ -529,6 +529,9 @@ chloe: theo that was a drill
 theo: it wasnt a drill. i read the file.
 
 
+Chloe reads that one twice and sets the phone face down on the desk before she picks it back up.
+
+
 ________________
 
 

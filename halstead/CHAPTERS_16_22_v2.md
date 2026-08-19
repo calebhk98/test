@@ -1226,7 +1226,7 @@ Kavi doesn't come back with anything for four days. When he does, he says he ask
 The lock they built at thirteen to get past a teacher is still the only thing standing between this chat and anyone outside it, and none of them has ever proposed replacing it with something better. Whatever internal means, it isn't a word any of them knows how to get past.
 
 
-The chat moves on within about ten minutes.
+The chat moves on within about ten minutes. Chloe leaves the tab open on her desk for the rest of the evening and doesn't type anything else into it.
 
 
 ________________
@@ -1331,7 +1331,7 @@ She writes back that she doesn't. It's her. Six thousand words is about a day's 
 He doesn't reply.
 
 
-She doesn't think much of it. She has told him the truth. It isn't interesting.
+She rereads his message once, then closes the tab without answering it again. She has told him the truth. It isn't interesting.
 
 
 ________________
@@ -1508,7 +1508,7 @@ ________________
 In April she stops posting. No fifth question arrives, and nobody in the chat asks where it went.
 
 
-Sam mentions it in June, three lines about a group project nobody's heard from her on. Kavi says she's probably just buried, and it's about that time of year for her anyway, finals or something adjacent to finals. Nobody in the chat treats it as anything but ordinary; people go quiet for a month at a time and come back with a screenshot and a joke. Chloe messages her directly twice, a week apart, and gets back sorry, been swamped, and then nothing at all, not even the mark the client puts up when a message has been read.
+Sam mentions it in June, three lines about a group project nobody's heard from her on. Kavi says she's probably just buried, and it's about that time of year for her anyway, finals or something adjacent to finals. Chloe reads both messages twice and doesn't add anything to the thread. People go quiet for a month at a time and come back with a screenshot and a joke. Chloe messages her directly twice, a week apart, and gets back sorry, been swamped, and then nothing at all, not even the mark the client puts up when a message has been read.
 
 
 Six months.
