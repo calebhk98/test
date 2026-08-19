@@ -12,8 +12,21 @@ the whole job, and a precise identification is worth more than a fix.
 ## Pass one: the chapter on its own
 
 Read nothing but your chapter. Work down it from the top, one paragraph at a
-time, and for each paragraph **say to yourself, in your own plain words, what
-happens in it.** Most paragraphs will be fine and you write nothing.
+time.
+
+**Write out, in your report, a one-line restatement of every paragraph, in your
+own plain words, in order, numbered by line.** Not a summary of the chapter. One
+line per paragraph, every paragraph, saying what happens in it or what it says.
+
+This is the whole method and it is not optional. Reading a chapter and then
+reporting on it produces nothing, because a fluent chapter reads as though it
+makes sense. Restating each paragraph in your own words is what exposes the ones
+that cannot be restated, and those are the ones this pass exists to find. Put
+this under `## Restatement`.
+
+Where a restatement is hard to write, that paragraph is a finding. Where you
+write the restatement and then notice it says something impossible, that is a
+finding. Both go in the list below.
 
 Write an entry whenever one of these seven tests fails. Each test has an action
 you perform, not a pattern you match. Do the action.
@@ -92,10 +105,9 @@ because a report that says "no issues" is usually a report from somebody who
 read quickly, and this section cannot be filled in without actually doing the
 tests.
 
-- **The five hardest sentences to restate.** Quote the five sentences in the
-  chapter you found hardest to put in your own words, *even if you managed it in
-  the end*. For each, give your restatement. If a restatement took you two
-  attempts, say so.
+- **The five hardest sentences to restate.** From the restatement work above,
+  quote the five sentences you found hardest to put in your own words, *even if
+  you managed it in the end*. If a restatement took you two attempts, say so.
 - **Every physical object introduced, and where it came from.** A plain list.
   Food, tools, paper, furniture, vehicles, clothing. This is the only reliable
   way to notice the one that arrived from nowhere.
