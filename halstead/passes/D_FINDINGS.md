@@ -118,6 +118,22 @@ These are checkable and wrong. Highest priority.
 - **ch14 L19–21 vs L21** — the crossing point is 70m out from each firing line and is "the top of the
   arc," but debris travels on to land "a hundred and fifty metres further on." An apex at 70m implies
   landing near 140m, not 220m.
+- **ch24 L5, L107, L552 — the chat's age is wrong in three places.** "The chat is nine years old.
+  They wrote the encryption themselves at thirteen." The chapter is dated September 2023 and the cast
+  is eighteen — thirteen was five years ago, not nine. L107 ("Their own encryption has gone nine
+  years") and L552 ("the same lock nine years running") repeat it. Nine years back would put them at
+  nine years old. Should be five throughout. *(verified directly)*
+- **ch23 L137 vs ch24 L432 — Nadia is hiring and unemployed in the same September.** Chapter 23
+  (June 2023): "by September she's hiring." Chapter 24 (September 2023): "Nadia is behind the counter
+  more hours a week now than she's ever been, since none of the two months of interviews turned into
+  anything worth taking." *(verified directly)*
+- **ch24 L139 — "kavi: room-shaped object."** The line is Sam's, from ch4 L47, and it is his one
+  permitted figurative move; three separate reference files name it as exclusively his, and it is the
+  joke that breaks Chloe's panic attack at their first meeting. Putting the callback in Kavi's mouth
+  spends Sam's only image on the wrong person. *(verified directly)*
+- **ch24 L359 — "its in the same chapter as the four percent thing," said by Kavi.** He didn't make
+  that call; Sam did, and Kavi wasn't in the scene. Already logged as bug #8 in
+  `characters/CHARACTER_SHEETS.md`. *(verified directly)*
 - **ch14 L149** — Hearn's note says the hedge "only asks the reader to answer [the three objections]
   again," but the quoted hedge sentence ("it could be argued that, on balance, this was perhaps not
   the right decision") doesn't restate or reference any of them. The stated mechanism doesn't match
