@@ -245,6 +245,8 @@ Two characters explaining mechanics to each other so the reader receives the inf
 
 ## Rule 23: Emotional Detachment, Render the Physical Correlate, Not the Label
 
+**Read `THEY_ARE_CHILDREN.md` before applying this rule.** Together with rules 24, 26 and 6 it closed every route into the viewpoint character's inner life, and outside readers of chapter 1 concluded she was not human. This rule bans a cliché label. It does not license a scene in which nothing is felt, and it does not license analysis standing in for the feeling. The feeling arrives first, in the body or the behaviour; working the moment out afterwards is how a clever child copes and belongs after it, not instead of it.
+
 Naming a feeling with a physiological cliché signals emotion without letting the reader experience it. "Heart going," "stomach drops," and "cold hands" could describe any anxious moment for any character; they carry no specificity.
 
 **Example:** "Chloe sits there with her heart going."
