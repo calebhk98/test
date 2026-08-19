@@ -86,7 +86,7 @@ The men come out four blocks later, between two parked cars, seven of them in a 
 
 "Phones. Watches. Come on."
 
-Chloe checks the fence, the gap under it, the alley, the loading dock she could be on top of in four seconds. Seven of them, three armed, standing close enough together that a fourth of them could put a hand on the man next to him without reaching. That's the whole read. A group that stands like that has never had to worry about spreading out.
+Chloe's fingers find the four-count against her own leg before she's told them to, and stop again just as fast. Then: the fence, the gap under it, the alley, the loading dock she could be on top of in four seconds. Seven of them, three armed, standing close enough together that a fourth of them could put a hand on the man next to him without reaching. That's the whole read. A group that stands like that has never had to worry about spreading out.
 
 "Hang on," Sam says. "Let me have this one."
 
@@ -120,13 +120,13 @@ Somebody swings and hits the man Sam is holding. Sam lets him go and steps left,
 
 "He's slow on the transitions," Nadia says, chin on her hands.
 
-"He's slow on everything, look at his feet."
+"He's slow on everything, look at his feet." Ruth's other hand has found the edge of the roof and closed around it.
 
 "Why is he doing that with his left."
 
 The second gun comes out of a jacket pocket and doesn't finish coming out. Sam has the wrist before it's straight and the man goes down into the one behind him. On the ground, he strips that one too, throwing the pieces in two directions. The last two try to come around. One takes a step back to make room, and Sam deals with the other one first, and then with him.
 
-"Fifty-one seconds," Ruth says. "One of them never even got there."
+"Fifty-one seconds," Ruth says. "One of them never even got there." Her hand comes off the edge of the roof, the tar still gritty on her palm from holding it.
 
 "Clear," Chloe says, still watching the alley. Nothing has come to the loading dock, and nothing is going to.
 
@@ -134,25 +134,33 @@ The second gun comes out of a jacket pocket and doesn't finish coming out. Sam h
 
 Sam is standing in the middle of them, turning, when they come down off the roof. His knuckles are marked, nothing worse. He finds the third gun on a man who never got to it and takes it apart, then goes around and checks all seven, rolling each one onto his back and watching his chest move before he moves to the next.
 
-Ruth does the one who's out. Airway, then breathing, then a hand under the back of his head. She holds an eyelid open and looks, "Concussion. He's fine," and writes the time on her own forearm in pen, because nobody brought paper down off the roof. Nadia kneels on the man whose shoulder came out of its socket somewhere in the middle of it, finds the angle with two fingers, and puts it back with one motion he's unconscious for the whole of. She's up and checking the next one before he'd have finished making a sound. Chloe does two of them, working down each ribcage with both hands flat, counting under her breath the same way she'd count her own, ribs, nothing floating, and one who's bitten through his lip.
+Ruth does the one who's out. Airway, then breathing, then a hand under the back of his head. She holds an eyelid open and looks, "Concussion. He's fine," and writes the time on her own forearm in pen, because nobody brought paper down off the roof. Nadia kneels on the man whose shoulder came out of its socket somewhere in the middle of it, finds the angle with two fingers, and puts it back with one motion he's unconscious for the whole of. She's up and checking the next one before he'd have finished making a sound. Chloe does two of them, working down each ribcage with both hands flat, counting under her breath the same way she'd count her own, ribs, nothing floating, and one who's bitten through his lip. Her own pulse is still going hard enough to feel in her fingertips the whole time she's checking his.
 
 "Anything?" Sam says.
 
-"No." Ruth caps the pen, the column of numbers already running up past her wrist. "We should talk about whether this is a thing that gets reported."
+"No." Ruth caps the pen, and her hand isn't as steady doing it as her voice is, the column of numbers already running up past her wrist. "We should talk about whether this is a thing that gets reported."
 
 "Reported to who." Nadia is already moving, not fast, just done with the row of them. "Them?" She tips her head at the seven without looking at them again. "A man doesn't call the police to say he got robbed of a robbery."
 
-"I mean us. Four minors, no adult inside four miles, three firearms taken apart on a public street." Ruth stands, wiping her hands on her jeans.
+"I mean us." Ruth stands, wiping her hands on her jeans harder than the dirt on them needs. "If anyone at school finds out we went over that fence tonight, we're not looking at detention. We're looking at being sent home, and not coming back."
 
-"And what's the report," Chloe says, eyes still on the alley out of habit. "We came over a fence for waffles and it went like this. Somebody writes that down and it turns into six more questions before it turns into one answer."
+"Nobody's finding out." Nadia pushes her sleeves up first. "Nobody's calling anyone, and nobody's standing around to see if one of them does either. We're not here."
+
+"And it's not only the fence," Chloe says, eyes still on the alley out of habit. "Somebody writes down what happened tonight, the first real question is how four of us got past our own gate to begin with."
+
+"I don't just mean that either." Ruth looks at the gun pieces still scattered under the parked cars instead of at any of them. "Three of those were real guns."
+
+Sam looks at his own knuckles for a second.
 
 "What about him." Chloe nods at the one Ruth just finished checking, still on his back, breathing slow and even. "If nobody's coming."
 
-"He's breathing on his own and his pupils are even. He wakes up in twenty minutes with a headache and six friends to take him home." Ruth says it the way she reports anything she's already checked twice. "That's not a call-it-in problem. That's a walk-away problem."
+"He's breathing on his own and his pupils are even." Ruth says it fast, still not looking away from him. "He wakes up in twenty minutes with a headache and six friends to take him home."
 
-Sam still hasn't said anything since he came off the man he was holding. "We're just leaving them," he says.
+Chloe watches him too, until his chest goes up again on its own.
 
-"So it doesn't get written down." Nadia's already at the fence line. "Nobody's calling anyone, and nobody's standing around to see if one of them does either. We're not here."
+Sam still hasn't said anything since he came off the man he was holding. "We're just leaving them," he says, not moving toward the fence yet.
+
+"They're not hurt bad." Nadia's hand is already on the fence. "None of them are hurt bad. That's the whole point of doing it the way we did it."
 
 Sam looks at the seven of them a moment longer than the others do, the closest he comes to arguing it, then finds his own way back to the fence and goes over.
 
