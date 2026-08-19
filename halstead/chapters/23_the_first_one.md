@@ -176,7 +176,7 @@ ________________
 By the time she's sitting in her own gown, Chloe already knows what the next two years look like, because she found out in May.
 
 
-She reads the eligibility page for the Foreign Service exam a third time at her desk, to make sure the first two readings said what she thought they said. Twenty to sit it. Twenty-one to be sworn in, once the file behind it clears. She turns eighteen in June.
+She reads the eligibility page for the Foreign Service exam a third time at her desk, to make sure the first two readings said what she thought they said. Twenty to sit it. Twenty-one to be sworn in, once the file behind it clears. She turns eighteen in August.
 
 
 The math is fixed.

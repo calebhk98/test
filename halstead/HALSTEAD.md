@@ -3408,6 +3408,8 @@ In February she offers to read the 1981 paper and mark him on that, but he says 
 
 The December sheet has six names doing well on it and one still blank. The grade at the bottom covers seven students, and it is lower than her grade in anything else that term. She reads it twice in the corridor, folds it into quarters, and puts it in her pocket instead of the bin.
 
+Marek fails the course. The mark goes down as a fail because there is nothing on the sheet to mark, which is the only thing the sheet can do with a blank, and Chloe is the one who writes it. He is at breakfast in January the same as he was in December, in the same year, working through the same building, so whatever a fail is for here, it is not that. What it is instead, whether it goes on anything of his that matters, whether anybody sat him down about it, Chloe never finds out, and she is careful for a long time about how she asks.
+
 ---
 
 Her own mathematics stops being about the answer in the second week of September.
@@ -3934,17 +3936,17 @@ Afterward, Sam catches her at the bottom of the stairs with his collar open.
 
 Sam goes quiet the whole length of the corridor, then says he would like to withdraw about seven of his eleven pages.
 
-When the list goes up on the corkboard in the second floor hall eleven days later, the names run down the left in a bare institutional typeface. There is a column of marks, and beside it a column showing the distance from the pass line. Chloe reads hers twice.
+When the list goes up on the corkboard in the second floor hall eleven days later, the names run down the left in a bare institutional typeface. There is a column of marks, then a column that says PASS or FAIL, and then a column showing how far each mark sits above or below the line. Chloe reads hers twice.
 
-"Four points," she says.
+"Fail," she says. "By four points."
 
 Kavi looks at the board, then at her, then back at the board.
 
-"I got it by nine." His hand comes up over his mouth a half second behind the words. "That was not the thing to say."
+"I passed it by nine." His hand comes up over his mouth a half second behind the words. "That was not the thing to say."
 
 "It's fine." She takes the list in one more time, her hands flat and still at her sides, then steps back from the board to let somebody else in.
 
-Fifty-one in the year pass, thirty-nine do not, and by dinner those thirty-nine have found each other by sight, because that board hangs in a hall everybody walks past four times a day.
+Fifty-one in the year pass and thirty-nine do not, hers among the thirty-nine, and by dinner those thirty-nine have found each other by sight, because that board hangs in a hall everybody walks past four times a day.
 
 She takes her paper to Amberg two days later, who has the mark scheme out on the desk before she gets the door shut.
 
@@ -4718,7 +4720,7 @@ Chloe leaves it there. She always has, with Priya, and this time is no different
 
 By the time she's sitting in her own gown, Chloe already knows what the next two years look like, because she found out in May.
 
-She reads the eligibility page for the Foreign Service exam a third time at her desk, to make sure the first two readings said what she thought they said. Twenty to sit it. Twenty-one to be sworn in, once the file behind it clears. She turns eighteen in June.
+She reads the eligibility page for the Foreign Service exam a third time at her desk, to make sure the first two readings said what she thought they said. Twenty to sit it. Twenty-one to be sworn in, once the file behind it clears. She turns eighteen in August.
 
 The math is fixed.
 
@@ -5326,9 +5328,9 @@ There's a silence.
 
 ---
 
-What gets written up that evening and forwarded twice by Friday turns Sam's own words into something else.
+What gets written up that evening and forwarded twice by Friday turns Sam's own words into something else. The captain files it as a concern about the soldier rather than a recommendation for him.
 
-It's four paragraphs, and the fourth one contains the phrase appears to have received specialised instruction from an unidentified source, and by the following Thursday it is being read by a woman three levels above the captain.
+It's four paragraphs. The first three describe what he did on the range. The fourth asks where a nineteen-year-old private learned to do it, contains the phrase appears to have received specialised instruction from an unidentified source, and recommends that the question be answered before he is put anywhere interesting. By the following Thursday it is being read by a woman three levels above the captain, in an office that exists to answer exactly that kind of question.
 
 None of it reaches Sam. Sam is having a great month.
 
@@ -5584,7 +5586,7 @@ She says it anyway. It's true.
 
 The clearance comes through in the autumn.
 
-She starts in January. She's twenty-one in June.
+She starts in January. She's twenty-one in August.
 
 ---
 
@@ -5836,7 +5838,7 @@ And there's an incident report from six years back.
 
 Four students left campus at night without permission, walked into town, sat in a Waffle House for two hours, and afterwards were in the car park pushing each other around in a shopping trolley.
 
-Seven men. Three firearms.
+Seven men come across the car park to rob them. Three of the seven are carrying firearms.
 
 None of the seven agrees with the others about the order of it. They agree it was fast, that one of the four did all of it, and that the other three were not where they had been. Two of them independently report being told, during or just after, that this had been sloppy and needed more practice.
 

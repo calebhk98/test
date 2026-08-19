@@ -69,10 +69,9 @@ ________________
 
 
 
-What gets written up that evening and forwarded twice by Friday turns Sam's own words into something else.
+What gets written up that evening and forwarded twice by Friday turns Sam's own words into something else. The captain files it as a concern about the soldier rather than a recommendation for him.
 
-
-It's four paragraphs, and the fourth one contains the phrase appears to have received specialised instruction from an unidentified source, and by the following Thursday it is being read by a woman three levels above the captain.
+It's four paragraphs. The first three describe what he did on the range. The fourth asks where a nineteen-year-old private learned to do it, contains the phrase appears to have received specialised instruction from an unidentified source, and recommends that the question be answered before he is put anywhere interesting. By the following Thursday it is being read by a woman three levels above the captain, in an office that exists to answer exactly that kind of question.
 
 
 None of it reaches Sam. Sam is having a great month.

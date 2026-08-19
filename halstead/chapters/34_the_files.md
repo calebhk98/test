@@ -17,7 +17,7 @@ And there's an incident report from six years back.
 Four students left campus at night without permission, walked into town, sat in a Waffle House for two hours, and afterwards were in the car park pushing each other around in a shopping trolley.
 
 
-Seven men. Three firearms.
+Seven men come across the car park to rob them. Three of the seven are carrying firearms.
 
 
 None of the seven agrees with the others about the order of it. They agree it was fast, that one of the four did all of it, and that the other three were not where they had been. Two of them independently report being told, during or just after, that this had been sloppy and needed more practice.

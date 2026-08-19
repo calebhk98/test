@@ -95,7 +95,7 @@ She says it anyway. It's true.
 The clearance comes through in the autumn.
 
 
-She starts in January. She's twenty-one in June.
+She starts in January. She's twenty-one in August.
 
 
 ________________
