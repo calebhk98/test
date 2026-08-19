@@ -50,14 +50,33 @@ cannot rot.
 
 ```
 carmon/
-  cli.py          config.py       db.py           digest.py
-  marketcheck.py  nhtsa.py        fueleconomy.py  notify.py
-  market.py       pipeline.py     quota.py        scoring.py
-  settings.py     sources.py      demo.py         webapp.py
-  mcp_server.py
-  scrapers/       base.py (robots, caps, no-evasion) + seven adapters
+  cli.py            argument wiring only; every command body lives in commands/
+  commands/         run · market · scrape · reliability · demo · system, plus common.py
+  pipeline.py       the daily run: fetch → filter → enrich → score → store → market
+  scrape_runner.py  running the optional scrapers and reference sources
+  db/               schema · listings · usage · enrichment · scrapelog
+  market.py         comparables, the least-squares fit, grading, trends
+  scoring.py        the 11 deterministic score components
+  quota.py          call pacing against how much of the month has elapsed
+  settings.py       safe editing of config.json and .env
+  marketcheck.py    nhtsa.py   fueleconomy.py     the three data sources
+  digest.py         notify.py                     the daily report and Discord delivery
+  sources.py        result_shapes.py  sqlfilters.py  demo.py  config.py
+  web/              routes · api · pages · render · forms  (behind a webapp façade)
+  mcp_server/       protocol · schema · tools · handlers · resources · server
+  scrapers/         base.py (robots, caps, no evasion) + parsing.py + seven adapters
 config.json  requirements.txt  SPEC.md  SOURCES.md  docs/  deploy/  tests/
 ```
+
+Two conventions worth knowing before changing anything here:
+
+* **Façades keep import paths stable.** `carmon/webapp/` and `carmon/mcp_server/` are packages
+  that re-export the names their old single-file versions had, so `from carmon.webapp import
+  serve` and `python3 -m carmon.mcp_server` still work. Same for `carmon/db/`.
+* **Shared shapes live in one place.** `result_shapes.py` holds the data shapes the web and MCP
+  layers both return; `sqlfilters.py` holds the "WHERE clause from optional filters" builder
+  that the database and market queries share. Layer-specific concerns — HTTP status codes and
+  escaping, MCP tool errors and content envelopes — deliberately stay in their own layer.
 
 ---
 
