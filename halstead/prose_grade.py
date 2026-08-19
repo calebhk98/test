@@ -64,6 +64,17 @@ RELATIVE = r"\b(who|whom|whose|which|that)\b"
 # were narration says the writing is simple when what it is is a chat log.
 TRANSCRIPT = re.compile(r"^[a-z][a-z0-9_]{1,9}: ")
 
+# The narrative negative: a sentence whose beat is an action not taken or a
+# reaction that did not happen. "He doesn't look up." "Nobody says anything."
+# "She reads it twice and doesn't add to the thread." One of these is a device.
+# One in six sentences is a tic, and the book has been running above every book
+# in the corpus on it.
+NEGATIVE = re.compile(
+    r"\b(?:doesn't|does not|didn't|did not|don't|do not|isn't|is not|wasn't"
+    r"|was not|aren't|weren't|never)\s+[a-z]"
+    r"|\b(?:nobody|no one|nothing|none of them)\b"
+    r"|\bwithout \w+ing\b", re.I)
+
 FRONTLOAD = re.compile(
     r"""^["']?(?:Because|Since|While|Though|Although|When|Whenever|As|After"""
     r"""|Before|If|Once|Until|Unless|Whether|Where)\b[^,.!?]{3,60},""")
@@ -106,6 +117,7 @@ MONITOR = {
     "front":   "sentences opening on a subordinate clause %",
     "and2":    'sentences with two or more "and" %',
     "andrate": '"and" as a share of all words %',
+    "negative": "sentences whose beat is a negative %",
 }
 
 
@@ -169,6 +181,7 @@ def measure(text, floor=40):
             para_s.append(len(n))
             para_w.append(len(words(p)))
     and2 = sum(1 for s in ss if len(re.findall(r"\band\b", s.lower())) >= 2)
+    negative = sum(1 for s in ss if NEGATIVE.search(s))
 
     return {
         "fk": 0.39 * wps + 11.8 * (sum(syllables(x) for x in w) / n_w) - 15.59,
@@ -191,6 +204,7 @@ def measure(text, floor=40):
         "wlen": st.fmean([len(x) for x in w]),
         "front": 100 * sum(1 for s in ss if FRONTLOAD.match(s.strip())) / n_s,
         "and2": 100 * and2 / n_s,
+        "negative": 100 * negative / n_s,
         "andrate": 100 * lw.count("and") / n_w,
         "_words": n_w,
         "_sentences": n_s,
@@ -299,7 +313,7 @@ SUMMARY_COLS = [
     ("fk", "F-K"), ("commas", "commas"), ("subord", "subord"), ("relcl", "relcl"),
     ("simple", "simple"), ("u10", "u10"), ("b2035", "20-35"),
     ("shortruns", "runs"), ("front", "front"), ("and2", "and2"),
-    ("andrate", "and%"), ("_transcript", "chat%"),
+    ("andrate", "and%"), ("negative", "neg%"), ("_transcript", "chat%"),
 ]
 
 

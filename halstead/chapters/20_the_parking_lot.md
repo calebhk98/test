@@ -86,7 +86,7 @@ The men come out four blocks later, between two parked cars, seven of them in a 
 
 "Phones. Watches. Come on."
 
-Chloe's fingers find the four-count against her own leg before she's told them to, and stop again just as fast. Then: the fence, the gap under it, the alley, the loading dock she could be on top of in four seconds. Seven of them, three armed, standing close enough together that a fourth of them could put a hand on the man next to him without reaching. That's the whole read. A group that stands like that has never had to worry about spreading out.
+Chloe's read comes in the order it always does. The fence, the gap under it, the alley, the loading dock she could be on top of in four seconds. Seven of them, three armed, standing close enough together that a fourth of them could put a hand on the man next to him without reaching. That's the whole read. A group that stands like that has never had to worry about spreading out.
 
 "Hang on," Sam says. "Let me have this one."
 
@@ -138,7 +138,7 @@ Ruth does the one who's out. Airway, then breathing, then a hand under the back 
 
 "Anything?" Sam says.
 
-"No." Ruth caps the pen, and her hand isn't as steady doing it as her voice is, the column of numbers already running up past her wrist. "We should talk about whether this is a thing that gets reported."
+"No." Ruth caps the pen, the column of numbers already running up past her wrist. "We should talk about whether this is a thing that gets reported."
 
 "Reported to who." Nadia is already moving, not fast, just done with the row of them. "Them?" She tips her head at the seven without looking at them again. "A man doesn't call the police to say he got robbed of a robbery."
 
@@ -166,15 +166,17 @@ Sam looks at the seven of them a moment longer than the others do, the closest h
 
 They leave.
 
+Through the window of the diner the waitress is standing at the till with the phone in her hand, watching them go over the fence, and she has not dialled it yet. She is fifty years old and she has been on her feet since four, and what is on her face is the thing none of the four of them are wearing. Chloe sees it going over and files it with the other things about the outside that do not line up, and is over the fence and gone before she has got anywhere with it.
+
 ---
 
-The road back is the same road, colder now, the sodium light gone once they're far enough from the stores. Chloe looks back once, then again a block later, before the empty road behind them stops needing it. Sam's hands keep closing into fists and opening again, empty each time.
+The road back is the same road, colder now, the sodium light gone once they're far enough from the stores. Chloe looks back once out of habit and then walks the rest of it facing forward. Sam is still working his hands, wanting something to do with them.
 
 "I got nothing out of that."
 
 "You got fifty-one seconds against seven."
 
-"Three of them had guns, Ruth, which is usually the part that's supposed to matter." It comes out louder than the empty street needs.
+"Three of them had guns, Ruth, which is usually the part that's supposed to matter."
 
 "Having a gun isn't a skill." Ruth's already talking over the end of his sentence. "They stood in a group and let you walk in, and the one at the back made room for you. You could have done that at thirteen."
 
@@ -194,7 +196,7 @@ Ruth kicks a bottle cap off the curb without breaking stride and watches where i
 
 "She'd take me apart before I got a hand up."
 
-"She'd take you apart," Nadia agrees. Sam laughs longer at that than it's actually worth, both hands finally still in his pockets. Ruth glances at him and doesn't say anything about it, for once. They cross the last empty intersection without checking for cars, four sets of footsteps falling into the same rhythm on their own, faster than the walk down had been. They discuss it the whole way home.
+"She'd take you apart," Nadia agrees. Sam laughs at that most of the way to the corner, and Ruth lets him have it. They cross the last empty intersection at a walk, four sets of footsteps falling into the same rhythm on their own, faster than the walk down had been. They discuss it the whole way home.
 
 They're back over the fence a few minutes past two, Ruth's copied badge back in the maintenance supervisor's jacket before he's noticed it was gone, Chloe's camera loop already unwinding itself toward normal. The corridor is empty and quiet the whole way to their own doors.
 

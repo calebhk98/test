@@ -123,3 +123,83 @@ has to be a teenager's.
 - The plot, the events and the chronology are untouched by this work.
 - The other cast members keep their signatures. This is a register correction, not
   a personality rewrite.
+
+---
+
+# The corrections to this document
+
+Everything above was applied across twenty chapters and produced three faults.
+They are recorded here because the same instructions will otherwise produce them
+again.
+
+## 1. Negative space became the default sentence
+
+Told to show a feeling without naming it, agents reached for the same shape every
+time: the thing the character did not do. He doesn't look up. Nobody says
+anything. She reads it twice and doesn't add to the thread. He doesn't put his
+hand up again. She isn't hungry.
+
+It is a real device and the book had already overused it before this pass. The
+measurement, now printed on every run under `monitored, not graded`:
+
+| | negative-beat rate |
+| :-- | --: |
+| corpus median, 23 books | 7.8% |
+| corpus highest of 23 | 17.5% |
+| this book before the pass | 15.5% |
+| this book after the pass | 17.8% |
+
+Nearly one sentence in six, above every book in the comparison set. Chapter 24
+runs at 42%, chapter 25 at 33%, chapter 33 at 33%, chapter 10 at 26%.
+
+**The budget: at most one per chapter, and the book should be aiming nearer one
+every few chapters.** Above that it stops reading as restraint and starts reading
+as a verbal tic, which is what rule 32 says about every other tic in the book.
+
+What to use instead, since the point of the original instruction still stands: a
+thing the character *does*. Not "he doesn't put his hand up again" but what his
+hands do instead. Not "nobody says anything" but what the next person says. A
+positive action carries the same withholding and does not announce itself as a
+withholding.
+
+## 2. Explaining the thing that was just shown
+
+The second fault is rule 6 arriving in a new costume. Having staged something,
+the prose then tells the reader what it meant: "Nobody explains to her afterward
+that she got the length wrong the first time. Nobody has to." "The chat is the
+one place all of them are still in the same room."
+
+The reader can read. Stage the thing and stop. If the meaning is not reachable
+from the staging, the staging is wrong and the sentence of explanation will not
+rescue it.
+
+## 3. Fear was applied at every age, and it should decay
+
+This is the correction with the most reach, and the original document got it
+wrong by treating "they are children" as one setting for the whole book.
+
+They are children, and they are also children who fight daily, stand the watch,
+and have done both for years. **Fear and adrenaline burn out of them as the years
+at the school accumulate.** A twelve-year-old four years in is frightened of armed
+men in the building at four in the morning. A sixteen-year-old eight years in,
+mugged in a parking lot, is not frightened of a mugging, because she has been in
+harder rooms every week since she was nine. She is competent, and the competence
+is earned, and it is not a defect in the writing.
+
+So the fear-and-adrenaline additions made to chapter 20 in this pass are wrong and
+are being reduced. What stays from that work is the *reasoning*: they do not call
+anyone because they broke a school rule and will be sent home, which is a
+teenager's reason and not an operative's.
+
+What replaces fear at the older ages is not nothing, and this is the part worth
+writing well. It is the strangeness of not being frightened. Sometimes they notice
+it about themselves and cannot place it. More often they do not notice, and the
+adults and outsiders around them do, and the reader sees it over their shoulders.
+That gap is the interesting thing about these characters at sixteen, and it is not
+available at eight.
+
+## What did not change
+
+They are still 160-plus. Nothing here asks for a less capable child. The dinner
+scene in chapter 1 is a genius six-year-old and a six-year-old at once, and that
+remains the target. Making them emotional was never meant to make them ordinary.
