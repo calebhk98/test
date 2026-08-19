@@ -196,6 +196,8 @@ Chloe tells her grandmother about the arrows and gets to draw the sixty degrees 
 
 "That's better, then." Her grandmother settles back into the chair with her tea. "It sounds like you just want the practice."
 
+Chloe folds the envelope shut along the line she drew and doesn't hand it back.
+
 ---
 
 The Watch on the eleventh of April goes up on the board on the Monday and it says the whole school.

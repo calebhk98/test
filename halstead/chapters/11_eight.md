@@ -96,7 +96,7 @@ Her grandmother comes on a Sunday. In the front room Chloe is explaining the bri
 
 "I know," her mother says.
 
-Chloe gets the water and goes back through and finishes about the bridge, which held eleven pounds, second in the room.
+Chloe stands against the wall by the door with the glass in both hands and tugs the front of her shirt loose from her shorts once, then lets it go. She goes back through and finishes about the bridge, which held eleven pounds, second in the room, and eats half of what's on her plate at dinner, and says she isn't hungry.
 
 ---
 
@@ -202,4 +202,4 @@ On a Tuesday in April the four of them end up on the grass behind the science bu
 
 Ruth gets four in a row above the bracket, then is insufferable about it until dinner. Sam eats two of the apples and takes the bag back to his room, where it stays under the bed until the middle of May, at which point three people on the corridor make it his problem. The bracket rule survives into the summer and gets applied to a stairwell, a laundry chute, and one of the goals on the pitch.
 
-In June Chloe pulls out the notebook where she wrote the four subjects she was behind in, back in her first April. She is reading ahead in three of them, and the dates in the margins say she has been since about Christmas. She had stopped checking for it in January, but the notebook says January is when it turned. She adds a line at the bottom with the date on it, and puts the notebook in the drawer, and goes down to dinner.
+In June Chloe pulls out the notebook where she wrote the four subjects she was behind in, back in her first April. She is reading ahead in three of them, and the dates in the margins say she has been since about Christmas. She had stopped checking for it in January, but the notebook says January is when it turned. She reads the line back twice before she adds a new one at the bottom with the date on it, then puts the notebook in the drawer and goes down to dinner two steps at a time.
