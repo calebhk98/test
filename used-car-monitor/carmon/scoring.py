@@ -51,6 +51,9 @@ DEFAULT_WEIGHTS: Dict[str, float] = {
     "complaints_full_penalty_at": 600.0,
     "recall_penalty_each": -0.15,
     "recall_penalty_floor": -0.75,
+    "market_bonus_max": 1.5,
+    "market_full_bonus_pct": 12.0,
+    "market_min_sample": 6.0,
 }
 
 
@@ -351,6 +354,40 @@ def score_listing(listing: Dict[str, Any], scoring_config: Dict[str, Any] | None
             + ("; check the VIN against NHTSA to see what is still unrepaired" if recalls else "")
         )
         components.append(ScoreComponent("NHTSA recalls", value, detail))
+
+    # 11. Price versus the local market -------------------------------------
+    delta_pct = listing.get("market_delta_pct")
+    sample = listing.get("market_sample_size") or 0
+    if delta_pct is None:
+        components.append(
+            ScoreComponent("vs market", 0.0, "no market comparison yet (needs comparable listings)")
+        )
+    elif sample < weights["market_min_sample"]:
+        components.append(
+            ScoreComponent(
+                "vs market", 0.0,
+                f"only {int(sample)} comparable listing(s) — too thin to score, "
+                f"needs {int(weights['market_min_sample'])}",
+            )
+        )
+    else:
+        delta_pct = float(delta_pct)
+        full_at = max(1.0, weights["market_full_bonus_pct"])
+        if mode == "step":
+            value = weights["market_bonus_max"] if delta_pct <= -5 else (
+                -weights["market_bonus_max"] if delta_pct >= 5 else 0.0
+            )
+        else:
+            value = weights["market_bonus_max"] * _clamp(-delta_pct / full_at, -1.0, 1.0)
+        direction = "below" if delta_pct < 0 else "above"
+        detail = (
+            f"{abs(delta_pct):.1f}% {direction} the expected price for this model, mileage and year "
+            f"({int(sample)} comparables); full ±{weights['market_bonus_max']:.1f} at {full_at:.0f}%"
+        )
+        grade = listing.get("market_grade")
+        if grade:
+            detail = f"{grade} — " + detail
+        components.append(ScoreComponent("vs market", value, detail))
 
     total = sum(component.value for component in components)
     return ScoreResult(score=round(total, 2), mode=mode, components=components)

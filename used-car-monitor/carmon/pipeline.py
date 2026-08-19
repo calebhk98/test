@@ -2,13 +2,14 @@
 
 from __future__ import annotations
 
+import json
 import logging
 import sqlite3
 from dataclasses import dataclass, field
 from datetime import date, timedelta
 from typing import Any, Dict, Iterable, List, Optional
 
-from . import db, demo as demo_module, fueleconomy, nhtsa, quota
+from . import db, demo as demo_module, fueleconomy, market, nhtsa, quota
 from .config import Config, get_secret
 from .fueleconomy import combined_from_city_highway
 from .marketcheck import MarketCheckClient, MarketCheckError, QuotaExceeded
@@ -32,6 +33,7 @@ class RunResult:
     filter_reasons: Dict[str, int] = field(default_factory=dict)
     enrichment: Dict[str, Any] = field(default_factory=dict)
     sweep: Dict[str, Any] = field(default_factory=dict)
+    market: Dict[str, Any] = field(default_factory=dict)
 
     def as_dict(self) -> Dict[str, Any]:
         return {
@@ -48,6 +50,7 @@ class RunResult:
             "filter_reasons": self.filter_reasons,
             "enrichment": self.enrichment,
             "sweep": self.sweep,
+            "market": self.market,
         }
 
 
@@ -260,6 +263,13 @@ def run_daily(
 
         if not dry_run:
             db.mark_inactive_before(conn, run_date)
+            # Market comparison runs last: it needs every listing from this run in place
+            # before it can say what "the market" looks like.
+            try:
+                result.market = refresh_market_values(config, conn)
+            except Exception as exc:  # never let analysis sink a successful fetch
+                LOG.warning("Market refresh skipped: %s", exc)
+                result.errors.append(f"market refresh skipped: {exc}")
 
     except (MarketCheckError, QuotaExceeded) as exc:
         result.errors.append(str(exc))
@@ -293,7 +303,7 @@ def rescore_all(config: Config, conn: Optional[sqlite3.Connection] = None) -> in
         result = score_listing(listing, config.scoring)
         conn.execute(
             "UPDATE listings SET score = ?, score_breakdown = ? WHERE vin = ?",
-            (result.score, __import__("json").dumps(result.as_dict()["components"]), listing["vin"]),
+            (result.score, json.dumps(result.as_dict()["components"]), listing["vin"]),
         )
         count += 1
     conn.commit()
@@ -447,3 +457,55 @@ def run_month_end_sweep(
     report["ran"] = True
     report["calls_used"] = client.calls_made - start_calls
     return report
+
+
+# --- market comparison --------------------------------------------------
+def refresh_market_values(
+    config: Config, conn: Optional[sqlite3.Connection] = None, active_only: bool = True
+) -> Dict[str, Any]:
+    """Appraise every stored listing against the local market and rescore with the result.
+
+    Runs after the fetch, because "the market" is defined by the listings that were just
+    stored. Costs no API calls — it is arithmetic over the local database.
+    """
+    owns_conn = conn is None
+    conn = conn or db.init_db(config.db_path)
+    where = "WHERE active = 1 AND source != 'demo'" if active_only else "WHERE source != 'demo'"
+    rows = conn.execute(f"SELECT * FROM listings {where}").fetchall()
+
+    graded, thin = 0, 0
+    deltas: List[float] = []
+    for row in rows:
+        listing = db.row_to_dict(row)
+        appraisal = market.appraise(conn, listing, config).as_dict()
+        db.save_appraisal(conn, listing["vin"], appraisal, commit=False)
+        if appraisal.get("delta_pct") is not None:
+            deltas.append(float(appraisal["delta_pct"]))
+            if appraisal.get("sample_size", 0) >= int(config.data.get("market", {}).get("min_sample_for_grade", 6)):
+                graded += 1
+            else:
+                thin += 1
+
+        listing.update({
+            "market_delta_pct": appraisal.get("delta_pct"),
+            "market_sample_size": appraisal.get("sample_size"),
+            "market_grade": appraisal.get("grade"),
+        })
+        attach_cached_enrichment(conn, listing)
+        result = score_listing(listing, config.scoring)
+        conn.execute(
+            "UPDATE listings SET score = ?, score_breakdown = ? WHERE vin = ?",
+            (result.score, json.dumps(result.as_dict()["components"]), listing["vin"]),
+        )
+    conn.commit()
+
+    summary = {
+        "listings_appraised": len(rows),
+        "graded": graded,
+        "thin_sample": thin,
+        "median_delta_pct": round(sorted(deltas)[len(deltas) // 2], 1) if deltas else None,
+        "below_market": sum(1 for delta in deltas if delta < -5),
+    }
+    if owns_conn:
+        conn.close()
+    return summary

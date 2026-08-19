@@ -126,8 +126,16 @@
       "complaints_no_penalty_at": 100,
       "complaints_full_penalty_at": 600,
       "recall_penalty_each": -0.15,
-      "recall_penalty_floor": -0.75
+      "recall_penalty_floor": -0.75,
+      "market_bonus_max": 1.5,
+      "market_full_bonus_pct": 12,
+      "market_min_sample": 6
     }
+  },
+  "market": {
+    "recency_half_life_days": 45,
+    "trend_months": 6,
+    "min_sample_for_grade": 6
   },
   "api": {
     "base_url": "https://api.marketcheck.com/v2/search/car/active",

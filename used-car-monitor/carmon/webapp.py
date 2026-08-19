@@ -29,6 +29,7 @@ from urllib.parse import parse_qs, urlsplit
 import carmon
 from . import db
 from . import demo
+from . import market
 from . import quota
 from .config import Config, get_secret, load_env
 from .nhtsa import recall_lookup_url, vin_recall_url
@@ -208,6 +209,264 @@ _NHTSA_VOLUME_CAVEAT = (
     "naturally accumulates more of them — treat the recurring components as the stronger signal."
 )
 
+# --------------------------------------------------------------------------
+# market appraisals -- shared between /api/appraise, /api/deals, /market,
+# /appraise and the listing detail page's "Versus the market" section.
+# --------------------------------------------------------------------------
+
+# Grade badges reuse the same good/mid/bad palette as score badges so they read
+# consistently in both themes without a new color system.
+_GRADE_CLASSES = {
+    "great deal": "good",
+    "good deal": "good",
+    "fair price": "mid",
+    "above market": "bad",
+    "well above market": "bad",
+}
+
+# The single caveat every appraisal-bearing page must carry: this is a listings-price
+# comparison, not a valuation of the specific car in front of you.
+_CONDITION_BLIND_NOTE = (
+    "This compares asking price against other listings' mileage and model year only -- it "
+    "is not an appraisal of this car's condition, and is blind to trim, options, accident "
+    "history and title status."
+)
+
+
+def _grade_class(grade: Optional[str]) -> str:
+    return _GRADE_CLASSES.get(grade, "neutral")
+
+
+def _grade_badge(appraisal: Dict[str, Any]) -> str:
+    grade = appraisal.get("grade")
+    if not grade:
+        return '<span class="badge neutral">—</span>'
+    icon = appraisal.get("grade_icon") or ""
+    return f'<span class="badge {_grade_class(grade)}">{_e(icon)} {_e(grade)}</span>'
+
+
+def _basis_warning(appraisal: Dict[str, Any]) -> str:
+    """Visible warning whenever the comparables are not actually the same model."""
+    if appraisal.get("basis_level") in ("make", "all"):
+        return (
+            f'<p class="note">⚠️ Comparing against {_e(appraisal.get("basis"))} -- not the '
+            "same model, so read this as a rough bearing rather than a grade.</p>"
+        )
+    return ""
+
+
+def _appraisal_block(appraisal: Optional[Dict[str, Any]]) -> str:
+    """Full appraisal detail: grade, sample/confidence, comparables, and every caveat note
+    visible (never hidden) -- used on the /appraise page and the listing detail page, each
+    of which shows exactly one appraisal, so the condition-blind note appears once."""
+    if not appraisal:
+        return '<div class="empty">Not enough comparable data stored yet for a market read.</div>'
+    delta, delta_pct = appraisal.get("delta"), appraisal.get("delta_pct")
+    delta_str = f"{delta:+,.0f} ({delta_pct:+.1f}%)" if delta is not None and delta_pct is not None else "—"
+    percentile = appraisal.get("percentile")
+    percentile_str = f"Cheaper than {100 - percentile:.0f}% of comparables" if percentile is not None else "—"
+    comp_range = appraisal.get("comparable_range")
+    range_str = f"{_fmt_money(comp_range[0])} – {_fmt_money(comp_range[1])}" if comp_range else "—"
+    per_mile = appraisal.get("dollars_per_1k_miles")
+    per_mile_str = f"${per_mile:,.0f}" if per_mile is not None else "—"
+    kv_rows = [
+        ("Grade", _grade_badge(appraisal)),
+        ("Expected price", _fmt_money(appraisal.get("expected_price"))),
+        ("Actual price", _fmt_money(appraisal.get("actual_price"))),
+        ("Delta", delta_str),
+        ("Percentile", percentile_str),
+        ("Comparable median", _fmt_money(appraisal.get("comparable_median"))),
+        ("Comparable range", range_str),
+        ("$ / 1,000 miles", per_mile_str),
+        ("Sample size / confidence", f"{_e(appraisal.get('sample_size'))} listings &middot; {_e(appraisal.get('confidence'))} confidence"),
+        ("Basis", _e(appraisal.get("basis"))),
+        ("Method", _e(appraisal.get("method"))),
+    ]
+    kv_html = "".join(f"<tr><td>{_e(label)}</td><td>{value}</td></tr>" for label, value in kv_rows)
+    notes_html = "".join(f'<p class="note">{_e(n)}</p>' for n in appraisal.get("notes") or [])
+    return f"""<p class="note">{_e(_CONDITION_BLIND_NOTE)}</p>
+{_basis_warning(appraisal)}
+<table class="kv">{kv_html}</table>
+{notes_html}"""
+
+
+def _mileage_bucket(mileage: Any) -> Optional[int]:
+    try:
+        return int(mileage) // 5000
+    except (TypeError, ValueError):
+        return None
+
+
+def _row_appraisal(
+    conn: Any, config: Any, cache: Dict[Tuple[Any, Any, Any, Optional[int]], Any], item: Dict[str, Any]
+) -> Optional[Dict[str, Any]]:
+    """Compact per-row market read for the dashboard's 'vs market' column.
+
+    Appraising every row on a 200-row page would refit the comparables regression 200
+    times over. The price-independent part of an estimate (expected price, sample size,
+    confidence, basis) only depends on make/model/year and roughly how many miles are on
+    the car, so it is cached per request keyed on a 5,000-mile bucket; each row's own price
+    is then used only to compute that row's own delta and grade against the shared estimate.
+    """
+    make, model, year, mileage = item.get("make"), item.get("model"), item.get("year"), item.get("mileage")
+    price = item.get("price_current")
+    if not make or not model or mileage is None or not price:
+        return None
+    key = (make, model, year, _mileage_bucket(mileage))
+    if key not in cache:
+        cache[key] = market.appraise(conn, {"make": make, "model": model, "year": year, "mileage": mileage}, config)
+    base = cache[key]
+    if base.expected_price is None:
+        return None
+    delta_pct = 100.0 * (float(price) - base.expected_price) / base.expected_price
+    grade, icon = next((label, ic) for threshold, label, ic in market.DEAL_BANDS if delta_pct <= threshold)
+    return {
+        "delta_pct": delta_pct,
+        "grade": grade,
+        "grade_icon": icon,
+        "sample_size": base.sample_size,
+        "confidence": base.confidence,
+        "basis_level": base.basis_level,
+    }
+
+
+def _vs_market_cell(conn: Any, config: Any, cache: Dict[Any, Any], item: Dict[str, Any]) -> str:
+    appraisal = _row_appraisal(conn, config, cache, item)
+    if appraisal is None:
+        return "<td>—</td>"
+    cls = _grade_class(appraisal["grade"])
+    sign = f"{appraisal['delta_pct']:+.1f}%"
+    warn = ""
+    if appraisal["basis_level"] in ("make", "all"):
+        warn = (
+            ' <span title="Comparing against a different model -- thin comparable data" '
+            'aria-label="different-model comparison">⚠️</span>'
+        )
+    return (
+        "<td>"
+        f'<span class="badge {cls}" title="{_e(appraisal["grade"])}">{sign}</span>{warn}'
+        f'<div class="mv-sample">n={_e(appraisal["sample_size"])} &middot; {_e(appraisal["confidence"])}</div>'
+        "</td>"
+    )
+
+
+def _trend_chart_svg(trend: List[Dict[str, Any]]) -> str:
+    """Inline SVG line chart of median price by month -- no chart library, drawn by hand.
+
+    Colors come from CSS classes tied to the page's --accent/--muted/--border variables
+    (see _BASE_CSS), so the chart stays readable in both light and dark themes.
+    """
+    prices = [t["median_price"] for t in trend if t.get("median_price") is not None]
+    if len(prices) < 1:
+        return '<div class="empty">No monthly price history yet -- this fills in as the daily job runs.</div>'
+
+    width, height = 640, 220
+    pad_left, pad_right, pad_top, pad_bottom = 60, 16, 20, 30
+    plot_w, plot_h = width - pad_left - pad_right, height - pad_top - pad_bottom
+    lo, hi = min(prices), max(prices)
+    if lo == hi:
+        lo, hi = lo - 1, hi + 1
+    n = len(trend)
+
+    def x_at(i: int) -> float:
+        return pad_left if n == 1 else pad_left + plot_w * i / (n - 1)
+
+    def y_at(v: float) -> float:
+        return pad_top + plot_h * (1 - (v - lo) / (hi - lo))
+
+    points = [(x_at(i), y_at(t["median_price"])) for i, t in enumerate(trend)]
+    poly = " ".join(f"{x:.1f},{y:.1f}" for x, y in points)
+
+    dots, labels = [], []
+    for t, (x, y) in zip(trend, points):
+        tooltip = f"{_e(t['month'])}: {_fmt_money(t['median_price'])} ({_e(t['observations'])} observations)"
+        dots.append(f'<circle class="chart-point" cx="{x:.1f}" cy="{y:.1f}" r="3.5"><title>{tooltip}</title></circle>')
+        labels.append(
+            f'<text class="chart-label" x="{x:.1f}" y="{height - 8:.1f}" text-anchor="middle">{_e(t["month"][5:])}</text>'
+        )
+
+    baseline_y = pad_top + plot_h
+    axis = f'<line class="chart-axis" x1="{pad_left}" y1="{baseline_y:.1f}" x2="{width - pad_right}" y2="{baseline_y:.1f}" />'
+    hi_label = f'<text class="chart-label" x="{pad_left - 8}" y="{pad_top + 4}" text-anchor="end">{_fmt_money(round(hi))}</text>'
+    lo_label = f'<text class="chart-label" x="{pad_left - 8}" y="{baseline_y:.1f}" text-anchor="end">{_fmt_money(round(lo))}</text>'
+    line = f'<polyline class="chart-line" points="{poly}" fill="none" />' if n > 1 else ""
+
+    return f"""<svg class="trend-chart" viewBox="0 0 {width} {height}" role="img" aria-label="Median listing price by month">
+  {axis}
+  {line}
+  {''.join(dots)}
+  {''.join(labels)}
+  {hi_label}
+  {lo_label}
+</svg>"""
+
+
+def _trend_row(t: Dict[str, Any]) -> str:
+    change_pct = t.get("change_pct")
+    change_str = f"{change_pct:+.1f}%" if change_pct is not None else "—"
+    return (
+        "<tr>"
+        f"<td>{_e(t['month'])}</td>"
+        f"<td>{_e(t['observations'])}</td>"
+        f"<td>{_e(t['cars'])}</td>"
+        f"<td>{_fmt_money(t['median_price'])}</td>"
+        f"<td>{_fmt_money(t['mean_price'])}</td>"
+        f"<td>{_fmt_money(t['min_price'])}</td>"
+        f"<td>{_fmt_money(t['max_price'])}</td>"
+        f"<td>{_fmt_num(t.get('median_mileage'))}</td>"
+        f"<td>{change_str}</td>"
+        "</tr>"
+    )
+
+
+def _model_row(m: Dict[str, Any]) -> str:
+    dom = m.get("days_on_market") or {}
+    cuts = m.get("price_cuts") or {}
+    median_days = dom.get("median_days")
+    cut_share = cuts.get("cut_share_pct")
+    r2 = m.get("r_squared")
+    per_mile = m.get("dollars_per_1k_miles")
+    per_mile_str = f"${per_mile:,.0f}" if per_mile is not None else "—"
+    range_str = f"{_fmt_money(m['min_price'])}&ndash;{_fmt_money(m['max_price'])}"
+    r2_str = f"{r2:.2f}" if r2 is not None else "—"
+    days_str = f"{median_days:.0f}" if median_days is not None else "—"
+    cut_str = f"{cut_share:.0f}%" if cut_share is not None else "—"
+    return (
+        "<tr>"
+        f"<td>{_e(m['make'])} {_e(m['model'])}</td>"
+        f"<td>{_e(m['sample_size'])}</td>"
+        f"<td>{_fmt_money(m['median_price'])}</td>"
+        f"<td>{range_str}</td>"
+        f"<td>{_fmt_num(m['median_mileage'])}</td>"
+        f"<td>{per_mile_str}</td>"
+        f"<td>{r2_str}</td>"
+        f"<td>{days_str}</td>"
+        f"<td>{cut_str}</td>"
+        "</tr>"
+    )
+
+
+def _deal_row(item: Dict[str, Any]) -> str:
+    appraisal = item.get("appraisal") or {}
+    delta, delta_pct = appraisal.get("delta"), appraisal.get("delta_pct")
+    delta_str = f"{delta:+,.0f} ({delta_pct:+.1f}%)" if delta is not None and delta_pct is not None else "—"
+    warn = ""
+    if appraisal.get("basis_level") in ("make", "all"):
+        warn = (
+            ' <span title="Comparing against a different model -- thin comparable data" '
+            'aria-label="different-model comparison">⚠️</span>'
+        )
+    return (
+        "<tr>"
+        f"<td>{_listing_link(item)}</td>"
+        f"<td>{_fmt_money(item.get('price_current'))}</td>"
+        f"<td>{_fmt_money(appraisal.get('expected_price'))}</td>"
+        f"<td>{delta_str}</td>"
+        f"<td>{_grade_badge(appraisal)}{warn}</td>"
+        f"<td>{_e(appraisal.get('sample_size'))} &middot; {_e(appraisal.get('confidence'))}</td>"
+        "</tr>"
+    )
+
 
 # --------------------------------------------------------------------------
 # page chrome (shared CSS/JS + nav/footer), all inline, no external assets
@@ -324,10 +583,18 @@ pre.digest {
 .kv { border-collapse: collapse; }
 .kv td { padding: 0.35rem 0.6rem; }
 .kv td:first-child { color: var(--muted); width: 12rem; }
+.mv-sample { color: var(--muted); font-size: 0.75rem; margin-top: 0.15rem; white-space: nowrap; }
+.trend-chart { width: 100%; max-width: 700px; height: auto; margin-bottom: 0.75rem; }
+.trend-chart .chart-axis { stroke: var(--border); stroke-width: 1; }
+.trend-chart .chart-line { stroke: var(--accent); stroke-width: 2; }
+.trend-chart .chart-point { fill: var(--accent); }
+.trend-chart .chart-label { fill: var(--muted); font-size: 10px; }
 """
 
 _NAV_LINKS = [
     ("/", "Dashboard"),
+    ("/market", "Market"),
+    ("/appraise", "Appraise"),
     ("/sources", "Sources"),
     ("/digest", "Digest"),
     ("/api/health", "API health"),
@@ -379,10 +646,11 @@ def _nhtsa_cell(conn: Any, item: Dict[str, Any], cache: Dict[Tuple[Any, Any, Any
     return f"{complaints_str} / {recalls_str}"
 
 
-def _results_table(conn: Any, listings: List[Dict[str, Any]]) -> str:
+def _results_table(conn: Any, listings: List[Dict[str, Any]], config: Optional[Any] = None) -> str:
     if not listings:
         return '<div class="empty">No listings match those filters.</div>'
     reliability_cache: Dict[Tuple[Any, Any, Any], Optional[Dict[str, Any]]] = {}
+    market_cache: Dict[Any, Any] = {}
     rows = []
     for item in listings:
         rows.append(
@@ -397,11 +665,12 @@ def _results_table(conn: Any, listings: List[Dict[str, Any]]) -> str:
             f'<td>{"Yes" if item.get("cpo") else "No"}</td>'
             f'<td>{_e(item.get("dealer_name") or "-")} &middot; {_e(item.get("dealer_city") or "-")}</td>'
             f'<td>{_e(item.get("first_seen") or "-")}</td>'
+            f"{_vs_market_cell(conn, config, market_cache, item)}"
             "</tr>"
         )
     return f"""<div class="table-wrap"><table>
 <thead><tr>
-  <th>Score</th><th>Vehicle</th><th>Price</th><th>Mileage</th><th>MPG</th><th>NHTSA</th><th>Dist.</th><th>CPO</th><th>Dealer</th><th>First seen</th>
+  <th>Score</th><th>Vehicle</th><th>Price</th><th>Mileage</th><th>MPG</th><th>NHTSA</th><th>Dist.</th><th>CPO</th><th>Dealer</th><th>First seen</th><th>Vs market</th>
 </tr></thead>
 <tbody>{''.join(rows)}</tbody>
 </table></div>"""
@@ -499,6 +768,14 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
             return self._api_config
         if path == "/api/runs":
             return self._api_runs
+        if path == "/api/market":
+            return self._api_market
+        if path == "/api/market/trend":
+            return self._api_market_trend
+        if path == "/api/appraise":
+            return self._api_appraise
+        if path == "/api/deals":
+            return self._api_deals
         if path == "/api/reliability":
             return self._api_reliability_list
         if path.startswith("/api/reliability/"):
@@ -523,6 +800,10 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
                 return self._page_sources
             if path == "/digest":
                 return self._page_digest
+            if path == "/market":
+                return self._page_market
+            if path == "/appraise":
+                return self._page_appraise
             if path.startswith("/listing/"):
                 vin = path[len("/listing/"):]
                 if vin:
@@ -670,6 +951,8 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
         make, model, year = listing.get("make"), listing.get("model"), listing.get("year")
         if make and model and year:
             listing["nhtsa_model_url"] = recall_lookup_url(make, model, year)
+        appraisal = market.appraise_vin(conn, vin, self.config)
+        listing["appraisal"] = appraisal.as_dict() if appraisal else None
         self._send_json(listing)
 
     def _api_reliability_detail(
@@ -755,6 +1038,39 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
         runs = db.recent_runs(conn, limit=limit)
         self._send_json({"count": len(runs), "runs": runs})
 
+    def _api_market(self, conn: Any, params: Dict[str, List[str]]) -> None:
+        months = _parse_int(params, "months") or 6
+        months = max(1, min(months, 36))
+        self._send_json(market.market_report(conn, months=months, config=self.config))
+
+    def _api_market_trend(self, conn: Any, params: Dict[str, List[str]]) -> None:
+        make = _parse_str(params, "make")
+        model = _parse_str(params, "model")
+        months = _parse_int(params, "months") or 6
+        months = max(1, min(months, 36))
+        self._send_json({
+            "make": make,
+            "model": model,
+            "trend": market.price_trend(conn, make=make, model=model, months=months),
+        })
+
+    def _api_appraise(self, conn: Any, params: Dict[str, List[str]]) -> None:
+        car = {
+            "make": _parse_str(params, "make"),
+            "model": _parse_str(params, "model"),
+            "year": _parse_int(params, "year"),
+            "mileage": _parse_int(params, "mileage"),
+            "price_current": _parse_int(params, "price"),
+        }
+        result = market.appraise(conn, car, self.config)
+        self._send_json(result.as_dict())
+
+    def _api_deals(self, conn: Any, params: Dict[str, List[str]]) -> None:
+        limit = _parse_int(params, "limit") or 10
+        limit = max(1, min(limit, 200))
+        deals = market.best_deals(conn, limit=limit, config=self.config)
+        self._send_json({"count": len(deals), "deals": deals})
+
     def _latest_digest(self) -> Tuple[Optional[Path], Optional[str]]:
         try:
             from . import digest as digest_module
@@ -827,7 +1143,7 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
 </form>"""
 
         sort_caption = f'<p class="sort-caption">{_e(_sort_caption(sort))}</p>'
-        body = tiles + form + f'<div class="section">{sort_caption}{_results_table(conn, listings)}</div>'
+        body = tiles + form + f'<div class="section">{sort_caption}{_results_table(conn, listings, self.config)}</div>'
         self._send_html(_page("Dashboard", body, self._last_run_str(conn), demo_warning=demo.demo_banner(conn)))
 
     def _page_listing_detail(self, conn: Any, params: Dict[str, List[str]], vin: str) -> None:
@@ -925,6 +1241,9 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
 
         badge = f'<span class="badge {_score_class(listing.get("score"))}">{_e(listing.get("score"))}</span>{_demo_tag(listing)}'
 
+        appraisal_obj = market.appraise_vin(conn, vin, self.config)
+        market_html = _appraisal_block(appraisal_obj.as_dict() if appraisal_obj else None)
+
         nhtsa_vin_url = vin_recall_url(vin)
         nhtsa_model_url = recall_lookup_url(make, model, year) if make and model and year else None
         reliability = db.get_reliability(conn, make, model, year) if make and model and year else None
@@ -994,6 +1313,10 @@ class CarMonHandler(http.server.BaseHTTPRequestHandler):
   {breakdown_html}
 </div>
 <div class="section">
+  <h2>Versus the market</h2>
+  {market_html}
+</div>
+<div class="section">
   <h2>Reliability (NHTSA)</h2>
   {reliability_html}
 </div>
@@ -1039,6 +1362,109 @@ check it by hand.</div>
         else:
             body = f'<p>{_e(str(path))}</p><pre class="digest">{_e(markdown)}</pre>'
         self._send_html(_page("Digest", body, self._last_run_str(conn), demo_warning=demo.demo_banner(conn)))
+
+    def _page_market(self, conn: Any, params: Dict[str, List[str]]) -> None:
+        months = _parse_int(params, "months") or 6
+        months = max(1, min(months, 36))
+        report = market.market_report(conn, months=months, config=self.config)
+        trend, models, deals = report["trend"], report["models"], report["best_deals"]
+        dom, cuts = report["days_on_market"], report["price_cuts"]
+
+        latest_median = trend[-1]["median_price"] if trend else None
+        cut_share = cuts.get("cut_share_pct")
+        median_days = dom.get("median_days")
+        tiles = f"""
+<div class="tiles">
+  <div class="tile"><div class="label">Listings tracked</div><div class="value">{_e(report['listings_tracked'])}</div></div>
+  <div class="tile"><div class="label">Median price (latest month)</div><div class="value">{_fmt_money(latest_median) if latest_median is not None else '—'}</div></div>
+  <div class="tile"><div class="label">Median days on market</div><div class="value">{f"{median_days:.0f}" if median_days is not None else '—'}</div></div>
+  <div class="tile"><div class="label">Listings that cut price</div><div class="value">{f"{cut_share:.0f}%" if cut_share is not None else '—'}</div></div>
+</div>"""
+
+        if trend:
+            trend_html = (
+                '<div class="table-wrap"><table><thead><tr>'
+                "<th>Month</th><th>Observations</th><th>Cars</th><th>Median</th><th>Mean</th>"
+                "<th>Min</th><th>Max</th><th>Median mileage</th><th>Change</th>"
+                "</tr></thead><tbody>" + "".join(_trend_row(t) for t in trend) + "</tbody></table></div>"
+            )
+        else:
+            trend_html = '<div class="empty">No monthly price history yet -- this fills in as the daily job runs.</div>'
+        chart_html = _trend_chart_svg(trend)
+
+        if models:
+            models_html = (
+                '<div class="table-wrap"><table><thead><tr>'
+                "<th>Make / Model</th><th>Sample</th><th>Median price</th><th>Range</th>"
+                "<th>Median mileage</th><th>$ / 1k miles</th><th>r&sup2;</th><th>Median days</th><th>Price cuts</th>"
+                "</tr></thead><tbody>" + "".join(_model_row(m) for m in models) + "</tbody></table></div>"
+            )
+        else:
+            models_html = '<div class="empty">No model has enough comparable listings stored yet.</div>'
+
+        if deals:
+            deals_html = (
+                '<div class="table-wrap"><table><thead><tr>'
+                "<th>Car</th><th>Price</th><th>Expected</th><th>Delta</th><th>Grade</th><th>Sample / confidence</th>"
+                "</tr></thead><tbody>" + "".join(_deal_row(d) for d in deals) + "</tbody></table></div>"
+            )
+        else:
+            deals_html = '<div class="empty">No active listing has enough comparable data to grade yet.</div>'
+
+        body = f"""
+<h1>Market</h1>
+{tiles}
+<p class="note">{_e(_CONDITION_BLIND_NOTE)}</p>
+<div class="section">
+  <h2>Monthly trend</h2>
+  <p class="note">{_e(report['data_note'])}</p>
+  {chart_html}
+  {trend_html}
+</div>
+<div class="section">
+  <h2>By model</h2>
+  {models_html}
+</div>
+<div class="section">
+  <h2>Best deals right now</h2>
+  {deals_html}
+</div>
+"""
+        self._send_html(_page("Market", body, self._last_run_str(conn), demo_warning=demo.demo_banner(conn)))
+
+    def _page_appraise(self, conn: Any, params: Dict[str, List[str]]) -> None:
+        make = _parse_str(params, "make") or ""
+        model = _parse_str(params, "model") or ""
+        year = _parse_int(params, "year")
+        mileage = _parse_int(params, "mileage")
+        price = _parse_int(params, "price")
+
+        form = f"""
+<form class="filters" method="get" action="/appraise">
+  <div class="field"><label for="make">Make</label><input type="text" id="make" name="make" value="{_e(make)}"></div>
+  <div class="field"><label for="model">Model</label><input type="text" id="model" name="model" value="{_e(model)}"></div>
+  <div class="field"><label for="year">Year</label><input type="number" id="year" name="year" value="{_e(year) if year is not None else ''}"></div>
+  <div class="field"><label for="mileage">Mileage</label><input type="number" id="mileage" name="mileage" value="{_e(mileage) if mileage is not None else ''}"></div>
+  <div class="field"><label for="price">Asking price (optional)</label><input type="number" id="price" name="price" value="{_e(price) if price is not None else ''}"></div>
+  <button type="submit">Appraise</button>
+</form>"""
+
+        if make and model:
+            car = {"make": make, "model": model, "year": year, "mileage": mileage, "price_current": price}
+            appraisal_obj = market.appraise(conn, car, self.config)
+            appraisal = appraisal_obj.as_dict()
+            result_html = f'<p>{_e(appraisal["summary"])}</p>{_appraisal_block(appraisal)}'
+        else:
+            result_html = '<div class="empty">Fill in at least a make and model to get an estimate.</div>'
+
+        body = f"""
+<h1>Appraise a car</h1>
+<p class="sort-caption">Estimate a fair price from comparable listings already tracked here -- a
+cross-sectional read on price versus mileage and year, not a valuation.</p>
+{form}
+<div class="section">{result_html}</div>
+"""
+        self._send_html(_page("Appraise", body, self._last_run_str(conn), demo_warning=demo.demo_banner(conn)))
 
 
 # --------------------------------------------------------------------------

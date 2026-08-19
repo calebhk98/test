@@ -12,9 +12,9 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 from . import (__version__, db, demo as demo_module, digest as digest_module, fueleconomy,
-               nhtsa, notify, quota)
+               market, nhtsa, notify, quota)
 from .config import Config, ConfigError, PROJECT_ROOT, load_config, get_secret, validate_config
-from .pipeline import rescore_all, run_daily
+from .pipeline import refresh_market_values, rescore_all, run_daily
 from .scoring import score_listing
 from .sources import build_sources, grouped_sources
 
@@ -288,6 +288,141 @@ def cmd_config_check(args: argparse.Namespace) -> int:
     return 1
 
 
+def _money(value) -> str:
+    return f"${value:,.0f}" if value not in (None, "") else "n/a"
+
+
+def cmd_market(args: argparse.Namespace) -> int:
+    """Market trends: what things cost, how fast they move, and how much sellers cut."""
+    config = _config(args)
+    conn = _open_db(config)
+    if args.refresh:
+        summary = refresh_market_values(config, conn)
+        print(f"Re-appraised {summary['listings_appraised']} listing(s); "
+              f"{summary['below_market']} sit more than 5% below expected.")
+    report = market.market_report(conn, months=args.months, config=config)
+    if args.json:
+        print(json.dumps(report, indent=2, default=str))
+        conn.close()
+        return 0
+
+    print(f"Market report — {report['listings_tracked']} real listings tracked")
+    print(f"\n{report['data_note']}\n")
+
+    trend = report["trend"]
+    if trend:
+        print("Median asking price by month")
+        widest = max(row["median_price"] for row in trend) or 1
+        for row in trend:
+            bar_width = max(1, round(28 * row["median_price"] / widest))
+            change = ""
+            if row.get("change_vs_previous") is not None:
+                change = f"  {row['change_vs_previous']:+,} ({row['change_pct']:+.1f}%)"
+            print(f"  {row['month']}  {'█' * bar_width:<28} {_money(row['median_price'])}"
+                  f"  n={row['observations']:<4}{change}")
+    else:
+        print("No price history yet — this fills in once the daily job has run a few times.")
+
+    dom = report["days_on_market"]
+    cuts = report["price_cuts"]
+    median_days = dom["median_days"]
+    print(f"\nDays on market: median {median_days if median_days is not None else 'n/a'} "
+          f"(from {dom['sample_size']} listings that have since vanished)")
+    print(f"Price cuts: {cuts['cut_count']} of {cuts['tracked']} tracked listings "
+          f"({cuts['cut_share_pct'] or 0}%), median cut {_money(cuts['median_cut'])}"
+          + (f" ({cuts['median_cut_pct']}%)" if cuts.get("median_cut_pct") else ""))
+
+    if report["models"]:
+        print("\nBy model")
+        header = f"  {'model':<28}{'n':>4}  {'median':>9}  {'range':>19}  {'$/1k mi':>8}  {'days':>5}  cuts"
+        print(header)
+        for row in report["models"]:
+            name = f"{row['make']} {row['model']}"
+            price_range = f"{_money(row['min_price'])}–{_money(row['max_price'])}"
+            per_mile = f"{row['dollars_per_1k_miles']:.0f}" if row["dollars_per_1k_miles"] else "—"
+            days = row["days_on_market"]["median_days"]
+            days = f"{days:.0f}" if days is not None else "—"
+            print(f"  {name[:28]:<28}{row['sample_size']:>4}  {_money(row['median_price']):>9}  "
+                  f"{price_range:>19}  {per_mile:>8}  {days:>5}  "
+                  f"{row['price_cuts']['cut_share_pct'] or 0}%")
+
+    if report["best_deals"]:
+        print("\nBest deals right now (price versus expected for that mileage and year)")
+        for item in report["best_deals"][:args.limit]:
+            appraisal = item["appraisal"]
+            print(f"  {appraisal['grade_icon']} {item['year']} {item['make']} {item['model']} — "
+                  f"{_money(item['price_current'])} vs {_money(appraisal['expected_price'])} expected "
+                  f"({appraisal['delta']:+,}, {appraisal['delta_pct']:+.1f}%) · "
+                  f"{item['mileage']:,} mi · n={appraisal['sample_size']} "
+                  f"({appraisal['confidence']} confidence)")
+    conn.close()
+    return 0
+
+
+def cmd_appraise(args: argparse.Namespace) -> int:
+    """Compare one car — real or hypothetical — against the local market."""
+    config = _config(args)
+    conn = _open_db(config)
+    if args.vin:
+        result = market.appraise_vin(conn, args.vin, config)
+        if result is None:
+            print(f"No stored listing with VIN {args.vin}.", file=sys.stderr)
+            conn.close()
+            return 1
+    else:
+        result = market.appraise(conn, {
+            "make": args.make, "model": args.model, "year": args.year,
+            "mileage": args.mileage, "price_current": args.price,
+        }, config)
+
+    if args.json:
+        print(json.dumps(result.as_dict(), indent=2))
+        conn.close()
+        return 0
+
+    print(result.summary())
+    print(f"  basis: {result.basis} ({result.basis_level}), method: {result.method}"
+          + (f", r² {result.r_squared}" if result.r_squared is not None else ""))
+    if result.comparable_median:
+        low, high = result.comparable_range or (None, None)
+        print(f"  comparables: median {_money(result.comparable_median)}, "
+              f"range {_money(low)}–{_money(high)}, n={result.sample_size}")
+    if result.dollars_per_model_year:
+        print(f"  each newer model year is worth about {_money(result.dollars_per_model_year)} here")
+    for note in result.notes:
+        print(f"  ⚠️  {note}")
+    print("  This compares asking prices only — it knows nothing about condition, trim, options,")
+    print("  accident history or title status. Always inspect the car itself.")
+    conn.close()
+    return 0
+
+
+def cmd_deals(args: argparse.Namespace) -> int:
+    config = _config(args)
+    conn = _open_db(config)
+    deals = market.best_deals(conn, limit=args.limit, min_sample=args.min_sample, config=config)
+    if args.json:
+        print(json.dumps(deals, indent=2, default=str))
+        conn.close()
+        return 0
+    if not deals:
+        print("No listings have enough comparables to grade yet. Let the daily job run for a few days.")
+        conn.close()
+        return 0
+    for item in deals:
+        appraisal = item["appraisal"]
+        print(f"{appraisal['grade_icon']} {appraisal['grade']}: {item['year']} {item['make']} "
+              f"{item['model']} {item.get('trim') or ''}".rstrip())
+        print(f"    {_money(item['price_current'])} vs {_money(appraisal['expected_price'])} expected "
+              f"({appraisal['delta']:+,}, {appraisal['delta_pct']:+.1f}%) · {item['mileage']:,} mi · "
+              f"score {item.get('score', 0):+.2f} · n={appraisal['sample_size']} "
+              f"({appraisal['confidence']} confidence)")
+        if item.get("listing_url"):
+            print(f"    {item['listing_url']}")
+    conn.close()
+    return 0
+
+
 def cmd_rescore(args: argparse.Namespace) -> int:
     config = _config(args)
     count = rescore_all(config)
@@ -442,6 +577,29 @@ def build_parser() -> argparse.ArgumentParser:
 
     config_check = sub.add_parser("config-check", help="validate config.json and report drift")
     config_check.set_defaults(func=cmd_config_check)
+
+    market_cmd = sub.add_parser("market", help="price trends, days on market, and per-model stats")
+    market_cmd.add_argument("--months", type=int, default=6)
+    market_cmd.add_argument("--limit", type=int, default=5, help="how many best deals to list")
+    market_cmd.add_argument("--refresh", action="store_true", help="re-appraise every listing first")
+    market_cmd.add_argument("--json", action="store_true")
+    market_cmd.set_defaults(func=cmd_market)
+
+    appraise = sub.add_parser("appraise", help="is this price good? compare one car to the market")
+    appraise.add_argument("--vin", help="appraise a stored listing instead of a hypothetical car")
+    appraise.add_argument("--make")
+    appraise.add_argument("--model")
+    appraise.add_argument("--year", type=int)
+    appraise.add_argument("--mileage", type=int)
+    appraise.add_argument("--price", type=int, help="asking price to grade")
+    appraise.add_argument("--json", action="store_true")
+    appraise.set_defaults(func=cmd_appraise)
+
+    deals = sub.add_parser("deals", help="active listings ranked by price versus expected")
+    deals.add_argument("--limit", type=int, default=10)
+    deals.add_argument("--min-sample", type=int, default=3, dest="min_sample")
+    deals.add_argument("--json", action="store_true")
+    deals.set_defaults(func=cmd_deals)
 
     rescore = sub.add_parser("rescore", help="recompute every stored score with the current config")
     rescore.set_defaults(func=cmd_rescore)

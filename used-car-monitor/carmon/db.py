@@ -33,6 +33,11 @@ CREATE TABLE IF NOT EXISTS listings (
     listing_url     TEXT,
     score           REAL,
     score_breakdown TEXT,
+    market_expected_price REAL,
+    market_delta_pct      REAL,
+    market_sample_size    INTEGER,
+    market_grade          TEXT,
+    market_confidence     TEXT,
     source          TEXT DEFAULT 'marketcheck',
     active          INTEGER DEFAULT 1,
     updated_at      TEXT
@@ -103,6 +108,7 @@ CREATE TABLE IF NOT EXISTS model_mpg (
 CREATE INDEX IF NOT EXISTS idx_listings_score ON listings(score DESC);
 CREATE INDEX IF NOT EXISTS idx_listings_first_seen ON listings(first_seen);
 CREATE INDEX IF NOT EXISTS idx_listings_last_seen ON listings(last_seen);
+CREATE INDEX IF NOT EXISTS idx_listings_model ON listings(make, model, year);
 CREATE INDEX IF NOT EXISTS idx_price_history_vin ON price_history(vin, date);
 CREATE INDEX IF NOT EXISTS idx_api_usage_month ON api_usage(month);
 """
@@ -150,6 +156,12 @@ MIGRATIONS = {
         "city_mpg": "INTEGER",
         "highway_mpg": "INTEGER",
         "combined_mpg": "REAL",
+        # Market comparison, recomputed after each run (see market.py / pipeline.py).
+        "market_expected_price": "REAL",
+        "market_delta_pct": "REAL",
+        "market_sample_size": "INTEGER",
+        "market_grade": "TEXT",
+        "market_confidence": "TEXT",
     },
 }
 
@@ -599,3 +611,22 @@ def distinct_model_years(conn: sqlite3.Connection, active_only: bool = True) -> 
         f"SELECT DISTINCT make, model, year FROM listings WHERE {' AND '.join(clauses)} ORDER BY make, model, year"
     ).fetchall()
     return [dict(row) for row in rows]
+
+
+def save_appraisal(
+    conn: sqlite3.Connection, vin: str, appraisal: Dict[str, Any], commit: bool = True
+) -> None:
+    """Store the market comparison for a listing so the UI and scorer can read it cheaply.
+
+    Pass commit=False when writing many rows in a loop and commit once at the end.
+    """
+    conn.execute(
+        "UPDATE listings SET market_expected_price = ?, market_delta_pct = ?, "
+        "market_sample_size = ?, market_grade = ?, market_confidence = ? WHERE vin = ?",
+        (
+            appraisal.get("expected_price"), appraisal.get("delta_pct"),
+            appraisal.get("sample_size"), appraisal.get("grade"), appraisal.get("confidence"), vin,
+        ),
+    )
+    if commit:
+        conn.commit()

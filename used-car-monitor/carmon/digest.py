@@ -7,7 +7,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from . import db, demo as demo_module, quota
+from . import db, demo as demo_module, market as market_module, quota
 from .config import Config
 from .pipeline import attach_cached_enrichment
 from .sources import build_sources
@@ -46,6 +46,16 @@ def _reliability_note(listing: Dict[str, Any]) -> str:
     return "NHTSA: " + " / ".join(parts)
 
 
+def _market_note(listing: Dict[str, Any]) -> str:
+    """e.g. 'vs market: -6.9% (good deal, n=23)' — blank when there is no estimate."""
+    delta = listing.get("market_delta_pct")
+    if delta is None:
+        return ""
+    grade = listing.get("market_grade") or ""
+    sample = listing.get("market_sample_size") or 0
+    return f"vs market **{float(delta):+.1f}%**" + (f" ({grade}, n={int(sample)})" if grade else "")
+
+
 def _line(listing: Dict[str, Any], extra: str = "") -> str:
     bits = [
         f"**{_title(listing)}** — score **{listing.get('score', 0):+.2f}**",
@@ -59,6 +69,9 @@ def _line(listing: Dict[str, Any], extra: str = "") -> str:
         bits.append(f"{distance:.0f} mi away")
     if listing.get("cpo"):
         bits.append("**CPO**")
+    market_note = _market_note(listing)
+    if market_note:
+        bits.append(market_note)
     note = _reliability_note(listing)
     if note:
         bits.append(note)
@@ -153,6 +166,52 @@ def render_digest(
     else:
         lines.append("- No listings stored yet.")
     lines.append("")
+
+    deals = market_module.best_deals(conn, limit=5, config=config)
+    lines.append("## Best value versus the market")
+    if deals:
+        lines.append(
+            "_Asking price against what comparable listings suggest for that mileage and model year. "
+            "Blind to condition, trim and history — a check on the price, not on the car._"
+        )
+        for item in deals:
+            appraisal = item["appraisal"]
+            # The grade is spelled out in the suffix here, so drop the inline shorthand.
+            item = {key: value for key, value in item.items() if key != "market_delta_pct"}
+            lines.append(_line(item, (
+                f"{appraisal['grade_icon']} **{appraisal['grade']}** — {_money(appraisal['expected_price'])} "
+                f"expected, {appraisal['delta']:+,} ({appraisal['delta_pct']:+.1f}%), "
+                f"n={appraisal['sample_size']} ({appraisal['confidence']} confidence)"
+            )))
+    else:
+        lines.append(
+            "- Not enough comparable listings yet to grade prices. This fills in within a few daily runs."
+        )
+    lines.append("")
+
+    trend = market_module.price_trend(conn, months=3)
+    if len(trend) >= 2:
+        latest, previous = trend[-1], trend[-2]
+        direction = "down" if latest["median_price"] < previous["median_price"] else "up"
+        lines.append("## Market trend")
+        lines.append(
+            f"- Median asking price is **{direction}** {abs(latest.get('change_pct') or 0):.1f}% month over month "
+            f"({_money(previous['median_price'])} → {_money(latest['median_price'])}), "
+            f"from {latest['observations']} observations across {latest['cars']} cars."
+        )
+        cuts = market_module.price_cut_stats(conn)
+        if cuts["cut_count"]:
+            lines.append(
+                f"- {cuts['cut_count']} of {cuts['tracked']} tracked listings have cut their price "
+                f"({cuts['cut_share_pct']}%), median cut {_money(cuts['median_cut'])}"
+                + (f" ({cuts['median_cut_pct']}%)" if cuts.get("median_cut_pct") else "") + "."
+            )
+        dom = market_module.days_on_market(conn)
+        if dom["median_days"] is not None:
+            lines.append(
+                f"- Listings that have since disappeared lasted a median of **{dom['median_days']:.0f} days**."
+            )
+        lines.append("")
 
     lines.append("## Status")
     lines.append(

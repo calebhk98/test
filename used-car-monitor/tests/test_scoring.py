@@ -98,11 +98,12 @@ class ScoringTests(unittest.TestCase):
     # --- transparency -----------------------------------------------------
     def test_every_component_is_explained(self):
         result = self._score(mileage=30000, distance_miles=70, cpo=True, price_current=16000,
-                             year=2022, combined_mpg=34, complaint_count=95, recall_count=0)
+                             year=2022, combined_mpg=34, complaint_count=95, recall_count=0,
+                             market_delta_pct=-6.0, market_sample_size=20)
         labels = [c.label for c in result.components]
-        self.assertEqual(len(labels), 10, f"every scored dimension must be reported: {labels}")
+        self.assertEqual(len(labels), 11, f"every scored dimension must be reported: {labels}")
         for expected in ("CPO", "price drop", "distance", "mileage", "price", "model year",
-                         "fuel economy", "NHTSA complaints", "NHTSA recalls"):
+                         "fuel economy", "NHTSA complaints", "NHTSA recalls", "vs market"):
             self.assertIn(expected, labels)
         for component in result.components:
             self.assertTrue(component.detail, f"component {component.label} has no explanation")

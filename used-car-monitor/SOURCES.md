@@ -83,6 +83,14 @@ useful sanity check on whether a price is out of line. TrueCar shows what others
 
 CarGurus · Autotrader · Cars.com · TrueCar.
 
+**The monitor now computes its own version of that deal rating**, from your own data rather
+than a national comparison: `python3 -m carmon appraise --make Toyota --model Corolla --year
+2022 --mileage 35000 --price 17500` fits price against mileage and model year across every
+comparable listing it has stored and reports the gap, with the sample size and confidence
+attached. CarGurus' rating is still worth a look — it draws on a far larger national sample
+than a 100-mile radius ever will — but the two together are more useful than either alone:
+theirs knows the country, yours knows your actual search area.
+
 ---
 
 ## If MarketCheck turns out not to be worth it

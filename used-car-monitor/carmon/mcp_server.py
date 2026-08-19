@@ -22,10 +22,25 @@ from typing import Any, Dict, List, Optional
 import carmon
 from . import db as dbmod
 from . import demo as demomod
+from . import market as marketmod
 from . import quota as quotamod
 from . import scoring as scoringmod
 from . import sources as sourcesmod
 from .config import Config, load_config
+
+# Appended to the description of any tool whose numbers come from the local price-vs-mileage
+# fit in carmon.market. Keeps an assistant from presenting a deterministic OLS curve over
+# locally-stored listings as if it were a professional valuation.
+APPRAISAL_CAVEAT_NOTE = (
+    " This is NOT a valuation and NOT KBB/Edmunds/etc: it is a deterministic ordinary-least-"
+    "squares fit of price against mileage and model year, computed only over listings this "
+    "monitor has stored locally. It knows nothing about condition, trim, options, accident "
+    "history or title status. Always report 'sample_size', 'confidence' and 'basis_level' "
+    "alongside any 'grade' — a basis_level of 'make' or 'all' means the comparison fell back "
+    "to different models entirely and is only a rough bearing. Always surface anything in "
+    "'notes' to the user; those are caveats, not filler. Price-versus-mileage comparisons work "
+    "from the first run; month-over-month trend numbers need weeks of accumulated history."
+)
 
 PROTOCOL_VERSION = "2024-11-05"
 
@@ -402,6 +417,124 @@ def _tool_defs() -> List[Dict[str, Any]]:
                 "additionalProperties": False,
             },
         },
+        {
+            "name": "appraise_car",
+            "description": (
+                "Answer 'is this price any good?' for one car, either a hypothetical one "
+                "described by make/model/year/mileage/price or a stored listing looked up by "
+                "VIN. Returns an expected price and, when a price is given, a grade ('great "
+                "deal' through 'well above market')." + APPRAISAL_CAVEAT_NOTE
+            ),
+            "inputSchema": {
+                "type": "object",
+                "properties": {
+                    "make": {"type": "string", "description": "Vehicle make, e.g. 'Honda'. Recommended unless 'vin' is given."},
+                    "model": {"type": "string", "description": "Vehicle model, e.g. 'Civic'. Recommended unless 'vin' is given."},
+                    "year": {"type": "integer", "description": "Model year, e.g. 2022. Recommended unless 'vin' is given."},
+                    "mileage": {"type": "integer", "description": "Odometer mileage. Recommended unless 'vin' is given."},
+                    "price": {
+                        "type": "integer",
+                        "description": (
+                            "Asking price in dollars. Optional: without it you still get an "
+                            "expected price and comparable data, but no grade, delta, or percentile "
+                            "since there is nothing to compare against."
+                        ),
+                    },
+                    "vin": {
+                        "type": "string",
+                        "description": (
+                            "If given, appraise this stored listing instead of a hypothetical car — "
+                            "make/model/year/mileage/price are read from the database and any of "
+                            "those arguments passed alongside 'vin' are ignored."
+                        ),
+                    },
+                },
+                "additionalProperties": False,
+            },
+        },
+        {
+            "name": "market_trend",
+            "description": (
+                "How prices for a make/model (or the whole tracked market, if both are "
+                "omitted) have moved month over month, plus how long listings tend to stay on "
+                "the market and how often sellers cut prices. This is longitudinal — built "
+                "from repeated observations of the same listings over time — so it starts "
+                "sparse and fills in as the daily job keeps running for weeks; it is a "
+                "different question from 'appraise_car', which works from the first run."
+            ),
+            "inputSchema": {
+                "type": "object",
+                "properties": {
+                    "make": {"type": "string", "description": "Exact make match, e.g. 'Toyota' (case-insensitive). Omit for all makes."},
+                    "model": {"type": "string", "description": "Model prefix match, e.g. 'Corolla' (case-insensitive). Omit for all models."},
+                    "months": {"type": "integer", "description": "How many recent months of trend data to return (default 6).", "default": 6, "minimum": 1, "maximum": 60},
+                },
+                "additionalProperties": False,
+            },
+        },
+        {
+            "name": "market_report",
+            "description": (
+                "A full snapshot of the tracked market: listings tracked, the price trend, a "
+                "per-model summary, days-on-market, price-cut frequency, and the current best "
+                "deals with their appraisals." + APPRAISAL_CAVEAT_NOTE
+            ),
+            "inputSchema": {
+                "type": "object",
+                "properties": {
+                    "months": {"type": "integer", "description": "How many recent months of trend data to include (default 6).", "default": 6, "minimum": 1, "maximum": 60},
+                },
+                "additionalProperties": False,
+            },
+        },
+        {
+            "name": "best_deals",
+            "description": (
+                "Rank currently active listings by how far below their expected price they "
+                "sit, each with its full appraisal attached. A listing only appears once it "
+                "has at least 'min_sample' comparable listings behind its estimate."
+                + APPRAISAL_CAVEAT_NOTE
+            ),
+            "inputSchema": {
+                "type": "object",
+                "properties": {
+                    "limit": {"type": "integer", "description": "Max number of results to return (default 10).", "default": 10, "minimum": 1, "maximum": 100},
+                    "min_sample": {
+                        "type": "integer",
+                        "description": "Minimum number of comparable listings an appraisal must be based on to be included (default 3).",
+                        "default": 3,
+                        "minimum": 1,
+                    },
+                },
+                "additionalProperties": False,
+            },
+        },
+        {
+            "name": "list_comparables",
+            "description": (
+                "List the actual stored listings used as comparables for a make/model/year — "
+                "the raw data behind an 'appraise_car' estimate, so an assistant can show its "
+                "work instead of citing a number with nothing behind it. Includes both active "
+                "and sold/expired listings, since a car that left the market is evidence too."
+            ),
+            "inputSchema": {
+                "type": "object",
+                "properties": {
+                    "make": {"type": "string", "description": "Vehicle make, e.g. 'Honda'."},
+                    "model": {"type": "string", "description": "Vehicle model, e.g. 'Civic'."},
+                    "year": {"type": "integer", "description": "Model year, e.g. 2022. If omitted, comparables are not filtered by year."},
+                    "year_window": {
+                        "type": "integer",
+                        "description": "How many model years on either side of 'year' to include (default 1). Ignored if 'year' is omitted.",
+                        "default": 1,
+                        "minimum": 0,
+                    },
+                    "limit": {"type": "integer", "description": "Max number of comparable listings to return (default 25).", "default": 25, "minimum": 1, "maximum": 500},
+                },
+                "required": ["make", "model"],
+                "additionalProperties": False,
+            },
+        },
     ]
 
 
@@ -623,12 +756,14 @@ class MCPServer:
             nhtsa_vin_url = vin_recall_url(vin)
             if listing.get("make") and listing.get("model") and listing.get("year"):
                 nhtsa_model_url = recall_lookup_url(listing["make"], listing["model"], listing["year"])
+        appraisal = marketmod.appraise_vin(self.conn, vin, self.config)
         return _text_result(self._with_demo_warning({
             "listing": listing,
             "price_history": history,
             "cross_shop_links": cross_shop,
             "nhtsa_vin_url": nhtsa_vin_url,
             "nhtsa_model_url": nhtsa_model_url,
+            "appraisal": appraisal.as_dict() if appraisal is not None else None,
         }, [listing]))
 
     def _t_get_price_history(self, args: Dict[str, Any]) -> Dict[str, Any]:
@@ -796,6 +931,69 @@ class MCPServer:
         models = [self._reliability_row_to_dict(row) for row in rows]
         return _text_result({"count": len(models), "models": models})
 
+    def _t_appraise_car(self, args: Dict[str, Any]) -> Dict[str, Any]:
+        vin = args.get("vin") or None
+        if vin:
+            result = marketmod.appraise_vin(self.conn, vin, self.config)
+            if result is None:
+                return _text_result(f"No listing found with VIN '{vin}'.", is_error=True, as_json=False)
+            return _text_result(result.as_dict())
+
+        car = {
+            "make": args.get("make") or "",
+            "model": args.get("model") or "",
+            "year": _opt_int(args.get("year")),
+            "mileage": _opt_number(args.get("mileage")),
+            "price_current": _opt_number(args.get("price")),
+        }
+        result = marketmod.appraise(self.conn, car, self.config)
+        return _text_result(result.as_dict())
+
+    def _t_market_trend(self, args: Dict[str, Any]) -> Dict[str, Any]:
+        make = args.get("make") or None
+        model = args.get("model") or None
+        months = _as_int(args.get("months", 6), "months", default=6)
+        months = max(1, min(months, 60))
+        trend = marketmod.price_trend(self.conn, make=make, model=model, months=months)
+        return _text_result({
+            "make": make,
+            "model": model,
+            "months": months,
+            "trend": trend,
+            "days_on_market": marketmod.days_on_market(self.conn, make=make, model=model),
+            "price_cuts": marketmod.price_cut_stats(self.conn, make=make, model=model),
+            "data_note": (
+                "Cross-sectional price-versus-mileage comparisons (see 'appraise_car') work "
+                "from the first run. This trend, days-on-market and price-cut data is "
+                "longitudinal and needs weeks of accumulated history to be meaningful."
+            ),
+        })
+
+    def _t_market_report(self, args: Dict[str, Any]) -> Dict[str, Any]:
+        months = _as_int(args.get("months", 6), "months", default=6)
+        months = max(1, min(months, 60))
+        return _text_result(marketmod.market_report(self.conn, months=months, config=self.config))
+
+    def _t_best_deals(self, args: Dict[str, Any]) -> Dict[str, Any]:
+        limit = _as_int(args.get("limit", 10), "limit", default=10)
+        limit = max(1, min(limit, 100))
+        min_sample = _as_int(args.get("min_sample", 3), "min_sample", default=3)
+        min_sample = max(1, min_sample)
+        rows = marketmod.best_deals(self.conn, limit=limit, min_sample=min_sample, config=self.config)
+        return _text_result(self._with_demo_warning({"count": len(rows), "listings": rows}, rows))
+
+    def _t_list_comparables(self, args: Dict[str, Any]) -> Dict[str, Any]:
+        make = _require_str(args, "make")
+        model = _require_str(args, "model")
+        year = _opt_int(args.get("year"))
+        year_window = _as_int(args.get("year_window", 1), "year_window", default=1)
+        year_window = max(0, year_window)
+        limit = _as_int(args.get("limit", 25), "limit", default=25)
+        limit = max(1, min(limit, 500))
+        rows = marketmod.comparables(self.conn, make=make, model=model, year=year, year_window=year_window)
+        rows = rows[:limit]
+        return _text_result(self._with_demo_warning({"count": len(rows), "listings": rows}, rows))
+
     _TOOL_HANDLERS = {
         "search_listings": _t_search_listings,
         "get_listing": _t_get_listing,
@@ -812,6 +1010,11 @@ class MCPServer:
         "get_reliability": _t_get_reliability,
         "refresh_reliability": _t_refresh_reliability,
         "list_reliability": _t_list_reliability,
+        "appraise_car": _t_appraise_car,
+        "market_trend": _t_market_trend,
+        "market_report": _t_market_report,
+        "best_deals": _t_best_deals,
+        "list_comparables": _t_list_comparables,
     }
 
     # -- helpers -----------------------------------------------------------

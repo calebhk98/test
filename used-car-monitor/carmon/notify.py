@@ -65,6 +65,9 @@ def _listing_bullet(listing: Dict[str, Any], extra: str = "") -> str:
     distance = listing.get("distance_miles")
     if distance is not None:
         parts.append(f"{distance:.0f} mi away")
+    delta = listing.get("market_delta_pct")
+    if delta is not None:
+        parts.append(f"{float(delta):+.0f}% vs market")
     mpg = listing.get("combined_mpg")
     if mpg:
         parts.append(f"{float(mpg):.0f} mpg")

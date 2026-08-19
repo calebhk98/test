@@ -12,6 +12,7 @@ time, scores every listing deterministically, and then tells you about it four w
 | **Website** | `python3 -m carmon serve` | Browse/filter listings, see score breakdowns and price history |
 | **JSON API** | same server, `/api/*` | Everything the website shows, as JSON |
 | **MCP server** | `python3 -m carmon mcp` | Tools so Claude (or any MCP client) can query your data |
+| **Deal check** | `python3 -m carmon appraise` / `market` / `deals` | Is this price good? Where is the market heading? |
 
 Python 3.11+, one runtime dependency (`requests`); everything else is standard library.
 
@@ -138,6 +139,9 @@ python3 -m carmon run --no-discord    # skip the Discord post
 python3 -m carmon digest --days 7     # re-render from stored data, zero API calls
 python3 -m carmon enrich              # refresh NHTSA + EPA data, then rescore (no MarketCheck calls)
 python3 -m carmon reliability --make Honda --model Civic --year 2022
+python3 -m carmon appraise --make Toyota --model Corolla --year 2022 --mileage 35000 --price 17500
+python3 -m carmon deals               # active listings ranked by price versus expected
+python3 -m carmon market              # price trends, days on market, per-model stats
 python3 -m carmon quota               # calls used vs how much of the month has passed
 python3 -m carmon stats               # DB + quota stats as JSON
 python3 -m carmon config-check        # validate config.json and report drift
@@ -238,6 +242,7 @@ suddenly a full point better than a 40,050-mile one:
 | Fuel economy | ramps 0 at 28 mpg combined → +1.0 at 40 mpg, mildly negative below (floor −0.5) |
 | NHTSA complaints | ramps 0 at 100 complaints → −1.5 at 600 for that model-year |
 | NHTSA recalls | −0.15 per recall campaign, floored at −0.75 |
+| vs market | up to ±1.5 — full value at 12% below/above the expected price for that mileage and year; 0 until 6+ comparables exist (see §10) |
 
 MPG comes from MarketCheck's `build.city_mpg`/`highway_mpg` when present, otherwise from EPA
 (combined = 55% city + 45% highway, the EPA's own weighting). A model-year with no NHTSA data
@@ -321,6 +326,7 @@ pretending the bad value was applied. The same keys work on `GET /api/listings?s
 | `GET /api/new?days=1` · `GET /api/price-drops?days=1` · `GET /api/top?limit=5` | daily views |
 | `GET /api/digest/latest` | latest digest markdown |
 | `GET /api/reliability` · `GET /api/reliability/<make>/<model>/<year>` | cached NHTSA complaints and recalls |
+| `GET /api/market` · `GET /api/market/trend` · `GET /api/appraise` · `GET /api/deals` | market trends and price-versus-expected comparisons |
 | `GET /api/sources` · `GET /api/config` · `GET /api/runs` | links, config, run log |
 
 The server binds `127.0.0.1` by default. If you expose it, set `CARMON_API_TOKEN` in `.env`
@@ -355,8 +361,13 @@ Add to Claude Desktop (`claude_desktop_config.json`) or Claude Code (`.mcp.json`
 
 Tools: `search_listings`, `get_listing`, `get_price_history`, `top_listings`, `new_listings`,
 `price_drops`, `get_stats`, `get_latest_digest`, `explain_score`, `score_hypothetical`,
-`list_sources`, `get_reliability`, `refresh_reliability`, `list_reliability`.
+`list_sources`, `get_reliability`, `refresh_reliability`, `list_reliability`, `get_quota_pace`,
+`appraise_car`, `market_trend`, `market_report`, `best_deals`, `list_comparables` — 20 in all.
 Resources: `carmon://config`, `carmon://digest/latest`.
+
+`appraise_car` is the one to reach for when asking an assistant "is this a good price?" — it
+returns the expected price, the gap, the grade, and the caveats, so the answer can cite its
+own sample size instead of guessing.
 
 `score_hypothetical` is the interesting one — an assistant can ask "would a 2022 Civic with
 45k miles 70 miles away score well?" without anything being in the database.
@@ -368,8 +379,9 @@ Resources: `carmon://config`, `carmon://digest/latest`.
 `listings` — one row per VIN: `vin` (PK), `first_seen`, `last_seen`, `year`, `make`, `model`,
 `trim`, `body_type`, `fuel_type`, `city_mpg`, `highway_mpg`, `combined_mpg`, `mileage`,
 `price_current`, `price_first_seen`, `dealer_name`, `dealer_city`, `dealer_state`,
-`distance_miles`, `cpo`, `listing_url`, `score`, `score_breakdown`, `source`, `active`,
-`updated_at`.
+`distance_miles`, `cpo`, `listing_url`, `score`, `score_breakdown`, `market_expected_price`,
+`market_delta_pct`, `market_sample_size`, `market_grade`, `market_confidence`, `source`,
+`active`, `updated_at`.
 
 `model_reliability` — one row per make/model/year: complaint and recall counts, crash/fire
 counts, injuries, deaths, the top five recurring complaint components, and recall campaign
@@ -424,17 +436,102 @@ Configured under `api.month_end_sweep`: `enabled`, `trigger_last_days` (default 
 `reserve_calls` (20, kept back for a retry), `max_extra_calls` (400) and `max_pages_per_query`.
 The digest and Discord message report what the sweep spent and what it found.
 
-## 10. Tests
+## 10. Judging a deal: market comparison and trends
+
+The monitor answers "is this price any good?" from your own accumulated data, with no extra
+API calls — it is ordinary least squares over the listings already in SQLite.
+
+```bash
+python3 -m carmon appraise --make Toyota --model Corolla --year 2022 --mileage 35000 --price 17500
+```
+
+```
+🟢 good deal: $17,500 versus an expected $18,437 for this mileage and year (-937, -5.1%).
+Based on 42 comparable listings (good confidence, price ~ mileage + model year).
+Cheaper than 62% of them. This market charges about $98 per 1,000 miles.
+  basis: Toyota Corolla within ±1 model year (model_year), method: price ~ mileage + model year, r² 0.944
+  comparables: median $18,353, range $15,652–$21,808, n=42
+  each newer model year is worth about $892 here
+  This compares asking prices only — it knows nothing about condition, trim, options,
+  accident history or title status. Always inspect the car itself.
+```
+
+Other entry points: `python3 -m carmon appraise --vin <VIN>` for a stored listing,
+`python3 -m carmon deals` for everything ranked by how far below expected it sits, and
+`python3 -m carmon market` for the trend report. The website has `/market` and `/appraise`
+pages plus a "vs market" column, and the MCP server exposes `appraise_car`, `market_trend`,
+`market_report`, `best_deals` and `list_comparables`.
+
+### Two questions, two different waiting periods
+
+This matters for a search that runs a month or two before you buy:
+
+| Question | Kind | Ready when |
+| --- | --- | --- |
+| "Is this 2022 Corolla at 35k miles priced well?" | cross-sectional | **the first run** — every listing fetched is a price/mileage/year data point |
+| "Are prices drifting down?" · "How long do these sit?" · "Do sellers cut?" | longitudinal | **weeks** — it needs repeat observations of the same cars |
+
+So day one gives you deal grading; by week three you also get month-over-month medians, days
+on market, and price-cut frequency. `python3 -m carmon market` shows all of it:
+
+```
+Median asking price by month
+  2026-06  ████████████████████████████ $18,522  n=42
+  2026-07  ███████████████████████████  $17,842  n=42    -680 (-3.7%)
+  2026-08  ███████████████████████████  $17,876  n=42    +34 (+0.2%)
+
+Days on market: median 21.0 (from 18 listings that have since vanished)
+Price cuts: 14 of 126 tracked listings (11.1%), median cut $700 (3.9%)
+
+By model
+  model                          n     median                range   $/1k mi   days  cuts
+  Honda Civic                   42    $19,120      $15,642–$22,236       116     18  12%
+  Toyota Corolla                42    $18,353      $15,652–$21,808       120     24   9%
+```
+
+### How the estimate works
+
+1. **Comparables** — same make and model, within ±1 model year, including cars that have since
+   sold. Sold listings are the *best* evidence of a real market price; dropping them would bias
+   the sample toward overpriced inventory that nobody bought.
+2. **Fit** — weighted least squares of price against mileage and model year, weighting recent
+   sightings more heavily (`market.recency_half_life_days`, default 45). With 12+ comparables it
+   fits both variables; with 6+ it fits mileage alone; below that it falls back to the median
+   and says so.
+3. **Grade** — the gap between asking price and the fitted expectation: ≤−12% great deal, ≤−5%
+   good, ±5% fair, ≥+5% above market, ≥+12% well above.
+4. **Guards** — an estimate is clamped to stay near the observed price range so a wild
+   extrapolation can't masquerade as a bargain, and a car is never compared against itself.
+
+### What it will not pretend to know
+
+Every grade ships with `sample_size`, `confidence` and `basis_level`, and they are not
+decoration:
+
+* **Confidence is capped by what the comparables actually are.** If no Kia Fortes are stored,
+  the estimate falls back to other makes and confidence is forced to "very low" no matter how
+  many cars are in the sample — a large sample of the wrong cars is not confidence.
+* **`basis_level`** tells you which rung it used: `model_year` → `model` → `make` → `all`.
+  Anything past `model` is a rough bearing, not a valuation.
+* **It reads asking prices, not sale prices**, and it knows nothing about condition, trim,
+  options, accident history or title status. A car priced 15% below the curve is often priced
+  that way for a reason — it is a prompt to go look, not a verdict.
+
+The comparison also feeds the score as a **`vs market`** component (up to ±1.5, full value at
+12% off the expected price), which stays at 0 until there are at least 6 comparables.
+
+## 11. Tests
 
 ```bash
 python3 -m unittest discover -s tests -t . -v    # or: python3 -m carmon selftest
 ```
 
-265 tests covering scoring (including the 39,950-vs-40,050-vs-60,000 continuity requirement),
+320 tests covering scoring (including the 39,950-vs-40,050-vs-60,000 continuity requirement),
 normalization and filtering, quota enforcement, upsert/history bookkeeping, NHTSA and EPA
 enrichment (including NHTSA's habit of answering HTTP 400 with a valid "no recalls" body),
 config single-source-of-truth guards, quota pacing maths, the month-end sweep, demo-data
-expiry, digest rendering, both Discord transports and their payload limits, the CLI, every HTTP
+expiry, the market fit (checked by generating a synthetic market with a known depreciation
+rate and asserting the regression recovers it), digest rendering, both Discord transports and their payload limits, the CLI, every HTTP
 endpoint, and the MCP protocol layer end-to-end. No test touches the network — MarketCheck,
 Discord, NHTSA and EPA are all injected with fakes, and pace assertions use fixed dates so they
 cannot rot.
@@ -445,8 +542,8 @@ cannot rot.
 carmon/
   cli.py          config.py       db.py           digest.py
   marketcheck.py  nhtsa.py        fueleconomy.py  notify.py
-  pipeline.py     quota.py        scoring.py      sources.py
-  demo.py         webapp.py       mcp_server.py
+  market.py       pipeline.py     quota.py        scoring.py
+  sources.py      demo.py         webapp.py       mcp_server.py
   scrapers/       adapter interface for future non-MarketCheck sources (empty in v1)
 config.json  .env.example  requirements.txt  SPEC.md  SOURCES.md  deploy/  tests/
 ```
