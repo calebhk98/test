@@ -8,11 +8,11 @@ Ms. Vance calls the house on the Friday, which Chloe hears from the stairs, thou
 
 Chloe goes back up before the call is finished.
 
-The appointment is the following Wednesday, for which her mom takes the whole afternoon off work without saying anything about taking it. Dr. Ammons has a room with two chairs and a couch, and she sits in one of the chairs and points Chloe's mom at the other, leaving Chloe the whole couch to herself.
+The appointment is the following Wednesday, for which her mom takes the whole afternoon off work without saying anything about taking it. Dr. Ammons has a room with two chairs and a couch, and she sits in one of the chairs and points Chloe's mom at the other, leaving Chloe the whole couch to herself. It's deep enough that her feet stick straight out in front of her instead of reaching the floor, so she pulls them up under her and picks at a loose thread on the cushion instead of looking at either chair.
 
 "So tell me what's going on, and start wherever you like."
 
-"She's not eating," her mom says, and she has the whole list ready in order, each item already decided before she walked in. "She's sleeping eleven hours a night and she's still tired all day. She used to read constantly, four books a week since she was five, and she's stopped completely. She sits in her room with the light off and doesn't turn it on. When I ask her what she's doing she says nothing, and I think that's the true answer."
+"She's not eating," her mom says, both hands flat on her own knees, and she has the whole list ready in order, each item already decided before she walked in. "She's sleeping eleven hours a night and she's still tired all day. She used to read constantly, four books a week since she was five, and there's a stack of them by her bed she hasn't touched since August. She sits in her room with the light off and doesn't turn it on. When I ask her what she's doing she says nothing, and I think that's the true answer." She stops there, and her hands come apart, one of them smoothing a crease out of her skirt that isn't there.
 
 "Chloe, is that right?"
 
@@ -34,19 +34,21 @@ Dr. Ammons stops writing and puts the pen down flat on top of the pad.
 
 She asks a lot after that and she asks all of it carefully, working down through who ran it, and how they found you, and whether Chloe stayed overnight, and how far away it was from the house, whether the same adults were there the whole four weeks, whether anything happened, whether Chloe came back different, and in what way, and starting when.
 
+Chloe sits through all of it without being asked a single one of the questions herself, her thread-picking gone still somewhere around the one about whether the same adults were there the whole time, though she couldn't say which question exactly did it.
+
 "Nothing happened, she absolutely loved it."
 
 "I'm sure she did, but I'm asking anyway."
 
 "She's been asking to go back since the day we picked her up, most days more than once." Her mom shifts in the chair. "She asked me in the parking lot outside this building, about nine minutes ago."
 
-Dr. Ammons turns in her chair until she's facing the couch instead of the other chair.
+Dr. Ammons turns in her chair until she's facing the couch instead of the other chair, and Chloe sits up a little straighter without deciding to.
 
 "Chloe, what did you like about it?"
 
 There are about forty things and they won't go in a line. There's the bridge going over sideways all at once, and the paper on the floor with the eighths drawn straight through it, and Sam saying it's a room-shaped object. There's Mr. Baptiste doing the whole rectangle over from the beginning for Marisol, not mentioning it.
 
-"It was hard," she says, and Dr. Ammons writes that down, underlines part of it, and doesn't ask her one more question for the rest of the hour.
+"It was hard," she says, and Dr. Ammons writes that down, underlines part of it, and doesn't ask her one more question for the rest of the hour. Her feet find the floor again without her doing anything about it.
 
 In the car her mom holds the wheel with both hands without starting the engine.
 

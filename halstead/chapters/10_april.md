@@ -6,6 +6,8 @@ Sam sees her before she sees him.
 
 Coming down the hall at a full run, he hits her hard enough that she drops the bag, yelling something that isn't words. Then it is. "You came, you actually came, I told everybody you would. I said it to Ruth like nine separate times and she kept doing the face."
 
+The bag has skidded into the wall. Chloe picks it up before anyone else can, the rubber bands still around the socks inside it in the shape her mother rolled them in, and doesn't let go of it again.
+
 Ruth comes up behind him, her hand already out for the bag. "You said probably not," she says.
 
 "I said probably not once, in February, so it doesn't count as a thing I said."
@@ -40,11 +42,33 @@ Ruth tilts her head, "kind of, he's the one who wouldn't do the water thing," an
 
 It's four before Ruth even says it. She'd counted them herself, the week it happened.
 
+The lights go out on the corridor at eight. Fen doesn't say goodnight, she just stops answering, one arm already off the side of the mattress. Chloe lies on top of her own bed in the dark for a while, still in her socks, corridor light in a bar along the floor, listening for the radiator Fen promised her.
+
+"Fen."
+
+Nothing.
+
+"Fen, are you asleep?"
+
+"Nearly."
+
+"How do you know which rock goes where?"
+
+That gets her sitting up. "By size. Smallest closest to the door. If two look the same I hold one in each hand, and the heavier one goes first, because heavier's always a little bigger even when you can't see it." She reaches over and picks one off the sill without turning the lamp on, finding it in the dark by feel. "This one came in March. It went in fourth from the end and everything after it moved along one space. If I find a new one tomorrow, the whole row moves again. That's the only rule there is. Nobody touches them but me."
+
+"Why do you bother, if you're leaving the room in August?"
+
+"I'm not leaving them. I'm taking them and starting the sill again wherever I go next." She puts it back exactly where it came from, still in the dark, without checking.
+
+She's asleep before Chloe thinks of anything else to ask. The radiator does what Fen said it would, twice, and Chloe is awake for both of them.
+
 ---
 
 She starts on a Monday.
 
 Her day is seven hours. Five subjects for an hour each, then two hours in the afternoon that Fen calls the fun ones and everybody else calls the afternoon. When it finishes, she finishes, and there is nothing after it until dinner. The five are Spanish, mathematics, writing, literature and history. Writing turns out to be two pages a week, followed by twenty minutes of a man asking her why she put things in that order.
+
+Breakfast is louder than dinner, because nobody has decided yet how the day is going to go and everybody has an opinion about it before they've finished chewing. Somebody says it would take about a year to tunnel out of the building. Kavi says four months and keeps going long after anyone needed him to. Sam eats standing at the end of the table because his chair is Ruth's now, the result of an argument that started over a spoon in the second week and that neither of them remembers well enough to settle.
 
 Swimming is the first afternoon hour and the school assigns it to everybody. The pool is warm, the lane is hers for the whole hour, and the teacher stands at the shallow end and tells her what her left arm is doing until she can hear it coming before he says it. In the second week he gets in and does two lengths to show her what he means about the roll, and it is a different thing in the water than what any of them are doing. Then he gets out and carries on the sentence he was in the middle of.
 
@@ -74,7 +98,7 @@ She hates it for a month, but the first two weeks go badly in every subject she 
 
 "As many as you can carry, and there's no card, so nobody's writing any of this down. There's nobody at the desk after seven. Take what you want, bring it back when you're finished with it, and if you lose one then come and say you lost one."
 
-The library at home was one room off the gym with a rug in the middle of it, and the woman at the desk would let you take four books and not five, and Chloe argued with her about it three separate times and got four books every time. This one is the whole back of the ground floor, both floors of it, with a staircase inside it that goes up to a second level of shelves running all the way round. Nobody is at the desk on a Tuesday at eleven at night, and there is no card and no limit. The first time she takes eleven books, which she has to carry against her chest with her chin on the top one, but she only gets three of them read. The second week she takes six. It settles after that at somewhere between two and four, because the library is a four-minute walk from her room and it is open at eleven at night, so there is no reason to carry more than she can carry in one hand. She reads in the gaps. There is no reading in class, and there is very little in the afternoon, because Ruth is at the next station over with something always going on. So it happens in the hour before dinner, and after lights out with the corridor light coming under the door, and on the Saturdays when the other three are doing something she got out of. The mathematics thing happens in the third week of May, on a problem she has had for six days. There is a wheel rolling along a straight line and one point marked on the rim of it, and the question is how far that mark actually travels while the wheel goes round one time. It is further than the wheel goes. Everybody agrees on that much, but nobody in the room can say how much further.
+The library at home was one room off the gym with a rug in the middle of it, and the woman at the desk would let you take four books and not five, and Chloe argued with her about it three separate times and got four books every time. This one is the whole back of the ground floor, both floors of it, with a staircase inside it that goes up to a second level of shelves running all the way round. Nobody is at the desk on a Tuesday at eleven at night, and there is no card and no limit. The first time she takes eleven books, whatever is at eye height and looks interesting, which turns out to be most of it. She carries them against her chest with her chin on the top one, stopping twice on the stairs to get her arms back under the stack rather than put any of it down, and she only gets three of them read. The second week she takes six. It settles after that at somewhere between two and four, because the library is a four-minute walk from her room and it is open at eleven at night, so there is no reason to carry more than she can carry in one hand. She reads in the gaps. There is no reading in class, and there is very little in the afternoon, because Ruth is at the next station over with something always going on. So it happens in the hour before dinner, and after lights out with the corridor light coming under the door, and on the Saturdays when the other three are doing something she got out of. The mathematics thing happens in the third week of May, on a problem she has had for six days. There is a wheel rolling along a straight line and one point marked on the rim of it, and the question is how far that mark actually travels while the wheel goes round one time. It is further than the wheel goes. Everybody agrees on that much, but nobody in the room can say how much further.
 
 She has it in the shower on the Wednesday and stands there until the water goes cold, and the next morning she gets to the room eight minutes early. Ruth is already at the board.
 
@@ -122,7 +146,7 @@ Her mother laughs at that, properly, for longer than the answer deserves, and it
 
 "Are you happy there?"
 
-Chloe turns it over, the pool, or Ruth, or the library that's open all night. Her mother waits and does not fill the gap.
+Chloe sits down on the floor of the alcove instead of answering straight away, the cord stretched as far as it goes. The pool. Ruth. The library that's open all night with nobody at the desk. Her mother waits and does not fill the gap.
 
 "Yes," Chloe says.
 
@@ -136,7 +160,7 @@ The second term starts and the subjects change over. History splits into two thi
 
 She cannot do Central Asia without stopping to think about it. She has South America by the end of May and Europe two weeks after that, but she keeps putting the \-stans in the wrong order. All five of them, in a different wrong order every time she tries. Ruth can do the whole map, including the small islands off the top of Scotland, and is unbearable about it in a way Chloe finds she does not mind at all. Physics comes in at the same changeover and biology goes out. She writes the whole list in the back of the notebook, the six subjects plus the two afternoon hours, and puts the date next to it. There are people in her year who have been here three years already, and she wants to know how long their list is, but she cannot work out a way to ask that does not sound like she is measuring herself against them.
 
-In the last week of June she packs, and Fen's rocks come off the sill into a shoebox with newspaper folded between them. Chloe opens the desk drawer, where the envelope is still under the folder she left on top of it in April, and puts them both in the bottom of the bag. Ruth walks her down to the front steps, where Sam is already out on the grass talking to somebody else's grandmother about something that requires both his arms.
+In the last week of June she packs. "Which one's fourth from the end now?" Chloe asks, and Fen has to check, running a finger along the sill before she answers, because two new ones came in during March and she never mentioned it. Then Fen's rocks come off the sill into a shoebox with newspaper folded between them. Chloe opens the desk drawer, where the envelope is still under the folder she left on top of it in April, and puts them both in the bottom of the bag. Ruth walks her down to the front steps, where Sam is already out on the grass talking to somebody else's grandmother about something that requires both his arms.
 
 "Ten weeks is a long time to not do anything. My mom's got me at my cousin's for two of them, and there's nothing there except a lake and a shop."
 
