@@ -47,6 +47,3 @@ Everyone signs off. Theo signs off last and says again that this is insane.
 
 
 Chloe is four months into a job with a security clearance when she writes those nine pages, her hand steady through all nine of them, and she does not stop.
-
-
-________________

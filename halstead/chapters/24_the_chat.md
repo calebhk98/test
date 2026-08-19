@@ -553,6 +553,3 @@ The lock they built at thirteen to get past a teacher is still the only thing st
 
 
 The chat moves on within about ten minutes. Chloe leaves the tab open on her desk for the rest of the evening, the cursor sitting in the empty box where a reply would go.
-
-
-________________

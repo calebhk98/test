@@ -144,6 +144,3 @@ eli: ruth i dont know
 
 
 eli: i have never once been at the top of a room in my life
-
-
-________________

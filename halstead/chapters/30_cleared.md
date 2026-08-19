@@ -96,6 +96,3 @@ The clearance comes through in the autumn.
 
 
 She starts in January. She's twenty-one in August.
-
-
-________________

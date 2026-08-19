@@ -246,11 +246,8 @@ Outside her window the snow along the path has gone soft and gray, the first rea
 
 Twice that week she takes the letters out again and counts them, and both times gets twelve. Then there's an exam on Thursday, and a language report due the Monday after that, and the letters go back in the drawer and stay there.
 
-
-________________
-
 Chapter Seventeen: The Offer
-Mr. Amberg runs the exit interviews himself, fifteen minutes each, ten students a day for nine days starting the first Monday of April. A list goes up outside the staff office every morning with that day's names in order, and a runner comes down from admin to call the next one in when the clock on his desk says it's time. He runs each one the full fifteen minutes, by the staff's own count, even the ones that could have ended in under a minute. His own contracts class still meets four times that week, the interviews slotted into whatever's left of the day around it.
+Mr. Amberg runs the exit interviews himself, fifteen minutes each, ten or eleven students a day for nine days starting the first Monday of April. A list goes up outside the staff office every morning with that day's names in order, and a runner comes down from admin to call the next one in when the clock on his desk says it's time. He runs each one the full fifteen minutes, by the staff's own count, even the ones that could have ended in under a minute. His own contracts class still meets four times that week, the interviews slotted into whatever's left of the day around it.
 
 
 Chloe's slot falls on the Wednesday of the second week, third appointment after lunch. His office holds a desk, two chairs, and a small clock turned to face only him. A folder is already open on the desk when she sits down, her name typed across the tab, and he starts before she's settled.
@@ -1225,9 +1222,6 @@ The lock they built at thirteen to get past a teacher is still the only thing st
 
 The chat moves on within about ten minutes. Chloe leaves the tab open on her desk for the rest of the evening, the cursor sitting in the empty box where a reply would go.
 
-
-________________
-
 Chapter Twenty: Nineteen
 Chloe gets a job at a company that translates documents for businesses: contracts, manuals, safety sheets, the kind of paperwork that has to say the same thing in six languages and cannot afford to say it almost. It is steady and slow, and there are about forty people in the building, which makes it the first room she has spent a working day in that is full of people unlike her.
 
@@ -1584,9 +1578,6 @@ It's four paragraphs. The first three describe what he did on the range. The fou
 
 
 None of it reaches Sam. Sam is having a great month.
-
-
-________________
 
 Chapter Twenty-Two: The File
 Theo's job is reading things and saying what they mean.

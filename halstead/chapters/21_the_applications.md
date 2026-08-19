@@ -248,6 +248,3 @@ Outside her window the snow along the path has gone soft and gray, the first rea
 
 
 Twice that week she takes the letters out again and counts them, and both times gets twelve. Then there's an exam on Thursday, and a language report due the Monday after that, and the letters go back in the drawer and stay there.
-
-
-________________

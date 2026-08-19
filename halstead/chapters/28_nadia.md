@@ -98,6 +98,3 @@ nadia: yeah
 
 
 nadia: yeah. doesnt feel right though
-
-
-________________

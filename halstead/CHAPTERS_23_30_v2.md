@@ -96,9 +96,6 @@ nadia: yeah
 
 nadia: yeah. doesnt feel right though
 
-
-________________
-
 Chapter Twenty-Four: The Exercise
 The exercise runs four days and Sam is on the receiving end of most of it.
 
@@ -157,9 +154,6 @@ nadia: sam
 
 
 sam: i genuinely thought there was a real one
-
-
-________________
 
 Chapter Twenty-Five: Cleared
 Chloe's blog gets big in about fourteen months.
@@ -256,9 +250,6 @@ The clearance comes through in the autumn.
 
 
 She starts in January. She's twenty-one in August.
-
-
-________________
 
 Chapter Twenty-Six: Ruth
 Ruth spends her first year at MIT believing she has been put in a remedial track.
@@ -388,9 +379,6 @@ chloe: yeah
 
 
 sam: yeah
-
-
-________________
 
 Chapter Twenty-Seven: The Money
 The financial one takes eleven weeks.
@@ -554,9 +542,6 @@ eli: yeah
 
 eli: so lets go and read it
 
-
-________________
-
 Chapter Twenty-Eight: The Other One
 Eli proposes the second worm and Theo says no for nine days.
 
@@ -603,9 +588,6 @@ Everyone signs off. Theo signs off last and says again that this is insane.
 
 
 Chloe is four months into a job with a security clearance when she writes those nine pages, her hand steady through all nine of them, and she does not stop.
-
-
-________________
 
 Chapter Twenty-Nine: The Files
 There is a file on all ninety-one of them.
@@ -750,9 +732,6 @@ eli: ruth i dont know
 
 
 eli: i have never once been at the top of a room in my life
-
-
-________________
 
 Chapter Thirty: Nine Minutes
 The worm goes quiet on a Thursday in June.

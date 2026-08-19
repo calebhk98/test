@@ -4454,13 +4454,11 @@ Outside her window the snow along the path has gone soft and gray, the first rea
 
 Twice that week she takes the letters out again and counts them, and both times gets twelve. Then there's an exam on Thursday, and a language report due the Monday after that, and the letters go back in the drawer and stay there.
 
----
-
 ## Chapter Twenty-Two: The Offer
 
 *April 2023*
 
-Mr. Amberg runs the exit interviews himself, fifteen minutes each, ten students a day for nine days starting the first Monday of April. A list goes up outside the staff office every morning with that day's names in order, and a runner comes down from admin to call the next one in when the clock on his desk says it's time. He runs each one the full fifteen minutes, by the staff's own count, even the ones that could have ended in under a minute. His own contracts class still meets four times that week, the interviews slotted into whatever's left of the day around it.
+Mr. Amberg runs the exit interviews himself, fifteen minutes each, ten or eleven students a day for nine days starting the first Monday of April. A list goes up outside the staff office every morning with that day's names in order, and a runner comes down from admin to call the next one in when the clock on his desk says it's time. He runs each one the full fifteen minutes, by the staff's own count, even the ones that could have ended in under a minute. His own contracts class still meets four times that week, the interviews slotted into whatever's left of the day around it.
 
 Chloe's slot falls on the Wednesday of the second week, third appointment after lunch. His office holds a desk, two chairs, and a small clock turned to face only him. A folder is already open on the desk when she sits down, her name typed across the tab, and he starts before she's settled.
 
@@ -5096,8 +5094,6 @@ The lock they built at thirteen to get past a teacher is still the only thing st
 
 The chat moves on within about ten minutes. Chloe leaves the tab open on her desk for the rest of the evening, the cursor sitting in the empty box where a reply would go.
 
----
-
 ## Chapter Twenty-Five: Nineteen
 
 *September 2024 – April 2025*
@@ -5334,8 +5330,6 @@ It's four paragraphs. The first three describe what he did on the range. The fou
 
 None of it reaches Sam. Sam is having a great month.
 
----
-
 ## Chapter Twenty-Seven: The File
 
 *October 2025*
@@ -5478,8 +5472,6 @@ nadia: yeah
 
 nadia: yeah. doesnt feel right though
 
----
-
 ## Chapter Twenty-Nine: The Exercise
 
 *February 2024*
@@ -5521,8 +5513,6 @@ sam: i asked when the real one was
 nadia: sam
 
 sam: i genuinely thought there was a real one
-
----
 
 ## Chapter Thirty: Cleared
 
@@ -5587,8 +5577,6 @@ She says it anyway. It's true.
 The clearance comes through in the autumn.
 
 She starts in January. She's twenty-one in August.
-
----
 
 ## Chapter Thirty-One: Ruth
 
@@ -5675,8 +5663,6 @@ ruth: i want to know why it was me
 chloe: yeah
 
 sam: yeah
-
----
 
 ## Chapter Thirty-Two: The Money
 
@@ -5786,8 +5772,6 @@ eli: yeah
 
 eli: so lets go and read it
 
----
-
 ## Chapter Thirty-Three: The Other One
 
 *May 2026 – June 2026*
@@ -5821,8 +5805,6 @@ They test it for five weeks. Chloe writes the rules because she's the one who wr
 Everyone signs off. Theo signs off last and says again that this is insane.
 
 Chloe is four months into a job with a security clearance when she writes those nine pages, her hand steady through all nine of them, and she does not stop.
-
----
 
 ## Chapter Thirty-Four: The Files
 
@@ -5919,8 +5901,6 @@ ruth: eli how good are we
 eli: ruth i dont know
 
 eli: i have never once been at the top of a room in my life
-
----
 
 ## Chapter Thirty-Five: Nine Minutes
 

@@ -75,6 +75,3 @@ It's four paragraphs. The first three describe what he did on the range. The fou
 
 
 None of it reaches Sam. Sam is having a great month.
-
-
-________________
