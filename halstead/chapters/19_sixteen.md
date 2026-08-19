@@ -6,17 +6,17 @@ They take the bar in April, over two days, in the long room on the second floor,
 
 Afterward, Sam catches her at the bottom of the stairs with his collar open.
 
-"How long was the third one?"
+"How long was your answer to question three?"
 
-"Which third one?"
+"Which paper?"
 
-"Day two. The shed." As he walks backward in front of her, she steers him round the corner by the elbow. "I gave it eleven pages."
+"Day two. The shed one." As he walks backward in front of her, she steers him round the corner by the elbow. "I gave it eleven pages."
 
-"I gave it four."
+"I gave it four pages."
 
-"Four?"
+"Four pages?"
 
-"It's a question about who carries the risk while a thing is sitting in a shed. There's an answer, and there's why." She has her bag on both shoulders and keeps walking. "After that you're padding."
+"It's a contract question about who carries the risk while the goods are sitting in a shed. There's an answer, and there's why." She has her bag on both shoulders and keeps walking. "After that you're padding."
 
 Sam goes quiet the whole length of the corridor, then says he would like to withdraw about seven of his eleven pages.
 
@@ -38,7 +38,7 @@ She takes her paper to Amberg two days later, who has the mark scheme out on the
 
 "I have the answer to question three."
 
-"You do. It is correct and it is in your second line." He turns the scheme around so it faces her and puts a finger under a row of it. "There are four marks underneath that answer. One for the rule you are relying on. One for where the rule comes from. One for why a shed is inside it. One for what happens if the shed burns down on the Tuesday before delivery."
+"You do. It is correct and it is in your second line." He turns the scheme around so it faces her and puts a finger under a row of it, four rows printed one below the other, each with a mark value and a line of description beside it. "There are four marks underneath that answer. One for the rule you are relying on. One for where the rule comes from. One for why a shed is inside it. One for what happens if the shed burns down on the Tuesday before delivery." He lays her own paper next to the scheme. A tick sits by her second line. The four rows below it are empty.
 
 "All four of those follow from the answer."
 
@@ -94,7 +94,7 @@ She looks at the gap, and the car goes through it.
 
 ---
 
-She takes it again in October, in the same room, two rows over from where she sat in April.
+She sits the bar again in October, the retake for the thirty-nine who failed in April, in the same room, two rows over from where she sat the first time.
 
 Question six is a rented forklift. She has the answer in her second line, then writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. The whole of it takes nineteen minutes. She reads it back and doesn't change a word.
 
