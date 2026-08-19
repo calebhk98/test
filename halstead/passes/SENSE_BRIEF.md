@@ -14,6 +14,20 @@ the whole job, and a precise identification is worth more than a fix.
 Read nothing but your chapter. Work down it from the top, one paragraph at a
 time.
 
+**First, work out what a paragraph is in your file, because it differs.** Some
+chapters separate paragraphs with a blank line. Others, and chapters one to six
+are the ones that do this, put every paragraph on its own line ending in two
+spaces, with no blank lines at all. In those files a whole scene looks like one
+enormous block and it is not: it is fifty paragraphs. Count them before you
+start. If your chapter has three blank-line blocks and a hundred and twenty-eight
+lines ending in two spaces, you have a hundred and twenty-eight paragraphs to
+restate, not three.
+
+    grep -c '  $' chapters/NN_x.md
+
+tells you how many hard-break paragraphs your file has. If that number is large,
+that is your paragraph count.
+
 **Write out, in your report, a one-line restatement of every paragraph, in your
 own plain words, in order, numbered by line.** Not a summary of the chapter. One
 line per paragraph, every paragraph, saying what happens in it or what it says.
