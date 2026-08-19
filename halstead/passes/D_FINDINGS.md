@@ -135,6 +135,30 @@ These are checkable and wrong. Highest priority.
   is eighteen — thirteen was five years ago, not nine. L107 ("Their own encryption has gone nine
   years") and L552 ("the same lock nine years running") repeat it. Nine years back would put them at
   nine years old. Should be five throughout. *(verified directly)*
+- **ch22 L5 vs L61 — the interviews are and are not fifteen minutes.** L5: "He runs each one the full
+  fifteen minutes, by the staff's own count, even the ones that could have ended in under a minute."
+  L61, same chapter: the four o'clock boy is "back out in six minutes flat." *(verified directly)*
+- **ch22 L23 — the forge tenure undercounts.** "gone back to the forge every Thursday for four
+  years." The forge starts at twelve (ch19 L105, "has been since she was twelve") and ch22 is dated
+  April 2023, when Chloe is seventeen — five to six years. ch19's own "four years" is correct there,
+  at sixteen; ch22 reuses the figure a year later without advancing it. *(verified directly)*
+- **ch25 L86 — one paragraph gives the piece one day and three days.** "The first piece takes most of
+  a Saturday," and inside the same paragraph she "reads them against each other for three days before
+  she writes a line," having opened the tabs "before noon" and finished "by midnight."
+  *(verified directly)*
+- **ch25 L98 — the school writing pace is off by about twentyfold.** "Six thousand words is about a
+  day's work, and she was doing ten of these a week at school." Ten six-thousand-word pieces a week
+  is sixty thousand words; the established load is one ten-page essay a week (ch13 L11,
+  `CURRICULUM_GRID.md`). *(verified directly)*
+- **ch33 L8 — the narration promises a scene the dialogue doesn't contain.** "Ruth quotes the
+  sentencing ranges from memory, twice, at Eli." In the exchange that follows she says "noted," "in
+  the chat, theo," "thats not the same," and "and if youre wrong about the cameras." No sentencing
+  range appears anywhere. *(verified directly)*
+- **ch35 L107 vs ch32 L120 — two wrong answers or three.** ch32: "theyve been wrong twice and theyre
+  still wrong." ch35: "which has three wrong answers on file." Nothing between the two chapters adds
+  a third. *(verified directly)*
+- **ch35 L107 propagates ch32's bad number** — "seven people in their twenties settled it in eleven
+  weeks" reuses the eleven-week figure that ch32 itself overruns by two months. Fix them together.
 - **ch23 L104 — a fourth form appears out of three.** "The recruiter slides three separate forms
   across the desk… but he reads the fourth form properly, twice." *(verified directly)*
 - **ch23 L101 vs L95/L107 — everybody is packing before anybody has started packing.** L101: "That
@@ -287,6 +311,11 @@ something the reader was never given.
 - ch26 L14 — "somebody has started printing them out." Never identified, never mentioned again.
 - ch32 L114 — "somebody handed the new guy a retirement box." Whose retirement, and how it came to
   hold material far above a new analyst's clearance, is never addressed.
+- ch35 L11 — "He pulls the logs," the chapter's third paragraph, with no person introduced anywhere
+  before it.
+- ch25 L278 — "In April she stops posting." "She" is Ruth. Every other "she" in the chapter is Chloe,
+  and three lines later "Chloe reads both messages twice" — about the disappearance the sentence has
+  just attributed to her. This one actively misdirects on a first read.
 
 ## 4. Unattributed dialogue
 
@@ -431,6 +460,11 @@ reviewers were reacting to when they read Chloe as non-human, and it is not conf
   is left entirely implicit.
 - ch26 L72 — "forwarded twice by Friday," with neither destination given, in a paragraph that is
   otherwise precise about exactly who reads it next.
+- **ch33 L43 → ch35, the loaded gun that never fires.** The nine pages Chloe writes cover "the
+  response if it's noticed, and what happens if any one of the seven says stop, which is that all of
+  it ends inside the hour with no argument." In ch35 it *is* noticed — "somebody stopped it and
+  started it and cleaned up after themselves" — and neither the response procedure nor the stop
+  clause is mentioned by anyone. The rules are built for exactly this and go unopened.
 
 ## 7. The category instead of the thing
 
@@ -633,6 +667,11 @@ text. Several were created by this session's own rewrites.
   gives him exactly that shape.
 - **BELL.md** places the metronome in his coat pocket for two years; ch14 L9 nails it to a post.
 - **DEB.md** already flags its own name collision with the ch5 swim instructor.
+- **ch33 L26/L32 — Ruth's one exclusive move, dropped twice in an exchange where she also uses it.**
+  She corrects Eli twice without naming him ("thats not the same," "and if youre wrong about the
+  cameras") in the same conversation where she does name Theo ("in the chat, theo"). The same lapse
+  is logged at ch5 L21/L101. Her sheet calls naming-inside-the-correction a move no one else in the
+  cast owns.
 - **RUTH.md** already flags the ch17 "Aymar" collision and recommends renaming the stopwatch student.
 - **SAM.md's "Known problems" #1 cites `26_ten_targets.md:58`** for a mirrored line ("A gun you can't
   stop a projectile with isn't a tool…") that is no longer in the file. The sheet is critiquing a
@@ -701,6 +740,13 @@ flagged with the justification sitting in the same paragraph.
   favourable answer, so this reads as deliberate. It is still the same flat-absolute-then-exception
   construction as ch3's "Nobody has ever sent Chloe anything," which is a real error elsewhere, so
   it's worth a look at the sentence rather than the scene.
+
+- **ch33 L8, "Every one of them knows the law cold."** Reported as contradicted by Chloe's bar-exam
+  failure at ch19 L25. She fails in April by four points and passes in October by twenty-two; by 2026
+  she knows the law. Not a finding.
+- **ch31's dateline.** Reported as contradicting its own opening line, "Ruth spends her first year at
+  MIT believing she has been put in a remedial track." A chapter spanning October 2023 – November
+  2025 can open in the first of those years. Not a finding.
 
 ### Also withdrawn
 
