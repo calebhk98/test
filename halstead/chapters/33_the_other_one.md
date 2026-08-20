@@ -8,6 +8,9 @@ Eli proposes the second worm and Theo says no for nine days.
 He sends it the way he sends anything he's actually thought through: not a chat message but a document, twelve pages, at two in the morning, at the kitchen table in the apartment three states from where he grew up. He sends it to six people instead of one, on purpose, because a plan this size only holds together if all seven of them read the same twelve pages instead of six different memories of them later. It reads like a plan because it is one — access path, timeline, what gets touched and what gets left exactly where it was — and it closes on the same idea the financial worm's whole design leaned on six months earlier, that boring beats clever every time somebody's watching for clever.
 
 
+The target is the unit Theo already told them exists, the one that's kept a file on the school for nineteen years and been wrong about who runs it twice. Getting past its security once is a solvable problem. Getting past it and leaving nothing behind to say anyone was ever inside is the harder one, and the twelve pages are mostly about the second problem, not the first.
+
+
 Theo reads it twice the night it lands, then closes the laptop and makes tea the way his grandmother made it, milk first, and reads the document a third time standing at the counter with the mug going cold in his hand. For nine days he opens it, reads a line or two, and closes it again. He walks the same two blocks to work and back. In the chat he keeps to small talk, the weather outside his building, a joke Sam makes about the food at basic. Ruth texts him alone once, just his name, and lets it sit.
 
 
@@ -51,6 +54,9 @@ ruth: and if youre wrong about the cameras
 
 
 eli: then i go away for fifteen years, so im not going to be wrong
+
+
+Ruth reads that twice from the floor of her dorm room, closes her eyes for a second, and lets it stand.
 
 
 ________________
@@ -114,7 +120,13 @@ Theo could have written cleaner rules than anyone else at that table — it is, 
 The test runs five weeks. For most of them the tool sits somewhere only Eli and Kavi can see, doing nothing but watch itself work: how long a query takes, whether anything logs it, whether the shape of its own traffic looks like the ordinary noise around it. Kavi's watcher runs the whole time too, watching the watcher, the same doubled caution that caught the sensor gap years ago. Twice a week Eli posts one line to the group, clean or some technical variant of clean, and twice a week that's the whole of it.
 
 
+Eli spends the five weeks the way he spends any five weeks with a real problem sitting in the middle of them: badly slept, mostly cheerful, three shirts in rotation and the same breakfast every morning because deciding costs something he'd rather spend elsewhere. Kavi spends them the way he spends any five weeks like that, in the same chair, turning whatever's on the table over in his hands and setting it back down exactly where it was.
+
+
 Chloe spends most of the five weeks at her own kitchen counter, most nights, the coffee going cold twice before she remembers it's there. Nine pages, when she's finished: what the tool leaves alone no matter what the access allows, what counts as being noticed and what falls short of that, and the one rule everybody reads twice, that any single one of the seven can end it, no vote and no argument, and the rest have one hour to comply.
+
+
+The first page is the shortest to write and the one she's surest of: it limits the tool to the target list alone, sets everything it touches back exactly the way it found it, and closes the window the moment the window's job is done. It reads like a checklist because that's what it needs to be, not because it's the least important page.
 
 
 The middle section is the one she rewrites three times. "Noticed" has to mean a specific, confirmable event — a name gets called, an account gets frozen, somebody shows up at a door. A blip that looks wrong for a minute and settles again stays outside that definition, on purpose. She writes the line twice, in two different sets of words, because she already knows which of the seven is going to be the one squinting at an ordinary blip at two in the morning someday, wondering if it's the first real one.
@@ -156,4 +168,7 @@ Chloe signs the night she finishes page nine, before she's had time to reconside
 Theo signs off last, on the far side of the five weeks, and says again that this is insane.
 
 
-Chloe is four months into a job with a security clearance when she writes those nine pages, her hand steady through all nine of them, and she does not stop.
+A clearance is a piece of paper that says the government has already decided to trust her with things most people never get near, and she's about to spend that trust on a file it never agreed to show her. She works through what that actually costs her exactly once, on the drive home from the office the week the document arrives, and reaches the end of the thought in about as long as it takes a light to change.
+
+
+Chloe is four months into that job when she writes the nine pages, her hand steady through all nine of them, and she does not stop.
