@@ -30,7 +30,7 @@ Kavi looks at the board, then at her, then back at the board.
 
 "It's fine." She takes the list in one more time, her hands flat and still at her sides, then steps back from the board to let somebody else in.
 
-Fifty-one in the year pass and thirty-nine do not, hers among the thirty-nine, and by dinner those thirty-nine have found each other by sight, because that board hangs in a hall everybody walks past four times a day.
+Fifty-two in the year pass and thirty-nine do not, hers among the thirty-nine, and by dinner those thirty-nine have found each other by sight, because that board hangs in a hall everybody walks past four times a day.
 
 She takes her paper to Amberg two days later, who has the mark scheme out on the desk before she gets the door shut.
 
@@ -98,11 +98,11 @@ She sits the bar again in October, the retake for the thirty-nine who failed in 
 
 Question six is a rented forklift. She has the answer in her second line, then writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. The whole of it takes nineteen minutes. She reads it back and doesn't change a word.
 
-She passes by twenty-two.
+She passes by twenty-two, and she reads the number twice before she puts the page away.
 
 In November she sits in the library with something else open in front of her, thinking about April instead. It happens again in December, and once more in February. She still shuts books harder than she means to in November, and she could not tell anybody why she is doing it.
 
-The forge is Thursdays, and has been since she was twelve. The work down there stays between her and Pruitt, in four years the whole of his commentary has been telling her which end to hold.
+The forge is Thursdays, and has been since she was twelve. The work down there stays between her and Pruitt, in four years the whole of his commentary has come to a handful of sentences.
 
 "You're off early."
 
@@ -128,7 +128,7 @@ Her mother watches that from the kitchen window for two weeks before she comes o
 
 "I could put up a shelf."
 
-"You could." She sits on the step above her for about a minute, then gets up, takes the empty glass with her, and goes back inside.
+"You could." She sits on the step above her for about a minute, then gets up and goes back inside.
 
 Her father asks about Sam instead of about her classes.
 
@@ -148,7 +148,7 @@ Her father laughs at that, head back, longer than the joke should carry him.
 
 "Because I asked her to."
 
-He nods at that and asks about Kavi, so she tells him about Kavi and the maps, and then about Priya, and then about the negotiation board in the hallway. Nadia's eighty-one percent has been on it since February, Priya's name next to it.
+He nods at that and asks about Kavi, so she tells him about Kavi, and then about Priya, and then about the negotiation board in the hallway. Nadia's eighty-one percent has been on it since February, Priya's name next to it.
 
 "Did Priya know it was coming?"
 
@@ -160,4 +160,4 @@ Chloe puts her heels up on the lower step and takes her time with that one.
 
 "Because the boy in the room before her was going to get it, and she'd rather it was Nadia."
 
-Her father turns his glass a quarter round on the step, and then asks her what the two of them are like at a table together now, a question that stops her with the glass halfway up. She is still answering when the sun goes off the garage roof, and her mother turns the porch lamp on from the kitchen switch.
+Her father asks her what Priya and Nadia are like at a table together now, a question that stops her with the glass halfway up. She is still answering when the sun goes off the garage roof, and her mother turns the porch lamp on from the kitchen switch.

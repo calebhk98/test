@@ -30,15 +30,15 @@ Voss gives her five more series. On the sixth he is at her shoulder with his han
 
 She goes to dinner and clears the plate, but it could have been anything on it.
 
-She tries the old things. The count goes on her leg walking down to the range, the way it did when she was nine, and the number is the same on the Friday. Three different places in the cycle she holds her breath, but one of those makes her dizzy. By the second week of March, she has six weeks of cards that are fanned out across the floor of her room. She finds a pattern on the Tuesday and spends two days on it, but it turns out to be the wind that comes through the open end of the lane. She bends the corner of that card back and forth, until it comes off in her fingers.
+She tries the old things. The count goes on her leg walking down to the range, the way it did when she was eleven, and the number is the same on the Friday. Three different places in the cycle she holds her breath, but one of those makes her dizzy. By the second week of March, she has six weeks of cards that are fanned out across the floor of her room. She finds a pattern on the Tuesday and spends two days on it, but it turns out to be the wind that comes through the open end of the lane. She bends the corner of that card back and forth, until it comes off in her fingers.
 
 Later that month, she asks the office for every range card in the year, and a woman hands her a box of ninety with no lock on it.
 
-It takes her four evenings. Eleven people have stopped moving: five of them at sixty, three at fifty-eight, two at fifty-five, and one who has been sitting at sixty-three since the previous November. The curve flattens in the same place for all eleven, whether they started at forty or at twelve.
+It takes her four evenings. Eleven people have stopped moving: five of them at sixty, three at fifty-eight, two at fifty-five, and one who has been sitting at sixty-three since the previous November. The curve flattens into the same narrow band for all eleven, whether it took them forty sessions or twelve.
 
 Voss reads the four evenings' work standing in the doorway of the range office.
 
-"That's every card in the year." Chloe has a hand flat on the doorframe. "Eleven of us stopped in the same place and it doesn't matter where we started."
+"That's every card in the year." Chloe has a hand flat on the doorframe. "Eleven of us stopped in the same narrow band and it doesn't matter where we started."
 
 "It's a real thing."
 
@@ -112,17 +112,17 @@ She lends forty to a girl called Fen at nine percent against a table saw, and th
 
 All three pay her back, and she finishes the year with two hundred and seventeen dollars to Rustem's nine hundred and forty.
 
-Hark has her at the board in April with the ledger written up. She stands at the back with her arms folded and reads all three columns before she says anything.
+Hark has her at the board in April with the ledger written up. Hark stands at the back with her arms folded and reads all three columns before she says anything.
 
 "You bought a piece of somebody else's ceiling."
 
-"He had two hundred dollars and a barn with sixty motors in it. He was capped and I wasn't." Chloe caps the pen and holds on to it. "I don't have to know what a bad bearing sounds like. I have to know whether he does, and he had already sold four."
+"He had two hundred dollars and a barn with sixty motors in it. He was capped and I wasn't." Chloe caps the pen and holds on to it. "I don't have to know what a bad bearing sounds like. I have to know whether he does, and he already had four turning over."
 
 "You had the right numbers and the wrong answer. How much of it could you have lost?"
 
-"Thirty."
+"A hundred and twenty."
 
-"Thirty dollars, across nine months." Hark comes across the room and stops at the front row. "Rustem burned five motors and spent every Saturday since October learning what he can hear from the far side of a barn. Priya is down eighty and can tell you which paragraph she read wrong. You are up seventeen dollars, eight percent, you are barely beating inflation."
+"A hundred and twenty dollars, across nine months." Hark comes across the room and stops at the front row. "Rustem burned five motors and spent every Saturday since October learning what he can hear from the far side of a barn. Priya is down eighty and can tell you which paragraph she read wrong. You are up seventeen dollars, eight percent, you are barely beating inflation."
 
 Chloe wipes the board and sits down.
 
@@ -142,7 +142,7 @@ Chloe sets her bag against the wall. "All right, shoot."
 
 "You can't be held to anything. I can. So asking is what I have."
 
-She lies awake that night, and snaps at Sam over nothing at breakfast the next morning, then apologizes for it before he can ask why. Then she takes a week over it, and she builds the case against first. Fifteen years old, asked to guard a secret that already had four other names on it, and she makes that side as hard as she can. Then she builds the other one, from Sandoval's side, and from her own, and from the side of the four names on the form. She is quiet at dinner on Wednesday, and Sam asks her twice whether she is all right.
+She lies awake that night, and snaps at Sam over nothing at breakfast the next morning, then apologizes for it before he can ask why. Then she takes a week over it, and she builds the case against first. Fifteen years old, asked to guard a secret that already had four other names on it, and she makes that side as hard as she can. Then she builds the other one, from her own, and from the side of the four names on the form. She is quiet at dinner on Wednesday, and Sam asks her twice whether she is all right.
 
 She stops saying what she does in the afternoons, and it takes about four days to stop being a decision.
 

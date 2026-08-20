@@ -1302,6 +1302,8 @@ Chloe watches her through the window, until her dad says something from the othe
 
 ## Chapter Ten: April
 
+*April 2013 – June 2013*
+
 Sam sees her before she sees him.
 
 Coming down the hall at a full run, he hits her hard enough that she drops the bag, sound first and words a beat behind it. "You came, you actually came, I told everybody you would. I said it to Ruth like nine separate times and she kept doing the face."
@@ -1340,7 +1342,7 @@ At dinner she counts eleven faces she knows before the food comes and gives up c
 
 Ruth tilts her head, "kind of, he's the one who wouldn't do the water thing," and stacks her tray on the rack. Then, before Chloe can reach for her own, she takes that one too. "He went home, and then four more went the week after. My mom asked me about it in the car and I didn't know what to tell her."
 
-It's four before Ruth even says it. She'd counted them herself, the week it happened.
+She already knows it's four. She'd counted them herself, the week it happened, before Ruth ever said so.
 
 The lights go out on the corridor at eight. Fen stops answering partway through a sentence, one arm already off the side of the mattress. Chloe lies on top of her own bed in the dark for a while, still in her socks, corridor light in a bar along the floor, listening for the radiator Fen promised her.
 
@@ -1376,7 +1378,7 @@ Priya reaches past her for the bread at dinner. "He went to the Olympics," she s
 
 The second hour she picks herself, off a list on a wall, reading it alone. She picks cooking too, because Ruth is already in it. Cooking is knife work, standing up straight, cleaning as you go, plus being told for the fourth time that your onion is uneven end to end.
 
-"Yours is a triangle."
+"Yours is a triangle," the cooking teacher says.
 
 "It is not a triangle."
 
@@ -1460,21 +1462,24 @@ The second term starts and the subjects change over. History splits into two thi
 
 She still has to stop and think her way through Central Asia. She has South America by the end of May and Europe two weeks after that, but she keeps putting the \-stans in the wrong order. All five of them, in a different wrong order every time she tries. Ruth can do the whole map, including the small islands off the top of Scotland, and is unbearable about it in a way Chloe actually likes. Physics comes in at the same changeover and biology goes out. She writes the whole list in the back of the notebook, the six subjects plus the two afternoon hours, and puts the date next to it. There are people in her year who have been here three years already, and she wants to know how long their list is, but every question she tries sounds like she is measuring herself against them, so she keeps it to herself.
 
-In the last week of June she packs. "Which one's fourth from the end now?" Chloe asks, and Fen has to check, running a finger along the sill before she answers, because two new ones came in during March, which Fen had kept to herself. Then Fen's rocks come off the sill into a shoebox with newspaper folded between them. Chloe opens the desk drawer, where the envelope is still under the folder she left on top of it in April, and puts them both in the bottom of the bag. Ruth walks her down to the front steps, where Sam is already out on the grass talking to somebody else's grandmother about something that requires both his arms.
+In the last week of June she packs. "Which one's fourth from the end now?" Chloe asks, and Fen has to check, running a finger along the sill before she answers, because one more came in during March, which Fen had kept to herself. Then Fen's rocks come off the sill into a shoebox with newspaper folded between them. Chloe opens the desk drawer, where the envelope is still under the folder she left on top of it in April, and puts them both in the bottom of the bag. Ruth walks her down to the front steps, where Sam is already out on the grass talking to somebody else's grandmother about something that requires both his arms.
 
-"Ten weeks is a long time to not do anything. My mom's got me at my cousin's for two of them, and there's nothing there except a lake and a shop."
+"Ten weeks is a long time to not do anything," Ruth says. "My mom's got me at my cousin's for two of them, and there's nothing there except a lake and a shop."
 
-"I'll call you on a Wednesday."
+"I'll call you on a Wednesday," Chloe says.
 
-"Wednesday's fine. Not before ten, my dad's asleep."
+"Wednesday's fine," Ruth says. "Not before ten, my dad's asleep."
 
-"September."
+"September," Chloe says.
 
-"September, then."
+"September, then," Ruth says.
 
 In the car Chloe opens the notebook and checks the inside cover, where three names sit with their spellings and numbers written out, before closing it and holding it on her lap for four hundred miles.
 
+
 ## Chapter Eleven: Eight
+
+*June 2013 – June 2014*
 
 Her mother has kept the room the way it was, down to the sock on the radiator, and the bike is still in the garage under a sheet. Chloe gets it out on the second day and rides it to the end of the road and back, her knees coming up past the handlebars on every stroke. Her mother watches from the porch with a coffee. "We'll get you a bigger one."
 
@@ -1532,7 +1537,7 @@ Her mother says just the one word. She says it four more times, and each time it
 
 "Obviously I'll laugh at you," her mother says, and wipes her eye with the back of her wrist. "Say the sentence."
 
-In week three she comes in at nine forty and her mother is standing in the front hall. Three of the things Chloe says over the next twenty minutes she has been building since the day before.
+In week three she comes in at nine forty, forty minutes past her nine o'clock curfew, and her mother is standing in the front hall. Three of the things Chloe says over the next twenty minutes she has been building since the day before.
 
 "Ellie Peterson's out till ten."
 
@@ -1562,7 +1567,7 @@ Her mother stays in the hall, then goes through to the kitchen. Her father comes
 
 Her grandmother comes on a Sunday. In the front room Chloe is explaining the bridge from camp with both hands and the coffee table, and she goes through for water while her grandfather sits back, quiet, and the kitchen door is open a few inches.
 
-"She's put on weight."
+"She's put on weight," her grandmother says.
 
 "I know."
 
@@ -1582,7 +1587,7 @@ In September there is a different girl in her room, from Ohio, called Marguerite
 
 Margie's mouth opens, closes, opens again. "Margie's fine. It's shorter, and everybody's going to say it anyway, so there's no point in me having a position on it."
 
-Fen is on second floor now with a girl from Maine, and while they say hello in corridors all year, once in November Fen shows her a piece of quartz the size of a fist. There is French on the sheet where Spanish used to be, in the same slot at the same hour with a different teacher, and the first thing that happens is a woman speaking French at her for sixty minutes straight. Chloe stays behind afterward while the room empties out around her.
+Fen is on second floor now with a girl from Maine, and while she and Chloe say hello in corridors all year, once in November Fen shows Chloe a piece of quartz the size of a fist. There is French on the sheet where Spanish used to be, in the same slot at the same hour with a different teacher, and the first thing that happens is a woman speaking French at her for sixty minutes straight. Chloe stays behind afterward while the room empties out around her.
 
 "Am I going to have Spanish again?"
 
@@ -1666,7 +1671,7 @@ She writes her name on the choir line, because she sang in the shower every day 
 
 Chloe stands next to Amara for four weeks and matches her about a third of the time, but the matching is a different job from the one she came in for, and she stays exactly where she started. What she liked was being loud in a small tiled room, alone. In the sixth week she stops going and takes the hour in the pool instead, although she sings in the shower afterward, where she was doing it to begin with.
 
-On a Tuesday in April the four of them end up on the grass behind the science building for about an hour, because Sam sat down and then Kavi sat down. Sam has a shopping bag of apples and says only that they were going spare. For the whole hour they throw them at a drainpipe forty feet away.
+On a Tuesday in April Sam, Kavi, Ruth, and Chloe end up on the grass behind the science building for about an hour, because Sam sat down and then Kavi sat down. Sam has a shopping bag of apples and says only that they were going spare. For the whole hour they throw them at a drainpipe forty feet away.
 
 "Below the bracket doesn't count."
 
@@ -1678,7 +1683,10 @@ Ruth gets four in a row above the bracket, then is insufferable about it until d
 
 In June Chloe pulls out the notebook where she wrote the four subjects she was behind in, back in her first April. She is reading ahead in three of them, and the dates in the margins say she has been since about Christmas. She had stopped checking for it in January, but the notebook says January is when it turned. She reads the line back twice before she adds a new one at the bottom with the date on it, then puts the notebook in the drawer and goes down to dinner two steps at a time.
 
+
 ## Chapter Twelve: Nine
+
+*September 2014 – July 2015*
 
 On the first morning, the sheet in her box has one more line on it than last year's did.
 
@@ -1766,7 +1774,7 @@ Kavi alone watches the tank, for what turns out to be most of October, producing
 
 There are two people in her year Chloe dislikes outright.
 
-Bex talks over the ends of sentences. Iyad agrees with you loudly in a way that means he stopped listening around the second sentence. In the second term she builds a bridge with Bex that carries nineteen pounds, coming down a plank at a time instead of all at once. Two people ask them afterwards how they did the joints. She works with Iyad in chemistry for six weeks, during which he is careful and fast, and she would take him again tomorrow.
+Bex talks over the ends of sentences, hers most of all, until Chloe has learned to get to the point before Bex can start talking over the last three words of it. Iyad agrees with you loudly in a way that means he stopped listening around the second sentence, then repeats your own idea back to you at dinner as if it were his. In the second term she builds a bridge with Bex that carries nineteen pounds, coming down a plank at a time instead of all at once, and she answers the two people who ask afterwards how they did the joints before Bex can get a word in. She works with Iyad in chemistry for six weeks, during which he is careful and fast, and she would take him again tomorrow rather than sit through another dinner listening to her own idea come back to her secondhand.
 
 Sam spends the whole year on the overhang.
 
@@ -1774,11 +1782,11 @@ There is a wall up the side of the gym with a lip near the top that sticks out a
 
 He gets over it on the eleventh of May, with about thirty people at the bottom, because Sam has spent two days telling everybody he is going to do it that afternoon.
 
-"What if you don't?"
+"What if you don't?" Chloe asks.
 
-"Then thirty people watch me not do it, and that's still Tuesday." Sam is chalking his hands and not looking at any of them. "Left foot first. Left foot's what does it. She said so."
+"Then thirty people watch me not do it, and that's still Monday." Sam is chalking his hands and not looking at any of them. "Left foot first. Left foot's what does it. She said so."
 
-He goes up in one piece and gets a hand over the lip on the second try, because of the left foot, and the noise underneath him is loud enough that a teacher comes out of the side door to see what has happened. Ruth is screaming, and Kavi has both arms straight up over his head. Chloe finds afterwards that she has torn the corner off the book she was holding, though she does not remember doing it.
+He goes up in one piece and gets a hand over the lip on the second try, because of the left foot, and the noise underneath him is loud enough that a teacher comes out of the side door to see what has happened. Ruth is screaming, Kavi has both arms straight up over his head, and Chloe is on her feet with the book she'd brought down still in one hand. She finds afterwards that she has torn the corner off it, though she does not remember doing it.
 
 Block two is hers, and she takes riding, because Priya takes riding.
 
@@ -1845,6 +1853,7 @@ Her father starts to answer and stops with the page half turned. Then he goes ba
 "I don't know, I only got as far as that one."
 
 Going through the rest of it at the table that night, he finds nine more. On the Thursday, he asks the vendor which of the sentences in section three they would put a date and a number against. Two of them come back with dates, but the rest come back as the same sentences with different words in them. He tells Chloe about this in the car on Friday, at some length, while she eats a sandwich.
+
 
 ## Chapter Thirteen: Ten Pages
 

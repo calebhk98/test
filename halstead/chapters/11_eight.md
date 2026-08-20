@@ -58,7 +58,7 @@ Her mother says just the one word. She says it four more times, and each time it
 
 "Obviously I'll laugh at you," her mother says, and wipes her eye with the back of her wrist. "Say the sentence."
 
-In week three she comes in at nine forty and her mother is standing in the front hall. Three of the things Chloe says over the next twenty minutes she has been building since the day before.
+In week three she comes in at nine forty, forty minutes past her nine o'clock curfew, and her mother is standing in the front hall. Three of the things Chloe says over the next twenty minutes she has been building since the day before.
 
 "Ellie Peterson's out till ten."
 
@@ -88,7 +88,7 @@ Her mother stays in the hall, then goes through to the kitchen. Her father comes
 
 Her grandmother comes on a Sunday. In the front room Chloe is explaining the bridge from camp with both hands and the coffee table, and she goes through for water while her grandfather sits back, quiet, and the kitchen door is open a few inches.
 
-"She's put on weight."
+"She's put on weight," her grandmother says.
 
 "I know."
 
@@ -108,7 +108,7 @@ In September there is a different girl in her room, from Ohio, called Marguerite
 
 Margie's mouth opens, closes, opens again. "Margie's fine. It's shorter, and everybody's going to say it anyway, so there's no point in me having a position on it."
 
-Fen is on second floor now with a girl from Maine, and while they say hello in corridors all year, once in November Fen shows her a piece of quartz the size of a fist. There is French on the sheet where Spanish used to be, in the same slot at the same hour with a different teacher, and the first thing that happens is a woman speaking French at her for sixty minutes straight. Chloe stays behind afterward while the room empties out around her.
+Fen is on second floor now with a girl from Maine, and while she and Chloe say hello in corridors all year, once in November Fen shows Chloe a piece of quartz the size of a fist. There is French on the sheet where Spanish used to be, in the same slot at the same hour with a different teacher, and the first thing that happens is a woman speaking French at her for sixty minutes straight. Chloe stays behind afterward while the room empties out around her.
 
 "Am I going to have Spanish again?"
 
@@ -192,7 +192,7 @@ She writes her name on the choir line, because she sang in the shower every day 
 
 Chloe stands next to Amara for four weeks and matches her about a third of the time, but the matching is a different job from the one she came in for, and she stays exactly where she started. What she liked was being loud in a small tiled room, alone. In the sixth week she stops going and takes the hour in the pool instead, although she sings in the shower afterward, where she was doing it to begin with.
 
-On a Tuesday in April the four of them end up on the grass behind the science building for about an hour, because Sam sat down and then Kavi sat down. Sam has a shopping bag of apples and says only that they were going spare. For the whole hour they throw them at a drainpipe forty feet away.
+On a Tuesday in April Sam, Kavi, Ruth, and Chloe end up on the grass behind the science building for about an hour, because Sam sat down and then Kavi sat down. Sam has a shopping bag of apples and says only that they were going spare. For the whole hour they throw them at a drainpipe forty feet away.
 
 "Below the bracket doesn't count."
 

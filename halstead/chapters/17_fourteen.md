@@ -130,13 +130,13 @@ Sam asks out a girl in the year below in October, and the table has an opinion o
 
 "At breakfast." Priya has both hands flat on the table. "In the queue, holding a tray, and in front of about forty people."
 
-"How did he actually ask her?"
+"How did he actually ask her?" Kavi asks.
 
-"He said, 'Do you want to do something?' And she said, 'What?' And he said he didn't know yet."
+"He said, 'Do you want to do something?' And she said, 'What?' And he said he didn't know yet," Odile says.
 
 Ruth puts her fork down and leaves it down. "He didn't know. He had a whole Thursday afternoon and every building on this campus and he didn't know. Do you know how many things there are to do here? He's the only person who's ever got over that wall and he couldn't think of one."
 
-"He's got a lake, Kavi. A lake and a boat shed."
+"He's got a lake, Kavi. A lake and a boat shed," Priya says.
 
 Ruth takes it up with him directly on Friday, and Sam hears her out with his chin on his hand, thanks her for it, before he takes the girl to watch the twelves do paintball. The two of them last until March, when Priya says the girl ended it and Sam says they agreed. Odile was actually in the room, and what Odile says is that both of them have got the day wrong.
 
@@ -164,7 +164,7 @@ Chloe stops with the spoon in the beans while her mother stands there, still hol
 
 And Chloe has nothing at all.
 
-Sam grew four inches over the summer and there is a pencil mark on a door frame about it. Sam had a girlfriend and then did not. Ruth built a thing that makes sound out of nothing, and Chloe was on the floor of her room at one in the morning helping her find forty milliseconds. She teaches now. She has seven of them and she taught one thing to all seven of them backward and had to go in and say so. She held fifty seconds against ten people on a Tuesday and could not stand up afterward. There is a boy called Ferris who does everything the long way round and gets there every time. Japanese, four months of it. Abstract algebra, contracts, logistics, the fracture tests, her name in the back of a paper, a clamp that closes on the wrong axis, three hinges in a bin.
+Sam grew four inches over the summer and there is a pencil mark on a door frame about it. Sam had a girlfriend. She teaches now. She has seven of them and she taught one thing to all seven of them backward and had to go in and say so. There is a boy called Ferris who does everything the long way round and gets there every time. Japanese, four months of it. Abstract algebra, contracts, logistics, the fracture tests, a clamp that closes on the wrong axis, three hinges in a bin.
 
 All of it started around September. All of it went past this table in silence. Which one was she supposed to have opened with? Why is it the rifle?
 
@@ -192,7 +192,7 @@ Her mother sets the dish down in the middle of the table, straightens it with tw
 
 Her mother comes out after about six minutes and asks whether anybody wants the pie warmed up. Her father and Chloe both say yes at the same time. He turns the game on and they eat it in front of that, and her mother comes and sits on the arm of his chair for the second half.
 
-"That's a hold. That is a hold, that's been a hold all night."
+"That's a hold. That is a hold, that's been a hold all night," her mother says.
 
 On Sunday she asks whether the man behind the line is armed, and what happens if somebody drops one, and whether anybody has ever turned round. Chloe answers all three, and then tells her about the flag they call the wind off, and her mother listens to all of it and comes back with one more question about the man behind the line.
 

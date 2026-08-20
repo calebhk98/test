@@ -88,7 +88,7 @@ Kavi alone watches the tank, for what turns out to be most of October, producing
 
 There are two people in her year Chloe dislikes outright.
 
-Bex talks over the ends of sentences. Iyad agrees with you loudly in a way that means he stopped listening around the second sentence. In the second term she builds a bridge with Bex that carries nineteen pounds, coming down a plank at a time instead of all at once. Two people ask them afterwards how they did the joints. She works with Iyad in chemistry for six weeks, during which he is careful and fast, and she would take him again tomorrow.
+Bex talks over the ends of sentences, hers most of all, until Chloe has learned to get to the point before Bex can start talking over the last three words of it. Iyad agrees with you loudly in a way that means he stopped listening around the second sentence, then repeats your own idea back to you at dinner as if it were his. In the second term she builds a bridge with Bex that carries nineteen pounds, coming down a plank at a time instead of all at once, and she answers the two people who ask afterwards how they did the joints before Bex can get a word in. She works with Iyad in chemistry for six weeks, during which he is careful and fast, and she would take him again tomorrow rather than sit through another dinner listening to her own idea come back to her secondhand.
 
 Sam spends the whole year on the overhang.
 
@@ -96,11 +96,11 @@ There is a wall up the side of the gym with a lip near the top that sticks out a
 
 He gets over it on the eleventh of May, with about thirty people at the bottom, because Sam has spent two days telling everybody he is going to do it that afternoon.
 
-"What if you don't?"
+"What if you don't?" Chloe asks.
 
-"Then thirty people watch me not do it, and that's still Tuesday." Sam is chalking his hands and not looking at any of them. "Left foot first. Left foot's what does it. She said so."
+"Then thirty people watch me not do it, and that's still Monday." Sam is chalking his hands and not looking at any of them. "Left foot first. Left foot's what does it. She said so."
 
-He goes up in one piece and gets a hand over the lip on the second try, because of the left foot, and the noise underneath him is loud enough that a teacher comes out of the side door to see what has happened. Ruth is screaming, and Kavi has both arms straight up over his head. Chloe finds afterwards that she has torn the corner off the book she was holding, though she does not remember doing it.
+He goes up in one piece and gets a hand over the lip on the second try, because of the left foot, and the noise underneath him is loud enough that a teacher comes out of the side door to see what has happened. Ruth is screaming, Kavi has both arms straight up over his head, and Chloe is on her feet with the book she'd brought down still in one hand. She finds afterwards that she has torn the corner off it, though she does not remember doing it.
 
 Block two is hers, and she takes riding, because Priya takes riding.
 

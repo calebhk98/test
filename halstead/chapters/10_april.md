@@ -40,7 +40,7 @@ At dinner she counts eleven faces she knows before the food comes and gives up c
 
 Ruth tilts her head, "kind of, he's the one who wouldn't do the water thing," and stacks her tray on the rack. Then, before Chloe can reach for her own, she takes that one too. "He went home, and then four more went the week after. My mom asked me about it in the car and I didn't know what to tell her."
 
-It's four before Ruth even says it. She'd counted them herself, the week it happened.
+She already knows it's four. She'd counted them herself, the week it happened, before Ruth ever said so.
 
 The lights go out on the corridor at eight. Fen stops answering partway through a sentence, one arm already off the side of the mattress. Chloe lies on top of her own bed in the dark for a while, still in her socks, corridor light in a bar along the floor, listening for the radiator Fen promised her.
 
@@ -76,7 +76,7 @@ Priya reaches past her for the bread at dinner. "He went to the Olympics," she s
 
 The second hour she picks herself, off a list on a wall, reading it alone. She picks cooking too, because Ruth is already in it. Cooking is knife work, standing up straight, cleaning as you go, plus being told for the fourth time that your onion is uneven end to end.
 
-"Yours is a triangle."
+"Yours is a triangle," the cooking teacher says.
 
 "It is not a triangle."
 
@@ -160,16 +160,16 @@ The second term starts and the subjects change over. History splits into two thi
 
 She still has to stop and think her way through Central Asia. She has South America by the end of May and Europe two weeks after that, but she keeps putting the \-stans in the wrong order. All five of them, in a different wrong order every time she tries. Ruth can do the whole map, including the small islands off the top of Scotland, and is unbearable about it in a way Chloe actually likes. Physics comes in at the same changeover and biology goes out. She writes the whole list in the back of the notebook, the six subjects plus the two afternoon hours, and puts the date next to it. There are people in her year who have been here three years already, and she wants to know how long their list is, but every question she tries sounds like she is measuring herself against them, so she keeps it to herself.
 
-In the last week of June she packs. "Which one's fourth from the end now?" Chloe asks, and Fen has to check, running a finger along the sill before she answers, because two new ones came in during March, which Fen had kept to herself. Then Fen's rocks come off the sill into a shoebox with newspaper folded between them. Chloe opens the desk drawer, where the envelope is still under the folder she left on top of it in April, and puts them both in the bottom of the bag. Ruth walks her down to the front steps, where Sam is already out on the grass talking to somebody else's grandmother about something that requires both his arms.
+In the last week of June she packs. "Which one's fourth from the end now?" Chloe asks, and Fen has to check, running a finger along the sill before she answers, because one more came in during March, which Fen had kept to herself. Then Fen's rocks come off the sill into a shoebox with newspaper folded between them. Chloe opens the desk drawer, where the envelope is still under the folder she left on top of it in April, and puts them both in the bottom of the bag. Ruth walks her down to the front steps, where Sam is already out on the grass talking to somebody else's grandmother about something that requires both his arms.
 
-"Ten weeks is a long time to not do anything. My mom's got me at my cousin's for two of them, and there's nothing there except a lake and a shop."
+"Ten weeks is a long time to not do anything," Ruth says. "My mom's got me at my cousin's for two of them, and there's nothing there except a lake and a shop."
 
-"I'll call you on a Wednesday."
+"I'll call you on a Wednesday," Chloe says.
 
-"Wednesday's fine. Not before ten, my dad's asleep."
+"Wednesday's fine," Ruth says. "Not before ten, my dad's asleep."
 
-"September."
+"September," Chloe says.
 
-"September, then."
+"September, then," Ruth says.
 
 In the car Chloe opens the notebook and checks the inside cover, where three names sit with their spellings and numbers written out, before closing it and holding it on her lap for four hundred miles.
