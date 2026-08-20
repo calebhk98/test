@@ -49,6 +49,9 @@ None of it changes anything else about the six weeks in between. Eli still clock
 The second time is the second Tuesday of July. Because he's stopped trusting the watcher's own schedule, Kavi has it flagged inside four minutes this time, polling the tool on his own clock instead of waiting on it. Nine minutes again, to the second this time, which reads worse than a different number would have: different would say clumsy, and the same number twice says measured. He lines the three timestamps up in a document only he can reach, June against the first July date against the second. The gap between the first pair comes to five weeks and a day; the gap between the second pair comes to eleven days. Neither interval offers a pattern he can make argue for anything. He writes that down too. A negative result is still a result.
 
 
+Eli checks page four again anyway, the same clause, out of the same instinct that makes him check a lock he already knows is closed a second time before he'll leave it. It reads exactly the same as it did in June. He goes back to work.
+
+
 chloe: hes telling us hes there
 
 
