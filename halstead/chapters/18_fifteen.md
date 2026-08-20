@@ -44,7 +44,7 @@ Voss reads the four evenings' work standing in the doorway of the range office.
 
 "So what is it?"
 
-After tapping the pages straight against the desk, he hands them back to her and tells her to get down to point six because her block started four minutes ago.
+After tapping the pages straight against the desk, he hands them back to her and tells her to get down to point six because her block started four minutes ago. She goes, running the eleven numbers again on the way down.
 
 Ruth comes down on a Saturday in April with a clipboard and a bag of the toffees Priya's mother sends, and sits behind her for two hours because Chloe asked her to.
 

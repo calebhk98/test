@@ -127,7 +127,7 @@ These are checkable and wrong. Highest priority.
   establishes she is one of the four.
 - **ch14 L47** — "Coming up the field at a run from her end, Odile covers seventy metres in about
   forty seconds." That is 1.75 m/s — slower than a brisk walk, for the fastest student in the year.
-- **ch26 L74 vs L3** — "a nineteen-year-old private," in a chapter dated November 2023. Sam is born
+- **ch25 L74 vs L3** — "a nineteen-year-old private," in a chapter dated November 2023. Sam is born
   January 2005, so he is eighteen throughout it. *(verified directly)*
 - **ch32 L5 vs L11/L31** — "The financial one takes eleven weeks," against a month of testing plus
   "the following two months" of results, which is thirteen weeks before Ruth starts building the
@@ -148,11 +148,11 @@ These are checkable and wrong. Highest priority.
   years." The forge starts at twelve (ch19 L105, "has been since she was twelve") and ch22 is dated
   April 2023, when Chloe is seventeen — five to six years. ch19's own "four years" is correct there,
   at sixteen; ch22 reuses the figure a year later without advancing it. *(verified directly)*
-- **ch25 L86 — one paragraph gives the piece one day and three days.** "The first piece takes most of
+- **ch28 L86 — one paragraph gives the piece one day and three days.** "The first piece takes most of
   a Saturday," and inside the same paragraph she "reads them against each other for three days before
   she writes a line," having opened the tabs "before noon" and finished "by midnight."
   *(verified directly)*
-- **ch25 L98 — the school writing pace is off by about twentyfold.** "Six thousand words is about a
+- **ch28 L98 — the school writing pace is off by about twentyfold.** "Six thousand words is about a
   day's work, and she was doing ten of these a week at school." Ten six-thousand-word pieces a week
   is sixty thousand words; the established load is one ten-page essay a week (ch13 L11,
   `CURRICULUM_GRID.md`). *(verified directly)*
@@ -171,7 +171,7 @@ These are checkable and wrong. Highest priority.
   evening, before anyone's started packing anything, or booking anything, or signing anything…" L95
   has Chloe carrying her own packed box out; L107 has Ruth's box "labeled and half packed before the
   ceremony even starts," i.e. before that evening. *(verified directly)*
-- **ch29 L43 — Sam gets his own four days wrong.** "three separate two-and-fours over four days."
+- **ch26 L43 — Sam gets his own four days wrong.** "three separate two-and-fours over four days."
   The three contacts are two men at a fence (L14), four in a culvert (L17), and **one** man alone on
   bad ground at oh-three-forty (L20). The third is not a two-and-four, and it is the chapter's
   centrepiece — the man who waited six hours and did everything right. Sam is documented at 0%
@@ -183,7 +183,7 @@ These are checkable and wrong. Highest priority.
   reading it, and nobody tells her. *(verified directly)*
 - **Nadia's company: chapter 24 is the odd one out, and it can be fixed alone.** Three chapters
   give her timeline and two of them agree. ch23 (June 2023) L137: "by June she's started something of
-  her own, and by September she's hiring." ch28 (May 2024) L8: "She's forty people and eleven months
+  her own, and by September she's hiring." ch27 (May 2024) L8: "She's forty people and eleven months
   old" — eleven months back is June 2023, matching ch23 exactly. Only ch24 (September 2023) L432
   disagrees: "Nadia is behind the counter more hours a week now than she's ever been, since none of
   the two months of interviews turned into anything worth taking." That is three months into running
@@ -218,8 +218,8 @@ Every chapter from 20 on carries a real-world date on line 3. Read in book order
 
 Chapters 20–24 are in order and 30–35 are in order. **Chapters 25–29 are not.** By their own printed
 dates the true sequence of that block is 26 (Nov 2023) → 29 (Feb 2024) → 28 (May 2024) → 25 (Sept
-2024 – Apr 2025) → 27 (Oct 2025). As printed, ch27 sits two years ahead of the two chapters that
-follow it, and ch26 sits ten months behind the chapter before it.
+2024 – Apr 2025) → 27 (Oct 2025). As printed, ch29 sits two years ahead of the two chapters that
+follow it, and ch25 sits ten months behind the chapter before it.
 
 This may be deliberate — the book already runs thematic blocks that aren't strictly sequential, and
 25–29 are one-per-character chapters (Chloe, Sam, Theo, Nadia, Sam again) rather than a continuous
@@ -259,7 +259,7 @@ to catch this never looked at the one piece of evidence that settles it. **Actio
 - **ch14 L217** — a flash-forward ("he is still talking about it in June") is embedded inside the
   present-tense, blow-by-blow Watch narration of an April 11th event, before the Watch has finished
   on the page.
-- **ch26 L72 vs L74** — the report is "forwarded twice by Friday" and only reaches its reader "by the
+- **ch25 L72 vs L74** — the report is "forwarded twice by Friday" and only reaches its reader "by the
   following Thursday," up to six days later, with nothing accounting for the gap.
 - **ch32 L11 → L31** — the tool is tested for a month against Nadia's systems "before it goes
   anywhere," and the next paragraph is two months of live results. The deployment itself — the
@@ -311,15 +311,15 @@ something the reader was never given.
 - ch14 L99 — "the two Saturdays the man opens it," stated as an already-established pair.
 - ch14 L199 — "Chloe folds the envelope shut along the line she drew and keeps it." Where the
   envelope came from, and what it originally was, is never given.
-- ch26 L22 — "In month four they put him on a range with ten targets." "They" is never identified.
-- ch26 L49 — "He nods at the rifle." No rifle has been established as present; the last prop was ten
+- ch25 L22 — "In month four they put him on a range with ten targets." "They" is never identified.
+- ch25 L49 — "He nods at the rifle." No rifle has been established as present; the last prop was ten
   targets.
-- ch26 L14 — "somebody has started printing them out." Never identified, never mentioned again.
+- ch25 L14 — "somebody has started printing them out." Never identified, never mentioned again.
 - ch32 L114 — "somebody handed the new guy a retirement box." Whose retirement, and how it came to
   hold material far above a new analyst's clearance, is never addressed.
 - ch35 L11 — "He pulls the logs," the chapter's third paragraph, with no person introduced anywhere
   before it.
-- ch25 L278 — "In April she stops posting." "She" is Ruth. Every other "she" in the chapter is Chloe,
+- ch28 L278 — "In April she stops posting." "She" is Ruth. Every other "she" in the chapter is Chloe,
   and three lines later "Chloe reads both messages twice" — about the disappearance the sentence has
   just attributed to her. This one actively misdirects on a first read.
 
@@ -411,10 +411,10 @@ reviewers were reacting to when they read Chloe as non-human, and it is not conf
   armed raid on the school. Sam says "WHAT." Kavi, Eli, Ruth and Nadia say nothing at all.
 - **ch32 L73–76** — Ruth lands the proof the whole last act runs on ("its him. one man.") and the
   only response is Eli asking for a confidence percentage.
-- **ch26 L49–52** — Sam describes soldiers firing live rounds to intercept each other's rounds in
+- **ch25 L49–52** — Sam describes soldiers firing live rounds to intercept each other's rounds in
   flight, the most extraordinary claim in the chapter, and the response is "There's a silence,"
   followed by an unrelated question.
-- **ch26 L28** — "the best score I've seen this cycle" draws no reaction from Sam at all, in a
+- **ch25 L28** — "the best score I've seen this cycle" draws no reaction from Sam at all, in a
   chapter whose opening two paragraphs are entirely about how Sam relates to his own results.
 - **ch14 L43–49** — the first successful arrow collision, with debris landing near a person, draws
   shouting and no adult at all. No instructor is present or reacts at any live-fire drill in the
@@ -464,7 +464,7 @@ reviewers were reacting to when they read Chloe as non-human, and it is not conf
 - ch14 L227 — failure number four names two students for the east stairwell and neither is Ruth, who
   L215 says commanded it from the first thirty seconds. The logic (subordinates named, commander not)
   is left entirely implicit.
-- ch26 L72 — "forwarded twice by Friday," with neither destination given, in a paragraph that is
+- ch25 L72 — "forwarded twice by Friday," with neither destination given, in a paragraph that is
   otherwise precise about exactly who reads it next.
 - **ch33 L43 → ch35, the loaded gun that never fires.** The nine pages Chloe writes cover "the
   response if it's noticed, and what happens if any one of the seven says stop, which is that all of
@@ -511,10 +511,10 @@ chapter-21 markup was mostly this.
   built from named, dated fact.
 - ch16 L63 — the language studied for a whole paragraph is never named; it takes thirty-two lines and
   a different class to establish it's German.
-- ch26 L74 — "an office that exists to answer exactly that kind of question," never named even by
+- ch25 L74 — "an office that exists to answer exactly that kind of question," never named even by
   category, in a chapter whose stakes are entirely about what kind of office it is.
-- ch26 L34 — "Eighty's the standard, I'm working on it." Working on what.
-- ch26 L49 — "there are people I went to school with at ninety." No names, no count.
+- ch25 L34 — "Eighty's the standard, I'm working on it." Working on what.
+- ch25 L49 — "there are people I went to school with at ninety." No names, no count.
 - ch32 L52/L58 — "dozens of them" and "about forty minutes total" are the evidence under a proof whose
   headline number is "99.99." Ruth is the character defined by giving the exact figure.
 - ch32 L8 — "a badly maintained reconciliation job," in a paragraph whose whole point is that the tool
@@ -560,12 +560,12 @@ reader" problem, in its structural form.
   chapter's thesis stated flat, breaking out of the indirect register the surrounding three
   sentences use for Hearn's note.
 - ch20 L9 — "which from Kavi always means he already started it."
-- ch26 L72 — "The captain files it as a concern about the soldier rather than a recommendation for
+- ch25 L72 — "The captain files it as a concern about the soldier rather than a recommendation for
   him," immediately followed by the report's actual contents doing the same work.
 - ch32 L8 — "None of them have that kind of patience. The program does." Asserted about all seven,
   and two of them (Ruth's ten-month silence, Kavi's years-open list) are defined elsewhere by exactly
   that patience.
-- ch26 L74 — the report's own language, *appears to have received specialised instruction from an
+- ch25 L74 — the report's own language, *appears to have received specialised instruction from an
   unidentified source*, is folded into the narration with nothing setting it off, so institutional
   voice and narrator blur.
 
@@ -591,11 +591,11 @@ reader" problem, in its structural form.
   archery record sit back to back at the same Christmas visit, doing the identical job.
 - ch6 L37/L41 — wood shop and the safety glasses described twice, the second time flagged in
   narration as "almost the same sentence as before."
-- ch26 L11/L14 — Sam's relationship to his own numbers made twice in adjoining paragraphs, the second
+- ch25 L11/L14 — Sam's relationship to his own numbers made twice in adjoining paragraphs, the second
   time in more general form.
-- ch26 L31/L37 — the narration gives "It still says ten out of ten," then the captain says "Son, you
+- ch25 L31/L37 — the narration gives "It still says ten out of ten," then the captain says "Son, you
   hit ten out of ten."
-- ch26 L5/L77 — the chapter opens and closes on the identical beat: Sam content and unaware.
+- ch25 L5/L77 — the chapter opens and closes on the identical beat: Sam content and unaware.
 - ch32 L120/L152 — Theo makes the same "they've been wrong for nineteen years" point twice, a few
   lines apart, in the same conversation.
 
@@ -605,7 +605,7 @@ reader" problem, in its structural form.
   anywhere. The chapter carries the identification of "him," the existence of the federal file, and
   the revelation that the school was really attacked. This may simply be the format for the chat
   chapters, but it is worth a decision rather than a default.
-- **ch26 L28–64** — the captain's approach, the whole accuracy conversation, and the "where did you go
+- **ch25 L28–64** — the captain's approach, the whole accuracy conversation, and the "where did you go
   to school" turn happen with no physical placement of either man at any point.
 - **ch2 L34–44** — the entire verbal-testing stretch has no hands, no posture, no glances, between a
   block task and a montage that both have them.
@@ -613,7 +613,7 @@ reader" problem, in its structural form.
   other domestic scene is anchored.
 - **ch14 L177 → L179** — the kitchen two-hander with Meg becomes a three-person doorway exchange with
   no stage direction bridging them.
-- **ch29 L28–46** — "At the debrief a major runs through the four days." No room, and no other
+- **ch26 L28–46** — "At the debrief a major runs through the four days." No room, and no other
   soldiers: a private stands up in what should be a full debrief and tells a major the assessment
   was too easy, in front of nobody.
 - **ch30 L42–93** — the two Whitaker interviews, which are the chapter, have no room, no furniture
@@ -682,7 +682,7 @@ text. Several were created by this session's own rewrites.
 - **SAM.md's "Known problems" #1 cites `25_ten_targets.md:58`** for a mirrored line ("A gun you can't
   stop a projectile with isn't a tool…") that is no longer in the file. The sheet is critiquing a
   draft that has already been fixed.
-- **SYNOPSIS places ch26 in its "age 20, Autumn" row.** The chapter says November 2023 and Sam is born
+- **SYNOPSIS places ch25 in its "age 20, Autumn" row.** The chapter says November 2023 and Sam is born
   January 2005, making him eighteen; chronology/BOOK.md agrees with the chapter at "~18–19."
 - **SYNOPSIS starts ethics at age eight;** ch14 L131 has Chloe say "since we were ten."
 - **SYNOPSIS and THEO.md date the infiltrator's identification at "a day and a half"** (and, in one
@@ -733,7 +733,7 @@ flagged with the justification sitting in the same paragraph.
 
 ### Soft — probably fine, recorded so it isn't re-found
 
-- **ch29 L52, "ruth: how."** Flagged against RUTH.md's "0% questions; she asks by flat declarative,
+- **ch26 L52, "ruth: how."** Flagged against RUTH.md's "0% questions; she asks by flat declarative,
   never a question mark." It is her only line in the chapter, and it is a question in substance. But
   this is a chat chapter where nobody punctuates anything, so the question-mark test can't
   discriminate here, and a bare "how" with no punctuation reads closer to a demand than to an

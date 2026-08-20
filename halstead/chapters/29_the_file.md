@@ -52,10 +52,10 @@ He was eleven. There was a new teacher for about a day and a half. Something was
 What he remembers is the feeling that the man was pretending to be somebody. All of them clocked it, four or five started asking questions, and by Thursday he was gone.
 
 
-Theo had assumed, for seven years, that the guy just quit.
+Theo had assumed, for nine years, that the guy just quit.
 
 
-He takes the folder home that first night, more habit than plan, and works through the state assessment and the memo about the teacher before he thinks about dinner. The last item, the entry from six years back, waits until the next morning, coffee first, at his desk before the floor has properly filled in: something in the stack has already told him this one will take longer than the rest put together.
+He takes the folder home that first night, more habit than plan, and works through the state assessment and the memo about the teacher before he thinks about dinner. The last item, the entry from eight years back, waits until the next morning, coffee first, at his desk before the floor has properly filled in: something in the stack has already told him this one will take longer than the rest put together.
 
 
 ________________
@@ -66,7 +66,7 @@ ________________
 Then there's the entry.
 
 
-Six years ago. Four operators, over the fence at the loading side, a little after four in the morning.
+Eight years ago. Four operators, over the fence at the loading side, a little after four in the morning.
 
 
 The report is written by one of them and it is four pages long and most of it is procedural, standard language he recognizes from a dozen other files: approach, entry, timing. The classification banner across the top of every page is the highest he's ever cleared for, and even at that level, three lines in the middle of page three are blacked out entirely, more than he's seen redacted from anything else in the box. What matters starts on page two.

@@ -548,7 +548,7 @@ On the Thursday they get dowels, a spool of string, one glue gun between three, 
 Ruth goes and does her own one. Chloe watches her go, still working out too slowly whether Ruth is right. By the time she has it, Sam has already started gluing.  
 Their bridge takes an hour and forty minutes and looks better than Ruth's, flat, wide, every joint on it neat. Two of the groups, of which Owen's is one, stop short of the eighteen inches before the session ends, and Mr. Doyle tells them to leave it where it is and come back to it.  
 Before any of it gets loaded they have to write down what they think it'll hold. Chloe writes fourteen. Sam wants to write a hundred and gets told it has to be a real number, so he writes twenty-five, while Ruth writes hers with one hand over it.  
-On the Tuesday they hang a bucket off the middle of each one and put weights in a pound at a time, and the whole room counts out loud together. One goes at three, which gets a laugh from the group it belongs to. Two more go before eight. Theirs goes at eleven and folds, sideways, all at once, the way Ruth pushed the square over with one finger, rather than snapping, and the three of them are down after the pieces before anyone tells them not to. Ruth's holds nineteen and then does snap, and half the room makes a noise about it.  
+On the Tuesday they hang a bucket off the middle of each one and put weights in a pound at a time, and the whole room counts out loud together. One goes at three, which gets a laugh from the group it belongs to. Two more go before eight. Theirs goes at eleven and folds, sideways, all at once, the way Ruth pushed the square over with one finger, rather than snapping, and all three of them are down on the floor after the pieces while the bucket is still swinging. Sam says eleven out loud twice, then says he would have gone lower if they had let him. Ruth's holds nineteen and then does snap, and half the room makes a noise about it.  
 "I told you," Ruth says, not looking at anyone in particular.  
 "Ruth," Sam says.  
 "I did though, I came over."  
@@ -1773,7 +1773,7 @@ Chemistry is Vasquez, who does set things on fire on purpose, twice in the first
 
 "Glassware, reagent, or you." He hands it back, eyes already on the next bench. "Friday."
 
-She runs it again on the Friday, drying every piece of glass twice before she starts, and it comes out white.
+She runs it again on the Friday, drying every piece of glass twice before she starts, and it comes out white, and she grins at it before she catches herself and carries it up to the front.
 
 First aid is Mondays, and it is on a clock from the first week. In the second term the lights come down to about what you get off a dashboard at night. In the third term the lights come down, a radio plays somewhere behind her, left running the whole time, and a man stands four feet away asking her the same question over and over in a raised voice.
 
@@ -1795,7 +1795,7 @@ Bex talks over the ends of sentences, hers most of all, until Chloe has learned 
 
 Sam spends the whole year on the overhang.
 
-There is a wall up the side of the gym with a lip near the top that sticks out about two feet, and going into September the lip has beaten everyone who's tried it. Sam falls off it in October, twice in November, and once in December from high enough that he lands badly and sits on the mat, elbows on his knees, saying he is fine. In January a girl in the year below gets over it in one go, on a Wednesday, with about four people watching. Sam takes this hard for two days, then goes and asks her how she did it. The answer turns out to be about where you put your left foot before you start.
+There is a wall up the side of the gym with a lip near the top that sticks out about two feet, and going into September the lip has beaten everyone who's tried it. Sam falls off it in October, twice in November, and once in December from high enough that he lands badly and sits on the mat, elbows on his knees. An instructor asks if he's alright, and he says he's fine, and the session carries on. In January a girl in the year below gets over it in one go, on a Wednesday, with about four people watching. Sam takes this hard for two days, then goes and asks her how she did it. The answer turns out to be about where you put your left foot before you start.
 
 He gets over it on the eleventh of May, with about thirty people at the bottom, because Sam has spent two days telling everybody he is going to do it that afternoon.
 
@@ -1983,7 +1983,7 @@ Her first one is on the board on the Monday and happens on the Thursday. Four ad
 
 The sheet goes up on the Friday. All twelve names have an F next to them and there are nine numbered things underneath.
 
-She reads it in the corridor with about fifteen people behind her waiting for a turn at it. Number one is response time and number three is that four adults entered a building. Number six says the north stairwell was uncovered for six minutes, and Chloe, who stood there the whole time, is still working out what covering it would even have looked like.
+She reads it in the corridor with about fifteen people behind her waiting for a turn at it. Number one is response time, number two says a student answered a question about how many of them there are, and number three is that four adults entered a building. Number six says the north stairwell was uncovered for six minutes, and Chloe, who stood there the whole time, is still working out what covering it would even have looked like.
 
 She goes back after dinner when the corridor is empty and reads it again, and then she reads it a third time. Ruth comes and stands next to her at about nine and reads it all the way to the bottom in silence, arms crossed.
 
@@ -2367,7 +2367,7 @@ They give her four names in the order they happen to be standing in, which she w
 
 "It's a bread test. It's got a control and everything."
 
-"It's a bread test," she says, capping the pen. "Go to bed."
+"It's a bread test," she says, capping the pen and pocketing the sheet. "Go to bed."
 
 On the stairs Priya wants to know whether the first round still counts. "We ate it. That's the problem."
 
@@ -2899,6 +2899,8 @@ She goes through the seven papers twice before she goes back to her own notes fr
 
 "Does the test count?" Halide says.
 
+"So we're not actually bad at it," somebody says.
+
 "No," Chloe says, wiping the board down with her back to them, and she stops halfway across it and turns round. "Your answers all follow from what I taught you, and what I taught you was wrong. You'll get a different one in two weeks and it'll be harder, because by then you'll actually have it."
 
 Japanese moves faster at the front than she expects. By the end of the fourth week she is further along than she has ever been at the same point in a language, so on a Wednesday afternoon she digs out her own notes on Russian and on Mandarin to check whether that is true, and it is. The kanji arrive with most of their meaning already on them, but then the grammar starts, and the grammar is unlike anything behind her on the list. By November she is putting forty minutes a night into it and moving slowly, and she is still ahead of where Mandarin had her at the same point.
@@ -3072,7 +3074,7 @@ Voss reads the four evenings' work standing in the doorway of the range office.
 
 "So what is it?"
 
-After tapping the pages straight against the desk, he hands them back to her and tells her to get down to point six because her block started four minutes ago.
+After tapping the pages straight against the desk, he hands them back to her and tells her to get down to point six because her block started four minutes ago. She goes, running the eleven numbers again on the way down.
 
 Ruth comes down on a Saturday in April with a clipboard and a bag of the toffees Priya's mother sends, and sits behind her for two hours because Chloe asked her to.
 
@@ -3275,6 +3277,8 @@ Sam is up in half a second and talks for four minutes without stopping for air, 
 
 "I'm choosing."
 
+Her hands go flat and still at her sides.
+
 "Sit down. Next two."
 
 She goes back to her chair through two people getting up out of theirs.
@@ -3287,7 +3291,7 @@ She writes her first practice paper in the second week of May, at a table in the
 
 "It's the same sentence to you." He turns the page around. "Write me the shed burning down."
 
-She writes the shed burning down. Four minutes, one paragraph, with a sentence in the middle that makes her jaw set while she is writing it. Kavi gives her the four.
+She writes the shed burning down. Four minutes, one paragraph, with a sentence in the middle that makes her jaw set while she is writing it. Kavi gives her the four. "There it is."
 
 She writes thirty-one of those between May and September, Kavi marking some and Nadia marking some, while she marks the rest herself with her own answer folded under the page. In May she stops early on about half of them. By August it is one in six, and one in six is where it stays.
 
@@ -3309,7 +3313,7 @@ She sits the bar again in October, the retake for the thirty-nine who failed in 
 
 Question six is a rented forklift. She has the answer in her second line, then writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. The whole of it takes nineteen minutes. She reads it back and doesn't change a word.
 
-She passes by twenty-two, and she reads the number twice before she puts the page away.
+She passes by twenty-two, and she reads the number twice before she puts the page away. Kavi sends back a string of exclamation points, and Sam texts to ask what she got on the forklift question. She tells him, asks what he got, and goes back to her book.
 
 In November she sits in the library with something else open in front of her, thinking about April instead. It happens again in December, and once more in February. She still shuts books harder than she means to in November, and she could not tell anybody why she is doing it.
 

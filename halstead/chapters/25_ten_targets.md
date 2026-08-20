@@ -89,7 +89,7 @@ Sam takes that as an invitation, and this is the moment he has been waiting four
 "Accuracy is whether you can put a round into another round," Sam says. "In flight. On the count, opposite lanes, you both fire on the same beat. I'm at about forty percent and that's poor, there are people I went to school with at ninety. That's the number that means something." He nods at the rifle. "So I'm forty percent of a rifle."
 
 
-There's a silence.
+The captain looks at the rifle where Sam nodded at it, then back at Sam, and holds there long enough that the private on the next lane stops loading to watch. He turns the sheet over, which puts nothing on the side facing up, and squares it against the edge of the table.
 
 
 "Where did you go to school," the captain says.

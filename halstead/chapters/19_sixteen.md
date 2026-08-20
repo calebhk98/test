@@ -64,6 +64,8 @@ Sam is up in half a second and talks for four minutes without stopping for air, 
 
 "I'm choosing."
 
+Her hands go flat and still at her sides.
+
 "Sit down. Next two."
 
 She goes back to her chair through two people getting up out of theirs.
@@ -76,7 +78,7 @@ She writes her first practice paper in the second week of May, at a table in the
 
 "It's the same sentence to you." He turns the page around. "Write me the shed burning down."
 
-She writes the shed burning down. Four minutes, one paragraph, with a sentence in the middle that makes her jaw set while she is writing it. Kavi gives her the four.
+She writes the shed burning down. Four minutes, one paragraph, with a sentence in the middle that makes her jaw set while she is writing it. Kavi gives her the four. "There it is."
 
 She writes thirty-one of those between May and September, Kavi marking some and Nadia marking some, while she marks the rest herself with her own answer folded under the page. In May she stops early on about half of them. By August it is one in six, and one in six is where it stays.
 
@@ -98,7 +100,7 @@ She sits the bar again in October, the retake for the thirty-nine who failed in 
 
 Question six is a rented forklift. She has the answer in her second line, then writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. The whole of it takes nineteen minutes. She reads it back and doesn't change a word.
 
-She passes by twenty-two, and she reads the number twice before she puts the page away.
+She passes by twenty-two, and she reads the number twice before she puts the page away. Kavi sends back a string of exclamation points, and Sam texts to ask what she got on the forklift question. She tells him, asks what he got, and goes back to her book.
 
 In November she sits in the library with something else open in front of her, thinking about April instead. It happens again in December, and once more in February. She still shuts books harder than she means to in November, and she could not tell anybody why she is doing it.
 

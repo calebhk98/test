@@ -72,6 +72,8 @@ She goes through the seven papers twice before she goes back to her own notes fr
 
 "Does the test count?" Halide says.
 
+"So we're not actually bad at it," somebody says.
+
 "No," Chloe says, wiping the board down with her back to them, and she stops halfway across it and turns round. "Your answers all follow from what I taught you, and what I taught you was wrong. You'll get a different one in two weeks and it'll be harder, because by then you'll actually have it."
 
 Japanese moves faster at the front than she expects. By the end of the fourth week she is further along than she has ever been at the same point in a language, so on a Wednesday afternoon she digs out her own notes on Russian and on Mandarin to check whether that is true, and it is. The kanji arrive with most of their meaning already on them, but then the grammar starts, and the grammar is unlike anything behind her on the list. By November she is putting forty minutes a night into it and moving slowly, and she is still ahead of where Mandarin had her at the same point.

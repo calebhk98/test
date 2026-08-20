@@ -8,13 +8,13 @@ Eli proposes the second worm and Theo says no for nine days.
 He sends it the way he sends anything he's actually thought through: not a chat message but a document, twelve pages, at two in the morning, at the kitchen table in the apartment three states from where he grew up. He sends it to six people instead of one, on purpose, because a plan this size only holds together if all seven of them read the same twelve pages instead of six different memories of them later. It reads like a plan because it is one — access path, timeline, what gets touched and what gets left exactly where it was — and it closes on the same idea the financial worm's whole design leaned on six months earlier, that boring beats clever every time somebody's watching for clever.
 
 
-The target is the unit Theo already told them exists, the one that's kept a file on the school for nineteen years and been wrong about who runs it twice. Getting past its security once is a solvable problem. Getting past it and leaving nothing behind to say anyone was ever inside is the harder one, and the twelve pages are mostly about the second problem, not the first.
+The target is the unit Theo already told them exists, the one that's kept a file on the school for nineteen years and been wrong about who runs it twice. Getting past its security once is a solvable problem. Getting past it and leaving the file looking exactly as it did before, with every trace of them erased, is the harder one, and the twelve pages are mostly about the second problem, not the first.
 
 
 Theo reads it twice the night it lands, then closes the laptop and makes tea the way his grandmother made it, milk first, and reads the document a third time standing at the counter with the mug going cold in his hand. For nine days he opens it, reads a line or two, and closes it again. He walks the same two blocks to work and back. In the chat he keeps to small talk, the weather outside his building, a joke Sam makes about the food at basic. Ruth texts him alone once, just his name, and lets it sit.
 
 
-It isn't the arithmetic that finally moves him. He reads intelligence for a living, weighs one source against what it's actually worth, and the accounting comes out the same no matter which end he starts from: they already have a file on their own school that's nineteen years out of date, and reading the true one is the only way any of them will ever know what their own government actually thinks it knows. He can write that argument forward or backward and it lands in the same place both times.
+The reasoning moves him in the end, not the arithmetic. He reads intelligence for a living, weighs one source against what it's actually worth, and the accounting comes out the same no matter which end he starts from: they already have a file on their own school that's nineteen years out of date, and reading the true one is the only way any of them will ever know what their own government actually thinks it knows. He can write that argument forward or backward and it lands in the same place both times.
 
 
 Every one of them knows the law cold. All seven had sat the same examination, and when Theo finally opens the thread on the ninth night, Ruth is already in it, cross-legged on her own dorm room floor in Cambridge with a roommate asleep two feet away, and Eli's reading from the same kitchen table he wrote the document on less than a week earlier, and Ruth already has two numbers ready for him.
@@ -117,10 +117,10 @@ ________________
 Theo could have written cleaner rules than anyone else at that table — it is, more or less, his actual job. He says so once, and says in the same breath that his name needs to stay off any document that describes how to break the law he's paid to uphold. So it goes to Chloe.
 
 
-Eli builds the entry itself, the same way he built the first one, in small pieces that don't look like much on their own. Kavi builds the exit — what erases the traces of the entry as it happens, not after, because after is too late if anyone's actually watching — and for the better part of a week neither of them calls it anything but "the plumbing" in the group chat.
+Eli builds the entry itself, the same way he built the first one, in small pieces that look unremarkable on their own. Kavi builds the exit — what erases the traces of the entry as it happens, not after, because after is too late if anyone's actually watching — and for the better part of a week neither of them calls it anything but "the plumbing" in the group chat.
 
 
-The test runs five weeks. For most of them the tool sits somewhere only Eli and Kavi can see, doing nothing but watch itself work: how long a query takes, whether anything logs it, whether the shape of its own traffic looks like the ordinary noise around it. Kavi's watcher runs the whole time too, watching the watcher, the same doubled caution that caught the sensor gap years ago. Twice a week Eli posts one line to the group, clean or some technical variant of clean, and twice a week that's the whole of it.
+The test runs five weeks. For most of them the tool sits somewhere only Eli and Kavi can see, watching itself work: how long a query takes, whether anything logs it, whether the shape of its own traffic looks like the ordinary noise around it. Kavi's watcher runs the whole time too, watching the watcher, the same doubled caution that caught the sensor gap years ago. Twice a week Eli posts one line to the group, clean or some technical variant of clean, and twice a week that's the whole of it.
 
 
 Eli spends the five weeks the way he spends any five weeks with a real problem sitting in the middle of them: badly slept, mostly cheerful, three shirts in rotation and the same breakfast every morning because deciding costs something he'd rather spend elsewhere. Kavi spends them the way he spends any five weeks like that, in the same chair, turning whatever's on the table over in his hands and setting it back down exactly where it was.
@@ -141,10 +141,10 @@ The middle section is the one she rewrites three times. "Noticed" has to mean a 
 The stop clause gets exactly one line and no examples, on purpose. Any one of the seven can end it, and the ending starts the moment it's invoked: no vote, no reason attached. Ruth argues once for adding a requirement to state a reason first, and loses the argument to Nadia, whose whole case is proportion: a person gets to act on being scared enough to stop without first building a case for it, because building the case is exactly the delay the clause exists to remove.
 
 
-The page on what happens if it's noticed is the shortest of the nine and the most rehearsed: who calls whom first, what gets denied and by whom, and the flat instruction that all seven stay off the phone with anyone outside the seven, a lawyer included, until all seven are on the same call together. It assumes noticing looks like something happening to one of them. The version where nothing visibly happens to anybody, where the only evidence is a gap that closes again before anyone can point to it, sits outside all nine pages.
+The page on what happens if it's noticed is the shortest of the nine and the most rehearsed: who calls whom first, what gets denied and by whom, and the flat instruction that all seven stay off the phone with anyone outside the seven, a lawyer included, until all seven are on the same call together. It assumes noticing looks like something happening to one of them. The version that leaves only a gap closing again before anyone can point to it, quiet and invisible, over before it registers, sits outside all nine pages.
 
 
-They sign off one at a time over the following week, each in the shape of the person doing it. Eli signs first, hours after he sends the document, because for him it was never really a question.
+They sign off one at a time over the following week, each in the shape of the person doing it. Eli signs first, hours after he sends the document, because for him the answer was already settled.
 
 
 eli: in
@@ -177,7 +177,7 @@ Chloe signs the night she finishes page nine, before she's had time to reconside
 Theo signs off last, on the far side of the five weeks, and says again that this is insane.
 
 
-A clearance is a piece of paper that says the government has already decided to trust her with things most people never get near, and she's about to spend that trust on a file it never agreed to show her. She works through what that actually costs her exactly once, on the drive home from the office the week the document arrives, and reaches the end of the thought in about as long as it takes a light to change.
+A clearance is a piece of paper that says the government has already decided to trust her with things it keeps far from most people, and she's about to spend that trust on a file it always meant to keep sealed from her too. She works through what that actually costs her exactly once, on the drive home from the office the week the document arrives, and reaches the end of the thought in about as long as it takes a light to change.
 
 
 Chloe is four months into that job when she writes the nine pages, her hand steady through all nine of them, and she does not stop.

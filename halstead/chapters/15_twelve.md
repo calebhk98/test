@@ -74,7 +74,7 @@ They give her four names in the order they happen to be standing in, which she w
 
 "It's a bread test. It's got a control and everything."
 
-"It's a bread test," she says, capping the pen. "Go to bed."
+"It's a bread test," she says, capping the pen and pocketing the sheet. "Go to bed."
 
 On the stairs Priya wants to know whether the first round still counts. "We ate it. That's the problem."
 

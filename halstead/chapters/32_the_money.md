@@ -153,7 +153,7 @@ theo: they think its probably a state or a company. theyve been wrong twice and 
 theo: they put a man on staff when we were eleven and we spotted him in a day
 
 
-theo: and six years ago they sent people over the fence at four in the morning and four of us put them on the floor
+theo: and eight years ago they sent people over the fence at four in the morning and four of us put them on the floor
 
 
 sam: WHAT
