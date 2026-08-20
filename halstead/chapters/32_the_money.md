@@ -97,6 +97,9 @@ eli: so its him
 ruth: its him. one man. the only other option is that all of this was planted to look like one man, and i cannot construct a reason
 
 
+It's almost a full minute before anyone answers.
+
+
 eli: whats your number
 
 
@@ -160,6 +163,21 @@ sam: WHAT
 
 
 theo: i said dont repeat it, i didnt say it was small
+
+
+kavi: a state doesnt leave four operators walking. thats not their risk tolerance
+
+
+ruth: this isnt new, sam, it just means there were two attempts instead of one
+
+
+nadia: they caught four operators once
+
+
+nadia: tighten the polling interval again
+
+
+Eli reads it at his own desk and gets up to check the lock on his door twice before he sits back down.
 
 
 chloe: theo that was a drill

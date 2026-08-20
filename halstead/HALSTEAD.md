@@ -5434,10 +5434,10 @@ He was eleven. There was a new teacher for about a day and a half. Something was
 What he remembers is the feeling that the man was pretending to be somebody. All of them clocked it, four or five started asking questions, and by Thursday he was gone.
 
 
-Theo had assumed, for seven years, that the guy just quit.
+Theo had assumed, for nine years, that the guy just quit.
 
 
-He takes the folder home that first night, more habit than plan, and works through the state assessment and the memo about the teacher before he thinks about dinner. The last item, the entry from six years back, waits until the next morning, coffee first, at his desk before the floor has properly filled in: something in the stack has already told him this one will take longer than the rest put together.
+He takes the folder home that first night, more habit than plan, and works through the state assessment and the memo about the teacher before he thinks about dinner. The last item, the entry from eight years back, waits until the next morning, coffee first, at his desk before the floor has properly filled in: something in the stack has already told him this one will take longer than the rest put together.
 
 
 ________________
@@ -5448,7 +5448,7 @@ ________________
 Then there's the entry.
 
 
-Six years ago. Four operators, over the fence at the loading side, a little after four in the morning.
+Eight years ago. Four operators, over the fence at the loading side, a little after four in the morning.
 
 
 The report is written by one of them and it is four pages long and most of it is procedural, standard language he recognizes from a dozen other files: approach, entry, timing. The classification banner across the top of every page is the highest he's ever cleared for, and even at that level, three lines in the middle of page three are blacked out entirely, more than he's seen redacted from anything else in the box. What matters starts on page two.
@@ -5947,6 +5947,9 @@ eli: so its him
 ruth: its him. one man. the only other option is that all of this was planted to look like one man, and i cannot construct a reason
 
 
+It's almost a full minute before anyone answers.
+
+
 eli: whats your number
 
 
@@ -6003,13 +6006,28 @@ theo: they think its probably a state or a company. theyve been wrong twice and 
 theo: they put a man on staff when we were eleven and we spotted him in a day
 
 
-theo: and six years ago they sent people over the fence at four in the morning and four of us put them on the floor
+theo: and eight years ago they sent people over the fence at four in the morning and four of us put them on the floor
 
 
 sam: WHAT
 
 
 theo: i said dont repeat it, i didnt say it was small
+
+
+kavi: a state doesnt leave four operators walking. thats not their risk tolerance
+
+
+ruth: this isnt new, sam, it just means there were two attempts instead of one
+
+
+nadia: they caught four operators once
+
+
+nadia: tighten the polling interval again
+
+
+Eli reads it at his own desk and gets up to check the lock on his door twice before he sits back down.
 
 
 chloe: theo that was a drill
