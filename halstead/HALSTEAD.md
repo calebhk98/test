@@ -3107,7 +3107,7 @@ Chloe stops with the spoon in the beans while her mother stands there, still hol
 
 And Chloe has nothing at all.
 
-Sam grew four inches over the summer and there is a pencil mark on a door frame about it. Sam had a girlfriend. She teaches now. She has seven of them and she taught one thing to all seven of them backward and had to go in and say so. There is a boy called Ferris who does everything the long way round and gets there every time. Japanese, four months of it. Abstract algebra, contracts, logistics, the fracture tests, a clamp that closes on the wrong axis, three hinges in a bin.
+Sam grew four inches over the summer and there is a pencil mark on a door frame about it. Sam has a girlfriend. She teaches now. She has seven of them and she taught one thing to all seven of them backward and had to go in and say so. There is a boy called Ferris who does everything the long way round and gets there every time. Japanese, four months of it. Abstract algebra, contracts, logistics, the fracture tests, a clamp that closes on the wrong axis, three hinges in a bin.
 
 All of it started around September. All of it went past this table in silence. Which one was she supposed to have opened with? Why is it the rifle?
 
