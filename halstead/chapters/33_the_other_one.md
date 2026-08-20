@@ -117,10 +117,16 @@ ________________
 Theo could have written cleaner rules than anyone else at that table — it is, more or less, his actual job. He says so once, and says in the same breath that his name needs to stay off any document that describes how to break the law he's paid to uphold. So it goes to Chloe.
 
 
+Eli builds the entry itself, the same way he built the first one, in small pieces that don't look like much on their own. Kavi builds the exit — what erases the traces of the entry as it happens, not after, because after is too late if anyone's actually watching — and for the better part of a week neither of them calls it anything but "the plumbing" in the group chat.
+
+
 The test runs five weeks. For most of them the tool sits somewhere only Eli and Kavi can see, doing nothing but watch itself work: how long a query takes, whether anything logs it, whether the shape of its own traffic looks like the ordinary noise around it. Kavi's watcher runs the whole time too, watching the watcher, the same doubled caution that caught the sensor gap years ago. Twice a week Eli posts one line to the group, clean or some technical variant of clean, and twice a week that's the whole of it.
 
 
 Eli spends the five weeks the way he spends any five weeks with a real problem sitting in the middle of them: badly slept, mostly cheerful, three shirts in rotation and the same breakfast every morning because deciding costs something he'd rather spend elsewhere. Kavi spends them the way he spends any five weeks like that, in the same chair, turning whatever's on the table over in his hands and setting it back down exactly where it was.
+
+
+Chloe turns twenty-one somewhere in the middle of the five weeks. She mentions it afterward, once, in passing, the same week she finishes page nine; there's no clean place for a birthday inside a document about federal sentencing exposure, so it waits.
 
 
 Chloe spends most of the five weeks at her own kitchen counter, most nights, the coffee going cold twice before she remembers it's there. Nine pages, when she's finished: what the tool leaves alone no matter what the access allows, what counts as being noticed and what falls short of that, and the one rule everybody reads twice, that any single one of the seven can end it, no vote and no argument, and the rest have one hour to comply.
