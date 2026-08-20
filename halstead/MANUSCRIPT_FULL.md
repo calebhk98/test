@@ -3310,9 +3310,11 @@ Her father turns his glass a quarter round on the step, and then asks her what t
 
 ## Chapter Twenty: The Parking Lot
 
-Nobody has ever snuck out.
+*June 2022*
 
-Over eleven days, Nadia stands next to a maintenance supervisor in the dining hall on a Tuesday, talking about the weather for forty seconds, and walks away with his badge copied. Chloe loops the corridor cameras. Ruth brings a box she built for a networking class the year before, which finds video recorders on the networks around it and logs in with the passwords they shipped with, and writes noise into them at intervals. Sam clocks the night patrol's second pass down the corridor four nights running, until the gap between it and the first pass is reliable enough to walk through.
+Nobody has ever snuck out. Not once, in nineteen years, which is the entire reason it is worth doing.
+
+Over eleven days, Nadia stands next to a maintenance supervisor in the dining hall on a Tuesday, talking about the weather for forty seconds, and walks away with his badge copied. Chloe gets into the corridor cameras and sets them looping. Ruth brings the box she built at thirteen, the one that finds video recorders on the networks around it and logs in with the passwords they shipped with. Sam clocks the night patrol's second pass four nights running, until the gap between it and the first is reliable enough to walk through.
 
 Kavi turns it down at the last second, says he wants to finish something, which from Kavi always means he already started it.
 
@@ -3322,9 +3324,9 @@ They're over the fence at twenty past eleven.
 
 The road into town runs downhill for the first mile, no streetlights until the gas station, and they keep to the shoulder in a loose line, Sam out front with his hands in his pockets, Nadia counting the cars that pass under her breath out of habit rather than need. A dog somewhere behind a fence works itself up for half a block and gives up. They cut through the empty lot behind a tire place and back out onto the road on the far side of it. Forty minutes gets them to the diner sign, waffles lit up yellow against the dark, the last stretch quiet except for boots on gravel.
 
-The diner does waffles all night, the syrup chained to the napkin holder so nobody walks off with the bottle, a jukebox in the corner that hasn't worked since before any of them were born. They take a booth by the window, the lot lit orange under one working lamp, and the waitress has menus down before the door's finished swinging shut behind them. They order too much and then Sam orders more, a full stack for himself and half of Nadia's once she stops eating a third of the way through it. He works his way around the crisp top edge of his own stack before he touches the syrup at all, the way he does every waffle he's ever been handed. The waitress, maybe fifty, carries four plates on one arm, refills the coffee unasked, and calls all of them honey, twice for Ruth, who accepts it from her in a way she wouldn't at school. Nadia falls asleep sitting up, then wakes and finishes her sentence. Chloe takes the seat that faces the door without deciding to, the way she takes it in the dining hall, in the library, anywhere with more than one way out.
+The diner does waffles all night, the syrup chained to the napkin holder so nobody walks off with the bottle, a jukebox in the corner that hasn't worked since before any of them were born. They take a booth by the window, the lot lit orange under one working lamp, and the waitress has menus down before the door's finished swinging shut behind them. They order too much and then Sam orders more, a full stack for himself and half of Nadia's once she stops eating a third of the way through it. He works his way around the crisp top edge of his own stack before he touches the syrup at all, the way he does every waffle he's ever been handed. The waitress, maybe fifty, carries four plates on one arm, refills the coffee unasked, and calls all of them honey, twice for Ruth, who takes it from her without a word. Nadia falls asleep sitting up, then wakes and finishes her sentence.
 
-They stay two hours. Sam wants to know whether the dent in Amberg's car is really shaped like a mailbox, and Ruth, who asked him outright once and got a straight answer, says it is, because the mailbox itself was in the wrong place and Amberg still maintains that.
+They stay two hours. Sam wants to know whether the dent in Amberg's car is really shaped like a mailbox, and Ruth, who asked him outright once and got a straight answer, says it is.
 
 "He told you that."
 
@@ -3332,33 +3334,25 @@ They stay two hours. Sam wants to know whether the dent in Amberg's car is reall
 
 "I'd act like it was a secret."
 
-"You'd have hit the mailbox in the first place," Ruth says, "so it wouldn't come up."
+"You'd have told the whole school inside a week," Ruth says. "You'd have brought people out to look at it."
 
 She turns her coffee cup a quarter turn on the table before she says the other thing.
 
 "My brother's in. The letter came Thursday."
 
-"Four years behind you," Sam says, around most of a bite. "Rough for him."
+Sam puts his fork down. "How old is he now, seven?"
 
-"He already knows the corridor cameras loop on Tuesdays. I told him in March."
+"Seven in September."
 
-"You told a twelve-year-old how to get around campus security."
+"Nine years behind you." He picks the fork back up. "He's going to hear about you for nine straight years."
 
-"I told my brother." Ruth keeps her eyes on the cup, turning it another quarter turn. "That's not the same as telling a stranger."
+"He already knows that. He's been practising looking unimpressed." Ruth turns the cup again. "He asked me what the food's like. That was the whole letter conversation. The food."
 
-"Rohan's thirteen and still won't touch a soldering iron," Nadia says. "Won't get near anything with a plug on it."
+"What did you tell him?"
 
-"That's not the same thing."
+"I told him about the waffles here instead." She says it flatly, but she's looking at the cup and not at any of them.
 
-"It's exactly the same thing. I just don't get a letter about it."
-
-Sam has the syrup upside down over his second plate, timing it. "Ten weeks starting Friday," he says. "You going home, or is the shop keeping you."
-
-"The shop's always keeping me. I go back anyway." Nadia keeps her eyes on what's left of her waffle, working the last bite around her fork. "My dad thinks the till's been light on Thursdays for two months and hasn't worked out why. I already know why."
-
-"You going to tell him?"
-
-"I'm going to fix it and let him find out it's fixed." She says it the way she'd state a fact about the weather, no weight on it at all.
+Sam has the syrup upside down over his second plate, timing it. "Ten weeks starting Friday," he says. "Anyone actually doing anything."
 
 "I'm doing the forge both sessions again," Chloe says. "Same as last year."
 
@@ -3366,147 +3360,123 @@ Sam has the syrup upside down over his second plate, timing it. "Ten weeks start
 
 "It's not not going to be different. It's just also going to be the forge."
 
-"That hook's still on your door," Ruth says. "The one from year two."
+"That hook's still on your door. The one from year two."
 
 "It's a good hook."
 
 "It's a fine hook. It's not why it's still on your door."
 
-"It's not a real word anymore," Sam says, back on the menu, tapping a line of the specials with one finger. "Nobody's said *hither* since Shakespeare."
+Sam has the specials card up off the table, holding it at arm's length. "*Come hither for our world famous short stack.*" He puts it down. "*Hither.* Nobody's said *hither* since Shakespeare."
 
-"It's in the dictionary," Ruth says. "That makes it real."
+"It's in the dictionary," Ruth says. "That makes it a word."
 
 "It makes it archaic. There's a difference."
 
 "Say a sentence with it in that isn't from a play."
 
-"Hither, thither, and yon," Sam says, "which is three for the price of one, so I win twice."
+"Hither, thither, and yon," Sam says. "That's three, and you only asked for one, so I win twice."
 
 "That's not how winning an argument works."
 
 "It's how winning this one works." They argue about it until the waitress comes back with the check, and Nadia has exact change out on the table before it lands, four ways, no discussion.
 
-There's a shopping cart in the lot behind a hardware store on the way home. Ruth films Sam taking it into a curb at speed, the front wheel folding sideways with a sound like a dropped pan. Nadia goes after him and is better at it, hitting the same curb full speed, brakes untouched, and staying on both feet through the landing.
+There's a shopping cart in the lot behind a hardware store on the way home. Sam is in it before anybody suggests anything, knees up around his ears, and Ruth pushes him at the curb at a dead run and lets go too late. The front wheel folds sideways with a sound like a dropped pan and Sam goes over the handle into the grass strip and lies there laughing with his arms out. Nadia films the second attempt. Nadia is better at it, hitting the same curb full speed with the brake untouched, riding it out on both feet through the landing, and Chloe laughs hard enough that she has to sit down on the kerb with her head between her knees. They get eleven minutes out of a broken shopping cart. Ruth wants a fourth run and the wheel is finished, so they leave it upside down where it stopped.
 
 ---
 
-The men come out four blocks later, between two parked cars, seven of them in a clump. One streetlight over the row of cars is running on a bad ballast, on, off, on. They stop four meters short and the one at the front does the talking. Three have guns, two down at their sides, one up and moving.
+The men come out four blocks later, between two parked cars, seven of them in a clump. One streetlight over the row is running on a bad ballast, on, off, on. They stop four meters short and the one at the front does the talking. Three have guns, two down at their sides, one up and moving.
 
 "Phones. Watches. Come on."
 
-Chloe's read comes in the order it always does. The fence, the gap under it, the alley, the loading dock she could be on top of in four seconds. Seven of them, three armed, standing close enough together that a fourth of them could reach the man next to him with an arm barely extended. That's the whole read. A group that stands like that has always had the advantage and left it untested.
+Chloe's read comes in the order it always does, and the first line of it is that these are seven grown men who chose this and have presumably done it before. The fence. The gap under it. The alley. Seven, three armed. Nobody in the group is standing anywhere stupid. She puts them at her own level until something tells her otherwise, because that is the only assumption that doesn't get somebody hurt.
 
 "Hang on," Sam says. "Let me have this one."
 
-"Why?"
+"There are seven."
 
-"I need the experience. I'm going to barely pass self defense."
+"I know."
 
-"That's not what barely passing means, Sam," Ruth says.
+"Sam." Ruth doesn't move. "Three guns."
 
-"It's what it means for me."
+"I know." He is already unhooking his thumbs from his pockets. "I've never had one that wasn't scored."
 
-"You'll get nothing out of that," Chloe says.
+Chloe looks at the space between the cars, and at Sam, and gives it about a second. "Fine. We're right here."
 
-"I'll get a little." Nadia is already up and over the fence when she shrugs, Chloe half a second behind her, Ruth last, her bag swung ahead of herself so the strap won't catch on the chain link.
+They drift, not run, three steps back and wide, splitting so they're standing off both his shoulders with the parked cars behind them and nothing between them and him. Nadia takes the side with the two guns down. Ruth takes the other. Chloe takes the angle that covers the alley mouth, which is the only place another four of them could come from. None of them is more than five paces from Sam's back. It reads, from the front, like three teenagers getting out of the way.
+
+Sam walks at the seven of them.
+
+The front one says hey and then says it again and Sam is inside four meters, then three, and the gun that was waving is waving at something much too close. Past the muzzle, he takes the wrist and turns it out and down until the man bends, strips the gun one-handed while he's still folded over, and throws the slide under a parked car. It takes less time than the man takes to finish going down.
+
+Then all of them come at once, and it is fast and it is not close. Sam puts the first through the second, which drops both. The third gets an arm out and Sam takes it and uses it, and by the time that one hits the ground the fourth has already committed to the space Sam was in and isn't in. The second gun comes half out of a jacket and Sam has the wrist before the barrel clears the pocket, and the man goes down into the one behind him, and Sam strips that one too and throws the pieces two directions. Somebody swings at the back of his head from the left and Nadia says "left" without raising her voice and Sam is already turning. The last one takes a step back to make room and Sam deals with the other one first and then with him.
+
+Nobody on the outside has to move. Chloe's weight comes forward once, when the fourth man gets behind Sam's shoulder, and goes back again before she's taken a step.
+
+"Twenty-two seconds," Ruth says.
+
+Sam is standing in the middle of them, turning, looking for the next one. There isn't one.
+
+He finds the third gun on a man who never got to it, takes it apart, and goes around all seven, rolling each onto his back and watching his chest move before he moves to the next. Ruth does the one who's out. Airway, then breathing, then a hand under the back of his head. She holds an eyelid open and looks. "Concussion. He's fine," and writes the time on her own forearm in pen, no paper anywhere down here. Nadia kneels on the man whose shoulder came out somewhere in the middle of it, finds the angle with two fingers, and puts it back with one motion he's unconscious for the whole of. Chloe does two of them, working down each ribcage with both hands flat, counting under her breath the same way she'd count her own. Ribs, nothing floating. One has bitten through his lip.
+
+"Should we report them to the police?" Ruth says.
+
+"Sure." Nadia doesn't look up. "And then there's a police report with four names on it, and the school reads it, and everybody finds out we went over the fence. That's not detention. That's home, and not coming back."
+
+"What if they report it?"
+
+"They're going to walk into a station and say what?" Nadia stands, wiping her hands down her jeans. "That somebody robbed them of a robbery?"
+
+Ruth caps the pen. "Then we're not here."
+
+"We were never here," Nadia says, and her hand is already on the fence.
+
+Sam hasn't moved. He is looking at the seven of them on the ground the way you look at a problem where the answer came out wrong.
+
+"That was nothing," he says.
+
+"We told you there were seven of them," Ruth says. "Not seventy."
+
+"Seven, Ruth. With guns. It should have been —" He stops. "It was nothing."
+
+"It was going to be nothing," Chloe says. "You could see it from where we were standing."
+
+Sam looks up. "How."
+
+"They were all bunched between two cars. If any two of them had swung at once they'd have hit each other, and they stood like that the whole way in, so nobody's ever taught them not to." She counts it off flat, not unkindly. "None of the three had an arm set for the gun. The one at the front had it up and his elbow was locked out, which means he's never fired it standing. They don't use them. Firing one brings police in four minutes and they know that better than we do, so the guns are there to be looked at."
+
+"That's not nothing."
+
+"And they're muggers."
+
+Nadia stops with her hand on the fence. "What's that got to do with it?"
+
+"If you had one usable skill," Chloe says, "any skill at all, you would make money doing literally anything other than this. You wouldn't be standing behind a hardware store at two in the morning taking phones off teenagers, because that's the worst-paid dangerous job there is. Which means they don't have one." She looks back down at the man she's just finished checking. "Some of them are probably not well. I think you just beat up seven people who couldn't have held down a job at the diner."
+
+Sam takes that in silence for a second.
+
+"The guns are supposed to make it harder," he says. "That's the whole point of a gun."
+
+"A gun's a prop if you don't use it." Ruth has her bag back on her shoulder. "They let you walk all the way in. They gave you the wrist. They stood in a clump and waited their turn." She shrugs. "They fought like thirteen-year-olds. You could have done that at thirteen."
+
+"Fine." Sam puts his hands up and lets them drop. "So who do I fight."
+
+"Go back and fight the waitress," Nadia says.
+
+Sam stops walking. "Wait," he says.
+
+"She's fifty," Ruth says. "She's an adult with a job. She's had thirty-four more years than you have."
+
+"That's thirty-four years of being in situations," Nadia says. "You've had sixteen and eleven of them were at school."
+
+Sam thinks about it for longer than the joke needs. "She'd take me apart before I got a hand up."
+
+"She'd take you apart," Nadia agrees.
+
+Sam laughs at that most of the way to the corner, and Ruth lets him have it. They cross the last empty intersection at a walk, four sets of footsteps falling into the same rhythm on their own, faster than the walk down had been. They argue about the waitress the whole way home.
 
 ---
 
-Getting up is four seconds of boosting each other by the boot, quiet about it, done before Sam's finished crossing the open ground below them. The loading dock roof is chest height off a stack of pallets, still warm from the day coming up through the tar paper. Nadia goes flat first, watching the sixth man, the one hanging back where the streetlight doesn't reach the others, in case he moves for a car at the corner instead of joining the rest of them. Ruth has her watch turned so she can read it without lifting her wrist, tracking whichever gun has the fewest hands on it at any given second. Chloe keeps her own eyes on the alley mouth behind them and the loading dock's far corner, the two ways this stops being seven men and becomes nine.
-
-While they lie on the loading dock roof, Sam walks at the seven of them. The front one says hey and then says it again and Sam is inside four meters, then three, and the gun that was waving is waving at something much too close. Past the muzzle, he takes the wrist and turns it out and down, until the man bends. Sam holds him there, between himself and the rest.
-
-"He's going to lose the gun," Ruth says.
-
-He doesn't. He strips it one-handed while the man is still folded over, and it comes apart in four pieces and he drops them, and the slide goes under a parked car. Ruth already has the second gun placed, back pocket, right side, before anyone else on the roof has thought to look for it.
-
-Of the six who come at once, five get there. The sixth stands behind them with nowhere to be, and Nadia keeps her eyes on him straight through when the rest of it starts. His hand goes to his jacket once, halfway, and comes back down when the fight on the ground stays too slow to be worth joining. Nadia watches the hand go down before she watches anything else.
-
-"There it is," Ruth says.
-
-Somebody swings and hits the man Sam is holding. Sam lets him go and steps left, which puts three of them in a line. It's slower than the mats. One takes a hit to the side of the leg and stops using it; the next, hit twice in the body, sits down where he stands. Sam takes the third by the arm, puts him face down, and leaves him.
-
-"He's slow on the transitions," Nadia says, chin on her hands.
-
-"He's slow on everything, look at his feet." Ruth's other hand has found the edge of the roof and closed around it.
-
-"Why is he doing that with his left."
-
-The second gun starts out of a jacket pocket and stops there. Sam has the wrist before it's straight and the man goes down into the one behind him. On the ground, he strips that one too, throwing the pieces in two directions. The last two try to come around. One takes a step back to make room, and Sam deals with the other one first, and then with him.
-
-"Fifty-one seconds," Ruth says. "One of them never even got there." Her hand comes off the edge of the roof, the tar still gritty on her palm from holding it.
-
-"Clear," Chloe says, still watching the alley. The loading dock stays as empty as it started.
-
----
-
-Sam is standing in the middle of them, turning, when they come down off the roof. His knuckles are marked, surface only, and he finds the third gun on a man who never got to it and takes it apart before going around to check all seven, rolling each one onto his back and watching his chest move before he moves to the next.
-
-Ruth does the one who's out. Airway, then breathing, then a hand under the back of his head. She holds an eyelid open and looks, "Concussion. He's fine," and writes the time on her own forearm in pen, no paper anywhere down here. Nadia kneels on the man whose shoulder came out of its socket somewhere in the middle of it, finds the angle with two fingers, and puts it back with one motion he's unconscious for the whole of. She's up and checking the next one before he'd have finished making a sound. Chloe does two of them, working down each ribcage with both hands flat, counting under her breath the same way she'd count her own, ribs, nothing floating, and one who's bitten through his lip. Her own pulse is still going hard enough to feel in her fingertips the whole time she's checking his.
-
-"Anything?" Sam says.
-
-"No." Ruth caps the pen, the column of numbers already running up past her wrist. "We should talk about whether this is a thing that gets reported."
-
-"Reported to who." Nadia is already moving, not fast, just done with the row of them. "Them?" She tips her head at the seven, eyes already elsewhere. "A man doesn't call the police to say he got robbed of a robbery."
-
-"I mean us." Ruth stands, wiping her hands on her jeans harder than the dirt on them needs. "If anyone at school finds out we went over that fence tonight, we're not looking at detention. We're looking at being sent home, and not coming back."
-
-"Nobody's finding out." Nadia pushes her sleeves up first. "Nobody's calling anyone, and nobody's standing around to see if one of them does either. We're not here."
-
-"And it's not only the fence," Chloe says, eyes still on the alley out of habit. "Somebody writes down what happened tonight, the first real question is how four of us got past our own gate to begin with."
-
-"I don't just mean that either." Ruth looks at the gun pieces still scattered under the parked cars instead of at any of them. "Three of those were real guns."
-
-Sam looks at his own knuckles for a second.
-
-"What about him." Chloe nods at the one Ruth just finished checking, still on his back, breathing slow and even. "If nobody's coming."
-
-"He's breathing on his own and his pupils are even." Ruth says it fast, still not looking away from him. "He wakes up in twenty minutes with a headache and six friends to take him home."
-
-Chloe watches him too, until his chest goes up again on its own.
-
-Sam stands over the man he was holding, unmoving, before he speaks. "We're just leaving them," he says, not moving toward the fence yet.
-
-"They're not hurt bad." Nadia's hand is already on the fence. "None of them are hurt bad. That's the whole point of doing it the way we did it."
-
-Sam looks at the seven of them a moment longer than the others do, the closest he comes to arguing it, then finds his own way back to the fence and goes over.
-
-They leave.
-
-Through the window of the diner the waitress is standing at the till with the phone in her hand, watching them go over the fence, and she has not dialled it yet. She is fifty years old and she has been on her feet since four, and what is on her face is the thing none of the four of them are wearing. Chloe sees it going over and files it with the other things about the outside that come out crooked, and is over the fence and gone before she has got anywhere with it.
-
----
-
-The road back is the same road, colder now, the sodium light gone once they're far enough from the stores. Chloe looks back once out of habit and then walks the rest of it facing forward. Sam is still working his hands, wanting something to do with them.
-
-"I got nothing out of that."
-
-"You got fifty-one seconds against seven."
-
-"Three of them had guns, Ruth, which is usually the part that's supposed to matter."
-
-"Having a gun isn't a skill." Ruth's already talking over the end of his sentence. "They stood in a group and let you walk in, and the one at the back made room for you. You could have done that at thirteen."
-
-Sam looks at the sidewalk a moment, working it over before he says anything. "Why are they so bad at it."
-
-"Because they're criminals," Chloe says. "If you were good at anything you wouldn't be behind a hardware store at two in the morning taking phones off teenagers."
-
-Ruth kicks a bottle cap off the curb without breaking stride and watches where it lands.
-
-"So if that's not it, what do I fight."
-
-"If you want to find out where you actually stand, you don't pick the fight," Chloe says. "You take whichever one shows up."
-
-"Go back and fight the waitress," Nadia says. Sam stops walking. "Wait," he says.
-
-"She's fifty," Ruth says. "She's on her feet nine hours a shift and she's carrying four plates on one arm. She's had thirty-four more years than you have."
-
-"She'd take me apart before I got a hand up."
-
-"She'd take you apart," Nadia agrees. Sam laughs at that most of the way to the corner, and Ruth lets him have it. They cross the last empty intersection at a walk, four sets of footsteps falling into the same rhythm on their own, faster than the walk down had been. They discuss it the whole way home.
-
-They're back over the fence a few minutes past two, Ruth's copied badge back in the maintenance supervisor's jacket before he's noticed it was gone, Chloe's camera loop already unwinding itself toward normal. The corridor is empty and quiet the whole way to their own doors.
+They're back over the fence a few minutes past two, Chloe's camera loop already unwinding itself toward normal. The corridor is empty and quiet the whole way to their own doors.
 
 Chloe sets her shoes down by the door, laces still knotted from being kicked off rather than untied, and lies on top of the covers for a while before she gets under them.
 
@@ -3514,6 +3484,4 @@ Chloe sets her shoes down by the door, laces still knotted from being kicked off
 
 Ruth shuts the box off in the corridor and puts it in the chat before she sleeps. Four lines and a photo of Sam standing in the lot with his arms out. By breakfast there are sixty replies and an argument about whether it counts, whether seven civilians with three guns between them is a real test or just seven people who happened to be in the way of one.
 
-Somebody in the year above has sent just one laughing face, which Ruth reads out at breakfast while Sam reaches past her for the syrup and starts on his tray, like the question landed for somebody else at the table. He lets it sit every time it comes up, and keeps letting it sit long enough that people start bringing it up just to watch him do it again.
-
-Nadia doesn't call her father before she leaves for the summer. Telling him about the fence would mean telling him how they got over it, a story that puts more than just her in trouble. She's home two days later, checks the till against the tape before she says hello, and by the time he asks how school is, the part-timer who'd been pocketing the difference on Thursdays is already gone and the number is already back where it should be. The ledger goes back under the counter, balanced, before her mother's finished asking how the drive back was. She keeps the fence, the diner, and seven men behind a hardware store to herself.
+Kavi sends one laughing face and nothing else, which Ruth reads out at breakfast while Sam reaches past her for the syrup and starts on his tray, like the question landed for somebody else at the table. He lets it sit every time it comes up, and keeps letting it sit long enough that people start bringing it up just to watch him do it again.

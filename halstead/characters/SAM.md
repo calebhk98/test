@@ -177,8 +177,8 @@ He moves heavily crossing a room or eating, then moves like something else the i
 
 - Likes schedules: "there is a schedule, which he has had every day since he was seven" (chapters/21_the_applications.md through chapters/27_the_file.md:702), a family habit long before it's an Army one (see Home).
 - Likes Sergeant Ruiz. See Relationships above (chapters/26_ten_targets.md:8).
-- Likes waffles: "Sam orders more" at the all-night diner (chapters/20_the_parking_lot.md:13).
-- Likes shopping trolleys: takes one into a curb at speed on the walk home (chapters/20_the_parking_lot.md:19).
+- Likes waffles: "Sam orders more" at the all-night diner (chapters/20_the_parking_lot.md).
+- Likes shopping trolleys: gets into one unprompted and goes over the handle into a grass strip, laughing, on the walk home (chapters/20_the_parking_lot.md).
 - Likes baking, bread specifically: the one graded thing in his life nobody's comparing to ninety other people.
 - Likes being handed a task with no stated end point: the through-line behind the schedule-liking, the retesting, and "when's the real one."
 - Reads his own forty percent on the range as unremarkable: "Because I'm on forty and I do other stuff" (chapters/18_fifteen.md:69) is an accurate self-assessment inside a room where several classmates clear ninety percent at the same drill.

@@ -54,7 +54,7 @@ Names the person she's talking about instead of using a pronoun, even where a pr
 
 The real text only gives a weak, partial version of this: direct vocative address by name ("nadia: eli," "nadia: sam") rather than third-person reference avoiding a pronoun. Two written-to-spec examples, anchored to real lines:
 
-- chapters/20_the_parking_lot.md:121 currently reads "'She'd take you apart,' Nadia agrees." Proposal: "'The waitress would take you apart,' Nadia agrees." Naming the waitress again this deep into the exchange, where "she" would be the ordinary choice.
+- chapters/20_the_parking_lot.md currently reads "'She'd take you apart,' Nadia agrees." Proposal: "'The waitress would take you apart,' Nadia agrees." Naming the waitress again this deep into the exchange, where "she" would be the ordinary choice.
 - chapters/28_nadia.md through chapters/35_nine_minutes.md, "Nadia," line 32 currently reads "obviously i fired him, he came here to steal from me." Proposal: "obviously i fired the cleaner, the cleaner came here to steal from me," repeating "the cleaner" rather than defaulting to "he/him."
 
 ## Would they say this?
@@ -104,7 +104,7 @@ A small industrial city in the Ohio River valley, upriver from Pittsburgh. Nobod
 ## Home
 Her parents emigrated from Gujarat before she was born and run a hardware-and-repair shop two blocks off the main road: tools, small appliances, whatever a neighborhood wants fixed instead of replaced. She's kept the books since she was eleven, in a paper ledger her father still trusts more than the software their accountant keeps suggesting. Gujarati is spoken at the counter and at the table, the one language of the eleven Halstead assigned her that isn't it. She finds this funny.
 
-A younger brother, Rohan, thirteen, works Saturdays and would rather be anywhere else. She quietly does the parts he won't. Dinner is late, after the shop closes, and half of it is her parents disagreeing out loud about a supplier or a customer asking for a discount for cash. She has opinions and states them, and by fourteen her father sometimes took them over his own.
+A younger brother, Rohan, thirteen, works Saturdays and would rather be anywhere else. **He no longer appears anywhere in the manuscript** — his only line was cut from chapters/20_the_parking_lot.md, so everything below about him is background for the writer and nothing a reader has been given. She quietly does the parts he won't. Dinner is late, after the shop closes, and half of it is her parents disagreeing out loud about a supplier or a customer asking for a discount for cash. She has opinions and states them, and by fourteen her father sometimes took them over his own.
 
 She has watched adults be wrong about money her whole life: her mother discounting her own hours to match a competitor's price, her father calling a slow month bad luck when the ledger says it's the same three customers switching suppliers every March. She formed strong, specific opinions about what running a business costs at a kitchen table with a ledger open on it, long before anyone at Halstead asked her opinion about anything.
 
@@ -122,7 +122,7 @@ Compact, fast, always already moving: rarely photographed still because she's ra
 - Targeted, or on the losing end of something, she treats it as information to act on. When someone plants a USB stick on a cleaning contract to get into her systems, she feels insulted, not threatened: "im FINE. im insulted." She goes straight to fixing it.
 - Tired, or at two in the morning, she sleeps in short complete units and comes back online without a transition: asleep sitting up in a diner booth for four minutes, then awake, finishing the sentence she left off on. She treats sleep as a task to complete.
 - A free Saturday goes to something with a visible end state: a repair, a fix, physical work.
-- What she finds funny in other people is confidence that's outrun competence, played straight without comment: Sam wanting a "real" opponent while a fifty-year-old waitress on her feet nine hours a day would take him apart (chapters/20_the_parking_lot.md).
+- What she finds funny in other people is confidence that's outrun competence, played straight without comment: Sam wanting a "real" opponent while a fifty-year-old waitress would take him apart (chapters/20_the_parking_lot.md). **The reason matters and is easy to get wrong.** It is not that the waitress is athletic, or hardened by shift work. It is that she is an adult with a job and thirty-four more years of life than Sam has, and the four of them assume, flatly, that an adult beats a kid and that three times the life is three times the experience of everything. They are wrong. They do not know they are wrong. Any version that makes the waitress plausibly tough has lost the joke.
 - Angry, she doesn't get louder, she gets exact: the sleeve-push that usually precedes something difficult shows up before something unfair too, and what follows it is scaled to the offense and nothing past it (see Dials, disagrees by).
 - Humiliated, the tell is the interview scene where she notices her own bar has drifted without her: she doesn't defend the drift, she names it flatly and starts fixing it in the same breath, which is as close as she gets to visibly smarting from something (see Interior life).
 - Envious of someone getting handed the bigger thing before they've earned it, the exact thing she's still waiting on herself, she doesn't say so. She goes and finds the nearest repair and does it faster than it needed.
@@ -183,7 +183,7 @@ Black coffee, no doctoring, drunk too fast to taste. Handwriting small, fast, le
 
 ## Facts a rewriter needs
 - Full name: Nadia Patel.
-- Family: parents, both immigrants from Gujarat, run a hardware-and-repair shop; one younger brother, Rohan, thirteen.
+- Family: parents, both immigrants from Gujarat, run a hardware-and-repair shop; one younger brother, Rohan, thirteen, who is off the page entirely as of the chapter-20 revision.
 - Home: a small industrial city in the Ohio River valley; Gujarati spoken at home.
 - Founds and runs a company at twenty-one, making small diagnostic hardware for independent repair shops.
 - Languages: Spanish, French, Arabic, Mandarin, Russian, Turkish, Farsi, Urdu, Bengali, Malay, Portuguese, one per year from seven. Known for Farsi.
