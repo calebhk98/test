@@ -3400,9 +3400,13 @@ Chloe's read comes in the order it always does, and the first line of it is that
 
 "I know." He is already unhooking his thumbs from his pockets. "I've never had one that wasn't scored."
 
-Chloe looks at the space between the cars, and at Sam, and gives it about a second. "Fine. We're right here."
+Chloe looks at the space between the cars, and at Sam, and gives it about a second. "Fine. We're right there."
 
-They drift, not run, three steps back and wide, splitting so they're standing off both his shoulders with the parked cars behind them and nothing between them and him. Nadia takes the side with the two guns down. Ruth takes the other. Chloe takes the angle that covers the alley mouth, which is the only place another four of them could come from. None of them is more than five paces from Sam's back. It reads, from the front, like three teenagers getting out of the way.
+There is chain link eight feet behind them and a loading dock on the other side of it, and the three of them are over the fence and gone before the man at the front has finished turning his head to follow. Nadia goes first because she's nearest, one hand on the top rail and no pause on it. Chloe is half a second behind her and doesn't touch the rail at all. Ruth swings her bag over ahead of herself so the strap can't catch, comes across last, and lands running. The pallets are stacked chest-high against the dock and they take them in a step each. It is not quick for them. It is ordinary, done at the speed the fence drill has been run at every term since they were nine, and from four meters away it looks like three people walked backwards out of the world.
+
+One of the men says something. Another one says *where'd they go*. Both of them are still saying it when Sam starts walking.
+
+The dock roof is a metre and a half above the lot and none of the three lies down on it. They stay crouched at the lip with their hands flat on the edge, weight forward, close enough to be down in the lot inside a second. That is the whole reason for being up there: nothing between them and Sam, a clear view of every set of hands, and a drop onto anybody who gets behind him.
 
 Sam walks at the seven of them.
 
@@ -3410,11 +3414,13 @@ The front one says hey and then says it again and Sam is inside four meters, the
 
 Then all of them come at once, and it is fast and it is not close. Sam puts the first through the second, which drops both. The third gets an arm out and Sam takes it and uses it, and by the time that one hits the ground the fourth has already committed to the space Sam was in and isn't in. The second gun comes half out of a jacket and Sam has the wrist before the barrel clears the pocket, and the man goes down into the one behind him, and Sam strips that one too and throws the pieces two directions. Somebody swings at the back of his head from the left and Nadia says "left" without raising her voice and Sam is already turning. The last one takes a step back to make room and Sam deals with the other one first and then with him.
 
-Nobody on the outside has to move. Chloe's weight comes forward once, when the fourth man gets behind Sam's shoulder, and goes back again before she's taken a step.
+Nobody comes off the roof. Chloe's weight goes onto her hands once, when the fourth man gets round behind Sam's shoulder, and comes off them again before she's committed to the drop.
 
 "Twenty-two seconds," Ruth says.
 
 Sam is standing in the middle of them, turning, looking for the next one. There isn't one.
+
+They come down off the dock, Nadia hanging and dropping, Chloe straight off the edge, Ruth using the pallets.
 
 He finds the third gun on a man who never got to it, takes it apart, and goes around all seven, rolling each onto his back and watching his chest move before he moves to the next. Ruth does the one who's out. Airway, then breathing, then a hand under the back of his head. She holds an eyelid open and looks. "Concussion. He's fine," and writes the time on her own forearm in pen, no paper anywhere down here. Nadia kneels on the man whose shoulder came out somewhere in the middle of it, finds the angle with two fingers, and puts it back with one motion he's unconscious for the whole of. Chloe does two of them, working down each ribcage with both hands flat, counting under her breath the same way she'd count her own. Ribs, nothing floating. One has bitten through his lip.
 
