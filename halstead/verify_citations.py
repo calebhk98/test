@@ -25,8 +25,7 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-SOURCES = ["chapters/*.md", "CHAPTERS_16_22_v2.md", "CHAPTERS_23_30_v2.md",
-           "MANUSCRIPT_FULL.md"]
+SOURCES = ["chapters/*.md", "HALSTEAD.md"]
 # Quotes in these are about the sheets themselves, not about the manuscript.
 SKIP_FILES = {"_TEMPLATE.md", "_DIFFERENTIATION.md", "_ALLOCATIONS.md",
               "CHARACTER_SHEETS.md"}

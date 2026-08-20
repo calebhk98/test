@@ -32,7 +32,7 @@ import statistics as st
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-CHAT_FILES = ["CHAPTERS_16_22_v2.md", "CHAPTERS_23_30_v2.md"]
+CHAT_FILES = []
 # Only these seven ever post in the group chat.
 CAST = ["chloe", "ruth", "sam", "kavi", "nadia", "eli", "theo"]
 
