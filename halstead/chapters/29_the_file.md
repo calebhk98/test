@@ -8,6 +8,9 @@ Theo's job is reading things and saying what they mean.
 The building takes two badges to get past, one for the garage and one for the floor, and the floor itself is the ordinary kind of ugly: grey carpet tile, a drop ceiling, a coffee machine three people have been complaining about since before he started. His desk is a cubicle in a row of identical cubicles, no window, the monitor turned away from the aisle so a passing badge sees the back of it rather than the screen. Most days it's cable traffic and open-source reporting out of a dozen countries, forty or fifty pages of it, and the job is to come back with two, sometimes one, the part that actually matters pulled out from the part that doesn't. His supervisor sends half of it back the first time, three questions written in the margin, asking him to show steps he thought he'd already shown. He rewrites it and sends it up again.
 
 
+The floor holds about sixty desks like his, phones going in a low murmur most of the day, someone's radio turned down until only the person next to it can make out the station. Stand-up runs every Monday at nine, five minutes each, standing in a loose horseshoe around the supervisor's desk. Somebody restocks the printer with paper before it runs out, every time, done for so long it reads as automatic rather than assigned to anyone.
+
+
 The work that actually uses what he's good at comes maybe once a week: a transcript in Pashto, another in Dari, the two halves of the same region most analysts only get one side of. He holds a technical conversation in either language as easily as the other, and pairing them turns up exactly the kind of mismatch a single-language reader would miss, one side of a group describing an action the other side stays silent about entirely. He flags three of those in his first eight months, and his supervisor takes all three seriously, no follow-up questions in the margin, the exception rather than the rule for anything else he sends up.
 
 
@@ -124,13 +127,13 @@ He sits with it for two days.
 At his desk it's the same job as any other day: twenty pages reduced to two, sent up, sent back with three questions in his supervisor's handwriting, answered and sent up again. She stops at his desk mid-morning, coffee in hand, and asks how the retirement box is coming along. Theo tells her most of it is dead weight, which is true, and that one folder needs another day, which is also true, and she takes both answers as complete and moves on down the row. At home the first night he opens the school's own website on his personal laptop and reads it front to back the way he'd read any other piece of open-source material, checking for anything that squares with what's in the file. It says what it has always said: three sentences, a photograph of a building he's stood inside a thousand times, an admissions portal, the same page it would have been the day before any of this. He closes the laptop with both hands the way he closes it when he needs to stop looking at something.
 
 
-The second night is the night he always calls his grandmother, the same twenty minutes as any other week: the ferry schedule, a neighbor's new dog, ordinary house news that keeps the whole call on solid ground.
+The second day he clears his queue faster than usual, four cables done by ten, because working through something else keeps the loading-dock report from filling every part of his head at once. That second night is the night he always calls his grandmother, the same twenty minutes as any other week: the ferry schedule, a neighbor's new dog, ordinary house news that keeps the whole call on solid ground.
 
 
 Then he does the only thing available to him, which is nothing, because every page of it is stamped classified, and the line between what he can say and what he can't is not his to redraw.
 
 
-The second day he clears his queue faster than usual, four cables done by ten, because working through something else keeps the loading-dock report from filling every part of his head at once. He types three different versions of the question before he sends any of it, deleting each one and starting over, because even the version that says the least is still a version that says something.
+He types three different versions of the question before he sends any of it, deleting each one and starting over, because even the version that says the least is still a version that says something.
 
 
 So he posts in the chat.

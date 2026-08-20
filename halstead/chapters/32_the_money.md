@@ -17,7 +17,7 @@ Eli builds his half after his own shift ends, at a desk two feet from a window t
 Kavi builds his half in the same lab he's had since he stayed on, a converted classroom with one window painted shut and a corkboard of Sanskrit verb charts that have hung there for years. He works from Eli's logs rather than the live feed, turning a data cable over in his free hand while he reads and setting it back exactly where he picked it up. The watcher carries a simpler job than Eli's worm does; it only has to notice, quietly, the day the worm stops behaving like a reconciliation job and starts behaving like a person who found something, and say so to exactly one person before it says so to anyone else. He tests the watcher against three years of his own old coursework logs first, because it's the only slow, boring, badly-behaved dataset he already has lying around, and moves it onto Eli's live feed only once it's gone a full week treating his own late-night habits as unremarkable.
 
 
-They test it for a month against Nadia's own systems before it goes anywhere. Nadia runs her actual business through that month exactly the way she always has: the till counted against yesterday's tape before she says hello to anyone, the ledger open on the counter, four hundred small transactions a week moving through systems Eli now holds a key to. She checks his daily summary the way she checks a supplier's invoice, line by line, standing at the counter with a pen in her free hand, and sends back exactly one correction in four weeks, a timestamp that's read her local time instead of the shop's own time zone. "Fix the clock," she says, not asking. He fixes it inside the hour.
+They test it for a month against Nadia's own systems before it goes anywhere. Nadia runs her actual business through that month exactly the way she always has: the till counted against yesterday's tape before she says hello to anyone, the ledger open on the counter, four hundred small transactions a week moving through systems Eli now holds a key to. She checks his daily summary the way she checks a supplier's invoice, line by line, standing at the counter with a pen in her free hand, and sends back exactly one correction in four weeks, a timestamp that's read her local time instead of the shop's own time zone. "Fix the clock," she says, not asking. He fixes it inside the hour. The shop itself does exactly what it always does across those four weeks: a compressor motor gets fixed on a Tuesday, a lawnmower blade gets sharpened for cash, the register closes within a dollar of itself most nights.
 
 
 nadia: if this comes back to my company i will end all of you
@@ -58,7 +58,7 @@ The three of them get on a call to look at the board properly in the second week
 Ruth is the one who argues it into a proof.
 
 
-She works it on the floor of her own apartment the way she worked everything at six, papers in a ring around her rather than stacked, a marker in one hand and a mug of coffee going cold within reach of the other. Two of Kavi's timeline cards come home in her bag without either of them discussing it; she copies the gaps onto a strip of paper long enough to run the length of the room, then walks it on her hands and knees, checking each blank stretch against a calendar that offers no explanation for either side of it. By the time she picks the phone back up, she has been down on that floor for the better part of a night, and what she posts into the chat is the version she has already checked three times over, not the version she found first.
+She works it on the floor of her own apartment the way she worked everything at six, papers in a ring around her rather than stacked, a marker in one hand and a mug of coffee going cold within reach of the other. The apartment is cold enough by two in the morning that she works in a sweatshirt with the sleeves pushed to her elbows, and the radiator ticks through the whole night without once actually warming the room. Two of Kavi's timeline cards come home in her bag without either of them discussing it; she copies the gaps onto a strip of paper long enough to run the length of the room, then walks it on her hands and knees, checking each blank stretch against a calendar that offers no explanation for either side of it. By the time she picks the phone back up, she has been down on that floor for the better part of a night, and what she posts into the chat is the version she has already checked three times over, not the version she found first.
 
 
 ruth: its one person and i can show it
@@ -117,7 +117,7 @@ ________________
 
 
 
-The chat holds for most of that evening while each of them is somewhere else entirely: Sam finishing a set at a gym two states from Nadia's shop, Nadia closing out a Tuesday's till a second time to be sure the number holds. Sam is the one who breaks it, back at his own kitchen table, phone propped against a mug.
+The chat holds for most of that evening while each of them is somewhere else entirely: Sam finishing a set at a gym two states from Nadia's shop, Nadia closing out a Tuesday's till a second time to be sure the number holds. Sam is the one who breaks it, back at his own kitchen table, phone propped against a mug. Kavi reads the whole exchange from his lab, marker still in hand from the board, and waits for an actual question to show up before he answers one.
 
 
 sam: shame nobodys already done this
@@ -176,7 +176,7 @@ ________________
 
 
 
-The four of them stay in the thread past midnight in their own time zones, Ruth still on her apartment floor with the strip of paper rolled up beside her, Theo back at his desk, the water glass still full at his elbow. It's Ruth who brings it back around to what any of this is actually worth.
+The four of them stay in the thread past midnight in their own time zones, Ruth still on her apartment floor with the strip of paper rolled up beside her, Theo back at his desk, the water glass still full at his elbow. Sam is still at his own kitchen table, plate finally empty in front of him; Nadia has the shop's lights off and the register drawer open, counting a second time out of habit rather than need. It's Ruth who brings it back around to what any of this is actually worth.
 
 
 ruth: so they have nineteen years of work

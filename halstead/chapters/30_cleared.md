@@ -5,13 +5,13 @@
 Chloe's blog gets big in about fourteen months.
 
 
-She posts two or three times a week. Six thousand words with a five-hundred-word summary at the top for people who want it fast. The summaries start getting picked up on their own, once people notice hers runs the length of a normal article and holds more in it than the article does, and by the following spring she has a readership and an inbox that never fully empties.
+She posts two or three times a week. Six thousand words with a five-hundred-word summary at the top for people who want it fast. The summaries start getting picked up on their own, once people notice hers runs the length of a normal article and holds more in it than the article does, and by the following spring she has a readership and an inbox that keeps refilling faster than she clears it.
 
 
 People keep asking who works with her. The question shows up as a comment under a post, or an email with "research team" somewhere in the subject line, once from an editor at an actual paper who wants to know about syndication and asks, almost as an afterthought, who else is on staff. Chloe answers the same way every time, laptop propped against the stack of manuals she translates all day: it's just her, it takes a day, at school she was doing ten pages a week alongside nine other subjects, so this is well under half of what she's used to.
 
 
-Roughly a third of those conversations end there, with a reply that trails off into something polite, "right, well, if the team ever wants to talk about expanding," and then nothing further. Another third turn into a second email asking the same question in different words, as if the first answer got lost somewhere between her and them, and she types the same three sentences again and sends them again. The pattern repeats often enough, same question, same drop-off, that she decides it's people being funny about credentials and stops turning it over between emails.
+Roughly a third of those conversations end there, with a reply that trails off into something polite, "right, well, if the team ever wants to talk about expanding," and then the thread goes quiet. Another third turn into a second email asking the same question in different words, as if the first answer got lost somewhere between her and them, and she types the same three sentences again and sends them again. The pattern repeats often enough, same question, same drop-off, that she decides it's people being funny about credentials and stops turning it over between emails.
 
 
 She's also carrying twenty-one credits and the translation job, and none of it registers as a load, because her actual timetable at fourteen was heavier than this and included getting hit.
@@ -39,7 +39,7 @@ ________________
 The clearance investigation takes ten weeks and involves a man named Whitaker who comes to see her twice.
 
 
-He calls first, the second week of October, to set a time, then arrives at her apartment on a Saturday morning with a government ID, a notebook, and a thermos of his own coffee he waits to open until he's seated across the table from her. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it. Her own kitchen table seats four and usually holds nothing; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
+He calls first, the second week of October, to set a time, then arrives at her apartment on a Saturday morning with a government ID, a notebook, and a thermos of his own coffee he waits to open until he's seated across the table from her. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it. Her own kitchen table seats four and usually sits bare; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
 
 He tells her what the visit is for before he asks her anything. A full accounting of the last eleven years, verified wherever it can be verified, recorded as unverifiable wherever it can't.
 
@@ -71,7 +71,7 @@ He looks up at that, once, the pen briefly still against the page. "That's young
 "Yeah."
 
 
-He lets it sit there and moves the pen to the next line rather than press her for more, and she offers nothing further either, the fact standing on its own the way he's left it. Eleven years at a boarding school, then. Eleven languages next, and she lists them off in the order she learned them, Spanish, French, Mandarin, Russian, Latin, Arabic, German, Japanese, Hindi, Korean, Swahili, watching him check each name against something already in his own folder. He taps three at random, as far as she can tell. "Say something. Any of these three."
+He lets it sit there and moves the pen to the next line rather than press her for more, and she matches him, leaving the fact standing on its own the way he's left it. Eleven years at a boarding school, then. Eleven languages next, and she lists them off in the order she learned them, Spanish, French, Mandarin, Russian, Latin, Arabic, German, Japanese, Hindi, Korean, Swahili, watching him check each name against something already in his own folder. He taps three at random, as far as she can tell. "Say something. Any of these three."
 
 She does, one flat sentence in each, the kind of line a phrasebook prints on its first page. He writes down that she said it and moves his pen to the fourth item on the list, the content of the sentence itself apparently beside the point.
 
