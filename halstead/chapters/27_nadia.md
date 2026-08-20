@@ -1,4 +1,4 @@
-## Chapter Twenty-Eight: Nadia
+## Chapter Twenty-Seven: Nadia
 
 *May 2024*
 

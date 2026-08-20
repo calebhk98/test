@@ -5,7 +5,7 @@ A security-minded problem-solver who treats every serious risk as a mechanism to
 **Surname:** Marsh. The manuscript never gives him one.
 **Age span:** 13–21 | **MBTI:** ISTP (writing aid, not a claim) | **IQ:** roughly 160–170 by ordinary test norms, comfortably inside the top tenth of a percent of the general population. Unremarkable at his own school, where the whole cohort clusters near there.
 **Born:** October 2004, within the same admission year as the rest of the core group; the manuscript never gives his age directly.
-**Appears in:** chapters/16_thirteen.md; chapters/23_the_first_one.md (narration), chapters/24_the_chat.md (dialogue); chapters/28_nadia.md, chapters/32_the_money.md, chapters/33_the_other_one.md, chapters/34_the_files.md, chapters/35_nine_minutes.md.
+**Appears in:** chapters/16_thirteen.md; chapters/23_the_first_one.md (narration), chapters/24_the_chat.md (dialogue); chapters/27_nadia.md, chapters/32_the_money.md, chapters/33_the_other_one.md, chapters/34_the_files.md, chapters/35_nine_minutes.md.
 **Speaks:** 48 lines, heavily front-loaded into the two later files. Only 4 of the 48 happen before adulthood, all in one scene, and there is nothing at all between that scene and Ch19.
 
 ## Voice in one paragraph

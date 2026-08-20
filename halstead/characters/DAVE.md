@@ -4,7 +4,7 @@ Chloe's father: the parent who finds the real problem in a document, married twe
 
 **Full name:** David "Dave" Kessler.
 **Age span:** adult throughout, chapters/01–19 (Chloe ages 6–16 across his appearances) | **MBTI:** ISTJ (a writing aid, not a claim) | **IQ:** 120–130, reader inference per SYNOPSIS_CHARACTERS_TIMELINE.md
-**Appears in:** chapters/01_before.md, 03_the_letter.md, 06_the_list.md, 09_february.md, 11_eight.md, 12_nine.md, 13_ten_pages.md, 14_sixty_degrees.md, 15_twelve.md, 16_thirteen.md, 17_fourteen.md, 18_fifteen.md, 19_sixteen.md, and chapters/23_the_first_one.md (present, non-speaking). Not present at all in chapters/02, 05, 07, 08, 10, 20, or anywhere in chapters/28_nadia.md through chapters/35_nine_minutes.md.
+**Appears in:** chapters/01_before.md, 03_the_letter.md, 06_the_list.md, 09_february.md, 11_eight.md, 12_nine.md, 13_ten_pages.md, 14_sixty_degrees.md, 15_twelve.md, 16_thirteen.md, 17_fourteen.md, 18_fifteen.md, 19_sixteen.md, and chapters/23_the_first_one.md (present, non-speaking). Not present at all in chapters/02, 05, 07, 08, 10, 20, or anywhere in chapters/27_nadia.md through chapters/35_nine_minutes.md.
 **Speaks:** roughly 90 lines, front-loaded into chapters/03 and thinning steadily after chapters/14.
 
 **He is named.** SYNOPSIS_CHARACTERS_TIMELINE.md heads his section "Dad (unnamed)," but Meg calls him "Dave" four times in dialogue: chapters/06_the_list.md (twice), chapters/09_february.md, and chapters/11_eight.md. It appears only in her mouth, spoken by her alone.

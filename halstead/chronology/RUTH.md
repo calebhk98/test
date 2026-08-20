@@ -1,5 +1,9 @@
 # Ruth's Timeline — Chronology Audit
 
+> **Chapters 25–29 have been renumbered** into chronological order; see
+> `chronology/RENUMBER.md`. Chapter numbers written out in the prose below still use the
+> old numbering. File paths in this document have been updated and are correct.
+
 Scope: Ruth Aymar, as given by the manuscript in `halstead/chapters/01_before.md` through `35_nine_minutes.md`. All citations are `file:line`, verified against the chapter files directly (not against `SYNOPSIS_CHARACTERS_TIMELINE.md`, `RUTH.md` (character notes), or `CURRICULUM_GRID.md`, which are used only as background and are explicitly the less-reliable source per the brief). Chloe's dates are included wherever they are the only clock available for a Ruth event, since Ruth is never dated independently of the group.
 
 A note on method: the manuscript ages Chloe (and, by extension, the same-cohort friend group Ruth belongs to) explicitly in most chapters — either in the chapter title ("Twelve," "Thirteen," "Sixteen"...) or in dialogue ("I'm twelve," "you are 12 years old"). Ruth's own age is never given as a bare number; it is inferred from being consistently the same class, the same dorm room, the same graduating cohort (91 names, `chapters/23_the_first_one.md:14,66`) as Chloe. That inference is used throughout and flagged wherever it matters.
@@ -45,9 +49,9 @@ A note on method: the manuscript ages Chloe (and, by extension, the same-cohort 
 | Senior year, March | Ruth accepted to MIT | `chapters/21_the_applications.md:14` |
 | Graduation, Chloe turns 18 in June | Ruth graduates with the 91; "Ruth goes to MIT" | `chapters/23_the_first_one.md:68,66,96` |
 | Undated ("nine years" stated) | "The chat is nine years old. They wrote the encryption themselves at thirteen" | `chapters/24_the_chat.md:5` |
-| Post-grad | Ruth polls the chat on adult second-language rates, gives 25% (accurate figure vs. Sam/Kavi/Nadia's guesses) | `chapters/25_nineteen.md:68-93` |
-| Post-grad, over "the next fortnight," then April | Ruth posts more statistics unprompted, then stops posting in April | `chapters/25_nineteen.md:118-125` |
-| Following ~6 months of silence | "It's the first thing Ruth has posted in six months" (one word: "bad") | `chapters/27_the_file.md:118-116` |
+| Post-grad | Ruth polls the chat on adult second-language rates, gives 25% (accurate figure vs. Sam/Kavi/Nadia's guesses) | `chapters/28_nineteen.md:68-93` |
+| Post-grad, over "the next fortnight," then April | Ruth posts more statistics unprompted, then stops posting in April | `chapters/28_nineteen.md:118-125` |
+| Following ~6 months of silence | "It's the first thing Ruth has posted in six months" (one word: "bad") | `chapters/29_the_file.md:118-116` |
 | Ruth's MIT freshman fall (October) | Believes she's been placed in a remedial track | `chapters/31_ruth.md:37-6` |
 | MIT freshman year, "about ten months" after the above | A professor she likes can't follow her past the third step of something; this breaks the "remedial track" theory | `chapters/31_ruth.md:37-38` |
 | MIT, some months later, April | Ruth stops posting statistics in the chat, having "understood something" | `chapters/31_ruth.md:52` |
@@ -84,9 +88,9 @@ These two agree with each other exactly: built at thirteen, shown off in Chloe's
 ### 2.2 The loading-dock intrusion: "six years ago," restated after the story's own clock has moved on
 
 **Chapter 27 ("The File"), Theo, eight months into his first post-graduation job:**
-> "He is very good at it and he is happy, and in his eighth month somebody gives him a stack of old material to summarise..." — `chapters/27_the_file.md:8`
-> "Six years ago. Four operators, over the fence at the loading side, a little after four in the morning." — `chapters/27_the_file.md:51`
-> "He was twelve that year." — `chapters/27_the_file.md:86`
+> "He is very good at it and he is happy, and in his eighth month somebody gives him a stack of old material to summarise..." — `chapters/29_the_file.md:8`
+> "Six years ago. Four operators, over the fence at the loading side, a little after four in the morning." — `chapters/29_the_file.md:51`
+> "He was twelve that year." — `chapters/29_the_file.md:86`
 
 This is internally consistent on its own: the loading-dock intrusion happened when Chloe/Ruth's cohort was twelve (`chapters/15_twelve.md:201,325,377`), and Theo reading about it "six years ago" while eight months into his very first job after graduating at eighteen (`chapters/23_the_first_one.md:98`) computes cleanly: 18 − 12 = 6.
 

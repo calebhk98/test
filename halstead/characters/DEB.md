@@ -3,12 +3,12 @@
 Chloe's colleague at the translation company, first name Deb: single mother of one, project coordinator by trade, and the evidence that Chloe's isolation is circumstance rather than temperament.
 
 **Age span:** 46 during Chloe's first year at the company | **MBTI:** ESFJ (writing aid, not a claim) | **IQ:** not inferable
-**Appears in:** chapters/25_nineteen.md in two summarized passages. A second character, also named Deb, appears in chapters/05_behind.md as a swim instructor at Chloe's age-seven summer camp, a different person in every respect; see Known problems.
+**Appears in:** chapters/28_nineteen.md in two summarized passages. A second character, also named Deb, appears in chapters/05_behind.md as a swim instructor at Chloe's age-seven summer camp, a different person in every respect; see Known problems.
 **Speaks:** the manuscript renders her entirely in Chloe's summary. This sheet builds the rest of her from that summary and from invention, marked as such throughout.
 
 ## Voice in one paragraph
 
-Chloe's account carries her whole presence on the page: "Deb who sits opposite her talks about her son constantly and Chloe learns his entire life story and is genuinely invested in it by October" (chapters/25_nineteen.md), and later, "She'll explain something at work, plainly, and Deb will not have it, so Chloe will find another way in" (same chapter). Given a voice: warm, talkative, concrete rather than abstract. She describes a project by what it's for, "it's the safety manual for the forklifts," rather than by its category, and she needs a plain technical explanation attached to a person or a use before it lands for her.
+Chloe's account carries her whole presence on the page: "Deb who sits opposite her talks about her son constantly and Chloe learns his entire life story and is genuinely invested in it by October" (chapters/28_nineteen.md), and later, "She'll explain something at work, plainly, and Deb will not have it, so Chloe will find another way in" (same chapter). Given a voice: warm, talkative, concrete rather than abstract. She describes a project by what it's for, "it's the safety manual for the forklifts," rather than by its category, and she needs a plain technical explanation attached to a person or a use before it lands for her.
 
 ## When they talk at length
 

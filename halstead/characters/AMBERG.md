@@ -80,7 +80,7 @@ Coffee, strong, no sugar, refilled constantly through the day. Handwriting is sm
 ## Would do
 - Place the governing document on the desk before saying a word. (two instances)
 - Mark a technically correct answer down for failing to show the reasoning. (chapters/19_sixteen.md:41-53)
-- Offer a genuinely large benefit without pressuring anyone to accept it. (chapters/21_the_applications.md through chapters/27_the_file.md:141)
+- Offer a genuinely large benefit without pressuring anyone to accept it. (chapters/21_the_applications.md through chapters/29_the_file.md:141)
 - Record a refusal and move on without revisiting it. (chapters/22_the_offer.md:29)
 - Hand thirteen-year-olds an adult rationale years before it applies, without dressing it up as an achievement. (chapters/16_thirteen.md:117)
 - Run all ninety-one exit interviews personally rather than delegate any of them.

@@ -1,5 +1,9 @@
 # Beta Notes — Chloe / Halstead manuscript
 
+> **Chapters 25–29 have been renumbered** into chronological order; see
+> `chronology/RENUMBER.md`. Chapter numbers written out in the prose below still use the
+> old numbering. File paths in this document have been updated and are correct.
+
 Draft stage: pre-continuity, pre-copyedit. Documents received: ch1–2, ch3–6 (v2), ch7–9 (v3), ch10–15 (v2), ch16 "Watch", ch17 "The Parking Lot" (v3), ch16–22 (v2), ch23–30 (v2).
 
 Everything below is sorted by whether it needs fixing or is just worth knowing. Cosmetic errors the author can already see are mostly left out.

@@ -1,4 +1,4 @@
-## Chapter Twenty-Nine: The Exercise
+## Chapter Twenty-Six: The Exercise
 
 *February 2024*
 

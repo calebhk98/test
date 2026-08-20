@@ -201,7 +201,7 @@ These are checkable and wrong. Highest priority.
   the right decision") doesn't restate or reference any of them. The stated mechanism doesn't match
   the quoted evidence, both of which are on the page.
 
-## 1b. The datelines put five chapters out of order
+## 1b. The datelines put five chapters out of order — DONE, reordered
 
 Every chapter from 20 on carries a real-world date on line 3. Read in book order they run:
 
@@ -225,8 +225,8 @@ This may be deliberate — the book already runs thematic blocks that aren't str
 25–29 are one-per-character chapters (Chloe, Sam, Theo, Nadia, Sam again) rather than a continuous
 line. But nothing on the page tells a reader that, and `chronology/BOOK.md` calls this stretch merely
 "underdetermined" without ever citing the printed datelines, which means the audit that was supposed
-to catch this never looked at the one piece of evidence that settles it. **Decide whether the block
-is intentionally out of order; if it is, the datelines are what make it read as an error.**
+to catch this never looked at the one piece of evidence that settles it. **Actioned.** The block was reordered to match its own dates: 26→25, 29→26, 28→27, 25→28,
+27→29. See `chronology/RENUMBER.md` for the mapping and for what it invalidates.
 
 ## 2. Chronology and order
 
@@ -679,7 +679,7 @@ text. Several were created by this session's own rewrites.
   is logged at ch5 L21/L101. Her sheet calls naming-inside-the-correction a move no one else in the
   cast owns.
 - **RUTH.md** already flags the ch17 "Aymar" collision and recommends renaming the stopwatch student.
-- **SAM.md's "Known problems" #1 cites `26_ten_targets.md:58`** for a mirrored line ("A gun you can't
+- **SAM.md's "Known problems" #1 cites `25_ten_targets.md:58`** for a mirrored line ("A gun you can't
   stop a projectile with isn't a tool…") that is no longer in the file. The sheet is critiquing a
   draft that has already been fixed.
 - **SYNOPSIS places ch26 in its "age 20, Autumn" row.** The chapter says November 2023 and Sam is born

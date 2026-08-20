@@ -105,7 +105,7 @@ usual instant read on a page doesn't reach his mouth as fast.
 
 **Best at:** networks and cryptography. He cracks the intruders' AES-256 comms during the 4am
 intrusion (chapters/15_twelve.md:163) and, years later, builds the watcher that catches the
-founder's one visible mistake (chapters/28_nadia.md through chapters/35_nine_minutes.md). **Also exceptional, and the thing the
+founder's one visible mistake (chapters/27_nadia.md through chapters/35_nine_minutes.md). **Also exceptional, and the thing the
 school never remarks on:** eleven languages read and written to research level, one of them a
 rule system almost nobody outside a university has any reason to have opened. **Favourite, and
 why:** cryptography. "Breaking for a full term before building" is the same motion as everything
@@ -249,13 +249,13 @@ without comment. Money: doesn't think about it much and has never needed to. Rit
 closing the notebook the list lives in, he rereads the newest entry once, silently, and adds
 nothing to it that night. He lets a question sit for at least a day before deciding it's
 unsolved. Phone or comms: functional. Short, factual chat messages with no punctuation flourish,
-consistent with the AES-256 exchange (chapters/21_the_applications.md through chapters/27_the_file.md). First thing in the morning: checks
+consistent with the AES-256 exchange (chapters/21_the_applications.md through chapters/29_the_file.md). First thing in the morning: checks
 whatever he left running overnight before he does anything else, including talking to anyone.
 
 ## Would do
 
 - Finish the sentence or clause he's already in before stopping, even under a hard deadline, without protest: "Kavi has most of a page and is still going when the teacher calls time, so he finishes the clause he's in and puts the pen down without any fuss about it" (chapters/05_behind.md).
-- Build a monitoring or defensive tool for a problem nobody has flagged yet, unasked (the financial-worm watcher, chapters/28_nadia.md through chapters/35_nine_minutes.md).
+- Build a monitoring or defensive tool for a problem nobody has flagged yet, unasked (the financial-worm watcher, chapters/27_nadia.md through chapters/35_nine_minutes.md).
 - Give a straight, complete account of how he knows something the moment he's asked directly, including the part that's mildly damning to someone else (chapters/10_april.md).
 - Keep explaining a mechanism until the explanation is actually finished, whether or not the room is still listening (the volcano scene, chapters/04_pluto.md).
 - Name the actual cost or difficulty of something rather than let it stand as impressive (see Signature).
@@ -282,14 +282,14 @@ whatever he left running overnight before he does anything else, including talki
 - **Ruth.** Treats her technical conclusions as load-bearing rather than something to
   double-check. Tracing the pattern behind the school's funding together, he reaches the same six
   words she does, in the same breath, unprompted: "thats a person getting older"
-  (chapters/28_nadia.md through chapters/35_nine_minutes.md).
+  (chapters/27_nadia.md through chapters/35_nine_minutes.md).
 - **Sam.** His easiest target, and his one reliable source of amusement, in the same chapter: he
   laughs at Sam before he's said a word to anyone, then closes it with "You did it to yourself."
   (chapters/04_pluto.md).
 - **Nadia.** Tells the group he'll find out what the untraceable medication actually is, then
   spends four days running it down through channels nobody else has. He comes back with one word,
   internal, and no account of where the four days went. That kind of gap is exactly what she
-  notices (chapters/21_the_applications.md through chapters/27_the_file.md).
+  notices (chapters/21_the_applications.md through chapters/29_the_file.md).
 - **Eli.** Professional equals sharing a domain rather than a friendship on the page. The
   financial-worm project is their one real interaction: Eli builds the tool, Kavi builds what
   watches it, and the exchange stays functional throughout.
@@ -307,7 +307,7 @@ whatever he left running overnight before he does anything else, including talki
   mathematics over the computation that came before it.
 - Dislikes being told something is impressive when it cost him nothing (chapters/15_twelve.md:163).
 - Dislikes a question that closes without him: the specific shape of his one named fear.
-- Builds monitoring or defensive tools before anyone asks for them (chapters/28_nadia.md through chapters/35_nine_minutes.md).
+- Builds monitoring or defensive tools before anyone asks for them (chapters/27_nadia.md through chapters/35_nine_minutes.md).
 - Reads and writes in eleven languages to research level. In every one of them his own language
   stays literal: no simile, no metaphor, confirmed across the full reading.
 
@@ -332,9 +332,9 @@ whatever he left running overnight before he does anything else, including talki
   eleven would place him at the top of an ordinary classroom.
 - **Known at what age:** already knew fraction division before Halstead taught it, at six or
   seven (chapters/05_behind.md). Sits the bar at sixteen and passes on the first attempt
-  (chapters/19_sixteen.md). Admitted to MIT, Caltech and Chicago (chapters/21_the_applications.md through chapters/27_the_file.md). The only
+  (chapters/19_sixteen.md). Admitted to MIT, Caltech and Chicago (chapters/21_the_applications.md through chapters/29_the_file.md). The only
   member of the core group who takes the school's offer to stay on as a researcher rather than
-  leaving (chapters/21_the_applications.md through chapters/27_the_file.md).
+  leaving (chapters/21_the_applications.md through chapters/29_the_file.md).
 
 ## Known problems
 

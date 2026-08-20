@@ -135,6 +135,8 @@ The appointment comes out of a phone call in February, with Chloe in the next ro
 
 ## Chapter Two: March 4th
 
+*March 2012 – June 2012*
+
 The waiting room has a fish tank in it with no fish, only water, the little plastic castle, and the bubbles coming up in a line from the filter in the corner. Chloe puts both hands on the glass down near the gravel and looks along the bottom of it, in case they are under something, but the gravel is only gravel.  
 "Where are the fish?"  
 "I don't know, honey," her mom says, not looking up, so Chloe decides it's a true answer.  
@@ -190,7 +192,7 @@ Chloe asks to use the bathroom first, which turns out to be through a door she'd
 He sits with it, and lets the room stay quiet instead of moving on to something easier, long enough that Chloe fills it herself.  
 "I look out the window," Chloe says.  
 "At what?"  
-"The parking lot. There's people in it doing stuff. There was a guy who put his coffee on the roof of the car and drove off with it still up there and it fell off at the stop sign." She looks at the cup. "And then Mrs. Aldana asked me a question and I didn't know there was one."  
+"The parking lot. There's people in it doing stuff. There was a guy who put his coffee on the roof of the car and drove off with it still up there and it went off at the turn out of the lot." She looks at the cup. "And then Mrs. Aldana asked me a question and I didn't know there was one."  
 "How long is it, usually? Between when you finish and when everybody else does."  
 "I don't know. A long time."  
 "Longer than we've been in here?"  
@@ -255,6 +257,7 @@ She still knows all twenty-eight of their names. Nobody has needed to learn hers
 On the last day they clean out their desks, and she finds four pencils, a bracelet that isn't hers, a permission slip from October, and the library book, which she takes home and returns that same afternoon so it won't go late over the summer. Kayleigh Burns hugs three people at the door. Chloe watches from beside her own desk, both straps of her backpack already on, and stays where she is. She puts her chair up on the desk the way they were told to, then gets in the car line.  
 Her report card comes in an envelope a week later, saying she is meeting expectations in all areas. Under comments, in the box where the teacher writes, it says: Chloe is a pleasure to have in class.  
 Her mom reads it twice, then puts it on the fridge under the magnet shaped like a strawberry, where the sticky note used to be.
+
 
 ## Chapter Three: The Letter
 

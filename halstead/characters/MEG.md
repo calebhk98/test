@@ -4,7 +4,7 @@ Chloe's mother: the parent who checks things, married twenty years to a man who 
 
 **Full name:** Margaret "Meg" Kessler, née Halloran.
 **Age span:** adult throughout, chapters/01–v2 Ch18 (Chloe ages 6–18 across her appearances) | **MBTI:** ESFJ (a writing aid, not a claim) | **IQ:** 110–120, reader inference per SYNOPSIS_CHARACTERS_TIMELINE.md
-**Appears in:** chapters/01_before.md, 02_march_4th.md, 03_the_letter.md, 04_pluto.md, 06_the_list.md, 07_the_same_room.md, 08_the_asking.md, 09_february.md, 10_april.md, 11_eight.md, 12_nine.md, 14_sixty_degrees.md, 15_twelve.md, 16_thirteen.md, 17_fourteen.md, 19_sixteen.md, and chapters/23_the_first_one.md Not present, not even mentioned, in chapters/05, 13, 18, 20, or anywhere in chapters/28_nadia.md through chapters/35_nine_minutes.md.
+**Appears in:** chapters/01_before.md, 02_march_4th.md, 03_the_letter.md, 04_pluto.md, 06_the_list.md, 07_the_same_room.md, 08_the_asking.md, 09_february.md, 10_april.md, 11_eight.md, 12_nine.md, 14_sixty_degrees.md, 15_twelve.md, 16_thirteen.md, 17_fourteen.md, 19_sixteen.md, and chapters/23_the_first_one.md Not present, not even mentioned, in chapters/05, 13, 18, 20, or anywhere in chapters/27_nadia.md through chapters/35_nine_minutes.md.
 **Speaks:** roughly 120 lines. Heavily front-loaded: 10 to 20 turns per chapter through chapters/01–09, then 4 in chapters/10, all secondhand by phone, 0 in chapters/13, dropping to single digits per chapter through chapters/14–19, and 3 lines total at the graduation her own chapters/09 scene sets up.
 
 ## Voice in one paragraph

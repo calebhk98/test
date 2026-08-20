@@ -143,7 +143,7 @@ book, so reconcile them before revising from them.
   only thing we have".
 - **Two different characters are called Deb.** A swim instructor at camp when Chloe is 7
   (`05_behind.md:55`) and her colleague at the translation company when she is 19
-  (`chapters/25_nineteen.md:17`). Twelve years and no connection between them.
+  (`chapters/28_nineteen.md:17`). Twelve years and no connection between them.
 
 ## One contradiction to resolve
 

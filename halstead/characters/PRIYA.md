@@ -5,7 +5,7 @@ worked out that nobody has to keep score of the things she cares about most.
 
 **Age span:** ~7-18 (camp through a one-line post-graduation mention) | **MBTI:** ESFP (a writing aid, not a claim) | **IQ:** genius-range, consistent with the rest of the cohort. The text never assigns her a number the way it does Kavi or Odile. The negotiation-board scene has her matching the year's benchmark score without banking it, which places her reading speed at the top of the group.
 **Born:** December 2005, within the same camp cohort as Chloe and Ruth; the manuscript never gives her age as a number.
-**Appears in:** chapters/04_pluto.md, 05_behind.md, 06_the_list.md, 07_the_same_room.md, 10_april.md, 12_nine.md, 13_ten_pages.md, 14_sixty_degrees.md, 15_twelve.md, 16_thirteen.md, 17_fourteen.md, 18_fifteen.md, 19_sixteen.md, chapters/21_the_applications.md through chapters/27_the_file.md (one mention, no line)
+**Appears in:** chapters/04_pluto.md, 05_behind.md, 06_the_list.md, 07_the_same_room.md, 10_april.md, 12_nine.md, 13_ten_pages.md, 14_sixty_degrees.md, 15_twelve.md, 16_thirteen.md, 17_fourteen.md, 18_fifteen.md, 19_sixteen.md, chapters/21_the_applications.md through chapters/29_the_file.md (one mention, no line)
 **Speaks:** ~15 quoted lines across 10 speaking turns in 6 of the 13 chapters (04, 10, 12, 15, 17). Not front-loaded the way it first looks: she is present and referenced in narration in every chapter on the list, and named as a fixture of the daily dinner table (16_thirteen.md:121), though only about a third of her chapters give her a quoted line.
 
 ## Voice in one paragraph

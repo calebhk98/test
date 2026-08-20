@@ -1,5 +1,9 @@
 # Halstead — Chronology Check
 
+> **Chapters 25–29 have been renumbered** into chronological order; see
+> `chronology/RENUMBER.md`. Chapter numbers written out in the prose below still use the
+> old numbering. File paths in this document have been updated and are correct.
+
 Scope: all 35 chapter files in `/home/user/test/halstead/chapters/`, read in file order. `SYNOPSIS_CHARACTERS_TIMELINE.md` was consulted only as a secondary check and is noted as less reliable per the brief; where it disagrees with the manuscript, the manuscript is followed.
 
 All line numbers below were verified with `grep -n` against the files in `/home/user/test/halstead/chapters/` immediately before being written into this report.
@@ -36,11 +40,11 @@ All line numbers below were verified with `grep -n` against the files in `/home/
 | 22 | The Offer | ~17 | April (same spring as ch21) | "fifteen minutes each, in April" | `22_the_offer.md:5` |
 | 23 | The First One | **turns 18 — see Dating Contradictions** | June (graduation) | "She turns eighteen in June." | `23_the_first_one.md:98` |
 | 24 | The Chat | ~18–19 | Undated (early post-grad) | "The chat is nine years old" (started when the cohort was 9, i.e. the "Nine" year) | `24_the_chat.md:5` |
-| 25 | Nineteen | 19 | Starts September (job + college + blog) | Chapter title; "starts the blog in September" | `25_nineteen.md:25`, `:23` |
-| 26 | Ten Targets | ~18–19 | Sam's Army training, "month four" | "has had every day since he was seven"; "In month four" | `26_ten_targets.md:8`, `:20` |
-| 27 | The File | ~18–19 | Theo "in his eighth month" at his job | References the ch15 intruder drill as "Six years ago," and states Theo "was twelve that year" | `27_the_file.md:86`, `:49`, `:84` |
-| 28 | Nadia | ~19 | Spring; Nadia's company "eleven months old" | Follows directly from ch23's "by September she's hiring" | `28_nadia.md:8` |
-| 29 | The Exercise | ~18–19 | Sam's field exercise, four days | Undated beyond "the exercise runs four days"; follows ch26 | `29_the_exercise.md:5` |
+| 25 | Nineteen | 19 | Starts September (job + college + blog) | Chapter title; "starts the blog in September" | `28_nineteen.md:25`, `:23` |
+| 26 | Ten Targets | ~18–19 | Sam's Army training, "month four" | "has had every day since he was seven"; "In month four" | `25_ten_targets.md:8`, `:20` |
+| 27 | The File | ~18–19 | Theo "in his eighth month" at his job | References the ch15 intruder drill as "Six years ago," and states Theo "was twelve that year" | `29_the_file.md:86`, `:49`, `:84` |
+| 28 | Nadia | ~19 | Spring; Nadia's company "eleven months old" | Follows directly from ch23's "by September she's hiring" | `27_nadia.md:8` |
+| 29 | The Exercise | ~18–19 | Sam's field exercise, four days | Undated beyond "the exercise runs four days"; follows ch26 | `26_the_exercise.md:5` |
 | 30 | Cleared | 20→21 | Exam just after 20th birthday; starts job January; turns 21 in June | "three weeks after she turns twenty"; "comes through in the autumn"; "twenty-one in June" | `30_cleared.md:104`, `:99`, `:102` |
 | 31 | Ruth | ~18–20 | Ruth's first MIT year, roughly a year, "about a year" before she says so in the chat | "Ruth spends her first year at MIT…"; "about a year" | `31_ruth.md:5`, `:103` |
 | 32 | The Money | ~20–22 | "Eleven weeks" build, "following two months" investigation | Follows ch30/31; no explicit Chloe age given | `32_the_money.md:31`, `:29` |
@@ -157,7 +161,7 @@ Taking the exam three weeks after a June birthday puts it in early-to-mid July. 
 Included here for completeness, as a control: the book's other "N years ago" cross-reference is internally sound, which makes the failure at 20/34 (see 2.1) more notable rather than less.
 
 Chapter 27 has Theo, "in his eighth month" at his intelligence job (i.e. roughly a year after the ch23 graduation, so ~18–19), read a file dating the Watch-drill intruder incident to "six years ago" and confirm he "was twelve that year":
-`27_the_file.md:86, 49, 84`
+`29_the_file.md:86, 49, 84`
 
 12 + 6 = 18, which matches Theo's approximate age at the time he's reading the file. That checks out cleanly. The equivalent claim for the diner night (2.1 above) does not: 6 years back from Chloe's age at ch34 (~20–22, following directly from ch33's "four months into" the job that starts at 20) gives roughly age 14–16 for the diner night, not the 16–17 its chapter position implies.
 

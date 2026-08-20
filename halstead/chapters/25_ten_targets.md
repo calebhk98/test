@@ -1,4 +1,4 @@
-## Chapter Twenty-Six: Ten Targets
+## Chapter Twenty-Five: Ten Targets
 
 *November 2023*
 
