@@ -97,7 +97,7 @@ ________________
 
 
 
-Kavi reads the three lines standing at the lab bench, the pen down for good now, both hands flat on the surface in front of him the way he'd brace against something before lifting it.
+Kavi reads the three lines standing at the lab bench, the pen down for good now, both hands flat on the surface in front of him the way he'd brace against something before lifting it. He leaves it there and waits, both hands still flat on the bench, for as long as it takes.
 
 
 kavi: ruth
@@ -169,4 +169,4 @@ eli: ruth i dont know
 eli: i have never once been at the top of a room in my life
 
 
-The chat sits on that line for a while. At his kitchen table Eli sets the phone flat on the wood, screen up, and keeps the same two fingers going against the table's edge instead of the screen, the rhythm holding steady the whole time, neither faster nor slower than it was three lines ago. Kavi picks the pen back up, turns it over once, and sets it down at a slightly different angle than it started at. Ruth leaves her phone where it landed on the floor of the lab and looks at the ceiling for a while, the file still open behind her on the bench, still on the same page, four years old, exactly as unexplained now as it was the first time she read it, at thirteen, years before she ever found out the file existed at all. On Chloe's desk, five states away, the tab stays open too, the cursor sitting in the empty box under Eli's line where a reply would go if anyone typed one.
+The chat sits on that line for a while. At his kitchen table Eli sets the phone flat on the wood, screen up, and keeps the same two fingers going against the table's edge instead of the screen, the rhythm holding steady the whole time, neither faster nor slower than it was three lines ago. Kavi picks the pen back up, turns it over once, and sets it down at a slightly different angle than it started at. Ruth leaves her phone where it landed on the floor of the lab and looks at the ceiling for a while, the file still open behind her on the bench, still on the same page, four years old, exactly as unexplained now as it was the first time she read it, at thirteen, years before she ever found out the file existed at all. On Chloe's desk, five states away, the tab stays open too, the cursor sitting in the empty box under Eli's line where a reply would go if anyone typed one. Outside his own apartment, four blocks from the federal building he'll be back inside by eight the next morning, Theo finishes his twenty minutes and goes back in, the file exactly where he left it, closed.

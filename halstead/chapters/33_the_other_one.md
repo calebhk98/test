@@ -14,7 +14,7 @@ Theo reads it twice the night it lands, then closes the laptop and makes tea the
 It isn't the arithmetic that finally moves him. He reads intelligence for a living, weighs one source against what it's actually worth, and the accounting comes out the same no matter which end he starts from: they already have a file on their own school that's nineteen years out of date, and reading the true one is the only way any of them will ever know what their own government actually thinks it knows. He can write that argument forward or backward and it lands in the same place both times.
 
 
-Every one of them knows the law cold. All seven had sat the same examination, and when Theo finally opens the thread on the ninth night, Ruth already has two numbers ready for Eli.
+Every one of them knows the law cold. All seven had sat the same examination, and when Theo finally opens the thread on the ninth night, Ruth is already in it, cross-legged on her own dorm room floor in Cambridge with a roommate asleep two feet away, and Eli's reading from the same kitchen table he wrote the document on less than a week earlier, and Ruth already has two numbers ready for him.
 
 
 theo: i want it on record that this is the stupidest thing any of us has ever done
@@ -79,7 +79,13 @@ Kavi keeps his eyes on the board he's rewiring in the lab when the thread reache
 kavi: the governments own logging is old and its federal so its worse than nadias, which means the risk was never getting in, its someone doing a manual review of the exact files we touch in the exact week we touch them, so the thing that gets us caught is timing, not the door
 
 
-Sam reads it between sets, phone propped against a water bottle on the end of the bench, and sends one line back before he's up again.
+eli: so we control the week
+
+
+kavi: yes
+
+
+Sam reads it between sets, phone propped against a water bottle on the end of a bench somewhere the paperwork still won't put a proper name to, and sends one line back before he's up again.
 
 
 sam: how long's this go for
