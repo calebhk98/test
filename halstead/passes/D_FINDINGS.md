@@ -94,8 +94,14 @@ These are checkable and wrong. Highest priority.
   them around."
 - **ch8 L7 vs L23** — mom says "since August," Chloe says "September, within a week or two of school
   starting," in a session built specifically around dating the onset. Nobody reconciles them.
-- **ch3 L101** — "It takes them nine days," against a named weekday sequence (Sunday → Monday →
-  Thursday → Saturday → Friday → Sunday) that cannot fit inside nine days.
+- ~~**ch3 L101** — "It takes them nine days," against a named weekday sequence.~~ **Withdrawn: the
+  finding cited a line that is not in the manuscript.** It quoted "By Saturday three separate people
+  know" at L49; `grep` for every weekday name in the file returns Sunday (L39), Monday/Tuesday/
+  Wednesday/Thursday (L41), Friday (L77) and Sunday (L85) — L49 carries no weekday at all. The real
+  sequence is Sunday day 0, Monday day 1, Thursday day 4, Friday day 5, Sunday day 7, ninth night
+  day 9, and nine days is correct. Whether the phantom Saturday came from an earlier draft or was
+  invented, it is the one item in this section that was never checkable against the file, and it is
+  the reason the fix agent was right to refuse it rather than renumber a chapter around it.
 - **ch3 L7** — "Nobody has ever sent Chloe anything," disproved by the grandmother's card in the same
   sentence.
 - **ch4 L42** — the planet corridor runs Mercury, Venus, Earth, Mars, Jupiter, then Pluto. Saturn,
