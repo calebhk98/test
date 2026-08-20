@@ -2,7 +2,7 @@
 
 *November 2025 – February 2026*
 
-The financial one takes eleven weeks.
+The financial one takes sixteen weeks.
 
 
 Eli builds it, and Kavi builds the thing that watches it. The whole design problem is that it has to be boring, sitting in the places where a badly maintained reconciliation job would sit and moving just as slowly, so it reads as ordinary and not as anything that searches. None of them have that kind of patience. The program does.

@@ -2,7 +2,7 @@
 
 *September 2023*
 
-The chat is nine years old. They wrote the encryption themselves at thirteen, mostly to keep a teacher from reading it while they arranged getting out of the building, and it's the only one any of them has ever used.
+The chat is five years old. They wrote the encryption themselves at thirteen, mostly to keep a teacher from reading it while they arranged getting out of the building, and it's the only one any of them has ever used.
 
 
 This is the first September that finds every one of them somewhere else. Eli, three states from where he grew up, has a new badge with last year's photo still on it, and Ruth is in a dorm room in Cambridge with a roommate she's met twice. Sam is at a processing station somewhere the paperwork won't name, where they hand his phone back a few minutes at a stretch. Kavi is still at Halstead, in a lab down the corridor from where he had his own lessons, doing work that used to be homework. Nadia is back behind the counter of her parents' shop, same as she's always done, while Theo, four states from the harbor town he grew up in, learns which parts of his new government job stay behind the badge. Priya is somewhere south of the equator, on a signal that comes and goes, and Chloe sits in a lecture hall built for four hundred people, an hour from the apartment she rents.
@@ -104,7 +104,7 @@ eli: i got a meeting with a lawyer
 eli: which honestly has been the most interesting thing thats happened to me since i started
 
 
-The build pipeline flaw is the kind of gap a company checks for insiders and outages, not for somebody like Eli looking at it sideways. Their own encryption has gone nine years without anyone who had real reason to try it. Eli wrote part of it. The rest has sat as untested by him as by everyone else, the same nine years running.
+The build pipeline flaw is the kind of gap a company checks for insiders and outages, not for somebody like Eli looking at it sideways. Their own encryption has gone five years without anyone who had real reason to try it. Eli wrote part of it. The rest has sat as untested by him as by everyone else, the same five years running.
 
 
 ________________
@@ -429,7 +429,7 @@ ________________
 
 
 
-Nadia is behind the counter more hours a week now than she's ever been, since none of the two months of interviews turned into anything worth taking. A regular customer asks her, not unkindly, when she's going to go do something with herself. She rings up his sandpaper and hands him his change.
+Nadia is behind the counter fewer hours a week now than she used to be, since the company she started in June is three months in and already paying two people who aren't her. A regular customer asks her, not unkindly, when she's going to go do something with herself. She rings up his sandpaper and hands him his change.
 
 
 nadia: guy today asked me when im going to go do something with myself
@@ -453,10 +453,10 @@ nadia: youre in basic, sam. you dont get a say in what people say to you either
 sam: fair
 
 
-kavi: whats wrong with the jobs you interviewed for
+kavi: whats the headcount
 
 
-nadia: theyre all two years behind where i already am. i sat through someone explaining margin to me
+nadia: two, so far. i sat through the bank explaining a business account to me like it was new information
 
 
 sam: brutal
@@ -549,7 +549,7 @@ ________________
 Four days pass before Kavi comes back with anything. When he does, he says he asked and was told it's internal. Internal how, Chloe asks. That's the word they used, is all Kavi has for her.
 
 
-The lock they built at thirteen to get past a teacher is still the only thing standing between this chat and anyone outside it, the same lock nine years running, untouched and unreplaced. Whatever internal means, it's a wall each of them keeps running into.
+The lock they built at thirteen to get past a teacher is still the only thing standing between this chat and anyone outside it, the same lock five years running, untouched and unreplaced. Whatever internal means, it's a wall each of them keeps running into.
 
 
 The chat moves on within about ten minutes. Chloe leaves the tab open on her desk for the rest of the evening, the cursor sitting in the empty box where a reply would go.

@@ -40,7 +40,7 @@ Sam waits, because he assumes there's a critique coming, and he's got one for hi
 The major's eyebrows go up.
 
 
-"Because if that's the assessment I've got notes," Sam says. "The culvert one was bad. I let them have the back door and that's on me, I should have gone up and around and I got lazy about the time. If we're doing it again I'd want it harder, honestly, or at least more of them, because three separate two-and-fours over four days is a lot of walking for not much."
+"Because if that's the assessment I've got notes," Sam says. "The culvert one was bad. I let them have the back door and that's on me, I should have gone up and around and I got lazy about the time. If we're doing it again I'd want it harder, honestly, or at least more of them, because a two, a four, and a one over four days is a lot of walking for not much."
 
 
 It goes upward anyway.

@@ -37,6 +37,7 @@ Then the twenty-sentence puzzle, in a language nobody in the room had ever heard
 Then the wood shop, and the safety glasses sized for somebody bigger. Then the eggs she made, and the dish on the Thursday that everybody ate, which had onions in it that she cut herself. Then the paintings they went and looked at, one of which cost more than a house, which baffles her, because it's a painting.  
 Then the computers, which is two things. There's typing the words in herself instead of dragging blocks around, and she can make it count to a hundred and skip the sevens. And then there's the room they took them to, enormous and cold, cold because the machines make heat that would break them, until a woman there explained the setup, including the water pipes running under the floor.  
 Then chess, which Sam is also better at.  
+Then karate.  
 Then the nerf guns at the end, because she just remembered.  
 Then the wood shop again, the safety glasses, almost the same sentence as before, and she keeps going, straight through it.  
 Her plate has gone cold in front of her, barely touched. She talks the rest of it with one hand flat on her dad's sleeve.  

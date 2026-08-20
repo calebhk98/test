@@ -11,7 +11,7 @@ The food is fine, the people are funny, and there is a schedule, which he has ha
 He maxes the fitness assessment in week two. Then he does it again in week three, better, because in Sam's head a number he's already hit is just the number that comes next.
 
 
-He does that with everything. There's no version of a task anywhere in Sam's head where he reaches a number, decides that's enough, and stops there. By week nine his file has a lot of numbers in it and somebody has started printing them out.
+He does that with everything. There's no version of a task anywhere in Sam's head where he reaches a number, decides that's enough, and stops there.
 
 
 ________________
@@ -71,7 +71,7 @@ ________________
 
 What gets written up that evening and forwarded twice by Friday turns Sam's own words into something else. The captain files it as a concern about the soldier rather than a recommendation for him.
 
-It's four paragraphs. The first three describe what he did on the range. The fourth asks where a nineteen-year-old private learned to do it, contains the phrase appears to have received specialised instruction from an unidentified source, and recommends that the question be answered before he is put anywhere interesting. By the following Thursday it is being read by a woman three levels above the captain, in an office that exists to answer exactly that kind of question.
+It's four paragraphs. The first three describe what he did on the range. The fourth asks where an eighteen-year-old private learned to do it, contains the phrase appears to have received specialised instruction from an unidentified source, and recommends that the question be answered before he is put anywhere interesting. By the following Thursday it is being read by a woman three levels above the captain, in an office that exists to answer exactly that kind of question.
 
 
 None of it reaches Sam. Sam is having a great month.

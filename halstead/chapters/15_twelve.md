@@ -50,7 +50,7 @@ Kavi pushes up from the floor and gets his back against the radiator. "Then do i
 
 "Do it how?" Priya says, rolling onto her front. "Somebody has to know which plate is which or you can't score it, and whoever knows is the one who wrecks it for everybody."
 
-They spend forty minutes on that, and most of the forty minutes is Priya taking other people's ideas apart. What comes out of it is two rounds: for the first, Kavi cuts both loaves, marks the underside of the four plates, and leaves the eating to the other three. Ruth runs the second the same way so that Kavi gets a turn. Each of them writes their own key on a scrap and folds it before anybody starts. Sam wants to know why they cannot do it once, but Ruth explains it twice, the second time with her hands.
+They spend forty minutes on that, and most of the forty minutes is Priya taking other people's ideas apart. What comes out of it is two rounds: for the first, Kavi cuts both loaves, marks the underside of the four plates, and leaves the eating to the other four. Ruth runs the second the same way so that Kavi gets a turn. Kavi writes the key on a scrap and folds it before anybody starts. Sam wants to know why they cannot do it once, but Ruth explains it twice, the second time with her hands.
 
 At half past eleven they go down, where four ovens the size of wardrobes line the kitchen wall, with a conveyor toaster at the end of them that does thirty slices in a run. "We are not doing thirty slices of toast at midnight, Kavi."
 
@@ -94,7 +94,7 @@ Saturday afternoon is the stock count: four hours, one clipboard between them, e
 
 They count the third shelf three times, and the third count is Ruth's. She stops halfway through it, puts the clipboard down on a crate, and stands looking at the shelf for long enough that Kavi asks her what she is doing. Then she starts counting cases instead of tins, four stacks at a time, with a chalk mark on the shelf edge for every complete twelve. That takes a shelf from forty minutes to nineteen, and by the time they finish, it's time for dinner.
 
-By Christmas she can hold twenty-four seconds in the 10v1, but she is still only ranked thirty out of ninety. She gets to the library about once a week now, because most evenings there are six or seven people in the third floor common room with a game spread over the table and a space at it for her.
+She gets to the library about once a week now, because most evenings there are six or seven people in the third floor common room with a game spread over the table and a space at it for her.
 
 ---
 
@@ -355,3 +355,7 @@ Chloe opens her mouth, but to say what the small things are, she has to start wi
 "You mostly don't catch it," she says.
 
 "Huh," her father says, and holds his hand out for the ham.
+
+---
+
+By Christmas she can hold twenty-four seconds in the 10v1, but she is still only ranked thirty out of ninety.

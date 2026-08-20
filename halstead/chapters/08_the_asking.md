@@ -32,7 +32,7 @@ Dr. Ammons stops writing and puts the pen down flat on top of the pad.
 
 "Tell me about the program, all of it, from the beginning."
 
-She asks a lot after that and she asks all of it carefully, working down through who ran it, and how they found you, and whether Chloe stayed overnight, and how far away it was from the house, whether the same adults were there the whole four weeks, whether anything happened, whether Chloe came back different, and in what way, and starting when.
+She asks a lot after that and she asks all of it carefully, working down through who ran it, and how they found her, and whether Chloe stayed overnight, and how far away it was from the house, whether the same adults were there the whole four weeks, whether anything happened, whether Chloe came back different, and in what way, and starting when.
 
 All the questions go to her mother. Chloe sits through it, her thread-picking gone still somewhere around the one about whether the same adults were there the whole time.
 
@@ -64,7 +64,7 @@ In the car her mom holds the wheel with both hands, the engine off.
 
 Her mother puts her forehead on the steering wheel and stays there.
 
-She starts on the school in October, every week, on the phone first and then in the building itself, where they give her a chair in a corridor.
+She starts on the school in October, every week, on the phone first and then in the building itself, where they give Chloe's mom a chair in a corridor.
 
 Chloe gets it in pieces. Her mom at the counter saying the words in writing twice in one sentence. Her mom in the kitchen at night, telling her dad what the office said, which was that Mrs. Prahl is wonderful, that the children adore her, that it's a lovely program.
 
@@ -110,9 +110,11 @@ Chloe finishes the packet that night sitting up in bed with the lamp on, both si
 
 She asks in the car on the Monday and gets we're thinking about it. She asks on the Tuesday and gets the same words in the same order. On the Wednesday her mom says not now, Chloe.
 
+The second Thursday is the same as the first one.
+
 The jacket is Friday, and any excuse would have done as well.
 
-Her mom says put your jacket on and Chloe says no, and her mom says put it on, and then it's happening and her throat hurts before she has got four words out of it.
+Her mom says put your jacket on and Chloe says no, and her mom says put it on, and then the fight is happening and her throat hurts before she has got four words out of it.
 
 "You want me to be like this, you want me to stay exactly like this\!"
 
@@ -134,7 +136,7 @@ Then she stands behind it with her hands shaking and her ears ringing, listening
 
 At dinner her mother passes her the bread, asks whether she wants more milk, and says something about the Thursday that needs an answer and gets one. Her dad passes the salt before she asks for it.
 
-The second Thursday is the same as the first one. So is the third, except that Mrs. Prahl puts them in pairs for a game with the dice, and Chloe gets a girl called Hana who is careful, slow, and checks everything twice before she'll write it down. They finish before anybody else, so Mrs. Prahl comes over, says well done to both of them, and gives them a word search to be getting on with.
+So is the third, except that Mrs. Prahl puts them in pairs for a game with the dice, and Chloe gets a girl called Hana who is careful, slow, and checks everything twice before she'll write it down. They finish before anybody else, so Mrs. Prahl comes over, says well done to both of them, and gives them a word search to be getting on with.
 
 On the fourth Thursday there's a new packet, which Chloe takes home and finishes in about half an hour, and keeps to herself. It sits in the bottom of her bag all week under the folder for reading. When Mrs. Prahl asks the following Thursday how she got on with it, Chloe says she's still working on it, and Mrs. Prahl says that's absolutely fine, take your time.
 

@@ -44,7 +44,7 @@ The first collision Chloe manages is in the last week of October, with Odile.
 
 A small dry click sounds a long way up, before anything is visible, so far up she almost doubts her own ears, and then two arrows come down wrong out of the middle of the sky. Chloe's comes down spinning, whole. Odile's is broken across the middle, and comes down in two pieces about eight metres apart, one of them still turning.
 
-The whole of Chloe's line is shouting before the pieces land, and somebody down the far end is banging on the lid of the kit box with a bow stave. Coming up the field at a run from her end, Odile covers seventy metres in about forty seconds. The two of them stand in the grass yelling at each other about the sound it made, but neither of them is listening to the other one.
+The whole of Chloe's line is shouting before the pieces land, and somebody down the far end is banging on the lid of the kit box with a bow stave. Coming up the field at a run from her end, Odile covers seventy metres in about twelve seconds. The two of them stand in the grass yelling at each other about the sound it made, but neither of them is listening to the other one.
 
 "Sunday," Odile says, once she can get a whole word out. "My brother's here Sunday, he's been three times and he's never seen anybody do it. I'm making him stand at your end."
 

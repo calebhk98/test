@@ -34,7 +34,7 @@ In November Hearn tells her the third page of one is doing the work of the first
 
 Self defense starts in September, an hour a day, every day; the sheet says it runs to the end.
 
-The first term is ones. Standing, falling, getting up off the floor with somebody's hand on your collarbone, and forty minutes at a stretch of one person in front of you doing one thing slowly and then the same thing slightly faster. In November it goes to twos. Kowalczyk tells her in October that she is planting her back foot before she knows where she is going, and that she needs to stop deciding so early.
+The first term is ones. Standing, falling, getting up off the floor with somebody's hand on your collarbone, and forty minutes at a stretch of one person in front of you doing one thing slowly and then the same thing slightly faster. Kowalczyk tells her in October that she is planting her back foot before she knows where she is going, and that she needs to stop deciding so early. In November it goes to twos.
 
 The 10v1 starts in January.
 
@@ -113,9 +113,9 @@ She reads it in the corridor with about fifteen people behind her waiting for a 
 
 She goes back after dinner when the corridor is empty and reads it again, and then she reads it a third time. Ruth comes and stands next to her at about nine and reads it all the way to the bottom in silence, arms crossed.
 
-"Six is me."
+"Six is me," Chloe says.
 
-"Six is four of us."
+"Six is four of us, Chloe."
 
 "I was standing in it."
 
@@ -161,7 +161,7 @@ She turns it over twice on the way out into the corridor, in case the note went 
 
 Theo gets one back with no note the same week, but he puts it straight into his bag and goes on with what he was saying.
 
-She writes four more before the break, but they are the same essays they have been since October. The last one is on whether a promise made under a threat counts, a question that Hearn's note calls good before asking where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 on the floor of the spare room with the door shut. Her grandmother finds her there on the second afternoon and leaves the papers exactly where they are.
+She writes four more before the break, but they are the same essays they have been since October. The last one is on whether a promise made under a threat counts, a question that Hearn's note calls good before asking where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 again on the floor of the spare room with the door shut. Her grandmother finds her there on the second afternoon and leaves the papers exactly where they are.
 
 "There's a chair."
 

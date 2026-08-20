@@ -28,7 +28,7 @@ Her mother holds her on the floor for a long time after she has stopped. Neither
 
 Later, when she is in bed and supposed to be asleep, the two of them are at the kitchen table with the door mostly shut, and their voices come up through the part of the floor that's thin.
 
-"She said take my birthday, Dave, and then she said it a second time."
+"She said take my birthday, Dave."
 
 "I heard her. I was standing right there with a dishcloth in my hand."
 
@@ -62,7 +62,7 @@ Chloe stays standing. "Am I going, though, is it a real thing, are you actually 
 
 "Say it again," Chloe says, still standing. "Say all of it again."
 
-"We're saying yes, Chloe. We're saying yes."
+"We're saying yes, Chloe. We're saying yes," her mom says.
 
 "Is that a true thing you're saying, or is it a thinking about it thing?"
 
@@ -92,7 +92,7 @@ The house comes up in April, in the living room, with Chloe on the rug in front 
 
 "They're offering us a house," her dad says. "Ten minutes from campus, furnished, and they pay for it the whole time she's enrolled. If she leaves it stops, and that's the only condition on the deal."
 
-Her mother keeps hold of what she's holding. "No. Absolutely not."
+Her mother keeps hold of her mug. "No. Absolutely not."
 
 "Meg. We'd see her every day of the week instead of nine weeks a year."
 

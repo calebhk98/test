@@ -9,8 +9,10 @@ carries that chapter, or the next regeneration silently reverts it.
 """
 import sys, os, re, glob
 
-SOURCES = ['MANUSCRIPT_FULL.md', 'HALSTEAD.md',
-           'CHAPTERS_16_22_v2.md', 'CHAPTERS_23_30_v2.md']
+# Live sources only. CHAPTERS_16_22_v2.md and CHAPTERS_23_30_v2.md are superseded
+# drafts on the old numbering (their "Chapter Twenty-Three" is now chapter 28) and
+# must NOT be written to.
+SOURCES = ['MANUSCRIPT_FULL.md', 'HALSTEAD.md']
 
 def header_of(text):
     for line in text.split('\n'):

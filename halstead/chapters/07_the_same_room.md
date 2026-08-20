@@ -2,7 +2,7 @@
 
 *August 2012 – October 2012*
 
-The loop out front is full of cars with their trunks standing open, more adults in it than Chloe has seen in one place all month, somebody's little brother, who is screaming about a shoe. Sam left at seven, which Chloe finds out from a girl that she hadn't spoken to at the camp, who tosses it over her shoulder with a pillow under her arm, already halfway down the hall. Kavi is over by the double doors with two adults, from whom she gets a hand up, before a family walks between them, and by the time they pass, he's gone.
+The loop out front is full of cars with their trunks standing open, more adults in it than Chloe has seen in one place all month, somebody's little brother, who is screaming about a shoe. Sam left at seven, which Chloe finds out from a girl that she hadn't spoken to at the camp, who tosses it over her shoulder with a pillow under her arm, already halfway down the hall. Kavi is over by the double doors with two adults, from whom he gets a hand up, before a family walks between them, and by the time they pass, he's gone.
 
 Ruth finds her at the flagpole and hugs her hard enough to hurt, "So we're all getting in. That's the plan and everybody's doing it, so you have to, okay?" She has both hands on Chloe's shoulders and is saying it from about six inches away. "You as well, promise me you'll make it in."
 
@@ -42,7 +42,7 @@ She comes back down, "I don't know?"
 
 "Priya, then. Chloe, you slept in a room with Priya for twenty-eight days."
 
-"No, I didn't know I needed that," her mouth goes tight at the corners, the way it does right before.
+"No, I didn't know I needed that," her mouth goes tight at the corners, the way it does right before she cries.
 
 Her mom's eyes come up, "It's OK, we can just ask the school," and then she closes the phone book and gets the camp folder down off the shelf by the door.
 
@@ -186,7 +186,7 @@ Coming down for water, Chloe gets the end of one of the calls, and her mom is at
 
 Whatever comes back takes a long time.
 
-"And the testing window is in the spring." Her mom writes something down on the back of an envelope. "So we test her in the spring, for a program that starts the following fall. That's over a year from now, and she's in there right now."
+"And the testing window is in the spring." Her mom writes something down on the back of an envelope. "So we test her in the spring, for a program that starts the following fall. That's over a year from now, and she's in second grade right now."
 
 She says thank you at the end of it, puts the phone down, and stands there, her hand still on it. Then Chloe is in the doorway with the glass.
 

@@ -2,7 +2,7 @@
 
 *April 2023*
 
-Mr. Amberg runs the exit interviews himself, fifteen minutes each, ten or eleven students a day for nine days starting the first Monday of April. A list goes up outside the staff office every morning with that day's names in order, and a runner comes down from admin to call the next one in when the clock on his desk says it's time. He runs each one the full fifteen minutes, by the staff's own count, even the ones that could have ended in under a minute. His own contracts class still meets four times that week, the interviews slotted into whatever's left of the day around it.
+Mr. Amberg runs the exit interviews himself, fifteen minutes each, ten or eleven students a day for nine days starting the first Monday of April. A list goes up outside the staff office every morning with that day's names in order, and a runner comes down from admin to call the next one in when the clock on his desk says it's time. He runs most of them the full fifteen minutes, by the staff's own count, even the ones that could have ended in under a minute. His own contracts class still meets four times that week, the interviews slotted into whatever's left of the day around it.
 
 
 Chloe's slot falls on the Wednesday of the second week, third appointment after lunch. His office holds a desk, two chairs, and a small clock turned to face only him. A folder is already open on the desk when she sits down, her name typed across the tab, and he starts before she's settled.
@@ -20,7 +20,7 @@ Chloe's slot falls on the Wednesday of the second week, third appointment after 
 Forty five, three times over, is a hundred and thirty five. Housing on top of that. Food on top of that. A car, medical, all of it covered. Call the rest of it another twenty, a number he left out and she adds anyway. A hundred and fifty five thousand dollars a year, at eighteen, and she would still be here. She keeps both hands flat on her knees while she runs it, the way she keeps them flat on a table whenever she wants to get something right the first time.
 
 
-The part she's actually weighing is different. She's taught the twelves real analysis out of a room two floors below this one, dropped three flawed hinges into a scrap bin and kept it to herself, and gone back to the forge every Thursday for four years before anyone had to make her. Money sits outside all of that. Eleven years ago the only thing that mattered about this place was that a letter had her name typed on the front of it. The folder open on the desk in front of her now has the same thing typed on the tab.
+The part she's actually weighing is different. She's taught the twelves real analysis out of a room two floors below this one, dropped three flawed hinges into a scrap bin and kept it to herself, and gone back to the forge every Thursday for five years before anyone had to make her. Money sits outside all of that. Eleven years ago the only thing that mattered about this place was that a letter had her name typed on the front of it. The folder open on the desk in front of her now has the same thing typed on the tab.
 
 
 "I don't think so," she says.

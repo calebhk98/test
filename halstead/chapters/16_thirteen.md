@@ -44,7 +44,7 @@ In February she offers to read the 1981 paper and mark him on that, but he says 
 
 The December sheet has six names doing well on it and one still blank. The grade at the bottom covers seven students, and it is lower than her grade in anything else that term. She reads it twice in the corridor, folds it into quarters, and puts it in her pocket instead of the bin.
 
-Marek fails the course. The mark goes down as a fail because there is nothing on the sheet to mark, which is the only thing the sheet can do with a blank, and Chloe is the one who writes it. He is at breakfast in January the same as he was in December, in the same year, working through the same building, so whatever a fail is for here, it is not that. What it is instead, whether it goes on anything of his that matters, whether anybody sat him down about it, Chloe never finds out, and she is careful for a long time about how she asks.
+Marek fails the course. The mark goes down as a fail because there is nothing on the sheet to mark, which is the only thing the sheet can do with a blank, and Chloe is the one who writes it. He is at breakfast in January the same as he was in December, in the same year, working through the same building, so whatever a fail is for here, it is not expulsion. What it is instead, whether it goes on anything of his that matters, whether anybody sat him down about it, Chloe never finds out, and she is careful for a long time about how she asks.
 
 ---
 
@@ -130,7 +130,7 @@ Eli puts a cipher on the table one Thursday, between the salt and the water jug,
 
 "A parking system, and it's live. That's protecting somebody's licence plates right now."
 
-Kavi takes it off him inside a minute, offhand about it. Ruth reads it upside down from across the table and says the key is a date, probably in March. Priya wants to know whether they are allowed to be holding it at all, which starts a second argument, and Odile says the interesting question is why a parking company bought that in the first place and what the salesman told them, which starts a third. Sam eats a second dinner through the whole of it and contributes twice.
+Kavi takes it off him inside a minute, offhand about it, and slides it across to Chloe. Ruth reads it upside down from across the table and says the key is a date, probably in March. Priya wants to know whether they are allowed to be holding it at all, which starts a second argument, and Odile says the interesting question is why a parking company bought that in the first place and what the salesman told them, which starts a third. Sam eats a second dinner through the whole of it and contributes twice.
 
 Nadia turns the napkin round toward Chloe with one finger.
 

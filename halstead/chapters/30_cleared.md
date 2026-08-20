@@ -39,7 +39,7 @@ ________________
 
 
 
-The clearance investigation takes seven months and involves a man named Whitaker who comes to see her twice.
+The clearance investigation takes ten weeks and involves a man named Whitaker who comes to see her twice.
 
 
 Chloe likes him. He's thorough, and direct about what each question is actually for.

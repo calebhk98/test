@@ -8,7 +8,7 @@ The worm goes quiet on a Thursday in June.
 A check-in doesn't arrive. Nine minutes later, everything is precisely where it should be. Same state, same position, exactly as it was.
 
 
-He pulls the logs. No error, no restart, no gap. There is no nine minutes anywhere in them, and the process reports itself running the whole time.
+Eli pulls the logs. No error, no restart, no gap. There is no nine minutes anywhere in them, and the process reports itself running the whole time.
 
 
 Kavi's watcher, whose entire job is to see anything that anybody else might see, reports a healthy process across the whole window.
@@ -104,4 +104,4 @@ ________________
 Chloe reads that at one in the morning with work in six hours.
 
 
-She goes in the next day and does her job, which is the job of a government that has been trying to find this man since before she could read, and which has three wrong answers on file and no idea that seven people in their twenties settled it in eleven weeks.
+She goes in the next day and does her job, which is the job of a government that has been trying to find this man since before she could read, and which has two wrong answers on file and no idea that seven people in their twenties settled it in sixteen weeks.
