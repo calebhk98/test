@@ -109,7 +109,7 @@ Her first one is on the board on the Monday and happens on the Thursday. Four ad
 
 The sheet goes up on the Friday. All twelve names have an F next to them and there are nine numbered things underneath.
 
-She reads it in the corridor with about fifteen people behind her waiting for a turn at it. Number one is response time and number three is that four adults entered a building. Number six says the north stairwell was uncovered for six minutes, and Chloe, who stood there the whole time, is still working out what covering it would even have looked like.
+She reads it in the corridor with about fifteen people behind her waiting for a turn at it. Number one is response time, number two says a student answered a question about how many of them there are, and number three is that four adults entered a building. Number six says the north stairwell was uncovered for six minutes, and Chloe, who stood there the whole time, is still working out what covering it would even have looked like.
 
 She goes back after dinner when the corridor is empty and reads it again, and then she reads it a third time. Ruth comes and stands next to her at about nine and reads it all the way to the bottom in silence, arms crossed.
 

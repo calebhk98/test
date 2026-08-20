@@ -40,6 +40,8 @@ She comes back down, "I don't know?"
 
 "I don't know Kavi's either," her chin tucks down and she scrubs the back of her wrist across one eye.
 
+Her mom's hand comes off the phone book and rests on top of Chloe's head for a second before it goes back to the page.
+
 "Priya, then. Chloe, you slept in a room with Priya for twenty-eight days."
 
 "No, I didn't know I needed that," her mouth goes tight at the corners, the way it does right before she cries.
@@ -196,7 +198,7 @@ She says thank you at the end of it, puts the phone down, and stands there, her 
 
 In the first week of October, Chloe puts her head down on her desk in the middle of the morning and for some reason she can't help but to cry with her face in her arms.
 
-She cries loud enough to bring Ms. Vance down the row, who crouches all the way down beside the desk, in front of everybody, and puts a hand flat on Chloe's back, leaving it there.
+She cries loud enough that chairs scrape all along the row as everybody turns to look, and somebody near the back says, too loud, "Is she OK?" It brings Ms. Vance down the row, who crouches all the way down beside the desk, in front of everybody, and puts a hand flat on Chloe's back, leaving it there.
 
 "Hey, hey, what's going on?"
 

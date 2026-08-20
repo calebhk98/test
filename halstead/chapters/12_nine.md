@@ -70,7 +70,7 @@ Chemistry is Vasquez, who does set things on fire on purpose, twice in the first
 
 "Glassware, reagent, or you." He hands it back, eyes already on the next bench. "Friday."
 
-She runs it again on the Friday, drying every piece of glass twice before she starts, and it comes out white.
+She runs it again on the Friday, drying every piece of glass twice before she starts, and it comes out white, and she grins at it before she catches herself and carries it up to the front.
 
 First aid is Mondays, and it is on a clock from the first week. In the second term the lights come down to about what you get off a dashboard at night. In the third term the lights come down, a radio plays somewhere behind her, left running the whole time, and a man stands four feet away asking her the same question over and over in a raised voice.
 
@@ -92,7 +92,7 @@ Bex talks over the ends of sentences, hers most of all, until Chloe has learned 
 
 Sam spends the whole year on the overhang.
 
-There is a wall up the side of the gym with a lip near the top that sticks out about two feet, and going into September the lip has beaten everyone who's tried it. Sam falls off it in October, twice in November, and once in December from high enough that he lands badly and sits on the mat, elbows on his knees, saying he is fine. In January a girl in the year below gets over it in one go, on a Wednesday, with about four people watching. Sam takes this hard for two days, then goes and asks her how she did it. The answer turns out to be about where you put your left foot before you start.
+There is a wall up the side of the gym with a lip near the top that sticks out about two feet, and going into September the lip has beaten everyone who's tried it. Sam falls off it in October, twice in November, and once in December from high enough that he lands badly and sits on the mat, elbows on his knees. An instructor asks if he's alright, and he says he's fine, and the session carries on. In January a girl in the year below gets over it in one go, on a Wednesday, with about four people watching. Sam takes this hard for two days, then goes and asks her how she did it. The answer turns out to be about where you put your left foot before you start.
 
 He gets over it on the eleventh of May, with about thirty people at the bottom, because Sam has spent two days telling everybody he is going to do it that afternoon.
 

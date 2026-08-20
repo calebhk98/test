@@ -548,7 +548,7 @@ On the Thursday they get dowels, a spool of string, one glue gun between three, 
 Ruth goes and does her own one. Chloe watches her go, still working out too slowly whether Ruth is right. By the time she has it, Sam has already started gluing.  
 Their bridge takes an hour and forty minutes and looks better than Ruth's, flat, wide, every joint on it neat. Two of the groups, of which Owen's is one, stop short of the eighteen inches before the session ends, and Mr. Doyle tells them to leave it where it is and come back to it.  
 Before any of it gets loaded they have to write down what they think it'll hold. Chloe writes fourteen. Sam wants to write a hundred and gets told it has to be a real number, so he writes twenty-five, while Ruth writes hers with one hand over it.  
-On the Tuesday they hang a bucket off the middle of each one and put weights in a pound at a time, and the whole room counts out loud together. One goes at three, which gets a laugh from the group it belongs to. Two more go before eight. Theirs goes at eleven and folds, sideways, all at once, the way Ruth pushed the square over with one finger, rather than snapping. Ruth's holds nineteen and then does snap, and half the room makes a noise about it.  
+On the Tuesday they hang a bucket off the middle of each one and put weights in a pound at a time, and the whole room counts out loud together. One goes at three, which gets a laugh from the group it belongs to. Two more go before eight. Theirs goes at eleven and folds, sideways, all at once, the way Ruth pushed the square over with one finger, rather than snapping, and the three of them are down after the pieces before anyone tells them not to. Ruth's holds nineteen and then does snap, and half the room makes a noise about it.  
 "I told you," Ruth says, not looking at anyone in particular.  
 "Ruth," Sam says.  
 "I did though, I came over."  
@@ -740,7 +740,7 @@ Then the arithmetic arrives, unbidden: four hours in the car, each way. A whole 
 \---  
 She is awake long before anyone comes to get her, dressed and sitting on the end of her stripped bed.  
 Her dad carries her bag down and puts it in the trunk with the strap left hanging out, so he has to open it again.  
-Priya hugs her hard enough that it takes a second to get loose, then goes back into the room for her own bag and comes out again with her chin working, because the hair tie that was on her wrist five minutes ago is gone now, turning her sleeve inside out to check it twice while her mother tells her it's fine and she says it isn't.  
+Priya hugs her hard enough that it takes a second to get loose, then goes back into the room for her own bag and comes out again with her chin working, because the hair tie that was on her wrist five minutes ago is gone now, turning her sleeve inside out to check it twice while her mother tells her it's fine and she says it isn't. Chloe pulls the one off her own wrist and holds it out.  
 When Sam says see you at the thing in the fall, Ruth tells him it's only a form so far, that his parents have to send it in. Sam says see you at the thing in the fall again, word for word.  
 Kavi holds his hand out flat, and Chloe puts hers in it for a second, before somebody's mom says it's time. Chloe keeps her hand open a beat after his goes back to his side, then closes it around the strap of her own bag instead.  
 Once the camp gate is behind them, before her eyes ever close, her mouth moves once through the days of the week in Spanish, under her breath, and then again, faster, checking it against itself.  
@@ -809,6 +809,8 @@ She comes back down, "I don't know?"
 "Kavi. You said Kavi about nine hundred times in that car."
 
 "I don't know Kavi's either," her chin tucks down and she scrubs the back of her wrist across one eye.
+
+Her mom's hand comes off the phone book and rests on top of Chloe's head for a second before it goes back to the page.
 
 "Priya, then. Chloe, you slept in a room with Priya for twenty-eight days."
 
@@ -966,7 +968,7 @@ She says thank you at the end of it, puts the phone down, and stands there, her 
 
 In the first week of October, Chloe puts her head down on her desk in the middle of the morning and for some reason she can't help but to cry with her face in her arms.
 
-She cries loud enough to bring Ms. Vance down the row, who crouches all the way down beside the desk, in front of everybody, and puts a hand flat on Chloe's back, leaving it there.
+She cries loud enough that chairs scrape all along the row as everybody turns to look, and somebody near the back says, too loud, "Is she OK?" It brings Ms. Vance down the row, who crouches all the way down beside the desk, in front of everybody, and puts a hand flat on Chloe's back, leaving it there.
 
 "Hey, hey, what's going on?"
 

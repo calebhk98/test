@@ -101,7 +101,7 @@ Then the arithmetic arrives, unbidden: four hours in the car, each way. A whole 
 \---  
 She is awake long before anyone comes to get her, dressed and sitting on the end of her stripped bed.  
 Her dad carries her bag down and puts it in the trunk with the strap left hanging out, so he has to open it again.  
-Priya hugs her hard enough that it takes a second to get loose, then goes back into the room for her own bag and comes out again with her chin working, because the hair tie that was on her wrist five minutes ago is gone now, turning her sleeve inside out to check it twice while her mother tells her it's fine and she says it isn't.  
+Priya hugs her hard enough that it takes a second to get loose, then goes back into the room for her own bag and comes out again with her chin working, because the hair tie that was on her wrist five minutes ago is gone now, turning her sleeve inside out to check it twice while her mother tells her it's fine and she says it isn't. Chloe pulls the one off her own wrist and holds it out.  
 When Sam says see you at the thing in the fall, Ruth tells him it's only a form so far, that his parents have to send it in. Sam says see you at the thing in the fall again, word for word.  
 Kavi holds his hand out flat, and Chloe puts hers in it for a second, before somebody's mom says it's time. Chloe keeps her hand open a beat after his goes back to his side, then closes it around the strap of her own bag instead.  
 Once the camp gate is behind them, before her eyes ever close, her mouth moves once through the days of the week in Spanish, under her breath, and then again, faster, checking it against itself.  
