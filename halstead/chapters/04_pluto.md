@@ -27,7 +27,7 @@ Her mom picks up in the middle of the first ring.
 "I want to come there," Chloe says.  
 "Okay. Yeah. Okay, stay right where you are, I'm coming."  
 The hotel is half a mile away, and her mom is at the front desk already dressed.  
-Chloe sleeps in the second bed with the bathroom light on and the door open, her mom asking first how far, one hand pressed flat against the spare pillow that smells like the hotel's detergent and not their own.  
+Chloe sleeps in the second bed with the bathroom light on and the door open, her mom asking first how far to leave the door open, one hand pressed flat against the spare pillow that smells like the hotel's detergent and not their own.  
 "Do you want to talk about it?" Her mom is still in her shoes, sitting on the arm of the chair by the window.  
 "No."  
 "Okay." She gets up, turns the other bed down, sits on the end of it. "Do you want me to talk about something?"  
@@ -39,7 +39,7 @@ In the morning her mom drives her back. "You can do that every night if you want
 "Okay," Chloe says.  
 \---  
 The rooms are named after planets.  
-She works it out on the second day, while walking down the hall behind a group of the bigger kids. Mercury, Venus, Earth, on little brass plates screwed in beside the doors at adult height, then Mars, then Jupiter. Then a water fountain, then one more door past the fountain at the very end, with a plate on it that says PLUTO.  
+She works it out on the second day, while walking down the hall behind a group of the bigger kids. Mercury, Venus, Earth, on little brass plates screwed in beside the doors at adult height, then Mars, then Jupiter, then Saturn, Uranus, Neptune. Then a water fountain, then one more door past the fountain at the very end, with a plate on it that says PLUTO.  
 They're standing outside because somebody else is still in there, ten or eleven of them, everybody looking at the door or at their own shoes.  
 "They put us in the one that isn't a planet anymore," Chloe says.  
 Then something goes wrong with her. It happens before anybody has had time to answer. The backs of her knees go loose, her fingers won't close all the way, her ears do what they did in October, and for three full steps she isn't in the hallway at all, she's at her desk with the wood chips and the cage and a chair squeaking somewhere behind her.  
@@ -66,7 +66,7 @@ That night Chloe calls the desk again and sleeps in the hotel again, and in the 
 "What about Pluto?"  
 "It's not a planet anymore."  
 "Since when?"  
-"Since before I was born," Chloe says, and her mom laughs at it anyway.  
+"Since before I can remember," Chloe says, and her mom laughs at it anyway.  
 \---  
 The dining hall is loud in a different way from the hallway. Two tables over, a boy called Owen is still working through the same worksheet from the afternoon, folded small in his lap under the table, and Priya slows down with her tray long enough to see what he's doing before somebody calls her name and she keeps walking. On the third night Sam sits down across from her without a tray, before he gets up, gets a tray, and comes back to sit in the same seat.  
 "What school do you go to?"  

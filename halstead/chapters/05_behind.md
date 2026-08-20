@@ -33,7 +33,7 @@ It's the second week that gets her, and it's math.
 They divide fractions by flipping the second one over. Mr. Baptiste does two on the board, they come out right, he does a third one, it comes out right. Chloe can already do it by the second one, and she does the fourth one in her head before he gets to the end of it. She does eight in the packet and gets eight of them right. She doesn't know why it works, only that it does, and that is making her furious in a way she can feel along her jaw.  
 "Why do you flip it," Chloe says.  
 "Good, that's the question." Mr. Baptiste caps the marker, uncaps it again, and turns back to the board. "Okay. So what is dividing actually asking you."  
-He draws a rectangle, shades half of it, cuts the half into pieces, talking the whole way through about what the question underneath the question is. Chloe watches all of it, though she only gets as far as the shading. Then the pieces stop being pieces of the thing they were pieces of, and after that she is looking at a rectangle with lines in it.  
+He draws a rectangle, shades half of it, cuts the half into pieces, talking the whole way through about what the question underneath the question is. Chloe watches all of it, though she only gets as far as the shading. Then she loses track of what the pieces are pieces of, and after that she is looking at a rectangle with lines in it.  
 Sam gets it, grunting once, loud.  
 Kavi says he already knew it, out of a book, and gets told that's fine but he should listen anyway.  
 Ruth is already on to the next question.  
@@ -84,7 +84,7 @@ Ruth is at the end of the table with her chin on her hand, pushing the same piec
 "She didn't ask you."  
 "She asked the table," Ruth says, and puts her fork down instead of eating what's on it.  
 Chloe's own fork stops halfway to her mouth, three questions backed up behind it: what he looked like, how long, who found him there.  
-Owen, then the bridge, then Owen again, and nowhere further than that. Chloe picks her roll apart, one small piece at a time, lining the pieces along the edge of her tray, going back through the same three facts: Owen must not have liked the bridge, and the two facts sit crosswise, and neither one will move over for the other. She starts from the beginning and checks them again, a third time, long after Ruth has gotten up and taken her tray, trying to work out how a person could not like the bridge.  
+Owen, then the bridge, then Owen again, and nowhere further than that. Chloe picks her roll apart, one small piece at a time, lining the pieces along the edge of her tray, going back through the same two facts: the bridge was fun, and Owen must not have liked it, and the two facts sit crosswise, and neither one will move over for the other. She starts from the beginning and checks them again, a third time, long after Ruth has gotten up and taken her tray, trying to work out how a person could not like the bridge.  
 Four more leave before the end of the month, and each of them goes the same way. The bed goes. The mattress stays, stripped bare.  
 \---  
 At dinner in the third week Kavi says something about the moon, and Chloe says, "That's why it's a liar," which makes three of them look at her.  

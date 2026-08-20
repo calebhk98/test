@@ -4,10 +4,10 @@
 
 The envelope has her name on it.  
 Miss Chloe Kessler.  
-Nobody has ever sent Chloe anything, though her grandmother sends a card at Christmas with her name written inside it in pen, on an envelope whose outside says her parents. This one says her, typed, with a Miss in front of it and the address underneath in the same typing.  
+Nobody has ever sent Chloe anything with her name on the outside, though her grandmother sends a card at Christmas addressed to her parents, with a card for Chloe inside it. This one says her, typed, with a Miss in front of it and the address underneath in the same typing.  
 She stands at the mailbox with the rest of the mail held against her chest with one arm and opens it there, badly, so the flap tears down into the paper.  
 It's one page, and it reads like a letter that was written for an adult. There's a school called Halstead, with a summer session at it, four weeks long, starting the second week of July. You sleep there, transportation provided, and room and board included. There is no cost, which it says twice, in two different ways. Families are welcome to visit whenever they want, for as long as they want, and there's a hotel half a mile from the campus with rooms held for them, at no cost either. At the bottom there's a phone number, a name, and a signature over the name in real ink that has gone through onto the back.  
-What it comes down to is a place you go for four weeks in the summer, where you sleep in a building with other kids, which is free, and where somebody has typed her name on the front of it.  
+What it comes down to is a place you go for four weeks in the summer, where you sleep in a building with other kids, which is free, and where somebody has typed her name on the front of the envelope.  
 After she reads it three times standing in the driveway, with the rest of the mail going warm against her arm, Chloe puts the mail on the counter, takes the letter up to her room, and keeps it to herself until dinner, four hours later.  
 "Can I go," she says at dinner.  
 Both of them look up.  
@@ -122,7 +122,7 @@ The librarian puts the stamp down.
 "That's not how it works, honey."  
 "But I'm not using them. They'd just be sitting here."  
 "They would," the librarian says. "It's still not how it works."  
-"Okay." Chloe stands there doing something else with it. "Can you keep one out for four weeks? So it doesn't go late."  
+"Okay." Chloe stands there doing something else with the argument. "Can you keep one out for four weeks? So it doesn't go late."  
 "One I can do."  
 She walks the whole children's section twice and comes back with one she has read before, because a new one would be gone by Tuesday and this one she can do again.  
 They don't put her on the bus, though her mom says the word bus about forty times in nine days, and it doesn't sound like a bus.  
