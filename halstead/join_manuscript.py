@@ -87,7 +87,17 @@ def main():
     ap.add_argument("--check", action="store_true", help="report, write nothing")
     ap.add_argument("--verify", action="store_true",
                     help="after writing, re-split and confirm chapters/ is unchanged")
+    ap.add_argument("--i-know-the-v2-files-are-stale", action="store_true",
+                        help="also write the superseded v2 drafts")
     a = ap.parse_args()
+    if not a.i_know_the_v2_files_are_stale:
+        sys.exit(
+            "refusing to run.\n\n"
+            "This writes the two v2 files as well, and they are superseded drafts on the\n"
+            "old chapter numbering: their Chapter Twenty-Three is what is now chapter 28.\n"
+            "--check reports it would add over fourteen thousand words to\n"
+            "CHAPTERS_23_30_v2.md, which is the size of the mistake.\n\n"
+            "Use sync_chapter.py, which writes only MANUSCRIPT_FULL.md and HALSTEAD.md.")
 
     by_number = {}
     for p in a.outdir.glob("*.md"):

@@ -20,6 +20,20 @@ written by the run before it.
 
 --parts groups consecutive chapters into N files of roughly equal word count.
 It is a no-op when the chapter count already equals N.
+
+STOP. THIS SCRIPT RUNS THE WRONG WAY NOW.
+
+chapters/ is the source of truth. It has been edited directly through the whole
+revision, it carries the chapters 25-29 renumber, and the manuscript files are
+generated FROM it. This script regenerates chapters/ FROM the manuscript files,
+which is backwards, and will silently discard every edit that has not been
+synced out yet.
+
+The two v2 files make it worse: they are superseded drafts on the old
+numbering, where "Chapter Twenty-Three" is what is now chapter 28.
+
+Push edits out with sync_chapter.py. If you genuinely need to re-cut chapters/
+from a manuscript file, commit first and pass --i-know-this-overwrites-chapters.
 """
 
 import argparse
@@ -217,7 +231,17 @@ def main():
                         help="JSON of chapter number -> month and year")
     parser.add_argument("--parts", type=int, help="force exactly N output files")
     parser.add_argument("--check", action="store_true", help="report the split, write nothing")
+    parser.add_argument("--i-know-this-overwrites-chapters", action="store_true",
+                        help="re-cut chapters/ from the manuscript, discarding unsynced edits")
     args = parser.parse_args()
+    if not args.i_know_this_overwrites_chapters:
+        sys.exit(
+            "refusing to run.\n\n"
+            "This regenerates chapters/ FROM the manuscript files. chapters/ is the\n"
+            "source of truth: edits are made there and pushed out with sync_chapter.py.\n"
+            "Running this would discard anything not yet synced, and the two v2 files\n"
+            "are superseded drafts on the old chapter numbering.\n\n"
+            "Commit, then pass --i-know-this-overwrites-chapters if you really mean it.")
 
     if args.parts is not None and args.parts < 1:
         sys.exit("error: --parts must be at least 1")
