@@ -6048,7 +6048,19 @@ eli: so lets go and read it
 Eli proposes the second worm and Theo says no for nine days.
 
 
-Every one of them knows the law cold. All seven had sat the same examination and Ruth quotes the sentencing ranges from memory, twice, at Eli.
+He sends it the way he sends anything he's actually thought through: not a chat message but a document, twelve pages, at two in the morning, at the kitchen table in the apartment three states from where he grew up. He sends it to six people instead of one, on purpose, because a plan this size only holds together if all seven of them read the same twelve pages instead of six different memories of them later. It reads like a plan because it is one — access path, timeline, what gets touched and what gets left exactly where it was — and it closes on the same idea the financial worm's whole design leaned on six months earlier, that boring beats clever every time somebody's watching for clever.
+
+
+The target is the unit Theo already told them exists, the one that's kept a file on the school for nineteen years and been wrong about who runs it twice. Getting past its security once is a solvable problem. Getting past it and leaving nothing behind to say anyone was ever inside is the harder one, and the twelve pages are mostly about the second problem, not the first.
+
+
+Theo reads it twice the night it lands, then closes the laptop and makes tea the way his grandmother made it, milk first, and reads the document a third time standing at the counter with the mug going cold in his hand. For nine days he opens it, reads a line or two, and closes it again. He walks the same two blocks to work and back. In the chat he keeps to small talk, the weather outside his building, a joke Sam makes about the food at basic. Ruth texts him alone once, just his name, and lets it sit.
+
+
+It isn't the arithmetic that finally moves him. He reads intelligence for a living, weighs one source against what it's actually worth, and the accounting comes out the same no matter which end he starts from: they already have a file on their own school that's nineteen years out of date, and reading the true one is the only way any of them will ever know what their own government actually thinks it knows. He can write that argument forward or backward and it lands in the same place both times.
+
+
+Every one of them knows the law cold. All seven had sat the same examination, and when Theo finally opens the thread on the ninth night, Ruth is already in it, cross-legged on her own dorm room floor in Cambridge with a roommate asleep two feet away, and Eli's reading from the same kitchen table he wrote the document on less than a week earlier, and Ruth already has two numbers ready for him.
 
 
 theo: i want it on record that this is the stupidest thing any of us has ever done
@@ -6066,10 +6078,19 @@ ruth: in the chat, theo
 eli: everyone speeds
 
 
-ruth: thats not the same
+ruth: thats not the same, eli
 
 
 eli: its exactly the same. its a rule with a known enforcement mechanism and you learn where the cameras are
+
+
+ruth: section 1030, eli. unauthorized access to a nonpublic government system, five years first offense, ten if theres a financial angle attached or its not your first time
+
+
+eli: theres no money in this one
+
+
+ruth: and if anything we pull touches something classified thats a different statute and it doesnt start at five, eli
 
 
 ruth: and if youre wrong about the cameras
@@ -6078,18 +6099,131 @@ ruth: and if youre wrong about the cameras
 eli: then i go away for fifteen years, so im not going to be wrong
 
 
+Ruth reads that twice from the floor of her dorm room, closes her eyes for a second, and lets it stand.
+
+
 ________________
 
 
 
 
-They test it for five weeks. Chloe writes the rules because she's the one who writes, and it comes to nine pages: the limits it keeps to, the response if it's noticed, and what happens if any one of the seven says stop, which is that all of it ends inside the hour with no argument.
+The rest of the seven read the same thread over the following two days, each of them from wherever the year has put them, and each one answers in the shape they always answer in.
 
 
-Everyone signs off. Theo signs off last and says again that this is insane.
+Nadia reads it standing at the register with the shop shut and the till already counted. She pushes her sleeves up before she answers, the way she does before anything that's going to cost her something.
 
 
-Chloe is four months into a job with a security clearance when she writes those nine pages, her hand steady through all nine of them, and she does not stop.
+nadia: name whos actually touching the code
+
+
+eli: me and kavi. same as last time
+
+
+nadia: then two of you carry it if it goes wrong, not seven. write that down, chloe
+
+
+Kavi keeps his eyes on the board he's rewiring in the lab when the thread reaches him, and the answer comes out in one line that runs until the mechanism's actually finished.
+
+
+kavi: the governments own logging is old and its federal so its worse than nadias, which means the risk was never getting in, its someone doing a manual review of the exact files we touch in the exact week we touch them, so the thing that gets us caught is timing, not the door
+
+
+eli: so we control the week
+
+
+kavi: yes
+
+
+Sam reads it between sets, phone propped against a water bottle on the end of a bench somewhere the paperwork still won't put a proper name to, and sends one line back before he's up again.
+
+
+sam: how long's this go for
+
+
+eli: as long as it takes to get in and out once
+
+
+sam: thats not a number
+
+
+Chloe reads all of it twice, standing at her kitchen counter with the coffee going cold beside her the way it does most nights now. She's read Theo's line about the four men over the fence three times since he first posted it, months ago, and she already knows what she thinks before she starts typing anything.
+
+
+chloe: someones had a file on us since before any of us could read. if we get a chance to read theirs back i dont see what there is to decide
+
+
+________________
+
+
+
+
+Theo could have written cleaner rules than anyone else at that table — it is, more or less, his actual job. He says so once, and says in the same breath that his name needs to stay off any document that describes how to break the law he's paid to uphold. So it goes to Chloe.
+
+
+Eli builds the entry itself, the same way he built the first one, in small pieces that don't look like much on their own. Kavi builds the exit — what erases the traces of the entry as it happens, not after, because after is too late if anyone's actually watching — and for the better part of a week neither of them calls it anything but "the plumbing" in the group chat.
+
+
+The test runs five weeks. For most of them the tool sits somewhere only Eli and Kavi can see, doing nothing but watch itself work: how long a query takes, whether anything logs it, whether the shape of its own traffic looks like the ordinary noise around it. Kavi's watcher runs the whole time too, watching the watcher, the same doubled caution that caught the sensor gap years ago. Twice a week Eli posts one line to the group, clean or some technical variant of clean, and twice a week that's the whole of it.
+
+
+Eli spends the five weeks the way he spends any five weeks with a real problem sitting in the middle of them: badly slept, mostly cheerful, three shirts in rotation and the same breakfast every morning because deciding costs something he'd rather spend elsewhere. Kavi spends them the way he spends any five weeks like that, in the same chair, turning whatever's on the table over in his hands and setting it back down exactly where it was.
+
+
+Chloe turns twenty-one somewhere in the middle of the five weeks. She mentions it afterward, once, in passing, the same week she finishes page nine; there's no clean place for a birthday inside a document about federal sentencing exposure, so it waits.
+
+
+Chloe spends most of the five weeks at her own kitchen counter, most nights, the coffee going cold twice before she remembers it's there. Nine pages, when she's finished: what the tool leaves alone no matter what the access allows, what counts as being noticed and what falls short of that, and the one rule everybody reads twice, that any single one of the seven can end it, no vote and no argument, and the rest have one hour to comply.
+
+
+The first page is the shortest to write and the one she's surest of: it limits the tool to the target list alone, sets everything it touches back exactly the way it found it, and closes the window the moment the window's job is done. It reads like a checklist because that's what it needs to be, not because it's the least important page.
+
+
+The middle section is the one she rewrites three times. "Noticed" has to mean a specific, confirmable event — a name gets called, an account gets frozen, somebody shows up at a door. A blip that looks wrong for a minute and settles again stays outside that definition, on purpose. She writes the line twice, in two different sets of words, because she already knows which of the seven is going to be the one squinting at an ordinary blip at two in the morning someday, wondering if it's the first real one.
+
+
+The stop clause gets exactly one line and no examples, on purpose. Any one of the seven can end it, and the ending starts the moment it's invoked: no vote, no reason attached. Ruth argues once for adding a requirement to state a reason first, and loses the argument to Nadia, whose whole case is proportion: a person gets to act on being scared enough to stop without first building a case for it, because building the case is exactly the delay the clause exists to remove.
+
+
+The page on what happens if it's noticed is the shortest of the nine and the most rehearsed: who calls whom first, what gets denied and by whom, and the flat instruction that all seven stay off the phone with anyone outside the seven, a lawyer included, until all seven are on the same call together. It assumes noticing looks like something happening to one of them. The version where nothing visibly happens to anybody, where the only evidence is a gap that closes again before anyone can point to it, sits outside all nine pages.
+
+
+They sign off one at a time over the following week, each in the shape of the person doing it. Eli signs first, hours after he sends the document, because for him it was never really a question.
+
+
+eli: in
+
+
+Nadia signs the same day. Three words, flat, done.
+
+
+nadia: fine. im in
+
+
+Kavi signs from the lab, mid-solder, and gets straight back to the board.
+
+
+kavi: looks fine
+
+
+Sam signs the day he finally gets an actual number for how long the test runs, because the number was the one thing he'd been waiting on.
+
+
+sam: five weeks. ok
+
+
+Ruth signs with the numbers already spent; for her the argument ended the moment she handed them to Eli in the chat.
+
+
+Chloe signs the night she finishes page nine, before she's had time to reconsider a word of it. Ruth prints her own copy of the nine pages that same week and files it in the same drawer where the camera-defeating box she built at thirteen still lives, both of them the kind of thing a person keeps rather than throws away.
+
+
+Theo signs off last, on the far side of the five weeks, and says again that this is insane.
+
+
+A clearance is a piece of paper that says the government has already decided to trust her with things most people never get near, and she's about to spend that trust on a file it never agreed to show her. She works through what that actually costs her exactly once, on the drive home from the office the week the document arrives, and reaches the end of the thought in about as long as it takes a light to change.
+
+
+Chloe is four months into that job when she writes the nine pages, her hand steady through all nine of them, and she does not stop.
 
 
 ## Chapter Thirty-Four: The Files
@@ -6273,13 +6407,25 @@ The chat sits on that line for a while. At his kitchen table Eli sets the phone 
 The worm goes quiet on a Thursday in June.
 
 
+Eli is at the second desk in the corner of the apartment when it happens, the one built for the project rather than for the job that pays him. The job that pays him wants a body at a downtown desk five days a week; this one only wants results, and leaves him alone to get them, which is most of why he likes it. A terminal sits tuned low in one window while he works on something else entirely, a habit left over from every all-nighter the last four years have cost him. The rest of the apartment is dark. This corner is the only light on in the place at this hour, which is usually true whether or not anything is actually wrong. The tool has run fourteen months on a schedule he tuned himself to sit inside the noise floor of an ordinary reconciliation job, checking in with the same three lines every time, faster than it takes to read them. When the eleven-forty check-in misses its window, he lets it sit a moment. A router resets somewhere on the far side of the planet often enough, a scheduler stutters, and the thing usually catches itself inside a minute, quietly, the way it always has. He finishes the sentence he's typing, the two-finger tap against the desk edge running ahead of it the way it always does, before he looks back at the corner where the report should already be sitting.
+
+
 A check-in doesn't arrive. Nine minutes later, everything is precisely where it should be. Same state, same position, exactly as it was.
+
+
+He treats the gap as an open question rather than a verdict. Nine minutes is long enough to matter and short enough that a dozen ordinary explanations could still cover it, and he wants at least one of them ruled out before he says a word to anyone. He opens three logs instead of one — the process's own record, the host underneath it, and the outbound trace Kavi built to sit beneath both, each blind to the other's existence. Because a single log is a story somebody wrote, three logs that agree on the same story read closer to a fact.
 
 
 Eli pulls the logs. No error, no restart, no gap. There is no nine minutes anywhere in them, and the process reports itself running the whole time.
 
 
+Page four of the nine pages defines what counts as being noticed, in language exact enough that Eli argued two of its clauses into their final shape himself: an external party observing, recording, or interacting with the tool in any manner inconsistent with its intended dormancy. He has the document open in the next window before he's finished reading the logs a second time. He reads the clause the way he'd read a spec he was trying to break, once for what it says and once for what it would take to make it not apply. All three logs still describe the same ordinary thing: a dormant process, unremarkable, exactly the state the clause was written to leave alone. On the only reading he can defend to himself, that's where tonight sits, and he closes the window and opens the one where Kavi already is. It's a decision made alone, at his own desk, and for now it stays exactly that: his, not the group's, not yet.
+
+
 Kavi's watcher, whose entire job is to see anything that anybody else might see, reports a healthy process across the whole window.
+
+
+It's three in the morning where Kavi actually is, an hour that has always registered to him as perfectly ordinary. He's awake anyway when Eli's message lands, on the same steady schedule he's kept since he was a student in the building he still hasn't left. He built the watcher specifically to distrust a clean log; that exact shape of quiet was the whole design brief. Pulling its own report now feels less like checking a tool than rereading his own handwriting for a lie he'd have to have told himself first. The handwriting comes back clean. The watcher logged a continuous, unremarkable process for the entire window, the same report it would generate on the calmest night the tool has ever had. Kavi turns the pen on his desk over twice and sets it back down exactly on its mark, then starts reading his own code instead of the log, on the reasoning that if the report is wrong, the reason will be in there and only there. The list he keeps is for questions that have sat unanswered for years, not hours, so this one stays off it for now. He leaves the file open on the desk when he finally goes to sleep, the one concession he makes to how much he'd rather already have the answer.
 
 
 eli: somebody stopped it and started it and cleaned up after themselves well enough that the cleanup isnt there either
@@ -6297,6 +6443,15 @@ ________________
 
 
 It happens twice more in six weeks.
+
+
+None of it changes anything else about the six weeks in between. Eli still clocks in five days a week at the job that pays him and keeps whatever he writes after hours strictly separate from it. Ruth finishes a contract of her own, unrelated to any of them, then spends two days on one that touches all seven of them directly. She keeps checking her phone at two in the morning the way she has most nights for over a year now, an old habit carrying a new reason, indistinguishable to anyone watching from the reason it used to have. Kavi teaches a summer intensive to the current cohort of thirteens the same week the second one lands, and stands in front of a whiteboard explaining a cipher he's explained before without once losing the thread of what's sitting unresolved on his own desk. Theo reads through his ordinary summer stack of files the same way he always does, checking each one against its source before he repeats anything from it. Sam is somewhere hot and far away, on a schedule that doesn't much care what month the calendar says it is. He reads the whole exchange four hours after it happens, the way he reads most of what the group sends him that summer.
+
+
+The second time is the second Tuesday of July. Because he's stopped trusting the watcher's own schedule, Kavi has it flagged inside four minutes this time, polling the tool on his own clock instead of waiting on it. Nine minutes again, to the second this time, which reads worse than a different number would have: different would say clumsy, and the same number twice says measured. He lines the three timestamps up in a document only he can reach, June against the first July date against the second. The gap between the first pair comes to five weeks and a day; the gap between the second pair comes to eleven days. Neither interval offers a pattern he can make argue for anything. He writes that down too. A negative result is still a result.
+
+
+Eli checks page four again anyway, the same clause, out of the same instinct that makes him check a lock he already knows is closed a second time before he'll leave it. It reads exactly the same as it did in June. He goes back to work.
 
 
 chloe: hes telling us hes there
@@ -6329,12 +6484,18 @@ eli: hes not signalling. he made a mistake
 eli: hes very slightly wrong about how good we are
 
 
+By the third time the days are properly hot, the kind of July that makes the apartment's one window unit useless past noon. Eli works through it anyway, shirt off, the fan aimed at the back of his neck instead of the screen, the two-finger tap keeping its own rhythm against the desk edge whether or not anybody's there to see him doing it.
+
+
 ________________
 
 
 
 
 Ruth starts typing, stops, and starts again before she sends anything.
+
+
+She's on the floor of her own apartment when it lands, shoes off, back against the couch the way she's always preferred a room to a chair. The group chat is open on her phone and the nine pages are open on the laptop balanced against her knees, the document Chloe wrote and that Ruth has read often enough now to find any clause in it without the search bar. Her hand goes to page seven before she's decided to send it there, the way it finds a light switch in her own house in the dark. The paragraph is four lines long. Any one of the seven can end it, no vote required and no explanation owed to the other six, all of it stopped inside the hour. The four lines have sat on that page since Chloe wrote them, because everything Chloe builds with a limit in it comes with the door out already built into the same design. Ruth reads the four lines twice, the same clinical pass she'd give a proof she was checking rather than one she'd written herself, looking for the place it breaks. It holds. It says exactly what it has always said. She closes the laptop, picks the phone back up, and types into the chat instead of the clause.
 
 
 ruth: so he doesnt know we know
@@ -6364,12 +6525,21 @@ theo: and if hes made one mistake
 theo: how many has he made that we didnt catch
 
 
+Theo closes his laptop the way he always does, both hands, flat, a beat before he's fully decided the conversation is over. Sam sets his phone face down on a folded stack of laundry he still hasn't finished and goes back to folding it. Ruth's screen dims on its own after ninety seconds of her hands staying off the keys, while she's already back on page seven, the four lines lit up once more before she shuts the laptop for the night, having checked, which was the whole point of looking.
+
+
 ________________
 
 
 
 
+It's still warm enough at midnight that she's got the window cracked, the ordinary noise of the street coming up thin through the screen over the sound of the fan.
+
+
 Chloe reads that at one in the morning with work in six hours.
+
+
+After five months in the job, her badge scans without a second glance and the elevator ride already reads like a formality rather than an event, the kind of building that stopped feeling strange to walk into somewhere around week seven. She reads the messages once and sets the phone face down on the nightstand, the way she's set it down a hundred times before a piece of news that leaves tomorrow exactly where it was. She closes her eyes on the version of tonight that ends here, not on the one that keeps going somewhere she'd have to stay awake to follow.
 
 
 She goes in the next day and does her job, which is the job of a government that has been trying to find this man since before she could read, and which has two wrong answers on file and no idea that seven people in their twenties settled it in sixteen weeks.

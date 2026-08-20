@@ -138,6 +138,9 @@ The first page is the shortest to write and the one she's surest of: it limits t
 The middle section is the one she rewrites three times. "Noticed" has to mean a specific, confirmable event — a name gets called, an account gets frozen, somebody shows up at a door. A blip that looks wrong for a minute and settles again stays outside that definition, on purpose. She writes the line twice, in two different sets of words, because she already knows which of the seven is going to be the one squinting at an ordinary blip at two in the morning someday, wondering if it's the first real one.
 
 
+The stop clause gets exactly one line and no examples, on purpose. Any one of the seven can end it, and the ending starts the moment it's invoked: no vote, no reason attached. Ruth argues once for adding a requirement to state a reason first, and loses the argument to Nadia, whose whole case is proportion: a person gets to act on being scared enough to stop without first building a case for it, because building the case is exactly the delay the clause exists to remove.
+
+
 The page on what happens if it's noticed is the shortest of the nine and the most rehearsed: who calls whom first, what gets denied and by whom, and the flat instruction that all seven stay off the phone with anyone outside the seven, a lawyer included, until all seven are on the same call together. It assumes noticing looks like something happening to one of them. The version where nothing visibly happens to anybody, where the only evidence is a gap that closes again before anyone can point to it, sits outside all nine pages.
 
 
@@ -168,7 +171,7 @@ sam: five weeks. ok
 Ruth signs with the numbers already spent; for her the argument ended the moment she handed them to Eli in the chat.
 
 
-Chloe signs the night she finishes page nine, before she's had time to reconsider a word of it.
+Chloe signs the night she finishes page nine, before she's had time to reconsider a word of it. Ruth prints her own copy of the nine pages that same week and files it in the same drawer where the camera-defeating box she built at thirteen still lives, both of them the kind of thing a person keeps rather than throws away.
 
 
 Theo signs off last, on the far side of the five weeks, and says again that this is insane.
