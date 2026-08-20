@@ -64,9 +64,26 @@ asked of her doesn't fit the body she has.
 ### How this changes as she grows, and what doesn't
 
 What changes: fear and adrenaline drain out of her, year by year, as the training accumulates. By
-sixteen she walks away from a fight without shaking. The compliant register hardens from a flinch
-into a habit she no longer notices using. She gets quieter in institutional rooms because she has had
-ten more years of them.
+sixteen she walks away from a fight without shaking.
+
+**And the compliant minimum mostly goes away, which an earlier version of this sheet got wrong.**
+It was never a personality trait. It was a response to a specific injury — being laughed at for
+saying the true thing, in one particular school, at six. She then spends eleven years somewhere that
+the true thing is the expected answer, and the flinch has nothing to feed on. By twenty she is an
+adult who knows how to hold a professional conversation: measured, unpadded, answering what was
+asked, comfortable saying a hard thing plainly. That is not the same as clipped, and it is nothing
+like the child who said "It was good" to keep from being noticed.
+
+The flinch is still in there and can be triggered, but it needs a trigger. If an adult tells her she
+talks strangely, laughs at her, or treats her as a problem to be managed, the answers shorten within
+the same conversation. **Absent that, an adult stranger asking her serious questions gets a serious,
+articulate adult.** A federal investigator conducting an eleven-year background interview is not
+"an institutional adult" in the sense that Mrs. Aldana was; he is a professional doing a job, and
+she reads him accurately as one.
+
+What this means for a writer: monosyllables from adult Chloe need a reason on the page. "Yeah" from
+a twenty-year-old in a clearance interview is the six-year-old's register showing through where
+nothing has earned it.
 
 What does not change: she still doesn't think she's better than anyone. She still needs the
 mechanism. She still reads everything. She is still fully open with the four people who have never
@@ -126,6 +143,11 @@ who has laughed at her or taken her book. "It's good." "I don't know." "Fine." N
 a filter she switches on for a category of person, but a flinch aimed at specific people and specific
 kinds of room, learned from specific injuries. A new adult starts neutral and gets watched, not
 stonewalled. An adult who answers her straight gets the full version.
+
+**This register belongs to the childhood chapters.** It is at its worst between six and eight, is
+already thinning by the time she has been at Halstead a few years, and is largely gone by adulthood —
+see the age note in "The thing to get right first." Writing adult Chloe in monosyllables is the most
+common way to get her wrong.
 
 The economy she learns at six is real — finish first, sit still, say nothing (chapters/02_march_4th.md:119) —
 but it is a survival tactic in one hostile room, not a personality. It generalises later, and part of

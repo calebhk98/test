@@ -22,6 +22,15 @@ What gets undone on the way back:
 Chapter bodies are copied verbatim. Whitespace around a chapter boundary is
 normalised to one blank line, so the first run after an edit may show a
 whitespace-only difference in a source file even where no prose changed.
+
+WARNING, added after the chapters 25-29 renumber. The two v2 files are
+superseded drafts on the OLD numbering: their "Chapter Twenty-Three" is what is
+now chapter 28. Writing to them from the current chapters/ would put the wrong
+text under the wrong number. `--check` currently reports it would add 14,331
+words to CHAPTERS_23_30_v2.md, which is the size of that mistake. The live
+sources are MANUSCRIPT_FULL.md (chapters 1-20) and HALSTEAD.md (all 35); use
+sync_chapter.py, which writes only those two. Delete or re-cut the v2 files
+before trusting this script again.
 """
 
 import argparse

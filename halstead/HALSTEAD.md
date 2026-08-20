@@ -5572,7 +5572,7 @@ The paperwork comes first, an online form she fills out over a single evening at
 
 He calls first, the second week of October, to set a time. She spends the Friday night before straightening an apartment that's usually left alone, clearing the stack of translation manuals off the table and into a drawer, an impulse of her own rather than anything he'd have noticed either way.
 
-He knocks once, at the exact minute he said he would, and stands in the doorway a beat too long for it to be nerves, more the habit of a man taking a room in fully before he steps into it. He carries a government ID, a notebook, and a thermos of his own coffee he waits to open until he's seated across the table from her. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it. She offers him coffee before either of them sits down; he lifts the thermos instead, already most of the way full, and thanks her for the offer before he takes the chair across from hers. Her own kitchen table seats four and usually sits bare; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
+He knocks at eight, the way he said he would. He carries a government ID, a notebook, and a thermos of his own coffee he waits to open until he's seated across the table from her. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it. She offers him coffee before either of them sits down; he lifts the thermos instead, already most of the way full, and thanks her for the offer before he takes the chair across from hers. Her own kitchen table seats four and usually sits bare; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
 
 He tells her what the visit is for before he asks her anything. A full accounting of the last eleven years, verified wherever it can be verified, recorded as unverifiable wherever it can't.
 
@@ -5586,15 +5586,15 @@ She tells him everything.
 
 "Residential the whole time?" he asks, pen already moving.
 
-"Yes."
+"The whole time. Eleven years, a few weeks home at Christmas and ten in the summer."
 
 "From when?"
 
-"Seven."
+"I started the September I turned seven. There was a four-week programme the summer before that, which is how they found me, or how I found them, depending which end you look from."
 
 He looks up at that, once, the pen briefly still against the page. "That's young."
 
-"Yeah."
+"It is. My mother thought so too, and she is the reason it took a year to arrange."
 
 He lets it sit there and moves the pen to the next line rather than press her for more, and she matches him, leaving the fact standing on its own the way he's left it. Eleven years at a boarding school, then. Eleven languages next, and she lists them off in the order she learned them, Spanish, French, Mandarin, Russian, Latin, Arabic, German, Japanese, Hindi, Korean, Swahili, watching him check each name against something already in his own folder. He taps three at random, as far as she can tell. "Say something. Any of these three."
 
