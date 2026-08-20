@@ -7,9 +7,75 @@ Point-of-view character: verbal and analytical, ages 6-21. She reaches for diffi
 **Appears in:** chapters/01_before.md through chapters/20_the_parking_lot.md (POV throughout), chapters/21_the_applications.md through chapters/35_nine_minutes.md
 **Speaks:** 230+ individually attributed lines (spoken + chat), the most of any character since she is POV. Heavily front-loaded into ages 6-12 (chapters/01-15); volume drops from chapters/16 onward as the manuscript shifts to summary narration and multi-POV chat.
 
+## The thing to get right first
+
+Three outside readers were given chapter one cold. Every one of them read her as not human: an
+alien, a robot, an intelligence passing for a child. The ones who read her as human read her as
+disabled. None of that is the character. This section is the correction, and where anything further
+down this sheet contradicts it, this section wins.
+
+**She does not know she is gifted.** She has never once thought she is faster or smarter or deeper
+than anyone. She looks at other children sitting still through thirty identical problems and
+concludes they have an ordinary human stamina she is missing, the way some people can hold their
+breath a long time and she can't. She thinks she is bad at the easy things — writing fast, waiting,
+copying shapes, getting through a normal day — and therefore that she is a bad student. When she is
+good at the hard things she doesn't read it as talent; it's just the only part she can do. When she
+gets in trouble or draws a look, her instinct is never *they're slow*. It is *what did I just get
+wrong*. Her own stated conclusion at six is the whole of it: "She is worse at the part that
+everybody has to do." (chapters/01_before.md:129)
+
+**The defect is the foundation, not a buried fear.** Everything else sits on top of it. She isn't
+hiding a secret superiority; she is a child who has been told, in a hundred small ways, that
+something about her is wrong, and who believes it.
+
+**Openness is her natural state. Hiding is a bruise.** She did not arrive compressed. She said the
+Icarus thing out loud. She wrote the honest thing in the time capsule. She walked straight into the
+four-square game. The one-word answers start *after* she is laughed at, told she talks weird, and
+has her book taken off her — a child not wanting to be poked in the same place twice. Write the
+compression as damage in progress, never as a policy she is executing.
+
+**Halstead is not special to her.** It is not elite, magical, or a rescue. It is school, where the
+work makes sense and her friends are, and where nobody takes your book away. It is her baseline for
+what school is *supposed* to be. She never thinks of herself as having been chosen.
+
+**She feels everything, at full size.** Burning ears. Real fury. Laughing until she has to lie down.
+Sprinklers, syrup on her fingers, the bathroom floor before dinner because she has to know whether
+the sled dog lives. Screaming when the news is good. Grief heavy enough to put her in a heap on the
+floor offering away her birthday. Happiness is big or it isn't there. She has no small setting.
+
+**Reading is not an intellectual pursuit.** It is what she does, the way other children breathe.
+Cereal boxes, road signs, the church bulletin, a medical poster, whatever has words on it. She
+doesn't think about it and doesn't compare herself to anyone for it. When she stops reading,
+something is badly wrong.
+
+**She needs the mechanism, and it isn't vanity.** Told to flip the fraction, she can do it and get
+the right answer and it is *hollow* — a physical, jaw-clenching frustration. She needs to see the
+pieces. When it comes together it is a moment of quiet, private joy, not triumph.
+
+**She sorts adults by fairness, not by rank.** She is not cynical and not rebellious. An adult who
+answers her questions straight gets real affection and loyalty. She argues a rule she can't see the
+sense of, then accepts the boundary to keep the peace. The good adults in her life — her parents, her
+Halstead teachers, her therapists — she genuinely loves.
+
+**She is physically six.** Her feet don't reach the floor. She climbs to reach the sink. Her hand
+cramps in a timed copying test and she is ashamed, not because she's deficient but because what was
+asked of her doesn't fit the body she has.
+
+### How this changes as she grows, and what doesn't
+
+What changes: fear and adrenaline drain out of her, year by year, as the training accumulates. By
+sixteen she walks away from a fight without shaking. The compliant register hardens from a flinch
+into a habit she no longer notices using. She gets quieter in institutional rooms because she has had
+ten more years of them.
+
+What does not change: she still doesn't think she's better than anyone. She still needs the
+mechanism. She still reads everything. She is still fully open with the four people who have never
+made her careful. **The emotional range does not narrow — the number of people who get to see it
+does.**
+
 ## Voice in one paragraph
 
-She converts an abstract disagreement into a concrete, physical scenario and argues the scenario instead of the original claim: "If you walked all the way around this table and stayed facing the table the entire way, would you say you were stuck?" (chapters/05_behind.md:95). She opens more turns with "If you..." than with any other construction. In front of institutional adults, teachers, clinicians, clearance investigators, she gives the shortest, safest, most compliant answer available and holds the longer true one back, and that holds even for an adult she likes: Dr. Prentice tells her mother plainly what he found, and in the car after, asked whether she wants to know what he said, Chloe answers "No" (chapters/02_march_4th.md:105-107). With her father she does the opposite and gives the full argument, unprompted, at length. She states rather than asks and asserts rather than hedges. She is the only character in the manuscript permitted an invented image, and she never explains one. She says it once and lets someone else argue with it: Icarus, clouds as the ocean going somewhere else, the moon as a liar.
+She converts an abstract disagreement into a concrete, physical scenario and argues the scenario instead of the original claim: "If you walked all the way around this table and stayed facing the table the entire way, would you say you were stuck?" (chapters/05_behind.md:95). She opens more turns with "If you..." than with any other construction. With her friends and her family she is open, fast and enthusiastic, and talks past the point where anyone asked for more. In front of an adult who has already burned her, or in a room where she's been burned before, she gives the shortest, safest, most compliant answer available and holds the longer true one back — sometimes even with an adult she likes: Dr. Prentice tells her mother plainly what he found, and in the car after, asked whether she wants to know what he said, Chloe answers "No" (chapters/02_march_4th.md:105-107). That compression is learned damage, not a setting she was built with; at six she volunteers everything until it costs her. She states rather than asks and asserts rather than hedges. She is the only character in the manuscript permitted an invented image, and she never explains one. She says it once and lets someone else argue with it: Icarus, clouds as the ocean going somewhere else, the moon as a liar.
 
 ## Dials
 
@@ -17,44 +83,60 @@ She converts an abstract disagreement into a concrete, physical scenario and arg
 | :-- | :-- |
 | sentence shape | builds a concrete parallel scenario, then argues the parallel |
 | disagrees by | converts the claim into a physical example and argues that instead |
-| wordiness | 3/10. 8.2 words/line in chat, 6.0 in tagged prose dialogue |
-| terseness | 48% of lines three words or fewer. A measurement, not a target |
-| at length | with her father, when the finished, compliant-sounding version of an answer is about to stand in for what she actually did; it costs her the cover of looking effortless, since the long version always shows the work the short one hid |
-| jokiness | 3/10. Dry, flat concession delivered as fact, not performed: "It's the same food, but I cut it." (chapters/11_eight.md:23) |
-| hedging | 0%, right for her; she never opens with "I think" or "maybe" |
-| questions | 0% measured, 5% target; her rare "?" lines test an adult's rule rather than seek information |
+| wordiness | measured 8.2 words/line in chat, 6.0 in tagged prose dialogue — but see the warning below the table before using either number |
+| terseness | 48% of lines three words or fewer. A measurement of the corpus as it stands, and **not a target**. The corpus is dominated by guarded contexts |
+| at length | **the default** with her friends and her parents. Excited, she runs on — enthusiastic, breathless, jumping detail to detail. The compressed register is the exception and is aimed at particular people who have hurt her |
+| jokiness | 3/10 in the dry register (a flat concession delivered as fact: "It's the same food, but I cut it," chapters/11_eight.md:23) — but she also laughs helplessly, teases, and bickers for fun with the four of them. The 3/10 describes her *wit*, not her capacity for delight |
+| hedging | 0% before a claim; she doesn't open with "I think" or "maybe." This is not the same as certainty — a hedge-free "I don't know" is her most common answer when hurt |
+| questions | 0% measured, and at six and seven this is simply wrong for her. She asks constantly: "Can I fail it?" "When does it get harder?" "Does anybody get sent home?" "Am I actually going?" She asks because she wants to know, and hasn't yet learned which questions aren't supposed to be asked |
 | figurative | ALLOWED. Her exclusive channel: Icarus (chapters/01_before.md:53), clouds as the ocean going somewhere else (chapters/01_before.md:61), the moon as a liar (chapters/05_behind.md:88) |
+| emotional range | 10/10, and this belongs in the table. Laughs until she has to lie down; screams when the news is good; rages; grieves on the floor. Nothing about her is muted except in front of people who have hurt her |
+
+**Warning on the two length numbers.** They are descriptive statistics over the existing manuscript,
+and the existing manuscript is the thing the outside readers called inhuman. A large share of her
+measured lines are in institutional scenes and in adult chat. Do not treat 6.0 words or 48%
+three-word lines as a specification to hit in a scene with Sam, Ruth, Kavi, Priya, or her parents.
+Those scenes should push both numbers up and the sheet expects them to.
 
 ## When they talk at length
 
-Everywhere else she runs the same economy she learned at six: finish first, sit still, say
-nothing to anybody (chapters/02_march_4th.md:119). It works on adults she likes as well
-as ones she doesn't, Prentice gets exactly as little as Mrs. Aldana does. The one place she
-sets it down is with her father, and only when the short compliant answer would leave the
-real account of what she did unsaid. She has already told him she got the fractions right;
-what she gives him next, unprompted, is the whole derivation a second time, on the clean
-side of the napkin: "He did it on the board and I didn't get it. So I did it again at night
-with my own numbers and then I got it," then, "Anybody can do the flipping. You do it and
-it's right, but you don't know it's right. You just know he said." (chapters/06_the_list.md:48-50).
-Years later at Thanksgiving she does it again with an argument instead of a
-method, building a full case for tariffs unprompted, past the point where a shrug would
-have closed the topic, and lets him find the hole in it himself: "It's what I had and it
-isn't right. It was Tuesday and I had to put something down." (chapters/13_ten_pages.md:146).
+**Corrected.** An earlier version of this section named her father as the one exception to a
+universal compliant minimum. That was wrong, and it is the single line on this sheet most
+responsible for the flat, inhuman register outside readers reported. There are three registers, not
+two, and the open one is the default.
 
-It costs her the cover the short answer buys everywhere else. The compliant minimum lets
-her look finished, like the result arrived whole. The long version with her father always
-shows the work underneath it, the night alone on the floor, the argument built and rebuilt
-against his one question, and that is a version of herself she does not let anyone else see.
-Twice on the page the same economy breaks completely instead of by argument, once each way.
-At seven, home from a bad stretch, the minimum stops working mid-sentence on her bedroom
-floor, and what replaces it is "please," over and over, offering away her birthday and every
-future present rather than say what is actually wrong (chapters/09_february.md:15-17). And
-once, told she is really going to Halstead, she talks for four straight hours in the car
-without rationing a word of it, asking her father six questions in a row and falling asleep
-mid-sentence rather than run out the way she usually does, on her own terms, first
-(chapters/09_february.md:133). Both times cost her the one thing the short answer was built to protect:
-being caught, by someone who loves her, still in the middle of feeling something instead of
-already finished with it.
+**With her friends — the default, and the largest share of her dialogue.** Sam, Ruth, Kavi, Priya.
+She is open, loud, funny, and fully present. She argues, bickers, teases, throws out theories,
+defends them, and stays up talking in the dark. She does not give them short answers and does not
+compress. She is socially attuned with them: she gets the jokes, tracks who is loud and who is
+quiet, protects their quirks, and holds onto sleeves and pyjama legs because she likes being near
+them. The moon debate and the Latin-is-cheating argument both run a page-plus with no sign she wants
+out. If a scene with the four of them has her giving clipped one-liners, it is wrong.
+
+**With her parents — open by default, closed only under strain.** She will talk through an entire
+dinner about a book plot, CPR on a mannequin, or how a bridge broke, forgetting to eat until
+somebody reminds her (chapters/01_before.md:29-38; chapters/06_the_list.md:46-50;
+chapters/13_ten_pages.md:132-154). She holds her father's sleeve at the door, asks her mother to
+talk about anything so she can fall asleep to her voice, and hugs them hard. She clams up for
+exactly two reasons — she senses tension in the room, or she is carrying guilt that her own
+difficulty is what's straining them. Never out of calculation.
+
+**With people who have burned her — the compressed register.** Kayleigh Burns, Bryce Dolan, an adult
+who has laughed at her or taken her book. "It's good." "I don't know." "Fine." Note what this is: not
+a filter she switches on for a category of person, but a flinch aimed at specific people and specific
+kinds of room, learned from specific injuries. A new adult starts neutral and gets watched, not
+stonewalled. An adult who answers her straight gets the full version.
+
+The economy she learns at six is real — finish first, sit still, say nothing (chapters/02_march_4th.md:119) —
+but it is a survival tactic in one hostile room, not a personality. It generalises later, and part of
+the tragedy of the adult chapters is that she stops noticing she's running it.
+
+Two places it breaks completely on the page, once each way. At seven, home from a bad stretch, the
+minimum fails mid-sentence on her bedroom floor and what replaces it is "please," over and over,
+offering away her birthday and every future present rather than say what is actually wrong
+(chapters/09_february.md:15-17). And once, told she is really going to Halstead, she talks for four
+straight hours in the car, asks her father six questions in a row, and falls asleep mid-sentence
+rather than finish on her own terms (chapters/09_february.md:133).
 
 ## Signature — theirs alone
 
@@ -70,18 +152,30 @@ Only two confirmed instances across the full reading list, thin for a signature 
 - YES if it opens with "If you" followed by a scenario, not a hypothetical outcome or a threat.
 - YES if it states a mechanism and stops, without checking whether the listener followed.
 - YES if it treats a result (a grade, a score, an acceptance) as a thing that happened rather than proof of anything about her.
-- YES if it's the shortest, safest, most compliant answer available to an institutional adult, while a longer true answer is visibly being withheld.
+- YES if it's the shortest, safest, most compliant answer available **to someone who has already burned her, or in a room where she's been burned before** — with a longer true answer visibly withheld. NOT to any adult by default, and never to her friends.
+- YES if it's open, enthusiastic, and runs on, when she's with Sam, Ruth, Kavi, Priya, or her parents and nothing has gone wrong in the room.
+- YES if it's a question asked because she genuinely wants to know, at six and seven especially.
+- YES if she's plainly wrong about herself — assuming a difficulty is her own defect rather than the room's.
 - YES if it's a complete short factual answer to a direct question ("Six." "Yes." "No.") rather than a trailing fragment.
 - YES if it's an invented image she says herself, not one narrated about her.
 - YES if it answers exactly the question asked and stops there, with no softening pass added afterward.
 - NO if it hedges: "maybe," "I think," "kind of," "sort of," before a claim.
 - NO if it accepts a compliment or praise at face value instead of deflecting, correcting, or redirecting to the mechanism.
+- NO if it implies, at any age, that she thinks she is smarter, faster or deeper than the people around her.
+- NO if it treats Halstead as elite, magical, or a rescue rather than as an ordinary school that happens to make sense.
+- NO if it's clipped and guarded in a scene with her friends where nothing has gone wrong.
 
 ## Are they acting like themselves?
 
 Under pressure she goes physically still and functional: keeps counting paint through a two-hour drill instead of flinching at the noise (chapters/14_sixty_degrees.md:219); sits down once a fight is over rather than celebrating (chapters/15_twelve.md:235). She holds her own finished work to a standard nobody assigned her: she drops three hinges in the scrap bin unprompted (chapters/17_fourteen.md:127) and corrects her own hook to the person who just praised it (chapters/15_twelve.md:17-19). She gives people she's loyal to the compliant, professional answer and gives the people she loves the long version, unprompted (the fractions retelling to her father, chapters/06_the_list.md:46-49). Good outcomes arrive as reported fact rather than staged triumph: a dozen college acceptances land as a paragraph of summary.
 
-Two ways a writer most easily gets her wrong: having her visibly celebrate or claim credit for a win, and giving her a directly stated emotion ("I was scared," "that hurt") instead of showing it through withheld information or an escalating bargain.
+Three ways a writer most easily gets her wrong. Having her visibly celebrate or claim credit for a
+win. Giving her a directly stated emotion ("I was scared," "that hurt") in the guarded register,
+where it should come through withheld information or an escalating bargain instead — though see the
+carve-out under Would never: at six and seven, past the point of managing it, she says it straight
+out and loudly. And, the worst of the three, writing her guarded everywhere: the compression belongs
+to specific people who hurt her, and a scene with Sam, Ruth, Kavi or Priya that reads clipped is
+simply the wrong character.
 
 ## Subjects and schedule
 
@@ -143,7 +237,9 @@ The manuscript gives almost nothing physical about her directly. Most of what fo
 ## Interior life
 
 - **What she wants and has never said out loud:** a floor she can't touch, a place hard enough, permanently, that she stops needing to check whether she finished first. Her repeated question to easy material is always some version of "when does it get harder" (chapters/08_the_asking.md:103).
-- **What she's afraid of, underneath:** that the boredom and the trouble were never the school's fault, that she is simply worse than everyone else at getting through an ordinary day, and that this is a fact about her rather than about the room. Close to her own stated conclusion at six: "She is worse at the part that everybody has to do." (chapters/01_before.md:129)
+- **What she's afraid of, underneath — and mostly believes outright:** that the boredom and the trouble were never the school's fault, that she is simply worse than everyone else at getting through an ordinary day, and that this is a fact about her rather than about the room. At six and seven this is not a background fear she occasionally brushes; it is her settled understanding of herself. "She is worse at the part that everybody has to do." (chapters/01_before.md:129)
+- **What she can't do:** connect how she feels to where she is. She does not think *I am miserable because this room is wrong for me*. She thinks *I am sad and I don't know why*. She knows she isn't sad at Halstead and can't say what the difference is. She just wants to go back.
+- **What she wants and can't ask for:** to be understood. She tries once — "Nobody was mean to me, not once, not ever" — and that is the whole of what she has. When she says "I don't know," sometimes she means it and sometimes she knows exactly and has no words that would survive being said out loud.
 - **What she thinks about before sleeping:** whatever technical thing didn't close that day, a problem, a proof, a release count that's still early or late by an amount she hasn't pinned down, worked over quietly, the same instinct that gets her out of bed to solve fraction division on the floor at seven (chapters/05_behind.md:49-53).
 - **What she'd do with a free year:** rebuild something enormous from scratch, alone, with no answer key and nobody grading it, the fraction-floor scene and the wheel-in-the-shower problem, at full adult scale.
 - **What she believes that the people close to her would argue with:** that withholding a true thing from someone you love is sometimes the kinder move. She dislikes being lied to herself, yet does exactly this to her mother about the rifles, to Sandoval's satisfaction, and eventually to a federal government she otherwise cooperates with completely.
@@ -182,6 +278,13 @@ The manuscript gives almost nothing physical about her directly. Most of what fo
 - Celebrate a good outcome openly or treat it as evidence of something about her: a stack of college acceptances gets read on the floor in confusion, not triumph (chapters/21_the_applications.md:115-115).
 - Volunteer the full truth to an adult who hasn't earned it, even one she genuinely likes: Dr. Ammons gets "It was hard," not the real list (chapters/08_the_asking.md:45-47).
 - Break a specific, spoken loyalty under lawful institutional pressure: tells a federal investigator everything except the one compartmentalized project, and still won't give it up (chapters/30_cleared.md:51-234).
+- Look down on an ordinary child, or on an ordinary classroom, as slow or shallow. She is confused by them, never contemptuous.
+- Describe herself as gifted, or accept that framing from anyone else.
+
+**A carve-out that used to be missing.** "Never give a directly stated emotion" holds for the
+guarded register and for her teens onward. It does **not** hold at six and seven once she is past
+the point of managing it: "I hate you. I hate you so much," "I can't do it anymore," and four hours
+of unrationed talking are all on the page and all correct. When she breaks, she breaks out loud.
 
 ## Relationships
 
@@ -201,6 +304,9 @@ The manuscript gives almost nothing physical about her directly. Most of what fo
 - Likes an audience who'll sit through the entire unhedged version of an argument, her father, repeatedly.
 - Habit: pivots away from a vulnerable moment with a flat fact rather than a feeling, "Anyway, that isn't the bit they got us for" (chapters/15_twelve.md:373), "It's like clays but harder" (chapters/17_fourteen.md:177).
 - Dislikes being told to slow down or wait for the room: Mrs. Prahl's "let's not rush" (chapters/08_the_asking.md:105).
+- Reads anything with words on it, without deciding to: cereal boxes, road signs, the church bulletin, a poster in a waiting room. Not a habit she'd name if asked. When she stops, something is wrong.
+- Ordinary six-year-old pleasures, at full volume: running through a sprinkler, syrup on her fingers, sitting on the bathroom floor before dinner because she has to find out whether the dog lives.
+- Loyalty as bookkeeping: after camp she realises she never got last names or phone numbers, is quietly ashamed of it, and writes them down so it can't happen again (chapters/10_april.md:21-27).
 
 ## Facts a rewriter needs
 
@@ -222,6 +328,36 @@ The manuscript gives almost nothing physical about her directly. Most of what fo
 3. Her "If you..." signature is confirmed but thin, only two clean instances found across the full reading list. A third instance, somewhere in the chapters/13-19 stretch where her explanatory dialogue currently drops the construction, would revive the signature and fix problem 4 at the same time.
 4. From about chapters/13_ten_pages.md on, some of her explanatory and tactical dialogue (the paintball "barrel" explanation, chapters/13_ten_pages.md:79; the intrusion tactical read, chapters/15_twelve.md:201) drops her parallel-scenario shape and reads as Kavi's assigned shape instead: clipped fact, then stop, nothing built around it. This isn't about the baseline register she's supposed to share with Kavi and Ruth (reasoning-first, no hedging, no small talk, that's the institution, and the sheet should keep it that way); it's specifically the exclusive sentence-shape slot slipping into his.
 5. Several age-6 lines (the librarian "at a time" argument, chapters/01_before.md:23; her private read on Ben Prentice, "Chloe doesn't believe the last part. Everybody says that," chapters/02_march_4th.md:28) carry the same rhetorical polish as her age-16 register. Flagged for the author's judgment; no specific rewrite proposed.
+6. **This sheet was part of the problem.** Three things on it, as previously written, pushed writers
+   straight into the register outside readers called inhuman: the claim that her father was the sole
+   exception to a universal compliant minimum; two length statistics presented without saying they
+   were descriptive of guarded scenes; and a "would never state an emotion" rule with no age
+   carve-out. All three are now corrected above. Any chapter revised against the old version of this
+   sheet should be re-read against the new one — the earliest chapters first, since that is where
+   the openness she starts with is supposed to be visible before anything crushes it.
+7. **Chapters where the correction most likely needs applying,** on the reasoning above rather than
+   on a fresh read: chapters/01 through 08, where she should still be open and is progressively
+   burned; chapters/04 through 06, the camp chapters, where she is among friends for the first time
+   and should be at her loudest; and any scene from chapters/09 onward where she is with the four of
+   them and the dialogue reads clipped.
+
+## Do not write her as
+
+The four failure modes outside readers actually produced from chapter one, in the words they used.
+
+1. **An alien or an intelligence passing for human.** Produced by: flat affect through a scene that
+   should hurt, narration that reports her state instead of her feeling it, and dialogue trimmed to
+   the corpus averages in a room where she's safe. Fix: give her the body reaction and the run-on.
+2. **A disabled child.** Produced by: unreciprocated exchanges, missing reactions to social cues she
+   would in fact read instantly, and one-word answers with people she loves. She is socially
+   *attuned* — she tracks the room, gets the joke, knows who needs what. What she lacks is not
+   perception; it is any idea why the perception keeps getting her in trouble.
+3. **A tiny adult.** Produced by: giving her the author's analysis of her own situation. She does not
+   know she is gifted, does not know the room is the problem, and cannot explain why she is sad.
+   Anything on the page that amounts to her diagnosing herself correctly is wrong.
+4. **Someone who finds ordinary people beneath her.** Produced by: any line where the contrast
+   between her and a normal classroom is scored in her favour from inside her head. The contrast is
+   always scored *against* her, by her.
 
 ## Do not confuse with
 
