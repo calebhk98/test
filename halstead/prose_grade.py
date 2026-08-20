@@ -38,6 +38,7 @@ and rebuilding it needs the book files again.
 """
 
 import argparse
+import math
 import json
 import re
 import statistics as st
@@ -105,6 +106,8 @@ METRICS = {
     "wpp":       ("words per paragraph", True),
     "spp":       ("sentences per paragraph", True),
     "wlen":      ("mean word length (characters)", True),
+    "ari":       ("reading grade (ARI)", True),
+    "lexile":    ("Lexile (approximate, see note)", True),
 }
 
 # The twelve the book was first graded on. Kept so the headline number stays
@@ -137,6 +140,61 @@ def strip_transcript(text):
     left = len(re.findall(r"[A-Za-z][A-Za-z']*", "\n".join(kept)))
     share = 100 * (total - left) / total if total else 0.0
     return "\n".join(kept), share
+
+
+WORDFREQ = HERE / "word_frequency.json"
+_FREQ = None
+
+
+def word_frequency():
+    """Occurrences per million, built from the 23-book reference corpus.
+
+    The real Lexile measure uses a proprietary frequency corpus that is not
+    available here. This is the same shape of input drawn from the same books
+    the rest of the script grades against, which is the best substitute on hand
+    and is why the Lexile column is labelled approximate.
+    """
+    global _FREQ
+    if _FREQ is None:
+        try:
+            _FREQ = json.loads(WORDFREQ.read_text())["freq_per_million"]
+        except Exception:
+            _FREQ = {}
+    return _FREQ
+
+
+def lexile(sent_lengths, lower_words):
+    """Approximate Lexile: sentence length against word familiarity.
+
+    Stenner's two-variable shape — long sentences push the number up, common
+    words pull it down, so a page of long sentences made of familiar words and
+    a page of short sentences made of rare ones can land in the same place.
+
+    Two things make this an approximation rather than a Lexile measure. The
+    frequency table is built from the 23-book reference corpus instead of the
+    proprietary Lexile corpus, and the map from the raw score onto the Lexile
+    scale is fitted here rather than published. The fit is a least-squares line
+    through twelve children's classics in that corpus whose Lexile measures are
+    published (Alice 850L, Five Children and It 810L, Peter Pan 920L, The
+    Railway Children 970L, A Little Princess 970L, The Secret Garden 970L, Tom
+    Sawyer 950L, Anne of Green Gables 990L, Black Beauty 1010L, Treasure Island
+    1080L, The Wind in the Willows 1140L, Little Women 1300L). Mean absolute
+    error against those twelve is 77L and the worst is 199L, on Little Women.
+
+    So: read it to +/- 100L, and use it to watch a chapter move relative to the
+    others rather than to claim a chapter is exactly 1000L. Recalibrate here if
+    the corpus changes.
+
+    Words the corpus has never seen count as rare rather than being dropped,
+    since dropping them would make invented and technical vocabulary free.
+    """
+    freq = word_frequency()
+    if not freq or not sent_lengths or not lower_words:
+        return None
+    RARE = 0.05  # per million: about one appearance across a twenty-book shelf
+    lwf = [math.log10(max(freq.get(w, RARE), RARE) * 5) for w in lower_words]
+    raw = 9.82247 * math.log(st.fmean(sent_lengths)) - 2.14634 * st.fmean(lwf)
+    return 46.45 * raw + 102.45
 
 
 def measure(text, floor=40):
@@ -183,8 +241,12 @@ def measure(text, floor=40):
     and2 = sum(1 for s in ss if len(re.findall(r"\band\b", s.lower())) >= 2)
     negative = sum(1 for s in ss if NEGATIVE.search(s))
 
+    n_chars = sum(len(x) for x in w)
+
     return {
         "fk": 0.39 * wps + 11.8 * (sum(syllables(x) for x in w) / n_w) - 15.59,
+        "ari": 4.71 * (n_chars / n_w) + 0.5 * wps - 21.43,
+        "lexile": lexile(sl, lw),
         "wps": wps,
         "sttr": 100 * st.fmean(win) if win else None,
         "commas": text.count(",") / n_s,
@@ -310,7 +372,7 @@ SUMMARY_COLS = [
     ("_words", "words"), ("_paragraphs", "paras"), ("_sentences", "sents"),
     ("wps", "w/sent"), ("slcv", "sl CV"), ("wpp", "w/para"), ("spp", "s/para"),
     ("wlen", "w len"), ("long7", "7+ch"), ("sttr", "sTTR"), ("top100", "top100"),
-    ("fk", "F-K"), ("commas", "commas"), ("subord", "subord"), ("relcl", "relcl"),
+    ("fk", "F-K"), ("ari", "ARI"), ("lexile", "Lexile"), ("commas", "commas"), ("subord", "subord"), ("relcl", "relcl"),
     ("simple", "simple"), ("u10", "u10"), ("b2035", "20-35"),
     ("shortruns", "runs"), ("front", "front"), ("and2", "and2"),
     ("andrate", "and%"), ("negative", "neg%"), ("_transcript", "chat%"),
