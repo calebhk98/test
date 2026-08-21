@@ -38,16 +38,18 @@ parents she is open, loud and enthusiastic.
 
 ## The mechanical part, which is easy to get wrong
 
-`chapters/` is **derived**. The real text lives in `MANUSCRIPT_FULL.md`, `HALSTEAD.md`,
-`CHAPTERS_16_22_v2.md` and `CHAPTERS_23_30_v2.md`. An edit made only in `chapters/` is reverted the
-next time those are regenerated.
+`chapters/` is the source of truth and the only place you edit. `HALSTEAD.md` is generated from
+it. After editing, run
 
-So: edit the file in `chapters/`, then run
+    python3 build_manuscript.py
 
-    python3 sync_chapter.py chapters/NN_name.md
+which rebuilds `HALSTEAD.md` from `chapters/` in filename order. It refuses to run if the chapter
+numbers have gaps or duplicates, or if a chapter's heading disagrees with its filename. Report
+anything it complains about.
 
-once per file you changed. It prints which sources it wrote to. If it prints a `!!` warning, say so
-in your report.
+Nothing goes the other way. The script that regenerated `chapters/` from a manuscript file has been
+deleted, because running it discarded work.
+
 
 Check the paragraph convention before you count lines. Chapters 1–6 put every paragraph on one line
 ending in two trailing spaces, with no blank lines between them; 7 onward use blank-line paragraphs.

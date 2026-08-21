@@ -3779,218 +3779,155 @@ Twice that week she takes the letters out again and counts them, and both times 
 
 *April 2023*
 
-Mr. Amberg runs the exit interviews himself, fifteen minutes each, ten or eleven students a day for nine days starting the first Monday of April. A list goes up outside the staff office every morning with that day's names in order, and a runner comes down from admin to call the next one in when the clock on his desk says it's time. He runs most of them the full fifteen minutes, by the staff's own count, even the ones that could have ended in under a minute. His own contracts class still meets four times that week, the interviews slotted into whatever's left of the day around it.
+Mr. Amberg runs the exit interviews himself, fifteen minutes each, ten or eleven students a day for nine days starting the first Monday of April. A list goes up outside the staff office every morning with that day's names in order, and a runner comes down from admin to call the next one in when the clock on his desk says it's time. He runs most of them the full fifteen minutes, by the staff's own count, even the ones that could have ended in under a minute. By the ninth day the list needs a second sheet taped below the first, names running off the bottom of the original one in his own small, fast handwriting. His own contracts class still meets four times that week, the interviews slotted into whatever's left of the day around it.
 
+The rest of April carries on exactly as scheduled around it: the twelves still have History at ten every morning, the forge stays open Thursdays and both Saturday sessions, and lunch still runs from noon to half past, the same as any other week in the term.
 
-Chloe's slot falls on the Wednesday of the second week, third appointment after lunch. His office holds a desk, two chairs, and a small clock turned to face only him. A folder is already open on the desk when she sits down, her name typed across the tab, and he starts before she's settled.
+What changes is dinner. By the end of the first week the interviews have become a fixture of the conversation the way an exam result would be, except that nobody is comparing scores; they are comparing decisions, which is a stranger thing to sit through with a fork in one hand. A boy from the materials wing tells the whole table one night that he turned it down flat, that his mother would stop speaking to him for a decade if he skipped actual college for a paycheck, in the specific tone of somebody rehearsing a line he means to use again at home. Three people laugh. He goes back to his tray and lets the subject close there for the night. A girl two years below Chloe comes back from her own slot grinning, drops into the chair across from a half-eaten plate, and says the whole thing twice, the number, the car, all of it, as though saying it again will make it hold still long enough to be believed. The two boys next to her let her have it, volume included, and nobody at that end of the table pretends to be talking about anything else for the rest of the meal.
 
+Chloe's own slot falls on the Wednesday of the second week, third appointment after lunch. Chairs line one wall outside his office, six of them. The corridor smells like the coffee cart that sets up near the stairwell every April, and the runner's shoes squeak the same two steps on the tile outside the door, morning after morning. She gets there with ten minutes to spare and finds most of the seats already taken: a boy re-reading the same page of a textbook, the words plainly sliding past him each time, and a girl sitting perfectly still with her hands in her lap, staring at the closed door like she's already rehearsed what's behind it, both of them waiting on slots later than hers.
 
-"Four things," he says. "Research, full time, starting the day you'd otherwise be walking into a dorm room somewhere. Entry researchers elsewhere start around forty five thousand a year. You'd get three times that, minimum, more once you're carrying your own project instead of somebody else's. Housing, food, a car, medical, nothing coming out of your end for any of it. And if you want the degree on top of the work, you do it here, on your own schedule, we pay for it, and the post stays open until you finish, however long that takes. Six-day weeks the first year, five after that, same as anyone on staff. You'd report to whoever runs your team, same as anyone on staff. Nothing about being eighteen changes any of it."
+One seat empties while she watches. A boy she half-recognizes from the year above goes in on the dot, a laptop bag still over one shoulder like he's walking into a meeting rather than an office, and is back out before she's finished reading the noticeboard behind the chairs.
 
+"That was fast," she says. "Six minutes?"
+
+"I already had the desk, since I was fifteen," he says, resettling the strap on his shoulder, already moving. "He just made it official." He's three steps past her by the last word, one hand up in a fast, half-formed wave.
+
+The runner calls her name a minute later.
+
+His office holds a desk, two chairs, and a small clock turned to face only him. A folder is already open on the desk when she sits down, her name typed across the tab.
+
+"Eleven years," he says, before she's fully settled in the chair. "Anything for the file."
+
+"Nothing that isn't already somewhere in that folder."
+
+"Four things, then," he says. "Research, full time, starting the day you'd otherwise be walking into a dorm room somewhere. The salary is a hundred and thirty five thousand dollars a year, to start, more once you're carrying your own project instead of somebody else's. Housing, food, a car, medical, nothing coming out of your end for any of it. And if you want the degree on top of the work, you do it here, on your own schedule, we pay for it, and the post stays open until you finish, however long that takes. Six-day weeks the first year, five after that, same as anyone on staff. You'd report to whoever runs your team, same as anyone on staff. Nothing about being eighteen changes any of it."
 
 "Here?"
 
-
 "Here."
 
-
-Forty five, three times over, is a hundred and thirty five. Housing on top of that. Food on top of that. A car, medical, all of it covered. Call the rest of it another twenty, a number he left out and she adds anyway. A hundred and fifty five thousand dollars a year, at eighteen, and she would still be here. She keeps both hands flat on her knees while she runs it, the way she keeps them flat on a table whenever she wants to get something right the first time.
-
-
-The part she's actually weighing is different. She's taught the twelves real analysis out of a room two floors below this one, dropped three flawed hinges into a scrap bin and kept it to herself, and gone back to the forge every Thursday for five years before anyone had to make her. Money sits outside all of that. Eleven years ago the only thing that mattered about this place was that a letter had her name typed on the front of it. The folder open on the desk in front of her now has the same thing typed on the tab.
-
+She keeps both hands flat on her knees while she turns it over, the same stillness she'd use leaning across a table when she wants to get something right the first time rather than the second. She's taught the twelves real analysis out of a room two floors below this one, working through the same proofs that were handed to her at the same age by someone who never once made it sound like a favor. She's dropped three flawed hinges of her own into the scrap bin rather than let them stand, and gone back to the forge every Thursday for five years without anyone having to ask her twice, because the standard she was holding the work to was hers before it was anyone else's. None of that has a dollar figure attached to it, and the number sitting on the desk in front of her doesn't touch it either way. Eleven years ago the only thing that mattered about this place was that a letter had her name typed across the front of it, in an envelope she still has, in a drawer she still checks. The folder open on the desk now has the same thing typed on the tab.
 
 "I don't think so," she says.
 
+Mr. Amberg's pen stops moving. He sets it down instead of writing with it.
 
 "Reason?"
 
+She takes a moment to find it, turning the folder's edge slightly with one finger before she answers. "If you sat the same exam every year, in the same room, against the same ninety people, and you kept coming out near the top of it, would you ever actually find out if you were good at the exam, or just good against that particular room?" She doesn't wait for him to answer it. "I don't know what's outside this building. Everyone I've ever been measured against my whole life is inside it. Staying doesn't answer that question. It just makes the room permanent."
 
-"It's my school." She takes a second to find the rest of it out loud. "Nobody stays at their school. You go and do the next thing."
-
-
-Mr. Amberg writes something down and doesn't argue with her. He closes the folder, squares it against the edge of the desk, and checks the clock, which still has four minutes left on it. He spends them going back through the rest of the file in silence, the same slow read he'd give a mark scheme before handing it back, and closes it for good only once the four minutes are actually up.
-
+Mr. Amberg writes it down. He squares the folder against the edge of the desk and opens it once more, the same slow read he gives a mark scheme before he hands it back, running a finger down the last page against whatever he's just written in the margin. He closes it exactly when the clock reads zero.
 
 At fifteen minutes exactly he stands. She stands too, and the next name is already waiting in the doorway.
 
+________________
+
+Ninety-one names go up in all over the nine days, and eleven of them turn into yeses, each one settled before the walk back to class is over.
+
+Ten of the eleven had already been somewhere in that building, on a floor with a badge on the door, longer than the rest of the year had any reason to know, which is exactly the pattern everyone in the corridor expects once the first few names go up. The eleventh breaks it. He's a boy from the language block, no badge to his name and no floor he's ever had a reason to be on, who says yes anyway and spends the rest of that week asking around, politely and without much luck, to find out what the door is even for.
+
+The eighty who say no go back to their own last weeks of school, final transcripts still to sort out, the ordinary business of finishing something they'd already half finished before the list ever went up.
 
 ________________
 
+Kavi is one of the eleven. Chloe hears about it before any posted list confirms it: his name comes up in the common room before dinner, already attached to a number somebody else supplies, and she goes to find him rather than take the secondhand version.
 
+She finds him in the network room that evening, back against the radiator by the door, a length of stripped cable coiled around one hand while he turns the copper end over between two fingers, over and over, eyes somewhere else.
 
-
-Ninety-one names go up over the nine days, and by the third one everyone in the building knows roughly what's behind the door before they sit down in front of it, because the ones who've already been through it talk in the corridor while they wait for the ones still ahead of it. By the sixth day the list needs a second sheet taped below the first, names running off the bottom of the original one in Amberg's own small, fast handwriting.
-
-
-April keeps its ordinary shape around it. The twelves still have History at ten, the forge stays open Thursdays and both Saturday sessions, and lunch runs from noon to half past the same as every other week in the term.
-
-
-Chairs line one wall outside his office, six of them, and there's always at least two people in them: whoever's next on the list taped to the door, and whoever's just come out, still deciding whether to go straight back to class or sit a while first. The corridor smells like the coffee cart that sets up near the stairwell every April, and the runner's shoes squeak the same two steps on the tile outside the office door, morning after morning.
-
-
-Chloe's own wait that Wednesday runs eleven minutes, sandwiched between a boy re-reading the same page of a textbook, the words sliding past him each time, and a girl sitting perfectly still, hands in her lap, staring at the closed door like she's already rehearsed what's behind it. Another boy a few chairs down has a printed spreadsheet balanced on one knee, three different versions of the same arithmetic run down the margin, and folds it in half the second the door opens for him.
-
-
-A girl from the materials wing comes out ahead of Chloe's own slot and sits down hard in the chair by the window, her bag still over one shoulder like she forgot to put it down, quiet for most of a minute. Then, half to herself, "I said I'd think about it." The boy next to her glances over once and goes back to his phone.
-
-
-The boy in for the four o'clock slot is on his feet before the runner even calls his name, a laptop bag already over one shoulder like he's walking into a meeting rather than an office, and he's back out in six minutes flat, the door barely swinging shut behind him before it opens again.
-
-
-"Six?" Chloe says, glancing at the door he just came out of.
-
-
-"I already had the desk, since I was fifteen," he says, resettling the strap on his shoulder, still moving. "He just made it official." He's three steps past her by the last word, one hand up in a fast, half-formed wave.
-
-
-By the second week the number stops being the interesting part of the conversation. Three times market, housing, a car, the degree paid for, the post held, everyone in the corridor runs some version of Chloe's own arithmetic out loud at some point and lands somewhere over a hundred thousand dollars, and after the fourth or fifth time it gets said out loud it barely gets a reaction from anyone still waiting in the chairs. Somebody chalks the whole sum onto the corner of the common room whiteboard by that Thursday, a hundred and thirty five plus everything else, and a second hand adds a question mark to the end of it before the day is out.
-
-
-Two boys from the year below share the chair by the noticeboard for a few minutes between slots, close enough to overhear each other.
-
-
-"You get the car thing?"
-
-
-"Everyone gets the car thing."
-
-
-The first one checks something on his phone before he bothers answering the follow-up. "I meant which car."
-
-
-"He didn't say which car."
-
-
-One boy, out of the office a full hour before Chloe's own turn, announces to the whole corridor that he turned it down flat because his mother would stop speaking to him for a decade if he skipped actual college for a paycheck. Three people laugh. He keeps reading whatever's on his phone, face flat, like the conversation already cost him something.
-
-
-A girl two years below Chloe comes out grinning, drops into the chair by the door, and says the whole thing out loud twice, the number, the car, all of it, as if saying it again will make it hold still. The two boys waiting behind her let her have it, the volume included.
-
-
-A boy from Chloe's own year, later in the second week, comes out and stays on his feet. He stands at the window with both hands flat on the sill until they stop shaking, then leaves before the question of whether he's all right gets an answer. The runner marks his name off the list a little more carefully than the others, and moves on to the next one.
-
-
-What keeps being interesting, once the list is finished, is that eleven people said yes, and each of them had the answer before the walk back to class started. Every one of the eleven had already been somewhere in that building, on a floor with a badge on the door, longer than the rest of the year had any reason to know. The eighty who said no go back to their own last weeks of school, final transcripts still to sort out, the ordinary business of finishing something they'd already half finished before the list ever went up.
-
-
-________________
-
-
-
-
-Kavi is one of the eleven, and word gets around a plainer way than a posted list, before anyone official says a thing. Chloe hears his name in the common room before dinner, in the same breath as a number, and goes to get the rest of it from him directly instead of secondhand.
-
-
-Chloe finds him in the network room that evening, back against the radiator by the door, a length of stripped cable coiled around one hand while he turns the copper end over between two fingers, over and over, eyes somewhere else. The overhead light in here has buzzed since October, low on anyone's list to fix.
-
-
-"Why?" she asks.
-
+"Why?" she asks. "You had MIT. You had Caltech. You had this too, and you picked the one with no name on the door."
 
 "Because what I want to do is happening in one building and I'm standing in it," Kavi says, and keeps turning the cable.
 
+"But it's school," she says. "Same building, same people. Isn't the whole point to go find out if any of this holds up somewhere else?"
 
-"But it's school," she says.
+"It stopped being school for me a while ago." He sets the coil down on the bench, edges lined up flush with the bench's own edge, and leaves it there. "School teaches you things on somebody else's schedule and grades you on how close you get to an answer that's already written down somewhere. Nobody here has that answer written down. I brought them a false positive rate on Tuesday and nobody in the building could tell me if it was wrong, because nobody had checked it yet. That doesn't happen in a classroom. It can't. The classroom's whole job is already knowing." He looks at her the way he looks at a mark scheme. "It's a lab that also has children in it." He says it flat, the same register he'd use to correct a wrong exponent.
 
-
-"It stopped being school for me a while ago." He sets the coil down on the bench, edges lined up flush with the bench's own edge, and leaves it there. "School teaches you things on somebody else's schedule and grades you on how close you get to an answer that's already written down somewhere. Nobody upstairs has that answer written down. I brought them a false positive rate on Tuesday and nobody in the building could tell me if it was wrong, because nobody had checked it yet. That doesn't happen in a classroom. It can't. The classroom's whole job is already knowing." He looks at her the way he looks at a mark scheme, waiting for the next objection rather than the next compliment. "It's a lab that also has children in it." He says it flat, the same register he'd use to correct a wrong exponent, and moves on before it lands.
-
-
-Chloe watches the cable a moment longer. It's the same thing the boy with the laptop bag already told her in six minutes, in fewer words. Kavi picks the cable back up and starts stripping the next foot of it, the same slow half turn of the wrist each time, and she leaves him to it.
-
+Chloe watches him get back to work, the same slow half-turn of the wrist stripping the next foot of cable, and lets him get on with it.
 
 ________________
 
+Chloe calls home that night, sitting on the floor of her room with her back against the bed, the phone warm against her ear before her mother even picks up, the way it's been warm against her ear at the end of most days for eleven years.
 
-
-
-Chloe calls home that night, sitting on the floor of her room with her back against the bed, the phone warm against her ear before her mother even picks up.
-
-
-Her mother picks up on the second ring, already three steps into her kitchen loop. "Hey, you. How'd it go today?"
-
+Her mother picks up on the second ring, still three steps into her kitchen loop, a dish towel over one shoulder and the radio on low behind her the way it always is at that hour. "Hey, you. How'd it go today?"
 
 "I said no."
 
+A beat. The pacing on the other end of the line stops. "No to what?"
 
-"No to what?" A beat, the pacing not stopping yet. "Wait, what was the yes?"
+"They offered me a job. Here. I turned it down."
 
+"What kind of job."
 
-Chloe gives it to her in order, the way Amberg gave it to her, four things instead of one long sentence. Research, full time. Three times the pay. Housing, food, a car, medical, none of it hers to pay for. The degree paid for if she wanted it, the post held after.
+Chloe gives it to her in the order Amberg gave it to her. "Research. Full time, starting the day I'd have gone to a dorm instead. A hundred and thirty five thousand a year to start. Housing, food, a car, medical, none of it mine to pay for. The degree too, if I want it, paid for, on my own schedule, and the post held open until I finish."
 
+The silence on the line runs long enough, unbroken by the usual kitchen noise, that Chloe checks the screen to be sure the call is still live.
 
-The pacing stops.
+"A hundred and thirty five thousand dollars," her mother says, each word landing on its own.
 
+"Plus the rest of it."
 
-It starts again after a few seconds, three steps and back. "Three times what."
+"You said no to a hundred and thirty five thousand dollars, a car, free rent, free food, medical, and a paid degree, at eighteen years old."
 
+"Yes."
 
-"He said forty five is what a researcher gets somewhere else. So a hundred and thirty five, before the rest of it."
+"Dave." Her mother's voice moves off the phone and comes back closer, both of them on the line now, close enough that Chloe can hear them breathing on top of each other.
 
+"Say that again," her father says. "All of it."
 
-"A hundred and thirty five," her mother says, "and a car."
+She says it again, and doesn't shorten it this time either.
 
+Her father lets a breath out in one flat exhale, not quite a laugh. "That's not a decision. That's a mistake."
 
-"And medical. And the degree."
+"Dave—"
 
+"I'm allowed to think it's a mistake." Back to Chloe now. "You understand what a hundred and thirty five thousand dollars a year actually is. Over ten years, with the housing and the degree stacked on top of it, before you've paid a dollar of rent anywhere else in your life."
 
-"How long's the contract."
+"I understand what it is."
 
+"Then explain it to me. Because from here it looks like you turned down more money than your mother and I have made in any five years combined, for a reason you haven't said yet."
 
-"I don't know. I didn't ask."
+"If I take it, I already know exactly what the next ten years look like," Chloe says. "I've seen the building. I've seen the work. I've watched what everyone in it does with a bad afternoon and what they do with a good one since I was seven. Nothing about that job would surprise me in the first year, or probably the fifth." She hears her own voice picking up pace and keeps going anyway. "Everyone I've ever been ranked against my whole life is inside those two buildings. I don't know what I'd be if I got ranked against anyone else. Staying doesn't answer that. It just makes it permanent."
 
+"So you're saying no to guaranteed money for the chance of finding out you're not as good as you think you are," her mother says.
 
-"Would you have had to move out of the dorm."
+"I'm not saying I think I'm good. I'm saying I don't know, and I'd rather find out than get paid not to."
 
+A pause, and then her father again, quieter. "What happens if you change your mind. Is the door still open in a year? Five?"
 
-"I didn't ask that either."
+"I didn't ask that."
 
+"You turned down a hundred and thirty five thousand dollars and you didn't ask if you could still take it later."
 
-Her mother goes quiet again, the particular quiet she gets over a mortgage statement before she finds the one line that actually matters and reads it out loud twice. The line holds silent for the length of one more loop of the kitchen.
+"No."
 
+Her mother's voice, when it comes back, has the same flat edge she uses reading the fine print on a mortgage refinancing before she'll sign it. "You know the state school isn't free. We've never pretended it was going to be. If this is the four years instead of the guaranteed money, I need you to actually hear that part, not just the part where you get to go find out about yourself."
 
-"Dave." Her mother's voice moves away from the phone and comes back closer, and then her father's on the line too, near enough that Chloe can hear both of them breathing at once.
+"I hear it."
 
+"Say it back to me."
 
-"You said no," he says.
+"It's not free. You and Dad are going to have to figure out how to pay for it, the same way you figure out everything else, and it's my fault that you have to."
 
+"That's not what I—" her mother starts, then stops and starts again. "It's not your fault. It's a fact. There's a difference and I want you to know it."
 
-"Yeah." She picks at the frayed edge of the carpet while she waits for the follow-up she already knows is coming.
+"Okay."
 
+"What about the others," her father says. "Ruth. Sam."
 
-"What's the catch."
+"Ruth's still going to MIT. Sam's still doing the thing with the Army. Kavi said yes to the same thing I said no to."
 
+"Huh." A short pause. "Good for him."
 
-"There isn't one." She lets the quiet sit half a second before she gives him the rest of it. "I said it's my school. Nobody stays at their school, you go and do the next thing."
+"We still think it's a mistake," her mother says. "Both of us. I want that said out loud and not just implied."
 
+"I know."
 
-Both of them let it be. Her mother asks if she's sure three separate times across the next two minutes, in three different shapes, and gets the same answer each time, and eventually stops asking. Her father waits out the whole exchange before he asks whether anybody said yes.
-
-
-"Kavi."
-
-
-"Huh." A short laugh, cut off almost as soon as it starts. "Good for him."
-
-
-"What about the other two." Ruth and Sam, he means, the only two names in that building already fixed in his memory.
-
-
-"Same as me. Ruth's still going to MIT, and Sam's still doing the thing with the Army."
-
-
-"Good," he says, the whole word behind it this time.
-
-
-Before they hang up, her mother says the thing she'll go on saying every summer for the next two years, about the state school an hour from wherever Chloe ends up, about the cost being real, exactly as they've always said it was, and that they'll manage it the way they manage everything else. It comes out in the same flat voice she uses reading a mortgage clause out loud at the kitchen table, checking it against what it's actually going to cost.
-
+"But it's your name on the letter. It was your name on the first one too." A pause, then, quieter. "Okay?"
 
 "Okay," Chloe says.
 
-
 "Okay," her mother says back, and there's the small click of her hanging up first.
-
 
 Chloe sits there a while longer with the phone dark in her lap before she gets up to find something to eat.
 

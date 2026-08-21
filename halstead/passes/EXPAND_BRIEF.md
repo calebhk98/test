@@ -73,7 +73,7 @@ argue, they like each other.
 
 `chapters/` is derived. After editing, run
 
-    python3 sync_chapter.py chapters/NN_name.md
+    python3 build_manuscript.py
 
 which writes back into `MANUSCRIPT_FULL.md` and `HALSTEAD.md`. Report any `!!` warning.
 
