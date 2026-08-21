@@ -190,11 +190,11 @@ Her father sets his fork down. "She said something on the phone in October."
 
 "I thought you knew," he says, keeping his eyes down. "I thought it was fine."
 
-Her mother sets the dish down in the middle of the table, straightens it with two fingers, and goes into the kitchen, staying there while her father moves the salt, puts it back, then gets up and starts stacking plates still half full.
+Her mother sets the dish down in the middle of the table, straightens it with two fingers, and goes into the kitchen, staying there while her father moves the salt, puts it back, then gets up and starts stacking plates still half full. The real sentence stays exactly where it's been all evening, buried under the one about pie: how much of the last four years already happened at a range and a mat four hours from this table, with her mother getting it secondhand and six months late. The kitchen gets six minutes and the plates get stacked instead, and that turns out to be as much of the sentence as the room can hold.
 
 Her mother comes out after about six minutes and asks whether anybody wants the pie warmed up. Her father and Chloe both say yes at the same time. He turns the game on and they eat it in front of that, and her mother comes and sits on the arm of his chair for the second half.
 
-"That's a hold. That is a hold, that's been a hold all night," her mother says.
+"That's a hold. That is a hold, that's been a hold all night," her mother says. It's the closest either of them comes all night to naming what's actually been going on at the table.
 
 On Sunday she asks whether the man behind the line is armed, and what happens if somebody drops one, and whether anybody has ever turned round. Chloe answers all three, and then tells her about the flag they call the wind off, and her mother listens to all of it and comes back with one more question about the man behind the line.
 

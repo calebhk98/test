@@ -1932,6 +1932,8 @@ The best anyone in the room manages all afternoon is nine seconds. Chloe gets fo
 
 "She says a lot of things," Sam says, into his sleeve.
 
+"A minute's the whole fight," Ruth says, arm still over her eyes. "Four's just where you ran out first."
+
 By March most of the year is in the six-to-ten range on a good day. Sam gets fourteen seconds in February, a mark that stands alone for the rest of the year. Chloe is on eleven seconds by June, and two of them she wasted.
 
 Swimming gets harder and the teacher says so in the first week. Some of it is in clothes and some of it is in cold water, and in the third term some of it is towing somebody who fights you the whole way, all of it in how you hold their head.
@@ -1993,7 +1995,7 @@ She goes back after dinner when the corridor is empty and reads it again, and th
 
 "I was standing in it."
 
-"So was I, and so was Wes, and I don't know what we were supposed to be doing either." Ruth is still looking at the sheet. "There's another one in three weeks."
+"So was I, and so was Wes, and I don't know what we were supposed to be doing either." Ruth is still looking at the sheet. "So the six should be on whoever wrote the drill and left it that vague, not on the one of us who noticed first. There's another one in three weeks."
 
 Russian starts in September, and two months in she has enough of it to argue in. Ruth is on Arabic. By the middle of the term the two of them are running insults across the dinner table in two languages, and Kavi complains about it in a third, and Sam asks them to do it in English so he can join in and neither of them will.
 
@@ -2031,11 +2033,11 @@ Her mother comes through with the pie and everybody moves their arms, while her 
 
 In December Hearn hands one back with no note on it at all.
 
-She turns it over twice on the way out into the corridor, in case the note went on the back of the last page. There is a mark at the top and nothing under it, but the page is clean all the way down. She would rather have had three lines telling her it was bad.
+She turns it over twice on the way out into the corridor, in case the note went on the back of the last page. There is a mark at the top and nothing under it, but the page is clean all the way down. She would rather have had three lines telling her it was bad. Three lines she could argue with. A mark with no line under it leaves her only her own doubt to argue against, and that's the harder version of being told she's wrong.
 
 Theo gets one back with no note the same week, but he puts it straight into his bag and goes on with what he was saying.
 
-She writes four more before the break, but they are the same essays they have been since October. The last one is on whether a promise made under a threat counts, a question that Hearn's note calls good before asking where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 again on the floor of the spare room with the door shut. Her grandmother finds her there on the second afternoon and leaves the papers exactly where they are.
+She writes four more before the break, but they are the same essays they have been since October. A plateau and a beginning look exactly alike from inside the same week; only which way the next one goes tells you which one you were in. The last one is on whether a promise made under a threat counts, a question that Hearn's note calls good before asking where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 again on the floor of the spare room with the door shut. Her grandmother finds her there on the second afternoon and leaves the papers exactly where they are.
 
 "There's a chair."
 
@@ -3017,11 +3019,11 @@ Her father sets his fork down. "She said something on the phone in October."
 
 "I thought you knew," he says, keeping his eyes down. "I thought it was fine."
 
-Her mother sets the dish down in the middle of the table, straightens it with two fingers, and goes into the kitchen, staying there while her father moves the salt, puts it back, then gets up and starts stacking plates still half full.
+Her mother sets the dish down in the middle of the table, straightens it with two fingers, and goes into the kitchen, staying there while her father moves the salt, puts it back, then gets up and starts stacking plates still half full. The real sentence stays exactly where it's been all evening, buried under the one about pie: how much of the last four years already happened at a range and a mat four hours from this table, with her mother getting it secondhand and six months late. The kitchen gets six minutes and the plates get stacked instead, and that turns out to be as much of the sentence as the room can hold.
 
 Her mother comes out after about six minutes and asks whether anybody wants the pie warmed up. Her father and Chloe both say yes at the same time. He turns the game on and they eat it in front of that, and her mother comes and sits on the arm of his chair for the second half.
 
-"That's a hold. That is a hold, that's been a hold all night," her mother says.
+"That's a hold. That is a hold, that's been a hold all night," her mother says. It's the closest either of them comes all night to naming what's actually been going on at the table.
 
 On Sunday she asks whether the man behind the line is armed, and what happens if somebody drops one, and whether anybody has ever turned round. Chloe answers all three, and then tells her about the flag they call the wind off, and her mother listens to all of it and comes back with one more question about the man behind the line.
 
