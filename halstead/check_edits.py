@@ -5,8 +5,9 @@ Ten agents edited chapters/01..10 in place. Each fix is a judgement call and
 cannot be checked mechanically, but the things that would quietly wreck a
 chapter can be:
 
-  - the markdown hard line breaks in chapters 1-6, where a paragraph is held
-    together by two trailing spaces and loses its shape without them
+  - two-trailing-space hard line breaks, which the book no longer uses. Every
+    chapter separates paragraphs with a blank line; chapters 1-6 were the last
+    holdouts and are being converted. Any trailing-space line is now a defect.
   - the heading, the blank line, and the generated date line at the top
   - em dashes, banned everywhere including dialogue
   - curly quotes, in a manuscript written with straight ones
@@ -79,11 +80,10 @@ def main():
         if o and c["curly quotes"] > o["curly quotes"]:
             note.append(f"curly quotes up {o['curly quotes']}->{c['curly quotes']}")
             problems += 1
-        # Trailing spaces only matter where the chapter was built on them.
-        if o and o["hard breaks"] > 20:
-            lost = o["hard breaks"] - c["hard breaks"]
-            if lost > 0:
-                note.append(f"lost {lost} hard line breaks"); problems += 1
+        # The book is on one convention now: blank lines between paragraphs.
+        if c["hard breaks"]:
+            note.append(f"{c['hard breaks']} trailing-space line(s), convert to "
+                        f"blank-line paragraphs"); problems += 1
 
         delta = f"{c['words'] - o['words']:+d}" if o else "new"
         hb = f"{c['hard breaks']}" + (f" (was {o['hard breaks']})" if o else "")

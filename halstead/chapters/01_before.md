@@ -6,10 +6,9 @@ In the school office there is a folder about Chloe, who is six, started by her k
 What she knows instead is that her mom is on the phone in the kitchen most evenings now, standing at the counter with one hand pressed flat against her forehead.  
 "No, I understand that, I'm just asking what the next step is, because I have asked twice and both times the answer was that we wait." She listens through two more sentences before the phone clicks over to her mom's other ear. "Okay, but she is six years old, and a piece of paper saying what you already said to me is a piece of paper, not a next step."  
 On the other side of the wall Chloe sits on the living room floor with a book open in front of her, listening instead of reading.  
-The half of the conversation that comes through the plaster is the half about her.  
 Her mom listens again, longer this time, before the rest of it comes out.  
 "I'm saying I've got a kid who used to like school, and I'd like somebody in that building to be as bothered about that as I am."  
-Chloe turns a page she stopped reading two sentences ago, because turning pages at the right speed is what somebody reading a book looks like from the kitchen.  
+Chloe turns a page she stopped reading two sentences ago, her thumb keeping a place she has already abandoned.  
 \---  
 There are thirty subtraction problems on the worksheet and all thirty are the same problem, which she works out partway through the second, eight minus three, so the other twenty-eight are that again with different numbers.  
 Because the pattern is already found, she writes the answer to problem three and then sits with the pencil motionless, the rest of it being nothing but copying twenty-seven more times while the classroom clock holds at eleven-forty.  
@@ -17,7 +16,7 @@ Mrs. Aldana waits for everybody to finish before moving on, and somebody is inva
 You are allowed to read once you finish the sheet, and Chloe, who has decided against finishing it, looks out the window instead.  
 In the parking lot a man is loading boxes into the trunk of his car, with his coffee cup set up on the roof so that he can use both hands, and he gets three boxes in, shuts the trunk and drives off with the cup still up there, so that Chloe is about an inch out of her seat, watching it ride across the asphalt, when she hears her name.  
 "Chloe." Mrs. Aldana is at the end of her desk, looking down at a worksheet with three answers on it and the rest blank. "What was the question?"  
-The question has already happened somewhere behind her, in a classroom she was technically sitting in. She was out in the parking lot.  
+The question has already happened somewhere behind her, while she was out in the parking lot with the coffee cup.  
 "I don't know," she says, working her heel back into her shoe under the desk, and looks at the worksheet instead of at Mrs. Aldana.  
 "That's what I thought." Mrs. Aldana taps the worksheet twice and walks back to the front, and she has no reason to come down the row again, because Chloe does problems four through thirty in the time that is left and gets them all right.  
 \---  
@@ -25,10 +24,12 @@ Reading works a different way entirely, because the difference shows up wherever
 In one week that is the cereal box at breakfast, both sides, including a contest that ended in a different year, the road signs read aloud from the back seat until her mom asks her to stop, her grandmother's church bulletin, and the four books at a time her library card is good for, argued about with the same librarian more than once.  
 "What if I brought two of them back and got two more the same day, because then it would still only be four at a time?"  
 "Then you'd have four."  
-"But I would have had six." Chloe has both hands flat on the desk, up on her toes to see over the edge, because it is a good argument and deserves the right height.  
-"You'd have had four at a time," the librarian says, stamping cards with her eyes on the cards rather than on Chloe, which is its own kind of answer.  
+"But I would have had six." Chloe has both hands flat on the desk, up on her toes to see over the edge.  
+"You'd have had four at a time," the librarian says, stamping cards with her eyes on the cards rather than on Chloe.  
 "The rule is about at a time, though, so six is fine, because it is still four at a time, just four and then four again, and two of them you already gave me."  
-The librarian holds the stamp in the air, asks how old she is, hears six, says four, and goes back to stamping. "The new ones come in Thursday morning and sit on the cart before I shelve them, so come Thursday and go through the cart first."  
+The librarian looks up at her and holds the stamp in the air. "How old are you?"  
+"Six," Chloe says.  
+"Four," the librarian says, and goes back to stamping. "The new ones come in Thursday morning and sit on the cart before I shelve them, so come Thursday and go through the cart first."  
 Chloe takes the four, which are gone by Wednesday, and her mom has started finding her at ten thirty at night against her bedroom door with the hall light coming under it.  
 \---  
 At dinner in September she talks for the entire meal about a book in which a girl runs away and lives inside a train station, so the explaining starts with the station, whose size is what everything else depends on.  
@@ -44,17 +45,23 @@ Chloe talks through the clearing of the plates and is still going when her mom s
 Her mom reports it on the phone afterward, laughing.  
 "She had to be told twice to eat, because she couldn't do both."  
 \---  
-There is a game at recess with a tennis ball that Chloe has no name for and cannot learn the rules of by watching, so on the second day she asks straight off and is told sure, without anybody stopping the game.  
-Then Kayleigh Burns catches the ball on one bounce and stays in.  
-Chloe says that Maddie was out for exactly that four minutes ago, and what comes back is that Maddie does it different, she kind of scoops it instead of catching it flat, so it's basically a whole other move.  
+The blacktop is warm enough by midmorning that the girls play in short sleeves, and there is a game at recess with a tennis ball that Chloe has no name for and cannot learn the rules of by watching, so on the second day she asks straight off.  
+"Can I play?"  
+"Sure," somebody says, without stopping the game to say it, and it goes fine for about ten minutes, until Kayleigh Burns catches the ball on one bounce and stays in.  
+"You're out," Chloe says.  
+"No I'm not, because I caught it clean, and clean is a different rule than when it hits the ground first," Kayleigh says, keeping her eyes on the ball, because it's still going.  
+"Maddie was out, and she caught it on one bounce, like four minutes ago, so either one bounce is out or it isn't."  
+"That was different, because Maddie kind of scoops it instead of catching it flat, so it's basically a whole other move."  
+"How was it different, though, when you both caught it after one bounce, and that's the whole rule, so it shouldn't matter how your hand does it?"  
+"It just was," Kayleigh says, and throws the ball before Chloe can say anything else.  
 Chloe plays four more rounds, quieter each time, then stands by the door with her arms crossed until the whistle, working out that the rule she was arguing for is one you have to be four girls to enforce.  
 \---  
 In October, Peanut climbs the bars of his cage toward the clip lamp, with Chloe's chin on her folded arms close enough to smell the wood chips under the heat.  
 He gives it up halfway most days, but this time he goes higher than Chloe has ever seen him go, until his back feet come off the bars, swing free, then drop him into the chips.  
 The class laughs while Peanut sits where he landed and washes his face, unbothered.  
-Chloe, who read a book about Icarus at the library two weeks ago, has the comparison ready before the laughter is finished.  
+Chloe read a book about Icarus at the library two weeks ago and has not quite put it down since.  
 "He's Icarus, he had wings made out of feathers and wax, and his dad told him not to fly too high because the sun would melt it, and he went up anyway, and that's Peanut, right there, his wings just came apart."  
-A chair squeaks behind her while Peanut keeps washing his face. She decides the room failed to hear her, which is the most generous explanation available.  
+A chair squeaks behind her while Peanut keeps washing his face, so they must not have heard her.  
 "He flew too close to the sun," she says, louder, "and now he's in the wood chips, same as the actual Icarus, except Icarus only had the ocean, so it was worse for him."  
 Kayleigh Burns turns around in her seat and looks at her.  
 "You talk weird," she says, the way you would report the weather, turning back before Chloe has worked out whether an answer is expected.  
@@ -66,7 +73,7 @@ The board still has yesterday's spelling list chalked half erased in the corner 
 Clouds are the ocean going somewhere else, and the whole sentence is in her mouth with her hand up, until she looks at the back of Kayleigh Burns's head and takes the entire thing down to one word.  
 "Water," she says, and Mrs. Aldana says good and moves on to the next thing on the board.  
 The exchange is over inside four seconds, and in December, called on for the water cycle, she gives the arrows back in the right order, evaporation and condensation and precipitation, and hears Mrs. Aldana say exactly.  
-The short version works every time, which is the discovery, and its cost is that the whole answer is still in there and has to be held back on purpose, every single time.  
+The short version works every time she uses it, and the whole answer is still in there, so she has to hold it back on purpose, every single time.  
 On Fridays, Mrs. Aldana reads the best paper out loud while keeping back whose it is, and in November it is Chloe's, six sentences about a dog with a missing leg that ran anyway, after which the room goes quiet.  
 In December the assignment is four to six sentences about anything, so she writes four, about a boat, and the paper read out is Maddie's, which everybody guesses correctly.  
 \---  
@@ -91,6 +98,8 @@ The doctor looks in her ears and down her throat, then has her follow his finger
 Then her mom says she has been having a hard time at school. He rolls his chair around to face Chloe instead of the computer.  
 "Do you get in trouble at school?"  
 "Sometimes, not really on purpose." He waits, which is new, because the adults she is used to fill the gap themselves, so she adds, "Not a lot, like once a week, for not paying attention."  
+"Do you finish your work?"  
+"Sometimes, if it's something I haven't already done, because if I already know how it works, doing it thirty more times just proves the same thing again."  
 "Do you know what the teacher's talking about, when she calls on you?"  
 Chloe turns that one over while he waits, because the real answer has two halves and the question was built to hold one.  
 She knows what the teacher is talking about almost all of the time, and separately from that she is sometimes entirely somewhere else while a question goes by, and she picks the shorter word anyway.  
@@ -103,7 +112,19 @@ On the way out, the receptionist lets Chloe pick a sticker, which takes a long t
 \---  
 Christmas is at her grandmother's, where there are eleven people in the house and Chloe knows every one of them, collecting a sweater, a set of markers, three books, saying thank you each time unprompted.  
 Her grandmother says well, somebody got grown up this year, so Chloe reads one of the books in the chair by the tree until it is time to eat, then puts it face down on the arm to keep the page.  
+Her cousin Dana, who is nineteen, sits next to her and asks how school is.  
+"It's good," Chloe says, then can't help adding, "we're doing the water cycle, and I already knew clouds are the ocean going somewhere else, and there's a boy in my class who's on chapter four of the sled dog book, and I already finished the whole thing, on the bathroom floor, because I had to know if the dog lived."  
+"Do you have a favorite subject?"  
+"Reading, though it's not really a subject, because you just do it on your own, so I'm not sure it counts the same as the other ones."  
+"Yeah? Me too, when I was little. Did you do the horse ones?"  
+"Some of them, I liked the one where the horse gets sold twice and has a bad owner in the middle part, but the library only gives you four at a time and the horse ones are all shelved in the same spot, so I run out fast."  
+Dana says nice, then turns to talk to somebody else, which is the whole conversation.  
 The chair is too big for her at the grown-up table, so her heels swing free while she eats her potatoes and her dad, down at the far end, keeps his attention on his plate.  
+On the way home Chloe has her head against the cold part of the window with her eyes shut and her breathing kept deliberately even, so that the conversation in the front seat goes on over the top of her.  
+"She was quiet tonight," her dad says.  
+"She was fine," her mom says.  
+"I didn't say she wasn't fine."  
+Chloe presses closer to the cold glass and keeps her eyes shut for the rest of the drive.  
 \---  
 In January they read a book about a boy and a sled dog out loud, going around the room, with the radiator ticking through the whole first chapter.  
 Chloe had read the whole thing on Tuesday, finishing it on the bathroom floor, because waiting until after dinner to find out whether the dog lived was beyond her.  
@@ -117,13 +138,15 @@ Then Aiden keeps going for the remainder of the period, while Chloe sits with he
 She gets in trouble for reading, in reading.  
 That night at dinner she tells them, and it takes about a minute and a half.  
 "She took your book," her dad says, and Chloe says until the end of the day, but by then everybody had moved on to worksheets, so having it back barely helped.  
+"Was anybody else reading ahead?"  
+"Probably not, because they're still on chapter four, and if somebody else was ahead she'd have taken their book as well, but she only took mine."  
 "Well, that's the class, though, because they all read it together at the same pace, so everybody gets to the end on the same day."  
 "I know, that's what she said, but I already finished the whole book on Tuesday, so waiting for everybody else to get to chapter four just feels like the whole week standing still."  
 Her mom says she probably just wants everybody on the same page, literally, then laughs at her own joke, and Chloe laughs too, because it's her mom, while her dad does the noise he does instead of laughing.  
 Then the corner of her mom's mouth drops and stays down, so that she gets up to start the dishes about ten minutes before anybody at the table has finished eating.  
 \---  
 School is boring for everybody, obviously, because there is one room and one worksheet for all of them, but the other children sit through it fine while Chloe is the one who cannot.  
-A day with a parking lot to watch, an Icarus to say out loud and a book taken off her in reading adds up to the conclusion that she is worse at the plain ordinary part everybody has to do, and the only fix is getting better at sitting there, the way some people can hold their breath a long time and some people cannot.  
+Her day comes with a parking lot to watch, an Icarus to say out loud and a book taken off her in reading, and she is worse at the plain ordinary part everybody has to do, so the only fix is getting better at sitting there, the way some people can hold their breath a long time and some people cannot.  
 So in January she decides to get good at sitting there, and by February she can make a worksheet last nearly to the end by holding the pencil over the page and moving it every so often.  
 The library book stays in her desk, where she touches its corner four or five times a day but has stopped taking it out.  
 \---  

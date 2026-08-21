@@ -79,7 +79,7 @@ His office is on the fourth floor, narrow, with a window stuck a half-inch open 
 He loses the thread of it, says so, and asks her to start again from the top.
 
 
-She starts again from the top, the way she would for anyone. Step one, step two — and at step three he stops her again, admits he's still lost, and asks whether she'd mind slowing down further than that. She slows down. She takes the assumption she'd folded into a single line and splits it into the two separate claims underneath. She states each on its own and watches him nod at the first and hesitate at the second. It's the second one, she realizes watching him hesitate, that she has always kept private, checked only against her own head, where it always came out fine.
+She starts again from the top, the way she would for anyone. Step one, step two, and at step three he stops her again, admits he's still lost, and asks whether she'd mind slowing down further than that. She slows down. She takes the assumption she'd folded into a single line and splits it into the two separate claims underneath. She states each on its own and watches him nod at the first and hesitate at the second. It's the second one, she realizes watching him hesitate, that she has always kept private, checked only against her own head, where it always came out fine.
 
 
 He gets there eventually, the whole way through, and tells her the result holds. He also tells her, setting his pen down, that it took her four tries to explain something most of his graduate students would get in two. He says it as an observation rather than a complaint, already moving on to the next question on his list. Ruth thanks him, packs the two loose pages into her folder in the wrong order, and leaves before office hours are officially over.

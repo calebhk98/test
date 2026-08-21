@@ -146,7 +146,7 @@ So is the third, except that Mrs. Prahl puts them in pairs for a game with the d
 
 On the fourth Thursday there's a new packet, which Chloe takes home and finishes in about half an hour and keeps to herself, so that it sits in the bottom of her bag all week under the folder for reading, and when Mrs. Prahl asks the following Thursday how she got on with it, Chloe says she's still working on it, and Mrs. Prahl says that's absolutely fine, take your time.
 
-She can't work out what's wrong with it, because it's faster than her class, everybody keeps telling her it's the fast one, Mrs. Prahl is nice to her every single week, and there are nine of them in that room instead of twenty-six. She wants to say that this is the wrong shape, out loud, to Mrs. Prahl, on a Thursday, in front of the other eight, but the rest of the sentence stays stuck behind that one, and she is fairly sure the first half already sounds like she thinks she's better than everybody, a thing she has learned to keep to herself.
+She can't work out what's wrong with it, because it's faster than her class, everybody keeps telling her it's the fast one, Mrs. Prahl is nice to her every single week, and there are nine of them in that room instead of twenty-six. She wants to say that this is the wrong thing, out loud, to Mrs. Prahl, on a Thursday, in front of the other eight, but the rest of the sentence stays stuck behind that one, and she is fairly sure the first half already sounds like she thinks she's better than everybody, a thing she has learned to keep to herself.
 
 In December her mom comes up and sits down on the end of her bed, at half past four in the afternoon, with the light off and Chloe lying on top of the covers with her shoes still on.
 

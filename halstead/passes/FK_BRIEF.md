@@ -1,3 +1,7 @@
+> Read `passes/HOUSE_RULES.md` first. Its constraints outrank every
+> target in this brief, including the reading-grade bands, which have
+> replaced the single Flesch-Kincaid 9.0 figure used below.
+
 # Getting to Flesch-Kincaid 9
 
 ## Where the book actually is

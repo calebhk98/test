@@ -43,8 +43,31 @@ HERE = Path(__file__).resolve().parent
 CHAPTERS = sorted((HERE / "chapters").glob("*.md"))
 BOOK = HERE / "HALSTEAD.md"
 
-FK_TARGET = 9.0
 LEXILE_TARGET = 1000
+
+# The reading grade rises with Chloe's age instead of sitting flat across the
+# book. Each band is (first chapter, last chapter, floor, ceiling-of-intent).
+# The floor is what the band should reach; the second number is where the band
+# stops being worth pushing. A chapter already above its band is left alone.
+FK_BANDS = [
+    (1, 10, 5.5, 7.0),   # ages 6-8, home and the first year
+    (11, 15, 6.0, 7.0),  # ages 8-12
+    (16, 22, 7.0, 8.0),  # ages 13-19
+    (23, 35, 8.0, 99.0),  # adult
+]
+FK_BOOK_TARGET = 7.0
+
+
+def fk_band(stem):
+    """The (floor, ceiling) this chapter's number is judged against."""
+    try:
+        n = int(stem[:2])
+    except ValueError:
+        return None
+    for lo, hi, floor, ceil in FK_BANDS:
+        if lo <= n <= hi:
+            return floor, ceil
+    return None
 
 
 def load(name):
@@ -75,8 +98,8 @@ def rule(title):
 # metric -> (label, goal, comparison, source of the goal)
 #   ">=" pass at or above, "<=" pass at or below, "~" pass within the band
 GOALS = [
-    ("_words",   "word count",                   (2000, 3400), "~",  "author"),
-    ("fk",       "reading grade (Flesch-Kincaid)", 9.0,        ">=", "author"),
+    ("_words",   "word count",                   (2000, 4000), "~",  "author"),
+    ("fk",       "reading grade (Flesch-Kincaid)", 9.0,        ">=", "author, see band"),
     ("lexile",   "Lexile (approx)",               1000,        ">=", "author"),
     ("ari",      "reading grade (ARI)",           9.0,         ">=", "author, tracks F-K"),
     ("wps",      "words per sentence",            14.3,        ">=", "corpus median"),
@@ -152,8 +175,11 @@ def one_chapter(path):
     print(f"  {'metric':<40}{'value':>9}{'goal':>14}  {'':<6}{'goal from'}")
     print("  " + "-" * 84)
 
+    band = fk_band(name)
     failed = []
     for key, label, goal, cmp_, src in GOALS:
+        if band and key in ("fk", "ari"):
+            goal, src = band[0], f"band {band[0]:g}-{band[1]:g} for this chapter"
         v = m.get(key)
         if v is None:
             print(f"  {label:<40}{'-':>9}{'':>14}  {'':<6}{src}")
@@ -189,6 +215,10 @@ def one_chapter(path):
             print("     quiet has usually narrated its dialogue instead of writing it; check")
             print("     the narration for 'he tells her', 'she asks him whether', and the like.")
     print("  " + "-" * 84)
+    if band:
+        print(f"\n  Reading grade is judged against this chapter's band, not one")
+        print(f"  book-wide number: floor {band[0]:g}, and past {band[1]:g} it stops being")
+        print(f"  worth pushing. A chapter already above its band is left alone.")
     print("\n  %d of %d at goal." % (len(GOALS) - len(failed), len(GOALS)))
     if failed:
         print("  short on: " + ", ".join(failed))
@@ -203,9 +233,9 @@ def table():
 
 
 def targets():
-    """Distance to the author's targets, per chapter and for the book."""
+    """Distance to the author's targets, per band and for the book."""
     pg = load("prose_grade.py")
-    rule(f"2. AGAINST TARGET (Flesch-Kincaid {FK_TARGET}, Lexile {LEXILE_TARGET})")
+    rule("2. AGAINST TARGET (reading grade by band, Lexile %d)" % LEXILE_TARGET)
 
     rows = []
     for p in CHAPTERS:
@@ -214,22 +244,31 @@ def targets():
             rows.append((p.stem, m["fk"], m["lexile"]))
     whole = pg.measure(BOOK.read_text(encoding="utf-8"))
 
-    under = [r for r in rows if r[1] < FK_TARGET - 1]
     print(f"\n  book       F-K {whole['fk']:5.1f}   Lexile {whole['lexile']:7.1f}")
-    print(f"  target     F-K {FK_TARGET:5.1f}   Lexile {LEXILE_TARGET:7.1f}")
-    print(f"  gap        F-K {whole['fk'] - FK_TARGET:+5.1f}   "
+    print(f"  target     F-K {FK_BOOK_TARGET:5.1f}   Lexile {LEXILE_TARGET:7.1f}")
+    print(f"  gap        F-K {whole['fk'] - FK_BOOK_TARGET:+5.1f}   "
           f"Lexile {whole['lexile'] - LEXILE_TARGET:+7.1f}")
 
-    print(f"\n  {len(under)} of {len(rows)} chapters are more than a grade under "
-          f"the Flesch-Kincaid target:\n")
-    for name, fk, lx in sorted(under, key=lambda r: r[1]):
-        bar = "#" * int(round((FK_TARGET - fk) * 4))
-        print(f"    {name:<24}{fk:5.1f}  {lx:7.1f}  {bar}")
-    print("\n  Flesch-Kincaid counts syllables per word; Lexile counts how common the")
-    print("  words are. This book writes fairly long sentences out of short, ordinary")
-    print("  words, so it scores far better on Lexile than on Flesch-Kincaid. Closing")
-    print("  the Flesch-Kincaid gap means longer words, and in the early chapters that")
-    print("  costs the child narrator. Weigh it per chapter, not book-wide.")
+    print("\n  The reading grade is meant to climb with Chloe's age rather than sit")
+    print("  flat, so each band is judged on its own average, not against one number.\n")
+    print(f"  {'band':<12}{'chapters':<12}{'floor':>7}{'average':>9}{'':>3}{'under floor'}")
+    print("  " + "-" * 62)
+
+    for lo, hi, floor, ceil in FK_BANDS:
+        got = [r for r in rows if lo <= int(r[0][:2]) <= hi]
+        if not got:
+            continue
+        avg = sum(r[1] for r in got) / len(got)
+        low = sorted((r for r in got if r[1] < floor), key=lambda r: r[1])
+        mark = "" if avg >= floor else "  <-- band under floor"
+        names = ", ".join(f"{r[0][:2]} ({r[1]:.1f})" for r in low) or "none"
+        print(f"  {str(lo) + '-' + str(hi):<12}{len(got):<12}{floor:>7.1f}{avg:>9.2f}{mark}")
+        print(f"  {'':<12}{'':<12}{'':>7}{'':>9}   {names}")
+
+    print("\n  A chapter already above its band is left where it is. The bands are")
+    print("  floors for the band average, not per-chapter quotas, and a chapter with")
+    print("  a structural reason to sit low (chapter 20's protected fight holds 57%")
+    print("  of its sentences) is allowed to.")
 
 
 def grade_vs_corpus():

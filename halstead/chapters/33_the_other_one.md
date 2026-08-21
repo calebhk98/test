@@ -5,7 +5,7 @@
 Eli proposes the second worm and Theo says no for nine days.
 
 
-He sends it the way he sends anything he's actually thought through: not a chat message but a document, twelve pages, at two in the morning, at the kitchen table in the apartment three states from where he grew up. He sends it to six people instead of one, on purpose, because a plan this size only holds together if all seven of them read the same twelve pages instead of six different memories of them later. It reads like a plan because it is one — access path, timeline, what gets touched and what gets left exactly where it was — and it closes on the same idea the financial worm's whole design leaned on six months earlier, that boring beats clever every time somebody's watching for clever.
+He sends it the way he sends anything he's actually thought through: not a chat message but a document, twelve pages, at two in the morning, at the kitchen table in the apartment three states from where he grew up. He sends it to six people instead of one, on purpose, because a plan this size only holds together if all seven of them read the same twelve pages instead of six different memories of them later. It reads like a plan because it is one, with an access path, a timeline, what gets touched and what gets left exactly where it was, and it closes on the same idea the financial worm's whole design leaned on six months earlier, that boring beats clever every time somebody's watching for clever.
 
 
 The target is the unit Theo already told them exists, the one that's kept a file on the school for nineteen years and been wrong about who runs it twice. Getting past its security once is a solvable problem. Getting past it and leaving the file looking exactly as it did before, with every trace of them erased, is the harder one, and the twelve pages are mostly about the second problem, not the first.
@@ -114,10 +114,10 @@ ________________
 
 
 
-Theo could have written cleaner rules than anyone else at that table — it is, more or less, his actual job. He says so once, and says in the same breath that his name needs to stay off any document that describes how to break the law he's paid to uphold. So it goes to Chloe.
+Theo could have written cleaner rules than anyone else at that table, since it is, more or less, his actual job. He says so once, and says in the same breath that his name needs to stay off any document that describes how to break the law he's paid to uphold. So it goes to Chloe.
 
 
-Eli builds the entry itself, the same way he built the first one, in small pieces that look unremarkable on their own. Kavi builds the exit — what erases the traces of the entry as it happens, not after, because after is too late if anyone's actually watching — and for the better part of a week neither of them calls it anything but "the plumbing" in the group chat.
+Eli builds the entry itself, the same way he built the first one, in small pieces that look unremarkable on their own. Kavi builds the exit, meaning whatever erases the traces of the entry as it happens, not after, because after is too late if anyone's actually watching, and for the better part of a week neither of them calls it anything but "the plumbing" in the group chat.
 
 
 The test runs five weeks. For most of them the tool sits somewhere only Eli and Kavi can see, watching itself work: how long a query takes, whether anything logs it, whether the shape of its own traffic looks like the ordinary noise around it. Kavi's watcher runs the whole time too, watching the watcher, the same doubled caution that caught the sensor gap years ago. Twice a week Eli posts one line to the group, clean or some technical variant of clean, and twice a week that's the whole of it.
@@ -135,7 +135,7 @@ Chloe spends most of the five weeks at her own kitchen counter, most nights, the
 The first page is the shortest to write and the one she's surest of: it limits the tool to the target list alone, sets everything it touches back exactly the way it found it, and closes the window the moment the window's job is done. It reads like a checklist because that's what it needs to be, not because it's the least important page.
 
 
-The middle section is the one she rewrites three times. "Noticed" has to mean a specific, confirmable event — a name gets called, an account gets frozen, somebody shows up at a door. A blip that looks wrong for a minute and settles again stays outside that definition, on purpose. She writes the line twice, in two different sets of words, because she already knows which of the seven is going to be the one squinting at an ordinary blip at two in the morning someday, wondering if it's the first real one.
+The middle section is the one she rewrites three times. "Noticed" has to mean a specific, confirmable event: a name gets called, an account gets frozen, somebody shows up at a door. A blip that looks wrong for a minute and settles again stays outside that definition, on purpose. She writes the line twice, in two different sets of words, because she already knows which of the seven is going to be the one squinting at an ordinary blip at two in the morning someday, wondering if it's the first real one.
 
 
 The stop clause gets exactly one line and no examples, on purpose. Any one of the seven can end it, and the ending starts the moment it's invoked: no vote, no reason attached. Ruth argues once for adding a requirement to state a reason first, and loses the argument to Nadia, whose whole case is proportion: a person gets to act on being scared enough to stop without first building a case for it, because building the case is exactly the delay the clause exists to remove.

@@ -11,7 +11,7 @@ Eli is at the second desk in the corner of the apartment when it happens, the on
 A check-in doesn't arrive. Nine minutes later, everything is precisely where it should be. Same state, same position, exactly as it was.
 
 
-He treats the gap as an open question rather than a verdict. Nine minutes is long enough to matter and short enough that a dozen ordinary explanations could still cover it, and he wants at least one of them ruled out before he says a word to anyone. He opens three logs instead of one — the process's own record, the host underneath it, and the outbound trace Kavi built to sit beneath both, each blind to the other's existence. Because a single log is a story somebody wrote, three logs that agree on the same story read closer to a fact.
+He treats the gap as an open question rather than a verdict. Nine minutes is long enough to matter and short enough that a dozen ordinary explanations could still cover it, and he wants at least one of them ruled out before he says a word to anyone. He opens three logs instead of one: the process's own record, the host underneath it, and the outbound trace Kavi built to sit beneath both, each blind to the other's existence. Because a single log is a story somebody wrote, three logs that agree on the same story read closer to a fact.
 
 
 Eli pulls the logs. No error, no restart, no gap. There is no nine minutes anywhere in them, and the process reports itself running the whole time.

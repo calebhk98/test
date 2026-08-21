@@ -4,7 +4,7 @@
 
 Everything here moves at the speed of whoever finishes first, and in the first week that person is Ruth.  
 When Chloe finishes a page and looks up, three people are already working down the next one, and by the time she catches them Ruth is two ahead again. The next thing arrives the moment the last one is done, all morning and all afternoon, so that Tuesday goes past without one of the empty stretches she had budgeted for, the kind she used to spend with a paperback wedged into her desk, its corner against her palm. By Wednesday she has stopped putting her hand in to check it is still there, and by Friday she has left it behind in the room.  
-She had expected the speed to feel like a punishment, and it feels instead like being let out, though the pleasure arrives with a habit attached: she cannot stop checking where everybody else has got to on the page.  
+She had expected the speed to feel like a punishment, and it feels instead like being let out, though she cannot stop checking where everybody else has got to on the page.  
 Writing has always been the slow part, ever since a room with a small table, a page of symbols to be copied one after another, and a man who held the timer where she could watch it move. Here the timer belongs to everybody: fifteen minutes on the board, and beside it a question that today asks what the man in the story believes at the beginning and stops believing by the end, where in the chapter that change happens, and how a reader is to know. She had read that chapter twice before the lesson, along with the two after it, and all three together had taken about as long as the fifteen minutes she now has to answer in.  
 Chloe writes six sentences, reads them back twice, and leaves every word standing where she put it, which gets her to the where and the how-you-know with ninety seconds to spare. The same fifteen minutes produce a page and a half from Ruth, most of a page from Kavi, who is still going when the teacher calls time and who finishes the clause he is inside before setting his pen down square to the paper, and two sentences from Owen at the end of the row, with a line drawn through one of them.  
 "You can keep going if you're mid-sentence," the teacher says, "but not if you're mid-paragraph."  
@@ -21,7 +21,7 @@ On the Thursday every table gets the same materials: a bundle of dowels, a spool
 "Flat and wide is a square, and a square folds, you just watched it fold."  
 "Go and do your own one, then, if you're so sure about it."  
 Ruth goes and does her own, and Chloe watches her the whole way back to the next table, still working out at her own speed whether a diagonal is the entire argument Ruth thinks it is, so that by the time she has the answer Sam has laid a bead of glue along the first joint.  
-Their bridge takes an hour and forty minutes and comes out flat, wide, and neat at every joint, which is more than can be said for Ruth's, though two tables, one of them Owen's, are still short of the eighteen inches when the session ends, so Mr. Doyle tells them to leave the structure standing and come back to it on Tuesday.  
+Their bridge takes an hour and forty minutes and comes out flat, wide, and neat at every joint, better looking than Ruth's, though two tables, one of them Owen's, are still short of the eighteen inches when the session ends, so Mr. Doyle tells them to leave the structure standing and come back to it on Tuesday.  
 Before anything gets loaded, every group has to write down a prediction, in pounds, of what its bridge will hold: Chloe writes fourteen; Sam wants a hundred, is told the number has to be one he believes, and writes twenty-five; Ruth writes hers with one hand curled around the edge of the paper.  
 On the Tuesday a bucket hangs from the middle of each bridge and the weights go in a pound at a time, the whole room counting out loud together. The first bridge goes at three, which gets a laugh out of the group it belongs to, and two more come apart before eight. Theirs holds to eleven and then folds sideways, all at once, exactly the way Ruth's square went over under one finger, rather than snapping, and all three of them are down after the pieces while the bucket still swings. Sam says eleven out loud twice, then that he would have written a lower number if anybody had let him, and across the room Ruth's takes nineteen pounds and does snap, in the middle of the diagonal, which half the room makes a noise about.  
 "I told you," Ruth says, to the room rather than to anyone in it. "Triangles hold and squares fold, that's the whole of it, and the one you built was a square."  
@@ -64,7 +64,7 @@ Owen leaves in week two, and the way Chloe finds out is that he is in her hall o
 "He went home, his mom came and got him yesterday, before dinner," Sam says from the doorway, already moving through it.  
 "Why? Why would anybody leave in the middle of it?"  
 "He wasn't having fun, and that's the whole reason, they'll let you go home for that."  
-Chloe waits for the rest of it, giving him the beat a person takes before the part that explains the first part, and by the end of the beat Sam has gone back to the wrapper on something.  
+Chloe waits for the rest of it, giving him a beat to add to it, and by the end of the beat Sam has gone back to the wrapper on something.  
 "What do you mean he wasn't having fun, what does that even mean?"  
 "He said it flat out, that he wasn't having fun, so he left, and that's the whole story."  
 "But it is fun, all of it, every single part I can think of."  
@@ -104,4 +104,4 @@ Ruth opens her mouth, closes it, opens it a second time, and Sam points at her w
 "It's what a mouth is for, lying included, whether you like it or not."  
 They go at it for the rest of dinner and most of the walk back across the grass, Ruth saying tidally locked four more times and Kavi still arguing that the moon is doing it deliberately, in a voice gone flat mostly because Sam keeps saying stuck.  
 Ten minutes into the walk back it catches up with her: Kavi, the moon, her own mouth already moving ahead of the check she has run on every sentence since November.  
-She goes looking for the damage anyway, out of habit, the way she would have all through first grade, and the sentence comes back clean, as do the next nine after it.
+She goes looking for the damage anyway, out of habit, and the sentence comes back clean, as do the next nine after it.

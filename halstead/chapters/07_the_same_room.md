@@ -112,7 +112,7 @@ The first mathematics sheet comes around at twenty past nine, and she has to squ
 
 Fractions at camp, staying up until the number finally sat still on the page, and now this, arithmetic from last year again. Having done all thirty she goes back to the top and checks each one over, and every answer matches what she wrote the first time, so she puts her hands in her lap and waits for the room to catch up around her.
 
-It works on the first day of second grade exactly the way it worked in April, which is to say the arithmetic is finished by twenty-five past and the remaining thirty-five minutes belong to whoever can invent something to do with them.
+It works on the first day of second grade exactly the way it worked in April.
 
 ---
 
@@ -144,7 +144,7 @@ Her hand stays where it is for the rest of the period, and when Ms. Vance calls 
 
 ---
 
-The four books are due on a Thursday and she has finished two of them, the first occasion in two years that a library date has arrived with anything left unread.
+The four books are due on a Thursday and she has finished two of them.
 
 Having taken the third one to bed on the Monday, she gets four pages in, reads the same sentence twice, and starts the page over with no memory of what it said the first time, and on the Tuesday she opens it at the same place, reads the top of the page, reads it again, gives up and puts it down on the floor, and on the Wednesday she leaves it there.
 
@@ -162,7 +162,7 @@ The library card goes in the drawer in the kitchen where the batteries are, and 
 
 ---
 
-By the end of September the asking has organised itself into a routine, several times a day, at the same points in it.
+By the end of September, she is asking several times a day.
 
 She asks at breakfast, standing at the end of the table instead of sitting down to it; she asks in the car on the way to school and again on the way home, working the buckle of the seatbelt with one thumb the whole ride; she asks over her mom's shoulder while she is on the phone, until she gets waved off, and again the second the call ends, before the phone is even back on the counter; she asks with a chore list she has made herself, folded small and left on the pillow; and she asks one more time coming back downstairs in her pajamas, twenty minutes after bedtime.
 
@@ -186,11 +186,11 @@ She goes up, and on the back of a spelling worksheet under her pillow she starts
 
 Her mom starts on the school in the last week of September.
 
-Coming down for water, Chloe gets the end of one of the calls, and her mom is at the counter with her hand flat on it, her voice gone careful and extra polite, the tone she reserves for a conversation whose answer she already knows and has to hear delivered again anyway.
+Coming down for water, Chloe gets the end of one of the calls, and her mom is at the counter with her hand flat on it, her voice gone careful and extra polite, the tone she uses when she already knows the answer and has to hear it again anyway.
 
 "Third grade, okay, so third grade is the floor, whatever the testing comes out at," she says, and listens, the pen tapping twice against the counter. "No, I know what the policy is, you've told me what the policy is, and what I'm asking is whether anybody has ever made an exception to it, for any reason, in any year."
 
-Whatever comes back takes a long time, and Chloe counts the interval in pen taps.
+Whatever comes back takes a long time.
 
 "And the testing window is in the spring, only the spring, with no way around that part of it," she says, writing something down on the back of an envelope. "So we test her in the spring, for a program that starts the following fall, which is over a year from now, and she is in second grade right now."
 

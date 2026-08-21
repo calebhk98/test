@@ -14,13 +14,13 @@ Afterward, Sam catches her at the bottom of the stairwell with his collar open, 
 
 "I gave it four pages."
 
-"Four pages, for the whole question?" His voice actually climbs on it, an event that visits Sam perhaps twice a year and never on purpose. "I wrote the fire from two different angles because I could see it going either way."
+"Four pages, for the whole question?" His voice actually climbs on it, an event visiting Sam perhaps twice a year and never on purpose. "I wrote the fire from two different angles because I could see it going either way."
 
-"It's a contract question about who carries the risk while the goods are sitting in a shed waiting to be collected: there's an answer, and there's why, and once you've said both of those you're just saying them again in nicer sentences with more paper under them." She keeps walking with her bag up on both shoulders, so that the conversation keeps her pace or gives itself up at the end of the corridor. "After that you're padding, and the marker reads four more pages of you agreeing with yourself for no extra credit at all, which is a bad trade for both of you."
+"It's a contract question about who carries the risk while the goods are sitting in a shed waiting to be collected: there's an answer, and there's why, and once you've said both of those you're just saying them again in nicer sentences with more paper under them." She keeps walking with her bag up on both shoulders, so the conversation keeps her pace or gives itself up at the end of the corridor. "After that you're padding, and the marker reads four more pages of you agreeing with yourself for no extra credit at all, which is a bad trade for both of you."
 
 Sam goes quiet the whole length of the corridor, then says he would like to withdraw about seven of his eleven pages.
 
-When the list goes up on the corkboard in the second floor corridor eleven days later, the names run down the left in a bare institutional typeface, followed by a column of numerical marks, a column that says PASS or FAIL, then a column giving the distance of each mark above or below the line, the column everybody actually reads first. Chloe reads her own row twice, once for the verdict and once for the margin.
+When the list goes up on the corkboard in the second floor corridor eleven days later, the names run down the left in a bare institutional typeface, followed by a column of numerical marks, a column marked PASS or FAIL, then a column giving the distance of each mark above or below the line, the column everybody actually reads first. Chloe reads her own row twice, once for the verdict and once for the margin.
 
 "Fail," she says. "By four points, out of two hundred."
 
@@ -30,9 +30,9 @@ Kavi looks at the board, then at her, then back at the board, doing the arithmet
 
 "It's fine, nine is nine and four is four, and saying either number twice just leaves them exactly where they were." She takes the list in one more time, her hands flat and still at her sides, then steps back from the board to let somebody else in.
 
-Fifty-two in the year pass and thirty-nine do not, hers among the thirty-nine, and by dinner those thirty-nine have found each other by sight, because that board hangs in a hall everybody walks past four times a day.
+Fifty-two in the year pass and thirty-nine do not, hers among the thirty-nine, and by dinner those thirty-nine have found each other by sight, because the board hangs in a hall everybody walks past four times a day.
 
-She takes her paper to Amberg two days later, who has the mark scheme out on the desk before she gets the door shut.
+She takes her paper to Amberg two days later, and he has the mark scheme out on the desk before she gets the door shut.
 
 "Question three."
 
@@ -46,7 +46,7 @@ She takes her paper to Amberg two days later, who has the mark scheme out on the
 
 "Whoever marks this already knows all of it, because it's contract law and not a mystery, and there's exactly one rule that could possibly apply to a shed sitting in a yard for two weeks."
 
-"I would like you to sit down while I say the rest of it, because you're going to want to argue before I've finished, and I'd rather you had it all first." Amberg waits until she does, then a moment longer after that, because a person who has just sat down is still arguing for about three seconds. "You wrote that answer for a reader who already has your head, who already knows the rule and where it comes from and why a shed counts and what happens if it burns." He slides the paper across the desk to her, face up and turned the right way round, so that the four blank rows are the first thing she sees. "There was exactly one reader like that in this building in April, and the man marking your paper was somebody else entirely."
+"I would like you to sit down while I say the rest of it, because you're going to want to argue before I've finished, and I'd rather you had it all first." Amberg waits until she does, then a moment longer, because a person only just seated is still arguing for about three seconds. "You wrote that answer for a reader who already has your head, who already knows the rule and where it comes from and why a shed counts and what happens if it burns." He slides the paper across the desk to her, face up and turned the right way round, so the four blank rows are the first thing she sees. "There was exactly one reader like that in this building in April, and the man marking your paper was somebody else entirely."
 
 Chloe reads the four rows twice, then looks up at him and back down at them, as though the rows might have filled themselves in over the interval.
 
@@ -68,7 +68,7 @@ Sam is up in half a second and talks for four minutes without stopping for air, 
 
 She goes back to her chair through two people getting up out of theirs, hands flat and still at her sides the entire way, the posture they have settled into this year in place of whatever they used to do.
 
-She writes her first practice paper in the second week of May, at a table in the library with the mark scheme face down beside her, taking an hour and nine minutes over a page that restates what the shed already made obvious, and she gives it to Kavi to mark, because Kavi marks the way the examiners mark and will decline to be kind about it.
+She writes her first practice paper in the second week of May, at a table in the library with the mark scheme face down beside her, taking an hour and nine minutes over a page restating what the shed already made obvious, and she gives it to Kavi to mark, because Kavi marks the way the examiners mark and will decline to be kind about it.
 
 "Two out of four, and the two you're missing are the two that would have told me you actually understood it." Kavi has the page flat and a pen sideways in his fingers. "You have the rule, and you have where it comes from." He taps the pen twice on the third line. "Then you've written *and so the risk sits with the buyer*, which is your line two in a different hat, and then you've stopped, which means the marker reads a sentence that sounds like new information and finds it's the same thing they already had."
 
@@ -78,9 +78,9 @@ She writes her first practice paper in the second week of May, at a table in the
 
 She writes the shed burning down in four minutes, one paragraph, with a sentence in the middle that makes her jaw set while she is writing it, and Kavi gives her the four. "There it is, that's the whole four marks, right there on the page where somebody can actually see them."
 
-She writes thirty-one of those between May and September, Kavi marking some and Nadia marking some, while she marks the rest herself with her own answer folded under the page; in May she stops early on about half of them, and by August that has come down to one in six, a rate that then settles and declines to improve.
+She writes thirty-one of those between May and September, Kavi marking some and Nadia marking some, while she marks the rest herself with her own answer folded under the page; in May she stops early on about half of them, and by August the rate has come down to one in six and settles there, declining to improve.
 
-The driving instructors that year do precision and competition work outside the school, and they teach by staging emergencies for her to handle, one at a time. She comes into September already able to drive, because her father took her out to a church lot the previous July and meant to be the one who taught her, the school taking delivery of her from there. In October an instructor kills the ignition at sixty, the first she hears of it, and she has to bring the car in on the gearbox alone, aiming for a mark set out on the tarmac; she overshoots it by forty meters. In November another one sabotages the brake pedal to sink under her foot while the car keeps its speed, staged the same way and indistinguishable from a real failure while it is happening, and the answer turns out to be the gearbox, the handbrake, and a great deal more road than she thought she would need. In January they put her on a wet skid pan, and by March she is reversing faster than she and her father between them ever managed in that church lot the July before.
+The driving instructors in her fourth year do precision and competition work outside the school, and they teach by staging emergencies for her to handle, one at a time. She comes into September already able to drive, because her father took her out to a church lot the previous July and meant to be the one teaching her, the school taking delivery of her from there. In October an instructor kills the ignition at sixty, the first she hears of it, and she has to bring the car in on the gearbox alone, aiming for a mark set out on the tarmac; she overshoots it by forty meters. In November another one sabotages the brake pedal to sink under her foot while the car keeps its speed, staged the same way and indistinguishable from a real failure while it is happening, and the answer turns out to be the gearbox, the handbrake, and a great deal more road than she thought she would need. In January they put her on a wet skid pan, and by March she is reversing faster than she and her father between them ever managed in the church lot the July before.
 
 Delacroix runs the handling weeks, talking the entire time she drives, in one flat voice, about his brother-in-law's boat and the state of the tires and whatever else occurs to him.
 
@@ -98,11 +98,11 @@ She sits the bar again in October, the retake for the thirty-nine who failed in 
 
 Question six is a rented forklift, and she has the answer in her second line, then writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. The whole of it takes nineteen minutes, and she reads it back once, leaving every line of it exactly where it is.
 
-She passes by twenty-two, and she reads the number twice before she puts the page away, after which Kavi sends back a string of exclamation points and Sam texts to ask what she got on the forklift question, so she tells him, asks what he got, and goes back to her book.
+She passes by twenty-two, and she reads the number twice before she puts the page away, and then Kavi sends back a string of exclamation points and Sam texts to ask what she got on the forklift question, so she tells him, asks what he got, and goes back to her book.
 
 In November she sits in the library with something else open in front of her, thinking about April instead; it happens again in December, and once more in February, and she still shuts books harder than she means to, though she could not tell anybody why she is doing it.
 
-The forge is Thursdays, and has been since she was twelve, the work down there staying between her and Pruitt, whose entire commentary across four years has come to a handful of sentences.
+The forge is Thursdays, and has been since she was twelve, the work down there staying between her and Pruitt, his entire commentary across four years having come to a handful of sentences.
 
 "You're off early."
 
@@ -114,7 +114,7 @@ She takes the tongs home to the hook on the back of her door, beside the bag she
 
 ---
 
-She comes home in June for ten weeks and sleeps through most of the first one, after which the nights settle at nine hours and she rides out to the reservoir most days, in July finding a road past it that adds eleven miles and a hill she has to stand up on, and four novels go through her hands in a fortnight, of which she could not afterward tell anybody how a single one of them ends. The rest of it is long afternoons on the back steps she and her father built when she was thirteen, with the sun coming round the corner of the garage at about four and a wasp working the same board every day.
+She comes home in June for ten weeks and sleeps through most of the first one, then settles at nine hours a night and rides out to the reservoir most days, in July finding a road past the water good for eleven extra miles and a hill she has to stand up on, with four novels going through her hands in a fortnight, though she could not afterward tell anybody how a single one of them ends. The rest of it is long afternoons on the back steps she and her father built when she was thirteen, with the sun coming round the corner of the garage at about four and a wasp working the same board every day.
 
 Her mother watches that from the kitchen window for two weeks before she comes out.
 
@@ -128,7 +128,7 @@ Her mother watches that from the kitchen window for two weeks before she comes o
 
 "You could." She sits on the step above her for about a minute, watching the same wasp Chloe's been watching, then gets up and goes back inside, leaving the subject closed for now.
 
-Her father asks about Sam instead of about her classes, which is his method of asking about her classes.
+Her father asks about Sam instead of about her classes, his method of asking about her classes.
 
 "He's on forty percent, on the range." Chloe has the glass on the step beside her, sweating a ring into the wood. "He's been on forty since he was fifteen, it's the one number that hasn't moved once in that whole time no matter what he tries, and it slides straight off him like it belongs to somebody else entirely, not to him."
 
@@ -158,4 +158,4 @@ Chloe puts her heels up on the lower step and takes her time with that one.
 
 "Because the boy in the room before her was going to get it otherwise, and she'd rather it went to Nadia than to him, even if that cost her something herself."
 
-Her father asks her what Priya and Nadia are like at a table together now, a question that stops her with the glass halfway up, and she is still answering when the sun goes off the garage roof and her mother turns the porch lamp on from the kitchen switch.
+Her father asks her what Priya and Nadia are like at a table together now, a question stopping her with the glass halfway up, and she is still answering when the sun goes off the garage roof and her mother turns the porch lamp on from the kitchen switch.

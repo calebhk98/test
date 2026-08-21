@@ -1,6 +1,6 @@
 ## Chapter Sixteen: Thirteen
 
-*September 2018 - July 2019*
+*September 2018 – July 2019*
 
 A line appears on her timetable in September, new since June: *Mathematics, 12s, Thursday, room 4\.* Under it sit seven names, and behind them a grade sheet due at the end of the year with hers at the top and theirs down the side.
 

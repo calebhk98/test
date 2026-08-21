@@ -1,6 +1,6 @@
 ## Chapter Eighteen: Fifteen
 
-*September 2020 - July 2021*
+*September 2020 – July 2021*
 
 The whole year is breaking clays at between ninety and a hundred, a spread that holds through September, and then in the first week of October Voss walks them down to a lane new to all of them and shows them the turret.
 

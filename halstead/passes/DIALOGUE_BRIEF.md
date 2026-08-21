@@ -1,3 +1,7 @@
+> Read `passes/HOUSE_RULES.md` first. Its constraints outrank every
+> target in this brief, including the reading-grade bands, which have
+> replaced the single Flesch-Kincaid 9.0 figure used below.
+
 # Dialogue brief — the whole book
 
 The measurement, before anything else. This manuscript's spoken sentences average **9.4 words**.

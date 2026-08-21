@@ -2,7 +2,7 @@
 
 *August 2012*
 
-The parent hotel has a breakfast room with waffles on paper plates, and every morning there are eight or nine adults in it who all know each other by now, and on the last Wednesday Chloe climbs onto the chair beside her dad on her knees, gets syrup on two fingers before the plate is in front of her, and eats, while under the table her sneaker keeps catching the chair leg, a small percussion swallowed by the adults arguing over her head.  
+The parent hotel has a breakfast room with waffles on paper plates, and every morning there are eight or nine adults in it who all know each other by now, and on the last Wednesday Chloe climbs onto the chair beside her dad on her knees, gets syrup on two fingers before the plate is in front of her, and eats, while under the table her sneaker keeps catching the chair leg, a small percussion swallowed by the adults talking over her head.  
 "We drove it, both ways, because there was no version of this where we put her on a bus," a man says, on his feet with a paper plate in one hand.  
 "Every one of us drove, and the letter offered a bus."  
 "Somebody must have taken it, because a letter that lists transportation has somebody in mind."  
@@ -13,14 +13,14 @@ The parent hotel has a breakfast room with waffles on paper plates, and every mo
 "We thought worse than that, and I'll say it out loud: I told Dave I was keeping her home from any building I had yet to lay eyes on, whatever the letter said, and then we came, and it's a school, and there's a nurse, and it's fine, and I still -"  
 "Right."  
 "- I still don't know what it is."  
-Chloe's dad has been quiet through all of it, cutting his waffle into squares and stacking them at the side of the plate, which is what he does with a question he intends to ask properly.  
+Chloe's dad has been quiet through all of it, cutting his waffle into squares and stacking them at the side of the plate.  
 "Were any of you told where they got the name from, in the first place?"  
 Three or four of them answer at once, with the same answer: "They said they have a list."  
 "We got the list, and then a paragraph on how the list is compiled, which explained the paragraph and not the list."  
 "They told us the list is a good list," the woman says, "which leaves the whole question of good at what."  
-"She's top of her reading group at home, which is a sentence that means something there and lands in this room as weather," somebody's mother says to the table generally, finding a spot on the wood instead of anyone's face.  
+"She's top of her reading group at home," somebody's mother says to the table generally, finding a spot on the wood instead of anyone's face.  
 "Here it buys you a paper plate and a seat at this table," the first man says, and gets up on his own to find the coffee pot.  
-While one of the fathers looks at his plate, a man at the end starts talking about the journey back, whether the north side is faster, how it depends on what time you leave, and two people take that up gratefully, because a route is something an adult can be certain about, and by the time somebody's child has come over needing something and been sorted out, three of them have gone.  
+While one of the fathers looks at his plate, a man at the end starts talking about the journey back, whether the north side is faster, how it depends on what time you leave, and two people take that up, and by the time somebody's child has come over needing something and been sorted out, three of them have gone.  
 Her dad puts more syrup on her waffle on his own, more than she'd have asked for, and Chloe eats it anyway while the syrup pools at the edge of the plate.  
 \---  
 On the last night the families eat on campus, at long tables in the dining hall, and her dad asks her what she did all month.  
@@ -28,7 +28,7 @@ Chloe is already talking before she's finished sitting down, one knee still up o
 "Then there's the bridge," she says, lining up the salt, the pepper and a knife to show him the span. "You get dowels and string, you have to cross eighteen inches with them, and then on the Tuesday they hang a bucket off the middle and put weights in a pound at a time until it goes. Ours went at eleven, and Ruth's went at nineteen, because hers was triangles, and a triangle can only fold if something actually breaks, where a square folds right over." Everybody had to write down a prediction, in pounds, before anything got loaded. "I wrote fourteen and was wrong by three, because the corner goes first: every corner of a square carries an angle on its own, and an angle on its own gives way." She presses the pen hard enough to nearly go through the napkin, and explains the corner twice to make sure he has it.  
 "Then the pool, where I can do a whole length now, badly," she says, "and Sam can do two straight through and brings it up at dinner most days."  
 Then dividing fractions, which she does on a napkin with a pen taken off the next table, drawing the rectangles the way Mr. Baptiste drew them and running all the way through to why you turn the second one over, so that the working reaches the edge of the napkin and comes back, while her dad keeps his eyes on the pen.  
-Two tables over, another father is sitting through roughly the same performance, a pen going on a different napkin while his own daughter talks him through her month.  
+Two tables over, another father is sitting through roughly the same thing, a pen going on a different napkin while his own daughter talks him through her month.  
 Then she starts on Spanish, rattling it off before she remembers he can't follow a word of it, asking herself three questions and answering all three before he can stop her.  
 "Say that again in a language I speak," her dad says.  
 "I said what's on the table, and where the bathroom is, and what I did today, and then the one Sam says at breakfast every morning, which turns out to be rude," she says, then goes back through it in order, slower this time, turning each piece into English for him.  
@@ -36,16 +36,16 @@ Then she starts on Spanish, rattling it off before she remembers he can't follow
 "Then there's the signing, which is better than all of it, because you can do it across a whole room with your hands doing the talking and your mouth shut," she says, showing him the fingerspelling alphabet, then his name in it slowly and hers faster. "That one's water, that one's finished, that one's again, and in the library you can ask somebody four tables away whether they have a book, with everybody's mouth shut." She and Ruth did that for a whole afternoon, and the librarian worked out what they were doing and let them keep going anyway.  
 "And there was a puzzle, twenty sentences in a language none of us had ever heard of, and no dictionary, and you had to work out how the entire grammar went from the sentences themselves." By about the sixth sentence she had worked out that the words come in a different order than English does. "Ruth got the plurals before I did, and Kavi got the pattern in the endings, which is still half out of my reach even though he has explained it four separate times, and he'd explain it to you now if he were sitting here instead of me."  
 Then the wood shop, and the safety goggles sized for somebody bigger. Then the eggs she learned to cook, and the dish on the Thursday that the entire table ate, which had onions in it that she cut herself, and then the paintings they were taken to look at, one of which cost more than a house, which baffles her, because it is a painting.  
-Then the computers, which she says are actually two entirely different things, counting them off on her fingers: the first is typing the words in yourself instead of dragging coloured blocks around like it's a game, and she made it count to a hundred and skip every seven on the way past; the second is a room they were taken into, enormous and kept freezing cold on purpose, because the processors throw off enough heat to cook themselves, where a woman who works in there took them through the whole arrangement, down to the water pipes under the floor.  
+"Then there's the computers, and that's actually two entirely different things," she says, counting them off on her fingers, "the first being that you type the words in yourself instead of dragging coloured blocks around like it's a game, and I made it count to a hundred and skip every seven on the way past. The second one is a room they took us into that's enormous and kept freezing cold on purpose, because the machines throw off so much heat the heat would cook them, and a woman who works in there took us through the whole arrangement, down to the water pipes under the floor."  
 Then chess, which Sam is also better at.  
 Then karate, which is mostly learning how to fall over safely.  
 Then the nerf guns at the end, which arrive out of order because she has only just remembered them.  
-Then the wood shop again, and the goggles again, in almost the same sentence as before, and she keeps going straight through the repetition as though it were new.  
+Then the wood shop again, and the goggles again, in almost the same sentence as before, and she keeps going, straight through it.  
 Her plate has gone cold in front of her, barely touched, and she talks the rest of it out with one hand flat on her dad's sleeve.  
 Her dad sets his fork down and laces his fingers on the table in front of him.  
 "How many days is it you've actually been here now?"  
 "Twenty-seven," she says, out before he has finished asking for it.  
-"Twenty-seven," he says again, the way a person repeats a figure to see whether it holds up.  
+"Twenty-seven," he says again, the way you repeat a number to check it the second time.  
 "There's tomorrow as well, which makes twenty-eight, though I'm leaving it out until it happens."  
 He looks past her at the room and the other tables long enough that she turns around to see what he has found, and what he has found is people eating.  
 "Cool," he says.  
@@ -96,7 +96,7 @@ Ruth picks the knot out of one shoelace with both thumbs instead of answering hi
 "So is a letter every week, by about the fourth one, and you already know that about yourself."  
 "It's a completely different thing, Sam, and you know perfectly well that it is."  
 For a second the only sound in the hall is a door somewhere down the next section, clicking shut.  
-Then the arithmetic arrives, unbidden: four hours in the car each way, a whole day of driving to put her somewhere and a whole day to collect her at the end of it, twice over in a year, before anybody counts a visit in between, and her mom at the counter with her hand flat on her forehead, and the woman at the district office telling her to be careful, both turning up in the sum uninvited.  
+Then the arithmetic arrives, unbidden: four hours in the car each way, a whole day of driving to put her somewhere and a whole day to collect her at the end of it, twice over in a year, before anybody counts a visit in between, and her mom at the counter with her hand flat on her forehead, and the woman at the district office telling her to be careful.  
 "Chloe," Sam says, "obviously."  
 "Obviously," she says, and holds on to the pyjama leg until the lights click off and somebody has to find the door by feel.  
 \---  
@@ -107,7 +107,7 @@ When Sam says see you at the thing in the fall, Ruth tells him it's only a form 
 Kavi holds his hand out flat and Chloe puts hers into it, until somebody's mom says it's time, and she keeps her own hand open a beat after his has gone back to his side, then closes it around the strap of her bag.  
 Once the camp gate is behind them, before her eyes close, her mouth moves through the days of the week in Spanish, under her breath, and then again, faster, checking the list against itself.  
 An hour into the drive, with her head against the cold part of the window and her eyes shut, her dad checks the mirror twice before he calls her mom on the car speaker.  
-In the back seat, under the tire noise, Chloe keeps her eyes shut and her breathing slow and even on purpose, because a person who is asleep gets told things.  
+In the back seat, under the tire noise, Chloe keeps her eyes shut and her breathing slow and even, on purpose.  
 "Hey, we're on the road, we just came off the interstate."  
 "How is she doing back there?"  
 "Asleep," he says, and then, after a pause, "She talked at me for twenty minutes straight last night."  

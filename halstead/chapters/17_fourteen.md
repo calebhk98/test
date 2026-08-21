@@ -1,6 +1,6 @@
 ## Chapter Seventeen: Fourteen
 
-*September 2019 - April 2020*
+*September 2019 – April 2020*
 
 Marksmanship replaces archery in September, and Voss gives them three weeks of dry drill before anything gets loaded: nine weapons go on a table and they learn to name every one of them off the silhouette from across the room, then strip and reassemble four of them by feel with a cloth laid over their hands, and then do it that way again while Voss stands behind them reading questions off a clipboard and timing the answers. Chloe fumbles the bolt release for two weeks, until in the third week her hand finds it on its own while she is looking at the far wall, which is the whole reason for the cloth.
 
