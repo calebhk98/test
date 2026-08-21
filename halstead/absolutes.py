@@ -44,21 +44,20 @@ REF = HERE / "absolutes_reference.json"
 # constructions that actually assert a universal.
 ABSOLUTE = re.compile(r"""
     \b(?:
-        never | always | nobody | no\s+one | nothing | not\s+once | not\s+ever
-      | everything | everyone | everybody | none\s+of
-      | without\s+exception | invariably | in\s+every\s+case
-      | every\s+(?:time|single) | each\s+time
-      | the\s+only\s+(?:one|thing|time|person|way)
+        all | always | never | every | everybody | everyone | everything
+      | none | nobody | no\s+one | nothing | not\s+once | not\s+ever
+      | any | anybody | anyone | anything | anywhere | everywhere | nowhere
+      | entire | entirely | completely | totally | absolutely | utterly
+      | whole | forever | invariably | constantly | perfectly
+      | without\s+exception | in\s+every\s+case | each
     )\b
 """, re.I | re.X)
 
-# Dialogue is excluded. People speak in absolutes constantly and it is
-# characterisation, not error: "everyone hates it", "you never listen". The
-# defect is the narrator asserting a universal as fact and the text then
-# supplying a case it does not cover, which is why both of the instances found
-# by hand are narration:
-#     "Nobody has ever sent Chloe anything."
-#     "She tells him everything."
+# Counted in every context, dialogue included, because the word is the thing
+# being counted and not the construction around it. The narration and dialogue
+# splits below are reported separately as well, since a character speaking in
+# absolutes and a narrator asserting them are different problems, but neither
+# split is a filter: the headline figure is every occurrence in the chapter.
 QUOTED = re.compile(r'"[^"]*"')
 
 
@@ -80,14 +79,16 @@ EXCEPTION = re.compile(r"""
 WINDOW = 3   # sentences after the absolute in which an exception counts
 
 
-def measure(text, side="narration"):
+def measure(text, side="all"):
     text, _ = pg.strip_transcript(text)
-    text = denarrate(text) if side == "narration" else " ".join(
-        m.group(0).strip('"') for m in QUOTED.finditer(text))
+    if side == "narration":
+        text = QUOTED.sub(" ", text)
+    elif side == "spoken":
+        text = " ".join(m.group(0).strip('"') for m in QUOTED.finditer(text))
     paras = [p for p in pg.paragraphs(text) if p.strip() != "---"]
     ss = [s for p in paras for s in pg.sents(p) if pg.words(s)]
     if len(ss) < 10:
-        return None if side == "narration" else {
+        return None if side == "all" else {
             "words": len(pg.words(text)), "sentences": len(ss),
             "absolutes": 0, "per1000": 0.0, "share": 0.0,
             "pairs": [], "lines": []}
@@ -122,8 +123,9 @@ def build(dirs):
             if m:
                 out[f.stem] = {k: m[k] for k in ("per1000", "share", "words")}
                 out[f.stem]["pairs"] = len(m["pairs"])
-                sp = measure(t, side="spoken")
-                out[f.stem]["spoken_per1000"] = sp["per1000"] if sp else 0.0
+                for sd in ("narration", "spoken"):
+                    q = measure(t, side=sd)
+                    out[f.stem][sd + "_per1000"] = q["per1000"] if q else 0.0
                 print(f"  {f.stem:<36}{m['per1000']:6.2f} per 1000")
     REF.write_text(json.dumps(out, indent=1, sort_keys=True), encoding="utf-8")
     print(f"\nwrote {len(out)} books to {REF.name}")
@@ -143,8 +145,10 @@ def main():
     if a.list:
         m = measure(Path(a.list).read_text(encoding="utf-8"))
         for line in m["lines"]:
-            print("  " + line.strip()[:300])
-        print(f"\n  {len(m['lines'])} narration absolutes in {Path(a.list).stem}")
+            print("  " + ABSOLUTE.sub(lambda x: x.group(0).upper(),
+                                      line.strip())[:300])
+        print(f"\n  {len(m['lines'])} sentences carry an absolute in "
+              f"{Path(a.list).stem}")
         return
 
     ref = json.loads(REF.read_text()) if REF.exists() else {}
@@ -182,21 +186,22 @@ def main():
               f"high {max(cp):.3f}   per 1000 words")
         print(f"  this book {bp:.3f}")
 
-    sw = sa = 0
-    for p in sorted((HERE / "chapters").glob("*.md")):
-        sp = measure(p.read_text(encoding="utf-8"), side="spoken")
-        if sp:
-            sw += sp["words"]; sa += sp["absolutes"]
-    if sw and ref:
-        srates = sorted(v.get("spoken_per1000", 0) for v in ref.values())
-        srates = [r for r in srates if r]
-        bs = 1000 * sa / sw
-        spct = 100 * sum(1 for r in srates if r < bs) / len(srates)
-        print(f"\n  inside dialogue, where a character asserting a universal is")
-        print(f"  characterisation rather than authorial fact:")
-        print(f"  corpus  low {min(srates):.2f}   median {st.median(srates):.2f}   "
-              f"high {max(srates):.2f}   per 1000 spoken words")
-        print(f"  this book {bs:.2f}, at the {spct:.0f}th percentile")
+    for sd, label in (("narration", "narration only"), ("spoken", "dialogue only")):
+        w = c = 0
+        for p in sorted((HERE / "chapters").glob("*.md")):
+            q = measure(p.read_text(encoding="utf-8"), side=sd)
+            if q:
+                w += q["words"]; c += q["absolutes"]
+        if not (w and ref):
+            continue
+        rs = [v.get(sd + "_per1000", 0) for v in ref.values()]
+        rs = sorted(r for r in rs if r)
+        b = 1000 * c / w
+        pc = 100 * sum(1 for r in rs if r < b) / len(rs)
+        print(f"\n  {label}: this book {b:.2f} per 1000, at the {pc:.0f}th "
+              f"percentile")
+        print(f"  corpus  low {min(rs):.2f}   median {st.median(rs):.2f}   "
+              f"high {max(rs):.2f}")
 
     if a.pairs and all_pairs:
         print(f"\n{'=' * 76}\nEVERY ABSOLUTE WITH AN EXCEPTION BEHIND IT\n{'=' * 76}")
