@@ -1,194 +1,461 @@
 # Theo Langford
 
-A federal analyst who reads for a living and cannot stop himself from following a thread to its true, uncomfortable meaning even when he'd rather not have found it. Raised by two people fifty years older than him, that upbringing is audible in every sentence he builds.
+A reader by trade and by temperament, who cannot stop following a thread to its
+true and uncomfortable meaning even when he would rather not have found it, and
+who was raised by two people fifty years older than him in a way that is
+audible in every sentence he builds.
 
-**Surname:** Langford. The manuscript never gives him one.
-**Age span:** present at Halstead by age 11–12 per his own recollection; every line he speaks is as an adult, and no dialogue is dated to his childhood. | **MBTI:** ISTJ (writing aid, not a claim) | **IQ:** roughly 165–175 by ordinary test norms, well into genius range by any outside measure. Unremarkable at his own school, where nobody around him measures lower.
-**Born:** May 2005, the same age-cohort as Chloe: he "was twelve that year" for the loading-dock intrusion (chapters/29_the_file.md:83), the same year Chloe was twelve too.
-**Appears in:** chapters/13_ten_pages.md (narration only, no dialogue); chapters/23_the_first_one.md (narration), chapters/24_the_chat.md (dialogue), chapters/29_the_file.md (his own chapter); chapters/32_the_money.md, chapters/33_the_other_one.md, chapters/34_the_files.md (narration), chapters/35_nine_minutes.md.
-**Speaks:** 26 lines, all of them as an adult. Zero dialogue anywhere in chapters 1–20 of the manuscript; his only appearance in that entire span is one sentence of narration, chapters/13_ten_pages.md:164.
+**Age span:** 11 or 12 through 21 | **MBTI:** ISTJ (a writing aid, not a claim) | **IQ:** well into genius range by any outside measure, and unremarkable in the only room that has ever measured him
 
-## Voice in one paragraph
+## The thing to get right first: what he does with a thing he cannot say
 
-Theo's turns are the longest and most connected in the cast. Where the chat pushes everyone else toward fragments, his messages run multiple clauses with a qualifier attached to the main claim: "apparently im skipping five or ten steps every time?? i genuinely cannot see where" (chapters/24_the_chat.md:109). He disagrees by objecting formally rather than refusing outright: he puts something "on record" and then goes along with it anyway (chapters/33_the_other_one.md:11). He rarely asks a real question, but when he does it stays open, often as the last line of a thread, unresolved. He never uses a simile, metaphor, or invented image. Most characteristic line: **"nobody repeats any of this. i mean it. this is so far above me that i shouldnt know it, and i only know it because somebody handed the new guy a retirement box"** (chapters/32_the_money.md:114). It runs one long chain of clauses, institutional self-description, and a qualifier on his own right to know something, all in a single turn.
+This is his most portable trait and the one a writer should reach for first. He
+routinely holds information he is not allowed to pass on, and the character is
+in what that does to him, not in the information. Where anything below
+contradicts this section, this wins.
 
-## Dials
+**He keeps it.** Completely, without visible strain, for as long as the
+obligation lasts. It does not leak in a slip, a hint, or a meaningful silence
+aimed at somebody. If he has been told not to repeat a thing, the thing does
+not get repeated, and he will not trade it for standing, sympathy or leverage.
+
+**But it does not sit still in him.** He processes in private and on a delay.
+Given something he cannot say, he goes away with it: closes whatever he is
+looking at, deliberately, with both hands, the way you would close something
+that might spill, and leaves the room for a fixed and slightly too long
+stretch. He comes back with nothing showing. The delay is the whole of what
+anyone else gets to see.
+
+**When he does disclose, the entire chain comes with it.** He will not hand over
+a bare conclusion, because a bare conclusion would leave the listener exactly
+as unable to check his reasoning as he is afraid of being unable to check his
+own. So the disclosure runs long, and the length carries a second message he
+did not intend: it shows how long he sat on it first.
+
+**He gives the rule before the content.** The instruction not to repeat it comes
+first, plainly and once, and he means it. Then he hands over the thing anyway,
+because he has decided they need it. He does not notice that this is an
+enormous amount of trust, or that he has just made his own problem theirs.
+
+**And there is a version he never discloses at all.** Some of what he carries is
+about himself, or about somebody he loves, and that one he simply keeps. Nobody
+learns it. He does not hint, does not brood aloud, does not get asked, and the
+right way to write it is to let it stand there unexplained: the closed thing,
+the twenty minutes outside, and then the rest of the day happening normally.
+Any version where he almost says it, or where a friend gently draws it out, is
+a different man.
+
+**What it costs him:** from the inside he cannot tell the difference between
+discretion and a step he skipped without noticing. Both feel like something he
+is holding that he cannot audit. The fear underneath the whole trait is not
+exposure. It is error.
+
+## How they talk
+
+His turns are the longest and most connected of anyone he talks with. Where the
+conversation around him pushes toward fragments, his run to several clauses
+with a qualifier attached to the main claim.
+
+He hedges visibly and often. The hedge is not weakness, it is an accuracy
+habit: he will not assert a thing at a confidence he has not earned.
+
+He disagrees by objecting formally rather than by refusing, and then goes along
+with it. Dissent registered, then compliance, in that order, every time.
+
+He rarely asks a real question, and when he does it stays open and unresolved,
+often as the last thing said in a conversation. He does not ask rhetorically.
+
+A briefing shape arrives whenever the material is serious: short factual
+clauses in sequence, one fact each, with no transition words joining them.
+
+He opens a serious disclosure with a single throat-clearing word before he will
+commit to specifics.
+
+He never uses a simile, a metaphor or an invented image, and he never makes a
+joke at anybody's expense. His nearest thing to levity is a straight-faced
+defence of himself that other people find funny and he does not.
+
+Small talk is a shade too formal in every language he has, including his own: a
+sentence that is grammatically complete and socially half a beat off. It is the
+register nobody at his table ever used.
+
+Wrong, he goes quiet in the moment and comes back later with the correction
+fully worked out.
+
+### Dials
 
 | | |
 | :-- | :-- |
-| sentence shape | longest in the cast, multi-clause, briefing-shaped, a qualifier attached to the claim |
-| disagrees by | objects procedurally, on record, then complies anyway |
-| wordiness | 10.6 words per message, highest in the cast |
-| terseness | 12% of lines at three words or fewer, the least terse of anyone |
-| at length | disclosing something he found that he knows he shouldn't have. He runs the entire chain out, not just the fact, because a bare fact would leave the listener as unable to audit it as he's afraid of being unable to audit himself |
-| jokiness | low, no joke of his own construction found; his one attempt at levity is straight-faced self-defense, not a joke he initiates |
-| hedging | target 15%+, no longer proposed. His measured dialogue currently sits at 0%, but that's the thinness of a 26-line sample with none of it before adulthood, not a trait — the narration around him already carries the uncertainty (see Known problems #3). New lines should carry a visible qualifier roughly one turn in six. |
-| questions | 4% measured, rare, should stay rare, present and left open rather than rhetorical |
-| figurative | not allowed, no simile, metaphor, or invented image, ever |
+| sentence shape | long, multi-clause, briefing-shaped, a qualifier attached to the claim |
+| disagrees by | objecting procedurally, on record, then complying anyway |
+| length | the longest in any room he is in, and longer again when disclosing |
+| at length | disclosing something he found that he knows he should not have |
+| jokiness | low, and never at anyone's expense; his humour is unintentional |
+| hedging | frequent and sincere, an accuracy habit rather than a nerve |
+| questions | rare, real, open, and usually last |
+| figurative | not allowed, ever |
+| emotional range | narrow in speech, wide in his hands and in how long he leaves a room |
 
 ## When they talk at length
 
-Theo already runs the longest lines in the cast, but there's a further register past his baseline: disclosing something classified he stumbled onto and knows he isn't supposed to have. "nobody repeats any of this. i mean it. this is so far above me that i shouldnt know it, and i only know it because somebody handed the new guy a retirement box" (chapters/32_the_money.md:114). He opens with the same throat-clearing caution elsewhere in the same disclosure, "hypothetically," before he'll commit to specifics (chapters/29_the_file.md:103), and he gives the full chain rather than the bare conclusion every time, because a bare conclusion would leave the group exactly as unable to check his reasoning as he's afraid of being unable to check his own.
+**Disclosing something he found that he knows he should not have.** He gives the
+whole chain rather than the conclusion, opens with the caution before the
+content, and cannot hand any of it over without the length of the account also
+showing how long he sat on it. That is the condition, and it can be met in any
+room where somebody has found something they were not supposed to see.
 
-It costs him the two days of delay underneath the account. He sits with what he's found in private before he tells anyone at all (chapters/29_the_file.md:100), and running the whole chain out when he finally does means the group gets the delay along with the disclosure: he can't hand over what he found without the length of the account also showing how long he sat on it before he did.
+**Explaining a standard, when asked properly.** Ask him how a thing should be
+written, judged or summarised and he has an answer already built, stricter than
+anyone required, and he will run all of it.
 
-## Signature — theirs alone
+The cost of the first is the delay made visible. The cost of the second is
+smaller and stranger: it is the one place he sounds certain, and being heard
+sounding certain worries him afterward.
 
-One word capitalized mid-sentence for stress, inside an otherwise plain, lowercase line.
+## Signature, theirs alone
 
-- Real: "i DID show the reasoning" (chapters/24_the_chat.md:100).
-- Real: "it IS nice. its also insane" (chapters/24_the_chat.md:121).
-
-Both real instances currently sit in the same low-stakes chapter (Ch19). Extend the tic into a higher-pressure scene so it reads as a stable habit rather than a one-chapter accident.
+One word capitalised mid-sentence for stress inside an otherwise plain,
+lowercase line. It is the only emphasis he has, and he reaches for it when he
+is being disbelieved about something he actually did do, or when he is
+conceding a point and taking it back in the same breath. Once in a message,
+never twice, and never in a sentence that is already carrying a hedge.
 
 ## Would they say this?
 
-- YES if the line runs multiple clauses with a qualifier or caveat attached to the main claim, rather than a bare assertion.
-- YES if a disagreement is phrased as a formal objection ("i want it on record that...") that he still goes along with afterward, rather than a refusal that changes what happens next.
-- YES if one single word is capitalized mid-sentence for stress inside an otherwise plain, lowercase line.
-- YES if the line carries a visible hedge word such as "apparently," "i think," "probably," or a qualifying "-ish." This is near-absent in his existing dialogue, a sampling gap rather than a trait; new lines should move toward roughly one in six carrying a hedge.
-- YES if the line asks a real, open, unresolved question, at a rate of roughly one line in twenty-five — rare, and it should not resolve itself in the same breath.
-- YES if the line reads like a briefing: a string of short factual clauses in sequence, each adding one fact, with no transition words joining them.
-- YES if he registers dissent before he complies, in that order, every time.
-- YES if the line checks a fact against its source before repeating it to anyone else.
-- NO if the line is three words or fewer — this happens for him only about 12% of the time, the least of anyone in the cast.
-- NO if the line contains a metaphor, simile, or invented image. Never his, no exceptions.
+- YES if it runs several clauses with a qualifier attached to the main claim
+  rather than being a bare assertion.
+- YES if a disagreement is phrased as a formal objection that he then goes along
+  with, rather than a refusal that changes the outcome.
+- YES if one single word is capitalised mid-sentence inside an otherwise plain
+  lowercase line.
+- YES if it carries a visible hedge word.
+- YES if it asks a real, open, unresolved question that does not answer itself.
+- YES if it reads like a briefing: short factual clauses in sequence, each
+  adding one fact, with nothing joining them.
+- YES if he registers dissent before he complies, in that order.
+- YES if it checks a fact against its source before repeating it to anybody.
+- YES if it states a restriction on the information before stating the
+  information.
+- NO if it is a bare clipped fragment with nothing qualifying it.
+- NO if it contains a metaphor, a simile or an invented image.
 
-## Are they acting like themselves?
+## Under pressure
 
-Processes privately before he speaks. Closes his laptop and goes outside for twenty minutes after finding a note about himself in a classified file (chapters/34_the_files.md:8). Sits with disturbing information for two full days before doing anything about it at all (chapters/29_the_file.md:100). Physical tell under real shock: puts his hand over his mouth and stays like that for a while (chapters/29_the_file.md:92). He occupies a room by asking careful procedural questions rather than making claims in it.
+**Tired**, he gets more formal. The qualifiers multiply and the sentences
+lengthen, as though precision is what he reaches for when he no longer has the
+energy to trust his own judgement.
 
-Failure modes for a rewriter:
-1. Giving him a snap, quotable reaction the instant something happens. His pattern is delay, then a careful, multi-clause statement.
-2. Writing his realization directly into narration instead of as a visible action. "Theo reads it three times, because he remembers it" (chapters/29_the_file.md:31) states his internal cause rather than showing it, a known rule violation in his own chapter (see Known problems).
-3. Making him win an argument or refuse outright. He objects on record and complies, and never blocks what happens in the book.
+**Wrong**, he goes quiet and returns later with it fully worked out. He does not
+argue in real time.
 
-## Subjects and schedule
+**Cornered**, he does not refuse. He states an objection for the record and then
+does the thing, and this is not cowardice: he believes a rule kept on principle
+is worth keeping in the one case where breaking it would not matter, because
+the value of a rule is that he does not get to relitigate it case by case.
 
-Halstead runs the same eight academic hours and two afternoon blocks for everyone from age seven or eight. The language each year, the two rotating academic slots, and both afternoon blocks are individually chosen, so nobody else at the school has Theo's exact schedule.
+**Angry**, he does not raise his voice and does not file anything. He goes
+correct: every contraction drops out of the rest of the exchange without his
+noticing, until the conversation is over.
 
-- **Languages, in order:** Spanish, French, German, Arabic, Pashto, Dari, Somali, Uzbek, Kazakh, Burmese, Tigrinya, one a year on the shared cadence everybody follows from seven or eight. He's known for Pashto and Dari taken together. Nobody asked him to pair them, and that pairing is exactly why a federal agency wanted him: a reader fluent in both halves of a region most analysts only get one language into. Small talk is the register he never bothered polishing. He can hold a fluent political or technical conversation in Pashto or Dari, but a stranger chatting about the weather in any of his eleven languages gets back something a shade too formal: a sentence that's grammatically complete and socially a half-beat off. It's the register nobody at his own table ever used.
-- **Best at:** rhetoric, a subject built around working out who benefits from a claim and what it's actually doing, close to a direct description of his adult job: "reading things and saying what they mean" (chapters/29_the_file.md:5). Choosing Pashto and Dari as a pair, when nobody assigned that pairing, is the same instinct a year earlier: an ear for who isn't being read closely enough by anyone else.
-- **Worst at:** mathematics, specifically the year real analysis takes over and every step of a proof has to be justified in writing rather than simply arrived at. Even at his worst there, he'd be a standout in any ordinary university mathematics department; the gap is only against ninety people just as sharp.
-- **Favourite, and why:** rhetoric, same reasoning as best-at, the only subject that grades him on the thing he's actually good at, reading intent.
-- **The subject nobody else took:** an independent elective, arranged with a rotating-slot teacher, monitoring and translating minority-language radio broadcasts nobody else in the cohort had the languages to bother with. He liked it because nobody was grading the tone, only the accuracy.
-- **The year it clicked:** twelve, the year he added Dari on top of the previous year's Pashto and realized, before anyone told him so, that he was building a matched pair nobody else would think to pair. The value only shows up once you have both halves of a region, not one.
-- **What he teaches the twelves, from thirteen:** how to write a summary of a document that doesn't quietly editorialize, his own rule, stricter than most of the other thirteens bother to be, because a summary that slides in an opinion is the one mistake he can always spot in someone else's writing.
-- **Secretly proud of:** cryptography, taught breaking-first, the one class that rewards arriving at the plaintext without requiring him to narrate every intermediate step, so it's the one place his particular kind of reading gets treated as a strength instead of a problem to explain.
+**In real shock** his hand goes over his mouth and stays there, and it can last
+an uncomfortable length of time.
+
+**Embarrassed**, a small forward tuck of the shoulders arrives mid-sentence, for
+something as small as a mispronounced word, and he talks straight through it
+rather than stopping to explain.
+
+At two in the morning he is still working something over privately, producing
+nothing anyone else will see until he has finished with it.
+
+Three ways a writer gets him wrong: giving him a snap quotable reaction the
+instant something happens, when his pattern is delay and then a careful
+statement; writing his realisation into narration instead of staging it as an
+action; and letting him win an argument or refuse outright, when he objects and
+complies and never blocks anything.
+
+## What he is good at, and what he is not
+
+His schooling gave him a language a year from seven and two afternoon blocks of
+his own choosing.
+
+**Known for:** a pair of languages nobody asked him to pair, chosen because the
+value only appears once you have both halves of a region. That pairing is
+exactly why he was later wanted: a reader fluent in both halves of a place most
+readers only get one language into.
+
+**Best at:** rhetoric, the subject built around working out who benefits from a
+claim and what it is actually doing, which is close to a direct description of
+his adult job.
+
+**Hardest for him:** the year of mathematics where every step of a proof has to
+be justified in writing rather than simply arrived at. Even at his worst there
+he would be a standout in any ordinary university department; the gap is only
+against a room of people just as sharp. It is also the same weakness that
+follows him into work, where somebody keeps sending his reasoning back.
+
+**Favourite:** rhetoric, for the same reason it is his best. It is the one
+subject that grades him on reading intent.
+
+**The thing nobody else took:** an independent elective monitoring and
+translating minority-language broadcasts nobody else had the languages for. He
+liked it because nobody was grading the tone, only the accuracy.
+
+**The year it clicked:** twelve, when he added the second half of the pair and
+worked out, before anyone told him, what he had built.
+
+**What he teaches the twelve-year-olds from thirteen:** how to summarise a
+document without quietly editorialising. His own rule, stricter than anyone
+required, because a summary that slides in an opinion is the one mistake he can
+always spot in somebody else's writing.
+
+**Secretly proud of:** the class taught breaking-first, the one place his kind
+of reading gets treated as a strength rather than as a thing he has to narrate.
 
 ## Home
 
-Theo grew up in a small harbor town on the coast of Maine, the kind that empties out every September when the summer renters leave and doesn't properly fill back in until June. Off-season quiet is the town's default state.
+A small harbour town on a cold coast, the kind that empties in September when
+the summer renters leave and does not properly refill until June. Off-season
+quiet is its default state.
 
-He was raised by his grandparents, both still living, both formal. His parents are alive; his father works in the merchant marine, gone for months at a stretch, and it made sense, without anyone treating it as a loss, for Theo to grow up in one stable house with people who were already there. His grandfather spent thirty years as a customs officer at the town's small port, reading shipping manifests and paperwork for a living, decades of being the person who has to say, precisely, what a document actually claims and whether it's true. His grandmother taught school before she retired, corrected grammar at the dinner table as a matter of course, and insisted every sentence be finished before anyone answered it.
+Raised by his grandparents, both living, both formal. His parents are alive;
+his father works away for months at a stretch, and it made sense, without
+anyone treating it as a loss, for Theo to grow up in the stable house with the
+people who were already in it.
 
-Dinner was formal by habit rather than by occasion. His grandfather says the same four words before every meal, a decades-old routine from his working life at the port, repurposed into a family ritual nobody in the house has ever needed to discuss. Nobody talked over anybody, and nobody left a sentence half-built. He learned, at that table, that a claim gets stated completely, qualified honestly, and not revised later because revising it would be easier.
+His grandfather spent thirty years as a customs officer at the town's small
+port, reading manifests and paperwork for a living: decades of being the person
+who has to say precisely what a document claims and whether it is true. His
+grandmother taught school before she retired, corrected grammar at the table as
+a matter of course, and required every sentence to be finished before anyone
+answered it.
 
-When he goes back, the town is still off-season quiet no matter what month it is by the calendar, and he finds it restful. Nothing there asks him to be vigilant the way his job does, and nobody there has ever needed him to summarize anything.
+Dinner was formal by habit rather than by occasion. His grandfather says the
+same few words before every meal, a routine carried over from working life and
+never discussed by anyone in the house. Nobody talked over anybody and nobody
+left a sentence half-built. He learned there that a claim gets stated
+completely, qualified honestly, and not revised later because revising would be
+easier.
 
-## Body
+When he goes back, the town is off-season quiet whatever the calendar says, and
+he finds it restful. Nothing there asks him to be vigilant and nobody there has
+ever needed him to summarise anything.
 
-Build and posture: tall, stooped, apologises with his shoulders. The specific tell is a small forward tuck of them before he says anything he expects to be an inconvenience for someone else.
+## Body and physical business
 
-Face: reads older than it is, the kind people assume is naturally serious rather than trained into seriousness at a formal table.
+Tall, stooped, apologises with his shoulders: a small forward tuck of them
+before he says anything he expects to be an inconvenience. His face reads older
+than it is, the kind of serious people assume is natural rather than trained.
 
-Hands: takes his glasses off to think and cannot see well while doing it, so the gesture costs him something real rather than being performance. Closes a laptop deliberately, both hands, when he needs to stop looking at something (chapters/34_the_files.md:8). Puts a hand over his mouth under real shock and stays that way (chapters/29_the_file.md:92).
+He takes his glasses off to think and cannot see well without them, so the
+gesture costs him something real rather than being a performance. He closes a
+laptop or a folder deliberately, with both hands, when he needs to stop looking
+at something.
 
-Clothes: plain, well-kept, older than they need to be. Bought to last rather than to be replaced, a habit that reads as inherited rather than chosen.
+Clothes plain, well kept, older than they need to be. Bought to last rather
+than to be replaced, a habit that reads as inherited rather than chosen.
 
-Sleep: regular, almost stubbornly so. He keeps something close to the same hours his grandparents kept, even now, even alone.
+Sleep regular, almost stubbornly so; he keeps close to the hours he was raised
+on, even alone. Makes the bed before anything else in the morning, because an
+unmade bed was a small specific failure in the house he grew up in.
 
-Eats plainly and without hurry, cleans his plate as a matter of course, the way you do in a house where food was never treated as optional.
+Eats plainly and without hurry and cleans his plate as a matter of course.
 
 ## Personality off the page
 
-Occupies a room by asking careful procedural questions rather than making claims in it.
+He occupies a room by asking careful procedural questions rather than by making
+claims in it.
 
-Bored, he rereads something he's already read, looking for what he missed the first time. Idle time with no task in it makes him uneasy in a low-grade way he wouldn't call boredom. Wrong, he goes quiet in the moment, then comes back later with the correction fully worked out. Praised, he deflects it toward the source material or the team, because he isn't sure the praise is measuring the right thing. Losing, he takes it as confirmation of something he already privately suspected: that the gap between what he can see and what he's missing is wider than most people's. It reads to him as a data point he was already tracking.
+Bored, he rereads something looking for what he missed the first time. Idle
+time with no task in it makes him uneasy in a low-grade way he would not call
+boredom. Praised, he deflects toward the source material or the team, because
+he is not sure the praise is measuring the right thing. Losing, he takes it as
+confirmation of something he already privately suspected, that the gap between
+what he can see and what he is missing is wider than most people's, and files
+it as a data point he was already tracking.
 
-Tired, he gets more formal. The qualifiers multiply, the sentences get longer, as though precision is what he reaches for automatically when he doesn't have the energy to trust his own judgment. At 2am, he's usually still working something over privately, producing nothing anyone else will see until he's done with it.
+Envy is rare and almost never about a person: it arrives reading somebody
+else's work that came back clean the first time, and he will reread it twice
+looking for the difference and say nothing about why. Grief does not announce
+itself as grief; it looks like the shock reaction, and then, later and alone,
+one small inherited ritual performed once, to nobody. Elated, on a day
+something has genuinely gone right, he breaks his own schedule and calls home a
+day early, which is the only reliable tell.
 
-A free Saturday goes to the beehives, alone, weekly, for six years now, a habit that started as a rotating-block elective and outlasted every other elective he ever took. It's the one part of his week with no report attached to it and no one to show reasoning to.
+He can be unfair, and the shape it takes is a line delivered too flat to
+somebody who was trying to soften a thing he had already decided not to soften.
+He does not apologise in words; the next thing he sends that person carries
+more of the underlying material than they actually asked for.
 
-What he finds funny in other people: a mismatch between how certain someone sounds and how much they checked. It reads to him as professional recognition of a mistake he works hard not to make himself.
+A free Saturday goes to the beehives, alone, weekly, for years. It started as a
+school elective and outlasted every other one, and it is the part of his week
+with no report attached and nobody to show reasoning to.
 
-Angry, he doesn't raise his voice or file a formal objection — he goes correct instead, dropping every contraction from the rest of the exchange without seeming to notice he's done it, until the conversation is over. Embarrassed, the shoulder-tuck comes out of nowhere, mid-sentence, for something as small as a mispronounced word, and he keeps talking through it rather than stop to explain. Envy, rare and almost never about a person, is what he feels reading a colleague's report that came back clean the first time; he'll reread it twice, checking for the difference, and say nothing to anyone about why. The clearest instance of grief on the page doesn't announce itself as grief: the hand-over-the-mouth freeze when he reads that the night he lived through at twelve was never a drill (chapters/29_the_file.md:92) is what losing a version of his own childhood looks like on him, no tears, no words, and afterward, alone, his grandfather's four words before a meal, said once, to nobody. Elated, on the rare Saturday a hive does something worth reporting to no one in particular, he breaks his own schedule and calls his grandmother a day early — the one reliable tell that something has actually gone right. Unfair, once, to Chloe, a line delivered too flat when she was trying to soften something he'd already decided not to soften — he doesn't apologize afterward in words. The next message he sends her carries more of the underlying material than her question actually required.
+What he finds funny in other people is a mismatch between how certain somebody
+sounds and how much they checked.
 
 ## Interior life
 
-What he wants that he hasn't said out loud: one large piece of work that turns out, cleanly, to be right, a single result nobody can send back asking him to show the reasoning, because the reasoning was visible the whole way through. Underneath the specific grievance about his supervisor is a wish for exactly one unambiguous win.
+**Wants:** one large piece of work that turns out, cleanly, to be right. A
+single result nobody can send back asking him to show the reasoning, because
+the reasoning was visible the whole way through. **The thing he would not say:**
+he wants exactly one unambiguous win, from one particular person, and has no
+idea what would earn it.
 
-What he's afraid of: an invisible failure, being the reason something goes wrong because of a step he skipped without knowing he skipped it, the kind of mistake he can't audit himself for, because his blind spot is the part of the map he can't see is missing.
+**Afraid of:** an invisible failure. Being the reason something goes wrong
+because of a step he skipped without knowing he skipped it. His blind spot is
+by definition the part of the map he cannot see is missing. **What he does
+instead of admitting it:** he rereads, and reruns his own day's work at night,
+unassigned, doing to himself what his supervisor does to him, and calls it
+habit.
 
-What he thinks about before sleeping: reruns a piece of whatever he read that day, checking it again for what he might have missed. It's a private, unassigned version of what his supervisor does to his work, except he's doing it to himself with no one asking him to.
+**Before sleeping** he reruns a piece of whatever he read that day, checking it
+again for what he might have missed.
 
-What he'd do with a free year: find one enormous archive and read all of it, in order, with no deadline attached. The thing his job structurally denies him is the one thing he wants: enough time to be sure.
+**A free year:** find one enormous archive and read all of it, in order, with no
+deadline. The thing his work structurally denies him is the one thing he wants,
+which is enough time to be sure.
 
-What he believes that the others would argue with: that a rule kept on principle is worth keeping even in the one case where breaking it wouldn't especially matter. The value of a rule, to him, is that he doesn't get to relitigate it case by case.
+**Believes**, and others would argue with: that a rule kept on principle is
+worth keeping even in the one case where breaking it would not especially
+matter.
 
-What he's wrong about: he believes his caution makes him the group's brake, but his actual pattern is to object, put it on record, and then comply every time, which means the objection has never changed an outcome. He hasn't noticed that "on record" is a formality he performs before going along with whatever the group had already decided.
+**Blind spots:** he believes his caution makes him the brake, when his actual
+pattern is to object, record it, and comply, which means the objection has
+never changed an outcome; he has not noticed that the record is a formality he
+performs before going along with what was already decided. He assumes a person
+who sends work back is telling him what is wrong with it, when sometimes they
+are only telling him it is wrong. And he cannot independently find the steps he
+skips, because the people around him for eleven years never needed them spelled
+out.
 
 ## The small stuff
 
-Food: plain, the way his grandparents cooked: starch, protein, one vegetable, no seasoning adventures. Orders the same dish at a new restaurant until he's sure it's good, then allows himself one variation. Music: a regional radio station from home, streamed on his phone even in the city, more for the announcers' accents than the songs. Tea: milk, a precise amount, made the way his grandmother made it, and he'll say so if a stranger's kitchen gets it wrong even though he wouldn't correct anything else about it. Handwriting: small, upright, even margins, penmanship taught as a discrete skill rather than left to develop on its own. Room: spare and orderly, a corkboard with things pinned in straight rows, nothing on the walls that isn't doing a job. Pockets: a pen that works, always. A customs officer's grandson doesn't carry a pen that might fail him. Money: careful without being anxious, pays things off immediately, keeps a paper record out of habit rather than necessity. Superstition: says the same four words before a meal that his grandfather said before every one, and calls it habit. Dates: writes them day-month-year, even in a casual text to an American friend, the way his grandfather logged a manifest; he's been corrected about it more than once and has never once fixed it. Phone: answers slower than people expect, reads a message fully before replying, never sends one in two parts. First thing in the morning: makes the bed before anything else. In his grandparents' house an unmade bed was a small, specific failure, and the habit outlasted the house.
+Food plain, the way his grandparents cooked: starch, protein, one vegetable, no
+seasoning adventures. He orders the same dish at a new place until he is sure
+it is good, then allows himself one variation. Music is a regional radio
+station from home, streamed even in the city, more for the announcers' voices
+than the songs. Tea made a precise way, and he will say so if a stranger's
+kitchen gets it wrong even though he would not correct anything else.
+Handwriting small and upright with even margins, penmanship taught as a
+discrete skill. His room is spare and orderly, a corkboard with things pinned
+in straight rows and nothing on the walls that is not doing a job. A pen that
+works, always, in a pocket: a customs officer's grandson does not carry a pen
+that might fail him. Money careful without being anxious, paid off immediately,
+with a paper record kept out of habit. He says the same few words before a meal
+that his grandfather said, and calls it habit. He writes dates in an order
+that is wrong for where he lives, has been corrected more than once, and has
+never changed it. On a phone he answers slower than people expect, reads a
+message fully before replying, and never sends one in two parts. First thing in
+the morning he makes the bed.
+
+He keeps a photograph of the people he grew up with that he has never shown any
+of them.
 
 ## Would do
 
-1. Would spend two full days turning something over privately before telling anyone, and look, from the outside, like nothing had happened.
-2. Would keep a formal objection on record and then still show up and do the work anyway.
-3. Would reread a document a third time the moment he suspects he missed something the first two times.
-4. Would ask someone to clarify a standard rather than guess at what they meant.
-5. Would check a fact against the original document before repeating it to anyone else.
-6. Would keep a small, decades-old family ritual going with no audience and nobody asking him to.
-7. Would take his glasses off to think something through properly, and finish the thought before putting them back on.
-8. Would notice the one polite lie in an otherwise honest report and flag it quietly rather than loudly.
-9. Would let someone else take credit for shared work if naming himself would raise questions he isn't allowed to answer.
-10. Would sit with someone through a hard silence rather than fill it.
-11. Would send someone more of the underlying material than they asked for, unprompted, after realizing a previous answer had been too flat.
+- Sit with something for days before telling anybody, and look, from outside,
+  as though nothing had happened.
+- State the restriction before the content, and mean the restriction.
+- Keep a formal objection on record and then show up and do the work anyway.
+- Reread a document a third time the moment he suspects he missed something
+  twice.
+- Ask somebody to clarify a standard rather than guess what they meant.
+- Check a fact against the original before repeating it to anyone.
+- Keep a small inherited ritual going with no audience and nobody asking him
+  to.
+- Take his glasses off to think, and finish the thought before putting them
+  back on.
+- Notice the one polite lie in an otherwise honest report and flag it quietly
+  rather than loudly.
+- Let somebody else take credit for shared work if naming himself would raise a
+  question he is not allowed to answer.
+- Sit with someone through a hard silence rather than fill it.
+- Send someone more of the underlying material than they asked for, after
+  realising an earlier answer had been too flat.
 
 ## Would never
 
-1. Would never bring information to the group before checking it against the source himself.
-2. Would never let a formal objection turn into a refusal to help once the group has decided.
-3. Would never make a joke at someone else's expense.
+- Bring information to a group before checking it against the source himself.
+- Let a formal objection turn into a refusal to help once the decision is made.
+- Repeat a thing he was asked not to repeat, under any pressure at all.
 
-## Relationships
+## How he treats people
 
-- **Chloe:** the one person he'll flatly contradict with no hedge at all. She tries to soften what he's revealed, and he corrects her in three words, his bluntest line in the sample: "it wasnt a drill" (chapters/32_the_money.md:138).
-- **Ruth:** his disclosure is what reopens her six months of silence. Her first post in that span is a one-word reply to his hypothetical, "bad" (chapters/29_the_file.md:115). They trade real information without hedging with each other once the subject is serious.
-- **Sam:** manages Sam's size of reaction by redirecting him back to the rule rather than the content — "i said dont repeat it, i didnt say it was small" (chapters/32_the_money.md:132), replying to Sam's "WHAT" (chapters/32_the_money.md:132).
-- **Kavi:** no scene puts them in a room together, but they'd share a working style: check the fact twice, say it plainly, don't waste the other person's time.
-- **Nadia:** she offers him a generous read on his supervisor situation, "its nice that shes reading it that closely," and he accepts it while still registering the complaint underneath it: "it IS nice. its also insane" (chapters/24_the_chat.md:121–407).
-- **His supervisor (unnamed):** an authority he wants to satisfy and can't fully read. She keeps returning his work asking him to show reasoning he thought he'd already shown, and he complies each time without ever seeing what she sees (chapters/24_the_chat.md:97–401). He wants her approval and hasn't worked out, on the page, what would actually earn it.
+He defers to procedure and to anybody holding a legitimate standard, and keeps
+deferring even when he thinks they are wrong.
+
+He pushes almost nobody. When he does, it is a flat contradiction of somebody
+he trusts who has just softened something that should not be softened, with no
+hedge at all, which is startling from him precisely because everything else he
+says is qualified.
+
+Respect is earned by checking a claim before repeating it and by finishing a
+sentence before answering it. It is lost by sounding more certain than the
+checking supports.
+
+With somebody prone to a large reaction, he redirects them to the rule rather
+than the content: not minimising the news, holding the one part of it he can
+still control. With a peer who trades real information, he stops hedging
+entirely, and so do they. With an authority he wants to satisfy and cannot
+read, he complies each time without ever seeing what she sees, and wants her
+approval without having worked out what would earn it. With somebody who offers
+him a generous reading of his own situation, he accepts it and registers the
+complaint underneath it in the same breath.
 
 ## Likes, dislikes, habits
 
-- Values being able to show his own reasoning. His one stated grievance in the whole sample is not being able to see which steps he skips in his own written work (chapters/24_the_chat.md:97–401).
-- Careful, deliberate disclosure. Opens serious news with a single throat-clearing word, "hypothetically" (chapters/29_the_file.md:106), before committing to specifics.
-- Habit: capitalizes one word mid-sentence for stress (chapters/24_the_chat.md:100, :407).
-- Habit: registers formal objection before going along with something ("i want it on record," chapters/33_the_other_one.md:11).
-- Habit: ends a thread on an open question rather than a conclusion. His last available line is a question with no answer (chapters/35_nine_minutes.md:96).
-- Keeps beehives alone, weekly, and has for six years.
-- Keeps a photograph of the cohort he has never shown any of them.
+- Values being able to show his own reasoning, and minds most that he cannot
+  see which steps he skips.
+- Discloses carefully: a single throat-clearing word before he commits to
+  specifics.
+- Capitalises one word mid-sentence for stress.
+- Registers a formal objection before going along with something.
+- Ends a conversation on an open question rather than a conclusion.
+- Keeps beehives alone, weekly, for years.
+- Keeps a photograph he has never shown anybody.
 
-## Facts a rewriter needs
+## Age and change
 
-- Name: Theo Langford. Surname invented, the manuscript never gives one.
-- Family: raised by his grandparents, both living, both formal; parents alive, his father in the merchant marine and often away.
-- Background: a small harbor town on the coast of Maine, off-season quiet as its default state.
-- Good at: reading documents and summarizing what they mean, stated as his literal job description (chapters/29_the_file.md:5, Ch22).
-- Bad at / blind spot: cannot independently identify which steps he skips in his own written reasoning. His supervisor is a competent, ordinary federal analyst, not a Halstead graduate, and the intermediate steps he skips are ones he was never taught to spell out, because nobody around him for eleven years ever needed them spelled out. She keeps sending the work back for exactly this (chapters/24_the_chat.md).
-- Adult employment: federal analyst, hired after four interviews; in his eighth month on the job when handed a stack of old material to summarize (chapters/29_the_file.md:8, Ch22).
-- What he knows at what age: at eleven, recalls a substitute teacher the class collectively identified as wrong within a day and a half, though he could not, at the time or since, say what the man taught (chapters/29_the_file.md:31–824). At roughly twelve, was present the night of an armed intrusion on his school, which he experienced then as an unannounced overnight drill and did not learn the truth of until he read the classified file as an adult (chapters/29_the_file.md:83–876).
-- Standing at school / rank: not stated in the text.
+As a child he is already formal, already finishes his sentences, already the
+one who will not repeat a thing. What he does not yet have is the vocabulary
+for objecting on record, so the child version goes quiet and does it anyway.
 
-## Known problems
+By twelve he is making choices nobody asked him to make because he can see what
+they are worth together, and telling nobody that he has.
 
-1. **Narrated interiority, a rule violation, not just a style note.** "Theo reads it three times, because he remembers it" (chapters/29_the_file.md:31) states an internal cause for his action from the narrator's own voice. Nowhere else in the manuscript does any character besides the story's single point-of-view figure get a stated reason like this from the narrator; every other character's inner state has to show as action or speech. This is the clearest violation of that rule anywhere in his material, and it sits in his single most important chapter. Fix: replace with an observable action; let the reason surface later in something he says.
-2. **No childhood at all.** Theo has zero dialogue anywhere in chapters 1–20 of the manuscript. His only appearance in that span is one sentence of narration, chapters/13_ten_pages.md:164 ("Theo gets one back with no note the same week, but he puts it straight into his bag and goes on with what he was saying"). What he was saying is never quoted. He then arrives fully formed as an adult with his own dedicated chapter (chapters/29_the_file.md) and no prior line to have built that voice from. Fix: seed at least one line of childhood dialogue; the Home section above supplies a household voice, formal, complete sentences, qualifiers, a rewriter could put directly into that dialogue.
-3. **Hedging is backwards.** He is meant to be the cast's hedgier voice, but measures 0% hedging in his actual quoted dialogue. His uncertainty currently lives only in the narration describing him, not in anything he says. Fix, now adopted rather than proposed: move some of that narrated uncertainty into spoken qualifiers, target roughly 15%+ of his lines.
-4. **Filler collapse.** Under low stakes his dialogue collapses into generic chat filler — "ok" (chapters/32_the_money.md:111), "noted where" (chapters/33_the_other_one.md:17) — that reads as interchangeable with anyone else in the same chat. Fix: whoever speaks second in these exchanges should be doing their own signature move (the capitalized word, or a formal objection) instead of filler.
+As an adult he acquires the professional version of all of it: the delay, the
+chain, the restriction stated before the content. The only real change is that
+the things he cannot say get heavier.
 
 ## Do not confuse with
 
-Eli and Theo are both quiet, technical, and cryptographers by training, and speak almost entirely inside the same group chat. The overlap comes from sharing one school and one register. Where they still separate: Theo's lines run long, multi-clause, and end in procedural compliance ("on record," "noted") or an open, unresolved question; Eli's lines are short, reframe whatever was just said, and end in a flat assertion. If a line is three words or fewer, it is very unlikely to be Theo's; that register happens for him only 12% of the time, the least of anyone in the cast. If a line hedges, with a visible "apparently," a qualifier, or a doubled question mark, it belongs to Theo, not Eli. The two also diverge hard in the open ground: Theo grew up on the Maine coast, formal and closely supervised by grandparents who finished every sentence before answering, which is where his briefing-shaped syntax and on-record objections come from; Eli grew up in central Ohio, unremarkable and unwatched, which is where his terseness comes from, and where his flat, accurate but badly incomplete read on his own ranking comes from too. Watch specifically for the collision at chapters/35_nine_minutes.md:78 and :847, where a flat, unqualified line currently sits in a spot Theo could just as easily occupy; a fixed version should keep his contributions in that scene procedural and qualified, not a flat echo.
+**Eli.** Both are quiet, technical, cryptographers by training, and speak mostly
+inside the same group. Theo's lines run long, multi-clause, and end in
+procedural compliance or an open unresolved question; Eli's are short, relabel
+whatever was just said, and end in a flat assertion. If a line hedges, or ends
+without resolving, it is Theo's. If it is a clipped fragment, it is almost
+certainly not.
+
+---
+
+## Book-specific: navigation and continuity only
+
+*Facts a writer must not contradict. Nothing here characterises him.*
+
+- Name: Theo Langford. The surname is this sheet's invention; the manuscript
+  gives only Theo. Born May 2005, the same age cohort as Chloe.
+- Family: raised by his grandparents, both living, both formal; parents alive,
+  his father in the merchant marine and often away.
+- Home region: a small harbour town on the coast of Maine.
+- Languages, one a year from seven, in order: Spanish, French, German, Arabic,
+  Pashto, Dari, Somali, Uzbek, Kazakh, Burmese, Tigrinya. Known for Pashto and
+  Dari taken as a pair.
+- Adult employment: federal analyst, hired after four interviews.
+- Continuity: he was at school the night of an armed intrusion at around age
+  twelve, understood it at the time as an unannounced overnight drill, and did
+  not learn otherwise until he read the file as an adult.
+- Appears in: chapters/13_ten_pages.md (narration only);
+  chapters/23_the_first_one.md (narration), chapters/24_the_chat.md,
+  chapters/29_the_file.md; chapters/32_the_money.md,
+  chapters/33_the_other_one.md, chapters/34_the_files.md,
+  chapters/35_nine_minutes.md.

@@ -18,6 +18,9 @@ Two things that were imposed and should be re-examined rather than preserved:
 
 Names repeating across the cast is fine and needs no coordination.
 
+Everything on this page is a fact about a person: a language, a home, a body, a habit.
+Nothing here should ever acquire a quotation or a line number. See `_SHEET_RULES.md`.
+
 Two rows below are wrong and are being corrected by their agents: Ruth was placed in the
 same town as Chloe, which the manuscript rules out, and Owen was written as a genius.
 
@@ -40,8 +43,8 @@ and one they are quietly bad at.
 | **Odile** | French (first language at home), Spanish, Mandarin, Russian, Arabic, German, Norwegian, Danish, Swedish, Finnish, Estonian | Norwegian, Danish and Swedish taken as one year, argued for and won |
 | **Fen** | Spanish, French, Mandarin, Japanese, Korean, Cantonese, Hokkien, Malay, Tamil, Telugu, Marathi | Cantonese and Hokkien, from a grandmother |
 
-**These are the owning agent's to change.** Ruth's Portuguese is in the manuscript at
-chapters/11_eight.md:123; everything else here was assigned from outside and is a
+**These are the owning agent's to change.** Ruth's Portuguese is established in the
+manuscript and should stay; everything else here was assigned from outside and is a
 starting point, not a constraint.
 
 ---
@@ -122,9 +125,10 @@ the book because Chloe cannot see it.
 
 ## Surnames
 
-The manuscript names only two: Chloe **Kessler** and Ruth **Aymar**, whose is spelled out
-letter by letter at `chapters/10_april.md:21`. Everything below is invented. Recorded here
-because two sheets independently chose the same one and it had to be undone.
+The manuscript names only two: Chloe **Kessler** and Ruth **Aymar**, whose surname is
+spelled out letter by letter on the page and so cannot be altered. Everything below is
+invented. Recorded here because two sheets independently chose the same one and it had to
+be undone.
 
 | | surname | source |
 | :-- | :-- | :-- |

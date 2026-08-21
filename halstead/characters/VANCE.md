@@ -1,136 +1,278 @@
 # Laura Vance
 
-Chloe's second-grade teacher: the one everyone in the building agrees is nice, genuinely good at the parts of the job that show up in a crisis, and a person with real, specific reasons for being that way.
+The teacher everyone in the building agrees is the nice one, genuinely good at the part of
+the job that shows up in a crisis, and nice for real, specific, worked-out reasons rather
+than by temperament.
 
-**Age span:** 31 during Chloe's second-grade year | **MBTI:** ESFJ (writing aid, not a claim) | **IQ:** not inferable
-**Appears in:** chapters/07_the_same_room.md (all her scenes) and chapters/08_the_asking.md (referenced only).
-**Speaks:** 10 quoted lines, all in chapters/07_the_same_room.md, split across two scenes: the time-capsule lesson and the crying-at-her-desk scene.
+**Age:** 31 in the year she teaches Chloe | **MBTI:** ESFJ (a writing aid, not a claim)
+| **IQ:** not the useful measure for her; her competence is trained emotional reading, and
+she went and got the training on purpose
 
-## Voice in one paragraph
+## How she thinks people learn
 
-She teaches in full, complete instructions. When something goes wrong with a student, she drops into short, close-range questions, doubled up with no space for a response before the next one lands. Her most characteristic line is "'Okay.' Ms. Vance stays down there on the floor. 'Can you tell me what it is?'" (chapters/07_the_same_room.md:221), real, sustained physical presence, paired with a question gentle enough that it never finds out what's wrong.
+Nothing goes in until the child is safe enough to let it. She builds the conditions first
+and the content second, and she does it with structure rather than sentiment: a stated
+rule that never renegotiates, a physical place in the room a child can use without asking
+permission, a promise made out loud before a question is asked. She believes an assignment
+lands when the child can see themselves on the other end of it, so she frames routine work
+with a real stake and a real audience rather than presenting it as a thing to get through.
 
-## Dials
+She also believes the school outsources this job to whichever adult happens to be
+soft-hearted that year, and that this is a failure of the building, not a compliment to
+her. That belief is the one thing that makes her argue instead of act.
+
+## What she does when a student fails
+
+She goes to them. Physically, immediately, in front of everybody, and she gets down to
+their level and stays down for the whole exchange rather than crouching and rising again.
+Then she asks short questions in quick succession, doubled up, with a promise of safety
+attached: is anything hurting, did somebody say something, you can tell me either way.
+
+The questions are built to find an event. That is her training and it is genuinely good
+training, and it means she reliably finds an incident, an injury, a bully, a bad morning,
+and reliably misses a condition. When the answers come back as no and no and I don't know,
+she takes the no at face value, does not press a second time, and lets the child sit with
+it while she stays where she is. What she does next is the part that actually works: she
+goes around the classroom entirely and telephones the home, directly, herself, which is
+outside her ordinary channel and is the most forceful thing she ever does.
+
+## How she talks
+
+Two registers with nothing between them. Teaching, she speaks in full, complete,
+unbroken instructions, delivered all the way through before she checks for a reaction, and
+she will tell a room what she wants them thinking about while they work rather than leaving
+them to find it. Comforting, she goes to three to seven words and stacks questions one on
+top of another without leaving space for an answer, which reads as warmth and functions as
+pressure she does not know she is applying. She says no exactly once and does not
+renegotiate it. She never gets sarcastic and never gets short with a child, and when she is
+tired she gets quieter rather than sharper, which is the reverse of most adults.
+
+### Dials
 
 | | |
 | :-- | :-- |
-| sentence shape | two registers, full instructions teaching, short doubled questions comforting |
-| disagrees by | one flat, unrepeated "no" |
-| wordiness | teaching turns 30–40 words; crying-scene questions 3–7 words |
-| terseness | 1 of 10 lines, 10%, a measurement, not a ceiling |
-| at length | opens up making the case for the calm corner to exist outside her own room, the one subject she can't leave alone |
-| jokiness | 1/10, warm and indulgent, aimed at a kid arguing a classroom rule on a technicality, which charms her even while she holds the line, never mocking |
-| hedging | 0% about a child's safety in front of them, where she needs to stay certain; permitted about anything structurally outside her authority, building-wide policy, budget, a decision the staff meeting actually controls |
-| questions | 5 of 10 lines, 50%, concentrated in the crying scene |
-| figurative | one inherited, ordinary classroom idiom permitted ("a clean slate," "on the same page"), the kind a teacher actually reaches for with a kid or a parent, never an invented image |
+| sentence shape | full complete instruction teaching; short doubled questions comforting |
+| disagrees by | one flat unrepeated refusal, in a tone that says it has been asked before |
+| length | long while teaching, almost nothing while comforting; no middle setting |
+| at length | on the case for making her own improvised provision standard for everyone, the one subject she cannot leave alone |
+| jokiness | warm and indulgent, aimed at a child arguing a rule on a technicality, which charms her while she holds the line; never mocking |
+| hedging | never about a child's safety in front of them, where she needs to stay certain; freely about anything structurally outside her authority |
+| questions | constant in distress, almost none while teaching |
+| figurative | ordinary inherited classroom idiom only, the kind a teacher reaches for with a child or a parent, never an invented image |
+| emotional range | wide and visible, and she does not hide it from children on purpose; the one thing she keeps off her face is worry about a specific child, which goes to her brother instead |
 
-## When they talk at length
+## When she talks at length
 
-The subject she can't leave alone is the calm corner and the case for building it into every classroom, not just hers. She's raised it at full staff meetings at least twice, unprompted, arguing that "everyone says she's the nice one" is the school outsourcing its own job to whichever teacher happens to be soft-hearted that year, and that a beanbag and a permission-free timer shouldn't depend on one teacher's weekend course and her own pocket. It is the one subject that makes her argue instead of just acting, and she will raise it again every time the school hands the job to whoever is soft-hearted that year.
+The subject she cannot leave alone is making her own provision institutional. She built a
+quiet corner in her own room out of her own pocket after a weekend course she paid for
+herself, and she has argued at full staff meetings, unprompted, more than once, that a
+beanbag and a permission-free timer should not depend on which teacher happens to be
+soft-hearted that year. That is the one topic that turns her from someone who acts into
+someone who makes a case, and she will make it again every time the building hands the job
+to a volunteer.
 
-It costs her the thing she's actually good at. Each time she makes the case, "polite interest and no action" is what comes back, so the extended version of her voice is the one that reliably fails to move anything, while her wordless crouch beside a single desk works every time she tries it. Length, for her, is associated with exactly the kind of appeal that doesn't land; the floor-level silence is the register that does.
+It costs her the thing she is actually good at. Every time she makes the case, what comes
+back is polite interest and no action, so the extended version of her voice is the register
+that reliably fails, while the wordless crouch beside one desk works every time she tries
+it. Length, for her, is the appeal that does not land. The floor is the one that does.
 
-## Signature — theirs alone
+## Signature - hers alone
 
-The only adult in this group of eight who lowers herself to Chloe's level and stays there through the whole exchange:
-- "Ms. Vance comes down the row and crouches all the way down beside the desk, in front of everybody, and puts a hand flat on Chloe's back, leaving it there." (chapters/07_the_same_room.md:207)
-- "'Okay.' Ms. Vance stays down there on the floor." (chapters/07_the_same_room.md:221)
+She lowers herself to a child's level and stays down there for the whole exchange, in front
+of the room, with a hand left flat on the child's back and not taken away. Other adults
+crouch and rise. She does not rise. Everything else about how she handles distress follows
+from the decision not to get back up.
 
-## Would they say this?
+## Would she say this?
 
-- YES if it's a full, unbroken instruction delivered before checking for reaction.
-- YES if it's a short, doubled-up question asked from physically close range during distress.
-- YES if it invites disclosure with an explicit safety promise.
-- YES if it names what she sees plainly, "what's going on," rather than guessing at a cause first.
-- YES if it stays consistent with a stated rule even when a student pushes back on it.
-- YES if it treats an odd or advanced answer from a student as simply interesting.
-- YES if it keeps teaching, unbothered, through an unusual answer rather than correcting the tone of it.
-- YES if it asks a follow-up gently after a flat "no," rather than accepting silence as the end of the conversation.
-- YES if she's visibly charmed by a kid working a rule's technicality, even while she still holds the line.
-- YES if a hedge shows up about something structurally outside her authority, budget, building-wide policy, and nowhere near a child's immediate safety.
-- NO if it's sarcastic, dismissive, or impatient with a student's question.
-- NO if it presses for an answer more than once after a repeated "no."
+- YES if it is a full unbroken instruction delivered before checking for a reaction.
+- YES if it is a short doubled-up question asked from close range during distress.
+- YES if it invites disclosure with an explicit promise of no consequences.
+- YES if it names plainly what she can see rather than guessing at a cause first.
+- YES if it holds a stated rule identically when a student pushes on it.
+- YES if it treats an odd or advanced answer as simply interesting and keeps going.
+- YES if it asks a gentler follow-up after a flat no rather than accepting silence as the
+  end of it.
+- YES if she is visibly charmed by a child working a rule's technicality while still
+  holding the line.
+- YES if a hedge appears about something structurally outside her authority, and nowhere
+  near a child's immediate safety.
+- NO if it is sarcastic, dismissive, or impatient with a question.
+- NO if it presses for an answer more than once after a repeated no.
 
 ## The kindly-and-inadequate test
 
-For most of the school day, what Laura sees is a quiet, compliant seven-year-old who finishes her sheet, checks it, and sits with her hands in her lap. A room of twenty-seven kids working through one shared curriculum rewards exactly that profile and gives it nothing to flag. A line for Laura belongs on the page if the warmth is real and sustained, and the questions in it are built to find an incident, a bully, an injury, rather than a condition, untreated depression, a mismatch between Chloe's ability and a worksheet of adding-with-carrying. A second-grade teacher's training and her fifty-minute hour surface the first kind of problem readily and the second kind almost never, from a kid who isn't causing trouble. The text shows the cost plainly elsewhere: she is in the room, present, and doesn't look up while Bryce calls Chloe "weirder," ordinary and undirected inattention, the kind anyone managing twenty-seven other things carries. A line falls off the page if it treats the crying as disruptive or performative, or has her stand over Chloe instead of getting down.
+For most of the day what she sees is a quiet, compliant child who finishes her work, checks
+it, and sits with her hands in her lap, and a room of twenty-seven working through one
+shared curriculum gives that profile nothing to flag. A line belongs to her if the warmth
+is real and sustained and the questions in it are built to find an incident rather than a
+condition. Her attention is genuinely good and genuinely finite: she is in the room, and
+does not look up, at the moment an ordinary unkindness lands on a child at a table, because
+her hands are on something else. That is not a choice, and writing it as one breaks her. A
+line falls off her if it treats crying as disruptive or performative, or has her stand over
+a child instead of going down.
 
-## Are they acting like themselves?
+## Under pressure
 
-She sets firm, stated structure early and holds it without renegotiating. She pitches the time-capsule assignment with real emotional framing rather than treating it as filler. When a student is in visible distress she moves toward the child immediately, unconcerned with the social cost to her lesson.
+She sets firm stated structure early and holds it without renegotiating. She pitches a
+routine assignment with real emotional framing rather than as filler. When a child is in
+visible distress she moves toward them immediately and does not care what it costs the
+lesson.
 
-**Failure modes for a rewriter:** making the "weirder" moment a deliberate choice rather than ordinary inattention; cutting the floor-level physical detail, which is her defining trait; having her successfully get an answer out of Chloe, the chapter ends unresolved on purpose; letting the calm-corner pitch actually win a vote, the whole point of naming it is that "polite interest and no action" is what she gets.
+**Failure modes for a rewriter:** making the moment she misses a deliberate choice rather
+than ordinary inattention; cutting the floor-level physical business, which is her whole
+character; having her successfully get the answer out of a child, which she does not; and
+letting her staff-meeting case actually win, which would remove the reason she keeps
+making it.
 
-## Subjects and schedule
+## What she is good at, and what she is not
 
-She teaches second grade, self-contained: arithmetic (adding with carrying), a class-wide time-capsule reflective writing project, table-group seating norms, to roughly twenty-seven students in groups of four. She frames a routine assignment with real stakes rather than filler, and reads a room for distress fast, a trained skill, not just instinct; see Home. She has less success noticing a small, non-disruptive social moment while her hands are on a different task. She set up an optional lunchtime "calm corner" herself in year two of teaching, a beanbag and a timer in the back of the room any student can use without asking permission, funded out of her own pocket the first year before the school agreed to reimburse basic supplies. Her second year, a student with an anxiety disorder was reaching crisis in class regularly and nothing in her training covered it, so she took a weekend trauma-informed-classroom course on her own time and built the calm corner directly out of it. In five years teaching, no student has ever told her they were afraid to come find her, and she takes real pride in that.
+Self-contained second grade, roughly twenty-seven children in table groups of four:
+arithmetic, a class-wide reflective writing project she treats as genuinely significant,
+seating norms she does not renegotiate. She reads a room for distress fast, and it is a
+trained skill rather than instinct. She is less good at noticing a small non-disruptive
+social moment while her hands are on a different task. In her second year a child with an
+anxiety disorder was reaching crisis in class regularly and nothing in her training covered
+it, so she took a weekend trauma-informed-classroom course on her own time and built the
+quiet corner directly out of what she learned, funding it herself the first year. In five
+years no child has ever told her they were afraid to come and find her, and she takes real
+pride in that.
 
 ## Home
 
-Youngest of four siblings, raised in a loud, close-knit house two hours from where she teaches now. Her older brother struggled with severe anxiety as a teenager, and watching her parents figure out, slowly, imperfectly, how to actually help him is the root of how she reads a classroom now. She went into education straight out of college, specifically elementary, specifically wanting the age where a kid is still willing to be crouched next to. She lives with a partner in a small rented house near the school, no children yet, though they talk about it. She calls her brother, now doing well, most weeks; he's the person she processes a hard day with, more than anyone at work. Dinner most nights is whatever her partner has started by the time she's home, since her days run long with the calm-corner setup and grading.
+Youngest of four, raised in a loud close house two hours from where she teaches. Her older
+brother struggled with severe anxiety as a teenager, and watching her parents work out,
+slowly and imperfectly, how to actually help him is the root of how she reads a room now.
+She went into education straight out of college, specifically elementary, specifically
+wanting the age where a child is still willing to be crouched next to. Lives with a partner
+in a small rented house near the school, no children yet, though they talk about it. She
+calls her brother, now doing well, most weeks; he is the person she processes a hard day
+with, more than anyone at work. Dinner most nights is whatever her partner has started by
+the time she is home, since her days run long.
 
-## Body
+## Body and physical business
 
-Early thirties, energetic, moves through a classroom quickly and without wasted motion. She wears clothes she can crouch and sit on a classroom floor in without a second thought, no skirts, flat shoes, always. She keeps her hair pulled back, out of the way of leaning down to a desk. Her hands are rarely still, tape, a marker, a hand on a shoulder; she is a toucher in a job that increasingly discourages it, and has thought carefully about where that line is. She sleeps reasonably well; the job tires her body more than her nerves.
+Early thirties, energetic, moves through a room quickly and without waste. She wears
+clothes she can crouch and sit on a floor in without a second thought: no skirts, flat
+shoes, always. Hair pulled back and out of the way of leaning down to a desk. Her hands are
+rarely still, tape, a marker, a hand on a shoulder; she is a toucher in a job that
+increasingly discourages it, and has thought carefully about where that line sits. Sleeps
+reasonably well; the job tires her body more than her nerves.
 
 ## Personality off the page
 
-She sees herself as the attentive one, and mostly is: her reputation is backed by real, immediate action every time a student is in visible distress. She would likely be surprised to learn she missed the "weirder" moment, because in her own account of herself she's the teacher who notices. A room of twenty-seven seven-year-olds leaves her little room to be bored. Wrong, she takes it hard, briefly, then fixes what she can control and lets go of what she can't. Praised, she is genuinely warmed by it, especially from a parent. She rarely has direct conflict; the closest is a repeated request to swap seating groups, which she shuts down the same way every time. At her most tired she gets quieter, not shorter, with kids specifically, the opposite of most adults. A free Saturday runs sleeping in, then something physical outdoors, then a call to her brother. Kids negotiating a classroom rule with a technicality charm her even while she holds the line.
+She sees herself as the attentive one and mostly is, and would be genuinely surprised to
+learn what she missed, because in her own account of herself she is the teacher who
+notices. Twenty-seven seven-year-olds leave her little room to be bored. Wrong, she takes
+it hard, briefly, then fixes what she controls and lets go of what she does not. Praised,
+she is genuinely warmed, especially by a parent. Direct conflict is rare; the closest is a
+repeated request she shuts down the same way every time. At her most tired she gets
+quieter, not shorter, with children specifically. A free Saturday runs sleeping in, then
+something physical outdoors, then a call to her brother.
 
 ## Interior life
 
-She wants the calm corner standard in every classroom in the building, not just hers; she's raised this twice at staff meetings and gotten polite interest and no action. She fears missing the moment that actually mattered while her hands were on something administrative, which is exactly what happens with Chloe, and which she never learns happened. Before sleep she runs through whether a specific kid seemed okay at dismissal. Given a free year, she would earn a formal credential in trauma-informed education and try to bring the training to the whole staff. She believes "everyone says she's the nice one" is doing the school's job for it; kids shouldn't need to find the one soft landing in the building. She believes her promise of no consequences for disclosure is enough to reach the truth of a hard moment; with Chloe it produces only "I don't know," honestly, because the actual problem has no name a seven-year-old has yet.
+She wants the quiet corner standard in every room in the building, not just hers, and has
+raised it twice and got nowhere. She fears missing the moment that actually mattered while
+her hands were on something administrative, which is precisely what happens, and which she
+never finds out happened. Before sleep she runs through whether a particular child seemed
+all right at dismissal. Given a free year she would earn a formal credential in
+trauma-informed education and try to bring the training to the whole staff. She believes
+being known as the nice one is the school doing its job through her instead of doing it.
+
+**Blind spot:** she believes a promise of no consequences is enough to reach the truth of a
+hard moment. It reaches an event. It does not reach a child who has no name yet for what is
+actually wrong, and she reads that silence as something she has not earned rather than
+something the child cannot supply.
 
 ## The small stuff
 
-She drinks coffee with too much creamer, in a mug a former student gave her, refilled once mid-morning. Her handwriting is big, round, deliberately cheerful; she thinks about how a note will look to a seven-year-old before she writes it. Her classroom carries more soft furniture than most, the beanbag, a rug, cushions, funded partly out of pocket. She keeps tissues and a spare hair tie in every bag she owns. She spends more than she should on classroom supplies and doesn't track it closely. She touches the doorframe on her way out every afternoon, a habit she can't explain and hasn't tried to break. She checks her phone at lunch only, never during class. Every morning she turns on the classroom lights and checks the calm corner is stocked with tissues before anything else.
+Coffee with too much creamer, in a mug a former student gave her, refilled once
+mid-morning. Handwriting big, round, deliberately cheerful; she thinks about how a note
+will look to a seven-year-old before she writes it. Her room carries more soft furniture
+than most, funded partly out of pocket. Tissues and a spare hair tie in every bag she owns.
+She spends more than she should on supplies and does not track it. She touches the
+doorframe on her way out every afternoon, a habit she cannot explain and has not tried to
+break. Phone at lunch only, never during class. Every morning she turns the lights on and
+checks the quiet corner is stocked before anything else.
 
 ## Would do
 
-- Come down a row and get physically level with a crying child, in front of the whole class, without hesitating.
+- Come down a row and get physically level with a crying child, in front of everyone,
+  without hesitating.
 - Stay at floor level through a run of unanswered questions rather than standing back up.
-- Offer an explicit no-consequences promise before asking whether someone hurt a student.
-- Frame a routine assignment as something with real personal stakes rather than as busywork.
-- Hold a firm classroom rule the same way for every student who asks.
-- Keep teaching, unbothered, through an unusual or oddly phrased answer rather than treating it as a problem.
-- Build and personally fund a calm corner for kids to use without asking permission.
-- Take a weekend course on her own time and money to get better at exactly this part of the job.
+- Offer an explicit no-consequences promise before asking whether someone hurt a child.
+- Frame a routine assignment as something with a real audience and a real stake.
+- Hold a firm rule the same way for every student who asks.
+- Keep teaching, unbothered, through an unusual or oddly phrased answer.
+- Build and personally fund something the building should have provided.
+- Take a weekend course on her own time and money to get better at exactly this part of the
+  job.
+- Telephone a home directly, herself, rather than route a worry through an office.
 - Call her brother, most weeks, to talk through a hard day.
 
 ## Would never
 
-- Ignore visible distress in her classroom, or delay before responding to it.
-- Press a student for an answer more than once after they've said "no."
-- Mock or dismiss an odd or advanced answer from a student in front of the class.
+- Ignore visible distress in her room, or delay before responding to it.
+- Press a child for an answer more than once after they have said no.
+- Mock or dismiss an odd or advanced answer in front of the class.
 
-## Relationships
+## How she treats people
 
-- **Chloe:** responds immediately and physically to her distress; the only teacher shown offering an explicit safety promise for disclosure.
-- **Meg:** calls the house directly to flag a concern, which Meg receives as unusual and appreciated.
-- **Bryce, Kayleigh, the seating group:** runs ordinary classroom management with them; not shown intervening the one time a peer comment lands on Chloe.
+- **A child in distress:** immediate physical response, an explicit safety promise, and no
+  second press.
+- **Parents:** she will call the house herself to flag a worry, which lands as unusual and
+  is received as care.
+- **A table group:** ordinary classroom management, held evenly, and not always watched
+  closely enough.
 - **Her brother:** the person she actually processes a hard day with.
 - **Her partner:** shares a house and, usually, dinner.
 
 ## Likes, dislikes, habits
 
-- **Likes:** framing an assignment with real stakes. The calm corner she built herself.
-- **Dislikes:** the same seating-group request asked more than once.
-- **Habits:** crouches to floor level and stays there during distress. Doubles up short questions in immediate succession.
+- **Likes:** framing an assignment with a real stake. The corner she built herself.
+- **Dislikes:** the same request asked twice after she has already answered it.
+- **Habits:** crouches to floor level and stays there. Doubles up short questions with no
+  gap between them. Keeps a hand flat on a back and leaves it there.
 
-## Facts a rewriter needs
+## Age and change
 
-- Full name: Laura Vance. Age 31.
-- Second-grade teacher, five years in, class of roughly twenty-seven.
-- Youngest of four; an older brother's anxiety in adolescence roots her attentiveness.
-- Calls Chloe's house directly to raise concerns, prompting the referral to Dr. Ammons; she starts the chain of events leading to the depression diagnosis without being credited for it in the diagnosis itself.
+She is five years in, which is exactly the point where the warmth is still whole and the
+disappointment has started. The weekend course and the corner she paid for herself are year
+two; the staff-meeting case is year four and after. Write her earlier and she has not yet
+learned that the building will not adopt anything she builds, so the argument is hopeful
+rather than dogged. Write her ten years on and the crouch is unchanged, because it works,
+and the arguing has either become a formal role she took on or stopped entirely. Nothing
+that makes her good is at risk from time. What time takes is the assumption that anyone
+above her is going to help.
 
-## Known problems
+## Do not write her as
 
-- The earlier brief's "roughly 2 lines" undercounted her; she has 10 quoted lines across two scenes.
-- No line of hers survives into chapters/08 in quoted form; the referral call is entirely reported through Meg's side.
-- The "weirder" scene and the crying scene are never connected on the page.
-- Two citations into chapters/07_the_same_room.md were off by two lines (205 and 219 for content actually sitting at 207 and 221), and the first signature quote read "and leaves it there" where the manuscript has ", leaving it there." Both corrected above.
+The nice teacher and nothing else. The warmth is a method she went and got trained in, not
+a temperament, and writing it as sweetness loses both the structure underneath it and the
+specific thing it cannot reach. Her second failure mode is competence: she is not vague or
+scattered, she is a precise person whose instrument is calibrated for events and blind to
+conditions.
 
 ## Do not confuse with
 
-**Carmen Aldana**, the first-grade teacher. Both are unelaborated, competent, decent classroom managers. The dividing cue stays touch: Carmen never touches Chloe; Laura crouches to the floor and keeps a hand on her back.
+**Carmen Aldana.** Both are competent, decent, unelaborated classroom managers. The
+dividing cue is touch, and it runs the whole way: Carmen handles objects, Laura handles
+people, and Laura is the one who goes to the floor and stays there.
+
+---
+
+## Book-specific: navigation and continuity only
+
+*Facts a writer must not contradict. Nothing here characterises her. Delete this section
+and the sheet is still complete.*
+
+**Appears in:** chapters/07_the_same_room.md, speaking, across two scenes. Referenced only,
+without dialogue, in chapters/08_the_asking.md.
+
+**Continuity:** Full name Laura Vance, age 31. Second-grade teacher, five years in, class
+of roughly twenty-seven. Youngest of four; an older brother's adolescent anxiety roots her
+attentiveness. She calls Chloe's house directly to raise a concern, which starts the chain
+leading to the referral and the depression diagnosis, and she is not credited for it
+anywhere in the diagnosis. The unkind remark at Chloe's table and the crying scene are
+never connected on the page.

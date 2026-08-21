@@ -1,7 +1,10 @@
 # Calibration — how good these people actually are
 
-Read this before touching a sheet. Several sheets currently write these people as ordinary
-students.
+Read this before touching a sheet, and read `_SHEET_RULES.md` alongside it. This file sets
+how good these people are. That one sets what a sheet is allowed to contain, and its first
+rule is that nothing on a sheet may be quoted from the manuscript.
+
+Several sheets currently write these people as ordinary students.
 
 ## The students
 
@@ -58,10 +61,9 @@ An IQ near 160 runs about one in thirty thousand. That puts roughly a hundred an
 children in a whole national birth year, which is about two per state. Two of them do not
 grow up in the same county, and they do not grow up in the same town.
 
-The manuscript says this directly. Meg, on the phone to the school: "And they're not from
-around here. Not one town, not one state. She said they come from all over, and then she
-said we're one of the closer ones." Her husband answers, "Four hours is one of the closer
-ones." (chapters/03_the_letter.md:71)
+The manuscript says this directly, in the mother's own account of what the school told
+her: the children are not from around here, not one town and not one state, they come from
+all over, and a four-hour drive counts as one of the closer ones.
 
 So every student comes from somewhere else. Some are thirty minutes away and some are ten
 hours. They met at the school and nowhere before it. Meg knows Ruth's mother by name
@@ -97,15 +99,14 @@ of her time there is one more year-group on the roll than the year before.
 | the middle years | growing by about a hundred a year |
 | her final year | close to 1,000 |
 
-Both figures the manuscript states sit on that curve rather than against it. The Watch in
-`chapters/14_sixty_degrees.md:199` puts "two hundred students out of eleven rooms" into the
-stairwells, and Ruth's bread argument in `chapters/15_twelve.md:31` says "two hundred of us,"
-both from the lower half of the ramp. Graduation in `chapters/23_the_first_one.md:14-17` puts
-"eight hundred children who are not graduating today" on the grass behind ninety-one who are,
-which is the top of it. **This has been logged as an inconsistency; it is not one.** The
-school is a different size in chapter 14 than it is in chapter 23 because it is a different
-size, and a sheet or a scene that needs a number should take it off this curve rather than
-off whichever chapter it happens to be near.
+Both figures the manuscript states sit on that curve rather than against it. Two hundred
+students filling the stairwells, and two hundred of us in an argument about the catering,
+both come from the lower half of the ramp. The graduation scene, with eight hundred
+children on the grass who are not graduating behind ninety-one who are, is the top of it.
+**This has been logged as an inconsistency; it is not one.** The school is a different size
+early in the book than it is at the end because it is a different size, and a sheet or a
+scene that needs a number should take it off this curve rather than off whichever chapter
+it happens to be near.
 
 One consequence worth holding onto: her year is the smallest cohort's worth of company the
 building ever has, and the younger years she teaches into keep getting bigger under her.
@@ -137,9 +138,10 @@ Do not undercut a statement in the same breath that makes it. Say the thing.
 Do not write that a choice at twelve pays off at nineteen. A twelve-year-old picking a
 language is picking a language.
 
-**No tags.** Do not mark lines [text], [inferred] or [invented]. The sheets are read by
-people writing scenes, and the tags get in their way. Write the character as a person.
-Where the manuscript shows something, quote it.
+**No tags, and no quotations.** Do not mark lines [text], [inferred] or [invented], and do
+not quote the manuscript anywhere on a sheet. `_SHEET_RULES.md` has the full reasoning: the
+draft moves, the quotation does not, and most of the quotations already on these sheets no
+longer match the book. Describe the person instead, so the sheet cannot go stale.
 
 **Names may repeat.** One or two shared names across a cast is normal and needs no fixing.
 

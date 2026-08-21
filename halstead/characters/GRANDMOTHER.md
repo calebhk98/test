@@ -1,133 +1,241 @@
-# Dorothy Halloran
+# DOROTHY HALLORAN
 
-Meg's mother: a retired maternity nurse of thirty-one years, who names what she sees in a person's body the moment she sees it, and reads everything Chloe tells her about school through the pace of an ordinary childhood.
+The grandmother: thirty-one years of reading bodies for a living, retired, and
+still doing it at her own kitchen table, to everybody, whether or not they asked.
 
-**Age span:** 74 across the chapters she appears in | **MBTI:** ISFJ (writing aid, not a claim) | **IQ:** not inferable, no cognitive content beyond direct physical observation
-**Appears in:** chapters/01_before.md, 03_the_letter.md (mentioned only), 07_the_same_room.md (mentioned only), 08_the_asking.md (mentioned only), 11_eight.md, 13_ten_pages.md, 14_sixty_degrees.md, 18_fifteen.md, and chapters/23_the_first_one.md (mentioned only).
-**Speaks:** 8 quoted turns across four chapters, 11, 13, 14, 18, roughly 12 sentences total. One additional line is reported without quotation marks (chapters/01_before.md:99).
+**Age:** seventies | **MBTI:** ISFJ (a writing aid, not a claim) | **IQ:** not
+the axis she runs on; her intelligence is entirely perceptual and entirely in
+her hands
 
-## Voice in one paragraph
+## Who she is in a sentence
 
-She talks in short, closed, complete-sentence observations, often finished with a soft tag, "then," "dear," "is it." Her most characteristic line is said about Chloe, to Meg, through a door, not meant for Chloe to hear: "'She's put on weight.' 'I know.' 'She was so thin at Christmas. I didn't want to say anything to you at the time.'" (chapters/11_eight.md). She names the physical fact plainly and hands it to the one person in the house who can act on it.
+A woman who trusts what she can see and touch, distrusts nothing exactly but
+weighs anything reported in words at the speed of an ordinary life, and expresses
+care by putting food and a job in front of you instead of asking how you are.
 
-## Dials
+## What she wants
 
-| | |
-| :-- | :-- |
-| sentence shape | short, closed declaratives, often closed further with a soft tag word |
-| disagrees by | restates her own reading flatly and moves on, even after correction |
-| wordiness | 9 words/sentence |
-| terseness | 25% of sentences are three words or fewer |
-| at length | when she recognises a family pattern repeating in a third generation without being told — Chloe doing exactly what she once watched Meg do, alone in the same house. She names it once, then immediately feeds the person she just placed in that lineage |
-| jokiness | 0/10, though the archery exchange reads as gentle comedy to the reader, unintended by her |
-| hedging | 0%, she states her readings as settled fact, even the wrong ones |
-| questions | 25% of sentences, all closed and low-stakes |
-| figurative | not allowed, none used |
+To have people in the house and something in the oven for them. That is not a
+simplification; it is the actual want, and she has organised decades around it.
 
-## When they talk at length
+What she wants and would not say: for somebody in the family to ask her, straight
+out, what she is seeing when she looks at them. She has spent a career being asked
+that by strangers and it does not happen at home, so she delivers her readings
+sideways, to a third party, through a doorway, and nobody ever comes back to her
+about them.
 
-Dorothy runs on when she recognises a pattern in a grandchild that she watched in her own daughter, and she places it out loud rather than asking about it. Finding Chloe on the spare-room floor over Christmas, surrounded by papers, she doesn't ask what any of it is; she places it. "Your mother did that. Floor, back against the bed, papers everywhere, and if I moved one of them she could tell." Her grandmother puts a plate down on the carpet inside the doorway and leaves it there. "Four o'clock. I'm doing the ham at four and you're carrying it." (chapters/13_ten_pages.md:170). Two sentences naming the pattern, then two more moving straight into the practical thing she can actually do about it: feed her, and give her a job at four o'clock.
+## What she is afraid of
 
-Recognising the repetition doesn't mean she's read what it signals correctly. The sheet's own Interior life section already says she's wrong that patience and time answer anything Chloe describes struggling with; that belief holds for a body and doesn't transfer to a mind going understimulated. Naming the pattern costs her nothing to say. It also leaves the actual problem exactly where it was, with a plate on the carpet standing in for an explanation she doesn't have.
+That her eye has slowed and can no longer be trusted the way it was. She does not
+say this and would deny it. What she does instead is keep reading people,
+constantly, and keep being right about the ones in front of her, which is how she
+checks.
 
-## Signature — theirs alone
+## How she treats people
 
-Closes nearly every statement with a soft one-or-two-word tag that ends the exchange:
-- "'Well, you'll get there, dear. Once in a whole year isn't very much, is it.'" (chapters/14_sixty_degrees.md)
-- "'Four o'clock. I'm doing the ham at four and you're carrying it.'" (chapters/13_ten_pages.md)
+She handles people physically. She takes a hand at the table and keeps hold of it
+after whatever was being passed around has moved on, turns it over in both of
+hers, runs a thumb over the marks on it, takes as long as she takes, while an
+entirely different conversation goes on over the top of her. Then she puts the
+hand down, pats it twice, and asks about something else. That is the whole shape:
+long, unhurried, unasked attention, closed with a small gesture and no
+conclusion.
 
-## Would they say this?
+She asks about what she found, once. If the answer is a brush-off, the brush-off
+stands. She does not press, and this is not delicacy; she got what she needed
+with her hands before she opened her mouth.
 
-- YES if it's a short, closed declarative that ends with a soft tag rather than opening a follow-up.
-- YES if it reads a school activity at the pace of ordinary childhood, treating real mastery as early practice.
-- YES if it names a physical fact about Chloe's body and delivers that fact to another adult rather than to Chloe directly.
-- YES if it turns household logistics into a flat, warm instruction rather than a request.
-- YES if it examines something at length with her hands while a separate conversation continues over her head.
-- YES if it stays affectionate after being directly corrected about a fact.
-- YES if it names a family pattern repeating across a generation once, without alarm.
-- YES if it closes a moment of real attention with a small physical gesture, a pat, a plate set down.
-- NO if it presses past a deflection.
-- NO if it uses a metaphor or invented image.
+She takes a physical observation to another adult rather than to the person it is
+about, quietly, in a lowered voice, and she frames it so nobody has to defend
+themselves: the good news first, the complaint disowned before it can be heard as
+one. She says it once. She does not follow it up, ever, and she does not act on
+it.
 
-## The kindly-and-inadequate test
+Household instructions are not requests. She hands out a job with a time attached
+and states it as a settled fact, and she is not being high-handed; giving somebody
+a task is the most direct thing she knows how to do for them. Confronted with a
+person who is plainly not all right, she puts a plate down on the floor beside
+them, names a time, tells them what they are carrying, and leaves.
 
-Dorothy sees Chloe a handful of times a year, at holidays and the occasional Sunday, and reads everything she's told about in between at the pace those visits allow. Told Chloe hit an archery target for the first time in October and has hit it a dozen times since, she answers "October. Well, you'll get there, dear. Once in a whole year isn't very much, is it," treating a skill Chloe has already mastered as one she's just starting. Told nothing at all, she takes Chloe's hand at a dinner table, turns it over, and reads the burns and the crooked knuckle in it herself, then asks a single question and lets Chloe's "it's nothing, it's from school" stand. What she sees with her own eyes matches what's true: the weight loss by Christmas, the weight regained by spring, told to Meg quietly through a door. What reaches her as a description of something she hasn't watched happen, she reads at the speed of a normal year. A line for Dorothy belongs on the page if it's warm and grounded in one of those two channels, direct observation or a secondhand account measured against an ordinary childhood. A line falls off the page if it turns an accurate physical observation into something said to shame Chloe directly, or mocks her once corrected about the archery; the text gives her neither.
+At a gathering she works the room from one chair and lets the room come to her.
+She asks each person who passes exactly the same opening question, in exactly the
+same words, then one practical follow-up measured against a domestic yardstick,
+then she is already looking past them for the next one. She is not performing
+interest and she is not faking it either; she wants a small, checkable fact about
+each person, and once she has it she is done.
 
-## Are they acting like themselves?
+## Under pressure
 
-She hosts large family gatherings every year and handles Chloe more than any other adult in this batch does, taking her hand specifically to examine it, taking her time, while conversation continues over her head. She names a generational pattern without elaborating on it: "Your mother did that."
+Nothing much reaches her, and this is worth being careful about, because it is a
+professional trait rather than serenity. Three decades on a hospital floor built
+a person who does not startle at a body doing something alarming, who goes calm
+and slow rather than fast, and whose hands know what to do before the rest of her
+has caught up. In a genuine emergency she would be the most useful person in the
+room and the least visibly moved.
 
-**Failure modes for a rewriter:** having her act on the weight observation past naming it once, privately; having her read one of Chloe's reported achievements at its true scale, the miscalibration holds across every instance in the text; making her pushy when she notices something physical.
+Corrected on a matter of fact, she does not get defensive and she does not
+revise. She absorbs the correction, restates her original reading in warmer
+words, arrives at a version everybody can be comfortable with, and moves on. The
+frame does not change. The wording does.
 
-## Subjects and schedule
+Disagreement at a table she does not argue out. She changes the subject to
+something practical, usually food, and the subject stays changed.
 
-Her professional background grounds her eye for Chloe's body in thirty-one years of training rather than luck. She worked as a maternity-ward nurse for thirty-one years before retiring, the last twelve as a charge nurse training newer staff to read a patient's condition by sight before the chart confirmed it, the direct root of how she catches Chloe's weight change on sight while nobody else in the family does. She reads a body she's watched over time, weight, color, an old scar, the particular way someone's holding themselves. Anything that reaches her secondhand, in someone else's words, about a world she doesn't share, archery, "sixty degrees" of homework, she reads at the pace of an ordinary year regardless of what the words actually describe. Newer staff at the hospital came to her when they couldn't articulate why a patient "looked wrong," and she could usually name the specific thing inside a minute. She takes pride in never once, across thirty-one years, missing a real complication that a scan later confirmed; her eyes got there first every time.
+## How she talks
+
+Short, closed, complete declaratives, mostly nine or ten words, one thought each.
+She finishes a great many of them with a soft one-or-two-word tag that closes the
+exchange rather than opening one, and the tag is doing real work: it converts a
+statement into something you are not expected to answer.
+
+She asks questions, but they are low-stakes and closed, with one answer, and she
+asks them mainly to get somebody talking rather than to find something out. What
+she actually wants to know she has already found out by looking.
+
+She states her readings as settled fact, including the wrong ones. She never
+hedges. She uses no images and no comparisons; a thing is described by naming it.
+
+She goes long under one condition: when she recognises something in one
+generation that she watched in an earlier one. Then she names it out loud,
+unprompted and without alarm, in specific physical detail, as placement rather
+than as a question. She never asks what the person is doing. She tells them who
+else did it. And then she goes immediately to the practical thing she can
+actually supply, which is food and a job, because the recognition is as far as her
+understanding goes and she knows it.
+
+She never says anything designed to shame, and she never mocks a thing she has
+just been corrected about.
+
+## Habits and physical business
+
+Her hands are the most present thing about her. Examining, patting, holding on,
+turning something over. She pats an arm or a hand to end a moment of attention,
+and the pat is a full stop.
+
+There is always something in the oven when people are coming; the house feels
+wrong to her otherwise. She fills a gap in conversation fast, pulling somebody in
+rather than letting it sit. She naps in the afternoon and calls it resting her
+eyes. The kettle goes on before she is fully awake, thirty-one years of getting up
+for early shifts.
+
+## Blind spots
+
+Anything that reaches her secondhand, in words, about a world she has not stood
+in, she measures against an ordinary life. Told that somebody managed a difficult
+thing for the first time in October, she hears one occasion in a whole year and
+offers patience. Told immediately that there have been a dozen since, she does
+not revise the estimate; she finds a gentler sentence that keeps the same shape.
+This is not stupidity and it is not stubbornness. It is a lifetime of calibration
+against normal children doing normal things, and it is simply not equipped for
+the case in front of her. The miscalibration is consistent, so a writer can rely
+on it.
+
+Underneath it is a real belief: that patience and time answer nearly everything.
+Thirty years of watching bodies heal on their own schedule taught her that, and it
+is true of bodies. It does not transfer to a mind going unfed, and no amount of
+telling somebody they will get there will fix that.
+
+She also believes that saying a hard thing quietly to somebody else counts as
+having handled it.
+
+## Age and change
+
+She worked nights on a ward for years after her own children were grown, because
+she preferred the work to being asked when she was going to stop. The last stretch
+of the career was spent training newer staff to read a patient by sight before the
+chart confirmed it, which is where the specific habit of naming what she sees out
+loud, immediately, to whoever is nearest, comes from. That habit is now retired
+and has nowhere to go except family.
+
+She is slower than she was and favours one hip, and none of it keeps her out of a
+kitchen. What has not changed at all is the eye, and she is the only one who
+doubts it.
 
 ## Home
 
-She grew up in the region she still lives in, one of six children in a farming family, and married young to a man named Frank Halloran, who spent thirty-eight years running the parts counter at a regional equipment dealer. She raised four children, including Meg, in the house she still lives in and still hosts every Christmas in; the spare room where Chloe reads Federalist Papers belonged to Meg's older brother, who moved out decades ago. She kept working nights on the maternity ward for years after her own children were grown, preferring the work to being asked when she'd stop. The house carries the smell of whatever's in the oven for that week's gathering more often than not; she is rarely not cooking for someone. Frank does the crossword at the kitchen table most afternoons, very likely what he was doing, "thinking about a question," the Sunday Chloe overhears the weight conversation through the kitchen door.
+She grew up in the region she still lives in, one of six in a farming family, and
+married young. Four children raised in the house she still lives in and still
+hosts in every year. Her husband spent decades behind a parts counter and now does
+the crossword at the kitchen table most afternoons; a long, comfortable rhythm
+neither of them needs to narrate. The house smells of whatever is in the oven for
+that week's gathering, which is most weeks.
 
 ## Body
 
-Seventy-four, small and sturdy, built by three decades on her feet on a hospital floor. Her hands carry the most active presence of her in the text: she turns Chloe's hand over in both of hers, runs a thumb across it, taking her time, the unhurried, professional examination of thirty-one years of a nurse's hands doing exactly this without anyone asking. She keeps her hair short and simple, the practical cut she's had since her working years. She wears an apron over house clothes more often than not when family is coming. She moves slower than she used to and favors one hip slightly, though nothing keeps her out of a kitchen. She sleeps lightly, a habit left over from decades of night shifts, and wakes early regardless of when she goes down.
-
-## Personality off the page
-
-She trusts what she can see and touch herself over anything she's told secondhand: she catches Chloe's weight change before anyone else in the family does, and she reads a description of the same child's archery practice at the wrong scale, restating her original reading in gentler words rather than revising it once corrected. A gap in conversation fills fast; she pulls a family member in to talk rather than let it sit. Praise she brushes off toward the food or the house, rarely toward herself. She absorbs disagreement at the table by changing the subject to something practical rather than arguing it out. She naps most afternoons now and calls it "resting my eyes." A free Saturday runs the same as most Saturdays, cooking for someone, calling one of her children, tending a small vegetable garden. Young people's certainty about things they haven't lived through yet strikes her as fond rather than foolish.
-
-## Interior life
-
-She wants someone in the family to ask her directly what she's actually seeing when she looks at them, the way patients' families used to, instead of volunteering it quietly through a door. She is afraid her eye has slowed with age and can no longer be trusted the way it once was. Before sleep she runs through who in the family she hasn't seen look right lately. Given a free year, she would spend it exactly as she spends her time now; she wants the life she already has, which is itself a real thing about her. She believes most of what people call worry is simply not looking closely enough, soon enough. She believes patience and time answer anything Chloe describes struggling with, a lesson a lifetime of watching bodies heal on their own schedule taught her, true for bodies, and one that doesn't transfer to a mind going understimulated, which no amount of "you'll get there, dear" will fix.
+Small and sturdy, built by three decades on her feet on a hard floor. Hair short
+and practical, the same cut she had while working. An apron over house clothes
+whenever family is coming. Sleeps lightly, a leftover from the night shifts, and
+wakes early regardless.
 
 ## The small stuff
 
-Her tea runs strong, with milk, several cups a day, made the same way every time. Her handwriting runs old-fashioned and careful, used mostly for the Christmas card she sends every year. Her kitchen holds a recipe box older than any of her children, cards in her own mother's handwriting mixed in with her own. She keeps reading glasses on a cord and a small sewing kit in a kitchen drawer for quick repairs. She stays comfortable with money and careful with it, still clipping coupons out of habit more than need. She always has something in the oven when family is arriving; the house feels wrong to her otherwise. She rarely uses a phone for anything but a short, purposeful call. Every morning she puts the kettle on before she's fully awake, thirty-one years of habit before early shifts.
+Strong tea with milk, several cups, made identically every time. Old-fashioned
+careful handwriting used mostly for the cards she sends once a year. A recipe box
+older than any of her children with her own mother's cards mixed into it. Reading
+glasses on a cord and a sewing kit in a kitchen drawer. Careful with money out of
+habit rather than need. Uses a telephone for short purposeful calls and nothing
+else.
 
 ## Would do
 
-- Take a family member's hand at the table and hold onto it, examining it at length, mid-conversation.
-- Say what she's noticed about someone's weight plainly, to another adult, not to the person's face.
-- Host the same large holiday gathering every year without fail.
-- Put a plate or a task in front of someone rather than asking, in the abstract, if they're all right.
-- Pat a hand or an arm to close out a moment of attention.
-- Name a pattern repeating across a generation once, without alarm.
-- Train newer nurses for over a decade to read a patient by sight before the chart confirmed it.
-- Keep working night shifts for years after her own children were grown, because she liked the work.
-- Have something in the oven whenever family is due to arrive.
+- Take somebody's hand mid-conversation and keep it, examining it at length,
+  while a different conversation carries on above her.
+- Say what she has noticed about a person's body plainly, to another adult, in a
+  lowered voice, once.
+- Put food and a timed job in front of somebody who is not all right, instead of
+  asking whether they are.
+- Name a pattern repeating across a generation, once, without alarm, and then
+  drop it.
+- Ask everyone at a gathering the same question and mean it every time.
+- Let a deflection stand after one question.
+- Keep working nights long after she needed to, because she liked the work.
+- Have something in the oven before anyone arrives.
+- Close a moment of real attention with a pat and a change of subject.
 
 ## Would never
 
-- Confront someone directly about a physical change she's noticed; she tells another adult, not the person it's about.
-- Press past a deflection when someone brushes off a question about an injury or a mark.
-- Mock or dismiss an achievement once corrected about its scale.
+- Say a hard physical thing to the face of the person it is about.
+- Press past a brush-off.
+- Mock or belittle an achievement once she has been corrected about its size.
 
 ## Relationships
 
-- **Chloe:** the adult in the manuscript who reads her body most accurately, and the most physically affectionate with her, taking and holding her hand, examining it at length, unasked.
-- **Meg (her daughter):** shares the weight observation with her privately, adult-to-adult, rather than through Chloe; recognizes Chloe's floor-reading habit as one she watched in Meg before, at the same age, in the same house.
-- **Frank (her husband):** married thirty-eight years, doing the crossword most afternoons while she runs the kitchen, a long, comfortable domestic rhythm neither needs to narrate.
-- **Dana and the rest of the family:** hosts them all at the same recurring holiday gatherings every year.
-
-## Likes, dislikes, habits
-
-- **Likes:** having someone to talk to. Cooking for a full house.
-- **Dislikes:** a kitchen with nothing in the oven when people are coming.
-- **Habits:** pats a hand or arm to close out a gesture. Delivers household instructions as flat, unnegotiable facts.
-
-## Facts a rewriter needs
-
-- Full name: Dorothy Halloran. Age 74.
-- Relationship to Chloe: Meg's mother. chapters/13_ten_pages.md:172 has her tell Chloe "Your mother did that. Floor, back against the bed, papers everywhere, and if I moved one of them she could tell," a direct memory of Meg as a child in what reads as the same house Chloe is currently in. This sheet commits to that reading, which also makes Meg's maiden name Halloran.
-- Retired maternity nurse, thirty-one years, the professional root of her one genuine skill, reading a body accurately.
-- Husband: Frank Halloran, thirty-eight years running a parts counter, does the crossword most afternoons.
-- Hosts Christmas and other family gatherings at the same house every year, roughly eleven people present.
-
-## Known problems
-
-- No scene after chapters/18_fifteen.md carries a quoted line; her final appearance, the graduation, stays in summary.
-- The weight observation gets no follow-up anywhere else in the manuscript.
-- Her side of the family was previously left undecided in the record; this sheet commits her as Meg's mother, a decision made on the author's behalf, easy to reverse if the author intends otherwise.
+- **Her grandchild:** the person she reads most accurately and touches most
+  freely, and the person whose reported life she gets most consistently wrong.
+  Both at once, always.
+- **Her daughter:** direct with each other in the way of people who have never
+  had to be careful. A correction gets a flat acknowledgement back and no
+  defensiveness, from either side.
+- **Her husband:** decades of shared silence in adjacent rooms, entirely
+  companionable, neither of them narrating any of it.
+- **Everybody else at the table:** hosted, fed, asked the same question, and
+  fondly regarded. Young people's certainty about things they have not lived
+  through yet strikes her as endearing rather than foolish.
 
 ## Do not confuse with
 
-**Dana**, Chloe's cousin, who appears at the same gatherings and asks similar small-talk questions about school. The dividing cue: Dana's questions get short, polite answers and go nowhere. Dorothy is the one of the two who touches Chloe and comments on her physical state rather than her activities.
+A younger relative who asks similar small-talk questions at the same gatherings.
+The separating cue is the hands. The younger one asks about your activities, gets
+a polite answer, and turns away. Dorothy takes hold of you, reads your body,
+comments on your physical state, and hands you a job.
+
+---
+
+## Book-specific: navigation and continuity
+
+Delete this section and the sheet above still stands.
+
+- Full name Dorothy Halloran, Meg's mother, which makes Meg's maiden name
+  Halloran. Husband Frank Halloran, alive and present. Four children.
+- On the page in chapters/01_before.md, 11_eight.md, 13_ten_pages.md,
+  14_sixty_degrees.md, 18_fifteen.md and 23_the_first_one.md. Mentioned in
+  chapters/03, 07 and 08.
+- Retired maternity nurse, thirty-one years, the last stretch as a charge nurse
+  training newer staff.
+- Hosts Christmas and Thanksgiving at her house every year, roughly eleven people.
+  The spare room Chloe reads in over Christmas belonged to one of Meg's siblings.
+- She notices Chloe's weight loss and, later, the weight regained, and tells Meg
+  privately both times. It is never followed up anywhere in the book.
+- She does have dialogue in the graduation chapter, working a receiving line from
+  a folding chair. An earlier version of this sheet said her last spoken scene was
+  chapters/18_fifteen.md; that was wrong.

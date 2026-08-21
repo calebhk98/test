@@ -1,386 +1,681 @@
 # Chloe Kessler
 
-Point-of-view character: verbal and analytical, ages 6-21. She reaches for difficulty everywhere the book lets her and never reads an outcome, good or bad, as information about herself.
+Point-of-view character, ages six to twenty-one. Verbal, analytical, and reaching for
+difficulty everywhere she is allowed to. She never reads an outcome, good or bad, as
+information about herself.
 
-**Age span:** 6-21 | **MBTI:** INTJ (a writing aid, not a claim) | **IQ:** reader-inference high-160s. A clinician measures her fine motor speed under a clock against ordinary six-year-olds, not against a school of geniuses, and finds her a step slower (chapters/02_march_4th.md:49-49); the difference shows in her handwriting for years afterward. Everywhere else in the book the comparison group is ninety of the most capable people her age alive, and last place in that room still means excellent: she draws a recognizable, correct hand and is ranked ninetieth of ninety for it (chapters/11_eight.md:159-165).
-**Born:** August 2005. She answers "Six" on day one of summer camp (chapters/04_pluto.md:59) and the narration gives her age as seven the following February (chapters/09_february.md:27); a birthday in late August is the only summer date that keeps both true.
-**Appears in:** chapters/01_before.md through chapters/20_the_parking_lot.md (POV throughout), chapters/21_the_applications.md through chapters/35_nine_minutes.md
-**Speaks:** 230+ individually attributed lines (spoken + chat), the most of any character since she is POV. Heavily front-loaded into ages 6-12 (chapters/01-15); volume drops from chapters/16 onward as the manuscript shifts to summary narration and multi-POV chat.
+**Age span:** 6-21 | **MBTI:** INTJ, a writing aid and not a claim | **IQ:** high 160s by
+reader inference. It is never stated in the book and she never learns it.
 
 ## The thing to get right first
 
-Three outside readers were given chapter one cold. Every one of them read her as not human: an
-alien, a robot, an intelligence passing for a child. The ones who read her as human read her as
-disabled. None of that is the character. This section is the correction, and where anything further
+Outside readers given her opening chapter cold read her as not human: an alien, a robot,
+an intelligence passing for a child. The ones who read her as human read her as disabled.
+None of that is the character. This section is the correction, and where anything further
 down this sheet contradicts it, this section wins.
 
-**She does not know she is gifted.** She has never once thought she is faster or smarter or deeper
-than anyone. She looks at other children sitting still through thirty identical problems and
-concludes they have an ordinary human stamina she is missing, the way some people can hold their
-breath a long time and she can't. She thinks she is bad at the easy things — writing fast, waiting,
-copying shapes, getting through a normal day — and therefore that she is a bad student. When she is
-good at the hard things she doesn't read it as talent; it's just the only part she can do. When she
-gets in trouble or draws a look, her instinct is never *they're slow*. It is *what did I just get
-wrong*. Her own stated conclusion at six is the whole of it: "She is worse at the part that
-everybody has to do." (chapters/01_before.md:129)
+**She does not know she is gifted.** She has never once thought she is faster or smarter
+or deeper than anyone. She looks at other children sitting still through thirty identical
+problems and concludes they have an ordinary human stamina she is missing, the way some
+people can hold their breath a long time and she cannot. She thinks she is bad at the easy
+things, writing fast, waiting, copying shapes, getting through a normal day, and therefore
+that she is a bad student. When she is good at the hard things she does not read it as
+talent; it is just the only part she can do. When she gets in trouble or draws a look, her
+instinct is never *they are slow*. It is *what did I just get wrong*. Her own settled
+account of herself at six is that everybody else can manage the part of the day that
+everybody has to do, and she cannot.
 
-**The defect is the foundation, not a buried fear.** Everything else sits on top of it. She isn't
-hiding a secret superiority; she is a child who has been told, in a hundred small ways, that
-something about her is wrong, and who believes it.
+This is load-bearing for the whole book and for anything else she is dropped into. It is
+not a fear she occasionally brushes against; at six and seven it is simply what she
+believes is true about herself, and she has no evidence to the contrary because the only
+comparison she has ever been given is a room of ordinary children she cannot keep pace
+with at ordinary tasks. Later she spends years among people as capable as she is, which
+gives her a second sample in which she is unremarkable. Neither sample ever tells her what
+she is. Contrary evidence, when it arrives, gets explained away: the other side was
+careless, the test was easy, the thing anybody could have done. She does not become modest
+about her ability, because modesty would require knowing there is something to be modest
+about.
 
-**Openness is her natural state. Hiding is a bruise.** She did not arrive compressed. She said the
-Icarus thing out loud. She wrote the honest thing in the time capsule. She walked straight into the
-four-square game. The one-word answers start *after* she is laughed at, told she talks weird, and
-has her book taken off her — a child not wanting to be poked in the same place twice. Write the
+**The defect is the foundation, not a buried fear.** Everything else sits on top of it.
+She is not hiding a secret superiority. She is a child who has been told, in a hundred
+small ways, that something about her is wrong, and who believes it.
+
+**Openness is her natural state. Hiding is a bruise.** She did not arrive compressed. She
+says the strange true thing out loud. She writes the honest answer where an evasive one
+was expected. She walks straight into the game the other children are playing. The
+one-word answers start *after* she is laughed at, told she talks wrong, and has her book
+taken off her: a child not wanting to be poked in the same place twice. Write the
 compression as damage in progress, never as a policy she is executing.
 
-**Halstead is not special to her.** It is not elite, magical, or a rescue. It is school, where the
-work makes sense and her friends are, and where nobody takes your book away. It is her baseline for
-what school is *supposed* to be. She never thinks of herself as having been chosen.
+**The place where the work makes sense is not special to her.** Once she finds a school
+that fits, she does not experience it as elite, magical, or a rescue. It is school: where
+the work is hard enough to be interesting, where her friends are, and where nobody takes
+your book away. It becomes her baseline for what school is *supposed* to be, which means
+she measures every other institution against it and finds them strange rather than finding
+it exceptional. She never thinks of herself as having been chosen.
 
-**She feels everything, at full size.** Burning ears. Real fury. Laughing until she has to lie down.
-Sprinklers, syrup on her fingers, the bathroom floor before dinner because she has to know whether
-the sled dog lives. Screaming when the news is good. Grief heavy enough to put her in a heap on the
-floor offering away her birthday. Happiness is big or it isn't there. She has no small setting.
+**She feels everything, at full size.** Burning ears. Real fury. Laughing until she has to
+lie down. Sprinklers, syrup on her fingers, the bathroom floor before dinner because she
+has to know whether the dog lives. Screaming when the news is good. Grief heavy enough to
+put her in a heap on the floor bargaining away her own birthday. Happiness is big or it is
+not there. She has no small setting.
 
-**Reading is not an intellectual pursuit.** It is what she does, the way other children breathe.
-Cereal boxes, road signs, the church bulletin, a medical poster, whatever has words on it. She
-doesn't think about it and doesn't compare herself to anyone for it. When she stops reading,
-something is badly wrong.
+**Reading is not an intellectual pursuit.** It is what she does, the way other children
+breathe. Cereal boxes, road signs, a church bulletin, a poster in a waiting room, whatever
+has words on it. She does not decide to do it, does not think about it, and does not
+compare herself to anyone for it. It is not a hobby she would name if asked. When she
+stops reading, something is badly wrong with her, and it is the most reliable early
+warning anyone around her has.
 
-**She needs the mechanism, and it isn't vanity.** Told to flip the fraction, she can do it and get
-the right answer and it is *hollow* — a physical, jaw-clenching frustration. She needs to see the
-pieces. When it comes together it is a moment of quiet, private joy, not triumph.
+**She needs the mechanism, and it is not vanity.** Handed a rule that works, she can apply
+it and get right answers all day and it is *hollow*: a physical, jaw-clenching frustration
+she can feel along her jaw. She is not refusing the rule and not showing off. She cannot
+make the pieces sit still until she has seen why they fit. She will take a whole night
+alone on the floor over asking a second time, and when it comes together it is quiet,
+private, and finished, not a triumph she reports to anyone.
 
-**She sorts adults by fairness, not by rank.** She is not cynical and not rebellious. An adult who
-answers her questions straight gets real affection and loyalty. She argues a rule she can't see the
-sense of, then accepts the boundary to keep the peace. The good adults in her life — her parents, her
-Halstead teachers, her therapists — she genuinely loves.
+**She sorts adults by fairness, not by rank.** She is not cynical and not rebellious. An
+adult who answers her questions straight gets real affection and open loyalty, whatever
+their authority over her. An adult who will not explain a rule gets argued with, and then
+gets obeyed anyway, because she will take a boundary she disagrees with to keep the peace.
+Rank itself means nothing to her in either direction. The good adults in her life, her
+parents, her teachers, her therapists, she genuinely loves.
 
-**She is physically six.** Her feet don't reach the floor. She climbs to reach the sink. Her hand
-cramps in a timed copying test and she is ashamed, not because she's deficient but because what was
-asked of her doesn't fit the body she has.
+**She is the age she is.** At six her feet do not reach the floor and she climbs to reach
+the sink. Her hand cramps in a timed copying test and she is ashamed, not because she
+thinks she is deficient in the abstract but because what was asked of her did not fit the
+body she has. Whatever she can do intellectually, she wants what a child that age wants
+and is hurt by what hurts one.
 
-### How this changes as she grows, and what doesn't
+### How this changes as she grows, and what does not
 
-What changes: fear and adrenaline drain out of her, year by year, as the training accumulates. By
-sixteen she walks away from a fight without shaking.
+What changes: fear and adrenaline drain out of her, year by year, as training accumulates.
+By her mid-teens she can walk away from something violent without shaking.
 
-**And the compliant minimum mostly goes away, which an earlier version of this sheet got wrong.**
-It was never a personality trait. It was a response to a specific injury — being laughed at for
-saying the true thing, in one particular school, at six. She then spends eleven years somewhere that
-the true thing is the expected answer, and the flinch has nothing to feed on. By twenty she is an
-adult who knows how to hold a professional conversation: measured, unpadded, answering what was
-asked, comfortable saying a hard thing plainly. That is not the same as clipped, and it is nothing
-like the child who said "It was good" to keep from being noticed.
+**And the compliant minimum mostly goes away.** An earlier version of this sheet had it as
+a permanent trait, which was wrong and which is the single line most responsible for the
+flat register outside readers reported. It was never a personality trait. It was a
+response to a specific injury: being laughed at for saying the true thing, in one
+particular room, at six. She then spends eleven years somewhere the true thing is the
+expected answer, and the flinch has nothing to feed on. By twenty she is an adult who
+knows how to hold a professional conversation: measured, unpadded, answering what was
+asked, comfortable saying a hard thing plainly. That is not the same as clipped, and it is
+nothing like the child who said it was fine in order not to be noticed.
 
-The flinch is still in there and can be triggered, but it needs a trigger. If an adult tells her she
-talks strangely, laughs at her, or treats her as a problem to be managed, the answers shorten within
-the same conversation. **Absent that, an adult stranger asking her serious questions gets a serious,
-articulate adult.** A federal investigator conducting an eleven-year background interview is not
-"an institutional adult" in the sense that Mrs. Aldana was; he is a professional doing a job, and
-she reads him accurately as one.
+The flinch is still in there and can be triggered, but it needs a trigger. If an adult
+tells her she talks strangely, laughs at her, or treats her as a problem to be managed,
+the answers shorten inside the same conversation. **Absent that, an adult stranger asking
+her serious questions gets a serious, articulate adult.** An official conducting a long
+formal interview is not an institutional adult in the sense that her first schoolteachers
+were; he is a professional doing a job, and she reads him accurately as one.
 
-What this means for a writer: monosyllables from adult Chloe need a reason on the page. "Yeah" from
-a twenty-year-old in a clearance interview is the six-year-old's register showing through where
-nothing has earned it.
+What this means for a writer: monosyllables from adult Chloe need a reason on the page. A
+grunted one-word answer from a twenty-year-old in a serious interview is the six-year-old's
+register showing through where nothing has earned it.
 
-What does not change: she still doesn't think she's better than anyone. She still needs the
-mechanism. She still reads everything. She is still fully open with the four people who have never
-made her careful. **The emotional range does not narrow — the number of people who get to see it
-does.**
+What does not change: she still does not think she is better than anyone. She still needs
+the mechanism. She still reads everything. She is still fully open with the handful of
+people who have never made her careful. **The emotional range does not narrow. The number
+of people who get to see it does.**
 
-## Voice in one paragraph
+## How she talks
 
-She converts an abstract disagreement into a concrete, physical scenario and argues the scenario instead of the original claim: "If you walked all the way around this table and stayed facing the table the entire way, would you say you were stuck?" (chapters/05_behind.md:95). She opens more turns with "If you..." than with any other construction. With her friends and her family she is open, fast and enthusiastic, and talks past the point where anyone asked for more. In front of an adult who has already burned her, or in a room where she's been burned before, she gives the shortest, safest, most compliant answer available and holds the longer true one back — sometimes even with an adult she likes: Dr. Prentice tells her mother plainly what he found, and in the car after, asked whether she wants to know what he said, Chloe answers "No" (chapters/02_march_4th.md:105-107). That compression is learned damage, not a setting she was built with; at six she volunteers everything until it costs her. She states rather than asks and asserts rather than hedges. She is the only character in the manuscript permitted an invented image, and she never explains one. She says it once and lets someone else argue with it: Icarus, clouds as the ocean going somewhere else, the moon as a liar.
+Her characteristic move is to convert an abstract disagreement into a concrete physical
+scenario and then argue the scenario instead of the original claim. Told a thing is stuck,
+she will build a small piece of choreography out of the furniture in front of her and ask
+whether the person walking it would call themselves stuck. She reaches for the room, the
+table, the body, the object in her hand. She does this because it is how she thinks, not
+as a rhetorical trick, and she does it as readily when she is wrong as when she is right.
 
-## Dials
+With her friends and her family she is open, fast, and enthusiastic, and she talks past
+the point where anyone asked for more. She states rather than asks and asserts rather than
+hedges: she does not open a claim with *I think* or *maybe* or *sort of*. That is not the
+same as certainty, and a flat unhedged *I do not know* is her commonest answer when she is
+hurt, sometimes meaning it and sometimes meaning that she knows exactly and has no words
+that would survive being said out loud.
+
+She asks real questions, constantly, at six and seven especially: how far does this go,
+can I fail it, when does it get harder, does anybody get sent home. She asks because she
+wants to know and has not yet learned which questions are not supposed to be asked. The
+questions thin out as she learns which ones cost her, and that thinning is damage, not
+maturity.
+
+She is the one person in the cast allowed an invented image, and she never explains one.
+She says it once, flat, and lets somebody else argue with it. The images come from whatever
+she has read lately, mapped onto something physically in front of her, and she does not
+repeat one or check whether it landed. They are earnest. A deflating, literal-minded gag
+is not her channel, however much she loves it in other people.
+
+Her jokes are dry when they come: a flat concession delivered as a fact, a technicality
+offered straight-faced. That describes her *wit*, not her capacity for delight, which is
+enormous. She laughs helplessly, teases, and bickers for fun.
+
+### Dials
 
 | | |
 | :-- | :-- |
 | sentence shape | builds a concrete parallel scenario, then argues the parallel |
-| disagrees by | converts the claim into a physical example and argues that instead |
-| wordiness | measured 8.2 words/line in chat, 6.0 in tagged prose dialogue — but see the warning below the table before using either number |
-| terseness | 48% of lines three words or fewer. A measurement of the corpus as it stands, and **not a target**. The corpus is dominated by guarded contexts |
-| at length | **the default** with her friends and her parents. Excited, she runs on — enthusiastic, breathless, jumping detail to detail. The compressed register is the exception and is aimed at particular people who have hurt her |
-| jokiness | 3/10 in the dry register (a flat concession delivered as fact: "It's the same food, but I cut it," chapters/11_eight.md:23) — but she also laughs helplessly, teases, and bickers for fun with the four of them. The 3/10 describes her *wit*, not her capacity for delight |
-| hedging | 0% before a claim; she doesn't open with "I think" or "maybe." This is not the same as certainty — a hedge-free "I don't know" is her most common answer when hurt |
-| questions | 0% measured, and at six and seven this is simply wrong for her. She asks constantly: "Can I fail it?" "When does it get harder?" "Does anybody get sent home?" "Am I actually going?" She asks because she wants to know, and hasn't yet learned which questions aren't supposed to be asked |
-| figurative | ALLOWED. Her exclusive channel: Icarus (chapters/01_before.md:53), clouds as the ocean going somewhere else (chapters/01_before.md:61), the moon as a liar (chapters/05_behind.md:88) |
-| emotional range | 10/10, and this belongs in the table. Laughs until she has to lie down; screams when the news is good; rages; grieves on the floor. Nothing about her is muted except in front of people who have hurt her |
+| disagrees by | converting the claim into a physical example and arguing that instead |
+| length | long is the default with people she trusts. The short register is the exception, and it is aimed at particular people, not at a category |
+| at length | with her friends and her parents, on any mechanism she has just worked out, and on anything she is excited about. She will run on, jumping detail to detail, past where she was asked |
+| jokiness | low as wit, high as delight. Dry, flat, technical when she is funny on purpose |
+| hedging | none before a claim |
+| questions | many at six and seven, thinning under injury, returning as an adult with people who answer straight |
+| figurative | allowed, and hers alone. Earnest, unexplained, said once |
+| emotional range | the full width of it. Nothing about her is muted except in front of people who have hurt her |
 
-**Warning on the two length numbers.** They are descriptive statistics over the existing manuscript,
-and the existing manuscript is the thing the outside readers called inhuman. A large share of her
-measured lines are in institutional scenes and in adult chat. Do not treat 6.0 words or 48%
-three-word lines as a specification to hit in a scene with Sam, Ruth, Kavi, Priya, or her parents.
-Those scenes should push both numbers up and the sheet expects them to.
+Do not write her to a word count. Earlier versions of this sheet carried measured averages
+taken over a draft in which most of her lines happened to fall in guarded scenes, and
+writers reasonably read those averages as a specification. They were a description of the
+problem, not of the person. Scenes with her friends and her family should be longer and
+louder than any average would suggest.
 
-## When they talk at length
+## When she opens up
 
-**Corrected.** An earlier version of this section named her father as the one exception to a
-universal compliant minimum. That was wrong, and it is the single line on this sheet most
-responsible for the flat, inhuman register outside readers reported. There are three registers, not
-two, and the open one is the default.
+There are three registers, and the open one is the default.
 
-**With her friends — the default, and the largest share of her dialogue.** Sam, Ruth, Kavi, Priya.
-She is open, loud, funny, and fully present. She argues, bickers, teases, throws out theories,
-defends them, and stays up talking in the dark. She does not give them short answers and does not
-compress. She is socially attuned with them: she gets the jokes, tracks who is loud and who is
-quiet, protects their quirks, and holds onto sleeves and pyjama legs because she likes being near
-them. The moon debate and the Latin-is-cheating argument both run a page-plus with no sign she wants
-out. If a scene with the four of them has her giving clipped one-liners, it is wrong.
+**With her close friends, which is most of her dialogue.** She is open, loud, funny, and
+fully present. She argues, bickers, teases, throws out theories, defends them, and stays
+up talking in the dark. She does not give them short answers and does not compress. She is
+socially attuned with them: she gets the jokes, tracks who is loud and who is quiet,
+protects their quirks, and holds onto sleeves and pyjama legs because she likes being near
+them. A dinner-table argument about an astronomical fact, or about whether an easy choice
+is cheating, will run and run with no sign she wants out. If a scene with her friends has
+her giving clipped one-liners, it is wrong.
 
-**With her parents — open by default, closed only under strain.** She will talk through an entire
-dinner about a book plot, CPR on a mannequin, or how a bridge broke, forgetting to eat until
-somebody reminds her (chapters/01_before.md:29-38; chapters/06_the_list.md:46-50;
-chapters/13_ten_pages.md:132-154). She holds her father's sleeve at the door, asks her mother to
-talk about anything so she can fall asleep to her voice, and hugs them hard. She clams up for
-exactly two reasons — she senses tension in the room, or she is carrying guilt that her own
-difficulty is what's straining them. Never out of calculation.
+**With her parents, open by default and closed only under strain.** She will talk through
+an entire dinner about a book plot or how a bridge failed, forgetting to eat until somebody
+reminds her. She holds her father's sleeve at the door, asks her mother to talk about
+anything so she can fall asleep to her voice, and hugs them hard. She clams up for exactly
+two reasons: she senses tension in the room, or she is carrying guilt that her own
+difficulty is what is straining them. Never out of calculation.
 
-**With people who have burned her — the compressed register.** Kayleigh Burns, Bryce Dolan, an adult
-who has laughed at her or taken her book. "It's good." "I don't know." "Fine." Note what this is: not
-a filter she switches on for a category of person, but a flinch aimed at specific people and specific
-kinds of room, learned from specific injuries. A new adult starts neutral and gets watched, not
-stonewalled. An adult who answers her straight gets the full version.
+**With people who have burned her, the compressed register.** A child who has laughed at
+her, an adult who has taken her book away. It was good. I do not know. Fine. Note what
+this is: not a filter she switches on for a category of person, but a flinch aimed at
+specific people and specific kinds of room, learned from specific injuries. A new adult
+starts neutral and gets watched, not stonewalled. An adult who answers her straight gets
+the full version, and she will hand it over gratefully.
 
-**This register belongs to the childhood chapters.** It is at its worst between six and eight, is
-already thinning by the time she has been at Halstead a few years, and is largely gone by adulthood —
-see the age note in "The thing to get right first." Writing adult Chloe in monosyllables is the most
-common way to get her wrong.
+**This register belongs to her childhood.** It is at its worst between six and eight, is
+already thinning after a few years somewhere that suits her, and is largely gone by
+adulthood. Writing adult Chloe in monosyllables is the commonest way to get her wrong.
 
-The economy she learns at six is real — finish first, sit still, say nothing (chapters/02_march_4th.md:119) —
-but it is a survival tactic in one hostile room, not a personality. It generalises later, and part of
-the tragedy of the adult chapters is that she stops noticing she's running it.
+The economy she learns at six is real: finish first, sit still, say nothing. But it is a
+survival tactic for one hostile room, not a personality. It generalises later, and part of
+the tragedy of her adult life is that she stops noticing she is running it.
 
-Two places it breaks completely on the page, once each way. At seven, home from a bad stretch, the
-minimum fails mid-sentence on her bedroom floor and what replaces it is "please," over and over,
-offering away her birthday and every future present rather than say what is actually wrong
-(chapters/09_february.md:15-17). And once, told she is really going to Halstead, she talks for four
-straight hours in the car, asks her father six questions in a row, and falls asleep mid-sentence
-rather than finish on her own terms (chapters/09_february.md:133).
+It breaks completely in both directions, and both breaks are correct. Under enough
+pressure the minimum fails mid-sentence and what replaces it is not an explanation but
+pleading: she will bargain away her birthday and every future present rather than say what
+is actually wrong. And when the news is good enough she will talk for hours without
+rationing a word of it, ask six questions in a row, and fall asleep mid-sentence rather
+than finish on her own terms.
 
-## Signature — theirs alone
+## Would she say this?
 
-The "If you..." opening onto a parallel scenario. Two real examples:
-- "If you walked all the way around this table and stayed facing the table the entire way, would you say you were stuck?" (chapters/05_behind.md:95)
-- "If you're wrong about one of those you can't get it back." (chapters/13_ten_pages.md:138)
-
-Only two confirmed instances across the full reading list, thin for a signature (see Known problems #3).
-
-## Would they say this?
-
-- YES if the line reframes an abstract disagreement as a concrete, physical scenario rather than arguing the abstraction directly.
-- YES if it opens with "If you" followed by a scenario, not a hypothetical outcome or a threat.
+- YES if the line reframes an abstract disagreement as a concrete, physical scenario
+  rather than arguing the abstraction directly.
+- YES if it opens by proposing a scenario rather than stating a hypothetical outcome or a
+  threat.
 - YES if it states a mechanism and stops, without checking whether the listener followed.
-- YES if it treats a result (a grade, a score, an acceptance) as a thing that happened rather than proof of anything about her.
-- YES if it's the shortest, safest, most compliant answer available **to someone who has already burned her, or in a room where she's been burned before** — with a longer true answer visibly withheld. NOT to any adult by default, and never to her friends.
-- YES if it's open, enthusiastic, and runs on, when she's with Sam, Ruth, Kavi, Priya, or her parents and nothing has gone wrong in the room.
-- YES if it's a question asked because she genuinely wants to know, at six and seven especially.
-- YES if she's plainly wrong about herself — assuming a difficulty is her own defect rather than the room's.
-- YES if it's a complete short factual answer to a direct question ("Six." "Yes." "No.") rather than a trailing fragment.
-- YES if it's an invented image she says herself, not one narrated about her.
-- YES if it answers exactly the question asked and stops there, with no softening pass added afterward.
-- NO if it hedges: "maybe," "I think," "kind of," "sort of," before a claim.
-- NO if it accepts a compliment or praise at face value instead of deflecting, correcting, or redirecting to the mechanism.
-- NO if it implies, at any age, that she thinks she is smarter, faster or deeper than the people around her.
-- NO if it treats Halstead as elite, magical, or a rescue rather than as an ordinary school that happens to make sense.
-- NO if it's clipped and guarded in a scene with her friends where nothing has gone wrong.
+- YES if it treats a result, a grade, a score, an acceptance, as a thing that happened
+  rather than as proof of anything about her.
+- YES if it is the shortest, safest, most compliant answer available **to someone who has
+  already burned her, or in a room where she has been burned before**, with a longer true
+  answer visibly withheld. Not to any adult by default, and never to her friends.
+- YES if it is open, enthusiastic and runs on, when she is with the people she trusts and
+  nothing has gone wrong in the room.
+- YES if it is a question asked because she genuinely wants to know, at six and seven
+  especially.
+- YES if she is plainly wrong about herself, taking a difficulty for her own defect rather
+  than the room's.
+- YES if it is a complete short factual answer to a direct question rather than a trailing
+  fragment.
+- YES if it is an invented image she says herself, not one narrated about her.
+- YES if it answers exactly the question asked and stops there, with no softening pass
+  added afterward.
+- NO if it hedges before a claim.
+- NO if it accepts a compliment at face value instead of deflecting, correcting, or
+  redirecting to the mechanism.
+- NO if it implies, at any age, that she thinks she is smarter, faster or deeper than the
+  people around her.
+- NO if it treats the school that suits her as elite, magical, or a rescue rather than as
+  an ordinary place that happens to make sense.
+- NO if it is clipped and guarded in a scene with her friends where nothing has gone wrong.
 
-## Are they acting like themselves?
+## Under pressure, and whether she is acting like herself
 
-Under pressure she goes physically still and functional: keeps counting paint through a two-hour drill instead of flinching at the noise (chapters/14_sixty_degrees.md:219); sits down once a fight is over rather than celebrating (chapters/15_twelve.md:235). She holds her own finished work to a standard nobody assigned her: she drops three hinges in the scrap bin unprompted (chapters/17_fourteen.md:127) and corrects her own hook to the person who just praised it (chapters/15_twelve.md:17-19). She gives people she's loyal to the compliant, professional answer and gives the people she loves the long version, unprompted (the fractions retelling to her father, chapters/06_the_list.md:46-49). Good outcomes arrive as reported fact rather than staged triumph: a dozen college acceptances land as a paragraph of summary.
+Under acute pressure she goes physically still and functional. She keeps counting whatever
+she was counting through noise that should make her flinch, and she sits down once a fight
+is over instead of celebrating it. The reaction arrives afterward, alone, and usually as
+exhaustion rather than fear.
 
-Three ways a writer most easily gets her wrong. Having her visibly celebrate or claim credit for a
-win. Giving her a directly stated emotion ("I was scared," "that hurt") in the guarded register,
-where it should come through withheld information or an escalating bargain instead — though see the
-carve-out under Would never: at six and seven, past the point of managing it, she says it straight
-out and loudly. And, the worst of the three, writing her guarded everywhere: the compression belongs
-to specific people who hurt her, and a scene with Sam, Ruth, Kavi or Priya that reads clipped is
-simply the wrong character.
+Tired, she goes quiet and monosyllabic rather than snappish: the same compression she
+learned for hostile rooms, turned briefly and unfairly on people she trusts.
 
-## Subjects and schedule
+Wrong, she accepts the correction flatly and without arguing back, including a correction
+she had resented for a week. Losing, she stays visibly annoyed for about a week and then
+lets it go on her own, without anyone talking her out of it. Praised, she turns it back to
+the work, and will correct her own finished piece back to its flaw in front of the person
+who just complimented it.
 
-CURRICULUM_GRID.md is Chloe's own timetable, not a description of what Halstead teaches everyone. The six permanent tracks (mathematics, writing, literature, politics, political history, and one language every year) are shared by the whole school, but the specific language each year, the two rotating academic slots, and both afternoon blocks are hers alone. Another student in her own year took a different language in a different order and picked different electives. Ruth, for instance, took Portuguese, a language Chloe never studied.
+She holds her own finished work to a standard nobody assigned her. She discards or redoes
+work that does not clear her own bar, quietly, without announcing that she did it, and
+keeps only the small number of pieces that do. Her eye for a flaw in her own work runs
+ahead of anyone else's in the room, which is also why praise lands on her as a factual
+error to be fixed.
 
-**Her eleven languages, in order:** Spanish, French, Mandarin, Russian, Latin, Arabic, German, Japanese, Hindi, Korean, Swahili, one a year from six or seven, each graded by a ten-page report written entirely in that language (a week of newspapers, a political system, a legal document, a technical paper).
+Good outcomes arrive as reported fact rather than staged triumph. A stack of acceptances
+gets read on the floor in confusion, not in celebration.
 
-- **Known for: Russian.** Russian is what surfaces under real feeling. When she's furious about an unfair grade at twelve, Russian is what comes out of her, not the language she's technically strongest in: "she starts to yell in Russian, giving her opinion" (chapters/15_twelve.md:341). It's also the language she and Ruth needle each other in across the dinner table; Ruth answers back in Arabic, and neither will do it in English for Sam's benefit (chapters/13_ten_pages.md:126).
-- **Weakest of the eleven, and still exceptional: Mandarin.** She's reading full novels in it by February of her first year and turning in her ten-page end-of-term report written entirely in Mandarin by March, inside a single year of study (chapters/12_nine.md:41). What actually gives her trouble is producing the four tones in her own mouth: she can hear that they're different words the moment they come out of a speaker and still can't make her own voice do it. Hearing the gap turns out to be worse than not hearing it. That gap is the actual lesson Mrs. Sun is teaching (chapters/12_nine.md:43-49). **It is a problem she has at nine, not a permanent ceiling** — an earlier version of this sheet said she never becomes conversational in Mandarin, which was invented and is wrong. She was producing a year's worth of a tonal language in a few hundred hours at nine and her mouth had not caught up with her ear. By eighteen, after nine more years of it, she speaks it well. If she is going to work on one language further as an adult, this is the one, because it is the one she remembers being hard.
-- **Best at: mathematics.** The subject that turned for her: she works out fraction division alone, at night, on the floor of her room, rather than being handed the reason (chapters/05_behind.md:49-53), and gets a wheel-and-mark problem in the shower that the rest of her year is still stuck on (chapters/10_april.md:77-77). By eighteen she's produced a real partial result on a year-long open problem and rates it as nothing much. It's the same instrument the school uses on her, turned back on herself.
-- **Ranked last of ninety, and good enough that Ruth stops to say so: drawing and dance.** Posted the same week at age eight. Her fortieth attempt at her own left hand comes out accurate: Ruth picks it up off the table and says so twice, unprompted, "That's a hand." "No, I mean that's a hand." (chapters/11_eight.md:159-165). Halstead posts the rank alone, with no comparison attached to it, so she reads the number as a weakness on its own. At fifteen she's still describing herself as bottom of her year in drawing, present tense, the same single measurement taken at eight.
-- **Also outranked, also excellent: fencing by sound**, picked up in her final year. Almost nobody outside Halstead could do this blind drill at all; she can do it, and she's behind a room full of people who can also do it.
-- **The subject she took that nobody else did: her own path through block two.** Choir at eight, riding at nine because Priya rode, instruments at ten, woodworking at eleven, then the forge from twelve on and nothing else again (chapters/11_eight.md; chapters/12_nine.md; chapters/16_thirteen.md:107). That exact sequence belongs to her alone.
-- **What she teaches the twelves, from thirteen:** differential equations and the real analysis that runs beside it, the same material, taught by the same method, that was handed to her at the same age (chapters/16_thirteen.md).
-- **The one she's secretly proud of: the forge.** She picked it herself, ungraded and unassigned, and keeps choosing it every Thursday and both Saturday sessions for years running (chapters/16_thirteen.md:107). She's good at it, better than most of her year by any outside measure, and holds herself to a standard nobody else applies to her: her eye for a flaw in her own work outpaces everyone else's in the room. She drops most of what she makes into the scrap bin without telling anyone and keeps only what actually clears her own bar, one hook from her second year, still on the back of her door (chapters/17_fourteen.md:127; chapters/19_sixteen.md:119-118). In four years Mr. Pruitt corrects her once, "Your heat's wrong," and doesn't repeat it (chapters/15_twelve.md:11-11). That's the correction you give someone who's already good.
-- **The one she'd drop if she could: dance.** With drawing she finds out at the end of term, off a list posted on a wall. With dance she can feel it while it's happening, half a beat behind the girl in front of her for fifty minutes at a stretch (chapters/11_eight.md:165), in front of the same room every Friday for a year. She asks outright at eight and is refused in four flat words, twice: "No... And it would still be no if you came in here about all five of them." (chapters/11_eight.md:169-171). Riding and choir she simply stops attending once her reason for doing them is gone; dance is compulsory, and the refusal stands for the rest of the year.
-- **Defends against the "cheating" charge: Latin,** picked at eleven, over Ruth's objection, on the grounds that "it's the year paying for itself twice" because it's already sitting inside half of French and most of Spanish (chapters/14_sixty_degrees.md:63-81).
+Three ways a writer most easily gets her wrong. Having her visibly celebrate or claim
+credit for a win. Giving her a directly stated emotion in the guarded register, where it
+should come through withheld information or an escalating bargain instead. And, the worst
+of the three, writing her guarded everywhere: the compression belongs to specific people
+who hurt her, and a scene with her closest friends that reads clipped is simply the wrong
+character.
+
+## What she is good at, and what she is not
+
+She is a polyglot: eleven languages, one a year from about six or seven, each finished off
+with a long report written entirely in the target language. Acquisition is close to
+effortless for her and she does not notice that this is unusual, because everyone around
+her is doing the same thing.
+
+- **The one that surfaces under real feeling: Russian.** When she is furious about
+  something unfair, Russian is what comes out of her, and it is not the language she is
+  technically strongest in. It is also the one she needles her closest friend in across a
+  dinner table, neither of them willing to switch back to English for the benefit of
+  anyone listening.
+- **The one she has to work hardest at, and is still exceptional in: Mandarin.** She is
+  reading novels in it and writing full reports in it inside a single year of study. What
+  gives her trouble is producing the four tones in her own mouth: she can hear
+  instantly that they are different words when someone else says them, and cannot make her
+  own voice do it. Hearing the gap turns out to be worse than not hearing it, and that gap
+  is the actual lesson her teacher is teaching. **This is a problem she has at nine, not a
+  permanent ceiling.** An earlier version of this sheet said she never becomes
+  conversational in Mandarin, which was invented and is wrong. She was producing a year of
+  a tonal language in a few hundred hours and her mouth had not caught up with her ear. By
+  eighteen, after nine more years of it, she speaks it well. If she is ever going to work
+  further on one language as an adult, it is this one, because it is the one she remembers
+  being hard.
+- **Strongest: mathematics.** The subject that turned for her, and it turned because she
+  worked a mechanism out alone, at night, on the floor of her room, rather than being
+  handed the reason. She solves the thing she has been stuck on in the shower. As an adult
+  she produces a real partial result on a long-open problem and rates it as nothing much.
+- **Ranked bottom of ninety, and good enough to stop a friend mid-conversation: drawing.**
+  Her fortieth attempt at her own left hand comes out accurate, and the friend who picks it
+  up off the table says so twice, unprompted, because it is a hand. The ranking is posted
+  with no comparison attached to it, so she reads the number as a plain statement of
+  weakness. Years later she still describes herself as bottom of her year at drawing, in
+  the present tense, off a single measurement taken when she was eight.
+- **Also outranked, also excellent: fencing blind, by sound**, picked up in her last year.
+  Almost nobody outside her school could attempt the drill at all. She can do it, and she
+  is behind a room full of people who can also do it. This is the shape of every weakness
+  she has: a genius outperformed by ninety other geniuses at something she is excellent at,
+  and no way for her to know that.
+- **The one she would drop if she could: dance.** With drawing she finds out at the end of
+  term, off a list on a wall. With dance she can feel it while it is happening, half a beat
+  behind the girl in front of her for fifty minutes at a stretch, in front of the same room
+  every week for a year. She asks outright at eight to be let out of it and is refused
+  flatly, twice, the second refusal pre-empting the other four subjects she might have come
+  about. Activities she chose for a reason she simply stops attending once the reason is
+  gone; this one is compulsory, and the refusal stands.
+- **The one she is quietly proud of: the forge.** She picked it herself, ungraded and
+  unassigned, and keeps choosing it every week for years. She is better at it than most of
+  her year by any outside measure and holds herself to a standard nobody else applies to
+  her. Most of what she makes goes into the scrap bin without comment; she keeps the few
+  pieces that clear her own bar, and one early hook stays on the back of her door for
+  years. In four years the man who runs the forge corrects her once, on her heat, and does
+  not repeat it. That is the correction you give somebody who is already good.
+- **What she teaches, from thirteen:** differential equations and the real analysis beside
+  it, to children a year younger, by the same method it was handed to her at the same age.
+- **The one below average against ordinary people rather than against her cohort: fine
+  motor speed under a clock.** A clinician measures it when she is six, against ordinary
+  six-year-olds rather than against a school of geniuses, and finds her a step slower. It
+  is real and it is population-level, and it is the only thing on this list that is. It
+  shows in her handwriting for years.
+
+## Trained skill versus raw speed
+
+A writer needs both halves of this at once, because they look contradictory and are not.
+Under a clock, with a pencil, copying symbols or drawing a hand, she is a step behind.
+Years of drilled practice erase the gap entirely once a skill is drilled daily: put a
+tool, a weapon, or an opponent in front of her instead of a pencil and a stopwatch, and
+the same slow start becomes a fast, deliberate, economical response. The hand that is slow
+at copying symbols at a table is the same hand that is reliable under load, in the same
+body, in the same year.
 
 ## Home
 
-Chloe is the only student in the book whose family life the manuscript actually shows, so this is the fullest section on the sheet, and most of it is stated plainly on the page.
+**The house.** An ordinary house in an unremarkable, non-wealthy town, several hours by car
+from her school. It is the kind of street where neighbours are known by name and nobody
+nearby has money to give away, and her mother will say so flatly if anyone suggests
+otherwise. There is a garage where the bike lives under a sheet between summers, and where
+at thirteen she and her father spend three weeks building new back steps, badly enough in
+one spot that a riser sits four millimetres proud and stays that way, because nobody is
+going to measure the steps. There is a porch her mother watches her from with a coffee.
+There is a kitchen with a counter, a phone, a fridge, and a strawberry-shaped magnet that
+has held, at different points in her childhood, an appointment reminder, a report card,
+and the letter that decided her future; she gets up twice in one night to check that last
+one is still there. The phone book lives in a drawer under the microwave. On the stairs,
+one step is where the carpet stops, and it is the one place in the house where you can hear
+the kitchen without being seen. She uses it more than once to listen to adults deciding
+about her. Her parents' hardest conversations happen at the kitchen table at night with the
+door mostly shut.
 
-**The house.** An ordinary house in an unremarkable, non-wealthy town several hours' drive from Halstead. Her mother's flat "Not around here they aren't" (chapters/03_the_letter.md:97) is aimed at the idea that anyone nearby has money to give away, and it tells you what kind of neighborhood this is. The Petersons live close enough to be one of the first households her mother checks when the Halstead letter arrives (chapters/03_the_letter.md:48), an ordinary residential street where neighbors know each other by name. The house has a garage where the bike lives under a sheet between summers (chapters/11_eight.md:3-3), and where, at thirteen, she and her father spend three weeks building new back steps together, badly enough in one spot that a riser sits four millimetres proud and stays that way, because "nobody is going to measure the steps" (chapters/16_thirteen.md:165-166). There's a porch her mother watches her from with a coffee the summer she gets a bigger bike (chapters/11_eight.md:5-9), and a kitchen with a counter, a phone, a fridge, and a strawberry-shaped magnet that has held, at different points in her childhood, an appointment reminder, a report card, and the note confirming she's finally allowed to go to Halstead for the year. She gets up twice in one night just to check it's still there (chapters/08_the_asking.md:89; chapters/02_march_4th.md:132; chapters/02_march_4th.md:124). The phone book lives in a kitchen drawer under the microwave (chapters/07_the_same_room.md:31). On the stairs, one step is where the carpet stops, the one place in the house where you can hear the kitchen without being seen; she uses it more than once to listen in on calls about her own future (chapters/03_the_letter.md:40). Her parents' hardest conversations happen at the kitchen table at night with the door mostly shut, and she listens from the stairs or the landing (chapters/09_february.md:33; chapters/03_the_letter.md:105-107).
+**Her parents.** Married throughout, splitting the household along visible lines. Her
+mother does the calling, the research, and the interrogating of institutions, and clears
+plates early when a conversation gets uncomfortable. She coordinates a small office for a
+regional insurance agency, work that trains a person to read a form for exactly what it is
+asking, and it shows in how she runs a phone call with a school. She can take a full
+afternoon off without friction, the ease of steady salaried work rather than hourly. Her
+father does the grilling on a holiday, reads contracts at the kitchen table, and is the one
+who teaches her to drive, in an empty parking lot. His job is a research-adjacent office
+job in a department that reads and circulates other people's technical papers seriously
+enough that a colleague will leave one on his chair for him.
 
-**Her parents.** Married throughout the reading list, splitting the household along visible lines: her mother does the calling, the research, the interrogating of institutions, and clears dinner plates early when a conversation gets uncomfortable (chapters/01_before.md:127); her father does the grilling on the Fourth of July, reads vendor contracts at the kitchen table, and is the one who eventually teaches her to drive, in a church parking lot behind a tire place (chapters/18_fifteen.md:151-155). His job involves a "department" that reads and circulates other people's technical papers seriously enough that a colleague named Kathy leaves one on his chair (chapters/03_the_letter.md:86): a research-adjacent office job. Her mother's own job is never named on the page. She can take a full afternoon off with no more friction than "without saying anything about taking it" (chapters/08_the_asking.md:11), the ease of someone in steady, salaried work rather than hourly. She coordinates a small office for a regional insurance agency, the kind of work that trains a person to read a form for exactly what it's asking. It shows in how she runs a phone call with a school.
+**Dinner and the long summers.** Dinner is where the family argues and where they are most
+themselves: a monologue about a book at six, a fight about whether a hot dog is a sandwich
+at eight, an economic argument built and defended across an entire holiday table at ten.
+From eight she is home for ten weeks every summer. She sleeps far longer than usual for the
+first nine days with nobody stopping her, then settles into long bike rides that get longer
+every year, and long afternoons doing nothing in particular, once spent watching a wasp
+work the same board on the steps she built. One July her mother takes four days off and
+they drive to the coast, where Chloe swims for two days straight and her mother teaches her
+cribbage on a board her own father made out of walnut in the sixties. The novels she reads
+over these summers leave nothing behind them, and are read purely to switch off.
 
-**Dinner and the ten weeks home.** Dinner is where the family argues and where they're most themselves: the sandwich-book monologue at six (chapters/01_before.md:29-38), the hot-dog-as-sandwich fight at eight (chapters/11_eight.md:15-25), the tariffs argument built and defended across an entire Thanksgiving table at ten (chapters/13_ten_pages.md:132-154). From age eight she's home for ten weeks every summer. She sleeps far longer than usual for the first nine days with nobody stopping her (chapters/12_nine.md:131), then settles into long bike rides, nine miles to the reservoir at twelve, an extra eleven added at sixteen with a hill she has to stand up on (chapters/12_nine.md:133; chapters/19_sixteen.md:125), and long afternoons doing nothing in particular, once spent watching a wasp work the same board on the back steps she built (chapters/19_sixteen.md:125). One July her mother takes four days off and they drive three hours to the coast, where Chloe swims for two days straight and her mother teaches her cribbage on a board her own father made out of walnut around 1961 (chapters/12_nine.md:135). Novels she reads over these summers "leave nothing behind them" (chapters/19_sixteen.md:125), read purely to switch off.
+**Her grandmother's house.** A separate house at Christmas, with eleven relatives she knows
+by name, a ham that goes in at four, and a spare room with a chair she ignores in favour of
+the floor when she has something to read. A cousin several years older makes conversation
+with her there most years. Her grandmother is blunt where the rest of the family is
+careful: she will tell Chloe outright that she has put on weight, or that she was too thin
+the Christmas before, and years later will take her scarred hand in both of hers, ask what
+did this, and let the deflected answer stand without pushing.
 
-**Grandmother's house.** A separate house, visited at Christmas, with eleven people she knows by name, a ham her grandmother puts in at four, and a spare room with a chair Chloe ignores in favor of the floor when she's got Federalist papers to read (chapters/13_ten_pages.md:166-171). Her cousin Dana, nineteen, makes conversation with her there most years (chapters/01_before.md:100-106; chapters/08_the_asking.md:177). Her grandmother is blunt where the rest of the family is careful: she tells Chloe outright that she's put on weight, that she was too thin the Christmas before (chapters/11_eight.md:93-98), and years later takes her scarred hand in both of hers at that same table, asks what did this, and lets the deflected answer stand without pushing (chapters/18_fifteen.md:171-179).
+**What she is like at home.** Quieter than at school, and unguarded in a way school never
+asks her to be. The first summer after she finds somewhere that fits, she sings loudly and
+badly in the shower every day, having never done it before. She argues with her father for
+the pleasure of it, teaches her mother mangled Spanish at the counter until they are both
+laughing too hard to stand up straight, and picks fights about curfew that her mother is
+privately delighted by, because Chloe has never fought her about anything before.
 
-**What she's like when she's home.** Quieter than at school, unguarded in a way school never asks her to be. The first summer after camp, at seven, she sings loudly and badly in the shower every day of the whole summer. She's never done it before (chapters/11_eight.md:13, 35-40). She argues for the pleasure of it with her father, teaches her mother mangled Spanish at the counter until they're both laughing too hard to stand up straight (chapters/11_eight.md:47-59), and picks fights over curfew her mother is privately delighted by. Her mother's own words are that Chloe has never fought her about anything before (chapters/11_eight.md:63-87).
+## Body and physical business
 
-## Body
+The manuscript gives little about her directly. What follows is concrete and unglamorous
+and consistent with what it does establish: she reads as notably small even among her
+peers, and nearly everything physical the book gives her runs through her hands.
 
-The manuscript gives almost nothing physical about her directly. Most of what follows is built to be concrete and unglamorous, consistent with what the text does establish: she reads as notably small even among her own peers, and nearly everything the book does give her physically runs through her hands.
-
-- **Build:** small and light for her age throughout. The text uses this directly as a tactical asset at twelve: "I'm twelve and I'm small, and I'm a girl in pyjamas. Nobody hits that." (chapters/15_twelve.md:201). She stays one of the shorter people in her year into her teens without ever reading as delicate; years of forge work, fighting drills, and archery leave her wiry rather than soft.
-- **Face:** ordinary, unremarkable, the kind of face that photographs badly mid-thought because she's usually somewhere else when the shutter goes. Her father takes roughly four hundred photographs at graduation and gets none of her face (chapters/23_the_first_one.md). Her eyes go somewhere past the person she's talking to when she's actually thinking, the same habit that had her watching a parking lot instead of her own worksheet at six (chapters/01_before.md:12).
-- **Hair:** kept short or simply tied back, low-maintenance by choice, one more fussy task she has no patience for.
-- **Hands:** the part of her the book renders in the most physical detail. By fifteen: a burn across the base of the thumb, a smaller one in the web of her first two fingers, and a knuckle on one hand set slightly crooked because she reset it herself in a corridor at eleven at night and then went to bed rather than wake anyone (chapters/18_fifteen.md:173). A separate burn on the inside of her wrist from the forge that she's never shown anyone (chapters/15_twelve.md:7). Blunt, practical nails, kept short for lab and forge work.
-- **Fine motor speed vs. trained motor skill:** the one place a writer needs both halves at once. Under a clock, with a pencil, copying symbols or drawing a hand, she's a step behind, a real, population-level difference a psychologist measures at six (chapters/02_march_4th.md:49-49). Years of trained practice erase the gap once a skill is drilled daily: put a rifle, a knife, or an opponent in front of her instead of a pencil and a stopwatch, and the same slow start becomes a fast, deliberate response. The hand slow at copying symbols at a table is the same hand behind a rifle release accurate sixty percent of the time against a moving target; the same body stops four armed men in nine seconds at twelve (chapters/15_twelve.md).
-- **Posture and recurring gesture:** flat hands on a table or desk, up on her toes, whenever she's mid-argument and enjoying it. The exact gesture recurs at six, at six again, and at nine (chapters/01_before.md:21; chapters/02_march_4th.md:32; chapters/12_nine.md:25). Otherwise still, with one private, silent tic: four fingers tapping a rhythm against her own leg while she walks, rehearsing a timing count nobody else can see (chapters/14_sixty_degrees.md:35).
-- **How she moves:** economical and trained, with no wasted motion, the product of years of daily drilling rather than natural grace. She holds a minute against ten opponents on the mat and lands last of ninety in the dance ranking, in the same body.
-- **What she wears when nobody's assigning it:** practical and unfussy: forge clothes with permanent scorch marks she doesn't bother replacing, whatever's already clean and comfortable at home. Someone else always has to prompt her before she dresses for an occasion.
-- **Sleep:** a light, fast-waking sleeper as a student: she's dressed and in the corridor within eleven seconds of a 4 a.m. alarm nobody announced (chapters/15_twelve.md), fast enough that she couldn't have been deeply asleep to start with. The one exception is illness: at seven, in the depths of the depression diagnosis, she sleeps eleven hours a night and is still tired all day (chapters/08_the_asking.md:15).
-- **Eating:** fast and functional, easily switched off entirely by a good argument. A bread roll held and untouched through an entire dinner-table debate (chapters/05_behind.md:93), a fork picked up and never used (chapters/14_sixty_degrees.md:125), a plate held and not washed while she's mid-thought (chapters/14_sixty_degrees.md:167). Consistent enough across enough ages to write as a standing habit.
+- **Build:** small and light for her age throughout, and she will use it tactically when a
+  plan needs someone who reads as harmless. She stays one of the shorter people in her year
+  into her teens without ever reading as delicate; years of forge work, fighting drills and
+  archery leave her wiry rather than soft.
+- **Face:** ordinary and unremarkable, the kind of face that photographs badly mid-thought,
+  because she is usually somewhere else when the shutter goes. Her father takes hundreds of
+  photographs at her graduation and gets none of her face. Her eyes go somewhere past the
+  person she is talking to when she is actually thinking, the same habit that had her
+  watching a parking lot instead of her own worksheet at six.
+- **Hair:** kept short or simply tied back. Low-maintenance by choice, one more fussy task
+  she has no patience for.
+- **Hands:** the part of her rendered in the most physical detail. By fifteen: a burn
+  across the base of the thumb, a smaller one in the web of the first two fingers, and a
+  knuckle set slightly crooked because she reset it herself at eleven at night and went to
+  bed rather than wake anyone. A separate burn on the inside of the wrist she has never
+  shown anyone. Blunt practical nails, kept short for work.
+- **Posture and recurring gesture:** flat hands on a table or desk, up on her toes, whenever
+  she is mid-argument and enjoying it. It recurs from six onward and is the most reliable
+  physical tell she has. Otherwise still, with one private, silent tic: four fingers tapping
+  a rhythm against her own leg while she walks, rehearsing a timing count nobody else can
+  see.
+- **How she moves:** economical and trained, with no wasted motion, the product of daily
+  drilling rather than natural grace. She can hold her own against a room of opponents and
+  come last of ninety in a dance ranking, in the same body.
+- **What she wears when nobody is assigning it:** practical and unfussy. Work clothes with
+  permanent scorch marks she does not bother replacing; whatever is clean and comfortable at
+  home. Somebody else always has to prompt her before she dresses for an occasion.
+- **Sleep:** light and fast-waking. Dressed and out of the room within seconds of an alarm
+  nobody announced, fast enough that she cannot have been deeply asleep to start with. The
+  exception is illness: in the depths of a depression at seven she sleeps eleven hours a
+  night and is still tired all day.
+- **Eating:** fast and functional, and switched off entirely by a good argument. A bread
+  roll held and untouched through a whole dinner, a fork picked up and never used, a plate
+  held and not washed while she is mid-thought. Consistent enough to write as a standing
+  habit.
+- **Handwriting:** small and fast, worse under any kind of clock, legible mainly to her.
+  The direct downstream cost of the copying speed measured when she was six.
 
 ## Personality off the page
 
-- **Bored:** watches something else entirely rather than performing patience, the parking lot at six (chapters/01_before.md); as an adult, simply stops attending the thing (riding, choir) with no complaint or announcement.
-- **Wrong:** accepts a correction flatly, without arguing back, "He's right," said once, plainly, about a hard grade she'd initially resented (chapters/14_sixty_degrees.md:163).
-- **Praised:** turns it back to the work, corrects her own finished piece back to its flaw the moment someone compliments it (chapters/15_twelve.md:17-19).
-- **Losing:** stays visibly annoyed for about a week, then lets it go on her own, without anyone talking her out of it (chapters/15_twelve.md:343).
-- **Tired:** goes quiet and monosyllabic rather than snappish, the same compression she uses on institutional adults, turned briefly on people she trusts.
-- **At 2am:** reading, or working a problem on the floor with the corridor light coming under the door (chapters/10_april.md:77), still turning over whatever technical thing didn't close that day.
-- **A free Saturday:** the forge, both sessions, every week it's open (chapters/16_thirteen.md:107).
-- **Finds funny in other people:** deflating literalism that punctures a moment of real panic. Sam's "room-shaped object" line lands mid-panic-attack, and she laughs until she has to bend over against the wall (chapters/04_pluto.md:46-46).
+- **Bored:** watches something else entirely rather than performing patience. As she gets
+  older she simply stops attending the thing, with no complaint and no announcement.
+- **Wrong:** accepts the correction flatly, once, plainly, and does not argue it again.
+- **Praised:** turns it back to the work, and corrects her own finished piece back to its
+  flaw the moment somebody compliments it.
+- **Losing:** visibly annoyed for about a week, then lets it go on her own.
+- **Tired:** quiet and monosyllabic rather than snappish.
+- **At two in the morning:** reading, or working a problem on the floor with the corridor
+  light coming under the door, still turning over whatever technical thing did not close
+  that day.
+- **A free Saturday:** the forge, every session, every week it is open.
+- **What she finds funny in other people:** deflating literalism, especially aimed at
+  something that has just frightened her. A flat literal-minded correction landing in the
+  middle of a panic attack will have her laughing until she has to bend over against a wall.
 
 ## Interior life
 
-- **What she wants and has never said out loud:** a floor she can't touch, a place hard enough, permanently, that she stops needing to check whether she finished first. Her repeated question to easy material is always some version of "when does it get harder" (chapters/08_the_asking.md:103).
-- **What she's afraid of, underneath — and mostly believes outright:** that the boredom and the trouble were never the school's fault, that she is simply worse than everyone else at getting through an ordinary day, and that this is a fact about her rather than about the room. At six and seven this is not a background fear she occasionally brushes; it is her settled understanding of herself. "She is worse at the part that everybody has to do." (chapters/01_before.md:129)
-- **What she can't do:** connect how she feels to where she is. She does not think *I am miserable because this room is wrong for me*. She thinks *I am sad and I don't know why*. She knows she isn't sad at Halstead and can't say what the difference is. She just wants to go back.
-- **What she wants and can't ask for:** to be understood. She tries once — "Nobody was mean to me, not once, not ever" — and that is the whole of what she has. When she says "I don't know," sometimes she means it and sometimes she knows exactly and has no words that would survive being said out loud.
-- **What she thinks about before sleeping:** whatever technical thing didn't close that day, a problem, a proof, a release count that's still early or late by an amount she hasn't pinned down, worked over quietly, the same instinct that gets her out of bed to solve fraction division on the floor at seven (chapters/05_behind.md:49-53).
-- **What she'd do with a free year:** rebuild something enormous from scratch, alone, with no answer key and nobody grading it, the fraction-floor scene and the wheel-in-the-shower problem, at full adult scale.
-- **What she believes that the people close to her would argue with:** that withholding a true thing from someone you love is sometimes the kinder move. She dislikes being lied to herself, yet does exactly this to her mother about the rifles, to Sandoval's satisfaction, and eventually to a federal government she otherwise cooperates with completely.
-- **What she's wrong about:** that the trick she built at six, finish first, sit still, say the safe minimal thing, is a tool she fully controls. It has quietly become the whole shape of how she relates to the people who love her most instead.
+- **What she wants and has never said out loud:** a floor she cannot touch. A place hard
+  enough, permanently, that she stops having to check whether she finished first. Her
+  standing question to anything easy is some version of *when does it get harder*.
+- **What she is afraid of, and mostly believes outright:** that the boredom and the trouble
+  were never the room's fault, that she is simply worse than other people at getting through
+  an ordinary day, and that this is a fact about her. At six and seven this is not a
+  background fear. It is her settled understanding of herself.
+- **What she does instead of admitting it:** finishes first, sits still, says the safe
+  minimal thing, and holds the true answer back. When that stops working she does not
+  explain; she bargains, offering to give things up rather than name what is wrong.
+- **What she cannot do:** connect how she feels to where she is. She does not think *I am
+  miserable because this room is wrong for me*. She thinks *I am sad and I do not know why*.
+  She knows she is not sad in the other place and cannot say what the difference is. She
+  just wants to go back.
+- **What she wants and cannot ask for:** to be understood. She tries once, and what she has
+  is that nobody was ever mean to her, not once, which is true and explains nothing.
+- **What she thinks about before sleeping:** whatever technical thing did not close that
+  day. A problem, a proof, a count that is still early or late by an amount she has not
+  pinned down.
+- **What she would do with a free year:** rebuild something enormous from scratch, alone,
+  with no answer key and nobody grading it. The night on the bedroom floor, at adult scale.
+- **What she believes that the people close to her would argue with:** that withholding a
+  true thing from someone you love is sometimes the kinder move. She dislikes being lied to
+  herself and does this anyway, to her mother, to colleagues, and eventually to a government
+  she otherwise cooperates with completely.
+- **Her blind spot:** she thinks the trick she built at six, finish first, sit still, say
+  the safe minimal thing, is a tool she fully controls. It has quietly become the shape of
+  how she relates to the people who love her most.
+- **Her other blind spot:** she cannot see her own standing. She reads a ranking as a
+  statement about her ability rather than as a statement about the company she is in, in
+  both directions, and no amount of evidence corrects it.
 
 ## The small stuff
 
-- **Food:** eats fast, without ceremony, and has no strong opinions except the ones she'll manufacture on the spot to argue a point. See the hot dog (chapters/11_eight.md:15-25).
-- **Music:** a mediocre player of any instrument put in front of her, but unusually good at hearing something once and writing it down correctly (chapters/13_ten_pages.md:128).
-- **Coffee or tea:** drinks coffee black as an adult, out of habit rather than pleasure. It's at the translation office, and she takes it the way everyone else there does.
-- **Handwriting:** small and fast, worse under any kind of clock, legible mainly to her, the direct downstream cost of the copying speed a psychologist flagged when she was six (chapters/02_march_4th.md:49-49).
-- **Her room:** sparse and functional. At Halstead, an envelope with her name typed on it kept in a drawer for years (chapters/03_the_letter.md; chapters/10_april.md:18), a hook by the door with a forge bag on it, a mallet with a slightly oval handle she used for three weeks before she even noticed the flaw and kept using anyway (chapters/11_eight.md:149).
-- **Pockets:** carries what has a function and nothing that doesn't, a folded page, a card, nothing kept for sentiment alone.
-- **Money:** cautious and precise rather than generous or tight. She lends to friends at interest even when it's Priya, and ends a school year up seventeen dollars against a friend's nine hundred and forty because she took the safer position on purpose (chapters/18_fifteen.md:107-123).
-- **Ritual:** the closest thing she has to one is procedural, not superstitious, a private count tapped against her own leg to rehearse a timing problem before she needs it (chapters/14_sixty_degrees.md:35).
-- **On a phone:** learns to be fast on a call early, because people are always waiting behind her for the same one (chapters/10_april.md:111); terse and functional in the group chat as an adult.
-- **First thing in the morning:** up and moving without delay, no lingering. The same discipline gets her into a corridor eleven seconds after a 4 a.m. alarm nobody announced (chapters/15_twelve.md).
+- **Food:** eats fast, without ceremony, and has no strong opinions except the ones she
+  will manufacture on the spot in order to have an argument.
+- **Music:** a mediocre player of any instrument put in front of her, and unusually good at
+  hearing something once and writing it down accurately.
+- **Coffee or tea:** black coffee as an adult, out of habit rather than pleasure, taken the
+  way everyone else in the room takes it.
+- **Her room:** sparse and functional. A hook by the door with a bag on it. A mallet with a
+  slightly oval handle she used for three weeks before she noticed the flaw and kept using
+  anyway. One envelope she has kept in a drawer for years.
+- **Pockets:** carries what has a function and nothing that does not. A folded page, a card,
+  nothing kept for sentiment alone.
+- **Money:** cautious and precise rather than generous or tight. She lends to friends at
+  interest, including the friend she is easiest with, and takes the safe position on purpose;
+  she will finish a year barely up and watch a friend who took risks finish enormously up,
+  and be content with that.
+- **Ritual:** procedural rather than superstitious. A private count tapped against her own
+  leg to rehearse a timing problem before she needs it.
+- **On a phone:** learns to be fast on a call early, because there is always somebody
+  waiting behind her for the same one. Terse and functional in text as an adult.
+- **First thing in the morning:** up and moving without delay, no lingering.
 
 ## Would do
 
-- Ask a rule-holder to justify the exact boundary of a rule rather than simply accept it (the four-books-at-a-time argument, chapters/01_before.md:18-24).
-- Spend an entire night alone solving something rather than ask for the answer a second time (the fraction-division floor scene, chapters/05_behind.md:49-53).
-- Give an adult in authority the shortest, safest, compliant answer while privately holding the true one.
-- Keep a promise made under pressure long after the pressure that produced it is gone (Sandoval's request, still honored years later under a federal clearance interview, chapters/18_fifteen.md:133-145; chapters/30_cleared.md:51-234).
-- Put herself in front when a plan needs someone who reads as small and harmless to draw attention (chapters/15_twelve.md:197-203).
-- Quietly redo or discard her own finished work rather than let a flawed piece stand, without announcing that she did it (chapters/17_fourteen.md:127).
-- Give a trusted person the full, unhedged version of an argument, unprompted and at length, when nobody asked for more than a summary (the fractions retelling to her father, chapters/06_the_list.md:46-49; the tariffs argument at Thanksgiving, chapters/13_ten_pages.md:132-154).
-- Reach for a concrete, physical analogy to settle a disagreement rather than repeat the abstract claim louder (the moon-and-table-walk argument, chapters/05_behind.md:95).
-- Show up and do the tedious, unglamorous version of support for someone she's loyal to: sits behind Ruth on a Saturday timing a rifle plateau for two hours because Ruth asked (chapters/18_fifteen.md:49-57).
-- Take the correct, unexciting answer over the exciting wrong one, even when the shorter version costs her the room's attention (chapters/19_sixteen.md:19).
-- Come apart completely, once, rather than keep running the compliant economy past the point it can carry the weight, offering away her own birthday and every future present sooner than say what is actually wrong (chapters/09_february.md:15-17).
-- Talk for four straight hours without rationing a word of it when the news is good enough, asking six questions in a row and falling asleep mid-sentence rather than finish on her own terms first (chapters/09_february.md:133).
+- Ask a rule-holder to justify the exact boundary of a rule rather than simply accept it,
+  and then obey the rule anyway.
+- Spend an entire night alone solving something rather than ask for the answer a second
+  time.
+- Give an adult in authority the shortest, safest, compliant answer while privately holding
+  the true one.
+- Keep a promise made under pressure long after the pressure that produced it is gone, and
+  keep it against a formal demand from an institution she otherwise cooperates with.
+- Put herself in front when a plan needs somebody who reads as small and harmless.
+- Quietly redo or discard her own finished work rather than let a flawed piece stand,
+  without announcing that she did it.
+- Give a trusted person the full, unhedged version of an argument, unprompted and at
+  length, when nobody asked for more than a summary.
+- Reach for a concrete, physical analogy to settle a disagreement rather than repeat the
+  abstract claim louder.
+- Do the tedious, unglamorous version of support for somebody she is loyal to: sit for two
+  hours timing a friend's repetitions because the friend asked.
+- Take the correct, unexciting answer over the exciting wrong one, even when the shorter
+  version costs her the room's attention.
+- Come apart completely, once, rather than keep running the compliant economy past the
+  point it can carry the weight.
+- Talk for hours without rationing a word of it when the news is good enough, and fall
+  asleep mid-sentence rather than finish on her own terms.
+- Write down a name or a number the moment she realises she failed to get it, so that the
+  failure cannot happen again. Loyalty runs through her as bookkeeping.
 
 ## Would never
 
-- Celebrate a good outcome openly or treat it as evidence of something about her: a stack of college acceptances gets read on the floor in confusion, not triumph (chapters/21_the_applications.md:115-115).
-- Volunteer the full truth to an adult who hasn't earned it, even one she genuinely likes: Dr. Ammons gets "It was hard," not the real list (chapters/08_the_asking.md:45-47).
-- Break a specific, spoken loyalty under lawful institutional pressure: tells a federal investigator everything except the one compartmentalized project, and still won't give it up (chapters/30_cleared.md:51-234).
-- Look down on an ordinary child, or on an ordinary classroom, as slow or shallow. She is confused by them, never contemptuous.
+- Celebrate a good outcome openly, or treat it as evidence of something about her.
+- Volunteer the full truth to an adult who has not earned it, even one she genuinely likes.
+- Break a specific, spoken loyalty under lawful institutional pressure.
+- Look down on an ordinary child, or an ordinary classroom, as slow or shallow. She is
+  confused by them, never contemptuous.
 - Describe herself as gifted, or accept that framing from anyone else.
 
-**A carve-out that used to be missing.** "Never give a directly stated emotion" holds for the
-guarded register and for her teens onward. It does **not** hold at six and seven once she is past
-the point of managing it: "I hate you. I hate you so much," "I can't do it anymore," and four hours
-of unrationed talking are all on the page and all correct. When she breaks, she breaks out loud.
+**A carve-out.** *Never state an emotion directly* holds for the guarded register and for
+her teens onward. It does **not** hold at six and seven once she is past the point of
+managing it. Saying she hates someone, saying she cannot do it anymore, and hours of
+unrationed talking are all correct for her at that age. When she breaks, she breaks out
+loud.
 
-## Relationships
+## How she treats people
 
-- **Ruth:** wants to be told the truth without softening, and is the one person she'll expose an unresolved plateau to rather than hide it: asks her to sit and time a rifle session for two hours on a problem she can't explain to anyone else (chapters/18_fifteen.md:49-57).
-- **Sam:** wants an audience who won't turn anything into a big moment; drops into pure banter and running jokes with him and never has to explain herself the way she does with adults (chapters/12_nine.md; chapters/13_ten_pages.md).
-- **Kavi:** wants a second opinion she trusts completely without having to finish the sentence; brings him a cipher she's stuck on and lets him mark her practice papers rather than mark them herself (chapters/16_thirteen.md; chapters/19_sixteen.md:75-84).
-- **Priya:** wants easy, undemanding company and gives the same back, right up until the company stops being the point. She takes riding because Priya rides, and Priya has been riding since six and is better at all of it (chapters/12_nine.md:115); when the groups split onto different days that spring, Chloe quits within the month, walking back alone twice rather than keep going without her. Priya asks why, plainly hurt, and gets the flat version instead of the true one, "It's boring," and when Priya says it was fun for her, Chloe doesn't soften it: "I know. That's the bit I kept waiting for." (chapters/12_nine.md:117-127). It is the one relationship she leaves cleanly, without guilt or a word of the actual explanation, the moment the shared activity that started it ends.
-- **Her mother:** wants to be believed when she says something is fine, and gives her the same compliant, minimal answer she gives institutions, until the truth she's been holding back finally breaks through on the floor of her own bedroom (chapters/09_february.md).
-- **Her father:** wants an audience for a finished thought and gives him the long version nobody else gets, unprompted, more than once: the full fractions re-derivation on a napkin (chapters/06_the_list.md:46-49), the tariff argument built and defended across an entire Thanksgiving table (chapters/13_ten_pages.md:132-154).
-- **Deb:** wants ordinary, undemanding daily company as an adult and treats explaining herself twice, from a different angle, as plain courtesy rather than a cost. It's the one relationship in the reading list with no bargain attached and nothing held back (chapters/28_nineteen.md:17, 614-620).
+She does not have one manner. She has a manner per person, set by what that person has
+done with her honesty.
+
+- **The friend who tells her the truth without softening it:** the one person she will
+  expose an unresolved problem to rather than hide it. She will ask her to sit and watch
+  something Chloe cannot yet explain to anyone else, which is the largest admission of
+  difficulty she is capable of.
+- **The friend who never turns anything into a big moment:** she drops into pure banter and
+  running jokes with him and never has to explain herself the way she does with adults. He
+  is the one she is least careful around.
+- **The friend she trusts as a second opinion:** she brings him things she is stuck on and
+  lets him check her work rather than checking it herself, without having to finish the
+  sentence.
+- **The friend who is easy company:** she takes up an activity because he or she does it,
+  and gives easy company back, right up until the shared activity stops. Then she leaves,
+  cleanly, and hands over the flat dismissive reason rather than the true one. Told plainly
+  that it had been fun, she will not soften it: she agrees, and says she had been waiting
+  for the fun to arrive. It is the one kind of relationship she can end without guilt.
+- **Her mother:** wants to be believed when she says something is fine, and gives her the
+  same compliant, minimal answer she gives institutions, until it fails all at once.
+- **Her father:** wants an audience for a finished thought, and gives him the long version
+  nobody else gets, unprompted and more than once.
+- **An undemanding adult colleague:** as an adult she is capable of one relationship with
+  no bargain in it at all, where explaining herself twice from a different angle is plain
+  courtesy rather than a cost, and nothing is held back.
+- **An adult who answers straight:** immediate, uncomplicated affection and the full
+  version of everything, regardless of rank.
+- **An adult who tells her to slow down and wait for the room:** the thing she likes least
+  in the world, and the fastest way to shorten her answers, even when it is said kindly.
 
 ## Likes, dislikes, habits
 
-- Likes difficulty specifically, and asks "when does it get harder" more than once across the book (chapters/08_the_asking.md:103).
-- Likes people who argue back and never disengages from an argument: the moon debate and the Latin-is-cheating debate both run for a page-plus with no sign she wants out.
-- Likes being given a whole problem and left alone with it: the fraction-division floor scene (chapters/05_behind.md:49-53), the shower problem (chapters/10_april.md:77-77).
-- Likes an audience who'll sit through the entire unhedged version of an argument, her father, repeatedly.
-- Habit: pivots away from a vulnerable moment with a flat fact rather than a feeling, "Anyway, that isn't the bit they got us for" (chapters/15_twelve.md:373), "It's like clays but harder" (chapters/17_fourteen.md:177).
-- Dislikes being told to slow down or wait for the room: Mrs. Prahl's "let's not rush" (chapters/08_the_asking.md:105).
-- Reads anything with words on it, without deciding to: cereal boxes, road signs, the church bulletin, a poster in a waiting room. Not a habit she'd name if asked. When she stops, something is wrong.
-- Ordinary six-year-old pleasures, at full volume: running through a sprinkler, syrup on her fingers, sitting on the bathroom floor before dinner because she has to find out whether the dog lives.
-- Loyalty as bookkeeping: after camp she realises she never got last names or phone numbers, is quietly ashamed of it, and writes them down so it can't happen again (chapters/10_april.md:21-27).
-
-## Facts a rewriter needs
-
-- Full name: Chloe Kessler, no middle name given in the text.
-- Family: a mother and father, married throughout the reading list, and no sibling anywhere in the book, which makes her an only child on the page.
-- Home: an ordinary, non-wealthy town several hours from Halstead by car, detailed in full in the Home section above.
-- Schooling: an unnamed public elementary school through first grade (ages 5-6), then a four-week residential summer program at Halstead (age 6-7), then full-time residential enrollment at Halstead from age 7-8 through graduation at 18.
-- Good at, across the board: language acquisition and reading comprehension, argument construction, teaching (assigned to teach the year below from age 13), translation work as an adult, mathematics, the forge.
-- Ranked last of ninety, and still excellent by any outside standard: drawing and dance at age eight, fencing by sound in her final year. The one trait that's actually below average, measured against ordinary children rather than her own cohort, is fine motor speed under time pressure: real, identified at six, and something years of trained practice consistently overcome.
-- Languages: Spanish, French, Mandarin, Russian, Latin, Arabic, German, Japanese, Hindi, Korean, Swahili, in that order, one per year from six or seven. Eleven total.
-- Post-graduation trajectory shown on the page: wants the Foreign Service; can't sit the entrance exam until age 20; works a translation job and attends Georgetown in the interim, chosen over the state school because it puts her inside the same recruiting pipeline the exam feeds; writes a public blog from about age 19; passes the Foreign Service exam at 20; a security clearance clears that same autumn; starts the job in January, turns 21 in June.
-- Religion/ethnicity: no religious practice appears on the page; the family marks Christmas conventionally, with no belief stated behind it. A secular household.
-- Physical build and face: detailed in full in the Body section above.
-
-## Known problems
-
-1. STYLE_GUIDES.md lists "the room-shaped object" among Chloe's protected invented images. It is not her line, it is spoken by Sam: "'It's not even a room,' he says. 'It's a room-shaped object.'" (chapters/04_pluto.md:47). Either remove it from her protected-image list, or move the line into her mouth at the point where it's misattributed. The fix belongs in that scene, not somewhere further on.
-2. Her defining trait is stated directly in narration instead of dramatized: "She does not read the result as information about herself. She reads it as having sat an exam." (chapters/30_cleared.md:34). Cut the second sentence. The same scene already proves the trait through her flat, compliant answers to Whitaker a few lines later.
-3. Her "If you..." signature is confirmed but thin, only two clean instances found across the full reading list. A third instance, somewhere in the chapters/13-19 stretch where her explanatory dialogue currently drops the construction, would revive the signature and fix problem 4 at the same time.
-4. From about chapters/13_ten_pages.md on, some of her explanatory and tactical dialogue (the paintball "barrel" explanation, chapters/13_ten_pages.md:79; the intrusion tactical read, chapters/15_twelve.md:201) drops her parallel-scenario shape and reads as Kavi's assigned shape instead: clipped fact, then stop, nothing built around it. This isn't about the baseline register she's supposed to share with Kavi and Ruth (reasoning-first, no hedging, no small talk, that's the institution, and the sheet should keep it that way); it's specifically the exclusive sentence-shape slot slipping into his.
-5. Several age-6 lines (the librarian "at a time" argument, chapters/01_before.md:23; her private read on Ben Prentice, "Chloe doesn't believe the last part. Everybody says that," chapters/02_march_4th.md:28) carry the same rhetorical polish as her age-16 register. Flagged for the author's judgment; no specific rewrite proposed.
-6. **This sheet was part of the problem.** Three things on it, as previously written, pushed writers
-   straight into the register outside readers called inhuman: the claim that her father was the sole
-   exception to a universal compliant minimum; two length statistics presented without saying they
-   were descriptive of guarded scenes; and a "would never state an emotion" rule with no age
-   carve-out. All three are now corrected above. Any chapter revised against the old version of this
-   sheet should be re-read against the new one — the earliest chapters first, since that is where
-   the openness she starts with is supposed to be visible before anything crushes it.
-7. **Chapters where the correction most likely needs applying,** on the reasoning above rather than
-   on a fresh read: chapters/01 through 08, where she should still be open and is progressively
-   burned; chapters/04 through 06, the camp chapters, where she is among friends for the first time
-   and should be at her loudest; and any scene from chapters/09 onward where she is with the four of
-   them and the dialogue reads clipped.
+- Likes difficulty specifically, and asks when it gets harder.
+- Likes people who argue back, and never disengages from an argument.
+- Likes being given a whole problem and left alone with it.
+- Likes an audience who will sit through the entire unhedged version.
+- Habit: pivots away from a vulnerable moment with a flat fact rather than a feeling.
+- Dislikes being told to slow down or wait for the room.
+- Reads anything with words on it, without deciding to. When she stops, something is wrong.
+- Ordinary childhood pleasures at full volume: a sprinkler, syrup on her fingers, sitting on
+  the bathroom floor before dinner because she has to find out whether the dog lives.
 
 ## Do not write her as
 
-The four failure modes outside readers actually produced from chapter one, in the words they used.
+The four failure modes outside readers actually produced, in the words they used.
 
-1. **An alien or an intelligence passing for human.** Produced by: flat affect through a scene that
-   should hurt, narration that reports her state instead of her feeling it, and dialogue trimmed to
-   the corpus averages in a room where she's safe. Fix: give her the body reaction and the run-on.
-2. **A disabled child.** Produced by: unreciprocated exchanges, missing reactions to social cues she
-   would in fact read instantly, and one-word answers with people she loves. She is socially
-   *attuned* — she tracks the room, gets the joke, knows who needs what. What she lacks is not
-   perception; it is any idea why the perception keeps getting her in trouble.
-3. **A tiny adult.** Produced by: giving her the author's analysis of her own situation. She does not
-   know she is gifted, does not know the room is the problem, and cannot explain why she is sad.
-   Anything on the page that amounts to her diagnosing herself correctly is wrong.
-4. **Someone who finds ordinary people beneath her.** Produced by: any line where the contrast
-   between her and a normal classroom is scored in her favour from inside her head. The contrast is
-   always scored *against* her, by her.
+1. **An alien, or an intelligence passing for human.** Produced by flat affect through a
+   scene that should hurt, narration that reports her state instead of her feeling it, and
+   dialogue trimmed to an average in a room where she is safe. The fix is the body reaction
+   and the run-on.
+2. **A disabled child.** Produced by unreciprocated exchanges, missing reactions to social
+   cues she would in fact read instantly, and one-word answers with people she loves. She is
+   socially *attuned*: she tracks the room, gets the joke, knows who needs what. What she
+   lacks is not perception. It is any idea why the perception keeps getting her in trouble.
+3. **A tiny adult.** Produced by giving her the author's analysis of her own situation. She
+   does not know she is gifted, does not know the room is the problem, and cannot explain
+   why she is sad. Anything that amounts to her diagnosing herself correctly is wrong. Her
+   rhetorical polish should also grow with her: at six she has the perception and not yet
+   the phrasing.
+4. **Someone who finds ordinary people beneath her.** Produced by any line where the
+   contrast between her and a normal classroom is scored in her favour from inside her head.
+   The contrast is always scored *against* her, by her.
+
+Three specific things on earlier versions of this sheet pushed writers straight into the
+first failure mode, and are corrected above: the claim that her father was the sole
+exception to a universal compliant minimum, two length statistics presented as if they were
+targets, and a never-state-an-emotion rule with no age carve-out.
 
 ## Do not confuse with
 
-Ruth and Kavi. The baseline they share with her, reasoning before conclusion, no praise-language, no small talk, comfortable with silence, physically competent without remarking on it, is the institution showing through all three of them, and the sheet should keep it shared. What's supposed to stay exclusive is the sentence *shape*: Ruth states the assertion, then the reason, and names the person she's correcting. Kavi is either three words or one unbroken technical run, never in between. Chloe is the only one of the three who builds a concrete parallel scenario and argues that instead of arguing the claim directly. The cue: if a line under her name doesn't build or reference a physical parallel scenario, check whether it's actually doing Ruth's or Kavi's assigned shape (see Known problems #4).
+Her two closest intellectual friends. The baseline the three of them share, reasoning
+before conclusion, no praise language, no small talk, comfort with silence, physical
+competence never remarked on, is the institution showing through all three, and it should
+stay shared. What stays exclusive is the sentence *shape*. One of them states the assertion,
+then the reason, and names the person she is correcting. The other is either three words or
+one unbroken technical run, never in between. Chloe is the only one who builds a concrete
+parallel scenario and argues that instead of arguing the claim directly. The cue: if a line
+under her name does not build or reference a physical parallel, check whether it is doing
+one of theirs.
+
+---
+
+## Book-specific: navigation and continuity only
+
+*Facts a writer must not contradict. Nothing here characterises her, and the sheet above is
+complete without this section.*
+
+- Full name Chloe Kessler. No middle name is given.
+- Born August 2005. She is twenty-one in August of the year she starts work, not June; an
+  earlier version of this sheet said June and was wrong.
+- Only child. Mother Meg and father Dave, married throughout.
+- Schooling: an unnamed public elementary school through first grade, ages five to six;
+  then a four-week residential summer programme at Halstead at six going on seven; then
+  full-time residential enrolment at Halstead from seven going on eight through graduation
+  at eighteen.
+- Her eleven languages, in order: Spanish, French, Mandarin, Russian, Latin, Arabic, German,
+  Japanese, Hindi, Korean, Swahili.
+- Her afternoon elective path, which belongs to her alone: choir at eight, riding at nine,
+  instruments at ten, woodworking at eleven, the forge from twelve onward and nothing else
+  again.
+- She teaches the year below from age thirteen.
+- No religious practice appears. The family marks Christmas conventionally with no belief
+  stated behind it.
+- Adult trajectory: wants the Foreign Service, cannot sit the entrance exam until twenty,
+  works a translation job and attends Georgetown in the interim, writes a public blog from
+  about nineteen, passes the exam at twenty, clears a security investigation that autumn,
+  starts the job in January.
+- Her invented images are hers exclusively and must not be reassigned to anyone else. The
+  deflating-literalism image is not one of hers, whatever the style guide currently lists.
+- `CURRICULUM_GRID.md` is her personal timetable, not a description of what the school
+  teaches everyone. Six tracks are shared school-wide; the specific language each year, the
+  two rotating academic slots and both afternoon blocks are hers.
+- Appears in chapters/01_before.md through chapters/20_the_parking_lot.md as point of view
+  throughout, and in chapters/21_the_applications.md through chapters/35_nine_minutes.md.

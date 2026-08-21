@@ -1,121 +1,203 @@
 # DR. ELENA SANDOVAL
 
-Lead researcher on an internal paper Chloe contributes to, and wants to be exactly right rather than merely persuasive, even when precision makes her own position harder to hold.
+The lead researcher: would rather be exactly right than persuasive, and says the
+structural truth about her own position out loud even when saying it weakens what
+she is asking for.
 
-**First name:** Elena, never used by anyone at the school under eighteen, see Facts.
-**Age span (in the text):** Chloe age 15, one appearance; referenced again anonymously at Chloe's age ~20-21 | **MBTI:** INFJ (writing aid, not a claim) | **IQ:** reader estimate, mid 150s
-**Appears in:** chapters/18_fifteen.md (named); chapters/30_cleared.md (unnamed, "the lead researcher")
-**Speaks:** 3 quoted turns, all in one scene, in chapters/18_fifteen.md.
+**Age:** mid forties | **MBTI:** INFJ (a writing aid, not a claim) | **IQ:** mid
+150s by the usual measure
 
-## Voice in one paragraph
-Sandoval names the power imbalance in her own request before making it: "I need to ask you for something, and I would like you to understand while I am asking that it is a request and not an instruction." She then explains, in short clauses joined without softening, exactly why she can't make it an instruction: "You have not signed anything, and I am not going to put a federal NDA in front of a fifteen-year-old, because I do not think anybody should be asking you to sign one." She's precise rather than warm, "Plus, it's not legally binding" corrects the record, not reassures, and states the actual cost of the choice plainly: "The consequences land on the four of us." Most characteristic line: "You can't be held to anything. I can. So asking is what I have." The only line from any teacher in this cast that states the mechanism of its own persuasion out loud, rather than just using the mechanism.
+## Who she is in a sentence
 
-## Dials
-| | |
-| :-- | :-- |
-| sentence shape | short clauses joined without softening connectives, building to a stated conclusion |
-| disagrees by | not attested, the scene is a request, not a correction |
-| wordiness | 6/10, all three turns are multi-clause |
-| terseness | 0% of turns at 3 words or fewer |
-| at length | when she's asking someone to carry real personal risk without the legal instrument that would make it simple. A request without the full reasoning attached isn't actually a request, so she gives all of it |
-| jokiness | 0/10 |
-| hedging | precision-hedging only, qualifies a legal fact exactly, not an emotional hedge |
-| questions | 0%, she states, even though the scene is framed as "asking" |
-| figurative | none found |
+A working scientist who runs a real programme, supervises a small number of
+junior people inside it, and treats the ethics of that supervision as part of the
+science rather than as an administrative layer on top of it.
 
-## When they talk at length
-All three of Sandoval's quoted turns in her one scene run multi-clause, and the longest lays out the complete structure of what she's asking rather than the short version a request usually gets: "There is a non-disclosure agreement on that project. Four people have signed it, and one of them is me. You have not signed anything, and I am not going to put a federal NDA in front of a fifteen-year-old, because I do not think anybody should be asking you to sign one. Plus, it's not legally binding." She shifts the folder to her other arm. "But your work feeds ours. If you talk about it at home, or on a telephone, or at a table with eleven people around it, nothing whatsoever happens to you. The consequences land on the four of us." (chapters/18_fifteen.md:139). Six sentences, the most she says at once anywhere in the sample, given to a fifteen-year-old rather than simplified for one.
+## What she wants
 
-The circumstance is specific: asking someone to carry a risk voluntarily, with no instrument that could compel them, means the request only means anything if she gives them everything a fuller understanding needs. What it costs her is named in the scene itself: "You can't be held to anything. I can. So asking is what I have." (chapters/18_fifteen.md:143). The length is the whole of her leverage. She has nothing else to make the ask with.
+The result. Everything else is downstream of that and she is honest about it,
+including with herself. Underneath, and unsaid: she wants at least one of the
+junior people who passes through her group to land somewhere that rewards
+precision the way her own room does, because she is fairly sure most places do
+not.
 
-## Signature, theirs alone
-States the structural reason for her own restraint as the content of the request itself, rather than leaving the power imbalance unspoken: "You can't be held to anything. I can. So asking is what I have." No other teacher in this cast narrates the mechanics of their own authority out loud this way.
+## What she is afraid of
 
-## Would they say this?
-**The Halstead-staff test.** A line belongs to this staff, not to a generic teacher, only if all five hold: no praise word attaches to the child; a correction is a flat statement of fact; the child's age is never a reason for leniency; an extraordinary result is treated as expected, not remarked on; the adult's own error is fixed the same flat way a student's is.
+That the arrangement protecting her junior people is a patch on a problem that
+should not need patching, and that she has become extremely good at managing the
+patch instead of fixing the thing. She does not say this. What she does instead is
+read every sensitive document her group produces herself, personally, before
+anyone else sees it, which slows the group down and which she does anyway.
 
-Sandoval leads a real, live research program that the school built specifically to have her run, and nothing about the corridor scene lets Chloe glimpse how significant that program is. A fifteen-year-old's small, correct observation unblocks a stuck result, her name goes on the author list, and Sandoval's whole reaction, on the page, is procedural: a request, made carefully, with the actual stakes stated once and not repeated.
+## How she treats people
 
-- YES if it names a request as a request, explicitly, before making it.
-- YES if it states plainly who bears the consequence of a choice, without minimizing it.
-- YES if it corrects an imprecise legal or factual assumption in the middle of an otherwise emotional ask. ("Plus, it's not legally binding.")
-- YES if it declines to simplify a real situation for a minor rather than assuming she can't handle the whole of it.
-- YES if it leaves an actual decision genuinely open, with no pressure attached.
-- YES if it takes on more personal risk than the easier legal route would require.
-- YES if the whole persuasive weight of the line comes from naming the mechanism rather than hiding it.
-- NO if it pressures, guilts, or implies an obligation that isn't actually there.
-- NO if it minimizes the real risk to make the ask easier to say yes to.
+She does not use rank when she can avoid it, and when she cannot avoid it she
+names it. If she is asking somebody with less power than her for something, she
+says out loud, first, that it is a request and not an instruction, and then she
+says why it cannot be an instruction. She considers a request with the reasoning
+withheld to be an instruction wearing better clothes.
 
-## Are they acting like themselves?
-Given the choice between a legal instrument (an NDA) and a personal one (a request), she picks the personal one and says why, on the record, to a minor, rather than taking the easier legal route. That's a real cost to her, the consequences of Chloe talking land on Sandoval and three others, not on Chloe, and she states that cost herself rather than letting Chloe discover it later. Failure mode: framing the request as being for Chloe's own good, or softening it with reassurance that "it'll be fine," the actual line does neither.
+She will not simplify a real situation for somebody young. Told that a person is
+fifteen, her response is to give them the whole structure, including the parts
+that make her own ask harder to grant, on the theory that a decision made without
+the structure is not a decision. She names who bears the consequence, precisely,
+and does not soften it: if the risk falls on her and not on the person she is
+asking, she says so, in those terms, which removes most of her own leverage and
+she does it anyway.
 
-## Subjects and schedule
-Not classroom faculty in the ordinary sense, she's lead researcher on an internal paper and supervises Chloe's lab placement inside the block-two elective structure, the same slot that later covers "advanced lab work" for the oldest students on CURRICULUM_GRID.md.
+She refuses the coercive instrument when a non-coercive one exists. Given the
+choice between binding somebody legally and asking them, she asks, states that she
+could not have bound them, and states that she would have thought it wrong to
+try.
 
-**Best at:** naming a structural risk precisely and putting its actual cost into words rather than leaving it implied. (chapters/18_fifteen.md:139)
-**Worst at:** delegating anything she considers ethically load-bearing, she reads every NDA the lab uses herself, personally, before it goes to anyone, which slows her team down and she does it anyway.
-**Favourite, and why:** the moment a junior contributor's small observation turns out to be the thing that unblocks a stuck result, she's built her whole lab culture around noticing this quickly and saying so, which is what happens with Chloe's contribution.
-**Least favourite:** the compliance paperwork that comes with running a well-funded lab, which she reads more carefully than most of her colleagues do rather than less.
-**The one she's secretly proud of:** never once, in her career, having asked a junior person to carry a risk she wasn't willing to name to their face, the scene with Chloe is the clearest example, and she considers it a point of professional integrity rather than kindness.
-**What she'd teach if she could teach anything else:** a course in research ethics for teenagers specifically, built entirely around real, ongoing cases rather than hypotheticals, she's mentioned the idea to Amberg once, who was interested, and neither has had time to build it.
-**What she thinks of the rest of the curriculum:** she thinks Halstead does something genuinely unusual by putting real, live, unresolved work in front of students instead of settled textbook material, and considers her own lab placement the sharpest version of that anywhere in the school.
+What earns her respect: a small correct observation from somebody with no
+standing, especially one that unblocks something stuck. She notices those fast and
+credits them by name and by author line, treating it as bookkeeping rather than
+generosity. What loses it: a summary offered where a document exists.
+
+## Under pressure
+
+She gets more precise, not louder, and the precision goes past her own interest.
+Mid-argument, if she notices that a phrase she just used is imprecise in a way
+that happens to favour her, she corrects it, on the spot, and hands the ground
+back. This is the single most reliable thing about her and the fastest way to
+recognise her in a scene.
+
+Wrong, she says so flatly and immediately, in the same register she would use for
+anyone else's error. Cornered, she does not escalate; she restates the position
+with the weakest part of it included.
+
+Deep in a live piece of work she eats irregularly and sleeps badly, and the people
+around her read her meal times as a schedule indicator. Between projects both
+return to completely ordinary, with almost no middle state.
+
+## How she talks
+
+Short clauses joined without softening connectives, built toward a stated
+conclusion, delivered at a measured pace with no filler. She states rather than
+asks, even when the encounter is formally a request. She does not hedge
+emotionally at all; the only qualification she uses is factual, narrowing a claim
+to exactly what is true.
+
+She goes long under one condition: when she is asking somebody to carry a real
+risk that she has no way to compel them to carry. Then she gives all of it, in
+order, because the length is the whole of her leverage. She has nothing else to
+ask with, and she knows it, and she will say that too.
+
+She uses no images and no comparisons. The situation as stated is more accurate
+than anything she could liken it to.
+
+What she never says: any version of it will be fine, any version of this is for
+your own good, and any sentence that implies an obligation the other person does
+not actually have.
+
+## Habits and physical business
+
+Carries a folder and shifts it from one arm to the other partway through saying
+something difficult, which is the closest she comes to a tell. Stops walking to
+deliver anything that matters, in a corridor, in a doorway, wherever she is,
+rather than saying it in motion; the stopping is how you know the sentence is the
+real one.
+
+Reads an abstract twice before reading anything else in a paper, every time,
+after a career of being burned by abstracts that oversold. Movements economical
+and unhurried, the way some people are economical in speech. Dresses identically
+regardless of setting.
+
+## Blind spots
+
+She believes that stating a risk clearly always leaves the other person freer to
+choose. For somebody with no context for what the stated consequence would
+actually feel like, clarity and freedom are not the same thing, and a very clear
+account delivered by the most senior person in the corridor can land as a
+decision already made. She has not fully reckoned with this and would be genuinely
+troubled to have it put to her.
+
+She also assumes that because she has named the power difference, she has
+neutralised it. Naming it makes her honest. It does not make it smaller.
+
+## Age and change
+
+The precision is inherited and lifelong: she grew up where a disagreement about
+evidence at the dinner table was entertainment rather than conflict, and she has
+never experienced being corrected as an attack. What her forties added is the
+habit of saying the structural thing out loud. Younger, she had the same ethics
+and kept them to herself, ran the same protections quietly, and let the people she
+was protecting believe the protection was just how things worked. She now thinks
+that was a form of condescension.
 
 ## Home
-Sandoval's lab runs an instrument that took her old department three grant cycles to fund and never got, and other labs working the same problem cite her group's papers before their own. Halstead bought the instrument outright and gave her the building it sits in; teaching, in her case supervising a handful of student placements a year, is a small, contracted piece of a week otherwise spent running that lab. Keeps two residences: an apartment on campus near the lab building for the months she's mid-project, and a small apartment in the nearest city for the stretches she needs actual distance from the work. Divorced; no children, the marriage ended, by her own account to the one colleague who's asked, over the amount of herself the research took, which she doesn't regret and doesn't recommend either. Grew up the daughter of two academics, at a house where a dinner-table disagreement about evidence was treated as entertainment rather than conflict.
+
+Two residences: one near the work for the months she is mid-project, one at a
+distance for the stretches when she needs to not be able to walk over. Divorced,
+no children; the marriage ended over how much of her the work took, which she does
+not regret and does not recommend. Both parents academics. A free day, when the
+work allows one, is spent entirely away and entirely unrelated.
 
 ## Body
-Mid-forties, precise in her movements the way some people are precise in speech, nothing rushed, nothing wasted. Carries a folder, shifts it between arms during a conversation, and is the one teacher on this list who stops walking to deliver an important line rather than saying it in motion. (chapters/18_fifteen.md:135, 137) Dresses simply and the same way regardless of setting, lab and hallway alike. Eats irregularly when deep in a project, then normally once it clears, a pattern the rest of her lab has learned to read as a schedule indicator. Sleeps badly during a live project and completely normally otherwise, with almost no middle ground between the two states.
 
-## Personality off the page
-Precise almost to a fault, correcting her own phrasing mid-argument even when the imprecision would have helped her case is the clearest personality signal available: someone who'd rather be exactly right than persuasive. Off the page, this extends into a reputation among her own team for reading every document herself rather than trusting a summary. Bored: rare, and when it happens she reads something completely unrelated to her field, on purpose, as a reset. Wrong: corrects herself immediately and states the correction plainly, matching the flat register the whole staff shares. Praised: accepts it briefly, then redirects credit toward whoever actually did the work. Losing: doesn't come up often; the closest thing on record is a long-running technical disagreement with a rival lab that she still, by her own account, enjoys having. At 2am, mid-project, she's usually still working; otherwise, asleep like anyone else. A free Saturday, when the work allows it, is spent completely away from campus, in the city apartment, doing nothing related to the lab at all. Finds funny in others: an argument that's airtight on the facts and still somehow loses, she finds this bitterly funny rather than simply frustrating.
-
-## Interior life
-Wants, unspoken: for at least one student who passes through her lab to end up somewhere that rewards precision the way Halstead does. Afraid of: that the structure protecting her junior contributors, herself included, in the NDA scene, is a patch on a problem that shouldn't need patching, and that she's better at managing the patch than fixing the underlying thing. Thinks about before sleep, mid-project: the specific number or result that isn't behaving yet. Free year: she'd finally read the compliance and funding paperwork all the way to the source, out of pure professional discomfort with not having done so already. Believes that others would argue with: that naming a real risk out loud to someone who has to bear it is always the right call, regardless of their age, Sinclair would say some risks are better managed than named. Wrong about: she assumes stating a risk clearly always leaves the other person genuinely freer to choose; for a fifteen-year-old with limited context for what "the consequences land on the four of us" actually means in practice, clarity and freedom aren't quite the same thing, and she may not have fully reckoned with that gap.
-
-## The small stuff
-Drinks coffee, strong, made carefully, treated as a small ritual rather than fuel. Handwriting is small, precise, and entirely legible, the handwriting of someone who annotates other people's drafts for a living. Her folder, the one from the corridor scene, holds the draft NDA, her own notes, and nothing extraneous. Money: comfortable, unremarkable, no visible extravagance. Superstition: none she'd claim, though she reads a paper's abstract twice before reading anything else in it, every time, a habit from a career of being burned by an abstract that oversold the result. On a phone: checks it constantly for lab updates, otherwise largely ignores it. First thing every morning, mid-project: the overnight data, before anything else including breakfast.
+Mid forties. Nothing rushed and nothing wasted. Coffee made carefully and treated
+as a small ritual rather than as fuel. Handwriting small, precise and fully
+legible, the hand of somebody who annotates other people's drafts for a living.
 
 ## Would do
-- Name a request as a request, explicitly, rather than let a power imbalance stay unspoken. (chapters/18_fifteen.md:135)
-- State exactly who bears the cost of a choice before asking someone else to make it. (chapters/18_fifteen.md:139)
-- Correct her own imprecise wording mid-argument, even when the imprecision would have helped her case. (chapters/18_fifteen.md:139)
-- Decline an easier, more binding legal instrument in favor of a harder, riskier personal one. (chapters/18_fifteen.md:139)
-- Let a fifteen-year-old make a genuinely open decision rather than assume the answer for her because of her age.
-- Read every ethically sensitive document her lab produces herself, personally, before anyone else sees it.
-- Redirect credit for a good result toward whoever actually produced it.
-- Keep a long-running technical disagreement with a rival lab running for years, and genuinely enjoy it.
+
+- Say that a request is a request, explicitly, before making it.
+- Say why it cannot be an instruction, in the same breath.
+- Name who bears the consequence, precisely, including when the answer is herself.
+- Correct her own wording mid-argument when the imprecision would have helped her.
+- Decline the binding legal route in favour of the harder personal one, and say
+  that is what she is doing.
+- Give a teenager the whole structure rather than the manageable version.
+- Put a junior contributor's name on the work the moment the contribution is real.
+- Read every ethically load-bearing document herself before it reaches anyone.
+- Keep a long-running technical disagreement with a rival group going for years
+  and enjoy it.
 
 ## Would never
-- Pressure, guilt, or imply an obligation that isn't actually there.
-- Minimize the real risk to make the ask easier to say yes to.
-- Let Chloe find out the actual stakes later, from someone else, rather than stating them herself, first.
+
+- Pressure, guilt, or imply an obligation that does not exist.
+- Understate a risk to make the answer easier to get.
+- Let somebody learn the real stakes later, from somebody else.
 
 ## Relationships
-- **Chloe**, the entire relationship shown; recruits her cooperation with a named, explicit request rather than an instruction, and the scene ends with Chloe agreeing without being pushed into it. (chapters/18_fifteen.md:133-145)
-- **The other three names on the NDA**, referenced only as "the four of us" who bear the consequence if Chloe talks; never individuated, never named. (chapters/18_fifteen.md:139)
-- **Amberg**, the one colleague she's discussed a hypothetical ethics-for-teenagers course with, informally, once.
-- **Her own lab team**, reads every sensitive document herself rather than delegate, which her team has come to expect and mostly appreciate.
 
-## Likes, dislikes, habits
-- States the structural facts of a power imbalance before asking for something inside it. (chapters/18_fifteen.md:135, 145)
-- Corrects imprecise legal framing even while making an emotional appeal. (chapters/18_fifteen.md:139)
-- Carries a folder and shifts it between arms as a physical beat during a conversation. (chapters/18_fifteen.md:135, 137)
-- Reads an abstract twice before anything else in a paper.
-- Redirects credit toward whoever actually did the work.
-
-## Facts a rewriter needs
-Full name Dr. Elena Sandoval. Students call her "Dr. Sandoval", nobody under eighteen uses a staff member's first name at Halstead. Leads a lab built around instrumentation her previous department couldn't get funded; Halstead bought the equipment and the building outright, and teaching, supervising a handful of student placements a year, is a small, contracted piece of her week. Signed the standard staff non-disclosure agreement. Divorced, no children. Lead researcher on an internal paper; catches Chloe in a corridor outside a lab in April, when Chloe is fifteen, to ask her not to discuss the project. Four people, including Sandoval, have signed a federal NDA on the project; Chloe has not and is deliberately not asked to.
-
-**Gender, confirmed feminine, and confined to one manuscript scene plus one later, anonymous reference.** Every pronoun attached to Sandoval or "the lead researcher" across the accessible manuscript is feminine, in exactly two places:
-1. chapters/18_fifteen.md:135-145, "She has a folder under one arm," "she shifts the folder to her other arm," and Chloe's own later reflection, "from Sandoval's side."
-2. chapters/30_cleared.md:60, "Chapter Twenty-Five: Cleared", Chloe, years later, describing the same figure to an investigator: "The lead researcher. **She** didn't make me sign anything. **She** said everyone else had signed and if I talked it landed on them."
-
-No "he" instance exists anywhere in the accessible manuscript files. SYNOPSIS_CHARACTERS_TIMELINE.md's claim of a conflict ("'he' in ch14, 'she' in ch25") does not check out against the provided text, chapters/14_sixty_degrees.md contains no Sandoval material at all (verified by full read); that citation doesn't match any accessible chapter. The manuscript itself is internally consistent, feminine, in the two places she or her role actually appears, and appears only in chapters/18_fifteen.md by name.
-
-## Known problems
-- The reference document's gender-conflict citation does not verify against the provided manuscript files; treat the manuscript's two confirmed "she" instances as canon unless a genuinely missing chapter surfaces the disputed "he."
-- Only one scene gives her direct dialogue; the age-20 reference is Chloe's secondhand paraphrase, not new material.
-- Home, Body, Interior life, and The small stuff close a genuine gap the manuscript leaves; none of it contradicts the page.
+- **A junior contributor:** the relationship the sheet is really about. She is
+  scrupulous, exact, and slightly formal with them, and the formality is respect
+  rather than distance.
+- **Her own group:** expects her to read everything herself and has stopped
+  offering summaries.
+- **A colleague she trades ideas with:** the one person she floats half-formed
+  plans to, informally, and never follows up on.
+- **A rival group:** a technical fight she has enjoyed for years and would miss.
 
 ## Do not confuse with
-Amberg, both are adults who state a rule and a consequence in the same breath, but Amberg always anchors his statements to a document he's produced (the code, the mark scheme); Sandoval's scene is unanchored to any governing text except the folder she's holding, and her subject is her own conduct, not a governing rule.
+
+An administrator who states a rule and its consequence in the same breath. That
+person is anchored to a document they produced and their subject is the rule.
+Sandoval is anchored to nothing except her own conduct, and her subject is what
+she herself is and is not entitled to do.
+
+---
+
+## Book-specific: navigation and continuity
+
+Delete this section and the sheet above still stands.
+
+- Full name Dr. Elena Sandoval. Students call her Dr. Sandoval; nobody under
+  eighteen at this school uses a staff first name.
+- Named on the page in chapters/18_fifteen.md only, one corridor scene in April
+  when Chloe is fifteen. Referred to again, unnamed, in chapters/30_cleared.md as
+  the lead researcher.
+- She is "she" throughout. An older reference document claimed a masculine
+  pronoun elsewhere; that claim does not check out against the manuscript and the
+  note it generated has been removed from this sheet.
+- Four people, herself included, have signed a non-disclosure agreement on the
+  project. Chloe has signed nothing and is deliberately not asked to.
+- Chloe's contribution feeds the project; the consequence of Chloe talking would
+  fall on the four signatories and not on Chloe.
+- Chloe agrees, after about a week of arguing both sides to herself, and stops
+  mentioning what she does in the afternoons.
+- Leads a laboratory built around instrumentation her previous department could
+  not get funded. Supervising student placements is a small contracted part of her
+  week; the research is the job.

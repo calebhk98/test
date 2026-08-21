@@ -1,138 +1,220 @@
-# Dr. Benjamin Prentice
+# DR. BENJAMIN PRENTICE
 
-"Ben": the psychologist who spends two hours testing Chloe, reads the result, tells Meg the school is the lever, and learns the program that lever depends on starts in third grade, two years out.
+The assessor: spends hours building an accurate picture of a person, then hands
+it to whoever can act on it along with an honest estimate of how little that is
+likely to change.
 
-**Age span:** 52 at the time of Chloe's testing | **MBTI:** INTP (writing aid, not a claim) | **IQ:** not inferable directly, though the battery he administers and the report he delivers are both on the page in detail
-**Appears in:** chapters/02_march_4th.md only.
-**Speaks:** roughly 28 quoted lines, more than any other adult in this batch, all inside a single continuous scene.
+**Age:** early fifties | **MBTI:** INTP (a writing aid, not a claim) | **IQ:**
+not the relevant axis; what the sheet is about is how he handles other people's
 
-## Voice in one paragraph
+## Who he is in a sentence
 
-He runs two registers in the same scene: short and procedurally transparent with Chloe, long and information-dense with Meg. His most characteristic line does both at once: "'I'm not seeing what the school is seeing. She finishes in the first two minutes and then she's got thirty-eight minutes left over and nowhere to put them.'" (chapters/02_march_4th.md:82)
+A man who thinks of his job as translation rather than rescue, is very good at the
+translation, and has made a quiet peace with not being told what happened next
+that is not as complete as he believes it is.
 
-## Dials
+## What he wants
 
-| | |
-| :-- | :-- |
-| sentence shape | two registers, short and procedural with Chloe, long and explanatory with Meg |
-| disagrees by | states the institution's framing beside his own findings and lets the gap speak |
-| wordiness | under 10 words a line with Chloe; 40 to 70 words unbroken with Meg |
-| terseness | roughly 21% of lines are three words or fewer, concentrated in the testing half, a measurement, not a ceiling |
-| at length | opens up with the adult who has to act on the results, never with the child who was tested, and the switch itself is the point |
-| jokiness | 1/10, the only candidate is "the rest of them put it in the folder" (chapters/02_march_4th.md:95), delivered flat, "without any particular feeling about it" per the narration, dry institutional realism bordering on gallows humor about the system, never about the child |
-| hedging | 0% in his own words, and it's earned: he's candid to a fault with Meg by design, but "some of them do move on a report like that" (chapters/02_march_4th.md:93) already functions as a hedge about something outside his control, an institution's behavior, even without a hedge word attached to it |
-| questions | high with Chloe, test administration; near zero with Meg |
-| figurative | one inherited, plain-spoken idiom permitted in the Meg-register only, dead and clinical ("on paper," "by the book"), never with Chloe, never invented, matching the register split he already has |
+For the picture to be used. His private estimate of how often that happens is
+somewhere around one in five, and it is also the number he would settle for, and
+he is aware of how that sounds.
 
-## When they talk at length
+What he wants and would not say: to find out. He is functionally never told the
+outcome of anything he writes, and he has arranged his whole professional
+temperament around not minding.
 
-He goes long with exactly one person: the adult who has to act on what he found, never the child who was measured. In the room with Chloe he stays under ten words a line, explains a rule before applying it, and declines flatly to rate her. Twenty minutes later, in the hallway, the same findings come out of him in forty-to-seventy-word unbroken runs, jargon translated in real time, the school's account and his own side by side. (chapters/02_march_4th.md:86-97) The switch is the character, not a mood: length is reserved for someone with power to use it, and a child being tested has none.
+## What he is afraid of
 
-It costs him the comfort of an unqualified result. Being that thorough and that candid with Meg means handing her the realistic odds in the same breath as the diagnosis, "some of them do move on a report like that... the rest of them put it in the folder," so the fuller he is, the more he has to undercut the very report he just spent two hours building. He does this every time, not because it's easy, but because a family that found him through a pediatrician came for the plain number, not a softened one.
+That he is the last accurate picture some of these people ever get taken of them.
+He does not dramatise this and would not use those words out loud. What he does
+instead is refuse to round anything off, in either direction, in any report.
 
-## Signature — theirs alone
+## How he treats people
 
-Every time Chloe asks how she did, he declines to rate it; twenty minutes later, in the hallway, he gives Meg the specific number he wouldn't give the child:
-- "'Was that good?' 'That's not one I answer,' Ben says, and he isn't being mean about it." (chapters/02_march_4th.md:51-52)
-- "'The talking-and-reasoning part of this, she's at the top of it. The speed part, she's ordinary.'" (chapters/02_march_4th.md:88)
+He runs two registers in the same room and the split is the character, not a
+mood: short, plain and procedurally transparent with the person being assessed;
+long, dense and unsparing with the person who has the power to act. Length is
+reserved for whoever can use it. Somebody being measured has no power in the room
+and so gets clarity instead.
 
-## Would they say this?
+With the subject, he levels the room physically before he starts, sits at their
+scale rather than above it, gives them his first name and asks what they want to
+be called. He explains what is about to happen and why before it happens,
+including that some of it is designed to be too hard and that missing it is part
+of the design. He answers a direct question about the process immediately and
+straight, with the real answer, on the first attempt.
 
-- YES if it tells Chloe what's about to happen and why, before it happens.
-- YES if it's a long, unbroken, jargon-translating explanation addressed to an adult.
-- YES if it states the school's account and his own findings side by side.
-- YES if it treats a child's answer as information rather than compliance or defiance.
-- YES if it states the realistic odds of a report actually changing anything.
-- YES if it matches the physical scale of the room to the child in it, the same-size chair.
-- YES if it checks in on a child's state directly and asks again if the first answer seems performative.
-- YES if it takes materials away the instant a timed section ends, cleanly, without ceremony.
-- YES if the register lengthens for the adult in the room and stays short and procedural for the child, in the same scene.
-- NO if it rates or ranks Chloe's performance directly to her.
-- NO if it uses an invented image, or a comparison outside the dead, clinical kind he'd use with Meg.
+He will not rate them to their face. Asked how they did, he says plainly that
+this is a question he does not answer, and he is easy about it rather than stern,
+and then he moves on. Twenty minutes later he gives the adult the exact figure,
+with both halves of it separated out and the misleading average named as
+misleading.
 
-## The kindly-and-inadequate test
+He treats the subject as a credible witness to their own experience. Their
+account of what their days are like goes into the record with the same weight as
+a timed sheet, and when the account is the interesting part he stops writing and
+listens to it.
 
-Ben spends two hours on a full battery: block patterns, verbal reasoning, digit span, a timed coding task, comprehension, story recall, mazes. He reads the results in the room, in real time, and tells Meg what they mean before she leaves the building: the reasoning score sits at the top of the scale, the processing-speed score sits in the ordinary range, and averaged together they produce one composite number lower than either half. He names the lever, the school, because that's where the missing forty minutes live, and he names the gifted program as the only mechanism the school has for using that lever. Then he tells her when the program starts: third grade, two years from a six-year-old sitting in his office. A line for Ben belongs on the page if it's specific, checkable, and delivered without illusions about what a report can do institutionally, "some of them do move on a report like that... the rest of them put it in the folder" is that line exactly. A line falls off the page if it blames the family for not catching this sooner, or promises Meg an outcome he can't guarantee. He does neither.
+He praises effort at the end, once, plainly, and never performance.
 
-## Are they acting like themselves?
+## Under pressure
 
-He sits "on a chair the same size as hers," levels the room to Chloe's scale before starting. He administers the full battery with visible discipline, checks in on her state directly, and asks again when the first answer to "are you tired" sounds automatic. In the hallway, he is candid to the point of bluntness with Meg and never cold about it.
+Not much reaches him in a working room, because the structure of the work removes
+most of it. His pressure is of a different kind: he is the person who has to say
+out loud that an accurate report will very likely be filed and forgotten, and he
+says it without bitterness and without cheer, in a completely level register, and
+that flatness is the discipline. Being neither hopeful nor cynical about an
+institution is harder to hold than either.
 
-**Failure modes for a rewriter:** softening his refusal to rate Chloe's performance; making him promise Meg an outcome the school hasn't guaranteed; bringing him back into the story without addressing the gap this sheet documents below; writing his institutional candor with Meg as either upbeat or bitter, it's neither, it's delivered "without any particular feeling about it."
+Wrong, he reviews the case, keeps his own informal running tally of how often his
+reads matched what happened, and does not tell anybody he does it.
 
-## Subjects and schedule
+## How he talks
 
-He holds a PhD in clinical and school psychology, licensed for assessment, with a subspecialty in gifted identification and twice-exceptional evaluation earned in a postdoctoral fellowship. At the time of Chloe's testing he is twenty-two years into independent practice, taking referrals primarily from pediatricians rather than schools, which is why Chloe's family found him through their pediatrician's two names rather than through the school district. He keeps his caseload small on purpose, six to eight full assessments a month, each running two to three hours, because he runs the entire battery himself instead of splitting it across staff. He translates a composite score into language a parent can act on. An accurate report still has to survive a school that may file it away, and that part sits outside anything he administers or writes. Early in his career he spent an unpaid year shadowing a colleague who specialized in trauma rather than testing, learning to tell apart a child whose flat affect comes from harm and a child whose flat affect comes from boredom; the two can look identical on paper, and he built his intake process around keeping them separate. He takes pride in catching, in one sitting, what an entire school year of teachers missed.
+To the subject: a handful of words at a time, present tense, no jargon, rule
+before task. To the adult: long unbroken runs of four or five sentences, jargon
+translated in real time as he goes, the institution's account and his own findings set side by side
+with the gap left for them to see rather than pointed at.
+
+He asks every question in the same voice, so that the easy ones and the hard ones
+sound identical coming out of him. He does not vary tone to encourage, which
+means nothing in his delivery leaks the answer he is hoping for.
+
+He lets a silence sit rather than fill it, including when filling it would be
+kinder, and the silence is frequently what produces the real answer. He asks a
+question about somebody's state twice when the first answer came back automatic.
+
+He hedges about nothing inside his own findings. What sounds like hedging is
+always about something outside his control, an institution's behaviour, and it is
+accurate rather than evasive.
+
+He allows himself only dead, inherited, clinical idiom, never an invented image,
+and his one register of humour is dry institutional realism about the system,
+delivered without any particular feeling about it, and never aimed at a person in
+the room.
+
+## Habits and physical business
+
+Takes materials away the instant a timed section ends, cleanly, without ceremony,
+and turns a page face down before the person can count what they did. Moves last
+and lets the subject move first in almost every physical exchange. Caps his pen
+the same way, same hand, at the end of every session. Keeps a room with almost
+nothing personal in it so that nothing competes for a child's attention.
+Deliberately dressed down, no coat, no tie.
+
+## Blind spots
+
+He believes translation and rescue are cleanly separable and that being good at
+the first discharges him of the second. It is a defensible position and it is
+also the thing that lets him name a lever, know the lever is two years out of
+reach, say so, and go home.
+
+He assumes candour is always a kindness to the adult receiving it. Delivered
+level, complete and immediate, an accurate account of how little can be done can
+land as instruction to give up, and he has no way of knowing when it does.
+
+He does not remember them. A year on he could not give you the name, and certain
+sessions surface anyway, unbidden, years apart from anything around them, which he
+has never reconciled with the first half of this sentence.
+
+## Age and change
+
+Twenty-plus years in, the register split is now automatic and was once effortful.
+The younger version over-explained to children, out of a wish to be liked in the
+room, and learned that a child being tested does not want a companion, she wants
+to know the rules. What the years added is the willingness to tell an adult the
+unflattering institutional truth in the same breath as the finding, instead of
+letting them leave hopeful and find out later.
+
+Late in his career the practice thins to part-time and shifts toward funding
+assessments for families who could not otherwise pay for one, which is the same
+belief arriving from a different direction.
 
 ## Home
 
-He has been married for over twenty years to a high school guidance counselor, which likely shapes how precisely his own report writing aims at what a school can act on. His two children are grown and out of the house by the time of Chloe's testing. He lives in the house he and his wife bought when they were both starting out, twenty minutes from his office, and never moved. He keeps his home office separate from his practice office and does not bring case files home, a boundary he set early and has kept for two decades. Dinner conversation with his wife often turns, informally, to kids falling through some gap in a system neither of them can fully fix.
+Married more than twenty years to somebody who works inside a school, which is
+very likely why his reports aim so precisely at what a school can actually act on.
+Two grown children. The same house since they started out, twenty minutes from
+the office. Case files never come home; the boundary was set early and has held
+for two decades. Dinner conversation drifts, informally, to people falling
+through a gap neither of them can close.
 
 ## Body
 
-He has a beard, kept trimmed and going grey. Average height and build, he dresses deliberately casual for a clinician, no white coat, no tie, wanting a six-year-old to relax in the room. He moves unhurried and moves last, letting the child move first in almost every physical interaction in the room. He sleeps reasonably; the job doesn't follow him home the way it might for someone who takes files with them.
-
-## Personality off the page
-
-He treats his job as translation rather than rescue. He states real odds without dressing them up or tearing them down. Every session is a different child, which leaves him little room to be bored. Wrong, he reviews any case where his read didn't match outcomes, and keeps informal notes on his own accuracy over the years. Praised, he redirects to what the data showed, uncomfortable with direct credit. His findings are rarely disputed once written, so he faces little professional conflict. Testing days leave him drained in a specific, satisfied way rather than depleted. A free Saturday finds him with his hands busy, restoring old furniture, work chosen for having nothing to do with his job. A parent trying to guess the "right" answer on a child's behalf mid-session strikes him as sympathetic, not annoying.
-
-## Interior life
-
-He wants even one in five of his reports to move a school's decision inside a year; his private estimate of the real number sits close to that same one in five. He is afraid he is, functionally, the last accurate picture some of these kids ever get taken of them. Before sleep he rarely returns to a specific case by name, though certain sessions stay with him for years without him choosing that. Given a free year, he would write the plain-language guide for parents he's always meant to write, translating a percentile report into something usable without a clinician in the room to explain it. He believes "two years" is a policy choice wearing the costume of a neutral fact, and that calling it a fact is how the system avoids owning it. He tells Meg the lever is the school; the actual lever, structurally, is a program that starts in third grade regardless of any single report, and his advice, correct locally, carries little weight against the calendar.
-
-His practice continues for another six years after Chloe's appointment, then winds down to part-time as he moves into consulting for a regional nonprofit that funds assessments for children whose families can't afford one privately. He does not learn what became of Chloe; a year on he could not have told you her name. Certain sessions surface on their own sometimes, unprompted, years apart from any of the cases around them, and a kid who found the missing piece was a shadow, thought that was unfair, and got it right anyway, is the kind of detail that does.
+Bearded, trimmed, going grey. Average height and build. Unhurried. Sleeps
+reasonably, because the job genuinely does not follow him home in the way it
+might for somebody who carried the paper.
 
 ## The small stuff
 
-He drinks black coffee, one cup, before the first session of the day, none after. His handwriting runs small and dense, clinical shorthand only he can fully read back. His office carries almost no personal decoration, deliberately, so nothing competes with the child's attention, while his home office fills with restored furniture pieces. His timer carries a worn thumb-groove from twenty years of the same gesture starting it. He spends more on his hobby's tools than on anything else discretionary. He caps his pen the same way, same hand, at the end of every session. He checks his phone only between sessions, never during one. Every morning he reviews the day's first file over his one cup of coffee, nothing else.
+Black coffee, one cup, before the first session and none after. Small dense
+handwriting only he can fully read back. A timer with a worn thumb-groove in it
+from twenty years of the same gesture. Restores old furniture on days off,
+chosen specifically because it has nothing to do with the work. Phone checked
+between sessions and never during one.
 
 ## Would do
 
-- Sit in a chair the same size as the child's rather than one that puts him above her.
-- Explain a task's rules before starting it, including that some parts are supposed to be hard.
-- Tell a child plainly that a question about her own performance isn't one he'll answer.
-- Take materials away the instant time is up, cleanly, without ceremony.
-- Give a parent the specific, honest number even when it complicates the story she'd rather hear.
-- Name the realistic odds of a report actually changing anything.
-- Spend an unpaid year early in his career learning to tell trauma apart from boredom in a flat affect.
-- Keep a home office strictly separate from his practice, two decades running.
-- Restore old furniture on weekends specifically because it has nothing to do with his work.
+- Sit at the subject's scale rather than above it.
+- Say the rules of a task before running it, including that part of it is meant
+  to be too hard.
+- Answer a question about the process straight, on the first attempt.
+- Decline to rate somebody to their face, plainly, without making it a lesson.
+- Give the adult the specific number, both halves separated, and name the average
+  as misleading.
+- Say out loud what the realistic odds are that any of it changes anything.
+- Take the sheet away the second time is up and turn it face down.
+- Let a silence run past the comfortable point.
+- Ask a second time when the first answer sounded automatic.
+- Praise effort once, at the end, and never the result.
 
 ## Would never
 
-- Rate or rank a child's performance to her face.
-- Promise a parent that an accurate report guarantees institutional action.
-- Discuss one family's results with another family.
+- Rank somebody to their face.
+- Promise that an accurate report guarantees an institutional response.
+- Vary his tone to signal which answer he wanted.
 
 ## Relationships
 
-- **Chloe:** treats her as a full, credible informant about her own experience, and levels the room to get an honest account from her.
-- **Meg:** gives her the complete, specific truth rather than a comfortable summary, including the realistic odds.
-- **Dave:** no on-page contact; not shown present at the appointment.
-- **His wife:** a school guidance counselor, the person he informally compares notes with on kids falling through systemic gaps.
-- **Chloe's pediatrician:** the referral source.
-
-## Likes, dislikes, habits
-
-- **Likes:** a hard task landing for a kid, her face going hot in the good way, and his patience while it happens.
-- **Dislikes:** a parent answering for a child mid-assessment, though he redirects gently rather than showing irritation.
-- **Habits:** explains a task's rules before administering it. Takes materials the instant a timed task ends.
-
-## Facts a rewriter needs
-
-- Full name: Dr. Benjamin Prentice, goes by Ben with Chloe. Age 52 at time of testing.
-- Twenty-two years in independent practice at the time, subspecialty in gifted and twice-exceptional assessment.
-- Administers a full cognitive and achievement battery to Chloe in a single roughly two-hour session, finding a wide gap between verbal-reasoning ceiling and ordinary processing speed.
-- States the gifted program is the only available lever and that it starts in third grade, two years out from the appointment.
-- He is the only person in the manuscript shown holding a formal, complete cognitive profile of Chloe. No later chapter shows this report being read or acted on by anyone.
-
-## Known problems
-
-- He never returns, and nothing in the manuscript acknowledges it, confirmed by direct search of every chapter file and both v2 files. When Chloe's depression is diagnosed seven months later, the family sees a different, unconnected clinician, Dr. Miriam Ammons, instead. If the author wants to close this gap, having Ammons reference or request his report would do it in one line; a later chapter could instead acknowledge the family never followed up. This sheet's account of his practice winding down and becoming harder to reach offers one way to make the gap read as circumstance rather than oversight, offered as a proposal.
-- BETA_NOTES.md raises him as "the most obvious candidate for who put her on the list." No line in the primary text supports this; flagged as a reference-document theory, not adopted here.
-- The earlier brief's line-count estimate, seven mentions, undersold his dialogue volume, nearly 30 lines, all in one scene.
-- The "Voice in one paragraph" quote inserted "I think" into "she finishes in the first two minutes," which is not in chapters/02_march_4th.md:82; corrected above. A second citation, "the rest of them put it in the folder," was pointing at Meg's line instead of his; corrected to :95.
+- **The person being assessed:** treated as the credible authority on their own
+  experience, and given the rules rather than reassurance.
+- **The adult who has to act:** gets everything, in full, including the parts
+  that make the news worse.
+- **His spouse:** works inside the institutions he writes reports at, and is the
+  person he thinks out loud with about the gap.
+- **The referring source:** typically a physician rather than a school, which is
+  how the families that reach him reach him.
 
 ## Do not confuse with
 
-**Dr. Miriam Ammons.** Both are clinicians who ask Chloe direct questions in a controlled room. The dividing cue: Ben explains his reasoning to Chloe as he goes and refuses to rate her to her face while being fully candid with the parent in private. Miriam's signature is the pen, not anything she says aloud.
+A diagnostician who also asks every question in the same flat voice. The
+separating cue is what each does with the person in front of them: Prentice
+explains his reasoning as he goes, states the rules first, and tells the truth
+plainly when asked. The diagnostician explains nothing during the hour and marks
+what matters with the pen.
+
+---
+
+## Book-specific: navigation and continuity
+
+Delete this section and the sheet above still stands.
+
+- Full name Dr. Benjamin Prentice; he offers Chloe his first name and she calls
+  him Ben. Appears in chapters/02_march_4th.md only.
+- Runs a full cognitive battery on Chloe over about two hours when she is six:
+  block design, vocabulary, similarities, digit span, timed coding, a timed
+  cancellation task, picture completion, story recall, judgement questions,
+  mazes.
+- Finding: verbal reasoning at the top of the scale, processing speed ordinary,
+  and a single composite average of the two that reads as merely bright and will
+  not trigger anything.
+- Tells Meg the school is the only lever, and then learns the gifted programme
+  starts in third grade, two years away.
+- He never returns, and nothing in the book acknowledges it. The clinician who
+  diagnoses Chloe's depression seven months later is unconnected to him and there
+  is no sign either knows the other exists.
+- A reference document floats him as a candidate for whoever put Chloe on the
+  school's list. Nothing in the manuscript supports that and this sheet does not
+  adopt it.
+- One scene is his entire evidence base. Everything above is a disposition
+  consistent with that scene rather than a habit observed more than once.

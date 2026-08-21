@@ -36,7 +36,7 @@ Fails — invented simile. Conventional, inherited figures are fine. Built ones 
 * Fails: "her mom says it carefully, the way you'd put something down" / "it comes out of her all at once, like something tearing" / "the room detonates"  
 * Passes: "the way you'd tell somebody their shoe was untied"
 
-Passes — Chloe's own conceits. Icarus, clouds as the ocean going somewhere else, the moon as a liar, the room-shaped object. These belong to a character, get said out loud, and get argued with by other characters. Keep them. The distinction is speaker: a child's invented image in dialogue passes, the narrator's invented image does not.
+Passes — the children's own conceits. Icarus, clouds as the ocean going somewhere else and the moon as a liar are Chloe's; the room-shaped object is Sam's. These belong to a character, get said out loud, and get argued with by other characters. Keep them. The distinction is speaker: a child's invented image in dialogue passes, the narrator's invented image does not.
 
 Also fails: em dashes
 

@@ -65,7 +65,7 @@ Nobody may share a slot.
 | Ruth | assertion first, then the reason for it, in that order. Mid-length. | [has] |
 | Chloe | builds a concrete parallel scenario and argues the parallel. | [has] |
 | Nadia | imperative or near-imperative. Short independent clauses, no connectives. | [has] |
-| Eli | short, but reframes the terms before answering. "That's not X, that's Y." | [has] |
+| Eli | short, but reframes the terms before answering: not the thing you named, this other thing. | [has] |
 | Odile | fragments and single words. Shortest of anyone when she does speak. | [new] |
 | Priya | the only one who runs on. Multiple clauses joined by "and", tumbling. | [new] |
 | Meg | escalating three-clause question with the follow-up already loaded. | [has] |
@@ -96,52 +96,56 @@ that is already run-on behaviour, it has just never been written as run-on sente
 
 ---
 
-## Axis 3 — measured dials, and where they should move
+## Axis 3 — where each voice sits, and which way it should move
 
-Current values from `voice_separation.py`. Targets are proposals.
+No numbers here. Percentages of terse lines, hedges and questions were measured off a
+draft that has since been rewritten twice, and sheet writers reasonably read them as
+targets to hit. `_SHEET_RULES.md` bans them. What the measurements were pointing at is
+below, as directions rather than figures.
 
-| character | terse% now | target | hedge% now | target | questions% now | target |
-| :-- | --: | --: | --: | --: | --: | --: |
-| Sam | 31 | 40+ | 7 | 0 | 7 | 10+ |
-| Kavi | 44 | keep | 0 | 0 | 0 | 0 |
-| Theo | 12 | keep low | 0 | **15+** | 4 | keep |
-| Ruth | 24 | 20 | 3 | **0** | 0 | 0 |
-| Nadia | 21 | keep | 6 | **0** | 0 | 0 |
-| Eli | 30 | keep | 7 | keep | 0 | 0 |
-| Chloe | 28 | keep | 0 | keep | 0 | 5 |
-| Meg | 54 | 40 | 0 | keep | 4 | **20+** |
-| Dave | 31 | keep | 0 | keep | 15 | keep |
+| character | length | hedging | questions |
+| :-- | :-- | :-- | :-- |
+| Sam | the shortest in the cast, and should get shorter | none, ever | should ask more than he does; his questions are blunt and practical |
+| Kavi | very short or very long, nothing between | none | none. He interrogates a mechanism by stating it wrong and waiting |
+| Theo | the longest in the cast, and should stay long | **the cast's only hedger.** Should hedge noticeably more than anyone | occasional, procedural |
+| Ruth | mid-length, and should tighten slightly | **none.** She currently hedges and should not | none |
+| Nadia | short | **none.** She currently hedges and should not | none |
+| Eli | short | light, and it can stay | none |
+| Chloe | see her own sheet; the short register is situational, not a baseline | none before a claim | should ask more, especially young |
+| Meg | short, and should lengthen | none | **the cast's question-asker,** and should ask far more than she does |
+| Dave | short | none | frequent, aimed at documents and numbers |
 
-Two deliberate reversals. **Theo should be the cast's only hedger** — he currently
-measures 0% because his hedges are in narration rather than dialogue, while Sam, Eli and
-Nadia hedge more than he does, which is backwards for all four. And **Meg should be the
-cast's question-asker**, not Dave; interrogation is her established competence and she
-currently asks fewer questions than her husband.
+Two deliberate reversals. **Theo should be the cast's only hedger**: his hedges currently
+live in narration rather than in his dialogue, while Sam, Eli and Nadia hedge more than he
+does, which is backwards for all four. And **Meg should be the cast's question-asker**, not
+Dave; interrogation is her established competence and she currently asks fewer questions
+than her husband.
 
 ---
 
 ## Axis 4 — exclusive signatures
 
-One per character. Nobody else may use them. Three or four uses across the book is
-enough; more becomes a catchphrase.
+One per character. Nobody else may use them. Three or four uses across the book is enough;
+more becomes a catchphrase. Each is described as a construction rather than reproduced as a
+line, so a writer can build the next one instead of repeating the last one.
 
 | character | signature | status |
 | :-- | :-- | :-- |
-| Ruth | says your name mid-correction: "It is not better, Sam." | [has] |
-| Sam | states a number before anything else, then the point | [has, extend] |
-| Kavi | pre-empts praise by naming how easy it was | [has] |
-| Dave | "Huh." as a low-commitment closing beat | [has] |
-| Chloe | "If you..." opening a parallel scenario | [has] |
+| Ruth | drops the name of the person she is correcting into the middle of the correction | [has] |
+| Sam | leads with a number, then the point the number was for | [has, extend] |
+| Kavi | pre-empts praise by naming how easy the thing was | [has] |
+| Dave | a single monosyllable of acknowledgement that closes a topic without conceding it | [has] |
+| Chloe | opens a parallel physical scenario and argues that instead of the claim | [has] |
 | Theo | one word capitalised mid-sentence for emphasis | [has, extend] |
-| Eli | asserts, then repeats the assertion minus the contraction | [has, extend] |
+| Eli | asserts, then repeats the assertion with the contraction expanded | [has, extend] |
 | Nadia | names the person she is talking about instead of using a pronoun | [new] |
 | Meg | repeats the other person's exact phrase back before answering | [new] |
 | Odile | answers a question with a number and nothing else | [new] |
 | Priya | starts mid-thought, as though continuing a conversation you missed | [new] |
 
-Sam's existing tic, "and a half", ages out after camp and nothing replaces it, which is
-why his later lines go generic. The number-first habit is the replacement and it is
-already in the text: "About forty."
+Sam's childhood tic ages out after camp and nothing replaces it, which is why his later
+lines go generic. The number-first habit is the replacement, and the draft already has
+instances of it to build from.
 
 ---
 
@@ -153,7 +157,7 @@ uses that permission, which wastes it.
 | character | allowed |
 | :-- | :-- |
 | Chloe | yes — Icarus, clouds, the moon. Her defining channel, keep it hers. |
-| Sam | one kind only: the deflating literalism. "It's a room-shaped object." |
+| Sam | one kind only: deflating literalism. He names what a thing actually is in order to puncture what it is being treated as, and it is always a joke |
 | Priya | yes, but only about animals, and she will not notice she did it. [new] |
 | Ruth, Kavi, Nadia, Eli, Theo, Odile | none, ever. The refusal is characterising. |
 | Meg | domestic comparisons only, and only when deflecting |
@@ -183,17 +187,22 @@ explain the premise. Keep that too.
 
 ## Known collisions to fix
 
-Verified in the text. These are not "two characters sound similar", which is fine. These
+Verified in the text. These are not two characters sounding similar, which is fine. These
 are places where the same words appear twice, or where one character performs another's
 established move, which reads as an error rather than as a shared culture.
 
-1. `chapters/32_the_money.md:61` and `:468` — Kavi and Ruth say the identical six words back
-   to back, "thats a person getting older."
-2. `chapters/35_nine_minutes.md:78` and `:847` — Ruth and Eli, "thats the only thing we have."
-3. `13_ten_pages.md` — Sam asks "Why ten?" and "Why a minute?", which is Kavi's
-   mechanism-interrogation move in Sam's mouth.
-4. Meg and Dave both use exact-phrase repetition under stress. Assign it to Meg
-   (Axis 4) and take it off Dave. *Not* the "Usually pretty good" exchange in
-   `03_the_letter.md:64-64` — that is one echoing the other, and it works.
-5. Eli and Theo collapse into identical filler under low stakes: "yeah", "ok", "no",
-   "hang on". Whoever speaks second should be doing their Axis 2 move instead.
+The specific instances, with their chapters and line numbers, are listed in
+`passes/fix/SHEETS_DELINK_CHLOE.md`. They are manuscript defects rather than facts about
+anybody, so they live in a pass document where they can be closed out, and this file keeps
+only the rule they illustrate.
+
+1. Two duplicated-sentence collisions between students, both of which have since been
+   fixed in the manuscript and are closed. Checking them is what showed that the line
+   numbers in these meta files had drifted as badly as the ones on the sheets.
+2. One student is given another's mechanism-interrogation move: a short why-that-number
+   question, twice, in a chapter where the owner of that move is present.
+3. Both parents use exact-phrase repetition under stress. Assign it to the mother, per
+   Axis 4, and take it off the father. This does not apply to the one exchange where each
+   deliberately echoes the other, which works and should stay.
+4. Two of the boys collapse into identical low-stakes filler: yeah, ok, no, hang on.
+   Whoever speaks second should be doing their Axis 2 move instead.

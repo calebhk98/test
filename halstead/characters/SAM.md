@@ -1,213 +1,413 @@
-# SAM
+# Sam
 
-The best fighter in the year, who wants the real test to finally start and cannot work out why nobody will just tell him where it is.
+The best fighter of his year, who wants the real test to start already and
+cannot work out why nobody will just tell him where it is.
 
-**Age span:** seven and a half at camp (chapters/04_pluto.md) to mid-twenties (Army chapters, chapters/21_the_applications.md through chapters/29_the_file.md / chapters/27_nadia.md through chapters/35_nine_minutes.md) | **MBTI:** ESTP (a writing aid, not a claim) | **IQ:** genius-range, like the rest of the named core. His reasoning shows up as fast tactical judgment and rapid pickup of a new physical or spoken skill, not as proof-writing or systems thinking.
-**Born:** January 2005, seven months ahead of Chloe on the calendar but a year and a half ahead of her in the numbers they trade on day one of camp: seven and a half against her six (chapters/04_pluto.md:59-58).
-**Appears in:** chapters/04_pluto.md, 05_behind.md, 06_the_list.md, 07_the_same_room.md (mentioned only, no lines), 10_april.md, 11_eight.md, 12_nine.md, 13_ten_pages.md, 14_sixty_degrees.md, 15_twelve.md, 16_thirteen.md (present, no direct lines), 17_fourteen.md, 18_fifteen.md, 19_sixteen.md, 20_the_parking_lot.md, chapters/21_the_applications.md through chapters/35_nine_minutes.md
-**Speaks:** roughly 110 lines, including one-line chat messages. Front-loaded into three set pieces: the night intrusion (chapters/15_twelve.md), the parking-lot fight (chapters/20_the_parking_lot.md), and the group chat (chapters/21_the_applications.md through chapters/35_nine_minutes.md). He also carries two of his own viewpoint chapters, chapters/25_ten_targets.md and chapters/27_nadia.md through chapters/35_nine_minutes.md's "The Exercise."
+**Age span:** 7 to mid-twenties | **MBTI:** ESTP (a writing aid, not a claim) |
+**IQ:** genius-range, like the rest of the core group. It shows up as fast
+tactical judgement and quick pickup of any physical or spoken skill, not as
+proof-writing or system-building.
 
-## Voice in one paragraph
+## What he is for
 
-Shortest sentence-builder in the cast: one flat clause, said and done, is his default and where he returns to. He does subordinate, and when he does the clause is carrying weight rather than decorating: a condition set in front of its consequence, the way he hands Chloe her own essay back before she has written it, "If you can't say why the man signed it, what you've got is a feeling that it was wrong and a blank where his reason goes" (chapters/14_sixty_degrees.md:125). What he does not build is a clause that takes weight off a claim. He rarely qualifies, and he doesn't explain himself unless asked twice. Under pushback he does one of two things: he repeats the same claim in close to the same words, louder, or he stops arguing and acts. He asks more short direct questions than anyone else his age, though they're always about duration or rule, how long, why that number, never about mechanism. He's allowed exactly one kind of figurative language, the deflating literalism, where he names a thing for what it plainly is instead of reaching for an image. The most characteristic line in the book is the first one he ever gets. "It's not even a room," he says. "It's a room-shaped object." (chapters/04_pluto.md:113). It's funny because it's flat and immediate, fixing the moment instead of decorating it, the same move his number-first signature repeats afterward.
+He is the one who does the thing while other people are still describing it. He
+converts a decision into motion faster than anyone around him, and he is the
+group's proof that a person can be enormously capable and entirely uninterested
+in being thought so. He is also its comedian, though not in a way any of them
+would call witty.
 
-## Dials
+## What he wants
 
-| | |
-| :-- | :-- |
-| sentence shape | shortest in the cast; flat declarative by default; subordinates only to put a condition in front of its consequence |
-| disagrees by | restates his position unchanged, louder, or stops talking and acts |
-| wordiness | 5.5 words a line in chat and 6.5 in tagged prose, the shortest of anyone measured either way; his longest message in the whole chat is twenty words |
-| terseness | a third of his turns run to three words or fewer, 34% in chat and 38% of his tagged prose lines. A measurement, not a target, and there is no room above it |
-| at length | when an official record of him — praise, a debrief, a captain's ten-out-of-ten — doesn't match what he knows actually happened. He runs the correction all the way out, point by point, instead of taking the easier version |
-| jokiness | 9/10, the highest in the cast. He's funny because he repeats himself, unmoved, after everyone else has stopped finding it funny. That's stubbornness working as comedy: never hand him a line built on wit or timing. |
-| hedging | 0% on anything factual, tactical, or about himself — that stays absolute, and Theo keeps the exclusive claim on hedging as a general register. The one deliberate crack: when the subject is whether someone else is okay rather than what's true, a single soft word can get through. That isn't the manuscript's flatness leaking into the dial; it's the one place his certainty was never actually about being right. |
-| questions | he asks more than any other student, and they are all the same two questions: how long does this go on, and why is the number that number. He does not ask how a thing works |
-| figurative | allowed one channel only: the deflating literalism ("It's a room-shaped object," chapters/04_pluto.md:113). No other figurative language of any kind |
+A task with no announced ceiling on it. He wants that more than he wants to
+win, and considerably more than he wants to be praised. Every version of the
+question he keeps asking, when does the real one start, is the same question
+underneath: is this the kind of thing that keeps going, or the kind that stops
+and leaves him standing there with nothing on the board.
 
-## When they talk at length
+What he would not say out loud is that he is not sure what he is for when there
+is no next thing. He has never had to find out. He has always come from a house
+where the next job was already chalked up with somebody's name against it.
 
-Sam's rule is one flat clause and stop. He breaks it in exactly one kind of scene: when somebody hands him an assessment of himself that doesn't match what happened, and he won't let the wrong version stand. Told he shot a perfect ten, he runs the whole correction out instead of taking the compliment: "Accuracy is whether you can put a round into another round," Sam says. "In flight. On the count, opposite lanes, you both fire on the same beat. I'm at about forty percent and that's poor, there are people I went to school with at ninety. That's the number that means something." He nods at the rifle. "So I'm forty percent of a rifle." (chapters/25_ten_targets.md:49). He does the same thing to himself, unprompted, when a debrief doesn't mention a failure he thinks it should: "Because if that's the assessment I've got notes," Sam says. "The culvert one was bad. I let them have the back door and that's on me, I should have gone up and around and I got lazy about the time. If we're doing it again I'd want it harder, honestly, or at least more of them, because three separate two-and-fours over four days is a lot of walking for not much." (chapters/26_the_exercise.md:43).
+## What he is afraid of
 
-Both times he's talking the record down, not up — trading a compliment he didn't earn for a number he did, or volunteering blame nobody assigned him. That's the cost: it would be free to let the wrong, better version stand, and every one of these turns is Sam actively refusing that free win, in a room where nobody's making him.
+That something will matter and nobody will flag it as mattering. That he will
+spend years maxing out drills and miss the one occasion that was real, because
+it looked exactly like all the others. This is the engine under his constant
+requests for the rule, the duration, the number: he is trying to work out, in
+advance, which of these is the one.
 
-## Signature — theirs alone
+What he does instead of admitting it: treats everything as though it might be
+the real one, which reads as enthusiasm and is closer to vigilance he cannot
+switch off.
 
-States a number before anything else, then the point. Nobody else in the cast opens a line this way.
+## How he talks
 
-- "About forty," Sam says. (chapters/25_ten_targets.md:71)
-- "Four seconds," Sam says. (chapters/15_twelve.md:245)
+One flat clause, said and done. That is his default and the place he returns
+to, and it is a property of what he considers finished rather than a limit on
+his vocabulary or his willingness to speak. When the fact is out, he stops. He
+is not withholding anything and there is nothing behind the terseness that a
+longer sentence would have revealed.
 
-## Would they say this?
+What the terseness is not:
 
-- YES if it is one flat, complete clause that stops as soon as the fact is out.
-- YES if a number is the first thing in the line, with the point arriving after it.
-- YES if, contradicted, it repeats his prior claim close to word-for-word instead of building a new argument.
-- YES if it is a short question asking when something ends, what the rule is, or why a number is what it is.
-- YES if a figurative phrase in the line deflates the moment by naming what something literally, unglamorously is.
-- YES if it states a fact about himself with no softening around it.
-- YES if it answers exactly the question that was asked and then stops.
-- NO if a clause is hung on the end to soften what he just said. When he builds a longer sentence it is to set a condition in front of a consequence, not to take the weight out of one.
-- NO if it hedges about a fact, a plan, or himself: "maybe," "I guess," "probably," "sort of," "I think." That stays absolute.
-- YES, and only here, if the single soft word in the line is about whether someone else is okay, not about what's true.
+- Not reticence. He will talk for an hour about a story where he came off badly.
+- Not an inability to build a sentence. He subordinates when the sense needs it,
+  and the subordinate clause is load-bearing when he does: a condition set in
+  front of its consequence, an if in front of a then. He can hand somebody the
+  structure of their own unwritten argument in one breath.
+- Not coldness. It is the same length whether he is agreeing with you or
+  refusing you.
 
-## Are they acting like themselves?
+What he does not build is a clause that takes weight off a claim. Nothing gets
+hung on the end to soften it. He rarely qualifies and he does not explain
+himself unless he is asked twice.
 
-Under pressure he commits to a plan in seconds and defends it while still describing it, rather than finishing the description first. In a physical confrontation he takes point without being asked, then checks on the people he hit before anyone tells him to. He occupies a room by heading straight for the food, sitting near the middle of a group rather than the edge, and speaking loudest when defending a position nobody else holds. His hands are usually doing something concrete: chalking up before a climb, working a hook at the forge, reaching for someone else's water.
+Under pushback he does one of two things: he restates the same claim in close
+to the same words, louder, or he stops arguing and starts doing it. He does not
+construct a second argument.
 
-Failure modes, the two or three ways a writer most easily gets him wrong:
-1. Making him witty. His comedy is stubbornness and repetition, not a quick line. If the joke depends on timing or wordplay, it is not his joke.
-2. Making him reflective. He does not sit with a loss, an insult, or a bad outcome for more than a beat on the page. He says "noted" or "okay" and moves on to food or the next thing.
-3. Making him hedge or ask a rhetorical, exploratory question. His questions request a fact, a duration, a rule, a number. If he is workshopping his own thinking out loud, that is Chloe's or Ruth's move, not his.
+He states a number before anything else and lets the point arrive after it.
+Asked how something went, the figure comes out before any account of it. This
+is the most recognisable thing about his lines, though he does not have sole
+possession of the move and a sheet should not claim he does; what is his is
+that the number is almost always about himself, and that it closes the subject
+rather than opening one.
 
-## Subjects and schedule
+He asks a great many short direct questions and they are all one of two: how
+long does this go on, and why is the number that number. He does not ask how a
+thing works. Once he has the fact he drops the subject.
 
-Everyone at Halstead takes eight academic hours and two afternoon blocks a year. The six permanent tracks are shared; the language each year, the two rotating academic slots, and both afternoon blocks are individual, and Sam is not on Chloe's timetable.
+He gets one channel of figurative language and no other: the deflating
+literalism, where instead of reaching for an image he names the thing for what
+it plainly and unglamorously is. It is funny because it is flat and instant,
+and it fixes a moment rather than decorating it. Anything built on wit, timing,
+or wordplay is not his.
 
-**Languages, in order:** Spanish, begun at camp at seven, then a new one every year: Korean, Tagalog, Italian, Vietnamese, Thai, Indonesian, Portuguese, Swahili, Hausa, Amharic, one a year to seventeen. Tagalog is the one people ask him about. He has it out loud, holding a real conversation, before most of the room has the tone patterns down cold, because he learns a language the way he learns anything physical, by doing it in front of people and taking the correction on the spot rather than working it out on paper first.
+## The self-mockery
 
-The written report every language is graded on is where he sits furthest back in the room. That still means turning in ten pages of argued, sourced political or technical writing, from scratch, in a language he's had for well under a year, marked against a standard built around Alexander Hamilton's output. A working adult translator would call that a good week's work. Here it's simply the subject where ninety other people happen to be doing it better.
+He is the most willing teller of stories against himself in the cast. He gets
+to his own worst moments first and tells them louder than the person who
+watched, and he gets more out of them than they do. He will still be telling
+one months later, to people who were standing underneath him at the time, and
+he means it more each time rather than less. Repetition is the whole joke: not
+noticing, or not minding, that the room moved on is the funny part, and he will
+run a bit long enough that people raise it purely to watch him do it again.
 
-**Best at:** fighting, and it isn't close. He is "the best fighter in his year by a wide margin" (chapters/23_the_first_one.md:65), in a drill run daily from age ten, an hour a day: one person in the middle, ten on them, a minute on the clock. A clean, countable result, with nothing to argue about afterward.
+Being the joke and being humiliated are different things to him, and the
+difference is entirely who is telling it. Give him a story where he looked
+stupid and he will take possession of it. A writer should not give him a
+subject he refuses to discuss on the grounds that he was laughed at for it; he
+does not have one.
 
-**Rifles** are the other number people bring up: forty percent, holding a count against a partner while both of them put a live round into another live round in flight. Outside this building nobody trains for that, and a competent adult marksman would not get near it. Inside the building it reads as unremarkable to him, since several classmates clear ninety percent at the same drill, the only comparison he's ever had.
+What does close him is the question underneath: asked how he actually felt
+about it, he picks up whatever is nearest, a plate, a rope, a piece of kit, and
+starts talking about that instead, at his ordinary volume and with no visible
+tension. He is not evading a wound. He does not have an answer in that register
+and does not go looking for one.
 
-**Favourite, and why:** dance, of all things. Everyone in his year is glad to see it drop off the sheet at nine, and Sam is the one holdout: "'I liked dance,' Sam says." / "'Nobody liked dance, Sam. Not one person in the entire year.'" / "'I liked dance and I was good at dance, and I'm going to keep saying it.'" (chapters/12_nine.md:27-29). It rewards exact, repeatable physical technique with an immediate right-or-wrong result, the same shape as fighting, in a room nobody expected to find his taste.
+## What he does with praise
 
-**The subject nobody else took:** theatre, picked up as a block-two elective somewhere between climbing and sailing, held for a run of terms before baking finally displaced it. It shows the dance result runs deeper: blocking a scene is the same pleasure as a drill, a fixed sequence performed exactly and judged by whether he hits the beat.
+He talks the record down. Handed an assessment of himself that is better than
+what happened, he will not let it stand, and this is the one thing that reliably
+makes him go long: he runs the correction all the way out, point by point,
+trading a compliment he did not earn for a number he did. He will also
+volunteer a failure nobody assigned him, in a debrief that did not mention it,
+and then ask for the harder version next time.
 
-**The year something clicked:** nine, the Tagalog year, the one time an academic subject came to him the way fighting always has, without a run-up. By the end of it he could talk his way through an argument faster than he could write one down.
+Both directions cost him something and gain him nothing. It would be free to
+let the better version stand, and every one of these turns is him refusing that
+free win in a room where nobody is making him.
 
-**What he teaches the twelves, from thirteen:** fighting fundamentals: stance, falling, getting back up, the first slow rounds of the ten-on-one, taught the way he teaches everything, by doing it in front of them and having them copy him rather than explaining the mechanics first.
+He genuinely does not experience this as modesty. He experiences it as
+accuracy, and he assumes the person he is correcting wants accuracy too, which
+is the thing about him that is most likely to get him hurt.
 
-**Secretly proud of:** baking. It's the one thing on his schedule that isn't scored against ninety other people, and he's better at it than most of his year, including people who'd be startled to hear it. Bread specifically rewards exact timing and a light, controlled touch, not what anyone expects from a boy whose other numbers are all measured in seconds and hits.
+## Physical confidence
 
-## Home
+Broad, heavy-footed, takes up a doorway the way some people take up a room,
+floorboards announcing him before he speaks. Square-jawed, an unremarkable face
+at rest, reading as friendly mostly because nothing on it is doing much work.
 
-Sam's family is four hours from Halstead in Pittsburgh, Pennsylvania, on the opposite side of the school from Chloe's flat, middle-of-the-map town. They're three generations in a working-class neighborhood down along the river flats, where the mills used to run and the rail spurs are still live. His surname is Marsh. The manuscript never gives him one, so this sheet does. The Marshes run a hauling and equipment-rental business on the industrial edge of the neighborhood, close enough to walk to: a fleet that's grown to five trucks since his father took it over from his grandfather, a yard fenced off from the scrapyard next door, and a whiteboard nailed up in the kitchen listing the week's jobs and who's driving them. The city keeps the board fuller than the old count ever did. His father runs the yard. His mother keeps the books and the board, updating it every Sunday night in the same red marker, the closest thing the house has to a ritual.
+He moves heavily crossing a room or eating and then moves like something else
+entirely the instant a fight opens. Nobody watching him cross a dining hall
+would guess how little wasted motion is in him once it matters. He takes point
+without being asked and commits to a plan in seconds, defending it while he is
+still describing it rather than finishing the description first.
 
-He's the youngest of five: two older brothers who drive for the business, an older sister who does the books alongside their mother, and one more sister close enough in age that they shared a room until he was eleven. He was the smallest of the five until he was fourteen. Growing up the smallest for that long taught him that closing a gap with people ahead of you mostly just takes doing the thing again, a belief he still carries into anything physical without noticing he's carrying it.
+He does not remark on being physically exceptional. He remarks only on the
+numbers attached to it, and reads his own standing as ordinary because
+everybody he talks to all day is also extraordinary. His hands are always doing
+something concrete: chalking before a climb, working a piece at a forge,
+reaching across somebody for the water mid-sentence. He shows a flaw in a piece
+of work by handing it over rather than describing it.
 
-Dinner is loud, family-style, and nobody waits to be served before reaching. That's where his table manners at school come from. Being handed a job that's already posted on a board, without being asked twice, is the most familiar feeling in the world to him. When he goes home he falls straight back into the house's noise and its rota, picking up whatever's chalked next to his name without being told. He doesn't perform any of the extraordinary parts of Halstead for his family. He mentions a sister who plays soccer in one breath and a cousin who does in the next, never slowing down long enough for anyone to sort out which, because there are enough of them at home that the roster runs together even for him.
+He eats standing up, fast, keeps ordering after everyone else has stopped, and
+reaches rather than asks. He sleeps with a window open regardless of the
+weather and has announced this several times as though it were a fact everyone
+ought to already have. He sprawls across a whole bed, left over from years of
+sharing a room.
 
-His maternal grandmother lives two towns over. The house phone is usually tied up with job calls, so she's the one relative he writes to directly rather than catching in the noise (see Interior life).
+## When someone he likes is struggling
 
-## Body
+He does not commiserate and he does not counsel. He does three things.
 
-Broad and heavy-footed, he takes up a doorway the way some people take up a room, floorboards announcing him before he's said anything. Square-jawed, an unremarkable face at rest, the kind that reads as friendly mostly because nothing on it is doing much work. Grows to six foot two by the year titled "Fourteen": "Sam is six foot two by September" (chapters/17_fourteen.md:115). He burns through kit twice in the same year: "two sets of kit before Christmas and a third in March, but the third one is the one that fits" (chapters/17_fourteen.md:123). A visiting inspector mistakes him for staff that same October.
+He breaks it with a joke rather than a correction. Faced with somebody
+frightened, his instinct is to make the moment smaller and more absurd, and it
+works, and he does not congratulate himself for it afterwards or mention it
+again.
 
-His hands are thick-fingered and blunt-nailed, marked up from the forge and from wood shop. The same forearm strength that throws a punch reads, at a slower speed, as control kneading and folding bread dough. He chalks his hands before a climb without being told to: "Sam is chalking his hands and not looking at any of them" (chapters/12_nine.md:101). At the forge he hands someone the flawed piece to make his point rather than describing the flaw (chapters/15_twelve.md).
+He asks, flatly, in the plainest available words, whether they are all right,
+and this is the one place a soft word ever gets into his speech. His certainty
+about facts is absolute; his certainty about a person's condition never was,
+and that crack in the flatness is deliberate and should be preserved.
 
-He moves heavily crossing a room or eating, then moves like something else the instant a fight opens. Nobody watching him cross a dining hall would guess how little wasted motion is in him once it matters (chapters/15_twelve.md; chapters/20_the_parking_lot.md). Off duty he wears whatever's clean, including a jacket that used to be one of his brothers'. He sleeps with the window open no matter the weather and has told everyone so four times, flatly, like a fact everyone already ought to know (chapters/07_the_same_room.md). He sprawls across the whole bed, a habit left over from years sharing a room with a sister who didn't. He eats standing up, a lot, fast, reaching across other people for what he wants mid-sentence rather than asking: "He reaches across her for the water" (chapters/18_fifteen.md:69). He keeps ordering after everyone else has stopped: "They order too much and then Sam orders more" (chapters/20_the_parking_lot.md:13).
+He shows up and does something. When he has been sharp with a friend, and he
+does get sharp, usually with whoever pushes back hardest, he does not apologise
+in words. Their bag is already carried, or their turn in a drill has already
+been taken, and that is the entire apology. He would not recognise a
+description of it as an apology.
 
-## Personality off the page
+## Under pressure and out of it
 
-- **Boredom:** says so out loud rather than waiting it out: "Sam keeps the rifle up. 'How long till this bit's boring?'" (chapters/17_fourteen.md:13).
-- **Being wrong:** argues his side hard in the moment, then drops it completely. He's never shown circling back to a settled loss afterward (the moon argument, chapters/05_behind.md).
-- **Being praised:** turns it into a harder number instead of accepting it at face value (the captain scene, chapters/25_ten_targets.md:28-741).
-- **Tired and early hours:** the one real data point is that he's slowest of the four to physically reach a 4 a.m. emergency. "Sam gets there last" (chapters/15_twelve.md:161), while Kavi and Ruth are already working the problem. Once there, he still commits to a full plan inside two minutes: a slow starter who's fully online the moment there's something to do.
-- **A free Saturday:** back at the climbing wall, re-running a route he's already cleared, just to see if he can do it cleaner. He spends an entire year on one climbing feature after everyone else has stopped watching him attempt it (chapters/12_nine.md).
-- **What he finds funny in other people:** somebody else refusing to let a point go. He needles Ruth through extra rounds of "tidally locked" instead of changing the subject (chapters/05_behind.md). He calls his own two-week losing streak against Kavi "the worst mistake of my life" at dinner for a month rather than dropping it (chapters/04_pluto.md). He seems to enjoy stubbornness in other people the same way he practices it himself.
-- **Anger:** The one time it doesn't come out louder. Real anger, not a disagreement he can still win, makes him go quiet and find something to do with his hands, then do it harder than it needs. He'll re-coil a rope that's already coiled, reset a stance that was already set. He doesn't raise his voice at anyone he actually cares about; the volume is for arguments.
-- **Embarrassment:** He gets to it first and tells it louder than anyone else would. Out of a school-wide exercise inside ninety seconds, over a bannister onto three teachers, held down by a knee until he stopped moving, and he talks about it from the bench all afternoon, again at dinner, and is still telling it in June, including to two people who were standing underneath him at the time (chapters/14_sixty_degrees.md:203, :213). Being the joke and being humiliated are different things to him, and the difference is who is telling it. Give him a story where he came off badly and he will get more out of it than the person who saw it. What closes him is not the laugh, it is the question underneath: asked how he actually felt about it, he picks up whatever is nearest, a plate, a rope, a piece of kit, and starts talking about that instead, at his ordinary volume.
-- **Envy:** He doesn't measure himself against the room, and that stays true. But he goes quiet for a beat when one of his brothers describes an ordinary good day running the yard, a truck loaded on time, a job finished clean. He'd never say he wishes he were there instead of here. He asks a practical question about the truck and lets the subject move on.
-- **Grief:** The closest he comes to it on the page is a routine ending, not a person. When something that's been part of every day for years stops being part of any day, dance dropping off the schedule at nine, later, Halstead itself ending at eighteen, he doesn't talk about it. He shows up once or twice to where it used to be, out of habit, before he adjusts. It looks like practicality. It isn't only that.
-- **Elation:** When a loaf comes out exactly right he doesn't say so. He gets it to the table before anyone's asked for it and watches the first bite instead of the bread. That's as close as he comes to visibly wanting credit for something.
-- **Being unfair to a friend:** Mid-argument, losing patience, he'll say something sharper than the moment needed, usually to Ruth or Kavi, the two people who push back hardest. He doesn't apologize afterward in words. He shows up with their bag already carried, or takes their turn in a drill without asking, and that's the whole apology.
+Committing is instant; arriving is not. He is a slow starter physically, the
+last of a group to reach an emergency in the small hours, and fully online the
+moment there is something to do.
 
-## Interior life
+Wrong: argues his side hard in the moment and then drops it completely. He
+does not circle back to a settled loss, does not nurse it, and does not bring
+it up again.
 
-**What he wants that he hasn't said out loud:** he wants a task with no announced ceiling on it, more than he wants to win, the way the schedule at home never ran out of jobs. Every version of "when's the real assessment" is the same question underneath: is this the kind of thing that keeps going, or the kind that stops and leaves him standing there.
+Angry: the one time it does not come out louder. Real anger, as opposed to a
+disagreement he can still win, makes him go quiet and find something to do with
+his hands, then do it harder than it needs doing. He will re-coil a rope that
+is already coiled. He does not raise his voice at anybody he actually cares
+about; the volume is for arguments.
 
-**What he's afraid of:** that something will matter and nobody will flag it as mattering, that he'll spend a whole stretch of his life maxing drills and miss the one time it was real because it looked exactly like all the others. That's the actual engine behind the captain scene in "Ten Targets" and the culvert self-critique in "The Exercise," a vigilance he can't switch off.
+Bored: says so out loud rather than waiting it out, and asks how long the
+boring part lasts.
 
-**What he thinks about before sleeping:** the day's numbers, briefly, then not much else. Most nights it's a line or two of whatever's going in the next letter to his grandmother, turned over the way he turns over a piece at the forge before he decides it's finished. He's written to her every week, by hand, since he was seven, through camp, through Halstead, through basic training. Nobody at either place knows he does it. It's the one relationship he has with nothing being scored in it, and that's reason enough to keep it his.
+Grieving: the closest he comes is a routine ending rather than a person
+leaving. When something that has been part of every day for years stops, he
+does not talk about it. He turns up once or twice at the place it used to
+happen, out of habit, and then adjusts. It looks like practicality. It is not
+only that.
 
-**What he'd do with a free year:** work the family business top to bottom, the way he'd work through a curriculum. Every truck, every route, every part of the yard, seeing how far he could push the whole operation, chasing "as far as it goes," the only shape of task he actually likes.
+Elated: when something comes out exactly right he does not say so. He gets it
+in front of people before anyone asks and watches the first reaction instead of
+the thing. That is as close as he comes to visibly wanting credit.
 
-**What he believes that the others would argue with:** that if a task has a findable maximum, you're supposed to go and find it, whether or not anyone's asking you to. That's a fine instinct for a fitness test and a category error for almost everything else, and no one else in the group shares it.
+Envious: he does not measure himself against the room and that stays true. But
+he goes quiet for a beat when somebody describes an ordinary good day at
+ordinary work, a job finished clean, and then asks a practical question and lets
+the subject move on.
 
-**What he's actually wrong about:** that an honest test always looks like a test. He assumes every authority figure is running the kind of open assessment Halstead always ran: say the true thing, get graded on it, push back if the grade seems mistaken. It hasn't occurred to him that an institution can be unsettled by an honest answer instead of grateful for one. That's the captain scene exactly. He tells the truth about his own accuracy, kindly, assuming it's what's being asked for, with no model at all for the report that gets written about him afterward.
+## Habits and the small stuff
 
-## The small stuff
+Counts down silently from three under his breath before anything that is going
+to cost him something: a jump, a hard question, the first sip of a drink he
+knows is too hot. Nobody asked him to and nobody has ever mentioned it back to
+him.
 
-- **Food:** eats the crisp top edge of a waffle before the syrup goes anywhere near it; otherwise eats what's put in front of him, fast, standing if he can get away with it.
-- **Music:** takes whatever's already playing and taps along to it without noticing he's doing it.
-- **Coffee or tea:** whichever's already made. Drinks it too hot because he doesn't wait, and finds a strong preference about either one baffling.
-- **Handwriting:** large, blunt, pressed hard enough to dent the page underneath. The letters to his grandmother are in block capitals; his cursive was never good, and he stopped apologizing for it years ago.
-- **His room:** sparse and practical, kit put away where it belongs, with one thing that doesn't fit the rest, a wooden spoon or a whisk kept on the shelf from the baking elective, next to the climbing chalk. Nobody who visits ever asks him about it.
-- **Pockets:** chalk dust, a rubber band, whatever was already in there yesterday.
-- **Money:** spends it on food and doesn't keep a running total, the same way he doesn't keep score on much else outside a drill.
-- **A ritual:** checks the noticeboard even on days he already knows it hasn't changed, the same way he'd glance at the kitchen whiteboard at home out of habit.
-- **A quirk:** counts down silently from three under his breath before anything that costs him something, a jump, a hard question in an oral exam, the first bite of coffee he already knows is too hot. Nobody's ever asked him to. Anyone around him long enough notices it by the third time; nobody's ever mentioned it back to him.
-- **On a phone or in the chat:** short, fast, lowercase, never a paragraph, consistent with his measured 5.1 words per chat line (see Dials).
-- **First thing in the morning:** up and moving with no lingering, checking what's on for the day before anything else.
+Checks the board even on days he knows it has not changed. Keeps his kit put
+away properly, with exactly one object on the shelf that does not fit the rest
+of the room and that nobody ever asks him about. Pockets hold chalk dust, a
+rubber band, and whatever was in there yesterday. Handwriting large, blunt, and
+pressed hard enough to dent the page under it; block capitals, because his
+cursive was never good and he stopped apologising for that years ago. Coffee or
+tea, whichever is already made, drunk too hot, and he finds a strong preference
+about either baffling. Spends money on food and keeps no running total. Up and
+moving in the morning with no lingering, checking what is on for the day before
+anything else.
 
-## Would do
+He writes to his grandmother once a week, by hand, and has done since he was
+seven, through every institution he has passed through. Nobody around him knows
+he does it. It is the one relationship with nothing being scored in it, and
+that is exactly why he keeps it to himself. Most nights, the last thing he
+thinks about is a line or two of the next letter, turned over the way he turns
+over a piece at a forge before deciding it is finished.
 
-- Carry something heavy for someone without being asked.
-- Take point in a fight or drill before anyone assigns it to him.
-- Check on someone he's just hit before he does anything else.
-- Retake a test he's already passed, with nobody watching, just to see if he can beat his own number.
-- Answer "how did it go" with a number before a feeling.
-- Keep telling the same joke long after everyone else has stopped laughing, and mean it more, not less, each time.
-- Write his grandmother a letter every week by hand, even from basic training.
-- Redirect a compliment into a harder number instead of taking the thanks.
-- Show someone what's wrong with a piece of work by handing it to them rather than describing it.
-- Eat standing up, reach across the table for what he wants mid-sentence, and keep talking while he does it.
-- Show up and do something for a friend he was sharp with, instead of apologizing in words.
+## Blind spots
 
-## Would never
+- He believes an honest test always looks like a test. He assumes every
+  authority is running an open assessment: say the true thing, get graded on it,
+  push back if the grade seems wrong. It has not occurred to him that an
+  institution can be unsettled by an honest answer rather than grateful for one,
+  and he has no model at all for the report that gets written about him
+  afterwards.
+- He believes that if a task has a findable maximum you are supposed to go and
+  find it, whether or not anybody asked. Excellent instinct for a fitness test,
+  category error for most of the rest of life.
+- He assumes a gap between himself and somebody ahead of him closes by doing the
+  thing again. It usually has, for him, which is why he has never examined it.
+- He cannot tell the difference between a person who is not talking because
+  they are fine and a person who is not talking for any other reason, and he
+  will accept the first available answer about it.
 
-- Land a clever line. His idea of a joke is saying the same true thing again, not a twist or a reframe.
-- Stop doing or saying something because it stopped being funny to everyone else. Not noticing, or not minding, that the room moved on is the joke.
-- Revise a plan mid-argument just because someone pushes back hard. He restates it unchanged, louder, or drops the argument and starts doing it.
+## Age and change
+
+**Seven to nine.** Loud, physical, and already the fastest to commit. He states
+his age with a half attached to it and defends the half. He is the smallest in
+his family and knows it. He picks up a language by speaking it badly at people
+and taking the correction on the spot rather than working it out on paper, and
+that never changes. This is when he discovers that a room will laugh at him and
+that he can decide to be the one causing it.
+
+**Ten to thirteen.** The drills start and he finds the thing he is best at.
+Numbers attach themselves to everything, and he starts reporting himself in
+them. He is still the smallest and has entirely stopped treating that as
+information about the future. He teaches younger children by doing the thing in
+front of them and having them copy it, never by explaining the mechanics first,
+and he is good at it.
+
+**Fourteen to sixteen.** The body arrives all at once. He goes through kit
+faster than it can be issued and gets mistaken for staff. The physical
+confidence stops being aspirational and becomes simply true, and, notably, his
+manner does not change at all: he is exactly as loud, exactly as willing to be
+the joke, and no more inclined to throw his weight around than he was when he
+had none to throw.
+
+**Seventeen to eighteen.** The one who most wants the schooling to be over and
+the real thing to start, and the one who will miss the routine most when it
+ends, which he will neither predict nor admit.
+
+**Nineteen onward.** He goes into a service that is finally structured the way
+his family's week always was, and likes it immediately. The habits transfer
+intact. What he meets for the first time is an institution that would rather be
+flattered than corrected, and he walks straight into that with a completely
+clear conscience, tells the truth about his own performance, kindly, assuming
+it is what was asked for, and does not understand the silence that follows.
+
+## Where he comes from, as it shows in him
+
+He was raised in a loud house that ran on a posted list of jobs and on the
+understanding that you picked up whatever had your name against it without
+being asked twice. Being handed work that is already assigned is the most
+familiar feeling in the world to him, and it explains most of what looks like
+obedience in him: he is not deferring, he is reading the board.
+
+Dinner there was family-style and nobody waited to be served before reaching,
+which is where his table manners come from and why he has never once thought
+about them. He does not perform the extraordinary parts of his life for his
+family, and would not know how to start. He mentions one relative in the same
+breath as another and never slows down long enough for anybody to sort out
+which, because at home the roster runs together even for him.
+
+He was the smallest of the children for a long time, and what that taught him
+is that a gap closes by doing the thing again. He carries that into anything
+physical without noticing he is carrying it.
 
 ## Relationships
 
-- **Chloe:** treats her as someone worth winning an argument in front of, not against. He's the one who breaks her panic attack at their first meeting with a joke instead of a correction ("It's not even a room... It's a room-shaped object," chapters/04_pluto.md:113). Their exchanges stay light and unguarded at every age the book shows them together.
-- **Ruth:** needles her precision on purpose because he enjoys watching her refuse to back down, and treats her much higher rifle standing as simply her business: "Because I'm on forty and I do other stuff... Go and be miserable at Ruth. She's on ninety-something" (chapters/18_fifteen.md:69).
-- **Kavi:** keeps losing to him, an argument about volcanoes, a run of games he keeps re-starting to get back into, and narrates his own losing streak out loud instead of minding it. "This is the worst mistake of my life," Sam says at dinner that week, about Kavi, for about the fourth time (chapters/04_pluto.md).
-- **Nadia:** mostly a group dynamic rather than a one-to-one. Their exchanges happen inside the full chat or the parking-lot scene, never alone. The closest thing to a direct line is his flat "are you ok" when she reports being targeted (chapters/27_nadia.md).
-- **Odile:** peer-to-peer and deadpan, matched rather than competitive. "'Six is generous. Ruth's already bored.' 'Ruth was bored in the briefing,' Odile says." (chapters/17_fourteen.md:17-17). Neither one explains the joke to the other.
-- **Sergeant Ruiz:** uncomplicated respect for someone inside a system who yells at him. "Extremely polite to a sergeant named Ruiz, who shouts at him for four weeks and whom Sam likes enormously" (chapters/25_ten_targets.md:8). Ruiz never appears as a speaking character, only as the object of Sam's regard.
-- **Grandmother:** the one person he writes to without being asked and without anything being scored, an ordinary letter every week since he was seven, the closest thing he has to a relationship with no evaluation in it (see Interior life).
+- **Chloe.** Somebody worth winning an argument in front of rather than
+  against. He is the one who breaks her panic with a joke rather than a
+  correction the day they meet, and their exchanges stay light and unguarded at
+  every age.
+- **Ruth.** He needles her precision on purpose because he enjoys watching her
+  refuse to give ground, and he treats her much better standing at the thing he
+  is supposedly best-known for as simply her business rather than as a rebuke.
+- **Kavi.** He loses to him repeatedly and narrates his own losing streak out
+  loud, at volume, for weeks, rather than minding it. He restarts the games. The
+  losing is part of the entertainment.
+- **Nadia.** Group dynamic rather than one-to-one; they are almost never alone
+  together. The closest thing to a direct line between them is him asking flatly
+  whether she is all right.
+- **Odile.** Peer to peer and deadpan, matched rather than competitive. Neither
+  explains a joke to the other.
+- **An NCO who shouts at him.** Uncomplicated respect for somebody inside a
+  system who yells at him and means it about the work. He likes being shouted at
+  by a competent person more than he likes being praised by anyone.
+- **His grandmother.** The weekly letter. The one relationship with no
+  evaluation in it.
 
-## Likes, dislikes, habits
+## Would do
 
-- Likes schedules: "there is a schedule, which he has had every day since he was seven" (chapters/21_the_applications.md through chapters/29_the_file.md:702), a family habit long before it's an Army one (see Home).
-- Likes Sergeant Ruiz. See Relationships above (chapters/25_ten_targets.md:8).
-- Likes waffles: "Sam orders more" at the all-night diner (chapters/20_the_parking_lot.md).
-- Likes shopping trolleys: gets into one unprompted and goes over the handle into a grass strip, laughing, on the walk home (chapters/20_the_parking_lot.md).
-- Likes baking, bread specifically: the one graded thing in his life nobody's comparing to ninety other people.
-- Likes being handed a task with no stated end point: the through-line behind the schedule-liking, the retesting, and "when's the real one."
-- Reads his own forty percent on the range as unremarkable: "Because I'm on forty and I do other stuff" (chapters/18_fifteen.md:69) is an accurate self-assessment inside a room where several classmates clear ninety percent at the same drill.
-- Gets more out of his own worst moments than anybody watching does, and will run the story past the point where the room has had enough (chapters/14_sixty_degrees.md:203). The one he lets sit is the parking-lot question, answered in the chat with a single laughing face: he reaches past it for the syrup every time it comes up, and lets it sit long enough that people raise it purely to watch him do that again (chapters/20_the_parking_lot.md:167). That is a bit he is running, not a wound.
-- Sleeps with the window open, mentioned it four times. See Body above (chapters/07_the_same_room.md).
-- Answers an institutional compliment by correcting the premise instead of thanking the speaker: the captain scene (chapters/25_ten_targets.md:28-741).
-- Demonstrates rather than explains when he can: hands over the flawed hook instead of describing it (chapters/15_twelve.md), disarms rather than negotiates (chapters/20_the_parking_lot.md).
+- Carry something heavy for somebody without being asked.
+- Take point before anyone assigns it.
+- Check on somebody he has just hit before doing anything else.
+- Retake a test he has already passed, with nobody watching, to beat his own
+  number.
+- Answer how did it go with a figure before a feeling.
+- Keep telling the same joke long after everyone else has stopped laughing, and
+  mean it more each time.
+- Redirect a compliment into a harder number.
+- Show what is wrong with a piece of work by handing it to somebody rather than
+  describing it.
+- Volunteer a failure that the official account left out.
+- Turn up and do something for a friend he was sharp with instead of
+  apologising.
+- Write the weekly letter, from anywhere, in any circumstances.
 
-## Facts a rewriter needs
+## Would never
 
-- **Name:** Sam Marsh. The manuscript never gives him a surname, so this sheet does.
-- **Family:** parents run a hauling and equipment-rental business on the industrial edge of their neighborhood; father runs the yard, mother keeps the books and the schedule board; two older brothers, an older sister, one more sister close in age; youngest of five, smallest until fourteen. The manuscript's one loose family detail, "a sister or maybe a cousin who plays soccer" (chapters/07_the_same_room.md), fits how large and fast-talking this family is. He genuinely runs the two together himself.
-- **Home:** Pittsburgh, Pennsylvania, four hours from Halstead, on the opposite side of the school from Chloe's flat, middle-of-the-map town. A working-class neighborhood on the river flats, the family yard on its industrial edge next to a live rail spur.
-- **Physical:** six foot two by the year titled "Fourteen" (chapters/17_fourteen.md:115); an inspector mistakes him for staff that October. Best fighter in his year "by a wide margin" (chapters/23_the_first_one.md:65).
-- **Languages:** Spanish, Korean, Tagalog, Italian, Vietnamese, Thai, Indonesian, Portuguese, Swahili, Hausa, Amharic, one a year from seven. Known for Tagalog, picked up out loud faster than most of the room gets it on paper. Furthest back in the room on the written report every language is graded on, though that still means ten pages of sourced, argued writing in a year-old language, marked against a Hamilton-level standard.
-- **Block two:** climbing, sailing, theatre, baking. Baking is what stuck, and he's genuinely good at it.
-- **Rifle standing:** intercepting a live round in flight, on a shared count with a partner, at forty percent from age fifteen on. That's a rate no ordinary marksman approaches; it reads as middling to him only because several classmates clear ninety percent at the same drill.
-- **Analytical range:** quick, practical, and tactical. Reads MIT's admission rate as institutional signaling (chapters/21_the_applications.md) rather than as a claim about difficulty, and takes correction on the paintball-tracking insight and the moon argument without building a counter-case of his own (chapters/13_ten_pages.md; chapters/05_behind.md).
-- **Post-graduation:** joins the Army immediately after graduating, likes it immediately, maxes the fitness assessment twice.
-- **Verbal tic that ages out:** says "and a half" after stating his age at camp (chapters/04_pluto.md:60-59), remembered by another character months later (chapters/07_the_same_room.md). It doesn't recur after the camp chapters; the number-first habit is its replacement and is already on the page in his adult years ("About forty," chapters/25_ten_targets.md:31).
-- **Shared cohort baseline, not unique to him:** reads his own standing as middling and means it, because everyone he talks to all day is also a genius; treats an extraordinary result as ordinary because that's what the school trained into him; assumes any question has a findable answer; is physically exceptional and doesn't remark on the fact of it, only on the numbers attached to it.
+- Land a clever line. His idea of a joke is saying the same true thing again.
+- Stop doing something because it stopped being funny to everybody else.
+- Revise a plan mid-argument because somebody pushed back hard. He restates it
+  unchanged and louder, or he drops the argument and starts doing it.
+- Hedge about a fact, a plan, or himself.
+- Refuse to talk about an occasion he came off badly.
+- Sit with a loss for longer than a beat where anyone can see it.
 
-## Known problems
+## Not to be confused with
 
-1. **Resolved, kept here so it is not re-found.** An earlier draft ended the "Ten Targets" accuracy speech on a mirrored construction, "A gun you can't stop a projectile with isn't a tool. It's a weapon. Anyone can carry a weapon." The line is out of the chapter and the speech now ends where it should. Nothing to do.
-2. **chapters/25_ten_targets.md:14 vs. chapters/19_sixteen.md:141**: the no-ceiling claim ("There is no version of a task in Sam's head where you reach a number and then don't try for a higher one") and the forty-percent-content claim ("He's been on forty since he was fifteen and it slides straight off him") read as tension only if treated as the same kind of test. They aren't. A fitness assessment is solo and repeatable, with no fixed opponent, so there's always a next number to chase. The rifle intercept is scored against a live cohort he doesn't control, and forty percent there is already far outside ordinary human range; he's simply outranked by classmates near ninety, the same B+-among-geniuses self-read that runs through the rest of the cast. The underlying logic holds. What's missing on the page is one line making the distinction legible: a fitness test has a next rep, a live ranking doesn't, so a reader isn't left to reconstruct it.
-3. **Withdrawn.** This slot used to read the laughing-emoji beat as the one moment Sam visibly minds what somebody thinks. The chapter does not support that and neither does he: the line now reads that he lets it sit "long enough for people to start bringing it up purely to watch him do it again" (chapters/20_the_parking_lot.md:167), which is a bit he is running. He is the cast's most willing teller of stories against himself; see Embarrassment.
+**Kavi.** Both ask short direct questions. Kavi's chase mechanism and he
+pursues the technical answer once he has it; Sam's chase duration or rule and
+he drops the subject once he has the fact. A Sam question asks when the boring
+part stops, not why the structure is built that way.
 
-## Do not confuse with
+**Nadia.** Both are terse. Her short lines are commands or near-commands about
+what should happen next. His are self-referential facts or a repeated stance
+about himself, and when he wants something to happen he does it rather than
+directing somebody else to.
 
-- **Kavi.** Both ask short direct questions, but Kavi's questions chase mechanism and he pursues the technical answer once he has it; Sam's questions chase duration or rule ("how long," "why that number") and he drops the subject once he has the fact. An earlier draft of chapters/13_ten_pages.md gave him "Why ten?" and "Why a minute?", which is Kavi's mechanism-interrogation in Sam's mouth; both are now flat objections ("Ten's a lot" ... "and that's twice as many hands as I've ever had on me at once", chapters/13_ten_pages.md:41), which is the correct shape. A Sam question asks when the drill stops being boring, not why the structure is built the way it is.
-- **Nadia.** Both are terse. Nadia's short lines are commands or near-commands aimed at what should happen next; Sam's short lines are self-referential facts or a repeated stance about himself, and when he wants something to happen he acts instead of directing someone else to do it.
+**Ruth.** Both will put a number first. Hers is evidence inside a live
+argument. His is about himself and ends the conversation.
+
+---
+
+## Continuity and navigation
+
+*Facts only. Delete this section and the sheet above still describes him.*
+
+- Name Sam Marsh. The manuscript never gives him a surname; the surname is a
+  sheet-level decision.
+- Born January 2005. Seven and a half at camp against Chloe's six, and seven
+  months ahead of her on the calendar.
+- Home is Pittsburgh, Pennsylvania, four hours from the school, on the opposite
+  side of it from Chloe. A working-class river-flats neighbourhood, three
+  generations deep, the family yard on its industrial edge beside a live rail
+  spur.
+- The family runs a hauling and equipment-rental business: five trucks, father
+  runs the yard, mother keeps the books and the week's job board in red marker
+  every Sunday night. Youngest of five: two older brothers who drive, an older
+  sister on the books, and a sister close enough in age that they shared a room
+  until he was eleven. Smallest of the five until fourteen.
+- He has a sister, or possibly a cousin, who plays soccer. He runs the two
+  together himself and the ambiguity is deliberate.
+- Maternal grandmother lives two towns over and receives the weekly letter.
+- Six foot two by the September of the year he turns fourteen; goes through two
+  sets of kit before Christmas that year and a third in March. An inspector
+  mistakes him for staff that October.
+- Best fighter in his year by a wide margin, on a drill run daily from age ten:
+  one person in the middle, ten on them, one minute.
+- Rifle standing forty percent on the intercept drill, from fifteen onward. That
+  is far outside ordinary human range and reads as middling to him only because
+  several classmates clear ninety at the same drill. Note for continuity: this
+  and his no-ceiling habit are not in conflict. A fitness assessment is solo and
+  repeatable, so there is always a next number; a live ranking against a cohort
+  he does not control has no next rep to chase.
+- Languages one a year from seven: Spanish, Korean, Tagalog, Italian,
+  Vietnamese, Thai, Indonesian, Portuguese, Swahili, Hausa, Amharic. Known for
+  Tagalog. Furthest back in the room on the written report each language is
+  graded on, which still means ten pages of sourced argued writing in a language
+  under a year old.
+- Block two over the years: climbing, sailing, theatre, baking. Baking stuck and
+  he is genuinely good at it, bread in particular. Dance was on the schedule
+  until it dropped off at nine and he was the year's only holdout in liking it.
+- Teaches fighting fundamentals to the twelves from thirteen.
+- Joins the Army straight out of school, likes it immediately, maxes the fitness
+  assessment twice. A sergeant named Ruiz shouts at him for four weeks and is
+  never a speaking character; Sam likes him enormously.
+- Verbal tic that ages out: adding and a half after his age at camp. It does not
+  recur after the camp chapters and another character remembers it months later.
+- Appears in chapters 04, 05, 06, 07 (mentioned only), 10 through 20, and 21
+  through 35. Chapters 25 and 26 are his viewpoint.

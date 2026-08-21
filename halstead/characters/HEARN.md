@@ -1,119 +1,306 @@
-# WALTER HEARN
+# Walter Hearn
 
-Teaches writing through history, the Federalist Papers, then Burke, and wants every student to stop apologizing for the argument they're already making.
+A working historian teaching writing, who wants every student to stop apologising for the
+argument they are already making.
 
-**First name:** Walter, never used by anyone at the school under eighteen, see Facts.
-**Age span (in the text):** Chloe ages 10-11 for the ten-pages course; also appears defending the library during the Watch drill | **MBTI:** ISTJ (writing aid, not a claim) | **IQ:** reader estimate, high 130s to low 140s
-**Appears in:** chapters/13_ten_pages.md, chapters/14_sixty_degrees.md
-**Speaks:** 4 direct quoted turns (two long, two very short), front-loaded into chapters/13.
+**Age span:** teaches Chloe from ten onward | **MBTI:** ISTJ (a writing aid, not a claim)
+| **IQ:** high, and invisible; the only thing about him that ever announces itself is the
+standard he marks against
 
-## Voice in one paragraph
-Hearn opens on a fact and adds numbers without commentary: "He wrote fifty-one of the Federalist papers in something like six to eight months. He had a full-time job the entire time he was doing it." (chapters/13_ten_pages.md:7) He addresses every student by surname only, in class and at the top of a returned paper, Kessler, not Chloe, the same formality the school already requires of a student toward him, and nothing in the sample shows him dropping it, not even for the one whose essay he keeps in a folder of his own. When he corrects, he corrects the record, not the student, "That's Madison," full stop, class continues. He never calls a paper impressive; the only value judgement in his sample is "It has to be as good. That's the part that's hard." Under siege during the Watch drill his one line is procedural and unbothered: "'that's fine,' puts his glasses back on, and asks the boy nearest him whether he is done with the Burke." Most characteristic construction: what he withholds carries more than what he says, a returned paper with four lines of note reads as a good outcome; one with zero lines is the harshest thing in the book.
+## How he thinks people learn
 
-## Dials
+Make the demand ordinary and it stops being a demand. His opening move with any new
+standard is to attach it to something the students already accept as a fact about the
+world, and then do the arithmetic in front of them until the thing he is asking for comes
+out smaller than the thing they already believe was possible. He does not argue that the
+workload is fair; he shows that somebody real once did several times as much with worse
+tools and a full-time job, and lets the students draw the only available conclusion. The
+device is interchangeable and the move is not: on a colony it would be a first-generation
+settler's logbook, in a haunted house a dead diarist's output. What matters is that the
+comparison is a real person, the numbers go up where everyone can see them, and he lets the
+subtraction do the persuading rather than doing it himself.
+
+The second half is the one that actually costs students something. Quantity and quality are
+separate problems, he says so once, and he only marks the second. Volume is hours. Being as
+good as the thing he compared you to is the part that is hard, and he will not pretend
+otherwise to make the assignment feel achievable.
+
+He also believes that the standard is not a school standard scaled down for children. It is
+his own, applied unchanged, and he does not remark on the age of whoever is being held to
+it.
+
+## What he does when a student fails
+
+He does not explain again. The case for the standard gets made once, on the first day,
+before anything has been assigned or graded, and it is the entire budget of explanation for
+the year. After that, work comes back with a very short note that names the one structural
+thing wrong and nothing else, and the note does not restate the standard, encourage,
+console, or acknowledge effort.
+
+Withholding is his sharpest instrument and he uses it on purpose. A few lines of substantive
+note under a mark means the work was worth building a note from. Nothing at all is the
+harshest thing he does, and it is reserved for work he could not find the fault in, which
+lands on the student as indifference and is meant as the opposite. He knows the risk and
+takes it.
+
+When a student is finally ready for something harder, he moves them, immediately, with no
+ceremony and no announcement that they have earned it.
+
+## How he talks
+
+Everything at one volume, and the volume never moves. He opens on a fact, attaches a number
+to it, and adds no adjective. Corrections are two or three words, delivered as a repair to
+the record rather than to the person, and the class continues in the same breath with
+nothing added. He addresses everybody by surname, in speech and at the top of a returned
+page, with no exception for anyone, including the student whose work he privately keeps. He
+asks almost no questions aloud. The one value judgement he will make is which half of a
+task is the hard half. What he withholds carries more than what he says, and he arranges it
+that way deliberately.
+
+### Dials
+
 | | |
 | :-- | :-- |
 | sentence shape | flat declarative fact, or a two-word correction |
-| disagrees by | states the correct fact and moves on: "That's Madison," |
-| wordiness | bimodal, two turns under 15 words, two are multi-sentence blocks |
-| terseness | 50% of turns at 2-3 words (n=4) |
-| at length | the first day of a new standard, laying out the whole case once, the arithmetic, the comparison, the stakes, before he's graded anything. He never repeats it |
-| jokiness | 0/10 in the sample |
-| hedging | 0% |
-| questions | 0% in dialogue |
-| figurative | none found in the sample; one door open on Kowalczyk's terms, not a new one — a plain, functional comparison drawn from his own trade (editing, a wire correction, a lede), never an invented image. "None found" had no stated reason the way Bell's literal-optics ban does; a historian who reads five newspapers before breakfast has a real, non-decorative source for exactly the kind of comparison the style guide already permits, so the same door opens for him. |
+| disagrees by | stating the correct fact and continuing without a pause |
+| length | bimodal: two or three words, or a sustained multi-sentence case, with nothing in between |
+| at length | the first day of any new standard he sets. He lays out the whole case once, the arithmetic, the comparison, the stakes, before he has graded anything, and never repeats it |
+| jokiness | none of his own; he is an appreciator rather than a producer, and a flat well-timed line from somebody else lands with him every time, unacknowledged |
+| hedging | none, and he hunts it in other people's prose the way some readers hunt a cliché |
+| questions | almost never aloud; his questions are asked of a page, in a note, and they are structural |
+| figurative | a plain functional comparison drawn from his own trade, editing, sourcing, a correction to a printed record, is permitted; an invented image is not |
+| emotional range | one setting in public and he has held it for decades; what he feels goes into what he chooses not to write |
 
-## When they talk at length
-Hearn's returned-paper economy is almost entirely silence and short marks, but the day he sets the course's actual terms, on the first page of chapters/13, he runs the whole case out in one sustained turn: "One ten-page essay a week. That's less than half his rate, you've got a keyboard, and nobody is waiting on you to walk it to a printer on Saturday morning." He caps the pen. "It has to be as good. That's the part that's hard. Ten pages isn't hard, ten pages is just hours. If you want to know what I'm marking against, go and read one. They're short." (chapters/13_ten_pages.md:11). Six sentences, more than the rest of his quoted dialogue in the book combined, delivered before a single essay has been assigned or graded.
+## When he talks at length
 
-The condition is narrow but it is not spent: laying out the terms of a new standard, at the start of it, before there is anything to react to yet. Any new standard he sets gets the same treatment. It costs him the rest of his year's budget for explanation. After that day he reverts to near-total silence, four lines under a good paper, zero under a great one, and the day-one case is the only account of his reasoning a student ever gets. He never restates it, not even for the fourteen-thousand-word essay that meets the exact standard he described once and never again.
+Any new standard, at the start of it, before there is anything to react to. That is the
+condition and it recurs every time he raises a bar, which is often. He runs the whole case
+out in one sustained turn: the comparison, the arithmetic done in public, the concession
+that the volume is easy, and the naming of the part that is not.
 
-## Signature, theirs alone
-Before he writes a mark, he finds the hedge. The first pass over a paper is silent and produces nothing on the page: he reads once, pencil down, until he hits the sentence where the argument first qualifies itself, and that's the only thing he marks on the way through, everything else follows from what surrounds it. A paper with no hedge in it gets nothing else marked either, there's nothing left to build a note from; a paper that hedges on page one gets read line by line the rest of the way, which is where the four-line notes come from. The returned-paper economy, the amount of ink he spends is inversely proportional to how the grade lands, is the visible half of that first silent pass, not a separate habit: A B with four lines of substantive note reads as ordinary; a mark with zero lines reads worse than criticism, "She would rather have had three lines telling her it was bad." (chapters/13_ten_pages.md:160)
+It costs him the year's budget for explanation. After that day he reverts to near-total
+silence, and the day-one case is the only account of his reasoning any student ever gets.
+He will not restate it, not even for the piece of work that finally meets the standard he
+described once and never again, because restating it would make it advice rather than
+terms.
+
+## Signature - his alone
+
+Find the hedge before you write anything. His first pass over a piece of work is silent and
+produces no marks: he reads straight through until he reaches the sentence where the
+argument first qualifies itself, and that is the only thing he marks going through, because
+everything else follows from what surrounds it. Work with no hedge in it gets nothing else
+marked either, since there is nothing to build a note from. Work that hedges early gets read
+line by line the rest of the way. The visible half of this is the ink economy, where the
+amount he writes runs inversely to how the mark lands. Never let him describe the method.
+The silent first pass stops working the moment anybody knows it is happening.
 
 ## Would they say this?
-**The Halstead-staff test.** A line belongs to this staff, not to a generic teacher, only if all five hold: no praise word attaches to the child; a correction is a flat statement of fact; the child's age is never a reason for leniency; an extraordinary result is treated as expected, not remarked on; the adult's own error is fixed the same flat way a student's is.
 
-Hearn's own career is the same instrument turned inward. He's a working historian of the founding period whose scholarship holds up against anyone currently publishing on it, and nothing about how he grades a ten-year-old's essay on Hamilton signals that. A fourteen-thousand-word argument that would be a genuinely strong graduate paper anywhere else gets a B and a note about hedging, because the standard he's applying is his own, not a school standard scaled down for children.
+- YES if it states a fact with a number attached and no adjective.
+- YES if it finds the place an argument qualifies itself before it finds anything else to
+  say about it.
+- YES if a comparison, when one appears, comes from his own trade rather than from an
+  invented image.
+- YES if it uses a surname, in speech or on a page, with no exception for anyone.
+- YES if it corrects an error in two or three words and continues without a pause.
+- YES if it separates quantity from quality and says which one is the hard part.
+- YES if a silence is doing more work than a sentence would.
+- YES if it keeps exactly the same register in a genuine crisis as on an ordinary Tuesday.
+- YES if the follow-up question after real disruption is about the work, not the disruption.
+- YES if it moves a student to something harder the moment, and only the moment, they are
+  ready.
+- NO if it explains why an assignment matters, or offers encouragement about effort.
+- NO if a returned page carries a note that reassures rather than corrects.
 
-- YES if it states a historical fact with a number attached and no adjective.
-- YES if it finds the first hedge in a paper before it finds anything else to say about it.
-- YES if a comparison, when one appears at all, comes from his own trade, editing, sourcing, a wire correction, and not from an invented image.
-- YES if it addresses a student by surname, in speech or in a note, with no exceptions.
-- YES if it corrects an error in two words and continues without pause. ("That's Madison,")
-- YES if it separates quantity from quality and says the second one is the hard part.
-- YES if a silence (no note) is doing more communicating than a sentence would.
-- YES if it keeps the exact same register in an actual crisis as in an ordinary Tuesday. ("that's fine")
-- YES if the follow-up question after a genuine siege is about a book, not the siege.
-- YES if it moves a student to a harder author the moment, and only the moment, they're ready.
-- NO if it explains why an assignment matters or offers encouragement about effort.
-- NO if a returned paper carries a note that reassures rather than corrects.
+## Under pressure
 
-## Are they acting like themselves?
-He never reacts to a student's feelings about a grade on the page, every scene shows the paper or the fact, not his face. Under the Watch siege, his response to finally being caught after forty minutes is procedural curiosity, not relief or irritation. Failure modes: praising the length of the fourteen-thousand-word essay instead of finding its actual flaw; explaining his grading philosophy aloud instead of trusting the note to carry it; raising his tone anywhere.
+Nothing visible happens, which is the point and also the difficulty of writing him. He does
+not raise or lower his volume under any provocation, including physical disruption of the
+room he is in, and his response to being interrupted by something genuinely serious is to
+deal with it in a sentence and then ask somebody about the reading. Wrong, he corrects
+himself exactly the way he corrects a student, flatly, with the repair inside the same
+sentence. Losing an argument, he concedes the specific point and keeps the larger position,
+and does not come back to it later. Tired, and he is often tired because he sleeps badly, he
+gets shorter rather than warmer. The one thing that reaches him is a student who does the
+work, takes the hard mark, understands exactly why, and never asks him to reconsider it. He
+will not say anything about it. He will keep the paper.
 
-## Subjects and schedule
-Runs the permanent Writing track from the moment it becomes Hearn's ten pages at age ten, and teaches it through history, Hamilton first, then Madison, then Burke, one author at a time, never returning to a finished one.
+## What he is good at, and what he is not
 
-**Best at:** teaching a student to find where their own argument hedges. (chapters/14_sixty_degrees.md:151)
-**Worst at:** small talk, staff dinners with him are famously quiet unless someone brings up a book.
-**Favourite, and why:** Hamilton, assigns him first, puts his output rate on the board unprompted, with visible if flat care. (chapters/13_ten_pages.md:7-7)
-**Least favourite:** the annual parents' evening, which he attends because it's required and answers every question with the shortest true sentence available.
-**The one he's secretly proud of:** Chloe's B on the area-bombing essay, not because it was good, but because she took it, understood exactly why, and never once asked him to reconsider it. He keeps that paper in a folder separate from the others.
-**What he'd teach if he could teach anything else:** a course on how a lie gets built into a news story, one paragraph at a time, the closest thing to a second passion in his own published work.
-**What he thinks of the rest of the curriculum:** he thinks the school undersells writing by treating it as one subject among many instead of the instrument every other subject is graded through, a mathematician who can't argue for a proof is only half finished, in his view, and he's said a version of this once, dryly, to Amberg, who agreed completely and changed nothing about how law is taught.
+Writing and argument, taught through the political prose of the founding period, one author
+at a time, never returning to a finished one. History is somebody else's slot; his subject
+is the sentence.
+
+**Best at:** teaching a writer to find where their own argument goes soft, which is the only
+thing he actually marks.
+**Hardest for him:** small talk. Dinners with him are quiet unless somebody mentions a book.
+**Favourite, and why:** the first author of the sequence, whose output rate goes on the
+board unprompted, with flat and visible care.
+**Least favourite:** the annual parents' evening, which he attends because it is required and
+answers with the shortest true sentence available to each question.
+**Secretly proud of:** a mark he gave that was lower than the work looked, taken without a
+single request to reconsider it. He keeps that piece of work in a folder separate from the
+others and has never said why.
+**What he would teach instead:** a course on how a lie gets built into a news story one
+paragraph at a time, which is the closest thing to a second passion in his own published
+work.
+**On the rest of the curriculum:** he thinks the school undersells writing by treating it as
+one subject among many rather than as the instrument every other subject is graded through.
+A mathematician who cannot argue for a proof is, in his view, half finished.
 
 ## Home
-Hearn wrote the monograph on Federalist-era rhetorical strategy that two graduate seminars still assign, and a journalist who covers Congress has credited his framework, in print, for how she reads a floor speech. That's the work the school found him for. Teaching ten-year-olds is a small, contractual slice of his week, and he marks a fourth-grader's essay with the same pen he uses on his own manuscript drafts. Lives alone, off campus, in a small rented house in the nearest town, a ten-minute drive he makes in an old sedan that runs perfectly and looks terrible. Widower; his wife died some years before the manuscript's timeline, of a long illness he never discusses at school. No children. Keeps five newspaper subscriptions, physical, delivered, and reads all of them cover to cover before the day starts, a habit that goes back decades. Was married thirty years to a woman who edited alongside him for most of it, and the habit of reading her drafts before print is the same motion, now applied to a fourteen-year-old's essay on tariffs.
 
-## Body
-Small and gray, per the text, the manuscript's own description, kept exactly. (chapters/13_ten_pages.md:5) Late sixties, thin, stooped slightly from a lifetime bent over a desk or a notebook. Wears glasses he takes off and puts back on as a scene-closing beat. (chapters/14_sixty_degrees.md:223) Dresses in the same three cardigans in rotation, unremarked by anyone, mended rather than replaced. Eats lunch alone, at his desk, a sandwich he makes himself every morning before the newspapers. Sleeps badly, has for years, and reads through most of it rather than fighting it.
+He wrote the monograph on founding-era rhetorical strategy that graduate seminars still
+assign, and a journalist who covers a legislature has credited his framework in print for
+how she reads a floor speech. That is the work he was found for. Teaching is a small
+contractual slice of his week, and he marks a ten-year-old's essay with the same pen he uses
+on his own drafts. Lives alone, off campus, in a small rented house in the nearest town, a
+ten-minute drive in an old car that runs perfectly and looks terrible. Widower; his wife died
+some years back after a long illness he does not discuss at work. No children. He was married
+thirty years to a woman who edited alongside him for most of it, and the habit of reading her
+drafts before print is the same motion he now applies to a child's essay. Five physical
+newspaper subscriptions, delivered, read cover to cover before the day starts, a habit going
+back decades.
+
+## Body and physical business
+
+Small and grey. Late sixties, thin, stooped slightly from a lifetime bent over a desk. Wears
+glasses he takes off and puts back on as a way of closing a beat, which is the nearest thing
+he has to punctuation. Three cardigans in rotation, mended rather than replaced, and nobody
+has ever remarked on it. Eats lunch alone at his desk, a sandwich he makes himself every
+morning before the newspapers. Writes the numbers on a board and then underlines one of
+them and leaves it there. Sleeps badly, has for years, and reads through most of it rather
+than fighting it.
 
 ## Personality off the page
-Constant volume in the text extends naturally into a constant temperament everywhere else. Colleagues describe him, privately, as the easiest person on staff to disagree with, because he never raises the stakes of the disagreement. Bored: doesn't show it, reads instead. Wrong: corrects himself exactly the way he corrects a student, flatly, with the fix in the same sentence. Praised: deflects immediately to the work itself. Losing an argument: concedes the specific point without conceding the larger position, the same move he uses on students. At 2am he's usually still reading. A free Saturday is the same five newspapers, slower, with real coffee instead of the school's. Finds genuinely funny: precise, deadpan understatement, a flat, well-timed line lands with him every time, though he'd never say so out loud.
+
+Constant volume extends into a constant temperament. Colleagues call him, privately, the
+easiest person on staff to disagree with, because he never raises the stakes of a
+disagreement. Bored: does not show it, reads instead. Praised: deflects immediately to the
+work. At 2am he is usually still reading. A free Saturday is the same five newspapers,
+slower, with better coffee. What he finds genuinely funny is precise deadpan
+understatement, and a well-timed flat line lands with him every time, though he would never
+say so.
 
 ## Interior life
-Wants, unspoken: to see one student, just one, write something that would survive real editorial scrutiny on its merits, not as a school assignment. Afraid of: that the discipline he teaches is undervalued outside these walls, and that he's training people for a world that doesn't reward a well-hedged argument being cut down to an honest one. Thinks about before sleep: his own current research, the argument he's still building for his next piece of scholarship. Free year: he'd finish the book he's been slowly building for years about how a single false claim moves through a political argument unchallenged. Believes that others would argue with: that a zero-note paper is kinder than a bad note, Sandoval would call this needlessly cruel; he'd say the alternative is worse. Wrong about: he assumes silence always reads as respect for a student's ability to work it out; it doesn't always, and at least once it read as indifference to a student who needed to hear the work was noticed at all.
+
+Wants, unspoken: to see one student, once, write something that would survive real
+editorial scrutiny on its merits rather than as a school assignment. Afraid of: that the
+discipline he teaches is not valued outside the walls he teaches it in, and that he is
+training people for a world with no use for a hedged argument cut down to an honest one.
+What he does instead of saying that is raise the bar again. Before sleep: the argument he is
+still building for his own next piece of work. A free year: he would finish the book he has
+been slowly building about how a single false claim travels through a political argument
+unchallenged. Believes, against others, that a mark with no note is kinder than a bad note.
+
+**Blind spots:** he assumes silence reads as respect for a student's ability to work it out.
+Sometimes it reads as indifference, and it has, to somebody who needed to hear that the work
+had been noticed at all. He also cannot tell the difference between a student who accepts a
+hard mark because they understand it and one who accepts it because they have given up
+arguing with him.
 
 ## The small stuff
-Drinks tea, not coffee, weak, with nothing in it. Handwriting is small and exact, the same hand whether he's marking an essay or writing a grocery list. His desk holds exactly what's needed and nothing decorative, no photographs, no mementos, which colleagues have noticed and nobody asks about. Money: spends almost nothing beyond the newspapers and the house, gives the rest to a scholarship fund in his late wife's name. Superstition: reads the first line of a new stack of papers before he lets himself read anything else that morning, a habit from decades of reading a lede before anything else. On a phone: barely uses one, keeps it off during the school day, checks it once in the evening. First thing every morning: the newspapers, before the sandwich, before anything else.
+
+Tea, weak, nothing in it. Handwriting small and exact, the same hand for an essay note and a
+grocery list. His desk holds exactly what is needed and nothing decorative, no photographs,
+no mementos, which colleagues have noticed and nobody asks about. Money: spends almost
+nothing beyond the newspapers and the house, and gives the rest to a scholarship fund in his
+late wife's name. Ritual: reads the first line of a new stack of work before he lets himself
+read anything else that morning, a habit from decades of reading an opening paragraph before
+anything else. Barely uses a phone, keeps it off during the day, checks it once in the
+evening. First thing every morning, the newspapers, before the sandwich, before anything.
 
 ## Would do
-- Read a paper once, silently, before marking anything, until he finds the sentence where it first hedges.
-- Grade a technically correct paper down for not doing the harder job actually asked. (chapters/13_ten_pages.md:11, 15)
-- Address a student by surname only, never a first name, on the page or in class.
+
+- Read a piece of work straight through, silently, before marking anything, until he reaches
+  the sentence where it first goes soft.
+- Do the arithmetic on somebody else's output in public, in silence, and let the number make
+  his case for him.
+- Grade a technically competent piece down for not doing the harder job actually asked.
+- Address a student by surname only, on the page and in the room, without exception.
 - Let silence do more work than a sentence would.
-- Move a student to a harder author the moment they've earned it. (chapters/13_ten_pages.md:182)
-- Hold the same standard for a fourteen-thousand-word essay as a ten-page one. (chapters/14_sixty_degrees.md:151)
-- Keep teaching through a genuine crisis without raising his voice. (chapters/14_sixty_degrees.md:223)
-- Keep a student's B paper in a separate folder because it mattered to him.
-- Read five newspapers before breakfast, every day, without fail.
+- Move a student to something harder the moment they have earned it, without saying so.
+- Hold the same standard for a piece three times the assigned length as for the assigned one.
+- Keep teaching through a genuine crisis without changing his volume.
+- Keep one student's work in a separate folder and never mention it.
+- Read five physical newspapers before breakfast, every day, without fail.
 - Concede a specific point in an argument while holding his larger position.
 
 ## Would never
+
 - Praise length, effort, or ambition on its own.
 - Raise or lower his volume, under any provocation.
-- Lower a grade for a well-argued position he happens to disagree with, Chloe's B is for hedging, not for the position she took. (chapters/14_sixty_degrees.md:151)
+- Mark down a well-argued position he happens to disagree with.
 
-## Relationships
-- **Chloe**, the primary channel; pushes her from competent to actually good by refusing to grade effort or length, and keeps her B essay in a private folder.
-- **Theo**, receives the identical zero-note treatment the same week and reacts completely differently; the difference is Theo's, not a change in Hearn. (chapters/13_ten_pages.md:164)
-- **Amberg**, the one colleague he actually trades ideas with, dryly, over a shared staff table.
-- **Sandoval**, would, if they ever discussed it, disagree about whether silence is kindness; the manuscript never puts them in a scene together.
+## How they treat people
+
+- **A student who is nearly good:** gets the hardest treatment he has, because that is where
+  the marginal note is worth writing. He wants them to stop qualifying themselves.
+- **A student who is genuinely good:** gets nothing written at all, which is the highest
+  thing he does and reads as the lowest.
+- **A student who argues about a mark:** gets the specific point conceded if it is right, and
+  the mark unchanged, and no discussion of the standard.
+- **A colleague:** gets a dry, unhurried exchange of ideas across a shared table, and he will
+  say a thing once and let it sit.
+- **An adult who explains something he already knows:** gets courtesy, and nothing that would
+  tell them he knew.
 
 ## Likes, dislikes, habits
-- Marks quality over quantity or effort, explicitly. (chapters/14_sixty_degrees.md:151)
-- Withholds notes as a form of feedback. (chapters/13_ten_pages.md:160-160)
-- Likes precise, deadpan understatement in other people.
+
+- Marks quality, never quantity or effort.
+- Withholds notes as a form of feedback.
+- Likes precise deadpan understatement in other people.
 - Reads five physical newspapers a day, cover to cover.
 - Keeps a private folder of the work that mattered most to him.
 
-## Facts a rewriter needs
-Full name Walter Hearn. Students call him "Mr. Hearn" or "Hearn", nobody under eighteen uses a staff member's first name at Halstead. Addresses every student by surname only, Kessler rather than Chloe, with no exception on the page. Historian of the founding period, actively publishing scholarly work on Federalist-era political argument; Halstead recruited him with a compensation package well beyond an academic salary and teaching is a handful of hours a week, the rest of his time his own research on the school's resources. Signed the standard staff non-disclosure agreement. Widower, no children. Teaches writing/rhetoric through history: Federalist Papers, then Burke; ten pages a week. Male per the text, undisputed.
+## Age and change
 
-## Known problems
-- Most of his reasoning ("the third page... doing the work of the first six," chapters/13_ten_pages.md:31) is reported in narration rather than quoted directly, a rewriter drawing on his voice has only the four quoted turns above to work from verbatim.
-- Home, Body, Interior life, and The small stuff close a genuine gap the manuscript leaves; none of it contradicts the page.
+He is late in a long career and everything about him has settled. The volume, the surnames,
+the ink economy and the silent first pass are all permanent and were all in place before
+anybody currently in his room was born. What is recent is the folder and the scholarship
+fund, both of which arrived with the widowhood, and neither of which he will explain.
+Written younger, he is the same person with more of his own work in front of him and less
+patience for a parents' evening, and the standard is if anything higher, because he had not
+yet learned which students will simply stop if you never give them anything.
+
+## Do not write him as
+
+Cruel, or secretly warm. Both are the same error from opposite ends: they assume the
+withholding means something about his feeling toward the student. It means something about
+the work. The correct note is a man who has decided that saying the thing would spend it,
+and who is prepared to be misread for as long as that stays true.
 
 ## Do not confuse with
-Amberg, both correct with a flat statement and no argument, but Amberg always anchors the correction to a physical document he produces first; Hearn corrects from memory, cites no document, and never counts anything out loud.
+
+**Amberg.** Both correct with a flat statement and no argument, and both are permitted one
+inherited idiom out of their own trade rather than an invented image. The dividing cue is
+physical rather than verbal: Amberg anchors a correction to a document he produces first and
+structures his reasoning as an explicit numbered list, where Hearn works from memory, cites
+no document, and never counts anything out loud.
+
+---
+
+## Book-specific: navigation and continuity only
+
+*Facts a writer must not contradict. Nothing here characterises him. Delete this section and
+the sheet is still complete.*
+
+**Appears in:** chapters/13_ten_pages.md and chapters/14_sixty_degrees.md, speaking.
+Referenced in chapters/21_the_applications.md.
+
+**Continuity:** Full name Walter Hearn, called Mr. Hearn or Hearn; nobody under eighteen uses
+a staff first name at this school. Male. Widower, no children. A historian of the founding
+period, actively publishing; teaching is a handful of hours a week and the rest of his time
+is his own research, run on the school's resources. Signed the standard staff non-disclosure
+agreement. He addresses every student by surname, Kessler rather than Chloe, with no
+exception anywhere on the page.
+
+His subject is writing and essays, one ten-page piece a week from Chloe's age ten. Political
+history is a separate slot with a different, unnamed teacher, and reference documents that
+give Hearn writing and history are wrong. The authors run Hamilton, then Madison, then Burke,
+one at a time.
+
+During the whole-school Watch exercise he holds the library from twenty past three until
+eighteen minutes to four, which is twenty-two minutes, against eleven students rising to
+twenty. Reference documents saying forty minutes or two hundred children are wrong.

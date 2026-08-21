@@ -94,7 +94,7 @@ Fails, shortest first:
 
 Passes:
 - Inherited figure in narration: "the way you'd tell somebody their shoe was untied"
-- Character-owned conceits, always spoken or thought, never narrated: Icarus, clouds as the ocean going somewhere else, the moon as a liar, the room-shaped object.
+- Character-owned conceits, always spoken or thought, never narrated: Icarus, clouds as the ocean going somewhere else and the moon as a liar, all Chloe's; the room-shaped object, Sam's.
 
 Instead: if the comparison is new and belongs to the narrator, cut it or hand it to a character. If it is a stock comparison, it may stay in narration.
 

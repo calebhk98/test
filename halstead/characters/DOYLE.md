@@ -1,120 +1,283 @@
-# AARON DOYLE
+# Aaron Doyle
 
-Teaches science to the youngest students and wants them to see, early and often, that being wrong in front of everyone costs nothing worth flinching over.
+A working field scientist teaching science to the youngest students, who wants them to
+find out early and often that being wrong in public costs nothing worth flinching over.
 
-**First name:** Aaron, never used by anyone at the school under eighteen, see Facts.
-**Age span (in the text):** Chloe age 6-7 only | **MBTI:** ISTP (writing aid, not a claim) | **IQ:** reader estimate, high 130s
-**Appears in:** chapters/04_pluto.md, chapters/05_behind.md
-**Speaks:** 2 quoted clauses in one turn, in the entire book, the scene exists to show exactly how he takes a correction.
+**Age span:** teaches Chloe at seven | **MBTI:** ISTP (a writing aid, not a claim)
+| **IQ:** high, and he has never once used it to win a room; what he has instead is the
+habit of checking
 
-## Voice in one paragraph
-Doyle's entire verified quoted dialogue is two words, and they come after he's already fixed the error, not before: "Mass. Thank you." (chapters/04_pluto.md:114) Between the correction landing and those two words there's no line from him at all, only the check and the fix, wordless: he stops with the marker still up, looks at what he's written, wipes one word out with the side of his hand, and writes the other into the gap it leaves. The "Thank you" isn't warmth, it's the same register as marking an answer correct, and it lands only once the board already agrees with the student, never a beat before. Everything else known about how he runs a room comes from narrated action: told a group to "leave it where it is and come back to it," or having the class "write down which part went first" against their own prediction, both with no quoted line at all.
+## How he thinks people learn
 
-## Dials
+By putting a claim on the record and then finding out. His teaching runs on prediction: a
+student says what they think will happen, in writing, with a number attached, and then the
+thing happens and the number is either right or it is not. That makes wrongness a
+measurement instead of a verdict, and it is the whole reason he prefers a lesson where
+something physically gives way to a lesson where he explains why it would.
+
+The corollary, which is the more portable half of him, is that he demonstrates the same
+standard on himself. Being corrected in front of everybody is a normal event that he
+handles in about four seconds, and the class watching him do it learns more about the cost
+of error than any amount of reassurance would teach them. He never says that out loud. He
+would consider saying it out loud to be undoing it.
+
+He also believes a mistake is only useful while it is still standing. A thing that failed
+gets left exactly as it failed, and the class comes back to it later rather than being
+rushed into a save.
+
+## What he does when a student fails
+
+Nothing dramatic and nothing kind. He has them write down which part gave way and how far
+off their prediction was, and he grades that against their own stated number rather than
+against a target he chose. A group that runs out of time does not get an extension and does
+not get rescued; the unfinished thing stays where it is, and they return to it.
+
+When a student corrects him, which he treats as the same event running in the other
+direction, he does not answer from memory. He goes back to what he actually wrote or
+recorded, looks at it, and only then agrees. The fix and the acknowledgement happen in the
+same motion: the wrong thing gets wiped out and the right thing goes into the gap it
+leaves, and the thanks lands after the board already agrees, never a beat before. Then he
+is on to the next thing, briskly. Nothing follows for the rest of the day: no talking-to
+about interrupting, no note home, no warm public praise for the catch either. Both of those
+would make an ordinary event into an occasion, and the flatness is the lesson.
+
+## How he talks
+
+Two short flat clauses and then he is gone. He acknowledges in the fewest words that will
+carry it, and adds nothing to either end: no explanation of why he made the mistake, no
+reassurance to the room that it does not matter, no comment on the tone or the timing of
+whoever said it. His thanks functions as a mark of correctness rather than as gratitude,
+and it sounds the same whether it goes to a seven-year-old, a colleague, or an instrument
+that has just contradicted him. He gives an instruction slowly when it matters and at
+normal speed when it does not, and the slowness is his only emphasis. He does not raise
+anything.
+
+### Dials
+
 | | |
 | :-- | :-- |
-| sentence shape | two short flat clauses, no elaboration |
-| disagrees by | not attested toward a student, the one scene shows him agreeing with a correction |
-| wordiness | 1/10, the shortest total dialogue footprint alongside Pruitt |
-| terseness | 100% of his two clauses are under 6 words |
-| at length | not attested — his verified dialogue totals two words in the entire book, and nothing shows him sustaining more |
-| jokiness | 0/10 |
-| hedging | 0% |
-| questions | 0% |
-| figurative | none found |
+| sentence shape | two short flat clauses, no elaboration on either side |
+| disagrees by | going back to the source, then agreeing or not; he does not argue from memory |
+| length | very short by default, and long only about method |
+| at length | when what is in dispute is a fact rather than a rule. He will walk the whole chain of where he checked, what it said, and what he checked next, in order, until the disagreement has nowhere to stand. He is not defending himself; he is showing the chain |
+| jokiness | dry, rare, and mostly at his own expense in the field rather than in the room |
+| hedging | none, because he checks first; what looks like certainty is just a completed check |
+| questions | few aloud; his questions get asked of the source, not of the room |
+| figurative | no invented images; the world supplies his examples and he would rather point at one |
+| emotional range | very narrow on the page and genuinely narrow underneath it; he is hard to rattle and not performing it |
 
-## When they talk at length
+## When he talks at length
 
-He goes long when the source is what is in dispute. Doyle's method is to verify before he corrects, silently, and the one thing that will make him narrate is somebody arguing about a fact rather than about a rule: then he walks through where he checked, what it said, and what he checked next, in order, until the disagreement has nowhere left to stand. He is not defending himself in this. He is showing the chain.
+The condition is a disputed fact, as against a disputed rule. Argue with him about what he
+should have done and he will give you one sentence. Argue with him about what is true and
+he will narrate the chain: where he checked, what it said, what he checked next, in order,
+until there is nowhere left to stand. Any scene with a contested measurement in it meets
+this condition.
 
-Nothing in the manuscript stages it. His confirmed dialogue is two words, "Mass. Thank you.", and the Known problems section below flags that even a line once attributed to him was cut as a banned construction, leaving the sample thinner than it started. The condition is named here so a scene can meet it, not because a scene already has.
+What it costs him is the invisibility of the method. Ordinarily he verifies at the source,
+fixes the board, and says nothing else, so nobody sees the work. Reading the chain out loud
+tells a room that every quiet correction it has ever had from him had the same labour
+behind it, done where nobody was looking, and he would rather they thought it was easy.
 
-What it costs him is the invisibility of the method. Ordinarily he verifies at the source, corrects the board, and says nothing else, "no talking-to, no note home, no comment the rest of the day" (chapters/04_pluto.md:122). Reading the chain out loud tells a room that every other correction it has ever seen from him had the same work behind it, done where nobody was looking.
+## Signature - his alone
 
-## Signature, theirs alone
-Verifies at the source before agreeing, silently, then fixes it without narrating the fix: "Mr. Doyle stops with the marker still up at the board and looks at what he's written." (chapters/04_pluto.md:113) No other teacher in this cast is shown pausing to re-examine their own prior work before responding to a correction. The check runs before anything gets said, too, not only after a correction lands: he counts his own chalk and marker supply before a lecture starts, a fieldwork habit about never running out of the tool you need mid-task, and the board gets checked against the challenge the same way, before he'll accept it, the identical motion applied to two different objects. When he does speak, the shape doesn't change: he repeats the corrected term exactly once, then closes on "Thank you," the term and the close, nothing added on either side, whether the correction comes from a seven-year-old, a colleague, or his own instruments logging a reading he has to re-check in the field. "Mass. Thank you." is the template, not a one-off.
+Check the source before conceding, then fix and acknowledge in one motion. Two objects, one
+gesture: he re-examines his own prior work before he responds to a challenge to it, and
+when he responds, the physical correction and the verbal one land together with no gap in
+between for face-saving. The same habit runs ahead of the room as well as behind it: he
+counts his own supplies before a lecture the way he counts a reading twice in the field.
+Never narrate the check. The moment he explains that he is checking, it becomes a
+performance of humility and the character is gone.
 
 ## Would they say this?
-**The Halstead-staff test.** A line belongs to this staff, not to a generic teacher, only if all five hold: no praise word attaches to the child; a correction is a flat statement of fact; the child's age is never a reason for leniency; an extraordinary result is treated as expected, not remarked on; the adult's own error is fixed the same flat way a student's is.
 
-Doyle installed part of the seismic network a national geological survey still monitors, and none of that shows in his one scene. A seven-year-old corrects him on weight versus mass, a distinction his own instruments log every hour he's in the field, and he checks the board and fixes it exactly as flatly as he'd correct a misread gauge.
+- YES if it accepts a correction with the fix included in the same breath, and nothing else.
+- YES if the acknowledgement is exactly the corrected term and a thanks, with nothing added
+  at either end.
+- YES if the thanks functions as a mark of correctness rather than as gratitude.
+- YES if the physical fix happens in the same beat as the verbal one.
+- YES if it lets an unfinished thing stay unfinished and returns to it later.
+- YES if it grades a prediction against the group's own stated number rather than a target.
+- YES if a student who spoke out of turn to deliver a correct fact gets the fact addressed
+  and nothing else.
+- YES if the same flatness applies whether the correction comes from a colleague, an
+  instrument, or a seven-year-old.
+- NO if it explains why the mistake was made, or reassures the class that it does not
+  matter.
+- NO if it addresses a student's tone or timing rather than the content.
 
-- YES if it accepts a correction in one sentence, with the fix included in the same breath, and nothing else.
-- YES if the acknowledgment is exactly two beats, the corrected term and then "Thank you," and nothing is added to either end.
-- YES if "thank you" functions as a mark of correctness rather than gratitude.
-- YES if the physical correction (erasing, rewriting) happens in the same beat as the verbal one.
-- YES if it lets an unfinished group task stay unfinished and revisits it later without extending time to save it in the moment.
-- YES if it grades a prediction against the group's own number rather than a fixed external target.
-- YES if a student who spoke out of turn to deliver a correct fact gets the fact addressed and nothing else.
-- YES if the same flatness applies whether the correction comes from a colleague, a textbook, or a seven-year-old.
-- NO if it explains why the mistake was made or reassures the class that it doesn't matter.
-- NO if it addresses a student's tone or timing rather than only the content of what they said.
+## Under pressure
 
-## Are they acting like themselves?
-Corrected by a student who spoke without waiting to be called on, behavior the text is explicit would normally be punished, his visible response is limited to checking the board and fixing the word. Nothing happens afterward: no talking-to, no note home, no comment the rest of the day. Failure mode: adding any visible reaction beyond the fix itself, a raised eyebrow, a pointed reminder about interrupting, or conversely a warm "great catch!" either one breaks the exact flatness the scene is built to demonstrate.
+Slower, not faster. His reflex under any kind of challenge is to go and look, which reads
+as calm and is really just a rule he does not break. Corrected, he checks. Wrong, he fixes
+and moves. Cornered, he gets quieter and more specific and starts naming sources. Tired, he
+is restless indoors and fine outdoors. What actually gets to him is a decision he has to
+make without being able to verify anything, and in that situation he stalls, visibly, and
+will keep looking for one more thing to check past the point where checking helps. A writer
+gets him wrong by adding any visible reaction to being corrected, in either direction: a
+raised eyebrow and a warm well-spotted break the scene the same way.
 
-## Subjects and schedule
-Teaches science to the youngest age band, 6-7, volcanism and geology in chapters/04, structural load and prediction-testing in chapters/05.
+## What he is good at, and what he is not
 
-**Best at:** not defending an error once he's checked it, the entire content of his one scene.
-**Worst at:** finishing a lesson on schedule, he's notorious among the other early-years staff for running ten minutes long on any topic a student latches onto, every single time.
-**Favourite, and why:** the bridge-building exercise, it's the one unit where a wrong prediction gets tested physically, in front of everyone, with a number attached, and he finds that honesty more useful than almost anything else on the syllabus.
-**Least favourite:** the mandated end-of-term written test, which he administers exactly as required and privately considers the least informative hour of his year.
-**The one he's secretly proud of:** the volcanism scene where he was corrected in front of the whole class and fixed it without missing a beat, he's mentioned it once, dryly, to another teacher, as proof the method works on the teacher too, not just the students.
-**What he'd teach if he could teach anything else:** field geology, full time, outdoors, though the classroom version gives him something fieldwork alone never did, watching an idea actually land.
-**What he thinks of the rest of the curriculum:** he thinks the earliest years get the balance right, theory and hands, together, immediately, and hopes the later grades keep the hands involved once the theory gets harder.
+Science for the youngest band: volcanism and geology, structural load, prediction and
+testing. He teaches with materials in front of people and a number at the end.
+
+**Best at:** not defending an error once he has checked it, which is a genuinely rare skill
+and the thing his colleagues would name first.
+**Hardest for him:** finishing on schedule. He runs ten minutes long on any topic a student
+latches onto, every single time, and knows it.
+**Favourite, and why:** the build-and-load exercise, because a wrong prediction gets tested
+physically, in front of everybody, with a number attached, and he finds that honesty more
+useful than almost anything else available to him.
+**Least favourite:** the mandated end-of-term written test, which he administers exactly as
+required and privately considers the least informative hour of his year.
+**Secretly proud of:** having been corrected in front of a whole class and fixed it without
+missing a beat. He mentioned it once, dryly, to a colleague, as evidence the method works on
+the teacher too.
+**What he would teach instead:** field geology, full time, outdoors, though the classroom
+version gives him something fieldwork never did, which is watching an idea actually land.
+**On the rest of the curriculum:** he thinks the earliest years get the balance right, theory
+and hands together, immediately, and hopes the later years keep the hands involved once the
+theory gets harder.
 
 ## Home
-Doyle helped install part of the seismic monitoring network a national geological survey still relies on for early warning, and two governments' survey teams cite his group's calibration papers in their own reports. Halstead's offer covered his fieldwork costs outright, equipment, travel, the works, and left him a handful of teaching hours a week rather than a full course load, something no university post had managed alongside the same fieldwork. Lives off campus, shares a rented house a short drive away with another young teacher, an arrangement that started as convenience and became a real friendship. Unmarried, no children. In his mid-to-late thirties, one of the younger members of staff. Goes back into the field most summers on real monitoring work with the same research group he's always worked with, keeping the discipline current rather than academic.
 
-## Body
-Late thirties, lean, sun-weathered in the specific way of someone who spends real time outdoors. Holds a marker at the board while lecturing and wipes an error away with the side of his hand, the one physical habit the text actually gives him. (chapters/04_pluto.md:111-112) Dresses casually, practically, boots more often than not even indoors, a holdover from fieldwork. Eats quickly and talks through most of it, still thinking about whatever the class just covered. Sleeps reasonably well, though summers in the field have trained him to wake at odd hours without an alarm.
+He helped install part of a seismic monitoring network a national survey still relies on for
+early warning, and two governments' survey teams cite his group's calibration work. The
+offer that brought him here covered his fieldwork outright, equipment and travel, and left
+him a handful of teaching hours rather than a course load, which no university post had
+managed alongside the same fieldwork. Lives off campus, sharing a rented house with another
+young teacher, an arrangement that started as convenience and became a real friendship.
+Unmarried, no children. Mid-to-late thirties, one of the younger people on staff. Goes back
+into the field most summers with the same research group, which keeps the discipline current
+rather than academic.
+
+## Body and physical business
+
+Late thirties, lean, sun-weathered in the specific way of someone who spends real time
+outdoors. Holds a marker up at the board while he talks and wipes an error away with the
+side of his hand rather than reaching for anything. Boots more often than not, even indoors,
+a holdover. Eats quickly and talks through most of it, still on whatever the class just
+covered. Sleeps reasonably well, though field summers trained him to wake at odd hours
+without an alarm.
 
 ## Personality off the page
-His authority doesn't depend on being right the first time, checking the record before responding, rather than responding and then checking, is the single most concrete thing the text gives about how he handles any kind of pressure, however minor. Off the page, colleagues describe him as easy to work with and hard to rattle, the same equanimity extended to a broken piece of lab equipment as to a student's correction. Bored: restless indoors, visibly happier outside. Wrong: checks, agrees if it checks out, moves on, consistent everywhere else. Praised: shrugs it off, redirects to the actual result. Losing: doesn't register much, science, to him, isn't a contest either. At 2am, rare, he's usually reading a field report from wherever his research group is currently stationed. A free Saturday means hiking, alone or with the housemate, somewhere with actual rock in it. Finds funny in others: a wrong answer delivered with total confidence, not to mock it, but because it reminds him of his own early fieldwork mistakes.
+
+His authority does not depend on being right the first time, which is the single most
+concrete thing about how he handles pressure of any size. Colleagues call him easy to work
+with and hard to rattle, and extend the same equanimity to a broken instrument as to a
+child's correction. Bored: restless indoors, visibly happier outside. Praised: shrugs it
+off and redirects to the result. Losing: barely registers; he does not experience science
+as a contest. At 2am, rarely awake, and reading a report from wherever his group is
+currently stationed. A free Saturday is hiking, alone or with the housemate, somewhere with
+actual rock in it. What he finds funny in other people is a wrong answer delivered with
+total confidence, and it is affection rather than mockery, because it reminds him of his own
+early fieldwork.
 
 ## Interior life
-Wants, unspoken: to keep both halves of his life, the fieldwork and the classroom, running at once for as long as the school will let him. Afraid of: that eventually he'll have to choose between them, and he's not sure which way he'd go. Thinks about before sleep: an unfinished thread in his current dataset that he turns over out of pure curiosity, not obligation. Free year: back in the field, full time, on the system he's studying now. Believes that others would argue with: that a wrong answer said loudly is more useful than a right one said quietly, Hearn, in particular, would push back, believing precision matters more than volume. Wrong about: he assumes every student finds a public correction as painless as he does; at least one student in his class has, privately, found the exposure of being wrong in front of everyone genuinely difficult, and he hasn't yet noticed which one.
+
+Wants, unspoken: to keep both halves of his life running at once for as long as anyone will
+let him. Afraid of: having to choose between them, and not knowing which way he would go.
+What he does instead of saying that is take on more of both. Before sleep: an unfinished
+thread in his current data that he turns over out of curiosity rather than obligation. A
+free year: the field, full time, on the system he is studying now. Believes, against others,
+that a wrong answer said loudly is worth more than a right one said quietly.
+
+**Blind spots:** he assumes public correction is as painless for everyone as it is for him,
+and there is always at least one child in his room for whom it is not, and he has not
+noticed which. He also mistakes his own equanimity for a method, when for the student on the
+receiving end it is a temperament they do not share.
 
 ## The small stuff
-Drinks coffee black, a lot of it, refilled from a thermos that goes everywhere with him including outside during breaks. Handwriting is quick and slightly messy, legible, but clearly built for speed over neatness, the handwriting of someone used to writing field notes fast before conditions change. Keeps a small rock sample on his desk from every place he's done fieldwork, unlabeled, which he can identify instantly if asked. Money: unremarkable, most of it goes toward keeping his own research running. Superstition: none stated; checks his own chalk or marker supply obsessively before a lecture, a fieldwork habit about never running out of the tool you need mid-task. On a phone: uses it for weather and seismic activity alerts more than anything social. First thing every morning: checks an activity feed from the system he currently studies, out of habit more than need.
+
+Black coffee, a lot of it, from a thermos that goes everywhere including outside at break.
+Handwriting quick and slightly messy and clearly built for speed, the hand of someone used
+to writing notes fast before conditions change. Keeps a rock sample from every place he has
+worked on his desk, unlabelled, and can identify any of them instantly if asked. Money:
+unremarkable, most of it going toward keeping his own research running. Ritual: counts his
+chalk and marker supply before a lecture, the fieldwork habit about never running out of the
+tool you need mid-task. On a phone, weather and activity alerts more than anything social.
+First thing every morning, he checks a feed from the system he currently studies, out of
+habit rather than need.
 
 ## Would do
-- Check his own written work before responding to a challenge to it. (chapters/04_pluto.md:113)
-- Count his chalk and marker supply before a lecture starts, the same check-before-trust habit applied before anything's even been said yet.
-- Fix an error in the same motion as acknowledging it, with no gap for face-saving. (chapters/04_pluto.md:114)
-- Close an accepted correction on the same two-beat shape every time: the term, then "Thank you."
-- Let unfinished group work stay unfinished and return to it later rather than force a save. (chapters/05_behind.md:24)
-- Grade a group against their own stated prediction rather than a fixed target. (chapters/05_behind.md:30)
+
+- Go and check his own prior work before responding to a challenge to it.
+- Fix an error in the same motion as acknowledging it, with no gap for face-saving.
+- Count his supplies before a lecture, the same check-before-trust habit applied before
+  anything has even been said.
+- Let unfinished work stay unfinished and come back to it rather than force a save.
+- Grade a group against their own stated prediction rather than a fixed target.
+- Make the class write down which part gave way first, in their own words.
 - Run a lesson ten minutes long because a student latched onto something real.
-- Go back into the field most summers to keep his own research current.
-- Keep an unlabeled rock sample from every fieldwork site he can identify on sight.
+- Go back into the field most summers to keep his own work current.
+- Keep an unlabelled sample from every site and know every one on sight.
 
 ## Would never
-- Get defensive, annoyed, or performatively gracious about being corrected, the narration explicitly rules out both extremes. (chapters/04_pluto.md:119)
-- Address the fact that a student spoke out of turn, only the content of what they said.
-- Follow up on a correction afterward, no talking-to, no note home, no comment for the rest of the day. (chapters/04_pluto.md:122)
 
-## Relationships
-- **Ruth**, corrects him in front of the class and receives the flattest possible acknowledgment; no scene shows them interacting again. (chapters/04_pluto.md:111-117)
-- **Chloe**, watches him for the rest of the day for a reaction that never comes; the scene is staged entirely through her observation. (chapters/04_pluto.md:121-120)
-- **Owen's group**, told to "leave it where it is and come back to it" rather than pushed under time pressure. (chapters/05_behind.md:24)
-- **His housemate colleague**, the one person who sees him outside the classroom, hiking most weekends.
+- Get defensive, annoyed, or performatively gracious about being corrected. Both extremes
+  break him equally.
+- Address the fact that a student spoke out of turn, rather than only what they said.
+- Follow up on a correction afterward, in any direction, for the rest of the day.
+
+## How they treat people
+
+- **A student who corrects him:** gets the flattest possible acknowledgement and absolutely
+  nothing else, all day. He wants the correction to have cost them nothing.
+- **A student who crows about having been right:** gets no response at all; he is already on
+  the next thing, and the crowing dies for lack of oxygen rather than being suppressed.
+- **A group that runs out of time:** gets told to leave it standing and come back, with no
+  extension and no sympathy. He wants the failure preserved intact.
+- **A student watching him for a reaction:** never gets one, and never finds out that the
+  absence was deliberate.
+- **His housemate:** the one person who sees him outside a classroom, most weekends, walking.
 
 ## Likes, dislikes, habits
-- Checks his own prior work before responding to a correction rather than answering from memory. (chapters/04_pluto.md:113)
-- Lets an unfinished group task stand unfinished and revisits it later. (chapters/05_behind.md:24)
-- Likes a wrong answer delivered with total, unearned confidence, finds it endearing, not annoying.
-- Keeps a rock sample from every fieldwork trip on his desk.
+
+- Checks his own prior work before responding to a correction.
+- Lets an unfinished task stand and revisits it.
+- Likes a wrong answer delivered with total unearned confidence.
+- Keeps a sample from every trip on his desk.
 - Runs long on any topic a student latches onto.
 
-## Facts a rewriter needs
-Full name Aaron Doyle. Students call him "Mr. Doyle", nobody under eighteen uses a staff member's first name at Halstead. Active field scientist; installed part of a national geological survey's seismic network and still publishes with the same research group. Halstead's offer covered his fieldwork outright and let him keep it running alongside a handful of teaching hours a week. Signed the standard staff non-disclosure agreement. Unmarried, no children. Teaches science to Chloe's age band 6-7. Male, undisputed in the text.
+## Age and change
 
-## Known problems
-- Only one scene contains any of his actual speech; every other characterization point beyond that scene is extrapolated or invented to close the gap.
-- Nothing in the text shows Doyle initiating a correction of a student, the only correction scene runs in the opposite direction. His voice under the more common classroom situation is entirely unattested and the material above is built by extension, not by direct evidence.
-- This sheet used to quote a first line, "Yeah, you're right, I said that wrong," ahead of "Mass. Thank you." The line was real: it stood at chapters/04_pluto.md:114 until a prose pass cut it as a banned verdict construction, leaving the wordless fix and the two words after it. So his one scene is now even barer than it was, and the correction he accepts he accepts in silence.
+He is young for the staff and has not yet had to choose between the two halves of his life,
+which is the only real pressure on him. The flatness about error is not age; he has had it
+since his first field season, when it was beaten into him by instruments that did not care
+how confident he was. What will change is the fieldwork: write him fifteen years on and the
+classroom is the larger half, the samples on the desk are older, and the equanimity has
+started to look like authority to people who did not see him earn it.
+
+## Do not write him as
+
+Warm. The scene that defines him works only because nothing is added to it, and the warm
+version, a smile, a well spotted, a moment made of it, converts an ordinary event into a
+reward and destroys the point. The cold version is equally wrong. He is neither; he is
+finished with the matter.
 
 ## Do not confuse with
-Baptiste, both are early-years teachers shown mid-lesson with a marker in hand, but Baptiste's signature is inviting and rewarding a student's question, while Doyle's one scene is about absorbing a correction he didn't invite, without comment either way.
+
+**Baptiste.** Both are early-years teachers seen mid-lesson with a marker, both refuse
+ceremony, and both hand a room more than they hand an individual. Baptiste's move is
+inviting and rewarding a question. Doyle's is absorbing a correction he did not invite and
+letting the matter end there.
+
+---
+
+## Book-specific: navigation and continuity only
+
+*Facts a writer must not contradict. Nothing here characterises him. Delete this section and
+the sheet is still complete.*
+
+**Appears in:** chapters/04_pluto.md, speaking. Present, without dialogue, in
+chapters/05_behind.md.
+
+**Continuity:** Full name Aaron Doyle, called Mr. Doyle; nobody under eighteen uses a staff
+first name at this school. Male. Unmarried, no children. An active field scientist who
+installed part of a national survey's seismic network and still publishes with the same
+group; teaching is a handful of hours a week and the offer covered his fieldwork outright.
+Signed the standard staff non-disclosure agreement. He teaches the July admissions camp's
+science and engineering for the youngest band, mass against weight and the bridge build, and
+has no presence in the book after Chloe's age seven. The correction he accepts comes from
+Ruth, in front of the class, and nothing happens to her afterward.
