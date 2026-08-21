@@ -46,6 +46,16 @@ SPEAKERS = ["Chloe", "Ruth", "Sam", "Kavi", "Nadia", "Eli", "Theo", "Odile", "Pr
             "Doyle", "Pruitt", "Sinclair", "Amberg", "Sandoval",
             "Prentice", "Ammons", "Whitaker", "Deb", "Ruiz"]
 TAGGED = r"(?:Mrs\.? |Mr\.? |Ms\.? |Dr\.? |Coach |Sergeant )?(%s|her mom|her mother|her dad|her father)" % "|".join(SPEAKERS)
+# The bias is directional, not just short, and one character sheet was built on
+# the wrong end of it. In a two-hander the tag usually rides on the ANSWER, so
+# the question is the turn most likely to go untagged. Counting questions off
+# tagged lines therefore undercounts them systematically. RUTH.md carried
+# "0% questions, never a question mark" as a law of the character on that
+# basis; reading her turns by hand gives 41 questions in 191 turns, about 21%,
+# with 16 spoken turns ending in a question mark. Never take a zero from this
+# script as a fact about a person. Compare speakers with each other, and read
+# the scenes before writing any rule into a sheet.
+
 SAYS = r"(?:says|said|asks|asked|tells|told|shouts|screams|whispers)"
 HEDGE = r"\b(i think|maybe|probably|idk|i dont know|i don't know|kind of|sort of|i guess)\b"
 
@@ -148,7 +158,7 @@ def main():
              "exact attribution, every message counted")
     if a.prose or both:
         show("PROSE DIALOGUE", collect_prose(a.root), a.min_lines,
-             "tagged lines only, biased short - compare speakers, not absolutes")
+             "tagged lines only, biased short AND against questions - never read a 0 as real")
 
 
 if __name__ == "__main__":
