@@ -8,7 +8,7 @@ Ms. Vance calls the house on the Friday, which Chloe hears from the stairs, thou
 
 Chloe goes back up before the call is finished.
 
-The appointment is the following Wednesday, for which her mom takes the whole afternoon off work, unannounced. Dr. Ammons has a room with two chairs and a couch, and she sits in one of the chairs and points Chloe's mom at the other, leaving Chloe the whole couch to herself, which is deep enough that her feet stick straight out in front of her instead of reaching the floor, so she pulls them up under her and picks at a loose thread on the cushion instead of looking at either chair.
+The appointment is the following Wednesday, for which her mom takes the whole afternoon off work, unannounced. Dr. Ammons has a room with two chairs and a couch, where she sits in one of the chairs and puts Chloe's mom in the other, leaving Chloe the whole couch to herself, which is deep enough that her feet stick straight out in front of her instead of reaching the floor, so she pulls them up under her and picks at a loose thread on the cushion instead of looking at either chair.
 
 "So tell me what's going on, and start wherever you like."
 
@@ -70,7 +70,7 @@ Chloe gets it in pieces: her mom at the counter saying the words in writing twic
 
 "That sounds all right, then, that sounds like the thing we were after in the first place."
 
-"It's one hour, on a Thursday, with a woman who covers four different buildings in a week," her mom says, with both hands on the back of a kitchen chair. "I asked what they actually do in the hour and she said enrichment, and when I asked her what enrichment means she told me instead how much Chloe would get out of it."
+"It's one hour, on a Thursday, with a woman who covers four different buildings in a week," her mom says, with both hands on the back of a kitchen chair. "I asked what they actually do in the hour and she said enrichment, and when I asked her what that means she told me how much Chloe would get out of it."
 
 "She might get something out of it, though, people do, and there's little enough to lose by trying it."
 
@@ -86,11 +86,11 @@ Chloe comes down that night in her pajamas, because the word program has come up
 
 "Go to bed."
 
-It takes six weeks, and in the second week of November the school calls back to say that they can make an exception and let her come a year early, which her mom tells her in the kitchen with both hands on Chloe's shoulders while her dad stands in the doorway.
+It takes six weeks. In the second week of November the school calls back to say that they can make an exception and let her come a year early, which her mom tells her in the kitchen with both hands on Chloe's shoulders while her dad stands in the doorway.
 
 Chloe barely sleeps that night, and gets up twice to check that the note about it is still on the fridge under the strawberry magnet.
 
-There are nine kids and a cart with three shelves, a plastic bin of dice on the top of it, and a laminated sign on the side that says THINKING CORNER, which Mrs. Prahl wheels in at ten past one before spending ten minutes getting nine people out of four different classrooms and into chairs, and she learns all nine names inside the first five minutes, after which she uses them, every time.
+There are nine kids and a cart with three shelves, a plastic bin of dice on the top of it, and a laminated sign on the side that says THINKING CORNER, which Mrs. Prahl wheels in at ten past one before spending ten minutes getting nine people out of four different classrooms and into chairs, then learns all nine names inside the first five minutes, after which she uses them, every time.
 
 "Okay, so on this island there are two kinds of people, and that's all there is: knights always tell the truth, every single time, so they can't lie even if they want to, and knaves always lie, every single time, so they can't tell the truth even by accident," she says, holding the sheet up over her head so that the back row can see it too. "You meet two of them, and Alan says Bob is a knave, while Bob says neither of them is a knave, so what are they?"
 
@@ -178,13 +178,13 @@ Her mom looks at her for long enough that Chloe starts to think of something els
 
 Chloe lies down again with her back to her mother and turns her face toward the wall, and after a while her mom gets up off the end of the bed.
 
-The bicycle has been in the garage since the first week of December, under a sheet, which Chloe knows about by the second week of December and keeps to herself, so that when her dad brings it in on Christmas morning with a bow already on the handlebars there are people standing around the front room in their coats watching her see it. She says thank you, hugs her dad, then hugs her mom for longer, and then puts her coat on over her pajamas and rides it up and down outside the house while the two of them stand in the doorway in the cold.
+The bike has been in the garage since the first week of December, under a sheet, which Chloe knows about by the second week of December and keeps to herself, so that when her dad brings it in on Christmas morning with a bow already on the handlebars there are people standing around the front room in their coats watching her see it. She says thank you, hugs her dad, then hugs her mom for longer, and then puts her coat on over her pajamas and rides it up and down outside the house while the two of them stand in the doorway in the cold.
 
 "She likes it, look how fast she's already going out there," her dad says, from the doorway, with his arms folded up against the cold.
 
 "She does," her mom says, "she really does, look at her go."
 
-At her grandmother's in the afternoon there are a lot of people in the house and Chloe knows every one of them. Her cousin Dana asks how school is and Chloe says it's good, and asks whether she's still reading all the time and Chloe says some, and then Dana turns to talk to somebody else, so Chloe eats her potatoes.
+At her grandmother's in the afternoon there are a lot of people in the house and Chloe knows all of them. Her cousin Dana asks how school is and Chloe says it's good, and asks whether she's still reading all the time and Chloe says some, and then Dana turns to talk to somebody else, so Chloe eats her potatoes.
 
 She stops asking in January.
 

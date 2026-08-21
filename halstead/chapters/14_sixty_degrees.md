@@ -14,7 +14,7 @@ Then Coach Bell puts a metronome on a post at the near end of the field.
 
 "That's fine, and you're still doing it my way," Bell says, keeping hold of the arrow. "You want to read a shoulder at seventy metres, do it on your own time with something that bounces. This is an arrow, and I want to know whether you can put one where you meant it every time, all year, without one bad afternoon."
 
-"Right, so the whole year runs on a point staying away from a person, even by accident."
+"Right, so a point stays away from a person, even by accident."
 
 He walks them down the field to show them the lanes, two firing lines seventy metres apart, side by side, both facing north, each bending in toward the other until they meet at a point where the angle holds at sixty degrees. That is where the flight paths cross, at the top of the arc, where an arrow released early from one line and an arrow released on time from the other can end up in the same patch of sky at the same instant, and whatever is left of them keeps travelling and comes down together in open grass a hundred and fifty metres on, behind a rope and a sign where the target block stays all year.
 
@@ -92,7 +92,9 @@ Art history is in the spring, and in February the instructor projects a Dutch in
 
 Block two is wood shop and the pieces have got bigger, so she spends the autumn on a chair that has to take an adult sitting down hard and the spring on a second for somebody else, going in on Sundays too, though the two Saturdays a month the man opens it are better. In March he demonstrates a Japanese corner joint to six students that holds without a nail or a screw or any glue, and Chloe cuts it eleven times over three weeks before one holds when she pulls on it with everything she has, and that eleventh goes on the shelf over her desk.
 
-In May her chisel starts rolling its edge every twenty minutes, so she takes it up to the front, where the man tells her it is a soft one and will do that for the rest of its life.
+In May her chisel starts rolling its edge every twenty minutes, so she takes it up to the front.
+
+"That's a soft one, so it'll do that for the rest of its life."
 
 "So where do people get a hard one?"
 
@@ -120,7 +122,7 @@ Chloe unfolds hers.
 
 "I know what devil's advocate is, Sam, I've been sitting in the same ethics class as you since we were ten."
 
-"Then go and do it properly," he says, shrugging at her. "If you can't say why the man signed it, what you've got is a feeling with a blank where his reason goes, and a blank is a worse essay than a wrong one."
+"Then go and do it properly," he says, shrugging at her. "If you can't say why the man signed it, what you've got is a feeling that it was wrong and a blank where his reason goes."
 
 Chloe puts her fork down, but she keeps looking at the table.
 
@@ -164,7 +166,11 @@ Chloe opens her mouth, then works out that the answer starts with the hat, and a
 
 "Well, a B's a B, and it's still a good grade," her mother says, and hands her the next plate off the pile.
 
-Her father is in the doorway with a dishcloth over his shoulder, wanting to know whether she is still doing the archery every day like she said, which she is, all year.
+Her father is in the doorway with a dishcloth over his shoulder.
+
+"You still doing the archery, every day like you said?"
+
+"Yeah, all year, every day."
 
 "I was telling your grandmother about it before and she wants to hear it off you," he says, hanging the dishcloth on the oven door. "Go on, she's in the front room and she's been after somebody to talk to since two."
 
@@ -198,7 +204,7 @@ Sam is out inside the first ninety seconds, because he goes over the second floo
 
 Chloe spends the whole Watch on the third floor landing with five others, six markers pointed down into the stairwell, firing to meet whatever comes up before it clears the turn, and when an incoming ball meets one of theirs there is a flat wet crack and paint everywhere at once, both spent short of the landing. Below, six more crack together, the sound carrying up through the floor, and somebody down there is shouting a count she can hear without making out the numbers. Her arms ache by three o'clock, and she stays until it is over.
 
-By half past three there are four teachers left standing in the whole building, three of them in the same corridor, and Mr. Hearn is the last, with the library, one door, one window, a room full of furniture, and eleven students trying to get in there from twenty past three, and it takes until eighteen minutes to four, by which point there are twenty on that corridor and somebody has brought a bench up from the second floor. People say afterward that when they finally got him he said "that's fine," put his glasses back on, and asked the boy nearest him whether he was done with the Burke.
+By half past three there are four teachers left standing in the whole building, three of them in the same corridor, and Mr. Hearn is the last, with the library, one door, one window, a room full of furniture, and eleven students trying to get in there from twenty past three. It takes until eighteen minutes to four, by which point there are twenty on that corridor and somebody has brought a bench up from the second floor. People say afterward that when they finally got him he said "that's fine," put his glasses back on, and asked the boy nearest him whether he was done with the Burke.
 
 The board the next day says the staff lost the building at three forty-two, then gives the students a B and lists eleven failures.
 

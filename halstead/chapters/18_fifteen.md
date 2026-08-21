@@ -26,7 +26,7 @@ On a Wednesday in mid-February she shoots a series and scores sixty-one, then sh
 
 She goes to dinner and clears the plate, but it could have been anything on it.
 
-She tries the old things: the count goes on her leg walking down to the range, the way it did when she was eleven, and the number comes out the same on the Friday, and she holds her breath at three places in the cycle, one of which makes her dizzy. By the second week of March she has six weeks of cards fanned out across the floor of her room, and she finds a pattern on the Tuesday and spends two days on it before it turns out to be the wind through the open end of the lane, after which she bends the corner of that card back and forth until it comes off in her fingers.
+She tries the old things: the count goes on her leg walking down to the range, the way it did when she was eleven, and the number comes out the same on the Friday, and she holds her breath at three places in the cycle, one of which makes her dizzy. By the second week of March she has six weeks of cards fanned out across the floor of her room. She finds a pattern on the Tuesday and spends two days on it before it turns out to be the wind through the open end of the lane, after which she bends the corner of that card back and forth until it comes off in her fingers.
 
 Later that month she asks the office for every range card in the year, and a woman hands her a box of ninety with no lock on it. It takes her four evenings, and what comes out of it is eleven people who have stopped moving: five of them at sixty, three at fifty-eight, two at fifty-five, and one sitting at sixty-three since the previous November, with the curve flattening into the same narrow band for all eleven whether it took forty sessions or twelve.
 
@@ -122,7 +122,7 @@ Chloe sets her bag against the wall. "All right, shoot, whatever it is you need 
 
 "There is a non-disclosure agreement on that project. Four people have signed it, and one of them is me, while your name is on none of it, and I would refuse to put a federal agreement in front of a fifteen-year-old, because asking you to sign one would be wrong and would fail in court besides," she says, shifting the folder to her other arm. "But your work feeds ours, so if you talk about it at home, or on a telephone, or at a table with eleven people round it, you walk away untouched and the consequences land on the four of us instead."
 
-"So you're asking me to keep quiet about it, even though there's a rule that says I have every right to talk."
+"So you're asking me to keep quiet about it, when there's no rule anywhere that obliges me to."
 
 "You can't be held to anything, I can, so asking is what I have."
 
@@ -134,7 +134,7 @@ Priya says at dinner that the lock held, which is almost certainly true, and whi
 
 So the phone stops holding anything.
 
-Kavi does the work over four evenings, and what he comes back with keeps every message on the machines in the building and puts a window on the handset instead of a box, so that closing the window leaves a clean pane of glass in your pocket with a login sitting on it, and taking the phone off somebody leaves you holding a phone.
+Kavi does the work over four evenings, and what he comes back with keeps every message on the machines in the building and puts a window on the handset instead of a box. Close the window and there is a clean pane of glass in your pocket with a login sitting on it. Take the phone off somebody and what you are holding is a phone.
 
 "Then the drawer's got the login, and the login is the whole thing all over again, only in a smaller box."
 

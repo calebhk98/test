@@ -8,11 +8,11 @@ Mr. Hearn is small and gray and says everything at the same volume.
 
 He does the arithmetic on the board in silence, and fifty-one in roughly thirty weeks comes out at an essay every four days, two to four thousand words a go, which is eight to sixteen pages, and he underlines the four and leaves it there.
 
-"One ten-page essay a week, and that's less than half his rate, you've got a keyboard, and the walk to the printer on a Saturday morning was his problem rather than yours." "It has to be as good, and that's the part that's actually hard, because the ten pages are the easy part, the ten pages are just hours, so if you want to know what I'm marking against, go and read one, and they're short enough that there's no excuse not to."
+"One ten-page essay a week, and that's less than half his rate, you've got a keyboard, and nobody is waiting on you to walk it to a printer on Saturday morning." He caps the pen. "It has to be as good, and that's the part that's actually hard, because ten pages isn't hard, ten pages is just hours, so if you want to know what I'm marking against, go and read one, and they're short enough that there's no excuse not to."
 
 Chloe has written ten-page reports before, three in Mandarin last year and one in French the year before that, every one of them with two or three weeks behind it, and they were also about things, like what a port did in a year, or what one newspaper said and what a second newspaper said about the first one, and those came back marked on the Mandarin.
 
-She reads Federalist 10 that night in the chair by the window, which takes an hour and a half, then reads it again on the Saturday, faster, with a pen, before spending the rest of the weekend on ten pages about whether a small state can be trusted with a veto.
+She reads Federalist 10 that night in the chair by the window, which takes her an hour and a half, then reads it again on the Saturday, faster, with a pen, before she spends the rest of the weekend on ten pages about whether a small state can be trusted with a veto.
 
 It comes back on the Monday with a mark and four lines under it, which say she has spent ten pages on a position she already held, that the other side appears nowhere on the page in a form its own supporters would recognise, and that until it does he has no way of telling whether she is right or only comfortable.
 
@@ -24,7 +24,7 @@ She looks up who wrote which that evening, and Hamilton has number 1, then 6 thr
 
 The second essay is due six days after the first, so she is still thinking about the first one when she has to start it.
 
-In the second week of October she decides to write one that is good, so she builds the outline first, though outlines have always been for other people, and this one still gets her the same ten pages out the other end. She writes the last page first, then the middle, then splits it across four sittings, and she writes one twice from scratch, closing the first draft away before starting the second, and she takes a position she disagrees with and writes it straight, and that one comes back worse than the others.
+In the second week of October she decides she is going to write one that is good, so she builds the outline first, though outlines have always been for other people, and this one still gets her the same ten pages out the other end. She writes the last page first, then the middle, then splits it across four sittings, and she writes one twice from scratch, closing the first draft away before starting the second, and she takes a position she disagrees with and writes it straight, and that one comes back worse than the others.
 
 In November Hearn tells her the third page of one is doing the work of the first six, and to go and look at what the first six are for, advice that she reads four times on the stairs, and every essay she writes for the next month has a good third page in it, but the other nine pages are still there.
 
@@ -32,7 +32,7 @@ In November Hearn tells her the third page of one is doing the work of the first
 
 Self defense starts in September, an hour a day, every day; the sheet says it runs to the end.
 
-The first term is ones: stance, breakfalls, getting up off the floor with somebody's hand on your collarbone, and forty minutes at a stretch of one person in front of you doing one thing slowly and then slightly faster. Kowalczyk tells her in October that she is planting her back foot before she knows where she is going, and that she needs to stop deciding so early, and in November it goes to twos.
+The first term is ones: standing, falling, getting up off the floor with somebody's hand on your collarbone, and forty minutes at a stretch of one person in front of you doing one thing slowly and then the same thing slightly faster. Kowalczyk tells her in October that she is planting her back foot before she knows where she is going, and that she needs to stop deciding so early, and in November it goes to twos.
 
 The 10v1 starts in January.
 
@@ -46,19 +46,21 @@ The 10v1 starts in January.
 
 "Because you'll be tired before they are, and because ten is the shape of every long fight there is." She sets the clock. "A hundred on one is a 10v1 that goes on longer, and everything in the hundred is already there in the ten, so if you can hold a minute against ten you've got five capable ones left, and five is a fight you can have."
 
-The best anyone in the room manages all afternoon is nine seconds, and Chloe gets four on her first go, then six on her third, after which the four of them sit on the floor in the corridor outside, Ruth flat on her back with one arm over her eyes, Sam with a bloody nose from somebody's elbow.
+The best anyone in the room manages all afternoon is nine seconds, and Chloe gets four on her first go, then six on her third, after which the four of them sit on the floor in the corridor outside, Ruth flat on her back with one arm over her eyes, Sam with a bloody nose from an elbow that got away from somebody.
 
 "Four."
 
 "Four's fine, everybody in this corridor is on four right now, that's the whole afternoon's number."
 
-"She said a minute, and four seconds comes nowhere close to one."
+"She said a minute, and four seconds comes nowhere close to a minute."
 
 "She says a lot of things," Sam says, into his sleeve.
 
 "A minute's the whole fight," Ruth says, arm still over her eyes, "and four's just where you ran out first."
 
-By March most of the year is in the six-to-ten range on a good day, while Sam gets fourteen seconds in February, a mark that stands alone for the rest of the year, and Chloe is on eleven seconds by June, two of them wasted.
+By March most of the year is in the six-to-ten range on a good day, while Sam gets fourteen seconds in February, a mark that stands alone for the rest of the year, and Chloe is on eleven seconds by June, and two of them she wasted.
+
+Swimming gets harder and the teacher says so in the first week. Some of it is in clothes and some of it is in cold water, and in the third term some of it is towing somebody who fights you the whole way, all of it in how you hold their head.
 
 Paintball joins the afternoon block in October, and Bell hands the markers out, says it is the same thing they have been doing with darts, a bit harder, and sets the drill running.
 
@@ -66,15 +68,15 @@ For two weeks everybody is bad at it and knows why, because the ball goes four t
 
 "I'm watching it the whole way," Ruth says on the second Thursday, sitting on the floor with her back against the wall bars. "I can see it leave, I see the whole thing happen, and my hand's still behind it every single time."
 
-"Everybody's behind it, you're doing the same as the rest of us, we're all watching it come and then trying to get a hand there and by the time we-"
+"Everybody's behind it, you're not doing anything different from the rest of us, we're all watching it come and then trying to get a hand there and by the time we-"
 
 Chloe stops. "Wait, that's it, that's the whole problem, we're reacting."
 
 "What, what are you talking about?"
 
-"We're all reacting and you can't react to it, there isn't time to react to it, you have to already be there." She is up on her knees with both hands out. "If you're standing behind someone holding a hose, you watch where the hose is pointing before anything comes out of it, rather than watching the water. It's the same barrel, Ruth, pointed at where the ball's going before the ball goes anywhere, and everyone's shooting at the same speed. Watch the barrel and the feet, and move before he shoots."
+"We're all reacting and you can't react to it, there isn't time to react to it, you have to already be there." She is up on her knees with both hands out. "If you're standing behind someone holding a hose, you don't watch the water. You watch where the hose is pointing before anything comes out of it. It's the same barrel, Ruth, pointed at where the ball's going before the ball goes anywhere, and everyone's shooting at the same speed. Watch the barrel and the feet, and move before he shoots."
 
-"That's not what she told us in the briefing, none of this was in there."
+"That's not what she told us in the briefing, none of this was in the briefing."
 
 "She told us none of this, we worked it out ourselves, just now, standing here."
 
@@ -84,9 +86,9 @@ By the end of the hour they have eleven between them and everybody else on the f
 
 People start asking on the Friday, and Ruth says she has been practising while Chloe shrugs and changes the subject, so that by the following week there are two theories going round about the markers being different weights.
 
-Kavi gets it on his own in the second week of November, when his number goes from three to ten inside one hour, and he walks straight out, past everybody, eyes on the door, and keeps it to himself, and she leaves him to it. Nadia has it by the end of the month, Priya gets it out of Ruth in a corridor in about ninety seconds, and by Christmas most of the year is past where they ever were with darts.
+Kavi gets it on his own in the second week of November, when his number goes from three to ten inside one hour that afternoon, and he walks straight out, past everybody, eyes on the door, and keeps it to himself, and she leaves him to it. Nadia has it by the end of the month off her own back, Priya gets it out of Ruth in a corridor in about ninety seconds, and by Christmas most of the year is past where they ever were with darts.
 
-In the second week of September a man from the office spends an hour on Defensive Watch, which everybody starts at ten, and although the sheet has been on the corkboard on the second floor since before Chloe got here and she stopped reading it somewhere around eight, he goes through it line by line anyway, the way the fire notice gets read out in the same hour every year.
+In the second week of September a man from the office spends an hour on Watch, which everybody starts at ten, and although the sheet has been on the corkboard on the second floor since before Chloe got here and she stopped reading it somewhere around eight, he goes through it line by line anyway, the way the fire notice gets gone through in the same hour every year.
 
 **DEFENSIVE WATCH, SCORING**
 
@@ -99,17 +101,17 @@ In the second week of September a man from the office spends an hour on Defensiv
 
 At the bottom, in the same typeface, without emphasis: *Response time is scored against the standard. The standard is posted weekly.*
 
-Then he goes through what a drill can be: people over the fence at the loading dock, people already inside when it starts because somebody let them in on the Tuesday without a second look, a van at the front with paperwork and a name on the side, the fire alarm going and being itself the drill, and two adults in ordinary coats who walk in the front door at four in the afternoon looking exactly like themselves.
+Then he goes through what a drill can be: people over the fence at the loading side, people already inside when it starts because somebody let them in on the Tuesday without a second look, a van at the front with paperwork and a name on the side, the fire alarm going, itself the drill, and two adults in ordinary coats who walk in the front door at four in the afternoon looking exactly like themselves.
 
-Most of them are announced, in that a board says *Thursday, afternoon block* four days out and a dozen names go up with it, so everybody knows it is coming, and it is still hard. Some are at night and those go on the board too, while every few weeks there is one sprung with no warning at all, at eleven in the morning or in the middle of lunch, and people count the weeks.
+Most of them are announced, with a board that says *Thursday, afternoon block* four days out and a dozen names going up with it, and everybody knows it is coming, but it is still hard. Some are at night and those go on the board too, while every few weeks there is one sprung with no warning at all, at eleven in the morning or in the middle of lunch, and people count the weeks.
 
 Her first one is on the board on the Monday and happens on the Thursday, when four adults come over the north fence with a bag between them and are inside Building Two in under two minutes, and one of the twelve is off her feet before she turns around. Two more go down at the stairwell, and a boy called Wes answers a question about how many of them there are, and the drill is called at eleven minutes.
 
 The sheet goes up on the Friday, and all twelve names have an F next to them with nine numbered things underneath.
 
-She reads it in the corridor with about fifteen people waiting behind her for a turn, and number one is response time, number two is that a student answered a question about how many of them there are, and number three is that four adults entered a building. Number six says the north stairwell was uncovered for six minutes, and Chloe, who stood there the whole time, is still working out what covering it would even have looked like.
+She reads it in the corridor with about fifteen people behind her waiting for a turn at it. Number one is response time, number two is that a student answered a question about how many of them there are, and number three is that four adults entered a building. Number six says the north stairwell was uncovered for six minutes, and Chloe, who stood there the whole time, is still working out what covering it would even have looked like.
 
-She goes back after dinner when the corridor is empty and reads it twice more, and Ruth comes and stands next to her at about nine and reads it all the way to the bottom in silence, arms crossed.
+She goes back after dinner when the corridor is empty and reads it again, and then she reads it a third time. Ruth comes and stands next to her at about nine and reads it all the way to the bottom in silence, arms crossed.
 
 "Six is me," Chloe says, "there's no other name that number could be pointing at."
 
@@ -121,7 +123,7 @@ She goes back after dinner when the corridor is empty and reads it twice more, a
 
 Russian starts in September, and two months in she has enough of it to argue in, while Ruth is on Arabic. By the middle of the term the two of them are running insults across the dinner table in two languages, and Kavi complains about it in a third, and Sam asks them to do it in English so he can join in and neither of them will.
 
-Music runs both ways at once, half the hour by ear and half notation, with the same instructor teaching both, sliding from one to the other and leaving you to work out which you're doing. She is a mediocre player of everything they put in front of her, but in the third week he plays eight bars and she gets the whole of it while the girl next to her gets four notes, so she keeps the block all year and puts her name down for it again in June, while algebra starts in mathematics in the second week, in the slot where the mathematics already was.
+Music runs both ways at once. Half the hour is by ear and half is notation, with the same man teaching both, sliding from one to the other and leaving you to work out which you're doing. She is a mediocre player of everything they put in front of her, but in the third week he plays eight bars and she gets the whole of it while the girl next to her gets four notes, so she keeps the block all year and puts her name down for it again in June. Algebra starts in mathematics in the second week, on the sheet, in the slot where the mathematics already was.
 
 ---
 
@@ -143,9 +145,9 @@ Her father asks at Thanksgiving what she has been writing about, and she says ta
 
 "I said you look at whether you could rebuild it in a war and how long it'd take." She takes a roll and puts it down again. "It's what I had, and it's thin, I know it's thin, but it was Tuesday and I had to put something down on the page."
 
-"No, that's something, that's actually most of an argument." He turns round in his chair properly. "What happens if it's five years and the war's two?"
+"No, that's not nothing, that's actually most of an argument." He turns round in his chair properly. "What happens if it's five years and the war's two?"
 
-"Then having the answer is useless to you either way, since you're already too late."
+"Then having the answer doesn't help you at all, does it, since you're already too late either way."
 
 "Yeah, that's exactly it." He points the fork at her. "That's the b-"
 
@@ -153,7 +155,11 @@ Her mother comes through with the pie and everybody moves their arms, while her 
 
 ---
 
-In December Hearn hands one back with no note on it at all, and she turns it over twice on the way out, in case the note went on the back of the last page, but there is a mark at the top with the space under it left empty and the page clean all the way down. She would rather have had three lines telling her it was bad. Three lines she could argue with. A mark with no line under it leaves her only her own doubt to argue against, and that's the harder version of being told she's wrong.
+In December Hearn hands one back with no note on it at all.
+
+She turns it over twice on the way out into the corridor, in case the note went on the back of the last page. There is a mark at the top and nothing under it, but the page is clean all the way down. She would rather have had three lines telling her it was bad. Three lines she could argue with. A mark with no line under it leaves her only her own doubt to argue against, and that's the harder version of being told she's wrong.
+
+Theo gets one back with no note the same week, but he puts it straight into his bag and goes on with what he was saying.
 
 She writes four more before the break, but they are the same essays they have been since October. A plateau and a beginning look exactly alike from inside the same week; only which way the next one goes tells you which one you were in. The last one is on whether a promise made under a threat counts, a question that Hearn's note calls good before asking where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 again on the floor of the spare room with the door shut, and her grandmother finds her there on the second afternoon and leaves the papers exactly where they are.
 
@@ -163,15 +169,15 @@ She writes four more before the break, but they are the same essays they have be
 
 "Your mother did exactly that, floor, back against the bed, papers everywhere, and if I moved one of them she could tell." Her grandmother puts a plate down on the carpet inside the doorway and leaves it there. "Four o'clock, because I'm doing the ham at four and you're carrying it."
 
-The Tuesday is in the second week of February, and she sits down at seven with a question about whether an unenforced rule is still a rule, with the shape of it already there before she has written a word, and the shape has a place in it where she is going to be wrong, and she writes toward that place instead of round it. She finishes at nine, and there is an hour before lights out, which she spends on a book she picked herself.
+The Tuesday is in the second week of February, and she sits down at seven with a question about whether an unenforced rule is still a rule, and she has the shape of it before she has written a word, and the shape has a place in it where she is going to be wrong, and she writes toward that place instead of round it. She finishes at nine, and there is an hour before lights out, which she spends on a book she picked herself.
 
-She reads it back on the Wednesday morning before she hands it in, sitting on the floor outside the room with eleven minutes to go, and leaves it as it is.
+She reads it back on the Wednesday morning before she hands it in, sitting on the floor outside the room with eleven minutes to go, and leaves it exactly as it is.
 
-Hearn gives it back on the Monday with four lines at the bottom, two about a thing she got wrong on page six and two about what to read next.
+Hearn gives it back on the Monday with four lines at the bottom, two of which are about a thing she got wrong on page six and the other two about what to read next.
 
 She does the same thing the following week and it takes her about two and a half hours, and the week after that it takes nearly four, because the question is harder and she spends most of a night stuck, but this time all ten pages do what only the third one used to. By March she has stopped counting the hours, and Hearn moves her onto Burke, who is harder to argue with than Hamilton and who she goes at for the rest of the year.
 
-In April Sam asks her at dinner whether Hearn has got easier, and she says no, then turns her fork over once before answering. "He hasn't changed one single thing about any of it, same length, same week, same handwriting at the bottom."
+In April Sam asks her at dinner whether Hearn has got easier, and she says no, then turns her fork over once before answering. "He hasn't changed one single thing about any of it. Same length, same week, same handwriting at the bottom."
 
 "Then how come you're not miserable about it any more?"
 

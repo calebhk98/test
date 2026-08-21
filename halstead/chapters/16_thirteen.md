@@ -8,7 +8,9 @@ Teaching starts at thirteen and you take the year below, so her cohort, being th
 
 Six of the seven are straightforward: Ivy and Tomas want the answer handed over, though they can be talked out of it inside a month, Beatriz arrives already knowing most of the material and so takes eleven minutes of the hour and uses them well, two more turn up, work, leave. The sixth cries in October over something with no bearing on mathematics, so Chloe sits on the floor with him for forty minutes while he gets out a handful of words, then goes to dinner and comes back the following Thursday fine.
 
-Marek is the seventh, and he attends every session and reads everything she gives him, but the sheet comes back blank week after week. In the fourth week she puts up a problem saved for the end of term, then turns round from writing it to find he has the answer out before the chalk is back on the ledge.
+Marek's sheet comes back blank, week after week.
+
+He is at every session and he reads everything she gives him, so in the fourth week she puts up a problem saved for the end of term, then turns round from writing it to find he has the answer out before the chalk is back on the ledge.
 
 "Then hand the sheet in."
 
@@ -36,7 +38,7 @@ In January she gives him a problem out of the following year's material, one he 
 
 Chloe puts the chalk down harder than she means to, and he waits by the door until she says fine, then goes.
 
-In February she offers to read the 1981 paper and mark him on that, and he says no, politely, at once, which is fair given that she is a year older and has yet to open it. In March she asks what would make him hand something in, and he thinks about it for ten seconds.
+In February she offers to read the 1981 paper and mark him on that, and he says no, politely, at once, since she is a year older and has yet to open it. In March she asks what would make him hand something in, and he thinks about it for ten seconds.
 
 "Nothing would," he says. "A mark on a sheet stays exactly as true whether it's written down or not, and the work is just as real whether I hand in a page or leave it blank."
 
@@ -96,7 +98,7 @@ Kavi has the first version running by the end of the month on the school's own m
 
 "I read three of those before I started, and about half of what's in here came straight back out of them." Ruth has the listing spread across two chairs, because it will not sit on one. "What a library can't give me is a key only this table has ever had, because a library is a thing everybody else in the world has a copy of too."
 
-Chloe breaks it in nine days, and what breaks is the traffic rather than the encryption, which holds: the school's network records which machine talked to which and when, the way it does for every service in the building, regardless of what any of them are for.
+Chloe breaks it in nine days, and the encryption holds the whole way: what she gets instead is that the school's network records which machine talked to which and when, the way it does for every service in the building, regardless of what any of them are for.
 
 "Every word in there is sealed, which is completely true, and it's still finished." She puts the log on the table between them, folded to the one column that matters. "Knowing what we said is beside her point, because what she wants is that this table said something to each other at eleven on Thursday and then went missing off breakfast on Saturday."
 
@@ -104,7 +106,7 @@ Ruth reads the column with her chin on her fist. "So it has to look like somethi
 
 "It has to look like what this network is already full of, which is a hundred and forty machines checking in with each other about the weather every few minutes."
 
-That takes the rest of the term, and what comes out is slow and ugly and pushes exactly as much traffic at four on a Sunday morning, with all of them asleep, as on a Thursday night with all of them typing. Amberg could take it apart in an afternoon, which is why they leave him out of it. They are on the eight o'clock bus the first Saturday in December, and it goes into town with all of them on it.
+That takes the rest of the term, and what comes out is slow and ugly and pushes exactly as much traffic at four on a Sunday morning, with all of them asleep, as on a Thursday night with all of them typing. Amberg could take it apart in an afternoon, and not one of them asks him to. They are on the eight o'clock bus the first Saturday in December, and it goes into town with all of them on it.
 
 Formal epistemology starts with one sentence on the board, *I know that I am sitting in this room*, and the professor spends the hour asking what would have to be true for that to count as knowledge, so by the end most of the room doubts it knows anything at all. "Justified plus true still lets a lucky guess through," she says, moving to the next slide before anyone has finished writing it down, and Chloe stands in the corridor afterwards for a minute with her bag still open before she goes on to German.
 
@@ -140,7 +142,7 @@ Eli puts a cipher on the table one Thursday, between the salt and the water jug,
 
 "A parking system, live, protecting somebody's actual licence plates right now."
 
-Kavi takes it off him inside a minute, offhand about it, and slides it to Chloe, while Ruth reads it upside down and says the key is a date, probably in March. Priya wants to know whether they are allowed to be holding it at all, which starts a second argument, and Odile says the interesting question is why a parking company bought that and what the salesman told them, which starts a third.
+Kavi takes it off him inside a minute, offhand about it, and slides it to Chloe, while Ruth reads it upside down and says the key is a date, probably in March. Priya wants to know whether they are allowed to be holding it at all, which starts a second argument, and Odile says the interesting question is why a parking company bought that and what the salesman told them, which starts a third. Sam eats a second dinner through the whole of it and contributes twice.
 
 Nadia turns the napkin round toward Chloe with one finger.
 
@@ -148,7 +150,11 @@ Nadia turns the napkin round toward Chloe with one finger.
 
 "It could be a date, since dates have letters in them too, sometimes."
 
-"It's got a letter in the middle of it, and you already know what that means." Nadia keeps her finger on the napkin while Chloe says she has no idea yet, and answers that by pointing out that Chloe always goes quiet like this right before she has got something.
+"It's got a letter in the middle of it, and you already know what that means." Nadia keeps her finger on the napkin.
+
+"I've got no idea yet, and I won't have until I look at it properly."
+
+"You do, though, because you always go quiet like this right before you've got something."
 
 "I haven't, not yet, so give me another minute with it."
 

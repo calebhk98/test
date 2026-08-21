@@ -2,11 +2,13 @@
 
 *September 2019 – April 2020*
 
-Marksmanship replaces archery in September, and Voss gives them three weeks of dry drill before anything gets loaded: nine weapons go on a table and they learn to name every one of them off the silhouette from across the room, then strip and reassemble four of them by feel with a cloth laid over their hands, and then do it that way again while Voss stands behind them reading questions off a clipboard and timing the answers. Chloe fumbles the bolt release for two weeks, until in the third week her hand finds it on its own while she is looking at the far wall, which is the whole reason for the cloth.
+Marksmanship replaces archery in September, and Voss gives them three weeks of dry drill before anything gets loaded: nine weapons go on a table and they learn to name every one of them off the silhouette from across the room, then strip and reassemble four of them by feel with a cloth laid over their hands, and then do it that way again while Voss stands behind them reading questions off a clipboard and timing the answers. Chloe fumbles the bolt release for two weeks, until in the third week her hand finds it on its own while she is looking at the far wall.
 
 Live fire starts in October at fifty metres, prone, unsupported, on paper, and it is the same shape as everything they have been handed since she was eight: an easy version of a thing, then a harder one, then the version that is worth turning up for.
 
-Keeping the rifle up, Sam asks how long it takes this bit to get boring, and Kavi, on the next mat with his chin on his forearms and his eyes on the flag, gives him six weeks. "It was six on the nerf and six on the paint, so six, and then they hang it off something, then they make it move, then we get the good one."
+Keeping the rifle up, Sam asks, "How long till this bit's boring?"
+
+"Six weeks." Kavi is on the next mat with his chin on his forearms, watching the flag. "It was six on the nerf and six on the paint, so six, and then they hang it off something, then they make it move, then we get the good one."
 
 "Six is generous," Sam says, "because Ruth's already bored and she always keeps that to herself."
 
@@ -32,7 +34,9 @@ A different card is taped to the bench two days later with a different number on
 
 "Right, but the arrow was two people, and the arrow only worked because, one, it hangs at the top, so if you're late it hasn't gone anywhere, and two, you're both running off the same count, so if you're late you're late together," he says, shifting the kit to the other hip while he keeps walking backward. "A bullet gives you neither of those, so there's a version of this coming that fixes both at once, and I want to know what it is by March."
 
-Chloe says they might leave it at clays and leave it there for good, and Kavi shakes his head. "Nah, it escalates every year, it always has."
+"They might leave it at clays and leave it there for good."
+
+Kavi shakes his head. "Nah, it escalates every year, it always has."
 
 ---
 
@@ -54,13 +58,15 @@ Seven thirteen-year-olds go on her teaching list in September while Marek goes o
 
 She goes through the seven papers twice before she goes back to her own notes from the third week, and there it is in her own handwriting: she taught them the ordering reversed, all seven learned it the way she gave it to them, and all seven arrived at the same wrong place, and because everything before the test came out the same either way round, it sat there for two months.
 
-"Does the test count, though, if all seven of us got the same thing wrong?" Halide says, and somebody behind her adds that this means the seven of them are not actually bad at it.
+"Does the test count?" Halide says.
+
+"So we're not actually bad at it," somebody says.
 
 "No," Chloe says, wiping the board down with her back to them, and she stops halfway across it and turns round. "Your answers all follow from what I taught you, and what I taught you was wrong. You'll get a different one in two weeks and it'll be harder, because by then you'll actually have it."
 
-Because the writing system does half the work of the vocabulary, Japanese moves faster at the front than she expects, so that by the end of the fourth week she is further along than she has ever been at the same point in a language, and on a Wednesday afternoon she digs out her own notes on Russian and on Mandarin to check whether that is true, and it is. The kanji arrive with most of their meaning already on them, but then the grammar starts, and the grammar is unlike anything behind her on the list, so by November she is putting forty minutes a night into it and moving slowly, and she is still ahead of where Mandarin had her at the same point.
+Japanese moves faster at the front than she expects, so that by the end of the fourth week she is further along than she has ever been at the same point in a language, and on a Wednesday afternoon she digs out her own notes on Russian and on Mandarin to check whether that is true, and it is. The kanji arrive with most of their meaning already on them, but then the grammar starts, and the grammar is unlike anything behind her on the list, so by November she is putting forty minutes a night into it and moving slowly, and she is still ahead of where Mandarin had her at the same point.
 
-Abstract algebra arrives with probability beside it, contracts spends a term on what a sentence actually obliges a person to do and what it merely encourages, and logistics spends four weeks on how many trucks there are, where the drivers sleep, and who pays for the diesel. Because it is the one subject on the sheet where the evidence runs out before the argument does, she sits through comparative religion mostly listening, and comes out of it with about four opinions and no way to test any of them.
+Abstract algebra arrives with probability beside it, contracts spends a term on what a sentence actually obliges a person to do and what it merely encourages, and logistics spends four weeks on how many trucks there are, where the drivers sleep, and who pays for the diesel. She sits through comparative religion mostly listening, and comes out of it with about four opinions and no way to test any of them.
 
 Engineering and design works the other way round from wood shop and the forge, where she makes the thing herself, because here she writes down what it has to do and hands the paper to a stranger, so when she writes a two-page specification for a clamp in November and a boy called Dov builds it off the paper, what he hands back closes on the wrong axis.
 
@@ -92,7 +98,7 @@ Ruth plays it eleven more times, and then at about one in the morning she sits u
 
 "I've been cutting that off since Tuesday, thinking it was empty space worth losing."
 
-Down at the materials lab she spends the autumn on a run of fracture tests that keep coming out inconsistent, and after five weeks she has it: samples cut on the Friday saw come out three degrees off square, samples cut on the Tuesday saw come out true, and the log lists the date and the operator while leaving out the saw. Her name goes into the acknowledgments of the write-up in March, at the end of a list of five, on a paper that stays inside the department, and Sanders tells her about it in the corridor on his way somewhere else, still walking, though she stands there with her bag half off her shoulder before she goes on to Japanese, and she reads the whole paper that night and finds the two tables that came out of her weeks.
+Down at the materials lab she spends the autumn on a run of fracture tests that keep coming out inconsistent, and after five weeks she has it: samples cut on the Friday saw come out three degrees off square, samples cut on the Tuesday saw come out true, and the log lists the date and the operator while leaving out the saw. Her name goes into the acknowledgments of the write-up in March, at the end of a list of five, on a paper that stays inside the department. Sanders tells her about it in the corridor on his way somewhere else, still walking, and she stands there with her bag half off her shoulder before she goes on to Japanese, then reads the whole paper that night and finds the two tables that came out of her weeks.
 
 Sam is six foot two by September, when Ruth stands next to him at breakfast in the first week and tips her head back to find his face.
 
@@ -104,7 +110,7 @@ Sam is six foot two by September, when Ruth stands next to him at breakfast in t
 
 Priya makes him stand against the door frame in the corridor and marks it in pencil above the mark from June, a visiting inspector asks him in October whether he teaches here, and he goes through two sets of kit before Christmas and a third in March, of which the third is the one that fits. Fencing goes to both hands in the same term, so her left is roughly where her right was at eleven, half a beat late onto everything she can already see coming.
 
-The forge stays where it has been, and she finishes a set of three hinges in November that have taken her three Sundays of filing and fitting, holds one up to the window and turns it with her thumb working along the seam where the two edges meet slightly off, then drops all three in the scrap bin on her way past, while Pruitt, at the far bench with two others, keeps talking with his back to her.
+The forge stays where it has been, and she finishes a set of three hinges in November that have taken her three Sundays of filing and fitting. She holds one up to the window and turns it with her thumb working along the seam where the two edges meet slightly off, then drops all three in the scrap bin on her way past, while Pruitt, at the far bench with two others, keeps talking with his back to her.
 
 ---
 
