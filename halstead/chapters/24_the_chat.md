@@ -541,12 +541,48 @@ nadia: i took it every day for two weeks, it doesnt just stop existing
 kavi: ill ask
 
 
+chloe: ask for the makeup while youre there
+
+
+kavi: the makeup
+
+
+chloe: whats in it and how much of each. if theyll put that on a page ill make it myself, its a pill, its not a moon landing
+
+
+nadia: how long would that take you
+
+
+chloe: depends what the hard step is. a week if its ugly
+
+
+nadia: fine. get the page kavi
+
+
 ________________
 
 
 
 
-Four days pass before Kavi comes back with anything. When he does, he says he asked and was told it's internal. Internal how, Chloe asks. That's the word they used, is all Kavi has for her.
+Four days pass before Kavi comes back with anything. When he does, he says he asked and was told it's internal. Internal how, Chloe asks. That's the word they used, is all Kavi has for her. He asked about the formulation too, and got the same word for that.
+
+
+chloe: thats not a reason thats a category
+
+
+kavi: i know
+
+
+chloe: im not asking for the process im asking whats in it. thats on the side of every box in every pharmacy in the country
+
+
+kavi: i know that too. i asked twice
+
+
+chloe: fine
+
+
+Chloe leaves it. There is a version of the afternoon where she keeps pulling at it, and she can feel the shape of that version while she types the last message, and she goes and does her reading instead. Nobody in the chat says anything about a nineteen-year-old offering to synthesise a drug over a week because the pharmacy could not supply it. It sits in the log between the question about the hard step and Kavi asking twice, and the next thing anybody types is about something else.
 
 
 The lock they built at thirteen to get past a teacher is still the only thing standing between this chat and anyone outside it, the same lock five years running, untouched and unreplaced. Whatever internal means, it's a wall each of them keeps running into.

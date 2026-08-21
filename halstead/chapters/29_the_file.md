@@ -113,7 +113,7 @@ He read the grade sheet on the board like everyone else, harsh, he'd thought at 
 He puts his hand over his mouth and sits like that.
 
 
-The man in the next cubicle leans around the partition and asks if he's all right. Theo says he's fine, takes his hand down, and picks the folder back up, because leaving it open on the desk is worse than finishing it.
+The man in the next cubicle leans around the partition. "You good over there?" "Fine," Theo says, and takes his hand down. He picks the folder back up, because leaving it open on the desk is worse than finishing it.
 
 
 ________________
@@ -124,10 +124,10 @@ ________________
 He sits with it for two days.
 
 
-At his desk it's the same job as any other day: twenty pages reduced to two, sent up, sent back with three questions in his supervisor's handwriting, answered and sent up again. She stops at his desk mid-morning, coffee in hand, and asks how the retirement box is coming along. Theo tells her most of it is dead weight, which is true, and that one folder needs another day, which is also true, and she takes both answers as complete and moves on down the row. At home the first night he opens the school's own website on his personal laptop and reads it front to back the way he'd read any other piece of open-source material, checking for anything that squares with what's in the file. It says what it has always said: three sentences, a photograph of a building he's stood inside a thousand times, an admissions portal, the same page it would have been the day before any of this. He closes the laptop with both hands the way he closes it when he needs to stop looking at something.
+At his desk it's the same job as any other day: twenty pages reduced to two, sent up, sent back with three questions in his supervisor's handwriting, answered and sent up again. She stops at his desk mid-morning, coffee in hand. "How's the retirement box coming along?" she asks. "Most of it's dead weight," Theo says. "One folder's going to need another day." Both answers are true, and she takes them as complete and moves on down the row. At home the first night he opens the school's own website on his personal laptop and reads it front to back the way he'd read any other piece of open-source material, checking for anything that squares with what's in the file. It says what it has always said: three sentences, a photograph of a building he's stood inside a thousand times, an admissions portal, the same page it would have been the day before any of this. He closes the laptop with both hands the way he closes it when he needs to stop looking at something.
 
 
-The second day he clears his queue faster than usual, four cables done by ten, because working through something else keeps the loading-dock report from filling every part of his head at once. That second night is the night he always calls his grandmother, the same twenty minutes as any other week: the ferry schedule, a neighbor's new dog, ordinary house news that keeps the whole call on solid ground.
+The second day he clears his queue faster than usual, four cables done by ten, because working through something else keeps the loading-dock report from filling every part of his head at once. That second night is the night he always calls his grandmother, the same twenty minutes as any other week. "The ferry's back on the summer schedule," she tells him. "And the Hendersons have got a dog now, a little thing that barks at the mailman like it means it." He asks about the dog longer than the dog probably warrants, and neither of them brings up anything that happened at his desk that week, the same ordinary house news keeping the whole call on solid ground.
 
 
 Then he does the only thing available to him, which is nothing, because every page of it is stamped classified, and the line between what he can say and what he can't is not his to redraw.

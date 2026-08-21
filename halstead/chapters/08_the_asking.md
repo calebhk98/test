@@ -4,7 +4,7 @@
 
 Ms. Vance calls the house on the Friday, which Chloe hears from the stairs, though most of it is her mom listening and saying she knows, four times in a row, to four separate things Chloe can't make out from where she is sitting.
 
-"No, I appreciate you calling, because most people wouldn't have." Her mom is winding the phone cord around two fingers. "She's been like this since August. It isn't you and it isn't anything in your room, she was fine in July and then school started."
+"No, I appreciate you calling, because most people wouldn't have." Her mom is winding the phone cord around two fingers. "She's been like this since August, and it's about her, not about you or the house, she was completely fine in July and then school started."
 
 Chloe goes back up before the call is finished.
 
@@ -12,11 +12,11 @@ The appointment is the following Wednesday, for which her mom takes the whole af
 
 "So tell me what's going on, and start wherever you like."
 
-"She's not eating," her mom says, both hands flat on her own knees, and she has the whole list ready in order, each item already decided before she walked in. "She's sleeping eleven hours a night and she's still tired all day. She used to read constantly, four books a week since she was five, and there's a stack of them by her bed she hasn't touched since August. She sits in her room with the light off and doesn't turn it on. When I ask her what she's doing she says nothing, and I think that's the true answer." She stops there, and her hands come apart, one of them smoothing a crease out of her skirt that isn't there.
+"She's not eating, and she's sleeping eleven hours a night and still tired all day," her mom says, both hands flat on her own knees, and she has the whole list ready in order, each item already decided before she walked in. "She used to read constantly, four books a week since she was five, and there's a stack of them by her bed she hasn't touched since August. She sits in her room with the light off and doesn't turn it on. When I ask her what she's doing she says nothing, and I think that's the true answer." She stops there, and her hands come apart, one of them smoothing a crease out of her skirt that isn't there.
 
-"Chloe, is that right?"
+"Chloe, is that right, is that how it's actually been?"
 
-"I guess so," Chloe says to the arm of the couch instead of to either of them.
+"I guess so. I'm not really the one keeping track of the days like she is," Chloe says to the arm of the couch instead of to either of them.
 
 "When did it start, roughly?"
 
@@ -24,7 +24,7 @@ The appointment is the following Wednesday, for which her mom takes the whole af
 
 Dr. Ammons writes a line before she asks the next one, and she asks it in exactly the same voice she asked the first one.
 
-"And before that?"
+"And before that, before August, what was she like?"
 
 "She was at a summer program in July, four weeks, away from home." Her mom stops there, her hands going still in her lap. "She was the happiest I have ever seen her, in her life, and I mean that literally."
 
@@ -36,9 +36,9 @@ She asks a lot after that and she asks all of it carefully, working down through
 
 All the questions go to her mother. Chloe sits through it, her thread-picking gone still somewhere around the one about whether the same adults were there the whole time.
 
-"Nothing happened, she absolutely loved it."
+"Everything about it was good, she absolutely loved every single day of it."
 
-"I'm sure she did, but I'm asking anyway."
+"I'm sure she did, but I'm asking anyway, because loving a place and something happening there can both be true at once."
 
 "She's been asking to go back since the day we picked her up, most days more than once." Her mom shifts in the chair. "She asked me in the parking lot outside this building, about nine minutes ago."
 
@@ -54,13 +54,13 @@ In the car her mom holds the wheel with both hands, the engine off.
 
 "What did she say about me?"
 
-"She said you're depressed. That's a real thing, it has a name, and it isn't something you did." Her mom is looking out the windshield at the wall of the building. "It means you're sad for a long time and it doesn't go away on its own, so somebody helps you with it."
+"She said you're depressed, and that's a real thing, it has a name, and it isn't something you did." Her mom is looking out the windshield at the wall of the building. "It means you're sad for a long time and it doesn't go away on its own, so somebody helps you with it."
 
-"How do they help you with it?"
+"How do they help you with it, though? What does that actually look like, week to week?"
 
 "You'd go and talk to her every couple of weeks, and she'd talk to us as well, and then the three of us would sit down and see how it was going." Her mom puts the key in and leaves it there. "She wants to see you again in three weeks, and I said I'd ask you first, so is that all right with you?"
 
-"Okay," Chloe says, and then the wall of the building slides sideways past her window. "So can I go to Halstead?"
+"Okay, whatever you think is best," Chloe says, and then the wall of the building slides sideways past her window. "So can I go to Halstead, then, since we're already talking about it?"
 
 Her mother puts her forehead on the steering wheel and stays there.
 
@@ -70,15 +70,15 @@ Chloe gets it in pieces. Her mom at the counter saying the words in writing twic
 
 "That sounds all right, then, that sounds like the thing we were after in the first place."
 
-"It's one hour. On a Thursday. With a woman who covers four buildings." Her mom has both hands on the back of a kitchen chair. "I asked what they actually do in the hour and she said enrichment. I asked her what that means and she told me how much Chloe would get out of it."
+"It's one hour, on a Thursday, with a woman who covers four different buildings in a week." Her mom has both hands on the back of a kitchen chair. "I asked what they actually do in the hour and she said enrichment. I asked her what that means and she told me how much Chloe would get out of it."
 
 "She might get something out of it, though, people do, and it isn't as though we're losing anything by it."
 
-"She might," her mom says, letting go of the chair and standing there with her hands empty. "It's still the only thing in that building that isn't the thing she's already sitting through, so I want her in it, whatever it turns out to be."
+"She might, there's really no way to know that ahead of time," her mom says, letting go of the chair and standing there with her hands empty. "It's still the only thing in that building that isn't the thing she's already sitting through, so I want her in it, whatever it turns out to be."
 
 Chloe comes down that night in her pajamas, because the word program has come up through the floor of her room twice in ten minutes.
 
-"Is that Halstead you're talking about?"
+"Is that Halstead you're talking about? Is it finally happening?"
 
 "No, honey, it's a thing at your school, on Thursdays, starting after the break."
 
@@ -92,7 +92,7 @@ Chloe barely sleeps that night, and gets up twice to check that the note about i
 
 There are nine kids and a cart with three shelves, a plastic bin of dice on the top of it, and a laminated sign on the side that says THINKING CORNER, which Mrs. Prahl wheels in at ten past one before spending ten minutes getting nine people out of four different classrooms and into chairs. She learns all nine names inside the first five minutes, after which she uses them, every time.
 
-"Okay. On this island there are two kinds of people and that's all there is. Knights always tell the truth, every single time, so they can't lie even if they want to. Knaves always lie, every single time, so they can't tell the truth even by accident." She holds the sheet up over her head so that the back row can see it too. "You meet two of them. Alan says, Bob is a knave. Bob says, neither of us is a knave. What are they?"
+"Okay, so on this island there are two kinds of people, and that's all there is: knights always tell the truth, every single time, so they can't lie even if they want to, and knaves always lie, every single time, so they can't tell the truth even by accident." She holds the sheet up over her head so that the back row can see it too. "You meet two of them, and Alan says Bob is a knave, while Bob says neither of them is a knave, so what are they?"
 
 Chloe has it before Mrs. Prahl has finished reading it out, so she waits, because you wait. A boy called Dev gets there about ninety seconds later, and he does it up on the board with arrows, and Mrs. Prahl makes a real thing out of it.
 
@@ -102,13 +102,19 @@ Then she waits.
 
 She keeps waiting for it to turn. At camp there was a point in every single thing where it stopped being easy, and you sat there with your ears going hot, and then either you got it or somebody did the rectangle again. She has been braced for that point for forty minutes now and it hasn't come, and the hour is nearly over.
 
-"When does it get harder?" she says, with her hand still half up.
+"When does it get harder, though? I keep waiting for the part where it gets hard," she says, with her hand still half up.
 
-"Let's not rush it, we've got all year." Mrs. Prahl smiles at her. "Take the rest of the packet home with you if you want to."
+"Let's not rush it, we've got all year to get all the way through this properly." Mrs. Prahl smiles at her. "Take the rest of the packet home with you if you want to."
 
 Chloe finishes the packet that night sitting up in bed with the lamp on, both sides of every page of it, in about forty minutes. Then it's Friday, and Saturday, and Sunday, and Monday, and Tuesday, and Wednesday.
 
-She asks in the car on the Monday and gets we're thinking about it. She asks on the Tuesday and gets the same words in the same order. On the Wednesday her mom says not now, Chloe.
+"Is it today, though? Can we call them today?" she asks in the car on the Monday.
+
+"We're still thinking about it, sweetheart."
+
+She asks the same thing on the Tuesday and gets the same words back, in the same order, as if her mom has them memorized too now.
+
+"Not now, Chloe," her mom says on the Wednesday, before she has gotten the question all the way out.
 
 The second Thursday is the same as the first one.
 
@@ -120,9 +126,9 @@ Her mom says put your jacket on and Chloe says no, and her mom says put it on, a
 
 "Chloe."
 
-"You do, you want me to stay here and be sad, because you could just say yes to Halstead. You could say it right now. It takes one second to say it and you won't say it."
+"You do, you want me to stay here and be sad, because you could just say yes to Halstead, you could say it right now, it takes one second to say it, and you won't say it."
 
-Her mom's hand goes flat on the counter. "It's not one second. I've thought about this longer than you know."
+Her mom's hand goes flat on the counter. "It's not one second, Chloe, I've thought about this a lot longer than you know."
 
 "You hate me, that's what it is, you actually hate me."
 
@@ -146,19 +152,19 @@ In December her mom comes up and sits down on the end of her bed. It's half past
 
 "I want you to help me understand something, and you can take as long as you want over it."
 
-"Okay," Chloe says, eyes on the wall.
+"Okay. I'll try, even if I'm not sure I have the right words for it," Chloe says, eyes on the wall.
 
-"What was different there? Not the fun parts, because I've heard all of the fun parts. What was actually different about it."
+"What was different there, not the fun parts, because I've already heard every single one of the fun parts, but what was actually different about it, underneath all that?"
 
 Chloe sits up and answers straight away, the answer already sitting in her mouth before the question finishes. It's one thing, and it's small.
 
 "Nobody was mean," she says.
 
-Her mom waits for the rest of it, sitting very still on the end of the bed, and there isn't any rest of it. There's a hallway with a brass plate on the last door that says PLUTO, and a boy honking with laughter about a room-shaped object, and standing there afterward with the hallway tile cold enough through her socks to notice, and being allowed to be wrong for a whole afternoon.
+Her mom waits for the rest of it, sitting very still on the end of the bed, and that's already the whole of it. There's a hallway with a brass plate on the last door that says PLUTO, and a boy honking with laughter about a room-shaped object, and standing there afterward with the hallway tile cold enough through her socks to notice, and being allowed to be wrong for a whole afternoon.
 
 "Nobody was mean to me," she says. "Not once, not ever, the whole time I was there."
 
-"Sweetheart," her mom says carefully, "is somebody bullying you at school?"
+"Sweetheart," her mom says carefully, "I need you to tell me the truth, is somebody bullying you at school?"
 
 "No," Chloe says, shaking her head against the pillow.
 
@@ -168,13 +174,13 @@ Her mom waits for the rest of it, sitting very still on the end of the bed, and 
 
 Her mom looks at her for long enough that Chloe starts to think of something else to say.
 
-"Okay," she says, and puts a hand flat on Chloe's back. "Okay, honey. You'll make friends this year, it takes time in a new grade, that's all this is."
+"Okay, honey," she says, and puts a hand flat on Chloe's back. "You'll make friends this year, it just takes time in a new grade, that's all this is."
 
 Chloe lies down again with her back to her mother and turns her face toward the wall, and after a while her mom gets up off the end of the bed.
 
 The bike has been in the garage since the first week of December, under a sheet, which Chloe knows about by the second week of December and keeps to herself, so that when her dad brings it in on Christmas morning with a bow already on the handlebars there are people standing around the front room in their coats watching her see it. She says thank you, hugs her dad, then hugs her mom for longer. Then she puts her coat on over her pajamas and rides it up and down outside the house while the two of them stand in the doorway in the cold.
 
-"She likes it," her dad says, from the doorway, with his arms folded up against the cold.
+"She likes it, look how fast she's already going out there," her dad says, from the doorway, with his arms folded up against the cold.
 
 "She does," her mom says. "She really does, look at her go."
 

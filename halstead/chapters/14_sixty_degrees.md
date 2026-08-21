@@ -14,7 +14,7 @@ Then Coach Bell puts a metronome on a post at the near end of the field.
 
 "That's fine, and you're still doing it my way." Bell keeps hold of the arrow while he says it. "You want to read a shoulder at seventy metres, do it on your own time with something that bounces. This is an arrow, and I want to know whether you think you can put one where you meant it every single time, all year, without one bad afternoon."
 
-"Right, then nothing gets pointed at a person."
+"Right, then nothing gets pointed at a person, not even by accident."
 
 He walks the archers down the field to show them the lanes. There are two firing lines, seventy metres apart, side by side, both facing the same way, north. Each lane bends in from north, toward the other, until the two meet at a point seventy metres out, where the angle between them holds at sixty degrees. That is where the flight paths cross, at the top of the arc, where an arrow released early from one line and an arrow released on time from the other can end up in the same patch of sky at the same instant. Whatever is left of them, whole or in pieces, keeps travelling and comes down together in open grass a hundred and fifty metres further on, where there is a rope and a sign, and the target block stays behind it all year.
 
@@ -36,7 +36,7 @@ Her release runs early when she is keyed up and late when her hands are cold, an
 
 "Yeah, it's early again, and I don't know by how much."
 
-"Mine's late. Mine's always late and it's late by the same amount, so I can take it off the count, except every time I take it off the count I'm early." Ruth is doing it against her own leg now. "Go on, do yours out loud and I'll count with you."
+"Mine's late, always late, by the same amount every time, so I can take it off the count, except every time I take it off the count I'm early." Ruth is doing it against her own leg now. "Go on, do yours out loud and I'll count with you."
 
 They stand in the corridor comparing counts for ten minutes, which makes them last into dinner, and by then there is no bread left and Sam has taken both their chairs.
 
@@ -56,25 +56,25 @@ On the first morning Ruth wants to know what everybody has got, and Chloe reads 
 
 "Latin, and before you say anything, I picked it."
 
-"Latin's cheating."
+"Latin's cheating, and you know exactly why."
 
 "How is doing a whole extra language cheating?"
 
-"Because it's already in everything." Ruth has her tray up on one arm and has stopped walking. "It's in half of Spanish and most of French and you've done both of those, so you're going to sit down in September already knowing about a third of it. That's not learning a language. That's collecting on one you did four years ago."
+"Because it's already in everything." Ruth has her tray up on one arm and has stopped walking. "It's in half of Spanish and most of French and you've done both of those, so you're going to sit down in September already knowing about a third of it. That's not learning a language, that's collecting on one you did four years ago."
 
 "That's the entire reason I took it, though."
 
-"That is what I said. Cheating."
+"That is what I said, and it's still cheating."
 
 "It's the opposite of cheating, it's the year paying for itself twice." Chloe has her tray on both hands like a person who intends to keep hold of it. "I've got German coming, and Italian's on the list, and half the words in a legal thing are Latin sitting there in the middle of an English sentence. One year now and I get bits of all of them for free."
 
-"You don't know you're doing German. Nobody's told you that."
+"You don't know you're doing German, nobody's told you that yet."
 
 "Nobody's told me I'm not, either."
 
-"Fine, then here's the actual problem with it." Ruth starts walking again. "I'm doing Arabic. There are four hundred million people in Arabic and every single one of them can tell me when I've got it wrong. Who corrects you? Everybody who could has been dead fifteen hundred years and none of them are going to sit up and say you've done the ending wrong."
+"Fine, then here's the actual problem with it." Ruth starts walking again. "I'm doing Arabic, and there are four hundred million people who speak it, every single one of whom can tell me when I've got it wrong. Who corrects you? Everybody who could has been dead fifteen hundred years and none of them are going to sit up and say you've done the ending wrong."
 
-"I don't need it to answer me back. I need to read what's already sitting in it."
+"I don't need it to answer me back, I need to read what's already sitting in it."
 
 "Then you're not learning a language, you're learning to read one."
 
@@ -86,13 +86,13 @@ Rhetoric is an hour a week of taking a speech apart to find the place where the 
 
 Art history is in the spring, and in February the teacher puts up a Dutch interior with a woman reading in it, then says what it went for at auction in 1959 and what the same picture went for in 1998\.
 
-"I don't get it," Chloe says to Kavi at dinner. "It's a picture. It's the same picture in both of those numbers. Nobody went and added anything to it in between."
+"I don't get it," Chloe says to Kavi at dinner. "It's a picture, the same picture in both of those numbers, and nobody went and added anything to it in between."
 
 "Inflation," Kavi says, eyes on his plate.
 
-"I took the inflation out. It's still nine times what it was." She has both elbows on the table. "And if I painted that, right now, exactly that, every brush stroke the same, it's worth about four pounds. He painted it and it's worth a house. So the number isn't about the picture at all, and I want to know what it's actually about, and nobody in that room will tell me."
+"I took the inflation out, and it's still nine times what it was." She has both elbows on the table. "And if I painted that, right now, exactly that, every brush stroke the same, it's worth about four pounds. He painted it and it's worth a house. So the number isn't about the picture at all, and I want to know what it's actually about, and nobody in that room will tell me."
 
-"Ask her again."
+"Ask her again, properly this time."
 
 "I did ask her, and she told me it was a good question for a different course."
 
@@ -118,7 +118,7 @@ Chloe unfolds hers.
 
 "It's a stupid question," she says at dinner, before anybody has asked her.
 
-"Not stupid. Everyone wants it." Kavi says. "I'd swap you for juries."
+"Not stupid, everyone wants it," Kavi says. "I'd swap you for juries in a heartbeat."
 
 "It's a stupid question because it's got an answer, and they knew what was under them. They did it in February, then again in March, then again in May, and every single time somebody sat in a room and signed it." She has her fork in one hand and has not used it. "I'm going to write down what happened, then write down why it was wrong, and that's the whole essay."
 
@@ -152,9 +152,9 @@ She finds Ruth on the stairs between the second floor and the third.
 
 "He gave me a B on it."
 
-"On twice the length. You did double the words and he took a grade off you for it."
+"On twice the length, you did double the words and he took a grade off you for it."
 
-"That isn't why I'm annoyed about it." Chloe has the pages in both hands and is going up the stairs backwards. "Page nine. He's got page nine and page twenty-two, which are the two places where I stopped, right after I'd already answered it, and put a sentence in to show I knew what it sounded like. I put them in on purpose, he found both of them, and he didn't find anything else."
+"That isn't why I'm annoyed about it." Chloe has the pages in both hands and is going up the stairs backwards. "Page nine, he's got page nine and page twenty-two, which are the two places where I stopped, right after I'd already answered it, and put a sentence in to show I knew what it sounded like. I put them in on purpose, he found both of them, and he didn't find anything else."
 
 "So what you're telling me is he's right."
 
@@ -162,11 +162,11 @@ She finds Ruth on the stairs between the second floor and the third.
 
 At Christmas, her mother asks what she has been working on.
 
-"There was a big one in November." Chloe holds a plate in both hands, water going cold in the sink. "It was on whether the area bombing was the right call."
+"There was a big one in November, on whether the area bombing was the right call." Chloe holds a plate in both hands, water going cold in the sink.
 
 "Which bombing was this?"
 
-"Germany. The cities, in the last two years of it."
+"Germany, the cities, in the last two years of it."
 
 "That's a big subject for a school essay." Her mother takes the plate off her and puts it on the rack. "What did you say?"
 
@@ -174,11 +174,11 @@ Chloe opens her mouth, then works out that the answer starts with the hat. After
 
 "That it was wrong," she says. "I got a B."
 
-"Well, a B's a B," her mother says, and hands her the next plate off the pile.
+"Well, a B's a B, and it's still a good grade," her mother says, and hands her the next plate off the pile.
 
 Her father is in the doorway with a dishcloth over his shoulder.
 
-"You still doing the archery?"
+"You still doing the archery, every day like you said?"
 
 "Yeah, all year, every day."
 
@@ -190,11 +190,11 @@ Chloe tells her grandmother about the arrows and gets to draw the sixty degrees 
 
 "I hit it the first time in October."
 
-"October." Her grandmother pats her on the arm. "Well, you'll get there, dear. Once in a whole year isn't very much, is it."
+"October." Her grandmother pats her on the arm. "Well, you'll get there, dear, once in a whole year isn't very much, is it."
 
-"No, October was the first time. I've done it a dozen times since then. More than a dozen."
+"No, October was the first time, and I've done it a dozen times since then, more than a dozen."
 
-"That's better, then." Her grandmother settles back into the chair with her tea. "It sounds like you just want the practice."
+"That's better, then, it sounds like you just want the practice." Her grandmother settles back into the chair with her tea.
 
 Chloe folds the envelope shut along the line she drew and keeps it.
 

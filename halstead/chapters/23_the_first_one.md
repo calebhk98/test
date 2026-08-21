@@ -65,10 +65,10 @@ Her dad works his way through a full memory card, most of it good, and lowers th
 "Huh," he says, and lifts the camera again.
 
 
-Her grandmother came, and sits in a folding chair at the end of a row, working through everyone who passes her like a receiving line that formed itself around the chair. Sam is the first one caught, gown still on over yesterday's t-shirt. She asks what he's doing next, and when he tells her the Army, she pats his arm and says it'll do him good, teach him some discipline. "Yes ma'am," Sam says.
+Her grandmother came, and sits in a folding chair at the end of a row, working through everyone who passes her like a receiving line that formed itself around the chair. Sam is the first one caught, gown still on over yesterday's t-shirt. "What are you doing next?" she asks. "The Army," he tells her, and she pats his arm. "That'll do you good. Teach you some discipline." "Yes ma'am," Sam says.
 
 
-Kavi is next, in no hurry to get past her. "And you, young man?" she asks, exactly the way she asked Sam. He tells her he's staying on at the school itself, and she nods like that's the same thing. She asks whether he'll get his own room out of it.
+Kavi is next, in no hurry to get past her. "And you, young man?" she asks, exactly the way she asked Sam. "I'm staying on, at the school itself," he tells her, and she nods like that's the same thing. "And do you get your own room out of it?" she asks.
 
 
 "Not yet," Kavi says.
@@ -137,7 +137,7 @@ Nadia pushes her sleeves up before she brings it to her father.
 "That's not our business," her father says, still bent over the invoice in front of him.
 
 
-"It's somebody's business, and it's sitting wide open." She's got the tally out on the counter between them, one finger flat on the page. "Housing forms. A place to get online, since the library keeps cutting its hours down to nothing anyone can use. A way to apply for a job when there's no printer at home. The thing that gets a person from the form to the address to the job in one sitting instead of four separate trips. Somebody has to build it, and it may as well be us."
+"It's somebody's business, and it's sitting wide open." She's got the tally out on the counter between them, one finger flat on the page. "Housing forms. A place to get online, since the library keeps cutting its hours down to nothing anyone can use. A way to apply for a job when there's no printer at home. The thing that gets a person from the form to the address to the job in one sitting instead of four separate trips, somebody has to build it, and it may as well be us."
 
 
 Her father sets the invoice down and looks at her properly. "What would it even do?"

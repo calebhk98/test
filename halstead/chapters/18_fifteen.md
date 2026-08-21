@@ -24,9 +24,9 @@ Voss gives her five more series. On the sixth he is at her shoulder with his han
 
 "Off the point."
 
-"One more."
+"One more, I've nearly got it, I can feel it."
 
-"Off the point, Kessler." His hand stays where it is. "You have shot the same number four different ways in ninety minutes. Go and have your dinner."
+"Off the point, Kessler." His hand stays where it is. "You have shot the same number four different ways in ninety minutes, and that's not going to change tonight. Go and have your dinner."
 
 She goes to dinner and clears the plate, but it could have been anything on it.
 
@@ -40,33 +40,33 @@ Voss reads the four evenings' work standing in the doorway of the range office.
 
 "That's every card in the year." Chloe has a hand flat on the doorframe. "Eleven of us stopped in the same narrow band and it doesn't matter where we started."
 
-"It's a real thing."
+"It's a real thing, and you're not the first person to find it."
 
-"So what is it?"
+"So what is it, then, if you know it's real?"
 
 After tapping the pages straight against the desk, he hands them back to her and tells her to get down to point six because her block started four minutes ago. She goes, running the eleven numbers again on the way down.
 
 Ruth comes down on a Saturday in April with a clipboard and a bag of the toffees Priya's mother sends, and sits behind her for two hours because Chloe asked her to.
 
-"Your count's clean."
+"Your count's clean, I checked it twice against the clock."
 
-"I know my count's clean."
+"I know my count's clean, that's not what I was asking about."
 
-"No, I mean I timed the whole session. Your release is tighter than mine by about a hundredth, and I'm on ninety-one." Ruth turns the clipboard round and holds it up between two fingers. "Whatever's costing you, it's somewhere else."
+"No, I mean I timed the whole session, and your release is tighter than mine by about a hundredth, and I'm on ninety-one." Ruth turns the clipboard round and holds it up between two fingers. "Whatever's costing you, it's somewhere else, not in anything I can see from behind you."
 
-"Where?"
+"Where, though, since there's nowhere else I can even think to look?"
 
-"If I knew that I'd have told you at eleven o'clock." Ruth puts the clipboard face down on the bench and holds the bag out. "Have a toffee."
+"If I knew that I'd have told you at eleven o'clock." Ruth puts the clipboard face down on the bench and holds the bag out. "Have a toffee, it helps me think."
 
-Sam keeps his eyes on his plate at dinner that week. "You're on sixty."
+Sam keeps his eyes on his plate at dinner that week. "You're on sixty, everybody's talking about it at breakfast."
 
-"I know I'm on sixty. And?" Chloe's plate sits full in front of her.
+"I know I'm on sixty, so what's your actual point?" Chloe's plate sits full in front of her.
 
-"I'm on forty." He gets through most of a potato. 
+"I'm on forty, and I'm not losing any sleep over it." He gets through most of a potato. 
 
-"How, though? Does it not bother you?"
+"How, though, when you're just completely fine with all of it?"
 
-"Because I'm on forty and I do other stuff." He reaches across her for the water. "Go and be miserable at Ruth. She's on ninety-something."
+"Because I'm on forty and I do other stuff." He reaches across her for the water. "Go and be miserable at Ruth, she's on ninety-something."
 
 ---
 
@@ -74,7 +74,7 @@ Self defence is still ten of them on one with a minute on the clock, three round
 
 The bad one is a Tuesday in November, first round, and she comes out of the middle at thirty-eight. She is on her feet before they call it, but she has the number already.
 
-"First one's always short." Kavi is still standing at the line. "It recovers by the third."
+"First one's always short, it recovers by the third." Kavi is still standing at the line.
 
 She gets forty on the second and thirty-nine on the third. Afterward, she stands at the edge of the mat with her wraps still on, going through it again with her thumb working at the tape. Odile asks her something on the way out, and she answers it badly, so she finds her at dinner to say it properly.
 
@@ -82,15 +82,15 @@ Odile is up seven on last year and Sam is up four, which she works out on the wa
 
 She catches Kowalczyk about it on a Friday, at the door of the mat room, with the next group already coming past both of them.
 
-"Yeah," Kowalczyk says.
+"Yeah, that's about the size of it," Kowalczyk says.
 
 "That's it? That's all you've got for me?"
 
-"When you were ten you were fighting ten children who had never been hit by anybody. They had no experience. Lasting in that is like taking candy from a baby." Kowalczyk, up on her toes to put a box of wraps on a high shelf, stays there while she talks. "Now you're fighting ten people who have done this five years. You're not getting worse, they're just coming up off nothing, and you are having an actual challenge now. It'll happen to you again at eighteen, when the boys finish growing."
+"When you were ten you were fighting ten children who had never been hit by anybody. They had no experience, so lasting in that was like taking candy from a baby." Kowalczyk, up on her toes to put a box of wraps on a high shelf, stays there while she talks. "Now you're fighting ten people who have done this five years. You're not getting worse, they're just coming up off nothing, and you are having an actual challenge now. It'll happen to you again at eighteen, when the boys finish growing."
 
-"That's still not an answer. What am I supposed to do?"
+"That's still not an answer, so what am I supposed to do?"
 
-"It's the only one there is. You just have to learn faster, and not fall behind." She comes down off her toes, pushing the door the rest of the way open with her foot. "In you go, you're holding up the twelves."
+"It's the only one there is, you just have to learn faster, and not fall behind." She comes down off her toes, pushing the door the rest of the way open with her foot. "In you go, you're holding up the twelves."
 
 Odile goes into the middle on the second Thursday in March, and by forty seconds there are thirty people watching, and somebody has propped the door open so the corridor can see in. Chloe is at the edge of the mat calling the count with eleven others. At a minute the room makes a noise that she can feel through the floor. Odile holds another nine seconds and comes down on her hands and knees.
 
@@ -102,7 +102,7 @@ On each of the next two Thursdays, she sits on that mat after the room empties, 
 
 Hark hands out envelopes in October with two hundred dollars in each, to be spent on anything legal for a year. Whatever is left in June they keep.
 
-"You are going to lose money in your life. Everybody does." She puts the last envelope down. "You can lose two hundred of it this year, with somebody standing over you who will make you write down what happened, or you can lose a great deal more of it later on your own."
+"You are going to lose money in your life, everybody does." She puts the last envelope down. "You can lose two hundred of it this year, with somebody standing over you who will make you write down what happened, or you can lose a great deal more of it later on your own."
 
 Rustem buys nine dead motors at a farm auction for eleven dollars apiece, four of which are turning over by Christmas. In January, he sits down across from Chloe at dinner and pushes a page of figures at her before she has finished eating. He wants two hundred.
 
@@ -114,11 +114,11 @@ All three pay her back, and she finishes the year with two hundred and seventeen
 
 Hark has her at the board in April with the ledger written up. Hark stands at the back with her arms folded and reads all three columns before she says anything.
 
-"You bought a piece of somebody else's ceiling."
+"You bought a piece of somebody else's ceiling, whether you meant to or not."
 
-"He had two hundred dollars and a barn with sixty motors in it. He was capped and I wasn't." Chloe caps the pen and holds on to it. "I don't have to know what a bad bearing sounds like. I have to know whether he does, and he already had four turning over."
+"He had two hundred dollars and a barn with sixty motors in it, and he was capped and I wasn't." Chloe caps the pen and holds on to it. "I don't have to know what a bad bearing sounds like. I have to know whether he does, and he already had four turning over."
 
-"You had the right numbers and the wrong answer. How much of it could you have lost?"
+"You had the right numbers and the wrong answer, so how much of it could you have lost?"
 
 "A hundred and twenty."
 
@@ -134,13 +134,13 @@ Dr. Sandoval catches her in the corridor outside the lab in April, after a sessi
 
 "The work you have been doing since January." She has a folder under one arm and stops walking to say it. "I need to ask you for something, and I would like you to understand while I am asking that it is a request and not an instruction."
 
-Chloe sets her bag against the wall. "All right, shoot."
+Chloe sets her bag against the wall. "All right, shoot, whatever it is you need to ask."
 
-"There is a non-disclosure agreement on that project. Four people have signed it, and one of them is me. You have not signed anything, and I am not going to put a federal NDA in front of a fifteen-year-old, because I do not think anybody should be asking you to sign one. Plus, it's not legally binding." She shifts the folder to her other arm. "But your work feeds ours. If you talk about it at home, or on a telephone, or at a table with eleven people around it, nothing whatsoever happens to you. The consequences land on the four of us."
+"There is a non-disclosure agreement on that project. Four people have signed it, and one of them is me. You have not signed anything, and I am not going to put a federal NDA in front of a fifteen-year-old, because I do not think anybody should be asking you to sign one. Plus, it's not legally binding." She shifts the folder to her other arm. "But your work feeds ours, and if you talk about it at home, or on a telephone, or at a table with eleven people around it, nothing whatsoever happens to you. The consequences land on the four of us instead."
 
-"So you're asking me not to talk about it."
+"So you're asking me not to talk about it, even though there's no rule that actually says I have to."
 
-"You can't be held to anything. I can. So asking is what I have."
+"You can't be held to anything, I can, so asking is what I have."
 
 She lies awake that night, and snaps at Sam over nothing at breakfast the next morning, then apologizes for it before he can ask why. Then she takes a week over it, and she builds the case against first. Fifteen years old, asked to guard a secret that already had four other names on it, and she makes that side as hard as she can. Then she builds the other one, from her own, and from the side of the four names on the form. She is quiet at dinner on Wednesday, and Sam asks her twice whether she is all right.
 
@@ -150,9 +150,9 @@ She stops saying what she does in the afternoons, and it takes about four days t
 
 Her father comes out of the house on the second Sunday of the summer with the car keys and walks straight past her to the passenger door. "Get in."
 
-Chloe looks at the door. "But they teach driving at school next year. You don't have to."
+Chloe looks at the door. "But they teach driving at school next year, you don't have to."
 
-"Cool, I bet they teach driving at school next year." He opens his own door. "I don't care, I'm teaching my daughter to drive. That one's mine. Other side."
+"Cool, I bet they teach driving at school next year." He opens his own door. "I don't care, I'm teaching my daughter to drive, that one's mine, other side."
 
 He takes her to the church lot behind the tire place. Empty on a Sunday, it has four light poles to go round. She stalls it eleven times in the first half hour, but only four in the second. By the third Sunday, she is out on the road past the reservoir with him in the passenger seat, and the coffee in his hand is still full at the eleven-mile mark.
 
@@ -160,7 +160,7 @@ He takes her to the church lot behind the tire place. Empty on a Sunday, it has 
 
 "You said look ahead."
 
-"I said look ahead. Not Tennessee." He points with the cup. "That truck. What's he doing?"
+"I said look ahead, not Tennessee." He points with the cup. "That truck, what's he doing?"
 
 "Coming out." Her hands are at ten and two where he put them in week one, and her knuckles have gone white on the wheel. "His wheels are turned and he's crept forward twice, and he's looking left, so he hasn't seen us."
 

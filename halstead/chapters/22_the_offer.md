@@ -22,7 +22,7 @@ His office holds a desk, two chairs, and a small clock turned to face only him. 
 
 "Eleven years," he says, before she's fully settled in the chair. "Anything for the file."
 
-"Whatever's already in that folder."
+"Whatever's already in that folder is probably enough for you."
 
 "Four things, then," he says. "Research, full time, starting the day you'd otherwise be walking into a dorm room somewhere. The salary is a hundred and thirty five thousand dollars a year, to start, more once you're carrying your own project instead of somebody else's. Housing, food, a car, medical, all of it covered, all of it on us. And if you want the degree on top of the work, you do it here, on your own schedule, we pay for it, and the post stays open until you finish, however long that takes. Six-day weeks the first year, five after that, same as anyone on staff. You'd report to whoever runs your team, same as anyone on staff. Every part of it applies whether you're eighteen or forty."
 
@@ -64,7 +64,7 @@ She finds him in the network room that evening, back against the radiator by the
 
 "But it's school," she says. "Same building, same people. The whole point is finding out if any of this holds up somewhere else."
 
-"It stopped being school for me a while ago." He sets the coil down on the bench, edges lined up flush with the bench's own edge, and leaves it there. "School teaches you things on somebody else's schedule and grades you on how close you get to an answer that's already written down somewhere. Nobody here has that answer written down. I brought them a false positive rate on Tuesday and nobody in the building could tell me if it was wrong, because nobody had checked it yet. That's a research problem, not a classroom one. A classroom's whole job is already knowing." He looks at her the way he looks at a mark scheme. "It's a lab that also has children in it." He says it flat, the same register he'd use to correct a wrong exponent.
+"It stopped being school for me a while ago, somewhere around the time the problems stopped having answers already written down somewhere for someone to check me against." He sets the coil down on the bench, edges lined up flush with the bench's own edge, and leaves it there. "School teaches you things on somebody else's schedule and grades you on how close you get to an answer that's already written down somewhere. Nobody here has that answer written down. I brought them a false positive rate on Tuesday and nobody in the building could tell me if it was wrong, because nobody had checked it yet. That's a research problem, not a classroom one. A classroom's whole job is already knowing." He looks at her the way he looks at a mark scheme. "It's a lab that also has children in it." He says it flat, the same register he'd use to correct a wrong exponent.
 
 Chloe watches him get back to work, the same slow half-turn of the wrist stripping the next foot of cable, and lets him get on with it.
 
@@ -74,13 +74,13 @@ Chloe calls home that night, sitting on the floor of her room with her back agai
 
 Her mother picks up on the second ring, still three steps into her kitchen loop, a dish towel over one shoulder and the radio on low behind her the way it always is at that hour. "Hey, you. How'd it go today?"
 
-"I said no."
+"I said no, to something big, and I want to tell you about it properly."
 
-A beat. The pacing on the other end of the line stops. "No to what?"
+A beat. The pacing on the other end of the line stops. "No to what? What happened today?"
 
-"They offered me a job. Here. I turned it down."
+"They offered me a job, a real one, here at the school. I sat in the chair and turned it down this afternoon."
 
-"What kind of job."
+"What kind of job, exactly? What would you even be doing?"
 
 Chloe gives it to her in the order Amberg gave it to her. "Research. Full time, starting the day I'd have gone to a dorm instead. A hundred and thirty five thousand a year to start. Housing, food, a car, medical, none of it mine to pay for. The degree too, if I want it, paid for, on my own schedule, and the post held open until I finish."
 
@@ -88,7 +88,7 @@ The silence on the line runs long enough, unbroken by the usual kitchen noise, t
 
 "A hundred and thirty five thousand dollars," her mother says, each word landing on its own.
 
-"Plus the rest of it."
+"Plus the rest of it, the housing and the car and everything else on that list."
 
 "You said no to a hundred and thirty five thousand dollars, a car, free rent, free food, medical, and a paid degree, at eighteen years old."
 
@@ -96,17 +96,17 @@ The silence on the line runs long enough, unbroken by the usual kitchen noise, t
 
 "Dave." Her mother's voice moves off the phone and comes back closer, both of them on the line now, close enough that Chloe can hear them breathing on top of each other.
 
-"Say that again," her father says. "All of it."
+"Say that whole thing again for me," her father says. "Every part of it, from the start, I want to hear it properly."
 
 She says it again at the same length as the first time, for both of them now.
 
-Her father lets a breath out in one flat exhale, not quite a laugh. "That's not a decision. That's a mistake."
+Her father lets a breath out in one flat exhale, not quite a laugh. "That's not a decision, that's a mistake, however it's dressed up."
 
 "Dave—"
 
 "I'm allowed to think it's a mistake." Back to Chloe now. "You understand what a hundred and thirty five thousand dollars a year actually is. Over ten years, with the housing and the degree stacked on top of it, before you've paid a dollar of rent anywhere else in your life."
 
-"I understand what it is."
+"I understand what it is. I did the math myself before I ever walked into that room, and I understood it fully before I said no."
 
 "Then explain it to me. Because from here it looks like you turned down more money than your mother and I have made in any five years combined, for a reason you haven't said yet."
 
@@ -118,35 +118,35 @@ Her father lets a breath out in one flat exhale, not quite a laugh. "That's not 
 
 A pause, and then her father again, quieter. "What happens if you change your mind. Is the door still open in a year? Five?"
 
-"I didn't ask that."
+"That's not something I asked him. My head was still on the room and the desk, not on whatever might happen five years from now."
 
 "You turned down a hundred and thirty five thousand dollars and left whether it's still on the table later completely unasked."
 
-"No."
+"No, I turned it down flat, and I left that particular question sitting on the table."
 
-Her mother's voice, when it comes back, has the same flat edge she uses reading the fine print on a mortgage refinancing before she'll sign it. "You know Georgetown costs real money. We've always been straight with you about that. If this is the four years instead of the guaranteed money, I need you to actually hear that part, not just the part where you get to go find out about yourself."
+Her mother's voice, when it comes back, has the same flat edge she uses reading the fine print on a mortgage refinancing before she'll sign it. "You know Georgetown costs real money. We've always been straight with you about that, ever since you were old enough to ask a real question about it. If this is the four years instead of the guaranteed money, I need you to actually hear that part, not just the part where you get to go find out about yourself."
 
 "I hear it."
 
 "Say it back to me."
 
-"It's not free. You and Dad are going to have to figure out how to pay for it, the same way you figure out everything else, and it's my fault that you have to."
+"It's not free, and you and Dad are going to have to figure out how to pay for it, the same way you figure out everything else, and it's my fault that you have to."
 
-"That's not what I—" her mother starts, then stops and starts again. "It's not your fault. It's a fact. There's a difference and I want you to know it."
+"That's not what I—" her mother starts, then stops and starts again. "It's not your fault, and I need you to actually hear that. It's a fact about a number, nothing more. There's a difference between a fact and a fault, and I want you to know it."
 
-"Okay."
+"Okay, I hear the difference, and I'm not going to pretend it away."
 
-"What about the others," her father says. "Ruth. Sam."
+"What about the others," her father says. "Ruth. Sam. The whole rest of the table."
 
-"Ruth's still going to MIT. Sam's still doing the thing with the Army. Kavi said yes to the same thing I said no to."
+"Ruth's still going to MIT. Sam's still doing the thing with the Army, the officer program he's been talking about for a year. Kavi said yes to the same offer I said no to."
 
-"Huh." A short pause. "Good for him."
+"Huh." A short pause. "Good for him, actually. He's the one of the four of you I'd have guessed the least."
 
-"We still think it's a mistake," her mother says. "Both of us. I want that said out loud and not just implied."
+"We still think it's a mistake," her mother says. "Both of us, not just your father. I want that said out loud, plainly, and not just implied between the lines."
 
-"I know."
+"I know, I heard you both say it, and I'm not asking either of you to agree with it."
 
-"But it's your name on the letter. It was your name on the first one too." A pause, then, quieter. "Okay?"
+"But it's your name on the letter. It was your name on the first one too, eleven years ago, and it's still the same name now." A pause, then, quieter. "Okay?"
 
 "Okay," Chloe says.
 

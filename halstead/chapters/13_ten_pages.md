@@ -4,11 +4,11 @@
 
 Mr. Hearn is small and gray and says everything at the same volume.
 
-"Alexander Hamilton. Real person, you can look him up, and everything he wrote is still in print and most of it is free." He writes the name on the board and then some numbers under it. "He wrote fifty-one of the Federalist papers in something like six to eight months. He had a full-time job the entire time he was doing it."
+"Alexander Hamilton. Real person, you can look him up, and everything he wrote is still in print and most of it is free." He writes the name on the board and then some numbers under it. "He wrote fifty-one of the Federalist papers in something like six to eight months, and he had a full-time job the entire time he was doing it."
 
 He does the arithmetic on the board without saying anything about it. Fifty-one in roughly thirty weeks comes out at an essay every four days, two to four thousand words a go. Call it eight to sixteen pages. He underlines the four and leaves it there.
 
-"One ten-page essay a week. That's less than half his rate, you've got a keyboard, and nobody is waiting on you to walk it to a printer on Saturday morning." He caps the pen. "It has to be as good. That's the part that's hard. Ten pages isn't hard, ten pages is just hours. If you want to know what I'm marking against, go and read one. They're short."
+"One ten-page essay a week, and that's less than half his rate, you've got a keyboard, and nobody is waiting on you to walk it to a printer on Saturday morning." He caps the pen. "It has to be as good, and that's the part that's actually hard, because ten pages isn't hard, ten pages is just hours. If you want to know what I'm marking against, go and read one, they're short enough that there's no excuse not to."
 
 Chloe has written ten-page reports before. Three in Mandarin last year, one in French the year before that, and every one of them had two or three weeks behind it. They were also about things, like what a port did in a year, or what one newspaper said and what a second newspaper said about the first one. Those came back marked on the Mandarin.
 
@@ -38,23 +38,23 @@ The first term is ones. Standing, falling, getting up off the floor with somebod
 
 The 10v1 starts in January.
 
-"Eleven of you at a time. One in the middle, ten on them, a minute on the clock." Kowalczyk has the clock in her hand. "Two or three rounds a class. The rest of the hour is what you've been doing since September, because that doesn't stop."
+"Eleven of you at a time. One in the middle, ten on them, a minute on the clock." Kowalczyk has the clock in her hand. "Two or three rounds a class, and the rest of the hour is what you've been doing since September, because that doesn't stop."
 
 "Ten's a lot," Sam says. "That's twice as many hands as I've ever had on me at once."
 
-"Five people can reach you at once. Six if they're good, seven if you're standing badly, and after that there's no room for anybody, they'd be pushing each other over." She holds a hand up flat and turns it. "So ten is five on you and five waiting for the first five to get tired. More than ten and they're queuing."
+"Five people can reach you at once, six if they're good, seven if you're standing badly, and after that there's no room for anybody, they'd be pushing each other over." She holds a hand up flat and turns it. "So ten is five on you and five waiting for the first five to get tired, and more than ten and they're just queuing for a turn."
 
 "A minute's a long time, and that's a lot of seconds to hold ten people off."
 
-"Because you'll be tired before they are." She sets the clock. "And because ten is the shape of every long fight there is. A hundred on one is a 10v1 that goes on longer, and there's nothing in the hundred that isn't already in the ten. If you can hold a minute against ten you've got five capable ones left, and five is a fight you can have."
+"Because you'll be tired before they are, and because ten is the shape of every long fight there is." She sets the clock. "A hundred on one is a 10v1 that goes on longer, and there's nothing in the hundred that isn't already in the ten. If you can hold a minute against ten you've got five capable ones left, and five is a fight you can have."
 
 The best anyone in the room manages all afternoon is nine seconds. Chloe gets four seconds on her first go, then six on her third. Afterwards the four of them sit on the floor in the corridor outside, Ruth flat on her back with one arm over her eyes, Sam with a bloody nose from an elbow that got away from somebody.
 
 "Four."
 
-"Four's fine. Everybody's four."
+"Four's fine, everybody in this corridor is on four right now, that's the whole afternoon's number."
 
-"She said a minute."
+"She said a minute, and four seconds comes nowhere close to a minute."
 
 "She says a lot of things," Sam says, into his sleeve.
 
@@ -68,19 +68,19 @@ Paintball joins the afternoon block in October. Bell hands the markers out and s
 
 For two weeks everybody is bad at it and knows why, the ball goes four times faster than a dart and there is a wall of paint behind the target to prove it. Everybody spends two weeks stuck, and Bell lets them stay that way.
 
-"I'm watching it the whole way," Ruth says on the second Thursday, sitting on the floor with her back against the wall bars. "I can see it leave. I see the whole thing and my hand's still behind it every single time."
+"I'm watching it the whole way," Ruth says on the second Thursday, sitting on the floor with her back against the wall bars. "I can see it leave, I see the whole thing happen, and my hand's still behind it every single time."
 
 "Everybody's behind it, you're not doing anything different from the rest of us, we're all watching it come and then trying to get a hand there and by the time we-"
 
-Chloe stops. "Wait. That's it. We're reacting."
+Chloe stops. "Wait. That's it, that's the whole problem, we're reacting."
 
-"What?"
+"What, what are you talking about?"
 
 "We're all reacting and you can't react to it, there isn't time to react to it, you have to already be there." She is up on her knees with both hands out. "If you're standing behind someone holding a hose, you don't watch the water. You watch where the hose is pointing before anything comes out of it. It's the same barrel, Ruth. It's pointed at where the ball's going before the ball goes anywhere, and everyone's shooting at the same speed. Watch the barrel and the feet. Move before he shoots."
 
-"That's not what she told us."
+"That's not what she told us in the briefing, none of this was in the briefing."
 
-"She didn't tell us anything."
+"She didn't tell us anything, we worked this out ourselves, just now, standing here."
 
 On the Monday Chloe gets one on her fourth go. The two balls meet about four feet in front of her face and the noise is a flat wet crack, and both of them come apart at once, and there is orange and blue hanging in the air together and then all over the floor. The boy she is paired with says, "Lucky," but Ruth gets one nine minutes later and screams.
 
@@ -115,13 +115,13 @@ She reads it in the corridor with about fifteen people behind her waiting for a 
 
 She goes back after dinner when the corridor is empty and reads it again, and then she reads it a third time. Ruth comes and stands next to her at about nine and reads it all the way to the bottom in silence, arms crossed.
 
-"Six is me," Chloe says.
+"Six is me," Chloe says, "there's no other name that number could be pointing at."
 
 "Six is four of us, Chloe."
 
 "I was standing in it. Wes asked them the number right in front of me, and it took him answering it for me to even notice."
 
-"So was I, and so was Wes, and I don't know what we were supposed to be doing either." Ruth is still looking at the sheet. "So the six should be on whoever wrote the drill and left it that vague, not on the one of us who noticed first. There's another one in three weeks."
+"So was I, and so was Wes, and I don't know what we were supposed to be doing either." Ruth is still looking at the sheet. "So the six should be on whoever wrote the drill and left it that vague, not on the one of us who noticed first. There's another one in three weeks, and we'll actually know what six means by then."
 
 Russian starts in September, and two months in she has enough of it to argue in. Ruth is on Arabic. By the middle of the term the two of them are running insults across the dinner table in two languages, and Kavi complains about it in a third, and Sam asks them to do it in English so he can join in and neither of them will.
 
@@ -131,27 +131,27 @@ Music runs both ways at once. Half the hour is by ear and half is notation, and 
 
 Her father asks at Thanksgiving what she has been writing about, and she says tariffs.
 
-"Tariffs. Huh." He is still eating. "Which side did you get?"
+"Tariffs. Huh." He is still eating. "Which side did you get assigned, or did you pick it yourself this time?"
 
-"For."
+"For, and it took about two minutes of reading before that got obvious."
 
-"Go on then. What have you got?"
+"Go on then, let's hear it, what have you actually got?"
 
-"There are industries you have to still have in twenty years even if somebody else is cheaper today." Chloe has her elbows on the table and her aunt is looking at her elbows. "If you're wrong about one of those you can't get it back. You can't decide to have it again. You can decide to build a building."
+"There are industries you have to still have in twenty years even if somebody else is cheaper today." Chloe has her elbows on the table and her aunt is looking at her elbows. "If you're wrong about one of those you can't get it back, you can't decide to have it again, you can only decide to build a building instead."
 
-"Okay." Her father considers his plate. "What about steel, though. Steel's been saying that since before you were born."
+"Okay, I'll give you that one," her father says, considering his plate. "What about steel, though? Steel's been saying that since before you were born."
 
 "Steel says it and textiles said it and somebody's going to say it about something neither of us has heard of." She is nodding before he has finished. "That's the actual problem. It's an argument anybody can use for anything, so it doesn't sort them. The guy asking has the same three sentences whether he's right or not."
 
-"So how do you sort them?"
+"So how do you actually sort the real ones from the ones just saying it for cover?"
 
-"I said you look at whether you could rebuild it in a war and how long it'd take." She takes a roll and does not eat it. "It's what I had and it isn't right. It was Tuesday and I had to put something down."
+"I said you look at whether you could rebuild it in a war and how long it'd take." She takes a roll and does not eat it. "It's what I had, and it isn't right, not really, but it was Tuesday and I had to put something down on the page."
 
-"No, that's not nothing." He turns round in his chair properly. "What happens if it's five years and the war's two?"
+"No, that's not nothing, that's actually most of an argument." He turns round in his chair properly. "What happens if it's five years and the war's two?"
 
-"Then having the answer doesn't help you at all."
+"Then having the answer doesn't help you at all, does it, since you're already too late either way."
 
-"Yeah." He points the fork at her. "That's the b-"
+"Yeah, that's exactly it." He points the fork at her. "That's the b-"
 
 Her mother comes through with the pie and everybody moves their arms, while her aunt wants to know who is having cream. Her father catches Chloe's eye across the table about a minute later and lifts one eyebrow at her.
 
@@ -165,7 +165,7 @@ Theo gets one back with no note the same week, but he puts it straight into his 
 
 She writes four more before the break, but they are the same essays they have been since October. A plateau and a beginning look exactly alike from inside the same week; only which way the next one goes tells you which one you were in. The last one is on whether a promise made under a threat counts, a question that Hearn's note calls good before asking where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 again on the floor of the spare room with the door shut. Her grandmother finds her there on the second afternoon and leaves the papers exactly where they are.
 
-"There's a chair."
+"There's a chair, you know, an actual chair, four feet from where you're sitting on my floor."
 
 "I know there's a chair. I've been looking at it."
 
