@@ -3,7 +3,7 @@
 Chloe's colleague at the translation company, first name Deb: single mother of one, project coordinator by trade, and the evidence that Chloe's isolation is circumstance rather than temperament.
 
 **Age span:** 46 during Chloe's first year at the company | **MBTI:** ESFJ (writing aid, not a claim) | **IQ:** not inferable
-**Appears in:** chapters/28_nineteen.md in two summarized passages. A second character, also named Deb, appears in chapters/05_behind.md as a swim instructor at Chloe's age-seven summer camp, a different person in every respect; see Known problems.
+**Appears in:** chapters/28_nineteen.md in two summarized passages. A second character, also named Deb, appears in chapters/05_behind.md:105 as a swim instructor at Chloe's age-seven summer camp, a different person in every respect. The shared name stands; see Known problems.
 **Speaks:** the manuscript renders her entirely in Chloe's summary. This sheet builds the rest of her from that summary and from invention, marked as such throughout.
 
 ## Voice in one paragraph
@@ -100,10 +100,10 @@ Her coffee runs milky, one sugar, refilled twice a morning. Her handwriting loop
 
 ## Known problems
 
-- Her name collides with an unrelated minor character. chapters/05_behind.md:57 introduces "a woman called Deb," the swim instructor at Chloe's age-seven summer camp, a different setting, a different decade of Chloe's life, with no textual link between the two. Flag to the author: likely the coin-flip naming collision the author warned about; this sheet recommends keeping the name here, since she carries the larger role, and renaming the swim instructor.
+- **Name shared with an unrelated minor character. Ruled on, and the earlier recommendation is withdrawn.** chapters/05_behind.md:105 has "an instructor called Deb," the swim instructor at Chloe's age-seven summer camp, a different setting and a different decade of Chloe's life with no textual link between the two. This sheet used to recommend renaming her. The author's ruling is that name collisions are fine if they are rare, and one repeat across a cast this size is rare, so nobody should act on it. Both keep the name. Recorded here so a later pass does not rename either of them.
 - The primary text gives her zero quoted dialogue despite her place in the synopsis's character list and in Chloe's own likes; this sheet fills the gap with invention, marked throughout, while nothing above chapters/08 is textual.
 - The earlier brief's "twice" framing runs slightly imprecise; the text describes a recurring habit, not a single two-step exchange.
 
 ## Do not confuse with
 
-**The unnamed swimming instructor in chapters/05_behind.md**, also called "Deb." Not the same character. If both appear in a future draft, one needs a new name.
+**The swimming instructor in chapters/05_behind.md:105**, also called Deb. Not the same person: different decade, different place, no line between them in the text. Both keep the name; see Known problems. What this section is for is making sure a rewriter does not merge them or write one of them's manner into the other.

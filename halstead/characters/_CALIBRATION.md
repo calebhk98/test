@@ -85,6 +85,31 @@ it. Do not write him as a genius who chose to leave. Do not write him as the one
 through the place. He is the evidence that the selection is not perfect and that the
 floor here is real.
 
+## How big the school is
+
+The school takes in **roughly a hundred children a year**, and **Chloe's cohort is the oldest
+in the building**, so there is no year above her and the place grows with her. Every year
+of her time there is one more year-group on the roll than the year before.
+
+| Chloe's stage | Roughly on the roll |
+| :---- | :---- |
+| around third grade | ~200 |
+| the middle years | growing by about a hundred a year |
+| her final year | close to 1,000 |
+
+Both figures the manuscript states sit on that curve rather than against it. The Watch in
+`chapters/14_sixty_degrees.md:199` puts "two hundred students out of eleven rooms" into the
+stairwells, and Ruth's bread argument in `chapters/15_twelve.md:31` says "two hundred of us,"
+both from the lower half of the ramp. Graduation in `chapters/23_the_first_one.md:14-17` puts
+"eight hundred children who are not graduating today" on the grass behind ninety-one who are,
+which is the top of it. **This has been logged as an inconsistency; it is not one.** The
+school is a different size in chapter 14 than it is in chapter 23 because it is a different
+size, and a sheet or a scene that needs a number should take it off this curve rather than
+off whichever chapter it happens to be near.
+
+One consequence worth holding onto: her year is the smallest cohort's worth of company the
+building ever has, and the younger years she teaches into keep getting bigger under her.
+
 ## Banned constructions
 
 These assert a verdict instead of showing the thing, and they smuggle in an assumption

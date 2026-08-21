@@ -5,11 +5,11 @@ A student who cannot leave an unjustified claim standing, in anyone's mouth incl
 **Age span:** 6–21 | **MBTI:** ENTJ (writing aid, not a claim) | **IQ:** among the two or three furthest out of anyone in the book, by reader inference. The text never gives a number.
 **Born:** March 2005. The manuscript never gives her age as a number either; she is placed throughout as Chloe's exact classmate, dorm-mate, and teaching cohort, and her birthdate follows from that.
 **Appears in:** chapters/04_pluto.md, 05_behind.md, 06_the_list.md, 07_the_same_room.md, 10_april.md, 11_eight.md, 12_nine.md, 13_ten_pages.md, 14_sixty_degrees.md, 15_twelve.md, 16_thirteen.md, 17_fourteen.md, 18_fifteen.md, 20_the_parking_lot.md, chapters/21_the_applications.md, chapters/24_the_chat.md, chapters/27_nadia.md, chapters/26_the_exercise.md, chapters/31_ruth.md, chapters/32_the_money.md, chapters/33_the_other_one.md, chapters/34_the_files.md, chapters/35_nine_minutes.md.
-**Speaks:** ~150 lines, 72 of them in the group chat, more than any other character, plus roughly 80 spoken lines. Not front-loaded; she is present in nearly every chapter on the list, chat and spoken alike.
+**Speaks:** ~190 turns, 98 of them in the group chat, more than any other character, plus roughly 90 spoken. Not front-loaded; she is present in nearly every chapter on the list, chat and spoken alike.
 
 ## Voice in one paragraph
 
-Ruth states the correction first and the reason second, in that order, almost without exception. She does not build up to a conclusion, she opens with it. Sentences are mid-length, rarely a single word, rarely a paragraph. When she disagrees she puts the other person's name inside the sentence doing the correcting, not before or after it. She never hedges and she never punctuates a challenge as a question, turning "why" into a flat demand instead. Her vocabulary is narrow and reused rather than varied: she says "argument," "outcome," "evidence," "reason" over and over rather than reaching for synonyms. The single most characteristic line: *"That's not an argument, that's an outcome, and besides, they were already inside, so we are losing marks"* (chapters/15_twelve.md:265). Correction first, named consequence second, her own team scored on the school's own rubric rather than praised.
+Ruth states the correction first and the reason second, in that order, almost without exception. She does not build up to a conclusion, she opens with it. Sentences are mid-length, rarely a single word, rarely a paragraph. When she disagrees she puts the other person's name inside the sentence doing the correcting, not before or after it. She asks a great many questions and punctuates most of them as questions. What is hers is not the rate but the build: every question is made so that one answer will close it. She hands over the two options and asks which ("Second floor lab or the server room?", chapters/15_twelve.md:235), or refuses the question until the measure is named and names the measures she would accept ("Hardest by what measure, and compared to what?", chapters/21_the_applications.md:137), or drops the mark altogether and puts the inference up flat for somebody to knock down ("So what you're telling me is he's right," chapters/14_sixty_degrees.md:149, which Chloe answers with "Yeah"). She never hedges, and she does not ask anything she could have worked out herself, or anything whose answer could only be an opinion. Her vocabulary is narrow and reused rather than varied: she says "argument," "outcome," "evidence," "reason" over and over rather than reaching for synonyms. The single most characteristic line: *"That's not an argument, that's an outcome, and besides, they were already inside, so we are losing marks"* (chapters/15_twelve.md:215). Correction first, named consequence second, her own team scored on the school's own rubric rather than praised.
 
 ## Dials
 
@@ -17,12 +17,12 @@ Ruth states the correction first and the reason second, in that order, almost wi
 | :-- | :-- |
 | sentence shape | assertion, then the reason for it, in that order, mid-length |
 | disagrees by | corrects, and says your name while doing it |
-| wordiness | 9.3 words/line in chat, 8.2 words/line in tagged spoken prose |
-| terseness | 27% of lines three words or fewer. A measurement, not a target |
+| wordiness | 9.5 words a line in chat, 9.8 in tagged spoken prose. Mid-length either way, and steady: she does not shorten under pressure and does not lengthen to be liked |
+| terseness | 22% of chat lines and 21% of tagged prose lines run to three words or fewer. A measurement, not a target |
 | at length | when someone she trusts refuses to accept her flat, correct-and-done answer and makes her rebuild the whole case instead of resting on the conclusion; it costs her the one place she otherwise gets to stop looking |
 | jokiness | 3/10, dry, deadpan, delivered as a stated fact, never a punchline |
 | hedging | 3% measured, and right for her baseline; it doesn't need to be driven to Theo's zero, a stray qualifier survives when she's reasoning toward a claim she hasn't finished testing rather than reporting one she has |
-| questions | 0% measured; she asks by flat declarative, never a question mark |
+| questions | about one turn in five is a question in substance: 41 of 191 counted, 23 of roughly 93 spoken and 18 of 98 in chat. Sixteen of the spoken ones carry a question mark, so a question mark is ordinary for her and not a defect. The move that is hers is the other third, a flat declarative that works as a question and gets answered as one |
 | figurative | not allowed. Every character in this slot keeps their claims in evidence rather than image, and hers is the flattest of the group. |
 
 ## When they talk at length
@@ -54,21 +54,22 @@ the group chat, it doesn't stop at one line (chapters/31_ruth.md:63-125).
 
 Says the other person's name inside the sentence that is correcting them. No one else in the cast owns this move.
 
-- *"It is not better, Sam."* (chapters/15_twelve.md:59)
-- *"That is not what any of the maths says, Kavi."* (chapters/16_thirteen.md:101)
+- *"It's the same bread, Sam, same flour, same ovens, same people."* (chapters/15_twelve.md:31)
+- *"You said they'd take the stairs. You didn't say why. That's a bad plan, Sam."* (chapters/15_twelve.md:145)
 
 ## Would they say this?
 
 - YES if the line states the correction or conclusion first and supplies the reason after it.
 - YES if a correction names the person being corrected inside the same sentence.
-- YES if the line collapses an open question into two concrete options and asks which one applies.
+- YES if the line collapses an open question into two concrete options and asks which one applies. ("Second floor lab or the server room?", chapters/15_twelve.md:235)
+- YES if it refuses a question until the measure is named, and names the measures it would accept. ("Hardest by what measure, and compared to what?", chapters/21_the_applications.md:137)
 - YES if the line treats a compliment or a good outcome as insufficient evidence and asks for the mechanism instead.
 - YES if the line answers exactly the question that was asked and then stops, with nothing softening it first.
 - YES if the line reuses a plain word she's already used nearby rather than reaching for a synonym.
 - YES if the line states a fact about how easy or hard something actually was instead of accepting credit for it gracefully.
 - NO if the line contains a simile, metaphor, or any invented image.
 - NO if the line hedges: "maybe," "probably," "I think," "kind of."
-- NO if the line ends in a question mark rather than a flat declarative demand.
+- NO if a question of hers leaves the answer open, or exists to fill a silence, to be sociable, or to take the edge off a claim she has already made. She asks constantly; what she does not do is hand somebody an open field.
 
 ## Are they acting like themselves?
 
@@ -88,7 +89,7 @@ Her own list, not Chloe's. Halstead runs a language a year for everyone but nobo
 
 **Best at:** mathematics, without qualification, the only member of the core group shown generating a genuinely new result rather than applying a taught method: the financial proof (chapters/32_the_money.md:37, "Ruth is the one who argues it into a proof, and she does it with the thing that isn't there"). Also elite at marksmanship: "I'm on ninety-one." (chapters/18_fifteen.md:55) She has never met anyone outside Halstead her own age and has no idea what an ordinary sixteen-year-old can or can't do, so if anyone made her name a number for her own overall standing, she'd give the B+ that Halstead's own sheets have actually handed her, a real grade off a real board, the only scale she's ever had reason to trust.
 
-**The subject she took that nobody else did:** electronics and radio, one of her four block-two picks alongside chess, go, and bookbinding. She likes it for the same reason she likes Finnish and mathematics: build something, and it either works or it doesn't, and the reason it doesn't is always findable if you look properly. It sat quietly as a Thursday-afternoon thing for years.
+**The subject she took and never dropped:** electronics and radio, one of her four block-two picks alongside chess, go, and bookbinding. **She shares it with Kavi**, who is in electronics from the same year (chapters/11_eight.md:189, "Kavi's doing electronics"), and that is settled, not a conflict: block two is an open list and two people picking the same Thursday afternoon is the ordinary case. It has been raised as a defect three times now and it is not one. What separates them is what each did with it, Kavi into networks and services, Ruth into radio and the physical box. She likes it for the same reason she likes Finnish and mathematics: build something, and it either works or it doesn't, and the reason it doesn't is always findable if you look properly. It sat quietly as a Thursday-afternoon thing for years.
 
 **The year it clicked:** twelve. That's when electronics and radio stopped being a class she was fine at and became something she thought about between other classes. Chess and go stayed steady, unremarkable interests; this is the one that pulled ahead of them.
 
@@ -204,11 +205,11 @@ Coffee, not tea, taken plain and finished fast rather than savored. Handwriting 
 
 ## Known problems
 
-1. **Figurative-language violation.** chapters/15_twelve.md:59: "It's mass hysteria with butter on" is an invented image in Ruth's own dialogue, which breaks her zero-figurative-language rule. Fix: cut the image, end the line on "a room agreeing before anybody has chewed anything."
-2. **Line collision with Kavi.** chapters/32_the_money.md:61 and :468 give Kavi and Ruth the identical six words back to back, "thats a person getting older." Fix: keep Kavi's line, give Ruth's the assertion-then-consequence shape instead, a line that agrees and immediately states what that implies for their proof.
-3. **Line collision with Eli.** chapters/35_nine_minutes.md:78 and :847 give Ruth and Eli the identical line, "thats the only thing we have." Ruth speaks first; per her signature Eli, speaking second, should be doing his own reframe move instead of echoing her.
+1. **Resolved.** This entry flagged an invented image in Ruth's bread speech, "It's mass hysteria with butter on." It is out. chapters/15_twelve.md:31 now ends the thought on "a room agreeing with itself before anybody has chewed anything," which is the flat version. Left here so it is not re-found.
+2. **Resolved.** Kavi and Ruth once had the identical six words back to back. chapters/32_the_money.md:85 now reads "kavi: thats aging" against :88 "ruth: thats a person getting older," which is two people saying different things. Left here so it is not re-found.
+3. **Resolved.** Ruth and Eli once shared the line "thats the only thing we have." Only Ruth has it now, at chapters/35_nine_minutes.md:105, and Eli answers it with "dont lose it then." Left here so it is not re-found.
 4. **Resolved.** This entry used to flag chapters/15_twelve.md:169 for the hedge "They're probably actors." The line no longer reads that way: chapters/15_twelve.md:169 currently reads "They're almost certainly actors, look at this." No further fix needed; left here so the next pass doesn't go looking for a line that isn't there anymore.
-5. **Name collision with an unrelated character.** chapters/17_fourteen.md:27-33 uses "Aymar," Ruth's own surname, as the name of a different, apparently male, background student ("Aymar has the stopwatch out... he can see it... Ruth spends the rest of the term making sure people know the stopwatch it came off was from Aymar," treating Aymar as someone other than Ruth in the same scene). This needs a different name for the stopwatch student, not a fix to Ruth's dialogue.
+5. **Not a problem. Ruled on, and the earlier recommendation is withdrawn.** chapters/17_fourteen.md:21-29 gives "Aymar," Ruth's own surname, to a different background student, the boy with the stopwatch. This sheet used to recommend renaming him. The author's ruling is that name collisions are fine if they are rare, and this one is rare, so nobody should act on it. Both people keep the name. Left here so the collision is not re-found and renamed by a later pass.
 
 ## Do not confuse with
 

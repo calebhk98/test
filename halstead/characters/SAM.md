@@ -9,21 +9,21 @@ The best fighter in the year, who wants the real test to finally start and canno
 
 ## Voice in one paragraph
 
-Shortest sentence-builder in the cast: one flat clause, said and done, with no subordinate clause. He rarely qualifies a claim mid-sentence, and he doesn't explain himself unless asked twice. Under pushback he does one of two things: he repeats the same claim in close to the same words, louder, or he stops arguing and acts. He asks more short direct questions than anyone else his age, though they're always about duration or rule, how long, why that number, never about mechanism. He's allowed exactly one kind of figurative language, the deflating literalism, where he names a thing for what it plainly is instead of reaching for an image. The most characteristic line in the book is the first one he ever gets. "It's not even a room," he says. "It's a room-shaped object." (chapters/04_pluto.md:47). It's funny because it's flat and immediate, fixing the moment instead of decorating it, the same move his number-first signature repeats afterward.
+Shortest sentence-builder in the cast: one flat clause, said and done, is his default and where he returns to. He does subordinate, and when he does the clause is carrying weight rather than decorating: a condition set in front of its consequence, the way he hands Chloe her own essay back before she has written it, "If you can't say why the man signed it, what you've got is a feeling that it was wrong and a blank where his reason goes" (chapters/14_sixty_degrees.md:125). What he does not build is a clause that takes weight off a claim. He rarely qualifies, and he doesn't explain himself unless asked twice. Under pushback he does one of two things: he repeats the same claim in close to the same words, louder, or he stops arguing and acts. He asks more short direct questions than anyone else his age, though they're always about duration or rule, how long, why that number, never about mechanism. He's allowed exactly one kind of figurative language, the deflating literalism, where he names a thing for what it plainly is instead of reaching for an image. The most characteristic line in the book is the first one he ever gets. "It's not even a room," he says. "It's a room-shaped object." (chapters/04_pluto.md:113). It's funny because it's flat and immediate, fixing the moment instead of decorating it, the same move his number-first signature repeats afterward.
 
 ## Dials
 
 | | |
 | :-- | :-- |
-| sentence shape | shortest in the cast; flat declarative; no subordinate clause |
+| sentence shape | shortest in the cast; flat declarative by default; subordinates only to put a condition in front of its consequence |
 | disagrees by | restates his position unchanged, louder, or stops talking and acts |
-| wordiness | 5.1 words per line in chat, the shortest of anyone; he never writes a long message |
-| terseness | 31% of his lines are three words or fewer. No target above that: half his prose dialogue already runs to three words or fewer and the book cannot afford more |
+| wordiness | 5.5 words a line in chat and 6.5 in tagged prose, the shortest of anyone measured either way; his longest message in the whole chat is twenty words |
+| terseness | a third of his turns run to three words or fewer, 34% in chat and 38% of his tagged prose lines. A measurement, not a target, and there is no room above it |
 | at length | when an official record of him — praise, a debrief, a captain's ten-out-of-ten — doesn't match what he knows actually happened. He runs the correction all the way out, point by point, instead of taking the easier version |
 | jokiness | 9/10, the highest in the cast. He's funny because he repeats himself, unmoved, after everyone else has stopped finding it funny. That's stubbornness working as comedy: never hand him a line built on wit or timing. |
 | hedging | 0% on anything factual, tactical, or about himself — that stays absolute, and Theo keeps the exclusive claim on hedging as a general register. The one deliberate crack: when the subject is whether someone else is okay rather than what's true, a single soft word can get through. That isn't the manuscript's flatness leaking into the dial; it's the one place his certainty was never actually about being right. |
-| questions | 7% now, already the highest rate among the students; target higher still |
-| figurative | allowed one channel only: the deflating literalism ("It's a room-shaped object," chapters/04_pluto.md:47). No other figurative language of any kind |
+| questions | he asks more than any other student, and they are all the same two questions: how long does this go on, and why is the number that number. He does not ask how a thing works |
+| figurative | allowed one channel only: the deflating literalism ("It's a room-shaped object," chapters/04_pluto.md:113). No other figurative language of any kind |
 
 ## When they talk at length
 
@@ -35,19 +35,19 @@ Both times he's talking the record down, not up — trading a compliment he didn
 
 States a number before anything else, then the point. Nobody else in the cast opens a line this way.
 
-- "About forty," Sam says. (chapters/25_ten_targets.md:31)
-- "Four seconds," Sam says. (chapters/15_twelve.md:311)
+- "About forty," Sam says. (chapters/25_ten_targets.md:71)
+- "Four seconds," Sam says. (chapters/15_twelve.md:245)
 
 ## Would they say this?
 
-- YES if it is one flat, complete clause with nothing set off by a comma to qualify or explain it.
+- YES if it is one flat, complete clause that stops as soon as the fact is out.
 - YES if a number is the first thing in the line, with the point arriving after it.
 - YES if, contradicted, it repeats his prior claim close to word-for-word instead of building a new argument.
 - YES if it is a short question asking when something ends, what the rule is, or why a number is what it is.
 - YES if a figurative phrase in the line deflates the moment by naming what something literally, unglamorously is.
 - YES if it states a fact about himself with no softening around it.
 - YES if it answers exactly the question that was asked and then stops.
-- NO if it contains a subordinate clause built to qualify or explain something. That belongs to Theo.
+- NO if a clause is hung on the end to soften what he just said. When he builds a longer sentence it is to set a condition in front of a consequence, not to take the weight out of one.
 - NO if it hedges about a fact, a plan, or himself: "maybe," "I guess," "probably," "sort of," "I think." That stays absolute.
 - YES, and only here, if the single soft word in the line is about whether someone else is okay, not about what's true.
 
@@ -109,7 +109,7 @@ He moves heavily crossing a room or eating, then moves like something else the i
 - **A free Saturday:** back at the climbing wall, re-running a route he's already cleared, just to see if he can do it cleaner. He spends an entire year on one climbing feature after everyone else has stopped watching him attempt it (chapters/12_nine.md).
 - **What he finds funny in other people:** somebody else refusing to let a point go. He needles Ruth through extra rounds of "tidally locked" instead of changing the subject (chapters/05_behind.md). He calls his own two-week losing streak against Kavi "the worst mistake of my life" at dinner for a month rather than dropping it (chapters/04_pluto.md). He seems to enjoy stubbornness in other people the same way he practices it himself.
 - **Anger:** The one time it doesn't come out louder. Real anger, not a disagreement he can still win, makes him go quiet and find something to do with his hands, then do it harder than it needs. He'll re-coil a rope that's already coiled, reset a stance that was already set. He doesn't raise his voice at anyone he actually cares about; the volume is for arguments.
-- **Embarrassment:** He won't discuss what he's been laughed at for, but the silence isn't empty. He doesn't get defensive and doesn't leave. He picks up whatever's nearest, a plate, a rope, a piece of kit, and starts talking about that instead, at his ordinary volume, like the conversation never happened. It reads as him being fine. It isn't quite that.
+- **Embarrassment:** He gets to it first and tells it louder than anyone else would. Out of a school-wide exercise inside ninety seconds, over a bannister onto three teachers, held down by a knee until he stopped moving, and he talks about it from the bench all afternoon, again at dinner, and is still telling it in June, including to two people who were standing underneath him at the time (chapters/14_sixty_degrees.md:203, :213). Being the joke and being humiliated are different things to him, and the difference is who is telling it. Give him a story where he came off badly and he will get more out of it than the person who saw it. What closes him is not the laugh, it is the question underneath: asked how he actually felt about it, he picks up whatever is nearest, a plate, a rope, a piece of kit, and starts talking about that instead, at his ordinary volume.
 - **Envy:** He doesn't measure himself against the room, and that stays true. But he goes quiet for a beat when one of his brothers describes an ordinary good day running the yard, a truck loaded on time, a job finished clean. He'd never say he wishes he were there instead of here. He asks a practical question about the truck and lets the subject move on.
 - **Grief:** The closest he comes to it on the page is a routine ending, not a person. When something that's been part of every day for years stops being part of any day, dance dropping off the schedule at nine, later, Halstead itself ending at eighteen, he doesn't talk about it. He shows up once or twice to where it used to be, out of habit, before he adjusts. It looks like practicality. It isn't only that.
 - **Elation:** When a loaf comes out exactly right he doesn't say so. He gets it to the table before anyone's asked for it and watches the first bite instead of the bread. That's as close as he comes to visibly wanting credit for something.
@@ -119,7 +119,7 @@ He moves heavily crossing a room or eating, then moves like something else the i
 
 **What he wants that he hasn't said out loud:** he wants a task with no announced ceiling on it, more than he wants to win, the way the schedule at home never ran out of jobs. Every version of "when's the real assessment" is the same question underneath: is this the kind of thing that keeps going, or the kind that stops and leaves him standing there.
 
-**What he's afraid of, more than being laughed at:** that something will matter and nobody will flag it as mattering, that he'll spend a whole stretch of his life maxing drills and miss the one time it was real because it looked exactly like all the others. That's the actual engine behind the captain scene in "Ten Targets" and the culvert self-critique in "The Exercise," a vigilance he can't switch off.
+**What he's afraid of:** that something will matter and nobody will flag it as mattering, that he'll spend a whole stretch of his life maxing drills and miss the one time it was real because it looked exactly like all the others. That's the actual engine behind the captain scene in "Ten Targets" and the culvert self-critique in "The Exercise," a vigilance he can't switch off.
 
 **What he thinks about before sleeping:** the day's numbers, briefly, then not much else. Most nights it's a line or two of whatever's going in the next letter to his grandmother, turned over the way he turns over a piece at the forge before he decides it's finished. He's written to her every week, by hand, since he was seven, through camp, through Halstead, through basic training. Nobody at either place knows he does it. It's the one relationship he has with nothing being scored in it, and that's reason enough to keep it his.
 
@@ -165,7 +165,7 @@ He moves heavily crossing a room or eating, then moves like something else the i
 
 ## Relationships
 
-- **Chloe:** treats her as someone worth winning an argument in front of, not against. He's the one who breaks her panic attack at their first meeting with a joke instead of a correction ("It's not even a room... It's a room-shaped object," chapters/04_pluto.md:47). Their exchanges stay light and unguarded at every age the book shows them together.
+- **Chloe:** treats her as someone worth winning an argument in front of, not against. He's the one who breaks her panic attack at their first meeting with a joke instead of a correction ("It's not even a room... It's a room-shaped object," chapters/04_pluto.md:113). Their exchanges stay light and unguarded at every age the book shows them together.
 - **Ruth:** needles her precision on purpose because he enjoys watching her refuse to back down, and treats her much higher rifle standing as simply her business: "Because I'm on forty and I do other stuff... Go and be miserable at Ruth. She's on ninety-something" (chapters/18_fifteen.md:69).
 - **Kavi:** keeps losing to him, an argument about volcanoes, a run of games he keeps re-starting to get back into, and narrates his own losing streak out loud instead of minding it. "This is the worst mistake of my life," Sam says at dinner that week, about Kavi, for about the fourth time (chapters/04_pluto.md).
 - **Nadia:** mostly a group dynamic rather than a one-to-one. Their exchanges happen inside the full chat or the parking-lot scene, never alone. The closest thing to a direct line is his flat "are you ok" when she reports being targeted (chapters/27_nadia.md).
@@ -182,7 +182,7 @@ He moves heavily crossing a room or eating, then moves like something else the i
 - Likes baking, bread specifically: the one graded thing in his life nobody's comparing to ninety other people.
 - Likes being handed a task with no stated end point: the through-line behind the schedule-liking, the retesting, and "when's the real one."
 - Reads his own forty percent on the range as unremarkable: "Because I'm on forty and I do other stuff" (chapters/18_fifteen.md:69) is an accurate self-assessment inside a room where several classmates clear ninety percent at the same drill.
-- Minds being laughed at more than almost anything else touches him. One laughing emoji from someone in the group chat, just the emoji, and he won't bring the incident up again for months.
+- Gets more out of his own worst moments than anybody watching does, and will run the story past the point where the room has had enough (chapters/14_sixty_degrees.md:203). The one he lets sit is the parking-lot question, answered in the chat with a single laughing face: he reaches past it for the syrup every time it comes up, and lets it sit long enough that people raise it purely to watch him do that again (chapters/20_the_parking_lot.md:167). That is a bit he is running, not a wound.
 - Sleeps with the window open, mentioned it four times. See Body above (chapters/07_the_same_room.md).
 - Answers an institutional compliment by correcting the premise instead of thanking the speaker: the captain scene (chapters/25_ten_targets.md:28-741).
 - Demonstrates rather than explains when he can: hands over the flawed hook instead of describing it (chapters/15_twelve.md), disarms rather than negotiates (chapters/20_the_parking_lot.md).
@@ -203,11 +203,11 @@ He moves heavily crossing a room or eating, then moves like something else the i
 
 ## Known problems
 
-1. **chapters/25_ten_targets.md:58**: the "Ten Targets" rifle-accuracy speech ends on a mirrored, constructed line: "A gun you can't stop a projectile with isn't a tool. It's a weapon. Anyone can carry a weapon." This is the only place in the book Sam builds a rhetorical, mirrored construction; everywhere else he states one flat fact and stops. Proposal: cut everything from "A gun you can't stop a projectile with" onward, ending the speech at "That's the number that means something," which is already in his register and already lands the point.
+1. **Resolved, kept here so it is not re-found.** An earlier draft ended the "Ten Targets" accuracy speech on a mirrored construction, "A gun you can't stop a projectile with isn't a tool. It's a weapon. Anyone can carry a weapon." The line is out of the chapter and the speech now ends where it should. Nothing to do.
 2. **chapters/25_ten_targets.md:14 vs. chapters/19_sixteen.md:141**: the no-ceiling claim ("There is no version of a task in Sam's head where you reach a number and then don't try for a higher one") and the forty-percent-content claim ("He's been on forty since he was fifteen and it slides straight off him") read as tension only if treated as the same kind of test. They aren't. A fitness assessment is solo and repeatable, with no fixed opponent, so there's always a next number to chase. The rifle intercept is scored against a live cohort he doesn't control, and forty percent there is already far outside ordinary human range; he's simply outranked by classmates near ninety, the same B+-among-geniuses self-read that runs through the rest of the cast. The underlying logic holds. What's missing on the page is one line making the distinction legible: a fitness test has a next rep, a live ranking doesn't, so a reader isn't left to reconstruct it.
-3. **chapters/20_the_parking_lot.md**: the laughing-emoji reaction ("Sam won't discuss it, and won't for so long that it becomes the funniest part of the whole thing") is reported in a single narrated sentence and immediately played for comedy rather than dramatized as a scene. It's the only moment in the book where he visibly minds what someone else thinks, carrying more weight than one sentence can hold. One beat of him actually declining to answer, on the page, would do it.
+3. **Withdrawn.** This slot used to read the laughing-emoji beat as the one moment Sam visibly minds what somebody thinks. The chapter does not support that and neither does he: the line now reads that he lets it sit "long enough for people to start bringing it up purely to watch him do it again" (chapters/20_the_parking_lot.md:167), which is a bit he is running. He is the cast's most willing teller of stories against himself; see Embarrassment.
 
 ## Do not confuse with
 
-- **Kavi.** Both ask short direct questions, but Kavi's questions chase mechanism and he pursues the technical answer once he has it; Sam's questions chase duration or rule ("how long," "why that number") and he drops the subject once he has the fact. The collision to fix: chapters/13_ten_pages.md, "Why ten?" / "Why a minute?" reads like Kavi's mechanism-interrogation move written in Sam's mouth. A corrected Sam question would ask when the drill stops being boring, not why the structure is built the way it is.
+- **Kavi.** Both ask short direct questions, but Kavi's questions chase mechanism and he pursues the technical answer once he has it; Sam's questions chase duration or rule ("how long," "why that number") and he drops the subject once he has the fact. An earlier draft of chapters/13_ten_pages.md gave him "Why ten?" and "Why a minute?", which is Kavi's mechanism-interrogation in Sam's mouth; both are now flat objections ("Ten's a lot" ... "and that's twice as many hands as I've ever had on me at once", chapters/13_ten_pages.md:41), which is the correct shape. A Sam question asks when the drill stops being boring, not why the structure is built the way it is.
 - **Nadia.** Both are terse. Nadia's short lines are commands or near-commands aimed at what should happen next; Sam's short lines are self-referential facts or a repeated stance about himself, and when he wants something to happen he acts instead of directing someone else to do it.

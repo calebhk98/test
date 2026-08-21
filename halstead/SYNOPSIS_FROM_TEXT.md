@@ -932,3 +932,376 @@ October 2025 (the 4 a.m. Watch, ch 15, winter 2017-18).
 - **The Duke, Stanford, Yale, MIT, Caltech and Chicago representatives** - ch 21.
 - **The Penn admissions officer** - reads the ten-person self-defence sentence three times. Ch 21.
 
+
+---
+
+# 6. Comparison with `SYNOPSIS_CHARACTERS_TIMELINE.md`
+
+Everything above section 6 was written from the chapters alone. This section was
+written afterward, against the existing synopsis, and changes nothing above it.
+
+**A note on the moment this was written.** Chapter 6 and chapter 30 were edited
+by another agent while this document was being drafted, in commit `fbb5424`
+("ch6 dinner items restored; ch30 interview clock fixed to four hours"). The
+consequences are recorded in item 6.2 below, which is the only place it matters.
+
+---
+
+## 6.1 The bolt cutters in ch 15
+
+The old synopsis says: *"She notices the bolt cutters are wrong for the fence and
+cannot make the wrongness mean anything and lets it go."*
+
+**Half of that is right and half of it is wrong, and the manuscript settles it in
+one line.** The relevant text is three passages in `chapters/15_twelve.md`:
+
+- **Line 201** plants it: "a pair of bolt cutters that are the wrong bolt cutters
+  for the fence they came over."
+- **Line 259** is the working: "Chloe sits against the wall with her arms around
+  her knees while Sam talks, working at the wrongness of it instead of listening.
+  The bolt cutters wrong for that fence. The boots wrong. All of it wrong in the
+  same direction, which is the direction a school would get it wrong in if a
+  school were building this, and also the direction four real people would get it
+  wrong in if somebody had handed them the wrong list. She turns it over the whole
+  way through and it comes out the same both ways, and the second man's chest
+  going up and down a few feet away sits on the same list as the bolt cutters."
+- **Line 269** is the last narrative line of the chapter before the grades:
+  "Back in bed she lies on top of the covers with her shoes on and runs the list
+  from the top, and gets to the end of it, and starts over."
+
+So: **"cannot make the wrongness mean anything" is accurate.** Line 259 says in
+so many words that it comes out the same both ways, which is exactly the failure
+to make it mean anything. **"Lets it go" is not accurate and is contradicted by
+the line the chapter chooses to end on.** Line 269 exists for no other purpose
+than to say she does not let it go, and the "starts over" is the whole point of
+the sentence.
+
+**On the finding and on the author's reading, plainly:**
+
+- The finding's claim that ch 15 "has her do the opposite at length" **overstates
+  the length**. This is two sentences and a closing line, not a passage. If the
+  finding was written expecting several paragraphs of Chloe working the problem,
+  it will not find them.
+- The author's own reading, that ch 15 does seem to have her let it go, **is not
+  what the text says.** Line 269 is unambiguous, it is the last thing the chapter
+  says about her, and it is the reason the beat lands three chapters later when
+  Theo reads the file and Chloe types "theo that was a drill" (ch 32).
+
+The old synopsis is therefore wrong on the second clause and should be revised.
+The finding is right in substance and wrong about the scale.
+
+---
+
+## 6.2 The ch 6 last dinner: negative numbers, wound care, the robot arm
+
+The old synopsis says of the last dinner: *"she recites the month to her father -
+fractions, negative numbers, a bridge that held eleven pounds, karate, wound
+care, CPR, Spanish, a robot arm, a room-sized computer kept cold."*
+
+This item has a moving answer and both states need recording.
+
+**State at the start of this session (before commit `fbb5424`):** none of the
+three appeared in ch 6. The dinner list ran Gary/CPR, the bridge, the pool,
+fractions, Spanish, signing, the language puzzle, wood shop, cooking, the
+paintings, the computers and the machine room, chess, karate, nerf, and wood
+shop again. Negative numbers existed only in ch 5 line 73, as an unattributed
+question from the back of Mr. Baptiste's class. The robot arm existed only in
+ch 9 line 131, where Chloe asks in the car whether the robot arm on the second
+floor is the same one or a newer one, which is a reference back to a beat that
+was not on the page anywhere. Wound care did not appear in the book at all
+outside the ch 18 surgical block.
+
+**State now:** all three are back in `chapters/06_the_list.md`.
+
+| item | line | current text |
+|---|---|---|
+| wound care | 71 | "Then what you do about a bleed, which is pressure first and the dressing second, and the glue they use on a cut too small to need stitches." |
+| robot arm | 75 | "Then the robot arm on the second floor, which picks a block up and puts it down again for as long as you stand there watching it." |
+| negative numbers | 79 | "Then negative numbers, which go the other way past zero and keep going as far as you want them to." |
+
+**Conclusion: the old synopsis was right about the intended text and the
+manuscript had drifted away from it, not the other way round.** The regression
+has been fixed by another agent during this session and no action is needed on
+this item. The ch 9 robot arm reference now has its antecedent again.
+
+---
+
+## 6.3 Enrolment: every headcount in the manuscript against the curve
+
+The curve the author has settled on: roughly 100 children a year, Chloe's cohort
+the oldest, so enrolment grows with her. About 200 when she is in third grade
+(school year 2013-14, ch 11), closer to 1000 in her last year (2022-23, ch 23).
+Interpolating at 100 a year gives the "expected" column.
+
+**Figures that hold.**
+
+| ch : line | date | figure | expected | verdict |
+|---|---|---|---|---|
+| 3 : 135, 3 : 163 | Jul 2012 | "over a hundred children" at the summer session, "four summers running" | ~100 intake | holds |
+| 4 : 7 | Jul 2012 | "a hundred-odd children are in the building" | ~100 | holds |
+| 23 : 14 | Jun 2023 | "eight hundred children who are not graduating today" | ~900 with the 91 | holds; 800 + 91 = 891 |
+| 23 : 17 | Jun 2023 | "the eight hundred on the grass" | as above | holds |
+
+**Figures that break the curve.**
+
+| ch : line | date | grade | figure | curve says | by how much |
+|---|---|---|---|---|---|
+| **14 : 191, 199** | 11 Apr 2017 | 6th | the board "says the whole school", and "**Two hundred students come out of eleven rooms at once**" | ~500-600 | understates by 300-400 |
+| **15 : 31** | autumn 2017 | 7th | Ruth: "**two hundred of us** have talked each other into it", closing "what **the whole school** tastes now" | ~600 | understates by ~400 |
+
+Both are the same figure at consecutive ages, so they will read as a deliberate
+pair to anyone checking, and both are explicitly attached to the phrase "the
+whole school", which removes the escape route of reading them as a year group or
+a building.
+
+**Two supporting numbers in ch 14 line 199 fail with them.** "Eleven rooms" cannot
+hold the whole school at any point after Chloe's first year, since her year alone
+is ninety. And "forty adults need doors to get anywhere and there are only nine"
+puts staff at forty, which is a 1:15 ratio against 600 and a 1:5 ratio against
+200. The forty is only plausible on the 200 reading, so fixing the student count
+in ch 14 means revisiting the adult count in the same sentence.
+
+**One further figure, not an enrolment number but in the same family.**
+
+| ch : line | date | figure | conflicts with |
+|---|---|---|---|
+| 10 : 35 | Apr 2013 | "of **the ninety** who were at camp, twenty-some came back that first fall" | ch 3 : 135 and 3 : 163 "over a hundred children", ch 4 : 7 "a hundred-odd children" |
+
+Ninety versus over a hundred, for the same four weeks, ten months apart in the
+text. On the curve the camp cohort ought to be about a hundred, which makes ch 3
+and ch 4 right and ch 10 the outlier.
+
+**Not a break.** Ch 16's "a hundred and forty machines checking in with each other
+about the weather" is network hosts, not students, and is fine against any
+enrolment. Every "ninety" attached to Chloe's own year (ch 11 : 159, 11 : 177,
+15 : 336, 18 : 13, 18 : 19, 18 : 39) is a cohort figure and does not bear on
+enrolment at all.
+
+**The old synopsis's version.** It asserts "eight hundred students below the first
+graduating cohort", which is right, and separately has Hearn holding "the library
+alone for forty minutes against two hundred children", which imports the ch 14
+figure. Correcting ch 14 will strand that sentence too. See 6.5.
+
+### 6.3a The related ninety / ninety-one split
+
+Not part of the enrolment question, but it will be caught by the same pass. The
+cohort is ninety in the early chapters and ninety-one from ch 19 onward, and the
+two overlap.
+
+- **Ninety:** ch 11 : 159 "ninetieth of ninety"; ch 11 : 177 "ninety names down the
+  side"; ch 15 : 336 "thirtieth out of ninety"; ch 18 : 13 "on behalf of ninety
+  people"; ch 18 : 19 "ninety of them at it"; ch 18 : 39 "a box of ninety";
+  **ch 22 : 41 "the same ninety people"**.
+- **Ninety-one:** ch 19 "Fifty-two in the year pass and thirty-nine do not" (= 91);
+  ch 21 : 5 "the same ninety-one people since she was seven"; ch 21 : 61 and 63
+  "ninety-one applicants"; ch 21 : 179 "Ninety-one out of ninety-one"; ch 23
+  throughout; ch 34 : 7 "a file on all ninety-one of them".
+
+Ch 21 and ch 22 are adjacent and disagree. The old synopsis reproduces the split
+rather than resolving it: its character section says "Ranking is within the
+Halstead year of ninety" while its arc says "ninety-one of them apply".
+
+---
+
+## 6.4 Who teaches what: where the two documents disagree
+
+| subject / event | old synopsis says | manuscript says | citation |
+|---|---|---|---|
+| Defensive Watch doctrine | Sinclair wrote it; Sinclair is the ex-SEAL | Nothing in the manuscript attaches the doctrine to anyone, or identifies Sinclair as the SEAL. The SEAL exists only as an unnamed line on the faculty page Meg reads | ch 3 : "They've got a guy who was a SEAL"; ch 13 : 91-104 "a man from the office spends an hour on Watch" |
+| Paintball | Sinclair "runs the paintball exercise" | **Coach Bell** hands the markers out and runs it | ch 13 : 65, 13 : 67 |
+| Coach Bell's gender | "Female (inferred ... Bell's gender is not explicitly stated - flag for the author)" | **Male.** Bell is "he" twice, in two chapters | ch 14 : 25 "'Keep your eyes off each other,' **he** says"; ch 15 : 13 "'That's the two of you to sort out,' **he** says, buttoning the pocket" |
+| Kowalczyk's gender | "Male" | **Female.** "she" and "her" throughout, in three chapters | ch 13 : 39 "Kowalczyk has the clock in **her** hand"; ch 17 : 49 "keeping **her** eyes on the board"; ch 18 : 87 "up on **her** toes ... while **she** talks" |
+| Dr. Sandoval's gender | "CONFLICT - 'he' in ch14, 'she' in ch25 ... a genuine pronoun swap and needs fixing" | **No conflict remains.** Sandoval appears once, in ch 18, and is "she" and "her" throughout | ch 18 : 129-141 |
+| Mr. Amberg's subjects | Law only | Law and contracts, **and cryptography**, **and** the exit interviews | ch 16 (Amberg on the sequence of breaking locks); ch 16 (the state code on the desk); ch 22 |
+| "Why do you flip it" | attributed to an unnamed Halstead mathematics teacher | **Mr. Baptiste, at the July 2012 camp**, and he is named | ch 5 : 61-71; ch 6 |
+| Mr. Hearn's subject | "Writing and history" | Writing and essays. Political history is a separate slot with a different, unnamed teacher and a wall of pencil | ch 10, ch 11 (politics); ch 13, ch 14, ch 21 (Hearn) |
+| Hearn's last stand | "Holds the library alone for forty minutes against two hundred children" | Twenty past three to eighteen minutes to four, so **twenty-two minutes**, against **eleven students** rising to twenty | ch 14 : 205-209 |
+| Pruitt's commentary | "Four years of Chloe's work assessed in two words" | "his entire commentary across four years having come to a handful of sentences," and the manuscript gives at least four of them | ch 19; ch 15 ("Your heat's wrong and it has been all afternoon"; "You lost the curve on the second turn"); ch 17 |
+| Bell on the arrow count | "says the counting is the whole subject and doesn't say so on day one" | Bell says it **on day one**, in the briefing. Working out that it is a counting problem takes Chloe until the third week, which is her realisation and not his concealment | ch 14 : 25 against ch 14 : 31 |
+| Ruth and negative numbers | "she gets fraction division partway through the explanation at six and asks whether it holds for negatives" | The negatives question comes from "somebody ... from near the back", unattributed. **Ruth asks the zero question**, which is the one that breaks | ch 5 : 73 vs ch 5 : 79 |
+
+**Staff the old synopsis omits entirely**, all of whom teach a named subject on the
+page: **Voss** (marksmanship and the turret, ch 17-18), **Mrs. Sun** (Mandarin,
+ch 12), **Vasquez** (chemistry, ch 12), **Hark** (the two-hundred-dollar money
+course, ch 18), **Delacroix** (precision driving, ch 19), **Mrs. Okonkwo** (the
+April 2013 tour and the block sheets, ch 9 and ch 11), **Sanders** (materials
+postdoc, ch 16-17), **Mrs. Adeyemi** (kitchen, ch 15), **Mr. Baptiste** as a named
+person (ch 5-6), **Deb** the camp swimming instructor (ch 5, and distinct from the
+Deb at the translation company in ch 28).
+
+---
+
+## 6.5 Other assertions the manuscript no longer supports
+
+| # | old synopsis | manuscript | citation |
+|---|---|---|---|
+| 1 | Chloe "takes a translation job and **a state school** and waits" (and the timeline: "19 \| Translation job, state school, the blog") | **She takes Georgetown, and rejects the state school explicitly, with four reasons.** This is a whole scene and the closing beat of ch 23 | ch 23 : 206, 23 : 212; ch 22 : 127 |
+| 2 | Sam "handles it in **fifty-one seconds**" | **Twenty-two seconds**, said out loud by Ruth, and corroborated four years later as the one number all seven witnesses agree on | ch 20 : 93; ch 34 : 31 |
+| 3 | "the **first students ever** to do it" | "the first to sneak out **in ten years**" | ch 20 : 5 |
+| 4 | the sneak-out is at "sixteen or seventeen", and the timeline files it at "~14" with "*Date needs pinning*" | Dated. **June 2022**, Chloe is sixteen | ch 20 dateline |
+| 5 | "in **eleven weeks** Ruth argues it into a proof" (and the timeline: "21 \| 11 weeks") | **Sixteen weeks**, stated twice | ch 32 : 5; ch 35 : 143 |
+| 6 | "research posts at **three times market**" | No multiple of market appears anywhere. The offer is $135,000 to start, plus housing, food, a car, medical, and a paid degree with the post held open | ch 22 : 33 |
+| 7 | "**eighty of them leave anyway**" is stated as though eighty-one names were offered | Ninety-one names go up over nine days; **eleven** say yes and **eighty** say no. The offer goes to the whole year, not to a shortlist | ch 22 : 87-93 |
+| 8 | "There has never been a graduation, so they **put out too many chairs**" | The manuscript says the exact opposite, at length and as a set piece: every family confirmed a headcount by 1 May, the order matched it, the contingency stack at the tree line went untouched, and the programs ran out even | ch 23 : 11 |
+| 9 | "A Caltech representative reads an internal paper for **six hours**" | Sits down at nine, stands at ten to four: **about seven** | ch 21 : 79, 21 : 83 |
+| 10 | "**Sam** looks at MIT's four percent admission rate and concludes it's marketing" | **Chloe** raises the four percent, alone on the floor of her room with the letters spread out. Sam says only "They lie"; the store analogy is Ruth's | ch 21 : 159-181 |
+| 11 | Timeline: at ten, "First fighting score: **31 seconds**" | Her first 10v1 score is **four seconds**, then six on her third go; the best in the room that afternoon is nine; she reaches eleven by June. Thirty-one appears nowhere | ch 13 : 49, 13 : 51, 13 : 61 |
+| 12 | Timeline: at twelve, "Fighting: **38 seconds**" | **Twenty-four seconds** by Christmas at twelve, ranked thirtieth of ninety | ch 15 : 336 |
+| 13 | "paintball and arrows at **eleven**" | **Paintball at ten** (ch 13, Sept 2015 - April 2016); arrows at eleven (ch 14) | ch 13 : 65 |
+| 14 | Timeline: at eight, "Chemistry, statistics, programming, logic, ethics, first aid on a clock, wood shop, textiles, cold-water rescue" | At eight the sheet is mathematics, writing, literature, political history, **French** and **logic**, plus five fixed afternoon blocks. Chemistry, statistics, biology, first aid and textiles all arrive at **nine**. **Programming never appears on Chloe's sheet at all** - ch 12 has Kavi told it is on every ten-year-old's sheet and refused it | ch 11 (age 8); ch 12 (age 9) |
+| 15 | Theo "assumed for **seven years** that the guy just quit" | "**nine years**" | ch 29 : 55 |
+| 16 | "**Six years** of passive surveillance producing no content from the graduates' channel" | The standing line has been retyped at least **eleven** times, "the handwriting changing often enough over **eleven years**" | ch 34 : 16 |
+| 17 | Ruth at MIT "**files a complaint**" | She is handed a petition form that needs a faculty signature she has not got, and **never files it**; the pamphlet stays on the counter | ch 31 : 11 |
+| 18 | Whitaker: "Two visits, **seven months**" | Two visits, October and the first week of November; the investigation takes **ten weeks** | ch 30 : 31, 30 : 35 |
+| 19 | Chloe "Bad at: ... **the forge (four years, one hook)**" | The forge is one of the things she is good at. Sam says a hook of hers beats anything else down there; she scraps three hinges herself for a seam slightly off; the eleventh corner joint goes on the shelf over her desk; Pruitt tells her to take the tongs she made | ch 15; ch 14; ch 17; ch 19 |
+| 20 | Chloe "Bad at: ... **fencing by sound**", and the unplaced list has "fencing both hands then by sound" | Fencing goes to **both hands**. Nothing in the manuscript has anyone fence by sound | ch 16; ch 17 |
+| 21 | Owen "was one of the roughly eighty families out of ninety who **didn't have a parent in a hotel** half a mile away" | Kavi says flatly that Owen wanted to stay, was keeping up, and that "his mom came and that was the whole of it". His mother did come | ch 10 : 89-95; ch 5 |
+| 22 | Fen: "**Gender: unstated** ... One line, never returns" | Fen is "she" throughout, and returns three times after ch 10: the quartz in November (ch 11), the forty-dollar loan against a table saw (ch 18), and the Michigan application (ch 21) | ch 10 : 27-33; ch 11; ch 18 : 105; ch 21 : 21 |
+| 23 | "Dad (**unnamed**)" | He is **Dave** on the page, repeatedly, and Meg is **Meg** | ch 3; ch 9 : 113; ch 17; ch 23 |
+| 24 | Meg has "a **bachelor's in accounting**"; Dad has "a bachelor's in something he doesn't use" | Neither degree is in the manuscript. Meg's job is never named; Dave's involves vendors, contracts and a department that circulates papers | ch 3; ch 12 |
+| 25 | Sam "Being laughed at, **acutely** - one laughing face in a group chat lands hard enough that he won't discuss it for months, which is the only instance in the book of anyone caring what someone else thinks" | The text has Sam let it sit "long enough for people to start bringing it up purely to watch him do it again," which reads as him enjoying the bit rather than being wounded by it | ch 20 : 121 |
+| 26 | Curriculum: "**Poker at real stakes**", "blindfold chess and go", "the lost-position drill", "anthropology", "photography", "film", "conditioning", "navigation with a map and no clock" | None of these are in the manuscript. Chess appears once, at camp (ch 6). The map-and-compass navigation is Sam's, in the **Army** (ch 25). "Negotiation with public scoreboards" **is** supported, by the board in the hallway with Nadia's 81% on it (ch 19) | - |
+| 27 | Chloe's clearance follows "a **Foreign Service pass**" | The manuscript never says she passed. "The result arrives by mail six weeks later. She reads it as having sat an exam." The pass is implied by everything after it and never stated | ch 30 : 25 |
+| 28 | Timeline: "20 \| **Spring** \| Chloe sits the Foreign Service exam" | Three weeks after she turns twenty, so **September 2025** | ch 30 : 21 |
+| 29 | The whole chapter column of Part Three ("Watch", "Parking Lot", "16A", "17A", 19-30) | Stale. There are now 35 numbered chapters, no collisions, and a dateline on every one | - |
+| 30 | Part Three's presentation-order note: "ch1 runs January -> October -> November but happens October -> November -> January" | Ch 1 now runs in order: September, October, November, December, January, February, with a dateline saying so | ch 1 dateline |
+
+---
+
+## 6.6 In the manuscript, absent from the old synopsis
+
+Listed roughly in book order. These are not thin references; each is a scene or a
+sustained thread.
+
+- **Ch 12 as a whole.** Mrs. Sun and the four tones and the three fixes; Vasquez
+  making her isolate one variable across four consecutive Fridays until she writes
+  "glassware" in the notebook; textiles and the three shirts, where the fix is to
+  trace a shirt that already fits rather than draft from measurements; the fish
+  tank and Kavi's confirmation bias, named from statistics and used on him at
+  meals; Sam getting over the overhang on 11 May in front of thirty people; riding
+  with Priya and quitting by not turning up; the vendor proposal read over her
+  father's shoulder.
+- **Ch 14's essay mechanic.** Twenty-eight questions out of a hat, one each, seven
+  days, seven thousand words. The old synopsis has the area bombing essay but not
+  the machine that produced it, and the machine is the point of that scene.
+- **Ch 15's bread test** and the four-hour tomato stock count, and the Thanksgiving
+  letter home about a lit gas oven, which is one of only three times the school
+  and the family collide directly.
+- **Ch 16's teaching thread in full.** Marek, the blank sheets, "a receipt is a
+  different object from work", Chloe having to fail him, and the structural fact
+  that because her cohort is the oldest, the twelves are the only year taught by a
+  student and the thirteens the only year with no teacher of their own. The old
+  synopsis has the fact that teaching starts at thirteen and none of this.
+- **Ch 16's Sanders investigation.** Six months of instrument logs against a paper
+  reporting 1,100 of 4,000 runs; nineteen days across two tables; the March
+  recalibration; four pages read standing up.
+- **Ch 17's specification failure.** The two-page clamp spec, Dov building exactly
+  what she wrote, and "I wrote down the pressure, the travel and the tolerance, and
+  missed the one that actually matters." Also the seven thirteens all taught one
+  thing backward and Chloe going in to say so, and the nine-thousand-line text
+  renderer, and Ruth's forty milliseconds of silence.
+- **Ch 18's turret lane** as an event: the five weeks in which every card in the
+  year reads zero, Odile scoring first on 11 November, Chloe nine days later, and
+  then the plateau at sixty. And the box of ninety range cards handed over with no
+  lock on it, and the eleven students flattened into the same narrow band.
+- **Ch 18's money course** beyond the sentence it gets. Rustem's nine motors,
+  Chloe's three loans, and Hark at the board: "You had the right numbers and the
+  wrong answer" and "you are barely beating inflation."
+- **Ch 19's mark-scheme scene.** Amberg, the four rows printed under the answer, the
+  four blank rows on her own paper, and "There was exactly one reader like that in
+  this building in April, and the man marking your paper was somebody else
+  entirely." This is the load-bearing scene of the bar thread and the old synopsis
+  reduces the whole thing to "Fails by four."
+- **Ch 19's precision driving** with Delacroix, the staged brake failure, the wet
+  skid pan, and "You hit what you look at."
+- **Ch 27's second half.** Four hundred interviews, and specifically the shape of
+  the failure: the first question about something they built is fine, and the
+  second question, about the edge of what they built, is where most of them run out
+  of road. The old synopsis has the take-home pass rate and not the diagnosis.
+- **Ch 28's "saying everything twice" thread,** which is the whole chapter's spine:
+  Chloe learning to build the comparison before anyone asks for it, the Tyler rate,
+  and filing the habit as ordinary courtesy. Also the forklift decimal, which is the
+  one place in the book where her competence prevents a physical accident.
+- **Ch 30's clearance interview in detail.** What she volunteers unprompted (that
+  the school's bar has no legal standing), what she withholds and why, the answer
+  about the swings when he asks who funds the school, and Whitaker writing down the
+  reasoning along with the answer every time.
+- **Ch 33's nine pages.** The old synopsis has "Chloe writes nine pages of rules"
+  and nothing else. The pages are the chapter: page one's checklist, the middle
+  section defining "noticed" as a specific confirmable event and deliberately
+  excluding a blip that settles, and **page seven's stop clause**, one line, any one
+  of the seven, no vote and no reason, with Ruth losing the argument to Nadia about
+  requiring a reason first.
+- **Ch 35's page-four decision,** which is the hinge of the ending. Eli reads the
+  clause he helped write, decides on the only reading he can defend that this does
+  not count as being noticed, and keeps that decision his own rather than the
+  group's. And Ruth reading page seven twice at the end and closing the laptop
+  without invoking it. The old synopsis has the nine minutes and neither of these.
+- **Structural things:** the fixed five-day afternoon block at eight and the chosen
+  block from nine onward; the four-sheet elective list with a pencil on a string;
+  choir, and why she quits it; the Sunday alcove phone calls decaying from fifty
+  minutes to twenty; the library with no card and no limit, which is the direct
+  answer to ch 1's four-at-a-time librarian; Priya's phone in the lectern drawer as
+  the cause of the chat's second architecture; Ruth's brother getting in and
+  starting nine years behind her.
+
+---
+
+## 6.7 Manuscript-internal problems found while checking
+
+Not disagreements with the old synopsis, but things the next pass should see.
+Listed by severity.
+
+1. **Ch 33 : 129 contradicts ch 30 : 113 on Chloe's age.** Ch 30 ends "She starts in
+   January. She's twenty-one in August," which puts her twenty-first birthday in
+   August 2026. Ch 33, dated May-June 2026, says "Chloe turns twenty-one somewhere
+   in the middle of the five weeks." Both cannot be true. Every other age anchor in
+   the book supports an August 2005 birth and therefore supports ch 30.
+2. **Ch 30 : 53 contradicts chapters 8 to 10 on when she started.** Chloe tells
+   Whitaker "I started the September I turned seven," which is September 2012. In
+   September 2012 she is in Ms. Vance's second-grade class at her local school
+   (ch 7), and she does not reach Halstead until April 2013 (ch 9, ch 10). Her own
+   next sentence, "she is the reason it took a year to arrange," fits April 2013 and
+   not September 2012, so the line is at odds with itself as well as with the book.
+3. **Ch 17 : 27-33 and ch 18 : 13 use "Aymar" as though it were somebody other than
+   Ruth.** Ruth's surname is established in ch 10 : 23 ("Aymar. A, Y, M, A, R.").
+   Ch 17 then has Voss address "Aymar" at the clay trap and, four lines later,
+   "**Ruth** spends the rest of the term making sure people know the stopwatch it
+   came off was **Aymar's**," which reads as two people. Ch 18 : 13 has "Aymar asks
+   why" in a chapter where Ruth is otherwise always Ruth.
+4. **The government file predates the school it is about.** Ch 3 (July 2012) says
+   the school is four years old and has run four summers, so founded around 2008-09.
+   Ch 29 (Oct 2025) says the file "goes back nineteen years", and ch 34 (June 2026)
+   heads every page with "a case number nineteen years old", both landing in
+   2006-07. Ch 32's money runs to "around 1998 or 2001", which is fine, but the file
+   opening two years before the school opened is not, unless it is deliberate and
+   nobody in the book remarks on it.
+5. **Ch 34 : 25-27 relocates the ch 20 robbery.** Ch 20 has them leave the diner,
+   walk on, find "a shopping cart in the lot behind a hardware store", and meet the
+   seven men "four blocks later". The federal report in ch 34 has them in the Waffle
+   House "car park" with the trolley and has the seven men "come across the car
+   park". A report reconstructed from witnesses could plausibly compress the
+   geography, but nothing marks it as compression. Ch 34 also names the diner as a
+   Waffle House, which ch 20 never does, and switches to British "car park" and
+   "trolley" against ch 20's "lot" and "shopping cart".
+6. **Ch 30's clearance sequence is tight to the point of overlapping.** The exam is
+   three weeks after her twentieth birthday (September 2025); the result arrives six
+   weeks later (late October); Whitaker first calls "the second week of October",
+   before the result. The investigation "takes ten weeks" from a questionnaire
+   submitted after that, which puts completion in December, but the clearance
+   "comes through in the autumn".
+7. **Ch 33 : 47 puts Ruth in a dorm room** ("cross-legged on her own dorm room floor
+   in Cambridge with a roommate asleep two feet away") in May 2026, her third year.
+   Ch 32 and ch 35 both have her on the floor of her own apartment.
+8. **Ch 23 : 8 says the graduating class "first cut" the corner joint "at
+   fourteen".** Chloe cuts it in March of ch 14, when she is eleven. It says "half of
+   them", so it survives if the joint is taught in more than one year, but it reads
+   as a single shared memory.
+9. **Ch 23 : 17 has the head of school describe the class as "four years, some of
+   them longer than four".** Chloe's cohort has been in the building eleven years and
+   is the oldest in it. Unless he means a senior phase, the sentence describes a
+   different school.
+10. **Ch 30 : 59 lists Arabic among Chloe's eleven languages.** Arabic is Ruth's
+    language everywhere it appears on the page (ch 13, ch 14, ch 15). Korean and
+    Swahili, also on the list, appear nowhere else in the manuscript. This may be
+    intentional offstage coverage, but Arabic in particular reads as a swap.
