@@ -14,7 +14,7 @@ Aymar asks why, out loud, in the tone of somebody asking on behalf of ninety peo
 
 "Because a gun you can only point at a man is a weapon," Voss says, "and a gun you can put a bullet onto a bullet with is a tool. You have had a year of the first one. This year you get the second."
 
-He delivers it like a thing he has said four hundred times to four hundred students, and it is round the year by Thursday and back at Chloe's own table twice before the end of the month, quoted with the flat confidence of something printed in a manual. In February, five weeks into a run of cards that all read zero, she goes looking for where it comes from, first in the library and then in the range office, and the oldest instructor on the staff tells her that the first time he heard it was from Voss.
+He delivers it like a thing he has said four hundred times to four hundred students, and it is round the year by Thursday and back at Chloe's own table twice before the end of the month, quoted with the flat confidence of something printed in a manual. In November, five weeks into a run of cards that all read zero, she goes looking for where it comes from, first in the library and then in the range office, and the oldest instructor on the staff tells her that the first time he heard it was from Voss.
 
 For five weeks every card in the year reads zero, so that the range in October is the sound of a great many people missing, four sessions a week, ninety of them at it. In the second week Kavi does the arithmetic and announces at dinner that at this rate somebody will hit something in about March, and Priya tells him to eat.
 
