@@ -11,7 +11,7 @@ This is the first September that finds every one of them somewhere else. Eli, th
 Eli types with his phone propped against a monitor, eyes staying on whatever's actually on the screen. Kavi answers from the same desk he does everything else from, one hand still turning over whatever object was already sitting on it. Ruth writes standing up, phone in one hand and a textbook open in the other, and finishes a whole exchange while keeping pace with whatever she was doing before it started. Nadia texts one-handed while she counts a till with the other, keeping track of both at once. Theo answers standing at a window with the blinds already down, phone held low and close, the way he'd hold a document above his clearance. Sam thumbs the keyboard with the same economy he uses on everything else, three words and stop, because someone behind him is already waiting for the phone. Priya replies from wherever she's charging it, propped against a boot, a bag, once against the neck of a horse that stood still for it.
 
 
-Some of them answer inside a minute no matter the hour, Eli most nights, and Kavi from the same building he's always slept in. Others answer in bursts, three messages at once after a six-hour gap, a reply to something asked at nine landing after midnight because a shift only just ended. A message sent to the whole group at three in the morning gets an answer from somebody within five minutes. It has for nine years.
+Some of them answer inside a minute no matter the hour, Eli most nights, and Kavi from the same building he's always slept in. Others answer in bursts, three messages at once after a six-hour gap, a reply to something asked at nine landing after midnight because a shift only just ended. A message sent to the whole group at three in the morning gets an answer from somebody within five minutes. It has for five years.
 
 
 A message can sit read for hours, and it means only a shift running long, a supervisor still talking, a horse three switchbacks from cell service. Whatever he's in the middle of at the agency keeps running through a joke about somebody's boss, so Theo reads everything within minutes of it landing and sometimes waits a full day to answer it. Nadia reads fast and answers fast, except during the two hours after the shop closes, when she's doing the books and the phone goes face down on the counter. Sam goes dark for stretches at a time, the read receipt stuck wherever it last landed, and then three replies arrive inside the same minute once he's got the phone back. A message can open with guys, or ok, or silence before the next fact, arriving before whoever's reading has gotten past the first word.
@@ -151,7 +151,7 @@ ruth: dont
 sam: tidally locked
 
 
-ruth: sam that is not even remotely what tidally locked means and you have had nine years to learn it properly
+ruth: sam that is not even remotely what tidally locked means and you have had eleven years to learn it properly
 
 
 sam: it still fits
