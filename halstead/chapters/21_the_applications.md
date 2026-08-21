@@ -6,17 +6,17 @@ Chloe has been compared to the same ninety-one people since she was seven, and t
 
 Everybody applies the same way. The Ivies first, eight of them, the way you buy a lottery ticket and then forget you own it. Then the college one of your parents went to. Then the community college an hour from home, which nobody says out loud but everybody lists. Then one strange one, picked for whatever reason a seventeen-year-old picks things: Bex applies to a place in Vermont because her cousin says the food is unbelievable, and Marek applies to one in Arizona because a woman he watched give a lecture online teaches there.
 
-Ruth has a laptop open on the arm of the couch in the third-floor common room, refreshing a portal that has told her the same thing for six days running, a board game abandoned on the table between them since dinner. Sam has a card in his hand and hasn't played it in a while, checking his phone instead, setting it face down on the table and checking it again inside a minute.
+Ruth has a laptop open on the arm of the couch in the third-floor common room, refreshing a portal that has told her the same thing for six days running, a board game abandoned on the table between them since dinner. Sam has a card in his hand, turning it over and over, checking his phone every few minutes, setting it face down on the table only to check it again inside the next one.
 
-"You're not doing anything with that," Ruth says, without looking up.
+"That card's been in your hand ten minutes," Ruth says, eyes on her own screen.
 
 "I'm getting to it."
 
-Chloe is on the floor with the printed list of deadlines in her lap, going down it line by line with a pen even though nothing on it has changed since the last time she checked. She crosses out the same line twice, for no reason she could give anybody who asked her to explain it.
+Chloe is on the floor with the printed list of deadlines in her lap, going down it line by line with a pen even though nothing on it has changed since the last time she checked. She crosses out the same line twice, for no reason she could name.
 
-"What happens if none of them," she says, not quite a question.
+"What happens if all fourteen say no," she says, not quite a question.
 
-"Then you go to the state school," Sam says, "same as you were always going to," and picks his card back up without playing that one either.
+"Then you go to the state school," Sam says, "same as you were always going to," and picks his card back up, turns it over once, sets it down again.
 
 Chloe's list runs to fourteen. The eight, the state school, her mother's college, the community college, one in Michigan because Fen said the winters there are worth seeing once, and two she picks off a phone screen in about nine minutes after lights-out because they came up on the same page as the one in Michigan.
 
@@ -88,7 +88,7 @@ By noon he has filled four sheets on both sides, most of it his own working: a c
 
 He stands at ten to four, hands the sheets over to be read, and waits while she reads them.
 
-"Is the third author available to talk?" The methods section credits her by name for the part he couldn't get to check out on his own.
+"Is the third author available to talk?" The methods section names her for the one part he has no way to check on his own.
 
 "She's sixteen," the escort says. "She's in class until four."
 
@@ -102,7 +102,7 @@ ________________
 
 Eleven of the flagged schools send somebody.
 
-The school says yes to all eleven. Desks in the long reading room, dining privileges at the same tables everyone already eats at, a room to work in with a door that locks, and permission to sit in any class they name, provided they name it in writing forty-eight hours ahead and a member of staff is in the room with them the whole time. Two requests never clear: the fighting hour, and the range, whichever afternoon each one falls on that week. The office gives a different reason each time it's asked, and keeps producing the paperwork for everything else without comment.
+The school says yes to all eleven. Desks in the long reading room, dining privileges at the same tables everyone already eats at, a room to work in with a door that locks, and permission to sit in any class they name, provided they name it in writing forty-eight hours ahead and a member of staff is in the room with them the whole time. Two requests get the same answer every time: the fighting hour, and the range, whichever afternoon each one falls on that week. The office produces the paperwork for everything else the same day it's asked, and gives a different reason for those two each time.
 
 They arrive within a week of each other that winter, from Yale, Stanford, Duke, Caltech, MIT and six others, and by the first evening they have found each other at one end of the visitors' table and started comparing notes the way scouts compare notes on the same prospect.
 
@@ -138,7 +138,7 @@ Another asks Sam what he's good at, expecting a list with some hedging in it.
 
 The rep asks who Odile is. Sam points across the dining hall with his fork.
 
-One evening a rep from Chicago, walking back from dinner by the long way, tries the handle on an unmarked door on the research floor. It doesn't give. There's no sign on it, just a badge reader and a camera above the frame. He mentions it that night, half a joke, and the Duke rep says he found a door exactly like it on the Monday, same floor, same reader, same camera, and got exactly as far.
+One evening a rep from Chicago, walking back from dinner by the long way, tries the handle on an unmarked door on the research floor. The handle holds. There's no sign on it, just a badge reader and a camera above the frame. He mentions it that night, half a joke, and the Duke rep says he found a door exactly like it on the Monday, same floor, same reader, same camera, and got exactly as far.
 
 The Duke representative, the one who'd collected "Sport," then "Athletics," then "Recreation," tries Ruth in the reading room one afternoon. "What's the hardest thing you've done here?"
 
@@ -146,13 +146,13 @@ The Duke representative, the one who'd collected "Sport," then "Athletics," then
 
 "Pick the measure you'd defend."
 
-Ruth looks up at that, closing the laptop over one finger to keep her page. "Time, not difficulty. I gave up two years of Saturdays running someone else's practice sessions, and the practice itself was never the hard part of it." She opens the laptop back up. "Sustained is harder to fake than hard."
+Ruth looks up at that, closing the laptop over one finger to keep her page. "Time, not difficulty. Two years of Saturdays running someone else's practice sessions, and the sessions were the easy part." She opens the laptop back up. "Sustained is harder to fake than hard."
 
-The rep writes that down and doesn't ask a follow-up, which is its own kind of answer.
+The rep writes that down and moves to the next name on his list.
 
 ________________
 
-Decisions arrive over nine days in March rather than all at once. Nobody has braced for that part right: everyone had pictured a single day, and instead each school posts at whatever hour it decides, and the common room stops being anywhere anyone goes to relax. Ruth's first one lands at four in the afternoon on a Tuesday, in the middle of something else. Kavi stays up past midnight for one that doesn't post until seven the next morning, and he's awake for that one too, phone already in hand before he's out of bed.
+Decisions arrive over nine days in March rather than all at once, the part everyone had braced for wrong: they'd pictured a single day, and instead each school posts at whatever hour it decides, and the common room turns into somewhere people go to watch each other's phones. Ruth's first one lands at four in the afternoon on a Tuesday, in the middle of something else. Kavi stays up past midnight for one that posts at seven the next morning instead, and he's awake for that too, phone already in hand before he's out of bed.
 
 Ruth gets MIT and calls home. Her mother puts her on speaker so her father can hear from the next room, and the two of them talk over each other trying to ask the next question first. Kavi gets MIT, Caltech and Chicago, and is thinking about the next item on his list before dinner. Sam gets eleven of twelve and wants to know, immediately, what happened to the twelfth.
 
@@ -162,7 +162,7 @@ Chloe gets twelve of fourteen.
 
 Outside her window the snow along the path has gone soft and grey, the last of it, three weeks off the end of term. She sits on the floor of her room with the letters spread in two uneven rows, the ones that start with we are pleased and the two that don't. She reads the twelfth a second time before she believes the count, then a third, checking the name on the envelope against the name on the letter inside it, in case an office somewhere has put two files together that both say Kessler.
 
-The arithmetic has gone wrong somewhere, and it isn't in the letters. The middle of a year gets the state school. She has twelve.
+The arithmetic has gone wrong somewhere, not in the letters. The middle of a year gets the state school. She has twelve.
 
 "It said four percent," she says, when Sam finds her there an hour later, still on the floor.
 

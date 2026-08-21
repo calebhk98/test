@@ -6,7 +6,7 @@ Mr. Amberg runs the exit interviews himself, fifteen minutes each, ten or eleven
 
 The rest of April carries on exactly as scheduled around it: the twelves still have History at ten every morning, the forge stays open Thursdays and both Saturday sessions, and lunch still runs from noon to half past, the same as any other week in the term.
 
-What changes is dinner. By the end of the first week the interviews have become a fixture of the conversation the way an exam result would be, except that nobody is comparing scores; they are comparing decisions, which is a stranger thing to sit through with a fork in one hand. A boy from the materials wing tells the whole table one night that he turned it down flat, that his mother would stop speaking to him for a decade if he skipped actual college for a paycheck, in the specific tone of somebody rehearsing a line he means to use again at home. Three people laugh. He goes back to his tray and lets the subject close there for the night. A girl two years below Chloe comes back from her own slot grinning, drops into the chair across from a half-eaten plate, and says the whole thing twice, the number, the car, all of it, as though saying it again will make it hold still long enough to be believed. The two boys next to her let her have it, volume included, and nobody at that end of the table pretends to be talking about anything else for the rest of the meal.
+What changes is dinner. By the end of the first week the interviews have become a fixture of the conversation the way an exam result would be, except that the whole table is comparing decisions instead of scores, a stranger thing to sit through with a fork in one hand. A boy from the materials wing tells the whole table one night that he turned it down flat, that his mother would stop speaking to him for a decade if he skipped actual college for a paycheck, in the specific tone of somebody rehearsing a line he means to use again at home. Three people laugh. He goes back to his tray and lets the subject close there for the night. A girl two years below Chloe comes back from her own slot grinning, drops into the chair across from a half-eaten plate, and says the whole thing twice, the number, the car, all of it, as though saying it again will make it hold still long enough to be believed. The two boys next to her let her have it, volume included, and the whole end of the table stays on it, openly, for the rest of the meal.
 
 Chloe's own slot falls on the Wednesday of the second week, third appointment after lunch. Chairs line one wall outside his office, six of them. The corridor smells like the coffee cart that sets up near the stairwell every April, and the runner's shoes squeak the same two steps on the tile outside the door, morning after morning. She gets there with ten minutes to spare and finds most of the seats already taken: a boy re-reading the same page of a textbook, the words plainly sliding past him each time, and a girl sitting perfectly still with her hands in her lap, staring at the closed door like she's already rehearsed what's behind it, both of them waiting on slots later than hers.
 
@@ -16,21 +16,21 @@ One seat empties while she watches. A boy she half-recognizes from the year abov
 
 "I already had the desk, since I was fifteen," he says, resettling the strap on his shoulder, already moving. "He just made it official." He's three steps past her by the last word, one hand up in a fast, half-formed wave.
 
-The runner calls her name a minute later.
+The runner calls her name a minute later, reading it off the list in the same flat cadence he's used on every name ahead of it.
 
 His office holds a desk, two chairs, and a small clock turned to face only him. A folder is already open on the desk when she sits down, her name typed across the tab.
 
 "Eleven years," he says, before she's fully settled in the chair. "Anything for the file."
 
-"Nothing that isn't already somewhere in that folder."
+"Whatever's already in that folder."
 
-"Four things, then," he says. "Research, full time, starting the day you'd otherwise be walking into a dorm room somewhere. The salary is a hundred and thirty five thousand dollars a year, to start, more once you're carrying your own project instead of somebody else's. Housing, food, a car, medical, nothing coming out of your end for any of it. And if you want the degree on top of the work, you do it here, on your own schedule, we pay for it, and the post stays open until you finish, however long that takes. Six-day weeks the first year, five after that, same as anyone on staff. You'd report to whoever runs your team, same as anyone on staff. Nothing about being eighteen changes any of it."
+"Four things, then," he says. "Research, full time, starting the day you'd otherwise be walking into a dorm room somewhere. The salary is a hundred and thirty five thousand dollars a year, to start, more once you're carrying your own project instead of somebody else's. Housing, food, a car, medical, all of it covered, all of it on us. And if you want the degree on top of the work, you do it here, on your own schedule, we pay for it, and the post stays open until you finish, however long that takes. Six-day weeks the first year, five after that, same as anyone on staff. You'd report to whoever runs your team, same as anyone on staff. Every part of it applies whether you're eighteen or forty."
 
 "Here?"
 
 "Here."
 
-She keeps both hands flat on her knees while she turns it over, the same stillness she'd use leaning across a table when she wants to get something right the first time rather than the second. She's taught the twelves real analysis out of a room two floors below this one, working through the same proofs that were handed to her at the same age by someone who never once made it sound like a favor. She's dropped three flawed hinges of her own into the scrap bin rather than let them stand, and gone back to the forge every Thursday for five years without anyone having to ask her twice, because the standard she was holding the work to was hers before it was anyone else's. None of that has a dollar figure attached to it, and the number sitting on the desk in front of her doesn't touch it either way. Eleven years ago the only thing that mattered about this place was that a letter had her name typed across the front of it, in an envelope she still has, in a drawer she still checks. The folder open on the desk now has the same thing typed on the tab.
+She keeps both hands flat on her knees while she turns it over, the same stillness she'd use leaning across a table when she wants to get something right the first time rather than the second. She's taught the twelves real analysis out of a room two floors below this one, working through the same proofs that were handed to her at the same age, by someone who always made it sound like the ordinary next thing rather than a favor. She's dropped three flawed hinges of her own into the scrap bin rather than let them stand, and gone back to the forge every Thursday for five years without anyone having to ask her twice, because the standard she was holding the work to was hers before it was anyone else's. All of that sits outside any dollar figure, in a place the number sitting on the desk in front of her leaves entirely alone. Eleven years ago the only thing that mattered about this place was that a letter had her name typed across the front of it, in an envelope she still has, in a drawer she still checks. The folder open on the desk now has the same thing typed on the tab.
 
 "I don't think so," she says.
 
@@ -38,7 +38,7 @@ Mr. Amberg's pen stops moving. He sets it down instead of writing with it.
 
 "Reason?"
 
-She takes a moment to find it, turning the folder's edge slightly with one finger before she answers. "If you sat the same exam every year, in the same room, against the same ninety people, and you kept coming out near the top of it, would you ever actually find out if you were good at the exam, or just good against that particular room?" She doesn't wait for him to answer it. "I don't know what's outside this building. Everyone I've ever been measured against my whole life is inside it. Staying doesn't answer that question. It just makes the room permanent."
+She takes a moment to find it, turning the folder's edge slightly with one finger before she answers. "If you sat the same exam every year, in the same room, against the same ninety people, and you kept coming out near the top of it, would you ever actually find out if you were good at the exam, or just good against that particular room?" She keeps going before he can answer it. "I don't know what's outside this building. Everyone I've ever been measured against my whole life is inside it. Staying keeps the question open. It just makes the room permanent."
 
 Mr. Amberg writes it down. He squares the folder against the edge of the desk and opens it once more, the same slow read he gives a mark scheme before he hands it back, running a finger down the last page against whatever he's just written in the margin. He closes it exactly when the clock reads zero.
 
@@ -62,9 +62,9 @@ She finds him in the network room that evening, back against the radiator by the
 
 "Because what I want to do is happening in one building and I'm standing in it," Kavi says, and keeps turning the cable.
 
-"But it's school," she says. "Same building, same people. Isn't the whole point to go find out if any of this holds up somewhere else?"
+"But it's school," she says. "Same building, same people. The whole point is finding out if any of this holds up somewhere else."
 
-"It stopped being school for me a while ago." He sets the coil down on the bench, edges lined up flush with the bench's own edge, and leaves it there. "School teaches you things on somebody else's schedule and grades you on how close you get to an answer that's already written down somewhere. Nobody here has that answer written down. I brought them a false positive rate on Tuesday and nobody in the building could tell me if it was wrong, because nobody had checked it yet. That doesn't happen in a classroom. It can't. The classroom's whole job is already knowing." He looks at her the way he looks at a mark scheme. "It's a lab that also has children in it." He says it flat, the same register he'd use to correct a wrong exponent.
+"It stopped being school for me a while ago." He sets the coil down on the bench, edges lined up flush with the bench's own edge, and leaves it there. "School teaches you things on somebody else's schedule and grades you on how close you get to an answer that's already written down somewhere. Nobody here has that answer written down. I brought them a false positive rate on Tuesday and nobody in the building could tell me if it was wrong, because nobody had checked it yet. That's a research problem, not a classroom one. A classroom's whole job is already knowing." He looks at her the way he looks at a mark scheme. "It's a lab that also has children in it." He says it flat, the same register he'd use to correct a wrong exponent.
 
 Chloe watches him get back to work, the same slow half-turn of the wrist stripping the next foot of cable, and lets him get on with it.
 
@@ -98,7 +98,7 @@ The silence on the line runs long enough, unbroken by the usual kitchen noise, t
 
 "Say that again," her father says. "All of it."
 
-She says it again, and doesn't shorten it this time either.
+She says it again at the same length as the first time, for both of them now.
 
 Her father lets a breath out in one flat exhale, not quite a laugh. "That's not a decision. That's a mistake."
 
@@ -110,7 +110,7 @@ Her father lets a breath out in one flat exhale, not quite a laugh. "That's not 
 
 "Then explain it to me. Because from here it looks like you turned down more money than your mother and I have made in any five years combined, for a reason you haven't said yet."
 
-"If I take it, I already know exactly what the next ten years look like," Chloe says. "I've seen the building. I've seen the work. I've watched what everyone in it does with a bad afternoon and what they do with a good one since I was seven. Nothing about that job would surprise me in the first year, or probably the fifth." She hears her own voice picking up pace and keeps going anyway. "Everyone I've ever been ranked against my whole life is inside those two buildings. I don't know what I'd be if I got ranked against anyone else. Staying doesn't answer that. It just makes it permanent."
+"If I take it, I already know exactly what the next ten years look like," Chloe says. "I've seen the building. I've seen the work. I've watched what everyone in it does with a bad afternoon and what they do with a good one since I was seven. I could tell you what the first year looks like, and probably the fifth." She hears her own voice picking up pace and keeps going anyway. "Everyone I've ever been ranked against my whole life is inside those two buildings. I don't know what I'd be if I got ranked against anyone else. Staying keeps that question open. It just makes it permanent."
 
 "So you're saying no to guaranteed money for the chance of finding out you're not as good as you think you are," her mother says.
 
@@ -120,11 +120,11 @@ A pause, and then her father again, quieter. "What happens if you change your mi
 
 "I didn't ask that."
 
-"You turned down a hundred and thirty five thousand dollars and you didn't ask if you could still take it later."
+"You turned down a hundred and thirty five thousand dollars and left whether it's still on the table later completely unasked."
 
 "No."
 
-Her mother's voice, when it comes back, has the same flat edge she uses reading the fine print on a mortgage refinancing before she'll sign it. "You know the state school isn't free. We've never pretended it was going to be. If this is the four years instead of the guaranteed money, I need you to actually hear that part, not just the part where you get to go find out about yourself."
+Her mother's voice, when it comes back, has the same flat edge she uses reading the fine print on a mortgage refinancing before she'll sign it. "You know the state school costs real money. We've always been straight with you about that. If this is the four years instead of the guaranteed money, I need you to actually hear that part, not just the part where you get to go find out about yourself."
 
 "I hear it."
 
@@ -152,4 +152,4 @@ Her mother's voice, when it comes back, has the same flat edge she uses reading 
 
 "Okay," her mother says back, and there's the small click of her hanging up first.
 
-Chloe sits there a while longer with the phone dark in her lap before she gets up to find something to eat.
+Chloe sits there a while longer with the phone gone dark in her lap, running the call back once from the start the way she runs back through anything still open before she can put it down for the night, before she gets up to find something to eat.
