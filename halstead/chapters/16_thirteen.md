@@ -66,7 +66,7 @@ Eleven laboratories split the year between them, and hers does materials, where 
 
 In cryptography the first term goes entirely on breaking things other people built, substitution, then Vigenere, then a fortnight on why a key you use twice stops being a key, so by November they are working real messages off real systems with real mistakes in them.
 
-Amberg gives them the order of it on the first day, before a single cipher goes up on the board. "You will not build a lock this year. You will open locks other people built, and there is a reason for that order. One, a lock fails in the place the person who built it stopped looking. Two, you find that place by opening the lock, and by nothing else. Three, after thirty of them you know where people stop looking, and that is the whole of what you carry into the first one you build yourself. The other way round, you are guessing what a lock is for."
+Amberg gives them the order of it on the first day, before a single cipher goes up on the board. "You will not build a lock this year; you will open locks other people built, and the sequence is deliberate. One, a lock fails in the one place the person who designed it stopped looking. Two, you find that place by opening the lock, and by nothing else. Three, after thirty of them you know where people stop looking, and that is the whole of what you carry into the first lock you build yourself. The other way round, you are guessing what a lock is for."
 
 Eli gets into everything and takes his time doing it, so when Chloe asks how he took the November set he sits up on the table, swinging one foot, and talks her through it for twenty minutes on the back of somebody's timetable.
 

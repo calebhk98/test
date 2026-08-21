@@ -156,13 +156,25 @@ Drawing is Thursdays, and in the second term, while they spend six weeks on hand
 
 "No, I mean that's a hand, Chloe," Ruth says, "and the thumb's even the right size this time." She puts it back down and carries on to the door.
 
-At the end of term the sheet goes up on the wall with everybody on it in order, and Chloe is ninetieth of ninety, which she reads twice before going to dinner. Dance is Fridays, and she is ninetieth in that too, off the same wall in the same week, but that one she reads once and leaves, because with drawing she found out at the end of term, whereas with dance she can feel it while it is happening, half a beat behind the girl in front of her for fifty minutes, and in February she goes and asks whether she can drop it.
+At the end of term the sheet goes up on the wall with everybody on it in order, and Chloe is ninetieth of ninety, which she reads twice before going to dinner. Dance is Fridays, and she is ninetieth in that too, off the same wall in the same week, but that one she reads once and leaves, because with drawing she found out at the end of term, whereas with dance she can feel it while it is happening, half a beat behind the girl in front of her for fifty minutes, and in February she takes it to the office.
+
+A boy comes out of it ahead of her with the door swinging behind him, and behind the desk is Mrs. Okonkwo, who walked her and her parents around this building in the rain two Aprils ago, with the block sheets laid out in front of her five columns across.
+
+"I want to come off dance, and I've had it every Friday since September, so I've given it a fair go first."
 
 "No."
 
-"It's the only one I'm asking about, and I'm not asking about the other four."
+"It's one hour out of five, and I'm not asking about the other four."
 
-"I know you're not, and it's still no, and it would be no if you came in here about all five." The teacher says it the way she said it to the boy who came in ahead of her. "You've got it on Fridays until June. Come on Friday."
+"I know you're not, and it's still no, and it would be no if you came in here about all five." Mrs. Okonkwo squares the sheets against the desk. "You've got it on Fridays until June."
+
+Chloe puts one hand flat on the edge of the desk and leaves it there. "Then can I move teams on the Wednesday instead, because that's a swap and not a drop, and I'd still be doing the same hour in the same place."
+
+"Which team are you on."
+
+"The one I've been on since the first week, and there are two people on it, and I've given it two whole terms before coming in here about either of them."
+
+"Teams are for the year, and you're the third one in here about a team this week." Mrs. Okonkwo writes the date at the top of a clean sheet, then turns the block sheet round on the desk so Chloe can read it, ninety names down the side and the five columns running across every one of them. "Ask me in June and it'll be no in June, and you've still got the Friday. Come on Friday."
 
 ---
 

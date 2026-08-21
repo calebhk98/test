@@ -2360,7 +2360,7 @@ Her mother leans back against the banister. "You're not at school, and that libr
 
 Then there is the thing Chloe has not built at all, then the stairs, then the door.
 
-Her mother stays in the hall, then goes through to the kitchen, where her father comes in from the garage with his hands full.
+Her mother stays in the hall, then goes through to the kitchen, where her father comes in from the garage.
 
 "What was that, I could hear the two of you all the way out in the garage."
 
@@ -2426,19 +2426,13 @@ Somebody down the line says that's impossible.
 
 By the end of the first month everybody in the year can do it at will, forty a side, the hour a wall of noise and darts coming down all over the floor. Games run the full hour, because both sides get good at the same rate and neither ever runs out of people, and Chloe wins three in a row in October, but what she plays for is the sound two darts make when they meet and burst.
 
-The afternoon block is a different thing on each day of the week, Nerf on Mondays, wood shop on Tuesdays, team sports on Wednesdays, drawing on Thursdays and dance on Fridays, with the school picking all five, everybody doing all five, and no arguing with the sheet.
+The afternoon block is a different thing on each day of the week, Nerf on Mondays, wood shop on Tuesdays, team sports on Wednesdays, drawing on Thursdays and dance on Fridays, with the school picking all five and everybody doing all five.
 
 In wood shop you make a tool and then use that tool to make the next one, while the man who runs it will tell you what is wrong with a tool and then walk away while you work out what to do about it. Chloe makes a mallet with a handle that comes out slightly oval, and she uses it for three weeks before the oval catches her eye, after which it is there every time she picks it up, and is still using it in June.
 
-Team sports is where the teams are assigned, and she gets one with two people on it she has already decided against, so on the second Wednesday she goes and asks whether she can move.
+Team sports is where the teams are assigned, and she gets one with two people on it she has already decided against, and she plays out September and October on it.
 
-"No."
-
-"Can I ask why not, or is that also going to be no?"
-
-"Teams are for the year, and you're the third one to ask me this week." The teacher keeps writing on the clipboard. "Ask me in June and it'll be no in June."
-
-She asks again in November and gets it in four words. Drawing is Thursdays, and in the second term, while they spend six weeks on hands, Chloe draws her own left hand about forty times, in pencil, from the same angle, on the same cheap paper, and the fortieth one looks like a hand, down to the knuckle of the little finger sitting lower than it ought to, and Ruth picks it up off the table on her way past.
+Drawing is Thursdays, and in the second term, while they spend six weeks on hands, Chloe draws her own left hand about forty times, in pencil, from the same angle, on the same cheap paper, and the fortieth one looks like a hand, down to the knuckle of the little finger sitting lower than it ought to, and Ruth picks it up off the table on her way past.
 
 "That's a hand, that's an actual hand, since when do you draw like that?"
 
@@ -2446,13 +2440,25 @@ She asks again in November and gets it in four words. Drawing is Thursdays, and 
 
 "No, I mean that's a hand, Chloe," Ruth says, "and the thumb's even the right size this time." She puts it back down and carries on to the door.
 
-At the end of term the sheet goes up on the wall with everybody on it in order, and Chloe is ninetieth of ninety, which she reads twice before going to dinner. Dance is Fridays, and she is ninetieth in that too, off the same wall in the same week, but that one she reads once and leaves, because with drawing she found out at the end of term, whereas with dance she can feel it while it is happening, half a beat behind the girl in front of her for fifty minutes, and in February she goes and asks whether she can drop it.
+At the end of term the sheet goes up on the wall with everybody on it in order, and Chloe is ninetieth of ninety, which she reads twice before going to dinner. Dance is Fridays, and she is ninetieth in that too, off the same wall in the same week, but that one she reads once and leaves, because with drawing she found out at the end of term, whereas with dance she can feel it while it is happening, half a beat behind the girl in front of her for fifty minutes, and in February she takes it to the office.
+
+A boy comes out of it ahead of her with the door swinging behind him, and behind the desk is Mrs. Okonkwo, who walked her and her parents around this building in the rain two Aprils ago, with the block sheets laid out in front of her five columns across.
+
+"I want to come off dance, and I've had it every Friday since September, so I've given it a fair go first."
 
 "No."
 
-"It's the only one I'm asking about, and I'm not asking about the other four."
+"It's one hour out of five, and I'm not asking about the other four."
 
-"I know you're not, and it's still no, and it would be no if you came in here about all five." The teacher says it the way she said it to the boy who came in ahead of her. "You've got it on Fridays until June. Come on Friday."
+"I know you're not, and it's still no, and it would be no if you came in here about all five." Mrs. Okonkwo squares the sheets against the desk. "You've got it on Fridays until June."
+
+Chloe puts one hand flat on the edge of the desk and leaves it there. "Then can I move teams on the Wednesday instead, because that's a swap and not a drop, and I'd still be doing the same hour in the same place."
+
+"Which team are you on."
+
+"The one I've been on since the first week, and there are two people on it, and I've given it two whole terms before coming in here about either of them."
+
+"Teams are for the year, and you're the third one in here about a team this week." Mrs. Okonkwo writes the date at the top of a clean sheet, then turns the block sheet round on the desk so Chloe can read it, ninety names down the side and the five columns running across every one of them. "Ask me in June and it'll be no in June, and you've still got the Friday. Come on Friday."
 
 ---
 
@@ -3071,7 +3077,7 @@ Pruitt runs the place off a whiteboard carrying the Thursday names and a list of
 
 He keeps walking, leaving her to work out what he meant, which takes four minutes and one more attempt, after which she is right more often than she is wrong. Sam picks a hook off her bench in November and says it beats anything else down there. "The scroll's wrong, right at the top curve." She takes it back, still warm at the thick end, and turns it until her thumb finds where the metal stops giving under her nail. "It goes tight and then opens out, right where my thumb is, because that's two curves welded in the middle pretending to be one, so hold it up at the window and you'll see it." He holds it up with one eye shut, and she tells him the shadow runs straight for an inch where it ought to be turning the whole way down.
 
-He hands the hook back, tells her it still looks fine to him and takes his coat off the peg because it is nearly six, and then the girl at the next bench comes over with a punch in her hand and admires how straight the hammer marks run down the shank. Three weeks later there are five hooks on the bench with the same fault in all five, and Pruitt comes past with a bar on his shoulder and runs a thumb down the scroll of the nearest one without breaking stride. "You lost the curve on the second turn," he says, and keeps going. She has the sixth in the fire that evening and stops it at the second turn, scroll half open, and puts it back in the coals.
+He hands the hook back, tells her it still looks fine to him and takes his coat off the peg because it is nearly six, and then the girl at the next bench comes over with a punch in her hand and admires how straight the hammer marks run down the shank. Three weeks later five hooks sit on the bench with the same fault in all of them, and Pruitt comes past with a bar on his shoulder, running a thumb down the scroll of the nearest as he goes. "You lost the curve on the second turn," he says, and keeps going. She has the sixth in the fire that evening and stops at the second turn, scroll half open, and puts it back in the coals.
 
 In the same month Bell takes the metronome off the post and pockets it in front of all of them. "You've had that two years, and a machine doing your counting for you is two years too long, so from today one of you calls the count out loud and the other works off the call." Odile asks which of them is supposed to call it. "That's the two of you to sort out," he says, buttoning the pocket, "and I'd think about it first, because whoever calls the count is the one whose bad afternoon everybody else has to have."
 
