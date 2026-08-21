@@ -58,7 +58,7 @@ Then the call goes on for twenty-five more minutes and her mom's voice changes i
 Whether the staff are licensed, and by who, and whether she can see that in writing; what happens if a child gets a fever at two in the morning, then what happens if it is worse than a fever; whether there is a nurse or a person they call the nurse.  
 What Chloe eats, and whether Chloe can be pulled out on any day, for any reason, or whether there is a form, or a notice period, or a fee, and then, near the end of it, how many children are going to be in the building.  
 "Over a hundred," her mom says, loud enough that the number carries, and then, a few seconds later, "Coming from where?"  
-Every single one of the questions gets answered straight away, immediate and complete, as though every one of them had been anticipated.  
+Every single one of the questions gets answered straight away, immediate and complete, as though the questions had all been expected.  
 When she hangs up she stands there with her hand still flat on the phone, long enough that Chloe's dad puts down his coffee and asks her well.  
 "They said they have people who identify children, programs, scouts, and she used the word networks."  
 Her mom takes her hand off the phone.  

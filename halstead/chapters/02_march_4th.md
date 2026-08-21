@@ -5,7 +5,7 @@
 The waiting room has a fish tank in it with no fish, only water, the little plastic castle, the bubbles coming up in a line from the filter, so Chloe puts both hands on the glass near the gravel to look along the bottom, in case they are under something.  
 The gravel is only gravel.  
 "Where are the fish?"  
-"Beats me, honey," her mom says, with her eyes still on the page, which Chloe decides is a true answer, because somebody making one up would have bothered to look.  
+"Beats me, honey," her mom says, with her eyes still on the page, which Chloe decides is a true answer.  
 Because the questionnaire on her mom's clipboard runs to several pages, Chloe comes back to stand at the arm of the chair and watch her check boxes all the way down one column, then turn the page over to more of them.  
 Chloe leans in to see the boxes better, her mom shifts the clipboard half an inch to keep the light on it, then partway down the second page goes back to change one she has already checked.  
 "What's it about, all those boxes?"  
@@ -22,7 +22,7 @@ Dr. Prentice, the psychologist, has a beard and a room with a small table in it,
 After he tells her she can call him Ben and asks what he should call her, he sits down across the table on a chair the same size as hers.  
 "We're going to do some stuff that's kind of like games, and some of it is easy while some of it is really hard, and the hard ones are supposed to be hard, so missing one is part of the design."  
 "Okay, but is it a test, like a real one with a grade at the end, and can you fail it, because what happens if I get all of them wrong?"  
-"No, and there is no passing number either," he says straight away, the answer already lined up. "I am watching how you do things rather than whether you get them, so the end of it has a description on it instead of a mark."  
+"No, and there is no passing number either," he says straight away, the answer already lined up. "I am watching how you do things rather than whether you get them, and there is no grade at the end of it either."  
 Chloe looks at him hard, the way you look at somebody before you decide whether to believe them, and files the last part with everything else adults say when they want you to sit still.  
 \---  
 The blocks are red and white, and she has to turn them until the tops match a picture on a card, the first ones so easy that she thinks it's a trick, so she keeps looking up at Ben to find out, but all he says is mm-hm.  
@@ -65,9 +65,9 @@ He sits with that and lets the room stay quiet instead of moving on to something
 "No, less than that." Chloe works it out against the blocks and the juice and the two rooms. "Half of it, like half of it, but every day."  
 This time, as Ben writes that down, she watches him do it, and it takes him longer than the other ones.  
 \---  
-For two hours they keep going: pictures come with a piece missing and she has to identify the absence, including one where the missing piece is a shadow, which she thinks is unfair and gets right anyway.  
+For two hours they keep going: pictures come with a piece missing and she has to say what's missing, including one where the missing piece is a shadow, which she thinks is unfair and gets right anyway.  
 He tells her a story about a boy and a wagon, then has her repeat it back, and she repeats it with all of it in, including the part about the neighbor.  
-A set of judgement questions asks what you would do on finding somebody's wallet, or on smelling smoke, and every answer she gives seems to be the right one, so she stops trusting the questions.  
+A set of judgement questions asks what you would do if you found somebody's wallet, or if you smelled smoke, and every answer she gives seems to be the right one, so she stops trusting the questions.  
 Another timed sheet has rows of shapes where she has to cross out the duplicates, and she is bad at that as well, knowing it before he says stop.  
 By the second maze her stomach is loud enough that she covers it with her forearm, and she keeps switching which leg she is sitting on, while between two of the mazes he asks whether she's tired, she says no, then he asks again after the next one.  
 "You can say yes, you know."  
@@ -123,7 +123,7 @@ Some days she asks to play four square and gets one round in before the ball goe
 What she works out that same month is bigger than the pencil trick: finish first, sit still, keep your answers short, and the room leaves you alone, the teacher included.  
 It works on a Monday and a Thursday, in reading and in math, every day until the end of the year, and all she knows about it is that being quiet is what makes her disappear.  
 \---  
-She still knows all twenty-eight of their names, which is twenty-eight more than have needed to learn hers, so that by June, Chloe is quiet, she does what she's told, and she eats lunch by herself.  
+She still knows all twenty-eight of their names, and not one of them has needed to learn hers, so that by June, Chloe is quiet, she does what she's told, and she eats lunch by herself.  
 On the last day they clean out their desks, where she finds four pencils, somebody else's bracelet, a permission slip from October, and the library book, which she takes home and returns that same afternoon, well ahead of the summer due date.  
 Kayleigh Burns hugs three people at the door, while Chloe watches from beside her own desk, both straps of her backpack already on, then puts her chair up on the desk the way they were told to and gets in the car line.  
 Her report card comes in an envelope a week later, saying she is meeting expectations in all areas, and under comments, in the box where the teacher writes, it says Chloe is a pleasure to have in class.  

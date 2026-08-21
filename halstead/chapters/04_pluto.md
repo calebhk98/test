@@ -9,14 +9,14 @@ A boy near the doors keeps running the length of the hallway and back until some
 Out in the lot there are license plates from states that are new to her, one of which takes a few seconds of squinting to place, and it is already hot enough that her dad has sweated through the back of his shirt by the time they reach the doors.  
 They line up at a registration table with the letters of the alphabet taped along the front in blocks, and a kid in front of them looks at Chloe's shoes a second too long, so she moves half a step in behind her dad.  
 The woman at H through M finds Kessler on her page straightaway and hands over a folder with Chloe's name printed on the front, a lanyard with her name on it, and a card for the dining hall with her name on that as well.  
-"Somebody's organized around here," Chloe's dad says, in the voice he uses when he is impressed and would rather not be caught at it.  
+"Somebody's organized," Chloe's dad says.  
 "We try," the woman says, already reaching past him for the next folder in the box. "Chairs are through the double doors, we start on the hour, and there's a map in there."  
 The orientation is in a room with folding chairs and a woman with a clipboard who goes through it fast, because there is a second one at eleven for the families still driving.  
 Chloe's feet hang well above the floor, and she kicks the chair leg in front of her a few times before somebody's mother turns around, after which she stops.  
 Meals are at seven, twelve and six, and there is fruit in bowls by the stairs at any hour, free for anybody who wants it.  
 The laundry bags are green, and they go outside your door on Tuesday and Friday nights.  
 The nurse is on the first floor beside the stairwell with the red door, and somebody sits in that office at every hour of the day, not on call from home but in the office.  
-Lights out is nine for the under-eights and nine thirty for everybody else, which puts Chloe in the first group by a year and a half, and the woman says it to the room rather than to any child in it.  
+Lights out is nine for the under-eights and nine thirty for everybody else, which puts Chloe in the first group by a year and a half.  
 "If you stop wanting to be here, tell any adult and we'll take you home, same day, and there will be no argument about it from anybody here, and no attempt to talk you round."  
 Two rows up a boy has started crying, quiet about it, and the girl next to him budges her chair a few inches closer, close enough that their sleeves touch, while the woman turns the page over on the clipboard.  
 "It isn't a punishment, it's just how it works, and if you feel sick in the night you don't wait until morning, you knock on the door with the light on at the end of your hall."  
@@ -36,29 +36,29 @@ She puts her hand flat on the top of her own shoulder.
 She tells Chloe about the horse she rides, the horse she is saving up for, the girl at the barn who gives her a hard time, what that girl did at a show in April, and what the girl's mother said about it afterward, running straight through all of it in about nine minutes, whether Chloe wants to hear it or not.  
 Chloe keeps both hands still in her lap and lets it run, nine minutes end to end.  
 Then Priya says goodnight, and inside a minute she is asleep.  
-Chloe lies on top of the covers with her shoes on, on the theory that a person who has not unpacked has not entirely arrived.  
+Chloe lies on top of the covers with her shoes on.  
 At eight thirty she goes down to the phone by the front desk, which you are allowed to use whenever you want, and because there is a boy in front of her who is crying and doing it quietly, she stands back a way and reads the noticeboard until he is finished before she dials the number off the card in her folder.  
-Her mom picks up in the middle of the first ring, which means she has been sitting somewhere with the phone already in her hand.  
+Her mom picks up in the middle of the first ring.  
 "I want to come there," Chloe says.  
 "Okay, yeah, okay, stay right where you are, because I'm coming."  
-The hotel is half a mile away, and by the time Chloe has put the phone down and walked back to the bottom of the stairs her mom is at the front desk, already dressed, having got there faster than the drive should allow.  
+The hotel is half a mile away, and by the time Chloe has put the phone down and walked back to the bottom of the stairs her mom is at the front desk, already dressed.  
 Chloe sleeps in the second bed with the bathroom light on and the door open, her mom asking first how far to leave the door open, one hand pressed flat against the spare pillow that smells like the hotel's detergent instead of their own.  
 "Do you want to talk about it?"  
 Her mom is still in her shoes, sitting on the arm of the chair by the window.  
 Chloe says no, so her mom gets up, turns the other bed down, sits on the end of it, and asks whether Chloe would like her to talk about something instead, and Chloe says yes, anything.  
 So her mom talks, doing the drive down, and the place where they stopped, and the woman on the desk downstairs who has a son at a college in a state Chloe couldn't find.  
 She does a thing that happened at her work in June that Chloe has already been told twice, told the same way both times, and somewhere in the middle of it the words blur into one long hum, still going.  
-In the morning her mom drives her back and tells her she can do that every night if she wants, and Chloe says okay, and neither of them treats it as a plan or a promise.  
+In the morning her mom drives her back and tells her she can do that every night if she wants, and Chloe says okay.  
 \---  
 The rooms are named after planets, which she works out on the second day, walking down the hall behind a group of the bigger children.  
 Mercury, Venus, Earth, on little brass plates screwed in beside the doors at adult height, then Mars, then Jupiter, then Saturn, Uranus, Neptune, then a water fountain, then one more door past the fountain at the very end, with a plate on it that says PLUTO.  
-They are standing outside because somebody else is still in there, ten or eleven of them, everybody looking at the door or at their own shoes, since it is the second day and the question of who is allowed to talk to whom is still open.  
+They are standing outside because somebody else is still in there, ten or eleven of them, everybody looking at the door or at their own shoes.  
 "They put us in the one that isn't a planet anymore," Chloe says.  
 Then something goes wrong with her, before anybody has had time to answer, because the backs of her knees go loose, her fingers curl stiff and refuse to close all the way, her ears do what they did in October, and for three full steps she is somewhere else entirely, back at her desk with the wood chips and the cage and a chair squeaking somewhere behind her.  
 Then a boy laughs, one loud honk of it right up close, and her jaw unclenches all at once, her shoulders coming down before she has decided anything about it.  
 "It's not even a room," he says. "It's a room-shaped object."  
 Chloe puts a hand flat on the wall and laughs until she has to bend over, before somebody else catches it too and a couple of the bigger children by the fountain start saying room-shaped object back and forth to each other, seeing how many times they can get it in before the door opens.  
-Then a girl says something from further up the line, in the flat voice of somebody who has had to correct this particular thing before.  
+Then a girl says something from further up the line.  
 "Okay, but Pluto's still a planet, because it's a dwarf planet, and a dwarf planet is a kind of planet, so what they did was make a smaller category and move it into that."  
 "That's worse than just taking it off the list."  
 "It isn't worse, it's what happened."  
@@ -80,7 +80,7 @@ On the third night Sam sits down across from her without a tray, before he gets 
 "What school do you go to?"  
 "Just a school, a normal one, same as anybody else's."  
 "No, what's it called."  
-She tells him the name of it, and he asks whether it is good, and Chloe takes a second finding an answer while he sits there already looking at her, waiting for it the way he seems to wait for everything, as though the answer were late.  
+She tells him the name of it, and he asks whether it is good, and Chloe takes a second finding an answer while he sits there already looking at her, waiting for it.  
 "It's fine, I guess, except there's a girl there who says I talk weird, so mostly I just keep quiet in class now."  
 "Mine's got a pool you can't use," Sam says, "because there's a pool in the building and it's for the high school, so they just have it there, and it's got a lid on it."  
 "A lid, on a whole entire pool?"  
@@ -89,9 +89,9 @@ She tells him the name of it, and he asks whether it is good, and Chloe takes a 
 "You go to a completely different school."  
 "I'm agreeing with you."  
 "You're agreeing at me," Sam says, with his eyes on his tray.  
-Chloe has a whole sentence about the lid ready, four words, five, and she lets it go, because the last time she said the second thing out loud, louder, it was the second thing that turned out to be wrong.  
+Chloe has a whole sentence about the lid ready, four words, five, and she lets it go.  
 On the fourth night she gets as far as the phone and stands there with her hand on it, until a kid comes up behind her and asks if she is using it, and she says no and goes back upstairs, where Priya is still awake.  
-Her mom stays two more days after that, and neither of them says anything about the phone, which is its own kind of agreement.  
+Her mom stays two more days after that, and neither of them says anything about the phone.  
 She leaves on the Sunday, going through the room one more time first, finding the green laundry bag, putting it where Chloe will see it, and asking Priya a few questions about herself, before she stands in the doorway with her keys already out.  
 "You've got the number, taped inside your folder where you can't lose it."  
 Chloe says yes.  
@@ -100,11 +100,11 @@ Chloe says yes.
 "I know she did," her mom says, looking at the doorframe instead of at Chloe. "I wrote it down."  
 \---  
 There's a fourth one in Pluto who stays silent for six days straight, answering when he's called on, in about four words, laughing at Sam, and otherwise silent.  
-Chloe is doing the same thing herself, six days of it, and she keeps that to herself as well, because a person who has gone quiet on purpose can spot another one across a room.  
+Chloe is doing the same thing herself, six days of it, and she keeps that to herself too.  
 On day seven Sam says something wrong about volcanoes, which is that the lava comes up because the mountain is hollow.  
 "That's not how it works though," the boy says, and everybody looks at him, while two rows over Owen is still copying the word off the board from earlier, head down over his own paper.  
 "It's not hollow, it's rock the whole way down, and the rock's what's doing the pushing, since it's the gas trapped inside it that makes it move," he says, with both hands out in front of him now. "It's not really the heat, it's the gas, and how fast it comes out depends on how thick it is."  
-A girl two seats down lets her head drop flat onto the desk with a thud loud enough that a couple of people look over, which Kavi takes as encouragement.  
+A girl two seats down lets her head drop flat onto the desk with a thud loud enough that a couple of people look over.  
 "How thick what is."  
 "The lava, and there's a word for it."  
 "What's the word," Sam says, in the voice of somebody setting something up.  
@@ -117,7 +117,7 @@ So he stops trying, picks up his pencil, and starts drawing his own volcano in t
 On the second Tuesday, Mr. Doyle says something about weight while he is drawing on the board, and Ruth's hand goes up, though she starts talking before it is noticed.  
 "That's mass, and weight is the pull on it, so if you took the same thing to the moon the weight would go down and the mass would be exactly the same."  
 Mr. Doyle stops with the marker still up at the board and looks at what he has written, then wipes one word out with the side of his hand and writes the other one into the gap that it leaves.  
-"Mass, and thank you for catching that," he says, then keeps going, as though a correction from a six-year-old were an ordinary thing to happen in the middle of a lesson.  
+"Mass, and thank you for catching that," he says, then keeps going.  
 "I told you," Ruth says, to the room. "I said that on Friday, I said it on Friday."  
 "Ruth," Sam says, from two seats over, eyes on the board.  
 "I did though, and everybody heard me."  

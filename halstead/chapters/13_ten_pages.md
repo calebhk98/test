@@ -90,11 +90,11 @@ In the second week of September a man from the office spends an hour on Defensiv
 
 **DEFENSIVE WATCH, SCORING**
 
-1. They do not enter a building.  
-2. They do not learn anything about you. Not your numbers, not your capability, not your positions.  
-3. You take their comms.  
-4. You take their equipment.  
-5. You establish what they came for.  
+1. They do not enter a building.
+2. They do not learn anything about you. Not your numbers, not your capability, not your positions.
+3. You take their comms.
+4. You take their equipment.
+5. You establish what they came for.
 6. Minimum personnel. Every additional student on the response costs you.
 
 At the bottom, in the same typeface, without emphasis: *Response time is scored against the standard. The standard is posted weekly.*
