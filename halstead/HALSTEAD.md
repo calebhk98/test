@@ -3571,7 +3571,7 @@ Chloe is on the floor with the printed list of deadlines in her lap, going down 
 
 "Then you go to the state school," Sam says, "same as you were always going to," and picks his card back up, turns it over once, sets it down again.
 
-Chloe's list runs to fourteen. The eight, the state school, her mother's college, the community college, one in Michigan because Fen said the winters there are worth seeing once, Georgetown, because half the authors on Hearn's reading list turn out to teach there, and one she picks off a phone screen in about nine minutes after lights-out because it came up on the same page as the one in Michigan.
+Chloe's list runs to fourteen. The eight, the state school, her mother's college, the community college, one in Michigan because Fen said the winters there are worth seeing once, Georgetown, which came up twice in a week and stayed on the list because the second time it was a language department, and one she picks off a phone screen in about nine minutes after lights-out because it came up on the same page as the one in Michigan.
 
 Her mother calls twice that month to ask how the essays are going and gets fine both times. The second time she leaves it there and reads the fourteen back down the phone, one at a time, and after each one she says the deadline out loud and waits for Chloe to say it back.
 
@@ -4112,7 +4112,7 @@ She lays it out for him in order, the way the eligibility page laid it out for h
 "So the two years in the middle," her father says, when she's finished, "that's a long two years to spend just waiting on one date. Find something in it you'd actually want to do anyway."
 
 
-Chloe pulls Georgetown's letter out from under the eligibility printout and sets it flat on the table, next to the ham. "If I go to the state school, I spend two years finishing a degree nobody at State reads closely, and I walk into the oral assessment able to read Arabic and Swahili and still not hold a conversation in either one. If I go to Georgetown, the people who run that assessment teach a class there every spring, the two I can't yet speak get someone to argue with instead of a page, and half the internships that turn into a clearance start walking distance from wherever I'm living. It's the same two years either way. One of them is already the first year of the six."
+Chloe pulls Georgetown's letter out from under the eligibility printout and sets it flat on the table, next to the ham. "If I go to the state school, I spend two years finishing a degree nobody at State reads closely, and I walk into the oral assessment with eleven languages I have only ever used on paper and in a building where everybody already knows what I mean. If I go to Georgetown, the people who run that assessment teach there every spring, and the languages get somebody to argue with instead of a page, and half the internships that turn into a clearance start walking distance from wherever I'm living. It's the same two years either way. One of them is already the first year of the six."
 
 
 The water stops running upstairs. A few minutes later her mother comes down for a glass, finds them still at the table, and reads the room accurately enough to fill the glass. She carries the question back upstairs with her, unasked.

@@ -43,7 +43,7 @@ HERE = Path(__file__).resolve().parent
 CHAPTERS = sorted((HERE / "chapters").glob("*.md"))
 BOOK = HERE / "HALSTEAD.md"
 
-FK_TARGET = 7.0
+FK_TARGET = 9.0
 LEXILE_TARGET = 1000
 
 
@@ -76,9 +76,9 @@ def rule(title):
 #   ">=" pass at or above, "<=" pass at or below, "~" pass within the band
 GOALS = [
     ("_words",   "word count",                   (2000, 3400), "~",  "author"),
-    ("fk",       "reading grade (Flesch-Kincaid)", 7.0,        ">=", "author"),
+    ("fk",       "reading grade (Flesch-Kincaid)", 9.0,        ">=", "author"),
     ("lexile",   "Lexile (approx)",               1000,        ">=", "author"),
-    ("ari",      "reading grade (ARI)",           6.0,         ">=", "corpus 5.2, rounded up"),
+    ("ari",      "reading grade (ARI)",           9.0,         ">=", "author, tracks F-K"),
     ("wps",      "words per sentence",            14.3,        ">=", "corpus median"),
     ("slcv",     "sentence-length variation CV",  85.3,        ">=", "corpus median"),
     ("wpp",      "words per paragraph",           (22, 48),    "~",  "corpus median 33.7"),

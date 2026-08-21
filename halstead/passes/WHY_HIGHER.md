@@ -112,3 +112,75 @@ Not "make sentences longer" — the manuscript's narration is already close to t
 
 4. **Where narration is doing pure chronology (moving bodies through time, Hemingway's mode) rather than interpretation, that's fine and matches the LOW group's legitimate mode — but at the emotional high points, follow Chapter 23's own example and let the narrator risk one aphoristic, generalizing sentence** ("the entire weight of ceremony eleven years earns") **rather than only reporting action.** That's the single technique most responsible for the HIGH group's readability numbers, it costs very little relative to full scene expansion, and Chapter 23 shows the manuscript can already do it well — Chapters 13 and 17 could use one or two more such sentences at their highest-stakes beats (the essay doldrums in December, the dinner-table aftermath) to signal that the short dialogue there is a deliberate register shift and not a place where the scene simply stopped short.
 
+
+---
+
+# Corrections, after the author read this
+
+Three things in the report above are wrong or licence the wrong thing. They are
+corrected here rather than edited out, because the wrong versions were acted on.
+
+## 1. The repression test licenses the defect it was meant to catch
+
+Section 6 offered this test: *is a character choosing not to say something
+(repression — keep it clipped), or does the scene just not have anyone available to
+say the reasoned version (accumulation — open it up)?*
+
+The author's response: **a character choosing not to say something needs a very, very
+good reason, and this book does it in nearly every interaction across eleven years.**
+A few times is a technique. Every conversation for a decade is a tic wearing a
+technique's clothes. The test as written will find a reason to keep almost any clipped
+exchange, because almost any clipped exchange can be read as somebody withholding.
+
+Replace it with the harder question: **what would this person actually say here, if
+nothing were stopping them?** Write that. Then cut back only where something specific
+and nameable is stopping them — a rule, a listener who has hurt them, a thing that
+cannot be said in front of the person in the room. "They are trained to be economical"
+covers the drill floor and the command register. It does not cover breakfast.
+
+## 2. The measurement that should have been in the report
+
+Spoken-sentence means, per chapter, against the corpus groups:
+
+    corpus HIGH group   12.7 to 18.0 words
+    corpus LOW group     6.2 to  8.7 words
+    this book            9.4 words, and 21 of 27 chapters below 10
+
+    25_ten_targets  6.3   03_the_letter  6.8   19_sixteen  7.1   04_pluto  7.5
+    05_behind       7.6   02_march_4th   7.8   18_fifteen  8.0   20_parking_lot 8.0
+    16_thirteen     8.3   12_nine        8.4   06_the_list 8.5   01_before  8.7
+
+Eight chapters sit inside the Hemingway band. Only three chapters in the book reach
+the high group's range, and all three were rewritten in the last few days. The
+conclusion in section 5 — that the clipped dialogue is "mostly working, not mostly
+accumulating" — was too generous, and was reached without this table.
+
+## 3. Reaching the reading-level target is not a vocabulary problem
+
+The report says the high group's third technique, the narrator naming the feeling,
+"is a large part of why the Flesch-Kincaid numbers run so high," through expensive
+abstract nouns. That is not what the arithmetic shows.
+
+Syllables per word, measured directly:
+
+    black_beauty part14            1.272   F-K 10.4
+    little_women CHAPTER_FORTY     1.343   F-K 11.3
+    wind_in_willows part14         1.370   F-K 11.8
+    THIS BOOK                      1.306   F-K  5.9
+
+**Black Beauty uses shorter words than this manuscript and reads four and a half
+grades higher.** Little Women is nine hundredths of a syllable above it. The high
+group's vocabulary is ordinary; the whole of the gap is sentence length — 27 to 29
+words against 15.7.
+
+So the target is reachable without a single fancier word:
+
+    to reach F-K 7:  15.7 -> 18.4 words per sentence at today's vocabulary
+    to reach F-K 9:  15.7 -> 23.5 words per sentence at today's vocabulary
+    or, mixed:       19 words per sentence and 1.456 syllables per word
+
+The author's target is **9, with 7 as the floor.** At 5.9 the book is three grades
+short and this is the lever. It is a sentence-combining job — clauses joined with
+their logical connectives, the thing section 1 correctly identified as the portable
+technique — and the dialogue is the largest single reserve, since spoken sentences
+average 9.4 words against a narration average of 19.
