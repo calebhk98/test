@@ -6,7 +6,15 @@ The whole year is breaking clays at between ninety and a hundred, a spread that 
 
 A machine at one end of sixty metres of open ground fires a live round down the lane on a cycle that holds to the hundredth, and the students stand off to the side behind glass, so that the round crosses in front of them left to right while they shoot across its path on a count taken off the mechanism.
 
-They are shooting bullets out of the air.
+Voss lets them look at it for a while, and when he does start he starts with the machine rather than with them.
+
+"That is a turret, and it puts a live round down the lane on a cycle you can set a watch by. Left to right, sixty metres of open ground, in front of you, behind the glass, and you will be firing across its path on a count you take off the mechanism." He gives them a moment with that. "The target is the round. Not the turret, not a clay, not a plate hung off a rope. You are shooting the bullet."
+
+Aymar asks why, out loud, in the tone of somebody asking on behalf of ninety people.
+
+"Because a gun you can only point at a man is a weapon," Voss says, "and a gun you can put a bullet onto a bullet with is a tool. You have had a year of the first one. This year you get the second."
+
+He delivers it like a thing he has said four hundred times to four hundred students, and it is round the year by Thursday and back at Chloe's own table twice before the end of the month, quoted with the flat confidence of something printed in a manual. In February, five weeks into a run of cards that all read zero, she goes looking for where it comes from, first in the library and then in the range office, and the oldest instructor on the staff tells her that the first time he heard it was from Voss.
 
 For five weeks every card in the year reads zero, so that the range in October is the sound of a great many people missing, four sessions a week, ninety of them at it. In the second week Kavi does the arithmetic and announces at dinner that at this rate somebody will hit something in about March, and Priya tells him to eat.
 
