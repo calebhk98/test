@@ -4,15 +4,15 @@
 
 Mr. Hearn is small and gray and says everything at the same volume.
 
-"Alexander Hamilton. Real person, you can look him up, and everything he wrote is still in print and most of it is free." He writes the name on the board and then some numbers under it. "He wrote fifty-one of the Federalist papers in something like six to eight months, and he had a full-time job the entire time he was doing it."
+"Alexander Hamilton, a real person you can look up, and everything he wrote is still in print and most of it is free." He writes the name on the board and then some numbers under it. "He wrote fifty-one of the Federalist papers in something like six to eight months, and he had a full-time job the entire time he was doing it."
 
-He does the arithmetic on the board without saying anything about it. Fifty-one in roughly thirty weeks comes out at an essay every four days, two to four thousand words a go. Call it eight to sixteen pages. He underlines the four and leaves it there.
+He does the arithmetic on the board without saying anything about it, and fifty-one in roughly thirty weeks comes out at an essay every four days, two to four thousand words a go, which is eight to sixteen pages. He underlines the four and leaves it there.
 
-"One ten-page essay a week, and that's less than half his rate, you've got a keyboard, and nobody is waiting on you to walk it to a printer on Saturday morning." He caps the pen. "It has to be as good, and that's the part that's actually hard, because ten pages isn't hard, ten pages is just hours. If you want to know what I'm marking against, go and read one, they're short enough that there's no excuse not to."
+"One ten-page essay a week, and that's less than half his rate, you've got a keyboard, and nobody is waiting on you to walk it to a printer on Saturday morning." He caps the pen. "It has to be as good, and that's the part that's actually hard, because ten pages isn't hard, ten pages is just hours, so if you want to know what I'm marking against, go and read one, and they're short enough that there's no excuse not to."
 
-Chloe has written ten-page reports before. Three in Mandarin last year, one in French the year before that, and every one of them had two or three weeks behind it. They were also about things, like what a port did in a year, or what one newspaper said and what a second newspaper said about the first one. Those came back marked on the Mandarin.
+Chloe has written ten-page reports before, three in Mandarin last year and one in French the year before that, every one of them with two or three weeks behind it, and they were also about things, like what a port did in a year, or what one newspaper said and what a second newspaper said about the first one. Those came back marked on the Mandarin.
 
-She reads Federalist 10 that night in the chair by the window, which takes her an hour and a half. She reads it again on the Saturday, faster, with a pen, and then she spends the rest of the weekend on ten pages about whether a small state can be trusted with a veto.
+She reads Federalist 10 that night in the chair by the window, which takes her an hour and a half, then reads it again on the Saturday, faster, with a pen, before she spends the rest of the weekend on ten pages about whether a small state can be trusted with a veto.
 
 It comes back on the Monday with a mark, and four lines under the mark, which say she has spent ten pages on a position she already held, that the other side does not appear anywhere on the page in a form its own supporters would recognise, and that until it does he has no way of telling whether she is right or only comfortable.
 
@@ -20,35 +20,35 @@ On the Tuesday she tells him she read number 10\.
 
 "That's Madison," he says, and starts the hour without adding anything to it.
 
-She looks up who wrote which that evening. Hamilton has number 1, then 6 through 9, then 11 through 13, then 15 through 17, then 21 through 36, then 59 through 61, then 65 through 85\. She reads 6 that week and 9 the week after. By the end of October she is going through them in order in the hour before dinner. She has all fifty-one of Hamilton's done by the middle of December, and then she starts on Madison's.
+She looks up who wrote which that evening, and Hamilton has number 1, then 6 through 9, then 11 through 13, then 15 through 17, then 21 through 36, then 59 through 61, then 65 through 85\. She reads 6 that week and 9 the week after, and by the end of October she is going through them in order in the hour before dinner, so that she has all fifty-one of Hamilton's done by the middle of December, and then she starts on Madison's.
 
-The second essay is due six days after the first. She is still thinking about the first one when she has to start it.
+The second essay is due six days after the first, so she is still thinking about the first one when she has to start it.
 
 In the second week of October she decides she is going to write one that is good.
 
-She builds the outline first. Outlines have always been for other people, and this one still gets her the same ten pages out the other end. She writes the last page first, then the middle, then splits it across four sittings. She writes one twice from scratch, closing the first draft away before she starts the second. She takes a position she disagrees with and writes it straight, and that one comes back worse than the others.
+She builds the outline first, though outlines have always been for other people, and this one still gets her the same ten pages out the other end. She writes the last page first, then the middle, then splits it across four sittings, and she writes one twice from scratch, closing the first draft away before she starts the second, and she takes a position she disagrees with and writes it straight, and that one comes back worse than the others.
 
-In November Hearn tells her the third page of one is doing the work of the first six, and to go and look at what the first six are for, advice that she reads four times on the stairs. Every essay she writes for the next month has a good third page in it, but the other nine pages are still there.
+In November Hearn tells her the third page of one is doing the work of the first six, and to go and look at what the first six are for, advice that she reads four times on the stairs, and every essay she writes for the next month has a good third page in it, but the other nine pages are still there.
 
 ---
 
 Self defense starts in September, an hour a day, every day; the sheet says it runs to the end.
 
-The first term is ones. Standing, falling, getting up off the floor with somebody's hand on your collarbone, and forty minutes at a stretch of one person in front of you doing one thing slowly and then the same thing slightly faster. Kowalczyk tells her in October that she is planting her back foot before she knows where she is going, and that she needs to stop deciding so early. In November it goes to twos.
+The first term is ones: stance, breakfalls, getting up off the floor with somebody's hand on your collarbone, and forty minutes at a stretch of one person in front of you doing one thing slowly and then the same thing slightly faster. Kowalczyk tells her in October that she is planting her back foot before she knows where she is going, and that she needs to stop deciding so early, and in November it goes to twos.
 
 The 10v1 starts in January.
 
-"Eleven of you at a time. One in the middle, ten on them, a minute on the clock." Kowalczyk has the clock in her hand. "Two or three rounds a class, and the rest of the hour is what you've been doing since September, because that doesn't stop."
+"Eleven of you at a time, one in the middle, ten on them, a minute on the clock." Kowalczyk has the clock in her hand. "Two or three rounds a class, and the rest of the hour is what you've been doing since September, because that doesn't stop."
 
-"Ten's a lot," Sam says. "That's twice as many hands as I've ever had on me at once."
+"Ten's a lot," Sam says, "and that's twice as many hands as I've ever had on me at once."
 
 "Five people can reach you at once, six if they're good, seven if you're standing badly, and after that there's no room for anybody, they'd be pushing each other over." She holds a hand up flat and turns it. "So ten is five on you and five waiting for the first five to get tired, and more than ten and they're just queuing for a turn."
 
 "A minute's a long time, and that's a lot of seconds to hold ten people off."
 
-"Because you'll be tired before they are, and because ten is the shape of every long fight there is." She sets the clock. "A hundred on one is a 10v1 that goes on longer, and there's nothing in the hundred that isn't already in the ten. If you can hold a minute against ten you've got five capable ones left, and five is a fight you can have."
+"Because you'll be tired before they are, and because ten is the shape of every long fight there is." She sets the clock. "A hundred on one is a 10v1 that goes on longer, and there's nothing in the hundred that isn't already in the ten, so if you can hold a minute against ten you've got five capable ones left, and five is a fight you can have."
 
-The best anyone in the room manages all afternoon is nine seconds. Chloe gets four seconds on her first go, then six on her third. Afterwards the four of them sit on the floor in the corridor outside, Ruth flat on her back with one arm over her eyes, Sam with a bloody nose from an elbow that got away from somebody.
+The best anyone in the room manages all afternoon is nine seconds, and Chloe gets four on her first go, then six on her third, after which the four of them sit on the floor in the corridor outside, Ruth flat on her back with one arm over her eyes, Sam with a bloody nose from an elbow that got away from somebody.
 
 "Four."
 
@@ -58,15 +58,15 @@ The best anyone in the room manages all afternoon is nine seconds. Chloe gets fo
 
 "She says a lot of things," Sam says, into his sleeve.
 
-"A minute's the whole fight," Ruth says, arm still over her eyes. "Four's just where you ran out first."
+"A minute's the whole fight," Ruth says, arm still over her eyes, "and four's just where you ran out first."
 
-By March most of the year is in the six-to-ten range on a good day. Sam gets fourteen seconds in February, a mark that stands alone for the rest of the year. Chloe is on eleven seconds by June, and two of them she wasted.
+By March most of the year is in the six-to-ten range on a good day, while Sam gets fourteen seconds in February, a mark that stands alone for the rest of the year, and Chloe is on eleven seconds by June, two of which she wasted.
 
-Swimming gets harder and the teacher says so in the first week. Some of it is in clothes and some of it is in cold water, and in the third term some of it is towing somebody who fights you the whole way, all of it in how you hold their head.
+Swimming gets harder and the teacher says so in the first week, because some of it is in clothes and some of it is in cold water, and in the third term some of it is towing somebody who fights you the whole way, all of it in how you hold their head.
 
-Paintball joins the afternoon block in October. Bell hands the markers out and says it is the same thing they have been doing with darts, a bit harder, and then sets the drill running.
+Paintball joins the afternoon block in October, and Bell hands the markers out, says it is the same thing they have been doing with darts, a bit harder, and sets the drill running.
 
-For two weeks everybody is bad at it and knows why, the ball goes four times faster than a dart and there is a wall of paint behind the target to prove it. Everybody spends two weeks stuck, and Bell lets them stay that way.
+For two weeks everybody is bad at it and knows why, because the ball goes four times faster than a dart and there is a wall of paint behind the target to prove it, and Bell lets them stay stuck that way.
 
 "I'm watching it the whole way," Ruth says on the second Thursday, sitting on the floor with her back against the wall bars. "I can see it leave, I see the whole thing happen, and my hand's still behind it every single time."
 
@@ -76,17 +76,17 @@ Chloe stops. "Wait. That's it, that's the whole problem, we're reacting."
 
 "What, what are you talking about?"
 
-"We're all reacting and you can't react to it, there isn't time to react to it, you have to already be there." She is up on her knees with both hands out. "If you're standing behind someone holding a hose, you don't watch the water. You watch where the hose is pointing before anything comes out of it. It's the same barrel, Ruth. It's pointed at where the ball's going before the ball goes anywhere, and everyone's shooting at the same speed. Watch the barrel and the feet. Move before he shoots."
+"We're all reacting and you can't react to it, there isn't time to react to it, you have to already be there." She is up on her knees with both hands out. "If you're standing behind someone holding a hose, you don't watch the water, you watch where the hose is pointing before anything comes out of it. It's the same barrel, Ruth, pointed at where the ball's going before the ball goes anywhere, and everyone's shooting at the same speed. Watch the barrel and the feet, and move before he shoots."
 
 "That's not what she told us in the briefing, none of this was in the briefing."
 
 "She didn't tell us anything, we worked this out ourselves, just now, standing here."
 
-On the Monday Chloe gets one on her fourth go. The two balls meet about four feet in front of her face and the noise is a flat wet crack, and both of them come apart at once, and there is orange and blue hanging in the air together and then all over the floor. The boy she is paired with says, "Lucky," but Ruth gets one nine minutes later and screams.
+On the Monday Chloe gets one on her fourth go, and the two balls meet about four feet in front of her face with a flat wet crack, both of them coming apart at once, orange and blue hanging in the air together and then all over the floor, and the boy she is paired with says, "Lucky," but Ruth gets one nine minutes later and screams.
 
 By the end of the hour they have eleven between them and everybody else on the floor has four, and on the Thursday they have nineteen. They spend most of that evening doing the noise at each other in the corridor, and Ruth does an impression of the boy who said luck, and they make Kavi watch it twice.
 
-People start asking on the Friday; Ruth says she has been practising, while Chloe shrugs and changes the subject. By the following week there are two theories going round about the markers being different weights.
+People start asking on the Friday, and Ruth says she has been practising while Chloe shrugs and changes the subject, so that by the following week there are two theories going round about the markers being different weights.
 
 Kavi gets it on his own in the second week of November, when his number goes from three to ten inside one hour that afternoon, and he walks straight out, past everybody, eyes on the door. He keeps it to himself, and she leaves him to it. Nadia has it by the end of the month off her own back, and Priya gets it out of Ruth in a corridor in about ninety seconds, and by Christmas most of the year is past where they ever were with darts.
 

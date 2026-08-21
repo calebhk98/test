@@ -2,21 +2,21 @@
 
 *September 2020 - July 2021*
 
-The whole year is breaking clays at somewhere between ninety and a hundred, a spread that holds through the end of September, and then in the first week of October Voss walks them down to a lane new to all of them and shows them the turret.
+The whole year is breaking clays at between ninety and a hundred, a spread that holds through September, and then in the first week of October Voss walks them down to a lane new to all of them and shows them the turret.
 
-A machine at one end of sixty metres of open ground fires a live round down the lane on a cycle that holds to the hundredth, and the students stand off to the side of it behind glass, so that the round crosses in front of them left to right and they shoot across its path on a count taken off the mechanism.
+A machine at one end of sixty metres of open ground fires a live round down the lane on a cycle that holds to the hundredth, and the students stand off to the side behind glass, so that the round crosses in front of them left to right while they shoot across its path on a count taken off the mechanism.
 
 They are shooting bullets out of the air.
 
-For five weeks every card in the year reads zero, so that the range in October is the sound of a great many people missing, four sessions a week, ninety of them at it. In the second week Kavi does the arithmetic and announces at dinner that if the year carries on at this rate somebody will hit something in about March, and Priya tells him to eat.
+For five weeks every card in the year reads zero, so that the range in October is the sound of a great many people missing, four sessions a week, ninety of them at it. In the second week Kavi does the arithmetic and announces at dinner that at this rate somebody will hit something in about March, and Priya tells him to eat.
 
-Odile gets the first one on the eleventh of November, and the noise of it brings people out of the far end of the range. Chloe gets hers nine days later: a flat crack about eight metres out, then the paper down at the far end exactly as it was, her hands steady on the rifle while she can feel her pulse where her cheek meets the stock, and she is still up on the sights when somebody tells her to clear.
+Odile gets the first one on the eleventh of November, and the noise brings people out of the far end of the range. Chloe gets hers nine days later: a flat crack about eight metres out, then the paper down at the far end exactly as it was, her hands steady on the rifle while she can feel her pulse where her cheek meets the stock, and she is still up on the sights when somebody tells her to clear.
 
-After that it moves, two a session and then four and then eight, so that by the end of November she is on twenty, by the middle of December on forty-one, and by the last week of January on sixty.
+After that it moves, two a session, then four, then eight, so that by the end of November she is on twenty, by the middle of December on forty-one, and by the last week of January on sixty.
 
 Then it stops.
 
-On a Wednesday in the middle of February she shoots a series and scores sixty-one, then shoots another and scores fifty-nine, then moves her count by a fifth of a second, shoots a third and gets sixty, and she is loading again before the card is marked. Voss gives her five more series, and on the sixth he is at her shoulder with his hand out for the rifle.
+On a Wednesday in mid-February she shoots a series and scores sixty-one, then shoots another and scores fifty-nine, then moves her count by a fifth of a second, shoots a third and gets sixty, and she is loading again before the card is marked. Voss gives her five more series, and on the sixth he is at her shoulder with his hand out for the rifle.
 
 "Off the point."
 
@@ -26,9 +26,9 @@ On a Wednesday in the middle of February she shoots a series and scores sixty-on
 
 She goes to dinner and clears the plate, but it could have been anything on it.
 
-She tries the old things: the count goes on her leg walking down to the range, the way it did when she was eleven, and the number comes out the same on the Friday, and she holds her breath at three different places in the cycle, one of which makes her dizzy. By the second week of March she has six weeks of cards fanned out across the floor of her room, and she finds a pattern on the Tuesday and spends two days on it before it turns out to be the wind that comes through the open end of the lane, after which she bends the corner of that card back and forth until it comes off in her fingers.
+She tries the old things: the count goes on her leg walking down to the range, the way it did when she was eleven, and the number comes out the same on the Friday, and she holds her breath at three places in the cycle, one of which makes her dizzy. By the second week of March she has six weeks of cards fanned out across the floor of her room, and she finds a pattern on the Tuesday and spends two days on it before it turns out to be the wind through the open end of the lane, after which she bends the corner of that card back and forth until it comes off in her fingers.
 
-Later that month she asks the office for every range card in the year, and a woman hands her a box of ninety with no lock on it. It takes her four evenings, and what comes out of it is eleven people who have stopped moving: five of them at sixty, three at fifty-eight, two at fifty-five, and one who has been sitting at sixty-three since the previous November, with the curve flattening into the same narrow band for all eleven whether it took them forty sessions or twelve.
+Later that month she asks the office for every range card in the year, and a woman hands her a box of ninety with no lock on it. It takes her four evenings, and what comes out of it is eleven people who have stopped moving: five of them at sixty, three at fifty-eight, two at fifty-five, and one sitting at sixty-three since the previous November, with the curve flattening into the same narrow band for all eleven whether it took forty sessions or twelve.
 
 Voss reads the four evenings' work standing in the doorway of the range office.
 
@@ -68,7 +68,7 @@ Self defence is still ten of them on one with a minute on the clock, three round
 
 "First one's always short, it recovers by the third," Kavi says, still standing at the line.
 
-She gets forty on the second and thirty-nine on the third, and afterward she stands at the edge of the mat with her wraps still on, going through it again with her thumb working at the tape. Odile asks her something on the way out and she answers it badly, so she finds her at dinner to say it properly. Odile is up seven on last year and Sam is up four, which she works out on the walk back, and two boys who used to come off the mat behind her are ahead of her now by nine seconds and eleven, one of whom she has beaten every year since they were ten.
+She gets forty on the second and thirty-nine on the third, and afterward she stands at the edge of the mat with her wraps still on, going through it again with her thumb working at the tape. Odile asks her something on the way out and she answers it badly, so she finds her at dinner to say it properly. Odile is up seven on last year and Sam is up four, which she works out on the walk back, and two boys who used to come off the mat behind her are ahead by nine seconds and eleven, one of whom she has beaten every year since they were ten.
 
 She catches Kowalczyk about it on a Friday, at the door of the mat room, with the next group already coming past both of them.
 
@@ -82,7 +82,7 @@ She catches Kowalczyk about it on a Friday, at the door of the mat room, with th
 
 "It's the only one there is, you just have to learn faster than they do," she says, coming down off her toes and pushing the door the rest of the way open with her foot. "In you go, you're holding up the twelves."
 
-Odile goes into the middle on the second Thursday in March, and by forty seconds there are thirty people watching and somebody has propped the door open so the corridor can see in, while Chloe is at the edge of the mat calling the count with eleven others. At a minute the room makes a noise she can feel through the floor, and Odile holds another nine seconds and comes down on her hands and knees. Chloe is the second person to reach her, and Odile's breath comes short and ragged against the mat with her arms shaking, so Chloe stays down beside her for the rest of the hour with the damp coming through her shirt.
+Odile goes into the middle on the second Thursday in March, and by forty seconds there are thirty people watching and somebody has propped the door open so the corridor can see in, and Chloe is at the edge of the mat calling the count with eleven others. At a minute the room makes a noise she can feel through the floor, and Odile holds another nine seconds and comes down on her hands and knees. Chloe is the second to reach her, and Odile's breath comes short and ragged against the mat with her arms shaking, so Chloe stays down beside her for the rest of the hour with the damp coming through her shirt.
 
 On each of the next two Thursdays she sits on that mat after the room empties, running the last twenty seconds of Odile's round again, and every time she gets to the end of it with the same twenty seconds and no new reason for them.
 
@@ -92,11 +92,11 @@ Hark hands out envelopes in October with two hundred dollars in each, to be spen
 
 "You are going to lose money in your life, everybody does," she says, putting the last envelope down. "You can lose two hundred of it this year, with somebody standing over you who will make you write down what happened, or you can lose a great deal more of it later on your own."
 
-Rustem buys nine dead motors at a farm auction for eleven dollars apiece, four of which are turning over by Christmas, and in January he sits down across from Chloe at dinner and pushes a page of figures at her before she has finished eating, because he wants two hundred. She reads it twice and checks his sale prices against what he got for the first four, then offers him a hundred and twenty at eight percent with the motors as collateral, and he argues about the rate for eleven minutes and loses. Then he tells her she has to see the barn first, so she goes on the Saturday and finds nearly sixty motors in it, a third of them past helping, and she leaves her offer exactly where it was.
+Rustem buys nine dead motors at a farm auction for eleven dollars apiece, four of which are turning over by Christmas, and in January he sits down across from Chloe at dinner and pushes a page of figures at her before she has finished eating, wanting two hundred. She reads it twice and checks his sale prices against what he got for the first four, then offers him a hundred and twenty at eight percent with the motors as collateral, and he argues about the rate for eleven minutes and loses. Then he tells her she has to see the barn first, so she goes on the Saturday and finds nearly sixty motors in it, a third of them past helping, and leaves her offer exactly where it was.
 
 She lends forty to a girl called Fen at nine percent against a table saw, and the last thirty to Priya at twelve, unsecured, because it is Priya. All three pay her back, and she finishes the year with two hundred and seventeen dollars to Rustem's nine hundred and forty.
 
-Hark has her at the board in April with the ledger written up, and stands at the back with her arms folded and reads all three columns before she says anything.
+Hark has her at the board in April with the ledger written up, and reads all three columns from the back with her arms folded before she says anything.
 
 "You bought a piece of somebody else's ceiling, whether you meant to or not."
 
@@ -110,9 +110,9 @@ Hark has her at the board in April with the ledger written up, and stands at the
 
 Chloe wipes the board and sits down.
 
-In the surgical block in March she ties her first suture and her hands do what she tells them, though it takes her twice as long as the boy at the next table, so the instructor writes *steady* on her sheet and then writes the time beside it. Accountancy and taxation run the same term, Hindi has more Sanskrit under it than she expected, and by June the topology book has been lying open at the same proof since Easter.
+In the surgical block in March she ties her first suture and her hands do what she tells them, though it takes twice as long as the boy at the next table, so the instructor writes *steady* on her sheet and then the time beside it. Accountancy and taxation run the same term, Hindi has more Sanskrit under it than she expected, and by June the topology book has been lying open at the same proof since Easter.
 
-Her name lands on an internal research paper in March, sixth of nine, on the author list this time rather than in the acknowledgments, and she reads it four times, then spends twenty minutes looking up who the other eight people are.
+Her name lands on an internal research paper in March, sixth of nine, on the author list this time rather than in the acknowledgments, and she reads it four times, then spends twenty minutes looking up the other eight people.
 
 Dr. Sandoval catches her in the corridor outside the laboratory in April, after a session.
 
@@ -120,13 +120,13 @@ Dr. Sandoval catches her in the corridor outside the laboratory in April, after 
 
 Chloe sets her bag against the wall. "All right, shoot, whatever it is you need to ask."
 
-"There is a non-disclosure agreement on that project. Four people have signed it, and one of them is me, while your name is on none of it, and I would refuse to put a federal agreement in front of a fifteen-year-old, because asking you to sign one would be wrong and it would fail in court besides," she says, shifting the folder to her other arm. "But your work feeds ours, so if you talk about it at home, or on a telephone, or at a table with eleven people round it, you walk away untouched and the consequences land on the four of us instead."
+"There is a non-disclosure agreement on that project. Four people have signed it, and one of them is me, while your name is on none of it, and I would refuse to put a federal agreement in front of a fifteen-year-old, because asking you to sign one would be wrong and would fail in court besides," she says, shifting the folder to her other arm. "But your work feeds ours, so if you talk about it at home, or on a telephone, or at a table with eleven people round it, you walk away untouched and the consequences land on the four of us instead."
 
 "So you're asking me to keep quiet about it, even though there's a rule that says I have every right to talk."
 
 "You can't be held to anything, I can, so asking is what I have."
 
-She lies awake that night, and snaps at Sam at breakfast the next morning for no reason she can name, then apologises for it before he can ask why. Then she takes a week over it and builds the case against first, a fifteen-year-old asked to guard a secret that already had four other names on it, and she makes that side as hard as she can before she builds the other one, from her own position and from the position of the four names on the form. She is quiet at dinner on Wednesday, and Sam asks her twice whether she is all right. She stops saying what she does in the afternoons, and it takes about four days to stop being a decision.
+She lies awake that night, and snaps at Sam at breakfast the next morning for no reason she can name, then apologises for it before he can ask why. Then she takes a week over it and builds the case against first, a fifteen-year-old asked to guard a secret that already had four other names on it, and she makes that side as hard as she can before she builds the other, from her own position and from that of the four names on the form. She is quiet at dinner on Wednesday, and Sam asks her twice whether she is all right. She stops saying what she does in the afternoons, and it takes about four days to stop being a decision.
 
 A teacher takes Priya's phone off her in the second week of March, for the ordinary reason, which is that it is out on the desk during a lecture on evidence, and he puts it in the drawer of the lectern, gives it back on the Friday in front of everybody, and says only that she can charge it at the back. The chat is on that phone, two and a half years of it, locked, and locked properly, and sitting in an unattended drawer for three days inside a building where getting into things is a course with an examination at the end of it.
 
@@ -140,7 +140,7 @@ Kavi does the work over four evenings, and what he comes back with keeps every m
 
 "Which is exactly why the login stopped being the whole thing, and that's the second half of what I did," Kavi says, with the handset face up on the table and the screen dark, tapping the back of it with two fingers. "It wants the password, and then it wants a number off a card, and the card lives somewhere a long way from the pocket the phone lives in. Take the phone, get the password out of whoever you took it from, and you are standing in a corridor holding a piece of glass."
 
-Ruth cuts the cards that week, one each, small enough to go behind the photograph in a wallet or flat under the insole of a boot. Sam loses his in April, which is the failure every one of them predicted out loud in advance and built for anyway, and it takes eleven minutes with Kavi at a terminal to put him back inside. Chloe carries hers behind her range card for the rest of her time in the building, and she checks that it is there about once a week, the way she checks a door on her way past it.
+Ruth cuts the cards that week, one each, small enough to go behind the photograph in a wallet or flat under the insole of a boot. Sam loses his in April, which is the failure every one of them predicted out loud and built for anyway, and eleven minutes with Kavi at a terminal puts him back inside. Chloe carries hers behind her range card for the rest of her time in the building, and she checks that it is there about once a week, the way she checks a door on her way past it.
 
 ---
 
@@ -162,7 +162,7 @@ He takes her to the church lot behind the tire place, empty on a Sunday, with fo
 
 Her father drinks some of the coffee and tells her to carry on. By the end of July she can drive, and the clutch is the part that takes her longest, and at dinner he tells her mother, laughing, that she reads a junction like somebody who has been doing it fifteen years and pulls away from a stop sign like a child.
 
-Her grandmother takes her hand at the table a week later to look at a ring her aunt has brought over, and keeps hold of it after the ring has been round the table. She turns it over in both her hands, where there is a burn across the base of the thumb from March and a smaller one in the web of the first two fingers, and the knuckle on the third finger is bigger than the one on the other hand and sits slightly off, because she set that herself in a corridor at eleven at night and then went to bed.
+Her grandmother takes her hand at the table a week later to look at a ring her aunt has brought over, and keeps hold of it after the ring has been round the table. She turns it over in both her hands, where there is a burn across the base of the thumb from March and a smaller one in the web of the first two fingers, and the knuckle on the third finger is bigger than its opposite and sits slightly off, because she set that herself in a corridor at eleven at night and then went to bed.
 
 Her grandmother runs a thumb over all of it, taking her time, while the conversation about the ring carries on above them, and Chloe sits there and lets her.
 
