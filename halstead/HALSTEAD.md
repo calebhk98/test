@@ -3569,7 +3569,7 @@ Chloe is on the floor with the printed list of deadlines in her lap, going down 
 
 "Then you go to the state school," Sam says, "same as you were always going to," and picks his card back up, turns it over once, sets it down again.
 
-Chloe's list runs to fourteen. The eight, the state school, her mother's college, the community college, one in Michigan because Fen said the winters there are worth seeing once, and two she picks off a phone screen in about nine minutes after lights-out because they came up on the same page as the one in Michigan.
+Chloe's list runs to fourteen. The eight, the state school, her mother's college, the community college, one in Michigan because Fen said the winters there are worth seeing once, Georgetown, because half the authors on Hearn's reading list turn out to teach there, and one she picks off a phone screen in about nine minutes after lights-out because it came up on the same page as the one in Michigan.
 
 Her mother calls twice that month to ask how the essays are going and gets fine both times. The second time she leaves it there and reads the fourteen back down the phone, one at a time, and after each one she says the deadline out loud and waits for Chloe to say it back.
 
@@ -4941,6 +4941,8 @@ The week that follows happens mostly before eight in the morning, before the flo
 
 She spends the next two mornings on the state's business filings, the same site she used to register her own company, working through variations on the name until she finds a registered agent and a mailing address that turns out, when she cross-references it against the county's property records, to be a suite above a tyre shop off the county road, four miles from her own building. She spends a third morning confirming it a different way, pulling the LLC's original filing date to see whether the paperwork was old or freshly cut for the occasion. It's eight months old, which tells her the paperwork's been used before. On the fourth morning she calls the tyre shop's front counter and asks, in the flat unbothered voice of somebody scheduling a delivery, whether the office upstairs keeps regular hours, since she's got a package that needs someone there to sign for it. The man behind the counter says they're in most days, nine to five, four or five of them, and answers it the same easy way he'd answer anyone.
 
+None of it moves anything else on her list. The housings go back to the machine shop with a corrected tolerance sheet before the week is out, payroll clears on the fifteenth the way it always does, and she grades a stack of that month's take-home tests at the kitchen table the same night she confirms the registered agent's address, one legal pad next to the other.
+
 She keeps the rest of it to herself: no police, no lawyer, and at the company only that she's out for the afternoon. On the seventh day she closes the shop books at home, tells her parents she'll be back before dinner, and drives out alone.
 
 The stairs run up the outside of the building, a bare steel case bolted to brick, and she can smell the tyre shop the whole way up, rubber and hot metal working together in the heat. The door at the top gives when she tries it. Four men are inside: two at a folding table with laptops open, one behind a desk in what's meant to look like an office, one leaning in a doorway to a second room with a coffee going cold in his hand. The folding table is covered in paper as well as laptops, printouts with lines highlighted in three different colors, and a whiteboard behind the desk still carries somebody else's job in half-erased marker. All four look up when the door opens straight into the room, no knock ahead of it.
@@ -4972,6 +4974,9 @@ ________________
 The hiring changes Nadia's mind.
 
 
+She writes every posting herself, the same flat one-paragraph shape she uses for a labor contract: what the job needs, what it pays, no line about anything else. The two other diagnostic-tool shops fishing the same short list of local machinists post in a different language entirely, doing more with fewer hands, a lean team outpacing a bigger one, and she reads those the way she reads an estimate from a mechanic still guessing at what's under the hood. Her own board flags her hiring pace in the same monthly email, a line about burn and headcount that she reads all the way through and answers by posting two more roles the same afternoon.
+
+
 She interviews four hundred people that year, because she's growing and because she does all of it herself.
 
 
@@ -4981,6 +4986,9 @@ The first thing is that almost everyone fails the take-home. She makes it easier
 The second thing is the interviews. She runs them out of the same windowless office where she signed the cleaning contract, a folding table between two chairs and a laptop open to whatever the candidate submitted the night before, a stack of the ones still to come squared off at her elbow. She asks them to explain something they built. Most of them can do that part fine; four years of resumes have taught people how to talk about their own work in front of a stranger. She asks two questions about it. The first is usually fine. The second, the one that asks what happens at the edge of what they built, past the part they actually tested, is where most of them run out of road. One candidate walks her carefully back through a payment system he'd built at his last job, confident the whole way, and when she asks what happens if two requests land in the same millisecond, he tells her that's an edge case, in the tone of somebody who's used that exact phrase before to make a question go away. She writes one line on his sheet and moves to the next person. Another spends four minutes describing a scheduling tool with real pride in his voice, and when she asks who checks it when the schedule it produces is simply wrong, says that's what the review step is for, and can't name who does the reviewing. The rare candidate who does answer the second question properly gets a longer interview than the sheet calls for, because she'd rather spend the extra twenty minutes finding out where the edge of that person's knowledge actually sits than end the day guessing.
 
 She hires excellent people anyway, because the pool has to come from somewhere and the alternative is leaving the roster short. She checks their references and their references are glowing and they are, by every measure available to her, very good. What she notices only later, watching them work a floor she built to run a certain way, is how many of them stop exactly where the reference letter would have stopped: competent right up to the edge of the job description, and then waiting for somebody to tell them what's past it.
+
+
+A vendor pitches her twice that spring on a tool built around exactly that gap, machine-scored, sized for the same handful of roles she could then leave unfilled. She takes both calls standing at the bench, says she'll think about it, and hires two more people instead before the month is out.
 
 
 nadia: is anyone elses hiring weird

@@ -18,7 +18,7 @@ Chloe is on the floor with the printed list of deadlines in her lap, going down 
 
 "Then you go to the state school," Sam says, "same as you were always going to," and picks his card back up, turns it over once, sets it down again.
 
-Chloe's list runs to fourteen. The eight, the state school, her mother's college, the community college, one in Michigan because Fen said the winters there are worth seeing once, and two she picks off a phone screen in about nine minutes after lights-out because they came up on the same page as the one in Michigan.
+Chloe's list runs to fourteen. The eight, the state school, her mother's college, the community college, one in Michigan because Fen said the winters there are worth seeing once, Georgetown, because half the authors on Hearn's reading list turn out to teach there, and one she picks off a phone screen in about nine minutes after lights-out because it came up on the same page as the one in Michigan.
 
 Her mother calls twice that month to ask how the essays are going and gets fine both times. The second time she leaves it there and reads the fourteen back down the phone, one at a time, and after each one she says the deadline out loud and waits for Chloe to say it back.
 
