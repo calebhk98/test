@@ -7,21 +7,21 @@ The waiting room has a fish tank in it with no fish, only water, the little plas
 "I don't know, honey," her mom says, not looking up, so Chloe decides it's a true answer.  
 Because there are a lot of papers on the clipboard her mom is filling out, Chloe comes back and stands at the arm of the chair and watches her check boxes all the way down one column, then turn the page over, where there are more of them. Chloe leans into her mom's arm to see the boxes better, and her mom shifts the clipboard half an inch on her own, so she still has the light. Partway down the second page her mom goes back and changes one she's already checked.  
 "What's it about?"  
-"It's about you."  
-"What about me?"  
-"Just how you do at school." Her mom checks another box, eyes on the page. "How you feel about stuff."  
-"You know how I feel about stuff?"  
+"It's about you, mostly just how you're doing."  
+"What about me, though? Like what part of me?"  
+"Just how you do at school, and how you feel about stuff, so the people there get a fuller picture than a report card gives them." Her mom checks another box, eyes on the page.  
+"You know how I feel about stuff? That's the first I've heard of it."  
 Her mom stops. She looks at the clipboard, then at Chloe, then puts the pen down flat on top of the papers.  
-"I'm doing my best guess," she says. "Okay?"  
+"I'm doing my best guess on some of these," she says, "because I only get to see the outside of you, so I'd rather guess honestly than skip a question. Okay?"  
 "Okay."  
 Because that morning he'd tried to move two things and hadn't managed either one, her dad is at work. He'd stood in the kitchen with his keys already in his hand, saying sorry about four times, until her mom told him it's fine, it's a Wednesday, and Chloe had held on to his sleeve at the door a second longer than the door needed to close. Not sure whether this is the kind of thing you bring a dad to, she reads the waiting room instead. There's a poster about washing your hands, in English on one side and Spanish on the other, and the Spanish side takes a while because she tries it first. There's a magazine about boats, most of the words past her, which she reads anyway, all the way through to the page at the back with the prices on it. There's a sign that says NO CELL PHONES with a picture of a phone underneath it and a red line drawn through the phone: if you can read the sign, the picture is redundant, and if you can't read the sign, the picture won't help you either.  
 \---  
 Dr. Prentice has a beard and a room with a small table in it, more like somebody's kitchen than an office. There's no bed with the paper on it, only a box of tissues, a bin of blocks, and a window with the blinds pulled halfway down over a view of the parking structure.  
 After he tells her she can call him Ben and asks what he should call her, he sits down across the table on a chair the same size as hers.  
 "So. We're going to do some stuff that's kind of like games. Some of it's easy, some of it's really hard, and the hard ones are supposed to be hard. If you don't get one, that's fine, because that's how it's built. Deal?"  
-"Deal. Is it a test?"  
+"Deal. Is it a test? Like a real one, with a grade at the end?"  
 "Sort of."  
-"Can you fail it?"  
+"Can you fail it? What happens if I get all of them wrong?"  
 "No," he says straight away, the answer already lined up. "There's no passing number and I'm not giving you a grade at the end. I'm watching how you do things, not whether you get them."  
 Chloe looks at him hard, the way you look at someone before you decide whether to believe them, and files the last part with everything else adults say when they want you to sit still.  
 \---  
@@ -57,16 +57,16 @@ Chloe asks to use the bathroom first, which turns out to be through a door she'd
 He sits with it, and lets the room stay quiet instead of moving on to something easier, long enough that Chloe fills it herself.  
 "I look out the window," Chloe says.  
 "At what?"  
-"The parking lot. There's people in it doing stuff. There was a guy who put his coffee on the roof of the car and drove off with it still up there and it went off at the turn out of the lot." She looks at the cup. "And then Mrs. Aldana asked me a question and I didn't know there was one."  
+"The parking lot, there's people in it doing stuff. There was a guy who put his coffee on the roof of the car and drove off with it still up there and it went off at the turn out of the lot." She looks at the cup. "And then Mrs. Aldana asked me a question and I didn't know there was one."  
 "How long is it, usually? Between when you finish and when everybody else does."  
-"I don't know. A long time."  
+"I don't know, a long time, like a really long time."  
 "Longer than we've been in here?"  
-"No." Chloe works it out against the blocks and the juice and the two rooms. "Half of it. Like half of it, but every day."  
+"No." Chloe works it out against the blocks and the juice and the two rooms. "Half of it, like half of it, but every day."  
 This time, as Ben writes that down, she watches him do it, and it takes him longer than the other ones.  
 \---  
 For two hours they keep going: pictures come with a piece missing, and she has to say what's missing, including one where the missing piece is a shadow, which she thinks is unfair and gets right anyway. He tells her a story about a boy and a wagon, then has her tell it back, and she tells it back with all of it in, including the part about the neighbor. A set of questions asks what you would do if you found somebody's wallet, or if you smelled smoke, where every answer she gives seems to be the right one, so she stops trusting the questions. Another timed sheet has rows of shapes where she has to cross out the ones that match, and she is bad at that as well, and she knows it before he says stop. By the second maze her stomach is loud enough that she covers it with her forearm, and she keeps switching which leg she's sitting on. One sheet has a maze on it, and between two of them he asks whether she's tired and she says no, then asks again after the next one.  
 "You can say yes."  
-"I know," Chloe says, and he lets it go.  
+"I know, but if I say yes, do we stop, or do we just do a different one?" Chloe asks, and he lets it go, telling her they'll just switch to something easier for a bit.  
 At the end he caps his pen and puts the last card back in its box. "You worked really hard."  
 "Thanks."  
 Chloe opens her mouth to ask whether she did good, then presses her lips together, because that's not a question kids get to ask.  
@@ -81,26 +81,26 @@ The door is open a few inches. Through the gap her mom's foot keeps moving, heel
 Only pieces of it reach her: her mom's voice, the teacher says. Ben's voice runs on, full of words bigger than her. Then a piece of it comes through clean, because he's turned toward the door.  
 "I'm not seeing what the school is seeing. She finishes in the first two minutes and then she's got thirty-eight minutes left over and nowhere to put them."  
 "So there's nothing wrong with her?"  
-"She's completely fine."  
+"She's completely fine, as far as I can tell from what's actually going on with her."  
 Her mom makes a sound, and Chloe can't tell what kind it is from out here, since it could be either kind.  
-"There are a couple of things where she's slower than most kids her age, and the biggest one is copying. Hand-and-eye. That part's real, you'll see it in her handwriting for years, and it's also not what anybody in that building is calling you about."  
+"There are a couple of things where she's slower than most kids her age, and the biggest one is copying, hand-and-eye. That part's real, you'll see it in her handwriting for years, and it's also not what anybody in that building is calling you about."  
 "No."  
 "Right. Here's the thing I want you to understand about the report when it comes, because it's going to have one big number on the front of it, a single composite that averages two very different pictures into one score, and that number is going to be lower than it should be, low enough that a school skimming for a label could miss her without ever seeing the two halves it was built from. The talking-and-reasoning part of this, she's at the top of it. The speed part, she's ordinary. When you average those together you get a number that says bright kid, and 'bright kid' undersells the room I actually sat in this morning."  
 Chloe shifts on the chair, her feet nowhere near the floor.  
 "So what number do I get?"  
-"A good one. Not the one that would make somebody move."  
+"A good one, and that's exactly the trouble with it: good numbers don't move a system the way a bad one would, and this one's going to read as good on the page."  
 "Then what do I do?" her mom says.  
 "The lever here is the school, because that's where the forty minutes are. I can write it all up and you can walk it in there, and some of them do move on a report like that."  
 "And the rest of them?"  
 "The rest of them put it in the folder." He says it without any particular feeling about it. "Is there a gifted program?"  
-"It starts in third grade."  
-"Then that's two years."  
+"It starts in third grade, that's what they told us the one time we asked."  
+"Then that's two years between now and the only lever the school actually has for her."  
 A phone goes off somewhere else in the building, and somebody answers it.  
 "Okay," her mom says.  
 Chloe looks at her shoes and holds still, in case moving is the thing that makes the door close.  
 \---  
 In the car her mom puts both hands on the wheel, waits, checks the mirror, checks it a second time, and starts it.  
-"So you're all good," she says. "Everything's great."  
+"So you're all good," she says, pulling out of the parking spot. "Everything's great, he thinks you're doing just fine."  
 "Okay." Chloe has her seatbelt across her with both hands holding it away from her neck.  
 "Do you want to know what he said?"  
 Chloe pulls the seatbelt out another inch and lets it snap back against her collarbone, against the rules, and her mom lets it go. There is a version of this where she finds out and a version where she doesn't, and she can't work out fast enough which one is better.  

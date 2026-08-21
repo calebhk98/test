@@ -12,9 +12,9 @@ Live fire starts in October at fifty metres, prone, unsupported, on paper, and i
 
 Keeping the rifle up, Sam asks, "How long till this bit's boring?"
 
-"Six weeks." Kavi is on the next mat with his chin on his forearms, watching the flag. "It was six on the nerf and six on the paint, so six. Then they hang it off something, then they make it move, then we get the good one."
+"Six weeks." Kavi is on the next mat with his chin on his forearms, watching the flag. "It was six on the nerf and six on the paint, so six, and then they hang it off something, then they make it move, then we get the good one."
 
-"Six is generous," Sam says. "Ruth's already bored."
+"Six is generous," Sam says. "Ruth's already bored, and she always keeps it to herself."
 
 "Ruth was bored in the briefing," Odile says.
 
@@ -24,11 +24,11 @@ Kneeling and standing come in before the end of the month, then a hundred metres
 
 A machine arrives in February that throws a clay across the front of the range every nine seconds, always at the same speed. Voss hands out a card with the interval printed on it so they can run a count off it.
 
-"It's nine and about a fifth. I've timed forty of them." Aymar has the stopwatch out on the bench where he can see it. "The machine resets slow."
+"It's nine and about a fifth. I've timed forty of them, and the machine resets slow every time." Aymar has the stopwatch out on the bench where he can see it.
 
 "The card says nine, Aymar," Voss says, keeping his eyes on the range.
 
-"That card was printed before somebody put a new head on the thrower. Run a count off nine flat and you're early every time, all the way down."
+"That card was printed before somebody put a new head on the thrower, so run a count off nine flat and you're early every time, all the way down."
 
 Voss looks at the stopwatch for about as long as it takes him to decide whether Aymar is right. "Firing point four, you're up."
 
@@ -38,13 +38,13 @@ Kavi catches up with Chloe on the path afterward, walking backward with his kit 
 
 "How's that supposed to work with two people, though?"
 
-"It isn't two people. It's one person and a machine on a nine-second cycle."
+"It isn't two people, it's one person and a machine on a nine-second cycle."
 
 "Right, but the arrow was two people, and the arrow only worked because, one, it hangs at the top, so if you're late it hasn't gone anywhere, and two, you're both running off the same count, so if you're late you're late together." He shifts the kit to the other hip without turning round. "A bullet does neither. There's a version of this coming that fixes both at once and I want to know what it is by March."
 
-"They might leave it at clays."
+"They might leave it at clays and leave it there for good."
 
-Kavi shakes his head. "Nah. It escalates every year."
+Kavi shakes his head. "Nah, it escalates every year, it always has."
 
 ---
 
@@ -52,13 +52,13 @@ Self defense is three rounds an hour. One person stands in the middle, the other
 
 Chloe holds fifty seconds on her third round on a Tuesday in February. She is flat on her back before the whistle finishes, somebody's knee still across her shin, laughing at the ceiling with both arms out.
 
-"That was nearly a whole minute," Odile says, getting a hand under her arm and hauling her up by the wrist.
+"That was nearly a whole minute, that's the longest anyone's held all week," Odile says, getting a hand under her arm and hauling her up by the wrist.
 
-"My average is forty-five." Chloe gets her feet under her on the third attempt, still holding Odile's arm and grinning at her. "Run me again."
+"My average is forty-five." Chloe gets her feet under her on the third attempt, still holding Odile's arm and grinning at her. "Run me again, I want to see if I can beat it."
 
 "That's the last round," Kowalczyk says, keeping her eyes on the board. "Pairs for the rest of the hour."
 
-"I'm ten seconds off a minute, though."
+"I'm ten seconds off a minute, though, and I want another go at it."
 
 "You're ten seconds off a minute and you're doing pairs."
 
@@ -82,11 +82,11 @@ Abstract algebra arrives with probability beside it. In contracts they spend a t
 
 Engineering and design works the other way round from wood shop and the forge, where she makes the thing herself. Here she writes down what it has to do and hands the paper to a stranger. She writes a two-page specification for a clamp in November, and when a boy called Dov builds it off the paper, it closes on the wrong axis.
 
-"He built what you wrote," the teacher says.
+"He built what you wrote," the teacher says, holding the clamp up so she can see which way it opens. "The spec says how hard to hold something, not what it's holding, so he built a clamp that could hold anything, which means it holds any one thing just as poorly as the rest."
 
 Chloe reads her own two pages again with the clamp sitting on top of them. The pressure is on there, and the travel, and the tolerance, and which way it opens. She runs a finger down the first page, then the second, then turns them both over and finds the backs blank.
 
-"There's nothing on here about what it's holding."
+"There's nothing on here about what it's holding. I wrote down the pressure, the travel, and the tolerance, and missed the one thing that actually matters."
 
 The no-libraries project runs for a month in the spring, and the brief is one sentence: something that does a real job, all of it written from scratch by you.
 
@@ -94,29 +94,29 @@ She writes a text renderer that reads the font file when it loads and works the 
 
 Ruth does sound, all of it generated live off whatever the user is doing. She spends two days flat on the floor of her room with the machine on her chest, playing the same six seconds until Priya bangs on the wall.
 
-"It's the attack. Every time I fix the attack it breaks the tail."
+"It's the attack, because every time I fix the attack it breaks the tail."
 
-"Play it again from the start." Chloe shuts the door with her heel and sits down on the floor with her back against the bed.
+"Play it again from the start, all the way through this time." Chloe shuts the door with her heel and sits down on the floor with her back against the bed.
 
-"I've played it four hundred times. It does the same thing four hundred times."
+"I've played it four hundred times, and it does the same thing every single time."
 
 "Play it again and let me hear the part before the note. You keep starting where you think it starts."
 
 Ruth plays it eleven more times, then at about one in the morning she sits up so fast the machine slides off her.
 
-"There's forty milliseconds of nothing on the front of it."
+"There's forty milliseconds of nothing on the front of it, the whole time, and I only just noticed it now."
 
-"You've been cutting that off."
+"You've been cutting that off this whole time, without even noticing you were doing it."
 
-"I've been cutting that off since Tuesday."
+"I've been cutting that off since Tuesday, thinking it was empty space worth losing."
 
 Down at the materials lab she spends the autumn on a run of fracture tests that keep coming out inconsistent, and after five weeks she has it. Samples cut on the Friday saw come out three degrees off square; samples cut on the Tuesday saw come out true; the log lists the date and the operator and leaves out the saw. Her name goes into the acknowledgments of the write-up in March, at the end of a list of five, on a paper that stays inside the department. Sanders tells her in the corridor on his way somewhere else without breaking stride, but she stands there, bag half off her shoulder, before she goes on to Japanese, and she reads the whole paper that night and finds the two tables that came out of her weeks.
 
 Sam is six foot two by September, when Ruth stands next to him at breakfast in the first week and tips her head back to find his face.
 
-"You've been eating."
+"You've been eating, and eating well, from the look of it."
 
-"I've been eating a lot."
+"I've been eating a lot, probably too much, honestly."
 
 "You've been eating like a man with a farm," she says, going back to her tray. "You'll be a nightmare on the mats."
 
@@ -136,7 +136,7 @@ Sam asks out a girl in the year below in October, and the table has an opinion o
 
 "He said, 'Do you want to do something?' And she said, 'What?' And he said he didn't know yet," Odile says.
 
-Ruth puts her fork down and leaves it down. "He didn't know. He had a whole Thursday afternoon and every building on this campus and he didn't know. Do you know how many things there are to do here? He's the only person who's ever got over that wall and he couldn't think of one."
+Ruth puts her fork down and leaves it down. "He didn't know. He had a whole Thursday afternoon and every building on this campus and he didn't know, and do you know how many things there are to do here? He's the only person who's ever got over that wall and he couldn't think of one."
 
 "He's got a lake, Kavi. A lake and a boat shed," Priya says.
 

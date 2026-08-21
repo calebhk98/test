@@ -100,6 +100,38 @@ GOALS = [
 ]
 
 
+def dialogue_share(path):
+    """Share of words inside quotation marks, and the spoken-sentence count.
+
+    The spoken mean is blind to the worst failure available. A chapter that
+    narrates every exchange - "the sergeant tells him", "what the debrief tells
+    him" - has no quoted sentences to measure, so it scores nothing at all, and
+    a chapter with five spoken sentences can post a better mean than a chapter
+    with two hundred. Chapter 26 measured 17.0 off five sentences while being
+    four per cent dialogue. Always read the share and the count beside the mean.
+    """
+    import statistics as _st
+    spec2 = importlib.util.spec_from_file_location("ds", HERE / "dialogue_study.py")
+    ds = importlib.util.module_from_spec(spec2)
+    import sys as _sys
+    _argv, _sys.argv = _sys.argv, ["x"]
+    try:
+        spec2.loader.exec_module(ds)
+    finally:
+        _sys.argv = _argv
+    t = Path(path).read_text(encoding="utf-8")
+    t, _ = ds.pg.strip_transcript(t)
+    sp, na = ds.spoken_and_narrated(t)
+    sl = ds.sent_lengths(sp)
+    sw, nw = len(ds.pg.words(sp)), len(ds.pg.words(na))
+    if not (sw + nw):
+        return None
+    return {"quoted": 100 * sw / (sw + nw),
+            "spoken": _st.fmean(sl) if sl else None,
+            "n": len(sl),
+            "short": 100 * sum(1 for x in sl if x <= 3) / len(sl) if sl else None}
+
+
 def one_chapter(path):
     """One chapter down the page instead of across it.
 
@@ -141,6 +173,21 @@ def one_chapter(path):
             failed.append(label)
         print(f"  {label:<40}{v:9.1f}{gtxt:>14}  {mark:<6}{src}")
 
+    d = dialogue_share(path)
+    if d:
+        print("  " + "-" * 84)
+        print(f"  {'dialogue, share of words quoted %':<40}{d['quoted']:9.1f}{'>= 15':>14}  "
+              f"{'pass' if d['quoted'] >= 15 else 'FAIL':<6}corpus talky books 25-39")
+        if d["spoken"] is not None:
+            print(f"  {'mean spoken sentence, words':<40}{d['spoken']:9.1f}{'>= 16':>14}  "
+                  f"{'pass' if d['spoken'] >= 16 else 'FAIL':<6}author")
+            print(f"  {'spoken lines of 1-3 words %':<40}{d['short']:9.1f}{'<= 8':>14}  "
+                  f"{'pass' if d['short'] <= 8 else 'FAIL':<6}author")
+        if d["n"] < 20:
+            print(f"\n  ** Only {d['n']} spoken sentences in this chapter. The mean above is")
+            print("     measured over almost nothing and means almost nothing. A chapter this")
+            print("     quiet has usually narrated its dialogue instead of writing it; check")
+            print("     the narration for 'he tells her', 'she asks him whether', and the like.")
     print("  " + "-" * 84)
     print("\n  %d of %d at goal." % (len(GOALS) - len(failed), len(GOALS)))
     if failed:
