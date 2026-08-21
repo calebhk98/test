@@ -102,7 +102,7 @@ She says it again at the same length as the first time, for both of them now, ke
 
 Her father lets a breath out in one flat exhale, not quite a laugh. "That's not a decision, that's a mistake, however it's dressed up."
 
-"Dave—"
+"Dave."
 
 "I'm allowed to think it's a mistake." Back to Chloe now, and slower, in the voice he uses for laying a number down on a table. "You understand what a hundred and thirty five thousand dollars a year actually is, over ten years, with the housing and the degree stacked on top of it, before you've paid a dollar of rent anywhere else in your life."
 
@@ -132,7 +132,7 @@ Her mother's voice, when it comes back, has the same flat edge she uses reading 
 
 "It's not free, and you and Dad are going to have to figure out how to pay for it, the same way you figure out everything else, and it's my fault that you have to."
 
-"That's not what I—" her mother starts, then stops and starts again. "It's not your fault, and I need you to actually hear that, because it's a fact about a number and only that. There's a difference between a fact and a fault, and I want you to know it."
+"That's not what I..." her mother starts, then stops and starts again. "It's not your fault, and I need you to actually hear that, because it's a fact about a number and only that. There's a difference between a fact and a fault, and I want you to know it."
 
 "Okay, I hear the difference, and I'm not going to pretend it away."
 

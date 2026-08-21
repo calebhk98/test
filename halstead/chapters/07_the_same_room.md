@@ -112,8 +112,6 @@ The first math sheet comes around at twenty past nine, and she squints at it bef
 
 Fractions at camp, staying up until the number finally sat still on the page, and now this, math from last year again. Having done all thirty she goes back to the top and checks each one over, and every answer matches what she wrote the first time, so she puts her hands in her lap and waits for the room to catch up around her.
 
-It works on the first day of second grade exactly the way it worked in April.
-
 ---
 
 The second week Ms. Vance brings in a shoebox with foil taped all over it and stands it up on the front desk where everybody can see it.

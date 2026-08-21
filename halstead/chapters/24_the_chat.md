@@ -582,7 +582,7 @@ kavi: i know that too. i asked twice
 chloe: fine
 
 
-Chloe leaves it. There is a version of the afternoon where she keeps pulling at it, and she can feel the shape of that version while she types the last message, and she goes and does her reading instead. Nobody in the chat says anything about a nineteen-year-old offering to synthesise a drug over a week because the pharmacy could not supply it. It sits in the log between the question about the hard step and Kavi asking twice, and the next thing anybody types is about something else.
+Chloe leaves it. There is a version of the afternoon where she keeps pulling at it, and she can feel the shape of that version while she types the last message, and she goes and does her reading instead. The offer sits in the log between the question about the hard step and Kavi asking twice, and the next thing anybody types is about something else.
 
 
 The lock they built at thirteen to get past a teacher is still the only thing standing between this chat and anyone outside it, the same lock five years running, untouched and unreplaced. Whatever internal means, it's a wall each of them keeps running into.

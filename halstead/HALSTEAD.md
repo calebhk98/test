@@ -1670,8 +1670,6 @@ The first math sheet comes around at twenty past nine, and she squints at it bef
 
 Fractions at camp, staying up until the number finally sat still on the page, and now this, math from last year again. Having done all thirty she goes back to the top and checks each one over, and every answer matches what she wrote the first time, so she puts her hands in her lap and waits for the room to catch up around her.
 
-It works on the first day of second grade exactly the way it worked in April.
-
 ---
 
 The second week Ms. Vance brings in a shoebox with foil taped all over it and stands it up on the front desk where everybody can see it.
@@ -4615,7 +4613,7 @@ She says it again at the same length as the first time, for both of them now, ke
 
 Her father lets a breath out in one flat exhale, not quite a laugh. "That's not a decision, that's a mistake, however it's dressed up."
 
-"Dave—"
+"Dave."
 
 "I'm allowed to think it's a mistake." Back to Chloe now, and slower, in the voice he uses for laying a number down on a table. "You understand what a hundred and thirty five thousand dollars a year actually is, over ten years, with the housing and the degree stacked on top of it, before you've paid a dollar of rent anywhere else in your life."
 
@@ -4645,7 +4643,7 @@ Her mother's voice, when it comes back, has the same flat edge she uses reading 
 
 "It's not free, and you and Dad are going to have to figure out how to pay for it, the same way you figure out everything else, and it's my fault that you have to."
 
-"That's not what I—" her mother starts, then stops and starts again. "It's not your fault, and I need you to actually hear that, because it's a fact about a number and only that. There's a difference between a fact and a fault, and I want you to know it."
+"That's not what I..." her mother starts, then stops and starts again. "It's not your fault, and I need you to actually hear that, because it's a fact about a number and only that. There's a difference between a fact and a fault, and I want you to know it."
 
 "Okay, I hear the difference, and I'm not going to pretend it away."
 
@@ -5466,7 +5464,7 @@ kavi: i know that too. i asked twice
 chloe: fine
 
 
-Chloe leaves it. There is a version of the afternoon where she keeps pulling at it, and she can feel the shape of that version while she types the last message, and she goes and does her reading instead. Nobody in the chat says anything about a nineteen-year-old offering to synthesise a drug over a week because the pharmacy could not supply it. It sits in the log between the question about the hard step and Kavi asking twice, and the next thing anybody types is about something else.
+Chloe leaves it. There is a version of the afternoon where she keeps pulling at it, and she can feel the shape of that version while she types the last message, and she goes and does her reading instead. The offer sits in the log between the question about the hard step and Kavi asking twice, and the next thing anybody types is about something else.
 
 
 The lock they built at thirteen to get past a teacher is still the only thing standing between this chat and anyone outside it, the same lock five years running, untouched and unreplaced. Whatever internal means, it's a wall each of them keeps running into.
@@ -5792,7 +5790,7 @@ She interviews four hundred people that year, because she's growing and because 
 The first thing is that almost everyone fails the take-home. She makes it easier. Then easier again. By November it's a version she'd have handed a twelve-year-old at Halstead and the pass rate is under a third.
 
 
-The second thing is the interviews. She runs them out of the same windowless office where she signed the cleaning contract, a folding table between two chairs and a laptop open to whatever the candidate submitted the night before, a stack of the ones still to come squared off at her elbow. She asks them to explain something they built. Most of them can do that part fine; four years of resumes have taught people how to talk about their own work in front of a stranger. She asks two questions about it. The first is usually fine. The second, the one that asks what happens at the edge of what they built, past the part they actually tested, is where most of them run out of road. One candidate walks her carefully back through a payment system he'd built at his last job, confident the whole way. "What happens if two requests land in the same millisecond?" she asks. "That's an edge case," he says, in the tone of somebody who's used that exact phrase before to make a question go away. She writes one line on his sheet and moves to the next person. Another spends four minutes describing a scheduling tool with real pride in his voice. "Who checks it when the schedule it produces is simply wrong?" she asks. "That's what the review step is for," he says. "Whoever's on it that sprint, I guess," he adds, when she asks him to actually name the person, and he can't. The rare candidate who does answer the second question properly gets a longer interview than the sheet calls for, because she'd rather spend the extra twenty minutes finding out where the edge of that person's knowledge actually sits than end the day guessing.
+The second thing is the interviews. She runs them out of the same windowless office where she signed the cleaning contract, a folding table between two chairs and a laptop open to whatever the candidate submitted the night before, a stack of the ones still to come squared off at her elbow. She asks them to explain something they built. Most of them can do that part fine; four years of resumes have taught people how to talk about their own work in front of a stranger. She asks two questions about it. The first is usually fine. The second, the one that asks what happens at the edge of what they built, past the part they actually tested, is where most of them run out of road. One candidate walks her carefully back through a payment system he'd built at his last job, confident the whole way. "What happens if two requests land in the same millisecond?" she asks. "That's an edge case," he says. She writes one line on his sheet and moves to the next person. Another spends four minutes describing a scheduling tool with real pride in his voice. "Who checks it when the schedule it produces is simply wrong?" she asks. "That's what the review step is for," he says. "Whoever's on it that sprint, I guess," he adds, when she asks him to actually name the person, and he can't. The rare candidate who does answer the second question properly gets a longer interview than the sheet calls for, because she'd rather spend the extra twenty minutes finding out where the edge of that person's knowledge actually sits than end the day guessing.
 
 She hires excellent people anyway, because the pool has to come from somewhere and the alternative is leaving the roster short. She checks their references and their references are glowing and they are, by every measure available to her, very good. What she notices only later, watching them work a floor she built to run a certain way, is how many of them stop exactly where the reference letter would have stopped: competent right up to the edge of the job description, and then waiting for somebody to tell them what's past it.
 
