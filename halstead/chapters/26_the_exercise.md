@@ -60,7 +60,17 @@ The major's eyebrows go up. Somebody two rows back stops picking at the boot lac
 
 "Because if that's the assessment I've got notes," Sam says. "The culvert one was bad. I let them have the back door and that's on me, I should have gone up and around and I got lazy about the time. If we're doing it again I'd want it harder, honestly, or at least more of them, because a two, a four, and a one over four days is a lot of walking for not much."
 
-The major looks at him across the width of the room for a while, laser pointer off now, clipboard shut under his arm. Then he sets the clipboard down on the lectern, checks his watch, and calls the next name on his list.
+The major looks at him across the width of the room for a while, laser pointer off now, clipboard shut under his arm. Then he opens it again and finds the page he wants.
+
+"That was the assessment," he says, "and what you've just handed me is two notes and an opinion, so we'll take the notes first, and you can say the culvert part again, slower, to the room instead of to me."
+
+"Thirty feet of open ground to read it from and I went in anyway," Sam says. "I was watching the clock instead of the pipe."
+
+"Everybody write that down, because that is the entire reason there is a culvert on this overlay, and we are three soldiers into the afternoon before anybody in this room says it out loud." The major writes it on the top sheet himself, unhurried, eyes on the page rather than on Sam until he has finished with it. "The opinion is a separate matter. Difficulty is set above you, Marsh, and it is set a good way above me as well, and a soldier who wants the next one made harder for him has decided the exercise is about him, when the exercise is about everybody sitting in front of me and a fixed number of hours of somebody else's night."
+
+The soldier who went all four days untouched turns around in the front row to look at Sam, and turns back before the major has finished writing.
+
+The major closes the clipboard, checks his watch, and calls the next name on his list.
 
 It goes upward anyway.
 

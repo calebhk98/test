@@ -88,11 +88,11 @@ Her parents sit in the living room and listen to her going back and forth over t
 
 Her mom's voice drops to something Chloe catches only just. "I know what she's like."
 
-The house comes up in April, in the living room, with Chloe on the rug in front of the television and listening to none of it.
+The house comes up in April, on a Saturday afternoon, with Chloe two streets over at a birthday party they are due to collect her from at four. Her dad has the letter open on the kitchen table in front of him, and her mother stays standing at the counter for the whole of it with the mug in both hands.
 
 "They're offering us a house," her dad says, "ten minutes from campus, furnished, and they pay for it the whole time she's enrolled, and if she leaves it stops, which is the only condition on the deal."
 
-"No, absolutely not, and I'm not going to spend an hour talking myself into it either," her mother says, keeping hold of her mug.
+"No, absolutely not, and I'm not going to spend an hour talking myself into it either," her mother says.
 
 "Meg, we'd see her every day of the week instead of nine weeks a year, and that's the whole trade they're offering us."
 
@@ -102,13 +102,13 @@ Dave rubs a hand over his face. "Then give me one reason, because I have been si
 
 "Because if we take their house," her mother says, "then the day I decide I want to pull her out of that building is the day the three of us have nowhere to live, and that's the reason, and it's the whole reason, and I'm not going to argue about it: they can have her for the year, but they are not getting the roof over her head as well."
 
-Dave looks down, at neither of them.
+Dave looks at the table.
 
 "That's a hell of a way to put it, Meg, because you make it sound like I already agreed to hand over the roof over her head."
 
 "It's how it is, though, and you know it is, because you said yes to the whole idea back in July, before either of us had even heard the word furnished."
 
-On the rug, Chloe has stopped moving. She catches enough of it to string together house, and roof, and nowhere, then gets up once in the middle of it to check through the window that the car is still in the driveway, before sitting back down in front of the television and letting the rest of it go.
+Her mother puts the mug in the sink and runs water into it. Her dad folds the letter back along the crease it came in, and at four he drives over and collects Chloe, who talks about the party from the car door all the way up the driveway.
 
 They drive out on the Friday for the day where Halstead looks at her, and the building is a different building in April than it was in July, because it is raining and every hall in it is full of people.
 

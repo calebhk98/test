@@ -2062,11 +2062,11 @@ Her parents sit in the living room and listen to her going back and forth over t
 
 Her mom's voice drops to something Chloe catches only just. "I know what she's like."
 
-The house comes up in April, in the living room, with Chloe on the rug in front of the television and listening to none of it.
+The house comes up in April, on a Saturday afternoon, with Chloe two streets over at a birthday party they are due to collect her from at four. Her dad has the letter open on the kitchen table in front of him, and her mother stays standing at the counter for the whole of it with the mug in both hands.
 
 "They're offering us a house," her dad says, "ten minutes from campus, furnished, and they pay for it the whole time she's enrolled, and if she leaves it stops, which is the only condition on the deal."
 
-"No, absolutely not, and I'm not going to spend an hour talking myself into it either," her mother says, keeping hold of her mug.
+"No, absolutely not, and I'm not going to spend an hour talking myself into it either," her mother says.
 
 "Meg, we'd see her every day of the week instead of nine weeks a year, and that's the whole trade they're offering us."
 
@@ -2076,13 +2076,13 @@ Dave rubs a hand over his face. "Then give me one reason, because I have been si
 
 "Because if we take their house," her mother says, "then the day I decide I want to pull her out of that building is the day the three of us have nowhere to live, and that's the reason, and it's the whole reason, and I'm not going to argue about it: they can have her for the year, but they are not getting the roof over her head as well."
 
-Dave looks down, at neither of them.
+Dave looks at the table.
 
 "That's a hell of a way to put it, Meg, because you make it sound like I already agreed to hand over the roof over her head."
 
 "It's how it is, though, and you know it is, because you said yes to the whole idea back in July, before either of us had even heard the word furnished."
 
-On the rug, Chloe has stopped moving. She catches enough of it to string together house, and roof, and nowhere, then gets up once in the middle of it to check through the window that the car is still in the driveway, before sitting back down in front of the television and letting the rest of it go.
+Her mother puts the mug in the sink and runs water into it. Her dad folds the letter back along the crease it came in, and at four he drives over and collects Chloe, who talks about the party from the car door all the way up the driveway.
 
 They drive out on the Friday for the day where Halstead looks at her, and the building is a different building in April than it was in July, because it is raining and every hall in it is full of people.
 
@@ -2442,9 +2442,9 @@ Drawing is Thursdays, and in the second term, while they spend six weeks on hand
 
 At the end of term the sheet goes up on the wall with everybody on it in order, and Chloe is ninetieth of ninety, which she reads twice before going to dinner. Dance is Fridays, and she is ninetieth in that too, off the same wall in the same week, but that one she reads once and leaves, because with drawing she found out at the end of term, whereas with dance she can feel it while it is happening, half a beat behind the girl in front of her for fifty minutes, and in February she takes it to the office.
 
-A boy comes out of it ahead of her with the door swinging behind him, and behind the desk is Mrs. Okonkwo, who walked her and her parents around this building in the rain two Aprils ago, with the block sheets laid out in front of her five columns across.
+A boy comes out of it ahead of her with the door swinging behind him, and behind the desk is Mrs. Okonkwo, who walked her and her parents around this building in the rain the April before she started, with the block sheets laid out in front of her five columns across.
 
-"I want to come off dance, and I've had it every Friday since September, so I've given it a fair go first."
+"I want to come off dance, and I've had it every Friday since September."
 
 "No."
 
@@ -2456,7 +2456,7 @@ Chloe puts one hand flat on the edge of the desk and leaves it there. "Then can 
 
 "Which team are you on."
 
-"The one I've been on since the first week, and there are two people on it, and I've given it two whole terms before coming in here about either of them."
+"The one I've been on since the first week, and there are two people on it, and I've done two whole terms of Wednesdays with them before coming in here about it."
 
 "Teams are for the year, and you're the third one in here about a team this week." Mrs. Okonkwo writes the date at the top of a clean sheet, then turns the block sheet round on the desk so Chloe can read it, ninety names down the side and the five columns running across every one of them. "Ask me in June and it'll be no in June, and you've still got the Friday. Come on Friday."
 
@@ -2509,7 +2509,19 @@ On the first morning the sheet in her box has one more line on it than last year
 
 "It's what nine gets rather than a mistake, and biology starts Tuesday whether you're ready for it or not."
 
-Her three new ones are chemistry, statistics and biology, and Ruth has the same three in a different order but is smug about getting chemistry first. Kavi got none of the three he asked for and lists his objections at breakfast in order, starting with the first and working down, while something on Sam's sheet is different from everyone else's and he keeps it to himself, so that by Thursday there are four theories.
+Her three new ones are chemistry, statistics and biology, and Ruth has the same three in a different order but is smug about getting chemistry first. Kavi got none of the three he asked for, and at breakfast he puts his objections in order with his own sheet lying flat on the table beside the tray.
+
+"The first one is that the form asks you for three and I got zero of three, and zero of three is what a form gets you when nobody reads it."
+
+"They read it," Ruth says. "They counted how many people wanted each thing, and then they did what they were going to do anyway."
+
+"Then it should say that on the top of it, because what it says is preferences." He turns the sheet over and puts a finger on the back of it. "The second one is that two of the three are running in this building this year. Programming is on every ten-year-old's sheet and astronomy is on the elevens', so both of them have a teacher and an hour and a room, and the thing that stopped me is my age, which they had written down before they handed me anything to fill in."
+
+Sam has stopped with the spoon halfway up. "Is there a third one, or can I go."
+
+"The third one is cryptography, and cryptography happens at thirteen, which was already true in October when I asked for it. They kept the request eleven months and gave me back a date that was fixed before I wrote it down." He squares the sheet against the edge of the table. "That's all three of them."
+
+Ruth takes the sheet off him and reads the back of it twice, and hands it back when Chloe gets up with her tray. Something on Sam's own sheet is different from everyone else's and he keeps it to himself, so that by Thursday there are four theories.
 
 Chloe reads her own sheet again on the stairs, for a different reason, and then a third time, before running down two flights and coming into the dining hall loud.
 
@@ -2567,13 +2579,21 @@ Chemistry is Vasquez, who does set things on fire on purpose, twice in the first
 
 She runs it again on the Friday, drying every piece of glass twice before she starts, and it comes out white, and she grins at it before she catches herself and carries it up to the front.
 
+"That one's white, so tell me which of the three it was."
+
+"The glass, because the glass is the one I changed."
+
+"You dried the glass, you took a fresh bottle off the shelf, and you tied your sleeve back out of the way, which is three changes and one result." He is already two benches down. "Run it wet next Friday and find out which of them you fixed."
+
+So the Friday after that she runs it wet on purpose and gets the grey back, and the Friday after that she runs it dry off the old bottle and gets white, and it is the third week of November by the time she writes glassware in the back of the notebook with a date beside it.
+
 First aid is Mondays, and it is on a clock from the first week. In the second term the lights come down to about what you get off a dashboard at night, and in the third term the lights come down, a radio plays somewhere behind her, left running the whole time, and a man stands four feet away asking her the same question over and over in a raised voice.
 
 "Is he going to be doing that the whole way through, or is it just the first one?"
 
 "It's half eleven at night on a road, the car's still running, and there's a man who wants to know if his wife's all right." The teacher has a stopwatch and keeps his eyes on it. "He's going to keep asking, that's the whole point of the drill, so count out loud over the top of him."
 
-Textiles is Tuesdays, where they measure each other, draft patterns off the measurements onto brown paper, then cut. Chloe's first shirt comes out with the shoulder seam an inch inboard of where a shoulder actually is, so it drags every time she lifts her arm, until she takes the sleeve out, redraws the armhole, and builds the shirt over from the armhole out, and the second one fits.
+Textiles is Tuesdays, where they measure each other, draft patterns off the measurements onto brown paper, then cut. Chloe's first shirt comes out with the shoulder seam an inch inboard of where a shoulder actually is, so it drags every time she lifts her arm. She takes the sleeve out, redraws the armhole, builds the second one over from the armhole out, and the second one drags in the same place on the same arm. In January she gives up on the brown paper and brings in a shirt from home that already fits her, lays it flat on the table and traces round the top of it, and the line that comes off it sits an inch and a half out from the line she had been drafting all term. The third shirt fits, and it is the end of March by the time it does, and she wears the second one all spring regardless, because the second one is the green.
 
 Biology is the man with the fish tank in the front hall, and in October Kavi decides that the small striped one is being bullied.
 
@@ -2595,7 +2615,7 @@ He gets over it on the eleventh of May, with about thirty people at the bottom, 
 
 "Then thirty people watch me not do it, and that's still Monday." Sam is chalking his hands and not looking at any of them. "Left foot first, same as she told me in January, because left foot's what does it, not the arms, not the grip, just where that one foot lands. She said so, and she was right, and I believed her before I even tried it."
 
-He goes up in one piece and gets a hand over the lip on the second try, because of the left foot, and the noise underneath him is loud enough that a teacher comes out of the side door to see what has happened. Ruth is screaming, Kavi has both arms straight up over his head, and Chloe is on her feet with the book she'd brought down still in one hand, and she finds afterwards that she has torn the corner off it, with no memory of doing it.
+He comes off the first attempt a foot under the lip, in front of all thirty of them, and stands under the wall shaking his right hand out for a while before he goes back at it. He gets a hand over on the second try, and the noise underneath him is loud enough that a teacher comes out of the side door to see what has happened. Ruth is screaming, Kavi has both arms straight up over his head, and Chloe is on her feet with the book she'd brought down still in one hand, and she finds afterwards that she has torn the corner off it, with no memory of doing it. Sam eats left-handed for three days and keeps both hands under the table at dinner.
 
 Block two is hers, and she takes riding, because Priya takes riding.
 
@@ -3473,7 +3493,7 @@ Eleven laboratories split the year between them, and hers does materials, where 
 
 In cryptography the first term goes entirely on breaking things other people built, substitution, then Vigenere, then a fortnight on why a key you use twice stops being a key, so by November they are working real messages off real systems with real mistakes in them.
 
-Amberg gives them the order of it on the first day, before a single cipher goes up on the board. "You will not build a lock this year. You will open locks other people built, and there is a reason for that order. One, a lock fails in the place the person who built it stopped looking. Two, you find that place by opening the lock, and by nothing else. Three, after thirty of them you know where people stop looking, and that is the whole of what you carry into the first one you build yourself. The other way round, you are guessing what a lock is for."
+Amberg gives them the order of it on the first day, before a single cipher goes up on the board. "You will not build a lock this year; you will open locks other people built, and the sequence is deliberate. One, a lock fails in the one place the person who designed it stopped looking. Two, you find that place by opening the lock, and by nothing else. Three, after thirty of them you know where people stop looking, and that is the whole of what you carry into the first lock you build yourself. The other way round, you are guessing what a lock is for."
 
 Eli gets into everything and takes his time doing it, so when Chloe asks how he took the November set he sits up on the table, swinging one foot, and talks her through it for twenty minutes on the back of somebody's timetable.
 
@@ -5639,7 +5659,17 @@ The major's eyebrows go up. Somebody two rows back stops picking at the boot lac
 
 "Because if that's the assessment I've got notes," Sam says. "The culvert one was bad. I let them have the back door and that's on me, I should have gone up and around and I got lazy about the time. If we're doing it again I'd want it harder, honestly, or at least more of them, because a two, a four, and a one over four days is a lot of walking for not much."
 
-The major looks at him across the width of the room for a while, laser pointer off now, clipboard shut under his arm. Then he sets the clipboard down on the lectern, checks his watch, and calls the next name on his list.
+The major looks at him across the width of the room for a while, laser pointer off now, clipboard shut under his arm. Then he opens it again and finds the page he wants.
+
+"That was the assessment," he says, "and what you've just handed me is two notes and an opinion, so we'll take the notes first, and you can say the culvert part again, slower, to the room instead of to me."
+
+"Thirty feet of open ground to read it from and I went in anyway," Sam says. "I was watching the clock instead of the pipe."
+
+"Everybody write that down, because that is the entire reason there is a culvert on this overlay, and we are three soldiers into the afternoon before anybody in this room says it out loud." The major writes it on the top sheet himself, unhurried, eyes on the page rather than on Sam until he has finished with it. "The opinion is a separate matter. Difficulty is set above you, Marsh, and it is set a good way above me as well, and a soldier who wants the next one made harder for him has decided the exercise is about him, when the exercise is about everybody sitting in front of me and a fixed number of hours of somebody else's night."
+
+The soldier who went all four days untouched turns around in the front row to look at Sam, and turns back before the major has finished writing.
+
+The major closes the clipboard, checks his watch, and calls the next name on his list.
 
 It goes upward anyway.
 

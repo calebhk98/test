@@ -12,7 +12,19 @@ On the first morning the sheet in her box has one more line on it than last year
 
 "It's what nine gets rather than a mistake, and biology starts Tuesday whether you're ready for it or not."
 
-Her three new ones are chemistry, statistics and biology, and Ruth has the same three in a different order but is smug about getting chemistry first. Kavi got none of the three he asked for and lists his objections at breakfast in order, starting with the first and working down, while something on Sam's sheet is different from everyone else's and he keeps it to himself, so that by Thursday there are four theories.
+Her three new ones are chemistry, statistics and biology, and Ruth has the same three in a different order but is smug about getting chemistry first. Kavi got none of the three he asked for, and at breakfast he puts his objections in order with his own sheet lying flat on the table beside the tray.
+
+"The first one is that the form asks you for three and I got zero of three, and zero of three is what a form gets you when nobody reads it."
+
+"They read it," Ruth says. "They counted how many people wanted each thing, and then they did what they were going to do anyway."
+
+"Then it should say that on the top of it, because what it says is preferences." He turns the sheet over and puts a finger on the back of it. "The second one is that two of the three are running in this building this year. Programming is on every ten-year-old's sheet and astronomy is on the elevens', so both of them have a teacher and an hour and a room, and the thing that stopped me is my age, which they had written down before they handed me anything to fill in."
+
+Sam has stopped with the spoon halfway up. "Is there a third one, or can I go."
+
+"The third one is cryptography, and cryptography happens at thirteen, which was already true in October when I asked for it. They kept the request eleven months and gave me back a date that was fixed before I wrote it down." He squares the sheet against the edge of the table. "That's all three of them."
+
+Ruth takes the sheet off him and reads the back of it twice, and hands it back when Chloe gets up with her tray. Something on Sam's own sheet is different from everyone else's and he keeps it to himself, so that by Thursday there are four theories.
 
 Chloe reads her own sheet again on the stairs, for a different reason, and then a third time, before running down two flights and coming into the dining hall loud.
 
@@ -70,13 +82,21 @@ Chemistry is Vasquez, who does set things on fire on purpose, twice in the first
 
 She runs it again on the Friday, drying every piece of glass twice before she starts, and it comes out white, and she grins at it before she catches herself and carries it up to the front.
 
+"That one's white, so tell me which of the three it was."
+
+"The glass, because the glass is the one I changed."
+
+"You dried the glass, you took a fresh bottle off the shelf, and you tied your sleeve back out of the way, which is three changes and one result." He is already two benches down. "Run it wet next Friday and find out which of them you fixed."
+
+So the Friday after that she runs it wet on purpose and gets the grey back, and the Friday after that she runs it dry off the old bottle and gets white, and it is the third week of November by the time she writes glassware in the back of the notebook with a date beside it.
+
 First aid is Mondays, and it is on a clock from the first week. In the second term the lights come down to about what you get off a dashboard at night, and in the third term the lights come down, a radio plays somewhere behind her, left running the whole time, and a man stands four feet away asking her the same question over and over in a raised voice.
 
 "Is he going to be doing that the whole way through, or is it just the first one?"
 
 "It's half eleven at night on a road, the car's still running, and there's a man who wants to know if his wife's all right." The teacher has a stopwatch and keeps his eyes on it. "He's going to keep asking, that's the whole point of the drill, so count out loud over the top of him."
 
-Textiles is Tuesdays, where they measure each other, draft patterns off the measurements onto brown paper, then cut. Chloe's first shirt comes out with the shoulder seam an inch inboard of where a shoulder actually is, so it drags every time she lifts her arm, until she takes the sleeve out, redraws the armhole, and builds the shirt over from the armhole out, and the second one fits.
+Textiles is Tuesdays, where they measure each other, draft patterns off the measurements onto brown paper, then cut. Chloe's first shirt comes out with the shoulder seam an inch inboard of where a shoulder actually is, so it drags every time she lifts her arm. She takes the sleeve out, redraws the armhole, builds the second one over from the armhole out, and the second one drags in the same place on the same arm. In January she gives up on the brown paper and brings in a shirt from home that already fits her, lays it flat on the table and traces round the top of it, and the line that comes off it sits an inch and a half out from the line she had been drafting all term. The third shirt fits, and it is the end of March by the time it does, and she wears the second one all spring regardless, because the second one is the green.
 
 Biology is the man with the fish tank in the front hall, and in October Kavi decides that the small striped one is being bullied.
 
@@ -98,7 +118,7 @@ He gets over it on the eleventh of May, with about thirty people at the bottom, 
 
 "Then thirty people watch me not do it, and that's still Monday." Sam is chalking his hands and not looking at any of them. "Left foot first, same as she told me in January, because left foot's what does it, not the arms, not the grip, just where that one foot lands. She said so, and she was right, and I believed her before I even tried it."
 
-He goes up in one piece and gets a hand over the lip on the second try, because of the left foot, and the noise underneath him is loud enough that a teacher comes out of the side door to see what has happened. Ruth is screaming, Kavi has both arms straight up over his head, and Chloe is on her feet with the book she'd brought down still in one hand, and she finds afterwards that she has torn the corner off it, with no memory of doing it.
+He comes off the first attempt a foot under the lip, in front of all thirty of them, and stands under the wall shaking his right hand out for a while before he goes back at it. He gets a hand over on the second try, and the noise underneath him is loud enough that a teacher comes out of the side door to see what has happened. Ruth is screaming, Kavi has both arms straight up over his head, and Chloe is on her feet with the book she'd brought down still in one hand, and she finds afterwards that she has torn the corner off it, with no memory of doing it. Sam eats left-handed for three days and keeps both hands under the table at dinner.
 
 Block two is hers, and she takes riding, because Priya takes riding.
 
