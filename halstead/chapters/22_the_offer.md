@@ -124,7 +124,7 @@ A pause, and then her father again, quieter. "What happens if you change your mi
 
 "No."
 
-Her mother's voice, when it comes back, has the same flat edge she uses reading the fine print on a mortgage refinancing before she'll sign it. "You know the state school costs real money. We've always been straight with you about that. If this is the four years instead of the guaranteed money, I need you to actually hear that part, not just the part where you get to go find out about yourself."
+Her mother's voice, when it comes back, has the same flat edge she uses reading the fine print on a mortgage refinancing before she'll sign it. "You know Georgetown costs real money. We've always been straight with you about that. If this is the four years instead of the guaranteed money, I need you to actually hear that part, not just the part where you get to go find out about yourself."
 
 "I hear it."
 

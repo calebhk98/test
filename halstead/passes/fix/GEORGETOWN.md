@@ -90,6 +90,65 @@ networks, clearance pipeline) — the choice must be ARGUED, not swapped in sile
   first two years of the six."
   Why: closes the scene on the reasoned choice rather than the shrug, echoing her own line ("the
   first year of the six") rather than asserting a new claim.
-- Next: characters/CHLOE.md "Facts a rewriter needs" line, then chapters/28 and chapters/30
-  (already checked above, no edits needed there — will note in final report), then build +
-  grade.
+- DONE: characters/CHLOE.md, "Facts a rewriter needs" section.
+  Before: "...works a translation job and attends a state college in the interim..."
+  After: "...works a translation job and attends Georgetown in the interim, chosen over the
+  state school because it puts her inside the same recruiting pipeline the exam feeds..."
+  Grepped the rest of CHLOE.md for "state school"/"state college"/"Georgetown" — only this one
+  instance existed.
+- FOUND BEYOND THE GIVEN LIST, FIXED: chapters/22_the_offer.md:127. Not in the brief's grep list
+  (which named only ch21, ch23, CHLOE.md), but my own grep for "state school" across chapters/
+  turned it up, and leaving it would create a direct contradiction: in the Halstead-offer
+  conversation, her mother warns her, "You know the state school costs real money... If this is
+  the four years instead of the guaranteed money, I need you to actually hear that part." That's
+  the same college decision, discussed months earlier than the ch23 dinner-table scene, and it
+  needs to name the same school she actually ends up choosing.
+  Before: "You know the state school costs real money."
+  After: "You know Georgetown costs real money."
+  Why smallest fix: one-word substitution; the sentence needs no other change — a private
+  university costing real money is, if anything, a stronger version of the mother's point than a
+  state school would have been, so nothing else in her warning needed adjusting.
+- Checked chapters/28_nineteen.md and chapters/30_cleared.md again — confirmed no rewrite
+  needed (see earlier log entry): no named city, no commute-to-parents assumption, nothing tying
+  her apartment/job/exam site to being "an hour away" or near Dave and Meg. Georgetown (Washington
+  DC) sits comfortably under both chapters as written.
+- Did NOT touch characters/DAVE.md or characters/MEG.md, per instruction.
+- Ran python3 build_manuscript.py: "wrote HALSTEAD.md: 35 chapters, 97,798 words." No gap/dup/
+  heading complaints.
+- Ran python3 grade.py --one on all three edited chapters. All are whole-chapter,
+  pre-existing-condition metrics (word count, Flesch-Kincaid, CV, paragraph length, etc.), not
+  specific to the edited lines, and none of the FAILs plausibly trace to a one-sentence or
+  one-paragraph substitution:
+  - chapters/21_the_applications.md: 17 of 22 at goal. Short on word count, Flesch-Kincaid,
+    sentence-length CV, negative-space %, subordinate-clause-opening %.
+  - chapters/22_the_offer.md: 14 of 22 at goal. Short on Flesch-Kincaid, Lexile, ARI, mean word
+    length, 7+-char words %, sub-10-word sentences %, 20-35-word sentences %, short-run %.
+  - chapters/23_the_first_one.md: 19 of 22 at goal. Short on word count, sentence-length CV,
+    words per paragraph.
+  These read as standing chapter-level conditions rather than anything the Georgetown edits
+  introduced — the edited paragraphs in 21 and 23 are ordinary-length sentences in the chapters'
+  existing register, and the one line changed in 22 kept the same sentence shape.
+
+## Summary — done
+
+Changed, in chapters/ only (source of truth):
+- chapters/21_the_applications.md — added Georgetown to Chloe's list of fourteen applications,
+  with an established-earlier reason (Hearn's reading list), keeping the count at fourteen.
+- chapters/22_the_offer.md — her mother's cost warning now names Georgetown instead of "the
+  state school" (continuity fix, found via my own grep, not in the original list; the scene
+  directly precedes and refers to the same decision).
+- chapters/23_the_first_one.md — replaced the ham-eating non-answer with an argued case for
+  Georgetown over the state school (two parallel scenarios, in Chloe's voice), and rewrote the
+  closing line from "she takes the state school... wait" to "she takes Georgetown... the first
+  two years of the six."
+- characters/CHLOE.md — "Facts a rewriter needs" now says Georgetown, with the one-clause reason
+  (recruiting pipeline), instead of "a state college."
+
+Not changed, per instruction: characters/DAVE.md, characters/MEG.md.
+
+Checked, no edit needed: chapters/28_nineteen.md, chapters/30_cleared.md — neither assumes she
+lives near her parents or names a specific city; both read fine with Georgetown/DC.
+
+build_manuscript.py: clean rebuild, 35 chapters, 97,798 words.
+grade.py --one: run on all three edited chapters; all FAILs are pre-existing chapter-level
+conditions unrelated to the edited passages.
