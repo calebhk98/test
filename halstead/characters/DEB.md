@@ -1,109 +1,275 @@
 # Deborah Massey
 
-Chloe's colleague at the translation company, first name Deb: single mother of one, project coordinator by trade, and the evidence that Chloe's isolation is circumstance rather than temperament.
+A warm, talkative project coordinator and single mother who fills a quiet
+office with one subject, and who will not let a plain explanation past her
+until it has been reframed into something she can actually use.
 
-**Age span:** 46 during Chloe's first year at the company | **MBTI:** ESFJ (writing aid, not a claim) | **IQ:** not inferable
-**Appears in:** chapters/28_nineteen.md in two summarized passages. A second character, also named Deb, appears in chapters/05_behind.md:105 as a swim instructor at Chloe's age-seven summer camp, a different person in every respect. The shared name stands; see Known problems.
-**Speaks:** the manuscript renders her entirely in Chloe's summary. This sheet builds the rest of her from that summary and from invention, marked as such throughout.
+**Age span:** mid-forties | **MBTI:** ESFJ (a writing aid, not a claim) | **IQ:** ordinary and irrelevant to her, which is part of the point of her
 
-## Voice in one paragraph
+## The thing to get right first
 
-Chloe's account carries her whole presence on the page: "Deb who sits opposite her talks about her son constantly and Chloe learns his entire life story and is genuinely invested in it by October" (chapters/28_nineteen.md), and later, "She'll explain something at work, plainly, and Deb will not have it, so Chloe will find another way in" (same chapter). Given a voice: warm, talkative, concrete rather than abstract. She describes a project by what it's for, "it's the safety manual for the forklifts," rather than by its category, and she needs a plain technical explanation attached to a person or a use before it lands for her.
+**The friction is ordinary and it costs nobody anything.** She pushes back on a
+first-pass explanation and waits for a different angle: a comparison, an
+example, something from her own life. That is a person who genuinely needs the
+concrete version of something, which is most people. It is not resentment, it
+is not a complaint about being talked down to, and it is not a test.
+
+Write her as somebody who likes the colleague she is asking and is going to
+keep asking. The relationship reads warm on both sides, and the extra work of
+finding the second angle is work the other person is glad to do and does not
+notice doing.
+
+**She is the evidence that isolation can be circumstance rather than
+temperament.** Put a lonely person opposite her and, by October, they know her
+son's entire life story and are genuinely invested in it, and they did not have
+to change to get there. She did that, without trying, by talking.
+
+## How they talk
+
+Warm, talkative, concrete rather than abstract. She names a person or a use
+before she names a category: not the type of document, but who needs it and
+what for.
+
+She asks about your family before she gets to the work, and she means it.
+
+She circles back to her son mid-conversation, unprompted, from anywhere.
+
+She will not accept a plain first-pass explanation. She says so, plainly and
+without hostility, and waits.
+
+She repeats herself a little, and tells a good story more than once to
+different people, and is not embarrassed about either.
+
+She is never clipped. Economy is not one of her values.
+
+### Dials
+
+| | |
+| :-- | :-- |
+| sentence shape | warm, run-on, built out of people and specifics rather than categories |
+| disagrees by | saying she does not follow, and waiting for the other angle |
+| length | long by default, and longer on her subject |
+| at length | her son, in any lull, with anybody |
+| jokiness | cheerful rather than funny; earnestness about something trivial charms her |
+| hedging | little; she says what she thinks and asks what she wants to know |
+| questions | frequent, personal first, then practical |
+| figurative | allowed and homely: she reaches for a comparison from her own daily life |
+| emotional range | wide, open, and easy to read |
 
 ## When they talk at length
 
-Her son. Any lull, most days, with anyone in the car. The manuscript's own summary establishes this as her ordinary mode rather than a rare break from a terser baseline: she "talks about her son constantly," and Chloe knows Tyler's "entire life story" by October, which only happens if that is most of what fills the quiet. No scene stages it, so the sheet quotes none, but the condition is not in doubt and a scene that puts her in a car with a passenger and no agenda has this available without further permission.
+**Her son.** Any lull, most days, with anybody in the car. This is her ordinary
+mode rather than a rare break from a terser baseline, and a scene that puts her
+next to somebody with no agenda has it available with no further setup.
 
-There is a second, sharper version worth writing: someone who is doing well at something Tyler tried and did not stick with. She will not be bitter about it, and she will not stop, and the account gets longer and warmer and more detailed the closer the comparison runs.
+**A sharper version:** somebody who is doing well at something her son tried and
+did not stick with. She will not be bitter about it and she will not stop, and
+the account gets longer and warmer and more detailed the closer the comparison
+runs.
 
-The cost is not hers, which is the honest finding rather than a gap. Nothing about the relationship costs Chloe anything either. What it costs is the conversation: Tyler is the only subject Deb has that runs, so a scene that needs her to be at length about anything else will stall, and that limit is the character.
+The cost is not hers, which is the honest finding rather than a gap. What it
+costs is the conversation: her son is the only subject she has that runs, so a
+scene that needs her to be at length about anything else will stall. That limit
+is the character.
+
+## Signature, theirs alone
+
+She converts an abstraction into a person. Handed a category, a process or a
+technical term, she hands back the human being at the end of it: who is going
+to read this, who is waiting on it, who will be annoyed if it is late. It is
+how she thinks rather than a rhetorical move, and it is why the reframed
+explanation is the one that lands for her.
 
 ## Would they say this?
 
 - YES if it names a person or a concrete use before a category or a process.
-- YES if it asks a follow-up question about someone's family before getting to the work at hand.
-- YES if it pushes back on a plain technical explanation with "okay but what does that actually mean."
+- YES if it asks a follow-up about somebody's family before getting to the work
+  at hand.
+- YES if it pushes back on a plain technical explanation and asks what that
+  actually means.
 - YES if it circles back to her son mid-conversation, unprompted.
-- YES if it's warm and a little repetitive; she tells a good story about Tyler more than once to different people.
-- NO if it accepts a plain first-pass explanation right away; every instance the text gives has her asking for it reframed.
-- NO if it's clipped or short; the text's Deb runs on personal detail, not economy.
+- YES if it is warm and a little repetitive.
+- YES if a comparison comes out of her own household rather than out of the
+  work.
+- NO if it accepts a plain first-pass explanation right away.
+- NO if it is clipped or economical.
 
-## The kindly-and-inadequate test
+## Under pressure
 
-Deb pushes back on a plain, first-pass explanation and waits for Chloe to find a different angle, a comparison, something from Deb's own life. Chloe reads the extra work as ordinary courtesy, the kind of thing you'd offer in any loud room, and the text agrees: nothing about the relationship costs Chloe anything. A line for Deb belongs on the page if it's ordinary friction, the kind that comes from genuinely needing the concrete version of something, the way plenty of people do. A line falls off the page if it dismisses Chloe's plain explanations as showing off, or treats the second pass as a resentment; the text supports neither, and the relationship reads warm on both sides.
+Correction lands easily and she does not get defensive.
 
-## Are they acting like themselves?
+Praise she enjoys openly and without deflecting.
 
-The text summarizes her across months rather than staging a scene. She talks about her son constantly, and Chloe knows his entire life story and is genuinely invested by October, evidence that Chloe likes people fine when the setting lets her (SYNOPSIS_CHARACTERS_TIMELINE.md lists "Deb from work and Deb's son's entire life story" among Chloe's likes, matching the primary text). She needs Chloe's plain, direct work explanations reframed, a pattern Chloe notices only in the aggregate of her own behavior, never as a flaw in Deb's.
+A missed deadline is the closest she comes to real conflict at work. She takes
+it personally and fixes it fast, and she has not missed one she personally
+owned in a decade.
 
-**Failure modes for a rewriter:** writing dialogue for her without noting it's new invention; treating "Deb will not have it" as friction the text supports as conflict, it reads as ordinary; conflating her with the swim-instructor Deb.
+Tired, she talks a little less and still asks about your day.
 
-## Subjects and schedule
+Worried about her son, she checks her phone at every lull and does not mention
+what she is checking for.
 
-She coordinates projects at the translation company, taking client requests, setting deadlines, and routing documents to translators, a role distinct from translating itself, which fits her need for plain-language reframing over technical fluency. She has worked there ten years by the time Chloe starts. She holds a colleague's attention for months with an ongoing, detailed, personal account. She takes in a plain, first-pass explanation of something at work only once it's reframed around a concrete example. Around the office she runs the small shared things nobody else wants to manage, the birthday calendar, the coffee fund. She takes pride in never missing a deadline she personally owned in ten years, including the two years she raised Tyler largely alone.
+The two ways a writer gets her wrong: turning her pushback into conflict, when
+the text supports ordinary friction and warmth on both sides, and giving her a
+grievance about being talked down to, which she does not have.
+
+## What she is good at, and what she is not
+
+She coordinates: taking client requests, setting deadlines, routing work to the
+people who do it. It is a role distinct from doing the technical work itself,
+and it fits her exactly, because her whole skill is knowing who is at each end
+of a thing.
+
+**Best at:** holding a working relationship together over years without
+friction, and running the small shared things nobody else wants to manage, the
+birthday calendar, the coffee fund.
+
+**Hardest for her:** taking in a technical explanation on its first pass. She
+gets there, every time, but only once it has been attached to a person or a
+concrete example.
+
+**Proud of:** never having missed a deadline she personally owned, including
+through the years she was raising her son largely alone.
 
 ## Home
 
-She divorced eight years before Chloe joins the company. Her ex-husband lives out of state and sees their son twice a year. She raises her son, Tyler, now eleven, mostly on her own, which is most of why he fills so much of her conversation; he is, practically speaking, most of her life outside the office. She lives in a two-bedroom apartment fifteen minutes from work, close enough to make Tyler's Little League games on weeknights. Her own parents live nearby and help with childcare on the days her schedule runs long. Dinner is usually something built around Tyler's schedule, quick, kid-approved, eaten early.
+Divorced some years back. Her ex-husband lives out of state and sees their son
+twice a year, a fact she has built her life around rather than a live source of
+conflict.
 
-## Body
+She raises her son, now eleven, mostly on her own, which is most of why he
+fills so much of her conversation: practically speaking he is most of her life
+outside the office.
 
-Mid-forties, average build, dresses comfortably and a little brightly, carrying color into an office that runs mostly gray and navy. She talks with her hands, especially about Tyler. Her desk holds a framed photo of him at every age, updated every school year. She moves through the office at an easy, unhurried pace next to some of her younger colleagues. She sleeps reasonably, though Tyler's sports schedule cuts into it some seasons.
+A two-bedroom apartment fifteen minutes from work, close enough to make his
+weeknight games. Her own parents live nearby and help with childcare on the
+days her schedule runs long. Dinner is built around his schedule: quick, kid
+approved, eaten early.
+
+## Body and physical business
+
+Average build, dressed comfortably and a little brightly, carrying colour into
+an office that runs mostly grey and navy.
+
+She talks with her hands, especially about her son.
+
+Her desk holds a framed photograph of him at every age, updated every school
+year, a mug he made her, and a candy dish she restocks every Monday.
+
+She moves through the office at an easy, unhurried pace next to some of her
+younger colleagues.
+
+Her phone sits face up on the desk and gets checked at every lull.
 
 ## Personality off the page
 
-She likes people readily, and most of the time they like her back. A lull fills fast with a story, usually about Tyler. Correction lands easily; she doesn't get defensive. Praise she enjoys openly. A missed deadline is the closest she comes to real conflict at work, and she takes it personally and fixes it fast. Tired, she talks a little less and still asks about your day. A free Saturday runs a Little League game, then errands, then something easy on the couch. Earnestness about something trivial charms her.
+She likes people readily and most of the time they like her back. A lull fills
+fast with a story.
+
+A free Saturday runs a game, then errands, then something easy on the couch.
+
+Earnestness about something trivial charms her.
 
 ## Interior life
 
-She wants Tyler's father more present than twice a year, though she's stopped pushing for it and built a full life without waiting on it. She is afraid she's the only adult really paying attention to Tyler's actual day-to-day, and that something will slip through because of it. Before sleep she runs through whether she remembered everything on his schedule for the week. Given a free year, she would spend most of it with him before he's a teenager and doesn't want to anymore. She believes the office sometimes overcomplicates a simple explanation on purpose, to sound more essential than the task requires. She assumes Chloe's patient, repeated reframing of things comes from Chloe being naturally good with people; she has no way to know it's a learned habit, and Chloe has no reason to tell her.
+**Wants:** her son's father more present than twice a year. She has stopped
+pushing for it and built a full life without waiting on it.
+
+**Afraid of:** being the only adult really paying attention to her son's
+day-to-day, and something slipping through because of it. **What she does
+instead of admitting it:** she checks the schedule again, texts him every
+morning before she is out of bed herself, and keeps the calendar in her head.
+
+**Before sleep** she runs through whether she remembered everything on his
+schedule for the week.
+
+**A free year:** most of it with him, before he is a teenager and does not want
+her.
+
+**Believes:** that people sometimes overcomplicate a simple explanation on
+purpose, to sound more essential than the task requires.
+
+**Blind spots:** she assumes that a colleague's patient, repeated reframing
+comes from being naturally good with people. She has no way to know it is a
+learned habit built at real cost, and nobody has any reason to tell her.
 
 ## The small stuff
 
-Her coffee runs milky, one sugar, refilled twice a morning. Her handwriting loops fast, covering a sticky note with more words than it should hold. Her desk carries photos of Tyler, a mug he made her in art class, a candy dish she restocks every Monday. Her phone sits face-up on the desk, checked at every lull for a text from Tyler's school. A single income covering two people taught her to plan carefully without letting money rule her. She says "knock on wood" and actually knocks. Every morning she texts Tyler to make sure he's up before she's even out of bed herself.
+Coffee milky, one sugar, refilled twice a morning. Handwriting that loops fast
+and covers a sticky note with more words than it should hold. A single income
+covering two people taught her to plan carefully without letting money rule
+her. She says *knock on wood* and actually knocks. Every morning she texts her
+son to make sure he is up, before she is out of bed herself.
 
 ## Would do
 
-- Talk at length and readily about her son to a colleague who'll listen.
-- Push back on a first, plain explanation until it's reframed in a way she can actually use.
+- Talk at length and readily about her son to anybody who will listen.
+- Push back on a first plain explanation until it is reframed into something
+  she can use.
 - Sit opposite the same colleague, day after day, for years, without friction.
-- Organize the small shared things at the office nobody else wants to manage.
-- Make her son's weeknight games without fail, rearranging her own schedule around them.
-- Keep a framed photo of him updated every school year.
-- Text him every morning before she's even out of bed.
-- Take correction at work easily and fix a missed deadline fast.
+- Organise the small shared things nobody else wants to manage.
+- Make her son's weeknight games without fail, rearranging her own schedule
+  around them.
+- Keep a framed photograph updated every school year.
+- Ask about somebody's family before asking about their work.
+- Take correction easily and fix a missed deadline fast.
 
 ## Would never
 
-- Nod along to an explanation she doesn't actually follow just to end the conversation; every instance shown has her pushing back instead.
-- Discuss a coworker's business outside the office without good reason.
+- Nod along to an explanation she does not actually follow just to end the
+  conversation.
+- Discuss a colleague's business outside the office without good reason.
 
-## Relationships
+## How she treats people
 
-- **Chloe:** a colleague she likes genuinely; Chloe invests in the relationship without being asked to and does real work to be understood by her, which Chloe files as ordinary courtesy.
-- **Tyler (her son):** the center of her life outside work, the reason his entire life story reaches Chloe by October.
-- **Her ex-husband:** distant, sees Tyler twice a year, a fact she's built her life around rather than a live source of conflict.
-- No other relationships with Chloe's family appear in the text.
+She defers to whoever owns the deadline and to nobody else.
+
+She pushes exactly one way: she will not let a thing past her until she
+understands it, and she is entirely cheerful about saying so.
+
+Respect is earned by turning up when you said you would. It is lost by making a
+simple thing sound complicated on purpose.
+
+With a colleague she likes, she talks, asks, remembers, and invites the same
+back without ever quite noticing whether she gets it. With her son, she is the
+whole of her life outside work. With her ex-husband, she is practical and
+unsentimental and does not perform anything about it.
 
 ## Likes, dislikes, habits
 
-- **Likes:** talking about her son. Color in an otherwise gray office.
-- **Dislikes:** a plain, first-pass explanation of something at work.
-- **Habits:** needs a concrete or personal reframe before a work explanation lands.
+- Likes talking about her son, and colour in a grey office.
+- Dislikes a plain, first-pass explanation of anything technical.
+- Needs a concrete or personal reframe before an explanation lands.
+- Runs the office's small shared things.
+- Checks her phone at every lull.
 
-## Facts a rewriter needs
+## Age and change
 
-- Full name: Deborah Massey, goes by Deb. Age 46.
-- Divorced, one son, Tyler, 11, project coordinator at the translation company, ten years there.
-- Sits opposite Chloe; the primary text gives no physical description of her.
-- The manuscript stages no direct dialogue between her and Chloe; the entire relationship arrives as narrated summary.
-
-## Known problems
-
-- **Name shared with an unrelated minor character. Ruled on, and the earlier recommendation is withdrawn.** chapters/05_behind.md:105 has "an instructor called Deb," the swim instructor at Chloe's age-seven summer camp, a different setting and a different decade of Chloe's life with no textual link between the two. This sheet used to recommend renaming her. The author's ruling is that name collisions are fine if they are rare, and one repeat across a cast this size is rare, so nobody should act on it. Both keep the name. Recorded here so a later pass does not rename either of them.
-- The primary text gives her zero quoted dialogue despite her place in the synopsis's character list and in Chloe's own likes; this sheet fills the gap with invention, marked throughout, while nothing above chapters/08 is textual.
-- The earlier brief's "twice" framing runs slightly imprecise; the text describes a recurring habit, not a single two-step exchange.
+She is one age on the page. If written younger, the talkativeness and the
+concreteness are permanent, and the anxious scheduling is not: it arrived with
+being the only adult in the house.
 
 ## Do not confuse with
 
-**The swimming instructor in chapters/05_behind.md:105**, also called Deb. Not the same person: different decade, different place, no line between them in the text. Both keep the name; see Known problems. What this section is for is making sure a rewriter does not merge them or write one of them's manner into the other.
+**The swimming instructor with the same first name**, a different person in a
+different decade of a different life. Nothing connects them but the name. The
+point of this note is that a writer should not merge them or give one of them
+the other's manner.
+
+---
+
+## Book-specific: navigation and continuity only
+
+*Facts a writer must not contradict. Nothing here characterises her.*
+
+- Full name: Deborah Massey, goes by Deb. Age 46 during Chloe's first year at
+  the company. Divorced, one son, Tyler, aged 11.
+- Employment: project coordinator at the translation company, ten years there
+  by the time Chloe starts. She sits opposite Chloe.
+- The manuscript stages no direct dialogue for her; the whole relationship
+  arrives as narrated summary, and everything on this sheet above this line is
+  this sheet's construction.
+- A different character, also called Deb, appears earlier as a swim instructor
+  at a summer camp. Name collisions are fine where they are rare, and this one
+  is rare, so both keep the name and neither should be renamed.
+- Appears in: chapters/28_nineteen.md, in two summarised passages.

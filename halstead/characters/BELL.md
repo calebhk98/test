@@ -1,122 +1,287 @@
-# DESMOND BELL
+# Desmond Bell
 
-Runs marksmanship start to finish, nerf, paintball, arrows, and wants every kid in his line to trust what their eyes are actually telling them instead of what fear tells them.
+Runs marksmanship start to finish, and wants every child on his line to trust what their
+eyes are actually telling them instead of what fear tells them.
 
-**First name:** Desmond, never used by anyone at the school under eighteen, see Facts.
-**Age span (in the text):** appears throughout Chloe's ages 8-12 | **MBTI:** ISTP (writing aid, not a claim) | **IQ:** reader estimate, low 130s, the number undersells what's actually spatial and competitive intelligence
-**Appears in:** chapters/11_eight.md, chapters/13_ten_pages.md, chapters/14_sixty_degrees.md, chapters/15_twelve.md
-**Speaks:** 9 turns across four chapters, spread evenly rather than front-loaded.
+**Age span:** teaches Chloe from eight to twelve | **MBTI:** ISTP (a writing aid, not a
+claim) | **IQ:** the number undersells him, because what he has is spatial and competitive
+intelligence that does not show up on one
 
-## Voice in one paragraph
-Bell opens on the object, not on a claim: he gets the dart, the arrow, or his own flat hand into the line's eyeline and says what it is doing before he says what to do about it. Sentences run long when he's teaching a mechanism and short when he's closing a decision, "off the whole time, both ends, and you count instead." He gives the reason for a rule in physical terms, never emotional ones: "that's the only thing you've got going for you, so you'll want all of it." Most characteristic line: "Look at the size of the thing next to your hand, and look how slowly it comes at you once you're watching for it, because you can watch the entire flight end to end, and that makes it the easiest thing in this building to hit." (chapters/11_eight.md:141), honest in a way that makes the task easier, which is his whole method in one breath.
+## How he thinks people learn
 
-## Dials
+Honesty about the physics makes a task easier than encouragement ever will. His opening move
+with anything that looks frightening is to state its actual dimensions, out loud, as plain
+figures: how big the thing is, how fast it travels, how much time that leaves. Then the
+instruction falls out of the figure rather than out of his authority, so a student who
+accepts the measurement has already accepted the rule and there is nothing left to argue
+about. He does the same thing in the other direction: when something genuinely cannot be
+done, he says so first, plainly, before he says what to do instead.
+
+Underneath that is the belief that most of what looks like talent is counting. He converts
+interception, timing, anything that appears to require reflexes, into a counting problem,
+because a counting problem is something a person can practise and a reflex is something a
+person either has or believes they do not. He never uses fear to enforce a safety rule, on
+the grounds that a frightened line is a line that stops seeing, and he thinks that position
+is obviously correct and has been told by at least one colleague that it is dangerously
+simple.
+
+He also escalates by increments and never announces that he is doing it. Each stage is
+slightly harder than the last and nobody is told that a stage has begun.
+
+## What he does when a student fails
+
+Nothing, for as long as it takes. He will run the same drill for weeks with the entire room
+failing at it and hold the line, giving the mechanism but not the answer, because he wants
+the room to find it rather than receive it. He is entirely comfortable with a class sitting
+in an unanswered why, and he does not fill the silence with reassurance.
+
+When somebody objects to a method, he concedes the narrower point if it is right and keeps
+the frame unchanged, in one flat sentence and no more. He does not litigate. He does not
+praise a hit, ever: a student who lands something on the first try and a student who lands it
+on the hundredth get the same acknowledgement and the same instruction to keep counting. He
+notices the difference and logs it privately that night, and keeping it out of his voice is
+the job.
+
+He asks few questions of a line, because the information he needs is visible from where he is
+standing. When he does ask one, it is to make a student say the count out loud, so he can hear
+where the timing went instead of guessing at it.
+
+## How he talks
+
+He opens on the object, not on a claim. Whatever the drill has put in his hand goes into the
+line's eyeline first, and he says what it is doing before he says what to do about it. His
+sentences run long while he is building a mechanism and go flat and imperative the moment he is
+closing a decision, and there is very little in between. He gives the reason for a rule in
+physical terms and never in emotional ones. His comparisons are literal optics, sizes, speeds,
+angles; he does not invent an image and would not know what to do with one. When he concedes, he
+concedes narrowly and in the same breath restates the rule unchanged.
+
+### Dials
+
 | | |
 | :-- | :-- |
-| sentence shape | long technical run when instructing, flat imperative when deciding |
-| disagrees by | concedes the small point, keeps the frame: "That's fine, and you're still doing it my way." |
-| wordiness | 7/10, several turns run 40+ words when explaining a mechanism |
-| terseness | 0% of turns at 3 words or fewer (n=9) |
-| at length | when the danger just changed kind — a projectile nobody can track, after weeks of ones you could. He builds the whole causal chain before giving the new rule, rather than simply stating it |
-| jokiness | 0/10 in the sample, see Personality for what he's like with a peer |
-| hedging | 0% |
-| questions | 0%, he states; students ask him |
-| figurative | none in his sample, his imagery is literal optics ("a point that gets bigger") |
+| sentence shape | long technical run while instructing, flat imperative while deciding |
+| disagrees by | conceding the small point and keeping the frame, in one sentence |
+| length | long for a mechanism, very short for anything else |
+| at length | the danger has just changed kind, and the old method stops working. He builds the whole causal chain out loud before the new rule arrives, rather than simply stating it |
+| jokiness | almost none in front of a line, and dry with a colleague; what he finds funny is untested overconfidence, and he finds it amusing rather than annoying because he knows what the first real miss will do to it |
+| hedging | none; he states measurements |
+| questions | few, because what he needs is visible from where he stands. The ones he asks make a student say a count out loud |
+| figurative | literal optics only, sizes and speeds and angles; never an invented comparison |
+| emotional range | narrow in public and genuinely warmer in private; the line never sees the private version |
 
-## When they talk at length
-Bell already runs long when he's teaching a mechanism, and there is a sharper version of it than ordinary instruction, which arrives whenever what is actually dangerous changes shape. The sample shows it once: the day the class moves from a slow, trackable projectile to one that isn't. "Everything in that gym worked because you had time, since a foam dart is fat and slow enough to watch the whole way and still get a hand in front of," he says, holding an arrow up in two fingers. "Seven millimetres of this, coming off the string faster than anything you've had at you, and end-on at seventy metres, so instead of crossing your eye it's a point that gets bigger. You cannot track it, and shooting one down in the air is beyond everybody on this field." (chapters/14_sixty_degrees.md:11). That's the full mechanism, built from first principles, before the new rule ever arrives. It's a different move from defending the rule under pushback, which he does elsewhere in the same chapter in one flat sentence and no more: "That's fine, and you're still doing it my way." (chapters/14_sixty_degrees.md:15), and from making a rule stick without the object at all, which is the whole of the metronome handover at twelve.
+## When he talks at length
 
-The circumstance is specific to what's actually dangerous changing shape, not to being challenged about it. What it costs him: he keeps his real credentials, a national team roster spot, off the page entirely, and never lets a class see how much he actually knows. Building the whole chain out loud is the one thing that makes him let that show, not to be believed, but because a room can't be trusted near something that can put an arrow through a hand without understanding, completely, why the old method stops working.
+The condition is that what is actually dangerous has changed kind, so that the method the room
+has been using stops applying. Not that he has been challenged; being challenged makes him
+shorter. When the nature of the threat changes, he builds the entire causal chain from first
+principles, why the old approach worked, what specifically is different now, what that means
+you cannot do any more, and only then the new rule.
 
-## Signature, theirs alone
-Measures the thing out loud, then rules on it. He states a size, a speed, or a distance as a plain figure, and the instruction falls out of the figure rather than out of his authority, so that a student who accepts the measurement has already accepted the rule. No other adult in the book argues from the dimensions of the object in front of them.
+What it costs him is his own concealment. He keeps his real standing in his sport off the page
+entirely and never lets a class see how much he actually knows. Building the whole chain out loud
+is the one thing that makes him let it show, and he does it not to be believed but because a room
+cannot be trusted near something that can go through a hand unless it understands, completely, why
+the old method no longer protects it.
 
-- "Everything in that gym worked because you had time, since a foam dart is fat and slow enough to watch the whole way and still get a hand in front of." (chapters/14_sixty_degrees.md:11)
-- "Seven millimetres of this, coming off the string faster than anything you've had at you, and end-on at seventy metres, so instead of crossing your eye it's a point that gets bigger." (chapters/14_sixty_degrees.md:11)
+## Signature - his alone
 
-He handles whatever he is talking about while he does it, and often keeps hold of it through the explanation, but that is a habit and not a rule: in chapters/15_twelve.md:13 he pockets the metronome and buttons the pocket before he has finished making the point, and the point lands anyway.
+Measure it out loud, then rule on it. He states a size, a speed, or a distance as a plain figure,
+and the instruction arrives as the obvious consequence of the figure rather than as an order. The
+shape has two halves and both are required: the number has to be real and specific, and the rule
+has to follow from it without him asserting anything. Nobody else in the building argues from the
+dimensions of the object in front of them. He usually has that object in his hand while he does it,
+but that is a habit rather than a requirement; he can put it away mid-explanation and the point
+still lands.
 
 ## Would they say this?
-**The Halstead-staff test.** A line belongs to this staff, not to a generic teacher, only if all five hold: no praise word attaches to the child, praise, if any, attaches to a correct mechanism; a correction is a flat statement of fact, never cushioned by apology or reassurance; the child's age is never a reason for leniency; an extraordinary result is treated as expected, not remarked on; the adult's own error is fixed the same flat way a student's is.
 
-The test runs both directions here. Bell shoots for the national team, and the same contract that keeps him from praising a student's shot keeps him from ever letting the line know that about him. A kid who lands the intercept in October gets "right, keep counting," the same as a kid who lands it on the hundredth try in March. He notices the difference and logs it in his own notebook that night; the job is what keeps it out of his voice.
-
-- YES if it names why a hard-looking thing is actually manageable, using its physical properties. ("A foam dart is fat and slow.")
-- YES if it concedes a narrower objection and restates the actual rule unchanged. ("That's fine, and you're still doing it my way.")
-- YES if it ends a debate procedurally rather than emotionally. ("That's fine, and you're still doing it my way.")
-- YES if it gives the mechanical reason a drill is hard before it gives the instruction for beating it.
+- YES if it names why a hard-looking thing is actually manageable, using its physical properties.
+- YES if it gives the mechanical reason a drill is hard before it gives the instruction for
+  beating it.
+- YES if it says what will not work before it says what will.
+- YES if it concedes a narrower objection and restates the actual rule unchanged.
+- YES if it ends a debate procedurally rather than emotionally.
 - YES if it treats a genuinely difficult skill as a counting problem rather than a talent problem.
-- YES if it withholds an answer on purpose, to make a class find it themselves.
-- YES if it says what will not work before it says what will. ("You cannot track it, and shooting one down in the air is beyond everybody on this field.")
-- NO if it praises a student's aim, hand, or effort directly.
-- NO if it uses a simile or invented metaphor, his comparisons are always literal.
+- YES if it withholds an answer on purpose to make a room find it.
+- YES if a safety rule is justified by what the object does rather than by what could happen to
+  you.
+- YES if a question exists only to make somebody say a number out loud.
+- NO if it praises a student's aim, hand, or effort.
+- NO if it uses a simile or an invented metaphor; his comparisons are literal.
 
-## Are they acting like themselves?
-Under a nuisance objection (Kavi's "we don't do that with the paintballs") he doesn't argue the merits, he restates the rule and moves the line forward. He lets paintball stay hard for two full weeks without giving the answer, trusting the room to find it, the same discipline that lets him take the metronome away at twelve and hand the counting to the pair without softening it. Failure modes a writer would fall into: having him praise a hit, he never does, in nine turns; justifying the safety rule with fear instead of flat procedure; softening his silence during the paintball stretch into apology.
+## Under pressure
 
-## Subjects and schedule
-Bell runs the block-one compulsory afternoon slot that carries marksmanship from age eight (nerf) through paintball (ten) into arrows (eleven), and hands off to rifles at fourteen under a different instructor, Voss.
+He gets shorter and more procedural, and the explanations stop. Challenged, he does not defend the
+method at length; he answers in one flat sentence and moves the line forward, and the brevity is
+the tell that he is under pressure rather than a sign that he is relaxed. Wrong, he checks, agrees
+if it checks out, and moves on with no defensiveness at all. Praised, he is visibly uncomfortable
+and changes the subject to the mechanism. Losing, he is genuinely competitive and genuinely
+gracious, and will tell the winner exactly what they did right. What actually reaches him is a
+student he cannot read, and the failure mode is specific: he assumes anybody who goes quiet during a
+hard drill is thinking it through, and some of them are simply frightened.
 
-**Best at:** teaching interception as a counting problem instead of a reaction problem, the throughline of every stage he runs. (chapters 11, 13, 14)
-**Worst at:** keeping a straight face at the annual staff-versus-graduating-class shoot, which he takes far too seriously for an exhibition game and loses on purpose exactly once a year, to the same senior who always calls it early.
-**Favourite, and why:** the arrow/apogee stage, it gets his longest, most carefully built explanation in the whole sample, more setup than any other drill receives. (chapters/14_sixty_degrees.md:11-21)
-**Least favourite:** the first two weeks of nerf, before anyone can hit anything, flailing beginners are genuinely tedious to him, and he's said so, once, to Sinclair, over coffee, which is the only place he lets that show.
-**The one he's secretly proud of:** the intercept becoming ordinary. He tells a line of eleven-year-olds nobody can do it, means it, and two hundred kids do it anyway inside a year. He keeps a private tally of first intercepts, by name, in a notebook he carries in his coat, and has for years.
-**What he'd teach if he could teach anything else:** competitive orienteering, reading terrain the way he reads a flight path.
-**What he thinks of the rest of the curriculum:** he thinks the school over-explains almost everything except his own subject, and finds the ten pages a week faintly baffling, "give the kid the arrow and let her count" is a line he's actually used once, to Hearn, at a staff dinner. Hearn didn't laugh.
+## What he is good at, and what he is not
+
+Marksmanship as a single progression: foam darts from age eight, then paintball, then arrows and
+apogee geometry, handing off to rifles at fourteen.
+
+**Best at:** teaching interception as a counting problem instead of a reaction problem, which is the
+throughline of every stage he runs.
+**Hardest for him:** keeping a straight face at the annual staff-against-graduating-class event, which
+he takes far too seriously for an exhibition and loses on purpose exactly once a year to the same
+student who always calls it early.
+**Favourite, and why:** the arrow stage, which gets his longest and most carefully built explanation
+of anything he teaches, more setup than any other drill receives.
+**Least favourite:** the first fortnight of the youngest stage, before anybody can hit anything.
+Flailing beginners are genuinely tedious to him and he has said so exactly once, to a colleague, over
+coffee, which is the only place he lets it show.
+**Secretly proud of:** the interception becoming ordinary. He tells a line that nobody can do it, means
+it, and then a whole cohort does it anyway inside a year. He keeps a private tally of first successes,
+by name, in a notebook he carries, and has for years.
+**What he would teach instead:** competitive orienteering, reading terrain the way he reads a flight
+path.
+**On the rest of the curriculum:** he thinks the school over-explains almost everything except his own
+subject, and finds the volume of weekly writing faintly baffling, a view he has expressed once, at a
+staff dinner, to the person who sets it, who did not laugh.
 
 ## Home
-Bell shoots on the senior national target-archery team, and did before the school found him. His groupings at seventy metres are tight enough that two junior national programs have offered him their head coaching post between Olympic cycles, and he's turned each one down to stay at Halstead. Halstead's offer, when it came, covered a full-time coaching salary for a handful of teaching hours a week and left the rest of his schedule for his own training and competition, which is what he does with it. Teaching is the small part of his week; the range and his own shooting are the rest of it. He lives on campus, alone, in a small caretaker's house at the edge of the archery field, the kind of housing the school built for whoever runs the range so the range is never unwatched. Divorced eleven years; his ex-wife lives three states away and they are, by his own account, better friends now than they were married. One adult daughter, twenty-six, who competes recreationally and calls him every time she places at a regional meet, because he's the one person who will ask her exactly the right technical question about it. Grew up on a working farm, which is where the marksmanship started, not sport at first, pest control, at nine years old, with his father standing behind him the way he now stands behind a line of Halstead kids.
 
-## Body
-Mid-forties, compact and even-built rather than large, the build of someone who has spent forty years standing very still for a living. Hands are dry, calloused across two fingers on the right from a bowstring, and never idle when he's talking. Weathered face, permanent light squint from years outdoors. Dresses the same way every day regardless of season: a quarter-zip in the school's dull green, the sleeves always pushed to the elbow. Eats fast and standing, the way people eat who don't think of food as a scheduled event. Sleeps early, wakes before the sun without an alarm, a habit from competition mornings that never left him.
+He shoots at national team level and did before the school found him. His groupings at distance are
+tight enough that two junior national programmes have offered him a head coaching post between
+cycles, and he has turned each one down to stay. The offer he took covered a full coaching salary for
+a handful of teaching hours a week and left the rest of his schedule for his own training and
+competition, which is what he does with it. Teaching is the small part of his week. Lives on campus,
+alone, in a small caretaker's house at the edge of the field, the kind of housing built for whoever
+runs the range so the range is never unwatched. Divorced eleven years; his ex-wife lives three states
+away and they are, by his own account, better friends now than they were married. One adult daughter,
+twenty-six, who competes recreationally and calls him every time she places, because he is the one
+person who will ask her exactly the right technical question about it. Grew up on a working farm,
+where the marksmanship started, not as sport at first but as pest control, at nine, with his father
+standing behind him the way he now stands behind a line of children.
+
+## Body and physical business
+
+Mid-forties, compact and even-built rather than large, the build of somebody who has spent forty years
+standing very still for a living. Hands dry, callused across two fingers on the right from a bowstring,
+and never idle while he is talking; he handles whatever he is describing and often keeps hold of it all
+the way through. Weathered face, permanent light squint from years outdoors. Dresses the same way every
+day regardless of season, a quarter-zip in the school's dull green with the sleeves pushed to the elbow.
+Eats fast and standing, the way people eat who do not think of food as a scheduled event. Sleeps early,
+wakes before the sun without an alarm, a habit from competition mornings that never left.
 
 ## Personality off the page
-Off the range he's quieter than the job makes him look, a man who talks in complete instructional paragraphs to a line of children and one-word answers to adults who ask him how he is. Bored: doesn't experience it around the range; does around paperwork, and does the paperwork anyway, fast and without complaint. Wrong: checks a correction the way Doyle is shown checking one, agrees if it checks out, moves on, no defensiveness. Praised: visibly uncomfortable, changes the subject to the mechanism instead of the compliment. Losing: at the annual staff shoot, genuinely competitive, genuinely gracious, tells the winner exactly what they did right. At 2am, on the rare night he's awake, he's replaying a specific student's release count in his head the way another person would replay an argument. A free Saturday is a drive to a regional archery meet three hours away, alone, to watch strangers shoot. What he finds funny in other people: overconfidence that hasn't been tested yet, more amusing than annoying, because he knows exactly what the first real miss is going to do to it.
+
+Off the range he is quieter than the job makes him look: a man who speaks in complete instructional
+paragraphs to a line of children and one-word answers to adults who ask how he is. Bored: never around
+the range, often around paperwork, which he does anyway, fast and without complaint. At 2am, on the rare
+night he is awake, he is replaying a specific student's timing in his head the way another person would
+replay an argument. A free Saturday is a three-hour drive to a regional meet, alone, to watch strangers
+shoot.
 
 ## Interior life
-What he wants and hasn't said out loud: to see one of his students shoot competitively past eighteen, somewhere he could watch it happen without being the coach. What he's afraid of: that the discipline he builds into kids only ever gets used inside this fence, and never becomes a Saturday-morning kind of skill once they leave. What he thinks about before sleep: the next year's increment, what has to get harder and how to make the increase invisible to the person experiencing it, the same way it's always been done to him without him choosing it. What he'd do with a free year: rebuild the whole marksmanship curriculum from nerf to rifles as a single written progression, instead of carrying most of it in his head the way he does now. What he believes that others would argue with: that fear is a worse teacher than honesty, always, even about something that can genuinely hurt you, Hearn thinks this is a dangerously simple idea and has told him so. What he's wrong about: he assumes every student who goes quiet during a hard drill is thinking it through; some of them are just scared, and he's slower than Kowalczyk to notice the difference.
+
+Wants, unspoken: to see one of his students compete past eighteen somewhere he could watch it happen
+without being the coach. Afraid of: that the discipline he builds into children only ever gets used
+inside this fence and never becomes an ordinary Saturday-morning skill once they leave; what he does
+instead of saying that is make the increments smaller so they never notice they are still climbing.
+Before sleep: next year's increment, what has to get harder and how to make the increase invisible to
+the person experiencing it, the same way it was done to him without his choosing it. A free year: he
+would rebuild the whole progression as a single written document instead of carrying most of it in his
+head. Believes, against others, that fear is a worse teacher than honesty, always, even about something
+that can genuinely hurt you.
+
+**Blind spots:** he assumes every student who goes quiet during a hard drill is thinking it through, and
+some of them are just scared, and he is slower than his colleagues to notice the difference. He also
+believes that withholding praise costs a child nothing, because it costs him nothing.
 
 ## The small stuff
-Drinks black coffee out of a thermos that never leaves the range, refilled from the staff kitchen twice a day. Handwriting is small, square, and entirely in capitals, a habit from years of range logs where legibility under bad light mattered more than style. The metronome spent its two years on a post at the near end of the field, not on him; it only reached his coat on the day he took it down, and it went in front of the whole line with the pocket buttoned after it. That pocket otherwise holds a folding knife, a spare bowstring, and a pencil stub. Money: spends almost none of it, banks the rest, has never once mentioned what for. Superstition: touches the near post of the range with two fingers before the first shot of a new stage, every time, and has never explained why. On a phone he's nearly useless and openly proud of it. First thing every morning: walks the length of the range before anyone else is on it, whether or not anything needs checking.
+
+Black coffee out of a thermos that never leaves the range, refilled from the staff kitchen twice a day.
+Handwriting small, square, and entirely in capitals, a habit from years of range logs where legibility
+under bad light mattered more than style. His coat pocket holds a folding knife, a spare bowstring, and
+a pencil stub. Money: spends almost none of it, banks the rest, and has never once said what for.
+Ritual: touches the near post of the range with two fingers before the first shot of a new stage, every
+time, and has never explained why. On a phone he is nearly useless and openly proud of it. First thing
+every morning, he walks the length of the range before anyone else is on it, whether or not anything
+needs checking.
 
 ## Would do
-- Run the same drill for two weeks with the whole room failing at it, and hold the line. (chapters/13_ten_pages.md:67)
+
+- Run the same drill for weeks with the whole room failing, and hold the line.
 - Give the measurement that makes a rule obvious, and let the rule arrive as the obvious thing.
-- Concede a narrower point mid-argument while holding the larger rule unchanged. (chapters/14_sixty_degrees.md:15)
-- Let a class sit with an unanswered "why" until they find it themselves.
-- Escalate difficulty a stage at a time without ever announcing that it's an escalation.
+- Say plainly that something cannot be done before saying what to do instead.
+- Concede a narrower point mid-argument while holding the larger rule unchanged.
+- Let a class sit with an unanswered why until they find it themselves.
+- Escalate difficulty a stage at a time without ever announcing that it is an escalation.
+- Ask a student to say their count out loud rather than guess at where the timing went.
 - Keep a private, quiet tally of every student's first success, for himself alone.
-- Drive three hours on a Saturday to watch a sport he can't compete in the same way anymore.
-- Ask the winner of a friendly shoot exactly what they did right, and mean it.
+- Drive three hours on a Saturday to watch a sport he can no longer compete in the same way.
+- Ask the winner of a friendly contest exactly what they did right, and mean it.
 
 ## Would never
-- Tell a student a shot was impressive, no praise word attaches to a person anywhere in his sample.
-- Justify a safety rule with fear instead of stating it as flat procedure. He states what the object does and lets the rule follow.
-- Let a fear he's noticed in a quiet student go unaddressed for long, even though he's slower to catch it than some.
 
-## Relationships
-- **Chloe**, instructor to student; she's one name in a line he addresses, never singled out in a one-on-one scene, though his private tally almost certainly has her intercept date in it.
-- **Kavi**, the one student shown directly challenging the method; Bell answers without conceding the point and privately respects him more for asking. (chapters/14_sixty_degrees.md:13-13)
-- **Sinclair**, the one colleague he actually talks to; they take coffee together some mornings, both being the two staff most likely to be up before the sun.
-- **Hearn**, mutual, low-key needling across a shared staff table about whether ten pages or ten arrows is the harder discipline; neither has ever conceded the point.
+- Tell a student a shot was impressive. No praise word attaches to a person.
+- Justify a safety rule with fear instead of stating what the object actually does.
+- Let a class believe a hard thing is impossible when it is only unpractised.
+
+## How they treat people
+
+- **A student on the line:** one name among many, addressed as part of a line rather than
+  individually, and privately tracked in a notebook they will never see.
+- **A student who challenges the method:** gets one flat sentence and no argument, and gets privately
+  respected more for having asked.
+- **A student who succeeds early:** gets exactly what a student who succeeds late gets.
+- **A colleague who thinks his subject is simple:** gets a dry line about it once and never again; he
+  does not repeat a joke that did not land.
+- **The one colleague he actually talks to:** early coffee, both of them being up before the sun.
 
 ## Likes, dislikes, habits
-- Runs drills in a fixed progression and doesn't skip ahead under pressure. (chapters 11, 14)
-- Physically demonstrates before he explains, using whatever the drill has put in his hand.
+
+- Runs drills in a fixed progression and does not skip ahead under pressure.
+- Demonstrates physically before he explains, using whatever the drill has put in his hand.
 - Likes watching a beginner's first real success more than his own.
 - Dislikes paperwork that keeps him off the range.
-- Comfortable with silence as pedagogy. (chapters/13_ten_pages.md:67)
+- Comfortable with silence as pedagogy.
 - Keeps a private log nobody else has seen.
 
-## Facts a rewriter needs
-Full name Desmond Bell. Students and staff alike call him "Bell" or "Coach Bell", nobody under eighteen uses a staff member's first name at Halstead, a fact about the school's register rather than about him specifically. He is a competitive marksman at the top of his sport, recruited by Halstead with a compensation package several times market rate; teaching is a handful of hours a week, and his own training and competition is the rest of his time, done with the school's resources. He signed the same strict non-disclosure agreement every member of staff signs. Runs marksmanship: nerf (age 8), paintball, archery (apogee geometry, taught off a metronome that sits on a post at the near end of the field). The metronome comes down at twelve and the pair call their own count from then on; rifles from fourteen pass to Voss. Divorced, one adult daughter.
+## Age and change
 
-**Gender, confirmed masculine in the manuscript.** The manuscript uses masculine pronouns for Bell in three separate places across two chapters: chapters/14_sixty_degrees.md:15 ("he says"), :19 ("He walks them down the field"), :27 ("he says"); chapters/15_twelve.md:13 ("he says, buttoning the pocket"). No "she"/"her" instance exists anywhere in the accessible text. SYNOPSIS_CHARACTERS_TIMELINE.md's "Female (inferred)" label is the outlier and should be corrected to match the manuscript, not the reverse.
-
-## Known problems
-- The synopsis's stated gender for Bell is contradicted by the manuscript's own pronouns (see above); fix the reference document.
-- Home, Body, Interior life, and The small stuff close a genuine gap the manuscript leaves, none of it contradicts anything on the page.
+He is at the age where the competition is still real and the coaching offers have started, and he has
+said no to all of them, which is the live tension in him rather than a settled fact. The method has not
+changed since he was teaching nine-year-olds on a farm and it will not. What changes with the students
+is the register: with the youngest he demonstrates constantly and explains little, and by the oldest he
+has stopped demonstrating and hands the whole apparatus over, taking away the external timing and making
+the pair call their own count, which he treats as the actual graduation and never says so.
 
 ## Do not confuse with
-Pruitt, both correct without elaboration, but Pruitt's corrections are one sentence and he never stops moving; Bell's are the longest technical explanations of any staff member and he builds a whole session around one idea.
+
+**Pruitt.** Both correct without elaboration, but Pruitt's corrections are one sentence and he never
+stops moving, where Bell's are the longest technical explanations any adult in the building gives and
+he will build a whole session around one idea.
+
+---
+
+## Book-specific: navigation and continuity only
+
+*Facts a writer must not contradict. Nothing here characterises him. Delete this section and the sheet
+is still complete.*
+
+**Appears in:** chapters/11_eight.md, chapters/13_ten_pages.md, chapters/14_sixty_degrees.md and
+chapters/15_twelve.md.
+
+**Continuity:** Full name Desmond Bell, called Bell or Coach Bell; nobody under eighteen uses a staff
+first name at this school. Divorced, one adult daughter. A competitive marksman at the top of his sport,
+recruited with a package several times market rate; teaching is a handful of hours a week and his own
+training and competition is the rest. Signed the standard staff non-disclosure agreement.
+
+He runs the compulsory afternoon marksmanship block: foam darts from age eight, paintball from ten,
+archery and apogee geometry from eleven. Rifles from fourteen pass to Voss. He hands out the paintball
+markers himself; reference documents that give paintball to Sinclair are wrong.
+
+The metronome that sets the archery count sits on a post at the near end of the field for two years. It
+comes down when the students are twelve, goes into his coat pocket in front of the whole line, and the
+pair call their own count from then on.
+
+**He is male.** The manuscript uses masculine pronouns for him throughout. A reference document labelling
+him female is the outlier and should be corrected against the manuscript.

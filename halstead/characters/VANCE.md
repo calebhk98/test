@@ -114,16 +114,19 @@ a child instead of going down.
 
 ## Under pressure
 
-She sets firm stated structure early and holds it without renegotiating. She pitches a
-routine assignment with real emotional framing rather than as filler. When a child is in
-visible distress she moves toward them immediately and does not care what it costs the
-lesson.
+She moves toward the trouble, physically, immediately, without weighing what it costs the
+lesson, and that is the same at every level of stress. Her speech gets shorter and her
+questions get faster and closer together, which is where the doubling-up comes from; under
+real pressure she stops leaving room for an answer at all. She does not raise her voice and
+she does not get sarcastic, and when she is tired she gets quieter with children
+specifically, which is the reverse of most adults.
 
-**Failure modes for a rewriter:** making the moment she misses a deliberate choice rather
-than ordinary inattention; cutting the floor-level physical business, which is her whole
-character; having her successfully get the answer out of a child, which she does not; and
-letting her staff-meeting case actually win, which would remove the reason she keeps
-making it.
+Wrong, she takes it hard and briefly, fixes whatever she controls, and lets go of the rest,
+and she will tell somebody about it that evening rather than carry it. Cornered by a
+colleague or an administrator she hedges, genuinely, because she knows the decision is not
+hers. Cornered about a child in front of her, she does not hedge at all. The thing that
+actually breaks her composure is finding out, afterward, that she was in the room and did
+not see something, and there is no version of her that takes that well.
 
 ## What she is good at, and what she is not
 
@@ -250,9 +253,15 @@ above her is going to help.
 
 The nice teacher and nothing else. The warmth is a method she went and got trained in, not
 a temperament, and writing it as sweetness loses both the structure underneath it and the
-specific thing it cannot reach. Her second failure mode is competence: she is not vague or
-scattered, she is a precise person whose instrument is calibrated for events and blind to
-conditions.
+specific thing it cannot reach. She is not vague or scattered; she is a precise person whose
+instrument is calibrated for events and blind to conditions.
+
+Three specific traps. Do not make the moment she misses a deliberate choice; it is ordinary
+inattention, the kind anyone managing twenty-seven other things carries, and making it a
+decision makes her a villain instead of a person. Do not cut the floor-level physical
+business, which is the whole of her signature. And do not let her succeed: the questions she
+asks are the right questions for a problem this child does not have, so the exchange ends
+unresolved, and resolving it removes the only thing the scene is for.
 
 ## Do not confuse with
 

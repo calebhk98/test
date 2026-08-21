@@ -108,14 +108,20 @@ or lets a small punishment outlive the day it was given.
 
 ## Under pressure
 
-She keeps a file on a child that predates her own year with them, and never opens it where
-anyone can see. She waits for the whole room to finish before moving on, at real cost to
-whoever finished first, and does not experience that as a choice. She reports a change in a
-child's demeanour to the parents plainly, once, and leaves the follow-up to them.
+She goes shorter and flatter, and the flatness is not anger arriving, it is anger being
+spent. A room that will not settle gets fewer words rather than more, delivered from
+further away, and the gesture that ends an exchange gets smaller and more precise.
+Cornered by an adult, she does not defend herself in the moment; she takes it quietly, says
+almost nothing, turns it over privately for days, and then changes something without ever
+announcing that she has. Wrong, the same: no visible correction, a quiet adjustment
+afterward. Losing an argument, she goes into exactly the register she uses on a misbehaving
+six-year-old, which adults find harder to argue with than children do.
 
-**Failure modes for a rewriter:** making her cruel or sarcastic, which she is not; giving
-her insight into why a child drifts that she never actually has; having her invent a second
-track for one student, which is exactly the exception her fairness forbids.
+What tiredness does to her is take away the second thought. On a good day she notices the
+child who finished first; on a bad one she notices only that the room has not finished, and
+the fairness runs on unattended. She is never sharp with a child at any level of exhaustion,
+and she has spent nineteen years making sure of it, at the cost of being able to show them
+anything else either.
 
 ## What she is good at, and what she is not
 
@@ -248,6 +254,13 @@ Sarcastic, cold, or defeated. She is none of the three, and each is one small st
 where she actually stands. The tiredness is not disengagement; she is fully present and
 completely out of options, and the correct note is a person doing an honest job with an
 instrument that does not have the setting she needs.
+
+Two more that a writer reaches for without noticing. Do not give her insight into why a
+particular child drifts: she has the pattern from nineteen years and no diagnosis of the
+person in front of her, and handing her the diagnosis dissolves the whole situation. And do
+not let her build a second track for one student, however kindly it reads. That is the exact
+exception her fairness forbids, and she would not make it for her favourite child in the
+room.
 
 ## Do not confuse with
 
