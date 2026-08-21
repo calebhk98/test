@@ -1,0 +1,163 @@
+{
+ "Age_of_Innocence_Wharton": {
+  "pairs": 3,
+  "per1000": 4.709725202727083,
+  "share": 9.298837645294338,
+  "spoken_per1000": 3.860077201544031,
+  "words": 52657
+ },
+ "Flappers_and_Philosophers_Fitzgerald": {
+  "pairs": 0,
+  "per1000": 2.200187749354612,
+  "share": 3.075030750307503,
+  "spoken_per1000": 3.1114327062228653,
+  "words": 34088
+ },
+ "Great_Gatsby_Fitzgerald": {
+  "pairs": 5,
+  "per1000": 3.8680455347122016,
+  "share": 5.519016299685445,
+  "spoken_per1000": 0.0,
+  "words": 49896
+ },
+ "Gullibles_Travels_Lardner": {
+  "pairs": 0,
+  "per1000": 2.9576587795765876,
+  "share": 3.218975010588734,
+  "spoken_per1000": 4.532482793352359,
+  "words": 25696
+ },
+ "MenWithoutWomen_Hemingway": {
+  "pairs": 1,
+  "per1000": 3.0816054784097395,
+  "share": 2.805680637339799,
+  "spoken_per1000": 5.190879821276036,
+  "words": 26285
+ },
+ "My_Man_Jeeves_Wodehouse": {
+  "pairs": 3,
+  "per1000": 3.2912781130005486,
+  "share": 3.6864406779661016,
+  "spoken_per1000": 0.0,
+  "words": 52867
+ },
+ "RightHo_Jeeves_Wodehouse": {
+  "pairs": 3,
+  "per1000": 3.457160133554171,
+  "share": 4.032505366452009,
+  "spoken_per1000": 0.0,
+  "words": 76074
+ },
+ "SunAlsoRises_Hemingway": {
+  "pairs": 5,
+  "per1000": 6.422232601588043,
+  "share": 4.2471042471042475,
+  "spoken_per1000": 2.862928566440891,
+  "words": 25692
+ },
+ "Tales_of_the_Jazz_Age_Fitzgerald": {
+  "pairs": 4,
+  "per1000": 2.408408341749814,
+  "share": 3.2412247946228527,
+  "spoken_per1000": 0.0,
+  "words": 90101
+ },
+ "This_Side_of_Paradise_Fitzgerald": {
+  "pairs": 5,
+  "per1000": 3.296469587409613,
+  "share": 4.764344262295082,
+  "spoken_per1000": 0.0,
+  "words": 84636
+ },
+ "Winesburg_Ohio_Anderson": {
+  "pairs": 3,
+  "per1000": 3.4870102214650767,
+  "share": 5.946436677258284,
+  "spoken_per1000": 0.0,
+  "words": 75136
+ },
+ "alice_in_wonderland": {
+  "pairs": 1,
+  "per1000": 4.4811753902663,
+  "share": 7.279236276849642,
+  "spoken_per1000": 0.0,
+  "words": 27225
+ },
+ "anne_of_green_gables": {
+  "pairs": 5,
+  "per1000": 4.890295004246344,
+  "share": 7.597506162099464,
+  "spoken_per1000": 0.0,
+  "words": 107151
+ },
+ "black_beauty": {
+  "pairs": 2,
+  "per1000": 5.245248568345921,
+  "share": 11.987860394537178,
+  "spoken_per1000": 0.0,
+  "words": 60245
+ },
+ "five_children_and_it": {
+  "pairs": 3,
+  "per1000": 4.74409778422727,
+  "share": 6.576402321083172,
+  "spoken_per1000": 4.902513242420827,
+  "words": 35834
+ },
+ "little_princess": {
+  "pairs": 1,
+  "per1000": 4.886475814412636,
+  "share": 7.112068965517241,
+  "spoken_per1000": 6.117929662575536,
+  "words": 40520
+ },
+ "little_women": {
+  "pairs": 11,
+  "per1000": 4.951944697183614,
+  "share": 9.802297898768243,
+  "spoken_per1000": 0.0,
+  "words": 191238
+ },
+ "peter_pan": {
+  "pairs": 11,
+  "per1000": 4.331257938904275,
+  "share": 6.337599024984765,
+  "spoken_per1000": 0.0,
+  "words": 48023
+ },
+ "railway_children": {
+  "pairs": 4,
+  "per1000": 5.333377639689634,
+  "share": 6.904710690471069,
+  "spoken_per1000": 0.0,
+  "words": 60187
+ },
+ "secret_garden": {
+  "pairs": 1,
+  "per1000": 4.99802982226923,
+  "share": 6.923297902901465,
+  "spoken_per1000": 7.747087393105092,
+  "words": 48219
+ },
+ "tom_sawyer": {
+  "pairs": 0,
+  "per1000": 4.196763649570236,
+  "share": 5.771365149833518,
+  "spoken_per1000": 0.0,
+  "words": 74343
+ },
+ "treasure_island": {
+  "pairs": 2,
+  "per1000": 2.7522805623732034,
+  "share": 5.044201768070723,
+  "spoken_per1000": 0.0,
+  "words": 70487
+ },
+ "wind_in_willows": {
+  "pairs": 1,
+  "per1000": 3.966294723675982,
+  "share": 7.442865966646078,
+  "spoken_per1000": 0.0,
+  "words": 60762
+ }
+}

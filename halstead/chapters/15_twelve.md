@@ -68,7 +68,7 @@ On the stairs Priya wants to know whether the first round still counts. "We ate 
 
 "We ate it in silence, though, so somebody still has a number," Ruth says, going up two at a time. "Kavi's got the key in his pocket."
 
-He unfolds the scrap under the landing light and reads out five right of eight, which Sam works through on his fingers and announces as sixty-something percent and better than guessing.
+He unfolds the scrap under the landing light and reads out five right of eight, and Sam has it at sixty-two and a half before the paper is flat, and says that beats guessing.
 
 "Five out of eight is what a coin does," Ruth says, still climbing. "Come back to me when it's eight."
 

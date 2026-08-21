@@ -68,7 +68,7 @@ He shoots ten targets.
 A captain he has not met before walks over afterward, looks at the sheet, and says, "That's the best score I've seen this cycle, and I've read every sheet on this range since March. What's your accuracy?"
 
 
-"About forty," Sam says. The captain looks at the sheet again. It still says ten out of ten.
+"About forty," Sam says. The captain looks at the sheet again.
 
 
 "That's not great," the captain says. "Eighty's the standard I've got this whole platoon training toward, and forty puts you well under it, whatever the number on this sheet says you did out here today."
