@@ -90,3 +90,39 @@ for the general word.
 
 Do not push a chapter past 3,400 words to get there. Longer sentences carrying
 the same content is the goal; more content is not.
+
+---
+
+## Addendum: the failure mode found in the first run
+
+Three chapters were finished before the first run was cut short. They reached
+8.5, 9.0 and 9.8, so the target is reachable. Two defects came with them.
+
+**1. Word counts went up.** Chapter 1 went 4,700 to 5,051 and chapter 5 went
+3,064 to 3,543, both already over the 3,400 ceiling before the pass started.
+Spelling out a logical joint adds words; it has to be paid for by cutting
+something else in the same chapter, not appended. Measure the word count after
+every section you rewrite, not at the end.
+
+**2. Dialogue got inflated past naturalness.** Chapter 10's spoken mean went to
+22.8, well above the floor of 16 and above anything else in the book. The cost
+is visible in the lines themselves. Kavi, aged eight, went from
+
+> "That's worse than not knowing. If you don't know then it's nobody's fault,
+> but he knew and he forgot, and that's a decision about how much it mattered."
+
+to
+
+> "That's worse than ignorance, because ignorance belongs to everybody equally,
+> but he knew and he forgot, and forgetting is a decision about how much a
+> thing mattered."
+
+The original was already two sentences and thirty words. It passed. The rewrite
+bought four words and an aphorism, and it is worse. **16 is a floor, not a
+target, and a line already over the floor should be left alone.** The reading
+grade is to be won in the narration.
+
+Narration takes the vocabulary lift too. "A girl in the stairwell whose name I
+don't even know" became "whose name is a mystery to me" in the same chapter,
+which is stiffer for no gain. Long words have to be words the thing is actually
+called, not longer synonyms for short ones.
