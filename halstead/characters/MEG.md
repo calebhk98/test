@@ -1,141 +1,328 @@
-# Meg
+# MEG
 
-Chloe's mother: the parent who checks things, married twenty years to a man who checks different things, both of them worried about the same child from two angles at once.
+The mother: the one who checks. Twenty years married to a man who checks
+different things, both of them worried about the same child from two angles, and
+she is the one who will not let an institution's own reassurance count as
+evidence.
 
-**Full name:** Margaret "Meg" Kessler, née Halloran.
-**Age span:** adult throughout, chapters/01–v2 Ch18 (Chloe ages 6–18 across her appearances) | **MBTI:** ESFJ (a writing aid, not a claim) | **IQ:** 110–120, reader inference per SYNOPSIS_CHARACTERS_TIMELINE.md
-**Appears in:** chapters/01_before.md, 02_march_4th.md, 03_the_letter.md, 04_pluto.md, 06_the_list.md, 07_the_same_room.md, 08_the_asking.md, 09_february.md, 10_april.md, 11_eight.md, 12_nine.md, 14_sixty_degrees.md, 15_twelve.md, 16_thirteen.md, 17_fourteen.md, 19_sixteen.md, and chapters/23_the_first_one.md Not present, not even mentioned, in chapters/05, 13, 18, 20, or anywhere in chapters/27_nadia.md through chapters/35_nine_minutes.md.
-**Speaks:** roughly 120 lines. Heavily front-loaded: 10 to 20 turns per chapter through chapters/01–09, then 4 in chapters/10, all secondhand by phone, 0 in chapters/13, dropping to single digits per chapter through chapters/14–19, and 3 lines total at the graduation her own chapters/09 scene sets up.
+**Full name:** Margaret Kessler, born Halloran, called Meg.
+**Age:** adult throughout, roughly forty to sixty across the span she appears in
+**MBTI:** ESFJ (a writing aid, not a claim) | **IQ:** bright, and applied almost
+entirely to systems and to people rather than to abstractions
 
-## Voice in one paragraph
+## Who she is in a sentence
 
-She builds a sentence as an escalating three-clause question with the follow-up already loaded before the other person has answered the first part. "Is it a choice thing? You can tell me if it is. Nobody's in trouble here, I'm not going to be mad, I'd just rather know." (chapters/01_before.md) When she isn't asking, she's repeating a phrase back at the speaker, flat, the instant it undersells something that matters, before she reacts to it. She opens institutional lines with "So" more than any other word. She never hedges. She states things flatly, including the one time she says something that isn't true. Her single most characteristic line is "'I'm doing my best guess,' she says. 'Okay?'" (chapters/02_march_4th.md:15). It's the one place her two modes, competent interrogator and private guesser, sit in the same sentence, closed with a tag question that asks a six-year-old for permission.
+A trained reconciler of numbers against what they are supposed to mean, doing the
+same operation to every institution that touches her child, who is superb at it
+and who cannot apply it to the one question she most wants answered.
 
-## Dials
+## What she wants
 
-| | |
-| :-- | :-- |
-| sentence shape | escalating three-clause question, follow-up already loaded |
-| disagrees by | asks another question |
-| wordiness | 3/10, measured 5.7 words/line, low-mid for the cast |
-| terseness | measured 54% now, highest in the book. A measurement, not a target. Some of this is the married-couple shorthand, finishing a thought in three words because Dave already has the rest of it, and that part stays |
-| at length | when she has a complete, prepared account to hand to someone who can act on it — the whole list, in order, delivered before anyone can interrupt it into a question-and-answer. It costs her the deflection that usually protects her: no institution to interrogate, nothing to convert into a follow-up, just the full weight of what she's tracked, out loud, in one go |
-| jokiness | 5/10, domestic-idiom deflection, warm rather than sharp ("on the same page. Literally.") |
-| hedging | measured 0% where anyone can hear her, even the untrue lines. Not the same rule alone: unwitnessed, the parked car is the text's own picture of what that privacy looks like (chapters/09_february.md:137), and a maybe or an I-don't-know is allowed there that would never be allowed at the counter |
-| questions | measured 4% now. Target 20%+. Interrogation is her established competence, on the page since chapters/01, so the target gives her more of what she already does well |
-| figurative | allowed: domestic comparisons only, and only when deflecting |
+To know. Not to control the outcome, which she is realistic about; to know what
+is actually happening, in time to do something, from a source that is not the
+party with an interest in the answer.
 
-## When they talk at length
+What she wants and would not say: to be told the truth about how her daughter is
+doing, by her daughter, unasked. She asks constantly and gets honest answers and
+they are not the same thing, and she knows the difference and cannot say so
+without it sounding like an accusation.
 
-Meg's default is the question that won't close, not the statement that runs on. She goes long when she has already built the whole worry, in order, before the conversation starts, and needs somewhere to put it down. The reading list shows it once: walking into Dr. Ammons's office with the whole list already built, in order, before anyone asks her a question. "She's not eating," her mom says, and she has the whole list ready in order, each item already decided before she walked in. "She's sleeping eleven hours a night and she's still tired all day. She used to read constantly, four books a week since she was five, and she's stopped completely. She sits in her room with the light off and doesn't turn it on. When I ask her what she's doing she says nothing, and I think that's the true answer." (chapters/08_the_asking.md:15). Five sentences, unbroken, delivered before Dr. Ammons has asked a second question — the one time in the book she hands over a complete account instead of extracting one.
+## What she is afraid of
 
-It costs her the posture that protects her everywhere else. Her whole method, the escalating question, the institution held to account, lets her stay the one asking rather than the one answering. Walking in with the list already built means she's done the answering in advance, alone, before the appointment — Dr. Ammons never has to draw it out of her, because Meg needed somewhere to put it down. That's not composure breaking. It is composure spent on being thorough instead of on holding a question open, and it happens whenever she has done the work in advance and alone.
+Being the last to know. Concretely, not abstractly: of learning about something
+that mattered secondhand, late, from somebody who assumed she already had it.
+This keeps happening and it does not stop hurting.
 
-## Signature: theirs alone
+What she does instead of admitting it: she asks one more question. Always. After
+the institution has already answered, after the answer was fine, she asks one
+more, and the extra question is the shape her fear takes in a room.
 
-Her signature is the escalating question described above, not a repeat. She takes a phrase that just minimised something and turns it into the question that will not let it pass: Dave says "She said something on the phone in October" and she answers "She said something," flat, then "And you didn't think to tell me?" (chapters/17_fourteen.md:189, :185).
+## The thing to understand about her
 
-**Use the bare repeat sparingly.** PROSE_RULES rule 4 bans restating a phrase verbatim, and its worked example is exactly this shape. The two instances in chapter 17 survive because the repeat converts an excuse into an accusation, which is the "reacting to it for the first time" exception the rule allows. That exception does not scale. Written as a habit it produces rule 4 violations on every page she appears, so it stays rare, and the question after it is the part doing the work.
+She will not accept anything that costs her the ability to walk away.
 
-## Would they say this?
+Offered a benefit that would make her life materially easier and that is
+conditional on the arrangement continuing, she refuses it, and she refuses it in
+one sentence with no negotiation offered, and she is not being proud. She has done
+the arithmetic: the day she wants to pull her child out is the day the benefit
+becomes the reason she cannot. She would rather be poorer and able to leave.
 
-- YES if it's a question that already contains its own follow-up loaded inside it before an answer arrives.
-- YES if it turns a phrase that just minimised something into the question that will not let it pass. Rarely, that question is preceded by the phrase itself, said flat; see rule 4 above before using it twice.
-- YES if it pairs a direct emotional question with false brightness or a small joke.
-- YES if it asks one more question after an institution has already given its answer.
-- YES if it enumerates a concern clause by clause: ratios, hours, "what happens if it's worse than a fever."
-- YES if it's three words or fewer and closes a subject she and Dave already both understand.
-- YES if it stays flat and factual even when what she's saying isn't true.
-- YES if it uses a dead domestic idiom as a joke to cover something harder underneath ("on the same page. Literally.").
-- NO if it uses a built or invented image instead of a dead idiom. Her figurative range is deliberately small and ordinary.
-- NO if it hedges with "maybe," "I think," "probably," or "kind of" — while anyone else can hear her. Alone, unwitnessed, the hedge is allowed; there's no one there to hear that it doesn't sound like her.
+The corollary is the thing to hold onto for any setting: her generosity is
+enormous and her acceptance is almost nil. She will give anybody anything. She
+will not take a gift with a hook in it, and she can see the hook faster than
+anyone else in the room.
 
-## Are they acting like themselves?
+## What she does with a decision she has already made
 
-Under pressure she escalates toward institutions, not toward Chloe directly: she calls, she interrogates, she checks the emergency number twice from the parking lot to confirm it rings (chapters/03_the_letter.md). She touches before she talks in an emotional scene, a hand flat on Chloe's back, holding her on the bedroom floor, fixing a collar that doesn't need it (chapters/08_the_asking.md; chapters/09_february.md; chapters/23_the_first_one.md). She occupies rooms at counters, sinks, and doorframes, hands busy with an object, moving toward the practical task in front of her rather than sitting still with a feeling. The one place she's shown fully alone with her own reaction is a parked car, engine off, seen only through a kitchen window (chapters/09_february.md). She processes privately and shows up composed.
+She keeps asking questions about it, at full intensity, and the questions are not
+how she decides. They are how she holds the thing while she carries it. A writer
+who reads her interrogation as an open mind will get her wrong, and so will a
+writer who reads it as theatre. She is genuinely gathering, and the gathering
+would not have changed the answer, and she is not pretending otherwise; she has
+simply never been able to sit still with a thing she cannot check.
 
-Three places a scene most easily goes wrong with her: writing her as openly weepy in front of Chloe, when the text keeps her composed until she's alone; having her accept an institution's first answer, when she always has one more question ready; writing a joke from her with nothing underneath it, when her humor is load-bearing and needs a real subject she's avoiding.
+When the decision goes against her, she concedes cleanly, immediately, and without
+residue. She does not re-litigate. She does not sulk. She goes and gets the folder
+and starts making the version she lost workable, and this is easy to miss and it
+is one of the best things about her.
 
-## Subjects and schedule
+## How she treats people
 
-Not a Halstead student, so `CURRICULUM_GRID.md` and `_ALLOCATIONS.md` don't apply directly. This section covers her own education and the adult version of the same questions.
+She sorts institutions and people by completely different rules. A person gets
+the benefit of the doubt, warmth, and practical help before they have asked for
+it. An institution gets none, and gets a list.
 
-Studied accounting, bachelor's degree, at a state school two hours from where she grew up. Worked in a small firm's accounts department for three years before Chloe was born, then part-time and freelance since. She reconciles a set of numbers against what they're supposed to mean, the literal training behind everything she does to Halstead in chapters/03 (the funding question) and chapters/15 (the gas-oven safety math). Anything with no closing entry, a feeling, an open-ended worry, a question with no verifiable answer, sits outside the habits that training built, which is part of why she reaches for a fact-shaped question even in an emotional scene.
+To an institution she is relentless and unfailingly polite. She thanks people
+sincerely for doing the minimum, notes the time of the call, and rings back the
+next business day when a promised callback does not come. She goes through a
+packet before an event and asks the first question in the room. She is the person
+the office remembers.
 
-Accounting is also on Halstead's own curriculum, age fifteen, alongside "economics with real money." Chloe describes both to her at different points in the book, and neither of them ever mentions that Meg already has a version of this training. If she had a free year, she'd study family or education law, the natural next step from twenty years of reading policy documents for what they commit an institution to. What she reads is mostly professional and procedural: school papers "held up to read by the streetlights, tilting them, getting through one and then starting the next one" (chapters/01_before.md). At home in the evenings she reads whatever mystery paperback is on the nightstand a chapter at a time and rarely finishes one before starting the next.
+With her own child she leads with her hands rather than her voice. A hand flat on
+a back, a collar straightened that did not need straightening, an arm round her
+on the floor. In an emotional scene she touches first and talks second, and the
+talking, when it comes, is practical.
+
+**When her husband is wrong**, she does not tell him. She asks him a question
+whose only honest answer concedes the point, and she waits through it. When she
+has been told something late, she does not accuse: she takes the phrase he used to
+make it smaller, hands it back to him flat, and then asks the question that will
+not let it pass. Used once, this is the most devastating thing she does. Used
+twice on a page it becomes a tic, so it wants to stay rare, and the question after
+it is the part doing the work.
+
+When she is wrong she says so out loud, briskly, and moves on faster than anyone
+is expecting.
+
+## Under pressure
+
+She escalates outward, never at the child. She calls somebody. She verifies the
+emergency number actually rings. She converts a feeling into a task and does the
+task.
+
+Then she processes alone, unwitnessed, and comes back composed. The private
+version of her exists and it is important: alone, with nobody to hear it, she is
+allowed a maybe and an I do not know, and the hedge that would never survive at
+the counter is available to her in a parked car with the engine off. She does not
+perform composure. She spends the reaction somewhere else and returns with it
+spent.
+
+Tired, she gets shorter and more procedural rather than softer: the questions come
+faster, not fewer. At two in the morning with something on her mind she is
+downstairs doing something with her hands.
+
+## How she talks
+
+An escalating question with the follow-up already loaded inside it before the
+first part has been answered. Three clauses is typical, and the later clauses
+narrow rather than widen, closing exits. She disagrees by asking another question.
+
+She enumerates. A concern comes out clause by clause, in order, as a list she
+built before she walked in: ratios, hours, who is responsible at night, what
+happens if it is worse than a fever. The list existing in advance is the tell.
+
+She states things flatly and does not hedge where anybody can hear her, including
+in the rare sentence that is not true. She opens institutional lines with a
+connector rather than a greeting, as though resuming.
+
+She goes long under one condition: when she has already built the whole worry, in
+order, alone, and is finally in front of somebody who can act on it. Then she
+hands over the complete account before anyone can break it into questions and
+answers. It costs her the posture that protects her everywhere else, which is
+being the one asking rather than the one answering, and she pays it willingly and
+only when the person opposite is genuinely able to help.
+
+Her humour is a dead domestic idiom, warm rather than sharp, deployed as
+deflection with something real directly underneath it. She laughs at her own
+joke. She never builds an image of her own; her figurative range is deliberately
+small and secondhand.
+
+## Habits and physical business
+
+Touches a surface before she says something hard, as though checking it is real
+before committing to the sentence. Hands are rarely still: a counter, a phone, a
+chair back, a dish being moved half an inch.
+
+Paces a fixed short loop for the whole of a phone call. Occupies rooms at
+counters, sinks and doorframes rather than seated. Serves everyone before she
+sits, and then keeps getting up. Eats fast and usually standing.
+
+Writes today's date in the corner of anything important before she reads past the
+first line, including things that already have a printed date somewhere on them.
+It is a closing entry for something that does not have one yet. Somebody watching
+would catch her doing it three times before it registered as a habit.
+
+Keeps a labelled physical folder for every document that has ever mattered.
+
+## Blind spots
+
+She reads the strange thing through the nearest ordinary frame. Handed something
+genuinely outside her experience, she reaches for the closest familiar
+explanation and asks about that instead, and the real thing goes past her while
+she is asking a good question about the wrong subject. She is not slow; she is
+calibrated, and the calibration is against normal life.
+
+She believes that enough questions prevent the surprise. They do not, and she
+keeps being surprised, and she responds by asking more questions.
+
+She cannot tell the difference between being trusted and being managed. A child
+who tells her everything in a flat voice looks, to her, like a child who is fine,
+and she has learned to read the register instead of the content, and she gets it
+right some years and wrong others, with nobody to check against.
+
+## Age and change
+
+Her arc is the loss of the room.
+
+**Small child.** She is the interface. Everything her daughter needs from an adult
+world goes through her: the calls, the appointments, the forms, the arguing with
+teachers. She is good at it and it is exhausting and it is unambiguously her job.
+Her competence and her role are the same shape.
+
+**The year of no answers.** She does the whole procedure correctly and it produces
+nothing: she is told to wait, told the same thing again in writing, told a piece
+of paper is a next step. Her method's first real failure, and her response is not
+to doubt the method but to escalate the volume of it. This is where she is at her
+most formidable and her most tired.
+
+**The separation.** Once the child is at a distance, everything arrives
+secondhand, by phone, filtered, and frequently months late. Her entire instrument
+requires being in the room. She is now a parent conducting due diligence on an
+institution she cannot walk into, using a witness who does not know what is
+unusual. Nothing about her changes here; the world stops giving her purchase, and
+watching her keep applying the method anyway is the point.
+
+**Teenage years.** She adapts by switching instruments. She stops trying to audit
+the institution and starts reading her daughter's register: not what she reports
+but how flatly she reports it, and where the flatness goes wrong. It is a real
+skill, learned late, and it is much less reliable than the one it replaced.
+
+**Adult daughter.** She is nearly out of questions she is allowed to ask, and her
+care has compressed back into her hands: a collar, a hand on a back, a small
+practical adjustment nobody needed. Give her few lines here and make them
+physical. The woman who once ran a twenty-five minute interrogation of a
+stranger's institution now straightens a gown at a graduation, and neither she nor
+anybody else remarks on it.
 
 ## Home
 
-She grew up an hour and a half from where the Kesslers live now, the older of two: a younger brother who's "her uncle" at the Thanksgiving table in chapters/13_ten_pages.md and chapters/15_twelve.md, and an aunt, his wife, in the same scenes. Her father built things, the cribbage board "her own father made out of walnut in about 1961" (chapters/12_nine.md), and is the same man present, alive, in the front room in chapters/11_eight.md, thinking about a question while Chloe goes for water. Her mother is the recurring grandmother of the book: notices weight before anyone else does, tells three separate teenagers at graduation that they seem like nice young people (chapters/23_the_first_one.md). Christmas and Thanksgiving both happen at her mother's house, every year, a short drive from the Kesslers' own place.
+She grew up an hour and a half from where she lives now, the eldest of several: a
+younger brother and his wife are the reliable holiday relatives. Her father built
+things with his hands and is a quiet, comfortable presence in the same room
+without needing to fill it. Her mother is the family's other great noticer, and
+the two of them are direct with each other in the way of people who have never had
+to be careful. Every major holiday happens at her mother's house, a short drive
+away.
 
-Dave's parents live several states away, in the town he grew up in. His mother calls some Sundays and not others; his father isn't much of a phone person. They know about Halstead only as "the school." Meg has met them a handful of times and likes them.
+Her husband's parents live several states off and are known to her a handful of
+times over and liked.
 
-The house is a plain two-story a fifteen-minute drive from Chloe's old elementary school: three bedrooms, a kitchen with a table big enough for the whole extended family at Thanksgiving if people don't mind sitting close, a garage with Dave's workbench along one wall, and the back steps he and Chloe rebuilt together the summer she was thirteen (chapters/16_thirteen.md). Chloe's room stayed exactly as she left it for eleven years, sock on the radiator included (chapters/11_eight.md).
+The house is a plain two-story a quarter of an hour from the primary school:
+three bedrooms, a table big enough for the extended family if nobody minds
+sitting close, a garage with a workbench along one wall, and back steps her
+husband and daughter built together one summer. Her daughter's room stayed exactly
+as it was left, for over a decade.
 
 ## Body
 
-Medium height, a fast, purposeful walk left over from years of moving through offices and school hallways with somewhere to be. Hands that are rarely still. The text already gives her a hand flat on a counter, a phone, Chloe's back, a kitchen chair, more often than any other physical tic in the book, and it runs naturally into a habit of touching a surface before she says something hard, as if she's checking the surface is real before she commits to the sentence. Round-faced, expressive around the eyes specifically: Chloe can often tell when she isn't saying the whole truth, part of why the car lie in chapters/02_march_4th.md only works for a few blocks. Dresses practically, jeans and a cardigan most days, one blazer kept for meetings with the school, worn exactly as often as Halstead makes it necessary. A light sleeper who wakes at small sounds, a door, a change in the pitch of a phone call downstairs. Eats quickly and usually standing, and serves everyone else at the table before she sits down herself, visible throughout the dinner-table scenes, where she's always the one moving a dish, fixing a glass, catching a spoon before it slides (chapters/15_twelve.md).
-
-## Personality off the page
-
-At a party or a school function she's the one who ends up near the coffee, half-listening, watching the room for whoever looks like they need something. Bored, she reorganizes something, a drawer, a shelf, the mail, rather than sitting still. Wrong, she corrects herself out loud, briskly, and moves on fast. Praised, she deflects it toward whoever else had a hand in the result. Losing an argument to Dave, rare, she goes quiet for a beat and then concedes cleanly, no residue. Tired, she gets shorter and more procedural, not softer: the questions get faster, not fewer. At 2am with something on her mind she's downstairs, not asleep, doing something with her hands. A free Saturday is errands turned into a small pleasure, the good grocery store instead of the close one, coffee in the car before she goes in. She finds Dave's specific brand of stubborn precision funny, watching him argue himself into a corner about a hot dog and hold his ground there anyway, more than almost anything else in the house.
-
-## Interior life
-
-Every summer for eleven years she gets Chloe back for ten weeks, and every summer she asks what the year was like. The answer comes back in the same flat register no matter what's in it: bread tested twice at midnight because somebody wanted to know, a C on a night that turned out to involve four grown men and a fence, a B on fourteen thousand words about a war crime. Chloe reports all of it the way she'd report a school bake sale. Meg has one child and no other family four hours from a school like this one to compare notes with, so her only measure of any year is a girl who plainly doesn't experience it as remarkable either. What she's learned to read instead of the content is the register: when Chloe goes quiet after "I got a C," that's the tell, more than the grade is. Eleven years in, some summers she reads it right and some she doesn't, and there's no one to call and ask.
-
-What she hasn't said out loud: that some days she's a little afraid of how much Chloe outgrew her, a daughter who stopped needing correcting somewhere around age nine. What she's afraid of, more concretely: being the last to know something that mattered. Halstead already did this to her once, secondhand, through a car speaker (chapters/06_the_list.md), and the rifle chapter does it again. What she thinks about before sleeping, most nights: whatever the next call or form or appointment requires, run through once more for anything she missed. What she'd do with a genuinely free year: audit something real for free, a nonprofit's books, a friend's small business, because she likes the shape of the problem more than the money. What she believes that would start an argument: that an institution's own reassurance is evidence of nothing until it's checked. What she misreads, per the text: "nobody was mean to me" as a question about bullying, when Chloe is telling her something stranger (chapters/08_the_asking.md).
+Medium height and a fast purposeful walk left over from years of moving through
+offices and hallways with somewhere to be. Round-faced and expressive around the
+eyes specifically, which is why her daughter can usually tell when she is not
+saying the whole of it. Practical clothes, one good jacket kept for meetings, worn
+exactly as often as an institution makes it necessary. A light sleeper who wakes
+at a door or at a change in the pitch of a call downstairs.
 
 ## The small stuff
 
-Still does the family's taxes every spring, and her brother's, and has done a neighbor's for free most years since Chloe went to Halstead freed up her evenings. Reads the mortgage paperwork line by line every time it's refinanced and explains the relevant clause to Dave afterward rather than before, because he'll ask the right follow-up question if she gives him the summary first. Takes her coffee milky, in a mug that says nothing in particular, reheated at least once every morning because she keeps putting it down mid-task. Handwriting small, fast, and completely legible, the opposite of a doctor's, from years of filling out other people's forms. Keeps a physical folder, labeled, for every document that has ever mattered; Halstead's letter is still in it. Writes today's date in the corner of anything important before she reads it past the first line, a bill, a permission slip, a letter that's already printed its own date somewhere else on the page, small and fast in the same hand she uses for other people's tax forms. It's a closing entry for something that doesn't have one yet, and a reader would catch her doing it three times before it registers as a habit rather than a coincidence. On the phone she paces the kitchen in a fixed loop, three steps and back, the whole call. First thing in the morning, coffee going before anything else happens in the house, including saying good morning.
+Still does the family's taxes every spring, and her brother's, and a neighbour's
+for nothing. Reads the mortgage paperwork line by line at every refinance and
+explains the relevant clause to her husband afterwards rather than before, because
+if she summarises first he asks the right follow-up and she wants to have found it
+herself. Coffee milky and reheated at least once every morning because she keeps
+putting it down mid-task. Handwriting small, fast, entirely legible, from years of
+filling in other people's forms. Coffee going before anything else happens in the
+house, including good morning.
 
 ## Would do
 
-- Read a mortgage document line by line before signing, and explain the clause that matters to Dave afterward.
-- Do a neighbor's taxes for free every spring without ever bringing it up unprompted.
-- Drive forty extra minutes to a business with a better return policy, and say exactly why.
-- Call a company back the next business day if a promised callback doesn't come, and note the time of the first call.
-- Sit with someone else's crying kid at a school pickup line until an adult who knows the child arrives.
-- Read the entire packet before a school event, then ask the first question in the room.
-- Learn three words of a language she doesn't speak because her daughter is proud to have taught them to her.
-- Finish Dave's sentence in a story he's telling, matching the word he was about to use, without taking it over.
-- Keep the porch light on for anyone who's driving home late, whether or not they asked her to.
-- Notice which of two nearly identical explanations an institution gave doesn't quite match, and ask about the gap specifically.
-- Date something in the corner by hand before reading past the first line, even a form that already has a printed date on it somewhere.
+- Read a document line by line before signing it, and explain the one clause that
+  matters afterwards.
+- Call back the next business day when a promised callback does not come, with the
+  time of the first call written down.
+- Verify that an emergency number actually rings, from the car park, twice.
+- Do a neighbour's taxes for free every spring and never mention it.
+- Refuse a benefit that would remove her ability to walk away, in one sentence,
+  with no negotiation offered.
+- Sit with somebody else's crying child at a pickup line until an adult who knows
+  them arrives.
+- Read the whole packet before an event and ask the first question in the room.
+- Learn three words of a language she does not speak because her daughter is
+  proud to have taught them to her.
+- Finish her husband's sentence in a story he is telling, matching the word he was
+  reaching for, without taking it over.
+- Notice which of two nearly identical explanations does not match, and ask about
+  the gap specifically.
+- Concede cleanly the moment she has lost, and start making the losing version
+  work.
 
 ## Would never
 
-- Sign or return paperwork about Chloe without reading it herself first, regardless of who handed it to her.
-- Take a benefit that costs her the ability to walk away from it: the house, chapters/09_february.md.
-- Let a genuine safety question go unasked because it might be rude to ask it.
+- Return paperwork about her child without reading it herself, whoever handed it
+  to her.
+- Let a genuine safety question go unasked because asking would be rude.
+- Accept an institution's own reassurance as evidence of anything.
 
 ## Relationships
 
-- **Chloe:** wants her safe and, underneath that, wants to be trusted with the truth of how she's doing. Asks more than she's told, and keeps asking anyway. Also spends eleven years unable to fully calibrate what she's raising, because Chloe's own flatness about her year is the only measuring stick Meg has.
-- **Dave:** twenty years of real shorthand. They finish thoughts for each other, argue in front of Chloe without performing the argument, and each knows what the other is worried about without being told. She's the one who escalates to an institution; he's the one she reports back to.
-- **Her mother:** direct with each other in the way people are who've never needed to be careful. A correction ("She's put on weight") gets a flat "I know" back, no defensiveness, decades of practice behind it.
-- **Her father:** quieter, comfortable in shared silence, present in the same room in chapters/11_eight.md without a line of dialogue. Neither of them needs to fill the space.
-- **Her brother and his wife:** the Thanksgiving-table relatives, easy and established, the way long-running sibling relationships settle once everyone's grown up.
-- **Ruth's mother:** known to her by name and, by graduation, greeted like an old colleague (chapters/23_the_first_one.md), the one other parent she has a real, sustained relationship with, built entirely off-page over eleven years of the same pickups and drop-offs.
-- **Halstead:** treats it like any other institution she doesn't yet fully trust. Verifies before she believes, and keeps verifying even after eleven years of it delivering on everything it promised.
-
-## Likes, dislikes, habits
-
-- Likes order restored after a scare: the sticky note still on the fridge each morning after the March 4th appointment is scheduled (chapters/01_before.md). Likes being asked a question she can answer with a verifiable fact.
-- Dislikes being told a real concern is smaller than she's found it to be: "enrichment," "be careful" (chapters/03, 08).
-- Touches a surface before she speaks about something hard. Under stress, answers a minimising phrase with a question built to close every exit. Moves toward a small domestic task within minutes of a hard conversation (chapters/01_before.md).
-
-## Facts a rewriter needs
-
-Full name Margaret "Meg" Kessler, née Halloran. Husband David "Dave" Kessler (see DAVE.md); he calls her "Meg," she calls him "Dave," four times in the book. Studied accounting, bachelor's degree; worked in accounts, then freelance and part-time since Chloe was young. Family: mother and father both living and present in the text (the recurring grandmother, and one appearance of a grandfather, chapters/11_eight.md); a younger brother and his wife, present at Thanksgiving (chapters/13, 15). Dave's parents live at a distance and never appear on the page. Good at institutional due diligence: the 25-minute call to Halstead (chapters/03_the_letter.md), verifying the emergency number rings, checking staffing ratios before the first visit. Less sure-footed at staying in a hard conversation with Chloe without reaching for a deflection first (chapters/08_the_asking.md). The scene with the most detail on the page is her refusal of the free house, chapters/09_february.md: "They can have her for the year. They are not getting the roof over her head as well."
-
-## Known problems
-
-- **She loses her own story, and it's measurable.** 10 to 20 speaking turns a chapter through chapters/01–09, then 4 turns in chapters/10, all secondhand by phone, 0 in chapters/13, and only 3 lines at the graduation her own chapters/09 scene sets up. Fix: give her one unshared scene with Chloe alone at or after graduation.
-- **"She got polite" is not in the manuscript.** BETA_NOTES.md cites it four times and SYNOPSIS_CHARACTERS_TIMELINE.md twice, both as a direct quote: "She stopped talking. At home... She got polite." I searched every chapter file and MANUSCRIPT_FULL.md and found no match. Fix: write the scene, or fix the reference documents.
-- **Question rate is low relative to her established skill.** 4% against a target of 20%+. Since interrogation is specifically her competence, a revision pass should default to a question before a statement more often than it currently does.
+- **Her daughter:** wants her safe, and under that wants to be trusted with the
+  truth of how she is doing. Asks more than she is told and keeps asking. Spends
+  years unable to calibrate what she is raising, because the only measuring stick
+  she has is a child who does not experience any of it as remarkable.
+- **Her husband:** twenty years of shorthand and two instruments pointed at the
+  same worry. She escalates to whoever is responsible; he converts it into a
+  figure. She is the one who holds the line, and she is right about half the time,
+  and so is he.
+- **Her mother:** direct, unguarded, decades of practice. A correction gets a flat
+  acknowledgement back with no defensiveness in either direction.
+- **Her father:** comfortable in shared silence. Neither of them needs to fill it.
+- **Another parent she has crossed paths with for years:** built entirely out of
+  drop-offs and pickups, and by the end greeted like an old colleague. The one
+  peer relationship her situation allowed her.
+- **Any institution:** verifies before she believes, and keeps verifying long
+  after it has delivered on everything it promised.
 
 ## Do not confuse with
 
-**Dave.** They should sound alike more than any other two people in this book: twenty years married, in the same rooms, worrying about the same child. What separates them at the margins: she asks a question with the follow-up already loaded, and when she repeats the other speaker's phrase back it's always one that just minimized something; he closes a beat with "Huh." and, when he repeats a phrase back, it's always a number nobody's backed up. Same flat construction, aimed at two different kinds of unearned thing. She touches; he photographs and builds. Underneath both margins is the same shared baseline, household shorthand, sentences finished for each other, the same worry approached from two different angles, and that baseline stays exactly as large as it currently is.
+**Dave.** They are supposed to sound alike; that is the point of them. The margin:
+she asks a question with the follow-up already loaded, and when she hands a phrase
+back it is always one that has just made something smaller than it is. He closes a
+beat with a single flat token, and when he hands a phrase back it is always a
+number nobody has stood behind. Same flat construction, aimed at two different
+kinds of unearned thing. She touches; he photographs and builds. Everything under
+those margins is shared and should stay exactly as large as it is.
+
+---
+
+## Book-specific: navigation and continuity
+
+Delete this section and the sheet above still stands.
+
+- Full name Margaret Kessler, born Halloran. Husband David Kessler, called Dave.
+- Appears in chapters/01, 02, 03, 04, 06, 07, 08, 09, 10, 11, 12, 14, 15, 16, 17,
+  19 and 23_the_first_one.md. Absent from chapters/05, 13, 18, 20 and from
+  chapters/27 through 35 entirely.
+- Studied accounting; worked in an accounts department for three years before
+  Chloe, then part-time and freelance. This is the literal training behind the
+  funding question she and Dave put to the school.
+- Mother and father both living and on the page; a younger brother and his wife
+  at the holiday table. Her mother is the recurring grandmother of the book.
+- Her refusal of the offered house is the scene with the most of her in it: the
+  house is free for as long as Chloe stays enrolled, and that condition is the
+  entire reason she will not take it.
+- Her speaking presence thins sharply as the book goes on, and she has almost
+  nothing at the graduation that her own earlier scenes set up. That is a real gap
+  rather than a characterisation: she should get one unshared scene with Chloe at
+  or after it.
+- Reference documents quote a line about Chloe having stopped talking and got
+  polite. It is not in the manuscript. Either write the scene or correct the
+  reference documents.

@@ -189,7 +189,7 @@ Delete this section and the sheet above still stands.
 - Named on the page in chapters/18_fifteen.md only, one corridor scene in April
   when Chloe is fifteen. Referred to again, unnamed, in chapters/30_cleared.md as
   the lead researcher.
-- She is "she" throughout. An older reference document claimed a masculine
+- Her pronoun is feminine throughout. An older reference document claimed a masculine
   pronoun elsewhere; that claim does not check out against the manuscript and the
   note it generated has been removed from this sheet.
 - Four people, herself included, have signed a non-disclosure agreement on the

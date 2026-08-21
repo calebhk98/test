@@ -1,118 +1,292 @@
-# JULIAN AMBERG
+# Julian Amberg
 
-Teaches law by handing thirteen-year-olds the actual rules that will govern their adult lives, years early, and wants every one of them to be unable to be lied to by a person with a reason to lie.
+A practising lawyer who teaches law and cryptography to thirteen-year-olds, and wants
+every one of them to be a person who cannot be lied to by somebody with a reason to lie.
 
-**First name:** Julian, never used by anyone at the school under eighteen, see Facts.
-**Age span (in the text):** Chloe age 13 (law, cryptography), 16 (bar marking), 18 (exit interview), the widest span of any teacher on this list | **MBTI:** INTJ (writing aid, not a claim) | **IQ:** reader estimate, mid 140s
-**Appears in:** chapters/16_thirteen.md, chapters/19_sixteen.md, chapters/22_the_offer.md
-**Speaks:** 9 quoted turns across three chapters, following one student from thirteen to eighteen.
+**Age span:** teaches Chloe from thirteen to eighteen, the widest span of any teacher she
+has | **MBTI:** INTJ (a writing aid, not a claim) | **IQ:** high, and he never spends it on
+being the cleverest person in the room; he spends it on structure
 
-## Voice in one paragraph
-Amberg places the object of authority on the desk before he speaks: "putting a copy of the state code on the desk with both hands," or "He has the mark scheme out on the desk before she gets the door shut." His sentences enumerate, "One for the rule you are relying on. One for where the rule comes from...", four parallel clauses, each adding one concrete fact. He disagrees by reframing the actual problem rather than arguing the point: "You wrote that answer for a reader who already has your head." When a student turns down a major offer, his response is silent record-keeping, not persuasion: "Mr. Amberg writes something down and doesn't argue with her." Most characteristic line: "The four points are for showing your work," a personal grading complaint converted into a procedural fact about what marks are for.
+## How he thinks people learn
 
-## Dials
+You cannot build a thing until you have taken apart something somebody else built. That is
+his whole pedagogy and it is the same in both his subjects. A design fails in the one place
+its designer stopped looking, and the only way to find that place is to open the thing, so
+he puts thirty of other people's constructions in front of a class before he lets anybody
+attempt one of their own. After thirty you know where people stop looking, and that is the
+only thing worth carrying into the first thing you make. Attempt it the other way round and
+you are guessing at what the thing was for.
+
+He states the sequence on the first day, as a sequence, numbered, before any content
+arrives, so that the students know they are being made to wait on purpose.
+
+The second half of his theory is about evidence. A page is marked on what is written on it,
+not on what is in the writer's head, and a correct conclusion is not a demonstrated one. So
+he breaks an assessment into discrete numbered points and marks each separately, which
+means an answer can be right and still be mostly empty, and he will show a student exactly
+how much of it was empty rather than argue about the grade.
+
+The third is about age, and it is the one that most defines a room he is in: he hands
+young people the real governing document, unabridged, years before it applies to them, and
+frames the whole thing as an ordinary adult obligation arriving on a schedule rather than
+as an achievement or a privilege. He does not shorten the explanation for who is listening.
+
+## What he does when a student fails
+
+He gets the document out first and lets it open the exchange. Then he tells them to sit
+down and hear the whole thing before arguing, because they are going to want to argue
+before he has finished and he would rather they had all of it. Then he names, in order,
+what the reader could not see: not that the answer was wrong, but that it was written for
+somebody who already had the writer's head, and there was nobody like that in the building.
+He puts the marking scheme where they can read it, turned the right way round, so the empty
+rows are the first thing they see. Then he hands the work back and stops. There is no
+consolation and no second attempt at the same explanation.
+
+When a student refuses him, on anything, once they have actually stated the decision, he
+writes it down and does not argue. No persuasion, no revisiting, no expressed
+disappointment, and no change in what he does next.
+
+## How he talks
+
+He enumerates. His characteristic construction is a run of short parallel clauses, each
+adding exactly one concrete fact, numbered out loud when the count matters. He opens on the
+object rather than on a claim, setting the governing text down with both hands before a word
+is said. He does not argue a point; he reframes what the real problem is and states it once.
+He states nothing he is not sure of, which is why he never hedges, and the absence of
+softeners is a fact about his confidence rather than a rule imposed on his register. His
+questions are one or two words and exist to extract a fact, not to open a discussion. He
+never shortens or simplifies for the age of the listener, and he does not experience that as
+a cost, because it is the other person's clock.
+
+### Dials
+
 | | |
 | :-- | :-- |
-| sentence shape | enumerated clauses, or a two-word procedural opener |
-| disagrees by | reframes what the real problem is, states it once |
-| wordiness | 6/10, mixes one-word openers with structured explanations |
-| terseness | roughly 3 of 9 turns at 3 words or fewer, a measurement, not a ceiling on him |
-| at length | opens up when he's converting a claim into an enumerated, checkable structure, never when he's disagreeing with a decision already made |
-| jokiness | 0/10 in the three quoted chapters; not 0/10 as a person, he keeps one running joke at the annual staff dinner about his own lunch, dry and self-directed, and finds a badly built argument the arguer believes completely more entertaining than frustrating, never aimed at a student's effort |
-| hedging | 0%, and it holds because it's true of him, not because the cast defaults there: he states nothing he isn't sure of, which is a different thing from a softener being switched off by rule |
-| questions | 1 of 9 turns is a question ("Reason?", chapters/22_the_offer.md:23), used to extract information |
-| figurative | one inherited, dead legal idiom permitted, professional register only ("on the record," "for the file"), never an invented or emotional image, the same door the style guide already opened for Kowalczyk's simile |
+| sentence shape | enumerated parallel clauses, or a two-word procedural opener |
+| disagrees by | reframing what the actual problem is, and stating it once |
+| length | long when structuring something, very short when receiving something |
+| at length | whenever he is turning an abstraction into a thing somebody could grade. The condition is met often and he never gets longer while disagreeing, because his own rule against arguing with a stated decision leaves the length nowhere to go |
+| jokiness | dry and self-directed; a running annual complaint about his own lunch, and a genuine enjoyment of a badly built argument its maker believes completely. Never lands on a student's effort |
+| hedging | none, and it is earned rather than stylistic: he says only what he is sure of |
+| questions | one or two words, purely extractive, and he takes the answer without following up |
+| figurative | inherited professional idiom only, on the record, for the file; never an invented or emotional image |
+| emotional range | very narrow in public, and genuinely unbothered underneath rather than suppressed; the one visible tell is his pen, which stops moving |
 
-## When they talk at length
-He goes long whenever he is turning an abstraction into something a listener could grade, and the condition is met often: the four-point breakdown of what a correct answer is still missing, the citizen's-rationale opener to a class of thirteen-year-olds that runs from a lease to a marriage licence to the bar exam in one unbroken structure. (chapters/16_thirteen.md:117, chapters/19_sixteen.md:41) He never gets longer while disagreeing; his own rule against arguing with a stated decision means the length has nowhere to go once somebody's actually decided something, so it lives entirely on the explaining side of a conversation and never on the persuading side.
+## When he talks at length
 
-The cost sits with the listener, not with him. A thirteen-year-old gets the same four-clause structure an adult associate would get, at the same pace, because he doesn't shorten it for the age in the room, and that means sitting through the whole enumeration before reaching the part that matters. He doesn't experience this as a cost. It's the other person's clock, not his, and that asymmetry, never adjusting the length or the register for who's listening, is as much a part of him as the document he sets down first.
+Give him an abstraction that ought to be checkable and is not, and he will build it out into
+a structure a listener could grade: numbered, parallel, each clause carrying one fact. That
+is the condition, and it recurs in every part of his working life. He is at his longest on a
+first day, laying out the order of a course before any content arrives, and on the far side
+of a piece of work, listing what a correct answer is still missing.
 
-## Signature, theirs alone
-Produces the governing document before he speaks and lets the object open the exchange: the state code with both hands, the mark scheme already out. Two clean instances, six chapters apart.
+The cost falls on the listener rather than on him. A thirteen-year-old gets the same
+four-clause structure an adult would get, at the same pace, and has to sit through the whole
+enumeration before reaching the part that matters. He does not shorten it and does not
+notice the asymmetry, and that refusal to adjust for who is listening is as much a part of
+him as the document he sets down first.
+
+## Signature - his alone
+
+The object opens, the sentence follows. He produces the governing document before he speaks
+and lets it do the opening, and everything he then says is anchored to a thing physically on
+the desk between them. The document is never a prop he waves; it is set down deliberately,
+with both hands or squared to the edge, and it stays there for the length of the exchange.
+Overuse breaks it: if he does this in a corridor conversation, it becomes a mannerism
+instead of a method.
 
 ## Would they say this?
-**The Halstead-staff test.** A line belongs to this staff, not to a generic teacher, only if all five hold: no praise word attaches to the child; a correction is a flat statement of fact; the child's age is never a reason for leniency; an extraordinary result is treated as expected, not remarked on; the adult's own error is fixed the same flat way a student's is.
-
-Amberg wrote the mark scheme the state bar committee uses, and nothing about the flat, procedural way he runs a thirteen-year-old's law class reveals that he's the one who wrote it. When a student takes it apart in one sitting, faster than the associates he's trained, he answers the same way he'd answer a slower student, one clause at a time, no acknowledgment that the pace was unusual.
 
 - YES if it puts a rule and the reason for the rule in one sentence, in that order.
-- YES if it breaks an assessment into discrete, numbered reasons rather than one overall verdict.
-- YES if it reframes a complaint about unfairness into a fact about what the reader can't see. ("You wrote that answer for a reader who already has your head.")
-- YES if it offers a genuinely large benefit and then accepts a refusal without a second attempt.
-- YES if it treats a thirteen-year-old's law class as ordinary adult preparation, no special occasion made of it.
+- YES if it breaks an assessment into discrete numbered reasons rather than one verdict.
+- YES if it reframes a complaint about unfairness into a fact about what a reader cannot see.
+- YES if it insists on opening other people's work before building any of your own, and says
+  why the order matters.
+- YES if it offers a genuinely large benefit and then accepts a refusal without a second
+  attempt.
+- YES if it treats a thirteen-year-old's law class as ordinary adult preparation, with no
+  occasion made of it.
 - YES if the document does the opening and the sentence does the follow-through.
 - YES if it separates a correct conclusion from a demonstrated one and marks only the second.
-- YES if it's a dead, professional idiom sitting inside an enumerated point, never a fresh comparison built for the moment.
-- YES if a dry joke about his own routine or an argument's construction lands somewhere other than on the student who's in the room.
-- NO if it argues to change a student's mind after they've stated a decision.
+- YES if it is a dead professional idiom sitting inside an enumerated point, never a fresh
+  comparison built for the moment.
+- YES if a dry joke about his own routine, or about how badly an argument is built, lands
+  somewhere other than on the student in the room.
+- NO if it argues to change a mind after the person has stated a decision.
 - NO if it expresses surprise or disappointment at a refusal.
 
-## Are they acting like themselves?
-When Chloe turns down a research post worth three times market pay with full benefits, his entire on-page reaction is writing it down without arguing, no persuasion, no visible reaction to losing a researcher in one conversation. Failure modes: having him argue harder for the offer; softening "You wrote that answer for a reader who already has your head" before it lands, or trimming it down before the four clauses that follow it; dropping the enumerated-list rhythm for ordinary connected prose; giving him a joke that lands on a student's effort instead of on his own lunch or a colleague's argument.
+## Under pressure
 
-## Subjects and schedule
-Teaches law from age thirteen onward (state code, contracts, the bar-exam rationale) and is credited with the founding line of the cryptography curriculum the same year.
+He goes procedural, which is where he already lives, so from the outside almost nothing
+changes. Told something he did not want to hear, he writes it down. Wrong, he corrects
+himself out loud, immediately, the same flat way he corrects a discrepancy in a marking
+scheme. Praised, he accepts it briefly and pivots straight back to the work. Losing
+something he wanted, and he does lose things he wanted, he absorbs it by recording it and
+moving to the next appointment, genuinely rather than performatively. The one thing that
+reaches him is visible only if you know him well: his pen stops moving, and he sets it down
+instead of writing with it. A writer who wants him rattled should use that and nothing else.
 
-**Best at:** converting a legal abstraction into an enumerated, gradable structure. (chapters/19_sixteen.md:41)
-**Worst at:** small talk that isn't secretly a Socratic question, colleagues say he can't ask "how was your weekend" without it turning into a hypothetical about liability.
-**Favourite, and why:** contracts, the subject that gets the most structural care in his lines, and the one he returns to across every appearance. (chapters/16_thirteen.md:119)
-**Least favourite:** the annual mock trial, which the students love and he finds theatrical, he runs it anyway, precisely, and never lets on.
-**The one he's secretly proud of:** the exit interviews, trusted to run all ninety-one, fifteen minutes each, personally, and he has never once gone over time or handed the job to anyone else.
-**What he'd teach if he could teach anything else:** cryptography, outright, if he could clear the schedule for it, the line attributed to him in chapters/16_thirteen.md:67 ("you cannot build a lock if you have never opened one somebody else built") is his own conviction in his own register, whether or not he holds the chalk for that particular class.
-**What he thinks of the rest of the curriculum:** he thinks Halstead's credential-free design is basically right, with one exception, his own subject, which ends in a real external exam, and he considers that exception the whole point, not a flaw: the bar is the one place the school lets the outside world grade its work.
+## What he is good at, and what he is not
+
+Law from thirteen onward, the state code, contracts, and the rationale for a real external
+examination, and he is credited with founding the school's approach to cryptography, which
+he opens with the order of it before a single cipher goes on the board.
+
+**Best at:** converting a legal abstraction into an enumerated, gradable structure.
+**Hardest for him:** small talk that is not secretly a Socratic question. Colleagues say he
+cannot ask how a weekend was without it becoming a hypothetical about liability.
+**Favourite, and why:** contracts, which gets the most structural care in everything he does
+and is the subject he keeps returning to.
+**Least favourite:** the annual mock trial, which the students love and he finds theatrical.
+He runs it anyway, precisely, and never lets on.
+**Secretly proud of:** the exit interviews, all of them, fifteen minutes each, personally. He
+has never once gone over time and has never handed one to anybody else.
+**What he would teach instead:** cryptography, outright, if he could clear the schedule for
+it.
+**On the rest of the curriculum:** he thinks the school's credential-free design is basically
+right, with one exception, his own subject, which ends in a real external exam, and he
+considers the exception the whole point rather than a flaw. It is the one place the school
+lets the outside world grade its work.
 
 ## Home
-The state bar association's exam committee uses the contracts mark scheme Amberg wrote, the same document he sets on a desk in front of a class of thirteen-year-olds. He still takes cases, filed under his own name, from the school. Teaching contract law is a small, contracted slice of his week; the rest of his time is that practice, run out of the school. Lives on campus in faculty housing with his husband, who works as an actuary and does the school's own liability modeling as an unpaid favor nobody asked for and everybody quietly relies on. No children. Married nine years, together fourteen. Keeps a small, exact vegetable garden behind the house that he tends with the same enumerated precision he brings to a mark scheme. Grew up the son of two public defenders, at a kitchen table where every dinner conversation eventually became a case.
 
-## Body
-Early fifties, medium build, sits on the front of a desk rather than behind it whenever he can. (chapters/16_thirteen.md:117) Wears a suit jacket without a tie, every day, the one piece of formality he's kept from courtroom life. Neat hands, always moving toward the next document before he's finished with the current one. Eats lunch fast, standing, between meetings, and complains about it exactly once a year, at the staff dinner, as a running joke everyone expects. Sleeps well, by his own report, which the rest of the staff finds slightly suspicious in a man who spends his days telling children what the law actually says.
+A state bar examination committee uses the contracts marking scheme he wrote, and it is the
+same document he sets on a desk in front of a class of thirteen-year-olds. He still takes
+cases, filed under his own name, run out of the school. Teaching is a small contracted slice
+of the week and the practice is the rest of it. Lives on campus in faculty housing with his
+husband, an actuary who does the school's liability modelling as an unpaid favour nobody
+asked for and everybody quietly relies on. No children. Married nine years, together
+fourteen. Keeps a small exact vegetable garden behind the house, tended with the same
+enumerated precision he brings to a marking scheme. Grew up the son of two public defenders,
+at a kitchen table where every dinner conversation eventually became a case.
+
+## Body and physical business
+
+Early fifties, medium build. Sits on the front of a desk rather than behind it whenever he
+can. Suit jacket without a tie, every day, the one piece of formality he kept from courtroom
+life. Neat hands, always moving toward the next document before he is finished with the
+current one, and he squares a folder to the edge of a desk before he opens it. Taps a scheme
+once where the relevant rows are, then closes it over them. Eats lunch fast, standing,
+between things, and complains about it exactly once a year as a running joke everyone
+expects. Sleeps well by his own report, which the rest of the staff finds mildly suspicious
+in a man who spends his days telling children what the law actually says.
 
 ## Personality off the page
-Procedural even off duty, the habit of producing a document before speaking extends to how he runs a staff meeting, agenda first, always. Bored: doesn't happen to him in any scene or account; he treats even routine work as worth doing exactly right. Wrong: corrects himself the same way he corrects a mark scheme discrepancy, out loud, immediately, no defensiveness. Praised: accepts it briefly and pivots straight back to the work. Losing: the one loss shown on the page, Chloe declining the offer, is absorbed by writing it down and moving to the next meeting, genuinely unbothered, not performing calm. At 2am he's, rarely, reading a case that has nothing to do with school, purely for the pleasure of a clean argument. A free Saturday is the garden, then a stack of his own casework. Finds funny in others: a badly built argument that the person making it believes completely, more entertaining than frustrating.
+
+Procedural off duty as well as on: agenda first, always, even for a staff meeting nobody
+else prepared for. Bored: does not happen to him; he treats routine work as worth doing
+exactly right. At 2am, rarely, he is reading a case that has nothing to do with the school,
+purely for the pleasure of a clean argument. A free Saturday is the garden and then a stack
+of his own work. What he finds funny in other people is a badly built argument its maker
+believes completely, and he finds it entertaining rather than frustrating.
 
 ## Interior life
-Wants, unspoken: for at least one student a year to actually use the bar-exam knowledge for something other than the exam itself, to catch a bad lease, a bad contract, before it costs them. Afraid of: that Halstead's total absence of credentials means a student could leave brilliant and unable to prove it to anyone who matters, and that his subject is the one lifeline against that. Thinks about before sleep: rarely anything from the classroom, his own casework instead. Free year: he'd take on the hardest, longest cases he currently has to turn away for time. Believes that others would argue with: that citizenship should be taught as a trade with a required license, not assumed, Hearn agrees; Sinclair thinks it's naive to imagine paperwork protects anyone. Wrong about: he assumes a written record of a refusal is a neutral, respectful act; for at least one student, having a decision "written down and not argued with" read as being quietly filed away rather than actually heard.
+
+Wants, unspoken: for at least one student a year to use what he taught them on something
+other than an examination, to catch a bad lease or a bad contract before it costs them.
+Afraid of: that a school with no credentials at all means a student can leave brilliant and
+unable to prove it to anybody who matters, and that his subject is the one lifeline against
+that. What he does instead of saying so is defend the external exam, hard, every time anyone
+questions it. Before sleep: rarely anything from the classroom, his own casework instead. A
+free year: the hardest and longest cases he currently has to turn away for time. Believes,
+against others, that citizenship should be taught as a trade with a required licence rather
+than assumed.
+
+**Blind spots:** he assumes a written record of a refusal is a neutral and respectful act.
+For at least one person, having a decision written down and not argued with reads as being
+quietly filed away rather than actually heard. He also cannot tell the difference between a
+student who is following his enumeration and one who stopped at clause two and is waiting
+politely for the end.
 
 ## The small stuff
-Coffee, strong, no sugar, refilled constantly through the day. Handwriting is small, fast, and mostly illegible except to himself, the mark scheme notes are the one place he slows down to make it readable. Keeps his desk immaculate; the state code and the current mark scheme are the only things ever on it. Money: careful without being anxious about it, gives steadily to legal aid. Superstition: none that he'd admit to, though colleagues note he always uses the same pen for exit interviews. On a phone: checks it constantly, out of professional habit more than sociability. First thing every morning: reads the overnight legal news before anything else, the same way Hearn reads his newspapers.
+
+Coffee, strong, no sugar, refilled constantly. Handwriting small, fast, and mostly illegible
+except to himself; the marking notes are the one place he slows down to make it readable.
+Desk immaculate, with the governing text and the current scheme the only things ever on it.
+Money: careful without being anxious, and he gives steadily to legal aid. Ritual: the same
+pen for every exit interview, which he would deny is a ritual. On a phone constantly, out of
+professional habit rather than sociability. First thing every morning, the overnight legal
+news, before anything else.
 
 ## Would do
-- Place the governing document on the desk before saying a word. (two instances)
-- Mark a technically correct answer down for failing to show the reasoning. (chapters/19_sixteen.md:41-53)
-- Offer a genuinely large benefit without pressuring anyone to accept it. (chapters/21_the_applications.md through chapters/29_the_file.md:141)
-- Record a refusal and move on without revisiting it. (chapters/22_the_offer.md:29)
-- Hand thirteen-year-olds an adult rationale years before it applies, without dressing it up as an achievement. (chapters/16_thirteen.md:117)
-- Run all ninety-one exit interviews personally rather than delegate any of them.
+
+- Place the governing document on the desk before saying a word.
+- Make a class open thirty of other people's constructions before letting anyone build one.
+- Number the reasons and mark each separately rather than deliver an overall verdict.
+- Mark a technically correct answer down for failing to show the reasoning.
+- Tell somebody to sit down and hear all of it before they start arguing.
+- Offer a genuinely large benefit without applying any pressure to accept it.
+- Record a refusal and move on without ever revisiting it.
+- Hand thirteen-year-olds an adult rationale years before it applies, without dressing it up.
+- Run every one of a long series of interviews personally rather than delegate any.
 - Keep his own casework running alongside a full teaching schedule.
-- Tend a garden with the same precision he brings to a mark scheme.
+- Tend a garden with the same precision he brings to a marking scheme.
 
 ## Would never
-- Argue with a student after they've stated a decision.
-- Accept a correct answer as sufficient without the reasoning behind it.
-- Let a fifteen-minute interview run long or short of its allotted time. (chapters/22_the_offer.md:5)
 
-## Relationships
-- **Chloe**, conducts her exit interview and bar-paper review; both scenes end with him accepting her stated position without argument.
-- **Kavi**, the one student shown accepting his offer to stay, with his own reason; Amberg's reaction to the acceptance is never shown, unlike the well-documented refusal.
-- **His husband**, the one person who sees the enumerated precision applied to something other than law, in the garden and the household ledger.
-- **Hearn**, the one colleague he trades ideas with, dryly, over a shared staff table.
+- Argue with somebody after they have stated a decision.
+- Accept a correct answer as sufficient without the reasoning under it.
+- Let a scheduled interview run long or short of its allotted time.
+
+## How they treat people
+
+- **A student who is wrong in an interesting way:** gets the full enumeration and no
+  cushioning. He wants them able to see what a reader could not.
+- **A student who is right without showing it:** gets marked down and shown exactly where the
+  emptiness sits. He wants the page to carry the work.
+- **A student who turns him down:** gets it written in the file and nothing else. He believes
+  this is respect.
+- **A student who accepts an offer:** gets no more reaction than the one who refused.
+- **A colleague:** gets ideas traded dryly across a shared table, and gets agreement without
+  any change in what either of them does.
+- **His husband:** the one person who sees the enumerated precision applied to something that
+  is not law, in the garden and in the household ledger.
 
 ## Likes, dislikes, habits
+
 - Opens a class or a meeting by placing a document on the desk before speaking.
-- Marks for demonstrated reasoning, not silent correct conclusions. (chapters/19_sixteen.md:41-53)
-- Likes a badly built argument the arguer believes completely, finds it funny rather than frustrating.
-- Gives the bar rationale years ahead of the exam, framed as ordinary adult obligation. (chapters/16_thirteen.md:117)
-- Keeps a small, exact garden.
+- Marks for demonstrated reasoning, never for a silent correct conclusion.
+- Likes a badly built argument its maker believes completely.
+- Gives the rationale for an obligation years ahead of the obligation.
+- Keeps a small exact garden.
 
-## Facts a rewriter needs
-Full name Julian Amberg. Students call him "Mr. Amberg", nobody under eighteen uses a staff member's first name at Halstead. Practices law at an elite level; Halstead recruited him with a compensation package well beyond firm or bench pay, and teaching is a handful of hours a week, the rest of his time his own casework, run out of the school. Signed the standard staff non-disclosure agreement. Married to a husband who works as an actuary; no children. Teaches law and is credited with founding the school's approach to cryptography. Male, undisputed in the text.
+## Age and change
 
-## Known problems
-- The cryptography attribution (chapters/16_thirteen.md:67) doesn't show him teaching the class directly on the page, resolved above as a stated conviction attributable to him whether or not he holds the chalk.
-- Home, Body, Interior life, and The small stuff close a genuine gap the manuscript leaves; none of it contradicts the page.
-- Three citations into chapters/16_thirteen.md were off by two lines (69 and 121 for content actually sitting at 67 and 119; 119 for content actually sitting at 117), corrected above.
-- A failure-mode quote, "That is the piece you have wrong," did not appear anywhere in the manuscript on a direct search of every chapter file and was also a near-variant of a banned verdict construction (`_CALIBRATION.md`, banned constructions). Replaced with the actual quoted line it was standing in for.
+Nothing about him is young. The enumeration, the document, the refusal to argue after a
+decision, all of it came out of practice long before teaching, and none of it will move. What
+has changed across a career is the audience: he used to build these structures for people who
+were paying for them and now builds them for children who did not ask, and he made that switch
+without adjusting the structure at all, which is either the best or the worst thing about him
+depending on who you ask. Written across the years he teaches one student, the only visible
+change is that he becomes very slightly slower to produce the document and very slightly
+quicker to set the pen down.
 
 ## Do not confuse with
-Hearn, both correct with a flat statement of fact and no argument, and both now carry one inherited idiom drawn from their own trade rather than an invented image; the dividing cue stays physical, not verbal: Amberg always anchors the correction to a document he produces first and structures his reasoning as an explicit numbered list, where Hearn works from memory, cites no document, and never counts anything out loud.
+
+**Hearn.** Both correct with a flat statement of fact and no argument, and both carry one
+inherited idiom from their own trade rather than an invented image. The dividing cue is
+physical: Amberg anchors a correction to a document he produces first and structures his
+reasoning as an explicit numbered list, where Hearn works from memory, cites no document, and
+never counts anything out loud.
+
+---
+
+## Book-specific: navigation and continuity only
+
+*Facts a writer must not contradict. Nothing here characterises him. Delete this section and
+the sheet is still complete.*
+
+**Appears in:** chapters/16_thirteen.md, chapters/19_sixteen.md and chapters/22_the_offer.md,
+speaking.
+
+**Continuity:** Full name Julian Amberg, called Mr. Amberg; nobody under eighteen uses a
+staff first name at this school. Male. Married to a husband who works as an actuary; no
+children. He practises law at an elite level and teaching is a handful of hours a week, the
+rest of his time his own casework, run out of the school. Signed the standard staff
+non-disclosure agreement.
+
+He teaches **both** law and contracts **and** cryptography, from Chloe's age thirteen, and
+he runs the exit interviews. Reference documents that list him as law only are incomplete.
+The students sit a real external bar examination at sixteen. He conducts exit interviews at
+fifteen minutes each, ten or eleven a day for nine days, and his contracts class still meets
+four times a week while he does it.
