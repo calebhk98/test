@@ -2,69 +2,67 @@
 
 *June 2022*
 
-They are the first to sneak out in ten years, which is the entire reason it is worth doing.
+They are the first to sneak out in ten years, which is the entire reason it is worth doing, since the town at the end of the road is worth perhaps forty minutes of anybody's attention and the ten years is worth all of it.
 
-Over eleven days, Nadia stands next to a maintenance supervisor in the dining hall on a Tuesday, talking about the weather for forty seconds, and walks away with his badge copied. Chloe gets into the corridor cameras and sets them looping. Ruth brings the box she built at thirteen, the one that finds video recorders on the networks around it and logs in with the passwords they shipped with. Sam clocks the night patrol's second pass four nights running, until the gap between it and the first is reliable enough to walk through.
+Over eleven days the preparation divides itself four ways: Nadia stands next to a maintenance supervisor in the dining hall on a Tuesday, talks about the weather for forty seconds, and walks away with his badge duplicated; Chloe gets into the corridor cameras and sets them looping on a stretch of empty hallway; Ruth brings the box she built at thirteen, the one that finds video recorders on the networks around it and logs in with the passwords they shipped with; and Sam clocks the night patrol's second pass four nights running, until the interval between it and the first is regular enough to walk through at an ordinary speed.
 
-Kavi turns it down at the last second, says he wants to finish something, which from Kavi always means he already started it.
-
-They're over the fence at twenty past eleven.
+Kavi turns it down at the last second, saying he wants to finish something, which from Kavi always means he has already started it and would rather see the end of it than the far side of a fence, so the other four are over that fence at twenty past eleven.
 
 ---
 
-The road into town runs downhill for the first mile, no streetlights until the gas station, and they keep to the shoulder in a loose line, Sam out front with his hands in his pockets, Nadia counting the cars that pass under her breath out of habit rather than need. A dog somewhere behind a fence works itself up for half a block and gives up. They cut through the empty lot behind a tire place and back out onto the road on the far side of it. Forty minutes gets them to the diner sign, waffles lit up yellow against the dark, the last stretch quiet except for boots on gravel.
+The road into town runs downhill for the first mile, no streetlights whatever until the gas station, and they keep to the gravel shoulder in a loose column, Sam out front with his hands in his pockets, Nadia counting the cars that pass under her breath out of habit rather than necessity, since the road at this hour supplies perhaps four of them in a mile and counting is what her mouth does whenever the rest of her has been left idle. A dog somewhere behind a fence works itself up for half a block and then gives up on them, and they cut through the vacant lot behind a tire place and out onto the road on the far side of it, so that forty minutes gets them to the diner sign, waffles lit up yellow against the dark, the last stretch quiet except for boots on gravel.
 
-The diner does waffles all night, the syrup chained to the napkin holder, a jukebox in the corner gone silent long before any of them were born. They take a booth by the window, the lot lit orange under one working lamp, and the waitress has menus down before the door's finished swinging shut behind them. They order too much and then Sam orders more, a full stack for himself and half of Nadia's once she stops eating a third of the way through it. He works his way around the crisp top edge of his own stack before he touches the syrup at all, the way he does every waffle he's ever been handed. The waitress, maybe fifty, carries four plates on one arm, refills the coffee unasked, and calls all of them honey, twice for Ruth, who takes it from her without a word. Nadia falls asleep sitting up, then wakes and finishes her sentence.
+The diner does waffles all night, the syrup chained to the napkin holder and a jukebox in the corner silent since long before any of them were born, and they take a booth by the window, the lot lit orange under one surviving sodium lamp, the waitress putting menus down before the door has finished swinging shut behind them. They order too much and then Sam orders more, a full stack for himself and half of Nadia's once she stops eating a third of the way through it, and he works his way around the crisp top edge of his own stack before he touches the syrup at all, the way he does with every waffle he has ever been handed. The waitress, maybe fifty, carries four plates on one arm, refills the coffee unasked, and calls all of them honey, twice for Ruth, who takes it from her without a word, while Nadia falls asleep sitting up and then wakes and finishes her sentence.
 
-They stay two hours. Sam wants to know whether the dent in Amberg's car is really shaped like a mailbox, and Ruth, who asked him outright once and got a straight answer, says it is.
+They stay two hours, in the course of which Sam wants to know whether the dent in Amberg's car is really shaped like a mailbox, and Ruth, who asked him outright once and got a straight answer, says it is.
 
-"He told you that? Just like that, no hedging, no story about how it got there?"
+"He told you that, just like that, no hedging, no story about how it got there?"
 
-"He tells anyone who asks, straight out. It's not a secret to him, it's just a dent."
+"He tells anyone who asks, straight out, because it's not a secret to him, it's just a dent."
 
-"I'd act like it was a secret if it were my car. I'd have a whole story ready for anyone who noticed it."
+"I'd act like it was a secret if it were my car, and I'd have a whole story ready for anyone who noticed it."
 
-"You'd have told the whole school inside a week," Ruth says. "You'd have brought people out to look at it, given them the whole tour."
+"You'd have told the whole school inside a week, and brought people out to look at it, given them the whole tour," Ruth says.
 
-She turns her coffee cup a quarter turn on the table.
+She turns her coffee cup a quarter turn on the table, which is the maneuver she performs when she has decided to change the subject herself rather than wait for somebody else to do it.
 
 "My brother's in, the letter came Thursday, and my mother read me the whole thing over the phone twice before I got a word in edgewise."
 
-Sam puts his fork down. "How old is he now, seven?"
+Sam puts his fork down before he asks it, which is a measure of the attention the question is getting. "How old is he now, seven?"
 
 "Seven in September, so he's got a whole year of hearing about it before he even gets here."
 
-"Nine years behind you, and he'll spend every one of them hearing your name before he even meets you." He picks the fork back up. "He's going to hear about you for nine straight years, whether he asks for it or not."
+"Nine years behind you, and he'll spend every one of them hearing your name before he ever meets you, whether he asks for it or not." He picks the fork back up, the point having been made at whatever cost to the waffle underneath it.
 
-"He already knows that, and he's been practising looking unimpressed about it since he could talk." Ruth turns the cup again. "He asked me what the food's like, and that was the whole letter conversation, start to finish, just the food, not the campus or the classes."
+"He already knows that, and he's been practising looking unimpressed about it since he could talk." Ruth turns the cup again, a quarter turn at a time, always in the same direction. "He asked me what the food's like, and that was the whole letter conversation, start to finish, just the food, not the campus or the classes."
 
 "What are you going to tell him?"
 
-"I'll tell him about the waffles here instead, since that's a story he can actually picture." She says it flatly, but she's looking at the cup and not at any of them.
+"I'll tell him about the waffles here instead, since that's a story he can actually picture." She says it flatly, in the voice she keeps for things already decided, but she is looking at the cup and not at any of them.
 
-Sam has the syrup upside down over his second plate, timing it. "Ten weeks starting Friday," he says. "Anyone actually doing anything with the summer, or is it the usual."
+Sam has the syrup upside down over his second plate, timing the pour against some private standard. "Ten weeks starting Friday, so is anybody actually doing anything with the summer, or is it the usual."
 
-"I'm doing the forge both sessions again," Chloe says. "Same as last year."
+"I'm doing the forge both sessions again, same as last year," Chloe says.
 
-"You said that like it was going to be different this year." Something in Ruth's face concedes the point, amusement plain across it.
+"You said that like it was going to be different this year." Something in Ruth's face concedes the point before Ruth herself has agreed to concede it, amusement plain across the whole of it.
 
 "It's not not going to be different. It's just also, on top of whatever else it is, going to be the forge, same as it always is."
 
-Sam has the specials card up off the table, holding it at arm's length. "*Come hither for our world famous short stack.*" He puts it down. "*Hither.* The last time anyone said *hither*, it was Shakespeare."
+Sam has the specials card up off the table, holding it at arm's length like a document recovered from an archive. "*Come hither for our world famous short stack.*" He puts the card down and leaves it lying there as evidence. "*Hither.* The last time anyone said *hither*, it was Shakespeare."
 
-"It's in the dictionary," Ruth says. "That makes it a word, whether you like the sound of it or not."
+"It's in the dictionary, which makes it a word whether you like the sound of it or not," Ruth says.
 
-"It makes it archaic, and archaic is a different category entirely from ordinary. There's a difference between a word being real and a word being something a person would actually say out loud."
+"It makes it archaic, and archaic is a different category entirely from ordinary, because there's a difference between a word being real and a word being something a person would actually say out loud."
 
-"Say a sentence with it in that isn't from a play, then, if it's so ordinary."
+"Say a sentence with it in that comes from somewhere other than a play, then, if it's so ordinary."
 
 "Hither, thither, and yon," Sam says. "That's three sentences, and you only asked for one, so I win twice over."
 
-"You just said hither yourself, not even five seconds ago. That's the whole argument, right there, coming out of your own mouth."
+"You just said hither yourself, not even five seconds ago, which is the whole argument, right there, coming out of your own mouth."
 
-"That's different, because I said it on purpose to prove a point." They argue about it until the waitress comes back with the check, and Nadia has exact change out on the table before it lands, four ways, no discussion.
+"That's different, because I said it on purpose to prove a point." They argue about it until the waitress comes back with the check, and Nadia has exact change out on the table before it lands, four ways and to the cent, because she has been dividing the bill in her head since the second round of coffee and would rather do it there than out loud.
 
-There's a shopping cart in the lot behind a hardware store on the way home. Sam is in it before anybody suggests anything, knees up around his ears, and Ruth pushes him at the curb at a dead run and lets go too late. The front wheel folds sideways with a sound like a dropped pan and Sam goes over the handle into the grass strip and lies there laughing with his arms out. Nadia films the second attempt. Nadia is better at it, hitting the same curb full speed with the brake untouched, riding it out on both feet through the landing, and Chloe laughs hard enough that she has to sit down on the kerb with her head between her knees. They get eleven minutes out of a broken shopping cart. Ruth wants a fourth run and the wheel is finished, so they leave it upside down where it stopped.
+There's a shopping cart in the lot behind a hardware store on the way home, and Sam is in it before anybody has suggested anything, knees up around his ears, while Ruth pushes him at the curb at a dead run and lets go too late. The front wheel folds sideways with a sound like a dropped pan and Sam goes over the handle into the grass strip and lies there laughing with his arms out. Nadia films the second attempt and then takes a run herself and is better at it, hitting the same curb full speed with the brake untouched, riding it out on both feet through the landing, and Chloe laughs hard enough that she has to sit down on the curb with her head between her knees. They get eleven minutes out of a broken shopping cart, and when Ruth wants a fourth run the wheel is finished, so they leave it upside down where it stopped, eleven minutes being about the going rate for anything found in a parking lot at one in the morning.
 
 ---
 
@@ -132,38 +130,38 @@ Nadia stops with her hand on the fence. "What's that got to do with it?"
 
 "If you had one usable skill," Chloe says, "any skill at all, you would make money doing literally anything other than this. You wouldn't be standing behind a hardware store at two in the morning taking phones off teenagers, because that's the worst-paid dangerous job there is. Which means they have none." She looks back down at the man she's just finished checking. "People who fight like that, over somebody's phone, at two in the morning — that's retarded. You didn't fight seven adults, Sam. You beat up seven people who couldn't tell you their own address."
 
-Sam takes that in silence for a second.
+Sam takes that in silence for a second, working it against the thing he walked out of the lot believing.
 
-"The guns are supposed to make it harder," he says. "That's the whole point of carrying one in the first place."
+"The guns are supposed to make it harder, since that's the whole point of carrying one in the first place," he says.
 
-"A gun's a prop unless you actually use it, and every one of them just stood there holding theirs." Ruth has her bag back on her shoulder. "They let you walk all the way in. They gave you the wrist. They stood in a clump and waited their turn." She shrugs. "They fought like ten-year-olds, the whole seven of them. You could have done that at ten."
+"A gun's a prop unless you actually use it, and every one of them just stood there holding theirs." Ruth has her bag back on her shoulder and the strap settled across it, which in Ruth is the gesture of a subject already closed. "They let you walk all the way in. They gave you the wrist. They stood in a clump and waited their turn." She shrugs at the size of the disappointment involved. "They fought like ten-year-olds, the whole seven of them, and you could have done that at ten."
 
-"Fine. Say that one was too easy." Sam puts his hands up and lets them drop. "So who do I actually fight, then?"
+"Fine, say that one was too easy." Sam puts his hands up and lets them drop again, having nowhere better to put them. "So who do I actually fight, then?"
 
 "Go back and fight the waitress," Nadia says.
 
-Sam stops walking. "What? Are you actually serious right now?" he asks.
+Sam stops walking altogether, which from Sam is roughly the equivalent of a raised voice. "What, are you actually serious right now?"
 
-"She's fifty, for one thing," Ruth says. "She's an adult with a job she's worked for years. She's had thirty-four more years of practice at this than you have."
+"She's fifty, for one thing," Ruth says. "She's an adult with a job she has worked for years, and she's had thirty-four more years of practice at being in the world than you have."
 
-"That's thirty-four years of being in situations," Nadia says. "You've had sixteen and eleven of them were at school."
+"That's thirty-four years of being in situations," Nadia says, "against your sixteen, eleven of which were spent at school."
 
-Sam thinks about it for longer than the joke needs. "She'd take me apart before I even got a hand up, and everyone here knows it."
+Sam thinks about it for a good deal longer than the joke needs, because he thinks about everything for longer than it needs, and then answers it straight. "She'd take me apart before I even got a hand up, and everyone here knows it."
 
 "The waitress would take you apart," Nadia agrees, "and she wouldn't even set the coffee pot down to do it."
 
-"Any of us could say the same," Ruth says. "Not just him. She'd probably enjoy it, too."
+"Any of us could say the same, not just him," Ruth says, "and she'd probably enjoy it, too."
 
-Sam laughs at that most of the way to the corner, and Ruth lets him have it. They cross the last empty intersection at a walk, four sets of footsteps falling into the same rhythm on their own, faster than the walk down had been. They argue about the waitress the whole way home.
-
----
-
-They're back over the fence a few minutes past two, Chloe's camera loop already unwinding itself toward normal. The corridor is empty and quiet the whole way to their own doors.
-
-Chloe sets her shoes down by the door, laces still knotted from being kicked off rather than untied, and lies on top of the covers for a while before she gets under them.
+Sam laughs at that most of the way to the corner, and Ruth lets him have it, so that they cross the last empty intersection at a walk, four sets of footsteps falling into the same rhythm on their own and moving faster than the walk down had been, and they argue about the waitress the whole way home.
 
 ---
 
-Ruth shuts the box off in the corridor and puts it in the chat before she sleeps. Four lines and a photo of Sam standing in the lot with his arms out. By breakfast there are sixty replies and an argument about whether it counts, whether seven with three guns between them is a real test or just seven people who happened to be in the way of one.
+They're back over the fence a few minutes past two, Chloe's camera loop already unwinding itself toward normal, and the corridor is empty and quiet the whole way to their own doors, which is the part that will be hardest to credit in a week, that four people can be gone for three hours and the building can decline to notice.
 
-Kavi sends one laughing face, and that's the whole of it, which Ruth reads out at breakfast while Sam reaches past her for the syrup and starts on his tray, like the question landed for somebody else at the table. He lets it sit every time it comes up, and keeps letting it sit long enough that people start bringing it up just to watch him do it again.
+Chloe sets her shoes down by the door, laces still knotted from being kicked off rather than untied, and lies on top of the covers for a while before she gets under them, wide awake in the particular way that follows an evening in which everything went exactly to plan.
+
+---
+
+Ruth shuts the box off in the corridor and puts it in the chat before she sleeps, four lines and a photograph of Sam standing in the lot with his arms out, and by breakfast there are sixty replies and an argument about whether it counts, whether seven with three guns between them is a real test or just seven people who happened to be in the way of one.
+
+Kavi sends one laughing face, and that's the whole of it, which Ruth reads out at breakfast while Sam reaches past her for the syrup and starts on his tray, like the question landed for somebody else at the table, and he lets it sit every time it comes up, and keeps letting it sit long enough that people start bringing it up purely to watch him do it again, which is how a thing that happened to four of them behind one hardware store becomes, inside a fortnight, the property of the entire year.
