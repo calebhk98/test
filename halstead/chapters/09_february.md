@@ -14,7 +14,7 @@ Then it comes out of her all at once and she can't get one word of it out whole,
 
 She says she'll be good, and that she'll do the dishes every single night for the rest of her life. She'll do her dad's jobs as well, all of them, without anybody having to ask her. They can take the bike back, she doesn't want it and never wanted it in the first place. She doesn't need presents at Christmas, not this year and not any year after it. They can have her birthday too, they can just not do a birthday at all, because she doesn't need one of those either. Please, about nine more times in a row. She will never ask anybody for one single thing again for the whole rest of her life, if they will please just let her go to that school.
 
-Her mother is down on the floor with her by then, in the gap, with both arms round her. "Baby. Breathe for me. You have to breathe before you can talk."
+Her mother is down on the floor with her by then, in the gap, with both arms round her. "Baby. Breathe for me, just breathe, you have to breathe before you can talk about any of it."
 
 "I can't do it anymore." It's a whole sentence, and she gets it out twice. "I can't do it anymore, I can't do any of it."
 
@@ -58,7 +58,7 @@ Chloe is on her feet. He hasn't got to the end of it.
 
 Chloe stays standing. "Am I going, though, is it a real thing, are you actually saying yes to it?"
 
-"We're saying yes," her mom says.
+"We're saying yes. We already decided," her mom says.
 
 "Say it again," Chloe says, still standing. "Say all of it again."
 
@@ -100,7 +100,7 @@ Her mother keeps hold of her mug. "No. Absolutely not, and I'm not going to spen
 
 Dave rubs a hand over his face. "Then give me one reason, because I have been sitting here trying to think of one and I can't."
 
-"Because if we take their house," her mother says, "then the day I decide I want to pull her out of that building is the day the three of us have nowhere to live. That's the reason, and it's the whole reason, and I'm not going to argue about it. They can have her for the year. They are not getting the roof over her head as well."
+"Because if we take their house," her mother says, "then the day I decide I want to pull her out of that building is the day the three of us have nowhere to live. That's the reason, and it's the whole reason, and I'm not going to argue about it: they can have her for the year, but they are not getting the roof over her head as well."
 
 Dave looks down, not at either of them.
 
@@ -114,11 +114,11 @@ They drive out on the Friday for the day where Halstead looks at her. The buildi
 
 A woman called Mrs. Okonkwo, who goes backward half the time so that she can talk while she's doing it, walks the three of them around for an hour. Chloe asks whether the room at the end of that hall is still called Pluto, and she says the rooms down there have always been planets, that nobody has ever changed one. Then she asks whether there's a boy here called Sam.
 
-"I can't tell you who's enrolled, sweetheart. Those are other families."
+"I can't tell you who's enrolled here, sweetheart, those are other families, and that's between them and us."
 
-"I know him, though."
+"I know him, though, from camp, this past summer."
 
-"I know you do." Mrs. Okonkwo keeps walking as she says it. "The dining hall's through there. Do you remember it?"
+"I know you do." Mrs. Okonkwo keeps walking as she says it. "The dining hall's through there, do you remember it from July?"
 
 Her mom asks three questions about the nurse, and gets three straight answers. Then she asks a fourth one about who's awake at night, and gets that one answered too.
 

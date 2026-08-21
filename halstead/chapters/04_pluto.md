@@ -64,30 +64,30 @@ That night Chloe calls the desk again and sleeps in the hotel again, and in the 
 "What about?"  
 "Pluto," Chloe says, still doing her shoes, not looking up for any of this.  
 "What about Pluto?"  
-"It's not a planet anymore."  
+"It's not a planet anymore, they took a vote on it and it lost."  
 "Since when?"  
 "Since before I can remember," Chloe says, and her mom laughs at it anyway.  
 \---  
 The dining hall is loud in a different way from the hallway. Two tables over, a boy called Owen is still working through the same worksheet from the afternoon, folded small in his lap under the table, and Priya slows down with her tray long enough to see what he's doing before somebody calls her name and she keeps walking. On the third night Sam sits down across from her without a tray, before he gets up, gets a tray, and comes back to sit in the same seat.  
 "What school do you go to?"  
-"Just a school."  
+"Just a school, a normal one, same as anybody else's."  
 "No, what's it called."  
 She tells him the name of it.  
 "Is it good?"  
 Chloe takes a second finding an answer, and he's already looking at her waiting for it.  
-"It's fine."  
+"It's fine, I guess. There's a girl there who says I talk weird, so mostly I just keep quiet in class now."  
 "Mine's got a pool you can't use," Sam says. "There's a pool in the building and it's for the high school. They just have it there. It's got a lid on it."  
-"A lid."  
+"A lid? On a whole entire pool?"  
 "A cover, a thing on top of it." He does it with his hands, one flat over the other, holding it there. "So you can see it and you can't get in it."  
-"That's the worst thing I've ever heard," Ruth says, from one seat down, into a conversation that had nothing to do with her.  
-"You don't even go there."  
+"That's the worst thing I've ever heard," Ruth says, from one seat down, into a conversation that belonged to somebody else entirely.  
+"You go to a completely different school."  
 "I'm agreeing with you."  
 "You're agreeing at me," Sam says, not looking up from his tray.  
 Chloe has a whole sentence about the lid ready, four words, five, and she lets it go.  
 On the fourth night she gets as far as the phone and stands there with her hand on it. A kid comes up behind her and asks if she's using it, and she says no and goes back upstairs. Priya is still awake.  
 Her mom stays two more days after that, and neither of them says anything about the phone.  
 She leaves on the Sunday, going through the room one more time first, finding the green laundry bag, putting it where Chloe will see it, asking Priya a few questions about herself, before she stands in the doorway with her keys already out.  
-"You've got the number."  
+"You've got the number, taped inside your folder where you can't lose it."  
 "Yes."  
 "Any hour of the night, I mean that. Two in the morning, I don't care." She has said all of this once already, downstairs, in front of the woman at the desk.  
 "Okay."  
@@ -106,13 +106,13 @@ A girl two seats down lets her head drop flat onto the desk with a thud loud eno
 "What's the word," Sam says, in the voice of somebody setting something up.  
 "Viscosity."  
 "What's viscosity."  
-"How thick it is," Kavi says, and keeps going.  
+"How thick it is," Kavi says. "Honey's got high viscosity, water's got low viscosity, and lava's somewhere in between depending on how hot it is, which is why some of it pours and some of it barely moves at all," and he keeps going from there.  
 Sam tries twice more to get back into it and loses the thread both times, and a couple of the other kids are laughing outright by the second try. He stops trying, picks up his pencil, and starts drawing his own volcano in the margin instead, going on about it like that's what he'd meant to be doing all along.  
 \---  
 On the second Tuesday, Mr. Doyle says something about weight while he's drawing on the board, and Ruth's hand goes up, though she starts talking before it's noticed.  
 "That's mass, weight is the pull on it. If you took the same thing to the moon the weight would go down and the mass would be exactly the same."  
 Mr. Doyle stops with the marker still up at the board and looks at what he's written.  
-He wipes one word out with the side of his hand and writes the other one into the gap that it leaves. "Mass. Thank you."  
+He wipes one word out with the side of his hand and writes the other one into the gap that it leaves. "Mass. Thank you for catching that."  
 Then he keeps going.  
 "I told you," Ruth says, to the room. "I said that on Friday. I said it on Friday."  
 "Ruth," Sam says, from two seats over, eyes on the board.  

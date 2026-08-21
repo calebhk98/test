@@ -92,6 +92,24 @@ Ruth and Kavi took cryptography and networks last year, which puts Ruth three mo
 
 The box goes in the drawer under Ruth's window, and it stays there.
 
+Getting out of the building on a Saturday is a thing you arrange on a Thursday, and in October the arranging stops working three weeks running. The third week the duty teacher stops at the end of the long table on her way past, says she hopes the eight o'clock bus into town is a comfortable one, and carries on to the servery. What she has done is read four messages off the top of a screen over somebody's shoulder, which she is entitled to do and which takes her about two seconds.
+
+Kavi has the first version running by the end of the month, on the school's own machines, because a service inside the building looks like every other service inside the building. Ruth writes the encryption for it herself, out of the term's material, rather than lifting something already built and already tested.
+
+"You wrote it yourself, though, when there are whole libraries of this that people have spent entire careers getting right."
+
+"I read three of those before I started, and about half of what's in here came straight back out of them." Ruth has the listing spread across two chairs, because it will not sit on one. "What a library can't give me is a key that only this table has ever had, because a library is a thing everybody else in the world has a copy of too."
+
+Chloe breaks it in nine days, and not the encryption, which holds. What she gets instead is that the school's network keeps a record of which machine talked to which machine and at what time, the way it does for every service in the building, regardless of what any of them are for.
+
+"Every word in there is sealed, which is completely true, and it's still finished." She puts the log on the table between them, folded down to the one column that matters. "She doesn't want to know what we said. She wants to know that this table said something to each other at eleven on Thursday and then went missing off breakfast on Saturday."
+
+Ruth reads the column for a long moment with her chin on her fist. "So it has to look like something else the whole time, then, and not only on the nights we're actually using the thing."
+
+"It has to look like what this network is already full of, which is a hundred and forty machines checking in with each other about nothing at all every few minutes."
+
+That takes the two of them the rest of the term, and what comes out at the end is slow and ugly and pushes exactly as much traffic at four on a Sunday morning, with every one of them asleep, as it does on a Thursday night with all of them typing. Amberg could take it apart in an afternoon, and none of them ask him to. They are on the eight o'clock bus the first Saturday in December, and it goes into town with all of them on it.
+
 Formal epistemology starts with one sentence on the board: *I know that I am sitting in this room.* The professor spends the hour taking it apart, what would have to be true for that to count as knowledge, and by the end most of the room doubts it knows anything at all. "Justified and true isn't enough," she says, and moves to the next slide before anyone has finished writing it down. Chloe comes out of that hour and stands in the corridor for a minute with her bag still open before she goes on to German.
 
 Block two is hers, so she puts fencing and game theory on the sheet. Fencing she is bad at the way she was bad at dance, seeing the opening and getting her arm there about a fifth of a second after it has closed. Game theory she has inside a fortnight, then loses to Kavi across a table for the rest of the term, because the maths tells her what to do against somebody playing properly, and Kavi has spent his whole life playing the person instead of the board.

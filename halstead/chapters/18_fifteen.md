@@ -146,6 +146,24 @@ She lies awake that night, and snaps at Sam over nothing at breakfast the next m
 
 She stops saying what she does in the afternoons, and it takes about four days to stop being a decision.
 
+A teacher takes Priya's phone off her in the second week of March, for the ordinary reason, which is that it is out on the desk during a lecture on evidence. He puts it in the drawer of the lectern, gives it back on the Friday in front of everybody, and says only that she can charge it at the back.
+
+The chat is on that phone. Two and a half years of it, locked, and locked properly, and sitting in an unattended drawer for three days inside a building where getting into things is a course with an exam at the end of it.
+
+Priya says at dinner that the lock held, which is almost certainly true, and which Ruth calls the wrong sentence before Priya has finished saying it. The right sentence is that a single lock stood between a lectern drawer and everything the table has said to each other since they were thirteen, for three days, and that whether it held is a question they are asking on Friday instead of one they had already answered on Monday.
+
+So the phone stops holding anything.
+
+Kavi does the work over four evenings, and what he comes back with keeps every message on the machines in the building and puts a window on the handset instead of a box. Close the window and there is a clean pane of glass in your pocket with a login sitting on it. Take the phone off somebody and what you are holding is a phone.
+
+"Then the drawer's got the login, and the login is the whole thing all over again, only in a smaller box."
+
+"Which is exactly why the login stopped being the whole thing, and that's the second half of what I did." Kavi has the handset face up on the table with the screen dark, tapping the back of it with two fingers. "It wants the password, and then it wants a number off a card, and the card lives somewhere a long way from the pocket the phone lives in. Take the phone, get the password out of whoever you took it from, and you are standing in a corridor holding a piece of glass."
+
+Ruth cuts the cards that week, one each, small enough to go behind the photograph in a wallet or flat under the insole of a boot. Sam loses his in April, which is the failure every one of them predicted out loud in advance and built for anyway, and it takes eleven minutes with Kavi at a terminal to put him back inside.
+
+Chloe carries hers behind her range card for the rest of her time in the building, and she checks that it is there about once a week, the way she checks a door on her way past it.
+
 ---
 
 Her father comes out of the house on the second Sunday of the summer with the car keys and walks straight past her to the passenger door. "Get in."

@@ -33,10 +33,10 @@ Then she starts on Spanish, rattling it off before she remembers he can't follow
 "What did you just say?" her dad says.  
 "I said what's on the table, and where the bathroom is, and what I did today, and then I said the one Sam says at breakfast every morning, which is apparently rude." She goes back through it in order, slower this time, turning each piece into English for him.  
 "We talk in it at lunch on purpose," she says, "all four of us, so nobody else at the table can tell what we're saying. It doesn't work though, because everybody else is doing Spanish too."  
-Then the signing, which is a different thing again and better, because you can do it across a room. She shows him the alphabet on her fingers and does his name with it, slowly, and then hers, faster. She shows him the sign for water and the sign for finished and the sign for again. In the library you can ask somebody from four tables away whether they've got a certain book and nobody has to say anything out loud, and she and Ruth did that for a whole afternoon, and the woman who runs the library knew what they were doing and let them.  
-Then the twenty-sentence puzzle, in a language nobody in the room had ever heard of, and no dictionary, and you had to work out how it went. Chloe got that the words came in a different order from ours by about the sixth sentence. Ruth got the plurals. Kavi got the pattern in the endings that Chloe still doesn't entirely follow, and he explained it four times, and he'd explain it again right now if he was here.  
+"Then there's the signing, and that one's better than all of it, because you can do it across a whole room, quiet the entire time, with your hands doing all the talking." She shows him the alphabet on her fingers, then does his name with it, slowly, then hers, faster. "That one's water, that one's finished, that one's again. In the library you can ask somebody four tables away whether they've got a certain book, and nobody has to say one single word out loud the entire time." She and Ruth did that for a whole afternoon, and the woman who runs the library knew exactly what they were doing and let them keep going anyway.  
+"And there was a puzzle, twenty sentences, in a language nobody in the room had ever heard of before, and no dictionary, and you just had to work out how the whole thing went from the sentences themselves." By about the sixth sentence she'd worked out that the words came in a different order than English does. "Ruth got the plurals before I did. Kavi got the pattern in the endings, and I still don't completely follow it, even though he explained it to me about four separate times, and he'd probably explain it to you again right now if he was sitting here instead of me."  
 Then the wood shop, and the safety glasses sized for somebody bigger. Then the eggs she made, and the dish on the Thursday that everybody ate, which had onions in it that she cut herself. Then the paintings they went and looked at, one of which cost more than a house, which baffles her, because it's a painting.  
-Then the computers, which is two things. There's typing the words in herself instead of dragging blocks around, and she can make it count to a hundred and skip the sevens. And then there's the room they took them to, enormous and cold, cold because the machines make heat that would break them, until a woman there explained the setup, including the water pipes running under the floor.  
+"Then there's the computers, and that's actually two whole different things." She counts them off on her fingers so he can follow along. "The first one is you type the words in yourself instead of dragging little blocks around like it's a game, and I made it count all the way to a hundred and skip every single seven along the way. And the second one is there's a whole room they took us to that's enormous and freezing cold, on purpose, because the machines make so much heat it would actually break them, and a woman who works in there explained the whole setup to us, even the water pipes that run under the floor to keep it that cold."  
 Then chess, which Sam is also better at.  
 Then karate.  
 Then the nerf guns at the end, because she just remembered.  
@@ -45,36 +45,36 @@ Her plate has gone cold in front of her, barely touched. She talks the rest of i
 Her dad sets his fork down and laces his fingers on the table.  
 "How many days have you been here?" he says.  
 "Twenty-seven." It comes out before he's finished asking.  
-"Twenty-seven."  
-"There's tomorrow."  
+"Twenty-seven," he says again, like he's checking the number holds up the second time.  
+"There's tomorrow too, that makes twenty-eight, but I'm not counting tomorrow until it happens."  
 He looks past her at the room, at the other tables, long enough that she turns around to see what he's looking at: people eating.  
 "Cool," he says.  
 Under the table, her knee starts going, fast, small, and keeps going.  
 When he asks her to do the fractions one again, from the start, she turns the napkin over and works the problem a second time on the clean side, while he watches, letting her run through the whole thing again.  
-"They taught you that?"  
-"He did it on the board and I didn't get it. So I did it again at night with my own numbers and then I got it."  
+"They taught you that themselves, or did you have to work that part out on your own?"  
+"He did it on the board and I didn't get it, so I did it again at night with my own numbers, and then I got it."  
 "But you could already do them, you said you got them all right."  
-"Anybody can do the flipping." Chloe puts the pen down. "You do it and it's right, but you don't know it's right. You just know he said."  
+"Anybody can do the flipping." Chloe puts the pen down. "You do it and it's right, but you don't actually know it's right, you just know that he said so."  
 Her dad looks at the napkin, folds it in half, and puts it in his shirt pocket.  
 \---  
 After, the four of them sit on the floor in the hall outside Pluto, backs against the wall, close enough that Ruth's shoulder stays against Chloe's for most of it. Since the lights in that hall go off in sections at ten, they're down to the last section, and they stay sitting where they are, backs against the wall.  
 Ruth takes her shoes off and lines them up against the wall, heel to heel, then knocks them out of line with one foot and leaves them like that.  
 "We should all get in," Ruth says.  
-"Get in where."  
+"Get in where, though? What do you even mean?"  
 "Here, it's a school. It's a whole school, it goes all year, that's what this is."  
-"I know it's a school."  
-"So we should get in."  
+"I know it's a school, I've been here the whole time too."  
+"So we should all get in, then, that's the whole entire point."  
 "Obviously," Sam says. "They wouldn't have taught us all that stuff for one summer and then let it go."  
 "It's not obviously, you have to actually do things." Ruth pulls her knees up to her chest. "My mom asked: there's a form, and there's a day where you come back and they look at you, and it's not in the summer, it's a different day in the fall."  
-"They already looked at us," Sam says. "That's this."  
+"They already looked at us, Ruth. That's what this whole month was."  
 "That's not what she said it was. She said it's a whole different day, with different people looking."  
-"You weren't even on the phone call."  
-"I heard half of it."  
-"Half of it isn't the phone call."  
+"You weren't even on the phone call, so how would you even know what she said."  
+"I heard half of it, through the door, before Mom noticed I was standing there."  
+"Half of it isn't the phone call, the other half is the part that actually matters."  
 Ruth picks the knot out of one shoelace instead of answering.  
 "My parents already asked," Kavi says. "On the third day."  
 "Your parents asked on the third day?"  
-"They liked the food."  
+"They liked the food, mostly, that's what got them talking about the rest of it."  
 "They asked on the third day because of the food?"  
 "They liked a lot of it, the food was one thing." Kavi shrugs with one shoulder. "My dad talked to Mr. Baptiste for an hour."  
 "When's the form?" Chloe says.  
@@ -82,18 +82,18 @@ Ruth picks the knot out of one shoelace instead of answering.
 "But when do you find out."  
 "I don't know that either. My mom said she'd tell me the second she hears anything."  
 "Well, find out," she says, up on her knees now, one hand fisted in the leg of Kavi's pyjamas. "Because if it's a day where they look at you, I want to know what they look at. I want to know if it's the same stuff or different stuff, because if it's different stuff I need to know what it is."  
-"It's a form, Chloe."  
-"You said there was a day."  
-"There's a day."  
+"It's a form, Chloe, it's not a promise, that's a completely different thing."  
+"You said there was a day, though, a day where they actually look at you."  
+"There's a day, yeah, but a day just means somebody looks at you, that's still a long way from anybody actually saying yes."  
 "So there's a day," she says, and sits back against the wall, still holding on.  
 "I'm going to write you a letter every single week," Ruth says, to a spot on the opposite wall. "Starting Monday."  
 "You don't even like writing," Sam says.  
 "I like writing to people. It's homework I don't like."  
-"You're not going to do it every week."  
+"You're not going to do it every week, you say that about everything."  
 "I am."  
 "You said that about the bridge log, and you did it four times."  
 "The bridge log was boring."  
-"So's a letter every week."  
+"So's a letter every week, and you already know that about yourself."  
 "It's not the same thing, Sam, and you know it isn't."  
 For a second the only sound is a door somewhere down the next section, clicking shut.  
 Then the arithmetic arrives, unbidden: four hours in the car, each way. A whole day of driving to put her somewhere and a whole day to get her back, then again at the end, and that's before counting any visit in between, which would only add to it. Her mom at the counter with her hand on her forehead, the woman at the district office saying be careful.  
@@ -125,6 +125,6 @@ The road noise goes on for another few miles.
 "Okay," her mom says, "so what is that."  
 "I don't know what that is."  
 "Four hours away, Dave. And free. And they wrote to her."  
-"I know, I was there."  
+"I know, Meg, I was standing right there for all of it."  
 The road noise fills the car again until the next exit sign. When her mom says something about the traffic on the last stretch, her dad says he'll take the other way in.  
 Chloe keeps her eyes shut the rest of the way home.
