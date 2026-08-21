@@ -29,6 +29,38 @@ The last one is the specific hazard of the reading-grade work. Spelling out a
 logical joint is one keystroke away from spelling out the point. The joint is
 between two clauses; the point belongs to the reader.
 
+### The tone construction, and how to fix it
+
+The commonest form this takes in the manuscript is the narrator naming a tone
+by explaining the mental state behind it: *"the tone that she uses when she
+already knows the answer and has to hear it again anyway."* The author flags
+this one as recurring book-wide.
+
+It does the reader's work twice: it identifies the tone and then tells you what
+it means. The character genuinely does read tone, so the perception has to
+stay. The rule that works:
+
+> **Give the sound, then give what the listener does about it. Never give the
+> state.** Tone is a fact about the air. Meaning is a fact about the listener.
+> The mental state belongs to nobody in the room.
+
+Worked example, chapter 7. Before, the narrator explained the mother's state.
+After:
+
+> Coming down for water, Chloe gets the end of one of the calls, and the
+> sentence she arrives on has two pleases in it. Her mom is at the counter with
+> one hand flat on it, and Chloe stops in the doorway with the glass still
+> empty.
+
+Two pleases is the sound. Stopping in the doorway with an empty glass is what
+the listener does about it. Neither sentence names a feeling.
+
+**The test: strike the clause and read the page.** If nothing is lost, it was
+talking to the reader. In the chapter 7 case nothing was lost, because the
+mother says the thing out loud four lines later. That is the general pattern:
+this construction tends to sit directly above the beat that would have proved
+it, so the usual fix is deletion rather than replacement.
+
 ## 2. One paragraph convention
 
 Blank line between paragraphs. No two-trailing-space markdown hard breaks

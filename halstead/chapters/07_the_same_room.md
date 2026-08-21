@@ -186,7 +186,7 @@ She goes up, and on the back of a spelling worksheet under her pillow she starts
 
 Her mom starts on the school in the last week of September.
 
-Coming down for water, Chloe gets the end of one of the calls, and her mom is at the counter with her hand flat on it, her voice gone careful and extra polite, the tone she uses when she already knows the answer and has to hear it again anyway.
+Coming down for water, Chloe gets the end of one of the calls, and the sentence she arrives on has two pleases in it. Her mom is at the counter with one hand flat on it, and Chloe stops in the doorway with the glass still empty.
 
 "Third grade, okay, so third grade is the floor, whatever the testing comes out at," she says, and listens, the pen tapping twice against the counter. "No, I know what the policy is, you've told me what the policy is, and what I'm asking is whether anybody has ever made an exception to it, for any reason, in any year."
 
@@ -194,7 +194,7 @@ Whatever comes back takes a long time.
 
 "And the testing window is in the spring, only the spring, with no way around that part of it," she says, writing something down on the back of an envelope. "So we test her in the spring, for a program that starts the following fall, which is over a year from now, and she is in second grade right now."
 
-She says thank you at the end of it, puts the phone down, and stands there with her hand still on it, until she turns and Chloe is in the doorway with the glass.
+She says thank you at the end of it, puts the phone down, and stands there with her hand still on it, until she turns and finds Chloe still in the doorway.
 
 "Go on up, and I'll come say goodnight in just a couple of minutes."
 

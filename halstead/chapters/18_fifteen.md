@@ -168,7 +168,9 @@ He takes her to the church lot behind the tire place, empty on a Sunday, with fo
 
 "Coming out." Her hands are at ten and two where he put them in week one, and her knuckles have gone white on the wheel. "His wheels are turned and he's crept forward twice, and he's looking left, so we're still invisible to him."
 
-Her father drinks some of the coffee and tells her to carry on. By the end of July she can drive, and the clutch is the part that takes her longest, and at dinner he tells her mother, laughing, that she reads a junction like somebody who has been doing it fifteen years and pulls away from a stop sign like a child.
+Her father drinks some of the coffee and tells her to carry on.
+
+On the last Sunday of July she comes down to the stop sign at the bottom of the reservoir road with the whole junction called before the car ahead of her has finished clearing it: the van on the left, the cyclist tucked in behind the van, the width of the gap after him. Then she brings the clutch up and the car bucks twice and stalls square in the middle of the road, and she has it started and moving again while the driver behind her is still deciding about the horn. Her father laughs into the cup.
 
 Her grandmother takes her hand at the table a week later to look at a ring her aunt has brought over, and keeps hold of it after the ring has been round the table. She turns it over in both her hands, where there is a burn across the base of the thumb from March and a smaller one in the web of the first two fingers, and the knuckle on the third finger is bigger than its opposite and sits slightly off, because she set that herself in a corridor at eleven at night and then went to bed.
 

@@ -190,7 +190,7 @@ Ruth picks the knot out of one shoelace with both thumbs instead of answering hi
 
 For a second the only sound in the hall is a door somewhere down the next section, clicking shut.
 
-Then the arithmetic arrives, unbidden: four hours in the car each way, a whole day of driving to put her somewhere and a whole day to collect her at the end of it, twice over in a year, before anybody counts a visit in between, and her mom at the counter with her hand flat on her forehead, and the woman at the district office telling her to be careful.
+Chloe runs the numbers again, the same ones she has been running since the drive down: four hours in the car each way, a whole day of driving to put her somewhere and a whole day to collect her at the end of it, twice over in a year, before anybody counts a visit in between, and her mom at the counter with her hand flat on her forehead, and the woman at the district office telling her to be careful.
 
 "Chloe," Sam says, "obviously."
 

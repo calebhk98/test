@@ -30,7 +30,7 @@ Chloe had held on to his sleeve a second longer than the door needed to close, a
 
 There is a poster about handwashing, in English on one side and Spanish on the other, the Spanish side taking a while because she tries it first, plus a magazine about powerboats, most of the words past her, which she reads anyway, through to the prices at the back.
 
-There is also a sign that says NO CELL PHONES with a picture of a phone beneath it and a red line through the phone: if you can read the sign the picture is redundant, and if you can't read the sign the picture won't help you either.
+There is also a sign that says NO CELL PHONES with a picture of a phone beneath it and a red line through the phone. The picture must be there for the people who can't read the sign, and the people who can't read the sign are looking at a phone with a line on it. Chloe puts her chin down on the arm of the chair. It is still funny a minute later, when she is looking at something else.
 
 \---
 
@@ -224,7 +224,7 @@ Her mom looks over at her at the red light, for longer than the light.
 
 "He didn't give me a number," her mom says to the windshield.
 
-Chloe watches the side of her face, the way she does when somebody's answer and their voice are telling two different stories, because that is a placeholder rather than the real one, since a word like that always comes with a number stuck to it, so she presses her thumbnail into the seatbelt instead of saying so, because they are having a nice time.
+A word like that always comes with a number stuck to it. Chloe watches the side of her mom's face and presses her thumbnail into the seatbelt instead of saying so, because they are having a nice time.
 
 They get ice cream, unheard of on a Wednesday, and she eats it in the car, where some of it goes on the seat and her mom tells her to let it go.
 

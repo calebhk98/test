@@ -337,7 +337,7 @@ Chloe had held on to his sleeve a second longer than the door needed to close, a
 
 There is a poster about handwashing, in English on one side and Spanish on the other, the Spanish side taking a while because she tries it first, plus a magazine about powerboats, most of the words past her, which she reads anyway, through to the prices at the back.
 
-There is also a sign that says NO CELL PHONES with a picture of a phone beneath it and a red line through the phone: if you can read the sign the picture is redundant, and if you can't read the sign the picture won't help you either.
+There is also a sign that says NO CELL PHONES with a picture of a phone beneath it and a red line through the phone. The picture must be there for the people who can't read the sign, and the people who can't read the sign are looking at a phone with a line on it. Chloe puts her chin down on the arm of the chair. It is still funny a minute later, when she is looking at something else.
 
 \---
 
@@ -531,7 +531,7 @@ Her mom looks over at her at the red light, for longer than the light.
 
 "He didn't give me a number," her mom says to the windshield.
 
-Chloe watches the side of her face, the way she does when somebody's answer and their voice are telling two different stories, because that is a placeholder rather than the real one, since a word like that always comes with a number stuck to it, so she presses her thumbnail into the seatbelt instead of saying so, because they are having a nice time.
+A word like that always comes with a number stuck to it. Chloe watches the side of her mom's face and presses her thumbnail into the seatbelt instead of saying so, because they are having a nice time.
 
 They get ice cream, unheard of on a Wednesday, and she eats it in the car, where some of it goes on the seat and her mom tells her to let it go.
 
@@ -1110,7 +1110,7 @@ Chloe writes six sentences, reads them back twice, and leaves every word standin
 
 Sam has four sentences, one of them a joke, and he shrugs, then leans over far enough to count the lines on Chloe's page; two tables over, a girl called Marisol, who has three, asks whether the question can go back on the board, while Chloe sits with her six, which would have been the longest answer in Mrs. Aldana's room by half a page, and that meant the whole class listening to it read out on a Friday afternoon and then guessing, correctly, whose it was.
 
-On the Thursday every table gets the same materials: a bundle of dowels, a spool of string, one glue gun between three, and a rule about the glue gun that Mr. Doyle delivers twice, the second time slowly. The gap is eighteen inches, and whatever crosses it has to hold whatever gets hung off the middle afterward. Chloe is put with Sam and Kavi, and Ruth, assigned to the next table, comes across anyway before the glue has finished heating.
+On the Thursday every table gets the same materials: a bundle of dowels, a spool of string, one glue gun between three, and a rule about the glue gun that Mr. Doyle delivers slowly. The gap is eighteen inches, and whatever crosses it has to hold whatever gets hung off the middle afterward. Chloe is put with Sam and Kavi, and Ruth, assigned to the next table, comes across anyway before the glue has finished heating.
 
 "It's triangles, that's the whole answer, and I can show you in four seconds," Ruth says.
 
@@ -1242,11 +1242,11 @@ Ruth is at the end of the table with her chin on her hand, pushing the same piec
 
 "She asked the table," Ruth says, and puts her fork down instead of eating what is on it. "I was sitting at the table."
 
-Chloe's own fork stops halfway to her mouth, three questions backed up behind it: what he looked like, how long he was in there, who found him.
+Chloe's own fork stops halfway to her mouth, three questions backed up behind it: whether anybody went into the stairwell after him, whether he had to say it out loud to somebody before they would let him go, and how long it was between the saying and his mom being at the door.
 
 Owen, then the bridge, then Owen again, and the loop refuses to run further than that, so Chloe picks her roll apart, one piece at a time, lining the pieces along the edge of her tray, going back through the same two facts: the bridge was fun, and Owen must not have liked it, which sit crosswise, and neither will move over for the other. She starts from the beginning and checks them a third time, long after Ruth has gotten up and taken her tray, trying to work out how a person could stand in front of a bridge and want to be somewhere else.
 
-Four more leave before the end of the month, each the same way, so that by the fourth time Chloe reads the event off the corridor: a door standing open in the afternoon, a mattress with the sheets gone.
+Four more leave before the end of the month, each the same way, so that by the fourth time Chloe reads the event off the corridor: a door that was shut at breakfast standing open in the afternoon, a mattress with the sheets gone.
 
 \---
 
@@ -1487,7 +1487,7 @@ Ruth picks the knot out of one shoelace with both thumbs instead of answering hi
 
 For a second the only sound in the hall is a door somewhere down the next section, clicking shut.
 
-Then the arithmetic arrives, unbidden: four hours in the car each way, a whole day of driving to put her somewhere and a whole day to collect her at the end of it, twice over in a year, before anybody counts a visit in between, and her mom at the counter with her hand flat on her forehead, and the woman at the district office telling her to be careful.
+Chloe runs the numbers again, the same ones she has been running since the drive down: four hours in the car each way, a whole day of driving to put her somewhere and a whole day to collect her at the end of it, twice over in a year, before anybody counts a visit in between, and her mom at the counter with her hand flat on her forehead, and the woman at the district office telling her to be careful.
 
 "Chloe," Sam says, "obviously."
 
@@ -1740,7 +1740,7 @@ She goes up, and on the back of a spelling worksheet under her pillow she starts
 
 Her mom starts on the school in the last week of September.
 
-Coming down for water, Chloe gets the end of one of the calls, and her mom is at the counter with her hand flat on it, her voice gone careful and extra polite, the tone she uses when she already knows the answer and has to hear it again anyway.
+Coming down for water, Chloe gets the end of one of the calls, and the sentence she arrives on has two pleases in it. Her mom is at the counter with one hand flat on it, and Chloe stops in the doorway with the glass still empty.
 
 "Third grade, okay, so third grade is the floor, whatever the testing comes out at," she says, and listens, the pen tapping twice against the counter. "No, I know what the policy is, you've told me what the policy is, and what I'm asking is whether anybody has ever made an exception to it, for any reason, in any year."
 
@@ -1748,7 +1748,7 @@ Whatever comes back takes a long time.
 
 "And the testing window is in the spring, only the spring, with no way around that part of it," she says, writing something down on the back of an envelope. "So we test her in the spring, for a program that starts the following fall, which is over a year from now, and she is in second grade right now."
 
-She says thank you at the end of it, puts the phone down, and stands there with her hand still on it, until she turns and Chloe is in the doorway with the glass.
+She says thank you at the end of it, puts the phone down, and stands there with her hand still on it, until she turns and finds Chloe still in the doorway.
 
 "Go on up, and I'll come say goodnight in just a couple of minutes."
 
@@ -3069,9 +3069,9 @@ The forge is a low building past the kitchens, open Thursdays and most of Sunday
 
 Pruitt runs the place off a whiteboard carrying the Thursday names and a list of low stock, and for the first month the men work around her and leave her alone, so she has no way of telling whether any of it is right until the second week of October, when he passes behind her with an armful of bar. "Your heat's wrong and it has been all afternoon."
 
-He keeps walking, leaving her to work out what he meant, which takes four minutes and one more attempt, after which she is right more often than she is wrong. Sam picks a hook off her bench in November and says it beats anything else down there. "The scroll's wrong, right at the top curve." She takes it back, still warm at the thick end, and turns it until her thumb finds where the metal stops giving under her nail. "It goes tight and then opens out, right where my thumb is, because that's two curves welded in the middle pretending to be one, so hold it up at the window and you'll see it." He holds it up with one eye shut, and she tells him the shadow runs straight for an inch where it ought to be turning the whole way down, the same curve from one end to the other.
+He keeps walking, leaving her to work out what he meant, which takes four minutes and one more attempt, after which she is right more often than she is wrong. Sam picks a hook off her bench in November and says it beats anything else down there. "The scroll's wrong, right at the top curve." She takes it back, still warm at the thick end, and turns it until her thumb finds where the metal stops giving under her nail. "It goes tight and then opens out, right where my thumb is, because that's two curves welded in the middle pretending to be one, so hold it up at the window and you'll see it." He holds it up with one eye shut, and she tells him the shadow runs straight for an inch where it ought to be turning the whole way down.
 
-He hands the hook back, tells her it still looks fine to him and takes his coat off the peg because it is nearly six, and then the girl at the next bench comes over with a punch in her hand and admires how straight the hammer marks run down the shank. Three weeks later Pruitt passes the bench, where the hook is still sitting. "You lost the curve on the second turn," he says, and keeps going.
+He hands the hook back, tells her it still looks fine to him and takes his coat off the peg because it is nearly six, and then the girl at the next bench comes over with a punch in her hand and admires how straight the hammer marks run down the shank. Three weeks later there are five hooks on the bench with the same fault in all five, and Pruitt comes past with a bar on his shoulder and runs a thumb down the scroll of the nearest one without breaking stride. "You lost the curve on the second turn," he says, and keeps going. She has the sixth in the fire that evening and stops it at the second turn, scroll half open, and puts it back in the coals.
 
 In the same month Bell takes the metronome off the post and pockets it in front of all of them. "You've had that two years, and a machine doing your counting for you is two years too long, so from today one of you calls the count out loud and the other works off the call." Odile asks which of them is supposed to call it. "That's the two of you to sort out," he says, buttoning the pocket, "and I'd think about it first, because whoever calls the count is the one whose bad afternoon everybody else has to have."
 
@@ -3465,7 +3465,9 @@ Half the grammar is a frame she already has from Latin, the vocabulary outside t
 
 Eleven laboratories split the year between them, and hers does materials, where the youngest fetches, cleans, takes the jobs the seniors avoid. A postdoctoral researcher called Sanders hands her six months of instrument logs with the paper written off them and asks why the two disagree, since the logs hold four thousand runs where the paper reports eleven hundred, and neither document says which eleven hundred, or when, or by whom. She spends nineteen days on it with the logs spread across two tables: the instrument was recalibrated on a Tuesday in March, everything before that Tuesday is in the paper, everything after it stayed in the log alone, and somebody stopped and kept the stopping to themselves. Sanders reads her four pages standing up, puts them in a folder, and says thank you.
 
-In cryptography the first term goes entirely on breaking things other people built, substitution, then Vigenere, then a fortnight on why a key you use twice stops being a key, so by November they are working real messages off real systems with real mistakes in them. Amberg's line from the first day is that you cannot build a lock until you have opened one somebody else built, because until then you are guessing what a lock is for.
+In cryptography the first term goes entirely on breaking things other people built, substitution, then Vigenere, then a fortnight on why a key you use twice stops being a key, so by November they are working real messages off real systems with real mistakes in them.
+
+Amberg gives them the order of it on the first day, before a single cipher goes up on the board. "You will not build a lock this year. You will open locks other people built, and there is a reason for that order. One, a lock fails in the place the person who built it stopped looking. Two, you find that place by opening the lock, and by nothing else. Three, after thirty of them you know where people stop looking, and that is the whole of what you carry into the first one you build yourself. The other way round, you are guessing what a lock is for."
 
 Eli gets into everything and takes his time doing it, so when Chloe asks how he took the November set he sits up on the table, swinging one foot, and talks her through it for twenty minutes on the back of somebody's timetable.
 
@@ -3588,7 +3590,7 @@ They finish on a Tuesday at the end of July and the steps hold. Her mother comes
 
 Marksmanship replaces archery in September, and Voss gives them three weeks of dry drill before anything gets loaded: nine weapons go on a table and they learn to name every one of them off the silhouette from across the room, then strip and reassemble four of them by feel with a cloth laid over their hands, and then do it that way again while Voss stands behind them reading questions off a clipboard and timing the answers. Chloe fumbles the bolt release for two weeks, until in the third week her hand finds it on its own while she is looking at the far wall.
 
-Live fire starts in October at fifty metres, prone, unsupported, on paper, and it is the same shape as everything they have been handed since she was eight: an easy version of a thing, then a harder one, then the version that is worth turning up for.
+Live fire starts in October at fifty metres, prone, unsupported, on paper, and Chloe is down on the mat with her elbows set before Voss has finished handing out the ear protection.
 
 Keeping the rifle up, Sam asks, "How long till this bit's boring?"
 
@@ -3779,7 +3781,15 @@ The whole year is breaking clays at between ninety and a hundred, a spread that 
 
 A machine at one end of sixty metres of open ground fires a live round down the lane on a cycle that holds to the hundredth, and the students stand off to the side behind glass, so that the round crosses in front of them left to right while they shoot across its path on a count taken off the mechanism.
 
-They are shooting bullets out of the air.
+Voss lets them look at it for a while, and when he does start he starts with the machine rather than with them.
+
+"That is a turret, and it puts a live round down the lane on a cycle you can set a watch by. Left to right, sixty metres of open ground, in front of you, behind the glass, and you will be firing across its path on a count you take off the mechanism." He gives them a moment with that. "The target is the round. Not the turret, not a clay, not a plate hung off a rope. You are shooting the bullet."
+
+Aymar asks why, out loud, in the tone of somebody asking on behalf of ninety people.
+
+"Because a gun you can only point at a man is a weapon," Voss says, "and a gun you can put a bullet onto a bullet with is a tool. You have had a year of the first one. This year you get the second."
+
+He delivers it like a thing he has said four hundred times to four hundred students, and it is round the year by Thursday and back at Chloe's own table twice before the end of the month, quoted with the flat confidence of something printed in a manual. In February, five weeks into a run of cards that all read zero, she goes looking for where it comes from, first in the library and then in the range office, and the oldest instructor on the staff tells her that the first time he heard it was from Voss.
 
 For five weeks every card in the year reads zero, so that the range in October is the sound of a great many people missing, four sessions a week, ninety of them at it. In the second week Kavi does the arithmetic and announces at dinner that at this rate somebody will hit something in about March, and Priya tells him to eat.
 
@@ -3933,7 +3943,9 @@ He takes her to the church lot behind the tire place, empty on a Sunday, with fo
 
 "Coming out." Her hands are at ten and two where he put them in week one, and her knuckles have gone white on the wheel. "His wheels are turned and he's crept forward twice, and he's looking left, so we're still invisible to him."
 
-Her father drinks some of the coffee and tells her to carry on. By the end of July she can drive, and the clutch is the part that takes her longest, and at dinner he tells her mother, laughing, that she reads a junction like somebody who has been doing it fifteen years and pulls away from a stop sign like a child.
+Her father drinks some of the coffee and tells her to carry on.
+
+On the last Sunday of July she comes down to the stop sign at the bottom of the reservoir road with the whole junction called before the car ahead of her has finished clearing it: the van on the left, the cyclist tucked in behind the van, the width of the gap after him. Then she brings the clutch up and the car bucks twice and stalls square in the middle of the road, and she has it started and moving again while the driver behind her is still deciding about the horn. Her father laughs into the cup.
 
 Her grandmother takes her hand at the table a week later to look at a ring her aunt has brought over, and keeps hold of it after the ring has been round the table. She turns it over in both her hands, where there is a burn across the base of the thumb from March and a smaller one in the web of the first two fingers, and the knuckle on the third finger is bigger than its opposite and sits slightly off, because she set that herself in a corridor at eleven at night and then went to bed.
 

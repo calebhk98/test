@@ -76,7 +76,7 @@ Her mother leans back against the banister. "You're not at school, and that libr
 
 Then there is the thing Chloe has not built at all, then the stairs, then the door.
 
-Her mother stays in the hall, then goes through to the kitchen, where her father comes in from the garage with his hands full.
+Her mother stays in the hall, then goes through to the kitchen, where her father comes in from the garage.
 
 "What was that, I could hear the two of you all the way out in the garage."
 
@@ -142,19 +142,13 @@ Somebody down the line says that's impossible.
 
 By the end of the first month everybody in the year can do it at will, forty a side, the hour a wall of noise and darts coming down all over the floor. Games run the full hour, because both sides get good at the same rate and neither ever runs out of people, and Chloe wins three in a row in October, but what she plays for is the sound two darts make when they meet and burst.
 
-The afternoon block is a different thing on each day of the week, Nerf on Mondays, wood shop on Tuesdays, team sports on Wednesdays, drawing on Thursdays and dance on Fridays, with the school picking all five, everybody doing all five, and no arguing with the sheet.
+The afternoon block is a different thing on each day of the week, Nerf on Mondays, wood shop on Tuesdays, team sports on Wednesdays, drawing on Thursdays and dance on Fridays, with the school picking all five and everybody doing all five.
 
 In wood shop you make a tool and then use that tool to make the next one, while the man who runs it will tell you what is wrong with a tool and then walk away while you work out what to do about it. Chloe makes a mallet with a handle that comes out slightly oval, and she uses it for three weeks before the oval catches her eye, after which it is there every time she picks it up, and is still using it in June.
 
-Team sports is where the teams are assigned, and she gets one with two people on it she has already decided against, so on the second Wednesday she goes and asks whether she can move.
+Team sports is where the teams are assigned, and she gets one with two people on it she has already decided against, and she plays out September and October on it.
 
-"No."
-
-"Can I ask why not, or is that also going to be no?"
-
-"Teams are for the year, and you're the third one to ask me this week." The teacher keeps writing on the clipboard. "Ask me in June and it'll be no in June."
-
-She asks again in November and gets it in four words. Drawing is Thursdays, and in the second term, while they spend six weeks on hands, Chloe draws her own left hand about forty times, in pencil, from the same angle, on the same cheap paper, and the fortieth one looks like a hand, down to the knuckle of the little finger sitting lower than it ought to, and Ruth picks it up off the table on her way past.
+Drawing is Thursdays, and in the second term, while they spend six weeks on hands, Chloe draws her own left hand about forty times, in pencil, from the same angle, on the same cheap paper, and the fortieth one looks like a hand, down to the knuckle of the little finger sitting lower than it ought to, and Ruth picks it up off the table on her way past.
 
 "That's a hand, that's an actual hand, since when do you draw like that?"
 

@@ -24,7 +24,7 @@ Chloe writes six sentences, reads them back twice, and leaves every word standin
 
 Sam has four sentences, one of them a joke, and he shrugs, then leans over far enough to count the lines on Chloe's page; two tables over, a girl called Marisol, who has three, asks whether the question can go back on the board, while Chloe sits with her six, which would have been the longest answer in Mrs. Aldana's room by half a page, and that meant the whole class listening to it read out on a Friday afternoon and then guessing, correctly, whose it was.
 
-On the Thursday every table gets the same materials: a bundle of dowels, a spool of string, one glue gun between three, and a rule about the glue gun that Mr. Doyle delivers twice, the second time slowly. The gap is eighteen inches, and whatever crosses it has to hold whatever gets hung off the middle afterward. Chloe is put with Sam and Kavi, and Ruth, assigned to the next table, comes across anyway before the glue has finished heating.
+On the Thursday every table gets the same materials: a bundle of dowels, a spool of string, one glue gun between three, and a rule about the glue gun that Mr. Doyle delivers slowly. The gap is eighteen inches, and whatever crosses it has to hold whatever gets hung off the middle afterward. Chloe is put with Sam and Kavi, and Ruth, assigned to the next table, comes across anyway before the glue has finished heating.
 
 "It's triangles, that's the whole answer, and I can show you in four seconds," Ruth says.
 
@@ -156,11 +156,11 @@ Ruth is at the end of the table with her chin on her hand, pushing the same piec
 
 "She asked the table," Ruth says, and puts her fork down instead of eating what is on it. "I was sitting at the table."
 
-Chloe's own fork stops halfway to her mouth, three questions backed up behind it: what he looked like, how long he was in there, who found him.
+Chloe's own fork stops halfway to her mouth, three questions backed up behind it: whether anybody went into the stairwell after him, whether he had to say it out loud to somebody before they would let him go, and how long it was between the saying and his mom being at the door.
 
 Owen, then the bridge, then Owen again, and the loop refuses to run further than that, so Chloe picks her roll apart, one piece at a time, lining the pieces along the edge of her tray, going back through the same two facts: the bridge was fun, and Owen must not have liked it, which sit crosswise, and neither will move over for the other. She starts from the beginning and checks them a third time, long after Ruth has gotten up and taken her tray, trying to work out how a person could stand in front of a bridge and want to be somewhere else.
 
-Four more leave before the end of the month, each the same way, so that by the fourth time Chloe reads the event off the corridor: a door standing open in the afternoon, a mattress with the sheets gone.
+Four more leave before the end of the month, each the same way, so that by the fourth time Chloe reads the event off the corridor: a door that was shut at breakfast standing open in the afternoon, a mattress with the sheets gone.
 
 \---
 
