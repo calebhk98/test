@@ -1668,7 +1668,7 @@ Somebody asks whether you can swap groups, and Ms. Vance says no in a way that h
 
 The first math sheet comes around at twenty past nine, and she squints at it before she can tell that it's adding with carrying, which she learned last year and can still picture: the little box that you write the one in, and Mrs. Aldana drawing that box in green marker, thirty of them on the page.
 
-Fractions at camp, staying up until the number finally sat still on the page, and now this, math from last year again. Having done all thirty she goes back to the top and checks each one over, and every answer matches what she wrote the first time, so she puts her hands in her lap and waits for the room to catch up around her.
+Fractions at camp, staying up until the number finally sat still on the page, and now this, math from last year again. Having done all thirty she goes back to the top and checks each one over, and every answer matches what she wrote the first time, so she puts her hands in her lap and waits for the room to catch up around her. She is relieved to find it still works like it worked in first grade.
 
 ---
 
@@ -3472,6 +3472,8 @@ In February she offers to read the 1981 paper and mark him on that, and he says 
 "Nothing would," he says. "A mark on a sheet stays exactly as true whether it's written down or not, and the work is just as real whether I hand in a page or leave it blank."
 
 The December sheet has six names doing well on it and one still blank, and because the grade at the bottom covers all seven it comes out lower than her grade in anything else that term, so she reads it twice in the corridor, folds it into quarters and pockets it rather than binning it.
+
+It is not fair, and she works out on the stairs exactly how unfair it is. Marek does the work and keeps it. The sheet has one column and the column is for paper. The number that comes out of the column goes onto her record as well as his, and she has been asking him for it since October, and asking him is the whole of what she is allowed to do about it.
 
 Marek fails the course, because a blank sheet leaves the mark scheme exactly one option, and Chloe is the one who writes it in. He is at breakfast in January as he was in December, in the same year, working through the same building, so whatever a fail costs a student here, expulsion is no part of it. What it does cost, whether it follows him onto anything that matters, whether anybody sat him down about it, stays outside her reach for years, and she is careful for a long time about how she asks.
 

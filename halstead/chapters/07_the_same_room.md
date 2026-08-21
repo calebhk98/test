@@ -110,7 +110,7 @@ Somebody asks whether you can swap groups, and Ms. Vance says no in a way that h
 
 The first math sheet comes around at twenty past nine, and she squints at it before she can tell that it's adding with carrying, which she learned last year and can still picture: the little box that you write the one in, and Mrs. Aldana drawing that box in green marker, thirty of them on the page.
 
-Fractions at camp, staying up until the number finally sat still on the page, and now this, math from last year again. Having done all thirty she goes back to the top and checks each one over, and every answer matches what she wrote the first time, so she puts her hands in her lap and waits for the room to catch up around her.
+Fractions at camp, staying up until the number finally sat still on the page, and now this, math from last year again. Having done all thirty she goes back to the top and checks each one over, and every answer matches what she wrote the first time, so she puts her hands in her lap and waits for the room to catch up around her. She is relieved to find it still works like it worked in first grade.
 
 ---
 
