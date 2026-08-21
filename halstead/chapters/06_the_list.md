@@ -68,11 +68,15 @@ Then she starts on Spanish, rattling it off before she remembers he can't follow
 
 "And there was a puzzle, twenty sentences in a language none of us had ever heard of, and no dictionary, and you had to work out how the entire grammar went from the sentences themselves." By about the sixth sentence she had worked out that the words come in a different order than English does. "Ruth got the plurals before I did, and Kavi got the pattern in the endings, which is still half out of my reach even though he has explained it four separate times, and he'd explain it to you now if he were sitting here instead of me."
 
-Then the wood shop, and the safety goggles sized for somebody bigger. Then the eggs she learned to cook, and the dish on the Thursday that the whole table ate, which had onions in it that she cut herself, and then the paintings they were taken to look at, one of which cost more than a house, which baffles her, because it is a painting.
+Then the wood shop, and the safety goggles sized for somebody bigger. Then what you do about a bleed, which is pressure first and the dressing second, and the glue they use on a cut too small to need stitches. Then the eggs she learned to cook, and the dish on the Thursday that the whole table ate, which had onions in it that she cut herself, and then the paintings they were taken to look at, one of which cost more than a house, which baffles her, because it is a painting.
 
 "Then there's the computers, and that's actually two entirely different things," she says, counting them off on her fingers, "the first being that you type the words in yourself instead of dragging coloured blocks around like it's a game, and I made it count to a hundred and skip every seven on the way past. The second one is a room they took us into that's enormous and kept freezing cold on purpose, because the machines throw off so much heat the heat would cook them, and a woman who works in there took us through the whole arrangement, down to the water pipes under the floor."
 
+Then the robot arm on the second floor, which picks a block up and puts it down again for as long as you stand there watching it.
+
 Then chess, which Sam is also better at.
+
+Then negative numbers, which go the other way past zero and keep going as far as you want them to.
 
 Then karate, which is mostly learning how to fall over safely.
 

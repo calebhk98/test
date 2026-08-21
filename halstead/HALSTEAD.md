@@ -1365,11 +1365,15 @@ Then she starts on Spanish, rattling it off before she remembers he can't follow
 
 "And there was a puzzle, twenty sentences in a language none of us had ever heard of, and no dictionary, and you had to work out how the entire grammar went from the sentences themselves." By about the sixth sentence she had worked out that the words come in a different order than English does. "Ruth got the plurals before I did, and Kavi got the pattern in the endings, which is still half out of my reach even though he has explained it four separate times, and he'd explain it to you now if he were sitting here instead of me."
 
-Then the wood shop, and the safety goggles sized for somebody bigger. Then the eggs she learned to cook, and the dish on the Thursday that the whole table ate, which had onions in it that she cut herself, and then the paintings they were taken to look at, one of which cost more than a house, which baffles her, because it is a painting.
+Then the wood shop, and the safety goggles sized for somebody bigger. Then what you do about a bleed, which is pressure first and the dressing second, and the glue they use on a cut too small to need stitches. Then the eggs she learned to cook, and the dish on the Thursday that the whole table ate, which had onions in it that she cut herself, and then the paintings they were taken to look at, one of which cost more than a house, which baffles her, because it is a painting.
 
 "Then there's the computers, and that's actually two entirely different things," she says, counting them off on her fingers, "the first being that you type the words in yourself instead of dragging coloured blocks around like it's a game, and I made it count to a hundred and skip every seven on the way past. The second one is a room they took us into that's enormous and kept freezing cold on purpose, because the machines throw off so much heat the heat would cook them, and a woman who works in there took us through the whole arrangement, down to the water pipes under the floor."
 
+Then the robot arm on the second floor, which picks a block up and puts it down again for as long as you stand there watching it.
+
 Then chess, which Sam is also better at.
+
+Then negative numbers, which go the other way past zero and keep going as far as you want them to.
 
 Then karate, which is mostly learning how to fall over safely.
 
@@ -3157,7 +3161,7 @@ On the stairs Priya wants to know whether the first round still counts. "We ate 
 
 "We ate it in silence, though, so somebody still has a number," Ruth says, going up two at a time. "Kavi's got the key in his pocket."
 
-He unfolds the scrap under the landing light and reads out five right of eight, which Sam works through on his fingers and announces as sixty-something percent and better than guessing.
+He unfolds the scrap under the landing light and reads out five right of eight, and Sam has it at sixty-two and a half before the paper is flat, and says that beats guessing.
 
 "Five out of eight is what a coin does," Ruth says, still climbing. "Come back to me when it's eight."
 
@@ -5541,7 +5545,7 @@ He shoots ten targets.
 A captain he has not met before walks over afterward, looks at the sheet, and says, "That's the best score I've seen this cycle, and I've read every sheet on this range since March. What's your accuracy?"
 
 
-"About forty," Sam says. The captain looks at the sheet again. It still says ten out of ten.
+"About forty," Sam says. The captain looks at the sheet again.
 
 
 "That's not great," the captain says. "Eighty's the standard I've got this whole platoon training toward, and forty puts you well under it, whatever the number on this sheet says you did out here today."
@@ -5621,7 +5625,7 @@ ________________
 
 The second is the following night, in a culvert running under a service road, and this is the one that changes what he's doing with the rest of the exercise. The pipe is wide enough to walk through bent at the waist. Concrete's gone slick along the bottom where water's been standing in it for years, and it carries sound strangely, his own boots louder in his ears than they'd be in the open. He's committed to the culvert before he's read it properly, ducked in under the concrete lip because the ground on either side is open and he wants to be out of sight of it for the thirty feet it takes to cross. By the time he understands there are four men in there with him, the far end is already blocked, and so is the one behind him.
 
-It takes about eleven seconds, which he only knows because someone times it and tells him afterward. He gets the first one moving before the man's weight is fully off the wall. He drives an elbow into the second, coming from his blind side. He takes a knee across the back of one leg to get to the third, low, ground where a fist swung at him would land on one of his own men instead. The fourth gets a thumb, deliberately or not he genuinely can't say afterward, bent back hard enough that Sam feels it go before he feels the pain of it, a white click somewhere behind his own eyes that arrives about half a second late. He's already moving when it happens; the thumb is a cost he pays on the way past, not a thing he stops for. He clears the far end of the culvert on his feet, checks that everyone behind him is still breathing the way he checked the two at the fence, and keeps going on the bearing, right hand curled loosely against his chest, because holding it open is worse.
+It takes a handful of seconds, and he only finds out how few when somebody who timed it tells him afterward. He gets the first one moving before the man's weight is fully off the wall. He drives an elbow into the second, coming from his blind side. He takes a knee across the back of one leg to get to the third, low, ground where a fist swung at him would land on one of his own men instead. The fourth gets a thumb, deliberately or not he genuinely can't say afterward, bent back hard enough that Sam feels it go before he feels the pain of it, a white click somewhere behind his own eyes that arrives about half a second late. He's already moving when it happens; the thumb is a cost he pays on the way past, not a thing he stops for. He clears the far end of the culvert on his feet, checks that everyone behind him is still breathing the way he checked the two at the fence, and keeps going on the bearing, right hand curled loosely against his chest, because holding it open is worse.
 
 The thumb swells to twice its size by the following evening and stays that way for a week. It's the eleven seconds that stay with him longer than the thumb does. He'd had the whole thirty feet of open ground to read before he committed to the culvert, and he went straight in anyway. That's the part he keeps going back to on the walk that night, turning it over the way he'd turn over a bad weld. Not what happened once he was inside; he can't fault that. The fifteen seconds before it, where he decided the culvert was worth the risk of not knowing what was in it.
 
@@ -5635,7 +5639,7 @@ ________________
 
 The fourth night is the one that goes in the report. Sam crosses a stretch of ground with the footing gone soft and uneven underfoot, an old drainage cut long since gone to rut and weed, at twenty minutes to four in the morning. He moves slower than he has all exercise, the ground holding him to it, one boot testing the next patch before he commits his weight to it.
 
-What he has yet to learn, and what only becomes clear at the debrief the next afternoon, is that a man has been in position off his line of travel since a little after nine the previous evening. Six hours in one spot, through the whole drop in temperature that comes after midnight, waiting for Sam to come past a stretch of ground that the man worked out, correctly, was the only sane way through it. The man has the position, the timing, and the ground, with the dark behind Sam rather than in front of him. The entire encounter, start to finish, takes under two seconds.
+What he has yet to learn, and what only becomes clear at the debrief the next afternoon, is that a man has been in position off his line of travel since a little after nine the previous evening. Six hours in one spot, waiting for Sam to come past a stretch of ground that the man worked out, correctly, was the only sane way through it. The man has the position, the timing, and the ground, with the dark behind Sam rather than in front of him. The entire encounter, start to finish, takes under two seconds.
 
 Sam doesn't remember deciding anything about it. There's a shift of weight behind him, too sudden and too heavy to be the ground settling. Then there's a man's weight going where Sam wants it to go, off balance and down into the wet cut, arriving before Sam has finished registering that there's a man there at all. He checks him, hand on the sternum same as the other five, before his own pulse has caught up with what just happened. He stands there a moment longer than the check requires, looking down at the last thirty feet of ground behind him, ground he'd spent minutes reading his way across without once catching the man waiting on it. Then he keeps going on the bearing, because that's still the job.
 
@@ -6356,7 +6360,7 @@ Whether to tell him if he insists, or hold the line the way she's holding it for
 
 He writes that down too.
 
-He closes the notebook around noon, tells her he'll be back once he's run down what he can on his end, and shakes her hand at the door the same plain way he shook it two hours earlier.
+He closes the notebook around noon, tells her he'll be back once he's run down what he can on his end, and shakes her hand at the door the same plain way he shook it four hours earlier.
 
 
 ________________

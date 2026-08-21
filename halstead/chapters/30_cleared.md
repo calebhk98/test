@@ -92,7 +92,7 @@ Whether to tell him if he insists, or hold the line the way she's holding it for
 
 He writes that down too.
 
-He closes the notebook around noon, tells her he'll be back once he's run down what he can on his end, and shakes her hand at the door the same plain way he shook it two hours earlier.
+He closes the notebook around noon, tells her he'll be back once he's run down what he can on his end, and shakes her hand at the door the same plain way he shook it four hours earlier.
 
 
 ________________
