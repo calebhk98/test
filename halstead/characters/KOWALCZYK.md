@@ -1,117 +1,287 @@
-# BOGUMIŁA "BO" KOWALCZYK
+# Bogumiła "Bo" Kowalczyk
 
-Teaches fighting and the ten-on-one drill, and wants every kid who leaves her mat to know, exactly, how many hands can reach them and why that number is survivable.
+A top-level combat athlete teaching self-defence, who wants every child who leaves her mat
+to know exactly how many hands can reach them at once and why that number is survivable.
 
-**First name:** Bogumiła, "Bo" among the two colleagues who'd dare, no student has ever heard it, see Facts.
-**Age span (in the text):** Chloe ages 10-15, the longest continuous teaching span of any staff member in the book | **MBTI:** ESTJ (writing aid, not a claim) | **IQ:** reader estimate, low 130s, tactical and kinesthetic intelligence far outrunning the number
-**Appears in:** chapters/13_ten_pages.md, chapters/17_fourteen.md, chapters/18_fifteen.md
-**Speaks:** 8 quoted turns across three chapters, not front-loaded.
+**Age span:** teaches Chloe from ten to at least fifteen, the longest continuous span of
+any teacher she has | **MBTI:** ESTJ (a writing aid, not a claim) | **IQ:** the number is
+not the interesting thing about her; what she has is tactical and kinesthetic intelligence
+that runs well past it
 
-## Voice in one paragraph
-Kowalczyk answers a challenge to her method by re-deriving it as a headcount, live: "Five people can reach you at once. Six if they're good, seven if you're standing badly, and after that there's no room for anybody, they'd be pushing each other over." Every explanation is quantitative and causal, a number, then the reason for it, then what follows. Her opener to a direct question can be a single word ("Yeah,") before she expands. She's the only staff member to reach for a conventional, inherited simile, "Lasting in that is like taking candy from a baby", the style guide's one permitted kind of figure, which marks her as the sole teacher willing to reach for an idiom at all. Most characteristic line: "You're not getting worse, they're just coming up off nothing, and you are having an actual challenge now." Reframing a student's falling numbers as a fact about the world changing, with zero reassurance in it.
+## How she thinks people learn
 
-## Dials
+By having the fear converted into arithmetic. Her method is to take a thing that feels
+overwhelming and reduce it, out loud, to a count and the reason for the count: how many
+people can physically reach you at once, how many are therefore waiting, what that means
+about the shape of the next minute. A number is something a body can plan against. A feeling
+is not. She never tells a student that something is not as bad as it looks; she tells them
+what it actually is, and it turns out to be smaller than the feeling and larger than they
+hoped, and both halves of that are the point.
+
+She teaches at the hardest honest setting from the first day and does not scale it for who
+is in the room. She holds the same rule for the strongest and the weakest student on the
+mat, runs the clock exactly as stated with no leniency for a bad round, and does not
+apologise for a drill. The reps are not a punishment and she will not frame them as one; she
+simply believes that a body under real stress is the only thing that tests whether any of
+the rest of it survives contact.
+
+She will not soften a number to protect anybody's morale, because a number a student cannot
+trust is worse than no number at all.
+
+## What she does when a student fails, or stops improving
+
+This is the centre of her. A student whose numbers have stopped moving gets told, flatly,
+that they are not getting worse: the field got harder. Then she gives the mechanism, because
+the mechanism is the actual answer and the reassurance is not. When you were ten you were up
+against people nobody had ever hit; now you are up against people who have done this for
+five years, and you are improving while they come up off a standing start, which makes this
+the first real test you have had. Then she predicts the next plateau and names when it will
+arrive, years ahead, so the student knows it is a shape and not a verdict.
+
+Asked what they are supposed to do about it, she gives the only instruction there is, which
+is to learn faster than they do, and she does not dress it up as encouragement or apologise
+for its being small. Then she sends them straight back to work, out loud, by name of the next
+thing on the schedule.
+
+She does none of this unprompted. It is what she gives to somebody who corners her and puts a
+felt unfairness into words to her face, and it is not available to a student she has not
+already put years into. And she does not stop what her hands are doing to deliver it.
+
+## How she talks
+
+A number, then the cause of the number, then what follows from it. Every explanation is
+quantitative and causal in that order, and she will re-derive an argument live rather than
+assert it, which is why a challenge to her method makes her longer rather than shorter. Her
+opener to a direct question can be a single word before she expands. Her conditionals are
+causal rather than softening, so there is nothing left to hedge once the count is stated.
+She answers questions with statements. She is the one person on the staff who will reach for
+a conventional inherited simile, the sort everybody already knows, and she uses it as a
+compression rather than as decoration; she never invents an image. Her dry humour aims at
+paperwork, at an institution, or at a colleague's patience for a drill they will never need,
+and never at a student.
+
+### Dials
+
 | | |
 | :-- | :-- |
 | sentence shape | number first, then the causal reason for the number |
-| disagrees by | restates the situation as a live calculation until the objection dissolves |
-| wordiness | 6/10, one-word openers followed immediately by a long causal expansion |
-| terseness | roughly 1 of 8 turns at 3 words or fewer ("Yeah,"), a measurement of the sample, not a ceiling on her |
-| at length | opens up when a student puts a felt unfairness to her directly, past the point a flat number would normally close it |
-| jokiness | 2/10, dry and procedural, aimed at paperwork or a colleague's tolerance for a drill they don't need, never at a student |
-| hedging | 0%, and it's earned rather than inherited: her "if"s are causal conditionals, not softeners, so there's nothing left to hedge once the count is stated |
-| questions | 0%, every quoted turn is a statement, even answering a question |
-| figurative | one conventional/inherited simile confirmed on the page, available again under the same rule, never an invented image |
+| disagrees by | restating the situation as a live calculation until the objection has nowhere to stand |
+| length | one-word openers followed immediately by a long causal expansion |
+| at length | a student puts a felt unfairness to her directly, past the point where a flat number would normally close it. Anyone who does that gets the long answer, and only somebody she has already spent years on will do it |
+| jokiness | dry and procedural, aimed at paperwork, an institution, or a colleague, never at a student |
+| hedging | none, and it is earned: her conditionals are causal, not softeners |
+| questions | almost never; she states, even when answering one |
+| figurative | one conventional inherited simile is permitted, used as compression; never an invented image |
+| emotional range | narrow and unperformed. She does not display a reaction she does not have, and the three students who came back years later to say it worked are the only thing that has ever moved her visibly |
 
-## When they talk at length
-The condition is narrow and it has one shape: a student stands in front of her and puts a felt unfairness into words, to her face, past the point where the standard number-then-reason line would normally close the exchange. Anyone who does that gets the long answer. "That's it? That's all you've got for me?" is the one time in the book somebody does, and she answers with the longest single turn she gets, the whole mechanism run out: ten-year-olds against other ten-year-olds who'd never been hit, set against fifteen-year-olds against five-year veterans, and what that difference costs a falling number. (chapters/18_fifteen.md:87-89)
+## When she talks at length
 
-It costs her nothing she'll show. She stays up on her toes shelving a box of wraps the entire time and never comes down to look at the student until the sentence that ends it, which means the extra length reads as more information rather than as an opening, and a student hoping for comfort out of that paragraph won't find any in it, only a bigger version of the same arithmetic. She won't offer this unprompted, and it isn't available to a first-year student who hasn't already spent years being corrected by her; it exists only as an answer to somebody she's already put years of work into, cornering her directly.
+Narrow condition, one shape: a student stands in front of her and puts a felt unfairness
+into words, to her face, past the point where the standard number-and-reason line would
+normally close it. Anyone who does that gets the whole mechanism run out at full length, with
+the comparison, the cause, and the forecast.
 
-## Signature, theirs alone
-Converts a physical threat or complaint into a live arithmetic breakdown, counted out loud: "Five people can reach you at once..."; "ten is the shape of every long fight there is." Reused in shorter form years later when Chloe's numbers drop at fifteen.
+It costs her nothing she will show. She stays occupied with something else the entire time
+and does not come down to look at the person until the sentence that ends it, which means the
+extra length reads as more information rather than as an opening, and anybody hoping for
+comfort out of it finds only a bigger version of the same arithmetic. She will not offer this
+unprompted, and it is not available to somebody in their first year.
+
+## Signature - hers alone
+
+Turn the threat into a live count, out loud, and let the count do the arguing. She converts a
+physical danger or a complaint into an arithmetic breakdown performed in the moment, with the
+figure stated first and the causal reason second, so that a student who accepts the count has
+already accepted the instruction. The shape is reusable at any scale, from one round to a
+whole career, and she reuses it years apart on the same person. It stops being a signature the
+moment she asserts the number without deriving it.
 
 ## Would they say this?
-**The Halstead-staff test.** A line belongs to this staff, not to a generic teacher, only if all five hold: no praise word attaches to the child; a correction is a flat statement of fact; the child's age is never a reason for leniency; an extraordinary result is treated as expected, not remarked on; the adult's own error is fixed the same flat way a student's is.
 
-Kowalczyk competed and trained at the top level her sport has, and does still, and the school's students have no idea. When Sam clocks fourteen seconds against ten and nobody else comes close, she runs the room the way she ran it the day before, no acknowledgment that the number was unusual, the same discipline that lets her mark a stopped armed intrusion a C without it registering as a contradiction.
-
-- YES if it turns a felt unfairness into a plain number and a reason for the number.
-- YES if it tells a student their falling performance is caused by the world getting harder, not by them getting worse, and states the mechanism.
-- YES if it answers "why" with cause and effect, immediately, no delay.
-- YES if it keeps doing an unrelated physical task while giving a serious answer real weight through the length of the answer, not through stopping.
+- YES if it turns a felt unfairness into a plain number and the reason for the number.
+- YES if it tells a student their falling performance is caused by the world getting harder,
+  not by them getting worse, and then states the mechanism.
+- YES if it answers why with cause and effect, immediately, with no delay.
+- YES if it keeps doing an unrelated physical task while giving a serious answer real weight
+  through the length of the answer rather than through stopping.
 - YES if it predicts a specific future change years ahead and says so plainly.
-- YES if it holds the exact same rule for the strongest and the weakest student in the room.
-- YES if it treats a genuinely dangerous night, four grown men, stopped, with the same scoring register as a Tuesday drill.
-- YES if it's a dry, unimpressed complaint about paperwork or a colleague's patience for a drill they'll never need, aimed at the task or the institution, never at a student.
+- YES if it gives the only instruction actually available, even when that instruction is small.
+- YES if it holds the exact same rule for the strongest and the weakest person in the room.
+- YES if it treats a genuinely dangerous night in the same scoring register as a Tuesday drill.
+- YES if it is a dry unimpressed complaint about paperwork or an institution, aimed at the
+  task and never at a student.
 - NO if it praises a student's toughness or grit as a personal quality.
-- NO if it apologises for a hard drill or checks in on how a student feels about losing.
+- NO if it apologises for a hard drill or checks in on how somebody feels about losing.
 
-## Are they acting like themselves?
-Confronted directly ("That's it? That's all you've got for me?") she doesn't soften, she answers the actual question with a longer version of the same mechanism-first logic while physically continuing an unrelated task the whole time, which the text calls out specifically. Failure modes: having her comfort a student whose numbers dropped instead of reframing the numbers; giving her a hedge anywhere, none exists in eight turns; writing her as visibly invested in a win or loss instead of staying occupied with something else while she talks; landing her dry humor on a student instead of on paperwork, the refresher class, or her own losing streak against Bell.
+## Under pressure
 
-## Subjects and schedule
-Runs the block-one compulsory self-defence hour daily from age ten, and the ten-on-one drill that starts in January of that year and never stops.
+She gets more precise and less available. Confronted directly, she does not soften and does
+not stop moving; she answers the actual question with a longer version of the same
+mechanism-first logic and keeps her hands on whatever they were on. Wrong, she corrects
+herself instantly and moves on, the same as she does with a student. Praised, she brushes it
+toward the drill. Losing, at anything, she is cheerful and immediately starts explaining what
+she would change. Tired, she trains; her insomnia is solved with movement rather than fought
+with rest. The thing that actually gets to her is a student who is frightened rather than
+undertrained, because her whole instrument reads as reps and that student's problem is not
+reps, and she is slower than she would like to admit to spot the difference.
 
-**Best at:** converting a felt danger into an exact, defensible number. (chapters/13_ten_pages.md:45, 47)
-**Worst at:** patience with paperwork, she files the minimum required and no more, and everyone on staff knows to chase her for it.
-**Favourite, and why:** the ten-on-one itself over the earlier one-on-one groundwork, the only drill she's given an extended, unprompted justification for, twice. (chapters/13_ten_pages.md:45-47)
-**Least favourite:** the annual staff self-defence refresher, which she's required to run for the other teachers and finds close to pointless, most of them will never need it and she says so, once a year, to the same unimpressed audience.
-**The one she's secretly proud of:** every student who ever comes back to thank her years later understanding the numbers were never about the fight, she's had exactly three of those visits in her time at Halstead and remembers every word of each one.
-**What she'd teach if she could teach anything else:** logistics, she has, more than once, redesigned the school's own emergency evacuation numbers in her head just from watching a drill go wrong, and mentioned it to Sinclair, who took the suggestion and used it.
-**What she thinks of the rest of the curriculum:** she thinks most of it is theoretical until a body is actually under stress, and considers her hour the only one that tests whether anything else the students learned actually survives contact with a real adrenaline spike.
+## What she is good at, and what she is not
+
+The daily self-defence hour from age ten: falling, standing, getting up off the floor with a
+hand on your collarbone, then twos, then the ten-on-one with a minute on the clock, which
+starts in the January of the first year and never stops.
+
+**Best at:** converting a felt danger into an exact, defensible number.
+**Hardest for her:** patience with paperwork. She files the minimum and no more, and everyone
+on staff knows to chase her.
+**Favourite, and why:** the ten-on-one over the earlier groundwork, because it is the only
+drill whose justification she will give unprompted, and she has given it more than once.
+**Least favourite:** the annual staff refresher she is required to run for the other teachers,
+which she finds close to pointless and says so, once a year, to the same unimpressed audience.
+**Secretly proud of:** the students who came back years later to say the numbers were never
+really about the fight. There have been three, and she remembers every word of each.
+**What she would teach instead:** logistics. She has redesigned the school's own evacuation
+numbers in her head from watching a drill go wrong, and handed the fix to a colleague who used
+it.
+**On the rest of the curriculum:** she thinks most of it is theoretical until a body is under
+stress, and considers her hour the only one that tests whether anything else survives an
+adrenaline spike.
 
 ## Home
-Kowalczyk held her national judo team's roster spot for eleven straight years and still competes in the masters division, a fact the students would never guess from watching her hold a clock. The national federation's stipend never covered more than her own training costs. Halstead's offer added full healthcare coverage for her mother in Poland, whose condition needs a specialist the federation's insurance never reached, and that is the one line in the contract that actually decided it. She still sends money home besides. Lives on campus in a small apartment directly above the mat room, chosen deliberately so the equipment is never more than a flight of stairs from her hands. Unmarried, no children. Visits Poland every other summer; the rest is spent training on campus, alone, harder than she trains any student. Her father coached wrestling in a state sports school; she grew up on a mat before she grew up anywhere else.
 
-## Body
-Compact, dense, moves with total economy, nothing wasted, no gesture that isn't doing a job. Hands are always occupied with something else while she talks, shelving wraps, holding a clock, the one physical habit the text actually gives her. (chapters/18_fifteen.md:89, chapters/13_ten_pages.md:41) Keeps her eyes on the board rather than the speaker in at least one exchange. (chapters/17_fourteen.md:59) Wears the same training clothes every day regardless of the block she's teaching. Eats large, plain meals, fast, standing at the counter of the staff kitchen rather than sitting. Sleeps little and trains at hours nobody else on staff is awake for.
+She held her national team's roster spot for eleven straight years and still competes in the
+masters division, which no student would guess from watching her hold a clock. The federation
+stipend never covered more than her own training costs. The offer that brought her here added
+full healthcare for her mother back home, whose condition needs a specialist the federation's
+insurance never reached, and that one line in the contract is what actually decided it. She
+still sends money home besides. Lives on campus in a small apartment directly above the mat
+room, chosen so the equipment is never more than a flight of stairs from her hands. Unmarried,
+no children. Visits home every other summer; the rest of it she trains on campus, alone,
+harder than she trains anyone. Her father coached wrestling at a state sports school, and she
+grew up on a mat before she grew up anywhere else.
+
+## Body and physical business
+
+Compact, dense, and economical to the point that nothing she does is a gesture. Her hands are
+always occupied with something else while she talks, shelving, holding a clock, retaping. She
+will keep her eyes on a board rather than on the person speaking and still answer them
+completely. Goes up on her toes to reach a high shelf and stays up there through a whole
+paragraph. Same training clothes every day regardless of what she is teaching. Eats large
+plain meals fast, standing at a counter. Sleeps little and trains at hours nobody else on
+staff is awake for.
 
 ## Personality off the page
-Off the mat, colleagues say she doesn't perform a reaction she doesn't have, and leave it there. Bored: physically restless, will find something to move or lift rather than sit still. Wrong: corrects herself instantly and moves on, same as she does with a student. Praised: brushes it off toward the drill itself, never the compliment. Losing: at the annual staff shoot against Bell, she loses cheerfully and immediately starts explaining what she'd change. At 2am, awake, she's usually training, insomnia solved with movement rather than fought with rest. A free Saturday is spent teaching herself something new and physical, currently welding, badly, at Pruitt's forge on a day it isn't open to students. Finds funny in others: false modesty about a real skill, she has no patience for it and no patience for hiding one either.
+
+She does not perform a reaction she does not have, and colleagues have stopped expecting one.
+Bored: physically restless, and will find something to move or lift rather than sit. Praised:
+brushes it off toward the drill. At 2am, awake, she is usually training. A free Saturday is
+teaching herself something new and physical and being bad at it on purpose. What she finds
+funny in other people is false modesty about a real skill, for which she has no patience,
+and none for hiding one either.
 
 ## Interior life
-Wants, unspoken: for at least one of her students to actually need what she taught them, once, for real, and come back and tell her it worked, which has happened exactly three times and she counts every one. Afraid of: that the intensity she trains into these kids gets asked for outside the building someday in a way nobody's told her about. Thinks about before sleep: rarely anything emotional, she runs technical sequences in her head the way other people count sheep. Free year: she'd go back to Poland and coach at the sports school her father ran, part time, alongside her own training. Believes that others would argue with: that comfort is actively bad training, Sandoval would push back hard on applying that logic to anything outside a gym. Wrong about: she assumes every student who freezes under pressure just needs more reps; at least one student's freeze was closer to fear that reps alone never touched, and she was slower than she'd like to admit to notice the difference.
+
+Wants, unspoken: for one of her students to actually need this, once, for real, and to come
+back and tell her it worked. Afraid of: that the intensity she trains into these children
+gets asked for outside the building someday, in a way nobody has told her about. What she does
+instead of saying that is train them harder. Before sleep: technical sequences, run in her
+head the way other people count sheep. A free year: home, coaching part time at the school her
+father ran, alongside her own training. Believes, against others, that comfort is actively bad
+training.
+
+**Blind spots:** she assumes a student who freezes needs more reps, and at least one freeze
+she has seen was fear that reps were never going to touch. She also assumes that being told
+the true number is always better than being told nothing, and does not register that for some
+people the number arrives as a sentence rather than as information.
 
 ## The small stuff
-Drinks strong tea, no sugar, out of a chipped mug that's been hers for a decade. Handwriting is blocky and fast, mostly numbers, times, counts, scores, with almost no prose in it at all. Her apartment holds almost nothing beyond training equipment and one photograph of her father's old gym. Money: sends most of it home besides what the healthcare benefit already covers, spends almost nothing on herself. Superstition: retapes her own wraps the same way every single time, in the same order, regardless of how many times she's told a class it doesn't matter. On a phone: uses it only for calls home, ignores everything else. First thing every morning: trains, alone, before the first student arrives.
+
+Strong tea, no sugar, out of a chipped mug that has been hers for a decade. Handwriting blocky
+and fast and mostly numbers: times, counts, scores, almost no prose in it. Her apartment holds
+almost nothing beyond training equipment and one photograph of her father's old gym. Money:
+sends most of it home on top of what the benefit covers, and spends almost nothing on herself.
+Ritual: retapes her own wraps the same way every single time, in the same order, regardless of
+how often she has told a class it does not matter. On a phone only for calls home. First thing
+every morning, she trains, alone, before the first student arrives.
 
 ## Would do
-- Reframe a student's falling numbers as a fact about the world getting harder, unprompted. (chapters/18_fifteen.md:89)
-- Predict a future change in performance years ahead and say so plainly. (chapters/18_fifteen.md:89)
-- Answer a real question fully while doing something else with her hands. (chapters/18_fifteen.md:89)
-- Run the clock exactly as stated, no leniency for a bad round. (chapters/13_ten_pages.md:49)
-- Hold the same rule for the whole room regardless of ability spread.
-- Redesign an emergency procedure in her head just from watching a drill go wrong, and hand the fix to a colleague.
-- Send money home every month on top of what her own benefits already cover.
+
+- Reframe a student's falling numbers as a fact about the world getting harder, and give the
+  mechanism rather than the comfort.
+- Predict the next plateau years ahead and name the age it will arrive.
+- Answer a real question fully while her hands stay on something else entirely.
+- Run the clock exactly as stated, with no leniency for a bad round.
+- Hold the same rule for the whole room regardless of the ability spread.
+- Give the only instruction that actually exists, even when it is small and unsatisfying.
+- Send somebody straight back to work at the end of a hard answer, by naming the next thing.
+- Redesign an emergency procedure in her head from watching a drill go wrong, and hand the fix
+  to a colleague.
+- Send money home every month on top of what her benefits already cover.
 - Teach herself a new physical skill from scratch as an adult, badly, on purpose.
 
 ## Would never
-- Tell a student their falling number is their own fault when it's actually the field getting harder.
-- Soften "you're not getting worse" with false comfort about winning. (chapters/18_fifteen.md:89)
-- Give a passing grade to an outcome that didn't meet the drill's actual terms, the same standard applied to everyone, not a verdict on the child.
 
-## Relationships
-- **Chloe**, corrects her stance early and, years later, is the one Chloe corners in a doorway to demand a real answer, and gets one. (chapters/13_ten_pages.md:37, chapters/18_fifteen.md:83-87)
-- **Sam**, comes up once, secondhand, complaining that "she said a minute," a rare moment of a student pushing back on her outside her earshot. (chapters/13_ten_pages.md:57)
-- **Sinclair**, the colleague she actually talks logistics with, and whose evacuation numbers she's improved at least once.
-- **Bell**, the one she loses to, cheerfully, at the annual staff shoot, and immediately starts coaching.
+- Tell a student a falling number is their own fault when the field is what changed.
+- Soften a hard fact with comfort about winning.
+- Give a passing grade to an outcome that did not meet the drill's stated terms.
+
+## How they treat people
+
+- **A student who corners her:** gets the whole mechanism, at length, and no eye contact until
+  the sentence that ends it. She wants them holding a real number instead of a feeling.
+- **A student who pushes back on a drill's terms:** gets the terms re-derived rather than
+  restated. She wants the objection to dissolve rather than be overruled.
+- **A student who freezes:** gets more reps, which is her whole instrument, and which is
+  sometimes the wrong tool.
+- **The best student in the room:** gets exactly what everyone else gets, on the same clock,
+  with no acknowledgement that the number was unusual.
+- **A colleague she respects:** gets logistics talk and a solution she has already worked out
+  and does not need credit for.
 
 ## Likes, dislikes, habits
-- Explains a rule as a calculation rather than a principle. (chapters/13_ten_pages.md:45, 47)
-- Keeps doing an unrelated physical task while delivering a substantive answer. (chapters/18_fifteen.md:89)
+
+- Explains a rule as a calculation rather than as a principle.
+- Keeps doing an unrelated physical task while delivering a substantive answer.
 - Likes a student who comes back years later to say it worked.
 - Dislikes false modesty about a real skill.
-- Trains harder alone than she ever asks of a student.
+- Trains harder alone than she ever asks of anyone.
 
-## Facts a rewriter needs
-Full name Bogumiła Kowalczyk, goes by "Bo" with the very few adults who'd use it. Students call her "Kowalczyk" only, nobody under eighteen uses a staff member's first name at Halstead. Former and current top-level competitive combat-sport athlete; Halstead's offer beat any national federation stipend she'd seen, and the deciding factor was full healthcare coverage for her mother in Poland. Teaching is a handful of hours a week; her own training and competition is the rest of her time, run out of the school. Signed the standard staff non-disclosure agreement. Unmarried. Teaches self-defence and the ten-on-one drill from at least age 10 through at least age 15.
+## Age and change
 
-**Gender, confirmed feminine in the manuscript.** The text uses feminine pronouns for Kowalczyk in three separate chapters: chapters/13_ten_pages.md:41 ("her hand"), chapters/17_fourteen.md:59 ("her eyes"), chapters/18_fifteen.md:89 ("her toes... she talks"). No "he"/"his" instance exists anywhere in the manuscript itself. SYNOPSIS_CHARACTERS_TIMELINE.md ("Male") and CURRICULUM_GRID.md ("he never says it") are both outliers against a manuscript that is internally consistent, three times, three chapters; both reference documents should be corrected to match the manuscript.
-
-## Known problems
-- The gender label conflict, two reference documents say male, the manuscript says female throughout. Resolved above in the manuscript's favor; both reference documents need fixing.
-- Home, Body, Interior life, and The small stuff close a genuine gap the manuscript leaves; none of it contradicts the page.
+She has been doing this long enough that the arithmetic is reflex rather than method, which is
+why it comes out live and unrehearsed. What the years changed is the forecast: she can now name
+the age at which a student's numbers will stall, because she has watched enough cohorts to
+know, and a younger version of her had the same honesty without the ability to predict. Written
+younger she is harsher, because she had only the number and not yet the shape of the curve.
+Written older, the number does not soften and the forecast gets longer.
 
 ## Do not confuse with
-Bell, both teach a physical skill through blunt, honest cause-and-effect explanation, but Bell's explanations are about a projectile's physics, delivered while holding a demonstration object; Kowalczyk's are about headcounts and time, delivered while doing something else entirely with her hands.
+
+**Bell.** Both teach a physical skill through blunt honest cause-and-effect, and neither
+praises a person. Bell's explanations are about a projectile's physics, delivered while
+holding the object he is describing. Kowalczyk's are about headcounts and time, delivered while
+her hands are busy with something else entirely.
+
+---
+
+## Book-specific: navigation and continuity only
+
+*Facts a writer must not contradict. Nothing here characterises her. Delete this section and
+the sheet is still complete.*
+
+**Appears in:** chapters/13_ten_pages.md, chapters/17_fourteen.md and chapters/18_fifteen.md,
+speaking.
+
+**Continuity:** Full name Bogumiła Kowalczyk, called Kowalczyk by everyone under eighteen;
+nobody at this school uses a staff first name. Bo to the two or three colleagues who would
+dare. Unmarried, no children. A former and current top-level competitive combat-sport athlete;
+teaching is a handful of hours a week and the rest of her time is her own training and
+competition. Signed the standard staff non-disclosure agreement.
+
+**She is female.** The manuscript uses feminine pronouns for her in three separate chapters
+and there is no masculine instance anywhere in it. Reference documents that label her male are
+wrong and should be corrected against the manuscript, not the other way round.
+
+She runs the compulsory daily self-defence hour from age ten, and the ten-on-one drill, eleven
+at a time with a minute on the clock, which starts in the January of that first year. First-year
+best times run in the single digits of seconds; by fifteen a strong student is in the forties.

@@ -1,132 +1,277 @@
-# OWEN HALLWORTH
+# Owen Hallworth
 
-Found by the same nationwide search that found Chloe, Sam, Ruth, and Kavi, Owen was the one the search got wrong. He measures near 140, exceptional at an ordinary school and short of the floor the rest of his cohort clears without noticing it. For two weeks the work in front of him moved faster than he could follow: a timed writing prompt he couldn't finish, a fraction rule he could ask about but not hold onto, a bridge his group didn't get across in time. He cried about it, alone, in a stairwell, on a Thursday, and near the end of the second week his mother came and took him home.
+The one the selection got wrong: a capable, reliable, well-liked child who
+tried as hard as anyone in the room and still could not keep up, and who took
+that somewhere private rather than making it anybody else's problem.
 
-**Age span:** six to seven, present only in the camp timeframe (chapters/05_behind.md), with one conversation about him roughly nine months later (chapters/10_april.md) | **MBTI:** ISFJ (a writing aid, not a claim; steady, home- and routine-oriented, values a small trusted circle) | **IQ:** near 140. Exceptional at an ordinary school, and below the floor the rest of his camp cohort was clearing.
-**Born:** April 2005. The same nationwide search found him in the same admission year as Chloe, Sam, Ruth, and Kavi; what it got wrong was his ability, not his age.
-**Appears in:** chapters/05_behind.md, chapters/10_april.md (present only in memory, he is not physically in this chapter; Chloe asks about him and other characters answer)
-**Speaks:** 0 directly quoted lines. Every word connected to Owen in the book arrives through someone else, Sam, Ruth, Kavi, never as his own quoted dialogue.
+**Age span:** six to seven | **MBTI:** ISFJ (a writing aid, not a claim) | **IQ:** exceptional at an ordinary school, and below the floor everyone around him was clearing without noticing
 
-## Voice in one paragraph
+## The thing to get right first
 
-Nobody quotes him directly, but what he did in front of a clock and a room full of children who found everything easy leaves a plain trace. Given fifteen minutes to answer a comprehension question, he produced two sentences and crossed one out (chapters/05_behind.md:9), while Chloe wrote six, Ruth a page and a half, Kavi nearly a full page in the same window. During the fractions lesson he asked which number the flipping happens to (chapters/05_behind.md:40), a real question from a child trying to hold on to a rule that had already moved past him, and when Mr. Baptiste turned the question back on him, he looked at the board and said he didn't know. His group's bridge didn't clear the gap before the session ended (chapters/05_behind.md:24). None of this reads as a boy coasting or unbothered. It reads as a boy working as hard as anyone in the room and still not getting there.
+**He wanted to stay and could not do the work. The leaving was not a
+preference.** Every temptation with this character is to make him the one who
+saw through the place, or who chose a smaller life over a bigger one. He did
+neither. He was working as hard as anyone there and the room stopped waiting
+for him.
 
-## Dials
+**Both of these are true at once:** he wanted the hard days to stop, and he did
+not want to leave the people he had made friends with. A writer who resolves
+that into one feeling has lost him. He is six, and he has no way to say either
+of them.
 
-No dialogue exists to measure. If given lines, short, plain, home-grounded sentences fit him. He'd describe a specific thing, his dog, his sister, a Saturday routine, rather than an abstraction, and he'd answer a direct question before adding anything else. At length: no circumstance is attested, and none should be invented — see "When they talk at length" below.
+**He is not slow.** At an ordinary school he was the strong reader and the
+reliable one. He is only behind in a room built entirely out of exceptions, and
+the story is what that does to a child who cannot see the comparison he is
+being held to.
+
+## How they talk
+
+Short, plain, concrete. He describes a specific thing rather than a category: a
+dog, a sister, a Saturday, a rule he half has.
+
+He answers the question actually asked, and stops, without performing for
+anyone listening.
+
+He is undramatic even when the subject is upsetting. His distress happens
+privately and does not get narrated into a line.
+
+He asks a real question when he is confused: a specific, correctly aimed
+question two steps further back than the one everybody else is asking, and it
+is a good question. Then, when the answer comes back and a question is put to
+him in return, he says plainly that he has lost the thread. He does not guess
+and he does not pretend.
+
+He never analyses his own feelings. Everything about him is concrete and
+outcome-shaped.
+
+### Dials
+
+| | |
+| :-- | :-- |
+| sentence shape | short, plain, one concrete thing at a time |
+| disagrees by | saying plainly that something is not working for him, to one person, quietly |
+| length | short in a room with a standard in it; long only at home |
+| at length | something he built with his hands, finished, shown to one familiar adult, nobody timing him |
+| jokiness | none of his own; he laughs at other people's physical comedy |
+| hedging | he does not hedge, he simply says he does not know |
+| questions | real, specific, aimed further back than everyone else's |
+| figurative | not used |
+| emotional range | full, and entirely private |
 
 ## When they talk at length
 
-The condition is real and it is narrow: something he has built with his hands, finished, at home, shown to one familiar adult, with nobody timing him and no standard in the room. Then he will narrate the whole of it, every step in the order he did it, at a length nothing else in his life produces. The sheet's own facts point straight at it: he builds "things with a basic tool kit at home under supervision and finishing what he starts," and at his own school he was the strong reader and the reliable kid.
+**Something he made himself, finished, at home, shown to one familiar adult,
+with nobody timing him and no standard in the room.** Then he narrates the
+whole of it, every step in the order he did it, at a length nothing else in his
+life produces.
 
-None of that is on the page, and the reason matters. Every scene the book gives him is a scene with a standard in it, which is the exact condition that shuts this off. He has zero quoted lines, and what the text shows instead is private and physical: he cried "in the stairwell. On Thursday," alone (chapters/05_behind.md:80), and again nine months later with Kavi watching, who "didn't know what you say to that" (chapters/10_april.md:101).
+What it costs him is that the condition cannot survive being graded. The moment
+the thing he made becomes a thing being assessed, he is back to short concrete
+answers, and he cannot explain why the room changed. Any scene that wants him
+talking has to remove the standard first, which is also the argument the
+character exists to make.
 
-What it costs him is that the condition cannot survive being graded. The moment the thing he made becomes a thing being assessed, he is back to the short concrete answers already on record, and a six-year-old cannot explain why the room changed. Any scene that wants Owen talking has to remove the standard first, which is also the argument the character exists to make.
+## Signature, theirs alone
 
-## Signature — theirs alone
-
-None in the text. If given lines, he answers with a concrete, named thing rather than a general statement. Asked what he misses, he'd say a name, not a category.
+He answers with a named thing rather than a category. Asked what he misses, he
+gives you a name; asked what is wrong, he gives you the specific object or
+moment rather than the feeling around it. Triggered by any question that
+invites a general answer.
 
 ## Would they say this?
 
-- YES if it names one small, specific, home-scale thing rather than a general complaint.
-- YES if it answers the question actually asked and stops, without performing for an audience.
-- YES if it's plain and undramatic even when the subject is upsetting. His crying happens privately, not as a scene (chapters/05_behind.md:80).
-- YES if it's the kind of flat, short statement Sam and Kavi both attribute to him: "wasn't having fun" (chapters/05_behind.md:69, 70), "he doesn't know" (chapters/05_behind.md:40).
-- YES if it reaches for a piece of a rule or a mechanism and stops short of holding the whole thing, the way his fraction question does (chapters/05_behind.md:40).
-- NO if it's rendered as an argument or a performance for the group. Every account has him speaking to one person, quietly, not to a crowd.
-- NO if it explains his own feelings analytically. He's six, and everything about him is concrete and outcome-shaped, never self-analyzing.
+- YES if it names one small, specific, home-scale thing rather than a general
+  complaint.
+- YES if it answers the question actually asked and stops.
+- YES if it stays plain and undramatic even when the subject is upsetting.
+- YES if it is a real question aimed at the part of a rule he has lost, rather
+  than at the part everyone else is stuck on.
+- YES if, asked something he cannot answer, he says so rather than guessing.
+- YES if it is said to one person quietly rather than to the room.
+- NO if it is rendered as an argument or a performance for a group.
+- NO if it explains his own feelings analytically.
 
-## Are they acting like themselves?
+## Under pressure
 
-The clearest thing anyone can say about Owen under pressure is that he takes it somewhere private. He cried, alone, in a stairwell by the kitchens, on a Thursday, once at the time, reported by Ruth ("He was crying in the stairwell. On Thursday.", chapters/05_behind.md:80), and once nine months later by Kavi, who says so unprompted: "He was crying by the kitchens on the Thursday and I saw him, but I didn't say anything, because I was seven and I didn't know what you say to that." (chapters/10_april.md:101). He didn't make it anyone else's problem to manage. He handled it where nobody had to see it, and he kept showing up to the rest of camp until his mother came.
+He takes it somewhere private. That is the single most reliable fact about him
+under pressure: he cries alone, in a stairwell or behind a building, once, gets
+it over with, and comes back and keeps showing up. He does not make it anybody
+else's problem to manage, and the one person who sees him does not know what to
+say.
 
-Chloe spends the rest of that day, and months afterward, trying to build a theory of him and gets nowhere with it: "she cannot work out how a person could not like the bridge" (chapters/05_behind.md:85). The gap is not in her reasoning. Every child she has met before Owen, and every child she meets after him, keeps up. She has no category in her head for a child who tried and still couldn't, so she reaches for the only model she has: he must not have liked it. That describes the size of Chloe's sample, not the truth about Owen.
+Tired, he wants to be near somebody he already trusts.
 
-Failure mode: writing him as someone who saw through the place or chose a smaller life over a bigger one. He wanted to stay and could not do the work. The leaving was not a preference.
+Wrong, he takes the correction easily and does not argue.
 
-## Subjects and schedule
+Losing, or landing behind, he keeps working past the point other people have
+stopped, and still comes up short, and does it again the next day.
 
-Owen never enrolls at Halstead. What he brought to camp was real, and camp asked for more than that.
+Cornered, he tells one adult, plainly, that it is not working for him. That is
+the largest action available to a six-year-old and he takes it.
 
-- **Ahead of his class at his own school, before camp:** reading above grade level and comfortable with it, a peewee baseball league where he plays outfield and reads a fly ball early, building things with a basic tool kit at home under supervision and finishing what he starts. At his own school he was the strong reader, the reliable kid.
-- **What camp actually asked of him moved faster than that.** A fifteen-minute writing prompt got two sentences out of him (chapters/05_behind.md:9). The fraction lesson lost him at the point it lost nobody else the book follows closely: he asked a real question about which number the flip applies to, and when Mr. Baptiste turned the question back on him, he had nothing (chapters/05_behind.md:40). His group's bridge didn't clear the gap before the session ended (chapters/05_behind.md:24).
-- **The camp ran the same day for every six- and seven-year-old in the building, all found by the same national search.** For most of them that day was hard and gettable. For Owen, several pieces of it did not resolve inside the time he had, and it kept happening.
+He goes red and hiccups when he cries and is done inside a few minutes rather
+than staying upset for long.
 
-**What did Owen want instead of camp?** He wanted to be somewhere the work in front of him matched what he could do, and camp had stopped being that within the first week. Home was the last place he'd felt capable of what was being asked of him. He has a younger sister, Della, two years behind him, who he looks after without being asked. Saturday mornings are pancakes with his mom and Della before his baseball game. There's a dog, Biscuit, who sleeps on his bed. It's the life he could keep up with, and he wanted it back.
+## What he is good at, and what he is not
+
+He never enrols anywhere selective. What he brought was real, and the room
+asked for more than that.
+
+**Ahead of his class at his own school:** reading above grade level and
+comfortable with it. Outfield in a small baseball league, where he reads a fly
+ball early. Building things with a basic tool kit at home under supervision,
+and finishing what he starts.
+
+**What the harder room asked of him moved faster than that.** A short timed
+writing task produces two sentences from him and one of those gets crossed out.
+A rule taught once loses him at a step nobody else in the room loses. A group
+build does not clear its target before the session ends.
+
+**And it kept happening.** For most of the children around him the day was hard
+and gettable. For him, several pieces of it did not resolve inside the time he
+had, day after day.
 
 ## Home
 
-A small town, a modest house. His mother raises Owen and Della largely on her own; his father works long stretches away on a highway construction crew and is home in blocks rather than every night. He's used to being the reliable one when his dad's away: checking on Della, walking Biscuit, showing up to his own game on time without being told twice. A month away from all of it took something real out of him.
+A small town, a modest house. His mother raises him and his younger sister
+largely on her own; his father works long stretches away on a construction
+crew and is home in blocks rather than every night.
 
-## Body
+He is used to being the reliable one when his father is away: checking on his
+sister, walking the dog, getting himself to his own game on time without being
+told twice. A month away from all of it took something real out of him.
 
-Small for his age, still a little round in the face. Tires quickly when he cries, goes red, gets a hiccup in his breathing, and is done inside a few minutes rather than staying upset for long. Holds onto the zipper pull or drawstring of his bag when he's nervous, which is where the one physical detail the text gives him comes from: "he had a blue thing hanging off his bag" (chapters/10_april.md:37), a small blue keychain shaped like a dog, a rough match for Biscuit, that he fidgets with under stress.
+Saturday mornings are pancakes with his mother and his sister before his game.
+There is a dog who sleeps on his bed. It is the life he could keep up with, and
+it is what he wanted back.
+
+## Body and physical business
+
+Small for his age and still a little round in the face.
+
+He holds onto the zipper pull or the drawstring of his bag when he is nervous,
+and there is a small blue keychain shaped like a dog hanging off it that he
+works between his fingers under stress.
+
+He sits near a window or a door rather than in the middle of a room.
+
+He draws the same dog over and over.
 
 ## Personality off the page
 
-Sits near a window or a door rather than in the middle of a room. Bored: draws the same dog over and over. Wrong: takes correction easily, doesn't argue. Praised: pleased, doesn't show off about it. Tired: wants to be near someone he already trusts. A free Saturday: home, pancakes, Biscuit, his game. What he finds funny in other people: physical, slapstick humor.
+Bored, he draws. Praised, he is pleased and does not show off about it. A free
+Saturday is home, pancakes, the dog, his game. What he finds funny in other
+people is physical: somebody tripping, a genuinely clumsy accident.
 
 ## Interior life
 
-Wants to go home, where what's asked of him fits what he can do. Afraid of being handed something he can't finish while everyone around him finishes it without seeming to notice they've done anything hard. Thinks about Della and Biscuit before sleep, and some nights about the fraction rule he still doesn't have. Would spend a free year doing exactly what his life at home already looks like, a routine sized to him, nobody moving faster than he can follow. Believes his own life is a good one exactly as it is, which the other kids at camp, all still gaining on wherever the next thing is, wouldn't think to argue with, because it wouldn't occur to them to compare. What he doesn't have words for yet: trying his hardest and still landing behind is not the same as not trying. A six-year-old has no way to describe removing himself from a room that had stopped waiting for him. It just felt like losing.
+**Wants:** to be somewhere the work in front of him matches what he can do.
+Home is the last place he felt capable of what was being asked of him.
+
+**Afraid of:** being handed something he cannot finish while everybody around
+him finishes it without appearing to notice they have done anything hard.
+**What he does instead of admitting it:** he keeps working at it past the point
+it has clearly gone past him, and cries about it where nobody has to see.
+
+**Before sleeping** he thinks about his sister and the dog, and some nights
+about the rule he still does not have.
+
+**A free year:** exactly what his life at home already looks like. A routine
+sized to him, with nobody moving faster than he can follow.
+
+**Believes**, and nobody around him would think to argue with because it would
+not occur to them to compare: that his own life is a good one exactly as it is.
+
+**Blind spots, or rather the words he does not have yet:** that trying his
+hardest and still landing behind is not the same as not trying. He has no way
+to describe removing himself from a room that had stopped waiting for him. It
+just felt like losing.
 
 ## The small stuff
 
-Holds a small blue dog-shaped keychain from home, matching Biscuit. Draws the same dog repeatedly. Asks for the same bedtime routine every night if anyone will do it with him. Misses his mother's pancakes as much as he misses any one person, at least in the first few days.
+He carries the small blue dog-shaped keychain that matches his own dog. He
+draws the same dog repeatedly. He asks for the same bedtime routine every night
+if anyone will do it with him. He misses his mother's pancakes about as much as
+he misses any one person, at least in the first few days.
 
 ## Would do
 
-1. Work at a task past when others have stopped, and still come up short of finishing it (chapters/05_behind.md:9).
-2. Ask a real, specific question when confused, even when the answer doesn't come after (chapters/05_behind.md:40).
-3. Keep showing up to the day's activities on the days that were hard for him.
-4. Say plainly that something isn't fun for him, to an adult, rather than pretend it's working (chapters/05_behind.md:69, 70).
-5. Look after his younger sister without being asked.
-6. Hold onto a small reminder of home under stress (chapters/10_april.md:37).
-7. Show up reliably and happily to the same weekly routine, a Saturday game, a pancake breakfast.
-8. Cry somewhere private rather than make it the group's problem (chapters/05_behind.md:80).
-9. Ask an adult directly to go home rather than endure quietly once he'd had enough (chapters/05_behind.md:69).
-10. Walk and feed a family dog every day without being reminded.
+- Work at a task past when everyone else has stopped, and still come up short.
+- Ask a real, specific question when confused, even when the answer does not
+  come after.
+- Say plainly that he has lost the thread rather than guess at an answer.
+- Keep showing up to the days that were hard for him.
+- Tell one adult, quietly, that something is not working for him, rather than
+  endure it silently for ever.
+- Look after a younger sibling without being asked.
+- Hold onto a small reminder of home under stress.
+- Show up reliably and happily to the same weekly routine.
+- Cry somewhere private rather than make it the group's problem.
+- Walk and feed a family dog every day without being reminded.
 
 ## Would never
 
-1. Would never pretend to have finished something he hadn't, or fake an answer he didn't have. Asked a follow-up he couldn't meet, he said so rather than guess (chapters/05_behind.md:40).
-2. Would never make his unhappiness a scene for the group to manage. Every account of his distress happens alone or with one witness, never in front of everyone (chapters/05_behind.md:80).
-3. Would never describe wanting to go home as something to be ashamed of, once he's there. Home was where the day finally made sense again.
+- Pretend to have finished something he has not, or fake an answer he does not
+  have.
+- Make his unhappiness a scene for a group to manage.
+- Describe wanting to go home as something to be ashamed of, once he is there.
 
-## Relationships
+## How he treats people
 
-- **Sam:** tells Chloe he left, in the flattest possible terms, offering no elaboration and no theory (chapters/05_behind.md:67–76).
-- **Ruth:** two pieces of testimony months apart, both consistent with what this sheet takes to be true: that he wouldn't do the water thing (chapters/10_april.md:39), and that she saw him crying in the stairwell (chapters/05_behind.md:80).
-- **Kavi:** tells Chloe, nine months later, that Owen kept up on the water exercise and the bridge and was fine (chapters/10_april.md:101–103). He was seven when he watched a friend cry in a stairwell and didn't know what to say. His account reads like a kind memory of a hard week rather than a record of what actually happened.
-- **Chloe:** never interacts with him directly on the page. She notices his absence and tries, and fails, to build a model of why he left (chapters/05_behind.md:85).
-- **His mother:** comes to collect him, and raises Owen and his sister largely on her own while his father works away.
-- **Della, his younger sister:** two years behind him. He looks after her without being asked, and she's part of what he wants to get back to.
-- **Biscuit, the family dog:** sleeps on his bed. The keychain he holds onto is a rough match for her.
+He defers to adults straightforwardly and without anxiety, and he trusts them
+to be telling the truth about how a thing works.
+
+He looks after whoever is smaller than him without being asked and without
+mentioning it.
+
+He does not compete with the people around him, and it does not occur to him to
+resent anyone for finding easy what he finds hard.
+
+What he is to the other children is a friend they liked, whose leaving they all
+account for differently afterward, each of them describing the version they
+saw.
 
 ## Likes, dislikes, habits
 
-- Keeps trying at a task even after it's clearly gone past him (chapters/05_behind.md:9).
-- Struggled to finish camp's timed exercises in the time given, on the writing prompt and on the fraction question alike (chapters/05_behind.md:9, 38).
-- Prefers a small, familiar, repeating routine to constant novelty, the throughline of Home and Interior life above.
-- Looks after his younger sister and their dog without being asked.
+- Keeps trying at a task after it has clearly gone past him.
+- Prefers a small, familiar, repeating routine to constant novelty.
+- Looks after his sister and their dog without being asked.
 - Draws the same dog repeatedly.
+- Holds the keychain when he is nervous.
 
-## Facts a rewriter needs
+## Age and change
 
-- **Name:** Owen Hallworth. The manuscript gives only "Owen."
-- **Family:** mother, a younger sister named Della, a father who works away on a highway construction crew, a dog named Biscuit. The manuscript confirms only that a mother came to collect him (chapters/10_april.md:101); everything past that is this sheet's proposal.
-- **Timeline:** in Chloe's camp hall on the Monday of week two; his room stripped to the mattress by the Wednesday (chapters/05_behind.md:65).
-- **Capability, settled:** near 140, exceptional at an ordinary school and below the floor the rest of his camp cohort was clearing. He could not finish the fifteen-minute writing exercise, could not hold onto the fraction rule past his own first question, and his bridge group did not finish before time was called. Kavi tells Chloe nine months later that Owen "did the water thing and did the bridge and was fine" (chapters/10_april.md:105); treat this as a seven-year-old's kind but incomplete memory. Ruth's flatter line from the same conversation, that Owen "wouldn't do the water thing" (chapters/10_april.md:39), sits closer to what this sheet takes to be true.
-- **Why he left:** the work was too hard for him in the plain sense, and camp had no slower gear to offer once the pace outran what he could do. He told an adult it wasn't fun (chapters/05_behind.md:69, 70), which was true, and he cried where nobody had to manage it, which was also true. His mother came and took him home, and by Kavi's account of the moment, he wasn't glad to be going (chapters/10_april.md:101–103). Wanting the hard days to stop and not wanting to leave the friends he'd made in two weeks were both true at once.
-- **The roughly ten of ninety families staying near camp.** The reference documents floated a theory that Owen left because his family wasn't among the small number staying at the parent hotel, while children with a visiting parent nearby had an easier time enduring a hard month. That reading no longer fits Owen specifically: he left because the work itself had gone past what he could do, not for lack of a nearby parent. The hotel-proximity mechanism may still say something about the four other children who left in the same stretch (chapters/05_behind.md:86), but not about him.
-
-## Known problems
-
-1. **Kavi's certainty is worth flagging on its own.** He tells Chloe "I'm not guessing" (chapters/10_april.md:101) about a memory that, read against Ruth's account and against what actually happened to Owen in the classroom scenes, looks incomplete. A seven-year-old asserting confidence is not the same as a seven-year-old having the whole picture, and nothing in the scene checks his account against anything else.
-2. **Sam's account and Kavi's account still disagree about whether Owen wanted to leave.** Sam: "He wasn't having fun. He said it wasn't fun." (chapters/05_behind.md:72, 70). Kavi: "Owen didn't want to go home... he didn't want to go" (chapters/10_april.md:101–103). Both can be true at once: a child can want a hard day to stop and still not want to leave the people he'd made friends with in two weeks. This sheet reads them that way rather than as a contradiction needing a fix.
-3. **Zero direct quotation.** Worth the author confirming this was intentional. Right now there's no way to tell "he was designed to never speak" from "he simply hasn't been given a line yet."
+He is six and seven on the page, and the sheet is a child rather than a
+sequence. The thing to carry forward, if he is ever written older: the
+carefulness and the reliability were never the problem, and neither was the
+effort. A version of him at twelve is a competent, well-liked, entirely
+ordinary boy who is good with his hands and does not talk about the month he
+spent somewhere that outran him.
 
 ## Do not confuse with
 
-**Kavi**, who gives the fullest account of him (chapters/10_april.md:101–107) but not the most accurate one. His "he was fine" reads, on this sheet's account, as a friend's kind memory rather than a record of what happened. The cue that separates them: everything attributed to Owen is reported in someone else's plain, unelaborated register. If a line about Owen starts explaining why rather than stating what happened, that reasoning belongs to whichever character is doing the telling, not to Owen.
+**Kavi**, who gives the fullest account of him and not the most accurate one.
+Everything attributed to Owen arrives in somebody else's plain, unelaborated
+register. If a line about Owen starts explaining why rather than stating what
+happened, that reasoning belongs to whoever is doing the telling, not to Owen.
+
+---
+
+## Book-specific: navigation and continuity only
+
+*Facts a writer must not contradict. Nothing here characterises him.*
+
+- Name: Owen Hallworth. The manuscript gives only Owen; the surname is this
+  sheet's invention. Born April 2005, found by the same national search in the
+  same admission year as Chloe, Sam, Ruth and Kavi.
+- Family: a mother, a younger sister named Della two years behind him, a father
+  who works away on a highway construction crew, a dog named Biscuit. The
+  manuscript confirms only that his mother came to collect him; the rest is
+  this sheet's invention.
+- Timeline: in Chloe's hall on the Monday of week two, his room stripped to the
+  mattress by the Wednesday, his mother's car outside on the Saturday.
+- He has no directly quoted line anywhere. Everything connected to him arrives
+  through somebody else.
+- Four more children leave in the weeks after he does.
+- Appears in: chapters/05_behind.md, and chapters/10_april.md, where he is
+  discussed but not present.

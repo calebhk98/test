@@ -1,141 +1,338 @@
-# FEN TEOH
+# Fen Teoh
 
-A Halstead student, found by the same search that found the rest of her cohort, who has quietly kept a written list of every person who's had her room before her, and who won't put a single thing on the walls of a room she knows she'll be asked to leave. A collector who has decided that if nothing is really hers to keep, she'll at least keep careful track of what passed through.
+A collector who has decided that if nothing is really hers to keep, she will at
+least keep careful track of what passed through: she will not put anything on
+the walls of a room she knows she will be asked to leave, and she can tell you
+who lived in it before her.
 
-**Age span:** eight at introduction (chapters/10_april.md) through at least seventeen or eighteen (chapters/21_the_applications.md through chapters/29_the_file.md) | **MBTI:** ISTJ (a writing aid, not a claim; orderly, practical, keeps records, unsentimental about place but deeply consistent about the things she's chosen to care about) | **IQ:** the same tier as the rest of her cohort. Eleven languages carried across a decade, two of them to native fluency before she ever sat in a classroom, is the same order of ability Chloe, Ruth, and the others carry. Nothing in the text ranks her against them, because nothing at Halstead ever does.
-**Born:** July 2005, within the same admission year as her roommate Chloe (chapters/10_april.md:15).
-**Appears in:** chapters/10_april.md (roommate, present), chapters/11_eight.md (one in-person action beat, present), chapters/18_fifteen.md (named in a financial transaction, not present as a scene), chapters/21_the_applications.md through chapters/29_the_file.md (named in passing, not present)
-**Speaks:** 0 directly quoted lines. She has exactly one moment of reported speech, never in quotation marks, in chapters/10_april.md.
+**Age span:** 8 to at least 17 or 18 | **MBTI:** ISTJ (a writing aid, not a claim) | **IQ:** the same tier as everyone around her, and nothing in her life has ever ranked her against them
 
-## Voice in one paragraph
+## The thing to get right first
 
-The one thing resembling Fen speaking is reported rather than quoted: "Fen explains, without stopping what she is doing, that there is no point putting anything on the walls, since the rooms all get reassigned in August anyway. The third floor radiator makes a noise at four in the morning that you stop hearing after about a week. Then she goes back to whatever she was doing when the door opened." (chapters/10_april.md:15). Two practical, unsentimental facts, delivered mid-task, to a roommate she's known for minutes. No verbatim wording exists anywhere else in the book to build a spoken voice from. Everything below extends from that one scene and from what she does with her hands and her time across the rest of the book.
+**She is not detached from places; she has redirected the attachment.** The
+instinct that makes other people decorate a wall makes her keep a record. She
+does not mourn a room she is leaving, because the part of it she cared about
+was never the room: it was the order she imposed on it, and the order travels.
 
-## Dials
+The failure mode is writing her as somebody sad about impermanence, or as
+somebody who does not care. She is neither. She is the person who has already
+solved the problem, in a way that costs her something she has not noticed.
 
-No quoted line exists to measure. Efficient, unsentimental, addresses the room or the object rather than the person is the direction the one scene supports. Short declaratives. She answers a direct question fully and then stops, rather than let a silence sit. At length: not attested, and the one scene that exists argues against it — see "When they talk at length" below.
+## How they talk
+
+Practical, unsentimental, and delivered mid-task. She will tell you two useful
+facts about a place without stopping what her hands are doing, and then go back
+to it, and this is not rudeness, it is her whole idea of hospitality.
+
+She names the practical fact first and any feeling about it, if there is one,
+second and briefer.
+
+She answers a direct question fully and then stops, rather than let a silence
+sit or draw the answer out.
+
+Asked about a system rather than an object, she gives you the entire rule,
+including the exceptions and what happens when a new item has to go into the
+middle. This is the longest she goes and the most animated she gets, and the
+rule is always stated as a rule: this is how it works, this is the only rule
+there is.
+
+She states a price, a rate or a term plainly, without softening it into a
+favour and without apologising for it.
+
+She does not talk about herself unprompted. Everything she volunteers is about
+a room, an object, or a transaction.
+
+### Dials
+
+| | |
+| :-- | :-- |
+| sentence shape | short practical declaratives, then one long fully-specified rule if the subject is a system |
+| disagrees by | quietly doing it the correct way and not announcing the correction |
+| length | brief with people, long about a method |
+| at length | somebody asking how the order is decided, rather than what the objects are |
+| jokiness | dry; she notices a deadpan joke without laughing at it |
+| hedging | almost none; she says the thing or checks first and then says it |
+| questions | few, and practical when they come |
+| figurative | not used; her comparisons are physical and testable |
+| emotional range | narrow on the surface, and what she feels goes into how carefully something is put back |
 
 ## When they talk at length
 
-No scene shows her doing it yet, and the condition is not the one a scene would reach for first. Fen will not be drawn out about herself, about the day, or about anybody in the corridor. What opens her is somebody asking about the *system* rather than the objects: not "what's the rock for" but how the order is decided, what happens when a new one has to go in the middle, why the list of who had the room before her stops where it stops. Asked properly about a record she keeps, she explains the whole of it, and the whole of it is long, because the rules are the part she has actually thought about.
+**Somebody asking about the system rather than the objects.** Not what the rock
+is for, but how the order is decided, what happens when a new one arrives in
+the middle, why the list of who had the room before her stops where it stops.
+Asked properly about a record she keeps, she explains the whole of it, and the
+whole of it is long, because the rules are the part she has actually thought
+about. She will sit up in the dark to do it.
 
-Her ordinary register argues for the narrowness of that condition rather than against it. Everything she says to a new roommate is delivered "without stopping what she is doing," two practical facts about the room and the radiator, and then "she goes back to whatever she was doing when the door opened" (chapters/10_april.md:15).
+She will not be drawn out about herself, about her day, or about anybody in the
+corridor. The narrowness of the condition is the point.
 
-It costs her the record's privacy, which is most of what the record was for. The rocks in size order and the list of previous occupants are the two things in her life nobody has asked her to justify, and explaining the system hands somebody else a say in it. She will do it once for a person and watch what they do with it.
+It costs her the record's privacy, which is most of what the record was for.
+The things she keeps in order are the things nobody has ever asked her to
+justify, and explaining the system hands somebody else a say in it. She will do
+it once for a person and watch what they do with it.
 
-## Signature — theirs alone
+## Signature, theirs alone
 
-None quoted in the text. If given lines, she names the practical fact first and any feeling about it, if there is one, second and briefer, the same order as the one reported passage, where the wall-decorating rule comes first and flat, with no attached emotion.
+She closes a description of her own system with the boundary on it: the rule,
+then who it belongs to. Not defensive and not a warning, just the last clause
+of a complete account, the way you would state the terms of anything. Triggered
+by having just explained a method she owns. Once, at the end, never repeated.
 
 ## Would they say this?
 
-- YES if it states a practical fact about a place or object plainly, without an attached feeling.
-- YES if it's delivered mid-task, without pausing what she's doing (chapters/10_april.md:15).
-- YES if it names a specific person by a fact about them, where they're from, what they do, rather than a general impression.
-- YES if it's a plain, fair statement of a price or a term. She structures the loan to Chloe as a rate and collateral, not a favor (chapters/18_fifteen.md:111).
-- YES if she answers a direct question fully once, rather than drawing it out.
-- NO if it's emotionally expressive or seeks reassurance. Nothing in any of her four appearances reads that way.
-- NO if it's about herself unprompted. Everything attributed to her is either about the room, an object, or a transaction.
+- YES if it states a practical fact about a place or an object plainly, with no
+  feeling attached.
+- YES if it is delivered mid-task, without pausing what she is doing.
+- YES if it names a specific person by a fact about them, where they are from,
+  what they do, rather than by an impression.
+- YES if it is a plain, fair statement of a price or a term.
+- YES if it answers a direct question fully, once, rather than drawing it out.
+- YES if it gives the complete rule of a system, including what happens to
+  everything else when one item changes.
+- YES if it ends an account of her own method by saying whose it is.
+- NO if it is emotionally expressive or seeks reassurance.
+- NO if it is about herself unprompted.
 
-## Are they acting like themselves?
+## Under pressure
 
-She keeps a rock collection "lined up along the sill in order of size" (chapters/10_april.md:15), and when she moves rooms in June, "Fen's rocks come off the sill into a shoebox with newspaper folded between them" (chapters/10_april.md:139). The collection outlasts any given room. She lends nothing and asks for nothing emotionally across the whole book; the one continuing thread involving her, years later, is financial and precisely structured. Chloe "lends forty to a girl called Fen at nine percent against a table saw" (chapters/18_fifteen.md:111), a secured loan, at a stated rate, where Priya's in the same passage is unsecured. Fen puts up collateral without being asked to. It's the same instinct as the room-history list: she keeps the accounting straight even when nobody's checking.
+**Tired**, she goes quiet early, and goes down early, and always has.
 
-Failure mode: writing her as attached to a room, a person, or Halstead itself. Every trait she has points the other way, portable, practical, low-investment in place, high-investment in a small set of things she's chosen to keep track of.
+**Wrong**, she corrects it quietly without announcing that she was wrong in the
+first place.
 
-## Subjects and schedule
+**Praised**, she is a little uncomfortable and redirects attention to the object
+or the work.
 
-`CURRICULUM_GRID.md` is Chloe's timetable, not the school's. Fen's own track below is her own.
+**Losing** does not really register. Competition is not a category she operates
+in, which is unusual in the company she keeps and nobody has ever remarked on
+it.
 
-- **Languages, in order:** Spanish, French, Mandarin, Japanese, Korean, Cantonese, Hokkien, Malay, Tamil, Telugu, Marathi.
-- **Known for:** Cantonese and Hokkien, from her grandmother. Both were already spoken at home before Halstead ever taught them formally, so her ten-page reports in those two draw on vocabulary and idiom she's carried since before she could read. She's translating an existing home register into an academic one, not building from zero the way she is in every other language.
-- **Newest, and the one she'd call herself least sure of:** Marathi, the last one she picked up. She's a year or so into it, still checking a grammar table before she writes, and she's already producing a full ten-page report in it. At an ordinary school, a year of Marathi at her level would be the standout achievement in the building.
-- **Not built for performance:** put in front of a class and asked to demonstrate any of the eleven, she goes quiet. She talks for an hour with her grandmother in Cantonese without a second thought. Being watched and being useful are two different things to her, and only one of them interests her.
-- **Block two:** painting, whittling, gardening, orienteering, plus the rock collection, which isn't on the catalogue and she keeps anyway.
-- **Favourite, and why:** gardening. A garden is something you tend without ever really owning it, which fits how she thinks about every place she's ever lived.
-- **Least favourite:** anything structured as a public performance rather than a private demonstration.
-- **The subject nobody else took:** the Cantonese-and-Hokkien combination is hers alone.
-- **The year something clicked:** around age nine, she started keeping a written list of who'd had her room before her, the year she noticed that keeping careful track of things was the thing she was actually good at, more than any single subject.
-- **What she teaches the twelves, from thirteen:** orienteering. She's the one in her year who always knows exactly where she is, literally and otherwise, and it turned out to be a teachable habit.
-- **Secretly proud of:** the room-history list. Nobody has ever asked her about it, and she has never offered it.
+**Asked to perform** something she is genuinely good at, in front of a group,
+she goes quiet. Being watched and being useful are two different things to her
+and only one of them interests her.
+
+**Thrown out of order** by a move, a reassignment, a change of room, she is
+entirely calm about the place and immediately meticulous about the objects: she
+packs the collection with more care than anyone would think it needed, and
+starts the row again wherever she lands.
+
+## What she is good at, and what she is not
+
+Her schooling gave her a language a year from seven and two afternoon blocks of
+her own choosing.
+
+**Known for:** the two languages her grandmother taught her at a kitchen table
+before any classroom did. Her reports in those draw on vocabulary and idiom she
+has carried since before she could read; she is translating a home register
+into an academic one rather than building from nothing.
+
+**Newest, and the one she would call herself least sure of:** the most recent
+language on the list. She is a year or so into it, still checking a grammar
+table before she writes, and already producing a full report in it.
+
+**Hardest for her:** anything structured as a public performance rather than a
+private demonstration. She will talk for an hour with her grandmother in a
+language she has never been graded on, and go silent if a room is watching.
+
+**Favourite:** gardening. A garden is something you tend without ever really
+owning it, which fits how she thinks about every place she has ever lived.
+
+**The thing nobody else did:** the pairing of the two home languages.
+
+**The year it clicked:** around nine, when she started keeping a written list of
+who had had her room before her, and worked out that keeping careful track of
+things was what she was actually good at, more than any single subject.
+
+**What she teaches the twelve-year-olds from thirteen:** orienteering. She
+always knows exactly where she is, literally and otherwise, and it turned out
+to be a teachable habit.
+
+**Secretly proud of:** the room-history list. Nobody has ever asked her about it
+and she has never offered it.
 
 ## Home
 
-A big, close, multigenerational household in Detroit, the only home in this cast placed in Michigan, and the only one placed anywhere near it. Her grandmother lives with them, cousins are in and out constantly, and the house, a few blocks from where a small but long-standing Cantonese and Hokkien speaking community has anchored itself for two generations, has been added onto and handed down within the family, so almost everything in it, the table, half the furniture, a good portion of the dishes, belonged to someone else first. Her grandmother still meets a circle of old friends from that community most weeks, which is where some of the language, and some of the extended family itself, took root before the household did. Dinner is loud and crowded, several languages moving across the same table without anyone remarking on it, which is a large part of why Halstead's language load never rattles her the way it might rattle an only child from a quieter house. Her grandmother taught her Cantonese and Hokkien at the kitchen table, long before any classroom did. When Fen goes home, she slots back into the house's existing order within a day. There's a chore that's already hers, a spot at the table that's already hers, and she takes both back up without anyone needing to tell her to.
+A big, close, multigenerational household, added onto and handed down within
+the family, so almost everything in it, the table, half the furniture, a good
+portion of the dishes, belonged to somebody else first. Her grandmother lives
+with them and cousins are in and out constantly.
 
-## Body
+The house sits a few blocks from where a small but long-standing community
+speaking her grandmother's languages has anchored itself for two generations,
+and her grandmother still meets a circle of old friends from it most weeks.
+That is where some of the language, and some of the extended family, took root
+before the household did.
 
-Small and neat, moves efficiently rather than gracefully. Keeps her sleeves rolled to a precise point and rarely adjusts them again once they're set. Handwriting is tidy and functional, not decorative. Doesn't fidget much; when she's thinking, she sorts something small, rocks, buttons, whatever's on hand, rather than moving around. Sturdy, practical shoes. Eats neatly and finishes everything on her plate. Dresses in layers she doesn't take off over the course of a day, and her pockets are always full of something.
+Dinner is loud and crowded, several languages moving across the same table
+without anyone remarking on it, which is a large part of why an eleven-language
+school load never rattles her the way it might rattle an only child from a
+quieter house.
+
+When she goes home she slots back into the house's existing order within a day.
+There is a chore that is already hers and a place at the table that is already
+hers, and she takes both back up without anybody needing to tell her to.
+
+## Body and physical business
+
+Small and neat, moving efficiently rather than gracefully. She keeps her
+sleeves rolled to a precise point and rarely adjusts them again once they are
+set. She does not fidget; when she is thinking, she sorts something small,
+whatever is at hand. Sturdy practical shoes. She eats neatly and finishes
+everything on her plate. She dresses in layers she does not take off over the
+course of a day, and her pockets are always full of something.
+
+She can find a specific object in the dark by weight.
+
+She puts a thing back exactly where it came from, sure of the spot, without
+looking.
 
 ## Personality off the page
 
-- Bored: sorts something, rocks, pebbles, the contents of a drawer.
-- Wrong: corrects it quietly, without announcing that she was wrong in the first place.
-- Praised: a little uncomfortable, redirects attention toward the object or the work rather than herself.
-- Losing: doesn't seem to register competitive loss the way her peers do. Games aren't a big category for her.
-- Tired: goes quiet early. Asleep by nine as a child (chapters/10_april.md:119), and the habit never seems to have needed breaking.
-- A free Saturday: outside, gardening or walking the grounds looking for stones.
-- What she finds funny in other people: dry, deadpan jokes. She doesn't laugh loudly, but she notices them.
+Bored, she sorts something. A free Saturday is outside, in a garden or walking
+looking for stones. What she finds funny in other people is dry and deadpan;
+she does not laugh loudly but she notices.
+
+She is easy in a crowd and needs no extra attention in one, which is what a
+large loud family does to a person.
 
 ## Interior life
 
-Wants, eventually, to go back to Michigan and take over the garden the way her grandmother runs it now, or to travel to the places her family's languages actually come from, seeing the set completed in person rather than on paper. Afraid of losing track of something that mattered, which is most of what the room-history list is protecting against. Thinks about, most nights before she's asleep by nine, whichever name she's still trying to place if she's mid-search on a room's history; otherwise not much, she sleeps easily. Would spend a free year visiting the branches of her family scattered by the same history that put a Cantonese-and-Hokkien-speaking grandmother in a Michigan kitchen. Believes that objects and places carry the people who had them before you, and that you owe them a little care even in passing, a belief most of her Halstead peers, trained to make their own original mark, would push back on hard. What she's wrong about: she thinks impermanence means she shouldn't invest in a place, when what she's actually doing, the records, the careful order, the collecting, is a real form of investment, aimed at objects and facts instead of walls.
+**Wants:** eventually, to take over a garden the way her grandmother runs one
+now, or to travel to the places her family's languages actually come from and
+see the set completed in person rather than on paper.
+
+**Afraid of:** losing track of something that mattered. **What she does instead
+of admitting it:** the list, the order, the record. She would call all of it
+practical.
+
+**Before sleeping**, if she is mid-search on a room's history, whichever name
+she is still trying to place. Otherwise not much; she sleeps easily and early.
+
+**A free year:** visiting the branches of her family scattered by the same
+history that put her grandmother in that kitchen.
+
+**Believes**, and most people around her would push back on: that objects and
+places carry the people who had them before you, and you owe them a little care
+even in passing. The people she grew up alongside are trained to make their own
+original mark, and would argue with this hard.
+
+**Blind spots:** she thinks impermanence means she should not invest in a place,
+when what she is doing, the records, the careful order, the collecting, is a
+real form of investment aimed at objects and facts instead of at walls. She
+also does not notice that explaining her system to somebody is the most
+intimate thing she does.
 
 ## The small stuff
 
-Keeps a small paper list, added to over the years, of every name she's found for who had her room before her, never shown to anyone. Paints small, precise studies of individual rocks and keeps them in a box rather than pinning them up, the same instinct as not decorating the walls. At least one small stone in her pocket at any given time. Drinks tea because it's what the house drinks, not as a ritual she's built herself. First thing in the morning, she checks that whatever she was sorting the night before is still in order.
+She keeps a small paper list, added to over the years, of every name she has
+found for who had her room before her, and has never shown it to anyone. She
+paints small, precise studies of individual stones and keeps them in a box
+rather than pinning them up, the same instinct as not decorating the walls.
+There is at least one small stone in her pocket at any given time. She drinks
+tea because it is what the house drinks, not as a ritual she built herself.
+First thing in the morning, she checks that whatever she was sorting the night
+before is still in order.
 
 ## Would do
 
-1. Explain something practical to a new roommate within minutes of meeting her, without pausing what she was doing (chapters/10_april.md:15).
-2. Keep a personal collection in careful order across every room change (chapters/10_april.md:15, 137).
-3. Show someone an object she cares about without turning it into a conversation (chapters/11_eight.md:113).
-4. Lend something of value at a fair, stated rate, secured against something real, rather than give it away for free or ask for nothing (chapters/18_fifteen.md:111).
-5. Stay loosely in touch with someone for years without it becoming a close daily friendship (chapters/21_the_applications.md:35).
-6. Find out and remember a fact most people would never think to ask about, who had her room before her.
-7. Speak Cantonese or Hokkien easily and at length with someone she trusts one-on-one.
-8. Spend a free afternoon in the garden rather than indoors.
-9. Paint something precisely and then put it away rather than display it.
-10. Fold easily into a large, loud family dinner without needing extra attention.
+- Explain something practical to a new roommate within minutes of meeting her,
+  without pausing what she was doing.
+- Keep a personal collection in strict order across every move, and pack it
+  with more care than anyone thinks it needs.
+- Sit up in the dark to explain the whole rule of a system when somebody
+  actually asks about the system.
+- Show somebody an object she cares about without turning it into a
+  conversation.
+- Lend something of value at a fair stated rate, secured against something
+  real, rather than give it away or ask for nothing.
+- Put up collateral without being asked to.
+- Stay loosely in touch with somebody for years without it becoming a close
+  daily friendship.
+- Find out and remember a fact most people would never think to ask about.
+- Speak easily and at length, one to one, in a language she would go silent in
+  on a stage.
+- Spend a free afternoon in a garden rather than indoors.
+- Paint something precisely and then put it away rather than display it.
 
 ## Would never
 
-1. Would never decorate a room she expects to leave, stated directly as her own reasoning (chapters/10_april.md:15).
-2. Would never perform a language on demand in front of a group, even one she speaks fluently at home. Ask her to demonstrate Cantonese for a class and she'll go quiet, not because she can't, but because performance and use are different things to her.
-3. Would never treat a room, a school year, or a game as if it were permanently hers, the belief underneath nearly everything else on this sheet.
+- Decorate a room she expects to leave.
+- Perform a language on demand in front of a group, even one she speaks
+  fluently at home.
+- Treat a room, a year, or a game as if it were permanently hers.
 
-## Relationships
+## How she treats people
 
-- **Chloe, as roommate at eight and nine:** the person she interacts with most, and the least sentimental relationship shown on the page for either character. Two practical facts about the room, then back to what she was doing (chapters/10_april.md:15).
-- **Chloe, later, financially:** by fifteen, transactional rather than domestic, a loan at interest, secured against the table saw (chapters/18_fifteen.md:111), repaid.
-- **Her second-floor roommate, a girl from Maine:** mentioned once as who she's living with that September (chapters/11_eight.md:113).
-- **Her grandmother:** taught her Cantonese and Hokkien at the kitchen table, the source of both her strongest language work and her habit of caring for things that outlast any one owner.
-- **Her cousins:** a large, constantly present extended family that makes Halstead's crowded dormitory life feel unremarkable to her rather than strange.
+She defers to whoever was there first, in a room, a household or a system, and
+she means it as courtesy rather than deference. Respect is earned by taking
+care of something that will outlast you. It is lost by carelessness with a
+thing somebody else will inherit.
+
+She pushes nobody. What she offers instead is accurate information, delivered
+early and without being asked for.
+
+With a new roommate she is unsentimental and immediately useful, and the
+absence of warmth is not coldness, it is that the useful thing came first. With
+somebody who asks a real question about her method, she opens completely, once.
+With somebody she is doing business with she is precise and fair and expects
+the same, and she will structure what could have been a favour as a proper
+transaction because that is cleaner for both of them. With her grandmother she
+is talkative in a way nobody at school has ever seen.
 
 ## Likes, dislikes, habits
 
-- Collects rocks, kept in size order (chapters/10_april.md:15, still present and packed up at chapters/10_april.md:139).
-- Treats room assignments as temporary and not worth decorating for (chapters/10_april.md:15).
-- Asleep by nine (chapters/10_april.md:119).
-- Speaks Cantonese and Hokkien fluently, from her grandmother.
-- Gardens and paints small studies of rocks, kept private.
-- Keeps a private written record of who's lived in her room before her, her defining private habit.
+- Collects stones, kept in strict size order, and takes them with her.
+- Treats room assignments as temporary and not worth decorating for.
+- Asleep early, always.
+- Speaks her grandmother's two languages fluently and privately.
+- Gardens, and paints small private studies.
+- Keeps a written record of who lived in her room before her.
 
-## Facts a rewriter needs
+## Age and change
 
-- **Name:** Fen Teoh, full given name Wai Fen Teoh, "Fen" is what everyone calls her. The manuscript gives only "Fen."
-- **Home:** Detroit, Michigan, a large multigenerational household with a grandmother in residence, part of a small long-standing Cantonese and Hokkien speaking community in the city. No other student in this cast is placed anywhere in Michigan, keeping her the only one from that part of the country.
-- **Family:** grandmother, Cantonese and Hokkien speaker, taught her both; parents; several cousins in and out of the house regularly.
-- **Housing timeline:** rooms with Chloe on the third floor starting age eight (chapters/10_april.md); second floor with a girl from Maine by that September (chapters/11_eight.md:113); still enrolled and financially active at fifteen (chapters/18_fifteen.md:111); still a live reference point at seventeen to eighteen (chapters/21_the_applications.md:35).
-- **Gender, corrected against older reference material, not repeated from it.** Earlier notes called this unstated. It isn't: the manuscript commits explicitly, twice, "a girl from Michigan named Fen" (chapters/10_april.md:15) and "a girl called Fen" (chapters/18_fifteen.md:111).
-- **"One line, never returns," also inaccurate.** She recurs at chapters/11_eight.md, an in-person action, five months later, chapters/18_fifteen.md, a financial relationship still active at fifteen, and chapters/21_the_applications.md through chapters/29_the_file.md, referenced again around seventeen to eighteen. What's true: she never again gets a scene with quoted dialogue after chapters/10_april.md, but she persists as a background presence for roughly a decade of story time.
+At eight she is already unsentimental about place, already sorting, and already
+delivering the practical facts first. The room-history list starts about a year
+later, and that is the one thing that arrives rather than having always been
+there.
 
-## Known problems
+Through her teens the same instinct grows a financial edge: fair terms, real
+collateral, an accounting kept straight even when nobody is checking. It is the
+same habit as the list.
 
-1. **No verbatim line exists to build on.** Any dialogue written for Fen from this point is new work, not a restoration of an existing voice.
-2. **The gender-unstated claim in older reference material is wrong** and shouldn't be repeated. See Facts above.
-3. **Thin textual footprint.** Languages, electives, Home, Body, and Interior life are all built outward from a two-line scene and a handful of later mentions. Treat this sheet as the proposed foundation for a character who currently has almost no textual anchor, not as recovered fact.
+As an adult, nothing about this changes except the size of the things she keeps
+track of.
 
 ## Do not confuse with
 
-**Priya**, the other roommate figure introduced with one defining object-obsession and then largely sidelined, horses, versus Fen's rocks. The cue that separates them: Priya is the camp-era roommate, age six to seven, who stays part of Chloe's immediate social circle at Halstead, named at meals, remembered, discussed. Fen is the Halstead dorm-era roommate, from age eight onward, who is structurally adjacent to Chloe's life for a decade but never folded into her circle the way Priya is. No shared meals, no shared plans, nothing but a shoebox of rocks, a secured debt, and one remembered opinion about a college.
+**Priya.** Both are roommate figures introduced with one defining object
+attachment. Priya's is a living thing and it is social; Fen's is inanimate and
+it is a record. Priya stays inside the daily circle; Fen is structurally
+adjacent to it for a decade and never folded in. If the attachment is warm and
+told to a stranger unprompted, it is not Fen's.
+
+---
+
+## Book-specific: navigation and continuity only
+
+*Facts a writer must not contradict. Nothing here characterises her.*
+
+- Name: Fen Teoh, full given name Wai Fen Teoh. The manuscript gives only Fen;
+  the surname is this sheet's invention. Born July 2005, the same admission
+  year as Chloe. She is a girl, stated twice in the manuscript.
+- Home: Detroit, Michigan, a large multigenerational household with a
+  grandmother in residence, part of a long-standing Cantonese and Hokkien
+  speaking community in the city. No other student in this cast is placed
+  anywhere in Michigan.
+- Family: grandmother, who taught her Cantonese and Hokkien; parents; several
+  cousins in and out of the house.
+- Languages, in order: Spanish, French, Mandarin, Japanese, Korean, Cantonese,
+  Hokkien, Malay, Tamil, Telugu, Marathi. Known for Cantonese and Hokkien.
+- Afternoon blocks: painting, whittling, gardening, orienteering, plus the rock
+  collection, which is not on the catalogue.
+- Housing: rooms with Chloe on the third floor from age eight; second floor
+  with a girl from Maine by that September.
+- Appears in: chapters/10_april.md, chapters/11_eight.md,
+  chapters/18_fifteen.md (named in a transaction, not present as a scene),
+  chapters/21_the_applications.md (named in passing).

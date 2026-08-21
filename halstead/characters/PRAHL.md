@@ -1,134 +1,283 @@
 # Diane Prahl
 
-The gifted pull-out teacher: the district's entire elementary gifted program, riding in the trunk of a hatchback, warm and trained and giving Chloe exactly the one hour a week she has to give anyone.
+A travelling gifted specialist who is the whole of a district's enrichment provision, riding
+in the boot of a hatchback, and who gives every child she meets exactly the one hour a week
+she has to give anybody.
 
-**Age span:** 39 during Chloe's third-grade year | **MBTI:** ESFJ (writing aid, not a claim) | **IQ:** not inferable, no line demonstrates difficulty with material, only pacing decisions around it
-**Appears in:** chapters/08_the_asking.md only.
-**Speaks:** 3 quoted turns, one long puzzle-setup and two short refusals. Two more lines are reported without quotation marks in the same chapter.
+**Age:** 39 in the year she teaches Chloe | **MBTI:** ESFJ (a writing aid, not a claim)
+| **IQ:** not the useful measure for her; she is a strong teacher operating inside an
+allocation that makes strength unmeasurable
 
-## Voice in one paragraph
+## How she thinks people learn
 
-She teaches in complete, patient setups. The knights-and-knaves puzzle runs three full sentences of premise before the question arrives, read aloud, sheet held over her head so the back row can see it too. When Chloe asks for more, her refusal takes the same shape as her teaching: warm, unhurried, framed as generosity. Her most characteristic line is "'Let's not rush it, we've got all year.' Mrs. Prahl smiles at her the way people smile when they think you have said something sweet." (chapters/08_the_asking.md:105). Encouraging in tone, a flat refusal in substance.
+Unhurried, completely, and together. A good hour is a complete one: the whole premise read
+aloud rather than paraphrased, the sheet held up over her head so the back row misses
+nothing, every name used every time. She believes depth comes from time rather than from
+level, and she has a year of hours, so nothing needs to be rushed. She turns a correct
+answer into a visible event for the whole group, because she thinks a child who is seen
+getting something right will come back next week.
 
-## Dials
+She also holds, genuinely and not as a cover story, that patience is the correct pedagogy
+for a child this young, and that a child asking for something harder is showing enthusiasm
+worth rewarding rather than giving her information to act on. That belief is real. It is
+also load-bearing, because it is the belief that makes the allocation she has been given
+feel like a plan instead of a shortage.
+
+## What she does when a student fails, or asks for more
+
+She answers a request for more difficulty with a statement about time remaining, never about
+material. There is a whole year, we will get all the way through it properly, let us not rush
+it. And then she gives them something, immediately and warmly: the rest of the packet to take
+home, an extra sheet, a puzzle she wrote herself on a Saturday. The offer is real and it is
+generous and it is more of the same, and she does not notice that more of the same is not
+what was asked for.
+
+When a child says they are still working on something they finished a week ago, she takes it
+at face value, warmly, and does not press. When a child fails at something, she goes to eye
+level and explains it again if the group size allows it, which it usually does not.
+
+Her warmth and her refusals are the same gesture. She never names the ceiling, and this is
+not evasion: naming it would require having something behind it, and she has been given
+nothing to put there. She reframes rather than refuses, and the reframe is delivered as a
+gift because in her own mind it is one.
+
+## How she talks
+
+Complete, unhurried setups. She states a full premise before the question arrives and reads
+it out rather than summarising, and she will hold a page up so the back of the room can see
+the thing she is describing. Her refusals arrive in the same register as her teaching, which
+is why they land as encouragement: unhurried, warm, framed as something being given. She uses
+names constantly, learns all of them inside minutes, and never mixes one up. She asks
+questions of a group and almost none of an individual. She does not get short, clipped, or
+impatient, ever, and the one thing she never does is state the actual constraint out loud.
+
+### Dials
 
 | | |
 | :-- | :-- |
-| sentence shape | complete, unhurried setups, full premises stated before the question |
-| disagrees by | reframes the request as already being generously met |
-| wordiness | one long turn over 50 words unbroken; refusals run 9–10 words each |
-| terseness | 0% by the 3-word test across her 3 turns |
-| at length | every Thursday, setting up a puzzle for the whole room. The same thoroughness that produces it is structurally why she never gets to the differentiation underneath it |
-| jokiness | 0/10, no joke, warmth delivered as encouragement, not humor |
-| hedging | 0% in what she says aloud; the refusal itself substitutes for naming the actual limit |
-| questions | one puzzle line ends in a question posed to the group; nothing personal asked of Chloe |
-| figurative | not allowed, none used |
+| sentence shape | complete unhurried setups; the full premise before the question |
+| disagrees by | reframing the request as already generously met, and adding something to it |
+| length | long when teaching a whole group, brief when declining, and the brief version is warmer than the long one |
+| at length | every session, setting up a problem for a whole room. The same thoroughness that produces it is structurally why she never reaches the child in front of her |
+| jokiness | none; the warmth is encouragement rather than humour, and she is not a funny person and does not need to be |
+| hedging | none in what she says aloud. The reframe does the work a hedge would do, and it substitutes for naming the limit |
+| questions | posed to the group, about the material; almost nothing personal asked of anybody |
+| figurative | no; she reads a premise straight rather than dressing it up |
+| emotional range | warm and even, wide with children, and she keeps the tiredness entirely off the delivery |
 
-## When they talk at length
+## When she talks at length
 
-Prahl's longest turn in the sample is a full puzzle premise, read aloud rather than paraphrased, sheet held over her head so the back row can see it too: "Okay. On this island there are two kinds of people and that's all there is. Knights always tell the truth, every single time, so they can't lie even if they want to. Knaves always lie, every single time, so they can't tell the truth even by accident." She holds the sheet up over her head so that the back row can see it too. "You meet two of them. Alan says, Bob is a knave. Bob says, neither of us is a knave. What are they?" (chapters/08_the_asking.md:93). This isn't rare for her; it happens every week, to the whole group at once, and it's real, patient, well-built teaching.
+Every single session, and that is the point rather than an exception. Her long form is a
+complete premise built for the slowest listener in the room, and it is real, patient,
+well-made teaching that she does five times a week in five different rooms without letting
+any of them feel like an afterthought.
 
-That's exactly what makes the cost land where it does. The same care and unhurried thoroughness she spends setting up a puzzle for nine kids is the whole of the thirty-five real minutes her cart-and-commute schedule leaves her. Time spent building the premise completely for the back row is time not spent noticing that one child at the front finished it before she'd stopped reading it aloud. The warmth in the long version and the refusal in the short version, "let's not rush it, we've got all year," come out of the same fixed hour; there isn't a second one to give.
+What it costs is exactly what makes it good. The same care and unhurried thoroughness she
+spends building a premise for nine children is the whole of the thirty-five real minutes her
+cart and her commute leave her. Time spent making sure the back row has everything is time
+not spent noticing that one child at the front finished before she stopped reading. The
+warmth in the long version and the refusal in the short version come out of the same fixed
+hour, and there is not a second one to give.
 
-## Signature — theirs alone
+## Signature - hers alone
 
-Answers a request for more difficulty with a statement about time remaining, never about material:
-- "'Let's not rush it, we've got all year.'" (chapters/08_the_asking.md:105)
-- "Mrs. Prahl says that's absolutely fine, take your time." (chapters/08_the_asking.md:137)
+Answer a request about level with a statement about time, then hand over more material. Two
+moves welded together: the ceiling is never named, the calendar is offered in its place, and
+something physical goes into the child's hands so the exchange ends as a gift. She smiles
+through the whole of it and means the smile. Written as coldness it is a different character
+entirely; the warmth is not a coating on the refusal, it is the same gesture.
 
 ## Would they say this?
 
-- YES if it answers "can I have more" with a statement about time available, not material available.
-- YES if it's delivered warmly, as if the request itself were the endearing thing.
-- YES if it uses a student's name. She learns all nine in five minutes and uses them every time.
-- YES if it celebrates correct group work visibly, making a real thing of it.
-- YES if it reads the full premise of a puzzle aloud rather than paraphrasing it, so nobody in the back misses anything.
-- YES if the praise is warm and identical regardless of how far ahead the student actually is.
-- YES if it takes a student's "still working on it" at plain face value rather than pressing further.
-- YES if it treats every one of the nine kids with the same attentiveness in the same hour.
+- YES if it answers a request for more difficulty with a statement about time available
+  rather than material available.
+- YES if it is delivered warmly, as though the request itself were the endearing thing.
+- YES if it hands over more of the same and treats that as having met the request.
+- YES if it uses a child's name, correctly, every time.
+- YES if it makes a real, visible event out of somebody getting something right.
+- YES if it reads a full premise aloud rather than paraphrasing, so nobody at the back misses
+  anything.
+- YES if the praise is warm and identical regardless of how far ahead the child actually is.
+- YES if it takes a child's I am still working on it at plain face value and does not press.
+- YES if it treats all nine children in the room as equally entitled to the same hour.
 - NO if it names the actual constraint out loud.
-- NO if it's short, clipped, or impatient; everything she says is unhurried, even the refusal.
+- NO if it is short, clipped, or impatient. Everything she says is unhurried, including the
+  refusal.
 
-## The kindly-and-inadequate test
+## Under pressure
 
-Diane teaches nine kids on Thursdays for one hour, pulled from four buildings across the district. The pull-out is the whole extra track this school system offers; once its sixty minutes are spent, nothing behind it remains, because nine kids and one hour is the entire allocation she was given. A line for Diane belongs on the page if it's warm, genuinely encouraging, and still refuses the substance, because the room has no more to give. "Let's not rush it, we've got all year" does exactly that: nothing cold in it, and still a flat no to the only question that matters. A line falls off the page if it makes the refusal personal, irritation, comparison to the other eight, contempt for the question. She never does that.
+Nothing in her delivery slows down, which is remarkable given the driving. Tired, and she is
+genuinely tired, she gets more efficient rather than less warm, and the efficiency lands on
+the logistics rather than on the children. Wrong, she takes it seriously and adjusts, though
+correction rarely reaches her directly since contact with parents runs through an office.
+Praised, she brightens and puts it onto the children. She avoids direct conflict, and her job
+is structured so that she never has to have one, which leaves her with mixed feelings she does
+not examine much. The thing that would actually break her is being asked, directly, by
+somebody with authority, what she needs. Nobody has ever asked, and if they did she has the
+answer ready and has had it for years.
 
-## Are they acting like themselves?
+## What she is good at, and what she is not
 
-She is logistically excellent and pedagogically shallow at the ceiling. She learns nine names inside minutes and reads a full puzzle aloud with real care for the back row. She never gets the occasion, on the page, to notice that one student finished twelve problems in fifteen minutes with thirty-five left over, the exact shape of the problem Dr. Prentice diagnosed a full school year earlier, from a report she has never seen and has no way to see, in a system that has never connected the two documents.
+The whole of a district's elementary enrichment: five groups, one per building per weekday,
+roughly forty-five children, of which one Thursday group of nine is the one Chloe is in. Logic
+puzzles, dice games, group problem-solving, a new packet most weeks, much of it written by her.
 
-**Failure modes for a rewriter:** making her lazy or checked-out, she works hard, visibly; making her cruel about the refusal, every refusal in the text is wrapped in warmth; having her privately recognize the mismatch and choose not to act, nothing shows this, and inventing that insight would build a different, worse character.
-
-## Subjects and schedule
-
-She holds a graduate endorsement in differentiated instruction, earned six years into her teaching career. She was a classroom second-grade teacher for eight years before the district folded five building-based gifted positions into one traveling role and asked her to take it, based on strong differentiation ratings; she inherited the cart and the four buildings rather than choosing them. Her full caseload runs five groups, one per building per weekday, roughly forty-five children total across the district's elementary schools, of which Chloe's Thursday group of nine is one. Her commute is her own car between buildings, cart crates broken down and reloaded into the trunk each morning, roughly fifty minutes of driving a day on top of five hours of teaching. She turns a correct answer into a visible group event, and keeps the same warmth across five different groups in five different buildings so none of them feel like an afterthought. Gauging any one child's real ceiling inside a single shared hour, with eight other kids and a commute eating into the same sixty minutes, is where the job runs thin. Hired, on paper, to differentiate for gifted learners district-wide, she spends most of a working day on logistics: packing a cart, driving, herding nine kids out of four classrooms into chairs, leaving roughly thirty-five real minutes of teaching in the hour. Asked what she needs, she would say a room in each building instead of a cart, and a second person, so no single hour has to serve nine kids at nine different levels. Nobody has asked her this on the page, and no sign in the text shows anyone in the district asking off it either. She takes pride in never having lost one of her forty-five kids' names, across five buildings, in eleven years of doing this.
+**Best at:** logistics and warmth at scale. She keeps five different groups in five different
+buildings from feeling like anybody's afterthought, and has never lost a name in eleven years.
+**Hardest for her:** gauging any one child's actual ceiling inside a shared hour, with eight
+other children and a commute eating the same sixty minutes. This is where the job runs thin,
+and it is a capacity problem rather than a skill problem.
+**Favourite, and why:** a puzzle landing for the whole room at once, which is the thing she
+built the format around.
+**Least favourite:** the transitions. Five minutes every single week just getting nine children
+out of four classrooms and into chairs.
+**Secretly proud of:** never having lost one of forty-five children's names, across five
+buildings, in eleven years of doing this.
+**What she would teach instead:** she would not. She would teach the same thing with a room in
+each building instead of a cart, and a second person, so no single hour has to serve nine
+children at nine different levels. Nobody has asked her.
+**On the rest of the provision:** she believes services this thin do more for the paperwork
+than for the children in the room, and has stopped saying so because the answer has always been
+budget.
 
 ## Home
 
-She is married to a man who works in facilities management for the same school district, which put the two of them close enough to all four of her buildings to make the commute survivable. Her two children, both past elementary age now, both passed through her own classroom briefly before the district reassignment moved her out of it. She lives in a modest single-story house fifteen minutes from the district's central building, with a spare room turned into a puzzle-and-supply workroom where she preps the cart every Sunday night for the coming week. Dinner most nights is late and simple, eaten after the commute is finally done; her husband usually starts it before she's home. She visits her own mother, two towns over, every other weekend, mostly to sit and not talk about work.
+Married to a man who works in facilities management for the same district, which put the two
+of them close enough to all four of her buildings to make the commute survivable. Two children,
+both past elementary age, both of whom passed briefly through her own classroom before the
+reassignment moved her out of it. Lives in a modest single-storey house fifteen minutes from the
+district's central building, with a spare room turned into a puzzle-and-supply workroom where
+she preps the cart every Sunday night. Dinner most nights is late and simple, eaten after the
+driving is finally done; her husband usually starts it before she is home. She visits her own
+mother two towns over every other weekend, mostly to sit and not talk about work.
 
-## Body
+## Body and physical business
 
-Late thirties, compact and quick-moving, built for standing and driving more than sitting. She keeps her hair in a low practical ponytail during the school day, longer and loose on weekends. Her clothes carry pockets deep enough for a phone, a set of keys for four different buildings, and a laminated class list. She gets down to a child's eye level for one-on-one explanation whenever the group size allows it. She drives with the radio off most mornings, using the quiet to run through which of the five groups she's about to see. She sleeps six hours most nights, more on weekends.
+Late thirties, compact and quick-moving, built for standing and driving rather than sitting.
+Hair in a low practical ponytail during the school day, longer and loose at weekends. Clothes
+with pockets deep enough for a phone, keys to four different buildings, and a laminated list.
+She holds a sheet up over her head rather than pass it round. She gets down to a child's eye
+level for one-to-one explanation whenever the group size allows it, which is not often. She
+drives with the radio off most mornings, using the quiet to run through which of the five
+groups she is about to see. Six hours of sleep most nights, more at weekends.
 
 ## Personality off the page
 
-"When does it get harder" reads to her as enthusiasm to reward, and her answer is, in her own mind, a gift. She holds a genuine pedagogical belief that patience is correct for a child this young. She rarely has time to be bored; every hour is packed. When a parent raises a concern with the district, she takes it seriously, though it rarely reaches her directly since parent contact runs through the school office. Praised, she brightens and deflects it onto the kids. She avoids direct conflict; her job is structured around it, which leaves her with mixed feelings she doesn't examine much. Driving and the caseload leave her genuinely tired, though it never slows her delivery down. A free Saturday runs sleeping in, then an hour of puzzle-writing for next week that she actually enjoys, unpressured. A kid who negotiates a rule with adult-sounding logic delights her rather than exasperating her.
+She rarely has time to be bored; every hour is packed. Praised, she brightens and deflects it
+onto the children. A free Saturday runs sleeping in and then an hour of puzzle-writing for next
+week that she genuinely enjoys, unpressured. What she finds delightful rather than exasperating
+is a child negotiating a rule with adult-sounding logic.
 
 ## Interior life
 
-She wants five real classrooms instead of one cart, has wanted it since year one of the traveling role, and has stopped raising it because the answer has always been budget. She fears she is doing real harm to exactly the kids she was hired to help, by being present just long enough to look like enough. Before sleep she runs through whether Thursday's group is actually getting anything out of the hour, more than any other day. Given a free year, she would write an actual differentiated curriculum for kids who finish everything in the first fifteen minutes, something she's sketched in a notebook for years and never had time to finish. She believes gifted services this thin do more for the district's paperwork than for the kids in the room. She is wrong that "let's not rush it" reads as patience; for a kid like Chloe it functions as a ceiling she doesn't know she's placing.
+She wants five real classrooms instead of one cart, has wanted it since her first year in the
+travelling role, and has stopped raising it because the answer has always been budget. She
+fears she is doing real harm to exactly the children she was hired to help, by being present
+just long enough to look like enough; what she does instead of saying that is pack the cart
+better. Before sleep she runs through whether one particular group is actually getting anything
+out of the hour. Given a free year she would finish the differentiated curriculum for children
+who finish everything in the first fifteen minutes, which she has been sketching in a notebook
+for years.
+
+**Blind spots:** she is wrong that let us not rush it reads as patience. For a child who has
+already finished, it functions as a ceiling she does not know she is placing. She also reads a
+request for difficulty as enthusiasm rather than as information, which means the one signal
+that would tell her what is wrong is the one signal her framework converts into a compliment.
 
 ## The small stuff
 
-She drinks tea, not coffee, from a travel mug that rides in the car's cupholder between buildings. Her handwriting is round and deliberately legible, since half of what she writes gets handed to a seven-year-old to read. Her workroom at home holds puzzles sorted by difficulty in labeled bins, years of them. She keeps a laminated master list of all forty-five kids' names in her bag and reviews it in the car before each building. She buys puzzle books out of her own pocket rather than fight a district purchase order. She always packs the dice bin last, on top, so it's the first thing out when she unloads. She checks her phone only at red lights and stoplights, never while actually driving between buildings. Every morning she loads the car, radio off, tea instead of coffee, and mentally walks through the day's five groups in order.
+Tea, not coffee, from a travel mug that rides in the car's cupholder between buildings.
+Handwriting round and deliberately legible, since half of what she writes gets handed to a
+seven-year-old to read. Her workroom holds puzzles sorted by difficulty in labelled bins, years
+of them. A laminated master list of all forty-five names in her bag, reviewed in the car before
+each building. She buys puzzle books out of her own pocket rather than fight a purchase order.
+She always packs the dice bin last and on top, so it is the first thing out. She checks her
+phone at red lights only. Every morning she loads the car, radio off, tea instead of coffee, and
+walks through the day's five groups in order in her head.
 
 ## Would do
 
-- Learn every child's name inside the first session, without mixing them up, every week after.
-- Read a full puzzle's premise aloud rather than paraphrase it, holding the sheet up so the back row can see too.
+- Learn every child's name inside the first session and never mix one up afterward.
+- Read a full premise aloud rather than paraphrase, holding the sheet up so the back row can
+  see.
 - Send extra material home with a child who finishes early, without being asked.
-- Praise finished work identically regardless of how far ahead of the group that child actually is.
+- Praise finished work identically regardless of how far ahead of the group the child is.
 - Show up on time every week, cart fully stocked, across four separate buildings.
-- Spend her own money on puzzle books rather than fight a purchase-order process.
-- Write new puzzles on an unpressured Saturday morning because she genuinely enjoys it.
-- Keep a laminated list of all forty-five names across five buildings and actually use it.
-- Get down to a child's eye level for one-on-one explanation whenever the group size allows it.
+- Spend her own money on materials rather than fight a purchase-order process.
+- Write new puzzles on an unpressured Saturday morning because she enjoys it.
+- Keep a laminated list of forty-five names and actually use it.
+- Get down to a child's eye level for one-to-one explanation whenever the group size allows.
+- Answer a hard question about level with a warm answer about the calendar.
 
 ## Would never
 
-- Tell a child outright there's nothing harder available; she reframes rather than names the ceiling.
-- Compare one of her kids unfavorably to another, to their face or otherwise.
+- Tell a child outright there is nothing harder available. She reframes rather than names the
+  ceiling.
+- Compare one of her children unfavourably to another, to their face or otherwise.
 - Skip or shortchange a session because of the logistics behind it.
 
-## Relationships
+## How they treat people
 
-- **Chloe:** wants her to enjoy the enrichment hour, and reads her question about difficulty as enthusiasm to reward rather than information to act on.
-- **Meg:** no direct on-page contact; Meg's fight to get Chloe into the program runs entirely through the school office.
-- **Dev, Hana (other pull-out students):** same warm, name-first attention as Chloe.
-- **Her husband:** starts dinner most nights before she's home from the commute.
-- **The district office:** would ask for more resources if she thought it would change anything, and hasn't, on the page or off it.
+- **A child who asks for something harder:** gets warmth, a statement about time, and more
+  material. She wants them to feel rewarded for asking, and reads the asking as enthusiasm.
+- **A child who gets something right:** gets a real event made of it, in front of the group.
+- **A child who says they have not finished:** gets taken at their word and left alone.
+- **The other eight in the room:** get identical attention in the same hour, which is both her
+  ethic and her constraint.
+- **The district office:** she would ask for more if she thought it would change anything, and
+  she does not, and has not for years.
+- **Her husband:** starts dinner before she is home from the driving.
 
 ## Likes, dislikes, habits
 
-- **Likes:** a puzzle landing for the whole room at once. Writing new material on an unpressured weekend.
-- **Dislikes:** the transitions, five minutes just getting nine kids into chairs, every single week.
-- **Habits:** answers a request for more difficulty with a statement about time remaining.
+- **Likes:** a puzzle landing for the whole room at once. Writing new material on an unpressured
+  weekend.
+- **Dislikes:** the transitions.
+- **Habits:** answers a request about level with a statement about time. Holds the sheet up over
+  her head. Uses every name, every time.
 
-## Facts a rewriter needs
+## Age and change
 
-- Full name: Diane Prahl. Age 39.
-- Married, two children past elementary age, one prior career as a classroom second-grade teacher.
-- District's sole traveling gifted specialist: five groups, five buildings, roughly forty-five students total; Chloe's group is nine kids on Thursdays.
-- Graduate endorsement in gifted education and differentiated instruction.
-- No confirmed contact with Chloe's parents, Dr. Ammons, or the school's broader file on Chloe.
+Eleven years into the travelling role and eight in a classroom before it, and the shape of her
+is set by the transition between the two. In the classroom she differentiated well enough that
+it is the reason she was given this job, which is the joke nobody has told her: she was promoted
+out of the only setting where the skill she was promoted for could be used. Written earlier she
+is the same warmth with a room of her own and the capacity to act on what she notices. Written
+later, unchanged, unless somebody finally asks her what she needs, in which case she has the
+answer ready and it arrives fast, complete, and slightly too loud for the meeting she is in.
 
-## Known problems
+## Do not write her as
 
-- Zero appearances outside chapters/08. The earlier brief's "27 mentions" is almost entirely repetition of her name within that one chapter, not a spread across the book.
-- Two of her lines are reported without quotation marks, "well done" and "that's absolutely fine, take your time." Flag for the author.
-- No scene shows her alone or reflective. Her private awareness of the mismatch is this sheet's invention, not textual.
+Lazy, checked out, or quietly aware. All three are available and all three are wrong. She works
+hard and visibly, every refusal she makes is wrapped in genuine warmth, and nothing suggests she
+privately recognises the mismatch and chooses not to act. Giving her that insight builds a
+different and much worse character: the whole force of her is that a good person doing a good
+job inside a bad allocation produces the same outcome as neglect.
 
 ## Do not confuse with
 
-**Laura Vance**, the second-grade teacher. Both are warm, well-liked women who decline to escalate difficulty for Chloe. The dividing cue: Vance's failure is attention, she doesn't look up at the moment it matters. Diane's failure is capacity dressed as patience: she is looking straight at Chloe when she refuses her, with a full caseload behind her explaining why the capacity isn't there.
+**Laura Vance.** Both are warm, well-liked women who decline to escalate difficulty for the same
+child. The dividing cue: Vance's failure is attention, she does not look up at the moment it
+matters. Diane's failure is capacity dressed as patience, and she is looking straight at the
+child when she refuses her, with a full caseload behind her explaining why the capacity is not
+there.
+
+---
+
+## Book-specific: navigation and continuity only
+
+*Facts a writer must not contradict. Nothing here characterises her. Delete this section and the
+sheet is still complete.*
+
+**Appears in:** chapters/08_the_asking.md only.
+
+**Continuity:** Full name Diane Prahl, called Mrs. Prahl. Age 39. Married, two children past
+elementary age, eight prior years as a classroom second-grade teacher. Graduate endorsement in
+gifted education and differentiated instruction, earned six years into her career. The district
+folded five building-based gifted posts into one travelling role and asked her to take it; she
+inherited the cart and the four buildings rather than choosing them. Five groups, five buildings,
+roughly forty-five children; Chloe's group is nine children on Thursdays, wheeled in at ten past
+one. The cart has three shelves, a bin of dice on top, and a laminated sign reading THINKING
+CORNER. Roughly fifty minutes of driving a day on top of five hours of teaching, leaving about
+thirty-five real teaching minutes in the hour. No confirmed contact with Chloe's parents, with
+Dr. Ammons, or with the school's file on Chloe.
