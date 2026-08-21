@@ -2062,7 +2062,7 @@ Her parents sit in the living room and listen to her going back and forth over t
 
 Her mom's voice drops to something Chloe catches only just. "I know what she's like."
 
-The house comes up in April, on a Saturday afternoon, with Chloe two streets over at a birthday party they are due to collect her from at four. Her dad has the letter open on the kitchen table in front of him, and her mother stays standing at the counter for the whole of it with the mug in both hands.
+The house comes up in April, on a Saturday, with Chloe up the road at the Petersons' for the afternoon. Her dad has the letter open on the kitchen table in front of him, and her mother stays standing at the counter for the whole of it with the mug in both hands.
 
 "They're offering us a house," her dad says, "ten minutes from campus, furnished, and they pay for it the whole time she's enrolled, and if she leaves it stops, which is the only condition on the deal."
 
@@ -2082,7 +2082,7 @@ Dave looks at the table.
 
 "It's how it is, though, and you know it is, because you said yes to the whole idea back in July, before either of us had even heard the word furnished."
 
-Her mother puts the mug in the sink and runs water into it. Her dad folds the letter back along the crease it came in, and at four he drives over and collects Chloe, who talks about the party from the car door all the way up the driveway.
+Her mother puts the mug in the sink and runs water into it. Her dad folds the letter back along the crease it came in, and at four he walks up the road for Chloe, who talks the whole way back down it about a dog that is allowed on the furniture.
 
 They drive out on the Friday for the day where Halstead looks at her, and the building is a different building in April than it was in July, because it is raining and every hall in it is full of people.
 

@@ -14,7 +14,7 @@ On the first morning the sheet in her box has one more line on it than last year
 
 Her three new ones are chemistry, statistics and biology, and Ruth has the same three in a different order but is smug about getting chemistry first. Kavi got none of the three he asked for, and at breakfast he puts his objections in order with his own sheet lying flat on the table beside the tray.
 
-"The first one is that the form asks you for three and I got zero of three, and zero of three is what a form gets you when nobody reads it."
+"The first one is that the form does nothing, because it asks you for three and it gave me zero of three."
 
 "They read it," Ruth says. "They counted how many people wanted each thing, and then they did what they were going to do anyway."
 
@@ -88,7 +88,7 @@ She runs it again on the Friday, drying every piece of glass twice before she st
 
 "You dried the glass, you took a fresh bottle off the shelf, and you tied your sleeve back out of the way, which is three changes and one result." He is already two benches down. "Run it wet next Friday and find out which of them you fixed."
 
-So the Friday after that she runs it wet on purpose and gets the grey back, and the Friday after that she runs it dry off the old bottle and gets white, and it is the third week of November by the time she writes glassware in the back of the notebook with a date beside it.
+So the Friday after that she runs it wet on purpose and gets the grey back, and the Friday after that she runs it dry off the old bottle and gets white, and it is November by the time she writes glassware in the back of the notebook with a date beside it.
 
 First aid is Mondays, and it is on a clock from the first week. In the second term the lights come down to about what you get off a dashboard at night, and in the third term the lights come down, a radio plays somewhere behind her, left running the whole time, and a man stands four feet away asking her the same question over and over in a raised voice.
 
