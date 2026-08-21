@@ -82,11 +82,11 @@ Chloe keeps her eyes on him. "The lead researcher. She didn't make me sign anyth
 
 "And you agreed to that," he says.
 
-"Yeah."
+"I did. She'd already gotten everyone else on it to agree to the same thing, and it seemed fair to hold the line she was asking me to hold, not just the one she was asking them to hold."
 
 Whitaker fills half a page before he looks up. "Anything else in that category?"
 
-"Two others," Chloe says. "Same thing. Same reason."
+"Two others," Chloe says. "Same kind of project, same person asking, and I gave her the same answer both times."
 
 Whitaker turns back a page, cross-checking his own notes. "Would you tell me if I said it was necessary?"
 

@@ -18,51 +18,51 @@ The diner does waffles all night, the syrup chained to the napkin holder, a juke
 
 They stay two hours. Sam wants to know whether the dent in Amberg's car is really shaped like a mailbox, and Ruth, who asked him outright once and got a straight answer, says it is.
 
-"He told you that."
+"He told you that? Just like that, no hedging, no story about how it got there?"
 
-"He tells anyone who asks. He doesn't act like it's a secret."
+"He tells anyone who asks, straight out. It's not a secret to him, it's just a dent."
 
-"I'd act like it was a secret."
+"I'd act like it was a secret if it were my car. I'd have a whole story ready for anyone who noticed it."
 
-"You'd have told the whole school inside a week," Ruth says. "You'd have brought people out to look at it."
+"You'd have told the whole school inside a week," Ruth says. "You'd have brought people out to look at it, given them the whole tour."
 
 She turns her coffee cup a quarter turn on the table.
 
-"My brother's in. The letter came Thursday."
+"My brother's in, the letter came Thursday, and my mother read me the whole thing over the phone twice before I got a word in edgewise."
 
 Sam puts his fork down. "How old is he now, seven?"
 
-"Seven in September."
+"Seven in September, so he's got a whole year of hearing about it before he even gets here."
 
-"Nine years behind you." He picks the fork back up. "He's going to hear about you for nine straight years."
+"Nine years behind you, and he'll spend every one of them hearing your name before he even meets you." He picks the fork back up. "He's going to hear about you for nine straight years, whether he asks for it or not."
 
-"He already knows that. He's been practising looking unimpressed." Ruth turns the cup again. "He asked me what the food's like. That was the whole letter conversation. The food."
+"He already knows that, and he's been practising looking unimpressed about it since he could talk." Ruth turns the cup again. "He asked me what the food's like, and that was the whole letter conversation, start to finish, just the food, not the campus or the classes."
 
 "What are you going to tell him?"
 
-"I'll tell him about the waffles here instead." She says it flatly, but she's looking at the cup and not at any of them.
+"I'll tell him about the waffles here instead, since that's a story he can actually picture." She says it flatly, but she's looking at the cup and not at any of them.
 
-Sam has the syrup upside down over his second plate, timing it. "Ten weeks starting Friday," he says. "Anyone actually doing anything."
+Sam has the syrup upside down over his second plate, timing it. "Ten weeks starting Friday," he says. "Anyone actually doing anything with the summer, or is it the usual."
 
 "I'm doing the forge both sessions again," Chloe says. "Same as last year."
 
 "You said that like it was going to be different this year." Something in Ruth's face concedes the point, amusement plain across it.
 
-"It's not not going to be different. It's just also going to be the forge."
+"It's not not going to be different. It's just also, on top of whatever else it is, going to be the forge, same as it always is."
 
 Sam has the specials card up off the table, holding it at arm's length. "*Come hither for our world famous short stack.*" He puts it down. "*Hither.* The last time anyone said *hither*, it was Shakespeare."
 
-"It's in the dictionary," Ruth says. "That makes it a word."
+"It's in the dictionary," Ruth says. "That makes it a word, whether you like the sound of it or not."
 
-"It makes it archaic. There's a difference."
+"It makes it archaic, and archaic is a different category entirely from ordinary. There's a difference between a word being real and a word being something a person would actually say out loud."
 
-"Say a sentence with it in that isn't from a play."
+"Say a sentence with it in that isn't from a play, then, if it's so ordinary."
 
-"Hither, thither, and yon," Sam says. "That's three, and you only asked for one, so I win twice."
+"Hither, thither, and yon," Sam says. "That's three sentences, and you only asked for one, so I win twice over."
 
-"You just said hither."
+"You just said hither yourself, not even five seconds ago. That's the whole argument, right there, coming out of your own mouth."
 
-"That's different." They argue about it until the waitress comes back with the check, and Nadia has exact change out on the table before it lands, four ways, no discussion.
+"That's different, because I said it on purpose to prove a point." They argue about it until the waitress comes back with the check, and Nadia has exact change out on the table before it lands, four ways, no discussion.
 
 There's a shopping cart in the lot behind a hardware store on the way home. Sam is in it before anybody suggests anything, knees up around his ears, and Ruth pushes him at the curb at a dead run and lets go too late. The front wheel folds sideways with a sound like a dropped pan and Sam goes over the handle into the grass strip and lies there laughing with his arms out. Nadia films the second attempt. Nadia is better at it, hitting the same curb full speed with the brake untouched, riding it out on both feet through the landing, and Chloe laughs hard enough that she has to sit down on the kerb with her head between her knees. They get eleven minutes out of a broken shopping cart. Ruth wants a fourth run and the wheel is finished, so they leave it upside down where it stopped.
 
@@ -134,25 +134,25 @@ Nadia stops with her hand on the fence. "What's that got to do with it?"
 
 Sam takes that in silence for a second.
 
-"The guns are supposed to make it harder," he says. "That's the whole point of a gun."
+"The guns are supposed to make it harder," he says. "That's the whole point of carrying one in the first place."
 
-"A gun's a prop unless you use it." Ruth has her bag back on her shoulder. "They let you walk all the way in. They gave you the wrist. They stood in a clump and waited their turn." She shrugs. "They fought like ten-year-olds. You could have done that at ten."
+"A gun's a prop unless you actually use it, and every one of them just stood there holding theirs." Ruth has her bag back on her shoulder. "They let you walk all the way in. They gave you the wrist. They stood in a clump and waited their turn." She shrugs. "They fought like ten-year-olds, the whole seven of them. You could have done that at ten."
 
-"Fine." Sam puts his hands up and lets them drop. "So who do I fight."
+"Fine. Say that one was too easy." Sam puts his hands up and lets them drop. "So who do I actually fight, then?"
 
 "Go back and fight the waitress," Nadia says.
 
-Sam stops walking. "What?" he asks.
+Sam stops walking. "What? Are you actually serious right now?" he asks.
 
-"She's fifty," Ruth says. "She's an adult with a job. She's had thirty-four more years than you have."
+"She's fifty, for one thing," Ruth says. "She's an adult with a job she's worked for years. She's had thirty-four more years of practice at this than you have."
 
 "That's thirty-four years of being in situations," Nadia says. "You've had sixteen and eleven of them were at school."
 
-Sam thinks about it for longer than the joke needs. "She'd take me apart before I got a hand up."
+Sam thinks about it for longer than the joke needs. "She'd take me apart before I even got a hand up, and everyone here knows it."
 
-"The waitress would take you apart," Nadia agrees.
+"The waitress would take you apart," Nadia agrees, "and she wouldn't even set the coffee pot down to do it."
 
-"Any of us," Ruth says. "Not just him."
+"Any of us could say the same," Ruth says. "Not just him. She'd probably enjoy it, too."
 
 Sam laughs at that most of the way to the corner, and Ruth lets him have it. They cross the last empty intersection at a walk, four sets of footsteps falling into the same rhythm on their own, faster than the walk down had been. They argue about the waitress the whole way home.
 

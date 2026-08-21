@@ -44,9 +44,9 @@ Ruth's own prompt asks her to describe a time she failed, and she spends forty m
 
 "Pick one and write it down," Kavi says, eyes on his own screen.
 
-"That's not an answer."
+"That's not an answer, that's just telling me what to do instead."
 
-"It's a deadline."
+"It's a deadline. Pick one, or the deadline picks one for you at midnight."
 
 A second prompt asks about a place that changed her. Chloe considers the forge and cannot get it down to six hundred words either, so she writes about the reservoir instead, nine miles out from her parents' house, and the hill near the top she has to stand up on the pedals to clear. It comes out at four hundred and ninety words and she does not have to cut a line of it, which she takes as a bad sign for about a minute and then submits anyway.
 
@@ -134,7 +134,7 @@ Another asks Sam what he's good at, expecting a list with some hedging in it.
 
 "How do you know?"
 
-"There's a board." He says it the way you'd say there's a clock. "It only measures the drill, though. The drill's got a clock on it and a real one wouldn't. Odile's second, close enough it goes her way plenty of the time."
+"There's a board, right outside the gym, and anyone can walk by and check it." He says it the way you'd say there's a clock. "It only measures the drill, though. The drill's got a clock on it and a real one wouldn't. Odile's second, close enough it goes her way plenty of the time."
 
 The rep asks who Odile is. Sam points across the dining hall with his fork.
 
@@ -170,13 +170,13 @@ Sam comes in and sits down on the end of the bed with a sandwich he brought up f
 
 "They lie."
 
-"All of us, though?"
+"All of us, though? Every single one of us got a letter that lied to us?"
 
 "How many did you get?"
 
-"Twelve of fourteen."
+"Twelve of fourteen, same as I keep counting them."
 
-"Right." He counts something off on his fingers, using the hand with the sandwich in it. "I got eleven of twelve. Ruth got everything she asked for. Kavi got three out of three." He points the sandwich at the letters. "That's not four percent of anything."
+"Right, that tracks with what everyone else is getting too." He counts something off on his fingers, using the hand with the sandwich in it. "I got eleven of twelve. Ruth got everything she asked for. Kavi got three out of three." He points the sandwich at the letters. "That's not four percent of anything."
 
 Ruth is in the doorway by then, her own laptop still open on one arm, having come to find Chloe the same way Sam had.
 
@@ -184,7 +184,7 @@ Ruth is in the doorway by then, her own laptop still open on one arm, having com
 
 "Neither," Ruth says. "You'd think the sign was doing a job that had nothing to do with the store."
 
-"Ninety-one out of ninety-one bought something. Every one of us."
+"Ninety-one out of ninety-one bought something. Every one of us, out of ninety-one tries, and that's the number the sign should actually say."
 
 "Or you'd want your money back for the trip in," Sam says.
 

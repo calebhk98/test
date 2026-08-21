@@ -8,7 +8,7 @@ Coming down the hall at a full run, he hits her hard enough that she drops the b
 
 The bag has skidded into the wall. Chloe picks it up before anyone else can, the rubber bands still around the socks inside it in the shape her mother rolled them in, and keeps hold of it the rest of the way up.
 
-Ruth comes up behind him, her hand already out for the bag. "You said probably not," she says.
+Ruth comes up behind him, her hand already out for the bag. "You said probably not," she says, "and then you got in the car and came anyway, so I want to know which part of that was even true."
 
 "I said probably not once, in February, so it doesn't count as a thing I said."
 
@@ -18,21 +18,21 @@ Her room has a bed, a desk, a window, and a girl from Michigan named Fen who has
 
 Ruth sits on the end of Fen's bed with her shoes on and talks the whole time Chloe is unpacking, which takes about six minutes in total. Priya came in January and is on second floor. A boy in their year broke his wrist in February doing something everybody has a different account of. The bread is good on Wednesdays and Fridays, and everybody on the floor has a theory about why, and no two theories match. At the bottom of the bag is the envelope with her name on it, and Chloe puts it in the desk drawer with a folder on top.
 
-"What's your last name, spelled out?"
+"What's your last name, spelled out? I want to get it right the first time instead of guessing at it for a month."
 
-"Aymar. A, Y, M, A, R." Ruth watches her write it down on the inside cover of a notebook. "Why?"
+"Aymar. A, Y, M, A, R." Ruth watches her write it down on the inside cover of a notebook. "Why? Everyone at camp already just said it wrong and I let them."
 
-"I want your phone number too."
+"I want your phone number too, so I've got someone besides Sam to call at this school."
 
 Ruth just gives her the number this time. Chloe writes it under the name, then, leaving four lines, writes Sam's name at the top of the fifth.
 
-Kavi turns up an hour later and stands in the doorway with his arms folded until somebody looks at him. "I have been through this whole building since lunch. I went to the office, then the laundry, then outside to the road, because I thought you might still be sitting in the car. Then a girl in the stairwell whose name I don't even know told me you'd been here an hour." He points down the corridor at nobody. "Sam knew."
+Kavi turns up an hour later and stands in the doorway with his arms folded until somebody looks at him. "I have been through this whole building since lunch. I went to the office, then the laundry, then outside to the road, because I thought you might still be sitting in the car. Then a girl in the stairwell whose name I don't even know told me you'd been here an hour." He points down the corridor at nobody. "Sam knew the entire time and let me do the whole tour anyway."
 
 "He probably forgot," Ruth says. "He's been telling everyone for a week, so it stopped feeling like news to him before it even happened."
 
-"That's worse than not knowing. If you don't know then it's nobody's fault, but he knew and he forgot, and that's a decision about how much it mattered." Kavi sits down on the floor by the door. "What."
+"That's worse than not knowing. If you don't know then it's nobody's fault, but he knew and he forgot, and that's a decision about how much it mattered." Kavi sits down on the floor by the door. "What. I'm allowed to think that's worse without both of you looking at me like that."
 
-"What's your last name," Chloe says.
+"What's your last name," Chloe says. "You're going right under Ruth's, so I've got everyone except Sam's number."
 
 At dinner she counts eleven faces she knows before the food comes and gives up counting after that. Of the ninety who were at camp, twenty-some came back that first fall, and more came the year after, drifting in a term or two at a time until it stopped being a thing anybody remarked on. On the way out Sam takes her round by the long corridor to show her a window that sticks half an inch open no matter how hard you push it. Then he walks straight past the noticeboards on the second floor, eyes on the corridor ahead. One of the boys at the next table asks whether she is the one who did the bridge at camp, and when she says no, he says that's fine, then carries on eating. She asks Ruth about Owen while they are carrying their trays back.
 
@@ -48,11 +48,11 @@ The lights go out on the corridor at eight. Fen stops answering partway through 
 
 Nothing.
 
-"Fen, are you asleep?"
+"Fen, are you asleep, or are you just really good at pretending?"
 
-"Nearly."
+"Nearly," Fen says, not opening her eyes.
 
-"How do you know which rock goes where?"
+"How do you know which rock goes where, in the dark, without even checking?"
 
 That gets her sitting up. "By size. Smallest closest to the door. If two look the same I hold one in each hand, and the heavier one goes first, because heavier's always a little bigger even when you can't see it." She reaches over and picks one off the sill, finding it in the dark by feel. "This one came in March. It went in fourth from the end and everything after it moved along one space. If I find a new one tomorrow, the whole row moves again. That's the only rule there is. Nobody touches them but me."
 
@@ -72,13 +72,13 @@ Breakfast is louder than dinner, because the day's shape is still up for grabs a
 
 Swimming is the first afternoon hour and the school assigns it to everybody. The pool is warm, the lane is hers for the whole hour, and the teacher stands at the shallow end and tells her what her left arm is doing until she can hear it coming before he says it. In the second week he gets in and does two lengths to show her what he means about the roll, and it is a different thing in the water than what any of them are doing. Then he gets out and carries on the sentence he was in the middle of.
 
-Priya reaches past her for the bread at dinner. "He went to the Olympics," she says. "Swimming, obviously. Somebody's mom told my mom at the thing in January."
+Priya reaches past her for the bread at dinner. "He went to the Olympics," she says. "Swimming, obviously, is there another sport that teacher looks like he'd have done. Somebody's mom told my mom at the thing in January, and now everybody knows."
 
 The second hour she picks herself, off a list on a wall, reading it alone. She picks cooking too, because Ruth is already in it. Cooking is knife work, standing up straight, cleaning as you go, plus being told for the fourth time that your onion is uneven end to end.
 
-"Yours is a triangle," the cooking teacher says.
+"Yours is a triangle," the cooking teacher says, "and a triangle cooks unevenly no matter how good your knife work is otherwise."
 
-"It is not a triangle."
+"It is not a triangle, it's just wider at one end because that's how the onion grew."
 
 "It's fine at this end and it's a triangle at that end, so the little bits go black before the big bits are even soft, and then you've got both and you haven't got either." Ruth keeps her eyes on her own board. "That's why he keeps saying it. He's said it to me six times and he'll say it to you six times."
 
@@ -92,9 +92,9 @@ She hates it for a month, but the first two weeks go badly in every subject she 
 
 "So what am I supposed to read, if there isn't a list?"
 
-"Whatever you want to read." She is putting her chair back under the desk while she says it. "The library's open all night and there's nobody on the door. Bring me what you read, write about it, and I'll mark the writing. If you read something terrible and write about it well, that's a good week."
+"Whatever you want to read, and I mean that as literally as it sounds." She is putting her chair back under the desk while she says it. "The library's open all night and there's nobody on the door. Bring me what you read, write about it, and I'll mark the writing. If you read something terrible and write about it well, that's a good week."
 
-"How many am I allowed?"
+"How many am I allowed to take out at once, is there a limit?"
 
 "As many as you can carry, and there's no card, so nobody's writing any of this down. There's nobody at the desk after seven. Take what you want, bring it back when you're finished with it, and if you lose one then come and say you lost one."
 
@@ -116,21 +116,21 @@ She spends about three weeks working out what actually gets somebody sent home f
 
 On the second floor by the stairs there is a board made of cork with sheets of paper pinned to it, and everybody walks past it. Three sheets are on it in April. One is about something called Defensive Watch, which starts at ten. One is about the library. The third is about the kitchens, and who is allowed in them, and when. None of the three says anything about anybody leaving. She reads all three of them twice, on two different days, in case she missed a line. Then she goes and asks the writing teacher, because he is the one she has decided will simply answer her.
 
-"Does anybody get sent home?"
+"Does anybody actually get sent home from here, or is that just a rumor everyone repeats?"
 
-"Not for being bad at something, if that's what you're asking, and nobody has ever been asked to leave here for being bad at something." He keeps putting papers into a case the whole time he talks. "People do go home. Their family comes and gets them. It happens two or three times a year. It's a school, it isn't a prison, and it isn't a competition you can be knocked out of."
+"Not for being bad at something, if that's what you're asking, and nobody has ever been asked to leave here for being bad at something." He keeps putting papers into a case the whole time he talks. "People do go home sometimes, because their family decides they want them home, and that happens two or three times in an ordinary year here. It's a school, it isn't a prison, and it isn't a competition you can be knocked out of."
 
 She asks Kavi about it two weeks later, on the stairs, the stairwell empty except for the two of them.
 
 "Owen didn't want to go home, and no, before you ask, I'm not guessing. I know you're about to ask me how I know." He has his shoes off and is holding them by the heels. "He was crying by the kitchens on the Thursday and I saw him, but I didn't say anything, because I was seven and I didn't know what you say to that. Then on the Saturday his mom's car was outside and he was in the back of it."
 
-"Crying about what."
+"Crying about what, though, did somebody say something to him or was it just the leaving?"
 
 "About going, because she came and got him and he didn't want to go." Kavi goes up two steps and stops with his hand on the rail. "He wasn't behind either, if that's the next one. He was doing what the rest of us were doing. He did the water thing and he did the bridge and he was fine."
 
-"Then I don't understand what happened to him."
+"Then I don't understand what actually happened to him, if being behind was a separate thing entirely."
 
-"There isn't anything to get. His mom came." Kavi looks at her from two steps up. "You keep asking about this, and you asked Ruth in April, at the trays, while I was standing right there."
+"There isn't anything to get, Chloe. His mom came and that was the whole of it." Kavi looks at her from two steps up. "You keep asking about this, and you asked Ruth in April, at the trays, while I was standing right there."
 
 Chloe picks at a thread coming loose on her sleeve. Her mother calls on Sundays at six. There is a phone in an alcove on the first floor with a chair beside it, and usually two or three people waiting in the corridor, so you learn to be fast or you learn to stop caring that they can hear you. The first Sunday runs fifty minutes and the fourth one runs twenty. Most of what she has takes eight or nine minutes to set up before it goes anywhere, and somebody behind her shifts their weight the whole time she is talking.
 
@@ -138,13 +138,13 @@ Chloe picks at a thread coming loose on her sleeve. Her mother calls on Sundays 
 
 "Yes. They put whatever's left on your tray in front of you at the end, and Ruth makes me finish it before she'll let either of us leave the table."
 
-"And is your roommate nice?"
+"And is your roommate nice, or is she one of the difficult ones you have to work around?"
 
-"She's from Michigan," Chloe says. "She's asleep by nine."
+"She's from Michigan," Chloe says. "She's asleep by nine every night, which means I basically have the room to myself after that."
 
 Her mother laughs at that, properly, for longer than the answer deserves, and it's a beat before Chloe works out that it was funny. Then there is a pause. The line has her mother's breathing in it.
 
-"Are you happy there?"
+"Are you happy there, actually happy, not just doing fine?"
 
 Chloe sits down on the floor of the alcove instead of answering straight away, the cord stretched as far as it goes. The pool. Ruth. The library that's open all night, the desk always empty. Her mother waits, letting the quiet sit on the line.
 
@@ -154,21 +154,21 @@ Chloe sits down on the floor of the alcove instead of answering straight away, t
 
 The second term starts and the subjects change over. History splits into two things. One of them is political history and the other is drawing the world on blank paper, which Chloe assumes for two weeks is a joke somebody is running on the class, because there is no textbook and no test. The teacher hands out paper and then walks around the room looking at what people have done with it.
 
-"Where does this stop? How do I know when it's finished?"
+"Where does this stop, how do I know when a country's actually finished and not just where I got tired of drawing it?"
 
 "When you can do Central Asia without stopping to think about it."
 
 She still has to stop and think her way through Central Asia. She has South America by the end of May and Europe two weeks after that, but she keeps putting the \-stans in the wrong order. All five of them, in a different wrong order every time she tries. Ruth can do the whole map, including the small islands off the top of Scotland, and is unbearable about it in a way Chloe actually likes. Physics comes in at the same changeover and biology goes out. She writes the whole list in the back of the notebook, the six subjects plus the two afternoon hours, and puts the date next to it. There are people in her year who have been here three years already, and she wants to know how long their list is, but every question she tries sounds like she is measuring herself against them, so she keeps it to herself.
 
-In the last week of June she packs. "Which one's fourth from the end now?" Chloe asks, and Fen has to check, running a finger along the sill before she answers, because one more came in during March, which Fen had kept to herself. Then Fen's rocks come off the sill into a shoebox with newspaper folded between them. Chloe opens the desk drawer, where the envelope is still under the folder she left on top of it in April, and puts them both in the bottom of the bag. Ruth walks her down to the front steps, where Sam is already out on the grass talking to somebody else's grandmother about something that requires both his arms.
+In the last week of June she packs. "Which one's fourth from the end now, is it still the one from March?" Chloe asks, and Fen has to check, running a finger along the sill before she answers, because one more came in during March, which Fen had kept to herself. Then Fen's rocks come off the sill into a shoebox with newspaper folded between them. Chloe opens the desk drawer, where the envelope is still under the folder she left on top of it in April, and puts them both in the bottom of the bag. Ruth walks her down to the front steps, where Sam is already out on the grass talking to somebody else's grandmother about something that requires both his arms.
 
 "Ten weeks is a long time to not do anything," Ruth says. "My mom's got me at my cousin's for two of them, and there's nothing there except a lake and a shop."
 
-"I'll call you on a Wednesday," Chloe says.
+"I'll call you on a Wednesday, same time as always, so you know when to expect it."
 
-"Wednesday's fine," Ruth says. "Not before ten, my dad's asleep."
+"Wednesday's fine," Ruth says. "Not before ten, though, because my dad's asleep by then and the phone's right outside his door."
 
-"September," Chloe says.
+"September," Chloe says, because that's the whole of it in front of Sam and somebody's grandmother.
 
 "September, then," Ruth says.
 

@@ -17,7 +17,7 @@ A man from the loading dock asks her, her first week, how her weekend was, and m
 College runs alongside it. Fifteen credits in the autumn, picked for what sounds interesting rather than what a first-year is supposed to take, cost her about six hours a week once the reading is counted in. Most of it gets done on the bus, with a highlighter she loses twice and replaces before anyone asks. A political history course assigns four hundred pages on a single treaty negotiation, the same negotiation whose original language she's already half-read for the blog. She finishes it in an afternoon rather than the assigned two weeks, then spends the extra time starting the reading for the following module early. In the spring she takes twenty-one credits and an evening seminar on top of them, mostly because the registrar told her she couldn't and then, asked which rule said so, came back off hold four minutes later with an answer that only sounded like one.
 
 
-"There isn't anything written down," the registrar says. "It's more of a guideline."
+"There isn't anything written down," the registrar says. "It's more of a guideline we give first-years, so a heavy load waits until they've learned to pace a term."
 
 
 "Is a guideline the same as a rule, for the purpose of this form?"
@@ -60,7 +60,7 @@ The first time it's a certification page. A client wants to know why a birth cer
 Chloe starts again. "It means if he wants his brother's certificate translated too, that's a second signature, not a second stapled copy." Deb writes that down, word for word, and reads it back to the client over the phone twenty minutes later.
 
 
-The second time it's a discount. A returning client's manual repeats forty percent of its own sentences from the version they submitted in March, and the software prices the repeats lower the second time around. Chloe explains the match logic, the percentage bands, the way a repeated sentence still counts as new if one word inside it has changed. Deb stops her halfway through. "In English."
+The second time it's a discount. A returning client's manual repeats forty percent of its own sentences from the version they submitted in March, and the software prices the repeats lower the second time around. Chloe explains the match logic, the percentage bands, the way a repeated sentence still counts as new if one word inside it has changed. Deb stops her halfway through. "Okay, but in English, what does that actually mean for what I charge him?"
 
 
 "It's like Tyler's spelling test," Chloe says, the comparison out of her mouth before she's decided to use it. "If he already learned ninety of the hundred words last year, you don't pay someone full price to teach him the same ninety again. You pay for the ten he hasn't seen yet."

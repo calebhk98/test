@@ -70,7 +70,7 @@ The room stays quiet for a second. The one with the coffee sets it down on the n
 
 "I'm not calling anyone about this," she says. "I'm not spending a police officer's afternoon on a USB stick. You wasted whatever you charged for it, and I wanted you to hear that from me instead of some other way." She looks around the room once, the two laptops, the desk, the coffee going cold. "If you're going to come at me, come at me for real. A cleaner's an insult, not an attack."
 
-The one behind the desk looks at the other three before he looks back at her. "That's fair," he says. "I'm sorry."
+The one behind the desk looks at the other three before he looks back at her. "That's fair," he says. "We read the client wrong, and we won't make that mistake twice. I'm sorry it happened this way."
 
 She's back down the steel stairs before he's finished saying it, and keeps the same pace all the way to the car.
 

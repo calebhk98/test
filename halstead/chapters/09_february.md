@@ -28,19 +28,19 @@ Her mother holds her on the floor for a long time after she has stopped. Neither
 
 Later, when she is in bed and supposed to be asleep, the two of them are at the kitchen table with the door mostly shut, and their voices come up through the part of the floor that's thin.
 
-"She said take my birthday, Dave."
+"She said take my birthday, Dave. She's seven years old, and she stood there in that gap and offered up her own birthday like it was money she'd saved."
 
-"I heard her. I was standing right there with a dishcloth in my hand."
+"I heard her. I was standing right there in the doorway with a dishcloth in my hand, and I've been standing somewhere in this house every night since, trying to work out what I'm supposed to say back to that."
 
-"She's seven years old and she offered me her birthday like it was money she'd saved up."
+"You haven't said it back, though, that's exactly what I'm telling you. I have been the only one saying anything about any of this since August, and I am so tired of being the only one who has to."
 
-"I know exactly what she offered you, I was about four feet away from her."
-
-Her voice comes harder now. "Then say something about it, because I have been the only one saying anything about it since August."
+Her voice comes harder now. "Say something, Dave. Actually say something, instead of standing in doorways with a dishcloth."
 
 A chair moves on the kitchen tiles, and somebody runs the tap three or four seconds before shutting it off again.
 
-"What do you want me to say, Meg? You know what I think, because I've thought it since the car ride home in July and you've known that the whole time."
+"What do you want me to say, Meg? You already know what I think. I've thought it since the car ride home in July, I've thought it every day since, and you've known that the whole time without me having to say it out loud at this table."
+
+"Then say it out loud at this table, because I need to actually hear it from you, not guess at it from the other side of the room."
 
 Chloe lies with her eyes open and her hands under the pillow, listening to the fridge. Then her dad says something she can't make out at all, and her mom says the words four hours, in the voice she uses about a thing she has already lost.
 
@@ -92,11 +92,11 @@ The house comes up in April, in the living room, with Chloe on the rug in front 
 
 "They're offering us a house," her dad says. "Ten minutes from campus, furnished, and they pay for it the whole time she's enrolled. If she leaves it stops, and that's the only condition on the deal."
 
-Her mother keeps hold of her mug. "No. Absolutely not."
+Her mother keeps hold of her mug. "No. Absolutely not, and I'm not going to spend an hour talking myself into it either."
 
-"Meg. We'd see her every day of the week instead of nine weeks a year."
+"Meg. We'd see her every day of the week instead of nine weeks a year, that's the whole trade they're offering us."
 
-"I heard you the first time and I said no."
+"I heard you the first time, Dave, and I said no the first time too, and neither of those things has changed in the last thirty seconds."
 
 Dave rubs a hand over his face. "Then give me one reason, because I have been sitting here trying to think of one and I can't."
 
@@ -104,9 +104,9 @@ Dave rubs a hand over his face. "Then give me one reason, because I have been si
 
 Dave looks down, not at either of them.
 
-"That's a hell of a way to put it, Meg."
+"That's a hell of a way to put it, Meg. You make it sound like I already agreed to hand over the roof over her head."
 
-"It's how it is, though, isn't it."
+"It's how it is, though, isn't it. You said yes to the whole idea back in July, before either of us had even heard the word furnished."
 
 On the rug, Chloe has stopped moving. She catches enough of it to string together, house, and roof, and nowhere, and gets up once in the middle of it to check through the window that the car is still in the driveway. Then she sits back down in front of the television and lets the rest of it go.
 
