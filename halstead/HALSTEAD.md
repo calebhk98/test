@@ -3510,7 +3510,7 @@ Sam looks up. "How."
 
 Nadia stops with her hand on the fence. "What's that got to do with it?"
 
-"If you had one usable skill," Chloe says, "any skill at all, you would make money doing literally anything other than this. You wouldn't be standing behind a hardware store at two in the morning taking phones off teenagers, because that's the worst-paid dangerous job there is. Which means they have none." She looks back down at the man she's just finished checking. "People who fight like that, over somebody's phone, at two in the morning — something's actually wrong with some of them. Not hurt. Wrong the way it doesn't fix. You didn't fight seven adults, Sam. You beat up seven people who couldn't tell you their own address."
+"If you had one usable skill," Chloe says, "any skill at all, you would make money doing literally anything other than this. You wouldn't be standing behind a hardware store at two in the morning taking phones off teenagers, because that's the worst-paid dangerous job there is. Which means they have none." She looks back down at the man she's just finished checking. "People who fight like that, over somebody's phone, at two in the morning — that's retarded. You didn't fight seven adults, Sam. You beat up seven people who couldn't tell you their own address."
 
 Sam takes that in silence for a second.
 
