@@ -206,6 +206,7 @@ def measure(text, floor=40):
     chapter by twenty points or more. The sampled form exists to remove that
     dependence, and it cannot do so without a full window.
     """
+    full_words = len(words(text))
     text, transcript_share = strip_transcript(text)
     paras = [p for p in paragraphs(text) if p.strip() != "---"]
     sl_all = [(s, len(words(s))) for p in paras for s in sents(p)]
@@ -269,6 +270,11 @@ def measure(text, floor=40):
         "negative": 100 * negative / n_s,
         "andrate": 100 * lw.count("and") / n_w,
         "_words": n_w,
+        # The chapter as written, transcript included. Every graded measure
+        # excludes chat lines, which is right for reading grade and wrong for
+        # length: it made all five chat chapters look hundreds of words short
+        # of the floor when only one of them is. Judge length on this.
+        "_words_all": full_words,
         "_sentences": n_s,
         "_paragraphs": len(para_w),
         "_transcript": transcript_share,

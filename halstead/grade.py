@@ -98,7 +98,7 @@ def rule(title):
 # metric -> (label, goal, comparison, source of the goal)
 #   ">=" pass at or above, "<=" pass at or below, "~" pass within the band
 GOALS = [
-    ("_words",   "word count",                   (2000, 4000), "~",  "author"),
+    ("_words_all", "word count",                 (2000, 4000), "~",  "author, transcript included"),
     ("fk",       "reading grade (Flesch-Kincaid)", 9.0,        ">=", "author, see band"),
     ("lexile",   "Lexile (approx)",               1000,        ">=", "author"),
     ("ari",      "reading grade (ARI)",           9.0,         ">=", "author, tracks F-K"),
@@ -200,6 +200,21 @@ def one_chapter(path):
         print(f"  {label:<40}{v:9.1f}{gtxt:>14}  {mark:<6}{src}")
 
     d = dialogue_share(path)
+    pgm = load("prose_grade.py")
+    tshare = (pgm.measure(Path(path).read_text(encoding="utf-8"), floor=10)
+              or {}).get("_transcript", 0)
+    if d and tshare >= 25:
+        # A chat chapter carries its dialogue as transcript lines, which are
+        # stripped before measurement, so the quoted-share and spoken-mean
+        # gates below are measuring the handful of lines that happen to sit in
+        # quotation marks. Chapter 32 scored 0.2% quoted and a spoken mean of
+        # 2.0 while being mostly people talking to each other.
+        print("  " + "-" * 84)
+        print(f"  dialogue measures skipped: {tshare:.0f}% of this chapter is chat")
+        print("  transcript, which is stripped before measurement, so quoted share")
+        print("  and spoken mean would describe a few stray lines rather than the")
+        print("  chapter. Read the transcript itself.")
+        d = None
     if d:
         print("  " + "-" * 84)
         print(f"  {'dialogue, share of words quoted %':<40}{d['quoted']:9.1f}{'>= 15':>14}  "

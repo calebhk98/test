@@ -5605,7 +5605,7 @@ The exercise runs four days and Sam is on the receiving end of most of it.
 
 Staging is a gravel lot behind a row of tents, a folding table under a work light, and a line of soldiers waiting their turn at it in the cold. Sam's breath fogs the whole time he's standing in it. Somebody behind him in the line is arguing about a missing glove liner. Somebody two places ahead of him gets handed a second flashlight when the first one won't come on.
 
-When he gets to the front a sergeant hands him a compass, a red-lens flashlight, and a card with a six-digit grid on it. "You'll be moving between these two points on foot, at night," the sergeant says, tapping the card once against the table. "There's an opposing element working the ground the whole way between them. They're briefed to take you if they can, and they pick their own timing, not you, so plan on them finding you before you find them." Sam signs for the compass on a clipboard that's gone soft with damp, the pen skipping twice before it takes. He checks the bearing against the card, folds the card into his breast pocket, buttons the pocket, and heads for the tree line on his own initiative. The ground is frozen at the edges, enough to hold his boot print, and soft in the middle, enough to lose it. February does both at once, every year, on this range.
+When he gets to the front a sergeant hands him a compass, a red-lens flashlight, and a card with a six-digit grid on it. "You'll be moving between these two points on foot, at night," the sergeant says, tapping the card once against the table. "There's an opposing element working the ground the whole way between them. They're briefed to take you if they can, and they pick their own timing, not you, so plan on them finding you before you find them." Sam signs for the compass on a hand receipt that's gone soft with damp, the pen skipping twice before it takes. He checks the bearing against the card, folds the card into his breast pocket, buttons the pocket, and heads for the tree line on his own initiative. The ground is frozen at the edges, enough to hold his boot print, and soft in the middle, enough to lose it. February does both at once, every year, on this range.
 
 They come at him three times.
 
@@ -5615,7 +5615,7 @@ The first is at a fence line a little after midnight on the first night: two str
 
 Sam has the wire in his hand, easing it down to step over, when the nearer one comes off the post he's been leaning against. Sam gets a forearm up before the man's full weight lands, turns with it instead of against it, and puts him down into the wet grass on the near side of the fence. The second man is already moving. Sam meets him coming forward rather than waiting for him to arrive, catches the arm reaching for his collar, and uses the same turn a second time. Thirty seconds, maybe less.
 
-He checks both of them, hand flat on each sternum, breathing fine, exactly the shape of the check he's been drilled to give. Then he's back over the fence and moving on the bearing, wire still humming faintly behind him where his boot caught it. He runs it back once, on the walk, decides it went fine, and leaves it at that.
+He checks both of them, hand flat on each sternum, breathing fine, exactly the shape of the casualty check he's been drilled to give. Then he's back over the fence and moving on the bearing, wire still humming faintly behind him where his boot caught it. He runs it back once, on the walk, decides it went fine, and leaves it at that.
 
 ________________
 
@@ -5661,11 +5661,11 @@ The major's eyebrows go up. Somebody two rows back stops picking at the boot lac
 
 The major looks at him across the width of the room for a while, laser pointer off now, clipboard shut under his arm. Then he opens it again and finds the page he wants.
 
-"That was the assessment," he says, "and what you've just handed me is two notes and an opinion, so we'll take the notes first, and you can say the culvert part again, slower, to the room instead of to me."
+"That was the assessment," he says, "and what you've just handed me is one note and one opinion, so we'll take the note first, and you can say the culvert part again, slower, to the room instead of to me."
 
 "Thirty feet of open ground to read it from and I went in anyway," Sam says. "I was watching the clock instead of the pipe."
 
-"Everybody write that down, because that is the entire reason there is a culvert on this overlay, and we are three soldiers into the afternoon before anybody in this room says it out loud." The major writes it on the top sheet himself, unhurried, eyes on the page rather than on Sam until he has finished with it. "The opinion is a separate matter. Difficulty is set above you, Marsh, and it is set a good way above me as well, and a soldier who wants the next one made harder for him has decided the exercise is about him, when the exercise is about everybody sitting in front of me and a fixed number of hours of somebody else's night."
+"Everybody write that down, because that's the entire reason there's a culvert on this overlay, and we're three soldiers into the afternoon before anybody in this room says it out loud." The major writes it on the top sheet himself, unhurried, eyes on the page rather than on Sam until he's finished with it. "The opinion is a separate matter. Difficulty is set above you, Marsh, and it's set a good way above me as well, and a soldier who wants the next one made harder for him has decided the exercise is about him, when the exercise is about everybody sitting in front of me and a fixed number of hours of somebody else's night."
 
 The soldier who went all four days untouched turns around in the front row to look at Sam, and turns back before the major has finished writing.
 
