@@ -34,7 +34,7 @@ Ruth reads it over her shoulder before she can close the laptop. "That's not the
 
 "Because getting it to six hundred is harder than getting it to four thousand." Chloe cuts it three separate times before it holds at six hundred and eleven.
 
-Sam finishes his in under an hour and shuts the laptop harder than it needs. "Ten pages a week for four years," he says, "and the thing that decides where I spend the next four is a paragraph. At that length they're guessing."
+Sam finishes his in under an hour and shuts the laptop harder than it needs. "Ten pages a week for four years," he says, "and the thing that decides where I spend the next four is a paragraph. At that length they're guessing, not reading, and everyone who wrote one of these knows it."
 
 Kavi finishes in twenty minutes, exactly six hundred and one words, and submits it straight off, unread.
 
@@ -134,7 +134,7 @@ Another asks Sam what he's good at, expecting a list with some hedging in it.
 
 "How do you know?"
 
-"There's a board, right outside the gym, and anyone can walk by and check it." He says it the way you'd say there's a clock. "It only measures the drill, though. The drill's got a clock on it and a real one wouldn't. Odile's second, close enough it goes her way plenty of the time."
+"There's a board, right outside the gym, and anyone can walk by and check it." He says it the way you'd say there's a clock. "It only measures the drill, though, not anything that happens outside the four walls of the gym. The drill's got a clock on it and a real one wouldn't. Odile's second, close enough it goes her way plenty of the time."
 
 The rep asks who Odile is. Sam points across the dining hall with his fork.
 
@@ -176,7 +176,7 @@ Sam comes in and sits down on the end of the bed with a sandwich he brought up f
 
 "Twelve of fourteen, same as I keep counting them."
 
-"Right, that tracks with what everyone else is getting too." He counts something off on his fingers, using the hand with the sandwich in it. "I got eleven of twelve. Ruth got everything she asked for. Kavi got three out of three." He points the sandwich at the letters. "That's not four percent of anything, not the way they mean it."
+"Right, that tracks with what everyone else is getting too." He counts something off on his fingers, using the hand with the sandwich in it. "I got eleven of twelve. Ruth got everything she asked for, every school on her whole list. Kavi got three out of three, the same three he actually wanted." He points the sandwich at the letters. "That's not four percent of anything, not the way they mean it."
 
 Ruth is in the doorway by then, her own laptop still open on one arm, having come to find Chloe the same way Sam had.
 

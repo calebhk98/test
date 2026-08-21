@@ -88,7 +88,7 @@ Her mom makes a sound, and Chloe can't tell what kind it is from out here, since
 "Right. Here's the thing I want you to understand about the report when it comes, because it's going to have one big number on the front of it, a single composite that averages two very different pictures into one score, and that number is going to be lower than it should be, low enough that a school skimming for a label could miss her without ever seeing the two halves it was built from. The talking-and-reasoning part of this, she's at the top of it. The speed part, she's ordinary. When you average those together you get a number that says bright kid, and 'bright kid' undersells the room I actually sat in this morning."  
 Chloe shifts on the chair, her feet nowhere near the floor.  
 "So what number do I get?"  
-"A good one, and that's exactly the trouble with it: good numbers don't move a system the way a bad one would, and this one's going to read as good on the page."  
+"A good one, and that's exactly the trouble with it: it's bad numbers that move a system, and this one's going to read as good on the page."  
 "Then what do I do?" her mom says.  
 "The lever here is the school, because that's where the forty minutes are. I can write it all up and you can walk it in there, and some of them do move on a report like that."  
 "And the rest of them?"  
@@ -109,7 +109,7 @@ Her mom looks over at her at the red light, for longer than the light.
 "What's a percentile?"  
 "Where did you hear that?"  
 "In there."  
-"It's a number for how you did next to other kids your age." Her mom pulls off when the car behind them does something with its horn. "It's not a big deal."  
+"It's a number for how you did next to other kids your age, like if you're the tallest in your class, that's a high percentile for height." Her mom pulls off when the car behind them does something with its horn. "It's not a big deal, everybody gets one."  
 "What was mine?"  
 "He didn't give me a number," her mom says to the windshield.  
 Chloe watches the side of her face for a second, the way she does when somebody's answer and their voice are telling two different stories. That's a placeholder, not the real one, because a word like that always comes with a number stuck to it. She presses her thumbnail into the seatbelt instead of saying so, and lets it go, because they are having a nice time.  
