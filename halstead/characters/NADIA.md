@@ -7,6 +7,40 @@ Runs on proportion: fixes exactly what's broken and no more, and wants to build 
 **Appears in:** chapters/13_ten_pages.md, chapters/14_sixty_degrees.md, chapters/16_thirteen.md, chapters/19_sixteen.md, chapters/20_the_parking_lot.md, chapters/21_the_applications.md through chapters/35_nine_minutes.md
 **Speaks:** 41 lines total, badly front-loaded. Only 5 lines appear in the first 20 chapters; the rest split across two later files, a third of it one- or two-word chat filler ("yeah," "hang on," "since when").
 
+## The thing to get right first
+
+Nothing on the page yet explains why she builds what she builds, or why she runs herself the way
+she does. Both come from one instinct pointed in two directions. This section supplies it; where
+anything below contradicts it, this section wins.
+
+**She thinks everyone else has the problem backwards.** Every company she studies, every job
+posting she reads, every founder's advice she comes across, is optimizing the same question: how do
+you need fewer people. She reads that as exactly wrong. Her question is how you get enough of them.
+People are the scarce, valuable input, the thing that's hard to find and expensive to lose, not the
+line item to cut. She's carried some version of this since the kitchen table: her mother cutting her
+own rate to match a competitor's, her father calling a bad month luck when it was the same three
+customers leaving one by one, both of them treating a person's time, including their own, as the
+easiest thing in the business to give away.
+
+**She never argues it.** It isn't a position with a case behind it, not on the page and not in her
+own head. It's a pattern she keeps noticing that nobody around her seems to notice, and the only
+argument she ever makes for it is the thing she builds. Nobody explains the theory to the reader,
+and she never wins an argument with it, because she never has one.
+
+**She takes on far too much, and it's the same instinct running the other direction.** If people are
+the scarce resource, her own labor is the one she has the most of and trusts the most, and she
+spends it like it's cheap. Fifty things going at once, all of them real, all of them hers. For most
+people that would be a plain mistake. She's spent eleven years carrying a workload built for a
+160-plus IQ, and it has taught her that this is what carrying a lot is supposed to feel like, so her
+sense of what one person can hold sits far past where an adult's usually does. Sometimes it costs
+her nothing at all.
+
+**What this means for a writer:** let both halves show only in what she's doing and building, never
+in what anyone says about it. This has gone wrong if Nadia explains the labor idea out loud, wins an
+argument with it, or if someone tells her flatly that she's carrying too much. She notices the
+pattern; she doesn't defend it, and nobody around her totals up the bill on what she's carrying. It
+should read as reckless and justified at the same time, and the prose does not pick a side.
+
 ## Voice in one paragraph
 Short independent clauses more often than not: she sets one fact next to the next one rather than
 reaching for "and" or "so" to soften two claims into a single one. A connective shows up when the
