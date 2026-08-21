@@ -71,6 +71,85 @@ def rule(title):
     print(f"\n{'=' * 78}\n{title}\n{'=' * 78}")
 
 
+
+# metric -> (label, goal, comparison, source of the goal)
+#   ">=" pass at or above, "<=" pass at or below, "~" pass within the band
+GOALS = [
+    ("_words",   "word count",                   (2000, 3400), "~",  "author"),
+    ("fk",       "reading grade (Flesch-Kincaid)", 7.0,        ">=", "author"),
+    ("lexile",   "Lexile (approx)",               1000,        ">=", "author"),
+    ("ari",      "reading grade (ARI)",           6.0,         ">=", "corpus 5.2, rounded up"),
+    ("wps",      "words per sentence",            14.3,        ">=", "corpus median"),
+    ("slcv",     "sentence-length variation CV",  85.3,        ">=", "corpus median"),
+    ("wpp",      "words per paragraph",           (22, 48),    "~",  "corpus median 33.7"),
+    ("spp",      "sentences per paragraph",       (1.8, 3.2),  "~",  "corpus median 2.4"),
+    ("wlen",     "mean word length",              4.1,         ">=", "corpus median"),
+    ("long7",    "words of 7+ characters %",      13.2,        ">=", "corpus median"),
+    ("sttr",     "lexical diversity sTTR",        40.7,        ">=", "corpus median"),
+    ("top100",   "commonest-100 words %",         48.1,        "<=", "corpus median"),
+    ("commas",   "commas per sentence",           0.9,         ">=", "corpus median"),
+    ("subord",   "sentences with subordination %", 22.2,       ">=", "corpus median"),
+    ("relcl",    "sentences with a relative clause %", (14, 26), "~", "corpus median 19.5"),
+    ("simple",   "clause-free sentences %",       65.9,        "<=", "corpus median"),
+    ("u10",      "sentences under 10 words %",    45.7,        "<=", "corpus median"),
+    ("b2035",    "sentences of 20-35 words %",    15.9,        ">=", "corpus median"),
+    ("shortruns","sentences in a run of 3+ short %", 17.1,     "<=", "corpus median"),
+    ("negative", "negative-space sentences %",    5.0,         "<=", "author"),
+    ("front",    "sentences opening on a subordinate clause %", (0.5, 3.0), "~", "corpus median 1.6"),
+    ("andrate",  '"and" as a share of words %',   3.3,         "<=", "corpus median"),
+]
+
+
+def one_chapter(path):
+    """One chapter down the page instead of across it.
+
+    The wide table has twenty-seven columns and adjacent ones are easy to
+    confuse; an agent working chapter 22 read the and-rate column as the
+    negative-space column and reported a fall where there had been a rise.
+    This format has one metric per line with its goal beside it, so there is
+    nothing to miscount.
+    """
+    pg = load("prose_grade.py")
+    text = Path(path).read_text(encoding="utf-8")
+    m = pg.measure(text, floor=10)
+    if not m:
+        sys.exit(f"{path}: too short to measure")
+
+    name = Path(path).stem
+    print("\n" + name + "\n" + "-" * len(name) + "\n")
+    print(f"  {'metric':<40}{'value':>9}{'goal':>14}  {'':<6}{'goal from'}")
+    print("  " + "-" * 84)
+
+    failed = []
+    for key, label, goal, cmp_, src in GOALS:
+        v = m.get(key)
+        if v is None:
+            print(f"  {label:<40}{'-':>9}{'':>14}  {'':<6}{src}")
+            continue
+        if cmp_ == "~":
+            lo, hi = goal
+            ok = lo <= v <= hi
+            gtxt = f"{lo:g} to {hi:g}"
+        elif cmp_ == ">=":
+            ok = v >= goal
+            gtxt = f">= {goal:g}"
+        else:
+            ok = v <= goal
+            gtxt = f"<= {goal:g}"
+        mark = "pass" if ok else "FAIL"
+        if not ok:
+            failed.append(label)
+        print(f"  {label:<40}{v:9.1f}{gtxt:>14}  {mark:<6}{src}")
+
+    print("  " + "-" * 84)
+    print("\n  %d of %d at goal." % (len(GOALS) - len(failed), len(GOALS)))
+    if failed:
+        print("  short on: " + ", ".join(failed))
+    print("\n  A FAIL is a prompt to look, not an instruction to change the number.")
+    print("  Several of these goals are the corpus median, which half of 23 real")
+    print("  books sit below. A chapter can be right and still fail three of them.")
+
+
 def table():
     rule("1. EVERY MEASURE, ONE ROW PER CHAPTER")
     print(run("prose_grade.py", "--summary", *CHAPTERS))
@@ -178,7 +257,12 @@ def main():
     ap.add_argument("--targets", action="store_true", help="only the table and targets")
     ap.add_argument("--brief", action="store_true",
                     help="skip voice separation and citation checking")
+    ap.add_argument("--one", metavar="CHAPTER",
+                    help="one chapter, down the page, each metric against its goal")
     a = ap.parse_args()
+
+    if a.one:
+        return one_chapter(a.one)
 
     if not BOOK.exists():
         sys.exit(f"{BOOK.name} is missing; run build_manuscript.py first")
