@@ -37,14 +37,32 @@ QUOTE = re.compile(
 
 
 def spoken_and_narrated(text):
-    """Split into what is inside quotation marks and what is outside."""
-    spoken, last, out = [], 0, []
+    """Split into what is inside quotation marks and what is outside.
+
+    Quoted spans are joined into utterances, not into one string. A split
+    quote ("A," she says, "B.") is one utterance and must be rejoined; two
+    utterances ("A," Ruth says. "B," Sam says.) must not be. The difference is
+    whether the narration between them closes a sentence. Joining every span
+    in the chapter, as this did until now, glued separate speakers together
+    and inflated every spoken mean the dialogue pass was steered by: chapter
+    14 measured 16.7 and was really 12.9, chapter 18 measured 16.3 and was
+    really 13.5. Utterances are separated by a blank line here so that the
+    caller's paragraph-based sentence splitter cannot run them together
+    either.
+    """
+    utterances, current, last, out = [], [], 0, []
     for m in QUOTE.finditer(text):
-        spoken.append(m.group(1) or m.group(2) or "")
-        out.append(text[last:m.start()])
+        gap = text[last:m.start()]
+        out.append(gap)
+        if current and re.search(r"[.!?]", gap):
+            utterances.append(" ".join(current))
+            current = []
+        current.append(m.group(1) or m.group(2) or "")
         last = m.end()
+    if current:
+        utterances.append(" ".join(current))
     out.append(text[last:])
-    return " ".join(spoken), " ".join(out)
+    return "\n\n".join(utterances), " ".join(out)
 
 
 def sent_lengths(t):

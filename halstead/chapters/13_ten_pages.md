@@ -8,7 +8,7 @@ Mr. Hearn is small and gray and says everything at the same volume.
 
 He does the arithmetic on the board in silence, and fifty-one in roughly thirty weeks comes out at an essay every four days, two to four thousand words a go, which is eight to sixteen pages, and he underlines the four and leaves it there.
 
-"One ten-page essay a week, and that's less than half his rate, you've got a keyboard, and nobody is waiting on you to walk it to a printer on Saturday morning." He caps the pen. "It has to be as good, and that's the part that's actually hard, because ten pages isn't hard, ten pages is just hours, so if you want to know what I'm marking against, go and read one, and they're short enough that there's no excuse not to."
+"One ten-page essay a week, and that's less than half his rate, you've got a keyboard, and nobody is waiting on you to walk it to a printer on Saturday morning." He caps the pen. "It has to be as good, and that's the part that's actually hard, because ten pages is easy, ten pages is just hours, so if you want to know what I'm marking against, go and read one, and they're short enough that there's no excuse not to."
 
 Chloe has written ten-page reports before, three in Mandarin last year and one in French the year before that, every one of them with two or three weeks behind it, and they were also about things, like what a port did in a year, or what one newspaper said and what a second newspaper said about the first one, and those came back marked on the Mandarin.
 
@@ -157,7 +157,7 @@ Her mother comes through with the pie and everybody moves their arms, while her 
 
 In December Hearn hands one back with no note on it at all.
 
-She turns it over twice on the way out into the corridor, in case the note went on the back of the last page. There is a mark at the top and nothing under it, but the page is clean all the way down. She would rather have had three lines telling her it was bad. Three lines she could argue with. A mark with no line under it leaves her only her own doubt to argue against, and that's the harder version of being told she's wrong.
+She turns it over twice on the way out into the corridor, in case the note went on the back of the last page. There is a mark at the top and bare paper under it, and the page is clean all the way down. She would rather have had three lines telling her it was bad. Three lines she could argue with. A mark with no line under it leaves her only her own doubt to argue against, and that's the harder version of being told she's wrong.
 
 Theo gets one back with no note the same week, but he puts it straight into his bag and goes on with what he was saying.
 
@@ -169,7 +169,9 @@ She writes four more before the break, but they are the same essays they have be
 
 "Your mother did exactly that, floor, back against the bed, papers everywhere, and if I moved one of them she could tell." Her grandmother puts a plate down on the carpet inside the doorway and leaves it there. "Four o'clock, because I'm doing the ham at four and you're carrying it."
 
-The Tuesday is in the second week of February, and she sits down at seven with a question about whether an unenforced rule is still a rule, and she has the shape of it before she has written a word, and the shape has a place in it where she is going to be wrong, and she writes toward that place instead of round it. She finishes at nine, and there is an hour before lights out, which she spends on a book she picked herself.
+The Tuesday is in the second week of February.
+
+She sits down at seven with a question about whether an unenforced rule is still a rule, and she has the shape of it before she has written a word, and the shape has a place in it where she is going to be wrong, and she writes toward that place instead of round it. She finishes at nine, and there is an hour before lights out, which she spends on a book she picked herself.
 
 She reads it back on the Wednesday morning before she hands it in, sitting on the floor outside the room with eleven minutes to go, and leaves it exactly as it is.
 

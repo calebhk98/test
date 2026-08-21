@@ -107,14 +107,30 @@ def split_speech(paras):
     spoken, narration = [], []
     for p in paras:
         p = p.replace('“', '"').replace('”', '"')
-        pos, said, told = 0, [], []
+        pos, told, utterances, current = 0, [], [], []
         for m in re.finditer(r'"[^"]*"', p):
-            told.append(p[pos:m.start()])
-            said.append(m.group(0).strip('"'))
+            gap = p[pos:m.start()]
+            told.append(gap)
+            # A split quote ("A," she says, "B.") is one utterance and must be
+            # rejoined. Two utterances ("A," Ruth says. "B," Sam says.) must not
+            # be. The difference is whether the narration between them closes a
+            # sentence. Joining every quoted span in a paragraph, as this did
+            # until now, glued separate speakers together and inflated the
+            # spoken mean wherever a chapter put several voices in one
+            # paragraph: chapter 6 had single "sentences" 83 words long made of
+            # three people talking.
+            if current and re.search(r'[.!?]', gap):
+                utterances.append(' '.join(current))
+                current = []
+            current.append(m.group(0).strip('"'))
             pos = m.end()
+        if current:
+            utterances.append(' '.join(current))
         told.append(p[pos:])
-        for chunk, bucket in ((' '.join(said), spoken), (' '.join(told), narration)):
-            bucket.extend(n for n in (len(words(s)) for s in sents(chunk)) if n)
+        for chunk in utterances:
+            spoken.extend(n for n in (len(words(s)) for s in sents(chunk)) if n)
+        narration.extend(
+            n for n in (len(words(s)) for s in sents(' '.join(told))) if n)
     return spoken, narration
 
 

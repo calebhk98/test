@@ -12,7 +12,7 @@ The bag has skidded into the wall. Chloe picks it up before anyone else can, the
 
 Ruth hugs her hard enough to hurt, then takes the bag off her anyway. "Third floor, they put all the new ones on third and move you in August once they've worked out who talks in their sleep. Come on, it's the far end, and the far end's better because of the stairs."
 
-Her room has a bed, a desk, a window, and a girl from Michigan named Fen whose rock collection runs along the sill in order of size. Fen goes on arranging them while she explains that decorating the walls is wasted effort, since the rooms all get reassigned in August, and that the third-floor radiator makes a noise at four in the morning you stop hearing after a week.
+Her room has a bed, a desk, a window, and a girl from Michigan named Fen whose rock collection runs along the sill in order of size. Fen goes on arranging them while she explains that decorating the walls is wasted effort, since the rooms all get reassigned in August, and that the third-floor radiator makes a noise at four in the morning you stop hearing after a week. Then she goes back to whatever she was doing when the door opened.
 
 Ruth sits on the end of Fen's bed with her shoes on and talks the whole six minutes Chloe takes to unpack: Priya arrived in January and is on second floor, a boy in their year broke his wrist in February doing something everybody has a different account of, and the bread is good on Wednesdays and Fridays, and everybody on the floor has a theory about why, and no two theories match. At the bottom of the bag is the envelope with her name on it, which goes into the desk drawer under a folder.
 

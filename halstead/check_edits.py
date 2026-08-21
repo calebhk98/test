@@ -54,12 +54,23 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--since", default="HEAD", help="revision to compare against")
-    ap.add_argument("--chapters", nargs="*", help="number prefixes, e.g. 01 02")
+    ap.add_argument("--chapters", nargs="*",
+                    help="number prefixes, e.g. 01 02 or 01,02")
     a = ap.parse_args()
 
     files = sorted((HERE / "chapters").glob("*.md"))
     if a.chapters:
-        files = [f for f in files if f.name[:2] in a.chapters]
+        # Both "--chapters 01 02" and "--chapters 01,02" have to work. The
+        # comma form used to match nothing, print an empty table and report
+        # "0 problem(s)", so every caller who wrote it got a silent pass. Two
+        # agents and this script's own caller were misled by that before it
+        # was found; an argument matching no chapter is now an error.
+        want = {n.strip().zfill(2)
+                for arg in a.chapters for n in arg.split(",") if n.strip()}
+        files = [f for f in files if f.name[:2] in want]
+        missing = want - {f.name[:2] for f in files}
+        if missing or not files:
+            sys.exit(f"no chapter matches: {', '.join(sorted(missing)) or '(none given)'}")
 
     problems = 0
     print(f"{'chapter':<24}{'words':>8}{'hard breaks':>14}{'em dash':>9}{'curly':>7}")
