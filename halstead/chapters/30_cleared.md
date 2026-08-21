@@ -28,13 +28,13 @@ The result arrives by mail six weeks later. She reads it as having sat an exam.
 ________________
 
 
-The clearance investigation takes ten weeks and involves a man named Whitaker who comes to see her twice.
+The background investigation takes ten weeks and involves a man named Whitaker who comes to see her twice.
 
-The paperwork comes first, an online form she fills out over a single evening at the kitchen counter, question after question about addresses and employers and people who'd vouch for her. Most of it is easy. A few fields make her stop and actually count: every place she's lived, every job, every reference who'd remember her well enough to say something useful. She submits it a little after midnight, and nine days go by before the phone rings.
+The paperwork comes first, the electronic questionnaire for national security positions, which she fills out over a single evening at the kitchen counter, question after question about addresses and employers and people who'd vouch for her. Most of it is easy, but a few fields make her stop and actually count: every place she's lived, every job, every reference who'd remember her well enough to say something useful. She submits it a little after midnight, and nine days go by before the phone rings.
 
 He calls first, the second week of October, to set a time. She spends the Friday night before straightening an apartment that's usually left alone, clearing the stack of translation manuals off the table and into a drawer, an impulse of her own rather than anything he'd have noticed either way.
 
-He knocks at eight, the way he said he would. He carries a government ID, a notebook, and a thermos of his own coffee he waits to open until he's seated across the table from her. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it. She offers him coffee before either of them sits down; he lifts the thermos instead, already most of the way full, and thanks her for the offer before he takes the chair across from hers. Her own kitchen table seats four and usually sits bare; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
+He knocks at eight, the way he said he would. He carries a federal investigator's credentials, a notebook, and a thermos of his own coffee he waits to open until he's seated across the table from her. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it. She offers him coffee before either of them sits down; he lifts the thermos instead, already most of the way full, and thanks her for the offer before he takes the chair across from hers. Her own kitchen table seats four and usually sits bare; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
 
 He tells her what the visit is for before he asks her anything. A full accounting of the last eleven years, verified wherever it can be verified, recorded as unverifiable wherever it can't.
 
@@ -43,8 +43,6 @@ He tells her what the visit is for before he asks her anything. A full accountin
 "It goes into your file," Whitaker says, "and it stays sealed there. Access stops at the file itself, for you and for whoever comes asking about you later."
 
 That's the whole answer, first try, the real one instead of a softer one built to sound reassuring. Chloe likes him for it. He's thorough, and direct about what each question is actually for, and she gives him more than the minimum from the first page onward, because he's already shown her what happens to it.
-
-She tells him everything.
 
 "Residential the whole time?" he asks, pen already moving.
 
@@ -105,8 +103,6 @@ He comes back the first week of November, in a coat this time, the light already
 He asks about the funding. He asks who the school's principal donor is, name or foundation, anything at all, and waits while she actually thinks about it instead of answering fast to be done with it.
 
 "I have no idea," Chloe says. "Whoever pays for it stayed background noise my whole life there. If you're seven, and somebody's already built the swings, you climb on and use them. Who paid for the steel is somebody else's question." She turns the coffee mug a quarter turn on the table, the only thing she's done with her hands all visit.
-
-She says it anyway. It's true, and it's the whole of what she has.
 
 He writes down the reasoning along with the answer, the same as everything else, and closes the folder on it. He tells her the file is otherwise complete, thanks her the same plain way he thanked her the first time, and stands to gather the thermos and the notebook off the table.
 

@@ -2442,7 +2442,7 @@ Drawing is Thursdays, and in the second term, while they spend six weeks on hand
 
 At the end of term the sheet goes up on the wall with everybody on it in order, and Chloe is ninetieth of ninety, which she reads twice before going to dinner. Dance is Fridays, and she is ninetieth in that too, off the same wall in the same week, but that one she reads once and leaves, because with drawing she found out at the end of term, whereas with dance she can feel it while it is happening, half a beat behind the girl in front of her for fifty minutes, and in February she takes it to the office.
 
-A boy comes out of it ahead of her with the door swinging behind him, and behind the desk is Mrs. Okonkwo, who walked her and her parents around this building in the rain the April before she started, with the block sheets laid out in front of her five columns across.
+A boy comes out of it ahead of her with the door swinging behind him, and behind the desk is Mrs. Okonkwo, who walked her and her parents around this building in the rain the April before she started, with the block sheets laid out in front of her.
 
 "I want to come off dance, and I've had it every Friday since September."
 
@@ -2511,7 +2511,7 @@ On the first morning the sheet in her box has one more line on it than last year
 
 Her three new ones are chemistry, statistics and biology, and Ruth has the same three in a different order but is smug about getting chemistry first. Kavi got none of the three he asked for, and at breakfast he puts his objections in order with his own sheet lying flat on the table beside the tray.
 
-"The first one is that the form asks you for three and I got zero of three, and zero of three is what a form gets you when nobody reads it."
+"The first one is that the form does nothing, because it asks you for three and it gave me zero of three."
 
 "They read it," Ruth says. "They counted how many people wanted each thing, and then they did what they were going to do anyway."
 
@@ -2585,7 +2585,7 @@ She runs it again on the Friday, drying every piece of glass twice before she st
 
 "You dried the glass, you took a fresh bottle off the shelf, and you tied your sleeve back out of the way, which is three changes and one result." He is already two benches down. "Run it wet next Friday and find out which of them you fixed."
 
-So the Friday after that she runs it wet on purpose and gets the grey back, and the Friday after that she runs it dry off the old bottle and gets white, and it is the third week of November by the time she writes glassware in the back of the notebook with a date beside it.
+So the Friday after that she runs it wet on purpose and gets the grey back, and the Friday after that she runs it dry off the old bottle and gets white, and it is November by the time she writes glassware in the back of the notebook with a date beside it.
 
 First aid is Mondays, and it is on a clock from the first week. In the second term the lights come down to about what you get off a dashboard at night, and in the third term the lights come down, a radio plays somewhere behind her, left running the whole time, and a man stands four feet away asking her the same question over and over in a raised voice.
 
@@ -2593,7 +2593,7 @@ First aid is Mondays, and it is on a clock from the first week. In the second te
 
 "It's half eleven at night on a road, the car's still running, and there's a man who wants to know if his wife's all right." The teacher has a stopwatch and keeps his eyes on it. "He's going to keep asking, that's the whole point of the drill, so count out loud over the top of him."
 
-Textiles is Tuesdays, where they measure each other, draft patterns off the measurements onto brown paper, then cut. Chloe's first shirt comes out with the shoulder seam an inch inboard of where a shoulder actually is, so it drags every time she lifts her arm. She takes the sleeve out, redraws the armhole, builds the second one over from the armhole out, and the second one drags in the same place on the same arm. In January she gives up on the brown paper and brings in a shirt from home that already fits her, lays it flat on the table and traces round the top of it, and the line that comes off it sits an inch and a half out from the line she had been drafting all term. The third shirt fits, and it is the end of March by the time it does, and she wears the second one all spring regardless, because the second one is the green.
+Textiles is Tuesdays, where they measure each other, draft patterns off the measurements onto brown paper, then cut. Chloe's first shirt comes out with the shoulder seam an inch inboard of where a shoulder actually is, so it drags every time she lifts her arm. She takes the sleeve out, redraws the armhole, builds the second one over from the armhole out, and the second one drags in the same place on the same arm. In January she stops redrawing and brings in a shirt from home that already fits her, lays it flat on the brown paper and traces round the top of it, and the line that comes off it sits an inch and a half out from the one she has been drafting off the measurements all term. The third shirt fits, and it is the end of March by the time it does, and she wears the second one all spring regardless, because the second one is the green one.
 
 Biology is the man with the fish tank in the front hall, and in October Kavi decides that the small striped one is being bullied.
 
@@ -2615,7 +2615,7 @@ He gets over it on the eleventh of May, with about thirty people at the bottom, 
 
 "Then thirty people watch me not do it, and that's still Monday." Sam is chalking his hands and not looking at any of them. "Left foot first, same as she told me in January, because left foot's what does it, not the arms, not the grip, just where that one foot lands. She said so, and she was right, and I believed her before I even tried it."
 
-He comes off the first attempt a foot under the lip, in front of all thirty of them, and stands under the wall shaking his right hand out for a while before he goes back at it. He gets a hand over on the second try, and the noise underneath him is loud enough that a teacher comes out of the side door to see what has happened. Ruth is screaming, Kavi has both arms straight up over his head, and Chloe is on her feet with the book she'd brought down still in one hand, and she finds afterwards that she has torn the corner off it, with no memory of doing it. Sam eats left-handed for three days and keeps both hands under the table at dinner.
+He comes off the first attempt a foot under the lip, in front of all thirty of them, and stands under the wall shaking his right hand out for a while before he goes back at it. He gets a hand over the lip on the second try, and the noise underneath him is loud enough that a teacher comes out of the side door to see what has happened. Ruth is screaming, Kavi has both arms straight up over his head, and Chloe is on her feet with the book she'd brought down still in one hand, and she finds afterwards that she has torn the corner off it, with no memory of doing it. Sam eats left-handed for three days and keeps the other hand under the table.
 
 Block two is hers, and she takes riding, because Priya takes riding.
 
@@ -6292,13 +6292,13 @@ The result arrives by mail six weeks later. She reads it as having sat an exam.
 ________________
 
 
-The clearance investigation takes ten weeks and involves a man named Whitaker who comes to see her twice.
+The background investigation takes ten weeks and involves a man named Whitaker who comes to see her twice.
 
-The paperwork comes first, an online form she fills out over a single evening at the kitchen counter, question after question about addresses and employers and people who'd vouch for her. Most of it is easy. A few fields make her stop and actually count: every place she's lived, every job, every reference who'd remember her well enough to say something useful. She submits it a little after midnight, and nine days go by before the phone rings.
+The paperwork comes first, the electronic questionnaire for national security positions, which she fills out over a single evening at the kitchen counter, question after question about addresses and employers and people who'd vouch for her. Most of it is easy, but a few fields make her stop and actually count: every place she's lived, every job, every reference who'd remember her well enough to say something useful. She submits it a little after midnight, and nine days go by before the phone rings.
 
 He calls first, the second week of October, to set a time. She spends the Friday night before straightening an apartment that's usually left alone, clearing the stack of translation manuals off the table and into a drawer, an impulse of her own rather than anything he'd have noticed either way.
 
-He knocks at eight, the way he said he would. He carries a government ID, a notebook, and a thermos of his own coffee he waits to open until he's seated across the table from her. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it. She offers him coffee before either of them sits down; he lifts the thermos instead, already most of the way full, and thanks her for the offer before he takes the chair across from hers. Her own kitchen table seats four and usually sits bare; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
+He knocks at eight, the way he said he would. He carries a federal investigator's credentials, a notebook, and a thermos of his own coffee he waits to open until he's seated across the table from her. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it. She offers him coffee before either of them sits down; he lifts the thermos instead, already most of the way full, and thanks her for the offer before he takes the chair across from hers. Her own kitchen table seats four and usually sits bare; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
 
 He tells her what the visit is for before he asks her anything. A full accounting of the last eleven years, verified wherever it can be verified, recorded as unverifiable wherever it can't.
 
@@ -6307,8 +6307,6 @@ He tells her what the visit is for before he asks her anything. A full accountin
 "It goes into your file," Whitaker says, "and it stays sealed there. Access stops at the file itself, for you and for whoever comes asking about you later."
 
 That's the whole answer, first try, the real one instead of a softer one built to sound reassuring. Chloe likes him for it. He's thorough, and direct about what each question is actually for, and she gives him more than the minimum from the first page onward, because he's already shown her what happens to it.
-
-She tells him everything.
 
 "Residential the whole time?" he asks, pen already moving.
 
@@ -6369,8 +6367,6 @@ He comes back the first week of November, in a coat this time, the light already
 He asks about the funding. He asks who the school's principal donor is, name or foundation, anything at all, and waits while she actually thinks about it instead of answering fast to be done with it.
 
 "I have no idea," Chloe says. "Whoever pays for it stayed background noise my whole life there. If you're seven, and somebody's already built the swings, you climb on and use them. Who paid for the steel is somebody else's question." She turns the coffee mug a quarter turn on the table, the only thing she's done with her hands all visit.
-
-She says it anyway. It's true, and it's the whole of what she has.
 
 He writes down the reasoning along with the answer, the same as everything else, and closes the folder on it. He tells her the file is otherwise complete, thanks her the same plain way he thanked her the first time, and stands to gather the thermos and the notebook off the table.
 
@@ -6593,7 +6589,7 @@ Eli builds his half after his own shift ends, at a desk two feet from a window t
 Kavi builds his half in the same lab he's had since he stayed on, a converted classroom with one window painted shut and a corkboard of Sanskrit verb charts that have hung there for years. He works from Eli's logs rather than the live feed, turning a data cable over in his free hand while he reads and setting it back exactly where he picked it up. The watcher carries a simpler job than Eli's worm does; it only has to notice, quietly, the day the worm stops behaving like a reconciliation job and starts behaving like a person who found something, and say so to exactly one person before it says so to anyone else. He tests the watcher against three years of his own old coursework logs first, because it's the only slow, boring, badly-behaved dataset he already has lying around, and moves it onto Eli's live feed only once it's gone a full week treating his own late-night habits as unremarkable.
 
 
-They test it for a month against Nadia's own systems before it goes anywhere. Nadia runs her actual business through that month exactly the way she always has: the till counted against yesterday's tape before she says hello to anyone, the ledger open on the counter, four hundred small transactions a week moving through systems Eli now holds a key to. She checks his daily summary the way she checks a supplier's invoice, line by line, standing at the counter with a pen in her free hand, and sends back exactly one correction in four weeks, a timestamp that's read her local time instead of the shop's own time zone. "Fix the clock," she says, not asking. He fixes it inside the hour. The shop itself does exactly what it always does across those four weeks: a compressor motor gets fixed on a Tuesday, a lawnmower blade gets sharpened for cash, the register closes within a dollar of itself most nights.
+They test it for a month against Nadia's company, on her own live books, before it goes anywhere. Nadia runs the shop through that month exactly the way she always has: the till counted against yesterday's tape before she says hello to anyone, the ledger open on the counter, four hundred small transactions a week moving through systems Eli now holds a key to. She checks his daily summary the way she checks a supplier's invoice, line by line, standing at the counter with a pen in her free hand, and sends back exactly one correction in four weeks, a timestamp that's read her local time instead of the shop's own time zone. "Fix the clock," she says, not asking. He fixes it inside the hour. The shop itself does exactly what it always does across those four weeks: a compressor motor gets fixed on a Tuesday, a lawnmower blade gets sharpened for cash, the register closes within a dollar of itself most nights.
 
 
 nadia: if this comes back to my company i will end all of you
@@ -6762,7 +6758,7 @@ chloe: theo that was a drill
 theo: it wasnt a drill. i read the file.
 
 
-Chloe reads that one twice and sets the phone face down on the desk before she picks it back up.
+Chloe reads that one twice at her own desk, six weeks into the job, and sets the phone face down next to the badge before she picks it back up.
 
 
 ________________

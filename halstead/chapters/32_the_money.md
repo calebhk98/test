@@ -17,7 +17,7 @@ Eli builds his half after his own shift ends, at a desk two feet from a window t
 Kavi builds his half in the same lab he's had since he stayed on, a converted classroom with one window painted shut and a corkboard of Sanskrit verb charts that have hung there for years. He works from Eli's logs rather than the live feed, turning a data cable over in his free hand while he reads and setting it back exactly where he picked it up. The watcher carries a simpler job than Eli's worm does; it only has to notice, quietly, the day the worm stops behaving like a reconciliation job and starts behaving like a person who found something, and say so to exactly one person before it says so to anyone else. He tests the watcher against three years of his own old coursework logs first, because it's the only slow, boring, badly-behaved dataset he already has lying around, and moves it onto Eli's live feed only once it's gone a full week treating his own late-night habits as unremarkable.
 
 
-They test it for a month against Nadia's own systems before it goes anywhere. Nadia runs her actual business through that month exactly the way she always has: the till counted against yesterday's tape before she says hello to anyone, the ledger open on the counter, four hundred small transactions a week moving through systems Eli now holds a key to. She checks his daily summary the way she checks a supplier's invoice, line by line, standing at the counter with a pen in her free hand, and sends back exactly one correction in four weeks, a timestamp that's read her local time instead of the shop's own time zone. "Fix the clock," she says, not asking. He fixes it inside the hour. The shop itself does exactly what it always does across those four weeks: a compressor motor gets fixed on a Tuesday, a lawnmower blade gets sharpened for cash, the register closes within a dollar of itself most nights.
+They test it for a month against Nadia's company, on her own live books, before it goes anywhere. Nadia runs the shop through that month exactly the way she always has: the till counted against yesterday's tape before she says hello to anyone, the ledger open on the counter, four hundred small transactions a week moving through systems Eli now holds a key to. She checks his daily summary the way she checks a supplier's invoice, line by line, standing at the counter with a pen in her free hand, and sends back exactly one correction in four weeks, a timestamp that's read her local time instead of the shop's own time zone. "Fix the clock," she says, not asking. He fixes it inside the hour. The shop itself does exactly what it always does across those four weeks: a compressor motor gets fixed on a Tuesday, a lawnmower blade gets sharpened for cash, the register closes within a dollar of itself most nights.
 
 
 nadia: if this comes back to my company i will end all of you
@@ -186,7 +186,7 @@ chloe: theo that was a drill
 theo: it wasnt a drill. i read the file.
 
 
-Chloe reads that one twice and sets the phone face down on the desk before she picks it back up.
+Chloe reads that one twice at her own desk, six weeks into the job, and sets the phone face down next to the badge before she picks it back up.
 
 
 ________________
