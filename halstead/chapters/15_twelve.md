@@ -8,13 +8,13 @@ Pruitt runs the place off a whiteboard that carries the Thursday names on it and
 
 He keeps walking, leaving her to work out what he meant. It takes her four minutes and one more attempt, after which she is right more often than she is wrong.
 
-Sam picks a hook off her bench in November that he says beats anything else down there. "The scroll's wrong." She takes it out of his hand, still warm at the thick end. The hammer marks run straight down the shank, the way she wanted them, so she turns it over and puts her thumb on the inside of the curve, feeling along until she finds the spot where the metal stops giving under her nail. "There. It goes tight and then it opens out. That's two curves welded in the middle, pretending to be one. Hold it up at the window."
+Sam picks a hook off her bench in November that he says beats anything else down there. "The scroll's wrong." She takes it out of his hand, still warm at the thick end. The hammer marks run straight down the shank, the way she wanted them, so she turns it over and puts her thumb on the inside of the curve, feeling along until she finds the spot where the metal stops giving under her nail. "There, it goes tight and then it opens out, right where my thumb is. That's two curves welded in the middle, pretending to be one piece. Hold it up at the window and you'll see it yourself."
 
-Sam holds it up at the window with one eye shut. "The shadow goes straight for about an inch," she says, coming round to his shoulder to see what he is seeing. "It shouldn't go straight anywhere. It should be turning the whole way down."
+Sam holds it up at the window with one eye shut. "The shadow goes straight for about an inch," she says, coming round to his shoulder to see what he is seeing. "It shouldn't go straight anywhere, not for even an inch. It should be turning the whole way down, the same curve from one end to the other."
 
 He looks a while longer before handing the hook back, telling her it still looks fine to him, and then he takes his coat off the hook by the door because it is nearly six. The girl at the next bench, who has a punch in her hand, comes over and turns the scroll under the light for about a minute.
 
-"Good job on this. Look how straight the marks run."
+"Good job on this one. Look how straight the marks run, all the way down the shank."
 
 Three weeks later Pruitt passes the bench, where the hook is still sitting. "You lost the curve on the second turn," he says, without stopping.
 
@@ -38,7 +38,7 @@ Her cuffs stop reaching her wrists in October and she puts in for a new set. Tha
 
 ---
 
-The bread comes up in Ruth's room on a Tuesday, with the four of them on the floor and Priya lying across the end of the bed. "The Wednesday bread's better."
+The bread comes up in Ruth's room on a Tuesday, with the four of them on the floor and Priya lying across the end of the bed. "The Wednesday bread's better. I don't care what anyone says, I can tell every single time."
 
 "It is not better, Sam." Ruth keeps her eyes on the book open on her knees. "Same flour, same ovens, same people. The only thing different about a Wednesday is that it's a Wednesday. Two hundred of us have talked each other into it. Somebody said it in third grade, and now the whole school can taste it, which isn't taste. That's a room agreeing before anybody has chewed anything."
 
@@ -46,13 +46,13 @@ The bread comes up in Ruth's room on a Tuesday, with the four of them on the flo
 
 "You can taste knowing what day it is."
 
-Kavi pushes up from the floor and gets his back against the radiator. "Then do it blind."
+Kavi pushes up from the floor and gets his back against the radiator. "Then do it blind. That's the only way the answer means anything."
 
 "Do it how?" Priya says, rolling onto her front. "Somebody has to know which plate is which or you can't score it, and whoever knows is the one who wrecks it for everybody."
 
 They spend forty minutes on that, and most of the forty minutes is Priya taking other people's ideas apart. What comes out of it is two rounds: for the first, Kavi cuts both loaves, marks the underside of the four plates, and leaves the eating to the other four. Ruth runs the second the same way so that Kavi gets a turn. Kavi writes the key on a scrap and folds it before anybody starts. Sam wants to know why they cannot do it once, but Ruth explains it twice, the second time with her hands.
 
-At half past eleven they go down, where four ovens the size of wardrobes line the kitchen wall, with a conveyor toaster at the end of them that does thirty slices in a run. "We are not doing thirty slices of toast at midnight, Kavi."
+At half past eleven they go down, where four ovens the size of wardrobes line the kitchen wall, with a conveyor toaster at the end of them that does thirty slices in a run. "We are not doing thirty slices of toast at midnight, Kavi. Eight is plenty for a proper test."
 
 "We're doing eight and they have to come out the same," he says, already pulling a tray down. "It has to be the big oven. That's a box with one temperature in it, and the conveyor cooks the front of a run harder than the back."
 
@@ -72,7 +72,7 @@ They give her four names in the order they happen to be standing in, which she w
 
 "And what is all this?"
 
-"It's a bread test. It's got a control and everything."
+"It's a bread test, and it's got a control group and everything, properly done."
 
 "It's a bread test," she says, capping the pen and pocketing the sheet. "Go to bed."
 
@@ -80,7 +80,7 @@ On the stairs Priya wants to know whether the first round still counts. "We ate 
 
 "We ate it, but nobody said anything out loud, so somebody's got a number," Ruth says, going up two at a time. "Kavi's got the key in his pocket."
 
-When Kavi unfolds it under the landing light and reads it out, they have five right out of eight. "Five," Sam says, doing something with his fingers. "That's five out of eight, that's sixty-something percent, that's not nothing."
+When Kavi unfolds it under the landing light and reads it out, they have five right out of eight. "Five," Sam says, doing something with his fingers, "that's five out of eight, that's sixty-something percent, and that's not nothing."
 
 "Five out of eight is what a coin does," Ruth says, still climbing. "Come back to me when it's eight."
 
@@ -88,7 +88,7 @@ Saturday afternoon is the stock count: four hours, one clipboard between them, e
 
 "You said three hundred and ninety on the last shelf. There were eleven left over."
 
-"There were not eleven of anything left over."
+"There were not eleven of anything left over. I counted it twice before I wrote the number down."
 
 "Sam," Ruth says, pointing at the floor without turning round. "They're by your foot."
 

@@ -28,7 +28,7 @@ Ruth just gives her the number this time. Chloe writes it under the name, then, 
 
 Kavi turns up an hour later and stands in the doorway with his arms folded until somebody looks at him. "I have been through this whole building since lunch. I went to the office, then the laundry, then outside to the road, because I thought you might still be sitting in the car. Then a girl in the stairwell whose name I don't even know told me you'd been here an hour." He points down the corridor at nobody. "Sam knew."
 
-"He probably forgot," Ruth says.
+"He probably forgot," Ruth says. "He's been telling everyone for a week, so it stopped feeling like news to him before it even happened."
 
 "That's worse than not knowing. If you don't know then it's nobody's fault, but he knew and he forgot, and that's a decision about how much it mattered." Kavi sits down on the floor by the door. "What."
 
@@ -136,7 +136,7 @@ Chloe picks at a thread coming loose on her sleeve. Her mother calls on Sundays 
 
 "Are you eating? I don't mean are they giving you food, I mean are you actually eating it."
 
-"Yes."
+"Yes. They put whatever's left on your tray in front of you at the end, and Ruth makes me finish it before she'll let either of us leave the table."
 
 "And is your roommate nice?"
 

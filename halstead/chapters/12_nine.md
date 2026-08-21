@@ -58,17 +58,17 @@ Statistics turns out to be an hour of somebody taking a number apart in front of
 
 "Small result. Round it down."
 
-"It's not a small result, it's the same size result you'd get out of eleven people if there was nothing there at all, which is the entire-" Chloe stops. Sam has both hands over his ears now, humming. "We're nearly done."
+"It's not a small result, it's the same size result you'd get out of eleven people if there was nothing there at all, which is the entire-" Chloe stops. Sam has both hands over his ears now, humming. "We're nearly done. Two more minutes and you get your ears back."
 
 "You said that on Monday."
 
 Chemistry is Vasquez, who does set things on fire on purpose, twice in the first term, and both times the room goes in quiet and comes out loud. On the phone on Sunday, Chloe carries the whole nine minutes herself, describing the second one to her mother, who mostly just listens. She burns a hole through a sleeve in the second week. In the fourth she makes something that is supposed to come out white, gets grey, and carries it up to the front.
 
-"Water."
+"Water. That's the only thing that turns it that particular grey, and it's nowhere on your reagent list."
 
 "Where did it come from?"
 
-"Glassware, reagent, or you." He hands it back, eyes already on the next bench. "Friday."
+"Glassware, reagent, or you." He hands it back, eyes already on the next bench. "Friday. Dry every piece of glass before you touch it this time."
 
 She runs it again on the Friday, drying every piece of glass twice before she starts, and it comes out white, and she grins at it before she catches herself and carries it up to the front.
 
@@ -116,7 +116,7 @@ Chloe can sit a canter by February, and she can get a horse over a low fence by 
 
 "You quit riding," Priya says at dinner, four days later.
 
-"Yeah."
+"Yeah. I should have told you instead of just not showing up on the Thursday."
 
 "Why, though? Anne asked me on Tuesday where you'd gone, and I didn't have anything to tell her."
 

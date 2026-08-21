@@ -20,7 +20,7 @@ In August her mom is standing at the counter sorting the mail, as Chloe comes in
 
 "Who's Sam?"
 
-"From camp. He was in my class."
+"From camp. He was in my class the whole four weeks, we built a bridge together and he swims two lengths straight through."
 
 "Oh," her mom puts the envelope down. She looks pleased about it in a way that puzzles Chloe. "Sure, honey. What's his number?"
 

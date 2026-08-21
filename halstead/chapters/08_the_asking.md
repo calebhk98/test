@@ -176,7 +176,7 @@ The bike has been in the garage since the first week of December, under a sheet,
 
 "She likes it," her dad says, from the doorway, with his arms folded up against the cold.
 
-"She does," her mom says.
+"She does," her mom says. "She really does, look at her go."
 
 At her grandmother's in the afternoon there are a lot of people in the house and Chloe knows all of them. Her cousin Dana asks how school is and Chloe says it's good. Dana asks whether she's still reading all the time and Chloe says some. Then Dana turns to talk to somebody else, so Chloe eats her potatoes.
 

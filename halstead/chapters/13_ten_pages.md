@@ -40,11 +40,11 @@ The 10v1 starts in January.
 
 "Eleven of you at a time. One in the middle, ten on them, a minute on the clock." Kowalczyk has the clock in her hand. "Two or three rounds a class. The rest of the hour is what you've been doing since September, because that doesn't stop."
 
-"Ten's a lot," Sam says.
+"Ten's a lot," Sam says. "That's twice as many hands as I've ever had on me at once."
 
 "Five people can reach you at once. Six if they're good, seven if you're standing badly, and after that there's no room for anybody, they'd be pushing each other over." She holds a hand up flat and turns it. "So ten is five on you and five waiting for the first five to get tired. More than ten and they're queuing."
 
-"A minute's a long time."
+"A minute's a long time, and that's a lot of seconds to hold ten people off."
 
 "Because you'll be tired before they are." She sets the clock. "And because ten is the shape of every long fight there is. A hundred on one is a 10v1 that goes on longer, and there's nothing in the hundred that isn't already in the ten. If you can hold a minute against ten you've got five capable ones left, and five is a fight you can have."
 
@@ -119,7 +119,7 @@ She goes back after dinner when the corridor is empty and reads it again, and th
 
 "Six is four of us, Chloe."
 
-"I was standing in it."
+"I was standing in it. Wes asked them the number right in front of me, and it took him answering it for me to even notice."
 
 "So was I, and so was Wes, and I don't know what we were supposed to be doing either." Ruth is still looking at the sheet. "So the six should be on whoever wrote the drill and left it that vague, not on the one of us who noticed first. There's another one in three weeks."
 

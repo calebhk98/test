@@ -16,31 +16,31 @@ He is at every session and he reads everything she gives him, but the sheet come
 
 "Why, though?" He keeps his eyes on the sheet.
 
-"Because that's what the hour is for."
+"Because that's what the hour is for, Marek, and I have to have something with your name on it at the end of the year, the same as everyone else on the sheet."
 
-"It isn't work if I can already do it. It's a receipt." He says it the way he says everything, with his hands still and his voice level. "You want a receipt so somebody can look at a piece of paper and see that I did it. Ask me anything off that sheet. Ask me right now."
+"It isn't work if I can already do it, it's just a receipt for something I've already done." He says it the way he says everything, with his hands still and his voice level. "You want a receipt so somebody can look at a piece of paper and see that I did it. Ask me anything off that sheet, right now, and I'll prove it without the paper."
 
 When she asks him four questions off the sheet, he answers all four, the fourth by a route she had not considered.
 
-"So what are you doing with the time instead?"
+"So what are you doing with the time instead, since you're here every session and obviously working at something?"
 
-"There's a paper from 1981 with a mistake in it. Not a typo, a mistake. I've been on it since February and I'm about a third of the way in."
+"There's a paper from 1981 with a mistake in it, not a typo, an actual mistake in the argument, and I've been on it since February. I'm about a third of the way through it, working line by line."
 
 In January she gives him a problem out of the following year's material, one he cannot have seen, and he brings it back on the Thursday done in pencil on the back of somebody else's timetable.
 
-"So where's the sheet for it?"
+"So where's the sheet for it, then, since I still need something to put a mark against?"
 
-"There isn't a sheet. You asked me for the problem." He puts the timetable down in front of her and sits back with his arms folded. "That's the problem."
+"There isn't a sheet, because you asked me for a problem and I brought you back the problem, solved." He puts the timetable down in front of her and sits back with his arms folded. "That's the problem, and that's the whole of it, not a piece of paper with your marks on the corner."
 
-"I can't take this in pencil on the back of Ivy's Tuesday, Marek."
+"I can't take this in pencil on the back of Ivy's Tuesday, Marek. I need something with your name on it, not somebody else's homework."
 
-"Then take it in pencil on the back of Ivy's Tuesday and write down that I did it." He is already halfway up out of the seat. "You know I did it. You watched me not be able to do it last week."
+"Then take it in pencil on the back of Ivy's Tuesday and write down that I did it." He is already halfway up out of the seat. "You know I did it, because you watched me not be able to do it last week, and you watched me do it just now."
 
 Chloe puts the chalk down on the ledge harder than she means to, while he waits by the door until she says fine, then goes.
 
 In February she offers to read the 1981 paper and mark him on that, but he says no, politely, at once. She is a year older than he is, and she has not read the paper. She asks him in March what would make him hand something in, and he takes it seriously enough to sit there thinking for about ten seconds.
 
-"Nothing would," he says.
+"Nothing would," he says. "A mark on a sheet stays exactly as true whether it's written down or not, and the work is just as real whether I hand in a page or leave it blank."
 
 The December sheet has six names doing well on it and one still blank. The grade at the bottom covers seven students, and it is lower than her grade in anything else that term. She reads it twice in the corridor, folds it into quarters, and puts it in her pocket instead of the bin.
 
@@ -54,9 +54,9 @@ Differential equations run alongside real analysis, and the analysis is what tur
 
 *This step is where you assumed it.*
 
-"I did assume it. I assumed it because that step is obvious."
+"I did assume it, because that step is obvious, and everyone in the room already agrees it's true."
 
-"Then show me that it's obvious," the teacher says, and holds it out, eyes on her own page.
+"Then show me that it's obvious," the teacher says, and holds it out, eyes on her own page. "Everyone in the room already believing it is one thing. It following from what you were given four lines up is another, and until you can show me that difference, what you have is assumed, not proven."
 
 She stops doing it by the end of November, but she stops resenting it in February.
 
@@ -70,25 +70,25 @@ In cryptography the first term goes entirely on breaking things other people bui
 
 Eli gets into everything, and takes his time doing it. When Chloe asks how he took the November set he sits up on the edge of the table, swinging one foot, and talks her through it for twenty minutes on the back of somebody's timetable.
 
-"Eleven of us had that set for a week and you did the lot in an evening."
+"Eleven of us had that set for a week and you did the lot in an evening, so what did the rest of us miss?"
 
-"You were all reading the message. The message is fine." He hops down off the table and hands the timetable back to her with two fingers, smiling at the floor. "It's the same message going out every Tuesday at the same time that isn't fine."
+"You were all reading the message, and the message is fine, on its own." He hops down off the table and hands the timetable back to her with two fingers, smiling at the floor. "It's the same message going out every Tuesday at the same time that isn't fine."
 
 Ruth and Kavi took cryptography and networks last year, which puts Ruth three months ahead of the class by the time Chloe arrives in it. In April she comes into Chloe's room after lights out with a shoebox under her arm and sets it on the end of the bed, grinning, and stays on her feet.
 
-"So we don't get another Saturday of tomatoes."
+"So we don't get another Saturday of tomatoes, not after the work I've put into it since the bread."
 
-"What is it, though?"
+"What is it, though, since you're not usually up here after lights out?"
 
-"It's for the next time we do something like the bread." She takes the lid off with both hands and turns it toward Chloe. Inside is a board, a battery taped down one side, and a coil of wire folded to make it fit. "It goes looking for recorders. Anything on any network in range that's recording video, and about half of them are still on the password they shipped with, so it tries all of those first."
+"It's for the next time we do something like the bread." She takes the lid off with both hands and turns it toward Chloe. Inside is a board, a battery taped down one side, and a coil of wire folded to make it fit. "It goes looking for recorders, anything at all on any network in range that's recording video. About half of them are still on the password they shipped with, so it tries all of those first."
 
-"And if they've changed the password?"
+"And if they've changed the password, which is most of them, surely, by now?"
 
-"Then it does everything else at once. Cracking, sniffing, brute force, three others." Ruth is watching Chloe's face the whole time she talks. "It doesn't pick between them, it runs the lot and takes whichever one gets there. It isn't clever. It's eight ugly things in a box and one of them is always working."
+"Then it does everything else at once, cracking, sniffing, brute force, three others besides." Ruth is watching Chloe's face the whole time she talks. "It doesn't pick between them, it runs the lot and takes whichever one gets there first. It isn't clever, it's eight ugly things in a box, and one of them is always working."
 
-"So then what does it do?"
+"So then what does it do once it's in, since it can't just sit there being useless?"
 
-"Then it writes noise into what's being recorded. Every so often, not the whole file." She puts the lid back on and tucks it under her arm. "Delete a file and somebody notices a file is missing. Make it noisy for a bit and that's a camera being a camera."
+"Then it writes noise into what's being recorded, every so often, not the whole file." She puts the lid back on and tucks it under her arm. "Delete a file and somebody notices a file is missing. Make it noisy for a bit and that's a camera being a camera."
 
 The box goes in the drawer under Ruth's window, and it stays there.
 
@@ -100,9 +100,9 @@ Block two is hers, so she puts fencing and game theory on the sheet. Fencing she
 
 "I went left because you'd worked out I go left, so left was the surprise."
 
-Chloe leans back from the board. "That is not what any of the maths says, Kavi."
+Chloe leans back from the board. "That is not what any of the maths says, Kavi. The maths says you play the equilibrium, not the player, and you keep doing the opposite and winning anyway."
 
-"It's what the person says." He is sweeping the counters off the board into his hand and enjoying himself. "You keep playing the table. I'm playing you."
+"It's what the person says, not what the table says." He is sweeping the counters off the board into his hand and enjoying himself. "You keep playing the table, every time, and I'm playing you."
 
 What she actually does with block two is the school forge. Thursdays, both Saturday sessions, most of Sunday, and by the spring she is working through the second sitting of dinner and eating whatever is left at eight.
 
@@ -116,7 +116,7 @@ She finds a third pair on an unrelated story, and the third pair does it too. Th
 
 Law starts with Mr. Amberg walking in and putting a copy of the state code on the desk with both hands.
 
-"You are citizens. In two years most of you will be driving. After that you'll sign a lease, then a contract, then probably a marriage licence, and every one of those is a rule somebody wrote down before you got here." He sits on the front of the desk. "So you're going to learn the law of your country. At sixteen you'll take the bar. That's the exam this country uses to check whether a person actually knows it, and every citizen in this room ought to be able to pass it."
+"You are citizens, and in two years most of you will be driving. After that you'll sign a lease, then a contract, then probably a marriage licence, and every one of those is a rule somebody wrote down before you got here." He sits on the front of the desk. "So you're going to learn the law of your country, because at sixteen you'll take the bar. That's the exam this country uses to check whether a person actually knows it, and every citizen in this room ought to be able to pass it."
 
 Then he starts on contracts.
 
@@ -124,29 +124,29 @@ Dinner is ten or twelve of them at the long table by the window and has been sin
 
 Eli puts a cipher on the table one Thursday, between the salt and the water jug, written out on a napkin.
 
-"Four hours, that one took me. Somebody beat that."
+"Four hours, that one took me, so somebody at this table beat that if they can."
 
-"Where did you get it from?"
+"Where did you get it from, because this is the first one I've seen built for that?"
 
-"A parking system, and it's live. That's protecting somebody's licence plates right now."
+"A parking system, and it's live, and that's protecting somebody's actual licence plates right now."
 
 Kavi takes it off him inside a minute, offhand about it, and slides it across to Chloe. Ruth reads it upside down from across the table and says the key is a date, probably in March. Priya wants to know whether they are allowed to be holding it at all, which starts a second argument, and Odile says the interesting question is why a parking company bought that in the first place and what the salesman told them, which starts a third. Sam eats a second dinner through the whole of it and contributes twice.
 
 Nadia turns the napkin round toward Chloe with one finger.
 
-"It's not a date. It's a plate."
+"It's not a date, it's a plate."
 
-"It could be a date."
+"It could be a date, since dates have got letters in them too, sometimes."
 
-"It's got a letter in the middle of it." Nadia keeps her finger on the napkin. "You know what it is."
+"It's got a letter in the middle of it, and you already know what that means." Nadia keeps her finger on the napkin.
 
-"I don't know yet."
+"I don't know yet, not until I actually look at it properly."
 
-"You do, though."
+"You do, though, because you always go quiet like this right before you've got something."
 
-"I don't."
+"I don't, not yet, so give me another minute with it."
 
-"You've had your hand over that corner since Kavi passed it." Nadia sits back. "You always do that. You've got it. You don't want to say it in front of everybody."
+"You've had your hand over that corner since Kavi passed it." Nadia sits back. "You always do that, you've got it, and you don't want to say it in front of everybody."
 
 Chloe takes her hand off the napkin and puts it in her lap. Sam starts saying something about the salt. At half past nine there are six opinions at that table and every one of them is holding firm.
 
@@ -158,12 +158,12 @@ Her father is replacing the back steps that summer. It takes them most of three 
 
 She does the cuts. He shows her the saw on the first morning and watches her make two, but after that he stops watching, and everything she cuts after that goes back on the pile unchecked. On the Thursday a riser comes out four millimetres proud. Her father looks at it, says that will do, and screws it down.
 
-"That riser's four millimetres proud."
+"That riser's four millimetres proud, and I can see it from here without even measuring it."
 
-"It's four millimetres proud on a back step."
+"It's four millimetres proud on a back step, and the step still holds a foot."
 
-"It's still four millimetres, and I cut it."
+"It's still four millimetres, and I cut it. I'd rather fix it now than know it's there every time I go up."
 
-"Chloe." He is already reaching for the next board, attention on the next cut. "Nobody is going to measure the steps."
+"Chloe." He is already reaching for the next board, attention on the next cut. "Nobody is going to measure the steps, and this stays between the two of us."
 
 They finish on a Tuesday at the end of July, and the steps hold. Her mother comes out, stands on them, bounces once on the top one, and says they are a great improvement on the old lot. Then she goes back inside.

@@ -17,16 +17,16 @@ On the Thursday they get dowels, a spool of string, one glue gun between three, 
 "Triangles," Ruth says.  
 "You're not in this group."  
 "I'm telling you triangles." Ruth puts four dowels down in a square, holds the corners loosely, pushes one of them, and it goes over flat. Then she lays a fifth dowel across the diagonal, holds it there, pushes the same corner again, and nothing moves. "A square folds. A triangle can't fold unless something actually breaks."  
-"Okay, but we're doing it flat and wide," Sam says. "Flat and wide is fine."  
-"Flat and wide is a square."  
+"Okay, but we're doing it flat and wide," Sam says. "Flat and wide is fine, it's already glued at the corners and it's not coming apart now."  
+"Flat and wide is a square, and a square folds, you just watched it fold."  
 "Go and do your own one."  
 Ruth goes and does her own one. Chloe watches her go, still working out too slowly whether Ruth is right. By the time she has it, Sam has already started gluing.  
 Their bridge takes an hour and forty minutes and looks better than Ruth's, flat, wide, every joint on it neat. Two of the groups, of which Owen's is one, stop short of the eighteen inches before the session ends, and Mr. Doyle tells them to leave it where it is and come back to it.  
 Before any of it gets loaded they have to write down what they think it'll hold. Chloe writes fourteen. Sam wants to write a hundred and gets told it has to be a real number, so he writes twenty-five, while Ruth writes hers with one hand over it.  
 On the Tuesday they hang a bucket off the middle of each one and put weights in a pound at a time, and the whole room counts out loud together. One goes at three, which gets a laugh from the group it belongs to. Two more go before eight. Theirs goes at eleven and folds, sideways, all at once, the way Ruth pushed the square over with one finger, rather than snapping, and all three of them are down on the floor after the pieces while the bucket is still swinging. Sam says eleven out loud twice, then says he would have gone lower if they had let him. Ruth's holds nineteen and then does snap, and half the room makes a noise about it.  
-"I told you," Ruth says, not looking at anyone in particular.  
+"I told you," Ruth says, not looking at anyone in particular. "Triangles hold, squares fold, that's the whole of it, and yours was a square."  
 "Ruth," Sam says.  
-"I did though, I came over."  
+"I did though, I came over and showed you, that's not the same as saying it and walking off."  
 Mr. Doyle has them all write down which part went first and how far off their number they were. Chloe was wrong by three. She writes that the corner went first, since every corner had been carrying an angle it couldn't hold. It's the longest thing she writes all week.  
 \---  
 It's the second week that gets her, and it's math.  
@@ -41,7 +41,7 @@ Marisol asks him to do the rectangle again from the beginning, and he redraws it
 A hand goes up near the back, "Does it work with negative numbers?"  
 "Try one."  
 "I did, it works."  
-"Then it works," Mr. Baptiste says, moving to the next line on the board.  
+"Then it works." Mr. Baptiste moves to the next line on the board. "A rule that survives every case you can throw at it is what a rule is, negatives included."  
 "What about zero," Ruth says.  
 "Meaning?" Mr. Baptiste says.  
 "Can you divide by zero if you flip it? Because flipping zero is one over zero."  
@@ -58,31 +58,31 @@ She does the next three problems in the packet, then goes back through the eight
 There's a pool. Swimming is at four, and because Chloe cannot swim, she gets put in the group at the shallow end with a woman called Deb who has them blow bubbles with their faces in the water for two days before anybody goes anywhere. By the end of the second week Chloe can do a length if she stops in the middle, while Sam swims two lengths straight through and brings it up at dinner most days.  
 "It's not a race."  
 "It's a pool."  
-"It's not a race though."  
-"Somebody's still first," Sam says.  
+"It's not a race though, there's just water and a wall at the end of it, and one wall is the same as another wall."  
+"Somebody's still first," Sam says. "That's a race whether or not anybody calls it one."  
 Ruth is in the same group as Chloe and complains more than Chloe does, about Deb, about the bubbles, and about a boy in their group who splashes. Then on the Thursday she swims the length straight through, and comes up at the end of it with her whole face different, and Sam just watches.  
 \---  
 Owen leaves in week two.  
 He's in her hall on the Monday, but by Wednesday his door is standing open and the bed is stripped down to the plastic on the mattress.  
 "Where's Owen?"  
-Sam is already in the doorway, not stopping. "He went home."  
+Sam is already in the doorway, not stopping. "He went home. His mom came and got him yesterday, before dinner."  
 "Why?"  
-"He wasn't having fun."  
+"He wasn't having fun. That's the whole reason, they let you go home for that."  
 Chloe waits for the rest of it, giving him a beat to add to it; Sam has already gone back to getting the wrapper off something.  
 "What do you mean he wasn't having fun?"  
-"He wasn't having fun. He said it wasn't fun."  
+"He wasn't having fun. He said it wasn't fun, so he left, that's the whole story."  
 "But it is fun."  
 "I know." Sam says it flat, like a fact.  
 "No, but how." Her own voice comes out loud, and she keeps going. "How is it not fun. We broke the bridge yesterday. We got to be the ones who broke it, and then we got to write down which part went first, and mine went at the corner."  
-"I know."  
+"I know, Chloe. Fun's one thing and wanting to be home is a different thing, and he wanted to be home."  
 "At my school you do the same paper for a month."  
-"Yeah," Sam says, "mine too." He says it the way you'd agree about the weather, then goes back to his food.  
+"Yeah," Sam says, "mine too, same paper till everybody's got it." He says it the way you'd agree about the weather, then goes back to his food.  
 Ruth is at the end of the table with her chin on her hand, pushing the same piece of food in slow circles around her plate.  
 "He was crying in the stairwell, on Thursday," she says to her tray. "I'm not being mean, that's what he was doing."  
 "Ruth."  
-"She asked why he went home."  
+"She asked why he went home, and I know why, so I told her."  
 "She didn't ask you."  
-"She asked the table," Ruth says, and puts her fork down instead of eating what's on it.  
+"She asked the table," Ruth says, and puts her fork down instead of eating what's on it. "I was sitting at the table."  
 Chloe's own fork stops halfway to her mouth, three questions backed up behind it: what he looked like, how long, who found him there.  
 Owen, then the bridge, then Owen again, and nowhere further than that. Chloe picks her roll apart, one small piece at a time, lining the pieces along the edge of her tray, going back through the same two facts: the bridge was fun, and Owen must not have liked it, and the two facts sit crosswise, and neither one will move over for the other. She starts from the beginning and checks them again, a third time, long after Ruth has gotten up and taken her tray, trying to work out how a person could not like the bridge.  
 Four more leave before the end of the month, and each of them goes the same way. The bed goes. The mattress stays, stripped bare.  
@@ -100,7 +100,7 @@ Sam looks at the table, "No."
 "The worst," Kavi says, to Sam, about Sam.  
 "The word is tidally locked." Ruth has stopped eating for this. "It isn't stuck and it isn't on purpose. It got slowed down until it matched. It used to spin, and then it stopped spinning, over a really long time, because of us."  
 "Okay, but that's how it got that way," Chloe says. "I'm talking about what it's doing now."  
-"Those are the same thing."  
+"Those are the same thing, Chloe. How it got that way is what it's doing, there's no line between them."  
 "They're not, you can end up somewhere by accident, you're still there though."  
 Ruth opens her mouth, closes it again, opens it a second time, before Sam points at her with his fork.  
 "You can't lie if you don't have a mouth," he says.  

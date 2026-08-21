@@ -24,14 +24,15 @@ While one of the fathers looks at his plate, a man at the end starts talking abo
 Her dad puts more syrup on her waffle on his own, more than she'd have asked for. Chloe eats it anyway, syrup pooling at the edge of the plate.  
 \---  
 On the last night, while the families eat on campus, her dad asks her what she did all month.  
-Chloe is already talking before she's finished sitting down, one knee still up on the bench.  
-She starts with Gary. Gary is a plastic man with no arms who lives on a cart, and you do CPR on him, and when you push hard enough in the right place he clicks. Chloe got the click on the fourth try. Sam never got it and said the click was broken. It is not broken, and she demonstrates the hand position on the edge of the table, both hands stacked, elbows locked, which is how they showed her.  
-Then the bridge. Dowels and string, eighteen inches to get across, and on the Tuesday they hung a bucket off the middle and put weights in it a pound at a time until it went. Theirs went at eleven. Ruth's went at nineteen and it's triangles, and she lines up the salt, the pepper, and a knife to show him why a square folds over and a triangle can't. Everybody wrote down what they thought it would hold before they loaded it. She wrote fourteen. She was wrong by three. She presses the pen hard enough to nearly go through the napkin, and she explains the corner thing twice to make sure he's got it.  
-Then the pool, which she can do a length of now, badly. Sam can do two and is unbearable about it.  
+Chloe is already talking before she's finished sitting down, one knee still up on the bench. "Okay, so first there's Gary, and he's a plastic man with no arms at all, he just lives on a cart, and you do CPR on him, and if you push exactly the right place hard enough he clicks." She demonstrates the hand position on the edge of the table, both hands stacked, elbows locked, the way they showed her. "I got the click on the fourth try. Sam never got it, and he said the click was broken, but it's not broken, you just have to push harder than you think you're allowed to."  
+"Then there's the bridge," she says, and lines up the salt, the pepper, and a knife to show him. "You get dowels and string, and you have to get eighteen inches across, and then on the Tuesday they hang a bucket off the middle of it and put weights in a pound at a time until it goes. Ours went at eleven. Ruth's went at nineteen, because hers was triangles, and a triangle can't fold unless something actually breaks, a square just folds right over." Everybody wrote down what they thought it would hold before they loaded it. "I wrote fourteen. I was wrong by three, because the corner goes first, every corner's carrying an angle it can't hold, that's the whole thing, that's the part you have to watch." She presses the pen hard enough to nearly go through the napkin, and she explains the corner thing twice to make sure he's got it.  
+"Then the pool," she says. "I can do a length now, but badly. Sam can do two lengths and he won't stop bringing it up at dinner."  
 Then dividing fractions, which she does on a napkin with a pen she takes off the next table, drawing the rectangles the way Mr. Baptiste drew them, all the way through to why you flip it over. That one runs to the edge of the napkin and back. Her dad keeps his eyes on the pen the whole time.  
 Two tables over, another father is doing roughly the same thing, a pen going on a different napkin while his own daughter talks.  
-Then Spanish, which she does at him before she remembers he can't follow it. She asks him three things and answers them herself. She tells him what's on the table, and where the bathroom is, and what she did today, and then she does the one Sam says at breakfast every morning, which is apparently rude. Her dad asks what any of it meant and she goes back through it in order.  
-They talk in it at lunch on purpose, she says, the four of them, so nobody else can tell what they're saying. It doesn't work. Everybody else is doing Spanish too.  
+Then she starts on Spanish, rattling it off before she remembers he can't follow it, asking herself three things and answering them all before he can stop her.  
+"What did you just say?" her dad says.  
+"I said what's on the table, and where the bathroom is, and what I did today, and then I said the one Sam says at breakfast every morning, which is apparently rude." She goes back through it in order, slower this time, turning each piece into English for him.  
+"We talk in it at lunch on purpose," she says, "all four of us, so nobody else at the table can tell what we're saying. It doesn't work though, because everybody else is doing Spanish too."  
 Then the signing, which is a different thing again and better, because you can do it across a room. She shows him the alphabet on her fingers and does his name with it, slowly, and then hers, faster. She shows him the sign for water and the sign for finished and the sign for again. In the library you can ask somebody from four tables away whether they've got a certain book and nobody has to say anything out loud, and she and Ruth did that for a whole afternoon, and the woman who runs the library knew what they were doing and let them.  
 Then the twenty-sentence puzzle, in a language nobody in the room had ever heard of, and no dictionary, and you had to work out how it went. Chloe got that the words came in a different order from ours by about the sixth sentence. Ruth got the plurals. Kavi got the pattern in the endings that Chloe still doesn't entirely follow, and he explained it four times, and he'd explain it again right now if he was here.  
 Then the wood shop, and the safety glasses sized for somebody bigger. Then the eggs she made, and the dish on the Thursday that everybody ate, which had onions in it that she cut herself. Then the paintings they went and looked at, one of which cost more than a house, which baffles her, because it's a painting.  
@@ -63,10 +64,10 @@ Ruth takes her shoes off and lines them up against the wall, heel to heel, then 
 "Here, it's a school. It's a whole school, it goes all year, that's what this is."  
 "I know it's a school."  
 "So we should get in."  
-"Obviously," Sam says.  
+"Obviously," Sam says. "They wouldn't have taught us all that stuff for one summer and then let it go."  
 "It's not obviously, you have to actually do things." Ruth pulls her knees up to her chest. "My mom asked: there's a form, and there's a day where you come back and they look at you, and it's not in the summer, it's a different day in the fall."  
 "They already looked at us," Sam says. "That's this."  
-"That's not what she said it was."  
+"That's not what she said it was. She said it's a whole different day, with different people looking."  
 "You weren't even on the phone call."  
 "I heard half of it."  
 "Half of it isn't the phone call."  
@@ -79,7 +80,7 @@ Ruth picks the knot out of one shoelace instead of answering.
 "When's the form?" Chloe says.  
 "I don't know when the form is, my mom has it."  
 "But when do you find out."  
-"I don't know that either."  
+"I don't know that either. My mom said she'd tell me the second she hears anything."  
 "Well, find out," she says, up on her knees now, one hand fisted in the leg of Kavi's pyjamas. "Because if it's a day where they look at you, I want to know what they look at. I want to know if it's the same stuff or different stuff, because if it's different stuff I need to know what it is."  
 "It's a form, Chloe."  
 "You said there was a day."  

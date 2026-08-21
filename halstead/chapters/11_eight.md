@@ -4,7 +4,7 @@
 
 Her mother has kept the room the way it was, down to the sock on the radiator, and the bike is still in the garage under a sheet. Chloe gets it out on the second day and rides it to the end of the road and back, her knees coming up past the handlebars on every stroke. Her mother watches from the porch with a coffee. "We'll get you a bigger one."
 
-"It's fine."
+"It's fine. My feet still reach if I stretch, and stretching's basically the same as reaching."
 
 "Your feet were on the ground at the same time as the pedals were, so it isn't fine, and I'm not having this conversation again in a hospital." She is already going back inside with the cup. "Saturday, the place by the tire shop, and you're picking one you'll still fit next year."
 
@@ -160,7 +160,7 @@ She asks again in November and gets it in four words. Drawing is Thursdays, and 
 
 "It's supposed to be a hand."
 
-"No, I mean that's a hand," Ruth says, and puts it back down, and carries on to the door.
+"No, I mean that's a hand, Chloe," Ruth says. "The thumb's even the right size this time." She puts it back down and carries on to the door.
 
 At the end of term the sheet goes up on the wall with everybody on it in order, and Chloe is ninetieth of ninety. She reads it twice and then goes to dinner. Dance is Fridays, and she is ninetieth in that too, off the same wall in the same week, but that one she reads once and leaves. With drawing she found out at the end of term. With dance she can feel it while it is happening, half a beat behind the girl in front of her for fifty minutes at a stretch, and in February she goes and asks whether she can drop it.
 

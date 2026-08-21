@@ -35,10 +35,10 @@ ________________
 Her mother knows this campus. She's been coming for eleven years. She knows where the good parking is, knows Ruth's mother by name, and knows to bring a jacket because it's colder up here.
 
 
-She finds Ruth's mother in the crowd before the ceremony even starts. The two of them fall into the same easy back-and-forth they've had every year for over a decade: a supplier problem on one side, a school form still open on the other. "Is he settled on a roommate yet?" Ruth's mother asks — her own younger one starts at Halstead in September — and Meg tells her any day now, that he's already looking at rooms. Ruth's mother, who has forgotten her own jacket eleven years running, takes Meg's spare straight out of her hands. "You'll catch your death," Meg says, the same as every June before this one. Eleven years of parking in the same overflow lot, and each of them still only knows the other from a folding chair.
+She finds Ruth's mother in the crowd before the ceremony even starts. The two of them fall into the same easy back-and-forth they've had every year for over a decade: a supplier problem on one side, a school form still open on the other. "Is he settled on a roommate yet?" Ruth's mother asks, her own younger one starting at Halstead that September, and Meg tells her any day now, that he's already looking at rooms. Ruth's mother, who has forgotten her own jacket eleven years running, takes Meg's spare straight out of her hands. "You'll catch your death," Meg says, the same as every June before this one. Eleven years of parking in the same overflow lot, and each of them still only knows the other from a folding chair.
 
 
-A few rows over, Dave strikes up a conversation with the stranger next to him about the stage, admiring rather than worried, working out loud that whoever spec'd the bracing built in more margin than the thing will ever need. "Somebody had fun with this," Dave says, nodding at the joists. The stranger has clearly done the same arithmetic already, unprompted — cross-bracing, dead load, a margin that makes more sense for a bridge than a stage — and it takes them most of the conversation to work out that he's a physics professor, Kavi's father. Behind them, a staff member in a school polo folds up a spare table and answers Dave's question about parking on her way past, still moving.
+A few rows over, Dave strikes up a conversation with the stranger next to him about the stage, admiring rather than worried, working out loud that whoever spec'd the bracing built in more margin than the thing will ever need. "Somebody had fun with this," Dave says, nodding at the joists. The stranger has clearly done the same arithmetic already, unprompted, cross-bracing, dead load, a margin that makes more sense for a bridge than a stage, and it takes them most of the conversation to work out that he's a physics professor, Kavi's father. Behind them, a staff member in a school polo folds up a spare table and answers Dave's question about parking on her way past, still moving.
 
 
 By the end of the afternoon, the grass by the parking lot holds a small, accidental museum of everything a family brings to something like this: folding chairs people brought in preference to the ones provided, two coolers, a phone charger passed hand to hand down an entire row, a dog that shouldn't be there, and, near the back, a folding table somebody's grandfather sets up on his own every June, selling the good lemonade at fifty cents a cup because that's what he did at every one of his own five children's graduations and sees fit to keep doing now. He sells a dozen cups to people who already have a full cooler of their own, because it's the lemonade, not the thirst.
@@ -122,10 +122,10 @@ Ruth goes to MIT, with a box of her own things labeled and half packed before th
 Nadia stays. She spends two months looking at jobs and comes out of it baffled. Then she goes back behind the counter of her parents' shop and checks the till before she says hello to anyone, same as she's always done.
 
 
-The last week of May, a woman who's been bringing her kettle in for repairs at that counter for six years corners her about something that has everything to do with paperwork and none of it to do with a kettle: a housing application due by five that afternoon, a portal that wants a photograph of a lease with no scanner in the house to produce it on, and a library three blocks over that cut its computer room to a single terminal back in March. Nadia clears the register screen and does the whole thing herself in under fifteen minutes, upload and all. The woman thanks her like she's just fixed something enormous — which, done at that speed for that many people who need it, it apparently would be.
+The last week of May, a woman who's been bringing her kettle in for repairs at that counter for six years corners her about something that has everything to do with paperwork and none of it to do with a kettle: a housing application due by five that afternoon, a portal that wants a photograph of a lease with no scanner in the house to produce it on, and a library three blocks over that cut its computer room to a single terminal back in March. Nadia clears the register screen and does the whole thing herself in under fifteen minutes, upload and all. The woman thanks her like she's just fixed something enormous. Which, done at that speed for that many people who need it, it apparently would be.
 
 
-She starts a tally under the counter after that, a mark for every person who asks the shop for a login, a form, an address that has to reach somewhere official by a deadline built with zero slack in it — not one wrench among them. Eleven marks in a slow week. Nineteen in a fast one.
+She starts a tally under the counter after that, a mark for every person who asks the shop for a login, a form, an address that has to reach somewhere official by a deadline built with zero slack in it, not one wrench among them. Eleven marks in a slow week. Nineteen in a fast one.
 
 
 Nadia pushes her sleeves up before she brings it to her father.
@@ -137,7 +137,7 @@ Nadia pushes her sleeves up before she brings it to her father.
 "That's not our business," her father says, still bent over the invoice in front of him.
 
 
-"It's somebody's business, and it's sitting wide open." She's got the tally out on the counter between them, one finger flat on the page. "Housing forms. A place to get online, since the library keeps cutting its hours down to nothing anyone can use. A way to apply for a job when there's no printer at home. The thing that gets a person from the form to the address to the job in one sitting instead of four separate trips — somebody has to build it, and it may as well be us."
+"It's somebody's business, and it's sitting wide open." She's got the tally out on the counter between them, one finger flat on the page. "Housing forms. A place to get online, since the library keeps cutting its hours down to nothing anyone can use. A way to apply for a job when there's no printer at home. The thing that gets a person from the form to the address to the job in one sitting instead of four separate trips. Somebody has to build it, and it may as well be us."
 
 
 Her father sets the invoice down and looks at her properly. "What would it even do?"
@@ -161,7 +161,7 @@ Theo goes into the federal government as an analyst, having been interviewed fou
 Kavi stays, and says so plainly when anyone asks, the same way he says anything else that's already settled.
 
 
-Priya takes two years and goes to South America with a bag. There's no return flight booked and no address arranged yet — just two changes of clothes, a headlamp, and a folded list of every ranch and stable between Patagonia and the Argentine pampas that answered her letters over the spring.
+Priya takes two years and goes to South America with a bag. There's no return flight booked and no address arranged yet, just two changes of clothes, a headlamp, and a folded list of every ranch and stable between Patagonia and the Argentine pampas that answered her letters over the spring.
 
 
 "What's in the bag?" Chloe asks her, out on the grass, the two of them working through what's left of a cup of lemonade.
