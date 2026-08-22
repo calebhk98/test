@@ -76,14 +76,10 @@ It goes upward anyway.
 
 sam: i think i annoyed some people again
 
-
 ruth: how
-
 
 sam: i asked when the real one was
 
-
 nadia: sam
-
 
 sam: i genuinely thought there was a real one

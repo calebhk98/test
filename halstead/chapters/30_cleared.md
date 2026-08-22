@@ -14,9 +14,7 @@ By the winter she's writing most nights between eleven and two, laptop balanced 
 
 She's also carrying twenty-one credits and the translation job, and none of it registers as a load, because her actual timetable at fourteen was heavier than this and included getting hit.
 
-
 ________________
-
 
 She sits the Foreign Service exam three weeks after she turns twenty, in a testing center with rows of identical monitors and a proctor who checks her ID twice against the photo before letting her sit down.
 
@@ -24,9 +22,7 @@ It's four hours, in a room built for finishing a thought all the way through, ro
 
 The result arrives by mail six weeks later. She reads it as having sat an exam.
 
-
 ________________
-
 
 The background investigation takes ten weeks and involves a man named Whitaker who comes to see her twice.
 
@@ -94,9 +90,7 @@ He writes that down too.
 
 He closes the notebook around noon, tells her he'll be back once he's run down what he can on his end, and shakes her hand at the door the same plain way he shook it four hours earlier.
 
-
 ________________
-
 
 He comes back the first week of November, in a coat this time, the light already gone by five and the radiator behind him ticking through the whole visit. The folder is thicker than it was in October, a second stack of pages clipped behind the first, and he sets it down in the same spot on the table before he takes his own coat off.
 
