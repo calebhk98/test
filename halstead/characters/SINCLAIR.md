@@ -1,7 +1,9 @@
 # Marcus Sinclair
 
 Runs the school's live intrusion exercise, and wants a building full of children who will
-handle a night that is not a drill exactly the way they handle one that is.
+handle a night that is not a drill exactly the way they handle one that is. A former Navy SEAL
+who was among the best in special operations, and who has watched a plan come apart with people
+depending on it, which is the whole reason he runs the exercise the way he does.
 
 **Age span:** appears when Chloe is eleven and twelve | **MBTI:** ESTJ (a writing aid, not a
 claim) | **IQ:** not the interesting number; what he has is an unusual tolerance for finding
@@ -275,7 +277,12 @@ over the intercom mid-afternoon and runs to a stated end time. On the real night
 another building with two other adults and a trolley, and the response is graded the next morning
 against a stated standard, with the students getting ordinary marks in the B and C range.
 
-**Two things asserted in the reference documents are not in the manuscript and are deliberately absent
-from this sheet:** that he is the former special-forces member mentioned on a faculty page, and that he
-authored the Watch doctrine. Nothing in the book attaches either to him. He also does not run paintball;
-that is Bell.
+**He is a former Navy SEAL and served in special operations, and he was one of the best at it.**
+That is a fact about the man, ruled by the author, and it stands whether or not the manuscript
+ever says so on the page. He does not announce it and no student is told; what reaches them is a
+teacher who is calm about things that ought to frighten an adult, who has clearly seen a plan
+fail while people were relying on it, and who treats a drill as the cheapest place to find that
+out. He also authored the Watch doctrine. Write him as a man who has already been through the
+real version of the thing he is running.
+
+He does not run paintball; that is Bell.
