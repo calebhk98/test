@@ -5475,23 +5475,69 @@ The lock they built at thirteen to get past a teacher is still the only thing st
 The chat moves on within about ten minutes. Chloe leaves the tab open on her desk for the rest of the evening, the cursor sitting in the empty box where a reply would go.
 
 
-## Chapter Twenty-Five: Ten Targets
+## Chapter Twenty-Five: Forty Targets
 
-*November 2023*
+*August 2023 – November 2023*
+
 
 Sam likes the Army immediately.
 
 
-The bus from the processing station gets in after dark, the first week of August, and the platform lights over the reception building draw every moth for a mile before anyone's off the bus. A sergeant with a clipboard reads names off a list in an order that follows some logic only the clipboard holds, and hands out bedding to whoever answers fast enough, and Sam is first off the bus and first to have his arms full of a folded blanket and a pillow with no case on it yet. He falls asleep that night to eighty other new privates finding out the same thing about their racks at the same time, and wakes before the lights do, already dressed and sitting on the end of the rack with his boots laced by the time the first bulb overhead flickers on.
+The bus from the reception battalion reaches the company area well after dark in the first week of August, by which time the lights over the door are pulling moths off the training area for a mile around. A drill sergeant reads surnames off a clipboard in an order only the clipboard understands, and Sam, first off the bus, first to have his arms full of bedding, spends eleven minutes occupying a spot he is eventually told to stop occupying.
 
 
-The food is fine, the people are funny, and there is a schedule, which he has had every day since he was seven and briefly missed over the summer. He is polite to everybody. He is extremely polite to a sergeant named Ruiz, who shouts at him for four weeks and whom Sam likes enormously.
+He falls asleep that night to fifty-nine other privates discovering their racks at the same hour, then wakes before the lights, which is worth remarkably little to him, because Sam has been slow for the first ten minutes of every morning of his life, and the bay in the dark is a footrace.
 
 
-Ruiz has a voice built for the outdoors and no apparent interest in using an indoor one. On the second morning he goes down the line of racks with a boot in one hand, checking the fold on every blanket by eye, and stops at Sam's. "Marsh. This corner's a joke." He drags the blanket off with one motion and drops it on the floor. "Do it again." Sam does it again, hospital corners, the whole rack stripped and remade in under a minute, and Ruiz watches the second attempt with his arms crossed, then moves on down the line without another word, which from Ruiz is close to a commendation. Sam takes it as one. "I think Ruiz likes me," he tells the private in the next rack over, quietly, still working the corner of his own blanket. The private looks over just long enough to answer. "Pretty sure that's not what just happened. He dropped your blanket on the floor and called it a joke." "Pretty sure it is," Sam says, and goes back to his own corner.
+The schedule he has had since he was seven, and lost over the summer, reappears on the second day, laminated and screwed to the wall beside the doorway.
 
 
-By the second week Ruiz has learned that yelling at Sam produces the same result as yelling at anyone else, which is his face staying exactly where it was and everything changing about what he does next, and he has apparently decided this is worth doing anyway, for its own sake, on principle, the way another man might keep polishing a boot that's already clean. "Marsh, you're smiling. Wipe it off." Sam wipes it off, and it comes straight back the second Ruiz moves down the line.
+Drill Sergeant Ruiz possesses a voice built for open ground and demonstrates no visible interest in owning the other kind. That second morning he walks the row of racks with a boot in one hand, checking the fold on every blanket by eye from three feet away, stopping finally at Sam's.
+
+
+"Marsh. What is this supposed to be."
+
+
+"Blanket, Drill Sergeant."
+
+
+Ruiz takes the whole arrangement onto the floor with a single pull, straightens up, then delivers the two syllables he delivers to everybody. "Again."
+
+
+Sam does it again, whereupon it is wrong again in a different place, and it continues to be wrong for ten days running, by which time the rest of the bay has quietly stopped finding it entertaining. A private named Okoro, three brothers in the Guard, arrived already familiar with most of it, eventually makes his own rack at half speed alongside so Sam can copy the sequence of the folds. After that it takes Sam about ninety seconds, which puts him in the back half of the platoon, roughly where he remains for the duration.
+
+
+"I think Drill Sergeant Ruiz likes me," Sam tells him at the sinks.
+
+
+"He has put your bedding on the floor two mornings running and asked you what it was, so if I were you I would build a considerably smaller theory on the evidence available." Okoro is shaving with the water off, because the water is a privilege the bay forfeited on Tuesday, with no immediate prospect of recovering it.
+
+
+"He walked off the second time with his mouth shut, though. That's the good version of it."
+
+
+Okoro considers this proposition for a second, evidently decides against it, and returns to his jaw.
+
+
+By the end of the first week Sam has asked four separate people how long the entire programme runs, all four have answered twenty-two weeks, and two of them have been stopped cold by the question he asks afterward.
+
+
+"Twenty-two weeks, and then what."
+
+
+"Then you're infantry, then you go to a unit, then you do the whole business again in worse weather with better equipment, until eventually somebody hands you a platoon of your own and you become the problem."
+
+
+"Right, but what's this for. When does the real one start."
+
+
+He puts the question to Ruiz on the Friday, at parade rest at the conclusion of an evening formation, and Ruiz takes a long, unhurried look at him before responding to any part of it.
+
+
+"Marsh, the real one is Tuesday. It is also Wednesday, and the Tuesday after that, and it will still be running on the morning you turn thirty-one with every single word of this conversation forgotten. Get out of my face."
+
+
+Ruiz walks off. Sam accepts the answer as partial, then carries on asking.
 
 
 ________________
@@ -5499,89 +5545,40 @@ ________________
 
 
 
-He maxes the fitness assessment in week two. Then he does it again in week three, better, because in Sam's head a number he's already hit is just the number that comes next.
+The fitness test comes in the second week, on the gravel behind the barracks before the sun is properly up: breath showing, a folding table at one end of it carrying a clipboard, a scale, a stopwatch, a line of privates stamping their feet at the other.
 
 
-The morning of the first one they're on the gravel lot behind the barracks before the sun is properly up, breath showing, a folding table with a clipboard and a stopwatch set up at one end of it and a line of privates stamping their feet at the other. Sam counts himself down from three under his breath before the whistle goes, the same three-count he uses for everything that's going to cost him something, and then the deadlift bar comes up clean, and the sandbag goes where it's supposed to go, and the run finishes with him three lengths ahead of the next man and not especially out of breath about it. The soldier grading him reads the total off the sheet twice before writing it down, the way the captain will read a different sheet twice in four months' time. "You done this before?" he asks. "No," Sam says. "I do other stuff." He keeps the rest of it to himself.
+Six events, a hundred points available on each, sixty required to pass on each, and Sam is meeting four of the six for the first occasion in his life: deadlift, standing power throw, hand-release push-ups, the sprint-drag-carry, a plank, two miles.
 
 
-Word gets around the platoon by chow that afternoon, the way a number like that always does, and somebody two tables down asks him straight out, "You play college ball or something, to hit numbers like that?" "No," Sam says. "Boarding school." The table waits for the rest of it. That's the whole of it, and the table goes back to eating.
+He counts himself down from three under his breath and pulls the bar off the ground.
 
 
-The following week, on his own time and off the books, he does the whole test again with a buddy he's talked into holding the stopwatch, and beats his own number by enough that the buddy makes him check the watch twice before he'll believe it. "That's not possible, you already had the best number in the platoon," the buddy says, holding the stopwatch out so Sam can read it himself. "Check it again if you want," Sam says. "It's the same watch, I already looked." That one stays off the sheet. Sam is satisfied regardless. He was doing it for the number, not the sheet.
+He scores six hundred.
 
 
-He does that with everything. There's no version of a task anywhere in Sam's head where he reaches a number, decides that's enough, and stops there.
+The grader adds the column a second time with the pen held clear of the paper, checking rather than writing, then puts the total down in ink, then looks up from the clipboard.
 
 
-________________
+"You have done this before somewhere."
 
 
+"No, Sergeant. I did other things."
 
 
-September is ruck marches, longer every week, the packs weighed at the start of each one by a corporal with a fish scale who calls out the number like an auctioneer. Sam sets the straps once at the start and leaves them exactly there for the whole route, and finishes near the front of the line every time, breathing normally enough that the man behind him accuses him of cheating on the weigh-in. Sam holds his pack open for the corporal to check the scale a second time, just to settle it, watches the needle land in the same place it landed the first time, and goes back to walking, the pack riding exactly where he set it that morning.
+"Six hundred is the top of the scale, so whatever you were about to ask me next, the answer to it is no."
 
 
-Every Sunday, whatever the week has taken out of him, he sits on the end of his rack with a pad of paper and writes his grandmother a letter in block capitals pressed hard enough to dent the page underneath, folds it into a stamped envelope from the box she keeps sending him, and walks it to the mailbox himself rather than handing it to anyone. He tells her about the food and the cold and a sergeant who yells at everybody and means well by it. The fitness score stays out of the letter, since it wouldn't mean a thing to her, and the letters themselves stay his own business, a habit that goes the whole four months without anyone at the barracks catching him at it.
+Sam turns that over for most of the morning without any satisfactory resolution, since a maximum that cannot be exceeded is a maximum he has no method for. On the Sunday he talks Okoro into holding a stopwatch behind the barracks, running four of the six events again on his own time, purely to establish whether the raw figures underneath the scoring will move at all. Two of them do, by a little.
 
 
-October is land navigation, a compass and a map board and six points to find in the dark before dawn, cold enough that the instructors hand out an extra layer before anyone asks for one, and Sam finds all six of his the first time out while two men in his squad are still arguing over a stream crossing on their board. He waits for them at the last point with his own already logged, sitting on his heels in the wet grass, and helps them find their fourth point on his own initiative, walking them through the bearing rather than just pointing at the map. "Your board's off by ten degrees, here, watch," Sam says, and shows them the count instead of saying it twice. By the third week the range weeks have gone from an event to a Tuesday. Sam qualifies early and spends the extra time on the line watching other people's groupings instead of his own, the same way he used to watch a climbing route he'd already cleared, looking for whatever's left in it. Ruiz catches him at it once, leaning on the barrier with his arms folded. "You've already qualified, Marsh, go eat," he says, but leaves him to it anyway when Sam stays right where he is.
+"What are you going to do with those," Okoro says.
 
 
-________________
+"Keep them. They're just better."
 
 
-
-
-In month four they put him on a range with ten targets and tell him to shoot ten targets.
-
-
-The morning is flat and grey, the kind of cold that gets into the fingers before it gets into anything else, and the line of ten lanes sits under a low sky with the targets already up and waiting at distance. Sam counts himself down from three before the first one, same as always, and then works the line at a steady, unhurried pace, the bolt working, the brass falling into the same small drift of it at his feet with every round. He is aware, in the flat way he's aware of most things about himself, that this comes easily.
-
-
-He shoots ten targets.
-
-
-A captain he has not met before walks over afterward, looks at the sheet, and says, "That's the best score I've seen this cycle, and I've read every sheet on this range since March. What's your accuracy?"
-
-
-"About forty," Sam says. The captain looks at the sheet again.
-
-
-"That's not great," the captain says. "Eighty's the standard I've got this whole platoon training toward, and forty puts you well under it, whatever the number on this sheet says you did out here today."
-
-
-"Son, you hit ten out of ten. Every round, every lane, dead center by the look of these holes, and that's the best mark I've seen on this range all cycle."
-
-
-"Right, but that's not accuracy," Sam says, and he says it kindly, because he has worked out that this must be a trick question and wants to let the man save face. "The target's not doing anything. It's just sitting there. That's not a measurement of anything, that's a measurement of whether the rifle works."
-
-
-The captain doesn't say anything.
-
-
-Sam takes that as an invitation, and this is the moment he has been waiting four months for, because he has become increasingly certain that basic training is some kind of extended screening exercise and that there is a real one somewhere and that he is being kept out of it by not having said the right thing yet.
-
-
-"Accuracy is whether you can put a round into another round," Sam says. "In flight. On the count, opposite lanes, you both fire on the same beat. I'm at about forty percent and that's poor, there are people I went to school with at ninety. That's the number that means something." He nods at the rifle. "So I'm forty percent of a rifle."
-
-
-The captain looks at the rifle where Sam nodded at it, then back at Sam, and holds there long enough that the private on the next lane stops loading to watch. "That's a live-fire intercept drill," he says slowly. "People run that after selection, once they've already qualified on everything else, and you're telling me your school had you doing it before you turned eighteen." He turns the sheet over, which puts nothing on the side facing up, and squares it against the edge of the table.
-
-
-"Where did you go to school," the captain says.
-
-
-"Halstead."
-
-
-"Where's that? I've been in eleven years, I like to think I've heard of most of them."
-
-
-"It's a boarding school. It's small, you wouldn't have heard of it."
-
-
-The captain looks at him for another moment, the sheet still in his hand, and then folds it once along a crease that's already there and puts it inside his jacket rather than handing it back. Sam takes that as the conversation ending, picks his brass up off the ground because leaving brass on the ground is one of the first things anyone here taught him not to do, and goes to find out what's next on the schedule.
+He takes the record test in the ninth week and posts six hundred again, that being the only score the sheet has room for.
 
 
 ________________
@@ -5589,16 +5586,224 @@ ________________
 
 
 
-What gets written up that evening and forwarded twice by Friday turns Sam's own words into something else. The captain sits at a folding desk under a bare bulb with the range sheet smoothed flat in front of him and a cold cup of coffee pushed to one corner, and writes it out longhand first, crossing out the second paragraph twice before he's satisfied with it, sets the pen down, picks it back up, and adds one more line to the margin before he types the whole thing clean. The captain files it as a concern about the soldier rather than a recommendation for him.
+Word travels round the company by chow that afternoon, the way a number like that always does, until somebody two tables down puts it to him straight.
 
 
-It's four paragraphs. The first three describe what he did on the range. The fourth asks where an eighteen-year-old private learned to do it, contains the phrase appears to have received specialised instruction from an unidentified source, and recommends that the question be answered before he is put anywhere interesting. He reads it over once, signs it, and sends it up, out of his hands before he can second-guess it.
+"Did you play ball or something, to put up a number like that on a cold morning? Because a guy in second platoon reckons four of those events were brand new to you."
 
 
-By the following Thursday it is being read in an office three floors up from anything with a range attached to it, by a woman three levels above the captain, at a desk clear of everything except the one folder open in front of her and a second stack squared off to one side. She reads the fourth paragraph twice, the way the grader read Sam's sheet twice, and sets the report on top of that second stack rather than into it, which is its own kind of answer, and reaches for the folder underneath it before the light outside her window has moved an inch.
+"They were. Boarding school." Sam, with most of a roll in one hand, is reaching past Okoro for the pitcher with the other. "I was middling there, so if you want a real number off me you can have my range number instead. Forty percent, three years running, sitting at forty whatever I tried on it."
 
 
-None of it reaches Sam. Sam is having a great month. He gets a letter back from his grandmother the same week, three lines about the weather and a fourth asking whether the food's improved any, and he writes back that it's exactly as bad as it always was, and means it, perfectly content either way.
+"Forty percent of what, though?"
+
+
+"Of the shots. There were people in my year sitting on ninety-one."
+
+
+The table takes this for modesty and tells him so at some volume, because the six hundred has already gone up on a board in the hallway outside the orderly room. Sam runs the correction all the way out anyway, the way he always does. He gives them a girl called Odile who took him apart on a mat in front of thirty people, then apologised for it; the April he lost a small object out of his own boot and cost somebody else eleven minutes of an evening getting it back; by the end of it two of them are laughing at him, while a third has stopped believing a word of any of it.
+
+
+"Boarding school," the third one says.
+
+
+"Small one. You wouldn't have heard of it."
+
+
+The subject changes.
+
+
+Later, watching the clock over the serving line, he says the only complaint he lodges with anybody in four months, which is that nine minutes is a strange amount of time to be given for a meal that took somebody all morning.
+
+
+________________
+
+
+
+
+The rifle arrives in the third week and inhabits the end of his arm from that morning onward: named, stripped, cleaned, carried to the shower block, carried back out again. First live rounds come the week after that, twenty-five metres, three groups of five on paper, at which point Sam puts most of his fifteen inside the diamond on the very first morning, then cannot work out why the scorer behind him wants a conversation about it afterward.
+
+
+This is approximately where he starts to have a problem.
+
+
+He is doing well. He is doing well at the running and the carrying, at the paper, the compass, the bar bolted over the door of the bay, at the obstacle lanes, the casualty drags, the stripping of a weapon in the dark, the twelve-mile foot march nobody in the platoon enjoyed, and he is doing it against fifty-nine people visibly trying as hard as he is, none of it reconcilable with a single thing he knows about himself. At school he was the one on forty percent. Odile was level with him on the mat at fourteen and comfortably ahead of him by the spring. Ruth shot ninety-one and found the entire business tedious. Kavi beat him at everything with a board in it for six consecutive years.
+
+
+So he goes looking for the fault in the measurement, which is what he does with any number that misbehaves.
+
+
+His first thought is that everybody here is tired in a way school could only approximate, since school let you sleep through the night and this place treats the night as available.
+
+
+His second is arithmetic, and it is better. Half the bay has been doing this for nine days and he has been doing it for eleven years, so the gap between him and the man beside him is a fact about calendars rather than a fact about either of them.
+
+
+His third accounts for everything the first two leave lying around, and it is the one he keeps. This is a screen. Sorting sixty men by putting all sixty on the same bar and writing down who lifts it is what an organisation does when it wants to know who to send somewhere else, which means the men around him are being measured on something he has yet to be shown, are almost certainly holding a considerable amount back for it, and will begin the real course once the sorting is finished.
+
+
+The explanation survives a week of examination. He stops examining it.
+
+
+________________
+
+
+
+
+September is tactical foot marches, progressively longer every week, the packs weighed at the start by a corporal with a hanging scale who calls each figure out like an auctioneer taking bids. Sam sets his straps once at the trailhead and leaves them alone from there. The man behind him accuses him of shorting the weigh-in, so Sam holds the pack open for a second reading, watches the needle settle where it settled the first time, and goes back to walking.
+
+
+Land navigation occupies October, daylight first and afterward in darkness, six points, a scorecard, temperatures low enough that the cadre distribute an extra layer before anybody thinks to ask for one. Sam logs all six of his the first time out, then walks back onto the course with two men from his squad who are a point down, still arguing over a stream crossing on their board.
+
+
+"Your board's ten degrees out, look. Take your count off the compass, not the map."
+
+
+He walks them the bearing instead of pointing at it, the way he has taught anything to anybody since he was thirteen, and the three of them find the point together.
+
+
+Mail call is on the printed schedule, and the drill sergeants run it standing up, holding each envelope out at arm's length, charging push-ups by the letter, paid cheerfully by the entire platoon. Personal time runs from eight until lights out, and half the bay spends it on boots, the other half on paper.
+
+
+Sam writes to his grandmother on Sunday nights with the pad flat on his knee, in block capitals, because he gave up on cursive somewhere around the age of nine. He tells her about the cold, about a drill sergeant who yells at everybody and means well by it, about the nine minutes. The six hundred stays out of the letter, on the grounds that it would require three sentences of explanation, then still amount to a number when he got there.
+
+
+Okoro asks him once who it goes to. Sam says his grandmother, at which Okoro volunteers that his own mother posts him word searches clipped out of the local paper, four or five a week, and that he has recently begun completing them.
+
+
+________________
+
+
+
+
+Qualification is the second Thursday of October, in the ninth week, and it is forty targets.
+
+
+The morning is flat and grey, with the particular variety of cold that reaches the fingers a considerable time before it reaches anything else. Forty pop-up silhouettes standing out from fifty metres to three hundred, ten exposures from each of five positions: standing, prone unsupported, prone supported, kneeling behind the barricade, standing behind the barricade. One magazine change built into the middle of it. Three minutes and fifty-eight seconds from the first exposure to the last.
+
+
+Sam counts himself down from three, then works the table at an unhurried pace that leaves him waiting on the tower twice.
+
+
+He hits forty. Every exposure.
+
+
+His scorer calls it up to the tower, the tower reads it back to be certain of it, and two lanes over a private stops loading in order to look along the line.
+
+
+The company commander is present on the range because qualification percentages are his statistic to report, so he comes down the tower steps with the card in his hand.
+
+
+"Marsh." Sam comes to attention. "Forty out of forty. That's the first one I have signed for in two cycles, and I have read every card off this range since March." He passes the card sideways to the drill sergeant rather than handing it to Sam. "Where did you learn to shoot?"
+
+
+"School, sir."
+
+
+"They had a range at your school."
+
+
+"Yes, sir." Sam stays where he is. "Sir, that's a good sheet and a bad number. My accuracy runs about forty percent, and it has been forty percent since I was fifteen."
+
+
+The captain looks at the card in the drill sergeant's hand, where forty out of forty is written in pencil.
+
+
+"Say that to me again."
+
+
+"Forty percent, sir. There are people I went to school with sitting on ninety."
+
+
+"Forty percent of what, Private."
+
+
+"Of the intercepts, sir." Sam has spent ten weeks waiting for somebody to ask him a question with a real answer underneath it, and he takes the opening at full speed. "There's a machine at one end of the lane that puts a live round across your front, left to right, sixty metres of open ground, on a cycle you can set a watch by. You stand behind glass, taking your count off the mechanism rather than off the round. The target is the round. You're shooting the bullet."
+
+
+The drill sergeant turns the card face down against his leg.
+
+
+"So forty percent means four times in ten I get a round onto a round in flight, sir, which is poor. A girl in my year was on ninety-one at fifteen and she was bored the entire time she was doing it."
+
+
+"Private." The captain's voice has come down rather than gone up. "I have been in eleven years. There is no school anywhere in this country running live-fire intercept work on children, there is barely a unit in this Army running it on adults, and the men who do run it have completed a selection course you could not have spelled a year ago. So I am going to put the question to you one more time, and I would like you to take your time over the answer. Where did you go to school?"
+
+
+"Halstead, sir."
+
+
+"And where is Halstead."
+
+
+"It's a boarding school, sir. It's small. You wouldn't have heard of it."
+
+
+The captain lets that stand in the cold for a while, and Sam, reading the silence as room to be more useful, fills it.
+
+
+"Sir, the sheet's fine. It's measuring the rifle. The silhouettes stand still, they come up on a cycle you can hear from the lane, so forty out of forty establishes that the weapon functions and that I can count to three hundred."
+
+
+Two lanes down, somebody laughs once. The laugh stops.
+
+
+The captain looks at him for a good deal longer than the answer needs, then takes the card back off the drill sergeant, folds it along a crease already in it, and puts it inside his jacket instead of into the stack on the table.
+
+
+"Pick up your brass, Marsh."
+
+
+Sam picks up his brass, since leaving brass on the ground is among the earliest instructions anybody in this organisation gave him, and goes off to discover whatever is next on the schedule.
+
+
+________________
+
+
+
+
+The captain writes it out that evening at a folding desk under a bare bulb, longhand first, with a cold cup of coffee pushed away into one corner, crossing the second paragraph through twice before it says what he intends it to say.
+
+
+Three separate documents leave the company by Friday, and a fourth sits underneath his hand for a considerable while first.
+
+
+The first is a memorandum for record, four paragraphs long, three of them describing the range in entirely ordinary language: the conditions, the qualification table, the score, the identity of the scorer, the presence of the company commander, the time of the conversation to the nearest quarter hour. The fourth quotes the soldier's own figure, forty percent, inside quotation marks, records that the soldier appears to have received specialised instruction from an unidentified source, and recommends that the question be answered before he is assigned anywhere at all.
+
+
+The second goes to the supporting counterintelligence office, under the standing requirement that puts unexplained specialised training in front of somebody whose job it is to look at it. The captain has sat through that briefing every year he has served and can list the reportable categories from memory.
+
+
+The third is a request to the battalion S-2 for the education block of the soldier's security questionnaire, to establish whether the school printed on the form and the school in the private's mouth are the same school.
+
+
+The fourth is a behavioural health referral. He signs it last of the four, and it travels upward alongside the other three.
+
+
+By the following Thursday the memorandum is on a desk three floors above anything with a range attached to it, in front of a woman positioned three levels above the captain. She reads the fourth paragraph twice, then sets the memorandum on top of a stack rather than into it, then draws out from underneath that same stack a folder considerably older than the captain's commission.
+
+
+________________
+
+
+
+
+Sam has a good October and a distinctly better November.
+
+
+A letter comes back from his grandmother in the last week of the month, three lines about the weather, a fourth asking whether the food has improved any. He writes back that the food is precisely what it always was, the difficulty having always been the nine minutes.
+
+
+On the way down to the range in the first week of November he asks Okoro whether he reckons the screening is finished with yet.
+
+
+"The what."
+
+
+"This. Whether we're through the sorting part of it yet, or whether they're still deciding."
+
+
+Okoro takes the whole enquiry for a bit and laughs. Sam permits him this, on the grounds that it is a perfectly reasonable thing to laugh at. He asks somebody else the same question on the Thursday.
 
 
 ## Chapter Twenty-Six: The Exercise
