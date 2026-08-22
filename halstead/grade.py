@@ -53,7 +53,7 @@ FK_BANDS = [
     (1, 10, 5.5, 7.0),   # ages 6-8, home and the first year
     (11, 15, 6.0, 7.0),  # ages 8-12
     (16, 22, 7.0, 8.0),  # ages 13-19
-    (23, 35, 8.0, 99.0),  # adult
+    (23, 36, 8.0, 99.0),  # adult
 ]
 FK_BOOK_TARGET = 7.0
 
