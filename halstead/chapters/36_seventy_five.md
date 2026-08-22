@@ -2,113 +2,115 @@
 
 *October 2026*
 
-Priya goes quiet for eleven days in October, which is ordinary enough that the rest of them let it run. She has gone quiet for longer over a pass with no signal, and once for three weeks over a mare that would not foal.
+Priya goes quiet for eleven days in October, which is ordinary enough that the rest of them let it run. She has gone quiet longer over a pass with no signal, and once for three weeks over a mare that would not foal.
 
-The rest of them are where the summer left them. Chloe is eight months into the job now and reads the chat on a bus. Ruth has a desk with her name on a card slotted into a bracket beside a door, and a second-year student who has started following her to lunch. Kavi has the same lab and a second bench in it. Sam is at a unit in a state he first set foot in on the day he was posted to it, with a phone he can use in the evenings and a folder somewhere above him that stays above him. Nadia has four more people on the shop floor than she had in June, and Eli has a job title with a word in it that he thinks is funny. Theo answers from a window with the blinds down, the way he has answered everything for three years.
+The rest of them are where the summer left them, four months on from a thing none of them refers to directly in writing. Chloe is eight months into the job and reads the chat on a bus with her bag on her knees. Ruth has a card with her name on it slotted into a bracket beside a door, and a second-year who has started turning up wherever she eats. Kavi has the same lab and a second bench in it that arrived without anybody asking him whether he wanted one. Sam is at a unit in a state he first set foot in the day he was posted to it, with a phone he can use in the evenings. Nadia has four more people on the shop floor than she had in June. Eli has a job title with a word in it he finds funny, and has now explained the joke to five separate people, each of whom received it politely. Theo answers from a window with the blinds already down.
 
-What the eleven days were is a bus with a broken window, then a second bus, then a room above a feed merchant's with a lock she replaced herself on the first afternoon, then four days of sitting still in it and letting a hand swell and go down again. She spends part of that time doing what she would do with any animal that has been got at, which is standing where it can see her and waiting until the shaking stops on its own schedule rather than hers.
+What the eleven days were was a bus with a cracked window, then a second bus, then a room over a feed merchant's with a lock she changed herself on the first afternoon. Four days of that were spent sitting still and letting a hand come up and go down again, which is roughly what she would do with any animal that had been got at: stay where it can see you, and wait for the shaking to finish on its own schedule.
 
-She comes back at four in the morning, whichever four in the morning she is currently standing in.
+She comes back at four in the morning, whichever four in the morning she is standing in.
 
-priya: does anyone know what the government wants with the school
+priya: does anyone know why the government cares about the school
 
-priya: not a joke. i have spent a month working out who i annoyed and the only thing all of it has in common is a building i left four years ago
+priya: i have spent a month working out who i annoyed and the only thing left on the list is a building i left four years ago
 
 ruth: what happened
 
-priya: which time
+priya: people keep turning up to take me. since march. it does not seem to matter which country i am in
 
-ruth: start with the first one
+nadia: take you
 
-priya: march. two men and a van with no plates outside the yard at half five and i went out the back and over the wall and that was the end of it. i put it down as the thing that happens to a woman living on her own somewhere nobody knows her name
+priya: unmarked van, two men, half five in the morning, and i went over the wall at the back. i put it down as the thing that happens to a woman living somewhere nobody knows her name
 
-priya: then may. six of them, same idea, better van, and i was already going out a different door every day by then because of march
+priya: then six of them in may, and about a dozen in july, and by july i had already stopped using the same door twice
 
-priya: then july, nine or ten, and that one was properly organised and it still came to nothing because i was three streets away before the second van stopped
+priya: tuesday night there were seventy-five
 
-priya: so that is three goes and nothing to show for it, and if you are running that and it keeps failing you either stop or you stop being polite
+Ruth reads that twice, which is how she reads a paper and how she reads very few other things. Nadia is behind the counter with the shutter still down and the float half counted, and the float stays half counted for eleven minutes.
 
-nadia: they stopped being polite
+kavi: seventy-five
 
-priya: tuesday night, yes
+priya: give or take. there were more behind the line i never got to
 
-nadia: how many
+sam: how long
 
-priya: i counted seventy-something going through and there were more behind the line i never reached. five or six over seventy is my honest answer and i am not going to pretend i had time to count properly
+priya: a while
 
-The chat sits still for a moment. Eli reads it standing at a kitchen counter with the kettle going behind him and leaves the kettle to boil itself dry. Kavi puts the marker down on the tray with the cap still in his other hand. Ruth reads it twice, which is how she reads a paper and how she reads very few other things, and starts working out what a line of seventy-five people is in metres before she has any idea why the number would help.
+sam: we did seven in a car park
 
-sam: we did seven at sixteen and that was a car park with lights on
+priya: you were sixteen and chloe said they were retarded
 
-priya: yes and you were sixteen and they were drunk
+priya: these were fine. all of them. that is the part i want somebody to explain to me
 
-priya: this is the part i want somebody to explain, because these were not drunk. they were fine. every single one of them was fine
+priya: they came in like thirteen year olds. a couple of fourteens. one of them was a fifteen and he put me into a wall and i had to work at it
 
-priya: they came in like thirteen year olds. i mean that properly, the good ones, three years in, hands where they are supposed to be, nobody swinging. and there were seventy of them doing it at once, which is not nothing
+eli: a fifteen
 
-kavi: thirteen
+priya: a good fifteen
 
-priya: thirteen, fourteen. one of them was a fifteen and he put me into a wall and i had to work to get out of it
+priya: but nobody did anything advanced. not once, not one thing i have not had done to me on a mat
 
-priya: but not one of them did anything advanced. not one thing i have not had done to me on a mat by somebody who turned up with a cold
+Eli reads that standing at a kitchen counter with the kettle going behind him, and leaves the kettle to boil itself dry.
 
-eli: how long did it go on
+priya: they had guns from the start and left them alone until i was already through the line and moving, which was about thirty in
 
-priya: it went on as long as it went on
+priya: the two i took off the grass went into the engine blocks of the only two vehicles on that side of the field, because the alternative was outrunning a van on a farm track
 
-priya: and it was easier than it should have been, which i want to say carefully because i can already see how it reads. i do not mean it was easy. i mean i went into it working on the assumption that one of these people would be about four sams and there would be seventy of them, and it was not that, and finding out it was not that in the first thirty seconds is the only reason i am typing
-
-priya: i ran. i want that on the record too. i did not win anything out there, i left
-
-priya: they had guns the whole time and did not use them for a long while, which i did not understand at the time and understand now, because they wanted me walking. it was only once i was through the line and moving that anybody fired anything, and by then there were about thirty of them on the ground
-
-priya: i took two off the grass on the way past. i was not going to cross a field with nothing in my hands, and i used them, and i would like that written down somewhere as well
-
-priya: not at people. at the two vehicles that were going to be on the road before i was
+priya: i took two off the grass on the way past. i was not crossing a field empty handed
 
 theo: and then
 
-priya: and then the darts, which is the part i actually want explained
+priya: then the darts, which is the bit i keep coming back to. you do not put those in a person, because a person watches you raise it and steps left
 
-theo: darts
+priya: they got one in on the third go
 
-priya: tranquilliser. you do not use those on a person and everyone knows why, it is not that they fail, they work perfectly well, it is that a person watches the man raise it and steps left. that is the entire reason. you cannot make them land
-
-priya: they landed on the third go
-
-priya: and it was not a dose to put me down. it was a small one, and a small one makes you slow, which is a much better idea than the one i was expecting, and i worked that out with my legs already going
+priya: small dose. it is for slowing you down rather than putting you out, and i had a while out there to think about what that meant
 
 ruth: priya
 
-priya: i got out. i am fine. i have a hand that is not closing properly and that is the whole list
+priya: i got out. i have a hand that will not close all the way and that is the whole list
 
-priya: i took two of the small ones with me because they had caught their own darts in the scrum and i had a hand free
+priya: i came away with two of the small ones. they had caught their own in the scrum and i had a hand free
 
 eli: you took prisoners
 
-priya: i took two men who were asleep in a field in october and would have been cold
+priya: i took two men who were asleep in a field in october
 
-Where she is holding them stays her business, and the chat leaves it there, in the way the eight of them have always left a thing that somebody has clearly decided about already. What she says about them over the following week comes out in pieces and always as logistics: that the smaller one has a knee that wants ice twice a day, that the pair of them eat more than she budgeted for, that one of them has started saying good morning and the other has stopped pretending to be asleep when she comes in.
+Where she is holding them stays her business, and the chat leaves it there, the way the eight of them have always left a thing somebody has clearly already decided about. What she says about the two of them over the following week arrives in pieces, and all of it is logistics. The smaller one has a knee that wants ice twice a day. The pair of them eat more than she budgeted for, and one of them puts every piece of onion on the edge of the plate. By the Thursday one of them says good morning first. By the Saturday the other one is sitting up when she comes in with the tray.
 
-priya: they are american. they say they are with an agency and they will not say which, and they have given me the same eleven sentences about forty times each, which is what i expected and is fine
+The room over the feed merchant's has one window and a door onto an outside stair, and she has spent part of every day since Tuesday standing at the top of that stair with a mug, watching the road at the hour a van would come if a van were coming, timing the gap between the bend and the gate at a walk, and then again at a run, and writing both numbers on the back of a feed docket that lives in her coat. She feeds them at the same two hours every day, because a thing that knows when the food is coming will spend the rest of its attention on something other than the door.
 
-priya: what they will say, over and over, is that they were there for me. not the yard, not the horses, not the man who owns the field. me, by name, off a list somebody handed them
+priya: they are american. they say agency and they will not say which one
 
-priya: what is not fine is that it took me an hour and a half. i have never done this before in my life. it should have taken days and it took an hour and a half and that is the second thing i want somebody to explain to me
+priya: four days and i have nine sentences out of the pair of them, which is about what i expected
+
+priya: it is also a great deal less than i expected. i cannot get those two to sit together
+
+priya: what they will say, over and over, is that it was me they came for. by name, off a list somebody handed them
 
 chloe: priya
 
-chloe: there is a file. it is nineteen years old and it is about the school and we have read all of it
+chloe: there is a file. nineteen years old, about the school, and we have read all of it
 
 priya: read it how
 
-kavi: eli built the way in and i built the way out and it is a long story and you have been in a field
+kavi: long story and you have been in a field
 
-nadia: the short version is that the school was not a normal school, and the people it turned out are not ordinary people, and somebody has known that for a very long time and has been keeping paper on it the whole while
+nadia: the short version is that it was not a normal school, and somebody has been keeping paper on what came out of it since before any of us started
 
-priya: not ordinary how
+priya: then tell me why seventy-five was the number, because whoever picked seventy-five was working off something
 
-ruth: at the things you were doing on tuesday night you are in the top ten percent of people alive
+ruth: three vans that came back empty
+
+priya: three vans that came back empty gets you thirty
+
+ruth: it gets you thirty if you think you are collecting a person
+
+Kavi puts the marker down on the tray with the cap still in his other hand.
+
+priya: what am i then
+
+ruth: at the things you were doing on tuesday you are somewhere in the top ten percent of people alive
 
 priya: top ten percent of what
 
@@ -116,34 +118,32 @@ ruth: of people
 
 priya: no
 
-priya: ruth i finished sixty-fourth out of ninety-one. i was in the bottom third four years running and i was in the bottom third in the year everybody was actually trying
-
 priya: top sixty on a generous day and that is me being kind about it
 
-ruth: yes
+ruth: top ten
 
-priya: yes what
+priya: ruth i finished sixty-fourth out of ninety-one. bottom third four years running, and bottom third in the year everybody was actually trying
 
-ruth: yes, sixty-fourth out of ninety-one
+priya: but thank you for the heads up, genuinely
 
-priya: that is the funniest thing anybody has said to me all year
+The chat lets it go there. Chloe types a paragraph on the bus, gets as far as the second sentence about what the file says on page nine, reads the whole of it back at the stop, and sends four words instead. Theo starts a message and holds it long enough that the typing indicator comes and goes twice for the others, and what arrives is the name of a form and a number, which Priya thanks him for and leaves alone.
 
-priya: ruth you have seen me shoot
+priya: although
 
-ruth: i have
+priya: if those two are what they say they are, then one of them on his own should be about four sams, and there were seventy-five
 
-priya: and
+priya: so either they are lying about who they work for, or somebody has spent a lot of money on people who are not very good at it
 
-ruth: and i am telling you what the sheet says about tuesday, not what it said about you in a range hut when you were fifteen
+priya: which is a much more useful question than the one i came in with
 
-priya: those are the same person
+Ruth finishes the arithmetic she started an hour earlier and keeps the answer to herself, because seventy-five people across a field is a hundred and ten metres, and a hundred and ten metres is a distance she has walked a thousand times between two buildings, and she can see the whole of it at once.
 
-priya: anyway. thank you for the heads up, genuinely. if they come back i would like to know what they want before i hand it to them
+Ruth is up until three with the page open and a pencil, and what she writes down turns out to be about everybody except Priya. It is a list of the seven other places any of them sleeps, and the distance from each of those to a road a vehicle could wait on, and it takes her until the fourth entry to notice she has started at the bottom of the list rather than the top, with her own address last.
 
-The chat lets it go after that. Chloe types a paragraph on the bus, reads it back at the stop, and sends four words instead. Theo starts a message and holds it long enough that the typing indicator comes and goes twice for the others, and what arrives is the name of a form and a number, which Priya thanks him for and leaves alone.
+In the morning Chloe reads the third page of the file again, the paragraph about the funding line, which she has read enough times to recite and has always read on an ordinary morning with a coffee going cold beside it. She goes in and does her job, which is the same job it was in June, in the same building, with the same badge and the same lift and the same eleven o'clock lull between the morning traffic and the afternoon. The search she runs at eleven has an entirely different name in the box, takes nine seconds, and returns a form number she saw once already that morning, in a message from a man four blocks away who is careful about what he puts in writing. She reads the entry, closes it, and opens the next thing in the queue at four minutes past.
 
-Ruth finishes the arithmetic she started an hour earlier and keeps the answer to herself, because a line of seventy-five people in a field is a hundred and ten metres, and a hundred and ten metres is a distance she has walked a thousand times between two buildings, and she can see the whole of it at once and would sooner be looking at something else.
+The ranking goes unmentioned after that. Nadia asks, two days later and only to Priya, whether she wants somebody in the yard with her for a while, and gets back a photograph of a gate with a new hinge on it and the word sorted. Sam offers to come out for a fortnight of his leave and is told the flights are absurd, and offers again the following day with a screenshot of a cheaper one. Eli sends a list of four things to change about the room over the feed merchant's, three of which she has already done.
 
-In the morning Chloe reads the nineteen-year-old file again, the third page, the paragraph about the funding line, which she has read enough times to recite and has always read on an ordinary morning, with a coffee going cold beside it, in the untroubled way a person reads a document about somebody else. She goes in and does her job, which is the same job it was in June, in the same building, with the same badge and the same lift and the same eleven o'clock lull between the morning traffic and the afternoon. On her own screen, on her own desk, in the building whose paper this is, the search she runs at eleven has an entirely different name in the box, and takes nine seconds, and returns a form number she has seen once before that morning in a message from a man four blocks away who is careful about what he puts in writing.
+Kavi takes six hours to answer, which for Kavi means he has been doing something about it rather than thinking about it, and what he sends is a single line about a piece of software none of them has heard of and a question about what the yard uses for its gate.
 
-By the time Kavi answers she has been out at the fence for the better part of an hour, because the mare is due, and the mare keeps her own hours.
+By the time he sends it she has been out at the fence for the better part of an hour, because the mare is due and the mare keeps her own hours.
