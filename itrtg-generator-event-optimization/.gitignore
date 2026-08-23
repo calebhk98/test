@@ -410,4 +410,4 @@ OPTIMIZATION_NOTES.md
 
 # Local build/run artifacts (non-Windows binary + captured run log)
 summer2026
-run_output.txt
+run_output*.txt

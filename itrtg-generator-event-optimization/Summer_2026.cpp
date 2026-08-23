@@ -63,9 +63,9 @@ const bool endlessMode = false; //Repeat optimization until *manually* stopped. 
 const int outputInterval = 5000; //How often improvements are allowed to be printed (milliseconds)
 
 const double EVENT_CURRENCY_WEIGHT = 100e-5; 
-const double FREE_EXP_WEIGHT = 6e-5;     
-const double PET_STONES_WEIGHT = 3.5e-5;
-const double RESEARCH_POINTS_WEIGHT = 2e-5;  
+const double FREE_EXP_WEIGHT = 3.5e-5;     
+const double PET_STONES_WEIGHT = 6e-5;
+const double RESEARCH_POINTS_WEIGHT = 1.7e-5;  
 const double GROWTH_WEIGHT = 8e-5;       
 
 const vector<double> busyTimesStart =   {}; // The first hours, relative to the start of the simulation, you'll be unable to purchase upgrades
