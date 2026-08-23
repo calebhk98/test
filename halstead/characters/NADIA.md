@@ -292,6 +292,16 @@ without checking whether they agree.
 
 ## Interior life
 
+**Why she starts a thing:** something obviously broken that she can find no
+reason for, rather than a wrong she has decided to right. Her own account of it
+is that there is probably a reason nobody has fixed it and she is the one
+failing to see the reason, and that if the whole thing comes to nothing she
+will go and do the ordinary version of the job like everybody else. She is
+running an experiment she half expects to fail, and she would find it strange
+to hear it called a mission. Whatever good it does other people is real, sits
+downstream of the part that made it worth building, and goes unmentioned by
+her.
+
 **Wants:** to be trusted with something bigger before anyone thinks to offer it,
 rather than earning her way in by increments. She will not ask, because asking
 would make the size of it a favour rather than a fit. Underneath that: enough
@@ -457,9 +467,15 @@ as an edge or a score being kept, it is Ruth's.
 - Languages, one a year from seven, in order: Spanish, French, Arabic,
   Mandarin, Russian, Turkish, Farsi, Urdu, Bengali, Malay, Portuguese. Known
   for Farsi.
-- Afternoon blocks: poker, auto mechanics, gardening, glassblowing.
-- Founds and runs a company at twenty-one making small diagnostic hardware for
-  independent repair shops.
+- Afternoon blocks: poker, auto mechanics, gardening, glassblowing. In her last
+  year the unrecorded afternoon slot goes to building the company.
+- Founds the company at eighteen, in the June she graduates, and is still
+  running it at twenty-one. It is a hiring site with the resume taken out: an
+  evening of short skill tests, a profile built from work a person can
+  demonstrate, and the forms filled and submitted on the user's behalf. Users
+  pay nothing and employers pay on the hire, so the site earns by getting
+  people off it. Forty staff and three counties of employers by the following
+  spring, every employer signed in person.
 - Appears in: chapters/13_ten_pages.md, chapters/14_sixty_degrees.md,
   chapters/16_thirteen.md, chapters/19_sixteen.md,
   chapters/20_the_parking_lot.md, and chapters/21_the_applications.md through

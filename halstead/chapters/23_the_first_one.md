@@ -82,27 +82,37 @@ Ruth goes to MIT, with a box of her own things labeled and half packed before th
 
 Nadia stays. She spends two months looking at jobs and comes out of it baffled. Then she goes back behind the counter of her parents' shop and checks the till before she says hello to anyone, same as she's always done.
 
-The last week of May, a woman who's been bringing her kettle in for repairs at that counter for six years corners her about something that has everything to do with paperwork and none of it to do with a kettle: a housing application due by five that afternoon, a portal that wants a photograph of a lease with no scanner in the house to produce it on, and a library three blocks over that cut its computer room to a single terminal back in March. Nadia clears the register screen and does the whole thing herself in under fifteen minutes, upload and all. The woman thanks her like she's just fixed something enormous. Which, done at that speed for that many people who need it, it apparently would be.
+The two months are March and April, and she keeps the count of them in the ledger hand at the back of a notebook, a line per application and a column for whatever came back. Two hundred and six lines, fourteen answers, eleven of those fourteen written by software and timed between one and four in the morning. One lands nine minutes after she sends it, on a form that had taken her fifty minutes, because the portal wanted her whole schooling typed a second time under a heading called Education History after she had already attached it as a file. A listing she answers in the first week of March is still up in the last week of April, the same four paragraphs reposted twice with a fresh date on top, and six of the entry-level ones want two years of experience against one that wants three and offers to train the right candidate.
 
-She starts a tally under the counter after that, a mark for every person who asks the shop for a login, a form, an address that has to reach somewhere official by a deadline built with zero slack in it, not one wrench among them. Eleven marks in a slow week. Nineteen in a fast one.
+In April she sends one application to one listing twice inside an hour, the second copy with the listing's own sentences run back through it, and only the second copy gets a phone call from a person. She tells Ruth about it in the common room, and Ruth tells her to do the second one every time.
 
-Nadia pushes her sleeves up before she brings it to her father.
+She brings it to her father on a Saturday in May, at the counter, with the notebook. The thing itself has been in her afternoon block since the second week of March, in the hour the school records nothing about. She pushes her sleeves up first.
 
-"Nineteen people came in last week needing something that had zero to do with a repair," she says.
+"Two hundred and six applications," she says. "Fourteen answers. Eleven of the fourteen came out of software at two in the morning."
 
-"That's not our business," her father says, still bent over the invoice in front of him.
+"That's a bad two months," her father says, still bent over the invoice in front of him, although the pen stops moving on it.
 
-"It's somebody's business, and it's sitting wide open." She's got the tally out on the counter between them, one finger flat on the page. "Housing forms. A place to get online, since the library keeps cutting its hours down to nothing anyone can use. A way to apply for a job when there's no printer at home. The thing that gets a person from the form to the address to the job in one sitting instead of four separate trips, somebody has to build it, and it may as well be us."
+"It's a bad two months for everybody who tried it. A person reading applications can be sued over which one he picks. Software can't be, and it leaves a record while it does it." She has the page open on the counter between them, one finger flat on it. "So they bought the software. It reads for words off its own listing, and I got a human the one time I pasted the listing back at it."
+
+"So paste the listing back at it."
+
+"Two hundred and six of those is nine weeks of unpaid work, and whoever can't afford nine weeks takes whatever's left at the end. The sites charge thirty a month to keep looking." She turns the page over, where the same hand has already done the arithmetic. "Getting me hired inside a week is the worst week one of those sites could have."
 
 Her father sets the invoice down and looks at her properly. "What would it even do?"
 
-"Get somebody through all of it in one place, instead of chasing four favors and a shop counter for it." She says it the way she'd say a fact about the weather.
+"No resume. An evening of short tests, and the profile is whatever a person can show they've actually done." She says it the way she'd say a fact about the weather. "Then it fills the forms and sends them out everywhere they go, instead of somebody retyping the same life into forty portals. The employer pays on the hire. Looking is free."
+
+"And the big boards let you do that?"
+
+"For now. They'll stop me once they notice, and then I go and get the employers myself, one at a time, in the car."
+
+He turns the notebook around and reads the back of the page before he answers. "And if the whole thing comes to nothing."
+
+"Then it comes to nothing and I go get a job like everybody else." She squares the notebook against the edge of the counter. "There's probably a reason nobody has built it. I can't find the reason. That's probably me."
 
 He closes the invoice and takes a long moment before he answers.
 
-She brings the same complaint to the chat that week, half a joke by the time it gets there. Eli says he'll look into it and lets it drop. By June she's started something of her own; by September she's hiring.
-
-Eli takes a job on a security team three states from where he grew up, and calls his mother the same week to tell her himself, before he's even told the group chat. She goes quiet on the three states for a second, then asks about the insurance and the signing bonus. By the end of the call she's proud in the same uncomplicated way she's always been, contract or contract-free.
+She brings the same complaint to the chat that week, half a joke by the time it gets there, and Eli says he'll look into it and lets it drop. It goes up in the second week of June, four days after the gowns go back, with nine local employers on it who have all bought something from her father at one point or another. By September she's hiring.
 
 Theo goes into the federal government as an analyst, having been interviewed four times and having answered every question completely. He keeps the photograph from the grass in the drawer of his desk at work, where anyone who asks about it would have to already know to look.
 

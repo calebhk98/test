@@ -272,7 +272,7 @@ ruth: since always apparently. i asked kavi to buy one for me and they asked who
 
 ________________
 
-Nadia is behind the counter fewer hours a week now than she used to be, since the company she started in June is three months in and already paying two people who aren't her. A regular customer asks her, not unkindly, when she's going to go do something with herself. She rings up his sandpaper and hands him his change.
+Nadia is behind the counter fewer hours a week now than she used to be, since the thing she put up in June is three months in and already paying two people who aren't her. A regular customer asks her, not unkindly, when she's going to go do something with herself. She rings up his sandpaper and hands him his change.
 
 nadia: guy today asked me when im going to go do something with myself
 
@@ -295,6 +295,42 @@ nadia: two, so far. i sat through the bank explaining a business account to me l
 sam: brutal
 
 nadia: it was tedious, not brutal. brutal implies effort
+
+ruth: how many people on the site
+
+nadia: nine hundred and six in july. eight hundred and twelve now
+
+ruth: thats down
+
+nadia: ninety four of them got hired. thats the column i want going up
+
+eli: you lose them when it works
+
+nadia: i get paid when it works. the employer pays on the hire, the user pays nothing
+
+eli: two of the big boards will block you the second they notice
+
+nadia: two of them already did, in august
+
+eli: what did you do
+
+nadia: got in the car. nineteen employers so far, saturdays
+
+eli: theres a guy leaving my team, ill send you his details
+
+nadia: no
+
+eli: hes good
+
+nadia: everyone says that about everyone they know. put him through the site like everybody else
+
+kavi: how are you picking, then
+
+nadia: tests first, then i talk to them. i ask them to tell me where the thing they built breaks
+
+ruth: and
+
+nadia: forty one people so far. thirty nine of them told me it doesnt break
 
 ________________
 
