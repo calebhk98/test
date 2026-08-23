@@ -25,9 +25,9 @@ const int EVENT_DURATION_DAYS = 14;
 const int EVENT_DURATION_HOURS = 0;
 const int EVENT_DURATION_MINUTES = 0;
 const int EVENT_DURATION_SECONDS = 0;
-const int UNLOCKED_PETS = #ENTER_YOUR_UNLOCKED_PETS#;
-const int DLs = #ENTER_YOUR_DUNGEON_LEVELS#;
-const int AL = #ENTER_YOUR_ADVENTURE_LEVEL#;
+const int UNLOCKED_PETS = 130;
+const int DLs = 16045;
+const int AL = 372;
 
 array<int, 25> currentLevels = { 
     // Current Production Levels

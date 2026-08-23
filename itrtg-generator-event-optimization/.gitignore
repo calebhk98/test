@@ -407,3 +407,7 @@ Testing.exe
 OptimizedPaths.txt
 Summer_2025_Multithreading.cpp
 OPTIMIZATION_NOTES.md
+
+# Local build/run artifacts (non-Windows binary + captured run log)
+summer2026
+run_output.txt
