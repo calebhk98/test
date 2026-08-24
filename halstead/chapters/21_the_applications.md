@@ -48,6 +48,16 @@ Ruth's own prompt asks her to describe a time she failed, and she spends forty m
 
 "It's a deadline, so pick one, or the deadline picks one for you at midnight."
 
+Nadia is in the room too, back against the door, laptop on her knees, and what she is filling in is not an essay. It is a portal, and it wants eleven years of schooling typed into a box marked Education History after taking the same thing as an attached file, the fourth form this afternoon to ask her for something it already holds.
+
+"You're not applying anywhere," Ruth says.
+
+"I'm applying to eleven places this week, and none of the eleven are schools." She tabs to the next box without looking up. "Purchasing assistant at the plumbing supply out on Route 8. Parts buyer, two dealerships. Service writer at the transmission place on Fourth. Dispatch at a freight company in Ambridge. An insurance office running a claims trainee program that says straight out of high school at the top of the listing and two years of experience nine lines down."
+
+"Which one do you actually want?" Chloe says.
+
+"Any of them where somebody calls in wanting a price and I'm the one who answers the phone. The rest of it is the building it happens in."
+
 A second prompt asks about a place that changed her, and Chloe cannot get the forge down to six hundred words either, so she writes about the reservoir instead, nine miles from her parents' house, and the hill she has to stand up on the pedals to clear. It comes out at four hundred and ninety words with every line surviving the edit, a bad sign by her own reckoning for about a minute before she submits it anyway.
 
 For the college her mother went to, the prompt asks why this school specifically, and Chloe writes the short, honest answer: her mother still has a sweatshirt from it, worn soft at the cuffs, at the back of a closet, and has always assumed Chloe would end up there too.
@@ -130,8 +140,6 @@ Another asks Sam what he's good at, expecting a list with hedging in it.
 
 The rep asks who Odile is, and Sam points across the dining hall with his fork.
 
-One evening a rep from Chicago tries the handle on an unmarked door on the research floor and finds it holds, with no sign, just a badge reader and a camera above the frame, and when he mentions it at dinner the Duke rep says he found the same door on the Monday and got exactly as far.
-
 The Duke representative, the one who'd collected "Sport," then "Athletics," then "Recreation," tries Ruth in the reading room one afternoon. "What's the hardest thing you've done here?"
 
 "That's not a well-formed question," Ruth says, not looking up from her own laptop. "Hardest by what measure, and compared to what?"
@@ -141,6 +149,36 @@ The Duke representative, the one who'd collected "Sport," then "Athletics," then
 Ruth looks up at that, closing the laptop over a finger to keep her page. "Time, not difficulty: two years of Saturdays running someone else's practice sessions, and the sessions were the easy part." She opens the laptop back up. "Sustained is harder to fake than hard."
 
 The rep writes that down and moves to the next name on his list.
+
+________________
+
+Nadia's answers come in mostly between one and four in the morning. She keeps them at the back of a notebook in the ledger hand, a line for every application and a column for whatever came back, and by the second week of March the lines run to a hundred and ninety against eleven things in the column. One of the eleven lands nine minutes after she sends it, on a form that had taken her fifty minutes. A listing she answered in the first week of November is still up in March, the same four paragraphs with a fresh date on top, reposted twice.
+
+She stops reading the count out at dinner somewhere in February, and when her mother asks on the phone whether anybody has called, Nadia starts being the one who gets to the shop phone first.
+
+Ruth asks her in the common room in March, with only Chloe else there, and gets a number two weeks old, and then the real one.
+
+"A hundred and ninety," Ruth says. "Against how many that answered?"
+
+"Eleven, and eight of the eleven were written by software." The notebook is shut under her hand. She pushes her sleeves up, and then a second goes by where she says nothing at all. "Read one of mine, Ruth. I can't work out what they want. I've read the listing and I've read the form and I've answered both of them, and I can't see the part where I'm getting it wrong."
+
+"Chloe should read one, since Chloe's the one who writes."
+
+"Chloe writes four pages when they ask for six hundred."
+
+Chloe puts her pen down on the deadline list and leaves it there.
+
+"Six hundred and eleven, in the end. I cut it."
+
+"You cut it three times." Nadia looks at her a second longer than she has looked at her all evening, and then pushes the notebook across the table, open, which is a thing she has not done with it in front of anybody. "Read the eleventh one. That's the one that got nine minutes."
+
+Chloe reads it twice and cannot find anything wrong with it either. Neither of them goes back to the four pages, and neither of them moves seats.
+
+Ruth's own advice is to send the same application twice and change one thing, so in the last week of March Nadia answers one listing with two applications inside the same hour, the second copy with the listing's own sentences run back through it. The second copy gets a phone call from a person on the Tuesday, and the first never gets anything at all.
+
+"Do the second one every time," Ruth says.
+
+"Then the form isn't reading the person, it's reading its own listing back to itself." Nadia writes the Tuesday call into the column and rules a line under it. "Fine. Every time."
 
 ________________
 
