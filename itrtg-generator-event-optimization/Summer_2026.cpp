@@ -21,35 +21,35 @@ using namespace std;
 typedef long long ll;
 
 // USER SETTINGS ---------------------------------------------------------------------
-const int EVENT_DURATION_DAYS = 13;
-const int EVENT_DURATION_HOURS = 1;
-const int EVENT_DURATION_MINUTES = 56;
-const int EVENT_DURATION_SECONDS = 24;
+const int EVENT_DURATION_DAYS = 12;
+const int EVENT_DURATION_HOURS = 6;
+const int EVENT_DURATION_MINUTES = 51;
+const int EVENT_DURATION_SECONDS = 4;
 const int UNLOCKED_PETS = 130;
 const int DLs = 16045;
 const int AL = 372;
 
 array<int, 25> currentLevels = { 
     // Current Production Levels
-    4, 15, 10,
-    3, 3, 3,
-    0, 1, 1,
-    1, 0, 1, 
+    10, 18, 16,
+    9, 10, 12,
+    5, 7, 6,
+    5, 1, 5, 
     
     // Current Speed Levels
-    2, 10, 9,
-    2, 3, 2,
-    0, 0, 0,
-    0, 0, 0,
+    9, 10, 10,
+    8, 9, 10,
+    3, 6, 5,
+    4, 0, 4,
     
     0 // Dummy placeholder. Keep 0
 };
 array<double, 12> resourceCounts = { 
     // Current resource counts
-    94140, 4625000, 268687, 
-    47651, 57791, 57497, 
-    0/((500.0+DLs)/5.0), 15458, 64,
-    270/(0.5+AL/100.0), 0, 55/(UNLOCKED_PETS/100.0)
+    623035, 4522000, 1542000, 
+    260448, 331728, 478469, 
+    669277/((500.0+DLs)/5.0), 158939, 676,
+    1945/(0.5+AL/100.0), 13, 491/(UNLOCKED_PETS/100.0)
 };
 
 // Your current upgrade path/the path you want to optimize. If left blank, a random path will be generated.
