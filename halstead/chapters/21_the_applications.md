@@ -48,7 +48,7 @@ Ruth's own prompt asks her to describe a time she failed, and she spends forty m
 
 "It's a deadline, so pick one, or the deadline picks one for you at midnight."
 
-Nadia is in the room too, back against the door, laptop on her knees, and what she is filling in is a portal rather than an essay. It wants eleven years of schooling typed into a box marked Education History after taking the same thing as an attached file, the fourth form this afternoon to ask her for something it already holds.
+Nadia is in the room too, back against the door, laptop on her knees, and what she is filling in is a portal rather than an essay. It wants eleven years of schooling typed into a box marked Education History after taking the same thing as an attached file, the fourth form today to ask her for something it already holds.
 
 "You're not applying anywhere," Ruth says.
 
@@ -156,7 +156,7 @@ Nadia's answers come in mostly between one and four in the morning. She keeps th
 
 She stops reading the count out at dinner somewhere in February, and when her mother asks on the phone whether anybody has called, Nadia starts being the one who gets to the shop phone first.
 
-Ruth asks her in the common room in March, with only Chloe else there, and gets a number two weeks old, and then the real one.
+Ruth asks her in the common room in March, with only Chloe else in the room, and gets a number two weeks old, and then the real one.
 
 "A hundred and ninety," Ruth says. "Against how many that answered?"
 
@@ -166,13 +166,13 @@ Ruth asks her in the common room in March, with only Chloe else there, and gets 
 
 "Chloe writes four pages when they ask for six hundred."
 
-Chloe puts her pen down on the deadline list and leaves it there.
+Chloe puts her pen down and leaves it down.
 
 "Six hundred and eleven, in the end. I cut it."
 
 "You cut it three times." Nadia looks at her a second longer than she has looked at her all evening, and then pushes the notebook across the table, open, which she has not done with it in front of anybody. "Read the eleventh one. That's the one that got nine minutes."
 
-Chloe reads it twice and finds it clean, the same as Ruth did. The four pages stay where they were dropped, and both of them keep their seats.
+Chloe reads it twice and finds it clean, and Ruth reads it after her and says the same. The four pages close there, and both of them keep their seats.
 
 Ruth's own advice is to send the same application twice and change one thing, so in the last week of March Nadia answers one listing twice inside the same hour, the second copy with the listing's own sentences run back through it. The second gets a phone call from a person on the Tuesday. The first stays silent to the end of the month.
 

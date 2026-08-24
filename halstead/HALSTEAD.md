@@ -4370,7 +4370,7 @@ Ruth's own prompt asks her to describe a time she failed, and she spends forty m
 
 "It's a deadline, so pick one, or the deadline picks one for you at midnight."
 
-Nadia is in the room too, back against the door, laptop on her knees, and what she is filling in is a portal rather than an essay. It wants eleven years of schooling typed into a box marked Education History after taking the same thing as an attached file, the fourth form this afternoon to ask her for something it already holds.
+Nadia is in the room too, back against the door, laptop on her knees, and what she is filling in is a portal rather than an essay. It wants eleven years of schooling typed into a box marked Education History after taking the same thing as an attached file, the fourth form today to ask her for something it already holds.
 
 "You're not applying anywhere," Ruth says.
 
@@ -4478,7 +4478,7 @@ Nadia's answers come in mostly between one and four in the morning. She keeps th
 
 She stops reading the count out at dinner somewhere in February, and when her mother asks on the phone whether anybody has called, Nadia starts being the one who gets to the shop phone first.
 
-Ruth asks her in the common room in March, with only Chloe else there, and gets a number two weeks old, and then the real one.
+Ruth asks her in the common room in March, with only Chloe else in the room, and gets a number two weeks old, and then the real one.
 
 "A hundred and ninety," Ruth says. "Against how many that answered?"
 
@@ -4488,13 +4488,13 @@ Ruth asks her in the common room in March, with only Chloe else there, and gets 
 
 "Chloe writes four pages when they ask for six hundred."
 
-Chloe puts her pen down on the deadline list and leaves it there.
+Chloe puts her pen down and leaves it down.
 
 "Six hundred and eleven, in the end. I cut it."
 
 "You cut it three times." Nadia looks at her a second longer than she has looked at her all evening, and then pushes the notebook across the table, open, which she has not done with it in front of anybody. "Read the eleventh one. That's the one that got nine minutes."
 
-Chloe reads it twice and finds it clean, the same as Ruth did. The four pages stay where they were dropped, and both of them keep their seats.
+Chloe reads it twice and finds it clean, and Ruth reads it after her and says the same. The four pages close there, and both of them keep their seats.
 
 Ruth's own advice is to send the same application twice and change one thing, so in the last week of March Nadia answers one listing twice inside the same hour, the second copy with the listing's own sentences run back through it. The second gets a phone call from a person on the Tuesday. The first stays silent to the end of the month.
 
@@ -4605,9 +4605,9 @@ The eighty saying no go back to their own last weeks of school, final transcript
 
 ________________
 
-Nadia's slot is the Thursday of the first week. She is in the chair before the runner has finished with the door.
+The roster has Nadia at eleven forty on the Thursday of the first week, between a boy from the materials wing and a girl who has already accepted, back to ask a question about the housing. Nadia spends the ten minutes beforehand in the corridor finishing an application on her phone, the ninth of that particular week. She is in the chair before the runner has finished with the door.
 
-"Eleven years," Amberg says. "Anything for the file."
+"Eleven years," Mr. Amberg says. "Anything for the file."
 
 "You've got my marks and you've got the board in the hallway."
 
@@ -4617,7 +4617,7 @@ He gives her the same four things in the same order he gives everybody: research
 
 "Reason?"
 
-"I'd be good at about four hours a month of that job." Both hands stay flat on her knees. "The four hours where somebody names the constraint and I go argue with a supplier about it. The rest of it is a desk and a paper at the end, and every paper I have ever finished went to a marker and stopped there."
+"I'd be good at about four hours a month of that job." Both hands stay flat on her knees. "The four hours where somebody names the constraint and I go argue with a supplier about it. The rest of it is a desk and a paper at the end, and every paper I have ever finished went to a marker, where it stopped."
 
 Amberg writes for a while. "The eighty saying no are going to college in September. You haven't sent an application anywhere."
 
@@ -4633,13 +4633,13 @@ He asks the next one without looking up from the page. "How many applications."
 
 "And the three that were people."
 
-"Two said no. The third called me because I pasted the listing's own sentences back into the box, and that worked, and I'd rather it hadn't."
+"Two said no. The third called me because I pasted the listing's own sentences back into the box, which worked, and I'd rather it hadn't."
 
 "So September."
 
 She pushes her sleeves up, sitting down, in a chair, which is a thing he has watched her do since she was twelve.
 
-"I'm building the thing that gets people hired. The employer pays when somebody gets the job and the person pays nothing."
+"I'm building the thing that gets people hired. The employer pays when somebody gets the job. The person pays nothing."
 
 Amberg looks at that for longer than he has looked at anything else on the desk. "Eighty people have sat in that chair this month. Four of them told me they were starting something."
 
@@ -4647,7 +4647,7 @@ Amberg looks at that for longer than he has looked at anything else on the desk.
 
 "Three of the four will be doing something else by Christmas."
 
-"That sounds right too." Her hands stay where they are. "The afternoon block is unrecorded, so it's been in there since the middle of April. If it comes to nothing by next spring, it comes to nothing and I go and take whichever of the eleven jobs is still open, the same as anybody. That's the part I've checked. It's the only part I've checked."
+"That sounds right too." Her hands stay where they are. "The afternoon block is unrecorded, so it's been in there since the last week of March. If it comes to nothing by next spring, it comes to nothing and I take whichever of the eleven jobs is still open, the same as anybody. That's the part I've checked. It's the only part I've checked."
 
 "What do your parents say."
 
@@ -4655,7 +4655,7 @@ Amberg looks at that for longer than he has looked at anything else on the desk.
 
 He writes that down too, then turns the page over to keep writing on the back of it. At fifteen minutes exactly he stands. She is already up.
 
-That night she counts the shop's till after closing and gets a number. She counts it a second time, gets the same number, then counts it a third time. Then she goes up, writes the first sixty lines of the thing before she sleeps, and is at the kitchen table at five the next morning filling in three more forms before the shop opens.
+That night she goes back over the notebook and counts the lines in it, which comes to two hundred and one, the figure she gave him. She counts them again and gets two hundred and one. Then she counts what five years of Saturdays at the shop have left in the account her mother opened for her, three times, and gets the same figure three times. Then she writes the first sixty lines of the thing before she sleeps, then is up at five filling in three more forms before the first bell.
 
 ________________
 
@@ -4820,7 +4820,7 @@ ________________
 
 Everything else at the school keeps running. The labs are still going, the bell still sounds at ten past every hour. By early afternoon, once the grass has cleared and the breakdown crew has the field to itself, the twelve-year-olds who spent the ceremony kicking a water bottle down a gap in the rows are back at their afternoon block on schedule. By the time Chloe carries her own box past the language wing, a substitute is drilling verb conjugations off a whiteboard, the same lesson that was scheduled weeks before anyone knew today would be different for ninety-one people walking past the door.
 
-Her own box goes down the ground-floor hallway with a forge mallet with a handle that is still the wrong shape wedged in next to a stack of notebooks. Eleven years of the same nine brass plates line the wall here, and she reads all nine again on her way past, the way she has every single day since she was seven, counting them on reflex the way she counts anything she's about to lose: nine plates, four years of woodshop before the forge took over completely, one hook still on the back of her door upstairs that she's already decided to leave hanging there for whoever gets the room next.
+Her own box goes down the ground-floor hallway with a forge mallet with a handle still the wrong shape wedged in next to a stack of notebooks. Eleven years of the same nine brass plates line the wall here, and she reads all nine again on her way past, the way she has every single day since she was seven, counting them on reflex the way she counts anything she's about to lose: nine plates, four years of woodshop before the forge took over completely, one hook still on the back of her door upstairs that she's already decided to leave hanging there for whoever gets the room next.
 
 At the propped courtyard door she reaches up for the top of the frame, the way she used to have to jump for it at seven, and finds her hand flat against the wood with room to spare, her whole arm straight. The frame is exactly where it's always been; she's grown well past having to reach for it. She holds it there a second longer than the box in her other arm makes comfortable, then lets go and keeps walking, because Sam is somewhere out on the grass already asking where she's got to.
 
@@ -4844,7 +4844,7 @@ Ruth goes to MIT, with a box of her own things labeled and half packed before th
 
 Nadia stays, and the notebook finishes at two hundred and eleven applications since November against fourteen answers, the last of them an automatic rejection from a company that had already turned her down in January under a different listing and a different job description.
 
-She brings it to her father on a Saturday in May, at the counter, with the notebook. The thing itself has been in her afternoon block since the middle of April, in the hour the school leaves unrecorded, and she pushes her sleeves up first.
+She brings it to her father on a Saturday in May, at the counter, with the notebook. The thing itself has been in her afternoon block since the last week of March, in the hour the school leaves unrecorded, and she pushes her sleeves up first.
 
 "Two hundred and eleven applications since November," she says, "and fourteen answers, eleven of them generated by software at two in the morning."
 
@@ -4886,7 +4886,7 @@ He looks at the ledger, then at the shop. "Four applications a week until then. 
 
 "Three, they go in the book where you can count them, and the subject stays off the counter on a Sunday."
 
-He puts his hand out across the counter, which is the arrangement he uses with a supplier and has never once used with his daughter, and she shakes it.
+He puts his hand out across the counter, the way he closes with a supplier and has never once closed with his daughter, and she shakes it.
 
 "I got up at five for six months to fill those in," she says, still holding on. "I'd like to stop doing that."
 
@@ -4894,7 +4894,7 @@ Her father keeps hold of her hand a second past where she lets go of his. Then s
 
 She brings the same complaint to the chat that week, half a joke by the time it gets there, and Eli says he'll look into it and lets it drop.
 
-Between the middle of May and the second week of June she asks sixty-one employers, in person, working down a list arranged by street, and nine of the sixty-one agree, every one of them a customer who has bought something from her father. It goes up four days after the gowns go back with the nine on it. The first month produces forty-one registered users and exactly one hire, and the hire is a man who already had the job and used the site to fill in the application form.
+Between the middle of May and the second week of June she asks sixty-one employers, in person, working down a list arranged by street, and nine of the sixty-one agree, every one of them a customer of her father's. It goes up four days after the gowns go back with the nine on it. The first month produces forty-one registered users and exactly one hire, and the hire is a man who already had the job and used the site to fill in the application form.
 
 Theo goes into the federal government as an analyst, having been interviewed four times and having answered every question completely. He keeps the photograph from the grass in the drawer of his desk at work, where anyone who asks about it would have to already know to look.
 
@@ -4941,13 +4941,13 @@ So she takes Georgetown, and the two years everyone else is calling a wait becom
 
 The chat is five years old. They wrote the encryption themselves at thirteen, mostly to keep a teacher from reading it while they arranged getting out of the building, and it's the only one any of them has ever used.
 
-This is the first September that finds every one of them somewhere else. Eli, three states from where he grew up, has a new badge with last year's photo still on it, and Ruth is in a dorm room in Cambridge with a roommate she's met twice. Sam is at a processing station somewhere the paperwork won't name, where they hand his phone back a few minutes at a stretch. Kavi is still at Halstead, in a lab down the corridor from where he had his own lessons, doing work that used to be homework. Nadia is back behind the counter of her parents' shop, same as she's always done, while Theo, four states from the harbor town he grew up in, learns which parts of his new government job stay behind the badge. Priya is somewhere south of the equator, on a signal that comes and goes, and Chloe sits in a lecture hall built for four hundred people, an hour from the apartment she rents.
+This is the first September that finds every one of them somewhere else. Eli, three states from where he grew up, has a new badge with last year's photo still on it, and Ruth is in a dorm room in Cambridge with a roommate she's met twice. Sam is at a processing station somewhere the paperwork won't name, where they hand his phone back a few minutes at a stretch. Kavi is still at Halstead, in a lab down the corridor from where he had his own lessons, doing work that used to be homework. Nadia is in the back room of her parents' shop with the door open onto the counter, while Theo, four states from the harbor town he grew up in, learns which parts of his new government job stay behind the badge. Priya is somewhere south of the equator, on a signal that comes and goes, and Chloe sits in a lecture hall built for four hundred people, an hour from the apartment she rents.
 
-Eli types with his phone propped against a monitor, eyes staying on whatever's actually on the screen. Kavi answers from the same desk he does everything else from, one hand still turning over whatever object was already sitting on it. Ruth writes standing up, phone in one hand and a textbook open in the other, and finishes a whole exchange while keeping pace with whatever she was doing before it started. Nadia texts one-handed while she counts a till with the other, keeping track of both at once. Theo answers standing at a window with the blinds already down, phone held low and close, the way he'd hold a document above his clearance. Sam thumbs the keyboard with the same economy he uses on everything else, three words and stop, because someone behind him is already waiting for the phone. Priya replies from wherever she's charging it, propped against a boot, a bag, once against the neck of a horse that stood still for it.
+Eli types with his phone propped against a monitor, eyes staying on whatever's actually on the screen. Kavi answers from the same desk he does everything else from, one hand still turning over whatever object was already sitting on it. Ruth writes standing up, phone in one hand and a textbook open in the other, and finishes a whole exchange while keeping pace with whatever she was doing before it started. Nadia texts one-handed with the other hand still on a keyboard, keeping track of both at once. Theo answers standing at a window with the blinds already down, phone held low and close, the way he'd hold a document above his clearance. Sam thumbs the keyboard with the same economy he uses on everything else, three words and stop, because someone behind him is already waiting for the phone. Priya replies from wherever she's charging it, propped against a boot, a bag, once against the neck of a horse that stood still for it.
 
 Some of them answer inside a minute no matter the hour, Eli most nights, and Kavi from the same building he's always slept in. Others answer in bursts, three messages at once after a six-hour gap, a reply to something asked at nine landing after midnight because a shift only just ended. A message sent to the whole group at three in the morning gets an answer from somebody within five minutes. It has for five years.
 
-A message can sit read for hours, and it means only a shift running long, a supervisor still talking, a horse three switchbacks from cell service. Whatever he's in the middle of at the agency keeps running through a joke about somebody's boss, so Theo reads everything within minutes of it landing and sometimes waits a full day to answer it. Nadia reads fast and answers fast, except during the two hours after the shop closes, when she's doing the books and the phone goes face down on the counter. Sam goes dark for stretches at a time, the read receipt stuck wherever it last landed, and then three replies arrive inside the same minute once he's got the phone back. A message can open with guys, or ok, or silence before the next fact, arriving before whoever's reading has gotten past the first word.
+A message can sit read for hours, and it means only a shift running long, a supervisor still talking, a horse three switchbacks from cell service. Whatever he's in the middle of at the agency keeps running through a joke about somebody's boss, so Theo reads everything within minutes of it landing and sometimes waits a full day to answer it. Nadia reads fast and answers fast, except on a Sunday evening, when she has the shop's books open in front of her and the phone goes face down on the counter. Sam goes dark for stretches at a time, the read receipt stuck wherever it last landed, and then three replies arrive inside the same minute once he's got the phone back. A message can open with guys, or ok, or silence before the next fact, arriving before whoever's reading has gotten past the first word.
 
 ________________
 
@@ -5199,6 +5199,10 @@ sam: oh
 
 sam: oh thats horrible
 
+nadia: youre not annoyed about the memory
+
+chloe: im going to go and do my reading
+
 nadia: just get one from the school
 
 ruth: we tried. they'll only sell to current students or staff
@@ -5209,7 +5213,37 @@ ruth: since always apparently. i asked kavi to buy one for me and they asked who
 
 ________________
 
-Nadia is behind the counter fewer hours a week now than she used to be, since the thing she put up in June is three months in and already paying two people who aren't her. A regular customer asks her, not unkindly, when she's going to go do something with herself. She rings up his sandpaper and hands him his change.
+The branch is a converted storefront two blocks from the shop, with three desks behind a rope and a manager who keeps the retail policies laminated in the drawer of the nearest one. The bank holds an incoming payment for five business days, and when Nadia asks in September to have that taken off her account he reads her the policy off the card without turning it around so she can see it.
+
+"Five days is the policy on a new business account."
+
+"It's the policy on a new account with no history. This one has three months on it, eleven deposits and zero returns." She has the statements out on his desk, squared against the edge of it. "Two days on nine named payers. I'll write the nine down for you."
+
+"I can't do two days on a balance this size."
+
+"What size does it take."
+
+He tells her, and it is more than she has ever had at one time. She sits with the number for a second, then gives him the one she can actually hold across a month, which is four hundred dollars under his, and tells him what holding it costs her, which is that the four hundred sits in his branch instead of in her hand on the fourth of every month.
+
+"Four hundred under isn't the number."
+
+"Four hundred under is what's in the room." She writes the nine names down anyway, one to a line, and turns the paper around so it faces him. "Two days on those nine, five on everything else. If one of the nine comes back on you, put me to five across all of it and I'll take it."
+
+He reads down the nine names for long enough that the woman at the next desk finishes a telephone call, and Nadia says nothing for the whole of it.
+
+"Two days on the nine. Six months, then it gets reviewed."
+
+"And the twelve dollars a month on the account."
+
+"The fee's the fee."
+
+"You've spent twenty-two minutes on me."
+
+He takes the fee off for a year, and she is out of the branch four minutes after that with the statements back under her arm.
+
+________________
+
+Nadia is behind her parents' counter one day a week now, Sundays, and in the back room the rest of it. A regular customer asks her, not unkindly, when she's going to go do something with herself. She rings up his sandpaper and hands him his change.
 
 nadia: guy today asked me when im going to go do something with myself
 
@@ -5227,31 +5261,15 @@ sam: fair
 
 kavi: whats the headcount
 
-nadia: two, so far. i sat through the bank explaining a business account to me like it was new information
+nadia: me
 
 sam: brutal
 
-nadia: it was tedious, not brutal. brutal implies effort
+nadia: its tedious, not brutal. brutal implies effort
 
-ruth: how many people on the site
+nadia: i interviewed forty one people in july for two jobs. tests first, then i asked each of them where the thing they built breaks
 
-nadia: nine hundred and six in july. eight hundred and twelve now
-
-ruth: thats down
-
-nadia: ninety four of them got hired. thats the column i want going up
-
-eli: you lose them when it works
-
-nadia: i get paid when it works. the employer pays on the hire, the user pays nothing
-
-eli: two of the big boards will block you the second they notice
-
-nadia: two of them already did, in august
-
-eli: what did you do
-
-nadia: got in the car. nineteen employers so far, saturdays
+nadia: thirty nine said it doesnt break. then in august i wrote to all forty one and told them the jobs were gone
 
 eli: theres a guy leaving my team, ill send you his details
 
@@ -5261,13 +5279,85 @@ eli: hes good
 
 nadia: everyone says that about everyone they know. put him through the site like everybody else
 
-kavi: how are you picking, then
+ruth: how many on the site
 
-nadia: tests first, then i talk to them. i ask them to tell me where the thing they built breaks
+nadia: two hundred and twelve people since june. six hires
 
-ruth: and
+ruth: in three months
 
-nadia: forty one people so far. thirty nine of them told me it doesnt break
+nadia: in three months
+
+eli: whats the churn
+
+nadia: they sign up, they look at nine employers, they leave. i would leave
+
+eli: also the sign up page still has lorem ipsum under the button
+
+nadia: since june. its item forty on the list and the list has never got past nine
+
+kavi: and the nine
+
+nadia: four applications between them since august. one of them rang the shop to ask if the site was still running
+
+eli: so sign more employers
+
+nadia: i asked sixty one to get nine. sixty one more gets me nine more and its march
+
+ruth: then the problem is users
+
+nadia: its both ends at once. neither side will go first, so i stop asking either of them to
+
+nadia: every board and every company careers page i can reach, read all of them, and put every opening on it whether the company has heard of me or not
+
+kavi: two of the big boards will block you the second they notice
+
+nadia: two of them will. a careers page is just the companys own website and there are four thousand of those in reach
+
+nadia: the ones i sign in person are the ones who pay me on the hire. the rest are on there so theres something to look at
+
+ruth: and the matching
+
+nadia: both directions. it reads the person, it reads the opening, and it works from whichever side has fewer of them that week
+
+eli: thats a lot of building for something you already built once
+
+nadia: i wrote the whole thing in six weeks. ive spent three months on nobody coming
+
+ruth: can you pay for three more months of it
+
+nadia: eleven hundred dollars, and the back room is free until march
+
+sam: thats not a lot
+
+eli: thats a tightrope with a knife balanced on it
+
+nadia: its eleven hundred dollars, eli. i can read the number
+
+nadia: two invoices clear on the fourth. thats six hundred more. after that its whatever october does
+
+eli: youre one bad month off the plumbing supply on route 8
+
+nadia: purchasing assistant. they never called me back either
+
+nadia: im buying a car in march if it works
+
+ruth: for the saturdays
+
+nadia: no. theres a four cylinder sitting at the yard on ohio street thats been there since i was fourteen
+
+kavi: is it better than the one you have
+
+nadia: its worse
+
+nadia: i want it anyway
+
+ruth: its two in the morning where you are
+
+nadia: yes
+
+________________
+
+Reading other people's listings takes her eleven days, and most of the eleven go on the individual company career pages rather than on the boards, because a board publishes in one format and four thousand separate companies publish in four thousand. By the first week of October the site carries nineteen thousand openings, nine of which have anybody behind them who has agreed to pay her anything.
 
 ________________
 

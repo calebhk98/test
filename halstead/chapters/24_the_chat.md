@@ -262,6 +262,10 @@ sam: oh
 
 sam: oh thats horrible
 
+nadia: youre not annoyed about the memory
+
+chloe: im going to go and do my reading
+
 nadia: just get one from the school
 
 ruth: we tried. they'll only sell to current students or staff
@@ -272,7 +276,7 @@ ruth: since always apparently. i asked kavi to buy one for me and they asked who
 
 ________________
 
-The bank holds an incoming payment for five business days. In September Nadia asks the branch manager to take that off her account, and he reads her the rule off a laminated card without turning the card so she can see it.
+The branch is a converted storefront two blocks from the shop, with three desks behind a rope and a manager who keeps the retail policies laminated in the drawer of the nearest one. The bank holds an incoming payment for five business days, and when Nadia asks in September to have that taken off her account he reads her the policy off the card without turning it around so she can see it.
 
 "Five days is the policy on a new business account."
 
@@ -288,7 +292,7 @@ He tells her, and it is more than she has ever had at one time. She sits with th
 
 "Four hundred under is what's in the room." She writes the nine names down anyway, one to a line, and turns the paper around so it faces him. "Two days on those nine, five on everything else. If one of the nine comes back on you, put me to five across all of it and I'll take it."
 
-He looks at the nine names for a while and she lets him.
+He reads down the nine names for long enough that the woman at the next desk finishes a telephone call, and Nadia says nothing for the whole of it.
 
 "Two days on the nine. Six months, then it gets reviewed."
 
@@ -322,9 +326,21 @@ kavi: whats the headcount
 
 nadia: me
 
+sam: brutal
+
+nadia: its tedious, not brutal. brutal implies effort
+
 nadia: i interviewed forty one people in july for two jobs. tests first, then i asked each of them where the thing they built breaks
 
 nadia: thirty nine said it doesnt break. then in august i wrote to all forty one and told them the jobs were gone
+
+eli: theres a guy leaving my team, ill send you his details
+
+nadia: no
+
+eli: hes good
+
+nadia: everyone says that about everyone they know. put him through the site like everybody else
 
 ruth: how many on the site
 
@@ -338,6 +354,10 @@ eli: whats the churn
 
 nadia: they sign up, they look at nine employers, they leave. i would leave
 
+eli: also the sign up page still has lorem ipsum under the button
+
+nadia: since june. its item forty on the list and the list has never got past nine
+
 kavi: and the nine
 
 nadia: four applications between them since august. one of them rang the shop to ask if the site was still running
@@ -348,17 +368,9 @@ nadia: i asked sixty one to get nine. sixty one more gets me nine more and its m
 
 ruth: then the problem is users
 
-nadia: its both ends at once. neither one of them will go first
+nadia: its both ends at once. neither side will go first, so i stop asking either of them to
 
-eli: theres a guy leaving my team, ill send you his details
-
-nadia: no
-
-eli: hes good
-
-nadia: everyone says that about everyone they know. put him through the site like everybody else
-
-nadia: so im stopping asking. every board and every company careers page i can reach, read all of them, and put every opening on it whether the company has heard of me or not
+nadia: every board and every company careers page i can reach, read all of them, and put every opening on it whether the company has heard of me or not
 
 kavi: two of the big boards will block you the second they notice
 
