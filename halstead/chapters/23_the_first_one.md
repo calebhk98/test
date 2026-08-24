@@ -6,13 +6,13 @@ This is the first graduation Halstead has ever held, and for three weeks beforeh
 
 Backstage, before any family has found a seat, the ninety-one of them stand in the line they've already walked twice this week, alphabetical, timed against a stopwatch clipped to the rail by the stairs. The gowns come in three sizes for ninety-one different heights, and the sewing room handled the gap the way it handles everything else on short notice: pins where a size runs long, a roll of binder clips borrowed from the front office for whoever's left over. Sam is one of them, a clip at his back holding three inches of slack out of the sleeves. The stairs up to the stage are new, built and set by the graduating class itself over two Saturdays in May, the same corner joint half of them first cut at fourteen locking the risers together on the joint alone. Ninety-one students cross them twice each, dead silent underfoot.
 
-They put chairs out on the field, rows of them running back from the stage in a count the school worked out the ordinary way it works out everything else: every family confirmed a headcount by the first of May, and the order that went out matched it to the chair. A contingency stack sits folded at the tree line, untouched all the way through to the last chair coming off the field, because the number that showed up matched the number that was ordered. Off to one side stands the stage itself, plywood over scaffolding braced to hold about four times what ninety-one students crossing it twice will ever put on it, the same margin the woodshop builds into anything a student is going to stand on and somebody else is going to test. The programs, printed to the exact guest count each family confirmed, run out even, with twenty spares sitting at the check-in table as the office's usual cushion.
+They put chairs out on the field, rows of them running back from the stage in a count the school worked out the ordinary way it works out everything else: every family confirmed a headcount by the first of May, and the order that went out matched it to the chair. Off to one side stands the stage itself, plywood over scaffolding, braced to the margin the woodshop builds into anything a student is going to stand on and somebody else is going to test. The programs, printed to the exact guest count each family confirmed, run out even, with twenty spares sitting at the check-in table as the office's usual cushion.
 
 The whole of the school below them sits on the grass behind the last row of seats, the only spot big enough to hold eight hundred children who are not graduating today. The twelve-year-olds nearest the aisle spend the first twenty minutes kicking a water bottle down the gap between two empty rows, working out how many times it will go end over end before somebody's mother turns around.
 
 The head of school gives a short speech that is mostly logistics: four years, some of them longer than four; ninety-one names; a line of thanks to parents, grandparents, and guardians. There's one real sentence at the end, and his voice catches on the word "accomplishment," a sound this well-rehearsed room hadn't planned for. The booth holds four full seconds of dead air behind it before anyone remembers to cue the applause track built for exactly this contingency, and it lands a half-beat late, which gets a bigger laugh from the eight hundred on the grass than the sentence itself did. That sentence goes straight past Chloe anyway, because Sam has spent the last two minutes trying to make her laugh and finally succeeds on the same word.
 
-Then they read out ninety-one names in alphabetical order, evenly paced, timed to the same stopwatch that clocked the rehearsal, and every name lands exactly where the schedule put it, each family standing on cue. Ruth, three seats down from Chloe, times it on instinct, the same silent count she runs against anything with a rhythm in it. "Eleven seconds a name," she says, under her breath, once it's over. "Dead steady, the whole way through." She sounds almost disappointed, the whole thing too clean to correct.
+Then they read out ninety-one names in alphabetical order, evenly paced, timed to the same stopwatch that clocked the rehearsal, and every name lands where the schedule put it, each family standing on cue. Ruth, three seats down from Chloe, times it on instinct, the same silent count she runs against anything with a rhythm in it. "Eleven seconds a name," she says, under her breath, once it's over. "Dead steady, the whole way through." She sounds almost disappointed, the whole thing too clean to correct.
 
 When Sam's name gets called, four rows of people who are not his family stand up anyway, Chloe's mother among them. Eleven years of pickups and drop-offs means she has watched this particular boy grow six inches in a single summer, and it still catches her off guard. When Ruth's name comes, half a row does the same thing for her. Priya's parents, an electrician and a woman who works the front desk at an urgent care clinic, clap for every single name, not just their daughter's, the whole way through.
 
@@ -22,13 +22,13 @@ Her mother cries from the K's onward, a tissue out three names early. Her father
 
 ________________
 
-Her mother knows this campus. She's been coming for eleven years. She knows where the good parking is, knows Ruth's mother by name, and knows to bring a jacket because it's colder up here.
+Her mother knows this campus, having come to it for eleven years. She knows where the good parking is, knows Ruth's mother by name, and knows to bring a jacket because it's colder up here.
 
 She finds Ruth's mother in the crowd before the ceremony even starts. The two of them fall into the same easy back-and-forth they've had every year for over a decade: a supplier problem on one side, a school form still open on the other. "Is he settled on a roommate yet?" Ruth's mother asks, her own younger one starting at Halstead that September, and Meg tells her any day now, that he's already looking at rooms. Ruth's mother, who has forgotten her own jacket eleven years running, takes Meg's spare straight out of her hands. "You'll catch your death," Meg says, the same as every June before this one. Eleven years of parking in the same overflow lot, and each of them still only knows the other from a folding chair.
 
 A few rows over, Dave strikes up a conversation with the stranger next to him about the stage, admiring rather than worried, working out loud that whoever spec'd the bracing built in more margin than the thing will ever need. "Somebody had fun with this," Dave says, nodding at the joists. The stranger has clearly done the same arithmetic already, unprompted, cross-bracing, dead load, a margin that makes more sense for a bridge than a stage, and it takes them most of the conversation to work out that he's a physics professor, Kavi's father. Behind them, a staff member in a school polo folds up a spare table and answers Dave's question about parking on her way past, still moving.
 
-By the end of the afternoon, the grass by the parking lot holds a small, accidental museum of everything a family brings to something like this: folding chairs people brought in preference to the ones provided, two coolers, a phone charger passed hand to hand down an entire row, a dog that shouldn't be there, and, near the back, a folding table somebody's grandfather sets up on his own every June, selling the good lemonade at fifty cents a cup because that's what he did at every one of his own five children's graduations and sees fit to keep doing now. He sells a dozen cups to people who already have a full cooler of their own, because it's the lemonade, not the thirst.
+By the end of the afternoon, the grass by the parking lot holds a small, accidental museum of everything a family brings to something like this: folding chairs people brought in preference to the ones provided, two coolers, a phone charger passed hand to hand down an entire row, a dog that shouldn't be there, and, near the back, a folding table somebody's grandfather sets up on his own every June, selling the good lemonade at fifty cents a cup because that's what he did at every one of his own five children's graduations. He sells a dozen cups to people who already have a full cooler of their own, because it's the lemonade, not the thirst.
 
 After, on the grass, with a paper cup of lemonade:
 
@@ -58,7 +58,7 @@ ________________
 
 Everything else at the school keeps running. The labs are still going, the bell still sounds at ten past every hour. By early afternoon, once the grass has cleared and the breakdown crew has the field to itself, the twelve-year-olds who spent the ceremony kicking a water bottle down a gap in the rows are back at their afternoon block on schedule. By the time Chloe carries her own box past the language wing, a substitute is drilling verb conjugations off a whiteboard, the same lesson that was scheduled weeks before anyone knew today would be different for ninety-one people walking past the door.
 
-Chloe carries her own box down the ground-floor hallway, a forge mallet with a handle that's still slightly the wrong shape wedged in next to a stack of notebooks. Eleven years of the same nine brass plates line the wall here, and she reads all nine again on her way past, the way she has every single day since she was seven, counting them on reflex the way she counts anything she's about to lose: nine plates, four years of woodshop before the forge took over completely, one hook still on the back of her door upstairs that she's already decided to leave hanging there for whoever gets the room next.
+Her own box goes down the ground-floor hallway with a forge mallet with a handle still the wrong shape wedged in next to a stack of notebooks. Eleven years of the same nine brass plates line the wall here, and she reads all nine again on her way past, the way she has every single day since she was seven, counting them on reflex the way she counts anything she's about to lose: nine plates, four years of woodshop before the forge took over completely, one hook still on the back of her door upstairs that she's already decided to leave hanging there for whoever gets the room next.
 
 At the propped courtyard door she reaches up for the top of the frame, the way she used to have to jump for it at seven, and finds her hand flat against the wood with room to spare, her whole arm straight. The frame is exactly where it's always been; she's grown well past having to reach for it. She holds it there a second longer than the box in her other arm makes comfortable, then lets go and keeps walking, because Sam is somewhere out on the grass already asking where she's got to.
 
@@ -66,7 +66,7 @@ ________________
 
 That evening, before anyone's driven off, or signed anything, they are all still on the same patch of grass at the same time, in gowns still on from the ceremony. Someone has found a speaker from somewhere. Sam and Kavi are three moves into a card game neither of them has won all year, and Sam is losing again. Ruth is already on her third phone call about a dorm assignment. Theo gets a photograph of the group before anyone's arranged themselves for one, and Chloe counts the heads in it before she's decided to: all of them, still in it. She still remembers wanting the last names after camp and coming up short, and this time she gets the count while it's still in front of her.
 
-Sam joins the Army. He's been the best fighter in his year since he was ten, by a margin wide enough that the field stopped contesting it by the time he was twelve, and in July, at a recruiting office off the highway outside Pittsburgh, he signs the papers the way he takes a drill: fast, on the first read. The office smells like carpet cleaner and stale coffee, a flag in the corner leaning slightly off true. The recruiter slides four separate forms across the desk and starts explaining what each one means. Sam is already signing the first one before the man finishes the sentence, but he reads the fourth form properly, twice, because it's the one about pay grade and he wants the actual number. He'd already pulled the deployment rotation numbers off the recruiter's own site back in May, better numbers than the ones printed on the desk copy, so that column is settled before he sits down; the physical assessment is the only one still open.
+Sam joins the Army, having been the best fighter in his year since he was ten by a margin wide enough that the field stopped contesting it by the time he was twelve, and in July, at a recruiting office off the highway outside Pittsburgh, he signs the papers the way he takes a drill: fast, on the first read. The office smells like carpet cleaner and stale coffee, a flag in the corner leaning slightly off true. The recruiter slides four separate forms across the desk and starts explaining what each one means. Sam is already signing the first one before the man finishes the sentence, but he reads the fourth form properly, twice, because it's the one about pay grade and he wants the actual number. He'd already pulled the deployment rotation numbers off the recruiter's own site in May, better numbers than the desk copy, so that column is settled before he sits down.
 
 "Why us and not the Marines," the recruiter asks, more out of habit than curiosity; he's heard every version of the answer there is by now.
 
@@ -78,41 +78,61 @@ Sam joins the Army. He's been the best fighter in his year since he was ten, by 
 
 He walks out past the flag leaning off true and keeps the same pace the whole way to the car.
 
-Ruth goes to MIT, with a box of her own things labeled and half packed before the ceremony even starts, the label written in her own small, upright hand.
+Ruth goes to MIT, with a box of her own things labeled and half packed before the ceremony starts, the label written in her own small, upright hand.
 
-Nadia stays. She spends two months looking at jobs and comes out of it baffled. Then she goes back behind the counter of her parents' shop and checks the till before she says hello to anyone, same as she's always done.
+Nadia stays, and the notebook finishes at two hundred and eleven applications since November against fourteen answers, the last of them an automatic rejection from a company that had already turned her down in January under a different listing and a different job description.
 
-The two months are March and April, and she keeps the count of them in the ledger hand at the back of a notebook, a line per application and a column for whatever came back. Two hundred and six lines, fourteen answers, eleven of those fourteen written by software and timed between one and four in the morning. One lands nine minutes after she sends it, on a form that had taken her fifty minutes, because the portal wanted her whole schooling typed a second time under a heading called Education History after she had already attached it as a file. A listing she answers in the first week of March is still up in the last week of April, the same four paragraphs reposted twice with a fresh date on top, and six of the entry-level ones want two years of experience against one that wants three and offers to train the right candidate.
+She brings it to her father on a Saturday in May, at the counter, with the notebook. The thing itself has been in her afternoon block since the middle of April, in the hour the school leaves unrecorded, and she pushes her sleeves up first.
 
-In April she sends one application to one listing twice inside an hour, the second copy with the listing's own sentences run back through it, and only the second copy gets a phone call from a person. She tells Ruth about it in the common room, and Ruth tells her to do the second one every time.
+"Two hundred and eleven applications since November," she says, "and fourteen answers, eleven of them generated by software at two in the morning."
 
-She brings it to her father on a Saturday in May, at the counter, with the notebook. The thing itself has been in her afternoon block since the second week of March, in the hour the school records nothing about. She pushes her sleeves up first.
+"That's a bad six months," her father says, still bent over the invoice in front of him, although the pen stops moving on it.
 
-"Two hundred and six applications," she says. "Fourteen answers. Eleven of the fourteen came out of software at two in the morning."
-
-"That's a bad two months," her father says, still bent over the invoice in front of him, although the pen stops moving on it.
-
-"It's a bad two months for everybody who tried it. A person reading applications can be sued over which one he picks. Software can't be, and it leaves a record while it does it." She has the page open on the counter between them, one finger flat on it. "So they bought the software. It reads for words off its own listing, and I got a human the one time I pasted the listing back at it."
+"It's a bad six months for everybody who tried it. A person reading applications can be sued over which one he picks. Software is safe from that, and it leaves a record while it works." She has the page open on the counter between them, one finger flat on it. "So they bought the software. It reads for words off its own listing, and I got a human the one time I pasted the listing back at it."
 
 "So paste the listing back at it."
 
-"Two hundred and six of those is nine weeks of unpaid work, and whoever can't afford nine weeks takes whatever's left at the end. The sites charge thirty a month to keep looking." She turns the page over, where the same hand has already done the arithmetic. "Getting me hired inside a week is the worst week one of those sites could have."
+"Two hundred and eleven of those is nine weeks of unpaid work, and whoever can't afford nine weeks takes whatever's left at the end." She turns the page over, where the same hand has already done the arithmetic. "The sites charge thirty a month to keep looking. Getting me hired inside a week is the worst week one of those sites could have."
 
 Her father sets the invoice down and looks at her properly. "What would it even do?"
 
-"No resume. An evening of short tests, and the profile is whatever a person can show they've actually done." She says it the way she'd say a fact about the weather. "Then it fills the forms and sends them out everywhere they go, instead of somebody retyping the same life into forty portals. The employer pays on the hire. Looking is free."
+"No resume, an evening of short tests, and a profile assembled out of whatever a person can demonstrate they have actually done." She says it the way she'd say a fact about the weather. "Then it fills the forms and submits them, instead of somebody retyping the same life into forty portals, and the employer pays on the hire while looking costs the person nothing."
 
-"And the big boards let you do that?"
+"And who puts a job on it."
 
-"For now. They'll stop me once they notice, and then I go and get the employers myself, one at a time, in the car."
+"The employers. I go and ask them, one at a time, in the car."
 
-He turns the notebook around and reads the back of the page before he answers. "And if the whole thing comes to nothing."
+He is quiet long enough for a customer to come in, buy a tin of two-inch screws and leave again, and then he says the thing he has been holding since the second hundred.
 
-"Then it comes to nothing and I go get a job like everybody else." She squares the notebook against the edge of the counter. "There's probably a reason nobody has built it. I can't find the reason. That's probably me."
+"This is what people say when nobody will hire them. They say they are starting something." He puts his hand flat on the invoice. "You will be behind that counter Monday to Saturday, and you will keep sending the forms, and whatever this is happens after we close."
 
-He closes the invoice and takes a long moment before he answers.
+"No."
 
-She brings the same complaint to the chat that week, half a joke by the time it gets there, and Eli says he'll look into it and lets it drop. It goes up in the second week of June, four days after the gowns go back, with nine local employers on it who have all bought something from her father at one point or another. By September she's hiring.
+"Nadia."
+
+"I work out of the back room, and the counter gets me on Sundays." She has both hands flat on the ledger between them, either side of the arithmetic. "You keep the books and the ordering off yourself, the same arrangement you have now, at the same price."
+
+"I have that arrangement already."
+
+"You have them from somebody who is going to be on a freight desk in Ambridge in four months, if the freight desk ever calls. You'd be paying for that by August." She lets that sit exactly one beat before she puts the rest of it on the counter. "Sundays at the counter, the back room the remainder of the week, and an end date attached to it. If it is still earning zero by the last day of March I take whatever job is open and I stop."
+
+He looks at the ledger, then at the shop. "Four applications a week until then. Every week, in the book, where I can see them."
+
+"Two a week, written up properly instead of pasted."
+
+"Four."
+
+"Three, they go in the book where you can count them, and the subject stays off the counter on a Sunday."
+
+He puts his hand out across the counter, the arrangement he uses with a supplier and has never once used with his daughter, and she shakes it.
+
+"I got up at five for six months to fill those in," she says, still holding on. "I'd like to stop doing that."
+
+Her father keeps hold of her hand a second past where she lets go of his. Then she takes the invoice off the counter, finds the line he has been reading for twenty minutes, and tells him the supplier has billed him twice for the same case of blades.
+
+She brings the same complaint to the chat that week, half a joke by the time it gets there, and Eli says he'll look into it and lets it drop.
+
+Between the middle of May and the second week of June she asks sixty-one employers, in person, working down a list arranged by street, and nine of the sixty-one agree, every one of them a customer of her father's. It goes up four days after the gowns go back with the nine on it. The first month produces forty-one registered users and exactly one hire, and the hire is a man who already had the job and used the site to fill in the application form.
 
 Theo goes into the federal government as an analyst, having been interviewed four times and having answered every question completely. He keeps the photograph from the grass in the drawer of his desk at work, where anyone who asks about it would have to already know to look.
 
@@ -132,7 +152,7 @@ ________________
 
 By the time she's sitting in her own gown, Chloe already knows what the next two years look like, because she found out in May.
 
-She reads the eligibility page for the Foreign Service exam again at her desk, then a third time, to make sure two readings had actually found the same thing she thought they had. Twenty years old to sit it. Twenty-one to be sworn in, once the file behind it clears. She turns eighteen in August.
+She reads the eligibility page for the Foreign Service exam again at her desk, then a third time, to be sure two readings had found the same thing. Twenty years old to sit it. Twenty-one to be sworn in, once the file behind it clears, and she turns eighteen in August.
 
 She closes the laptop and leaves it shut for the rest of the night. Down at the forge, she works past when everyone else has gone up, past the point where the piece in front of her is about the piece at all; what's left is the exact repetition of getting the next fold as thin as the last one, over and over, until her arm is the only part of her still making decisions.
 

@@ -54,6 +54,60 @@ The eighty saying no go back to their own last weeks of school, final transcript
 
 ________________
 
+Nadia's slot is the Thursday of the first week. She is in the chair before the runner has finished with the door.
+
+"Eleven years," Amberg says. "Anything for the file."
+
+"You've got my marks and you've got the board in the hallway."
+
+He gives her the same four things in the same order he gives everybody: research, full time; a hundred and thirty five thousand dollars a year to start; housing, food, a car, medical; the degree on top of it if she wants it, paid for, the post held open until she finishes.
+
+"No."
+
+"Reason?"
+
+"I'd be good at about four hours a month of that job." Both hands stay flat on her knees. "The four hours where somebody names the constraint and I go argue with a supplier about it. The rest of it is a desk and a paper at the end, and every paper I have ever finished went to a marker and stopped there."
+
+Amberg writes for a while. "The eighty saying no are going to college in September. You haven't sent an application anywhere."
+
+"I costed it. Four years and about a hundred and ten thousand dollars, against the eleven jobs I've actually been applying for." She says the eleven jobs faster than he can write them. "A degree comes up on zero of the eleven. Two of them ask for a forklift certificate."
+
+"Which you have."
+
+"Which took a day."
+
+He asks the next one without looking up from the page. "How many applications."
+
+"Two hundred and one since November. Thirteen answers. Ten of the thirteen came out of software between one and four in the morning, and one of the ten arrived nine minutes after a form that took me fifty."
+
+"And the three that were people."
+
+"Two said no. The third called me because I pasted the listing's own sentences back into the box, and that worked, and I'd rather it hadn't."
+
+"So September."
+
+She pushes her sleeves up, sitting down, in a chair, which is a thing he has watched her do since she was twelve.
+
+"I'm building the thing that gets people hired. The employer pays when somebody gets the job and the person pays nothing."
+
+Amberg looks at that for longer than he has looked at anything else on the desk. "Eighty people have sat in that chair this month. Four of them told me they were starting something."
+
+"That sounds about right."
+
+"Three of the four will be doing something else by Christmas."
+
+"That sounds right too." Her hands stay where they are. "The afternoon block is unrecorded, so it's been in there since the middle of April. If it comes to nothing by next spring, it comes to nothing and I go and take whichever of the eleven jobs is still open, the same as anybody. That's the part I've checked. It's the only part I've checked."
+
+"What do your parents say."
+
+"I haven't told them."
+
+He writes that down too, then turns the page over to keep writing on the back of it. At fifteen minutes exactly he stands. She is already up.
+
+That night she counts the shop's till after closing and gets a number. She counts it a second time, gets the same number, then counts it a third time. Then she goes up, writes the first sixty lines of the thing before she sleeps, and is at the kitchen table at five the next morning filling in three more forms before the shop opens.
+
+________________
+
 Kavi is one of the eleven, and Chloe hears about it before any posted list confirms it: his name comes up in the common room before dinner, already attached to a number somebody else supplies, and she goes to find him rather than take the secondhand version.
 
 She finds him in the network room in the evening, back against the radiator by the door, a length of stripped cable coiled around one hand while he turns the copper end over between two fingers, over and over, eyes somewhere else, the coil going slack and tight again in his fist.

@@ -4,13 +4,13 @@
 
 The chat is five years old. They wrote the encryption themselves at thirteen, mostly to keep a teacher from reading it while they arranged getting out of the building, and it's the only one any of them has ever used.
 
-This is the first September that finds every one of them somewhere else. Eli, three states from where he grew up, has a new badge with last year's photo still on it, and Ruth is in a dorm room in Cambridge with a roommate she's met twice. Sam is at a processing station somewhere the paperwork won't name, where they hand his phone back a few minutes at a stretch. Kavi is still at Halstead, in a lab down the corridor from where he had his own lessons, doing work that used to be homework. Nadia is back behind the counter of her parents' shop, same as she's always done, while Theo, four states from the harbor town he grew up in, learns which parts of his new government job stay behind the badge. Priya is somewhere south of the equator, on a signal that comes and goes, and Chloe sits in a lecture hall built for four hundred people, an hour from the apartment she rents.
+This is the first September that finds every one of them somewhere else. Eli, three states from where he grew up, has a new badge with last year's photo still on it, and Ruth is in a dorm room in Cambridge with a roommate she's met twice. Sam is at a processing station somewhere the paperwork won't name, where they hand his phone back a few minutes at a stretch. Kavi is still at Halstead, in a lab down the corridor from where he had his own lessons, doing work that used to be homework. Nadia is in the back room of her parents' shop with the door open onto the counter, while Theo, four states from the harbor town he grew up in, learns which parts of his new government job stay behind the badge. Priya is somewhere south of the equator, on a signal that comes and goes, and Chloe sits in a lecture hall built for four hundred people, an hour from the apartment she rents.
 
-Eli types with his phone propped against a monitor, eyes staying on whatever's actually on the screen. Kavi answers from the same desk he does everything else from, one hand still turning over whatever object was already sitting on it. Ruth writes standing up, phone in one hand and a textbook open in the other, and finishes a whole exchange while keeping pace with whatever she was doing before it started. Nadia texts one-handed while she counts a till with the other, keeping track of both at once. Theo answers standing at a window with the blinds already down, phone held low and close, the way he'd hold a document above his clearance. Sam thumbs the keyboard with the same economy he uses on everything else, three words and stop, because someone behind him is already waiting for the phone. Priya replies from wherever she's charging it, propped against a boot, a bag, once against the neck of a horse that stood still for it.
+Eli types with his phone propped against a monitor, eyes staying on whatever's actually on the screen. Kavi answers from the same desk he does everything else from, one hand still turning over whatever object was already sitting on it. Ruth writes standing up, phone in one hand and a textbook open in the other, and finishes a whole exchange while keeping pace with whatever she was doing before it started. Nadia texts one-handed with the other hand still on a keyboard, keeping track of both at once. Theo answers standing at a window with the blinds already down, phone held low and close, the way he'd hold a document above his clearance. Sam thumbs the keyboard with the same economy he uses on everything else, three words and stop, because someone behind him is already waiting for the phone. Priya replies from wherever she's charging it, propped against a boot, a bag, once against the neck of a horse that stood still for it.
 
 Some of them answer inside a minute no matter the hour, Eli most nights, and Kavi from the same building he's always slept in. Others answer in bursts, three messages at once after a six-hour gap, a reply to something asked at nine landing after midnight because a shift only just ended. A message sent to the whole group at three in the morning gets an answer from somebody within five minutes. It has for five years.
 
-A message can sit read for hours, and it means only a shift running long, a supervisor still talking, a horse three switchbacks from cell service. Whatever he's in the middle of at the agency keeps running through a joke about somebody's boss, so Theo reads everything within minutes of it landing and sometimes waits a full day to answer it. Nadia reads fast and answers fast, except during the two hours after the shop closes, when she's doing the books and the phone goes face down on the counter. Sam goes dark for stretches at a time, the read receipt stuck wherever it last landed, and then three replies arrive inside the same minute once he's got the phone back. A message can open with guys, or ok, or silence before the next fact, arriving before whoever's reading has gotten past the first word.
+A message can sit read for hours, and it means only a shift running long, a supervisor still talking, a horse three switchbacks from cell service. Whatever he's in the middle of at the agency keeps running through a joke about somebody's boss, so Theo reads everything within minutes of it landing and sometimes waits a full day to answer it. Nadia reads fast and answers fast, except on a Sunday evening, when she has the shop's books open in front of her and the phone goes face down on the counter. Sam goes dark for stretches at a time, the read receipt stuck wherever it last landed, and then three replies arrive inside the same minute once he's got the phone back. A message can open with guys, or ok, or silence before the next fact, arriving before whoever's reading has gotten past the first word.
 
 ________________
 
@@ -272,7 +272,37 @@ ruth: since always apparently. i asked kavi to buy one for me and they asked who
 
 ________________
 
-Nadia is behind the counter fewer hours a week now than she used to be, since the thing she put up in June is three months in and already paying two people who aren't her. A regular customer asks her, not unkindly, when she's going to go do something with herself. She rings up his sandpaper and hands him his change.
+The bank holds an incoming payment for five business days. In September Nadia asks the branch manager to take that off her account, and he reads her the rule off a laminated card without turning the card so she can see it.
+
+"Five days is the policy on a new business account."
+
+"It's the policy on a new account with no history. This one has three months on it, eleven deposits and zero returns." She has the statements out on his desk, squared against the edge of it. "Two days on nine named payers. I'll write the nine down for you."
+
+"I can't do two days on a balance this size."
+
+"What size does it take."
+
+He tells her, and it is more than she has ever had at one time. She sits with the number for a second, then gives him the one she can actually hold across a month, which is four hundred dollars under his, and tells him what holding it costs her, which is that the four hundred sits in his branch instead of in her hand on the fourth of every month.
+
+"Four hundred under isn't the number."
+
+"Four hundred under is what's in the room." She writes the nine names down anyway, one to a line, and turns the paper around so it faces him. "Two days on those nine, five on everything else. If one of the nine comes back on you, put me to five across all of it and I'll take it."
+
+He looks at the nine names for a while and she lets him.
+
+"Two days on the nine. Six months, then it gets reviewed."
+
+"And the twelve dollars a month on the account."
+
+"The fee's the fee."
+
+"You've spent twenty-two minutes on me."
+
+He takes the fee off for a year, and she is out of the branch four minutes after that with the statements back under her arm.
+
+________________
+
+Nadia is behind her parents' counter one day a week now, Sundays, and in the back room the rest of it. A regular customer asks her, not unkindly, when she's going to go do something with herself. She rings up his sandpaper and hands him his change.
 
 nadia: guy today asked me when im going to go do something with myself
 
@@ -290,31 +320,39 @@ sam: fair
 
 kavi: whats the headcount
 
-nadia: two, so far. i sat through the bank explaining a business account to me like it was new information
+nadia: me
 
-sam: brutal
+nadia: i interviewed forty one people in july for two jobs. tests first, then i asked each of them to tell me where the thing they built breaks
 
-nadia: it was tedious, not brutal. brutal implies effort
+ruth: and
 
-ruth: how many people on the site
+nadia: thirty nine of them told me it doesnt break
 
-nadia: nine hundred and six in july. eight hundred and twelve now
+nadia: then i wrote to all forty one in august and told them there were no jobs
 
-ruth: thats down
+ruth: how many on the site
 
-nadia: ninety four of them got hired. thats the column i want going up
+nadia: two hundred and twelve people since june. six hires
 
-eli: you lose them when it works
+ruth: in three months
 
-nadia: i get paid when it works. the employer pays on the hire, the user pays nothing
+nadia: in three months
 
-eli: two of the big boards will block you the second they notice
+eli: whats the churn
 
-nadia: two of them already did, in august
+nadia: they sign up, they look at nine employers, they leave. i would leave
 
-eli: what did you do
+kavi: and the nine
 
-nadia: got in the car. nineteen employers so far, saturdays
+nadia: four applications between them since august. one of them rang the shop to ask if the site was still running
+
+eli: so sign more employers
+
+nadia: i asked sixty one to get nine. sixty one more gets me nine more and its march
+
+ruth: then the problem is users
+
+nadia: its both ends at once. neither one of them will go first
 
 eli: theres a guy leaving my team, ill send you his details
 
@@ -324,13 +362,57 @@ eli: hes good
 
 nadia: everyone says that about everyone they know. put him through the site like everybody else
 
-kavi: how are you picking, then
+nadia: anyway im stopping asking
 
-nadia: tests first, then i talk to them. i ask them to tell me where the thing they built breaks
+nadia: every board and every company careers page i can reach, read all of them, and put every opening on it whether the company has heard of me or not
 
-ruth: and
+kavi: two of the big boards will block you the second they notice
 
-nadia: forty one people so far. thirty nine of them told me it doesnt break
+nadia: two of them will. a careers page is just the companys own website and there are four thousand of those in reach
+
+nadia: the ones i sign in person are the ones who pay me on the hire. the rest are on there so theres something to look at
+
+ruth: and the matching
+
+nadia: both directions. it reads the person, it reads the opening, and it works from whichever side has fewer of them that week
+
+eli: thats a lot of building for something you already built once
+
+nadia: i wrote the whole thing in six weeks. ive spent three months on nobody coming
+
+ruth: can you pay for three more months of it
+
+nadia: eleven hundred dollars, and the back room is free until march
+
+sam: thats not a lot
+
+eli: thats a tightrope with a knife balanced on it
+
+nadia: its eleven hundred dollars, eli. i can read the number
+
+nadia: two invoices clear on the fourth. thats six hundred more. after that its whatever october does
+
+eli: youre one bad month off the plumbing supply on route 8
+
+nadia: purchasing assistant. they never called me back either
+
+sam: 😭
+
+nadia: im buying a car in march if it works
+
+ruth: for the saturdays
+
+nadia: no. theres a four cylinder sitting at the yard on ohio street thats been there since i was fourteen
+
+kavi: is it better than the one you have
+
+nadia: its worse
+
+nadia: i want it anyway
+
+ruth: its two in the morning where you are
+
+nadia: yes
 
 ________________
 

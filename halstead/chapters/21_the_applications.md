@@ -48,7 +48,7 @@ Ruth's own prompt asks her to describe a time she failed, and she spends forty m
 
 "It's a deadline, so pick one, or the deadline picks one for you at midnight."
 
-Nadia is in the room too, back against the door, laptop on her knees, and what she is filling in is not an essay. It is a portal, and it wants eleven years of schooling typed into a box marked Education History after taking the same thing as an attached file, the fourth form this afternoon to ask her for something it already holds.
+Nadia is in the room too, back against the door, laptop on her knees, and what she is filling in is a portal rather than an essay. It wants eleven years of schooling typed into a box marked Education History after taking the same thing as an attached file, the fourth form this afternoon to ask her for something it already holds.
 
 "You're not applying anywhere," Ruth says.
 
@@ -172,9 +172,9 @@ Chloe puts her pen down on the deadline list and leaves it there.
 
 "You cut it three times." Nadia looks at her a second longer than she has looked at her all evening, and then pushes the notebook across the table, open, which she has not done with it in front of anybody. "Read the eleventh one. That's the one that got nine minutes."
 
-Chloe reads it twice and cannot find anything wrong with it either. Neither of them goes back to the four pages, and neither moves seats.
+Chloe reads it twice and finds it clean, the same as Ruth did. The four pages stay where they were dropped, and both of them keep their seats.
 
-Ruth's own advice is to send the same application twice and change one thing, so in the last week of March Nadia answers one listing twice inside the same hour, the second copy with the listing's own sentences run back through it. The second gets a phone call from a person on the Tuesday. The first never gets anything.
+Ruth's own advice is to send the same application twice and change one thing, so in the last week of March Nadia answers one listing twice inside the same hour, the second copy with the listing's own sentences run back through it. The second gets a phone call from a person on the Tuesday. The first stays silent to the end of the month.
 
 "Do the second one every time," Ruth says.
 

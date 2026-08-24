@@ -4370,6 +4370,16 @@ Ruth's own prompt asks her to describe a time she failed, and she spends forty m
 
 "It's a deadline, so pick one, or the deadline picks one for you at midnight."
 
+Nadia is in the room too, back against the door, laptop on her knees, and what she is filling in is a portal rather than an essay. It wants eleven years of schooling typed into a box marked Education History after taking the same thing as an attached file, the fourth form this afternoon to ask her for something it already holds.
+
+"You're not applying anywhere," Ruth says.
+
+"I'm applying to eleven places this week, and none of the eleven are schools." She tabs to the next box without looking up. "Purchasing assistant at the plumbing supply out on Route 8. Parts buyer, two dealerships. Service writer at the transmission place on Fourth. Dispatch at a freight company in Ambridge. An insurance office running a claims trainee program that says straight out of high school at the top and two years of experience nine lines down."
+
+"Which one do you actually want?" Chloe says.
+
+"Any of them where somebody calls in wanting a price and I'm the one who answers the phone. The rest of it is the building it happens in."
+
 A second prompt asks about a place that changed her, and Chloe cannot get the forge down to six hundred words either, so she writes about the reservoir instead, nine miles from her parents' house, and the hill she has to stand up on the pedals to clear. It comes out at four hundred and ninety words with every line surviving the edit, a bad sign by her own reckoning for about a minute before she submits it anyway.
 
 For the college her mother went to, the prompt asks why this school specifically, and Chloe writes the short, honest answer: her mother still has a sweatshirt from it, worn soft at the cuffs, at the back of a closet, and has always assumed Chloe would end up there too.
@@ -4400,7 +4410,7 @@ A representative may come and read the paper in a room, on paper, for as long as
 
 The room is small and windowless, one lamp over a table, and the Caltech representative sits down at nine and settles in. The escort stays in the corner with a paperback of her own, checking the clock more than she checks him, and brings water at eleven.
 
-By noon he has filled four sheets on both sides, most of it his own working: a citation copied out to look up later, a calculation redone by hand to check where it lands, a margin note crossed out and rewritten smaller underneath. At one she asks whether he wants lunch and he says yes, eyes still on the page, and it goes cold at his elbow. By two he has stopped turning pages, reading the same few paragraphs over instead of moving forward. By three he is still on the page he was on at two, and at half past three he sets it down, looks at the wall a while, and picks it back up.
+By noon he has filled four sheets on both sides, most of it his own working: a citation copied out to look up later, a calculation redone by hand to check where it lands, a margin note crossed out and rewritten smaller underneath. At one she asks whether he wants lunch and he says yes, eyes still on the page, and it goes cold at his elbow. By two he has stopped turning pages, reading the same few paragraphs over instead of moving forward. At half past three he sets it down, looks at the wall a while, and picks it back up.
 
 He stands at ten to four, hands the sheets over, and waits while she reads them.
 
@@ -4416,7 +4426,7 @@ He shakes her hand and thanks her for the water, and within the month offices pr
 
 ________________
 
-Eleven of the flagged schools send somebody, and the school says yes to all eleven: desks in the long reading room, dining privileges at the tables everyone already eats at, a room to work in with a lockable door, and permission to sit in any class they name, provided they name it in writing forty-eight hours ahead with a member of staff present. Two requests get the same answer every time, the fighting hour and the range. The office produces the paperwork for everything else the same day it's asked, and a different reason for those two each time.
+Eleven of the flagged schools send somebody, and the school says yes to all eleven: desks in the long reading room, dining privileges at the tables everyone already eats at, a room to work in with a lockable door, and permission to sit in any class they name, provided they name it in writing forty-eight hours ahead with a member of staff present. Two requests get the same answer every time, the fighting hour and the range.
 
 They arrive within a week of each other in the winter, from Yale, Stanford, Duke, Caltech, MIT and six others, and by the first evening they have found each other at one end of the visitors' table comparing notes the way scouts do on a prospect.
 
@@ -4452,8 +4462,6 @@ Another asks Sam what he's good at, expecting a list with hedging in it.
 
 The rep asks who Odile is, and Sam points across the dining hall with his fork.
 
-One evening a rep from Chicago tries the handle on an unmarked door on the research floor and finds it holds, with no sign, just a badge reader and a camera above the frame, and when he mentions it at dinner the Duke rep says he found the same door on the Monday and got exactly as far.
-
 The Duke representative, the one who'd collected "Sport," then "Athletics," then "Recreation," tries Ruth in the reading room one afternoon. "What's the hardest thing you've done here?"
 
 "That's not a well-formed question," Ruth says, not looking up from her own laptop. "Hardest by what measure, and compared to what?"
@@ -4463,6 +4471,36 @@ The Duke representative, the one who'd collected "Sport," then "Athletics," then
 Ruth looks up at that, closing the laptop over a finger to keep her page. "Time, not difficulty: two years of Saturdays running someone else's practice sessions, and the sessions were the easy part." She opens the laptop back up. "Sustained is harder to fake than hard."
 
 The rep writes that down and moves to the next name on his list.
+
+________________
+
+Nadia's answers come in mostly between one and four in the morning. She keeps them at the back of a notebook in the ledger hand, a line for every application and a column for whatever came back, and by the second week of March the lines run to a hundred and ninety against eleven in the column. One of the eleven lands nine minutes after she sends it, on a form that had taken her fifty minutes. A listing she answered in the first week of November is still up in March, the same four paragraphs with a fresh date on top, reposted twice.
+
+She stops reading the count out at dinner somewhere in February, and when her mother asks on the phone whether anybody has called, Nadia starts being the one who gets to the shop phone first.
+
+Ruth asks her in the common room in March, with only Chloe else there, and gets a number two weeks old, and then the real one.
+
+"A hundred and ninety," Ruth says. "Against how many that answered?"
+
+"Eleven, and eight of the eleven were written by software." The notebook is shut under her hand. She pushes her sleeves up, and a second goes by where she says nothing. "Read one of mine, Ruth. I can't work out what they want. I've read the listing and I've read the form and I've answered both of them, and I can't see the part where I'm getting it wrong."
+
+"Chloe should read one, since Chloe's the one who writes."
+
+"Chloe writes four pages when they ask for six hundred."
+
+Chloe puts her pen down on the deadline list and leaves it there.
+
+"Six hundred and eleven, in the end. I cut it."
+
+"You cut it three times." Nadia looks at her a second longer than she has looked at her all evening, and then pushes the notebook across the table, open, which she has not done with it in front of anybody. "Read the eleventh one. That's the one that got nine minutes."
+
+Chloe reads it twice and finds it clean, the same as Ruth did. The four pages stay where they were dropped, and both of them keep their seats.
+
+Ruth's own advice is to send the same application twice and change one thing, so in the last week of March Nadia answers one listing twice inside the same hour, the second copy with the listing's own sentences run back through it. The second gets a phone call from a person on the Tuesday. The first stays silent to the end of the month.
+
+"Do the second one every time," Ruth says.
+
+"Then the form isn't reading the person, it's reading its own listing back to itself." Nadia writes the Tuesday call into the column and rules a line under it. "Fine. Every time."
 
 ________________
 
@@ -4492,7 +4530,7 @@ Sam comes in and sits on the end of the bed with a sandwich from downstairs, and
 
 "Right, that tracks with what everyone else is getting." He counts something off on his fingers, using the hand with the sandwich in it. "I got eleven of twelve. Ruth got everything she asked for. Kavi got three out of three, the same three he actually wanted." He points the sandwich at the two rows on the floor. "That's not four percent of anything, not the way they mean it."
 
-Ruth is in the doorway by then, her laptop still open on one arm, having come to find Chloe the same way Sam had.
+Ruth is in the doorway by then, laptop still open on one arm, having come the same way Sam had.
 
 "If a store put a sign in its window saying only four percent of the people who walk in buy something," Chloe says, "would you think the store was doing well, or badly run?"
 
@@ -4564,6 +4602,60 @@ Ninety-one names go up in all over the nine days, and eleven of them turn into y
 Ten of the eleven had already been somewhere in the building, on a floor with a badge on the door, longer than the rest of the year had any reason to know, and all ten of their names go up inside the first two days. The eleventh breaks it: he's a boy from the language block, no badge to his name and no floor he's ever had a reason to be on, saying yes anyway and spending the rest of the week asking around, politely and without much luck, to find out what the door is even for.
 
 The eighty saying no go back to their own last weeks of school, final transcripts still to sort out, dorm assignments and travel dates already in the post, the ordinary business of finishing something they'd already half finished before the list ever went up.
+
+________________
+
+Nadia's slot is the Thursday of the first week. She is in the chair before the runner has finished with the door.
+
+"Eleven years," Amberg says. "Anything for the file."
+
+"You've got my marks and you've got the board in the hallway."
+
+He gives her the same four things in the same order he gives everybody: research, full time; a hundred and thirty five thousand dollars a year to start; housing, food, a car, medical; the degree on top of it if she wants it, paid for, the post held open until she finishes.
+
+"No."
+
+"Reason?"
+
+"I'd be good at about four hours a month of that job." Both hands stay flat on her knees. "The four hours where somebody names the constraint and I go argue with a supplier about it. The rest of it is a desk and a paper at the end, and every paper I have ever finished went to a marker and stopped there."
+
+Amberg writes for a while. "The eighty saying no are going to college in September. You haven't sent an application anywhere."
+
+"I costed it. Four years and about a hundred and ten thousand dollars, against the eleven jobs I've actually been applying for." She says the eleven jobs faster than he can write them. "A degree comes up on zero of the eleven. Two of them ask for a forklift certificate."
+
+"Which you have."
+
+"Which took a day."
+
+He asks the next one without looking up from the page. "How many applications."
+
+"Two hundred and one since November. Thirteen answers. Ten of the thirteen came out of software between one and four in the morning, and one of the ten arrived nine minutes after a form that took me fifty."
+
+"And the three that were people."
+
+"Two said no. The third called me because I pasted the listing's own sentences back into the box, and that worked, and I'd rather it hadn't."
+
+"So September."
+
+She pushes her sleeves up, sitting down, in a chair, which is a thing he has watched her do since she was twelve.
+
+"I'm building the thing that gets people hired. The employer pays when somebody gets the job and the person pays nothing."
+
+Amberg looks at that for longer than he has looked at anything else on the desk. "Eighty people have sat in that chair this month. Four of them told me they were starting something."
+
+"That sounds about right."
+
+"Three of the four will be doing something else by Christmas."
+
+"That sounds right too." Her hands stay where they are. "The afternoon block is unrecorded, so it's been in there since the middle of April. If it comes to nothing by next spring, it comes to nothing and I go and take whichever of the eleven jobs is still open, the same as anybody. That's the part I've checked. It's the only part I've checked."
+
+"What do your parents say."
+
+"I haven't told them."
+
+He writes that down too, then turns the page over to keep writing on the back of it. At fifteen minutes exactly he stands. She is already up.
+
+That night she counts the shop's till after closing and gets a number. She counts it a second time, gets the same number, then counts it a third time. Then she goes up, writes the first sixty lines of the thing before she sleeps, and is at the kitchen table at five the next morning filling in three more forms before the shop opens.
 
 ________________
 
@@ -4676,13 +4768,13 @@ This is the first graduation Halstead has ever held, and for three weeks beforeh
 
 Backstage, before any family has found a seat, the ninety-one of them stand in the line they've already walked twice this week, alphabetical, timed against a stopwatch clipped to the rail by the stairs. The gowns come in three sizes for ninety-one different heights, and the sewing room handled the gap the way it handles everything else on short notice: pins where a size runs long, a roll of binder clips borrowed from the front office for whoever's left over. Sam is one of them, a clip at his back holding three inches of slack out of the sleeves. The stairs up to the stage are new, built and set by the graduating class itself over two Saturdays in May, the same corner joint half of them first cut at fourteen locking the risers together on the joint alone. Ninety-one students cross them twice each, dead silent underfoot.
 
-They put chairs out on the field, rows of them running back from the stage in a count the school worked out the ordinary way it works out everything else: every family confirmed a headcount by the first of May, and the order that went out matched it to the chair. A contingency stack sits folded at the tree line, untouched all the way through to the last chair coming off the field, because the number that showed up matched the number that was ordered. Off to one side stands the stage itself, plywood over scaffolding braced to hold about four times what ninety-one students crossing it twice will ever put on it, the same margin the woodshop builds into anything a student is going to stand on and somebody else is going to test. The programs, printed to the exact guest count each family confirmed, run out even, with twenty spares sitting at the check-in table as the office's usual cushion.
+They put chairs out on the field, rows of them running back from the stage in a count the school worked out the ordinary way it works out everything else: every family confirmed a headcount by the first of May, and the order that went out matched it to the chair. Off to one side stands the stage itself, plywood over scaffolding, braced to the margin the woodshop builds into anything a student is going to stand on and somebody else is going to test. The programs, printed to the exact guest count each family confirmed, run out even, with twenty spares sitting at the check-in table as the office's usual cushion.
 
 The whole of the school below them sits on the grass behind the last row of seats, the only spot big enough to hold eight hundred children who are not graduating today. The twelve-year-olds nearest the aisle spend the first twenty minutes kicking a water bottle down the gap between two empty rows, working out how many times it will go end over end before somebody's mother turns around.
 
 The head of school gives a short speech that is mostly logistics: four years, some of them longer than four; ninety-one names; a line of thanks to parents, grandparents, and guardians. There's one real sentence at the end, and his voice catches on the word "accomplishment," a sound this well-rehearsed room hadn't planned for. The booth holds four full seconds of dead air behind it before anyone remembers to cue the applause track built for exactly this contingency, and it lands a half-beat late, which gets a bigger laugh from the eight hundred on the grass than the sentence itself did. That sentence goes straight past Chloe anyway, because Sam has spent the last two minutes trying to make her laugh and finally succeeds on the same word.
 
-Then they read out ninety-one names in alphabetical order, evenly paced, timed to the same stopwatch that clocked the rehearsal, and every name lands exactly where the schedule put it, each family standing on cue. Ruth, three seats down from Chloe, times it on instinct, the same silent count she runs against anything with a rhythm in it. "Eleven seconds a name," she says, under her breath, once it's over. "Dead steady, the whole way through." She sounds almost disappointed, the whole thing too clean to correct.
+Then they read out ninety-one names in alphabetical order, evenly paced, timed to the same stopwatch that clocked the rehearsal, and every name lands where the schedule put it, each family standing on cue. Ruth, three seats down from Chloe, times it on instinct, the same silent count she runs against anything with a rhythm in it. "Eleven seconds a name," she says, under her breath, once it's over. "Dead steady, the whole way through." She sounds almost disappointed, the whole thing too clean to correct.
 
 When Sam's name gets called, four rows of people who are not his family stand up anyway, Chloe's mother among them. Eleven years of pickups and drop-offs means she has watched this particular boy grow six inches in a single summer, and it still catches her off guard. When Ruth's name comes, half a row does the same thing for her. Priya's parents, an electrician and a woman who works the front desk at an urgent care clinic, clap for every single name, not just their daughter's, the whole way through.
 
@@ -4692,13 +4784,13 @@ Her mother cries from the K's onward, a tissue out three names early. Her father
 
 ________________
 
-Her mother knows this campus. She's been coming for eleven years. She knows where the good parking is, knows Ruth's mother by name, and knows to bring a jacket because it's colder up here.
+Her mother knows this campus, having come to it for eleven years. She knows where the good parking is, knows Ruth's mother by name, and knows to bring a jacket because it's colder up here.
 
 She finds Ruth's mother in the crowd before the ceremony even starts. The two of them fall into the same easy back-and-forth they've had every year for over a decade: a supplier problem on one side, a school form still open on the other. "Is he settled on a roommate yet?" Ruth's mother asks, her own younger one starting at Halstead that September, and Meg tells her any day now, that he's already looking at rooms. Ruth's mother, who has forgotten her own jacket eleven years running, takes Meg's spare straight out of her hands. "You'll catch your death," Meg says, the same as every June before this one. Eleven years of parking in the same overflow lot, and each of them still only knows the other from a folding chair.
 
 A few rows over, Dave strikes up a conversation with the stranger next to him about the stage, admiring rather than worried, working out loud that whoever spec'd the bracing built in more margin than the thing will ever need. "Somebody had fun with this," Dave says, nodding at the joists. The stranger has clearly done the same arithmetic already, unprompted, cross-bracing, dead load, a margin that makes more sense for a bridge than a stage, and it takes them most of the conversation to work out that he's a physics professor, Kavi's father. Behind them, a staff member in a school polo folds up a spare table and answers Dave's question about parking on her way past, still moving.
 
-By the end of the afternoon, the grass by the parking lot holds a small, accidental museum of everything a family brings to something like this: folding chairs people brought in preference to the ones provided, two coolers, a phone charger passed hand to hand down an entire row, a dog that shouldn't be there, and, near the back, a folding table somebody's grandfather sets up on his own every June, selling the good lemonade at fifty cents a cup because that's what he did at every one of his own five children's graduations and sees fit to keep doing now. He sells a dozen cups to people who already have a full cooler of their own, because it's the lemonade, not the thirst.
+By the end of the afternoon, the grass by the parking lot holds a small, accidental museum of everything a family brings to something like this: folding chairs people brought in preference to the ones provided, two coolers, a phone charger passed hand to hand down an entire row, a dog that shouldn't be there, and, near the back, a folding table somebody's grandfather sets up on his own every June, selling the good lemonade at fifty cents a cup because that's what he did at every one of his own five children's graduations. He sells a dozen cups to people who already have a full cooler of their own, because it's the lemonade, not the thirst.
 
 After, on the grass, with a paper cup of lemonade:
 
@@ -4728,7 +4820,7 @@ ________________
 
 Everything else at the school keeps running. The labs are still going, the bell still sounds at ten past every hour. By early afternoon, once the grass has cleared and the breakdown crew has the field to itself, the twelve-year-olds who spent the ceremony kicking a water bottle down a gap in the rows are back at their afternoon block on schedule. By the time Chloe carries her own box past the language wing, a substitute is drilling verb conjugations off a whiteboard, the same lesson that was scheduled weeks before anyone knew today would be different for ninety-one people walking past the door.
 
-Chloe carries her own box down the ground-floor hallway, a forge mallet with a handle that's still slightly the wrong shape wedged in next to a stack of notebooks. Eleven years of the same nine brass plates line the wall here, and she reads all nine again on her way past, the way she has every single day since she was seven, counting them on reflex the way she counts anything she's about to lose: nine plates, four years of woodshop before the forge took over completely, one hook still on the back of her door upstairs that she's already decided to leave hanging there for whoever gets the room next.
+Her own box goes down the ground-floor hallway with a forge mallet with a handle that is still the wrong shape wedged in next to a stack of notebooks. Eleven years of the same nine brass plates line the wall here, and she reads all nine again on her way past, the way she has every single day since she was seven, counting them on reflex the way she counts anything she's about to lose: nine plates, four years of woodshop before the forge took over completely, one hook still on the back of her door upstairs that she's already decided to leave hanging there for whoever gets the room next.
 
 At the propped courtyard door she reaches up for the top of the frame, the way she used to have to jump for it at seven, and finds her hand flat against the wood with room to spare, her whole arm straight. The frame is exactly where it's always been; she's grown well past having to reach for it. She holds it there a second longer than the box in her other arm makes comfortable, then lets go and keeps walking, because Sam is somewhere out on the grass already asking where she's got to.
 
@@ -4736,7 +4828,7 @@ ________________
 
 That evening, before anyone's driven off, or signed anything, they are all still on the same patch of grass at the same time, in gowns still on from the ceremony. Someone has found a speaker from somewhere. Sam and Kavi are three moves into a card game neither of them has won all year, and Sam is losing again. Ruth is already on her third phone call about a dorm assignment. Theo gets a photograph of the group before anyone's arranged themselves for one, and Chloe counts the heads in it before she's decided to: all of them, still in it. She still remembers wanting the last names after camp and coming up short, and this time she gets the count while it's still in front of her.
 
-Sam joins the Army. He's been the best fighter in his year since he was ten, by a margin wide enough that the field stopped contesting it by the time he was twelve, and in July, at a recruiting office off the highway outside Pittsburgh, he signs the papers the way he takes a drill: fast, on the first read. The office smells like carpet cleaner and stale coffee, a flag in the corner leaning slightly off true. The recruiter slides four separate forms across the desk and starts explaining what each one means. Sam is already signing the first one before the man finishes the sentence, but he reads the fourth form properly, twice, because it's the one about pay grade and he wants the actual number. He'd already pulled the deployment rotation numbers off the recruiter's own site back in May, better numbers than the ones printed on the desk copy, so that column is settled before he sits down; the physical assessment is the only one still open.
+Sam joins the Army, having been the best fighter in his year since he was ten by a margin wide enough that the field stopped contesting it by the time he was twelve, and in July, at a recruiting office off the highway outside Pittsburgh, he signs the papers the way he takes a drill: fast, on the first read. The office smells like carpet cleaner and stale coffee, a flag in the corner leaning slightly off true. The recruiter slides four separate forms across the desk and starts explaining what each one means. Sam is already signing the first one before the man finishes the sentence, but he reads the fourth form properly, twice, because it's the one about pay grade and he wants the actual number. He'd already pulled the deployment rotation numbers off the recruiter's own site in May, better numbers than the desk copy, so that column is settled before he sits down.
 
 "Why us and not the Marines," the recruiter asks, more out of habit than curiosity; he's heard every version of the answer there is by now.
 
@@ -4748,41 +4840,61 @@ Sam joins the Army. He's been the best fighter in his year since he was ten, by 
 
 He walks out past the flag leaning off true and keeps the same pace the whole way to the car.
 
-Ruth goes to MIT, with a box of her own things labeled and half packed before the ceremony even starts, the label written in her own small, upright hand.
+Ruth goes to MIT, with a box of her own things labeled and half packed before the ceremony starts, the label written in her own small, upright hand.
 
-Nadia stays. She spends two months looking at jobs and comes out of it baffled. Then she goes back behind the counter of her parents' shop and checks the till before she says hello to anyone, same as she's always done.
+Nadia stays, and the notebook finishes at two hundred and eleven applications since November against fourteen answers, the last of them an automatic rejection from a company that had already turned her down in January under a different listing and a different job description.
 
-The two months are March and April, and she keeps the count of them in the ledger hand at the back of a notebook, a line per application and a column for whatever came back. Two hundred and six lines, fourteen answers, eleven of those fourteen written by software and timed between one and four in the morning. One lands nine minutes after she sends it, on a form that had taken her fifty minutes, because the portal wanted her whole schooling typed a second time under a heading called Education History after she had already attached it as a file. A listing she answers in the first week of March is still up in the last week of April, the same four paragraphs reposted twice with a fresh date on top, and six of the entry-level ones want two years of experience against one that wants three and offers to train the right candidate.
+She brings it to her father on a Saturday in May, at the counter, with the notebook. The thing itself has been in her afternoon block since the middle of April, in the hour the school leaves unrecorded, and she pushes her sleeves up first.
 
-In April she sends one application to one listing twice inside an hour, the second copy with the listing's own sentences run back through it, and only the second copy gets a phone call from a person. She tells Ruth about it in the common room, and Ruth tells her to do the second one every time.
+"Two hundred and eleven applications since November," she says, "and fourteen answers, eleven of them generated by software at two in the morning."
 
-She brings it to her father on a Saturday in May, at the counter, with the notebook. The thing itself has been in her afternoon block since the second week of March, in the hour the school records nothing about. She pushes her sleeves up first.
+"That's a bad six months," her father says, still bent over the invoice in front of him, although the pen stops moving on it.
 
-"Two hundred and six applications," she says. "Fourteen answers. Eleven of the fourteen came out of software at two in the morning."
-
-"That's a bad two months," her father says, still bent over the invoice in front of him, although the pen stops moving on it.
-
-"It's a bad two months for everybody who tried it. A person reading applications can be sued over which one he picks. Software can't be, and it leaves a record while it does it." She has the page open on the counter between them, one finger flat on it. "So they bought the software. It reads for words off its own listing, and I got a human the one time I pasted the listing back at it."
+"It's a bad six months for everybody who tried it. A person reading applications can be sued over which one he picks. Software is safe from that, and it leaves a record while it works." She has the page open on the counter between them, one finger flat on it. "So they bought the software. It reads for words off its own listing, and I got a human the one time I pasted the listing back at it."
 
 "So paste the listing back at it."
 
-"Two hundred and six of those is nine weeks of unpaid work, and whoever can't afford nine weeks takes whatever's left at the end. The sites charge thirty a month to keep looking." She turns the page over, where the same hand has already done the arithmetic. "Getting me hired inside a week is the worst week one of those sites could have."
+"Two hundred and eleven of those is nine weeks of unpaid work, and whoever can't afford nine weeks takes whatever's left at the end." She turns the page over, where the same hand has already done the arithmetic. "The sites charge thirty a month to keep looking. Getting me hired inside a week is the worst week one of those sites could have."
 
 Her father sets the invoice down and looks at her properly. "What would it even do?"
 
-"No resume. An evening of short tests, and the profile is whatever a person can show they've actually done." She says it the way she'd say a fact about the weather. "Then it fills the forms and sends them out everywhere they go, instead of somebody retyping the same life into forty portals. The employer pays on the hire. Looking is free."
+"No resume, an evening of short tests, and a profile assembled out of whatever a person can demonstrate they have actually done." She says it the way she'd say a fact about the weather. "Then it fills the forms and submits them, instead of somebody retyping the same life into forty portals, and the employer pays on the hire while looking costs the person nothing."
 
-"And the big boards let you do that?"
+"And who puts a job on it."
 
-"For now. They'll stop me once they notice, and then I go and get the employers myself, one at a time, in the car."
+"The employers. I go and ask them, one at a time, in the car."
 
-He turns the notebook around and reads the back of the page before he answers. "And if the whole thing comes to nothing."
+He is quiet long enough for a customer to come in, buy a tin of two-inch screws and leave again, and then he says the thing he has been holding since the second hundred.
 
-"Then it comes to nothing and I go get a job like everybody else." She squares the notebook against the edge of the counter. "There's probably a reason nobody has built it. I can't find the reason. That's probably me."
+"This is what people say when nobody will hire them. They say they are starting something." He puts his hand flat on the invoice. "You will be behind that counter Monday to Saturday, and you will keep sending the forms, and whatever this is happens after we close."
 
-He closes the invoice and takes a long moment before he answers.
+"No."
 
-She brings the same complaint to the chat that week, half a joke by the time it gets there, and Eli says he'll look into it and lets it drop. It goes up in the second week of June, four days after the gowns go back, with nine local employers on it who have all bought something from her father at one point or another. By September she's hiring.
+"Nadia."
+
+"I work out of the back room, and the counter gets me on Sundays." She has both hands flat on the ledger between them, either side of the arithmetic. "You keep the books and the ordering off yourself, the same arrangement you have now, at the same price."
+
+"I have that arrangement already."
+
+"You have them from somebody who is going to be on a freight desk in Ambridge in four months, if the freight desk ever calls. You'd be paying for that by August." She lets that sit exactly one beat before she puts the rest of it on the counter. "Sundays at the counter, the back room the remainder of the week, and an end date attached to it. If it is still earning zero by the last day of March I take whatever job is open and I stop."
+
+He looks at the ledger, then at the shop. "Four applications a week until then. Every week, in the book, where I can see them."
+
+"Two a week, written up properly instead of pasted."
+
+"Four."
+
+"Three, they go in the book where you can count them, and the subject stays off the counter on a Sunday."
+
+He puts his hand out across the counter, which is the arrangement he uses with a supplier and has never once used with his daughter, and she shakes it.
+
+"I got up at five for six months to fill those in," she says, still holding on. "I'd like to stop doing that."
+
+Her father keeps hold of her hand a second past where she lets go of his. Then she takes the invoice off the counter, finds the line he has been reading for twenty minutes, and tells him the supplier has billed him twice for the same case of blades.
+
+She brings the same complaint to the chat that week, half a joke by the time it gets there, and Eli says he'll look into it and lets it drop.
+
+Between the middle of May and the second week of June she asks sixty-one employers, in person, working down a list arranged by street, and nine of the sixty-one agree, every one of them a customer who has bought something from her father. It goes up four days after the gowns go back with the nine on it. The first month produces forty-one registered users and exactly one hire, and the hire is a man who already had the job and used the site to fill in the application form.
 
 Theo goes into the federal government as an analyst, having been interviewed four times and having answered every question completely. He keeps the photograph from the grass in the drawer of his desk at work, where anyone who asks about it would have to already know to look.
 
@@ -4802,7 +4914,7 @@ ________________
 
 By the time she's sitting in her own gown, Chloe already knows what the next two years look like, because she found out in May.
 
-She reads the eligibility page for the Foreign Service exam again at her desk, then a third time, to make sure two readings had actually found the same thing she thought they had. Twenty years old to sit it. Twenty-one to be sworn in, once the file behind it clears. She turns eighteen in August.
+She reads the eligibility page for the Foreign Service exam again at her desk, then a third time, to be sure two readings had found the same thing. Twenty years old to sit it. Twenty-one to be sworn in, once the file behind it clears, and she turns eighteen in August.
 
 She closes the laptop and leaves it shut for the rest of the night. Down at the forge, she works past when everyone else has gone up, past the point where the piece in front of her is about the piece at all; what's left is the exact repetition of getting the next fold as thin as the last one, over and over, until her arm is the only part of her still making decisions.
 
@@ -5688,23 +5800,37 @@ eli: yes
 
 Somebody runs a scam through Nadia's company in the spring.
 
-She's forty people and eleven months old, known only within three counties, which is exactly as far as word travels when every employer on it was signed in person, by her, in a car, on Saturdays. What the thing does is take the resume out. A user spends one evening on short tests, the profile builds itself out of work she can put in front of somebody, and after that the thing fills the forms and sends them out for her, to the employers on the site and to whichever outside boards are still accepting submissions from it that month.
+The company is eleven months old and four people besides her, known inside three counties, which is as far as word travels when every employer on it was signed in person, in a car, on Saturdays. What the thing does is take the resume out. A user spends one evening on short tests, the profile builds itself out of work she can put in front of somebody, and after that the thing fills the forms and sends them out for her, to the employers on the site and to whichever outside boards are still accepting submissions from it that month.
 
-The building used to be a fastener warehouse: one long room with a half-wall down the middle, engineers on one side of it and the people who work the phones on the other, a loading dock that's sat idle since the second week with the roll door pinned open on a cinder block, and a stretch of concrete floor she resurfaced herself over a weekend because the original slab was cracking under the desk legs.
+It runs out of three rooms over a laundromat, a hundred yards up the same street as her parents' shop, and the heat off the dryers comes through the floor from ten in the morning, so the windows stay open into November. The one bathroom belongs to the laundromat, and its key hangs on a paint stirrer behind the change machine.
 
-Forty people means forty coffee orders a morning and one machine in the break room that's tasted like the inside of its own box since the day it arrived, because fixing it keeps losing to everything else on the list. It also means a cleaning contract, four nights a week, the same crew that does a dentist's office and a chiropractor's on the same lot, and Nadia interviewed them herself when she signed it, the way she interviews everyone who gets a key to the building. She still runs the floor the way she ran the third-floor drill: five minutes standing on a chair at eight each morning, telling forty people what went live yesterday and what's due today, and then she's down among the desks for the rest of it, closer to the problem than anyone else in the room.
+The building came with two working outlets a room, so there is a run of surge strips down the baseboard now, taped flat, with an orange extension cord stapled up over the door frame between the two front rooms. She did the tape and the staples herself on a Sunday in February. The kitchen is a folding table with a kettle on it and a jar of instant coffee Bev brought in October, still sealed under its foil.
 
-She's still there at nine on the Tuesday of the second week of May because the new-employer queue has run long. She reads that queue herself, every name on it, the same way she reads the till tape at her parents' counter before she says hello to anyone, and a good week puts four names in front of her. This week has nineteen, and eleven of the nineteen are companies she has never driven to.
+In April she paid ninety dollars for the company name in white vinyl and put it up on the street window herself, from the outside, on a Sunday morning, with the ladder sinking into the grass verge under her. The second word went on half an inch low. Lifting it again would have torn it, so it sits half an inch low.
 
-She opens the eleven. The job descriptions are one job description, four paragraphs of it, with the company name swapped at the top and again in the third line and left exactly where it was everywhere else, so that one of them advertises a role in a city the same posting gives as forty miles from its own address. All eleven accounts were created between twenty to twelve and twenty past on the same night, inside a single forty-minute window, a cadence no genuine employer in three counties has ever come close to. The hires behind them come to zero, and that number sits in front of her without her going to look for it, because the hire count sits at the top of every employer's row.
+"Who is ever going to read that," Bev said, from the window.
 
-The rest of it is in the message logs. Traffic between an employer and a user stays on her own servers until an offer gets logged, a decision she made in June to hold the support calls down, so the eleven had no way to ask for anything except in writing, in her building, in a log she owns and reads. Nine of them ask for a Social Security number and a bank routing number in the third message, in the same four sentences, comma splice and all, reproduced without a character moved. Three people have already answered.
+"I read it every morning," Nadia said, and went back down the ladder for the squeegee.
 
-Before she sits down, she deletes the whole batch of accounts from where she's standing, which takes about ninety seconds. Then she takes the three names into the windowless office and telephones them one at a time, at nine at night, and tells each of them what to do in the morning before she hangs up. The third call runs twenty minutes, because the woman on the other end wants to explain how it happened and Nadia lets her.
+There is no morning meeting: she says what went live yesterday from wherever she is standing, and it takes her under a minute, because there are four people to say it to and three of them were standing there when it happened.
 
-"Call the bank at nine and read them that number," she says, at the end of it. "Then call me back and tell me what they said."
+She's still in the front room at nine on the Tuesday of the second week of May, because the new-employer queue has run long. She reads that queue herself, every name on it, the same way she reads the till tape at her parents' counter before she says hello to anyone, and a good week puts four names in front of her. This week has nineteen, and eleven of the nineteen sit outside the list of employers she has driven to herself.
 
-She reads the digits out twice, slowly, and writes them on the back of the page before she hangs up.
+She opens the eleven. The job descriptions are one job description, four paragraphs of it, with the company name swapped at the top and again in the third line and left exactly where it was everywhere else, so that one of them advertises a role in a city the same posting gives as forty miles from its own address.
+
+All eleven accounts were created between twenty to twelve and twenty past on the same night, inside a single forty-minute window, at a cadence no genuine employer in three counties has ever come close to. The hires behind them come to zero, and that number sits in front of her without her going to look for it, because the hire count sits at the top of every employer's row.
+
+The rest of it is in the message logs. Traffic between an employer and a user stays on her own servers until an offer gets logged, a decision she made in June to hold the support calls down, so the eleven had no way to ask for anything except in writing, in her building, in a log she owns and reads.
+
+Nine of them ask for a Social Security number and a bank routing number in the third message, in the same four sentences, comma splice and all, reproduced without a character moved. Three people answered, and one of the three gave both numbers on the Sunday, so that two thousand four hundred dollars left her checking account on the Monday morning.
+
+Before she sits down she deletes the whole batch of accounts from where she's standing, which takes about ninety seconds, and then she takes the three names into the back room and telephones them one at a time, at nine at night.
+
+The third call runs twenty minutes, because the woman on the other end wants to explain how it happened and Nadia lets her. The woman apologises four times inside those twenty minutes, twice for taking up the evening and twice for having answered the message at all.
+
+"Call the bank at nine and read them that number," Nadia says, at the end of it. "Then call me back and tell me what they said, however it goes."
+
+She reads the digits out twice, slowly, and writes them on the back of the page. Then she stays in the back room a while with the light off and the phone still in her hand.
 
 nadia: somebody tried to run a scam through my site
 
@@ -5720,53 +5846,197 @@ ruth: how many people answered
 
 nadia: three. i called all three tonight, theyre talking to their banks in the morning
 
+nadia: one of them is out 2400
+
 eli: so theyre gone
 
 nadia: obviously theyre gone. they came into my building to do it
 
+nadia: she apologised to me
+
+ruth: who did
+
+nadia: the woman on the third call. four times in twenty minutes, i counted them
+
+nadia: i dont know what youre supposed to say to that
+
+ruth: you tell her its not her fault
+
+nadia: i said that. she said it twice more
+
 ________________
 
-The week that follows happens mostly before eight in the morning, before the floor opens and the phones start, at the kitchen table with a legal pad in front of her and eleven company names written down the side of it in the same small, fast hand she keeps the shop's ledger in. Every one of the eleven typed a genuine state registration number into her employer form, and that is the interesting part all by itself, since anybody willing to file with the state is somebody the state now holds paper on.
+The week that follows happens mostly before eight in the morning, before the laundromat opens and the phones start, at the kitchen table with a legal pad in front of her and eleven company names written down the side of it in the same small, fast hand she keeps the shop's ledger in. Every one of the eleven typed a genuine state registration number into her employer form, and that is the interesting part all by itself, since anybody willing to file with the state is somebody the state now holds paper on.
 
-She spends the next two mornings on the state's business filings, the same site she used to register her own company, and nine of the eleven turn out to have been filed inside a single week eight months ago through one registered agent. Eight months old tells her the paperwork has been used before. She spends a third morning cross-referencing the agent's mailing address against the county's property records, and it comes back a suite above a tyre shop off the county road, four miles from her own building. On the fourth morning she calls the tyre shop's front counter. "Does the office upstairs keep regular hours, or is it just whoever happens to be up there that day?" she asks, in the flat unbothered voice of somebody scheduling a delivery. "I've got a package that needs someone up there to sign for it." "They're in most days," the man behind the counter says. "Nine to five, four or five of them, give or take." He answers it the same easy way he'd answer anyone.
+She spends the first two mornings on the state's business filings, the same site she used to register her own company, and nine of the eleven turn out to have been filed inside a single week eight months ago through one registered agent. Eight months old tells her the paperwork has been used before.
 
-None of it moves anything else on her list. The queue gets read at the same hour every night that week, payroll clears on the fifteenth the way it always does, and she grades a stack of that month's take-home tests at the kitchen table the same night she confirms the registered agent's address, one legal pad next to the other.
+She spends a third morning cross-referencing that agent against the county's property records, and it comes back a suite above a tire shop off the county road, four miles from the laundromat. The agent's name is Hanley, and Hanley carries thirty-one filings against that one address. On the fourth morning she calls the tire shop's front counter.
 
-She keeps the rest of it to herself: no police, no lawyer, and at the company only that she's out for the afternoon. On the seventh day she closes the shop books at home, tells her parents she'll be back before dinner, and drives out alone.
+"Does the office upstairs keep regular hours, or is it just whoever happens to be up there that day?" she asks, in the flat unbothered voice of somebody scheduling a delivery. "I've got a package that needs a signature from someone up there."
 
-The stairs run up the outside of the building, a bare steel case bolted to brick, and she can smell the tyre shop the whole way up, rubber and hot metal working together in the heat. The door at the top gives when she tries it. Four men are inside: two at a folding table with laptops open, one behind a desk in what's meant to look like an office, one leaning in a doorway to a second room with a coffee going cold in his hand. The folding table is covered in paper as well as laptops, printouts with lines highlighted in three different colors, and a whiteboard behind the desk still carries somebody else's job in half-erased marker. All four look up when the door opens straight into the room, no knock ahead of it.
+"They're in most days," the man behind the counter says. "Nine to five, four or five of them, give or take, though I couldn't tell you what it is they do up there."
+
+None of it moves anything else on her list. Payroll clears on the twenty-second the way it always does, she signs two employers on the Saturday in the middle of it, one of them a machine shop with eleven people in it and a fax number still on the door, and on the Thursday she takes the difficulty on the test generator from point four five down to point three and lets it rebuild itself overnight.
+
+She keeps the rest of it to herself: no police, no lawyer, and at the company only that she's out for the afternoon. On the seventh day she closes the shop books at home, tells her parents she'll be back before dinner, and drives out alone. She parks in front, where the upstairs window can see the car, and leaves the doors unlocked, because ten minutes is what this is going to take.
+
+________________
+
+The stairs run up the outside of the building, a bare steel case bolted to brick, and she can smell the tire shop the whole way up, rubber and hot metal working together in the heat. The door at the top gives when she tries it.
+
+Four men are inside: two at a folding table with laptops open, one behind a desk in what's meant to look like an office, and one leaning in the doorway to a second room with a coffee going cold in his hand. The folding table is covered in paper as well as laptops, printouts with lines highlighted in three different colors, and a whiteboard behind the desk still carries somebody else's job in half-erased marker. All four look up when the door opens straight into the room with no knock ahead of it.
+
+"Whoa, hey, hold on," the nearer one at the folding table says.
+
+"You're after the tire place," the man behind the desk says. "That's the door at the bottom of the stairs."
 
 She stays on her feet just inside the door, hands loose at her sides, and looks at the one behind the desk, since he's the one who straightens first.
 
-"You put eleven employer accounts on my site in one night and asked nine people for a bank routing number," she says. "Three of them answered you. I had all three of them on the phone the same evening, because I read that queue myself and I have driven to every employer in three counties, and ten minutes on the site would have told you that."
+"You put eleven employer accounts on my site on the night of the second and asked nine people for a bank routing number," she says. "Three of them answered, and one of those three is out two thousand four hundred dollars as of Monday morning."
 
-The room stays quiet for a second. The one with the coffee sets it down on the nearest flat surface, untouched.
+The room goes quiet for a moment while the man behind the desk sets down what he was holding.
 
-"I'm not calling anyone about this. I'm not spending a police officer's afternoon on eleven form submissions." She looks around the room once, the two laptops, the desk, the coffee going cold. "You wrote the ad one time and pasted it eleven times, and one of them is hiring in a city the same ad puts forty miles away. An hour of work, all told. That's the part I mind."
+"Get out of here," he says.
 
-The one behind the desk looks at the other three before he looks back at her. "That's fair," he says. "We read the site wrong, and we won't make that mistake twice. I'm sorry it happened this way."
+She stays where she is. The one in the doorway comes off the frame, walks around behind her, pushes the door shut with the flat of his hand, and then stands against it with his arms folded, and she hears the latch go and keeps her eyes on the desk.
 
-She's back down the steel stairs before he's finished saying it, and keeps the same pace all the way to the car.
+"How old are you," the man at the folding table says.
+
+"Eighteen since last June."
+
+"Jesus Christ." He looks over at the desk without lowering his voice at all. "She's eighteen years old, she's a kid, she's somebody's daughter."
+
+"Does your father know where you are this afternoon?"
+
+"No, I told my parents I would be back before dinner."
+
+The man behind the desk sits back in the chair for the first time since she came through the door. The one with the coffee has his phone up by then. He photographs her, crosses to the window, photographs the car standing in the lot below, and then reads her registration out loud, all seven characters of it, slowly, and then again.
+
+"You aren't going to do anything to me," she says. "There are eleven filings with a real agent's name on them, and a shop full of people underneath us who watched me come up those stairs."
+
+"It's twenty past five." The man at the window answers her with his back turned. "Chuck locks the bay at five, so the shop underneath you is shut and those stairs were yours alone, and you want to be thinking about that."
+
+She goes on to the next thing on her list.
+
+"I'm not calling the police, because a county detective gets eleven form submissions and a Tuesday he already had plans for."
+
+"You can't prove any of it," the man at the folding table says. "There's not a name on a single one of those accounts, and you've got no idea who you're standing in front of."
+
+Nadia laughs. It is one sound, and it is out of her before she has decided anything about it.
+
+"Nine of you typed a live state registration number into my form," she says. "It's field four, and it's a required field, which is why you filled it in."
+
+The man at the folding table stands up, taking his time about it because he can afford to, and he comes around the end of the table and stops close enough that she has to tilt her head back to keep his face in view.
+
+"Say that again," he says, "slower, so everybody in the room gets the benefit of it."
+
+She says it again, exactly, in the same order and at the same speed.
+
+"Nine of the eleven were filed in one week in September through the same registered agent," she says, from where she is standing. "The agent is Hanley, and Hanley carries thirty-one filings on that address, of which twenty-six belong to somebody other than you."
+
+One of the two at the folding table turns a printout face down.
+
+"I'm going to send the whole file to the business division at the Secretary of State: nine time-stamped copies of the same four sentences, with a dollar figure attached, which is the only kind of complaint anybody up there opens before lunch. They come for Hanley rather than for you, and everything filed through him goes back on the street the same week."
+
+The man behind the desk has both hands flat on the desk in front of him now.
+
+"Then twenty-six other people find out who cost them their paperwork, and it will be the notice telling them, rather than me."
+
+The man in front of her stays where he is. The one behind the desk is looking past his shoulder at her.
+
+"Or none of it goes anywhere," she says. "The eleven are already deleted, a twelfth stays off my site, everything else of yours stays off it, and I never make this drive again. That's the whole offer, and I'm not improving it while I stand here."
+
+The man behind the desk looks at the one standing over her and keeps looking at him until he goes back to the folding table and sits down again.
+
+"Get out of my office," the man behind the desk says. "That's the second time I've said it to you and I'm finished saying it."
+
+"That's fine, because I heard you perfectly well the first time."
+
+The one at the door steps aside for her and says something to the back of her head as she passes, three words with sweetheart on the end of them, and one of the others laughs at it. She is down the steel stairs before either sound has finished. Somebody comes out onto the landing and stands there watching while she crosses the lot, and is still up there when she reaches the car.
+
+She gets the key in on the second try. She drives back and counts the till her mother has already counted. It comes out four dollars under. She counts it again, gets the same number a second time, and then runs the whole tape through a third time from the top of the day. Her mother asks where she was, and Nadia says out at a tire place, which is true, and her mother lets it go at that. She works the counter until close, on a Thursday, for the first time since November.
 
 sam: what did they say
 
-nadia: one of them apologised
+nadia: nothing worth writing down
+
+sam: did they say anything
+
+nadia: one of them read my plate out loud. twice
+
+sam: nadia
+
+nadia: theyre done. the accounts stopped
+
+sam: thats not what i asked you
+
+ruth: are you going back out there
+
+nadia: no
+
+eli: send me the agents name
+
+nadia: no
+
+eli: nadia
+
+nadia: eli if you go anywhere near it, it stops being over
+
+The site stays clean after that, and Hanley's filings all go dead in July, thirty-one of them inside the same fortnight, which she spots in August and keeps to herself.
 
 ________________
 
 The hiring changes Nadia's mind.
 
-She writes every posting herself, the same flat one-paragraph shape she uses for a labor contract: what the job needs, what it pays, no line about anything else. The two other outfits fishing the same short list of local engineers post in a different language entirely, doing more with fewer hands, a lean team outpacing a bigger one, and she reads those the way she reads an estimate from a mechanic still guessing at what's under the hood. Her own board flags her hiring pace in the same monthly email, a line about burn and headcount that she reads all the way through and answers by posting two more roles the same afternoon.
+She writes every posting herself, the same flat one-paragraph shape she uses for a labor contract: what the job needs, what it pays, and no line about anything else. The two other outfits fishing the same short list of local engineers post in a different language entirely, doing more with fewer hands, a lean team outpacing a bigger one, and she reads those the way she reads an estimate from a mechanic still guessing at what's under the hood. Then she puts up a fifth role the same afternoon.
 
-She interviews four hundred people that year, because she's growing and because she does all of it herself. Every one of the forty already on the floor came in off the site the same way a user does, through the tests first, and she has sat across the same folding table from all forty of them.
+Every test on the site was written by the thing she built to write them, over two weeks of last July, before there was anybody at all to test. It reads the requirement text off live listings, pulls down whatever public documentation and question bank a skill happens to have, and produces a set of short problems out of that. By May it covers eleven hundred skills, of which she has read perhaps forty.
 
-The first thing is that almost everyone fails the take-home. She makes it easier. Then easier again. By November it's a version she'd have handed a twelve-year-old at Halstead and the pass rate is under a third.
+She has sat and taken four: Python, Excel, Spanish, and the one on brake systems, which she took to find out whether it would catch what her father catches by ear. The Python set ran her eleven minutes, she scored full marks on all four of them, and she wrote the four completion times down the margin of the pad.
 
-The second thing is the interviews. She runs them out of the same windowless office where she signed the cleaning contract, a folding table between two chairs and a laptop open to whatever the candidate submitted the night before, a stack of the ones still to come squared off at her elbow. She asks them to explain something they built. Most of them can do that part fine; four years of resumes have taught people how to talk about their own work in front of a stranger. She asks two questions about it. The first is usually fine. The second, the one that asks what happens at the edge of what they built, past the part they actually tested, is where most of them run out of road. One candidate walks her carefully back through a payment system he'd built at his last job, confident the whole way. "What happens if two requests land in the same millisecond?" she asks. "That's an edge case," he says. She writes one line on his sheet and moves to the next person. Another spends four minutes describing a scheduling tool with real pride in his voice. "Who checks it when the schedule it produces is simply wrong?" she asks. "That's what the review step is for," he says. "Whoever's on it that sprint, I guess," he adds, when she asks him to actually name the person, and he can't. The rare candidate who does answer the second question properly gets a longer interview than the sheet calls for, because she'd rather spend the extra twenty minutes finding out where the edge of that person's knowledge actually sits than end the day guessing.
+The first thing is that almost everyone fails.
 
-She hires excellent people anyway, because the pool has to come from somewhere and the alternative is leaving the roster short. She checks their references and their references are glowing and they are, by every measure available to her, very good. What she notices only later, watching them work a floor she built to run a certain way, is how many of them stop exactly where the reference letter would have stopped: competent right up to the edge of the job description, and then waiting for somebody to tell them what's past it.
+She makes it easier. The generator carries a difficulty figure and she moves it, and the whole eleven hundred sets rebuild themselves overnight while she sleeps. She moves it again in September. By November it is a version she'd have handed a twelve-year-old at Halstead, and the pass rate is still under a third, so she takes the November Python set herself, finishes it in four minutes, and writes that in the margin under the other four.
 
-A vendor pitches her twice that spring on an applicant-screening tool built around exactly that gap, machine-scored off uploaded resumes, sized for the same handful of roles she could then leave unfilled. She takes both calls standing at a desk, says she'll think about it, and hires two more people instead before the month is out.
+The second thing is the interviews.
+
+In February she builds a pass over the submissions so that the reading gets done for her, tuned to put ten in front of her a week, and it puts ten in front of her a week. She reads the other sixty as well, at the kitchen table before eight, because the ten it picks are not always the ten she'd have picked.
+
+She had meant to sit down with twelve people that year and she has sat down with thirty-one, all but one of them by herself, in the back room with a folding table between two chairs and a laptop open to whatever the candidate submitted the night before.
+
+She asks them to explain something they built, and most of them do that part fine, because four years of resumes have taught people how to talk about their own work in front of a stranger. Then she asks two questions about it, and the first is usually fine as well; the second asks what happens at the edge of the thing they built, out past the part they actually tested, and that is where most of them run out of road.
+
+One candidate walks her carefully back through a payment system he'd built at his last job, confident the whole way through it. "What happens if two requests land in the same millisecond?" she asks.
+
+"That would be an edge case," he says.
+
+She writes one line on his sheet and moves along to the next person.
+
+Another spends four minutes describing a scheduling tool with real pride in his voice. "Who checks it when the schedule it produces is simply wrong?" she asks.
+
+"That's what the entire review step is there for."
+
+"Give me the name of the person who does the review."
+
+"Whoever's on it that sprint, I suppose," he says, when she asks him a second time, and he still cannot produce a name.
+
+The rare one who answers the second question properly gets a longer interview than the schedule allows for, because she would rather spend twenty extra minutes establishing where the boundary of that person's knowledge actually sits than finish the afternoon guessing at it.
+
+The four she already has are the four who answered it.
+
+A board starts rate-limiting her submission traffic on a Saturday in March. Tomas catches it off a graph well outside anything he had ever been asked to watch, rewrites the back-off, puts it out himself, and tells her on the Monday, by which time it has held through a weekend. She asks him why the retry ceiling stayed where it was while he was in there, and he says the ceiling was working. She writes the ceiling herself that night.
+
+Bev drives out on her own on a Saturday in April to four employers Nadia had yet to get to, and comes back with two of them signed and a third who wants to see Nadia in person. There is a thirty-day clause in both contracts, which is new to Nadia's template.
+
+"Where did the thirty days come from," Nadia says.
+
+"I made it up in the car on the way over."
+
+"Keep it, and it goes into the template tonight." She rolls it in that evening and leaves it there.
+
+Manny finds the generator marking a whole category wrong, six weeks of it, and comes to her with the fix in hand rather than the finished job. Nadia reads the mail standing up, tells him to put it out, and is onto the next thing inside a minute.
+
+A vendor pitches her twice that spring on an applicant-screening tool built around exactly that gap, machine-scored off uploaded resumes and sized for the one role she could then leave unfilled. She takes both calls standing at the desk, says she'll think about it, and hires the fifth person before the month is out.
 
 nadia: is anyone elses hiring weird
 
@@ -5783,6 +6053,28 @@ ruth: thats a hiring pool problem. youre a startup, the good ones are elsewhere
 nadia: yeah
 
 nadia: yeah. doesnt feel right though
+
+eli: hows the empire
+
+nadia: six people and a kettle
+
+eli: at least the kettle doesnt report to anybody
+
+nadia: the kettle is the only one in the building who finishes what it starts
+
+sam: whats payroll on six people
+
+nadia: the 22nd. employers pay on the hire and the hires land between the 5th and the 20th
+
+nadia: two of them slipped in april. i covered everybody out of my own account and put it back on the 9th
+
+sam: thats a knife edge on a tightrope
+
+nadia: its eleven days
+
+sam: eleven days of what
+
+nadia: of everyone still getting paid if nothing at all comes in
 
 
 ## Chapter Twenty-Eight: Nineteen
@@ -6583,7 +6875,7 @@ There is a file on all ninety-one of them. Every page carries the same header be
 
 Address, employer, family, where their parents work, where everybody banks. Sam's is the thickest and the newest: three years of an Army file stacked on top of everything Halstead ever generated on him. An officer's assessment quotes a number Sam gave honestly and flags the honesty itself as the interesting part, the way you'd flag a result you couldn't reproduce. Theo's has a note on it that makes him close the laptop with both hands, the way you'd close something that might spill, and go outside for twenty minutes. He keeps what the note says to himself, both then and later, and the rest of them let it stand there unexplained. He comes back in, opens the laptop again, and keeps reading from the line he left off on. That's the whole account anyone else gets of it.
 
-The rest of theirs sit somewhere between those two. Nadia's crosses her company's filings against a background check a competing job board ran on her eighteen months ago, the two documents stitched together by an analyst who spelled her name three different ways across two pages. Eli's notes, in the same flat voice as everything else, that he found five vulnerabilities in his own employer's systems in one afternoon, unprompted, and flags the number as worth continued attention rather than as anything resembling praise. Kavi's is the thinnest of the seven, a paragraph a year, the file needing only the one address it has ever had for him. Someone has annotated the margin of it more than once, always the same single word: *continuity*. Chloe's has her translation work and her exam scores, and, three lines above the current entry, a note that she has recently accepted employment requiring a background investigation. It's dated to a Tuesday she remembers clearly, because it's the same week she signed the lease on the apartment she's sitting in right now.
+The rest of theirs sit somewhere between those two. Nadia's crosses her company's filings against a background check a competing job board ran on her eighteen months ago, the whole company at that point three rooms over a laundromat, the two documents stitched together by an analyst who spelled her name three different ways across two pages. Eli's notes, in the same flat voice as everything else, that he found five vulnerabilities in his own employer's systems in one afternoon, unprompted, and flags the number as worth continued attention rather than as anything resembling praise. Kavi's is the thinnest of the seven, a paragraph a year, the file needing only the one address it has ever had for him. Someone has annotated the margin of it more than once, always the same single word: *continuity*. Chloe's has her translation work and her exam scores, and, three lines above the current entry, a note that she has recently accepted employment requiring a background investigation. It's dated to a Tuesday she remembers clearly, because it's the same week she signed the lease on the apartment she's sitting in right now.
 
 The oldest pages in the file are typed and then scanned, the paper stock still visible through the scan the way an old photograph keeps its own grain no matter how many times it's copied. Ninety-one of them start the same way: a name, a date, a single photograph taken outside a building none of the analysts have ever set foot inside, and a line noting that contact with the family went no further than the one letter. Nineteen years of updates sit stacked under that first page for every one of them, thicker in some years than others. The thickness itself is dated, so that reading straight down any one file is like watching a chart of exactly how hard somebody was still looking, year by year, long after they'd stopped saying so out loud.
 
