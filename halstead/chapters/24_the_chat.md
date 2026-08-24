@@ -322,13 +322,9 @@ kavi: whats the headcount
 
 nadia: me
 
-nadia: i interviewed forty one people in july for two jobs. tests first, then i asked each of them to tell me where the thing they built breaks
+nadia: i interviewed forty one people in july for two jobs. tests first, then i asked each of them where the thing they built breaks
 
-ruth: and
-
-nadia: thirty nine of them told me it doesnt break
-
-nadia: then i wrote to all forty one in august and told them there were no jobs
+nadia: thirty nine said it doesnt break. then in august i wrote to all forty one and told them the jobs were gone
 
 ruth: how many on the site
 
@@ -362,9 +358,7 @@ eli: hes good
 
 nadia: everyone says that about everyone they know. put him through the site like everybody else
 
-nadia: anyway im stopping asking
-
-nadia: every board and every company careers page i can reach, read all of them, and put every opening on it whether the company has heard of me or not
+nadia: so im stopping asking. every board and every company careers page i can reach, read all of them, and put every opening on it whether the company has heard of me or not
 
 kavi: two of the big boards will block you the second they notice
 
@@ -396,8 +390,6 @@ eli: youre one bad month off the plumbing supply on route 8
 
 nadia: purchasing assistant. they never called me back either
 
-sam: 😭
-
 nadia: im buying a car in march if it works
 
 ruth: for the saturdays
@@ -413,6 +405,10 @@ nadia: i want it anyway
 ruth: its two in the morning where you are
 
 nadia: yes
+
+________________
+
+Reading other people's listings takes her eleven days, and most of the eleven go on the individual company career pages rather than on the boards, because a board publishes in one format and four thousand separate companies publish in four thousand. By the first week of October the site carries nineteen thousand openings, nine of which have anybody behind them who has agreed to pay her anything.
 
 ________________
 
