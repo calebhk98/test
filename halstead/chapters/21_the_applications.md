@@ -52,7 +52,7 @@ Nadia is in the room too, back against the door, laptop on her knees, and what s
 
 "You're not applying anywhere," Ruth says.
 
-"I'm applying to eleven places this week, and none of the eleven are schools." She tabs to the next box without looking up. "Purchasing assistant at the plumbing supply out on Route 8. Parts buyer, two dealerships. Service writer at the transmission place on Fourth. Dispatch at a freight company in Ambridge. An insurance office running a claims trainee program that says straight out of high school at the top of the listing and two years of experience nine lines down."
+"I'm applying to eleven places this week, and none of the eleven are schools." She tabs to the next box without looking up. "Purchasing assistant at the plumbing supply out on Route 8. Parts buyer, two dealerships. Service writer at the transmission place on Fourth. Dispatch at a freight company in Ambridge. An insurance office running a claims trainee program that says straight out of high school at the top and two years of experience nine lines down."
 
 "Which one do you actually want?" Chloe says.
 
@@ -88,7 +88,7 @@ A representative may come and read the paper in a room, on paper, for as long as
 
 The room is small and windowless, one lamp over a table, and the Caltech representative sits down at nine and settles in. The escort stays in the corner with a paperback of her own, checking the clock more than she checks him, and brings water at eleven.
 
-By noon he has filled four sheets on both sides, most of it his own working: a citation copied out to look up later, a calculation redone by hand to check where it lands, a margin note crossed out and rewritten smaller underneath. At one she asks whether he wants lunch and he says yes, eyes still on the page, and it goes cold at his elbow. By two he has stopped turning pages, reading the same few paragraphs over instead of moving forward. By three he is still on the page he was on at two, and at half past three he sets it down, looks at the wall a while, and picks it back up.
+By noon he has filled four sheets on both sides, most of it his own working: a citation copied out to look up later, a calculation redone by hand to check where it lands, a margin note crossed out and rewritten smaller underneath. At one she asks whether he wants lunch and he says yes, eyes still on the page, and it goes cold at his elbow. By two he has stopped turning pages, reading the same few paragraphs over instead of moving forward. At half past three he sets it down, looks at the wall a while, and picks it back up.
 
 He stands at ten to four, hands the sheets over, and waits while she reads them.
 
@@ -104,7 +104,7 @@ He shakes her hand and thanks her for the water, and within the month offices pr
 
 ________________
 
-Eleven of the flagged schools send somebody, and the school says yes to all eleven: desks in the long reading room, dining privileges at the tables everyone already eats at, a room to work in with a lockable door, and permission to sit in any class they name, provided they name it in writing forty-eight hours ahead with a member of staff present. Two requests get the same answer every time, the fighting hour and the range. The office produces the paperwork for everything else the same day it's asked, and a different reason for those two each time.
+Eleven of the flagged schools send somebody, and the school says yes to all eleven: desks in the long reading room, dining privileges at the tables everyone already eats at, a room to work in with a lockable door, and permission to sit in any class they name, provided they name it in writing forty-eight hours ahead with a member of staff present. Two requests get the same answer every time, the fighting hour and the range.
 
 They arrive within a week of each other in the winter, from Yale, Stanford, Duke, Caltech, MIT and six others, and by the first evening they have found each other at one end of the visitors' table comparing notes the way scouts do on a prospect.
 
@@ -152,7 +152,7 @@ The rep writes that down and moves to the next name on his list.
 
 ________________
 
-Nadia's answers come in mostly between one and four in the morning. She keeps them at the back of a notebook in the ledger hand, a line for every application and a column for whatever came back, and by the second week of March the lines run to a hundred and ninety against eleven things in the column. One of the eleven lands nine minutes after she sends it, on a form that had taken her fifty minutes. A listing she answered in the first week of November is still up in March, the same four paragraphs with a fresh date on top, reposted twice.
+Nadia's answers come in mostly between one and four in the morning. She keeps them at the back of a notebook in the ledger hand, a line for every application and a column for whatever came back, and by the second week of March the lines run to a hundred and ninety against eleven in the column. One of the eleven lands nine minutes after she sends it, on a form that had taken her fifty minutes. A listing she answered in the first week of November is still up in March, the same four paragraphs with a fresh date on top, reposted twice.
 
 She stops reading the count out at dinner somewhere in February, and when her mother asks on the phone whether anybody has called, Nadia starts being the one who gets to the shop phone first.
 
@@ -160,7 +160,7 @@ Ruth asks her in the common room in March, with only Chloe else there, and gets 
 
 "A hundred and ninety," Ruth says. "Against how many that answered?"
 
-"Eleven, and eight of the eleven were written by software." The notebook is shut under her hand. She pushes her sleeves up, and then a second goes by where she says nothing at all. "Read one of mine, Ruth. I can't work out what they want. I've read the listing and I've read the form and I've answered both of them, and I can't see the part where I'm getting it wrong."
+"Eleven, and eight of the eleven were written by software." The notebook is shut under her hand. She pushes her sleeves up, and a second goes by where she says nothing. "Read one of mine, Ruth. I can't work out what they want. I've read the listing and I've read the form and I've answered both of them, and I can't see the part where I'm getting it wrong."
 
 "Chloe should read one, since Chloe's the one who writes."
 
@@ -170,11 +170,11 @@ Chloe puts her pen down on the deadline list and leaves it there.
 
 "Six hundred and eleven, in the end. I cut it."
 
-"You cut it three times." Nadia looks at her a second longer than she has looked at her all evening, and then pushes the notebook across the table, open, which is a thing she has not done with it in front of anybody. "Read the eleventh one. That's the one that got nine minutes."
+"You cut it three times." Nadia looks at her a second longer than she has looked at her all evening, and then pushes the notebook across the table, open, which she has not done with it in front of anybody. "Read the eleventh one. That's the one that got nine minutes."
 
-Chloe reads it twice and cannot find anything wrong with it either. Neither of them goes back to the four pages, and neither of them moves seats.
+Chloe reads it twice and cannot find anything wrong with it either. Neither of them goes back to the four pages, and neither moves seats.
 
-Ruth's own advice is to send the same application twice and change one thing, so in the last week of March Nadia answers one listing with two applications inside the same hour, the second copy with the listing's own sentences run back through it. The second copy gets a phone call from a person on the Tuesday, and the first never gets anything at all.
+Ruth's own advice is to send the same application twice and change one thing, so in the last week of March Nadia answers one listing twice inside the same hour, the second copy with the listing's own sentences run back through it. The second gets a phone call from a person on the Tuesday. The first never gets anything.
 
 "Do the second one every time," Ruth says.
 
@@ -208,7 +208,7 @@ Sam comes in and sits on the end of the bed with a sandwich from downstairs, and
 
 "Right, that tracks with what everyone else is getting." He counts something off on his fingers, using the hand with the sandwich in it. "I got eleven of twelve. Ruth got everything she asked for. Kavi got three out of three, the same three he actually wanted." He points the sandwich at the two rows on the floor. "That's not four percent of anything, not the way they mean it."
 
-Ruth is in the doorway by then, her laptop still open on one arm, having come to find Chloe the same way Sam had.
+Ruth is in the doorway by then, laptop still open on one arm, having come the same way Sam had.
 
 "If a store put a sign in its window saying only four percent of the people who walk in buy something," Chloe says, "would you think the store was doing well, or badly run?"
 
