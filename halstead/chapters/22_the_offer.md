@@ -2,13 +2,13 @@
 
 *April 2023*
 
-Mr. Amberg runs the exit interviews himself, fifteen minutes each, ten or twelve students a day for eight days starting the first Monday of April, and a roster goes up outside the staff office every morning with that day's names in order, a runner coming down from admin to call the next one in when the clock on his desk says it is time. He runs most of them the full fifteen minutes, by the staff's own count, even the ones a minute would have covered, and by the ninth day the list needs a second sheet taped below the first, names running off the bottom of the original in his own small, fast handwriting. His own contracts class still meets three times in the week, the interviews slotted into whatever's left of the day around it, and the second-week test goes out on the Friday at the hour it was always going to go out.
+Mr. Amberg runs the exit interviews himself, fifteen minutes each, ten or twelve students a day for eight days starting the first Monday of April, and a roster goes up outside the staff office every morning with that day's names in order, a runner coming down from admin to call the next one in when the clock on his desk says it is time. Most of them run the full fifteen minutes, by the staff's own count, even the ones a minute would have covered, and by the ninth day the list needs a second sheet taped below the first, names running off the bottom of the original in his own small, fast handwriting. His own contracts class still meets three times in the week, the interviews slotted into whatever's left of the day around it, and the second-week test goes out on the Friday at the hour it was always going to go out.
 
 The rest of April carries on exactly as scheduled around it: the twelves still have History at ten every morning, the range still runs its Saturday relays, the forge stays open Thursdays and both Saturday sessions, and lunch still runs from noon to half past, as in any other week in the term.
 
 What changes is dinner, because by the end of the first week the interviews have become a fixture of the conversation the way an exam result would be, except the whole table is comparing decisions instead of scores, a stranger thing to sit through with a fork in one hand. A boy from the materials wing tells the whole table one night about turning it down outright, about his mother and the decade of silence if he skipped actual college for a paycheck, in the specific tone of somebody rehearsing a line he means to use again at home. Three people laugh, and he goes back to his tray and lets the subject close there for the night, and the table lets it go without asking him the number. A girl two years below Chloe comes back from her own slot grinning, drops into the chair across from a half-eaten plate, and says the whole thing twice, the number, the car, all of it, as though saying it again will make it hold still long enough to be believed, and the two boys next to her let her have it, volume included, so the whole end of the table stays on it, openly, for the rest of the meal.
 
-Chloe's own slot falls on the Wednesday of the second week, third appointment after lunch, in a corridor where six chairs have been lined against one wall outside his office for the duration. The corridor smells like the coffee cart set up near the stairwell every April, and the runner's shoes squeak on the two steps of tile outside the door, morning after morning. She gets there with ten minutes to spare and finds most of the seats already taken: a boy re-reading one page of a textbook, the words plainly sliding past him each time, and a girl sitting perfectly still with her hands in her lap, staring at the closed door like she's already rehearsed what's behind it, both of them waiting on slots later than hers, and both of them in the chairs a good half hour before their names come up.
+Chloe's own slot falls on the Wednesday of the second week, third appointment after lunch, in a corridor where six chairs have been lined against one wall outside his office for the duration. The corridor smells like the coffee cart set up near the stairwell every April, and the runner's shoes squeak on the two steps of tile outside the door, morning after morning. With ten minutes to spare she gets there and finds most of the seats already taken: a boy re-reading one page of a textbook, the words plainly sliding past him each time, and a girl sitting perfectly still with her hands in her lap, staring at the closed door like she's already rehearsed what's behind it, both of them waiting on slots later than hers, and both of them in the chairs a good half hour before their names come up.
 
 One seat empties while she watches, when a boy she half-recognizes from the year above goes in on the dot, a laptop bag still over one shoulder like he's walking into a meeting rather than an office, and is back out before she's finished reading the noticeboard behind the chairs.
 
@@ -38,7 +38,7 @@ Mr. Amberg's pen stops moving, and he sets it down instead of writing with it, a
 
 "Reason?"
 
-She takes a moment to find it, turning the folder's edge slightly with one finger before she answers. "If you sat one exam every year, in one room, against the same ninety people, and you kept coming out near the top of it, would you ever actually find out if you were good at the exam, or just good against that particular room?" She keeps going before he can answer it, because she has been assembling the answer since the clock on his desk started. "I don't know what's outside this building, and everyone I've ever been measured against my whole life is inside it. Staying keeps the question open. It just makes the room permanent."
+It takes her a moment to find, and she turns the folder's edge slightly with one finger before she answers. "If you sat one exam every year, in one room, against the same ninety people, and you kept coming out near the top of it, would you ever actually find out if you were good at the exam, or just good against that particular room?" She keeps going before he can answer it, because she has been assembling the answer since the clock on his desk started. "I don't know what's outside this building, and everyone I've ever been measured against my whole life is inside it. Staying keeps the question open. It just makes the room permanent."
 
 Mr. Amberg writes it down, then squares the folder against the edge of the desk and opens it once more, the slow read he gives a mark scheme before he hands it back, running a finger down the last page against whatever he's just written in the margin, and he closes it exactly when the clock reads zero, with the pen back in the cup at the corner of the desk.
 
@@ -76,7 +76,7 @@ Amberg writes for a while. "The eighty saying no are going to college in Septemb
 
 "Which took a day."
 
-He asks the next one without looking up from the page. "How many applications."
+The next question comes at the page rather than at her. "How many applications."
 
 "Two hundred and one since November. Thirteen answers. Ten of the thirteen came out of software in the small hours, and one of the ten arrived eight minutes after a form that took me fifty."
 
@@ -86,7 +86,7 @@ He asks the next one without looking up from the page. "How many applications."
 
 "So September."
 
-She pushes her sleeves up, sitting down, in a chair, which is a thing he has watched her do since she was twelve.
+Sitting down, in a chair, she pushes her sleeves up, which is a thing he has watched her do since she was twelve.
 
 "I'm building the thing that gets people hired. The employer pays when somebody gets the job. The person pays nothing."
 
@@ -102,15 +102,15 @@ Amberg looks at that for longer than he has looked at anything else on the desk.
 
 "I haven't told them."
 
-He writes that down too, then fills the last inch of the sheet and keeps going on the back of it. At fifteen minutes exactly he stands. She is already up.
+He writes that down too, then fills the last inch of the sheet and keeps going on the back of it. At fifteen minutes exactly he stands. Chloe is already up.
 
-That night she goes back over the notebook and counts the lines in it, which comes to two hundred and one, the figure she gave him. She counts them again and gets two hundred and one. Then she counts what five years of Saturdays at the shop have left in the account her mother opened for her, three times, and gets that figure three times. Then she writes the first sixty lines of the thing before she sleeps, then is up at five filling in three more forms before the first bell.
+That night she goes back over the notebook and counts the lines in it, which comes to two hundred and one, the figure she gave him. Counted again, it comes to two hundred and one. Then she counts what five years of Saturdays at the shop have left in the account her mother opened for her, three times, and gets that figure three times. Then she writes the first sixty lines of the thing before she sleeps, then is up at five filling in three more forms before the first bell.
 
 ________________
 
 Kavi is one of the thirteen, and Chloe hears about it before any posted list confirms it: his name comes up in the common room before dinner, already attached to a number somebody else supplies, and she goes to find him rather than take the secondhand version.
 
-She finds him in the network room in the evening, back against the radiator by the door, a length of stripped cable coiled around one hand while he turns the copper end over between two fingers, over and over, eyes somewhere else, the coil going slack and tight again in his fist.
+In the evening she finds him in the network room, back against the radiator by the door, a length of stripped cable coiled around one hand while he turns the copper end over between two fingers, over and over, eyes somewhere else, the coil going slack and tight again in his fist.
 
 "Why?" she asks. "You had MIT. You had Caltech. You had this too, and you picked the one with no name on the door."
 
@@ -152,7 +152,7 @@ The silence on the line runs long enough, unbroken by the usual kitchen noise, f
 
 "Say that whole thing again for me," her father says, "every part of it, from the start, because I want to hear it properly."
 
-She says it again at the length she gave it the first time, for both of them now, keeping the parts in Amberg's order because the order is the only thing about it she can hand over intact.
+The second telling runs the length she gave it the first time, for both of them now, keeping the parts in Amberg's order because the order is the only thing about it she can hand over intact.
 
 Her father lets a breath out in one short exhale, not quite a laugh. "That's not a decision, that's a mistake, however it's dressed up."
 

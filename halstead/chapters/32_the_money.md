@@ -90,7 +90,7 @@ kavi: who though. needs motive and funding.
 
 nadia: the government tracks everything. if anyone has a file its them
 
-Eleven minutes pass before Theo posts again. Those minutes go where anything with real weight goes with him: laptop closed with both hands, out onto the back steps of his apartment building, phone still in his pocket. Once, he comes back inside, sets a full glass of water next to the keyboard, and sits back down at the desk before he lets himself reopen the thread.
+Eleven minutes pass before Theo posts again. Those minutes go where anything with real weight goes with him: laptop closed with both hands, out onto the back steps of his apartment building, phone still in his pocket. At one point he comes back inside, sets a full glass of water next to the keyboard, and sits back down at the desk before he lets himself reopen the thread.
 
 theo: ok
 

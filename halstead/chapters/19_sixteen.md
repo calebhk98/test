@@ -32,7 +32,7 @@ Kavi looks at the board, then at her, then back at the board, his own row three 
 
 Fifty-two in the year pass and thirty-nine do not, hers among them, and by dinner they have found each other by sight, because the board hangs in a hall everybody walks past six times a day.
 
-She takes her paper to Amberg two days later, and he has the mark scheme out on the desk before she gets the door shut.
+Two days later she takes her paper to Amberg, and he has the mark scheme out on the desk before she gets the door shut.
 
 "Question three."
 
@@ -66,9 +66,9 @@ Sam is up in half a second and talks for three minutes without stopping for air,
 
 "Sit down, next two."
 
-She goes back to her chair through two people getting up out of theirs, unhurried, her shoulders loose the entire way.
+Two people are getting up out of their chairs as she goes back to hers, unhurried, her shoulders loose the entire way.
 
-She writes her first practice paper in the second week of May, at a table in the library with the mark scheme face down beside her, taking an hour and ten minutes over a page restating what the shed already made obvious, and she gives it to Kavi to mark, because Kavi marks the way the examiners mark and will decline to be kind about it.
+In the second week of May she writes her first practice paper, at a table in the library with the mark scheme face down beside her, taking an hour and ten minutes over a page restating what the shed already made obvious, and she gives it to Kavi to mark, because Kavi marks the way the examiners mark and will decline to be kind about it.
 
 "Two out of four, and the two you're missing are the two that would have told me you actually understood it." Kavi has the page squared in front of him and a pen sideways in his fingers. "You have the rule, and you have where it comes from." He taps the pen twice on the third line. "Then you've written *and so the risk sits with the buyer*, which is your line two in a different hat, and then you've stopped, which means the marker reads a sentence that sounds like new information and finds it's what they already had."
 
@@ -78,9 +78,9 @@ She writes her first practice paper in the second week of May, at a table in the
 
 She writes the shed burning down in three minutes, one paragraph, with a sentence in the middle that makes her jaw set while she is writing it, and Kavi gives her all of them. "There it is, that's the whole four marks, right there on the page where somebody can actually see them."
 
-She writes thirty-one of those between May and September, Kavi marking some and Nadia marking some, while she marks the rest herself with her own answer folded under the page; in May she stops early on about half of them, and by August the rate has come down to one in six and settles there, declining to improve.
+Between May and September she writes thirty-one of those, Kavi marking some and Nadia marking some, while she marks the rest herself with her own answer folded under the page; in May she stops early on about half of them, and by August the rate has come down to one in six and settles there, declining to improve.
 
-The driving instructors in her fourth year do precision and competition work outside the school, and they teach by staging emergencies for her to handle, one at a time. She comes into September already able to drive, because her father took her out to a church lot the previous July and meant to be the one teaching her, the school taking delivery of her from there. In October an instructor kills the ignition at sixty, the first she hears of it, and she has to bring the car in on the gearbox alone, aiming for a mark set out on the tarmac; she overshoots it by thirty meters. In November another one sabotages the brake pedal to sink under her foot while the car keeps its speed, staged identically and indistinguishable from a real failure while it is happening, and the answer turns out to be the gearbox, the handbrake, and a great deal more road than she thought she would need. In January they put her on a wet skid pan, and by March she is reversing faster than she and her father between them ever managed in the church lot the July before.
+The driving instructors in her fourth year do precision and competition work outside the school, and they teach by staging emergencies for her to handle, one at a time. By September she can already drive, because her father took her out to a church lot the previous July and meant to be the one teaching her, the school taking delivery of her from there. In October an instructor kills the ignition at sixty, the first she hears of it, and she has to bring the car in on the gearbox alone, aiming for a mark set out on the tarmac; she overshoots it by thirty meters. In November another one sabotages the brake pedal to sink under her foot while the car keeps its speed, staged identically and indistinguishable from a real failure while it is happening, and the answer turns out to be the gearbox, the handbrake, and a great deal more road than she thought she would need. In January they put her on a wet skid pan, and by March she is reversing faster than she and her father between them ever managed in the church lot the July before.
 
 Delacroix runs the handling weeks, talking the entire time she drives, in one flat voice, about his brother-in-law's boat and the state of the tires and whatever else occurs to him.
 
@@ -94,11 +94,11 @@ She looks at the gap, and the car goes through it.
 
 ---
 
-She sits the bar again in October, the retake for everyone who failed in April, in that room again, two rows over from where she sat the first time.
+In October she sits the bar again, the retake for everyone who failed in April, in that room, two rows over from where she sat the first time.
 
 Question six is a rented forklift, and she has the answer in her second line, then writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. The whole of it takes nineteen minutes, and she reads it back once, leaving every line of it exactly where it is.
 
-She passes by twenty-two, and she reads the number twice before she puts the page away, and then Kavi sends back a string of exclamation points and Sam texts to ask what she got on the forklift question, so she tells him, asks what he got, and goes back to her book.
+This time she passes by twenty-two, and she reads the number twice before she puts the page away, and then Kavi sends back a string of exclamation points and Sam texts to ask what she got on the forklift question, so she tells him, asks what he got, and goes back to her book.
 
 In November she sits in the library with something else open in front of her, thinking about April instead; it happens again in December, and once more in February, and she still shuts books harder than she means to, though she could not tell anybody why she is doing it.
 
@@ -110,11 +110,11 @@ The forge is Thursdays, and has been since she was twelve, the work down there s
 
 "You've had a paper on Thursday for two weeks." He is banking the fire down for the night, working with his back to her. "Tongs on the rack. The ones you made. Take them with you."
 
-She takes the tongs home to the hook on the back of her door, beside the bag she made in her second year.
+The tongs go home to the hook on the back of her door, beside the bag she made in her second year.
 
 ---
 
-She comes home in June for ten weeks and sleeps through most of the first one, then settles at ten hours a night and rides out to the reservoir most days, in July finding a road past the water good for six extra miles and a hill she has to stand up on, with six novels going through her hands in a fortnight, though she could not afterward tell anybody how a single one of them ends. The rest of it is long afternoons on the back steps she and her father built when she was thirteen, with the sun coming round the corner of the garage in the late afternoon and a wasp working the same board every day.
+Home in June for ten weeks, she sleeps through most of the first one, then settles at ten hours a night and rides out to the reservoir most days, in July finding a road past the water good for six extra miles and a hill she has to stand up on, with six novels going through her hands in a fortnight, though she could not afterward tell anybody how a single one of them ends. The rest of it is long afternoons on the back steps she and her father built when she was thirteen, with the sun coming round the corner of the garage in the late afternoon and a wasp working the same board every day.
 
 Her mother watches that from the kitchen window for two weeks before she comes out.
 
@@ -146,7 +146,7 @@ Her father laughs at that, head back, longer than the joke should carry him.
 
 "Because I asked her to, and once she's said yes to something she follows through completely, whether or not the thing itself actually interests her."
 
-He nods at that and asks about Kavi, so she tells him about Kavi, and then about Priya, and then about the negotiation board in the hallway, where Nadia's eighty-one percent has been posted since February with Priya's name beside it.
+Her father nods at that and asks about Kavi, so she tells him about Kavi, and then about Priya, and then about the negotiation board in the hallway, where Nadia's eighty-one percent has been posted since February with Priya's name beside it.
 
 "Did Priya know it was coming, before the board ever went up?"
 

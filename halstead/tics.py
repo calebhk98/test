@@ -65,9 +65,20 @@ def strip_gut(t):
     m = re.search(r"\*\*\* ?START OF.*?\*\*\*(.*?)\*\*\* ?END OF", t, re.S)
     return m.group(1) if m else t
 
+# Every pattern is matched case-insensitively except the sentence-opening one,
+# which needs the capital to find a sentence start. Without this the counter
+# silently missed every instance that began a sentence: the "that's not X,
+# that's Y" row read six book-wide when the true figure was nine.
+CASE_SENSITIVE = {"sentence opens She/He + verb"}
+
+
 def measure(text):
     n = len(words(text))
-    return {k: 100000 * len(re.findall(p, text, re.M)) / n for k, p in PATTERNS.items()}, n
+    out = {}
+    for k, p in PATTERNS.items():
+        flags = re.M if k in CASE_SENSITIVE else re.M | re.I
+        out[k] = 100000 * len(re.findall(p, text, flags)) / n
+    return out, n
 
 def main():
     ap = argparse.ArgumentParser()
@@ -77,9 +88,10 @@ def main():
     book = "\n".join(Path(f).read_text() for f in sorted(glob.glob(str(HERE/"chapters"/"*.md"))))
     if a.show:
         pat = PATTERNS.get(a.show) or a.show
+        flags = 0 if a.show in CASE_SENSITIVE else re.I
         for f in sorted(glob.glob(str(HERE/"chapters"/"*.md"))):
             for i, line in enumerate(Path(f).read_text().split("\n"), 1):
-                for m in re.finditer(pat, line):
+                for m in re.finditer(pat, line, flags):
                     s = max(0, m.start()-60)
                     print(f"{Path(f).stem}:{i}  ...{line[s:m.end()+60]}...")
         return

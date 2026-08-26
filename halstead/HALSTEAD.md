@@ -4023,7 +4023,7 @@ Kavi looks at the board, then at her, then back at the board, his own row three 
 
 Fifty-two in the year pass and thirty-nine do not, hers among them, and by dinner they have found each other by sight, because the board hangs in a hall everybody walks past six times a day.
 
-She takes her paper to Amberg two days later, and he has the mark scheme out on the desk before she gets the door shut.
+Two days later she takes her paper to Amberg, and he has the mark scheme out on the desk before she gets the door shut.
 
 "Question three."
 
@@ -4057,9 +4057,9 @@ Sam is up in half a second and talks for three minutes without stopping for air,
 
 "Sit down, next two."
 
-She goes back to her chair through two people getting up out of theirs, unhurried, her shoulders loose the entire way.
+Two people are getting up out of their chairs as she goes back to hers, unhurried, her shoulders loose the entire way.
 
-She writes her first practice paper in the second week of May, at a table in the library with the mark scheme face down beside her, taking an hour and ten minutes over a page restating what the shed already made obvious, and she gives it to Kavi to mark, because Kavi marks the way the examiners mark and will decline to be kind about it.
+In the second week of May she writes her first practice paper, at a table in the library with the mark scheme face down beside her, taking an hour and ten minutes over a page restating what the shed already made obvious, and she gives it to Kavi to mark, because Kavi marks the way the examiners mark and will decline to be kind about it.
 
 "Two out of four, and the two you're missing are the two that would have told me you actually understood it." Kavi has the page squared in front of him and a pen sideways in his fingers. "You have the rule, and you have where it comes from." He taps the pen twice on the third line. "Then you've written *and so the risk sits with the buyer*, which is your line two in a different hat, and then you've stopped, which means the marker reads a sentence that sounds like new information and finds it's what they already had."
 
@@ -4069,9 +4069,9 @@ She writes her first practice paper in the second week of May, at a table in the
 
 She writes the shed burning down in three minutes, one paragraph, with a sentence in the middle that makes her jaw set while she is writing it, and Kavi gives her all of them. "There it is, that's the whole four marks, right there on the page where somebody can actually see them."
 
-She writes thirty-one of those between May and September, Kavi marking some and Nadia marking some, while she marks the rest herself with her own answer folded under the page; in May she stops early on about half of them, and by August the rate has come down to one in six and settles there, declining to improve.
+Between May and September she writes thirty-one of those, Kavi marking some and Nadia marking some, while she marks the rest herself with her own answer folded under the page; in May she stops early on about half of them, and by August the rate has come down to one in six and settles there, declining to improve.
 
-The driving instructors in her fourth year do precision and competition work outside the school, and they teach by staging emergencies for her to handle, one at a time. She comes into September already able to drive, because her father took her out to a church lot the previous July and meant to be the one teaching her, the school taking delivery of her from there. In October an instructor kills the ignition at sixty, the first she hears of it, and she has to bring the car in on the gearbox alone, aiming for a mark set out on the tarmac; she overshoots it by thirty meters. In November another one sabotages the brake pedal to sink under her foot while the car keeps its speed, staged identically and indistinguishable from a real failure while it is happening, and the answer turns out to be the gearbox, the handbrake, and a great deal more road than she thought she would need. In January they put her on a wet skid pan, and by March she is reversing faster than she and her father between them ever managed in the church lot the July before.
+The driving instructors in her fourth year do precision and competition work outside the school, and they teach by staging emergencies for her to handle, one at a time. By September she can already drive, because her father took her out to a church lot the previous July and meant to be the one teaching her, the school taking delivery of her from there. In October an instructor kills the ignition at sixty, the first she hears of it, and she has to bring the car in on the gearbox alone, aiming for a mark set out on the tarmac; she overshoots it by thirty meters. In November another one sabotages the brake pedal to sink under her foot while the car keeps its speed, staged identically and indistinguishable from a real failure while it is happening, and the answer turns out to be the gearbox, the handbrake, and a great deal more road than she thought she would need. In January they put her on a wet skid pan, and by March she is reversing faster than she and her father between them ever managed in the church lot the July before.
 
 Delacroix runs the handling weeks, talking the entire time she drives, in one flat voice, about his brother-in-law's boat and the state of the tires and whatever else occurs to him.
 
@@ -4085,11 +4085,11 @@ She looks at the gap, and the car goes through it.
 
 ---
 
-She sits the bar again in October, the retake for everyone who failed in April, in that room again, two rows over from where she sat the first time.
+In October she sits the bar again, the retake for everyone who failed in April, in that room, two rows over from where she sat the first time.
 
 Question six is a rented forklift, and she has the answer in her second line, then writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. The whole of it takes nineteen minutes, and she reads it back once, leaving every line of it exactly where it is.
 
-She passes by twenty-two, and she reads the number twice before she puts the page away, and then Kavi sends back a string of exclamation points and Sam texts to ask what she got on the forklift question, so she tells him, asks what he got, and goes back to her book.
+This time she passes by twenty-two, and she reads the number twice before she puts the page away, and then Kavi sends back a string of exclamation points and Sam texts to ask what she got on the forklift question, so she tells him, asks what he got, and goes back to her book.
 
 In November she sits in the library with something else open in front of her, thinking about April instead; it happens again in December, and once more in February, and she still shuts books harder than she means to, though she could not tell anybody why she is doing it.
 
@@ -4101,11 +4101,11 @@ The forge is Thursdays, and has been since she was twelve, the work down there s
 
 "You've had a paper on Thursday for two weeks." He is banking the fire down for the night, working with his back to her. "Tongs on the rack. The ones you made. Take them with you."
 
-She takes the tongs home to the hook on the back of her door, beside the bag she made in her second year.
+The tongs go home to the hook on the back of her door, beside the bag she made in her second year.
 
 ---
 
-She comes home in June for ten weeks and sleeps through most of the first one, then settles at ten hours a night and rides out to the reservoir most days, in July finding a road past the water good for six extra miles and a hill she has to stand up on, with six novels going through her hands in a fortnight, though she could not afterward tell anybody how a single one of them ends. The rest of it is long afternoons on the back steps she and her father built when she was thirteen, with the sun coming round the corner of the garage in the late afternoon and a wasp working the same board every day.
+Home in June for ten weeks, she sleeps through most of the first one, then settles at ten hours a night and rides out to the reservoir most days, in July finding a road past the water good for six extra miles and a hill she has to stand up on, with six novels going through her hands in a fortnight, though she could not afterward tell anybody how a single one of them ends. The rest of it is long afternoons on the back steps she and her father built when she was thirteen, with the sun coming round the corner of the garage in the late afternoon and a wasp working the same board every day.
 
 Her mother watches that from the kitchen window for two weeks before she comes out.
 
@@ -4137,7 +4137,7 @@ Her father laughs at that, head back, longer than the joke should carry him.
 
 "Because I asked her to, and once she's said yes to something she follows through completely, whether or not the thing itself actually interests her."
 
-He nods at that and asks about Kavi, so she tells him about Kavi, and then about Priya, and then about the negotiation board in the hallway, where Nadia's eighty-one percent has been posted since February with Priya's name beside it.
+Her father nods at that and asks about Kavi, so she tells him about Kavi, and then about Priya, and then about the negotiation board in the hallway, where Nadia's eighty-one percent has been posted since February with Priya's name beside it.
 
 "Did Priya know it was coming, before the board ever went up?"
 
@@ -4178,7 +4178,7 @@ They stay two hours, long enough for Sam to want to know whether the dent in Amb
 
 "You'd have told the whole school inside a week, and brought people out to look at it, given them the whole tour," Ruth says.
 
-She turns her coffee cup a quarter turn on the table, and then another.
+The coffee cup goes a quarter turn on the table under her hand, and then another.
 
 "My brother's in, the letter came Thursday, and my mother read me the whole thing over the phone twice before I got a word in edgewise."
 
@@ -4335,7 +4335,7 @@ Ruth has a laptop open on the arm of the couch in the third-floor common room, r
 
 "I'm getting to it, I'm just deciding whether the game's worth finishing first."
 
-Chloe is on the floor with the printed list of deadlines in her lap, going down it with a pen even though it reads exactly as it did the last time she checked. She crosses out one line twice, for no reason she could name.
+Chloe is on the floor with the printed list of deadlines in her lap, going down it with a pen even though it reads exactly as it did the last time she checked. One line gets crossed out twice, for no reason she could name.
 
 "What happens if all fourteen say no, all fourteen at once," she says, not quite a question.
 
@@ -4413,7 +4413,7 @@ The room is small and windowless, one lamp over a table, and the Caltech represe
 
 By noon he has filled five sheets on both sides, most of it his own working: a citation copied out to look up later, a calculation redone by hand to check where it lands, a margin note crossed out and rewritten smaller underneath. At one she asks whether he wants lunch and he says yes, eyes still on the page, and it goes cold at his elbow. By two he has stopped turning pages, reading a few paragraphs over and over instead of moving forward. At half past three he sets it down, looks at the wall a while, and picks it back up.
 
-He stands just before the bell, hands the sheets over, and waits while she reads them.
+Just before the bell he stands, hands the sheets over, and waits while she reads them.
 
 "Is the third author available to talk?" The methods section names her for the one part he has no way to check on his own.
 
@@ -4435,13 +4435,13 @@ A representative from Duke, crossing campus toward the dining hall on his first 
 
 "Sport," she says.
 
-He asks again two days later, over dinner, having learned by now a second question only gets a different word, not more of the first. "Athletics," she says, and goes on eating.
+Two days later, over dinner, he asks again, having learned by now a second question only gets a different word, not more of the first. "Athletics," she says, and goes on eating.
 
-He tries a third time on his last morning, one foot already in the car. "Recreation," she says, and closes the door for him. He writes all three down, in order, in the notebook he's kept since Monday.
+On his last morning he tries a third time, one foot already in the car. "Recreation," she says, and closes the door for him. He writes all three down, in order, in the notebook he's kept since Monday.
 
 The Stanford representative asks for the cryptography elective because it's the class he can least imagine existing, sits through two hours of twelve-year-olds, and follows about a third of the material. What he tells a colleague afterward is about the room rather than the material: the questions came faster than the answers, a girl at the back corrected the teacher's derivation of a cipher's key schedule twice from memory, and no student so much as looked up either time.
 
-The Yale representative asks for a senior writing seminar and gets Hearn, who hands back a stack of essays at the start of the hour with a name and a mark on each, then moves straight into the day's argument on Burke before anyone can react to what they got. She asks afterward how long the essays run.
+The Yale representative asks for a senior writing seminar and gets Hearn, who hands back a stack of essays at the start of the hour with a name and a mark on each, then moves straight into the day's argument on Burke before anyone can react to what they got. Afterward she asks how long the essays run.
 
 "Ten pages, same as most weeks," Hearn says.
 
@@ -4451,7 +4451,7 @@ He looks at her as if the question hadn't occurred to him before. "It's what the
 
 The MIT representative asks for the electronics and radio elective and spends most of a period watching a room of students build a working shortwave receiver out of a bag of parts, asking follow-up questions that all get short, exact answers back. Afterward he asks who taught it, how long the class took to reach a working set, and what they had built by the end of the first month, gets a straight answer to all three, and spends the walk back composing a fourth.
 
-A rep corners Chloe in the library on a Wednesday and asks, pleasantly, what a typical day is like, and she tells him: five classes before lunch, two block periods after it for whatever she's carrying that term, three more before dinner, then prep, dinner, and watch on the nights she has it. He asks what watch is, and she walks him through it as a fire drill: who takes which corridor, how the count works, what happens if somebody misses a call-in. He asks her to say the part about the scoring again.
+A rep corners Chloe in the library on a Wednesday and asks, pleasantly, what a typical day is like, and she tells him: five classes before lunch, two block periods after it for whatever she's carrying that term, three more before dinner, then prep, dinner, and watch on the nights she has it. He asks what watch is, and she walks him through it as a fire drill: who takes which corridor, how the count works, what happens if somebody misses a call-in. Then he asks her to say the part about the scoring again.
 
 Another asks Sam what he's good at, expecting a list with hedging in it.
 
@@ -4475,9 +4475,9 @@ The rep writes that down and moves to the next name on his list.
 
 ________________
 
-Nadia's answers come in mostly between one and four in the morning. She keeps them at the back of a notebook in the ledger hand, a line for every application and a column for whatever came back, and by the second week of March the lines run to a hundred and ninety against twelve in the column. One of the twelve lands eight minutes after she sends it, on a form that had taken her fifty minutes. A listing she answered in the first week of November is still up in March, the identical three paragraphs with a fresh date on top, reposted twice.
+Nadia's answers come in mostly between one and four in the morning. They live at the back of a notebook in the ledger hand, a line for every application and a column for whatever came back, and by the second week of March the lines run to a hundred and ninety against twelve in the column. One of the twelve lands eight minutes after she sends it, on a form that had taken her fifty minutes. A listing she answered in the first week of November is still up in March, the identical three paragraphs with a fresh date on top, reposted twice.
 
-She stops reading the count out at dinner somewhere in February, and when her mother asks on the phone whether anybody has called, Nadia starts being the one who gets to the shop phone first.
+Somewhere in February she stops reading the count out at dinner, and when her mother asks on the phone whether anybody has called, Nadia starts being the one who gets to the shop phone first.
 
 Ruth asks her in the common room in March, with only Chloe else in the room, and gets a number two weeks old, and then the real one.
 
@@ -4513,7 +4513,7 @@ Odile gets in everywhere. The rest of the year hears about it three days later, 
 
 Chloe gets twelve of fourteen.
 
-Outside her window the snow along the path has gone soft and grey, the last of it, three weeks off the end of term, and she sits on the floor of her room with the letters spread in two uneven rows, the ones that start with we are pleased and the two that don't. She reads the twelfth a second time before she believes the count, then a third, checking the name on the envelope against the name on the letter inside, in case some office has put two files together that both say Kessler.
+Outside her window the snow along the path has gone soft and grey, the last of it, three weeks off the end of term, and she sits on the floor of her room with the letters spread in two uneven rows, the ones that start with we are pleased and the two that don't. The twelfth she reads a second time before she believes the count, then a third, checking the name on the envelope against the name on the letter inside, in case some office has put two files together that both say Kessler.
 
 The arithmetic has gone wrong somewhere, and not in the letters, because the middle of a year gets the state school. She has twelve.
 
@@ -4554,13 +4554,13 @@ Twice in the week Chloe takes the letters out and counts them, and both times ge
 
 *April 2023*
 
-Mr. Amberg runs the exit interviews himself, fifteen minutes each, ten or twelve students a day for eight days starting the first Monday of April, and a roster goes up outside the staff office every morning with that day's names in order, a runner coming down from admin to call the next one in when the clock on his desk says it is time. He runs most of them the full fifteen minutes, by the staff's own count, even the ones a minute would have covered, and by the ninth day the list needs a second sheet taped below the first, names running off the bottom of the original in his own small, fast handwriting. His own contracts class still meets three times in the week, the interviews slotted into whatever's left of the day around it, and the second-week test goes out on the Friday at the hour it was always going to go out.
+Mr. Amberg runs the exit interviews himself, fifteen minutes each, ten or twelve students a day for eight days starting the first Monday of April, and a roster goes up outside the staff office every morning with that day's names in order, a runner coming down from admin to call the next one in when the clock on his desk says it is time. Most of them run the full fifteen minutes, by the staff's own count, even the ones a minute would have covered, and by the ninth day the list needs a second sheet taped below the first, names running off the bottom of the original in his own small, fast handwriting. His own contracts class still meets three times in the week, the interviews slotted into whatever's left of the day around it, and the second-week test goes out on the Friday at the hour it was always going to go out.
 
 The rest of April carries on exactly as scheduled around it: the twelves still have History at ten every morning, the range still runs its Saturday relays, the forge stays open Thursdays and both Saturday sessions, and lunch still runs from noon to half past, as in any other week in the term.
 
 What changes is dinner, because by the end of the first week the interviews have become a fixture of the conversation the way an exam result would be, except the whole table is comparing decisions instead of scores, a stranger thing to sit through with a fork in one hand. A boy from the materials wing tells the whole table one night about turning it down outright, about his mother and the decade of silence if he skipped actual college for a paycheck, in the specific tone of somebody rehearsing a line he means to use again at home. Three people laugh, and he goes back to his tray and lets the subject close there for the night, and the table lets it go without asking him the number. A girl two years below Chloe comes back from her own slot grinning, drops into the chair across from a half-eaten plate, and says the whole thing twice, the number, the car, all of it, as though saying it again will make it hold still long enough to be believed, and the two boys next to her let her have it, volume included, so the whole end of the table stays on it, openly, for the rest of the meal.
 
-Chloe's own slot falls on the Wednesday of the second week, third appointment after lunch, in a corridor where six chairs have been lined against one wall outside his office for the duration. The corridor smells like the coffee cart set up near the stairwell every April, and the runner's shoes squeak on the two steps of tile outside the door, morning after morning. She gets there with ten minutes to spare and finds most of the seats already taken: a boy re-reading one page of a textbook, the words plainly sliding past him each time, and a girl sitting perfectly still with her hands in her lap, staring at the closed door like she's already rehearsed what's behind it, both of them waiting on slots later than hers, and both of them in the chairs a good half hour before their names come up.
+Chloe's own slot falls on the Wednesday of the second week, third appointment after lunch, in a corridor where six chairs have been lined against one wall outside his office for the duration. The corridor smells like the coffee cart set up near the stairwell every April, and the runner's shoes squeak on the two steps of tile outside the door, morning after morning. With ten minutes to spare she gets there and finds most of the seats already taken: a boy re-reading one page of a textbook, the words plainly sliding past him each time, and a girl sitting perfectly still with her hands in her lap, staring at the closed door like she's already rehearsed what's behind it, both of them waiting on slots later than hers, and both of them in the chairs a good half hour before their names come up.
 
 One seat empties while she watches, when a boy she half-recognizes from the year above goes in on the dot, a laptop bag still over one shoulder like he's walking into a meeting rather than an office, and is back out before she's finished reading the noticeboard behind the chairs.
 
@@ -4590,7 +4590,7 @@ Mr. Amberg's pen stops moving, and he sets it down instead of writing with it, a
 
 "Reason?"
 
-She takes a moment to find it, turning the folder's edge slightly with one finger before she answers. "If you sat one exam every year, in one room, against the same ninety people, and you kept coming out near the top of it, would you ever actually find out if you were good at the exam, or just good against that particular room?" She keeps going before he can answer it, because she has been assembling the answer since the clock on his desk started. "I don't know what's outside this building, and everyone I've ever been measured against my whole life is inside it. Staying keeps the question open. It just makes the room permanent."
+It takes her a moment to find, and she turns the folder's edge slightly with one finger before she answers. "If you sat one exam every year, in one room, against the same ninety people, and you kept coming out near the top of it, would you ever actually find out if you were good at the exam, or just good against that particular room?" She keeps going before he can answer it, because she has been assembling the answer since the clock on his desk started. "I don't know what's outside this building, and everyone I've ever been measured against my whole life is inside it. Staying keeps the question open. It just makes the room permanent."
 
 Mr. Amberg writes it down, then squares the folder against the edge of the desk and opens it once more, the slow read he gives a mark scheme before he hands it back, running a finger down the last page against whatever he's just written in the margin, and he closes it exactly when the clock reads zero, with the pen back in the cup at the corner of the desk.
 
@@ -4628,7 +4628,7 @@ Amberg writes for a while. "The eighty saying no are going to college in Septemb
 
 "Which took a day."
 
-He asks the next one without looking up from the page. "How many applications."
+The next question comes at the page rather than at her. "How many applications."
 
 "Two hundred and one since November. Thirteen answers. Ten of the thirteen came out of software in the small hours, and one of the ten arrived eight minutes after a form that took me fifty."
 
@@ -4638,7 +4638,7 @@ He asks the next one without looking up from the page. "How many applications."
 
 "So September."
 
-She pushes her sleeves up, sitting down, in a chair, which is a thing he has watched her do since she was twelve.
+Sitting down, in a chair, she pushes her sleeves up, which is a thing he has watched her do since she was twelve.
 
 "I'm building the thing that gets people hired. The employer pays when somebody gets the job. The person pays nothing."
 
@@ -4654,15 +4654,15 @@ Amberg looks at that for longer than he has looked at anything else on the desk.
 
 "I haven't told them."
 
-He writes that down too, then fills the last inch of the sheet and keeps going on the back of it. At fifteen minutes exactly he stands. She is already up.
+He writes that down too, then fills the last inch of the sheet and keeps going on the back of it. At fifteen minutes exactly he stands. Chloe is already up.
 
-That night she goes back over the notebook and counts the lines in it, which comes to two hundred and one, the figure she gave him. She counts them again and gets two hundred and one. Then she counts what five years of Saturdays at the shop have left in the account her mother opened for her, three times, and gets that figure three times. Then she writes the first sixty lines of the thing before she sleeps, then is up at five filling in three more forms before the first bell.
+That night she goes back over the notebook and counts the lines in it, which comes to two hundred and one, the figure she gave him. Counted again, it comes to two hundred and one. Then she counts what five years of Saturdays at the shop have left in the account her mother opened for her, three times, and gets that figure three times. Then she writes the first sixty lines of the thing before she sleeps, then is up at five filling in three more forms before the first bell.
 
 ________________
 
 Kavi is one of the thirteen, and Chloe hears about it before any posted list confirms it: his name comes up in the common room before dinner, already attached to a number somebody else supplies, and she goes to find him rather than take the secondhand version.
 
-She finds him in the network room in the evening, back against the radiator by the door, a length of stripped cable coiled around one hand while he turns the copper end over between two fingers, over and over, eyes somewhere else, the coil going slack and tight again in his fist.
+In the evening she finds him in the network room, back against the radiator by the door, a length of stripped cable coiled around one hand while he turns the copper end over between two fingers, over and over, eyes somewhere else, the coil going slack and tight again in his fist.
 
 "Why?" she asks. "You had MIT. You had Caltech. You had this too, and you picked the one with no name on the door."
 
@@ -4704,7 +4704,7 @@ The silence on the line runs long enough, unbroken by the usual kitchen noise, f
 
 "Say that whole thing again for me," her father says, "every part of it, from the start, because I want to hear it properly."
 
-She says it again at the length she gave it the first time, for both of them now, keeping the parts in Amberg's order because the order is the only thing about it she can hand over intact.
+The second telling runs the length she gave it the first time, for both of them now, keeping the parts in Amberg's order because the order is the only thing about it she can hand over intact.
 
 Her father lets a breath out in one short exhale, not quite a laugh. "That's not a decision, that's a mistake, however it's dressed up."
 
@@ -4787,7 +4787,7 @@ ________________
 
 Her mother knows this campus, having come to it for eleven years. She knows where the good parking is, knows Ruth's mother by name, and knows to bring a jacket because it's colder up here.
 
-She finds Ruth's mother in the crowd before the ceremony even starts. The two of them fall into the easy back-and-forth they've had every year for over a decade: a supplier problem on one side, a school form still open on the other. "Is he settled on a roommate yet?" Ruth's mother asks, her own younger one starting at Halstead that September, and Meg tells her any day now, that he's already looking at rooms. Ruth's mother, who has forgotten her own jacket every year since the first, takes Meg's spare straight out of her hands. "You'll catch your death," Meg says, the same as every June before this one. Eleven years of parking in one overflow lot, and each of them still only knows the other from a folding chair.
+Before the ceremony even starts she finds Ruth's mother in the crowd. The two of them fall into the easy back-and-forth they've had every year for over a decade: a supplier problem on one side, a school form still open on the other. "Is he settled on a roommate yet?" Ruth's mother asks, her own younger one starting at Halstead that September, and Meg tells her any day now, that he's already looking at rooms. Ruth's mother, who has forgotten her own jacket every year since the first, takes Meg's spare straight out of her hands. "You'll catch your death," Meg says, the same as every June before this one. Eleven years of parking in one overflow lot, and each of them still only knows the other from a folding chair.
 
 A few rows over, Dave strikes up a conversation with the stranger next to him about the stage, admiring rather than worried, working out loud that whoever spec'd the bracing built in more margin than the thing will ever need. "Somebody had fun with this," Dave says, nodding at the joists. The stranger has clearly done that arithmetic already, unprompted, cross-bracing, dead load, a margin that makes more sense for a bridge than a stage, and it takes them most of the conversation to work out that he's a physics professor, Kavi's father. Behind them, a staff member in a school polo folds up a spare table and answers Dave's question about parking on her way past, still moving.
 
@@ -4823,7 +4823,7 @@ Everything else at the school keeps running. The labs are still going, the bell 
 
 Her own box goes down the ground-floor hallway with a forge mallet with a handle still the wrong shape wedged in next to a stack of notebooks. Eleven years of those brass plates line the wall here, and she reads them all again on her way past, as she has every single day since she was seven, counting them off on reflex: nine plates, four years of woodshop before the forge took over completely, one hook still on the back of her door upstairs that she's already decided to leave hanging there for whoever gets the room next.
 
-At the propped courtyard door she reaches up for the top of the frame, which she used to have to jump for at seven, and finds her palm against the wood with room to spare, her whole arm straight. The frame is exactly where it's always been; she's grown well past having to reach for it. She holds it there a second longer than the box in her other arm makes comfortable, then lets go and keeps walking, because Sam is somewhere out on the grass already asking where she's got to.
+At the propped courtyard door she reaches up for the top of the frame, which she used to have to jump for at seven, and finds her palm against the wood with room to spare, her whole arm straight. The frame is exactly where it's always been; she's grown well past having to reach for it. Her hand stays there a second longer than the box in her other arm makes comfortable, then lets go, and she keeps walking, because Sam is somewhere out on the grass already asking where she's got to.
 
 ________________
 
@@ -4845,7 +4845,7 @@ Ruth goes to MIT, with a box of her own things labeled and half packed before th
 
 Nadia stays, and the notebook finishes at two hundred and six applications since November against fourteen answers, the last of them an automatic rejection from a company that had already turned her down in January under a different listing and a different job description.
 
-She brings it to her father on a Saturday in May, at the counter, with the notebook. The thing itself has been in her afternoon block since the last week of March, in the hour the school leaves unrecorded, and she pushes her sleeves up first.
+On a Saturday in May she brings it to her father at the counter, with the notebook. The thing itself has been in her afternoon block since the last week of March, in the hour the school leaves unrecorded, and she pushes her sleeves up first.
 
 "Two hundred and six applications since November," she says, "and fourteen answers, twelve of them generated by software at two in the morning."
 
@@ -4879,7 +4879,7 @@ He is quiet long enough for a customer to come in, buy a tin of two-inch screws 
 
 "You have them from somebody who is going to be on a freight desk in Ambridge in three months, if the freight desk ever calls. You'd be paying for that by August." She lets that sit exactly one beat before she puts the proposal on the counter. "Sundays at the counter, the back room the remainder of the week, and an end date attached to it. If it is still earning zero by the last day of March I take whatever job is open and I stop."
 
-He looks at the ledger, then at the shop. "Four applications a week until then. Every week, in the book, where I can see them."
+His eyes go to the ledger, then to the shop. "Four applications a week until then. Every week, in the book, where I can see them."
 
 "Two a week, written up properly instead of pasted."
 
@@ -4893,11 +4893,11 @@ He puts his hand out across the counter, the way he closes with a supplier and h
 
 Her father keeps hold of her hand a second past where she lets go of his. Then she takes the invoice off the counter, finds the line he has been reading for twenty minutes, and tells him the supplier has billed him twice for the same case of blades.
 
-She brings that complaint to the chat that week, half a joke by the time it gets there, and Eli says he'll look into it and lets it drop.
+The complaint goes to the chat that week, half a joke by the time it gets there, and Eli says he'll look into it and lets it drop.
 
 Between the middle of May and the second week of June she asks sixty-one employers, in person, working down a list arranged by street, and nine of the sixty-one agree, every one of them a customer of her father's. It goes up three days after the gowns go back with all of them on it. The first month produces thirty-six registered users and exactly one hire, and the hire is a man who already had the job and used the site to fill in the application form.
 
-Theo goes into the federal government as an analyst, having been interviewed three times and having answered every question completely. He keeps the photograph from the grass in the drawer of his desk at work, where anyone who asks about it would have to already know to look.
+Theo goes into the federal government as an analyst, having been interviewed three times and having answered every question completely. The photograph from the grass lives in the drawer of his desk at work, where anyone who asks about it would have to already know to look.
 
 Kavi stays, and says so plainly when anyone asks, as he says anything else that's already settled.
 
@@ -4915,13 +4915,13 @@ ________________
 
 By the time she's sitting in her own gown, Chloe already knows what the next two years look like, because she found out in May.
 
-She reads the eligibility page for the Foreign Service exam again at her desk, then a third time, to be sure two readings had found it. Twenty years old to sit it. Twenty-one to be sworn in, once the file behind it clears, and she turns eighteen in August.
+At her desk she reads the eligibility page for the Foreign Service exam again, then a third time, to be sure two readings had found it. Twenty years old to sit it. Twenty-one to be sworn in, once the file behind it clears, and she turns eighteen in August.
 
-She closes the laptop and leaves it shut for the rest of the night. Down at the forge, she works past when everyone else has gone up, past the point where the piece in front of her is about the piece at all; what's left is the exact repetition of getting the next fold as thin as the last one, over and over, until her arm is the only part of her still making decisions.
+The laptop closes and stays shut for the rest of the night. Down at the forge, she works past when everyone else has gone up, past the point where the piece in front of her is about the piece at all; what's left is the exact repetition of getting the next fold as thin as the last one, over and over, until her arm is the only part of her still making decisions.
 
-She tells her father at the kitchen table once her mother's gone up to run a bath, the version of it that goes to him first. The last of dinner sits between them, foil pulled halfway over a plate of ham bones neither of them has cleared yet, and water starts running into the tub above their heads.
+Her father gets it at the kitchen table once her mother's gone up to run a bath, the version of it that goes to him first. The last of dinner sits between them, foil pulled halfway over a plate of ham bones neither of them has cleared yet, and water starts running into the tub above their heads.
 
-She lays it out for him in order, the way the eligibility page laid it out for her: the age floor at twenty, the training year that sits behind the floor once you clear it, and the six stages between passing the written test and actually being sworn in, each one carrying its own open-ended timeline. Then she runs the numbers forward from eighteen and shows him where a person would already have to be standing, at every one of those six stages, for the total to land anywhere close to twenty-one.
+It comes out in order, the way the eligibility page laid it out for her: the age floor at twenty, the training year that sits behind the floor once you clear it, and the six stages between passing the written test and actually being sworn in, each one carrying its own open-ended timeline. Then she runs the numbers forward from eighteen and shows him where a person would already have to be standing, at every one of those six stages, for the total to land anywhere close to twenty-one.
 
 "How many stages," her father asks.
 
@@ -5050,7 +5050,7 @@ kavi: you asked what it was measuring earlier this week. same energy
 
 ________________
 
-Halfway through September, Nadia tries to pin an actual date. It's been three months since anyone in the group has been in a room together, and the loose plan from June, get together before the holidays, has produced exactly zero weekends that work for more than three people at once. She posts the question on a Tuesday afternoon, and it sits for two hours before anyone answers.
+Halfway through September, Nadia tries to pin an actual date. It's been three months since anyone in the group has been in a room together, and the loose plan from June, get together before the holidays, has produced exactly zero weekends that work for more than three people at once. The question goes up on a Tuesday afternoon, and it sits for two hours before anyone answers.
 
 nadia: ok does anyone actually have a free weekend before december
 
@@ -5224,13 +5224,13 @@ The branch is a converted storefront two blocks from the shop, with three desks 
 
 "What size does it take."
 
-He tells her, and it is more than she has ever had at one time. She sits with the number for a second, then gives him the one she can actually hold across a month, which is three hundred dollars under his, and tells him what holding it costs her, which is that the three hundred sits in his branch instead of in her hand on the fourth of every month.
+The figure he gives is more than she has ever had at one time. Sitting with it a second, she gives him the one she can actually hold across a month, which is three hundred dollars under his, and tells him what holding it costs her, which is that the three hundred sits in his branch instead of in her hand on the fourth of every month.
 
 "Three hundred under isn't the number."
 
 "Three hundred under is what's in the room." She writes the names down anyway, one to a line, and turns the paper around so it faces him. "Two days on those, five on everything else. If one of them comes back on you, put me to five across all of it and I'll take it."
 
-He reads down the list for long enough that the woman at the next desk finishes a telephone call, and Nadia lets him finish.
+The list holds him long enough that the woman at the next desk finishes a telephone call, and Nadia lets him finish.
 
 "Two days on the nine. Six months, then it gets reviewed."
 
@@ -5240,7 +5240,7 @@ He reads down the list for long enough that the woman at the next desk finishes 
 
 "You've spent twenty-two minutes on me."
 
-He takes the fee off for a year, and she is out of the branch two minutes after that with the statements back under her arm.
+The fee comes off for a year, and she is out of the branch two minutes after that with the statements back under her arm.
 
 ________________
 
@@ -6782,7 +6782,7 @@ kavi: who though. needs motive and funding.
 
 nadia: the government tracks everything. if anyone has a file its them
 
-Eleven minutes pass before Theo posts again. Those minutes go where anything with real weight goes with him: laptop closed with both hands, out onto the back steps of his apartment building, phone still in his pocket. Once, he comes back inside, sets a full glass of water next to the keyboard, and sits back down at the desk before he lets himself reopen the thread.
+Eleven minutes pass before Theo posts again. Those minutes go where anything with real weight goes with him: laptop closed with both hands, out onto the back steps of his apartment building, phone still in his pocket. At one point he comes back inside, sets a full glass of water next to the keyboard, and sits back down at the desk before he lets himself reopen the thread.
 
 theo: ok
 
@@ -6839,7 +6839,7 @@ eli: so lets go and read it
 
 Eli proposes the second worm and Theo says no for nine days.
 
-It arrives as a document rather than a chat message, twelve pages, written at two in the morning at the kitchen table in the apartment three states from where he grew up. It goes to six people instead of one, on purpose, because a plan this size only holds together if all seven of them read one set of twelve pages instead of six different memories of them later. It reads like a plan because it is one, with an access path, a timeline, what gets touched and what gets left exactly where it was, and it closes on the idea the financial worm's whole design leaned on six months earlier, that boring beats clever every time somebody's watching for clever.
+What arrives is a document rather than a chat message, twelve pages, written at two in the morning at the kitchen table in the apartment three states from where he grew up. Six people get it instead of one, on purpose, because a plan this size only holds together if all seven of them read one set of twelve pages instead of six different memories of them later. It reads like a plan because it is one, with an access path, a timeline, what gets touched and what gets left exactly where it was, and it closes on the idea the financial worm's whole design leaned on six months earlier, that boring beats clever every time somebody's watching for clever.
 
 The target is the unit Theo already told them exists, the one that's kept a file on the school for nineteen years and been wrong about who runs it twice. Getting past its security once is a solvable problem. Getting past it and leaving the file looking exactly as it did before, with every trace of them erased, is the harder one, and the twelve pages are mostly about the second problem, not the first.
 
@@ -6909,7 +6909,7 @@ chloe: someones had a file on us since before any of us could read. if we get a 
 
 ________________
 
-Theo could have written cleaner rules than anyone else at that table, since it is, more or less, his actual job. Once, he says so, and in the next breath he says that his name needs to stay off any document that describes how to break the law he's paid to uphold. So it goes to Chloe.
+Theo could have written cleaner rules than anyone else at that table, since it is, more or less, his actual job. Once, he says so, and in the next breath adds that his name needs to stay off any document that describes how to break the law he's paid to uphold. So it goes to Chloe.
 
 Eli builds the entry itself as he built the first one, in small pieces that look unremarkable on their own. Kavi builds the exit, meaning whatever erases the traces of the entry as it happens, not after, because after is too late if anyone's actually watching, and for the better part of a week neither of them calls it anything but "the plumbing" in the group chat.
 
@@ -6960,7 +6960,7 @@ Chloe is four months into that job when she writes those pages, her hand steady 
 
 *June 2026*
 
-They open it in seven different places, at seven different hours, each of them alone with it when it happens. Chloe reads hers at her own desk, five months into a job whose clearance she is stretching a long way past its purpose to do this. The government badge is still clipped to the strap of her bag, exactly where she dropped it on her way in the door. Ruth is in a lab in Cambridge she has no official reason to be in over the summer. She's sitting on the floor with her back against a bench, because the chair is across the room and the walk over there costs more than it's worth. Sam reads his on a phone screen gone dim from the sun, thirty seconds at a time, between whatever a sergeant is telling nineteen other people to do. Nadia has the shop's laptop open on the counter after closing, the till already counted and the drawer already locked. The reading happens standing, because sitting down for it would mean deciding it deserved the time. Eli reads his at his own kitchen table, his badge from the security job face-down next to the keyboard, and taps two fingers against the wood the whole way through. Kavi reads his in the lab down the corridor from where he had his own lessons as a boy, one hand turning a pen over and setting it back exactly where it was between paragraphs. Theo reads his standing up, because he was already standing up when the file finished loading. Through the rest of the file he stays on his feet, the twenty minutes outside still ahead of him.
+They open it in seven different places, at seven different hours, each of them alone with it when it happens. Chloe reads hers at her own desk, five months into a job whose clearance she is stretching a long way past its purpose to do this. The government badge is still clipped to the strap of her bag, exactly where she dropped it on her way in the door. Ruth is in a lab in Cambridge she has no official reason to be in over the summer. She's sitting on the floor with her back against a bench, because the chair is across the room and the walk over there costs more than it's worth. Sam reads his on a phone screen gone dim from the sun, thirty seconds at a time, between whatever a sergeant is telling nineteen other people to do. Nadia has the shop's laptop open on the counter after closing, the till already counted and the drawer already locked, and she reads standing, because sitting down for it would mean deciding it deserved the time. Eli reads his at his own kitchen table, his badge from the security job face-down next to the keyboard, and taps two fingers against the wood the whole way through. Kavi reads his in the lab down the corridor from where he had his own lessons as a boy, one hand turning a pen over and setting it back exactly where it was between paragraphs. Theo reads his standing up, because he was already standing up when the file finished loading. Through the rest of the file he stays on his feet, the twenty minutes outside still ahead of him.
 
 There is a file on all ninety-one of them. Every page carries the same header before anything else on it: a case number nineteen years old, and a classification banner reprinted at the top of every scan as if repeating it enough times might eventually make it true.
 
@@ -7083,11 +7083,11 @@ Eli is at the second desk in the corner of the apartment when it happens, the on
 
 A check-in doesn't arrive. Nine minutes later, everything is precisely where it should be. State, position, byte for byte what it was.
 
-For now the gap is a question rather than a verdict. Nine minutes is long enough to matter and short enough that a dozen ordinary explanations could still cover it, and he wants at least one of them ruled out before he says a word to anyone. Three logs come open instead of one: the process's own record, the host underneath it, and the outbound trace Kavi built to sit beneath both, each blind to the other's existence. Because a single log is a story somebody wrote, three logs that agree on one story read closer to a fact.
+The gap reads as a question rather than a verdict. Nine minutes is long enough to matter and short enough that a dozen ordinary explanations could still cover it, and he wants at least one of them ruled out before he says a word to anyone. Three logs come open instead of one: the process's own record, the host underneath it, and the outbound trace Kavi built to sit beneath both, each blind to the other's existence. Because a single log is a story somebody wrote, three logs that agree on one story read closer to a fact.
 
 Eli pulls the logs. No error, no restart, no gap. There is no nine minutes anywhere in them, and the process reports itself running the whole time.
 
-Page five of the document defines what counts as being noticed, in language exact enough that Eli argued two of its clauses into their final shape himself: an external party observing, recording, or interacting with the tool in any manner inconsistent with its intended dormancy. The document is open in the next window before he's finished reading the logs a second time. He reads the clause the way he'd read a spec he was trying to break, once for what it says and once for what it would take to make it not apply. All three logs still describe what they have always described: a dormant process, unremarkable, exactly the state the clause was written to leave alone. On the only reading he can defend to himself, that's where tonight sits, and he closes the window and opens the one where Kavi already is. It's a decision made alone, at his own desk, and for now it stays exactly that: his, not the group's, not yet.
+Page five of the document defines what counts as being noticed, in language exact enough that Eli argued two of its clauses into their final shape himself: an external party observing, recording, or interacting with the tool in any manner inconsistent with its intended dormancy. The page is open in the next window before he's finished reading the logs a second time. He reads the clause the way he'd read a spec he was trying to break, once for what it says and once for what it would take to make it not apply. All three logs still describe what they have always described: a dormant process, unremarkable, exactly the state the clause was written to leave alone. On the only reading he can defend to himself, that's where tonight sits, and he closes the window and opens the one where Kavi already is. It's a decision made alone, at his own desk, and for now it stays exactly that: his, not the group's, not yet.
 
 Kavi's watcher, whose entire job is to see anything that anybody else might see, reports a healthy process across the whole window.
 
@@ -7135,7 +7135,7 @@ ________________
 
 Ruth starts typing, stops, and starts again before she sends anything.
 
-She's on the floor of her own apartment when it lands, shoes off, back against the couch, because a room has always suited her better than a chair. The group chat is open on her phone and the rules are open on the laptop balanced against her knees, the document Chloe wrote and that Ruth has read often enough now to find any clause in it without the search bar. Her hand goes to page seven before she's decided to send it there, the way it finds a light switch in her own house in the dark. The paragraph is four lines long. Any one of the seven can end it, no vote required and no explanation owed to the other six, all of it stopped inside the hour. They have sat on that page since Chloe wrote them, because everything Chloe builds with a limit in it comes with the door out already built into the design. Ruth reads them twice, the clinical pass she'd give a proof she was checking rather than one she'd written herself, looking for the place it breaks. It holds. It says exactly what it has always said. The laptop closes, the phone comes back up, and she types into the chat instead of the clause.
+She's on the floor of her own apartment when it lands, shoes off, back against the couch, because a room has always suited her better than a chair. The group chat is open on her phone and the rules are open on the laptop balanced against her knees, the document Chloe wrote and that Ruth has read often enough now to find any clause in it without the search bar. Her hand goes to page seven before she's decided to send it there, the way it finds a light switch in her own house in the dark. The paragraph is four lines long. Any one of the seven can end it, no vote required and no explanation owed to the other six, all of it stopped inside the hour. The lines have sat on that page since Chloe wrote them, because everything Chloe builds with a limit in it comes with the door out already built into the design. Ruth reads them twice, the clinical pass she'd give a proof she was checking rather than one she'd written herself, looking for the place it breaks. It holds. It says exactly what it has always said. The laptop closes, the phone comes back up, and she types into the chat instead of the clause.
 
 ruth: so he doesnt know we know
 

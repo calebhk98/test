@@ -112,7 +112,7 @@ kavi: you asked what it was measuring earlier this week. same energy
 
 ________________
 
-Halfway through September, Nadia tries to pin an actual date. It's been three months since anyone in the group has been in a room together, and the loose plan from June, get together before the holidays, has produced exactly zero weekends that work for more than three people at once. She posts the question on a Tuesday afternoon, and it sits for two hours before anyone answers.
+Halfway through September, Nadia tries to pin an actual date. It's been three months since anyone in the group has been in a room together, and the loose plan from June, get together before the holidays, has produced exactly zero weekends that work for more than three people at once. The question goes up on a Tuesday afternoon, and it sits for two hours before anyone answers.
 
 nadia: ok does anyone actually have a free weekend before december
 
@@ -286,13 +286,13 @@ The branch is a converted storefront two blocks from the shop, with three desks 
 
 "What size does it take."
 
-He tells her, and it is more than she has ever had at one time. She sits with the number for a second, then gives him the one she can actually hold across a month, which is three hundred dollars under his, and tells him what holding it costs her, which is that the three hundred sits in his branch instead of in her hand on the fourth of every month.
+The figure he gives is more than she has ever had at one time. Sitting with it a second, she gives him the one she can actually hold across a month, which is three hundred dollars under his, and tells him what holding it costs her, which is that the three hundred sits in his branch instead of in her hand on the fourth of every month.
 
 "Three hundred under isn't the number."
 
 "Three hundred under is what's in the room." She writes the names down anyway, one to a line, and turns the paper around so it faces him. "Two days on those, five on everything else. If one of them comes back on you, put me to five across all of it and I'll take it."
 
-He reads down the list for long enough that the woman at the next desk finishes a telephone call, and Nadia lets him finish.
+The list holds him long enough that the woman at the next desk finishes a telephone call, and Nadia lets him finish.
 
 "Two days on the nine. Six months, then it gets reviewed."
 
@@ -302,7 +302,7 @@ He reads down the list for long enough that the woman at the next desk finishes 
 
 "You've spent twenty-two minutes on me."
 
-He takes the fee off for a year, and she is out of the branch two minutes after that with the statements back under her arm.
+The fee comes off for a year, and she is out of the branch two minutes after that with the statements back under her arm.
 
 ________________
 

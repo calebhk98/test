@@ -24,7 +24,7 @@ They stay two hours, long enough for Sam to want to know whether the dent in Amb
 
 "You'd have told the whole school inside a week, and brought people out to look at it, given them the whole tour," Ruth says.
 
-She turns her coffee cup a quarter turn on the table, and then another.
+The coffee cup goes a quarter turn on the table under her hand, and then another.
 
 "My brother's in, the letter came Thursday, and my mother read me the whole thing over the phone twice before I got a word in edgewise."
 

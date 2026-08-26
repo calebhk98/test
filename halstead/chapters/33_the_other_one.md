@@ -4,7 +4,7 @@
 
 Eli proposes the second worm and Theo says no for nine days.
 
-It arrives as a document rather than a chat message, twelve pages, written at two in the morning at the kitchen table in the apartment three states from where he grew up. It goes to six people instead of one, on purpose, because a plan this size only holds together if all seven of them read one set of twelve pages instead of six different memories of them later. It reads like a plan because it is one, with an access path, a timeline, what gets touched and what gets left exactly where it was, and it closes on the idea the financial worm's whole design leaned on six months earlier, that boring beats clever every time somebody's watching for clever.
+What arrives is a document rather than a chat message, twelve pages, written at two in the morning at the kitchen table in the apartment three states from where he grew up. Six people get it instead of one, on purpose, because a plan this size only holds together if all seven of them read one set of twelve pages instead of six different memories of them later. It reads like a plan because it is one, with an access path, a timeline, what gets touched and what gets left exactly where it was, and it closes on the idea the financial worm's whole design leaned on six months earlier, that boring beats clever every time somebody's watching for clever.
 
 The target is the unit Theo already told them exists, the one that's kept a file on the school for nineteen years and been wrong about who runs it twice. Getting past its security once is a solvable problem. Getting past it and leaving the file looking exactly as it did before, with every trace of them erased, is the harder one, and the twelve pages are mostly about the second problem, not the first.
 
@@ -74,7 +74,7 @@ chloe: someones had a file on us since before any of us could read. if we get a 
 
 ________________
 
-Theo could have written cleaner rules than anyone else at that table, since it is, more or less, his actual job. Once, he says so, and in the next breath he says that his name needs to stay off any document that describes how to break the law he's paid to uphold. So it goes to Chloe.
+Theo could have written cleaner rules than anyone else at that table, since it is, more or less, his actual job. Once, he says so, and in the next breath adds that his name needs to stay off any document that describes how to break the law he's paid to uphold. So it goes to Chloe.
 
 Eli builds the entry itself as he built the first one, in small pieces that look unremarkable on their own. Kavi builds the exit, meaning whatever erases the traces of the entry as it happens, not after, because after is too late if anyone's actually watching, and for the better part of a week neither of them calls it anything but "the plumbing" in the group chat.
 

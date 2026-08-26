@@ -58,7 +58,7 @@ They are found at six. What arrives is a single typed envelope addressed to the 
 
 > "And she said, and I want you to hear this exactly, she said their list is usually pretty good." (chapters/03_the_letter.md)
 
-There is also no test at admission. There is a day in April where people come and look at you, and a grey-bearded man asks a seven-year-old what she would do with a whole day and lets her talk for four minutes. Nothing else ever arrives.
+There is also no test at admission. There is a day in April where people come and look at you, and a man whose beard is going grey sits down on a chair the same size as hers and asks a seven-year-old what she would do with an entire day if the whole day were hers to spend, and lets her talk for five minutes straight. No test ever arrives, and she keeps waiting for one all the way out to the car.
 
 Almost every one of these children was already in trouble before the letter came. Bored, isolated, described as weird by classmates, sitting in a folder in a school office. Chloe was clinically depressed at seven. The scouts are selecting for capability, and what they are catching is a specific kind of loneliness.
 

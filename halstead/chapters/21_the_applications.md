@@ -12,7 +12,7 @@ Ruth has a laptop open on the arm of the couch in the third-floor common room, r
 
 "I'm getting to it, I'm just deciding whether the game's worth finishing first."
 
-Chloe is on the floor with the printed list of deadlines in her lap, going down it with a pen even though it reads exactly as it did the last time she checked. She crosses out one line twice, for no reason she could name.
+Chloe is on the floor with the printed list of deadlines in her lap, going down it with a pen even though it reads exactly as it did the last time she checked. One line gets crossed out twice, for no reason she could name.
 
 "What happens if all fourteen say no, all fourteen at once," she says, not quite a question.
 
@@ -90,7 +90,7 @@ The room is small and windowless, one lamp over a table, and the Caltech represe
 
 By noon he has filled five sheets on both sides, most of it his own working: a citation copied out to look up later, a calculation redone by hand to check where it lands, a margin note crossed out and rewritten smaller underneath. At one she asks whether he wants lunch and he says yes, eyes still on the page, and it goes cold at his elbow. By two he has stopped turning pages, reading a few paragraphs over and over instead of moving forward. At half past three he sets it down, looks at the wall a while, and picks it back up.
 
-He stands just before the bell, hands the sheets over, and waits while she reads them.
+Just before the bell he stands, hands the sheets over, and waits while she reads them.
 
 "Is the third author available to talk?" The methods section names her for the one part he has no way to check on his own.
 
@@ -112,13 +112,13 @@ A representative from Duke, crossing campus toward the dining hall on his first 
 
 "Sport," she says.
 
-He asks again two days later, over dinner, having learned by now a second question only gets a different word, not more of the first. "Athletics," she says, and goes on eating.
+Two days later, over dinner, he asks again, having learned by now a second question only gets a different word, not more of the first. "Athletics," she says, and goes on eating.
 
-He tries a third time on his last morning, one foot already in the car. "Recreation," she says, and closes the door for him. He writes all three down, in order, in the notebook he's kept since Monday.
+On his last morning he tries a third time, one foot already in the car. "Recreation," she says, and closes the door for him. He writes all three down, in order, in the notebook he's kept since Monday.
 
 The Stanford representative asks for the cryptography elective because it's the class he can least imagine existing, sits through two hours of twelve-year-olds, and follows about a third of the material. What he tells a colleague afterward is about the room rather than the material: the questions came faster than the answers, a girl at the back corrected the teacher's derivation of a cipher's key schedule twice from memory, and no student so much as looked up either time.
 
-The Yale representative asks for a senior writing seminar and gets Hearn, who hands back a stack of essays at the start of the hour with a name and a mark on each, then moves straight into the day's argument on Burke before anyone can react to what they got. She asks afterward how long the essays run.
+The Yale representative asks for a senior writing seminar and gets Hearn, who hands back a stack of essays at the start of the hour with a name and a mark on each, then moves straight into the day's argument on Burke before anyone can react to what they got. Afterward she asks how long the essays run.
 
 "Ten pages, same as most weeks," Hearn says.
 
@@ -128,7 +128,7 @@ He looks at her as if the question hadn't occurred to him before. "It's what the
 
 The MIT representative asks for the electronics and radio elective and spends most of a period watching a room of students build a working shortwave receiver out of a bag of parts, asking follow-up questions that all get short, exact answers back. Afterward he asks who taught it, how long the class took to reach a working set, and what they had built by the end of the first month, gets a straight answer to all three, and spends the walk back composing a fourth.
 
-A rep corners Chloe in the library on a Wednesday and asks, pleasantly, what a typical day is like, and she tells him: five classes before lunch, two block periods after it for whatever she's carrying that term, three more before dinner, then prep, dinner, and watch on the nights she has it. He asks what watch is, and she walks him through it as a fire drill: who takes which corridor, how the count works, what happens if somebody misses a call-in. He asks her to say the part about the scoring again.
+A rep corners Chloe in the library on a Wednesday and asks, pleasantly, what a typical day is like, and she tells him: five classes before lunch, two block periods after it for whatever she's carrying that term, three more before dinner, then prep, dinner, and watch on the nights she has it. He asks what watch is, and she walks him through it as a fire drill: who takes which corridor, how the count works, what happens if somebody misses a call-in. Then he asks her to say the part about the scoring again.
 
 Another asks Sam what he's good at, expecting a list with hedging in it.
 
@@ -152,9 +152,9 @@ The rep writes that down and moves to the next name on his list.
 
 ________________
 
-Nadia's answers come in mostly between one and four in the morning. She keeps them at the back of a notebook in the ledger hand, a line for every application and a column for whatever came back, and by the second week of March the lines run to a hundred and ninety against twelve in the column. One of the twelve lands eight minutes after she sends it, on a form that had taken her fifty minutes. A listing she answered in the first week of November is still up in March, the identical three paragraphs with a fresh date on top, reposted twice.
+Nadia's answers come in mostly between one and four in the morning. They live at the back of a notebook in the ledger hand, a line for every application and a column for whatever came back, and by the second week of March the lines run to a hundred and ninety against twelve in the column. One of the twelve lands eight minutes after she sends it, on a form that had taken her fifty minutes. A listing she answered in the first week of November is still up in March, the identical three paragraphs with a fresh date on top, reposted twice.
 
-She stops reading the count out at dinner somewhere in February, and when her mother asks on the phone whether anybody has called, Nadia starts being the one who gets to the shop phone first.
+Somewhere in February she stops reading the count out at dinner, and when her mother asks on the phone whether anybody has called, Nadia starts being the one who gets to the shop phone first.
 
 Ruth asks her in the common room in March, with only Chloe else in the room, and gets a number two weeks old, and then the real one.
 
@@ -190,7 +190,7 @@ Odile gets in everywhere. The rest of the year hears about it three days later, 
 
 Chloe gets twelve of fourteen.
 
-Outside her window the snow along the path has gone soft and grey, the last of it, three weeks off the end of term, and she sits on the floor of her room with the letters spread in two uneven rows, the ones that start with we are pleased and the two that don't. She reads the twelfth a second time before she believes the count, then a third, checking the name on the envelope against the name on the letter inside, in case some office has put two files together that both say Kessler.
+Outside her window the snow along the path has gone soft and grey, the last of it, three weeks off the end of term, and she sits on the floor of her room with the letters spread in two uneven rows, the ones that start with we are pleased and the two that don't. The twelfth she reads a second time before she believes the count, then a third, checking the name on the envelope against the name on the letter inside, in case some office has put two files together that both say Kessler.
 
 The arithmetic has gone wrong somewhere, and not in the letters, because the middle of a year gets the state school. She has twelve.
 
