@@ -164,7 +164,7 @@ Her father lets a breath out in a short exhale, not quite a laugh. "That's a mis
 
 "Then explain it to me, because from here it looks like you turned down more money than your mother and I have made in any five years combined, for a reason you haven't said yet."
 
-"If I take it, I already know exactly what the next decade looks like," Chloe says. "I've seen the building. I've seen the work. I've watched what everyone in it does with a bad afternoon and what they do with a good one since I was seven. I could tell you what the first year looks like, and probably the fifth." She hears her own voice picking up pace and keeps going anyway. "Everyone I've ever been ranked against my whole life is inside those two buildings, and I don't know what I'd be if I got ranked against anyone else. Staying keeps that question open. It just makes it permanent."
+"If I take it, I already know exactly what the next decade looks like," Chloe says. "I've seen the building. I've seen the work. I've watched what everyone in it does with a bad afternoon and what they do with a good one since I was seven. I could tell you what the first year looks like, and probably the fifth." She hears her own voice picking up pace and keeps going anyway. "Everyone I've ever been ranked against my whole life is inside those two buildings, and I don't know what I'd be if I got ranked against anyone else."
 
 "So you're saying no to guaranteed money for the chance of finding out you're not as good as you think you are," her mother says.
 

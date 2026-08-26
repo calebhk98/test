@@ -50,10 +50,6 @@ Later that week she takes her paper to Amberg, and he has the mark scheme out on
 
 Chloe reads the rows twice, then looks up at him and back down at them.
 
-"So the points are for saying the obvious part out loud, in the right order, a row at a time, even though anyone reading it already knows every word of it is true before they get to your line."
-
-"The points are for showing your work," Amberg says, tapping the scheme once where the rows are and then closing it over them. "A page gets marked on what's written on it, not on what's in your head, and right now your page has one correct sentence and empty rows underneath it. Take the paper."
-
 ---
 
 "Two of you, brothers, one of you has sold something belonging to the other." The drama teacher points at whoever is nearest the door and declines to explain the exercise further. "Go."
