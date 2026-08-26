@@ -272,7 +272,9 @@ She gets in trouble for reading, in reading.
 
 That night at dinner she tells them, and it takes about a minute and a half.
 
-"She took your book," her dad says, and Chloe says until the end of the day, but by then everybody had moved on to worksheets, so having it back barely helped.
+"She took your book," her dad says.
+
+"Until the end of the day. But everybody was on worksheets by then, so getting it back barely helped."
 
 "Was anybody else reading ahead?"
 

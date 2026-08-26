@@ -32,9 +32,27 @@ Dr. Ammons stops writing and puts the pen down on top of the pad.
 
 "Tell me about the program, all of it, from the beginning."
 
-The questions keep coming after that, and all of them are careful, working down through who ran it, and how they found her, and whether Chloe stayed overnight, and how far away it was from the house, whether the same adults were there the whole time, whether anything happened, whether Chloe came back different, and in what way, and starting when.
+"It's a school, and they run a month of it every summer," her mom says. "They teach right through it. She had classes, and a hall, and a roommate."
 
-All the questions go to her mother, and Chloe sits through it, her thread-picking gone still somewhere around the question about the adults.
+"Did she stay there overnight."
+
+"The whole time. Every night of it."
+
+"How far is it from the house."
+
+"Half a day in the car."
+
+Every question goes to her mother, and Chloe sits through it.
+
+"Were the same adults with her the whole time, or did they change over."
+
+Chloe's hand stops on the thread.
+
+"The same," her mom says.
+
+The questions keep coming in that voice, working down through who ran it, and how they found her, and whether Chloe came back different, and in what way, and starting when.
+
+"Did anything happen to her there."
 
 "Everything about it was good, she absolutely loved every single day of it."
 

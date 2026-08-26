@@ -44,7 +44,11 @@ Their bridge takes most of the afternoon, and comes out flat, wide, neat at ever
 
 Before anything gets loaded, every group has to write down a prediction, in pounds, of what its bridge will hold: Chloe writes a low number; Sam wants a hundred, is told the number has to be one he believes, and comes down a long way; Ruth writes hers with one hand curled around the edge of the paper.
 
-On the Tuesday a bucket hangs from the middle of each bridge and the weights go in a pound at a time, the whole room counting out loud together. The first bridge goes at three, which gets a laugh out of the group it belongs to, and more come apart early. Theirs holds to eleven and then folds sideways, all at once, exactly the way Ruth's square went over under one finger, rather than snapping, and all of them are down after the pieces while the bucket still swings. Sam says the number out loud twice, then that he would have written a lower one if anybody had let him, and across the room Ruth's takes nineteen pounds and does snap, in the middle of the diagonal, which half the room makes a noise about.
+On the Tuesday a bucket hangs from the middle of each bridge and the weights go in a pound at a time, the whole room counting out loud together. The first bridge goes at three, which gets a laugh out of the group it belongs to, and more come apart early. Theirs holds to eleven and then folds sideways, all at once, exactly the way Ruth's square went over under one finger, rather than snapping, and all of them are down after the pieces while the bucket still swings. Sam says the number out loud twice.
+
+"I'd have written a lower one, if anybody let me."
+
+Across the room Ruth's takes nineteen pounds and does snap, in the middle of the diagonal, which half the room makes a noise about.
 
 "I told you," Ruth says, to the room rather than to anyone in it. "Triangles hold and squares fold, and what you built was a square."
 
@@ -68,7 +72,17 @@ He draws a rectangle, shades half of it, then cuts the shaded half into pieces, 
 
 Sam gets it, announcing the fact with one loud grunt; Kavi says he already knew it, out of a book, and is told that this is fine but he should listen anyway; Ruth, well down the packet, is on to the next question.
 
-Marisol asks him to do the rectangle again from the beginning, and he redraws it exactly as before, line for line. Owen asks something further back than that, about which of the two numbers the flipping is supposed to happen to, and when Mr. Baptiste answers and puts a question back Owen looks at the board and says he has lost the thread of it, so he is told that this is fine, that the whole thing gets done again tomorrow, and he goes back to his sheet, where he stays, quiet, for the rest of the lesson.
+"Can you do the rectangle again, from the start," Marisol says, and he redraws it exactly as before, line for line.
+
+"Which of them do you flip," Owen says, from the end of the row. "The first or the second."
+
+"The second," Mr. Baptiste says. "Always the second." He puts the marker down on the ledge. "Now tell me why. Why not the first."
+
+Owen looks at the board, then down at his sheet, then at the board again. "I've lost the thread of it."
+
+"That's fine, and we do the whole thing again tomorrow."
+
+He goes back to his sheet, where he stays, quiet, for the rest of the lesson.
 
 "Does it work with negative numbers too, or is that a different rule again," somebody asks from near the back.
 

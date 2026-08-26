@@ -88,7 +88,13 @@ Chloe sleeps in the second bed with the bathroom light on and the door open, her
 
 Her mom is still in her shoes, sitting on the arm of the chair by the window.
 
-Chloe says no, so her mom gets up, turns the other bed down, sits on the end of it, and asks whether Chloe would like her to talk about something instead, and Chloe says yes, anything.
+"No."
+
+Her mom gets up, turns the other bed down, and sits on the end of it.
+
+"Do you want me to talk about something instead."
+
+"Yes. Anything."
 
 So her mom talks, doing the drive down, and the place where they stopped, and the woman on the desk downstairs who has a son at a college in a state Chloe couldn't find.
 

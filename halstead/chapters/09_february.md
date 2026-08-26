@@ -12,7 +12,31 @@ The crying is still ahead of her, and she is sitting in the gap with a fistful o
 
 Then it comes out of her all at once and she can't get one word of it out whole, so what comes out is please, over and over, in pieces, in the gaps where she can get any air.
 
-She says she'll be good, and that she'll do the dishes every single night for the rest of her life. She'll do her dad's jobs as well, all of them, before anybody has to ask her. They can take the bike back, because she has no use for it and had none for it in July either. Christmas can go, this year and every year after it, and they can have her birthday too, the whole thing, cake and candles, since a birthday is one more thing she can do without. Please, and please again, and that one thing is the last thing she will ever ask anybody for, for the whole rest of her life, if they will please just let her go to that school.
+"Please. I'll be good, I'll be so good, please."
+
+Her mother comes across the room and crouches at the edge of the gap.
+
+"I'll do the dishes. Every night. Every single. Every night for the rest of my life, please."
+
+Her mother puts a hand out and Chloe does not take it.
+
+"And Dad's jobs. All of Dad's jobs. Before he asks, I'll do them before he even asks, please."
+
+"Chloe."
+
+"You can take the bike back. I don't. I never even. Not in July either, you can just take it back."
+
+The hand stays where it is.
+
+"And Christmas. You can have. You can have Christmas, this year, and after, all of them, I don't want it, please."
+
+Chloe's fists are still in the carpet.
+
+"Take my birthday." Her face is wet all the way to her chin. "Take the whole birthday, the cake, the candles, take all of it, please."
+
+"Oh, honey."
+
+"That's the last thing. That's the. I won't ask for anything, not ever, not my whole life. Please. Please just let me go to that school."
 
 Her mother is down on the floor with her by then, in the gap, with both arms round her. "Baby, breathe for me, just breathe, because you have to breathe before you can talk about any of it."
 
