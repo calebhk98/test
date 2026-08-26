@@ -4,7 +4,26 @@ The one the selection got wrong: a capable, reliable, well-liked child who
 tried as hard as anyone in the room and still could not keep up, and who took
 that somewhere private rather than making it anybody else's problem.
 
-**Age span:** six to seven | **MBTI:** ISFJ (a writing aid, not a claim) | **IQ:** exceptional at an ordinary school, and below the floor everyone around him was clearing without noticing
+**Age span:** six to seven | **MBTI:** INFP (a writing aid, not a claim) | **IQ:** 141, exceptional at an ordinary school and below the floor everyone around him was clearing without noticing
+
+## Type and number
+
+**Primary: INFP, revised from ISFJ.** The dutiful reading was looking at how hard he tried
+and how little trouble he made. What actually runs him is interior and evaluative: he
+measures himself constantly against a private standard, he takes the result personally
+rather than practically, and the thing he cannot say out loud is a feeling about himself
+and never a fact about the work. He would be mistaken for ISFJ by any adult watching him
+for a week, which is worth knowing, because that is precisely what the adults around him
+did.
+
+**IQ 141.** The shape of it: verbal comprehension and reasoning both a long way above
+average and comfortably the top of an ordinary classroom, with an even profile and no
+spike anywhere. That evenness is the problem. There is no single thing he is so good at
+that it buys him time on everything else, and in a room where the floor is twenty points
+above him, an even profile means he is behind in every subject at once, every day, with
+nowhere to rest. Where he is comparatively weak, measured against that room: speed of
+first insight. He gets to the same place by working, and the working takes him four times
+as long, and there is no fifth hour in the day.
 
 ## The thing to get right first
 
@@ -163,6 +182,30 @@ Bored, he draws. Praised, he is pleased and does not show off about it. A free
 Saturday is home, pancakes, the dog, his game. What he finds funny in other
 people is physical: somebody tripping, a genuinely clumsy accident.
 
+## Frustration and anger
+
+**What frustrates him:** the same page for the fourth time. He can feel himself getting
+nowhere and he has no vocabulary for it at six, so it arrives as a kind of physical
+heaviness that he would describe, if pushed, as being tired.
+
+**The tell, before he says anything:** he keeps reading the same line, moving his lips,
+and his pencil stops. He also starts copying the shape of what other people around him
+have written down, without understanding it, so that the page looks like the others.
+
+**What he does with it:** hides it, competently, for longer than anybody would expect of a
+six-year-old.
+
+**What actually makes him angry:** nothing outside himself, which is the whole trouble.
+The anger has no target and turns inward and comes out as tears at the wrong time, usually
+somewhere he thought was private.
+
+**Angry, he snaps at whoever is being kindest to him.** That is the specific and cruel
+shape of it: the friendly question is what breaks him, and the person asking it gets the
+sharp answer, and he knows within a second that he has done it.
+
+**How it ends:** with sleep, and with shame the next morning, and with him being
+noticeably nicer to that person for two days without either of them mentioning why.
+
 ## Interior life
 
 **Wants:** to be somewhere the work in front of him matches what he can do.
@@ -193,6 +236,27 @@ He carries the small blue dog-shaped keychain that matches his own dog. He
 draws the same dog repeatedly. He asks for the same bedtime routine every night
 if anyone will do it with him. He misses his mother's pancakes about as much as
 he misses any one person, at least in the first few days.
+
+## Life outside the work
+
+**Fishing with his father,** early, in silence, and he is good at the silence in a way
+that surprises adults. It is the only place he is not being measured against anybody.
+
+**He knows every make of car** on his road by the sound of it, and will tell you, and is
+right, and nobody at his new school has any use for this.
+
+**Sentimental about:** a friendship bracelet somebody made him in his first week
+somewhere new. He keeps it long past the point where he can remember which of them made
+it.
+
+**At eight,** back at an ordinary school, he is the cleverest child in the room and it is
+comfortable and he is happy, and he has a complicated feeling about that which he will not
+be able to name for another fifteen years.
+
+**At forty** he is well liked, competent, and steady in a job he is good at, and there is
+one year of his childhood he does not bring up. He is a superb teacher of anything he
+knows, because he learned every part of it the slow way and can remember not
+understanding.
 
 ## Would do
 

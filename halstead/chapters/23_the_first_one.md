@@ -68,7 +68,9 @@ Her own box goes down the ground-floor hallway with a forge mallet with a handle
 
 At the propped courtyard door she reaches up for the top of the frame, which she used to have to jump for as a child, and finds her palm against the wood with room to spare, her whole arm straight. Her hand stays there a second longer than the box in her other arm makes comfortable, then lets go, and she keeps walking, because Sam is somewhere out on the grass already asking where she's got to.
 
-Marek comes off the grass to meet the box and is alongside her before she is properly out of the doorway, telling her where he has got to with the paper he has been reading since March, which is about a third of the way through and going better than a third sounds, because the part in the middle is the part with the error in it. He walks her the length of the courtyard and goes back to the grass.
+Marek comes off the grass to meet the box and is alongside her before she is properly out of the doorway, with the paper he has been reading since March, about a third of the way through and going better than a third sounds.
+
+"The error's in the middle, so the third I've done is the cheap third and the rest of it is the part worth having." He walks her the length of the courtyard and goes back to the grass.
 
 ________________
 

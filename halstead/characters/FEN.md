@@ -5,9 +5,40 @@ least keep careful track of what passed through: she will not put anything on
 the walls of a room she knows she will be asked to leave, and she can tell you
 who lived in it before her.
 
-**Age span:** 8 to at least 17 or 18 | **MBTI:** ISTJ (a writing aid, not a claim) | **IQ:** the same tier as everyone around her, and nothing in her life has ever ranked her against them
+**Age span:** 8 to at least 17 or 18 | **MBTI:** ISTJ (a writing aid, not a claim) | **IQ:** 165, a figure nobody has ever said to her face
 
 **Engine:** keeps a record of what passes through, because nothing is hers to keep.
+
+## Type and number
+
+**Four readings, and only one of them reached her.** Four people typed this cast
+separately, each asked to keep off everybody else's answers. Three of the four documents
+do not cover Fen at all, which is its own finding: she is the character a reader can spend
+a whole book with and come away unable to describe.
+
+| reading | type | what that reader was looking at |
+| :-- | :-- | :-- |
+| first | not covered | — |
+| second | not covered | — |
+| third | INTP | quiet, obsessive, particular, has her own system, and the system is the only thing that makes sense |
+| house | ISTJ | the record, the order, the list of who had the room before her |
+
+**Primary: ISTJ.** The INTP reading saw the system and assumed a model underneath it, and
+there is no model underneath it. She is not building a theory of anything. She is keeping
+an accurate account of what passed through, which is a fundamentally practical act, and
+the pleasure she takes in it is the pleasure of a thing being in its place and findable.
+The separating test: an INTP asks why the arrangement is like this, and she asks whether
+anything is missing from it.
+
+**IQ 165.** The shape of it: an unusual profile even here. Memory — visual, verbal,
+positional, delayed — is at the top of every scale, and she recovers detail years later
+that other people did not encode at all. Verbal comprehension and quantitative reasoning
+both very high and both far behind the memory. Where she is comparatively weak:
+improvising under time pressure with an incomplete set. Take away one component and give
+her ninety seconds and she is the slowest of her year, because her method is to go back to
+the last point at which things were in order and come forward, and that method does not
+have a fast version. Give her the same problem with an hour and she will be first, and
+her working will be legible to a stranger.
 
 ## The thing to get right first
 
@@ -237,6 +268,34 @@ where the thing is, what the rule actually says, who had the room before you.
 People ask her small factual questions all day long and would not think to
 describe her as a friend, and she has no complaint about that arrangement.
 
+## Frustration and anger
+
+**What frustrates her:** somebody tidying. Not mess — mess is neutral and can be sorted.
+A person who has moved her things into a better-looking arrangement, meaning well, having
+destroyed the information that the old arrangement carried.
+
+**The tell, before she says anything:** she goes very still, and then her hands start
+checking, object by object, in sequence, touching each one, and her face does not change
+at all while this happens. People who know her leave the room at this point.
+
+**What she does with it:** rebuilds from the last correct point forward, writing down each
+part as she clears it so she never has to do the same part twice. She does not ask who
+did it. She will work this out on her own and will be right.
+
+**What actually makes her angry:** a thing of hers being thrown away. Not lost, not
+broken, not borrowed. Discarded by somebody who decided it was not worth anything.
+
+**Angry, she becomes flatly literal.** She asks factual questions about where the thing
+went, in order, with no adjective anywhere and no rise in her voice, and she does not stop
+asking, and being on the receiving end of it is far worse than being shouted at. She has
+never raised her voice in her life and does not need to.
+
+**How it ends:** when the object is found, at which point it is over completely and
+instantly and she will not mention it again. An identical replacement genuinely works,
+which surprises people who have decided she is sentimental. What does not end is the
+lending: the person who did it is quietly and permanently off the list, and will never be
+told, and will never work out why.
+
 ## Personality off the page
 
 The sorting she does when there is nothing else to do is real work to her rather
@@ -293,6 +352,35 @@ There is at least one small stone in her pocket at any given time. She drinks
 tea because it is what the house drinks, not as a ritual she built herself.
 First thing in the morning, she checks that whatever she was sorting the night
 before is still in order.
+
+## Life outside the work
+
+**The rocks.** They are arranged by size on whatever sill she has, she can find any of
+them in the dark by feel, and they travel with her, which is the whole point of them. She
+will tell you where each one came from if you ask about a specific one, and she will not
+volunteer it.
+
+**She walks a fixed route** and has done in every place she has ever lived, working it out
+within about a week of arriving. She picks nothing up on it unless it earns a place, and
+the standard for earning a place is high and entirely private.
+
+**Cooking with her grandmother** is the thing she is happiest doing and the only activity
+where she talks continuously. She learned the dishes by watching rather than by asking,
+and she makes them for other people at the slightest excuse, and she will not accept help
+in the kitchen.
+
+**Sentimental about:** a shoebox. Everything in it is worthless and every item in it is
+irreplaceable, and the box itself has been the same box since she was eight and is held
+together with tape at both corners.
+
+**At eight** she arrived somewhere new with the box, worked out the route, learned who had
+been in the room before her, and was settled inside four days in a way that unsettled the
+adults watching.
+
+**At forty** she owns a house outright and has no intention of ever moving again, and the
+rocks are on a sill in it, and the shoebox is in a cupboard, and she can still name every
+person who lived in every room she ever passed through. She grows things. She keeps the
+list going anyway, out of habit, for a life that no longer needs it.
 
 ## Would do
 

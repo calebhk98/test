@@ -4,9 +4,37 @@ The girl who has already worked out that nobody has to keep score of the things
 she cares about most, and who spends her attention on the problem in front of
 her rather than on the rank attached to it.
 
-**Age span:** roughly 7 to 18 | **MBTI:** ENFP (a writing aid, not a claim) | **IQ:** genius range, the same tier as everyone around her, and never a number she has wanted
+**Age span:** roughly 7 to 18 | **MBTI:** ENFP (a writing aid, not a claim) | **IQ:** 163, a figure she has been told once and has never repeated to anybody, because she could not think of an occasion for it
 
 **Engine:** processes out loud, immediately, at whoever is nearest.
+
+## Type and number
+
+**Four readings.** Four people typed this cast separately, each asked to keep off
+everybody else's answer.
+
+| reading | type | what that reader was looking at |
+| :-- | :-- | :-- |
+| first | ENFP, with a case made for ISFP | free-spirited grit, feral independence, allergic to confinement |
+| second | ESFJ | the warmth, the community-building, the friend-of-everyone within five minutes |
+| third | ENFP | fills every silence, goes everywhere, processes out loud at whoever is nearest |
+| house | ENFP | the same |
+
+**Primary: ENFP.** The second reader saw the warmth and read it as duty, and it is
+appetite. She is not maintaining harmony and she is not looking after anybody's feelings;
+she is delighted, out loud, at the rate of about once a minute, and other people happen to
+find that warming. The ISFP case in the first reading is worth knowing about, because
+under pressure she does drop into a wordless competent physical register that looks
+exactly like it — but she comes back up, every time, talking.
+
+**IQ 163.** The shape of it: fluid reasoning and processing speed both extremely high, and
+a social-reasoning score that is off the top of whatever instrument tried to measure it —
+she reads what a person actually wants faster than anyone in the year and could not tell
+you how. Verbal comprehension high. Where she is comparatively weak: delayed recall of
+anything symbolic that she has not said out loud to somebody, because her storage strategy
+is other people, and it fails cleanly when there is nobody there. Alone with a page for
+four hours she is the least effective of the ten. In a room with three other people she is
+the most.
 
 ## The thing to get right first
 
@@ -201,6 +229,35 @@ is not graded.
 **Secretly proud of:** reading a room faster than the mechanism built to score
 it, and then handing the outcome to somebody who wanted it more.
 
+## Frustration and anger
+
+**What frustrates her:** being kept indoors, and a schedule with no give in it. Two hours
+in a chair with the weather doing something interesting outside the window will get more
+out of her than any amount of difficulty will.
+
+**The tell, before she says anything:** she speeds up and starts handling things. She ties
+her hair and unties it and ties it again inside a minute, she moves objects on the table
+into no particular arrangement, and the run-on sentences get longer while the topics get
+shorter.
+
+**What she does with it:** goes outside, and takes somebody with her. She has never once
+processed a frustration alone and would not know how to start. The walk is the whole
+mechanism and it is finished within about ten minutes of the door closing behind her.
+
+**What actually makes her angry:** cruelty to something that cannot answer back. An
+animal, a small child, a person with no standing in the room. That is the whole list. Rank,
+insult, exclusion and unfairness to herself do not appear on it anywhere.
+
+**Angry, she is loud and immediate and physically in the way.** She puts herself between,
+she says exactly what she saw in the plainest available words, and she does it at a volume
+that fetches other adults. There is no calculation in it and no build-up. She is at full
+size within a second of the thing happening.
+
+**How it ends:** completely, in about ninety seconds, and then she feeds the person she
+shouted at. She cannot maintain a grievance and finds people who can genuinely puzzling —
+she will ask them, sincerely and repeatedly, how they are still carrying it, and they will
+find the question infuriating.
+
 ## Stuck, bored, and wrong in public
 
 None of this needs a school. It needs a task, a group, and somebody in charge.
@@ -386,6 +443,39 @@ money she is generous to the point of carelessness, lending on reputation
 rather than collateral and rarely tracking it afterward; losing it registers as
 information rather than as loss. First thing in the morning she is outside
 before she is fully awake, moving before she is thinking.
+
+## Life outside the work
+
+**She is a horse girl,** in the full and unembarrassed sense, and this is the single
+loudest fact about her. She wanted a horse from the age of four, in a house on a street
+with nowhere to put one. She drew them on everything, badly and constantly, until she was
+about eleven. She has firm opinions about breeds and conformation and will deliver them at
+length to anyone in reach, including people who have made it obvious they are not
+listening. She reads about horses for pleasure, in bed, having spent the day with horses.
+She names other people's cars after horses and then uses the names. At fifteen she got a
+share in one and treated it as the largest event of her life to that point, and she was
+correct to.
+
+**A free Saturday** starts at six in the morning in a yard, mucking out, and she would
+tell you with a straight face that she looks forward to it all week. Then a ride, then
+sleep in the afternoon wherever she happens to be sitting.
+
+**Sentimental about:** a hoof pick. It is not a good one. She has had it since she was
+nine and would be genuinely upset to lose it, and she puts her hand flat on a horse's neck
+before she gets on, every single time, and cannot tell you why.
+
+**She is happy-go-lucky and it is real,** rather than a coping mechanism with a cheerful
+paint job. Her resting state is delight. It attaches to small things at full size — a good
+sandwich, a dog in a car window, somebody else's news — and it is the temperature the whole
+group is kept at, which none of them have noticed and all of them would miss.
+
+**At eight** she was the child who came home filthy every single day and could not
+understand why this was a topic.
+
+**At forty** she has land, a bad knee she does not mention, three dogs, and a rescue pony
+that nobody can ride and that she has no plans to do anything about. Her house is full of
+people most weekends. She is still the one who writes to the person everybody else lost
+touch with.
 
 ## Would do
 

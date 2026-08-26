@@ -32,7 +32,7 @@ His office holds a desk, two chairs, and a small clock turned to face only him, 
 
 "Here."
 
-She keeps her feet square on the floor while she reads to the bottom of the page, the stillness she'd use leaning across a table when she wants to get something right the first time rather than the second. She's taught the twelves real analysis out of a room two floors below, working through the proofs handed to her at that age, by a teacher always making it sound like the ordinary next thing rather than a favor. She's dropped flawed hinges of her own into the scrap bin rather than let them stand, and gone back to the forge every Thursday for five years without anyone having to ask her twice. At the start, the whole of this place came down to a letter with her name typed across the front of it, in an envelope she still has, in a drawer she still checks.
+She keeps her feet square on the floor while she reads to the bottom of the page, the stillness she'd use leaning across a table when she wants to get something right the first time rather than the second. She's taught the twelves real analysis out of a room two floors below, working through the proofs handed to her at that age, by a teacher always making it sound like the ordinary next thing rather than a favor. She's dropped flawed hinges of her own into the scrap bin rather than let them stand, and gone back to the forge every Thursday for years without anyone having to ask her twice. At the start, the whole of this place came down to a letter with her name typed across the front of it, in an envelope she still has, in a drawer she still checks.
 
 "I don't think so," she says.
 
@@ -62,7 +62,9 @@ The roster has Nadia just before lunch on the Thursday of the first week, betwee
 
 "You've got my marks and you've got the board in the hallway."
 
-He gives her the list in the order he gives everybody: research, full time; the salary to start; housing, food, a car, medical; the degree on top of it if she wants it, paid for, the post held open until she finishes.
+He gives her the list in the order he gives everybody, research and the salary and the housing and the car and the medical and the degree on top of it if she wants it, and finishes where he finishes with everybody.
+
+"The post stays open until you're done with it, however long you take."
 
 "No."
 
@@ -126,6 +128,10 @@ Chloe watches him get back to work, the slow half-turn of the wrist stripping th
 
 ________________
 
+Iyad has the day at dinner and takes it down the table by name, whose slot fell where and what came out of it, and hers sits in the middle of the run and gets the voice the rest of it gets. The boy across from her wants to know whether she is sure. Then Iyad asks her whether she has told anybody at home yet, and puts his fork down for it, and waits, and gets an answer, and puts that in with the rest.
+
+Chloe is up the kitchen-end stairs before the pudding goes round.
+
 Chloe calls home that night, sitting on the floor of her room with her back against the bed, the phone warm against her ear before her mother even picks up, the way it's been warm against her ear at the end of most days for years.
 
 Her mother picks up on the second ring, still moving through her kitchen loop, a dish towel over her shoulder and the radio on low behind her the way it always is at that hour. "Hey, you, how'd it go today?"
@@ -154,7 +160,7 @@ The silence on the line runs long enough, unbroken by the usual kitchen noise, f
 
 "Say that whole thing again for me," her father says, "every part of it, from the start, because I want to hear it properly."
 
-The second telling runs the length she gave it the first time, for both of them now, keeping the parts in Amberg's order because the order is the only thing about it she can hand over intact.
+"Research, full time, starting the day I'd have gone to a dorm instead. A hundred and thirty five thousand a year to start. Housing, food, a car, medical, none of it mine to pay for. The degree too, if I want it, paid for, on my own schedule, and the post held open until I finish." She keeps the parts in Amberg's order, because the order is the only thing about it she can hand over intact. "That's the whole of it. That's everything that was on the desk."
 
 Her father lets a breath out in a short exhale, not quite a laugh. "That's a mistake, however it's dressed up."
 

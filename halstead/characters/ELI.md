@@ -6,9 +6,35 @@ not the end of the matter. A security-minded problem-solver who treats every
 serious risk as a mechanism to out-design, and who wants to be handed the hard
 thing before anyone tells him he has earned it.
 
-**Age span:** 13 to 21 | **MBTI:** ENTP (a writing aid, not a claim) | **IQ:** comfortably inside the top tenth of a percent by outside norms, and unremarkable in the only room that has ever measured him
+**Age span:** 13 to 21 | **MBTI:** ENTP (a writing aid, not a claim) | **IQ:** 169, which he would want to see the confidence interval on before he did anything with it
 
 **Engine:** does the interesting thing and works out the consequences afterwards.
+
+## Type and number
+
+**Four readings, all the same.** Four people typed this cast separately, each asked to
+avoid duplicating anyone else's answer, and nobody hesitated over Eli for a second.
+
+| reading | type | what that reader was looking at |
+| :-- | :-- | :-- |
+| first | ENTP | irreverent trickster, boundary-poking, allergic to a rule with no reason under it |
+| second | ENTP | clever, quick, always looking for the loophole, humour as the shield |
+| third | ENTP | makes the joke before anybody else can, because the joke is the wall |
+| house | ENTP | the same |
+
+**Primary: ENTP.** Four for four. What the readings add rather than settle is the
+direction of the humour: the second and third both treat it as a defence, and it is at
+least as much an appetite. He pokes at things because poking is interesting, and the
+defensive use of it is real and secondary. Write the delight first and the shield second,
+or he collapses into a wound with a punchline attached.
+
+**IQ 169.** The shape of it: the widest spread in the cohort. Verbal reasoning and fluid
+reasoning both pinned at the ceiling of anything that has one, with an unusual gap down to
+a working memory that is merely excellent, which is why he offloads onto paper and onto
+other people constantly. Where he is comparatively weak: sustained attention on a task
+with no novelty left in it. He is not slow at tedious work; he is absent from it. Anything
+that requires the ninth repetition of a solved problem gets his worst hour, and he knows
+this about himself and has arranged his life so that it rarely comes up.
 
 ## The thing to get right first
 
@@ -208,6 +234,34 @@ Three ways a writer gets him wrong: writing him nervous, defensive or
 self-justifying about risk; giving him a metaphor to soften or decorate a line;
 and having him ask a genuine open question.
 
+## Frustration and anger
+
+**What frustrates him:** a rule with nothing underneath it. He can live with a rule he
+disagrees with if somebody can state what it is for. A rule whose only defence is that it
+is the rule will occupy him for weeks, unproductively, and he will keep testing it long
+after the point has been made.
+
+**The tell, before he says anything:** the drumming stops. Two fingers going all day, and
+then they do not, and his hands go into his pockets. At the same time the jokes speed up
+and start landing on a person rather than on a situation.
+
+**What he does with it:** demonstrates that the rule is porous. Not destructively and
+usually not even usefully — he simply needs the room to see the gap, and having shown it
+he loses interest entirely and does not follow up.
+
+**What actually makes him angry:** being lied to by somebody who has decided he cannot
+tell. The lie is survivable. The assessment of him underneath it is what does it.
+
+**Angry, he goes formal and accurate.** No volume. Contractions come apart, the sentences
+get properly built, and he finds the true thing about the other person and puts it in the
+funniest possible shape in front of whoever is present. He is extremely good at this and
+it works exactly as intended, which is the problem.
+
+**How it ends:** badly for him, about a day later, when it lands what he did. He does not
+apologise in words and would not know how to start. He repairs it by doing something
+enormous and useful for the person, at real cost, without ever connecting the two out loud,
+and he would be mortified if anyone connected them for him.
+
 ## Stuck, bored, and wrong in public
 
 Most of his life has been spent being taught things in a room with other people
@@ -377,6 +431,35 @@ and pointless. What makes him laugh hardest is somebody defending a position
 they have plainly already abandoned, and he will keep asking questions to watch
 them go on defending it, and then tell them afterwards that it was good.
 
+## Life outside the work
+
+**Insects.** This is the collection: found, killed cleanly, identified, mounted and
+labelled by hand in a script far neater than anything else he writes. It is genuinely
+beautiful and he has never shown it to a living soul. Get him talking about wasps and you
+will get twenty minutes, after which he will check, out loud and slightly too casually,
+whether he has been boring you.
+
+**He sleeps until noon** on any day nobody needs him and then does something
+ill-advised with the afternoon. He does not rest. He alternates between two speeds and
+has no third one.
+
+**Sentimental about:** a joke his mother makes, which he repeats badly and to people who
+have no context for it, and which he would defend as the funniest thing he knows.
+
+**Cards.** He plays poker for money he does not need and is better at reading the table
+than at the arithmetic, which offends his own idea of himself. He will not play with
+anybody who cannot afford to lose, and enforces that rule on other people's behalf without
+explaining it.
+
+**At eight** he took things apart mainly to find out whether he would be caught, and was
+disappointed on the occasions when nobody noticed, because the noticing was the
+experiment.
+
+**At forty** he is the one who organises the reunion and lets somebody else appear to have
+organised it. He is still up at three in the morning with something running, still cannot
+be bored, and has finally found work where being unable to sit through the ninth
+repetition is somebody else's job to cover.
+
 ## Interior life
 
 **Wants:** to be handed something that actually matters and then left alone with
@@ -418,7 +501,7 @@ is organised by an index only he holds: it looks like chaos and he can find
 anything in it blind. Pockets usually hold something he is midway through
 taking apart. Money he does not think about until asked, and then he can
 account for every unit of it precisely. No superstition on principle, though he
-checks a lock twice and would deny that counts. His phone is full of
+counts the exits in any room he has not been in before and would deny that counts. His phone is full of
 half-finished notes to himself, and he replies within a minute or not for days.
 First thing in the morning he checks whatever he left running overnight before
 he is properly awake.

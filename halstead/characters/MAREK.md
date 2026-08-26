@@ -4,7 +4,7 @@ A boy who will hand over everything he knows to anybody who asks and cannot be
 got to hand over a piece of paper, and who is sincerely puzzled that the paper
 is what anybody wanted.
 
-**Age span:** eight to eighteen, and twelve and thirteen on the page | **MBTI:** INTP (a writing aid, not a claim) | **IQ:** the same tier as everyone in the building, which is the only room that has ever measured him
+**Age span:** eight to eighteen | **MBTI:** INTP (a writing aid, not a claim) | **IQ:** 164, a figure he has never asked for and would find uninteresting, in the only population that has ever measured him
 
 ## The thing to get right first
 
@@ -138,6 +138,43 @@ account of where he actually was, offered as a gift, and it lands as an excuse.
 **Two ways a writer gets him wrong:** playing him as contemptuous, and playing
 him as calm. He is neither. He likes almost everybody and he is in constant
 motion.
+
+**A third, and it is the commonest.** Writing him as socially difficult. He is
+not tiresome, not rude, not oblivious to people, and not a person anybody
+dreads. He is warm, he is quick, he is pleased to see you, he asks after the
+thing you told him about last time and remembers the answer. Every difficulty
+he causes is structural and lands on a form: he has done the work and there is
+no page with his name on it, and somebody else's record is fastened to that
+page. Nothing about him should make a scene uncomfortable except the empty
+column.
+
+## Frustration and anger
+
+He is very hard to frustrate and almost impossible to anger, and both of those
+come from the same place, which is that he is not really in the room where the
+frustration is happening. Held up, he goes and works on something else and
+comes back, and if the block lasts a month he acquires a second thing to work
+on and is happier than before. Told the same request for the fourth time he is
+courteous the fourth time, and it does not wear on him, because each asking
+arrives new.
+
+What frustration he has is entirely inward and entirely about the work: a
+passage he has read eleven times and cannot make come out, an argument that
+holds everywhere except at one joint, a week where the fault turns out to have
+been his own reading. That is when he stops being delighted, and what it looks
+like is a boy who goes quiet, works past the point where the work is any good,
+sleeps badly, and will not be moved off it by food, company or daylight.
+
+The thing that actually angers him, rarely and briefly, is being told a piece
+of reasoning is settled by somebody who has not read it, and the anger comes
+out as a question, asked pleasantly, that the other person cannot answer.
+Second to that is somebody taking a piece of work off him, changing it, and
+handing it back without saying which part they changed. He does not raise his
+voice, he does not go cold, and he does not stay angry: the anger converts,
+inside a minute, into curiosity about how the other person got where they got,
+and then he wants to talk about that instead. He has never had a fight with
+anybody and believes this makes him easy to work with, and the people who have
+to sign for his work would put it differently and have never said so to him.
 
 ## What he is good at, and what he is not
 
@@ -364,4 +401,7 @@ was asked; Marek answers a different and larger question immediately.
 - He has been working line by line through a mathematics paper from 1981 with a
   flaw in the argument since the February before that year began.
 - He applies to a university in Arizona because of one lecturer there.
-- Appears in: chapters/16_thirteen.md and chapters/21_the_applications.md.
+- He asks the year above for their practice papers before an examination he
+  will sit a year early, keeps them a fortnight, and returns them unread with a
+  harder version of one of the questions written on the back.
+- Appears in: chapters 15, 16, 17, 19, 21 and 23.

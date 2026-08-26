@@ -34,8 +34,8 @@ terror of being the only one of her kind in the room.
 unusually for a profile that high, no soft index anywhere. She is fast and she is also
 accurate, which is the combination that makes her exhausting to argue with. Where she is
 comparatively weak: mental rotation of a solid object, which is the one place she has to
-build the thing with her hands to see it, and any task where the correct answer depends on
-what another person is feeling rather than on what is true. She would place herself around
+build the thing with her hands to see it, and any task scored on what
+another person is feeling rather than on what is true. She would place herself around
 a B plus and mean it.
 
 ## What she is for

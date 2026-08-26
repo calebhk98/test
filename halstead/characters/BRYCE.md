@@ -4,7 +4,22 @@ An ordinary boy who takes his time with everything, works with his hands
 whenever he gets the chance, and reports what he can see without dressing it up
 or thinking twice about it.
 
-**Age span:** six to seven | **MBTI:** ISFP (a writing aid, not a claim) | **IQ:** average, an ordinary child learning at an ordinary pace
+**Age span:** six to seven | **MBTI:** ISFP (a writing aid, not a claim) | **IQ:** 103, an ordinary child learning at an ordinary pace
+
+## Type and number
+
+**Primary: ISFP.** He is present-tense, physical, and unhurried, he takes in exactly what
+is in front of him and no more, and he has a private standard about how a thing should be
+done that he will not compromise and will not explain. He gets misread as ISTJ by adults
+who see a slow careful child and assume rule-following; the cue that separates them is
+that he has no interest in the rule at all — he is doing it that way because it is the way
+it feels finished.
+
+**IQ 103.** Ordinary, and his profile is lopsided in the one direction that matters here:
+visual and hands-on reasoning noticeably ahead of everything verbal or numerical. He
+counts on his fingers at seven and will still be doing arithmetic slowly at fifty, and he
+can look at a broken hinge and see the fix. Where he places lowest: anything held only in
+language, and anything with a clock on it.
 
 ## The thing to get right first
 
@@ -170,6 +185,26 @@ Bored, he fidgets with something small rather than complaining. A free Saturday
 is the garage, or outside taking something apart. What he finds funny in other
 people is physical comedy: somebody tripping, a genuinely clumsy accident.
 
+## Frustration and anger
+
+**What frustrates him:** the day changing shape without warning. A different room, a
+substitute adult, an order of events he was not told about.
+
+**The tell, before he says anything:** he describes the change out loud, flatly, to nobody
+in particular, as though saying it makes it manageable, which it does.
+
+**What he does with it:** adapts, slowly, and keeps reporting. He is unusually good at
+this for his age and adults consistently fail to notice that it is an effort.
+
+**What actually makes him angry:** being blamed for something he described accurately. He
+said what he saw, somebody got in trouble, and now it is his fault.
+
+**Angry, he goes literal.** He repeats, word for word, what he actually said, and then
+repeats it again, and he will not be moved off it or embellish it in either direction.
+
+**How it ends:** the moment an adult agrees with him about the facts. That is all it takes,
+and it works completely, and nobody ever seems to try it.
+
 ## Interior life
 
 **Wants**, and has not said to anyone: to be fast at something the way he is
@@ -195,6 +230,28 @@ His pockets usually hold a screw, a rubber band, or a small found object. He
 draws vehicles in the margins of worksheets while he waits for everybody else
 to finish. His handwriting is careful and slow, like his arithmetic. He carries
 a small toy screwdriver his uncle gave him and likes having it on him.
+
+## Life outside the work
+
+**He builds.** Wood offcuts from his uncle's garage, nails bent over rather than pulled
+out, nothing he makes has a plan and everything he makes stands up. He would rather do
+this than anything else available to him.
+
+**Snails, beetles, anything under a stone.** He will carry one across a playground to show
+somebody and be unbothered when they are not interested.
+
+**Sentimental about:** the garage. The smell of it, the radio in it, the specific
+disorder of it, and the fact that in there nobody is timing him.
+
+**A free Saturday** is outside from breakfast, back when he is hungry, filthy, and unable
+to say what he did.
+
+**At eight** he can already fix a bicycle better than his father can and has no idea this
+is unusual.
+
+**At forty** he does something with his hands for a living, is very good at it, is the
+person on the street everybody borrows tools from, and still describes what he sees
+without dressing it up, which some people find restful and a few find alarming.
 
 ## Would do
 

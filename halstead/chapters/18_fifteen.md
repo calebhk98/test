@@ -116,7 +116,7 @@ Rustem buys a dozen dead motors at a farm auction for a few dollars apiece, seve
 
 Forty goes to a girl called Fen at ten percent against a table saw, and the last thirty to Priya at twelve, unsecured, because it is Priya. They all pay her back, and she finishes the year with two hundred and seventeen dollars to Rustem's nine hundred and forty.
 
-Iyad starts a list of it in October without anybody asking him to, everybody in the year and what they are doing with theirs, and in June he goes round the tables collecting the figures by name and in order and reading out what he has so far to whoever is sitting there. Chloe gives him seventeen. Rustem's number is a couple of lines above hers on the page.
+Iyad starts a list of it in October without anybody asking him to, everybody in the year and what they are doing with theirs, and by June he is going round the tables collecting the figures by name and in order and reading back what he has so far to whoever is sitting there. Chloe gives him seventeen. Rustem's number is a couple of lines above hers on the page, and Iyad reads the page out at the long table in the week Hark has the ledger up on the board, top to bottom, in order, and gets to hers in the middle of the pudding and says it in the voice he said Rustem's in. Sam asks him what his own came to. He tells him that as well.
 
 Hark has her at the board in April with the ledger written up, and reads the columns from the back with her arms folded before she says anything.
 
@@ -131,6 +131,12 @@ Hark has her at the board in April with the ledger written up, and reads the col
 "A hundred and twenty dollars, over the whole year," Hark says, coming across the room and stopping at the front row. "Rustem burned five motors and spent every Saturday since October learning what he can hear from the far side of a barn. Priya is down eighty and can tell you which paragraph she read wrong. You are up seventeen dollars, eight percent, and you are barely beating inflation."
 
 Chloe wipes the board and sits down.
+
+Iyad has more than figures. In February the thing he has about Chloe is a boy in the language block called Aurel, and he says it at the long table on a Tuesday in the middle of something else, as a thing everybody has known for a while. By the Thursday it has been said back to her twice.
+
+She has never heard the name in her life. She could go and find out which boy it is, and she does not, and by March people who have never spoken to her have it, and Odile asks her at breakfast whether it is true, and Chloe says no, and Odile says all right and asks it again in a different way in May. It is still going in the summer.
+
+She stops using the language-block stairs, which cost her a minute each way and which she has taken since her first year in the building.
 
 In the surgical block in March she ties her first suture and her hands do what she tells them, though it takes twice as long as the boy at the next table, so the instructor writes *steady* on her sheet and then the time beside it. Accountancy and taxation run that term, Hindi has more Sanskrit under it than she expected, and by June the topology book has been lying open at the same proof since Easter.
 
@@ -198,4 +204,6 @@ Her grandmother runs a thumb over all of it, taking her time, while the conversa
 
 "It's from school, and it's nearly gone. I made a mistake in class, and it looked worse than it was."
 
-Her grandmother turns the hand over once more, puts it down on the tablecloth, pats it twice, and asks her aunt where she got the ring.
+Her grandmother turns the hand over once more, puts it down on the tablecloth, and pats it twice.
+
+"Now then, where did you get that ring?" she says, up the table to her aunt.

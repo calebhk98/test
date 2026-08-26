@@ -4,7 +4,7 @@ A boy who wants very much to be part of whatever is happening, agrees with it
 loudly before he has finished hearing it, and carries other people's ideas away
 in perfect condition with the label fallen off.
 
-**Age span:** eight to twenty-one, and nine on the page | **MBTI:** ESFJ (a writing aid, not a claim) | **IQ:** the same tier as everybody he has been in a room with since he was eight, and he assumes he is somewhere near the bottom of them
+**Age span:** eight to twenty-one | **MBTI:** ESFJ (a writing aid, not a claim) | **IQ:** 161, which he has never thought about, and he assumes he is somewhere near the bottom of any room he is in
 
 ## The thing to get right first
 
@@ -12,7 +12,26 @@ in perfect condition with the label fallen off.
 attribution, entirely and every time, and by the second telling the idea has no
 origin attached to it at all. He would be appalled to learn how it lands, and
 nobody has ever told him, because telling him would require somebody to claim
-an idea out loud in a building where nobody does that.
+an idea out loud among people who do not do that.
+
+**He keeps the ledger, and the ledger is the weapon.** He holds what everybody
+is doing, what everybody scored, where everybody has got to, and whose turn is
+when, without ever having been asked to, and he gives it out unprompted, by
+name, in order, to whoever is sitting there. It is complete and it is correct
+and he never has a figure wrong, and that is exactly what makes it unanswerable
+when the figure he reaches, in the same voice as all the others, is the worst
+one somebody has. He experiences the reading-out as inclusion: everybody is in
+it, nobody is left off, and leaving somebody off is the only thing he would
+call unkind.
+
+**Some of what he distributes is not true, and he distributes it identically.**
+He does not sort the things he has heard about a person into checked and
+unchecked; he passes on a mark, a plan and a rumour with the same confidence and
+the same warmth, and he never returns to any of them. Because everything else
+he says about people is verifiable and right, the item that is wrong travels
+exactly as far and lasts exactly as long, and the person it is about cannot kill
+it, because a denial is what somebody would say anyway. This costs somebody
+years and costs him nothing, and he will never find out.
 
 **The loud agreement is a bid to be included rather than a verdict on what was
 said.** He agrees in order to be in the conversation. It arrives around the
@@ -86,6 +105,14 @@ arriving at the subject a second time. Once per idea; if he is ever shown doing
 it knowingly, or doing it to the same person twice in one evening as a move, he
 has become a different and much worse character.
 
+**The read-out.** He works down a list of people out loud, by name, in the
+order he wrote it, giving each person's figure or news or answer as he reaches
+them, and he does not slow down or soften at any name on it, because slowing
+down at a name would single somebody out. Triggered by his having a list and an
+audience, which is most evenings. Write the list as accurate throughout and
+write him enjoying it; the damage is done by the item he arrives at without
+noticing he has arrived anywhere.
+
 ## Would they say this?
 
 - YES if it opens with loud, unspecific agreement before the speaker has
@@ -127,6 +154,32 @@ whenever a scene needs him to be plainly good at something.
 **Two ways a writer gets him wrong:** playing the repetition as theft, and
 playing the agreement as flattery. He is doing neither and could not tell you
 he was doing anything.
+
+## Frustration and anger
+
+Frustration arrives in him as fussing. Held up, he does not push the obstacle:
+he goes round it by adding people, adding steps, and asking everybody how they
+are getting on, and the plan grows a layer every time it stalls until it is
+carrying more than the job needed. He will absorb a great deal of delay and
+inconvenience without complaining once, and what he cannot absorb is not
+knowing where somebody is, which produces a restlessness he cannot sit through
+and which gets other people up out of their chairs.
+
+He is angered by exclusion and by nothing else worth the name. Somebody left
+off a list, a group that made an arrangement without a person in it, a decision
+taken by whoever happened to be in the corridor: that turns him cold, and cold
+is the only anger he has, and it is not loud. It comes out as courtesy at a
+distance and a name he stops using for a while, and it is unmistakable and
+nobody, including him, will name it. Being contradicted, ignored, outworked or
+outranked does not touch him. Being told he got something wrong does not touch
+him either, because he agrees before he has understood the charge.
+
+He does not hold it long against a person and he holds it for years against a
+room. The worst version of him, which a writer should reach for rarely, is the
+one who has been left out of something and responds by arranging the next thing
+so thoroughly that nobody can be left out of it, and by telling everybody in
+the building what everybody else in it is doing, out of a warmth that has gone
+slightly hard at the edges.
 
 ## What he is good at, and what he is not
 
@@ -226,6 +279,9 @@ it was said in.
 **Blind spots:** he thinks he is quiet. He also thinks the reason he is invited
 everywhere is that he is useful, and he has never entertained the possibility
 that people simply like him, so he keeps paying a bill nobody is charging him.
+And he believes that saying a true thing about somebody to a table is the same
+kind of act as saying a kind thing about them, so it has never occurred to him
+that the accuracy is what does the damage.
 
 ## The small stuff
 
@@ -254,6 +310,10 @@ goodnight to whoever has a light on.
 - Notice which chair somebody usually sits in and keep it for them.
 - Sit up with somebody who cannot sleep and tell them nothing about himself.
 - Say what he actually thinks, hedged and doubled back on, to one person, late.
+- Read a list of names and figures out to a table, in order, without stopping
+  at the one it will hurt.
+- Repeat something he heard about a person as settled fact, warmly, months
+  after hearing it, without ever having checked it.
 - Count the group when something goes wrong.
 
 ## Would never
@@ -312,6 +372,17 @@ ideas to look clever, and it is produced by giving him any awareness at all of
 the transaction. The fix is that he is not tracking origin on anything,
 including his own ideas, which he also hands away.
 
+**The gossip.** The second failure mode is a boy who enjoys knowing a thing
+about somebody and enjoys being the person to say it. He takes no pleasure in
+that at all, and the material he passes on is overwhelmingly dull and
+overwhelmingly true. Write the untrue item exactly as he writes the true ones,
+with no relish anywhere near it, and it will land far harder than malice would.
+
+**The one who is confronted and learns.** He can be told, and the correct scene
+is that he agrees instantly, apologises past what the moment carries, is
+genuinely wretched about it, and has taken in nothing, because the agreeing
+arrived too fast to be understanding.
+
 ## Do not confuse with
 
 **Sam**, who also agrees fast and loudly. Sam agrees and then does the thing
@@ -334,4 +405,6 @@ yet.
   eight.
 - He and Chloe are bench partners in chemistry for a term at nine, and she
   would work with him again.
-- Appears in: chapters/12_nine.md.
+- He is the one who organises the cohort after they leave, by email and by
+  name, and he is still doing it years afterwards.
+- Appears in: chapters 12, 13, 16, 17, 18, 22, 23 and 24.

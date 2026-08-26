@@ -5,7 +5,23 @@ confidence: she organises the games, keeps her friends close, and names
 anything that does not fit the way she expects things to go, once, without
 heat.
 
-**Age span:** six to seven | **MBTI:** ESFJ (a writing aid, not a claim) | **IQ:** average, an ordinary bright child at an ordinary school
+**Age span:** six to seven | **MBTI:** ESFJ (a writing aid, not a claim) | **IQ:** 106, an ordinary bright child at an ordinary school
+
+## Type and number
+
+**Primary: ESFJ,** and it fits so exactly that the risk is writing the type instead of the
+child. She organises, she maintains the group, she knows the rules of the room and
+enforces them without any sense that enforcing is what she is doing, and she is genuinely
+warm to everyone inside the boundary she has drawn. The type she gets misread as is ESTJ,
+by adults who see only the enforcing; the separating cue is that she is doing it to keep
+everybody together rather than to make anything work properly, and she will drop a rule
+instantly if keeping it would cost her a friend.
+
+**IQ 106.** Ordinary, and this is the point of her. Her social reasoning runs a long way
+ahead of everything else she does: at six she can already tell you who is about to be left
+out, who is about to cry, and which adult will take which side, and all three predictions
+come in. Where she places lowest: anything requiring her to hold a rule she cannot see the
+purpose of, and any question with no socially correct answer available.
 
 ## The thing to get right first
 
@@ -187,6 +203,26 @@ a child would get in trouble for.
 She is warm and demonstrative with the friends she already has, and hugs them
 goodbye without being prompted.
 
+## Frustration and anger
+
+**What frustrates her:** somebody who will not take the correction. She has said the thing
+once, plainly, and they are still doing it, and she has nothing else in her repertoire.
+
+**The tell, before she says anything:** she says it again, shorter, and looks at whoever
+else is nearby to check that they heard it too.
+
+**What she does with it:** moves on, and takes the group with her. The group going with
+her is the whole mechanism and she would not be able to describe it.
+
+**What actually makes her angry:** being left out of something she organised. Not being
+beaten, not being told off, not being contradicted. Being outside a circle she drew.
+
+**Angry, she goes home.** She collects her things with great dignity, informs one person
+that she is going, and goes, and the informing is the important part.
+
+**How it ends:** by the next morning, entirely, with no reference to it at all, and she is
+mystified by children who are still carrying it.
+
 ## Interior life
 
 **Wants**, and has not said out loud: to keep being the one who decides what the
@@ -216,6 +252,29 @@ cannot do a cartwheel yet and minds more than she lets on. She keeps a jar of
 foreign coins from a family trip and likes sorting them by size. She loses hair
 ties constantly and does not notice until she needs one. She plays a matching
 game on her mother's phone in the car.
+
+## Life outside the work
+
+**She has a horse phase, a dinosaur phase and a police-officer phase,** each lasting about
+five months, each total while it lasts, and she is completely sincere in all three and
+would deny the earlier ones.
+
+**She writes lists of her friends in order** and revises the order, and would be horrified
+to be caught at it, and will do it again the same evening.
+
+**Sentimental about:** a blanket that is now a rag, kept in a drawer, discussed with
+nobody.
+
+**A free Saturday** is other children, all day, at somebody's house, and she is the one
+deciding what everybody is playing within ten minutes of arriving.
+
+**At eight** she is the child other parents ask to keep an eye on the little ones, and she
+is worth asking.
+
+**At forty** she runs the parents' association, knows everybody's business, is generous
+with all of it, and is the person a new family on the street is glad to meet. She has
+never once questioned the rules of any room she has been in, and it has cost her almost
+nothing, and she has no idea it has cost anybody else anything at all.
 
 ## Would do
 

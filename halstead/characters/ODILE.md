@@ -4,9 +4,43 @@ The most physically capable person in any room she is likely to be in, who has
 no way of knowing that, because everyone she trains beside all day is
 exceptional too.
 
-**Age span:** 11 to 21 | **MBTI:** ISFP (a writing aid, not a claim) | **IQ:** high enough to be admitted everywhere she applied, and she would put herself at a B plus
+**Age span:** 11 to 21 | **MBTI:** ISTP (a writing aid, not a claim) | **IQ:** 178, the highest figure attached to anybody in the book, and she would put herself at a B plus
 
 **Engine:** puts everything she feels into what her body is currently doing.
+
+## Type and number
+
+**Four readings, and no two of them matched.** Four people typed this cast separately,
+each asked to keep off everybody else's answers, and Odile is where they scattered
+furthest, which is itself information: she gives a reader very little to work with and
+they fill the gap from whichever behaviour they saw last.
+
+| reading | type | what that reader was looking at |
+| :-- | :-- | :-- |
+| first | ISTP | taciturn kinetic artist; physical perfectionism; hyper-competent and self-contained |
+| second | ISFP | quiet and intense, feels deeply, expresses none of it, shows it by protecting people |
+| third | ISTJ | steady, does not complain, four days out of five, pushes through because stopping means feeling it |
+| house, revised | ISTP | the first reading |
+
+**Primary: ISTP, changed from ISFP.** The revision matters and is worth stating. The
+feeling reading is true about her interior and wrong about her engine. What actually
+drives her is a hands-first analytical loop: she takes a physical problem apart by doing
+it, adjusts one variable, does it again, and arrives at an answer she could not have
+argued her way to. That is the thinker with tools, and it explains the things the feeling
+reading cannot — her total indifference to being watched, her comfort in a twenty-second
+silence, and why she leaves a room rather than finish an argument in it. The steady
+never-complaining reading is real and sits on top; it is discipline, and it came from the
+same eleven years everybody else here had.
+
+**IQ 178.** The highest number in the book. The shape of it: perceptual reasoning, spatial
+transformation and fluid reasoning are all at, or past, the top of the instruments used —
+she solves a rotation problem before the examiner has finished setting it out, and she
+would need a purpose-built test to have a ceiling at all. Working memory very high.
+Verbal comprehension is her comparative low by a wide margin, more than twenty points
+under her own performance indices, and it is the whole reason she reads to a stranger as
+ordinary and to a coach as impossible. Where she is comparatively weak: producing a
+spoken account of a physical judgement she has already made. She knows the answer. Asked
+to say how, she gives you the number and stops, and the room reads that as a shrug.
 
 ## The thing to get right first
 
@@ -180,6 +214,35 @@ requires, and bringing outside witnesses in to see it more than once.
 that stuck. She solos routes she has not been cleared for, trusting her own
 hands and feet on rock over being watched while she works something out.
 
+## Frustration and anger
+
+**What frustrates her:** a body that will not yet do the thing her eye has already worked
+out. She can see the movement complete and correct and her hands are three weeks behind
+it, and those three weeks are the only place she is ever genuinely miserable.
+
+**The tell, before she says anything:** her breathing changes and she stops answering.
+Not sulking and not pointed — the language layer simply switches off, and she will nod at
+a question and go on doing the thing.
+
+**What she does with it:** repetition. She takes it back to the beginning and does it
+again, and again, and the count is high enough that saying it out loud would embarrass
+her, so she does not say it out loud.
+
+**What actually makes her angry:** being helped when she did not ask. A hand on the rope,
+a hold pointed out, somebody finishing a thing for her because it was taking a while.
+Nothing else in her life produces the same reaction, and the people closest to her have
+learned it the hard way.
+
+**Angry, she leaves.** She walks out of the room mid-sentence, and the walking out is the
+entire event — no door slammed, no line delivered, no explanation offered to anybody. She
+is not making a point and would be genuinely puzzled to hear it read as one.
+
+**How it ends:** when she comes back, which she always does, at the next scheduled thing,
+on time, as though nothing occurred. She will never refer to it and expects nobody else
+to, and if somebody does refer to it she will answer the factual part of the question and
+nothing else. The repair, when she thinks one is owed, is physical and silent: she checks
+somebody's gear, or walks a sequence through with them again, within the hour.
+
 ## Stuck, bored, and wrong in public
 
 Short, because she is, and because she appears in few rooms. A task, a group and
@@ -347,11 +410,41 @@ training, usually hold a hair tie and nothing decorative. Money does not
 interest her much; she would rather spend a free hour moving than deciding what
 to buy. Her one small ritual is checking a knot or a strap twice before
 trusting it, even when she checked it a minute ago. Waiting for something to be
-over, a debrief, a meal, a queue, her fingers count against her leg in the
-rhythm of a clock she is no longer being timed by, one through ten and back to
-one, and nobody has ever caught her at it long enough to ask. On a phone she is
+over, a debrief, a meal, a queue, she rotates one wrist slowly through its full
+range, one direction and then the other, and nobody has ever caught her at it
+long enough to ask. On a phone she is
 fast and short and factual. First thing in the morning she is up before most
 people and already dressed for whatever is first.
+
+## Life outside the work
+
+**Rock.** Not the elective version — she goes out on real rock, further than she is
+supposed to and often alone, and comes back sunburnt and monosyllabic and better company
+than she was when she left. She has a route she has climbed forty times and will climb
+again rather than try a new one, because the fortieth time is where the interesting part
+is.
+
+**She sings in French** when she is sure nobody can hear her, badly and cheerfully, and
+would deny it under any pressure available.
+
+**Superstitious about one thing** and entirely rational about everything else: an order
+she puts her gear on in, and she knows it is nonsense, and she does it, and she has never
+once made an exception.
+
+**Sentimental about:** her younger brother, who thinks she is the most impressive person
+alive, and a scar on her hand she is proud of and will show anybody who asks, which is the
+only time she reliably volunteers a story.
+
+**A free Saturday** is on rock by six, home by two, asleep by nine, and if it rains she is
+unbearable for about an hour and then finds something heavy to move.
+
+**At eight** she broke her wrist and did not mention it for two days, and the reason was
+that mentioning it would have meant stopping.
+
+**At forty** she guides, professionally, and is the person clients remember for the rest
+of their lives without being able to reconstruct a single thing she said. She has the same
+scar and the same order for her gear. She talks marginally more, and only to people who
+have already been out with her a few times.
 
 ## Would do
 

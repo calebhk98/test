@@ -18,7 +18,9 @@ Afterward, Sam catches her at the bottom of the stairwell with his collar open a
 
 "It's a contract question about who carries the risk while the goods are sitting in a shed waiting to be collected: there's an answer, and there's why, and once you've said both of those you're just saying them again in nicer sentences with more paper under them." She keeps walking with her bag up on both shoulders, so the conversation keeps her pace or gives itself up at the end of the corridor. "After that you're padding, and the marker reads page after page of you agreeing with yourself for no extra credit at all, which is a bad trade for both of you."
 
-Sam goes quiet the whole length of the corridor, then says he would like to withdraw ten of his pages.
+Sam goes quiet the whole length of the corridor.
+
+"I'd like to withdraw ten of my pages."
 
 When the list goes up on the corkboard in the second floor corridor days later, the names run down the left in a bare institutional typeface, followed by a column of numerical marks, a column marked PASS or FAIL, then a column giving the distance of each mark above or below the line. Chloe reads her own row twice, once for the verdict and once for the margin.
 
@@ -38,7 +40,9 @@ Bex passed, and comes the length of that hall to find her before dinner, saying 
 
 "It's the margin, though, because as a share of the whole paper that's about a..."
 
-"A fiftieth. It's a fiftieth, Chloe." Bex has that right, and she has it out to the corridor rather than to Chloe, and then she is past her and on to the next person coming away from the board.
+"A fiftieth. It's a fiftieth, Chloe, and it's the closest miss on that board, and I've read the whole board." Bex has both of those right, and she has them out to the corridor rather than to Chloe, at the volume she says everything at, over the heads of the people still coming away from the board. Then she is past her and on to the next of them.
+
+Chloe stays where she is until the hall has thinned out. She had the fraction most of the way finished and had got as far as about a, and she goes over that again on the stairs, whether she had it or whether she was still working it, because Bex had the whole of it and had it fast.
 
 Later that week she takes her paper to Amberg, and he has the mark scheme out on the desk before she gets the door shut.
 
@@ -174,4 +178,6 @@ Chloe puts her heels up on the lower step and takes her time with that.
 
 "Because the boy in the room before her was going to get it otherwise, and she'd rather it went to Nadia than to him, even if that cost her something herself."
 
-Her father asks her what Priya and Nadia are like at a table together now, a question stopping her with the glass halfway up, and she is still answering when the sun goes off the garage roof and her mother turns the porch lamp on from the kitchen switch.
+"So what are Priya and Nadia like at a table together now?" her father says, and the question stops her with the glass halfway up.
+
+She is still answering when the sun goes off the garage roof and her mother turns the porch lamp on from the kitchen switch.

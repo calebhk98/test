@@ -140,6 +140,16 @@ He looks at her as if the question hadn't occurred to him before. "It's what the
 
 The MIT representative asks for the electronics and radio elective and spends most of a period watching a room of students build a working shortwave receiver out of a bag of parts, asking follow-up questions that all get short, exact answers back. Afterward he asks who taught it, how long the class took to reach a working set, and what they had built by the end of the first month, gets a straight answer to all three, and spends the walk back composing a fourth.
 
+At the visitors' table on the second evening the Caltech representative wants to know what a group project here looks like from the inside, and Bex gives him the long field, which she was never in a room for. She has all of it: the wire down the fence because the network would not hold half a millisecond, a thermometer at every post because the far end of that field is colder, the placing that took most of the error off the top end and arrived in April with the run already over. She has it in the order it happened and she does not get a part of it wrong.
+
+He asks who did the geometry.
+
+"That was me," Bex says. "And I'd start off it next time instead of finishing on it."
+
+Chloe is a few seats down with a plate in front of her. The representative writes it into the notebook he has had out since Monday, then asks Bex what she would do differently, and Bex tells him, and what she tells him is what is written on the back of the April drawing.
+
+The drawing lives in a folder Nadia keeps. Chloe gets it out that evening and reads her own working off it, looking for the Thursday she carried it in to breakfast, and whether Bex was at that table, and Bex was at that table, and at that point Chloe was still saying the thing out loud instead of putting her name on the front of a page.
+
 A rep corners Chloe in the library on a Wednesday and asks, pleasantly, what a typical day is like, and she tells him: five classes before lunch, two block periods after it for whatever she's carrying that term, another few before dinner, then prep, dinner, and watch on the nights she has it. He asks what watch is, and she walks him through it as a fire drill: who takes which corridor, how the count works, what happens if somebody misses a call-in. Then he asks her to say the part about the scoring again.
 
 Another asks Sam what he's good at, expecting a list with hedging in it.

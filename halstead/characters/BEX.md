@@ -4,14 +4,31 @@ A fast, warm, loud girl who arrives at the end of your sentence before you do
 and says it for you, and who has spent her whole life being thanked for it by
 people who were glad of the help and never once by the person she took it from.
 
-**Age span:** eight to twenty-one, and nine to eighteen on the page | **MBTI:** ENFP (a writing aid, not a claim) | **IQ:** the same tier as the ninety people she has been ranked against since she was eight, and she would place herself somewhere in the middle of them
+**Age span:** eight to twenty-one | **MBTI:** ENFP (a writing aid, not a claim) | **IQ:** 163, which is ordinary in the only population that has ever measured her, and she would place herself in the middle of it
 
 ## The thing to get right first
 
-**She is not competing with anybody.** The overlap is a mechanism rather than a
-manoeuvre: she is running ahead of the speaker, she has arrived at the ending,
-and holding it costs her more than saying it does. The ending she supplies is
-usually the one that was coming, and that is the part that stings.
+**She is not competing with anybody, and what she does costs the other person
+everything anyway.** Both halves are load-bearing and a writer has to hold them
+at once. She runs ahead of the speaker, arrives at the ending, and holding it
+costs her more than saying it does. Then, later, when the account of a piece of
+work is asked for by anybody who matters, she gives it, whole, and the version
+the room keeps afterwards is hers, in the first person, and the person whose
+work it was is standing there while it happens.
+
+**She is fast enough to do it well, and that is the injury.** She can rebuild a
+fortnight of somebody else's thinking off a single evening of hearing them work
+it out aloud, in order, with nothing in it wrong, and hand it to a teacher, a
+committee or a stranger who wanted to know. Nothing she says is inaccurate, so
+there is nothing in it anybody can correct. The only correction available is
+the ownership, and claiming ownership out loud is a thing that is not done
+among the people she does this to, which is why it has never once been said to
+her.
+
+**She reads the room's mistakes out loud too.** She will say what a person got
+wrong, accurately, in front of the people who watched them get it wrong, and
+she means it as usefully as she means everything else, and it arrives at the
+moment it costs most because that is the moment the subject is up.
 
 **She is liked, and she should be.** She is the person who gets a stalled table
 moving, who remembers what everybody is working on, who notices the person
@@ -87,6 +104,13 @@ Frequent enough to be a fact about her, and the moment it happens twice in one
 exchange it stops reading as her and starts reading as spite, which is a
 different person.
 
+**The assembled account.** The larger version of the same move. Somebody with
+standing asks how a thing was done, and she delivers the whole of it, in the
+order it happened, accurate throughout, answering the follow-up questions
+herself. Triggered by a question addressed to a group rather than to a person.
+Write her giving it gladly and write her getting it right; the harm is entirely
+in who else is within earshot and cannot say anything.
+
 ## Would they say this?
 
 - YES if it begins by repeating the last word the previous speaker got out.
@@ -126,6 +150,33 @@ sensible.
 
 **Two ways a writer gets her wrong:** playing the interruption as showing off,
 and giving her a moment of insight into it. She has neither.
+
+## Frustration and anger
+
+Frustration in her is motion. Blocked, she does not sit in it: she reorders the
+plan, tries a different door, brings in a third person, and does all of that
+out loud, so a room knows she is stuck within seconds of her knowing it. She
+cannot hold a difficulty privately for even a minute. The by-product is that a
+small problem of hers becomes everybody's problem instantly, and she would be
+mortified to be shown that, and she cannot see it while it is happening.
+
+What actually angers her is somebody being left out, and it does not have to be
+her. A person cut out of a plan, a name missed off a list, a table that closed
+before the last chair filled: that is what takes her voice down instead of up,
+and it is the only condition in which she is quiet, slow, and immovable. Second
+to that is being handled, having a thing settled about her in a corridor by
+people who thought it would be smoother that way. Being contradicted, corrected,
+beaten or laughed at does not anger her at all, and a writer reaching for those
+has written somebody else.
+
+The anger itself has a short fuse and a shorter life. She says the whole of it
+at the volume she says everything at, to the face of whoever it is about, and
+then it is over and she wants to eat. She is incapable of being angry with a
+person without telling them, and equally incapable of staying angry once she
+has. The single thing that lands on her and stays is being told twice in one
+evening that she talked over somebody, and it does not come out as anger; it
+comes out as a silence for the rest of the night that costs her far more than
+it costs anybody else in the room.
 
 ## What she is good at, and what she is not
 
@@ -222,7 +273,11 @@ getting everybody in one room with food in front of them.
 
 **Blind spots:** she thinks she is a good listener, on the evidence that she
 remembers everything anybody tells her, which she does. She also assumes that
-because nobody has ever complained, nobody has ever minded.
+because nobody has ever complained, nobody has ever minded. The deepest of them
+is that she cannot tell the difference between having understood a thing and
+having been the person who worked it out, and the second belief arrives a few
+minutes behind the first, every time, and she would fail a lie detector on it
+because she is not lying.
 
 ## The small stuff
 
@@ -248,6 +303,10 @@ loses it every morning and writes it again.
 - Announce her own mistake at volume and then ask for the working.
 - Build a plan aloud, revise it three times, and still be adjusting it after
   everybody has agreed.
+- Give an outsider the full account of a piece of work she watched somebody
+  else do, correctly, in the first person, and take the follow-up questions.
+- Say what a person got wrong, in front of the people who saw it, meaning it
+  helpfully.
 - Remember what somebody was worried about a month ago and ask about it.
 - Turn up early to everything, including things she was not invited to.
 - Eat off a friend's plate and push her own across in the same movement.
@@ -305,6 +364,18 @@ doing it, and it is produced by writing the overlap as a choice. The fix is to
 write the ending she supplies as accurate and offered as help, and to keep her
 plainly, visibly liked by the room she is doing it in.
 
+**The schemer.** The second failure mode is a girl who works out in advance
+which account is worth taking and positions herself to give it. She does no
+such thing and never has; she answers a question that was asked, at speed,
+because answering questions at speed is what she is for. Any line that shows
+her choosing the moment, checking whether the other person is in the room, or
+enjoying the transfer has broken her.
+
+**The reformed one.** She does not learn this. A version of her who catches
+herself, hands the credit back, and adjusts is a different and much less useful
+person. She apologises sincerely and completely whenever anybody says the words
+out loud, and almost nobody ever does.
+
 ## Do not confuse with
 
 **Ruth**, who also arrives before you have finished. Ruth arrives with a
@@ -328,4 +399,6 @@ volume on purpose because she thinks the room needs it.
   holds nineteen pounds and comes down a plank at a time.
 - She applies to a university in Vermont on a cousin's account of the food, and
   she graduates with the rest of the cohort.
-- Appears in: chapters/12_nine.md and chapters/21_the_applications.md.
+- She passes the bar examination the year the cohort first sits it; Chloe does
+  not, and retakes it.
+- Appears in: chapters 12, 13, 14, 16, 17, 19, 21 and 23.

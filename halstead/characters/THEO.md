@@ -5,9 +5,36 @@ true and uncomfortable meaning even when he would rather not have found it, and
 who was raised by two people fifty years older than him in a way that is
 audible in every sentence he builds.
 
-**Age span:** 11 or 12 through 21 | **MBTI:** ISFJ (a writing aid, not a claim) | **IQ:** well into genius range by any outside measure, and unremarkable in the only room that has ever measured him
+**Age span:** 11 or 12 through 21 | **MBTI:** ISFJ (a writing aid, not a claim) | **IQ:** 171, and if told the figure he would ask which instrument and how old the norms were
 
 **Engine:** carries a thing alone rather than hand any part of it to somebody else.
+
+## Type and number
+
+**Four readings, three of them agreed.** Four people typed this cast separately, each
+asked to keep off everybody else's answers.
+
+| reading | type | what that reader was looking at |
+| :-- | :-- | :-- |
+| first | ISFJ | meticulous loyal anchor; internalised duty; silence as the whole coping method |
+| second | ISTJ | the routine, the immaculate notes, the cautious methodical surface |
+| third | ISFJ | keeps the photograph in the drawer, reads the file, tells nobody, carries it |
+| house | ISFJ | the same |
+
+**Primary: ISFJ.** The ISTJ reading is looking at the same behaviour from further away.
+The separating test is what he does with a thing he cannot put down: a duty-and-order
+temperament files it and is finished, and he carries it, indefinitely, at cost, because
+handing any part of it to somebody else would mean somebody else was carrying it. The
+routine is not the value. The routine is what he uses instead of putting the thing down.
+
+**IQ 171.** The shape of it: verbal comprehension is the highest single index anybody in
+the building has posted, and reading comprehension in particular is off the scale — he
+takes the true meaning out of a document faster and more completely than adults trained
+to do it for a living. Fluid reasoning very high. Processing speed is the lowest of the
+ten, comfortably, and costs him nothing at all because he starts everything early and has
+never in his life been the person handing something in at the deadline. Where he is
+comparatively weak: any task assessed on how fast he commits with incomplete information,
+which he will do, and will get right, and will then spend eight days revisiting.
 
 ## The thing to get right first: what he does with a thing he cannot say
 
@@ -224,6 +251,35 @@ always spot in somebody else's writing.
 **Secretly proud of:** the class taught breaking-first, the one place his kind
 of reading gets treated as a strength rather than as a thing he has to narrate.
 
+## Frustration and anger
+
+**What frustrates him:** being made to hand over something half-finished because the
+schedule says so. Not the deadline itself, which he respects and beats. The handover of an
+object he can still see the flaws in, with his name on it.
+
+**The tell, before he says anything:** he takes his glasses off and does not put them back
+on, which leaves him unable to read the thing in front of him, and he stays like that. He
+also stops asking permission before he disagrees, and everyone who knows him hears the
+missing preface before they hear the sentence.
+
+**What he does with it:** redoes the whole thing on his own time and never mentions that
+there was a first version. Nobody ever finds out what the schedule cost him, which is
+exactly how he wants it and is also the reason nobody protects him from it.
+
+**What actually makes him angry:** somebody treating a person as a category. A file, a
+cohort, a case number, a type of student. He can watch cruelty and stay procedural. He
+cannot watch a person being processed.
+
+**Angry, every hedge comes off at once.** That is the event: his entire vocabulary changes
+in one sentence. The qualifiers, the permission-asking, the procedural framing all go, and
+what is left is short and unmistakably his and lands on a room like a chair falling over.
+It happens perhaps twice a year and nobody who was present forgets it.
+
+**How it ends:** slowly, and privately, and not for at least eight days. He composes what
+he should have said, revises it, and never delivers any version of it. What actually
+closes it is not an apology in either direction — it is a small unrequested act of upkeep
+performed for the person involved, which he would refuse to have called a peace offering.
+
 ## Stuck, bored, and wrong in public
 
 None of it needs a school: a task, a group, and somebody in charge.
@@ -408,6 +464,33 @@ the morning he makes the bed.
 
 He keeps a photograph of the people he grew up with that he has never shown any
 of them.
+
+## Life outside the work
+
+**Bees,** already, and they matter more than the sheet has said. Six years of weekly
+hours alone in a veil, and the reason is that a hive cannot be hurried, cannot be
+persuaded, and does not care what he intended. He gives the honey away in unlabelled jars
+and is embarrassed when thanked.
+
+**He is genuinely funny in writing and almost never out loud.** Long dry letters, built
+with real comic architecture, sent to people who then meet him and cannot square the two.
+He knows this and has decided it is fine.
+
+**History of dull things.** Shipping registers, tide tables, the administration of small
+harbours. He reads it for pleasure and would defend it as pleasure, and this is the one
+subject where he will talk past the point where the other person's interest ran out.
+
+**Sentimental about:** a formal manner two generations older than he is, which he knows
+is out of date and has no intention of updating, because it came from two people who are
+still alive and will not always be.
+
+**At eight** he folded his own clothes and lined up his shoes, and no adult asked him to,
+and he was mildly troubled by other children who did not.
+
+**At forty** he is the friend everybody's parents like on sight and everybody's children
+tell things to. He still cannot ask for anything. He has learned to accept a thing offered
+without three rounds of refusal, and it took him until his thirties, and he counts it as
+the hardest thing he has done.
 
 ## Would do
 
