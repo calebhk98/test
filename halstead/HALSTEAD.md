@@ -1929,7 +1929,7 @@ Her mother starts on the school in October, every week, on the phone first and t
 
 At the counter, with her back to the room and Chloe at the table behind her, she says the words in writing twice in one sentence.
 
-Then on a Tuesday she comes up and sits on the end of Chloe's bed with her coat still on and lays it all out in order, the way she does with a thing she has already decided about.
+Then on a Tuesday she comes up and sits on the end of Chloe's bed with her coat still on and lays it all out in order.
 
 There is a program in the building. It is one hour, on a Thursday, with a woman called Mrs. Prahl who covers five different buildings in a week. The office says that Mrs. Prahl is wonderful, that the children adore her, that it is a lovely program.
 
@@ -2351,7 +2351,7 @@ Kavi has his shoes off and is holding them by the heels. "Owen wanted to stay, a
 
 "Then I don't understand what actually happened to him, if being behind was a separate thing entirely."
 
-"His mom came. That's the whole of it. It was the whole of it in April as well, at the trays, while I was standing right there," Kavi says, looking down at her from the stairs.
+"You already have all of it, Chloe, because his mom came and that was the whole of it. You keep asking about this, and you asked Ruth in April, at the trays, while I was standing right there," Kavi says, looking down at her from the stairs.
 
 Her mother calls on Sundays, on the first-floor alcove phone with a chair beside it and people waiting in the corridor. The first Sunday runs fifty minutes, but the fourth runs twenty, because most of what she has takes a while to set up before it goes anywhere, and somebody behind her shifts their weight the whole time.
 
@@ -3626,7 +3626,7 @@ Marek is at every session and reads everything she gives him, so in the fourth w
 
 "Why, though?" He stays where he is, the sheet under his hand.
 
-"Because that's what the hour is for, and I need something with your name on it at the end of the year, like everyone else."
+"Because that's what the hour is for, Marek, and I need something with your name on it at the end of the year, like everyone else."
 
 The words come out ahead of the thought before she has finished, hands already moving, an apology thrown in for her ruler, which he still has not given back. "Copying it out afterwards is a receipt for something I've already done, though, and a receipt is a different object from work. You want the receipt so somebody can look at a page and see I did it. Ask me anything off that sheet and I'll prove it without the paper."
 
@@ -3642,7 +3642,7 @@ In January she gives him a problem out of the following year's material that he 
 
 The timetable goes down in front of her, and he leans in over it instead of back, already talking before she can say anything else. "There is no sheet. You asked me for a problem and I brought you back the problem, solved. That's the problem, in full. Not a piece of paper with your marks on the corner."
 
-"I can't take this in pencil on the back of Ivy's Tuesday. I need your name on it."
+"I can't take this in pencil on the back of Ivy's Tuesday, Marek, I need your name on it."
 
 Papers slide off his knee, and he is out of the chair after them, still talking, sorry about the papers too. "Then take it in pencil on the back of Ivy's Tuesday and write down that I did it. You know I did it. You watched me fail at it last week, but you watched me do it just now."
 
@@ -4701,7 +4701,7 @@ Kavi finishes in twenty minutes, exactly one word over, and submits it unread.
 
 Odile's runs five pages, and Chloe tells her it is many times the limit.
 
-"A limit's a minimum," Odile says, without coming off the bed. "They want more."
+"A limit like that is a minimum," Odile says, without coming off the bed. "Every teacher in this building takes more than they asked for and thanks you for it."
 
 It goes in as it is.
 
@@ -5155,7 +5155,7 @@ ________________
 
 Her mother knows this campus, having come to it since the beginning, and knows where the good parking is, knows Ruth's mother by name, and knows to bring a jacket because it's colder up here.
 
-Before the ceremony even starts she finds Ruth's mother in the crowd. They fall into the easy back-and-forth they've had every year for over a decade: a supplier problem on one side, a school form still open on the other. "Is he settled on a roommate yet?" Ruth's mother asks, her own younger child starting at Halstead that September. "Any day now, and he's already looking at rooms. He's got a list of them," Meg says. Ruth's mother, who has forgotten her own jacket every year since the first, takes Meg's spare straight out of her hands. "You'll catch your death," Meg says, as she does every June. A decade and more of parking in the overflow lot, but each of them still only knows the other from a folding chair.
+Before the ceremony even starts she finds Ruth's mother in the crowd. They fall into the easy back-and-forth they've had every year for over a decade: a supplier problem on one side, a school form still open on the other. "Is he settled on a roommate yet?" Ruth's mother asks, her own younger child starting at Halstead that September. "Any day now, and he's already looking at rooms. He's got a list of them," Meg says. Ruth's mother, who has forgotten her own jacket every year since the first, takes Meg's spare straight out of her hands. "You'll catch your death," Meg says. A decade and more of parking in the overflow lot, but each of them still only knows the other from a folding chair.
 
 A few rows over, Dave strikes up a conversation with the stranger next to him about the stage, admiring rather than worried, working out loud that whoever spec'd the bracing built in more margin than the thing will ever need. "Somebody had fun with this," Dave says, nodding at the joists. The stranger has clearly done that arithmetic already, unprompted, cross-bracing, dead load, a margin that makes more sense for a bridge than a stage, and it takes them most of the conversation to work out that he's a physics professor, Kavi's father. Behind them, a staff member in a school polo folds up a spare table and answers Dave's question about parking on her way past, still moving.
 
@@ -5275,7 +5275,7 @@ Between the middle of May and the second week of June she asks sixty-one employe
 
 Theo goes into the federal government as an analyst, having been interviewed repeatedly and having answered every question completely. The photograph from the grass lives in the drawer of his desk at work, where anyone who asks about it would have to already know to look.
 
-Kavi stays, and says so plainly when anyone asks, as he says anything else that's already settled.
+Kavi stays, and says so plainly when anyone asks.
 
 Priya takes two years and goes to South America with a bag. There's no return flight booked and no address arranged yet, just spare clothes, a headlamp, and a folded list of every ranch and stable between Patagonia and the Argentine pampas that answered her letters over the spring.
 
@@ -7567,7 +7567,7 @@ ________________
 
 It happens twice more in six weeks.
 
-None of it changes anything else about the weeks in between. Eli still clocks in every weekday at the job that pays him and keeps whatever he writes after hours strictly separate from it. Ruth finishes a contract of her own, unrelated to any of them, then spends days on one that touches all of them directly. Her phone still gets picked up at two in the morning most nights, as it has for over a year now, an old habit carrying a new reason, indistinguishable to anyone watching from the reason it used to have. Kavi teaches a summer intensive to the current cohort of thirteens the week the second lands, and stands in front of a whiteboard explaining a cipher he's explained before without once losing the thread of what's sitting unresolved on his own desk. Theo reads through his ordinary summer stack of files as he always does, checking each against its source before he repeats anything from it. Sam is somewhere hot and far away, on a schedule that doesn't much care what month the calendar says it is. The whole exchange reaches him most of a day late, along with most of what the group sends him that summer.
+None of it changes anything else about the weeks in between. Eli still clocks in every weekday at the job that pays him and keeps whatever he writes after hours strictly separate from it. Ruth finishes a contract of her own, unrelated to any of them, then spends days on one that touches all of them directly. Her phone still gets picked up at two in the morning most nights, as it has for over a year now, an old habit carrying a new reason, indistinguishable to anyone watching from the reason it used to have. Kavi teaches a summer intensive to the current cohort of thirteens the week the second lands, and stands in front of a whiteboard explaining a cipher he's explained before without once losing the thread of what's sitting unresolved on his own desk. Theo reads through his ordinary summer stack of files, checking each against its source before he repeats anything from it. Sam is somewhere hot and far away, on a schedule that doesn't much care what month the calendar says it is. The whole exchange reaches him most of a day late, along with most of what the group sends him that summer.
 
 The second time is the second Tuesday of July. Because he's stopped trusting the watcher's own schedule, Kavi has it flagged inside two minutes this time, polling the tool on his own clock instead of waiting on it. Nine minutes again, to the second this time, which reads worse than a different number would have: different would say clumsy, but the identical number twice says measured. The timestamps go into a document only he can reach, June against the first July date against the second. The gap between the first pair runs to over a month, but the gap between the second runs to less than a fortnight. Neither interval offers a pattern he can make argue for anything. That too, he writes down. A negative result is still a result.
 

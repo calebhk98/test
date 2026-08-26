@@ -414,8 +414,9 @@ class Tee:
         self.lines.extend(out.split("\n"))
 
 
-# A measure has failed if one of these appears on its line. Each script says
-# so in its own words, which is why this is a list rather than one pattern.
+# A measure has failed if one of these appears on its line, and passed if one
+# of the PASS_MARKERS does. Each script says so in its own words, which is why
+# these are lists rather than one pattern. Anything matching neither is prose.
 FAIL_MARKERS = (
     r"\bFAIL\b",
     r":\s*(?:UNDER|OVER)\b",
@@ -425,16 +426,30 @@ FAIL_MARKERS = (
     r"[1-9]\d* not found in the manuscript",
     r"^\s*[1-9]\d* flagged across",
     r"\bover corpus max\b",
-    r"\bof \d+ still over target",
 )
 
-SKIP = (r"^\s*0 problem", r"^\s*0 flagged", r"0 not found")
+PASS_MARKERS = (
+    r"\bpass\b",
+    r"\bok\s*$",
+    r"\bok\s{2,}",
+    r"^\s*0 problem\(s\)",
+    r"^\s*0 flagged across",
+    r"0 quotations checked, 0 not found",
+    r"^\s*none$",
+)
+
+SKIP = (r"^\s*0 problem", r"^\s*0 flagged", r"0 not found", r"still over target")
 
 
 def scorecard(seen):
-    """One list of everything that did not pass, so nothing hides in 500 lines."""
-    rule("SCORECARD: WHAT IS STILL PASSING, AND WHAT IS NOT")
-    bad, context = [], ""
+    """What passed, what did not, and the ratio.
+
+    The author, on an earlier version that printed only the failures: "Seeing
+    only you failed 5 metrics, when there are 300, hides that you passed 295."
+    A hundred per cent was never the goal; ninety to ninety-five is.
+    """
+    rule("SCORECARD")
+    bad, good, context = [], 0, ""
     for line in seen:
         s = line.rstrip()
         if not s.strip():
@@ -442,20 +457,27 @@ def scorecard(seen):
         if re.match(r"^\d+\. [A-Z]", s.strip()):
             context = s.strip()
             continue
-        if any(re.search(p, s) for p in SKIP):
-            continue
-        if any(re.search(p, s) for p in FAIL_MARKERS):
+        if any(re.search(p, s) for p in FAIL_MARKERS) and \
+                not any(re.search(p, s) for p in SKIP):
             bad.append((context, s.strip()))
+        elif any(re.search(p, s, re.I) for p in PASS_MARKERS):
+            good += 1
+
+    total = good + len(bad)
+    if total:
+        print(f"\n  {good} of {total} measures passing "
+              f"({100 * good / total:.0f}%)\n")
     if not bad:
-        print("\n  nothing failing.\n")
+        print("  nothing failing.\n")
         return
+    print(f"  the {len(bad)} not passing:\n")
     last = None
     for ctx, line in bad:
         if ctx != last:
-            print(f"\n  {ctx or 'unsectioned'}")
+            print(f"    {ctx or 'unsectioned'}")
             last = ctx
-        print(f"    {line}")
-    print(f"\n  {len(bad)} measures not passing.\n")
+        print(f"      {line}")
+    print()
 
 
 def main():

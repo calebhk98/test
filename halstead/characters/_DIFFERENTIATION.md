@@ -286,21 +286,46 @@ themselves. What each one does instead is now different in every case.
 The convergence audit found the same handful of adjectives doing the characterising work
 on most of the sheets: **flat** on nine of the ten, **quiet** on eight, **plain** and
 **direct** on eight each. An adjective on six sheets tells a writer nothing about any of
-the six. The register word is now assigned and exclusive, and if one of them turns up on
-somebody else's sheet it should be cut there rather than added here.
+the six.
 
-| register word | owner | why it is theirs |
+**Two corrections from the author, both of which this table previously got wrong.**
+
+**A signature is characteristic, not exclusive.** The earlier version of this table said
+each habit was owned, and that if it turned up on anybody else's sheet it should be cut
+there. That is not what a signature is. Ruth drops a name into the middle of a correction
+constantly, and that is what makes it hers; it does not stop Chloe or Kavi doing it once.
+An agent acting on the exclusive reading went and rewrote other people's perfectly good
+lines to get the habit out of their mouths, which cost the book more than the overlap did.
+What distinguishes these people is **how often** and **when**, not a monopoly.
+
+**No sheet may characterise a person as bare, cold, clinical, logical, detached or
+affectless.** Those words are not descriptions, they are instructions, and an agent given
+one will strip the character down until nothing is left. The author, on the damage this
+did to Odile:
+
+> Odile gets a single line, and that is attacked by the agents. Not only that, but it made
+> her flaw too obvious. Before she was comparing the target to her teachers, saying
+> teachers always wanted more, so that the limit is likely referring to a target. Now she
+> says a limit means a minimum, which is just wrong and any third grader would know that
+> is false. The first method is a flaw because of her upbringing. The second and current
+> method from shortening her is a logical falsehood.
+
+Her sheet said her register was **bare**. An agent read that, cut her one memorable line to
+four words, and turned a character flaw grown out of eleven years inside one building into
+an error of basic reasoning. **Describe the habit, never the temperature.**
+
+| the habit | whose it mostly is | what it is |
 | :-- | :-- | :-- |
-| flat | Nadia | one delivery for every content, which is the whole of her sheet's first section |
-| level | Kavi | the same temperature for a fault report and a bereavement |
-| bare | Odile | a number with no sentence built around it |
-| loud | Ruth | the thing a room notices first, and it runs the wrong way from most people's |
-| unbothered | Sam | publicly incapable at zero cost |
-| unhedged | Theo | he is the only one who hedges, so dropping them is his event |
-| straight-faced | Eli | the joke is the register, not a decoration on it |
-| run-on | Priya | the only one who does not stop at the first complete thought |
-| literal | Fen | the practical fact first and the feeling about it second and shorter |
-| unmoderated | Chloe | no small setting on anything, in either direction |
+| decides out loud | Nadia | says what she is about to do before she does it, then does it |
+| narrates the mechanism | Kavi | tells you how the thing works while his hands are still in it |
+| answers with the figure | Odile | asked how long or how far, she gives the number, then asks you something back |
+| the name in the middle | Ruth | drops the person's name into the middle of the correction |
+| volunteers the failure | Sam | gets his own incompetence on the table before anybody else can |
+| hedges, and then does not | Theo | the only one who hedges at all, so dropping it is the event |
+| jokes without smiling | Eli | the joke is the register, not a decoration on it |
+| past the first full stop | Priya | the only one who does not stop at the first complete thought |
+| the fact, then the feeling | Fen | practical thing first, what she feels about it second and shorter |
+| no small setting | Chloe | full size in either direction, with nothing in between |
 
 The Halstead staff sheets are the deliberate exception. A teacher's correction being flat
 and uncushioned is an institutional rule stated in the index and in `_CALIBRATION.md`,

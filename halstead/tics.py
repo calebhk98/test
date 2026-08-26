@@ -34,6 +34,7 @@ NUMBER_TARGET = {
     "fifteen": 14.5, "forty": 30.0,
 }
 TARGETS = {
+    "habit stated for the reader": 0.0,
 
     "the word 'same'": 125.0,
     "sentence opens She/He + verb": 120.0,
@@ -52,6 +53,17 @@ TARGETS = {
 }
 
 PATTERNS = {
+    # The author, on "He says it the way he says everything": this is done
+    # constantly, for different people for different actions, and it is talking
+    # to the reader. It tells you an action is characteristic instead of letting
+    # the repetition do it. Target 0: there is no good instance of it.
+    "habit stated for the reader":
+        r"\b(?:the way|as)\s+(?:he|she|they)\s+"
+        r"(?:(?:always|normally|usually|invariably|generally)\s+\w+"
+        r"|(?:says?|said|does?|did|answers?|handles?|takes?|reads?)\s+"
+        r"(?:everything|anything|it all|all of it|every\s+\w+|each\s+\w+)"
+        r"|does\s+with\b)",
+
     "hedged exact (about N)": r"\babout (?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty|thirty|forty|fifty|a hundred)\b",
     "hand(s) flat":          r"\bhands? (?:flat|pressed flat)\b|\bflat on the (?:table|counter|desk|bench|wall|floor)\b",
     "the word 'flat'":       r"\bflat(?:ly)?\b",

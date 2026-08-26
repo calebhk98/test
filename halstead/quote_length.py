@@ -30,6 +30,27 @@ CORPUS_DIRS = [
 TARGET_MEAN = 1.60
 TARGET_THREE_PLUS = 11.0
 
+# Sentences per quotation alone can be gamed, and the author said so before it
+# happened: "some agents may try to cheat by doing like 'Hi. I am Sam. What's
+# your name?', which is 3 sentences, but way too simplistic per sentence."
+# Words per quotation is the guard. Measured against the same 22 reference
+# books, and the finding is not the one you would expect.
+#
+#                     mean  median   CV%   <=4 words   >=30 words
+#   corpus median     14.7       6   227       42.6%        12.3%
+#   corpus lowest CV   6.9       5   111 (Peter Pan)
+#   Halstead          17.6      13    95       19.4%        18.4%
+#
+# The mean is fine. The VARIANCE is not: at CV 95% the book is below every one
+# of the 22, including the flattest. Almost every line is a medium-length
+# considered utterance. What is missing is the short reply: a fifth of this
+# book's quotations are four words or under against a corpus median of well
+# over two fifths. The fix is not longer speeches, it is a wider spread, and
+# "No. Absolutely not." is as much a part of that as a paragraph about horses.
+TARGET_WORD_MEAN = (12.0, 25.0)
+TARGET_WORD_CV = 150.0
+TARGET_SHORT_SHARE = 30.0
+
 
 def quotations(text):
     text = re.sub(r"(?m)^#.*$", "", text)
@@ -43,14 +64,23 @@ def sentences(quote):
 
 
 def profile(text):
-    counts = [sentences(q) for q in quotations(text)]
+    qs = quotations(text)
+    counts = [sentences(q) for q in qs]
     if not counts:
         return None
+    wl = [len(re.findall(r"[A-Za-z']+", q)) for q in qs]
+    mean_w = sum(wl) / len(wl)
+    sd = statistics.stdev(wl) if len(wl) > 1 else 0.0
     return {
         "quotes": len(counts),
         "mean": sum(counts) / len(counts),
         "one": sum(1 for c in counts if c == 1) / len(counts) * 100,
         "three": sum(1 for c in counts if c >= 3) / len(counts) * 100,
+        "wmean": mean_w,
+        "wmed": statistics.median(wl),
+        "wcv": 100 * sd / mean_w if mean_w else 0.0,
+        "short": sum(1 for v in wl if v <= 4) / len(wl) * 100,
+        "long": sum(1 for v in wl if v >= 30) / len(wl) * 100,
     }
 
 
@@ -101,8 +131,26 @@ def main():
               f"{med_three:>7.1f}   ({len(ref)} books)")
         print(f"  {'corpus low  ' + lo[0]:<26}{'':>7}{lo[1]['mean']:>7.2f}")
         print(f"  {'corpus high ' + hi[0]:<26}{'':>7}{hi[1]['mean']:>7.2f}")
-    print(f"\n  target mean {TARGET_MEAN}, target 3+ {TARGET_THREE_PLUS}%: "
-          f"{'ok' if book['mean'] >= TARGET_MEAN else 'UNDER'}\n")
+    print(f"\n  sentences per quotation: target mean {TARGET_MEAN}, "
+          f"target 3+ {TARGET_THREE_PLUS}%: "
+          f"{'ok' if book['mean'] >= TARGET_MEAN else 'UNDER'}")
+
+    lo, hi = TARGET_WORD_MEAN
+    print("\n  words per quotation, which is what stops a long turn being four "
+          "short ones")
+    print(f"    {'mean':<22}{book['wmean']:>7.1f}   corpus median 14.7   "
+          f"target {lo}-{hi}   "
+          f"{'ok' if lo <= book['wmean'] <= hi else 'FAIL'}")
+    print(f"    {'median':<22}{book['wmed']:>7.0f}   corpus median 6")
+    print(f"    {'variation (CV %)':<22}{book['wcv']:>7.0f}   corpus median 227   "
+          f"target over {TARGET_WORD_CV:.0f}   "
+          f"{'ok' if book['wcv'] >= TARGET_WORD_CV else 'FAIL'}")
+    print(f"    {'4 words or under':<22}{book['short']:>7.1f}%  corpus median 42.6  "
+          f"target over {TARGET_SHORT_SHARE:.0f}%  "
+          f"{'ok' if book['short'] >= TARGET_SHORT_SHARE else 'FAIL'}")
+    print(f"    {'30 words or over':<22}{book['long']:>7.1f}%  corpus median 12.3")
+    print("\n  A high CV is the goal, not a high mean. Some people say four words")
+    print("  and some say a paragraph, and the same person does both.\n")
 
 
 if __name__ == "__main__":
