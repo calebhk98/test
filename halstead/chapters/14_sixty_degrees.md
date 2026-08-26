@@ -76,6 +76,10 @@ On the first morning of the year Ruth wants to know what everybody has got, and 
 
 Calculus arrives in mathematics in the second week, on the sheet, in the slot the mathematics already had, and astronomy runs the autumn term on mostly arithmetic: how you get a mass off an orbit, why the rocket equation punishes you the way it does, why that leaves anybody's rocket mostly fuel, and how a distance to somewhere out of reach gets measured and then checked against a second, unrelated method. In November they spend a fortnight on putting an age on the universe, and Chloe writes at length on the two ways of measuring it, which come out different, and she is still turning that over at dinner days later.
 
+The hour after that opens with it. The teacher has the numbers disagreeing on the board before anybody has sat down, and says that the disagreement is where the interest is and the arithmetic is not, and that Bex brought it to him after dinner on the Thursday, and then he goes at it for the rest of the hour. Bex turns round in her seat to say to the row behind her how good it is, at the volume she says everything at.
+
+Chloe has her own pages in the bag under the desk and leaves them in it. After that she does her turning over on the walk down to the field, which is long enough for it and has nobody else on it.
+
 Rhetoric is an hour a week of dismantling a speech to find the place where the person giving it is being paid, usually well down the page.
 
 Art history is in the spring, and in February the instructor projects a Dutch interior with a woman reading in it and says what it went for at auction in 1959 and again in 1998\.
@@ -212,4 +216,6 @@ The board the next day says the staff lost the building at three forty-two, then
 
 Chloe reads them in the corridor, where number three is about the east stairwell and names two students, neither of them Ruth. Number seven says that at no point in the two hours did anybody establish how many adults were in the building, and she stands in front of that one with her arms crossed until somebody behind her needs the space, because she spent those hours on a landing while the number of teachers upstairs went uncounted.
 
-It is still with her at dinner, where Sam is describing the bannister for the fourth time to people who were standing underneath it.
+It is still with her at dinner, where Sam has the bannister up for the fourth time in front of people who were standing underneath it.
+
+"I got a hand on the rail and the rest of me went over the top of it, and that part worked, and then the floor came up at me."

@@ -98,7 +98,9 @@ Her grandmother comes on a Sunday, and in the front room Chloe is explaining the
 
 "I know," her mother says, keeping her voice down to match, because the door is open and Chloe is close enough to hear every word.
 
-Chloe stands against the wall by the door with the glass in both hands and tugs her shirt loose from her shorts once, then lets it go, and goes back through and finishes about the bridge, which came second in the room, and eats half of what's on her plate at dinner, and says she's had enough.
+Chloe stands against the wall by the door with the glass in both hands and tugs her shirt loose from her shorts once, then lets it go, and goes back through and finishes about the bridge, which came second in the room. At dinner she eats half of what is on her plate and lays the fork down across the rest of it.
+
+"I've had enough."
 
 ---
 

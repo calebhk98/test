@@ -96,7 +96,7 @@ By the end of it several of them are laughing at him, while another has stopped 
 
 The subject changes.
 
-Later, watching the clock over the serving line, he says the only complaint he lodges with anybody all autumn, which is that nine minutes is a strange amount of time to be given for a meal that took somebody all morning.
+Later, watching the clock over the serving line, he lodges the only complaint anybody gets out of him all autumn. "Nine minutes is a strange amount of time to be given for a meal that took somebody all morning."
 
 ________________
 
@@ -130,7 +130,11 @@ Mail call is on the printed schedule, and the drill sergeants run it standing up
 
 Sam writes to his grandmother on Sunday nights with the pad braced on his knee, in block capitals, because he gave up on cursive somewhere around the age of ten. What she gets is the cold, a drill sergeant who yells at everybody and means well by it, the length of a meal. The six hundred stays out of the letter, on the grounds that it would require a paragraph of explanation, then still amount to a number when he got there.
 
-Okoro asks him once who it goes to. Sam says his grandmother, at which Okoro volunteers that his own mother posts him word searches clipped out of the local paper, a couple a week, and that he has recently begun completing them.
+Okoro asks him once who it goes to.
+
+"My grandmother."
+
+"Mine posts me word searches clipped out of the local paper, a couple a week," Okoro says. "I've started doing them."
 
 ________________
 

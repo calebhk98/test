@@ -20,7 +20,7 @@ There is no morning meeting: she says what went live yesterday from wherever she
 
 She's still in the front room well after dark on the Tuesday of the second week of May, because the new-employer queue has run long. That queue she reads herself, every name on it, the same way she reads the till tape at her parents' counter before she says hello to anyone, and a good week puts a handful of names in front of her. This week has nineteen, and more than half of them sit outside the list of employers she has driven to herself.
 
-Opened, they carry one job description between them, a few paragraphs of it, with the company name swapped at the top and again in the third line and left exactly where it was everywhere else, so that one of them advertises a role in a city the posting itself gives as sixty miles from its own address.
+Opened, they all carry the same job description, a few paragraphs of it, with the company name swapped at the top and again in the third line and left exactly where it was everywhere else, so that one of them advertises a role in a city the posting itself gives as sixty miles from its own address.
 
 All of the accounts were created inside a single half-hour window either side of midnight, at a cadence no genuine employer around here has ever come close to. The hires behind them come to zero, and that number sits in front of her without her going to look for it, because the hire count sits at the top of every employer's row.
 
@@ -126,7 +126,7 @@ On she goes to the next thing on her list.
 
 "You can't prove any of it," the man at the folding table says. "There's not a name on any of those accounts, and you've got no idea who you're standing in front of."
 
-Nadia laughs. It is one sound, and it is out of her before she has decided anything about it.
+Nadia laughs. It is a single sound, and it is out of her before she has decided anything about it.
 
 "Nine of you typed a live state registration number into my form," she says. "It's field six, and it's a required field, which is why you filled it in."
 
@@ -134,7 +134,7 @@ The man at the folding table stands up, taking his time about it because he can 
 
 "Say that again," he says, "slower, so everybody in the room gets the benefit of it."
 
-She says it again, exactly, word for word and at the same speed.
+"Nine of you typed a live state registration number into my form," she says, at the same speed. "It's field six, and it's a required field, which is why you filled it in."
 
 "Ten of them were filed in one week in September through the same registered agent," she says, from where she is standing. "The agent is Hanley, and Hanley carries thirty-one filings on that address, of which twenty-six belong to somebody other than you."
 
@@ -158,7 +158,7 @@ The man behind the desk looks at the man standing over her and keeps looking at 
 
 The man at the door steps aside for her and says something to the back of her head as she passes, three words with sweetheart on the end of them, and another of them laughs at it. The steel stairs are behind her before either sound has finished. Somebody comes out onto the landing and stands there watching while she crosses the lot, and is still up there when she reaches the car.
 
-The key goes in on the second try. Back at the shop she counts the till her mother has already counted. It comes out three dollars under. She counts it again, gets it again, and then runs the whole tape through a third time from the top of the day. Her mother asks where she was, and Nadia says out at a tire place, which is true, and her mother lets it go at that. Until close she works the counter, on a Thursday, for the first time since November.
+The key goes in on the second try. Back at the shop she counts the till her mother has already counted. It comes out three dollars under. She counts it again, gets it again, and then runs the whole tape through a third time from the top of the day. Her mother asks where she was. "Out at a tire place," Nadia says, which is true, and her mother lets it go at that. Until close she works the counter, on a Thursday, for the first time since November.
 
 sam: what did they say
 

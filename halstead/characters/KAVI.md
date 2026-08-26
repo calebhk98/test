@@ -3,11 +3,41 @@
 The one who goes for the mechanism, in a machine or in a person, and who stays
 where the work is because the work is the only thing he has ever wanted.
 
-**Age span:** 6 to 21 | **MBTI:** INTP (a writing aid, not a claim) | **IQ:**
-far out, by inference. No number is ever stated and none should be.
+**Age span:** 6 to 21 | **MBTI:** INTP (a writing aid, not a claim) | **IQ:** 172, a
+figure he has never asked for and would want the methodology of before he accepted it.
 
 **Engine:** follows a mechanism to the end of itself and does not track the
 conversational layer running beside it.
+
+## Type and number
+
+**Four readings, and this is the widest disagreement in the cast.** Four people typed
+these characters separately, each asked to keep off everybody else's answers, and Kavi
+came back as three different types.
+
+| reading | type | what that reader was looking at |
+| :-- | :-- | :-- |
+| first | INTP | detached systems tinkerer, intellectualisation, unbothered by hierarchy |
+| second | ISTJ | the precision, the order, the workspace, the consistency people can set a clock by |
+| third | ISTP | the hands. Always an object in them, always a mechanism, three steps ahead and silent about it |
+| house | INTP | the same as the first |
+
+**Primary: INTP.** The other two readings are looking at the output rather than the
+driver. His hands are busy because a model is running, and the order in his corner exists
+to serve the model rather than because order is a value he holds — disturb his bench and
+he is inconvenienced, disturb his model and he is gone for three days. The clean test: an
+ISTP wants the thing to work, an ISTJ wants the thing to be done properly, and he wants to
+know why it works, and will keep going long after it works and long after anybody needed
+him to.
+
+**IQ 172.** The shape of it: fluid and mechanical reasoning at the ceiling of every
+instrument, quantitative reasoning immediately behind it, and a working memory that lets
+him hold a nine-stage derivation with no paper. Verbal comprehension is high and is
+noticeably his own lowest index — he reads faster than he can explain, and what looks like
+reticence is partly that the language layer is genuinely slower than the rest of him.
+Where he is comparatively weak: producing an account of his reasoning at speed, in front
+of people, for somebody who needs it now. He gets there. He does not get there in the
+minute you have.
 
 ## What he is for
 
@@ -204,6 +234,34 @@ line of his has landed badly, his hand comes up over his mouth. Half a second
 late, never in time to stop it, and it is the only visible evidence that he
 knew.
 
+## Frustration and anger
+
+**What frustrates him:** being pulled out of a mechanism halfway. Not the interruption
+itself — the fact that the state he was holding is gone and rebuilding it costs an hour he
+now has to find somewhere.
+
+**The tell, before he says anything:** the object stops. Whatever is in his hands goes
+down, squared to the edge, and stays down, and his hands go empty and still. In a person
+whose hands are always working, empty hands are the whole signal.
+
+**What he does with it:** nothing anyone can see. He leaves the conversational layer
+entirely and finishes the thought where he is, and the room reads that as sulking, and it
+is not, and he has never noticed the misreading.
+
+**What actually makes him angry:** somebody breaking a working thing to make a point.
+A demonstration that costs a functioning mechanism its function. He will forgive
+carelessness immediately and he does not forgive that.
+
+**Angry, he becomes exact.** He recites what was done, in order, one step at a time, at
+precisely the temperature he uses for everything else, and the flatness is the aggression.
+No volume, no adjective, nothing you can object to, and the person on the end of it has
+nowhere to stand.
+
+**How it ends:** it does not end so much as get filed. It goes on a list, and in four
+years he will still be able to give you the sequence, and by then it has no heat left in
+it whatsoever. He has never held a grudge in the ordinary sense. He has a permanent record
+and a short temper for exactly nothing.
+
 ## Stuck, bored, and wrong in public
 
 Cheap, portable characterisation: a task, a group, and somebody in charge is all
@@ -278,6 +336,33 @@ Given a free year with nothing due, he would take the oldest item on the list
 and work only that. The only difference from his ordinary life would be the
 absence of a deadline, and that is the honest measure of how much he wants the
 work rather than the position.
+
+## Life outside the work
+
+**A tank of fish,** unnamed, kept immaculately. He can give you every parameter of the
+water from memory and has never once described a fish by how it looks. He watches it in
+the evening for long stretches, which is the closest thing to rest he does.
+
+**Calligraphy,** which is the only place his hands move slowly, and he took it for the
+mechanics of ink and paper and stayed for something he has not tried to name. He gives
+away everything he makes and keeps nothing.
+
+**He will not shut up about heat.** Thermal management, why everything fails at the same
+place, why the interesting part of any machine is where the energy leaves it. Get him onto
+it at a table and the next nine minutes are gone. He is the only person here who
+volunteers a monologue and the trigger is always this.
+
+**Sentimental about:** one broken component from the first thing he ever built that
+worked. It sits at the back of a drawer, it has no function, and if pressed he would
+produce a technical reason for keeping it that neither of you would believe.
+
+**At eight** he took the toaster apart, understood it in eleven minutes, and spent two
+hours on the thermostat because that part was interesting. He was not being naughty and
+was baffled to find that this was the reading.
+
+**At forty** he is the person other people call at eleven at night when something has
+stopped working and nobody can say why. He answers. He still keeps the list of unanswered
+questions, and it is longer, and that pleases him.
 
 ## Blind spots
 

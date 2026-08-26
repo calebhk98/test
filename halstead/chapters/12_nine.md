@@ -100,13 +100,21 @@ Textiles is Tuesdays, where they measure each other, draft patterns off the meas
 
 Biology is the man with the fish tank in the front hall, and in October Kavi decides that the small striped one is being bullied.
 
-Kavi alone watches the tank, for what turns out to be most of October, producing a diagram of it, arrows and all. Ruth argues that the small striped one is fine, that Kavi picked a favourite in the first week, and that he has been reading the tank backwards from it ever since. By February they have a name for that from statistics, and Ruth starts using it on him at meals, while Sam is on Kavi's side entirely and cannot explain why. In March the small striped fish dies of old age, and Kavi is unbearable for a week, until the man with the fish tank tells him that is a long life for that fish and that he had been expecting it since Christmas.
+Kavi alone watches the tank, for what turns out to be most of October, producing a diagram of it, arrows and all. Ruth argues that the small striped one is fine, that Kavi picked a favourite in the first week, and that he has been reading the tank backwards from it ever since. By February they have a name for that from statistics, and Ruth starts using it on him at meals, while Sam is on Kavi's side entirely and cannot explain why. In March the small striped fish dies of old age, and Kavi is unbearable for a week, until the man with the fish tank stops at his end of the breakfast table on the Friday.
+
+"That is a long life for that fish, and I've been expecting it since Christmas."
 
 ---
 
-There are two people in her year Chloe dislikes outright.
+Bex Alcantar arrives at the end of your sentence before you get there and finishes it for you, and the ending she puts on it is usually the ending it was going to have.
 
-Bex talks over the ends of sentences, hers most of all, until Chloe has learned to get to the point before Bex can start talking over the last words of it. Iyad agrees with you loudly in a way that means he stopped listening around the second sentence, then repeats your own idea back to you at dinner as if it were his. In the second term she builds a bridge with Bex that carries nineteen pounds, coming down a plank at a time instead of all at once, and she answers the people who ask afterwards how they did the joints before Bex can get a word in. She works with Iyad in chemistry for a term, during which he is careful and fast, and she would take him again tomorrow rather than sit through another dinner listening to her own idea come back to her secondhand.
+In the second term Chloe and Bex build a bridge that carries nineteen pounds and comes down a plank at a time instead of all at once, which is the joints, and the joints are a fortnight Chloe spent getting them wrong in the hour before dinner. The teacher asks how they held. Bex has it before Chloe has her mouth open, the whole fortnight in order and every part of it right, and she says we in her first sentence and I in the rest of them, and the teacher writes it on the sheet and moves along the table.
+
+Chloe goes back over the fortnight that evening looking for the sitting where she said any of it out loud, and finds the Thursday, when she had it half built and was talking fast and had it wrong twice before she had it right, with Bex at the next bench.
+
+Iyad Mansour has the year in his head, everybody's hours and everybody's numbers, and he gives them out at dinner unasked, by name and in order, down the table and back up it, and he is never wrong about any of them. In March what he has on her is Mandarin, which is that a stranger loses her by the second sentence, said at the volume of the far end of the table while she is still coming down it with her tray, and it is exactly what the man from the university said and the whole of what he said. Sam asks him something about the fish tank and he answers that too.
+
+She works with Iyad in chemistry for a term after that, during which he is careful and fast and gets more out of the hour than she does, and she comes in to dinner through the kitchen door now, where the queue starts, and takes the seat at the end where the plates arrive last.
 
 Sam spends the whole year on the overhang.
 
@@ -184,4 +192,6 @@ Her father starts to answer and stops with the page half turned, then goes back 
 
 "No idea, I only got as far as that one."
 
-Going through the rest of the pages at the table that night, he finds more of them. On the Thursday, he asks the vendor which of the sentences in section three they would put a date and a number against. Some come back with dates, but the rest come back as the same sentences with different words in them, and he tells Chloe about this in the car on Friday, at some length, while she eats a sandwich.
+Going through the rest of the pages at the table that night, he finds more of them. On the Thursday, he asks the vendor which of the sentences in section three they would put a date and a number against. Some come back with dates, but the rest come back as the same sentences with different words in them, and in the car on Friday he goes through the lot of them for her while she eats a sandwich.
+
+"Every sentence in there is the same shape, and there isn't a date among them, and I would have signed it on Tuesday."

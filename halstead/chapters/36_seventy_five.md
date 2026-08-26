@@ -144,6 +144,8 @@ In the morning Chloe reads the third page of the file again, the paragraph about
 
 The ranking goes unmentioned after that. Nadia asks, days later and only to Priya, whether she wants somebody in the yard with her for a while, and gets back a photograph of a gate with a new hinge on it and the word sorted. Sam offers to come out for a fortnight of his leave and is told the flights are absurd, and offers again the following day with a screenshot of a cheaper flight. Eli sends a list of things to change about the room over the feed merchant's, most of which she had already done before it arrived.
 
-Kavi takes six hours to answer, which for Kavi means he has been doing something about it rather than thinking about it, and what he sends is a single line about a piece of software none of them has heard of and a question about what the yard uses for its gate.
+Kavi takes six hours to answer, which for Kavi means he has been doing something about it rather than thinking about it, and what he sends first is the name of a piece of software none of them has heard of.
 
-By the time he sends it she has been out at the fence for the better part of an hour, because the mare is due and the mare keeps her own hours.
+kavi: what is on the yard gate at the moment
+
+By then she has been out at the fence for the better part of an hour, because the mare is due and the mare keeps her own hours.

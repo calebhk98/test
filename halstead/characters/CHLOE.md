@@ -4,11 +4,39 @@ Point-of-view character, ages six to twenty-one. Verbal, analytical, and reachin
 difficulty everywhere she is allowed to. She never reads an outcome, good or bad, as
 information about herself.
 
-**Age span:** 6-21 | **MBTI:** INFJ, a writing aid and not a claim | **IQ:** high 160s by
-reader inference. It is never stated in the book and she never learns it.
+**Age span:** 6-21 | **MBTI:** INFJ, a writing aid and not a claim | **IQ:** 164, and
+she never learns it.
 
 **Engine:** wants the reason underneath the answer, and has no moderate setting on
 anything.
+
+## Type and number
+
+**Four readings, and they disagree.** Four people typed this cast separately, each asked
+to keep off everybody else's answer, so the spread below is the useful part of the
+exercise.
+
+| reading | type | what that reader was looking at |
+| :-- | :-- | :-- |
+| first | INFJ | she reads the whole room before she speaks, and then decides what the room can hold |
+| second | INFP | the crying, the intensity of attachment, the sense of being the wrong shape for the world |
+| third | INFP calm, INFJ under load | the switch: the interior girl becomes an organiser the moment somebody else is in trouble |
+| house | INFJ | the same |
+
+**Primary: INFJ,** because the tell is what she does with what she has read. She takes in
+more of a room than anybody in it and then acts on somebody else's behalf without
+mentioning that she read anything. An INFP would withdraw into the private version and
+stay there; she withdraws for one night and comes back with a plan for someone else.
+
+**IQ 164.** The shape of it: verbal comprehension and working memory sit at the top of any
+scale that has a top, and were doing so before she could write neatly. Fluid reasoning is
+a step behind that and still exceptional. Processing speed is the low card and always has
+been, partly her hands and partly a refusal to hand over anything half-finished. Where she
+is comparatively weak: anything scored on pace, anything where the task is to fill in a
+form correctly rather than to understand a thing, and any test that rewards producing the
+expected answer, because her instinct is to check whether the expected answer is the one
+being asked for. Give her an untimed problem and she is unrecognisable from the same girl
+against a stopwatch.
 
 ## The thing to get right first
 
@@ -496,6 +524,35 @@ peers, and nearly everything physical the book gives her runs through her hands.
   something that has just frightened her. A literal-minded correction landing in the
   middle of a panic attack will have her laughing until she has to bend over against a wall.
 
+## Frustration and anger
+
+**What frustrates her:** being managed. An answer that is really a technique — the warm
+voice, the redirection, the promise to look into it — costs her more than a flat refusal
+would. She would rather be told no by somebody looking at her than yes by somebody
+handling her.
+
+**The tell, before she says anything:** she stops moving. She is never still, so the
+stillness is the event, and anyone who knows her reads it faster than they would read
+shouting. Her hands go flat and stay flat.
+
+**What she does with it:** talks. The frustration comes out as speed and volume of
+explanation, the same case made three times in three different physical parallels,
+each one better than the last, until either the other person concedes or she runs out
+of parallels and stops mid-sentence.
+
+**What actually makes her angry,** as opposed to merely irritating her: watching somebody
+smaller be told a comfortable lie for their own good. Being lied to herself is survivable.
+Somebody else being handled in front of her is not.
+
+**Angry, she is enormous.** No small setting on this either. She gets loud, she gets
+personal, she finds the one true sentence that will do the most damage and says it, and
+she is aware while saying it that she will not be able to take it back.
+
+**How it ends:** inside the hour, in remorse, and the remorse is as unmoderated as the
+anger was. She apologises specifically, at length, itemising what she said and why it was
+untrue, and she cannot be talked out of the apology by anybody telling her it was
+deserved. Then she is fine, and the other person is still recovering.
+
 ## Stuck, bored, and wrong in public
 
 What a person sitting across the room from her would actually see, which is
@@ -597,6 +654,32 @@ one asking.
 - **On a phone:** learns to be fast on a call early, because there is always somebody
   waiting behind her for the same one. Terse and functional in text as an adult.
 - **First thing in the morning:** up and moving without delay, no lingering.
+
+## Life outside the work
+
+**Boats.** She reads about them for pleasure and has since she could read: hulls, engines,
+moorings, secondhand listings for craft she has no way of buying and no water to put them
+on. She can tell you what is wrong with a hull from a photograph. It comes out unprompted
+and at length and has nothing to do with school, which is most of why she likes it.
+
+**She sings,** constantly, badly, and only when she believes she is alone. Anyone who
+comes round the corner gets silence and a face that dares them to mention it.
+
+**Sentimental about:** hot metal, the first thing she made that held weight, and the
+particular sound of a workshop coming up to temperature. She would not use the word
+sentimental and would argue with anyone who did.
+
+**A private habit she would deny:** she names things she uses often — a mallet, a bench,
+a bicycle — and uses the names in her head only.
+
+**At eight** she wanted to be the person who fixes engines on a dock, and could describe
+the job in detail, and was disappointed that nobody thought it was ambitious enough to be
+worth arguing with her about.
+
+**At forty** she keeps a workshop she does not need, phones people at hours other adults
+consider unreasonable, and teaches somebody else's child to solder with far more patience
+than she ever shows an adult. She still has no moderate setting. It has simply stopped
+being anyone's problem but hers.
 
 ## Would do
 

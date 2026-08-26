@@ -4,12 +4,39 @@ The best fighter of his year, who wants the real test to start already and
 cannot work out why nobody will just tell him where it is.
 
 **Age span:** 7 to mid-twenties | **MBTI:** ESFP (a writing aid, not a claim) |
-**IQ:** genius-range, like the rest of the core group. It shows up as fast
-tactical judgement and quick pickup of any physical or spoken skill, not as
-proof-writing or system-building.
+**IQ:** 161, the lowest number in his year and the one that has never once slowed him
+down.
 
 **Engine:** has to run a feeling through his body before it reaches language, and makes
 the joke first while it is still on the way.
+
+## Type and number
+
+**Four readings, all the same.** Four people typed this cast separately, each asked to
+avoid duplicating anyone else's answer, and Sam came back identical from every direction.
+He is the least ambiguous person in the book.
+
+| reading | type | what that reader was looking at |
+| :-- | :-- | :-- |
+| first | ESFP | kinetic class clown; humour and physical action as the whole coping apparatus |
+| second | ESFP | loud, funny, impulsive, secretly certain he is not enough |
+| third | ESFP | lives in his body, trusts his hands over his words, already moving before you finish |
+| house | ESFP | the same |
+
+**Primary: ESFP,** and the agreement is itself the note. The temptation with a cast this
+carefully separated is to make the obvious one less obvious. Do not. He is the sensory
+extravert in full: present tense, physically confident, socially fluent, entirely at home
+in a room, and the one person here who processes a feeling by running it through his body
+before language gets a turn.
+
+**IQ 161.** The shape of it: perceptual reasoning and processing speed both at the top of
+any scale, an almost perfect memory for physical sequence — he learns a movement once and
+owns it — and a spoken-language pickup faster than anyone in the year. Verbal comprehension
+is high and is his own comparative low, and working memory for symbols he cannot see or
+touch is the place he actually loses points. Hand him a proof to hold in his head with no
+object and no diagram and he is working two levels below himself; give him the same
+problem as a thing on a bench and he is ahead of the room. He knows he is last of the
+seven and treats it as a fact about a list, the way you would know your height.
 
 ## What he is for
 
@@ -232,6 +259,34 @@ he goes quiet for a beat when somebody describes an ordinary good day at
 ordinary work, a job finished clean, and then asks a practical question and lets
 the subject move on.
 
+## Frustration and anger
+
+**What frustrates him:** being made to sit through a discussion about something that could
+be settled by trying it. Twenty minutes of planning for a ninety-second experiment is the
+purest form of it, and he will say so once, cheerfully, and then suffer.
+
+**The tell, before he says anything:** he is out of the chair. He does not decide to stand
+up and he does not know he has, and the standing happens a good ten seconds before he
+knows he is annoyed. The joke rate goes up at the same time and gets slightly worse.
+
+**What he does with it:** takes it outside and runs it off, lifts it off, or throws
+something at something. It is gone by the time he is finished, and he genuinely cannot
+reconstruct afterwards what the size of it was.
+
+**What actually makes him angry:** somebody with rank humiliating somebody without it, in
+front of a room, for sport. That is the one thing his whole cheerful apparatus cannot
+metabolise.
+
+**Angry, the joke goes.** This is the frightening part, because the joke is the register
+everybody knows him in. He puts himself physically between the two people, drops his voice
+below conversational, and speaks in short flat sentences with no number in front of them.
+People who have only ever met the grin find it genuinely alarming.
+
+**How it ends:** immediately and completely. Once the situation changes he is finished
+with it, offers no follow-up, holds nothing, and expects everyone else to be done too. His
+blind spot is that other people are not, and he reads their ongoing tension as a fresh
+problem rather than the same one.
+
 ## Stuck, bored, and wrong in public
 
 Free characterisation, none of it needing a school: a task, a group, and
@@ -297,6 +352,33 @@ he does it. It is the one relationship with nothing being scored in it, and
 that is exactly why he keeps it to himself. Most nights, the last thing he
 thinks about is a line or two of the next letter, turned over the way he turns
 over a piece at a forge before deciding it is finished.
+
+## Life outside the work
+
+**He bakes,** seriously, and is better at it than anybody expects. Bread mostly, because
+it is a physical process with a clock in it and a result you can hand to eight people. He
+took it as an elective at eleven as a joke and it stopped being one within a month. He
+will not accept a compliment on a loaf and will accept one on the crust.
+
+**He follows a sport nobody else in the building has heard of** and delivers unsolicited
+standings updates at meals with total confidence that this is welcome. Eleven years of
+nobody caring has not dented it.
+
+**Sentimental about:** the weekly letter to his grandmother, and about the family
+business schedule on the wall of a kitchen four hours from anywhere, which he could still
+draw from memory at thirty.
+
+**A free Saturday** is cooking for everyone in the morning, water in the afternoon, and
+being the last person to go to bed. He is not able to spend a whole day alone and has
+never tried.
+
+**At eight** he wanted to be big. That was the entire ambition, stated plainly and often,
+and he got it, and it turned out to solve less than he expected.
+
+**At forty** he is the loudest adult on the touchline at somebody else's child's match,
+knows every kid's name, feeds anyone who comes to the door, and is the friend the others
+call when something has gone physically wrong at two in the morning. He still cannot sit
+still in a meeting and has stopped pretending otherwise.
 
 ## Blind spots
 

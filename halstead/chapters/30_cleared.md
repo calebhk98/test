@@ -98,7 +98,7 @@ Whether to tell him if he insists, or hold the line she's holding for the other 
 
 He writes that down too.
 
-Around noon the notebook closes, and he tells her he'll be back once he's run down what he can on his end, and shakes her hand at the door the same plain way he shook it that morning.
+Around noon the notebook closes. "I'll be back once I've run down what I can on my end." He shakes her hand at the door, the same plain way he shook it that morning.
 
 ________________
 

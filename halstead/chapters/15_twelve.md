@@ -22,7 +22,7 @@ Sam holds it up with an eye shut, then hands it back.
 
 Then he takes his coat off the peg because it is getting dark, and the girl at the next bench comes over with a punch in her hand and admires how straight the hammer marks run down the shank.
 
-Walking back from the forge in the dark at the end of November, having missed dinner again, she gets as far as the stairs before Marek comes the other way with a book open on his forearm and stops in front of her to tell her where he has got to, her name first and then straight into it: the chapter he has been going through since the summer, the line the author skips over, the pages he has had to write out himself to get past it, all of it in order and fast and with his finger keeping the place. It takes a while, and she stands there with the burn on her wrist against the cold of the banister and lets him finish, then says that sounds right, and he says thanks and goes up.
+Walking back from the forge in the dark at the end of November, having missed dinner again, she gets as far as the stairs before Marek comes the other way with a book open on his forearm and stops in front of her to tell her where he has got to, her name first and then straight into it: the chapter he has been going through since the summer, the line the author skips over, the pages he has had to write out himself to get past it, all of it in order and fast and with his finger keeping the place. She puts the burn on her wrist against the cold of the banister and asks him what was actually wrong with the line, and he tells her that too, and he is right about it. Then she asks him where the pages are, and he taps the side of his head and goes up.
 
 Three weeks later a row of hooks sits on the bench with the same fault running through all of them, and Pruitt comes past with a bar on his shoulder, running a thumb down the scroll of the nearest as he goes.
 
@@ -310,7 +310,13 @@ Chloe gets a C the same as Sam, Ruth gets a B minus and brings it up for a week,
 
 The sheet says: intruders inside Building One prior to contact. Response seven minutes fifty against a standard of six. Traceable agent selected. Four personnel deployed where three would have served. Objective established. No capability disclosed.
 
-Chloe reads it in the corridor and delivers her whole opinion of it in Russian at volume, and stays annoyed about the C for a week before she accepts it.
+Chloe reads it in the corridor, out loud and in Russian, at a volume that turns the far end of it, and Ruth reads the sheet over her shoulder and waits her out.
+
+"Put it in English and I'll agree with you."
+
+"They were inside before the alarm went, and the sheet has that down as ours, and there is nothing on it anywhere about the sensors."
+
+"There won't be, and you'll have the C for a week, and then you'll have something else." Ruth hands the sheet back and carries on down the corridor.
 
 ---
 

@@ -3,12 +3,40 @@
 A person who cannot let an unjustified claim stand, in anybody's mouth including
 her own, and who needs to know why she in particular was picked out.
 
-**Age span:** 6 to 21 | **MBTI:** ENTJ (a writing aid, not a claim) | **IQ:**
-among the two or three furthest out of anyone in the cast, by inference. No
-number is ever stated about her and none should be.
+**Age span:** 6 to 21 | **MBTI:** ENTJ (a writing aid, not a claim) | **IQ:** 176, the
+second-highest in her year and no comfort to her at all.
 
 **Engine:** cannot let a wrong statement stand in the air, whatever it costs to take it
 down.
+
+## Type and number
+
+**Four readings, and for once they agree.** Four people typed this cast separately, each
+asked to avoid duplicating anyone else's answer, and Ruth is one of the two who came back
+identical from every direction.
+
+| reading | type | what that reader was looking at |
+| :-- | :-- | :-- |
+| first | ENTJ | the fierce combative idealist, hyper-control, projection outward |
+| second | ENTJ | blunt, driven, guarded, gives crushing hugs and denies them |
+| third | ENTJ with a soft wound underneath | the correcting is a fear management system, and it is load-bearing |
+| house | ENTJ | the same |
+
+**Primary: ENTJ.** The unanimity is worth saying out loud, because on a sheet this
+different from everyone else's it would be easy to reach for a rarer type to make her
+distinctive. She does not need one. She is the commander in the plainest available sense:
+she organises, she corrects, she takes the tedious structural job without being asked, and
+she would rather be the one holding the standard than the one comfortable inside it. The
+third reader's addition is the one to carry: the drive outward is powered by a private
+terror of being the only one of her kind in the room.
+
+**IQ 176.** The shape of it: fluid reasoning and verbal fluency both at the ceiling, and
+unusually for a profile that high, no soft index anywhere. She is fast and she is also
+accurate, which is the combination that makes her exhausting to argue with. Where she is
+comparatively weak: mental rotation of a solid object, which is the one place she has to
+build the thing with her hands to see it, and any task where the correct answer depends on
+what another person is feeling rather than on what is true. She would place herself around
+a B plus and mean it.
 
 ## What she is for
 
@@ -259,6 +287,34 @@ denominator under it is not information yet, and she is trying to convert it
 into something she can use. The answer almost always disappoints her, and she
 says so, and the person who paid the compliment usually wishes they had not.
 
+## Frustration and anger
+
+**What frustrates her:** a wrong statement left standing in the air after she has already
+taken it down once. Being wrong is fine. Being wrong twice, in the same room, with the
+correction already on the table, is what gets her.
+
+**The tell, before she says anything:** her volume drops half a step. Everyone who has
+known her a year reads that instantly, because loud is her baseline and the quiet version
+is the dangerous one. She also stops building things with her hands and puts the objects
+in a row.
+
+**What she does with it:** builds the case. Out loud, at length, in order, with the other
+person's name dropped into the middle of it. She will not let the room move on and she
+will not let the other person leave, and she is capable of doing this for forty minutes
+without noticing it has become the only thing happening.
+
+**What actually makes her angry:** being agreed with by somebody who has not understood.
+Disagreement is nourishment. Cheerful assent from a person who is nodding to end the
+conversation is the specific thing that will take her from loud to quiet.
+
+**Angry, she goes forensic.** No shouting. Short questions with only one available answer,
+each one closing a door, and the courtesy stays intact the whole way through, which makes
+it worse to be on the end of.
+
+**How it ends:** about eight hours later, privately, to one person, in roughly four words,
+and it is never mentioned again by either of them. She does not apologise in the room she
+was angry in. She has never once managed it and has stopped expecting herself to.
+
 ## Stuck, bored, and wrong in public
 
 Everything below is visible from across a room and none of it needs a school:
@@ -443,6 +499,37 @@ years, does not cost what she thought it cost.
   relationship available to her. Anyone who will push back on her reasoning
   rather than credit the answer gets a degree of access nobody else has, and is
   the only kind of person who can tell her something about herself that lands.
+
+## Life outside the work
+
+**She is a tomboy and always has been,** in the plain unfashionable sense: she cut her own
+hair short at eight with kitchen scissors and thought the result was fine, she owns one
+pair of shoes at a time and wears them out, she takes any bike she is given apart within a
+week, and she has a scab or a bruise going at all times from about six onward. She wore a
+dress once, at nineteen, for four hours, and reported on the experience afterwards like a
+field trial.
+
+**Radio.** She listens at night on a receiver she built and keeps a hardbound log of every
+distant station she has pulled in: date, frequency, conditions, how long it held. Nobody
+has asked to see it. She would show them the log before she showed them anything else she
+owns.
+
+**A terrible band she found at fourteen** and has never revised her opinion of. She will
+defend them with the same apparatus she defends a proof with, and she knows exactly how
+funny that is and does it anyway.
+
+**Sentimental about:** her younger brother, embarrassingly and completely. She writes to
+him, she keeps the drawings he sent her when he was six, and she will drop anything if he
+calls. This is the one place her whole standard-of-evidence machinery simply switches off.
+
+**At eight** she wanted to run something. Not to be famous and not to be rich — to be the
+one who decides what order things happen in — and she organised games she then found
+insufficiently rule-bound and abandoned.
+
+**At forty** she runs something, and it is well run, and about half the people under her
+find her hard work and would follow her anywhere. She still keeps the radio log. She has
+learned to wait a beat before correcting, and she experiences that beat as a cost every
+single time.
 
 ## Would do
 
