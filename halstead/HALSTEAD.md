@@ -2162,7 +2162,7 @@ Chloe stays standing. "Am I going, though, is it a real thing, are you actually 
 
 "It's true," her dad says, "it's a true thing and I'm not saying it a third time."
 
-What comes out of her has no word in it. It goes up and holds there and keeps going after the breath behind it should have run out, and her dad's hand comes off his knee and stops halfway to his ear, and her mom says her name twice without getting to the end of it either time. Then Chloe is across the rug and onto her dad, who catches her most of the way, and she is saying thank you into his shoulder with no gap between the words. Then she's off him and around the coffee table and holding onto her mother's legs with both arms, saying it to her instead, thank you, thank you, I'll be so good, I'll be so good, thank you.
+She screams. It goes up and holds there and keeps going after the breath behind it should have run out, and her dad's hand comes off his knee and stops halfway to his ear, and her mom says her name twice without getting to the end of it either time. Then Chloe is across the rug and onto her dad, who catches her most of the way, and she is saying thank you into his shoulder with no gap between the words. Then she's off him and around the coffee table and holding onto her mother's legs with both arms, saying it to her instead, thank you, thank you, I'll be so good, I'll be so good, thank you.
 
 Twenty seconds after running upstairs she is back down, stopped on the third step from the bottom with both hands on the rail.
 
@@ -2610,7 +2610,7 @@ Her name goes on the choir line, because she sang in the shower every day of the
 
 Chloe stands next to Amara for three weeks and matches her about a third of the time, but the matching is a different job from the thing she came in for, and what she liked was being loud in a small tiled room, alone, so in the sixth week she stops going and takes the hour in the pool, and sings in the shower afterward, where she was doing it to begin with.
 
-On a Tuesday in April Sam, Kavi, Ruth and Chloe end up on the grass behind the science building for about an hour, because Sam sat down and then Kavi did, and Sam has a shopping bag of apples he says only were going spare, which they spend the hour throwing at a drainpipe thirty feet away, where the render above the brick has gone green in a stripe either side of it. A hit makes the pipe ring.
+On a Tuesday in April Sam, Kavi, Ruth and Chloe end up on the grass behind the science building for about an hour, because Sam sat down and then Kavi did, and Sam has a shopping bag of apples he says only were going spare, which they spend the hour throwing at a drainpipe thirty feet away, where the brick is a shade darker either side of it from the run of the rain. A hit makes the pipe ring.
 
 "Below the bracket counts for zero, we decided that an hour ago and you know it."
 
@@ -2681,7 +2681,7 @@ The sound is the other half, and it stays out of reach, because the tones sound 
 
 "I know that, I've known that since the first week, and I still can't hear it happening in my own mouth no matter how hard I listen for it."
 
-"You won't, and nobody hears their own, so stop sitting there trying to fix it from the inside." Mrs. Sun writes a list on the board, in the middle of it where the black has washed grey and the chalk goes quiet. "Record yourself and play it back, because you'll hear it coming out of a speaker, sit next to somebody in this room who already has it, and run the recordings on the machines in the library while you're doing something else."
+"You won't, and nobody hears their own, so stop sitting there trying to fix it from the inside." Mrs. Sun writes a list on the board, in the middle of it where the surface has gone glassy from use and the chalk goes quiet. "Record yourself and play it back, because you'll hear it coming out of a speaker, sit next to somebody in this room who already has it, and run the recordings on the machines in the library while you're doing something else."
 
 Chloe does all of them, though not in that order, reading out loud into the machine in the library, playing it back, and hearing it, and Ruth starts sitting with her on Sundays in December, saying exactly what is wrong with each attempt, so that by June anyone who already expects her accent follows it, whereas a stranger loses her by the second sentence. She still cannot hear any difference between Mrs. Sun and the man who comes in from the university, who grew up a long way apart, and who Ruth can separate instantly.
 
@@ -2939,7 +2939,7 @@ Her first is on the board on the Monday and happens on the Thursday, when adults
 
 The sheet goes up on the Friday, and every name on it has an F next to it and a numbered list underneath.
 
-She reads it in the corridor with people behind her waiting for a turn at it, under the light nobody has fixed, so the bottom of a sheet has to be read at an angle. Number one is response time, number two is that a student answered a question about how many of them there are, and number three is that adults entered a building. Number six says the north stairwell was uncovered, and Chloe, who stood there the whole time, is still working out what covering it would even have looked like.
+She reads it in the corridor with people behind her waiting for a turn at it, under a light that throws everything back off the glass, so the bottom of a sheet has to be read at an angle. Number one is response time, number two is that a student answered a question about how many of them there are, and number three is that adults entered a building. Number six says the north stairwell was uncovered, and Chloe, who stood there the whole time, is still working out what covering it would even have looked like.
 
 After dinner, when the corridor is empty, she goes back and reads it again, and then a third time. Ruth comes and stands next to her and reads it all the way to the bottom in silence, arms crossed.
 
@@ -4325,7 +4325,7 @@ Her grandmother turns the hand over once more, puts it down on the tablecloth, a
 
 *April 2022 – June 2023*
 
-They take the bar in April, over two days, in the long examination room on the second floor, a full day on Tuesday and another on Wednesday, at individual desks set a meter apart, with the windows open because the room retains heat, so that the sound of the room for both days is pens and, every few minutes, a chair leg finding the bad spot in the floor, and along the front sit the teachers who wrote the paper and will mark it, proctoring both days themselves.
+They take the bar in April, over two days, in the long examination room on the second floor, a full day on Tuesday and another on Wednesday, at individual desks set a meter apart, with the windows open because the room retains heat, so that the sound of the room for both days is pens and, every few minutes, a chair leg on parquet, and along the front sit the teachers who wrote the paper and will mark it, proctoring both days themselves.
 
 Afterward, Sam catches her at the bottom of the stairwell with his collar open and still in the shirt he sat the paper in.
 
@@ -4948,7 +4948,7 @@ What changes is dinner, because by the end of the first week the interviews have
 
 Iyad has the next day's running order in his head before the sheet is taped up, and gives it to the table by name, in order, down the whole list, while the plates are still going round. Then he goes round the ones who have already been in and asks how it went, and whether they have told anybody at home yet. In the morning the roster goes up outside the staff office and every name is where he put it.
 
-Chloe's own slot falls on the Wednesday of the second week, third appointment after lunch, in a corridor where chairs have been lined against the wall outside his office for the duration. The corridor smells like the coffee cart set up near the stairwell every April, and the runner's shoes squeak on the steps of tile outside the door, morning after morning. Early, she gets there and finds most of the seats already taken: a boy re-reading a page of a textbook, the words plainly sliding past him each time, and a girl sitting perfectly still with her hands in her lap, staring at the closed door like she's already rehearsed what's behind it, both of them waiting on slots later than hers, and both of them in the chairs a good half hour before their names come up. The wall behind the chairs carries a line of dents at chair height, put there by the chairs, and she has been walking past it since she was small.
+Chloe's own slot falls on the Wednesday of the second week, third appointment after lunch, in a corridor where chairs have been lined against the wall outside his office for the duration. The corridor smells like the coffee cart set up near the stairwell every April, and the runner's shoes squeak on the steps of tile outside the door, morning after morning. Early, she gets there and finds most of the seats already taken: a boy re-reading a page of a textbook, the words plainly sliding past him each time, and a girl sitting perfectly still with her hands in her lap, staring at the closed door like she's already rehearsed what's behind it, both of them waiting on slots later than hers, and both of them in the chairs a good half hour before their names come up. The wall behind the chairs carries a rail at chair height so the chairs cannot reach the plaster, and she has been walking past it since she was small.
 
 A seat empties while she watches, when a boy she half-recognizes from the year above goes in on the dot, a laptop bag still over his shoulder like he's walking into a meeting rather than an office, and is back out before she's finished reading the noticeboard behind the chairs.
 
@@ -5227,7 +5227,7 @@ At the propped courtyard door she reaches up for the top of the frame, which she
 
 Marek comes off the grass to meet the box and is alongside her before she is properly out of the doorway, with the paper he has been reading since March, about a third of the way through and going better than a third sounds.
 
-"The error's in the middle, so the third I've done is the cheap third and the rest of it is the part worth having." He walks her the length of the courtyard and goes back to the grass. Coming out of the far end of it she stops with the box on her hip and looks up: grey stone to the second floor and brick above it, gutters sagging where they have sagged since she got here, the mown grass running out to the road.
+"The error's in the middle, so the third I've done is the cheap third and the rest of it is the part worth having." He walks her the length of the courtyard and goes back to the grass. Coming out of the far end of it she stops with the box on her hip and looks up: grey stone to the second floor and brick above it, the gutters and the pointing kept up the way everything here is kept up, the mown grass running out to the road.
 
 ________________
 

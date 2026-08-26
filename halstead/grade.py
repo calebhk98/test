@@ -25,6 +25,7 @@ What comes from where:
   verify_citations.py  quotations in the character sheets that are not in the
                        manuscript.
   prose_check.py       PROSE_RULES violations in the character sheets.
+  quote_length.py      sentences per quotation, against the corpus.
   check_edits.py       em dashes and the hard-line-break convention.
 
 Targets are the author's: Flesch-Kincaid about 7, Lexile about 1000. The
@@ -331,6 +332,7 @@ def dialogue():
     so only the numbers are pulled through.
     """
     rule("4. DIALOGUE SHARE AND THE SPOKEN / NARRATION SPLIT")
+    print(run("quote_length.py"))
     print(f"\n  {'chapter':<24}{'quoted':>8}{'spoken':>9}{'narration':>11}{'gap':>7}")
     print("  " + "-" * 57)
     q_all, gaps = [], []

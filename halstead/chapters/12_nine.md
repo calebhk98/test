@@ -56,7 +56,7 @@ The sound is the other half, and it stays out of reach, because the tones sound 
 
 "I know that, I've known that since the first week, and I still can't hear it happening in my own mouth no matter how hard I listen for it."
 
-"You won't, and nobody hears their own, so stop sitting there trying to fix it from the inside." Mrs. Sun writes a list on the board, in the middle of it where the black has washed grey and the chalk goes quiet. "Record yourself and play it back, because you'll hear it coming out of a speaker, sit next to somebody in this room who already has it, and run the recordings on the machines in the library while you're doing something else."
+"You won't, and nobody hears their own, so stop sitting there trying to fix it from the inside." Mrs. Sun writes a list on the board, in the middle of it where the surface has gone glassy from use and the chalk goes quiet. "Record yourself and play it back, because you'll hear it coming out of a speaker, sit next to somebody in this room who already has it, and run the recordings on the machines in the library while you're doing something else."
 
 Chloe does all of them, though not in that order, reading out loud into the machine in the library, playing it back, and hearing it, and Ruth starts sitting with her on Sundays in December, saying exactly what is wrong with each attempt, so that by June anyone who already expects her accent follows it, whereas a stranger loses her by the second sentence. She still cannot hear any difference between Mrs. Sun and the man who comes in from the university, who grew up a long way apart, and who Ruth can separate instantly.
 

@@ -29,6 +29,43 @@ The last one is the specific hazard of the reading-grade work. Spelling out a
 logical joint is one keystroke away from spelling out the point. The joint is
 between two clauses; the point belongs to the reader.
 
+### The camera is not talking to the reader
+
+The rule bars explaining people and events. It does not bar description. The
+narration may tell the reader anything a camera in the room could record, or
+anything Chloe can see from where she is standing: the floor is green, the
+walls are purple, the room is bright, the pipe rings when a thrown apple hits
+it. That is addressed to the reader and it is allowed, because it reports a
+surface rather than a meaning.
+
+The line is between a surface and a conclusion. *The radiator is under the
+window at the far end, so whoever gets there early sits down that end* is a
+camera. *The room is arranged to reward the punctual* is a conclusion, and the
+reader was going to reach it unaided. Describe the thing; do not describe what
+the thing means.
+
+### An overused technique is cut back, not to zero
+
+Every finding in this repository is a rate, not a prohibition. A device that
+would be good seven times in a book and appears forty times needs to come down
+to about seven. It does not need to reach nothing, and driving it to nothing
+is its own defect. The same holds in reverse: a technique the book never uses,
+which a reviewer says it should, gets added in a few places, not everywhere it
+would fit.
+
+### Named states, and why the rule says never
+
+A declared emotional state is allowed if a camera could see it, and it is
+allowed perhaps five times in thirty-six chapters, deliberately, in scenes
+built to carry it. That is roughly one chapter in seven, and every use has to
+be a decision.
+
+The rule is written as a flat ban anyway, because a permission at that rate is
+not a permission an editing pass can hold. Anyone told the technique is
+available will reach for it on the first difficult paragraph and the budget is
+gone by chapter four. Treat it as banned. Spending one is the author's call,
+not a pass's.
+
 ### The tone construction, and how to fix it
 
 The commonest form this takes in the manuscript is the narrator naming a tone

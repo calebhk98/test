@@ -4,7 +4,7 @@ Point-of-view character, ages six to twenty-one. Verbal, analytical, and reachin
 difficulty everywhere she is allowed to. She never reads an outcome, good or bad, as
 information about herself.
 
-**Age span:** 6-21 | **MBTI:** INFJ, a writing aid and not a claim | **IQ:** 160, and
+**Age span:** 6-21 | **MBTI:** INFJ, a writing aid and not a claim | **IQ:** 164, and
 she never learns it.
 
 **Engine:** wants the reason underneath the answer, and has no moderate setting on
@@ -28,7 +28,7 @@ more of a room than anybody in it and then acts on somebody else's behalf withou
 mentioning that she read anything. An INFP would withdraw into the private version and
 stay there; she withdraws for one night and comes back with a plan for someone else.
 
-**IQ 160.** The shape of it: verbal comprehension and working memory sit at the top of any
+**IQ 164.** The shape of it: verbal comprehension and working memory sit at the top of any
 scale that has a top, and were doing so before she could write neatly. Fluid reasoning is
 a step behind that and still exceptional. Processing speed is the low card and always has
 been, partly her hands and partly a refusal to hand over anything half-finished. Where she
