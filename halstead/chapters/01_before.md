@@ -22,7 +22,7 @@ There are thirty subtraction problems on the worksheet and all thirty are one pr
 
 Because the pattern is already found, she writes the answer and then sits with the pencil motionless. The classroom clock holds where it is.
 
-Mrs. Aldana waits for everybody to finish before moving on, and somebody is invariably still going, so Bryce Dolan is still counting on his fingers long after Chloe stops watching him.
+Mrs. Aldana waits for everybody to finish before moving on, but somebody is invariably still going, so Bryce Dolan is still counting on his fingers long after Chloe stops watching him.
 
 You are allowed to read once you finish the sheet, and Chloe, who has decided against finishing it, looks out the window instead.
 
@@ -148,13 +148,13 @@ The short version works every time she uses it, and the whole answer is still in
 
 On Fridays, Mrs. Aldana reads the best paper out loud while keeping back whose it is, and in November it is Chloe's, a few sentences about a dog with a missing leg that ran anyway, after which the room goes quiet.
 
-In December the assignment has a minimum and she writes the minimum, about a boat, and the paper read out is Maddie's, which everybody guesses correctly.
+In December the assignment has a minimum and she writes the minimum, about a boat, but the paper read out is Maddie's, which everybody guesses correctly.
 
 ________________
 
 Conferences are on a Thursday evening and both her parents go in, while Chloe sits on the corridor floor with a book in a smell of floor wax from the janitor's cart.
 
-She is close enough to hear them talking and too far to make out the words, for minutes and minutes, which she counts.
+She is close enough to hear them talking but too far to make out the words, for minutes and minutes, which she counts.
 
 Then the door opens on her mom saying thank you so much in the phone voice and her dad saying we appreciate it.
 
@@ -166,13 +166,13 @@ Her mom turns a page.
 
 "She also says you have some trouble focusing, which is the part I want to talk about, since the reading part is already fine."
 
-The parking lot, the boxes, the question that had already happened without her: all of it is true, and Chloe watches the streetlights come across the ceiling instead of saying so.
+The parking lot, the boxes, the question that had already happened without her: all of it is true, but Chloe watches the streetlights come across the ceiling instead of saying so.
 
 "Do you have trouble focusing?"
 
 "I don't know, it's not like I decide to stop, I just forget. Then somebody says my name and I notice." It comes out flatter than she meant, enough that her mom looks up from the papers.
 
-"Because what she actually said was that you can do the work when you want to, which sounds like she's saying it's a choice thing, and I think she has that wrong." Her mom turns around in her seat. "Is it a choice thing? You're not in trouble here."
+"Because what she actually said was that you can do the work when you want to, which sounds like she's saying it's a choice thing, but I think she has that wrong." Her mom turns around in her seat. "Is it a choice thing? You're not in trouble here."
 
 "I don't know," Chloe says, "I already told you I don't know."
 
@@ -200,9 +200,9 @@ Then her mom says she has been having a hard time at school. He rolls his chair 
 
 "Do you know what the teacher's talking about, when she calls on you?"
 
-Chloe sits with that while he waits, because the real answer has two halves and the question was built to hold one.
+Chloe sits with that while he waits, because the real answer has two halves but the question was built to hold one.
 
-Almost all of the time she knows what the teacher is talking about, and separately from that she is sometimes entirely somewhere else while a question goes by, and she picks the shorter word anyway.
+Almost all of the time she knows what the teacher is talking about, but separately from that she is sometimes entirely somewhere else while a question goes by, and she picks the shorter word anyway.
 
 "Sometimes," she says, and while he types, the keys the only sound, she reads the poster on the back of the door about the food groups, which she has read in here enough times to have memorized.
 

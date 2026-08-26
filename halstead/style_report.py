@@ -251,9 +251,75 @@ def report(path, label):
         print("  none found")
 
 
+
+TICS = [
+    (r'which is (?:the|what|how|why|a|his|her|its)\b', 'narrator evaluation'),
+    (r',\s+which is ', 'trailing explanatory clause'),
+    # Triage, not a verdict: this catches the author's radiator example
+    # ("...at the far end, so whoever gets there early sits down that end")
+    # along with legitimate causal narration. Read every hit before cutting.
+    (r',\s+(?:so|because|since)\s+(?:whoever|anybody|anyone|everybody|everyone|'
+     r'nobody|the rest|people|you|it|the)\b',
+     'so/because tail (triage, read each)'),
+    (r'\b(best|worst|funniest|nicest|only time|never once|for the first time)\b',
+     'superlative'),
+    (r"it'?s not \w+[,;] it'?s ", 'not-X-but-Y'),
+    (r'\u2014', 'em dash'),
+]
+
+CONJ_TARGET = [('and', 2.5, 3.5), ('but', 0.4, 0.9), ('so', 0.2, 0.6),
+               ('because', 0.2, 0.7), ('which', 0.1, 0.4)]
+
+# Measured over the 23-book reference corpus, for the two that keep failing.
+CORPUS_NOTE = {'and': 'corpus 2.29 to 5.09, median 3.34',
+               'but': 'corpus 0.19 to 0.78, median 0.39'}
+
+
+def summarise(paths):
+    """The conjunction table and tic counts for the whole book, one block."""
+    text = '\n'.join(load(p) for p in paths)
+    body = '\n'.join(l for l in text.split('\n') if not l.startswith('#'))
+    w = [x.lower() for x in words(body)]
+    n = len(w)
+    counts = Counter(w)
+
+    print("\n  conjunction     count      rate    target            ")
+    print("  " + "-" * 62)
+    for k, lo, hi in CONJ_TARGET:
+        pct = 100 * counts[k] / n
+        verdict = 'ok' if lo <= pct <= hi else 'FAIL'
+        note = CORPUS_NOTE.get(k, '')
+        print(f"  {k:<12}{counts[k]:>7}{pct:>10.2f}%   {lo}-{hi}%   "
+              f"{verdict:<6}{note}")
+    all_paras = paras_of(body)
+    sents_all = [s for p_ in all_paras for s in sents(p_)]
+    # Rule 1 governs the narrator. A character explaining something to another
+    # character is dialogue and is allowed, so the quoted spans come out of
+    # each sentence and the tics are matched on what is left.
+    narration = [re.sub(r'"[^"]*"', ' ', s) for s in sents_all]
+    multi = sum(1 for s in sents_all
+                if len(re.findall(r'\band\b', s.lower())) >= 2)
+    print(f"  {'2+ and':<12}{multi:>7}{100 * multi / len(sents_all):>10.1f}%   "
+          f"under 10%   {'ok' if 100 * multi / len(sents_all) < 10 else 'FAIL'}")
+
+    print("\n  tic scan, narration only (quoted spans removed)")
+    for rx, name in TICS:
+        hits = sum(1 for s in narration if re.search(rx, s, re.I))
+        if hits:
+            print(f"    {name:<38}{hits:>5}")
+
+
+def paras_of(body):
+    return [p for p in re.split(r'\n\s*\n', body) if p.strip()]
+
+
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        sys.exit(f"usage: {sys.argv[0]} <chapter.md> [label]")
+        sys.exit(f"usage: {sys.argv[0]} <chapter.md> [label]\n"
+                 f"       {sys.argv[0]} --summary chapters/*.md")
+    if sys.argv[1] == '--summary':
+        summarise(sys.argv[2:] or sorted(__import__('glob').glob('chapters/*.md')))
+        sys.exit(0)
     # One path plus an optional label, as the original took. More than one path
     # and they are all treated as files, so a glob reports on each in turn.
     if len(sys.argv) == 3 and not sys.argv[2].endswith('.md'):
