@@ -174,19 +174,7 @@ Chloe looks at the door. "But they teach driving at school next year, so this is
 
 Her father takes her to the church lot behind the tire place, empty on a Sunday, with a row of light poles to go round, and she stalls it over and over in the first half hour and twice in the second.
 
-On the second Sunday there are people out front of the tire place when they pull in, and Kayleigh Burns comes across the lot with a paper cup in her hand while Chloe is stopped at the far end with the engine off.
-
-"I thought that was you." Kayleigh has her free hand up against the sun. "Are you back the whole summer?"
-
-"Yeah, till August."
-
-"My brother works here Saturdays, so I'm out here all the time now." She looks at the car and then back. "Where do you go now, is it still that school upstate?"
-
-"Yeah, still there."
-
-"That's good." Somebody calls her from the doorway of the shop and she is already turning. "Say hi to your mom."
-
-Chloe puts it in gear and stalls it pulling out of the lot, and her father drinks his coffee and looks at the light poles and says nothing at all about the stall.
+On the second Sunday she gets all the way round the poles twice and stalls it pulling out of the lot at the end of the hour, and her father drinks his coffee and looks at the light poles and says nothing at all about the stall.
 
 By the third Sunday she is out on the road past the reservoir with him in the passenger seat, and the coffee in his hand is still full at the far end of the reservoir.
 

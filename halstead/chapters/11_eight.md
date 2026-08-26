@@ -8,7 +8,7 @@ Her mother has kept the room the way it was, down to the sock on the radiator, a
 
 "Your feet were touching the ground with the pedals still under them, so it isn't fine, and I'm not having this conversation again in a hospital." She is already going back inside with the cup. "Saturday, the place by the tire shop, and you're picking one you'll still fit next year."
 
-On the Saturday the bike place has a rack of them out on the pavement beside the tire shop, and Kayleigh Burns is at the far end of the rack with a helmet hanging off her wrist. Turning round, she says hello and asks whether Chloe is back, and Chloe says yes. Kayleigh says her cousins are coming down in August and the house they rent has a pool, and then her mother calls her from the doorway and she goes. Chloe takes the tallest bike on the rack.
+On the Saturday the bike place has a rack of them out on the pavement beside the tire shop, and Chloe takes the tallest one on it.
 
 She talks the entire summer, coming downstairs already talking most mornings about whatever she was thinking upstairs, with opinions about the news off the paper on the kitchen table, interrupting constantly, apologizing, then doing it again inside a minute. There is singing in the shower now, badly and at volume, and she makes jokes at dinner, some of them bad, and on the nights her father laughs she keeps going.
 

@@ -128,7 +128,7 @@ The tongs go home to the hook on the back of her door, beside the bag she made i
 
 ---
 
-Home in June for the summer, she sleeps through most of the first week, then sleeps the clock round most nights and rides out to the reservoir most days, in July finding a road past the water good for a few extra miles and a hill she has to stand up on, with novels going through her hands in a fortnight, though she could not afterward tell anybody how any of them end. On the hill in the second week of July there is somebody walking up it ahead of her, out on the gravel at the edge, and it is Kayleigh Burns, who says her name as she comes past, and says it again, and asks something after it that the wind takes. Chloe is over the top and onto the far side before she has the brakes on. She rides the loop she was going to ride, and coming back down the same way an hour later the road is empty the whole length of it.
+Home in June for the summer, she sleeps through most of the first week, then sleeps the clock round most nights and rides out to the reservoir most days, in July finding a road past the water good for a few extra miles and a hill she has to stand up on, with novels going through her hands in a fortnight, though she could not afterward tell anybody how any of them end.
 
 The rest is long afternoons on the back steps she and her father built when she was small, with the sun coming round the corner of the garage in the late afternoon and a wasp working the same board every day.
 
