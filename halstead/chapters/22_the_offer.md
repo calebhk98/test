@@ -144,7 +144,7 @@ The silence on the line runs long enough, unbroken by the usual kitchen noise, f
 
 "Plus the rest of it, the housing and the car and everything else on that list."
 
-"You said no to that money, a car, free rent, free food, medical, and a paid degree, at eighteen years old."
+"You said no to that money, a car, free rent, free food, medical, and a paid degree, at seventeen years old."
 
 "Yes."
 
