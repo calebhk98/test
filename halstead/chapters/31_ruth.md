@@ -54,15 +54,15 @@ What eventually breaks it is a professor she likes, in office hours, someone she
 
 His office is on the fourth floor, narrow, with a window stuck a half-inch open and a whiteboard crowded with other students' handwriting he hasn't gotten around to erasing. There are very few of her professors here she likes, and she likes him: he corrects a wrong answer the day he gives one, out loud and with no ceremony about it. He's the only person who has ever pushed back on a proof of hers rather than simply crediting the answer. The result she brings him is one she's proud of, something she worked out over a couple of nights, and she states it the way she states everything, conclusion first. "It holds because the boundary term cancels once you fix the sign convention, and once that's fixed the rest follows directly."
 
-"Stop me there, because you have lost me, and you lost me two steps before I said anything about it." He turns the page round on the desk so that it faces him. "From the top."
+"Stop me there, because you have lost me, and you lost me two steps before I said anything about it." He turns the page round on the desk so that it faces him, and reads the top of it over again while he waits. "From the top."
 
-From the top, then. Step one, step two, and at step three he puts his hand flat on the paper.
+From the top, then, and step one and step two go by without any trouble in them at all, and at step three he puts his hand flat on the paper and leaves it there.
 
 "Still lost. Slower than that, if you don't mind."
 
 She slows down. The assumption she'd folded into a single line comes apart into the separate claims underneath, and she states each on its own. "Fixing the convention only puts it in the form the identity is already written in. Then the boundary term goes to zero."
 
-He nods at the first. At the second the nod does not arrive.
+He nods at the first, and at the second the nod does not arrive, and he sits back off the page with the pen still up in his hand.
 
 "Goes to zero how."
 
@@ -72,9 +72,9 @@ He nods at the first. At the second the nod does not arrive.
 
 "The tail dies before the boundary does."
 
-He goes back up through it from there, the whole way, and tells her the result holds. Then he caps the pen and sets it down on the desk between them.
+He goes back up through it from there, the whole way to the top, stopping twice more to say a step back to her in his own words before he will take it, and at the end of it he tells her the result holds, and caps the pen, and sets it down on the desk between them.
 
-"That took you five passes," he says. "I have graduate students in their third year who would not have got me there at all." He is already reading the next question on his list.
+"That took you five passes," he says. "I have graduate students in their third year who would not have got me there at all." He is already reading down the next question on his list, with the pen back up in his hand for whatever the next of them turns out to need.
 
 Ruth thanks him, packs the loose pages into her folder in the wrong order, and leaves before office hours are officially over.
 

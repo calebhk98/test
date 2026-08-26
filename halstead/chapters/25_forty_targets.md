@@ -80,13 +80,13 @@ Word travels round the company by chow that afternoon, the way a number like tha
 
 "Of the shots. There were people in my year who never missed."
 
-"Sure there were." The man who asked has both elbows either side of his tray. "Nobody maxes that test on a cold morning and then sits here telling you what he's bad at. Your score's been up on the board outside the orderly room since lunchtime."
+"Sure there were." The man who asked has both elbows planted either side of his tray, in the manner of somebody settling in for the remainder of an argument he considers already concluded. "Nobody maxes that test on a cold morning and then sits here telling you what he's bad at. Your score's been up on the board outside the orderly room since lunchtime."
 
 "The board's fine, it's just got a top on it, and everybody who hits the top gets the same number." Sam has the pitcher up and hasn't poured with it yet. "There was a girl at that school called Odile. She took me apart on a mat in front of thirty people, put me down twice inside a minute, and then came and found me afterwards to apologise for it, because she reckoned she'd embarrassed me in front of the year."
 
 "A girl."
 
-"She was second in the year and I was first, and she still put me down twice." He pours. "Then in April I lost a small thing out of my own boot and cost a man half an evening getting it back, so you can have that as well."
+"She was second in the year and I was first, and she still put me down twice." He pours, unhurried about it, and returns the pitcher to the middle of the table in precisely the position he removed it from. "Then in April I lost a small thing out of my own boot and cost a man half an evening getting it back, so you can have that as well."
 
 By the end of it several of them are laughing at him, while another has stopped believing a word of any of it.
 
