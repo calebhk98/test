@@ -216,7 +216,7 @@ Ruth opens her mouth, closes it, opens it a second time, and Sam points at her w
 
 "It's what a mouth is for, lying included, whether you like it or not."
 
-They go at it for the rest of dinner and most of the walk back across the grass, Ruth saying tidally locked over and over and Kavi still arguing that the moon is doing it deliberately, in a voice worn down mostly because Sam keeps saying stuck.
+They go at it for the rest of dinner and most of the walk back across the grass, Ruth saying tidally locked over and over but Kavi still arguing that the moon is doing it deliberately, in a voice worn down mostly because Sam keeps saying stuck.
 
 Partway into the walk back it catches up with her: Kavi, the moon, her own mouth already moving ahead of the check she has run on every sentence since November.
 

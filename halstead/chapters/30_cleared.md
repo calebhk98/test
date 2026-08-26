@@ -10,7 +10,7 @@ People keep asking who works with her. The question shows up as a comment under 
 
 Roughly a third of those conversations end there, with a reply that trails off into something polite, "right, well, if the team ever wants to talk about expanding," and then the thread goes quiet. The pattern repeats often enough, the question and then the drop-off, that she decides it's people being funny about credentials and stops turning it over between emails.
 
-By the winter she's writing most nights well past midnight, laptop balanced on her knees on the couch, the day's translation work already closed out and a browser full of tabs in three languages open around the piece she's actually working on. A currency story that takes a stack of sources and a full weekend to run down turns, by January, into something she can finish between a Tuesday shift and a Wednesday class. The comments get checked before bed sometimes but not other times, no pattern to it that she's noticed, and either way she's asleep within minutes of closing the laptop.
+By the winter she's writing most nights well past midnight, laptop balanced on her knees on the couch, the day's translation work already closed out and a browser full of tabs in three languages open around the piece she's actually working on; a currency story that takes a stack of sources and a full weekend to run down turns, by January, into something she can finish between a Tuesday shift and a Wednesday class. The comments get checked before bed sometimes but not other times, no pattern to it that she's noticed, and either way she's asleep within minutes of closing the laptop.
 
 She's also carrying a full course load and the translation job, but none of it registers as a load.
 
@@ -56,7 +56,7 @@ Rather than press her for more he lets it sit there and moves the pen to the nex
 
 Chloe does, a level sentence in each, the kind of line a phrasebook prints on its first page. Into the notebook goes the fact that she said it, and his pen moves to the fourth item on the list, the content of the sentence itself apparently beside the point.
 
-The classes come after that, all of them, mathematics through politics through the forge, and it takes a full twenty minutes to get through the list. His coffee cools enough in the open thermos cap that he crosses to her counter partway through and tops it up, standing there through one whole answer before he sits back down, and he lets her finish every year of it before he turns the page.
+The classes come after that, all of them, mathematics through politics through the forge, and it takes a full twenty minutes to get through the list; his coffee cools enough in the open thermos cap that he crosses to her counter partway through and tops it up, standing there through one whole answer before he sits back down, and he lets her finish every year of it before he turns the page.
 
 "You taught as well," he says, somewhere in the seventh year of the list, without making a question of it.
 
@@ -118,6 +118,6 @@ The reasoning goes down along with the answer, as everything else has, and he cl
 
 At the door, coat half on, he taps the folder once against his palm. "Now I get to write it up in triplicate for a form that only ever needed one copy." He says it to the folder, not to her, and he's already down the first flight of stairs before she's worked out it was the joke.
 
-The clearance comes through in December, on an ordinary Tuesday, thin enough that she almost sets it on the counter with the takeout menus before the seal above her own name catches the light. Standing, still in her coat, she reads it once, then reads the single paragraph a second time before she sits down to do anything else with it, and files it in the kitchen drawer where everything that's needed keeping ends up.
+The clearance comes through in December, on an ordinary Tuesday, thin enough that she almost sets it on the counter with the takeout menus before the seal above her own name catches the light; standing, still in her coat, she reads it once, then reads the single paragraph a second time before she sits down to do anything else with it, and files it in the kitchen drawer where everything that's needed keeping ends up.
 
 The job starts in January. She turns twenty-one in August.

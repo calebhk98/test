@@ -210,7 +210,7 @@ Chloe walks around the corner at a normal speed with her hands empty and her arm
 
 "Uh," she says. "Hi. Who are you?" She tilts her head like a lost puppy.
 
-All four of them turn. The nearest one comes at her fast and low, gets a gloved hand up near her mouth, but she lets him, because moving would be wrong. He just holds her there, his other arm half up, doing exactly what she needed him to do, in front of three men who are all looking at one thing.
+All four of them turn, and the nearest one comes at her fast and low, gets a gloved hand up near her mouth, but she lets him, because moving would be wrong. He just holds her there, his other arm half up, doing exactly what she needed him to do, in front of three men who are all looking at one thing.
 
 It is done in seconds: Kavi, closest to them, takes the two at the back; Ruth takes the third, but Sam goes for the one with his hand on Chloe's face, doing it badly, missing the vein and going again. The man takes that half a second, gets an arm free, swings, and misses before he goes down.
 
@@ -256,7 +256,7 @@ Chloe sits against the wall with her arms around her knees. "It's still going to
 
 "That's not a reason. It's four in the morning," she says, and she puts her head back against the wall.
 
-Sam calls it in as soon as the last knot is tied. Then they wait, since Sinclair is a few buildings away.
+Sam calls it in as soon as the last knot is tied, and then they wait, since Sinclair is a few buildings away.
 
 The first one comes round after about seven minutes, confused for a beat, before he realizes he's tied and goes still when he sees who did it. "Hi," Ruth says. "You're fine, although you'll feel sick for about an hour." His jaw sets, teeth together.
 
@@ -286,7 +286,7 @@ The man looks at him, his jaw working once. "I don't know," he says.
 
 "See, that's a C," Sam says, walking back with his hands up. "That's a C right there."
 
-Chloe sits against the wall with her arms around her knees while Sam talks, working at the wrongness of it instead of listening. The bolt cutters wrong for that fence. The boots wrong. All of it wrong in one direction: the direction a school would get it wrong in if a school were building this, or the direction four real people would get it wrong in if somebody had handed them the wrong list, and she turns it over the whole way through and it comes out no different either way. The second man's chest going up and down a few feet away sits on that list with the bolt cutters.
+Chloe sits against the wall with her arms around her knees while Sam talks, working at the wrongness of it instead of listening. The bolt cutters wrong for that fence, the boots wrong, all of it wrong in one direction: the direction a school would get it wrong in if a school were building this, or the direction four real people would get it wrong in if somebody had handed them the wrong list, and she turns it over the whole way through and it comes out no different either way. The second man's chest going up and down a few feet away sits on that list with the bolt cutters.
 
 Sinclair arrives with two other adults and a trolley, stops at the corner, and looks at the four men tied along the corridor wall, at the bags, and at the four kids sitting on the floor near them, arms crossed. "Who's monitoring?"
 
