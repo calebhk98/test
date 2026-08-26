@@ -30,7 +30,7 @@ In November Hearn tells her the third page of an essay is doing the work of the 
 
 ________________
 
-The mat room holds the smell of ninety children using it every day, and the window at the top of the wall opens a hand's width and does nothing about it. Self defense is an hour a day from September, every day, and the sheet says it runs to the end.
+The mat room holds the smell of ninety children using it every day; the window at the top of the wall opens a hand's width and does nothing about it. Self defense is an hour a day from September, every day, and the sheet says it runs to the end.
 
 The first term is ones: standing, falling, getting up off the floor with somebody's hand on your collarbone, and twenty minutes at a stretch of somebody in front of you doing a single thing slowly and then doing it slightly faster. Kowalczyk tells her in October that she is planting her back foot before she knows where she is going, and that she needs to stop deciding so early, and in November it goes to twos.
 
@@ -60,11 +60,11 @@ The best anyone in the room manages all afternoon is nine seconds, but Chloe get
 
 By March most of the year is in the single figures on a good day, while Sam gets fourteen seconds in February, a mark that stands alone for the rest of the year, and Chloe is on eleven seconds by June, but two of them she wasted.
 
-Swimming gets harder and the teacher says so in the first week. Some of it is in clothes and some of it is in cold water, and in the third term some of it is towing somebody who fights you the whole way, all of it in how you hold their head.
+Swimming gets harder and the teacher says so in the first week. Some of it is in clothes and some of it is in cold water; in the third term some of it is towing somebody who fights you the whole way, all of it in how you hold their head.
 
 Paintball joins the afternoon block in October, and Bell hands the markers out, says it is what they have been doing with darts, a bit harder, and sets the drill running.
 
-For weeks everybody is bad at it and knows why: the ball goes far faster than a dart, and there is a wall of paint behind the target to prove it. Bell lets them stay stuck that way. By the end of an hour the floor is tacky and everybody's soles come away from it with a sound.
+For weeks everybody is bad at it and knows why: the ball goes far faster than a dart; there is a wall of paint behind the target to prove it. Bell lets them stay stuck that way. By the end of an hour the floor is tacky and everybody's soles come away from it with a sound.
 
 On the second Thursday Ruth is sitting on the floor with her back against the wall bars. "I'm watching it the whole way. I can see it leave, I see the whole thing happen, but my hand's still behind it every single time. I'm going to be behind it for the rest of my life at this rate."
 
@@ -86,9 +86,9 @@ By the end of the hour they have more between them than everybody else on the fl
 
 People start asking on the Friday, and Ruth says she has been practising while Chloe shrugs and changes the subject. Bex has the end of the shrug before Chloe is out of it, so on the Monday it is Bex who says it to Bell, with the whole floor sitting down and the markers on the mats: that nobody can react to the ball, that the barrel is a hose and what you watch is where the hose is pointed, that every marker in this building throws at a single speed. She has all of it, she has it in order, and she says it at the volume she says everything at.
 
-Bell puts it up on the board under her name and runs the rest of the hour off it, and the year goes at it that way from then on.
+Bell puts it up on the board under her name and runs the rest of the hour off it; the year goes at it that way from then on.
 
-Chloe sits at the front of the floor with her knees up and her arms round them. Afterwards she goes back through the Thursday, the wall bars and Ruth's back against them and her own hands out in front of her, working out how much of it went out loud and in what order. She had been going fast and talking at Ruth, and Ruth was the person she had been explaining it to.
+Chloe sits at the front of the floor with her knees up and her arms round them. Afterwards she goes back through the Thursday, the wall bars and Ruth's back against them and her own hands out in front of her, working out how much of it went out loud and in what order. She had been going fast and talking at Ruth; Ruth was the person she had been explaining it to.
 
 By the following week there are theories going round about the markers being different weights.
 
@@ -113,7 +113,7 @@ Most of them are announced, with a board that says *Thursday, afternoon block* a
 
 Her first is on the board on the Monday and happens on the Thursday, when adults come over the north fence with a bag between them and are inside Building Two before anybody has moved. Somebody is off her feet before she turns around. More go down at the stairwell, a boy called Wes answers a question about how many of them there are, and the drill is called well over the standard.
 
-The sheet goes up on the Friday, and every name on it has an F next to it and a numbered list underneath.
+The sheet goes up on the Friday; every name on it has an F next to it and a numbered list underneath.
 
 In the corridor, with people behind her waiting for a turn at it, she reads it under a light that throws everything back off the glass. Number one is response time, number two is that a student answered a question about how many of them there are, and number three is that adults entered a building. Number six says the north stairwell was uncovered, but Chloe, who stood there the whole time, is still working out what covering it would even have looked like.
 
@@ -149,7 +149,7 @@ Chloe has her elbows on the table and her aunt is looking at her elbows. "There 
 
 "I'll give you that," her father says, considering his plate. "What about steel, though, which has been saying that since before you were born?"
 
-She is nodding before he has finished. "Steel says it and textiles said it and somebody's going to say it about something neither of us has heard of. That's the actual problem, because it's an argument anybody can use for anything, so it doesn't sort them, and the guy asking has the same sentences whether he's right or not."
+She is nodding before he has finished. "Steel says it, textiles said it, and somebody's going to say it about something neither of us has heard of. That's the actual problem, because it's an argument anybody can use for anything, so it doesn't sort them, and the guy asking has the same sentences whether he's right or not."
 
 "So how do you actually sort the real ones from the ones just saying it for cover?"
 
@@ -167,7 +167,7 @@ ________________
 
 In December Hearn hands an essay back with no note on it at all.
 
-On the way out into the corridor she checks the back of the last page twice, in case the note went there. There is a mark at the top and bare paper under it, and the page is clean all the way down. She would rather have had a line telling her it was bad. A line she could argue with. A mark with no line under it leaves her only her own doubt to argue against.
+On the way out into the corridor she checks the back of the last page twice, in case the note went there. There is a mark at the top and bare paper under it; the page is clean all the way down. She would rather have had a line telling her it was bad. A line she could argue with. A mark with no line under it leaves her only her own doubt to argue against.
 
 Theo gets his back with no note that week, but he puts it straight into his bag and goes on with what he was saying.
 
@@ -187,7 +187,7 @@ She reads it back on the Wednesday morning before she hands it in, sitting on th
 
 Hearn gives it back on the Monday with a few lines at the bottom, some about a thing she got wrong early on and the rest about what to read next.
 
-The following week she does it again in an afternoon, and the week after that it takes most of an evening, because the question is harder and she spends most of a night stuck, but this time all the pages do what only the third used to. By March she has stopped counting the hours, and Hearn moves her onto Burke, who is harder to argue with than Hamilton and who she goes at for the rest of the year.
+The following week she does it again in an afternoon, and the week after that it takes most of an evening, because the question is harder and she spends most of a night stuck, but this time all the pages do what only the third used to. By March she has stopped counting the hours; Hearn moves her onto Burke, who is harder to argue with than Hamilton and who she goes at for the rest of the year.
 
 In April Sam asks her at dinner whether Hearn has got easier, and she says no, then turns her fork over once before answering. "He hasn't changed a single thing about any of it. Ten pages, every week, and the same handwriting at the bottom."
 

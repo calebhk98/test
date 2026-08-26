@@ -46,7 +46,7 @@ The December sheet has names doing well on it and one still blank. Because the g
 
 A week later she stops at the mathematics office on her way past and asks how a blank column is handled at the end of the year, in the flattest words she can find for it and with no name anywhere in the question. The woman at the desk tells her: the column is scored as submitted work, an absent submission scores nothing, the scheme has no other entry available for it, and a student teacher records what is on the page rather than what is not. It takes under a minute and it answers everything she asked. Chloe thanks her and goes.
 
-Marek does the work and keeps it. The sheet has a column and the column is for paper. The number that comes out of the column goes onto her record as well as his, and she has been asking him for it since October, and asking him is the whole of what she is allowed to do about it.
+Marek does the work and keeps it. The sheet has a column and the column is for paper. The number that comes out of the column goes onto her record as well as his, and she has been asking him for it since October; asking him is the whole of what she is allowed to do about it.
 
 Marek fails the course, because a blank sheet leaves the mark scheme exactly one option, and Chloe is the one who writes it in. In January he is at breakfast as he was in December, in his own year, working through the building, so whatever a fail costs a student here, expulsion is no part of it. What it does cost, whether it follows him onto anything that matters, whether anybody sat him down about it, stays outside her reach for years, and she is careful for a long time about how she asks.
 
@@ -54,7 +54,7 @@ ________________
 
 Her own mathematics stops being about the answer.
 
-Differential equations run alongside real analysis from the second week of September, and the analysis is what turns everything over, because for years she has been handed a problem and asked to produce a number, at which she was quick. Now she is handed something the whole room already believes and asked to show that it follows from four lines at the top of the page that stand outside argument. Her first proof comes back with a line through the middle of it and a sentence underneath.
+Differential equations run alongside real analysis from the second week of September; the analysis is what turns everything over, because for years she has been handed a problem and asked to produce a number, at which she was quick. Now she is handed something the whole room already believes and asked to show that it follows from four lines at the top of the page that stand outside argument. Her first proof comes back with a line through the middle of it and a sentence underneath.
 
 *This step is where you assumed it.*
 
@@ -66,7 +66,7 @@ By November she stops doing it, and by February she stops resenting it.
 
 Half the grammar is a frame she already has from Latin, the vocabulary outside that frame sits close enough to English that she barely has to translate it, and the rest she reaches sideways through French, so by November she reads with the dictionary open beside her, but hardly touches it. When she says so at dinner Ruth points a fork at her and calls it the exact argument Chloe made in a doorway two years ago, held now at a table in front of Sam.
 
-The laboratories split the year between them, and hers does materials, where the youngest fetches, cleans, takes the jobs the seniors avoid. A postdoctoral researcher called Sanders hands her a stack of instrument logs with the paper written off them and asks why the two disagree, since the logs hold far more runs than the paper reports, and neither document says which of them, or when, or by whom. Nineteen days go on it with the logs spread across the tables: the instrument was recalibrated on a Tuesday in March, everything before that Tuesday is in the paper, everything after it stayed in the log alone, and somebody stopped and kept the stopping to themselves. Sanders reads her five pages standing up, puts them in a folder, and says thank you.
+The laboratories split the year between them, and hers does materials, where the youngest fetches, cleans, takes the jobs the seniors avoid. A postdoctoral researcher called Sanders hands her a stack of instrument logs with the paper written off them and asks why the two disagree, since the logs hold far more runs than the paper reports; neither document says which of them, or when, or by whom. Nineteen days go on it with the logs spread across the tables: the instrument was recalibrated on a Tuesday in March, everything before that Tuesday is in the paper, everything after it stayed in the log alone, and somebody stopped and kept the stopping to themselves. Sanders reads her five pages standing up, puts them in a folder, and says thank you.
 
 In cryptography the first term goes entirely on breaking things other people built, substitution, then Vigenere, then a fortnight on why a key you use twice stops being a key, so by November they are working real messages off real systems with real mistakes in them.
 
@@ -88,7 +88,7 @@ With both hands she takes the lid off and turns it toward Chloe. Inside is a cir
 
 The box goes in the drawer under Ruth's window and stays there.
 
-Getting out of the building on a Saturday is a thing you arrange on a Thursday, and in October the arranging stops working three weeks running, so on the third the duty teacher stops at the end of the long table, says she hopes the bus into town is a comfortable one, and carries on to the servery. What she has done is read three messages off the top of a screen over somebody's shoulder, which she is entitled to do and which costs a couple of seconds.
+Getting out of the building on a Saturday is a thing you arrange on a Thursday; in October the arranging stops working three weeks running, so on the third the duty teacher stops at the end of the long table, says she hopes the bus into town is a comfortable one, and carries on to the servery. What she has done is read three messages off the top of a screen over somebody's shoulder, which she is entitled to do and which costs a couple of seconds.
 
 Kavi has the first version running by the end of the month on the school's own machines, because a service inside the building looks like every other service in it, and Ruth writes the encryption herself out of the term's material rather than lifting something already tested.
 
@@ -104,7 +104,7 @@ Ruth reads the column with her chin on her fist. "So it has to look like somethi
 
 "It has to look like what this network is already full of, which is a hundred and sixty machines checking in with each other about the weather every few minutes."
 
-That takes the rest of the term, and what comes out is slow, ugly, and pushes exactly as much traffic at three on a Sunday morning, with all of them asleep, as on a Thursday night with all of them typing. Amberg could take it apart in an afternoon, but not one of them asks him to. They are on the eight o'clock bus the first Saturday in December, and it goes into town with all of them on it.
+That takes the rest of the term; what comes out is slow, ugly, and pushes exactly as much traffic at three on a Sunday morning, with all of them asleep, as on a Thursday night with all of them typing. Amberg could take it apart in an afternoon, but not one of them asks him to. They are on the eight o'clock bus the first Saturday in December, and it goes into town with all of them on it.
 
 Bex has the day out loud before the bus is off the gravel, the hardware place first because it shuts at noon, then food, then everything after that, and she revises it twice before the main road, moving the food and then moving the food back.
 
@@ -112,7 +112,7 @@ Bex has the day out loud before the bus is off the gravel, the hardware place fi
 
 "Walking the last bit in the dark, which is the whole reason we're on the earlier bus, so that's settled," Bex says, and goes down the aisle holding the rail to tell the rest of them.
 
-Chloe has the seat behind the driver and keeps it the whole way in, and in town she does the hardware place while the rest of them are still on the pavement outside settling the order of the afternoon.
+Chloe has the seat behind the driver and keeps it the whole way in; in town she does the hardware place while the rest of them are still on the pavement outside settling the order of the afternoon.
 
 The plan works, all of it, including the food.
 
@@ -132,7 +132,7 @@ What she actually does with block two is the school forge, Thursdays and both Sa
 
 ________________
 
-A Russian piece in February covers a bridge that came down in December, and she read an English piece on that bridge in January, leaving her two accounts of one commission: the English one reports a design fault in the bearings, while the Russian one reports overloading by a contractor, and names him. Both describe a single report, so one of them is wrong, and from where she is sitting she has no way of telling which. A third pair on an unrelated story does it again, and then she goes looking for a fourth.
+A Russian piece in February covers a bridge that came down in December; she read an English piece on that bridge in January, leaving her two accounts of one commission: the English one reports a design fault in the bearings, while the Russian one reports overloading by a contractor, and names him. Both describe a single report, so one of them is wrong, and from where she is sitting she has no way of telling which. A third pair on an unrelated story does it again, and then she goes looking for a fourth.
 
 Law starts with Mr. Amberg walking in and putting a copy of the state code on the desk with both hands.
 
@@ -180,7 +180,7 @@ Nadia waits for him to finish.
 
 Nadia sits back. "You've had your hand over that corner since Kavi passed it. You always do that, which means you've got it and you'd rather keep it off the table."
 
-Chloe takes her hand off the napkin and puts it in her lap while Sam says something about the salt, and by the end of the meal the table has an opinion each, every one of them holding firm.
+Chloe takes her hand off the napkin and puts it in her lap while Sam says something about the salt; by the end of the meal the table has an opinion each, every one of them holding firm.
 
 Nadia is there most nights, saying what she thinks in flat words on principle, so half of it lands as an accusation. They work the November cipher set together and it goes well, though Sam sits between them most nights and neither of them has ever said a word to him about it.
 

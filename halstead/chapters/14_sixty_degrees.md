@@ -2,7 +2,7 @@
 
 *September 2016 – April 2017*
 
-The long field runs north from the back of Building Three to a distant fence, with a road past it and open ground the whole way. The building at that end is flat-roofed, pale, and newer than the rest, and on the field side the grass comes up to the brick with no path worn into it.
+The long field runs north from the back of Building Three to a distant fence, with a road past it and open ground the whole way. The building at that end is flat-roofed, pale, and newer than the rest; on the field side the grass comes up to the brick with no path worn into it.
 
 Archery is ordinary at first, because the start of it is butts at twenty metres, then thirty, then fifty, an hour a day of being told what your elbow is doing by an instructor who walks the line every so often to say it again. Chloe is on the gold most of the time by the end of the second week, bored by the middle of the third, and so is everybody near her.
 
@@ -44,7 +44,7 @@ Odile gets a whole word out at last. "Sunday. My brother's here Sunday, he's bee
 
 Sam wants the sound at dinner, so Chloe tries it with her mouth twice and gets nowhere near it, because only the arrow makes it, and Kavi, who missed it, says it sounds like somebody standing on a stick, while Odile calls back from down the table that it is more of a knock than a crack. By March most of the year has managed a collision at least once, though Odile does it three days out of five, and in April she does it twice inside an hour with the second coming down in pieces.
 
-On the first morning of the year Ruth wants to know what everybody has got, and Chloe reads hers off the sheet and gets as far as the language.
+On the first morning of the year Ruth wants to know what everybody has got; Chloe reads hers off the sheet and gets as far as the language.
 
 "Latin, and before you say anything, I picked it."
 
@@ -72,7 +72,7 @@ Ruth starts to walk again. "Fine, then here's the actual problem with it. I'm do
 
 "Yes," Chloe says, and gets on the stairs before Ruth can start again.
 
-Calculus arrives in mathematics in the second week, on the sheet, in the slot the mathematics already had. Astronomy runs the autumn term on mostly arithmetic: how you get a mass off an orbit, why the rocket equation punishes you the way it does, why that leaves anybody's rocket mostly fuel, and how a distance to somewhere out of reach gets measured and then checked against a second, unrelated method. In November they spend a fortnight on putting an age on the universe, and Chloe writes at length on the two ways of measuring it, which come out different, and she is still turning that over at dinner days later.
+Calculus arrives in mathematics in the second week, on the sheet, in the slot the mathematics already had. Astronomy runs the autumn term on mostly arithmetic: how you get a mass off an orbit, why the rocket equation punishes you the way it does, why that leaves anybody's rocket mostly fuel, and how a distance to somewhere out of reach gets measured and then checked against a second, unrelated method. In November they spend a fortnight on putting an age on the universe; Chloe writes at length on the two ways of measuring it, which come out different, and she is still turning that over at dinner days later.
 
 The hour after that opens with it. The teacher has the numbers disagreeing on the board before anybody has sat down, and says that the disagreement is where the interest is, but the arithmetic is not. Bex brought it to him after dinner on the Thursday, and he goes at it for the rest of the hour. Bex turns round in her seat to say to the row behind her how good it is, at the volume she says everything at.
 
@@ -178,7 +178,7 @@ Her father is in the doorway with a dishcloth over his shoulder.
 
 The dishcloth goes on the oven door. "I was telling your grandmother about it before and she wants to hear it off you. Go on, she's in the front room and she's been after somebody to talk to since lunch."
 
-Chloe tells her grandmother about the arrows and draws the sixty degrees on an envelope, and her grandmother says it all sounds very complicated for a school.
+Chloe tells her grandmother about the arrows and draws the sixty degrees on an envelope; her grandmother says it all sounds very complicated for a school.
 
 "And are you any good at it, or is it early days yet?"
 
@@ -200,7 +200,7 @@ There is a pause of a second and a half.
 
 "Good luck," Sinclair says.
 
-Students come out of a dozen rooms at once, and the shouting in the main stairwell comes up through the floor into Chloe's feet, because thirty-odd adults need doors to get anywhere and there are only a few. The students know which third floor door hangs loose in its frame, which second floor cupboard has a window in the back of it, where the bannister has a gap you can get an arm through, and which kitchen door makes a noise when it opens.
+Students come out of a dozen rooms at once; the shouting in the main stairwell comes up through the floor into Chloe's feet, because thirty-odd adults need doors to get anywhere and there are only a few. The students know which third floor door hangs loose in its frame, which second floor cupboard has a window in the back of it, where the bannister has a gap you can get an arm through, and which kitchen door makes a noise when it opens.
 
 People say afterward that Ruth ran the east stairwell, giving orders from the first thirty seconds with everybody on those stairs doing what she told them, while in minutes Nadia takes the third floor and splits it: two on each stair head, three hauling crates of markers and paint up from the second floor so that every landing keeps its own kit, the rest told where to stand and stay. Students take three instructions from her in a row before any of them thinks about it.
 

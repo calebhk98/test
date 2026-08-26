@@ -20,7 +20,7 @@ A seat empties while she watches, when a boy she half-recognizes from the year a
 
 The runner calls her name a minute later, reading it off the list in the identical cadence he's used on every name ahead of it, and holds the door open with his foot while she goes past him into the office.
 
-His office holds a desk, two chairs, and a small clock turned to face only him, and a folder is already open on the desk when she sits down, her name typed across the tab in the institutional typeface the corridor list is printed in.
+His office holds a desk, two chairs, and a small clock turned to face only him; a folder is already open on the desk when she sits down, her name typed across the tab in the institutional typeface the corridor list is printed in.
 
 "Eleven years," he says, before she's fully settled in the chair. "Anything for the file."
 
@@ -112,7 +112,7 @@ That night she goes back over the notebook and counts the lines in it, which com
 
 ________________
 
-Kavi is one of them, and Chloe hears about it before any posted list confirms it: his name comes up in the common room before dinner, already attached to a number somebody else supplies, and she goes to find him rather than take the secondhand version.
+Kavi is one of them; Chloe hears about it before any posted list confirms it: his name comes up in the common room before dinner, already attached to a number somebody else supplies, and she goes to find him rather than take the secondhand version.
 
 In the evening she finds him in the network room, back against the radiator by the door, a length of stripped cable coiled around his hand while he turns the copper end over between his fingers, over and over, eyes somewhere else, the coil going slack and tight again in his fist.
 
@@ -128,7 +128,7 @@ Chloe watches him get back to work, the slow half-turn of the wrist stripping th
 
 ________________
 
-Iyad has the day at dinner and takes it down the table by name, whose slot fell where and what came out of it, and hers sits in the middle of the run and gets the voice everything else on the list gets, and the boy across from her wants to know whether she is sure. Then Iyad asks her whether she has told anybody at home yet, and puts his fork down for it, and waits, and gets an answer, and puts that in with the rest.
+Iyad has the day at dinner and takes it down the table by name, whose slot fell where and what came out of it, and hers sits in the middle of the run and gets the voice everything else on the list gets, and the boy across from her wants to know whether she is sure. Then Iyad asks her whether she has told anybody at home yet, puts his fork down for it, waits, gets an answer, and puts that in with the rest.
 
 Chloe is up the kitchen-end stairs before the pudding goes round.
 
