@@ -90,4 +90,4 @@ Chloe reads that at one in the morning, with work waiting on the other side of a
 
 Months into the job now, her badge scans without a second glance and the elevator ride already reads like a formality rather than an event, the kind of building that stopped feeling strange to walk into somewhere early on. The messages get read once, and the phone goes face down on the nightstand, another of the nights she has set it down on a piece of news that leaves tomorrow exactly where it was. Her eyes close on the version of tonight that ends here, not on the one that keeps going somewhere she'd have to stay awake to follow.
 
-She goes in the next day and does her job.
+The next day, she goes in and does her job.
