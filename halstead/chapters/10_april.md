@@ -116,7 +116,7 @@ On the second floor by the stairs there is a corkboard everybody walks past, car
 
 Later she asks Kavi about it, on the stairs, the stairwell empty except for the two of them.
 
-"Owen wanted to stay, and before you ask, I am going off something I saw with my own eyes. I know you're about to ask me how I know." He has his shoes off and is holding them by the heels. "He was crying by the kitchens and I saw him, but I didn't say anything, because I was seven and I didn't know what you say to that, and then on the Saturday his mom's car was outside and he was in the back of it."
+"Owen wanted to stay, and before you ask, I am going off something I saw with my own eyes. I know you're about to ask me how I know." He has his shoes off and is holding them by the heels. "He was crying by the kitchens on the Thursday and I saw him, but I didn't say anything, because I was seven and I didn't know what you say to that, and then on the Saturday his mom's car was outside and he was in the back of it."
 
 "Crying about what, though, did somebody say something to him or was it just the leaving?"
 

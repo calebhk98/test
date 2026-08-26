@@ -118,13 +118,13 @@ Chloe is annoyed when the alarm wakes her. It's the small one, the one that sits
 
 Sam gets there last.
 
-In under thirty seconds, Kavi is on their comms. "It's AES-256," he says. "But, it's a six-digit pairing code and they never changed it off default." He's already got the campus cluster chewing on it. "You just run the whole keyspace and see which one gives you something that isn't noise. It's four seconds of compute. It's not even interesting."
+In under thirty seconds, Kavi is on their comms. "It's AES-256," he says. "And the key is whatever they typed at pairing, run through nothing. No salt, nothing stretching it, straight in." He's already got the campus cluster chewing on it. "So you don't go at the cipher, you go at the derivation. Run everything a person can type in a hurry and see which one gives you something that isn't noise. It's four seconds of compute. It's not even interesting."
 
-"How is that AES-256," Sam says, wiping his face. "Why wouldn't they change it?"
+"How is that AES-256," Sam says, wiping his face. "Why wouldn't they carry something better?"
 
 "Because the box says AES-256," Kavi says. "The box always says AES-256."
 
-Ruth reads over his shoulder, "They're almost certainly actors, look at this. This is a consumer handset with a default code. My dad's work has better than this and my dad sells insurance."
+Ruth reads over his shoulder, "They're almost certainly actors, look at this. This is a handset you can buy in a shop. My dad's work has better than this and my dad sells insurance."
 
 "I know," Kavi says. "The problem is that they barely talk. Two transmissions in six minutes, both of them position checks, and neither one says a word about what they came for."
 
@@ -236,7 +236,7 @@ The first one comes round after about seven minutes, confused for a beat, before
 
 The third one wakes up about a minute later, younger, less good at keeping his face still. Then it stops being an interrogation, because Sam has been building up to it for twenty minutes.
 
-"Can I ask you something," Sam says. "Why did you even bother encrypting? It's AES-256 on a default pairing code. That's not even encryption at that point." One of the men on the floor looks at the ceiling.
+"Can I ask you something," Sam says. "Why did you even bother encrypting? It's AES-256 on a handset off a shelf. That's not even encryption at that point." One of the men on the floor looks at the ceiling.
 
 "No, I'm actually asking, you don't have to act like the fake attackers, somebody looked at those and went, yeah, that's the ones." He turns to Kavi. "How long did it take you again?"
 

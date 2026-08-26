@@ -2299,7 +2299,7 @@ On the second floor by the stairs there is a corkboard everybody walks past, car
 
 Later she asks Kavi about it, on the stairs, the stairwell empty except for the two of them.
 
-"Owen wanted to stay, and before you ask, I am going off something I saw with my own eyes. I know you're about to ask me how I know." He has his shoes off and is holding them by the heels. "He was crying by the kitchens and I saw him, but I didn't say anything, because I was seven and I didn't know what you say to that, and then on the Saturday his mom's car was outside and he was in the back of it."
+"Owen wanted to stay, and before you ask, I am going off something I saw with my own eyes. I know you're about to ask me how I know." He has his shoes off and is holding them by the heels. "He was crying by the kitchens on the Thursday and I saw him, but I didn't say anything, because I was seven and I didn't know what you say to that, and then on the Saturday his mom's car was outside and he was in the back of it."
 
 "Crying about what, though, did somebody say something to him or was it just the leaving?"
 
@@ -3277,13 +3277,13 @@ Chloe is annoyed when the alarm wakes her. It's the small one, the one that sits
 
 Sam gets there last.
 
-In under thirty seconds, Kavi is on their comms. "It's AES-256," he says. "But, it's a six-digit pairing code and they never changed it off default." He's already got the campus cluster chewing on it. "You just run the whole keyspace and see which one gives you something that isn't noise. It's four seconds of compute. It's not even interesting."
+In under thirty seconds, Kavi is on their comms. "It's AES-256," he says. "And the key is whatever they typed at pairing, run through nothing. No salt, nothing stretching it, straight in." He's already got the campus cluster chewing on it. "So you don't go at the cipher, you go at the derivation. Run everything a person can type in a hurry and see which one gives you something that isn't noise. It's four seconds of compute. It's not even interesting."
 
-"How is that AES-256," Sam says, wiping his face. "Why wouldn't they change it?"
+"How is that AES-256," Sam says, wiping his face. "Why wouldn't they carry something better?"
 
 "Because the box says AES-256," Kavi says. "The box always says AES-256."
 
-Ruth reads over his shoulder, "They're almost certainly actors, look at this. This is a consumer handset with a default code. My dad's work has better than this and my dad sells insurance."
+Ruth reads over his shoulder, "They're almost certainly actors, look at this. This is a handset you can buy in a shop. My dad's work has better than this and my dad sells insurance."
 
 "I know," Kavi says. "The problem is that they barely talk. Two transmissions in six minutes, both of them position checks, and neither one says a word about what they came for."
 
@@ -3395,7 +3395,7 @@ The first one comes round after about seven minutes, confused for a beat, before
 
 The third one wakes up about a minute later, younger, less good at keeping his face still. Then it stops being an interrogation, because Sam has been building up to it for twenty minutes.
 
-"Can I ask you something," Sam says. "Why did you even bother encrypting? It's AES-256 on a default pairing code. That's not even encryption at that point." One of the men on the floor looks at the ceiling.
+"Can I ask you something," Sam says. "Why did you even bother encrypting? It's AES-256 on a handset off a shelf. That's not even encryption at that point." One of the men on the floor looks at the ceiling.
 
 "No, I'm actually asking, you don't have to act like the fake attackers, somebody looked at those and went, yeah, that's the ones." He turns to Kavi. "How long did it take you again?"
 
@@ -6439,13 +6439,13 @@ It takes him a day and a half to work out what he's holding.
 
 The box is unglamorous, folders sorted only by the year stamped on the tab, a dead file's worth of assessments left closed for years. Working through it in order, front to back, he takes his glasses off between folders to let his eyes rest, a habit worse than useless because he can't read the next label until he puts them back on. The first ninety minutes go to routine material: an embassy posting, a shipping manifest, a currency dispute that resolved itself a decade ago. Then a folder near the bottom has a name on the tab he's read a thousand times, on report cards, on the return address of letters from home, on a building he grew up inside.
 
-There is a file on his own school. It goes back nineteen years.
+There is a file on his own school. It goes back to 2013.
 
 Every few years a different hand takes the file over, a new set of initials in the margin, a new date stamped over the last one instead of replacing it. He could trace an entire career through the initials alone, if he wanted to.
 
 The early assessments say state actor. Two candidates named, one preferred, continued observation recommended. Years later that gets revised down, and the reasoning is laid out plainly: if it were either of them, somebody already inside them would have turned something up by now, and nobody has. The file still lists them, now behind a corporate actor as the likelier explanation.
 
-The current assessment says probably corporate, with the same caveat at the bottom of the page that has apparently been at the bottom of the page for nineteen years, which is that the funding cannot be traced. The paper stock changes twice across the file, a heavier bond in the earliest years, thinner and cheaper by the most recent update, the only visible evidence that nineteen years is really a run of separate budgets and separate rooms rather than one long effort.
+The current assessment says probably corporate, with the same caveat at the bottom of the page that has apparently been at the bottom of the page since the file opened, which is that the funding cannot be traced. The paper stock changes twice across the file, a heavier bond in the earliest years, thinner and cheaper by the most recent update, the only visible evidence that the file is really a run of separate budgets and separate rooms rather than one long effort.
 
 ________________
 
@@ -6802,7 +6802,7 @@ The work happens on the floor of her own apartment, papers in a ring around her 
 
 ruth: its one person and i can show it
 
-theo: the government cant show it and theyve had nineteen years
+theo: the government cant show it and theyve had a dozen years
 
 ruth: the government is arguing from absence. theyre saying "no state would leave this little" and thats not evidence, thats a shrug
 
@@ -6856,7 +6856,7 @@ theo: ok
 
 theo: nobody repeats any of this. i mean it. this is so far above me that i shouldnt know it, and i only know it because somebody handed the new guy a retirement box
 
-theo: theyve had a file on the school for nineteen years
+theo: theyve had a file on the school since 2013
 
 theo: they think its probably a state or a company. theyve been wrong twice and theyre still wrong
 
@@ -6888,11 +6888,11 @@ ________________
 
 They stay in the thread past midnight in their own time zones, Ruth still on her apartment floor with the strip of paper rolled up beside her, Theo back at his desk, the water glass still full at his elbow. Sam is still at his own kitchen table, plate finally empty in front of him; Nadia has the shop's lights off and the register drawer open, counting a second time out of habit rather than need. It's Ruth who brings it back around to what any of this is actually worth.
 
-ruth: so they have nineteen years of work
+ruth: so they have a dozen years of work
 
-theo: they have nineteen years of being wrong
+theo: they have a dozen years of being wrong
 
-ruth: they have nineteen years of being wrong in detail. thats worth more than nothing
+ruth: they have a dozen years of being wrong in detail. thats worth more than nothing
 
 ruth: they know things about our own school that we dont
 
@@ -6909,11 +6909,11 @@ Eli proposes the second worm and Theo says no, and keeps saying no for days.
 
 What arrives is a document rather than a chat message, twelve pages, written at two in the morning at the kitchen table in the apartment three states from where he grew up. It goes to all of them at once instead of to Theo alone, on purpose, because a plan this size only holds together if all of them have read a single set of pages rather than carrying away different memories of what those pages said. It reads like a plan because that is what it is, with an access path, a timeline, what gets touched and what gets left exactly where it was, and it closes on the idea the financial worm's whole design leaned on months earlier, that boring beats clever every time somebody's watching for clever.
 
-The target is the unit Theo already told them exists, which has kept a file on the school for nineteen years and been wrong about who runs it twice. Getting past its security once is a solvable problem. Getting past it and leaving the file looking exactly as it did before, with every trace of them erased, is harder, and the document is mostly about the second problem, not the first.
+The target is the unit Theo already told them exists, which has kept a file on the school for a dozen years and been wrong about who runs it twice. Getting past its security once is a solvable problem. Getting past it and leaving the file looking exactly as it did before, with every trace of them erased, is harder, and the document is mostly about the second problem, not the first.
 
 Theo reads it twice the night it lands, then closes the laptop and makes tea the way his grandmother made it, milk first, and reads the document a third time standing at the counter with the mug going cold in his hand. Day after day he opens it, reads a line or two, and closes it again. He walks to work in the morning and walks home again after dark. In the chat he keeps to small talk, the weather outside his building, a joke Sam makes about the food at basic. Ruth texts him alone once, just his name, and lets it sit.
 
-The reasoning moves him in the end, not the arithmetic. Reading intelligence is what he does for a living, weighing a source against what it's actually worth, and the accounting comes out one way no matter which end he starts from: they already have a file on their own school that's nineteen years out of date, and reading the true version is the only way any of them will ever know what their own government actually thinks it knows. He can write that argument forward or backward and it does not change.
+The reasoning moves him in the end, not the arithmetic. Reading intelligence is what he does for a living, weighing a source against what it's actually worth, and the accounting comes out one way no matter which end he starts from: they already have a file on their own school that's a dozen years out of date, and reading the true version is the only way any of them will ever know what their own government actually thinks it knows. He can write that argument forward or backward and it does not change.
 
 All of them know the law cold. They had sat the same examination, and when Theo finally opens the thread, Ruth is already in it, cross-legged on her own dorm room floor in Cambridge with a roommate asleep two feet away, and Eli's reading from the kitchen table he wrote the document on less than a week earlier, and Ruth already has two numbers ready for him.
 
@@ -7030,7 +7030,7 @@ Chloe is four months into that job when she writes those pages, her hand steady 
 
 They open it in seven different places, each at a different hour, each of them alone with it when it happens. Chloe reads hers at her own desk, five months into a job whose clearance she is stretching a long way past its purpose to do this. The government badge is still clipped to the strap of her bag, exactly where she dropped it on her way in the door. Ruth is in a lab in Cambridge she has no official reason to be in over the summer. She's sitting on the floor with her back against a bench, because the chair is across the room and the walk over there costs more than it's worth. Sam reads his on a phone screen gone dim from the sun, thirty seconds at a time, between whatever a sergeant is telling nineteen other people to do. Nadia has the shop's laptop open on the counter after closing, the till already counted and the drawer already locked, and she reads standing, because sitting down for it would mean deciding it deserved the time. Eli reads his at his own kitchen table, his badge from the security job face-down next to the keyboard, and taps two fingers against the wood the whole way through. Kavi reads his in the lab down the corridor from where he had his own lessons as a boy, turning a pen over and setting it back exactly where it was between paragraphs. Theo reads his standing up, because he was already standing up when the file finished loading. Through the rest of the file he stays on his feet, the twenty minutes outside still ahead of him.
 
-There is a file on all ninety-one of them. Every page carries the same header before anything else on it: a case number nineteen years old, and a classification banner reprinted at the top of every scan as if repeating it enough times might eventually make it true.
+There is a file on all ninety-one of them. Every page carries the same header before anything else on it: a case number opened in 2013, and a classification banner reprinted at the top of every scan as if repeating it enough times might eventually make it true.
 
 Address, employer, family, where their parents work, where everybody banks. Sam's is the thickest and the newest: an Army file stacked on top of everything Halstead ever generated on him. An officer's assessment quotes a number Sam gave honestly and flags the honesty itself as the interesting part, like a result that wouldn't reproduce. Theo's has a note on it that makes him close the laptop with both hands, the careful two-handed close of something that might spill, and go outside for twenty minutes. He comes back in, opens the laptop again, and keeps reading from the line he left off on. That's the whole account anyone else gets of it.
 
@@ -7328,7 +7328,7 @@ priya: what they will say, over and over, is that it was me they came for. by na
 
 chloe: priya
 
-chloe: there is a file. nineteen years old, about the school, and we have read all of it
+chloe: there is a file. a dozen years old, about the school, and we have read all of it
 
 priya: read it how
 

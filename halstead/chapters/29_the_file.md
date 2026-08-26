@@ -16,13 +16,13 @@ It takes him a day and a half to work out what he's holding.
 
 The box is unglamorous, folders sorted only by the year stamped on the tab, a dead file's worth of assessments left closed for years. Working through it in order, front to back, he takes his glasses off between folders to let his eyes rest, a habit worse than useless because he can't read the next label until he puts them back on. The first ninety minutes go to routine material: an embassy posting, a shipping manifest, a currency dispute that resolved itself a decade ago. Then a folder near the bottom has a name on the tab he's read a thousand times, on report cards, on the return address of letters from home, on a building he grew up inside.
 
-There is a file on his own school. It goes back nineteen years.
+There is a file on his own school. It goes back to 2013.
 
 Every few years a different hand takes the file over, a new set of initials in the margin, a new date stamped over the last one instead of replacing it. He could trace an entire career through the initials alone, if he wanted to.
 
 The early assessments say state actor. Two candidates named, one preferred, continued observation recommended. Years later that gets revised down, and the reasoning is laid out plainly: if it were either of them, somebody already inside them would have turned something up by now, and nobody has. The file still lists them, now behind a corporate actor as the likelier explanation.
 
-The current assessment says probably corporate, with the same caveat at the bottom of the page that has apparently been at the bottom of the page for nineteen years, which is that the funding cannot be traced. The paper stock changes twice across the file, a heavier bond in the earliest years, thinner and cheaper by the most recent update, the only visible evidence that nineteen years is really a run of separate budgets and separate rooms rather than one long effort.
+The current assessment says probably corporate, with the same caveat at the bottom of the page that has apparently been at the bottom of the page since the file opened, which is that the funding cannot be traced. The paper stock changes twice across the file, a heavier bond in the earliest years, thinner and cheaper by the most recent update, the only visible evidence that the file is really a run of separate budgets and separate rooms rather than one long effort.
 
 ________________
 

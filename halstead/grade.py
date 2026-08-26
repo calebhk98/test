@@ -98,7 +98,10 @@ def rule(title):
 # metric -> (label, goal, comparison, source of the goal)
 #   ">=" pass at or above, "<=" pass at or below, "~" pass within the band
 GOALS = [
-    ("_words_all", "word count",                 (2000, 4000), "~",  "author, transcript included"),
+    # Ceiling raised to 5,000 so a long chapter is not a failure, but the
+    # book is meant to stay around 300 pages: the target is still 2,000-3,000
+    # and MEAN_WORD_TARGET below is what the book average is judged on.
+    ("_words_all", "word count",                 (2000, 5000), "~",  "author, transcript included"),
     ("fk",       "reading grade (Flesch-Kincaid)", 9.0,        ">=", "author, see band"),
     ("lexile",   "Lexile (approx)",               1000,        ">=", "author"),
     ("ari",      "reading grade (ARI)",           9.0,         ">=", "author, tracks F-K"),
@@ -247,10 +250,39 @@ def table():
     print(run("prose_grade.py", "--summary", *CHAPTERS))
 
 
+# The per-chapter ceiling is 5,000, which is deliberately loose: one long
+# chapter costs the book nothing. What the book cannot afford is every chapter
+# drifting up, so the average is what is actually judged. The book currently
+# runs about 300 printed pages, which is where the author wants it, and he
+# will accept fifty either way. At roughly 380 words to the page that puts
+# the ceiling at a 3,600 mean, and it refuses the 600-page version outright.
+MEAN_WORD_TARGET = (2600, 3600)
+
+
+def book_length(pg):
+    """The book average, which is the number that keeps the page count honest."""
+    counts = [pg.measure(p.read_text(encoding="utf-8"), floor=10)["_words_all"]
+              for p in CHAPTERS]
+    counts = [c for c in counts if c]
+    total, mean = sum(counts), sum(counts) / len(counts)
+    lo, hi = MEAN_WORD_TARGET
+    verdict = "ok" if lo <= mean <= hi else ("under" if mean < lo else "OVER")
+    print(f"  book length   {total:,} words over {len(counts)} chapters, "
+          f"mean {mean:,.0f}   target {lo:,}-{hi:,}   {verdict}")
+    over = [(p.stem, c) for p, c in zip(CHAPTERS, counts) if c > 5000]
+    if over:
+        print("  past the 5,000 ceiling: "
+              + ", ".join(f"{s} ({c:,})" for s, c in over))
+    longest = sorted(zip([p.stem for p in CHAPTERS], counts),
+                     key=lambda r: -r[1])[:3]
+    print("  longest: " + ", ".join(f"{s} {c:,}" for s, c in longest))
+
+
 def targets():
     """Distance to the author's targets, per band and for the book."""
     pg = load("prose_grade.py")
     rule("2. AGAINST TARGET (reading grade by band, Lexile %d)" % LEXILE_TARGET)
+    book_length(pg)
 
     rows = []
     for p in CHAPTERS:

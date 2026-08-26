@@ -90,7 +90,7 @@ priya: what they will say, over and over, is that it was me they came for. by na
 
 chloe: priya
 
-chloe: there is a file. nineteen years old, about the school, and we have read all of it
+chloe: there is a file. a dozen years old, about the school, and we have read all of it
 
 priya: read it how
 

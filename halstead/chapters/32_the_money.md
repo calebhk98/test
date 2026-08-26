@@ -42,7 +42,7 @@ The work happens on the floor of her own apartment, papers in a ring around her 
 
 ruth: its one person and i can show it
 
-theo: the government cant show it and theyve had nineteen years
+theo: the government cant show it and theyve had a dozen years
 
 ruth: the government is arguing from absence. theyre saying "no state would leave this little" and thats not evidence, thats a shrug
 
@@ -96,7 +96,7 @@ theo: ok
 
 theo: nobody repeats any of this. i mean it. this is so far above me that i shouldnt know it, and i only know it because somebody handed the new guy a retirement box
 
-theo: theyve had a file on the school for nineteen years
+theo: theyve had a file on the school since 2013
 
 theo: they think its probably a state or a company. theyve been wrong twice and theyre still wrong
 
@@ -128,11 +128,11 @@ ________________
 
 They stay in the thread past midnight in their own time zones, Ruth still on her apartment floor with the strip of paper rolled up beside her, Theo back at his desk, the water glass still full at his elbow. Sam is still at his own kitchen table, plate finally empty in front of him; Nadia has the shop's lights off and the register drawer open, counting a second time out of habit rather than need. It's Ruth who brings it back around to what any of this is actually worth.
 
-ruth: so they have nineteen years of work
+ruth: so they have a dozen years of work
 
-theo: they have nineteen years of being wrong
+theo: they have a dozen years of being wrong
 
-ruth: they have nineteen years of being wrong in detail. thats worth more than nothing
+ruth: they have a dozen years of being wrong in detail. thats worth more than nothing
 
 ruth: they know things about our own school that we dont
 
