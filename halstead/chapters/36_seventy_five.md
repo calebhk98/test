@@ -2,11 +2,11 @@
 
 *October 2026*
 
-Priya goes quiet for eleven days in October, which is ordinary enough that the rest of them let it run. Quiet has run longer than that over a pass with no signal, and once for three weeks over a mare that would not foal.
+Priya goes quiet for eleven days in October, which is ordinary enough that the rest of them let it run. Quiet has run longer than that over a pass with no signal, and once for the better part of a month over a mare that would not foal.
 
-The rest of them are where the summer left them, a season on from a thing none of them refers to directly in writing. Chloe is nine months into the job and reads the chat on a bus with her bag on her knees. Ruth has a card with her name on it slotted into a bracket beside a door, and a second-year who has started turning up wherever she eats. Kavi has the lab he had in June and a second bench in it that arrived without anybody asking him whether he wanted one. Sam is at a unit in a state he first set foot in the day he was posted to it, with a phone he can use in the evenings. Nadia has five more people on the floor at the company than she had in June, and still counts her parents' till on a Sunday. Eli has a job title with a word in it he finds funny, and has now explained the joke to five separate people, each of whom received it politely. Theo answers from a window with the blinds already down.
+The rest of them are where the summer left them, a season on from a thing none of them refers to directly in writing. Chloe is nine months into the job and reads the chat on a bus with her bag on her knees. Ruth has a card with her name on it slotted into a bracket beside a door, and a second-year who has started turning up wherever she eats. Kavi has the lab he had in June and a second bench in it that arrived without anybody asking him whether he wanted one. Sam is at a unit in a state he first set foot in the day he was posted to it, with a phone he can use in the evenings. Nadia has taken on more people on the floor at the company than she had in June, and still counts her parents' till on a Sunday. Eli has a job title with a word in it he finds funny, and has now explained the joke to several people, each of whom received it politely. Theo answers from a window with the blinds already down.
 
-What the eleven days were was a bus with a cracked window, then a second bus, then a room over a feed merchant's with a lock she changed herself on the first afternoon. Three days of that were spent sitting still and letting a hand come up and go down again, which is roughly what she would do with any animal that had been got at: stay where it can see you, and wait for the shaking to finish on its own schedule.
+What those days were was a bus with a cracked window, then a second bus, then a room over a feed merchant's with a lock she changed herself on the first afternoon. Part of the time in that room was spent sitting still and letting a hand come up and go down again, which is roughly what she would do with any animal that had been got at: stay where it can see you, and wait for the shaking to finish on its own schedule.
 
 She comes back at four in the morning, whichever one she is standing in.
 
@@ -20,13 +20,13 @@ priya: people keep turning up to take me. since march. it does not seem to matte
 
 nadia: take you
 
-priya: unmarked van, two men, half five in the morning, and i went over the wall at the back. i put it down as the thing that happens to a woman living somewhere nobody knows her name
+priya: unmarked van, two men, before it was properly light, and i went over the wall at the back. i put it down as the thing that happens to a woman living somewhere nobody knows her name
 
 priya: then six of them in may, and about a dozen in july, and by july i had already stopped using the same door twice
 
 priya: tuesday night there were seventy-five
 
-Ruth reads that twice, which is how she reads a paper and how she reads very few other things. Nadia is behind the counter with the shutter still down and the float half counted, and the float stays half counted for a good ten minutes.
+Ruth reads that twice, which is how she reads a paper and how she reads very few other things. Nadia is behind the counter with the shutter still down and the float half counted, and the float stays half counted in front of her for a good while.
 
 kavi: seventy-five
 
@@ -54,9 +54,9 @@ Eli reads that standing at a kitchen counter with the kettle going behind him, a
 
 priya: they had guns from the start and left them alone until i was already through the line and moving, which was about thirty in
 
-priya: the two i took off the grass went into the engine blocks of the only two vehicles on that side of the field, because the alternative was outrunning a van on a farm track
+priya: the two i took off the grass went into the engine blocks of the only vehicles on that side of the field, because the alternative was outrunning a van on a farm track
 
-priya: i took two off the grass on the way past. i was not crossing a field empty handed
+priya: i took them off the grass on the way past. i was not crossing a field empty handed
 
 theo: and then
 
@@ -76,13 +76,13 @@ eli: you took prisoners
 
 priya: i took two men who were asleep in a field in october
 
-Where she is holding them stays her business, and the chat leaves it there, the way the eight of them have always left a thing somebody has clearly already decided about. What she says about the two of them over the following week arrives in pieces, and all of it is logistics. The smaller one has a knee that wants ice twice a day. The pair of them eat more than she budgeted for, and one of them puts every piece of onion on the edge of the plate. By the Thursday one of them says good morning first. By the Saturday the other is sitting up when she comes in with the tray.
+Where she is holding them stays her business, and the chat leaves it there, the way the eight of them have always left a thing somebody has clearly already decided about. What she says about them over the following week arrives in pieces, and all of it is logistics. The smaller one has a knee that wants ice twice a day. The pair of them eat more than she budgeted for, and one of them puts every piece of onion on the edge of the plate. By the Thursday one of them says good morning first. By the Saturday the other is sitting up when she comes in with the tray.
 
-The room over the feed merchant's has a window and a door onto an outside stair, and she has spent part of every day since Tuesday standing at the top of that stair with a mug, watching the road at the hour a van would come if a van were coming, timing the gap between the bend and the gate at a walk, and then again at a run, and writing both numbers on the back of a feed docket that lives in her coat. Feeding is at two fixed hours every day, because a thing that knows when the food is coming will spend the rest of its attention on something other than the door.
+The room over the feed merchant's has a window and a door onto an outside stair, and she has spent part of every day since Tuesday standing at the top of that stair with a mug, watching the road at the hour a van would come if a van were coming, timing the gap between the bend and the gate at a walk, and then again at a run, and writing both numbers on the back of a feed docket that lives in her coat. Feeding is at fixed hours every day, because a thing that knows when the food is coming will spend the rest of its attention on something other than the door.
 
 priya: they are american. they say agency and they will not say which one
 
-priya: four days and i have six sentences out of the pair of them, which is about what i expected
+priya: four days and i have almost nothing out of the pair of them so far, which is about what i expected
 
 priya: it is also a great deal less than i expected. i cannot get those two to sit together
 
@@ -126,23 +126,23 @@ priya: ruth i finished sixty-fourth out of ninety-one. bottom third four years r
 
 priya: but thank you for the heads up, genuinely
 
-The chat lets it go there. Chloe types a paragraph on the bus, gets as far as the second sentence about what is in the file, reads it back to herself at the stop, and sends five words instead. Theo starts a message and holds it long enough that the typing indicator comes and goes twice for the others, and what arrives is the name of a form and a number, which Priya thanks him for and leaves alone.
+The chat lets it go there. Chloe types a paragraph on the bus, gets as far as the second sentence about what is in the file, reads it back to herself at the stop, deletes all of it, and sends a single line instead. Theo starts a message and holds it long enough that the typing indicator comes and goes twice for the others, and what arrives is the name of a form and a number, which Priya thanks him for and leaves alone.
 
 priya: although
 
-priya: if those two are what they say they are, then one of them on his own should be worth three sams, and there were seventy-five
+priya: if those two are what they say they are, then one of them on his own should be worth a sam and then some, and there were seventy-five
 
 priya: so either they are lying about who they work for, or somebody has spent a lot of money on people who are not very good at it
 
 priya: which is a much more useful question than the one i came in with
 
-Ruth finishes the arithmetic she started an hour earlier and keeps the answer to herself, because seventy-five people across a field is a hundred and ten metres, and a hundred and ten metres is a distance she has walked a thousand times between two buildings, and she can see the whole of it at once.
+Ruth finishes the arithmetic she started an hour earlier and keeps the answer to herself, because seventy-five people across a field is a hundred and ten metres, and a hundred and ten metres is a distance she has walked a thousand times between buildings, and she can see the whole of it at once.
 
-Ruth is up until three with the page open and a pencil, and what she writes down turns out to be about everybody except Priya. It is a list of the seven other places any of them sleeps, and the distance from each of those to a road a vehicle could wait on, and it takes her until the fourth entry to notice she has started at the bottom of the list rather than the top, with her own address last.
+Ruth is up until three with the page open and a pencil, and what she writes down turns out to be about everybody except Priya. It is a list of the other places any of them sleeps, and the distance from each of those to a road a vehicle could wait on, and it takes her until the fourth entry to notice she has started at the bottom of the list rather than the top, with her own address last.
 
-In the morning Chloe reads the third page of the file again, the paragraph about the funding line, which she has read enough times to recite and has always read on an ordinary morning with a coffee going cold beside it. She goes in and does her job, which is the job it was in June, in the same building, with the badge and the lift and the lull between the morning traffic and the afternoon. The search she runs at eleven has an entirely different name in the box, takes eight seconds, and returns a form number she saw once already that morning, in a message from a man three blocks away who is careful about what he puts in writing. The entry is read and closed, and the next thing in the queue is open at seven minutes past.
+In the morning Chloe reads the third page of the file again, the paragraph about the funding line, which she has read enough times to recite and has always read on an ordinary morning with a coffee going cold beside it. She goes in and does her job, which is the job it was in June, in the same building, with the badge and the lift and the lull between the morning traffic and the afternoon. The search she runs mid-morning has an entirely different name in the box, and what comes back is a form number she saw once already that morning, in a message from a man across town who is careful about what he puts in writing. The entry is read and closed, and the next thing in the queue is open before the hour is out.
 
-The ranking goes unmentioned after that. Nadia asks, two days later and only to Priya, whether she wants somebody in the yard with her for a while, and gets back a photograph of a gate with a new hinge on it and the word sorted. Sam offers to come out for a fortnight of his leave and is told the flights are absurd, and offers again the following day with a screenshot of a cheaper flight. Eli sends a list of six things to change about the room over the feed merchant's, five of which she has already done.
+The ranking goes unmentioned after that. Nadia asks, days later and only to Priya, whether she wants somebody in the yard with her for a while, and gets back a photograph of a gate with a new hinge on it and the word sorted. Sam offers to come out for a fortnight of his leave and is told the flights are absurd, and offers again the following day with a screenshot of a cheaper flight. Eli sends a list of things to change about the room over the feed merchant's, most of which she had already done before it arrived.
 
 Kavi takes six hours to answer, which for Kavi means he has been doing something about it rather than thinking about it, and what he sends is a single line about a piece of software none of them has heard of and a question about what the yard uses for its gate.
 

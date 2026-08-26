@@ -4,17 +4,17 @@
 
 They are the first to sneak out in ten years, the entire reason it is worth doing.
 
-Over two weeks the preparation divides itself four ways: Nadia stands next to a maintenance supervisor in the dining hall on a Tuesday, talks about the weather for half a minute, and walks away with his badge duplicated; Chloe gets into the corridor cameras and sets them looping on a stretch of empty hallway; Ruth brings the box she built at thirteen for finding video recorders on the networks around it and logging in with the passwords they shipped with; and Sam clocks the night patrol's second pass three nights running, until the interval between it and the first is regular enough to walk through at an ordinary speed.
+In the fortnight before, the preparation divides itself four ways: Nadia stands next to a maintenance supervisor in the dining hall on a Tuesday, talks about the weather for half a minute, and walks away with his badge duplicated; Chloe gets into the corridor cameras and sets them looping on a stretch of empty hallway; Ruth brings the box she built at thirteen for finding video recorders on the networks around it and logging in with the passwords they shipped with; and Sam clocks the night patrol's second pass night after night, until the interval between it and the first is regular enough to walk through at an ordinary speed.
 
 Kavi turns it down at the last second, saying he wants to finish something, and from Kavi this always means he has already started it and would rather see the end of it than the far side of a fence, so the rest of them go over the fence twenty minutes short of midnight.
 
 ---
 
-The road into town runs downhill for the first mile, no streetlights whatever until the gas station, and they keep to the gravel shoulder in a loose column, Sam out front with his hands in his pockets, Nadia counting the passing cars under her breath out of habit rather than necessity, since the road at this hour supplies perhaps three of them in a mile. A dog somewhere behind a fence works itself up for half a block and then gives up on them, and they cut through the vacant lot behind a tire place and out onto the road on the far side of it, so half an hour gets them to the diner sign, waffles lit up yellow against the dark, the last stretch quiet except for boots on gravel.
+The road into town runs downhill for the first mile, no streetlights whatever until the gas station, and they keep to the gravel shoulder in a loose column, Sam out front with his hands in his pockets, Nadia counting the passing cars under her breath out of habit rather than necessity, since the road at this hour supplies few of them in a mile. A dog somewhere behind a fence works itself up for half a block and then gives up on them, and they cut through the vacant lot behind a tire place and out onto the road on the far side of it, so half an hour gets them to the diner sign, waffles lit up yellow against the dark, the last stretch quiet except for boots on gravel.
 
 The diner does waffles all night, the syrup chained to the napkin holder and a jukebox in the corner silent since long before any of them were born, and they take a booth by the window, the lot lit orange under a surviving sodium lamp, the waitress putting menus down before the door has finished swinging shut behind them. They order too much and then Sam orders more, a full stack for himself and half of Nadia's once she stops eating a third of the way through it, and he works his way around the crisp top edge of his own stack before he touches the syrup at all, a ritual he performs on every waffle he has ever been handed. The waitress, maybe fifty, carries a stack of plates along her arm, refills the coffee unasked, and calls all of them honey, twice for Ruth, and Ruth takes it from her without a word, while Nadia falls asleep sitting up and then wakes and finishes her sentence.
 
-They stay two hours, long enough for Sam to want to know whether the dent in Amberg's car is really shaped like a mailbox, and Ruth, having asked him outright once and got a straight answer, says it is.
+They stay a couple of hours, long enough for Sam to want to know whether the dent in Amberg's car is really shaped like a mailbox, and Ruth, having asked him outright once and got a straight answer, says it is.
 
 "He told you that, just like that, no hedging, no story about how it got there?"
 
@@ -66,7 +66,7 @@ There's a shopping cart in the lot behind a hardware store on the way home, and 
 
 ---
 
-The men come out three blocks later, between two parked cars, seven of them in a clump. A streetlight over the row is running on a bad ballast, on, off, on. They stop a few meters short and the man at the front does the talking. Three have guns, two down at their sides, one up and moving.
+The men come out a few blocks later, between two parked cars, seven of them in a clump. A streetlight over the row is running on a bad ballast, on, off, on. They stop a few meters short and the man at the front does the talking. Three have guns, two down at their sides, one up and moving.
 
 "Phones. Watches. Come on."
 
@@ -156,12 +156,12 @@ Sam laughs most of the way to the corner, and Ruth lets him have it, so they cro
 
 ---
 
-They're back over the fence a few minutes past two, Chloe's camera loop already unwinding itself toward normal, and the corridor is empty and quiet the whole way to their own doors.
+They're back over the fence a few minutes later, Chloe's camera loop already unwinding itself toward normal, and the corridor is empty and quiet the whole way to their own doors.
 
 Chloe sets her shoes down by the door, laces still knotted from being kicked off rather than untied, and lies on top of the covers for a while before she gets under them.
 
 ---
 
-Ruth shuts the box off in the corridor and puts it in the chat before she sleeps, three lines and a photograph of Sam standing in the lot with his arms out, and by breakfast there are sixty replies and an argument about whether it counts, whether seven with three guns between them is a real test or just seven people happening to be in the way.
+Ruth shuts the box off in the corridor and puts it in the chat before she sleeps, a few lines and a photograph of Sam standing in the lot with his arms out, and by breakfast there are sixty replies and an argument about whether it counts, whether seven of them with guns is a real test or just seven people happening to be in the way.
 
 Kavi sends a laughing face, his entire contribution, read out at breakfast by Ruth while Sam reaches past her for the syrup and starts on his tray, like the question landed for somebody else at the table, and he lets it sit every time it comes up, and keeps letting it sit long enough for people to start bringing it up purely to watch him do it again.

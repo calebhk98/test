@@ -2,9 +2,9 @@
 
 *August 2012 – October 2012*
 
-The loop out front is full of cars with their trunks standing open, more adults in it than Chloe has seen in one place all month, and somebody's little brother screaming about a shoe. Sam left at seven, which Chloe finds out from a girl she had not spoken to once all month and who tosses it over her shoulder with a pillow under one arm, already halfway down the hall, while Kavi is over by the double doors with two adults who give him a hand up, until a family walks between them and by the time they pass he has gone.
+The loop out front is full of cars with their trunks standing open, more adults in it than Chloe has seen in one place all month, and somebody's little brother screaming about a shoe. Sam left early, which Chloe finds out from a girl she had not spoken to once all month and who tosses it over her shoulder with a pillow under one arm, already halfway down the hall, while Kavi is over by the double doors with adults who give him a hand up, until a family walks between them and by the time they pass he has gone.
 
-Ruth finds her at the flagpole, hugs her hard enough to hurt, and says it from six inches away with a fistful of Chloe's sleeve in each hand. "So we're all getting in, that's the plan and everybody's doing it, so you have to, okay? You as well, promise me you'll make it in."
+Ruth finds her at the flagpole, hugs her hard enough to hurt, and says it from close up with a fistful of Chloe's sleeve in each hand. "So we're all getting in, that's the plan and everybody's doing it, so you have to, okay? You as well, promise me you'll make it in."
 
 "We're all getting in, I promise, and I'm going to ask every single day until somebody actually says yes."
 
@@ -20,7 +20,7 @@ In August her mom is standing at the counter sorting through the mail, while Chl
 
 "Who's Sam, honey, because that name is new to me?"
 
-"From camp, where he was in my class the whole four weeks and built the bridge with me, and he swims two lengths straight through."
+"From camp, where he was in my class the whole month and built the bridge with me, and he swims two lengths straight through."
 
 "Oh, of course we can call him, honey, that's no trouble at all," her mom says, putting the envelope down and looking pleased about it in a way that puzzles Chloe. "What's his number?"
 
@@ -28,11 +28,11 @@ Chloe's mouth opens, then stays open a beat too long. "A number was extra, becau
 
 "That's all right, we can look him up, because everybody is in the book," her mom says, getting the phone book out from under the microwave and opening it on the counter while she looks at Chloe. "What's his last name, sweetie, since that will get us there faster than the first name will?"
 
-Chloe opens her mouth, then closes it, and goes upstairs to sit on the end of her bed and try to remember. Sam is seven and a half, and says the "and a half" every time; sleeps with his window open, which he mentioned more than once; has a sister, or possibly a cousin, who plays soccer, though she is still unsure which; swims two lengths straight through, a fact that came up at dinner most days for a month; and thinks he is funny, which she can still hear, two short barks and then his hand over his mouth.
+Chloe opens her mouth, then closes it, and goes upstairs to sit on the end of her bed and try to remember. Sam says the "and a half" after his age every time; sleeps with his window open, which he mentioned more than once; has a sister, or possibly a cousin, who plays soccer, though she is still unsure which; swims two lengths straight through, a fact that came up at dinner most days for a month; and thinks he is funny, which she can still hear, the short bark of it and then his hand over his mouth.
 
 "He was just Sam, all month, because first names were the only names anybody used there," she says, coming back down.
 
-"Ruth, then, the one you said built the better bridge, so what is her family called?" her mom asks.
+"Ruth, then, the girl you said built the better bridge, so what is her family called?" her mom asks.
 
 "She was just Ruth to everybody, the entire time."
 
@@ -42,31 +42,31 @@ Chloe opens her mouth, then closes it, and goes upstairs to sit on the end of he
 
 Her mom's hand comes off the phone book and rests on top of Chloe's head for a second before it goes back to the page.
 
-"Priya, then, because you slept in a room with Priya for twenty-eight days, Chloe, so you have to know something about her family."
+"Priya, then, because you slept in a room with Priya for a whole month, Chloe, so you have to know something about her family."
 
 "I had no idea I would need it, and now there's no way left to find out," she says, and her mouth goes tight at the corners, the way it does right before she cries.
 
 Her mom's eyes come up. "It's OK, the last names can go, because we can just ask the school instead," and she closes the phone book and gets the camp folder down off the shelf by the door.
 
-Somebody at the school picks up on the second ring, and Chloe gets close, straining to hear, while her mom gives their name, then Chloe's, confirms yes, that's the one, and settles into a long stretch of listening, her weight going onto one foot and then the other.
+Somebody at the school picks up on the second ring, and Chloe gets close, straining to hear, while her mom gives their name, then Chloe's, confirms yes, that's her, and settles into a long stretch of listening, her weight going onto one foot and then the other.
 
 "Right, no, I understand that," she says, and listens again. "What I'm asking instead is whether it can go the other way, so that if I give you our number you can pass it along to them, and then it is entirely up to those families whether they do anything with it."
 
 "Okay, yes, that works, thank you: Chloe Kessler." She says their number. "And she'd have been in with a Sam, a Ruth, a Kavi and a girl called Priya, in the same room the whole time, if that helps you find her. Can you just let them know that Chloe would like to talk to them? Thank you very much." And she hangs up.
 
-"Okay, honey, and all we can do now is wait for one of those families to call us back."
+"Okay, honey, and all we can do now is wait for those families to call us back."
 
 ---
 
-Chloe waits for the phone for eleven days.
+Chloe waits for the phone, day after day.
 
 Instead of her room, she takes her book down and reads it in the kitchen, in the chair that puts the phone in her sightline, and she is up and across the floor before the first ring finishes if she is anywhere near it. Twice she gets it on the second ring, and once on the first, and it is her grandmother, and a man asking for her dad, and a woman who wants to know whether her dad is the registered owner of the vehicle. Each time she says the call is for somebody else and hands it over, then sits back down with the book open where it was before, and on the ninth day her mom tells her that these things can take weeks.
 
 "How many weeks, though, because I want an actual number," Chloe says, standing at the counter with the book still open against her chest.
 
-"Honestly, sweetheart, it's hard to say, because it could be one week or it could be a month, and every one of these calls moves at its own pace."
+"Honestly, sweetheart, it's hard to say, because it could be one week or it could be a month, and every call moves at its own pace."
 
-After that she stops sitting in the kitchen, though she still crosses the room to check the phone is on the hook before she goes up, every night, and she still comes down two stairs at a time if it rings.
+After that she stops sitting in the kitchen, though she still crosses the room to check the phone is on the hook before she goes up, every night, and she still comes down the stairs fast if it rings.
 
 ---
 
@@ -74,7 +74,7 @@ On a Sunday, in the car coming back from her grandmother's, she asks: "Can I go 
 
 "Go where, honey, because you have lost me completely."
 
-"Halstead, not the summer one but the whole one, the year one."
+"Halstead, not the summer one but the year one, the whole thing."
 
 Before she answers, her mom looks out her own window, and her dad's hands come up to the top of the wheel.
 
@@ -86,13 +86,13 @@ Before she answers, her mom looks out her own window, and her dad's hands come u
 
 ---
 
-Since the book has to go back, they go on Tuesday, and Chloe, who has had it out for five weeks, carries it in with both hands, hugged against her chest instead of held out to hand over.
+Since the book has to go back, they go on Tuesday, and Chloe, who has had it out for weeks, carries it in with both hands, hugged against her chest instead of held out to hand over.
 
 "There she is," the librarian says, taking it and tsking as she turns the date card over. "It's been five weeks, not four, so did you get through it at least twice, to make it worth the wait?"
 
-"Twice, and I would have gone for a third if there had been any time left in the month," she says, already talking before the card is all the way turned, up on her toes at the desk with her chin nearly over the top of it. "There was less time than I thought there would be, because there's a plastic man called Gary and you do CPR on him, and when you push in the right place hard enough he clicks, and I got the click on the fourth try, and we built a bridge out of dowels and string and hung a bucket off the middle of it and put weights in a pound at a time until it broke, and ours went at eleven pounds and it went at the corner, right at the corner, which was the only one that did."
+"Twice, and I would have gone for a third if there had been any time left in the month," she says, already talking before the card is all the way turned, up on her toes at the desk with her chin nearly over the top of it. "There was less time than I thought there would be, because there's a plastic man called Gary and you do CPR on him, and when you push in the right place hard enough he clicks, and I got the click on the fourth try, and we built a bridge out of dowels and string and hung a bucket off the middle of it and put weights in a pound at a time until it broke, and ours went at the corner, right at the corner, which was the only corner that did."
 
-"Did it now, because that is a number to be pleased with."
+"Did it now, because that is something to be pleased with."
 
 "And I can divide fractions now," she says, having to stop and get a breath in before she can go on. "Not just do them, I know why it works, and I got that part on my own, on the floor of my room, at night, and it took me about an hour with the door shut."
 
@@ -102,15 +102,15 @@ Chloe takes her four off the cart, still catching her breath, and finishes two o
 
 ---
 
-Second grade is Ms. Vance, who everybody says is the nice one, and the desks are in groups of four with a name card taped to the corner of each one.
+Second grade is Ms. Vance, who everybody says is the nice one, and the desks are in groups of four with a name card taped to the corner of each.
 
 "These are your groups until Thanksgiving, so you're going to want to be nice to the three people you're looking at right now. If somebody in your group is stuck you're allowed to help them, and helping means you talk about it with them, rather than doing it yourself and letting them copy it off you."
 
 Somebody asks whether you can swap groups, and Ms. Vance says no in a way that has clearly been asked for before, so Chloe's group stays Bryce Dolan, Kayleigh Burns and a boy called Aiden R.
 
-The first math sheet comes around at twenty past nine, and she squints at it before she can tell that it's adding with carrying, which she learned last year and can still picture: the little box that you write the one in, and Mrs. Aldana drawing that box in green marker, thirty of them on the page.
+The first math sheet comes around midmorning, and she squints at it before she can tell that it's adding with carrying, which she learned last year and can still picture: the little box that you write the one in, and Mrs. Aldana drawing that box in green marker, thirty of them on the page.
 
-Fractions at camp, staying up until the number finally sat still on the page, and now this, math from last year again. Having done all thirty she goes back to the top and checks each one over, and every answer matches what she wrote the first time, so she puts her hands in her lap and waits for the room to catch up around her. She is relieved to find it still works like it worked in first grade.
+Fractions at camp, staying up until the number finally sat still on the page, and now this, math from last year again. Having done all thirty she goes back to the top and checks them all over, and every answer matches what she wrote the first time, so she puts her hands in her lap and waits for the room to catch up around her. She is relieved to find it still works like it worked in first grade.
 
 ---
 
@@ -126,7 +126,7 @@ Chloe is already leaning over her own paper with the pencil going before anybody
 
 "What was that, Chloe, and can you say it again so the rest of us can hear it too?"
 
-"Because you won't be you, you'll be somebody three years older who won't remember doing any of this, and that makes it exactly like sending a package to a person you have yet to meet," she says, and keeps going, faster now, one foot hooked around the leg of her chair. "Except it's got your name on it, so they have to open it whether they asked for it or not."
+"Because you won't be you, you'll be somebody older who won't remember doing any of this, and that makes it exactly like sending a package to a person you have yet to meet," she says, and keeps going, faster now, one foot hooked around the leg of her chair. "Except it's got your name on it, so they have to open it whether they asked for it or not."
 
 Kayleigh Burns has turned around in her chair to say it: "Why do you talk like that, because it's like you're reading it off a card or something?"
 
@@ -138,15 +138,15 @@ Chloe's hand comes down over what she has already written, the whole page gone u
 
 "Yeah," Bryce says, and turns back around.
 
-Her hand stays where it is for the rest of the period, and when Ms. Vance calls time she scratches out the two lines underneath it until the pencil almost goes through the paper, then, while Ms. Vance is over at the cabinet with the tape and looking up for none of it, writes I hope you like fifth grade instead, folds it in half twice, and puts it in the box.
+Her hand stays where it is for the rest of the period, and when Ms. Vance calls time she scratches out the lines underneath it until the pencil almost goes through the paper, then, while Ms. Vance is over at the cabinet with the tape and looking up for none of it, writes I hope you like fifth grade instead, folds it in half twice, and puts it in the box.
 
 ---
 
 The four books are due on a Thursday and she has finished two of them.
 
-Having taken the third one to bed on the Monday, she gets a page and a half in, reads the same sentence twice, and starts the page over with no memory of what it said the first time. On the Tuesday she opens it where she stopped, reads the top of the page, reads it again, gives up and puts it down on the floor, and on the Wednesday she leaves it there.
+Having taken the third book to bed on the Monday, she gets a page and a half in, reads the same sentence twice, and starts the page over with no memory of what it said the first time. On the Tuesday she opens it where she stopped, reads the top of the page, reads it again, gives up and puts it down on the floor, and on the Wednesday she leaves it there.
 
-Her mom drives her to the library on Thursday and waits in the car with the engine running, so Chloe carries the two finished ones up to the desk by herself, walking fast past the shelves, and comes back out to the car with the other two, the ones she had left off, still in her bag.
+Her mom drives her to the library on Thursday and waits in the car with the engine running, so Chloe carries the finished ones up to the desk by herself, walking fast past the shelves, and comes back out to the car with the others, the ones she had left off, still in her bag.
 
 "What happened to getting more books this week, because that's not like you at all?"
 
@@ -156,7 +156,7 @@ Her mom drives her to the library on Thursday and waits in the car with the engi
 
 "I've just got a lot of school stuff," Chloe says.
 
-The library card goes in the drawer in the kitchen where the batteries are, and three weeks later, when her mom asks whether she wants to go on Saturday, Chloe says no thank you and asks her to renew them please.
+The library card goes in the drawer in the kitchen where the batteries are, and weeks later, when her mom asks whether she wants to go on Saturday, Chloe says no thank you and asks her to renew them please.
 
 ---
 
@@ -184,7 +184,7 @@ Upstairs, on the back of a spelling worksheet under her pillow, she starts a col
 
 Her mom starts on the school in the last week of September.
 
-Coming down for water, Chloe gets the end of one of the calls, and the sentence she arrives on has two pleases in it. Her mom is at the counter with one hand flat on it, and Chloe stops in the doorway with the glass still empty.
+Coming down for water, Chloe gets the end of a call, and the sentence she arrives on has two pleases in it. Her mom is at the counter with one hand flat on it, and Chloe stops in the doorway with the glass still empty.
 
 "Third grade, okay, so third grade is the floor, whatever the testing comes out at," she says, and listens, the pen tapping twice against the counter. "No, I know what the policy is, you've told me what the policy is, and what I'm asking is whether anybody has ever made an exception to it, for any reason, in any year."
 

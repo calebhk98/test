@@ -40,7 +40,7 @@ After he tells her she can call him Ben and asks what he should call her, he sit
 
 "We're going to do some stuff that's kind of like games, and some of it is easy while some of it is really hard, and the hard ones are supposed to be hard, so missing one is part of the design."
 
-"Okay, but is it a test, like a real one with a grade at the end, and can you fail it, because what happens if I get all of them wrong?"
+"Okay, but is it a test, a real test with a grade at the end, and can you fail it, because what happens if I get all of them wrong?"
 
 "No, and there is no passing number either," he says straight away, the answer already lined up. "I am watching how you do things rather than whether you get them, and there is no grade at the end of it either."
 
@@ -50,7 +50,7 @@ Chloe looks at him hard and files the last part with everything else adults say 
 
 The blocks are red and white, and she has to turn them until the tops match a picture on a card, the first ones so easy that she thinks it's a trick, so she keeps looking up at Ben to find out, but all he says is mm-hm.
 
-Then they get bad, because there's one where she can't find where the shape starts, so she turns a block over and over before putting it back down in the place it was already in.
+Then they get bad, because there's a card where she can't find where the shape starts, so she turns a block over and over before putting it back down in the place it was already in.
 
 The door gets a glance, just to check it is still shut, while Ben lets the silence sit and somewhere in the building there is a clock she can't see but can hear, once she starts listening for it.
 
@@ -58,7 +58,7 @@ The door gets a glance, just to check it is still shut, while Ben lets the silen
 
 "Okay, that's a totally fine answer." He writes something down, and she can't tell from his face whether it was a good thing to write. "Do you want to try one more, or do you want a break?"
 
-"One more, if there's another like it." She hooks her heels on the rung of the chair, waiting for him to lay the card down, and she gets the next one fast, her face going hot in the good way, so that she has to hold still until it stops.
+"One more, if there's another like it." She hooks her heels on the rung of the chair, waiting for him to lay the card down, and she gets the next card fast, her face going hot in the good way, so that she has to hold still until it stops.
 
 \---
 
@@ -72,7 +72,7 @@ He asks her what a bicycle is and she tells him about the wheels and the pedals,
 
 "Something that isn't hurting you but won't stop."
 
-As the words get longer he asks one that stops her cold, and she tells him so, then asks another that stops her too, so she tells him she would rather go back to the first kind, but he says that's not how it works, then asks the next one anyway.
+As the words get longer he asks a word that stops her cold, and she tells him so, then another that stops her too, so she tells him she would rather go back to the first kind, but he says that's not how it works, and puts the next word to her anyway.
 
 Then the questions turn into similarities, pairs of things where she has to say what the pair of them share, the pairs getting further apart as they go.
 
@@ -84,13 +84,13 @@ Then the questions turn into similarities, pairs of things where she has to say 
 
 "They're both amounts of time, and they're both amounts of time that people picked, because an hour isn't really a thing out there, it's just where we decided to cut it."
 
-Chloe sits up a little, waiting to find out if that one counts extra, while Ben stops writing, then writes for longer than usual before doing more pairs, until he runs out of page, so he puts the booklet down to get a different one out of the drawer.
+Chloe sits up a little, waiting to find out if that counts extra, while Ben stops writing, then writes for longer than usual before doing more pairs, until he runs out of page, so he puts the booklet down to get a different booklet out of the drawer.
 
 \---
 
 Then he recites numbers and she repeats them back, which is easy, after which he recites numbers she has to repeat backwards, which she likes a lot better.
 
-They keep getting longer, so she holds eight going forwards and six going backwards before she loses the middle on the next one and tells him so, at which he says that's fine, does one more anyway, and loses the middle of that one too, without any idea whether any of it is a lot, since this is the first time anybody has ever said a number of numbers to her.
+They keep getting longer, so she holds eight going forwards and six going backwards before she loses the middle of the next string and tells him so, at which he says that's fine, does another anyway, and loses the middle of that too, without any idea whether any of it is a lot, since this is the first time anybody has ever said a number of numbers to her.
 
 Then there's a page of little symbols, each matched to a numeral in a key along the top, and she has to copy the right symbol into the right box, going along the rows in order, while Ben holds a timer.
 
@@ -128,15 +128,15 @@ This time, as Ben writes that down, she watches him do it, and it takes him long
 
 \---
 
-They keep going a long time: pictures come with a piece missing and she has to say what's missing, including one where the missing piece is a shadow, which she thinks is unfair and gets right anyway.
+They keep going a long time: pictures come with a piece missing and she has to say what's missing, including a picture where the missing piece is a shadow, which she thinks is unfair and gets right anyway.
 
 There is a story about a boy and a wagon that she has to repeat back, and she repeats it with all of it in, including the part about the neighbor.
 
-A set of judgement questions asks what you would do if you found somebody's wallet, or if you smelled smoke, and every answer she gives seems to be the right one, so she stops trusting the questions.
+A set of judgement questions asks what you would do if you found somebody's wallet, or if you smelled smoke, and every answer she gives seems to be the right answer, so she stops trusting the questions.
 
 Another timed sheet has rows of shapes where she has to cross out the duplicates, and she is bad at that as well, knowing it before he says stop.
 
-By the second maze her stomach is loud enough that she covers it with her forearm, and she keeps switching which leg she is sitting on, while between mazes he asks whether she's tired, she says no, then he asks again after the next one.
+By the second maze her stomach is loud enough that she covers it with her forearm, and she keeps switching which leg she is sitting on, while between mazes he asks whether she's tired, she says no, then he asks again after the next maze.
 
 "You can say yes, you know."
 
@@ -144,7 +144,7 @@ By the second maze her stomach is loud enough that she covers it with her forear
 
 At the end he caps his pen and puts the last card back in its box. "You worked really hard."
 
-Chloe opens her mouth to ask whether she did good, then presses her lips together, because that question is off limits to children, so she asks the one underneath it instead.
+Chloe opens her mouth to ask whether she did good, then presses her lips together, because that question is off limits to children, so she asks the question underneath it instead.
 
 "The one with the symbols, does everybody finish it?"
 
@@ -168,7 +168,7 @@ Only pieces of it reach her, her mom's voice saying the teacher says, then Ben's
 
 Her mom makes a sound, and Chloe can't tell what kind it is from out here, since it could be either kind.
 
-"There are a couple of things where she's slower than most kids her age, and the biggest one is copying, hand-and-eye, and that part's real, you'll see it in her handwriting for years, and it's also not what anybody in that building is calling you about."
+"There are a couple of things where she's slower than most kids her age, and the biggest is copying, hand-and-eye, and that part's real, you'll see it in her handwriting for years, and it's also not what anybody in that building is calling you about."
 
 "No."
 
@@ -232,7 +232,7 @@ They get ice cream, unheard of on a Wednesday, and she eats it in the car, where
 
 After the appointment, everything stays the same.
 
-On March 5th she goes back and it is the same worksheet, the twenty-eight problems sitting after the one that tells you how it works, and Bryce Dolan still counting on his fingers, while the parking lot stays a parking lot, the man with the boxes a one-morning-only thing.
+On March 5th she goes back and it is the same worksheet, the problems sitting after the one that tells you how it works, and Bryce Dolan still counting on his fingers, while the parking lot stays a parking lot, the man with the boxes a one-morning-only thing.
 
 Mrs. Aldana keeps grading at her desk, the table goes back to worksheets without a word about it, and when she asks Chloe once, in April, whether everything is all right at home, Chloe says yes.
 

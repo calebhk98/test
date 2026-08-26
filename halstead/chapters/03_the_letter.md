@@ -40,7 +40,7 @@ Her mom reads it, then reads it again, her eyes going back to one spot on the pa
 
 Her mom takes it back and looks at the back of it, finding only the ink from the signature that has come through, then turns it the right way round again for a fourth read of the top part.
 
-"It's free, four weeks, food, a bed, a bus, all of it," she says, "and things are not free."
+"It's free, the whole month, food, a bed, a bus, all of it," she says, "and things are not free."
 
 "Sometimes they are, if somebody's got the money and wants to give it away for no reason at all."
 
@@ -66,7 +66,7 @@ Chloe asks once more on the Sunday and then forgets to ask again for days, becau
 
 Her mom calls the district office on Monday, where a receptionist takes the name down and says she'll look into it, and though Tuesday and Wednesday go quiet, the callback comes Thursday afternoon, by which time Chloe is on the stairs, on the step where the carpet stops and the wood goes cold under her, because that is the step where you can hear the kitchen.
 
-Her mom spells it twice, H-A-L, Halstead, like it sounds, and then a long stretch where the only voice in the kitchen is the other one. "Nothing at all, not a charter, not a private, not a partner?" Another stretch, shorter than the first one. "Okay, thank you, and I do appreciate it, because I know it's not your job to go looking."
+Her mom spells it twice, H-A-L, Halstead, like it sounds, and then a long stretch where the only voice in the kitchen is the other. "Nothing at all, not a charter, not a private, not a partner?" Another stretch, shorter than the first. "Okay, thank you, and I do appreciate it, because I know it's not your job to go looking."
 
 Then the phone goes down on the counter, and her dad says something from the other side of the room that stays too quiet to reach the stairs.
 
@@ -80,7 +80,7 @@ Her dad's jaw goes tight.
 
 Her mom tells him she is only repeating what the woman told her.
 
-Then her mom calls the Petersons, because Ellie Peterson is in the pull-out group and is the one child on the street anybody would put on a list of anything, but the Petersons haven't gotten one.
+Then her mom calls the Petersons, because Ellie Peterson is in the pull-out group and is the one child on the street anybody would put on a list of anything, but the Petersons haven't gotten a letter.
 
 A few more houses, then she gives up, since past a point it stops being research and turns into a thing you have to explain to your neighbors, so that by Saturday half the street knows the Kesslers got something in the mail.
 
@@ -88,7 +88,7 @@ Then she calls the number on the letter, and somebody picks up on the second rin
 
 "Okay, I want to know how you got her name."
 
-That one takes a long time to come back, the other voice going on behind the wall, not the words, only that it hasn't stopped.
+That takes a long time to come back, the other voice going on behind the wall, not the words, only that it hasn't stopped.
 
 "That's not an answer, so where did the list come from?"
 
@@ -100,13 +100,13 @@ The voice goes on for most of a minute.
 
 "Okay, but somebody made the list, because a person made it, somebody sat down and typed my kid's name."
 
-Chloe edges down the stairs during the wait, close enough to see her mom's free hand braced on the edge of the counter, and her mom points at the stairs, still facing the counter, so Chloe goes back up to the fourth one.
+Chloe edges down the stairs during the wait, close enough to see her mom's free hand braced on the edge of the counter, and her mom points at the stairs, still facing the counter, so Chloe goes back up to the fourth stair.
 
-The wait after that one is shorter than all the others.
+The wait after that is shorter than all the others.
 
 "Right, okay, thank you so much for going through all of that with me."
 
-Then the call goes on a long time after that and her mom's voice changes into the one she uses at the pediatrician, asking how many adults sleep in the building, what the ratio is at night, and whether that is a different number from the daytime one.
+Then the call goes on a long time after that and her mom's voice changes into the one she uses at the pediatrician, asking how many adults sleep in the building, what the ratio is at night, and whether that number changes in the daytime.
 
 Whether the staff are licensed, and by who, and whether she can see that in writing; what happens if a child gets a fever in the middle of the night, then what happens if it is worse than a fever; whether there is a nurse or a person they call the nurse.
 
@@ -114,7 +114,7 @@ What Chloe eats, and whether Chloe can be pulled out on any day, for any reason,
 
 "Over a hundred," her mom says, loud enough that the number carries, and then, a few seconds later, "Coming from where?"
 
-Every single one of the questions gets answered straight away, immediate and complete, as though the questions had all been expected.
+Every single question gets answered straight away, immediate and complete, as though the questions had all been expected.
 
 When she hangs up she stands there with her hand still on the phone, long enough that Chloe's dad puts down his coffee and asks her well.
 
@@ -132,7 +132,7 @@ Her mom takes her hand off the phone.
 
 Her mom pulls out a chair and stands behind it, both hands on the back.
 
-"There's over a hundred children, and that's just this one summer."
+"There's over a hundred children, and that's just this summer."
 
 "And they're not from around here?"
 
@@ -148,11 +148,11 @@ Her dad looks up the website that night on the laptop at the kitchen table, and 
 
 A photograph of a field with goals on it gets a look, and a pool gets a question about whether she would swim, to which she says yes, and when he points out she is still learning, she says she would get better there, so he says fair enough.
 
-Then he finds the page about what a Tuesday looks like, hour by hour, doing all of the hours in the voice, including the one that's just lunch.
+Then he finds the page about what a Tuesday looks like, hour by hour, doing all of the hours in the voice, including the hour that's just lunch.
 
 "This is a nice-looking place, kid."
 
-Then he clicks the page with the teachers on it, where there is a photograph of each one with a paragraph underneath about what that person did before they came here, and he stops doing the voice, reading one of them start to finish, then going back up to click a different one, and when Chloe asks him what, he tells her it's fine, then goes down the list one after another, all the way to the bottom of it, before going back up to the top to start again from the first one, slower this time.
+Then he clicks the page with the teachers on it, where there is a photograph of each of them with a paragraph underneath about what that person did before they came here, and he stops doing the voice, reading a whole paragraph start to finish, then going back up to click another, and when Chloe asks him what, he tells her it's fine, then goes down the list in order, all the way to the bottom of it, before going back up to start again from the first, slower this time.
 
 Chloe waits a while for him to keep talking, then gets her book and reads at the table next to him, and he stays fixed on the screen the whole time she is gone.
 
@@ -194,7 +194,7 @@ Her dad pushes the laptop an inch away from him.
 
 "Not around here they aren't," her mom says, to the stack of bills clipped to the refrigerator.
 
-It takes them nine days, her mom's position being that it is four hours away, the invitation showed up unsolicited, somebody is paying for it, and she wants to know who before anybody gets in a car.
+It takes them nine days, her mom's position being that it is that far away, the invitation showed up unsolicited, somebody is paying for it, and she wants to know who before anybody gets in a car.
 
 Her dad's position is that all of that is true and she should go anyway, and they have some version of that argument on the fourth day, the sixth day and the eighth, until on the sixth day, standing at the counter with the mail still in her hand, her mom says the words a building I have yet to see.
 
@@ -214,7 +214,7 @@ Her mom waits for the rest of it.
 
 Her mom sits there with her hands in her lap and her thumbs going, then pats the bed twice, gets up, and goes out, leaving the door open a few inches behind her.
 
-On the ninth night Chloe is supposed to be asleep, having already been sent back once, but comes out a second time in her socks, skipping the fourth stair, which is the one that gives her away.
+On the ninth night Chloe is supposed to be asleep, having already been sent back once, but comes out a second time in her socks, skipping the fourth stair, which is the stair that gives her away.
 
 "She's been flat since Christmas, and you've seen it, because she comes home and she says it was good."
 
@@ -242,13 +242,13 @@ The librarian puts the stamp down.
 
 "One I can do, since that's a hold rather than a checkout, so it stays outside the four entirely."
 
-She walks the whole children's section twice and comes back with one she has read before, because a new one would be gone by Tuesday and this one she can do again.
+She walks the whole children's section twice and comes back with a book she has read before, because anything new would be gone by Tuesday and this one she can do again.
 
 They drive her themselves instead of putting her on the bus, though her mom says the word bus a hundred times before they go, and by the end it barely sounds like the same word.
 
 They pack the night before, the whole family, in the living room with everything laid out on the floor in piles, her mom writing KESSLER on the tags with a laundry pen, holding each thing up to check she has it the right way round.
 
-Her dad does the train station voice for the packing list, announcing socks, announcing the toothbrush, announcing the second pair of shoes, and Chloe laughs at the shoes one hard enough that she has to lie down on the carpet, so he does it again to get it again, until her mom tells them both to stop, then asks him to do the shoes one more time.
+Her dad does the train station voice for the packing list, announcing socks, announcing the toothbrush, announcing the second pair of shoes, and Chloe laughs at the shoes hard enough that she has to lie down on the carpet, so he does it again to get it again, until her mom tells them both to stop, then asks him to do the shoes one more time.
 
 Chloe gets to stay up late, the whole evening spent on socks and the shoe joke, with the school and the list and who is paying for it left for some other night.
 

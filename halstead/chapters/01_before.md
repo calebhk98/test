@@ -6,7 +6,7 @@ In the school office there is a folder about Chloe, who is six, started by her k
 
 What she knows instead is that her mom is on the phone in the kitchen most evenings now, standing at the counter with a hand pressed flat against her forehead.
 
-"No, I understand that, I'm just asking what the next step is, because I have asked twice and both times the answer was that we wait." She listens through more of it before the phone clicks over to her mom's other ear. "Okay, but she is six years old, and a piece of paper saying what you already said to me is a piece of paper, not a next step."
+"No, I understand that, I'm just asking what the next step is, because I have asked twice and both times the answer was that we wait." She listens through more of it before the phone clicks over to her mom's other ear. "Okay, but she is a small child, and a piece of paper saying what you already said to me is a piece of paper, not a next step."
 
 On the other side of the wall Chloe sits on the living room floor with a book open in front of her, listening instead of reading.
 
@@ -18,9 +18,9 @@ Chloe turns a page she stopped reading a while back, her thumb keeping a place s
 
 \---
 
-There are thirty subtraction problems on the worksheet and all thirty are one problem, which she works out partway through the second, eight minus three, so the other twenty-eight are that again with different numbers.
+There are thirty subtraction problems on the worksheet and all thirty are one problem, which she works out partway through the second, eight minus three, so the rest are that again with different numbers.
 
-Because the pattern is already found, she writes the answer and then sits with the pencil motionless, since what is left is copying twenty-seven more times while the classroom clock holds where it is.
+Because the pattern is already found, she writes the answer and then sits with the pencil motionless, since what is left is doing it over and over while the classroom clock holds where it is.
 
 Mrs. Aldana waits for everybody to finish before moving on, and somebody is invariably still going, so Bryce Dolan is still counting on his fingers long after Chloe stops watching him.
 
@@ -50,7 +50,7 @@ In a week that is the cereal box at breakfast, both sides, including a contest t
 
 "You'd have had four at a time," the librarian says, and the stamp keeps coming down, card after card.
 
-"The rule is about at a time, though, so six is fine, because it is still four at a time, just twice over, and two of them you already gave me."
+"The rule is about at a time, though, so it's fine, because it is still four at a time, just twice over, and two of them you already gave me."
 
 The librarian looks up at her and holds the stamp in the air. "How old are you?"
 
@@ -64,7 +64,7 @@ Chloe takes what she is allowed, and they are gone by Wednesday, and her mom has
 
 At dinner in September she talks for the entire meal about a book in which a girl runs away and lives inside a train station, so the explaining starts with the station, whose size is what everything else depends on.
 
-"It's got a whole floor just for people waiting overnight, and that's where she sleeps, except you can only be there if you have a ticket, so she has one the whole time and can't ever use it."
+"It's got a whole floor just for people waiting overnight, and that's where she sleeps, except you can only be there if you have a ticket, so she keeps hers the whole time and can't ever use it."
 
 "Where'd she get a ticket?" her dad says, stopping eating to do the thing where he asks questions he already knows the answer to.
 
@@ -102,7 +102,7 @@ The blacktop is warm enough by midmorning that the girls play in short sleeves, 
 
 "That was different, because Maddie kind of scoops it instead of catching it properly, so it's basically a whole other move."
 
-"How was it different, though, when you both caught it after one bounce, and that's the whole rule, so it shouldn't matter how your hand does it?"
+"How was it different, though, when you both caught it off the bounce, and that's the whole rule, so it shouldn't matter how your hand does it?"
 
 "It just was," Kayleigh says, and throws the ball before Chloe can say anything else.
 
@@ -136,7 +136,7 @@ In the cafeteria she peels the crust off her sandwich in a long unbroken piece a
 
 \---
 
-The board still has yesterday's spelling list chalked half erased in the corner when Mrs. Aldana asks in November what clouds are made of, and Chloe knows this one.
+The board still has yesterday's spelling list chalked half erased in the corner when Mrs. Aldana asks in November what clouds are made of, and Chloe knows this.
 
 Clouds are the ocean going somewhere else, and the whole sentence is in her mouth with her hand up, until she looks at the back of Kayleigh Burns's head and takes the entire thing down to one word.
 
@@ -148,7 +148,7 @@ The short version works every time she uses it, and the whole answer is still in
 
 On Fridays, Mrs. Aldana reads the best paper out loud while keeping back whose it is, and in November it is Chloe's, a few sentences about a dog with a missing leg that ran anyway, after which the room goes quiet.
 
-In December the assignment is three to six sentences about anything, so she writes the fewest it allows, about a boat, and the paper read out is Maddie's, which everybody guesses correctly.
+In December the assignment has a minimum and she writes the minimum, about a boat, and the paper read out is Maddie's, which everybody guesses correctly.
 
 \---
 
@@ -160,7 +160,7 @@ Then the door opens on her mom saying thank you so much in the phone voice and h
 
 While her dad drives, her mom holds the papers Mrs. Aldana gave them up against the streetlights to read.
 
-"She says you're one of the strongest readers she's had, and she said it twice."
+"She says you're among the strongest readers she's had, and she said it twice."
 
 Her mom turns a page.
 
@@ -200,7 +200,7 @@ Then her mom says she has been having a hard time at school. He rolls his chair 
 
 "Do you know what the teacher's talking about, when she calls on you?"
 
-Chloe turns that one over while he waits, because the real answer has two halves and the question was built to hold one.
+Chloe sits with that while he waits, because the real answer has two halves and the question was built to hold one.
 
 Almost all of the time she knows what the teacher is talking about, and separately from that she is sometimes entirely somewhere else while a question goes by, and she picks the shorter word anyway.
 
@@ -212,13 +212,13 @@ He types something else. "But if the school is putting it in writing, I'd rather
 
 "That's a psychologist, or."
 
-"I'll give you two names, one of which you'll wait months on while the other is usually faster, so call both today and take whoever comes up first."
+"I'll give you two names, and you'll wait months on the first while the other is usually faster, so call both today and take whichever comes up sooner."
 
 On the way out, the receptionist lets Chloe pick a sticker, which takes a long time, because there are two good ones.
 
 \---
 
-Christmas is at her grandmother's, where the house is full and Chloe knows every one of them, collecting a sweater, a set of markers, a stack of books, saying thank you each time unprompted.
+Christmas is at her grandmother's, where the house is full and Chloe knows everybody in it, collecting a sweater, a set of markers, a stack of books, saying thank you each time unprompted.
 
 Her grandmother says well, somebody got grown up this year, so Chloe reads in the chair by the tree until it is time to eat, then puts it face down on the arm to keep the page.
 
@@ -228,7 +228,7 @@ Her cousin Dana, who is nineteen, sits next to her and asks how school is.
 
 "Do you have a favorite subject?"
 
-"Reading, though it's not really a subject, because you just do it on your own, so I'm not sure it counts as one."
+"Reading, though it's not really a subject, because you just do it on your own, so I'm not sure it counts."
 
 "Yeah? Me too, when I was little. Did you do the horse ones?"
 
@@ -254,7 +254,7 @@ In January they read a book about a boy and a sled dog out loud, going around th
 
 Chloe had read the whole thing on Tuesday, finishing it on the bathroom floor, because waiting until after dinner to find out whether the dog lived was beyond her.
 
-Aiden R. is somewhere in chapter four, stopping at about every fourth word, while she follows along in her own copy for a good while.
+Aiden R. is reading aloud, stopping at about every fourth word, while she follows along in her own copy for a good while.
 
 Then she turns to chapter nine and is well into it when Mrs. Aldana says her name.
 

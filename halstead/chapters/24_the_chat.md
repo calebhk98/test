@@ -4,13 +4,13 @@
 
 The chat is five years old. They wrote the encryption themselves at thirteen, mostly to keep a teacher from reading it while they arranged getting out of the building, and none of them has ever used another.
 
-This is the first September that finds all of them somewhere else. Eli, three states from where he grew up, has a new badge with last year's photo still on it, and Ruth is in a dorm room in Cambridge with a roommate she's met twice. Sam is at a processing station somewhere the paperwork won't name, where they hand his phone back a few minutes at a stretch. Kavi is still at Halstead, in a lab down the corridor from where he had his own lessons, doing work that used to be homework. Nadia is in the back room of her parents' shop with the door open onto the counter, while Theo, three states from the harbor town he grew up in, learns which parts of his new government job stay behind the badge. Priya is somewhere south of the equator, on a signal that comes and goes, and Chloe sits in a lecture hall built for three hundred people, an hour from the apartment she rents.
+This is the first September that finds all of them somewhere else. Eli, three states from where he grew up, has a new badge with last year's photo still on it, and Ruth is in a dorm room in Cambridge with a roommate she's met twice. Sam is at a processing station somewhere the paperwork won't name, where they hand his phone back a few minutes at a stretch. Kavi is still at Halstead, in a lab down the corridor from where he had his own lessons, doing work that used to be homework. Nadia is in the back room of her parents' shop with the door open onto the counter, while Theo, a coastline away from the harbor town he grew up in, learns which parts of his new government job stay behind the badge. Priya is somewhere south of the equator, on a signal that comes and goes, and Chloe sits in a lecture hall built for hundreds, an hour from the apartment she rents.
 
 Eli types with his phone propped against a monitor, eyes staying on whatever's actually on the screen. Kavi answers from the desk he does everything else from, a hand still turning over whatever object was already sitting on it. Ruth writes standing up, phone in her hand and a textbook open in the other, and finishes a whole exchange while keeping pace with whatever she was doing before it started. Nadia texts one-handed with the other hand still on a keyboard, keeping track of both at once. Theo answers standing at a window with the blinds already down, phone held low and close, the way he'd hold a document above his clearance. Sam thumbs the keyboard with the economy he uses on everything else, three words and stop, because someone behind him is already waiting for the phone. Priya replies from wherever she's charging it, propped against a boot, a bag, once against the neck of a horse that stood still for it.
 
-Some of them answer inside a minute no matter the hour, Eli most nights, and Kavi from the building he's always slept in. Others answer in bursts, three messages at once after a six-hour gap, a reply to something asked at seven landing after midnight because a shift only just ended. A message sent to the whole group at three in the morning gets an answer from somebody within five minutes. It has for five years.
+Some of them answer inside a minute no matter the hour, Eli most nights, and Kavi from the building he's always slept in. Others answer in bursts, messages at once after a long gap, a reply to something asked at seven landing after midnight because a shift only just ended. A message sent to the whole group at three in the morning gets an answer from somebody within five minutes. It has for five years.
 
-A message can sit read for hours, and it means only a shift running long, a supervisor still talking, a horse three switchbacks from cell service. Whatever he's in the middle of at the agency keeps running through a joke about somebody's boss, so Theo reads everything within minutes of it landing and sometimes waits a full day to answer it. Nadia reads fast and answers fast, except on a Sunday evening, when she has the shop's books open in front of her and the phone goes face down on the counter. Sam goes dark for stretches at a time, the read receipt stuck wherever it last landed, and then three replies arrive inside a minute once he's got the phone back. A message can open with guys, or ok, or silence before the next fact, arriving before whoever's reading has gotten past the first word.
+A message can sit read for hours, and it means only a shift running long, a supervisor still talking, a horse well past cell service. Whatever he's in the middle of at the agency keeps running through a joke about somebody's boss, so Theo reads everything within minutes of it landing and sometimes waits a full day to answer it. Nadia reads fast and answers fast, except on a Sunday evening, when she has the shop's books open in front of her and the phone goes face down on the counter. Sam goes dark for stretches at a time, the read receipt stuck wherever it last landed, and then a run of replies arrives inside a minute once he's got the phone back. A message can open with guys, or ok, or silence before the next fact, arriving before whoever's reading has gotten past the first word.
 
 ________________
 
@@ -52,7 +52,7 @@ eli: the build pipeline one. felt like i went around it not through it
 
 ________________
 
-Three days later.
+Days later.
 
 eli: so that was not in fact a thing the company offers
 
@@ -70,7 +70,7 @@ The build pipeline flaw is the kind of gap a company checks for insiders and out
 
 ________________
 
-Ruth's dorm room is a triple, a surprise she only discovered on move-in day, with a roommate who alphabetizes a spice rack down to the paprika and gets genuinely upset when it's moved. In her three weeks at MIT she's found the library that stays open all night and worked out which dining hall serves something hot after ten. She still answers the chat faster than anyone else in it, usually inside a minute, whatever she's doing when the message lands.
+Ruth's dorm room is a triple, a surprise she only discovered on move-in day, with a roommate who alphabetizes a spice rack down to the paprika and gets genuinely upset when it's moved. In her first weeks at MIT she's found the library that stays open all night and worked out which dining hall serves something hot after ten. She still answers the chat faster than anyone else in it, usually inside a minute, whatever she's doing when the message lands.
 
 ruth: my roommate alphabetizes her spice rack
 
@@ -112,7 +112,7 @@ kavi: you asked what it was measuring earlier this week. same energy
 
 ________________
 
-Halfway through September, Nadia tries to pin an actual date. It's been three months since anyone in the group has been in a room together, and the loose plan from June, get together before the holidays, has produced exactly zero weekends that work for more than three people at once. The question goes up on a Tuesday afternoon, and it sits for two hours before anyone answers.
+Halfway through September, Nadia tries to pin an actual date. It's been three months since anyone in the group has been in a room together, and the loose plan from June, get together before the holidays, has produced exactly zero weekends that work for more than a couple of people at once. The question goes up on a Tuesday afternoon, and it sits for hours before anyone answers.
 
 nadia: ok does anyone actually have a free weekend before december
 
@@ -226,7 +226,7 @@ ruth: mine says something almost identical
 
 kavi: standard retention play
 
-kavi: you tell people theyre exceptional early so they work harder and dont leave. its in the same chapter as the three percent thing
+kavi: you tell people theyre exceptional early so they work harder and dont leave. its in the same chapter as the acceptance rate thing
 
 eli: so its fake
 
@@ -276,7 +276,7 @@ ruth: since always apparently. i asked kavi to buy one for me and they asked who
 
 ________________
 
-The branch is a converted storefront two blocks from the shop, with three desks behind a rope and a manager who keeps the retail policies laminated in the drawer of the nearest branch. The bank holds an incoming payment for five business days, and when Nadia asks in September to have that taken off her account he reads her the policy off the card without turning it around so she can see it.
+The branch is a converted storefront a few blocks from the shop, with desks behind a rope and a manager who keeps the retail policies laminated in the drawer of the nearest branch. The bank holds an incoming payment for five business days, and when Nadia asks in September to have that taken off her account he reads her the policy off the card without turning it around so she can see it.
 
 "Five days is the policy on a new business account."
 
@@ -286,7 +286,7 @@ The branch is a converted storefront two blocks from the shop, with three desks 
 
 "What size does it take."
 
-The figure he gives is more than she has ever had at once. Sitting with it a second, she gives him the figure she can actually hold across a month, which is three hundred dollars under his, and tells him what holding it costs her, which is that the three hundred sits in his branch instead of in her hand on the fourth of every month.
+The figure he gives is more than she has ever had at once. Sitting with it a second, she gives him the figure she can actually hold across a month, which is a few hundred dollars under his, and tells him what holding it costs her, which is that the difference sits in his branch instead of in her hand on the fourth of every month.
 
 "Three hundred under isn't the number."
 
@@ -302,11 +302,11 @@ The list holds him long enough that the woman at the next desk finishes a teleph
 
 "You've spent twenty-two minutes on me."
 
-The fee comes off for a year, and she is out of the branch two minutes after that with the statements back under her arm.
+The fee comes off for a year, and she is out of the branch straight after with the statements back under her arm.
 
 ________________
 
-Nadia is behind her parents' counter on Sundays now, and in the back room the other six. A regular customer asks her, not unkindly, when she's going to go do something with herself. She rings up his sandpaper and hands him his change.
+Nadia is behind her parents' counter on Sundays now, and in the back room the rest of the week. A regular customer asks her, not unkindly, when she's going to go do something with herself. She rings up his sandpaper and hands him his change.
 
 nadia: guy today asked me when im going to go do something with myself
 
@@ -424,7 +424,7 @@ Reading other people's listings takes her twelve days, and most of them go on th
 
 ________________
 
-Kavi eats dinner in the hall he always has, at his usual table, three seats down from where he used to sit before this year moved everyone else out of it.
+Kavi eats dinner in the hall he always has, at his usual table, a few seats down from where he used to sit before this year moved everyone else out of it.
 
 sam: whats it like eating with twelve year olds now
 
@@ -484,7 +484,7 @@ nadia: fine. get the page kavi
 
 ________________
 
-Three days pass before Kavi comes back with anything. When he does, he says he asked and was told it's internal. Internal how, Chloe asks. That's the word they used, is all Kavi has for her. He asked about the formulation too, and got that word for it as well.
+Days pass before Kavi comes back with anything. When he does, he says he asked and was told it's internal. Internal how, Chloe asks. That's the word they used, is all Kavi has for her. He asked about the formulation too, and got that word for it as well.
 
 chloe: thats not a reason thats a category
 

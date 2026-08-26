@@ -2,17 +2,17 @@
 
 *October 2012 – January 2013*
 
-Ms. Vance calls the house on the Friday, which Chloe hears from the stairs, though most of it is her mom listening and saying she knows, three times in a row, to three separate things Chloe can't make out from where she is sitting.
+Ms. Vance calls the house on the Friday, which Chloe hears from the stairs, though most of it is her mom listening and saying she knows, again and again, to things Chloe can't make out from where she is sitting.
 
-"No, I appreciate you calling, because most people wouldn't have," her mom says, winding the phone cord around two fingers. "She's been like this since August, and it's about her, not about you or the house, she was completely fine in July and then school started."
+"No, I appreciate you calling, because most people wouldn't have," her mom says, winding the phone cord around her fingers. "She's been like this since August, and it's about her, not about you or the house, she was completely fine in July and then school started."
 
 Chloe goes back up before the call is finished.
 
-The appointment is the following Wednesday, for which her mom takes the whole afternoon off work, unannounced. Dr. Ammons has a room with two chairs and a couch, where she sits in one of the chairs and puts Chloe's mom in the other, leaving Chloe the whole couch to herself, which is deep enough that her feet stick straight out in front of her instead of reaching the floor, so she pulls them up under her and picks at a loose thread on the cushion instead of looking at either chair.
+The appointment is the following Wednesday, for which her mom takes the whole afternoon off work, unannounced. Dr. Ammons has a room with two chairs and a couch, where she takes a chair and puts Chloe's mom in the other, leaving Chloe the whole couch to herself, which is deep enough that her feet stick straight out in front of her instead of reaching the floor, so she pulls them up under her and picks at a loose thread on the cushion instead of looking at either chair.
 
 "So tell me what's going on, and start wherever you like."
 
-"She's not eating, and she's sleeping eleven hours a night and still tired all day," her mom says, sitting right on the front edge of the chair, and she has the whole list ready in order, each item already decided before she walked in. "She used to read constantly, four books a week since she was five, and there's a stack of them by her bed she hasn't touched since August, and she sits in her room in the dark with the switch right there beside her. When I ask her what she's doing she says nothing, and I think that's the true answer." She stops there, and her hands come apart, one of them smoothing an imaginary crease out of her skirt.
+"She's not eating, and she's sleeping the clock round and still tired all day," her mom says, sitting right on the front edge of the chair, and she has the whole list ready in order, each item already decided before she walked in. "She used to read constantly, four books a week since she was five, and there's a stack of them by her bed she hasn't touched since August, and she sits in her room in the dark with the switch right there beside her. When I ask her what she's doing she says nothing, and I think that's the true answer." She stops there, and her hands come apart and smooth an imaginary crease out of her skirt.
 
 "Chloe, is that right, is that how it's actually been?"
 
@@ -20,13 +20,13 @@ The appointment is the following Wednesday, for which her mom takes the whole af
 
 "When did it start, roughly?"
 
-"September, within a week or two of school starting."
+"September, within a week or so of school starting."
 
-Dr. Ammons writes a line before she asks the next one, and she asks it in exactly the same voice she asked the first one.
+Dr. Ammons writes a line before the next question, and she asks it in exactly the same voice she asked the first.
 
 "And before that, before August, what was she like?"
 
-"She was at a summer program in July, four weeks, away from home," her mom says, and stops there, her hands going still in her lap. "She was the happiest I have ever seen her, in her life, and I mean that literally."
+"She was at a summer program in July, a month, away from home," her mom says, and stops there, her hands going still in her lap. "She was the happiest I have ever seen her, in her life, and I mean that literally."
 
 Dr. Ammons stops writing and puts the pen down on top of the pad.
 
@@ -34,7 +34,7 @@ Dr. Ammons stops writing and puts the pen down on top of the pad.
 
 The questions keep coming after that, and all of them are careful, working down through who ran it, and how they found her, and whether Chloe stayed overnight, and how far away it was from the house, whether the same adults were there the whole time, whether anything happened, whether Chloe came back different, and in what way, and starting when.
 
-All the questions go to her mother, and Chloe sits through it, her thread-picking gone still somewhere around the one about the adults.
+All the questions go to her mother, and Chloe sits through it, her thread-picking gone still somewhere around the question about the adults.
 
 "Everything about it was good, she absolutely loved every single day of it."
 
@@ -58,7 +58,7 @@ In the car her mom holds the wheel with both hands, the engine off.
 
 "How do they help you with it, though, and what does that actually look like, week to week?"
 
-"You'd go and talk to her every couple of weeks, and she'd talk to us as well, and then the three of us would sit down and see how it was going," her mom says, putting the key in and leaving it there. "She wants to see you again in three weeks, and I said I'd ask you first, so is that all right with you?"
+"You'd go and talk to her every couple of weeks, and she'd talk to us as well, and then the three of us would sit down and see how it was going," her mom says, putting the key in and leaving it there. "She wants to see you again in a few weeks, and I said I'd ask you first, so is that all right with you?"
 
 "Okay, whatever you think is best," Chloe says, and then the wall of the building slides sideways past her window. "So can I go to Halstead, then, since we're already talking about it?"
 
@@ -76,7 +76,7 @@ Chloe gets it in pieces: her mom at the counter saying the words in writing twic
 
 "She might, and there's really no way to know that ahead of time," her mom says, letting go of the chair and standing there with her hands empty, "but it's still the only thing in that building that differs from what she is already sitting through, so I want her in it, whatever it turns out to be."
 
-Chloe comes down that night in her pajamas, because the word program has come up through the floor of her room twice in ten minutes.
+Chloe comes down that night in her pajamas, because the word program has come up through the floor of her room twice already.
 
 "Is that Halstead you're talking about, is it finally happening?"
 
@@ -86,17 +86,17 @@ Chloe comes down that night in her pajamas, because the word program has come up
 
 "Go to bed."
 
-It takes six weeks. In the second week of November the school calls back to say that they can make an exception and let her come a year early, which her mom tells her in the kitchen with both hands on Chloe's shoulders while her dad stands in the doorway.
+It takes weeks. In the second week of November the school calls back to say that they can make an exception and let her come a year early, which her mom tells her in the kitchen with both hands on Chloe's shoulders while her dad stands in the doorway.
 
 Chloe barely sleeps that night, and gets up twice to check that the note about it is still on the fridge under the strawberry magnet.
 
-There are nine kids and a cart with three shelves, a plastic bin of dice on the top of it, and a laminated sign on the side that says THINKING CORNER, which Mrs. Prahl wheels in at ten past one before spending ten minutes getting them out of five different classrooms and into chairs, then learns every name inside the first five minutes, after which she uses them, every time.
+There are nine kids and a cart with shelves, a plastic bin of dice on the top of it, and a laminated sign on the side that says THINKING CORNER, which Mrs. Prahl wheels in after lunch before spending a while getting them out of classrooms all over the building and into chairs, then learns every name before they have settled, after which she uses them, every time.
 
 "Okay, so on this island there are two kinds of people, and that's all there is: knights always tell the truth, every single time, so they can't lie even if they want to, and knaves always lie, every single time, so they can't tell the truth even by accident," she says, holding the sheet up over her head so that the back row can see it too. "You meet two of them, and Alan says Bob is a knave, while Bob says neither of them is a knave, so what are they?"
 
 Chloe has it before Mrs. Prahl has finished reading it out, so she waits, because you wait, and a boy called Dev gets there about ninety seconds later and does it up on the board with arrows, and Mrs. Prahl makes a real thing out of it.
 
-There are twelve on the sheet, of which Chloe does five in the first fifteen minutes before she makes herself slow down, because the twelfth one is the last one, and there won't be a thirteenth.
+There are twelve on the sheet, of which Chloe does most in the first stretch before she makes herself slow down, because the twelfth is the last one, and there won't be a thirteenth.
 
 Then she waits.
 
@@ -116,11 +116,11 @@ She asks again on the Tuesday and gets the words back in the same order, as if h
 
 "Not now, Chloe," her mom says on the Wednesday, before she has gotten the question all the way out.
 
-The second Thursday goes like the first one.
+The second Thursday goes like the first.
 
 The jacket is Friday, and any excuse would have done as well.
 
-Her mom says put your jacket on and Chloe says no, and her mom says put it on, and then the fight is happening and her throat hurts before she has got three words out of it.
+Her mom says put your jacket on and Chloe says no, and her mom says put it on, and then the fight is happening and her throat hurts before she has got a few words out of it.
 
 "You want me to be like this, you want me to stay exactly like this\!"
 
@@ -140,21 +140,21 @@ She goes upstairs and slams the door so hard the frame jumps.
 
 Then she stands behind it with her hands shaking and her ears ringing, listening for the particular stair that always gives first, while the television keeps going downstairs, and she waits there a long time, until her legs ache from standing behind the door.
 
-At dinner her mother passes her the bread, asks whether she wants more milk, and says something about the Thursday that needs an answer and gets one. Her dad passes the salt before she asks for it.
+At dinner her mother passes her the bread, asks whether she wants more milk, and says something about the Thursday that needs answering and gets it. Her dad passes the salt before she asks for it.
 
 So is the third, except that Mrs. Prahl puts them in pairs for a game with the dice, and Chloe gets a girl called Hana who is careful, slow, and checks everything twice before she'll write it down, so they finish before anybody else and Mrs. Prahl comes over, says well done to both of them, and gives them a word search to be getting on with.
 
 On the fourth Thursday there's a new packet, which Chloe takes home and finishes in about half an hour and keeps to herself, so that it sits in the bottom of her bag all week under the folder for reading, and when Mrs. Prahl asks the following Thursday how she got on with it, Chloe says she's still working on it, and Mrs. Prahl says that's absolutely fine, take your time.
 
-She can't work out what's wrong with it, because it's faster than her class, everybody keeps telling her it's the fast one, Mrs. Prahl is nice to her every single week, and there are nine of them in that room instead of twenty-six. She wants to say that this is the wrong thing, out loud, to Mrs. Prahl, on a Thursday, in front of the other eight, but the rest of the sentence stays stuck behind that one, and she is fairly sure the first half already sounds like she thinks she's better than everybody, a thing she has learned to keep to herself.
+She can't work out what's wrong with it, because it's faster than her class, everybody keeps telling her it's the fast group, Mrs. Prahl is nice to her every single week, and there are nine of them in that room instead of twenty-six. She wants to say that this is the wrong thing, out loud, to Mrs. Prahl, on a Thursday, in front of the others, but the rest of the sentence stays stuck behind that one, and she is fairly sure the first half already sounds like she thinks she's better than everybody, a thing she has learned to keep to herself.
 
-In December her mom comes up and sits down on the end of her bed, at half past four in the afternoon, with the light off and Chloe lying on top of the covers with her shoes still on.
+In December her mom comes up and sits down on the end of her bed, in the late afternoon, with the light off and Chloe lying on top of the covers with her shoes still on.
 
 "I want you to help me understand something, and you can take as long as you want over it."
 
 "Okay, I'll try, even if I'm not sure I have the right words for it," Chloe says to the ceiling.
 
-"What was different there, not the fun parts, because I've already heard every single one of the fun parts, but what was actually different about it, underneath all that?"
+"What was different there, not the fun parts, because I've already heard every single fun part, but what was actually different about it, underneath all that?"
 
 Chloe sits up and answers straight away, the answer already sitting in her mouth before the question finishes, and it is one thing, and it is small.
 
@@ -178,7 +178,7 @@ Her mom looks at her for long enough that Chloe starts to think of something els
 
 Chloe lies down again with her back to her mother and turns her face toward the wall, and after a while her mom gets up off the end of the bed.
 
-The bike has been in the garage since the first week of December, under a sheet, which Chloe knows about by the second week of December and keeps to herself, so that when her dad brings it in on Christmas morning with a bow already on the handlebars there are people standing around the front room in their coats watching her see it. Chloe says thank you, hugs her dad, then hugs her mom for longer, and then puts her coat on over her pajamas and rides it up and down outside the house while the two of them stand in the doorway in the cold.
+The bike has been in the garage since the first week of December, under a sheet, which Chloe knows about by the second week of December and keeps to herself, so that when her dad brings it in on Christmas morning with a bow already on the handlebars there are people standing around the front room in their coats watching her see it. Chloe says thank you, hugs her dad, then hugs her mom for longer, and then puts her coat on over her pajamas and rides it up and down outside the house while her parents stand in the doorway in the cold.
 
 "She likes it, look how fast she's already going out there," her dad says, from the doorway, with his arms folded up against the cold.
 

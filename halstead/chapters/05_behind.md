@@ -4,11 +4,11 @@
 
 Everything here moves at the speed of whoever finishes first, and in the first week that person is Ruth.
 
-When Chloe finishes a page and looks up, half the table is already working down the next one, and by the time she catches them Ruth is ahead again. The next thing arrives the moment the last one is done, all morning and all afternoon, so that Tuesday goes past without one of the empty stretches she had budgeted for, the kind she used to spend with a paperback wedged into her desk, its corner against her palm. By Wednesday she has stopped putting her hand in to check it is still there, and by Friday she has left it behind in the room.
+When Chloe finishes a page and looks up, half the table is already working down the next page, and by the time she catches them Ruth is ahead again. The next thing arrives the moment the last is done, all morning and all afternoon, so that Tuesday goes past without any of the empty stretches she had budgeted for, the kind she used to spend with a paperback wedged into her desk, its corner against her palm. By Wednesday she has stopped putting her hand in to check it is still there, and by Friday she has left it behind in the room.
 
 She had expected the speed to feel like a punishment, and it feels instead like being let out, though she cannot stop checking where everybody else has got to on the page.
 
-Writing has always been the slow part, ever since a room with a small table, a page of symbols to be copied one after another, and a man who held the timer where she could watch it move. Here the timer belongs to everybody: fifteen minutes on the board, and beside it a question that today asks what the man in the story believes at the beginning and stops believing by the end, where in the chapter that change happens, and how a reader is to know. She had read that chapter twice before the lesson, along with the ones after it, and all of them together had taken about as long as the fifteen minutes she now has to answer in.
+Writing has always been the slow part, ever since a room with a small table, a page of symbols to be copied one after another, and a man who held the timer where she could watch it move. Here the timer belongs to everybody: fifteen minutes on the board, and beside it a question that today asks what the man in the story believes at the beginning and stops believing by the end, where in the chapter that change happens, and how a reader is to know. She had read that chapter twice before the lesson, along with the ones after it, and all of them together had taken about as long as she now has to answer in.
 
 Chloe writes six sentences, reads them back twice, and leaves every word standing where she put it, which gets her to the where and the how-you-know with ninety seconds to spare. The same minutes produce a page and a half from Ruth, most of a page from Kavi, who is still going when the teacher calls time and who finishes the clause he is inside before setting his pen down square to the paper, and two sentences from Owen at the end of the row, with a line drawn through one of them.
 
@@ -22,7 +22,7 @@ Chloe writes six sentences, reads them back twice, and leaves every word standin
 
 "Then you should have thought about that earlier, before you started the sentence in the first place."
 
-Sam has four sentences, one of them a joke, and he shrugs, then leans over far enough to count the lines on Chloe's page; a few tables over, a girl called Marisol, who has three, asks whether the question can go back on the board, while Chloe sits with her six, which would have been the longest answer in Mrs. Aldana's room by half a page, and that meant the whole class listening to it read out on a Friday afternoon and then guessing, correctly, whose it was.
+Sam has four sentences, one of them a joke, and he shrugs, then leans over far enough to count the lines on Chloe's page; a few tables over, a girl called Marisol, who has three, asks whether the question can go back on the board, while Chloe sits with hers, which would have been the longest answer in Mrs. Aldana's room by half a page, and that meant the whole class listening to it read out on a Friday afternoon and then guessing, correctly, whose it was.
 
 On the Thursday every table gets a bundle of dowels, a spool of string, one glue gun between three, and a rule about the glue gun that Mr. Doyle delivers slowly. The gap is eighteen inches, and whatever crosses it has to hold whatever gets hung off the middle afterward. Chloe is put with Sam and Kavi, and Ruth, assigned to the next table, comes across anyway before the glue has finished heating.
 
@@ -36,17 +36,17 @@ On the Thursday every table gets a bundle of dowels, a spool of string, one glue
 
 "Flat and wide is a square, and a square folds, you just watched it fold."
 
-"Go and do your own one, then, if you're so sure about it."
+"Go and do your own, then, if you're so sure about it."
 
 Ruth goes and does her own, and Chloe watches her the whole way back to the next table, still working out at her own speed whether a diagonal is the entire argument Ruth thinks it is, so that by the time she has the answer Sam has laid a bead of glue along the first joint.
 
-Their bridge takes most of the afternoon, and comes out flat, wide, neat at every joint, better looking than Ruth's, though some tables, one of them Owen's, are still short of the eighteen inches when the session ends, so Mr. Doyle tells them to leave the structure standing and come back to it on Tuesday.
+Their bridge takes most of the afternoon, and comes out flat, wide, neat at every joint, better looking than Ruth's, though some tables, one of them Owen's, are still short of the span when the session ends, so Mr. Doyle tells them to leave the structure standing and come back to it on Tuesday.
 
-Before anything gets loaded, every group has to write down a prediction, in pounds, of what its bridge will hold: Chloe writes fourteen; Sam wants a hundred, is told the number has to be one he believes, and comes down a long way; Ruth writes hers with one hand curled around the edge of the paper.
+Before anything gets loaded, every group has to write down a prediction, in pounds, of what its bridge will hold: Chloe writes a low number; Sam wants a hundred, is told the number has to be one he believes, and comes down a long way; Ruth writes hers with one hand curled around the edge of the paper.
 
-On the Tuesday a bucket hangs from the middle of each bridge and the weights go in a pound at a time, the whole room counting out loud together. The first bridge goes at three, which gets a laugh out of the group it belongs to, and more come apart before eight. Theirs holds to eleven and then folds sideways, all at once, exactly the way Ruth's square went over under one finger, rather than snapping, and all of them are down after the pieces while the bucket still swings. Sam says the number out loud twice, then that he would have written a lower one if anybody had let him, and across the room Ruth's takes nineteen pounds and does snap, in the middle of the diagonal, which half the room makes a noise about.
+On the Tuesday a bucket hangs from the middle of each bridge and the weights go in a pound at a time, the whole room counting out loud together. The first bridge goes at three, which gets a laugh out of the group it belongs to, and more come apart early. Theirs holds to eleven and then folds sideways, all at once, exactly the way Ruth's square went over under one finger, rather than snapping, and all of them are down after the pieces while the bucket still swings. Sam says the number out loud twice, then that he would have written a lower one if anybody had let him, and across the room Ruth's takes nineteen pounds and does snap, in the middle of the diagonal, which half the room makes a noise about.
 
-"I told you," Ruth says, to the room rather than to anyone in it. "Triangles hold and squares fold, and the one you built was a square."
+"I told you," Ruth says, to the room rather than to anyone in it. "Triangles hold and squares fold, and what you built was a square."
 
 "Ruth," Sam says.
 
@@ -56,9 +56,9 @@ Mr. Doyle has them all write down which part went first and how far off their pr
 
 \---
 
-The second week is the one that gets her, and the subject is mathematics.
+The second week is the week that gets her, and the subject is mathematics.
 
-They are dividing fractions by turning the second fraction upside down and multiplying, and Mr. Baptiste works two on the board, both of which come out right, then a third, which also comes out right, by which point Chloe can do them and is running the fourth in her head before he reaches the bottom line. She does eight problems in the packet and gets eight right, while the reason the turning-over works stays shut to her, and the gap between those two facts is making her furious in a way she can feel along her jaw.
+They are dividing fractions by turning the second fraction upside down and multiplying, and Mr. Baptiste works two on the board, both of which come out right, then a third, which also comes out right, by which point Chloe can do them and is running the fourth in her head before he reaches the bottom line. She does eight problems in the packet and gets them all right, while the reason the turning-over works stays shut to her, and the gap between those two facts is making her furious in a way she can feel along her jaw.
 
 "Why do you flip it," Chloe says.
 
@@ -94,7 +94,7 @@ Six.
 
 Priya's light goes off.
 
-Chloe sits in the dark with the paper on her knees and the pencil in her hand, and the question turns over into a different one: dividing by an eighth is asking how many eighths fit inside the thing you started with, and that is all it has ever asked. Three quarters is six of them, and six is also the answer you get by multiplying three quarters by eight, which means that multiplying by eight is the only thing turning the eighth upside down was ever doing.
+Chloe sits in the dark with the paper on her knees and the pencil in her hand, and the question turns over into something else: dividing by an eighth is asking how many eighths fit inside the thing you started with, and that is all it has ever asked. Three quarters is six of them, and six is also the answer you get by multiplying three quarters by eight, which means that multiplying by eight is the only thing turning the eighth upside down was ever doing.
 
 "Oh," she says, out loud, in the dark, late at night.
 

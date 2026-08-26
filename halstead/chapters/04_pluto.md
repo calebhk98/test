@@ -10,7 +10,7 @@ It is the parents making most of it, mostly standing next to a child holding a f
 
 A boy near the doors keeps running the length of the hallway and back until somebody's mother catches his arm on the way past and keeps hold of it, her knuckles gone white around his sleeve, while a girl keeps both fists wound into the hem of her father's jacket even when another child waves at her first.
 
-Out in the lot there are license plates from states that are new to her, one of which takes a few seconds of squinting to place, and it is already hot enough that her dad has sweated through the back of his shirt by the time they reach the doors.
+Out in the lot there are license plates from states that are new to her, and some take a few seconds of squinting to place, and it is already hot enough that her dad has sweated through the back of his shirt by the time they reach the doors.
 
 They line up at a registration table with the letters of the alphabet taped along the front in blocks, and a kid in front of them looks at Chloe's shoes a second too long, so she moves half a step in behind her dad.
 
@@ -20,7 +20,7 @@ The woman at H through M finds Kessler on her page straightaway and hands over a
 
 "We try," the woman says, already reaching past him for the next folder in the box. "Chairs are through the double doors, we start on the hour, and there's a map in there."
 
-The orientation is in a room with folding chairs and a woman with a clipboard who goes through it fast, because there is a second one later for the families still driving.
+The orientation is in a room with folding chairs and a woman with a clipboard who goes through it fast, because there is another later for the families still driving.
 
 Chloe's feet hang well above the floor, and she kicks the chair leg in front of her a few times before somebody's mother turns around, after which she stops.
 
@@ -134,7 +134,7 @@ Inside, the boy sits down next to her, drops his folder on the desk sideways, an
 
 "Six."
 
-"I'm seven and a half," he says, setting the six down beside the seven and a half and weighing them. "That's fine."
+"I'm seven and a half," he says, setting hers down beside his and weighing them. "That's fine."
 
 He says the and a half every time, grinning at his own jokes before anybody else does, funny about half the time, unwilling to slow down for the other half, while the girl is Ruth, and Ruth corrects everybody.
 
@@ -154,7 +154,7 @@ On the third night Sam sits down across from her without a tray, before he gets 
 
 "What school do you go to?"
 
-"Just a school, a normal one, same as anybody else's."
+"Just a school, a normal school, same as anybody else's."
 
 "No, what's it called."
 
@@ -182,7 +182,7 @@ On the fourth night she gets as far as the phone and stands there with her hand 
 
 Her mom stays a few more days after that, and neither of them says anything about the phone.
 
-She leaves on the Sunday, going through the room one more time first, finding the green laundry bag, putting it where Chloe will see it, and asking Priya a few questions about herself, before she stands in the doorway with her keys already out.
+She leaves on the Sunday, going through the room again first, finding the green laundry bag, putting it where Chloe will see it, and asking Priya a few questions about herself, before she stands in the doorway with her keys already out.
 
 "You've got the number, taped inside your folder where you can't lose it."
 
@@ -196,7 +196,7 @@ Chloe says yes.
 
 \---
 
-There's a fourth one in Pluto who stays silent day after day, answering when he's called on, in as few words as he can, laughing at Sam, and otherwise silent.
+There's a fourth in Pluto who stays silent day after day, answering when he's called on, in as few words as he can, laughing at Sam, and otherwise silent.
 
 Chloe is on day six of it herself.
 
