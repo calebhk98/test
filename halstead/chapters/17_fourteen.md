@@ -32,7 +32,7 @@ A different card is taped to the bench later that week with a different number o
 
 "That's one person and a machine on a fixed cycle, rather than two people at all."
 
-He shifts the kit to the other hip while he keeps walking backward. "Right, but the arrow was two people, and the arrow only worked because, one, it hangs at the top, so if you're late it hasn't gone anywhere, and two, you're both running off the same count, so if you're late you're late together. A bullet gives you neither of those, so there's a version of this coming that fixes both at once, and I want to know what it is by March."
+The kit shifts to his other hip while he keeps walking backward. "Right, but the arrow was two people, and the arrow only worked because, one, it hangs at the top, so if you're late it hasn't gone anywhere, and two, you're both running off the same count, so if you're late you're late together. A bullet gives you neither of those, so there's a version of this coming that fixes both at once, and I want to know what it is by March."
 
 "They might leave it at clays and leave it there for good."
 
@@ -64,7 +64,7 @@ Going through the papers twice takes her back to her own notes from the third we
 
 Chloe wipes the board down with her back to them, then stops halfway across it and turns round. "No. Your answers all follow from what I taught you, and what I taught you was wrong. You'll get a different one in two weeks and it'll be harder, because by then you'll actually have it."
 
-Iyad has it at dinner that week with her not at the table, telling the far end that she taught the year below a whole term of it backwards, all of them, the same error the whole way down and not a single person catching it. He gets round most of the tables with it by the Saturday. What comes back to her at the sinks from a girl in the year above is the question, whether it is true she taught the lot of them backwards, and Chloe says yes, and the girl says she thought so, and goes.
+Iyad has it at dinner that week with her not at the table, telling the far end that she taught the year below a whole term of it backwards, all of them, the same error the whole way down and not a single person catching it; he gets round most of the tables with it by the Saturday. What comes back to her at the sinks from a girl in the year above is the question, whether it is true she taught the lot of them backwards, and Chloe says yes, and the girl says she thought so, and goes.
 
 Japanese moves faster at the front than she expects, so that by the end of the fourth week she is further along than she has ever been at that point in a language, and on a Wednesday afternoon she digs out her own notes on Russian and on Mandarin to check whether that is true, and it is. The kanji arrive with most of their meaning already on them, but then the grammar starts, and the grammar is unlike anything behind her on the list, so by November she is putting half an hour a night into it and moving slowly, but she is still ahead of where Mandarin had her at that stage.
 
@@ -236,7 +236,7 @@ Sam grew four inches over the summer and there is a pencil mark on a door frame 
 
 All of it started around September. All of it went past this table in silence. Which one was she supposed to have opened with? Why is it the rifle?
 
-She has both hands up off the table now. "I didn't mean to keep it from you. There was a lot that started in September and I skipped all of it. It's just school."
+Both hands come up off the table now. "I didn't mean to keep it from you. There was a lot that started in September and I skipped all of it. It's just school."
 
 "It is not just school."
 
@@ -254,11 +254,11 @@ Her father sets his fork down. "She said something on the phone in October."
 
 "And you didn't think to tell me?"
 
-He says, "I thought you knew. I thought it was fine."
+"I thought you knew. I thought it was fine," he says.
 
 Her mother sets the dish down in the middle of the table, straightens it, and goes into the kitchen, staying there while her father moves the salt, puts it back, then gets up and starts stacking plates still half full. The real sentence stays exactly where it's been all evening, buried under the one about pie. The kitchen gets a few minutes and the plates get stacked instead, and that turns out to be as much of the sentence as the room can hold.
 
-Her mother comes back in and asks whether anybody wants the pie warmed up, and her father and Chloe both say yes at once. He turns the game on and they eat it in front of that, with her mother coming to sit on the arm of his chair for the second half.
+Her mother comes back in and asks whether anybody wants the pie warmed up, and her father and Chloe both say yes at once. The game comes on, and they eat in front of it, with her mother coming to sit on the arm of his chair for the second half.
 
 Her mother says, "That's a hold. That is a hold, that's been a hold all night."
 

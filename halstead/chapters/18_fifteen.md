@@ -34,7 +34,7 @@ On a Wednesday in mid-February she shoots a series and scores sixty-one, then sh
 
 At dinner she clears the plate, but it could have been anything on it.
 
-She tries the old things in turn: the count goes on her leg walking down to the range, the way it did on the archery field, but the number comes out unchanged on the Friday. She holds her breath at different places in the cycle, and gets dizzy for her trouble. By the second week of March she has weeks of cards fanned out across the floor of her room. A pattern turns up on the Tuesday and she spends days on it before it turns out to be the wind through the open end of the lane, after which she bends the corner of that card back and forth until it comes off in her fingers.
+The old things get tried in turn: the count goes on her leg walking down to the range, the way it did on the archery field, but the number comes out unchanged on the Friday. At different places in the cycle she holds her breath, and gets dizzy for her trouble. By the second week of March she has weeks of cards fanned out across the floor of her room. A pattern turns up on the Tuesday and she spends days on it before it turns out to be the wind through the open end of the lane, after which she bends the corner of that card back and forth until it comes off in her fingers.
 
 Later that month she asks the office for every range card in the year, and a woman hands her a box of ninety with no lock on it, off a shelf with the year below's box sitting beside it, unlocked as well.
 
@@ -100,7 +100,7 @@ Kowalczyk is up on her toes to put a box of wraps on a high shelf, and stays the
 
 "That's still not an answer, so what am I supposed to do?"
 
-She comes down off her toes and pushes the door the rest of the way open with her foot. "It's the only one there is, you just have to learn faster than they do. In you go, you're holding up the twelves."
+Down off her toes, she pushes the door the rest of the way open with her foot. "It's the only one there is, you just have to learn faster than they do. In you go, you're holding up the twelves."
 
 Odile goes into the middle on the second Thursday in March, and by half a minute there are thirty people watching and somebody has propped the door open so the corridor can see in. Chloe is at the edge of the mat calling the count with a dozen others. At a minute the room makes a noise she can feel through the floor, and Odile holds another seven seconds and comes down on her hands and knees. Chloe is the second to reach her, and Odile's breath comes short and ragged against the mat with her arms shaking, so Chloe stays down beside her for the rest of the hour with the damp coming through her shirt.
 
@@ -112,7 +112,7 @@ Hark puts the last envelope down. "You are going to lose money in your life, eve
 
 The envelopes go out in October with two hundred dollars in each, to be spent on anything legal for a year, and whatever is left in June they keep.
 
-Rustem buys a dozen dead motors at a farm auction for a few dollars apiece, several of which are turning over by Christmas, and in January he sits down across from Chloe at dinner and pushes a page of figures at her before she has finished eating, wanting the lot. Reading it twice, she checks his sale prices against what he got for those, then offers him a hundred and twenty at eight percent with the motors as collateral. He argues about the rate for twenty minutes and loses. Then he tells her she has to see the barn first, so she goes on the Saturday and finds nearly sixty motors in it, a third of them past helping, and leaves her offer exactly where it was.
+Rustem buys a dozen dead motors at a farm auction for a few dollars apiece, several of which are turning over by Christmas, and in January he sits down across from Chloe at dinner and pushes a page of figures at her before she has finished eating, wanting the lot. Reading it twice, she checks his sale prices against what he got for those, then offers him a hundred and twenty at eight percent with the motors as collateral, and he argues about the rate for twenty minutes and loses. Then he tells her she has to see the barn first, so she goes on the Saturday and finds nearly sixty motors in it, a third of them past helping, and leaves her offer exactly where it was.
 
 Forty goes to a girl called Fen at ten percent against a table saw, and the last thirty to Priya at twelve, unsecured, because it is Priya. They all pay her back, but she finishes the year with two hundred and seventeen dollars to Rustem's nine hundred and forty.
 
@@ -134,7 +134,7 @@ Chloe wipes the board and sits down.
 
 Iyad has more than figures. In February the thing he has about Chloe is a boy in the language block called Aurel, and he says it at the long table on a Tuesday in the middle of something else, as a thing everybody has known for a while. By the Thursday it has been said back to her twice.
 
-She has never heard the name in her life. She could go and find out which boy it is, and she does not, and by March people who have never spoken to her have it, and Odile asks her at breakfast whether it is true, and Chloe says no, and Odile says all right and asks it again in a different way in May. It is still going in the summer.
+She has never heard the name in her life. Finding out which boy it is would be easy enough, but she does not, and by March people who have never spoken to her have it. At breakfast Odile asks whether it is true; Chloe says no. Odile says all right, then asks it again, differently, in May. It is still going in the summer.
 
 She stops using the language-block stairs.
 

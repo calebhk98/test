@@ -4,7 +4,7 @@
 
 A line appears on her timetable in September, new since June: *Mathematics, 12s, Thursday, room 4.* Under it sit seven names, and behind them a grade sheet due at the end of the year with hers at the top and theirs down the side.
 
-Teaching starts at thirteen and you take the year below, so her cohort, being the oldest in the building, is the only cohort doing it, which makes the twelves the only year taught by another student and the thirteens the only year with no teacher of their own. She works that out on the stairs in the first fortnight, tells Ruth, and gets a shrug and half a sandwich.
+Teaching starts at thirteen and you take the year below, so her cohort, being the oldest in the building, is the only cohort doing it, which makes the twelves the only year taught by another student and the thirteens the only year with no teacher of their own. On the stairs, in the first fortnight, she works that out, tells Ruth, and gets a shrug and half a sandwich.
 
 The room has more chairs in it than she has students, and the radiator is under the window at the far end. Six of the seven are straightforward: Ivy and Tomas want the answer handed over, though they can be talked out of it inside a month, Beatriz arrives already knowing most of the material and so takes a few minutes of the hour and uses them well, two more turn up, work, leave. The sixth cries in October over something with no bearing on mathematics, so Chloe sits on the floor with him for half an hour while he gets out a handful of words, then goes to dinner and comes back the following Thursday fine.
 
@@ -38,7 +38,7 @@ He is already halfway out of the seat. "Then take it in pencil on the back of Iv
 
 Chloe puts the chalk down harder than she means to, and he waits by the door until she says fine, then goes.
 
-In February she offers to read the 1981 paper and mark him on that. He says no, politely, at once, since she is a year older and has yet to open it. In March she asks what would make him hand something in, and he thinks about it.
+In February she offers to read the 1981 paper and mark him on that. Politely, at once, he says no, since she is a year older and has yet to open it. In March she asks what would make him hand something in, and he thinks about it.
 
 "Nothing would," he says. "A mark on a sheet stays exactly as true whether it's written down or not, and the work is just as real whether I hand in a page or leave it blank."
 
@@ -62,7 +62,7 @@ Differential equations run alongside real analysis from the second week of Septe
 
 "Then show me that it's obvious," the teacher says, holding it out sideways, already back at her own page. "Everyone in the room believing it is one thing, and it following from what you were given at the top of the page is another, so until you can show me that difference what you have is assumed rather than proven."
 
-She stops doing it by November and stops resenting it in February.
+By November she stops doing it, and by February she stops resenting it.
 
 Half the grammar is a frame she already has from Latin, the vocabulary outside that frame sits close enough to English that she barely has to translate it, and the rest she reaches sideways through French, so by November she reads with the dictionary open beside her, but hardly touches it. When she says so at dinner Ruth points a fork at her and calls it the exact argument Chloe made in a doorway two years ago, held now at a table in front of Sam.
 
@@ -84,7 +84,7 @@ Ruth and Kavi took cryptography and networks last year, which puts Ruth three mo
 
 "What is it, though? You're not usually up here at this hour."
 
-She takes the lid off with both hands and turns it toward Chloe. Inside is a circuit board, a battery taped down the side, and a coil of wire folded to make it fit. "It goes looking for recorders, anything on any network in range that's recording video, and about half are still on the password they shipped with, so it tries those first. For the changed ones it does everything else at once, cracking, sniffing, brute force, and others besides," Ruth says, watching Chloe's face the whole time. "It runs the lot together and takes whichever arrives first, so it's eight ugly things in a box and not one clever thing, and one of them is always working. Once it's in, it writes noise into the recording every so often, over part of the file." She puts the lid back on and tucks it under her arm. "Delete a file and somebody notices a file is missing. Make it noisy for a bit and that's a camera being a camera."
+With both hands she takes the lid off and turns it toward Chloe. Inside is a circuit board, a battery taped down the side, and a coil of wire folded to make it fit. "It goes looking for recorders, anything on any network in range that's recording video, and about half are still on the password they shipped with, so it tries those first. For the changed ones it does everything else at once, cracking, sniffing, brute force, and others besides," Ruth says, watching Chloe's face the whole time. "It runs the lot together and takes whichever arrives first, so it's eight ugly things in a box and not one clever thing, and one of them is always working. Once it's in, it writes noise into the recording every so often, over part of the file." She puts the lid back on and tucks it under her arm. "Delete a file and somebody notices a file is missing. Make it noisy for a bit and that's a camera being a camera."
 
 The box goes in the drawer under Ruth's window and stays there.
 
@@ -98,7 +98,7 @@ Ruth has the listing spread across two chairs, because it will not sit on one. "
 
 Chloe breaks it inside a week, but the encryption holds the whole way: what she gets instead is that the school's network records which machine talked to which and when, the way it does for every service in the building, regardless of what any of them are for.
 
-She puts the log on the table between them, folded to the column that matters. "Every word in there is sealed, which is completely true, but it's still finished. Knowing what we said is beside her point. What she wants is that this table said something to each other at ten on Thursday and then went missing off breakfast on Saturday."
+The log goes on the table between them, folded to the column that matters. "Every word in there is sealed, which is completely true, but it's still finished. Knowing what we said is beside her point. What she wants is that this table said something to each other at ten on Thursday and then went missing off breakfast on Saturday."
 
 Ruth reads the column with her chin on her fist. "So it has to look like something else the whole time, then, and not only on the nights we're actually using it."
 
@@ -126,7 +126,7 @@ Block two is hers, so she puts fencing and game theory on the sheet. Fencing she
 
 Chloe leans back from the board. "The mathematics says the opposite, Kavi: you play the equilibrium and not the player, and you keep doing the reverse of it and winning anyway."
 
-He is sweeping the counters into his hand and enjoying himself. "It's what the person says, not what the table says. You keep playing the table, every time, but I'm playing you."
+Sweeping the counters into his hand, he is enjoying himself. "It's what the person says, not what the table says. You keep playing the table, every time, but I'm playing you."
 
 What she actually does with block two is the school forge, Thursdays and both Saturday sessions and most of Sunday. By the spring she is working through the second sitting of dinner and eating whatever is left.
 
@@ -196,7 +196,7 @@ The cuts are hers, and he shows her the saw on the first morning and watches her
 
 "But I cut it, so I'd rather fix it now than know it's there every time I go up."
 
-He is already reaching for the next board, his attention on the next cut. "Chloe. Not one person alive is going to measure these steps, and this stays between the two of us."
+Already reaching for the next board, his attention is on the next cut. "Chloe. Not one person alive is going to measure these steps, and this stays between the two of us."
 
 They finish on a Tuesday at the end of July and the steps hold. Her mother comes out and stands on them, and bounces on the top step twice.
 

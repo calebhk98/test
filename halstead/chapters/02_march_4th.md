@@ -34,7 +34,7 @@ Dr. Prentice, the psychologist, has a beard and a room with a small table in it,
 
 There is a stack of printed sheets squared up by his elbow, the top one reading RECORD FORM upside down, before his forearm comes across and covers everything under that line. Beside it is a silver watch with a button worn into a dip where his thumb goes.
 
-He tells her she can call him Ben, asks what he should call her, and sits down on a chair no bigger than hers.
+Introducing himself as Ben, he asks what he should call her, then sits down on a chair no bigger than hers.
 
 "We're going to do some stuff that's kind of like games, and some of it is easy, but some is really hard, and the hard ones are supposed to be hard, so missing them is part of the design."
 
@@ -48,15 +48,15 @@ ________________
 
 The blocks are red and white, and she has to turn them until the tops make the picture on a card, the first ones so easy that she thinks it's a trick, so she keeps looking up at Ben to find out, but all he says is mm-hm.
 
-He puts a card down, presses the watch with his thumb, and says go. When she takes her hands away he presses it again, and writes.
+The card goes down, his thumb presses the watch, and he says go. When she takes her hands away he presses it again, and writes.
 
 Then the cards want nine blocks instead of four, and the shapes on them stop lining up with the edges of anything.
 
 The picture comes apart while she is still looking at it: the top strip solid, then the middle band where every block is cut corner to corner, red above the cut on the left and red below it once the stripe crosses over, then the bottom strip the same as the top with the colours swapped.
 
-Her hands go after it, and the top row goes down flat and true, fast. Then it's the cut ones, which have to sit in the right square with the right face up and the right way round all at once. The first block she sets down has its red on the wrong side of the line, so she picks it up, turns it, and puts it back, but now it's wrong the other way.
+Her hands go after it, and the top row goes down flat and true, fast. Then it's the cut ones, which have to sit in the right square with the right face up and the right way round all at once. The first block she sets down has its red on the wrong side of the line, so she picks it up, turns it, and puts it back, but now it's wrong the other way, so she turns it again.
 
-She turns it again. Her thumb will do the square turn but it goes past the corner-to-corner every time and has to come back. While she is coming back she knocks the block beside it crooked and has to straighten that one too. Somewhere in the building there is a clock she can't see but can hear, once she has started listening for it.
+Her thumb will do the square turn but it goes past the corner-to-corner every time and has to come back. While she is coming back she knocks the block beside it crooked and has to straighten that one too. Somewhere in the building there is a clock she can't see but can hear, once she has started listening for it.
 
 The last block is under her hand when Ben says okay and lifts his thumb off the watch, but she puts it in anyway, because that's where it goes.
 
@@ -70,7 +70,7 @@ Ben writes something down, small and quick, but she can't tell from his face whe
 
 There is another like it, and then another. Both times she has the picture in pieces before he has finished setting the card down, and both times Ben says okay while a block is still in her fingers.
 
-He puts the lid on the bin.
+The lid goes on the bin.
 
 ________________
 
@@ -86,7 +86,7 @@ Then the questions turn into pairs of things and what the two of them share, the
 
 Chloe sits up a little, waiting to find out if that counts extra. Ben stops writing, then writes for longer than usual, sideways down the white edge of the page where the boxes have run out.
 
-He keeps giving her pairs until he turns the sheet over and finds the end of them. Then he opens a drawer and comes back with a thicker book, another colour down the spine, and reads pairs out of that one, off a page she can see the shape of but not the words on.
+Pairs keep coming until he turns the sheet over and finds the end of them. Then he opens a drawer and comes back with a thicker book, another colour down the spine, and reads pairs out of that one, off a page she can see the shape of but not the words on.
 
 Those go on a while, and when he stops he puts that book back in the drawer instead of on the table with the rest.
 
@@ -94,7 +94,7 @@ ________________
 
 Then he says numbers and she says them back, and after that he says numbers she has to say back in the other direction.
 
-They keep getting longer. She holds eight going forwards and six going backwards before she loses the middle of the next string and tells him so. He says that's fine and does another anyway, and she loses the middle of that too. She has no idea whether any of it is a lot, since this is the first time anybody has ever said a number of numbers to her.
+They keep getting longer, and she holds eight going forwards and six going backwards before she loses the middle of the next string and tells him so. That's fine, he says, and he does another anyway, and she loses the middle of that one too. She has no idea whether any of it is a lot, since this is the first time anybody has ever said a number of numbers to her.
 
 ________________
 
@@ -112,11 +112,11 @@ ________________
 
 Then there's a sheet with a key along the top: a star, a circle, a triangle, a cross, a shape like a house, each with a different little mark inside it, a line standing up, a line lying down, a ring, two dots. Under the key those shapes run across the page in empty rows, and she has to put the right mark in each one.
 
-She looks at the key once, and Ben says go and starts the watch with his thumb, but her hand won't go as fast as the page wants. The mark has to sit inside the shape and the shape is small, so her fingers grip up hard around the pencil to hold the line where it belongs, and by the end of the first row the web of her thumb aches with it. She is bad at the easiest thing on the table and can tell she is bad at it while it is happening.
+A last look at the key, then Ben says go and starts the watch with his thumb, but her hand won't go as fast as the page wants. The mark has to sit inside the shape and the shape is small, so her fingers grip up hard around the pencil to hold the line where it belongs, and by the end of the first row the web of her thumb aches with it. Bad at the easiest thing on the table, she can tell it while it's happening.
 
 Halfway down the second row she stops and looks up, because he only said to put the right mark in. There might be a version of this where the mark can be scribbled and it still counts. Ben watches her while the watch keeps going, and she goes back to doing it neat.
 
-He says stop, takes the pencil out of her hand and turns the sheet face down before she can count the rows, though she knows about how much a page is, and her face goes hot, not the good kind.
+Stop, he says, and takes the pencil out of her hand and turns the sheet face down before she can count the rows, though she knows about how much a page is, and her face goes hot, not the good kind.
 
 "Was that a good one, or is that a question you skip?"
 
@@ -136,7 +136,7 @@ Ben turns back a sheet in his stack, draws a line through something, writes agai
 
 "Nothing, mostly. Anything I start, I have to put away again."
 
-He lets the room stay quiet long enough that Chloe fills it herself.
+Ben lets the room stay quiet long enough that Chloe fills it herself.
 
 "I look out the window at the parking lot. There was a guy with his coffee up on the roof of his car. He drove off. It went off at the turn. And then Mrs. Aldana asked me a question and I didn't know there was one." She looks at the cup.
 
@@ -154,7 +154,7 @@ ________________
 
 Then it's words, and he asks them the same way every time, so the easy ones and the hard ones sound identical coming out of him.
 
-He asks what a bicycle is and she tells him about the wheels and the pedals, then what a hospital is for, then what stubborn means, which snags her, because there are two in her head, one about people and one about a jar.
+Ben asks what a bicycle is and she tells him about the wheels and the pedals, then what a hospital is for, then what stubborn means, which snags her, because there are two in her head, one about people and one about a jar.
 
 "Somebody keeps doing the thing. You show them why not to. They keep doing it."
 
@@ -162,13 +162,13 @@ He asks what a bicycle is and she tells him about the wheels and the pedals, the
 
 "Something not hurting you. It just won't stop."
 
-The words get longer and then they get stranger. One of them stops her cold, and she tells him so, then another stops her too, so she says she would rather go back to the first kind. He says that's not how it works, puts the next word to her anyway, and that one goes past her too, and then he closes the booklet.
+The words get longer and then they get stranger. One of them stops her cold, and she tells him so, then another stops her too, so she says she would rather go back to the first kind. Ben says that's not how it works, puts the next word to her anyway, and that one goes past her too, and then he closes the booklet.
 
 ________________
 
 Then the numbers come back with letters mixed into them, and he gives her the rule before he starts, the way he gives every rule: the numbers first in counting order, then the letters in alphabet order, whichever way round they went in.
 
-The first string arrives and she hands it back the way it arrived, because that is what the last game wanted. Ben writes. She does the same with the next. Before the one after that he says the rule again, in exactly the voice he said it the first time. She hears all of it, and the back of her neck goes hot.
+The first string arrives and she hands it back the way it arrived, because that is what the last game wanted. Ben writes, and she does the same with the next. Before the one after that he says the rule again, in exactly the voice he said it the first time. All of it lands, and the back of her neck goes hot.
 
 After that she sorts them in her head and gives them back in halves, and they get long before they stop.
 
@@ -178,7 +178,7 @@ Then the standing booklet comes back with a different kind of page, a square of 
 
 She points. He turns the page. She points. He turns the page.
 
-The pieces stop being shapes and start being rules about shapes. She keeps pointing, and Ben is turning pages faster than he has turned anything all morning. Then the pages stop.
+The pieces stop being shapes and start being rules about shapes, and she keeps pointing while Ben turns pages faster than he has turned anything all morning. Then the pages stop.
 
 ________________
 

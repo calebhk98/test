@@ -62,7 +62,7 @@ Chloe takes what she is allowed, and they are gone by Wednesday, and her mom has
 
 ________________
 
-At dinner in September she talks for the entire meal about a book in which a girl runs away and lives inside a train station, so the explaining starts with the station, because everything else in the story depends on how big it is.
+At dinner in September she talks for the entire meal about a book in which a girl runs away and lives inside a train station, and she starts with how big it is.
 
 "It's got a whole floor just for people waiting overnight. That's where she sleeps. You can only be there with a ticket. So she keeps hers the whole time and can't ever use it."
 
@@ -132,7 +132,7 @@ Kayleigh Burns turns around in her seat and looks at her.
 
 For the rest of the morning she sits on her hands even when she knows the answer.
 
-In the cafeteria she peels the crust off her sandwich in a long unbroken piece and leaves both parts untouched, working out which part was the wrong part, because it is either the Icarus or the saying it a second time louder.
+In the cafeteria she peels the crust off her sandwich in a long unbroken piece and leaves both parts untouched, working out which part was the wrong part.
 
 ________________
 
@@ -154,7 +154,7 @@ ________________
 
 Conferences are on a Thursday evening and both her parents go in, while Chloe sits on the corridor floor with a book in a smell of floor wax from the janitor's cart.
 
-She is close enough to hear them talking but too far to make out the words, for minutes and minutes, which she counts.
+For minutes and minutes she is close enough to hear them talking but too far to make out the words, and she counts them.
 
 Then the door opens on her mom saying thank you so much in the phone voice and her dad saying we appreciate it.
 
@@ -176,7 +176,7 @@ The parking lot, the boxes, the question that had already happened without her: 
 
 "I don't know," Chloe says, "I already told you I don't know."
 
-Her dad finds her in the mirror and asks whether she likes school, and Chloe opens her mouth and stops, because the real answer runs long and the car is nearly home.
+Her dad finds her in the mirror and asks whether she likes school, and Chloe opens her mouth and stops.
 
 "It's good," she says.
 
@@ -188,11 +188,11 @@ There is a pencil line on the wall beside the scale with a date written under it
 
 The doctor looks in her ears and down her throat, then has her follow his finger with her eyes only, which she is good at.
 
-Then her mom says she has been having a hard time at school. He rolls his chair around to face Chloe instead of the computer.
+Then her mom says she has been having a hard time at school, and he rolls his chair around to face Chloe instead of the computer.
 
 "Do you get in trouble at school?"
 
-"Sometimes, not really on purpose." He waits. She adds, "Not a lot, like once a week, for not paying attention."
+"Sometimes, not really on purpose." The doctor waits, and she adds, "Not a lot, like once a week, for not paying attention."
 
 "Do you finish your work?"
 
@@ -200,7 +200,7 @@ Then her mom says she has been having a hard time at school. He rolls his chair 
 
 "Do you know what the teacher's talking about, when she calls on you?"
 
-Chloe sits with that while he waits, because the real answer has two halves but the question was built to hold one.
+Chloe sits with that while he waits.
 
 Almost all of the time she knows what the teacher is talking about, but separately from that she is sometimes entirely somewhere else while a question goes by, and she picks the shorter word anyway.
 
@@ -208,7 +208,7 @@ Almost all of the time she knows what the teacher is talking about, but separate
 
 "She's healthy, she's growing, and everything I can measure in this room looks the way it ought to look," he says, to her mom now. "None of this is medical, and I want to be clear about that before anything else."
 
-He types something else. "But if the school is putting it in writing, I'd rather somebody looked at it properly than have you sitting on it another year, so it might be worth getting her evaluated, for attention, sooner rather than later."
+More typing, and then he says, "But if the school is putting it in writing, I'd rather somebody looked at it properly than have you sitting on it another year, so it might be worth getting her evaluated, for attention, sooner rather than later."
 
 "That's a psychologist, or."
 
@@ -286,7 +286,7 @@ That night at dinner she tells them, and it takes about a minute and a half.
 
 Her mom says she probably just wants everybody on the same page, literally, then laughs at her own joke, and Chloe laughs too, because it's her mom, while her dad does the noise he does instead of laughing.
 
-Then the corner of her mom's mouth drops and stays down. She gets up and starts the dishes before anybody at the table has finished eating.
+Then the corner of her mom's mouth drops and stays down, and she gets up and starts the dishes before anybody at the table has finished eating.
 
 ________________
 
