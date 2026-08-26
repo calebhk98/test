@@ -154,7 +154,7 @@ In December the assignment has a minimum and she writes the minimum, about a boa
 
 Conferences are on a Thursday evening and both her parents go in, while Chloe sits on the corridor floor with a book in a smell of floor wax from the janitor's cart.
 
-She is close enough to hear them talking and too far to make out the words, for eleven minutes, which she counts.
+She is close enough to hear them talking and too far to make out the words, for minutes and minutes, which she counts.
 
 Then the door opens on her mom saying thank you so much in the phone voice and her dad saying we appreciate it.
 
@@ -1077,7 +1077,7 @@ The name of it goes across the table, and he asks whether it is good, and Chloe 
 
 "You're agreeing at me," Sam says, and pushes his tray a couple of inches away.
 
-Chloe has a whole sentence about the lid ready, four words, five, and she lets it go.
+Chloe has a whole sentence about the lid ready, and she lets it go.
 
 On the fourth night she gets as far as the phone and stands there with her hand on it, until a kid comes up behind her to ask if she is using it, so she says no, then goes back upstairs, where Priya is still awake.
 
@@ -1105,7 +1105,7 @@ On day seven Sam says something wrong about volcanoes, which is that the lava co
 
 "That's not how it works though," the boy says, and everybody looks at him, while across the room Owen is still copying the word off the board from earlier, head down over his own paper.
 
-"It's not hollow, it's rock the whole way down, and the rock's what's doing the pushing, since it's the gas trapped inside that makes it move," he says, with both hands out in front of him now. "It's not really the heat, it's the gas, and how fast it comes out depends on how thick it is."
+"It's rock the whole way down, no hollow in it, and the rock's what's doing the pushing, since it's the gas trapped inside that makes it move," he says, with both hands out in front of him now. "The gas does it more than the heat, and how fast it comes out depends on how thick it is."
 
 A girl further down lets her head drop onto the desk with a thud loud enough that a couple of people look over.
 
@@ -1143,7 +1143,7 @@ Mr. Doyle stops with the marker still up at the board to look at what he has wri
 
 Mr. Doyle is already onto the next thing, brisk about it, while a kid glances at Ruth before looking back at the board. Chloe presses her thumbnail into the edge of the desk until it leaves a mark.
 
-She has done this herself, in January with chapter nine, when Mrs. Aldana came down the row, took the book off her desk by the spine, and kept it until the end of the day.
+She has done this herself, in January, when Mrs. Aldana came down the row, took the book off her desk by the spine, and kept it until the end of the day.
 
 Chloe has a very clear idea of what is supposed to happen to a child who does what Ruth just did, so she watches for it the whole rest of the period: Mr. Doyle's face the next time Ruth's name comes up, the door on the way out in case somebody is waiting there to have a word, and at lunch, the end of the table, to see whether anybody comes over.
 
@@ -1328,7 +1328,7 @@ At dinner in the third week Kavi says something about the moon being up in the a
 
 "The moon. You only ever see the same side of it, so it's facing you the whole time, on purpose, the entire time you've ever looked at it."
 
-"That's not lying, that's just being stuck," Sam says.
+"That's just being stuck, then, not lying," Sam says.
 
 "It's not stuck, because stuck is when you can't move," Chloe says, with the roll still in her hand, uneaten. "It's moving the whole time, all the way around us, and it's turning while it does it, at exactly the speed that keeps the same side pointed here."
 
@@ -1485,7 +1485,7 @@ Her dad looks at the napkin, folds it in half twice, and puts it in his shirt po
 
 \---
 
-After, the four of them sit on the floor in the hall outside Pluto with their backs against the wall, close enough that Ruth's shoulder stays against Chloe's for most of it, while the lights in that hall go off in sections late on, so that they are down to the last section, in a strip of light about the width of a doorway.
+After, they sit on the floor in the hall outside Pluto with their backs against the wall, close enough that Ruth's shoulder stays against Chloe's for most of it, while the lights in that hall go off in sections late on, so that they are down to the last section, in a strip of light about the width of a doorway.
 
 Ruth takes her shoes off and lines them up against the wall, heel to heel, then knocks them out of line with one foot and leaves them like that.
 
@@ -1728,7 +1728,7 @@ Chloe takes her four off the cart, still catching her breath, and finishes two o
 
 ---
 
-Second grade is Ms. Vance, who everybody says is the nice one, and the desks are in groups of four with a name card taped to the corner of each.
+Second grade is Ms. Vance, who everybody says is the nice one, and the desks are in groups with a name card taped to the corner of each.
 
 "These are your groups until Thanksgiving, so you're going to want to be nice to the three people you're looking at right now. If somebody in your group is stuck you're allowed to help them, and helping means you talk about it with them, rather than doing it yourself and letting them copy it off you."
 
@@ -1768,7 +1768,7 @@ Her hand stays where it is for the rest of the period, and when Ms. Vance calls 
 
 ---
 
-The four books are due on a Thursday and she has finished two of them.
+The library books are due on a Thursday and she has finished two of them.
 
 Having taken the third book to bed on the Monday, she gets a page and a half in, reads the same sentence twice, and starts the page over with no memory of what it said the first time. On the Tuesday she opens it where she stopped, reads the top of the page, reads it again, gives up and puts it down on the floor, and on the Wednesday she leaves it there.
 
@@ -2219,7 +2219,7 @@ At dinner she counts sixteen familiar faces before the food comes and gives up a
 
 "He left camp in the second week, the boy in the room across from Sam with a blue thing hanging off his bag."
 
-Ruth tilts her head, "kind of, he's the boy who wouldn't do the water thing," and stacks her tray on the rack, then takes Chloe's before Chloe can reach for it. "He went home, and then four more went the week after, and my mom asked me about it in the car, and I didn't know what to tell her."
+Ruth tilts her head, "kind of, he's the boy who wouldn't do the water thing," and stacks her tray on the rack, then takes Chloe's before Chloe can reach for it. "He went home, and then more went the week after, and my mom asked me about it in the car, and I didn't know what to tell her."
 
 She already knows the number, because she counted them herself the week it happened, before Ruth ever said so.
 
@@ -2838,7 +2838,7 @@ Chloe stops. "Wait, that's it, that's the whole problem, we're reacting."
 
 On the Monday Chloe gets one on her fourth go, and the balls meet an arm's length in front of her face with a flat wet crack, both of them coming apart at once, orange and blue hanging in the air together and then all over the floor, and the boy she is paired with says, "Lucky," but Ruth gets hers a few minutes later and screams.
 
-By the end of the hour they have thirteen between them and everybody else on the floor has two, and on the Thursday they have nineteen, and they spend most of that evening doing the noise at each other in the corridor, and Ruth does an impression of the boy who said luck, and they make Kavi watch it twice.
+By the end of the hour they have more between them than everybody else on the floor put together, and on the Thursday they have nineteen, and they spend most of that evening doing the noise at each other in the corridor, and Ruth does an impression of the boy who said luck, and they make Kavi watch it twice.
 
 People start asking on the Friday, and Ruth says she has been practising while Chloe shrugs and changes the subject, so that by the following week there are theories going round about the markers being different weights.
 
@@ -2972,7 +2972,7 @@ Bell turns the metronome on. "Keep your eyes off each other," he says, "off the 
 
 It is a counting problem, and it takes Chloe until the third week to admit that.
 
-Her release runs early when she is keyed up and late when her hands are cold, and either way puts the arrows a long way apart up there, since a tenth of a second is several metres of flight. In the second week she starts practising it without a bow, walking to dinner in the dark with four fingers going against her leg, which is how Ruth catches her at it in the hall.
+Her release runs early when she is keyed up and late when her hands are cold, and either way puts the arrows a long way apart up there, since a tenth of a second is several metres of flight. In the second week she starts practising it without a bow, walking to dinner in the dark with her fingers going against her leg, which is how Ruth catches her at it in the hall.
 
 "Is that the release you're doing?"
 
@@ -3078,7 +3078,7 @@ On the Wednesday she builds the other side, because a man writing in 1961 makes 
 
 By Thursday afternoon she has stopped being angry and started being interested.
 
-It goes in on the Monday, fourteen thousand words over twenty-eight pages, and Hearn gives it back a week later with a B on the front.
+It goes in on the Monday, twenty-eight pages of it, and Hearn gives it back a week later with a B on the front.
 
 The note runs to half a page, and it says she hedges, twice on page eight, once on page twenty-two, and the whole of the conclusion, whose last line reads: *it could be argued that, on balance, this was perhaps not the right decision.* She already answered those objections earlier, so the hedge only asks the reader to answer them again, and she keeps apologising for the argument in the middle of making it. An argument you apologise for is a request. Make it or leave it out.
 
@@ -3203,7 +3203,7 @@ Late in the evening they go down to the kitchen, where ovens the size of wardrob
 
 "We're doing them and they have to come out identical," he says, already pulling a tray down, "so it has to be the big oven, because that's a box with one temperature in it and the conveyor cooks the front of a run harder than the back."
 
-Kavi lights it, takes a thermometer off the wall and stands at the glass while the rest of them argue over whether butter counts as a variable, and by the time the tray is ready he has dropped out of the bread question altogether and is writing numbers on the back of his hand. "Eleven degrees a minute for the first three minutes, then it halves."
+Kavi lights it, takes a thermometer off the wall and stands at the glass while the rest of them argue over whether butter counts as a variable, and by the time the tray is ready he has dropped out of the bread question altogether and is writing numbers on the back of his hand. "It climbs fastest for the first three minutes, then the rate halves."
 
 "Kavi, the bread's getting away from you."
 
@@ -3265,7 +3265,7 @@ Minimum personnel. Every additional student on the response costs you.
 
 At the bottom, in the same typeface, without emphasis: Response time is scored against the standard that's posted weekly.
 
-Chloe is annoyed when the alarm wakes her. It's the small one, the one that sits in her ear, and it means watch. It's four in the morning. She's pulled a four-a.m. watch before. This is the first one nobody posted beforehand. She's in the corridor in eleven seconds and Kavi is already there.
+Chloe is annoyed when the alarm wakes her. It's the small one, the one that sits in her ear, and it means watch. It's four in the morning. She's pulled a watch at this hour before. This is the first one nobody posted beforehand. She's in the corridor in seconds and Kavi is already there.
 
 "I saw it, I was still up. There's four of them, they're at the loading side, they came over the fence about a minute ago."
 
@@ -3313,7 +3313,7 @@ The plan takes Sam ninety seconds and he is defending it before he's finished de
 
 "You'll get grabbed."
 
-"That's the point," she says, already moving toward the door. "I'm twelve and I'm small, and I'm a girl in pyjamas. Nobody hits that. They'll grab me and they'll try to keep me quiet and then they'll spend at least four seconds deciding what to do with me, and while they're deciding, they're standing still and they're all facing the same way."
+"That's the point," she says, already moving toward the door. "I'm twelve and I'm small, and I'm a girl in pyjamas. Nobody hits that. They'll grab me and they'll try to keep me quiet and then they'll spend at least a few seconds deciding what to do with me, and while they're deciding, they're standing still and they're all facing the same way."
 
 Ruth looks at her. "I'm shorter," she says.
 
@@ -3341,7 +3341,7 @@ Chloe walks around the corner at a normal speed with her hands empty and her arm
 
 All four of them turn, and the nearest one comes at her fast and low, gets a gloved hand up near her mouth, and she lets him, because moving would be wrong. He just holds her there, his other arm half up, doing exactly what she needed him to do, in front of three men who are all looking at the same thing.
 
-It takes nine seconds: Kavi, closest to them, takes the two at the back; Ruth takes the third, and Sam goes for the one with his hand on Chloe's face, doing it badly, missing the vein and going again. The man takes that half a second, gets an arm free, swings, and misses before he goes down.
+It is done in seconds: Kavi, closest to them, takes the two at the back; Ruth takes the third, and Sam goes for the one with his hand on Chloe's face, doing it badly, missing the vein and going again. The man takes that half a second, gets an arm free, swings, and misses before he goes down.
 
 Chloe steps back out of the way and sits down on the floor because her legs have decided to, while Ruth is already moving between the four of them, two fingers on a throat, then the next, then the next.
 
@@ -3379,13 +3379,13 @@ Chloe sits against the wall with her arms around her knees. "It's still going to
 
 "They'll say it's on us."
 
-"They shouldn't run it at four in the morning without telling us," Ruth says, to nobody in particular. "Four's fine, four's happened, as long as they tell you."
+"They shouldn't run it at four in the morning without telling us," Ruth says, to nobody in particular. "That's fine, that's happened, as long as they tell you."
 
 "Escalation. We've been good," Kavi says.
 
 "That's not a reason. It's four in the morning," she says, and she puts her head back against the wall.
 
-Sam calls it in as soon as the last knot is tied. Then they wait, since Sinclair is four buildings away.
+Sam calls it in as soon as the last knot is tied. Then they wait, since Sinclair is a few buildings away.
 
 The first one comes round after about seven minutes, confused for a beat, before he realizes he's tied and goes still when he sees who did it. "Hi," Ruth says. "You're fine, although you'll feel sick for about an hour." His jaw sets, teeth together.
 
@@ -3562,7 +3562,7 @@ She stops doing it by November and stops resenting it in February.
 
 Half the grammar is a frame she already has from Latin, the vocabulary outside that frame sits close enough to English that she barely has to translate it, and the rest she reaches sideways through French, so by November she reads with the dictionary open beside her and hardly touches it. When she says so at dinner Ruth points a fork at her and calls it the exact argument Chloe made in a doorway two years ago, held now at a table in front of Sam.
 
-The laboratories split the year between them, and hers does materials, where the youngest fetches, cleans, takes the jobs the seniors avoid. A postdoctoral researcher called Sanders hands her a stack of instrument logs with the paper written off them and asks why the two disagree, since the logs hold four thousand runs where the paper reports twelve hundred, and neither document says which of them, or when, or by whom. Nineteen days go on it with the logs spread across the tables: the instrument was recalibrated on a Tuesday in March, everything before that Tuesday is in the paper, everything after it stayed in the log alone, and somebody stopped and kept the stopping to themselves. Sanders reads her five pages standing up, puts them in a folder, and says thank you.
+The laboratories split the year between them, and hers does materials, where the youngest fetches, cleans, takes the jobs the seniors avoid. A postdoctoral researcher called Sanders hands her a stack of instrument logs with the paper written off them and asks why the two disagree, since the logs hold far more runs than the paper reports, and neither document says which of them, or when, or by whom. Nineteen days go on it with the logs spread across the tables: the instrument was recalibrated on a Tuesday in March, everything before that Tuesday is in the paper, everything after it stayed in the log alone, and somebody stopped and kept the stopping to themselves. Sanders reads her five pages standing up, puts them in a folder, and says thank you.
 
 In cryptography the first term goes entirely on breaking things other people built, substitution, then Vigenere, then a fortnight on why a key you use twice stops being a key, so by November they are working real messages off real systems with real mistakes in them.
 
@@ -3976,7 +3976,7 @@ Hark hands out envelopes in October with two hundred dollars in each, to be spen
 
 Rustem buys a dozen dead motors at a farm auction for a few dollars apiece, several of which are turning over by Christmas, and in January he sits down across from Chloe at dinner and pushes a page of figures at her before she has finished eating, wanting the lot. Reading it twice, she checks his sale prices against what he got for those, then offers him a hundred and twenty at eight percent with the motors as collateral, and he argues about the rate for twenty minutes and loses. Then he tells her she has to see the barn first, so she goes on the Saturday and finds nearly sixty motors in it, a third of them past helping, and leaves her offer exactly where it was.
 
-Forty goes to a girl called Fen at nine percent against a table saw, and the last thirty to Priya at twelve, unsecured, because it is Priya. They all pay her back, and she finishes the year with two hundred and seventeen dollars to Rustem's nine hundred and forty.
+Forty goes to a girl called Fen at ten percent against a table saw, and the last thirty to Priya at twelve, unsecured, because it is Priya. They all pay her back, and she finishes the year with two hundred and seventeen dollars to Rustem's nine hundred and forty.
 
 Hark has her at the board in April with the ledger written up, and reads the columns from the back with her arms folded before she says anything.
 
@@ -4111,7 +4111,7 @@ Chloe reads the rows twice, then looks up at him and back down at them.
 
 "So the points are for saying the obvious part out loud, in the right order, a row at a time, even though anyone reading it already knows every word of it is true before they get to your line."
 
-"The points are for showing your work," Amberg says, tapping the scheme once where the rows are and then closing it over them. "A page gets marked on what's written on it, not on what's in your head, and right now your page has one correct sentence and four empty rows underneath it. Take the paper."
+"The points are for showing your work," Amberg says, tapping the scheme once where the rows are and then closing it over them. "A page gets marked on what's written on it, not on what's in your head, and right now your page has one correct sentence and empty rows underneath it. Take the paper."
 
 ---
 
@@ -4155,13 +4155,13 @@ She looks at the gap, and the car goes through it.
 
 In October she sits the bar again, the retake for everyone who failed in April, in that room, a few rows over from where she sat the first time.
 
-Question six is a rented forklift, and she has the answer in her second line, then writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. Start to finish it takes nineteen minutes, and she reads it back once, leaving every line of it exactly where it is.
+A question near the end is a rented forklift, and she has the answer in her second line, then writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. Start to finish it takes nineteen minutes, and she reads it back once, leaving every line of it exactly where it is.
 
 This time she passes by twenty-two, and she reads the number twice before she puts the page away, and then Kavi sends back a string of exclamation points and Sam texts to ask what she got on the forklift question, so she tells him, asks what he got, and goes back to her book.
 
 In November she sits in the library with something else open in front of her, thinking about April instead; it happens again in December, and once more in February, and she still shuts books harder than she means to, though she could not tell anybody why she is doing it.
 
-The forge is Thursdays, and has been since she was twelve, the work down there staying between her and Pruitt, his entire commentary across the years having come to a handful of sentences.
+The forge is Thursdays, and has been for years, the work down there staying between her and Pruitt, his entire commentary across the years having come to a handful of sentences.
 
 "You're off early."
 
@@ -4302,7 +4302,7 @@ Chloe reads it fast: seven grown men who chose this and have presumably done it 
 
 Chloe looks at the space between the cars, and at Sam, and gives it about a second. "Fine. We stay close."
 
-There is chain link a few strides behind them and a loading dock on the other side of it, and the three of them are over the fence and gone before the man at the front has finished turning his head to follow. Nadia goes first because she's nearest, one hand on the top rail and no pause on it. Chloe is half a second behind her, over the rail in one clean vault. Ruth swings her bag over ahead of herself so the strap can't catch, comes across last, and lands running. The pallets are stacked chest-high against the dock and they take them in a step each. The fence drill has been run at this speed every term since they were nine, and from four meters away it looks like three people walked backwards out of the world.
+There is chain link a few strides behind them and a loading dock on the other side of it, and the three of them are over the fence and gone before the man at the front has finished turning his head to follow. Nadia goes first because she's nearest, one hand on the top rail and no pause on it. Chloe is half a second behind her, over the rail in one clean vault. Ruth swings her bag over ahead of herself so the strap can't catch, comes across last, and lands running. The pallets are stacked chest-high against the dock and they take them in a step each. The fence drill has been run at this speed every term since they were children, and from four meters away it looks like three people walked backwards out of the world.
 
 The dock roof is a metre and a half above the lot and none of the three lies down on it. They stay crouched at the lip with their hands flat on the edge, weight forward, close enough to be down in the lot inside a second: open air between them and Sam, a clear view of every set of hands, a drop onto anybody who gets behind him.
 
@@ -4366,7 +4366,7 @@ Sam stops walking altogether, a foot off the kerb. "What, are you actually serio
 
 "She's fifty, for a start," Ruth says. "She's an adult with a job she has worked for years, and she's been out in the world a good deal longer than you have."
 
-"That's thirty-four years of being in situations," Nadia says, "against your sixteen, eleven of which were spent at school."
+"That's thirty-four years of being in situations," Nadia says, "against your sixteen, most of which were spent at school."
 
 Sam thinks about it for a good deal longer than the joke needs, and then answers it straight. "She'd take me apart before I even got a hand up, and everyone here knows it."
 
@@ -4425,7 +4425,7 @@ Ruth reads it over her shoulder before she can close the laptop, laughing at her
 
 "Because getting it to six hundred is harder than getting it to four thousand." Chloe cuts it and cuts it again before it holds.
 
-Sam finishes in under an hour and shuts the laptop harder than it needs. "Ten pages a week, every week since I got here," he says, "and the thing that decides where I spend the next four years is a paragraph, and at that length they're guessing, not reading, and everyone who wrote one knows it."
+Sam finishes in under an hour and shuts the laptop harder than it needs. "Ten pages a week, every week since I got here," he says, "and the thing that decides where I end up is a paragraph, and at that length they're guessing, not reading, and everyone who wrote one knows it."
 
 Kavi finishes in twenty minutes, exactly one word over, and submits it unread.
 
@@ -4686,7 +4686,7 @@ He gives her the same list in the order he gives everybody: research, full time;
 
 "Reason?"
 
-"I'd be good at about four hours a month of that job." Both hands stay where they were. "The hours where somebody names the constraint and I go argue with a supplier about it. The remainder is a desk and a paper at the end, and every paper I have ever finished went to a marker, where it stopped."
+"I'd be good at a few hours a month of that job." Both hands stay where they were. "The hours where somebody names the constraint and I go argue with a supplier about it. The remainder is a desk and a paper at the end, and every paper I have ever finished went to a marker, where it stopped."
 
 Amberg writes for a while. "The eighty saying no are going to college in September. You haven't sent an application anywhere."
 
@@ -4847,7 +4847,7 @@ Then they read out ninety-one names in alphabetical order, evenly paced, timed t
 
 When Sam's name gets called, whole rows of people who are not his family stand up anyway, Chloe's mother among them. Years of pickups and drop-offs mean she has watched this particular boy grow a head taller in a single summer, and it still catches her off guard. When Ruth's name comes, half a row does it for her. Priya's parents, an electrician and a woman who works the front desk at an urgent care clinic, clap for every single name, not just their daughter's, the whole way through.
 
-Then it's Kessler, and eleven years compress into thirty feet of plywood and four seconds of applause. Chloe crosses a stage that existed for the first time a month ago, built by people she's spent a decade arguing with about hot dogs and the size of the moon. It holds dead steady under her the whole way across. The head of school hands her the folder with both hands and says her name once, correctly, plain. That turns out to be the entire weight of ceremony the place hands out. On the walk back to her seat she finds her mother's face before she finds anyone else's, the reflex that used to send her to the fridge twice in a night to check a magnet was still holding a note in place.
+Then it's Kessler, and eleven years compress into thirty feet of plywood and a moment of applause. Chloe crosses a stage that existed for the first time a month ago, built by people she's spent a decade arguing with about hot dogs and the size of the moon. It holds dead steady under her the whole way across. The head of school hands her the folder with both hands and says her name once, correctly, plain. That turns out to be the entire weight of ceremony the place hands out. On the walk back to her seat she finds her mother's face before she finds anyone else's, the reflex that used to send her to the fridge twice in a night to check a magnet was still holding a note in place.
 
 Her mother cries from the K's onward, a tissue out early, and her father keeps a hand on the back of her chair the whole time.
 
@@ -4997,7 +4997,7 @@ It comes out in order, the way the eligibility page laid it out for her: the age
 
 "So the two years in the middle," her father says, when she's finished, "that's a long stretch to spend just waiting on one date. Find something in it you'd actually want to do anyway."
 
-Chloe pulls Georgetown's letter out from under the eligibility printout and lays it out next to the ham. "If I go to the state school, I spend two years finishing a degree nobody at State reads closely, and I walk into the oral assessment with eleven languages I have only ever used on paper and in a building where everybody already knows what I mean. If I go to Georgetown, the people who run that assessment teach there every spring, and the languages get somebody to argue with instead of a page, and half the internships that turn into a clearance start walking distance from wherever I'm living. It's the same two years either way. One of them is already the first year of it."
+Chloe pulls Georgetown's letter out from under the eligibility printout and lays it out next to the ham. "If I go to the state school, I spend two years finishing a degree nobody at State reads closely, and I walk into the oral assessment with languages I have only ever used on paper and in a building where everybody already knows what I mean. If I go to Georgetown, the people who run that assessment teach there every spring, and the languages get somebody to argue with instead of a page, and half the internships that turn into a clearance start walking distance from wherever I'm living. It's the same two years either way. One of them is already the first year of it."
 
 The water stops running upstairs. A few minutes later her mother comes down for a glass, finds them still at the table, and reads the room accurately enough to fill the glass. She carries the question back upstairs with her, unasked.
 
@@ -5286,7 +5286,7 @@ The branch is a converted storefront a few blocks from the shop, with desks behi
 
 "Five days is the policy on a new business account."
 
-"It's the policy on a new account with no history. This one has three months on it, fourteen deposits and zero returns." She has the statements out on his desk, squared against the edge of it. "Two days on nine named payers. I'll write them down for you."
+"It's the policy on a new account with no history. This one has three months on it, steady deposits and zero returns." She has the statements out on his desk, squared against the edge of it. "Two days on nine named payers. I'll write them down for you."
 
 "I can't do two days on a balance this size."
 
@@ -5302,7 +5302,7 @@ The list holds him long enough that the woman at the next desk finishes a teleph
 
 "Two days on the nine. Six months, then it gets reviewed."
 
-"And the twelve dollars a month on the account."
+"And the monthly fee on the account."
 
 "The fee's the fee."
 
@@ -6033,7 +6033,7 @@ A third morning goes on cross-referencing that agent against the county's proper
 
 "Does the office upstairs keep regular hours, or is it just whoever happens to be up there that day?" she asks, in the unbothered voice of somebody scheduling a delivery. "I've got a package that needs a signature from someone up there."
 
-"They're in most days," the man behind the counter says. "Nine to five, half a dozen of them, give or take, though I couldn't tell you what it is they do up there."
+"They're in most days," the man behind the counter says. "Regular enough, half a dozen of them, give or take, though I couldn't tell you what it is they do up there."
 
 None of it moves anything else on her list. Payroll clears on the twenty-second the way it always does, she signs two employers on the Saturday in the middle of it, one of them a machine shop with a handful of people in it and a fax number still on the door, and on the Thursday she takes the difficulty on the test generator down a notch and lets it rebuild itself overnight.
 
@@ -6465,7 +6465,7 @@ ________________
 
 Then there's the entry.
 
-Eight years ago. Four operators, over the fence at the loading side, a little after four in the morning.
+Eight years ago. Four operators, over the fence at the loading side, a little before dawn.
 
 The report runs long, written by an operator who was there, and most of it is procedural, standard language he recognizes from a dozen other files: approach, entry, timing. The classification banner across the top of every page is the highest he's ever cleared for, and even at that level, three lines in the middle of the page are blacked out entirely, more than he's seen redacted from anything else in the box. What matters starts on page two.
 
@@ -6475,7 +6475,7 @@ Theo stops on that line and reads it again before he lets himself go on.
 
 The next entry is written from memory, after the fact, and it says that all four of them were unconscious before anyone made a decision.
 
-They came round tied at the wrists and ankles, on their sides, against a wall. There were four children sitting on the floor next to them. The report notes, in the flat voice these things are always written in, that whatever the children were doing, it read to him as an argument about their own performance rather than an interrogation. The argument was about how the four men would score them, whether a response time of nearly eight minutes counted as a fail, and whether it was fair to run a surprise exercise in the middle of the night that skipped the board entirely.
+They came round tied at the wrists and ankles, on their sides, against a wall. There were four children sitting on the floor next to them. The report notes, in the flat voice these things are always written in, that whatever the children were doing, it read to him as an argument about their own performance rather than an interrogation. The argument was about how the men would score them, whether a response time of nearly eight minutes counted as a fail, and whether it was fair to run a surprise exercise in the middle of the night that skipped the board entirely.
 
 The author records that he was asked, directly, what he would have given them.
 
@@ -6570,7 +6570,7 @@ That's the whole answer, first try, the real one instead of a softer one built t
 
 "From when?"
 
-"I started that April, a few months after I turned seven. There was a four-week programme the summer before, which is how they found me, or how I found them, depending which end you look from."
+"I started that April, a few months after I turned seven. There was a programme the summer before, which is how they found me, or how I found them, depending which end you look from."
 
 At that he looks up, once, the pen briefly still against the page. "That's young."
 
@@ -7240,9 +7240,9 @@ She goes in the next day and does her job, which is the job of a government that
 
 *October 2026*
 
-Priya goes quiet for eleven days in October, which is ordinary enough that the rest of them let it run. Quiet has run longer than that over a pass with no signal, and once for the better part of a month over a mare that would not foal.
+Priya goes quiet for a stretch of days in October, which is ordinary enough that the rest of them let it run. Quiet has run longer than that over a pass with no signal, and once for the better part of a month over a mare that would not foal.
 
-The rest of them are where the summer left them, a season on from a thing none of them refers to directly in writing. Chloe is nine months into the job and reads the chat on a bus with her bag on her knees. Ruth has a card with her name on it slotted into a bracket beside a door, and a second-year who has started turning up wherever she eats. Kavi has the lab he had in June and a second bench in it that arrived without anybody asking him whether he wanted one. Sam is at a unit in a state he first set foot in the day he was posted to it, with a phone he can use in the evenings. Nadia has taken on more people on the floor at the company than she had in June, and still counts her parents' till on a Sunday. Eli has a job title with a word in it he finds funny, and has now explained the joke to several people, each of whom received it politely. Theo answers from a window with the blinds already down.
+The rest of them are where the summer left them, a season on from a thing none of them refers to directly in writing. Chloe is most of a year into the job and reads the chat on a bus with her bag on her knees. Ruth has a card with her name on it slotted into a bracket beside a door, and a second-year who has started turning up wherever she eats. Kavi has the lab he had in June and a second bench in it that arrived without anybody asking him whether he wanted one. Sam is at a unit in a state he first set foot in the day he was posted to it, with a phone he can use in the evenings. Nadia has taken on more people on the floor at the company than she had in June, and still counts her parents' till on a Sunday. Eli has a job title with a word in it he finds funny, and has now explained the joke to several people, each of whom received it politely. Theo answers from a window with the blinds already down.
 
 What those days were was a bus with a cracked window, then a second bus, then a room over a feed merchant's with a lock she changed herself on the first afternoon. Part of the time in that room was spent sitting still and letting a hand come up and go down again, which is roughly what she would do with any animal that had been got at: stay where it can see you, and wait for the shaking to finish on its own schedule.
 

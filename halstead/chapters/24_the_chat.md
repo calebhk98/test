@@ -296,7 +296,7 @@ The list holds him long enough that the woman at the next desk finishes a teleph
 
 "Two days on the nine. Six months, then it gets reviewed."
 
-"And the twelve dollars a month on the account."
+"And the monthly fee on the account."
 
 "The fee's the fee."
 
