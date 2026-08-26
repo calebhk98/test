@@ -2,15 +2,15 @@
 
 *September 2023*
 
-The chat is five years old. They wrote the encryption themselves at thirteen, mostly to keep a teacher from reading it while they arranged getting out of the building, and it's the only one any of them has ever used.
+The chat is five years old. They wrote the encryption themselves at thirteen, mostly to keep a teacher from reading it while they arranged getting out of the building, and none of them has ever used another.
 
-This is the first September that finds every one of them somewhere else. Eli, three states from where he grew up, has a new badge with last year's photo still on it, and Ruth is in a dorm room in Cambridge with a roommate she's met twice. Sam is at a processing station somewhere the paperwork won't name, where they hand his phone back a few minutes at a stretch. Kavi is still at Halstead, in a lab down the corridor from where he had his own lessons, doing work that used to be homework. Nadia is in the back room of her parents' shop with the door open onto the counter, while Theo, three states from the harbor town he grew up in, learns which parts of his new government job stay behind the badge. Priya is somewhere south of the equator, on a signal that comes and goes, and Chloe sits in a lecture hall built for three hundred people, an hour from the apartment she rents.
+This is the first September that finds all of them somewhere else. Eli, three states from where he grew up, has a new badge with last year's photo still on it, and Ruth is in a dorm room in Cambridge with a roommate she's met twice. Sam is at a processing station somewhere the paperwork won't name, where they hand his phone back a few minutes at a stretch. Kavi is still at Halstead, in a lab down the corridor from where he had his own lessons, doing work that used to be homework. Nadia is in the back room of her parents' shop with the door open onto the counter, while Theo, three states from the harbor town he grew up in, learns which parts of his new government job stay behind the badge. Priya is somewhere south of the equator, on a signal that comes and goes, and Chloe sits in a lecture hall built for three hundred people, an hour from the apartment she rents.
 
-Eli types with his phone propped against a monitor, eyes staying on whatever's actually on the screen. Kavi answers from the desk he does everything else from, one hand still turning over whatever object was already sitting on it. Ruth writes standing up, phone in one hand and a textbook open in the other, and finishes a whole exchange while keeping pace with whatever she was doing before it started. Nadia texts one-handed with the other hand still on a keyboard, keeping track of both at once. Theo answers standing at a window with the blinds already down, phone held low and close, the way he'd hold a document above his clearance. Sam thumbs the keyboard with the economy he uses on everything else, three words and stop, because someone behind him is already waiting for the phone. Priya replies from wherever she's charging it, propped against a boot, a bag, once against the neck of a horse that stood still for it.
+Eli types with his phone propped against a monitor, eyes staying on whatever's actually on the screen. Kavi answers from the desk he does everything else from, a hand still turning over whatever object was already sitting on it. Ruth writes standing up, phone in her hand and a textbook open in the other, and finishes a whole exchange while keeping pace with whatever she was doing before it started. Nadia texts one-handed with the other hand still on a keyboard, keeping track of both at once. Theo answers standing at a window with the blinds already down, phone held low and close, the way he'd hold a document above his clearance. Sam thumbs the keyboard with the economy he uses on everything else, three words and stop, because someone behind him is already waiting for the phone. Priya replies from wherever she's charging it, propped against a boot, a bag, once against the neck of a horse that stood still for it.
 
 Some of them answer inside a minute no matter the hour, Eli most nights, and Kavi from the building he's always slept in. Others answer in bursts, three messages at once after a six-hour gap, a reply to something asked at seven landing after midnight because a shift only just ended. A message sent to the whole group at three in the morning gets an answer from somebody within five minutes. It has for five years.
 
-A message can sit read for hours, and it means only a shift running long, a supervisor still talking, a horse three switchbacks from cell service. Whatever he's in the middle of at the agency keeps running through a joke about somebody's boss, so Theo reads everything within minutes of it landing and sometimes waits a full day to answer it. Nadia reads fast and answers fast, except on a Sunday evening, when she has the shop's books open in front of her and the phone goes face down on the counter. Sam goes dark for stretches at a time, the read receipt stuck wherever it last landed, and then three replies arrive inside one minute once he's got the phone back. A message can open with guys, or ok, or silence before the next fact, arriving before whoever's reading has gotten past the first word.
+A message can sit read for hours, and it means only a shift running long, a supervisor still talking, a horse three switchbacks from cell service. Whatever he's in the middle of at the agency keeps running through a joke about somebody's boss, so Theo reads everything within minutes of it landing and sometimes waits a full day to answer it. Nadia reads fast and answers fast, except on a Sunday evening, when she has the shop's books open in front of her and the phone goes face down on the counter. Sam goes dark for stretches at a time, the read receipt stuck wherever it last landed, and then three replies arrive inside a minute once he's got the phone back. A message can open with guys, or ok, or silence before the next fact, arriving before whoever's reading has gotten past the first word.
 
 ________________
 
@@ -36,7 +36,7 @@ eli: hang on
 
 ________________
 
-He spends the rest of the afternoon at it anyway, laptop propped against the work he's actually paid to do, the internal network map open in one tab and the ticket he's supposed to be closing untouched in the next one over.
+He spends the rest of the afternoon at it anyway, laptop propped against the work he's actually paid to do, the internal network map open in a tab and the ticket he's supposed to be closing untouched beside it.
 
 eli: 5
 
@@ -218,7 +218,7 @@ sam: obviously i caught him
 
 ________________
 
-In the space of one evening the same names move from a federal supervisor's notes to a fall-and-catch drill run by a sergeant to the exact gigabyte count on a store laptop.
+In the space of an evening the same names move from a federal supervisor's notes to a fall-and-catch drill run by a sergeant to the exact gigabyte count on a store laptop.
 
 Somebody posts a screenshot of a performance review, the name blacked out and the compliments left in.
 
@@ -276,7 +276,7 @@ ruth: since always apparently. i asked kavi to buy one for me and they asked who
 
 ________________
 
-The branch is a converted storefront two blocks from the shop, with three desks behind a rope and a manager who keeps the retail policies laminated in the drawer of the nearest one. The bank holds an incoming payment for five business days, and when Nadia asks in September to have that taken off her account he reads her the policy off the card without turning it around so she can see it.
+The branch is a converted storefront two blocks from the shop, with three desks behind a rope and a manager who keeps the retail policies laminated in the drawer of the nearest branch. The bank holds an incoming payment for five business days, and when Nadia asks in September to have that taken off her account he reads her the policy off the card without turning it around so she can see it.
 
 "Five days is the policy on a new business account."
 
@@ -286,11 +286,11 @@ The branch is a converted storefront two blocks from the shop, with three desks 
 
 "What size does it take."
 
-The figure he gives is more than she has ever had at one time. Sitting with it a second, she gives him the one she can actually hold across a month, which is three hundred dollars under his, and tells him what holding it costs her, which is that the three hundred sits in his branch instead of in her hand on the fourth of every month.
+The figure he gives is more than she has ever had at once. Sitting with it a second, she gives him the figure she can actually hold across a month, which is three hundred dollars under his, and tells him what holding it costs her, which is that the three hundred sits in his branch instead of in her hand on the fourth of every month.
 
 "Three hundred under isn't the number."
 
-"Three hundred under is what's in the room." She writes the names down anyway, one to a line, and turns the paper around so it faces him. "Two days on those, five on everything else. If one of them comes back on you, put me to five across all of it and I'll take it."
+"Three hundred under is what's in the room." She writes the names down anyway, a name to a line, and turns the paper around so it faces him. "Two days on those, five on everything else. If one of them comes back on you, put me to five across all of it and I'll take it."
 
 The list holds him long enough that the woman at the next desk finishes a telephone call, and Nadia lets him finish.
 
@@ -306,7 +306,7 @@ The fee comes off for a year, and she is out of the branch two minutes after tha
 
 ________________
 
-Nadia is behind her parents' counter one day a week now, Sundays, and in the back room the other six. A regular customer asks her, not unkindly, when she's going to go do something with herself. She rings up his sandpaper and hands him his change.
+Nadia is behind her parents' counter on Sundays now, and in the back room the other six. A regular customer asks her, not unkindly, when she's going to go do something with herself. She rings up his sandpaper and hands him his change.
 
 nadia: guy today asked me when im going to go do something with myself
 

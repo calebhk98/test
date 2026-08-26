@@ -10,7 +10,7 @@ That night he falls asleep to fifty-nine other privates discovering their racks 
 
 The schedule he has had since he was seven, and lost over the summer, reappears on the second day, laminated and screwed to the wall beside the doorway.
 
-Drill Sergeant Ruiz possesses a voice built for open ground and demonstrates no visible interest in owning the other kind. That second morning he walks the row of racks with a boot in one hand, checking the fold on every blanket by eye from three feet away, stopping finally at Sam's.
+Drill Sergeant Ruiz possesses a voice built for open ground and demonstrates no visible interest in owning the other kind. That second morning he walks the row of racks with a boot in his hand, checking the fold on every blanket by eye from three feet away, stopping finally at Sam's.
 
 "Marsh. What is this supposed to be."
 
@@ -38,13 +38,13 @@ By the end of the first week Sam has asked five separate people how long the ent
 
 On the Friday he puts the question to Ruiz, at parade rest at the conclusion of an evening formation, and Ruiz takes a long, unhurried look at him before responding to any part of it.
 
-"Marsh, the real one is Tuesday. It is also Wednesday, and the Tuesday after that, and it will still be running on the morning you turn thirty-one with every single word of this conversation forgotten. Get out of my face."
+"Marsh, the real one is Tuesday. It is also Wednesday, and the Tuesday after that, and it will still be running on the morning you get out with every single word of this conversation forgotten. Get out of my face."
 
 Ruiz walks off. Sam accepts the answer as partial, then carries on asking.
 
 ________________
 
-The fitness test comes in the second week, on the gravel behind the barracks before the sun is properly up: breath showing, a folding table at one end of it carrying a clipboard, a scale, a stopwatch, a line of privates stamping their feet at the other.
+The fitness test comes in the second week, on the gravel behind the barracks before the sun is properly up: breath showing, a folding table at the end of it carrying a clipboard, a scale, a stopwatch, a line of privates stamping their feet at the other.
 
 Six events, a hundred points available on each, sixty required to pass on each, and Sam is meeting four of the six for the first occasion in his life: deadlift, standing power throw, hand-release push-ups, the sprint-drag-carry, a plank, two miles.
 
@@ -74,15 +74,15 @@ Word travels round the company by chow that afternoon, the way a number like tha
 
 "Did you play ball or something, to put up a number like that on a cold morning? Because a guy in second platoon reckons most of those events were brand new to you."
 
-"They were. Boarding school." Sam, with most of a roll in one hand, is reaching past Okoro for the pitcher with the other. "I was middling there, so if you want a real number off me you can have my range number instead. Forty percent, three years running, sitting at forty whatever I tried on it."
+"They were. Boarding school." Sam, with most of a roll in his hand, is reaching past Okoro for the pitcher with the other. "I was middling there, so if you want a real number off me you can have my range number instead. Forty percent, three years running, sitting at forty whatever I tried on it."
 
 "Forty percent of what, though?"
 
-"Of the shots. There were people in my year sitting on ninety-one."
+"Of the shots. There were people in my year who never missed."
 
 The table takes this for modesty and tells him so at some volume, because the six hundred has already gone up on a board in the hallway outside the orderly room. Sam runs the correction all the way out anyway. Odile comes out first, a girl who took him apart on a mat in front of thirty people, then apologised for it; then the April he lost a small object out of his own boot and cost somebody else half an hour of an evening getting it back; by the end of it two of them are laughing at him, while a third has stopped believing a word of any of it.
 
-"Boarding school," the third one says.
+"Boarding school," says the third.
 
 "Small one. You wouldn't have heard of it."
 
@@ -104,7 +104,7 @@ His first thought is that everybody here is tired in a way school could only app
 
 His second is arithmetic, and it is better. Half the bay has been doing this for a couple of months and he has been doing it for eleven years, so the gap between him and the man beside him is a fact about calendars rather than a fact about either of them.
 
-His third accounts for everything the first two leave lying around, and it is the one he keeps. This is a screen. Sorting sixty men by putting all sixty on one bar and writing down who lifts it is what an organisation does when it wants to know who to send somewhere else, which means the men around him are being measured on something he has yet to be shown, are almost certainly holding a considerable amount back for it, and will begin the real course once the sorting is finished.
+His third accounts for everything the first two leave lying around, and it is the one he keeps. This is a screen. Sorting sixty men by putting all sixty on a bar and writing down who lifts it is what an organisation does when it wants to know who to send somewhere else, which means the men around him are being measured on something he has yet to be shown, are almost certainly holding a considerable amount back for it, and will begin the real course once the sorting is finished.
 
 The explanation survives a week of examination, after which he stops examining it.
 
@@ -128,7 +128,7 @@ ________________
 
 Qualification is the second Thursday of October, in the ninth week, and it is forty targets.
 
-The morning comes up grey and low, with the particular variety of cold that reaches the fingers a considerable time before it reaches anything else. Forty pop-up silhouettes standing out from fifty metres to three hundred, ten exposures from each of five positions: standing, prone unsupported, prone supported, kneeling behind the barricade, standing behind the barricade. One magazine change built into the middle of it. Three minutes and fifty-eight seconds from the first exposure to the last.
+The morning comes up grey and low, with the particular variety of cold that reaches the fingers a considerable time before it reaches anything else. Forty pop-up silhouettes standing out from fifty metres to three hundred, ten exposures from each of five positions: standing, prone unsupported, prone supported, kneeling behind the barricade, standing behind the barricade. A magazine change built into the middle of it. Three minutes and fifty-eight seconds from the first exposure to the last.
 
 Sam counts himself down from three, then works the table at an unhurried pace that leaves him waiting on the tower twice.
 
@@ -138,7 +138,7 @@ His scorer calls it up to the tower, the tower reads it back to be certain of it
 
 The company commander is present on the range because qualification percentages are his statistic to report, so he comes down the tower steps with the card in his hand.
 
-"Marsh." Sam comes to attention. "Forty out of forty. That's the first one I have signed for in two cycles, and I have read every card off this range since March." He passes the card sideways to the drill sergeant rather than handing it to Sam. "Where did you learn to shoot?"
+"Marsh." Sam comes to attention. "Forty out of forty. That's the first I have signed for in two cycles, and I have read every card off this range since March." He passes the card sideways to the drill sergeant rather than handing it to Sam. "Where did you learn to shoot?"
 
 "School, sir."
 
@@ -154,7 +154,7 @@ The captain looks at the card in the drill sergeant's hand, where the score is w
 
 "Forty percent of what, Private."
 
-"Of the intercepts, sir." Sam has spent ten weeks waiting for somebody to ask him a question with a real answer underneath it, and he takes the opening at full speed. "There's a machine at one end of the lane that puts a live round across your front, left to right, sixty metres of open ground, on a cycle you can set a watch by. You stand behind glass, taking your count off the mechanism rather than off the round. The target is the round. You're shooting the bullet."
+"Of the intercepts, sir." Sam has spent ten weeks waiting for somebody to ask him a question with a real answer underneath it, and he takes the opening at full speed. "There's a machine at the end of the lane that puts a live round across your front, left to right, sixty metres of open ground, on a cycle you can set a watch by. You stand behind glass, taking your count off the mechanism rather than off the round. The target is the round. You're shooting the bullet."
 
 The drill sergeant turns the card face down against his leg.
 
@@ -182,7 +182,7 @@ Sam picks up his brass, since leaving brass on the ground is among the earliest 
 
 ________________
 
-The captain writes it out that evening at a folding desk under a bare bulb, longhand first, with a cold cup of coffee pushed away into one corner, crossing the second paragraph through twice before it says what he intends it to say.
+The captain writes it out that evening at a folding desk under a bare bulb, longhand first, with a cold cup of coffee pushed away into the corner, crossing the second paragraph through twice before it says what he intends it to say.
 
 Three separate documents leave the company by Friday, and a fourth sits underneath his hand for a considerable while first.
 
@@ -192,7 +192,7 @@ The second goes to the supporting counterintelligence office, under the standing
 
 The third is a request to the battalion S-2 for the education block of the soldier's security questionnaire, to establish whether the school printed on the form and the school in the private's mouth are the same school.
 
-The fourth is a behavioural health referral. That one he signs last, and it travels upward alongside the other three.
+The fourth is a behavioural health referral. He signs it last, and it travels upward alongside the other three.
 
 By the following Thursday the memorandum is on a desk three floors above anything with a range attached to it, in front of a woman positioned three levels above the captain. The fourth paragraph she reads twice, then sets the memorandum on top of a stack rather than into it, and draws out from underneath that stack a folder considerably older than the captain's commission.
 

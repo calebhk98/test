@@ -5,11 +5,19 @@ disagree with each other in places; where they do, this file rules.
 
 ## The target
 
-**Her official Full Scale IQ is about 128. Her true ability is about 160.**
+**No IQ score appears on the page. Not 128, not 160, not any index, not any
+scaled score.** The author's ruling:
 
-The reader must be able to see both: the number on the page, and the child the
-number fails to describe. The author's instruction is that we show her
-interiority and why she fails.
+> *"We should not give an IQ score on screen at all. But we should let a
+> psychologist who really deep dives into it to see her score is way higher,
+> without having Ben be incompetent. He can mess up a bit, he is human. That is
+> fine. We also want him to think she scored a 128, and it be a reasonable
+> assumption."*
+
+So the scene is written to be *consistent with* an official Full Scale IQ of
+about 128 against a true ability of about 160, and prints neither figure. What
+the reader gets is behaviour. A clinician reading that behaviour closely can
+reconstruct the real number; Ben, in the room, reasonably cannot.
 
 ## Why she scores 128, in the author's words
 
@@ -126,18 +134,44 @@ Use those two. Add nothing else that tries to number her.
   she is equally bad at both, the deficit reads as scanning or decision speed,
   which is cognitive, and the motor argument dies.
 
-## Prentice
+## Prentice, who is not incompetent
 
-He is a good psychologist who makes a reasonable mistake. He believes the low
-score is the processing speed dragging the composite down, and he is partly
-right. **What he misses is that she under-answered the verbal and reasoning
-subtests as well**, because he trusted her performance and assumed she was
-trying her hardest.
+This is the constraint that shapes everything else. **He must be good at his
+job, and his conclusion must be the right conclusion from what he can actually
+observe.** A version of this scene where the psychologist is simply outclassed
+by a six-year-old is a worse scene and the author has ruled it out.
 
-He also tests limits off-protocol twice: one more digit span after she has
-failed a length, and the extra Similarities booklet. Both are out of standard
-administration and both are correct as characterisation. Leave them, and let a
-reader who knows the instrument notice he is doing it.
+What he sees is a child who answers the hard verbal items completely, answers
+the easier ones briefly, holds an extraordinary digit span, gets every block
+right, and cannot write. Every one of those is consistent with a bright child
+whose processing speed drags her composite down. **That reading is correct,
+supported, and the one a careful clinician would reach.** It is also wrong, and
+nothing available to him in that room says so.
+
+The three things that would give it away are all invisible from his chair:
+
+- A short answer and a short answer given on purpose look identical. She is not
+  hesitating or hedging; she produces a clean, confident, sufficient answer and
+  stops. There is no tell to notice.
+- Under-answering shows up as a pattern only across items, and the pattern is
+  masked by the fact that she answers the *hardest* items in full. A child who
+  is better on hard items than easy ones looks like a child who is engaged by
+  difficulty, not one who is managing an adult.
+- The ceiling means her genuine performance and a much lower performance produce
+  the same score, so the instrument cannot show him the gap even in principle.
+
+**He is allowed to mess up a bit, because he is human.** Something small, and
+nothing that changes the outcome: a wrong assumption he corrects himself, a
+misread of what she meant, a question he asks twice. The score would be the same
+without it.
+
+He tests limits off-protocol twice, with one more digit span after she has
+failed a length and with the extra Similarities booklet out of the drawer. Both
+are out of standard administration, and both are him being *better* than the
+protocol rather than worse: he can tell there is something the form is not
+catching, and he goes looking for it with the only tools he has. He finds the
+edge and cannot measure past it. That is the tragedy of the scene, and it
+belongs to the instrument, not to him.
 
 ## The numbers to land on
 
@@ -151,5 +185,9 @@ reader who knows the instrument notice he is doing it.
 | **Full Scale IQ** | **about 128** | about 152 |
 
 One point under the gifted cutoff is the cruellest available integer and it is
-inside the plausible range. The chapter does not have to print any of these
-figures; it has to be consistent with them.
+inside the plausible range.
+
+**None of these numbers appear in the chapter.** They exist so that the
+behaviour on the page adds up to them. If a reader with the WISC-IV manual open
+scores the scene, it should come out here; a reader without one should get a
+child, an afternoon, and a man writing things down.

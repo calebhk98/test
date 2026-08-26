@@ -4,7 +4,7 @@
 
 The exercise is called Winter Anvil. It runs four days and nights, and the name has been up on the board outside the orderly room for three weeks, three weeks of Sam reading it on his way past.
 
-Staging is a gravel lot behind a row of tents, a folding table underneath a work light, a line of soldiers waiting their turn at it in the cold. Sam's breath fogs the entire time he stands in it. Somebody behind him is arguing about a missing glove liner. Somebody two places ahead of him gets handed a second flashlight when the first one refuses to come on.
+Staging is a gravel lot behind a row of tents, a folding table underneath a work light, a line of soldiers waiting their turn at it in the cold. Sam's breath fogs the entire time he stands in it. Somebody behind him is arguing about a missing glove liner. Somebody two places ahead of him gets handed a second flashlight when the first refuses to come on.
 
 At the head of the line he draws his rifle, a yellow adapter going on the muzzle in front of an armorer who checks the fit of it, then reads the serial number back off the weapon and only then lets go of either. Then the harness goes on over the top of everything else, sensors down both sides of the chest and around the back, a band of them fitted over the helmet, a transmitter clamped to the barrel ahead of the front sight.
 
@@ -28,7 +28,7 @@ The first contact is at a fence line a little after midnight: two strands of wir
 
 Two men are waiting on the far side of it in the darkness, close enough to the posts that they read, for a moment, as more fence. They hold still, and so does he.
 
-Then he withdraws fifteen metres back into the pines, gets down behind a root ball with the rifle laid across it, and waits twenty minutes for something to happen. The nearer man shifts his weight off one knee onto the other, worth very little on its own, then repeats the adjustment half a minute afterward, making it a rhythm. Sam settles the front sight on the shape and stays with it through the third one.
+Then he withdraws fifteen metres back into the pines, gets down behind a root ball with the rifle laid across it, and waits twenty minutes for something to happen. The nearer man shifts his weight from knee to knee, worth very little on its own, then repeats the adjustment half a minute afterward, making it a rhythm. Sam settles the front sight on the shape and stays with it through the third.
 
 Two rounds. The report goes out flat across the fallow ground, returns off the tree line a moment behind itself, and both harnesses out there arrive immediately at a steady tone. The two men stand up out of the grass, because standing up is what the laminated card instructs, and one of them says something to the other that Sam is much too far away to hear.
 
@@ -38,7 +38,7 @@ ________________
 
 The second contact happens the following night, in a culvert running underneath a service road, a pipe wide enough to walk through bent at the waist. The concrete has gone slick along the bottom where water has been standing in it for years, and it carries sound peculiarly, his own boots louder in his ears than they would be out in the open.
 
-The culvert has him before he has read it properly, ducked in under the lip because the ground on either side is open and he wants to be out of sight of it for the thirty feet it takes to cross, and by the time he understands that there are four men in there with him, the far end is blocked and so is the one behind him.
+The culvert has him before he has read it properly, ducked in under the lip because the ground on either side is open and he wants to be out of sight of it for the thirty feet it takes to cross, and by the time he understands that there are four men in there with him, the far end is blocked and so is the end behind him.
 
 Somebody discharges a blank two metres from his head and the concrete hands the whole of it back to him at once. Afterward there is a tone going. There is more than one tone going, five harnesses inside thirty feet of pipe, and no method available for sorting his own out of the rest.
 
@@ -58,7 +58,7 @@ Sam opens it, and the knuckles across the first two fingers are split, the blood
 
 "No, Sergeant."
 
-The medic bends all of them anyway, one at a time, then tapes the two fingers together and enters Sam's name on a card underneath the man with the nose.
+The medic bends all of them anyway, in turn, then tapes the two fingers together and enters Sam's name on a card underneath the man with the nose.
 
 Ives comes back with the notebook open. "Every harness in that pipe was in a steady tone simultaneously, which makes the engagement void, because there is no soldier in there who can tell me who shot who. Which leaves exactly one thing that happened tonight, which is that you put hands on two people on an exercise that has no hands on it. Say the contact rule."
 
@@ -76,7 +76,7 @@ He eats standing, out of a pouch, tearing the top off with his teeth and keeping
 
 ________________
 
-On the fourth night Sam crosses a stretch of ground with the footing gone soft and uneven underneath him, an old drainage cut long since gone to rut and weed, at twenty minutes to four in the morning. The pace is slower than anything he has managed all exercise, the ground holding him to it, one boot testing the next patch before he commits any weight to it. Ten minutes of that cut are behind him, and he has looked at every yard of it.
+On the fourth night Sam crosses a stretch of ground with the footing gone soft and uneven underneath him, an old drainage cut long since gone to rut and weed, at twenty minutes to four in the morning. The pace is slower than anything he has managed all exercise, the ground holding him to it, a boot testing the next patch before he commits any weight to it. Ten minutes of that cut are behind him, and he has looked at every yard of it.
 
 There is a shift of weight behind him and off to the left, too sudden and too heavy to be the ground settling.
 
@@ -92,7 +92,7 @@ Sam looks back down the last thirty feet of the cut, ground he spent ten minutes
 
 A controller comes down off the road, keys the harness quiet, keys it live again, and instructs him to finish the leg, so Sam finishes the leg, because that is still the job.
 
-The last checkpoint comes up grey rather than dark, the sky doing the slow work of turning into morning behind the tree line. At a barrel he clears his weapon, counts twenty-eight blank rounds back into a sergeant's hand, then turns in the harness, the transmitter, the compass and the card at a folding table identical to the one he drew them from on the first night, where a specialist checks the time against a clipboard before waving him toward a tent with cots in it. He sleeps for five hours before anybody wants him for anything.
+The last checkpoint comes up grey rather than dark, the sky doing the slow work of turning into morning behind the tree line. At a barrel he clears his weapon, counts twenty-eight blank rounds back into a sergeant's hand, then turns in the harness, the transmitter, the compass and the card at a folding table identical to the table he drew them from on the first night, where a specialist checks the time against a clipboard before waving him toward a tent with cots in it. He sleeps for five hours before anybody wants him for anything.
 
 ________________
 
@@ -110,7 +110,7 @@ The soldier stands there listening to his own good luck read out loud, and looks
 
 Sam's turn comes third. Instead of calling him up to the front, which is what happened to the other two, the major leaves him where he is and starts in on the clipboard without a glance across the room.
 
-"Marsh. Fence line, night one, two engagements, both of them yours, at twenty metres, against an element holding the near side of the obstacle." He puts a check against it and moves down the sheet. "Night two is a safety incident, and we will do it as one."
+"Marsh. Fence line, first night, two engagements, both of them yours, at twenty metres, against an element holding the near side of the obstacle." He puts a check against it and moves down the sheet. "Night two is a safety incident, and we will do it as one."
 
 The next part he reads the way a form gets read.
 
@@ -122,13 +122,13 @@ The next part he reads the way a form gets read.
 
 "If the harness goes steady I stand up where I am and wait for a controller, sir."
 
-"You had four men, no room, and a tone you couldn't sort out." The major sets the pointer down on the lectern. "That leaves you precisely one option, Marsh, and it is the opposite of the one you took, because the option is to be dead. That is what the tone is for. It settles the engagement, and it settles it before anybody has to put a hand on anybody."
+"You had four men, no room, and a tone you couldn't sort out." The major sets the pointer down on the lectern. "That leaves you precisely one option, Marsh, and it is the opposite of the option you took, because the option is to be dead. That is what the tone is for. It settles the engagement, and it settles it before anybody has to put a hand on anybody."
 
 "Yes, sir." Sam takes the correction as delivered and then adds to it. "The worse part is earlier, sir. I had thirty feet of open ground to read that pipe from and I went in anyway. I was watching the clock instead of the pipe."
 
 The major looks at him for a second, then writes on the top sheet, unhurried. The room gets the sound of the pen, the projector fan, no comment whatever. Then he turns the page.
 
-"Night four. The man who took you had been in position since twenty-one hundred, which is seven hours in one spot through the entire drop in temperature that arrives after midnight, and it took him under two seconds once you finally got there. That is patience rather than luck, and patience beats a tired soldier at four in the morning, every time, full stop." He puts the pointer down on the overlay and leaves it lying there while he locates his next page.
+"Night four. The man who took you had been in position since twenty-one hundred, which is seven hours without moving through the entire drop in temperature that arrives after midnight, and it took him under two seconds once you finally got there. That is patience rather than luck, and patience beats a tired soldier at four in the morning, every time, full stop." He puts the pointer down on the overlay and leaves it lying there while he locates his next page.
 
 "Any questions," the major says at the end, closing the clipboard.
 
@@ -190,7 +190,7 @@ theo: i would have asked that
 
 kavi: everyone would have asked that
 
-nadia: were you the first one to ask or the last
+nadia: were you the first to ask or the last
 
 sam: first
 

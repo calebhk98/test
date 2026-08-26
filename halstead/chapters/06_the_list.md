@@ -2,7 +2,7 @@
 
 *August 2012*
 
-The parent hotel has a breakfast room with waffles on paper plates, and every morning there are eight or nine adults in it who all know each other by now. On the last Wednesday Chloe climbs onto the chair beside her dad on her knees, gets syrup on two fingers before the plate is in front of her, and eats, while under the table her sneaker keeps catching the chair leg, a small percussion swallowed by the adults talking over her head.
+The parent hotel has a breakfast room with waffles on paper plates, and every morning there is a roomful of adults in it who all know each other by now. On the last Wednesday Chloe climbs onto the chair beside her dad on her knees, gets syrup on her fingers before the plate is in front of her, and eats, while under the table her sneaker keeps catching the chair leg, a small percussion swallowed by the adults talking over her head.
 
 "We drove it, both ways, because there was no version of this where we put her on a bus," a man says, on his feet with a paper plate in one hand.
 
@@ -12,7 +12,7 @@ The parent hotel has a breakfast room with waffles on paper plates, and every mo
 
 "This is my second time in this room and that bus has stayed a rumour both times," the woman next to him says, both hands round a cup of coffee gone cold.
 
-"It exists, because they showed me a photograph of it with a driver next to it," somebody says, and two people laugh.
+"It exists, because they showed me a photograph of it with a driver next to it," somebody says, and somebody laughs.
 
 "My wife had it down as a phishing scam," the first man says, "where they ask for a deposit at some point, and then it's a wire transfer, and then a different number to call."
 
@@ -28,7 +28,7 @@ Chloe's dad has been quiet through all of it, cutting his waffle into squares an
 
 "Did any of you get told where they got the name from, in the first place?"
 
-Three of them answer at once: "They said they have a list."
+Several of them answer at once: "They said they have a list."
 
 "We got the list, and then a paragraph on how the list is compiled, which explained the paragraph and not the list."
 
@@ -38,7 +38,7 @@ Three of them answer at once: "They said they have a list."
 
 "Here it buys you a paper plate and a seat at this table," the first man says, and gets up on his own to find the coffee pot.
 
-While one of the fathers looks at his plate, a man at the end starts talking about the drive back, whether the north side is faster, how it depends on what time you leave, and two people take that up, and by the time somebody's kid has come over needing something and been sorted out, three of them have gone.
+While one of the fathers looks at his plate, a man at the end starts talking about the drive back, whether the north side is faster, how it depends on what time you leave, and others take that up, and by the time somebody's kid has come over needing something and been sorted out, half the table has gone.
 
 Her dad puts more syrup on her waffle on his own, more than she'd have asked for, and Chloe eats it anyway while the syrup pools at the edge of the plate.
 
@@ -54,9 +54,9 @@ Chloe is already talking before she's finished sitting down, one knee still up o
 
 Then dividing fractions, which she does on a napkin with a pen taken off the next table, drawing the rectangles the way Mr. Baptiste drew them and running all the way through to why you turn the second one over, so that the working reaches the edge of the napkin and comes back, while her dad leans in over the napkin.
 
-Two tables over, another father is sitting through a version of it, a pen going on a different napkin while his own daughter talks him through her month.
+A few tables over, another father is sitting through a version of it, a pen going on a different napkin while his own daughter talks him through her month.
 
-Then she starts on Spanish, rattling it off before she remembers he can't follow a word of it, asking herself three questions and answering all three before he can stop her.
+Then she starts on Spanish, rattling it off before she remembers he can't follow a word of it, asking herself questions and answering them all before he can stop her.
 
 "Say that again in a language I speak," her dad says.
 
@@ -64,9 +64,9 @@ Then she starts on Spanish, rattling it off before she remembers he can't follow
 
 "We talk in it at lunch on purpose, me and Ruth and Sam and Kavi, so the rest of the table has to sit there and guess," she says, "which fails every time, because everybody else at that table is doing Spanish as well."
 
-"Then there's the signing, which is better than all of it, because you can do it across a whole room with your hands doing the talking and your mouth shut," she says, showing him the alphabet on her fingers, then his name in it slowly and hers faster. "That one's water, that one's finished, that one's again, and in the library you can ask somebody three tables away whether they have a book, with everybody's mouth shut." She and Ruth did that for a whole afternoon, and the librarian worked out what they were doing and let them keep going anyway.
+"Then there's the signing, which is better than all of it, because you can do it across a whole room with your hands doing the talking and your mouth shut," she says, showing him the alphabet on her fingers, then his name in it slowly and hers faster. "That one's water, that one's finished, that one's again, and in the library you can ask somebody at the far end of the room whether they have a book, with everybody's mouth shut." She and Ruth did that for a whole afternoon, and the librarian worked out what they were doing and let them keep going anyway.
 
-"And there was a puzzle, twenty sentences in a language none of us had ever heard of, and no dictionary, and you had to work out how the entire grammar went from the sentences themselves." By about the sixth sentence she had worked out that the words come in a different order than English does. "Ruth got the plurals before I did, and Kavi got the pattern in the endings, which is still half out of my reach even though he has explained it three separate times, and he'd explain it to you now if he were sitting here instead of me."
+"And there was a puzzle, twenty sentences in a language none of us had ever heard of, and no dictionary, and you had to work out how the entire grammar went from the sentences themselves." By about the sixth sentence she had worked out that the words come in a different order than English does. "Ruth got the plurals before I did, and Kavi got the pattern in the endings, which is still half out of my reach even though he has explained it and explained it, and he'd explain it to you now if he were sitting here instead of me."
 
 Then the wood shop, and the safety goggles sized for somebody bigger. Then what you do about a bleed, which is pressure first and the dressing second, and the glue they use on a cut too small to need stitches. Then the eggs she learned to cook, and the dish on the Thursday that the whole table ate, which had onions in it that she cut herself, and then the paintings they were taken to look at, one of which cost more than a house, which baffles her, because it is a painting.
 
@@ -116,7 +116,7 @@ Her dad looks at the napkin, folds it in half twice, and puts it in his shirt po
 
 \---
 
-After, the four of them sit on the floor in the hall outside Pluto with their backs against the wall, close enough that Ruth's shoulder stays against Chloe's for most of it, while the lights in that hall go off in sections at ten, so that they are down to the last section, in a strip of light about the width of a doorway.
+After, the four of them sit on the floor in the hall outside Pluto with their backs against the wall, close enough that Ruth's shoulder stays against Chloe's for most of it, while the lights in that hall go off in sections late on, so that they are down to the last section, in a strip of light about the width of a doorway.
 
 Ruth takes her shoes off and lines them up against the wall, heel to heel, then knocks them out of line with one foot and leaves them like that.
 
@@ -176,7 +176,7 @@ Ruth picks the knot out of one shoelace with both thumbs instead of answering hi
 
 "I'm going to write you a letter every week, starting on Monday," Ruth says, to a spot on the opposite wall.
 
-"You hate writing, you've said so about two hundred times," Sam says.
+"You hate writing, you've said so over and over," Sam says.
 
 "I like writing to people, and what I hate is homework."
 
@@ -206,7 +206,7 @@ She is awake long before anybody comes to get her, dressed and sitting on the en
 
 Her dad carries her bag down and puts it in the trunk with the strap hanging out, so that he has to open it again.
 
-Priya hugs her hard enough that it takes a second to get loose, then goes back into the room for her own bag and comes out again with her chin working, because the hair tie that was on her wrist five minutes ago has gone, and she turns her sleeve inside out to check it twice while her mother tells her it's fine and she says it isn't. Chloe pulls the one off her own wrist and holds it out.
+Priya hugs her hard enough that it takes a second to get loose, then goes back into the room for her own bag and comes out again with her chin working, because the hair tie that was on her wrist a moment ago has gone, and she turns her sleeve inside out to check it twice while her mother tells her it's fine and she says it isn't. Chloe pulls the one off her own wrist and holds it out.
 
 When Sam says see you at the thing in the fall, Ruth tells him it's only a form so far and his parents have to send it in, at which point Sam says it again, word for word.
 

@@ -8,7 +8,7 @@ Her mother has kept the room the way it was, down to the sock on the radiator, a
 
 "Your feet were touching the ground with the pedals still under them, so it isn't fine, and I'm not having this conversation again in a hospital." She is already going back inside with the cup. "Saturday, the place by the tire shop, and you're picking one you'll still fit next year."
 
-She talks the entire summer, coming downstairs already talking most mornings about whatever she was thinking upstairs, with opinions about the news off the paper on the kitchen table, interrupting constantly, apologizing, then doing it again inside a minute. There is singing in the shower now, badly and at volume, and she makes jokes at dinner, some of them bad, and on the nights her father laughs she does three more.
+She talks the entire summer, coming downstairs already talking most mornings about whatever she was thinking upstairs, with opinions about the news off the paper on the kitchen table, interrupting constantly, apologizing, then doing it again inside a minute. There is singing in the shower now, badly and at volume, and she makes jokes at dinner, some of them bad, and on the nights her father laughs she keeps going.
 
 On the fourth of July she starts an argument with her father about whether a hot dog is a sandwich.
 
@@ -16,7 +16,7 @@ On the fourth of July she starts an argument with her father about whether a hot
 
 "It's one piece of bread," her father says, "folded around itself, which is a different thing entirely from two," and goes back to the grill.
 
-"So is a sub roll, and every sub you have eaten in your life you have called a sandwich." Chloe holds the hot dog up between two fingers, turning it so he can see all of it. "The only thing you've given me is a hinge, and a hinge is a fact about bread, not a fact about food. If I cut this all the way through right now, does it turn into a sandwich while I'm holding it?"
+"So is a sub roll, and every sub you have eaten in your life you have called a sandwich." Chloe holds the hot dog up between finger and thumb, turning it so he can see all of it. "The only thing you've given me is a hinge, and a hinge is a fact about bread, not a fact about food. If I cut this all the way through right now, does it turn into a sandwich while I'm holding it?"
 
 "Then it's a different food," her father says, "because you changed what's holding what, and that's the whole difference between the two."
 
@@ -30,7 +30,7 @@ Downstairs that night, after she has gone up, her father folds the paper and lea
 
 "You let her have it, like you let her have everything once she gets that look on her face."
 
-"I've been arguing that one since college and she got me in four minutes standing at a grill." He is still smiling about it. "Nobody's ever put the hinge to me, not in twenty years of having that argument."
+"I've been arguing that one since college and she got me standing at a grill." He is still smiling about it. "Nobody's ever put the hinge to me, not in twenty years of having that argument."
 
 Upstairs the shower is running, and has been for twenty minutes, with the singing over the top of it.
 
@@ -38,7 +38,7 @@ Upstairs the shower is running, and has been for twenty minutes, with the singin
 
 "I know," her father says, "because I hear it too, and it stopped a few weeks after she got back."
 
-"Ten weeks," her mother says, "and I already know I'm going to count every single one of them."
+"The whole summer," her mother says, "and I already know I'm going to count every single day of it."
 
 "I know how long it is, I've had the number in my head since the day she left."
 
@@ -50,7 +50,7 @@ In the third week Chloe tries to teach her mother Spanish at the counter, with t
 
 "The first part's right, and it's the middle that goes wrong, because you keep putting the weight on the wrong bit, and that turns it into a different word, so just do the one word on its own." Chloe is sitting on the counter with her heels against the cupboard door. "Están."
 
-Her mother says just the one word, then says it three more times, and each time it comes out as a word that means something else, so that by the third they are both laughing hard enough that Chloe has to get down off the counter, and her mother ends up on a kitchen chair, wheezing, both hands over her face.
+Her mother says just that word, then says it over, and each time it comes out as a word that means something else, so that by the third go they are both laughing hard enough that Chloe has to get down off the counter, and her mother ends up on a kitchen chair, wheezing, both hands over her face.
 
 "Say something else, a whole sentence this time, and I'll do the whole sentence back at you."
 
@@ -58,7 +58,7 @@ Her mother says just the one word, then says it three more times, and each time 
 
 "Obviously I'll laugh at you," her mother says, wiping her eye with the back of her wrist. "Say the sentence, and I'll try to laugh quietly."
 
-In week three she comes in forty minutes past curfew, to find her mother standing in the front hall, and three of the things Chloe says over the next twenty minutes she has been building since the day before.
+In week three she comes in well past curfew, to find her mother standing in the front hall, and three of the things Chloe says over the next twenty minutes she has been building since the day before.
 
 "Ellie Peterson's out till ten on a Friday, and her mom is totally fine with it."
 
@@ -66,7 +66,7 @@ In week three she comes in forty minutes past curfew, to find her mother standin
 
 "That's a number too, because somebody picked ten the way somebody picked nine, and the somebody was you both times."
 
-"At school I can walk down to the library at eleven at night if I feel like it. There's nobody on the door, nobody asks me anything, and that's a whole building of eight-year-olds, and the roof hasn't come off it yet."
+"At school I can walk down to the library in the middle of the night if I feel like it. There's nobody on the door, nobody asks me anything, and that's a whole building of eight-year-olds, and the roof hasn't come off it yet."
 
 Her mother leans back against the banister. "You're not at school, and that library rule is a school rule, not a house rule. Are you."
 
@@ -104,7 +104,7 @@ In September there is a different girl in her room, from Ohio, called Marguerite
 
 "Everybody says Margie, so say Margie, and I'm telling you now because otherwise you'll do the whole first week on the long one."
 
-"Which do you actually like, though, Margie or the full one everyone skips?"
+"Which do you actually like, though, Margie or the full version everyone skips?"
 
 Margie's mouth opens, closes, opens again. "Margie's fine, because it's shorter and everybody's going to say it anyway, so there's no point in me having a position on it."
 
@@ -116,11 +116,11 @@ Fen is on second floor now with a girl from Maine, and while she and Chloe say h
 
 "So what happens to it, if it's not going to be a class anymore?"
 
-"It carries on being yours, which is the entire answer." The teacher is stacking chairs two at a time along the back wall. "It stays where you put it, or it goes, and from here that's your call rather than mine, which I appreciate is a strange thing to hear in September."
+"It carries on being yours, which is the entire answer." The teacher is stacking chairs along the back wall. "It stays where you put it, or it goes, and from here that's your call rather than mine, which I appreciate is a strange thing to hear in September."
 
-Chloe turns that over for a day and a half, then starts reading in Spanish in the hour before dinner, twenty minutes at a time, off the Spanish shelves that run the length of the north wall upstairs and turn the corner, three deep in places, with a rack of newspapers from six countries underneath. A novel about a lighthouse takes her six days, and she understands most of it, and inside a month Ruth is doing it in Portuguese, badly, for reasons Ruth will state only as "it's the vowels."
+Chloe turns that over for a day and a half, then starts reading in Spanish in the hour before dinner, twenty minutes at a time, off the Spanish shelves that run the length of the north wall upstairs and turn the corner, stacked deep in places, with a rack of newspapers from half of Europe underneath. A novel about a lighthouse takes her a week, and she understands most of it, and inside a month Ruth is doing it in Portuguese, badly, for reasons Ruth will state only as "it's the vowels."
 
-The day is eight hours now and goes to nine after Christmas, with mathematics, writing, literature and political history carrying over and French and logic new, logic being an hour of being shown a sentence and asked what it is actually claiming, which she can do from the first week. On the phone she tells her mother it's like taking a lid off.
+The day is longer now, and longer again after Christmas, with mathematics, writing, literature and political history carrying over and French and logic new, logic being an hour of being shown a sentence and asked what it is actually claiming, which she can do from the first week. On the phone she tells her mother it's like taking a lid off.
 
 Politics runs from the first week to the end of the year with no exam at the end of it, while you learn the leaders of every country that matters, then their spouses, their children, their in-laws, where the money comes from and who they owe, and then you update all of it every week, in pencil, on a wall already covered.
 
@@ -132,7 +132,7 @@ Politics runs from the first week to the end of the year with no exam at the end
 
 Nerf is eight.
 
-You start on paper targets, which is boring for about two weeks, then a target somebody swings across the gym on a rope, which holds her attention every time it swings. Then a foam disc thrown flat and fast, which is hard, and then easy, and the day it turns over goes past like any other Monday, and the week after Coach Bell puts a net down the middle of the floor and lines them up either side.
+You start on paper targets, which is boring for a while, then a target somebody swings across the gym on a rope, which holds her attention every time it swings. Then a foam disc thrown flat and fast, which is hard, and then easy, and the day it turns over goes past like any other Monday, and the week after Coach Bell puts a net down the middle of the floor and lines them up either side.
 
 "Both sides load up, and you're not shooting at each other, you're shooting at what they shoot at you. If your dart gets knocked down before it crosses the net, you're out and you sit on the line, and the last side with anybody standing wins the hour."
 
@@ -140,15 +140,15 @@ Somebody down the line says that's impossible.
 
 "It isn't, and I'll tell you why now instead of letting you spend a week deciding it is." Bell holds a dart up and turns it so the whole line can see it. "Look at the size of the thing next to your hand, and look how slowly it comes at you once you're watching for it, because you can watch the entire flight end to end, and that makes it the easiest thing in this building to hit."
 
-By the end of the first month everybody in the year can do it at will, forty a side, the hour a wall of noise and darts coming down all over the floor. Games run the full hour, because both sides get good at the same rate and neither ever runs out of people, and Chloe wins three in a row in October, but what she plays for is the sound two darts make when they meet and burst.
+By the end of the first month everybody in the year can do it at will, the whole year split either side of the net, the hour a wall of noise and darts coming down all over the floor. Games run the full hour, because both sides get good at the same rate and neither ever runs out of people, and Chloe wins three in a row in October, but what she plays for is the sound two darts make when they meet and burst.
 
-The afternoon block is a different thing on each day of the week, Nerf on Mondays, wood shop on Tuesdays, team sports on Wednesdays, drawing on Thursdays and dance on Fridays, with the school picking all five and everybody doing all five.
+The afternoon block is a different thing on each day of the week, Nerf on Mondays, wood shop on Tuesdays, team sports on Wednesdays, drawing on Thursdays and dance on Fridays, with the school picking all of them and everybody doing all of them.
 
-In wood shop you make a tool and then use that tool to make the next one, while the man who runs it will tell you what is wrong with a tool and then walk away while you work out what to do about it. Chloe makes a mallet with a handle that comes out slightly oval, and she uses it for three weeks before the oval catches her eye, after which it is there every time she picks it up, and is still using it in June.
+In wood shop you make a tool and then use that tool to make the next one, while the man who runs it will tell you what is wrong with a tool and then walk away while you work out what to do about it. Chloe makes a mallet with a handle that comes out slightly oval, and she uses it for weeks before the oval catches her eye, after which it is there every time she picks it up, and is still using it in June.
 
-Team sports is where the teams are assigned, and she gets one with two people on it she has already decided against, and she plays out September and October on it.
+Team sports is where the teams are assigned, and she gets a team with two people on it she has already decided against, and she plays out September and October on it.
 
-Drawing is Thursdays, and in the second term, while they spend six weeks on hands, Chloe draws her own left hand forty times, in pencil, from the same angle, on cheap paper, and the fortieth one looks like a hand, down to the knuckle of the little finger sitting lower than it ought to, and Ruth picks it up off the table on her way past.
+Drawing is Thursdays, and in the second term, while they spend six weeks on hands, Chloe draws her own left hand forty times, in pencil, from the same angle, on cheap paper, and the fortieth looks like a hand, down to the knuckle of the little finger sitting lower than it ought to, and Ruth picks it up off the table on her way past.
 
 "That's a hand, that's an actual hand, since when do you draw like that?"
 
@@ -174,7 +174,7 @@ Chloe takes hold of the edge of the desk with both hands and stays standing. "Th
 
 "The one I've been on since the first week, and there are two people on it, and I've done two whole terms of Wednesdays with them before coming in here about it."
 
-"Teams are for the year, and you're the third one in here about a team this week." Mrs. Okonkwo writes the date at the top of a clean sheet, then turns the block sheet round on the desk so Chloe can read it, ninety names down the side and the five columns running across every one of them. "Ask me in June and it'll be no in June, and you've still got the Friday. Come on Friday."
+"Teams are for the year, and you're the third in here about a team this week." Mrs. Okonkwo writes the date at the top of a clean sheet, then turns the block sheet round on the desk so Chloe can read it, ninety names down the side and the columns running across all of them. "Ask me in June and it'll be no in June, and you've still got the Friday. Come on Friday."
 
 ---
 
@@ -196,7 +196,7 @@ Her name goes on the choir line, because she sang in the shower every day of the
 
 "Stand next to Amara and match her, because she's doing the thing I keep asking you for and can't tell you how either."
 
-Chloe stands next to Amara for three weeks and matches her about a third of the time, but the matching is a different job from the one she came in for, and what she liked was being loud in a small tiled room, alone, so in the sixth week she stops going and takes the hour in the pool, and sings in the shower afterward, where she was doing it to begin with.
+Chloe stands next to Amara for three weeks and matches her about a third of the time, but the matching is a different job from the thing she came in for, and what she liked was being loud in a small tiled room, alone, so in the sixth week she stops going and takes the hour in the pool, and sings in the shower afterward, where she was doing it to begin with.
 
 On a Tuesday in April Sam, Kavi, Ruth and Chloe end up on the grass behind the science building for about an hour, because Sam sat down and then Kavi did, and Sam has a shopping bag of apples he says only were going spare, which they spend the hour throwing at a drainpipe thirty feet away.
 
@@ -206,6 +206,6 @@ On a Tuesday in April Sam, Kavi, Ruth and Chloe end up on the grass behind the s
 
 "It's been the rule for ninety seconds," Kavi says, "and it came in at exactly the moment Ruth stopped hitting above it."
 
-Ruth gets six in a row above the bracket and is insufferable about it until dinner, while Sam eats two of the apples and takes the bag back to his room, where it stays under the bed until the middle of May, at which point three people on the corridor make it his problem, and the bracket rule survives into the summer and gets applied to a stairwell, a laundry chute, and one of the goals on the field.
+Ruth gets six in a row above the bracket and is insufferable about it until dinner, while Sam eats two of the apples and takes the bag back to his room, where it stays under the bed until the middle of May, at which point people on the corridor make it his problem, and the bracket rule survives into the summer and gets applied to a stairwell, a laundry chute, and one of the goals on the field.
 
-In June Chloe pulls out the notebook with the four subjects she was behind in, back in April. In three of them she is reading ahead, and the dates in the margins say she has been since about Christmas, so that January, the month she stopped checking, is the month the notebook says it turned. She reads the line back twice before adding a new one at the bottom with the date, then puts the notebook in the drawer and goes down to dinner two steps at a time.
+In June Chloe pulls out the notebook with the four subjects she was behind in, back in April. In three of them she is reading ahead, and the dates in the margins say she has been since about Christmas, so that January, the month she stopped checking, is the month the notebook says it turned. She reads the line back twice before adding a new line at the bottom with the date, then puts the notebook in the drawer and goes down to dinner two steps at a time.
