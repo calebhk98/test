@@ -2838,7 +2838,7 @@ Going through the rest of the pages at the table that night, he finds more of th
 
 *September 2015 – April 2016*
 
-Mr. Hearn is small and gray and says everything at one volume.
+Mr. Hearn is small, gray, and says everything at one volume.
 
 He writes the name on the board, then some numbers under it. "Alexander Hamilton, a real person you can look up, and everything he wrote is still in print and most of it is free. He wrote fifty-one of the Federalist papers in something like half a year, and he had a full-time job the entire time he was doing it."
 
@@ -2918,7 +2918,7 @@ Up on her knees, both hands out, she cuts back in. "We're all reacting, but you 
 
 On the Monday Chloe gets one on her fourth go, and the balls meet an arm's length in front of her face with a flat wet crack, both of them coming apart at once, orange and blue hanging in the air together and then all over the floor. The boy she is paired with says, "Lucky," but Ruth gets hers a few minutes later and screams.
 
-By the end of the hour they have more between them than everybody else on the floor put together, and on the Thursday they have nineteen. They spend most of that evening doing the noise at each other in the corridor, and Ruth does an impression of the boy who said luck, and they make Kavi watch it twice.
+By the end of the hour they have more between them than everybody else on the floor put together, and on the Thursday they have nineteen. They spend most of that evening doing the noise at each other in the corridor, Ruth does an impression of the boy who said luck, and they make Kavi watch it twice.
 
 People start asking on the Friday, and Ruth says she has been practising while Chloe shrugs and changes the subject. Bex has the end of the shrug before Chloe is out of it, so on the Monday it is Bex who says it to Bell, with the whole floor sitting down and the markers on the mats: that nobody can react to the ball, that the barrel is a hose and what you watch is where the hose is pointed, that every marker in this building throws at a single speed. She has all of it, she has it in order, and she says it at the volume she says everything at.
 
@@ -2928,7 +2928,7 @@ Chloe sits at the front of the floor with her knees up and her arms round them. 
 
 By the following week there are theories going round about the markers being different weights.
 
-Kavi gets it on his own in the second week of November, when his number goes from three to double figures inside an hour that afternoon, and he walks straight out, past everybody, jaw set, and she leaves him to it. Nadia has it by the end of the month off her own back, Priya gets it out of Ruth in a corridor in about ninety seconds, and by Christmas most of the year is past where they ever were with darts.
+Kavi gets it on his own in the second week of November, when his number goes from three to double figures inside an hour that afternoon, and he walks straight out, past everybody, jaw set, but she leaves him to it. Nadia has it by the end of the month off her own back, Priya gets it out of Ruth in a corridor in about ninety seconds, and by Christmas most of the year is past where they ever were with darts.
 
 In the second week of September a man from the office spends an hour on Watch, which everybody starts at ten, and although the sheet has been on the corkboard on the second floor since before Chloe got here and she stopped reading it years ago, he goes through it line by line anyway, the way the fire notice gets gone through once a year.
 
@@ -2947,13 +2947,13 @@ Then he goes through what a drill can be: people over the fence at the loading s
 
 Most of them are announced, with a board that says *Thursday, afternoon block* a week out and a dozen names going up with it, and everybody knows it is coming, but it is still hard. Some are at night and those go on the board too, while every few weeks there is a drill sprung with no warning at all, first thing in the morning or in the middle of lunch, and people count the weeks.
 
-Her first is on the board on the Monday and happens on the Thursday, when adults come over the north fence with a bag between them and are inside Building Two before anybody has moved. Somebody is off her feet before she turns around. More go down at the stairwell, and a boy called Wes answers a question about how many of them there are, and the drill is called well over the standard.
+Her first is on the board on the Monday and happens on the Thursday, when adults come over the north fence with a bag between them and are inside Building Two before anybody has moved. Somebody is off her feet before she turns around. More go down at the stairwell, a boy called Wes answers a question about how many of them there are, and the drill is called well over the standard.
 
 The sheet goes up on the Friday, and every name on it has an F next to it and a numbered list underneath.
 
 In the corridor, with people behind her waiting for a turn at it, she reads it under a light that throws everything back off the glass. Number one is response time, number two is that a student answered a question about how many of them there are, and number three is that adults entered a building. Number six says the north stairwell was uncovered, but Chloe, who stood there the whole time, is still working out what covering it would even have looked like.
 
-After dinner, when the corridor is empty, she goes back and reads it again, and then a third time. Ruth comes and stands next to her and reads it all the way to the bottom in silence, arms crossed.
+After dinner, when the corridor is empty, she goes back and reads it again, then a third time. Ruth comes, stands next to her, and reads it all the way to the bottom in silence, arms crossed.
 
 "Six is me. There's no other name that number could be pointing at."
 
@@ -2961,7 +2961,7 @@ After dinner, when the corridor is empty, she goes back and reads it again, and 
 
 "I was standing in it. Wes asked them the number right in front of me, and it took him answering it for me to even notice."
 
-Ruth is still looking at the sheet. "So was I, and so was Wes, and I don't know what we were supposed to be doing either. So that one should be on whoever wrote the drill and left it that vague, not on the person who noticed first. There's another before long, and we'll actually know what it means by then."
+Ruth is still looking at the sheet. "So was I, so was Wes, and I don't know what we were supposed to be doing either. So that one should be on whoever wrote the drill and left it that vague, not on the person who noticed first. There's another before long, and we'll actually know what it means by then."
 
 Chloe says it at dinner, with the plates still going round. "The standard's scored against the response and not against what the response was up against, so a drill nobody could have held comes out looking like a year that couldn't hold it. Nobody scores the drill."
 
@@ -3828,7 +3828,7 @@ The cuts are hers, and he shows her the saw on the first morning and watches her
 
 Already reaching for the next board, his attention is on the next cut. "Chloe," he says. "Not one person alive is going to measure these steps, and this stays between the two of us."
 
-They finish on a Tuesday at the end of July and the steps hold. Her mother comes out and stands on them, and bounces on the top step twice.
+They finish on a Tuesday at the end of July and the steps hold. Her mother comes out, stands on them, and bounces on the top step twice.
 
 "Great improvement on the old lot," she says, and goes back inside.
 
@@ -3909,7 +3909,7 @@ Engineering and design works the other way round from wood shop and the forge, w
 
 The teacher holds the clamp up so she can see which way it opens. "He built what you wrote. The spec says how hard to hold something, not what it's holding, so he built a clamp that could hold anything, which means it holds any one thing just as poorly as the rest."
 
-Chloe reads her own pages again with the clamp sitting on top of them, and the pressure is on there, and the travel, and the tolerance, and which way it opens. So she runs a finger down the first page, then the second, then turns them both over and finds the backs blank.
+Chloe reads her own pages again with the clamp sitting on top of them, and the pressure is on there, the travel, the tolerance, and which way it opens. So she runs a finger down the first page, then the second, then turns them both over and finds the backs blank.
 
 "There's a page and a half here about how hard it squeezes and a blank where the thing being squeezed goes."
 
@@ -4355,7 +4355,7 @@ Bex passed, and comes the length of that hall to find her before dinner, saying 
 
 "It's the margin, though, because as a share of the whole paper that's about a..."
 
-"A fiftieth. It's a fiftieth, Chloe, and it's the closest miss on that board, and I've read the whole board." Bex has both of those right, and she has them out to the corridor rather than to Chloe, at the volume she says everything at, over the heads of the people still coming away from the board. Then she is past her and on to the next of them.
+"A fiftieth. It's a fiftieth, Chloe, it's the closest miss on that board, and I've read the whole board." Bex has both of those right, and she has them out to the corridor rather than to Chloe, at the volume she says everything at, over the heads of the people still coming away from the board. Then she is past her and on to the next of them.
 
 Chloe stays where she is until the hall has thinned out. She had the fraction most of the way finished and had got as far as about a, and she goes over that again on the stairs, whether she had it or whether she was still working it, because Bex had all of it and had it fast.
 
@@ -4365,7 +4365,7 @@ Later that week she takes her paper to Amberg, and he has the mark scheme out on
 
 "I have the answer to it. It's the second line on the page and it's correct. I'm not sure what else there is left to talk about."
 
-"You do, and it's correct, and it's sitting right there in your second line where anyone could find it." He turns the scheme around so it faces her and puts a finger under a row of it, the rows printed under each other, each with a mark value and a line of description beside it. "There are four marks underneath that answer. A mark for the rule you are relying on. A mark for where the rule comes from. A mark for why a shed is inside it. A mark for what happens if the shed burns down on the Tuesday before delivery." He lays her own paper down beside the scheme, where a single tick sits against her second line and the rows underneath it are as empty as they were in April.
+"You do, it's correct, and it's sitting right there in your second line where anyone could find it." He turns the scheme around so it faces her and puts a finger under a row of it, the rows printed under each other, each with a mark value and a line of description beside it. "There are four marks underneath that answer. A mark for the rule you are relying on. A mark for where the rule comes from. A mark for why a shed is inside it. A mark for what happens if the shed burns down on the Tuesday before delivery." He lays her own paper down beside the scheme, where a single tick sits against her second line and the rows underneath it are as empty as they were in April.
 
 "All of them follow from the answer once you've got the answer. Anyone who can read the second line can work out the rest for themselves in a moment, the way I did. Writing it out afterwards is just me proving I can hold a pen."
 
@@ -4469,13 +4469,13 @@ Chloe has the glass on the step beside her, sweating a ring into the wood. "He's
 
 "How does it not touch him, forty percent year after year? I'd have packed the whole thing in by now, or I'd have made your mother listen to it every night at this table for a year."
 
-Chloe turns the glass a quarter turn on the wood, into the ring it has already made there. "That's what I asked him, more or less word for word, standing right outside the range. He said he knows, and that he does plenty of other stuff with its own number on it, and this is only the number for the range. He wasn't even annoyed that I brought it up. Then he told me to go and be miserable at Ruth about it instead, because Ruth's on ninety-one and apparently that's more my speed."
+Chloe turns the glass a quarter turn on the wood, into the ring it has already made there. "That's what I asked him, more or less word for word, standing right outside the range. He said he knows, that he does plenty of other stuff with its own number on it, and this is only the number for the range. He wasn't even annoyed that I brought it up. Then he told me to go and be miserable at Ruth about it instead, because Ruth's on ninety-one and apparently that's more my speed."
 
 Her father laughs at that, head back, longer than the joke should carry him.
 
 "Is she, though, or is that just the face she puts on for you?"
 
-Chloe has both hands off the step now. "Ruth is the least miserable person I have ever met, and watching her be that cheerful about something this boring is genuinely infuriating. She's at the top of the year and she still comes down on a Saturday with a clipboard and sits behind me for a couple of hours anyway. The range bores her absolutely rigid the entire time, and she has never once said so out loud, and she has never once been late."
+Chloe has both hands off the step now. "Ruth is the least miserable person I have ever met, and watching her be that cheerful about something this boring is genuinely infuriating. She's at the top of the year and she still comes down on a Saturday with a clipboard and sits behind me for a couple of hours anyway. The range bores her absolutely rigid the entire time, she has never once said so out loud, and she has never once been late."
 
 "Why does she keep doing it, then, if the range itself bores her that badly?"
 
@@ -4512,7 +4512,7 @@ ________________
 
 The road into town runs downhill for the first mile, no streetlights whatever until the gas station, and they keep to the gravel shoulder in a loose column, Sam out front with his hands in his pockets, Nadia counting the passing cars under her breath out of habit rather than necessity, since the road at this hour supplies few of them in a mile. A dog somewhere behind a fence works itself up for half a block and then gives up on them, and they cut through the vacant lot behind a tire place and out onto the road on the far side of it, so half an hour gets them to the diner sign, waffles lit up yellow against the dark, the last stretch quiet except for boots on gravel.
 
-The diner does waffles all night, the syrup chained to the napkin holder and a jukebox in the corner silent since long before any of them were born, and they take a booth by the window, the lot lit orange under a surviving sodium lamp, the waitress putting menus down before the door has finished swinging shut behind them. They order too much and then Sam orders more, a full stack for himself and half of Nadia's once she stops eating a third of the way through it, and he works his way around the crisp top edge of his own stack before he touches the syrup at all, a ritual he performs on every waffle he has ever been handed. The waitress, maybe fifty, carries a stack of plates along her arm, refills the coffee unasked, and calls all of them honey, twice for Ruth. Ruth takes it from her without a word, while Nadia falls asleep sitting up and then wakes and finishes her sentence.
+The diner does waffles all night, the syrup chained to the napkin holder and a jukebox in the corner silent since long before any of them were born, and they take a booth by the window, the lot lit orange under a surviving sodium lamp, the waitress putting menus down before the door has finished swinging shut behind them. They order too much and then Sam orders more, a full stack for himself and half of Nadia's once she stops eating a third of the way through it, and he works his way around the crisp top edge of his own stack before he touches the syrup at all, a ritual he performs on every waffle he has ever been handed. The waitress, maybe fifty, carries a stack of plates along her arm, refills the coffee unasked, and calls all of them honey, twice for Ruth; Ruth takes it from her without a word, while Nadia falls asleep sitting up and then wakes and finishes her sentence.
 
 They stay a couple of hours, long enough for Sam to want to know whether the dent in Amberg's car is really shaped like a mailbox, and Ruth, having asked him outright once and got a straight answer, says it is.
 
@@ -4572,7 +4572,7 @@ There's a shopping cart in the lot behind a hardware store on the way home, and 
 
 ________________
 
-The men come out a few blocks later, between two parked cars, seven of them in a clump. A streetlight over the row is running on a bad ballast, on, off, on. They stop a few meters short and the man at the front does the talking; three have guns, two down at their sides, one up and moving.
+The men come out a few blocks later, between two parked cars, seven of them in a clump, a streetlight over the row running on a bad ballast, on, off, on. They stop a few meters short and the man at the front does the talking; three have guns, two down at their sides, one up and moving.
 
 "Phones. Watches. Come on."
 
@@ -4586,7 +4586,7 @@ Ruth stays put. "They're adults." "Three guns."
 
 Chloe looks at the space between the cars and at Sam, and gives it about a second. "Fine. We stay close."
 
-There is chain link a few strides behind them and a loading dock on the other side of it, but the three of them are over the fence and gone before the man at the front has finished turning his head to follow. Nadia goes first because she's nearest, one hand on the top rail and no pause on it. Chloe is half a second behind her, over the rail in one clean vault. Ruth swings her bag over ahead of herself so the strap can't catch, comes across last, and lands running. The pallets are stacked chest-high against the dock and they take them in a step each. The fence drill has been run at this speed every term since they were children, and from four meters away it looks like three people walked backwards out of the world.
+There is chain link a few strides behind them and a loading dock on the other side of it, but the three of them are over the fence and gone before the man at the front has finished turning his head to follow. Nadia goes first because she's nearest, one hand on the top rail and no pause on it; Chloe is half a second behind her, over the rail in one clean vault. Ruth swings her bag over ahead of herself so the strap can't catch, comes across last, and lands running. The pallets are stacked chest-high against the dock and they take them in a step each. The fence drill has been run at this speed every term since they were children, and from four meters away it looks like three people walked backwards out of the world.
 
 The dock roof is a metre and a half above the lot, but none of the three lies down on it. They stay crouched at the lip with their hands flat on the edge, weight forward, close enough to be down in the lot inside a second: open air between them and Sam, a clear view of every set of hands, a drop onto anybody who gets behind him.
 
@@ -4598,7 +4598,7 @@ Then all of them come at once, and Sam puts the first through the second, which 
 
 "Twenty-two seconds," Ruth says.
 
-Sam is standing in the middle of them, turning, looking for the next one. That's the last of them.
+Sam is standing in the middle of them, turning, looking for the next one; that's the last of them.
 
 "Nadia cheated," he says.
 
@@ -4857,7 +4857,7 @@ Ruth asks her in the common room in March, with only Chloe else in the room, and
 
 "A hundred and ninety," Ruth says. "Against how many that answered?"
 
-The notebook is shut under her hand, and she pushes her sleeves up, a second going by where she says nothing. "Twelve, but eight of them were written by software. Read one of mine, Ruth. I can't work out what they want. I've read the listing and I've read the form and I've answered both of them, but I can't see the part where I'm getting it wrong."
+The notebook is shut under her hand, and she pushes her sleeves up, a second going by where she says nothing. "Twelve, but eight of them were written by software. Read one of mine, Ruth. I can't work out what they want. I've read the listing, I've read the form, and I've answered both of them, but I can't see the part where I'm getting it wrong."
 
 "Chloe should read it, since Chloe's the one who writes."
 
@@ -4883,7 +4883,7 @@ Decisions arrive across March rather than all at once, the part everyone braced 
 
 In the common room Chloe has the phone flat on her knee, going down her own list of which have posted and which have not, counting under her breath.
 
-"Chloe's are half up already, and the rest of hers are tomorrow," Bex says, over her shoulder and out to the room, before Chloe has got to the bottom of the list, and she has it right. Then she is leaning past to see what the boy behind them is refreshing.
+"Chloe's are half up already, but the rest of hers are tomorrow," Bex says, over her shoulder and out to the room, before Chloe has got to the bottom of the list, and she has it right. Then she is leaning past to see what the boy behind them is refreshing.
 
 Ruth gets MIT and calls home, where her mother puts her on speaker so her father can hear from the next room and both of them talk over each other to ask the next question first. Kavi gets MIT, Caltech and Chicago, and is thinking about the next item on his list before dinner, while Sam gets all but one of his and wants to know, immediately, what happened to the last.
 
@@ -4974,7 +4974,7 @@ Finding it takes her a moment, and she turns the folder's edge slightly with a f
 
 Mr. Amberg writes it down, then squares the folder against the edge of the desk and opens it once more, the slow read he gives a mark scheme before he hands it back, running a finger down the last page against whatever he's just written in the margin, and he closes it exactly when the clock reads zero, with the pen back in the cup at the corner of the desk.
 
-At the exact minute he stands, and she stands too, and the next name is already waiting in the doorway with a folder of its own out on the chair beside him.
+At the exact minute he stands, she stands too, and the next name is already waiting in the doorway with a folder of its own out on the chair beside him.
 
 ________________
 

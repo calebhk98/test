@@ -198,6 +198,6 @@ The cuts are hers, and he shows her the saw on the first morning and watches her
 
 Already reaching for the next board, his attention is on the next cut. "Chloe," he says. "Not one person alive is going to measure these steps, and this stays between the two of us."
 
-They finish on a Tuesday at the end of July and the steps hold. Her mother comes out and stands on them, and bounces on the top step twice.
+They finish on a Tuesday at the end of July and the steps hold. Her mother comes out, stands on them, and bounces on the top step twice.
 
 "Great improvement on the old lot," she says, and goes back inside.

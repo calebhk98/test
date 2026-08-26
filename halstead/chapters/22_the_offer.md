@@ -44,7 +44,7 @@ Finding it takes her a moment, and she turns the folder's edge slightly with a f
 
 Mr. Amberg writes it down, then squares the folder against the edge of the desk and opens it once more, the slow read he gives a mark scheme before he hands it back, running a finger down the last page against whatever he's just written in the margin, and he closes it exactly when the clock reads zero, with the pen back in the cup at the corner of the desk.
 
-At the exact minute he stands, and she stands too, and the next name is already waiting in the doorway with a folder of its own out on the chair beside him.
+At the exact minute he stands, she stands too, and the next name is already waiting in the doorway with a folder of its own out on the chair beside him.
 
 ________________
 

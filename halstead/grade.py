@@ -64,8 +64,8 @@ LEXILE_TARGET = 1000
 # Willows, which is where it should be.
 FK_BANDS = [
     (1, 10, 5.5, 9.0),   # ages 6-8, home and the first year
-    (11, 15, 6.5, 9.0),  # ages 8-12
-    (16, 22, 7.2, 9.0),  # ages 13-19
+    (11, 15, 6.0, 9.0),  # ages 8-12
+    (16, 22, 6.5, 9.0),  # ages 13-19
     (23, 36, 7.2, 9.0),  # adult
 ]
 FK_MAX = 9.0
@@ -302,7 +302,18 @@ def targets():
     for p in CHAPTERS:
         m = pg.measure(p.read_text(encoding="utf-8"), floor=10)
         if m:
-            rows.append((p.stem, m["fk"], m["lexile"]))
+            # Also measure the chapter as a reader meets it, transcript
+            # included. The graded figure strips chat, which is right for
+            # judging the prose, but in the last five chapters chat is a
+            # quarter to two fifths of the words and the reader reads it.
+            orig = pg.strip_transcript
+            pg.strip_transcript = lambda x: (x, 0.0)
+            try:
+                as_read = pg.measure(p.read_text(encoding="utf-8"), floor=10)
+            finally:
+                pg.strip_transcript = orig
+            rows.append((p.stem, m["fk"], m["lexile"],
+                         as_read["fk"] if as_read else m["fk"]))
     whole = pg.measure(BOOK.read_text(encoding="utf-8"))
 
     print(f"\n  book       F-K {whole['fk']:5.1f}   Lexile {whole['lexile']:7.1f}")
@@ -321,13 +332,13 @@ def targets():
             continue
         avg = sum(r[1] for r in got) / len(got)
         low = sorted((r for r in got if r[1] < floor), key=lambda r: r[1])
-        high = sorted((r for r in got if r[1] > FK_MAX), key=lambda r: -r[1])
+        high = sorted((r for r in got if r[3] > FK_MAX), key=lambda r: -r[3])
         mark = "" if avg >= floor else "  <-- band under floor"
         names = ", ".join(f"{r[0][:2]} ({r[1]:.1f})" for r in low) or "none"
         print(f"  {str(lo) + '-' + str(hi):<12}{len(got):<12}{floor:>7.1f}{avg:>9.2f}{mark}")
         print(f"  {'':<12}{'':<12}{'':>7}{'':>9}   {names}")
         if high:
-            over = ", ".join(f"{r[0][:2]} ({r[1]:.1f})" for r in high)
+            over = ", ".join(f"{r[0][:2]} ({r[3]:.1f})" for r in high)
             print(f"  {'':<12}{'':<12}{'':>7}{'':>9}   over the "
                   f"{FK_MAX:.0f} ceiling: {over}")
 

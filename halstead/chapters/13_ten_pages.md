@@ -2,7 +2,7 @@
 
 *September 2015 – April 2016*
 
-Mr. Hearn is small and gray and says everything at one volume.
+Mr. Hearn is small, gray, and says everything at one volume.
 
 He writes the name on the board, then some numbers under it. "Alexander Hamilton, a real person you can look up, and everything he wrote is still in print and most of it is free. He wrote fifty-one of the Federalist papers in something like half a year, and he had a full-time job the entire time he was doing it."
 
@@ -82,7 +82,7 @@ Up on her knees, both hands out, she cuts back in. "We're all reacting, but you 
 
 On the Monday Chloe gets one on her fourth go, and the balls meet an arm's length in front of her face with a flat wet crack, both of them coming apart at once, orange and blue hanging in the air together and then all over the floor. The boy she is paired with says, "Lucky," but Ruth gets hers a few minutes later and screams.
 
-By the end of the hour they have more between them than everybody else on the floor put together, and on the Thursday they have nineteen. They spend most of that evening doing the noise at each other in the corridor, and Ruth does an impression of the boy who said luck, and they make Kavi watch it twice.
+By the end of the hour they have more between them than everybody else on the floor put together, and on the Thursday they have nineteen. They spend most of that evening doing the noise at each other in the corridor, Ruth does an impression of the boy who said luck, and they make Kavi watch it twice.
 
 People start asking on the Friday, and Ruth says she has been practising while Chloe shrugs and changes the subject. Bex has the end of the shrug before Chloe is out of it, so on the Monday it is Bex who says it to Bell, with the whole floor sitting down and the markers on the mats: that nobody can react to the ball, that the barrel is a hose and what you watch is where the hose is pointed, that every marker in this building throws at a single speed. She has all of it, she has it in order, and she says it at the volume she says everything at.
 
@@ -92,7 +92,7 @@ Chloe sits at the front of the floor with her knees up and her arms round them. 
 
 By the following week there are theories going round about the markers being different weights.
 
-Kavi gets it on his own in the second week of November, when his number goes from three to double figures inside an hour that afternoon, and he walks straight out, past everybody, jaw set, and she leaves him to it. Nadia has it by the end of the month off her own back, Priya gets it out of Ruth in a corridor in about ninety seconds, and by Christmas most of the year is past where they ever were with darts.
+Kavi gets it on his own in the second week of November, when his number goes from three to double figures inside an hour that afternoon, and he walks straight out, past everybody, jaw set, but she leaves him to it. Nadia has it by the end of the month off her own back, Priya gets it out of Ruth in a corridor in about ninety seconds, and by Christmas most of the year is past where they ever were with darts.
 
 In the second week of September a man from the office spends an hour on Watch, which everybody starts at ten, and although the sheet has been on the corkboard on the second floor since before Chloe got here and she stopped reading it years ago, he goes through it line by line anyway, the way the fire notice gets gone through once a year.
 
@@ -111,13 +111,13 @@ Then he goes through what a drill can be: people over the fence at the loading s
 
 Most of them are announced, with a board that says *Thursday, afternoon block* a week out and a dozen names going up with it, and everybody knows it is coming, but it is still hard. Some are at night and those go on the board too, while every few weeks there is a drill sprung with no warning at all, first thing in the morning or in the middle of lunch, and people count the weeks.
 
-Her first is on the board on the Monday and happens on the Thursday, when adults come over the north fence with a bag between them and are inside Building Two before anybody has moved. Somebody is off her feet before she turns around. More go down at the stairwell, and a boy called Wes answers a question about how many of them there are, and the drill is called well over the standard.
+Her first is on the board on the Monday and happens on the Thursday, when adults come over the north fence with a bag between them and are inside Building Two before anybody has moved. Somebody is off her feet before she turns around. More go down at the stairwell, a boy called Wes answers a question about how many of them there are, and the drill is called well over the standard.
 
 The sheet goes up on the Friday, and every name on it has an F next to it and a numbered list underneath.
 
 In the corridor, with people behind her waiting for a turn at it, she reads it under a light that throws everything back off the glass. Number one is response time, number two is that a student answered a question about how many of them there are, and number three is that adults entered a building. Number six says the north stairwell was uncovered, but Chloe, who stood there the whole time, is still working out what covering it would even have looked like.
 
-After dinner, when the corridor is empty, she goes back and reads it again, and then a third time. Ruth comes and stands next to her and reads it all the way to the bottom in silence, arms crossed.
+After dinner, when the corridor is empty, she goes back and reads it again, then a third time. Ruth comes, stands next to her, and reads it all the way to the bottom in silence, arms crossed.
 
 "Six is me. There's no other name that number could be pointing at."
 
@@ -125,7 +125,7 @@ After dinner, when the corridor is empty, she goes back and reads it again, and 
 
 "I was standing in it. Wes asked them the number right in front of me, and it took him answering it for me to even notice."
 
-Ruth is still looking at the sheet. "So was I, and so was Wes, and I don't know what we were supposed to be doing either. So that one should be on whoever wrote the drill and left it that vague, not on the person who noticed first. There's another before long, and we'll actually know what it means by then."
+Ruth is still looking at the sheet. "So was I, so was Wes, and I don't know what we were supposed to be doing either. So that one should be on whoever wrote the drill and left it that vague, not on the person who noticed first. There's another before long, and we'll actually know what it means by then."
 
 Chloe says it at dinner, with the plates still going round. "The standard's scored against the response and not against what the response was up against, so a drill nobody could have held comes out looking like a year that couldn't hold it. Nobody scores the drill."
 
