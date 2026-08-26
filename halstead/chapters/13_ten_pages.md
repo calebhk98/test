@@ -6,13 +6,13 @@ Mr. Hearn is small and gray and says everything at the same volume.
 
 He writes the name on the board, then some numbers under it. "Alexander Hamilton, a real person you can look up, and everything he wrote is still in print and most of it is free. He wrote fifty-one of the Federalist papers in something like half a year, and he had a full-time job the entire time he was doing it."
 
-The arithmetic goes up on the board in silence: fifty-one in roughly thirty weeks comes out at an essay every four days, a few thousand words a go, a dozen pages or more. He underlines the rate and leaves it there.
+The arithmetic goes up on the board in silence: fifty-one in roughly thirty weeks comes out at an essay every four days, a few thousand words a go, a dozen pages or more. The rate gets underlined and left there.
 
 He caps the pen. "One ten-page essay a week, and that's less than half his rate, you've got a keyboard, and nobody is waiting on you to walk it to a printer on Saturday morning. The first is due Monday. It has to be as good, and that's the part that's actually hard, because the length is easy, it is just hours, so if you want to know what I'm marking against, go and read them, and they're short enough that there's no excuse not to."
 
 Chloe has written reports that long before, in Mandarin last year and in French the year before that, all of them with weeks behind them. They were also about things, like what a port did in a year, or what a newspaper said and what a second newspaper said about it, and those came back marked on the Mandarin.
 
-She reads Federalist 10 that night in the chair by the window, which takes her an hour and a half, then reads it again on the Saturday, faster, with a pen, before she spends the rest of the weekend on an essay about whether a small state can be trusted with a veto.
+That night, in the chair by the window, she reads Federalist 10, which takes her an hour and a half, then reads it again on the Saturday, faster, with a pen, before she spends the rest of the weekend on an essay about whether a small state can be trusted with a veto.
 
 It comes back on the Monday with a mark and a short paragraph under it, which say she has spent the whole essay on a position she already held, that the other side appears nowhere on the page in a way its own supporters would believe, and that until it does he has no way of telling whether she is right or only comfortable.
 
@@ -24,7 +24,7 @@ That evening she looks up who wrote which, and Hamilton has number 1, then 6 thr
 
 The second essay is due days after the first, so she is still thinking about the first when she has to start it.
 
-In the second week of October she decides this essay is going to be good, so she builds the outline first, though outlines have always been for other people, and it still gets the pages out the other end. The last page gets written first, then the middle, and the rest splits across a few sittings. She writes it twice from scratch, closing the first draft away before starting the second. She takes a position she disagrees with and writes it straight, but that draft comes back worse than the others.
+In the second week of October she decides this essay is going to be good, so she builds the outline first, though outlines have always been for other people, and it still gets the pages out the other end. The last page gets written first, then the middle, and the rest splits across a few sittings. Twice she writes it from scratch, closing the first draft away before starting the second. Taking a position she disagrees with, she writes it straight, but that draft comes back worse than the others.
 
 In November Hearn tells her the third page of an essay is doing the work of the pages in front of it, and to go and look at what those pages are for, advice that she reads twice on the stairs, and every essay she writes for the next month has a good third page in it, but the other nine pages are still there.
 
@@ -40,7 +40,7 @@ The 10v1 starts in January.
 
 "That's a lot. That's twice as many hands as I've ever had on me at once."
 
-She holds up a hand with the fingers spread and turns it. "Five people can reach you at once, six if they're good, seven if you're standing badly, and after that there's no room for anybody, they'd be pushing each other over. So ten is five on you and five waiting for the first lot to get tired, and any more than that and they're just queuing for a turn."
+A hand goes up, fingers spread, and turns. "Five people can reach you at once, six if they're good, seven if you're standing badly, and after that there's no room for anybody, they'd be pushing each other over. So ten is five on you and five waiting for the first lot to get tired, and any more than that and they're just queuing for a turn."
 
 "A minute's a long time, and that's a lot of seconds to hold them all off."
 
@@ -74,7 +74,7 @@ Chloe stops. "Wait, that's it, that's the whole problem, we're reacting."
 
 "What, what are you talking about?"
 
-She is up on her knees with both hands out. "We're all reacting, but you can't react to it, there isn't time to react to it, you have to already be there. If you're standing behind someone holding a hose, you don't watch the water. You watch where the hose is pointing before anything comes out of it. The barrel is the hose, Ruth, pointed at where the ball's going before the ball goes anywhere, and every marker on that floor shoots at a single speed. Watch the barrel and the feet, and move before he shoots."
+Up on her knees, both hands out, she cuts back in. "We're all reacting, but you can't react to it, there isn't time to react to it, you have to already be there. If you're standing behind someone holding a hose, you don't watch the water. You watch where the hose is pointing before anything comes out of it. The barrel is the hose, Ruth, pointed at where the ball's going before the ball goes anywhere, and every marker on that floor shoots at a single speed. Watch the barrel and the feet, and move before he shoots."
 
 "That's not what she told us in the briefing, none of this was in the briefing."
 
@@ -115,7 +115,7 @@ Her first is on the board on the Monday and happens on the Thursday, when adults
 
 The sheet goes up on the Friday, and every name on it has an F next to it and a numbered list underneath.
 
-She reads it in the corridor with people behind her waiting for a turn at it, under a light that throws everything back off the glass. Number one is response time, number two is that a student answered a question about how many of them there are, and number three is that adults entered a building. Number six says the north stairwell was uncovered, but Chloe, who stood there the whole time, is still working out what covering it would even have looked like.
+In the corridor, with people behind her waiting for a turn at it, she reads it under a light that throws everything back off the glass. Number one is response time, number two is that a student answered a question about how many of them there are, and number three is that adults entered a building. Number six says the north stairwell was uncovered, but Chloe, who stood there the whole time, is still working out what covering it would even have looked like.
 
 After dinner, when the corridor is empty, she goes back and reads it again, and then a third time. Ruth comes and stands next to her and reads it all the way to the bottom in silence, arms crossed.
 
@@ -129,7 +129,7 @@ Ruth is still looking at the sheet. "So was I, and so was Wes, and I don't know 
 
 Chloe says it at dinner, with the plates still going round. "The standard's scored against the response and not against what the response was up against, so a drill nobody could have held comes out looking like a year that couldn't hold it. Nobody scores the drill."
 
-Twenty minutes later Iyad has it at the far end of the table with a phrase of his own on the front of it and the bit about the year still in it. He has the north stairwell off the bottom of the sheet as well, and who was standing in it while it went uncovered. The far end takes up both and is still on them when the plates come back. Chloe finishes what is in front of her and carries her tray down the far side of the hall.
+Twenty minutes later Iyad has it at the far end of the table with a phrase of his own on the front of it, the bit about the year still in it, the north stairwell off the bottom of the sheet as well, and who was standing in it while it went uncovered. The far end takes up both and is still on them when the plates come back. Chloe finishes what is in front of her and carries her tray down the far side of the hall.
 
 Russian starts in September, and a couple of months in she has enough of it to argue in, while Ruth is on Arabic. By the middle of the term they are running insults across the dinner table in two languages, and Kavi complains about it in a third. Sam asks them to do it in English so he can join in, but neither of them will.
 

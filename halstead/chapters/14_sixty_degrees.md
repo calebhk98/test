@@ -6,9 +6,7 @@ The long field runs north from the back of Building Three to a distant fence, wi
 
 Archery is ordinary at first, because the start of it is butts at twenty metres, then thirty, then fifty, an hour a day of being told what your elbow is doing by an instructor who walks the line every so often to say it again. Chloe is on the gold most of the time by the end of the second week, bored by the middle of the third, and so is everybody near her.
 
-Then Coach Bell puts a metronome on a post at the near end of the field.
-
-He holds an arrow up by the nock. "Everything in that gym worked because you had time, since a foam dart is fat and slow enough to watch the whole way and still get a hand in front of. A few millimetres of this, coming off the string faster than anything you've had at you, and end-on at seventy metres, so instead of crossing your eye it's a point that gets bigger. You cannot track it, and shooting one down in the air is beyond everybody on this field."
+Then Coach Bell puts a metronome on a post at the near end of the field and holds an arrow up by the nock. "Everything in that gym worked because you had time, since a foam dart is fat and slow enough to watch the whole way and still get a hand in front of. A few millimetres of this, coming off the string faster than anything you've had at you, and end-on at seventy metres, so instead of crossing your eye it's a point that gets bigger. You cannot track it, and shooting one down in the air is beyond everybody on this field."
 
 Kavi says it from down the line. "That's the opposite of what we do with the paintballs. We watch the person rather than the dart, so we're moving before he shoots."
 
@@ -88,7 +86,7 @@ Chloe says it to Kavi at dinner. "I can't make that work. It's a picture, the sa
 
 "Inflation," Kavi says around a mouthful.
 
-She has both elbows on the table. "I took the inflation out, but it's still six times what it was. And if I painted that, right now, every brush stroke matched, it's worth thirty pounds, whereas he painted it and it's worth a house, so the number is measuring something other than the picture, and every adult in that room changed the subject when I asked what."
+Both elbows land on the table. "I took the inflation out, but it's still six times what it was. And if I painted that, right now, every brush stroke matched, it's worth thirty pounds, whereas he painted it and it's worth a house, so the number is measuring something other than the picture, and every adult in that room changed the subject when I asked what."
 
 "Ask her again, properly this time."
 
@@ -144,7 +142,7 @@ It goes in on the Monday, twenty-eight pages of it, but Hearn gives it back a we
 
 The note runs to half a page: she hedges, twice on page eight, once on page twenty-two, and the whole of the conclusion, whose last line reads: *it could be argued that, on balance, this was perhaps not the right decision.* She already answered those objections earlier, so the hedge only asks the reader to answer them again. She keeps apologising for the argument in the middle of making it. An argument you apologise for is a request. Make it or leave it out.
 
-She finds Ruth on the stairs between the second floor and the third.
+Between the second floor and the third, she finds Ruth on the stairs.
 
 "He gave me a B on it."
 
