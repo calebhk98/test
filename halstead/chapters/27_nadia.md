@@ -6,7 +6,7 @@ Somebody runs a scam through Nadia's company in the spring.
 
 The company is eleven months old and four people besides her, known inside three counties, which is as far as word travels when every employer on it was signed in person, in a car, on Saturdays. What the thing does is take the resume out. A user spends an evening on short tests, the profile builds itself out of work she can put in front of somebody, and after that the thing fills the forms and sends them out for her, to the employers on the site and to whichever outside boards are still accepting submissions from it that month.
 
-It runs out of three rooms over a laundromat, a hundred yards up the street from her parents' shop, and the heat off the dryers comes through the floor from ten in the morning, so the windows stay open into November. The only bathroom belongs to the laundromat, and its key hangs on a paint stirrer behind the change machine.
+It runs out of three rooms over a laundromat, a hundred yards up the street from her parents' shop, and the heat off the dryers comes through the floor from mid-morning, so the windows stay open into November. The only bathroom belongs to the laundromat, and its key hangs on a paint stirrer behind the change machine.
 
 The building came with two working outlets a room, so there is a run of surge strips down the baseboard now, taped down, with an orange extension cord stapled up over the door frame between the front rooms. She did the tape and the staples herself on a Sunday in February. The kitchen is a folding table with a kettle on it and a jar of instant coffee Bev brought in October, still sealed under its foil.
 
@@ -16,17 +16,17 @@ In April she paid ninety dollars for the company name in white vinyl and put it 
 
 "I read it every morning," Nadia said, and went back down the ladder for the squeegee.
 
-There is no morning meeting: she says what went live yesterday from wherever she is standing, and it takes her under a minute, because there are only five of them and three were standing there when it happened.
+There is no morning meeting: she says what went live yesterday from wherever she is standing, and it takes her under a minute, because there are so few of them, and most of them were standing there when it happened.
 
-She's still in the front room at half past eight on the Tuesday of the second week of May, because the new-employer queue has run long. That queue she reads herself, every name on it, the same way she reads the till tape at her parents' counter before she says hello to anyone, and a good week puts a handful of names in front of her. This week has nineteen, and more than half of them sit outside the list of employers she has driven to herself.
+She's still in the front room well after dark on the Tuesday of the second week of May, because the new-employer queue has run long. That queue she reads herself, every name on it, the same way she reads the till tape at her parents' counter before she says hello to anyone, and a good week puts a handful of names in front of her. This week has nineteen, and more than half of them sit outside the list of employers she has driven to herself.
 
 Opened, they carry one job description between them, a few paragraphs of it, with the company name swapped at the top and again in the third line and left exactly where it was everywhere else, so that one of them advertises a role in a city the posting itself gives as sixty miles from its own address.
 
-All of the accounts were created between twenty to midnight and ten past, inside a single half-hour window, at a cadence no genuine employer around here has ever come close to. The hires behind them come to zero, and that number sits in front of her without her going to look for it, because the hire count sits at the top of every employer's row.
+All of the accounts were created inside a single half-hour window either side of midnight, at a cadence no genuine employer around here has ever come close to. The hires behind them come to zero, and that number sits in front of her without her going to look for it, because the hire count sits at the top of every employer's row.
 
 The rest of it is in the message logs. Traffic between an employer and a user stays on her own servers until an offer gets logged, a decision she made in June to hold the support calls down, so they had no way to ask for anything except in writing, in her building, in a log she owns and reads.
 
-They ask for a Social Security number and a bank routing number in the third message, in the same four sentences, comma splice and all, reproduced without a character moved. People answered, and one of them gave both numbers on the Sunday, so that her checking account was emptied on the Monday morning.
+They ask for a Social Security number and a bank routing number in the third message, in the same few sentences, comma splice and all, reproduced without a character moved. People answered, and one of them gave both numbers on the Sunday, so that her checking account was emptied on the Monday morning.
 
 Before she sits down she deletes the whole batch of accounts from where she's standing, which takes about ninety seconds, and then she takes the names into the back room and telephones them in turn, late at night.
 
@@ -70,17 +70,17 @@ nadia: i said that. she said it twice more
 
 ________________
 
-The week that follows happens mostly before eight in the morning, before the laundromat opens and the phones start, at the kitchen table with a legal pad in front of her and the company names written down the side of it in the small, fast hand she keeps the shop's ledger in. Every last one of them typed a genuine state registration number into her employer form, and that is the interesting part all by itself, since anybody willing to file with the state is somebody the state now holds paper on.
+The week that follows happens mostly at first light, before the laundromat opens and the phones start, at the kitchen table with a legal pad in front of her and the company names written down the side of it in the small, fast hand she keeps the shop's ledger in. Every last one of them typed a genuine state registration number into her employer form, and that is the interesting part all by itself, since anybody willing to file with the state is somebody the state now holds paper on.
 
-The first mornings go on the state's business filings, the site she used to register her own company, and most of them turn out to have been filed inside a single week eight months ago through one registered agent. That age tells her the paperwork has been used before.
+The first mornings go on the state's business filings, the site she used to register her own company, and most of them turn out to have been filed inside a single week last autumn through one registered agent. That age tells her the paperwork has been used before.
 
-A third morning goes on cross-referencing that agent against the county's property records, and it comes back a suite above a tire shop off the county road, a few miles from the laundromat. The agent's name is Hanley, and Hanley carries thirty-one filings against that address. On the fourth morning she calls the tire shop's front counter.
+A third morning goes on cross-referencing that agent against the county's property records, and it comes back a suite above a tire shop off the county road, a few miles from the laundromat. The agent's name is Hanley, and the address carries a stack of his filings. On the fourth morning she calls the tire shop's front counter.
 
 "Does the office upstairs keep regular hours, or is it just whoever happens to be up there that day?" she asks, in the unbothered voice of somebody scheduling a delivery. "I've got a package that needs a signature from someone up there."
 
 "They're in most days," the man behind the counter says. "Nine to five, half a dozen of them, give or take, though I couldn't tell you what it is they do up there."
 
-None of it moves anything else on her list. Payroll clears on the twenty-second the way it always does, she signs two employers on the Saturday in the middle of it, one of them a machine shop with a handful of people in it and a fax number still on the door, and on the Thursday she takes the difficulty on the test generator from point five down to point three and lets it rebuild itself overnight.
+None of it moves anything else on her list. Payroll clears on the twenty-second the way it always does, she signs two employers on the Saturday in the middle of it, one of them a machine shop with a handful of people in it and a fax number still on the door, and on the Thursday she takes the difficulty on the test generator down a notch and lets it rebuild itself overnight.
 
 There is no police report and no lawyer, and at the company she says only that she's out for the afternoon. On the seventh day she closes the shop books at home, tells her parents she'll be back before dinner, and drives out alone. Parking is out front, where the upstairs window can see the car, and she leaves the doors unlocked, because ten minutes is what this is going to take.
 
@@ -118,7 +118,7 @@ The man behind the desk sits back in the chair for the first time since she came
 
 "You aren't going to do anything to me," she says. "There are filings with a real agent's name on them, and a shop full of people underneath us who watched me come up those stairs."
 
-"It's twenty past five." The man at the window answers her with his back turned. "Chuck locks the bay at five, so the shop underneath you is shut and those stairs were yours alone, and you want to be thinking about that."
+"It's twenty past five." The man at the window answers her with his back turned. "Chuck locks the bay on the hour, so the shop underneath you is shut and those stairs were yours alone, and you want to be thinking about that."
 
 On she goes to the next thing on her list.
 
@@ -156,7 +156,7 @@ The man behind the desk looks at the man standing over her and keeps looking at 
 
 "That's fine, because I heard you perfectly well the first time."
 
-The man at the door steps aside for her and says something to the back of her head as she passes, three words with sweetheart on the end of them, and one of the others laughs at it. The steel stairs are behind her before either sound has finished. Somebody comes out onto the landing and stands there watching while she crosses the lot, and is still up there when she reaches the car.
+The man at the door steps aside for her and says something to the back of her head as she passes, three words with sweetheart on the end of them, and another of them laughs at it. The steel stairs are behind her before either sound has finished. Somebody comes out onto the landing and stands there watching while she crosses the lot, and is still up there when she reaches the car.
 
 The key goes in on the second try. Back at the shop she counts the till her mother has already counted. It comes out three dollars under. She counts it again, gets it again, and then runs the whole tape through a third time from the top of the day. Her mother asks where she was, and Nadia says out at a tire place, which is true, and her mother lets it go at that. Until close she works the counter, on a Thursday, for the first time since November.
 

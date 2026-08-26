@@ -28,7 +28,7 @@ The first contact is at a fence line a little after midnight: strands of wire sa
 
 Two men are waiting on the far side of it in the darkness, close enough to the posts that they read, for a moment, as more fence. They hold still, and so does he.
 
-Then he withdraws fifteen metres back into the pines, gets down behind a root ball with the rifle laid across it, and waits twenty minutes for something to happen. The nearer man shifts his weight from knee to knee, worth very little on its own, then repeats the adjustment half a minute afterward, making it a rhythm. Sam settles the front sight on the shape and stays with it through the third.
+Then he withdraws back into the pines, gets down behind a root ball with the rifle laid across it, and waits twenty minutes for something to happen. The nearer man shifts his weight from knee to knee, worth very little on its own, then repeats the adjustment half a minute afterward, making it a rhythm. Sam settles the front sight on the shape and stays with it through the third.
 
 Two rounds. The report goes out flat across the fallow ground, returns off the tree line a moment behind itself, and both harnesses out there arrive immediately at a steady tone. The men stand up out of the grass, because standing up is what the laminated card instructs, and one of them says something to the other that Sam is much too far away to hear.
 
@@ -52,7 +52,7 @@ Down in the cut, the man Sam put into the wall is sitting on the lip of the pipe
 
 "Open the hand."
 
-Sam opens it, and the knuckles across the first two fingers are split, the blood in them already gone tacky in the cold.
+Sam opens it, and the knuckles across his fingers are split, the blood in them already gone tacky in the cold.
 
 "Anything in there that objects to bending."
 
@@ -76,7 +76,7 @@ He eats standing, out of a pouch, tearing the top off with his teeth and keeping
 
 ________________
 
-On the fourth night Sam crosses a stretch of ground with the footing gone soft and uneven underneath him, an old drainage cut long since gone to rut and weed, in the small hours of the morning. The pace is slower than anything he has managed all exercise, the ground holding him to it, a boot testing the next patch before he commits any weight to it. Ten minutes of that cut are behind him, and he has looked at every yard of it.
+On the fourth night Sam crosses a stretch of ground with the footing gone soft and uneven underneath him, an old drainage cut long since gone to rut and weed, in the small hours of the morning. The pace is slower than anything he has managed all exercise, the ground holding him to it, a boot testing the next patch before he commits any weight to it. A long stretch of that cut is behind him, and he has looked at every yard of it.
 
 There is a shift of weight behind him and off to the left, too sudden and too heavy to be the ground settling.
 
@@ -92,7 +92,7 @@ Sam looks back down the last thirty feet of the cut, ground he spent that long r
 
 A controller comes down off the road, keys the harness quiet, keys it live again, and instructs him to finish the leg, so Sam finishes the leg, because that is still the job.
 
-The last checkpoint comes up grey rather than dark, the sky doing the slow work of turning into morning behind the tree line. At a barrel he clears his weapon, counts twenty-eight blank rounds back into a sergeant's hand, then turns in the harness, the transmitter, the compass and the card at a folding table identical to the table he drew them from on the first night, where a specialist checks the time against a clipboard before waving him toward a tent with cots in it. He sleeps for five hours before anybody wants him for anything.
+The last checkpoint comes up grey rather than dark, the sky doing the slow work of turning into morning behind the tree line. At a barrel he clears his weapon, counts twenty-eight blank rounds back into a sergeant's hand, then turns in the harness, the transmitter, the compass and the card at a folding table identical to the table he drew them from on the first night, where a specialist checks the time against a clipboard before waving him toward a tent with cots in it. He sleeps a few hours before anybody wants him for anything.
 
 ________________
 

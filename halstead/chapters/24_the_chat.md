@@ -4,11 +4,11 @@
 
 The chat is five years old. They wrote the encryption themselves in their first year here, mostly to keep a teacher from reading it while they arranged getting out of the building, and none of them has ever used another.
 
-This is the first September that finds all of them somewhere else. Eli, three states from where he grew up, has a new badge with last year's photo still on it, and Ruth is in a dorm room in Cambridge with a roommate she's met twice. Sam is at a processing station somewhere the paperwork won't name, where they hand his phone back a few minutes at a stretch. Kavi is still at Halstead, in a lab down the corridor from where he had his own lessons, doing work that used to be homework. Nadia is in the back room of her parents' shop with the door open onto the counter, while Theo, a coastline away from the harbor town he grew up in, learns which parts of his new government job stay behind the badge. Priya is somewhere south of the equator, on a signal that comes and goes, and Chloe sits in a lecture hall built for hundreds, an hour from the apartment she rents.
+This is the first September that finds all of them somewhere else. Eli, a long way from where he grew up, has a new badge with last year's photo still on it, and Ruth is in a dorm room in Cambridge with a roommate she's met twice. Sam is at a processing station somewhere the paperwork won't name, where they hand his phone back a few minutes at a stretch. Kavi is still at Halstead, in a lab down the corridor from where he had his own lessons, doing work that used to be homework. Nadia is in the back room of her parents' shop with the door open onto the counter, while Theo, a coastline away from the harbor town he grew up in, learns which parts of his new government job stay behind the badge. Priya is somewhere south of the equator, on a signal that comes and goes, and Chloe sits in a lecture hall built for hundreds, an hour from the apartment she rents.
 
-Eli types with his phone propped against a monitor, eyes staying on whatever's actually on the screen. Kavi answers from the desk he does everything else from, a hand still turning over whatever object was already sitting on it. Ruth writes standing up, phone in her hand and a textbook open in the other, and finishes a whole exchange while keeping pace with whatever she was doing before it started. Nadia texts one-handed with the other hand still on a keyboard, keeping track of both at once. Theo answers standing at a window with the blinds already down, phone held low and close, the way he'd hold a document above his clearance. Sam thumbs the keyboard with the economy he uses on everything else, three words and stop, because someone behind him is already waiting for the phone. Priya replies from wherever she's charging it, propped against a boot, a bag, once against the neck of a horse that stood still for it.
+Eli types with his phone propped against a monitor, eyes staying on whatever's actually on the screen. Kavi answers from the desk he does everything else from, a hand still turning over whatever object was already sitting on it. Ruth writes standing up, phone in her hand and a textbook open in the other, and finishes a whole exchange while keeping pace with whatever she was doing before it started. Nadia texts one-handed with the other hand still on a keyboard, keeping track of both at once. Theo answers standing at a window with the blinds already down, phone held low and close, the way he'd hold a document above his clearance. Sam thumbs the keyboard with the economy he uses on everything else, a few words and stop, because someone behind him is already waiting for the phone. Priya replies from wherever she's charging it, propped against a boot, a bag, once against the neck of a horse that stood still for it.
 
-Some of them answer inside a minute no matter the hour, Eli most nights, and Kavi from the building he's always slept in. Others answer in bursts, messages at once after a long gap, a reply to something asked at seven landing after midnight because a shift only just ended. A message sent to the whole group at three in the morning gets an answer from somebody within five minutes. It has for years.
+Some of them answer inside a minute no matter the hour, Eli most nights, and Kavi from the building he's always slept in. Others answer in bursts, messages at once after a long gap, a reply to something asked in the evening landing after midnight because a shift only just ended. A message sent to the whole group in the middle of the night gets an answer from somebody within minutes. It has for years.
 
 A message can sit read for hours, and it means only a shift running long, a supervisor still talking, a horse well past cell service. Whatever he's in the middle of at the agency keeps running through a joke about somebody's boss, so Theo reads everything within minutes of it landing and sometimes waits a full day to answer it. Nadia reads fast and answers fast, except on a Sunday evening, when she has the shop's books open in front of her and the phone goes face down on the counter. Sam goes dark for stretches at a time, the read receipt stuck wherever it last landed, and then a run of replies arrives inside a minute once he's got the phone back. A message can open with guys, or ok, or silence before the next fact, arriving before whoever's reading has gotten past the first word.
 
@@ -66,7 +66,7 @@ eli: i got a meeting with a lawyer
 
 eli: which honestly has been the most interesting thing thats happened to me since i started
 
-The build pipeline flaw is the kind of gap a company checks for insiders and outages, not for somebody like Eli looking at it sideways. Their own encryption has gone five years without anyone who had real reason to try it. Eli wrote part of it. The rest has sat as untested by him as by everyone else, year after year.
+The build pipeline flaw is the kind of gap a company checks for insiders and outages, not for somebody like Eli looking at it sideways. Their own encryption has gone all that time without anyone who had real reason to try it. Eli wrote part of it. The rest has sat as untested by him as by everyone else, year after year.
 
 ________________
 
@@ -84,7 +84,7 @@ sam: this you complaining or bragging about her
 
 ruth: neither, its an observation. shes fast
 
-ruth: the room itself is barely big enough for the two of us and the spice rack
+ruth: the room itself is barely big enough for us and the spice rack
 
 kavi: room-shaped object
 
@@ -112,7 +112,7 @@ kavi: you asked what it was measuring earlier this week. same energy
 
 ________________
 
-Halfway through September, Nadia tries to pin an actual date. It's been three months since anyone in the group has been in a room together, and the loose plan from June, get together before the holidays, has produced exactly zero weekends that work for more than a couple of people at once. The question goes up on a Tuesday afternoon, and it sits for hours before anyone answers.
+Halfway through September, Nadia tries to pin an actual date. It's been months since anyone in the group has been in a room together, and the loose plan from June, get together before the holidays, has produced exactly zero weekends that work for more than a couple of people at once. The question goes up on a Tuesday afternoon, and it sits for hours before anyone answers.
 
 nadia: ok does anyone actually have a free weekend before december
 
@@ -152,7 +152,7 @@ By dinner a new thread has replaced it, about something else entirely, and the N
 
 ________________
 
-Priya's messages land three days behind whatever prompted them, sometimes five, whole conversations she answers into after the group has already moved on twice, and everyone answers her back anyway. She posts whenever the signal holds long enough to send anything at all.
+Priya's messages land days behind whatever prompted them, sometimes a week, whole conversations she answers into after the group has already moved on twice, and everyone answers her back anyway. She posts whenever the signal holds long enough to send anything at all.
 
 priya: theres a horse here that a farmer uses to bring cheese down from the high pasture, actual cheese, strapped either side like saddlebags, and he doesnt even lead her, she just goes
 
@@ -186,7 +186,7 @@ theo: i wrote it out step by step
 
 ruth: so whats the problem
 
-theo: apparently im skipping five or ten steps every time?? i genuinely cannot see where
+theo: apparently im skipping steps every time?? i genuinely cannot see where
 
 theo: she wants me to write out the intermediate ones
 
@@ -406,7 +406,7 @@ nadia: im buying a car in march if it works
 
 ruth: for the saturdays
 
-nadia: no. theres a four cylinder sitting at the yard on ohio street thats been there since i was fourteen
+nadia: no. theres a four cylinder sitting at the yard on ohio street thats been there since i was a kid
 
 kavi: is it better than the one you have
 
@@ -420,7 +420,7 @@ nadia: yes
 
 ________________
 
-Reading other people's listings takes her the better part of a fortnight, and most of them go on the individual company career pages rather than on the boards, because a board publishes in one format and thousands of separate companies publish in as many. By the first week of October the site carries nineteen thousand openings, nine of which have anybody behind them who has agreed to pay her anything.
+Reading other people's listings takes her the better part of a fortnight, and most of them go on the individual company career pages rather than on the boards, because a board publishes in a single format and thousands of separate companies publish in as many. By the first week of October the site carries nineteen thousand openings, nine of which have anybody behind them who has agreed to pay her anything.
 
 ________________
 

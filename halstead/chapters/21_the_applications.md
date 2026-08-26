@@ -2,7 +2,7 @@
 
 *October 2022 – March 2023*
 
-Chloe has been compared to the same ninety-one people since she was seven, and the only number the school has ever given her is her place inside the ninety-one, a place squarely in the middle. Since the middle of a year gets what the middle of any year gets, the state school is what she is expecting.
+Chloe has been compared to the same ninety-one people since she was seven, and the only number the school has ever given her is her place inside them, a place squarely in the middle. Since the middle of a year gets what the middle of any year gets, the state school is what she is expecting.
 
 The pattern is identical for everybody: the Ivies first, eight of them, bought like lottery tickets and forgotten about by dinner; then the college a parent went to; then the community college an hour from home, quietly listed by everybody and named out loud by almost nobody; then something strange, picked for whatever reason a seventeen-year-old picks things, so Bex applies to a place in Vermont because her cousin says the food is unbelievable, and Marek to a place in Arizona because a woman he watched lecture online teaches there.
 
@@ -18,7 +18,7 @@ Chloe is on the floor with the printed list of deadlines in her lap, going down 
 
 "Then you go to the state school," Sam says, "same as you were always going to," and picks his card back up, turns it over once, sets it down again.
 
-Chloe's list runs to fourteen: the eight, the state school, her mother's college, the community college, a place in Michigan because Fen said the winters there are worth seeing once, Georgetown, up twice in a week and still on the list because the second time it was a language department, and another she picks off a phone screen in a few minutes after lights-out because it came up on the page beside the Michigan listing.
+Chloe's list runs to fourteen: the Ivies, the state school, her mother's college, the community college, a place in Michigan because Fen said the winters there are worth seeing once, Georgetown, up twice in a week and still on the list because the second time it was a language department, and another she picks off a phone screen in a few minutes after lights-out because it came up on the page beside the Michigan listing.
 
 Her mother calls twice in the month to ask how the essays are going and gets fine both times, and the second time she leaves it there and reads the list back down the phone, saying the deadline out loud after each and waiting for Chloe to say it back.
 
@@ -32,7 +32,7 @@ Ruth reads it over her shoulder before she can close the laptop, laughing at her
 
 "Then why is it four pages?"
 
-"Because getting it to six hundred is harder than getting it to four thousand." Chloe cuts it three times before it holds.
+"Because getting it to six hundred is harder than getting it to four thousand." Chloe cuts it and cuts it again before it holds.
 
 Sam finishes in under an hour and shuts the laptop harder than it needs. "Ten pages a week, every week since I got here," he says, "and the thing that decides where I spend the next four years is a paragraph, and at that length they're guessing, not reading, and everyone who wrote one knows it."
 
@@ -72,7 +72,7 @@ Then somebody reads the essays, and what everybody notices first is the graduate
 
 Then they lay them side by side, the standard method for catching a template, and the theory dies there, because no two of them argue alike, and a pair of the ninety-one take opposite positions on a question with both worth reading, the thing a template could not possibly produce.
 
-An admissions officer at Penn works through a stack of files on a Tuesday morning, a mug going cold at her elbow. Odile's essay is three pages against the word limit, normally worth a note in the margin and a mark against the applicant; she writes the note and keeps reading. Well down the second page, as background to a point about patience, it mentions a self-defense assessment involving a room full of people, and she reads the sentence twice, sets the folder down, and reads it a third time before she picks up the phone.
+An admissions officer at Penn works through a stack of files on a Tuesday morning, a mug going cold at her elbow. Odile's essay runs pages past the word limit, normally worth a note in the margin and a mark against the applicant; she writes the note and keeps reading. Well down the second page, as background to a point about patience, it mentions a self-defense assessment involving a room full of people, and she reads the sentence twice, sets the folder down, and reads it a third time before she picks up the phone.
 
 "Read this paragraph and tell me what you think it means," she says to the office down the hall.
 
@@ -86,9 +86,9 @@ What breaks it open further is the papers: three applicants have listed research
 
 A representative may come and read the paper in a room, on paper, for as long as they like, with somebody in the room throughout. No phone and no bag go in. The school provides the paper, a pencil, and as much notepaper as anybody wants, and everything written in the room is read before it leaves. A committee calls the terms unworkable in an internal email, forwarded twice before somebody decides declining is simpler than arguing; another leaves its follow-up requests to gather dust. Five accept.
 
-The room is small and windowless, a lamp over a table, and the Caltech representative sits down at eight and settles in. The escort stays in the corner with a paperback of her own, checking the clock more than she checks him, and brings water mid-morning.
+The room is small and windowless, a lamp over a table, and the Caltech representative sits down early and settles in. The escort stays in the corner with a paperback of her own, checking the clock more than she checks him, and brings water mid-morning.
 
-By noon he has filled sheets on both sides, most of it his own working: a citation copied out to look up later, a calculation redone by hand to check where it lands, a margin note crossed out and rewritten smaller underneath. Partway through she asks whether he wants lunch and he says yes, eyes still on the page, and it goes cold at his elbow. By two he has stopped turning pages, reading a few paragraphs over and over instead of moving forward. At half past three he sets it down, looks at the wall a while, and picks it back up.
+By noon he has filled sheets on both sides, most of it his own working: a citation copied out to look up later, a calculation redone by hand to check where it lands, a margin note crossed out and rewritten smaller underneath. Partway through she asks whether he wants lunch and he says yes, eyes still on the page, and it goes cold at his elbow. By two he has stopped turning pages, reading a few paragraphs over and over instead of moving forward. Late in the afternoon he sets it down, looks at the wall a while, and picks it back up.
 
 Just before the bell he stands, hands the sheets over, and waits while she reads them.
 
@@ -104,7 +104,7 @@ He shakes her hand and thanks her for the water, and within the month offices pr
 
 ________________
 
-Some of the flagged schools send somebody, and the school says yes to all of them: desks in the long reading room, dining privileges at the tables everyone already eats at, a room to work in with a lockable door, and permission to sit in any class they name, provided they name it in writing two days ahead with a member of staff present. Two requests draw an identical answer every time, the fighting hour and the range.
+Some of the flagged schools send somebody, and the school says yes to all of them: desks in the long reading room, dining privileges at the tables everyone already eats at, a room to work in with a lockable door, and permission to sit in any class they name, provided they name it in writing beforehand with a member of staff present. Two requests draw an identical answer every time, the fighting hour and the range.
 
 They arrive within a week of each other in the winter, from Yale, Stanford, Duke, Caltech, MIT and others, and by the first evening they have found each other at the end of the visitors' table comparing notes the way scouts do on a prospect.
 
@@ -156,7 +156,7 @@ Nadia's answers come in mostly in the small hours. They live at the back of a no
 
 Somewhere in February she stops reading the count out at dinner, and when her mother asks on the phone whether anybody has called, Nadia starts getting to the shop phone first.
 
-Ruth asks her in the common room in March, with only Chloe else in the room, and gets a number two weeks old, and then the true figure.
+Ruth asks her in the common room in March, with only Chloe else in the room, and gets a stale number, and then the true figure.
 
 "A hundred and ninety," Ruth says. "Against how many that answered?"
 
@@ -182,7 +182,7 @@ Ruth's own advice is to send an application twice and change one thing, so in th
 
 ________________
 
-Decisions arrive across March rather than all at once, the part everyone braced for wrong: each school posts at whatever hour it decides, and the common room turns into somewhere people go to watch each other's phones. Ruth's first lands late on a Tuesday afternoon, in the middle of something else, while Kavi stays up past midnight for a posting at seven the next morning instead, and is awake for it too, phone in hand before he's out of bed.
+Decisions arrive across March rather than all at once, the part everyone braced for wrong: each school posts at whatever hour it decides, and the common room turns into somewhere people go to watch each other's phones. Ruth's first lands late on a Tuesday afternoon, in the middle of something else, while Kavi stays up past midnight for a posting first thing the next morning instead, and is awake for it too, phone in hand before he's out of bed.
 
 Ruth gets MIT and calls home, where her mother puts her on speaker so her father can hear from the next room and both of them talk over each other to ask the next question first. Kavi gets MIT, Caltech and Chicago, and is thinking about the next item on his list before dinner, while Sam gets all but one of his and wants to know, immediately, what happened to the last.
 
@@ -190,7 +190,7 @@ Odile gets in everywhere. The rest of the year hears about it days later, when P
 
 Chloe gets all but two.
 
-Outside her window the snow along the path has gone soft and grey, the last of it, weeks off the end of term, and she sits on the floor of her room with the letters spread in two uneven rows, the ones that start with we are pleased and the two that don't. The twelfth she reads a second time before she believes the count, then a third, checking the name on the envelope against the name on the letter inside, in case some office has put files together that both say Kessler.
+Outside her window the snow along the path has gone soft and grey, the last of it, weeks off the end of term, and she sits on the floor of her room with the letters spread in uneven rows, the ones that start with we are pleased and the two that don't. The twelfth she reads a second time before she believes the count, then a third, checking the name on the envelope against the name on the letter inside, in case some office has put files together that both say Kessler.
 
 The arithmetic has gone wrong somewhere, and not in the letters, because the middle of a year gets the state school. She has twelve.
 

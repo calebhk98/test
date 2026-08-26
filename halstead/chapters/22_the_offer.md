@@ -200,7 +200,7 @@ Her mother's voice, when it comes back, has the edge she uses reading the fine p
 
 "I know, I heard you both say it, and I'm not asking either of you to agree with it."
 
-"But it's your name on the letter, and it was your name on the first one too, eleven years ago, and it's still the same name now." A pause, then, quieter. "Okay?"
+"But it's your name on the letter, and it was your name on the first one too, all that time ago, and it's still the same name now." A pause, then, quieter. "Okay?"
 
 "Okay," Chloe says.
 

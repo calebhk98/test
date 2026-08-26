@@ -196,7 +196,7 @@ There is a pause of a second and a half.
 
 "Good luck," Sinclair says.
 
-Students come out of a dozen rooms at once and the shouting in the main stairwell comes up through the floor into Chloe's feet, because thirty-odd adults need doors to get anywhere and there are only six, whereas the students know which third floor door hangs loose in its frame, which second floor cupboard has a window in the back of it, where the bannister has a gap you can get an arm through, and which kitchen door makes a noise when it opens.
+Students come out of a dozen rooms at once and the shouting in the main stairwell comes up through the floor into Chloe's feet, because thirty-odd adults need doors to get anywhere and there are only a few, whereas the students know which third floor door hangs loose in its frame, which second floor cupboard has a window in the back of it, where the bannister has a gap you can get an arm through, and which kitchen door makes a noise when it opens.
 
 People say afterward that Ruth ran the east stairwell, giving orders from the first thirty seconds with everybody on those stairs doing what she told them, while in minutes Nadia takes the third floor and splits it: two on each stair head, three hauling crates of markers and paint up from the second floor so that every landing keeps its own kit, the rest told where to stand and stay. Students take three instructions from her in a row before any of them thinks about it.
 

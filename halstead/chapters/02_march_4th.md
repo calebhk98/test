@@ -2,7 +2,7 @@
 
 *March 2012 – June 2012*
 
-The waiting room has a fish tank in it with no fish, only water, the little plastic castle, the bubbles coming up in a line from the filter, so Chloe puts both hands on the glass near the gravel to look along the bottom, in case they are under something.
+The waiting room has a fish tank with no fish in it, only water, the little plastic castle, the bubbles coming up in a line from the filter, so Chloe puts both hands on the glass to look along the gravel, in case they are under something.
 
 The gravel is only gravel.
 
@@ -10,43 +10,37 @@ The gravel is only gravel.
 
 "Beats me, honey," her mom says, and the pen keeps going down the page, which Chloe decides is a true answer.
 
-Because the form the office gave her mom runs to several pages, Chloe comes back to stand at the arm of the chair and watch her check boxes all the way down a column, then start another column on the back of the sheet.
-
-Chloe leans in to see the boxes better, her mom shifts the clipboard half an inch to keep the light on it, then partway down the second page goes back to change a box she has already checked.
+The form the office gave her mom runs to several pages, so Chloe comes back to the arm of the chair and watches her check boxes down a column, then start another on the back of the sheet. Her mom shifts the clipboard half an inch to keep the light on it, then partway down the second page goes back to change a box she has already checked.
 
 "What's it about, all those boxes?"
 
-"It's about you, mostly just how you're doing at school and how you feel about stuff, so the people here get a fuller picture of you than a report card would give them."
+"It's about you, mostly how you're doing at school and how you feel about stuff, so the people here get a fuller picture of you than a report card would."
 
 "What about me, though, like what part of me? Because apparently you know how I feel about stuff, and that's the first I've heard of it."
 
-Her mom stops, looks at the clipboard, then at Chloe, then puts the pen down on top of the papers.
+Her mom stops, looks at the clipboard, then at Chloe, then puts the pen down on the papers.
 
 "I'm doing my best guess on some of these," she says, "because I only get to see the outside of you, so I'd rather guess honestly than skip a question."
 
-Her dad is at work, because that morning he had tried to move two things and managed neither, standing in the kitchen with his keys already in his hand, saying sorry again and again, until her mom told him it's fine, it's a Wednesday.
+Her dad is at work. That morning he tried to move two things and managed neither, standing in the kitchen with his keys in his hand, saying sorry until her mom told him it's fine, it's a Wednesday. Chloe had held his sleeve a second longer than the door needed, and not knowing whether this is the kind of appointment you bring a dad to, she reads the waiting room instead.
 
-Chloe had held on to his sleeve a second longer than the door needed to close, and being unsure whether this is the kind of appointment you bring a dad to, she reads the waiting room instead.
+There is a poster about handwashing in English with the Spanish underneath, which she tries first.
 
-There is a poster about handwashing, in English on one side and Spanish on the other, the Spanish side taking a while because she tries it first, plus a magazine about powerboats, most of the words past her, which she reads anyway, through to the prices at the back.
-
-There is also a sign that says NO CELL PHONES with a picture of a phone beneath it and a red line through the phone. The picture must be there for the people who can't read the sign, and the people who can't read the sign are looking at a phone with a line on it. Chloe puts her chin down on the arm of the chair. It is still funny a minute later, when she is looking at something else.
+There is also a sign that says NO CELL PHONES with a picture of a phone under it and a red line through it. The picture is for the people who can't read the sign, and the people who can't read the sign are looking at a phone with a line on it. Chloe puts her chin on the arm of the chair, and it is still funny a minute later, when she is looking at something else.
 
 \---
 
-Dr. Prentice, the psychologist, has a beard and a room with a small table in it, more like somebody's kitchen than an office, with no bed and no paper, only a box of tissues, a bin of blocks, and a window whose blinds are halfway down over the parking structure.
+Dr. Prentice, the psychologist, has a beard and a room with a small table in it, more like somebody's kitchen than an office: a box of tissues, a bin of blocks, and a window with the blinds halfway down over the parking structure.
 
-There is a stack of printed sheets squared up by his elbow, and the words at the top of the first one read RECORD FORM upside down, which is how she reads them, before his forearm comes across and covers everything under the top line.
+There is a stack of printed sheets squared up by his elbow, the top one reading RECORD FORM upside down, which is how she reads it, before his forearm comes across and covers everything under that line. Beside it is a silver watch with a button worn into a dip where his thumb goes.
 
-Beside the stack there is a silver watch with a button on it and a worn dip in the button where his thumb goes.
+He tells her she can call him Ben, asks what he should call her, and sits down on a chair no bigger than hers.
 
-After he tells her she can call him Ben and asks what he should call her, he sits down across the table on a chair no bigger than hers.
+"We're going to do some stuff that's kind of like games, and some of it is easy and some is really hard, and the hard ones are supposed to be hard, so missing them is part of the design."
 
-"We're going to do some stuff that's kind of like games, and some of it is easy while some of it is really hard, and the hard ones are supposed to be hard, so missing one is part of the design."
+"Okay, but is it a test with a grade at the end, and can you fail it, because what happens if I get all of them wrong?"
 
-"Okay, but is it a test, a real test with a grade at the end, and can you fail it, because what happens if I get all of them wrong?"
-
-"No, and there is no passing number either," he says straight away, the answer already lined up. "I am watching how you do things rather than whether you get them, and there is no grade at the end of it either."
+"No, and there is no passing number either," he says straight away, the answer already lined up. "I am watching how you do things rather than whether you get them."
 
 Chloe looks at him hard and files the last part with everything else adults say when they want you to sit still.
 
@@ -80,7 +74,7 @@ He puts the lid on the bin.
 
 \---
 
-Then the questions turn into pairs of things, where she has to say what the two of them share, the pairs getting further apart as they go.
+Then the questions turn into pairs of things and what the two of them share, the pairs getting further apart as they go.
 
 "What do a boat and a car have in common?"
 
@@ -90,11 +84,11 @@ Then the questions turn into pairs of things, where she has to say what the two 
 
 "They're both amounts of time, and they're both amounts of time that people picked, because an hour isn't really a thing out there, it's just where we decided to cut it."
 
-Chloe sits up a little, waiting to find out if that counts extra, while Ben stops writing, then writes for longer than usual, and what he writes goes sideways down the white edge of the page where the boxes have run out.
+Chloe sits up a little, waiting to find out if that counts extra. Ben stops writing, then writes for longer than usual, sideways down the white edge of the page where the boxes have run out.
 
-He keeps giving her pairs until he turns the sheet over and finds the end of them. Then he gets up, opens a drawer, and comes back with a different book, thicker, a different colour down the spine, and reads pairs to her out of that one off a page she can see the shape of and not the words on.
+He keeps giving her pairs until he turns the sheet over and finds the end of them. Then he opens a drawer and comes back with a thicker book, another colour down the spine, and reads pairs out of that one, off a page she can see the shape of and not the words on.
 
-Those go on a while. When he stops he puts that book back in the drawer instead of on the table with the rest of it.
+Those go on a while. When he stops he puts that book back in the drawer instead of on the table with the rest.
 
 \---
 
@@ -104,9 +98,7 @@ They keep getting longer, so she holds eight going forwards and six going backwa
 
 \---
 
-Then a booklet stands up between them with pictures in rows, and she has to pick the ones that belong together, something from the top row and something from the bottom, and all she has to do is put her finger on them.
-
-There is no watch for this one, and his thumb stays where it is.
+Then a booklet stands up between them with pictures in rows, and she has to pick the ones that belong together, something from the top row and something from the bottom. There is no watch for this one, and his thumb stays where it is.
 
 She points at the boot and the glove.
 
@@ -114,11 +106,11 @@ She points at the boot and the glove.
 
 "They're the covers for the ends of you."
 
-The rows get harder, which she can tell because the things in them stop being things you can hold, and she goes through them at the speed he can turn the page.
+The rows get harder, which she can tell because the things in them stop being things you can hold, and she goes at the speed he turns the page.
 
 \---
 
-Then there's a sheet with a key along the top, a star and a circle and a triangle and a cross and a shape like a house, and inside each of them a different little mark, a line standing up, a line lying down, a ring, two dots. Under the key the same shapes run across the page in rows with nothing in them, and she has to put the right mark in each one.
+Then there's a sheet with a key along the top: a star, a circle, a triangle, a cross, a shape like a house, each with a different little mark inside it, a line standing up, a line lying down, a ring, two dots. Under the key the same shapes run across the page in empty rows, and she has to put the right mark in each one.
 
 She looks at the key once.
 
@@ -128,7 +120,7 @@ Halfway down the second row she stops and looks up, because he only said to put 
 
 She goes back to doing it neat.
 
-He says stop, takes the pencil out of her hand and turns the sheet face down before she can count the rows, though she knows about how much a page is, and her face goes hot again, not the good kind this time.
+He says stop, takes the pencil out of her hand and turns the sheet face down before she can count the rows, though she knows about how much a page is, and her face goes hot, not the good kind.
 
 "Was that a good one, or is that a question you skip?"
 
@@ -136,23 +128,23 @@ He says stop, takes the pencil out of her hand and turns the sheet face down bef
 
 \---
 
-Chloe asks to use the bathroom first, which turns out to be through a door she had taken for a closet, to wash her hands longer than she needs to just for something to do with them, after which the juice comes in a paper cup out of a refrigerator and she drinks about half of it while Ben writes.
+Chloe washes her hands in a bathroom that turns out to be behind a door she had taken for a closet, and the juice comes in a paper cup out of a refrigerator, which she drinks half of while Ben writes.
 
 "On the page with the marks. You stopped in the middle of a row."
 
 "I was seeing if it had to be neat."
 
-Ben turns back a sheet in his stack, draws a line through something, writes again beside it, and comes forward to where he was.
+Ben turns back a sheet in his stack, draws a line through something, writes again beside it, and comes forward again.
 
 "What do you do when you finish your work early?"
 
 "Nothing, mostly, because anything I could start is a thing I would have to put away again."
 
-He sits with that and lets the room stay quiet instead of moving on to something easier, long enough that Chloe fills it herself.
+He lets the room stay quiet long enough that Chloe fills it herself.
 
-"I look out the window at the parking lot, because there's people in it doing stuff, and there was a guy who put his coffee on the roof of the car and drove off with it still up there, and it went off at the turn out of the lot." She looks at the cup. "And then Mrs. Aldana asked me a question and I didn't know there was one."
+"I look out the window at the parking lot, and there was a guy who put his coffee on the roof of his car and drove off, and it went off at the turn." She looks at the cup. "And then Mrs. Aldana asked me a question and I didn't know there was one."
 
-"How long is it, usually, between when you finish and when everybody else does?"
+"How long is it, usually, between when you finish and everybody else does?"
 
 "Ages, a long time, like a really long time."
 
@@ -160,13 +152,13 @@ He sits with that and lets the room stay quiet instead of moving on to something
 
 "No, less than that." Chloe works it out against the blocks and the juice and the rooms. "Half of it, like half of it, but every day."
 
-This time, as Ben writes that down, she watches him do it, and it takes him longer than the other ones.
+This time she watches him write it down, and it takes him longer than the other ones.
 
 \---
 
-Then it's words, and he asks them the same way every time, so that the easy ones and the hard ones sound identical coming out of him.
+Then it's words, and he asks them the same way every time, so the easy ones and the hard ones sound identical coming out of him.
 
-He asks her what a bicycle is and she tells him about the wheels and the pedals, then what a hospital is for, what it means to join something, then what stubborn means, which snags her, because there are two in her head and one is about people and one is about a jar.
+He asks what a bicycle is and she tells him about the wheels and the pedals, then what a hospital is for, then what stubborn means, which snags her, because there are two in her head, one about people and one about a jar.
 
 "It's when somebody keeps doing the thing they were doing even after you show them why not to."
 
@@ -174,21 +166,19 @@ He asks her what a bicycle is and she tells him about the wheels and the pedals,
 
 "Something that isn't hurting you but won't stop."
 
-The words get longer and then they get stranger, and one of them stops her cold, and she tells him so, then another stops her too, so she tells him she would rather go back to the first kind, but he says that's not how it works, and puts the next word to her anyway. That one goes past her as well, and the one after it, and then he closes the booklet.
+The words get longer and then they get stranger, and one of them stops her cold, and she tells him so, then another stops her too, so she says she would rather go back to the first kind. He says that's not how it works, puts the next word to her anyway, and that one goes past her too, and then he closes the booklet.
 
 \---
 
-Then the numbers come back with letters mixed into them, and he gives her the rule before he starts, the way he gives every rule before he starts: the numbers first, in counting order, then the letters, in alphabet order, whichever way round they went in.
+Then the numbers come back with letters mixed into them, and he gives her the rule before he starts, the way he gives every rule: the numbers first in counting order, then the letters in alphabet order, whichever way round they went in.
 
-The first string arrives and she hands it back the way it arrived, because that is what the last game wanted. Ben writes. She does the same with the next.
-
-Before the one after that he says the rule again, in exactly the voice he said it in the first time, and she hears all of it, and the back of her neck goes hot.
+The first string arrives and she hands it back the way it arrived, because that is what the last game wanted. Ben writes. She does the same with the next, and before the one after that he says the rule again, in exactly the voice he said it the first time, and she hears all of it, and the back of her neck goes hot.
 
 After that she sorts them in her head and gives them back in halves, and they get long before they stop.
 
 \---
 
-Then the standing booklet comes back with a different kind of page in it, a square of pictures with a piece of it cut out and a row of pieces along the bottom, and she puts her finger on the piece that belongs.
+Then the standing booklet comes back with a different kind of page, a square of pictures with a piece cut out of it and a row of pieces along the bottom, and she puts her finger on the piece that belongs.
 
 She points. He turns the page. She points. He turns the page.
 
@@ -196,7 +186,7 @@ The pieces stop being shapes and start being rules about shapes, and she keeps p
 
 \---
 
-Then it's the kind of question where he gives her a situation and she has to say why people do the thing they do about it.
+Then it's the kind of question where he gives her a situation and she has to say why people do what they do about it.
 
 "Why do people wash their hands before they eat?"
 
@@ -204,7 +194,7 @@ Then it's the kind of question where he gives her a situation and she has to say
 
 "Tell me another reason."
 
-Chloe goes back over what she said and can't find the part of it that was wrong, so she gives him the same thing with more of it: the doorknobs, and the ground, and the underneath of the table at school. Ben writes.
+Chloe goes back over what she said and can't find the part that was wrong, so she gives him the same thing with more of it: the doorknobs, and the ground, and the underneath of the table at school. Ben writes.
 
 "Why do people keep their money in a bank instead of at the house?"
 
@@ -214,25 +204,23 @@ Chloe goes back over what she said and can't find the part of it that was wrong,
 
 She says it again with a person climbing in a window in it.
 
-They keep coming, wallets on the ground and smoke at night and why there are lines painted on a road, and every answer she gives seems to be the right answer, so she stops trusting the questions and watches the pen instead, and the pen moves the same amount whatever she says.
+They keep coming, wallets on the ground and smoke at night and lines painted on a road. Every answer she gives seems to be the right answer, so she stops trusting the questions and watches the pen instead, and the pen moves the same amount whatever she says.
 
 \---
 
-There is another timed sheet after that, little symbols in rows where she has to look at the ones on the left and then put a line through a box on the right for yes or no, and one line is one line, which is better, and it still isn't fast.
+There is another timed sheet, little symbols in rows where she looks at the ones on the left and puts a line through a box on the right for yes or no, and one line is one line, which is better, and it is still slow.
 
-Then a page with animals and shoes and cups scattered all over it, where she crosses out every animal, one stroke each. She gets to the bottom of the page and looks up, and Ben still has his thumb on the watch, and there is time left over, which hasn't happened yet today.
+Then a page with animals and shoes and cups all over it, where she crosses out every animal, one stroke each. She gets to the bottom and looks up, and Ben still has his thumb on the watch, and there is time left over, which hasn't happened yet today.
 
-Then pictures come with a piece missing and she has to say what's missing, including a picture where the missing piece is a shadow, which she thinks is unfair and gets right anyway.
-
-By then her stomach is loud enough that she covers it with her forearm, and she keeps switching which leg she is sitting on, while between pages he asks whether she's tired, she says no, then he asks again after the next page.
+By then her stomach is loud enough that she covers it with her forearm, and she keeps switching which leg she is sitting on. He asks whether she's tired, she says no, then asks again after the next page.
 
 "You can say yes, you know."
 
-"I know, but if I say yes, do we stop, or do we just do a different one?" Chloe asks, and he lets it go, telling her they will switch to something easier for a bit.
+"I know, but if I say yes, do we stop, or do we just do a different one?" Chloe asks, and he lets it go and switches to something easier for a bit.
 
 At the end he caps his pen and puts the last card back in its box. "You worked really hard."
 
-Chloe opens her mouth to ask whether she did good, then presses her lips together, because that question is off limits to children, so she asks the question underneath it instead.
+Chloe opens her mouth to ask whether she did good, then presses her lips together, because that question is off limits to children, and asks the question underneath instead.
 
 "The one with the marks, does everybody finish it?"
 
@@ -242,11 +230,11 @@ Ben looks at her, longer than usual, before he answers.
 
 \---
 
-Then he talks to her mom, and Chloe waits in the corridor on a chair too tall for her feet, holding her jacket in her lap, because there is nowhere else to put it, and her stomach makes a noise loud enough that she checks whether the door heard it too.
+Then he talks to her mom, and Chloe waits in the corridor on a chair too tall for her feet, holding her jacket in her lap.
 
-The door is open a few inches, and through the gap her mom's foot keeps moving, heel up, heel down, while Chloe picks at the zipper pull on her jacket, not really trying to open it, just something to do with her hands while she listens.
+The door is open a few inches, and through the gap her mom's foot keeps moving, heel up, heel down, while Chloe works the zipper pull on her jacket, something to do with her hands.
 
-Only pieces of it reach her, her mom's voice saying the teacher says, then Ben's voice running on, full of words bigger than her, until a piece of it comes through clean, because he has turned toward the door.
+Only pieces reach her, her mom's voice saying the teacher says, then Ben's voice running on, full of words bigger than her, until one comes through clean, because he has turned toward the door.
 
 "I'm not seeing what the school is seeing, because she finishes in the first few minutes and then she's got the rest of the hour left over and nowhere to put it."
 
@@ -254,17 +242,17 @@ Only pieces of it reach her, her mom's voice saying the teacher says, then Ben's
 
 "She's completely fine, as far as I can tell from what's actually going on with her."
 
-Her mom makes a sound, and Chloe can't tell what kind it is from out here, since it could be either kind.
+Her mom makes a sound, and Chloe can't tell from out here which kind it is.
 
 "There are a couple of things where she's slower than most kids her age, and the biggest is copying, hand-and-eye, and that part's real, you'll see it in her handwriting for years, and it's also not what anybody in that building is calling you about."
 
 "No."
 
-"Right, and here is the thing I want you to understand about the report when it comes, because it's going to have one big number on the front of it, a single composite that averages two very different pictures into one score, and that number is going to be lower than it should be, low enough that a school skimming for a label could miss her entirely. The talking-and-reasoning part of this, she's at the top of it, and the speed part, she's ordinary, so when you average those together you get a number that says bright kid, and bright kid undersells the room I sat in this morning."
+"Right, and here is the thing about the report, which is going to have one big number on the front, a composite that averages two very different pictures into a single score, and on the talking and reasoning she's at the top of it, and on the speed she's ordinary, so what comes out says bright kid, and bright kid undersells the room I sat in this morning."
 
 "How far at the top of it?"
 
-"That is the part I can't give you, because on a couple of them she got to the end of what the form has for her age and I kept going a while with a different one, and none of that goes in the score. What I can tell you is that the form ran out before she did."
+"That is the part I can't give you, because on a couple of them she got to the end of what the form has for her age and I kept going with a different one, and none of that counts. The form ran out before she did."
 
 Chloe shifts on the chair, her feet nowhere near the floor.
 
@@ -274,11 +262,11 @@ Chloe shifts on the chair, her feet nowhere near the floor.
 
 "Then what is it I am supposed to do with that?" her mom says.
 
-"The lever here is the school, because that's where the forty minutes are, so I can write it all up and you can walk it in there, and some of them do move on a report like that."
+"The lever is the school, because that's where the empty hour is, so I can write it all up and you can walk it in there, and some of them do move on a report like that."
 
 "And the rest of them, what do they do with a report like that?"
 
-"The rest of them put it in the folder." He says it without any particular feeling about it. "Is there a gifted program in the building?"
+"The rest of them put it in the folder." He says it without any particular feeling. "Is there a gifted program in the building?"
 
 "It starts in third grade, that's what they told us the one time we asked."
 
@@ -290,15 +278,15 @@ Chloe looks at her shoes and holds still, in case moving is the thing that makes
 
 \---
 
-In the car her mom puts both hands on the wheel, waits, checks the mirror, checks it a second time, and starts it.
+In the car her mom puts both hands on the wheel, checks the mirror, checks it a second time, and starts it.
 
 "So you're all good," she says, pulling out of the parking spot. "Everything's great, he thinks you're doing just fine."
 
-Chloe says okay, her seatbelt across her with both hands holding it away from her neck.
+Chloe says okay, both hands holding the seatbelt away from her neck.
 
 "Do you want to know what he said?"
 
-Chloe pulls the seatbelt out another inch and lets it snap back against her collarbone, against the rules, which her mom lets go, because there is a version of this where she finds out and a version where she doesn't, and she can't work out fast enough which is better.
+Chloe pulls the seatbelt out and lets it snap back against her collarbone, against the rules, which her mom lets go. There is a version of this where she finds out and a version where she doesn't, and she can't work out which fast enough.
 
 "No," she says.
 
@@ -310,7 +298,7 @@ Her mom looks over at her at the red light, for longer than the light.
 
 "In there, through the door."
 
-"It's a number for how you did next to other kids your age, like if you're the tallest in your class, that's a high percentile for height." Her mom pulls off when the car behind them does something with its horn. "It's not a big deal, everybody gets one."
+"It's a number for how you did next to other kids your age, like the tallest in your class being a high percentile for height." Her mom pulls off when the car behind them does something with its horn. "It's not a big deal, everybody gets one."
 
 "So what was mine, then, if everybody gets one?"
 
@@ -324,24 +312,16 @@ They get ice cream, unheard of on a Wednesday, and she eats it in the car, where
 
 After the appointment, everything stays the same.
 
-On March 5th she goes back and it is the same worksheet, the problems sitting after the one that tells you how it works, and Bryce Dolan still counting on his fingers, while the parking lot stays a parking lot, the man with the boxes a one-morning-only thing.
-
-Mrs. Aldana keeps grading at her desk, the table goes back to worksheets without a word about it, and when she asks Chloe once, in April, whether everything is all right at home, Chloe says yes.
+On March 5th it is the same worksheet, the problems sitting after the one that tells you how it works, and Bryce Dolan counting on his fingers. Mrs. Aldana keeps grading at her desk, and when she asks Chloe once, in April, whether everything is all right at home, Chloe says yes.
 
 Some days she asks to play four square and gets a round in before the ball goes somewhere else without her, so she sits on the wall with her library book until the bell instead of asking again.
 
-What she works out that month is bigger than the pencil trick: finish first, sit still, keep your answers short, and the room leaves you alone, the teacher included.
-
-It works on a Monday and a Thursday, in reading and in math, every day until the end of the year, and all she knows about it is that being quiet is what makes her disappear.
+What she works out that month is bigger than the pencil trick: finish first, sit still, keep your answers short, and the room leaves you alone, the teacher included. It works in reading and in math, every day until the end of the year.
 
 \---
 
 She still knows all twenty-eight of their names, and not one of them has needed to learn hers. By June, Chloe is quiet, she does what she's told, and she eats lunch by herself.
 
-On the last day they clean out their desks, where she finds a handful of pencils, somebody else's bracelet, a permission slip from October, and the library book, which she takes home and returns that afternoon, well ahead of the summer due date.
+On the last day they clean out their desks, where she finds a handful of pencils, somebody else's bracelet, a permission slip from October, and the library book, which she returns that afternoon, ahead of the summer due date. Kayleigh Burns hugs everybody at the door, while Chloe watches from beside her desk with both straps of her backpack already on.
 
-Kayleigh Burns hugs everybody at the door, while Chloe watches from beside her own desk, both straps of her backpack already on, then puts her chair up on the desk as told and gets in the car line.
-
-Her report card comes in an envelope a week later, saying she is meeting expectations in all areas, and under comments, in the box where the teacher writes, it says Chloe is a pleasure to have in class.
-
-Her mom reads it twice, then puts it on the refrigerator under the magnet shaped like a strawberry, where the sticky note used to be.
+Her report card comes in an envelope a week later, saying she is meeting expectations in all areas, and under comments, where the teacher writes, it says Chloe is a pleasure to have in class. Her mom reads it twice, then puts it on the refrigerator under the magnet shaped like a strawberry, where the sticky note used to be.
