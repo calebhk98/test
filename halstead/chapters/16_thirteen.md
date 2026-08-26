@@ -120,6 +120,8 @@ Bex has the day out loud before the bus is off the gravel, the hardware place fi
 
 "Walking the last bit in the dark, which is the whole reason we're on the earlier bus, so that's settled," Bex says, and goes down the aisle holding the rail to tell the rest of them.
 
+Chloe has the seat behind the driver and keeps it the whole way in, and in town she does the hardware place while the rest of them are still on the pavement outside settling the order of the afternoon.
+
 The plan works, all of it, including the food.
 
 Formal epistemology starts with a sentence on the board, *I know that I am sitting in this room*, and the professor spends the hour asking what would have to be true for that to count as knowledge, so by the end most of the room doubts it knows anything at all. "Justified plus true still lets a lucky guess through," she says, moving to the next slide before anyone has finished writing it down, and Chloe stands in the corridor afterwards for a minute with her bag still open before she goes on to German.
@@ -168,7 +170,9 @@ Nadia turns the napkin round toward Chloe with a finger.
 
 "It's not a date, it's a plate."
 
-"A plate," Iyad says, over the end of it, at the volume of the far end of the table. "That's what it is, that's a registration off the system itself, sitting right in the middle of the thing, and everybody's been reading the ends of it and nobody's looked at the middle."
+"A plate," Iyad says, over the end of it, at the volume of the far end of the table. "That's what it is, that's a registration off the system itself, sitting right in the middle of the thing, and everybody's been reading the ends of it and nobody looked at the middle, which is where I went first. And Chloe's had it a while and she'll not say, because she never says until she's certain, and she's never certain."
+
+The far end takes that up and keeps it, and Sam laughs into his water, and Priya wants to know whether anybody is going to answer her about the live system.
 
 Nadia waits for him to finish.
 
@@ -202,4 +206,6 @@ The cuts are hers, and he shows her the saw on the first morning and watches her
 
 "Chloe." He is already reaching for the next board, his attention on the next cut. "Not one person alive is going to measure these steps, and this stays between the two of us."
 
-They finish on a Tuesday at the end of July and the steps hold. Her mother comes out, stands on them, bounces on the top step, says they are a great improvement on the old lot, then goes back inside.
+They finish on a Tuesday at the end of July and the steps hold. Her mother comes out and stands on them, and bounces on the top step twice.
+
+"Great improvement on the old lot," she says, and goes back inside.

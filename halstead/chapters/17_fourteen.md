@@ -52,9 +52,9 @@ Self defense is three rounds an hour, with one person standing in the middle whi
 
 "You're ten seconds off a minute and you're doing pairs."
 
-Pairs take the rest of the hour, and then she finds Ruth at the sinks and acts out the hold again with her hands, and then Sam, and then a boy from the year below who was standing right there when it happened. Bex comes in on the end of that, and when the next person through the door asks what happened Bex tells her, fifty seconds and the third round and the knee across the shin at the finish, all of it in order and all of it right, and Chloe stands at the sink with her hands under the water and lets it run.
+Pairs take the rest of the hour, and then she finds Ruth at the sinks and acts out the hold again with her hands, and then Sam, and then a boy from the year below who was standing right there when it happened. Bex comes in on the end of that, and when the next person through the door asks what happened Bex tells her, fifty seconds and the third round and the knee across the shin at the finish, all of it in order and all of it right, and then what Chloe should have done with that shin. By the week after, the round the year has is a round Bex called from the edge of the mat. Chloe stands at the sink with her hands under the water and lets it run.
 
-Seven of the year below go on her teaching list in September while Marek goes on somebody else's, and she reads that off the noticeboard on the first morning, catches herself grinning at it, and reads the other teacher's list all the way to the bottom before she takes the stairs at a run going up. Her hour with them is differential equations and the analysis that runs beside it, which she was doing at their age, taught by the man who teaches them the other hours of it now, and it goes well enough until November, when all of them get the same question wrong in the same way.
+Seven of the year below go on her teaching list in September while Marek goes on somebody else's, and she reads that off the noticeboard on the first morning, reads the other teacher's list all the way to the bottom, and takes the stairs at a run going up. Her hour with them is differential equations and the analysis that runs beside it, which she was doing at their age, taught by the man who teaches them the other hours of it now, and it goes well enough until November, when all of them get the same question wrong in the same way.
 
 Going through the papers twice takes her back to her own notes from the third week, and there it is in her own handwriting: she taught them the ordering reversed, all of them learned it the way she gave it to them, and all of them arrived exactly where she had pointed them, and because everything before the test came out the same either way round, it sat there for months.
 
@@ -64,7 +64,7 @@ Going through the papers twice takes her back to her own notes from the third we
 
 "No," Chloe says, wiping the board down with her back to them, and she stops halfway across it and turns round. "Your answers all follow from what I taught you, and what I taught you was wrong. You'll get a different one in two weeks and it'll be harder, because by then you'll actually have it."
 
-Iyad has it at dinner that week with her not at the table, telling the far end that she went in and told the room she had given it to them backwards herself, and then binned the test and set them a harder paper, and he tells it well and he tells it warmly. It gets back to her on the Saturday from a girl in the year above, who says at the sinks that it was a decent thing to do, and Chloe says it was the ordinary thing to do and nobody would have done anything else with it.
+Iyad has it at dinner that week with her not at the table, telling the far end that she taught the year below a whole term of it backwards, all of them, the same error the whole way down and not a single person catching it, which is correct and is the part worth having. He gets round most of the tables with it by the Saturday. What comes back to her at the sinks from a girl in the year above is the question, whether it is true she taught the lot of them backwards, and Chloe says yes, and the girl says she thought so, and goes.
 
 Japanese moves faster at the front than she expects, so that by the end of the fourth week she is further along than she has ever been at that point in a language, and on a Wednesday afternoon she digs out her own notes on Russian and on Mandarin to check whether that is true, and it is. The kanji arrive with most of their meaning already on them, but then the grammar starts, and the grammar is unlike anything behind her on the list, so by November she is putting half an hour a night into it and moving slowly, and she is still ahead of where Mandarin had her at that stage.
 
@@ -204,7 +204,9 @@ Ruth puts her fork down and leaves it down. "He'd think about it, when he had a 
 
 "He's got a lake, Kavi. A lake and a boat shed," Priya says.
 
-Ruth takes it up with him directly on Friday, and Sam hears her out with his chin on his hand and thanks her for it before he takes the girl to watch the twelves do paintball. The two of them last until March, when Priya says the girl ended it and Sam says they agreed, while Odile, who was actually in the room, says that both of them have got the day wrong.
+Ruth takes it up with him directly on Friday, and Sam hears her out with his chin on his hand and thanks her for it before he takes the girl to watch the twelves do paintball. The two of them last until March, when Priya says the girl ended it and Sam says they agreed, and Odile was actually in the room.
+
+"You've both got the day wrong, and I was standing right there."
 
 ---
 

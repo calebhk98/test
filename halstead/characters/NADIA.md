@@ -5,9 +5,37 @@ to build the thing an actual person uses rather than the thing other companies
 want to buy. Everything she feels is in the room with her. Almost none of it is
 in her adjectives.
 
-**Age span:** roughly 15 to 21 | **MBTI:** ESTJ (a writing aid, not a claim) | **IQ:** genius range by outside norms, unremarkable in the only room that has ever measured her
+**Age span:** roughly 15 to 21 | **MBTI:** ESTJ (a writing aid, not a claim) | **IQ:** 166, and she has never gone looking for the figure because she cannot think what she would do with it
 
 **Engine:** cannot leave a broken mechanism alone in a room she is standing in.
+
+## Type and number
+
+**Four readings, all identical.** Four people typed this cast separately, each asked to
+avoid duplicating anyone else's answer, and Nadia came back the same from every direction,
+which for a character this easy to mistake for cold is worth recording.
+
+| reading | type | what that reader was looking at |
+| :-- | :-- | :-- |
+| first | ESTJ | pragmatic fixer and protector; confrontation and overwork as the whole defence |
+| second | ESTJ | practical, tough, shows up at two in the morning, self-sufficient past the point of sense |
+| third | ESTJ | fills every minute with work so she never has to sit in the silence |
+| house | ESTJ | the same |
+
+**Primary: ESTJ.** The agreement is the note. Every reader independently saw the same
+thing: an executive temperament pointed at whatever is broken in the room she is standing
+in, running on duty rather than ambition, and using work the way other people use sleep.
+The third reader's addition is the one to carry — the productivity is doing a second job,
+and the second job is keeping her out of a quiet room.
+
+**IQ 166.** The shape of it: quantitative reasoning and working memory at the ceiling,
+with a specific and unusual strength in holding a system of obligations in her head at
+once — who owes what to whom, what breaks if this fails, what the second-order cost is.
+Verbal comprehension high, fluid reasoning high. Where she is comparatively weak: abstract
+analogy with nothing concrete under it, and any problem posed as a hypothetical she can
+see no reason to care about. Give her the same problem attached to a real business with
+real people in it and she is two standard deviations better at it than she was ten minutes
+earlier, which is a real effect and not an attitude.
 
 ## The thing to get right first
 
@@ -474,6 +502,35 @@ she dropped fast, because most of the work is waiting for the material to be
 ready and she would rather make it ready herself. Gardening lasted one growing
 season and stopped the day it stopped producing anything that needed fixing.
 
+## Frustration and anger
+
+**What frustrates her:** a broken mechanism nobody will own. Not the breakage — the
+shrug. The specific sequence of four people each explaining why it is somebody else's
+department is the thing that gets under her skin fastest and stays there longest.
+
+**The tell, before she says anything:** the sleeves. Everyone who has known her a month
+reads it, and she has no idea she does it. Alongside it, she stops looking at the person
+and starts looking at the object.
+
+**What she does with it:** fixes it herself, and then tells the responsible person exactly
+what it cost, in a sentence with a number in it. The fixing comes first. The conversation
+is a receipt.
+
+**What actually makes her angry:** somebody with power making a weaker person carry the
+cost of their own laziness. Not unfairness in the abstract, which she can argue about
+calmly for an hour. A specific person, in front of her, being made to absorb a specific
+avoidable loss.
+
+**Angry, she gets faster and closer.** She goes to the person, in whatever room they are
+in, alone, and stands, and says the exact thing with a figure attached. Her voice does not
+rise and her sentences get shorter and she does not sit down. Most people find the not
+sitting down worse than shouting.
+
+**How it ends:** when the mechanism changes. That is the only exit. If it changes, she is
+finished with it in the same minute and holds nothing at all. If it does not change, it
+does not end, and she will still be quietly absorbing that cost herself five years later
+and will not have mentioned it to anybody once.
+
 ## Stuck, bored, and wrong in public
 
 The axis the whole cohort is written on, so the nine can be read side by side.
@@ -665,6 +722,34 @@ phone she replies fast and short and drops out of a thread the moment it stops
 being useful, and she is the one who tries to get everybody into the same room
 and keeps trying after it has visibly stopped working. First thing in the
 morning she is awake and moving before she has decided to be.
+
+## Life outside the work
+
+**Terrible television,** watched with total concentration and no irony whatsoever. Long
+running competition shows about people renovating things or being eliminated from things.
+She will not have it interrupted. It is the only hour of the week she is not doing
+anything and she has never questioned why this particular hour works.
+
+**She knows the price of everything** and will tell you what you overpaid for it, unasked,
+years later. This is affection. It has never once been received that way.
+
+**Cars.** Auto mechanics stuck harder than any other elective: she can hear a fault from
+the passenger seat and will name it before the driver has noticed anything. She keeps one
+old vehicle running past the point of economic sense purely because giving up on it feels
+like losing an argument.
+
+**Sentimental about:** the first set of tools she bought with her own money at thirteen.
+She still has them, she keeps them better than she keeps her furniture, and she has quietly
+declined to upgrade any of it.
+
+**At eight** she ran a stall, kept a ledger for it in a school exercise book, and was
+annoyed by how few of the other children understood that the ledger was the interesting
+part.
+
+**At forty** she employs a lot of people, knows all their names and all their children's
+names and both facts are load-bearing, and still opens the mail herself. She has learned
+to take one day off and treats it as a discipline rather than a pleasure. She is still
+sending money home and still not mentioning it.
 
 ## Relationships
 
