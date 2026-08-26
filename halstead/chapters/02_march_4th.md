@@ -110,7 +110,7 @@ The rows get harder, which she can tell because the things in them stop being th
 
 \---
 
-Then there's a sheet with a key along the top: a star, a circle, a triangle, a cross, a shape like a house, each with a different little mark inside it, a line standing up, a line lying down, a ring, two dots. Under the key the same shapes run across the page in empty rows, and she has to put the right mark in each one.
+Then there's a sheet with a key along the top: a star, a circle, a triangle, a cross, a shape like a house, each with a different little mark inside it, a line standing up, a line lying down, a ring, two dots. Under the key those shapes run across the page in empty rows, and she has to put the right mark in each one.
 
 She looks at the key once.
 
@@ -310,7 +310,7 @@ They get ice cream, unheard of on a Wednesday, and she eats it in the car, where
 
 \---
 
-After the appointment, everything stays the same.
+After the appointment, nothing changes.
 
 On March 5th it is the same worksheet, the problems sitting after the one that tells you how it works, and Bryce Dolan counting on his fingers. Mrs. Aldana keeps grading at her desk, and when she asks Chloe once, in April, whether everything is all right at home, Chloe says yes.
 

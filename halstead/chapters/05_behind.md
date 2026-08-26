@@ -172,7 +172,7 @@ At dinner in the third week Kavi says something about the moon being up in the a
 
 "That's just being stuck, then, not lying," Sam says.
 
-"It's not stuck, because stuck is when you can't move," Chloe says, with the roll still in her hand, uneaten. "It's moving the whole time, all the way around us, and it's turning while it does it, at exactly the speed that keeps the same side pointed here."
+"It's not stuck, because stuck is when you can't move," Chloe says, with the roll still in her hand, uneaten. "It's moving the whole time, all the way around us, and it's turning while it does it, at exactly the speed that keeps that side pointed here."
 
 "So it's stuck, whatever you want to call it."
 

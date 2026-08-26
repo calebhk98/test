@@ -278,7 +278,7 @@ That night at dinner she tells them, and it takes about a minute and a half.
 
 "Probably not, because they're still on chapter four, and if somebody else was ahead she'd have taken their book as well, but she only took mine."
 
-"Well, that's the class, though, because they all read it together, so everybody gets to the end on the same day."
+"Well, that's the class, though, because they all read it together, so nobody gets to the end ahead of anybody else."
 
 "I know, that's what she said, but I already finished the whole book on Tuesday, so waiting for everybody else to catch up just feels like the whole week standing still."
 
