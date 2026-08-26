@@ -2,7 +2,7 @@
 
 *April 2023*
 
-Mr. Amberg runs the exit interviews himself, fifteen minutes each, ten or twelve students a day for eight days starting the first Monday of April, and a roster goes up outside the staff office every morning with that day's names in order, a runner coming down from admin to call the next name in when the clock on his desk says it is time. Most of them run the full fifteen minutes, by the staff's own count, even the ones a minute would have covered, and by the sixth day the list needs a second sheet taped below the first, names running off the bottom of the original in his own small, fast handwriting. His own contracts class still meets through the week, the interviews slotted into whatever's left of the day around it, and the second-week test goes out on the Friday at the hour it was always going to go out.
+Mr. Amberg runs the exit interviews himself, fifteen minutes each, a dozen students a day for eight days starting the first Monday of April, and a roster goes up outside the staff office every morning with that day's names in order, a runner coming down from admin to call the next name in when the clock on his desk says it is time. Most of them run the full fifteen minutes, by the staff's own count, even the ones a minute would have covered, and by the sixth day the list needs a second sheet taped below the first, names running off the bottom of the original in his own small, fast handwriting. His own contracts class still meets through the week, the interviews slotted into whatever's left of the day around it, and the second-week test goes out on the Friday at the hour it was always going to go out.
 
 The rest of April carries on exactly as scheduled around it: the twelves still have History at ten every morning, the range still runs its Saturday relays, the forge stays open Thursdays and both Saturday sessions, and lunch still runs from noon to half past, as in any other week in the term.
 
@@ -48,13 +48,13 @@ ________________
 
 Ninety-one names go up in all, and thirteen of them turn into yeses, each settled before the walk back to class is over.
 
-Twelve of the thirteen had already been somewhere in the building, on a floor with a badge on the door, longer than the rest of the year had any reason to know, and all twelve of their names go up inside the first few days. The thirteenth breaks it: he's a boy from the language block, no badge to his name and no floor he's ever had a reason to be on, saying yes anyway and spending the rest of the week asking around, politely and without much luck, to find out what the door is even for.
+Twelve of them had already been somewhere in the building, on a floor with a badge on the door, longer than the rest of the year had any reason to know, and all of their names go up inside the first few days. The last breaks it: he's a boy from the language block, no badge to his name and no floor he's ever had a reason to be on, saying yes anyway and spending the rest of the week asking around, politely and without much luck, to find out what the door is even for.
 
 The eighty saying no go back to their own last weeks of school, final transcripts still to sort out, dorm assignments and travel dates already in the post, the ordinary business of finishing something they'd already half finished before the list ever went up.
 
 ________________
 
-The roster has Nadia at ten past twelve on the Thursday of the first week, between a boy from the materials wing and a girl who has already accepted, back to ask a question about the housing. Nadia spends the ten minutes beforehand in the corridor finishing an application on her phone, the ninth of that particular week. She is in the chair before the runner has finished with the door.
+The roster has Nadia just before lunch on the Thursday of the first week, between a boy from the materials wing and a girl who has already accepted, back to ask a question about the housing. Nadia spends the ten minutes beforehand in the corridor finishing an application on her phone, the ninth of that particular week. She is in the chair before the runner has finished with the door.
 
 "Eleven years," Mr. Amberg says. "Anything for the file."
 
@@ -78,7 +78,7 @@ Amberg writes for a while. "The eighty saying no are going to college in Septemb
 
 The next question comes at the page rather than at her. "How many applications."
 
-"Two hundred and one since November. Thirteen answers. Ten of the thirteen came out of software in the small hours, and one of the ten arrived eight minutes after a form that took me fifty."
+"Two hundred and one since November. Thirteen answers. Ten of them came out of software in the small hours, and one of the ten arrived eight minutes after a form that took me fifty."
 
 "And the three that were people."
 
@@ -108,7 +108,7 @@ That night she goes back over the notebook and counts the lines in it, which com
 
 ________________
 
-Kavi is one of the thirteen, and Chloe hears about it before any posted list confirms it: his name comes up in the common room before dinner, already attached to a number somebody else supplies, and she goes to find him rather than take the secondhand version.
+Kavi is one of them, and Chloe hears about it before any posted list confirms it: his name comes up in the common room before dinner, already attached to a number somebody else supplies, and she goes to find him rather than take the secondhand version.
 
 In the evening she finds him in the network room, back against the radiator by the door, a length of stripped cable coiled around his hand while he turns the copper end over between his fingers, over and over, eyes somewhere else, the coil going slack and tight again in his fist.
 

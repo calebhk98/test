@@ -2,7 +2,7 @@
 
 *May 2026 – June 2026*
 
-Eli proposes the second worm and Theo says no for days.
+Eli proposes the second worm and Theo says no, and keeps saying no for days.
 
 What arrives is a document rather than a chat message, twelve pages, written at two in the morning at the kitchen table in the apartment three states from where he grew up. It goes to all of them at once instead of to Theo alone, on purpose, because a plan this size only holds together if all of them have read a single set of pages rather than carrying away different memories of what those pages said. It reads like a plan because that is what it is, with an access path, a timeline, what gets touched and what gets left exactly where it was, and it closes on the idea the financial worm's whole design leaned on months earlier, that boring beats clever every time somebody's watching for clever.
 

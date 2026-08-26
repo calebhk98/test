@@ -18,13 +18,13 @@ In April she paid ninety dollars for the company name in white vinyl and put it 
 
 There is no morning meeting: she says what went live yesterday from wherever she is standing, and it takes her under a minute, because there are only five of them and three were standing there when it happened.
 
-She's still in the front room at half past eight on the Tuesday of the second week of May, because the new-employer queue has run long. That queue she reads herself, every name on it, the same way she reads the till tape at her parents' counter before she says hello to anyone, and a good week puts five names in front of her. This week has nineteen, and thirteen of the nineteen sit outside the list of employers she has driven to herself.
+She's still in the front room at half past eight on the Tuesday of the second week of May, because the new-employer queue has run long. That queue she reads herself, every name on it, the same way she reads the till tape at her parents' counter before she says hello to anyone, and a good week puts five names in front of her. This week has nineteen, and more than half of them sit outside the list of employers she has driven to herself.
 
-Opened, the thirteen carry one job description between them, three paragraphs of it, with the company name swapped at the top and again in the third line and left exactly where it was everywhere else, so that one of them advertises a role in a city the posting itself gives as sixty miles from its own address.
+Opened, they carry one job description between them, three paragraphs of it, with the company name swapped at the top and again in the third line and left exactly where it was everywhere else, so that one of them advertises a role in a city the posting itself gives as sixty miles from its own address.
 
-All thirteen accounts were created between twenty to midnight and ten past, inside a single half-hour window, at a cadence no genuine employer around here has ever come close to. The hires behind them come to zero, and that number sits in front of her without her going to look for it, because the hire count sits at the top of every employer's row.
+All of the accounts were created between twenty to midnight and ten past, inside a single half-hour window, at a cadence no genuine employer around here has ever come close to. The hires behind them come to zero, and that number sits in front of her without her going to look for it, because the hire count sits at the top of every employer's row.
 
-The rest of it is in the message logs. Traffic between an employer and a user stays on her own servers until an offer gets logged, a decision she made in June to hold the support calls down, so the thirteen had no way to ask for anything except in writing, in her building, in a log she owns and reads.
+The rest of it is in the message logs. Traffic between an employer and a user stays on her own servers until an offer gets logged, a decision she made in June to hold the support calls down, so they had no way to ask for anything except in writing, in her building, in a log she owns and reads.
 
 Nine of them ask for a Social Security number and a bank routing number in the third message, in the same four sentences, comma splice and all, reproduced without a character moved. Three people answered, and one of them gave both numbers on the Sunday, so that her checking account was emptied on the Monday morning.
 
@@ -42,9 +42,9 @@ sam: are you ok
 
 nadia: im FINE. im insulted
 
-nadia: thirteen fake employers in one night, all of them asking people for bank details
+nadia: a whole batch of fake employers in one night, all of them asking people for bank details
 
-nadia: same job ad thirteen times with the company name swapped. one of them is hiring in a city the ad says is sixty miles away
+nadia: same job ad over and over with the company name swapped. one of them is hiring in a city the ad says is sixty miles away
 
 ruth: how many people answered
 
@@ -70,9 +70,9 @@ nadia: i said that. she said it twice more
 
 ________________
 
-The week that follows happens mostly before eight in the morning, before the laundromat opens and the phones start, at the kitchen table with a legal pad in front of her and thirteen company names written down the side of it in the small, fast hand she keeps the shop's ledger in. Every last one of them typed a genuine state registration number into her employer form, and that is the interesting part all by itself, since anybody willing to file with the state is somebody the state now holds paper on.
+The week that follows happens mostly before eight in the morning, before the laundromat opens and the phones start, at the kitchen table with a legal pad in front of her and the company names written down the side of it in the small, fast hand she keeps the shop's ledger in. Every last one of them typed a genuine state registration number into her employer form, and that is the interesting part all by itself, since anybody willing to file with the state is somebody the state now holds paper on.
 
-The first mornings go on the state's business filings, the site she used to register her own company, and ten of the thirteen turn out to have been filed inside a single week eight months ago through one registered agent. Eight months old tells her the paperwork has been used before.
+The first mornings go on the state's business filings, the site she used to register her own company, and ten of them turn out to have been filed inside a single week eight months ago through one registered agent. Eight months old tells her the paperwork has been used before.
 
 A third morning goes on cross-referencing that agent against the county's property records, and it comes back a suite above a tire shop off the county road, a few miles from the laundromat. The agent's name is Hanley, and Hanley carries thirty-one filings against that address. On the fourth morning she calls the tire shop's front counter.
 
@@ -116,13 +116,13 @@ She stays where she is. The man in the doorway comes off the frame, walks around
 
 The man behind the desk sits back in the chair for the first time since she came through the door. The man with the coffee has his phone up by then. The first photograph is of her, from where he stands; then he crosses to the window, photographs the car in the lot below, and reads her registration out loud, all seven characters of it, slowly, and then again.
 
-"You aren't going to do anything to me," she says. "There are thirteen filings with a real agent's name on them, and a shop full of people underneath us who watched me come up those stairs."
+"You aren't going to do anything to me," she says. "There are filings with a real agent's name on them, and a shop full of people underneath us who watched me come up those stairs."
 
 "It's twenty past five." The man at the window answers her with his back turned. "Chuck locks the bay at five, so the shop underneath you is shut and those stairs were yours alone, and you want to be thinking about that."
 
 On she goes to the next thing on her list.
 
-"I'm not calling the police, because a county detective gets thirteen form submissions and a Tuesday he already had plans for."
+"I'm not calling the police, because a county detective gets a stack of form submissions and a Tuesday he already had plans for."
 
 "You can't prove any of it," the man at the folding table says. "There's not a name on any of those accounts, and you've got no idea who you're standing in front of."
 
@@ -136,7 +136,7 @@ The man at the folding table stands up, taking his time about it because he can 
 
 She says it again, exactly, word for word and at the same speed.
 
-"Ten of the thirteen were filed in one week in September through the same registered agent," she says, from where she is standing. "The agent is Hanley, and Hanley carries thirty-one filings on that address, of which twenty-six belong to somebody other than you."
+"Ten of them were filed in one week in September through the same registered agent," she says, from where she is standing. "The agent is Hanley, and Hanley carries thirty-one filings on that address, of which twenty-six belong to somebody other than you."
 
 A man at the folding table turns a printout face down.
 
@@ -148,7 +148,7 @@ The man behind the desk has come forward onto his elbows now.
 
 The man in front of her stays where he is. The man behind the desk is looking past his shoulder at her.
 
-"Or none of it goes anywhere," she says. "The thirteen are already deleted, a fourteenth stays off my site, everything else of yours stays off it, and I never make this drive again. That's the whole offer, and I'm not improving it while I stand here."
+"Or none of it goes anywhere," she says. "They are already deleted, the next one stays off my site, everything else of yours stays off it, and I never make this drive again. That's the whole offer, and I'm not improving it while I stand here."
 
 The man behind the desk looks at the man standing over her and keeps looking at him until he goes back to the folding table and sits down again.
 
@@ -194,13 +194,13 @@ The hiring changes Nadia's mind.
 
 Every posting she writes herself, in the single-paragraph shape she uses for a labor contract: what the job needs, what it pays, and no line about anything else. The other outfits fishing the short list of local engineers post in a different language entirely, doing more with fewer hands, a lean team outpacing a bigger one, and she reads those the way she reads an estimate from a mechanic still guessing at what's under the hood. Then she puts up a fifth role that afternoon.
 
-Every test on the site was written by the thing she built to write them, across last July, before there was anybody at all to test. It reads the requirement text off live listings, pulls down whatever public documentation and question bank a skill happens to have, and produces a set of short problems out of that. By May it covers twelve hundred skills, of which she has read perhaps thirty.
+Every test on the site was written by the thing she built to write them, across last July, before there was anybody at all to test. It reads the requirement text off live listings, pulls down whatever public documentation and question bank a skill happens to have, and produces a set of short problems out of that. By May it covers thousands of skills, of which she has read perhaps thirty.
 
-Four she has sat and taken herself: Python, Excel, Spanish, and the one on brake systems, which she took to find out whether it would catch what her father catches by ear. The Python set ran her twelve minutes, she scored full marks on all of them, and she wrote the completion times down the margin of the pad.
+Four she has sat and taken herself: Python, Excel, Spanish, and the one on brake systems, which she took to find out whether it would catch what her father catches by ear. The Python set ran her a few minutes, she scored full marks on all of them, and she wrote the completion times down the margin of the pad.
 
 The first thing is that almost everyone fails.
 
-So she makes it easier. The generator carries a difficulty figure and she moves it, and the whole twelve hundred sets rebuild themselves overnight while she sleeps. In September she moves it again. By November it is a version she'd have handed a twelve-year-old at Halstead, and the pass rate is still under a third, so she takes the November Python set herself, finishes it in minutes, and writes that in the margin under the others.
+So she makes it easier. The generator carries a difficulty figure and she moves it, and the whole set rebuilds itself overnight while she sleeps. In September she moves it again. By November it is a version she'd have handed a twelve-year-old at Halstead, and the pass rate is still under a third, so she takes the November Python set herself, finishes it in minutes, and writes that in the margin under the others.
 
 The second thing is the interviews.
 
@@ -274,8 +274,8 @@ nadia: two of them slipped in april. i covered everybody out of my own account a
 
 sam: thats a knife edge on a tightrope
 
-nadia: its twelve days
+nadia: its under a fortnight
 
-sam: twelve days of what
+sam: a fortnight of what
 
 nadia: of everyone still getting paid if nothing at all comes in

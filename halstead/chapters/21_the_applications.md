@@ -24,7 +24,7 @@ Her mother calls twice in the month to ask how the essays are going and gets fin
 
 They do the essays in Ruth's room on a Sunday because doing them alone is worse, Sam taking the desk chair, Kavi the floor with his back against the bed, Odile the bed with her heels hooked over the frame, and Chloe the space under the window by the radiator.
 
-The first prompt wants six hundred words about a challenge she overcame, so Chloe picks the year she taught the thirteens and had a boy in the front row refusing to hand anything in, and she is thirteen hundred words in before she reaches the part where anything is overcome, because the interesting part is why he was right.
+The first prompt wants six hundred words about a challenge she overcame, so Chloe picks the year she taught the thirteens and had a boy in the front row refusing to hand anything in, and she is well over a thousand words in before she reaches the part where anything is overcome, because the interesting part is why he was right.
 
 Ruth reads it over her shoulder before she can close the laptop, laughing at her. "That's not the assignment. They don't want an essay, they want a thing somebody can read in thirty seconds and still remember at lunch."
 
@@ -52,7 +52,7 @@ Nadia is in the room too, back against the door, laptop on her knees, and what s
 
 "You're not applying anywhere," Ruth says.
 
-"I'm applying to thirteen places this week, and none of them are schools." She tabs to the next box without looking up. "Purchasing assistant at the plumbing supply out on Route 8. Parts buyer at a dealership. Service writer at the transmission place on Fourth. Dispatch at a freight company in Ambridge. An insurance office running a claims trainee program that says straight out of high school at the top and two years of experience further down."
+"I'm applying everywhere this week, and none of them are schools." She tabs to the next box without looking up. "Purchasing assistant at the plumbing supply out on Route 8. Parts buyer at a dealership. Service writer at the transmission place on Fourth. Dispatch at a freight company in Ambridge. An insurance office running a claims trainee program that says straight out of high school at the top and two years of experience further down."
 
 "Which one do you actually want?" Chloe says.
 
@@ -104,7 +104,7 @@ He shakes her hand and thanks her for the water, and within the month offices pr
 
 ________________
 
-Twelve of the flagged schools send somebody, and the school says yes to all twelve: desks in the long reading room, dining privileges at the tables everyone already eats at, a room to work in with a lockable door, and permission to sit in any class they name, provided they name it in writing two days ahead with a member of staff present. Two requests draw an identical answer every time, the fighting hour and the range.
+Some of the flagged schools send somebody, and the school says yes to all of them: desks in the long reading room, dining privileges at the tables everyone already eats at, a room to work in with a lockable door, and permission to sit in any class they name, provided they name it in writing two days ahead with a member of staff present. Two requests draw an identical answer every time, the fighting hour and the range.
 
 They arrive within a week of each other in the winter, from Yale, Stanford, Duke, Caltech, MIT and seven others, and by the first evening they have found each other at the end of the visitors' table comparing notes the way scouts do on a prospect.
 
@@ -160,7 +160,7 @@ Ruth asks her in the common room in March, with only Chloe else in the room, and
 
 "A hundred and ninety," Ruth says. "Against how many that answered?"
 
-"Twelve, and eight of the twelve were written by software." The notebook is shut under her hand. She pushes her sleeves up, and a second goes by where she says nothing. "Read one of mine, Ruth. I can't work out what they want. I've read the listing and I've read the form and I've answered both of them, and I can't see the part where I'm getting it wrong."
+"Twelve, and eight of them were written by software." The notebook is shut under her hand. She pushes her sleeves up, and a second goes by where she says nothing. "Read one of mine, Ruth. I can't work out what they want. I've read the listing and I've read the form and I've answered both of them, and I can't see the part where I'm getting it wrong."
 
 "Chloe should read it, since Chloe's the one who writes."
 
@@ -188,7 +188,7 @@ Ruth gets MIT and calls home, where her mother puts her on speaker so her father
 
 Odile gets in everywhere. The rest of the year hears about it days later, when Priya finds the letters stacked unopened in date order on her desk and says so at dinner in front of half the table.
 
-Chloe gets twelve of fourteen.
+Chloe gets all but two.
 
 Outside her window the snow along the path has gone soft and grey, the last of it, weeks off the end of term, and she sits on the floor of her room with the letters spread in two uneven rows, the ones that start with we are pleased and the two that don't. The twelfth she reads a second time before she believes the count, then a third, checking the name on the envelope against the name on the letter inside, in case some office has put two files together that both say Kessler.
 
@@ -224,4 +224,4 @@ Ruth comes the rest of the way in and sits on the floor across from Chloe, worki
 
 "It's on their site," Ruth says, "and it still isn't a real number, because both of those can be true at once, the site and the lie on it."
 
-Twice in the week Chloe takes the letters out and counts them, and both times gets twelve. Then there's an exam on Thursday and a language report due the Monday after, and the letters go back in the drawer and stay there.
+Twice in the week Chloe takes the letters out and counts them, and both times the count holds. Then there's an exam on Thursday and a language report due the Monday after, and the letters go back in the drawer and stay there.

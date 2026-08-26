@@ -2,7 +2,7 @@
 
 *April 2022 – June 2023*
 
-They take the bar in April, over two days, in the long examination room on the second floor, a full day on Tuesday and another on Wednesday, at individual desks set a meter apart, with the windows open because the room retains heat, and along the front sit the seven teachers who wrote the paper and will mark it, proctoring the whole twelve hours themselves.
+They take the bar in April, over two days, in the long examination room on the second floor, a full day on Tuesday and another on Wednesday, at individual desks set a meter apart, with the windows open because the room retains heat, and along the front sit the seven teachers who wrote the paper and will mark it, proctoring the whole of it themselves.
 
 Afterward, Sam catches her at the bottom of the stairwell with his collar open and still in the shirt he sat the paper in.
 
@@ -114,7 +114,7 @@ The tongs go home to the hook on the back of her door, beside the bag she made i
 
 ---
 
-Home in June for ten weeks, she sleeps through most of the first, then settles at ten hours a night and rides out to the reservoir most days, in July finding a road past the water good for a few extra miles and a hill she has to stand up on, with novels going through her hands in a fortnight, though she could not afterward tell anybody how any of them end. The rest is long afternoons on the back steps she and her father built when she was thirteen, with the sun coming round the corner of the garage in the late afternoon and a wasp working the same board every day.
+Home in June for ten weeks, she sleeps through most of the first, then settles at ten hours a night and rides out to the reservoir most days, in July finding a road past the water good for a few extra miles and a hill she has to stand up on, with novels going through her hands in a fortnight, though she could not afterward tell anybody how any of them end. The rest is long afternoons on the back steps she and her father built when she was small, with the sun coming round the corner of the garage in the late afternoon and a wasp working the same board every day.
 
 Her mother watches that from the kitchen window a while before she comes out.
 
