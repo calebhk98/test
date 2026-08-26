@@ -3,10 +3,13 @@
 The best fighter of his year, who wants the real test to start already and
 cannot work out why nobody will just tell him where it is.
 
-**Age span:** 7 to mid-twenties | **MBTI:** ESTP (a writing aid, not a claim) |
+**Age span:** 7 to mid-twenties | **MBTI:** ESFP (a writing aid, not a claim) |
 **IQ:** genius-range, like the rest of the core group. It shows up as fast
 tactical judgement and quick pickup of any physical or spoken skill, not as
 proof-writing or system-building.
+
+**Engine:** has to run a feeling through his body before it reaches language, and makes
+the joke first while it is still on the way.
 
 ## What he is for
 
@@ -42,7 +45,7 @@ switch off.
 
 ## How he talks
 
-One flat clause, said and done. That is his default and the place he returns
+One clause, said and done. That is his default and the place he returns
 to, and it is a property of what he considers finished rather than a limit on
 his vocabulary or his willingness to speak. When the fact is out, he stops. He
 is not withholding anything and there is nothing behind the terseness that a
@@ -79,7 +82,7 @@ thing works. Once he has the fact he drops the subject.
 
 He gets one channel of figurative language and no other: the deflating
 literalism, where instead of reaching for an image he names the thing for what
-it plainly and unglamorously is. It is funny because it is flat and instant,
+it plainly and unglamorously is. It is funny because it is instant and unadorned,
 and it fixes a moment rather than decorating it. Anything built on wit, timing,
 or wordplay is not his.
 
@@ -149,9 +152,9 @@ sharing a room.
 
 ## He processes with his body, and the talking is the second half
 
-Nothing reaches him as a thought first. His jaw is tight before he knows he is
-angry, his legs are already moving before he has decided to leave, and his hands
-have picked something up before he could tell you why. He does not sit with a
+Nothing reaches him as a thought first. He is up out of the chair before he knows
+he is angry, his legs are already moving before he has decided to leave, and his
+hands have picked something up before he could tell you why. He does not sit with a
 feeling, ever, at any age, and it is not avoidance: sitting still with it does
 nothing for him and moving does, and he found that out early and has never had a
 reason to revisit it.
@@ -183,10 +186,11 @@ frightened, his instinct is to make the moment smaller and more absurd, and it
 works, and he does not congratulate himself for it afterwards or mention it
 again.
 
-He asks, flatly, in the plainest available words, whether they are all right,
-and this is the one place a soft word ever gets into his speech. His certainty
-about facts is absolute; his certainty about a person's condition never was,
-and that crack in the flatness is deliberate and should be preserved.
+He asks, in the plainest available words, whether they are all right, and this
+is the one place a soft word ever gets into his speech. His certainty about
+facts is absolute; his certainty about a person's condition never was, and that
+one crack in an otherwise unbothered surface is deliberate and should be
+preserved.
 
 He shows up and does something. When he has been sharp with a friend, and he
 does get sharp, usually with whoever pushes back hardest, he does not apologise
@@ -377,9 +381,9 @@ physical without noticing he is carrying it.
   loud, at volume, for weeks, rather than minding it. He restarts the games. The
   losing is part of the entertainment.
 - **Nadia.** Group dynamic rather than one-to-one; they are almost never alone
-  together. The closest thing to a direct line between them is him asking flatly
+  together. The closest thing to a direct line between them is him asking outright
   whether she is all right.
-- **Odile.** Peer to peer and deadpan, matched rather than competitive. Neither
+- **Odile.** Peer to peer and unhurried, matched rather than competitive. Neither
   explains a joke to the other.
 - **An NCO who shouts at him.** Uncomplicated respect for somebody inside a
   system who yells at him and means it about the work. He likes being shouted at
@@ -442,7 +446,7 @@ himself. She never says she has got nothing; he says it first and cheerfully.
 
 **Eli.** Both are the funny one in whatever room they share, which is the
 collision worth policing. Sam's humour is generous, aimed at the situation he is
-standing in the middle of, and built by repeating the same true flat thing until
+standing in the middle of, and built by repeating the same unglamorous true thing until
 it becomes funny. Eli's is aimed outward, arrives as a question, and leaves
 somebody slightly worse off. If the joke has a target who is in the room, it is
 not Sam's.

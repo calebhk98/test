@@ -7,6 +7,8 @@ who lived in it before her.
 
 **Age span:** 8 to at least 17 or 18 | **MBTI:** ISTJ (a writing aid, not a claim) | **IQ:** the same tier as everyone around her, and nothing in her life has ever ranked her against them
 
+**Engine:** keeps a record of what passes through, because nothing is hers to keep.
+
 ## The thing to get right first
 
 **She is not detached from places; she has redirected the attachment.** The
@@ -97,21 +99,23 @@ by having just explained a method she owns. Once, at the end, never repeated.
 
 ## Under pressure
 
-**Tired**, she goes quiet early, and goes down early, and always has.
+**Tired**, she says she is done, in those words, and goes, and always has. She does
+not sit through the end of something out of politeness.
 
 **Wrong**, she corrects it quietly without announcing that she was wrong in the
 first place.
 
-**Praised**, she is a little uncomfortable and redirects attention to the object
-or the work.
+**Praised**, she is not uncomfortable about the praise, which she has no view on,
+but about being looked at while it happens, and she gets the attention back onto
+the object by telling you a fact about it.
 
 **Losing** does not really register. Competition is not a category she operates
 in, which is unusual in the company she keeps and nobody has ever remarked on
 it.
 
 **Asked to perform** something she is genuinely good at, in front of a group,
-she goes quiet. Being watched and being useful are two different things to her
-and only one of them interests her.
+she puts the thing down and hands it to whoever is nearest. Being watched and
+being useful are two different things to her and only one of them interests her.
 
 **Thrown out of order** by a move, a reassignment, a change of room, she is
 entirely calm about the place and immediately meticulous about the objects: she
@@ -188,14 +192,68 @@ She can find a specific object in the dark by weight.
 She puts a thing back exactly where it came from, sure of the spot, without
 looking.
 
+## Stuck, bored, and wrong in public
+
+Everything below is visible from across a room and none of it needs a school:
+a task, a group, and somebody in charge.
+
+**Stuck.** She goes back to the last point at which the thing was still in order
+and rebuilds forward from there, writing down each step as she clears it, so
+that she never has to solve the same part of it twice. Nobody watching would
+call it fast. It is, however, the only method in the room that leaves a usable
+account of itself behind, and other people come and read hers.
+
+**Bored.** She puts the shared space into an order nobody asked for. It goes
+unnoticed until the day somebody needs to find something, at which point they
+find it.
+
+**Publicly wrong.** She amends the record. She goes and changes the written
+version so that the wrong one no longer exists anywhere, and that is the whole
+of her response; she does not announce the correction and she does not discuss
+it afterwards. Told so to her face, she agrees once and moves on.
+
+**Working in a group.** She takes custody of the materials and the calendar
+rather than of the thinking. She knows where everything is, what state it is
+in, and who had it last, and she will tell the group it is two days behind
+before anyone else has noticed that it is.
+
+**Given responsibility for somebody younger.** She makes them keep their own
+record and then refuses to answer anything they could have found in it. This is
+maddening for about a month and then it is the most useful hour of their week,
+and the ones who stay with her never lose anything again.
+
+**Deadlines.** She works in the order things arrived and hands each one in when
+it is finished, which produces no pattern anybody can predict from outside. She
+has never asked for an extension and it has not occurred to her that this is
+unusual.
+
+**Where she sits and what she keeps.** Whatever seat is left, with no view about
+it, and her own square foot of it arranged the same way it has been arranged in
+every room she has ever sat in. Nothing on the walls. Everything in the bag, and
+the bag packed the same way every time.
+
+**What the room thinks of her.** The one who knows. Not clever-knows: knows
+where the thing is, what the rule actually says, who had the room before you.
+People ask her small factual questions all day long and would not think to
+describe her as a friend, and she has no complaint about that arrangement.
+
 ## Personality off the page
 
-Bored, she sorts something. A free Saturday is outside, in a garden or walking
-looking for stones. What she finds funny in other people is dry and deadpan;
-she does not laugh loudly but she notices.
+Bored, she sorts something, and the sorting is real work to her rather than
+fidgeting. A free Saturday is outside, in a garden or walking looking for
+stones. What she finds funny in other people is somebody being confidently
+wrong about a fact that is written down somewhere; she does not laugh out loud
+at it but she remembers it for years.
 
 She is easy in a crowd and needs no extra attention in one, which is what a
-large loud family does to a person.
+large loud family does to a person. She is also, and this surprises people who
+have decided she is cold, completely unbothered by other people's noise: she
+will read, sort and think in the middle of an argument she has no part in.
+
+Where she is unfair, it is in holding somebody to a standard of care about an
+object that they never agreed to and do not know exists. She does not say
+anything. She simply stops lending to that person, permanently, and they never
+find out why.
 
 ## Interior life
 

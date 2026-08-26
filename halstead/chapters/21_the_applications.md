@@ -70,13 +70,11 @@ The call comes through on a Thursday afternoon. "We're going to need the actual 
 
 Then somebody reads the essays, and what everybody notices first is the graduate-level prose, while what everybody thinks first is ghostwriting: ninety-one applicants from a single school, all at such a level, is a mill or a very good teacher with a template. A review committee, reading blind, spends most of a meeting on the transfer-cohort theory before somebody checks the birth years.
 
-Then they lay them side by side, the standard method for catching a template, and the theory dies there, because no two of them argue alike, and a pair of the ninety-one take opposite positions on a question with both worth reading, the thing a template could not possibly produce.
-
 An admissions officer at Penn works through a stack of files on a Tuesday morning, a mug going cold at her elbow. Odile's essay runs pages past the word limit, normally worth a note in the margin and a mark against the applicant; she writes the note and keeps reading. Well down the second page, as background to a point about patience, it mentions a self-defense assessment involving a room full of people, and she reads the sentence twice, sets the folder down, and reads it a third time before she picks up the phone.
 
 "Read this paragraph and tell me what you think it means," she says to the office down the hall.
 
-Her colleague reads it standing in the doorway, still holding his own coffee. "It means exactly what it says, with no second meaning folded into it."
+Her colleague reads it standing in the doorway, still holding his own coffee. "It means exactly what it says, with no second meaning folded into it. I put two of these side by side on Friday, looking for the template, and they argued opposite sides of the same question, and both of them were worth reading."
 
 "That's what I thought too," she says.
 
@@ -218,9 +216,9 @@ Ruth is in the doorway by then, laptop still open on her arm, having come by the
 
 "Or you'd want your money back for the trip in," Sam says.
 
-Ruth comes the rest of the way in and sits on the floor across from Chloe, working it. "That's probably it, what the watch companies do: a school wants to look exclusive, so it puts a small number on the website."
+Ruth comes the rest of the way in and sits on the floor across from Chloe, working it.
 
-"It's on their site, though, in writing, where anyone can look it up."
+"It's on their site, though, in writing, where anyone can look it up," Chloe says.
 
 "It's on their site," Ruth says, "and it still isn't a real number, because both of those can be true at once, the site and the lie on it."
 

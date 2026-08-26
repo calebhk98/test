@@ -157,11 +157,11 @@ Her mother comes through with the pie and everybody moves their arms, while her 
 
 In December Hearn hands an essay back with no note on it at all.
 
-On the way out into the corridor she checks the back of the last page twice, in case the note went there. There is a mark at the top and bare paper under it, and the page is clean all the way down. She would rather have had a line telling her it was bad. A line she could argue with. A mark with no line under it leaves her only her own doubt to argue against, and that's the harder version of being told she's wrong.
+On the way out into the corridor she checks the back of the last page twice, in case the note went there. There is a mark at the top and bare paper under it, and the page is clean all the way down. She would rather have had a line telling her it was bad. A line she could argue with. A mark with no line under it leaves her only her own doubt to argue against.
 
 Theo gets his back with no note that week, but he puts it straight into his bag and goes on with what he was saying.
 
-More go in before the break, but they are the essays they have been since October. A plateau and a beginning look exactly alike from inside a week; only which way the next goes tells you which you were in. The last is on whether a promise made under a threat counts, a question that Hearn's note calls good before asking where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 again on the floor of the spare room with the door shut, and her grandmother finds her there on the second afternoon and leaves the papers exactly where they are.
+More go in before the break, but they are the essays they have been since October. The last is on whether a promise made under a threat counts, a question that Hearn's note calls good before asking where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 again on the floor of the spare room with the door shut, and her grandmother finds her there on the second afternoon and leaves the papers exactly where they are.
 
 "There's a chair, you know, an actual chair, a step from where you're sitting on my floor."
 

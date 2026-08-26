@@ -95,7 +95,8 @@ One distinguishing physical habit each, listed here so they do not collide.
 
 | | build and register | the habit |
 | :-- | :-- | :-- |
-| **Ruth** | tall, narrow, always slightly too close, the loudest person in the room and unaware of it | writes on her own arm in pen and forgets it is there; hugs hard enough to hurt, from the side, without warning |
+| **Chloe** | small for her age for years, then ordinary; never stays in a chair | taps four fingers against her own leg while walking, rehearsing a timing count; comes up onto her toes with both hands braced on a table edge mid-argument |
+| **Ruth** | tall, narrow, always slightly too close, the loudest person in the room and unaware of it | writes on her own arm in pen and forgets it is there; hugs hard enough to hurt, from the side, without warning; walks half a pace ahead and finishes the sentence over her shoulder |
 | **Sam** | broad, heavy-footed, takes up a doorway | eats standing up |
 | **Kavi** | small, still, sits very upright | turns objects over in his hands while thinking, and puts them back exactly |
 | **Nadia** | compact, fast, always already moving | pushes her sleeves up before saying anything difficult |
@@ -103,7 +104,14 @@ One distinguishing physical habit each, listed here so they do not collide.
 | **Theo** | tall, stooped, apologises with his shoulders | takes his glasses off to think and cannot see while doing it |
 | **Priya** | strong through the shoulders, sunburnt, permanently slightly untidy | falls asleep anywhere, instantly, mid-conversation; touches people constantly, arm and shoulder and back, including strangers |
 | **Odile** | the most physically developed of the year, scarred hands | cannot be still; stands rather than sits |
-| **Fen** | small, neat, dresses in layers she never takes off | collects — pockets always full |
+| **Fen** | small, neat, dresses in layers she never takes off | collects, pockets always full; puts a thing back exactly where it came from without looking |
+
+Four collisions were cleared in the profile merge and must not come back. **The leg-tap
+is Chloe's**, not Ruth's. **Eating standing is Sam's**, not Nadia's and not Odile's.
+**Sleeves pushed up as a tell is Nadia's**, so Odile wears the burn on show instead and
+Fen's rolled cuffs are explicitly a thing she sets once and stops thinking about. **The
+set jaw is Chloe's**, tied to the mechanism-hunger, so Sam is out of the chair before he
+knows he is angry instead.
 
 ---
 

@@ -7,6 +7,9 @@ her own, and who needs to know why she in particular was picked out.
 among the two or three furthest out of anyone in the cast, by inference. No
 number is ever stated about her and none should be.
 
+**Engine:** cannot let a wrong statement stand in the air, whatever it costs to take it
+down.
+
 ## What she is for
 
 She is the instrument the group uses on itself. Put any assertion in front of
@@ -75,8 +78,8 @@ to enjoy, not as an insult to survive, and never as a statement about what kind
 of person she is. A poor mark makes her want the marking. She will chase it for
 a week, not to have it changed but to find out where it came from.
 
-She will also produce a number about herself on demand, flatly, including an
-unflattering one, in a register other people reserve for reporting the weather.
+She will also produce a number about herself on demand, including an unflattering
+one, in the register other people reserve for reporting the weather.
 Asked how good she is at something she gives the figure and stops. This reads
 as either arrogance or false modesty depending on the figure, and it is
 neither.
@@ -137,7 +140,7 @@ builds a question so that one answer closes it. Three shapes recur.
 - She converts an open field into two named options and asks which.
 - She refuses a question until the measure is named, and names the measures she
   would accept, so the answer has to be one of them.
-- She drops the question mark entirely and states the inference flat, as a
+- She drops the question mark entirely and states the inference outright, as a
   proposition for somebody to knock down. It functions as a question and gets
   answered as one, and it costs the other person the chance to give a vague
   answer, because the only two moves left are agreeing and disagreeing.
@@ -169,7 +172,7 @@ by a person who agrees with her to end the conversation, and by anybody who
 offers a result as though it settled a question about method.
 
 She defers to almost nobody by rank, and cites her parents mid-argument the way
-she would cite any other source, flatly, as evidence rather than as authority.
+she would cite any other source, as evidence rather than as authority.
 
 ## When she is wrong
 
@@ -214,7 +217,7 @@ would rather have it corroborated than comforted.
 She has one habit here that a writer should know about: while she is working up
 to saying a hard thing, she writes long versions and sends short ones. The
 drafts that spell out what she actually means get deleted, and what goes out is
-three flat facts, which everybody reads as her being characteristically curt
+three bare facts, which everybody reads as her being characteristically curt
 and nobody reads as the fourth attempt at a confession.
 
 ## When she goes long
@@ -249,6 +252,12 @@ awake.
 Losing, she goes quiet and re-runs the sequence privately instead of contesting
 the result. Every version of her under strain resolves to the same instinct:
 investigate alone before arguing.
+
+Praised, she asks what it was measured against and how many people were in the
+comparison. She is not fishing and she is not deflecting; a compliment with no
+denominator under it is not information yet, and she is trying to convert it
+into something she can use. The answer almost always disappoints her, and she
+says so, and the person who paid the compliment usually wishes they had not.
 
 ## Stuck, bored, and wrong in public
 
@@ -307,8 +316,9 @@ cutlery, coins, she builds the thing she is arguing about and pushes it over.
 Given nothing to build with she lines up whatever is on the table into a row and
 then knocks it out of line again with one finger while she is talking, and both
 halves of that happen without her attention.
-Walking, she taps a count against her own leg silently to drill a timing.
-Sitting, she prefers the floor to a chair when the room allows it, shoes off
+Walking, she is half a pace ahead of whoever she is talking to and keeps turning
+back to finish the sentence at them, so the conversation happens over her
+shoulder. Sitting, she prefers the floor to a chair when the room allows it, shoes off
 and lined up beside her, and she will keep reading through a conversation
 without looking up once she has decided the point is settled.
 
@@ -448,7 +458,7 @@ years, does not cost what she thought it cost.
 - Work a stuck problem alone for months before mentioning she is stuck.
 - Go back into finished, praised, working work of her own and improve it for no
   audience.
-- Shut down a joke with one flat word when she needs a room serious.
+- Shut down a joke with one word at volume when she needs a room serious.
 - Hug somebody hard enough to hurt, without warning, and say the important
   thing while still holding on.
 - Shout in a corridor about a result nobody asked her for.
@@ -461,7 +471,7 @@ years, does not cost what she thought it cost.
 
 - Hedge a claim she has finished testing.
 - Reach for a simile, a metaphor, or an invented image. Her claims live in
-  evidence, and she is the flattest speaker in the cast.
+  evidence, and she is the least decorated speaker in the cast.
 - Accept a compliment gracefully and let it stand.
 - Ask a question that leaves the answer open, or ask one to be sociable.
 - Let an old wrong statement go unaddressed because time has passed.
@@ -472,8 +482,8 @@ years, does not cost what she thought it cost.
 ## Not to be confused with
 
 **Kavi.** He corrects the mechanism and never names who he is correcting. Her
-correction contains the other person's name in the same sentence. A flat
-that-is-wrong-because-X with no addressee is his move, not hers. He is also
+correction contains the other person's name in the same sentence. An unaddressed
+that-is-wrong-because-X is his move, not hers. He is also
 quiet and she is not: if the room can hear it from the corridor, it is hers.
 
 **Eli.** Both say the unwelcome true thing in front of everybody. Hers is a

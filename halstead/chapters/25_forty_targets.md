@@ -98,7 +98,7 @@ This is approximately where he starts to have a problem.
 
 He is doing well. Doing well at the running and the carrying, at the paper, the compass, the bar bolted over the door of the bay, at the obstacle lanes, the casualty drags, the stripping of a weapon in the dark, the long foot march nobody in the platoon enjoyed, and he is doing it against the rest of his platoon visibly trying as hard as he does, none of it reconcilable with a single thing he knows about himself. At school his was the number that never moved. Odile was level with him on the mat once and comfortably ahead of him by the spring. Ruth shot ninety-one and found the entire business tedious. Kavi beat him at everything with a board in it for years on end.
 
-So he goes looking for the fault in the measurement, which is what he does with any number that misbehaves.
+So he goes looking for the fault in the measurement.
 
 His first thought is that everybody here is tired in a way school could only approximate, since school let you sleep through the night and this place treats the night as available.
 
@@ -116,7 +116,7 @@ Land navigation occupies October, daylight first and afterward in darkness, a sc
 
 "Your board's ten degrees out, look. Take your count off the compass, not the map."
 
-Instead of pointing at it he walks them the bearing, which is how he has taught anything to anybody since he was a boy, and they find the point together.
+Instead of pointing at it he walks them the bearing, and they find the point together.
 
 Mail call is on the printed schedule, and the drill sergeants run it standing up, holding each envelope out at arm's length, charging push-ups by the letter, paid cheerfully by the entire platoon. Personal time runs until lights out, and half the bay spends it on boots, the other half on paper.
 
@@ -154,7 +154,7 @@ The captain looks at the card in the drill sergeant's hand, where the score is w
 
 "Forty percent of what, Private."
 
-"Of the intercepts, sir." Sam has spent weeks waiting for somebody to ask him a question with a real answer underneath it, and he takes the opening at full speed. "There's a machine at the end of the lane that puts a live round across your front, left to right, sixty metres of open ground, on a cycle you can set a watch by. You stand behind glass, taking your count off the mechanism rather than off the round. The target is the round. You're shooting the bullet."
+"Of the intercepts, sir." Sam has spent weeks waiting for somebody to ask him a question with a real answer underneath it, and he takes the opening at full speed. "There's a machine at the end of the lane that puts a live round across your front. The target is the round. You're shooting the bullet."
 
 The drill sergeant turns the card face down against his leg.
 

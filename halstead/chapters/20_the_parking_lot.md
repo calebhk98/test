@@ -2,7 +2,7 @@
 
 *June 2022*
 
-They are the first to sneak out since the school opened, the entire reason it is worth doing.
+They are the first to sneak out since the school opened.
 
 In the fortnight before, the preparation divides itself between them: Nadia stands next to a maintenance supervisor in the dining hall on a Tuesday, talks about the weather for half a minute, and walks away with his badge duplicated; Chloe gets into the corridor cameras and sets them looping on a stretch of empty hallway; Ruth brings her box, which throws all its ugly things simultaneously at any recorder in range and writes noise over whatever it reaches; and Sam clocks the night patrol's second pass night after night, until the interval between it and the first is regular enough to walk through at an ordinary speed.
 
@@ -44,7 +44,7 @@ Sam has the syrup upside down over his second plate, timing the pour and countin
 
 "I'm doing the forge both sessions again, same as last year," Chloe says.
 
-"You said that like it was going to be different this year." Something in Ruth's face concedes the point before Ruth herself has agreed to concede it, amusement plain across her whole expression.
+"You said that like it was going to be different this year." Something in Ruth's face concedes the point before Ruth herself has agreed to concede it.
 
 "It's not not going to be different. It's just also, on top of whatever else it is, going to be the forge, as it always is."
 
@@ -134,7 +134,7 @@ Sam takes it in silence for a second.
 
 "The guns are supposed to make it harder, since that's the whole point of carrying it in the first place," he says.
 
-"A gun's a prop unless you actually use it, and all of them just stood there holding theirs." Ruth has her bag back on her shoulder and the strap settled across it. "They let you walk all the way in. They gave you the wrist. They stood in a clump and waited their turn." She shrugs. "They fought like ten-year-olds, the whole lot of them, and you could have done that at that age."
+"A gun's a prop unless you actually use it, and all of them just stood there holding theirs." Ruth has her bag back on her shoulder and the strap settled across it. She shrugs. "They fought like ten-year-olds, the whole lot of them, and you could have done that at that age."
 
 "Fine, say that was too easy." Sam puts his hands up and lets them drop again. "So who do I actually fight, then?"
 

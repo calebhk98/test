@@ -42,7 +42,7 @@ Ruth reads that twice from the floor of her dorm room, closes her eyes for a sec
 
 ________________
 
-The rest of them read that thread over the following days, each of them from wherever the year has put them, and each answers in the shape they always answer in.
+The rest of them read that thread over the following days, each of them from wherever the year has put them.
 
 Nadia reads it standing at the register with the shop shut and the till already counted. Her sleeves go up before she answers. They go up before anything that's going to cost her something.
 
@@ -86,7 +86,7 @@ Chloe turns twenty-one in August, two months after the last page goes in, and it
 
 Chloe spends most of that stretch at her own kitchen counter, most nights, the coffee going cold twice before she remembers it's there. What she has at the end of it, typed and printed and read back through: what the tool leaves alone no matter what the access allows, what counts as being noticed and what falls short of that, and the rule everybody reads twice, that any of them can end it, no vote and no argument, and the rest have one hour to comply.
 
-The first page is the shortest to write and the surest: it limits the tool to the target list alone, sets everything it touches back exactly the way it found it, and closes the window the moment the window's job is done. It reads like a checklist because that's what it needs to be, not because it's the least important page.
+The first page is the shortest to write and the surest: it limits the tool to the target list alone, sets everything it touches back exactly the way it found it, and closes the window the moment the window's job is done. It reads like a checklist because that's what it needs to be.
 
 The middle section she rewrites, and then rewrites what she rewrote. "Noticed" has to mean a specific, confirmable event: a name gets called, an account gets frozen, somebody shows up at a door. A blip that looks wrong for a minute and settles again stays outside that definition, on purpose. The line goes in twice, in different words each time, because she already knows which of them is going to be the one squinting at an ordinary blip at two in the morning someday, wondering if this is the real thing.
 
@@ -94,7 +94,7 @@ The stop clause gets exactly one line and no examples, on purpose. Any one of th
 
 The page on what happens if it's noticed is the shortest of them and the most rehearsed: who calls whom first, what gets denied and by whom, and the flat instruction that all of them stay off the phone with anyone outside the group, a lawyer included, until they are all on one call together. It assumes noticing looks like something happening to one of them. The version that leaves only a gap closing again before anyone can point to it, quiet and invisible, over before it registers, sits outside every page of it.
 
-They sign off one at a time over the following week, each in the shape of the person doing it. Eli signs first, hours after he sends the document, because for him the answer was already settled.
+They sign off one at a time over the following week. Eli signs first, hours after he sends the document, because for him the answer was already settled.
 
 eli: in
 
@@ -116,6 +116,4 @@ Chloe signs the night she finishes the last of it, before she's had time to reco
 
 Theo signs off last, at the far end of the test, and says again that this is insane.
 
-A clearance is a piece of paper that says the government has already decided to trust her with things it keeps far from most people, and she's about to spend that trust on a file it always meant to keep sealed from her too. What that actually costs her she works through exactly once, on the drive home from the office the week the document arrives, and the thought ends in about as long as it takes a light to change.
-
-Chloe is four months into that job when she writes those pages, her hand steady through all of them, and she does not stop.
+The government has already decided to trust her with things it keeps far from most people, and she's about to spend that trust on a file it always meant to keep sealed from her too. What that actually costs her she works through exactly once, on the drive home from the office the week the document arrives, and the thought ends in about as long as it takes a light to change.

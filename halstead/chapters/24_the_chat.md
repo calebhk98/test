@@ -66,8 +66,6 @@ eli: i got a meeting with a lawyer
 
 eli: which honestly has been the most interesting thing thats happened to me since i started
 
-The build pipeline flaw is the kind of gap a company checks for insiders and outages, not for somebody like Eli looking at it sideways. Their own encryption has gone all that time without anyone who had real reason to try it. Eli wrote part of it. The rest has sat as untested by him as by everyone else, year after year.
-
 ________________
 
 Ruth's dorm room is a triple, a surprise she only discovered on move-in day, with a roommate who alphabetizes a spice rack down to the paprika and gets genuinely upset when it's moved. In her first weeks at MIT she's found the library that stays open all night and worked out which dining hall serves something hot late. She still answers the chat faster than anyone else in it, usually inside a minute, whatever she's doing when the message lands.
@@ -217,8 +215,6 @@ nadia: did you catch him
 sam: obviously i caught him
 
 ________________
-
-In the space of an evening the same names move from a federal supervisor's notes to a fall-and-catch drill run by a sergeant to the exact gigabyte count on a store laptop.
 
 Somebody posts a screenshot of a performance review, the name blacked out and the compliments left in.
 
@@ -498,6 +494,6 @@ chloe: fine
 
 Chloe leaves it. There is a version of the afternoon where she keeps pulling at it, and she can feel the shape of that version while she types the last message, and she goes and does her reading instead. The offer sits in the log between the question about the hard step and Kavi asking twice, and the next thing anybody types is about something else.
 
-The lock they built at thirteen to get past a teacher is still the only thing standing between this chat and anyone outside it, one lock, five years running, untouched and unreplaced. Whatever internal means, it's a wall each of them keeps running into.
+Whatever internal means, it's a wall each of them keeps running into.
 
 The chat moves on within minutes. Chloe leaves the tab open on her desk for the rest of the evening, the cursor sitting in the empty box where a reply would go.

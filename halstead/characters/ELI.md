@@ -8,6 +8,8 @@ thing before anyone tells him he has earned it.
 
 **Age span:** 13 to 21 | **MBTI:** ENTP (a writing aid, not a claim) | **IQ:** comfortably inside the top tenth of a percent by outside norms, and unremarkable in the only room that has ever measured him
 
+**Engine:** does the interesting thing and works out the consequences afterwards.
+
 ## The thing to get right first
 
 **He has only ever stood in two rooms.** One is a home where nobody ranked him
@@ -23,7 +25,7 @@ should be able to see the gap while he cannot. Where anything below contradicts
 this, this wins.
 
 **The joke is the channel, not the decoration.** He is the funniest person in
-his group and the humour is not a garnish on an otherwise flat register; it is
+his group and the humour is not a garnish on an otherwise plain register; it is
 the register. He arrives at a serious subject sideways, through a bit, a needle,
 a stake reframed as a race. Writing him deadpan and technical and then adding
 one joke an hour produces a different man, and it produces the man three of the
@@ -65,7 +67,7 @@ finished rather than clipped.
 He opens on the fact, never on a frame.
 
 **Questions, in two kinds, and he is full of them.** He does not ask for
-information: when he needs a fact he states the near-answer flat and lets the
+information: when he needs a fact he states the near-answer straight and lets the
 other person correct it, which gets him the answer without the asking. What he
 does ask, constantly, is the other kind. Short, closed, one clause, aimed at
 the number or the permission the other person has been talking around, and he
@@ -104,7 +106,7 @@ phase and no repair gesture afterward.
 | hedging | rare, single, never stacked |
 | questions | many, and none of them for information: short, closed, narrowing, aimed at the number somebody is talking around |
 | figurative | one permitted kind, the hazard image: the drop under somebody else's position, concrete and never about himself |
-| emotional range | narrow on the surface, and the two widest things on it are delight at being outthought and the flat refusal to be seen not joking |
+| emotional range | narrow on the surface, and the two widest things on it are delight at being outthought and the absolute refusal to be seen not joking |
 
 ## When they talk at length
 
@@ -137,7 +139,7 @@ conversation is the ceiling; a third time and it stops reading as him.
 
 - YES if it restates the other person's claim in different terms before
   answering it.
-- YES if a flat assertion is repeated with its contraction removed rather than
+- YES if an assertion is repeated with its contraction removed rather than
   intensified some other way.
 - YES if a real stake or risk is described in game or competition vocabulary.
 - YES if it is a short closed question aimed at a number or a permission the
@@ -157,7 +159,7 @@ conversation is the ceiling; a third time and it stops reading as him.
   rather than a moral fact.
 - YES if it answers the question actually asked and then stops, with nothing
   decorative added.
-- YES if a hedge appears at all and it is a single flat qualifier.
+- YES if a hedge appears at all and it is a single bare qualifier.
 - YES if being outthought produces open, immediate pleasure rather than a
   defence.
 - NO if the image is decorative, or about himself, or reached for because the
@@ -290,7 +292,7 @@ it would turn a private satisfaction into a claim somebody could grade.
 
 ## Home
 
-A flat, unremarkable subdivision on the edge of a mid-size city: a strip mall,
+A low, unremarkable subdivision on the edge of a mid-size city: a strip mall,
 a chain pharmacy, streets named for trees that were never planted on them. He
 likes it, genuinely and without irony, because nothing there has ever asked him
 to be anything in particular.
@@ -362,8 +364,8 @@ in the house and is not a story, the tap stops for a few seconds on the days
 that would have been his to notice. Elated, at being outthought by somebody he
 likes, he is simply open about it: not gloating, not deflating.
 
-He can be unfair, and the shape it takes is being flatly unmovable with someone
-he loves who is wrong about something that matters. He does not repair it
+Where he is unfair, it is in being immovable with someone he loves who is wrong
+about something that matters. He does not repair it
 afterward; he goes back to whatever is still broken and lets the ease of the
 friendship mend on its own.
 
@@ -475,7 +477,7 @@ checked.
 
 With someone behind, he is the patient version of himself and will spend
 absurd amounts of time. With somebody wrong about something that matters, he is
-flatly unmovable and does not soften it. With the person whose rigour he wants
+immovable and does not soften it. With the person whose rigour he wants
 pointed at him, he answers the question twice if she asks it twice, and does
 not dodge. With somebody who ribs him, he lets it land, because from certain
 people being ribbed is being noticed. With a working partner he builds the
@@ -536,7 +538,7 @@ somebody, and Eli is the one who has already made it.
 
 **Sam.** Both are funny and both are cheerfully willing to be the joke. Sam's
 humour is generous and aimed at the situation, which he is usually standing in
-the middle of, and he gets there by saying the same true flat thing again. Eli's
+the middle of, and he gets there by saying the same unglamorous true thing again. Eli's
 is aimed outward and it costs somebody something, and he gets there by asking.
 If nobody in the room is slightly worse off for the line, it is Sam's.
 
@@ -551,7 +553,7 @@ If nobody in the room is slightly worse off for the line, it is Sam's.
   group.
 - Family: raised by his mother, an aunt nearby, no siblings, no father in the
   house and no story attached to that fact.
-- Home region: a flat suburb outside a mid-size city in central Ohio.
+- Home region: a low suburb outside a mid-size city in central Ohio.
 - Languages, one a year from seven, in order: Spanish, French, Russian,
   Mandarin, Hebrew, Korean, Japanese, Romanian, Serbian, Ukrainian, Georgian.
   Known for Georgian.

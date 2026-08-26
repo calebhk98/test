@@ -44,7 +44,7 @@ The months underneath that sentence look, from outside, like everything is fine.
 
 The study group stays folded into a smaller room in her head: something she manages rather than something she shares. Devansh, who ends up in most of her classes by spring, gets the closest look at it, though he has no idea what he's actually seeing. That spring he brings her a proof he's stuck on. The error takes her under a minute to find, a sign flipped two steps in, and she tells him so directly. "That's not wrong because the idea's bad, Devansh. It's wrong because you dropped a negative on line six." He fixes it, thanks her, and asks, half joking, whether she's ever actually stuck on anything. No, she says, and it's close enough to true, because being stuck and being wrong about the reason feel like different things from the inside.
 
-The tally she keeps is private instead of public: every problem set returned without comment, every study group she finishes ahead of everyone else, filed as evidence for the theory rather than against it. The idea that the material could simply be beneath her, rather than mismatched to her, is available to her the whole time. Reaching for it would mean the numbers she already half-suspects are the real ones, so it stays where it is.
+The tally she keeps is private instead of public: every problem set returned without comment, every study group she finishes ahead of everyone else, filed as evidence for the theory rather than against it.
 
 What eventually breaks it is a professor she likes, in office hours, someone she is genuinely fond of, who cannot follow her past the third step of her reasoning and says so, cheerfully, without embarrassment, before asking her to go back.
 
@@ -54,7 +54,7 @@ Somewhere in it he loses the thread, says so, and asks her to start again from t
 
 From the top, then. Step one, step two, and at step three he stops her again, admits he's still lost, and asks whether she'd mind slowing down further than that. She slows down. The assumption she'd folded into a single line comes apart into the separate claims underneath, and she states each on its own and watches him nod at the first and hesitate at the second. It's the second, she realizes watching him hesitate, that she has always kept private, checked only against her own head, where it always came out fine.
 
-Eventually he gets there, the whole way through, and tells her the result holds. He also tells her, setting his pen down, that it took her five tries to explain something most of his graduate students would get in two. It's an observation rather than a complaint, and he's already moving on to the next question on his list. Ruth thanks him, packs the loose pages into her folder in the wrong order, and leaves before office hours are officially over.
+Eventually he gets there, the whole way through, and tells her the result holds. He also tells her, setting his pen down, that it took her five tries to explain something most of his graduate students would get in two. He's already moving on to the next question on his list. Ruth thanks him, packs the loose pages into her folder in the wrong order, and leaves before office hours are officially over.
 
 Ruth walks out and sits on a wall until the light changes twice.
 
@@ -68,7 +68,7 @@ The rest of them she works through like that, at a carrel on the fourth floor wi
 
 Second language. Reading level. Fractions. Each of them goes into the chat, and she watches somebody make a joke inside a minute and move on.
 
-What she types out is fuller than what actually goes up: drafts that spell out the methodology, the sample size, why this is different from being slow at Portuguese. Most of the drafts die before sending, because a paragraph like that commits her to defending it in a way three numbers on their own don't. What she posts instead reads, to everyone reading it, like Ruth being Ruth: a fact, stated bare, no setup. Everyone reading it in the chat takes it for the whole thought rather than the fourth draft of one, with no way of knowing that the drafts before it said the actual thing underneath the numbers before she deleted them.
+What she types out is fuller than what actually goes up: drafts that spell out the methodology, the sample size, why this is different from being slow at Portuguese. Most of the drafts die before sending, because a paragraph like that commits her to defending it in a way three numbers on their own don't. What she posts instead reads, to everyone reading it, like Ruth being Ruth: a fact, stated bare, no setup.
 
 In April she stops posting, because she has understood what the numbers add up to and would rather somebody else say it first.
 
@@ -90,15 +90,7 @@ ruth: nadia cant find anyone who can finish a thought. thats not a hiring pool
 
 ruth: sam asked when the real assessment was. it was the real assessment
 
-ruth: theo writes out his reasoning and gets told hes skipping ten steps
-
-ruth: eli found five holes in an afternoon in a system a company pays people to protect and they didnt think one was possible
-
-ruth: chloe writes what a newsroom writes, twice a week, after work, and people keep asking who her team is
-
 ruth: every single one of us has a story like this and every single one of us has decided it means something about the other person
-
-ruth: we are not slightly ahead
 
 ruth: i dont think we're the same kind of thing
 

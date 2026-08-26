@@ -6,6 +6,9 @@ where the work is because the work is the only thing he has ever wanted.
 **Age span:** 6 to 21 | **MBTI:** INTP (a writing aid, not a claim) | **IQ:**
 far out, by inference. No number is ever stated and none should be.
 
+**Engine:** follows a mechanism to the end of itself and does not track the
+conversational layer running beside it.
+
 ## What he is for
 
 He is the person who finds out how the thing actually works, then says so, then
@@ -52,7 +55,7 @@ He asks few questions, and when he does it targets one specific unresolved
 mechanism. He never asks anything conversational. The exception is worth
 knowing, because it is the same habit rather than a departure from it: when the
 unexplained thing is a person, he interrogates the person exactly as he would a
-machine, in two flat questions with no cushioning, how long has this been true
+machine, in two level questions with no cushioning, how long has this been true
 and why did you not say. Aimed at somebody in real distress this ought to be
 brutal and is not, because it is the only response in the room that treats them
 as somebody with an answer rather than somebody to be handled.
@@ -60,7 +63,8 @@ as somebody with an answer rather than somebody to be handled.
 He does not produce a simile, a metaphor, or any invented comparison, ever, in
 any language, and a writer should not give him one to make a line sound clever.
 
-What humour he has is a flat put-down delivered as a statement of fact,
+What humour he has is a put-down delivered as a statement of fact, at the same
+temperature as everything else he says,
 generally an accurate account of how the other person arrived at their own
 misfortune. He finds it genuinely funny to watch somebody talk themselves into
 a worse position than the one they started in.
@@ -81,7 +85,7 @@ irritates him.
 
 ## When he has decided something is unjust
 
-This is the least flat thing about him and the place a writer should spend
+This is the least level thing about him and the place a writer should spend
 their effort. He does not get loud and does not get personal. He gets thorough,
 methodical, and completely unbudgeable, and the cost to himself becomes
 irrelevant to the question of whether he pursues it.
@@ -105,7 +109,7 @@ goes on the list.
 
 ## Everything he feels arrives as an absence
 
-The section a writer most needs and the one his flatness hides. Kavi does not
+The section a writer most needs and the one his one-temperature delivery hides. Kavi does not
 have a smaller emotional range than the people around him. He has the same range
 routed through subtraction rather than addition, so where somebody else adds
 volume, tears, speed or an adjective, he takes something away, and what is
@@ -127,8 +131,7 @@ read it without ever having discussed it:
   than hours.
 
 **He does not know he is upset until somebody says so**, and by then it has been
-running for a while, and he will accept the diagnosis flatly and without
-argument, the way he accepts any other correct statement, and still not be able
+running for a while, and he will accept the diagnosis without argument, the way he accepts any other correct statement, and still not be able
 to tell you what it is about. He is not concealing anything. The information has
 not reached him in words either.
 
@@ -154,8 +157,8 @@ Tired, he gets quieter rather than sloppier: more of the clipped register, less
 of the long unbroken runs.
 
 Wrong, he corrects the record about himself exactly the way he corrects it
-about anyone, flatly, with no request for credit for the honesty and no visible
-discomfort.
+about anyone, at the same temperature, with no request for credit for the honesty
+and no visible discomfort.
 
 Angry, the one habit that never varies breaks. He handles whatever is on the
 table in front of him and sets it back down off its mark, edges no longer
@@ -196,7 +199,7 @@ object he was last turning over leaves the room in his pocket by accident and
 comes back later, in the right place, without comment. He has never had to
 think about money and does not.
 
-There is one recurring break in the flatness worth keeping rare: a beat after a
+There is one recurring break in the level surface worth keeping rare: a beat after a
 line of his has landed badly, his hand comes up over his mouth. Half a second
 late, never in time to stop it, and it is the only visible evidence that he
 knew.
@@ -215,7 +218,7 @@ does not tell anybody it is finished afterwards; the answer simply exists.
 he is not making a point; the hands wanted a job and the room was not providing
 one.
 
-**Publicly wrong.** He says so, flatly, in about three words, at once, and
+**Publicly wrong.** He says so in about three words, at once, and
 starts again from wherever the error was. He is the best in his group at this by
 a distance and it is not humility: he does not attach to a result, so there is
 nothing there to bruise. People who find being wrong expensive watch him do it
@@ -348,8 +351,8 @@ to, and treats each one as an interruption he is glad of.
   he does it by refusing to accept the closed version, twice, without raising
   his voice.
 - **Sam.** His easiest target and his one reliable source of amusement. He
-  laughs at Sam before he has spoken to anybody, and the flattest line he owns
-  is aimed at him. He is unfair to Sam exactly once, in the way that is
+  laughs at Sam before he has spoken to anybody, and the driest line he owns is
+  aimed at him. He is unfair to Sam exactly once, in the way that is
   characteristic of him: dismantling a wrong claim interests him more than
   reading whether the person has had enough of being wrong in front of everyone,
   and he keeps going past the point of fairness before the half-beat-late catch
@@ -390,7 +393,7 @@ to, and treats each one as an interruption he is glad of.
 - Leave a plate half finished, which from him is the loudest available signal.
 - Vanish for days over something nobody knew was bothering him, and come back
   without an account of it.
-- Accept flatly that he has been upset for a week, on somebody else's authority,
+- Accept without argument that he has been upset for a week, on somebody else's authority,
   and still not know what about.
 - Stay in a room he had no reason to stay in, which is what being happy looks
   like on him.

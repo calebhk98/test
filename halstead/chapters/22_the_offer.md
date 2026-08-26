@@ -30,7 +30,7 @@ His office holds a desk, two chairs, and a small clock turned to face only him, 
 
 "Here."
 
-She keeps her feet square on the floor while she reads to the bottom of the page, the stillness she'd use leaning across a table when she wants to get something right the first time rather than the second. She's taught the twelves real analysis out of a room two floors below, working through the proofs handed to her at that age, by a teacher always making it sound like the ordinary next thing rather than a favor. She's dropped flawed hinges of her own into the scrap bin rather than let them stand, and gone back to the forge every Thursday for five years without anyone having to ask her twice, because the standard she was holding the work to was hers before it was anyone else's, and all of it sits outside any dollar figure, in a place the number on the desk in front of her leaves entirely alone. At the start, the whole of this place came down to a letter with her name typed across the front of it, in an envelope she still has, in a drawer she still checks, and the folder open on the desk now has the same name typed on the tab.
+She keeps her feet square on the floor while she reads to the bottom of the page, the stillness she'd use leaning across a table when she wants to get something right the first time rather than the second. She's taught the twelves real analysis out of a room two floors below, working through the proofs handed to her at that age, by a teacher always making it sound like the ordinary next thing rather than a favor. She's dropped flawed hinges of her own into the scrap bin rather than let them stand, and gone back to the forge every Thursday for five years without anyone having to ask her twice. At the start, the whole of this place came down to a letter with her name typed across the front of it, in an envelope she still has, in a drawer she still checks.
 
 "I don't think so," she says.
 
@@ -120,7 +120,7 @@ In the evening she finds him in the network room, back against the radiator by t
 
 "It stopped being school for me a while ago, somewhere around the time the problems stopped having answers already written down somewhere for someone to check me against." He sets the coil down on the bench, edges lined up flush with the bench's own edge, and leaves it there. "I brought them a false positive rate on Tuesday and the whole building had to wait to find out whether it was wrong, because it was still unchecked. That's a research problem, not a classroom one, because a classroom's whole job is already knowing." He gives her the look he saves for a mark scheme, and says the next part in the register he'd use to correct a wrong exponent. "It's a lab that also has children in it."
 
-Chloe watches him get back to work, the slow half-turn of the wrist stripping the next foot of cable, and lets him get on with it, because he has answered the question she came in with and gone back to the cable.
+Chloe watches him get back to work, the slow half-turn of the wrist stripping the next foot of cable, and lets him get on with it.
 
 ________________
 

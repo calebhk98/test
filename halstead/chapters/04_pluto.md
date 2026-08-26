@@ -242,7 +242,7 @@ Mr. Doyle stops with the marker still up at the board to look at what he has wri
 
 Mr. Doyle is already onto the next thing, brisk about it, while a kid glances at Ruth before looking back at the board. Chloe presses her thumbnail into the edge of the desk until it leaves a mark.
 
-She has done this herself, in January, when Mrs. Aldana came down the row, took the book off her desk by the spine, and kept it until the end of the day.
+She has done this herself, in January.
 
 Chloe has a very clear idea of what is supposed to happen to a child who does what Ruth just did, so she watches for it the whole rest of the period: Mr. Doyle's face the next time Ruth's name comes up, the door on the way out in case somebody is waiting there to have a word, and at lunch, the end of the table, to see whether anybody comes over.
 

@@ -174,6 +174,10 @@ writes itself. If four of them collapse into the same reaction, that is the revi
 - **Theo** works it alone every night, tells nobody he is struggling, and hands in
   something complete and slightly late.
 - **Odile** does it with her hands. Two hundred attempts. Never mentions the count.
+- **Fen**, who is adjacent to the nine rather than one of them and now carries the same
+  section, goes back to the last point at which it was still in order and rebuilds
+  forward, writing down each step as she clears it so she never solves the same part
+  twice.
 
 The same test runs on any event, not just a hard problem: a delay, a bereavement, a
 locked door, a stranger in the room. Write the nine-line version first. If two lines
@@ -229,6 +233,83 @@ uses that permission, which wastes it.
 | Ruth, Kavi, Nadia, Theo, Odile | none, ever. The refusal is characterising. |
 | Meg | domestic comparisons only, and only when deflecting |
 | Dave | none |
+
+---
+
+## Axis 8: the engine, one line each
+
+The single sentence a writer should have in mind before anything else on the sheet. Each
+one is exclusive, each one is portable to any setting, and no two of them produce the
+same behaviour in the same situation. Every cohort sheet now carries its own at the top,
+directly under the age and IQ line.
+
+| character | engine |
+| :-- | :-- |
+| Chloe | wants the reason underneath the answer, and has no moderate setting on anything |
+| Ruth | cannot let a wrong statement stand in the air, whatever it costs to take it down |
+| Sam | has to run a feeling through his body before it reaches language, and makes the joke first while it is still on the way |
+| Kavi | follows a mechanism to the end of itself and does not track the conversational layer running beside it |
+| Nadia | cannot leave a broken mechanism alone in a room she is standing in |
+| Priya | processes out loud, immediately, at whoever is nearest |
+| Eli | does the interesting thing and works out the consequences afterwards |
+| Theo | carries a thing alone rather than hand any part of it to somebody else |
+| Odile | puts everything she feels into what her body is currently doing |
+| Fen | keeps a record of what passes through, because nothing is hers to keep |
+
+---
+
+## Axis 9: what a compliment does
+
+This is where the sheets had converged worst, and it is worth its own axis because it
+happens in every scene with an adult in it. Six of them had some version of *turns it
+back to the work*, which is the institution showing through and is not a character. The
+shared baseline still holds, in that none of them accepts praise as a statement about
+themselves. What each one does instead is now different in every case.
+
+| character | praised, they |
+| :-- | :-- |
+| Chloe | treats it as a checkable claim about the work, checks it, and hands back the flaw the other person missed while they are still speaking |
+| Ruth | asks what it was measured against and how many were in the comparison, and says so when the answer disappoints her |
+| Sam | runs the correction all the way out, point by point, trading a compliment he did not earn for a number he did |
+| Kavi | pre-empts it by naming how easy the thing was |
+| Nadia | asks what it is going to be used for, converting an idle mechanism into a task |
+| Priya | is straightforwardly pleased, says so out loud, and has forgotten it inside the hour |
+| Eli | hands back the one part of the claim that can actually be checked |
+| Theo | assumes it was measured against the wrong thing and goes looking for what the person missed |
+| Odile | answers with the number and no sentence around it, which reads as a brush-off and is not |
+| Fen | is uncomfortable about being looked at rather than about the praise, and gets the attention back onto the object with a fact |
+
+---
+
+## Axis 10: one word per person, and nobody shares it
+
+The convergence audit found the same handful of adjectives doing the characterising work
+on most of the sheets: **flat** on nine of the ten, **quiet** on eight, **plain** and
+**direct** on eight each. An adjective on six sheets tells a writer nothing about any of
+the six. The register word is now assigned and exclusive, and if one of them turns up on
+somebody else's sheet it should be cut there rather than added here.
+
+| register word | owner | why it is theirs |
+| :-- | :-- | :-- |
+| flat | Nadia | one delivery for every content, which is the whole of her sheet's first section |
+| level | Kavi | the same temperature for a fault report and a bereavement |
+| bare | Odile | a number with no sentence built around it |
+| loud | Ruth | the thing a room notices first, and it runs the wrong way from most people's |
+| unbothered | Sam | publicly incapable at zero cost |
+| unhedged | Theo | he is the only one who hedges, so dropping them is his event |
+| straight-faced | Eli | the joke is the register, not a decoration on it |
+| run-on | Priya | the only one who does not stop at the first complete thought |
+| literal | Fen | the practical fact first and the feeling about it second and shorter |
+| unmoderated | Chloe | no small setting on anything, in either direction |
+
+The Halstead staff sheets are the deliberate exception. A teacher's correction being flat
+and uncushioned is an institutional rule stated in the index and in `_CALIBRATION.md`,
+not drift, and stripping it there would fight a rule the book depends on.
+
+The adults outside Halstead are not covered by that exception and have not been through
+this pass. Three of them, Aldana, Whitaker and Bryce, are currently characterised as flat
+in the index line itself, which is the same defect the ten cohort sheets have just had
+removed. That is the next pass, not this one.
 
 ---
 

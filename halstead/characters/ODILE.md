@@ -6,6 +6,8 @@ exceptional too.
 
 **Age span:** 11 to 21 | **MBTI:** ISFP (a writing aid, not a claim) | **IQ:** high enough to be admitted everywhere she applied, and she would put herself at a B plus
 
+**Engine:** puts everything she feels into what her body is currently doing.
+
 ## The thing to get right first
 
 **She cannot register her own rank, and this is a ban on registering rank, not
@@ -49,11 +51,11 @@ She opens up in exactly one circumstance, below.
 
 | | |
 | :-- | :-- |
-| sentence shape | short, flat, observational, about somebody other than herself |
+| sentence shape | short, bare, observational, about somebody other than herself |
 | disagrees by | doing the thing rather than answering |
 | length | brief with everybody, and long only for her brother |
 | at length | arranging for one specific person to watch her do the thing she is good at |
-| jokiness | dry confirmation of somebody else's read, sharpened, delivered flat; never a joke she started |
+| jokiness | confirmation of somebody else's read, sharpened, and handed back with nothing added; never a joke she started |
 | hedging | none, anywhere |
 | questions | rare, and practical when they come |
 | figurative | not allowed, ever |
@@ -101,7 +103,7 @@ somebody else gets a short observation instead.
 
 ## Under pressure
 
-**Tired**, she gets quieter rather than short-tempered, and lets somebody else
+**Tired**, she gets slower and more economical rather than short-tempered, and lets somebody else
 do more of the talking.
 
 **Wrong**, she does not argue. She performs the corrected version once, in
@@ -116,7 +118,11 @@ said before, during or after. An hour later she is at dinner as usual.
 
 **Angry**, she gets exact rather than loud: she resets a stance or re-coils a
 line that did not need it, harder than the task requires, until whatever set
-her off has passed.
+her off has passed. The anger points at herself almost every time, whatever
+actually caused it, and she does not have the habit of holding another person
+responsible for a bad result of hers. A writer wanting her to blame somebody
+will have to build the reason in the scene, because the disposition is not
+there.
 
 **Embarrassed**, which is rare and happens mostly around the one person whose
 opinion she visibly minds, she goes still a beat too long and then finds
@@ -223,7 +229,7 @@ competent since before she could read, and at home that competence gets the
 same shrug as anything else a body does well, because her mother's professional
 frame treats a strong, well-used body as maintenance rather than achievement.
 Her father works in construction, on his feet all day, hands rough by the time
-he is home. A child who can run flat out or hold a position under load is doing
+he is home. A child who can run all out or hold a position under load is doing
 what the family already does, and the family treats it like carrying in the
 groceries.
 
@@ -264,10 +270,10 @@ Sitting through a class or a meal is the closest thing to discomfort she shows,
 and she takes it by putting her hands to something: resetting her own wraps,
 checking a knot, rather than fidgeting loosely.
 
-Dressed, she runs practical over anything else: kit that will not catch,
-sleeves pushed up past the scar rather than pulled down over it, hair kept back
-and out of the way. She eats fast and a lot, standing when she can get away
-with it, and finishes before people who started ahead of her. She sleeps hard
+Dressed, she runs practical over anything else: kit that will not catch, the burn
+on her forearm left on show rather than covered over, hair kept back and out of
+the way. She eats a great deal and finishes before people who started ahead of
+her, without appearing to hurry at any point. She sleeps hard
 and does not stir easily, and goes down late on nights she is working something
 out physically rather than lying still and thinking in words.
 
@@ -285,17 +291,20 @@ happening will need her hands.
 Bored, she finds something to do with them: resetting a knot, turning an object
 over, correcting somebody's stance without being asked.
 
-Praised, she has no particular reaction. Losing, or hitting a hard limit, is
-physical and wordless and then over.
+Praised, she answers with the number and no sentence around it, and the person who
+praised her generally reads that as a brush-off and it is not one. It is the whole
+of what she thinks is being asked. Losing, or hitting a hard limit, is physical and
+wordless and then over.
 
 At two in the morning she is still moving something with her hands rather than
 lying still. A free Saturday goes to climbing, further out than she is supposed
 to go alone.
 
 What she finds funny in other people is competence done casually with nobody
-announcing it. Her humour runs on agreement, sharpened, delivered flat.
+announcing it. Her humour runs on agreement, sharpened, and handed back with
+nothing added to it.
 
-She can be unfair, and the shape it takes is the same flat true-answer instinct
+Where she is unfair, it is the same bare true-answer instinct
 that settles an argument well landing badly when what the other person wanted
 was agreement rather than correction. She will not take it back in words. She
 finds some other way to be useful to that person within the hour, gear checked,
@@ -365,7 +374,7 @@ people and already dressed for whatever is first.
   early.
 - Teach a twelve-year-old a skill she is quietly her own weakest at, and do it
   well anyway.
-- Redo a chore or a gear check for somebody she was too flat with, without
+- Redo a chore or a gear check for somebody she was too bare with, without
   saying why.
 - Get up and leave a room she is bored in, and come back when it is over.
 - Let twenty seconds go by before answering, and not notice that she has.
@@ -387,7 +396,7 @@ She pushes people physically rather than verbally, hands-on, unasked, and
 without checking first whether they wanted the help.
 
 With a friend on the floor she hauls her up by the wrist rather than offering a
-hand, and gives her a correction or a flat true answer without being asked for
+hand, and gives her a correction or a bare true answer without being asked for
 either. With a peer who usually does the correcting, she will top her rather
 than defer, and does it by sharpening somebody else's read rather than
 originating the jab. With people she shares a table and a training floor with,
@@ -411,7 +420,7 @@ to treat it as maintenance.
 
 ## Age and change
 
-At eleven the physical competence is already there and so is the flat
+At eleven the physical competence is already there and so is the bare
 observational register. What is not yet there is the volume of hours; the gap
 between her and everyone else widens steadily rather than appearing.
 

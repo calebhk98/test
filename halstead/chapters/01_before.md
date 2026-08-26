@@ -290,7 +290,7 @@ Then the corner of her mom's mouth drops and stays down. She gets up and starts 
 
 School is boring for everybody, obviously, because there is one room and one worksheet for all of them, but the other children sit through it fine while Chloe is the one who cannot.
 
-Her day comes with a parking lot to watch, an Icarus to say out loud and a book taken off her in reading, and she is worse at the plain ordinary part everybody has to do, so the only fix is getting better at sitting there, the way some people can hold their breath a long time and some people cannot.
+She is worse at the plain ordinary part everybody has to do, so the only fix is getting better at sitting there, the way some people can hold their breath a long time and some people cannot.
 
 So in January she decides to get good at sitting there, and by February she can make a worksheet last nearly to the end by holding the pencil over the page and moving it every so often.
 

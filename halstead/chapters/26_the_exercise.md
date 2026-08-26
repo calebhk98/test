@@ -64,7 +64,7 @@ Ives comes back with the notebook open. "Every harness in that pipe was in a ste
 
 Sam says the contact rule, close to word for word, because he read the laminated card twice at the table while the man ahead of him was signing for his own equipment. Ives says right, and writes for a considerable while, and they put Sam back on his bearing not long after.
 
-The fifteen seconds before the pipe are what he carries away with him. He had thirty feet of open ground to read it from and he went in regardless, and that is the part he keeps returning to on the walk, worrying it like a bad weld. Whatever happened once he was inside he can account for, apart from the portion Ives wrote down. The seconds where he decided the culvert was worth going into blind.
+The fifteen seconds before the pipe are what he carries away with him, the part he keeps returning to on the walk, worrying it like a bad weld.
 
 ________________
 

@@ -12,7 +12,7 @@ The gap reads as a question rather than a verdict. It is long enough to matter a
 
 Eli pulls the logs. No error, no restart, no gap. There is no nine minutes anywhere in them, and the process reports itself running the whole time.
 
-Page five of the document defines what counts as being noticed, in language exact enough that Eli argued two of its clauses into their final shape himself: an external party observing, recording, or interacting with the tool in any manner inconsistent with its intended dormancy. The page is open in the next window before he's finished reading the logs a second time. He reads the clause the way he'd read a spec he was trying to break, once for what it says and once for what it would take to make it not apply. All of the logs still describe what they have always described: a dormant process, unremarkable, exactly the state the clause was written to leave alone. On the only reading he can defend to himself, that's where tonight sits, and he closes the window and opens the thread where Kavi already is. It's a decision made alone, at his own desk, and for now it stays exactly that: his, not the group's, not yet.
+Page five of the document defines what counts as being noticed, in language exact enough that Eli argued two of its clauses into their final shape himself: an external party observing, recording, or interacting with the tool in any manner inconsistent with its intended dormancy. The page is open in the next window before he's finished reading the logs a second time. He reads the clause the way he'd read a spec he was trying to break, once for what it says and once for what it would take to make it not apply. All of the logs still describe what they have always described: a dormant process, unremarkable, exactly the state the clause was written to leave alone. On the only reading he can defend to himself, that's where tonight sits, and he closes the window and opens the thread where Kavi already is.
 
 Kavi's watcher, whose entire job is to see anything that anybody else might see, reports a healthy process across the whole window.
 
@@ -80,7 +80,7 @@ theo: and if hes made one mistake
 
 theo: how many has he made that we didnt catch
 
-Theo closes his laptop with both hands, a beat before he's fully decided the conversation is over. Sam sets his phone face down on a folded stack of laundry he still hasn't finished and goes back to folding it. Ruth's screen dims on its own after ninety seconds of her hands staying off the keys, while she's already back on that page, the paragraph lit up once more before she shuts the laptop for the night, having checked, which was the whole point of looking.
+Theo closes his laptop with both hands, a beat before he's fully decided the conversation is over. Sam sets his phone face down on a folded stack of laundry he still hasn't finished and goes back to folding it. Ruth's screen dims on its own after ninety seconds of her hands staying off the keys, while she's already back on that page, the paragraph lit up once more before she shuts the laptop for the night.
 
 ________________
 
@@ -90,4 +90,4 @@ Chloe reads that at one in the morning, with work waiting on the other side of a
 
 Months into the job now, her badge scans without a second glance and the elevator ride already reads like a formality rather than an event, the kind of building that stopped feeling strange to walk into somewhere early on. The messages get read once, and the phone goes face down on the nightstand, another of the nights she has set it down on a piece of news that leaves tomorrow exactly where it was. Her eyes close on the version of tonight that ends here, not on the one that keeps going somewhere she'd have to stay awake to follow.
 
-She goes in the next day and does her job, which is the job of a government that has been trying to find this man since before she could read, and which has two wrong answers on file and no idea that seven people in their twenties settled it in sixteen weeks.
+She goes in the next day and does her job.

@@ -16,6 +16,13 @@ Start here: **`_CALIBRATION.md`** — how good these people actually are, what a
 means at a school where everyone is a genius, and why the teachers never let a student
 know anything is impressive. Every sheet is written against it.
 
+Every cohort sheet now opens with a one-line **Engine**, directly under the age and IQ
+line: the single sentence to have in mind before anything else on the sheet. The ten are
+collected in `_DIFFERENTIATION.md` Axis 8, and no two of them produce the same behaviour
+in the same room. Axis 9 does the same for what a compliment does to each of them, which
+is where the sheets had converged worst, and Axis 10 assigns each character one register
+word that nobody else may use.
+
 Then **`_DIFFERENTIATION.md`**, which leads with how much similarity is correct —
 a cohort taught by the same adults from age seven should sound alike, and the parents are
 married — then lists the shared baseline to keep and the margins that sit on top of it.
@@ -47,13 +54,13 @@ carried from the synopsis, which states they are a reader's inference.
 
 | | file | MBTI | IQ | the voice in one line |
 | :-- | :-- | :-- | :-- | :-- |
-| Chloe | `CHLOE.md` | INTJ | 160-168 | Builds a physical parallel and argues that instead of the claim. Open by default; the clipped register is an injury, not a baseline. |
-| Ruth | `RUTH.md` | INTJ | 175+ | Assertion first, then the reason, with your name in the middle of the correction. |
-| Sam | `SAM.md` | ESTP | 155-165 | The shortest in the cast. Flat declarative, a number first, no subordinate clause. |
+| Chloe | `CHLOE.md` | INFJ | 160-168 | Builds a physical parallel and argues that instead of the claim. Open by default; the clipped register is an injury, not a baseline. |
+| Ruth | `RUTH.md` | ENTJ | 175+ | Assertion first, then the reason, with your name in the middle of the correction. |
+| Sam | `SAM.md` | ESFP | 155-165 | The shortest in the cast. One clause, a number first, no subordinate clause. |
 | Kavi | `KAVI.md` | INTP | 165-175 | Three words or one unbroken technical run, never in between. |
 | Nadia | `NADIA.md` | ESTJ | 160-170 | Imperative. Short independent clauses, no connectives, no hedging. |
 | Eli | `ELI.md` | ENTP | 160-170 | Reframes the terms before answering, then repeats himself minus the contraction. |
-| Theo | `THEO.md` | INFP | 165-175 | The longest in the cast, briefing-shaped, and the only character who should hedge. |
+| Theo | `THEO.md` | ISFJ | 165-175 | The longest in the cast, briefing-shaped, and the only character who should hedge. |
 
 Eli and Theo do not speak at all in the first twenty chapters.
 
@@ -61,10 +68,10 @@ Eli and Theo do not speak at all in the first twenty chapters.
 
 | | file | presence | the one thing |
 | :-- | :-- | :-- | :-- |
-| Priya | `PRIYA.md` | recurring across most of the school years | The only character who runs on. More page presence than three of the seven above. |
+| Priya | `PRIYA.md` | recurring across most of the school years | The only character who runs on, and the only one who simply takes a compliment. More page presence than three of the seven above. |
 | Odile | `ODILE.md` | frequently mentioned, barely ever speaks | Holds the highest number in the book and never reacts to it on the page. |
 | Owen | `OWEN.md` | mentioned only, never speaks | The only person who didn't want to be there. Established entirely through others. |
-| Fen | `FEN.md` | returns three times, never with a line | Treats every space as temporary. |
+| Fen | `FEN.md` | returns three times, never with a line | Treats every space as temporary, and keeps the record instead. |
 
 ## The peers who make it harder
 

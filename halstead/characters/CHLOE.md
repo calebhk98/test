@@ -4,8 +4,11 @@ Point-of-view character, ages six to twenty-one. Verbal, analytical, and reachin
 difficulty everywhere she is allowed to. She never reads an outcome, good or bad, as
 information about herself.
 
-**Age span:** 6-21 | **MBTI:** INTJ, a writing aid and not a claim | **IQ:** high 160s by
+**Age span:** 6-21 | **MBTI:** INFJ, a writing aid and not a claim | **IQ:** high 160s by
 reader inference. It is never stated in the book and she never learns it.
+
+**Engine:** wants the reason underneath the answer, and has no moderate setting on
+anything.
 
 ## The thing to get right first
 
@@ -93,7 +96,7 @@ What changes: fear and adrenaline drain out of her, year by year, as training ac
 By her mid-teens she can walk away from something violent without shaking.
 
 **And the compliant minimum mostly goes away.** It is not a permanent trait, and writing
-it as one is the fastest way to produce the flat register outside readers report. It was
+it as one is the fastest way to produce the affectless register outside readers report. It was
 never a personality trait. It is a response to a specific injury: being laughed at for saying the true thing, in one
 particular room, at six. She then spends eleven years somewhere the true thing is the
 expected answer, and the flinch has nothing to feed on. By twenty she is an adult who
@@ -129,7 +132,7 @@ as a rhetorical trick, and she does it as readily when she is wrong as when she 
 With her friends and her family she is open, fast, and enthusiastic, and she talks past
 the point where anyone asked for more. She states rather than asks and asserts rather than
 hedges: she does not open a claim with *I think* or *maybe* or *sort of*. That is not the
-same as certainty, and a flat unhedged *I do not know* is her commonest answer when she is
+same as certainty, and a bare unhedged *I do not know* is her commonest answer when she is
 hurt, sometimes meaning it and sometimes meaning that she knows exactly and has no words
 that would survive being said out loud.
 
@@ -140,14 +143,16 @@ questions thin out as she learns which ones cost her, and that thinning is damag
 maturity.
 
 She is the one person in the cast allowed an invented image, and she never explains one.
-She says it once, flat, and lets somebody else argue with it. The images come from whatever
+She says it once, without cushioning it, and lets somebody else argue with it. The images come from whatever
 she has read lately, mapped onto something physically in front of her, and she does not
 repeat one or check whether it landed. They are earnest. A deflating, literal-minded gag
 is not her channel, however much she loves it in other people.
 
-Her jokes are dry when they come: a flat concession delivered as a fact, a technicality
-offered straight-faced. That describes her *wit*, not her capacity for delight, which is
-enormous. She laughs helplessly, teases, and bickers for fun.
+Her wit runs on noticing that an ordinary arrangement of the world is absurd, and
+offering the technicality straight-faced as though it settled the matter. She starts
+laughing before she has finished the sentence, every time, and often has to start it
+again. That describes her *wit*, not her capacity for delight, which is enormous. She
+laughs helplessly, teases, and bickers for fun.
 
 ### Dials
 
@@ -157,7 +162,7 @@ enormous. She laughs helplessly, teases, and bickers for fun.
 | disagrees by | converting the claim into a physical example and arguing that instead |
 | length | long is the default with people she trusts. The short register is the exception, and it is aimed at particular people, not at a category |
 | at length | with her friends and her parents, on any mechanism she has just worked out, and on anything she is excited about. She will run on, jumping detail to detail, past where she was asked |
-| jokiness | low as wit, high as delight. Dry, flat, technical when she is funny on purpose |
+| jokiness | low as wit, high as delight. Straight-faced technicality, ruined by her own laughing before she gets to the end of it |
 | hedging | none before a claim |
 | questions | many at six and seven, thinning under injury, returning as an adult with people who answer straight |
 | figurative | allowed, and hers alone. Earnest, unexplained, said once |
@@ -252,11 +257,30 @@ exhaustion rather than fear.
 Tired, she goes quiet and monosyllabic rather than snappish: the same compression she
 learned for hostile rooms, turned briefly and unfairly on people she trusts.
 
-Wrong, she accepts the correction flatly and without arguing back, including a correction
-she had resented for a week. Losing, she stays visibly annoyed for about a week and then
-lets it go on her own, without anyone talking her out of it. Praised, she turns it back to
-the work, and will correct her own finished piece back to its flaw in front of the person
-who just complimented it.
+**Angry with someone she loves, she detonates**, and this is the register a writer is
+most likely to leave off her by mistake. It builds silently, out of sight, for as long as
+she can hold it, and then it comes out all at once and physically: full volume, the
+cruellest available true thing, the door hard enough to move the frame. She means every
+word of it for the length of time it takes to say it. Then she is behind the door
+listening for footsteps, waiting to be come after and told what it costs, and when nobody
+comes she is worse off than if somebody had, because now the thing she said is simply
+standing there with nothing on top of it. She will carry that for hours and apologise
+sideways rather than directly, by doing something for the person instead of saying it.
+The detonation is rare, it is only ever aimed at people who cannot leave, and it does not
+age out; what changes with the years is how long the silent build lasts before it goes.
+
+Wrong, she argues, and she argues at length and past the point where she has stopped
+believing herself, because the embarrassment is bigger than the correction is. Her ears go
+hot and she keeps going. Then it turns over, sometimes in the same conversation and
+sometimes a day later, and she concedes the whole thing at once, out loud, completely, and
+means it, and then has nothing further to say for a while. A writer needs both halves: the argument is
+not stubbornness and the concession is not defeat, and she is the only one here who does
+the two of them in that order.
+
+Losing, she stays visibly annoyed for about a week and then lets it go on her own, without
+anyone talking her out of it. Praised, she hears a factual claim about the work rather than
+a kindness about herself, so she checks it, finds the flaw the other person missed, and
+hands it to them while they are still complimenting the piece.
 
 She holds her own finished work to a standard nobody assigned her. She discards or redoes
 work that does not clear her own bar, quietly, without announcing that she did it, and
@@ -316,7 +340,7 @@ her is doing the same thing.
   term, off a list on a wall. With dance she can feel it while it is happening, half a beat
   behind the girl in front of her for fifty minutes at a stretch, in front of the same room
   every week for a year. She asks outright at eight to be let out of it and is refused
-  flatly, twice, the second refusal pre-empting the other four subjects she might have come
+  twice and without softening either one, the second refusal pre-empting the other four subjects she might have come
   about. Activities she chose for a reason she simply stops attending once the reason is
   gone; this one is compulsory, and the refusal stands.
 - **The one she is quietly proud of: the forge.** She picked it herself, ungraded and
@@ -348,7 +372,7 @@ body, in the same year.
 
 **The house.** An ordinary house in an unremarkable, non-wealthy town, several hours by car
 from her school. It is the kind of street where neighbours are known by name and nobody
-nearby has money to give away, and her mother will say so flatly if anyone suggests
+nearby has money to give away, and her mother will say so without softening it if anyone suggests
 otherwise. There is a garage where the bike lives under a sheet between summers, and where
 at thirteen she and her father spend three weeks building new back steps, badly enough in
 one spot that a riser sits four millimetres proud and stays that way, because nobody is
@@ -421,8 +445,8 @@ peers, and nearly everything physical the book gives her runs through her hands.
   knuckle set slightly crooked because she reset it herself at eleven at night and went to
   bed rather than wake anyone. A separate burn on the inside of the wrist she has never
   shown anyone. Blunt practical nails, kept short for work.
-- **Posture and recurring gesture:** flat hands on a table or desk, up on her toes, whenever
-  she is mid-argument and enjoying it. It recurs from six onward and is the most reliable
+- **Posture and recurring gesture:** up on her toes with both hands braced on the edge of
+  a table or a desk, whenever she is mid-argument and enjoying it. It recurs from six onward and is the most reliable
   physical tell she has. Otherwise still, with one private, silent tic: four fingers tapping
   a rhythm against her own leg while she walks, rehearsing a timing count nobody else can
   see.
@@ -457,9 +481,10 @@ peers, and nearly everything physical the book gives her runs through her hands.
 
 - **Bored:** watches something else entirely rather than performing patience. As she gets
   older she simply stops attending the thing, with no complaint and no announcement.
-- **Wrong:** accepts the correction flatly, once, plainly, and does not argue it again.
-- **Praised:** turns it back to the work, and corrects her own finished piece back to its
-  flaw the moment somebody compliments it.
+- **Wrong:** argues past her own belief in the argument, ears hot, and then concedes the
+  whole of it at once and has nothing further to say for a while.
+- **Praised:** treats it as a claim about the work that can be checked, checks it, and
+  hands back the flaw the other person missed while they are still speaking.
 - **Losing:** visibly annoyed for about a week, then lets it go on her own.
 - **Tired:** quiet and monosyllabic rather than snappish.
 - **At two in the morning:** reading, or working a problem on the floor with the corridor
@@ -467,17 +492,17 @@ peers, and nearly everything physical the book gives her runs through her hands.
   that day.
 - **A free Saturday:** the forge, every session, every week it is open.
 - **What she finds funny in other people:** deflating literalism, especially aimed at
-  something that has just frightened her. A flat literal-minded correction landing in the
+  something that has just frightened her. A literal-minded correction landing in the
   middle of a panic attack will have her laughing until she has to bend over against a wall.
 
 ## Stuck, bored, and wrong in public
 
 What a person sitting across the room from her would actually see, which is
-where she is most at risk of reading flat, because so much of her is interior.
+where she is most at risk of reading affectless, because so much of her is interior.
 None of the below needs a school: a task, a group, and somebody in charge.
 
-**Stuck.** A visible sequence, and the same one every time. She goes quiet.
-She redraws the problem on a clean page. She redraws it again with her own
+**Stuck.** A visible sequence, and the same one every time. She stops mid-sentence
+and reaches for a clean page. She redraws the problem on it. She redraws it again with her own
 numbers in place of the ones she was given. Then she leaves, and solves it alone
 that night on the floor, and arrives the next morning wanting to explain it to
 somebody before breakfast.
@@ -632,7 +657,7 @@ done with her honesty.
   sentence.
 - **The friend who is easy company:** she takes up an activity because he or she does it,
   and gives easy company back, right up until the shared activity stops. Then she leaves,
-  cleanly, and hands over the flat dismissive reason rather than the true one. Told plainly
+  cleanly, and hands over the dismissive reason rather than the true one. Told plainly
   that it had been fun, she will not soften it: she agrees, and says she had been waiting
   for the fun to arrive. It is the one kind of relationship she can end without guilt.
 - **Her mother:** wants to be believed when she says something is fine, and gives her the
@@ -653,7 +678,7 @@ done with her honesty.
 - Likes people who argue back, and never disengages from an argument.
 - Likes being given a whole problem and left alone with it.
 - Likes an audience who will sit through the entire unhedged version.
-- Habit: pivots away from a vulnerable moment with a flat fact rather than a feeling.
+- Habit: pivots away from a vulnerable moment with a fact rather than a feeling.
 - Dislikes being told to slow down or wait for the room.
 - Reads anything with words on it, without deciding to. When she stops, something is wrong.
 - Ordinary childhood pleasures at full volume: a sprinkler, syrup on her fingers, sitting on
@@ -663,7 +688,7 @@ done with her honesty.
 
 The four failure modes outside readers actually produced, in the words they used.
 
-1. **An alien, or an intelligence passing for human.** Produced by flat affect through a
+1. **An alien, or an intelligence passing for human.** Produced by absent affect through a
    scene that should hurt, narration that reports her state instead of her feeling it, and
    dialogue trimmed to an average in a room where she is safe. The fix is the body reaction
    and the run-on.

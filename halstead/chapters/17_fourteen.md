@@ -74,7 +74,7 @@ Engineering and design works the other way round from wood shop and the forge, w
 
 Chloe reads her own pages again with the clamp sitting on top of them, and the pressure is on there, and the travel, and the tolerance, and which way it opens, so she runs a finger down the first page, then the second, then turns them both over and finds the backs blank.
 
-"There's a page and a half here about how hard it squeezes and a blank where the thing being squeezed goes, because I wrote down the pressure, the travel and the tolerance, and missed the one that actually matters."
+"There's a page and a half here about how hard it squeezes and a blank where the thing being squeezed goes."
 
 The no-libraries project runs for a month in the spring, and the brief is one sentence: something that does a real job, all of it written from scratch by you.
 
@@ -176,11 +176,11 @@ Her father sets his fork down. "She said something on the phone in October."
 
 "I thought you knew," he says. "I thought it was fine."
 
-Her mother sets the dish down in the middle of the table, straightens it, and goes into the kitchen, staying there while her father moves the salt, puts it back, then gets up and starts stacking plates still half full. The real sentence stays exactly where it's been all evening, buried under the one about pie: how much of the last four years already happened at a range and a mat three hours from this table, with her mother getting it secondhand and six months late. The kitchen gets a few minutes and the plates get stacked instead, and that turns out to be as much of the sentence as the room can hold.
+Her mother sets the dish down in the middle of the table, straightens it, and goes into the kitchen, staying there while her father moves the salt, puts it back, then gets up and starts stacking plates still half full. The real sentence stays exactly where it's been all evening, buried under the one about pie. The kitchen gets a few minutes and the plates get stacked instead, and that turns out to be as much of the sentence as the room can hold.
 
 Her mother comes back in and asks whether anybody wants the pie warmed up, and her father and Chloe both say yes at once, so he turns the game on and they eat it in front of that, with her mother coming to sit on the arm of his chair for the second half.
 
-"That's a hold. That is a hold, that's been a hold all night," her mother says, and it is the closest either of them comes to naming what has been going on at the table all evening.
+"That's a hold. That is a hold, that's been a hold all night," her mother says.
 
 On Sunday she asks whether the man behind the line is armed, and what happens if somebody drops one, and whether anybody has ever turned round, and Chloe answers all three and then tells her about the flag they call the wind off, and her mother listens all the way through and comes back with one more question about the man behind the line.
 

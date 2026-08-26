@@ -5,7 +5,9 @@ true and uncomfortable meaning even when he would rather not have found it, and
 who was raised by two people fifty years older than him in a way that is
 audible in every sentence he builds.
 
-**Age span:** 11 or 12 through 21 | **MBTI:** ISTJ (a writing aid, not a claim) | **IQ:** well into genius range by any outside measure, and unremarkable in the only room that has ever measured him
+**Age span:** 11 or 12 through 21 | **MBTI:** ISFJ (a writing aid, not a claim) | **IQ:** well into genius range by any outside measure, and unremarkable in the only room that has ever measured him
+
+**Engine:** carries a thing alone rather than hand any part of it to somebody else.
 
 ## The thing to get right first: what he does with a thing he cannot say
 
@@ -145,7 +147,8 @@ never twice, and never in a sentence that is already carrying a hedge.
 lengthen, as though precision is what he reaches for when he no longer has the
 energy to trust his own judgement.
 
-**Wrong**, he goes quiet and returns later with it fully worked out. He does not
+**Wrong**, he says nothing further in that exchange and returns later with it fully
+worked out. He does not
 argue in real time. What comes with the correction is an apology sized for
 something much larger, delivered once and then not repeated, and the person
 receiving it usually has to tell him it was fine.
@@ -168,6 +171,14 @@ rather than stopping to explain.
 
 At two in the morning he is still working something over privately, producing
 nothing anyone else will see until he has finished with it.
+
+**When something has genuinely changed, he keeps the schedule exactly.** Same hours,
+same order, same small unnecessary rituals, performed with more care than usual rather
+than less. This is not denial and he would not recognise the description. Changing any
+part of the routine would be a way of saying out loud that the world is different now,
+and he is not ready to say it, so the routine goes on holding the shape of the old world
+until he is. The tell for a reader is the care: the routine is never so precisely kept
+as in the week after something has gone wrong.
 
 Three ways a writer gets him wrong: giving him a snap quotable reaction the
 instant something happens, when his pattern is delay and then a careful
@@ -313,8 +324,9 @@ claims in it.
 
 Bored, he rereads something looking for what he missed the first time. Idle
 time with no task in it makes him uneasy in a low-grade way he would not call
-boredom. Praised, he deflects toward the source material or the team, because
-he is not sure the praise is measuring the right thing. Losing, he takes it as
+boredom. Praised, he assumes it has been measured against the wrong thing and goes
+looking for what the person praising him did not see, and often finds it, and
+does not report it. Losing, he takes it as
 confirmation of something he already privately suspected, that the gap between
 what he can see and what he is missing is wider than most people's, and files
 it as a data point he was already tracking.
@@ -327,8 +339,8 @@ one small inherited ritual performed once, to nobody. Elated, on a day
 something has genuinely gone right, he breaks his own schedule and calls home a
 day early, which is the only reliable tell.
 
-He can be unfair, and the shape it takes is a line delivered too flat to
-somebody who was trying to soften a thing he had already decided not to soften.
+Where he is unfair, it is a line delivered with every qualifier stripped off it
+to somebody who was trying to soften a thing he had already decided not to soften.
 He does not apologise in words; the next thing he sends that person carries
 more of the underlying material than they actually asked for.
 
@@ -427,7 +439,7 @@ of them.
 - Hold a door, wait for a gap that never comes, and go home with the useful
   thing unsaid.
 - Send someone more of the underlying material than they asked for, after
-  realising an earlier answer had been too flat.
+  realising an earlier answer had come out too bare.
 
 ## Would never
 
@@ -440,7 +452,7 @@ of them.
 He defers to procedure and to anybody holding a legitimate standard, and keeps
 deferring even when he thinks they are wrong.
 
-He pushes almost nobody. When he does, it is a flat contradiction of somebody
+He pushes almost nobody. When he does, it is an unhedged contradiction of somebody
 he trusts who has just softened something that should not be softened, with no
 hedge at all, which is startling from him precisely because everything else he
 says is qualified.
@@ -491,7 +503,7 @@ the things he cannot say get heavier.
 **Eli.** Both are quiet, technical, cryptographers by training, and speak mostly
 inside the same group. Theo's lines run long, multi-clause, and end in
 procedural compliance or an open unresolved question; Eli's are short, relabel
-whatever was just said, and end in a flat assertion. If a line hedges, or ends
+whatever was just said, and end in a bare assertion. If a line hedges, or ends
 without resolving, it is Theo's. If it is a clipped fragment, it is almost
 certainly not.
 

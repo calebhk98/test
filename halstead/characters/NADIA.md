@@ -7,6 +7,8 @@ in her adjectives.
 
 **Age span:** roughly 15 to 21 | **MBTI:** ESTJ (a writing aid, not a claim) | **IQ:** genius range by outside norms, unremarkable in the only room that has ever measured her
 
+**Engine:** cannot leave a broken mechanism alone in a room she is standing in.
+
 ## The thing to get right first
 
 Read this whole section before writing a line of her. Where anything further
@@ -559,8 +561,9 @@ morning. Hands are the most-used part of her: short nails, a burn scar from the
 shop that she has never explained to anyone, a grip that surprises people the
 first time.
 
-She eats fast and standing when nobody is watching, and sits down properly when
-somebody is, because that is faster than arguing about it. She sleeps in short
+She eats whatever is nearest and quickest and could not tell you afterwards what
+it was, and she sits down properly to it when somebody is watching, because that
+is faster than arguing about it. She sleeps in short
 complete units and wakes without a transition.
 
 She wears what is practical over what matches. The one thing she is fussy about
@@ -579,9 +582,10 @@ problem and closest to the door, and people orient to her without being told to.
 In a room she is not running she plants herself in one spot and works from there
 rather than circulating.
 
-Bored, she finds another task rather than saying so. Praised, she turns it back
-onto the mechanism rather than accepting it about herself. Losing, she treats it
-as information to act on and goes straight to fixing it.
+Bored, she starts the next thing without announcing that she has. Praised, she
+asks what it is going to be used for. A compliment is an idle mechanism and she is
+converting it into a task, which is the same thing she does to anything idle. Losing,
+she treats it as information to act on and goes straight to fixing it.
 
 Tired, or at two in the morning, she sleeps and comes back online without a
 transition.
@@ -590,8 +594,7 @@ A free Saturday goes to something with a visible end state: a repair, a fix,
 physical work. She will do this in company and prefers it to doing it alone,
 which nobody would guess from how she talks about it.
 
-She is capable of being unfair, and the shape it takes is always the same: she
-reads what somebody is hiding, decides the truth is worth more than their
+Where she is unfair it is always the same shape: she reads what somebody is hiding, decides the truth is worth more than their
 comfort, and keeps pressing past the point where they would have stopped,
 without checking whether they agree.
 

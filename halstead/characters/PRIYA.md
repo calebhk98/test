@@ -4,7 +4,9 @@ The girl who has already worked out that nobody has to keep score of the things
 she cares about most, and who spends her attention on the problem in front of
 her rather than on the rank attached to it.
 
-**Age span:** roughly 7 to 18 | **MBTI:** ESFP (a writing aid, not a claim) | **IQ:** genius range, the same tier as everyone around her, and never a number she has wanted
+**Age span:** roughly 7 to 18 | **MBTI:** ENFP (a writing aid, not a claim) | **IQ:** genius range, the same tier as everyone around her, and never a number she has wanted
+
+**Engine:** processes out loud, immediately, at whoever is nearest.
 
 ## The thing to get right first
 
@@ -105,15 +107,14 @@ is her opening move, so once per entrance rather than once per line.
   complete thought.
 - YES if a short opener is immediately followed by the longer thing it was
   opening for. Her short lines never stand alone.
-- YES if it states something, trivia included, as flat settled fact with no
-  hedge.
+- YES if it states something, trivia included, as settled fact with no hedge.
 - YES if a disagreement is voiced as agreement plus an unrelated action
   continuing in the background.
 - YES if an animal turns up in a comparison about a person or a situation and
   the line never flags it as a comparison.
 - YES if it is a piece of specific physical detail about her subject offered to
   somebody who did not ask.
-- NO if it is one flat single-clause declarative with nothing added after the
+- NO if it is one bare single-clause declarative with nothing added after the
   full stop.
 - NO if the figurative language is about anything other than an animal.
 - NO if it argues a point by comparison to a parallel situation. She piles up
@@ -137,7 +138,10 @@ score was never the part she was tracking.
 **Cornered**, she demonstrates. She will physically go and do the thing rather
 than keep talking about whether it can be done.
 
-**Praised**, nothing much happens. It does not register as a currency.
+**Praised**, she is straightforwardly pleased and says so, out loud, in front of
+whoever is there, and has forgotten it inside the hour. She is the only one here
+who simply takes a compliment, and the reason it costs her nothing is that she
+is not keeping a total for it to go into.
 
 **In somebody else's crisis** she does the practical thing quietly and does not
 discuss it: she notices the person who has stopped being all right before
@@ -308,10 +312,14 @@ falls asleep anywhere, instantly, with no ceremony about that either.
 
 ## Personality off the page
 
-Bored, she talks, and then goes and finds something physical to do with her
-hands. Praised, nothing much happens; it is not a currency she holds. Wrong or
-losing, the laugh comes first and the accurate account comes second, and neither
-one is a performance.
+Bored, she talks at whoever is nearest, gets moved, and talks at the new
+person, and none of it is defiance; she has simply never learned to hold a
+thought in until a better moment.
+
+Praised, she is openly delighted for about ninety seconds and then it is gone,
+because there is no running total for it to be added to. Wrong or losing, the
+laugh comes first and the accurate account comes second, and neither one is a
+performance.
 
 Delighted, which is her resting state and should be on the page far more than it
 has been, she is loud, physical and completely unembarrassed, and the delight
