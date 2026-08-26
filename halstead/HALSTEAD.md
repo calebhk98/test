@@ -5163,9 +5163,9 @@ Kavi is next, in no hurry to get past her. "And you, young man?" she asks, word 
 
 "Well, that's something," she says, already looking past him for the next.
 
-Chloe is next, the chair between her and the lemonade. "And what are you doing next?" her grandmother asks. Chloe starts on Georgetown, and then the languages, and her grandmother has gone down the row to whoever is coming after her before the answer is finished. "Well, that's something," she says.
+Chloe gets caught on her way past, the chair between her and the lemonade. "And what are you doing next?" her grandmother asks. Chloe starts on Georgetown, and then on the languages, and on the part about the years in the middle of it, and her grandmother has gone down the row to whoever is coming after her some way before the answer is finished. "Well, that's something," she says.
 
-Dana is in the chair along from her, on her phone until Chloe gets that far. "How's school?" she asks, and Chloe tells her it finished about an hour ago, and that Georgetown is August. "That's good," Dana says, and turns to the woman on her other side to say something about the parking.
+Dana is in the chair along from her, on her phone until Chloe gets that far, and she puts it screen down on her knee for the length of it and picks it up again afterwards. "How's school?" she asks, and Chloe tells her it finished about an hour ago, and that Georgetown is August. "That's good," Dana says, and turns to the woman on her other side to say something about the parking.
 
 The third she catches is a stranger to Chloe, a girl from another family's cluster of chairs entirely, in a gown still cinched with somebody's binder clip. By the time the girl has extracted herself and gone to find her own people, Chloe's grandmother turns to Meg with the satisfaction she'd bring to a verdict on a roast. "You all seem like very nice young people," she says, to the field at large.
 
@@ -5181,7 +5181,7 @@ Marek comes off the grass to meet the box and is alongside her before she is pro
 
 ________________
 
-That evening, before anyone's driven off, or signed anything, they are all still on a single patch of grass at once, in gowns still on from the ceremony. Someone has found a speaker from somewhere. Sam and Kavi are a few moves into a card game neither of them has won all year, and Sam is losing again. Ruth is already on her third phone call about a dorm assignment. Iyad has been arranging them by height for a good while, going down the line by name and moving people a half step at a time. Theo gets the photograph while he is still doing it, so what is in it is Iyad's arm out and half of them looking the wrong way. Chloe counts the heads in it before she's decided to: all of them, still in it.
+That evening, before anyone's driven off, or signed anything, they are all still on a single patch of grass at once, in gowns still on from the ceremony. Someone has found a speaker from somewhere. Sam and Kavi are a few moves into a card game neither of them has won all year, and Sam is losing again. Ruth is already on her third phone call about a dorm assignment. Iyad has been arranging them by height for a good while by then, going down the line by name and moving people a half step at a time and then back again. Theo gets the photograph while he is still doing it, so what is in it is Iyad's arm out and half of them looking the wrong way. Chloe counts the heads in it before she's decided to: all of them, still in it.
 
 Sam joins the Army, having been the best fighter in his year since he was ten by a margin wide enough that the field stopped contesting it by the time he was in his teens, and in July, at a recruiting office off the highway outside Pittsburgh, he signs the papers at drill speed: fast, on the first read. The office smells like carpet cleaner and stale coffee, a flag in the corner leaning slightly off true. The recruiter slides five separate forms across the desk and starts explaining what each means. Sam is already signing the first before the man finishes the sentence, but he reads the fifth form properly, twice, because it's the one about pay grade and he wants the actual number. He'd already pulled the deployment rotation numbers off the recruiter's own site in May, better numbers than the desk copy, so that column is settled before he sits down.
 
@@ -5879,13 +5879,13 @@ Word travels round the company by chow that afternoon, the way a number like tha
 
 "Of the shots. There were people in my year who never missed."
 
-"Sure there were." The man who asked has both elbows either side of his tray. "Nobody maxes that test on a cold morning and then sits here telling you what he's bad at. Your score's been up on the board outside the orderly room since lunchtime."
+"Sure there were." The man who asked has both elbows planted either side of his tray, in the manner of somebody settling in for the remainder of an argument he considers already concluded. "Nobody maxes that test on a cold morning and then sits here telling you what he's bad at. Your score's been up on the board outside the orderly room since lunchtime."
 
 "The board's fine, it's just got a top on it, and everybody who hits the top gets the same number." Sam has the pitcher up and hasn't poured with it yet. "There was a girl at that school called Odile. She took me apart on a mat in front of thirty people, put me down twice inside a minute, and then came and found me afterwards to apologise for it, because she reckoned she'd embarrassed me in front of the year."
 
 "A girl."
 
-"She was second in the year and I was first, and she still put me down twice." He pours. "Then in April I lost a small thing out of my own boot and cost a man half an evening getting it back, so you can have that as well."
+"She was second in the year and I was first, and she still put me down twice." He pours, unhurried about it, and returns the pitcher to the middle of the table in precisely the position he removed it from. "Then in April I lost a small thing out of my own boot and cost a man half an evening getting it back, so you can have that as well."
 
 By the end of it several of them are laughing at him, while another has stopped believing a word of any of it.
 
@@ -6997,15 +6997,15 @@ What eventually breaks it is a professor she likes, in office hours, someone she
 
 His office is on the fourth floor, narrow, with a window stuck a half-inch open and a whiteboard crowded with other students' handwriting he hasn't gotten around to erasing. There are very few of her professors here she likes, and she likes him: he corrects a wrong answer the day he gives one, out loud and with no ceremony about it. He's the only person who has ever pushed back on a proof of hers rather than simply crediting the answer. The result she brings him is one she's proud of, something she worked out over a couple of nights, and she states it the way she states everything, conclusion first. "It holds because the boundary term cancels once you fix the sign convention, and once that's fixed the rest follows directly."
 
-"Stop me there, because you have lost me, and you lost me two steps before I said anything about it." He turns the page round on the desk so that it faces him. "From the top."
+"Stop me there, because you have lost me, and you lost me two steps before I said anything about it." He turns the page round on the desk so that it faces him, and reads the top of it over again while he waits. "From the top."
 
-From the top, then. Step one, step two, and at step three he puts his hand flat on the paper.
+From the top, then, and step one and step two go by without any trouble in them at all, and at step three he puts his hand flat on the paper and leaves it there.
 
 "Still lost. Slower than that, if you don't mind."
 
 She slows down. The assumption she'd folded into a single line comes apart into the separate claims underneath, and she states each on its own. "Fixing the convention only puts it in the form the identity is already written in. Then the boundary term goes to zero."
 
-He nods at the first. At the second the nod does not arrive.
+He nods at the first, and at the second the nod does not arrive, and he sits back off the page with the pen still up in his hand.
 
 "Goes to zero how."
 
@@ -7015,9 +7015,9 @@ He nods at the first. At the second the nod does not arrive.
 
 "The tail dies before the boundary does."
 
-He goes back up through it from there, the whole way, and tells her the result holds. Then he caps the pen and sets it down on the desk between them.
+He goes back up through it from there, the whole way to the top, stopping twice more to say a step back to her in his own words before he will take it, and at the end of it he tells her the result holds, and caps the pen, and sets it down on the desk between them.
 
-"That took you five passes," he says. "I have graduate students in their third year who would not have got me there at all." He is already reading the next question on his list.
+"That took you five passes," he says. "I have graduate students in their third year who would not have got me there at all." He is already reading down the next question on his list, with the pen back up in his hand for it.
 
 Ruth thanks him, packs the loose pages into her folder in the wrong order, and leaves before office hours are officially over.
 

@@ -74,7 +74,7 @@ He nods at the first, and at the second the nod does not arrive, and he sits bac
 
 He goes back up through it from there, the whole way to the top, stopping twice more to say a step back to her in his own words before he will take it, and at the end of it he tells her the result holds, and caps the pen, and sets it down on the desk between them.
 
-"That took you five passes," he says. "I have graduate students in their third year who would not have got me there at all." He is already reading down the next question on his list, with the pen back up in his hand for whatever the next of them turns out to need.
+"That took you five passes," he says. "I have graduate students in their third year who would not have got me there at all." He is already reading down the next question on his list, with the pen back up in his hand for it.
 
 Ruth thanks him, packs the loose pages into her folder in the wrong order, and leaves before office hours are officially over.
 

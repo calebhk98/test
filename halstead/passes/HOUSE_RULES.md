@@ -74,9 +74,18 @@ alike; use a comma, a colon, a semicolon, or a second sentence.
 
 ## 4. Word count
 
-2,000 to 4,000 per chapter, and the average is meant to sit around 2,500 to
-3,000. A few longer chapters and the occasional short one are fine. The
-ceiling is not a target: do not expand a chapter toward it.
+2,000 to 5,000 per chapter. The ceiling is deliberately loose and one long
+chapter costs the book nothing, so it is not what is judged.
+
+**The book average is what is judged.** It has to land between 2,600 and 3,600,
+which is what keeps the book near the 300 printed pages the author wants. He
+will accept fifty pages either way and will not accept six hundred. What the
+band refuses is not one long chapter, it is every chapter drifting up.
+
+The ceiling is not a target: do not expand a chapter toward it, and never pad a
+short chapter to reach the floor. A chapter that comes in under 2,000 because a
+pass cut explanation out of it is a better chapter than one inflated back over
+the line. Say so and leave it short.
 
 ## 5. Reading grade climbs with Chloe's age
 
