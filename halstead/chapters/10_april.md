@@ -70,7 +70,7 @@ The second hour she picks herself, off the elective list on the wall, and she pi
 
 "Yours is a triangle," the cooking teacher says, "and a triangle cooks unevenly no matter how good your knife work is otherwise."
 
-"That's not a triangle, it's just wider at one end because that's how the onion grew."
+"It's just wider at one end, because that's how the onion grew."
 
 "It's fine at this end and it's a triangle at that end, so the little bits go black before the big bits are even soft, and then you've got both and you haven't got either." Ruth carries on cutting. "That's why he keeps saying it. He's said it to me six times and he'll say it to you six times."
 

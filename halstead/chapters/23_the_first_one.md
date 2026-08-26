@@ -4,19 +4,19 @@
 
 This is the first graduation Halstead has ever held, and for three weeks beforehand it treats the fact the way it treats every other unfamiliar problem: rehearsed, timed, and checked twice.
 
-Backstage, before any family has found a seat, the ninety-one of them stand in the line they've already walked twice this week, alphabetical, timed against a stopwatch clipped to the rail by the stairs. The gowns come in three sizes for ninety-one different heights, and the sewing room handled the gap the way it handles everything else on short notice: pins where a size runs long, a roll of binder clips borrowed from the front office for whoever's left over. Sam is one of them, a clip at his back holding three inches of slack out of the sleeves. The stairs up to the stage are new, built and set by the graduating class itself over two Saturdays in May, the same corner joint half of them first cut at fourteen locking the risers together on the joint alone. Ninety-one students cross them twice each, dead silent underfoot.
+Backstage, before any family has found a seat, the ninety-one of them stand in the line they've already walked twice this week, alphabetical, timed against a stopwatch clipped to the rail by the stairs. The gowns come in three sizes for ninety-one different heights, and the sewing room handled the gap the way it handles everything else on short notice: pins where a size runs long, a roll of binder clips borrowed from the front office for whoever's left over. Sam is one of them, a clip at his back holding three inches of slack out of the sleeves. The stairs up to the stage are new, built and set by the graduating class itself over two Saturdays in May, the corner joint half of them first cut at fourteen locking the risers together on the joint alone. Ninety-one students cross them twice each, dead silent underfoot.
 
 They put chairs out on the field, rows of them running back from the stage in a count the school worked out the ordinary way it works out everything else: every family confirmed a headcount by the first of May, and the order that went out matched it to the chair. Off to one side stands the stage itself, plywood over scaffolding, braced to the margin the woodshop builds into anything a student is going to stand on and somebody else is going to test. The programs, printed to the exact guest count each family confirmed, run out even, with twenty spares sitting at the check-in table as the office's usual cushion.
 
 The whole of the school below them sits on the grass behind the last row of seats, the only spot big enough to hold eight hundred children who are not graduating today. The twelve-year-olds nearest the aisle spend the first twenty minutes kicking a water bottle down the gap between two empty rows, working out how many times it will go end over end before somebody's mother turns around.
 
-The head of school gives a short speech that is mostly logistics: four years, some of them longer; ninety-one names; a line of thanks to parents, grandparents, and guardians. There's one real sentence at the end, and his voice catches on the word "accomplishment," a sound this well-rehearsed room hadn't planned for. The booth holds three full seconds of dead air behind it before anyone remembers to cue the applause track built for exactly this contingency, and it lands a half-beat late, which gets a bigger laugh from the eight hundred on the grass than the sentence itself did. That sentence goes straight past Chloe anyway, because Sam has spent the last two minutes trying to make her laugh and finally succeeds on the same word.
+The head of school gives a short speech that is mostly logistics: four years, some of them longer; ninety-one names; a line of thanks to parents, grandparents, and guardians. There's one real sentence at the end, and his voice catches on the word "accomplishment," a sound this well-rehearsed room hadn't planned for. The booth holds three full seconds of dead air behind it before anyone remembers to cue the applause track built for exactly this contingency, and it lands a half-beat late, which gets a bigger laugh from the eight hundred on the grass than the sentence itself did. That sentence goes straight past Chloe anyway, because Sam has spent the last two minutes trying to make her laugh and finally succeeds on that word.
 
-Then they read out ninety-one names in alphabetical order, evenly paced, timed to the same stopwatch that clocked the rehearsal, and every name lands where the schedule put it, each family standing on cue. Ruth, three seats down from Chloe, times it on instinct, the same silent count she runs against anything with a rhythm in it. "Eleven seconds a name," she says, under her breath, once it's over. "Dead steady, the whole way through." She sounds almost disappointed, the whole thing too clean to correct.
+Then they read out ninety-one names in alphabetical order, evenly paced, timed to the stopwatch that clocked the rehearsal, and every name lands where the schedule put it, each family standing on cue. Ruth, three seats down from Chloe, times it on instinct, the silent count she runs against anything with a rhythm in it. "Eleven seconds a name," she says, under her breath, once it's over. "Dead steady, the whole way through." She sounds almost disappointed, the whole thing too clean to correct.
 
-When Sam's name gets called, three rows of people who are not his family stand up anyway, Chloe's mother among them. Eleven years of pickups and drop-offs means she has watched this particular boy grow six inches in a single summer, and it still catches her off guard. When Ruth's name comes, half a row does the same thing for her. Priya's parents, an electrician and a woman who works the front desk at an urgent care clinic, clap for every single name, not just their daughter's, the whole way through.
+When Sam's name gets called, three rows of people who are not his family stand up anyway, Chloe's mother among them. Eleven years of pickups and drop-offs means she has watched this particular boy grow six inches in a single summer, and it still catches her off guard. When Ruth's name comes, half a row does it for her. Priya's parents, an electrician and a woman who works the front desk at an urgent care clinic, clap for every single name, not just their daughter's, the whole way through.
 
-Then it's Kessler, and eleven years compress into thirty feet of plywood and four seconds of applause. Chloe crosses a stage that existed for the first time a month ago, built by people she's spent a decade arguing with about hot dogs and the size of the moon. It holds dead steady under her the whole way across. The head of school hands her the folder with both hands and says her name once, correctly, plain. That turns out to be the entire weight of ceremony the place hands out. On the walk back to her seat she finds her mother's face before she finds anyone else's, the same reflex that used to send her to the fridge twice in one night to check a magnet was still holding a note in place.
+Then it's Kessler, and eleven years compress into thirty feet of plywood and four seconds of applause. Chloe crosses a stage that existed for the first time a month ago, built by people she's spent a decade arguing with about hot dogs and the size of the moon. It holds dead steady under her the whole way across. The head of school hands her the folder with both hands and says her name once, correctly, plain. That turns out to be the entire weight of ceremony the place hands out. On the walk back to her seat she finds her mother's face before she finds anyone else's, the reflex that used to send her to the fridge twice in one night to check a magnet was still holding a note in place.
 
 Her mother cries from the K's onward, a tissue out three names early. Her father keeps one hand on the back of her chair the whole time.
 
@@ -24,9 +24,9 @@ ________________
 
 Her mother knows this campus, having come to it for eleven years. She knows where the good parking is, knows Ruth's mother by name, and knows to bring a jacket because it's colder up here.
 
-She finds Ruth's mother in the crowd before the ceremony even starts. The two of them fall into the same easy back-and-forth they've had every year for over a decade: a supplier problem on one side, a school form still open on the other. "Is he settled on a roommate yet?" Ruth's mother asks, her own younger one starting at Halstead that September, and Meg tells her any day now, that he's already looking at rooms. Ruth's mother, who has forgotten her own jacket every year since the first, takes Meg's spare straight out of her hands. "You'll catch your death," Meg says, the same as every June before this one. Eleven years of parking in the same overflow lot, and each of them still only knows the other from a folding chair.
+She finds Ruth's mother in the crowd before the ceremony even starts. The two of them fall into the easy back-and-forth they've had every year for over a decade: a supplier problem on one side, a school form still open on the other. "Is he settled on a roommate yet?" Ruth's mother asks, her own younger one starting at Halstead that September, and Meg tells her any day now, that he's already looking at rooms. Ruth's mother, who has forgotten her own jacket every year since the first, takes Meg's spare straight out of her hands. "You'll catch your death," Meg says, the same as every June before this one. Eleven years of parking in one overflow lot, and each of them still only knows the other from a folding chair.
 
-A few rows over, Dave strikes up a conversation with the stranger next to him about the stage, admiring rather than worried, working out loud that whoever spec'd the bracing built in more margin than the thing will ever need. "Somebody had fun with this," Dave says, nodding at the joists. The stranger has clearly done the same arithmetic already, unprompted, cross-bracing, dead load, a margin that makes more sense for a bridge than a stage, and it takes them most of the conversation to work out that he's a physics professor, Kavi's father. Behind them, a staff member in a school polo folds up a spare table and answers Dave's question about parking on her way past, still moving.
+A few rows over, Dave strikes up a conversation with the stranger next to him about the stage, admiring rather than worried, working out loud that whoever spec'd the bracing built in more margin than the thing will ever need. "Somebody had fun with this," Dave says, nodding at the joists. The stranger has clearly done that arithmetic already, unprompted, cross-bracing, dead load, a margin that makes more sense for a bridge than a stage, and it takes them most of the conversation to work out that he's a physics professor, Kavi's father. Behind them, a staff member in a school polo folds up a spare table and answers Dave's question about parking on her way past, still moving.
 
 By the end of the afternoon, the grass by the parking lot holds a small, accidental museum of everything a family brings to something like this: folding chairs people brought in preference to the ones provided, two coolers, a phone charger passed hand to hand down an entire row, a dog that shouldn't be there, and, near the back, a folding table somebody's grandfather sets up on his own every June, selling the good lemonade at fifty cents a cup because that's what he did at every one of his own five children's graduations. He sells a dozen cups to people who already have a full cooler of their own, because it's the lemonade, not the thirst.
 
@@ -46,7 +46,7 @@ Her dad works his way through a full memory card, most of it good, and lowers th
 
 Her grandmother came, and sits in a folding chair at the end of a row, working through everyone who passes her like a receiving line that formed itself around the chair. Sam is the first one caught, gown still on over yesterday's t-shirt. "What are you doing next?" she asks. "The Army," he tells her, and she pats his arm. "That'll do you good. Teach you some discipline." "Yes ma'am," Sam says.
 
-Kavi is next, in no hurry to get past her. "And you, young man?" she asks, word for word what she asked Sam. "I'm staying on, at the school itself," he tells her, and she nods like that's the same thing. "And do you get your own room out of it?" she asks.
+Kavi is next, in no hurry to get past her. "And you, young man?" she asks, word for word what she asked Sam. "I'm staying on, at the school itself," he tells her, and she nods as if the two were interchangeable. "And do you get your own room out of it?" she asks.
 
 "Not yet," Kavi says.
 
@@ -56,15 +56,15 @@ The third one she catches is a stranger to Chloe, a girl from another family's c
 
 ________________
 
-Everything else at the school keeps running. The labs are still going, the bell still sounds at ten past every hour. By early afternoon, once the grass has cleared and the breakdown crew has the field to itself, the twelve-year-olds who spent the ceremony kicking a water bottle down a gap in the rows are back at their afternoon block on schedule. By the time Chloe carries her own box past the language wing, a substitute is drilling verb conjugations off a whiteboard, the same lesson that was scheduled weeks before anyone knew today would be different for ninety-one people walking past the door.
+Everything else at the school keeps running. The labs are still going, the bell still sounds at ten past every hour. By early afternoon, once the grass has cleared and the breakdown crew has the field to itself, the twelve-year-olds who spent the ceremony kicking a water bottle down a gap in the rows are back at their afternoon block on schedule. By the time Chloe carries her own box past the language wing, a substitute is drilling verb conjugations off a whiteboard, the lesson that was scheduled weeks before anyone knew today would be different for ninety-one people walking past the door.
 
-Her own box goes down the ground-floor hallway with a forge mallet with a handle still the wrong shape wedged in next to a stack of notebooks. Eleven years of the same brass plates line the wall here, and she reads them all again on her way past, as she has every single day since she was seven, counting them off on reflex: nine plates, four years of woodshop before the forge took over completely, one hook still on the back of her door upstairs that she's already decided to leave hanging there for whoever gets the room next.
+Her own box goes down the ground-floor hallway with a forge mallet with a handle still the wrong shape wedged in next to a stack of notebooks. Eleven years of those brass plates line the wall here, and she reads them all again on her way past, as she has every single day since she was seven, counting them off on reflex: nine plates, four years of woodshop before the forge took over completely, one hook still on the back of her door upstairs that she's already decided to leave hanging there for whoever gets the room next.
 
 At the propped courtyard door she reaches up for the top of the frame, which she used to have to jump for at seven, and finds her palm against the wood with room to spare, her whole arm straight. The frame is exactly where it's always been; she's grown well past having to reach for it. She holds it there a second longer than the box in her other arm makes comfortable, then lets go and keeps walking, because Sam is somewhere out on the grass already asking where she's got to.
 
 ________________
 
-That evening, before anyone's driven off, or signed anything, they are all still on the same patch of grass at the same time, in gowns still on from the ceremony. Someone has found a speaker from somewhere. Sam and Kavi are three moves into a card game neither of them has won all year, and Sam is losing again. Ruth is already on her third phone call about a dorm assignment. Theo gets a photograph of the group before anyone's arranged themselves for one, and Chloe counts the heads in it before she's decided to: all of them, still in it. She still remembers wanting the last names after camp and coming up short, and this time she gets the count while it's still in front of her.
+That evening, before anyone's driven off, or signed anything, they are all still on one patch of grass at once, in gowns still on from the ceremony. Someone has found a speaker from somewhere. Sam and Kavi are three moves into a card game neither of them has won all year, and Sam is losing again. Ruth is already on her third phone call about a dorm assignment. Theo gets a photograph of the group before anyone's arranged themselves for one, and Chloe counts the heads in it before she's decided to: all of them, still in it. She still remembers wanting the last names after camp and coming up short, and this time she gets the count while it's still in front of her.
 
 Sam joins the Army, having been the best fighter in his year since he was ten by a margin wide enough that the field stopped contesting it by the time he was twelve, and in July, at a recruiting office off the highway outside Pittsburgh, he signs the papers at drill speed: fast, on the first read. The office smells like carpet cleaner and stale coffee, a flag in the corner leaning slightly off true. The recruiter slides four separate forms across the desk and starts explaining what each one means. Sam is already signing the first one before the man finishes the sentence, but he reads the fourth form properly, twice, because it's the one about pay grade and he wants the actual number. He'd already pulled the deployment rotation numbers off the recruiter's own site in May, better numbers than the desk copy, so that column is settled before he sits down.
 
@@ -76,7 +76,7 @@ Sam joins the Army, having been the best fighter in his year since he was ten by
 
 "No." He signs the last line before the recruiter's finished sliding the pen across the desk.
 
-He walks out past the flag leaning off true and keeps the same pace the whole way to the car.
+He walks out past the flag leaning off true and keeps his pace the whole way to the car.
 
 Ruth goes to MIT, with a box of her own things labeled and half packed before the ceremony starts, the label written in her own small, upright hand.
 
@@ -92,7 +92,7 @@ She brings it to her father on a Saturday in May, at the counter, with the noteb
 
 "So paste the listing back at it."
 
-"Two hundred and six of those is eight weeks of unpaid work, and whoever can't afford that long takes whatever's left at the end." She flips to the back of the invoice, where the same hand has already done the arithmetic. "The sites charge thirty a month to keep looking. Getting me hired inside a week is the worst week one of those sites could have."
+"Two hundred and six of those is eight weeks of unpaid work, and whoever can't afford that long takes whatever's left at the end." She flips to the back of the invoice, where that hand has already done the arithmetic. "The sites charge thirty a month to keep looking. Getting me hired inside a week is the worst week one of those sites could have."
 
 Her father sets the invoice down and looks at her properly. "What would it even do?"
 
@@ -110,7 +110,7 @@ He is quiet long enough for a customer to come in, buy a tin of two-inch screws 
 
 "Nadia."
 
-"I work out of the back room, and the counter gets me on Sundays." She has both elbows on the ledger between them, either side of the arithmetic. "You keep the books and the ordering off yourself, the same arrangement you have now, at the same price."
+"I work out of the back room, and the counter gets me on Sundays." She has both elbows on the ledger between them, either side of the arithmetic. "You keep the books and the ordering off yourself, the arrangement you have now, at the same price."
 
 "I have that arrangement already."
 
@@ -130,19 +130,19 @@ He puts his hand out across the counter, the way he closes with a supplier and h
 
 Her father keeps hold of her hand a second past where she lets go of his. Then she takes the invoice off the counter, finds the line he has been reading for twenty minutes, and tells him the supplier has billed him twice for the same case of blades.
 
-She brings the same complaint to the chat that week, half a joke by the time it gets there, and Eli says he'll look into it and lets it drop.
+She brings that complaint to the chat that week, half a joke by the time it gets there, and Eli says he'll look into it and lets it drop.
 
 Between the middle of May and the second week of June she asks sixty-one employers, in person, working down a list arranged by street, and nine of the sixty-one agree, every one of them a customer of her father's. It goes up three days after the gowns go back with all of them on it. The first month produces thirty-six registered users and exactly one hire, and the hire is a man who already had the job and used the site to fill in the application form.
 
 Theo goes into the federal government as an analyst, having been interviewed three times and having answered every question completely. He keeps the photograph from the grass in the drawer of his desk at work, where anyone who asks about it would have to already know to look.
 
-Kavi stays, and says so plainly when anyone asks, the same way he says anything else that's already settled.
+Kavi stays, and says so plainly when anyone asks, as he says anything else that's already settled.
 
 Priya takes two years and goes to South America with a bag. There's no return flight booked and no address arranged yet, just two changes of clothes, a headlamp, and a folded list of every ranch and stable between Patagonia and the Argentine pampas that answered her letters over the spring.
 
 "What's in the bag?" Chloe asks her, out on the grass, the two of them working through what's left of a cup of lemonade.
 
-"Not much. A list of horses I haven't met yet, mostly." Priya works the strap between two fingers. "There's a woman outside Bariloche who's been breaking horses the same way her grandmother did, and she wrote back and said come whenever, so I'm going whenever. Every single year of my life has had something already decided for me before I got there. I want to find out what a year without that looks like, and I want to see how they do it somewhere that's never heard of Halstead."
+"Not much. A list of horses I haven't met yet, mostly." Priya works the strap between two fingers. "There's a woman outside Bariloche who's been breaking horses as her grandmother did, and she wrote back and said come whenever, so I'm going whenever. Every single year of my life has had something already decided for me before I got there. I want to find out what a year without that looks like, and I want to see how they do it somewhere that's never heard of Halstead."
 
 "You're insane," Sam says, half listening, from the grass beside her.
 
@@ -152,7 +152,7 @@ ________________
 
 By the time she's sitting in her own gown, Chloe already knows what the next two years look like, because she found out in May.
 
-She reads the eligibility page for the Foreign Service exam again at her desk, then a third time, to be sure two readings had found the same thing. Twenty years old to sit it. Twenty-one to be sworn in, once the file behind it clears, and she turns eighteen in August.
+She reads the eligibility page for the Foreign Service exam again at her desk, then a third time, to be sure two readings had found it. Twenty years old to sit it. Twenty-one to be sworn in, once the file behind it clears, and she turns eighteen in August.
 
 She closes the laptop and leaves it shut for the rest of the night. Down at the forge, she works past when everyone else has gone up, past the point where the piece in front of her is about the piece at all; what's left is the exact repetition of getting the next fold as thin as the last one, over and over, until her arm is the only part of her still making decisions.
 

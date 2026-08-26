@@ -4,13 +4,13 @@
 
 Eli proposes the second worm and Theo says no for nine days.
 
-It arrives as a document rather than a chat message, twelve pages, written at two in the morning at the kitchen table in the apartment three states from where he grew up. It goes to six people instead of one, on purpose, because a plan this size only holds together if all seven of them read the same twelve pages instead of six different memories of them later. It reads like a plan because it is one, with an access path, a timeline, what gets touched and what gets left exactly where it was, and it closes on the idea the financial worm's whole design leaned on six months earlier, that boring beats clever every time somebody's watching for clever.
+It arrives as a document rather than a chat message, twelve pages, written at two in the morning at the kitchen table in the apartment three states from where he grew up. It goes to six people instead of one, on purpose, because a plan this size only holds together if all seven of them read one set of twelve pages instead of six different memories of them later. It reads like a plan because it is one, with an access path, a timeline, what gets touched and what gets left exactly where it was, and it closes on the idea the financial worm's whole design leaned on six months earlier, that boring beats clever every time somebody's watching for clever.
 
 The target is the unit Theo already told them exists, the one that's kept a file on the school for nineteen years and been wrong about who runs it twice. Getting past its security once is a solvable problem. Getting past it and leaving the file looking exactly as it did before, with every trace of them erased, is the harder one, and the twelve pages are mostly about the second problem, not the first.
 
 Theo reads it twice the night it lands, then closes the laptop and makes tea the way his grandmother made it, milk first, and reads the document a third time standing at the counter with the mug going cold in his hand. Day after day he opens it, reads a line or two, and closes it again. He walks the two blocks to work and back. In the chat he keeps to small talk, the weather outside his building, a joke Sam makes about the food at basic. Ruth texts him alone once, just his name, and lets it sit.
 
-The reasoning moves him in the end, not the arithmetic. Reading intelligence is what he does for a living, weighing one source against what it's actually worth, and the accounting comes out the same no matter which end he starts from: they already have a file on their own school that's nineteen years out of date, and reading the true one is the only way any of them will ever know what their own government actually thinks it knows. He can write that argument forward or backward and it ends in the one place both times.
+The reasoning moves him in the end, not the arithmetic. Reading intelligence is what he does for a living, weighing one source against what it's actually worth, and the accounting comes out one way no matter which end he starts from: they already have a file on their own school that's nineteen years out of date, and reading the true one is the only way any of them will ever know what their own government actually thinks it knows. He can write that argument forward or backward and it ends in the one place both times.
 
 Every one of them knows the law cold. All seven had sat the same examination, and when Theo finally opens the thread on the ninth night, Ruth is already in it, cross-legged on her own dorm room floor in Cambridge with a roommate asleep two feet away, and Eli's reading from the kitchen table he wrote the document on less than a week earlier, and Ruth already has two numbers ready for him.
 
@@ -44,7 +44,7 @@ ________________
 
 The rest of the seven read that thread over the following two days, each of them from wherever the year has put them, and each one answers in the shape they always answer in.
 
-Nadia reads it standing at the register with the shop shut and the till already counted. She pushes her sleeves up before she answers, the way she does before anything that's going to cost her something.
+Nadia reads it standing at the register with the shop shut and the till already counted. Her sleeves go up before she answers. They go up before anything that's going to cost her something.
 
 nadia: name whos actually touching the code
 
@@ -118,4 +118,4 @@ Theo signs off last, on the far side of the five weeks, and says again that this
 
 A clearance is a piece of paper that says the government has already decided to trust her with things it keeps far from most people, and she's about to spend that trust on a file it always meant to keep sealed from her too. What that actually costs her she works through exactly once, on the drive home from the office the week the document arrives, and the thought ends in about as long as it takes a light to change.
 
-Chloe is four months into that job when she writes those pages, her hand steady through all nine of them, and she does not stop.
+Chloe is four months into that job when she writes those pages, her hand steady through all of them, and she does not stop.

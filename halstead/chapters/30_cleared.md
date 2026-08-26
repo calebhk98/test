@@ -26,13 +26,13 @@ ________________
 
 The background investigation takes ten weeks and involves a man named Whitaker who comes to see her twice.
 
-The paperwork comes first, the electronic questionnaire for national security positions, which she fills out over a single evening at the kitchen counter, question after question about addresses and employers and people who'd vouch for her. Most of it is easy, but a few fields make her stop and actually count: every place she's lived, every job, every reference who'd remember her well enough to say something useful. Submission goes in a little after midnight, and twelve days go by before the phone rings.
+The paperwork comes first, the electronic questionnaire for national security positions, which she fills out over a single evening at the kitchen counter, question after question about addresses and employers and people who'd vouch for her. Most of it is easy, but a few fields make her stop and actually count: every place she's lived, every job, every reference who'd remember her well enough to say something useful. The form goes in a little after midnight, and twelve days go by before the phone rings.
 
-The call comes first, the second week of October, to set a time. The Friday night before goes on straightening an apartment that's usually left alone, clearing the stack of translation manuals off the table and into a drawer, an impulse of her own rather than anything he'd have noticed either way.
+Then he calls, the second week of October, to set a time. The Friday night before goes on straightening an apartment that's usually left alone, clearing the stack of translation manuals off the table and into a drawer, an impulse of her own rather than anything he'd have noticed either way.
 
 He knocks at eight, on the minute. With him come a federal investigator's credentials, a notebook, and a thermos of his own coffee he waits to open until he's seated across the table from her. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it. Coffee is offered before either of them sits down; he lifts the thermos instead, already most of the way full, and thanks her for the offer before he takes the chair across from hers. Her own kitchen table usually sits bare; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
 
-What the visit is for comes before he asks her anything. A full accounting of the last ten years, verified wherever it can be verified, recorded as unverifiable wherever it can't.
+Before he asks her anything, he tells her what the visit is for. A full accounting of the last ten years, verified wherever it can be verified, recorded as unverifiable wherever it can't.
 
 "Does any of it get released? After. To me, or to anyone else."
 
@@ -72,7 +72,7 @@ Two published papers come last on that page, and he's already ahead of her on bo
 
 Whitaker doesn't look up. "Asked by whom."
 
-"The lead researcher," Chloe says. She didn't make me sign anything. She said everyone else had signed and if I talked it landed on them."
+"The lead researcher," Chloe says. "She didn't make me sign anything. She said everyone else had signed and if I talked it landed on them."
 
 "And you agreed to that," he says.
 
@@ -92,7 +92,7 @@ Around noon the notebook closes, and he tells her he'll be back once he's run do
 
 ________________
 
-The second visit is the first week of November, in a coat this time, the light already gone by five and the radiator behind him ticking the entire time. The folder is thicker than it was in October, a second stack of pages clipped behind the first, and he sets it down where he set it in October before he takes his own coat off.
+The first week of November he comes back, in a coat this time, the light already gone by five and the radiator behind him ticking the entire time. The folder is thicker than it was in October, a second stack of pages clipped behind the first, and he sets it down where he set it in October before he takes his own coat off.
 
 The funding is what he asks about: who the school's principal donor is, name or foundation, anything at all, and he waits while she actually thinks about it instead of answering fast to be done with it.
 

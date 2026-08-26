@@ -34,7 +34,7 @@ Sam puts his fork down before he asks it. "How old is he now, seven?"
 
 "Nine years behind you, and he'll spend every one of them hearing your name before he ever meets you, whether he asks for it or not." He picks the fork back up and goes back at the stack.
 
-"He already knows that, and he's been practising looking unimpressed about it since he could talk." Ruth turns the cup again, a quarter turn at a time, always in the same direction. "He asked me what the food's like, and that was the whole letter conversation, start to finish, just the food, not the campus or the classes."
+"He already knows that, and he's been practising looking unimpressed about it since he could talk." Ruth turns the cup again, a quarter turn at a time, always in the one direction. "He asked me what the food's like, and that was the whole letter conversation, start to finish, just the food, not the campus or the classes."
 
 "What are you going to tell him?"
 
@@ -46,7 +46,7 @@ Sam has the syrup upside down over his second plate, timing the pour and countin
 
 "You said that like it was going to be different this year." Something in Ruth's face concedes the point before Ruth herself has agreed to concede it, amusement plain across her whole expression.
 
-"It's not not going to be different. It's just also, on top of whatever else it is, going to be the forge, same as it always is."
+"It's not not going to be different. It's just also, on top of whatever else it is, going to be the forge, as it always is."
 
 Sam has the specials card up off the table, holding it at arm's length like a document recovered from an archive. "*Come hither for our world famous short stack.*" He puts the card down and leaves it face up between them. "*Hither.* The last time anyone said *hither*, it was Shakespeare."
 
@@ -62,7 +62,7 @@ Sam has the specials card up off the table, holding it at arm's length like a do
 
 "That's different, because I said it on purpose to prove a point." They argue about it until the waitress comes back with the check, and Nadia has exact change out on the table before it lands, split to the cent, because she has been dividing the bill in her head since the second round of coffee.
 
-There's a shopping cart in the lot behind a hardware store on the way home, and Sam is in it before anybody has suggested anything, knees up around his ears, while Ruth pushes him at the curb at a dead run and lets go too late. The front wheel folds sideways with a sound like a dropped pan and Sam goes over the handle into the grass strip and lies there laughing with his arms out. Nadia films the second attempt and then takes a run herself and is better at it, hitting the same curb full speed with the brake untouched, riding it out on both feet through the landing, and Chloe laughs hard enough to have to sit down on the curb with her head between her knees. They get twenty minutes out of a broken shopping cart, and when Ruth wants a fourth run the wheel is finished, so they leave it upside down where it stopped, one wheel still turning.
+There's a shopping cart in the lot behind a hardware store on the way home, and Sam is in it before anybody has suggested anything, knees up around his ears, while Ruth pushes him at the curb at a dead run and lets go too late. The front wheel folds sideways with a sound like a dropped pan and Sam goes over the handle into the grass strip and lies there laughing with his arms out. Nadia films the second attempt and then takes a run herself and is better at it, hitting that curb full speed with the brake untouched, riding it out on both feet through the landing, and Chloe laughs hard enough to have to sit down on the curb with her head between her knees. They get twenty minutes out of a broken shopping cart, and when Ruth wants a fourth run the wheel is finished, so they leave it upside down where it stopped, one wheel still turning.
 
 ---
 
@@ -152,7 +152,7 @@ Sam thinks about it for a good deal longer than the joke needs, and then answers
 
 "Any of us could say the same, not just him," Ruth says, "and she'd probably enjoy it, too."
 
-Sam laughs most of the way to the corner, and Ruth lets him have it, so they cross the last empty intersection at a walk, their footsteps falling into the same rhythm on their own and moving faster than the walk down had been, and they argue about the waitress the whole way home.
+Sam laughs most of the way to the corner, and Ruth lets him have it, so they cross the last empty intersection at a walk, their footsteps falling into one rhythm on their own and moving faster than the walk down had been, and they argue about the waitress the whole way home.
 
 ---
 

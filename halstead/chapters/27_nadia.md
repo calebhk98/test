@@ -16,7 +16,7 @@ In April she paid ninety dollars for the company name in white vinyl and put it 
 
 "I read it every morning," Nadia said, and went back down the ladder for the squeegee.
 
-There is no morning meeting: she says what went live yesterday from wherever she is standing, and it takes her under a minute, because the whole company fits in one room and three of them were standing there when it happened.
+There is no morning meeting: she says what went live yesterday from wherever she is standing, and it takes her under a minute, because there are only five of them and three were standing there when it happened.
 
 She's still in the front room at half past eight on the Tuesday of the second week of May, because the new-employer queue has run long. That queue she reads herself, every name on it, the same way she reads the till tape at her parents' counter before she says hello to anyone, and a good week puts five names in front of her. This week has nineteen, and thirteen of the nineteen sit outside the list of employers she has driven to herself.
 

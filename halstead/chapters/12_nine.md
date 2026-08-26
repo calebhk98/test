@@ -64,11 +64,11 @@ Statistics turns out to be an hour of somebody taking a number apart in front of
 
 "You can't stand there and say it shows nothing when it's got a result printed in it."
 
-"It's got eleven people in it, Kavi, and that's not a sample, that's a coincidence with a p-value attached to it."
+"It's got eleven people in it, Kavi, which makes it a coincidence with a p-value attached to it."
 
 "Small result, so round it down, because a room that size is basically noise dressed up as a finding."
 
-"It's not a small result, it's the same size result eleven people would hand you by accident, which is the entire-" Chloe stops, because Sam has both hands over his ears now, humming. "We're nearly done, so two more minutes and you get your ears back."
+"Small is the wrong word, because that is the size of result eleven people hand you by accident, which is the entire-" Chloe stops, because Sam has both hands over his ears now, humming. "We're nearly done, so two more minutes and you get your ears back."
 
 "You said that on Monday too, word for word, and you say it every time you lose this argument."
 
