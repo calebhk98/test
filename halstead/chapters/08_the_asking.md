@@ -10,7 +10,7 @@ Chloe goes back up before the call is finished.
 
 The appointment is the following Wednesday, for which her mom takes the whole afternoon off work, unannounced. Dr. Ammons has a room with two chairs and a couch, where she takes a chair and puts Chloe's mom in the other, leaving Chloe the whole couch to herself. It is deep enough that her feet stick straight out in front of her instead of reaching the floor, so she pulls them up under her and picks at a loose thread on the cushion instead of looking at either chair.
 
-"So tell me what's going on, and start wherever you like. There's no order I need it in."
+"So tell me what's going on, and start wherever you like. There's no order I need it in. Take as much time as you want getting to it, and if a part of it doesn't make sense yet, that's fine too."
 
 Her mom is sitting right on the front edge of the chair, and she has the whole list ready in order, each item already decided before she walked in. "She's not eating, and she's sleeping the clock round and still tired all day. She used to read constantly, four books a week since she was five, but there's a stack of them by her bed she hasn't touched since August, and she sits in her room in the dark with the switch right there beside her. When I ask her what she's doing she says nothing, and I think that's the true answer." Her hands come apart and smooth an imaginary crease out of her skirt.
 
@@ -26,7 +26,7 @@ Dr. Ammons writes a line before the next question, and asks it in exactly the vo
 
 "And before that, before August, what was she like?"
 
-"She was at a summer program in July, a month, away from home," her mom says, and stops there, her hands going still in her lap. "She was the happiest I have ever seen her, in her life, and I mean that literally."
+"She was at a summer program in July, a month, away from home," her mom says, and stops there, her hands going still in her lap. "She was the happiest I have ever seen her, in her life, and I mean that literally. She didn't stop talking about it the whole ride home, and she never does that."
 
 Dr. Ammons stops writing and puts the pen down on top of the pad.
 
@@ -54,7 +54,7 @@ The questions keep coming in that voice, working down through who ran it, how th
 
 "Did anything happen to her there."
 
-"Everything about it was good, she absolutely loved every single day of it. She came back talking about it and she has not stopped."
+"Everything about it was good, she absolutely loved every single day of it. She came back talking about it and she has not stopped. I don't know what you think happened there, but nothing did, and I have gone over it more than once looking for it."
 
 "I'm sure she did, but I'm asking anyway, because loving a place and something happening there can both be true at once. I ask everybody this. It isn't about the place."
 
@@ -126,7 +126,7 @@ What she is waiting for is the turn, because at camp there was a point in every 
 
 Her hand is still half up. "When does it get harder? I keep waiting for the part where it gets hard."
 
-Mrs. Prahl smiles at her. "Let's not rush it, we've got all year to get all the way through this properly. Take the rest of the packet home with you if you want to."
+Mrs. Prahl smiles at her. "Let's not rush it, we've got all year to get all the way through this properly. Take the rest of the packet home with you if you want to. Some children get there in October and some get there in May. Both of those are the same speed as far as I'm concerned."
 
 Chloe finishes the packet that night sitting up in bed with the lamp on, both sides of every page of it, in under an hour, but then it's Friday, and Saturday, and Sunday, and Monday, and Tuesday, and Wednesday.
 
@@ -150,7 +150,7 @@ Her mom says put your jacket on and Chloe says no, and her mom says put it on. T
 
 "You do, you want me to stay here and be sad. You could just say yes to Halstead. You could say it right now. It takes one second to say it. But you won't say it."
 
-Her mom's hand closes on the edge of the counter. "It's not one second, Chloe, I've thought about this a lot longer than you know. Every night since the letter came."
+Her mom's hand closes on the edge of the counter. "It's not one second, Chloe, I've thought about this a lot longer than you know. Every night since the letter came. I lie awake and go through every reason to say no, and every morning I still don't have one good enough."
 
 "You hate me, that's what it is, you actually hate me."
 

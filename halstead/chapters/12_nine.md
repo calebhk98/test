@@ -44,7 +44,7 @@ With both hands flat on the table, she is up on her toes. "Dance is *gone*, and 
 
 "I liked dance, and I was good at dance, and I'm going to keep saying it."
 
-Ruth keeps her eyes on the book that's open in her lap. "You were good at dance, which is why you liked it, Sam, and if you'd been ninetieth you'd be up there on the table with her," she says.
+Ruth keeps her eyes on the book that's open in her lap. "You were good at dance, which is why you liked it, Sam, and if you'd been ninetieth you'd be up there on the table with her. Being bad at something and still loving it is a different thing, and you've never once tried it," she says.
 
 Chloe does another lap of the table before she sits down, and Ruth turns a page.
 
@@ -144,7 +144,7 @@ Priya walks up to the horse's nose from a few feet out, and the head swings side
 
 Chloe can sit a canter by February, and she can get a horse over a low fence by March, but neither of those does anything for her. Priya, who has been riding since she was little, is better at all of it, but Chloe likes watching her do it. In April the stables move the groups around and Priya goes to Tuesdays, after which Chloe rides on the Thursday twice more, walking the twenty-two minutes on her own both times, but she is back in her room by five.
 
-"You quit riding, and I had to hear about it from Anne instead of you," Priya says at dinner, two days later.
+"You quit riding, and I had to hear about it from Anne instead of you." Priya sits down at dinner, two days later. "Now everyone at the barn thinks I said something to make you stop, which I didn't. I've had to explain that more times than I can count this week."
 
 "Yeah, and I should have told you instead of just not showing up on the Thursday, because I know that's the worse way to do it."
 
@@ -152,7 +152,7 @@ Chloe can sit a canter by February, and she can get a horse over a low fence by 
 
 "It's boring. It's easy, I can do all of it, and it's twenty-two minutes of walking for an hour of being bored."
 
-Priya looks at her over the top of her glass. "It's fun for me, though, even the boring parts, even the parts you clearly can't stand."
+Priya looks at her over the top of her glass. "It's fun for me, though, even the boring parts, even the parts you clearly can't stand, and even the smell of the barn in the rain. It's fun even in the cold before anybody's tacked up, and in the parts where nothing at all is happening yet."
 
 "I know, and that's the bit I kept waiting for the whole time, for it to turn into that for me too," Chloe says.
 
@@ -192,7 +192,7 @@ Her father starts to answer but stops with the page half turned, then goes back 
 
 "That's what I couldn't get. I couldn't work out what breaking it would look like."
 
-Her father takes the pen and puts a line under the whole paragraph. "There isn't a version of this where they've failed to do it. That's why it reads so well. This is four pages of the same trick, isn't it."
+Her father takes the pen and puts a line under the whole paragraph. "There isn't a version of this where they've failed to do it. That's why it reads so well. This is four pages of the same trick, isn't it. Every deliverable is worded so it can't be checked against anything, and every milestone describes the effort instead of the result."
 
 "No idea, I only got as far as that one."
 

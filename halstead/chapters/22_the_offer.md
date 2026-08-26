@@ -26,7 +26,7 @@ His office holds a desk, two chairs, and a small clock turned to face only him; 
 
 "Whatever's already in that folder is probably enough for you. I haven't got anything you'd want to write down on top of it."
 
-"Four things, then," he says. "Research, full time, starting the day you'd otherwise be walking into a dorm room somewhere. The salary is a hundred and thirty five thousand dollars a year, to start, more once you're carrying your own project instead of somebody else's. Housing, food, a car, medical, all of it covered, all of it on us. And if you want the degree on top of the work, you do it here, on your own schedule, we pay for it, and the post stays open until you finish, however long that takes. Six-day weeks the first year and five after that, and you'd report to whoever runs your team, as anyone on staff would, because every part of it applies whether you're eighteen or fifty."
+"Four things, then," he says. "Research, full time, starting the day you'd otherwise be walking into a dorm room somewhere. The salary is a hundred and thirty five thousand dollars a year, to start, more once you're carrying your own project instead of somebody else's. Housing, food, a car, medical, all of it covered, all of it on us. And if you want the degree on top of the work, you do it here, on your own schedule, we pay for it, and the post stays open until you finish, however long that takes. Six-day weeks the first year and five after that, and you'd report to whoever runs your team, as anyone on staff would, because every part of it applies whether you're eighteen or fifty. The review happens every March, same as everyone else's, and the raise is whatever the review says it is, nothing negotiated separately for you. Everybody on staff signed something close to this same sheet at some point, and every single person on that staff is still here, still doing the work, still getting the same review everyone else gets, and nobody has ever come back to this office asking for the terms to be any different, because the terms are the same terms for everybody who ever sat in that chair, and the day they stop being the same for everybody is the day this whole arrangement stops meaning anything at all, to you or to the next person who sits down in front of this folder after you, and this office would rather lose a candidate over an honest answer than keep a candidate on terms it isn't willing to give the next person as well."
 
 "Here?"
 
@@ -70,7 +70,7 @@ The list comes in the order he gives everybody: research and the salary and the 
 
 "Reason?"
 
-"I'd be good at a few hours a month of that job." Both hands stay where they were. "The hours where somebody names the constraint and I go argue with a supplier about it. The remainder is a desk and a paper at the end, and every paper I have ever finished went to a marker, where it stopped. Nobody at a desk in this building has ever rung me up wanting a price."
+"I'd be good at a few hours a month of that job." Both hands stay where they were. "The hours where somebody names the constraint and I go argue with a supplier about it. The remainder is a desk and a paper at the end, and every paper I have ever finished went to a marker, where it stopped. Nobody at a desk in this building has ever rung me up wanting a price, and until somebody does, the desk is just a desk with my name on a folder somewhere near it, and I'd rather be at a different desk than pretend that's the job, because a desk with nobody calling it isn't a job, it's just furniture with my name near it."
 
 Amberg writes for a while. "The eighty saying no are going to college in September. You haven't sent an application anywhere."
 
@@ -92,7 +92,7 @@ The next question comes at the page rather than at her. "How many applications."
 
 Sitting down, in a chair, she pushes her sleeves up.
 
-"I'm building the thing that gets people hired. The employer pays when somebody gets the job. The person pays nothing."
+"I'm building the thing that gets people hired. The employer pays when somebody gets the job. The person pays nothing. That's the whole shape of it, and every version I've seen so far gets that backwards."
 
 Amberg looks at that for longer than he has looked at anything else on the desk. "Eighty people have sat in that chair this month. Four of them told me they were starting something."
 
@@ -100,7 +100,7 @@ Amberg looks at that for longer than he has looked at anything else on the desk.
 
 "Three of them will be doing something else by Christmas."
 
-"That sounds right too." Her hands stay where they are. "The afternoon block is unrecorded, so it's been in there since the last week of March. If it comes to nothing by next spring, it comes to nothing and I take whichever of those jobs is still open, like anybody else. That's the part I've checked. It's the only part I've checked."
+"That sounds right too." Her hands stay where they are. "The afternoon block is unrecorded, so it's been in there since the last week of March. If it comes to nothing by next spring, it comes to nothing and I take whichever of those jobs is still open, like anybody else. That's the part I've checked. It's the only part I've checked, because checking the rest of it before there's anything to check would just be a way of not starting."
 
 "What do your parents say."
 
@@ -116,7 +116,7 @@ Kavi is one of them; Chloe hears about it before any posted list confirms it: hi
 
 In the evening she finds him in the network room, back against the radiator by the door, a length of stripped cable coiled around his hand while he turns the copper end over between his fingers, over and over, eyes somewhere else, the coil going slack and tight again in his fist.
 
-"Why?" she asks. "You had MIT. You had Caltech. You had this too, but you picked the one with no name on the door."
+"Why?" she asks. "You had MIT. You had Caltech. You had this too, but you picked the one with no name on the door, and now Amberg's writing your name into a filing cabinet like the other offers never happened."
 
 "Because what I want to do is happening in one building and I'm standing in it," Kavi says, and keeps turning the cable.
 
@@ -144,7 +144,7 @@ A beat, and the pacing on the other end of the line stops. "No to what? What hap
 
 "What kind of job, exactly, and what would you even be doing?"
 
-Chloe gives it to her in the order Amberg gave it to her. "Research, full time, starting the day I'd have gone to a dorm instead. A hundred and thirty five thousand a year to start. Housing, food, a car, medical, none of it mine to pay for. The degree too, if I want it, paid for, on my own schedule, and the post held open until I finish."
+Chloe gives it to her in the order Amberg gave it to her. "Research, full time, starting the day I'd have gone to a dorm instead. A hundred and thirty five thousand a year to start. Housing, food, a car, medical, none of it mine to pay for. The degree too, if I want it, paid for, on my own schedule, and the post held open until I finish. The review happens every March, and the raise is whatever the review says it is, nothing negotiated separately. Long weeks the first year and shorter ones after that, same as anyone else on staff, and I'd be reporting to whoever ran my team the same as anybody else would."
 
 The silence on the line runs long enough, unbroken by the usual kitchen noise, for Chloe to check the screen and be sure the call is still live.
 
@@ -160,17 +160,17 @@ The silence on the line runs long enough, unbroken by the usual kitchen noise, f
 
 "Say that whole thing again for me," her father says, "every part of it, from the start, because I want to hear it properly."
 
-"Research, full time, starting the day I'd have gone to a dorm instead. A hundred and thirty five thousand a year to start. Housing, food, a car, medical, none of it mine to pay for. The degree too, if I want it, paid for, on my own schedule, and the post held open until I finish." She keeps the parts in Amberg's order, because the order is the only thing about it she can hand over intact. "That's all of it. That's everything that was on the desk."
+"Research, full time, starting the day I'd have gone to a dorm instead. A hundred and thirty five thousand a year to start. Housing, food, a car, medical, none of it mine to pay for. The degree too, if I want it, paid for, on my own schedule, and the post held open until I finish. The review happens every March, and the raise is whatever the review says it is, nothing negotiated separately. Long weeks the first year and shorter ones after that, same as anyone else on staff, and I'd be reporting to whoever ran my team the same as anybody else would." She keeps the parts in Amberg's order, because the order is the only thing about it she can hand over intact. "That's all of it. That's everything that was on the desk."
 
-Her father lets a breath out in a short exhale, not quite a laugh. "That's a mistake, however it's dressed up. I'm not going to sit here being careful about it and let your mother be the somebody who says so."
+Her father lets a breath out in a short exhale, not quite a laugh. "That's a mistake, however it's dressed up. I'm not going to sit here being careful about it and let your mother be the somebody who says so. I've said harder things to you than this over smaller money, and I'm not about to start being careful now."
 
 "Dave."
 
-"I'm allowed to think it's a mistake." Back to Chloe now, and slower, in the voice he uses for laying a number down on a table. "You understand what that money actually is, over a decade, with the housing and the degree stacked on top of it, before you've paid a dollar of rent anywhere else in your life. I have paid rent or a mortgage every month since before you were born, and the number has mattered in every single month of it."
+"I'm allowed to think it's a mistake." Back to Chloe now, and slower, in the voice he uses for laying a number down on a table. "You understand what that money actually is, over a decade, with the housing and the degree stacked on top of it, before you've paid a dollar of rent anywhere else in your life. I have paid rent or a mortgage every month since before you were born, and the number has mattered in every single month of it. There has never once been a month where it didn't, and I'm not saying that as a complaint, I'm saying it because it's true, and I want you standing in front of a number that size with your eyes actually open to what it is, not just the word guaranteed, which is doing most of the work in that offer whether you noticed it or not."
 
 "I understand what it is, because I did the math myself before I ever walked into that room, and I understood it fully before I said no. I wrote it out on the back of the deadline list in February and I still have the page."
 
-"Then explain it to me, because from here it looks like you turned down more money than your mother and I have made in any five years combined, for a reason you haven't said yet. Say it to me the way you said it to him in the room."
+"Then explain it to me, because from here it looks like you turned down more money than your mother and I have made in any five years combined, for a reason you haven't said yet. Say it to me the way you said it to him in the room, word for word, and don't soften any part of it on my account."
 
 "If I take it, I already know exactly what the next decade looks like," Chloe says. "I've seen the building. I've seen the work. I've watched what everyone in it does with a bad afternoon and what they do with a good one since I was seven. I could tell you what the first year looks like, and probably the fifth." She hears her own voice picking up pace and keeps going anyway. "Everyone I've ever been ranked against my whole life is inside those two buildings, and I don't know what I'd be if I got ranked against anyone else. If I stay, I never find out. I get paid every month not to find out."
 
@@ -186,13 +186,13 @@ A pause, and then her father again, quieter. "What happens if you change your mi
 
 "No, I turned it down flat, and I left that particular question sitting on the table."
 
-Her mother's voice, when it comes back, has the edge she uses reading the fine print on a mortgage refinancing before she'll sign it. "You know Georgetown costs real money, and we've always been straight with you about that, ever since you were old enough to ask a real question about it. If this is the degree instead of the guaranteed money, I need you to actually hear that part, not just the part where you get to go find out about yourself. We will find it. I would still rather you knew what we were finding."
+Her mother's voice, when it comes back, has the edge she uses reading the fine print on a mortgage refinancing before she'll sign it. "You know Georgetown costs real money, and we've always been straight with you about that, ever since you were old enough to ask a real question about it. If this is the degree instead of the guaranteed money, I need you to actually hear that part, not just the part where you get to go find out about yourself. We will find it. I would still rather you knew what we were finding. That's not a complaint, it's a fact, and I'd rather you had the actual number than assume your father and I have it sitting around somewhere. We don't, and we never have, and the sooner you know that the better this conversation goes for both of us, because I would rather spend the next few minutes on the actual number than have you find out later that there isn't any sitting around, and finding that out later, after you've already made the choice, is worse than hearing it now while there's still a choice left to make, and I would rather say it plainly myself than have you find out from a bill in a few years that nobody ever sat you down and said it clearly."
 
 "I hear it."
 
 "Say it back to me."
 
-"It's not free, and you and Dad are going to have to figure out how to pay for it, like you figure out everything else, and it's my fault that you have to. I had a way to make it cost you nothing, but I gave it back this afternoon."
+"It's not free, and you and Dad are going to have to figure out how to pay for it, like you figure out everything else, and it's my fault that you have to. I had a way to make it cost you nothing, but I gave it back this afternoon, out loud, in a room, while a man wrote it down as I was saying it."
 
 "That's not what I..." her mother starts, then stops and starts again. "It's not your fault, and I need you to actually hear that, because it's a fact about a number and only that. There's a difference between a fact and a fault, and I want you to know it."
 

@@ -4,7 +4,7 @@
 
 The parent hotel has a breakfast room with waffles on paper plates, and every morning there is a roomful of adults in it who all know each other by now. On the last Wednesday Chloe climbs onto the chair beside her dad on her knees, gets syrup on her fingers before the plate is in front of her, and eats, while under the table her sneaker keeps catching the chair leg, a small noise nobody at the table notices.
 
-"We drove it, both ways, because there was no version of this where we put her on a bus," a man says, on his feet with a paper plate in one hand.
+"We drove it, both ways, because there was no version of this where we put her on a bus. We looked at the map for an hour and decided we'd rather just drive it ourselves," a man says, on his feet with a paper plate in one hand.
 
 "All of us drove, but the letter offered a bus."
 
@@ -30,7 +30,7 @@ Chloe's dad has been quiet through all of it, cutting his waffle into squares an
 
 Several of them answer at once: "They said they have a list."
 
-"We got the list, and then a paragraph on how the list is compiled, which explained the paragraph, but not the list."
+"We got the list, and then a paragraph on how the list is compiled, which explained the paragraph, but not the list. Read the whole thing twice and you still don't know a single name that's on it or why."
 
 "They told us the list is a good list," the woman says, "which leaves the whole question of good at what."
 
@@ -110,7 +110,7 @@ When he asks her to do the fractions again from the start, she turns the napkin 
 
 "But you could already do them, because you told me you got all eight of them right."
 
-"Anybody can do the flipping," Chloe says, putting the pen down. "You do it and it comes out right. But the rightness belongs to him and not to you. All you actually know is that he said so."
+"Anybody can do the flipping," Chloe says, putting the pen down. "You do it and it comes out right. But the rightness belongs to him and not to you. All you actually know is that he said so. You never watched the digits go in and the right number come out on your own napkin."
 
 Her dad looks at the napkin, folds it in half twice, and puts it in his shirt pocket.
 
@@ -140,7 +140,7 @@ Ruth takes her shoes off and lines them up against the wall, heel to heel, then 
 
 "You were on the wrong side of a door for that call. How would you know what she said."
 
-"I heard half of it through the door. That's half more than you heard. Then Mom noticed I was there."
+"I heard half of it through the door. That's half more than you heard. Then Mom noticed I was there. And half a fact still beats a whole guess, so I'm not taking any of it back. You weren't even there, Sam, so you don't get an opinion on how much of a door I was standing behind."
 
 "Half a phone call is half a phone call, but the other half is the half where they say the thing."
 
@@ -150,7 +150,7 @@ Ruth picks the knot out of one shoelace with both thumbs instead of answering hi
 
 "Your parents asked about the whole year on the third day?"
 
-"They liked the food, mostly, and the food is what got them talking about everything else."
+"They liked the food, mostly, and the food is what got them talking about everything else. My dad wrote down what was in the sauce on the Tuesday and tried it at home twice. It still isn't right."
 
 "They asked about a whole year on the third day because of the food?"
 

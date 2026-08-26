@@ -32,11 +32,11 @@ Her dad takes it and reads it in his free hand, still eating.
 
 Her dad puts the fork down to hold it with both. "No. This is the first I've heard of it, and I've been sitting here the whole time you have."
 
-"So how do they have her name, when I keep it off every form I am handed, school, program, all of it. I have been doing that since preschool."
+"So how do they have her name, when I keep it off every form I am handed, school, program, all of it. I have been doing that since preschool. I don't even give it to the pediatrician's office unless they ask twice."
 
 "Well, how would anybody," her dad says, setting the letter back down between them.
 
-"Ask them, there's a number right there at the bottom, so let's call it instead of guessing at the table. I'm not sitting here doing this all night."
+"Ask them, there's a number right there at the bottom, so let's call it instead of guessing at the table. I'm not sitting here doing this all night. I've got the letter in my hand and the phone right here, so there's no reason we're still talking about this instead of just calling."
 
 "I'm asking you." Her mom's hand is flat on the table now. "You've had it about as long as I have."
 
@@ -46,7 +46,7 @@ Her mom takes it back and looks at the back of it, finding only the ink from the
 
 "It's free, the whole month, food, a bed, a bus, all of it, but things are not free. Not for a month, and not with a bus in it."
 
-"Sometimes they are, if somebody's got the money and wants to give it away for no reason at all."
+"Sometimes they are, if somebody's got the money and wants to give it away for no reason at all. Rich people build whole camps and hand them out free just to put their name on the building."
 
 "There's always a reason, we just haven't heard it yet," her mom says.
 
@@ -98,7 +98,7 @@ Another wait, after which her mom says uh huh, then waits again.
 
 The voice goes on for most of a minute.
 
-"Okay, but somebody made the list, because a person made it, somebody sat down and typed my kid's name. I want the name of that person."
+"Okay, but somebody made the list, because a person made it, somebody sat down and typed my kid's name. I want the name of that person. Not the department, not the program, the actual person who sat at a desk and put my daughter on a list I never agreed to."
 
 Chloe edges down the stairs during the wait, close enough to see her mom's free hand braced on the edge of the counter, and her mom points at the stairs, still facing the counter, so Chloe goes back up to the fourth stair.
 
@@ -172,7 +172,7 @@ Her dad comes in for the coffee and stands behind her chair with a hand on the b
 
 "Is this the part you kept going back to?"
 
-Her dad drinks the coffee standing up behind her. "That's the part. All of them, top to bottom. Then I went and looked up the school, and the school has been open four years."
+Her dad drinks the coffee standing up behind her. "That's the part. All of them, top to bottom. Then I went and looked up the school, and the school has been open four years. It's got a real address and a real phone number that somebody actually answers. It's got a website that hasn't been touched since the day it went up, which is either very old money or very careless, and I can't tell you which yet."
 
 Behind her the bills are clipped to the refrigerator in a stack thick enough to curl the top one over, but the letter upstairs says the month is free, and says it twice, in different ways.
 

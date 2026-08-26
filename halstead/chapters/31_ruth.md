@@ -12,7 +12,7 @@ Advising sends her back to the department, and the department sends her to advis
 
 A woman in the department office finally reads the whole folder, not just the top page, and squares it back together in order before she answers.
 
-"The sequence you're in is the only sequence there is. There isn't another track to be moved onto, not in this department and not upstairs either, and there has not been anything else in all the years I have worked in this office. I'm sorry, because I can see how much of this you did before you came in here."
+"The sequence you're in is the only sequence there is. There isn't another track to be moved onto, not in this department and not upstairs either, and there has not been anything else in all the years I have worked in this office. I'm sorry, because I can see how much of this you did before you came in here, and none of it was wasted, it just wasn't going to change what's already been decided, and I'd rather tell you that plainly than let you keep climbing those stairs for nothing, coming back with the same folder and the same question and getting the same answer from whoever's sitting at this desk that week."
 
 "That can't be right. The material in the opening weeks belongs to a course pitched years behind where a school like this ought to be placing me. I sat a diagnostic in August and I would like to know what it was actually for."
 
@@ -46,7 +46,7 @@ ________________
 
 For most of a year, she holds that.
 
-The months underneath that sentence look, from outside, like everything is fine. Class happens. Problem sets go in early. Dinner is in the hall nearest her building, most nights, because a fixed routine is one less thing to decide. When her mother calls on Sundays, Ruth answers on the second ring and gives her the actual week, in order. Her father tells her, over speakerphone, that the university health plan covers a specialist visit without a referral, but she corrects him. "That's not what the policy says, Dad. It says you need one within thirty days or they can deny the claim retroactively." He reads it back to her off his laptop while she's still on the line, finds the clause, and agrees she's right. Neither of them mentions that she hasn't once, in months of Sunday calls, said anything about the placement.
+The months underneath that sentence look, from outside, like everything is fine. Class happens. Problem sets go in early. Dinner is in the hall nearest her building, most nights, because a fixed routine is one less thing to decide. When her mother calls on Sundays, Ruth answers on the second ring and gives her the actual week, in order. Her father tells her, over speakerphone, that the university health plan covers a specialist visit without a referral, but she corrects him. "That's not what the policy says, Dad. It says you need one within thirty days or they can deny the claim retroactively, and thirty days from the visit has already passed, so you should have called this morning instead of tonight." He reads it back to her off his laptop while she's still on the line, finds the clause, and agrees she's right. Neither of them mentions that she hasn't once, in months of Sunday calls, said anything about the placement.
 
 The study group stays folded into a smaller room in her head: something she manages rather than something she shares. Devansh, who ends up in most of her classes by spring, gets the closest look at it, though he has no idea what he's actually seeing. That spring he brings her a proof he's stuck on. The error takes her under a minute to find, a sign flipped two steps in, and she tells him so directly. "That's not wrong because the idea's bad, Devansh. It's wrong because you dropped a negative on line six."
 
@@ -58,7 +58,7 @@ The tally she keeps is private instead of public: every problem set returned wit
 
 A professor breaks it: she likes him, genuinely, and in office hours he cannot follow her past the third step of her reasoning, and he says so, then asks her to go back.
 
-His office is on the fourth floor, narrow, with a window stuck a half-inch open and a whiteboard crowded with other students' handwriting he hasn't gotten around to erasing. There are very few of her professors here she likes, and she likes him: he corrects a wrong answer the day he gives one, out loud and with no ceremony about it. He's the only person who has ever pushed back on a proof of hers rather than simply crediting the answer. The result she brings him is one she's proud of, something she worked out over a couple of nights, and she states it the way she states everything, conclusion first. "It holds because the boundary term cancels once you fix the sign convention, and once that's fixed the rest follows directly."
+His office is on the fourth floor, narrow, with a window stuck a half-inch open and a whiteboard crowded with other students' handwriting he hasn't gotten around to erasing. There are very few of her professors here she likes, and she likes him: he corrects a wrong answer the day he gives one, out loud and with no ceremony about it. He's the only person who has ever pushed back on a proof of hers rather than simply crediting the answer. The result she brings him is one she's proud of, something she worked out over a couple of nights, and she states it the way she states everything, conclusion first. "It holds because the boundary term cancels once you fix the sign convention, and once that's fixed the rest follows directly, straight through to the end, without anything else needing to be assumed along the way."
 
 "Stop me there, because you have lost me, and you lost me two steps before I said anything about it." He turns the page round on the desk so that it faces him, and reads the top of it over again while he waits. "From the top."
 
@@ -66,13 +66,13 @@ From the top, then, and step one and step two go by without any trouble in them 
 
 "Still lost." He doesn't look up from the page. "Slower than that, if you don't mind."
 
-As the assumption she'd folded into a single line comes apart into the separate claims underneath, she slows down and states each on its own. "Fixing the convention only puts it in the form the identity is already written in. Then the boundary term goes to zero."
+As the assumption she'd folded into a single line comes apart into the separate claims underneath, she slows down and states each on its own. "Fixing the convention only puts it in the form the identity is already written in. Then the boundary term goes to zero, and once it does the rest of it is just bookkeeping."
 
 At the first he nods, but at the second the nod does not arrive, and he sits back off the page with the pen still up in his hand.
 
 "Goes to zero how."
 
-"Because there is nothing left out at the edge for it to cancel against. The function is already gone by the time you get out that far." It's the second, she realizes watching him, that she has always kept private, checked only against her own head, where it always came out fine. "It isn't a cancellation." She lets it sit for a second. "It's an absence."
+"Because there is nothing left out at the edge for it to cancel against. The function is already gone by the time you get out that far, so there's nothing left standing on either side of the line to argue about." It's the second, she realizes watching him, that she has always kept private, checked only against her own head, where it always came out fine. "It isn't a cancellation." She lets it sit for a second. "It's an absence."
 
 "Shorter."
 

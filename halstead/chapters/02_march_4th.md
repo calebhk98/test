@@ -20,7 +20,7 @@ The form the office gave her mom runs to several pages, so Chloe comes back to t
 
 Her mom stops, looks at the clipboard, then at Chloe, then puts the pen down on the papers.
 
-"I'm doing my best guess on some of these, because I only get to see the outside of you, so I'd rather guess honestly than skip a question," she says.
+"I'm doing my best guess on some of these, because I only get to see the outside of you, so I'd rather guess honestly than skip a question. If I get it wrong, you can tell me afterward and I'll change it," she says.
 
 Her dad is at work. That morning he tried to move two things but managed neither, standing in the kitchen with his keys in his hand, saying sorry until her mom told him it's fine, it's a Wednesday. Chloe had held his sleeve a second longer than the door needed. She doesn't know whether this is the kind of appointment you bring a dad to, so she reads the waiting room instead.
 
@@ -40,7 +40,7 @@ Introducing himself as Ben, he asks what he should call her, then sits down on a
 
 "Okay, but is it a test with a grade at the end? Can you fail it? Say I get all of them wrong. What happens then?"
 
-"No, and there is no passing number either. I am watching how you do things rather than whether you get them," he says straight away, the answer already lined up.
+"No, and there is no passing number either. I am watching how you do things rather than whether you get them. If you get stuck on one, I want to see what you try next, not whether you get there," he says straight away, the answer already lined up.
 
 Chloe looks at him hard and files the last part with everything else adults say when they want you to sit still.
 
@@ -82,7 +82,7 @@ Then the questions turn into pairs of things and what the two of them share, the
 
 "Good, and what do an hour and a year have in common?"
 
-"They're both amounts of time. And people picked them both. An hour isn't really a thing out there. It's just where we decided to cut it."
+"They're both amounts of time. And people picked them both. An hour isn't really a thing out there. It's just where we decided to cut it. Somebody decided a year too. Nobody just found it lying around."
 
 Chloe sits up a little, waiting to find out if that counts extra. Ben stops writing, then writes for longer than usual, sideways down the white edge of the page where the boxes have run out.
 

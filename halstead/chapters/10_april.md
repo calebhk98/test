@@ -18,7 +18,7 @@ Her room has a bed, a desk, a window, and a girl from Michigan named Fen whose r
 
 Ruth sits on the end of Fen's bed with her shoes on and talks the whole time Chloe takes to unpack: Priya arrived in January and is on second floor; a boy in their year broke his wrist in February doing something everybody has a different account of; the bread is good on Wednesdays and Fridays, though everybody on the floor has a theory about why, and no two theories match. Chloe goes to the window between armfuls of socks, keeping her hands off the sill and the rocks on it. The glass has the whole approach in it: the gravel loop, the front of the building in grey stone that goes to brick above the second floor, and past the mown grass a road with trees on the far side of it. She came in under all of that an hour ago but never once looked up. At the bottom of the bag is the envelope with her name on it, which goes into the desk drawer under a folder.
 
-"What's your last name, spelled out? I want to get it right the first time instead of guessing at it for a month."
+"What's your last name, spelled out? I want to get it right the first time instead of guessing at it for a month. I already have a list going and I'm not doing it twice."
 
 Ruth watches her write it on the inside cover of a notebook. "Aymar. A, Y, M, A, R. Why bother, when everyone at camp already said it wrong and I let them?"
 
@@ -66,7 +66,7 @@ Breakfast is louder than dinner, because the day's shape is still up for grabs a
 
 Swimming is the first afternoon hour and everybody has to do it, so the pool is warm, the lane is hers for the hour, and the teacher stands at the shallow end telling her what her left arm is doing until she can hear it coming before he says it. In the second week he gets in and swims to show her what he means about the roll, and it is a different thing in the water than anything the rest of them are doing. Then he gets out and finishes the sentence he was in the middle of.
 
-"He went to the Olympics. Swimming, obviously, since there's no other sport that teacher looks like he'd have done, and somebody's mom told my mom in January," Priya says, reaching past her for the bread.
+"He went to the Olympics. Swimming, obviously, since there's no other sport that teacher looks like he'd have done, and somebody's mom told my mom in January. Now he can't even watch us jump off the blocks without doing the arm thing himself," Priya says, reaching past her for the bread.
 
 The second hour she picks herself, off the elective list on the wall, and she picks cooking because Ruth is already in it: knife work, posture, cleaning as you go, plus being told for the fourth time that your onion is uneven end to end.
 

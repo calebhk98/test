@@ -36,7 +36,7 @@ The first term is ones: standing, falling, getting up off the floor with somebod
 
 The 10v1 starts in January.
 
-"One in the middle, ten on them, a minute on the clock." Kowalczyk has the clock in her hand. "A few rounds a class, and the rest of the hour is what you've been doing since September, because that carries on regardless."
+"One in the middle, ten on them, a minute on the clock." Kowalczyk has the clock in her hand. "A few rounds a class, and the rest of the hour is what you've been doing since September, because that carries on regardless. Nobody gets to skip conditioning just because they've started sparring. You'll be doing both right up until the day you stop coming to this room at all."
 
 "That's a lot," Chloe says. "That's twice as many hands as I've ever had on me at once."
 
@@ -123,7 +123,7 @@ After dinner, when the corridor is empty, she goes back and reads it again, then
 
 "Six is all of us, Chloe."
 
-"I was standing in it. Wes asked them the number right in front of me, and it took him answering it for me to even notice."
+"I was standing in it. Wes asked them the number right in front of me, and it took him answering it for me to even notice. Nobody handed me a stopwatch and told me to time it."
 
 Ruth is still looking at the sheet. "So was I, so was Wes, and I don't know what we were supposed to be doing either. So that one should be on whoever wrote the drill and left it that vague, not on the person who noticed first. There's another before long, and we'll actually know what it means by then."
 
@@ -155,7 +155,7 @@ She is nodding before he has finished. "Steel says it, textiles said it, and som
 
 She takes a roll and puts it down again. "I said you look at whether you could rebuild it in a war and how long it'd take. It's what I had, and it's thin, I know it's thin, but it was Tuesday and I had to put something down on the page."
 
-He turns round in his chair properly. "No, hold on," he says. "You've got most of an argument there. What happens if it's five years and the war's two?"
+He turns round in his chair properly. "No, hold on," he says. "You've got most of an argument there. What happens if it's five years and the war's two? Does it still look smart partway through, or only in the year you signed it?"
 
 "Then having the answer doesn't help you at all, does it, since you're already too late either way."
 
@@ -173,7 +173,7 @@ Theo gets his back with no note that week, but he puts it straight into his bag 
 
 More go in before the break, but they are the essays they have been since October. The last is on whether a promise made under a threat counts, a question that Hearn's note calls good before asking where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 again on the floor of the spare room with the door shut. Her grandmother finds her there on the second afternoon and leaves the papers exactly where they are.
 
-"There's a chair," her grandmother says. "You know, an actual chair, a step from where you're sitting on my floor."
+"There's a chair," her grandmother says. "You know, an actual chair, a step from where you're sitting on my floor. Your knees will thank you for it later, even if you don't believe me now."
 
 "I know," Chloe says. "There's a chair, but I've been looking at it."
 

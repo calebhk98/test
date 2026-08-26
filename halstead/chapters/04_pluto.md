@@ -54,7 +54,7 @@ Pushing the drawer shut with her knee and then leaning on it, Priya asks whether
 
 Priya sits down, cross-legged, with a pillow in her lap.
 
-"A pony is a separate thing, anything under fourteen two. Hands. That's how you measure them, from the ground up to about here."
+"A pony is a separate thing, anything under fourteen two. Hands. That's how you measure them, from the ground up to about here. And a mini isn't even a pony, it's smaller again. Almost everybody gets that part wrong too. And a draft horse is basically the opposite of a pony, even though people mix those up as well. Being tall has nothing to do with it. They're built to pull something heavy, so a short one can still count as a draft and a tall one can still not."
 
 The edge of her hand goes across the top of her own shoulder.
 
@@ -146,7 +146,7 @@ Sam says the and a half every time, grinning at his own jokes before anybody els
 
 That night Chloe calls the desk again and sleeps in the hotel again, then in the morning her mom asks whether anybody talked to her, and Chloe says a boy in her room did, so her mom asks what about.
 
-"Pluto, and it's not a planet anymore. They took a vote on it and it lost," Chloe says, still down over her shoelaces for all of it.
+"Pluto, and it's not a planet anymore. They took a vote on it and it lost. It didn't get smaller. Nothing about it changed at all. They just changed the rule for what counts," Chloe says, still down over her shoelaces for all of it.
 
 "Since when, though, because that was a planet when I was at school."
 
@@ -234,7 +234,7 @@ ________________
 
 On the second Tuesday, Mr. Doyle says something about weight while he is drawing on the board, and Ruth's hand goes up, though she starts talking before it is noticed.
 
-"That's mass." Ruth's hand is still up, though nobody has called on it. "Weight is the pull on it. Take it to the moon and the weight goes down. The mass stays exactly what it was."
+"That's mass." Ruth's hand is still up, though nobody has called on it. "Weight is the pull on it. Take it to the moon and the weight goes down. The mass stays exactly what it was. Drop it there and it still falls just as fast. Nothing about the stuff itself changed."
 
 Mr. Doyle stops with the marker still up at the board to look at what he has written, then wipes one word out with the side of his hand, writing the other into the gap it leaves.
 

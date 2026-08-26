@@ -4,7 +4,7 @@
 
 The loop out front is full of cars with their trunks standing open, more adults in it than Chloe has seen in one place all month, and somebody's little brother screaming about a shoe. Sam left early, which Chloe finds out from a girl she had not spoken to once all month and who tosses it over her shoulder with a pillow under one arm, already halfway down the hall, while Kavi is over by the double doors with adults who give him a hand up, until a family walks between them and by the time they pass he has gone.
 
-Ruth finds her at the flagpole, hugs her hard enough to hurt, and says it from close up with a fistful of Chloe's sleeve in each hand. "So we're all getting in. That's the plan and everybody's doing it. So you have to, okay? You as well, promise me you'll make it in."
+Ruth finds her at the flagpole, hugs her hard enough to hurt, and says it from close up with a fistful of Chloe's sleeve in each hand. "So we're all getting in. That's the plan and everybody's doing it. So you have to, okay? You as well, promise me you'll make it in. If it's only some of us next year I'm going to know exactly whose fault it is."
 
 "We're all getting in, I promise. And I'm going to ask every single day until somebody says yes."
 
@@ -36,13 +36,13 @@ Chloe opens her mouth, then closes it, and goes upstairs to sit on the end of he
 
 "She was just Ruth to everybody, the entire time."
 
-"Kavi, then, you said Kavi a hundred times in that car, surely a last name turned up somewhere in there."
+"Kavi, then, you said Kavi a hundred times in that car, surely a last name turned up somewhere in there. You gave me his shoe size before you gave me anything useful about where he's actually from."
 
 "I never heard Kavi's either," she says, with her chin tucked down and the back of her wrist scrubbing across one eye, "but I know practically everything else there is to know about him."
 
 Her mom's hand comes off the phone book and rests on top of Chloe's head for a second before it goes back to the page.
 
-"Priya, then, because you slept in a room with Priya for a whole month, Chloe, so you have to know something about her family."
+"Priya, then, because you slept in a room with Priya for a whole month, Chloe, so you have to know something about her family. A last name, an address, the name of her school, anything at all that isn't just a first name and a bunk."
 
 "I had no idea I would need it, but now there's no way left to find out," she says, and her mouth goes tight at the corners, the way it does right before she cries.
 
@@ -164,7 +164,7 @@ At breakfast she asks, standing at the end of the table instead of sitting down 
 
 "Can I go to Halstead, and is today the day you finally know?"
 
-"We're thinking about it, and that's a decision your father and I have to make together, not something we settle standing in a hallway."
+"We're thinking about it, and that's a decision your father and I have to make together, not something we settle standing in a hallway. We're not going to decide something this big with your backpack still on your shoulders, and neither should you want us to."
 
 "But when will you actually know, though? You keep saying soon. Soon keeps not coming."
 

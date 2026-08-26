@@ -96,7 +96,7 @@ Four men are inside: two at a folding table with laptops open, a third behind a 
 
 Just inside the door she stays on her feet, hands loose at her sides, and looks at the man behind the desk, since he is the first to straighten.
 
-"You put thirteen employer accounts on my site on the night of the second, and you asked nine people for a bank routing number. Three of them answered. One of them is out two thousand six hundred dollars as of Monday morning, and I was on the telephone with her half of last night while she apologised to me for it."
+"You put thirteen employer accounts on my site on the night of the second, and you asked nine people for a bank routing number. Three of them answered. One of them is out two thousand six hundred dollars as of Monday morning, and I was on the telephone with her half of last night while she apologised to me for it, for something the men in this room did to her, not anything she did to anybody, and every single apology like that belongs to somebody in here instead, whoever actually typed the message she answered."
 
 The room goes quiet for a moment while the man behind the desk sets down what he was holding.
 
@@ -116,19 +116,19 @@ But she stays where she is. The man in the doorway comes off the frame, walks ar
 
 The man behind the desk sits back in the chair for the first time since she came through the door. The man with the coffee has his phone up by then; the first photograph is of her, from where he stands. Then he crosses to the window, photographs the car in the lot below, and reads her registration out loud, every character of it, slowly, and then again.
 
-"You aren't going to do anything to me. There are filings with a real agent's name on them, and there is a shop full of people underneath us who watched me come up those stairs. Whatever it is you have got running in this room, it does not survive somebody going missing off your own staircase," she says.
+"You aren't going to do anything to me. There are filings with a real agent's name on them, and there is a shop full of people underneath us who watched me come up those stairs. Whatever it is you have got running in this room, it does not survive somebody going missing off your own staircase, in front of a shop full of people who already saw her go up it," she says.
 
 "It's twenty past five." The man at the window answers her with his back turned. "Chuck locks the bay on the hour, so the shop underneath you is shut and those stairs were yours alone. Nobody watched you come up. You want to be thinking about that instead of about filings."
 
 On she goes to the next thing on her list.
 
-"I'm not calling the police, because a county detective gets a stack of form submissions and a Tuesday he already had plans for. He takes the report, he gives me a number to ring back on, and that is the end of it. So that isn't a threat I've got, but I'm not going to stand in your office pretending I've got it."
+"I'm not calling the police, because a county detective gets a stack of form submissions and a Tuesday he already had plans for. He takes the report, he gives me a number to ring back on, and that is the end of it. So that isn't a threat I've got, but I'm not going to stand in your office pretending I've got it, and I'm not going to waste the drive out here on a threat that doesn't actually work, so you can stop waiting for it to land."
 
 "You can't prove any of it," the man at the folding table says. "There's not a name on any of those accounts, and there's nothing on a screen anywhere that says this room. Whatever you carried up those stairs, you carried a printout. You've got no idea who you're standing in front of."
 
 Nadia laughs; it is a single sound, and it is out of her before she has decided anything about it.
 
-"Nine of you typed a live state registration number into my form. It's field six. It's a required field, and that is why you filled it in."
+"Nine of you typed a live state registration number into my form. It's field six. It's a required field, and that is why you filled it in, and a required field is a required field whether the person filling it in is honest or not."
 
 The man at the folding table stands up, taking his time about it because he can afford to, and he comes around the end of the table and stops close enough that she has to tilt her head back to keep his face in view.
 
@@ -136,13 +136,13 @@ The man at the folding table stands up, taking his time about it because he can 
 
 At the same speed, she gives it back to him.
 
-"Nine of you typed a live state registration number into my form. It's field six. It's a required field, and that is why you filled it in."
+"Nine of you typed a live state registration number into my form. It's field six. It's a required field, and that is why you filled it in, and a required field is a required field whether the person filling it in is honest or not."
 
-"Ten of them were filed in the same week in September, through the same registered agent," she says, from where she is standing. "The agent is Hanley. Hanley carries thirty-one filings on that address, but twenty-six of them belong to somebody who is not in this room."
+"Ten of them were filed in the same week in September, through the same registered agent," she says, from where she is standing. "The agent is Hanley. Hanley carries thirty-one filings on that address, but twenty-six of them belong to somebody who is not in this room, and none of those people know their own paperwork is sitting upstairs of a tire shop."
 
 A man at the folding table turns a printout face down.
 
-"I'm going to send the whole file to the business division at the Secretary of State: time-stamped copies of the identical message, with a dollar figure attached, which is the only kind of complaint anybody up there opens before lunch. They come for Hanley rather than for you, and everything filed through him goes back on the street that week. Every last name on his address gets a letter with a date on it."
+"I'm going to send the whole file to the business division at the Secretary of State: time-stamped copies of the identical message, with a dollar figure attached, which is the only kind of complaint anybody up there opens before lunch. They come for Hanley rather than for you, and everything filed through him goes back on the street that week. Every last name on his address gets a letter with a date on it, and everybody there signs a new lease somewhere else after that, because this address stops being usable the day the letter goes out, and finding a landlord who'll take cash from a room full of men with no company name works about as well as it sounds."
 
 The man behind the desk has come forward onto his elbows now.
 
@@ -224,7 +224,7 @@ A line goes on his sheet, and she moves along to the next person.
 
 Another spends the whole interview describing a scheduling tool with real pride in his voice.
 
-"It reads the constraints off the shift board and it hands back a whole week in about a second. The floor manager used to spend every Friday afternoon of his life on that, and now he doesn't. He printed the first week it made and put it up on the wall behind his desk."
+"It reads the constraints off the shift board and it hands back a whole week in about a second. The floor manager used to spend every Friday afternoon of his life on that, and now he doesn't. He printed the first week it made and put it up on the wall behind his desk, and it's still up there now, a little faded, next to the schedule it replaced."
 
 "Who checks it when the schedule it produces is simply wrong?" she asks.
 
@@ -238,7 +238,7 @@ Whoever answers the second question properly gets a longer interview than the sc
 
 The ones she already has are the ones who answered it.
 
-A board starts rate-limiting her submission traffic on a Saturday in March. Tomas catches it off a graph well outside anything he had ever been asked to watch, rewrites the back-off, puts it out himself, and tells her on the Monday, by which time it has held through a weekend. Asked why the retry ceiling stayed where it was while he was in there, he says, "The ceiling was working. I don't go through a thing changing whatever already works, because then it's all mine, but none of it's theirs." She writes the ceiling herself that night.
+A board starts rate-limiting her submission traffic on a Saturday in March. Tomas catches it off a graph well outside anything he had ever been asked to watch, rewrites the back-off, puts it out himself, and tells her on the Monday, by which time it has held through a weekend. Asked why the retry ceiling stayed where it was while he was in there, he says, "The ceiling was working. I don't go through a thing changing whatever already works, because then it's all mine, but none of it's theirs, and I'd rather fix the part that's actually broken than sign my name to the rest of it." She writes the ceiling herself that night.
 
 Bev drives out on her own on a Saturday in April to five employers Nadia had yet to get to, and comes back with two of them signed and a third who wants to see Nadia in person. There is a thirty-day clause in both contracts.
 

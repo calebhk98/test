@@ -6,13 +6,13 @@ In the school office there is a folder about Chloe, who is six, started by her k
 
 What she knows instead is that her mom is on the phone in the kitchen most evenings now, standing at the counter with a hand pressed flat against her forehead.
 
-"No, I understand that, I'm just asking what the next step is, because I have asked twice and both times the answer was that we wait." She listens through more of it before the phone clicks over to her mom's other ear. "Okay, but she is a small child, and a piece of paper saying what you already said to me is a piece of paper, not a next step."
+"No, I understand that, I'm just asking what the next step is, because I have asked twice and both times the answer was that we wait." She listens through more of it before the phone clicks over to her mom's other ear. "Okay, but she is a small child, and a piece of paper saying what you already said to me is a piece of paper, not a next step. Send me the part where something is actually different, or don't send me anything at all."
 
 On the other side of the wall Chloe sits on the living room floor with a book open in front of her, listening instead of reading.
 
 Her mom listens again, longer this time, before the rest comes out.
 
-"I'm saying I've got a kid who used to like school, and I'd like somebody in that building to be as bothered about that as I am."
+"I'm saying I've got a kid who used to like school, and I'd like somebody in that building to be as bothered about that as I am. She used to ask on a Saturday if it was a school day. Nobody in that building has said that back to me even once."
 
 Chloe turns a page she stopped reading a while back, her thumb keeping a place she has already abandoned.
 
@@ -74,7 +74,7 @@ At dinner in September she talks for the entire meal about a book in which a gir
 
 "No, he gets worse and then he stops," Chloe says, putting her fork down. "He gets worse. She starts being fine without him and he can tell. So he gets meaner at exactly the point where she stops needing him. That's backwards. Except it isn't. That's exactly when you would."
 
-Chloe eats something, because she has been told to. "And she likes having him there by the end, but she keeps it to herself, and you just know anyway."
+Chloe eats something, because she has been told to. "And she likes having him there by the end, but she keeps it to herself, and you just know anyway. You know because of the little things. She saves him the last bite every time. She stops complaining about the noise he makes when he chews."
 
 "How do you know, then, if she never says so?"
 
@@ -102,7 +102,7 @@ The blacktop is warm enough by midmorning that the girls play in short sleeves, 
 
 "That was different." Kayleigh doesn't stop moving. "Maddie kind of scoops it instead of catching it properly. It's basically a whole other move."
 
-"How was it different, though? You both caught it off the bounce. That's the whole rule. It shouldn't matter how your hand does it."
+"How was it different, though? You both caught it off the bounce. That's the whole rule. It shouldn't matter how your hand does it. You caught it the same way she did. That's the only part that's supposed to matter."
 
 "It just was," Kayleigh says, and throws the ball before Chloe can say anything else.
 
@@ -164,7 +164,7 @@ While her dad drives, her mom holds the papers Mrs. Aldana gave them up against 
 
 Her mom turns a page.
 
-"She also says you have some trouble focusing, which is the part I want to talk about, since the reading part is already fine."
+"She also says you have some trouble focusing, which is the part I want to talk about, since the reading part is already fine. The reading is fine. What I keep turning over at night is whether anybody in that building has time to work out why."
 
 The parking lot, the boxes, the question that had already happened without her: all of it is true, but Chloe watches the streetlights come across the ceiling instead of saying so.
 
@@ -212,7 +212,7 @@ More typing, and then he says, "But if the school is putting it in writing, I'd 
 
 "That's a psychologist, or."
 
-"I'll give you two names, and you'll wait months on the first while the other is usually faster, so call both today and take whichever comes up sooner."
+"I'll give you two names, and you'll wait months on the first while the other is usually faster, so call both today and take whichever comes up sooner. Ask for the one who does school-age testing specifically, not just general behavior, or you'll be back here with the same question before the year is out."
 
 On the way out, the receptionist lets Chloe pick a sticker, which takes a long time, because there are two good ones.
 

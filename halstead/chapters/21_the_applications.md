@@ -36,7 +36,7 @@ Ruth reads it over her shoulder before she can close the laptop, laughing at her
 
 Ruth reads the top of it over her shoulder again between passes. "Which boy is this?"
 
-"Marek. He had the whole term of it done in a notebook and I never got a page of it off him."
+"Marek. He had the whole term of it done in a notebook and I never got a page of it off him, not once, not even the day I told him it wouldn't count against him either way."
 
 By the version that goes in he is half a line, a boy who would not hand work in, and the half line survives every pass after that. The notebook does not.
 
@@ -62,11 +62,11 @@ Nadia is in the room too, back against the door, laptop on her knees, and what s
 
 "You're not applying anywhere," Ruth says.
 
-Without looking up, she tabs to the next box. "I'm applying everywhere this week, and none of them are schools. Purchasing assistant at the plumbing supply out on Route 8. Parts buyer at a dealership. Service writer at the transmission place on Fourth. Dispatch at a freight company in Ambridge. An insurance office running a claims trainee program that says straight out of high school at the top and two years of experience further down."
+Without looking up, she tabs to the next box. "I'm applying everywhere this week, and none of them are schools. Purchasing assistant at the plumbing supply out on Route 8. Parts buyer at a dealership. Service writer at the transmission place on Fourth. Dispatch at a freight company in Ambridge. An insurance office running a claims trainee program that says straight out of high school at the top and two years of experience further down, which is the kind of form that's never actually met the person it's asking about, and I'm not going to sit here and pretend that time would have taught me anything the job itself won't, or that the paper on the wall would make the phone ring any faster than it already does."
 
 "Which one do you actually want?" Chloe says.
 
-"Any of them where somebody calls in wanting a price and I'm the one who answers the phone. Everything else is the building it happens in."
+"Any of them where somebody calls in wanting a price and I'm the one who answers the phone. Everything else is the building it happens in, the name on the door, the paperwork behind the counter, none of it the actual job."
 
 A second prompt asks about a place that changed her; Chloe cannot get the forge down to the limit either, so she writes about the reservoir instead, a few miles from her parents' house, and the hill she has to stand up on the pedals to clear. It comes out well under the limit with every line surviving the edit, a bad sign by her own reckoning for about a minute before she submits it anyway.
 
@@ -240,7 +240,7 @@ Chloe says, "If a store put a sign in its window saying only a few percent of th
 
 "Neither," Ruth says. "You'd think the sign was doing a job that had nothing to do with the store. It's written for the people out on the pavement, not for anybody who already walked in."
 
-"Ninety-one out of ninety-one bought something, and that's the number the sign should say. Nobody is ever going to put that in a window."
+"Ninety-one out of ninety-one bought something, and that's the number the sign should say. Nobody is ever going to put that in a window, because a window like that stops being an advertisement and starts being an accusation."
 
 "Or you'd want your money back for the trip in," Sam says.
 

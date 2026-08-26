@@ -64,7 +64,7 @@ A chair scrapes on the kitchen tiles, and somebody runs the tap for a moment bef
 
 "What do you want me to say, Meg, when you already know what I think? I've thought it since the car ride home in July, I've thought it every day since, and you've known that the whole time without me having to say it out loud at this table."
 
-"Then say it out loud at this table, because I need to actually hear it from you, not guess at it from the other side of the room."
+"Then say it out loud at this table, because I need to actually hear it from you, not guess at it from the other side of the room. I've been filling in your side of this conversation in my head for months now, and I could be filling it in wrong."
 
 Chloe lies with her eyes open and her hands under the pillow, listening to the fridge, until her dad says something she can't make out at all but her mom says the words four hours, in the voice she uses about a thing she has already lost.
 
@@ -124,7 +124,7 @@ The house comes up in April, on a Saturday, with Chloe up the road at the Peters
 
 "Meg, we'd see her every day of the week instead of ten weeks a year, and that's the whole trade they're offering us."
 
-"I heard you the first time, Dave, and I said no the first time too, and neither of those things has changed in the last thirty seconds."
+"I heard you the first time, Dave, and I said no the first time too, and neither of those things has changed in the last thirty seconds. You can say it a third time if you want, and I'll still be standing right here saying no."
 
 Dave rubs a hand over his face. "Then give me one reason, because I have been sitting here trying to think of one, but I can't."
 
@@ -132,7 +132,7 @@ Dave rubs a hand over his face. "Then give me one reason, because I have been si
 
 Dave looks at the table.
 
-"That's a hell of a way to put it, Meg, because you make it sound like I already agreed to hand over the roof over her head."
+"That's a hell of a way to put it, Meg, because you make it sound like I already agreed to hand over the roof over her head. I said yes to a summer camp, not to putting our whole address inside their gate, and there is a difference between those two things even if you've stopped seeing it. You can hand somebody a month. You cannot hand somebody a street."
 
 "It's how it is, though, and you know it is, because you said yes to the whole idea back in July, before either of us had even heard the word furnished."
 

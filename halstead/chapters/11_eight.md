@@ -64,7 +64,7 @@ In week three she comes in well past curfew, to find her mother standing in the 
 
 "Ellie Peterson's out till ten on a Friday, and her mom is totally fine with it."
 
-"Ellie Peterson is ten years old. I have met her mother, and she would tell you exactly what I'm telling you. Ask her."
+"Ellie Peterson is ten years old. I have met her mother, and she would tell you exactly what I'm telling you. Ask her. You are not the only kid at that school and you are not getting a different rule just because you asked first."
 
 "That's a number too, because somebody picked ten the way somebody picked nine, and the somebody was you both times. At school I can walk down to the library in the middle of the night if I feel like it. There's nobody on the door, nobody asks me anything, and that's a whole building of eight-year-olds, but the roof hasn't come off it yet. Nobody there even knows what time I came in."
 
@@ -84,7 +84,7 @@ Her mother turns the tap on, then off again, the sink empty under it. "Curfew, t
 
 "Did you win, or is this one of the times you're not sure?"
 
-Her mother has been looking at the window over the sink since she came in from the hall. "Obviously I won, I'm the one who picks the number. Dave, she has never fought me, not once, not about anything, not in her whole life."
+Her mother has been looking at the window over the sink since she came in from the hall. "Obviously I won, I'm the one who picks the number. Dave, she has never fought me, not once, not about anything, not in her whole life. If she really wanted that extra hour she'd have kept arguing after I said no, and she always stops the second she knows."
 
 Her grandmother comes on a Sunday. In the front room Chloe is explaining the bridge from camp with both hands and the coffee table before going for water, while her grandfather sits back, quiet, and the kitchen door stands open.
 
@@ -208,7 +208,7 @@ On a Tuesday in April Sam, Kavi, Ruth and Chloe end up on the grass behind the s
 
 "Since when does below the bracket not count, who even made that rule up?"
 
-Kavi says, "It's been the rule for ninety seconds, and it came in at exactly the moment Ruth stopped hitting above it."
+Kavi says, "It's been the rule for ninety seconds, and it came in at exactly the moment Ruth stopped hitting above it. A bracket's a bracket. It doesn't matter when we drew it, the pipe doesn't know the difference."
 
 Ruth gets six in a row above the bracket and is insufferable about it until dinner. Sam eats two of the apples and takes the bag back to his room, where it stays under the bed until the middle of May, at which point people on the corridor make it his problem. The bracket rule survives into the summer and gets applied to a stairwell, a laundry chute, and one of the goals on the field.
 

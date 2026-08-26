@@ -8,7 +8,7 @@ Archery is ordinary at first, because the start of it is butts at twenty metres,
 
 Then Coach Bell puts a metronome on a post at the near end of the field and holds an arrow up by the nock. "Everything in that gym worked because you had time, since a foam dart is fat and slow enough to watch the whole way and still get a hand in front of. A few millimetres of this, coming off the string faster than anything you've had at you, and end-on at seventy metres, so instead of crossing your eye it's a point that gets bigger. You cannot track it, and shooting one down in the air is beyond everybody on this field."
 
-Kavi says it from down the line. "That's the opposite of what we do with the paintballs. We watch the person rather than the dart, so we're moving before he shoots."
+Kavi says it from down the line. "That's the opposite of what we do with the paintballs. We watch the person rather than the dart, so we're moving before he shoots. The whole tell is in the shoulder, not the barrel, and it happens before the trigger does. You can train yourself to stop flinching at the sound, but you can't train the shoulder out of somebody, because it moves before they know they're going to shoot."
 
 Bell keeps hold of the arrow. "That's fine, and you're still doing it my way. You want to read a shoulder at seventy metres, do it on your own time with something that bounces. This is an arrow, and I want to know whether you can put one where you meant it every time, all year, without a bad afternoon."
 
@@ -82,7 +82,7 @@ Rhetoric is an hour a week of dismantling a speech to find the place where the p
 
 Art history is in the spring. In February the instructor projects a Dutch interior with a woman reading in it and says what it went for at auction in 1959 and again in 1998.
 
-Chloe says it to Kavi at dinner. "I can't make that work. It's a picture, the same picture in both of those numbers, and it sat in a room untouched the whole way between them."
+Chloe says it to Kavi at dinner. "I can't make that work. It's a picture, the same picture in both of those numbers, and it sat in a room untouched the whole way between them. Nobody touched it, nobody even opened the case, and the price still went up while it just sat there doing nothing."
 
 "Inflation," Kavi says around a mouthful.
 

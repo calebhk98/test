@@ -12,7 +12,7 @@ Voss lets them look at it for a while, and when he does start he starts with the
 
 Aymar asks why, out loud, in the tone of somebody asking on behalf of ninety people.
 
-"Because a gun you can only point at a man is a weapon," Voss says, "but a gun you can put a bullet onto a bullet with is a tool. You have had a year of the first. This year you get the second."
+"Because a gun you can only point at a man is a weapon," Voss says, "but a gun you can put a bullet onto a bullet with is a tool. You have had a year of the first. This year you get the second. You will spend most of it missing by the width of a dime before you ever hit that dime on purpose, and there is no shortcut through that part, not for anybody who has ever stood on this range. Put the rifle down when your arm shakes. Pick it back up when it doesn't."
 
 Voss delivers it like a thing he has said a thousand times to a thousand students, and it is round the year by Thursday and back at Chloe's own table twice before the end of the month, quoted with the settled confidence of something printed in a manual. In November, weeks into a run of cards that all read zero, she goes looking for where it comes from, first in the library and then in the range office, and the oldest instructor on the staff tells her that the first time he heard it was from Voss.
 
@@ -70,7 +70,7 @@ Ruth turns the clipboard round and holds it up. "No, I mean I timed the whole se
 
 "Where, though, since there's nowhere else I can even think to look?"
 
-Ruth puts the clipboard face down on the bench and holds the bag out. "If I knew that I'd have told you hours ago. Have a toffee, it helps me think."
+Ruth puts the clipboard face down on the bench and holds the bag out. "If I knew that I'd have told you hours ago. Have a toffee, it helps me think. I've eaten most of the bag and I'm still nowhere close."
 
 At dinner that week Sam says it to his plate. "You're on sixty," he says. "Everybody's talking about it at breakfast."
 
@@ -190,7 +190,7 @@ By the third Sunday she is out on the road past the reservoir with him in the pa
 
 He points with the cup. "I said look ahead, not Tennessee. That truck, what's he doing?"
 
-Her hands are at ten and two where he put them in the first week, and her knuckles have gone white on the wheel. "Coming out. His wheels are turned and he's crept forward twice, and he's looking left, so we're still invisible to him."
+Her hands are at ten and two where he put them in the first week, and her knuckles have gone white on the wheel. "Coming out. His wheels are turned and he's crept forward twice, and he's looking left, so we're still invisible to him. He hasn't checked his mirror once since he started moving, and he's not going to see us until he's already most of the way out."
 
 Her father drinks some of the coffee and tells her to carry on.
 

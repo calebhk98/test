@@ -96,7 +96,7 @@ Owen goes back to his sheet, where he stays, quiet, for the rest of the lesson.
 
 "Meaning what," Mr. Baptiste says.
 
-"Can you divide by zero if you flip it? Flipping zero is one over zero. And you can't divide by zero. So something has to break."
+"Can you divide by zero if you flip it? Flipping zero is one over zero. And you can't divide by zero. So something has to break. Either the flip doesn't work every time or zero was never a real number to begin with, and it can't be both."
 
 "Good, watch. Flip zero and you get one over zero, and one over zero has no answer at all, so the whole thing breaks right there. Same rule, same answer, and it's the one case where the rule tells you something is impossible," Mr. Baptiste says, doing it on the board as he says it and tapping the break with the marker. The bell goes before Ruth has finished arguing the point with him.
 
@@ -120,7 +120,7 @@ Swimming is the last thing every afternoon, and because Chloe arrived unable to 
 
 "It's a pool."
 
-"It's not a race though, there's just water and a wall at the end of it, and one wall's the same as any other wall."
+"It's not a race though, there's just water and a wall at the end of it, and one wall's the same as any other wall. Nobody's timing it. Nobody even brought a watch. You just decided it was a race because you got there first."
 
 "Somebody's still first out of the water. That's a race. Nobody has to call it one," Sam says.
 
@@ -160,7 +160,7 @@ Chloe waits, giving him a beat to add to it, and by the end of the beat Sam has 
 
 Ruth is at the end of the table with her chin on her hand, pushing one piece of food in slow circles around her plate.
 
-"He was crying in the stairwell, on Thursday, and I'm not being mean by saying it, that's what he was doing," she says to her tray.
+"He was crying in the stairwell, on Thursday, and I'm not being mean by saying it, that's what he was doing. He didn't even try to hide it, and I'm not going to pretend I didn't see it just because everyone else is pretending," she says to her tray.
 
 "Ruth."
 

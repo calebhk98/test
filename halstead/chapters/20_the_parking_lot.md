@@ -22,7 +22,7 @@ They stay a couple of hours, long enough for Sam to want to know whether the den
 
 "I'd act like it was a secret if it were my car. I'd have a whole story ready for anyone who noticed it. Different story every time."
 
-Ruth says, "You'd have told the whole school inside a week, and brought people out to look at it, given them the whole tour. You'd have charged."
+Ruth says, "You'd have told the whole school inside a week, and brought people out to look at it, given them the whole tour. You'd have charged, and then charged extra for the story about how it got there, and made most of the story up on the spot."
 
 The coffee cup goes a quarter turn on the table under her hand, and then another.
 
@@ -46,7 +46,7 @@ Sam has the syrup upside down over his second plate, timing the pour and countin
 
 "You said that like it was going to be different this year." Something in Ruth's face concedes the point before Ruth herself has agreed to concede it.
 
-"It's not not going to be different. It's just also, on top of whatever else it is, going to be the forge, as it always is."
+"It's not not going to be different. It's just also, on top of whatever else it is, going to be the forge, as it always is, same anvil, same sessions, same walk down there every morning before anyone else is up."
 
 Chloe has the next part of that ready, but gets as far as the first word of it.
 
@@ -56,7 +56,7 @@ Chloe takes her hand off the table and puts it in her lap; by the time anybody a
 
 Sam has the specials card up off the table, holding it at arm's length like a document recovered from an archive. "*Come hither for our world famous short stack.*" He puts the card down and leaves it face up between them. "*Hither.* The last time anyone said *hither*, it was Shakespeare."
 
-"It's in the dictionary, which makes it a word whether you like the sound of it or not. That's the whole test and it passes it," Ruth says.
+"It's in the dictionary, which makes it a word whether you like the sound of it or not. That's the whole test and it passes it, and if a word only counted while people still liked how it sounded, we would have run out of ones to use a long time ago, and every dictionary in every library would need rewriting every few years just to keep up with what people happen to like the sound of," Ruth says.
 
 "It makes it archaic. Archaic is a different category entirely from ordinary. There's a difference between a word being real and a word being something a person would actually say out loud."
 
@@ -130,11 +130,11 @@ Chloe says, "It was going to be nothing. You could see it from where we were sta
 
 Sam looks up. "How."
 
-Flat, not unkindly, she counts it off. "They were all bunched between two cars. If any two of them had swung at once they'd have hit each other, but they stood like that the whole way in. None of the three had an arm set for the gun. The one at the front had it up and his elbow was locked out; he was holding it for show. Why use it? That's police in four minutes, for a phone and some watches off a set of teenagers. And they're muggers."
+Flat, not unkindly, she counts it off. "They were all bunched between two cars. If any two of them had swung at once they'd have hit each other, but they stood like that the whole way in. None of the three had an arm set for the gun. The one at the front had it up and his elbow was locked out; he was holding it for show. Why use it? That's police in four minutes, for a phone and some watches off a set of teenagers. And they're muggers. A person who actually needed the gun to work would have practiced holding it, and none of them had, because a gun you actually mean to fire doesn't get carried like that, elbow locked, finger nowhere near where it needs to be, standing that close together that a real shooter would have been more worried about hitting his own friend than about hitting us."
 
 Nadia stops with her hand on the fence. "What's that got to do with it?"
 
-Chloe says, "If you had one usable skill, any skill at all, you would make money doing literally anything other than this. You wouldn't be standing behind a hardware store at two in the morning taking phones off teenagers, because that's the worst-paid dangerous job there is. Which means they have none." She looks back down at the man she's just finished checking. "People who fight like that, over somebody's phone, at two in the morning; that's retarded. You didn't fight seven adults, Sam. You beat up seven people who couldn't tell you their own address."
+Chloe says, "If you had one usable skill, any skill at all, you would make money doing literally anything other than this. You wouldn't be standing behind a hardware store at two in the morning taking phones off teenagers, because that's the worst-paid dangerous job there is. Which means they have none, not a single usable skill between the lot of them, or they'd be doing something else with their evenings." She looks back down at the man she's just finished checking. "People who fight like that, over somebody's phone, at two in the morning; that's retarded. You didn't fight seven adults, Sam. You beat up seven people who couldn't tell you their own address."
 
 Sam takes it in silence for a second.
 

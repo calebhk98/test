@@ -64,11 +64,11 @@ The classes come after that, all of them, mathematics through politics through t
 
 "Whose column does that go in."
 
-"Mine. He did the whole year of the work but handed none of it in, and getting it out of him was the job, and I never found the way to do it. He gave me back a stack of practice papers a year later with nothing written on any of them except a better question on the back of the top sheet."
+"Mine. He did the whole year of the work but handed none of it in, and getting it out of him was the job, and I never found the way to do it. He gave me back a stack of practice papers a year later with nothing written on any of them except a better question on the back of the top sheet, and I still don't know whether that counts as him answering me or not, because a better question isn't the same thing as a finished answer, and he handed me the question rather than the answer on purpose."
 
 That goes down in the notebook, and he turns the page.
 
-"There's the bar as well," Chloe says. "Everyone sits it at sixteen. It's the one that checks you know the law of the country you live in."
+"There's the bar as well," Chloe says. "Everyone sits it at sixteen. It's the one that checks you know the law of the country you live in, and it's the exam everybody at the school treats as the real exam, whatever else is on the schedule that year."
 
 Whitaker's pen stops for about the length of a word, then starts again. "Sat where?"
 
@@ -82,7 +82,7 @@ Two published papers come last on that page, and he's already ahead of her on bo
 
 Whitaker doesn't look up. "Asked by whom."
 
-"The lead researcher," Chloe says. "She didn't make me sign anything. She said everyone else had signed and if I talked it landed on them."
+"The lead researcher," Chloe says. "She didn't make me sign anything. She said everyone else had signed and if I talked it landed on them, and she said it plainly enough that asking her to write it down would have been an insult."
 
 "And you agreed to that," he says.
 
