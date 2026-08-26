@@ -12,13 +12,13 @@ Roughly a third of those conversations end there, with a reply that trails off i
 
 By the winter she's writing most nights between ten and two, laptop balanced on her knees on the couch, the day's translation work already closed out and a browser full of tabs in three languages open around the piece she's actually working on. A currency story that takes six sources and a full weekend to run down turns, by January, into something she can finish between a Tuesday shift and a Wednesday class. The comments get checked before bed sometimes and not other times, no pattern to it that she's noticed, and either way she's asleep within minutes of closing the laptop.
 
-She's also carrying twenty-one credits and the translation job, and none of it registers as a load, because her actual timetable at fourteen was heavier than this and included getting hit.
+She's also carrying a full course load and the translation job, and none of it registers as a load, because her actual timetable at fourteen was heavier than this and included getting hit.
 
 ________________
 
 Three weeks after she turns twenty she sits the Foreign Service exam, in a testing center with rows of identical monitors and a proctor who checks her ID twice against the photo before letting her sit down.
 
-It's four hours, in a room built for finishing a thought all the way through, rows of carrels with a low partition between each one and a clock mounted high on the wall behind the proctor's desk. There's a section on world affairs she enjoys the way you enjoy a crossword, matching a treaty date against a name she half remembers from something she wrote for the blog, her pen moving steadily down the answer sheet while the carrel beside her sits empty for ten full minutes and then fills again. Around her, other candidates chew pens and glance up at the clock every few minutes; her own eyes stay on the page from the first question to the last. Out in the parking lot afterward she takes a coffee from the machine by the door and drinks it standing in the sun, the morning already behind her by the time the cup is empty.
+It's four hours, in a room built for finishing a thought all the way through, rows of carrels with a low partition between them and a clock mounted high on the wall behind the proctor's desk. There's a section on world affairs she enjoys the way you enjoy a crossword, matching a treaty date against a name she half remembers from something she wrote for the blog, her pen moving steadily down the answer sheet while the carrel beside her sits empty for ten full minutes and then fills again. Around her, other candidates chew pens and glance up at the clock every few minutes; her own eyes stay on the page from the first question to the last. Out in the parking lot afterward she takes a coffee from the machine by the door and drinks it standing in the sun, the morning already behind her by the time the cup is empty.
 
 The result arrives by mail six weeks later. She reads it as having sat an exam.
 
@@ -54,7 +54,7 @@ At that he looks up, once, the pen briefly still against the page. "That's young
 
 Rather than press her for more he lets it sit there and moves the pen to the next line, and she matches him, leaving the fact standing on its own. Eleven years at a boarding school, then. Eleven languages next, and she lists them off in the order she learned them, Spanish, French, Mandarin, Russian, Latin, Arabic, German, Japanese, Hindi, Korean, Swahili, watching him check each name against something already in his own folder. Three of them get tapped at random, as far as she can tell. "Say something. Any of these three."
 
-She does, one level sentence in each, the kind of line a phrasebook prints on its first page. Into the notebook goes the fact that she said it, and his pen moves to the fourth item on the list, the content of the sentence itself apparently beside the point.
+She does, a level sentence in each, the kind of line a phrasebook prints on its first page. Into the notebook goes the fact that she said it, and his pen moves to the fourth item on the list, the content of the sentence itself apparently beside the point.
 
 The classes come after that, all of them, mathematics through politics through the forge, and it takes a full twenty minutes to get through the list. His coffee cools enough in the open thermos cap that he crosses to her counter partway through and tops it up, standing there through one whole answer before he sits back down, and he lets her finish every year of it before he turns the page.
 

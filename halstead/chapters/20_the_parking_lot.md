@@ -12,7 +12,7 @@ Kavi turns it down at the last second, saying he wants to finish something, and 
 
 The road into town runs downhill for the first mile, no streetlights whatever until the gas station, and they keep to the gravel shoulder in a loose column, Sam out front with his hands in his pockets, Nadia counting the passing cars under her breath out of habit rather than necessity, since the road at this hour supplies perhaps three of them in a mile. A dog somewhere behind a fence works itself up for half a block and then gives up on them, and they cut through the vacant lot behind a tire place and out onto the road on the far side of it, so half an hour gets them to the diner sign, waffles lit up yellow against the dark, the last stretch quiet except for boots on gravel.
 
-The diner does waffles all night, the syrup chained to the napkin holder and a jukebox in the corner silent since long before any of them were born, and they take a booth by the window, the lot lit orange under one surviving sodium lamp, the waitress putting menus down before the door has finished swinging shut behind them. They order too much and then Sam orders more, a full stack for himself and half of Nadia's once she stops eating a third of the way through it, and he works his way around the crisp top edge of his own stack before he touches the syrup at all, a ritual he performs on every waffle he has ever been handed. The waitress, maybe fifty, carries five plates on one arm, refills the coffee unasked, and calls all of them honey, twice for Ruth, and Ruth takes it from her without a word, while Nadia falls asleep sitting up and then wakes and finishes her sentence.
+The diner does waffles all night, the syrup chained to the napkin holder and a jukebox in the corner silent since long before any of them were born, and they take a booth by the window, the lot lit orange under a surviving sodium lamp, the waitress putting menus down before the door has finished swinging shut behind them. They order too much and then Sam orders more, a full stack for himself and half of Nadia's once she stops eating a third of the way through it, and he works his way around the crisp top edge of his own stack before he touches the syrup at all, a ritual he performs on every waffle he has ever been handed. The waitress, maybe fifty, carries a stack of plates along her arm, refills the coffee unasked, and calls all of them honey, twice for Ruth, and Ruth takes it from her without a word, while Nadia falls asleep sitting up and then wakes and finishes her sentence.
 
 They stay two hours, long enough for Sam to want to know whether the dent in Amberg's car is really shaped like a mailbox, and Ruth, having asked him outright once and got a straight answer, says it is.
 
@@ -34,7 +34,7 @@ Sam puts his fork down before he asks it. "How old is he now, seven?"
 
 "Most of a decade behind you, and he'll spend every year of it hearing your name before he ever meets you, whether he asks for it or not." He picks the fork back up and goes back at the stack.
 
-"He already knows that, and he's been practising looking unimpressed about it since he could talk." Ruth turns the cup again, a quarter turn at a time, always in the one direction. "He asked me what the food's like, and that was the whole letter conversation, start to finish, just the food, not the campus or the classes."
+"He already knows that, and he's been practising looking unimpressed about it since he could talk." Ruth turns the cup again, a quarter turn at a time, always clockwise. "He asked me what the food's like, and that was the whole letter conversation, start to finish, just the food, not the campus or the classes."
 
 "What are you going to tell him?"
 
@@ -62,11 +62,11 @@ Sam has the specials card up off the table, holding it at arm's length like a do
 
 "That's different, because I said it on purpose to prove a point." They argue about it until the waitress comes back with the check, and Nadia has exact change out on the table before it lands, split to the cent, because she has been dividing the bill in her head since the second round of coffee.
 
-There's a shopping cart in the lot behind a hardware store on the way home, and Sam is in it before anybody has suggested anything, knees up around his ears, while Ruth pushes him at the curb at a dead run and lets go too late. The front wheel folds sideways with a sound like a dropped pan and Sam goes over the handle into the grass strip and lies there laughing with his arms out. Nadia films the second attempt and then takes a run herself and is better at it, hitting that curb full speed with the brake untouched, riding it out on both feet through the landing, and Chloe laughs hard enough to have to sit down on the curb with her head between her knees. They get twenty minutes out of a broken shopping cart, and when Ruth wants a fourth run the wheel is finished, so they leave it upside down where it stopped, one wheel still turning.
+There's a shopping cart in the lot behind a hardware store on the way home, and Sam is in it before anybody has suggested anything, knees up around his ears, while Ruth pushes him at the curb at a dead run and lets go too late. The front wheel folds sideways with a sound like a dropped pan and Sam goes over the handle into the grass strip and lies there laughing with his arms out. Nadia films the second attempt and then takes a run herself and is better at it, hitting that curb full speed with the brake untouched, riding it out on both feet through the landing, and Chloe laughs hard enough to have to sit down on the curb with her head between her knees. They get twenty minutes out of a broken shopping cart, and when Ruth wants a fourth run the wheel is finished, so they leave it upside down where it stopped, a wheel still turning.
 
 ---
 
-The men come out three blocks later, between two parked cars, seven of them in a clump. One streetlight over the row is running on a bad ballast, on, off, on. They stop a few meters short and the one at the front does the talking. Three have guns, two down at their sides, one up and moving.
+The men come out three blocks later, between two parked cars, seven of them in a clump. A streetlight over the row is running on a bad ballast, on, off, on. They stop a few meters short and the man at the front does the talking. Three have guns, two down at their sides, one up and moving.
 
 "Phones. Watches. Come on."
 
@@ -132,17 +132,17 @@ Nadia stops with her hand on the fence. "What's that got to do with it?"
 
 Sam takes it in silence for a second.
 
-"The guns are supposed to make it harder, since that's the whole point of carrying one in the first place," he says.
+"The guns are supposed to make it harder, since that's the whole point of carrying it in the first place," he says.
 
-"A gun's a prop unless you actually use it, and every one of them just stood there holding theirs." Ruth has her bag back on her shoulder and the strap settled across it. "They let you walk all the way in. They gave you the wrist. They stood in a clump and waited their turn." She shrugs. "They fought like ten-year-olds, the whole seven of them, and you could have done that at ten."
+"A gun's a prop unless you actually use it, and all of them just stood there holding theirs." Ruth has her bag back on her shoulder and the strap settled across it. "They let you walk all the way in. They gave you the wrist. They stood in a clump and waited their turn." She shrugs. "They fought like ten-year-olds, the whole seven of them, and you could have done that at ten."
 
-"Fine, say that one was too easy." Sam puts his hands up and lets them drop again. "So who do I actually fight, then?"
+"Fine, say that was too easy." Sam puts his hands up and lets them drop again. "So who do I actually fight, then?"
 
 "Go back and fight the waitress," Nadia says.
 
-Sam stops walking altogether, one foot off the kerb. "What, are you actually serious right now?"
+Sam stops walking altogether, a foot off the kerb. "What, are you actually serious right now?"
 
-"She's fifty, for one thing," Ruth says. "She's an adult with a job she has worked for years, and she's been out in the world a good deal longer than you have."
+"She's fifty, for a start," Ruth says. "She's an adult with a job she has worked for years, and she's been out in the world a good deal longer than you have."
 
 "That's thirty-four years of being in situations," Nadia says, "against your sixteen, eleven of which were spent at school."
 
@@ -152,7 +152,7 @@ Sam thinks about it for a good deal longer than the joke needs, and then answers
 
 "Any of us could say the same, not just him," Ruth says, "and she'd probably enjoy it, too."
 
-Sam laughs most of the way to the corner, and Ruth lets him have it, so they cross the last empty intersection at a walk, their footsteps falling into one rhythm on their own and moving faster than the walk down had been, and they argue about the waitress the whole way home.
+Sam laughs most of the way to the corner, and Ruth lets him have it, so they cross the last empty intersection at a walk, their footsteps falling into rhythm on their own and moving faster than the walk down had been, and they argue about the waitress the whole way home.
 
 ---
 
@@ -162,6 +162,6 @@ Chloe sets her shoes down by the door, laces still knotted from being kicked off
 
 ---
 
-Ruth shuts the box off in the corridor and puts it in the chat before she sleeps, three lines and a photograph of Sam standing in the lot with his arms out, and by breakfast there are sixty replies and an argument about whether it counts, whether seven with three guns between them is a real test or just seven people happening to be in the way of one.
+Ruth shuts the box off in the corridor and puts it in the chat before she sleeps, three lines and a photograph of Sam standing in the lot with his arms out, and by breakfast there are sixty replies and an argument about whether it counts, whether seven with three guns between them is a real test or just seven people happening to be in the way.
 
-Kavi sends one laughing face, his entire contribution, read out at breakfast by Ruth while Sam reaches past her for the syrup and starts on his tray, like the question landed for somebody else at the table, and he lets it sit every time it comes up, and keeps letting it sit long enough for people to start bringing it up purely to watch him do it again.
+Kavi sends a laughing face, his entire contribution, read out at breakfast by Ruth while Sam reaches past her for the syrup and starts on his tray, like the question landed for somebody else at the table, and he lets it sit every time it comes up, and keeps letting it sit long enough for people to start bringing it up purely to watch him do it again.

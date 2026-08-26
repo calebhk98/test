@@ -4,13 +4,13 @@
 
 Theo's job is reading things and saying what they mean.
 
-The building takes two badges to get past, one for the garage and one for the floor, and the floor itself is the ordinary kind of ugly: grey carpet tile, a drop ceiling, a coffee machine three people have been complaining about since before he started. His desk is a cubicle in a row of identical cubicles, no window, the monitor turned away from the aisle so a passing badge sees the back of it rather than the screen. Most days it's cable traffic and open-source reporting out of a dozen countries, fifty or sixty pages of it, and the job is to come back with two, sometimes one, the part that actually matters pulled out from the part that doesn't. His supervisor sends half of it back the first time, three questions written in the margin, asking him to show steps he thought he'd already shown. It gets rewritten and sent up again.
+The building takes two badges to get past, the garage and then the floor, and the floor itself is the ordinary kind of ugly: grey carpet tile, a drop ceiling, a coffee machine three people have been complaining about since before he started. His desk is a cubicle in a row of identical cubicles, no window, the monitor turned away from the aisle so a passing badge sees the back of it rather than the screen. Most days it's cable traffic and open-source reporting out of a dozen countries, fifty or sixty pages of it, and the job is to come back with a page or two, the part that actually matters pulled out from the part that doesn't. His supervisor sends half of it back the first time, three questions written in the margin, asking him to show steps he thought he'd already shown. It gets rewritten and sent up again.
 
 The floor holds about sixty desks like his, phones going in a low murmur most of the day, someone's radio turned down until only the person next to it can make out the station. Stand-up runs every Monday at nine, five minutes each, standing in a loose horseshoe around the supervisor's desk. Somebody restocks the printer with paper before it runs out, every time, done for so long it reads as automatic rather than assigned to anyone.
 
 The work that actually uses what he's good at comes maybe once a week: a transcript in Pashto, another in Dari, the two halves of the same region most analysts only get one side of. A technical conversation in either language comes to him as easily as the other, and pairing them turns up exactly the kind of mismatch a single-language reader would miss, one side of a group describing an action the other side stays silent about entirely. Three of those get flagged in his first eight months, and his supervisor takes all three seriously, no follow-up questions in the margin, the exception rather than the rule for anything else he sends up.
 
-He is happy in the job. In his eighth month, the woman two desks over clears her own out on a Friday afternoon: a photograph of a dog, a chipped mug, a cardigan that's hung on the back of her chair as long as he's worked there. Twenty-six years at one desk leaves more than fits in a single box, so a second box goes to Theo's instead, decades of material that predates him and has sat filed and closed ever since. "Somebody has to read it eventually," she says, setting it on the corner of his desk. "Might as well be the new guy." He thanks her and means it. A box of old material beats another week of cable traffic that gets read once and filed.
+He is happy in the job. In his eighth month, the woman two desks over clears her own out on a Friday afternoon: a photograph of a dog, a chipped mug, a cardigan that's hung on the back of her chair as long as he's worked there. Twenty-six years at a desk leaves more than fits in a single box, so a second box goes to Theo's instead, decades of material that predates him and has sat filed and closed ever since. "Somebody has to read it eventually," she says, setting it on the corner of his desk. "Might as well be the new guy." He thanks her and means it. A box of old material beats another week of cable traffic that gets read once and filed.
 
 It takes him a day and a half to work out what he's holding.
 
@@ -44,9 +44,9 @@ Then there's the entry.
 
 Eight years ago. Four operators, over the fence at the loading side, a little after four in the morning.
 
-The report is written by one of them and it is six pages long and most of it is procedural, standard language he recognizes from a dozen other files: approach, entry, timing. The classification banner across the top of every page is the highest he's ever cleared for, and even at that level, three lines in the middle of page three are blacked out entirely, more than he's seen redacted from anything else in the box. What matters starts on page two.
+The report runs six pages, written by an operator who was there, and most of it is procedural, standard language he recognizes from a dozen other files: approach, entry, timing. The classification banner across the top of every page is the highest he's ever cleared for, and even at that level, three lines in the middle of page three are blacked out entirely, more than he's seen redacted from anything else in the box. What matters starts on page two.
 
-They were inside the first building for under two minutes. One of them saw a child in a corridor, alone, in pyjamas, apparently confused and asking who they were.
+They were inside the first building for under two minutes. Somebody saw a child in a corridor, alone, in pyjamas, apparently confused and asking who they were.
 
 Theo stops on that line and reads it again before he lets himself go on.
 
@@ -78,13 +78,13 @@ ________________
 
 It sits with him for two days.
 
-At his desk it's the job it is any other day: twenty pages reduced to two, sent up, sent back with three questions in his supervisor's handwriting, answered and sent up again. Mid-morning his supervisor stops at the desk, coffee in hand. "How's the retirement box coming along?" she asks. "Most of it's dead weight," Theo says. "One folder's going to need another day." Both answers are true, and she takes them as complete and moves on down the row. At home the first night he opens the school's own website on his personal laptop and reads it front to back as open-source material, checking for anything that squares with what's in the file. It says what it has always said: three sentences, a photograph of a building he's stood inside a thousand times, an admissions portal, the page it would have been the day before any of this. He closes the laptop with both hands.
+At his desk it's the job it is any other day: twenty pages reduced to two, sent up, sent back with three questions in his supervisor's handwriting, answered and sent up again. Mid-morning his supervisor stops at the desk, coffee in hand. "How's the retirement box coming along?" she asks. "Most of it's dead weight," Theo says. "A folder's going to need another day." Both answers are true, and she takes them as complete and moves on down the row. At home the first night he opens the school's own website on his personal laptop and reads it front to back as open-source material, checking for anything that squares with what's in the file. It says what it has always said: three sentences, a photograph of a building he's stood inside a thousand times, an admissions portal, the page it would have been the day before any of this. He closes the laptop with both hands.
 
 The second day he clears his queue faster than usual, six cables done by ten, because working through something else keeps the loading-dock report from filling every part of his head at once. That second night is the night he always calls his grandmother, twenty minutes as always. "The ferry's back on the summer schedule," she tells him. "And the Hendersons have got a dog now, a little thing that barks at the mailman like it means it." He asks about the dog longer than the dog probably warrants, and neither of them brings up anything that happened at his desk that week.
 
 Then he does the only thing available to him, which is nothing, because every page of it is stamped classified, and the line between what he can say and what he can't is not his to redraw.
 
-Three different versions of the question get typed before he sends any of it, each one deleted and started over, because even the version that says the least is still a version that says something.
+Three different versions of the question get typed before he sends any of it, each deleted and started over, because even the version that says the least is still a version that says something.
 
 So he posts in the chat.
 

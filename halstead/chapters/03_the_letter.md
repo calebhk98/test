@@ -8,13 +8,13 @@ Miss Chloe Kessler.
 
 Every piece of mail that has ever come for Chloe came inside something addressed to her parents, like the Christmas card from her grandmother with a card for Chloe folded in it, whereas this one says her, with a Miss in front and the address underneath it, all of it typed.
 
-She stands at the mailbox with the rest of the mail held against her chest with one arm, opening it there, badly, so the flap tears down into the paper, and it is one page, reading like a letter written for an adult, about a school called Halstead with a summer session at it, four weeks long, starting the second week of July.
+She stands at the mailbox with the rest of the mail held against her chest, opening it there, badly, so the flap tears down into the paper, and it is one page, reading like a letter written for an adult, about a school called Halstead with a summer session at it, four weeks long, starting the second week of July.
 
-You sleep there, transportation provided, room and board included, at no cost, which it says twice in two different ways, and families may visit whenever they like, for as long as they like, since there is a hotel half a mile from the campus with rooms held for them, free as well.
+You sleep there, transportation provided, room and board included, at no cost, which it says twice, in different ways, and families may visit whenever they like, for as long as they like, since there is a hotel half a mile from the campus with rooms held for them, free as well.
 
 At the bottom there's a phone number, a name, and a signature over the name in real ink that has gone through onto the back, so that what it comes down to is a place you go for a month in the summer, where you sleep in a building with other children, at no charge at all, and where somebody has typed her name on the front of the envelope.
 
-After three readings in the driveway, with the rest of the mail going warm against her arm, Chloe puts the mail on the counter, takes the letter up to her room, and brings it back down at dinner, four hours later.
+After reading it again and again in the driveway, with the rest of the mail going warm against her arm, Chloe puts the mail on the counter, takes the letter up to her room, and brings it back down at dinner.
 
 "Can I go," she says at dinner, and both of them look up.
 
@@ -26,7 +26,7 @@ Her mom reads it, then reads it again, her eyes going back to one spot on the pa
 
 "Did you see this, because I have no memory of applying to anything of the kind."
 
-"See what," her dad says, taking it and reading it one-handed, still eating, then putting the fork down to hold it with both, "and no, this is the first I've heard of it."
+"See what," her dad says, taking it and reading it in his free hand, still eating, then putting the fork down to hold it with both, "and no, this is the first I've heard of it."
 
 "So how do they have her name, when I keep it off every form I am handed, school, program, all of it."
 
@@ -60,7 +60,7 @@ Chloe pushes her fork through her food and waits for somebody to get to that par
 
 "It's a we're talking about it," her mom says.
 
-Chloe asks once more on the Sunday and then forgets to ask again for three days, because it's July and there's a sprinkler.
+Chloe asks once more on the Sunday and then forgets to ask again for days, because it's July and there's a sprinkler.
 
 \---
 
@@ -70,7 +70,7 @@ Her mom spells it twice, H-A-L, Halstead, like it sounds, and then a long stretc
 
 Then the phone goes down on the counter, and her dad says something from the other side of the room that stays too quiet to reach the stairs.
 
-"She says there's no school by that name working with the district in any capacity, she went back five years to check, and she said to be careful," her mom says, running the tap at the sink.
+"She says there's no school by that name working with the district in any capacity, she went back years to check, and she said to be careful," her mom says, running the tap at the sink.
 
 "Careful how?"
 
@@ -82,7 +82,7 @@ Her mom tells him she is only repeating what the woman told her.
 
 Then her mom calls the Petersons, because Ellie Peterson is in the pull-out group and is the one child on the street anybody would put on a list of anything, but the Petersons haven't gotten one.
 
-Two more houses, then she gives up, since after three it stops being research and turns into a thing you have to explain to your neighbors, so that by Saturday three separate people know the Kesslers got something in the mail.
+A few more houses, then she gives up, since past a point it stops being research and turns into a thing you have to explain to your neighbors, so that by Saturday half the street knows the Kesslers got something in the mail.
 
 Then she calls the number on the letter, and somebody picks up on the second ring, Chloe coming down from the top of the stairs to listen while her mom gives the name, spells the first half, says yes, that's the one, then waits.
 
@@ -100,15 +100,15 @@ The voice goes on for most of a minute.
 
 "Okay, but somebody made the list, because a person made it, somebody sat down and typed my kid's name."
 
-Chloe comes down two more stairs during the wait, close enough to see her mom's free hand braced on the edge of the counter, and her mom points at the stairs, still facing the counter, so Chloe goes back up to the fourth one.
+Chloe edges down the stairs during the wait, close enough to see her mom's free hand braced on the edge of the counter, and her mom points at the stairs, still facing the counter, so Chloe goes back up to the fourth one.
 
 The wait after that one is shorter than all the others.
 
 "Right, okay, thank you so much for going through all of that with me."
 
-Then the call goes on for twenty-five more minutes and her mom's voice changes into the one she uses at the pediatrician, asking how many adults sleep in the building, what the ratio is at night, and whether that is a different number from the daytime one.
+Then the call goes on a long time after that and her mom's voice changes into the one she uses at the pediatrician, asking how many adults sleep in the building, what the ratio is at night, and whether that is a different number from the daytime one.
 
-Whether the staff are licensed, and by who, and whether she can see that in writing; what happens if a child gets a fever at two in the morning, then what happens if it is worse than a fever; whether there is a nurse or a person they call the nurse.
+Whether the staff are licensed, and by who, and whether she can see that in writing; what happens if a child gets a fever in the middle of the night, then what happens if it is worse than a fever; whether there is a nurse or a person they call the nurse.
 
 What Chloe eats, and whether Chloe can be pulled out on any day, for any reason, or whether there is a form, or a notice period, or a fee, and then, near the end of it, how many children are going to be in the building.
 
@@ -158,7 +158,7 @@ Chloe waits a while for him to keep talking, then gets her book and reads at the
 
 Her mom does her own looking on the Sunday, on the laptop, with the door shut, typing the name in and getting the website, then getting it again from a different direction.
 
-Three searches from three different directions turn up the school's own website and then stop: no news coverage, no parent forum mention, no listed address, no photograph but theirs, and not one person anywhere who has been there and said a word about it afterward.
+Searches from every direction she can think of turn up the school's own website and then stop: no news coverage, no parent forum mention, no listed address, no photograph but theirs, and not one person anywhere who has been there and said a word about it afterward.
 
 For a school that has put over a hundred children through a summer and done it again every year since, that is the whole of what she finds, and she says so at the table that night with the laptop still open.
 
@@ -176,7 +176,7 @@ Her mom scrolls.
 
 "The school's four years old, Meg, it says so on the page about the school."
 
-"So a four-year-old school landing somebody like that is exactly the part that worries me, because how does a school that age get that guy, and what does it even pay him, and with what."
+"So a school that new landing somebody like that is exactly the part that worries me, because how does a school that age get that guy, and what does it even pay him, and with what."
 
 Her mom keeps scrolling.
 
@@ -246,15 +246,15 @@ She walks the whole children's section twice and comes back with one she has rea
 
 They drive her themselves instead of putting her on the bus, though her mom says the word bus a hundred times before they go, and by the end it barely sounds like the same word.
 
-They pack the night before, all three of them, in the living room with everything laid out on the floor in piles, her mom writing KESSLER on the tags with a laundry pen, holding each thing up to check she has it the right way round.
+They pack the night before, the whole family, in the living room with everything laid out on the floor in piles, her mom writing KESSLER on the tags with a laundry pen, holding each thing up to check she has it the right way round.
 
 Her dad does the train station voice for the packing list, announcing socks, announcing the toothbrush, announcing the second pair of shoes, and Chloe laughs at the shoes one hard enough that she has to lie down on the carpet, so he does it again to get it again, until her mom tells them both to stop, then asks him to do the shoes one more time.
 
-Chloe gets to stay up until ten, the whole evening spent on socks and the shoe joke, with the school and the list and who is paying for it left for some other night.
+Chloe gets to stay up late, the whole evening spent on socks and the shoe joke, with the school and the list and who is paying for it left for some other night.
 
 They drive her the next day, with a stop at the halfway point that stretches to most of an hour, because everybody wants the day longer, and Chloe reads for the first hour and a half, watches the trees turn into different trees for twenty minutes, then reads again, while her mom asks her twice whether she's sure, once out loud and once by asking whether she remembered her toothbrush in a certain way.
 
-Her mom stays at the parent hotel for the first four days, being due back at work on the Monday, and stays until she has seen the room, the food, the nurse, and the front desk at midnight to find out who is on it.
+Her mom stays at the parent hotel for the first few days, being due back at work on the Monday, and stays until she has seen the room, the food, the nurse, and the front desk at midnight to find out who is on it.
 
 On the second morning she calls the emergency number from the parking lot to make sure it rings, and it rings, and she does it again on the third, when it rings as well, a man answering both times, a different one each time.
 
