@@ -424,7 +424,7 @@ Reading other people's listings takes her twelve days, and most of them go on th
 
 ________________
 
-Kavi eats dinner in the hall he always has, at the same table, three seats down from where he used to sit before this year moved everyone else out of it.
+Kavi eats dinner in the hall he always has, at his usual table, three seats down from where he used to sit before this year moved everyone else out of it.
 
 sam: whats it like eating with twelve year olds now
 

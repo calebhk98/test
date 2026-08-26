@@ -110,7 +110,7 @@ He is quiet long enough for a customer to come in, buy a tin of two-inch screws 
 
 "Nadia."
 
-"I work out of the back room, and the counter gets me on Sundays." She has both elbows on the ledger between them, either side of the arithmetic. "You keep the books and the ordering off yourself, the arrangement you have now, at the same price."
+"I work out of the back room, and the counter gets me on Sundays." She has both elbows on the ledger between them, either side of the arithmetic. "You keep the books and the ordering off yourself, the arrangement you have now, at the price you pay now."
 
 "I have that arrangement already."
 
