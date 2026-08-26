@@ -3887,7 +3887,7 @@ Kowalczyk, still writing up the board, says, "That's the last round." "So it's p
 
 "You're ten seconds off a minute and you're doing pairs."
 
-Pairs take the rest of the hour. Then she finds Ruth at the sinks and acts out the hold again with her hands, and then Sam, and then a boy from the year below who was standing right there when it happened. Bex comes in on the end of that, and when the next person through the door asks what happened Bex tells her, fifty seconds and the third round and the knee across the shin at the finish, all of it in order and all of it right, and then what Chloe should have done with that shin. By the week after, the round the year has is a round Bex called from the edge of the mat. Chloe stands at the sink with her hands under the water and lets it run.
+Pairs take the rest of the hour. Then she finds Ruth at the sinks and acts out the hold again with her hands, then Sam, and then a boy from the year below who was standing right there when it happened. Bex comes in on the end of that, and when the next person through the door asks what happened Bex tells her, fifty seconds and the third round and the knee across the shin at the finish, all of it in order and all of it right, and then what Chloe should have done with that shin. By the week after, the round the year has is a round Bex called from the edge of the mat. Chloe stands at the sink with her hands under the water and lets it run.
 
 Seven of the year below go on her teaching list in September while Marek goes on somebody else's, and she reads that off the noticeboard on the first morning, reads the other teacher's list all the way to the bottom, and takes the stairs at a run going up. Her hour with them is differential equations and the analysis that runs beside it, which she was doing at their age, taught by the man who teaches them the other hours of it now, and it goes well enough until November, when all of them get one question wrong, and wrong it identically.
 
@@ -3899,7 +3899,7 @@ Going through the papers twice takes her back to her own notes from the third we
 
 Chloe wipes the board down with her back to them, then stops halfway across it and turns round. "No. Your answers all follow from what I taught you, and what I taught you was wrong. You'll get a different one in two weeks and it'll be harder, because by then you'll actually have it."
 
-Iyad has it at dinner that week with her not at the table, telling the far end that she taught the year below a whole term of it backwards, all of them, one error the whole way down and not a single person catching it; he gets round most of the tables with it by the Saturday. What comes back to her at the sinks from a girl in the year above is the question, whether it is true she taught the lot of them backwards, and Chloe says yes, and the girl says she thought so, and goes.
+Iyad has it at dinner that week with her not at the table, telling the far end that she taught the year below a whole term of it backwards, all of them, one error the whole way down and not a single person catching it; he gets round most of the tables with it by the Saturday. What comes back to her at the sinks from a girl in the year above is the question, whether it is true she taught the lot of them backwards; Chloe says yes, the girl says she thought so, and goes.
 
 Japanese moves faster at the front than she expects, so that by the end of the fourth week she is further along than she has ever been at that point in a language, and on a Wednesday afternoon she digs out her own notes on Russian and on Mandarin to check whether that is true, and it is. The kanji arrive with most of their meaning already on them, but then the grammar starts, and the grammar is unlike anything behind her on the list, so by November she is putting half an hour a night into it and moving slowly, but she is still ahead of where Mandarin had her at that stage.
 
@@ -3921,7 +3921,7 @@ Eli reads it over her shoulder on his way past to the servery. "They've put your
 
 The room is theirs on Tuesdays and Thursdays, and the whole of the first evening goes on what the thing has to be.
 
-Kavi says, with the board behind him and nothing on it yet, "A hand's width is under half a millisecond of air. So every box out there has to agree with every other box to inside that, all afternoon, in the cold, and the school's network is out by a couple of milliseconds on a decent day and cannot tell you that it is."
+Kavi says, with the board behind him and nothing on it yet, "A hand's width is under half a millisecond of air. So every box out there has to agree with every other box to inside that, all afternoon, in the cold, but the school's network is out by a couple of milliseconds on a decent day and cannot tell you that it is."
 
 Ruth says, "Agreeing about the time is the smaller half of it. Something has to decide which sample the sound starts on, and decide it the same way at every box, off a field with a road down the side and wind coming in the open end, where the front of a sound is a slope and not an edge."
 
@@ -3979,7 +3979,7 @@ Chloe puts it back, and goes and finds her something to eat.
 
 The run is in the afternoon block on the last Thursday in March. A man from the staff walks out past the top posts with the plate under his arm, a hand-sized square of stock Chloe brought up from the forge in February with the corners taken off it so the sound would be identical every time, and he goes over the rise where none of them can see him and stays there. Nadia has a person at every post with a thermometer and Odile on the near mark with the watch, and then there is nothing to do at all for twenty minutes.
 
-The sound comes back thin and flat and a long way off, and it happens once.
+The sound comes back thin, flat, and a long way off, and it happens once.
 
 Ruth has her onsets inside a quarter of an hour, Kavi has the clock agreeing with itself the length of the wire, and Chloe puts the differences through and reads the point off the bottom of the sheet: a hundred and nineteen metres up the field, thirty across, tight across it, but loose along it. Odile and Sam run the tape out from the fence corner and find the mark on the grass a hand's width and a half from where Chloe said it was.
 
@@ -4039,7 +4039,7 @@ Ruth puts her fork down and leaves it down. "He'd think about it, when he had a 
 
 Priya says, "He's got a lake, Kavi. A lake and a boat shed."
 
-Ruth takes it up with him directly on Friday, and Sam hears her out with his chin on his hand and thanks her for it before he takes the girl to watch the twelves do paintball. The two of them last until March, when Priya says the girl ended it and Sam says they agreed, and Odile was actually in the room.
+Ruth takes it up with him directly on Friday, and Sam hears her out with his chin on his hand and thanks her for it before he takes the girl to watch the twelves do paintball. The two of them last until March, when Priya says the girl ended it, but Sam says they agreed, and Odile was actually in the room.
 
 "You've both got the day wrong, and I was standing right there."
 
@@ -4047,7 +4047,7 @@ ________________
 
 Winter break, second night. Her mother is standing at the end of the table with a dish in both hands and Chloe is halfway through the story about Odile's scar.
 
-"Odile's got a scar on her hand now. She held it up by the ejection port and it burned her, and now she keeps showing everybody, like it's a medal."
+"Odile's got a scar on her hand now. She held it up by the ejection port and it burned her, but now she keeps showing everybody, like it's a medal."
 
 "She held it up by the what, sorry?"
 
@@ -4067,7 +4067,7 @@ Chloe shakes her head fast and sets the spoon back. "Oh. No, it's fine, Mom, it'
 
 And Chloe has nothing at all.
 
-Sam grew four inches over the summer and there is a pencil mark on a door frame about it. Sam has a girlfriend. She teaches now. Seven of them, and she taught one thing to all of them backward and had to go in and say so. There is a boy called Ferris who does everything the long way round, but gets there every time. Japanese, a term of it. Abstract algebra, contracts, logistics, the fracture tests, a clamp that closes on the wrong axis, three hinges in a bin.
+Sam grew four inches over the summer and there is a pencil mark on a door frame about it. Sam has a girlfriend. She teaches now. Seven of them; she taught one thing to all of them backward and had to go in and say so. There is a boy called Ferris who does everything the long way round, but gets there every time. Japanese, a term of it. Abstract algebra, contracts, logistics, the fracture tests, a clamp that closes on the wrong axis, three hinges in a bin.
 
 All of it started around September. All of it went past this table in silence. Which one was she supposed to have opened with? Why is it the rifle?
 
@@ -4097,7 +4097,7 @@ Her mother comes back in and asks whether anybody wants the pie warmed up, and h
 
 "That's a hold," her mother says. "That is a hold, that's been a hold all night."
 
-On Sunday she asks whether the man behind the line is armed, and what happens if somebody drops one, and whether anybody has ever turned round. Chloe answers all three and then tells her about the flag they call the wind off, and her mother listens all the way through and comes back with one more question about the man behind the line.
+On Sunday she asks whether the man behind the line is armed, and what happens if somebody drops one, and whether anybody has ever turned round. Chloe answers all three and then tells her about the flag they call the wind off, but her mother listens all the way through and comes back with one more question about the man behind the line.
 
 The calls home run twice a week through January and most of February, until exams take them down to Sundays in March, and by April it is twice a week again.
 
