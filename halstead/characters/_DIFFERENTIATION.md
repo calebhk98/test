@@ -241,8 +241,9 @@ uses that permission, which wastes it.
 ## Axis 8: the engine, one line each
 
 The single sentence a writer should have in mind before anything else on the sheet. Each
-one is exclusive, each one is portable to any setting, and no two of them produce the
-same behaviour in the same situation. Every cohort sheet now carries its own at the top,
+one is portable to any setting, and no two of them produce the same behaviour in the same
+situation. Like every other axis here they are characteristic rather than exclusive: an
+engine says what usually drives this person, not what nobody else may ever do. Every cohort sheet now carries its own at the top,
 directly under the age and IQ line.
 
 | character | engine |
