@@ -51,12 +51,24 @@ LEXILE_TARGET = 1000
 # book. Each band is (first chapter, last chapter, floor, ceiling-of-intent).
 # The floor is what the band should reach; the second number is where the band
 # stops being worth pushing. A chapter already above its band is left alone.
+# Floors by band, and one ceiling for the whole book. The author revised these
+# downward after checking what the formulas actually mean: "my 9th grade target
+# is actually too high based on the formulas. A better target is apparently
+# like 7th-8th grade."
+#
+# The corpus agrees. Measured F-K across the 23 reference books: median 6.07,
+# and only one book in the set clears 9 (Age of Innocence at 9.37). The books
+# the author has named as the register he wants sit at Treasure Island 6.72,
+# Wind in the Willows 7.67, Black Beauty 8.00, Little Women 8.08. This book is
+# at 7.21, above the corpus median and between Treasure Island and Wind in the
+# Willows, which is where it should be.
 FK_BANDS = [
-    (1, 10, 5.5, 7.0),   # ages 6-8, home and the first year
-    (11, 15, 6.0, 7.0),  # ages 8-12
-    (16, 22, 7.0, 8.0),  # ages 13-19
-    (23, 36, 8.0, 99.0),  # adult
+    (1, 10, 5.5, 9.0),   # ages 6-8, home and the first year
+    (11, 15, 6.5, 9.0),  # ages 8-12
+    (16, 22, 7.2, 9.0),  # ages 13-19
+    (23, 36, 7.2, 9.0),  # adult
 ]
+FK_MAX = 9.0
 FK_BOOK_TARGET = 7.0
 
 
@@ -309,10 +321,15 @@ def targets():
             continue
         avg = sum(r[1] for r in got) / len(got)
         low = sorted((r for r in got if r[1] < floor), key=lambda r: r[1])
+        high = sorted((r for r in got if r[1] > FK_MAX), key=lambda r: -r[1])
         mark = "" if avg >= floor else "  <-- band under floor"
         names = ", ".join(f"{r[0][:2]} ({r[1]:.1f})" for r in low) or "none"
         print(f"  {str(lo) + '-' + str(hi):<12}{len(got):<12}{floor:>7.1f}{avg:>9.2f}{mark}")
         print(f"  {'':<12}{'':<12}{'':>7}{'':>9}   {names}")
+        if high:
+            over = ", ".join(f"{r[0][:2]} ({r[1]:.1f})" for r in high)
+            print(f"  {'':<12}{'':<12}{'':>7}{'':>9}   over the "
+                  f"{FK_MAX:.0f} ceiling: {over}")
 
     print("\n  A chapter already above its band is left where it is. The bands are")
     print("  floors for the band average, not per-chapter quotas, and a chapter with")

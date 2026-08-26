@@ -214,7 +214,7 @@ def report(path, label):
     _c = Counter(_w)
     _n = len(_w)
     print("\nCONJUNCTIONS (% of all words)")
-    for k, lo, hi in [('and', 2.5, 3.5), ('but', 0.4, 0.9), ('so', 0.2, 0.6),
+    for k, lo, hi in [('and', 2.5, 3.5), ('but', 0.25, 0.75), ('so', 0.2, 0.6),
                       ('because', 0.2, 0.7), ('which', 0.1, 0.4)]:
         pct = 100 * _c[k] / _n
         flag = 'PASS' if lo <= pct <= hi else 'FAIL'
@@ -267,7 +267,7 @@ TICS = [
     (r'\u2014', 'em dash'),
 ]
 
-CONJ_TARGET = [('and', 2.5, 3.5), ('but', 0.4, 0.9), ('so', 0.2, 0.6),
+CONJ_TARGET = [('and', 2.5, 3.5), ('but', 0.25, 0.75), ('so', 0.2, 0.6),
                ('because', 0.2, 0.7), ('which', 0.1, 0.4)]
 
 # Measured over the 23-book reference corpus, for the two that keep failing.
