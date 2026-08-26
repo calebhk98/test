@@ -14,9 +14,9 @@ Afterward, Sam catches her at the bottom of the stairwell with his collar open a
 
 "I gave it four pages."
 
-"Four pages, for the whole question?" His voice actually climbs on it, an event visiting Sam perhaps twice a year and never on purpose. "I wrote the fire from both angles because I could see it going either way."
+"Four pages, for the whole question?" His voice actually climbs on it, an event visiting Sam perhaps twice a year and never on purpose. "I wrote the fire from both angles because I could see it going either way. Then I wrote out why the second angle was wrong."
 
-"It's a contract question about who carries the risk while the goods are sitting in a shed waiting to be collected: there's an answer, and there's why, and once you've said both of those you're just saying them again in nicer sentences with more paper under them." She keeps walking with her bag up on both shoulders, so the conversation keeps her pace or gives itself up at the end of the corridor. "After that you're padding, and the marker reads page after page of you agreeing with yourself for no extra credit at all, which is a bad trade for both of you."
+"It's a contract question about who carries the risk while the goods are sitting in a shed waiting to be collected: there's an answer, and there's why, and once you've said both of those you're just saying them again in nicer sentences with more paper under them." She keeps walking with her bag up on both shoulders, so the conversation keeps her pace or gives itself up at the end of the corridor. "After that you're padding. The marker reads page after page of you agreeing with yourself for no extra credit at all, and that's a bad trade for both of you. Mine is exactly as long as the question turned out to be."
 
 Sam goes quiet the whole length of the corridor.
 
@@ -30,13 +30,13 @@ Kavi looks at the board, then at her, then back at the board, his own row a few 
 
 "I passed it by six." His hand comes up over his mouth a half second behind the words. "That was the wrong thing to say. I knew it the moment it left my mouth, and now it's already out there whether I like it or not."
 
-"It's fine, the numbers are the numbers, and saying either of them twice just leaves them exactly where they were." She takes the list in again, her weight settled square on both feet, then steps back from the board to let somebody else in.
+"It's fine, the numbers are the numbers, and saying either of them twice just leaves them exactly where they were. You didn't do anything to me by passing it." She takes the list in again, her weight settled square on both feet, then steps back from the board to let somebody else in.
 
 Fifty-two in the year pass and thirty-nine do not, hers among them, and by dinner they have found each other by sight, because the board hangs in a hall everybody walks past all day.
 
 Bex passed, and comes the length of that hall to find her before dinner, saying it from halfway down.
 
-"It's nothing, it's a tick anywhere on the paper, and the retake's in October, so it costs you a summer and it costs you nothing else."
+"It's nothing, it's a tick anywhere on the paper, and the retake's in October, so it costs you a summer and it costs you nothing else. Everybody on that board who missed is sitting it again in October. Nobody is going to remember by Christmas which of you was on which side of the line."
 
 "It's the margin, though, because as a share of the whole paper that's about a..."
 
@@ -48,17 +48,17 @@ Later that week she takes her paper to Amberg, and he has the mark scheme out on
 
 "Question three."
 
-"I have the answer to it: it's the second line on the page, it's correct, and I'm not sure what else there is left to talk about."
+"I have the answer to it. It's the second line on the page and it's correct. I'm not sure what else there is left to talk about."
 
 "You do, and it's correct, and it's sitting right there in your second line where anyone could find it." He turns the scheme around so it faces her and puts a finger under a row of it, the rows printed under each other, each with a mark value and a line of description beside it. "There are four marks underneath that answer. A mark for the rule you are relying on. A mark for where the rule comes from. A mark for why a shed is inside it. A mark for what happens if the shed burns down on the Tuesday before delivery." He lays her own paper down beside the scheme, where a single tick sits against her second line and the rows underneath it are as empty as they were in April.
 
-"All of them follow from the answer once you've got the answer, and anyone who can read the second line can work out the rest for themselves in a moment, the way I did."
+"All of them follow from the answer once you've got the answer. Anyone who can read the second line can work out the rest for themselves in a moment, the way I did. Writing it out afterwards is just me proving I can hold a pen."
 
-"They follow if the person reading has your head and has already done the working you skipped, whereas a marker with a stack of these in front of them has about ten seconds each, not enough to rebuild your reasoning for you."
+"They follow if the person reading has your head and has already done the working you skipped. A marker with a stack of these in front of him has about ten seconds a page, and that is not enough time to rebuild your reasoning for you. He is also not allowed to give you a mark for something you did not write down."
 
-"Whoever marks this already knows all of it, because it's contract law and not a mystery, and there's exactly one rule that could possibly apply to a shed sitting in a yard for two weeks."
+"Whoever marks this already knows all of it. It's contract law and not a mystery, and there is exactly one rule that could possibly apply to a shed sitting in a yard for two weeks. He knew the answer before he opened the paper."
 
-"I would like you to sit down while I say the rest of it, because you're going to want to argue before I've finished, and I'd rather you had it all first." Amberg waits until she does, then a moment longer, until she has stopped moving the chair. "You wrote that answer for a reader who already has your head, who already knows the rule and where it comes from and why a shed counts and what happens if it burns." He slides the paper across the desk to her, face up and turned the right way round, so the blank rows are the first thing she sees. "There was a single reader like that in this building in April, and the man marking your paper was somebody else entirely."
+"I would like you to sit down while I say the rest of it, because you're going to want to argue before I've finished, and I'd rather you had it all first." Amberg waits until she does, then a moment longer, until she has stopped moving the chair. "You wrote that answer for a reader who already has your head, who already knows the rule and where it comes from and why a shed counts and what happens if it burns. There was a single reader like that in this building in April, and the man marking your paper was somebody else entirely." He slides the paper across the desk to her, face up and turned the right way round, so the blank rows are the first thing she sees.
 
 Chloe reads the rows twice, then looks up at him and back down at them.
 
@@ -78,11 +78,11 @@ People are getting up out of their chairs as she goes back to hers, unhurried, h
 
 In the second week of May she writes her first practice paper, at a table in the library with the mark scheme face down beside her, taking over an hour on a page restating what the shed already made obvious, and she gives it to Kavi to mark, because Kavi marks the way the examiners mark and will decline to be kind about it.
 
-"Two out of four, and the ones you're missing are the ones that would have told me you actually understood it." Kavi has the page squared in front of him and a pen sideways in his fingers. "You have the rule, and you have where it comes from." He taps the pen twice on the third line. "Then you've written *and so the risk sits with the buyer*, which is your second line in a different hat, and then you've stopped, which means the marker reads a sentence that sounds like new information and finds it's what they already had."
+"Two out of four, and the ones you're missing are the ones that would have told me you actually understood it." Kavi has the page squared in front of him and a pen sideways in his fingers. "You have the rule, and you have where it comes from." He taps the pen twice on the third line. "Then you've written *and so the risk sits with the buyer*, which is your second line in a different hat, and then you've stopped. The marker reads a sentence that sounds like new information and finds it's what he already had. That is worse for you than leaving the line out."
 
 "It's the same sentence, just restated so it sounds like it's adding something."
 
-"It's the same sentence to you, because you already know why the risk sits with the buyer, whereas the marker has to be given that reasoning rather than assumed to already have it, and right now the page hands them one idea wearing two coats instead." He turns the page around and pushes it back at her with the pen laid across the empty half of it. "Write me the shed burning down. Not the rule about it, the actual event: goods inside, fire on the Tuesday, who's holding the loss when the smoke clears, and why that person and not somebody else."
+"It's the same sentence to you, because you already know why the risk sits with the buyer. The marker has to be given that reasoning rather than assumed to already have it, and right now the page hands him a single idea wearing two coats. He can only mark what is actually on the paper in front of him." He turns the page around and pushes it back at her with the pen laid across the empty half of it. "Write me the shed burning down. Not the rule about it, the actual event: goods inside, fire on the Tuesday, who's holding the loss when the smoke clears, and why that person and not somebody else."
 
 She writes the shed burning down fast, a paragraph, with a sentence in the middle that makes her jaw set while she is writing it, and Kavi gives her the marks. "There it is, all of it, right there on the page where somebody can actually see it."
 
@@ -150,21 +150,21 @@ Her mother watches that from the kitchen window a while before she comes out.
 
 Her father asks about Sam instead of about her classes.
 
-"He's on forty percent, on the range." Chloe has the glass on the step beside her, sweating a ring into the wood. "He's been there since he started, it's the number that hasn't moved once in that whole time no matter what he tries, and it slides straight off him like it belongs to somebody else entirely, not to him."
+"He's on forty percent, on the range." Chloe has the glass on the step beside her, sweating a ring into the wood. "He's been there since he started, and it's the number that hasn't moved in all that time no matter what he tries. It slides straight off him like it belongs to somebody else. I have watched him read it off the board and go straight in to lunch."
 
-"How does it not touch him, forty percent year after year?"
+"How does it not touch him, forty percent year after year? I'd have packed the whole thing in by now, or I'd have made your mother listen to it every night at this table for a year."
 
-"That's what I asked him, more or less word for word, standing right outside the range." Chloe turns the glass a quarter turn on the wood, into the ring it has already made there. "He said he knows, and he does plenty of other stuff that has its own number entirely, and then he told me to go and be miserable at Ruth about it instead, because Ruth's on ninety-one and apparently that's more my speed."
+"That's what I asked him, more or less word for word, standing right outside the range." Chloe turns the glass a quarter turn on the wood, into the ring it has already made there. "He said he knows, and that he does plenty of other stuff with its own number on it, and this is only the number for the range. He wasn't even annoyed that I brought it up. Then he told me to go and be miserable at Ruth about it instead, because Ruth's on ninety-one and apparently that's more my speed."
 
 Her father laughs at that, head back, longer than the joke should carry him.
 
 "Is she, though, or is that just the face she puts on for you?"
 
-"Ruth is the least miserable person I have ever met, and watching her be that cheerful about something this boring is genuinely infuriating." Chloe has both hands off the step now. "She's at the top of the year and she still comes down on a Saturday with a clipboard and sits behind me for a couple of hours anyway, and the range bores her absolutely rigid the entire time."
+"Ruth is the least miserable person I have ever met, and watching her be that cheerful about something this boring is genuinely infuriating." Chloe has both hands off the step now. "She's at the top of the year and she still comes down on a Saturday with a clipboard and sits behind me for a couple of hours anyway. The range bores her absolutely rigid the entire time. She has never once said so out loud and she has never once been late."
 
 "Why does she keep doing it, then, if the range itself bores her that badly?"
 
-"Because I asked her to, and once she's said yes to something she follows through completely, whether or not the thing itself actually interests her."
+"Because I asked her to, and once she's said yes to something she follows through completely, whether or not the thing itself actually interests her. I tried giving her a Saturday off in March and she turned up for it anyway."
 
 Her father nods at that and asks about Kavi, so she tells him about Kavi, and then about Priya, and then about the negotiation board in the hallway, where Nadia's score has been posted since February with Priya's name beside it.
 
@@ -172,11 +172,11 @@ Her father nods at that and asks about Kavi, so she tells him about Kavi, and th
 
 Chloe puts her heels up on the lower step and takes her time with that.
 
-"I think she knew straight away and let it run anyway, because stopping it right then would have meant explaining why in front of everybody."
+"I think she knew straight away and let it run anyway, because stopping it right then would have meant explaining why in front of everybody. She'd have had to say out loud who she was doing it to."
 
 "Why would she do that? Costing herself the negotiation to hand it to somebody else seems like a strange way to spend two minutes of already knowing."
 
-"Because the boy in the room before her was going to get it otherwise, and she'd rather it went to Nadia than to him, even if that cost her something herself."
+"Because the boy in the room before her was going to get it otherwise, and she'd rather it went to Nadia than to him, even if that cost her something herself. She hasn't said a word about it since. As far as I can tell Nadia still doesn't know."
 
 "So what are Priya and Nadia like at a table together now?" her father says, and the question stops her with the glass halfway up.
 

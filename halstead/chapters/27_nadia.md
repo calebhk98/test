@@ -12,7 +12,7 @@ The building came with two working outlets a room, so there is a run of surge st
 
 In April she paid ninety dollars for the company name in white vinyl and put it up on the street window herself, from the outside, on a Sunday morning, with the ladder sinking into the grass verge under her. The second word went on half an inch low. Lifting it again would have torn it, so it sits half an inch low.
 
-"Who is ever going to read that," Bev said, from the window.
+"Who is ever going to read that? Nobody walks up this side of the street, and the cars coming off the county road are doing fifty by the time they pass the door," Bev said, from the window.
 
 "I read it every morning," Nadia said, and went back down the ladder for the squeegee.
 
@@ -32,7 +32,7 @@ Before she sits down she deletes the whole batch of accounts from where she's st
 
 The third call runs twenty minutes, because the woman on the other end wants to explain how it happened and Nadia lets her. The woman apologises over and over inside those twenty minutes, twice for taking up the evening and twice for having answered the message at all.
 
-"Call the bank the minute they open and read them that number," Nadia says, at the end of it. "Then call me back and tell me what they said, however it goes."
+"Call the bank the minute they open and read them that number," Nadia says, at the end of it. "Then call me back and tell me what they said, however it goes. If they hand you a form, fill it in standing at the counter, because a form that goes home in a bag gets filled in never. And stop apologising to me, because what you did was answer a message from an employer on a site with my own name up on the window of it."
 
 Twice, slowly, she reads the digits out, and writes them on the back of the page. Then she stays in the back room a while with the light off and the phone still in her hand.
 
@@ -76,9 +76,9 @@ The first mornings go on the state's business filings, the site she used to regi
 
 A third morning goes on cross-referencing that agent against the county's property records, and it comes back a suite above a tire shop off the county road, a few miles from the laundromat. The agent's name is Hanley, and the address carries a stack of his filings. On the fourth morning she calls the tire shop's front counter.
 
-"Does the office upstairs keep regular hours, or is it just whoever happens to be up there that day?" she asks, in the unbothered voice of somebody scheduling a delivery. "I've got a package that needs a signature from someone up there."
+"Does the office upstairs keep regular hours, or is it just whoever happens to be up there that day? I've got a package that needs a signature off somebody, and I'd rather not make the drive twice," she asks, in the unbothered voice of somebody scheduling a delivery.
 
-"They're in most days," the man behind the counter says. "Regular enough, half a dozen of them, give or take, though I couldn't tell you what it is they do up there."
+"They're in most days, regular enough, half a dozen of them, give or take. I couldn't tell you what it is they do up there. They've never once come down and bought a tire off us, and you'd think somebody up there drives," the man behind the counter says.
 
 None of it moves anything else on her list. Payroll clears on the twenty-second the way it always does, she signs two employers on the Saturday in the middle of it, one of them a machine shop with a handful of people in it and a fax number still on the door, and on the Thursday she takes the difficulty on the test generator down a notch and lets it rebuild itself overnight.
 
@@ -96,7 +96,7 @@ Four men are inside: two at a folding table with laptops open, a third behind a 
 
 Just inside the door she stays on her feet, hands loose at her sides, and looks at the man behind the desk, since he is the first to straighten.
 
-"You put thirteen employer accounts on my site on the night of the second and asked nine people for a bank routing number," she says. "Three of them answered, and one of them is out two thousand six hundred dollars as of Monday morning."
+"You put thirteen employer accounts on my site on the night of the second, and you asked nine people for a bank routing number. Three of them answered. One of them is out two thousand six hundred dollars as of Monday morning, and I was on the telephone with her half of last night while she apologised to me for it."
 
 The room goes quiet for a moment while the man behind the desk sets down what he was holding.
 
@@ -108,7 +108,7 @@ She stays where she is. The man in the doorway comes off the frame, walks around
 
 "Eighteen since last June."
 
-"Jesus Christ." He looks over at the desk without lowering his voice at all. "She's eighteen years old, she's a kid, she's somebody's daughter."
+"Jesus Christ." He looks over at the desk without lowering his voice at all. "She's eighteen years old, she's a kid, she's somebody's daughter. That is what is standing in the doorway of this office. Somebody at that desk had better say what we are doing about it."
 
 "Does your father know where you are this afternoon?"
 
@@ -116,39 +116,41 @@ She stays where she is. The man in the doorway comes off the frame, walks around
 
 The man behind the desk sits back in the chair for the first time since she came through the door. The man with the coffee has his phone up by then. The first photograph is of her, from where he stands; then he crosses to the window, photographs the car in the lot below, and reads her registration out loud, every character of it, slowly, and then again.
 
-"You aren't going to do anything to me," she says. "There are filings with a real agent's name on them, and a shop full of people underneath us who watched me come up those stairs."
+"You aren't going to do anything to me. There are filings with a real agent's name on them, and there is a shop full of people underneath us who watched me come up those stairs. Whatever it is you have got running in this room, it does not survive somebody going missing off your own staircase," she says.
 
-"It's twenty past five." The man at the window answers her with his back turned. "Chuck locks the bay on the hour, so the shop underneath you is shut and those stairs were yours alone, and you want to be thinking about that."
+"It's twenty past five." The man at the window answers her with his back turned. "Chuck locks the bay on the hour, so the shop underneath you is shut and those stairs were yours alone. Nobody watched you come up. You want to be thinking about that instead of about filings."
 
 On she goes to the next thing on her list.
 
-"I'm not calling the police, because a county detective gets a stack of form submissions and a Tuesday he already had plans for."
+"I'm not calling the police, because a county detective gets a stack of form submissions and a Tuesday he already had plans for. He takes the report, he gives me a number to ring back on, and that is the end of it. So that isn't a threat I've got, and I'm not going to stand in your office pretending I've got it."
 
-"You can't prove any of it," the man at the folding table says. "There's not a name on any of those accounts, and you've got no idea who you're standing in front of."
+"You can't prove any of it," the man at the folding table says. "There's not a name on any of those accounts, and there's nothing on a screen anywhere that says this room. Whatever you carried up those stairs, you carried a printout. You've got no idea who you're standing in front of."
 
 Nadia laughs. It is a single sound, and it is out of her before she has decided anything about it.
 
-"Nine of you typed a live state registration number into my form," she says. "It's field six, and it's a required field, which is why you filled it in."
+"Nine of you typed a live state registration number into my form. It's field six. It's a required field, and that is why you filled it in."
 
 The man at the folding table stands up, taking his time about it because he can afford to, and he comes around the end of the table and stops close enough that she has to tilt her head back to keep his face in view.
 
 "Say that again," he says, "slower, so everybody in the room gets the benefit of it."
 
-"Nine of you typed a live state registration number into my form," she says, at the same speed. "It's field six, and it's a required field, which is why you filled it in."
+She gives it back to him at the same speed.
 
-"Ten of them were filed in one week in September through the same registered agent," she says, from where she is standing. "The agent is Hanley, and Hanley carries thirty-one filings on that address, of which twenty-six belong to somebody other than you."
+"Nine of you typed a live state registration number into my form. It's field six. It's a required field, and that is why you filled it in."
+
+"Ten of them were filed in the same week in September, through the same registered agent," she says, from where she is standing. "The agent is Hanley. Hanley carries thirty-one filings on that address, and twenty-six of them belong to somebody who is not in this room."
 
 A man at the folding table turns a printout face down.
 
-"I'm going to send the whole file to the business division at the Secretary of State: time-stamped copies of the identical message, with a dollar figure attached, which is the only kind of complaint anybody up there opens before lunch. They come for Hanley rather than for you, and everything filed through him goes back on the street that week."
+"I'm going to send the whole file to the business division at the Secretary of State: time-stamped copies of the identical message, with a dollar figure attached, which is the only kind of complaint anybody up there opens before lunch. They come for Hanley rather than for you, and everything filed through him goes back on the street that week. Every last name on his address gets a letter with a date on it."
 
 The man behind the desk has come forward onto his elbows now.
 
-"Then everybody else on that list finds out who cost them their paperwork, and it will be the notice telling them, rather than me."
+"Then everybody else on that list finds out who cost them their paperwork, and it will be the notice telling them rather than me. I won't have said a word to any of them, and I won't know their names to say it to."
 
 The man in front of her stays where he is. The man behind the desk is looking past his shoulder at her.
 
-"Or none of it goes anywhere," she says. "They are already deleted, the next one stays off my site, everything else of yours stays off it, and I never make this drive again. That's the whole offer, and I'm not improving it while I stand here."
+"Or none of it goes anywhere. They are already deleted, the next one stays off my site, everything else of yours stays off it, and I never make this drive again. That's the whole offer, and I'm not improving it while I stand here."
 
 The man behind the desk looks at the man standing over her and keeps looking at him until he goes back to the folding table and sits down again.
 
@@ -210,13 +212,21 @@ She had meant to sit down with twelve people that year and she has sat down with
 
 Something they built is what she asks them to explain, and most of them do that part fine, because years of resumes have taught people how to talk about their own work in front of a stranger. Then she asks two questions about it, and the first is usually fine as well; the second asks what happens at the edge of the thing they built, out past the part they actually tested, and that is where most of them run out of road.
 
-A candidate walks her carefully back through a payment system he'd built at his last job, confident the whole way through it. "What happens if two requests land in the same millisecond?" she asks.
+A candidate walks her carefully back through a payment system he'd built at his last job, confident the whole way through it.
+
+"We put the whole thing behind a queue in the end, so nothing could reach the ledger twice. I wrote the retry logic and I wrote the piece that reconciles it against the bank file overnight. It ran eighteen months and it never lost a cent out of anybody's account."
+
+"What happens if two requests land in the same millisecond?" she asks.
 
 "That would be an edge case," he says.
 
 A line goes on his sheet, and she moves along to the next person.
 
-Another spends the whole interview describing a scheduling tool with real pride in his voice. "Who checks it when the schedule it produces is simply wrong?" she asks.
+Another spends the whole interview describing a scheduling tool with real pride in his voice.
+
+"It reads the constraints off the shift board and it hands back a whole week in about a second. The floor manager used to spend every Friday afternoon of his life on that, and now he doesn't. He printed the first week it made and put it up on the wall behind his desk."
+
+"Who checks it when the schedule it produces is simply wrong?" she asks.
 
 "That's what the entire review step is there for."
 
@@ -228,13 +238,13 @@ Whoever answers the second question properly gets a longer interview than the sc
 
 The ones she already has are the ones who answered it.
 
-A board starts rate-limiting her submission traffic on a Saturday in March. Tomas catches it off a graph well outside anything he had ever been asked to watch, rewrites the back-off, puts it out himself, and tells her on the Monday, by which time it has held through a weekend. Asked why the retry ceiling stayed where it was while he was in there, he says the ceiling was working. She writes the ceiling herself that night.
+A board starts rate-limiting her submission traffic on a Saturday in March. Tomas catches it off a graph well outside anything he had ever been asked to watch, rewrites the back-off, puts it out himself, and tells her on the Monday, by which time it has held through a weekend. Asked why the retry ceiling stayed where it was while he was in there, he says, "The ceiling was working. I don't go through a thing changing whatever already works, because then it's all mine and none of it's theirs." She writes the ceiling herself that night.
 
 Bev drives out on her own on a Saturday in April to five employers Nadia had yet to get to, and comes back with two of them signed and a third who wants to see Nadia in person. There is a thirty-day clause in both contracts, which is new to Nadia's template.
 
 "Where did the thirty days come from," Nadia says.
 
-"I made it up in the car on the way over."
+"I made it up in the car on the way over. The first of them asked me what happens if it doesn't work and I had nothing to say to him, so I gave him a month. The second never asked and I said it anyway."
 
 "Keep it, and it goes into the template tonight." She rolls it in that evening and leaves it there.
 

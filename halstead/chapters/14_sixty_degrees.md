@@ -8,21 +8,21 @@ Archery is ordinary at first, because the start of it is butts at twenty metres,
 
 Then Coach Bell puts a metronome on a post at the near end of the field.
 
-"Everything in that gym worked because you had time, since a foam dart is fat and slow enough to watch the whole way and still get a hand in front of," he says, holding an arrow up by the nock. "A few millimetres of this, coming off the string faster than anything you've had at you, and end-on at seventy metres, so instead of crossing your eye it's a point that gets bigger. You cannot track it, and shooting one down in the air is beyond everybody on this field."
+He holds an arrow up by the nock. "Everything in that gym worked because you had time, since a foam dart is fat and slow enough to watch the whole way and still get a hand in front of. A few millimetres of this, coming off the string faster than anything you've had at you, and end-on at seventy metres, so instead of crossing your eye it's a point that gets bigger. You cannot track it, and shooting one down in the air is beyond everybody on this field."
 
-"That's the opposite of what we do with the paintballs," Kavi says from down the line. "We watch the person rather than the dart, so we're moving before he shoots."
+Kavi says it from down the line. "That's the opposite of what we do with the paintballs. We watch the person rather than the dart, so we're moving before he shoots."
 
-"That's fine, and you're still doing it my way," Bell says, keeping hold of the arrow. "You want to read a shoulder at seventy metres, do it on your own time with something that bounces. This is an arrow, and I want to know whether you can put one where you meant it every time, all year, without a bad afternoon."
+Bell keeps hold of the arrow. "That's fine, and you're still doing it my way. You want to read a shoulder at seventy metres, do it on your own time with something that bounces. This is an arrow, and I want to know whether you can put one where you meant it every time, all year, without a bad afternoon."
 
 "Right, so a point stays away from a person, even by accident."
 
 Bell walks them down the field to show them the lanes, two firing lines seventy metres apart, side by side, both facing north, each bending in toward the other until they meet at a point where the angle holds at sixty degrees. That is where the flight paths cross, at the top of the arc, where an arrow released early from one line and an arrow released on time from the other can end up in the same patch of sky at the same instant, and whatever is left of them keeps travelling and comes down together in open grass a hundred and fifty metres on, behind a rope and a sign where the target block stays all year.
 
-"At the top the arrow has stopped climbing and has yet to start dropping, so it hangs there," Bell says, putting a hand out flat and holding it. "If you're late, it's barely moved while you were being late, and that's the only thing you've got going for you, so you'll want all of it."
+Bell puts a hand out flat and holds it. "At the top the arrow has stopped climbing and has yet to start dropping, so it hangs there. If you're late, it's barely moved while you were being late, and that's the only thing you've got going for you, so you'll want all of it."
 
 "So how are we supposed to know when to let go of it?"
 
-Bell turns the metronome on. "Keep your eyes off each other," he says, "off the whole time, both ends, and you count instead."
+Bell turns the metronome on. "Keep your eyes off each other. Off the whole time, both ends. You count instead."
 
 ________________
 
@@ -34,7 +34,7 @@ Her release runs early when she is keyed up and late when her hands are cold, an
 
 "Yeah, it's early again, and by an amount I still can't put a number on."
 
-"Mine's late, always late, by the same amount, so I can take it off the count, except every time I do that I'm early," Ruth says, doing it against her own leg now. "Go on, do yours out loud and I'll count with you."
+Ruth is doing it against her own leg now. "Mine's late, always late, by the same amount, so I can take it off the count, except every time I do that I'm early. Go on, do yours out loud and I'll count with you."
 
 They compare counts in the corridor until they are late into dinner, where the bread has gone and Sam has taken both their chairs.
 
@@ -42,7 +42,7 @@ The first collision Chloe manages is in the last week of October, with Odile, an
 
 Chloe's whole line is shouting before the pieces land, somebody at the far end is banging on the equipment box lid with a bow stave, and Odile covers her seventy metres at a run. They stand in the grass yelling about the sound it made, and neither hears a word the other says.
 
-"Sunday," Odile says, once she can get a whole word out. "My brother's here Sunday, he's been out here a few times and he has yet to see anybody do it, so I'm making him stand at your end."
+Odile gets a whole word out at last. "Sunday. My brother's here Sunday, he's been out here a few times and he has yet to see anybody do it, so I'm making him stand at your end. He can stand exactly where I put him."
 
 Sam wants the sound at dinner, so Chloe tries it with her mouth twice and gets nowhere near it, because only the arrow makes it, and Kavi, who missed it, says it sounds like somebody standing on a stick, while Odile calls back from down the table that it is more of a knock than a crack. By March most of the year has managed a collision at least once, though Odile does it three days out of five, and in April she does it twice inside an hour with the second coming down in pieces.
 
@@ -54,19 +54,19 @@ On the first morning of the year Ruth wants to know what everybody has got, and 
 
 "How is doing a whole extra language cheating?"
 
-"Because it's already in everything," Ruth says, stopping with her tray up on an arm. "It's in half of Spanish and most of French, both of which you've done, so you'll sit down in September already knowing a third of it. That's collecting on a language you did years ago rather than learning one."
+Ruth stops with her tray up on an arm. "Because it's already in everything. It's in half of Spanish and most of French, both of which you've done, so you'll sit down in September already knowing a third of it. That's collecting on a language you did years ago rather than learning one."
 
 "That's the entire reason I took it, though."
 
 "That is what I said, and it's still cheating."
 
-"It's the opposite of cheating, it's the year paying for itself twice," Chloe says, holding her tray like somebody who intends to keep it. "I've got German coming, Italian's on the list, and half the words in a legal document are Latin sitting in the middle of an English sentence, so one year now gets me bits of all of them free."
+Chloe holds her tray like somebody who intends to keep it. "It's the opposite of cheating, it's the year paying for itself twice. I've got German coming, Italian's on the list, and half the words in a legal document are Latin sitting in the middle of an English sentence, so one year now gets me bits of all of them free."
 
 "German is an assumption, since that timetable hasn't come out yet."
 
 "It hasn't come out saying otherwise, either."
 
-"Fine, then here's the actual problem with it," Ruth says, starting to walk again. "I'm doing Arabic, and four hundred million people speak it, every one of whom can tell me when I've got it wrong. Who corrects you? Everybody who could has been dead a very long time, so every ending you get wrong stays wrong in private, for ever."
+Ruth starts to walk again. "Fine, then here's the actual problem with it. I'm doing Arabic, and four hundred million people speak it, every one of whom can tell me when I've got it wrong. Who corrects you? Everybody who could has been dead a very long time, so every ending you get wrong stays wrong in private, for ever."
 
 "Answering back is beside the point, because what I want is to read what's already sitting in it."
 
@@ -84,11 +84,11 @@ Rhetoric is an hour a week of dismantling a speech to find the place where the p
 
 Art history is in the spring, and in February the instructor projects a Dutch interior with a woman reading in it and says what it went for at auction in 1959 and again in 1998.
 
-"I can't make that work," Chloe says to Kavi at dinner. "It's a picture, the same picture in both of those numbers, and it sat in a room untouched the whole way between them."
+Chloe says it to Kavi at dinner. "I can't make that work. It's a picture, the same picture in both of those numbers, and it sat in a room untouched the whole way between them."
 
 "Inflation," Kavi says around a mouthful.
 
-"I took the inflation out, and it's still six times what it was," she says, both elbows on the table. "And if I painted that, right now, every brush stroke matched, it's worth thirty pounds, whereas he painted it and it's worth a house, so the number is measuring something other than the picture, and every adult in that room changed the subject when I asked what."
+She has both elbows on the table. "I took the inflation out, and it's still six times what it was. And if I painted that, right now, every brush stroke matched, it's worth thirty pounds, whereas he painted it and it's worth a house, so the number is measuring something other than the picture, and every adult in that room changed the subject when I asked what."
 
 "Ask her again, properly this time."
 
@@ -102,7 +102,7 @@ In May her chisel starts rolling its edge every twenty minutes, so she takes it 
 
 "So where do people get a hard one?"
 
-"The forge," he says, still filing the edge. "Low building past the kitchens, and they're in on Thursdays."
+He is still filing the edge. "The forge. Low building past the kitchens, and they're in on Thursdays."
 
 ________________
 
@@ -112,13 +112,13 @@ Chloe unfolds hers.
 
 *Was the area bombing of German cities the right decision?*
 
-"Area bombing, the German cities, whether it was the right call," Bex says over her shoulder, to the table, with the bottom of the slip still folded over, "and that's a proper question, that's the question everybody's going to want."
+Bex says it over her shoulder, to the table, with the bottom of the slip still folded over. "Area bombing, the German cities, whether it was the right call. That's a proper question. That's the question everybody's going to want."
 
 "It's a stupid question," Chloe says at dinner, before anybody has asked her.
 
-"Not stupid, everyone wants it," Kavi says. "I'd swap you for juries in a heartbeat."
+Kavi says, "Not stupid, everyone wants it. I'd swap you for juries in a heartbeat."
 
-"It's a stupid question because it's got an answer, and they knew what was under them," she says, her fork in her hand and still unused. "February, then again in March, then again in May, and every single time somebody sat in a room and signed it. I'm going to write down what happened, then write down why it was wrong, and that's the whole essay."
+Her fork is in her hand and still unused. "It's a stupid question because it's got an answer, and they knew what was under them. February, then again in March, then again in May, and every single time somebody sat in a room and signed it. I'm going to write down what happened, then write down why it was wrong, and that's the whole essay."
 
 "Then you'll get a C and he'll be right to," Sam says.
 
@@ -128,11 +128,11 @@ Chloe unfolds hers.
 
 "I know what devil's advocate is, Sam, I've been sitting in the same ethics class as you since we were ten."
 
-"Then go and do it properly," he says, shrugging at her. "If you can't say why the man signed it, what you've got is a feeling that it was wrong and a blank where his reason goes."
+He shrugs at her. "Then go and do it properly. If you can't say why the man signed it, what you've got is a feeling that it was wrong and a blank where his reason goes."
 
 Chloe puts her fork down, but she keeps looking at the table.
 
-"That's annoying," she says, "because now I have to go and build the thing I came in here to say was wrong."
+"That's annoying. Now I have to go and build the thing I came in here to say was wrong."
 
 The reading takes days, and on the Tuesday she goes at it all afternoon and most of the evening before being sick late in the evening, then sits on the bathroom floor with her back against the bath and goes back to it for another hour.
 
@@ -150,7 +150,7 @@ She finds Ruth on the stairs between the second floor and the third.
 
 "On twice the length, you did double the words and he took a grade off you for it."
 
-"That's beside the point of why I'm annoyed," Chloe says, holding the pages in both hands and going up the stairs backwards. "He's got page eight and page twenty-two, the places where I stopped, right after I'd already answered it, and put a sentence in to show I knew what it sounded like, so I put them there on purpose, he found both, and those were the only ones in the whole thing."
+Chloe holds the pages in both hands and goes up the stairs backwards. "That's beside the point of why I'm annoyed. He's got page eight and page twenty-two, the places where I stopped, right after I'd already answered it, and put a sentence in to show I knew what it sounded like, so I put them there on purpose, he found both, and those were the only ones in the whole thing."
 
 "So what you're telling me is he's right."
 
@@ -164,11 +164,11 @@ At Christmas her mother asks what she has been working on.
 
 "Germany, the cities, at the end of it."
 
-"That's a big subject for a school essay," her mother says, taking the plate off her and putting it on the rack. "What did you say?"
+Her mother takes the plate off her and puts it on the rack. "That's a big subject for a school essay. What did you say?"
 
 Chloe opens her mouth, then works out that the answer starts with the hat, and after the hat it needs the deadline, then why hedging counts against you rather than as manners, and all of that goes in front of anything she actually wants to say.
 
-"That it was wrong," she says. "I got a B."
+"That it was wrong. I got a B."
 
 "Well, a B's a B, and it's still a good grade," her mother says, and hands her the next plate off the pile.
 
@@ -178,7 +178,7 @@ Her father is in the doorway with a dishcloth over his shoulder.
 
 "Yeah, all year, every day."
 
-"I was telling your grandmother about it before and she wants to hear it off you," he says, hanging the dishcloth on the oven door. "Go on, she's in the front room and she's been after somebody to talk to since lunch."
+He hangs the dishcloth on the oven door. "I was telling your grandmother about it before and she wants to hear it off you. Go on, she's in the front room and she's been after somebody to talk to since lunch."
 
 Chloe tells her grandmother about the arrows and draws the sixty degrees on an envelope, and her grandmother says it all sounds very complicated for a school.
 
@@ -186,7 +186,7 @@ Chloe tells her grandmother about the arrows and draws the sixty degrees on an e
 
 "I hit it the first time in October."
 
-"October," her grandmother says, patting her on the arm. "Well, you'll get there, dear, once in a whole year is hardly a lot, is it."
+Her grandmother pats her on the arm. "October. Well, you'll get there, dear, once in a whole year is hardly a lot, is it."
 
 "October was the first one, and I've done it a dozen times since then, more than a dozen."
 
@@ -196,7 +196,7 @@ ________________
 
 The Watch on the eleventh of April goes up on the board on the Monday, and it says the whole school. The intercom comes on in the middle of the afternoon block, and it is Sinclair.
 
-"Every member of staff currently in the building is now hostile," he says. "This includes your teachers. This continues until sixteen hundred or until there are no staff left. Kit is in the usual place."
+He says, "Every member of staff currently in the building is now hostile. This includes your teachers. This continues until sixteen hundred or until there are no staff left. Kit is in the usual place."
 
 There is a pause of a second and a half.
 
@@ -218,4 +218,4 @@ Chloe reads them in the corridor, where number three is about the east stairwell
 
 It is still with her at dinner, where Sam has the bannister up for the fourth time in front of people who were standing underneath it.
 
-"I got a hand on the rail and the rest of me went over the top of it, and that part worked, and then the floor came up at me."
+"I got a hand on the rail and the rest of me went over the top of it. That part worked. Then the floor came up at me."

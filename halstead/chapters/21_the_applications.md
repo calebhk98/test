@@ -10,7 +10,7 @@ Ruth has a laptop open on the arm of the couch in the third-floor common room, r
 
 "That card's been in your hand all evening," Ruth says, still refreshing.
 
-"I'm getting to it, I'm just deciding whether the game's worth finishing first."
+"I'm getting to it, I'm just deciding whether the game's worth finishing first. The board isn't going anywhere."
 
 Chloe is on the floor with the printed list of deadlines in her lap, going down it with a pen even though it reads exactly as it did the last time she checked. A line gets crossed out twice, for no reason she could name.
 
@@ -28,11 +28,11 @@ The first prompt wants six hundred words about a challenge she overcame, so Chlo
 
 Ruth reads it over her shoulder before she can close the laptop, laughing at her. "That's not the assignment. They don't want an essay, they want a thing somebody can read in thirty seconds and still remember at lunch."
 
-"I know what they want, I just think the limit leaves out anything that's actually true."
+"I know what they want. I just think the limit leaves out anything that's actually true, because the true part of that year is that the boy was right and I still never got a page out of him. That doesn't go in the box they gave me and it doesn't survive being remembered at lunch."
 
 "Then why is it four pages?"
 
-"Because getting it to six hundred is harder than getting it to four thousand." Chloe cuts it and cuts it again before it holds.
+"Because getting it to six hundred is harder than getting it to four thousand. Everything I take out has to have been wrong to start with, and most of it wasn't." Chloe cuts it and cuts it again before it holds.
 
 Ruth reads the top of it over her shoulder again between passes. "Which boy is this?"
 
@@ -40,13 +40,13 @@ Ruth reads the top of it over her shoulder again between passes. "Which boy is t
 
 By the version that goes in he is half a line, a boy who would not hand work in, and the half line survives every pass after that. The notebook does not.
 
-Sam finishes in under an hour and shuts the laptop harder than it needs. "Ten pages a week, every week since I got here," he says, "and the thing that decides where I end up is a paragraph, and at that length they're guessing, not reading, and everyone who wrote one knows it."
+Sam finishes in under an hour and shuts the laptop harder than it needs. "Ten pages a week, every week since I got here, and the thing that decides where I end up is a paragraph. At that length they're guessing rather than reading. Everybody who wrote a paragraph knows it, and everybody who reads one knows it too," he says.
 
 Kavi finishes in twenty minutes, exactly one word over, and submits it unread.
 
 Odile's runs five pages, and Chloe tells her it is many times the limit.
 
-"A limit like that is a minimum," Odile says, without coming off the bed. "Every teacher in this building takes more than they asked for and thanks you for it."
+"A limit like that is a minimum," Odile says, without coming off the bed. "Every teacher in this building takes more than they asked for and thanks you for it. The question wanted what it wanted. If they meant to be handed less than that they should have asked something smaller."
 
 It goes in as it is.
 
@@ -76,9 +76,9 @@ ________________
 
 The applications start landing in November. The transcript is legal, an accreditation number printed in the corner, and what is on it is classes, ordinary-looking rows of them, except there are so many of them, enough for admissions offices to decide it must be a formatting error and write back asking for the real thing.
 
-The call comes through on a Thursday afternoon. "We're going to need the actual transcript, not whatever this is," the caller says, polite and a little embarrassed, the way people are when they think they have caught somebody else's mistake. The registrar reads the accreditation number back to her, twice.
+The call comes through on a Thursday afternoon. "We're going to need the actual transcript, not whatever this is. Whatever generated that file has run the same rows over and over, and I'd rather not send it upstairs looking like that. If your registrar can resend it I'll hold the file open on my end," the caller says, polite and a little embarrassed, the way people are when they think they have caught somebody else's mistake. The registrar reads the accreditation number back to her, twice.
 
-"I can put another copy in the post to you today, if it would help to have it in your hand."
+"I can put another copy in the post to you today, if it would help to have it in your hand. It will say what this copy says."
 
 The caller declines and hangs up first.
 
@@ -86,7 +86,7 @@ Then somebody reads the essays, and what everybody notices first is the graduate
 
 An admissions officer at Penn works through a stack of files on a Tuesday morning, a mug going cold at her elbow. Odile's essay runs pages past the word limit, normally worth a note in the margin and a mark against the applicant; she writes the note and keeps reading. Well down the second page, as background to a point about patience, it mentions a self-defense assessment involving a room full of people, and she reads the sentence twice, sets the folder down, and reads it a third time before she picks up the phone.
 
-"Read this paragraph and tell me what you think it means," she says to the office down the hall.
+"Read this paragraph and tell me what you think it means. Don't tell me what it stands in for, because I have spent an hour deciding it has to stand in for something," she says to the office down the hall.
 
 Her colleague reads it standing in the doorway, still holding his own coffee. "It means exactly what it says, with no second meaning folded into it. I put two of these side by side on Friday, looking for the template, and they argued opposite sides of the same question, and both of them were worth reading."
 
@@ -104,7 +104,7 @@ By noon he has filled sheets on both sides, most of it his own working: a citati
 
 Just before the bell he stands, hands the sheets over, and waits while she reads them.
 
-"Is the third author available to talk?" The methods section names her for the one part he has no way to check on his own.
+"Is the third author available to talk? There's a step in the methods I can't rebuild off the page, and it's attributed to her." The methods section names her for the part he has no way to check on his own.
 
 "She's sixteen, and she's in class until four," the escort says.
 
@@ -134,7 +134,7 @@ The Yale representative asks for a senior writing seminar and gets Hearn, who ha
 
 "Ten pages, same as most weeks," Hearn says.
 
-"Is that unusual, for the age group, that many pages every week?"
+"Is that unusual, for the age group, that many pages every week? I ask because I teach graduate students who file half that and let you know they have done it."
 
 He looks at her as if the question hadn't occurred to him before. "It's what the material wants."
 
@@ -144,7 +144,7 @@ At the visitors' table on the second evening the Caltech representative wants to
 
 He asks who did the geometry.
 
-"That was me," Bex says. "And I'd start off it next time instead of finishing on it."
+"That was me," Bex says. "And I'd start off it next time instead of finishing on it. We finished on the part that was going to move the number, and we finished on it in April, with the run already over."
 
 Chloe is a few seats down with a plate in front of her. The representative writes it into the notebook he has had out since Monday, then asks Bex what she would do differently, and Bex tells him, and what she tells him is what is written on the back of the April drawing.
 
@@ -164,11 +164,11 @@ The rep asks who Odile is, and Sam points across the dining hall with his fork.
 
 The Duke representative, who'd collected "Sport," then "Athletics," then "Recreation," tries Ruth in the reading room later. "What's the hardest thing you've done here?"
 
-"That's not a well-formed question," Ruth says, typing on. "Hardest by what measure, and compared to what?"
+"That's not a well-formed question," Ruth says, typing on. "Hardest by what measure, and compared to what? Hardest in the week it happened, or hardest to keep doing? Those have different answers and I don't know which of them you came here for."
 
-"Pick the measure you'd defend, then, and we'll go by that."
+"Pick the measure you'd defend, then, and we'll go by that. I'd rather have yours than mine."
 
-Ruth looks up at that, closing the laptop over a finger to keep her page. "Time, not difficulty: two years of Saturdays running someone else's practice sessions, and the sessions were the easy part." She opens the laptop back up. "Sustained is harder to fake than hard."
+Ruth looks up at that, closing the laptop over a finger to keep her page. "Time, not difficulty: two years of Saturdays running someone else's practice sessions, and the sessions were the easy part. The hard part was turning up on the ninetieth Saturday with nothing new to say about any of it." She opens the laptop back up. "Sustained is harder to fake than hard."
 
 The rep writes that down and moves to the next name on his list.
 
@@ -232,15 +232,15 @@ Sam comes in and sits on the end of the bed with a sandwich from downstairs, and
 
 "Twelve of fourteen, every time I count them."
 
-"Right, that tracks with what everyone else is getting." He counts something off on his fingers, using the hand with the sandwich in it. "I got everything but the twelfth. Ruth got everything she asked for. Kavi got all three, the ones he actually wanted." He points the sandwich at the rows on the floor. "That's not what that figure is counting, not by the definition they're using."
+"Right, that tracks with what everyone else is getting." He counts something off on his fingers, using the hand with the sandwich in it. "I got everything but the twelfth. Ruth got everything she asked for. Kavi got all three, the ones he actually wanted." He points the sandwich at the rows on the floor. "That's not what that figure is counting, not by the definition they're using. It counts something else and puts our word on top of it."
 
 Ruth is in the doorway by then, laptop still open on her arm, having come by the route Sam had.
 
 "If a store put a sign in its window saying only a few percent of the people who walk in buy something," Chloe says, "would you think the store was doing well, or badly run?"
 
-"Neither," Ruth says. "You'd think the sign was doing a job that had nothing to do with the store."
+"Neither," Ruth says. "You'd think the sign was doing a job that had nothing to do with the store. It's written for the people out on the pavement, not for anybody who already walked in."
 
-"Ninety-one out of ninety-one bought something, and that's the number the sign should say."
+"Ninety-one out of ninety-one bought something, and that's the number the sign should say. Nobody is ever going to put that in a window."
 
 "Or you'd want your money back for the trip in," Sam says.
 
@@ -248,6 +248,6 @@ Ruth comes the rest of the way in and sits on the floor across from Chloe, worki
 
 "It's on their site, though, in writing, where anyone can look it up," Chloe says.
 
-"It's on their site," Ruth says, "and it still isn't a real number, because both of those can be true at once, the site and the lie on it."
+"It's on their site," Ruth says, "and it still isn't a real number, because both of those can be true at once, the site and the lie on it. Somebody writes that sentence for a living and nobody anywhere has to check it."
 
 Twice in the week Chloe takes the letters out and counts them, and both times the count holds. Then there's an exam on Thursday and a language report due the Monday after, and the letters go back in the drawer and stay there.

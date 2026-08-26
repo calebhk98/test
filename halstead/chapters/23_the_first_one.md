@@ -14,7 +14,7 @@ The whole of the school below them sits on the grass behind the last row of seat
 
 The head of school gives a short speech that is mostly logistics: four years, some of them longer; ninety-one names; a line of thanks to parents, grandparents, and guardians. There's one real sentence at the end, and his voice catches on the word "accomplishment," a sound this well-rehearsed room hadn't planned for. The booth holds several seconds of dead air behind it before anyone remembers to cue the applause track built for exactly this contingency, and it lands a half-beat late, which gets a bigger laugh from the grass than the sentence itself did. That sentence goes straight past Chloe anyway, because Sam has spent the whole speech trying to make her laugh and finally succeeds on that word.
 
-Then they read out ninety-one names in alphabetical order, evenly paced, timed to the stopwatch that clocked the rehearsal, and every name lands where the schedule put it, each family standing on cue. Ruth, a few seats down from Chloe, times it on instinct, the silent count she runs against anything with a rhythm in it. "Twelve seconds a name," she says, under her breath, once it's over. "Dead steady, the whole way through." She sounds almost disappointed, the whole thing too clean to correct.
+Then they read out ninety-one names in alphabetical order, evenly paced, timed to the stopwatch that clocked the rehearsal, and every name lands where the schedule put it, each family standing on cue. Ruth, a few seats down from Chloe, times it on instinct, the silent count she runs against anything with a rhythm in it. "Twelve seconds a name," she says, under her breath, once it's over. "Dead steady, the whole way through. Nobody drifted, not even down at the end of the alphabet." She sounds almost disappointed, the whole thing too clean to correct.
 
 When Sam's name gets called, whole rows of people who are not his family stand up anyway, Chloe's mother among them. Years of pickups and drop-offs mean she has watched this particular boy grow a head taller in a single summer, and it still catches her off guard. When Ruth's name comes, half a row does it for her. Priya's parents, an electrician and a woman who works the front desk at an urgent care clinic, clap for every single name, not just their daughter's, the whole way through.
 
@@ -26,7 +26,7 @@ ________________
 
 Her mother knows this campus, having come to it since the beginning. She knows where the good parking is, knows Ruth's mother by name, and knows to bring a jacket because it's colder up here.
 
-Before the ceremony even starts she finds Ruth's mother in the crowd. They fall into the easy back-and-forth they've had every year for over a decade: a supplier problem on one side, a school form still open on the other. "Is he settled on a roommate yet?" Ruth's mother asks, her own younger child starting at Halstead that September. "Any day now, and he's already looking at rooms," Meg says. Ruth's mother, who has forgotten her own jacket every year since the first, takes Meg's spare straight out of her hands. "You'll catch your death," Meg says, the same as every June before. A decade and more of parking in the overflow lot, and each of them still only knows the other from a folding chair.
+Before the ceremony even starts she finds Ruth's mother in the crowd. They fall into the easy back-and-forth they've had every year for over a decade: a supplier problem on one side, a school form still open on the other. "Is he settled on a roommate yet?" Ruth's mother asks, her own younger child starting at Halstead that September. "Any day now, and he's already looking at rooms. He's got a list of them," Meg says. Ruth's mother, who has forgotten her own jacket every year since the first, takes Meg's spare straight out of her hands. "You'll catch your death," Meg says, the same as every June before. A decade and more of parking in the overflow lot, and each of them still only knows the other from a folding chair.
 
 A few rows over, Dave strikes up a conversation with the stranger next to him about the stage, admiring rather than worried, working out loud that whoever spec'd the bracing built in more margin than the thing will ever need. "Somebody had fun with this," Dave says, nodding at the joists. The stranger has clearly done that arithmetic already, unprompted, cross-bracing, dead load, a margin that makes more sense for a bridge than a stage, and it takes them most of the conversation to work out that he's a physics professor, Kavi's father. Behind them, a staff member in a school polo folds up a spare table and answers Dave's question about parking on her way past, still moving.
 
@@ -42,7 +42,7 @@ After, on the grass, with a paper cup of lemonade:
 
 Her dad works his way through a full memory card, most of it good, and lowers the camera long enough to ask her one real question. "So who's actually driving up in August, you or one of us?"
 
-"Probably me," Chloe says. "I want the car for the fall anyway."
+"Probably me," Chloe says. "I want the car for the fall anyway. I'd rather do the drive on my own than have all of us in it working out what to say."
 
 "Huh," he says, and lifts the camera again.
 
@@ -70,7 +70,7 @@ At the propped courtyard door she reaches up for the top of the frame, which she
 
 Marek comes off the grass to meet the box and is alongside her before she is properly out of the doorway, with the paper he has been reading since March, about a third of the way through and going better than a third sounds.
 
-"The error's in the middle, so the third I've done is the cheap third and the rest of it is the part worth having." He walks her the length of the courtyard and goes back to the grass. Coming out of the far end of it she stops with the box on her hip and looks up: grey stone to the second floor and brick above it, the gutters and the pointing kept up the way everything here is kept up, the mown grass running out to the road.
+"The error's in the middle, so the third I've done is the cheap third and the rest of it is the part worth having. I'll have the whole of it by Tuesday and then I want to talk to you about it." He walks her the length of the courtyard and goes back to the grass. Coming out of the far end of it she stops with the box on her hip and looks up: grey stone to the second floor and brick above it, the gutters and the pointing kept up the way everything here is kept up, the mown grass running out to the road.
 
 ________________
 
@@ -80,7 +80,7 @@ Sam joins the Army, having been the best fighter in his year since he was ten by
 
 "Why us and not the Marines," the recruiter asks, more out of habit than curiosity; he's heard every version of the answer there is by now.
 
-"They cap the PT score," Sam says. "Once you hit it you're done improving on paper, even if you're still improving. This one lets you keep going."
+"They cap the PT score," Sam says. "Once you hit it you're done improving on paper, even if you're still improving. This one lets you keep going. Nobody has given me a reason for the cap and I asked twice."
 
 "Anybody try to talk you out of it?"
 
@@ -96,17 +96,17 @@ On a Saturday in May she brings it to her father at the counter, with the notebo
 
 "Two hundred and six applications since November," she says, "and fourteen answers, twelve of them generated by software at two in the morning."
 
-"That's a bad six months," her father says, still bent over the invoice in front of him, although the pen stops moving on it.
+"That's a bad six months, and it isn't a stretch you get back," her father says, still bent over the invoice in front of him, although the pen stops moving on it. "I have watched worse than that go past this counter."
 
 "It's a bad stretch for everybody who tried it. A person reading applications can be sued over which he picks. Software is safe from that, and it leaves a record while it works." She has the page open on the counter between them, a finger holding her place on it. "So they bought the software. It reads for words off its own listing, and I got a human the one time I pasted the listing back at it."
 
 "So paste the listing back at it."
 
-"All of that is eight weeks of unpaid work, and whoever can't afford that long takes whatever's left at the end." She flips to the back of the invoice, where that hand has already done the arithmetic. "The sites charge thirty a month to keep looking. Getting me hired inside a week is the worst week one of those sites could have."
+"All of that is eight weeks of unpaid work, and whoever can't afford that long takes whatever's left at the end. I could afford it because I live over a shop that feeds me." She flips to the back of the invoice, where that hand has already done the arithmetic. "The sites charge thirty a month to keep looking. Getting me hired inside a week is the worst week one of those sites could have. They would rather I looked forever, and they have built the thing that makes sure I do."
 
 Her father sets the invoice down and looks at her properly. "What would it even do?"
 
-"No resume, an evening of short tests, and a profile assembled out of whatever a person can demonstrate they have actually done." She says it at the speed of a weather report. "Then it fills the forms and submits them, instead of somebody retyping the same life into thirty portals, and the employer pays on the hire while looking costs the person nothing."
+"No resume, an evening of short tests, and a profile assembled out of whatever a person can demonstrate they have actually done." She says it at the speed of a weather report. "Then it fills the forms and submits them, instead of somebody retyping the same life into thirty portals, and the employer pays on the hire while looking costs the person nothing. Nobody pays anything to look."
 
 "And who puts a job on it."
 
@@ -114,13 +114,13 @@ Her father sets the invoice down and looks at her properly. "What would it even 
 
 He is quiet long enough for a customer to come in, buy a tin of galvanised screws and leave again, and then he says the thing he has been holding since the second hundred.
 
-"This is what people say when nobody will hire them. They say they are starting something." He sets his fingers on the invoice. "You will be behind that counter Monday to Saturday, and you will keep sending the forms, and whatever this is happens after we close."
+"This is what people say when nobody will hire them. They say they are starting something." He sets his fingers on the invoice. "You will be behind that counter Monday to Saturday, and you will keep sending the forms, and whatever this is happens after we close. That is what I have got to offer you, and it is a good deal more than my own father put in front of me."
 
 "No."
 
 "Nadia."
 
-"I work out of the back room, and the counter gets me on Sundays." She has both elbows on the ledger between them, either side of the arithmetic. "You keep the books and the ordering off yourself, the arrangement you have now, at the price you pay now."
+"I work out of the back room, and the counter gets me on Sundays." She has both elbows on the ledger between them, either side of the arithmetic. "You keep the books and the ordering off yourself, the arrangement you have now, at the price you pay now. Nothing about your week changes."
 
 "I have that arrangement already."
 

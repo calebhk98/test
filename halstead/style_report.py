@@ -225,8 +225,11 @@ def report(path, label):
 
     # section breaks
     _raw = load(path)
-    _br = len([x for x in _raw.split('\n') if x.strip() == '---'])
-    print(f"\nSECTION BREAKS  {_br}   target 2-3   {'PASS' if _br <= 3 else 'FAIL'}")
+    # The book was unified onto the underscore rule; the old '---' form is gone,
+    # so this counted zero everywhere and reported PASS on every file.
+    _br = len([x for x in _raw.split('\n') if set(x.strip()) == {'_'}])
+    print(f"\nSECTION BREAKS  {_br}   target 2-6   "
+          f"{'PASS' if 2 <= _br <= 6 else 'FAIL'}")
 
     # tic scan
     print("\nTIC SCAN")

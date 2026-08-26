@@ -10,7 +10,13 @@ The registrar's office is several flights up in a building with no elevator sign
 
 Advising sends her back to the department, and the department sends her to advising. By the third week of October she's learned the actual geography of the building better than most sophomores: which stairwell is faster, which office keeps coffee out for visitors, which locks its door early. A folder now goes everywhere with her, problem sets clipped in date order, because a written claim is harder to wave off than something merely said, and easier, in her experience, to make somebody actually answer.
 
-A woman in the department office finally reads the whole folder, not just the top page, and tells her, kindly, that the sequence she's in is the only sequence there is. There's no other track to be moved onto. Ruth says that can't be right, because the material belongs to a course pitched years behind where a school like this ought to be placing her. The woman repeats that it's the placement anyway, and offers her a pamphlet about tutoring resources that stays on the counter after Ruth leaves. Ruth keeps the folder. The mistake, she decides, is bigger than one office can fix, something upstream of advising and the registrar both. It goes in the folder under problems she'll solve once she works out who actually owns them.
+A woman in the department office finally reads the whole folder, not just the top page, and squares it back together in order before she answers.
+
+"The sequence you're in is the only sequence there is. There isn't another track to be moved onto, not in this department and not upstairs either, and there has not been anything else in all the years I have worked in this office. I'm sorry, because I can see how much of this you did before you came in here."
+
+"That can't be right. The material in the opening weeks belongs to a course pitched years behind where a school like this ought to be placing me. I sat a diagnostic in August and I would like to know what it was actually for."
+
+The woman repeats that it's the placement anyway, and offers her a pamphlet about tutoring resources that stays on the counter after Ruth leaves. Ruth keeps the folder. The mistake, she decides, is bigger than one office can fix, something upstream of advising and the registrar both. It goes in the folder under problems she'll solve once she works out who actually owns them.
 
 The classes themselves settle into a shape she recognizes from the middle years at Halstead: a problem set due Friday that takes her forty minutes on a Tuesday, a lecture that spends fifty minutes proving something she could prove in three. In recitation, half the room is still copying the professor's board by the time she's already checked her answer against the back of the book. Out of habit rather than ambition she sits in the third row, and finishes early enough most weeks to read ahead into the following week before the hour is up. When a preceptor hands back a problem set with a perfect score and no comment, she reads the blank space where the comment should be as confirmation: a correct answer earns silence, and so does a class already pitched at the right level for the room. The sequence will catch up to her eventually, she tells herself, the way the diagnostic she took as a child eventually caught up to whatever she already knew. The reading stays two weeks ahead so she'll have something to do once it does.
 
@@ -66,7 +72,7 @@ He nods at the first, and at the second the nod does not arrive, and he sits bac
 
 "Goes to zero how."
 
-"Because there is nothing left out at the edge for it to cancel against." It's the second, she realizes watching him, that she has always kept private, checked only against her own head, where it always came out fine. "It isn't a cancellation. It's an absence."
+"Because there is nothing left out at the edge for it to cancel against. The function is already gone by the time you get out that far." It's the second, she realizes watching him, that she has always kept private, checked only against her own head, where it always came out fine. "It isn't a cancellation. It's an absence."
 
 "Shorter."
 
@@ -74,7 +80,7 @@ He nods at the first, and at the second the nod does not arrive, and he sits bac
 
 He goes back up through it from there, the whole way to the top, stopping twice more to say a step back to her in his own words before he will take it, and at the end of it he tells her the result holds, and caps the pen, and sets it down on the desk between them.
 
-"That took you five passes," he says. "I have graduate students in their third year who would not have got me there at all." He is already reading down the next question on his list, with the pen back up in his hand for it.
+"That took you five passes," he says. "I have graduate students in their third year who would not have got me there at all. Most of them would have told me the step was obvious and waited for me to agree with them. You went off and found the sentence." He is already reading down the next question on his list, with the pen back up in his hand for it.
 
 Ruth thanks him, packs the loose pages into her folder in the wrong order, and leaves before office hours are officially over.
 

@@ -276,11 +276,11 @@ ________________
 
 The branch is a converted storefront a few blocks from the shop, with desks behind a rope and a manager who keeps the retail policies laminated in the drawer of the nearest branch. The bank holds incoming payments before it releases them, and when Nadia asks in September to have that taken off her account he reads her the policy off the card without turning it around so she can see it.
 
-"Five days is the policy on a new business account."
+"Five days is the policy on a new business account. It's the same for everybody who walks in here and it isn't mine to move."
 
 "It's the policy on a new account with no history. This one has three months on it, steady deposits and zero returns." She has the statements out on his desk, squared against the edge of it. "Two days on nine named payers. I'll write them down for you."
 
-"I can't do two days on a balance this size."
+"I can't do two days on a balance this size. If something comes back on a Thursday it's my name on the exception and not the policy's."
 
 "What size does it take."
 
@@ -288,9 +288,9 @@ The branch is a converted storefront a few blocks from the shop, with desks behi
 
 It is more than she has ever had at once, and she sits with it a second before she answers.
 
-"I can hold it a few hundred dollars under that, across a month, every month, and I can show you the months." She squares the statements against the edge of his desk again. "What the difference costs me is that it sits in your branch instead of in my hand on the fourth."
+"I can hold it a few hundred dollars under that, across a month, every month, and I can show you the months. It hasn't been under that figure since August." She squares the statements against the edge of his desk again. "What the difference costs me is that it sits in your branch instead of in my hand on the fourth."
 
-"Three hundred under isn't the number."
+"Three hundred under isn't the number. If the sheet says twenty and you hold nineteen and change, that report comes out every month with my name at the top of it."
 
 "Three hundred under is what's in the room." She writes the names down anyway, a name to a line, and turns the paper around so it faces him. "Two days on those, five on everything else. If one of them comes back on you, put me to five across all of it and I'll take it."
 

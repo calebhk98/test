@@ -42,15 +42,15 @@ That's the whole answer, first try, the real one rather than something softer bu
 
 "Residential the whole time?" he asks, pen already moving.
 
-"The whole time. A few weeks home at Christmas and longer in the summer."
+"The whole time. A few weeks home at Christmas and longer in the summer. The address on that form is my parents' and it has been the whole way through."
 
 "From when?"
 
-"I started that April, a few months after my seventh birthday. There was a programme the summer before, which is how they found me, or how I found them, depending which end you look from."
+"I started that April, a few months after my seventh birthday. There was a programme the summer before, which is how they found me, or how I found them, depending which end you look from. My mother tells it differently than I do and hers is the version I would write down."
 
 At that he looks up, once, the pen briefly still against the page. "That's young."
 
-"It is. My mother thought so too, and she is the reason it took a year to arrange."
+"It is. My mother thought so too, and she is the reason it took a year to arrange. She wanted somebody to say out loud that I could come home whenever I asked to, and nobody would put that in writing for her, so she drove up and stood in the building until they said it to her face."
 
 Rather than press her for more he lets it sit there and moves the pen to the next line, and she matches him, leaving the fact standing on its own. A boarding school for the whole of her childhood, then. The languages next, and she lists them off in the order she learned them, Spanish, French, Mandarin, Russian, Latin, Arabic, German, Japanese, Hindi, Korean, Swahili, watching him check each name against something already in his own folder. A few of them get tapped at random, as far as she can tell. "Say something. Any of them."
 
@@ -64,7 +64,7 @@ The classes come after that, all of them, mathematics through politics through t
 
 "Whose column does that go in."
 
-"Mine. He did the whole year of the work and handed none of it in, and getting it out of him was the job, and I never found the way to do it."
+"Mine. He did the whole year of the work and handed none of it in, and getting it out of him was the job, and I never found the way to do it. He gave me back a stack of practice papers a year later with nothing written on any of them except a better question on the back of the top sheet."
 
 That goes down in the notebook, and he turns the page.
 
@@ -72,7 +72,7 @@ That goes down in the notebook, and he turns the page.
 
 Whitaker's pen stops for about the length of a word, then starts again. "Sat where?"
 
-"At school. Two days, in the long room on the second floor, and the teachers who wrote it proctor it themselves."
+"At school. Two days, in the long room on the second floor, and the teachers who wrote it proctor it themselves. I failed it in April by a few points and sat it again in October."
 
 "Sixteen," Whitaker says, and writes it down, and asks her nothing else about it.
 
@@ -90,7 +90,7 @@ Whitaker doesn't look up. "Asked by whom."
 
 Whitaker fills half a page before he looks up. "Anything else in that category?"
 
-"Two others," Chloe says. "Same kind of project, same person asking, and I gave her the answer I have just given you."
+"Two others," Chloe says. "Same kind of project, same person asking, and I gave her the answer I have just given you. Both of them are older than the third and neither of them ran as long."
 
 Whitaker turns back a page, cross-checking his own notes. "Would you tell me if I said it was necessary?"
 

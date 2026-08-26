@@ -38,11 +38,39 @@ walls are purple, the room is bright, the pipe rings when a thrown apple hits
 it. That is addressed to the reader and it is allowed, because it reports a
 surface rather than a meaning.
 
-The line is between a surface and a conclusion. *The radiator is under the
-window at the far end, so whoever gets there early sits down that end* is a
-camera. *The room is arranged to reward the punctual* is a conclusion, and the
-reader was going to reach it unaided. Describe the thing; do not describe what
-the thing means.
+**The camera stops at the surface.** The moment a clause says what the surface
+causes, means, or costs, it has stopped being a camera and started being the
+narrator. From the author, ruling on an example this document previously got
+wrong:
+
+> *the radiator is under the window at the far end* is a camera, and allowed.
+> *so whoever gets there early sits down that end* is talking to the reader,
+> and would fail.
+
+### The trailing explanatory clause
+
+This is the commonest way the rule gets broken, and it survives every pass
+because the first half of the sentence is legitimate. A camera observation is
+made, and then a tail is bolted on telling the reader what to take from it.
+
+Every one of these is from this manuscript and every one of them fails:
+
+- a rail at chair height **so the chairs cannot reach the plaster**
+- a light that throws everything back off the glass, **so the bottom of a
+  sheet has to be read at an angle**
+- the brick is a shade darker either side of it **from the run of the rain**
+- the language-block stairs, **which cost her a minute each way**
+- **the only** part of the building that smells of nothing at all
+- **the coldest table in the hall from November on and the table everybody
+  wants in June**
+
+The tell is a comma followed by *so*, *which*, *because*, *from*, or a
+superlative doing comparison work the reader did not ask for. Cut at the
+comma. If the consequence matters, show somebody living it: a person sitting
+down at the warm end, a girl tilting a sheet to read the bottom of it.
+
+`style_report.py` counts these. It reports 74 trailing explanatory clauses,
+37 narrator evaluations and 18 superlatives book-wide. Run it.
 
 ### An overused technique is cut back, not to zero
 
@@ -148,3 +176,17 @@ design even when both clear their floors.
 If a chapter already clears its band, leave the number alone. Prose repair
 that costs a little reading grade is fine and expected; deliberately reducing
 a figure to fit a lower bar is not.
+
+## 7. Subagents run on Sonnet
+
+Every subagent spawned for work on this manuscript uses `model: "sonnet"`.
+
+The author's reason, in his words: *I can tell when Opus writes it, as Opus
+writes too eloquently and literary. I'm having to go back through to pull it
+back towards normal human readers. The target audience is 9th graders, and the
+text keeps being written for college students.*
+
+This applies to prose passes above all, and to analysis passes as well, since
+an analysis agent writes example rewrites that get pasted into chapters. There
+is no exception for a hard chapter or an important scene. A pass that comes
+back reading like an essay has failed whatever else it hit.

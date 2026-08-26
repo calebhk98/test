@@ -22,7 +22,7 @@ Sam does it again, whereupon it is wrong again in a different place, and it cont
 
 "I think Drill Sergeant Ruiz likes me," Sam tells him at the sinks.
 
-"He has put your bedding on the floor morning after morning and asked you what it was, so if I were you I would build a considerably smaller theory on the evidence available." Okoro is shaving with the water off, because the water is a privilege the bay forfeited on Tuesday, with no immediate prospect of recovering it.
+"He has put your bedding on the floor morning after morning and asked you what it was. If I were you I would build a considerably smaller theory on the evidence available." Okoro is shaving with the water off, because the water is a privilege the bay forfeited on Tuesday, with no immediate prospect of recovering it.
 
 "He walked off the second time with his mouth shut, though. That's the good version of it."
 
@@ -32,7 +32,7 @@ By the end of the first week Sam has asked a succession of people how long the e
 
 "Twenty-two weeks, and then what."
 
-"Then you're infantry, then you go to a unit, then you do the whole business again in worse weather with better equipment, until eventually somebody hands you a platoon of your own and you become the problem."
+"Then you're infantry. Then you go to a unit, and you do the whole business again in worse weather with better equipment. Eventually somebody hands you a platoon of your own and you become the problem."
 
 "Right, but what's this for. When does the real one start."
 
@@ -58,7 +58,7 @@ The grader adds the column a second time with the pen held clear of the paper, c
 
 "No, Sergeant. I did other things."
 
-"That is the top of the scale, so whatever you were about to ask me next, the answer to it is no."
+"That is the top of the scale. Whatever you were about to ask me next, the answer to it is no."
 
 Sam turns that over for most of the morning without any satisfactory resolution, since a maximum that cannot be exceeded is a maximum he has no method for. On the Sunday he talks Okoro into holding a stopwatch behind the barracks, running the events again on his own time, purely to establish whether the raw figures underneath the scoring will move at all. Some of them do, by a little.
 

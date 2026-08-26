@@ -18,23 +18,23 @@ They stay a couple of hours, long enough for Sam to want to know whether the den
 
 "He told you that, just like that, no hedging, no story about how it got there?"
 
-"He tells anyone who asks, straight out, because to him it's a dent, and a dent is the least interesting thing about a car."
+"He tells anyone who asks, straight out, because to him it's a dent, and a dent is the least interesting thing about a car. He's had that car since before any of us got here."
 
-"I'd act like it was a secret if it were my car, and I'd have a whole story ready for anyone who noticed it."
+"I'd act like it was a secret if it were my car. I'd have a whole story ready for anyone who noticed it. Different story every time."
 
-"You'd have told the whole school inside a week, and brought people out to look at it, given them the whole tour," Ruth says.
+"You'd have told the whole school inside a week, and brought people out to look at it, given them the whole tour. You'd have charged," Ruth says.
 
 The coffee cup goes a quarter turn on the table under her hand, and then another.
 
-"My brother's in, the letter came Thursday, and my mother read me the whole thing over the phone twice before I got a word in edgewise."
+"My brother's in, the letter came Thursday, and my mother read me the whole thing over the phone twice before I got a word in edgewise. She read out the uniform list like it was news."
 
 Sam puts his fork down before he asks it. "How old is he now?"
 
 "Seven in September, so he's got a whole year of hearing about it before he even gets here."
 
-"Most of a decade behind you, and he'll spend every year of it hearing your name before he ever meets you, whether he asks for it or not." He picks the fork back up and goes back at the stack.
+"Most of a decade behind you, and he'll spend every year of it hearing your name before he ever meets you, whether he asks for it or not. That's not nothing." He picks the fork back up and goes back at the stack.
 
-"He already knows that, and he's been practising looking unimpressed about it since he could talk." Ruth turns the cup again, a quarter turn at a time, always clockwise. "He asked me what the food's like, and that was the whole letter conversation, start to finish, just the food, not the campus or the classes."
+"He already knows that, and he's been practising looking unimpressed about it since he could talk." Ruth turns the cup again, a quarter turn at a time, always clockwise. "He asked me what the food's like, and that was the whole letter conversation, start to finish, just the food, not the campus or the classes. He wanted to know whether there's a pudding."
 
 "What are you going to tell him?"
 
@@ -56,9 +56,9 @@ Chloe takes her hand off the table and puts it in her lap. By the time anybody a
 
 Sam has the specials card up off the table, holding it at arm's length like a document recovered from an archive. "*Come hither for our world famous short stack.*" He puts the card down and leaves it face up between them. "*Hither.* The last time anyone said *hither*, it was Shakespeare."
 
-"It's in the dictionary, which makes it a word whether you like the sound of it or not," Ruth says.
+"It's in the dictionary, which makes it a word whether you like the sound of it or not. That's the whole test and it passes it," Ruth says.
 
-"It makes it archaic, and archaic is a different category entirely from ordinary, because there's a difference between a word being real and a word being something a person would actually say out loud."
+"It makes it archaic. Archaic is a different category entirely from ordinary. There's a difference between a word being real and a word being something a person would actually say out loud."
 
 "Say a sentence with it in that comes from somewhere other than a play, then, if it's so ordinary."
 

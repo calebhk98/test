@@ -24,15 +24,15 @@ Chloe puts the letter down on the table next to the salad bowl, face up, turned 
 
 Her mom reads it, then reads it again, her eyes going back to one spot on the page, staying there longer, before she reads it a third time and hands it across the table with her eyes still on the page.
 
-"Did you see this, because I have no memory of applying to anything of the kind."
+"Did you see this? I have no memory of applying to anything of the kind, and I would remember."
 
-"See what," her dad says, taking it and reading it in his free hand, still eating, then putting the fork down to hold it with both, "and no, this is the first I've heard of it."
+"See what." Her dad takes it and reads it in his free hand, still eating, then puts the fork down to hold it with both. "No. This is the first I've heard of it, and I've been sitting here the whole time you have."
 
-"So how do they have her name, when I keep it off every form I am handed, school, program, all of it."
+"So how do they have her name, when I keep it off every form I am handed, school, program, all of it. I have been doing that since preschool."
 
 "Well, how would anybody," her dad says, setting the letter back down between them.
 
-"Ask them, there's a number right there at the bottom, so let's call it instead of guessing at the table."
+"Ask them, there's a number right there at the bottom, so let's call it instead of guessing at the table. I'm not sitting here doing this all night."
 
 "I'm asking you, and you've had it about as long as I have."
 
@@ -40,15 +40,13 @@ Her mom reads it, then reads it again, her eyes going back to one spot on the pa
 
 Her mom takes it back and looks at the back of it, finding only the ink from the signature that has come through, then turns it the right way round again for a fourth read of the top part.
 
-"It's free, the whole month, food, a bed, a bus, all of it," she says, "and things are not free."
+"It's free, the whole month, food, a bed, a bus, all of it, and things are not free. Not for a month, and not with a bus in it."
 
 "Sometimes they are, if somebody's got the money and wants to give it away for no reason at all."
 
 "There's always a reason, we just haven't heard it yet," her mom says.
 
-"Sometimes somebody has money and wants to spend it on something, which is a whole thing that happens in the world," her dad says.
-
-"People give away scholarships, and people put their name on the side of a hospital."
+Her dad has the letter turned round to his side of the table again. "Sometimes somebody has money and wants to spend it on something, which is a whole thing that happens in the world. People give away scholarships, and people put their name on the side of a hospital. It happens every day of the week to somebody."
 
 "To us, though, it actually happens to us?"
 
@@ -70,11 +68,11 @@ Her mom spells it twice, H-A-L, Halstead, like it sounds, and then a long stretc
 
 Then the phone goes down on the counter, and her dad says something from the other side of the room that stays too quiet to reach the stairs.
 
-"She says there's no school by that name working with the district in any capacity, she went back years to check, and she said to be careful," her mom says, running the tap at the sink.
+Her mom runs the tap at the sink. "She says there's no school by that name working with the district in any capacity. She went back years to check. And she said to be careful."
 
 "Careful how?"
 
-"She said people do this, that there are people who send things to houses with a child's name on the outside, because a child opens it, and that's how you find out which houses write back."
+"She said people do this. There are people who send things to houses with a child's name on the outside, because a child opens it, and that's how you find out which houses write back. She told me to look at the postmark."
 
 Her dad's jaw goes tight.
 
@@ -96,7 +94,7 @@ Another wait, after which her mom says uh huh, then waits again.
 
 The voice goes on for most of a minute.
 
-"Okay, but somebody made the list, because a person made it, somebody sat down and typed my kid's name."
+"Okay, but somebody made the list, because a person made it, somebody sat down and typed my kid's name. I want the name of that person."
 
 Chloe edges down the stairs during the wait, close enough to see her mom's free hand braced on the edge of the counter, and her mom points at the stairs, still facing the counter, so Chloe goes back up to the fourth stair.
 
@@ -112,21 +110,21 @@ Every single question gets answered straight away, immediate and complete, as th
 
 When she hangs up she stands there with her hand still on the phone, long enough that Chloe's dad puts down his coffee and asks her well.
 
-"They said they have people who identify children, programs, scouts, and she used the word networks."
+"They said they have people who identify children, programs, scouts, and she used the word networks. She said it like I'd know what it meant. I asked her to say it again and she said it again the same way."
 
 Her mom takes her hand off the phone.
 
 "And she said, and I want you to hear this exactly, she said their list is usually pretty good."
 
-"Usually pretty good is the vaguest possible way anybody could answer that question, because a phrase is what you reach for when you haven't got a number."
+"Usually pretty good is the vaguest possible way anybody could answer that question, because a phrase is what you reach for when you haven't got a number. That's the one thing she said all night that wasn't a fact."
 
 "Okay, and everything else?"
 
-"She answered everything else so fast I ran out of things to ask her."
+"She answered everything else so fast I ran out of things to ask her. I asked her what happens in the middle of the night and she was answering before I finished. Nobody has that ready unless people ask it a lot."
 
 Her mom pulls out a chair and stands behind it, both hands on the back.
 
-"There's over a hundred children, and that's just this summer."
+"There's over a hundred children, and that's just this summer. She said they run it every year and they have never once not filled it."
 
 "And they're not from around here?"
 
@@ -144,7 +142,7 @@ A photograph of a field with goals on it gets a look, and a pool gets a question
 
 Then he finds the page about what a Tuesday looks like, hour by hour, doing all of the hours in the voice, including the hour that's just lunch.
 
-"This is a nice-looking place, kid."
+"This is a nice-looking place, kid. Look at the pool."
 
 Then he clicks the page with the teachers on it, where there is a photograph of each of them with a paragraph underneath about what that person did before they came here, and he stops doing the voice, reading a whole paragraph start to finish, then going back up to click another, and when Chloe asks him what, he tells her it's fine, then goes down the list in order, all the way to the bottom of it, before going back up to start again from the first, slower this time.
 
@@ -170,7 +168,7 @@ Her dad comes in for the coffee and stands behind her chair with a hand on the b
 
 "Is this the part you kept going back to?"
 
-"That's the part," her dad says. "All of them, top to bottom. Then I went and looked up the school, and the school has been open four years."
+Her dad drinks the coffee standing up behind her. "That's the part. All of them, top to bottom. Then I went and looked up the school, and the school has been open four years."
 
 Behind her the bills are clipped to the refrigerator in a stack thick enough to curl the top one over, and the letter upstairs says the month is free, and says it twice, in different ways.
 
@@ -202,9 +200,9 @@ On the ninth night Chloe is supposed to be asleep, having already been sent back
 
 "She's been flat since Christmas, and you've seen it, because she comes home and she says it was good."
 
-"Kids say it was good, which is a kid being polite rather than a kid hiding something."
+"Kids say it was good, which is a kid being polite rather than a kid hiding something. Ours has always been quiet. You were quiet."
 
-"Not like that, that's a kid gone quiet, and you know the difference as well as I do."
+"Not like that. That's a kid gone quiet, and you know the difference as well as I do. She used to come in the door talking."
 
 A minute goes by before her mom says something too quiet to make out from the top of the stairs, her dad says he knows, twice, and somebody starts the dishwasher, at which Chloe goes back up the rest of the stairs on her hands and knees, to keep the boards quiet, and gets into bed with her socks still on.
 
@@ -212,19 +210,19 @@ ________________
 
 She takes her books back on the Thursday before they go, and gets up on her toes at the desk.
 
-"I'm going away for a month, to a camp. So I wanted to ask something," Chloe says, with the argument already worked out. "I don't take any out the whole time I'm gone. That's four weeks of four. Can I have sixteen at the end?"
+Chloe has the argument already worked out. "I'm going away for a month, to a camp. So I wanted to ask something. I don't take any out the whole time I'm gone. That's four weeks of four. Can I have sixteen at the end?"
 
 The librarian puts the stamp down.
 
-"That's not how it works, honey, because it resets every time you come in, so it is still four however long you wait."
+"That's not how it works, honey, because it resets every time you come in, so it is still four however long you wait. It isn't a bank. You can't save them up."
 
 "But I'm not using them, and they'd just be sitting here."
 
 "They would, and it is still not how it works," the librarian says.
 
-"Okay, then can you hold one back for me? Then it doesn't go late," Chloe says, already moving to a different part of the argument.
+Chloe is already moving to a different part of the argument. "Okay, then can you hold one back for me? Then it doesn't go late."
 
-"One I can do, since that's a hold rather than a checkout, so it stays outside the four entirely."
+"One I can do, since that's a hold rather than a checkout, so it stays outside the four entirely. Pick it before you go."
 
 She walks the whole children's section twice and comes back with a book she has read before, because anything new would be gone by Tuesday and this one she can do again.
 

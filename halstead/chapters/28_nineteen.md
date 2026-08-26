@@ -12,7 +12,7 @@ A man from the loading dock asks her, her first week, how her weekend was, and m
 
 College runs alongside it. A standard load of credits in the autumn, picked for what sounds interesting rather than what a first-year is supposed to take, cost her a few hours a week once the reading is counted in. Most of it gets done on the bus, with a highlighter she loses twice and replaces before anyone asks. A political history course assigns a semester of reading on a single treaty negotiation whose original language she's already half-read for the blog. It takes her an afternoon rather than the fortnight she's been given, and the extra time goes on starting the reading for the following module early. In the spring she takes twenty-one credits and an evening seminar on top of them, mostly because the registrar told her she couldn't and then, asked which rule said so, came back off hold with an answer that only sounded like a rule.
 
-"There isn't anything written down," the registrar says. "It's more of a guideline we give first-years, so a heavy load waits until they've learned to pace a term."
+"There isn't anything written down," the registrar says. "It's more of a guideline we give first-years, so a heavy load waits until they've learned to pace a term. Most of them find that out in November and then we're doing withdrawals right through December."
 
 "Is a guideline the same as a rule, for the purpose of this form?"
 
@@ -36,9 +36,9 @@ She starts saying everything twice before she notices she's doing it.
 
 The first time it's a certification page. A client wants to know why a birth certificate translation costs more than a memo twice its length. "The certification's a signed statement that the translation is complete and accurate," Chloe says, plainly. "It's filed on its own, and it gets redone entirely if a single word in the document changes afterward. The price is set by the job as a whole, whether the document runs a single word or a whole manual." Deb's eyes go somewhere past her shoulder halfway through. "Okay, but what does that actually mean for what I tell him?"
 
-Chloe starts again. "It means if he wants his brother's certificate translated too, that's a second signature, not a second stapled copy." Deb writes that down, word for word, and reads it back to the client over the phone twenty minutes later.
+Chloe starts again. "It means if he wants his brother's certificate translated too, that's a second signature, not a second stapled copy. It's a second job with a second price on it." Deb writes that down, word for word, and reads it back to the client over the phone twenty minutes later.
 
-The second time it's a discount. A returning client's manual repeats sixty percent of its own sentences from the version they submitted in March, and the software prices the repeats lower the second time around. "It's match logic," Chloe says. "There are percentage bands built into the pricing, and a repeated sentence only counts as a repeat if it's identical, so it still counts as new the moment even a word inside it has changed." Deb stops her halfway through. "Okay, but in English, what does that actually mean for what I charge him?"
+The second time it's a discount. A returning client's manual repeats sixty percent of its own sentences from the version they submitted in March, and the software prices the repeats lower the second time around. "It's match logic," Chloe says. "There are percentage bands built into the pricing, and a repeated sentence only counts as a repeat if it's identical, so it still counts as new the moment even a word inside it has changed. A manual that reads the same to him can land in any of those bands." Deb stops her halfway through. "Okay, but in English, what does that actually mean for what I charge him?"
 
 "It's like Tyler's spelling test," Chloe says, the comparison out of her mouth before she's decided to use it. "If he already learned ninety of the hundred words last year, you don't pay someone full price to teach him the same ninety again. You pay for the ten he hasn't seen yet."
 
