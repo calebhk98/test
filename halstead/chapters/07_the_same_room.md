@@ -38,13 +38,13 @@ Chloe opens her mouth, then closes it, and goes upstairs to sit on the end of he
 
 "Kavi, then, you said Kavi a hundred times in that car, surely a last name turned up somewhere in there."
 
-"I never heard Kavi's either," she says, with her chin tucked down and the back of her wrist scrubbing across one eye, "and I know practically everything else there is to know about him."
+"I never heard Kavi's either," she says, with her chin tucked down and the back of her wrist scrubbing across one eye, "but I know practically everything else there is to know about him."
 
 Her mom's hand comes off the phone book and rests on top of Chloe's head for a second before it goes back to the page.
 
 "Priya, then, because you slept in a room with Priya for a whole month, Chloe, so you have to know something about her family."
 
-"I had no idea I would need it, and now there's no way left to find out," she says, and her mouth goes tight at the corners, the way it does right before she cries.
+"I had no idea I would need it, but now there's no way left to find out," she says, and her mouth goes tight at the corners, the way it does right before she cries.
 
 Her mom's eyes come up. "It's OK, the last names can go, because we can just ask the school instead," and she closes the phone book and gets the camp folder down off the shelf by the door.
 
@@ -94,7 +94,7 @@ Since the book has to go back, they go on Tuesday, and Chloe, who has had it out
 
 "Did it now, because that is something to be pleased with."
 
-"And I can divide fractions now," she says, having to stop and get a breath in before she can go on. "Not just do them, I know why it works, and I got that part on my own, on the floor of my room, at night, and it took me about an hour with the door shut."
+"And I can divide fractions now," she says, having to stop and get a breath in before she can go on. "Not just do them, but I know why it works, and I got that part on my own, on the floor of my room, at night, and it took me about an hour with the door shut."
 
 The librarian waits until she has actually run out, looking at her over the top of the card. "That's a real month, that is," she says, and puts the stamp down. "But it is still four at a time, like in June, and the new ones came in this morning and are still on the cart, so go on and pick something good."
 
@@ -110,7 +110,7 @@ Somebody asks whether you can swap groups, and Ms. Vance says no in a way that h
 
 The first math sheet comes around midmorning. She squints at it before she can tell that it's adding with carrying, which she learned last year and can still picture: the little box that you write the one in, and Mrs. Aldana drawing that box in green marker, thirty of them on the page.
 
-Fractions at camp, staying up until the number finally sat still on the page, and now this, math from last year again. Having done all thirty she goes back to the top and checks them all over. Every answer matches what she wrote the first time, so she puts her hands in her lap and waits for the room to catch up around her. She is relieved to find it still works like it worked in first grade.
+Fractions at camp, staying up until the number finally sat still on the page, but now this, math from last year again. Having done all thirty she goes back to the top and checks them all over. Every answer matches what she wrote the first time, so she puts her hands in her lap and waits for the room to catch up around her. She is relieved to find it still works like it worked in first grade.
 
 ________________
 
@@ -130,7 +130,7 @@ Chloe is already leaning over her own paper with the pencil going before anybody
 
 Kayleigh Burns has turned around in her chair to say it: "Why do you talk like that? It's like you're reading it off a card or something."
 
-"You were weird before, and now you're weirder than that even," Bryce says, with interest, the way you would tell somebody their shoe was untied.
+"You were weird before, but now you're weirder than that even," Bryce says, with interest, the way you would tell somebody their shoe was untied.
 
 Chloe's hand comes down over what she has already written, the whole page gone under her palm.
 
@@ -138,7 +138,7 @@ Chloe's hand comes down over what she has already written, the whole page gone u
 
 "Yeah," Bryce says, and turns back around.
 
-Her hand stays where it is for the rest of the period. When Ms. Vance calls time she scratches out the lines underneath it until the pencil almost goes through the paper, then, while Ms. Vance is over at the cabinet with the tape and looking up for none of it, writes I hope you like fifth grade instead, folds it in half twice, and puts it in the box.
+Her hand stays where it is for the rest of the period. But when Ms. Vance calls time she scratches out the lines underneath it until the pencil almost goes through the paper, then, while Ms. Vance is over at the cabinet with the tape and looking up for none of it, writes I hope you like fifth grade instead, folds it in half twice, and puts it in the box.
 
 ________________
 
@@ -184,7 +184,7 @@ Her mom starts on the school in the last week of September.
 
 Coming down for water, Chloe gets the end of a call, and the sentence she arrives on has two pleases in it. Her mom is at the counter with one hand flat on it, and Chloe stops in the doorway with the glass still empty.
 
-"Third grade, okay, so third grade is the floor, whatever the testing comes out at," she says, and listens, the pen tapping twice against the counter. "No, I know what the policy is, you've told me what the policy is, and what I'm asking is whether anybody has ever made an exception to it, for any reason, in any year."
+"Third grade, okay, so third grade is the floor, whatever the testing comes out at," she says, and listens, the pen tapping twice against the counter. "No, I know what the policy is, you've told me what the policy is, but what I'm asking is whether anybody has ever made an exception to it, for any reason, in any year."
 
 Whatever comes back takes a long time.
 

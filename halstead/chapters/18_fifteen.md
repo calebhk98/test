@@ -12,7 +12,7 @@ Voss lets them look at it for a while, and when he does start he starts with the
 
 Aymar asks why, out loud, in the tone of somebody asking on behalf of ninety people.
 
-"Because a gun you can only point at a man is a weapon," Voss says, "and a gun you can put a bullet onto a bullet with is a tool. You have had a year of the first. This year you get the second."
+"Because a gun you can only point at a man is a weapon," Voss says, "but a gun you can put a bullet onto a bullet with is a tool. You have had a year of the first. This year you get the second."
 
 Voss delivers it like a thing he has said a thousand times to a thousand students, and it is round the year by Thursday and back at Chloe's own table twice before the end of the month, quoted with the settled confidence of something printed in a manual. In November, weeks into a run of cards that all read zero, she goes looking for where it comes from, first in the library and then in the range office, and the oldest instructor on the staff tells her that the first time he heard it was from Voss.
 
@@ -30,17 +30,17 @@ On a Wednesday in mid-February she shoots a series and scores sixty-one, then sh
 
 "One more, I've nearly got it, I can feel it."
 
-"Off the point, Kessler." His hand stays where it is. "You have shot the same number four different ways in ninety minutes, and that's not going to change tonight. Go and have your dinner."
+"Off the point, Kessler." His hand stays where it is. "You have shot the same number four different ways in ninety minutes, but that's not going to change tonight. Go and have your dinner."
 
 At dinner she clears the plate, but it could have been anything on it.
 
-She tries the old things in turn: the count goes on her leg walking down to the range, the way it did on the archery field, and the number comes out unchanged on the Friday. She holds her breath at different places in the cycle, and gets dizzy for her trouble. By the second week of March she has weeks of cards fanned out across the floor of her room. A pattern turns up on the Tuesday and she spends days on it before it turns out to be the wind through the open end of the lane, after which she bends the corner of that card back and forth until it comes off in her fingers.
+She tries the old things in turn: the count goes on her leg walking down to the range, the way it did on the archery field, but the number comes out unchanged on the Friday. She holds her breath at different places in the cycle, and gets dizzy for her trouble. By the second week of March she has weeks of cards fanned out across the floor of her room. A pattern turns up on the Tuesday and she spends days on it before it turns out to be the wind through the open end of the lane, after which she bends the corner of that card back and forth until it comes off in her fingers.
 
 Later that month she asks the office for every range card in the year, and a woman hands her a box of ninety with no lock on it, off a shelf with the year below's box sitting beside it, unlocked as well.
 
 The cards are out on the long table at dinner with her plate pushed up against the salt.
 
-"You're looking for people who stopped where you stopped," Nadia says, going past behind her with a tray, "so you can find out whether it comes back." She sits down at the far end and gets on with her food.
+Nadia goes past behind her with a tray. "You're looking for people who stopped where you stopped, so you can find out whether it comes back." She sits down at the far end and gets on with her food.
 
 "What are the cards?" Sam says.
 
@@ -48,7 +48,7 @@ It takes her evenings, and what comes out of it is eleven people who have stoppe
 
 Voss reads it standing in the doorway of the range office.
 
-"That's every card in the year," Chloe says, with a shoulder against the doorframe, "and a group of us stopped inside the same narrow band regardless of where we started."
+Chloe says, with a shoulder against the doorframe, "That's every card in the year, and a group of us stopped inside the same narrow band regardless of where we started."
 
 "It's a real thing, and you're far from the first person to find it."
 
@@ -66,11 +66,11 @@ Ruth comes down on a Saturday in April with a clipboard and a bag of the toffees
 
 "I know my count's clean, that's a different question from the one I asked you."
 
-"No, I mean I timed the whole session, and your release is tighter than mine by about a hundredth, and I'm on ninety-one," Ruth says, turning the clipboard round and holding it up. "Whatever's costing you, it's somewhere else, outside anything I can see from behind you."
+Ruth turns the clipboard round and holds it up. "No, I mean I timed the whole session, and your release is tighter than mine by about a hundredth, and I'm on ninety-one. Whatever's costing you, it's somewhere else, outside anything I can see from behind you."
 
 "Where, though, since there's nowhere else I can even think to look?"
 
-"If I knew that I'd have told you hours ago," Ruth says, putting the clipboard face down on the bench and holding the bag out. "Have a toffee, it helps me think."
+Ruth puts the clipboard face down on the bench and holds the bag out. "If I knew that I'd have told you hours ago. Have a toffee, it helps me think."
 
 At dinner that week Sam says it to his plate. "You're on sixty, everybody's talking about it at breakfast."
 
@@ -88,7 +88,7 @@ Self defence is still ten of them on one with a minute on the clock, and her ave
 
 "First one's always short, it recovers by the third," Kavi says, still standing at the line.
 
-Forty comes on the second and thirty-nine on the third, and afterward she stands at the edge of the mat with her wraps still on, going through it again with her thumb working at the tape. Odile asks her something on the way out and she answers it badly, so she finds her at dinner to say it properly. Odile is up seven on last year and Sam is up four, which she works out on the walk back, and boys who used to come off the mat behind her are ahead of her now, one of whom she has beaten every year since they were ten.
+Forty comes on the second and thirty-nine on the third, and afterward she stands at the edge of the mat with her wraps still on, going through it again with her thumb working at the tape. Odile asks her something on the way out and she answers it badly, so she finds her at dinner to say it properly. Odile is up seven on last year and Sam is up four, which she works out on the walk back, but boys who used to come off the mat behind her are ahead of her now, one of whom she has beaten every year since they were ten.
 
 On a Friday she catches Kowalczyk about it at the door of the mat room, with the next group already coming past both of them.
 
@@ -96,11 +96,11 @@ On a Friday she catches Kowalczyk about it at the door of the mat room, with the
 
 "That's it? That's all you've got for me?"
 
-"When you were ten you were fighting children who had yet to be hit by anybody, so lasting in that was like taking candy from a baby," Kowalczyk says, up on her toes to put a box of wraps on a high shelf and staying there while she talks. "Now you're fighting people who have been doing this for years. You're getting better and they're coming up off a standing start, which is the first actual challenge you've had. It'll happen to you again at eighteen, when the boys finish growing."
+Kowalczyk is up on her toes to put a box of wraps on a high shelf, and stays there while she talks. "When you were ten you were fighting children who had yet to be hit by anybody, so lasting in that was like taking candy from a baby. Now you're fighting people who have been doing this for years. You're getting better and they're coming up off a standing start, which is the first actual challenge you've had. It'll happen to you again at eighteen, when the boys finish growing."
 
 "That's still not an answer, so what am I supposed to do?"
 
-"It's the only one there is, you just have to learn faster than they do," she says, coming down off her toes and pushing the door the rest of the way open with her foot. "In you go, you're holding up the twelves."
+She comes down off her toes and pushes the door the rest of the way open with her foot. "It's the only one there is, you just have to learn faster than they do. In you go, you're holding up the twelves."
 
 Odile goes into the middle on the second Thursday in March, and by half a minute there are thirty people watching and somebody has propped the door open so the corridor can see in. Chloe is at the edge of the mat calling the count with a dozen others. At a minute the room makes a noise she can feel through the floor, and Odile holds another seven seconds and comes down on her hands and knees. Chloe is the second to reach her, and Odile's breath comes short and ragged against the mat with her arms shaking, so Chloe stays down beside her for the rest of the hour with the damp coming through her shirt.
 
@@ -108,13 +108,13 @@ On each of the next Thursdays she sits on that mat after the room empties, runni
 
 ________________
 
-"You are going to lose money in your life, everybody does," Hark says, putting the last envelope down. "You can lose that much this year, with somebody standing over you who will make you write down what happened, or you can lose a great deal more of it later on your own."
+Hark puts the last envelope down. "You are going to lose money in your life, everybody does. You can lose that much this year, with somebody standing over you who will make you write down what happened, or you can lose a great deal more of it later on your own."
 
 The envelopes go out in October with two hundred dollars in each, to be spent on anything legal for a year, and whatever is left in June they keep.
 
 Rustem buys a dozen dead motors at a farm auction for a few dollars apiece, several of which are turning over by Christmas, and in January he sits down across from Chloe at dinner and pushes a page of figures at her before she has finished eating, wanting the lot. Reading it twice, she checks his sale prices against what he got for those, then offers him a hundred and twenty at eight percent with the motors as collateral. He argues about the rate for twenty minutes and loses. Then he tells her she has to see the barn first, so she goes on the Saturday and finds nearly sixty motors in it, a third of them past helping, and leaves her offer exactly where it was.
 
-Forty goes to a girl called Fen at ten percent against a table saw, and the last thirty to Priya at twelve, unsecured, because it is Priya. They all pay her back, and she finishes the year with two hundred and seventeen dollars to Rustem's nine hundred and forty.
+Forty goes to a girl called Fen at ten percent against a table saw, and the last thirty to Priya at twelve, unsecured, because it is Priya. They all pay her back, but she finishes the year with two hundred and seventeen dollars to Rustem's nine hundred and forty.
 
 Iyad starts a list of it in October without anybody asking him to, everybody in the year and what they are doing with theirs. By June he is going round the tables collecting the figures by name and in order and reading back what he has so far to whoever is sitting there. Chloe gives him seventeen. Rustem's number is a couple of lines above hers on the page. Iyad reads the page out at the long table in the week Hark has the ledger up on the board, top to bottom, in order, and gets to hers in the middle of the pudding and says it in the voice he said Rustem's in. Sam asks him what his own came to. He tells him that as well.
 
@@ -122,13 +122,13 @@ Hark has her at the board in April with the ledger written up, and reads the col
 
 "You bought a piece of somebody else's ceiling, whether you meant to or not."
 
-"He had two hundred dollars and a barn with sixty motors in it, and he was capped and I wasn't," Chloe says, capping the pen and holding on to it. "Knowing what a bad bearing sounds like is his job. Mine is knowing whether he knows, and he already had motors turning over."
+Chloe caps the pen and holds on to it. "He had two hundred dollars and a barn with sixty motors in it, and he was capped and I wasn't. Knowing what a bad bearing sounds like is his job. Mine is knowing whether he knows, and he already had motors turning over."
 
 "You had the right numbers and the wrong answer, so how much of it could you have lost?"
 
 "A hundred and twenty."
 
-"A hundred and twenty dollars, over the whole year," Hark says, coming across the room and stopping at the front row. "Rustem burned five motors and spent every Saturday since October learning what he can hear from the far side of a barn. Priya is down eighty and can tell you which paragraph she read wrong. You are up seventeen dollars, eight percent, and you are barely beating inflation."
+Hark comes across the room and stops at the front row. "A hundred and twenty dollars, over the whole year. Rustem burned five motors and spent every Saturday since October learning what he can hear from the far side of a barn. Priya is down eighty and can tell you which paragraph she read wrong. You are up seventeen dollars, eight percent, and you are barely beating inflation."
 
 Chloe wipes the board and sits down.
 
@@ -144,11 +144,11 @@ Her name lands on an internal research paper in March, well down the author list
 
 Dr. Sandoval catches her in the corridor outside the laboratory in April, after a session.
 
-"The work you have been doing since January." She has a folder under her arm and stops walking to say it. "I need to ask you for something, and I would like you to understand while I am asking that it is a request and not an instruction."
+She has a folder under her arm and stops walking to say it. "The work you have been doing since January. I need to ask you for something, and I would like you to understand while I am asking that it is a request and not an instruction."
 
 Chloe sets her bag against the wall. "All right, shoot, whatever it is you need to ask."
 
-"There is a non-disclosure agreement on that project. Four people have signed it, and one of them is me, while your name is on none of it, and I would refuse to put a federal agreement in front of a fifteen-year-old, because asking you to sign would be wrong and would fail in court besides," she says, shifting the folder to her other arm. "But your work feeds ours, so if you talk about it at home, or on a telephone, or at a table with a dozen people round it, you walk away untouched and the consequences land on us instead."
+She shifts the folder to her other arm. "There is a non-disclosure agreement on that project. Four people have signed it, and one of them is me, while your name is on none of it, and I would refuse to put a federal agreement in front of a fifteen-year-old, because asking you to sign would be wrong and would fail in court besides. But your work feeds ours, so if you talk about it at home, or on a telephone, or at a table with a dozen people round it, you walk away untouched and the consequences land on us instead."
 
 "So you're asking me to keep quiet about it, when there's no rule anywhere that obliges me to."
 
@@ -166,7 +166,7 @@ Kavi does the work over a few evenings, and what he comes back with keeps every 
 
 "Then the drawer's got the login, and the login is the whole thing all over again, only in a smaller box."
 
-"Which is exactly why the login stopped being the whole thing, and that's the second half of what I did," Kavi says, with the handset face up on the table and the screen dark, tapping the back of it. "It wants the password, and then it wants a number off a card, and the card lives somewhere a long way from the pocket the phone lives in. Take the phone, get the password out of whoever you took it from, and you are standing in a corridor holding a piece of glass."
+Kavi has the handset face up on the table and the screen dark, and taps the back of it. "Which is exactly why the login stopped being the whole thing, and that's the second half of what I did. It wants the password, and then it wants a number off a card, and the card lives somewhere a long way from the pocket the phone lives in. Take the phone, get the password out of whoever you took it from, and you are standing in a corridor holding a piece of glass."
 
 Ruth cuts a card for each of them that week, small enough to go behind the photograph in a wallet or under the insole of a boot. Sam loses his in April: the failure all of them predicted out loud and built for anyway. A few minutes with Kavi at a terminal puts him back inside. Chloe carries hers behind her range card for the rest of her time in the building, and she checks that it is there about once a week, on her way past something else.
 
@@ -176,7 +176,7 @@ Her father comes out of the house on the second Sunday of the summer with the ca
 
 Chloe looks at the door. "But they teach driving at school next year, so this is a job somebody else is already down to do."
 
-"Cool, I bet they teach driving at school next year," he says, opening his own door. "I'm teaching my daughter to drive anyway, that one's mine, other side."
+He opens his own door. "Cool, I bet they teach driving at school next year. I'm teaching my daughter to drive anyway, that one's mine, other side."
 
 Her father takes her to the church lot behind the tire place, empty on a Sunday, with a row of light poles to go round. She stalls it over and over in the first half hour and twice in the second.
 
@@ -188,9 +188,9 @@ By the third Sunday she is out on the road past the reservoir with him in the pa
 
 "You said look ahead."
 
-"I said look ahead, not Tennessee," he says, pointing with the cup. "That truck, what's he doing?"
+He points with the cup. "I said look ahead, not Tennessee. That truck, what's he doing?"
 
-"Coming out." Her hands are at ten and two where he put them in the first week, and her knuckles have gone white on the wheel. "His wheels are turned and he's crept forward twice, and he's looking left, so we're still invisible to him."
+Her hands are at ten and two where he put them in the first week, and her knuckles have gone white on the wheel. "Coming out. His wheels are turned and he's crept forward twice, and he's looking left, so we're still invisible to him."
 
 Her father drinks some of the coffee and tells her to carry on.
 
