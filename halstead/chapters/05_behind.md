@@ -50,7 +50,7 @@ On the Tuesday a bucket hangs from the middle of each bridge and the weights go 
 
 Across the room Ruth's takes nineteen pounds and does snap, in the middle of the diagonal, which half the room makes a noise about.
 
-"I told you. Triangles hold and squares fold, and what you built was a square," Ruth says, to the room rather than to anyone in it.
+"I told you." Ruth says it to the room rather than to anyone in it. "Triangles hold and squares fold, and what you built was a square."
 
 "Ruth," Sam says.
 
@@ -134,7 +134,9 @@ His door is standing open and the bed inside it is stripped to the plastic. That
 
 "He went home, his mom came and got him yesterday, before dinner," Sam says from the doorway, already moving through it.
 
-"Why? Why would anybody leave in the middle of it?"
+"Why?"
+
+Sam is most of the way to his bed before she gets the rest of it out. "Why would anybody leave in the middle of it?"
 
 "He wasn't having fun, and that's the whole reason, they'll let you go home for that."
 
@@ -184,7 +186,7 @@ ________________
 
 "That's just being stuck, then, not lying," Sam says.
 
-"It's not stuck. Stuck is when you can't move. It's moving the whole time, all the way around us. And it's turning while it moves, at exactly the speed that keeps that side pointed here," Chloe says, with the roll still in her hand, uneaten.
+"It's not stuck." Chloe still has the roll in her hand, uneaten. "Stuck is when you can't move. It's moving the whole time, all the way around us. And it's turning while it moves, at exactly the speed that keeps that side pointed here," she says.
 
 "So it's stuck, whatever you want to call it."
 
@@ -196,7 +198,7 @@ ________________
 
 "But I'd say you were doing it on purpose regardless, on purpose the whole time."
 
-"The worst. You do this every single time," Kavi says, to Sam, about Sam.
+"The worst." Kavi says it to Sam, about Sam. "You do this every single time."
 
 Ruth has stopped eating for this. "The word is tidally locked. It isn't stuck and it isn't on purpose either. It got slowed down until it matched. It used to spin. Then it stopped spinning, over a really long time, because of us."
 

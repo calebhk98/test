@@ -16,7 +16,7 @@ ________________
 
 In August her mom is standing at the counter sorting through the mail, while Chloe comes in and stands at the end of the counter, waiting until there is a gap in it.
 
-"Can you call Sam? I want to tell him something before I forget it," Chloe says, already talking before she has finished crossing the kitchen.
+"Can you call Sam?" Chloe is already talking before she has finished crossing the kitchen. "I want to tell him something before I forget it."
 
 "Who's Sam, honey, because that name is new to me?"
 
@@ -24,7 +24,7 @@ In August her mom is standing at the counter sorting through the mail, while Chl
 
 "Oh, of course we can call him, honey, that's no trouble at all. What's his number," her mom says, putting the envelope down and looking pleased about it in a way that puzzles Chloe.
 
-Chloe's mouth opens, then stays open a beat too long. "A number was extra. I always just asked him myself, in person."
+Chloe's mouth opens, then stays open a beat too long. "A number was extra." Her mom is still waiting for it. "I always just asked him myself, in person."
 
 "That's all right, we can look him up, because everybody is in the book. What's his last name, sweetie, since that will get us there faster than the first name will," her mom says, getting the phone book out from under the microwave and opening it on the counter while she looks at Chloe.
 
@@ -88,9 +88,9 @@ ________________
 
 Since the book has to go back, they go on Tuesday, and Chloe, who has had it out for weeks, carries it in with both hands, hugged against her chest instead of held out to hand over.
 
-"There she is. It's been five weeks, not four, so did you get through it at least twice, to make it worth the wait," the librarian says, taking it and tsking as she turns the date card over.
+"There she is." The librarian takes it and tsks, turning the date card over. "It's been five weeks, not four, so did you get through it at least twice, to make it worth the wait."
 
-"Twice. I'd have gone for a third, only there wasn't any time left in the month," she says, already talking before the card is all the way turned, up on her toes at the desk with her chin nearly over the top of it. "There was less time than I thought. There's a plastic man called Gary and you do CPR on him. Push in the right place hard enough and he clicks. I got the click on the fourth try. And we built a bridge out of dowels and string and hung a bucket off the middle of it and put weights in a pound at a time until it broke, and ours went at the corner, right at the corner. It was the only corner that did."
+"Twice." Chloe is already talking before the card is all the way turned, up on her toes at the desk with her chin nearly over the top of it. "I'd have gone for a third, only there wasn't any time left in the month," she says. "There was less time than I thought. There's a plastic man called Gary and you do CPR on him. Push in the right place hard enough and he clicks. I got the click on the fourth try. And we built a bridge out of dowels and string and hung a bucket off the middle of it and put weights in a pound at a time until it broke, and ours went at the corner, right at the corner. It was the only corner that did."
 
 "Did it now, because that is something to be pleased with."
 
@@ -170,9 +170,11 @@ At breakfast she asks, standing at the end of the table instead of sitting down 
 
 "Chloe."
 
-"But when, though? You keep saying you're thinking about it. It's already been the whole summer. When are you actually done thinking?"
+"But when, though?"
 
 Chloe is standing in the doorway in her pajamas, one foot on top of the other.
+
+"You keep saying you're thinking about it. It's already been the whole summer. When are you actually done thinking?"
 
 "Go to bed."
 

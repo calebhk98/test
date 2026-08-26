@@ -18,7 +18,7 @@ The woman at H through M finds Kessler on her page straightaway and hands over a
 
 "Somebody's organized," Chloe's dad says.
 
-"We try. Chairs are through the double doors, we start on the hour, and there's a map in there," the woman says, already reaching past him for the next folder in the box.
+"We try." The woman is already reaching past him for the next folder in the box. "Chairs are through the double doors, we start on the hour, and there's a map in there."
 
 The orientation is in a room with folding chairs and a woman with a clipboard who goes through it fast, because there is another later for the families still driving.
 
@@ -234,13 +234,13 @@ ________________
 
 On the second Tuesday, Mr. Doyle says something about weight while he is drawing on the board, and Ruth's hand goes up, though she starts talking before it is noticed.
 
-"That's mass. Weight is the pull on it. Take it to the moon and the weight goes down. The mass stays exactly what it was."
+"That's mass." Ruth's hand is still up, though nobody has called on it. "Weight is the pull on it. Take it to the moon and the weight goes down. The mass stays exactly what it was."
 
 Mr. Doyle stops with the marker still up at the board to look at what he has written, then wipes one word out with the side of his hand, writing the other into the gap it leaves.
 
 "Mass, and thank you for catching that," he says, then keeps going.
 
-"I told you. I said that on Friday, I said it on Friday," Ruth says, to the room.
+"I told you." Ruth says it to the room. "I said that on Friday, I said it on Friday."
 
 "Ruth," Sam says, from along the row, eyes on the board.
 

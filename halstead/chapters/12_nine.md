@@ -8,7 +8,7 @@ On the first morning the sheet in her box has one more line on it than last year
 
 The woman goes back to the form in front of her. "Nine-year-olds get eight, that's just how the sheet works this year, and you were on seven, so it's one more than you're used to. It goes up every single year, because that is supposed to be the whole idea of a school, so is there a problem with it?"
 
-"No, I wanted to know whether somebody had put it on there by mistake."
+"No." Chloe stays at the counter. "I wanted to know whether somebody had put it on there by mistake."
 
 "It's what the year gets rather than a mistake, and biology starts Tuesday whether you're ready for it or not."
 
@@ -20,7 +20,11 @@ Her new ones are chemistry, statistics and biology, and Ruth has them in a diffe
 
 Kavi turns the sheet over and puts a finger on the back of it. "Then it should say that on the top of it, because what it says is preferences. The second is that two of them are running in this building this year. Programming is on every ten-year-old's sheet and astronomy is on the elevens', so both of them have a teacher and an hour and a room, and the thing that stopped me is my age, which they had written down before they handed me anything to fill in."
 
-Sam has stopped with the spoon halfway up. "Is there a third, or can I go."
+Sam has stopped with the spoon halfway up. "Is there a third?"
+
+"There's a third," Kavi says.
+
+"Or can I go."
 
 "The third is cryptography, and cryptography happens at thirteen, which was already true in October when I asked for it. They kept the request the better part of a year and gave me back a date that was fixed before I wrote it down. That's all three of them," he says, squaring the sheet against the edge of the table.
 
@@ -132,7 +136,7 @@ Block two is hers, and she takes riding, because Priya takes riding.
 
 The stables are a walk past the north field, cinder path most of the way and mud from the gate on. You get the smell of the place a good while before you get the roof of it. Priya talks the whole way there and the whole way back, about horses first and then about everything, so that inside a fortnight Chloe can call every horse in the place by name and point out which two of them bite.
 
-"That's Cricket, she's fine, as long as you stand where she can see you."
+"That's Cricket." Priya doesn't slow down. "She's fine, as long as you stand where she can see you."
 
 "Where is it, exactly, that she can't see me, I want to know the actual blind spot."
 
@@ -142,7 +146,11 @@ Chloe can sit a canter by February, and she can get a horse over a low fence by 
 
 "You quit riding, and I had to hear about it from Anne instead of you," Priya says at dinner, two days later.
 
-"Yeah, and I should have told you instead of just not showing up on the Thursday, because I know that's the worse way to do it."
+"Yeah."
+
+Priya waits, her fork still in her hand.
+
+"I should have told you instead of just not showing up on the Thursday, because I know that's the worse way to do it."
 
 "Why, though, what happened out there? Anne asked me on Tuesday where you'd gone, and all I had for her was a shrug."
 
@@ -150,7 +158,7 @@ Chloe can sit a canter by February, and she can get a horse over a low fence by 
 
 Priya looks at her over the top of her glass. "It's fun for me, though, even the boring parts, even the parts you clearly can't stand."
 
-"I know, and that's the bit I kept waiting for the whole time, for it to turn into that for me too," Chloe says.
+"I know." Chloe looks at her own plate. "That's the bit I kept waiting for the whole time, for it to turn into that for me too," she says.
 
 ________________
 
@@ -170,7 +178,7 @@ Chloe loses the first few games, because she keeps counting the same card twice,
 
 In the third week, her father is at the table with a stack of paper and a pen.
 
-"What's that, is that the contract you were complaining about last week?"
+"What's that?" Chloe leans over his shoulder. "Is that the contract you were complaining about last week?"
 
 Her father turns a page. "A proposal from a vendor. They want six weeks and forty thousand dollars. It's very well written, which is what's bothering me."
 

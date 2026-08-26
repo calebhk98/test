@@ -28,7 +28,7 @@ On a Wednesday in mid-February she shoots a series and scores sixty-one, then sh
 
 "Off the point."
 
-"One more, I've nearly got it, I can feel it."
+"One more," Chloe says. "I've nearly got it, I can feel it."
 
 "Off the point, Kessler." His hand stays where it is. "You have shot the same number four different ways in ninety minutes, but that's not going to change tonight. Go and have your dinner."
 
@@ -56,15 +56,15 @@ Chloe says, with a shoulder against the doorframe, "That's every card in the yea
 
 Voss taps the pages straight against the desk and hands them back to her.
 
-"Point six, Kessler. Your block started without you."
+"Point six, Kessler," Voss says. "Your block started without you."
 
 Chloe goes, running the numbers again the whole way down. The box goes back on the shelf that evening, square on top of the year below's, and she leaves both of them where they are.
 
 Ruth comes down on a Saturday in April with a clipboard and a bag of the toffees Priya's mother sends, and sits behind her for the afternoon because Chloe asked her to.
 
-"Your count's clean, I checked it twice against the clock."
+"Your count's clean," Ruth says. "I checked it twice against the clock."
 
-"I know my count's clean, that's a different question from the one I asked you."
+"I know," Chloe says. "My count's clean. That's a different question from the one I asked you."
 
 Ruth turns the clipboard round and holds it up. "No, I mean I timed the whole session, and your release is tighter than mine by about a hundredth, and I'm on ninety-one. Whatever's costing you, it's somewhere else, outside anything I can see from behind you."
 
@@ -72,11 +72,11 @@ Ruth turns the clipboard round and holds it up. "No, I mean I timed the whole se
 
 Ruth puts the clipboard face down on the bench and holds the bag out. "If I knew that I'd have told you hours ago. Have a toffee, it helps me think."
 
-At dinner that week Sam says it to his plate. "You're on sixty, everybody's talking about it at breakfast."
+At dinner that week Sam says it to his plate. "You're on sixty," he says. "Everybody's talking about it at breakfast."
 
-"I know I'm on sixty, so what's your actual point?" Chloe's plate sits full in front of her.
+"I know," Chloe says. "I'm on sixty. What's your actual point?" Her plate sits full in front of her.
 
-"I'm on forty, and I sleep fine on it," he says, getting through most of a potato.
+"I'm on forty," he says, getting through most of a potato. "I sleep fine on it."
 
 "How, though, when you're just completely fine with all of it?"
 
@@ -86,7 +86,7 @@ ________________
 
 Self defence is still ten of them on one with a minute on the clock, and her average that year is forty-one seconds against forty-five the year before. The bad session is a Tuesday in November, first round, and she comes out of the middle at thirty-eight, on her feet before they call it and holding the number already.
 
-"First one's always short, it recovers by the third," Kavi says, still standing at the line.
+"First one's always short," Kavi says, still standing at the line. "It recovers by the third."
 
 Forty comes on the second and thirty-nine on the third, and afterward she stands at the edge of the mat with her wraps still on, going through it again with her thumb working at the tape. Odile asks her something on the way out and she answers it badly, so she finds her at dinner to say it properly. Odile is up seven on last year and Sam is up four, which she works out on the walk back, but boys who used to come off the mat behind her are ahead of her now, one of whom she has beaten every year since they were ten.
 
@@ -94,11 +94,11 @@ On a Friday she catches Kowalczyk about it at the door of the mat room, with the
 
 "Yeah, that's about the size of it," Kowalczyk says.
 
-"That's it? That's all you've got for me?"
+"That's it?" Chloe says. "That's all you've got for me?"
 
 Kowalczyk is up on her toes to put a box of wraps on a high shelf, and stays there while she talks. "When you were ten you were fighting children who had yet to be hit by anybody, so lasting in that was like taking candy from a baby. Now you're fighting people who have been doing this for years. You're getting better and they're coming up off a standing start, which is the first actual challenge you've had. It'll happen to you again at eighteen, when the boys finish growing."
 
-"That's still not an answer, so what am I supposed to do?"
+"Not an answer," Chloe says. "So what am I supposed to do?"
 
 Down off her toes, she pushes the door the rest of the way open with her foot. "It's the only one there is, you just have to learn faster than they do. In you go, you're holding up the twelves."
 
@@ -108,7 +108,7 @@ On each of the next Thursdays she sits on that mat after the room empties, runni
 
 ________________
 
-Hark puts the last envelope down. "You are going to lose money in your life, everybody does. You can lose that much this year, with somebody standing over you who will make you write down what happened, or you can lose a great deal more of it later on your own."
+Hark puts the last envelope down. "You are going to lose money in your life." He waits, both hands flat on the desk. "Everybody does. You can lose that much this year, with somebody standing over you who will make you write down what happened, or you can lose a great deal more of it later on your own."
 
 The envelopes go out in October with two hundred dollars in each, to be spent on anything legal for a year, and whatever is left in June they keep.
 
@@ -176,7 +176,7 @@ Her father comes out of the house on the second Sunday of the summer with the ca
 
 Chloe looks at the door. "But they teach driving at school next year, so this is a job somebody else is already down to do."
 
-He opens his own door. "Cool, I bet they teach driving at school next year. I'm teaching my daughter to drive anyway, that one's mine, other side."
+"Cool." He opens his own door. "I bet they teach driving at school next year. I'm teaching my daughter to drive anyway, that one's mine, other side."
 
 Her father takes her to the church lot behind the tire place, empty on a Sunday, with a row of light poles to go round. She stalls it over and over in the first half hour and twice in the second.
 
@@ -202,7 +202,7 @@ Her grandmother runs a thumb over all of it, taking her time, while the conversa
 
 "And what did this one to you, then?"
 
-"It's from school, and it's nearly gone. I made a mistake in class, and it looked worse than it was."
+"It's from school," Chloe says. "It's nearly gone. I made a mistake in class, and it looked worse than it was."
 
 Her grandmother turns the hand over once more, puts it down on the tablecloth, and pats it twice.
 

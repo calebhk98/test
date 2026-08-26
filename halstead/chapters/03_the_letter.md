@@ -24,9 +24,13 @@ Chloe puts the letter down on the table next to the salad bowl, face up, turned 
 
 Her mom reads it, then reads it again, her eyes going back to one spot on the page, staying there longer, before she reads it a third time and hands it across the table with her eyes still on the page.
 
-"Did you see this? I have no memory of applying to anything of the kind, and I would remember."
+"Did you see this?" Her mom's eyes are still on the page. "I have no memory of applying to anything of the kind, and I would remember."
 
-Her dad takes it and reads it in his free hand, still eating, then puts the fork down to hold it with both. "See what. No. This is the first I've heard of it, and I've been sitting here the whole time you have."
+Her dad takes it and reads it in his free hand, still eating.
+
+"See what."
+
+He puts the fork down to hold it with both. "No. This is the first I've heard of it, and I've been sitting here the whole time you have."
 
 "So how do they have her name, when I keep it off every form I am handed, school, program, all of it. I have been doing that since preschool."
 
@@ -34,7 +38,7 @@ Her dad takes it and reads it in his free hand, still eating, then puts the fork
 
 "Ask them, there's a number right there at the bottom, so let's call it instead of guessing at the table. I'm not sitting here doing this all night."
 
-"I'm asking you, and you've had it about as long as I have."
+"I'm asking you." Her mom's hand is flat on the table now. "You've had it about as long as I have."
 
 "Meg, I've had it for ninety seconds, same as you, so you know exactly as much as I do right now."
 

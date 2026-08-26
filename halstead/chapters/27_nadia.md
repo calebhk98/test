@@ -112,7 +112,7 @@ But she stays where she is. The man in the doorway comes off the frame, walks ar
 
 "Does your father know where you are this afternoon?"
 
-"No, I told my parents I would be back before dinner."
+"No." Nadia keeps her eyes on the desk. "I told my parents I would be back before dinner."
 
 The man behind the desk sits back in the chair for the first time since she came through the door. The man with the coffee has his phone up by then. The first photograph is of her, from where he stands. Then he crosses to the window, photographs the car in the lot below, and reads her registration out loud, every character of it, slowly, and then again.
 

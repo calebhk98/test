@@ -56,7 +56,7 @@ Ruth stops with her tray up on an arm. "Because it's already in everything. It's
 
 "That's the entire reason I took it, though."
 
-"That is what I said, and it's still cheating."
+"That is what I said," Ruth says. "It's still cheating."
 
 Chloe holds her tray like somebody who intends to keep it. "It's the opposite of cheating, it's the year paying for itself twice. I've got German coming, Italian's on the list, and half the words in a legal document are Latin sitting in the middle of an English sentence, so one year now gets me bits of all of them free."
 
@@ -88,9 +88,9 @@ Chloe says it to Kavi at dinner. "I can't make that work. It's a picture, the sa
 
 Both elbows land on the table. "I took the inflation out, but it's still six times what it was. And if I painted that, right now, every brush stroke matched, it's worth thirty pounds, whereas he painted it and it's worth a house, so the number is measuring something other than the picture, and every adult in that room changed the subject when I asked what."
 
-"Ask her again, properly this time."
+"Ask her again," Kavi says. "Properly this time."
 
-"I did ask her, but she told me it was a good question for a different course."
+"I did ask her," Chloe says. "She told me it was a good question for a different course."
 
 Block two is wood shop and the pieces have got bigger, so she spends the autumn on a chair that has to take an adult sitting down hard and the spring on a second for somebody else, going in on Sundays too, though the odd Saturday the man opens it is better. In March he demonstrates a Japanese corner joint to the class that holds without a nail or a screw or any glue, and Chloe cuts it a dozen times over weeks before one holds when she pulls on it with everything she has, and that twelfth goes on the shelf over her desk.
 
@@ -114,7 +114,7 @@ Bex says it over her shoulder, to the table, with the bottom of the slip still f
 
 "It's a stupid question," Chloe says at dinner, before anybody has asked her.
 
-Kavi says, "Not stupid, everyone wants it. I'd swap you for juries in a heartbeat."
+Kavi says, "Not stupid." He is already eating again. "Everyone wants it. I'd swap you for juries in a heartbeat."
 
 Her fork is in her hand and still unused. "It's a stupid question because it's got an answer, and they knew what was under them. February, then again in March, then again in May, and every single time somebody sat in a room and signed it. I'm going to write down what happened, then write down why it was wrong, and that's the whole essay."
 
@@ -130,7 +130,7 @@ A shrug at her. "Then go and do it properly. If you can't say why the man signed
 
 Chloe puts her fork down, but she keeps looking at the table.
 
-"That's annoying. Now I have to go and build the thing I came in here to say was wrong."
+"That's annoying," Chloe says. "Now I have to go and build the thing I came in here to say was wrong."
 
 The reading takes days. On the Tuesday she goes at it all afternoon and most of the evening before being sick late in the evening, then sits on the bathroom floor with her back against the bath and goes back to it for another hour.
 
@@ -146,7 +146,7 @@ Between the second floor and the third, she finds Ruth on the stairs.
 
 "He gave me a B on it."
 
-"On twice the length, you did double the words, but he took a grade off you for it."
+"On twice the length," Ruth says. "You did double the words, but he took a grade off you for it."
 
 Chloe holds the pages in both hands and goes up the stairs backwards. "That's beside the point of why I'm annoyed. He's got page eight and page twenty-two, the places where I stopped, right after I'd already answered it, and put a sentence in to show I knew what it sounded like, so I put them there on purpose, he found both, and those were the only ones in the whole thing."
 
@@ -162,13 +162,13 @@ At Christmas her mother asks what she has been working on.
 
 "Germany, the cities, at the end of it."
 
-Her mother takes the plate off her and puts it on the rack. "That's a big subject for a school essay. What did you say?"
+Her mother takes the plate off her and puts it on the rack. "That's a big subject for a school essay," she says. "What did you say?"
 
 Chloe opens her mouth, then works out that the answer starts with the hat, and after the hat it needs the deadline, then why hedging counts against you rather than as manners, and all of that goes in front of anything she actually wants to say.
 
 "That it was wrong. I got a B."
 
-"Well, a B's a B, but it's still a good grade," her mother says, and hands her the next plate off the pile.
+"A B's a B," her mother says, and hands her the next plate off the pile. "But it's still a good grade."
 
 Her father is in the doorway with a dishcloth over his shoulder.
 
@@ -184,7 +184,7 @@ Chloe tells her grandmother about the arrows and draws the sixty degrees on an e
 
 "I hit it the first time in October."
 
-Her grandmother pats her on the arm. "October. Well, you'll get there, dear, once in a whole year is hardly a lot, is it."
+Her grandmother pats her on the arm. "October," she says. "Well, you'll get there, dear, once in a whole year is hardly a lot, is it."
 
 "October was the first one, but I've done it a dozen times since then, more than a dozen."
 

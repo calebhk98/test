@@ -56,7 +56,7 @@ The grader adds the column a second time with the pen held clear of the paper, c
 
 "You have done this before somewhere."
 
-"No, Sergeant. I did other things."
+"No, Sergeant." Sam keeps his eyes on the clipboard. "I did other things."
 
 "That is the top of the scale. Whatever you were about to ask me next, the answer to it is no."
 
@@ -64,7 +64,7 @@ Sam turns that over for most of the morning without any satisfactory resolution,
 
 "What are you going to do with those," Okoro says.
 
-"Keep them. They're just better."
+"Keep them." Sam folds the paper in half. "They're just better."
 
 In the ninth week he takes the record test and posts it again, that being the only score the sheet has room for.
 
@@ -78,7 +78,7 @@ Word travels round the company by chow that afternoon, the way a number like tha
 
 "Forty percent of what, though?"
 
-"Of the shots. There were people in my year who never missed."
+"Of the shots." Sam breaks the roll in half. "There were people in my year who never missed."
 
 "Sure there were." The man who asked has both elbows planted either side of his tray, in the manner of somebody settling in for the remainder of an argument he considers already concluded. "Nobody maxes that test on a cold morning but then sits here telling you what he's bad at. Your score's been up on the board outside the orderly room since lunchtime."
 

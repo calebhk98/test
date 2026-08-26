@@ -76,7 +76,11 @@ They sit her down in the living room, both of them at once, on the couch across 
 
 Chloe is on her feet before he has got to the end of it.
 
-"Wait. Wait, wait, wait. Am I actually going?"
+"Wait."
+
+Her dad stops.
+
+"Wait, wait, wait. Am I actually going?"
 
 "If they say yes, then what happens next is that we-"
 
@@ -116,7 +120,7 @@ The house comes up in April, on a Saturday, with Chloe up the road at the Peters
 
 "They're offering us a house," her dad says, "minutes from campus, furnished, and they pay for it the whole time she's enrolled, and if she leaves it stops, which is the only condition on the deal."
 
-"No, absolutely not, and I'm not going to spend an hour talking myself into it either," her mother says.
+"No, absolutely not." Her mother's hands stay around the mug. "I'm not going to spend an hour talking myself into it either."
 
 "Meg, we'd see her every day of the week instead of ten weeks a year, and that's the whole trade they're offering us."
 

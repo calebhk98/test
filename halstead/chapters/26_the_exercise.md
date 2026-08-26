@@ -18,7 +18,7 @@ Then the card, carrying its grids of figures and listing the checkpoints between
 
 "How many of them, Sergeant."
 
-"More than you. Move along, Marsh."
+"More than you." The sergeant taps the card again. "Move along, Marsh."
 
 Sam checks the bearing against the card, folds the card into his breast pocket, buttons the pocket, and heads for the tree line on his own initiative, across ground frozen at the edges, enough to hold a boot print, but soft in the middle, enough to lose it.
 
@@ -60,7 +60,7 @@ Sam opens it, and the knuckles across his fingers are split, the blood in them a
 
 The medic bends all of them anyway, in turn, then tapes the fingers together and enters Sam's name on a card underneath the man with the nose.
 
-Ives comes back with the notebook open. "Every harness in that pipe was in a steady tone simultaneously, which makes the engagement void, because there is no soldier in there who can tell me who shot who. Which leaves exactly one thing that happened tonight, which is that you put hands on two people on an exercise that has no hands on it. Say the contact rule."
+Ives comes back with the notebook open. "Every harness in that pipe was in a steady tone simultaneously, which makes the engagement void, because there is no soldier in there who can tell me who shot who. Which leaves exactly one thing that happened tonight, which is that you put hands on two people on an exercise that has no hands on it." Ives closes the notebook. "Say the contact rule."
 
 Sam says the contact rule, close to word for word, because he read the laminated card twice at the table while the man ahead of him was signing for his own equipment. Ives says right, and writes for a considerable while, and they put Sam back on his bearing not long after.
 
@@ -110,13 +110,13 @@ The soldier stands there listening to his own good luck read out loud, but looks
 
 Sam's turn comes third. Instead of calling him up to the front, the major leaves him where he is and starts in on the clipboard without a glance across the room.
 
-"Marsh. Fence line, first night, two engagements, both of them yours, at twenty metres, against an element holding the near side of the obstacle." He puts a check against it and moves down the sheet. "Night two is a safety incident, and we will do it as one."
+"Marsh." He looks up once from the clipboard. "Fence line, first night, two engagements, both of them yours, at twenty metres, against an element holding the near side of the obstacle." He puts a check against it and moves down the sheet. "Night two is a safety incident, and we will do it as one."
 
 The next part he reads the way a form gets read.
 
 "Staff Sergeant Ives has it that the harnesses were in a steady tone inside a concrete pipe all at once, that a blank was discharged at two metres, which is on the opposing element and has been dealt with over there, and that you then made physical contact with two soldiers and departed. One of them spent yesterday on light duty with his face in a state." Now he looks up. "What is the contact rule on this exercise, Private Marsh."
 
-"There is no hand-to-hand, sir. At any range."
+"There is no hand-to-hand, sir." Sam doesn't look away. "At any range."
 
 "At any range. And the tone."
 

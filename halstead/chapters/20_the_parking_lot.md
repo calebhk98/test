@@ -78,9 +78,9 @@ The men come out a few blocks later, between two parked cars, seven of them in a
 
 Chloe reads it fast: seven grown men who chose this and have presumably done it before. Seven, three armed. Every one of them is standing somewhere that makes sense, and she puts them at her own level until something tells her otherwise. Three ways out: the fence, the gap under it, the alley. She's choosing between them when Sam says it.
 
-Sam says, "Hang on. Let me have this one."
+Sam says, "Hang on." "Let me have this one."
 
-Ruth stays put. "They're adults. Three guns."
+Ruth stays put. "They're adults." "Three guns."
 
 "There's seven of them, and I'm basically one myself. That's fair." He is already unhooking his thumbs from his pockets. "I've fought people my whole life. None of them were adults, and none of them were strangers."
 

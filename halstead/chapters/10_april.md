@@ -28,9 +28,9 @@ Ruth just gives her the number this time, so Chloe writes it under the name, lea
 
 Kavi turns up an hour later and stands in the doorway with his arms folded until somebody looks at him, then points down the corridor at nobody. "I have been through this whole building since lunch, the office, then the laundry, then outside to the road, because I thought you might still be sitting in the car. Then a girl in the stairwell whose name I don't even know told me you'd been here an hour. Sam knew the entire time and let me do the whole tour anyway."
 
-"He forgot, because he's been telling everyone for a week, so it stopped feeling like news to him before it ever actually happened," Ruth says.
+"He forgot." Ruth shrugs at him. "He's been telling everyone for a week, so it stopped feeling like news to him before it ever actually happened."
 
-"That's worse than not knowing. If you don't know then it's nobody's fault, but he knew and he forgot, and that's a decision about how much it mattered. What. I'm allowed to think that's worse without both of you looking at me like that," Kavi says, sitting down on the floor by the door.
+"That's worse than not knowing." Kavi sits down on the floor by the door. "If you don't know then it's nobody's fault, but he knew and he forgot, and that's a decision about how much it mattered. What. I'm allowed to think that's worse without both of you looking at me like that," he says.
 
 "What's your last name, because you're going right under Ruth's, and then I've got everybody here except Sam's number," Chloe says.
 
@@ -98,7 +98,7 @@ The mathematics thing happens in the third week of May, on a problem she has had
 
 It comes to her in the shower on the Wednesday, and she stands there until the water goes cold, and next morning reaches the room early, where Ruth is already at the board.
 
-"You got it. Which way did you go, because there are two ways through it and one of them is horrible," Ruth says.
+"You got it." Ruth doesn't put the marker down. "Which way did you go, because there are two ways through it and one of them is horrible."
 
 Chloe tells her all of it, out of order and twice in places, and Ruth listens the whole way through before putting her own working next to it.
 
@@ -130,9 +130,9 @@ Kavi has his shoes off and is holding them by the heels. "Owen wanted to stay, a
 
 Her mother calls on Sundays, on the first-floor alcove phone with a chair beside it and people waiting in the corridor. The first Sunday runs fifty minutes, but the fourth runs twenty, because most of what she has takes a while to set up before it goes anywhere, and somebody behind her shifts their weight the whole time.
 
-"Are you eating? I don't mean are they giving you food, I mean are you actually eating it."
+"Are you eating?" Her mother doesn't wait for an answer. "I don't mean are they giving you food, I mean are you actually eating it."
 
-"Yes. They put whatever's left on your tray in front of you at the end, and Ruth makes me finish it before she'll let either of us leave the table."
+"Yes." Chloe winds the cord around one finger. "They put whatever's left on your tray in front of you at the end, and Ruth makes me finish it before she'll let either of us leave the table."
 
 "And is your roommate nice, or is she one of the difficult ones you have to work around?"
 
@@ -162,7 +162,7 @@ She still has to stop and think her way through Central Asia. South America is d
 
 "I'll call you on a Wednesday, the usual time, so you know when to expect it."
 
-"Wednesday's fine, though not before ten, because my dad's asleep by then and the phone's right outside his door," Ruth says.
+"Wednesday's fine." Ruth is still looking out at the grass. "Though not before ten, because my dad's asleep by then and the phone's right outside his door."
 
 "September," Chloe says, with Sam and somebody's grandmother a few feet away on the grass.
 

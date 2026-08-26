@@ -132,7 +132,7 @@ Ruth takes her shoes off and lines them up against the wall, heel to heel, then 
 
 "Obviously," Sam says. "A place spends a month teaching you all of that, it's got plans for the rest of it."
 
-"It's not obviously. You have to actually go and do things. My mom asked. There's a form. And there's a day where you come back and they look at you. That day sits in the fall, not in the summer," Ruth says, pulling her knees up to her chest.
+"It's not obviously." Ruth pulls her knees up to her chest. "You have to actually go and do things. My mom asked. There's a form. And there's a day where you come back and they look at you. That day sits in the fall, not in the summer."
 
 "They already looked at us, Ruth. That is exactly what this whole month was for."
 
@@ -164,7 +164,7 @@ Ruth picks the knot out of one shoelace with both thumbs instead of answering hi
 
 "That's hers as well. She's promised to tell me the second she hears anything at all."
 
-"Well, find out. It's a day where they look at you. So I want to know what they look at. Same material as this month, or different. Different material, a person can go and learn it," she says, up on her knees now with one hand fisted in the leg of Kavi's pyjamas.
+"Well, find out." She is up on her knees now with one hand fisted in the leg of Kavi's pyjamas. "It's a day where they look at you. So I want to know what they look at. Same material as this month, or different. Different material, a person can go and learn it."
 
 "It's a form, Chloe, and a form is a completely different object from a promise."
 

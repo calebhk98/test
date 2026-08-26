@@ -60,7 +60,7 @@ The classes come after that, all of them, mathematics through politics through t
 
 "You taught as well," he says, somewhere in the seventh year of the list, without making a question of it.
 
-"From that year on. Mathematics, to the year below me. Seven of them the first year, but one of them failed."
+"From that year on." His pen doesn't stop. "Mathematics, to the year below me. Seven of them the first year, but one of them failed."
 
 "Whose column does that go in."
 

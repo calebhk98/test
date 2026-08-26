@@ -96,11 +96,11 @@ The blacktop is warm enough by midmorning that the girls play in short sleeves, 
 
 "You're out," Chloe says.
 
-"No I'm not. I caught it clean. Clean is a different rule from off the ground," Kayleigh says, already turning after the ball, because it's still going.
+"No I'm not." Kayleigh is already turning after the ball, because it's still going. "I caught it clean. Clean is a different rule from off the ground."
 
 "Maddie was out. She caught it on one bounce, like a minute ago. So either one bounce is out or it isn't."
 
-"That was different. Maddie kind of scoops it instead of catching it properly. It's basically a whole other move."
+"That was different." Kayleigh doesn't stop moving. "Maddie kind of scoops it instead of catching it properly. It's basically a whole other move."
 
 "How was it different, though? You both caught it off the bounce. That's the whole rule. It shouldn't matter how your hand does it."
 

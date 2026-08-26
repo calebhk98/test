@@ -50,7 +50,7 @@ The months underneath that sentence look, from outside, like everything is fine.
 
 The study group stays folded into a smaller room in her head: something she manages rather than something she shares. Devansh, who ends up in most of her classes by spring, gets the closest look at it, though he has no idea what he's actually seeing. That spring he brings her a proof he's stuck on. The error takes her under a minute to find, a sign flipped two steps in, and she tells him so directly. "That's not wrong because the idea's bad, Devansh. It's wrong because you dropped a negative on line six."
 
-The proof gets fixed, the thanks given, and then, halfway to the door with his bag over his shoulder: "Are you ever stuck on anything?"
+The proof gets fixed. "Thanks," he says. Then, halfway to the door with his bag over his shoulder: "Are you ever stuck on anything?"
 
 "No," she says, and it's close enough to true, because being stuck and being wrong about the reason feel like different things from the inside.
 
@@ -64,7 +64,7 @@ His office is on the fourth floor, narrow, with a window stuck a half-inch open 
 
 From the top, then, and step one and step two go by without any trouble in them at all, but at step three he puts his hand flat on the paper and leaves it there.
 
-"Still lost. Slower than that, if you don't mind."
+"Still lost." He doesn't look up from the page. "Slower than that, if you don't mind."
 
 As the assumption she'd folded into a single line comes apart into the separate claims underneath, she slows down and states each on its own. "Fixing the convention only puts it in the form the identity is already written in. Then the boundary term goes to zero."
 
@@ -72,7 +72,7 @@ At the first he nods, but at the second the nod does not arrive, and he sits bac
 
 "Goes to zero how."
 
-"Because there is nothing left out at the edge for it to cancel against. The function is already gone by the time you get out that far." It's the second, she realizes watching him, that she has always kept private, checked only against her own head, where it always came out fine. "It isn't a cancellation. It's an absence."
+"Because there is nothing left out at the edge for it to cancel against. The function is already gone by the time you get out that far." It's the second, she realizes watching him, that she has always kept private, checked only against her own head, where it always came out fine. "It isn't a cancellation." She lets it sit for a second. "It's an absence."
 
 "Shorter."
 

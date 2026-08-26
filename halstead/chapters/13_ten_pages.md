@@ -38,7 +38,7 @@ The 10v1 starts in January.
 
 "One in the middle, ten on them, a minute on the clock." Kowalczyk has the clock in her hand. "A few rounds a class, and the rest of the hour is what you've been doing since September, because that carries on regardless."
 
-"That's a lot. That's twice as many hands as I've ever had on me at once."
+"That's a lot," Chloe says. "That's twice as many hands as I've ever had on me at once."
 
 A hand goes up, fingers spread, and turns. "Five people can reach you at once, six if they're good, seven if you're standing badly, and after that there's no room for anybody, they'd be pushing each other over. So ten is five on you and five waiting for the first lot to get tired, and any more than that and they're just queuing for a turn."
 
@@ -50,11 +50,11 @@ The best anyone in the room manages all afternoon is nine seconds, but Chloe get
 
 "Four."
 
-"Four's fine, everybody in this corridor is on it right now, that's the whole afternoon's number."
+"Four's fine," Sam says. "Everybody in this corridor is on it right now, that's the whole afternoon's number."
 
 "She said a minute, and that comes nowhere close to a minute."
 
-"She says a lot of things," Sam says, into his sleeve.
+"She says a lot," Sam says, into his sleeve.
 
 "A minute's the whole fight, and four's just where you ran out first," Ruth says, arm still over her eyes.
 
@@ -72,11 +72,11 @@ On the second Thursday Ruth is sitting on the floor with her back against the wa
 
 Chloe stops. "Wait, that's it, that's the whole problem, we're reacting."
 
-"What, what are you talking about?"
+"What?" Ruth says. "What are you talking about?"
 
 Up on her knees, both hands out, she cuts back in. "We're all reacting, but you can't react to it, there isn't time to react to it, you have to already be there. If you're standing behind someone holding a hose, you don't watch the water. You watch where the hose is pointing before anything comes out of it. The barrel is the hose, Ruth, pointed at where the ball's going before the ball goes anywhere, and every marker on that floor shoots at a single speed. Watch the barrel and the feet, and move before he shoots."
 
-"That's not what she told us in the briefing, none of this was in the briefing."
+"That's not it," Ruth says. "None of this was in the briefing."
 
 "She told us none of this, we worked it out ourselves, just now, standing here."
 
@@ -139,15 +139,15 @@ ________________
 
 Her father asks at Thanksgiving what she has been writing about, and she says tariffs.
 
-He is still eating. "Tariffs. Huh. Which side did you get assigned, or did you pick it yourself this time?"
+He is still eating. "Tariffs," he says. "Huh. Which side did you get assigned, or did you pick it yourself this time?"
 
 "For, and it took a couple of minutes of reading before that got obvious."
 
-"Go on then, let's hear it, what have you actually got?"
+"Go on then," he says. "Let's hear it, what have you actually got?"
 
 Chloe has her elbows on the table and her aunt is looking at her elbows. "There are industries you have to still have in twenty years even if somebody else is cheaper today. If you're wrong on one of those you can't get it back, you can't decide to have it again, you can only decide to build a building instead."
 
-"Okay, I'll give you that," her father says, considering his plate. "What about steel, though, which has been saying that since before you were born?"
+"I'll give you that," her father says, considering his plate. "What about steel, though, which has been saying that since before you were born?"
 
 She is nodding before he has finished. "Steel says it and textiles said it and somebody's going to say it about something neither of us has heard of. That's the actual problem, because it's an argument anybody can use for anything, so it doesn't sort them, and the guy asking has the same sentences whether he's right or not."
 
@@ -155,7 +155,7 @@ She is nodding before he has finished. "Steel says it and textiles said it and s
 
 She takes a roll and puts it down again. "I said you look at whether you could rebuild it in a war and how long it'd take. It's what I had, and it's thin, I know it's thin, but it was Tuesday and I had to put something down on the page."
 
-He turns round in his chair properly. "No, hold on, you've got most of an argument there. What happens if it's five years and the war's two?"
+He turns round in his chair properly. "No, hold on," he says. "You've got most of an argument there. What happens if it's five years and the war's two?"
 
 "Then having the answer doesn't help you at all, does it, since you're already too late either way."
 
@@ -173,9 +173,9 @@ Theo gets his back with no note that week, but he puts it straight into his bag 
 
 More go in before the break, but they are the essays they have been since October. The last is on whether a promise made under a threat counts, a question that Hearn's note calls good before asking where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 again on the floor of the spare room with the door shut. Her grandmother finds her there on the second afternoon and leaves the papers exactly where they are.
 
-"There's a chair, you know, an actual chair, a step from where you're sitting on my floor."
+"There's a chair," her grandmother says. "You know, an actual chair, a step from where you're sitting on my floor."
 
-"I know there's a chair, but I've been looking at it."
+"I know," Chloe says. "There's a chair, but I've been looking at it."
 
 Her grandmother puts a plate down on the carpet inside the doorway and leaves it there. "Your mother did exactly that, floor, back against the bed, papers everywhere, and if I moved any of them she could tell. You can eat that where you are. I'm doing the ham later and you're carrying it."
 

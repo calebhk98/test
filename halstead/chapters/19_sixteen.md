@@ -30,7 +30,7 @@ Kavi looks at the board, then at her, then back at the board, his own row a few 
 
 "I passed it by six." His hand comes up over his mouth a half second behind the words. "That was the wrong thing to say. I knew it the moment it left my mouth, and now it's already out there whether I like it or not."
 
-"It's fine, the numbers are the numbers, and saying either of them twice just leaves them exactly where they were. You didn't do anything to me by passing it." She takes the list in again, her weight settled square on both feet, then steps back from the board to let somebody else in.
+"It's fine," Chloe says. "The numbers are the numbers, and saying either of them twice just leaves them exactly where they were. You didn't do anything to me by passing it." She takes the list in again, her weight settled square on both feet, then steps back from the board to let somebody else in.
 
 Fifty-two in the year pass, but thirty-nine do not, hers among them, and by dinner they have found each other by sight, because the board hangs in a hall everybody walks past all day.
 
@@ -78,9 +78,9 @@ People are getting up out of their chairs as she goes back to hers, unhurried, h
 
 In the second week of May she writes her first practice paper, at a table in the library with the mark scheme face down beside her, taking over an hour on a page restating what the shed already made obvious, and she gives it to Kavi to mark, because Kavi marks the way the examiners mark and will decline to be kind about it.
 
-"Two out of four, and the ones you're missing are the ones that would have told me you actually understood it." Kavi has the page squared in front of him and a pen sideways in his fingers. "You have the rule, and you have where it comes from." He taps the pen twice on the third line. "Then you've written *and so the risk sits with the buyer*, which is your second line in a different hat, and then you've stopped. The marker reads a sentence that sounds like new information, but finds it's what he already had. That is worse for you than leaving the line out."
+"Two out of four," Kavi says. "And the ones you're missing are the ones that would have told me you actually understood it." He has the page squared in front of him and a pen sideways in his fingers. "You have the rule, and you have where it comes from." He taps the pen twice on the third line. "Then you've written *and so the risk sits with the buyer*, which is your second line in a different hat, and then you've stopped. The marker reads a sentence that sounds like new information, but finds it's what he already had. That is worse for you than leaving the line out."
 
-"It's the same sentence, just restated so it sounds like it's adding something."
+"It's the same sentence," she says. "Just restated so it sounds like it's adding something."
 
 "It's the same sentence to you, because you already know why the risk sits with the buyer. The marker has to be given that reasoning rather than assumed to already have it, and right now the page hands him a single idea wearing two coats. He can only mark what is actually on the paper in front of him." He turns the page around and pushes it back at her with the pen laid across the empty half of it. "Write me the shed burning down. Not the rule about it, the actual event: goods inside, fire on the Tuesday, who's holding the loss when the smoke clears, and why that person and not somebody else."
 
@@ -124,9 +124,9 @@ The forge is Thursdays, and has been for years, the work down there staying betw
 
 "You're off early."
 
-"Paper on Thursday, same as the last few."
+"Paper on Thursday," Chloe says. "Same as the last few."
 
-Banking the fire down for the night, working with his back to her. "You've had a paper on Thursday for weeks. Tongs on the rack. The ones you made. Take them with you."
+Banking the fire down for the night, working with his back to her. "You've had a paper on Thursday for weeks," he says. "Tongs on the rack." He nods at them without turning. "The ones you made. Take them with you."
 
 The tongs go home to the hook on the back of her door, beside the bag she made in her second year.
 
@@ -140,7 +140,7 @@ Her mother watches that from the kitchen window a while before she comes out.
 
 "You want me to find you something to do? You've been out here every afternoon for two weeks and I can't tell if you're resting or just avoiding the inside of the house."
 
-"Like what? I can't think what there'd even be to do out here." Chloe keeps her eyes shut against the sun and delivers the whole answer in the direction of the garage roof.
+"Like what?" Chloe keeps her eyes shut against the sun and delivers the rest in the direction of the garage roof. "I can't think what there'd even be to do out here."
 
 Her mother sets a glass of iced tea down on the step beside her. "There's a shelf in the garage your father's been meaning to put up since March, and at this rate it'll still be leaning against the wall at Christmas. Or skip it entirely. I'm not asking you to put up a shelf, I'm asking whether you actually want to sit still this much."
 

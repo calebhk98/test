@@ -12,7 +12,7 @@ Marek's sheet comes back blank, week after week.
 
 Marek is at every session and reads everything she gives him, so in the fourth week she puts up a problem saved for the end of term, then turns round from writing it to find he has the answer out before the chalk is back on the ledge.
 
-"Then hand the sheet in."
+"Hand the sheet in."
 
 "Why, though?" He stays where he is, the sheet under his hand.
 
@@ -58,7 +58,7 @@ Differential equations run alongside real analysis from the second week of Septe
 
 *This step is where you assumed it.*
 
-"I did assume it, and that step is obvious, and everyone in the room already agrees it's true."
+"I did assume it," Chloe says. "That step is obvious, and everyone in the room already agrees it's true."
 
 "Then show me that it's obvious," the teacher says, holding it out sideways, already back at her own page. "Everyone in the room believing it is one thing, and it following from what you were given at the top of the page is another, so until you can show me that difference what you have is assumed rather than proven."
 
@@ -122,7 +122,7 @@ Block two is hers, so she puts fencing and game theory on the sheet. Fencing she
 
 "You went left again, and you went left last time as well."
 
-"I went left. You'd worked out I go left, so left was the surprise."
+"I went left," Kavi says. "You'd worked out I go left, so left was the surprise."
 
 Chloe leans back from the board. "The mathematics says the opposite, Kavi: you play the equilibrium and not the player, and you keep doing the reverse of it and winning anyway."
 
@@ -144,7 +144,7 @@ Dinner is a dozen of them at the long table by the window, and has been since th
 
 Eli puts a cipher on the table one Thursday, between the salt and the water jug, on a napkin.
 
-"Four hours, that took me. Somebody at this table beat it."
+"Four hours," Eli says. "That took me. Somebody at this table beat it."
 
 "Where did you get it from? It's the first I've seen built for that."
 
@@ -156,7 +156,7 @@ Kavi takes it off him inside a minute, offhand about it, and slides it to Chloe.
 
 "Are we allowed to be holding this at all, though? It's a live system with somebody's actual plates going through it tonight, and Eli's got it on a napkin next to the salt, and I want an answer to that first, and nobody writes anything down," Priya says.
 
-Sam eats a second dinner through both arguments and contributes twice.
+Sam eats a second dinner through both arguments. "Bring it," he says the first time, mouth full, and "Not it," the second, and goes back to eating.
 
 Nadia turns the napkin round toward Chloe with a finger.
 
@@ -190,13 +190,13 @@ Her father is replacing the back steps that summer, and it takes most of the mon
 
 The cuts are hers, and he shows her the saw on the first morning and watches her make a couple, but after that everything she cuts goes back on the pile unchecked. On the Thursday a riser comes out four millimetres proud, and her father looks at it, says that will do, screws it down.
 
-"That riser's sitting proud, and I can see it from here without even measuring it."
+"That riser's sitting proud," Chloe says. "I can see it from here without even measuring it."
 
-"It's four millimetres proud on a back step, but the step still holds a foot."
+"It's four millimetres proud," her father says. "On a back step, but the step still holds a foot."
 
-"But I cut it, so I'd rather fix it now than know it's there every time I go up."
+"But I cut it," she says. "I'd rather fix it now than know it's there every time I go up."
 
-Already reaching for the next board, his attention is on the next cut. "Chloe. Not one person alive is going to measure these steps, and this stays between the two of us."
+Already reaching for the next board, his attention is on the next cut. "Chloe," he says. "Not one person alive is going to measure these steps, and this stays between the two of us."
 
 They finish on a Tuesday at the end of July and the steps hold. Her mother comes out and stands on them, and bounces on the top step twice.
 

@@ -18,7 +18,7 @@ Although she is steady enough prone by then, kneeling and standing come in befor
 
 A mechanical trap arrives in February that throws a clay across the front of the range on a set interval, at a constant speed, and Voss hands out a card with the interval printed on it so that they can run a count off the card instead of the clay.
 
-"It's seven and about a fifth, because I've timed thirty of them and the mechanism resets slow every time," Aymar says, with the stopwatch out on the bench where he can see it.
+"It's seven and about a fifth," Aymar says, with the stopwatch out on the bench where he can see it. "Because I've timed thirty of them and the mechanism resets slow every time."
 
 "The card says what it says, Aymar," Voss says, keeping his eyes on the range.
 
@@ -42,11 +42,11 @@ ________________
 
 Self defense is three rounds an hour, with one person standing in the middle while the other ten come at them and a minute runs on the clock, after which the middle changes and it goes round until everybody has had their turn. Chloe holds fifty seconds on her third round on a Tuesday in February, but she is down on her back before the whistle finishes, somebody's knee still across her shin, laughing at the ceiling with both arms out.
 
-"That was nearly a whole minute, that's the longest anyone's held all week," Odile says, getting a hand under her arm and hauling her up by the wrist.
+"That was nearly a whole minute," Odile says, getting a hand under her arm and hauling her up by the wrist. "That's the longest anyone's held all week."
 
-"My average is forty-five, so run me again and let me see whether I can beat it," Chloe says, getting her feet under her on the third attempt, still holding Odile's arm and grinning at her.
+"My average is forty-five," Chloe says, getting her feet under her on the third attempt, still holding Odile's arm and grinning at her. "So run me again and let me see whether I can beat it."
 
-Kowalczyk, still writing up the board, says, "That's the last round, so it's pairs for the rest of the hour."
+Kowalczyk, still writing up the board, says, "That's the last round." "So it's pairs for the rest of the hour."
 
 "I'm ten seconds off a minute, though, and I want another go at it."
 
@@ -260,7 +260,7 @@ Her mother sets the dish down in the middle of the table, straightens it, and go
 
 Her mother comes back in and asks whether anybody wants the pie warmed up, and her father and Chloe both say yes at once. The game comes on, and they eat in front of it, with her mother coming to sit on the arm of his chair for the second half.
 
-Her mother says, "That's a hold. That is a hold, that's been a hold all night."
+"That's a hold," her mother says. "That is a hold, that's been a hold all night."
 
 On Sunday she asks whether the man behind the line is armed, and what happens if somebody drops one, and whether anybody has ever turned round. Chloe answers all three and then tells her about the flag they call the wind off, and her mother listens all the way through and comes back with one more question about the man behind the line.
 

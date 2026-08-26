@@ -16,7 +16,7 @@ Her mom is sitting right on the front edge of the chair, and she has the whole l
 
 "Chloe, is that right, is that how it's actually been?"
 
-"I guess so. I'm not really the one keeping track of the days. She is," Chloe says to the arm of the couch instead of to either of them.
+"I guess so." Chloe says it to the arm of the couch instead of to either of them. "I'm not really the one keeping track of the days. She is."
 
 "When did it start, roughly?"
 
@@ -36,7 +36,7 @@ Her mom says, "It's a school, and they run a month of it every summer. They teac
 
 "Did she stay there overnight."
 
-"The whole time. Every night of it."
+"The whole time," her mom says. "Every night of it."
 
 "How far is it from the house."
 
@@ -100,7 +100,7 @@ Her mom says, "I asked her that too. She told me how much you'd get out of it."
 
 Chloe pulls the covers up over her knees and holds them there with both hands.
 
-"Is it Halstead? Is it finally happening?"
+"Is it Halstead?" Chloe's hands are still fisted in the covers. "Is it finally happening?"
 
 Her mom puts a hand flat on the covers over Chloe's shin and leaves it there. "It's a thing at your school, on Thursdays, starting after the break, and it is the only thing in that building that isn't what you're already sitting through. It's an hour, but it isn't the classroom. So I want you in it, whatever it turns out to be."
 
@@ -174,7 +174,11 @@ In December her mom comes up and sits down on the end of her bed, in the late af
 
 "I want you to help me understand something, and you can take as long as you want over it. I'm not going to argue with any of it."
 
-Chloe says it to the ceiling. "Okay, I'll try. I might not have the right words for it."
+Chloe says it to the ceiling. "Okay, I'll try."
+
+Her mom waits.
+
+"I might not have the right words for it."
 
 "What was different there, not the fun parts, because I've already heard every single fun part, but what was actually different about it, underneath all that? I keep getting the bridge and the apples and I still don't know what the place was."
 
@@ -204,7 +208,9 @@ The bike has been in the garage since the first week of December, under a sheet,
 
 Her dad is in the doorway with his arms folded up against the cold. "She likes it. Look how fast she's already going out there."
 
-"She does," her mom says. "She really does. Look at her go."
+"She does."
+
+"She really does," her mom says. "Look at her go."
 
 At her grandmother's in the afternoon there are a lot of people in the house and Chloe knows all of them. Her cousin Dana asks how school is, and Chloe says it's good. Dana asks whether she's still reading all the time, but Chloe says some. Then Dana turns to talk to somebody else, so Chloe eats her potatoes.
 
