@@ -148,7 +148,7 @@ In wood shop you make a tool and then use that tool to make the next one, while 
 
 Team sports is where the teams are assigned, and she gets a team with two people on it she has already decided against, and she plays out September and October on it.
 
-Drawing is Thursdays, and in the second term, while they spend six weeks on hands, Chloe draws her own left hand forty times, in pencil, from the same angle, on cheap paper, and the fortieth looks like a hand, down to the knuckle of the little finger sitting lower than it ought to, and Ruth picks it up off the table on her way past.
+Drawing is Thursdays, and in the second term, while they spend the term on hands, Chloe draws her own left hand forty times, in pencil, from the same angle, on cheap paper, and the fortieth looks like a hand, down to the knuckle of the little finger sitting lower than it ought to, and Ruth picks it up off the table on her way past.
 
 "That's a hand, that's an actual hand, since when do you draw like that?"
 
@@ -180,7 +180,7 @@ Chloe takes hold of the edge of the desk with both hands and stays standing. "Th
 
 The elective list is on the wall outside the dining hall, four sheets long, with a blank line next to every entry and a pencil on a string.
 
-Twice she reads it through: drawing is on it, along with pottery, glassblowing, bookbinding, beekeeping, something called whittling, and a great many things she can only guess at from the name, while seven names are already on the climbing line and one on beekeeping.
+Twice she reads it through: drawing is on it, along with pottery, glassblowing, bookbinding, beekeeping, something called whittling, and a great many things she can only guess at from the name, while names are already on the climbing line and one on beekeeping.
 
 "What are you doing," Sam says behind her, "are you signing up for something or just reading the sheet all day?"
 

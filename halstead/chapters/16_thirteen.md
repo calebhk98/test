@@ -42,7 +42,7 @@ In February she offers to read the 1981 paper and mark him on that, and he says 
 
 "Nothing would," he says. "A mark on a sheet stays exactly as true whether it's written down or not, and the work is just as real whether I hand in a page or leave it blank."
 
-The December sheet has six names doing well on it and one still blank, and because the grade at the bottom covers all seven it comes out lower than her grade in anything else that term, so she reads it twice in the corridor, folds it into quarters and pockets it rather than binning it.
+The December sheet has six names doing well on it and one still blank, and because the grade at the bottom covers the lot it comes out lower than her grade in anything else that term, so she reads it twice in the corridor, folds it into quarters and pockets it rather than binning it.
 
 It is not fair, and she works out on the stairs exactly how unfair it is. Marek does the work and keeps it. The sheet has a column and the column is for paper. The number that comes out of the column goes onto her record as well as his, and she has been asking him for it since October, and asking him is the whole of what she is allowed to do about it.
 
@@ -94,7 +94,7 @@ She takes the lid off with both hands and turns it toward Chloe, and inside is a
 
 The box goes in the drawer under Ruth's window and stays there.
 
-Getting out of the building on a Saturday is a thing you arrange on a Thursday, and in October the arranging stops working three weeks running, so on the third the duty teacher stops at the end of the long table, says she hopes the eight o'clock bus into town is a comfortable one, and carries on to the servery. What she has done is read three messages off the top of a screen over somebody's shoulder, which she is entitled to do and which costs a couple of seconds.
+Getting out of the building on a Saturday is a thing you arrange on a Thursday, and in October the arranging stops working three weeks running, so on the third the duty teacher stops at the end of the long table, says she hopes the bus into town is a comfortable one, and carries on to the servery. What she has done is read three messages off the top of a screen over somebody's shoulder, which she is entitled to do and which costs a couple of seconds.
 
 Kavi has the first version running by the end of the month on the school's own machines, because a service inside the building looks like every other service in it, and Ruth writes the encryption herself out of the term's material rather than lifting something already tested.
 
@@ -164,7 +164,7 @@ Nadia turns the napkin round toward Chloe with a finger.
 
 "You've had your hand over that corner since Kavi passed it." Nadia sits back. "You always do that, which means you've got it and you'd rather keep it off the table."
 
-Chloe takes her hand off the napkin and puts it in her lap while Sam says something about the salt, and at half past eight the table has an opinion each, every one of them holding firm.
+Chloe takes her hand off the napkin and puts it in her lap while Sam says something about the salt, and by the end of the meal the table has an opinion each, every one of them holding firm.
 
 Nadia is there most nights, saying what she thinks in flat words on principle, so half of it lands as an accusation. They work the November cipher set together and it goes well, though Sam sits between them most nights and neither of them has ever said a word to him about it.
 

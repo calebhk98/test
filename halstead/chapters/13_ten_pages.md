@@ -88,7 +88,7 @@ People start asking on the Friday, and Ruth says she has been practising while C
 
 Kavi gets it on his own in the second week of November, when his number goes from three to double figures inside an hour that afternoon, and he walks straight out, past everybody, jaw set, and she leaves him to it. Nadia has it by the end of the month off her own back, Priya gets it out of Ruth in a corridor in about ninety seconds, and by Christmas most of the year is past where they ever were with darts.
 
-In the second week of September a man from the office spends an hour on Watch, which everybody starts at ten, and although the sheet has been on the corkboard on the second floor since before Chloe got here and she stopped reading it somewhere around eight, he goes through it line by line anyway, the way the fire notice gets gone through once a year.
+In the second week of September a man from the office spends an hour on Watch, which everybody starts at ten, and although the sheet has been on the corkboard on the second floor since before Chloe got here and she stopped reading it years ago, he goes through it line by line anyway, the way the fire notice gets gone through once a year.
 
 **DEFENSIVE WATCH, SCORING**
 
@@ -107,7 +107,7 @@ Most of them are announced, with a board that says *Thursday, afternoon block* a
 
 Her first is on the board on the Monday and happens on the Thursday, when adults come over the north fence with a bag between them and are inside Building Two in under two minutes, and somebody is off her feet before she turns around. More go down at the stairwell, and a boy called Wes answers a question about how many of them there are, and the drill is called well over the standard.
 
-The sheet goes up on the Friday, and all twelve names have an F next to them and a numbered list underneath.
+The sheet goes up on the Friday, and every name on it has an F next to it and a numbered list underneath.
 
 She reads it in the corridor with people behind her waiting for a turn at it. Number one is response time, number two is that a student answered a question about how many of them there are, and number three is that five adults entered a building. Number six says the north stairwell was uncovered, and Chloe, who stood there the whole time, is still working out what covering it would even have looked like.
 
@@ -119,11 +119,11 @@ After dinner, when the corridor is empty, she goes back and reads it again, and 
 
 "I was standing in it. Wes asked them the number right in front of me, and it took him answering it for me to even notice."
 
-"So was I, and so was Wes, and I don't know what we were supposed to be doing either." Ruth is still looking at the sheet. "So the six should be on whoever wrote the drill and left it that vague, not on the one of us who noticed first. There's another in three weeks, and we'll actually know what it means by then."
+"So was I, and so was Wes, and I don't know what we were supposed to be doing either." Ruth is still looking at the sheet. "So that one should be on whoever wrote the drill and left it that vague, not on the one of us who noticed first. There's another in three weeks, and we'll actually know what it means by then."
 
 Russian starts in September, and a couple of months in she has enough of it to argue in, while Ruth is on Arabic. By the middle of the term the two of them are running insults across the dinner table in two languages, and Kavi complains about it in a third, and Sam asks them to do it in English so he can join in and neither of them will.
 
-Music runs both ways at once. Half the hour is by ear and half is notation, with the same man teaching both, sliding from one to the other and leaving you to work out which you're doing. On every instrument they put in front of her she is mediocre, but in the third week he plays eight bars and she gives them all back while the girl next to her gets the first bar and stops, so she keeps the block all year and puts her name down for it again in June. Algebra starts in mathematics in the second week, on the sheet, in the slot where the mathematics already was.
+Music runs both ways at once. Half the hour is by ear and half is notation, with the same man teaching both, sliding from one to the other and leaving you to work out which you're doing. On every instrument they put in front of her she is mediocre, but in the third week he plays a run of bars and she gives them all back while the girl next to her gets the first bar and stops, so she keeps the block all year and puts her name down for it again in June. Algebra starts in mathematics in the second week, on the sheet, in the slot where the mathematics already was.
 
 ---
 

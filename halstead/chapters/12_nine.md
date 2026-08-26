@@ -10,7 +10,7 @@ On the first morning the sheet in her box has one more line on it than last year
 
 "No, I wanted to know whether somebody had put it on there by mistake."
 
-"It's what nine gets rather than a mistake, and biology starts Tuesday whether you're ready for it or not."
+"It's what the year gets rather than a mistake, and biology starts Tuesday whether you're ready for it or not."
 
 Her new ones are chemistry, statistics and biology, and Ruth has them in a different order but is smug about getting chemistry first. Kavi got none of the ones he asked for, and at breakfast he puts his objections in order with his own sheet spread out on the table beside the tray.
 
@@ -184,4 +184,4 @@ Her father starts to answer and stops with the page half turned, then goes back 
 
 "No idea, I only got as far as that one."
 
-Going through the rest of the pages at the table that night, he finds six more. On the Thursday, he asks the vendor which of the sentences in section three they would put a date and a number against. Some come back with dates, but the rest come back as the same sentences with different words in them, and he tells Chloe about this in the car on Friday, at some length, while she eats a sandwich.
+Going through the rest of the pages at the table that night, he finds more of them. On the Thursday, he asks the vendor which of the sentences in section three they would put a date and a number against. Some come back with dates, but the rest come back as the same sentences with different words in them, and he tells Chloe about this in the car on Friday, at some length, while she eats a sandwich.

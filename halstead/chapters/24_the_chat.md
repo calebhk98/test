@@ -70,7 +70,7 @@ The build pipeline flaw is the kind of gap a company checks for insiders and out
 
 ________________
 
-Ruth's dorm room is a triple, a surprise she only discovered on move-in day, with a roommate who alphabetizes a spice rack down to the paprika and gets genuinely upset when it's moved. In her first weeks at MIT she's found the library that stays open all night and worked out which dining hall serves something hot after ten. She still answers the chat faster than anyone else in it, usually inside a minute, whatever she's doing when the message lands.
+Ruth's dorm room is a triple, a surprise she only discovered on move-in day, with a roommate who alphabetizes a spice rack down to the paprika and gets genuinely upset when it's moved. In her first weeks at MIT she's found the library that stays open all night and worked out which dining hall serves something hot late. She still answers the chat faster than anyone else in it, usually inside a minute, whatever she's doing when the message lands.
 
 ruth: my roommate alphabetizes her spice rack
 
@@ -384,7 +384,7 @@ nadia: both directions. it reads the person, it reads the opening, and it works 
 
 eli: thats a lot of building for something you already built once
 
-nadia: i wrote the whole thing in six weeks. ive spent three months on nobody coming
+nadia: i wrote the whole thing in six weeks. ive spent months on nobody coming
 
 ruth: can you pay for three more months of it
 
@@ -420,7 +420,7 @@ nadia: yes
 
 ________________
 
-Reading other people's listings takes her twelve days, and most of them go on the individual company career pages rather than on the boards, because a board publishes in one format and thousands of separate companies publish in as many. By the first week of October the site carries nineteen thousand openings, nine of which have anybody behind them who has agreed to pay her anything.
+Reading other people's listings takes her the better part of a fortnight, and most of them go on the individual company career pages rather than on the boards, because a board publishes in one format and thousands of separate companies publish in as many. By the first week of October the site carries nineteen thousand openings, nine of which have anybody behind them who has agreed to pay her anything.
 
 ________________
 
@@ -456,7 +456,7 @@ chloe: does anyone remember what we took for a sinus thing
 
 chloe: the small white one, you took it twice a day
 
-sam: yeah i had that like three times
+sam: yeah i had that a few times
 
 chloe: i cant find it
 

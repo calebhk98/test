@@ -18,15 +18,15 @@ In April she paid ninety dollars for the company name in white vinyl and put it 
 
 There is no morning meeting: she says what went live yesterday from wherever she is standing, and it takes her under a minute, because there are only five of them and three were standing there when it happened.
 
-She's still in the front room at half past eight on the Tuesday of the second week of May, because the new-employer queue has run long. That queue she reads herself, every name on it, the same way she reads the till tape at her parents' counter before she says hello to anyone, and a good week puts five names in front of her. This week has nineteen, and more than half of them sit outside the list of employers she has driven to herself.
+She's still in the front room at half past eight on the Tuesday of the second week of May, because the new-employer queue has run long. That queue she reads herself, every name on it, the same way she reads the till tape at her parents' counter before she says hello to anyone, and a good week puts a handful of names in front of her. This week has nineteen, and more than half of them sit outside the list of employers she has driven to herself.
 
-Opened, they carry one job description between them, three paragraphs of it, with the company name swapped at the top and again in the third line and left exactly where it was everywhere else, so that one of them advertises a role in a city the posting itself gives as sixty miles from its own address.
+Opened, they carry one job description between them, a few paragraphs of it, with the company name swapped at the top and again in the third line and left exactly where it was everywhere else, so that one of them advertises a role in a city the posting itself gives as sixty miles from its own address.
 
 All of the accounts were created between twenty to midnight and ten past, inside a single half-hour window, at a cadence no genuine employer around here has ever come close to. The hires behind them come to zero, and that number sits in front of her without her going to look for it, because the hire count sits at the top of every employer's row.
 
 The rest of it is in the message logs. Traffic between an employer and a user stays on her own servers until an offer gets logged, a decision she made in June to hold the support calls down, so they had no way to ask for anything except in writing, in her building, in a log she owns and reads.
 
-They ask for a Social Security number and a bank routing number in the third message, in the same four sentences, comma splice and all, reproduced without a character moved. Three people answered, and one of them gave both numbers on the Sunday, so that her checking account was emptied on the Monday morning.
+They ask for a Social Security number and a bank routing number in the third message, in the same four sentences, comma splice and all, reproduced without a character moved. People answered, and one of them gave both numbers on the Sunday, so that her checking account was emptied on the Monday morning.
 
 Before she sits down she deletes the whole batch of accounts from where she's standing, which takes about ninety seconds, and then she takes the names into the back room and telephones them in turn, late at night.
 
@@ -200,7 +200,7 @@ Four she has sat and taken herself: Python, Excel, Spanish, and the one on brake
 
 The first thing is that almost everyone fails.
 
-So she makes it easier. The generator carries a difficulty figure and she moves it, and the whole set rebuilds itself overnight while she sleeps. In September she moves it again. By November it is a version she'd have handed a twelve-year-old at Halstead, and the pass rate is still under a third, so she takes the November Python set herself, finishes it in minutes, and writes that in the margin under the others.
+So she makes it easier. The generator carries a difficulty figure and she moves it, and the whole set rebuilds itself overnight while she sleeps. In September she moves it again. By November it is a version she'd have handed a first-year at Halstead, and the pass rate is still under a third, so she takes the November Python set herself, finishes it in minutes, and writes that in the margin under the others.
 
 The second thing is the interviews.
 

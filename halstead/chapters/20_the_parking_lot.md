@@ -40,7 +40,7 @@ Sam puts his fork down before he asks it. "How old is he now?"
 
 "I'll tell him about the waffles here instead, since that's a story he can actually picture." She says it evenly, but she is looking at the cup and not at any of them.
 
-Sam has the syrup upside down over his second plate, timing the pour and counting under his breath. "Ten weeks starting Friday, so is anybody actually doing anything with the summer, or is it the usual."
+Sam has the syrup upside down over his second plate, timing the pour and counting under his breath. "Weeks of it starting Friday, so is anybody actually doing anything with the summer, or is it the usual."
 
 "I'm doing the forge both sessions again, same as last year," Chloe says.
 
@@ -162,6 +162,6 @@ Chloe sets her shoes down by the door, laces still knotted from being kicked off
 
 ---
 
-Ruth shuts the box off in the corridor and puts it in the chat before she sleeps, a few lines and a photograph of Sam standing in the lot with his arms out, and by breakfast there are sixty replies and an argument about whether it counts, whether a gang of them with guns is a real test or just seven people happening to be in the way.
+Ruth shuts the box off in the corridor and puts it in the chat before she sleeps, a few lines and a photograph of Sam standing in the lot with his arms out, and by breakfast there are sixty replies and an argument about whether it counts, whether a gang of them with guns is a real test or just people happening to be in the way.
 
 Kavi sends a laughing face, his entire contribution, read out at breakfast by Ruth while Sam reaches past her for the syrup and starts on his tray, like the question landed for somebody else at the table, and he lets it sit every time it comes up, and keeps letting it sit long enough for people to start bringing it up purely to watch him do it again.

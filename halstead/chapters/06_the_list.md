@@ -230,11 +230,7 @@ In the back seat, under the tire noise, Chloe keeps her eyes shut and her breath
 
 "They taught her what?"
 
-"And she explained fractions to me, not how to do them but why it works, with drawings, on a napkin, and then again because I asked her to," he says, and after a pause, "She said getting it right and knowing why it's right are two different things."
-
-"What?"
-
-"That's the sentence," he says, and after another pause, "She talked at me in Spanish for about a minute and every word of it went by me."
+"And she explained fractions to me, not how to do them but why it works, with drawings, on a napkin, and then again because I asked her to," he says, and after a pause, "She talked at me in Spanish for about a minute and every word of it went by me."
 
 Her mom stays quiet long enough that he checks the screen.
 

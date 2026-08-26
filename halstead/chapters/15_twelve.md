@@ -22,7 +22,7 @@ Her cuffs stop reaching her wrists in October, and inside a fortnight she and Ru
 
 "I have said nothing at all to you, I promise," she says, smirking.
 
-"You've got the face on, and the face is worse," Ruth says, going through first and letting the door swing back. "People stop at different times, and my mother was exactly this height at twelve and finished at five foot nine, so make the most of your next few years, because that's the whole of what you're getting."
+"You've got the face on, and the face is worse," Ruth says, going through first and letting the door swing back. "People stop at different times, and my mother was exactly this height at twelve and finished a good deal taller, so make the most of your next few years, because that's the whole of what you're getting."
 
 ---
 
@@ -68,11 +68,11 @@ On the stairs Priya wants to know whether the first round still counts. "We ate 
 
 "We ate it in silence, though, so somebody still has a number," Ruth says, going up the stairs fast. "Kavi's got the key in his pocket."
 
-Under the landing light he unfolds the scrap and reads out five right of eight, and Sam has it at sixty-two and a half before the paper is open, and says that beats guessing.
+Under the landing light he unfolds the scrap and reads out five right, and Sam has it at sixty-two and a half before the paper is open, and says that beats guessing.
 
 "Five out of eight is what a coin does," Ruth says, still climbing. "Come back to me when you get them all."
 
-Saturday afternoon is the stock count: four hours, a clipboard between them, shelves of tinned tomatoes, and a walk-in cooler at the far end with hundreds more in it. "Four hundred and six on this one, and I'm sure about it."
+Saturday afternoon is the stock count: a clipboard between them, shelves of tinned tomatoes, and a walk-in cooler at the far end with hundreds more in it. "Four hundred and six on this one, and I'm sure about it."
 
 "You said three hundred and ninety on the last shelf, and there were sixteen left over."
 
@@ -80,7 +80,7 @@ Saturday afternoon is the stock count: four hours, a clipboard between them, she
 
 "Sam," Ruth says, pointing at the floor with her chin. "They're by your foot."
 
-They count the third shelf over, and the third count is Ruth's, who stops halfway through, puts the clipboard on a crate and looks at the shelf long enough that Kavi asks what she is doing, then starts counting cases instead of tins, three stacks at a time, with a chalk mark on the shelf edge for every complete twelve, which takes a shelf from thirty-five minutes to nineteen and gets the cooler done before dinner.
+They count the third shelf over, and the third count is Ruth's, who stops halfway through, puts the clipboard on a crate and looks at the shelf long enough that Kavi asks what she is doing, then starts counting cases instead of tins, three stacks at a time, with a chalk mark on the shelf edge for every complete case, which takes a shelf from thirty-five minutes to nineteen and gets the cooler done before dinner.
 
 The library gets her about once a week now, because most evenings there are people in the third floor common room with a game spread over the table and a space kept for her at it.
 
@@ -280,7 +280,7 @@ At Thanksgiving the letter is on the counter before anybody has finished serving
 
 "It was a few minutes, and it was toast, and everyone was completely safe the entire time."
 
-"It was a gas oven." Her mother sets the serving spoon on the edge of the dish, where it slides off into the gravy, so that she has to fish it out with her fingers before she can go on. "A gas oven, lit, at half past eleven at night, with children alone in the room, and which one of you lit it is beside the point, because what I mind is a flame going while the room is empty."
+"It was a gas oven." Her mother sets the serving spoon on the edge of the dish, where it slides off into the gravy, so that she has to fish it out with her fingers before she can go on. "A gas oven, lit, in the middle of the night, with children alone in the room, and which one of you lit it is beside the point, because what I mind is a flame going while the room is empty."
 
 Her father sets down the other dish and sits back with his arms folded. "What were you all doing in a kitchen at that hour?"
 

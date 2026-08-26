@@ -40,7 +40,7 @@ Ruth tilts her head, "kind of, he's the boy who wouldn't do the water thing," an
 
 She already knows the number, because she counted them herself the week it happened, before Ruth ever said so.
 
-The corridor lights go out at eight, and Fen stops answering partway through a sentence, an arm already off the mattress. Chloe lies on top of her own bed in the dark, still in her socks, corridor light in a bar along the floor, listening for the radiator Fen promised her.
+The corridor lights go out and Fen stops answering partway through a sentence, an arm already off the mattress. Chloe lies on top of her own bed in the dark, still in her socks, corridor light in a bar along the floor, listening for the radiator Fen promised her.
 
 "Fen." Silence. "Fen, are you asleep, or are you just really good at pretending?"
 
@@ -126,7 +126,7 @@ Later she asks Kavi about it, on the stairs, the stairwell empty except for the 
 
 "You already have all of it, Chloe, because his mom came and that was the whole of it," Kavi says, looking down at her from the stairs. "You keep asking about this, and you asked Ruth in April, at the trays, while I was standing right there."
 
-Her mother calls on Sundays at six, on the first-floor alcove phone with a chair beside it and people waiting in the corridor, so you learn to be quick or you learn to stop caring that they can hear you. The first Sunday runs fifty minutes and the fourth runs twenty, because most of what she has takes a while to set up before it goes anywhere, and somebody behind her shifts their weight the whole time.
+Her mother calls on Sundays, on the first-floor alcove phone with a chair beside it and people waiting in the corridor, so you learn to be quick or you learn to stop caring that they can hear you. The first Sunday runs fifty minutes and the fourth runs twenty, because most of what she has takes a while to set up before it goes anywhere, and somebody behind her shifts their weight the whole time.
 
 "Are you eating? I don't mean are they giving you food, I mean are you actually eating it."
 

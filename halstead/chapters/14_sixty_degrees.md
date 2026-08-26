@@ -206,8 +206,8 @@ Chloe spends the whole Watch on the third floor landing with five others, marker
 
 By late afternoon there are four teachers left standing in the whole building, three of them in one corridor, and Mr. Hearn is the last, with the library, one door, one window, a room full of furniture, and a crowd of students trying to get in there from twenty past three. It takes until eighteen minutes to four, by which point there are twenty on that corridor and somebody has brought a bench up from the second floor. People say afterward that when they finally got him he said "that's fine," put his glasses back on, and asked the boy nearest him whether he was done with the Burke.
 
-The board the next day says the staff lost the building at three forty-two, then gives the students a B and lists eleven failures.
+The board the next day says the staff lost the building at three forty-two, then gives the students a B and lists the failures.
 
 Chloe reads them in the corridor, where number three is about the east stairwell and names two students, neither of them Ruth. Number seven says that at no point in the two hours did anybody establish how many adults were in the building, and she stands in front of that one with her arms crossed until somebody behind her needs the space, because she spent those hours on a landing while the number of teachers upstairs went uncounted.
 
-Number seven is still with her at dinner, where Sam is describing the bannister for the fourth time to people who were standing underneath it.
+It is still with her at dinner, where Sam is describing the bannister for the fourth time to people who were standing underneath it.

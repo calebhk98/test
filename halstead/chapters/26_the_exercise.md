@@ -12,7 +12,7 @@ A specialist runs a controller gun across the whole arrangement until it answers
 
 A sergeant reads him the rules off a laminated card at the unhurried pace of a man who has already recited them a dozen times tonight: minimum engagement distance is five metres, blank ammunition is prohibited inside it, and there is no hand-to-hand on this exercise at any range whatsoever. A harness in a steady tone stops the soldier wearing it exactly where he stands, upright and visible, until a controller reaches him, controllers being the only people anywhere on the ground authorised to bring a casualty back.
 
-Then the card, carrying two grids of figures and listing the checkpoints between them in the order he is required to take them.
+Then the card, carrying its grids of figures and listing the checkpoints between them in the order he is required to take them.
 
 "You'll be moving between these on foot, at night," the sergeant says, tapping the card once against the table. "There's an opposing element working the ground the whole way between them. They're briefed to take you if they can, and they pick their own timing rather than yours, so plan on them finding you before you find them."
 
