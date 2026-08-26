@@ -96,7 +96,7 @@ ruth: dont
 
 sam: tidally locked
 
-ruth: sam that is not even remotely what tidally locked means and you have had eleven years to learn it properly
+ruth: sam that is not even remotely what tidally locked means and you have had years to learn it properly
 
 sam: it still fits
 
@@ -352,7 +352,7 @@ nadia: in three months
 
 eli: whats the churn
 
-nadia: they sign up, they look at nine employers, they leave. i would leave
+nadia: they sign up, they see whats on there, they leave. i would leave
 
 eli: also the sign up page still has lorem ipsum under the button
 
@@ -420,7 +420,7 @@ nadia: yes
 
 ________________
 
-Reading other people's listings takes her twelve days, and most of them go on the individual company career pages rather than on the boards, because a board publishes in one format and four thousand separate companies publish in as many. By the first week of October the site carries nineteen thousand openings, nine of which have anybody behind them who has agreed to pay her anything.
+Reading other people's listings takes her twelve days, and most of them go on the individual company career pages rather than on the boards, because a board publishes in one format and thousands of separate companies publish in as many. By the first week of October the site carries nineteen thousand openings, nine of which have anybody behind them who has agreed to pay her anything.
 
 ________________
 

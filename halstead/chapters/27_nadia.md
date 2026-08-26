@@ -26,9 +26,9 @@ All of the accounts were created between twenty to midnight and ten past, inside
 
 The rest of it is in the message logs. Traffic between an employer and a user stays on her own servers until an offer gets logged, a decision she made in June to hold the support calls down, so they had no way to ask for anything except in writing, in her building, in a log she owns and reads.
 
-Nine of them ask for a Social Security number and a bank routing number in the third message, in the same four sentences, comma splice and all, reproduced without a character moved. Three people answered, and one of them gave both numbers on the Sunday, so that her checking account was emptied on the Monday morning.
+They ask for a Social Security number and a bank routing number in the third message, in the same four sentences, comma splice and all, reproduced without a character moved. Three people answered, and one of them gave both numbers on the Sunday, so that her checking account was emptied on the Monday morning.
 
-Before she sits down she deletes the whole batch of accounts from where she's standing, which takes about ninety seconds, and then she takes the names into the back room and telephones them in turn, at nine at night.
+Before she sits down she deletes the whole batch of accounts from where she's standing, which takes about ninety seconds, and then she takes the names into the back room and telephones them in turn, late at night.
 
 The third call runs twenty minutes, because the woman on the other end wants to explain how it happened and Nadia lets her. The woman apologises over and over inside those twenty minutes, twice for taking up the evening and twice for having answered the message at all.
 
@@ -72,7 +72,7 @@ ________________
 
 The week that follows happens mostly before eight in the morning, before the laundromat opens and the phones start, at the kitchen table with a legal pad in front of her and the company names written down the side of it in the small, fast hand she keeps the shop's ledger in. Every last one of them typed a genuine state registration number into her employer form, and that is the interesting part all by itself, since anybody willing to file with the state is somebody the state now holds paper on.
 
-The first mornings go on the state's business filings, the site she used to register her own company, and most of them turn out to have been filed inside a single week eight months ago through one registered agent. Eight months old tells her the paperwork has been used before.
+The first mornings go on the state's business filings, the site she used to register her own company, and most of them turn out to have been filed inside a single week eight months ago through one registered agent. That age tells her the paperwork has been used before.
 
 A third morning goes on cross-referencing that agent against the county's property records, and it comes back a suite above a tire shop off the county road, a few miles from the laundromat. The agent's name is Hanley, and Hanley carries thirty-one filings against that address. On the fourth morning she calls the tire shop's front counter.
 
@@ -204,7 +204,7 @@ So she makes it easier. The generator carries a difficulty figure and she moves 
 
 The second thing is the interviews.
 
-In February she builds a pass over the submissions so that the reading gets done for her, tuned to put ten in front of her a week, and it does. The other sixty she reads as well, at the kitchen table before eight, because the ones it picks are not always the ones she'd have picked.
+In February she builds a pass over the submissions so that the reading gets done for her, tuned to put ten in front of her a week, and it does. The other sixty she reads as well, at the kitchen table before the phones start, because the ones it picks are not always the ones she'd have picked.
 
 She had meant to sit down with twelve people that year and she has sat down with thirty-one, nearly all of them by herself, in the back room with a folding table between chairs and a laptop open to whatever the candidate submitted the night before.
 
@@ -226,7 +226,7 @@ Another spends the whole interview describing a scheduling tool with real pride 
 
 Whoever answers the second question properly gets a longer interview than the schedule allows for, because she would rather spend twenty extra minutes establishing where the boundary of that person's knowledge actually sits than finish the afternoon guessing at it.
 
-The four she already has are the ones who answered it.
+The ones she already has are the ones who answered it.
 
 A board starts rate-limiting her submission traffic on a Saturday in March. Tomas catches it off a graph well outside anything he had ever been asked to watch, rewrites the back-off, puts it out himself, and tells her on the Monday, by which time it has held through a weekend. Asked why the retry ceiling stayed where it was while he was in there, he says the ceiling was working. She writes the ceiling herself that night.
 
