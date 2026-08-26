@@ -2602,7 +2602,11 @@ The elective list is on the wall outside the dining hall, four sheets long, with
 
 Twice she reads it through: drawing is on it, along with pottery, glassblowing, bookbinding, beekeeping, something called whittling, and a great many things she can only guess at from the name, while names are already on the climbing line and one on beekeeping.
 
-Sam has come up behind her. "What are you doing? Are you signing up for something or just reading the sheet all day?"
+Sam has come up behind her. "What are you doing?"
+
+He reads over her shoulder.
+
+"Are you signing up for something or just reading the sheet all day?"
 
 "Still reading, because half of these sound made up and I want to know which ones are real."
 
@@ -2641,7 +2645,7 @@ On the first morning the sheet in her box has one more line on it than last year
 
 The woman goes back to the form in front of her. "Nine-year-olds get eight, that's just how the sheet works this year, and you were on seven, so it's one more than you're used to. It goes up every single year, because that is supposed to be the whole idea of a school, so is there a problem with it?"
 
-"No, I wanted to know whether somebody had put it on there by mistake."
+"No." Chloe stays at the counter. "I wanted to know whether somebody had put it on there by mistake."
 
 "It's what the year gets rather than a mistake, and biology starts Tuesday whether you're ready for it or not."
 
@@ -2653,7 +2657,11 @@ Her new ones are chemistry, statistics and biology, and Ruth has them in a diffe
 
 Kavi turns the sheet over and puts a finger on the back of it. "Then it should say that on the top of it, because what it says is preferences. The second is that two of them are running in this building this year. Programming is on every ten-year-old's sheet and astronomy is on the elevens', so both of them have a teacher and an hour and a room, and the thing that stopped me is my age, which they had written down before they handed me anything to fill in."
 
-Sam has stopped with the spoon halfway up. "Is there a third, or can I go."
+Sam has stopped with the spoon halfway up. "Is there a third?"
+
+"There's a third," Kavi says.
+
+"Or can I go."
 
 "The third is cryptography, and cryptography happens at thirteen, which was already true in October when I asked for it. They kept the request the better part of a year and gave me back a date that was fixed before I wrote it down. That's all three of them," he says, squaring the sheet against the edge of the table.
 
@@ -2765,7 +2773,7 @@ Block two is hers, and she takes riding, because Priya takes riding.
 
 The stables are a walk past the north field, cinder path most of the way and mud from the gate on. You get the smell of the place a good while before you get the roof of it. Priya talks the whole way there and the whole way back, about horses first and then about everything, so that inside a fortnight Chloe can call every horse in the place by name and point out which two of them bite.
 
-"That's Cricket, she's fine, as long as you stand where she can see you."
+"That's Cricket." Priya doesn't slow down. "She's fine, as long as you stand where she can see you."
 
 "Where is it, exactly, that she can't see me, I want to know the actual blind spot."
 
@@ -2775,7 +2783,11 @@ Chloe can sit a canter by February, and she can get a horse over a low fence by 
 
 "You quit riding, and I had to hear about it from Anne instead of you," Priya says at dinner, two days later.
 
-"Yeah, and I should have told you instead of just not showing up on the Thursday, because I know that's the worse way to do it."
+"Yeah."
+
+Priya waits, her fork still in her hand.
+
+"I should have told you instead of just not showing up on the Thursday, because I know that's the worse way to do it."
 
 "Why, though, what happened out there? Anne asked me on Tuesday where you'd gone, and all I had for her was a shrug."
 
@@ -2783,7 +2795,7 @@ Chloe can sit a canter by February, and she can get a horse over a low fence by 
 
 Priya looks at her over the top of her glass. "It's fun for me, though, even the boring parts, even the parts you clearly can't stand."
 
-"I know, and that's the bit I kept waiting for the whole time, for it to turn into that for me too," Chloe says.
+"I know." Chloe looks at her own plate. "That's the bit I kept waiting for the whole time, for it to turn into that for me too," she says.
 
 ________________
 
@@ -2803,7 +2815,7 @@ Chloe loses the first few games, because she keeps counting the same card twice,
 
 In the third week, her father is at the table with a stack of paper and a pen.
 
-"What's that, is that the contract you were complaining about last week?"
+"What's that?" Chloe leans over his shoulder. "Is that the contract you were complaining about last week?"
 
 Her father turns a page. "A proposal from a vendor. They want six weeks and forty thousand dollars. It's very well written, which is what's bothering me."
 
@@ -2823,7 +2835,7 @@ Her father starts to answer but stops with the page half turned, then goes back 
 
 Her father takes the pen and puts a line under the whole paragraph. "There isn't a version of this where they've failed to do it. That's why it reads so well. This is four pages of the same trick, isn't it."
 
-"No idea, I only got as far as that one."
+"No idea." Chloe is still on the second paragraph. "I only got as far as that one."
 
 Going through the rest of the pages at the table that night, he finds more of them. On the Thursday, he asks the vendor which of the sentences in section three they would put a date and a number against. Some come back with dates, but the rest come back as the same sentences with different words in them, and in the car on Friday he goes through the lot of them for her while she eats a sandwich.
 
@@ -4391,9 +4403,9 @@ People are getting up out of their chairs as she goes back to hers, unhurried, h
 
 In the second week of May she writes her first practice paper, at a table in the library with the mark scheme face down beside her, taking over an hour on a page restating what the shed already made obvious, and she gives it to Kavi to mark, because Kavi marks the way the examiners mark and will decline to be kind about it.
 
-"Two out of four, and the ones you're missing are the ones that would have told me you actually understood it." Kavi has the page squared in front of him and a pen sideways in his fingers. "You have the rule, and you have where it comes from." He taps the pen twice on the third line. "Then you've written *and so the risk sits with the buyer*, which is your second line in a different hat, and then you've stopped. The marker reads a sentence that sounds like new information, but finds it's what he already had. That is worse for you than leaving the line out."
+"Two out of four," Kavi says. "And the ones you're missing are the ones that would have told me you actually understood it." He has the page squared in front of him and a pen sideways in his fingers. "You have the rule, and you have where it comes from." He taps the pen twice on the third line. "Then you've written *and so the risk sits with the buyer*, which is your second line in a different hat, and then you've stopped. The marker reads a sentence that sounds like new information, but finds it's what he already had. That is worse for you than leaving the line out."
 
-"It's the same sentence, just restated so it sounds like it's adding something."
+"It's the same sentence," she says. "Just restated so it sounds like it's adding something."
 
 "It's the same sentence to you, because you already know why the risk sits with the buyer. The marker has to be given that reasoning rather than assumed to already have it, and right now the page hands him a single idea wearing two coats. He can only mark what is actually on the paper in front of him." He turns the page around and pushes it back at her with the pen laid across the empty half of it. "Write me the shed burning down. Not the rule about it, the actual event: goods inside, fire on the Tuesday, who's holding the loss when the smoke clears, and why that person and not somebody else."
 
@@ -4437,9 +4449,9 @@ The forge is Thursdays, and has been for years, the work down there staying betw
 
 "You're off early."
 
-"Paper on Thursday, same as the last few."
+"Paper on Thursday," Chloe says. "Same as the last few."
 
-Banking the fire down for the night, working with his back to her. "You've had a paper on Thursday for weeks. Tongs on the rack. The ones you made. Take them with you."
+Banking the fire down for the night, working with his back to her. "You've had a paper on Thursday for weeks," he says. "Tongs on the rack." He nods at them without turning. "The ones you made. Take them with you."
 
 The tongs go home to the hook on the back of her door, beside the bag she made in her second year.
 
@@ -4453,7 +4465,7 @@ Her mother watches that from the kitchen window a while before she comes out.
 
 "You want me to find you something to do? You've been out here every afternoon for two weeks and I can't tell if you're resting or just avoiding the inside of the house."
 
-"Like what? I can't think what there'd even be to do out here." Chloe keeps her eyes shut against the sun and delivers the whole answer in the direction of the garage roof.
+"Like what?" Chloe keeps her eyes shut against the sun and delivers the rest in the direction of the garage roof. "I can't think what there'd even be to do out here."
 
 Her mother sets a glass of iced tea down on the step beside her. "There's a shelf in the garage your father's been meaning to put up since March, and at this rate it'll still be leaning against the wall at Christmas. Or skip it entirely. I'm not asking you to put up a shelf, I'm asking whether you actually want to sit still this much."
 
@@ -4576,9 +4588,9 @@ The men come out a few blocks later, between two parked cars, seven of them in a
 
 Chloe reads it fast: seven grown men who chose this and have presumably done it before. Seven, three armed. Every one of them is standing somewhere that makes sense, and she puts them at her own level until something tells her otherwise. Three ways out: the fence, the gap under it, the alley. She's choosing between them when Sam says it.
 
-Sam says, "Hang on. Let me have this one."
+Sam says, "Hang on." "Let me have this one."
 
-Ruth stays put. "They're adults. Three guns."
+Ruth stays put. "They're adults." "Three guns."
 
 "There's seven of them, and I'm basically one myself. That's fair." He is already unhooking his thumbs from his pockets. "I've fought people my whole life. None of them were adults, and none of them were strangers."
 
@@ -4683,7 +4695,7 @@ Ruth has a laptop open on the arm of the couch in the third-floor common room, r
 
 "That card's been in your hand all evening," Ruth says, still refreshing.
 
-"I'm getting to it, I'm just deciding whether the game's worth finishing first. The board isn't going anywhere."
+"I'm getting to it," Sam says. "I'm just deciding whether the game's worth finishing first. The board isn't going anywhere."
 
 Chloe is on the floor with the printed list of deadlines in her lap, going down it with a pen even though it reads exactly as it did the last time she checked. A line gets crossed out twice, for no reason she could name.
 
@@ -7045,7 +7057,7 @@ The months underneath that sentence look, from outside, like everything is fine.
 
 The study group stays folded into a smaller room in her head: something she manages rather than something she shares. Devansh, who ends up in most of her classes by spring, gets the closest look at it, though he has no idea what he's actually seeing. That spring he brings her a proof he's stuck on. The error takes her under a minute to find, a sign flipped two steps in, and she tells him so directly. "That's not wrong because the idea's bad, Devansh. It's wrong because you dropped a negative on line six."
 
-The proof gets fixed. "Thanks," he says. Then, halfway to the door with his bag over his shoulder: "Are you ever stuck on anything?"
+The proof gets fixed, the thanks given, and then, halfway to the door with his bag over his shoulder: "Are you ever stuck on anything?"
 
 "No," she says, and it's close enough to true, because being stuck and being wrong about the reason feel like different things from the inside.
 

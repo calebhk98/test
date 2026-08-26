@@ -198,7 +198,7 @@ Her father starts to answer but stops with the page half turned, then goes back 
 
 Her father takes the pen and puts a line under the whole paragraph. "There isn't a version of this where they've failed to do it. That's why it reads so well. This is four pages of the same trick, isn't it."
 
-"No idea, I only got as far as that one."
+"No idea." Chloe is still on the second paragraph. "I only got as far as that one."
 
 Going through the rest of the pages at the table that night, he finds more of them. On the Thursday, he asks the vendor which of the sentences in section three they would put a date and a number against. Some come back with dates, but the rest come back as the same sentences with different words in them, and in the car on Friday he goes through the lot of them for her while she eats a sandwich.
 

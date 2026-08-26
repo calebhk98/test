@@ -50,7 +50,7 @@ The months underneath that sentence look, from outside, like everything is fine.
 
 The study group stays folded into a smaller room in her head: something she manages rather than something she shares. Devansh, who ends up in most of her classes by spring, gets the closest look at it, though he has no idea what he's actually seeing. That spring he brings her a proof he's stuck on. The error takes her under a minute to find, a sign flipped two steps in, and she tells him so directly. "That's not wrong because the idea's bad, Devansh. It's wrong because you dropped a negative on line six."
 
-The proof gets fixed. "Thanks," he says. Then, halfway to the door with his bag over his shoulder: "Are you ever stuck on anything?"
+The proof gets fixed, the thanks given, and then, halfway to the door with his bag over his shoulder: "Are you ever stuck on anything?"
 
 "No," she says, and it's close enough to true, because being stuck and being wrong about the reason feel like different things from the inside.
 

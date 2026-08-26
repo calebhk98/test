@@ -10,7 +10,7 @@ Ruth has a laptop open on the arm of the couch in the third-floor common room, r
 
 "That card's been in your hand all evening," Ruth says, still refreshing.
 
-"I'm getting to it, I'm just deciding whether the game's worth finishing first. The board isn't going anywhere."
+"I'm getting to it," Sam says. "I'm just deciding whether the game's worth finishing first. The board isn't going anywhere."
 
 Chloe is on the floor with the printed list of deadlines in her lap, going down it with a pen even though it reads exactly as it did the last time she checked. A line gets crossed out twice, for no reason she could name.
 
