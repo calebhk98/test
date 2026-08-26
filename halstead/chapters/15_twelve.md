@@ -118,7 +118,7 @@ Chloe is annoyed when the alarm wakes her. It's the small one, the one that sits
 
 Sam gets there last.
 
-In under thirty seconds, Kavi is on their comms. "It's AES-256," he says. "But, it's a six-digit pairing code and they never changed it off default." He's already got the campus cluster chewing on it. "You just do a few billion codes and see which one gives you something that isn't noise. It's four seconds of compute. It's not even interesting."
+In under thirty seconds, Kavi is on their comms. "It's AES-256," he says. "But, it's a six-digit pairing code and they never changed it off default." He's already got the campus cluster chewing on it. "You just run the whole keyspace and see which one gives you something that isn't noise. It's four seconds of compute. It's not even interesting."
 
 "How is that AES-256," Sam says, wiping his face. "Why wouldn't they change it?"
 
@@ -200,7 +200,7 @@ Sam sits down across from her, elbows on his knees, watching the pen move rather
 
 Kavi is going through the equipment: two bags, a laptop, a lockpick set, a pair of bolt cutters that are the wrong bolt cutters for the fence they came over. The four of them are dressed like a maintenance crew: dark work trousers, plain jackets, nothing with a name on it, no wallets, no phones, no pockets holding anything at all.
 
-"They didn't even do costumes properly," Sam says. "Look at this. Look at this guy's boots."
+"They didn't even do costumes properly," Kavi says. "Look at this. Look at this guy's boots."
 
 "It worked," Sam says, looking pleased with himself.
 

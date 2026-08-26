@@ -82,7 +82,7 @@ The test runs five weeks. For most of them the tool sits somewhere only Eli and 
 
 Eli spends the whole run of it badly slept and mostly cheerful, a couple of shirts in rotation and the same breakfast every morning, because deciding costs something he'd rather spend elsewhere. Kavi spends it in his own chair, turning whatever's on the table over in his hands and setting it back down exactly where it was.
 
-Chloe turns twenty-one somewhere in the middle of it. It gets mentioned afterward, once, in passing, the week she finishes the last page; there's no clean place for a birthday inside a document about federal sentencing exposure, so it waits.
+Chloe turns twenty-one in August, two months after the last page goes in, and it gets mentioned once and then not again. There is no clean place for a birthday next to a document about federal sentencing exposure.
 
 Chloe spends most of that stretch at her own kitchen counter, most nights, the coffee going cold twice before she remembers it's there. What she has at the end of it, typed and printed and read back through: what the tool leaves alone no matter what the access allows, what counts as being noticed and what falls short of that, and the rule everybody reads twice, that any of them can end it, no vote and no argument, and the rest have one hour to comply.
 

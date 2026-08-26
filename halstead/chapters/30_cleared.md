@@ -58,13 +58,13 @@ She does, a level sentence in each, the kind of line a phrasebook prints on its 
 
 The classes come after that, all of them, mathematics through politics through the forge, and it takes a full twenty minutes to get through the list. His coffee cools enough in the open thermos cap that he crosses to her counter partway through and tops it up, standing there through one whole answer before he sits back down, and he lets her finish every year of it before he turns the page.
 
-"There's also an internal law examination," Chloe says. "It's the school's own, not accredited anywhere outside it. It wouldn't hold up in an actual court."
+"There's the bar as well," Chloe says. "Everyone sits it at sixteen. It's the one that checks you know the law of the country you live in."
 
-"Understood." He writes it down anyway.
+Whitaker's pen stops for about the length of a word, then starts again. "Sat where?"
 
-"You're recording something with no legal standing."
+"At school. Two days, in the long room on the second floor, and the teachers who wrote it proctor it themselves."
 
-"You told me about it straight," Whitaker says. "That's standing enough for what I need it for."
+"Sixteen," Whitaker says, and writes it down, and asks her nothing else about it.
 
 Two published papers come last on that page, and he's already ahead of her on both: the folder opens, clean printouts slide out, already pulled, a line highlighted on each, before she's finished saying the name of either journal.
 
@@ -102,6 +102,6 @@ The reasoning goes down along with the answer, as everything else has, and he cl
 
 At the door, coat half on, he taps the folder once against his palm. "Now I get to write it up in triplicate for a form that only ever needed one copy." He says it to the folder, not to her, and he's already down the first flight of stairs before she's worked out it was the joke.
 
-The clearance comes through in the autumn, on an ordinary Tuesday, thin enough that she almost sets it on the counter with the takeout menus before the seal above her own name catches the light. Standing, still in her coat, she reads it once, then reads the single paragraph a second time before she sits down to do anything else with it, and files it in the kitchen drawer where everything that's needed keeping ends up.
+The clearance comes through in December, on an ordinary Tuesday, thin enough that she almost sets it on the counter with the takeout menus before the seal above her own name catches the light. Standing, still in her coat, she reads it once, then reads the single paragraph a second time before she sits down to do anything else with it, and files it in the kitchen drawer where everything that's needed keeping ends up.
 
 She starts in January. She's twenty-one in August.

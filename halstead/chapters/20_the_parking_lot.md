@@ -2,7 +2,7 @@
 
 *June 2022*
 
-They are the first to sneak out in ten years, the entire reason it is worth doing.
+They are the first to sneak out since the school opened, the entire reason it is worth doing.
 
 In the fortnight before, the preparation divides itself between them: Nadia stands next to a maintenance supervisor in the dining hall on a Tuesday, talks about the weather for half a minute, and walks away with his badge duplicated; Chloe gets into the corridor cameras and sets them looping on a stretch of empty hallway; Ruth brings her box, which throws all its ugly things simultaneously at any recorder in range and writes noise over whatever it reaches; and Sam clocks the night patrol's second pass night after night, until the interval between it and the first is regular enough to walk through at an ordinary speed.
 
