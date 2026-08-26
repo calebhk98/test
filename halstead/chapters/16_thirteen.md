@@ -44,6 +44,8 @@ In February she offers to read the 1981 paper and mark him on that, and he says 
 
 The December sheet has names doing well on it and one still blank, and because the grade at the bottom covers the lot it comes out lower than her grade in anything else that term, so she reads it twice in the corridor, folds it into quarters and pockets it rather than binning it.
 
+A week later she stops at the mathematics office on her way past and asks how a blank column is handled at the end of the year, in the flattest words she can find for it and with no name anywhere in the question. The woman at the desk tells her: the column is scored as submitted work, an absent submission scores nothing, the scheme has no other entry available for it, and a student teacher records what is on the page rather than what is not. It takes under a minute and it answers everything she asked. Chloe thanks her and goes.
+
 Marek does the work and keeps it. The sheet has a column and the column is for paper. The number that comes out of the column goes onto her record as well as his, and she has been asking him for it since October, and asking him is the whole of what she is allowed to do about it.
 
 Marek fails the course, because a blank sheet leaves the mark scheme exactly one option, and Chloe is the one who writes it in. In January he is at breakfast as he was in December, in his own year, working through the building, so whatever a fail costs a student here, expulsion is no part of it. What it does cost, whether it follows him onto anything that matters, whether anybody sat him down about it, stays outside her reach for years, and she is careful for a long time about how she asks.
@@ -112,6 +114,14 @@ Ruth reads the column with her chin on her fist. "So it has to look like somethi
 
 That takes the rest of the term, and what comes out is slow and ugly and pushes exactly as much traffic at three on a Sunday morning, with all of them asleep, as on a Thursday night with all of them typing. Amberg could take it apart in an afternoon, and not one of them asks him to. They are on the eight o'clock bus the first Saturday in December, and it goes into town with all of them on it.
 
+Bex has the day out loud before the bus is off the gravel, the hardware place first because it shuts at noon, then food, then everything after that, and she revises it twice before the main road, moving the food and then moving the food back.
+
+"If we get the later bus home we're," Chloe says.
+
+"Walking the last bit in the dark, which is the whole reason we're on the earlier bus, so that's settled," Bex says, and goes down the aisle holding the rail to tell the rest of them.
+
+The plan works, all of it, including the food.
+
 Formal epistemology starts with a sentence on the board, *I know that I am sitting in this room*, and the professor spends the hour asking what would have to be true for that to count as knowledge, so by the end most of the room doubts it knows anything at all. "Justified plus true still lets a lucky guess through," she says, moving to the next slide before anyone has finished writing it down, and Chloe stands in the corridor afterwards for a minute with her bag still open before she goes on to German.
 
 Block two is hers, so she puts fencing and game theory on the sheet, and fencing she is bad at the way she was bad at dance, seeing the opening and arriving a fifth of a second after it has closed. Game theory she has inside a fortnight, then loses to Kavi across a table for the rest of the term, because the mathematics tells her what to do against somebody playing properly while Kavi has spent his whole life playing the person instead of the board.
@@ -146,11 +156,21 @@ Eli puts a cipher on the table one Thursday, between the salt and the water jug,
 
 "A parking system, live, protecting somebody's actual licence plates right now."
 
-Kavi takes it off him inside a minute, offhand about it, and slides it to Chloe, while Ruth reads it upside down and says the key is a date, probably in March. Priya wants to know whether they are allowed to be holding it at all, which starts a second argument, and Odile says the interesting question is why a parking company bought that and what the salesman told them, which starts a third. Sam eats a second dinner through all three arguments and contributes twice.
+Kavi takes it off him inside a minute, offhand about it, and slides it to Chloe.
+
+"The key's a date," Ruth says, reading it upside down from across the table. "There's a March sitting in the middle of it, or something behaving like a March."
+
+"Are we allowed to be holding this at all, though, because it's a live system with somebody's actual plates going through it tonight and Eli's got it on a napkin next to the salt, and I want to know what the answer to that is before anybody writes anything down," Priya says.
+
+Sam eats a second dinner through both arguments and contributes twice.
 
 Nadia turns the napkin round toward Chloe with a finger.
 
 "It's not a date, it's a plate."
+
+"A plate," Iyad says, over the end of it, at the volume of the far end of the table. "That's what it is, that's a registration off the system itself, sitting right in the middle of the thing, and everybody's been reading the ends of it and nobody's looked at the middle."
+
+Nadia waits for him to finish.
 
 "It could be a date, since dates have letters in them too, sometimes."
 

@@ -36,7 +36,15 @@ At dinner she clears the plate, but it could have been anything on it.
 
 She tries the old things in turn: the count goes on her leg walking down to the range, the way it did on the archery field, and the number comes out unchanged on the Friday, and she holds her breath at different places in the cycle, and gets dizzy for her trouble. By the second week of March she has weeks of cards fanned out across the floor of her room. A pattern turns up on the Tuesday and she spends days on it before it turns out to be the wind through the open end of the lane, after which she bends the corner of that card back and forth until it comes off in her fingers.
 
-Later that month she asks the office for every range card in the year, and a woman hands her a box of ninety with no lock on it. It takes her evenings, and what comes out of it is eleven people who have stopped moving, their curves flattening into a single narrow band whether it took fifty sessions or a handful, and one of them sitting where she landed since the previous November.
+Later that month she asks the office for every range card in the year, and a woman hands her a box of ninety with no lock on it, off a shelf with the year below's box sitting beside it, unlocked as well.
+
+The cards are out on the long table at dinner with her plate pushed up against the salt.
+
+"You're looking for people who stopped where you stopped," Nadia says, going past behind her with a tray, "so you can find out whether it comes back." She sits down at the far end and gets on with her food.
+
+"What are the cards?" Sam says.
+
+It takes her evenings, and what comes out of it is eleven people who have stopped moving, their curves flattening into a single narrow band whether it took fifty sessions or a handful, and one of them sitting where she landed since the previous November.
 
 Voss reads it standing in the doorway of the range office.
 
@@ -46,7 +54,11 @@ Voss reads it standing in the doorway of the range office.
 
 "So what is it, then, if you know it's real?"
 
-Voss taps the pages straight against the desk, hands them back to her and tells her to get down to point six because her block started without her, and she goes, running the numbers again on the way down.
+Voss taps the pages straight against the desk and hands them back to her.
+
+"Point six, Kessler. Your block started without you."
+
+Chloe goes, running the numbers again the whole way down. The box goes back on the shelf that evening, square on top of the year below's, and she leaves both of them where they are.
 
 Ruth comes down on a Saturday in April with a clipboard and a bag of the toffees Priya's mother sends, and sits behind her for the afternoon because Chloe asked her to.
 
@@ -104,6 +116,8 @@ Rustem buys a dozen dead motors at a farm auction for a few dollars apiece, seve
 
 Forty goes to a girl called Fen at ten percent against a table saw, and the last thirty to Priya at twelve, unsecured, because it is Priya. They all pay her back, and she finishes the year with two hundred and seventeen dollars to Rustem's nine hundred and forty.
 
+Iyad starts a list of it in October without anybody asking him to, everybody in the year and what they are doing with theirs, and in June he goes round the tables collecting the figures by name and in order and reading out what he has so far to whoever is sitting there. Chloe gives him seventeen. Rustem's number is a couple of lines above hers on the page.
+
 Hark has her at the board in April with the ledger written up, and reads the columns from the back with her arms folded before she says anything.
 
 "You bought a piece of somebody else's ceiling, whether you meant to or not."
@@ -158,7 +172,23 @@ Chloe looks at the door. "But they teach driving at school next year, so this is
 
 "Cool, I bet they teach driving at school next year," he says, opening his own door. "I'm teaching my daughter to drive anyway, that one's mine, other side."
 
-Her father takes her to the church lot behind the tire place, empty on a Sunday, with a row of light poles to go round, and she stalls it over and over in the first half hour and twice in the second. By the third Sunday she is out on the road past the reservoir with him in the passenger seat, and the coffee in his hand is still full at the far end of the reservoir.
+Her father takes her to the church lot behind the tire place, empty on a Sunday, with a row of light poles to go round, and she stalls it over and over in the first half hour and twice in the second.
+
+On the second Sunday there are people out front of the tire place when they pull in, and Kayleigh Burns comes across the lot with a paper cup in her hand while Chloe is stopped at the far end with the engine off.
+
+"I thought that was you." Kayleigh has her free hand up against the sun. "Are you back the whole summer?"
+
+"Yeah, till August."
+
+"My brother works here Saturdays, so I'm out here all the time now." She looks at the car and then back. "Where do you go now, is it still that school upstate?"
+
+"Yeah, still there."
+
+"That's good." Somebody calls her from the doorway of the shop and she is already turning. "Say hi to your mom."
+
+Chloe puts it in gear and stalls it pulling out of the lot, and her father drinks his coffee and looks at the light poles and says nothing at all about the stall.
+
+By the third Sunday she is out on the road past the reservoir with him in the passenger seat, and the coffee in his hand is still full at the far end of the reservoir.
 
 "You're looking too far ahead."
 

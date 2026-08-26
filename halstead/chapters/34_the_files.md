@@ -90,6 +90,8 @@ ruth: yes
 
 Chloe reads yes twice before anyone types again, and in the gap she gets up from the desk and pours a glass of water she sets down untouched by the keyboard, her hands needing something else to be doing while she waits to see who goes next. Nadia, back at the counter with the shop's lights off around her, reads that silence and stays exactly where she's standing, arms folded, phone propped against the register.
 
+On the page about who is in contact with whom, Chloe and Nadia sit in the same list under the same date. In the chat it is Sam between them, as it has been at every table since they were children, and neither of them has ever said a word to him about it.
+
 ruth: i keep saying we're ahead
 
 ruth: ive been saying it for a year like its a fact ive accepted

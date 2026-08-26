@@ -80,7 +80,15 @@ Word travels round the company by chow that afternoon, the way a number like tha
 
 "Of the shots. There were people in my year who never missed."
 
-The table takes this for modesty and tells him so at some volume, because the score has already gone up on a board in the hallway outside the orderly room. Sam runs the correction all the way out anyway. Odile comes out first, a girl who took him apart on a mat in front of thirty people, then apologised for it; then the April he lost a small object out of his own boot and cost somebody else half an hour of an evening getting it back; by the end of it several of them are laughing at him, while another has stopped believing a word of any of it.
+"Sure there were." The man who asked has both elbows either side of his tray. "Nobody maxes that test on a cold morning and then sits here telling you what he's bad at. Your score's been up on the board outside the orderly room since lunchtime."
+
+"The board's fine, it's just got a top on it, and everybody who hits the top gets the same number." Sam has the pitcher up and hasn't poured with it yet. "There was a girl at that school called Odile. She took me apart on a mat in front of thirty people, put me down twice inside a minute, and then came and found me afterwards to apologise for it, because she reckoned she'd embarrassed me in front of the year."
+
+"A girl."
+
+"She was second in the year and I was first, and she still put me down twice." He pours. "Then in April I lost a small thing out of my own boot and cost a man half an evening getting it back, so you can have that as well."
+
+By the end of it several of them are laughing at him, while another has stopped believing a word of any of it.
 
 "Boarding school," says the third.
 

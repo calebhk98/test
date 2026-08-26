@@ -48,6 +48,12 @@ Sam has the syrup upside down over his second plate, timing the pour and countin
 
 "It's not not going to be different. It's just also, on top of whatever else it is, going to be the forge, as it always is."
 
+Chloe has the next part of that ready and gets as far as the first word of it.
+
+"You take the thing you're worst at and you stay in it," Nadia says, to the table rather than to Chloe. "Every year. It's the only pattern you've got."
+
+Chloe takes her hand off the table and puts it in her lap. By the time anybody answers, Nadia is back to dividing the bill.
+
 Sam has the specials card up off the table, holding it at arm's length like a document recovered from an archive. "*Come hither for our world famous short stack.*" He puts the card down and leaves it face up between them. "*Hither.* The last time anyone said *hither*, it was Shakespeare."
 
 "It's in the dictionary, which makes it a word whether you like the sound of it or not," Ruth says.

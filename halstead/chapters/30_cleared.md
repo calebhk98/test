@@ -38,7 +38,7 @@ Before he asks her anything, he tells her what the visit is for. A full accounti
 
 "It goes into your file," Whitaker says, "and it stays sealed there. Access stops at the file itself, for you and for whoever comes asking about you later."
 
-That's the whole answer, first try, the real one instead of a softer one built to sound reassuring. Chloe likes him for it. He's thorough, and direct about what each question is actually for, and she gives him more than the minimum from the first page onward, because he's already shown her what happens to it.
+That's the whole answer, first try, the real one rather than something softer built to sound reassuring. Chloe likes him for it. He's thorough, and direct about what each question is actually for, and she gives him more than the minimum from the first page onward, because he's already shown her what happens to it.
 
 "Residential the whole time?" he asks, pen already moving.
 
@@ -46,7 +46,7 @@ That's the whole answer, first try, the real one instead of a softer one built t
 
 "From when?"
 
-"I started that April, a few months after I turned seven. There was a programme the summer before, which is how they found me, or how I found them, depending which end you look from."
+"I started that April, a few months after my seventh birthday. There was a programme the summer before, which is how they found me, or how I found them, depending which end you look from."
 
 At that he looks up, once, the pen briefly still against the page. "That's young."
 
@@ -57,6 +57,16 @@ Rather than press her for more he lets it sit there and moves the pen to the nex
 She does, a level sentence in each, the kind of line a phrasebook prints on its first page. Into the notebook goes the fact that she said it, and his pen moves to the fourth item on the list, the content of the sentence itself apparently beside the point.
 
 The classes come after that, all of them, mathematics through politics through the forge, and it takes a full twenty minutes to get through the list. His coffee cools enough in the open thermos cap that he crosses to her counter partway through and tops it up, standing there through one whole answer before he sits back down, and he lets her finish every year of it before he turns the page.
+
+"You taught as well," he says, somewhere in the seventh year of the list, without making a question of it.
+
+"From that year on. Mathematics, to the year below me. Seven of them the first year, and one of them failed."
+
+"Whose column does that go in."
+
+"Mine. He did the whole year of the work and handed none of it in, and getting it out of him was the job, and I never found the way to do it."
+
+That goes down in the notebook, and he turns the page.
 
 "There's the bar as well," Chloe says. "Everyone sits it at sixteen. It's the one that checks you know the law of the country you live in."
 
@@ -93,6 +103,12 @@ Around noon the notebook closes, and he tells her he'll be back once he's run do
 ________________
 
 The first week of November he comes back, in a coat this time, the light already gone and the radiator behind him ticking the entire time. The folder is thicker than it was in October, a second stack of pages clipped behind the first, and he sets it down where he set it in October before he takes his own coat off.
+
+Before the funding he mentions the reference interviews, all of them done now, and that they run about an hour apiece, and that the longest of them went well into the afternoon.
+
+"That'll be Bex," Chloe says. "Alcantar."
+
+He doesn't confirm it and he doesn't deny it, and he writes something down before he goes on.
 
 The funding is what he asks about: who the school's principal donor is, name or foundation, anything at all, and he waits while she actually thinks about it instead of answering fast to be done with it.
 

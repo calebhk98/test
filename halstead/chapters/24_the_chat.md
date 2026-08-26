@@ -148,6 +148,8 @@ kavi: still worth asking
 
 By dinner a new thread has replaced it, about something else entirely, and the November date stays exactly as unsettled as it was that morning.
 
+In October the question comes round again, in an email from Iyad to most of the year, everybody's name typed at the head of their own line with the thing under it he wants back from them: Ruth's Providence weekend, whether Theo's leave is the week he said it was, whether Sam has been told yet, which stretch Priya expects to have a signal in. Chloe answers hers inside a minute. By Friday most of the lines have dates against them and there is a weekend in November with a column of names sitting under it, and Nadia's Tuesday is still up in the chat where it was, with eli's count under it.
+
 ________________
 
 Priya's messages land days behind whatever prompted them, sometimes a week, whole conversations she answers into after the group has already moved on twice, and everyone answers her back anyway. She posts whenever the signal holds long enough to send anything at all.
@@ -282,7 +284,11 @@ The branch is a converted storefront a few blocks from the shop, with desks behi
 
 "What size does it take."
 
-The figure he gives is more than she has ever had at once. Sitting with it a second, she gives him the figure she can actually hold across a month, which is a few hundred dollars under his, and tells him what holding it costs her, which is that the difference sits in his branch instead of in her hand on the fourth of every month.
+"Twenty thousand. Held in the account, not passing through it."
+
+It is more than she has ever had at once, and she sits with it a second before she answers.
+
+"I can hold it a few hundred dollars under that, across a month, every month, and I can show you the months." She squares the statements against the edge of his desk again. "What the difference costs me is that it sits in your branch instead of in my hand on the fourth."
 
 "Three hundred under isn't the number."
 

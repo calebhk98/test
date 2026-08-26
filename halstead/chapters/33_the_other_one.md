@@ -74,7 +74,13 @@ chloe: someones had a file on us since before any of us could read. if we get a 
 
 ________________
 
-Theo could have written cleaner rules than anyone else at that table, since it is, more or less, his actual job. Once, he says so, and in the next breath adds that his name needs to stay off any document that describes how to break the law he's paid to uphold. So it goes to Chloe.
+Theo could have written cleaner rules than anyone else at that table, since it is, more or less, his actual job, and he says so once.
+
+theo: i could write this. its the thing i do all day
+
+theo: and my name cant be anywhere on a document that sets out how to get round the law i get paid to enforce
+
+So it goes to Chloe.
 
 Eli builds the entry itself as he built the first, in small pieces that look unremarkable on their own. Kavi builds the exit, meaning whatever erases the traces of the entry as it happens, not after, because after is too late if anyone's actually watching, and for the better part of a week neither of them calls it anything but "the plumbing" in the group chat.
 
@@ -90,7 +96,27 @@ The first page is the shortest to write and the surest: it limits the tool to th
 
 The middle section she rewrites, and then rewrites what she rewrote. "Noticed" has to mean a specific, confirmable event: a name gets called, an account gets frozen, somebody shows up at a door. A blip that looks wrong for a minute and settles again stays outside that definition, on purpose. The line goes in twice, in different words each time, because she already knows which of them is going to be the one squinting at an ordinary blip at two in the morning someday, wondering if this is the real thing.
 
-The stop clause gets exactly one line and no examples, on purpose. Any one of them can end it, and the ending starts the moment it's invoked: no vote, no reason attached. Ruth argues once for adding a requirement to state a reason first, and loses the argument to Nadia, whose whole case is proportion: a person gets to act on being scared enough to stop without first building a case for it, because building the case is exactly the delay the clause exists to remove.
+The stop clause gets exactly one line and no examples, on purpose. Any one of them can end it, and the ending starts the moment it's invoked: no vote, no reason attached.
+
+ruth: it should say the person gives a reason
+
+ruth: not to get permission. for the record. so we know afterwards what it was
+
+nadia: no
+
+ruth: a sentence, nadia. thats all im asking for
+
+nadia: a sentence is a case. if youre building a case youre not stopping, youre asking
+
+nadia: whoevers scared enough to pull it is scared enough. thats the whole qualification
+
+ruth: and if theyre wrong
+
+nadia: then theyre wrong and were off and nothing has happened to anybody
+
+ruth: fine
+
+ruth: strike it
 
 The page on what happens if it's noticed is the shortest of them and the most rehearsed: who calls whom first, what gets denied and by whom, and the flat instruction that all of them stay off the phone with anyone outside the group, a lawyer included, until they are all on one call together. It assumes noticing looks like something happening to one of them. The version that leaves only a gap closing again before anyone can point to it, quiet and invisible, over before it registers, sits outside every page of it.
 
@@ -110,10 +136,16 @@ Sam signs the day he finally gets an actual number for how long the test runs, b
 
 sam: five weeks. ok
 
-Ruth signs with the numbers already spent; for her the argument ended the moment she handed them to Eli in the chat.
+Ruth signs with the numbers already spent, the argument over for her the moment she handed them to Eli in the chat.
+
+ruth: in. the numbers stand
 
 Chloe signs the night she finishes the last of it, before she's had time to reconsider a word of it. Ruth prints her own copy that week and files it in the drawer where the camera-defeating box she built as a child still lives, both of them the kind of thing a person keeps rather than throws away.
 
-Theo signs off last, at the far end of the test, and says again that this is insane.
+Theo signs off last, at the far end of the test.
+
+theo: still the stupidest thing any of us has ever done
+
+theo: in
 
 The government has already decided to trust her with things it keeps far from most people, and she's about to spend that trust on a file it always meant to keep sealed from her too. What that actually costs her she works through exactly once, on the drive home from the office the week the document arrives, and the thought ends in about as long as it takes a light to change.

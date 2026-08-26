@@ -52,9 +52,9 @@ Self defense is three rounds an hour, with one person standing in the middle whi
 
 "You're ten seconds off a minute and you're doing pairs."
 
-Pairs take the rest of the hour, and then she finds Ruth at the sinks and acts out the hold again with her hands, and then Sam, and then a boy from the year below who was standing right there when it happened.
+Pairs take the rest of the hour, and then she finds Ruth at the sinks and acts out the hold again with her hands, and then Sam, and then a boy from the year below who was standing right there when it happened. Bex comes in on the end of that, and when the next person through the door asks what happened Bex tells her, fifty seconds and the third round and the knee across the shin at the finish, all of it in order and all of it right, and Chloe stands at the sink with her hands under the water and lets it run.
 
-Seven of the year below go on her teaching list in September while Marek goes on somebody else's, and she reads that off the noticeboard on the first morning, catches herself grinning at it, and takes the stairs at a run going up. Her hour with them is differential equations and the analysis that runs beside it, which she was doing at their age, taught by the man who teaches them the other hours of it now, and it goes well enough until November, when all of them get the same question wrong in the same way.
+Seven of the year below go on her teaching list in September while Marek goes on somebody else's, and she reads that off the noticeboard on the first morning, catches herself grinning at it, and reads the other teacher's list all the way to the bottom before she takes the stairs at a run going up. Her hour with them is differential equations and the analysis that runs beside it, which she was doing at their age, taught by the man who teaches them the other hours of it now, and it goes well enough until November, when all of them get the same question wrong in the same way.
 
 Going through the papers twice takes her back to her own notes from the third week, and there it is in her own handwriting: she taught them the ordering reversed, all of them learned it the way she gave it to them, and all of them arrived exactly where she had pointed them, and because everything before the test came out the same either way round, it sat there for months.
 
@@ -63,6 +63,8 @@ Going through the papers twice takes her back to her own notes from the third we
 "So we're not actually bad at it," somebody says.
 
 "No," Chloe says, wiping the board down with her back to them, and she stops halfway across it and turns round. "Your answers all follow from what I taught you, and what I taught you was wrong. You'll get a different one in two weeks and it'll be harder, because by then you'll actually have it."
+
+Iyad has it at dinner that week with her not at the table, telling the far end that she went in and told the room she had given it to them backwards herself, and then binned the test and set them a harder paper, and he tells it well and he tells it warmly. It gets back to her on the Saturday from a girl in the year above, who says at the sinks that it was a decent thing to do, and Chloe says it was the ordinary thing to do and nobody would have done anything else with it.
 
 Japanese moves faster at the front than she expects, so that by the end of the fourth week she is further along than she has ever been at that point in a language, and on a Wednesday afternoon she digs out her own notes on Russian and on Mandarin to check whether that is true, and it is. The kanji arrive with most of their meaning already on them, but then the grammar starts, and the grammar is unlike anything behind her on the list, so by November she is putting half an hour a night into it and moving slowly, and she is still ahead of where Mandarin had her at that stage.
 
@@ -75,6 +77,82 @@ Engineering and design works the other way round from wood shop and the forge, w
 Chloe reads her own pages again with the clamp sitting on top of them, and the pressure is on there, and the travel, and the tolerance, and which way it opens, so she runs a finger down the first page, then the second, then turns them both over and finds the backs blank.
 
 "There's a page and a half here about how hard it squeezes and a blank where the thing being squeezed goes."
+
+Most of what the year does now has other people's names on it as well as hers. Priya has the logistics sheet pinned over her desk beside the sheet from the laboratory and the sheet from comparative religion, and on a Tuesday in February all of them want the same evening, so she spends dinner going round the long table trading hours with people already trading hours with somebody else, and comes out of it having moved an hour to Sunday and given up an evening she had already spent in her head.
+
+The groups for engineering and design go up on the noticeboard in the first week of February, a handful of names under each, the school choosing all of it, with the brief on a single page underneath. Put a sound on the long field to within a hand's width. The sound goes where the staff put it rather than where the group puts it, at an hour the staff pick, and it happens once.
+
+Eli reads it over her shoulder on his way past to the servery. "They've put your dinner table in a room and given it a number."
+
+The room is theirs on Tuesdays and Thursdays, and the whole of the first evening goes on what the thing has to be.
+
+"A hand's width is under half a millisecond of air," Kavi says, with the board behind him and nothing on it yet. "So every box out there has to agree with every other box to inside that, all afternoon, in the cold, and the school's network is out by a couple of milliseconds on a decent day and cannot tell you that it is."
+
+"Agreeing about the time is the smaller half of it," Ruth says. "Something has to decide which sample the sound starts on, and decide it the same way at every box, off a field with a road down the side and wind coming in the open end, where the front of a sound is a slope and not an edge."
+
+"Then hand me arrival differences and I'll hand you the place," Chloe says. "And the boxes don't go along the near edge, whatever the cable wants, because boxes in a line give you a direction instead of a point, so we'd be fine down the middle and no good at all at either end."
+
+Nadia has the field drawn on the board by then with the posts marked on it. "Wireless. A wire is people. A wire is a morning putting it down and a morning taking it up, and every hand out there is a hand that isn't somewhere else."
+
+"The far end is colder," Odile says.
+
+Kavi turns round to look at the board. "Then the air isn't the same speed at both ends, and half a degree is a third of a metre a second, so we want the temperature at every post at the instant the sound goes, which is a person at every post holding a thermometer, because we are not building sensors as well."
+
+Nadia writes it up under the posts and says nothing about it.
+
+Priya is along the radiator under the window with her boots up on the pipe. "You're going to set the clocks off a sound, though, and if you make the sound at a spot you've measured and slide the clocks about until the boxes agree about that spot, everything wrong with the boxes has gone into the clocks and you've written calibration on it, so it reads beautifully at that spot and lies everywhere else, and the staff are not going to put it where we calibrated, because not doing that is the whole of what they told us they'd do."
+
+Nobody answers that on the Tuesday and nobody has a better answer on the Thursday.
+
+They go wireless anyway, because the reel has to be signed for and the field is a field, and Kavi has it in a fortnight and then has it no further, and the number comes out at dinner in the middle of March, with his hands flat either side of the tray.
+
+"It sits at a couple of milliseconds and it will not go under. A couple of milliseconds is most of a metre of air, so the answer is a metre wide before Ruth has heard anything and before Chloe has done any arithmetic at all."
+
+"How long has it been sitting there," Ruth says.
+
+"A fortnight."
+
+"A fortnight." Ruth stops eating. "So we've been building against a number you knew was the wrong number, and I've spent a fortnight tuning against recordings that were never going to be any use, and none of that had to happen, because the whole of what it needed was you saying it in that room a fortnight ago."
+
+"I thought it would come down."
+
+"That's a hope with a schedule on it."
+
+Nadia goes to the board on the Thursday and puts the wire back on it. "Then it's wire, and the clock goes down the wire, and Priya's problem goes away on its own, because nothing gets calibrated off a sound any more."
+
+They lay a hundred and sixty metres of it down the long field on the Saturday in rain, pegged along the fence and taped at the posts, and lift it again on the Sunday because the mowers are out on the Monday, and Sam comes down for the lifting because Odile asked him to. Nadia stands at the top of the field at the end of it with her hands up her sleeves.
+
+"Half a dozen people and a morning, every time anybody wants to switch it on."
+
+Kavi's clock lands on the Tuesday with the run on the Thursday, and every recording Ruth has tuned against came off the old clock, so all of it goes again from the start. Odile and Sam go out into the dark after dinner and put the sound on the field for her, over and over, off the marks, and Odile comes back in at the end of it with her hands gone red.
+
+"How many more do you want."
+
+"Sixty," Ruth says.
+
+"Sixty," Odile says, and goes back out.
+
+Chloe has the arrival sheets and nothing yet to put into them, so she sits in the room while the numbers come in and does the geometry again for a placing there is no longer time to use, and after midnight she opens Ruth's thresholds and moves the far box, because the far box has been taking the road as the front of the sound all evening.
+
+"Put it back."
+
+"It's picking the road up, and I could see it doing it from here."
+
+"Then it's picking the road up at all of them and I need to know that, and now I can't, because you've made that box different from the rest of them." Ruth pulls the chair round without getting off it. "Do your own end again, or go to bed, or go and find me something to eat, and leave mine alone."
+
+Chloe puts it back, and goes and finds her something to eat.
+
+The run is in the afternoon block on the last Thursday in March. A man from the staff walks out past the top posts with the plate under his arm, a hand-sized square of stock Chloe brought up from the forge in February with the corners taken off it so the sound would be the same sound every time, and he goes over the rise where none of them can see him and stays there. Nadia has a person at every post with a thermometer and Odile on the near mark with the watch, and then there is nothing to do at all for twenty minutes.
+
+The sound comes back thin and flat and a long way off, and it happens once.
+
+Ruth has her onsets inside a quarter of an hour, Kavi has the clock agreeing with itself the length of the wire, and Chloe puts the differences through and reads the point off the bottom of the sheet: a hundred and nineteen metres up the field, thirty across, tight across it and loose along it. Odile and Sam run the tape out from the fence corner and find the mark on the grass a hand's width and a half from where Chloe said it was.
+
+The sheet on the Monday gives them a B, and the failures under it say that the array cannot be put out by fewer than half a dozen people, that the calibration finished inside the last window available to it, and that the group carried a known error for a fortnight without putting it on the board.
+
+Chloe reads it in the corridor with people behind her waiting for a turn. In April she draws the field out again on her own and finds a placing that takes most of the error off the top end, and takes it to Nadia at breakfast.
+
+"That's better," Nadia says, and puts it in the folder.
 
 The no-libraries project runs for a month in the spring, and the brief is one sentence: something that does a real job, all of it written from scratch by you.
 

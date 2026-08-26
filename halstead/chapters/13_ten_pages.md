@@ -84,7 +84,11 @@ On the Monday Chloe gets one on her fourth go, and the balls meet an arm's lengt
 
 By the end of the hour they have more between them than everybody else on the floor put together, and on the Thursday they have nineteen, and they spend most of that evening doing the noise at each other in the corridor, and Ruth does an impression of the boy who said luck, and they make Kavi watch it twice.
 
-People start asking on the Friday, and Ruth says she has been practising while Chloe shrugs and changes the subject, so that by the following week there are theories going round about the markers being different weights.
+People start asking on the Friday, and Ruth says she has been practising while Chloe shrugs and changes the subject. Bex has the end of the shrug before Chloe is out of it, telling the boy who asked that you cannot react to the ball so you have to already be there, and she says it at the volume she says everything at and she gets it right.
+
+"Yeah, that's it," Chloe says, and takes her tray up.
+
+By the following week there are theories going round about the markers being different weights.
 
 Kavi gets it on his own in the second week of November, when his number goes from three to double figures inside an hour that afternoon, and he walks straight out, past everybody, jaw set, and she leaves him to it. Nadia has it by the end of the month off her own back, Priya gets it out of Ruth in a corridor in about ninety seconds, and by Christmas most of the year is past where they ever were with darts.
 
@@ -120,6 +124,10 @@ After dinner, when the corridor is empty, she goes back and reads it again, and 
 "I was standing in it. Wes asked them the number right in front of me, and it took him answering it for me to even notice."
 
 "So was I, and so was Wes, and I don't know what we were supposed to be doing either." Ruth is still looking at the sheet. "So that one should be on whoever wrote the drill and left it that vague, not on the person who noticed first. There's another before long, and we'll actually know what it means by then."
+
+"The standard's scored against the response and not against what the response was up against," Chloe says at dinner, with the plates still going round, "so a drill nobody could have held comes out looking like a year that couldn't hold it."
+
+Twenty minutes later Iyad has it at the far end of the table with a phrase of his own on the front of it and the bit about the year still in it, and the far end takes it up and is still on it when the plates come back.
 
 Russian starts in September, and a couple of months in she has enough of it to argue in, while Ruth is on Arabic. By the middle of the term they are running insults across the dinner table in two languages, and Kavi complains about it in a third, and Sam asks them to do it in English so he can join in and neither of them will.
 

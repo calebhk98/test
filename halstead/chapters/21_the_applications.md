@@ -34,11 +34,21 @@ Ruth reads it over her shoulder before she can close the laptop, laughing at her
 
 "Because getting it to six hundred is harder than getting it to four thousand." Chloe cuts it and cuts it again before it holds.
 
+Ruth reads the top of it over her shoulder again between passes. "Which boy is this?"
+
+"Marek. He had the whole term of it done in a notebook and I never got a page of it off him."
+
+By the version that goes in he is half a line, a boy who would not hand work in, and the half line survives every pass after that. The notebook does not.
+
 Sam finishes in under an hour and shuts the laptop harder than it needs. "Ten pages a week, every week since I got here," he says, "and the thing that decides where I end up is a paragraph, and at that length they're guessing, not reading, and everyone who wrote one knows it."
 
 Kavi finishes in twenty minutes, exactly one word over, and submits it unread.
 
-Odile's runs five pages, and when Chloe tells her it is many times the limit Odile says the limit is a minimum and every teacher in this building takes more and thanks you for it. It goes in as it is.
+Odile's runs five pages, and Chloe tells her it is many times the limit.
+
+"A limit like that is a minimum," Odile says, without coming off the bed. "Every teacher in this building takes more than they asked for and thanks you for it."
+
+It goes in as it is.
 
 Ruth's own prompt asks her to describe a time she failed, and she spends an hour on the word before she gets near an example. "Failed by whose standard," she says, half to the room.
 
@@ -66,7 +76,11 @@ ________________
 
 The applications start landing in November. The transcript is legal, an accreditation number printed in the corner, and what is on it is classes, ordinary-looking rows of them, except there are so many of them, enough for admissions offices to decide it must be a formatting error and write back asking for the real thing.
 
-The call comes through on a Thursday afternoon. "We're going to need the actual transcript, not whatever this is," the caller says, polite and a little embarrassed, the way people are when they think they have caught somebody else's mistake. The registrar reads the accreditation number back to her, twice, and asks whether she'd like that document mailed again, and the caller declines and hangs up first.
+The call comes through on a Thursday afternoon. "We're going to need the actual transcript, not whatever this is," the caller says, polite and a little embarrassed, the way people are when they think they have caught somebody else's mistake. The registrar reads the accreditation number back to her, twice.
+
+"I can put another copy in the post to you today, if it would help to have it in your hand."
+
+The caller declines and hangs up first.
 
 Then somebody reads the essays, and what everybody notices first is the graduate-level prose, while what everybody thinks first is ghostwriting: ninety-one applicants from a single school, all at such a level, is a mill or a very good teacher with a template. A review committee, reading blind, spends most of a meeting on the transfer-cohort theory before somebody checks the birth years.
 
@@ -181,6 +195,10 @@ Ruth's own advice is to send an application twice and change one thing, so in th
 ________________
 
 Decisions arrive across March rather than all at once, the part everyone braced for wrong: each school posts at whatever hour it decides, and the common room turns into somewhere people go to watch each other's phones. Ruth's first lands late on a Tuesday afternoon, in the middle of something else, while Kavi stays up past midnight for a posting first thing the next morning instead, and is awake for it too, phone in hand before he's out of bed.
+
+In the common room Chloe has the phone flat on her knee, going down her own list of which have posted and which have not, counting under her breath.
+
+"Chloe's are half up already, and the rest of hers are tomorrow," Bex says, over her shoulder and out to the room, before Chloe has got to the bottom of the list, and she has it right. Then she is leaning past to see what the boy behind them is refreshing.
 
 Ruth gets MIT and calls home, where her mother puts her on speaker so her father can hear from the next room and both of them talk over each other to ask the next question first. Kavi gets MIT, Caltech and Chicago, and is thinking about the next item on his list before dinner, while Sam gets all but one of his and wants to know, immediately, what happened to the last.
 

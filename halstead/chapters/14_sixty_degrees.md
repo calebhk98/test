@@ -102,13 +102,15 @@ In May her chisel starts rolling its edge every twenty minutes, so she takes it 
 
 ---
 
-The essay questions come out of a hat in the second week of November, one each, a week, seven thousand words. Sam gets whether a country can owe another country an apology and is pleased before he has finished reading it, Kavi gets one about juries, reads it twice and announces that he has drawn the boring one and would like a swap, and Priya gets whether a person can consent to something they cannot leave, puts it face down on the table and asks who wants it.
+The essay questions come out of a hat in the second week of November, one each, a week, seven thousand words, and Iyad has the hat, going round the table with it and reading the name off the top of every slip and checking his own list to see that nobody has gone without, and he takes the last slip out of the bottom of it himself. Sam gets whether a country can owe another country an apology and is pleased before he has finished reading it, Kavi gets one about juries, reads it twice and announces that he has drawn the boring one and would like a swap, and Priya gets whether a person can consent to something they cannot leave, puts it face down on the table and asks who wants it.
 
 Chloe unfolds hers.
 
 *Was the area bombing of German cities the right decision?*
 
-"It's a stupid question," she says at dinner, before anybody has asked her.
+"Area bombing, the German cities, whether it was the right call," Bex says over her shoulder, to the table, with the bottom of the slip still folded over, "and that's a proper question, that's the question everybody's going to want."
+
+"It's a stupid question," Chloe says at dinner, before anybody has asked her.
 
 "Not stupid, everyone wants it," Kavi says. "I'd swap you for juries in a heartbeat."
 

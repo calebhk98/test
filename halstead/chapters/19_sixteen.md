@@ -32,6 +32,14 @@ Kavi looks at the board, then at her, then back at the board, his own row a few 
 
 Fifty-two in the year pass and thirty-nine do not, hers among them, and by dinner they have found each other by sight, because the board hangs in a hall everybody walks past all day.
 
+Bex passed, and comes the length of that hall to find her before dinner, saying it from halfway down.
+
+"It's nothing, it's a tick anywhere on the paper, and the retake's in October, so it costs you a summer and it costs you nothing else."
+
+"It's the margin, though, because as a share of the whole paper that's about a..."
+
+"A fiftieth. It's a fiftieth, Chloe." Bex has that right, and she has it out to the corridor rather than to Chloe, and then she is past her and on to the next person coming away from the board.
+
 Later that week she takes her paper to Amberg, and he has the mark scheme out on the desk before she gets the door shut.
 
 "Question three."
@@ -76,6 +84,8 @@ She writes the shed burning down fast, a paragraph, with a sentence in the middl
 
 Between May and September she writes a stack of those, Kavi marking some and Nadia marking some, while she marks the rest herself with her own answer folded under the page; in May she stops early on about half of them, and by August the rate has come down and settles there, declining to improve.
 
+Kavi's marking fills the margin. Nadia marks by ruling a line down the side of a paragraph and writing *said nothing* beside it, and there is nothing else anywhere on the page. Chloe writes the paragraph again.
+
 The driving instructors in her fourth year do precision and competition work outside the school, and they teach by staging emergencies for her to handle, in turn. By September she can already drive, because her father took her out to a church lot the previous July and meant to teach her himself, the school taking delivery of her from there. In October an instructor kills the ignition at sixty, the first she hears of it, and she has to bring the car in on the gearbox alone, aiming for a mark set out on the tarmac; she overshoots it by thirty meters. In November another sabotages the brake pedal to sink under her foot while the car keeps its speed, staged identically and indistinguishable from a real failure while it is happening, and the answer turns out to be the gearbox, the handbrake, and a great deal more road than she thought she would need. In January they put her on a wet skid pan, and by March she is reversing faster than she and her father between them ever managed in the church lot the July before.
 
 Delacroix runs the handling weeks, talking the entire time she drives, in a flat voice, about his brother-in-law's boat and the state of the tires and whatever else occurs to him.
@@ -98,6 +108,14 @@ This time she passes by twenty-two, and she reads the number twice before she pu
 
 In November she sits in the library with something else open in front of her, thinking about April instead; it happens again in December, and once more in February, and she still shuts books harder than she means to, though she could not tell anybody why she is doing it.
 
+Marek asks for the practice papers in December. He is a year below and sits it in April, and he asks walking, in a corridor, having started the sentence some way before he got to her. She gives him the stack that evening, marked and unmarked, in order, with the mark schemes clipped behind.
+
+He keeps them a fortnight. What comes back is the same stack in the same order, unread, nothing written on any page of it except the back of the top sheet, where he has set out the shed question again with the fire on the Sunday instead of the Tuesday and the goods already sold on by then, and under it the line asking who is holding the loss now.
+
+"That's better than theirs," he says, delighted with it, already going. "Do that instead."
+
+She works it that evening before she starts anything else, and it takes her the whole evening.
+
 The forge is Thursdays, and has been for years, the work down there staying between her and Pruitt, his entire commentary across the years having come to a handful of sentences.
 
 "You're off early."
@@ -110,7 +128,9 @@ The tongs go home to the hook on the back of her door, beside the bag she made i
 
 ---
 
-Home in June for the summer, she sleeps through most of the first week, then sleeps the clock round most nights and rides out to the reservoir most days, in July finding a road past the water good for a few extra miles and a hill she has to stand up on, with novels going through her hands in a fortnight, though she could not afterward tell anybody how any of them end. The rest is long afternoons on the back steps she and her father built when she was small, with the sun coming round the corner of the garage in the late afternoon and a wasp working the same board every day.
+Home in June for the summer, she sleeps through most of the first week, then sleeps the clock round most nights and rides out to the reservoir most days, in July finding a road past the water good for a few extra miles and a hill she has to stand up on, with novels going through her hands in a fortnight, though she could not afterward tell anybody how any of them end. On the hill in the second week of July there is somebody walking up it ahead of her, out on the gravel at the edge, and it is Kayleigh Burns, who says her name as she comes past, and says it again, and asks something after it that the wind takes. Chloe is over the top and onto the far side before she has the brakes on. She rides the loop she was going to ride, and coming back down the same way an hour later the road is empty the whole length of it.
+
+The rest is long afternoons on the back steps she and her father built when she was small, with the sun coming round the corner of the garage in the late afternoon and a wasp working the same board every day.
 
 Her mother watches that from the kitchen window a while before she comes out.
 

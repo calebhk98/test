@@ -42,19 +42,41 @@ She holds that for most of a year.
 
 The months underneath that sentence look, from outside, like everything is fine. Class happens. Problem sets go in early. Dinner is in the hall nearest her building, most nights, because a fixed routine is one less thing to decide. When her mother calls on Sundays, Ruth answers on the second ring and gives her the actual week, in order. Her father tells her, over speakerphone, that the university health plan covers a specialist visit without a referral, and she corrects him. "That's not what the policy says, Dad. It says you need one within thirty days or they can deny the claim retroactively." He reads it back to her off his laptop while she's still on the line, finds the clause, and agrees she's right. Neither of them mentions that she hasn't once, in months of Sunday calls, said anything about the placement.
 
-The study group stays folded into a smaller room in her head: something she manages rather than something she shares. Devansh, who ends up in most of her classes by spring, gets the closest look at it, though he has no idea what he's actually seeing. That spring he brings her a proof he's stuck on. The error takes her under a minute to find, a sign flipped two steps in, and she tells him so directly. "That's not wrong because the idea's bad, Devansh. It's wrong because you dropped a negative on line six." He fixes it, thanks her, and asks, half joking, whether she's ever actually stuck on anything. No, she says, and it's close enough to true, because being stuck and being wrong about the reason feel like different things from the inside.
+The study group stays folded into a smaller room in her head: something she manages rather than something she shares. Devansh, who ends up in most of her classes by spring, gets the closest look at it, though he has no idea what he's actually seeing. That spring he brings her a proof he's stuck on. The error takes her under a minute to find, a sign flipped two steps in, and she tells him so directly. "That's not wrong because the idea's bad, Devansh. It's wrong because you dropped a negative on line six."
+
+He fixes it, thanks her, and then, halfway to the door with his bag over his shoulder: "Are you ever stuck on anything?"
+
+"No," she says, and it's close enough to true, because being stuck and being wrong about the reason feel like different things from the inside.
 
 The tally she keeps is private instead of public: every problem set returned without comment, every study group she finishes ahead of everyone else, filed as evidence for the theory rather than against it.
 
-What eventually breaks it is a professor she likes, in office hours, someone she is genuinely fond of, who cannot follow her past the third step of her reasoning and says so, cheerfully, without embarrassment, before asking her to go back.
+What eventually breaks it is a professor she likes, in office hours, someone she is genuinely fond of, who cannot follow her past the third step of her reasoning and says so, before asking her to go back.
 
 His office is on the fourth floor, narrow, with a window stuck a half-inch open and a whiteboard crowded with other students' handwriting he hasn't gotten around to erasing. There are very few of her professors here she likes, and she likes him: he corrects a wrong answer the day he gives one, out loud and with no ceremony about it. He's the only person who has ever pushed back on a proof of hers rather than simply crediting the answer. The result she brings him is one she's proud of, something she worked out over a couple of nights, and she states it the way she states everything, conclusion first. "It holds because the boundary term cancels once you fix the sign convention, and once that's fixed the rest follows directly."
 
-Somewhere in it he loses the thread, says so, and asks her to start again from the top.
+"Stop me there, because you have lost me, and you lost me two steps before I said anything about it." He turns the page round on the desk so that it faces him. "From the top."
 
-From the top, then. Step one, step two, and at step three he stops her again, admits he's still lost, and asks whether she'd mind slowing down further than that. She slows down. The assumption she'd folded into a single line comes apart into the separate claims underneath, and she states each on its own and watches him nod at the first and hesitate at the second. It's the second, she realizes watching him hesitate, that she has always kept private, checked only against her own head, where it always came out fine.
+From the top, then. Step one, step two, and at step three he puts his hand flat on the paper.
 
-Eventually he gets there, the whole way through, and tells her the result holds. He also tells her, setting his pen down, that it took her five tries to explain something most of his graduate students would get in two. He's already moving on to the next question on his list. Ruth thanks him, packs the loose pages into her folder in the wrong order, and leaves before office hours are officially over.
+"Still lost. Slower than that, if you don't mind."
+
+She slows down. The assumption she'd folded into a single line comes apart into the separate claims underneath, and she states each on its own. "Fixing the convention only puts it in the form the identity is already written in. Then the boundary term goes to zero."
+
+He nods at the first. At the second the nod does not arrive.
+
+"Goes to zero how."
+
+"Because there is nothing left out at the edge for it to cancel against." It's the second, she realizes watching him, that she has always kept private, checked only against her own head, where it always came out fine. "It isn't a cancellation. It's an absence."
+
+"Shorter."
+
+"The tail dies before the boundary does."
+
+He goes back up through it from there, the whole way, and tells her the result holds. Then he caps the pen and sets it down on the desk between them.
+
+"That took you five passes," he says. "I have graduate students in their third year who would not have got me there at all." He is already reading the next question on his list.
+
+Ruth thanks him, packs the loose pages into her folder in the wrong order, and leaves before office hours are officially over.
 
 Ruth walks out and sits on a wall until the light changes twice.
 
