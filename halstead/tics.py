@@ -21,14 +21,26 @@ CORPUS = [
 # a voice is made of repetition; the author's instruction is to cut roughly to a
 # third of the current rate on the worst offenders and stop there. Several of
 # these will still sit far above every reference book afterwards, on purpose.
+# Every number word from one to fifteen sits above the highest-numbered book in
+# the corpus, so this is a habit of precision rather than three unlucky numbers.
+# The target for each is that corpus maximum: no more numerous than the most
+# number-heavy of twenty-three published novels. Substituting one number for
+# another does not help and only moves the problem, so the fix is to delete the
+# precision wherever it is not doing work.
+NUMBER_TARGET = {
+    "one": 515.7, "two": 282.1, "three": 172.7, "four": 119.3, "five": 112.4,
+    "six": 57.3, "seven": 45.9, "eight": 45.9, "nine": 31.2, "ten": 73.4,
+    "eleven": 10.3, "twelve": 18.9, "thirteen": 9.7, "fourteen": 11.3,
+    "fifteen": 14.5, "forty": 30.0,
+}
 TARGETS = {
-    "number: four": 140.0,
+
     "the word 'same'": 125.0,
     "sentence opens She/He + verb": 120.0,
-    "number: eleven": 50.0,
-    "number: nine": 45.0,
+
+
     "the word 'flat'": 35.0,
-    "number: forty": 25.0,
+
     "'the way you/she would'": 20.0,
     "hedged exact (about N)": 18.0,
     "eyes on / eyes down": 12.0,
@@ -40,10 +52,6 @@ TARGETS = {
 }
 
 PATTERNS = {
-    "number: eleven":        r"\beleven\b",
-    "number: nine":          r"\bnine\b",
-    "number: four":          r"\bfour\b",
-    "number: forty":         r"\bforty\b",
     "hedged exact (about N)": r"\babout (?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty|thirty|forty|fifty|a hundred)\b",
     "hand(s) flat":          r"\bhands? (?:flat|pressed flat)\b|\bflat on the (?:table|counter|desk|bench|wall|floor)\b",
     "the word 'flat'":       r"\bflat(?:ly)?\b",
@@ -70,6 +78,10 @@ def strip_gut(t):
 # silently missed every instance that began a sentence: the "that's not X,
 # that's Y" row read six book-wide when the true figure was nine.
 CASE_SENSITIVE = {"sentence opens She/He + verb"}
+
+for _n, _t in NUMBER_TARGET.items():
+    PATTERNS[f"number: {_n}"] = r"\b" + _n + r"\b"
+    TARGETS[f"number: {_n}"] = _t
 
 
 def measure(text):

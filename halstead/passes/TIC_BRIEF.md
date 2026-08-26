@@ -32,22 +32,42 @@ gone still is not the same as one who has started moving.
 Where two characters share a gesture, one of them loses it. A gesture that
 belongs to everybody belongs to nobody.
 
-**The numbers** — four, nine, eleven, forty. The problem is not precision, it is
-that the *same three numbers* recur in every context and from every mouth.
-Chloe counting is characterisation; a librarian, a drill sergeant and the
-narrator all dealing in elevens is an authorial fingerprint.
+**The numbers — read this twice, because the first pass got it wrong.**
 
-Two moves. Replace some with other numbers. Delete others entirely: *he was gone
-six minutes* is usually better as *he was gone a few minutes*, and the precision
-is then available where it means something.
+Every number word from *one* to *fifteen* sits above the highest-numbered book
+in the corpus. The book runs about 2,800 number words per 100,000 against a
+corpus maximum of 1,520. This is not a problem with three unlucky numbers. It is
+a habit of precision applied to everything.
 
-**These numbers are load-bearing and must not change:**
-ninety-one in the cohort; eleven years at the school; the nine minutes of
-chapter 35; the forty targets of chapter 25 and Sam's forty percent; the
-twenty-two seconds in the parking lot; the seventy-five in chapter 36; the
-nineteen-year-old file; the hundred and thirty-five thousand dollar offer; the
-sixty-fourth of ninety-one. When in doubt about whether a figure is doing work,
-leave it and cut a different one.
+The author's ruling, in his words:
+
+> *"None of the numbers are [a motif]. ANY that are over, needs to be fixed.
+> Changing from 1 number to a different one, just hides the issue in other
+> numbers. We don't need precision to such a degree that readers are bothered
+> by it."*
+
+So:
+
+- **Do not substitute one number for another.** The first pass did this
+  extensively and it moved the problem rather than solving it: eleven became
+  thirteen, nine became ten, four hundred became three hundred. Every one of
+  those cuts one row of the table and raises another.
+- **Delete the precision instead.** *He was gone six minutes* becomes *he was
+  gone a few minutes*. *Four of them stood by the door* becomes *a group of them
+  stood by the door*. *She reads it three times* becomes *she reads it again*,
+  or *she keeps reading it*. Most counted things in this book do not need to be
+  counted for the sentence to work.
+- **Keep the precision where being exact is the point.** A scored drill, a
+  timed exercise, a figure a character is arguing about, a number that recurs
+  because somebody is tracking it. Chloe counting is characterisation. The
+  narrator counting everything is the habit.
+- **A number is not saved by being load-bearing in one place if it also appears
+  six times incidentally.** Protect the instance that matters and delete the
+  rest.
+
+The target for each number is the corpus maximum: no more numerous than the most
+number-heavy of twenty-three published novels. That is still a great deal of
+counting.
 
 **"About N"** — approximation bolted to specificity. Usually the fix is to drop
 one half or the other.
