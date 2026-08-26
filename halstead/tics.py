@@ -17,6 +17,28 @@ CORPUS = [
     "/tmp/claude-0/-home-user-test/e98b5ab4-e37f-5614-9ff3-15e67e5c0180/scratchpad/agent_modern/texts",
 ]
 
+# The target is a reasonable rate, not corpus parity. The corpus is 23 books and
+# a voice is made of repetition; the author's instruction is to cut roughly to a
+# third of the current rate on the worst offenders and stop there. Several of
+# these will still sit far above every reference book afterwards, on purpose.
+TARGETS = {
+    "number: four": 140.0,
+    "the word 'same'": 125.0,
+    "sentence opens She/He + verb": 120.0,
+    "number: eleven": 50.0,
+    "number: nine": 45.0,
+    "the word 'flat'": 35.0,
+    "number: forty": 25.0,
+    "'the way you/she would'": 20.0,
+    "hedged exact (about N)": 18.0,
+    "eyes on / eyes down": 12.0,
+    "hand(s) flat": 10.0,
+    "'the whole/rest of it'": 10.0,
+    "turning an object": 6.0,
+    "announced withholding": 3.0,
+    "'that's not X, that's Y'": 2.0,
+}
+
 PATTERNS = {
     "number: eleven":        r"\beleven\b",
     "number: nine":          r"\bnine\b",
@@ -71,19 +93,27 @@ def main():
             if n > 20000: ref.append(r)
 
     print(f"\n{len(ref)} reference books. Rates per 100,000 words.\n")
-    print(f"  {'construction':<34}{'book':>9}{'corpus med':>12}{'corpus max':>12}{'':>4}")
-    print("  " + "-"*74)
-    rows = []
+    print(f"  {'construction':<32}{'book':>8}{'target':>9}{'corpus med':>12}{'corpus max':>12}{'':>3}")
+    print("  " + "-"*78)
+    rows, over = [], 0
     for k in PATTERNS:
         vals = sorted(r[k] for r in ref)
         med, mx = st.median(vals), max(vals)
-        ratio = bk[k]/med if med else float("inf")
-        rows.append((ratio, k, bk[k], med, mx))
-    for ratio, k, b, med, mx in sorted(rows, reverse=True):
-        flag = "  <-- above every book" if b > mx else ("  <-- 2x+ median" if ratio >= 2 else "")
-        print(f"  {k:<34}{b:>9.1f}{med:>12.1f}{mx:>12.1f}{flag}")
-    print("\n  A high rate is not automatically a defect; a voice is made of repetition.")
-    print("  Above every book in the corpus is the line worth looking at.")
+        t = TARGETS.get(k)
+        excess = bk[k]/t if t else 0
+        rows.append((excess, k, bk[k], t, med, mx))
+    for excess, k, b, t, med, mx in sorted(rows, reverse=True):
+        if t is None:
+            print(f"  {k:<32}{b:>8.1f}{'-':>9}{med:>12.1f}{mx:>12.1f}")
+            continue
+        ok = b <= t
+        over += 0 if ok else 1
+        print(f"  {k:<32}{b:>8.1f}{t:>9.1f}{med:>12.1f}{mx:>12.1f}"
+              f"{'  pass' if ok else '  CUT ' + f'{100*(1-t/b):.0f}%'}")
+    print(f"\n  {over} of {len(TARGETS)} still over target.")
+    print("  The target is a reasonable rate, not the corpus. Several of these stay")
+    print("  above every reference book after the cut, which is intended: a voice is")
+    print("  made of repetition and the corpus is only twenty-three books.")
 
 if __name__ == "__main__":
     main()
