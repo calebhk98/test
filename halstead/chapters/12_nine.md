@@ -24,7 +24,7 @@ Sam has stopped with the spoon halfway up. "Is there a third one, or can I go."
 
 "The third one is cryptography, and cryptography happens at thirteen, which was already true in October when I asked for it. They kept the request eleven months and gave me back a date that was fixed before I wrote it down." He squares the sheet against the edge of the table. "That's all three of them."
 
-Ruth takes the sheet off him and reads the back of it twice, and hands it back when Chloe gets up with her tray. Something on Sam's own sheet is different from everyone else's and he keeps it to himself, so that by Thursday there are four theories.
+Ruth takes the sheet off him and reads the back of it twice, and hands it back when Chloe gets up with her tray. Something on Sam's own sheet is different from everyone else's, and by Thursday there are three theories about what.
 
 Chloe reads her own sheet again on the stairs, for a different reason, and then a third time, before running down two flights and coming into the dining hall loud.
 
