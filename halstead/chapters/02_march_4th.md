@@ -16,7 +16,7 @@ The form the office gave her mom runs to several pages, so Chloe comes back to t
 
 "It's about you, mostly how you're doing at school and how you feel about stuff, so the people here get a fuller picture of you than a report card would."
 
-"What about me, though, like what part of me? Because apparently you know how I feel about stuff, and that's the first I've heard of it."
+"What about me, though, like what part of me? Apparently you know how I feel about stuff. That's the first I've heard of it."
 
 Her mom stops, looks at the clipboard, then at Chloe, then puts the pen down on the papers.
 
@@ -38,7 +38,7 @@ He tells her she can call him Ben, asks what he should call her, and sits down o
 
 "We're going to do some stuff that's kind of like games, and some of it is easy and some is really hard, and the hard ones are supposed to be hard, so missing them is part of the design."
 
-"Okay, but is it a test with a grade at the end, and can you fail it, because what happens if I get all of them wrong?"
+"Okay, but is it a test with a grade at the end? Can you fail it? Say I get all of them wrong. What happens then?"
 
 "No, and there is no passing number either," he says straight away, the answer already lined up. "I am watching how you do things rather than whether you get them."
 
@@ -66,7 +66,7 @@ Ben writes something down, small and quick, and she can't tell from his face whe
 
 "Do you want to try one more, or do you want a break?"
 
-"One more, if there's another like it." She hooks her heels on the rung of the chair, then comes up onto her knees on it to reach the middle of the table.
+"One more. Is there another like it?" She hooks her heels on the rung of the chair, then comes up onto her knees on it to reach the middle of the table.
 
 There is another like it, and then another, and both times she has the picture in pieces before he has finished setting the card down, and both times Ben says okay while a block is still in her fingers.
 
@@ -78,11 +78,11 @@ Then the questions turn into pairs of things and what the two of them share, the
 
 "What do a boat and a car have in common?"
 
-"They're both for taking people places that are too far to walk to."
+"They're both for taking people places. Places too far to walk to."
 
 "Good, and what do an hour and a year have in common?"
 
-"They're both amounts of time, and they're both amounts of time that people picked, because an hour isn't really a thing out there, it's just where we decided to cut it."
+"They're both amounts of time. And people picked them both. An hour isn't really a thing out there. It's just where we decided to cut it."
 
 Chloe sits up a little, waiting to find out if that counts extra. Ben stops writing, then writes for longer than usual, sideways down the white edge of the page where the boxes have run out.
 
@@ -132,17 +132,17 @@ Chloe washes her hands in a bathroom that turns out to be behind a door she had 
 
 "On the page with the marks. You stopped in the middle of a row."
 
-"I was seeing if it had to be neat."
+"I was checking. Does it have to be neat?"
 
 Ben turns back a sheet in his stack, draws a line through something, writes again beside it, and comes forward again.
 
 "What do you do when you finish your work early?"
 
-"Nothing, mostly, because anything I could start is a thing I would have to put away again."
+"Nothing, mostly. Anything I start, I have to put away again."
 
 He lets the room stay quiet long enough that Chloe fills it herself.
 
-"I look out the window at the parking lot, and there was a guy who put his coffee on the roof of his car and drove off, and it went off at the turn." She looks at the cup. "And then Mrs. Aldana asked me a question and I didn't know there was one."
+"I look out the window at the parking lot. There was a guy with his coffee up on the roof of his car. He drove off. It went off at the turn." She looks at the cup. "And then Mrs. Aldana asked me a question and I didn't know there was one."
 
 "How long is it, usually, between when you finish and everybody else does?"
 
@@ -160,11 +160,11 @@ Then it's words, and he asks them the same way every time, so the easy ones and 
 
 He asks what a bicycle is and she tells him about the wheels and the pedals, then what a hospital is for, then what stubborn means, which snags her, because there are two in her head, one about people and one about a jar.
 
-"It's when somebody keeps doing the thing they were doing even after you show them why not to."
+"Somebody keeps doing the thing. You show them why not to. They keep doing it."
 
 "Good, and what does nuisance mean?"
 
-"Something that isn't hurting you but won't stop."
+"Something not hurting you. It just won't stop."
 
 The words get longer and then they get stranger, and one of them stops her cold, and she tells him so, then another stops her too, so she says she would rather go back to the first kind. He says that's not how it works, puts the next word to her anyway, and that one goes past her too, and then he closes the booklet.
 
@@ -190,7 +190,7 @@ Then it's the kind of question where he gives her a situation and she has to say
 
 "Why do people wash their hands before they eat?"
 
-"Because of the stuff that's on them, which would go in you with the food."
+"Because of the stuff on them. It would go in you with the food."
 
 "Tell me another reason."
 
@@ -216,7 +216,7 @@ By then her stomach is loud enough that she covers it with her forearm, and she 
 
 "You can say yes, you know."
 
-"I know, but if I say yes, do we stop, or do we just do a different one?" Chloe asks, and he lets it go and switches to something easier for a bit.
+"I know. Do we stop, though? Or do we just do a different one?" Chloe asks, and he lets it go and switches to something easier for a bit.
 
 At the end he caps his pen and puts the last card back in its box. "You worked really hard."
 
@@ -300,7 +300,7 @@ Her mom looks over at her at the red light, for longer than the light.
 
 "It's a number for how you did next to other kids your age, like the tallest in your class being a high percentile for height." Her mom pulls off when the car behind them does something with its horn. "It's not a big deal, everybody gets one."
 
-"So what was mine, then, if everybody gets one?"
+"So what was mine, then? Everybody gets one."
 
 "He didn't give me a number," her mom says to the windshield.
 

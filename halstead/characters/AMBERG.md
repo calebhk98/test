@@ -4,8 +4,28 @@ A practising lawyer who teaches law and cryptography to thirteen-year-olds, and 
 every one of them to be a person who cannot be lied to by somebody with a reason to lie.
 
 **Age span:** teaches Chloe from thirteen to eighteen, the widest span of any teacher she
-has | **MBTI:** INTJ (a writing aid, not a claim) | **IQ:** high, and he never spends it on
+has | **MBTI:** INTJ (a writing aid, not a claim) | **IQ:** 151, and he never spends it on
 being the cleverest person in the room; he spends it on structure
+
+## Type and number
+
+**Primary: INTJ.** Unchanged. He holds a long, coherent, entirely private model of how
+power actually moves through a document, he teaches from that model rather than from a
+syllabus, and he has arranged his professional life so that he almost never has to argue
+in real time — he prefers to record a position and let the record do the work. That
+preference for the durable instrument over the live win is the type in its purest form.
+
+**Mistaken for:** ISTJ, by students who see the procedure and miss the design behind it.
+The separating cue is that he changes the procedure when the model says to, without
+consulting anybody, and he does not experience that as a break with anything.
+
+**IQ 151.** The shape of it: verbal and logical reasoning both extremely high, with the
+distinctive strength being structural — he holds a forty-clause instrument in his head as
+a shape and can tell you where the load is carried and where it is not. Working memory
+very high. Where he places lowest: reading a person's emotional state in the moment. He
+knows what an argument will do to somebody's position and consistently misses what it is
+doing to them, and he is aware of the deficit and has built habits around it rather than
+fixing it.
 
 ## How he thinks people learn
 
@@ -126,6 +146,32 @@ moving to the next appointment, genuinely rather than performatively. The one th
 reaches him is visible only if you know him well: his pen stops moving, and he sets it down
 instead of writing with it. A writer who wants him rattled should use that and nothing else.
 
+## Frustration and anger
+
+**What frustrates him:** an argument that never names the rule it is appealing to. People
+asserting what ought to happen with no governing instrument anywhere in the room, and
+becoming impatient with him for asking which one they mean.
+
+**The tell, before he says anything:** he puts the document down. Squarely, face up, and
+takes his hand off it. Everyone who has been taught by him knows that the hand coming off
+the page means the discussion has stopped being about the page.
+
+**What he does with it:** records the refusal rather than arguing it. He writes down what
+was asked and what he declined and why, in one sentence, and files it, and he is entirely
+content for that to be the end of his participation.
+
+**What actually makes him angry:** somebody using a procedure to accomplish the exact
+thing the procedure was built to prevent. Ignoring a rule is ordinary. Wearing one is not.
+
+**Angry, he becomes more procedural, and he writes in front of you.** The vocabulary
+formalises, the sentences get complete, and he takes out a pen and makes the note while
+the other person is still talking, and he does not hide what he is doing.
+
+**How it ends:** it does not. It goes in the file, and the file is permanent, and he is
+genuinely calm about that — he has no need for the person to know, to apologise, or to be
+punished. He simply intends the record to exist for however long it takes to matter, and
+he is prepared for that to be after his own death.
+
 ## What he is good at, and what he is not
 
 Law from thirteen onward, the state code, contracts, and the rationale for a real external
@@ -207,6 +253,33 @@ Money: careful without being anxious, and he gives steadily to legal aid. Ritual
 pen for every exit interview, which he would deny is a ritual. On a phone constantly, out of
 professional habit rather than sociability. First thing every morning, the overnight legal
 news, before anything else.
+
+## Life outside the work
+
+**Sailing,** small boat, single-handed, most weekends there is weather for it. It is the
+only place he does anything on instinct, and he would resist that description.
+
+**Chess by correspondence** with four opponents at a time, moves considered for days,
+which suits him far better than the clock version. He has played one of them for
+nineteen years and they have never met.
+
+**He collects nothing and keeps everything,** which is a different thing: every paper he
+has ever written on, filed, indexed, retrievable, in a room his family are not allowed to
+tidy.
+
+**Sentimental about:** almost nothing on the surface, and, underneath, about one piece of
+legislation he worked on as a very young man that did more good than anything he has done
+since. He will not discuss it and he has the original draft.
+
+**A free Saturday** is the boat, alone, out early, back late, and a long silence
+afterwards that his household have learned to leave undisturbed.
+
+**At eight** he was the child who read the rules of a board game aloud, in full, before
+anybody was allowed to start, and who did not understand why this was unpopular.
+
+**At sixty-five** he is still practising, still teaching, and has become slightly warmer
+and considerably more forthcoming, and has started telling students things about how power
+actually works that he would not have said at forty.
 
 ## Would do
 

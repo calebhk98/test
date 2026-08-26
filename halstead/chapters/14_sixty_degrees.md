@@ -2,7 +2,7 @@
 
 *September 2016 – April 2017*
 
-The long field runs north from the back of Building Three to a distant fence, with a road past it and open ground the whole way.
+The long field runs north from the back of Building Three to a distant fence, with a road past it and open ground the whole way. The building at that end is flat-roofed and pale and newer than the rest, and on the field side the grass comes up to the brick with no path worn into it.
 
 Archery is ordinary at first, because the start of it is butts at twenty metres, then thirty, then fifty, an hour a day of being told what your elbow is doing by an instructor who walks the line every so often to say it again. Chloe is on the gold most of the time by the end of the second week, bored by the middle of the third, and so is everybody near her.
 
@@ -78,7 +78,7 @@ Calculus arrives in mathematics in the second week, on the sheet, in the slot th
 
 The hour after that opens with it. The teacher has the numbers disagreeing on the board before anybody has sat down, and says that the disagreement is where the interest is and the arithmetic is not, and that Bex brought it to him after dinner on the Thursday, and then he goes at it for the rest of the hour. Bex turns round in her seat to say to the row behind her how good it is, at the volume she says everything at.
 
-Chloe has her own pages in the bag under the desk and leaves them in it. After that she does her turning over on the walk down to the field, which is long enough for it and has nobody else on it.
+Chloe has her own pages in the bag under the desk and leaves them in it. After that she does her turning over on the walk down to the field, which is long enough for it and has nobody else on it, and in November it is dark before the block ends and the grass soaks through her boots on the way down.
 
 Rhetoric is an hour a week of dismantling a speech to find the place where the person giving it is being paid, usually well down the page.
 

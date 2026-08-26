@@ -4,9 +4,29 @@ A top-level combat athlete teaching self-defence, who wants every child who leav
 to know exactly how many hands can reach them at once and why that number is survivable.
 
 **Age span:** teaches Chloe from ten to at least fifteen, the longest continuous span of
-any teacher she has | **MBTI:** ESTJ (a writing aid, not a claim) | **IQ:** the number is
-not the interesting thing about her; what she has is tactical and kinesthetic intelligence
-that runs well past it
+any teacher she has | **MBTI:** ENTJ (a writing aid, not a claim) | **IQ:** 126, and the
+figure is the least interesting thing about her; what she has is tactical and kinesthetic
+intelligence that runs well past it
+
+## Type and number
+
+**Primary: ENTJ, revised from ESTJ.** The executive reading saw a woman who runs a room
+and enforces a standard, which she does. What it missed is that she is a theorist of her
+own subject: she has an argument about fear, she has built a whole pedagogy out of it, and
+she will restructure a session on the spot when the argument requires it. She is not
+administering a curriculum. She is prosecuting a thesis, out loud, at length, with
+children as the demonstration, and the length is the tell.
+
+**Mistaken for:** ESTJ by any colleague, and ESTP by any student who has only ever seen
+her on the mat.
+
+**IQ 126.** Bright, well above the room she came from, and the shape is lopsided in a way
+that matters. Kinesthetic and tactical reasoning are far past anything an instrument
+measures — she can watch four people move and tell you which one will be on the floor
+first. Quantitative reasoning is good and, unusually for an athlete, it is her working
+language: she converts everything into counts and does the arithmetic out loud. Where she
+places lowest: patience with anything written down. She has never read the manual for
+anything in her life, and she is a slower reader than she lets on.
 
 ## How she thinks people learn
 
@@ -125,6 +145,33 @@ with rest. The thing that actually gets to her is a student who is frightened ra
 undertrained, because her whole instrument reads as reps and that student's problem is not
 reps, and she is slower than she would like to admit to spot the difference.
 
+## Frustration and anger
+
+**What frustrates her:** somebody protecting themselves from effort. Not fear, which she
+respects and has an entire method for. The student who has quietly decided in advance how
+hard they are prepared to try and is negotiating downward from there.
+
+**The tell, before she says anything:** her hands keep doing whatever they were doing and
+her sentences get longer. She is the longest speaker in the building at the best of times,
+and when she is annoyed she talks more, not less, and the arithmetic comes out.
+
+**What she does with it:** converts the complaint into live numbers in front of everybody.
+How many hands, how many seconds, how many kilos, and what that leaves. The student is not
+argued with. The student is out-counted.
+
+**What actually makes her angry:** a bigger student trading on being bigger. Using size
+instead of technique, against somebody smaller, on her mat, where she can see it.
+
+**Angry, she runs the demonstration.** She puts the offender on the mat with somebody two
+sizes smaller and narrates what is happening while it happens, cheerfully, in detail, and
+the humiliation is total and entirely instructional and she would be baffled to hear it
+called humiliation.
+
+**How it ends:** with a laugh that is genuinely a laugh, and a hand up off the floor, and
+the pair of them doing the drill together for the rest of the session. She does not carry
+anything past the end of an hour and she has never in her career treated a student
+differently the following week.
+
 ## What she is good at, and what she is not
 
 The daily self-defence hour from age ten: falling, standing, getting up off the floor with a
@@ -203,6 +250,33 @@ sends most of it home on top of what the benefit covers, and spends almost nothi
 Ritual: retapes her own wraps the same way every single time, in the same order, regardless of
 how often she has told a class it does not matter. On a phone only for calls home. First thing
 every morning, she trains, alone, before the first student arrives.
+
+## Life outside the work
+
+**She still competes,** in a masters category, and she is entirely unsentimental about
+losing to twenty-five-year-olds and turns up again.
+
+**Bread and pickling.** She keeps jars, she gives them away, she is loudly opinionated
+about vinegar, and she brings food to any gathering whether or not one was requested.
+
+**She dances,** socially, badly, and with tremendous enthusiasm, and this surprises people
+who have only met her on the mat, which she enjoys.
+
+**She reads almost nothing** and listens to enormous amounts of talk radio in three
+languages while driving, and will report what she heard as though you had also heard it.
+
+**Sentimental about:** her first coach, whose one instruction she still repeats to
+children forty years later without attributing it to anybody.
+
+**A free Saturday** is training in the morning with people half her age, cooking in the
+afternoon, and a house full of people in the evening.
+
+**At eight** she was the child who would not stay down, in any game, ever, and it was
+noticed early and it was made use of.
+
+**At sixty-five** she is still on the mat, has a knee that has been operated on twice and
+a shoulder she manages, coaches three athletes who are internationally ranked, and remains
+the most physically confident person in any room she walks into and one of the loudest.
 
 ## Would do
 

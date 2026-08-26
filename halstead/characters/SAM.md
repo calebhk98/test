@@ -279,7 +279,7 @@ metabolise.
 
 **Angry, the joke goes.** This is the frightening part, because the joke is the register
 everybody knows him in. He puts himself physically between the two people, drops his voice
-below conversational, and speaks in short flat sentences with no number in front of them.
+below conversational, and speaks in short sentences with no number in front of them.
 People who have only ever met the grin find it genuinely alarming.
 
 **How it ends:** immediately and completely. Once the situation changes he is finished

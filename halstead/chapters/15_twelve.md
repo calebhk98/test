@@ -2,7 +2,7 @@
 
 *September 2017 – January 2018*
 
-The forge is a low building past the kitchens, open Thursdays and most of Sunday, and she walks down in the first week of September for a chisel and stays the whole afternoon watching a man called Pruitt make it. By October she has a bench in the corner nearest the door, her own tongs on the rack above it, and a habit of missing dinner, so on the fourth time that month Sam waits in the doorway in his coat until she puts the work down, and she talks at him the whole way back across the grass with a burn on her wrist she keeps to herself.
+The forge is a low building past the kitchens, open Thursdays and most of Sunday, with the doors open in all weather, so the heat reaches her a good way out along with the smell of coke and scale, and she walks down in the first week of September for a chisel and stays the whole afternoon watching a man called Pruitt make it. By October she has a bench in the corner nearest the door, her own tongs on the rack above it, and a habit of missing dinner, so on the fourth time that month Sam waits in the doorway in his coat until she puts the work down, and she talks at him the whole way back across the grass with a burn on her wrist she keeps to herself.
 
 Pruitt runs the place off a whiteboard carrying the Thursday names and a list of low stock, and for the first month the men work around her and leave her alone, so she has no way of telling whether any of it is right until the second week of October, when he passes behind her with an armful of bar.
 

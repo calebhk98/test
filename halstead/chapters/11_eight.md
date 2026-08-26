@@ -136,6 +136,8 @@ ________________
 
 Nerf is eight.
 
+The gym is cold for the first twenty minutes of any hour in it. Then it isn't. The floor carries the lines of every sport they play in there, in different colours over each other, and a dart that misses skids most of the way to the wall.
+
 You start on paper targets, which is boring for a while, then a target somebody swings across the gym on a rope, which holds her attention every time it swings. Then a foam disc thrown flat and fast, which is hard, and then easy, and the day it turns over goes past like any other Monday, and the week after Coach Bell puts a net down the middle of the floor and lines them up either side.
 
 "Both sides load up, and you're not shooting at each other, you're shooting at what they shoot at you. If your dart gets knocked down before it crosses the net, you're out and you sit on the line, and the last side with anybody standing wins the hour."
@@ -182,7 +184,7 @@ Chloe takes hold of the edge of the desk with both hands and stays standing. "Th
 
 ________________
 
-The elective list is on the wall outside the dining hall, four sheets long, with a blank line next to every entry and a pencil on a string.
+The elective list is on the wall outside the dining hall, four sheets long, with a blank line next to every entry and a pencil on a string, and from the middle of the afternoon that stretch of corridor smells of whatever dinner is. On a Wednesday it is bread.
 
 Twice she reads it through: drawing is on it, along with pottery, glassblowing, bookbinding, beekeeping, something called whittling, and a great many things she can only guess at from the name, while names are already on the climbing line and one on beekeeping.
 
@@ -202,7 +204,7 @@ Her name goes on the choir line, because she sang in the shower every day of the
 
 Chloe stands next to Amara for three weeks and matches her about a third of the time, but the matching is a different job from the thing she came in for, and what she liked was being loud in a small tiled room, alone, so in the sixth week she stops going and takes the hour in the pool, and sings in the shower afterward, where she was doing it to begin with.
 
-On a Tuesday in April Sam, Kavi, Ruth and Chloe end up on the grass behind the science building for about an hour, because Sam sat down and then Kavi did, and Sam has a shopping bag of apples he says only were going spare, which they spend the hour throwing at a drainpipe thirty feet away.
+On a Tuesday in April Sam, Kavi, Ruth and Chloe end up on the grass behind the science building for about an hour, because Sam sat down and then Kavi did, and Sam has a shopping bag of apples he says only were going spare, which they spend the hour throwing at a drainpipe thirty feet away, where the render above the brick has gone green in a stripe either side of it. A hit makes the pipe ring.
 
 "Below the bracket counts for zero, we decided that an hour ago and you know it."
 

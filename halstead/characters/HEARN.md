@@ -4,8 +4,27 @@ A working historian teaching writing, who wants every student to stop apologisin
 argument they are already making.
 
 **Age span:** teaches Chloe from ten onward | **MBTI:** ISTJ (a writing aid, not a claim)
-| **IQ:** high, and invisible; the only thing about him that ever announces itself is the
+| **IQ:** 148, and invisible; the only thing about him that ever announces itself is the
 standard he marks against
+
+## Type and number
+
+**Primary: ISTJ.** A working historian is close to the type's natural habitat: the
+evidence, the apparatus, the standard applied identically to everybody including himself,
+and a deep constitutional dislike of a claim that has outrun what supports it. He is
+dutiful, even in temperature, and completely unmoved by whether anybody enjoys the
+subject.
+
+**Mistaken for:** INTJ, because the standard looks like a vision. It is not a vision. It
+is a standard, and it was here before him and will be here after him, and he considers
+himself its custodian rather than its author.
+
+**IQ 148.** The shape of it: verbal comprehension and long-term retrieval both very high,
+with an almost freakish memory for source and provenance — he can tell you where he read
+something and roughly when, thirty years later. Fluid reasoning strong. Where he places
+lowest: anything spatial or mechanical, comprehensively, and he is cheerfully useless with
+any object that has moving parts. Processing speed unremarkable, which is invisible because
+nothing about his work has ever been timed.
 
 ## How he thinks people learn
 
@@ -126,6 +145,31 @@ gets shorter rather than warmer. The one thing that reaches him is a student who
 work, takes the hard mark, understands exactly why, and never asks him to reconsider it. He
 will not say anything about it. He will keep the paper.
 
+## Frustration and anger
+
+**What frustrates him:** a sentence doing two jobs. A clause that is carrying an argument
+and a hedge at the same time so that the writer can retreat to either one. He regards it
+as a small dishonesty and he is not wrong about what it is for.
+
+**The tell, before he says anything:** he reads the sentence back aloud, at exactly the
+speed he reads everything else, and then reads it a second time. There is no change in his
+voice between the first and the second, and the second is the whole of the criticism.
+
+**What he does with it:** returns the page with nothing written on it. A page with no marks
+on it is the heaviest thing he can hand anybody and he knows it and uses it sparingly.
+
+**What actually makes him angry:** a student writing what they think he wants. Not
+laziness, not lateness, not a bad argument honestly made. The performance of an opinion
+that belongs to him, handed back to him for a mark.
+
+**Angry, he assigns more.** The volume never changes and the courtesy never slips, and the
+next task is longer, harder, and specifically constructed so that the borrowed opinion
+will not survive contact with it. He does not tell the student what he is doing.
+
+**How it ends:** when the next piece is the student's own, at which point he says nothing about
+either, and the standard is simply applied to the new work. He has never once told a
+student he was pleased and has never once been misunderstood about it.
+
 ## What he is good at, and what he is not
 
 Writing and argument, taught through the political prose of the founding period, one author
@@ -210,6 +254,33 @@ late wife's name. Ritual: reads the first line of a new stack of work before he 
 read anything else that morning, a habit from decades of reading an opening paragraph before
 anything else. Barely uses a phone, keeps it off during the day, checks it once in the
 evening. First thing every morning, the newspapers, before the sandwich, before anything.
+
+## Life outside the work
+
+**He walks,** a long way, weekly, on old routes and drove roads, and he plans them off
+paper maps he refuses to give up. He has walked the same coastline in sections over
+eleven years and has about four left.
+
+**Choral music,** sung rather than listened to. He is a serviceable bass in an amateur
+group and he goes every week and would cancel almost anything else first, and nobody at
+the school knows.
+
+**He cooks one thing extremely well** and everything else adequately, and the one thing
+takes nine hours and he does it about six times a year for people he likes.
+
+**Sentimental about:** his own teacher, dead thirty years, whose marginal notes are still
+in a book he keeps and occasionally opens.
+
+**A free Saturday** is the walk, the map afterwards, and something long and dull on the
+radio.
+
+**At eight** he was the child who read the encyclopaedia in order, on purpose, and finished
+it.
+
+**At seventy** he is still publishing, still marking, still walking, still refusing to
+retire, and he has become slightly and privately worried that the standard he holds is now
+the only place it survives, which is the closest thing to vanity he has ever permitted
+himself.
 
 ## Would do
 

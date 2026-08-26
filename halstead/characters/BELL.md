@@ -3,9 +3,29 @@
 Runs marksmanship start to finish, and wants every child on his line to trust what their
 eyes are actually telling them instead of what fear tells them.
 
-**Age span:** teaches Chloe from eight to twelve | **MBTI:** ISTP (a writing aid, not a
-claim) | **IQ:** the number undersells him, because what he has is spatial and competitive
-intelligence that does not show up on one
+**Age span:** teaches Chloe from eight to twelve | **MBTI:** ESTP (a writing aid, not a
+claim) | **IQ:** 112, and the number undersells him, because what he has is spatial and
+competitive intelligence that does not show up on one
+
+## Type and number
+
+**Primary: ESTP, revised from ISTP.** The workshop reading was picking up his
+economy and his patience with an object. What it missed is that he is a competitor and
+always has been, that he reads a room instantly and adjusts to it, and that he is at his
+best in the live moment rather than in the workshop afterwards. He wants the shot taken
+now, in front of him, with the conditions as they are. That is the present-tense
+tactician, and it is why he never lets a student talk about a shot instead of taking one.
+
+**Mistaken for:** ISTP, by anybody who only sees him with the equipment and not with a
+line of children.
+
+**IQ 112.** Ordinary on paper and beside the point in practice, and the sheet should say
+so plainly rather than gesture at it. The shape of it: visual-spatial and timing
+intelligence far past anything the instrument measures — he can call a wind he has not
+been told about, and he can watch a novice for four seconds and name the fault. Verbal
+reasoning average. Where he places lowest: anything requiring him to write down what he
+knows. He has been asked for a coaching manual three times and has never produced one, and
+it is a genuine incapacity rather than reluctance.
 
 ## How he thinks people learn
 
@@ -121,6 +141,33 @@ gracious, and will tell the winner exactly what they did right. What actually re
 student he cannot read, and the failure mode is specific: he assumes anybody who goes quiet during a
 hard drill is thinking it through, and some of them are simply frightened.
 
+## Frustration and anger
+
+**What frustrates him:** a student who wants to discuss the shot instead of taking it.
+Talking about it is where the fear goes to live, and he knows that, and he has no patience
+for the conversation at all.
+
+**The tell, before he says anything:** he picks the object up and holds it out. That is
+the entire intervention and it happens without a word. A student who keeps talking gets it
+held out for a second time, slightly closer.
+
+**What he does with it:** hands it over and says nothing, and waits, and the waiting is
+comfortable for him and unbearable for everybody else.
+
+**What actually makes him angry:** unsafe handling. One thing, absolutely, with no
+gradations in it. Carelessness with anything else on his line is a coaching problem;
+carelessness with the muzzle is not.
+
+**Angry, it is instant and physical and completely without heat.** He takes the equipment
+out of the student's hands mid-sentence, clears it, and the session is over for everybody
+present, not only for the person who did it. He does not explain and he does not raise his
+voice and nobody has ever needed it explained.
+
+**How it ends:** at the start of the next session, unmentioned, with the same drill from
+the beginning as though nothing occurred. He does not carry it and he does not treat the
+student differently afterwards, and the group has learned more from that than from the
+removal.
+
 ## What he is good at, and what he is not
 
 Marksmanship as a single progression: foam darts from age eight, then paintball, then arrows and
@@ -205,6 +252,32 @@ Ritual: touches the near post of the range with two fingers before the first sho
 time, and has never explained why. On a phone he is nearly useless and openly proud of it. First thing
 every morning, he walks the length of the range before anyone else is on it, whether or not anything
 needs checking.
+
+## Life outside the work
+
+**He shoots competitively still,** at an age where that is unusual, travels to do it, and
+does not mention where he has been unless asked directly.
+
+**Dogs.** Two, working breeds, walked hard every morning in whatever weather, and he talks
+to them constantly in a register nobody at the school has ever heard him use.
+
+**He restores one particular kind of old thing** — clocks, and he is unhurried and very
+good and has never sold one. The bench in his house looks like his range: everything
+placed, nothing decorative.
+
+**Sentimental about:** a medal he does not display and could produce from a drawer in four
+seconds if somebody asked, and nobody asks.
+
+**A free Saturday** is the dogs at dawn, the bench in the afternoon, and a long silence he
+does not experience as loneliness.
+
+**At eight** he was the boy who could hit anything with a stone, and it was the only thing
+he was better at than anybody, and it turned out to be enough.
+
+**At seventy** he still coaches, cannot be talked into writing anything down, and is
+visited annually by three former students who are now better than he ever was, which
+pleases him more than his own results ever did and which he would describe, if asked, as
+about right.
 
 ## Would do
 

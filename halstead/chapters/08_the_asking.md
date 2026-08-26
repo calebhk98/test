@@ -16,7 +16,7 @@ The appointment is the following Wednesday, for which her mom takes the whole af
 
 "Chloe, is that right, is that how it's actually been?"
 
-"I guess so, though I'm not really the one keeping track of the days the way she is," Chloe says to the arm of the couch instead of to either of them.
+"I guess so. I'm not really the one keeping track of the days. She is," Chloe says to the arm of the couch instead of to either of them.
 
 "When did it start, roughly?"
 
@@ -78,31 +78,35 @@ In the car her mom holds the wheel with both hands, the engine off.
 
 "You'd go and talk to her every couple of weeks, and she'd talk to us as well, and then the three of us would sit down and see how it was going," her mom says, putting the key in and leaving it there. "She wants to see you again in a few weeks, and I said I'd ask you first, so is that all right with you?"
 
-"Okay, whatever you think is best," Chloe says, and then the wall of the building slides sideways past her window. "So can I go to Halstead, then, since we're already talking about it?"
+"Okay, whatever you think is best," Chloe says, and then the wall of the building slides sideways past her window. "So can I go to Halstead, then? We're already talking about it."
 
 Her mother puts her forehead on the steering wheel and stays there.
 
 Her mother starts on the school in October, every week, on the phone first and then in the building itself, where they give Chloe's mom a chair in a corridor.
 
-Chloe gets it in pieces: her mom at the counter saying the words in writing twice in one sentence, and her mom in the kitchen at night telling her dad what the office said, which was that Mrs. Prahl is wonderful, that the children adore her, that it's a lovely program.
+At the counter, with her back to the room and Chloe at the table behind her, she says the words in writing twice in one sentence.
 
-"That sounds all right, then, that sounds like the thing we were after in the first place."
+Then on a Tuesday she comes up and sits on the end of Chloe's bed with her coat still on and lays the whole of it out in order, the way she does with a thing she has already decided about.
 
-"It's one hour, on a Thursday, with a woman who covers five different buildings in a week," her mom says, with both hands on the back of a kitchen chair. "I asked what they actually do in the hour and she said enrichment, and when I asked her what that means she told me how much Chloe would get out of it."
+There is a program in the building. It is one hour, on a Thursday, with a woman called Mrs. Prahl who covers five different buildings in a week. The office says that Mrs. Prahl is wonderful, that the children adore her, that it is a lovely program.
 
-"She might get something out of it, though, people do, and there's little enough to lose by trying it."
+"What do you actually do in the hour?"
 
-"She might, and there's really no way to know that ahead of time," her mom says, letting go of the chair and standing there with her hands empty, "but it's still the only thing in that building that differs from what she is already sitting through, so I want her in it, whatever it turns out to be."
+"Enrichment."
 
-Chloe comes down that night in her pajamas, because the word program has come up through the floor of her room twice already.
+"What's enrichment?"
 
-"Is that Halstead you're talking about, is it finally happening?"
+"I asked her that too," her mom says. "She told me how much you'd get out of it."
 
-"No, honey, it's a thing at your school, on Thursdays, starting after the break."
+Chloe pulls the covers up over her knees and holds them there with both hands.
+
+"Is it Halstead, is it finally happening?"
+
+"It's a thing at your school, on Thursdays, starting after the break, and it is the only thing in that building that isn't what you're already sitting through," her mom says, and puts a hand flat on the covers over Chloe's shin and leaves it there. "So I want you in it, whatever it turns out to be."
 
 "Can I go to Halstead instead of it, though?"
 
-"Go to bed."
+"Goodnight, Chloe," her mom says, and turns the light off on her way out.
 
 It takes weeks. In the second week of November the school calls back to say that they can make an exception and let her come a year early, which her mom tells her in the kitchen with both hands on Chloe's shoulders while her dad stands in the doorway.
 
@@ -120,7 +124,7 @@ Then she waits.
 
 What she is waiting for is the turn, because at camp there was a point in every single thing where it stopped being easy, and you sat there with your ears going hot, and then either you got it or somebody did the rectangle again. For most of an hour now she has been braced for that point, and it hasn't come, and the hour is nearly over.
 
-"When does it get harder, though, because I keep waiting for the part where it gets hard," she says, with her hand still half up.
+"When does it get harder, though? I keep waiting for the part where it gets hard," she says, with her hand still half up.
 
 "Let's not rush it, we've got all year to get all the way through this properly," Mrs. Prahl says, smiling at her. "Take the rest of the packet home with you if you want to."
 
@@ -144,7 +148,7 @@ Her mom says put your jacket on and Chloe says no, and her mom says put it on, a
 
 "Chloe."
 
-"You do, you want me to stay here and be sad, because you could just say yes to Halstead, you could say it right now, it takes one second to say it, and you won't say it."
+"You do, you want me to stay here and be sad. You could just say yes to Halstead. You could say it right now. It takes one second to say it. And you won't say it."
 
 Her mom's hand closes on the edge of the counter. "It's not one second, Chloe, I've thought about this a lot longer than you know."
 
@@ -170,7 +174,7 @@ In December her mom comes up and sits down on the end of her bed, in the late af
 
 "I want you to help me understand something, and you can take as long as you want over it."
 
-"Okay, I'll try, even if I'm not sure I have the right words for it," Chloe says to the ceiling.
+"Okay, I'll try. I might not have the right words for it," Chloe says to the ceiling.
 
 "What was different there, not the fun parts, because I've already heard every single fun part, but what was actually different about it, underneath all that?"
 

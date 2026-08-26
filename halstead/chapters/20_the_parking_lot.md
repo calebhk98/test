@@ -6,7 +6,7 @@ They are the first to sneak out since the school opened.
 
 In the fortnight before, the preparation divides itself between them: Nadia stands next to a maintenance supervisor in the dining hall on a Tuesday, talks about the weather for half a minute, and walks away with his badge duplicated; Chloe gets into the corridor cameras and sets them looping on a stretch of empty hallway; Ruth brings her box, which throws all its ugly things simultaneously at any recorder in range and writes noise over whatever it reaches; and Sam clocks the night patrol's second pass night after night, until the interval between it and the first is regular enough to walk through at an ordinary speed.
 
-Kavi turns it down at the last second, saying he wants to finish something, and from Kavi this always means he has already started it and would rather see the end of it than the far side of a fence, so the rest of them go over the fence twenty minutes short of midnight.
+Kavi turns it down at the last second, saying he wants to finish something, and from Kavi this always means he has already started it and would rather see the end of it than the far side of a fence, so the rest of them go over the fence twenty minutes short of midnight, with the building behind them dark all the way up except for a lit window on the third floor.
 
 ________________
 

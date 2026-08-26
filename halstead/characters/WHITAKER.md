@@ -5,8 +5,30 @@ a subject who feels respected tells you more, faster, than a subject who feels
 suspected, and who therefore never performs suspicion, even when he privately
 carries some.
 
-**Age:** mid fifties | **MBTI:** ISTJ (a writing aid, not a claim) | **IQ:** not
-the relevant axis; his competence is procedural and it is real
+**Age:** mid fifties | **MBTI:** ENFJ (a writing aid, not a claim) | **IQ:** 119,
+and his competence is procedural and it is real
+
+## Type and number
+
+**Primary: ENFJ, revised from ISTJ.** The procedural reading was looking at the files and
+the verification and the discipline of writing unverified where a thing is unverified, all
+of which is true and none of which is the engine. His entire professional method rests on
+a finding about other people: a subject who feels respected tells you more, faster, than a
+subject who feels suspected. He therefore manages the emotional temperature of every
+conversation he has, deliberately, for hours at a time, on purpose, and he is extremely
+good at it. That is a people-mover with a filing system, and the filing system is
+downstream.
+
+**Mistaken for:** ISTJ, by everybody, which is the effect he is going for and is itself
+part of the technique.
+
+**IQ 119.** Above average, ordinary, and the unflattering number matters on this sheet because
+his competence is so easy to mistake for cleverness. It is not cleverness. It is two
+decades of method plus an unusual read of what a stranger needs in order to keep talking.
+The shape of it: verbal reasoning good, memory for people and their inconsistencies very
+strong, and an interpersonal-inference ability far past what the composite suggests. Where
+he places lowest: anything quantitative or abstract. He would tell you so, cheerfully, in
+an interview, as a way of getting somebody to relax, and it would be true.
 
 ## Who he is in a sentence
 
@@ -118,6 +140,33 @@ finishes saying the thing, which he neither hides nor makes a point of.
 Phone off, not silenced, for the whole interview. Reviews a file the night before
 and never the morning of. Shakes hands the same plain way going out as coming in.
 
+## Frustration and anger
+
+**What frustrates him:** an interviewee performing cooperation. Long, helpful, fluent
+answers that never contain a checkable fact. He can tell inside two minutes and the
+remaining hour is still worth having, and he resents the hour.
+
+**The tell, before he says anything:** he stops writing and puts the pen down parallel to
+the pad, and he goes noticeably friendlier. The friendliness is the tell and nobody has
+ever read it.
+
+**What he does with it:** changes the subject to something small and verifiable, and comes
+back forty minutes later from a different direction. He never confronts inside the room.
+
+**What actually makes him angry:** somebody in his own profession writing down as verified
+a thing they did not verify. It is the one line, it has no gradations, and it is the only
+subject on which he will go to a colleague's supervisor.
+
+**Angry, he becomes completely formal and completely brief,** which from him is a
+transformation, because his working register is cordial at all times. One short sentence
+stating what the file says and what he knows, no adjective, no accusation, no second
+sentence, and the absence of warmth is the whole message.
+
+**How it ends:** with the record corrected, and with a permanent, unstated, and entirely
+professional distance from that person for the rest of his career. He continues to be
+pleasant to them. He never works a case with them again and nobody ever hears him say
+why.
+
 ## Blind spots
 
 He believes accuracy is the whole of his duty, and it lets him hand a real
@@ -167,6 +216,32 @@ Black coffee out of a thermos he fills at home rather than drink anyone else's.
 Careful, unshowy relationship with money. A free day is a long walk, a book about
 some institution, dinner with his wife, no phone. Mornings start with the day's
 notes read once in silence before anything else.
+
+## Life outside the work
+
+**He coaches a youth team** for a sport he was never much good at, has done for eleven
+years, and it is the thing he would name first if asked what he does.
+
+**Barbecue, at length,** the slow kind with a thermometer and a six-hour commitment and
+too much food, and a standing invitation to a street's worth of people.
+
+**He plays guitar adequately** and sings badly and does both at gatherings without being
+asked twice.
+
+**Sentimental about:** letters. He writes them, on paper, to about nine people, and has
+kept every one he has received since he was twenty-two in a box he could put his hand on
+in the dark.
+
+**A free Saturday** is the team in the morning, the smoker lit by ten, and people in the
+yard until it gets cold.
+
+**At eight** he was the child everybody told things to, and he already knew not to repeat
+them, and he has no memory of learning that.
+
+**At seventy** he has retired, still writes the letters, still coaches, and carries a
+professional habit into ordinary life that his family have long since stopped remarking
+on: he never asks a question he does not want the honest answer to, and he can wait
+indefinitely for one.
 
 ## Would do
 

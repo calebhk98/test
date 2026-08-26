@@ -238,7 +238,7 @@ out, nothing he makes has a plan and everything he makes stands up. He would rat
 this than anything else available to him.
 
 **Snails, beetles, anything under a stone.** He will carry one across a playground to show
-somebody and be unbothered when they are not interested.
+somebody and think nothing of it when they are not interested.
 
 **Sentimental about:** the garage. The smell of it, the radio in it, the specific
 disorder of it, and the fact that in there nobody is timing him.

@@ -24,7 +24,7 @@ everybody else's answer.
 appetite. She is not maintaining harmony and she is not looking after anybody's feelings;
 she is delighted, out loud, at the rate of about once a minute, and other people happen to
 find that warming. The ISFP case in the first reading is worth knowing about, because
-under pressure she does drop into a wordless competent physical register that looks
+under pressure she does drop into a wordless efficient physical register that looks
 exactly like it — but she comes back up, every time, talking.
 
 **IQ 163.** The shape of it: fluid reasoning and processing speed both extremely high, and
@@ -464,7 +464,7 @@ sleep in the afternoon wherever she happens to be sitting.
 nine and would be genuinely upset to lose it, and she puts her hand flat on a horse's neck
 before she gets on, every single time, and cannot tell you why.
 
-**She is happy-go-lucky and it is real,** rather than a coping mechanism with a cheerful
+**She is happy-go-lucky and it is real,** rather than a coping mechanism with a bright
 paint job. Her resting state is delight. It attaches to small things at full size — a good
 sandwich, a dog in a car window, somebody else's news — and it is the temperature the whole
 group is kept at, which none of them have noticed and all of them would miss.

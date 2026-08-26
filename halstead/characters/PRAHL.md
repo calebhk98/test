@@ -5,8 +5,29 @@ in the boot of a hatchback, and who gives every child she meets exactly the one 
 she has to give anybody.
 
 **Age:** 39 in the year she teaches Chloe | **MBTI:** ESFJ (a writing aid, not a claim)
-| **IQ:** not the useful measure for her; she is a strong teacher operating inside an
-allocation that makes strength unmeasurable
+| **IQ:** 113, and she is a strong teacher operating inside an allocation that makes
+strength unmeasurable
+
+## Type and number
+
+**Primary: ESFJ.** Unchanged, and the type is doing real work here rather than sitting on
+the sheet as a label. Everything she does is aimed at the group being all right together:
+the hour is complete, the premise is read aloud so nobody is left behind, the sheet is
+held up so the back row can see, and a child who could go faster is asked to wait so that
+the room stays one room. She experiences that as fairness and it is fairness, and it is
+also the exact mechanism by which she fails the child in front of her, and she would be
+genuinely wounded to hear it.
+
+**Mistaken for:** ENFJ, by children, who read the warmth as being aimed at them
+individually.
+
+**IQ 113.** Above average, ordinary in her profession, and the real number is part of
+her point: she is not out of her depth intellectually and she is not secretly brilliant.
+She is skilled, well trained and stretched across an impossible allocation. The shape of
+it: verbal reasoning good, working memory good, and a real facility for holding thirty
+children's names, situations and moods across four schools. Where she places lowest:
+mathematics above about the level she teaches, which she manages by preparing very
+thoroughly and which she has never admitted to a colleague.
 
 ## How she thinks people learn
 
@@ -116,6 +137,33 @@ not examine much. The thing that would actually break her is being asked, direct
 somebody with authority, what she needs. Nobody has ever asked, and if they did she has the
 answer ready and has had it for years.
 
+## Frustration and anger
+
+**What frustrates her:** a request that would break the fairness of the room. One child
+wanting to go on to the next thing while eleven others are still on this one, and having a
+perfectly good reason.
+
+**The tell, before she says anything:** the warmth increases. That is the whole signal and
+it runs the opposite way from most people's — the kinder she gets, the more certainly the
+answer is no.
+
+**What she does with it:** refuses in the identical register she teaches in, and calls the
+refusal patience. She is not being disingenuous. She has genuinely reclassified the
+refusal as a virtue and could not now separate the two.
+
+**What actually makes her angry:** being told she has failed a child. Not being criticised
+for her methods, not being told the allocation is inadequate, which she will agree with
+loudly. That specific sentence, about a specific child.
+
+**Angry, she is wounded rather than furious,** and she defends the system as though it
+were her own body, because after twelve years inside it the distinction has stopped being
+available to her. The voice goes up slightly, the warmth stays, and she lists everything
+she does with the hour she has, and every item on the list is true.
+
+**How it ends:** with a decision she does not revisit, and a slight and permanent cooling
+toward whoever said it. She does not raise it again and she does not change anything, and
+she thinks about it in the car about four times a year for the rest of her career.
+
 ## What she is good at, and what she is not
 
 The whole of a district's elementary enrichment: five groups, one per building per weekday,
@@ -194,6 +242,31 @@ each building. She buys puzzle books out of her own pocket rather than fight a p
 She always packs the dice bin last and on top, so it is the first thing out. She checks her
 phone at red lights only. Every morning she loads the car, radio off, tea instead of coffee, and
 walks through the day's five groups in order in her head.
+
+## Life outside the work
+
+**Community theatre,** enthusiastically, usually in the chorus and once memorably not, and
+she books everybody she knows into the third row.
+
+**She is a competitive quizzer** on a pub team, takes it far more seriously than the rest
+of the team, and is the one who remembers the questions they got wrong three years ago.
+
+**Enormous car journeys** are her actual daily life and she has made a genuine hobby of
+them: audiobooks, a thermos, a rigid opinion about which service station is acceptable,
+and a route she will defend against a satellite navigation system.
+
+**Sentimental about:** the box of enrichment materials in the boot, which is hers, bought
+with her own money over eleven years, and which she would tell you is just resources.
+
+**A free Saturday** is rehearsal, the quiz, and a lie-in she does not get.
+
+**At eight** she was the child who set up a school for her younger cousins in a garage and
+made registers.
+
+**At fifty-five** she is running a district provision rather than driving between four of
+them, is better resourced and considerably more tired, and has become the person who tells
+younger colleagues that the hour is enough, which she does not entirely believe any more
+and says anyway.
 
 ## Would do
 

@@ -3,9 +3,26 @@
 A working field scientist teaching science to the youngest students, who wants them to
 find out early and often that being wrong in public costs nothing worth flinching over.
 
-**Age span:** teaches Chloe at seven | **MBTI:** ISTP (a writing aid, not a claim)
-| **IQ:** high, and he has never once used it to win a room; what he has instead is the
+**Age span:** teaches Chloe at seven | **MBTI:** ENTP (a writing aid, not a claim)
+| **IQ:** 143, and he has never once used it to win a room; what he has instead is the
 habit of checking
+
+## Type and number
+
+**Primary: ENTP, revised from ISTP.** The hands-and-instruments reading saw a field
+scientist and assumed the wordless mechanic. What he actually runs is a prediction game: he
+gets a claim onto the record, cheerfully, from anybody in the room including himself, and
+then goes and finds out, and the finding out is a performance he enjoys and stages
+deliberately. He is the one teacher in the building who is visibly delighted to be shown
+wrong in public, and delight in being wrong in public is not a mechanic's trait.
+
+**Mistaken for:** ISTP by anybody who watches him with equipment, and INTP by anybody who
+reads his papers.
+
+**IQ 143.** The shape of it: fluid reasoning and hypothesis generation both very high, and
+he produces more candidate explanations per minute than anybody he works with. Quantitative
+reasoning strong. Where he places lowest: sustained solo attention on a long write-up. He
+has co-authors for a reason, he knows it, and he says so.
 
 ## How he thinks people learn
 
@@ -117,6 +134,32 @@ will keep looking for one more thing to check past the point where checking help
 gets him wrong by adding any visible reaction to being corrected, in either direction: a
 raised eyebrow and a warm well-spotted break the scene the same way.
 
+## Frustration and anger
+
+**What frustrates him:** a claim with no measurement attached and no willingness to
+produce one. He does not mind being contradicted and he minds enormously being told that
+something is obvious.
+
+**The tell, before he says anything:** he gets up and fetches the instrument. Mid-sentence,
+without excusing himself, and he comes back with it and sets it on the table between the
+two of you.
+
+**What he does with it:** measures it, in front of you, right then, and reads the number
+out. He has ended more disagreements this way than by argument and he considers this the
+only method he trusts.
+
+**What actually makes him angry:** a falsified result. Not a mistake, not a bad method, not
+an overstated conclusion. A number that was written down without being obtained.
+
+**Angry, he goes administrative and immediate.** Unraised voice, no adjectives, and he
+documents it the same afternoon and tells the person he has done so. There is no
+performance in it at all and the speed is the frightening part: it is handled before
+anybody has finished processing that it happened.
+
+**How it ends:** with the record corrected, and then completely. He holds nothing
+afterwards, will work with the person again, and will treat them exactly as before, and he
+is not being magnanimous — the record being right was the only thing he wanted.
+
 ## What he is good at, and what he is not
 
 Science for the youngest band: volcanism and geology, structural load, prediction and
@@ -199,6 +242,32 @@ chalk and marker supply before a lecture, the fieldwork habit about never runnin
 tool you need mid-task. On a phone, weather and activity alerts more than anything social.
 First thing every morning, he checks a feed from the system he currently studies, out of
 habit rather than need.
+
+## Life outside the work
+
+**Birds,** seriously: he keeps a list, he gets up absurdly early for it, and he has been
+known to arrange fieldwork around a migration. He will talk about this to anybody and does
+not notice when they stop listening.
+
+**Home-brewing,** with a hydrometer and a logbook, and half of it undrinkable, and he
+regards the failures as data and says so.
+
+**He is a keen and terrible photographer** and has thousands of images of the same
+estuary in slightly different light.
+
+**Sentimental about:** a battered field notebook from his first season, water-stained,
+which he will show a seven-year-old on request and hand over to be held.
+
+**A free Saturday** starts at four in the morning somewhere cold and wet and finishes with
+him asleep in a chair at eight in the evening.
+
+**At eight** he kept a tank of pond water on a windowsill for a year and made his mother
+look at it weekly.
+
+**At sixty** he is still in the field more than in the office, has trained a generation of
+people who outrun him in the parts he was always slowest at, and is genuinely and
+uncomplicatedly pleased about that in a way that some of his colleagues find hard to
+credit.
 
 ## Would do
 

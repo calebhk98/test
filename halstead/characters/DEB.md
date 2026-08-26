@@ -4,7 +4,27 @@ A warm, talkative project coordinator and single mother who fills a quiet
 office with one subject, and who will not let a plain explanation past her
 until it has been reframed into something she can actually use.
 
-**Age span:** mid-forties | **MBTI:** ESFJ (a writing aid, not a claim) | **IQ:** ordinary and irrelevant to her, which is part of the point of her
+**Age span:** mid-forties | **MBTI:** ESFP (a writing aid, not a claim) | **IQ:** 108, ordinary and irrelevant to her, which is part of the point of her
+
+## Type and number
+
+**Primary: ESFP, revised from ESFJ.** The harmony reading was looking at a friendly talkative
+woman in an office and filling in the rest. She is not maintaining anybody. She is present,
+immediate, and appetitive: she says what is in front of her, she wants the concrete version
+of everything, she is uninterested in the abstract account and says so, and she fills a
+quiet room because a quiet room is uncomfortable to her rather than because it needs
+managing. The push-back she gives an explanation is a sensing type asking for an object,
+which is the single most useful thing about her.
+
+**Mistaken for:** ESFJ, by anybody who notices only that she is friendly.
+
+**IQ 108.** Ordinary, and the ordinariness is the whole function she serves: she is the
+person the explanation actually has to work on. The shape of it: a flat profile, with
+practical and interpersonal reasoning slightly ahead of the rest, and a real strength in
+project logistics — she can see three weeks ahead in a schedule and name what will collide.
+Where she places lowest: anything symbolic held in the head without an example attached.
+Give her the same content as a story about a person and she is quick, accurate and
+retentive, and this is a fact about most people rather than a deficiency in her.
 
 ## The thing to get right first
 
@@ -170,6 +190,34 @@ A free Saturday runs a game, then errands, then something easy on the couch.
 
 Earnestness about something trivial charms her.
 
+## Frustration and anger
+
+**What frustrates her:** an explanation given a second time in the same words, slightly
+louder. She asked for a different angle, and she got volume, and she can hear precisely
+what that means about how the other person is thinking of her.
+
+**The tell, before she says anything:** she becomes very helpful. She starts offering to
+do things, tidying the surface she is standing at, refilling something, and the helpfulness
+rises in exact proportion to how unheard she feels.
+
+**What she does with it:** supplies her own example, out loud, from her own life, and
+checks it against the explanation. This works, most of the time, and neither party notices
+that she did the work.
+
+**What actually makes her angry:** being made to look foolish in front of other people.
+Not being wrong, which she is relaxed about. Being positioned, publicly, as the one who
+did not follow.
+
+**Angry, she stays pleasant on the surface and goes cold in the logistics.** Nothing is said.
+The information arrives slightly later, the invitation does not come, the thing she would
+normally have picked up is left for somebody else, and she is perfectly pleasant
+throughout.
+
+**How it ends:** it does not. It goes into a running account that never closes and that
+she would deny keeping, and it takes about two years of ordinary decent behaviour to work
+back off it, and the other person will never know either that they were on it or that they
+came off.
+
 ## Interior life
 
 **Wants:** her son's father more present than twice a year. She has stopped
@@ -200,6 +248,32 @@ and covers a sticky note with more words than it should hold. A single income
 covering two people taught her to plan carefully without letting money rule
 her. She says *knock on wood* and actually knocks. Every morning she texts her
 son to make sure he is up, before she is out of bed herself.
+
+## Life outside the work
+
+**Her son,** relentlessly and without embarrassment. His schedule, his sport, his teeth,
+what he said in the car. She is the sole subject of about sixty per cent of what she says
+and she knows it and would not change it.
+
+**She is a serious crafter** — cross-stitch, and lately something involving a laser
+cutter she bought secondhand and taught herself from videos — and the house is full of
+things she has made and nearly given away.
+
+**Enormous podcasts about crimes** listened to while driving, and she will tell you the
+whole case, in order, with dates.
+
+**Sentimental about:** the first apartment she had on her own after the divorce, which was
+too small and too cold and which she describes as the best year, and she means it.
+
+**A free Saturday** is a sports field in the morning, somebody's kitchen in the afternoon,
+and being in the middle of whatever is happening.
+
+**At eight** she was the child who talked in class and was moved four times and kept
+talking, and the reports said the same thing every year.
+
+**At sixty** she has a grandchild, still works, still talks, and is the person in the
+office who knows about everybody's parents' health, and who is the reason four people in
+that building did not miss something important.
 
 ## Would do
 

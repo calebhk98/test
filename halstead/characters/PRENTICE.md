@@ -4,8 +4,27 @@ The assessor: spends hours building an accurate picture of a person, then hands
 it to whoever can act on it along with an honest estimate of how little that is
 likely to change.
 
-**Age:** early fifties | **MBTI:** INTP (a writing aid, not a claim) | **IQ:**
-not the relevant axis; what the sheet is about is how he handles other people's
+**Age:** early fifties | **MBTI:** INTP (a writing aid, not a claim) | **IQ:** 138,
+and what the sheet is about is how he handles other people's
+
+## Type and number
+
+**Primary: INTP.** Unchanged. He is interested in the instrument as an instrument: what it
+can resolve, where it stops resolving, what it is measuring when it appears to be
+measuring something else. He goes off protocol not out of warmth but out of curiosity, and
+the extra booklet out of the drawer is a man testing where a ceiling is rather than a man
+being kind to a child, and the kindness is a by-product he would not claim.
+
+**Mistaken for:** INFJ, by parents, because the report is unusually humane. The humanity is
+a consequence of accuracy rather than a separate quality he brings.
+
+**IQ 138.** High, unremarkable in his profession, and worth stating honestly because the
+book keeps a very high number in the same room as him: he is not the cleverest person in
+that room and he is the only one who can measure it. The shape of it: verbal and logical
+reasoning both high and matched, an excellent memory for individual cases going back
+decades. Where he places lowest: speed under administrative pressure. He is slow, he
+writes long, he misses deadlines by days, and the reports are worth the wait and everybody
+who commissions one has learned to allow for it.
 
 ## Who he is in a sentence
 
@@ -102,6 +121,35 @@ the same way, same hand, at the end of every session. Keeps a room with almost
 nothing personal in it so that nothing competes for a child's attention.
 Deliberately dressed down, no coat, no tie.
 
+## Frustration and anger
+
+**What frustrates him:** an instrument used outside its range and the result treated as
+meaningful anyway. A number produced at an age where the scale has no resolution left, and
+then written into a plan.
+
+**The tell, before he says anything:** he goes off protocol. He takes the next booklet out
+of the drawer, or asks one more item after the rule says to stop, and he does it without
+announcing it, and the deviation is the visible form of his disagreement with the
+apparatus.
+
+**What he does with it:** tests past the ceiling and then writes down, in the report, both
+the number and what the number cannot tell anybody. He is scrupulous about including the
+second part and entirely aware that it is the part nobody reads.
+
+**What actually makes him angry:** a figure being used to close a door. A threshold, a
+cut-off, a placement decision made on a composite that he knows is measuring the wrong
+thing.
+
+**Angry, he writes longer.** That is the whole of it: the report grows, the caveats
+multiply, he adds a paragraph explaining in plain words what the reader is about to get
+wrong, and he sends it to somebody who will read the first page.
+
+**How it ends:** he lets it go, professionally and completely, within a week, because he
+has to and because he decided twenty years ago that his job is translation rather than
+rescue. It does not actually go. He can still name individual children from the nineteen
+nineties and what happened to their placements, and he believes he has made peace with
+this and has not.
+
 ## Blind spots
 
 He believes translation and rescue are cleanly separable and that being good at
@@ -152,6 +200,33 @@ handwriting only he can fully read back. A timer with a worn thumb-groove in it
 from twenty years of the same gesture. Restores old furniture on days off,
 chosen specifically because it has nothing to do with the work. Phone checked
 between sessions and never during one.
+
+## Life outside the work
+
+**He restores bicycles,** three or four a year, and gives them away to people who need
+one, and is unembarrassed about the fact that this is obviously the same act as his job in
+a different medium.
+
+**Cryptic crosswords,** competitively, by post and online, and he is very good and has
+never mentioned it at work.
+
+**He listens to opera** and knows a great deal about it and will not talk about it, on the
+grounds that people who talk about opera are insufferable, which is itself an opinion he
+holds strongly.
+
+**Sentimental about:** a case file from his second year that he has kept, illegally, in a
+drawer at home, and which he has never reread.
+
+**A free Saturday** is the garage, the crossword, and an hour of doing nothing that he
+would describe as thinking.
+
+**At eight** he was a solitary, contented child who took apart a clock and made an
+inventory of the parts before touching anything.
+
+**At sixty-five** he is semi-retired and takes only the complicated referrals, writes
+even longer, and has started teaching one seminar a year in which he spends the first
+hour on what the instruments cannot do, and the students find it dispiriting and the good
+ones remember it.
 
 ## Would do
 

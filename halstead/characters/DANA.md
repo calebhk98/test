@@ -132,7 +132,7 @@ exactly once, lightly, in a way that is not quite a complaint and not quite a jo
 unkind, which she can handle. Careless. A dropped promise, a forgotten pickup, an adult
 who did not check.
 
-**Angry, she goes formal and warm at the same time,** which is an unnerving combination.
+**Angry, she goes formal and affectionate at the same time,** which is an unnerving combination.
 The temperature of her voice does not change at all and the vocabulary goes several notches
 up, and she says exactly what happened in complete sentences, and she does not raise a
 single one of them.
@@ -234,7 +234,7 @@ eventually own it and she has already, quietly, said so to one person.
 about three years and then stopped completely and never went back, and she remembers the
 titles.
 
-**At nineteen** she is at college, busy, cheerful, and profoundly uninterested in
+**At nineteen** she is at college, busy, sociable, and profoundly uninterested in
 children.
 
 **At thirty-four** she has two of her own, a house, a job she is good at, and the same

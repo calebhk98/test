@@ -3,9 +3,28 @@
 The grandmother: thirty-one years of reading bodies for a living, retired, and
 still doing it at her own kitchen table, to everybody, whether or not they asked.
 
-**Age:** seventies | **MBTI:** ISFJ (a writing aid, not a claim) | **IQ:** not
-the axis she runs on; her intelligence is entirely perceptual and entirely in
-her hands
+**Age:** seventies | **MBTI:** ISFJ (a writing aid, not a claim) | **IQ:** 104, and
+her intelligence is entirely perceptual and entirely in her hands
+
+## Type and number
+
+**Primary: ISFJ.** Thirty-one years of reading bodies for a living, a house run on
+routine, care expressed as food and as a job to do, and a memory for other people's
+details that functions as a filing system. She is the type at full strength: neither
+timid nor fussy, and completely indifferent to anybody's opinion of how she does things.
+
+**Mistaken for:** ESFJ, because her house is always full. The separating cue is that she
+does not manage the room and does not need it to be harmonious. She feeds it and lets it
+argue.
+
+**IQ 104.** Ordinary on any instrument, and the instrument is measuring the wrong thing,
+which is worth writing on the sheet rather than leaving implied. What she has instead is
+thirty-one years of pattern: she can look at a person across a kitchen and tell you they
+are not sleeping, or not eating, or in pain and hiding it, and the reading comes in at a
+rate nobody around her has ever thought to be impressed by. Where she places lowest: scale and
+proportion. Numbers larger than a household defeat her completely, and she will discuss a
+national figure and a grocery bill in the same register and see no difference between
+them.
 
 ## Who she is in a sentence
 
@@ -118,6 +137,34 @@ rather than letting it sit. She naps in the afternoon and calls it resting her
 eyes. The kettle goes on before she is fully awake, thirty-one years of getting up
 for early shifts.
 
+## Frustration and anger
+
+**What frustrates her:** being told she is old-fashioned about something she can see with
+her own eyes. She does not argue the point. She simply carries on being right about it
+while the conversation happens around her.
+
+**The tell, before she says anything:** her hands find work. She gets up and starts on the
+dishes, or takes up a hem, or begins putting food out that nobody asked for, and she keeps
+talking pleasantly the entire time.
+
+**What she does with it:** says the true thing about somebody's body, sideways, into a gap
+in the conversation, and lets it sit there. It is the only weapon she has ever needed and
+she has never once thought of it as one.
+
+**What actually makes her angry:** a child in her house who has not been fed or has not
+slept. Nothing else in her life produces the same reaction and there is no version of the
+excuse that will work.
+
+**Angry, she becomes extremely specific and extremely domestic.** No general accusation and
+no raised voice: a list of exact things, in order, that were not done, delivered while she
+does them herself, and the person responsible is left standing in a kitchen being
+comprehensively out-worked.
+
+**How it ends:** with food. Somebody is fed, somebody is sent to lie down, and the matter
+is closed and will not be referred to again by her. She is entirely capable of holding a
+grievance for a decade about something else, and this particular kind of anger she puts
+down the moment the child is asleep.
+
 ## Blind spots
 
 Anything that reaches her secondhand, in words, about a world she has not stood
@@ -175,6 +222,33 @@ older than any of her children with her own mother's cards mixed into it. Readin
 glasses on a cord and a sewing kit in a kitchen drawer. Careful with money out of
 habit rather than need. Uses a telephone for short purposeful calls and nothing
 else.
+
+## Life outside the work
+
+**She grows things,** unfashionably: beans, tomatoes, three kinds of squash, and a rose
+she has kept alive for forty years out of stubbornness rather than affection. She gives
+away far more than she grows for herself.
+
+**Cards, weekly, for money,** with the same four women since the nineteen-seventies, and
+she plays to win and keeps the running total in her head across decades.
+
+**She watches one long-running programme** with total loyalty and will not be interrupted
+during it, and she can summarise thirty years of its plot for anybody who asks and several
+who did not.
+
+**Sentimental about:** the kitchen table, which was her mother's. She has already decided
+who gets it and has told exactly one person.
+
+**A free day** is the garden in the morning, somebody's child in the afternoon, and the
+programme at seven.
+
+**At eight** she was already the one who could be left with the younger ones, and she
+liked it.
+
+**At seventy-five** she is the fixed point of an extended family, holds every birthday and
+every diagnosis in her head without writing any of it down, has firm and slightly wrong
+opinions about the world outside her county, and is more use in a crisis at midnight than
+anybody thirty years younger in the house.
 
 ## Would do
 

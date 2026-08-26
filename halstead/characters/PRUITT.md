@@ -4,9 +4,29 @@ The man who runs the workshop: says almost nothing, because he believes the work
 tells the truth faster and more honestly than he can, and his job is to keep the
 fire lit and stay out of the way of it.
 
-**Age:** sixties | **MBTI:** ISTJ (a writing aid, not a claim) | **IQ:** high
-120s by the usual measure, which badly undersells a trade intelligence nobody
-around him has to have explained
+**Age:** sixties | **MBTI:** ISTP (a writing aid, not a claim) | **IQ:** 128 by
+the usual measure, which badly undersells a trade intelligence nobody around him
+has to have explained
+
+## Type and number
+
+**Primary: ISTP, revised from ISTJ.** The dutiful reading was looking at a man who keeps a
+workshop in order and turns up every day for forty years, and both of those are true. What
+it missed is the reason he says nothing: he does not believe that explanation transfers
+anything, and he does believe that the material will tell you the truth if you are holding
+it. That is a hands-first epistemology, not a procedural one. He has no interest in
+process for its own sake and will let a student use a method he considers inferior if the
+work comes out sound.
+
+**Mistaken for:** ISTJ, by anybody who counts his years and his tidiness and stops there.
+
+**IQ 128 on the usual measure,** which is a poor description of him. The shape of it:
+spatial and mechanical reasoning far past the top of any instrument that has been pointed
+at him, and a tactile discrimination that is genuinely rare — he can tell you the
+temperature of a piece within a narrow band by looking, and something about a weld by
+sound. Verbal reasoning average. Where he places lowest: putting any of the above into
+words. The knowledge is stored somewhere that does not convert to sentences, he found that
+out young, and he stopped fighting it before he was thirty.
 
 ## Who he is in a sentence
 
@@ -155,6 +175,33 @@ how little of it there is. He lights the fire first thing every morning whether
 or not anybody is coming. He eats standing at his own bench, alone, fast, and
 without much interest in the food.
 
+## Frustration and anger
+
+**What frustrates him:** hurry. A student rushing a stage because the interesting part is
+further along. He has never yet met a piece of work that was improved by it and he has
+watched forty years of people try.
+
+**The tell, before he says anything:** he stops walking. He is in motion from the moment
+the shop opens, so stopping in the middle of the floor is the loudest thing he does, and
+every student learns to read it within a fortnight.
+
+**What he does with it:** takes the work off the bench and puts it in the scrap bin,
+without comment, and walks on. The student starts again. Nothing is said about it then or
+later.
+
+**What actually makes him angry:** unsafe practice near heat. Bare arms, wet gloves, a
+crowded aisle, somebody behind somebody swinging. That is the whole list and there are no
+degrees within it.
+
+**Angry, it is one word and a hand on the shoulder,** steering the person out of the shop
+and through the door. He does not raise his voice, he does not explain in the moment, and
+the person is outside before they have understood what happened.
+
+**How it ends:** the next day, when they come back and pick up the tongs, and he hands
+them something to do. He does not refer to it. He also does not forget it, and that
+student is watched more closely for the rest of the year without ever being told they are
+being watched.
+
 ## Blind spots
 
 He believes the long unremarked first month is a fair test, and it is fair only
@@ -206,6 +253,31 @@ Handwriting exists only on the board: blunt block capitals, names and counts,
 nothing else. Pockets hold a folding rule, a stub of marking chalk, and nothing
 personal. He spends almost no money and has more work than he could take. He
 carries no phone during working hours, full stop.
+
+## Life outside the work
+
+**He fixes other people's things** and will not take money for it. Half the street has
+something in his garage. He has no system for getting it back to them and neither do
+they.
+
+**Bluegrass on a radio,** the same station, all day, and he has strong opinions about it
+that he has never once voiced in the shop and voices freely at home.
+
+**He keeps chickens,** badly named, and talks to them, and this is the single largest
+number of consecutive words he speaks in a day.
+
+**Sentimental about:** his own teacher's hammer, which he uses, which is worn to a shape
+nobody else can work with comfortably.
+
+**A free Saturday** is somebody else's broken thing in the morning and sitting outside in
+the afternoon doing nothing at all, which he is unusually good at.
+
+**At eight** he was in a workshop already, sweeping, and was paid in being allowed to
+stay.
+
+**At seventy-five** he has stopped teaching and has not stopped working, and there is one
+former student who writes to him every year and whose letters he keeps in a tin and has
+never answered, which he would tell you means nothing and does not.
 
 ## Would do
 

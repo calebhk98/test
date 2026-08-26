@@ -12,7 +12,7 @@ entirely to systems and to people rather than to abstractions
 
 ## Type and number
 
-**Primary: ENFJ, revised from ESFJ.** The harmony reading was looking at a warm woman who
+**Primary: ENFJ, revised from ESFJ.** The harmony reading was looking at a hospitable woman who
 feeds people and keeps a family together, and all of that is true and none of it is the
 engine. What actually runs her is a fixed picture of what a particular person needs and a
 willingness to work an institution for years to get it. She does not smooth a room; she
@@ -28,7 +28,7 @@ solidly above average and a genuinely unusual facility for reconciliation — sh
 two accounts of the same thing side by side and find the place they fail to meet, and she
 does this faster than people with twenty points on her. Where she places lowest: anything
 abstract with no person attached. Set her a puzzle for its own sake and she will put it
-down inside a minute, entirely unbothered, and go and do something.
+down inside a minute, without a flicker of regret, and go and do something.
 
 ## Who she is in a sentence
 
@@ -199,7 +199,7 @@ waits through the silence after it, and she is completely prepared to wait throu
 fourth.
 
 **How it ends:** with a name and a date, or it does not end. Given a name and a date she is
-finished with it instantly and is warm to the person again within the same conversation.
+finished with it instantly and is easy with the person again within the same conversation.
 Given neither, she is still working it eight months later, and the person who fobbed her
 off will have forgotten the exchange entirely and she will not have.
 

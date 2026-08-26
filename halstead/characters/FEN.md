@@ -25,7 +25,7 @@ a whole book with and come away unable to describe.
 
 **Primary: ISTJ.** The INTP reading saw the system and assumed a model underneath it, and
 there is no model underneath it. She is not building a theory of anything. She is keeping
-an accurate account of what passed through, which is a fundamentally practical act, and
+an accurate account of what passed through, which is a fundamentally clerical act, and
 the pleasure she takes in it is the pleasure of a thing being in its place and findable.
 The separating test: an INTP asks why the arrangement is like this, and she asks whether
 anything is missing from it.

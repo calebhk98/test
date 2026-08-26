@@ -4,9 +4,29 @@ A working mathematician teaching the youngest students their first real mathemat
 wants every one of them to own the question underneath a rule before anybody hands them the
 rule.
 
-**Age span:** teaches Chloe at seven | **MBTI:** INTP (a writing aid, not a claim)
-| **IQ:** high, and entirely irrelevant to how he runs a room; the thing he is unusually
+**Age span:** teaches Chloe at seven | **MBTI:** ENFP (a writing aid, not a claim)
+| **IQ:** 154, and entirely irrelevant to how he runs a room; the thing he is unusually
 good at is hearing what a seven-year-old is actually confused about
+
+## Type and number
+
+**Primary: ENFP, revised from INTP.** The theorist reading was looking at the
+mathematician and assuming the temperament came with the job. It does not. What he
+actually does all day is generate possibilities out loud at children, follow whichever one
+a child's face responds to, and abandon his own plan cheerfully in the middle of it. He is
+the only adult in the building who praises a question out loud, and that is an enthusiasm
+he cannot suppress rather than a technique he adopted. The mathematics is INTP-shaped. The
+man teaching it is not.
+
+**Mistaken for:** INTP by every colleague who has only read his papers, and ENFJ by
+parents, who assume the warmth is aimed at them.
+
+**IQ 154.** The shape of it: abstract and quantitative reasoning both extremely high, and
+verbal reasoning close behind — he is one of the few people at that level who can say what
+he means to a child of seven. Where he places lowest: anything requiring him to hold to a
+plan he made yesterday. Working memory for his own intentions is genuinely poor; he loses
+his own thread constantly, follows the more interesting one, and arrives somewhere better
+about half the time and nowhere at all the other half.
 
 ## How he thinks people learn
 
@@ -119,6 +139,33 @@ simpler rather than fewer. The way to break him is a room that will not ask him 
 all: a silent class is the only situation his whole method has no move for, and he will
 keep putting questions into it long past the point where it is working.
 
+## Frustration and anger
+
+**What frustrates him:** an answer with no question underneath it. A child producing a
+correct result by a route they cannot describe, and being satisfied with that. He finds it
+faintly sad rather than annoying and he will not let it stand.
+
+**The tell, before he says anything:** he asks something that appears to be about
+something else entirely. It is never a change of subject. It is the shortest route he can
+find to the place where the child's understanding actually stops.
+
+**What he does with it:** keeps asking until the child builds the thing. He is entirely
+willing to leave somebody stuck at the end of an hour and to look, to any observer, as
+though the lesson failed.
+
+**What actually makes him angry:** an adult telling a child in front of him that something
+is too hard for them. Not a colleague being wrong about mathematics, which delights him.
+This.
+
+**Angry, he goes warm and enormous and takes the child's side out loud, immediately, in
+front of the adult.** No procedure, no private word afterwards, no diplomacy of any kind.
+He simply contradicts them, at once, in the room, with the child listening, and it is the
+only occasion on which he is genuinely intimidating.
+
+**How it ends:** in about ten seconds, followed by real embarrassment lasting several
+days. He will apologise to the adult for the manner and will not retract a syllable of the
+content, and he will get it wrong again the next time and knows he will.
+
 ## What he is good at, and what he is not
 
 Early mathematics for the youngest band: what division is actually asking, what a fraction
@@ -201,6 +248,31 @@ unremarkable, comfortable, spent mostly on the garden and on his children's visi
 Ritual: caps and uncaps the same marker before every single explanation. On a phone,
 minimal, mostly photographs of vegetables. First thing every morning, an hour outside
 before anyone else is up.
+
+## Life outside the work
+
+**Jazz piano,** badly and constantly, in a house where the instrument is never closed. He
+plays for an hour most evenings and has never performed for anybody on purpose.
+
+**He cooks enormous amounts of food** for numbers of people that never materialise, and
+gives the surplus away, and has done this his whole adult life without ever adjusting the
+quantity.
+
+**Puzzles that are not mathematics** — cryptic crosswords in two languages, and he is
+irritated by his own weakness in the second one and does them anyway.
+
+**Sentimental about:** the first child he ever taught who went further than he did, whose
+papers he still reads and about whom he says nothing to anybody.
+
+**A free Saturday** is a long lunch with too many people at it, an argument about something
+unimportant, and the piano at eleven at night.
+
+**At eight** he asked so many questions that a teacher, meaning well, told him to save them
+up, and he has spent fifty years running a classroom on the opposite principle.
+
+**At sixty** he is still publishing, still teaching the youngest children by choice when he
+could have any group in the building, and is regarded by his colleagues as slightly
+eccentric for that preference, which he finds funny.
 
 ## Would do
 

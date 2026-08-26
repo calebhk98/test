@@ -56,7 +56,7 @@ The sound is the other half, and it stays out of reach, because the tones sound 
 
 "I know that, I've known that since the first week, and I still can't hear it happening in my own mouth no matter how hard I listen for it."
 
-"You won't, and nobody hears their own, so stop sitting there trying to fix it from the inside." Mrs. Sun writes a list on the board. "Record yourself and play it back, because you'll hear it coming out of a speaker, sit next to somebody in this room who already has it, and run the recordings on the machines in the library while you're doing something else."
+"You won't, and nobody hears their own, so stop sitting there trying to fix it from the inside." Mrs. Sun writes a list on the board, in the middle of it where the black has washed grey and the chalk goes quiet. "Record yourself and play it back, because you'll hear it coming out of a speaker, sit next to somebody in this room who already has it, and run the recordings on the machines in the library while you're doing something else."
 
 Chloe does all of them, though not in that order, reading out loud into the machine in the library, playing it back, and hearing it, and Ruth starts sitting with her on Sundays in December, saying exactly what is wrong with each attempt, so that by June anyone who already expects her accent follows it, whereas a stranger loses her by the second sentence. She still cannot hear any difference between Mrs. Sun and the man who comes in from the university, who grew up a long way apart, and who Ruth can separate instantly.
 
@@ -72,7 +72,7 @@ Statistics turns out to be an hour of somebody taking a number apart in front of
 
 "You said that on Monday too, word for word, and you say it every time you lose this argument."
 
-Chemistry is Vasquez, who does set things on fire on purpose, twice in the first term, and both times the room goes in quiet and comes out loud, and on the phone that Sunday Chloe carries the whole call herself, describing the second to her mother, who mostly just listens. In the second week she burns a hole through a sleeve, and in the fourth she makes something that is supposed to come out white, gets grey, and carries it up to the front.
+Chemistry is Vasquez, who does set things on fire on purpose, twice in the first term, and both times the room goes in quiet and comes out loud, and on the phone that Sunday Chloe carries the whole call herself, describing the second to her mother, who mostly just listens. The lab keeps the smell for most of a week, and the benches down there are black and scored all over where people have set hot things on them. In the second week she burns a hole through a sleeve, and in the fourth she makes something that is supposed to come out white, gets grey, and carries it up to the front.
 
 "Water. That's the only thing that turns it that particular grey, and it's nowhere on your reagent list."
 
@@ -130,7 +130,7 @@ He comes off the first attempt a foot under the lip, in front of all thirty of t
 
 Block two is hers, and she takes riding, because Priya takes riding.
 
-The stables are a walk past the north field, and Priya talks the whole way there and the whole way back, about horses first and then about everything, so that inside a fortnight Chloe can call every horse in the place by name and point out which two of them bite.
+The stables are a walk past the north field, cinder path most of the way and mud from the gate on, and you get the smell of the place a good while before you get the roof of it, and Priya talks the whole way there and the whole way back, about horses first and then about everything, so that inside a fortnight Chloe can call every horse in the place by name and point out which two of them bite.
 
 "That's Cricket, she's fine, as long as you stand where she can see you."
 

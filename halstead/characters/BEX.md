@@ -4,7 +4,7 @@ A fast, warm, loud girl who arrives at the end of your sentence before you do
 and says it for you, and who has spent her whole life being thanked for it by
 people who were glad of the help and never once by the person she took it from.
 
-**Age span:** eight to twenty-one | **MBTI:** ENFP (a writing aid, not a claim) | **IQ:** 163, which is ordinary in the only population that has ever measured her, and she would place herself in the middle of it
+**Age span:** eight to twenty-one | **MBTI:** ESTP (a writing aid, not a claim) | **IQ:** 163, which is ordinary in the only population that has ever measured her, and she would place herself in the middle of it
 
 ## The thing to get right first
 

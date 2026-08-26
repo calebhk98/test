@@ -50,19 +50,19 @@ Chloe's own bag stays zipped on the other bed, exactly where it got put down tha
 
 Pushing the drawer shut with her knee and then leaning on it, Priya asks whether Chloe rides, then when Chloe asks ride what, says horses, then when Chloe says no, goes on anyway.
 
-"Okay, so the first thing is that a pony isn't a baby horse, which is what everybody thinks."
+"Okay, so the first thing is a pony isn't a baby horse. Everybody thinks that and everybody is wrong."
 
 Priya sits down, cross-legged, with a pillow in her lap.
 
-"A pony is a separate thing, anything under fourteen two, which is hands, which is how you measure them, from the ground up to about here."
+"A pony is a separate thing, anything under fourteen two. Hands. That's how you measure them, from the ground up to about here."
 
 She lays the edge of her hand across the top of her own shoulder.
 
-"There's a girl at my barn who says hers is a horse and it is absolutely not a horse, it's fourteen even, and I've seen the paper."
+"There's a girl at my barn. She says hers is a horse and it is absolutely not a horse. It's fourteen even. And I've seen the paper."
 
 "Whose paper are we talking about?"
 
-"The horse's paper, because they have papers," Priya says, waving the whole question off with the back of her hand before going straight on with it.
+"The horse's paper. They have papers," Priya says, waving the whole question off with the back of her hand before going straight on with it.
 
 She tells Chloe about the horse she rides, the horse she is saving up for, the girl at the barn who gives her a hard time, what that girl did at a show in April, and what the girl's mother said about it afterward, running straight through all of it in one go, whether Chloe wants to hear it or not.
 
@@ -122,7 +122,7 @@ Chloe laughs until she has to put her forehead against the wall, before somebody
 
 Then a girl says something from further up the line.
 
-"Okay, but Pluto's still a planet, because it's a dwarf planet, and a dwarf planet is a kind of planet, so what they did was make a smaller category and move it into that."
+"Okay, but Pluto's still a planet. It's a dwarf planet. A dwarf planet is a kind of planet. What they did was make a smaller category and move it into that."
 
 "That's worse than just taking it off the list."
 
@@ -146,7 +146,7 @@ He says the and a half every time, grinning at his own jokes before anybody else
 
 That night Chloe calls the desk again and sleeps in the hotel again, then in the morning her mom asks whether anybody talked to her, and Chloe says a boy in her room did, so her mom asks what about.
 
-"Pluto," Chloe says, still down over her shoelaces for all of it, "and it's not a planet anymore, because they took a vote on it and it lost."
+"Pluto," Chloe says, still down over her shoelaces for all of it, "and it's not a planet anymore. They took a vote on it and it lost."
 
 "Since when, though, because that was a planet when I was at school."
 
@@ -166,9 +166,9 @@ On the third night Sam sits down across from her without a tray, before he gets 
 
 The name of it goes across the table, and he asks whether it is good, and Chloe takes a second finding an answer while he sits there already looking at her, waiting for it.
 
-"It's fine, I guess, except there's a girl there who says I talk weird, so mostly I just keep quiet in class now."
+"It's fine, I guess. There's a girl there. She says I talk weird. So mostly I just keep quiet in class now."
 
-"Mine's got a pool you can't use," Sam says, "because there's a pool in the building and it's for the high school, so they just have it there, and it's got a lid on it."
+"Mine's got a pool you can't use," Sam says. "It's in the building and it's for the high school. So they just have it there. And it's got a lid on it."
 
 "A lid, on a whole entire pool?"
 
@@ -210,7 +210,7 @@ On day seven Sam says something wrong about volcanoes, which is that the lava co
 
 "That's not how it works though," the boy says, and everybody looks at him, while across the room Owen is still copying the word off the board from earlier, head down over his own paper.
 
-"It's rock the whole way down, no hollow in it, and the rock's what's doing the pushing, since it's the gas trapped inside that makes it move," he says, with both hands out in front of him now. "The gas does it more than the heat, and how fast it comes out depends on how thick it is."
+"It's rock the whole way down, no hollow in it. The rock's what's doing the pushing. The gas trapped inside is what makes it move," he says, with both hands out in front of him now. "The gas does it more than the heat. How fast it comes out depends on how thick it is."
 
 A girl further down lets her head drop onto the desk with a thud loud enough that a couple of people look over.
 
@@ -224,7 +224,7 @@ A girl further down lets her head drop onto the desk with a thud loud enough tha
 
 "What's viscosity."
 
-"How thick it is," Kavi says, "so honey's got high viscosity, water's got low viscosity, lava's somewhere in between depending on how hot it is, which is why some of it pours while some of it barely moves at all," and he keeps going from there.
+"How thick it is," Kavi says. "Honey's got high viscosity, water's got low viscosity, lava's somewhere in between, depending how hot it is. Some of it pours. Some of it barely moves at all," and he keeps going from there.
 
 Sam tries twice more to get back into it and loses the thread both times, with a couple of the other children laughing outright by the second try.
 
@@ -234,7 +234,7 @@ ________________
 
 On the second Tuesday, Mr. Doyle says something about weight while he is drawing on the board, and Ruth's hand goes up, though she starts talking before it is noticed.
 
-"That's mass, and weight is the pull on it, so if you took it to the moon the weight would go down and the mass would stay exactly what it was."
+"That's mass. Weight is the pull on it. Take it to the moon and the weight goes down. The mass stays exactly what it was."
 
 Mr. Doyle stops with the marker still up at the board to look at what he has written, then wipes one word out with the side of his hand, writing the other into the gap it leaves.
 

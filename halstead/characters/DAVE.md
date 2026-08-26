@@ -6,8 +6,29 @@ other way round.
 
 **Full name:** David Kessler, called Dave.
 **Age:** adult throughout, roughly forty to sixty across the span he appears in
-**MBTI:** ISTJ (a writing aid, not a claim) | **IQ:** high average to bright,
-concentrated almost entirely in one narrow and very sharp faculty
+**MBTI:** ISTJ (a writing aid, not a claim) | **IQ:** 112, concentrated almost
+entirely in one narrow and very sharp faculty
+
+## Type and number
+
+**Primary: ISTJ.** Unchanged, and the reason to state it rather than assume it is that
+this cast already carries several careful, procedural, dutiful people and he needs to be
+the plainest of them. He is the type in its least glamorous form: concrete, verifying,
+loyal, slow to commit and immovable afterwards, with a strong sense of what a person in
+his position is supposed to do and no interest at all in whether that is interesting.
+
+**Mistaken for:** INTJ, by anybody who has watched him take a contract apart. The
+separating cue is that he has no strategy. He is not playing a long game; he is checking
+this document, today, because checking is what you do with a document.
+
+**IQ 112.** High average, and the number badly misrepresents him, which is the useful
+fact. The shape of it: an ordinary profile with one very sharp spike — he finds the
+sentence in a page of prose that is doing no work, or doing different work than it appears
+to, and he does it faster and more reliably than people who test twenty-five points above
+him. It is a trained faculty on top of a real one and he has been doing it for a living
+for twenty years. Where he places lowest: verbal fluency under pressure, and any problem
+whose terms he cannot see written down. Read him a proposal aloud and he will ask for it
+on paper, and he will be right to.
 
 ## Who he is in a sentence
 
@@ -147,6 +168,32 @@ sitting still than a day of doing something. Eats slowly and is often the last o
 at the table. Keeps every receipt in one drawer, sorted in a system only he can
 explain and does not need to.
 
+## Frustration and anger
+
+**What frustrates him:** a document that says one thing and a person who says another, and
+nobody in the room treating that as a problem. He will point at it once. If the room moves
+on, he stops talking and the frustration goes inward and stays there.
+
+**The tell, before he says anything:** he stops talking and reads it again from the beginning.
+Not skimming for the clause — starting over at the top, with a finger, while the
+conversation continues without him.
+
+**What he does with it:** asks what it costs. That is the whole move: he converts the
+disputed thing into a number somebody has to say out loud, and then he watches what
+happens to their face.
+
+**What actually makes him angry:** being sold something on his daughter's behalf. Not being
+sold something himself, which he treats as an ordinary hazard of being alive. The
+substitution of her interest for somebody else's, dressed up as an opportunity.
+
+**Angry, he gets shorter.** The sentences drop to clauses, the clauses drop to single
+words of acknowledgement that concede nothing, and when he has run out of those he stands
+up. The standing up is the end of the conversation and everybody in the room knows it.
+
+**How it ends:** he never raises it again, with anybody, including his wife. He also never
+trusts a number from that person for the rest of his life, and he could not be argued out
+of that and would not try to defend it.
+
 ## Blind spots
 
 He believes that naming a cost is most of the way to handling it. It is not, and
@@ -239,6 +286,33 @@ than a pen, out of a habit of measuring things. On the phone he stands still wit
 one hand flat on the nearest surface and says less than the person he is talking
 to. First thing in the morning he reads something on his phone standing at the
 counter before he has said much to anyone, and then makes the coffee.
+
+## Life outside the work
+
+**He fishes,** badly and happily, from a bank rather than a boat, and catches very little
+and has never once described the outing as unsuccessful. He goes alone and comes back
+easier company.
+
+**Woodwork in the garage,** to a standard nobody asked for: he will spend an entire winter
+on a set of shelves and the joints will be right. He gives the results away and is
+embarrassed when they are admired.
+
+**He knows an enormous amount about one war** and reads about it steadily, and mentions it
+almost never, and if you get him started he is unexpectedly good on it.
+
+**Sentimental about:** teaching somebody to drive. He taught his daughter in an empty
+parking lot and he will teach anybody else's child who asks, and it is the single most
+purely happy thing he does.
+
+**A free Saturday** is the garage in the morning, something useful for somebody else in
+the afternoon, and the sport on in the background at a volume his wife objects to.
+
+**At eight** he was a self-contained child who took a bicycle apart and got it back together and
+told no one.
+
+**At sixty** he has the same garage, the same shelves, and a grandchild he is far more
+demonstrative with than he ever managed to be with his own daughter, which he notices, and
+which costs him something he has never said out loud.
 
 ## Would do
 

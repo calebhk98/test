@@ -30,13 +30,13 @@ On the Thursday every table gets a bundle of dowels, a spool of string, one glue
 
 "You're not in this group, Ruth, go and build your own."
 
-"I'm telling you triangles." Ruth lays dowels in a square, holds the corners loosely, pushes one sideways, and the square folds over; then she sets another dowel across the diagonal, pushes the same corner exactly as hard, and the shape stays where it is. "A square folds, but a triangle can't fold unless something actually breaks."
+"I'm telling you triangles." Ruth lays dowels in a square, holds the corners loosely, pushes one sideways, and the square folds over; then she sets another dowel across the diagonal, pushes the same corner exactly as hard, and the shape stays where it is. "A square folds. A triangle can't fold. Not unless something actually breaks."
 
 "Okay, but we're doing it flat and wide," Sam says. "Flat and wide is fine, it's already glued at the corners and it's not coming apart now."
 
 "Flat and wide is a square, and a square folds, you just watched it fold."
 
-"Go and do your own, then, if you're so sure about it."
+"Go and do your own, then. You're so sure about it."
 
 Ruth goes and does her own, and Chloe watches her the whole way back to the next table, still working out at her own speed whether a diagonal is the entire argument Ruth thinks it is, so that by the time she has the answer Sam has laid a bead of glue along the first joint.
 
@@ -46,7 +46,7 @@ Before anything gets loaded, every group has to write down a prediction, in poun
 
 On the Tuesday a bucket hangs from the middle of each bridge and the weights go in a pound at a time, the whole room counting out loud together. The first bridge goes at three, which gets a laugh out of the group it belongs to, and more come apart early. Theirs holds to eleven and then folds sideways, all at once, exactly the way Ruth's square went over under one finger, rather than snapping, and all of them are down after the pieces while the bucket still swings. Sam says the number out loud twice.
 
-"I'd have written a lower one, if anybody let me."
+"I'd have written a lower one. Nobody let me."
 
 Across the room Ruth's takes nineteen pounds and does snap, in the middle of the diagonal, which half the room makes a noise about.
 
@@ -96,7 +96,7 @@ He goes back to his sheet, where he stays, quiet, for the rest of the lesson.
 
 "Meaning what," Mr. Baptiste says.
 
-"Can you divide by zero if you flip it, because flipping zero is one over zero, and you can't divide by zero, so something has to break."
+"Can you divide by zero if you flip it? Flipping zero is one over zero. And you can't divide by zero. So something has to break."
 
 "Good, watch," Mr. Baptiste says, doing it on the board as he says it and tapping the break with the marker. "Flip zero and you get one over zero, and one over zero has no answer at all, so the whole thing breaks right there. Same rule, same answer, and it's the one case where the rule tells you something is impossible." The bell goes before Ruth has finished arguing the point with him.
 
@@ -124,13 +124,13 @@ Swimming is the last thing every afternoon, and because Chloe arrived unable to 
 
 "It's not a race though, there's just water and a wall at the end of it, and one wall's the same as any other wall."
 
-"Somebody's still first out of the water," Sam says, "and that's a race whether anybody calls it one or not."
+"Somebody's still first out of the water," Sam says. "That's a race. Nobody has to call it one."
 
 Ruth is in that group and complains about all of it at a volume Chloe would not attempt: about Deb, about the bubbles, about the days spent on them, and about a boy in their lane who splashes on purpose, until on the Thursday she swims the whole length straight through and comes up at the far end with her entire face rearranged, and Sam, holding the lane rope, watches her do it.
 
 ________________
 
-Owen leaves in the second week, and the way Chloe finds out is that he is in her hall on the Monday and by Wednesday his door stands open with the bed stripped to the plastic.
+His door is standing open and the bed inside it is stripped to the plastic, and that is how Chloe finds out Owen has gone: he was in her hall on the Monday, and this is Wednesday of the second week.
 
 "Where's Owen?"
 
@@ -144,13 +144,13 @@ Chloe waits, giving him a beat to add to it, and by the end of the beat Sam has 
 
 "What do you mean he wasn't having fun, what does that even mean?"
 
-"He said so, straight out, that he wasn't having fun, so he left, and that's the whole story."
+"He said so, straight out. He wasn't having fun. So he left. That's the whole story."
 
 "But it is fun, all of it, every single part I can think of."
 
 "I know," Sam says, and it comes out flat, like a fact.
 
-"No, but how, how is it not fun, when we broke the bridge yesterday and got to be the ones who broke it, and then got to write down which part went first, and mine went right at the corner." Her own voice comes out loud, and she keeps going anyway.
+"No, but how, how is it not fun? We broke the bridge yesterday. We got to be the ones who broke it. And then we got to write down which part went first, and mine went right at the corner." Her own voice comes out loud, and she keeps going anyway.
 
 "I know, Chloe. Fun's one thing and wanting to be home is a different thing, and he wanted to be home."
 
@@ -164,7 +164,7 @@ Ruth is at the end of the table with her chin on her hand, pushing one piece of 
 
 "Ruth."
 
-"She asked why he went home, and I know why, so I told her."
+"She asked why he went home. I know why. So I told her."
 
 "She didn't ask you, specifically, she asked the whole table, and everybody sitting at it could have answered, not only you."
 
@@ -178,7 +178,7 @@ More leave before the end of the month, so that by the fourth time Chloe reads t
 
 ________________
 
-At dinner in the third week Kavi says something about the moon being up in the afternoon, and Chloe answers him a half second later with "That's why it's a liar," which brings heads around the table toward her.
+"That's why it's a liar," Chloe says, half a second after Kavi has said something about the moon being up in the afternoon, at dinner in the third week, and heads come around the table toward her.
 
 "What? What does that even mean?"
 
@@ -186,11 +186,11 @@ At dinner in the third week Kavi says something about the moon being up in the a
 
 "That's just being stuck, then, not lying," Sam says.
 
-"It's not stuck, because stuck is when you can't move," Chloe says, with the roll still in her hand, uneaten. "It's moving the whole time, all the way around us, and it's turning while it does it, at exactly the speed that keeps that side pointed here."
+"It's not stuck. Stuck is when you can't move," Chloe says, with the roll still in her hand, uneaten. "It's moving the whole time, all the way around us. And it's turning while it moves, at exactly the speed that keeps that side pointed here."
 
 "So it's stuck, whatever you want to call it."
 
-"If you walked all the way around this table and stayed facing the table the entire way, would you say you were stuck?"
+"Walk all the way around this table. Stay facing the table the entire way. Are you stuck?"
 
 "No," Sam says, after looking at the table for a moment.
 
@@ -200,11 +200,11 @@ At dinner in the third week Kavi says something about the moon being up in the a
 
 "The worst," Kavi says, to Sam, about Sam. "You do this every single time."
 
-Ruth has stopped eating for this. "The word is tidally locked, and it isn't stuck and it isn't on purpose either, it got slowed down until it matched, because it used to spin, before it stopped spinning, over a really long time, because of us."
+Ruth has stopped eating for this. "The word is tidally locked. It isn't stuck and it isn't on purpose either. It got slowed down until it matched. It used to spin. Then it stopped spinning, over a really long time, because of us."
 
 "Okay, but that's how it got that way," Chloe says, "and I'm talking about what it's doing now."
 
-"Those are the same thing, Chloe, because how it got that way is exactly what it's doing, there's no line between them."
+"Those are the same thing, Chloe. How it got that way is exactly what it's doing. There's no line between them."
 
 "They're not, you can end up somewhere by accident, you're still there though."
 

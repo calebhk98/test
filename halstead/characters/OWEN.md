@@ -253,7 +253,7 @@ it.
 comfortable and he is happy, and he has a complicated feeling about that which he will not
 be able to name for another fifteen years.
 
-**At forty** he is well liked, competent, and steady in a job he is good at, and there is
+**At forty** he is well liked, capable, and steady in a job he is good at, and there is
 one year of his childhood he does not bring up. He is a superb teacher of anything he
 knows, because he learned every part of it the slow way and can remember not
 understanding.

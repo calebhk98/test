@@ -304,7 +304,7 @@ will not let the other person leave, and she is capable of doing this for forty 
 without noticing it has become the only thing happening.
 
 **What actually makes her angry:** being agreed with by somebody who has not understood.
-Disagreement is nourishment. Cheerful assent from a person who is nodding to end the
+Disagreement is nourishment. Amiable assent from a person who is nodding to end the
 conversation is the specific thing that will take her from loud to quiet.
 
 **Angry, she goes forensic.** No shouting. Short questions with only one available answer,

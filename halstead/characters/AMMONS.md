@@ -4,8 +4,26 @@ The clinician: twenty-five years into a practice built on taking children
 seriously, running the whole screen even when the account she is being given
 sounds fine, and filing the best answer she gets as a note in a chart.
 
-**Age:** mid fifties | **MBTI:** INTJ (a writing aid, not a claim) | **IQ:** not
-the relevant axis; the competence on display is method
+**Age:** mid fifties | **MBTI:** INTJ (a writing aid, not a claim) | **IQ:** 135,
+and the competence on display is method
+
+## Type and number
+
+**Primary: INTJ.** Unchanged. She runs a long, private, entirely coherent strategy through
+every consultation: worst explanation first, ruled out on evidence, then the next, and she
+will not let a reassuring answer close a line of questioning because the strategy does not
+permit it. That is a decided system applied consistently over twenty-five years, held
+alone, and defended without discussion.
+
+**Mistaken for:** ISTJ, by colleagues who see the protocol and miss that she wrote it.
+
+**IQ 135.** High, ordinary for her profession, and the interesting part is the shape:
+extremely strong pattern-completion from incomplete information, and an unusual capacity
+to hold a differential in her head across months of appointments without notes in front of
+her. Verbal reasoning high. Where she places lowest: warmth as a first move. She has to
+choose to do it, she does choose to, and it is visible to anybody watching closely that it
+is a decision rather than a reflex, and children read this as being taken seriously, which
+is exactly what it is.
 
 ## Who she is in a sentence
 
@@ -97,6 +115,34 @@ it becomes the thing a frightened child looks at instead of talking.
 Phone in a drawer during a session, no exceptions. Writes the date first, top
 corner, before anything else, every time.
 
+## Frustration and anger
+
+**What frustrates her:** a symptom described entirely in somebody else's words. A child's
+account arriving pre-translated by a parent, with the interesting detail already smoothed
+out of it.
+
+**The tell, before she says anything:** the pen stops. It does not lift and it does not
+tap; it stops where it is on the page, and it stays stopped for the length of the answer
+she is not accepting.
+
+**What she does with it:** asks the same question a third way, directly to the child, in
+different words, and waits, and she is entirely comfortable with the silence that follows
+and everybody else in the room is not.
+
+**What actually makes her angry:** a parent minimising a child's pain to save time. Not
+disagreement, not a refused referral, not a missed appointment. The specific act of making
+a child's report smaller in front of the child.
+
+**Angry, the clinical cadence stays exactly where it was and the temperature drops several
+degrees,** and she says one unmistakable sentence to the adult, in front of the child,
+without softening or apparatus. She then returns to the protocol as though it had not
+happened.
+
+**How it ends:** with a follow-up appointment that she books herself rather than leaving
+to the desk, at a time she has chosen, and she will keep booking them. She holds nothing
+against the parent, works with them for years afterwards, and never once refers back to
+it.
+
 ## Blind spots
 
 Her chart has one place to put a true answer. She is genuinely excellent at
@@ -145,6 +191,30 @@ near-illegible to anyone but her. One framed photograph on the desk, turned
 slightly away from the patient's side. She undercharges relative to her
 experience, because she remembers what a four-month waiting list looks like from
 the other end. Reads mysteries and nothing clinical on a day off.
+
+## Life outside the work
+
+**She rides,** dressage, badly and seriously, at an age when starting was ridiculous, and
+she started at forty-eight and has told almost nobody.
+
+**Bread every Sunday** by the same method for thirty years, weighed, timed, recorded in a
+notebook, which she would agree is a diagnostic protocol applied to flour.
+
+**She is halfway through a very long history of a country she has never visited,** in
+several volumes, and has been for four years, and refuses to skip anything.
+
+**Sentimental about:** the first stethoscope, which does not work well and which she still
+uses on children specifically because it is warm and old and unfrightening.
+
+**A free Saturday** is the horse in the morning, the bread in the afternoon, and being
+unreachable, which she is genuinely good at.
+
+**At eight** she was the child who asked the doctor what the instrument was for and was
+answered properly, once, by somebody who could not have known what it would do.
+
+**At seventy** she has retired from the practice and still sees a small number of complex
+patients, is on a committee she finds tedious and attends anyway, and has become
+noticeably warmer with the children and considerably shorter with the adults.
 
 ## Would do
 

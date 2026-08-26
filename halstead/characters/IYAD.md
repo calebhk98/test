@@ -17,8 +17,8 @@ an idea out loud among people who do not do that.
 **He keeps the ledger, and the ledger is the weapon.** He holds what everybody
 is doing, what everybody scored, where everybody has got to, and whose turn is
 when, without ever having been asked to, and he gives it out unprompted, by
-name, in order, to whoever is sitting there. It is complete and it is correct
-and he never has a figure wrong, and that is exactly what makes it unanswerable
+name, in order, to whoever is sitting there. It is complete, and
+he never has a figure wrong, and that is exactly what makes it unanswerable
 when the figure he reaches, in the same voice as all the others, is the worst
 one somebody has. He experiences the reading-out as inclusion: everybody is in
 it, nobody is left off, and leaving somebody off is the only thing he would
@@ -28,7 +28,7 @@ call unkind.
 He does not sort the things he has heard about a person into checked and
 unchecked; he passes on a mark, a plan and a rumour with the same confidence and
 the same warmth, and he never returns to any of them. Because everything else
-he says about people is verifiable and right, the item that is wrong travels
+he says about people is verifiable and right, the false item travels
 exactly as far and lasts exactly as long, and the person it is about cannot kill
 it, because a denial is what somebody would say anyway. This costs somebody
 years and costs him nothing, and he will never find out.

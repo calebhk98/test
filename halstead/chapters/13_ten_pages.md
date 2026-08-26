@@ -30,7 +30,7 @@ In November Hearn tells her the third page of an essay is doing the work of the 
 
 ________________
 
-Self defense starts in September, an hour a day, every day; the sheet says it runs to the end.
+The mat room holds the smell of ninety children using it every day, and the window at the top of the wall opens a hand's width and does nothing about it. Self defense is an hour a day from September, every day, and the sheet says it runs to the end.
 
 The first term is ones: standing, falling, getting up off the floor with somebody's hand on your collarbone, and twenty minutes at a stretch of somebody in front of you doing a single thing slowly and then doing it slightly faster. Kowalczyk tells her in October that she is planting her back foot before she knows where she is going, and that she needs to stop deciding so early, and in November it goes to twos.
 
@@ -64,7 +64,7 @@ Swimming gets harder and the teacher says so in the first week. Some of it is in
 
 Paintball joins the afternoon block in October, and Bell hands the markers out, says it is what they have been doing with darts, a bit harder, and sets the drill running.
 
-For weeks everybody is bad at it and knows why, because the ball goes far faster than a dart and there is a wall of paint behind the target to prove it, and Bell lets them stay stuck that way.
+For weeks everybody is bad at it and knows why, because the ball goes far faster than a dart and there is a wall of paint behind the target to prove it, and Bell lets them stay stuck that way. By the end of an hour the floor is tacky and everybody's soles come away from it with a sound.
 
 "I'm watching it the whole way," Ruth says on the second Thursday, sitting on the floor with her back against the wall bars. "I can see it leave, I see the whole thing happen, and my hand's still behind it every single time."
 
@@ -115,7 +115,7 @@ Her first is on the board on the Monday and happens on the Thursday, when adults
 
 The sheet goes up on the Friday, and every name on it has an F next to it and a numbered list underneath.
 
-She reads it in the corridor with people behind her waiting for a turn at it. Number one is response time, number two is that a student answered a question about how many of them there are, and number three is that adults entered a building. Number six says the north stairwell was uncovered, and Chloe, who stood there the whole time, is still working out what covering it would even have looked like.
+She reads it in the corridor with people behind her waiting for a turn at it, under the light nobody has fixed, so the bottom of a sheet has to be read at an angle. Number one is response time, number two is that a student answered a question about how many of them there are, and number three is that adults entered a building. Number six says the north stairwell was uncovered, and Chloe, who stood there the whole time, is still working out what covering it would even have looked like.
 
 After dinner, when the corridor is empty, she goes back and reads it again, and then a third time. Ruth comes and stands next to her and reads it all the way to the bottom in silence, arms crossed.
 

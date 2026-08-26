@@ -42,7 +42,7 @@ Reading works a different way entirely, and the difference shows up wherever it 
 
 In a week that is the cereal box at breakfast, both sides, including a contest that ended in a different year, the road signs read aloud from the back seat until her mom asks her to stop, her grandmother's church bulletin, and the four books at a time her library card is good for, argued about with the librarian more than once.
 
-"What if I brought two of them back and got two more the same day, because then it would still only be four at a time?"
+"What if I brought two of them back and got two more the same day? Then it would still only be four at a time."
 
 "Then you'd have four."
 
@@ -50,7 +50,7 @@ In a week that is the cereal box at breakfast, both sides, including a contest t
 
 "You'd have had four at a time," the librarian says, and the stamp keeps coming down, card after card.
 
-"The rule is about at a time, though, so it's fine, because it is still four at a time, just twice over, and two of them you already gave me."
+"The rule is about at a time, though. It's fine. It is still four at a time, just twice over. And two of them you already gave me."
 
 The librarian looks up at her and holds the stamp in the air. "How old are you?"
 
@@ -64,21 +64,21 @@ ________________
 
 At dinner in September she talks for the entire meal about a book in which a girl runs away and lives inside a train station, so the explaining starts with the station, whose size is what everything else depends on.
 
-"It's got a whole floor just for people waiting overnight, and that's where she sleeps, except you can only be there if you have a ticket, so she keeps hers the whole time and can't ever use it."
+"It's got a whole floor just for people waiting overnight. That's where she sleeps. You can only be there with a ticket. So she keeps hers the whole time and can't ever use it."
 
 "Where'd she get a ticket?" her dad says, stopping eating to do the thing where he asks questions he already knows the answer to.
 
-"Her brother, that's why she brings him, because he saves his money while she spends all of hers, and he knows it, so he's kind of a jerk about it for the first half."
+"Her brother. That's why she brings him. He saves his money and she spends all of hers. And he knows it. He's kind of a jerk about it for the first half."
 
 "And then he stops being a jerk about it." Her mom's eyes have gone somewhere past her shoulder, to whatever has been getting the rest of her attention lately.
 
-"No, he gets worse and then he stops," Chloe says, putting her fork down. "He gets worse because she starts being fine without him and he can tell, so he gets meaner at exactly the point where she stops needing him, which is backwards, except it isn't, because that's exactly when you would."
+"No, he gets worse and then he stops," Chloe says, putting her fork down. "He gets worse. She starts being fine without him and he can tell. So he gets meaner at exactly the point where she stops needing him. That's backwards. Except it isn't. That's exactly when you would."
 
 Chloe eats something, because she has been told to. "And she likes having him there by the end, but she keeps it to herself, and you just know anyway."
 
 "How do you know, then, if she never says so?"
 
-"Because of what she does with the locker key. There's one key to the locker where they keep their stuff, and at the start she keeps it, then in the middle he keeps it, and at the end it's just sitting in the bowl at their aunt's house with the batteries, and neither of them put it there. That's how you know."
+"Because of what she does with the locker key. There's one key to the locker with all their stuff in it. At the start she keeps it. In the middle he keeps it. At the end it's just sitting in the bowl at their aunt's house with the batteries, and neither of them put it there. That's how you know."
 
 Chloe talks through the clearing of the plates and is still going when her mom says okay, upstairs, teeth, so that bedtime runs long.
 
@@ -96,13 +96,13 @@ The blacktop is warm enough by midmorning that the girls play in short sleeves, 
 
 "You're out," Chloe says.
 
-"No I'm not, because I caught it clean, and clean is a different rule than when it hits the ground first," Kayleigh says, already turning after the ball, because it's still going.
+"No I'm not. I caught it clean. Clean is a different rule from off the ground," Kayleigh says, already turning after the ball, because it's still going.
 
-"Maddie was out, and she caught it on one bounce, like a minute ago, so either one bounce is out or it isn't."
+"Maddie was out. She caught it on one bounce, like a minute ago. So either one bounce is out or it isn't."
 
-"That was different, because Maddie kind of scoops it instead of catching it properly, so it's basically a whole other move."
+"That was different. Maddie kind of scoops it instead of catching it properly. It's basically a whole other move."
 
-"How was it different, though, when you both caught it off the bounce, and that's the whole rule, so it shouldn't matter how your hand does it?"
+"How was it different, though? You both caught it off the bounce. That's the whole rule. It shouldn't matter how your hand does it."
 
 "It just was," Kayleigh says, and throws the ball before Chloe can say anything else.
 
@@ -118,11 +118,11 @@ The class laughs while Peanut sits where he landed and washes his face, unbother
 
 Chloe read a book about Icarus at the library not long ago and has not quite put it down since.
 
-"He's Icarus, he had wings made out of feathers and wax, and his dad told him not to fly too high because the sun would melt it, and he went up anyway, and that's Peanut, right there, his wings just came apart."
+"He's Icarus. He had wings made out of feathers and wax. His dad told him not to fly too high, the sun would melt it, and he went up anyway. And that's Peanut, right there. His wings just came apart."
 
 A chair squeaks behind her while Peanut keeps washing his face, so they must not have heard her.
 
-"He flew too close to the sun," she says, louder, "and now he's in the wood chips, same as the actual Icarus, except Icarus only had the ocean, so it was worse for him."
+"He flew too close to the sun," she says, louder, "and now he's in the wood chips, same as the actual Icarus. Icarus only had the ocean. It was worse for him."
 
 Kayleigh Burns turns around in her seat and looks at her.
 
@@ -170,7 +170,7 @@ The parking lot, the boxes, the question that had already happened without her: 
 
 "Do you have trouble focusing?"
 
-"I don't know, it's not like I decide to stop, I just forget, and I only notice when somebody says my name." It comes out flatter than she meant, enough that her mom looks up from the papers.
+"I don't know, it's not like I decide to stop, I just forget. Then somebody says my name and I notice." It comes out flatter than she meant, enough that her mom looks up from the papers.
 
 "Because what she actually said was that you can do the work when you want to, which sounds like she's saying it's a choice thing, and I think she has that wrong." Her mom turns around in her seat. "Is it a choice thing? You're not in trouble here."
 
@@ -184,7 +184,7 @@ Her dad says huh and puts his eyes back on the road, and the heater ticks the re
 
 ________________
 
-The checkup is in December and Chloe likes going, because they measure her height against the wall and this year she is above last year's mark by a visible amount.
+There is a pencil line on the wall beside the scale with a date written under it, and this year Chloe stands above last year's mark by a visible amount, which is the part of the December checkup she likes.
 
 The doctor looks in her ears and down her throat, then has her follow his finger with her eyes only, which she is good at.
 
@@ -196,7 +196,7 @@ Then her mom says she has been having a hard time at school. He rolls his chair 
 
 "Do you finish your work?"
 
-"Sometimes, if it's something I haven't already done, because if I already know how it works, doing it thirty more times just proves it again."
+"Sometimes. Not the ones I've already done. I already know how it works. Doing it thirty more times just proves it again."
 
 "Do you know what the teacher's talking about, when she calls on you?"
 
@@ -224,15 +224,15 @@ Her grandmother says well, somebody got grown up this year, so Chloe reads in th
 
 Her cousin Dana, who is nineteen, sits next to her and asks how school is.
 
-"It's good," Chloe says, then can't help adding, "we're doing the water cycle, and I already knew clouds are the ocean going somewhere else, and there's a boy in my class who's barely started the sled dog book, and I already finished the whole thing, on the bathroom floor, because I had to know if the dog lived."
+"It's good," Chloe says, then can't help adding, "we're doing the water cycle, and I already knew clouds are the ocean going somewhere else. There's a boy in my class barely started on the sled dog book. I already finished the whole thing, on the bathroom floor. I had to know if the dog lived."
 
 "Do you have a favorite subject?"
 
-"Reading, though it's not really a subject, because you just do it on your own, so I'm not sure it counts."
+"Reading. It's not really a subject, though. You just do it on your own. I'm not sure it counts."
 
 "Yeah? Me too, when I was little. Did you do the horse ones?"
 
-"Some of them, I liked the one where the horse gets sold twice and has a bad owner in the middle part, but the library only lets you have so many at a time and the horse ones are all shelved together, so I run out fast."
+"Some of them. I liked the one with the horse getting sold twice and a bad owner in the middle part. The library only lets you have so many at a time. And the horse ones are all shelved together. So I run out fast."
 
 Dana says nice, then turns to talk to somebody else, which is the whole conversation.
 
@@ -250,7 +250,7 @@ Chloe presses closer to the cold glass and keeps her eyes shut for the rest of t
 
 ________________
 
-In January they read a book about a boy and a sled dog out loud, going around the room, with the radiator ticking through the whole first chapter.
+The radiator ticks all the way through the first chapter of the book about a boy and a sled dog, which they read out loud in January, going around the room.
 
 Chloe had read the whole thing on Tuesday, finishing it on the bathroom floor, because waiting until after dinner to find out whether the dog lived was beyond her.
 
@@ -274,15 +274,15 @@ That night at dinner she tells them, and it takes about a minute and a half.
 
 "She took your book," her dad says.
 
-"Until the end of the day. But everybody was on worksheets by then, so getting it back barely helped."
+"Until the end of the day. But everybody was on worksheets by then. Getting it back barely helped."
 
 "Was anybody else reading ahead?"
 
-"Probably not, because they're still on chapter four, and if somebody else was ahead she'd have taken their book as well, but she only took mine."
+"Probably not. They're still on chapter four. If somebody else was ahead she'd have taken their book as well. She only took mine."
 
 "Well, that's the class, though, because they all read it together, so nobody gets to the end ahead of anybody else."
 
-"I know, that's what she said, but I already finished the whole book on Tuesday, so waiting for everybody else to catch up just feels like the whole week standing still."
+"I know, that's what she said. But I already finished the whole book on Tuesday. Waiting for everybody else to catch up just feels like the whole week standing still."
 
 Her mom says she probably just wants everybody on the same page, literally, then laughs at her own joke, and Chloe laughs too, because it's her mom, while her dad does the noise he does instead of laughing.
 

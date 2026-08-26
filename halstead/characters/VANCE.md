@@ -4,9 +4,29 @@ The teacher everyone in the building agrees is the nice one, genuinely good at t
 the job that shows up in a crisis, and nice for real, specific, worked-out reasons rather
 than by temperament.
 
-**Age:** 31 in the year she teaches Chloe | **MBTI:** ESFJ (a writing aid, not a claim)
-| **IQ:** not the useful measure for her; her competence is trained emotional reading, and
-she went and got the training on purpose
+**Age:** 31 in the year she teaches Chloe | **MBTI:** INFP (a writing aid, not a claim)
+| **IQ:** 121, and the useful measure is different: her competence is trained emotional
+reading, and she went and got the training on purpose
+
+## Type and number
+
+**Primary: INFP, revised from ESFJ.** The harmony reading was looking at the outcome — an
+unfrightened room, a settled child — and assuming the machinery. The machinery is the opposite
+way round. She is not naturally socially fluent and she does not run on reading the room;
+she runs on a private, worked-out, quite stubborn set of convictions about what a child is
+owed, and she went and acquired the interpersonal technique deliberately, as a skill, in
+order to deliver on them. That is why her warmth is structured rather than spontaneous,
+and why she is so hard to move once she has decided something.
+
+**Mistaken for:** ESFJ, universally, including by her own colleagues, and she has never
+corrected anybody.
+
+**IQ 121.** Bright, and the shape is what matters: verbal reasoning solidly high, and a
+trained emotional-inference ability that is genuinely at the top of any scale you could
+build for it — she is reading micro-behaviour continuously and consciously, having been
+taught how, and she can tell you what she saw and in what order. Where she places lowest:
+quantitative reasoning, comfortably, and she knows it and says so cheerfully in front of
+children on purpose.
 
 ## How she thinks people learn
 
@@ -128,6 +148,32 @@ hers. Cornered about a child in front of her, she does not hedge at all. The thi
 actually breaks her composure is finding out, afterward, that she was in the room and did
 not see something, and there is no version of her that takes that well.
 
+## Frustration and anger
+
+**What frustrates her:** a child who will not say the thing, when she can see the shape of
+it. She does not push. The frustration is entirely with herself for not having built the
+conditions well enough yet.
+
+**The tell, before she says anything:** she gets closer and lower. She goes down to the
+child's eye level and stays there past the point of comfort for any adult watching, and
+she will hold that position for a very long time.
+
+**What she does with it:** waits, genuinely, and the waiting is not a technique for
+producing speech. She is entirely prepared to get nothing and come back tomorrow, and she
+does come back tomorrow, and the next day.
+
+**What actually makes her angry:** a parent who has stopped trying. Not one who is
+struggling, or absent for reasons, or angry with her. One who has quietly decided the
+child is somebody else's problem now.
+
+**Angry, she becomes very gentle and very specific,** and it is much worse than the
+alternative. She describes exactly what she has observed, in dates and instances, in the
+kindest available voice, and she does not stop until she has finished the list, and then
+she asks what they intend to do.
+
+**How it ends:** she cries in the car and tells nobody, and is completely normal by the
+following morning, and has already written the referral.
+
 ## What she is good at, and what she is not
 
 Self-contained second grade, roughly twenty-seven children in table groups of four:
@@ -198,6 +244,30 @@ She spends more than she should on supplies and does not track it. She touches t
 doorframe on her way out every afternoon, a habit she cannot explain and has not tried to
 break. Phone at lunch only, never during class. Every morning she turns the lights on and
 checks the quiet corner is stocked before anything else.
+
+## Life outside the work
+
+**She sings in a bar once a month** with a band of people who do other jobs, and she is
+good, and none of her colleagues know, and she likes it that way.
+
+**Sea swimming in summer** and long unimpressive hikes the rest of the year, generally with
+a dog belonging to somebody else.
+
+**She keeps every book she has ever read** in a way that has become a problem for her
+apartment, and she lends them out constantly and does not track them.
+
+**Sentimental about:** the teacher she had at nine, whose name she uses as the standard,
+and whom she has never contacted because she would not know what to say.
+
+**A free Saturday** is the market, somebody else's kitchen, and being talked at by a friend
+for four hours, which she finds restful.
+
+**At eight** she was the child who sat with whoever was on their own, and she was doing it
+on purpose even then, and she remembers deciding to.
+
+**At fifty** she is a head of year, has stopped believing several things she believed at
+thirty, and is more effective and slightly harder, and she keeps a list of the children she
+thinks she failed, and the list is shorter than she believes it is.
 
 ## Would do
 

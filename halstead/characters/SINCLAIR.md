@@ -5,9 +5,29 @@ handle a night that is not a drill exactly the way they handle one that is. A fo
 who was among the best in special operations, and who has watched a plan come apart with people
 depending on it, which is the whole reason he runs the exercise the way he does.
 
-**Age span:** appears when Chloe is eleven and twelve | **MBTI:** ESTJ (a writing aid, not a
-claim) | **IQ:** not the interesting number; what he has is an unusual tolerance for finding
-out he was wrong about a procedure
+**Age span:** appears when Chloe is eleven and twelve | **MBTI:** ESTP (a writing aid, not
+a claim) | **IQ:** 124, and the interesting thing about him is an unusual tolerance for
+finding out he was wrong about a procedure
+
+## Type and number
+
+**Primary: ESTP, revised from ESTJ.** The executive reading saw a man who runs an exercise
+and holds people to a standard. What it missed is that he does not believe in the standard
+the way an administrator does — he believes in the live event, and he would rather find out
+that his own procedure is wrong at two in the morning with children in the building than
+keep a tidy one on paper. He is present-tense, physically confident, and completely
+comfortable improvising in the middle of his own plan. That is the tactician, and it is
+also why he is the only adult here who volunteers that he has been wrong.
+
+**Mistaken for:** ESTJ by anybody who reads the exercise documentation, and ISTP by anybody
+who watches him work alone.
+
+**IQ 124.** Bright, and unremarkable next to the faculty he actually runs on: a tolerance
+for incomplete information that is trained rather than innate, plus a very fast read of
+where people are in a space and what they are about to do. Where he places lowest: verbal
+abstraction, and long-range planning without a rehearsal attached. He builds by running
+the thing and fixing it, not by modelling it, and asked to produce a five-year plan he
+would produce a schedule of exercises instead and not notice the substitution.
 
 ## How he thinks people learn
 
@@ -116,6 +136,34 @@ preparation. The state a writer should reach for is not fear and not anger: it i
 found a gap between what a procedure measures and what an actual night would demand, and who
 will now be awake at four in the morning for a week closing it.
 
+## Frustration and anger
+
+**What frustrates him:** a report with no number in it. Somebody telling him it went well,
+or it was quick, or people responded fine.
+
+**The tell, before he says anything:** he waits. He does not fill the silence, he does not
+prompt, and he does not soften it with a nod. Ten seconds of a former operator looking at
+you and saying nothing does more work than any question.
+
+**What he does with it:** asks the same question again, in the same words, unchanged. If
+he has to ask a third time he asks it in the same words a third time, and this is the
+single most effective thing he does.
+
+**What actually makes him angry:** somebody freezing and then lying about having frozen.
+The freezing is expected, planned for, and entirely forgivable. The account afterwards is
+the thing the whole exercise exists to produce, and a false one is worse than the freeze
+was.
+
+**Angry, he gets quieter and considerably more courteous.** He uses the person's full name
+and rank. He becomes formal in a way that is much worse than shouting, and he does not
+express any opinion about them at all — he simply establishes, calmly, in front of
+whoever is present, exactly what happened.
+
+**How it ends:** with a written note and a change to the roster, made the same night. He
+does not discuss it afterwards, does not hold it personally, and will put the same person
+in a harder position within a month if he thinks they can carry it, which is the closest
+thing to forgiveness his job has.
+
 ## What he is good at, and what he is not
 
 He runs the live intrusion exercise, which is not a graded academic subject: an ongoing,
@@ -195,6 +243,32 @@ minutes. Money: unremarkable, and spent on nothing anybody at the school has eve
 walks the full exterior of the building first thing every morning, whether or not anything is
 scheduled, and does not describe this as a ritual. Uses a separate phone for the outside work and
 keeps it off during term.
+
+## Life outside the work
+
+**Open water,** all year, in cold he does not mention. He swims alone, early, in whatever
+is nearest, and it is the one thing he does purely for himself.
+
+**He cooks breakfast for large numbers of people** with real competence and real pleasure,
+and this is the version of him his own family knows best and almost nobody at work has
+seen.
+
+**Woodwind, badly.** He took up the clarinet at forty-four and is still not good, and he
+practises anyway, and being visibly bad at something in front of his children was the
+entire point and he has never said so.
+
+**Sentimental about:** the names of people he served with, which he can recite, and which
+he does not.
+
+**A free Saturday** is water at six, the kitchen at nine, and a long afternoon of being
+usefully idle in a garden.
+
+**At eight** he was the child who organised the other children into two teams and then
+changed the rules halfway through to see what would happen.
+
+**At sixty** he has stopped running the exercises himself and has become extremely good at
+watching somebody else run one and saying nothing until afterwards, which took him a
+decade to learn and which he regards as the hardest professional skill he ever acquired.
 
 ## Would do
 

@@ -46,11 +46,11 @@ ________________
 
 On the last night the families eat on campus, at long tables in the dining hall, and her dad asks her what she did all month.
 
-Chloe is already talking before she's finished sitting down, one knee still up on the bench: "Okay, so first there's Gary, a plastic man with no arms at all who lives on a cart, and you do CPR on him, and if you push in exactly the right place hard enough he clicks." She demonstrates the hand position on the edge of the table, both hands stacked and elbows locked, the way they showed her. "I got the click on the fourth try, and Sam gave up before his and decided the click was broken, but the click works fine, you just have to push harder than you think you're allowed to."
+Chloe is already talking before she's finished sitting down, one knee still up on the bench: "Okay, so first there's Gary. He's a plastic man with no arms at all and he lives on a cart. You do CPR on him. Push in exactly the right place hard enough and he clicks." She demonstrates the hand position on the edge of the table, both hands stacked and elbows locked, the way they showed her. "I got the click on the fourth try. Sam gave up before his and decided the click was broken. The click works fine. You just have to push harder than you think you're allowed to."
 
-"Then there's the bridge," she says, lining up the salt, the pepper and a knife to show him the span. "You get dowels and string, you have to cross a gap with them, and then on the Tuesday they hang a bucket off the middle and put weights in a pound at a time until it goes. Ours went early, and Ruth's went at nineteen, because hers was triangles, and a triangle can only fold if something actually breaks, where a square folds right over. Everybody had to write down a prediction first, in pounds, before anything got loaded. I wrote fourteen and was wrong by three, because the corner goes first: every corner of a square carries an angle on its own, and an angle on its own gives way." She presses the pen hard enough to nearly go through the napkin, and explains the corner twice to make sure he has it.
+"Then there's the bridge," she says, lining up the salt, the pepper and a knife to show him the span. "You get dowels and string. You have to cross a gap with them. And then on the Tuesday they hang a bucket off the middle and put weights in a pound at a time until it goes. Ours went early. Ruth's went at nineteen. Hers was triangles. A triangle can only fold if something actually breaks. A square folds right over. Everybody had to write down a prediction first, in pounds, before anything got loaded. I wrote fourteen and was wrong by three. The corner goes first. Every corner of a square carries an angle on its own, and an angle on its own gives way." She presses the pen hard enough to nearly go through the napkin, and explains the corner twice to make sure he has it.
 
-"Then the pool, where I can do a whole length now, badly," she says, "and Sam can do two straight through and brings it up at dinner most days."
+"Then the pool. I can do a whole length now, badly," she says, "and Sam can do two straight through and brings it up at dinner most days."
 
 Then dividing fractions, which she does on a napkin with a pen taken off the next table, drawing the rectangles the way Mr. Baptiste drew them and running all the way through to why you turn the second fraction over, so that the working reaches the edge of the napkin and comes back, while her dad leans in over the napkin.
 
@@ -60,17 +60,17 @@ Then she starts on Spanish, rattling it off before she remembers he can't follow
 
 "Say that again in a language I speak," her dad says.
 
-"I said what's on the table, and where the bathroom is, and what I did today, and then the thing Sam says at breakfast every morning, which turns out to be rude," she says, then goes back through it in order, slower this time, turning each piece into English for him.
+"I said what's on the table, and where the bathroom is, and what I did today. And then the thing Sam says at breakfast every morning. It turns out it's rude," she says, then goes back through it in order, slower this time, turning each piece into English for him.
 
-"We talk in it at lunch on purpose, me and Ruth and Sam and Kavi, so the rest of the table has to sit there and guess," she says, "which fails every time, because everybody else at that table is doing Spanish as well."
+"We talk in it at lunch on purpose, me and Ruth and Sam and Kavi, so the rest of the table has to sit there and guess," she says. "It fails every time. Everybody else at that table is doing Spanish as well."
 
-"Then there's the signing, which is better than all of it, because you can do it across a whole room with your hands doing the talking and your mouth shut," she says, showing him the alphabet on her fingers, then his name in it slowly and hers faster. "That's water, that's finished, that's again, and in the library you can ask somebody at the far end of the room whether they have a book, with everybody's mouth shut."
+"Then there's the signing. That's better than all of it. You can do it across a whole room with your hands doing the talking and your mouth shut," she says, showing him the alphabet on her fingers, then his name in it slowly and hers faster. "That's water, that's finished, that's again. And in the library you can ask somebody at the far end of the room for a book, with everybody's mouth shut."
 
-"And there was a puzzle, twenty sentences in a language none of us had ever heard of, and no dictionary, and you had to work out how the entire grammar went from the sentences themselves. Ruth got the plurals before I did, and Kavi got the pattern in the endings, which is still half out of my reach even though he has explained it and explained it, and he'd explain it to you now if he were sitting here instead of me."
+"And there was a puzzle, twenty sentences in a language none of us had ever heard of, and no dictionary, and you had to work out how the entire grammar went from the sentences themselves. Ruth got the plurals before I did. Kavi got the pattern in the endings. That part is still half out of my reach. He has explained it and explained it. He'd explain it to you right now, only he isn't sitting here and I am."
 
 Then the wood shop, and the safety goggles sized for somebody bigger. Then what you do about a bleed, which is pressure first and the dressing second, and the glue they use on a cut too small to need stitches. Then the eggs she learned to cook, and the dish on the Thursday that the whole table ate, which had onions in it that she cut herself, and then the paintings they were taken to look at, one of which cost more than a house, which baffles her, because it is a painting.
 
-"Then there's the computers, and that's actually two entirely different things," she says, counting them off on her fingers, "the first being that you type the words in yourself instead of dragging coloured blocks around like it's a game, and I made it count to a hundred and skip every seven on the way past. The second is a room they took us into that's enormous and kept freezing cold on purpose, because the machines throw off so much heat the heat would cook them, and a woman who works in there took us through the whole arrangement, down to the water pipes under the floor."
+"Then there's the computers, and that's actually two entirely different things," she says, counting them off on her fingers, "the first being that you type the words in yourself instead of dragging coloured blocks around like it's a game, and I made it count to a hundred and skip every seven on the way past. The second is a room they took us into. It's enormous and they keep it freezing cold on purpose. The machines throw off so much heat the heat would cook them. And a woman who works in there took us through the whole arrangement, down to the water pipes under the floor."
 
 Then the robot arm on the second floor, which picks a block up and puts it down again for as long as you stand there watching it.
 
@@ -94,7 +94,7 @@ Her dad sets his fork down and laces his fingers on the table in front of him.
 
 "Twenty-seven," he says again.
 
-"There's tomorrow as well, which makes twenty-eight, though I'm leaving it out until it happens."
+"There's tomorrow as well, which makes twenty-eight. I'm leaving it out until it happens."
 
 He looks past her at the room and the other tables long enough that she turns around to see what he has found, and what he has found is people eating.
 
@@ -110,7 +110,7 @@ When he asks her to do the fractions again from the start, she turns the napkin 
 
 "But you could already do them, because you told me you got all eight of them right."
 
-"Anybody can do the flipping," Chloe says, putting the pen down, "and you do it and it comes out right, but the rightness belongs to him and not to you, because all you actually know is that he said so."
+"Anybody can do the flipping," Chloe says, putting the pen down. "You do it and it comes out right. But the rightness belongs to him and not to you. All you actually know is that he said so."
 
 Her dad looks at the napkin, folds it in half twice, and puts it in his shirt pocket.
 
@@ -122,25 +122,25 @@ Ruth takes her shoes off and lines them up against the wall, heel to heel, then 
 
 "We should all get in, all four of us, properly in, for the year," Ruth says.
 
-"Get in where, though, because you're going to have to say what you mean."
+"Get in where, though? You're going to have to say what you mean."
 
-"Here, because this is a school, a whole school that runs all year, and that's what it is."
+"Here. This is a school. A whole school, running all year. That's what it is."
 
-"I know it's a school, Ruth, since I've been standing in it the whole month same as you."
+"I know it's a school, Ruth. I've been standing in it the whole month same as you."
 
-"Then we should all get in, which is the entire point I've been making since I sat down."
+"Then we should all get in. That's the entire point. I've been making it since I sat down."
 
-"Obviously," Sam says, "because a place that spends a month teaching you all of that has plans for the rest of it."
+"Obviously," Sam says. "A place spends a month teaching you all of that, it's got plans for the rest of it."
 
-"It's not obviously, because you have to actually go and do things," Ruth says, pulling her knees up to her chest. "My mom asked, and there's a form, and there's a day where you come back and they look at you, and that day sits in the fall, not in the summer."
+"It's not obviously. You have to actually go and do things," Ruth says, pulling her knees up to her chest. "My mom asked. There's a form. And there's a day where you come back and they look at you. That day sits in the fall, not in the summer."
 
-"They already looked at us, Ruth, because that is exactly what this whole month was for."
+"They already looked at us, Ruth. That is exactly what this whole month was for."
 
-"That's not what she said, because she said it's a whole different day with different people doing the looking."
+"That's not what she said. She said it's a whole different day, with different people doing the looking."
 
-"You were on the wrong side of a door for that call, so how would you know what she said."
+"You were on the wrong side of a door for that call. How would you know what she said."
 
-"I heard half of it through the door, which is half more than you heard, before Mom noticed I was there."
+"I heard half of it through the door. That's half more than you heard. Then Mom noticed I was there."
 
 "Half a phone call is half a phone call, and the other half is the half where they say the thing."
 
@@ -162,9 +162,9 @@ Ruth picks the knot out of one shoelace with both thumbs instead of answering hi
 
 "But when is it that you actually find out either way."
 
-"That's hers as well, though she has promised to tell me the second she hears anything at all."
+"That's hers as well. She's promised to tell me the second she hears anything at all."
 
-"Well, find out," she says, up on her knees now with one hand fisted in the leg of Kavi's pyjamas. "Because if it's a day where they look at you, then I want to know what they look at, and whether it's the same material as this month or different, since different material is something a person can go and learn."
+"Well, find out," she says, up on her knees now with one hand fisted in the leg of Kavi's pyjamas. "It's a day where they look at you. So I want to know what they look at. Same material as this month, or different. Different material, a person can go and learn it."
 
 "It's a form, Chloe, and a form is a completely different object from a promise."
 
@@ -180,7 +180,7 @@ Ruth picks the knot out of one shoelace with both thumbs instead of answering hi
 
 "I like writing to people, and what I hate is homework."
 
-"You're going to do it twice, because you say that about everything and then you stop."
+"You're going to do it twice. You say that about everything and then you stop."
 
 "I am."
 

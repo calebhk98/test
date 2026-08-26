@@ -4,9 +4,28 @@ A first-grade teacher nineteen years into a job she is still good at, running a 
 twenty-nine on a fair, exhausted, one-speed system that has no setting for the child who
 finishes in ninety seconds.
 
-**Age:** 44 in the year she teaches Chloe | **MBTI:** ISTJ (a writing aid, not a claim)
-| **IQ:** not the useful measure for her; what she has is nineteen years of pattern
-recognition about children and no instrument to act on it with
+**Age:** 44 in the year she teaches Chloe | **MBTI:** ESTJ (a writing aid, not a claim)
+| **IQ:** 116, and the useful measure is different: nineteen years of pattern recognition
+about children and no instrument to act on it with
+
+## Type and number
+
+**Primary: ESTJ, revised from ISTJ.** The reticent-procedural reading was looking at how
+little she says. She is a talker worn down to four words by the nineteenth year. What she actually does all
+day is run a room of twenty-nine to a schedule, out loud, by direct instruction, and she
+is genuinely good at it — the organisation is hers, the standard is hers, and the fairness
+principle underneath it is a position she holds and would defend. Her four-word verdicts
+are an executive's economy at the end of the nineteenth year, not an introvert's reticence.
+
+**Mistaken for:** ISTJ, by anybody who meets her in March.
+
+**IQ 116.** Above average, ordinary among teachers, and the number tells you almost
+nothing about the thing she is unusually good at: after nineteen years she can tell in
+about a fortnight which child in a new class will be a problem, which will be missed, and
+which family will need handling, and the calls come in often enough that colleagues ask
+her.
+Where she places lowest: anything abstract or theoretical about education. She has read
+the research and she runs the room, and she would tell you those are separate activities.
 
 ## How she thinks people learn
 
@@ -123,6 +142,32 @@ the fairness runs on unattended. She is never sharp with a child at any level of
 and she has spent nineteen years making sure of it, at the cost of being able to show them
 anything else either.
 
+## Frustration and anger
+
+**What frustrates her:** a form asking for a judgement she is not permitted to act on.
+Being required to record that a child needs something the district does not provide, and
+then filing it.
+
+**The tell, before she says anything:** she stops writing and looks at the clock. Not
+pointedly, and not at the person; she is calculating how much of the day is left and what
+can be done inside it, and the answer is usually nothing.
+
+**What she does with it:** four words and a signature. She completes the form accurately,
+declines to editorialise, and moves to the next thing, and the economy is exhaustion
+rather than indifference.
+
+**What actually makes her angry:** being asked to certify something she knows to be false.
+A tick in a box saying a provision was made when it was not. She will absorb an
+extraordinary amount of institutional nonsense and this is where it stops.
+
+**Angry, she refuses in writing.** No conversation, no escalation, no complaint to
+anybody. She writes the accurate sentence instead of the required one, signs it, sends it,
+and lets it cost her whatever it costs her, and it has cost her twice.
+
+**How it ends:** at the end of the shift. She is genuinely finished with it by the car
+park and would be embarrassed to be described as principled, and she will do exactly the
+same thing again the next time and will not connect the two.
+
 ## What she is good at, and what she is not
 
 Self-contained first grade: reading, spelling, arithmetic, weather and the water cycle,
@@ -198,6 +243,32 @@ worth. The Friday read-aloud happens on a Friday, never moved, never skipped; th
 feels unfinished to her otherwise. She barely touches her phone during school hours and
 texts her mother back at a quarter to four, right after dismissal, every day. First thing
 every morning she unlocks the room by seven and waters a spider plant on the windowsill.
+
+## Life outside the work
+
+**She sews,** properly, on a machine that was her mother's, and makes most of what she
+wears, and this is why she is better dressed than her salary suggests and why nobody has
+ever worked out how.
+
+**Cycling, on flat ground, in company,** twenty miles on a Sunday with four other women
+and a stop for coffee that lasts longer than the ride.
+
+**She grows chillies** in an unreasonable quantity on a windowsill and gives them away in
+paper bags, and she is the only person in her family who eats them.
+
+**Sentimental about:** a shoebox of thank-you notes from nineteen years of six-year-olds,
+which she has never once read through in order and would not throw away under any
+circumstances.
+
+**A free Saturday** is the machine in the morning, the garden centre in the afternoon, and
+nothing that involves a child.
+
+**At eight** she was the eldest of four and was already doing a version of the job.
+
+**At sixty** she has retired, and misses the children, and does not miss the paperwork, and
+does supply work two days a week purely for the part she liked. She is stopped in shops by
+adults in their thirties who remember her, and she remembers most of them, and this
+happens more often than she ever expected and is the largest pleasure of her later life.
 
 ## Would do
 

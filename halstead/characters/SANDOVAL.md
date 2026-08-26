@@ -4,8 +4,25 @@ The lead researcher: would rather be exactly right than persuasive, and says the
 structural truth about her own position out loud even when saying it weakens what
 she is asking for.
 
-**Age:** mid forties | **MBTI:** INFJ (a writing aid, not a claim) | **IQ:** mid
-150s by the usual measure
+**Age:** mid forties | **MBTI:** INFJ (a writing aid, not a claim) | **IQ:** 153
+
+## Type and number
+
+**Primary: INFJ.** Unchanged, and the reason is the thing she is known for: she says the
+structural truth about her own position out loud, unprompted, even when it costs her the
+argument. That comes from a long private model of what her authority actually is and what
+it does to the person on the other end of it, held for years, acted on consistently, and
+never discussed. A thinking type would state the fact and stop; she states it because she
+has been thinking about what it feels like to be supervised by her.
+
+**Mistaken for:** INTJ, by anybody who has only seen her run a meeting.
+
+**IQ 153.** The shape of it: abstract reasoning and verbal reasoning both very high and
+almost exactly matched, which is unusual and is most of why she is a good
+supervisor — she can move between the mathematics and the explanation without a gear
+change. Where she places lowest: raw speed. She is slower than several of the people she
+supervises and knows it, says so, and has built a working life in which it does not matter,
+and she would tell a junior colleague this on their first day.
 
 ## Who she is in a sentence
 
@@ -104,6 +121,34 @@ after a career of being burned by abstracts that oversold. Movements economical
 and unhurried, the way some people are economical in speech. Dresses identically
 regardless of setting.
 
+## Frustration and anger
+
+**What frustrates her:** a claim borrowing an authority it has not earned. A student or a
+junior colleague stating something in the voice of settled knowledge when it came from one
+paper they half-read.
+
+**The tell, before she says anything:** she names the source. She will interrupt her own
+sentence to attribute something, precisely, and the attribution is a demonstration of the
+thing she is about to ask for.
+
+**What she does with it:** makes the person say where the knowledge came from. Not as a
+trap and not as a humiliation: she asks, she waits, and she treats the answer of
+nowhere in particular as an entirely acceptable place to start from.
+
+**What actually makes her angry:** work taken from somebody with less standing and
+presented as synthesis. She has a long memory for who was in the room when an idea first
+appeared, and she is the only person present who reliably still knows.
+
+**Angry, she states the mechanism of her own power and then uses it.** She will say out
+loud, in the meeting, exactly what she is able to do to the person and why, and then she
+does it, and the announcing is not a threat — it is the same principle she runs everything
+else on, applied at the worst possible moment for the person on the receiving end.
+
+**How it ends:** with a rewrite, an attribution added, and no residue. She does not
+withdraw her support from somebody she has corrected and she will write them a reference
+the following year, and she would consider withholding it a second wrong rather than a
+consequence.
+
 ## Blind spots
 
 She believes that stating a risk clearly always leaves the other person freer to
@@ -139,6 +184,33 @@ work allows one, is spent entirely away and entirely unrelated.
 Mid forties. Nothing rushed and nothing wasted. Coffee made carefully and treated
 as a small ritual rather than as fuel. Handwriting small, precise and fully
 legible, the hand of somebody who annotates other people's drafts for a living.
+
+## Life outside the work
+
+**Long-distance running,** unglamorous and consistent, at the same slow pace for twenty
+years. She thinks on it and would say she does not.
+
+**She is a serious amateur baker of one difficult thing** and has never got it right, and
+has been trying for eleven years, and finds the failure genuinely funny.
+
+**Poetry in translation,** read comparatively — three versions of the same poem side by
+side — which is the only hobby she has that resembles her work, and she is aware of that
+and does it anyway.
+
+**Sentimental about:** her own doctoral supervisor's handwriting, and specifically one
+line of it in a margin, which is the standard she has spent her career trying to meet as a
+supervisor herself.
+
+**A free Saturday** is the run, the market, and a long unproductive afternoon reading
+something outside her field.
+
+**At eight** she was the child who asked how the person who told her a fact had found it
+out, and kept asking, and was eventually given a library card to make her stop.
+
+**At sixty** she runs a large programme, has trained a great many people, and is best known
+among them for one habit: she tells every new arrival, on their first day, exactly what
+power she has over their career and exactly how she intends to use it, and there are people
+in their forties who still repeat the speech to their own students.
 
 ## Would do
 

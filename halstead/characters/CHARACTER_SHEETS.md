@@ -45,8 +45,26 @@ least favourite for the pair that already blurs most.
 No measured dials below. Words per line and percentage-terse figures used to sit in this
 table; they described a draft that has since been rewritten and writers read them as
 targets, so they are gone and each sheet now carries the tendency the number was pointing
-at. MBTI is a writing aid, not a claim, and appears nowhere in the book. IQ figures are
-carried from the synopsis, which states they are a reader's inference.
+at. MBTI is a writing aid, not a claim, and appears nowhere in the book. Nor does any IQ
+figure; the numbers below exist so that a writer knows the shape of a mind before writing
+a scene for it.
+
+**Every sheet now carries a `Type and number` block, a `Frustration and anger` block and a
+`Life outside the work` block.** The first records the four independent MBTI readings where
+they exist, names the primary and says why the other readings were looking at something
+else, and gives an IQ figure with the shape of it and where the person is comparatively
+weak. The second is written to be different person to person: what frustrates them, the
+tell before they speak, what they do with it, what actually angers them as against merely
+irritating them, what they are like angry, and how it ends. The third is the biography the
+book had no room for — a Saturday, an enthusiasm, what they are sentimental about, what
+they were like at eight and what they are like at forty.
+
+**No two of the ten cohort primaries are the same type.** Sixteen types across thirty-five
+people means duplication is arithmetically unavoidable further out, so the rule applied
+below is narrower: the cohort primaries are unique, every other type is used at most twice,
+and the one exception is ISTJ, which carries Fen, Hearn and Dave and is separated by the
+fact that they never occupy the same kind of room. `passes/fix/SHEET_EXPANSION.md` records
+the whole table and the reasoning behind each revision.
 
 ---
 
@@ -54,42 +72,43 @@ carried from the synopsis, which states they are a reader's inference.
 
 | | file | MBTI | IQ | the voice in one line |
 | :-- | :-- | :-- | :-- | :-- |
-| Chloe | `CHLOE.md` | INFJ | 160-168 | Builds a physical parallel and argues that instead of the claim. Open by default; the clipped register is an injury, not a baseline. |
-| Ruth | `RUTH.md` | ENTJ | 175+ | Assertion first, then the reason, with your name in the middle of the correction. |
-| Sam | `SAM.md` | ESFP | 155-165 | The shortest in the cast. One clause, a number first, no subordinate clause. |
-| Kavi | `KAVI.md` | INTP | 165-175 | Three words or one unbroken technical run, never in between. |
-| Nadia | `NADIA.md` | ESTJ | 160-170 | Imperative. Short independent clauses, no connectives, no hedging. |
-| Eli | `ELI.md` | ENTP | 160-170 | Reframes the terms before answering, then repeats himself minus the contraction. |
-| Theo | `THEO.md` | ISFJ | 165-175 | The longest in the cast, briefing-shaped, and the only character who should hedge. |
+| Chloe | `CHLOE.md` | INFJ | 164 | Builds a physical parallel and argues that instead of the claim. Open by default; the clipped register is an injury, not a baseline. |
+| Ruth | `RUTH.md` | ENTJ | 176 | Assertion first, then the reason, with your name in the middle of the correction. |
+| Sam | `SAM.md` | ESFP | 161 | The shortest in the cast. One clause, a number first, no subordinate clause. |
+| Kavi | `KAVI.md` | INTP | 172 | Three words or one unbroken technical run, never in between. |
+| Nadia | `NADIA.md` | ESTJ | 166 | Imperative. Short independent clauses, no connectives, no hedging. |
+| Eli | `ELI.md` | ENTP | 169 | Reframes the terms before answering, then repeats himself minus the contraction. |
+| Theo | `THEO.md` | ISFJ | 171 | The longest in the cast, briefing-shaped, and the only character who should hedge. |
 
 Eli and Theo do not speak at all in the first twenty chapters.
 
 ## The other students
 
-| | file | presence | the one thing |
-| :-- | :-- | :-- | :-- |
-| Priya | `PRIYA.md` | recurring across most of the school years | The only character who runs on, and the only one who simply takes a compliment. More page presence than three of the seven above. |
-| Odile | `ODILE.md` | frequently mentioned, barely ever speaks | Holds the highest number in the book and never reacts to it on the page. |
-| Owen | `OWEN.md` | mentioned only, never speaks | The only person who didn't want to be there. Established entirely through others. |
-| Fen | `FEN.md` | returns three times, never with a line | Treats every space as temporary, and keeps the record instead. |
+| | file | MBTI | IQ | the one thing |
+| :-- | :-- | :-- | :-- | :-- |
+| Priya | `PRIYA.md` | ENFP | 163 | The only character who runs on, and the only one who simply takes a compliment. A horse girl in the full unembarrassed sense. |
+| Odile | `ODILE.md` | ISTP | 178 | Holds the highest number in the book and never reacts to it on the page. |
+| Owen | `OWEN.md` | INFP | 141 | The only person who didn't want to be there. Established entirely through others. |
+| Fen | `FEN.md` | ISTJ | 165 | Treats every space as temporary, and keeps the record instead. |
 
 ## The peers who make it harder
 
-| | file | the one thing |
-| :-- | :-- | :-- |
-| Kayleigh | `KAYLEIGH.md` | Enforces a norm and moves on. Three to seven words, never explains, never escalates. |
-| Bryce | `BRYCE.md` | Flat before-and-after comparison with no judgement word. Reports the weather, accurately. |
+| | file | MBTI | IQ | the one thing |
+| :-- | :-- | :-- | :-- | :-- |
+| Kayleigh | `KAYLEIGH.md` | ESFJ | 106 | Enforces a norm and moves on. Three to seven words, never explains, never escalates. |
+| Bryce | `BRYCE.md` | ISFP | 103 | Unadorned before-and-after comparison with no judgement word. Reports the weather, accurately. |
 
 Both sheets carry the test the book depends on: a matter-of-fact complaint versus an
 insult. The second breaks them, and breaks the book's argument.
 
 ## Family
 
-| | file | MBTI | the one thing |
-| :-- | :-- | :-- | :-- |
-| Meg | `MEG.md` | ESFJ | Interrogates institutions, deflects feelings. Should be the cast's question-asker and currently is not. Her own story goes quiet once Chloe is settled. |
-| Dave | `DAVE.md` | ISTJ | Finds the real red flag in a document, then goes anyway. |
-| Grandmother | `GRANDMOTHER.md` | – | Wrong about scale, uniquely right about Chloe's body. |
+| | file | MBTI | IQ | the one thing |
+| :-- | :-- | :-- | :-- | :-- |
+| Meg | `MEG.md` | ENFJ | 118 | Interrogates institutions, deflects feelings. Should be the cast's question-asker and currently is not. Her own story goes quiet once Chloe is settled. |
+| Dave | `DAVE.md` | ISTJ | 112 | Finds the real red flag in a document, then goes anyway. |
+| Grandmother | `GRANDMOTHER.md` | ISFJ | 104 | Wrong about scale, and the only person who reads Chloe's body accurately. |
+| Dana | `DANA.md` | ISFP | 111 | The older cousin, thirteen years ahead. Asks the standard question, means it, and turns away. |
 
 The worst-separated pair in the book: given their lines with the names stripped off, almost
 every one gets assigned to the wrong parent.
@@ -102,17 +121,17 @@ statement, never cushioned; age is never a reason for leniency; an extraordinary
 is treated as expected; and a teacher's own error is fixed the same flat way a student's
 is. A generic-teacher line fails by warming up the delivery.
 
-| | file | teaches | the one thing |
-| :-- | :-- | :-- | :-- |
-| Bell | `BELL.md` | marksmanship | Opens on the physical object and won't let go of it. Never praises a hit. |
-| Hearn | `HEARN.md` | writing, history | Same volume for everything. Zero notes on a returned paper is the worst grade. |
-| Kowalczyk | `KOWALCZYK.md` | fighting | Turns any complaint into live arithmetic while her hands do something else. The longest speaker in the book. |
-| Amberg | `AMBERG.md` | law | Puts the governing document down before speaking. Records a refusal instead of arguing it. |
-| Baptiste | `BAPTISTE.md` | early maths | Answers a question with a question. The only adult who praises a question out loud. |
-| Doyle | `DOYLE.md` | science | The one teacher shown being corrected by a student. Fixes it the same flat way. |
-| Pruitt | `PRUITT.md` | the forge | Two lines in four years, both delivered mid-stride. |
-| Sinclair | `SINCLAIR.md` | Defensive Watch | Extracts a number and moves on, even over a live armed intrusion. |
-| Sandoval | `SANDOVAL.md` | research | The only adult who states the mechanism of her own authority out loud. |
+| | file | teaches | MBTI | IQ | the one thing |
+| :-- | :-- | :-- | :-- | :-- | :-- |
+| Bell | `BELL.md` | marksmanship | ESTP | 112 | Opens on the physical object and won't let go of it. Never praises a hit. |
+| Hearn | `HEARN.md` | writing, history | ISTJ | 148 | Same volume for everything. Zero notes on a returned paper is the worst grade. |
+| Kowalczyk | `KOWALCZYK.md` | fighting | ENTJ | 126 | Turns any complaint into live arithmetic while her hands do something else. The longest speaker in the book. |
+| Amberg | `AMBERG.md` | law | INTJ | 151 | Puts the governing document down before speaking. Records a refusal instead of arguing it. |
+| Baptiste | `BAPTISTE.md` | early maths | ENFP | 154 | Answers a question with a question. The only adult who praises a question out loud. |
+| Doyle | `DOYLE.md` | science | ENTP | 143 | The one teacher shown being corrected by a student. Fixes it the same uncushioned way. |
+| Pruitt | `PRUITT.md` | the forge | ISTP | 128 | Two lines in four years, both delivered mid-stride. |
+| Sinclair | `SINCLAIR.md` | Defensive Watch | ESTP | 124 | Extracts a number and moves on, even over a live armed intrusion. |
+| Sandoval | `SANDOVAL.md` | research | INFJ | 153 | The only adult who states the mechanism of her own authority out loud. |
 
 ## Adults outside Halstead
 
@@ -121,15 +140,15 @@ the adult does their job competently and the failure is structural — the frame
 built to reach what Chloe needs. It is unkind the moment it stops being about the task
 and becomes about Chloe herself. The book's argument depends on none of them crossing it.
 
-| | file | the one thing |
-| :-- | :-- | :-- |
-| Aldana | `ALDANA.md` | Four-word flat verdicts, never explains. Her confirmations land tired rather than mean. |
-| Vance | `VANCE.md` | The only adult who gets down to Chloe's level and stays there. Also never looks up. |
-| Prahl | `PRAHL.md` | Refuses in the identical warm register she teaches in, and calls the refusal patience. |
-| Prentice | `PRENTICE.md` | One scene, never returns. Holds the only full cognitive profile of Chloe. |
-| Ammons | `AMMONS.md` | Level clinical cadence. Her tell is the pen stopping, not a line. |
-| Whitaker | `WHITAKER.md` | Short, flat, unreactive. The writing carries the attention, not the reaction. |
-| Deb | `DEB.md` | Never speaks on the page. A behaviour pattern reported in summary, never staged. |
+| | file | MBTI | IQ | the one thing |
+| :-- | :-- | :-- | :-- | :-- |
+| Aldana | `ALDANA.md` | ESTJ | 116 | Four-word verdicts, never explains. Her confirmations land tired rather than mean. |
+| Vance | `VANCE.md` | INFP | 121 | The only adult who gets down to Chloe's level and stays there. Also never looks up. |
+| Prahl | `PRAHL.md` | ESFJ | 113 | Refuses in the identical warm register she teaches in, and calls the refusal patience. |
+| Prentice | `PRENTICE.md` | INTP | 138 | One scene, never returns. Holds the only full cognitive profile of Chloe. |
+| Ammons | `AMMONS.md` | INTJ | 135 | One clinical cadence for everything. Her tell is the pen stopping, not a line. |
+| Whitaker | `WHITAKER.md` | ENFJ | 119 | Short and unreactive. The writing carries the attention, not the reaction. |
+| Deb | `DEB.md` | ESFP | 108 | Never speaks on the page. A behaviour pattern reported in summary, never staged. |
 
 ---
 

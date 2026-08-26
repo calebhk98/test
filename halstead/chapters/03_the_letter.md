@@ -156,37 +156,27 @@ Searches from every direction she can think of turn up the school's own website 
 
 For a school that has put over a hundred children through a summer and done it again every year since, that is the whole of what she finds, and she says so at the table that night with the laptop still open.
 
-Later, in the kitchen, with the door mostly shut:
+The laptop is still open on the kitchen table on the Monday morning, on the page with the teachers on it, and Chloe gets the screen awake with the space bar and starts where her dad started.
 
-"They've got a woman who swam in the Olympics."
+There is a woman who swam in the Olympics. There is a man who was a SEAL, and the paragraph puts it in the middle of a sentence and goes straight on to something else, the way you would mention a bus route. Half of them have two master's degrees. One of them wrote a paper, and the paragraph gives the name of the paper without saying what a paper is, as though everybody has already read it.
 
-"Okay."
+She goes down the whole column in order and back up to the top of it. Every photograph is taken in the same room against the same wall, and the wall is nicer than any wall in her school.
 
-Her mom scrolls.
+Her dad comes in for the coffee and stands behind her chair with a hand on the back of it, reading over the top of her head.
 
-"They've got a guy who was a SEAL, an actual one, not a guy who says it at parties, and half of them have two master's degrees. There's one of them, I know the name, he wrote a paper my whole department read. People printed it out, and Kathy printed it out and left it on my chair."
+"What's a SEAL?"
 
-"So it's real, then?"
+"A job in the Navy. A hard one to get into."
 
-"The school's four years old, Meg, it says so on the page about the school."
+"Is this the part you kept going back to?"
 
-"So a school that new landing somebody like that is exactly the part that worries me, because how does a school that age get that guy, and what does it even pay him, and with what."
+"That's the part," her dad says. "All of them, top to bottom. Then I went and looked up the school, and the school has been open four years."
 
-Her mom keeps scrolling.
+Behind her the bills are clipped to the refrigerator in a stack thick enough to curl the top one over, and the letter upstairs says the month is free, and says it twice, in different ways.
 
-"And the website," her dad says, "is better than the one at my work, better than the district's, so somebody spent real money building a website for a school with no name outside its own pages, for a summer thing they're giving away."
+"That isn't very long," Chloe says.
 
-"Okay, now you're doing it too, hearing something off in every good thing this place has."
-
-Her dad pushes the laptop an inch away from him.
-
-"I'm saying it's expensive, every single thing about it is expensive, and none of it is being paid for by the summer, because the summer is free."
-
-"So somebody wants something."
-
-"Or somebody already has everything they want and this is what they do with it, and both of those are real people."
-
-"Not around here they aren't," her mom says, to the stack of bills clipped to the refrigerator.
+"No," her dad says, and takes the laptop away with him.
 
 It takes them nine days, her mom's position being that it is that far away, the invitation showed up unsolicited, somebody is paying for it, and she wants to know who before anybody gets in a car.
 
@@ -222,7 +212,7 @@ ________________
 
 She takes her books back on the Thursday before they go, and gets up on her toes at the desk.
 
-"I'm going away for a month, to a camp, so I wanted to ask something," Chloe says, with the argument already worked out. "If I don't take any out the whole time I'm gone, that's four weeks of four, so can I have sixteen when I get back?"
+"I'm going away for a month, to a camp. So I wanted to ask something," Chloe says, with the argument already worked out. "I don't take any out the whole time I'm gone. That's four weeks of four. Can I have sixteen at the end?"
 
 The librarian puts the stamp down.
 
@@ -232,7 +222,7 @@ The librarian puts the stamp down.
 
 "They would, and it is still not how it works," the librarian says.
 
-"Okay, then can you keep one out until I'm back, so it doesn't go late?" Chloe says, already moving to a different part of the argument.
+"Okay, then can you hold one back for me? Then it doesn't go late," Chloe says, already moving to a different part of the argument.
 
 "One I can do, since that's a hold rather than a checkout, so it stays outside the four entirely."
 

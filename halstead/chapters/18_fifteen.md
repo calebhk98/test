@@ -4,7 +4,7 @@
 
 The whole year is breaking clays at between ninety and a hundred, a spread that holds through September, and then in the first week of October Voss walks them down to a lane new to all of them and shows them the turret.
 
-A machine at the far end of sixty metres of open ground fires a live round down the lane on a cycle that holds to the hundredth, and the students stand off to the side behind glass, so that the round crosses in front of them left to right while they shoot across its path on a count taken off the mechanism.
+A machine at the far end of sixty metres of open ground fires a live round down the lane on a cycle that holds to the hundredth, and the students stand off to the side behind glass, so that the round crosses in front of them left to right while they shoot across its path on a count taken off the mechanism. The new lane is colder than the old and the glass fogs from the inside where people breathe on it, so somebody goes along it with a cloth between relays.
 
 Voss lets them look at it for a while, and when he does start he starts with the machine rather than with them.
 
@@ -108,9 +108,9 @@ On each of the next Thursdays she sits on that mat after the room empties, runni
 
 ________________
 
-Hark hands out envelopes in October with two hundred dollars in each, to be spent on anything legal for a year, and whatever is left in June they keep.
+"You are going to lose money in your life, everybody does," Hark says, putting the last envelope down. "You can lose that much this year, with somebody standing over you who will make you write down what happened, or you can lose a great deal more of it later on your own."
 
-"You are going to lose money in your life, everybody does," she says, putting the last envelope down. "You can lose that much this year, with somebody standing over you who will make you write down what happened, or you can lose a great deal more of it later on your own."
+The envelopes go out in October with two hundred dollars in each, to be spent on anything legal for a year, and whatever is left in June they keep.
 
 Rustem buys a dozen dead motors at a farm auction for a few dollars apiece, several of which are turning over by Christmas, and in January he sits down across from Chloe at dinner and pushes a page of figures at her before she has finished eating, wanting the lot. Reading it twice, she checks his sale prices against what he got for those, then offers him a hundred and twenty at eight percent with the motors as collateral, and he argues about the rate for twenty minutes and loses. Then he tells her she has to see the barn first, so she goes on the Saturday and finds nearly sixty motors in it, a third of them past helping, and leaves her offer exactly where it was.
 
@@ -138,7 +138,7 @@ She has never heard the name in her life. She could go and find out which boy it
 
 She stops using the language-block stairs, which cost her a minute each way and which she has taken since her first year in the building.
 
-In the surgical block in March she ties her first suture and her hands do what she tells them, though it takes twice as long as the boy at the next table, so the instructor writes *steady* on her sheet and then the time beside it. Accountancy and taxation run that term, Hindi has more Sanskrit under it than she expected, and by June the topology book has been lying open at the same proof since Easter.
+The surgical block runs its own air and is the only part of the building that smells of nothing at all, and in March she ties her first suture in there and her hands do what she tells them, though it takes twice as long as the boy at the next table, so the instructor writes *steady* on her sheet and then the time beside it. Accountancy and taxation run that term, Hindi has more Sanskrit under it than she expected, and by June the topology book has been lying open at the same proof since Easter.
 
 Her name lands on an internal research paper in March, well down the author list this time rather than in the acknowledgments, and she reads it over, then spends twenty minutes looking up the other names on it.
 

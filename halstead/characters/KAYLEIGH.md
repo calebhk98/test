@@ -12,7 +12,7 @@ heat.
 **Primary: ESFJ,** and it fits so exactly that the risk is writing the type instead of the
 child. She organises, she maintains the group, she knows the rules of the room and
 enforces them without any sense that enforcing is what she is doing, and she is genuinely
-warm to everyone inside the boundary she has drawn. The type she gets misread as is ESTJ,
+generous to everyone inside the boundary she has drawn. The type she gets misread as is ESTJ,
 by adults who see only the enforcing; the separating cue is that she is doing it to keep
 everybody together rather than to make anything work properly, and she will drop a rule
 instantly if keeping it would cost her a friend.

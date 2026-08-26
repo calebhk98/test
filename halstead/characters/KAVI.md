@@ -17,7 +17,7 @@ came back as three different types.
 
 | reading | type | what that reader was looking at |
 | :-- | :-- | :-- |
-| first | INTP | detached systems tinkerer, intellectualisation, unbothered by hierarchy |
+| first | INTP | detached systems tinkerer, intellectualisation, indifferent to hierarchy |
 | second | ISTJ | the precision, the order, the workspace, the consistency people can set a clock by |
 | third | ISTP | the hands. Always an object in them, always a mechanism, three steps ahead and silent about it |
 | house | INTP | the same as the first |

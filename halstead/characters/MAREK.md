@@ -4,7 +4,7 @@ A boy who will hand over everything he knows to anybody who asks and cannot be
 got to hand over a piece of paper, and who is sincerely puzzled that the paper
 is what anybody wanted.
 
-**Age span:** eight to eighteen | **MBTI:** INTP (a writing aid, not a claim) | **IQ:** 164, a figure he has never asked for and would find uninteresting, in the only population that has ever measured him
+**Age span:** eight to eighteen | **MBTI:** INTJ (a writing aid, not a claim) | **IQ:** 164, a figure he has never asked for and would find uninteresting, in the only population that has ever measured him
 
 ## The thing to get right first
 
