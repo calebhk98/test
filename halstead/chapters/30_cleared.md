@@ -120,4 +120,4 @@ At the door, coat half on, he taps the folder once against his palm. "Now I get 
 
 The clearance comes through in December, on an ordinary Tuesday, thin enough that she almost sets it on the counter with the takeout menus before the seal above her own name catches the light. Standing, still in her coat, she reads it once, then reads the single paragraph a second time before she sits down to do anything else with it, and files it in the kitchen drawer where everything that's needed keeping ends up.
 
-January, she starts. Twenty-one in August.
+The job starts in January. She turns twenty-one in August.

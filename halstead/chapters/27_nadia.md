@@ -102,7 +102,7 @@ The room goes quiet for a moment while the man behind the desk sets down what he
 
 "Get out of here," he says.
 
-But she stays where she is. The man in the doorway comes off the frame, walks around behind her, pushes the door shut with the heel of his hand, and then stands against it with his arms folded while she hears the latch go and keeps her eyes on the desk.
+But she stays where she is. The man in the doorway comes off the frame, walks around behind her, and pushes the door shut with the heel of his hand. Then, arms folded, he stands against it while she hears the latch go and keeps her eyes on the desk.
 
 "How old are you," the man at the folding table says.
 
@@ -114,7 +114,7 @@ But she stays where she is. The man in the doorway comes off the frame, walks ar
 
 "No, I told my parents I would be back before dinner."
 
-The man behind the desk sits back in the chair for the first time since she came through the door. The man with the coffee has his phone up by then. The first photograph is of her, from where he stands; then he crosses to the window, photographs the car in the lot below, and reads her registration out loud, every character of it, slowly, and then again.
+The man behind the desk sits back in the chair for the first time since she came through the door. The man with the coffee has his phone up by then. The first photograph is of her, from where he stands. Then he crosses to the window, photographs the car in the lot below, and reads her registration out loud, every character of it, slowly, and then again.
 
 "You aren't going to do anything to me. There are filings with a real agent's name on them, and there is a shop full of people underneath us who watched me come up those stairs. Whatever it is you have got running in this room, it does not survive somebody going missing off your own staircase," she says.
 

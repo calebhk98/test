@@ -6377,7 +6377,7 @@ The room goes quiet for a moment while the man behind the desk sets down what he
 
 "Get out of here," he says.
 
-But she stays where she is. The man in the doorway comes off the frame, walks around behind her, pushes the door shut with the heel of his hand, and then stands against it with his arms folded while she hears the latch go and keeps her eyes on the desk.
+But she stays where she is. The man in the doorway comes off the frame, walks around behind her, and pushes the door shut with the heel of his hand. Then, arms folded, he stands against it while she hears the latch go and keeps her eyes on the desk.
 
 "How old are you," the man at the folding table says.
 
@@ -6389,7 +6389,7 @@ But she stays where she is. The man in the doorway comes off the frame, walks ar
 
 "No, I told my parents I would be back before dinner."
 
-The man behind the desk sits back in the chair for the first time since she came through the door. The man with the coffee has his phone up by then. The first photograph is of her, from where he stands; then he crosses to the window, photographs the car in the lot below, and reads her registration out loud, every character of it, slowly, and then again.
+The man behind the desk sits back in the chair for the first time since she came through the door. The man with the coffee has his phone up by then. The first photograph is of her, from where he stands. Then he crosses to the window, photographs the car in the lot below, and reads her registration out loud, every character of it, slowly, and then again.
 
 "You aren't going to do anything to me. There are filings with a real agent's name on them, and there is a shop full of people underneath us who watched me come up those stairs. Whatever it is you have got running in this room, it does not survive somebody going missing off your own staircase," she says.
 
@@ -6761,7 +6761,7 @@ The floor holds about sixty desks like his, phones going in a low murmur most of
 
 The work that actually uses what he's good at comes maybe once a week: a transcript in Pashto, another in Dari, the halves of a region most analysts only get one side of. A technical conversation in either language comes to him as easily as the other, and pairing them turns up exactly the kind of mismatch a single-language reader would miss, one side of a group describing an action the other side stays silent about entirely. A few of those get flagged in his first year, and his supervisor takes them all seriously, no follow-up questions in the margin, the exception rather than the rule for anything else he sends up.
 
-In the job, he is happy. In his eighth month, the woman across the aisle clears her own out on a Friday afternoon: a photograph of a dog, a chipped mug, a cardigan that's hung on the back of her chair as long as he's worked there. Twenty-six years at a desk leaves more than fits in a single box, so a second box goes to Theo's instead, decades of material that predates him and has sat filed and closed ever since. Setting it on the corner of his desk, she says, "Somebody has to read it eventually. Might as well be the new guy." He thanks her and means it. A box of old material beats another week of cable traffic that gets read once and filed.
+The job suits him. In his eighth month, the woman across the aisle clears her own out on a Friday afternoon: a photograph of a dog, a chipped mug, a cardigan that's hung on the back of her chair as long as he's worked there. Twenty-six years at a desk leaves more than fits in a single box, so a second box goes to Theo's instead, decades of material that predates him and has sat filed and closed ever since. Setting it on the corner of his desk, she says, "Somebody has to read it eventually. Might as well be the new guy." He thanks her and means it. A box of old material beats another week of cable traffic that gets read once and filed.
 
 It takes him a day and a half to work out what he's holding.
 
@@ -6972,7 +6972,7 @@ At the door, coat half on, he taps the folder once against his palm. "Now I get 
 
 The clearance comes through in December, on an ordinary Tuesday, thin enough that she almost sets it on the counter with the takeout menus before the seal above her own name catches the light. Standing, still in her coat, she reads it once, then reads the single paragraph a second time before she sits down to do anything else with it, and files it in the kitchen drawer where everything that's needed keeping ends up.
 
-January, she starts. Twenty-one in August.
+The job starts in January. She turns twenty-one in August.
 
 
 ## Chapter Thirty-One: Ruth
@@ -7426,7 +7426,7 @@ They open it in seven different places, each at a different hour, each of them a
 
 There is a file on all ninety-one of them. Every page carries the same header before anything else on it: a case number opened in 2013, and a classification banner reprinted at the top of every scan as if repeating it enough times might eventually make it true.
 
-Address, employer, family, where their parents work, where everybody banks. Sam's is the thickest and the newest: an Army file stacked on top of everything Halstead ever generated on him. An officer's assessment quotes a number Sam gave honestly, but flags the honesty itself as the interesting part, like a result that wouldn't reproduce. Theo's has a note on it that makes him close the laptop with both hands, the careful two-handed close of something that might spill, and go outside for twenty minutes. He comes back in, opens the laptop again, and keeps reading from the line he left off on. That's the whole account anyone else gets of it.
+Address, employer, family, where their parents work, where everybody banks. Sam's is the thickest and the newest: an Army file stacked on top of everything Halstead ever generated on him. An officer's assessment quotes a number Sam gave honestly, but flags the honesty itself as the interesting part, like a result that wouldn't reproduce. Theo's has a note on it that makes him close the laptop with both hands, the careful two-handed close of something that might spill, and go outside for twenty minutes before he comes back in, opens the laptop again, and keeps reading from the line he left off on. That's the whole account anyone else gets of it.
 
 The rest of theirs sit somewhere between those. Nadia's crosses her company's filings against a background check a competing job board ran on her eighteen months ago, the whole company at that point three rooms over a laundromat, the documents stitched together by an analyst who managed to spell her name differently on each page. Eli's notes, in the flat voice of everything else, that he found five vulnerabilities in his own employer's systems in one afternoon, unprompted, and flags the number as worth continued attention rather than as anything resembling praise. Kavi's is the thinnest of them, a paragraph a year, the file needing only the one address it has ever had for him. Someone has annotated the margin of it more than once, always the same single word: *continuity*. Chloe's has her translation work and her exam scores, and, a few lines above the current entry, a note that she has recently accepted employment requiring a background investigation. It's dated to a Tuesday she remembers clearly, because it's the week she signed the lease on the apartment she's sitting in right now.
 
@@ -7484,7 +7484,7 @@ ruth: they had a team on us and my box got their cameras too and i didnt know th
 
 ________________
 
-Kavi reads what she has written standing at the lab bench, the pen down for good now, his weight forward on both arms like a man setting himself to lift something. He stays over the bench and waits, breathing slow, for as long as it takes.
+Kavi reads what she has written standing at the lab bench, the pen down for good now, his weight forward on both arms like a man setting himself to lift something, then stays over the bench and waits, breathing slow, for as long as it takes.
 
 kavi: ruth
 
@@ -7629,7 +7629,7 @@ Chloe reads that at one in the morning, with work waiting on the other side of a
 
 Months into the job now, her badge scans without a second glance and the elevator ride already reads like a formality rather than an event, the kind of building that stopped feeling strange to walk into somewhere early on. The messages get read once, and the phone goes face down on the nightstand, another of the nights she has set it down on a piece of news that leaves tomorrow exactly where it was. Her eyes close on the version of tonight that ends here, not on the one that keeps going somewhere she'd have to stay awake to follow.
 
-She goes in the next day and does her job.
+The next day, she goes in and does her job.
 
 
 ## Chapter Thirty-Six: Seventy-Five
@@ -7774,7 +7774,7 @@ Ruth finishes the arithmetic she started an hour earlier and keeps the answer to
 
 Ruth is up until three with the page open and a pencil, and what she writes down turns out to be about everybody except Priya. It is a list of the other places any of them sleeps, and the distance from each of those to a road a vehicle could wait on, and it takes her until the fourth entry to notice she has started at the bottom of the list rather than the top, with her own address last.
 
-In the morning Chloe reads the third page of the file again, the paragraph about the funding line, which she has read enough times to recite and has always read on an ordinary morning with a coffee going cold beside it. She goes in and does her job, in the same building, with the badge, the lift, and the lull between the morning traffic and the afternoon. The search she runs mid-morning has an entirely different name in the box, but what comes back is a form number she saw once already that morning, in a message from a man across town who is careful about what he puts in writing. The entry is read and closed; the next thing in the queue is open before the hour is out.
+In the morning Chloe reads the third page of the file again, the paragraph about the funding line, which she has read enough times to recite and has always read on an ordinary morning with a coffee going cold beside it, then goes in and does her job, in the same building, with the badge, the lift, and the lull between the morning traffic and the afternoon. The search she runs mid-morning has an entirely different name in the box, but what comes back is a form number she saw once already that morning, in a message from a man across town who is careful about what he puts in writing. The entry is read and closed; the next thing in the queue is open before the hour is out.
 
 The ranking goes unmentioned after that. Nadia asks, days later, only to Priya, whether she wants somebody in the yard with her for a while, but gets back a photograph of a gate with a new hinge on it and the word sorted. Sam offers to come out for a fortnight of his leave and is told the flights are absurd, but offers again the following day with a screenshot of a cheaper flight. Eli sends a list of things to change about the room over the feed merchant's, a bolt on the inside of the outer door, a second way out that isn't the stair, a chair braced under the handle rated for more weight than the door itself, most of which she had already done before it arrived.
 
