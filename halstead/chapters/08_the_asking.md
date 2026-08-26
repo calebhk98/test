@@ -22,7 +22,7 @@ Her mom is sitting right on the front edge of the chair, and she has the whole l
 
 "September, within a week or so of school starting."
 
-Dr. Ammons writes a line before the next question, and she asks it in exactly the same voice she asked the first.
+Dr. Ammons writes a line before the next question, and asks it in exactly the voice she used for the first.
 
 "And before that, before August, what was she like?"
 
@@ -86,7 +86,7 @@ Her mother starts on the school in October, every week, on the phone first and t
 
 At the counter, with her back to the room and Chloe at the table behind her, she says the words in writing twice in one sentence.
 
-Then on a Tuesday she comes up and sits on the end of Chloe's bed with her coat still on and lays the whole of it out in order, the way she does with a thing she has already decided about.
+Then on a Tuesday she comes up and sits on the end of Chloe's bed with her coat still on and lays it all out in order, the way she does with a thing she has already decided about.
 
 There is a program in the building. It is one hour, on a Thursday, with a woman called Mrs. Prahl who covers five different buildings in a week. The office says that Mrs. Prahl is wonderful, that the children adore her, that it is a lovely program.
 
@@ -114,7 +114,7 @@ Chloe barely sleeps that night, and gets up twice to check that the note about i
 
 There are nine kids and a cart with shelves, a plastic bin of dice on the top of it, and a laminated sign on the side that says THINKING CORNER. Mrs. Prahl wheels it in after lunch, spends a while getting them out of classrooms all over the building and into chairs, then learns every name before they have settled, after which she uses them, every time.
 
-She holds the sheet up over her head so that the back row can see it too. "Okay, so on this island there are two kinds of people, and that's all there is: knights always tell the truth, every single time, so they can't lie even if they want to, but knaves always lie, every single time, so they can't tell the truth even by accident. You meet two of them, and Alan says Bob is a knave, while Bob says neither of them is a knave, so what are they? Take as long as you like over it."
+Mrs. Prahl holds the sheet up over her head so that the back row can see it too. "Okay, so on this island there are two kinds of people, and that's all there is: knights always tell the truth, every single time, so they can't lie even if they want to, but knaves always lie, every single time, so they can't tell the truth even by accident. You meet two of them, and Alan says Bob is a knave, while Bob says neither of them is a knave, so what are they? Take as long as you like over it."
 
 Chloe has it before Mrs. Prahl has finished reading it out, so she waits, because you wait. A boy called Dev gets there about ninety seconds later and does it up on the board with arrows, and Mrs. Prahl makes a real thing out of it.
 
@@ -134,7 +134,7 @@ Chloe finishes the packet that night sitting up in bed with the lamp on, both si
 
 "We're still thinking about it, sweetheart."
 
-She asks again on the Tuesday and gets the words back in the same order, as if her mom has them memorized too now.
+Chloe asks again on the Tuesday and gets the words back in the same order, as if her mom has them memorized too now.
 
 "Not now, Chloe," her mom says on the Wednesday, before she has gotten the question all the way out.
 
@@ -168,7 +168,7 @@ So is the third, except that Mrs. Prahl puts them in pairs for a game with the d
 
 On the fourth Thursday there's a new packet, which Chloe takes home, finishes in about half an hour, but keeps to herself, so that it sits in the bottom of her bag all week under the folder for reading. When Mrs. Prahl asks the following Thursday how she got on with it, Chloe says she's still working on it, and Mrs. Prahl says that's absolutely fine, take your time.
 
-She can't work out what's wrong with it, because it's faster than her class, everybody keeps telling her it's the fast group, Mrs. Prahl is nice to her every single week, and there are nine of them in that room instead of twenty-six. She wants to say that this is the wrong thing, out loud, to Mrs. Prahl, on a Thursday, in front of the others, but the rest of the sentence stays stuck behind that one, and she is fairly sure the first half already sounds like she thinks she's better than everybody, a thing she has learned to keep to herself.
+She can't work out what's wrong with it, because it's faster than her class, everybody keeps telling her it's the fast group, Mrs. Prahl is nice to her every single week, and there are nine of them in that room instead of twenty-six. Chloe wants to say that this is the wrong thing, out loud, to Mrs. Prahl, on a Thursday, in front of the others, but the rest of the sentence stays stuck behind that one, and she is fairly sure the first half already sounds like she thinks she's better than everybody, a thing she has learned to keep to herself.
 
 In December her mom comes up and sits down on the end of her bed, in the late afternoon, with the light off and Chloe lying on top of the covers with her shoes still on.
 
@@ -182,7 +182,7 @@ Chloe sits up and answers straight away, the answer already sitting in her mouth
 
 "Nobody was mean," she says.
 
-Her mom waits, sitting very still on the end of the bed, and that is already the whole of it: a hallway with a brass plate on the last door that says PLUTO, a boy honking with laughter about a room-shaped object, standing there afterward with the hallway tile cold enough through her socks to notice, and being allowed to be wrong for a whole afternoon.
+Her mom waits, sitting very still on the end of the bed, and that is already all of it: a hallway with a brass plate on the last door that says PLUTO, a boy honking with laughter about a room-shaped object, standing there afterward with the hallway tile cold enough through her socks to notice, and being allowed to be wrong for a whole afternoon.
 
 "Nobody was mean to me," she says. "Not once, not ever, the whole time I was there."
 
@@ -196,7 +196,7 @@ Her mom says it carefully. "Sweetheart, I need you to tell me the truth. Is some
 
 Her mom looks at her for long enough that Chloe starts to think of something else to say.
 
-She smooths the back of Chloe's shirt down twice. "Okay, honey. You'll make friends this year, it just takes time in a new grade, that's all this is."
+Her mom smooths the back of Chloe's shirt down twice. "Okay, honey. You'll make friends this year, it just takes time in a new grade, that's all this is."
 
 Chloe lies down again with her back to her mother and turns her face toward the wall, and after a while her mom gets up off the end of the bed.
 
@@ -214,4 +214,4 @@ It happens without her, somewhere in the last week of January, so that standing 
 
 From the stairs on a Sunday she hears her mom saying she thinks the Thursdays are helping, that Chloe is calmer than she was in November, and that the fighting about it every night has stopped. Her dad says maybe, and her mom says something Chloe can't hear from the stairs. There's a gap, and then her dad says yeah, all right.
 
-The envelope is in the top drawer under her socks, where it has been since August. She gets it out sometimes, holds it, and reads the part with her name typed across the front of it, then puts it back under the socks. There's nowhere else for it to go.
+The envelope is in the top drawer under her socks, where it has been since August, and she gets it out sometimes, holds it, and reads the part with her name typed across the front of it, then puts it back under the socks. There's nowhere else for it to go.

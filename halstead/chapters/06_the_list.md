@@ -96,7 +96,7 @@ Her dad sets his fork down and laces his fingers on the table in front of him.
 
 "There's tomorrow as well, which makes twenty-eight. I'm leaving it out until it happens."
 
-He looks past her at the room and the other tables long enough that she turns around to see what he has found, and what he has found is people eating.
+Her dad looks past her at the room and the other tables long enough that she turns around to see what he has found, and what he has found is people eating.
 
 "Cool," he says.
 
@@ -202,11 +202,11 @@ Chloe runs the numbers again, the ones she has been running since the drive down
 
 ________________
 
-She is awake long before anybody comes to get her, dressed and sitting on the end of the stripped mattress.
+Long before anybody comes to get her, she is awake, dressed and sitting on the end of the stripped mattress.
 
 Her dad carries her bag down and puts it in the trunk with the strap hanging out, so that he has to open it again.
 
-Priya hugs her hard enough that it takes a second to get loose, then goes back into the room for her own bag and comes out again with her chin working, because the hair tie that was on her wrist a moment ago has gone. She turns her sleeve inside out to check it twice while her mother tells her it's fine, but she says it isn't. Chloe pulls the tie off her own wrist and holds it out.
+Priya hugs her hard enough that it takes a second to get loose, then goes back into the room for her own bag and comes out again with her chin working, because the hair tie that was on her wrist a moment ago has gone. Priya turns her sleeve inside out to check it twice while her mother tells her it's fine, but she says it isn't. Chloe pulls the tie off her own wrist and holds it out.
 
 When Sam says see you at the thing in the fall, Ruth tells him it's only a form so far and his parents have to send it in, at which point Sam says it again, word for word.
 

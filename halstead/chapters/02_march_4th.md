@@ -198,7 +198,7 @@ Chloe goes back over what she said and can't find the part that was wrong, so sh
 
 "Tell me another reason."
 
-She says it again with a person climbing in a window in it.
+Chloe says it again with a person climbing in a window in it.
 
 They keep coming, wallets on the ground and smoke at night and lines painted on a road. Every answer she gives seems to be the right answer, so she stops trusting the questions and watches the pen instead, and the pen moves the same amount whatever she says.
 
@@ -206,9 +206,9 @@ ________________
 
 There is another timed sheet, little symbols in rows where she looks at the ones on the left and puts a line through a box on the right for yes or no. One line is one line, but it is still slow.
 
-Then a page with animals and shoes and cups all over it, where she crosses out every animal, one stroke each. She gets to the bottom and looks up. Ben still has his thumb on the watch, and there is time left over, which hasn't happened yet today.
+Then a page with animals and shoes and cups all over it, where she crosses out every animal, one stroke each, then gets to the bottom and looks up. Ben still has his thumb on the watch, and there is time left over, which hasn't happened yet today.
 
-By then her stomach is loud enough that she covers it with her forearm, and she keeps switching which leg she is sitting on. He asks whether she's tired, she says no, then asks again after the next page.
+By then her stomach is loud enough that she covers it with her forearm, and she keeps switching which leg she is sitting on. Ben asks whether she's tired, she says no, then asks again after the next page.
 
 "You can say yes, you know."
 

@@ -30,7 +30,7 @@ In January she gives him a problem out of the following year's material that he 
 
 "So where's the sheet for it, then? I still need something to put a mark against."
 
-He puts the timetable down in front of her and sits back with his arms folded. "There is no sheet. You asked me for a problem and I brought you back the problem, solved. That's the problem and the whole of it. Not a piece of paper with your marks on the corner."
+The timetable goes down in front of her, and he sits back with his arms folded. "There is no sheet. You asked me for a problem and I brought you back the problem, solved. That's the problem, in full. Not a piece of paper with your marks on the corner."
 
 "I can't take this in pencil on the back of Ivy's Tuesday, Marek, I need your name on it."
 
@@ -76,7 +76,7 @@ Eli gets into everything and takes his time doing it, so when Chloe asks how he 
 
 "The rest of us had that set for a week, but you did the lot in an evening, so what did the rest of us miss?"
 
-He hops down and hands the timetable back, smiling at the floor. "You were all reading the message, and the message is fine, on its own. It's the same message going out every Tuesday, always at that hour, that hands it to you."
+Hopping down, he hands the timetable back, smiling at the floor. "You were all reading the message, and the message is fine, on its own. It's the same message going out every Tuesday, always at that hour, that hands it to you."
 
 Ruth and Kavi took cryptography and networks last year, which puts Ruth three months ahead of the class. In April she comes into Chloe's room after lights out with a shoebox under her arm, sets it on the end of the bed, stays on her feet.
 
@@ -132,7 +132,7 @@ What she actually does with block two is the school forge, Thursdays and both Sa
 
 ________________
 
-A Russian piece in February covers a bridge that came down in December, and she read an English piece on that bridge in January, leaving her two accounts of one commission: the English one reports a design fault in the bearings, while the Russian one reports overloading by a contractor, and names him. Both are describing the same report, so one of them is wrong, and from where she is sitting she has no way of telling which. A third pair on an unrelated story does it again, and then she goes looking for a fourth.
+A Russian piece in February covers a bridge that came down in December, and she read an English piece on that bridge in January, leaving her two accounts of one commission: the English one reports a design fault in the bearings, while the Russian one reports overloading by a contractor, and names him. Both describe a single report, so one of them is wrong, and from where she is sitting she has no way of telling which. A third pair on an unrelated story does it again, and then she goes looking for a fourth.
 
 Law starts with Mr. Amberg walking in and putting a copy of the state code on the desk with both hands.
 

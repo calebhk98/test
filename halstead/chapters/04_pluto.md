@@ -56,7 +56,7 @@ Priya sits down, cross-legged, with a pillow in her lap.
 
 "A pony is a separate thing, anything under fourteen two. Hands. That's how you measure them, from the ground up to about here."
 
-She lays the edge of her hand across the top of her own shoulder.
+The edge of her hand goes across the top of her own shoulder.
 
 "There's a girl at my barn. She says hers is a horse, but it is absolutely not a horse. It's fourteen even. And I've seen the paper."
 
@@ -64,7 +64,7 @@ She lays the edge of her hand across the top of her own shoulder.
 
 "The horse's paper. They have papers," Priya says, waving the whole question off with the back of her hand before going straight on with it.
 
-She tells Chloe about the horse she rides, the horse she is saving up for, the girl at the barn who gives her a hard time, what that girl did at a show in April, and what the girl's mother said about it afterward, running straight through all of it in one go, whether Chloe wants to hear it or not.
+Priya tells Chloe about the horse she rides, the horse she is saving up for, the girl at the barn who gives her a hard time, what that girl did at a show in April, and what the girl's mother said about it afterward, running straight through all of it in one go, whether Chloe wants to hear it or not.
 
 Chloe keeps both hands still in her lap and lets it run, end to end.
 
@@ -142,7 +142,7 @@ Inside, the boy sits down next to her, drops his folder on the desk sideways, an
 
 "I'm seven and a half. That's fine," he says, setting hers down beside his and weighing them.
 
-He says the and a half every time, grinning at his own jokes before anybody else does, funny about half the time, unwilling to slow down for the other half, while the girl is Ruth, and Ruth corrects everybody.
+Sam says the and a half every time, grinning at his own jokes before anybody else does, funny about half the time, unwilling to slow down for the other half, while the girl is Ruth, and Ruth corrects everybody.
 
 That night Chloe calls the desk again and sleeps in the hotel again, then in the morning her mom asks whether anybody talked to her, and Chloe says a boy in her room did, so her mom asks what about.
 
@@ -188,7 +188,7 @@ On the fourth night she gets as far as the phone and stands there with her hand 
 
 Her mom stays a few more days after that, and neither of them says anything about the phone.
 
-She leaves on the Sunday, going through the room again first, finding the green laundry bag, putting it where Chloe will see it, and asking Priya a few questions about herself, before she stands in the doorway with her keys already out.
+On the Sunday she leaves, going through the room again first, finding the green laundry bag, putting it where Chloe will see it, and asking Priya a few questions about herself, before she stands in the doorway with her keys already out.
 
 "You've got the number, taped inside your folder where you can't lose it."
 

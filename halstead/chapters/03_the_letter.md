@@ -8,7 +8,7 @@ Miss Chloe Kessler.
 
 Every piece of mail that has ever come for Chloe came inside something addressed to her parents, like the Christmas card from her grandmother with a card for Chloe folded in it, but this one says her, with a Miss in front and the address underneath it, all of it typed.
 
-She stands at the mailbox with the rest of the mail held against her chest, opening it there, badly, so the flap tears down into the paper, and it is one page, reading like a letter written for an adult, about a school called Halstead with a summer session at it, four weeks long, starting the second week of July.
+Standing at the mailbox with the rest of the mail held against her chest, she opens it there, badly, so the flap tears down into the paper, and it is one page, reading like a letter written for an adult, about a school called Halstead with a summer session at it, four weeks long, starting the second week of July.
 
 You sleep there, transportation provided, room and board included, at no cost, which it says twice, in different ways, and families may visit whenever they like, for as long as they like, since there is a hotel half a mile from the campus with rooms held for them, free as well.
 
@@ -158,7 +158,7 @@ The laptop is still open on the kitchen table on the Monday morning, on the page
 
 There is a woman who swam in the Olympics. There is a man who was a SEAL, and the paragraph puts it in the middle of a sentence and goes straight on to something else, the way you would mention a bus route. Half of them have two master's degrees. One of them wrote a paper, and the paragraph gives the name of the paper without saying what a paper is, as though everybody has already read it.
 
-She goes down the whole column in order and back up to the top of it. Every photograph is taken in the same room against the same wall, and the wall is nicer than any wall in her school.
+The whole column goes past in order, and then back up to the top, every photograph taken in the same room, against a wall nicer than any wall in her school.
 
 Her dad comes in for the coffee and stands behind her chair with a hand on the back of it, reading over the top of her head.
 
@@ -190,7 +190,7 @@ On the sixth day her mom also comes into Chloe's room, sits down on the end of t
 
 "It's got my name on it."
 
-Her mom waits for the rest of it.
+Her mom waits for more.
 
 "It says Miss," Chloe says.
 
@@ -208,7 +208,7 @@ A minute goes by before her mom says something too quiet to make out from the to
 
 ________________
 
-She takes her books back on the Thursday before they go, and gets up on her toes at the desk.
+On the Thursday before they go she takes her books back, and gets up on her toes at the desk.
 
 Chloe has the argument already worked out. "I'm going away for a month, to a camp. So I wanted to ask something. I don't take any out the whole time I'm gone. That's four weeks of four. Can I have sixteen at the end?"
 
@@ -234,7 +234,7 @@ Her dad does the train station voice for the packing list, announcing socks, ann
 
 Chloe gets to stay up late, the whole evening spent on socks and the shoe joke, with the school, the list, and who is paying for it left for some other night.
 
-They drive her the next day, with a stop at the halfway point that stretches to most of an hour, because everybody wants the day longer. Chloe reads for the first hour and a half, watches the trees turn into different trees for twenty minutes, then reads again, while her mom asks her twice whether she's sure, once out loud and once by asking whether she remembered her toothbrush in a certain way.
+They drive her the next day, with a stop at the halfway point that stretches to most of an hour. Chloe reads for the first hour and a half, watches the trees turn into different trees for twenty minutes, then reads again, while her mom asks her twice whether she's sure, once out loud and once by asking whether she remembered her toothbrush in a certain way.
 
 Her mom stays at the parent hotel for the first few days, being due back at work on the Monday, and stays until she has seen the room, the food, the nurse, and the front desk at midnight to find out who is on it.
 

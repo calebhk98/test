@@ -24,7 +24,7 @@ Then he takes his coat off the peg because it is getting dark, and the girl at t
 
 Walking back from the forge in the dark at the end of November, having missed dinner again, she gets as far as the stairs before Marek comes the other way with a book open on his forearm and stops in front of her to tell her where he has got to, her name first and then straight into it. The chapter he has been going through since the summer, the line the author skips over, the pages he has had to write out himself to get past it, all of it in order and fast and with his finger keeping the place. She puts the burn on her wrist against the cold of the banister and asks him what was actually wrong with the line; he tells her that too, and he is right about it. Then she asks him where the pages are, and he taps the side of his head and goes up.
 
-Three weeks later a row of hooks sits on the bench with the same fault running through all of them, and Pruitt comes past with a bar on his shoulder, running a thumb down the scroll of the nearest as he goes.
+Three weeks later a row of hooks sits on the bench with one fault running through all of them, and Pruitt comes past with a bar on his shoulder, running a thumb down the scroll of the nearest as he goes.
 
 "You lost the curve on the second turn," he says, and keeps going.
 
@@ -142,7 +142,7 @@ Minimum personnel. Every additional student on the response costs you.
 
 ________________
 
-At the bottom, in the same typeface, without emphasis: Response time is scored against the standard that's posted weekly.
+At the bottom, in that typeface, without emphasis: Response time is scored against the standard that's posted weekly.
 
 Chloe is annoyed when the alarm wakes her. It's the small one, the one that sits in her ear, and it means watch. It's four in the morning. She's pulled a watch at this hour before. This is the first one nobody posted beforehand. She's in the corridor in seconds and Kavi is already there.
 
@@ -210,7 +210,7 @@ Chloe walks around the corner at a normal speed with her hands empty and her arm
 
 "Uh," she says. "Hi. Who are you?" She tilts her head like a lost puppy.
 
-All four of them turn. The nearest one comes at her fast and low, gets a gloved hand up near her mouth, and she lets him, because moving would be wrong. He just holds her there, his other arm half up, doing exactly what she needed him to do, in front of three men who are all looking at the same thing.
+All four of them turn. The nearest one comes at her fast and low, gets a gloved hand up near her mouth, and she lets him, because moving would be wrong. He just holds her there, his other arm half up, doing exactly what she needed him to do, in front of three men who are all looking at one thing.
 
 It is done in seconds: Kavi, closest to them, takes the two at the back; Ruth takes the third, and Sam goes for the one with his hand on Chloe's face, doing it badly, missing the vein and going again. The man takes that half a second, gets an arm free, swings, and misses before he goes down.
 
@@ -286,7 +286,7 @@ The man looks at him, his jaw working once. "I don't know," he says.
 
 "See, that's a C," Sam says, walking back with his hands up. "That's a C right there."
 
-Chloe sits against the wall with her arms around her knees while Sam talks, working at the wrongness of it instead of listening. The bolt cutters wrong for that fence. The boots wrong. All of it wrong in the same direction: the direction a school would get it wrong in if a school were building this, or the direction four real people would get it wrong in if somebody had handed them the wrong list, and she turns it over the whole way through and it comes out the same both ways. The second man's chest going up and down a few feet away sits on that list with the bolt cutters.
+Chloe sits against the wall with her arms around her knees while Sam talks, working at the wrongness of it instead of listening. The bolt cutters wrong for that fence. The boots wrong. All of it wrong in one direction: the direction a school would get it wrong in if a school were building this, or the direction four real people would get it wrong in if somebody had handed them the wrong list, and she turns it over the whole way through and it comes out no different either way. The second man's chest going up and down a few feet away sits on that list with the bolt cutters.
 
 Sinclair arrives with two other adults and a trolley, stops at the corner, and looks at the four men tied along the corridor wall, at the bags, and at the four kids sitting on the floor near them, arms crossed. "Who's monitoring?"
 
@@ -298,7 +298,7 @@ Ruth reads them off her arm. Sinclair nods. "Grading's in the morning," he says.
 
 Back in bed she lies on top of the covers with her shoes on and runs the list from the top, and gets to the end of it, and starts over.
 
-Chloe gets a C the same as Sam, Ruth gets a B minus and brings it up for a week, and Kavi gets a B for the comms with a note about the sensors that he disputes in writing, at length, but loses.
+Chloe gets a C, no different from Sam's, Ruth gets a B minus and brings it up for a week, and Kavi gets a B for the comms with a note about the sensors that he disputes in writing, at length, but loses.
 
 The sheet says: intruders inside Building One prior to contact. Response seven minutes fifty against a standard of six. Traceable agent selected. Four personnel deployed where three would have served. Objective established. No capability disclosed.
 

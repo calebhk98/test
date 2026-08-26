@@ -32,7 +32,7 @@ His office holds a desk, two chairs, and a small clock turned to face only him, 
 
 "Here."
 
-She keeps her feet square on the floor while she reads to the bottom of the page, the stillness she'd use leaning across a table when she wants to get something right the first time rather than the second. She's taught the twelves real analysis out of a room two floors below, working through the proofs handed to her at that age, by a teacher always making it sound like the ordinary next thing rather than a favor. She's dropped flawed hinges of her own into the scrap bin rather than let them stand, and gone back to the forge every Thursday for years without anyone having to ask her twice. At the start, the whole of this place came down to a letter with her name typed across the front of it, in an envelope she still has, in a drawer she still checks.
+Feet square on the floor, she reads to the bottom of the page, the stillness she'd use leaning across a table when she wants to get something right the first time rather than the second. She's taught the twelves real analysis out of a room two floors below, working through the proofs handed to her at that age, by a teacher always making it sound like the ordinary next thing rather than a favor. She's dropped flawed hinges of her own into the scrap bin rather than let them stand, and gone back to the forge every Thursday for years without anyone having to ask her twice. At the start, the whole of this place came down to a letter with her name typed across the front of it, in an envelope she still has, in a drawer she still checks.
 
 "I don't think so," she says.
 
@@ -62,7 +62,7 @@ The roster has Nadia just before lunch on the Thursday of the first week, betwee
 
 "You've got my marks and you've got the board in the hallway. Neither of them has moved since March."
 
-He gives her the list in the order he gives everybody, research and the salary and the housing and the car and the medical and the degree on top of it if she wants it, and finishes where he finishes with everybody.
+The list comes in the order he gives everybody: research and the salary and the housing and the car and the medical and the degree on top of it if she wants it, and he finishes where he finishes with everybody.
 
 "The post stays open until you're done with it, however long you take."
 
@@ -90,7 +90,7 @@ The next question comes at the page rather than at her. "How many applications."
 
 "So September."
 
-Sitting down, in a chair, she pushes her sleeves up, which is a thing he has watched her do since she was a child.
+Sitting down, in a chair, she pushes her sleeves up.
 
 "I'm building the thing that gets people hired. The employer pays when somebody gets the job. The person pays nothing."
 
@@ -106,7 +106,7 @@ Amberg looks at that for longer than he has looked at anything else on the desk.
 
 "I haven't told them."
 
-He writes that down too, then fills the last inch of the sheet and keeps going on the back of it. At fifteen minutes exactly he stands, and Chloe is already up.
+That too he writes down, then fills the last inch of the sheet and keeps going on the back of it. At fifteen minutes exactly he stands, and Chloe is already up.
 
 That night she goes back over the notebook and counts the lines in it, which comes to two hundred and one, the figure she gave him, and a second count gets there too. Then she counts what five years of Saturdays at the shop have left in the account her mother opened for her, over and over, and gets that figure every time. Then she writes the first sixty lines of the thing before she sleeps, then is up at five filling in more forms before the first bell.
 
@@ -128,7 +128,7 @@ Chloe watches him get back to work, the slow half-turn of the wrist stripping th
 
 ________________
 
-Iyad has the day at dinner and takes it down the table by name, whose slot fell where and what came out of it, and hers sits in the middle of the run and gets the voice the rest of it gets, and the boy across from her wants to know whether she is sure. Then Iyad asks her whether she has told anybody at home yet, and puts his fork down for it, and waits, and gets an answer, and puts that in with the rest.
+Iyad has the day at dinner and takes it down the table by name, whose slot fell where and what came out of it, and hers sits in the middle of the run and gets the voice everything else on the list gets, and the boy across from her wants to know whether she is sure. Then Iyad asks her whether she has told anybody at home yet, and puts his fork down for it, and waits, and gets an answer, and puts that in with the rest.
 
 Chloe is up the kitchen-end stairs before the pudding goes round.
 
@@ -150,7 +150,7 @@ The silence on the line runs long enough, unbroken by the usual kitchen noise, f
 
 "A hundred and thirty five thousand dollars," her mother says, each word landing on its own. "That is more than this house cost us."
 
-"Plus the rest of it, the housing and the car and everything else on that list."
+"Plus everything else, the housing and the car and the rest of that list."
 
 "You said no to that money, a car, free rent, free food, medical, and a paid degree, at seventeen years old. I want to be sure I have the list right before I say anything else about it."
 
@@ -160,7 +160,7 @@ The silence on the line runs long enough, unbroken by the usual kitchen noise, f
 
 "Say that whole thing again for me," her father says, "every part of it, from the start, because I want to hear it properly."
 
-"Research, full time, starting the day I'd have gone to a dorm instead. A hundred and thirty five thousand a year to start. Housing, food, a car, medical, none of it mine to pay for. The degree too, if I want it, paid for, on my own schedule, and the post held open until I finish." She keeps the parts in Amberg's order, because the order is the only thing about it she can hand over intact. "That's the whole of it. That's everything that was on the desk."
+"Research, full time, starting the day I'd have gone to a dorm instead. A hundred and thirty five thousand a year to start. Housing, food, a car, medical, none of it mine to pay for. The degree too, if I want it, paid for, on my own schedule, and the post held open until I finish." She keeps the parts in Amberg's order, because the order is the only thing about it she can hand over intact. "That's all of it. That's everything that was on the desk."
 
 Her father lets a breath out in a short exhale, not quite a laugh. "That's a mistake, however it's dressed up. I'm not going to sit here being careful about it and let your mother be the somebody who says so."
 

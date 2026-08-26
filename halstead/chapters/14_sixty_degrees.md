@@ -14,7 +14,7 @@ Bell keeps hold of the arrow. "That's fine, and you're still doing it my way. Yo
 
 "Right, so a point stays away from a person, even by accident."
 
-Bell walks them down the field to show them the lanes, two firing lines seventy metres apart, side by side, both facing north, each bending in toward the other until they meet at a point where the angle holds at sixty degrees. That is where the flight paths cross, at the top of the arc, where an arrow released early from one line and an arrow released on time from the other can end up in the same patch of sky at the same instant. Whatever is left of them keeps travelling and comes down together in open grass a hundred and fifty metres on, behind a rope and a sign where the target block stays all year.
+Bell walks them down the field to show them the lanes, two firing lines seventy metres apart, side by side, both facing north, each bending in toward the other until they meet at a point where the angle holds at sixty degrees. That is where the flight paths cross, at the top of the arc, where an arrow released early from one line and an arrow released on time from the other can end up sharing that patch of sky at that instant. Whatever is left of them keeps travelling and comes down together in open grass a hundred and fifty metres on, behind a rope and a sign where the target block stays all year.
 
 Bell puts a hand out flat and holds it. "At the top the arrow has stopped climbing and has yet to start dropping, so it hangs there. If you're late, it's barely moved while you were being late, and that's the only thing you've got going for you, so you'll want all of it."
 
@@ -100,7 +100,7 @@ In May her chisel starts rolling its edge every twenty minutes, so she takes it 
 
 "So where do people get a hard one?"
 
-He is still filing the edge. "The forge. Low building past the kitchens, and they're in on Thursdays."
+Still filing the edge. "The forge. Low building past the kitchens, and they're in on Thursdays."
 
 ________________
 
@@ -126,7 +126,7 @@ Her fork is in her hand and still unused. "It's a stupid question because it's g
 
 "I know what devil's advocate is, Sam, I've been sitting in the same ethics class as you since we were ten."
 
-He shrugs at her. "Then go and do it properly. If you can't say why the man signed it, what you've got is a feeling that it was wrong and a blank where his reason goes."
+A shrug at her. "Then go and do it properly. If you can't say why the man signed it, what you've got is a feeling that it was wrong and a blank where his reason goes."
 
 Chloe puts her fork down, but she keeps looking at the table.
 
@@ -176,7 +176,7 @@ Her father is in the doorway with a dishcloth over his shoulder.
 
 "Yeah, all year, every day."
 
-He hangs the dishcloth on the oven door. "I was telling your grandmother about it before and she wants to hear it off you. Go on, she's in the front room and she's been after somebody to talk to since lunch."
+The dishcloth goes on the oven door. "I was telling your grandmother about it before and she wants to hear it off you. Go on, she's in the front room and she's been after somebody to talk to since lunch."
 
 Chloe tells her grandmother about the arrows and draws the sixty degrees on an envelope, and her grandmother says it all sounds very complicated for a school.
 

@@ -18,7 +18,7 @@ Her new ones are chemistry, statistics and biology, and Ruth has them in a diffe
 
 "They read it. They counted how many people wanted each thing, and then they did what they were going to do anyway," Ruth says.
 
-He turns the sheet over and puts a finger on the back of it. "Then it should say that on the top of it, because what it says is preferences. The second is that two of them are running in this building this year. Programming is on every ten-year-old's sheet and astronomy is on the elevens', so both of them have a teacher and an hour and a room, and the thing that stopped me is my age, which they had written down before they handed me anything to fill in."
+Kavi turns the sheet over and puts a finger on the back of it. "Then it should say that on the top of it, because what it says is preferences. The second is that two of them are running in this building this year. Programming is on every ten-year-old's sheet and astronomy is on the elevens', so both of them have a teacher and an hour and a room, and the thing that stopped me is my age, which they had written down before they handed me anything to fill in."
 
 Sam has stopped with the spoon halfway up. "Is there a third, or can I go."
 
@@ -46,13 +46,13 @@ Chloe does another lap of the table before she sits down, and Ruth turns a page.
 
 ________________
 
-Mandarin is with a woman called Mrs. Sun, who grew up in Harbin and taught in Vancouver for years before this. She speaks to the room in Mandarin from the first hour and in English twice a term.
+Mandarin is with a woman called Mrs. Sun, who grew up in Harbin and taught in Vancouver for years before this, and she speaks to the room in Mandarin from the first hour and in English twice a term.
 
 The reading comes fast, because the characters go in and stay in, so that in November she gets through a whole page at a sitting, which she marks by dog-earing the corner. By February she is doing novels, and by March she is turning in the ten-page end-of-term reports in Mandarin, on the question everybody else has.
 
 The sound is the other half, and it stays out of reach, because the tones sound like four different people saying one word, easy enough to tell apart, and yet she cannot make the difference happen in her own mouth. In November Mrs. Sun stops the hour and does it on the board for the whole room, because half the room has it.
 
-She says a syllable four ways, and every time it is a different word. "You're hearing tone as emphasis, and that's English doing it to you, because in English you go up at the end to make a word matter. Here the pitch sits inside the word. The pitch *is* the word. It's the same as changing a letter in it."
+Mrs. Sun says a syllable four ways, and every time it is a different word. "You're hearing tone as emphasis, and that's English doing it to you, because in English you go up at the end to make a word matter. Here the pitch sits inside the word. The pitch *is* the word. It's the same as changing a letter in it."
 
 "I know that, I've known that since the first week, but I still can't hear it happening in my own mouth no matter how hard I listen for it."
 
@@ -80,13 +80,13 @@ Chemistry is Vasquez, who does set things on fire on purpose, twice in the first
 
 "Glassware, reagent, or you, take your pick, because it is always one of the three. Friday, and dry every piece of glass before you touch it this time," he says, handing it back, eyes already on the next bench.
 
-She runs it again on the Friday, drying every piece of glass twice before she starts, and it comes out white. She grins at it before she catches herself and carries it up to the front.
+On the Friday she runs it again, drying every piece of glass twice before she starts, and it comes out white, and she grins at it before she catches herself and carries it up to the front.
 
 "That one's white, so tell me which of the three it was."
 
 "The glass, because the glass is the one I changed."
 
-He is already down the bench. "You dried the glass, you took a fresh bottle off the shelf, and you tied your sleeve back out of the way, which is three changes and one result. Run it wet next Friday and find out which of them you fixed."
+Vasquez is already down the bench. "You dried the glass, you took a fresh bottle off the shelf, and you tied your sleeve back out of the way, which is three changes and one result. Run it wet next Friday and find out which of them you fixed."
 
 So the Friday after that she runs it wet on purpose and gets the grey back, and the Friday after that she runs it dry off the old bottle and gets white. It is November by the time she writes glassware in the back of the notebook with a date beside it.
 
@@ -96,7 +96,7 @@ First aid is Mondays, and it is on a clock from the first week. In the second te
 
 The teacher has a stopwatch and keeps his eyes on it. "It's midnight on a road, the car's still running, and there's a man who wants to know if his wife's all right. He's going to keep asking, that's the whole point of the drill, so count out loud over the top of him."
 
-Textiles is Tuesdays, where they measure each other, draft patterns off the measurements onto brown paper, then cut. Chloe's first shirt comes out with the shoulder seam an inch inboard of where a shoulder actually is, so it drags every time she lifts her arm. She takes the sleeve out, redraws the armhole, builds the second over from the armhole out, but the second one drags in exactly the same place. In January she stops redrawing and brings in a shirt from home that already fits her, lays it flat on the brown paper, and traces round the top of it. The line that comes off it sits an inch and a half out from the line she has been drafting off the measurements all term. The third shirt fits, and it is the end of March by the time it does, but she wears the second one all spring regardless, because the second is the green shirt.
+Textiles is Tuesdays, where they measure each other, draft patterns off the measurements onto brown paper, then cut. Chloe's first shirt comes out with the shoulder seam an inch inboard of where a shoulder actually is, so it drags every time she lifts her arm, and she takes the sleeve out, redraws the armhole, builds the second over from the armhole out, but the second one drags in exactly the same place. In January she stops redrawing and brings in a shirt from home that already fits her, lays it flat on the brown paper, and traces round the top of it. The line that comes off it sits an inch and a half out from the line she has been drafting off the measurements all term. The third shirt fits, and it is the end of March by the time it does, but she wears the second one all spring regardless, because the second is the green shirt.
 
 Biology is the man with the fish tank in the front hall, and in October Kavi decides that the small striped one is being bullied.
 
@@ -108,25 +108,25 @@ ________________
 
 Bex Alcantar arrives at the end of your sentence before you get there and finishes it for you, and the ending she puts on it is usually the ending it was going to have.
 
-In the second term Chloe and Bex build a bridge that carries nineteen pounds and comes down a plank at a time instead of all at once: the joints, a fortnight Chloe spent getting them wrong in the hour before dinner. The teacher asks how they held. Bex has it before Chloe has her mouth open, the whole fortnight in order and every part of it right. She says we in her first sentence but I in the rest of them. The teacher writes it on the sheet and moves along the table.
+In the second term Chloe and Bex build a bridge that carries nineteen pounds and comes down a plank at a time instead of all at once: the joints, a fortnight Chloe spent getting them wrong in the hour before dinner. The teacher asks how they held. Bex has it before Chloe has her mouth open, the whole fortnight in order and every part of it right, and she says we in her first sentence but I in the rest of them. The teacher writes it on the sheet and moves along the table.
 
-Chloe goes back over the fortnight that evening looking for the sitting where she said any of it out loud. She finds the Thursday, when she had it half built and was talking fast and had it wrong twice before she had it right, with Bex at the next bench.
+Chloe goes back over the fortnight that evening looking for the sitting where she said any of it out loud, and finds the Thursday, when she had it half built and was talking fast and had it wrong twice before she had it right, with Bex at the next bench.
 
-Iyad Mansour has the year in his head, everybody's hours and everybody's numbers. He gives them out at dinner unasked, by name and in order, down the table and back up it, and he is never wrong about any of them. In March what he has on her is Mandarin: that a stranger loses her by the second sentence, said at the volume of the far end of the table while she is still coming down it with her tray, and it is exactly what the man from the university said and the whole of what he said. Sam asks him something about the fish tank and he answers that too.
+Iyad Mansour has the year in his head, everybody's hours and everybody's numbers, and he gives them out at dinner unasked, by name and in order, down the table and back up it, never wrong about any of them. In March what he has on her is Mandarin: that a stranger loses her by the second sentence, said at the volume of the far end of the table while she is still coming down it with her tray, and it is exactly what the man from the university said and the whole of what he said. Sam asks him something about the fish tank and he answers that too.
 
-She works with Iyad in chemistry for a term after that, during which he is careful and fast and gets more out of the hour than she does. She comes in to dinner through the kitchen door now, where the queue starts, and takes the seat at the end where the plates arrive last.
+Chloe works with Iyad in chemistry for a term after that, during which he is careful and fast and gets more out of the hour than she does. Chloe comes in to dinner through the kitchen door now, where the queue starts, and takes the seat at the end where the plates arrive last.
 
 Sam spends the whole year on the overhang.
 
 There is a wall up the side of the gym with a lip near the top that sticks out a good way, and going into September the lip has beaten everyone who's tried it. Sam falls off it in October, twice in November, and once in December from high enough that he lands badly and sits on the mat, elbows on his knees. An instructor asks if he's alright, but he says he's fine, and the session carries on. But in January a girl in the year below gets over it in one go, on a Wednesday, with five people watching. Sam takes this hard for two days, then goes and asks her how she did it, and the answer turns out to be about where you put your left foot before you start.
 
-He gets over it on the eleventh of May, with thirty people at the bottom, because Sam has spent days telling everybody he is going to do it that afternoon.
+Sam gets over it on the eleventh of May, with thirty people at the bottom, because he has spent days telling everybody he is going to do it that afternoon.
 
 "What if you don't, though, what happens to the whole afternoon then?" Chloe asks.
 
 Sam is chalking his hands and not looking at any of them. "Then thirty people watch me not do it, and that's still Monday. Left foot first, like she told me in January, because left foot's what does it, not the arms, not the grip, just where that one foot lands. She said so, and she was right, and I believed her before I even tried it."
 
-He comes off the first attempt a foot under the lip, in front of all thirty of them, and stands under the wall shaking his right hand out for a while before he goes back at it. He gets a hand over the lip on the second try, and the noise underneath him is loud enough that a teacher comes out of the side door to see what has happened. Ruth is screaming, Kavi has both arms straight up over his head, and Chloe is on her feet with the book she'd brought down still in one hand, and she finds afterwards that she has torn the corner off it, with no memory of doing it. Sam eats left-handed for days and keeps the other hand under the table.
+Sam comes off the first attempt a foot under the lip, in front of all thirty of them, and stands under the wall shaking his right hand out for a while before he goes back at it. A hand goes over the lip on the second try, and the noise underneath him is loud enough that a teacher comes out of the side door to see what has happened. Ruth is screaming, Kavi has both arms straight up over his head, and Chloe is on her feet with the book she'd brought down still in one hand, and she finds afterwards that she has torn the corner off it, with no memory of doing it. Sam eats left-handed for days and keeps the other hand under the table.
 
 Block two is hers, and she takes riding, because Priya takes riding.
 
@@ -172,7 +172,7 @@ In the third week, her father is at the table with a stack of paper and a pen.
 
 "What's that, is that the contract you were complaining about last week?"
 
-He turns a page. "A proposal from a vendor. They want six weeks and forty thousand dollars. It's very well written, which is what's bothering me."
+Her father turns a page. "A proposal from a vendor. They want six weeks and forty thousand dollars. It's very well written, which is what's bothering me."
 
 Chloe reads over his shoulder until she stops on the second paragraph.
 
@@ -180,7 +180,7 @@ Chloe reads over his shoulder until she stops on the second paragraph.
 
 "It means they'll do the integration work, and they'll finish it."
 
-She reads it again. "Okay, but that's not actually a promise, is it, that's just a description of the job. How would you find out if they hadn't?"
+Chloe reads it again. "Okay, but that's not actually a promise, is it, that's just a description of the job. How would you find out if they hadn't?"
 
 Her father starts to answer but stops with the page half turned, then goes back to the top of the paragraph and reads it again. Chloe waits.
 
@@ -188,7 +188,7 @@ Her father starts to answer but stops with the page half turned, then goes back 
 
 "That's what I couldn't get. I couldn't work out what breaking it would look like."
 
-He takes the pen and puts a line under the whole paragraph. "There isn't a version of this where they've failed to do it. That's why it reads so well. This is four pages of the same trick, isn't it."
+Her father takes the pen and puts a line under the whole paragraph. "There isn't a version of this where they've failed to do it. That's why it reads so well. This is four pages of the same trick, isn't it."
 
 "No idea, I only got as far as that one."
 

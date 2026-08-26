@@ -40,7 +40,7 @@ The second contact happens the following night, in a culvert running underneath 
 
 The culvert has him before he has read it properly, ducked in under the lip because the ground on either side is open and he wants to be out of sight of it for the thirty feet it takes to cross, and by the time he understands that there are four men in there with him, the far end is blocked and so is the end behind him.
 
-Somebody discharges a blank two metres from his head and the concrete hands the whole of it back to him at once. Afterward there is a tone going. There is more than one tone going, five harnesses inside thirty feet of pipe, and no method available for sorting his own out of the rest.
+Somebody discharges a blank two metres from his head and the concrete hands the whole of it back to him at once. Afterward there is a tone going. There is more than one tone going, five harnesses inside thirty feet of pipe, but no method available for sorting his own out of the rest.
 
 A hand arrives on his sling from the left. Sam turns the muzzle off his own chest with one hand, puts the man into the wall with the other, then clears the far end past the fourth man shoulder first, and neither of them is upright when he reaches the lip. The tone is still going behind him a few paces up the bank, when a red-lens light comes down at him off the road.
 
@@ -92,7 +92,7 @@ Sam looks back down the last thirty feet of the cut, ground he spent that long r
 
 A controller comes down off the road, keys the harness quiet, keys it live again, and instructs him to finish the leg, so Sam finishes the leg, because that is still the job.
 
-The last checkpoint comes up grey rather than dark, the sky doing the slow work of turning into morning behind the tree line. At a barrel he clears his weapon, counts twenty-eight blank rounds back into a sergeant's hand, then turns in the harness, the transmitter, the compass and the card at a folding table identical to the table he drew them from on the first night, where a specialist checks the time against a clipboard before waving him toward a tent with cots in it. He sleeps a few hours before anybody wants him for anything.
+The last checkpoint comes up grey rather than dark, the sky doing the slow work of turning into morning behind the tree line. At a barrel he clears his weapon, counts twenty-eight blank rounds back into a sergeant's hand, then turns in the harness, the transmitter, the compass and the card at a folding table identical to the table he drew them from on the first night, where a specialist checks the time against a clipboard before waving him toward a tent with cots in it, and he sleeps a few hours before anybody wants him for anything.
 
 ________________
 
@@ -150,7 +150,7 @@ The major opens the clipboard again, at a page he has had shut all afternoon.
 
 "School, sir."
 
-It goes on the same sheet as the culvert. Which school, he leaves alone.
+It goes on the sheet with the culvert. Which school, he leaves alone.
 
 Sam waits for a second question.
 

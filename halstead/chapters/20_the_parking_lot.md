@@ -76,7 +76,7 @@ The men come out a few blocks later, between two parked cars, seven of them in a
 
 "Phones. Watches. Come on."
 
-Chloe reads it fast: seven grown men who chose this and have presumably done it before. Seven, three armed. Every one of them is standing somewhere that makes sense. She puts them at her own level until something tells her otherwise. Three ways out: the fence, the gap under it, the alley. She's choosing between them when Sam says it.
+Chloe reads it fast: seven grown men who chose this and have presumably done it before. Seven, three armed. Every one of them is standing somewhere that makes sense, and she puts them at her own level until something tells her otherwise. Three ways out: the fence, the gap under it, the alley. She's choosing between them when Sam says it.
 
 Sam says, "Hang on. Let me have this one."
 
@@ -104,7 +104,7 @@ Sam is standing in the middle of them, turning, looking for the next one. That's
 
 They come down off the dock, Nadia hanging and dropping, Chloe straight off the edge, Ruth using the pallets.
 
-He finds the third gun on a man who spent the whole fight standing back, takes it apart, and goes around all seven, rolling each onto his back and watching his chest move before he moves to the next. Ruth checks the one who's unconscious. Airway, then breathing, then a hand under the back of his head. She holds an eyelid open and looks. "Concussion. He's fine," and keeps the time in her head, no paper anywhere down here. Nadia kneels on the man whose shoulder came out somewhere in the middle of it, finds the angle with two fingers, and puts it back with one motion he's unconscious for the whole of. Chloe does two of them, working down each ribcage with both hands flat, counting under her breath the way she'd count her own ribs. Ribs, all of them holding. One has bitten through his lip.
+The third gun he finds on a man who spent the whole fight standing back; he takes it apart and goes around all seven, rolling each onto his back and watching his chest move before he moves to the next. Ruth checks the one who's unconscious: airway, then breathing, then a hand under the back of his head, and she holds an eyelid open and looks. "Concussion. He's fine," and keeps the time in her head, no paper anywhere down here. Nadia kneels on the man whose shoulder came out somewhere in the middle of it, finds the angle with two fingers, and puts it back with one motion he's unconscious for the whole of. Chloe does two of them, working down each ribcage with both hands flat, counting under her breath the way she'd count her own ribs. Ribs, all of them holding. One has bitten through his lip.
 
 "Should we report them to the police?" Ruth says.
 
@@ -118,7 +118,7 @@ Ruth stands. "Then that's it."
 
 "We were never here," Nadia says, and her hand is already on the fence.
 
-Sam hasn't moved. He is looking at the seven of them on the ground the way you look at a problem where the answer came out wrong.
+Sam hasn't moved, looking at the seven of them on the ground the way you look at a problem where the answer came out wrong.
 
 "That was nothing," he says.
 
@@ -130,7 +130,7 @@ Chloe says, "It was going to be nothing. You could see it from where we were sta
 
 Sam looks up. "How."
 
-She counts it off flat, not unkindly. "They were all bunched between two cars. If any two of them had swung at once they'd have hit each other, and they stood like that the whole way in. None of the three had an arm set for the gun. The one at the front had it up and his elbow was locked out; he was holding it for show. Why use it? That's police in four minutes, for a phone and some watches off a set of teenagers. And they're muggers."
+Flat, not unkindly, she counts it off. "They were all bunched between two cars. If any two of them had swung at once they'd have hit each other, and they stood like that the whole way in. None of the three had an arm set for the gun. The one at the front had it up and his elbow was locked out; he was holding it for show. Why use it? That's police in four minutes, for a phone and some watches off a set of teenagers. And they're muggers."
 
 Nadia stops with her hand on the fence. "What's that got to do with it?"
 

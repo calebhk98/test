@@ -6,7 +6,7 @@ This is the first graduation Halstead has ever held, and for weeks beforehand it
 
 Backstage, before any family has found a seat, the ninety-one of them stand in the line they've already walked twice this week, alphabetical, timed against a stopwatch clipped to the rail by the stairs. The gowns come in three sizes for ninety-one different heights, and the sewing room handled the gap the way it handles everything else on short notice: pins where a size runs long, a roll of binder clips borrowed from the front office for whoever's left over. Sam has a binder clip at his back holding a fold of slack out of the sleeves. The stairs up to the stage are new, built and set by the graduating class itself over successive Saturdays in May, the corner joint half of them first cut as children locking the risers together on the joint alone. Ninety-one students cross them twice each, dead silent underfoot.
 
-Alcantar is near the front and works her way back down the line telling people where they come and what happens when they get there, the stairs, the folder, which hand he puts out. She gets to Kessler, starts on the part after the stage, but is called away by her own name from the front before she is finished.
+Alcantar is near the front and works her way back down the line telling people where they come and what happens when they get there, the stairs, the folder, which hand he puts out, and she gets to Kessler, starts on the part after the stage, but is called away by her own name from the front before she is finished.
 
 They put chairs out on the field, rows of them running back from the stage in a count the school worked out the ordinary way it works out everything else: every family confirmed a headcount by the first of May, and the order that went out matched it to the chair. Off to the side stands the stage itself, plywood over scaffolding, braced to the margin the woodshop builds into anything a student is going to stand on and somebody else is going to test. The programs, printed to the exact guest count each family confirmed, run out even, with twenty spares sitting at the check-in table as the office's usual cushion.
 
@@ -24,13 +24,13 @@ Her mother cries from the K's onward, a tissue out early, and her father keeps a
 
 ________________
 
-Her mother knows this campus, having come to it since the beginning. She knows where the good parking is, knows Ruth's mother by name, and knows to bring a jacket because it's colder up here.
+Her mother knows this campus, having come to it since the beginning, and knows where the good parking is, knows Ruth's mother by name, and knows to bring a jacket because it's colder up here.
 
-Before the ceremony even starts she finds Ruth's mother in the crowd. They fall into the easy back-and-forth they've had every year for over a decade: a supplier problem on one side, a school form still open on the other. "Is he settled on a roommate yet?" Ruth's mother asks, her own younger child starting at Halstead that September. "Any day now, and he's already looking at rooms. He's got a list of them," Meg says. Ruth's mother, who has forgotten her own jacket every year since the first, takes Meg's spare straight out of her hands. "You'll catch your death," Meg says, the same as every June before. A decade and more of parking in the overflow lot, but each of them still only knows the other from a folding chair.
+Before the ceremony even starts she finds Ruth's mother in the crowd. They fall into the easy back-and-forth they've had every year for over a decade: a supplier problem on one side, a school form still open on the other. "Is he settled on a roommate yet?" Ruth's mother asks, her own younger child starting at Halstead that September. "Any day now, and he's already looking at rooms. He's got a list of them," Meg says. Ruth's mother, who has forgotten her own jacket every year since the first, takes Meg's spare straight out of her hands. "You'll catch your death," Meg says, as she does every June. A decade and more of parking in the overflow lot, but each of them still only knows the other from a folding chair.
 
 A few rows over, Dave strikes up a conversation with the stranger next to him about the stage, admiring rather than worried, working out loud that whoever spec'd the bracing built in more margin than the thing will ever need. "Somebody had fun with this," Dave says, nodding at the joists. The stranger has clearly done that arithmetic already, unprompted, cross-bracing, dead load, a margin that makes more sense for a bridge than a stage, and it takes them most of the conversation to work out that he's a physics professor, Kavi's father. Behind them, a staff member in a school polo folds up a spare table and answers Dave's question about parking on her way past, still moving.
 
-By the end of the afternoon, the grass by the parking lot holds a small, accidental museum of everything a family brings to something like this: folding chairs people brought in preference to the ones provided, insulated coolers, a phone charger passed hand to hand down an entire row, a dog that shouldn't be there, and, near the back, a folding table somebody's grandfather sets up on his own every June, selling the good lemonade at fifty cents a cup because that's what he did at each of his own children's graduations. He sells a dozen cups to people who already have a full cooler of their own, because it's the lemonade, not the thirst.
+By the end of the afternoon, the grass by the parking lot holds a small, accidental museum of everything a family brings to something like this: folding chairs people brought in preference to the ones provided, insulated coolers, a phone charger passed hand to hand down an entire row, a dog that shouldn't be there, and, near the back, a folding table somebody's grandfather sets up on his own every June, selling the good lemonade at fifty cents a cup because that's what he did at each of his own children's graduations, and he sells a dozen cups to people who already have a full cooler of their own, because it's the lemonade, not the thirst.
 
 After, on the grass, with a paper cup of lemonade:
 
@@ -70,7 +70,7 @@ At the propped courtyard door she reaches up for the top of the frame, which she
 
 Marek comes off the grass to meet the box and is alongside her before she is properly out of the doorway, with the paper he has been reading since March, about a third of the way through and going better than a third sounds.
 
-"The error's in the middle, so the third I've done is the cheap third, but the rest of it is the part worth having. I'll have the whole of it by Tuesday and then I want to talk to you about it." He walks her the length of the courtyard and goes back to the grass. Coming out of the far end of it she stops with the box on her hip and looks up: grey stone to the second floor and brick above it, the gutters and the pointing kept up the way everything here is kept up, the mown grass running out to the road.
+"The error's in the middle, so the third I've done is the cheap third, but the remainder is the part worth having. I'll have every bit of it by Tuesday and then I want to talk to you about it." He walks her the length of the courtyard and goes back to the grass. Coming out of the far end of it she stops with the box on her hip and looks up: grey stone to the second floor and brick above it, the gutters and the pointing kept up the way everything here is kept up, the mown grass running out to the road.
 
 ________________
 
@@ -86,7 +86,7 @@ Sam joins the Army, having been the best fighter in his year since he was ten, a
 
 "No." He signs the last line before the recruiter's finished sliding the pen across the desk.
 
-He walks out past the flag leaning off true and keeps his pace the whole way to the car.
+Out past the flag leaning off true, he keeps his pace the whole way to the car.
 
 Ruth goes to MIT, with a box of her own things labeled and half packed before the ceremony starts, the label written in her own small, upright hand.
 
@@ -102,17 +102,17 @@ Her father is still bent over the invoice in front of him, although the pen stop
 
 "So paste the listing back at it."
 
-She flips to the back of the invoice, where that hand has already done the arithmetic. "All of that is eight weeks of unpaid work, and whoever can't afford that long takes whatever's left at the end. I could afford it because I live over a shop that feeds me. The sites charge thirty a month to keep looking. Getting me hired inside a week is the worst week one of those sites could have. They would rather I looked forever, and they have built the thing that makes sure I do."
+Flipping to the back of the invoice, she finds that hand has already done the arithmetic. "All of that is eight weeks of unpaid work, and whoever can't afford that long takes whatever's left at the end. I could afford it because I live over a shop that feeds me. The sites charge thirty a month to keep looking. Getting me hired inside a week is the worst week one of those sites could have. They would rather I looked forever, and they have built the thing that makes sure I do."
 
 Her father sets the invoice down and looks at her properly. "What would it even do?"
 
-She says it at the speed of a weather report. "No resume, an evening of short tests, and a profile assembled out of whatever a person can demonstrate they have actually done. Then it fills the forms and submits them, instead of somebody retyping the same life into thirty portals, and the employer pays on the hire while looking costs the person nothing. Nobody pays anything to look."
+At the speed of a weather report, she says it. "No resume, an evening of short tests, and a profile assembled out of whatever a person can demonstrate they have actually done. Then it fills the forms and submits them, instead of somebody retyping the same life into thirty portals, and the employer pays on the hire while looking costs the person nothing. Nobody pays anything to look."
 
 "And who puts a job on it."
 
 "The employers. I go and ask them, one at a time, in the car."
 
-He is quiet long enough for a customer to come in, buy a tin of galvanised screws and leave again, and then he says the thing he has been holding since the second hundred.
+Quiet long enough for a customer to come in, buy a tin of galvanised screws and leave again, he then says the thing he has been holding since the second hundred.
 
 "This is what people say when nobody will hire them. They say they are starting something." He sets his fingers on the invoice. "You will be behind that counter Monday to Saturday, and you will keep sending the forms, and whatever this is happens after we close. That is what I have got to offer you, and it is a good deal more than my own father put in front of me."
 
@@ -124,7 +124,7 @@ He is quiet long enough for a customer to come in, buy a tin of galvanised screw
 
 "I have that arrangement already."
 
-She lets that sit a beat before she puts the proposal on the counter. "You have them from somebody who is going to be on a freight desk in Ambridge in a few months, if the freight desk ever calls. You'd be paying for that by August. Sundays at the counter, the back room the remainder of the week, and an end date attached to it. If it is still earning zero by the last day of March I take whatever job is open and I stop."
+A beat passes before she puts the proposal on the counter. "You have them from somebody who is going to be on a freight desk in Ambridge in a few months, if the freight desk ever calls. You'd be paying for that by August. Sundays at the counter, the back room the remainder of the week, and an end date attached to it. If it is still earning zero by the last day of March I take whatever job is open and I stop."
 
 His eyes go to the ledger, then to the shop. "Four applications a week until then. Every week, in the book, where I can see them."
 
@@ -134,11 +134,11 @@ His eyes go to the ledger, then to the shop. "Four applications a week until the
 
 "Three, they go in the book where you can count them, and the subject stays off the counter on a Sunday."
 
-He puts his hand out across the counter, the way he closes with a supplier, and she shakes it.
+Across the counter his hand goes out, the way he closes with a supplier, and she shakes it.
 
-She says, still holding on, "I got up at five for months to fill those in. I'd like to stop doing that."
+"I got up at five for months to fill those in. I'd like to stop doing that," she says, still holding on.
 
-Her father keeps hold of her hand a second past where she lets go of his. Then she takes the invoice off the counter, finds the line he has been reading for twenty minutes, and tells him the supplier has billed him twice for the same case of blades.
+Her father keeps hold of her hand a second past where she lets go of his. Then she takes the invoice off the counter, finds the line he has been reading for twenty minutes, and tells him the supplier has billed him twice for one case of blades.
 
 The complaint goes to the chat that week, half a joke by the time it gets there, and Eli says he'll look into it and lets it drop.
 
@@ -178,6 +178,6 @@ Her father says, when she's finished, "So the two years in the middle, that's a 
 
 Chloe pulls Georgetown's letter out from under the eligibility printout and lays it out next to the ham. "If I go to the state school, I spend two years finishing a degree nobody at State reads closely, and I walk into the oral assessment with languages I have only ever used on paper and in a building where everybody already knows what I mean. If I go to Georgetown, the people who run that assessment teach there every spring, and the languages get somebody to argue with instead of a page, and half the internships that turn into a clearance start walking distance from wherever I'm living. It's the same two years either way. One of them is already the first year of it."
 
-The water stops running upstairs. A few minutes later her mother comes down for a glass, finds them still at the table, and reads the room accurately enough to fill the glass. She carries the question back upstairs with her, unasked.
+The water stops running upstairs. A few minutes later her mother comes down for a glass, finds them still at the table, and reads the room accurately enough to fill the glass, carrying the question back upstairs with her, unasked.
 
 So she takes Georgetown, and the two years everyone else is calling a wait become the first two of the six.

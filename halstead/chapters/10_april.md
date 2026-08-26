@@ -26,7 +26,7 @@ Ruth watches her write it on the inside cover of a notebook. "Aymar. A, Y, M, A,
 
 Ruth just gives her the number this time, so Chloe writes it under the name, leaves four blank lines, and puts Sam's name on the fifth.
 
-Kavi turns up an hour later and stands in the doorway with his arms folded until somebody looks at him. He points down the corridor at nobody. "I have been through this whole building since lunch, the office, then the laundry, then outside to the road, because I thought you might still be sitting in the car. Then a girl in the stairwell whose name I don't even know told me you'd been here an hour. Sam knew the entire time and let me do the whole tour anyway."
+Kavi turns up an hour later and stands in the doorway with his arms folded until somebody looks at him, then points down the corridor at nobody. "I have been through this whole building since lunch, the office, then the laundry, then outside to the road, because I thought you might still be sitting in the car. Then a girl in the stairwell whose name I don't even know told me you'd been here an hour. Sam knew the entire time and let me do the whole tour anyway."
 
 "He probably forgot, because he's been telling everyone for a week, so it stopped feeling like news to him before it ever actually happened," Ruth says.
 
@@ -80,7 +80,7 @@ The Spanish teacher speaks Spanish from the first minute of the first hour and k
 
 Mathematics here runs backward from mathematics at camp, where somebody explained fractions to her and she worked out for herself why you flip the second, which took a night on the floor with a pencil and felt enormous at the time. Here you get given the thing the formula is about, plus a week, and you come back with whatever you have. The teacher tells you whether it is true and stops there. Good is a different question, one he leaves alone. The first week she brings him a stack of pages, but he reads two lines, says the second is wrong, and hands it back with forty minutes of the hour still to go.
 
-She hates it for a month, though the first weeks go badly in every subject she has. By the fourth week she can find all her rooms from memory and has stopped arriving late. She is behind in Spanish, mathematics, writing, and history, but she has caught up in literature. On the first day of literature she waits for the reading list, and on the eighth day stays after the hour to ask about it, and the teacher looks at her a moment before answering.
+For a month she hates it, though the first weeks go badly in every subject she has. By the fourth week she can find all her rooms from memory and has stopped arriving late. Chloe is behind in Spanish, mathematics, writing, and history, but has caught up in literature. On the first day of literature she waits for the reading list, and on the eighth day stays after the hour to ask about it, and the teacher looks at her a moment before answering.
 
 "There's no list at all, and I know that sounds like me being clever with you, but it's the answer."
 
@@ -92,7 +92,7 @@ She hates it for a month, though the first weeks go badly in every subject she h
 
 "As many as you can carry, because there's no card and no record, and the desk empties out in the evening. Take what you want, bring it back when you're finished with it, and if you lose one then come and say you lost it."
 
-The library at home was a room off the gym where the woman at the desk let you take four books and not five, however many times Chloe argued about it. But this one is the whole back of the ground floor, both floors of it, with a staircase inside it that goes up to a second level of shelves running all the way around. The desk is empty on a Tuesday late at night, and there is no card and no limit. At that hour half the lights are off and it is colder in there than the corridor. The first time she takes a dozen, whatever sits at eye height and looks interesting, carrying them against her chest with her chin on the top of the stack and stopping twice on the stairs to get her arms back under it rather than put any of it down. She gets through a few of them. The next week she takes fewer, and it settles after that at whatever she can carry in one hand, because the library is minutes from her room and open half the night. Reading happens wherever the day leaves room: the hour before dinner, after lights out with the corridor light coming under the door, and the Saturdays when the others are doing something she got out of.
+The library at home was a room off the gym where the woman at the desk let you take four books and not five, however many times Chloe argued about it. But this one is the whole back of the ground floor, both floors of it, with a staircase inside it that goes up to a second level of shelves running all the way around. The desk is empty on a Tuesday late at night, and there is no card and no limit. At that hour half the lights are off and it is colder in there than the corridor. The first time she takes a dozen, whatever sits at eye height and looks interesting, carrying them against her chest with her chin on the top of the stack and stopping twice on the stairs to get her arms back under it rather than put any of it down, and she gets through a few of them. The next week she takes fewer, and it settles after that at whatever she can carry in one hand, because the library is minutes from her room and open half the night. Reading happens wherever the day leaves room: the hour before dinner, after lights out with the corridor light coming under the door, and the Saturdays when the others are doing something she got out of.
 
 The mathematics thing happens in the third week of May, on a problem she has had for days: a wheel rolling along a straight line with one point marked on the rim, and the question of how far that mark travels while the wheel goes round once. It travels further than the wheel does, and everybody agrees on that much, but how much further is where the whole room gets stuck.
 
@@ -118,7 +118,7 @@ On the second floor by the stairs there is a corkboard everybody walks past, car
 
 Later she asks Kavi about it, on the stairs, the stairwell empty except for the two of them.
 
-He has his shoes off and is holding them by the heels. "Owen wanted to stay, and before you ask, I am going off something I saw with my own eyes. I know you're about to ask me how I know. He was crying by the kitchens on the Thursday and I saw him, but I didn't say anything, because I was seven and I didn't know what you say to that, and then on the Saturday his mom's car was outside and he was in the back of it."
+Kavi has his shoes off and is holding them by the heels. "Owen wanted to stay, and before you ask, I am going off something I saw with my own eyes. I know you're about to ask me how I know. He was crying by the kitchens on the Thursday and I saw him, but I didn't say anything, because I was seven and I didn't know what you say to that, and then on the Saturday his mom's car was outside and he was in the back of it."
 
 "Crying about what, though, did somebody say something to him or was it just the leaving?"
 
@@ -128,7 +128,7 @@ He has his shoes off and is holding them by the heels. "Owen wanted to stay, and
 
 "You already have all of it, Chloe, because his mom came and that was the whole of it. You keep asking about this, and you asked Ruth in April, at the trays, while I was standing right there," Kavi says, looking down at her from the stairs.
 
-Her mother calls on Sundays, on the first-floor alcove phone with a chair beside it and people waiting in the corridor, so you learn to be quick or you learn to stop caring that they can hear you. The first Sunday runs fifty minutes, but the fourth runs twenty, because most of what she has takes a while to set up before it goes anywhere, and somebody behind her shifts their weight the whole time.
+Her mother calls on Sundays, on the first-floor alcove phone with a chair beside it and people waiting in the corridor. The first Sunday runs fifty minutes, but the fourth runs twenty, because most of what she has takes a while to set up before it goes anywhere, and somebody behind her shifts their weight the whole time.
 
 "Are you eating? I don't mean are they giving you food, I mean are you actually eating it."
 

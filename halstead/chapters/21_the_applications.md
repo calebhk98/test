@@ -2,7 +2,7 @@
 
 *October 2022 – March 2023*
 
-Chloe has been compared to the same ninety-one people since she was seven, and the only number the school has ever given her is her place inside them, a place squarely in the middle. The middle of a year always ends up at the state school, so that's what she is expecting.
+Chloe has been compared to the identical ninety-one people since she was seven, and the only number the school has ever given her is her place inside them, a place squarely in the middle. The middle of a year always ends up at the state school, so that's what she is expecting.
 
 The pattern is identical for everybody: the Ivies first, eight of them, bought like lottery tickets and forgotten about by dinner; then the college a parent went to; then the community college an hour from home, quietly listed by everybody and named out loud by almost nobody; then something strange, picked for whatever reason a seventeen-year-old picks things, so Bex applies to a place in Vermont because her cousin says the food is unbelievable, and Marek to a place in Arizona because a woman he watched lecture online teaches there.
 
@@ -62,7 +62,7 @@ Nadia is in the room too, back against the door, laptop on her knees, and what s
 
 "You're not applying anywhere," Ruth says.
 
-She tabs to the next box without looking up. "I'm applying everywhere this week, and none of them are schools. Purchasing assistant at the plumbing supply out on Route 8. Parts buyer at a dealership. Service writer at the transmission place on Fourth. Dispatch at a freight company in Ambridge. An insurance office running a claims trainee program that says straight out of high school at the top and two years of experience further down."
+Without looking up, she tabs to the next box. "I'm applying everywhere this week, and none of them are schools. Purchasing assistant at the plumbing supply out on Route 8. Parts buyer at a dealership. Service writer at the transmission place on Fourth. Dispatch at a freight company in Ambridge. An insurance office running a claims trainee program that says straight out of high school at the top and two years of experience further down."
 
 "Which one do you actually want?" Chloe says.
 
@@ -86,7 +86,7 @@ Then somebody reads the essays, and what everybody notices first is the graduate
 
 An admissions officer at Penn works through a stack of files on a Tuesday morning, a mug going cold at her elbow. Odile's essay runs pages past the word limit, normally worth a note in the margin and a mark against the applicant, but she writes the note and keeps reading. Well down the second page, as background to a point about patience, it mentions a self-defense assessment involving a room full of people, and she reads the sentence twice, sets the folder down, and reads it a third time before she picks up the phone.
 
-She says to the office down the hall, "Read this paragraph and tell me what you think it means. Don't tell me what it stands in for, because I have spent an hour deciding it has to stand in for something."
+"Read this paragraph and tell me what you think it means. Don't tell me what it stands in for, because I have spent an hour deciding it has to stand in for something," she says to the office down the hall.
 
 Her colleague reads it standing in the doorway, still holding his own coffee. "It means exactly what it says, with no second meaning folded into it. I put two of these side by side on Friday, looking for the template, and they argued opposite sides of the same question, and both of them were worth reading."
 
@@ -112,7 +112,7 @@ Just before the bell he stands, hands the sheets over, and waits while she reads
 
 "No."
 
-He shakes her hand and thanks her for the water, and within the month offices previously limited to exchanging letters with the school start asking about a visit.
+Shaking her hand, he thanks her for the water, and within the month offices previously limited to exchanging letters with the school start asking about a visit.
 
 ________________
 
@@ -126,7 +126,7 @@ A representative from Duke, crossing campus toward the dining hall on his first 
 
 The next evening, over dinner, he asks again, having learned by now a second question only gets a different word, not more of the first. "Athletics," she says, and goes on eating.
 
-On his last morning he tries a third time, a foot already in the car. "Recreation," she says, and closes the door for him. He writes all three down, in order, in the notebook he's kept since Monday.
+On his last morning he tries a third time, a foot already in the car. "Recreation," she says, and closes the door for him, and he writes all three down, in order, in the notebook he's kept since Monday.
 
 The Stanford representative asks for the cryptography elective because it's the class he can least imagine existing, sits through a full class of the youngest year, and follows about a third of the material. What he tells a colleague afterward is about the room rather than the material: the questions came faster than the answers, a girl at the back corrected the teacher's derivation of a cipher's key schedule twice from memory, and no student so much as looked up either time.
 
@@ -136,7 +136,7 @@ The Yale representative asks for a senior writing seminar and gets Hearn, who ha
 
 "Is that unusual, for the age group, that many pages every week? I ask because I teach graduate students who file half that and let you know they have done it."
 
-He looks at her as if the question hadn't occurred to him before. "It's what the material wants."
+As if the question hadn't occurred to him before, he looks at her. "It's what the material wants."
 
 The MIT representative asks for the electronics and radio elective and spends most of a period watching a room of students build a working shortwave receiver out of a bag of parts, asking follow-up questions that all get short, exact answers back. Afterward he asks who taught it, how long the class took to reach a working set, and what they had built by the end of the first month, gets a straight answer to all three, and spends the walk back composing a fourth.
 
@@ -150,7 +150,7 @@ Chloe is a few seats down with a plate in front of her. The representative write
 
 The drawing lives in a folder Nadia keeps. Chloe gets it out that evening and reads her own working off it, looking for the Thursday she carried it in to breakfast, and whether Bex was at that table, and Bex was at that table, and at that point Chloe was still saying the thing out loud instead of putting her name on the front of a page.
 
-A rep corners Chloe in the library on a Wednesday and asks, pleasantly, what a typical day is like, and she tells him: five classes before lunch, two block periods after it for whatever she's carrying that term, another few before dinner, then prep, dinner, and watch on the nights she has it. He asks what watch is, and she walks him through it as a fire drill: who takes which corridor, how the count works, what happens if somebody misses a call-in. Then he asks her to say the part about the scoring again.
+A rep corners Chloe in the library on a Wednesday and asks, pleasantly, what a typical day is like, and she tells him: five classes before lunch, two block periods after it for whatever she's carrying that term, another few before dinner, then prep, dinner, and watch on the nights she has it. Asking what watch is, he gets walked through it as a fire drill: who takes which corridor, how the count works, what happens if somebody misses a call-in. Then he asks her to say the part about the scoring again.
 
 Another asks Sam what he's good at, expecting a list with hedging in it.
 
@@ -182,7 +182,7 @@ Ruth asks her in the common room in March, with only Chloe else in the room, and
 
 "A hundred and ninety," Ruth says. "Against how many that answered?"
 
-The notebook is shut under her hand. She pushes her sleeves up, and a second goes by where she says nothing. "Twelve, but eight of them were written by software. Read one of mine, Ruth. I can't work out what they want. I've read the listing and I've read the form and I've answered both of them, but I can't see the part where I'm getting it wrong."
+The notebook is shut under her hand, and she pushes her sleeves up, a second going by where she says nothing. "Twelve, but eight of them were written by software. Read one of mine, Ruth. I can't work out what they want. I've read the listing and I've read the form and I've answered both of them, but I can't see the part where I'm getting it wrong."
 
 "Chloe should read it, since Chloe's the one who writes."
 

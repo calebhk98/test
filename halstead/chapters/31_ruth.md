@@ -44,7 +44,7 @@ It goes on the inside cover of the notebook she uses for problem sets, in the sm
 
 ________________
 
-She holds that for most of a year.
+For most of a year, she holds that.
 
 The months underneath that sentence look, from outside, like everything is fine. Class happens. Problem sets go in early. Dinner is in the hall nearest her building, most nights, because a fixed routine is one less thing to decide. When her mother calls on Sundays, Ruth answers on the second ring and gives her the actual week, in order. Her father tells her, over speakerphone, that the university health plan covers a specialist visit without a referral, but she corrects him. "That's not what the policy says, Dad. It says you need one within thirty days or they can deny the claim retroactively." He reads it back to her off his laptop while she's still on the line, finds the clause, and agrees she's right. Neither of them mentions that she hasn't once, in months of Sunday calls, said anything about the placement.
 
@@ -56,7 +56,7 @@ He fixes it, thanks her, and then, halfway to the door with his bag over his sho
 
 The tally she keeps is private instead of public: every problem set returned without comment, every study group she finishes ahead of everyone else, filed as evidence for the theory rather than against it.
 
-A professor breaks it. She likes him, genuinely, and in office hours he cannot follow her past the third step of her reasoning. He says so, then asks her to go back.
+A professor breaks it: she likes him, genuinely, and in office hours he cannot follow her past the third step of her reasoning, and he says so, then asks her to go back.
 
 His office is on the fourth floor, narrow, with a window stuck a half-inch open and a whiteboard crowded with other students' handwriting he hasn't gotten around to erasing. There are very few of her professors here she likes, and she likes him: he corrects a wrong answer the day he gives one, out loud and with no ceremony about it. He's the only person who has ever pushed back on a proof of hers rather than simply crediting the answer. The result she brings him is one she's proud of, something she worked out over a couple of nights, and she states it the way she states everything, conclusion first. "It holds because the boundary term cancels once you fix the sign convention, and once that's fixed the rest follows directly."
 
@@ -66,7 +66,7 @@ From the top, then, and step one and step two go by without any trouble in them 
 
 "Still lost. Slower than that, if you don't mind."
 
-She slows down. The assumption she'd folded into a single line comes apart into the separate claims underneath, and she states each on its own. "Fixing the convention only puts it in the form the identity is already written in. Then the boundary term goes to zero."
+As the assumption she'd folded into a single line comes apart into the separate claims underneath, she slows down and states each on its own. "Fixing the convention only puts it in the form the identity is already written in. Then the boundary term goes to zero."
 
 He nods at the first, but at the second the nod does not arrive, and he sits back off the page with the pen still up in his hand.
 
@@ -78,7 +78,7 @@ He nods at the first, but at the second the nod does not arrive, and he sits bac
 
 "The tail dies before the boundary does."
 
-He goes back up through it from there, the whole way to the top, stopping twice more to say a step back to her in his own words before he will take it, and at the end of it he tells her the result holds, and caps the pen, and sets it down on the desk between them.
+From there he goes back up through it, the whole way to the top, stopping twice more to say a step back to her in his own words before he will take it, and at the end of it he tells her the result holds, and caps the pen, and sets it down on the desk between them.
 
 "That took you five passes," he says. "I have graduate students in their third year who would not have got me there at all. Most of them would have told me the step was obvious and waited for me to agree with them. But you went off and found the sentence." He is already reading down the next question on his list, with the pen back up in his hand for it.
 
@@ -90,7 +90,7 @@ It's more than what he said. It's that somebody her own age, sharper than most o
 
 Over the following months she goes and finds the numbers herself, and they all say it, each worse than the one before.
 
-The first is the easiest to find and the hardest to sit with. A government survey breaks down what percentage of adults report speaking a second language fluently. She goes through the methodology again before she believes the figure: it's so far under what she'd assumed that she suspects, at first, the study of undercounting people like the ones she grew up around. But the count is accurate. It's describing the country she's living in now rather than the one she came from.
+The first is the easiest to find and the hardest to sit with. A government survey breaks down what percentage of adults report speaking a second language fluently, and she goes through the methodology again before she believes the figure: it's so far under what she'd assumed that she suspects, at first, the study of undercounting people like the ones she grew up around. But the count is accurate. It's describing the country she's living in now rather than the one she came from.
 
 The rest of them she works through like that, at a carrel on the fourth floor with her laptop propped on a stack of books because the desk lamp only clears the screen propped that high. Adult reading levels get checked against grade-level texts she remembers assigning to the twelves back at Halstead; a fractions benchmark from a testing organization gets checked against a worksheet she still has saved from her own first years there. Each search takes an evening, and each ends where the last one ended. A few minutes before the library asks everyone to leave she closes the laptop, walks back across an empty campus, and runs the number over instead of anything else that happened that day.
 

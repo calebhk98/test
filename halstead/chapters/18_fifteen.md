@@ -104,7 +104,7 @@ Down off her toes, she pushes the door the rest of the way open with her foot. "
 
 Odile goes into the middle on the second Thursday in March, and by half a minute there are thirty people watching and somebody has propped the door open so the corridor can see in. Chloe is at the edge of the mat calling the count with a dozen others. At a minute the room makes a noise she can feel through the floor, and Odile holds another seven seconds and comes down on her hands and knees. Chloe is the second to reach her, and Odile's breath comes short and ragged against the mat with her arms shaking, so Chloe stays down beside her for the rest of the hour with the damp coming through her shirt.
 
-On each of the next Thursdays she sits on that mat after the room empties, running the last twenty seconds of Odile's round again, and every time she gets to the end of it with the same twenty seconds and no new reason for them.
+On each of the next Thursdays she sits on that mat after the room empties, running the last twenty seconds of Odile's round again, and every time she gets to the end of it with the identical twenty seconds and no new reason for them.
 
 ________________
 
@@ -112,7 +112,7 @@ Hark puts the last envelope down. "You are going to lose money in your life, eve
 
 The envelopes go out in October with two hundred dollars in each, to be spent on anything legal for a year, and whatever is left in June they keep.
 
-Rustem buys a dozen dead motors at a farm auction for a few dollars apiece, several of which are turning over by Christmas, and in January he sits down across from Chloe at dinner and pushes a page of figures at her before she has finished eating, wanting the lot. Reading it twice, she checks his sale prices against what he got for those, then offers him a hundred and twenty at eight percent with the motors as collateral, and he argues about the rate for twenty minutes and loses. Then he tells her she has to see the barn first, so she goes on the Saturday and finds nearly sixty motors in it, a third of them past helping, and leaves her offer exactly where it was.
+Rustem buys a dozen dead motors at a farm auction for a few dollars apiece, several of which are turning over by Christmas, and in January he sits down across from Chloe at dinner and pushes a page of figures at her before she has finished eating, wanting the lot. Reading it twice, she checks his sale prices against what he got for those, then offers him a hundred and twenty at eight percent with the motors as collateral; he argues about the rate for twenty minutes and loses. Then he tells her she has to see the barn first, so she goes on the Saturday and finds nearly sixty motors in it, a third of them past helping, and leaves her offer exactly where it was.
 
 Forty goes to a girl called Fen at ten percent against a table saw, and the last thirty to Priya at twelve, unsecured, because it is Priya. They all pay her back, but she finishes the year with two hundred and seventeen dollars to Rustem's nine hundred and forty.
 
@@ -138,25 +138,25 @@ She has never heard the name in her life. Finding out which boy it is would be e
 
 She stops using the language-block stairs.
 
-The surgical block runs its own air. In March she ties her first suture there and her hands do what she tells them, though it takes twice as long as the boy at the next table, so the instructor writes *steady* on her sheet and then the time beside it. Accountancy and taxation run that term, Hindi has more Sanskrit under it than she expected, and by June the topology book has been lying open at the same proof since Easter.
+The surgical block runs its own air. In March she ties her first suture there and her hands do what she tells them, though it takes twice as long as the boy at the next table, so the instructor writes *steady* on her sheet and then the time beside it. Accountancy and taxation run that term, Hindi has more Sanskrit under it than she expected, and by June the topology book has been lying open at one proof since Easter.
 
 Her name lands on an internal research paper in March, well down the author list this time rather than in the acknowledgments, and she reads it over, then spends twenty minutes looking up the other names on it.
 
 Dr. Sandoval catches her in the corridor outside the laboratory in April, after a session.
 
-She has a folder under her arm and stops walking to say it. "The work you have been doing since January. I need to ask you for something, and I would like you to understand while I am asking that it is a request and not an instruction."
+A folder under her arm, she stops walking to say it. "The work you have been doing since January. I need to ask you for something, and I would like you to understand while I am asking that it is a request and not an instruction."
 
 Chloe sets her bag against the wall. "All right, shoot, whatever it is you need to ask."
 
-She shifts the folder to her other arm. "There is a non-disclosure agreement on that project. Four people have signed it, and one of them is me, while your name is on none of it, and I would refuse to put a federal agreement in front of a fifteen-year-old, because asking you to sign would be wrong and would fail in court besides. But your work feeds ours, so if you talk about it at home, or on a telephone, or at a table with a dozen people round it, you walk away untouched and the consequences land on us instead."
+The folder shifts to her other arm. "There is a non-disclosure agreement on that project. Four people have signed it, and one of them is me, while your name is on none of it, and I would refuse to put a federal agreement in front of a fifteen-year-old, because asking you to sign would be wrong and would fail in court besides. But your work feeds ours, so if you talk about it at home, or on a telephone, or at a table with a dozen people round it, you walk away untouched and the consequences land on us instead."
 
 "So you're asking me to keep quiet about it, when there's no rule anywhere that obliges me to."
 
 "You can't be held to anything, I can, so asking is what I have."
 
-That night she lies awake, and snaps at Sam at breakfast the next morning for no reason she can name, then apologises for it before he can ask why. Then she takes a week over it and builds the case against first: somebody her age asked to guard a secret that already had other names on it. She makes that side as hard as she can before she builds the other, from her own position and from that of the names on the form. At dinner on Wednesday she is quiet, and Sam asks her twice whether she is all right. She stops saying what she does in the afternoons, and it takes a few days to stop being a decision.
+That night she lies awake, and snaps at Sam at breakfast the next morning for no reason she can name, then apologises for it before he can ask why. Then she takes a week over it and builds the case against first: somebody her age asked to guard a secret that already had other names on it. From her own position and from that of the names on the form, she makes that side as hard as she can before she builds the other. At dinner on Wednesday she is quiet, and Sam asks her twice whether she is all right; she stops saying what she does in the afternoons, and it takes a few days to stop being a decision.
 
-A teacher takes Priya's phone off her in the second week of March, for the ordinary reason: it is out on the desk during a lecture on evidence. He puts it in the drawer of the lectern, gives it back on the Friday in front of everybody, and says only that she can charge it at the back. The chat is on that phone, years of it, locked, and locked properly, and sitting in an unattended drawer for days inside a building where getting into things is a course with an examination at the end of it.
+A teacher takes Priya's phone off her in the second week of March, for the ordinary reason: it is out on the desk during a lecture on evidence. In the drawer of the lectern it goes; he gives it back on the Friday in front of everybody and says only that she can charge it at the back. The chat is on that phone, years of it, locked, and locked properly, and sitting in an unattended drawer for days inside a building where getting into things is a course with an examination at the end of it.
 
 Priya says at dinner that the lock held, which Ruth calls the wrong sentence before Priya has finished saying it. The right sentence is that a single lock stood between a lectern drawer and everything the table has said to each other since the chat started, and that whether it held is a question they are asking on Friday instead of one they had already answered on Monday.
 

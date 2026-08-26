@@ -68,7 +68,7 @@ A chair scrapes on the kitchen tiles, and somebody runs the tap for a moment bef
 
 Chloe lies with her eyes open and her hands under the pillow, listening to the fridge, until her dad says something she can't make out at all and her mom says the words four hours, in the voice she uses about a thing she has already lost.
 
-Then it's the middle of February, then the end of it, and dinner comes and goes with neither of them bringing it up, so she stops waiting for them to. She goes to Dr. Ammons on a Thursday and is asked how the weeks since have been, says fine, gets asked what fine means, and has no answer for that.
+Then it's the middle of February, then the end of it, and dinner comes and goes with neither of them bringing it up, so she stops waiting for them to. Chloe goes to Dr. Ammons on a Thursday and is asked how the weeks since have been, says fine, gets asked what fine means, but has no answer for that.
 
 They tell her on the fourteenth of March.
 
@@ -146,15 +146,15 @@ A woman called Mrs. Okonkwo, who walks backward half the time so that she can ta
 
 Her mom asks about the nurse and gets straight answers, then asks who is awake at night and gets that answered too.
 
-In the afternoon they put Chloe in a second grade room while her parents go off somewhere with somebody else, and there is a roomful of kids in it doing something with a map of a river, and a boy at her table lends her a pencil before she asks. At the end of it a man whose beard is going grey sits down on a chair the same size as hers and asks her what she would do with an entire day if the whole day were hers to spend. She talks a long time, and he lets her get all the way to the end of it.
+In the afternoon they put Chloe in a second grade room while her parents go off somewhere with somebody else, and there is a roomful of kids in it doing something with a map of a river, and a boy at her table lends her a pencil before she asks. At the end of it a man whose beard is going grey sits down on a chair the same size as hers and asks her what she would do with an entire day if the whole day were hers to spend, and she talks a long time, and he lets her get all the way to the end of it.
 
 No test arrives, but she keeps waiting for somebody to hand her one, right through the afternoon and out to the car.
 
 It's dark by the time they're back on the road.
 
-Chloe talks for the whole drive. She talks about the room she'd have and whether you get any say in which room you get. She talks about the woman who walked them around, and about whether Sam is one of the Sams here or a different Sam altogether. She wants to know what the food is like in April as opposed to July, and whether the robot arm on the second floor is the one from July or a newer one, and she asks her dad question after question, running each one into the next before he can answer. Somewhere in the third hour she falls asleep in the middle of a sentence about the pool, and when the car stops in the driveway she wakes up and picks the sentence back up more or less where she dropped it.
+Chloe talks for the whole drive, about the room she'd have and whether you get any say in which room you get. She talks about the woman who walked them around, and about whether Sam is one of the Sams here or a different Sam altogether. What she wants to know is what the food is like in April as opposed to July, and whether the robot arm on the second floor is the one from July or a newer one, and she asks her dad question after question, running each one into the next before he can answer. Somewhere in the third hour she falls asleep in the middle of a sentence about the pool, and when the car stops in the driveway she wakes up and picks the sentence back up more or less where she dropped it.
 
-Her dad carries her bag in and puts it at the bottom of the stairs. She goes through to the kitchen and gets herself a glass of water at the sink, standing on the edge of the cupboard door to reach the tap the way she has been told not to.
+Her dad carries her bag in and puts it at the bottom of the stairs, and she goes through to the kitchen and gets herself a glass of water at the sink, standing on the edge of the cupboard door to reach the tap the way she has been told not to.
 
 Out the kitchen window, her mother is still sitting in the car with the engine off and the lights with it, but she has yet to open the door on her side.
 

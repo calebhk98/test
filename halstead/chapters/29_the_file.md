@@ -60,17 +60,17 @@ An adult arrived some time after that. He told the children to go to bed, and th
 
 There is no reply on file.
 
-Theo sets the page down and squares it against the others, an old habit from a table where every plate and every fork sat exactly where it was set. Somewhere down the row a phone rings and gets silenced on the second ring. The floor keeps making its ordinary noise around him.
+Theo sets the page down and squares it against the others, an old habit from a table where every plate and every fork sat exactly where it was set. Somewhere down the row a phone rings and gets silenced on the second ring, but the floor keeps making its ordinary noise around him.
 
 ________________
 
 Theo sits back.
 
-He was twelve that year. The morning after is what he remembers: a drill overnight, four people on it and one of them Chloe, everyone annoyed about it because it was a school night and the alarm had caught them all flat-footed, and by lunchtime the conversation moved on to something else.
+Theo was twelve that year. The morning after is what he remembers: a drill overnight, four people on it and one of them Chloe, everyone annoyed about it because it was a school night and the alarm had caught them all flat-footed, and by lunchtime the conversation moved on to something else.
 
 He read the grade sheet on the board like everyone else, harsh, he'd thought at the time.
 
-He puts his hand over his mouth and sits like that.
+Theo puts his hand over his mouth and sits like that.
 
 The man in the next cubicle leans around the partition. "You good over there?" "Fine," Theo says, and takes his hand down. The folder comes back up off the desk, because leaving it open there is worse than finishing it.
 
@@ -78,9 +78,9 @@ ________________
 
 It sits with him for two days.
 
-At his desk it's the job it is any other day: twenty pages reduced and sent up, sent back with three questions in his supervisor's handwriting, answered and sent up again. Mid-morning his supervisor stops at the desk, coffee in hand. "How's the retirement box coming along?" she asks. Theo says, "Most of it's dead weight. A folder's going to need another day." Both answers are true, and she takes them as complete and moves on down the row. At home the first night he opens the school's own website on his personal laptop and reads it front to back as open-source material, checking for anything that squares with what's in the file. It says what it has always said: a few sentences, a photograph of a building he's stood inside a thousand times, an admissions portal, the page it would have been the day before any of this. He closes the laptop with both hands.
+At his desk it's the job it is any other day: twenty pages reduced and sent up, sent back with three questions in his supervisor's handwriting, answered and sent up again. Mid-morning his supervisor stops at the desk, coffee in hand. "How's the retirement box coming along?" she asks. Theo says, "Most of it's dead weight. A folder's going to need another day." Both answers are true, and she takes them as complete and moves on down the row. At home the first night he opens the school's own website on his personal laptop and reads it front to back as open-source material, checking for anything that squares with what's in the file. It says what it has always said: a few sentences, a photograph of a building he's stood inside a thousand times, an admissions portal, the page it would have been the day before any of this. With both hands, he closes the laptop.
 
-The second day he clears his queue faster than usual, the cables done by mid-morning, because working through something else keeps the loading-dock report from filling every part of his head at once. That second night is the night he always calls his grandmother, twenty minutes as always. She tells him, "The ferry's back on the summer schedule. And the Hendersons have got a dog now, a little thing that barks at the mailman like it means it." He asks about the dog longer than the dog probably warrants, but neither of them brings up anything that happened at his desk that week.
+The second day he clears his queue faster than usual, the cables done by mid-morning, because working through something else keeps the loading-dock report from filling every part of his head at once. That second night is the night he always calls his grandmother, twenty minutes as always. His grandmother tells him, "The ferry's back on the summer schedule. And the Hendersons have got a dog now, a little thing that barks at the mailman like it means it." He asks about the dog longer than the dog probably warrants, but neither of them brings up anything that happened at his desk that week.
 
 Then he does the only thing available to him: nothing.
 

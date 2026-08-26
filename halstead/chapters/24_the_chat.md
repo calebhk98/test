@@ -36,7 +36,7 @@ eli: hang on
 
 ________________
 
-He spends the rest of the afternoon at it anyway, laptop propped against the work he's actually paid to do, the internal network map open in a tab and the ticket he's supposed to be closing untouched beside it.
+The rest of the afternoon he spends at it anyway, laptop propped against the work he's actually paid to do, the internal network map open in a tab and the ticket he's supposed to be closing untouched beside it.
 
 eli: 5
 
@@ -148,11 +148,11 @@ kavi: still worth asking
 
 By dinner a new thread has replaced it, about something else entirely, and the November date stays exactly as unsettled as it was that morning.
 
-In October the question comes round again, in an email from Iyad to most of the year, everybody's name typed at the head of their own line with the thing under it he wants back from them: Ruth's Providence weekend, whether Theo's leave is the week he said it was, whether Sam has been told yet, which stretch Priya expects to have a signal in. Under Chloe's name he has put the weekend, and after the weekend, in the same typeface as everything else in it, whether Aurel is coming down with her. Chloe answers hers inside a minute, the weekend and nothing else, and leaves the rest of the line where it is. By Friday most of the lines have dates against them and there is a weekend in November with a column of names sitting under it, but Nadia's Tuesday is still up in the chat where it was, with eli's count under it.
+In October the question comes round again, in an email from Iyad to most of the year, everybody's name typed at the head of their own line with the thing under it he wants back from them: Ruth's Providence weekend, whether Theo's leave is the week he said it was, whether Sam has been told yet, which stretch Priya expects to have a signal in. Under Chloe's name he has put the weekend, and after the weekend, in the typeface used for everything else in it, whether Aurel is coming down with her. Chloe answers hers inside a minute, the weekend and nothing else, and leaves the rest of the line where it is. By Friday most of the lines have dates against them and there is a weekend in November with a column of names sitting under it, but Nadia's Tuesday is still up in the chat where it was, with eli's count under it.
 
 ________________
 
-Priya's messages land days behind whatever prompted them, sometimes a week, whole conversations she answers into after the group has already moved on twice, and everyone answers her back anyway. She posts whenever the signal holds long enough to send anything at all.
+Priya's messages land days behind whatever prompted them, sometimes a week, whole conversations she answers into after the group has already moved on twice, and everyone answers her back anyway; she posts whenever the signal holds long enough to send anything at all.
 
 priya: theres a horse here that a farmer uses to bring cheese down from the high pasture, actual cheese, strapped either side like saddlebags, and he doesnt even lead her, she just goes
 
@@ -232,7 +232,7 @@ kavi: not fake. not informative.
 
 ________________
 
-Chloe's old laptop dies the week before her first classes start. She is, by her own accounting, careful with money, right up until a dead laptop meets a lunch break.
+Chloe's old laptop dies the week before her first classes start, and she is, by her own accounting, careful with money, right up until a dead laptop meets a lunch break.
 
 chloe: i bought a laptop
 
@@ -278,7 +278,7 @@ The branch is a converted storefront a few blocks from the shop, with desks behi
 
 "Five days is the policy on a new business account. It's the same for everybody who walks in here and it isn't mine to move."
 
-She has the statements out on his desk, squared against the edge of it. "It's the policy on a new account with no history. This one has three months on it, steady deposits and zero returns. Two days on nine named payers. I'll write them down for you."
+The statements are out on his desk, squared against the edge of it. "It's the policy on a new account with no history. This one has three months on it, steady deposits and zero returns. Two days on nine named payers. I'll write them down for you."
 
 "I can't do two days on a balance this size. If something comes back on a Thursday it's my name on the exception and not the policy's."
 
@@ -288,11 +288,11 @@ She has the statements out on his desk, squared against the edge of it. "It's th
 
 It is more than she has ever had at once, and she sits with it a second before she answers.
 
-She squares the statements against the edge of his desk again. "I can hold it a few hundred dollars under that, across a month, every month, and I can show you the months. It hasn't been under that figure since August. What the difference costs me is that it sits in your branch instead of in my hand on the fourth."
+Again she squares the statements against the edge of his desk. "I can hold it a few hundred dollars under that, across a month, every month, and I can show you the months. It hasn't been under that figure since August. What the difference costs me is that it sits in your branch instead of in my hand on the fourth."
 
 "Three hundred under isn't the number. If the sheet says twenty and you hold nineteen and change, that report comes out every month with my name at the top of it."
 
-She writes the names down anyway, a name to a line, and turns the paper around so it faces him. "Three hundred under is what's in the room. Two days on those, five on everything else. If one of them comes back on you, put me to five across all of it and I'll take it."
+Anyway she writes the names down, a name to a line, and turns the paper around so it faces him. "Three hundred under is what's in the room. Two days on those, five on everything else. If one of them comes back on you, put me to five across all of it and I'll take it."
 
 The list holds him long enough that the woman at the next desk finishes a telephone call, and Nadia lets him finish.
 
@@ -308,7 +308,7 @@ The fee comes off for a year, and she is out of the branch straight after with t
 
 ________________
 
-Nadia is behind her parents' counter on Sundays now, and in the back room the rest of the week. A regular customer asks her, not unkindly, when she's going to go do something with herself. She rings up his sandpaper and hands him his change.
+Nadia is behind her parents' counter on Sundays now, and in the back room the rest of the week. A regular customer asks her, not unkindly, when she's going to go do something with herself, and she rings up his sandpaper and hands him his change.
 
 nadia: guy today asked me when im going to go do something with myself
 

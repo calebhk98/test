@@ -16,7 +16,7 @@ Afterward, Sam catches her at the bottom of the stairwell with his collar open a
 
 "Four pages, for the whole question?" His voice actually climbs on it, an event visiting Sam perhaps twice a year and never on purpose. "I wrote the fire from both angles because I could see it going either way. Then I wrote out why the second angle was wrong."
 
-"It's a contract question about who carries the risk while the goods are sitting in a shed waiting to be collected: there's an answer, and there's why, and once you've said both of those you're just saying them again in nicer sentences with more paper under them." She keeps walking with her bag up on both shoulders, so the conversation keeps her pace or gives itself up at the end of the corridor. "After that you're padding. The marker reads page after page of you agreeing with yourself for no extra credit at all, and that's a bad trade for both of you. Mine is exactly as long as the question turned out to be."
+"It's a contract question about who carries the risk while the goods are sitting in a shed waiting to be collected: there's an answer, and there's why, and once you've said both of those you're just saying them again in nicer sentences with more paper under them." She keeps walking with her bag up on both shoulders. "After that you're padding. The marker reads page after page of you agreeing with yourself for no extra credit at all, and that's a bad trade for both of you. Mine is exactly as long as the question turned out to be."
 
 Sam goes quiet the whole length of the corridor.
 
@@ -42,7 +42,7 @@ Bex passed, and comes the length of that hall to find her before dinner, saying 
 
 "A fiftieth. It's a fiftieth, Chloe, and it's the closest miss on that board, and I've read the whole board." Bex has both of those right, and she has them out to the corridor rather than to Chloe, at the volume she says everything at, over the heads of the people still coming away from the board. Then she is past her and on to the next of them.
 
-Chloe stays where she is until the hall has thinned out. She had the fraction most of the way finished and had got as far as about a, and she goes over that again on the stairs, whether she had it or whether she was still working it, because Bex had the whole of it and had it fast.
+Chloe stays where she is until the hall has thinned out. She had the fraction most of the way finished and had got as far as about a, and she goes over that again on the stairs, whether she had it or whether she was still working it, because Bex had all of it and had it fast.
 
 Later that week she takes her paper to Amberg, and he has the mark scheme out on the desk before she gets the door shut.
 
@@ -54,11 +54,11 @@ Later that week she takes her paper to Amberg, and he has the mark scheme out on
 
 "All of them follow from the answer once you've got the answer. Anyone who can read the second line can work out the rest for themselves in a moment, the way I did. Writing it out afterwards is just me proving I can hold a pen."
 
-"They follow if the person reading has your head and has already done the working you skipped. A marker with a stack of these in front of him has about ten seconds a page, but that is not enough time to rebuild your reasoning for you. He is also not allowed to give you a mark for something you did not write down."
+"They follow if the person reading has your head and has already done the working you skipped. A marker with a stack of these in front of him has about ten seconds a page, but that is not enough time to rebuild your reasoning for you, and he is also not allowed to give you a mark for something you did not write down."
 
 "Whoever marks this already knows all of it. It's contract law and not a mystery, and there is exactly one rule that could possibly apply to a shed sitting in a yard for two weeks. He knew the answer before he opened the paper."
 
-"I would like you to sit down while I say the rest of it, because you're going to want to argue before I've finished, and I'd rather you had it all first." Amberg waits until she does, then a moment longer, until she has stopped moving the chair. "You wrote that answer for a reader who already has your head, who already knows the rule and where it comes from and why a shed counts and what happens if it burns. There was a single reader like that in this building in April, but the man marking your paper was somebody else entirely." He slides the paper across the desk to her, face up and turned the right way round, so the blank rows are the first thing she sees.
+"I would like you to sit down while I say the rest, because you're going to want to argue before I've finished, and I'd rather you had it all first." Amberg waits until she does, then a moment longer, until she has stopped moving the chair. "You wrote that answer for a reader who already has your head, who already knows the rule and where it comes from and why a shed counts and what happens if it burns. There was a single reader like that in this building in April, but the man marking your paper was somebody else entirely." He slides the paper across the desk to her, face up and turned the right way round, so the blank rows are the first thing she sees.
 
 Chloe reads the rows twice, then looks up at him and back down at them.
 
@@ -84,7 +84,7 @@ In the second week of May she writes her first practice paper, at a table in the
 
 "It's the same sentence to you, because you already know why the risk sits with the buyer. The marker has to be given that reasoning rather than assumed to already have it, and right now the page hands him a single idea wearing two coats. He can only mark what is actually on the paper in front of him." He turns the page around and pushes it back at her with the pen laid across the empty half of it. "Write me the shed burning down. Not the rule about it, the actual event: goods inside, fire on the Tuesday, who's holding the loss when the smoke clears, and why that person and not somebody else."
 
-She writes the shed burning down fast, a paragraph, with a sentence in the middle that makes her jaw set while she is writing it, and Kavi gives her the marks. "There it is, all of it, right there on the page where somebody can actually see it."
+In a single fast paragraph she writes the shed burning down, with a sentence in the middle that makes her jaw set while she is writing it, and Kavi gives her the marks. "There it is, all of it, right there on the page where somebody can actually see it."
 
 Between May and September she writes a stack of those, Kavi marking some and Nadia marking some, while she marks the rest herself with her own answer folded under the page. In May she stops early on about half of them, and by August the rate has come down and settles there, declining to improve.
 
@@ -112,13 +112,13 @@ This time she passes by twenty-two, and she reads the number twice before she pu
 
 In November she sits in the library with something else open in front of her, thinking about April instead; it happens again in December, and once more in February, and she still shuts books harder than she means to, though she could not tell anybody why she is doing it.
 
-Marek asks for the practice papers in December. He is a year below and sits it in April, and he asks walking, in a corridor, having started the sentence some way before he got to her. She gives him the stack that evening, marked and unmarked, in order, with the mark schemes clipped behind.
+In December, a year below and sitting the bar in April, Marek asks for the practice papers, walking as he does, in a corridor, having started the sentence some way before he got to her. That evening she gives him the stack, marked and unmarked, in order, with the mark schemes clipped behind.
 
-He keeps them a fortnight. What comes back is the same stack in the same order, unread, nothing written on any page of it except the back of the top sheet, where he has set out the shed question again with the fire on the Sunday instead of the Tuesday and the goods already sold on by then, and under it the line asking who is holding the loss now.
+He keeps them a fortnight. What comes back is the same stack, in unchanged order, unread, nothing written on any page of it except the back of the top sheet, where he has set out the shed question again with the fire on the Sunday instead of the Tuesday and the goods already sold on by then, and under it the line asking who is holding the loss now.
 
 "That's better than theirs," he says, delighted with it, already going. "Do that instead."
 
-She works it that evening before she starts anything else, and it takes her the whole evening.
+That evening, before she starts anything else, she works it, and it takes her the whole evening.
 
 The forge is Thursdays, and has been for years, the work down there staying between her and Pruitt, his entire commentary across the years having come to a handful of sentences.
 
@@ -126,7 +126,7 @@ The forge is Thursdays, and has been for years, the work down there staying betw
 
 "Paper on Thursday, same as the last few."
 
-He is banking the fire down for the night, working with his back to her. "You've had a paper on Thursday for weeks. Tongs on the rack. The ones you made. Take them with you."
+Banking the fire down for the night, working with his back to her. "You've had a paper on Thursday for weeks. Tongs on the rack. The ones you made. Take them with you."
 
 The tongs go home to the hook on the back of her door, beside the bag she made in her second year.
 
@@ -134,7 +134,7 @@ ________________
 
 Home in June for the summer, she sleeps through most of the first week, then sleeps the clock round most nights and rides out to the reservoir most days, in July finding a road past the water good for a few extra miles and a hill she has to stand up on, with novels going through her hands in a fortnight, though she could not afterward tell anybody how any of them end.
 
-The rest is long afternoons on the back steps she and her father built when she was small, with the sun coming round the corner of the garage in the late afternoon and a wasp working the same board every day.
+The rest is long afternoons on the back steps she and her father built when she was small, with the sun coming round the corner of the garage in the late afternoon and a wasp working one board every day.
 
 Her mother watches that from the kitchen window a while before she comes out.
 
@@ -160,7 +160,7 @@ Her father laughs at that, head back, longer than the joke should carry him.
 
 "Is she, though, or is that just the face she puts on for you?"
 
-Chloe has both hands off the step now. "Ruth is the least miserable person I have ever met, and watching her be that cheerful about something this boring is genuinely infuriating. She's at the top of the year and she still comes down on a Saturday with a clipboard and sits behind me for a couple of hours anyway. The range bores her absolutely rigid the entire time. She has never once said so out loud and she has never once been late."
+Chloe has both hands off the step now. "Ruth is the least miserable person I have ever met, and watching her be that cheerful about something this boring is genuinely infuriating. She's at the top of the year and she still comes down on a Saturday with a clipboard and sits behind me for a couple of hours anyway. The range bores her absolutely rigid the entire time, and she has never once said so out loud, and she has never once been late."
 
 "Why does she keep doing it, then, if the range itself bores her that badly?"
 
@@ -180,4 +180,4 @@ Chloe puts her heels up on the lower step and takes her time with that.
 
 "So what are Priya and Nadia like at a table together now?" her father says, and the question stops her with the glass halfway up.
 
-She is still answering when the sun goes off the garage roof and her mother turns the porch lamp on from the kitchen switch.
+The sun goes off the garage roof, and her mother turns the porch lamp on from the kitchen switch, while she is still answering.

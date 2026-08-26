@@ -88,7 +88,7 @@ Word travels round the company by chow that afternoon, the way a number like tha
 
 "She was second in the year and I was first, but she still put me down twice." He pours, unhurried about it, and returns the pitcher to the middle of the table in precisely the position he removed it from. "Then in April I lost a small thing out of my own boot and cost a man half an evening getting it back, so you can have that as well."
 
-By the end of it several of them are laughing at him, while another has stopped believing a word of any of it.
+By the end of it several of them are laughing at him, but another has stopped believing a word of any of it.
 
 "Boarding school," says the third.
 
@@ -104,7 +104,7 @@ The rifle arrives in the third week and inhabits the end of his arm from that mo
 
 This is approximately where he starts to have a problem.
 
-He is doing well. Doing well at the running and the carrying, at the paper, the compass, the bar bolted over the door of the bay, at the obstacle lanes, the casualty drags, the stripping of a weapon in the dark, the long foot march nobody in the platoon enjoyed, and he is doing it against the rest of his platoon visibly trying as hard as he does, none of it reconcilable with a single thing he knows about himself. At school his was the number that never moved. Odile was level with him on the mat once and comfortably ahead of him by the spring. Ruth shot ninety-one and found the entire business tedious. Kavi beat him at everything with a board in it for years on end.
+He is doing well. Doing well at the running and the carrying, at the paper, the compass, the bar bolted over the door of the bay, at the obstacle lanes, the casualty drags, the stripping of a weapon in the dark, the long foot march nobody in the platoon enjoyed, and he is doing it against the rest of his platoon visibly trying as hard as he does, but none of it is reconcilable with a single thing he knows about himself. At school his was the number that never moved. Odile was level with him on the mat once and comfortably ahead of him by the spring. Ruth shot ninety-one and found the entire business tedious. Kavi beat him at everything with a board in it for years on end.
 
 So he goes looking for the fault in the measurement.
 
@@ -202,7 +202,7 @@ The first is a memorandum for record, four paragraphs long, three of them descri
 
 The second goes to the supporting counterintelligence office, under the standing requirement that puts unexplained specialised training in front of somebody whose job it is to look at it. The captain has sat through that briefing every year he has served and can list the reportable categories from memory.
 
-The third is a request to the battalion S-2 for the education block of the soldier's security questionnaire, to establish whether the school printed on the form and the school in the private's mouth are the same school.
+The third is a request to the battalion S-2 for the education block of the soldier's security questionnaire, to establish whether the school printed on the form matches the school in the private's mouth.
 
 The fourth is a behavioural health referral, signed last, and it travels upward alongside the other three.
 

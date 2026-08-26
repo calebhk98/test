@@ -10,7 +10,7 @@ She had expected the speed to feel like a punishment, but it feels instead like 
 
 Writing has always been the slow part, ever since a room with a small table, a page of symbols to be copied one after another, and a man who held the timer where she could watch it move. Here the timer belongs to everybody: fifteen minutes on the board, and beside it a question that today asks what the man in the story believes at the beginning and stops believing by the end. Where in the chapter that change happens, and how a reader is to know. She had read that chapter twice before the lesson, along with the ones after it, and all of them together had taken about as long as she now has to answer in.
 
-Chloe writes six sentences, reads them back twice, and leaves every word standing where she put it, which gets her to the where and the how-you-know with ninety seconds to spare. The same minutes produce a page and a half from Ruth, most of a page from Kavi, who is still going when the teacher calls time and finishes the clause he is inside before setting his pen down square to the paper. But Owen manages two sentences, at the end of the row, with a line drawn through one of them.
+Chloe writes six sentences, reads them back twice, and leaves every word standing where she put it, which gets her to the where and the how-you-know with ninety seconds to spare. In that time Ruth produces a page and a half, most of a page comes from Kavi, who is still going when the teacher calls time and finishes the clause he is inside before setting his pen down square to the paper. But Owen manages two sentences, at the end of the row, with a line drawn through one of them.
 
 "You can keep going if you're mid-sentence, but not if you're mid-paragraph," the teacher says.
 
@@ -62,13 +62,13 @@ ________________
 
 The second week is the week that gets her, and the subject is mathematics.
 
-They are dividing fractions by turning the second fraction upside down and multiplying. Mr. Baptiste works two on the board, both of which come out right, then a third, which also comes out right, by which point Chloe can do them and is running the fourth in her head before he reaches the bottom line. She does eight problems in the packet and gets them all right, while the reason the turning-over works stays shut to her, and the gap between those two facts is making her furious in a way she can feel along her jaw.
+They are dividing fractions by turning the second fraction upside down and multiplying. Mr. Baptiste works two on the board, both of which come out right, then a third, which also comes out right, by which point Chloe can do them and is running the fourth in her head before he reaches the bottom line. Chloe does eight problems in the packet and gets them all right, while the reason the turning-over works stays shut to her, and the gap between those two facts is making her furious in a way she can feel along her jaw.
 
 "Why do you flip it," Chloe says.
 
 "Good, that's the question. Okay, so what is dividing actually asking you, underneath the flipping part," Mr. Baptiste says, capping the marker and uncapping it before he turns back to the board.
 
-He draws a rectangle, shades half of it, then cuts the shaded half into pieces, talking the whole way through about the question underneath the question, and Chloe follows him as far as the shading, but loses track of what the pieces are pieces of, and is left looking at a rectangle with lines across it.
+A rectangle goes up, half of it shaded, then the shaded half cut into pieces while he talks the whole way through about the question underneath the question, and Chloe follows him as far as the shading, but loses track of what the pieces are pieces of, and is left looking at a rectangle with lines across it.
 
 Sam gets it, announcing the fact with one loud grunt; Kavi says he already knew it, out of a book, and is told that this is fine but he should listen anyway; Ruth, well down the packet, is on to the next question.
 
@@ -76,13 +76,13 @@ Sam gets it, announcing the fact with one loud grunt; Kavi says he already knew 
 
 "Which of them do you flip. The first or the second," Owen says, from the end of the row.
 
-"The second. Always the second," Mr. Baptiste says. He puts the marker down on the ledge. "Now tell me why. Why not the first."
+"The second. Always the second," Mr. Baptiste says, and puts the marker down on the ledge. "Now tell me why. Why not the first."
 
 Owen looks at the board, then down at his sheet, then at the board again. "I've lost the thread of it."
 
 "That's fine, and we do the whole thing again tomorrow."
 
-He goes back to his sheet, where he stays, quiet, for the rest of the lesson.
+Owen goes back to his sheet, where he stays, quiet, for the rest of the lesson.
 
 "Does it work with negative numbers too, or is that a different rule again," somebody asks from near the back.
 
@@ -102,7 +102,7 @@ He goes back to his sheet, where he stays, quiet, for the rest of the lesson.
 
 Around them the rest of the class is already standing, chairs scraping, Sam's bag over his shoulder before Mr. Baptiste has finished the sentence, while Chloe sits in the middle of it and watches a conversation go on over her head about a question she asked first. Her ears stay hot for an hour afterward, through the break and through most of the lesson after it.
 
-The packets here belong to whoever works in them: they live in your bag, they go where you go, and you fill them in yourself in whatever gap opens between one thing and the next. That night Chloe gets hers out and sits on the floor with her back against the bed. The first problem is a half divided by a quarter, so she draws the rectangle the way he drew it, shades in the half, then tries to put a quarter inside the shaded part, where she gets stuck on whether the quarter is a quarter of the rectangle or a quarter of the half. She draws it a second time and gets no further, so she draws it a third time with her own numbers instead of his, because his numbers have been sitting in her head since the lesson and taking her nowhere: three quarters divided by an eighth. Shading three quarters of a rectangle, she rules the eighths straight down across it, top to bottom, all eight, and counts how many land inside the shaded part.
+The packets here belong to whoever works in them: they live in your bag, they go where you go, and you fill them in yourself in whatever gap opens between one thing and the next. That night Chloe gets hers out and sits on the floor with her back against the bed. The first problem is a half divided by a quarter, so she draws the rectangle the way he drew it, shades in the half, then tries to put a quarter inside the shaded part, where she gets stuck on whether the quarter is a quarter of the rectangle or a quarter of the half. A second try gets her no further, so Chloe draws it a third time with her own numbers instead of his, because his numbers have been sitting in her head since the lesson and taking her nowhere: three quarters divided by an eighth. Shading three quarters of a rectangle, she rules the eighths straight down across it, top to bottom, all eight, and counts how many land inside the shaded part.
 
 Six.
 
@@ -110,9 +110,7 @@ Priya's light goes off.
 
 Chloe sits in the dark with the paper on her knees and the pencil in her hand. The question turns over into something else: dividing by an eighth is asking how many eighths fit inside the thing you started with, and that is all it has ever asked. Three quarters is six of them, and six is also the answer you get by multiplying three quarters by eight, which means that multiplying by eight is the only thing turning the eighth upside down was ever doing.
 
-"Oh," she says, out loud, in the dark, late at night.
-
-She does the next few problems in the packet, then goes back through the ones she had already got right, one at a time, sorting the ones that came out right for the reason from the ones that came out right off the trick.
+"Oh," she says, out loud, in the dark, late at night, then does the next few problems in the packet, going back through the ones she had already got right, one at a time, sorting the ones that came out right for the reason from the ones that came out right off the trick.
 
 ________________
 
@@ -156,7 +154,7 @@ Chloe waits, giving him a beat to add to it, and by the end of the beat Sam has 
 
 "At my school you do the same paper for a month."
 
-"Yeah, mine too, same paper till everybody's got it," Sam says, and goes back to his food.
+"Yeah, mine too, till everybody's got it," Sam says, and goes back to his food.
 
 Ruth is at the end of the table with her chin on her hand, pushing one piece of food in slow circles around her plate.
 

@@ -10,7 +10,7 @@ Her mother has kept the room the way it was, down to the sock on the radiator, a
 
 On the Saturday the bike place has a rack of them out on the pavement beside the tire shop, and Chloe takes the tallest one on it.
 
-She talks the entire summer, coming downstairs already talking most mornings about whatever she was thinking upstairs, with opinions about the news off the paper on the kitchen table, interrupting constantly, apologizing, then doing it again inside a minute. There is singing in the shower now, badly and at volume. She makes jokes at dinner, some of them bad, and on the nights her father laughs she keeps going.
+The entire summer she talks, coming downstairs already talking most mornings about whatever she was thinking upstairs, with opinions about the news off the paper on the kitchen table, interrupting constantly, apologizing, then doing it again inside a minute. There is singing in the shower now, badly and at volume, and she makes jokes at dinner, some of them bad, and on the nights her father laughs she keeps going.
 
 On the fourth of July she starts an argument with her father about whether a hot dog is a sandwich.
 
@@ -32,7 +32,7 @@ Downstairs that night, after she has gone up, her father folds the paper and lea
 
 "You let her have it, like you let her have everything once she gets that look on her face. You have never held a line with her in your life."
 
-He is still smiling about it. "I've been arguing that one since college, but she got me standing at a grill. Nobody's ever put the hinge to me, not in twenty years of having that argument."
+Her father is still smiling about it. "I've been arguing that one since college, but she got me standing at a grill. Nobody's ever put the hinge to me, not in twenty years of having that argument."
 
 Upstairs the shower is running, and has been for twenty minutes, with the singing over the top of it.
 
@@ -84,7 +84,7 @@ Her mother turns the tap on, then off again, the sink empty under it. "Curfew, t
 
 "Did you win, or is this one of the times you're not sure?"
 
-She has been looking at the window over the sink since she came in from the hall. "Obviously I won, I'm the one who picks the number. Dave, she has never fought me, not once, not about anything, not in her whole life."
+Her mother has been looking at the window over the sink since she came in from the hall. "Obviously I won, I'm the one who picks the number. Dave, she has never fought me, not once, not about anything, not in her whole life."
 
 Her grandmother comes on a Sunday. In the front room Chloe is explaining the bridge from camp with both hands and the coffee table before going for water, while her grandfather sits back, quiet, and the kitchen door stands open.
 
@@ -96,7 +96,7 @@ Her grandmother says, "She's put on weight since I saw her, and I mean that as a
 
 "I know," her mother says, keeping her voice down to match, because the door is open and Chloe is close enough to hear every word.
 
-Chloe stands against the wall by the door with the glass in both hands and tugs her shirt loose from her shorts once, then lets it go, goes back through, and finishes about the bridge, which came second in the room. But at dinner she eats half of what is on her plate and lays the fork down across the rest of it.
+Chloe stands against the wall by the door with the glass in both hands and tugs her shirt loose from her shorts once, then lets it go, goes back through, and finishes about the bridge, which came second in the room. But at dinner she eats half of what is on her plate and lays the fork down across what's left.
 
 "I've had enough."
 
@@ -150,7 +150,7 @@ The afternoon block is a different thing on each day of the week, Nerf on Monday
 
 In wood shop you make a tool and then use that tool to make the next one, while the man who runs it will tell you what is wrong with a tool and then walk away while you work out what to do about it. Chloe makes a mallet with a handle that comes out slightly oval, but she uses it for weeks before the oval catches her eye, after which it is there every time she picks it up, but is still using it in June.
 
-Team sports is where the teams are assigned, and she gets a team with two people on it she has already decided against. She plays out September and October on it.
+Team sports is where the teams are assigned, and she gets a team with two people on it she has already decided against, and plays out September and October on it.
 
 Drawing is Thursdays, and in the second term, while they spend the term on hands, Chloe draws her own left hand forty times, in pencil, from a fixed angle, on cheap paper. The fortieth looks like a hand, down to the knuckle of the little finger sitting lower than it ought to, and Ruth picks it up off the table on her way past.
 
@@ -212,4 +212,4 @@ Kavi says, "It's been the rule for ninety seconds, and it came in at exactly the
 
 Ruth gets six in a row above the bracket and is insufferable about it until dinner. Sam eats two of the apples and takes the bag back to his room, where it stays under the bed until the middle of May, at which point people on the corridor make it his problem. The bracket rule survives into the summer and gets applied to a stairwell, a laundry chute, and one of the goals on the field.
 
-In June Chloe pulls out the notebook with the four subjects she was behind in, back in April. In three of them she is reading ahead, and the dates in the margins say she has been since about Christmas. She reads the line back twice before adding a new line at the bottom with the date, then puts the notebook in the drawer and goes down to dinner two steps at a time.
+In June Chloe pulls out the notebook with the four subjects she was behind in, back in April. In three of them she is reading ahead, and the dates in the margins say she has been since about Christmas, and she reads the line back twice before adding a new line at the bottom with the date, then puts the notebook in the drawer and goes down to dinner two steps at a time.
