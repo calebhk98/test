@@ -7,8 +7,28 @@ evidence.
 
 **Full name:** Margaret Kessler, born Halloran, called Meg.
 **Age:** adult throughout, roughly forty to sixty across the span she appears in
-**MBTI:** ESFJ (a writing aid, not a claim) | **IQ:** bright, and applied almost
+**MBTI:** ENFJ (a writing aid, not a claim) | **IQ:** 118, applied almost
 entirely to systems and to people rather than to abstractions
+
+## Type and number
+
+**Primary: ENFJ, revised from ESFJ.** The harmony reading was looking at a warm woman who
+feeds people and keeps a family together, and all of that is true and none of it is the
+engine. What actually runs her is a fixed picture of what a particular person needs and a
+willingness to work an institution for years to get it. She does not smooth a room; she
+organises it toward an outcome, she is comfortable being the difficult one on somebody
+else's behalf, and she can hold a campaign in her head across nine months of no. That is
+the people-mover, not the harmony-keeper.
+
+**Mistaken for:** ESFJ by anyone who meets her socially, and ESTJ by any administrator on
+the far end of her third phone call.
+
+**IQ 118.** Bright, ordinary, and pointed like a tool. The shape of it: verbal reasoning
+solidly above average and a genuinely unusual facility for reconciliation — she can hold
+two accounts of the same thing side by side and find the place they fail to meet, and she
+does this faster than people with twenty points on her. Where she places lowest: anything
+abstract with no person attached. Set her a puzzle for its own sake and she will put it
+down inside a minute, entirely unbothered, and go and do something.
 
 ## Who she is in a sentence
 
@@ -154,6 +174,35 @@ would catch her doing it three times before it registered as a habit.
 
 Keeps a labelled physical folder for every document that has ever mattered.
 
+## Frustration and anger
+
+**What frustrates her:** an answer that is technically responsive and does not touch what
+she asked. The reassurance, the policy sentence, the promise to look into it. She can
+recognise one inside four words.
+
+**The tell, before she says anything:** she repeats the other person's own phrase back to
+them, verbatim, with nothing added. Everyone in her household knows what that means. The
+person on the other end of the phone never does.
+
+**What she does with it:** goes up. Not in volume — up the structure. She finds out who is
+above the person she is talking to, gets a name, and calls that person the same day, and
+she is unfailingly courteous to everybody on the way, and she does not stop.
+
+**What actually makes her angry:** an adult being kind to her child instead of useful.
+Somebody who has decided that the correct response to a problem is warmth. She can forgive
+incompetence and she cannot forgive that substitution, because she can see exactly what it
+is buying the person offering it.
+
+**Angry, she gets slower and more precise and does not leave.** She sits down. She uses
+full names and dates. She asks the same question in the same words for the third time and
+waits through the silence after it, and she is completely prepared to wait through a
+fourth.
+
+**How it ends:** with a name and a date, or it does not end. Given a name and a date she is
+finished with it instantly and is warm to the person again within the same conversation.
+Given neither, she is still working it eight months later, and the person who fobbed her
+off will have forgotten the exchange entirely and she will not have.
+
 ## Blind spots
 
 She reads the strange thing through the nearest ordinary frame. Handed something
@@ -242,6 +291,31 @@ herself. Coffee milky and reheated at least once every morning because she keeps
 putting it down mid-task. Handwriting small, fast, entirely legible, from years of
 filling in other people's forms. Coffee going before anything else happens in the
 house, including good morning.
+
+## Life outside the work
+
+**She swims,** early, three mornings a week, at a municipal pool with the same six women,
+and it is the only hour of her week that is hers. She has done it for twenty years and
+would rearrange almost anything else around it.
+
+**Genealogy.** She has traced her own side back four generations and keeps it in a ring
+binder with photocopies, and she will show anybody, and it is the one subject on which she
+becomes a bore and knows it.
+
+**She reads mysteries** at a rate of two a week, keeps none of them, and refuses to be
+told anything about the ending of anything.
+
+**Sentimental about:** her mother's kitchen and the specific way it smells. She would not
+use that word, and if she caught herself being sentimental she would immediately do the
+washing up.
+
+**At eight** she was the child who organised the other children and got told she was
+bossy, by adults who then relied on it.
+
+**At sixty** she is on three committees, knows everybody's business, is the person a
+younger woman on the street calls about a school, and has become slightly and
+uncharacteristically frightened of being a nuisance to her own daughter, which she manages
+by asking fewer questions than she wants to and never fewer than are needed.
 
 ## Would do
 
