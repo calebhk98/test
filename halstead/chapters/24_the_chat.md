@@ -8,7 +8,7 @@ This is the first September that finds all of them somewhere else. Eli, three st
 
 Eli types with his phone propped against a monitor, eyes staying on whatever's actually on the screen. Kavi answers from the desk he does everything else from, a hand still turning over whatever object was already sitting on it. Ruth writes standing up, phone in her hand and a textbook open in the other, and finishes a whole exchange while keeping pace with whatever she was doing before it started. Nadia texts one-handed with the other hand still on a keyboard, keeping track of both at once. Theo answers standing at a window with the blinds already down, phone held low and close, the way he'd hold a document above his clearance. Sam thumbs the keyboard with the economy he uses on everything else, three words and stop, because someone behind him is already waiting for the phone. Priya replies from wherever she's charging it, propped against a boot, a bag, once against the neck of a horse that stood still for it.
 
-Some of them answer inside a minute no matter the hour, Eli most nights, and Kavi from the building he's always slept in. Others answer in bursts, messages at once after a long gap, a reply to something asked at seven landing after midnight because a shift only just ended. A message sent to the whole group at three in the morning gets an answer from somebody within five minutes. It has for five years.
+Some of them answer inside a minute no matter the hour, Eli most nights, and Kavi from the building he's always slept in. Others answer in bursts, messages at once after a long gap, a reply to something asked at seven landing after midnight because a shift only just ended. A message sent to the whole group at three in the morning gets an answer from somebody within five minutes. It has for years.
 
 A message can sit read for hours, and it means only a shift running long, a supervisor still talking, a horse well past cell service. Whatever he's in the middle of at the agency keeps running through a joke about somebody's boss, so Theo reads everything within minutes of it landing and sometimes waits a full day to answer it. Nadia reads fast and answers fast, except on a Sunday evening, when she has the shop's books open in front of her and the phone goes face down on the counter. Sam goes dark for stretches at a time, the read receipt stuck wherever it last landed, and then a run of replies arrives inside a minute once he's got the phone back. A message can open with guys, or ok, or silence before the next fact, arriving before whoever's reading has gotten past the first word.
 
@@ -66,7 +66,7 @@ eli: i got a meeting with a lawyer
 
 eli: which honestly has been the most interesting thing thats happened to me since i started
 
-The build pipeline flaw is the kind of gap a company checks for insiders and outages, not for somebody like Eli looking at it sideways. Their own encryption has gone five years without anyone who had real reason to try it. Eli wrote part of it. The rest has sat as untested by him as by everyone else, five years running.
+The build pipeline flaw is the kind of gap a company checks for insiders and outages, not for somebody like Eli looking at it sideways. Their own encryption has gone five years without anyone who had real reason to try it. Eli wrote part of it. The rest has sat as untested by him as by everyone else, year after year.
 
 ________________
 
@@ -276,7 +276,7 @@ ruth: since always apparently. i asked kavi to buy one for me and they asked who
 
 ________________
 
-The branch is a converted storefront a few blocks from the shop, with desks behind a rope and a manager who keeps the retail policies laminated in the drawer of the nearest branch. The bank holds an incoming payment for five business days, and when Nadia asks in September to have that taken off her account he reads her the policy off the card without turning it around so she can see it.
+The branch is a converted storefront a few blocks from the shop, with desks behind a rope and a manager who keeps the retail policies laminated in the drawer of the nearest branch. The bank holds incoming payments before it releases them, and when Nadia asks in September to have that taken off her account he reads her the policy off the card without turning it around so she can see it.
 
 "Five days is the policy on a new business account."
 
@@ -500,4 +500,4 @@ Chloe leaves it. There is a version of the afternoon where she keeps pulling at 
 
 The lock they built at thirteen to get past a teacher is still the only thing standing between this chat and anyone outside it, one lock, five years running, untouched and unreplaced. Whatever internal means, it's a wall each of them keeps running into.
 
-The chat moves on within ten minutes. Chloe leaves the tab open on her desk for the rest of the evening, the cursor sitting in the empty box where a reply would go.
+The chat moves on within minutes. Chloe leaves the tab open on her desk for the rest of the evening, the cursor sitting in the empty box where a reply would go.

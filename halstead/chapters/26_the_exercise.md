@@ -64,11 +64,11 @@ Ives comes back with the notebook open. "Every harness in that pipe was in a ste
 
 Sam says the contact rule, close to word for word, because he read the laminated card twice at the table while the man ahead of him was signing for his own equipment. Ives says right, and writes for a considerable while, and they put Sam back on his bearing not long after.
 
-The fifteen seconds before the pipe are what he carries away with him. He had thirty feet of open ground to read it from and he went in regardless, and that is the part he keeps returning to on the walk, worrying it like a bad weld. Whatever happened once he was inside he can account for, apart from the portion Ives wrote down. The fifteen seconds where he decided the culvert was worth going into blind.
+The fifteen seconds before the pipe are what he carries away with him. He had thirty feet of open ground to read it from and he went in regardless, and that is the part he keeps returning to on the walk, worrying it like a bad weld. Whatever happened once he was inside he can account for, apart from the portion Ives wrote down. The seconds where he decided the culvert was worth going into blind.
 
 ________________
 
-The third night is simply walking, and the walking is its own particular variety of long. Fourteen miles of broken ground go by between checkpoints, most of it underneath a cloud layer thick enough that the red-lens light barely reaches his own boots, and the entire stretch of it passes quiet.
+The third night is simply walking, and the walking is its own particular variety of long. Long stretches of broken ground go by between checkpoints, most of it underneath a cloud layer thick enough that the red-lens light barely reaches his own boots, and the entire stretch of it passes quiet.
 
 The open ground he begins taking the way the culvert taught him to take it, stopping at the edge of every tree line to listen before he crosses it, going wide around anything that reads as cover for somebody else instead of walking straight through the middle of it. Twice he stops dead for a full minute at a sound that turns out harmless once he has traced it back, a branch settling, an animal moving off through brush somewhere to his left, and he stands there, weight balanced, breathing slowly, until he is certain enough to move again.
 
@@ -88,7 +88,7 @@ Sam comes up out of the cut and stands there in the open with his own harness go
 
 "Since nine."
 
-Sam looks back down the last thirty feet of the cut, ground he spent ten minutes reading his way across while the man lay on it the entire time, and lets the subject go.
+Sam looks back down the last thirty feet of the cut, ground he spent that long reading his way across while the man lay on it the entire time, and lets the subject go.
 
 A controller comes down off the road, keys the harness quiet, keys it live again, and instructs him to finish the leg, so Sam finishes the leg, because that is still the job.
 
@@ -114,7 +114,7 @@ Sam's turn comes third. Instead of calling him up to the front, which is what ha
 
 The next part he reads the way a form gets read.
 
-"Staff Sergeant Ives has it that five harnesses were in a steady tone inside a concrete pipe all at once, that a blank was discharged at two metres, which is on the opposing element and has been dealt with over there, and that you then made physical contact with two soldiers and departed. One of them spent yesterday on light duty with his face in a state." Now he looks up. "What is the contact rule on this exercise, Private Marsh."
+"Staff Sergeant Ives has it that the harnesses were in a steady tone inside a concrete pipe all at once, that a blank was discharged at two metres, which is on the opposing element and has been dealt with over there, and that you then made physical contact with two soldiers and departed. One of them spent yesterday on light duty with his face in a state." Now he looks up. "What is the contact rule on this exercise, Private Marsh."
 
 "There is no hand-to-hand, sir. At any range."
 

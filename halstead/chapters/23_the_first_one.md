@@ -60,7 +60,7 @@ Everything else at the school keeps running: the labs are still going, the bell 
 
 Her own box goes down the ground-floor hallway with a forge mallet with a handle still the wrong shape wedged in next to a stack of notebooks. The brass plates have lined this wall since her first day here, and she reads them all again on her way past, as she has every single day since she was seven, counting them off on reflex: the plates, years of woodshop before the forge took over completely, a hook still on the back of her door upstairs that she's already decided to leave hanging there for whoever gets the room next.
 
-At the propped courtyard door she reaches up for the top of the frame, which she used to have to jump for at seven, and finds her palm against the wood with room to spare, her whole arm straight. The frame is exactly where it's always been; she's grown well past having to reach for it. Her hand stays there a second longer than the box in her other arm makes comfortable, then lets go, and she keeps walking, because Sam is somewhere out on the grass already asking where she's got to.
+At the propped courtyard door she reaches up for the top of the frame, which she used to have to jump for as a child, and finds her palm against the wood with room to spare, her whole arm straight. The frame is exactly where it's always been; she's grown well past having to reach for it. Her hand stays there a second longer than the box in her other arm makes comfortable, then lets go, and she keeps walking, because Sam is somewhere out on the grass already asking where she's got to.
 
 ________________
 

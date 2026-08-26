@@ -28,7 +28,7 @@ The coffee cup goes a quarter turn on the table under her hand, and then another
 
 "My brother's in, the letter came Thursday, and my mother read me the whole thing over the phone twice before I got a word in edgewise."
 
-Sam puts his fork down before he asks it. "How old is he now, seven?"
+Sam puts his fork down before he asks it. "How old is he now?"
 
 "Seven in September, so he's got a whole year of hearing about it before he even gets here."
 
@@ -58,7 +58,7 @@ Sam has the specials card up off the table, holding it at arm's length like a do
 
 "Hither, thither, and yon," Sam says. "That's three sentences, and you only asked for one, so I win twice over."
 
-"You just said hither yourself, not even five seconds ago, which is the whole argument, right there, coming out of your own mouth."
+"You just said hither yourself, not even a moment ago, which is the whole argument, right there, coming out of your own mouth."
 
 "That's different, because I said it on purpose to prove a point." They argue about it until the waitress comes back with the check, and Nadia has exact change out on the table before it lands, split to the cent, because she has been dividing the bill in her head since the second round of coffee.
 
@@ -134,7 +134,7 @@ Sam takes it in silence for a second.
 
 "The guns are supposed to make it harder, since that's the whole point of carrying it in the first place," he says.
 
-"A gun's a prop unless you actually use it, and all of them just stood there holding theirs." Ruth has her bag back on her shoulder and the strap settled across it. "They let you walk all the way in. They gave you the wrist. They stood in a clump and waited their turn." She shrugs. "They fought like ten-year-olds, the whole seven of them, and you could have done that at ten."
+"A gun's a prop unless you actually use it, and all of them just stood there holding theirs." Ruth has her bag back on her shoulder and the strap settled across it. "They let you walk all the way in. They gave you the wrist. They stood in a clump and waited their turn." She shrugs. "They fought like ten-year-olds, the whole lot of them, and you could have done that at that age."
 
 "Fine, say that was too easy." Sam puts his hands up and lets them drop again. "So who do I actually fight, then?"
 
@@ -162,6 +162,6 @@ Chloe sets her shoes down by the door, laces still knotted from being kicked off
 
 ---
 
-Ruth shuts the box off in the corridor and puts it in the chat before she sleeps, a few lines and a photograph of Sam standing in the lot with his arms out, and by breakfast there are sixty replies and an argument about whether it counts, whether seven of them with guns is a real test or just seven people happening to be in the way.
+Ruth shuts the box off in the corridor and puts it in the chat before she sleeps, a few lines and a photograph of Sam standing in the lot with his arms out, and by breakfast there are sixty replies and an argument about whether it counts, whether a gang of them with guns is a real test or just seven people happening to be in the way.
 
 Kavi sends a laughing face, his entire contribution, read out at breakfast by Ruth while Sam reaches past her for the syrup and starts on his tray, like the question landed for somebody else at the table, and he lets it sit every time it comes up, and keeps letting it sit long enough for people to start bringing it up purely to watch him do it again.

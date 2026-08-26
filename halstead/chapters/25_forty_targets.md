@@ -8,7 +8,7 @@ The bus from the reception battalion reaches the company area well after dark in
 
 That night he falls asleep to fifty-nine other privates discovering their racks all at once, then wakes before the lights, which is worth remarkably little to him, because Sam has been slow for the first ten minutes of every morning of his life, and the bay in the dark is a footrace.
 
-The schedule he has had since he was seven, and lost over the summer, reappears on the second day, laminated and screwed to the wall beside the doorway.
+The schedule he has had since childhood, and lost over the summer, reappears on the second day, laminated and screwed to the wall beside the doorway.
 
 Drill Sergeant Ruiz possesses a voice built for open ground and demonstrates no visible interest in owning the other kind. That second morning he walks the row of racks with a boot in his hand, checking the fold on every blanket by eye from across the aisle, stopping finally at Sam's.
 
@@ -18,7 +18,7 @@ Drill Sergeant Ruiz possesses a voice built for open ground and demonstrates no 
 
 Ruiz takes the whole arrangement onto the floor with a single pull, straightens up, then delivers the two syllables he delivers to everybody. "Again."
 
-Sam does it again, whereupon it is wrong again in a different place, and it continues to be wrong for ten days running, by which time the rest of the bay has quietly stopped finding it entertaining. A private named Okoro, brothers in the Guard, arrived already familiar with most of it, eventually makes his own rack at half speed alongside so Sam can copy the sequence of the folds. After that it takes Sam about ninety seconds, which puts him in the back half of the platoon, roughly where he remains for the duration.
+Sam does it again, whereupon it is wrong again in a different place, and it continues to be wrong day after day, by which time the rest of the bay has quietly stopped finding it entertaining. A private named Okoro, brothers in the Guard, arrived already familiar with most of it, eventually makes his own rack at half speed alongside so Sam can copy the sequence of the folds. After that it takes Sam about ninety seconds, which puts him in the back half of the platoon, roughly where he remains for the duration.
 
 "I think Drill Sergeant Ruiz likes me," Sam tells him at the sinks.
 
@@ -28,7 +28,7 @@ Sam does it again, whereupon it is wrong again in a different place, and it cont
 
 Okoro considers this proposition for a second, evidently decides against it, and returns to his jaw.
 
-By the end of the first week Sam has asked five separate people how long the entire programme runs, all five have answered twenty-two weeks, and a couple of them have been stopped cold by the question he asks afterward.
+By the end of the first week Sam has asked five separate people how long the entire programme runs, all of them have answered twenty-two weeks, and a couple of them have been stopped cold by the question he asks afterward.
 
 "Twenty-two weeks, and then what."
 
@@ -154,11 +154,11 @@ The captain looks at the card in the drill sergeant's hand, where the score is w
 
 "Forty percent of what, Private."
 
-"Of the intercepts, sir." Sam has spent ten weeks waiting for somebody to ask him a question with a real answer underneath it, and he takes the opening at full speed. "There's a machine at the end of the lane that puts a live round across your front, left to right, sixty metres of open ground, on a cycle you can set a watch by. You stand behind glass, taking your count off the mechanism rather than off the round. The target is the round. You're shooting the bullet."
+"Of the intercepts, sir." Sam has spent weeks waiting for somebody to ask him a question with a real answer underneath it, and he takes the opening at full speed. "There's a machine at the end of the lane that puts a live round across your front, left to right, sixty metres of open ground, on a cycle you can set a watch by. You stand behind glass, taking your count off the mechanism rather than off the round. The target is the round. You're shooting the bullet."
 
 The drill sergeant turns the card face down against his leg.
 
-"So forty percent means four times in ten I get a round onto a round in flight, sir, which is poor. A girl in my year was on ninety-one at fifteen and she was bored the entire time she was doing it."
+"So forty percent means four times in ten I get a round onto a round in flight, sir, which is poor. A girl in my year was on ninety-one and she was bored the entire time she was doing it."
 
 "Private." The captain's voice has come down rather than gone up. "I have been in sixteen years. There is no school anywhere in this country running live-fire intercept work on children, there is barely a unit in this Army running it on adults, and the men who do run it have completed a selection course you could not have spelled a year ago. So I am going to put the question to you one more time, and I would like you to take your time over the answer. Where did you go to school?"
 

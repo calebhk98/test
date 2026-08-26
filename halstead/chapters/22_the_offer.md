@@ -2,13 +2,13 @@
 
 *April 2023*
 
-Mr. Amberg runs the exit interviews himself, fifteen minutes each, a dozen students a day for eight days starting the first Monday of April, and a roster goes up outside the staff office every morning with that day's names in order, a runner coming down from admin to call the next name in when the clock on his desk says it is time. Most of them run the full fifteen minutes, by the staff's own count, even the ones a minute would have covered, and by the sixth day the list needs a second sheet taped below the first, names running off the bottom of the original in his own small, fast handwriting. His own contracts class still meets through the week, the interviews slotted into whatever's left of the day around it, and the second-week test goes out on the Friday at the hour it was always going to go out.
+Mr. Amberg runs the exit interviews himself, fifteen minutes each, a dozen students a day for eight days starting the first Monday of April, and a roster goes up outside the staff office every morning with that day's names in order, a runner coming down from admin to call the next name in when the clock on his desk says it is time. Most of them run the full time, by the staff's own count, even the ones a minute would have covered, and by the sixth day the list needs a second sheet taped below the first, names running off the bottom of the original in his own small, fast handwriting. His own contracts class still meets through the week, the interviews slotted into whatever's left of the day around it, and the second-week test goes out on the Friday at the hour it was always going to go out.
 
-The rest of April carries on exactly as scheduled around it: the twelves still have History at ten every morning, the range still runs its Saturday relays, the forge stays open Thursdays and both Saturday sessions, and lunch still runs from noon to half past, as in any other week in the term.
+The rest of April carries on exactly as scheduled around it: the twelves still have History first thing every morning, the range still runs its Saturday relays, the forge stays open Thursdays and both Saturday sessions, and lunch still runs from noon to half past, as in any other week in the term.
 
 What changes is dinner, because by the end of the first week the interviews have become a fixture of the conversation the way an exam result would be, except the whole table is comparing decisions instead of scores, a stranger thing to sit through with a fork in hand. A boy from the materials wing tells the whole table at dinner about turning it down outright, about his mother and the decade of silence if he skipped actual college for a paycheck, in the specific tone of somebody rehearsing a line he means to use again at home. People laugh, and he goes back to his tray and lets the subject close there for the night, and the table lets it go without asking him the number. A younger girl comes back from her own slot grinning, drops into the chair across from a half-eaten plate, and says the whole thing twice, the number, the car, all of it, as though saying it again will make it hold still long enough to be believed, and the boys next to her let her have it, volume included, so the whole end of the table stays on it, openly, for the rest of the meal.
 
-Chloe's own slot falls on the Wednesday of the second week, third appointment after lunch, in a corridor where chairs have been lined against the wall outside his office for the duration. The corridor smells like the coffee cart set up near the stairwell every April, and the runner's shoes squeak on the steps of tile outside the door, morning after morning. With ten minutes to spare she gets there and finds most of the seats already taken: a boy re-reading a page of a textbook, the words plainly sliding past him each time, and a girl sitting perfectly still with her hands in her lap, staring at the closed door like she's already rehearsed what's behind it, both of them waiting on slots later than hers, and both of them in the chairs a good half hour before their names come up.
+Chloe's own slot falls on the Wednesday of the second week, third appointment after lunch, in a corridor where chairs have been lined against the wall outside his office for the duration. The corridor smells like the coffee cart set up near the stairwell every April, and the runner's shoes squeak on the steps of tile outside the door, morning after morning. Early, she gets there and finds most of the seats already taken: a boy re-reading a page of a textbook, the words plainly sliding past him each time, and a girl sitting perfectly still with her hands in her lap, staring at the closed door like she's already rehearsed what's behind it, both of them waiting on slots later than hers, and both of them in the chairs a good half hour before their names come up.
 
 A seat empties while she watches, when a boy she half-recognizes from the year above goes in on the dot, a laptop bag still over his shoulder like he's walking into a meeting rather than an office, and is back out before she's finished reading the noticeboard behind the chairs.
 
@@ -42,7 +42,7 @@ Finding it takes her a moment, and she turns the folder's edge slightly with a f
 
 Mr. Amberg writes it down, then squares the folder against the edge of the desk and opens it once more, the slow read he gives a mark scheme before he hands it back, running a finger down the last page against whatever he's just written in the margin, and he closes it exactly when the clock reads zero, with the pen back in the cup at the corner of the desk.
 
-At fifteen minutes exactly he stands, and she stands too, and the next name is already waiting in the doorway with a folder of its own out on the chair beside him.
+At the exact minute he stands, and she stands too, and the next name is already waiting in the doorway with a folder of its own out on the chair beside him.
 
 ________________
 
@@ -54,13 +54,13 @@ The eighty saying no go back to their own last weeks of school, final transcript
 
 ________________
 
-The roster has Nadia just before lunch on the Thursday of the first week, between a boy from the materials wing and a girl who has already accepted, back to ask a question about the housing. Nadia spends the ten minutes beforehand in the corridor finishing an application on her phone, the ninth of that particular week. She is in the chair before the runner has finished with the door.
+The roster has Nadia just before lunch on the Thursday of the first week, between a boy from the materials wing and a girl who has already accepted, back to ask a question about the housing. Nadia spends the wait in the corridor finishing an application on her phone, the ninth of that particular week. She is in the chair before the runner has finished with the door.
 
 "Eleven years," Mr. Amberg says. "Anything for the file."
 
 "You've got my marks and you've got the board in the hallway."
 
-He gives her the same list in the order he gives everybody: research, full time; a hundred and thirty five thousand dollars a year to start; housing, food, a car, medical; the degree on top of it if she wants it, paid for, the post held open until she finishes.
+He gives her the same list in the order he gives everybody: research, full time; the salary to start; housing, food, a car, medical; the degree on top of it if she wants it, paid for, the post held open until she finishes.
 
 "No."
 
@@ -70,7 +70,7 @@ He gives her the same list in the order he gives everybody: research, full time;
 
 Amberg writes for a while. "The eighty saying no are going to college in September. You haven't sent an application anywhere."
 
-"I costed it. Four years and about a hundred and ten thousand dollars, against the fourteen jobs I've actually been applying for." She says the fourteen jobs faster than he can write them. "A degree comes up on zero of the fourteen. Two of them ask for a forklift certificate."
+"I costed it. Four years and about a hundred and ten thousand dollars, against the jobs I've actually been applying for." She says them faster than he can write them. "A degree comes up on none of them. Two of them ask for a forklift certificate."
 
 "Which you have."
 
@@ -78,7 +78,7 @@ Amberg writes for a while. "The eighty saying no are going to college in Septemb
 
 The next question comes at the page rather than at her. "How many applications."
 
-"Two hundred and one since November. Thirteen answers. Ten of them came out of software in the small hours, and one of the ten arrived eight minutes after a form that took me fifty."
+"Two hundred and one since November. Thirteen answers. Ten of them came out of software in the small hours, and one arrived eight minutes after a form that took me fifty."
 
 "And the three that were people."
 
@@ -96,7 +96,7 @@ Amberg looks at that for longer than he has looked at anything else on the desk.
 
 "Three of them will be doing something else by Christmas."
 
-"That sounds right too." Her hands stay where they are. "The afternoon block is unrecorded, so it's been in there since the last week of March. If it comes to nothing by next spring, it comes to nothing and I take whichever of the fourteen jobs is still open, like anybody else. That's the part I've checked. It's the only part I've checked."
+"That sounds right too." Her hands stay where they are. "The afternoon block is unrecorded, so it's been in there since the last week of March. If it comes to nothing by next spring, it comes to nothing and I take whichever of those jobs is still open, like anybody else. That's the part I've checked. It's the only part I've checked."
 
 "What do your parents say."
 
@@ -144,7 +144,7 @@ The silence on the line runs long enough, unbroken by the usual kitchen noise, f
 
 "Plus the rest of it, the housing and the car and everything else on that list."
 
-"You said no to a hundred and thirty five thousand dollars, a car, free rent, free food, medical, and a paid degree, at eighteen years old."
+"You said no to that money, a car, free rent, free food, medical, and a paid degree, at eighteen years old."
 
 "Yes."
 
@@ -158,7 +158,7 @@ Her father lets a breath out in a short exhale, not quite a laugh. "That's a mis
 
 "Dave."
 
-"I'm allowed to think it's a mistake." Back to Chloe now, and slower, in the voice he uses for laying a number down on a table. "You understand what a hundred and thirty five thousand dollars a year actually is, over ten years, with the housing and the degree stacked on top of it, before you've paid a dollar of rent anywhere else in your life."
+"I'm allowed to think it's a mistake." Back to Chloe now, and slower, in the voice he uses for laying a number down on a table. "You understand what that money actually is, over a decade, with the housing and the degree stacked on top of it, before you've paid a dollar of rent anywhere else in your life."
 
 "I understand what it is, because I did the math myself before I ever walked into that room, and I understood it fully before I said no."
 
@@ -172,9 +172,9 @@ Her father lets a breath out in a short exhale, not quite a laugh. "That's a mis
 
 A pause, and then her father again, quieter. "What happens if you change your mind. Is the door still open in a year? Five?"
 
-"That's not something I asked him, because my head was still on the room and the desk, not on whatever might happen five years from now."
+"That's not something I asked him, because my head was still on the room and the desk, not on whatever might happen years from now."
 
-"You turned down a hundred and thirty five thousand dollars and left whether it's still on the table later completely unasked."
+"You turned it down and left whether it's still on the table later completely unasked."
 
 "No, I turned it down flat, and I left that particular question sitting on the table."
 

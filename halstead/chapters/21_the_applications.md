@@ -8,19 +8,19 @@ The pattern is identical for everybody: the Ivies first, eight of them, bought l
 
 Ruth has a laptop open on the arm of the couch in the third-floor common room, refreshing a portal stuck on the message for days, a board game abandoned on the table since dinner. Sam has a card in his hand, bending a corner of it back and forth, checking his phone every few minutes and setting it face down only to check it again.
 
-"That card's been in your hand ten minutes," Ruth says, still refreshing.
+"That card's been in your hand all evening," Ruth says, still refreshing.
 
 "I'm getting to it, I'm just deciding whether the game's worth finishing first."
 
 Chloe is on the floor with the printed list of deadlines in her lap, going down it with a pen even though it reads exactly as it did the last time she checked. A line gets crossed out twice, for no reason she could name.
 
-"What happens if all fourteen say no, all fourteen at once," she says, not quite a question.
+"What happens if all fourteen say no, all of them at once," she says, not quite a question.
 
 "Then you go to the state school," Sam says, "same as you were always going to," and picks his card back up, turns it over once, sets it down again.
 
 Chloe's list runs to fourteen: the eight, the state school, her mother's college, the community college, a place in Michigan because Fen said the winters there are worth seeing once, Georgetown, up twice in a week and still on the list because the second time it was a language department, and another she picks off a phone screen in a few minutes after lights-out because it came up on the page beside the Michigan listing.
 
-Her mother calls twice in the month to ask how the essays are going and gets fine both times, and the second time she leaves it there and reads the fourteen back down the phone, saying the deadline out loud after each and waiting for Chloe to say it back.
+Her mother calls twice in the month to ask how the essays are going and gets fine both times, and the second time she leaves it there and reads the list back down the phone, saying the deadline out loud after each and waiting for Chloe to say it back.
 
 They do the essays in Ruth's room on a Sunday because doing them alone is worse, Sam taking the desk chair, Kavi the floor with his back against the bed, Odile the bed with her heels hooked over the frame, and Chloe the space under the window by the radiator.
 
@@ -38,7 +38,7 @@ Sam finishes in under an hour and shuts the laptop harder than it needs. "Ten pa
 
 Kavi finishes in twenty minutes, exactly one word over, and submits it unread.
 
-Odile's runs five pages, and when Chloe tells her it is nearly seven times the limit Odile says the limit is a minimum and every teacher in this building takes more and thanks you for it. It goes in at five pages.
+Odile's runs five pages, and when Chloe tells her it is many times the limit Odile says the limit is a minimum and every teacher in this building takes more and thanks you for it. It goes in as it is.
 
 Ruth's own prompt asks her to describe a time she failed, and she spends an hour on the word before she gets near an example. "Failed by whose standard," she says, half to the room.
 
@@ -58,7 +58,7 @@ Nadia is in the room too, back against the door, laptop on her knees, and what s
 
 "Any of them where somebody calls in wanting a price and I'm the one who answers the phone. Everything else is the building it happens in."
 
-A second prompt asks about a place that changed her, and Chloe cannot get the forge down to the limit either, so she writes about the reservoir instead, seven miles from her parents' house, and the hill she has to stand up on the pedals to clear. It comes out well under the limit with every line surviving the edit, a bad sign by her own reckoning for about a minute before she submits it anyway.
+A second prompt asks about a place that changed her, and Chloe cannot get the forge down to the limit either, so she writes about the reservoir instead, a few miles from her parents' house, and the hill she has to stand up on the pedals to clear. It comes out well under the limit with every line surviving the edit, a bad sign by her own reckoning for about a minute before she submits it anyway.
 
 For the college her mother went to, the prompt asks why this school specifically, and Chloe writes the short, honest answer: her mother still has a sweatshirt from it, worn soft at the cuffs, at the back of a closet, and has always assumed Chloe would end up there too.
 
@@ -88,7 +88,7 @@ A representative may come and read the paper in a room, on paper, for as long as
 
 The room is small and windowless, a lamp over a table, and the Caltech representative sits down at eight and settles in. The escort stays in the corner with a paperback of her own, checking the clock more than she checks him, and brings water mid-morning.
 
-By noon he has filled five sheets on both sides, most of it his own working: a citation copied out to look up later, a calculation redone by hand to check where it lands, a margin note crossed out and rewritten smaller underneath. Partway through she asks whether he wants lunch and he says yes, eyes still on the page, and it goes cold at his elbow. By two he has stopped turning pages, reading a few paragraphs over and over instead of moving forward. At half past three he sets it down, looks at the wall a while, and picks it back up.
+By noon he has filled sheets on both sides, most of it his own working: a citation copied out to look up later, a calculation redone by hand to check where it lands, a margin note crossed out and rewritten smaller underneath. Partway through she asks whether he wants lunch and he says yes, eyes still on the page, and it goes cold at his elbow. By two he has stopped turning pages, reading a few paragraphs over and over instead of moving forward. At half past three he sets it down, looks at the wall a while, and picks it back up.
 
 Just before the bell he stands, hands the sheets over, and waits while she reads them.
 
@@ -106,7 +106,7 @@ ________________
 
 Some of the flagged schools send somebody, and the school says yes to all of them: desks in the long reading room, dining privileges at the tables everyone already eats at, a room to work in with a lockable door, and permission to sit in any class they name, provided they name it in writing two days ahead with a member of staff present. Two requests draw an identical answer every time, the fighting hour and the range.
 
-They arrive within a week of each other in the winter, from Yale, Stanford, Duke, Caltech, MIT and seven others, and by the first evening they have found each other at the end of the visitors' table comparing notes the way scouts do on a prospect.
+They arrive within a week of each other in the winter, from Yale, Stanford, Duke, Caltech, MIT and others, and by the first evening they have found each other at the end of the visitors' table comparing notes the way scouts do on a prospect.
 
 A representative from Duke, crossing campus toward the dining hall on his first afternoon, hears something through the wall of the sports building, a beat too regular for a ball game and gone before he places which door it comes from. Students pass the other way carrying a long canvas case between them, and neither looks at him, so he asks the woman escorting him what's in the building.
 
@@ -122,7 +122,7 @@ The Yale representative asks for a senior writing seminar and gets Hearn, who ha
 
 "Ten pages, same as most weeks," Hearn says.
 
-"Is that unusual, for the age group, ten full pages every week?"
+"Is that unusual, for the age group, that many pages every week?"
 
 He looks at her as if the question hadn't occurred to him before. "It's what the material wants."
 
@@ -182,7 +182,7 @@ Ruth's own advice is to send an application twice and change one thing, so in th
 
 ________________
 
-Decisions arrive over ten days in March rather than all at once, the part everyone braced for wrong: each school posts at whatever hour it decides, and the common room turns into somewhere people go to watch each other's phones. Ruth's first lands at five in the afternoon on a Tuesday, in the middle of something else, while Kavi stays up past midnight for a posting at seven the next morning instead, and is awake for it too, phone in hand before he's out of bed.
+Decisions arrive across March rather than all at once, the part everyone braced for wrong: each school posts at whatever hour it decides, and the common room turns into somewhere people go to watch each other's phones. Ruth's first lands late on a Tuesday afternoon, in the middle of something else, while Kavi stays up past midnight for a posting at seven the next morning instead, and is awake for it too, phone in hand before he's out of bed.
 
 Ruth gets MIT and calls home, where her mother puts her on speaker so her father can hear from the next room and both of them talk over each other to ask the next question first. Kavi gets MIT, Caltech and Chicago, and is thinking about the next item on his list before dinner, while Sam gets all but one of his twelve and wants to know, immediately, what happened to the twelfth.
 

@@ -2,7 +2,7 @@
 
 *April 2022 – June 2023*
 
-They take the bar in April, over two days, in the long examination room on the second floor, a full day on Tuesday and another on Wednesday, at individual desks set a meter apart, with the windows open because the room retains heat, and along the front sit the seven teachers who wrote the paper and will mark it, proctoring the whole of it themselves.
+They take the bar in April, over two days, in the long examination room on the second floor, a full day on Tuesday and another on Wednesday, at individual desks set a meter apart, with the windows open because the room retains heat, and along the front sit the teachers who wrote the paper and will mark it, proctoring the whole of it themselves.
 
 Afterward, Sam catches her at the bottom of the stairwell with his collar open and still in the shirt he sat the paper in.
 
@@ -16,9 +16,9 @@ Afterward, Sam catches her at the bottom of the stairwell with his collar open a
 
 "Four pages, for the whole question?" His voice actually climbs on it, an event visiting Sam perhaps twice a year and never on purpose. "I wrote the fire from both angles because I could see it going either way."
 
-"It's a contract question about who carries the risk while the goods are sitting in a shed waiting to be collected: there's an answer, and there's why, and once you've said both of those you're just saying them again in nicer sentences with more paper under them." She keeps walking with her bag up on both shoulders, so the conversation keeps her pace or gives itself up at the end of the corridor. "After that you're padding, and the marker reads ten more pages of you agreeing with yourself for no extra credit at all, which is a bad trade for both of you."
+"It's a contract question about who carries the risk while the goods are sitting in a shed waiting to be collected: there's an answer, and there's why, and once you've said both of those you're just saying them again in nicer sentences with more paper under them." She keeps walking with her bag up on both shoulders, so the conversation keeps her pace or gives itself up at the end of the corridor. "After that you're padding, and the marker reads page after page of you agreeing with yourself for no extra credit at all, which is a bad trade for both of you."
 
-Sam goes quiet the whole length of the corridor, then says he would like to withdraw ten of his fourteen pages.
+Sam goes quiet the whole length of the corridor, then says he would like to withdraw ten of them.
 
 When the list goes up on the corkboard in the second floor corridor eight days later, the names run down the left in a bare institutional typeface, followed by a column of numerical marks, a column marked PASS or FAIL, then a column giving the distance of each mark above or below the line. Chloe reads her own row twice, once for the verdict and once for the margin.
 
@@ -40,7 +40,7 @@ Later that week she takes her paper to Amberg, and he has the mark scheme out on
 
 "You do, and it's correct, and it's sitting right there in your second line where anyone could find it." He turns the scheme around so it faces her and puts a finger under a row of it, the rows printed under each other, each with a mark value and a line of description beside it. "There are four marks underneath that answer. A mark for the rule you are relying on. A mark for where the rule comes from. A mark for why a shed is inside it. A mark for what happens if the shed burns down on the Tuesday before delivery." He lays her own paper down beside the scheme, where a single tick sits against her second line and the rows underneath it are as empty as they were in April.
 
-"All of them follow from the answer once you've got the answer, and anyone who can read the second line can work out the rest for themselves in ten seconds, the way I did."
+"All of them follow from the answer once you've got the answer, and anyone who can read the second line can work out the rest for themselves in a moment, the way I did."
 
 "They follow if the person reading has your head and has already done the working you skipped, whereas a marker with a stack of these in front of them has about ten seconds each, not enough to rebuild your reasoning for you."
 
@@ -68,7 +68,7 @@ Sam is up in half a second and talks without stopping for air, while Chloe goes 
 
 People are getting up out of their chairs as she goes back to hers, unhurried, her shoulders loose the entire way.
 
-In the second week of May she writes her first practice paper, at a table in the library with the mark scheme face down beside her, taking an hour and ten minutes over a page restating what the shed already made obvious, and she gives it to Kavi to mark, because Kavi marks the way the examiners mark and will decline to be kind about it.
+In the second week of May she writes her first practice paper, at a table in the library with the mark scheme face down beside her, taking over an hour on a page restating what the shed already made obvious, and she gives it to Kavi to mark, because Kavi marks the way the examiners mark and will decline to be kind about it.
 
 "Two out of four, and the ones you're missing are the ones that would have told me you actually understood it." Kavi has the page squared in front of him and a pen sideways in his fingers. "You have the rule, and you have where it comes from." He taps the pen twice on the third line. "Then you've written *and so the risk sits with the buyer*, which is your second line in a different hat, and then you've stopped, which means the marker reads a sentence that sounds like new information and finds it's what they already had."
 
@@ -114,7 +114,7 @@ The tongs go home to the hook on the back of her door, beside the bag she made i
 
 ---
 
-Home in June for ten weeks, she sleeps through most of the first, then settles at ten hours a night and rides out to the reservoir most days, in July finding a road past the water good for a few extra miles and a hill she has to stand up on, with novels going through her hands in a fortnight, though she could not afterward tell anybody how any of them end. The rest is long afternoons on the back steps she and her father built when she was small, with the sun coming round the corner of the garage in the late afternoon and a wasp working the same board every day.
+Home in June for the summer, she sleeps through most of the first week, then settles at ten hours a night and rides out to the reservoir most days, in July finding a road past the water good for a few extra miles and a hill she has to stand up on, with novels going through her hands in a fortnight, though she could not afterward tell anybody how any of them end. The rest is long afternoons on the back steps she and her father built when she was small, with the sun coming round the corner of the garage in the late afternoon and a wasp working the same board every day.
 
 Her mother watches that from the kitchen window a while before she comes out.
 
@@ -130,7 +130,7 @@ Her mother watches that from the kitchen window a while before she comes out.
 
 Her father asks about Sam instead of about her classes.
 
-"He's on forty percent, on the range." Chloe has the glass on the step beside her, sweating a ring into the wood. "He's been on forty since he was fifteen, it's the number that hasn't moved once in that whole time no matter what he tries, and it slides straight off him like it belongs to somebody else entirely, not to him."
+"He's on forty percent, on the range." Chloe has the glass on the step beside her, sweating a ring into the wood. "He's been on forty since he started, it's the number that hasn't moved once in that whole time no matter what he tries, and it slides straight off him like it belongs to somebody else entirely, not to him."
 
 "How does it not touch him, forty percent year after year?"
 
