@@ -116,7 +116,7 @@ Her dad looks at the napkin, folds it in half twice, and puts it in his shirt po
 
 \---
 
-After, the four of them sit on the floor in the hall outside Pluto with their backs against the wall, close enough that Ruth's shoulder stays against Chloe's for most of it, while the lights in that hall go off in sections late on, so that they are down to the last section, in a strip of light about the width of a doorway.
+After, they sit on the floor in the hall outside Pluto with their backs against the wall, close enough that Ruth's shoulder stays against Chloe's for most of it, while the lights in that hall go off in sections late on, so that they are down to the last section, in a strip of light about the width of a doorway.
 
 Ruth takes her shoes off and lines them up against the wall, heel to heel, then knocks them out of line with one foot and leaves them like that.
 

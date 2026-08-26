@@ -102,7 +102,7 @@ Chloe takes her four off the cart, still catching her breath, and finishes two o
 
 ---
 
-Second grade is Ms. Vance, who everybody says is the nice one, and the desks are in groups of four with a name card taped to the corner of each.
+Second grade is Ms. Vance, who everybody says is the nice one, and the desks are in groups with a name card taped to the corner of each.
 
 "These are your groups until Thanksgiving, so you're going to want to be nice to the three people you're looking at right now. If somebody in your group is stuck you're allowed to help them, and helping means you talk about it with them, rather than doing it yourself and letting them copy it off you."
 
@@ -142,7 +142,7 @@ Her hand stays where it is for the rest of the period, and when Ms. Vance calls 
 
 ---
 
-The four books are due on a Thursday and she has finished two of them.
+The library books are due on a Thursday and she has finished two of them.
 
 Having taken the third book to bed on the Monday, she gets a page and a half in, reads the same sentence twice, and starts the page over with no memory of what it said the first time. On the Tuesday she opens it where she stopped, reads the top of the page, reads it again, gives up and puts it down on the floor, and on the Wednesday she leaves it there.
 

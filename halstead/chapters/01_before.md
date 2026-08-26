@@ -154,7 +154,7 @@ In December the assignment has a minimum and she writes the minimum, about a boa
 
 Conferences are on a Thursday evening and both her parents go in, while Chloe sits on the corridor floor with a book in a smell of floor wax from the janitor's cart.
 
-She is close enough to hear them talking and too far to make out the words, for eleven minutes, which she counts.
+She is close enough to hear them talking and too far to make out the words, for minutes and minutes, which she counts.
 
 Then the door opens on her mom saying thank you so much in the phone voice and her dad saying we appreciate it.
 

@@ -176,7 +176,7 @@ The name of it goes across the table, and he asks whether it is good, and Chloe 
 
 "You're agreeing at me," Sam says, and pushes his tray a couple of inches away.
 
-Chloe has a whole sentence about the lid ready, four words, five, and she lets it go.
+Chloe has a whole sentence about the lid ready, and she lets it go.
 
 On the fourth night she gets as far as the phone and stands there with her hand on it, until a kid comes up behind her to ask if she is using it, so she says no, then goes back upstairs, where Priya is still awake.
 
@@ -204,7 +204,7 @@ On day seven Sam says something wrong about volcanoes, which is that the lava co
 
 "That's not how it works though," the boy says, and everybody looks at him, while across the room Owen is still copying the word off the board from earlier, head down over his own paper.
 
-"It's not hollow, it's rock the whole way down, and the rock's what's doing the pushing, since it's the gas trapped inside that makes it move," he says, with both hands out in front of him now. "It's not really the heat, it's the gas, and how fast it comes out depends on how thick it is."
+"It's rock the whole way down, no hollow in it, and the rock's what's doing the pushing, since it's the gas trapped inside that makes it move," he says, with both hands out in front of him now. "The gas does it more than the heat, and how fast it comes out depends on how thick it is."
 
 A girl further down lets her head drop onto the desk with a thud loud enough that a couple of people look over.
 
@@ -242,7 +242,7 @@ Mr. Doyle stops with the marker still up at the board to look at what he has wri
 
 Mr. Doyle is already onto the next thing, brisk about it, while a kid glances at Ruth before looking back at the board. Chloe presses her thumbnail into the edge of the desk until it leaves a mark.
 
-She has done this herself, in January with chapter nine, when Mrs. Aldana came down the row, took the book off her desk by the spine, and kept it until the end of the day.
+She has done this herself, in January, when Mrs. Aldana came down the row, took the book off her desk by the spine, and kept it until the end of the day.
 
 Chloe has a very clear idea of what is supposed to happen to a child who does what Ruth just did, so she watches for it the whole rest of the period: Mr. Doyle's face the next time Ruth's name comes up, the door on the way out in case somebody is waiting there to have a word, and at lunch, the end of the table, to see whether anybody comes over.
 

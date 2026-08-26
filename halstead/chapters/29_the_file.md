@@ -42,7 +42,7 @@ ________________
 
 Then there's the entry.
 
-Eight years ago. Four operators, over the fence at the loading side, a little after four in the morning.
+Eight years ago. Four operators, over the fence at the loading side, a little before dawn.
 
 The report runs long, written by an operator who was there, and most of it is procedural, standard language he recognizes from a dozen other files: approach, entry, timing. The classification banner across the top of every page is the highest he's ever cleared for, and even at that level, three lines in the middle of the page are blacked out entirely, more than he's seen redacted from anything else in the box. What matters starts on page two.
 
@@ -52,7 +52,7 @@ Theo stops on that line and reads it again before he lets himself go on.
 
 The next entry is written from memory, after the fact, and it says that all four of them were unconscious before anyone made a decision.
 
-They came round tied at the wrists and ankles, on their sides, against a wall. There were four children sitting on the floor next to them. The report notes, in the flat voice these things are always written in, that whatever the children were doing, it read to him as an argument about their own performance rather than an interrogation. The argument was about how the four men would score them, whether a response time of nearly eight minutes counted as a fail, and whether it was fair to run a surprise exercise in the middle of the night that skipped the board entirely.
+They came round tied at the wrists and ankles, on their sides, against a wall. There were four children sitting on the floor next to them. The report notes, in the flat voice these things are always written in, that whatever the children were doing, it read to him as an argument about their own performance rather than an interrogation. The argument was about how the men would score them, whether a response time of nearly eight minutes counted as a fail, and whether it was fair to run a surprise exercise in the middle of the night that skipped the board entirely.
 
 The author records that he was asked, directly, what he would have given them.
 

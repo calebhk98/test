@@ -170,7 +170,7 @@ At dinner in the third week Kavi says something about the moon being up in the a
 
 "The moon. You only ever see the same side of it, so it's facing you the whole time, on purpose, the entire time you've ever looked at it."
 
-"That's not lying, that's just being stuck," Sam says.
+"That's just being stuck, then, not lying," Sam says.
 
 "It's not stuck, because stuck is when you can't move," Chloe says, with the roll still in her hand, uneaten. "It's moving the whole time, all the way around us, and it's turning while it does it, at exactly the speed that keeps the same side pointed here."
 

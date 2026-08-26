@@ -3894,7 +3894,7 @@ For weeks every card in the year reads zero, so that the range in October is the
 
 Odile gets the first on the eleventh of November, and the noise brings people out of the far end of the range. Chloe gets hers days later: a dry crack a few metres out, then the paper down at the far end exactly as it was, her hands steady on the rifle while she can feel her pulse where her cheek meets the stock, and she is still up on the sights when somebody tells her to clear.
 
-After that it moves, doubling from session to session, so that by the end of November she is on twenty and by the last week of January on sixty.
+After that it climbs, so that by the end of November she is on twenty and by the last week of January on sixty.
 
 Then it stops.
 

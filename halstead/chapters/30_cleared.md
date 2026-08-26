@@ -46,7 +46,7 @@ That's the whole answer, first try, the real one instead of a softer one built t
 
 "From when?"
 
-"I started that April, a few months after I turned seven. There was a four-week programme the summer before, which is how they found me, or how I found them, depending which end you look from."
+"I started that April, a few months after I turned seven. There was a programme the summer before, which is how they found me, or how I found them, depending which end you look from."
 
 At that he looks up, once, the pen briefly still against the page. "That's young."
 
