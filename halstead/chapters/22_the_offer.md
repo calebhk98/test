@@ -66,7 +66,7 @@ He gives her the same list in the order he gives everybody: research, full time;
 
 "Reason?"
 
-"I'd be good at about four hours a month of that job." Both hands stay where they were. "The hours where somebody names the constraint and I go argue with a supplier about it. The remainder is a desk and a paper at the end, and every paper I have ever finished went to a marker, where it stopped."
+"I'd be good at a few hours a month of that job." Both hands stay where they were. "The hours where somebody names the constraint and I go argue with a supplier about it. The remainder is a desk and a paper at the end, and every paper I have ever finished went to a marker, where it stopped."
 
 Amberg writes for a while. "The eighty saying no are going to college in September. You haven't sent an application anywhere."
 

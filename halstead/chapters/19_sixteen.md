@@ -52,7 +52,7 @@ Chloe reads the rows twice, then looks up at him and back down at them.
 
 "So the points are for saying the obvious part out loud, in the right order, a row at a time, even though anyone reading it already knows every word of it is true before they get to your line."
 
-"The points are for showing your work," Amberg says, tapping the scheme once where the rows are and then closing it over them. "A page gets marked on what's written on it, not on what's in your head, and right now your page has one correct sentence and four empty rows underneath it. Take the paper."
+"The points are for showing your work," Amberg says, tapping the scheme once where the rows are and then closing it over them. "A page gets marked on what's written on it, not on what's in your head, and right now your page has one correct sentence and empty rows underneath it. Take the paper."
 
 ---
 
@@ -96,13 +96,13 @@ She looks at the gap, and the car goes through it.
 
 In October she sits the bar again, the retake for everyone who failed in April, in that room, a few rows over from where she sat the first time.
 
-Question six is a rented forklift, and she has the answer in her second line, then writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. Start to finish it takes nineteen minutes, and she reads it back once, leaving every line of it exactly where it is.
+A question near the end is a rented forklift, and she has the answer in her second line, then writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. Start to finish it takes nineteen minutes, and she reads it back once, leaving every line of it exactly where it is.
 
 This time she passes by twenty-two, and she reads the number twice before she puts the page away, and then Kavi sends back a string of exclamation points and Sam texts to ask what she got on the forklift question, so she tells him, asks what he got, and goes back to her book.
 
 In November she sits in the library with something else open in front of her, thinking about April instead; it happens again in December, and once more in February, and she still shuts books harder than she means to, though she could not tell anybody why she is doing it.
 
-The forge is Thursdays, and has been since she was twelve, the work down there staying between her and Pruitt, his entire commentary across the years having come to a handful of sentences.
+The forge is Thursdays, and has been for years, the work down there staying between her and Pruitt, his entire commentary across the years having come to a handful of sentences.
 
 "You're off early."
 

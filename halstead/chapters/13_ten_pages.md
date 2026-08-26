@@ -82,7 +82,7 @@ Chloe stops. "Wait, that's it, that's the whole problem, we're reacting."
 
 On the Monday Chloe gets one on her fourth go, and the balls meet an arm's length in front of her face with a flat wet crack, both of them coming apart at once, orange and blue hanging in the air together and then all over the floor, and the boy she is paired with says, "Lucky," but Ruth gets hers a few minutes later and screams.
 
-By the end of the hour they have thirteen between them and everybody else on the floor has two, and on the Thursday they have nineteen, and they spend most of that evening doing the noise at each other in the corridor, and Ruth does an impression of the boy who said luck, and they make Kavi watch it twice.
+By the end of the hour they have more between them than everybody else on the floor put together, and on the Thursday they have nineteen, and they spend most of that evening doing the noise at each other in the corridor, and Ruth does an impression of the boy who said luck, and they make Kavi watch it twice.
 
 People start asking on the Friday, and Ruth says she has been practising while Chloe shrugs and changes the subject, so that by the following week there are theories going round about the markers being different weights.
 

@@ -28,7 +28,7 @@ Bell turns the metronome on. "Keep your eyes off each other," he says, "off the 
 
 It is a counting problem, and it takes Chloe until the third week to admit that.
 
-Her release runs early when she is keyed up and late when her hands are cold, and either way puts the arrows a long way apart up there, since a tenth of a second is several metres of flight. In the second week she starts practising it without a bow, walking to dinner in the dark with four fingers going against her leg, which is how Ruth catches her at it in the hall.
+Her release runs early when she is keyed up and late when her hands are cold, and either way puts the arrows a long way apart up there, since a tenth of a second is several metres of flight. In the second week she starts practising it without a bow, walking to dinner in the dark with her fingers going against her leg, which is how Ruth catches her at it in the hall.
 
 "Is that the release you're doing?"
 
@@ -134,7 +134,7 @@ On the Wednesday she builds the other side, because a man writing in 1961 makes 
 
 By Thursday afternoon she has stopped being angry and started being interested.
 
-It goes in on the Monday, fourteen thousand words over twenty-eight pages, and Hearn gives it back a week later with a B on the front.
+It goes in on the Monday, twenty-eight pages of it, and Hearn gives it back a week later with a B on the front.
 
 The note runs to half a page, and it says she hedges, twice on page eight, once on page twenty-two, and the whole of the conclusion, whose last line reads: *it could be argued that, on balance, this was perhaps not the right decision.* She already answered those objections earlier, so the hedge only asks the reader to answer them again, and she keeps apologising for the argument in the middle of making it. An argument you apologise for is a request. Make it or leave it out.
 

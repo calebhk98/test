@@ -36,7 +36,7 @@ At dinner she counts sixteen familiar faces before the food comes and gives up a
 
 "He left camp in the second week, the boy in the room across from Sam with a blue thing hanging off his bag."
 
-Ruth tilts her head, "kind of, he's the boy who wouldn't do the water thing," and stacks her tray on the rack, then takes Chloe's before Chloe can reach for it. "He went home, and then four more went the week after, and my mom asked me about it in the car, and I didn't know what to tell her."
+Ruth tilts her head, "kind of, he's the boy who wouldn't do the water thing," and stacks her tray on the rack, then takes Chloe's before Chloe can reach for it. "He went home, and then more went the week after, and my mom asked me about it in the car, and I didn't know what to tell her."
 
 She already knows the number, because she counted them herself the week it happened, before Ruth ever said so.
 

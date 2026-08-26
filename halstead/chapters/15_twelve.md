@@ -44,7 +44,7 @@ Late in the evening they go down to the kitchen, where ovens the size of wardrob
 
 "We're doing them and they have to come out identical," he says, already pulling a tray down, "so it has to be the big oven, because that's a box with one temperature in it and the conveyor cooks the front of a run harder than the back."
 
-Kavi lights it, takes a thermometer off the wall and stands at the glass while the rest of them argue over whether butter counts as a variable, and by the time the tray is ready he has dropped out of the bread question altogether and is writing numbers on the back of his hand. "Eleven degrees a minute for the first three minutes, then it halves."
+Kavi lights it, takes a thermometer off the wall and stands at the glass while the rest of them argue over whether butter counts as a variable, and by the time the tray is ready he has dropped out of the bread question altogether and is writing numbers on the back of his hand. "It climbs fastest for the first three minutes, then the rate halves."
 
 "Kavi, the bread's getting away from you."
 
@@ -106,7 +106,7 @@ Minimum personnel. Every additional student on the response costs you.
 
 At the bottom, in the same typeface, without emphasis: Response time is scored against the standard that's posted weekly.
 
-Chloe is annoyed when the alarm wakes her. It's the small one, the one that sits in her ear, and it means watch. It's four in the morning. She's pulled a four-a.m. watch before. This is the first one nobody posted beforehand. She's in the corridor in eleven seconds and Kavi is already there.
+Chloe is annoyed when the alarm wakes her. It's the small one, the one that sits in her ear, and it means watch. It's four in the morning. She's pulled a watch at this hour before. This is the first one nobody posted beforehand. She's in the corridor in seconds and Kavi is already there.
 
 "I saw it, I was still up. There's four of them, they're at the loading side, they came over the fence about a minute ago."
 
@@ -154,7 +154,7 @@ The plan takes Sam ninety seconds and he is defending it before he's finished de
 
 "You'll get grabbed."
 
-"That's the point," she says, already moving toward the door. "I'm twelve and I'm small, and I'm a girl in pyjamas. Nobody hits that. They'll grab me and they'll try to keep me quiet and then they'll spend at least four seconds deciding what to do with me, and while they're deciding, they're standing still and they're all facing the same way."
+"That's the point," she says, already moving toward the door. "I'm twelve and I'm small, and I'm a girl in pyjamas. Nobody hits that. They'll grab me and they'll try to keep me quiet and then they'll spend at least a few seconds deciding what to do with me, and while they're deciding, they're standing still and they're all facing the same way."
 
 Ruth looks at her. "I'm shorter," she says.
 
@@ -182,7 +182,7 @@ Chloe walks around the corner at a normal speed with her hands empty and her arm
 
 All four of them turn, and the nearest one comes at her fast and low, gets a gloved hand up near her mouth, and she lets him, because moving would be wrong. He just holds her there, his other arm half up, doing exactly what she needed him to do, in front of three men who are all looking at the same thing.
 
-It takes nine seconds: Kavi, closest to them, takes the two at the back; Ruth takes the third, and Sam goes for the one with his hand on Chloe's face, doing it badly, missing the vein and going again. The man takes that half a second, gets an arm free, swings, and misses before he goes down.
+It takes seconds: Kavi, closest to them, takes the two at the back; Ruth takes the third, and Sam goes for the one with his hand on Chloe's face, doing it badly, missing the vein and going again. The man takes that half a second, gets an arm free, swings, and misses before he goes down.
 
 Chloe steps back out of the way and sits down on the floor because her legs have decided to, while Ruth is already moving between the four of them, two fingers on a throat, then the next, then the next.
 
@@ -220,13 +220,13 @@ Chloe sits against the wall with her arms around her knees. "It's still going to
 
 "They'll say it's on us."
 
-"They shouldn't run it at four in the morning without telling us," Ruth says, to nobody in particular. "Four's fine, four's happened, as long as they tell you."
+"They shouldn't run it at four in the morning without telling us," Ruth says, to nobody in particular. "That's fine, that's happened, as long as they tell you."
 
 "Escalation. We've been good," Kavi says.
 
 "That's not a reason. It's four in the morning," she says, and she puts her head back against the wall.
 
-Sam calls it in as soon as the last knot is tied. Then they wait, since Sinclair is four buildings away.
+Sam calls it in as soon as the last knot is tied. Then they wait, since Sinclair is a few buildings away.
 
 The first one comes round after about seven minutes, confused for a beat, before he realizes he's tied and goes still when he sees who did it. "Hi," Ruth says. "You're fine, although you'll feel sick for about an hour." His jaw sets, teeth together.
 

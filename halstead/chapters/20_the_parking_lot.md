@@ -80,7 +80,7 @@ Chloe reads it fast: seven grown men who chose this and have presumably done it 
 
 Chloe looks at the space between the cars, and at Sam, and gives it about a second. "Fine. We stay close."
 
-There is chain link a few strides behind them and a loading dock on the other side of it, and the three of them are over the fence and gone before the man at the front has finished turning his head to follow. Nadia goes first because she's nearest, one hand on the top rail and no pause on it. Chloe is half a second behind her, over the rail in one clean vault. Ruth swings her bag over ahead of herself so the strap can't catch, comes across last, and lands running. The pallets are stacked chest-high against the dock and they take them in a step each. The fence drill has been run at this speed every term since they were nine, and from four meters away it looks like three people walked backwards out of the world.
+There is chain link a few strides behind them and a loading dock on the other side of it, and the three of them are over the fence and gone before the man at the front has finished turning his head to follow. Nadia goes first because she's nearest, one hand on the top rail and no pause on it. Chloe is half a second behind her, over the rail in one clean vault. Ruth swings her bag over ahead of herself so the strap can't catch, comes across last, and lands running. The pallets are stacked chest-high against the dock and they take them in a step each. The fence drill has been run at this speed every term since they were children, and from four meters away it looks like three people walked backwards out of the world.
 
 The dock roof is a metre and a half above the lot and none of the three lies down on it. They stay crouched at the lip with their hands flat on the edge, weight forward, close enough to be down in the lot inside a second: open air between them and Sam, a clear view of every set of hands, a drop onto anybody who gets behind him.
 
@@ -144,7 +144,7 @@ Sam stops walking altogether, a foot off the kerb. "What, are you actually serio
 
 "She's fifty, for a start," Ruth says. "She's an adult with a job she has worked for years, and she's been out in the world a good deal longer than you have."
 
-"That's thirty-four years of being in situations," Nadia says, "against your sixteen, eleven of which were spent at school."
+"That's thirty-four years of being in situations," Nadia says, "against your sixteen, most of which were spent at school."
 
 Sam thinks about it for a good deal longer than the joke needs, and then answers it straight. "She'd take me apart before I even got a hand up, and everyone here knows it."
 

@@ -102,7 +102,7 @@ Hark hands out envelopes in October with two hundred dollars in each, to be spen
 
 Rustem buys a dozen dead motors at a farm auction for a few dollars apiece, several of which are turning over by Christmas, and in January he sits down across from Chloe at dinner and pushes a page of figures at her before she has finished eating, wanting the lot. Reading it twice, she checks his sale prices against what he got for those, then offers him a hundred and twenty at eight percent with the motors as collateral, and he argues about the rate for twenty minutes and loses. Then he tells her she has to see the barn first, so she goes on the Saturday and finds nearly sixty motors in it, a third of them past helping, and leaves her offer exactly where it was.
 
-Forty goes to a girl called Fen at nine percent against a table saw, and the last thirty to Priya at twelve, unsecured, because it is Priya. They all pay her back, and she finishes the year with two hundred and seventeen dollars to Rustem's nine hundred and forty.
+Forty goes to a girl called Fen against a table saw, and the last thirty to Priya at twelve, unsecured, because it is Priya. They all pay her back, and she finishes the year with two hundred and seventeen dollars to Rustem's nine hundred and forty.
 
 Hark has her at the board in April with the ledger written up, and reads the columns from the back with her arms folded before she says anything.
 

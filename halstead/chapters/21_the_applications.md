@@ -34,7 +34,7 @@ Ruth reads it over her shoulder before she can close the laptop, laughing at her
 
 "Because getting it to six hundred is harder than getting it to four thousand." Chloe cuts it and cuts it again before it holds.
 
-Sam finishes in under an hour and shuts the laptop harder than it needs. "Ten pages a week, every week since I got here," he says, "and the thing that decides where I spend the next four years is a paragraph, and at that length they're guessing, not reading, and everyone who wrote one knows it."
+Sam finishes in under an hour and shuts the laptop harder than it needs. "Ten pages a week, every week since I got here," he says, "and the thing that decides where I end up is a paragraph, and at that length they're guessing, not reading, and everyone who wrote one knows it."
 
 Kavi finishes in twenty minutes, exactly one word over, and submits it unread.
 

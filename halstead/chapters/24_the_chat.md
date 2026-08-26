@@ -280,7 +280,7 @@ The branch is a converted storefront a few blocks from the shop, with desks behi
 
 "Five days is the policy on a new business account."
 
-"It's the policy on a new account with no history. This one has three months on it, fourteen deposits and zero returns." She has the statements out on his desk, squared against the edge of it. "Two days on nine named payers. I'll write them down for you."
+"It's the policy on a new account with no history. This one has three months on it, steady deposits and zero returns." She has the statements out on his desk, squared against the edge of it. "Two days on nine named payers. I'll write them down for you."
 
 "I can't do two days on a balance this size."
 

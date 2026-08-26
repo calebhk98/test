@@ -78,7 +78,7 @@ A third morning goes on cross-referencing that agent against the county's proper
 
 "Does the office upstairs keep regular hours, or is it just whoever happens to be up there that day?" she asks, in the unbothered voice of somebody scheduling a delivery. "I've got a package that needs a signature from someone up there."
 
-"They're in most days," the man behind the counter says. "Nine to five, half a dozen of them, give or take, though I couldn't tell you what it is they do up there."
+"They're in most days," the man behind the counter says. "Regular enough, half a dozen of them, give or take, though I couldn't tell you what it is they do up there."
 
 None of it moves anything else on her list. Payroll clears on the twenty-second the way it always does, she signs two employers on the Saturday in the middle of it, one of them a machine shop with a handful of people in it and a fax number still on the door, and on the Thursday she takes the difficulty on the test generator down a notch and lets it rebuild itself overnight.
 
