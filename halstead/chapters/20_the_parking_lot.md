@@ -130,7 +130,7 @@ Chloe says, "It was going to be nothing. You could see it from where we were sta
 
 Sam looks up. "How."
 
-Flat, not unkindly, she counts it off. "They were all bunched between two cars. If any two of them had swung at once they'd have hit each other, but they stood like that the whole way in. None of the three had an arm set for the gun. The one at the front had it up and his elbow was locked out; he was holding it for show. Why use it? That's police in four minutes, for a phone and some watches off a set of teenagers. And they're muggers. A person who actually needed the gun to work would have practiced holding it, and none of them had, because a gun you actually mean to fire doesn't get carried like that, elbow locked, finger nowhere near where it needs to be, standing that close together that a real shooter would have been more worried about hitting his own friend than about hitting us."
+Flat, not unkindly, she counts it off. "They were all bunched between two cars. If any two of them had swung at once they'd have hit each other, but they stood like that the whole way in. None of the three had an arm set for the gun. The one at the front had it up and his elbow was locked out; he was holding it for show. Why use it? That's police in four minutes, for a phone and some watches off a set of teenagers. And they're muggers."
 
 Nadia stops with her hand on the fence. "What's that got to do with it?"
 
