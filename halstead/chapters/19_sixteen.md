@@ -18,7 +18,7 @@ Afterward, Sam catches her at the bottom of the stairwell with his collar open a
 
 "It's a contract question about who carries the risk while the goods are sitting in a shed waiting to be collected: there's an answer, and there's why, and once you've said both of those you're just saying them again in nicer sentences with more paper under them." She keeps walking with her bag up on both shoulders, so the conversation keeps her pace or gives itself up at the end of the corridor. "After that you're padding, and the marker reads page after page of you agreeing with yourself for no extra credit at all, which is a bad trade for both of you."
 
-Sam goes quiet the whole length of the corridor, then says he would like to withdraw ten of them.
+Sam goes quiet the whole length of the corridor, then says he would like to withdraw ten of his pages.
 
 When the list goes up on the corkboard in the second floor corridor days later, the names run down the left in a bare institutional typeface, followed by a column of numerical marks, a column marked PASS or FAIL, then a column giving the distance of each mark above or below the line. Chloe reads her own row twice, once for the verdict and once for the margin.
 
