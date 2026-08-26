@@ -18,7 +18,7 @@ Her mother comes across the room and crouches at the edge of the gap.
 
 "I'll do the dishes. Every night. Every single. Every night for the rest of my life, please."
 
-Her mother puts a hand out and Chloe does not take it.
+Her mother puts a hand out, but Chloe does not take it.
 
 "And Dad's jobs. All of Dad's jobs. Before he asks, I'll do them before he even asks, please."
 

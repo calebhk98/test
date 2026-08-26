@@ -4,9 +4,9 @@
 
 On the first morning the sheet in her box has one more line on it than last year's did, so she counts it twice on the way down and takes it along to the office, twenty steps from her box, where the woman behind the desk finishes the line she is on before she looks up.
 
-"There's an extra line on here, and last year's only had seven on it."
+"There's an extra line on here, but last year's only had seven on it."
 
-"Nine-year-olds get eight, that's just how the sheet works this year, and you were on seven, so it's one more than you're used to." The woman goes back to the form in front of her. "It goes up every single year, because that is supposed to be the whole idea of a school, so is there a problem with it?"
+The woman goes back to the form in front of her. "Nine-year-olds get eight, that's just how the sheet works this year, and you were on seven, so it's one more than you're used to. It goes up every single year, because that is supposed to be the whole idea of a school, so is there a problem with it?"
 
 "No, I wanted to know whether somebody had put it on there by mistake."
 
@@ -14,15 +14,15 @@ On the first morning the sheet in her box has one more line on it than last year
 
 Her new ones are chemistry, statistics and biology, and Ruth has them in a different order but is smug about getting chemistry first. Kavi got none of the ones he asked for, and at breakfast he puts his objections in order with his own sheet spread out on the table beside the tray.
 
-"The first is that the form does nothing, because it asks you for three and it gave me zero of them."
+"The first is that the form does nothing, because it asks you for three, but it gave me zero of them."
 
-"They read it," Ruth says. "They counted how many people wanted each thing, and then they did what they were going to do anyway."
+"They read it. They counted how many people wanted each thing, and then they did what they were going to do anyway," Ruth says.
 
-"Then it should say that on the top of it, because what it says is preferences." He turns the sheet over and puts a finger on the back of it. "The second is that two of them are running in this building this year. Programming is on every ten-year-old's sheet and astronomy is on the elevens', so both of them have a teacher and an hour and a room, and the thing that stopped me is my age, which they had written down before they handed me anything to fill in."
+He turns the sheet over and puts a finger on the back of it. "Then it should say that on the top of it, because what it says is preferences. The second is that two of them are running in this building this year. Programming is on every ten-year-old's sheet and astronomy is on the elevens', so both of them have a teacher and an hour and a room, and the thing that stopped me is my age, which they had written down before they handed me anything to fill in."
 
 Sam has stopped with the spoon halfway up. "Is there a third, or can I go."
 
-"The third is cryptography, and cryptography happens at thirteen, which was already true in October when I asked for it. They kept the request the better part of a year and gave me back a date that was fixed before I wrote it down." He squares the sheet against the edge of the table. "That's all three of them."
+"The third is cryptography, and cryptography happens at thirteen, which was already true in October when I asked for it. They kept the request the better part of a year and gave me back a date that was fixed before I wrote it down. That's all three of them," he says, squaring the sheet against the edge of the table.
 
 Ruth takes the sheet off him and reads the back of it twice, and hands it back when Chloe gets up with her tray. Something on Sam's own sheet is different from everyone else's, and by Thursday there are theories about what.
 
@@ -32,7 +32,7 @@ Chloe reads her own sheet again on the stairs, for a different reason, and then 
 
 Sam looks up with a fork in his hand.
 
-"Dance is *gone*, and so is drawing. Both of them, they're not on it anywhere, I checked the back of the sheet, and then I checked it again." With both hands flat on the table, she is up on her toes. "That's it. I am never doing either of those again as long as I live."
+With both hands flat on the table, she is up on her toes. "Dance is *gone*, and so is drawing. Both of them, they're not on it anywhere, I checked the back of the sheet, and then I checked it again. That's it. I am never doing either of those again as long as I live."
 
 "I liked dance," Sam says.
 
@@ -40,7 +40,7 @@ Sam looks up with a fork in his hand.
 
 "I liked dance, and I was good at dance, and I'm going to keep saying it."
 
-Ruth keeps her eyes on the book that's open in her lap. "You were good at dance," she says, "which is why you liked it, Sam, and if you'd been ninetieth you'd be up there on the table with her."
+Ruth keeps her eyes on the book that's open in her lap. "You were good at dance, which is why you liked it, Sam, and if you'd been ninetieth you'd be up there on the table with her," she says.
 
 Chloe does another lap of the table before she sits down, and Ruth turns a page.
 
@@ -52,11 +52,11 @@ The reading comes fast, because the characters go in and stay in, so that in Nov
 
 The sound is the other half, and it stays out of reach, because the tones sound like four different people saying one word, easy enough to tell apart, and yet she cannot make the difference happen in her own mouth. In November Mrs. Sun stops the hour and does it on the board for the whole room, because half the room has it.
 
-"You're hearing tone as emphasis, and that's English doing it to you, because in English you go up at the end to make a word matter." She says a syllable four ways, and every time it is a different word. "Here the pitch sits inside the word. The pitch *is* the word. It's the same as changing a letter in it."
+She says a syllable four ways, and every time it is a different word. "You're hearing tone as emphasis, and that's English doing it to you, because in English you go up at the end to make a word matter. Here the pitch sits inside the word. The pitch *is* the word. It's the same as changing a letter in it."
 
-"I know that, I've known that since the first week, and I still can't hear it happening in my own mouth no matter how hard I listen for it."
+"I know that, I've known that since the first week, but I still can't hear it happening in my own mouth no matter how hard I listen for it."
 
-"You won't, and nobody hears their own, so stop sitting there trying to fix it from the inside." Mrs. Sun writes a list on the board, in the middle of it where the surface has gone glassy from use and the chalk goes quiet. "Record yourself and play it back, because you'll hear it coming out of a speaker, sit next to somebody in this room who already has it, and run the recordings on the machines in the library while you're doing something else."
+Mrs. Sun writes a list on the board, in the middle of it where the surface has gone glassy from use and the chalk goes quiet. "You won't, and nobody hears their own, so stop sitting there trying to fix it from the inside. Record yourself and play it back, because you'll hear it coming out of a speaker, sit next to somebody in this room who already has it, and run the recordings on the machines in the library while you're doing something else."
 
 Chloe does all of them, though not in that order, reading out loud into the machine in the library, playing it back, and hearing it, and Ruth starts sitting with her on Sundays in December, saying exactly what is wrong with each attempt, so that by June anyone who already expects her accent follows it, whereas a stranger loses her by the second sentence. She still cannot hear any difference between Mrs. Sun and the man who comes in from the university, who grew up a long way apart, and who Ruth can separate instantly.
 
@@ -72,13 +72,13 @@ Statistics turns out to be an hour of somebody taking a number apart in front of
 
 "You said that on Monday too, word for word, and you say it every time you lose this argument."
 
-Chemistry is Vasquez, who does set things on fire on purpose, twice in the first term, and both times the room goes in quiet and comes out loud. On the phone that Sunday Chloe carries the whole call herself, describing the second to her mother, who mostly just listens. The lab keeps the smell for most of a week, and the benches down there are black and scored all over where people have set hot things on them. In the second week she burns a hole through a sleeve, and in the fourth she makes something that is supposed to come out white, gets grey, and carries it up to the front.
+Chemistry is Vasquez, who does set things on fire on purpose, twice in the first term, and both times the room goes in quiet and comes out loud. On the phone that Sunday Chloe carries the whole call herself, describing the second to her mother, who mostly just listens. The lab keeps the smell for most of a week, and the benches down there are black and scored all over where people have set hot things on them. In the second week she burns a hole through a sleeve, and in the fourth she makes something that is supposed to come out white, but gets grey, and carries it up to the front.
 
 "Water. That's the only thing that turns it that particular grey, and it's nowhere on your reagent list."
 
 "Where did it come from, though, I only used what was on the list this time."
 
-"Glassware, reagent, or you, take your pick, because it is always one of the three." He hands it back, eyes already on the next bench. "Friday, and dry every piece of glass before you touch it this time."
+"Glassware, reagent, or you, take your pick, because it is always one of the three. Friday, and dry every piece of glass before you touch it this time," he says, handing it back, eyes already on the next bench.
 
 She runs it again on the Friday, drying every piece of glass twice before she starts, and it comes out white. She grins at it before she catches herself and carries it up to the front.
 
@@ -86,7 +86,7 @@ She runs it again on the Friday, drying every piece of glass twice before she st
 
 "The glass, because the glass is the one I changed."
 
-"You dried the glass, you took a fresh bottle off the shelf, and you tied your sleeve back out of the way, which is three changes and one result." He is already down the bench. "Run it wet next Friday and find out which of them you fixed."
+He is already down the bench. "You dried the glass, you took a fresh bottle off the shelf, and you tied your sleeve back out of the way, which is three changes and one result. Run it wet next Friday and find out which of them you fixed."
 
 So the Friday after that she runs it wet on purpose and gets the grey back, and the Friday after that she runs it dry off the old bottle and gets white. It is November by the time she writes glassware in the back of the notebook with a date beside it.
 
@@ -94,9 +94,9 @@ First aid is Mondays, and it is on a clock from the first week. In the second te
 
 "Is he going to be doing that the whole way through, or is it just the first?"
 
-"It's midnight on a road, the car's still running, and there's a man who wants to know if his wife's all right." The teacher has a stopwatch and keeps his eyes on it. "He's going to keep asking, that's the whole point of the drill, so count out loud over the top of him."
+The teacher has a stopwatch and keeps his eyes on it. "It's midnight on a road, the car's still running, and there's a man who wants to know if his wife's all right. He's going to keep asking, that's the whole point of the drill, so count out loud over the top of him."
 
-Textiles is Tuesdays, where they measure each other, draft patterns off the measurements onto brown paper, then cut. Chloe's first shirt comes out with the shoulder seam an inch inboard of where a shoulder actually is, so it drags every time she lifts her arm. She takes the sleeve out, redraws the armhole, builds the second over from the armhole out, and the second one drags in exactly the same place. In January she stops redrawing and brings in a shirt from home that already fits her, lays it flat on the brown paper, and traces round the top of it. The line that comes off it sits an inch and a half out from the line she has been drafting off the measurements all term. The third shirt fits, and it is the end of March by the time it does, and she wears the second one all spring regardless, because the second is the green shirt.
+Textiles is Tuesdays, where they measure each other, draft patterns off the measurements onto brown paper, then cut. Chloe's first shirt comes out with the shoulder seam an inch inboard of where a shoulder actually is, so it drags every time she lifts her arm. She takes the sleeve out, redraws the armhole, builds the second over from the armhole out, but the second one drags in exactly the same place. In January she stops redrawing and brings in a shirt from home that already fits her, lays it flat on the brown paper, and traces round the top of it. The line that comes off it sits an inch and a half out from the line she has been drafting off the measurements all term. The third shirt fits, and it is the end of March by the time it does, but she wears the second one all spring regardless, because the second is the green shirt.
 
 Biology is the man with the fish tank in the front hall, and in October Kavi decides that the small striped one is being bullied.
 
@@ -108,7 +108,7 @@ ________________
 
 Bex Alcantar arrives at the end of your sentence before you get there and finishes it for you, and the ending she puts on it is usually the ending it was going to have.
 
-In the second term Chloe and Bex build a bridge that carries nineteen pounds and comes down a plank at a time instead of all at once: the joints, a fortnight Chloe spent getting them wrong in the hour before dinner. The teacher asks how they held. Bex has it before Chloe has her mouth open, the whole fortnight in order and every part of it right. She says we in her first sentence and I in the rest of them. The teacher writes it on the sheet and moves along the table.
+In the second term Chloe and Bex build a bridge that carries nineteen pounds and comes down a plank at a time instead of all at once: the joints, a fortnight Chloe spent getting them wrong in the hour before dinner. The teacher asks how they held. Bex has it before Chloe has her mouth open, the whole fortnight in order and every part of it right. She says we in her first sentence but I in the rest of them. The teacher writes it on the sheet and moves along the table.
 
 Chloe goes back over the fortnight that evening looking for the sitting where she said any of it out loud. She finds the Thursday, when she had it half built and was talking fast and had it wrong twice before she had it right, with Bex at the next bench.
 
@@ -118,13 +118,13 @@ She works with Iyad in chemistry for a term after that, during which he is caref
 
 Sam spends the whole year on the overhang.
 
-There is a wall up the side of the gym with a lip near the top that sticks out a good way, and going into September the lip has beaten everyone who's tried it. Sam falls off it in October, twice in November, and once in December from high enough that he lands badly and sits on the mat, elbows on his knees. An instructor asks if he's alright, and he says he's fine, and the session carries on. In January a girl in the year below gets over it in one go, on a Wednesday, with five people watching. Sam takes this hard for two days, then goes and asks her how she did it, and the answer turns out to be about where you put your left foot before you start.
+There is a wall up the side of the gym with a lip near the top that sticks out a good way, and going into September the lip has beaten everyone who's tried it. Sam falls off it in October, twice in November, and once in December from high enough that he lands badly and sits on the mat, elbows on his knees. An instructor asks if he's alright, but he says he's fine, and the session carries on. But in January a girl in the year below gets over it in one go, on a Wednesday, with five people watching. Sam takes this hard for two days, then goes and asks her how she did it, and the answer turns out to be about where you put your left foot before you start.
 
 He gets over it on the eleventh of May, with thirty people at the bottom, because Sam has spent days telling everybody he is going to do it that afternoon.
 
 "What if you don't, though, what happens to the whole afternoon then?" Chloe asks.
 
-"Then thirty people watch me not do it, and that's still Monday." Sam is chalking his hands and not looking at any of them. "Left foot first, like she told me in January, because left foot's what does it, not the arms, not the grip, just where that one foot lands. She said so, and she was right, and I believed her before I even tried it."
+Sam is chalking his hands and not looking at any of them. "Then thirty people watch me not do it, and that's still Monday. Left foot first, like she told me in January, because left foot's what does it, not the arms, not the grip, just where that one foot lands. She said so, and she was right, and I believed her before I even tried it."
 
 He comes off the first attempt a foot under the lip, in front of all thirty of them, and stands under the wall shaking his right hand out for a while before he goes back at it. He gets a hand over the lip on the second try, and the noise underneath him is loud enough that a teacher comes out of the side door to see what has happened. Ruth is screaming, Kavi has both arms straight up over his head, and Chloe is on her feet with the book she'd brought down still in one hand, and she finds afterwards that she has torn the corner off it, with no memory of doing it. Sam eats left-handed for days and keeps the other hand under the table.
 
@@ -136,9 +136,9 @@ The stables are a walk past the north field, cinder path most of the way and mud
 
 "Where is it, exactly, that she can't see me, I want to know the actual blind spot."
 
-"Straight in front, that's the blind spot on a horse this size." Priya walks up to the horse's nose from a few feet out, and the head swings sideways to get a proper look at her. "Straight in front is where they actually can't see you at all. She's putting me in one eye. That's her eyes, not her being dramatic."
+Priya walks up to the horse's nose from a few feet out, and the head swings sideways to get a proper look at her. "Straight in front, that's the blind spot on a horse this size. Straight in front is where they actually can't see you at all. She's putting me in one eye. That's her eyes, not her being dramatic."
 
-Chloe can sit a canter by February, and she can get a horse over a low fence by March, but neither of those does anything for her. Priya, who has been riding since she was little, is better at all of it, and Chloe likes watching her do it. In April the stables move the groups around and Priya goes to Tuesdays, after which Chloe rides on the Thursday twice more, walking the twenty-two minutes on her own both times, but she is back in her room by five.
+Chloe can sit a canter by February, and she can get a horse over a low fence by March, but neither of those does anything for her. Priya, who has been riding since she was little, is better at all of it, but Chloe likes watching her do it. In April the stables move the groups around and Priya goes to Tuesdays, after which Chloe rides on the Thursday twice more, walking the twenty-two minutes on her own both times, but she is back in her room by five.
 
 "You quit riding, and I had to hear about it from Anne instead of you," Priya says at dinner, two days later.
 
@@ -150,7 +150,7 @@ Chloe can sit a canter by February, and she can get a horse over a low fence by 
 
 Priya looks at her over the top of her glass. "It's fun for me, though, even the boring parts, even the parts you clearly can't stand."
 
-"I know," Chloe says, "and that's the bit I kept waiting for the whole time, for it to turn into that for me too."
+"I know, and that's the bit I kept waiting for the whole time, for it to turn into that for me too," Chloe says.
 
 ________________
 
@@ -164,7 +164,7 @@ Her mother takes some days off in July and they do the coast, a long drive each 
 
 "Where does the run come in, is that a different kind of point I'm missing?"
 
-"You've got no run in this hand, not yet, and that's a different kind of score entirely." Her mother moves a peg. "You'll see runs everywhere for about a week, and half of them won't be there. Everybody does it."
+Her mother moves a peg. "You've got no run in this hand, not yet, and that's a different kind of score entirely. You'll see runs everywhere for about a week, and half of them won't be there. Everybody does it."
 
 Chloe loses the first few games, because she keeps counting the same card twice, then takes the fourth and the fifth, at which her mother says a word she usually saves for other company, before dealing again. They play until the pool lights go off.
 
@@ -172,7 +172,7 @@ In the third week, her father is at the table with a stack of paper and a pen.
 
 "What's that, is that the contract you were complaining about last week?"
 
-"A proposal from a vendor. They want six weeks and forty thousand dollars." He turns a page. "It's very well written, which is what's bothering me."
+He turns a page. "A proposal from a vendor. They want six weeks and forty thousand dollars. It's very well written, which is what's bothering me."
 
 Chloe reads over his shoulder until she stops on the second paragraph.
 
@@ -180,15 +180,15 @@ Chloe reads over his shoulder until she stops on the second paragraph.
 
 "It means they'll do the integration work, and they'll finish it."
 
-"Okay, but that's not actually a promise, is it, that's just a description of the job," she says. She reads it again. "How would you find out if they hadn't?"
+She reads it again. "Okay, but that's not actually a promise, is it, that's just a description of the job. How would you find out if they hadn't?"
 
-Her father starts to answer and stops with the page half turned, then goes back to the top of the paragraph and reads it again. Chloe waits.
+Her father starts to answer but stops with the page half turned, then goes back to the top of the paragraph and reads it again. Chloe waits.
 
-"You wouldn't," he says, "not from anything in here, and that's exactly the kind of gap they're counting on."
+"You wouldn't, not from anything in here, and that's exactly the kind of gap they're counting on," he says.
 
 "That's what I couldn't get. I couldn't work out what breaking it would look like."
 
-"There isn't a version of this where they've failed to do it. That's why it reads so well." He takes the pen and puts a line under the whole paragraph. "This is four pages of the same trick, isn't it."
+He takes the pen and puts a line under the whole paragraph. "There isn't a version of this where they've failed to do it. That's why it reads so well. This is four pages of the same trick, isn't it."
 
 "No idea, I only got as far as that one."
 

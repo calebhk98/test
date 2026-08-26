@@ -128,7 +128,7 @@ Her hand is still half up. "When does it get harder? I keep waiting for the part
 
 Mrs. Prahl smiles at her. "Let's not rush it, we've got all year to get all the way through this properly. Take the rest of the packet home with you if you want to."
 
-Chloe finishes the packet that night sitting up in bed with the lamp on, both sides of every page of it, in under an hour, and then it's Friday, and Saturday, and Sunday, and Monday, and Tuesday, and Wednesday.
+Chloe finishes the packet that night sitting up in bed with the lamp on, both sides of every page of it, in under an hour, but then it's Friday, and Saturday, and Sunday, and Monday, and Tuesday, and Wednesday.
 
 "Is it today? Can we call them today?" she asks in the car on the Monday.
 

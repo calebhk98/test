@@ -2,7 +2,7 @@
 
 *October 2022 – March 2023*
 
-Chloe has been compared to the same ninety-one people since she was seven, and the only number the school has ever given her is her place inside them, a place squarely in the middle. Since the middle of a year gets what the middle of any year gets, the state school is what she is expecting.
+Chloe has been compared to the same ninety-one people since she was seven, and the only number the school has ever given her is her place inside them, a place squarely in the middle. The middle of a year always ends up at the state school, so that's what she is expecting.
 
 The pattern is identical for everybody: the Ivies first, eight of them, bought like lottery tickets and forgotten about by dinner; then the college a parent went to; then the community college an hour from home, quietly listed by everybody and named out loud by almost nobody; then something strange, picked for whatever reason a seventeen-year-old picks things, so Bex applies to a place in Vermont because her cousin says the food is unbelievable, and Marek to a place in Arizona because a woman he watched lecture online teaches there.
 
@@ -40,7 +40,7 @@ Ruth reads the top of it over her shoulder again between passes. "Which boy is t
 
 By the version that goes in he is half a line, a boy who would not hand work in, and the half line survives every pass after that. The notebook does not.
 
-Sam finishes in under an hour and shuts the laptop harder than it needs. "Ten pages a week, every week since I got here, and the thing that decides where I end up is a paragraph. At that length they're guessing rather than reading. Everybody who wrote a paragraph knows it, and everybody who reads one knows it too," he says.
+Sam finishes in under an hour and shuts the laptop harder than it needs. "Ten pages a week, every week since I got here, but the thing that decides where I end up is a paragraph. At that length they're guessing rather than reading. Everybody who wrote a paragraph knows it, and everybody who reads one knows it too," he says.
 
 Kavi finishes in twenty minutes, exactly one word over, and submits it unread.
 
@@ -76,7 +76,7 @@ ________________
 
 The applications start landing in November. The transcript is legal, an accreditation number printed in the corner, and what is on it is classes, ordinary-looking rows of them, except there are so many of them, enough for admissions offices to decide it must be a formatting error and write back asking for the real thing.
 
-The call comes through on a Thursday afternoon. "We're going to need the actual transcript, not whatever this is. Whatever generated that file has run the same rows over and over, and I'd rather not send it upstairs looking like that. If your registrar can resend it I'll hold the file open on my end," the caller says, polite and a little embarrassed, the way people are when they think they have caught somebody else's mistake. The registrar reads the accreditation number back to her, twice.
+The call comes through on a Thursday afternoon. The caller says, polite and a little embarrassed, the way people are when they think they have caught somebody else's mistake, "We're going to need the actual transcript, not whatever this is. Whatever generated that file has run the same rows over and over, and I'd rather not send it upstairs looking like that. If your registrar can resend it I'll hold the file open on my end." The registrar reads the accreditation number back to her, twice.
 
 "I can put another copy in the post to you today, if it would help to have it in your hand. It will say what this copy says."
 
@@ -84,9 +84,9 @@ The caller declines and hangs up first.
 
 Then somebody reads the essays, and what everybody notices first is the graduate-level prose, while what everybody thinks first is ghostwriting: ninety-one applicants from a single school, all at such a level, is a mill or a very good teacher with a template. A review committee, reading blind, spends most of a meeting on the transfer-cohort theory before somebody checks the birth years.
 
-An admissions officer at Penn works through a stack of files on a Tuesday morning, a mug going cold at her elbow. Odile's essay runs pages past the word limit, normally worth a note in the margin and a mark against the applicant; she writes the note and keeps reading. Well down the second page, as background to a point about patience, it mentions a self-defense assessment involving a room full of people, and she reads the sentence twice, sets the folder down, and reads it a third time before she picks up the phone.
+An admissions officer at Penn works through a stack of files on a Tuesday morning, a mug going cold at her elbow. Odile's essay runs pages past the word limit, normally worth a note in the margin and a mark against the applicant, but she writes the note and keeps reading. Well down the second page, as background to a point about patience, it mentions a self-defense assessment involving a room full of people, and she reads the sentence twice, sets the folder down, and reads it a third time before she picks up the phone.
 
-"Read this paragraph and tell me what you think it means. Don't tell me what it stands in for, because I have spent an hour deciding it has to stand in for something," she says to the office down the hall.
+She says to the office down the hall, "Read this paragraph and tell me what you think it means. Don't tell me what it stands in for, because I have spent an hour deciding it has to stand in for something."
 
 Her colleague reads it standing in the doorway, still holding his own coffee. "It means exactly what it says, with no second meaning folded into it. I put two of these side by side on Friday, looking for the template, and they argued opposite sides of the same question, and both of them were worth reading."
 
@@ -100,7 +100,7 @@ A representative may come and read the paper in a room, on paper, for as long as
 
 The room is small and windowless, a lamp over a table, and the Caltech representative sits down early and settles in. The escort stays in the corner with a paperback of her own, checking the clock more than she checks him, and brings water mid-morning.
 
-By noon he has filled sheets on both sides, most of it his own working: a citation copied out to look up later, a calculation redone by hand to check where it lands, a margin note crossed out and rewritten smaller underneath. Partway through she asks whether he wants lunch and he says yes, eyes still on the page, and it goes cold at his elbow. By two he has stopped turning pages, reading a few paragraphs over and over instead of moving forward. Late in the afternoon he sets it down, looks at the wall a while, and picks it back up.
+By noon he has filled sheets on both sides, most of it his own working: a citation copied out to look up later, a calculation redone by hand to check where it lands, a margin note crossed out and rewritten smaller underneath. Partway through she asks whether he wants lunch and he says yes, eyes still on the page, but it goes cold at his elbow. By two he has stopped turning pages, reading a few paragraphs over and over instead of moving forward. Late in the afternoon he sets it down, looks at the wall a while, and picks it back up.
 
 Just before the bell he stands, hands the sheets over, and waits while she reads them.
 
@@ -158,7 +158,7 @@ Another asks Sam what he's good at, expecting a list with hedging in it.
 
 "How do you know?"
 
-"There's a board, right outside the gym, and anyone can walk by and check it." He says it as a fact about the building. "It only measures the drill, though, not anything that happens outside the gym, and the drill's got a clock on it where a real one wouldn't. Odile's second, close enough it goes her way plenty of the time."
+"There's a board, right outside the gym, and anyone can walk by and check it." He says it as a fact about the building. "It only measures the drill, though, not anything that happens outside the gym, but the drill's got a clock on it where a real one wouldn't. Odile's second, close enough it goes her way plenty of the time."
 
 The rep asks who Odile is, and Sam points across the dining hall with his fork.
 
@@ -182,7 +182,7 @@ Ruth asks her in the common room in March, with only Chloe else in the room, and
 
 "A hundred and ninety," Ruth says. "Against how many that answered?"
 
-"Twelve, and eight of them were written by software." The notebook is shut under her hand. She pushes her sleeves up, and a second goes by where she says nothing. "Read one of mine, Ruth. I can't work out what they want. I've read the listing and I've read the form and I've answered both of them, and I can't see the part where I'm getting it wrong."
+"Twelve, but eight of them were written by software." The notebook is shut under her hand. She pushes her sleeves up, and a second goes by where she says nothing. "Read one of mine, Ruth. I can't work out what they want. I've read the listing and I've read the form and I've answered both of them, but I can't see the part where I'm getting it wrong."
 
 "Chloe should read it, since Chloe's the one who writes."
 
@@ -232,11 +232,11 @@ Sam comes in and sits on the end of the bed with a sandwich from downstairs, and
 
 "Twelve of fourteen, every time I count them."
 
-"Right, that tracks with what everyone else is getting." He counts something off on his fingers, using the hand with the sandwich in it. "I got everything but the twelfth. Ruth got everything she asked for. Kavi got all three, the ones he actually wanted." He points the sandwich at the rows on the floor. "That's not what that figure is counting, not by the definition they're using. It counts something else and puts our word on top of it."
+"Right, that tracks with what everyone else is getting." He counts something off on his fingers, using the hand with the sandwich in it. "I got everything but the twelfth. Ruth got everything she asked for. Kavi got all three, the ones he actually wanted. That's not what that figure is counting, not by the definition they're using. It counts something else and puts our word on top of it." He points the sandwich at the rows on the floor.
 
 Ruth is in the doorway by then, laptop still open on her arm, having come by the route Sam had.
 
-"If a store put a sign in its window saying only a few percent of the people who walk in buy something," Chloe says, "would you think the store was doing well, or badly run?"
+Chloe says, "If a store put a sign in its window saying only a few percent of the people who walk in buy something, would you think the store was doing well, or badly run?"
 
 "Neither," Ruth says. "You'd think the sign was doing a job that had nothing to do with the store. It's written for the people out on the pavement, not for anybody who already walked in."
 

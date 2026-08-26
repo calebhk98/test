@@ -18,7 +18,7 @@ On the fourth of July she starts an argument with her father about whether a hot
 
 "It's one piece of bread, folded around itself, which is a different thing entirely from two. You've got a top and a bottom, or you've got a hinge, and this has a hinge." Her father goes back to the grill.
 
-Chloe holds the hot dog up between finger and thumb, turning it so he can see all of it. "So is a sub roll, and every sub you have eaten in your life you have called a sandwich. A hinge is a fact about bread, not a fact about food. If I cut this all the way through right now, does it turn into a sandwich while I'm holding it?"
+Chloe holds the hot dog up between finger and thumb, turning it so he can see all of it. "So is a sub roll, but every sub you have eaten in your life you have called a sandwich. A hinge is a fact about bread, not a fact about food. If I cut this all the way through right now, does it turn into a sandwich while I'm holding it?"
 
 "Then it's a different food," her father says, "because you changed what's holding what, and that's the whole difference between the two."
 
@@ -32,7 +32,7 @@ Downstairs that night, after she has gone up, her father folds the paper and lea
 
 "You let her have it, like you let her have everything once she gets that look on her face. You have never held a line with her in your life."
 
-He is still smiling about it. "I've been arguing that one since college and she got me standing at a grill. Nobody's ever put the hinge to me, not in twenty years of having that argument."
+He is still smiling about it. "I've been arguing that one since college, but she got me standing at a grill. Nobody's ever put the hinge to me, not in twenty years of having that argument."
 
 Upstairs the shower is running, and has been for twenty minutes, with the singing over the top of it.
 
@@ -50,7 +50,7 @@ In the third week Chloe tries to teach her mother Spanish at the counter, with t
 
 "Ell-oss ess-tan."
 
-Chloe is sitting on the counter with her heels against the cupboard door. "The first part's right, and it's the middle that goes wrong, because you keep putting the weight on the wrong bit, and that turns it into a different word, so just do the one word on its own. Están."
+Chloe is sitting on the counter with her heels against the cupboard door. "The first part's right, but it's the middle that goes wrong, because you keep putting the weight on the wrong bit, and that turns it into a different word, so just do the one word on its own. Están."
 
 Her mother says just that word, then says it over, and each time it comes out as a word that means something else, so that by the third go they are both laughing hard enough that Chloe has to get down off the counter, and her mother ends up on a kitchen chair, wheezing, both hands over her face.
 
@@ -66,7 +66,7 @@ In week three she comes in well past curfew, to find her mother standing in the 
 
 "Ellie Peterson is ten years old. I have met her mother, and she would tell you exactly what I'm telling you. Ask her."
 
-"That's a number too, because somebody picked ten the way somebody picked nine, and the somebody was you both times. At school I can walk down to the library in the middle of the night if I feel like it. There's nobody on the door, nobody asks me anything, and that's a whole building of eight-year-olds, and the roof hasn't come off it yet. Nobody there even knows what time I came in."
+"That's a number too, because somebody picked ten the way somebody picked nine, and the somebody was you both times. At school I can walk down to the library in the middle of the night if I feel like it. There's nobody on the door, nobody asks me anything, and that's a whole building of eight-year-olds, but the roof hasn't come off it yet. Nobody there even knows what time I came in."
 
 Her mother leans back against the banister. "You're not at school, and that library rule is a school rule, not a house rule. Are you."
 
@@ -92,11 +92,11 @@ Her grandmother says, "She's put on weight since I saw her, and I mean that as a
 
 "I know."
 
-"She was so thin at Christmas, and I kept it to myself at the time. I'd have said something by Easter if she'd stayed like that."
+"She was so thin at Christmas, but I kept it to myself at the time. I'd have said something by Easter if she'd stayed like that."
 
 "I know," her mother says, keeping her voice down to match, because the door is open and Chloe is close enough to hear every word.
 
-Chloe stands against the wall by the door with the glass in both hands and tugs her shirt loose from her shorts once, then lets it go, goes back through, and finishes about the bridge, which came second in the room. At dinner she eats half of what is on her plate and lays the fork down across the rest of it.
+Chloe stands against the wall by the door with the glass in both hands and tugs her shirt loose from her shorts once, then lets it go, goes back through, and finishes about the bridge, which came second in the room. But at dinner she eats half of what is on her plate and lays the fork down across the rest of it.
 
 "I've had enough."
 
@@ -148,7 +148,7 @@ By the end of the first month everybody in the year can do it at will, the whole
 
 The afternoon block is a different thing on each day of the week, Nerf on Mondays, wood shop on Tuesdays, team sports on Wednesdays, drawing on Thursdays and dance on Fridays, with the school picking all of them and everybody doing all of them.
 
-In wood shop you make a tool and then use that tool to make the next one, while the man who runs it will tell you what is wrong with a tool and then walk away while you work out what to do about it. Chloe makes a mallet with a handle that comes out slightly oval, and she uses it for weeks before the oval catches her eye, after which it is there every time she picks it up, and is still using it in June.
+In wood shop you make a tool and then use that tool to make the next one, while the man who runs it will tell you what is wrong with a tool and then walk away while you work out what to do about it. Chloe makes a mallet with a handle that comes out slightly oval, but she uses it for weeks before the oval catches her eye, after which it is there every time she picks it up, but is still using it in June.
 
 Team sports is where the teams are assigned, and she gets a team with two people on it she has already decided against. She plays out September and October on it.
 
@@ -170,13 +170,13 @@ A boy comes out of it ahead of her with the door swinging behind him, and behind
 
 "It's one hour out of five, and I'm not asking about the other four."
 
-Mrs. Okonkwo squares the sheets against the desk. "I know you're not, and it's still no, and it would be no if you came in here about all five. You've got it on Fridays until June."
+Mrs. Okonkwo squares the sheets against the desk. "I know you're not, but it's still no, and it would be no if you came in here about all five. You've got it on Fridays until June."
 
 Chloe takes hold of the edge of the desk with both hands and stays standing. "Then can I move teams on the Wednesday instead? That's a swap and not a drop. I'd still be doing the hour with everybody else."
 
 "Which team are you on."
 
-"The one I've been on since the first week, and there are two people on it, and I've done two whole terms of Wednesdays with them before coming in here about it. They don't pass. I've kept count."
+"The one I've been on since the first week, and there are two people on it, and I've done two whole terms of Wednesdays with them before coming in here about it. But they don't pass. I've kept count."
 
 "Teams are for the year, and you're the third in here about a team this week. The others wanted off the team you're on. You can all do Wednesdays together until June." Mrs. Okonkwo writes the date at the top of a clean sheet, then turns the block sheet round on the desk so Chloe can read it, ninety names down the side and the columns running across all of them. "Ask me in June and it'll be no in June, and you've still got the Friday. Come on Friday."
 
@@ -194,7 +194,7 @@ Sam has come up behind her. "What are you doing? Are you signing up for somethin
 
 "Why climbing, out of everything on that whole wall, when you could have had glassblowing?"
 
-Sam is already walking backward down the corridor. "They put a wall up the side of the gym over the summer with an overhang near the top. Everybody who's tried the overhang has come off it, and I'm going to be the first one over. It leans out at the top."
+Sam is already walking backward down the corridor. "They put a wall up the side of the gym over the summer with an overhang near the top. Everybody who's tried the overhang has come off it, but I'm going to be the first one over. It leans out at the top."
 
 Her name goes on the choir line, because she sang in the shower every day of the summer and it was the part of most days she looked forward to, but choir turns out to be a different activity wearing the same word, in which you stand in a block of thirty and the whole job is matching. The woman moves her to the back row and tells her she goes flat on the way down, but by a steady amount every time, so she is at least flat somewhere useful.
 
