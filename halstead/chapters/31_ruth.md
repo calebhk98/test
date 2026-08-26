@@ -34,7 +34,7 @@ By February the group has moved to a study room in the library with a door that 
 
 In February she asks a study group when they think the course will get past fifth-grade concepts.
 
-The other way of hearing it has not occurred to her. A boy called Devansh laughs, because it looks like a bit. Then he watches her face two beats past the laugh and stops. The table goes quiet, and Ruth cannot work out why.
+The other way of hearing it has not occurred to her. A boy called Devansh laughs, because it looks like a bit, but then he watches her face two beats past the laugh and stops. The table goes quiet, and Ruth cannot work out why.
 
 Somebody changes the subject back to the actual problem set, and the room goes back to work. Ruth goes back to work too, finishing the set in silence and saving the question for the walk home.
 

@@ -58,7 +58,7 @@ down and hear the whole thing before arguing, because they are going to want to 
 before he has finished and he would rather they had all of it. Then he names, in order,
 what the reader could not see: not that the answer was wrong, but that it was written for
 somebody who already had the writer's head, and there was nobody like that in the building.
-He puts the marking scheme where they can read it, turned the right way round, so the empty
+He puts the marking scheme where they can read it, oriented so the empty
 rows are the first thing they see. Then he hands the work back and stops. There is no
 consolation and no second attempt at the same explanation.
 

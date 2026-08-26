@@ -7,7 +7,7 @@ depending on it, which is the whole reason he runs the exercise the way he does.
 
 **Age span:** appears when Chloe is eleven and twelve | **MBTI:** ESTP (a writing aid, not
 a claim) | **IQ:** 124, and the interesting thing about him is an unusual tolerance for
-finding out he was wrong about a procedure
+finding out a procedure he trusted does not hold up
 
 ## Type and number
 
@@ -314,7 +314,7 @@ decade to learn and which he regards as the hardest professional skill he ever a
 ## Age and change
 
 He is late in a working life and the discipline is complete; nothing about the register is going to
-move. What has changed is who it is aimed at. The same flatness that was correct with adults who had
+move. What has changed is who it is aimed at. The same flatness that fit adults who had
 volunteered for it is now aimed at twelve-year-olds who did not, and he has never adjusted it, and does
 not believe he should. Written younger he is the same person with less patience for the paperwork side
 and a slightly shorter pause. Written older, the pause gets longer, and the private read on a good

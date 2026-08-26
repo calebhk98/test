@@ -85,7 +85,7 @@ His turns are the longest and most connected of anyone he talks with. Where the
 conversation around him pushes toward fragments, his run to several clauses
 with a qualifier attached to the main claim.
 
-He hedges visibly and often. The hedge is not weakness, it is an accuracy
+He hedges visibly and often. The hedge is an accuracy
 habit: he will not assert a thing at a confidence he has not earned.
 
 He disagrees by objecting formally rather than by refusing, and then goes along
@@ -456,8 +456,8 @@ in straight rows and nothing on the walls that is not doing a job. A pen that
 works, always, in a pocket: a customs officer's grandson does not carry a pen
 that might fail him. Money careful without being anxious, paid off immediately,
 with a paper record kept out of habit. He says the same few words before a meal
-that his grandfather said, and calls it habit. He writes dates in an order
-that is wrong for where he lives, has been corrected more than once, and has
+that his grandfather said, and calls it habit. He writes dates in the order he grew up with, not the
+local one, has been corrected more than once, and has
 never changed it. On a phone he answers slower than people expect, reads a
 message fully before replying, and never sends one in two parts. First thing in
 the morning he makes the bed.

@@ -208,7 +208,7 @@ that she did the work.
 Not being wrong, which she is relaxed about. Being positioned, publicly, as the one who
 did not follow.
 
-**Angry, she stays pleasant on the surface and goes cold in the logistics.** Nothing is said.
+**Angry, she stays pleasant on the surface and turns exact and withholding in the logistics.** Nothing is said.
 The information arrives slightly later, the invitation does not come, the thing she would
 normally have picked up is left for somebody else, and she is perfectly pleasant
 throughout.

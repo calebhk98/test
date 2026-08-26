@@ -133,7 +133,7 @@ and everybody else in the room is not.
 disagreement, not a refused referral, not a missed appointment. The specific act of making
 a child's report smaller in front of the child.
 
-**Angry, the clinical cadence stays exactly where it was and the temperature drops several
+**Angry, the protocol cadence stays exactly where it was and the temperature drops several
 degrees,** and she says one unmistakable sentence to the adult, in front of the child,
 without softening or apparatus. She then returns to the protocol as though it had not
 happened.
@@ -240,8 +240,9 @@ noticeably warmer with the children and considerably shorter with the adults.
 
 - **The patient:** wants their own account, in their own words, and rearranges
   the room until she gets it.
-- **The parent:** treated as a serious and incomplete witness, never as an
-  opponent, and never as sufficient.
+- **The parent:** treated as a serious and incomplete witness: she works with them
+  rather than against them, and she still checks their account against everything
+  else in the room.
 - **Her peer review group:** the nearest thing she has to a professional
   confidant, and the only place her own uncertainty is spoken out loud.
 - **The referring source:** usually an office rather than a person; she often

@@ -62,7 +62,7 @@ Short and observational by default. She states a fact about the room or about
 somebody else in it, and stops. No lead-in, no follow-up, no checking whether
 it landed.
 
-She answers a direct question about herself with a bare number or a bare word
+She answers a direct question about herself with a number or a word
 and nothing else. Not evasively; the number is the answer and adding to it
 would be padding.
 
@@ -85,7 +85,7 @@ She opens up in exactly one circumstance, below.
 
 | | |
 | :-- | :-- |
-| sentence shape | short, bare, observational, about somebody other than herself |
+| sentence shape | short, spare, observational, about somebody other than herself |
 | disagrees by | doing the thing rather than answering |
 | length | brief with everybody, and long only for her brother |
 | at length | arranging for one specific person to watch her do the thing she is good at |
@@ -97,8 +97,8 @@ She opens up in exactly one circumstance, below.
 
 ## When they talk at length
 
-**Arranging for one specific person to watch her do the one thing she is best
-at.** With her younger brother she plans out loud: which day, where he should
+**Arranging for one specific person to watch her do the one thing she does
+better than anyone she knows.** With her younger brother she plans out loud: which day, where he should
 stand, what he will be able to see from there. It is the only time she wants
 something for its own sake rather than doing it and letting the result speak,
 and it is the longest she ever goes.
@@ -112,7 +112,7 @@ stops applying.
 
 ## Signature, theirs alone
 
-The bare number as a complete answer. Asked how long, how many, how far, she
+The number alone as a complete answer. Asked how long, how many, how far, she
 gives the figure and stops, with no unit of self-assessment attached and no
 sentence built around it. The absence of the sentence is the signature, not the
 number. Triggered by any question about her own performance; a question about
@@ -367,7 +367,7 @@ What she finds funny in other people is competence done casually with nobody
 announcing it. Her humour runs on agreement, sharpened, and handed back with
 nothing added to it.
 
-Where she is unfair, it is the same bare true-answer instinct
+Where she is unfair, it is the same spare true-answer instinct
 that settles an argument well landing badly when what the other person wanted
 was agreement rather than correction. She will not take it back in words. She
 finds some other way to be useful to that person within the hour, gear checked,
@@ -467,7 +467,7 @@ have already been out with her a few times.
   early.
 - Teach a twelve-year-old a skill she is quietly her own weakest at, and do it
   well anyway.
-- Redo a chore or a gear check for somebody she was too bare with, without
+- Redo a chore or a gear check for somebody she was too curt with, without
   saying why.
 - Get up and leave a room she is bored in, and come back when it is over.
 - Let twenty seconds go by before answering, and not notice that she has.
@@ -489,7 +489,7 @@ She pushes people physically rather than verbally, hands-on, unasked, and
 without checking first whether they wanted the help.
 
 With a friend on the floor she hauls her up by the wrist rather than offering a
-hand, and gives her a correction or a bare true answer without being asked for
+hand, and gives her a correction or a plain true answer without being asked for
 either. With a peer who usually does the correcting, she will top her rather
 than defer, and does it by sharpening somebody else's read rather than
 originating the jab. With people she shares a table and a training floor with,
@@ -500,8 +500,8 @@ to treat it as maintenance.
 
 ## Likes, dislikes, habits
 
-- Wants a specific person watching her do the thing she is best at, and
-  engineers the moment so they see it properly.
+- Wants a specific person watching her do the thing she does better than
+  anyone she knows, and engineers the moment so they see it properly.
 - Keeps working through pain rather than stopping for it.
 - Moves toward trouble before she has full information about it.
 - Corrects people with her hands rather than with a sentence.
@@ -513,7 +513,7 @@ to treat it as maintenance.
 
 ## Age and change
 
-At eleven the physical competence is already there and so is the bare
+At eleven the physical competence is already there and so is the spare
 observational register. What is not yet there is the volume of hours; the gap
 between her and everyone else widens steadily rather than appearing.
 

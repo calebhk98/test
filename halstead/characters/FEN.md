@@ -133,8 +133,8 @@ by having just explained a method she owns. Once, at the end, never repeated.
 **Tired**, she says she is done, in those words, and goes, and always has. She does
 not sit through the end of something out of politeness.
 
-**Wrong**, she corrects it quietly without announcing that she was wrong in the
-first place.
+**Wrong**, she corrects it quietly without pointing out that there was ever
+anything to correct.
 
 **Praised**, she is not uncomfortable about the praise, which she has no view on,
 but about being looked at while it happens, and she gets the attention back onto

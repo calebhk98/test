@@ -171,7 +171,7 @@ why.
 
 He believes accuracy is the whole of his duty, and it lets him hand a real
 unresolved problem upward and consider his part finished. He is not wrong about
-his authority. He is wrong that this settles it.
+his authority. What he misjudges is whether that settles it.
 
 He assumes his own flatness reads as neutral. To a subject who is not used to
 being interviewed, unvarying flatness can read as judgment being withheld, and he

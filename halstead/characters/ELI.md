@@ -65,7 +65,7 @@ What the humour is made of, in the order he reaches for it:
   three of these in a row, each one a little narrower, and he does not stop
   when the answers get shorter.
 - **The count.** He says the plain unwelcome total out loud, at the moment
-  everybody else has decided to be encouraging about it, and he is right.
+  everybody else has decided to be encouraging about it, and the number holds.
 - **The stake as a game.** A consequence that could ruin him described as a run
   to be optimised. This is how he keeps a frightening thing workable.
 - **Himself as the material.** His own disasters go to the group as they
@@ -147,7 +147,7 @@ him retreat; it makes him keep building.
 
 Both cost him the same thing, the thread of whatever he was mid-solving when
 the conversation started, which he then loses sleep catching back up to. The
-second costs more, because arguing out loud is the register he is worst at and
+second costs more, because arguing out loud is the register that costs him most and that he
 likes least, and here he is spending it on a friend for free.
 
 Outside those two he goes back to relabel-and-stop. Nobody gets the long

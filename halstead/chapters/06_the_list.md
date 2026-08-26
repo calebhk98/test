@@ -210,7 +210,7 @@ Priya hugs her hard enough that it takes a second to get loose, then goes back i
 
 When Sam says see you at the thing in the fall, Ruth tells him it's only a form so far and his parents have to send it in, at which point Sam says it again, word for word.
 
-Kavi holds his hand out palm up and Chloe puts hers into it, until somebody's mom says it's time, and she keeps her own hand open a beat after his has gone back to his side, then closes it around the strap of her bag.
+Kavi holds his hand out palm up and Chloe puts hers into it, until somebody's mom says it's time, but she keeps her own hand open a beat after his has gone back to his side, then closes it around the strap of her bag.
 
 Once the camp gate is behind them, before her eyes close, her mouth moves through the days of the week in Spanish, under her breath, and then again, faster, checking the list against itself.
 

@@ -59,7 +59,7 @@ being kind at anybody; this is what being in a room is, to her.
 principle she has arrived at, and she would struggle to defend it out loud
 because she has never had to. It is simply that nobody in her house has ever
 asked what she came top of, so the scoreboard has no purchase on her. Write it
-as an absence, never as a stance.
+as an absence, not a stance.
 
 ## How they talk
 
@@ -353,8 +353,8 @@ She touches people constantly and without thinking about it. A hand on an arm
 mid-sentence, a hand on a shoulder going past a chair, a hand flat on somebody's
 back to steer them at a thing she wants them to look at. She does it to people
 she met a week ago and to animals within four seconds, and the only time it
-stops is when she is asleep, which is often. It is hers exclusively in this
-cast; nobody else here initiates contact at all.
+stops is when she is asleep, which is often. Nobody else in the cast touches
+people this often, or this fast.
 
 She turns her whole body toward whoever is speaking rather than just her face,
 including when the speaker is a child, a stranger, or somebody everybody else in

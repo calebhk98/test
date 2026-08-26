@@ -18,7 +18,7 @@ ________________
 
 Three weeks after she turns twenty she sits the Foreign Service exam, in a testing center with rows of identical monitors and a proctor who checks her ID twice against the photo before letting her sit down.
 
-It's four hours, in a room built for finishing a thought all the way through, rows of carrels with a low partition between them and a clock mounted high on the wall behind the proctor's desk. There's a section on world affairs she enjoys the way you enjoy a crossword, matching a treaty date against a name she half remembers from something she wrote for the blog, her pen moving steadily down the answer sheet while the carrel beside her sits empty for a while and then fills again. Around her, other candidates chew pens and glance up at the clock every few minutes, but her own eyes stay on the page from the first question to the last. Out in the parking lot afterward she takes a coffee from the machine by the door and drinks it standing in the sun, the morning already behind her by the time the cup is empty.
+It's four hours, in a room built for finishing a thought all the way through, rows of carrels with a low partition between them and a clock mounted high on the wall behind the proctor's desk. There's a section on world affairs she enjoys the way you enjoy a crossword, matching a treaty date against a name she half remembers from something she wrote for the blog, her pen moving steadily down the answer sheet while the carrel beside her sits empty for a while and then fills again; around her, other candidates chew pens and glance up at the clock every few minutes, but her own eyes stay on the page from the first question to the last. Out in the parking lot afterward she takes a coffee from the machine by the door and drinks it standing in the sun, the morning already behind her by the time the cup is empty.
 
 The result arrives by mail weeks later, and she reads it as having sat an exam.
 
@@ -26,11 +26,11 @@ ________________
 
 The background investigation takes ten weeks and involves a man named Whitaker who comes to see her twice.
 
-The paperwork comes first, the electronic questionnaire for national security positions, which she fills out over a single evening at the kitchen counter, question after question about addresses and employers and people who'd vouch for her. Most of it is easy, but a few fields make her stop and actually count: every place she's lived, every job, every reference who'd remember her well enough to say something useful; the form goes in a little after midnight, and days go by before the phone rings.
+The paperwork comes first, the electronic questionnaire for national security positions, which she fills out over a single evening at the kitchen counter, question after question about addresses and employers and people who'd vouch for her; most of it is easy, but a few fields make her stop and actually count: every place she's lived, every job, every reference who'd remember her well enough to say something useful; the form goes in a little after midnight, and days go by before the phone rings.
 
 Then he calls, the second week of October, to set a time; the Friday night before goes on straightening an apartment that's usually left alone, clearing the stack of translation manuals off the table and into a drawer, an impulse of her own rather than anything he'd have noticed either way.
 
-Whitaker knocks at eight, on the minute; with him come a federal investigator's credentials, a notebook, and a thermos of his own coffee he waits to open until he's seated across the table from her. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it. Coffee is offered before either of them sits down, but he lifts the thermos instead, already most of the way full, and thanks her for the offer before he takes the chair across from hers. Her own kitchen table usually sits bare; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
+Whitaker knocks at eight, on the minute; with him come a federal investigator's credentials, a notebook, and a thermos of his own coffee he waits to open until he's seated across the table from her. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it; coffee is offered before either of them sits down, but he lifts the thermos instead, already most of the way full, and thanks her for the offer before he takes the chair across from hers. Her own kitchen table usually sits bare; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
 
 Before he asks her anything, he tells her what the visit is for: a full accounting of the last ten years, verified wherever it can be verified, recorded as unverifiable wherever it can't.
 
@@ -102,7 +102,7 @@ Around noon the notebook closes. "I'll be back once I've run down what I can on 
 
 ________________
 
-The first week of November he comes back, in a coat this time, the light already gone and the radiator behind him ticking the entire time. The folder is thicker than it was in October, a second stack of pages clipped behind the first, and he sets it down where he set it in October before he takes his own coat off.
+The first week of November he comes back, in a coat this time, the light already gone and the radiator behind him ticking the entire time; the folder is thicker than it was in October, a second stack of pages clipped behind the first, and he sets it down where he set it in October before he takes his own coat off.
 
 Before the funding he mentions the reference interviews, all of them done now, and that they run about an hour apiece, and that the longest of them went well into the afternoon.
 

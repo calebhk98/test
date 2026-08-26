@@ -111,7 +111,7 @@ not let it pass. Used once, this is the most devastating thing she does. Used
 twice on a page it becomes a tic, so it wants to stay rare, and the question after
 it is the part doing the work.
 
-When she is wrong she says so out loud, briskly, and moves on faster than anyone
+When she gets it wrong she says so out loud, briskly, and moves on faster than anyone
 is expecting.
 
 ## Under pressure
@@ -354,8 +354,8 @@ by asking fewer questions than she wants to and never fewer than are needed.
   she has is a child who does not experience any of it as remarkable.
 - **Her husband:** twenty years of shorthand and two instruments pointed at the
   same worry. She escalates to whoever is responsible; he converts it into a
-  figure. She is the one who holds the line, and she is right about half the time,
-  and so is he.
+  figure. She is the one who holds the line, and her calls land about half the time,
+  and so do his.
 - **Her mother:** direct, unguarded, decades of practice. A correction gets a flat
   acknowledgement back with no defensiveness in either direction.
 - **Her father:** comfortable in shared silence. Neither of them needs to fill it.

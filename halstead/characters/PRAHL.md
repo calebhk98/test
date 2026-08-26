@@ -227,7 +227,7 @@ out of the hour. Given a free year she would finish the differentiated curriculu
 who finish everything in the first fifteen minutes, which she has been sketching in a notebook
 for years.
 
-**Blind spots:** she is wrong that let us not rush it reads as patience. For a child who has
+**Blind spots:** she believes that not rushing reads as patience. For a child who has
 already finished, it functions as a ceiling she does not know she is placing. She also reads a
 request for difficulty as enthusiasm rather than as information, which means the one signal
 that would tell her what is wrong is the one signal her framework converts into a compliment.

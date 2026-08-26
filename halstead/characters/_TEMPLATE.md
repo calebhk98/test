@@ -90,10 +90,12 @@ condition is met, without arguing about it.
 
 A named condition being met is authorisation on its own. Nobody needs to come back and ask.
 
-## Signature - theirs alone
-The one construction nobody else may use, described as a construction. Say what shape it
-has, what triggers it, and how often is too often. Do not reproduce an instance of it: a
-writer who has the shape can build a new one, and a writer who has only the instance can
+## Signature - characteristically theirs
+The one construction they reach for constantly, described as a construction. Say what
+shape it has, what triggers it, and how often is too often. It does not have to be unique
+to them — another character can do it once without it stopping being recognisably theirs —
+only frequent enough that the repetition is the point. Do not reproduce an instance of it:
+a writer who has the shape can build a new one, and a writer who has only the instance can
 only repeat it.
 
 ## Would they say this?

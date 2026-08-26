@@ -228,7 +228,7 @@ mandatory single pace for a whole room is a policy failure dressed as fairness, 
 never said it in a staff meeting because she has no alternative that is fair to the other
 twenty-eight.
 
-**Blind spot:** she is wrong that there is no room in her classroom for an early finisher.
+**Blind spot:** she believes there is no room in her classroom for an early finisher.
 The room exists. She has simply never had the minutes to build it, and has stopped
 believing the minutes are coming.
 

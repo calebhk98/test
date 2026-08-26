@@ -101,9 +101,9 @@ swapping in a synonym would make them stop meaning exactly one thing.
 
 She takes it at face value, and this is both her greatest strength and her most
 reliable blind spot. A number given to her by a real board about real work is
-information about how that work went, and she treats it that way: not as praise
-to enjoy, not as an insult to survive, and never as a statement about what kind
-of person she is. A poor mark makes her want the marking. She will chase it for
+information about how that work went, and she treats it exactly that way,
+whether it flatters her or stings: a measurement of the work, not a verdict on
+who she is. A poor mark makes her want the marking. She will chase it for
 a week, not to have it changed but to find out where it came from.
 
 She will also produce a number about herself on demand, including an unflattering
@@ -118,8 +118,7 @@ result, and she keeps going after the first answer because she does not trust a
 single measurement of anything.
 
 And when a result of hers is admired she deflects it by pricing it: she reports
-how little time it took and how easy the problem was. This is not modesty
-either. It is a correction, offered in the same spirit as any other correction,
+how little time it took and how easy the problem was. It is a correction, offered in the same spirit as any other correction,
 because a compliment based on a wrong estimate of difficulty is a wrong claim
 standing.
 
@@ -162,7 +161,7 @@ she was talking about someone else in the room.
 
 **Her questions.** She asks a great many, out loud and in writing, and most of
 them are punctuated as questions. Anybody writing her as a person who does not
-ask questions has her wrong. What is hers is not the rate but the shape: she
+ask questions has her wrong. What is hers is the shape of the question, not the rate: she
 builds a question so that one answer closes it. Three shapes recur.
 
 - She converts an open field into two named options and asks which.
@@ -322,8 +321,9 @@ it needs a task, a group, and somebody in charge.
 
 **Stuck.** She argues about whether the question is well-formed. Not as a
 dodge, and not for time. She genuinely believes the problem is the phrasing, she
-says so at length, and she is right about a quarter of the time, which is enough
-to have taught her the habit and nowhere near enough to justify it.
+says so at length, and the phrasing turns out to be the real problem about a
+quarter of the time, which is enough to have taught her the habit and nowhere
+near enough to justify it.
 
 **Bored.** Does the next thing. Then the thing after that. Then announces, at
 volume, to a room that is still working, that there is nothing to do.
@@ -466,8 +466,8 @@ addressing it.
 capable, for the first time, of holding a belief privately for months rather
 than testing it out loud, and it is not maturity, it is fear. Everything that
 made her formidable, working alone, trusting her own check, disbelieving other
-people's impressions, works against her the moment the thing she is wrong about
-is herself. What she gains by the end of it is the first thing she has ever
+people's impressions, works against her the moment she is the one she has
+misjudged. What she gains by the end of it is the first thing she has ever
 learned that she could not have derived: that some questions cannot be closed
 alone in a room, and that saying so out loud, to people who have known her for
 years, does not cost what she thought it cost.

@@ -107,7 +107,7 @@ He hedges about nothing inside his own findings. What sounds like hedging is
 always about something outside his control, an institution's behaviour, and it is
 accurate rather than evasive.
 
-He allows himself only dead, inherited, clinical idiom, never an invented image,
+He allows himself only dead, inherited, institutional idiom, never an invented image,
 and his one register of humour is dry institutional realism about the system,
 delivered without any particular feeling about it, and never aimed at a person in
 the room.

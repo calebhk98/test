@@ -4,7 +4,7 @@
 chapter and they can find the lines that character would not say, and the scenes where
 they are not acting like themselves.
 
-Each sheet carries: how they talk, described as properties, an exclusive signature, a
+Each sheet carries: how they talk, described as properties, a signature, a
 would-they-say-this test written as properties of a line, **subjects** (best at, worst
 at, favourite and why, least favourite, the one they are secretly proud of, the one they
 would drop), **personality off the page**, **would do / would never do**,
@@ -20,8 +20,9 @@ Every cohort sheet now opens with a one-line **Engine**, directly under the age 
 line: the single sentence to have in mind before anything else on the sheet. The ten are
 collected in `_DIFFERENTIATION.md` Axis 8, and no two of them produce the same behaviour
 in the same room. Axis 9 does the same for what a compliment does to each of them, which
-is where the sheets had converged worst, and Axis 10 assigns each character one register
-word that nobody else may use.
+is where the sheets had converged worst, and Axis 10 gives each character one habit that
+is characteristically theirs, not a monopoly, described as behaviour rather than a
+temperament word.
 
 Then **`_DIFFERENTIATION.md`**, which leads with how much similarity is correct —
 a cohort taught by the same adults from age seven should sound alike, and the parents are
@@ -146,7 +147,7 @@ and becomes about Chloe herself. The book's argument depends on none of them cro
 | Vance | `VANCE.md` | INFP | 121 | The only adult who gets down to Chloe's level and stays there. Also never looks up. |
 | Prahl | `PRAHL.md` | ESFJ | 113 | Refuses in the identical warm register she teaches in, and calls the refusal patience. |
 | Prentice | `PRENTICE.md` | INTP | 138 | One scene, never returns. Holds the only full cognitive profile of Chloe. |
-| Ammons | `AMMONS.md` | INTJ | 135 | One clinical cadence for everything. Her tell is the pen stopping, not a line. |
+| Ammons | `AMMONS.md` | INTJ | 135 | One protocol cadence for everything. Her tell is the pen stopping, not a line. |
 | Whitaker | `WHITAKER.md` | ENFJ | 119 | Short and unreactive. The writing carries the attention, not the reaction. |
 | Deb | `DEB.md` | ESFP | 108 | Never speaks on the page. A behaviour pattern reported in summary, never staged. |
 

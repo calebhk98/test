@@ -104,8 +104,8 @@ This is not a thesis she has worked out that other people are too slow to see.
 She is not correcting anybody. The people around her are as sharp as she is and
 have simply ordered their wants differently: they want margin, she wants
 capacity, and neither of them got there by being cleverer than the other. Write
-her as someone with a different appetite, never as someone with a superior
-analysis.
+her as someone with a different appetite, not a superior analysis of everyone
+else's.
 
 **She never argues it.** It has no case behind it, in the world or in her own
 head. The only argument she makes for it is the thing she builds. She does not
@@ -128,7 +128,7 @@ By writing a scene where every line she has is a refusal or a category
 correction, which is the failure four readers found independently. And by
 softening her to fix that, which produces a different character. She is
 frustrated by people who cannot finish a thought, insulted by laziness, and
-disinclined to pretend anyone is more than they are. All of that is correct and
+disinclined to pretend anyone is more than they are. All of that stands, and
 all of it stays. It is a temperament, not a substitute for a personality, and
 the work is to put the personality underneath it and leave the temperament
 exactly where it is.
@@ -332,7 +332,7 @@ that is not hers to defend, do not pull the long version out of her.
 
 ## Reading people, and why a plain statement from her can land as an accusation
 
-She is the best reader of people in any room she is in, and this is not in
+She reads people better than anyone else in the room, and this is not in
 tension with her landing hard. The accuracy is what makes it land.
 
 **What she calibrates:** whether a thing gets said at all, who is present when it
@@ -806,7 +806,7 @@ off.
 **Why it never resolves:** neither of them will say any of it. Nadia does not
 run the total, so as far as she is concerned nothing has accumulated. And they
 let a third person sit in the middle of it for years without ever naming the
-arrangement to him or to each other. **How to write it:** never as a row. It is a
+arrangement to him or to each other. **How to write it:** quiet, not a row: a
 tightening at the table, a hand taken off something and put in a lap, a subject
 that closes early, and both of them back the next night in the same seats doing
 excellent work together.

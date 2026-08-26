@@ -76,7 +76,7 @@ says the strange true thing out loud. She writes the honest answer where an evas
 was expected. She walks straight into the game the other children are playing. The
 one-word answers start *after* she is laughed at, told she talks wrong, and has her book
 taken off her: a child not wanting to be poked in the same place twice. Write the
-compression as damage in progress, never as a policy she is executing.
+compression as damage still happening to her, not a policy she has settled into.
 
 **The place where the work makes sense is not special to her.** Once she finds a school
 that fits, she does not experience it as elite, magical, or a rescue. It is school: where
@@ -129,8 +129,8 @@ never a personality trait. It is a response to a specific injury: being laughed 
 particular room, at six. She then spends eleven years somewhere the true thing is the
 expected answer, and the flinch has nothing to feed on. By twenty she is an adult who
 knows how to hold a professional conversation: measured, unpadded, answering what was
-asked, comfortable saying a hard thing plainly. That is not the same as clipped, and it is
-nothing like the child who said it was fine in order not to be noticed.
+asked, comfortable saying a hard thing plainly. That composure sits far from clipped, and further still from
+the child who said it was fine in order not to be noticed.
 
 The flinch is still in there and can be triggered, but it needs a trigger. If an adult
 tells her she talks strangely, laughs at her, or treats her as a problem to be managed,
@@ -212,7 +212,7 @@ socially attuned with them: she gets the jokes, tracks who is loud and who is qu
 protects their quirks, and holds onto sleeves and pyjama legs because she likes being near
 them. A dinner-table argument about an astronomical fact, or about whether an easy choice
 is cheating, will run and run with no sign she wants out. If a scene with her friends has
-her giving clipped one-liners, it is wrong.
+her giving clipped one-liners, the scene has stopped being her.
 
 **With her parents, open by default and closed only under strain.** She will talk through
 an entire dinner about a book plot or how a bridge failed, forgetting to eat until somebody

@@ -44,12 +44,13 @@ language. That is accurate about the shared baseline. It just does not tell you 
 edges are.
 
 Below, every character owns a distinct position on each shared axis, and two or three
-signatures nobody else is allowed to use. Where the draft already supports a distinction
+signatures that are characteristically theirs. Where the draft already supports a distinction
 it is marked **[has]** and the job is to use it more. Where it is a proposal it is marked
 **[new]** and it is the author's to accept, change, or throw out.
 
-Rule for anyone writing to this: **if a line could carry another character's signature,
-it is the wrong line.** Signatures are exclusive. That exclusivity is the whole mechanism.
+Rule for anyone writing to this: **a signature is characteristic, not exclusive** — it can
+turn up once on somebody else's page without becoming their line. The character it belongs
+to is the one who reaches for it constantly, not the only one permitted to.
 
 ---
 
@@ -123,11 +124,12 @@ than her husband.
 
 ---
 
-## Axis 4: exclusive signatures
+## Axis 4: signature constructions
 
-One per character. Nobody else may use them. Three or four uses across the book is enough;
-more becomes a catchphrase. Each is described as a construction rather than reproduced as a
-line, so a writer can build the next one instead of repeating the last one.
+One per character: the construction each one reaches for constantly. Three or four uses
+across the book is enough; more becomes a catchphrase. Each is described as a construction
+rather than reproduced as a line, so a writer can build the next one instead of repeating
+the last one.
 
 | character | signature | status |
 | :-- | :-- | :-- |
@@ -281,7 +283,7 @@ themselves. What each one does instead is now different in every case.
 
 ---
 
-## Axis 10: one word per person, and nobody shares it
+## Axis 10: one habit per person, not a monopoly
 
 The convergence audit found the same handful of adjectives doing the characterising work
 on most of the sheets: **flat** on nine of the ten, **quiet** on eight, **plain** and

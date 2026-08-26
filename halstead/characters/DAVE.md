@@ -95,7 +95,7 @@ knows what the other is worried about without being told. He is the one who gets
 pulled toward yes. She is the one who holds the line. Both of them are right about
 half the time and they both know it.
 
-**When she is wrong**, he says so once, short, without cushioning and without
+**When she gets it wrong**, he says so once, short, without cushioning and without
 elaboration, and then he stops. He does not repeat a reasoned point for emphasis;
 he makes the case once and lets it stand or fall. If she stays wrong, he lets her
 be wrong rather than go round again, and this is his most consistent failure as

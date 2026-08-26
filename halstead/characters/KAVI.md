@@ -17,7 +17,7 @@ came back as three different types.
 
 | reading | type | what that reader was looking at |
 | :-- | :-- | :-- |
-| first | INTP | detached systems tinkerer, intellectualisation, indifferent to hierarchy |
+| first | INTP | absorbed systems tinkerer, intellectualisation, indifferent to hierarchy |
 | second | ISTJ | the precision, the order, the workspace, the consistency people can set a clock by |
 | third | ISTP | the hands. Always an object in them, always a mechanism, three steps ahead and silent about it |
 | house | INTP | the same as the first |
@@ -103,8 +103,7 @@ a worse position than the one they started in.
 
 He pre-empts it. Before anyone can call a piece of work impressive he prices
 it, naming the actual compute, the actual time, the actual difficulty, in order
-to move it out of the impressive category. This is not modesty and it is not a
-bid for a second compliment. It is a correction: being praised for an easy win
+to move it out of the impressive category. It is a correction, not a performance of humility: being praised for an easy win
 is evidence that nobody is tracking which wins were hard, and he wants that
 distinction maintained even at his own expense.
 
@@ -277,8 +276,8 @@ he is not making a point; the hands wanted a job and the room was not providing
 one.
 
 **Publicly wrong.** He says so in about three words, at once, and
-starts again from wherever the error was. He is the best in his group at this by
-a distance and it is not humility: he does not attach to a result, so there is
+starts again from wherever the error was. He recovers faster than anyone else in his group,
+and it is not humility: he does not attach to a result, so there is
 nothing there to bruise. People who find being wrong expensive watch him do it
 and cannot work out how. It is worth separating from the two nearest neighbours
 in his year: one of them takes a correction fast because she has already costed

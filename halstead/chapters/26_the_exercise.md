@@ -154,7 +154,7 @@ It goes on the sheet with the culvert. Which school, he leaves alone.
 
 Sam waits for a second question.
 
-The soldier who went untouched turns around in the front row to look at him, and turns back before the major has finished writing. Then the major closes the clipboard, checks his watch, and calls the next name on his list.
+The soldier who went untouched turns around in the front row to look at him, but turns back before the major has finished writing. Then the major closes the clipboard, checks his watch, and calls the next name on his list.
 
 ________________
 

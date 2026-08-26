@@ -406,7 +406,8 @@ and taking the correction on the spot rather than working it out on paper, and
 that never changes. This is when he discovers that a room will laugh at him and
 that he can decide to be the one causing it.
 
-**Ten to thirteen.** The drills start and he finds the thing he is best at.
+**Ten to thirteen.** The drills start and he finds the thing he does better than
+anything else he tries.
 Numbers attach themselves to everything, and he starts reporting himself in
 them. He is still the smallest and has entirely stopped treating that as
 information about the future. He teaches younger children by doing the thing in

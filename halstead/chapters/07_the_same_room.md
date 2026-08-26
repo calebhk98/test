@@ -146,7 +146,7 @@ Having taken the third library book to bed on the Monday, she gets a page and a 
 
 On the Tuesday she opens it where she stopped, reads the top of the page, reads it again, gives up, and puts it down on the floor. On the Wednesday she leaves it there. All of them are due on the Thursday, but she has finished two.
 
-Her mom drives her to the library on Thursday and waits in the car with the engine running, so Chloe carries the finished ones up to the desk by herself, walking fast past the shelves, and comes back out to the car with the others, the ones she had left off, still in her bag.
+Her mom drives her to the library on Thursday and waits in the car with the engine running, so Chloe carries the finished ones up to the desk by herself, walking fast past the shelves, but comes back out to the car with the others, the ones she had left off, still in her bag.
 
 "What happened to getting more books this week, because that's not like you at all?"
 
@@ -156,7 +156,7 @@ Her mom drives her to the library on Thursday and waits in the car with the engi
 
 "I've just got a lot of school stuff," Chloe says.
 
-The library card goes in the drawer in the kitchen where the batteries are, and weeks later, when her mom asks whether she wants to go on Saturday, Chloe says no thank you and asks her to renew them please.
+The library card goes in the drawer in the kitchen where the batteries are, and weeks later, when her mom asks whether she wants to go on Saturday, Chloe says no thank you but asks her to renew them please.
 
 ________________
 

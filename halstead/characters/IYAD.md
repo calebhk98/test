@@ -167,8 +167,8 @@ and which gets other people up out of their chairs.
 
 He is angered by exclusion and by nothing else worth the name. Somebody left
 off a list, a group that made an arrangement without a person in it, a decision
-taken by whoever happened to be in the corridor: that turns him cold, and cold
-is the only anger he has, and it is not loud. It comes out as courtesy at a
+taken by whoever happened to be in the corridor: withdrawal is the whole of his
+anger, and it is not loud. It comes out as courtesy at a
 distance and a name he stops using for a while, and it is unmistakable and
 nobody, including him, will name it. Being contradicted, ignored, outworked or
 outranked does not touch him. Being told he got something wrong does not touch
@@ -330,7 +330,7 @@ He pushes nobody directly; when he wants something changed he arranges it so
 that the change is easier than the alternative, and never mentions it.
 
 Respect is earned by including people and lost by leaving somebody out of an
-arrangement on purpose, which is the one thing that makes him cold.
+arrangement on purpose, which is the one thing that makes him withdraw.
 
 In front of a teacher he agrees and works. In front of a younger student he is
 warm, slow and slightly too encouraging. In front of the person whose idea he
