@@ -15,6 +15,16 @@ minutes without tiring, name the exact paragraph she misread after losing
 money, and read a live exchange faster than the mechanism built to score it.
 Play the length as staying power, not as confusion.
 
+**She is the warm one, and the cast needs her to be.** Everyone around her runs
+economical, undemonstrative and slow to touch anybody. Priya is the opposite on
+every one of those and it is not a quirk, it is the temperature the group is
+kept at. She talks to strangers within seconds, she puts a hand on an arm or a
+shoulder or a back while she is talking and does not register having done it,
+and she turns her whole body toward whoever is speaking rather than her head.
+People relax around her, including people who have no idea why they have, and
+she has never once noticed this happening. Write it as ordinary. She is not
+being kind at anybody; this is what being in a room is, to her.
+
 **She is indifferent to rank rather than opposed to it.** This is not a
 principle she has arrived at, and she would struggle to defend it out loud
 because she has never had to. It is simply that nobody in her house has ever
@@ -115,10 +125,14 @@ is her opening move, so once per entrance rather than once per line.
 anywhere, mid-scene, without ceremony or apology, and it is played completely
 straight.
 
-**Wrong**, she names precisely where her reasoning went and does not make a
-production of it. Losing money she has lent, or a scored exercise, produces no
-visible reaction beyond the accurate account of the mistake, and she does not
-adjust her behaviour for the score afterward.
+**Wrong**, she laughs first, out loud, at herself, and then names precisely
+where her reasoning went. Both halves matter and the order is the character: the
+laugh is genuine and immediate and there is nothing rueful in it, and the
+account underneath it is exact. She will tell the story of having been wrong at
+dinner that night as an anecdote she is pleased to own, and tell it well, and
+lose nothing by it. Losing money she has lent, or a scored exercise, produces no
+change in behaviour afterward beyond the accuracy of the account, because the
+score was never the part she was tracking.
 
 **Cornered**, she demonstrates. She will physically go and do the thing rather
 than keep talking about whether it can be done.
@@ -183,6 +197,46 @@ is not graded.
 **Secretly proud of:** reading a room faster than the mechanism built to score
 it, and then handing the outcome to somebody who wanted it more.
 
+## Stuck, bored, and wrong in public
+
+None of this needs a school. It needs a task, a group, and somebody in charge.
+
+**Stuck.** She asks three classmates before it occurs to her to ask the person
+who is paid to know, and by the third classmate she usually has it, and she
+could not tell you afterwards which of the three gave her the piece that
+mattered. Most of what she knows arrived socially and she has no record of the
+route.
+
+**Bored.** Talks. Gets moved. Talks to the new person. This is not defiance and
+she takes the moving in perfectly good part.
+
+**Publicly wrong.** Laughs at herself, loudly, and owns the story. See above; it
+is the single warmest thing she does and it makes it safe for everybody else at
+the table to be wrong too, which nobody has ever pointed out to her.
+
+**Working in a group.** She is the reason it functions. She will take four
+people who do not like each other and get a piece of work out of them, mostly by
+being physically friendly at all of them until it stops being possible to keep
+it up. She does the presenting because nobody else wants to and she does not
+mind.
+
+**Given responsibility for somebody younger.** They adore her. Her results are
+middling and she would genuinely rather they liked it, and she says so without
+any defensiveness when asked. What comes out of it is the thing she is actually
+for: one of them, sooner or later, tells her something serious that they have
+not told an adult, because she is the adult-shaped person in their week who has
+never once made them feel measured.
+
+**Deadlines.** Late. Apologetic. Forgiven, every time, which she does not trade
+on and does not appear to have noticed.
+
+**Where she sits and what she keeps.** She moves seats constantly and is always
+next to somebody. Her notes have other people's names in the margins, and the
+small exact animal drawings, and are useless to her and to anyone else.
+
+**What the room thinks of her.** The warmest person in the building, and nobody
+works out how good she is until the week they need her.
+
 ## Home
 
 An ordinary house on an ordinary street, nothing about it marked for horses at
@@ -234,6 +288,17 @@ cross-legged with a pillow in her lap within a minute of arriving.
 She uses her hands to demonstrate rather than to fidget: flat on a table to
 make a point, flat on her own shoulder to show a measurement.
 
+She touches people constantly and without thinking about it. A hand on an arm
+mid-sentence, a hand on a shoulder going past a chair, a hand flat on somebody's
+back to steer them at a thing she wants them to look at. She does it to people
+she met a week ago and to animals within four seconds, and the only time it
+stops is when she is asleep, which is often. It is hers exclusively in this
+cast; nobody else here initiates contact at all.
+
+She turns her whole body toward whoever is speaking rather than just her face,
+including when the speaker is a child, a stranger, or somebody everybody else in
+the room has stopped listening to.
+
 She reaches for what she wants mid-sentence rather than waiting to be offered
 it, and does not pause the sentence to do it.
 
@@ -243,9 +308,14 @@ falls asleep anywhere, instantly, with no ceremony about that either.
 
 ## Personality off the page
 
-Bored, she goes and finds something physical to do with her hands. Wrong,
-praised or losing, she handles all three the same unshowy way: the only thing
-that surfaces is an accurate account of what happened.
+Bored, she talks, and then goes and finds something physical to do with her
+hands. Praised, nothing much happens; it is not a currency she holds. Wrong or
+losing, the laugh comes first and the accurate account comes second, and neither
+one is a performance.
+
+Delighted, which is her resting state and should be on the page far more than it
+has been, she is loud, physical and completely unembarrassed, and the delight
+attaches to small ordinary things at the same size it attaches to large ones.
 
 At two in the morning she is asleep, and has been for a while.
 
@@ -332,6 +402,13 @@ before she is fully awake, moving before she is thinking.
   charge of it.
 - Tell somebody to eat instead of engaging with the thing they are anxiously
   working on.
+- Put a hand on the arm of somebody she met last week, mid-sentence, without
+  registering that she did.
+- Turn her whole body toward a child who has started talking and let them
+  finish.
+- Laugh out loud at her own mistake before she explains it, and tell the story
+  again at dinner.
+- Get a piece of work out of four people who cannot stand each other.
 
 ## Would never
 
@@ -393,6 +470,13 @@ line sits there with nothing after it, it is not Priya's.
 Priya's tumbling sentences pile up real specific detail about one thing without
 building toward an argument or an analogy. If a line is making a point by
 comparison to a different situation, it is not hers.
+
+**Sam.** Both are loud, warm, physically demonstrative and happy to be laughed
+at, which is the collision to watch. Sam is loud in short bursts around a joke
+he is building and he touches people by shoulder-punching and hauling; Priya is
+loud continuously and touches people to steer, settle and include them. Sam's
+warmth is aimed at the group. Hers is aimed at whoever is nearest, including
+somebody she has never met.
 
 ---
 

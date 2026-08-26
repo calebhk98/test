@@ -10,7 +10,7 @@ She had expected the speed to feel like a punishment, and it feels instead like 
 
 Writing has always been the slow part, ever since a room with a small table, a page of symbols to be copied one after another, and a man who held the timer where she could watch it move. Here the timer belongs to everybody: fifteen minutes on the board, and beside it a question that today asks what the man in the story believes at the beginning and stops believing by the end, where in the chapter that change happens, and how a reader is to know. She had read that chapter twice before the lesson, along with the two after it, and all three together had taken about as long as the fifteen minutes she now has to answer in.
 
-Chloe writes six sentences, reads them back twice, and leaves every word standing where she put it, which gets her to the where and the how-you-know with ninety seconds to spare. The same fifteen minutes produce a page and a half from Ruth, most of a page from Kavi, who is still going when the teacher calls time and who finishes the clause he is inside before setting his pen down square to the paper, and two sentences from Owen at the end of the row, with a line drawn through one of them.
+Chloe writes six sentences, reads them back twice, and leaves every word standing where she put it, which gets her to the where and the how-you-know with ninety seconds to spare. Those fifteen minutes produce a page and a half from Ruth, most of a page from Kavi, who is still going when the teacher calls time and who finishes the clause he is inside before setting his pen down square to the paper, and two sentences from Owen at the end of the row, with a line drawn through one of them.
 
 "You can keep going if you're mid-sentence," the teacher says, "but not if you're mid-paragraph."
 
@@ -24,13 +24,13 @@ Chloe writes six sentences, reads them back twice, and leaves every word standin
 
 Sam has four sentences, one of them a joke, and he shrugs, then leans over far enough to count the lines on Chloe's page; two tables over, a girl called Marisol, who has three, asks whether the question can go back on the board, while Chloe sits with her six, which would have been the longest answer in Mrs. Aldana's room by half a page, and that meant the whole class listening to it read out on a Friday afternoon and then guessing, correctly, whose it was.
 
-On the Thursday every table gets the same materials: a bundle of dowels, a spool of string, one glue gun between three, and a rule about the glue gun that Mr. Doyle delivers slowly. The gap is eighteen inches, and whatever crosses it has to hold whatever gets hung off the middle afterward. Chloe is put with Sam and Kavi, and Ruth, assigned to the next table, comes across anyway before the glue has finished heating.
+On the Thursday every table gets a bundle of dowels, a spool of string, one glue gun between three, and a rule about the glue gun that Mr. Doyle delivers slowly. The gap is eighteen inches, and whatever crosses it has to hold whatever gets hung off the middle afterward. Chloe is put with Sam and Kavi, and Ruth, assigned to the next table, comes across anyway before the glue has finished heating.
 
-"It's triangles, that's the whole answer, and I can show you in four seconds," Ruth says.
+"It's triangles, that's the whole answer, and I can show you in two seconds," Ruth says.
 
 "You're not in this group, Ruth, go and build your own."
 
-"I'm telling you triangles." Ruth lays four dowels in a square, holds the corners loosely, pushes one sideways, and the square goes over flat on the table; then she sets a fifth dowel across the diagonal, pushes the same corner exactly as hard, and the shape stays where it is. "A square folds, but a triangle can't fold unless something actually breaks."
+"I'm telling you triangles." Ruth lays four dowels in a square, holds the corners loosely, pushes one sideways, and the square folds over; then she sets a fifth dowel across the diagonal, pushes the same corner exactly as hard, and the shape stays where it is. "A square folds, but a triangle can't fold unless something actually breaks."
 
 "Okay, but we're doing it flat and wide," Sam says. "Flat and wide is fine, it's already glued at the corners and it's not coming apart now."
 
@@ -46,7 +46,7 @@ Before anything gets loaded, every group has to write down a prediction, in poun
 
 On the Tuesday a bucket hangs from the middle of each bridge and the weights go in a pound at a time, the whole room counting out loud together. The first bridge goes at three, which gets a laugh out of the group it belongs to, and two more come apart before eight. Theirs holds to eleven and then folds sideways, all at once, exactly the way Ruth's square went over under one finger, rather than snapping, and all three of them are down after the pieces while the bucket still swings. Sam says eleven out loud twice, then that he would have written a lower number if anybody had let him, and across the room Ruth's takes nineteen pounds and does snap, in the middle of the diagonal, which half the room makes a noise about.
 
-"I told you," Ruth says, to the room rather than to anyone in it. "Triangles hold and squares fold, that's the whole of it, and the one you built was a square."
+"I told you," Ruth says, to the room rather than to anyone in it. "Triangles hold and squares fold, and the one you built was a square."
 
 "Ruth," Sam says.
 
@@ -66,9 +66,9 @@ They are dividing fractions by turning the second fraction upside down and multi
 
 He draws a rectangle, shades half of it, then cuts the shaded half into pieces, talking the whole way through about the question underneath the question, and Chloe follows him as far as the shading, loses track of what the pieces are pieces of, and is left looking at a rectangle with lines across it.
 
-Sam gets it, announcing the fact with one loud grunt; Kavi says he already knew it, out of a book, and is told that this is fine but he should listen anyway; Ruth, four problems further down the packet, is on to the next question.
+Sam gets it, announcing the fact with one loud grunt; Kavi says he already knew it, out of a book, and is told that this is fine but he should listen anyway; Ruth, three problems further down the packet, is on to the next question.
 
-Marisol asks him to do the rectangle again from the beginning, and he redraws it in the same order with the same three lines. Owen asks something two steps further back than that, about which of the two numbers the flipping is supposed to happen to, and when Mr. Baptiste answers and puts a question back Owen looks at the board and says he has lost the thread of it, so he is told that this is fine, that the whole thing gets done again tomorrow, and he goes back to his sheet, where he stays, quiet, for the rest of the lesson.
+Marisol asks him to do the rectangle again from the beginning, and he redraws it exactly as before, three lines again. Owen asks something two steps further back than that, about which of the two numbers the flipping is supposed to happen to, and when Mr. Baptiste answers and puts a question back Owen looks at the board and says he has lost the thread of it, so he is told that this is fine, that the whole thing gets done again tomorrow, and he goes back to his sheet, where he stays, quiet, for the rest of the lesson.
 
 "Does it work with negative numbers too, or is that a different rule again," somebody asks from near the back.
 
@@ -88,13 +88,13 @@ Marisol asks him to do the rectangle again from the beginning, and he redraws it
 
 Around them the rest of the class is already standing, chairs scraping, Sam's bag over his shoulder before Mr. Baptiste has finished the sentence, while Chloe sits in the middle of it and watches a conversation go on over her head about a question she asked first, and her ears stay hot for an hour afterward, through the break and through most of the lesson after it.
 
-The packets here belong to whoever works in them: they live in your bag, they go where you go, and you fill them in yourself in whatever gap opens between one thing and the next. That night Chloe gets hers out and sits on the floor with her back against the bed. The first problem is a half divided by a quarter, so she draws the rectangle the way he drew it, shades in the half, then tries to put a quarter inside the shaded part, where she gets stuck on whether the quarter is a quarter of the rectangle or a quarter of the half. She draws it a second time and gets stuck on the same line, so she draws it a third time with her own numbers instead of his, because his numbers have been sitting in her head since two o'clock and taking her nowhere: three quarters divided by an eighth. She shades three quarters of a rectangle, rules the eighths straight down across the whole of it, top to bottom, all eight, and counts how many land inside the shaded part.
+The packets here belong to whoever works in them: they live in your bag, they go where you go, and you fill them in yourself in whatever gap opens between one thing and the next. That night Chloe gets hers out and sits on the floor with her back against the bed. The first problem is a half divided by a quarter, so she draws the rectangle the way he drew it, shades in the half, then tries to put a quarter inside the shaded part, where she gets stuck on whether the quarter is a quarter of the rectangle or a quarter of the half. She draws it a second time and gets no further, so she draws it a third time with her own numbers instead of his, because his numbers have been sitting in her head since two o'clock and taking her nowhere: three quarters divided by an eighth. Shading three quarters of a rectangle, she rules the eighths straight down across it, top to bottom, all eight, and counts how many land inside the shaded part.
 
 Six.
 
 Priya's light goes off.
 
-Chloe sits in the dark with the paper on her knees and the pencil in her hand, and the question turns over into a different one: dividing by an eighth is asking how many eighths fit inside the thing you started with, which is the whole of it and all it ever was. Three quarters is six of them, and six is also the answer you get by multiplying three quarters by eight, which means that multiplying by eight is the only thing turning the eighth upside down was ever doing.
+Chloe sits in the dark with the paper on her knees and the pencil in her hand, and the question turns over into a different one: dividing by an eighth is asking how many eighths fit inside the thing you started with, and that is all it has ever asked. Three quarters is six of them, and six is also the answer you get by multiplying three quarters by eight, which means that multiplying by eight is the only thing turning the eighth upside down was ever doing.
 
 "Oh," she says, out loud, in the dark, at eleven at night.
 
@@ -102,7 +102,7 @@ She does the next three problems in the packet, then goes back through the eight
 
 \---
 
-Swimming is at four every afternoon, and because Chloe arrived unable to swim she is put in the group at the shallow end of the pool with an instructor called Deb, who has them blow bubbles with their faces in the water for two days before anybody goes anywhere. By the end of the second week Chloe can manage a length provided she stops once in the middle, while Sam swims two lengths straight through and brings the fact up at dinner most days.
+Swimming is the last thing every afternoon, and because Chloe arrived unable to swim she is put in the group at the shallow end of the pool with an instructor called Deb, who has them blow bubbles with their faces in the water for two days before anybody goes anywhere. By the end of the second week Chloe can manage a length provided she stops once in the middle, while Sam swims two lengths straight through and brings the fact up at dinner most days.
 
 "It's not a race."
 
@@ -112,7 +112,7 @@ Swimming is at four every afternoon, and because Chloe arrived unable to swim sh
 
 "Somebody's still first out of the water," Sam says, "and that's a race whether anybody calls it one or not."
 
-Ruth is in the same group and complains about all of it at a volume Chloe would not attempt: about Deb, about the bubbles, about the two days spent on them, and about a boy in their lane who splashes on purpose, until on the Thursday she swims the whole length straight through and comes up at the far end with her entire face rearranged, and Sam, holding the lane rope, watches her do it.
+Ruth is in that group and complains about all of it at a volume Chloe would not attempt: about Deb, about the bubbles, about the two days spent on them, and about a boy in their lane who splashes on purpose, until on the Thursday she swims the whole length straight through and comes up at the far end with her entire face rearranged, and Sam, holding the lane rope, watches her do it.
 
 \---
 
@@ -126,11 +126,11 @@ Owen leaves in week two, and the way Chloe finds out is that he is in her hall o
 
 "He wasn't having fun, and that's the whole reason, they'll let you go home for that."
 
-Chloe waits for the rest of it, giving him a beat to add to it, and by the end of the beat Sam has gone back to the wrapper on something.
+Chloe waits, giving him a beat to add to it, and by the end of the beat Sam has gone back to the wrapper on something.
 
 "What do you mean he wasn't having fun, what does that even mean?"
 
-"He said it flat out, that he wasn't having fun, so he left, and that's the whole story."
+"He said so, straight out, that he wasn't having fun, so he left, and that's the whole story."
 
 "But it is fun, all of it, every single part I can think of."
 
@@ -142,9 +142,9 @@ Chloe waits for the rest of it, giving him a beat to add to it, and by the end o
 
 "At my school you do the same paper for a month."
 
-"Yeah," Sam says, "mine too, same paper till everybody's got it." He says it the way a person agrees about the weather, and goes back to his food.
+"Yeah," Sam says, "mine too, same paper till everybody's got it," and goes back to his food.
 
-Ruth is at the end of the table with her chin on her hand, pushing the same piece of food in slow circles around her plate.
+Ruth is at the end of the table with her chin on her hand, pushing one piece of food in slow circles around her plate.
 
 "He was crying in the stairwell, on Thursday, and I'm not being mean by saying it, that's what he was doing," she says to her tray.
 
@@ -158,9 +158,9 @@ Ruth is at the end of the table with her chin on her hand, pushing the same piec
 
 Chloe's own fork stops halfway to her mouth, three questions backed up behind it: whether anybody went into the stairwell after him, whether he had to say it out loud to somebody before they would let him go, and how long it was between the saying and his mom being at the door.
 
-Owen, then the bridge, then Owen again, and the loop refuses to run further than that, so Chloe picks her roll apart, one piece at a time, lining the pieces along the edge of her tray, going back through the same two facts: the bridge was fun, and Owen must not have liked it, which sit crosswise, and neither will move over for the other. She starts from the beginning and checks them a third time, long after Ruth has gotten up and taken her tray, trying to work out how a person could stand in front of a bridge and want to be somewhere else.
+Owen, then the bridge, then Owen again, and the loop refuses to run further than that, so Chloe picks her roll apart, one piece at a time, lining the pieces along the edge of her tray, going back through the two facts: the bridge was fun, and Owen must not have liked it, which sit crosswise, and neither will move over for the other. Long after Ruth has gotten up and taken her tray, she starts from the beginning and checks them a third time, trying to work out how a person could stand in front of a bridge and want to be somewhere else.
 
-Four more leave before the end of the month, each the same way, so that by the fourth time Chloe reads the event off the corridor: a door that was shut at breakfast standing open in the afternoon, a mattress with the sheets gone.
+Four more leave before the end of the month, so that by the fourth time Chloe reads the event off the corridor: a door that was shut at breakfast standing open in the afternoon, a mattress with the sheets gone.
 
 \---
 
@@ -202,7 +202,7 @@ Ruth opens her mouth, closes it, opens it a second time, and Sam points at her w
 
 "It's what a mouth is for, lying included, whether you like it or not."
 
-They go at it for the rest of dinner and most of the walk back across the grass, Ruth saying tidally locked four more times and Kavi still arguing that the moon is doing it deliberately, in a voice gone flat mostly because Sam keeps saying stuck.
+They go at it for the rest of dinner and most of the walk back across the grass, Ruth saying tidally locked five more times and Kavi still arguing that the moon is doing it deliberately, in a voice worn down mostly because Sam keeps saying stuck.
 
 Ten minutes into the walk back it catches up with her: Kavi, the moon, her own mouth already moving ahead of the check she has run on every sentence since November.
 

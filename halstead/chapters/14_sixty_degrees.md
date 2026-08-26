@@ -4,7 +4,7 @@
 
 The long field runs north from the back of Building Three for three hundred metres to a fence, with a road past it and open ground the whole way.
 
-Archery is ordinary for three weeks, because three weeks is butts at twenty metres, then thirty, then fifty, an hour a day of being told what your elbow is doing by an instructor who walks the line every eleven minutes to say it again. Chloe is on the gold most of the time by the end of the second week, bored by the middle of the third, and so is everybody near her.
+Archery is ordinary for three weeks, because three weeks is butts at twenty metres, then thirty, then fifty, an hour a day of being told what your elbow is doing by an instructor who walks the line every ten minutes to say it again. Chloe is on the gold most of the time by the end of the second week, bored by the middle of the third, and so is everybody near her.
 
 Then Coach Bell puts a metronome on a post at the near end of the field.
 
@@ -16,7 +16,7 @@ Then Coach Bell puts a metronome on a post at the near end of the field.
 
 "Right, so a point stays away from a person, even by accident."
 
-He walks them down the field to show them the lanes, two firing lines seventy metres apart, side by side, both facing north, each bending in toward the other until they meet at a point where the angle holds at sixty degrees. That is where the flight paths cross, at the top of the arc, where an arrow released early from one line and an arrow released on time from the other can end up in the same patch of sky at the same instant, and whatever is left of them keeps travelling and comes down together in open grass a hundred and fifty metres on, behind a rope and a sign where the target block stays all year.
+Bell walks them down the field to show them the lanes, two firing lines seventy metres apart, side by side, both facing north, each bending in toward the other until they meet at a point where the angle holds at sixty degrees. That is where the flight paths cross, at the top of the arc, where an arrow released early from one line and an arrow released on time from the other can end up in one patch of sky at the same instant, and whatever is left of them keeps travelling and comes down together in open grass a hundred and fifty metres on, behind a rope and a sign where the target block stays all year.
 
 "At the top the arrow has stopped climbing and has yet to start dropping, so it hangs there," Bell says, putting a hand out flat and holding it. "If you're late, it's barely moved while you were being late, and that's the only thing you've got going for you, so you'll want all of it."
 
@@ -44,7 +44,7 @@ Chloe's whole line is shouting before the pieces land, somebody at the far end i
 
 "Sunday," Odile says, once she can get a whole word out. "My brother's here Sunday, he's been three times and he has yet to see anybody do it, so I'm making him stand at your end."
 
-Sam wants the sound at dinner, so Chloe tries it with her mouth four times and gets nowhere near it, because only the arrow makes it, and Kavi, who missed it, says it sounds like somebody standing on a stick, while Odile calls back from two tables away that it is more of a knock than a crack. By March most of the year has managed a collision at least once, though Odile does it four days out of five, and in April she does it twice inside one hour with the second one coming down in three pieces.
+Sam wants the sound at dinner, so Chloe tries it with her mouth twice and gets nowhere near it, because only the arrow makes it, and Kavi, who missed it, says it sounds like somebody standing on a stick, while Odile calls back from two tables away that it is more of a knock than a crack. By March most of the year has managed a collision at least once, though Odile does it three days out of five, and in April she does it twice inside one hour with the second one coming down in three pieces.
 
 On the first morning of the year Ruth wants to know what everybody has got, and Chloe reads hers off the sheet and gets as far as the language.
 
@@ -54,7 +54,7 @@ On the first morning of the year Ruth wants to know what everybody has got, and 
 
 "How is doing a whole extra language cheating?"
 
-"Because it's already in everything," Ruth says, stopping with her tray up on one arm. "It's in half of Spanish and most of French, both of which you've done, so you'll sit down in September already knowing a third of it. That's collecting on a language you did four years ago rather than learning one."
+"Because it's already in everything," Ruth says, stopping with her tray up on one arm. "It's in half of Spanish and most of French, both of which you've done, so you'll sit down in September already knowing a third of it. That's collecting on a language you did three years ago rather than learning one."
 
 "That's the entire reason I took it, though."
 
@@ -74,23 +74,23 @@ On the first morning of the year Ruth wants to know what everybody has got, and 
 
 "Yes," Chloe says, and gets on the stairs before Ruth can start again.
 
-Calculus arrives in mathematics in the second week, on the sheet, in the same slot, and astronomy runs the autumn term on mostly arithmetic: how you get a mass off an orbit, why the rocket equation punishes you the way it does, why that leaves anybody's rocket mostly fuel, and how a distance to somewhere out of reach gets measured and then checked against a second, unrelated method. In November they spend a fortnight on putting an age on the universe, and Chloe writes eleven pages on the two ways of measuring it, which come out different, and she is still turning that over at dinner three days later.
+Calculus arrives in mathematics in the second week, on the sheet, in the slot the mathematics already had, and astronomy runs the autumn term on mostly arithmetic: how you get a mass off an orbit, why the rocket equation punishes you the way it does, why that leaves anybody's rocket mostly fuel, and how a distance to somewhere out of reach gets measured and then checked against a second, unrelated method. In November they spend a fortnight on putting an age on the universe, and Chloe writes fifteen pages on the two ways of measuring it, which come out different, and she is still turning that over at dinner three days later.
 
-Rhetoric is an hour a week of dismantling a speech to find the place where the person giving it is being paid, usually about two thirds of the way down.
+Rhetoric is an hour a week of dismantling a speech to find the place where the person giving it is being paid, usually two thirds of the way down.
 
 Art history is in the spring, and in February the instructor projects a Dutch interior with a woman reading in it and says what it went for at auction in 1959 and again in 1998\.
 
 "I can't make that work," Chloe says to Kavi at dinner. "It's a picture, the same picture in both of those numbers, and it sat in a room untouched the whole way between them."
 
-"Inflation," Kavi says, eyes on his plate.
+"Inflation," Kavi says around a mouthful.
 
-"I took the inflation out, and it's still nine times what it was," she says, both elbows on the table. "And if I painted that, right now, every brush stroke the same, it's worth four pounds, whereas he painted it and it's worth a house, so the number is measuring something other than the picture, and every adult in that room changed the subject when I asked what."
+"I took the inflation out, and it's still six times what it was," she says, both elbows on the table. "And if I painted that, right now, every brush stroke matched, it's worth thirty pounds, whereas he painted it and it's worth a house, so the number is measuring something other than the picture, and every adult in that room changed the subject when I asked what."
 
 "Ask her again, properly this time."
 
 "I did ask her, and she told me it was a good question for a different course."
 
-Block two is wood shop and the pieces have got bigger, so she spends the autumn on a chair that has to take an adult sitting down hard and the spring on a second for somebody else, going in on Sundays too, though the two Saturdays a month the man opens it are better. In March he demonstrates a Japanese corner joint to six students that holds without a nail or a screw or any glue, and Chloe cuts it eleven times over three weeks before one holds when she pulls on it with everything she has, and that eleventh goes on the shelf over her desk.
+Block two is wood shop and the pieces have got bigger, so she spends the autumn on a chair that has to take an adult sitting down hard and the spring on a second for somebody else, going in on Sundays too, though the two Saturdays a month the man opens it are better. In March he demonstrates a Japanese corner joint to six students that holds without a nail or a screw or any glue, and Chloe cuts it a dozen times over three weeks before one holds when she pulls on it with everything she has, and that twelfth goes on the shelf over her desk.
 
 In May her chisel starts rolling its edge every twenty minutes, so she takes it up to the front.
 
@@ -128,15 +128,15 @@ Chloe puts her fork down, but she keeps looking at the table.
 
 "That's annoying," she says, "because now I have to go and build the thing I came in here to say was wrong."
 
-She reads for two days, and on the Tuesday she reads all afternoon and most of the evening before being sick at ten o'clock, then sits on the bathroom floor with her back against the bath and goes back to it for another hour.
+The reading takes two days, and on the Tuesday she goes at it all afternoon and most of the evening before being sick at ten o'clock, then sits on the bathroom floor with her back against the bath and goes back to it for another hour.
 
 On the Wednesday she builds the other side, because a man writing in 1961 makes the case she cannot get past, and it takes most of the day to get him into one place and see the shape of it. There is a hole in the middle of what he says and he walks straight past it, so she writes the missing piece in herself, on his side of the page, since knocking down the weak version afterward would be doing his job for him. Then she finds the three objections that open cracks in what he has built, and answers all three.
 
 By Thursday afternoon she has stopped being angry and started being interested.
 
-She hands it in on the Monday, fourteen thousand words over twenty-eight pages, and Hearn gives it back a week later with a B on the front.
+It goes in on the Monday, fourteen thousand words over twenty-eight pages, and Hearn gives it back a week later with a B on the front.
 
-The note runs eleven lines, and it says she hedges, twice on page nine, once on page twenty-two, and the whole of the conclusion, whose last line reads: *it could be argued that, on balance, this was perhaps not the right decision.* She already answered the three objections earlier, so the hedge only asks the reader to answer them again, and she keeps apologising for the argument in the middle of making it. An argument you apologise for is a request. Make it or leave it out.
+The note runs to half a page, and it says she hedges, twice on page eight, once on page twenty-two, and the whole of the conclusion, whose last line reads: *it could be argued that, on balance, this was perhaps not the right decision.* She already answered the three objections earlier, so the hedge only asks the reader to answer them again, and she keeps apologising for the argument in the middle of making it. An argument you apologise for is a request. Make it or leave it out.
 
 She finds Ruth on the stairs between the second floor and the third.
 
@@ -144,7 +144,7 @@ She finds Ruth on the stairs between the second floor and the third.
 
 "On twice the length, you did double the words and he took a grade off you for it."
 
-"That's beside the point of why I'm annoyed," Chloe says, holding the pages in both hands and going up the stairs backwards. "He's got page nine and page twenty-two, the two places where I stopped, right after I'd already answered it, and put a sentence in to show I knew what it sounded like, so I put them there on purpose, he found both, and those two were the whole of it."
+"That's beside the point of why I'm annoyed," Chloe says, holding the pages in both hands and going up the stairs backwards. "He's got page eight and page twenty-two, the two places where I stopped, right after I'd already answered it, and put a sentence in to show I knew what it sounded like, so I put them there on purpose, he found both, and those two were the only ones in twenty-eight pages."
 
 "So what you're telling me is he's right."
 
@@ -196,18 +196,18 @@ There is a pause of a second and a half.
 
 "Good luck," Sinclair says.
 
-Two hundred students come out of eleven rooms at once and the shouting in the main stairwell comes up through the floor into Chloe's feet, because forty adults need doors to get anywhere and there are only nine, whereas the students know which third floor door hangs loose in its frame, which second floor cupboard has a window in the back of it, where the bannister has a gap you can get an arm through, and which kitchen door makes a noise when it opens.
+Two hundred students come out of a dozen rooms at once and the shouting in the main stairwell comes up through the floor into Chloe's feet, because thirty-odd adults need doors to get anywhere and there are only six, whereas the students know which third floor door hangs loose in its frame, which second floor cupboard has a window in the back of it, where the bannister has a gap you can get an arm through, and which kitchen door makes a noise when it opens.
 
-People say afterward that Ruth ran the east stairwell, giving orders from the first thirty seconds with everybody on those stairs doing what she told them, while in four minutes Nadia takes the third floor and splits it: two on each stair head, four hauling crates of markers and paint up from the second floor so that every landing keeps its own kit, the rest told where to stand and stay. Eleven students take four instructions from her in a row before any of them thinks about it.
+People say afterward that Ruth ran the east stairwell, giving orders from the first thirty seconds with everybody on those stairs doing what she told them, while in three minutes Nadia takes the third floor and splits it: two on each stair head, three hauling crates of markers and paint up from the second floor so that every landing keeps its own kit, the rest told where to stand and stay. Eleven students take three instructions from her in a row before any of them thinks about it.
 
-Sam is out inside the first ninety seconds, because he goes over the second floor bannister onto three teachers coming up, which works, then lands badly, which does not, and a teacher marks him out with a knee between his shoulder blades until he stops moving. Marked out means done, whether by a knee in your back or paint on you, and it means the bench by the front doors until four, so he talks about it from there all afternoon, again at dinner, and he is still talking about it in June.
+Sam is out inside the first ninety seconds, because he goes over the second floor bannister onto three teachers coming up, which works, then lands badly, which does not, and a teacher marks him out with a knee between his shoulder blades until he stops moving. Marked out means done, whether by a knee in your back or paint on you, and it means the bench by the front doors until it ends, so he talks about it from there all afternoon, again at dinner, and he is still talking about it in June.
 
-Chloe spends the whole Watch on the third floor landing with five others, six markers pointed down into the stairwell, firing to meet whatever comes up before it clears the turn, and when an incoming ball meets one of theirs there is a flat wet crack and paint everywhere at once, both spent short of the landing. Below, six more crack together, the sound carrying up through the floor, and somebody down there is shouting a count she can hear without making out the numbers. Her arms ache by three o'clock, and she stays until it is over.
+Chloe spends the whole Watch on the third floor landing with five others, six markers pointed down into the stairwell, firing to meet whatever comes up before it clears the turn, and when an incoming ball meets one of theirs there is a wet crack and paint everywhere at once, both spent short of the landing. Below, six more crack together, the sound carrying up through the floor, and somebody down there is shouting a count she can hear without making out the numbers. Her arms ache by three o'clock, and she stays until it is over.
 
-By half past three there are four teachers left standing in the whole building, three of them in the same corridor, and Mr. Hearn is the last, with the library, one door, one window, a room full of furniture, and eleven students trying to get in there from twenty past three. It takes until eighteen minutes to four, by which point there are twenty on that corridor and somebody has brought a bench up from the second floor. People say afterward that when they finally got him he said "that's fine," put his glasses back on, and asked the boy nearest him whether he was done with the Burke.
+By half past three there are four teachers left standing in the whole building, three of them in one corridor, and Mr. Hearn is the last, with the library, one door, one window, a room full of furniture, and fifteen students trying to get in there from twenty past three. It takes until eighteen minutes to four, by which point there are twenty on that corridor and somebody has brought a bench up from the second floor. People say afterward that when they finally got him he said "that's fine," put his glasses back on, and asked the boy nearest him whether he was done with the Burke.
 
 The board the next day says the staff lost the building at three forty-two, then gives the students a B and lists eleven failures.
 
-Chloe reads the eleven failures in the corridor, where number four is about the east stairwell and names two students, neither of them Ruth. Number nine says that at no point in the two hours did anybody establish how many adults were in the building, and she stands in front of that one with her arms crossed until somebody behind her needs the space, because she spent those two hours on a landing while the number of teachers upstairs went uncounted.
+Chloe reads the eleven failures in the corridor, where number three is about the east stairwell and names two students, neither of them Ruth. Number seven says that at no point in the two hours did anybody establish how many adults were in the building, and she stands in front of that one with her arms crossed until somebody behind her needs the space, because she spent those two hours on a landing while the number of teachers upstairs went uncounted.
 
-She is still on number nine at dinner, where Sam is describing the bannister for the fourth time to two people who were standing underneath it.
+Number seven is still with her at dinner, where Sam is describing the bannister for the fourth time to two people who were standing underneath it.

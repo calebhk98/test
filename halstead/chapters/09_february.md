@@ -2,17 +2,17 @@
 
 *February 2013 – March 2013*
 
-February goes by with the telephone silent, and the sheet at twenty past nine is the same sheet as Monday's with different numbers in it, so she finishes it, checks it, and sits behind it with her hands in her lap for the rest of the period. At lunch she carries her tray past four empty seats to get to the one at the very end, the same one every day, past where the talk reaches. She used to keep a library book open against her milk carton there, and the carton stands on its own now, so her eyes stay on the tray until the bell. In the afternoon they do a worksheet about the parts of a plant, which has a diagram on it that you colour in once you have finished the words, and Chloe finishes the words in about four minutes, then colours the diagram very slowly, going right up to the lines and stopping exactly there. She has seen Dr. Ammons four times since October, and at the last of them, a fortnight ago, she was asked whether any of it had got easier and said some of it had.
+February goes by with the telephone silent, and the sheet at twenty past nine is the same sheet as Monday's with different numbers in it, so she finishes it, checks it, and sits behind it with her hands in her lap for the rest of the period. At lunch she carries her tray past six empty seats to get to the one at the very end, hers every day, past where the talk reaches. She used to keep a library book open against her milk carton there, and the carton stands on its own now, so her eyes stay on the tray until the bell. In the afternoon they do a worksheet about the parts of a plant, which has a diagram on it that you colour in once you have finished the words, and Chloe finishes the words in three minutes, then colours the diagram very slowly, going right up to the lines and stopping exactly there. There have been four visits to Dr. Ammons since October, and at the last of them, a fortnight ago, she was asked whether any of it had got easier and said some of it had.
 
-She comes home and goes upstairs with her coat still on, so that when her mom comes up to say that dinner is in ten minutes she finds her on the floor in the gap between the bed and the wall, with her back against the bed and her knees pulled up.
+Home from school, she goes upstairs with her coat still on, so that when her mom comes up to say that dinner is in ten minutes she finds her on the floor in the gap between the bed and the wall, with her back against the bed and her knees pulled up.
 
-The crying is still ahead of her, and she is sitting in the gap with her hands flat on the carpet either side of her.
+The crying is still ahead of her, and she is sitting in the gap with a fistful of carpet in either hand.
 
 "Chloe, honey, what are you doing down there on the floor?"
 
 Then it comes out of her all at once and she can't get one word of it out whole, so what comes out is please, over and over, in pieces, in the gaps where she can get any air.
 
-She says she'll be good, and that she'll do the dishes every single night for the rest of her life. She'll do her dad's jobs as well, all of them, before anybody has to ask her. They can take the bike back, because she has no use for it and had none for it in July either. Christmas can go, this year and every year after it, and they can have her birthday too, the whole thing, cake and candles, since a birthday is one more thing she can do without. Please, about nine more times in a row, and that one thing is the last thing she will ever ask anybody for, for the whole rest of her life, if they will please just let her go to that school.
+She says she'll be good, and that she'll do the dishes every single night for the rest of her life. She'll do her dad's jobs as well, all of them, before anybody has to ask her. They can take the bike back, because she has no use for it and had none for it in July either. Christmas can go, this year and every year after it, and they can have her birthday too, the whole thing, cake and candles, since a birthday is one more thing she can do without. Please, six more times in a row, and that one thing is the last thing she will ever ask anybody for, for the whole rest of her life, if they will please just let her go to that school.
 
 Her mother is down on the floor with her by then, in the gap, with both arms round her. "Baby, breathe for me, just breathe, because you have to breathe before you can talk about any of it."
 
@@ -36,7 +36,7 @@ Later, when she is in bed and supposed to be asleep, the two of them are at the 
 
 Her voice comes harder now. "Say something, Dave, actually say something, instead of standing in doorways with a dishcloth."
 
-A chair scrapes on the kitchen tiles, and somebody runs the tap three or four seconds before shutting it off again.
+A chair scrapes on the kitchen tiles, and somebody runs the tap for a second or two before shutting it off again.
 
 "What do you want me to say, Meg, when you already know what I think? I've thought it since the car ride home in July, I've thought it every day since, and you've known that the whole time without me having to say it out loud at this table."
 
@@ -70,7 +70,7 @@ Chloe stays standing. "Am I going, though, is it a real thing, are you actually 
 
 She screams, at a volume that surprises all three of them, and then she is up off the floor and onto her dad, who catches her most of the way, and she is saying thank you into his shoulder with no gap between the words. Then she's off him and around the coffee table and holding onto her mother's legs with both arms, saying it to her instead, thank you, thank you, I'll be so good, I'll be so good, thank you.
 
-She runs upstairs, then comes back down twenty seconds later, and stops on the third step from the bottom with both hands on the rail.
+Twenty seconds after running upstairs she is back down, stopped on the third step from the bottom with both hands on the rail.
 
 "Can I tell Ruth, can I call her right now?"
 
@@ -88,13 +88,13 @@ Her parents sit in the living room and listen to her going back and forth over t
 
 Her mom's voice drops to something Chloe catches only just. "I know what she's like."
 
-The house comes up in April, on a Saturday, with Chloe up the road at the Petersons' for the afternoon. Her dad has the letter open on the kitchen table in front of him, and her mother stays standing at the counter for the whole of it with the mug in both hands.
+The house comes up in April, on a Saturday, with Chloe up the road at the Petersons' for the afternoon. Her dad has the letter open on the kitchen table in front of him, and her mother stays standing at the counter with the mug in both hands.
 
 "They're offering us a house," her dad says, "ten minutes from campus, furnished, and they pay for it the whole time she's enrolled, and if she leaves it stops, which is the only condition on the deal."
 
 "No, absolutely not, and I'm not going to spend an hour talking myself into it either," her mother says.
 
-"Meg, we'd see her every day of the week instead of nine weeks a year, and that's the whole trade they're offering us."
+"Meg, we'd see her every day of the week instead of ten weeks a year, and that's the whole trade they're offering us."
 
 "I heard you the first time, Dave, and I said no the first time too, and neither of those things has changed in the last thirty seconds."
 
@@ -108,7 +108,7 @@ Dave looks at the table.
 
 "It's how it is, though, and you know it is, because you said yes to the whole idea back in July, before either of us had even heard the word furnished."
 
-Her mother puts the mug in the sink and runs water into it. Her dad folds the letter back along the crease it came in, and at four he walks up the road for Chloe, who talks the whole way back down it about a dog that is allowed on the furniture.
+Her mother puts the mug in the sink and runs water into it. Her dad folds the letter back along the crease it came in, and at five he walks up the road for Chloe, who talks the whole way back down it about a dog that is allowed on the furniture.
 
 They drive out on the Friday for the day where Halstead looks at her, and the building is a different building in April than it was in July, because it is raining and every hall in it is full of people.
 
@@ -122,13 +122,13 @@ A woman called Mrs. Okonkwo, who walks backward half the time so that she can ta
 
 Her mom asks three questions about the nurse and gets three straight answers, and then a fourth about who is awake at night, and gets that one answered too.
 
-In the afternoon they put Chloe in a second grade room while her parents go off somewhere with somebody else, and there are twelve kids in it doing something with a map of a river, and a boy at her table lends her a pencil before she asks for one. At the end of it a man whose beard is going grey sits down on a chair the same size as hers and asks her what she would do with an entire day if the whole day were hers to spend, and she talks for four minutes straight, and he lets her get all the way to the end of it.
+In the afternoon they put Chloe in a second grade room while her parents go off somewhere with somebody else, and there are twelve kids in it doing something with a map of a river, and a boy at her table lends her a pencil before she asks for one. At the end of it a man whose beard is going grey sits down on a chair the same size as hers and asks her what she would do with an entire day if the whole day were hers to spend, and she talks for five minutes straight, and he lets her get all the way to the end of it.
 
 No test arrives, and she keeps waiting for somebody to hand her one, right through the afternoon and out to the car.
 
 It's dark by the time they're back on the road.
 
-Chloe talks for the whole four hours of it. She talks about the room she'd have and whether you get any say in which one of them you get. She talks about the woman who walked them around, and about whether Sam is one of the nine Sams or a different Sam altogether. She wants to know what the food is like in April as opposed to July, and whether the robot arm on the second floor is the same one or a newer one, and she asks her dad six questions in a row, running each one into the next before he can answer. Somewhere in the third hour she falls asleep in the middle of a sentence about the pool, and when the car stops in the driveway she wakes up and picks that same sentence back up more or less where she dropped it.
+Chloe talks for the whole drive. She talks about the room she'd have and whether you get any say in which one of them you get. She talks about the woman who walked them around, and about whether Sam is one of the six Sams or a different Sam altogether. She wants to know what the food is like in April as opposed to July, and whether the robot arm on the second floor is the one from July or a newer one, and she asks her dad six questions in a row, running each one into the next before he can answer. Somewhere in the third hour she falls asleep in the middle of a sentence about the pool, and when the car stops in the driveway she wakes up and picks the sentence back up more or less where she dropped it.
 
 Her dad carries her bag in and puts it at the bottom of the stairs, and she goes through to the kitchen and gets herself a glass of water at the sink, standing on the edge of the cupboard door to reach the tap the way she has been told not to.
 

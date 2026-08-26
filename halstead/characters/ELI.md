@@ -1,10 +1,12 @@
 # Eli Marsh
 
-A security-minded problem-solver who treats every serious risk as a mechanism
-to understand and out-design, and who wants to be handed the hard thing before
-anyone tells him he has earned it.
+The one who says the thing nobody else in the room was going to say, and says
+it as a joke, and is usually right, and cannot see why being right about it is
+not the end of the matter. A security-minded problem-solver who treats every
+serious risk as a mechanism to out-design, and who wants to be handed the hard
+thing before anyone tells him he has earned it.
 
-**Age span:** 13 to 21 | **MBTI:** ISTP (a writing aid, not a claim) | **IQ:** comfortably inside the top tenth of a percent by outside norms, and unremarkable in the only room that has ever measured him
+**Age span:** 13 to 21 | **MBTI:** ENTP (a writing aid, not a claim) | **IQ:** comfortably inside the top tenth of a percent by outside norms, and unremarkable in the only room that has ever measured him
 
 ## The thing to get right first
 
@@ -20,6 +22,35 @@ false modesty and it is not a wound; it is a calibration problem. The reader
 should be able to see the gap while he cannot. Where anything below contradicts
 this, this wins.
 
+**The joke is the channel, not the decoration.** He is the funniest person in
+his group and the humour is not a garnish on an otherwise flat register; it is
+the register. He arrives at a serious subject sideways, through a bit, a needle,
+a stake reframed as a race. Writing him deadpan and technical and then adding
+one joke an hour produces a different man, and it produces the man three of the
+others already are.
+
+What the humour is made of, in the order he reaches for it:
+
+- **The needle.** He asks the small question the rest of the room has politely
+  agreed to leave alone: whether the arrangement somebody is describing is
+  actually allowed, what it actually pays, what the actual number is. Two or
+  three of these in a row, each one a little narrower, and he does not stop
+  when the answers get shorter.
+- **The count.** He says the plain unwelcome total out loud, at the moment
+  everybody else has decided to be encouraging about it, and he is right.
+- **The stake as a game.** A consequence that could ruin him described as a run
+  to be optimised. This is how he keeps a frightening thing workable.
+- **Himself as the material.** His own disasters go to the group as they
+  happen, in instalments, with the punchline volunteered before anyone else can
+  reach for it.
+
+**And he does not repair.** Told that a remark landed badly, he defends its
+accuracy rather than withdrawing it, in good faith, because to him those are
+two separate questions and only one of them is his. He is not being cruel and
+he is not pretending. He genuinely does not think a true count can be an
+unkindness, and this is the single most expensive thing about him. He will not
+learn it from being told once, and he does not sulk about being told.
+
 ## How they talk
 
 He restates what was just said in his own terms and then answers the
@@ -33,19 +64,28 @@ finished rather than clipped.
 
 He opens on the fact, never on a frame.
 
-He essentially does not ask. When he needs information he states the near-answer
-and lets the other person correct it.
+**Questions, in two kinds, and he is full of them.** He does not ask for
+information: when he needs a fact he states the near-answer flat and lets the
+other person correct it, which gets him the answer without the asking. What he
+does ask, constantly, is the other kind. Short, closed, one clause, aimed at
+the number or the permission the other person has been talking around, and he
+asks the next one before the first has finished being answered. Three in a row
+is his natural run. It reads as teasing and it is teasing, and it is also how
+he finds out what he wanted to know.
 
-Every comparison he makes is mechanical: cameras, pipelines, schedules,
-enforcement. He never reaches for an image, and a simile in his mouth is always
-somebody else's line.
+**One kind of image, and it is a hazard.** He is not a plain-mechanism speaker
+in the way this cast's other technical people are. When a position is worse
+than the person standing in it thinks, he draws the drop: the narrow thing
+under them, the small margin, the ordinary failed business one street over that
+used to look exactly like theirs. Always concrete, always about somebody's
+exposure, never decorative and never about himself. Outside that one use he
+compares things mechanically, to cameras, pipelines, schedules, enforcement, and
+an image reached for to sound good is somebody else's line.
 
 He treats a rule as a thing with a locatable mechanism rather than as a moral
 fact, and that shows up in his vocabulary before it shows up in his opinions.
-
-His one comic register is gamifying real stakes: a serious consequence
-described as a race, a score, a run to be optimised. It is not bravado, it is
-how he keeps a thing interesting enough to go on working on.
+Asked to justify something he has already decided, he does not appeal to
+principle, he points at what actually enforces the rule and how far it reaches.
 
 Hedges are rare and single. He never stacks two.
 
@@ -60,11 +100,11 @@ phase and no repair gesture afterward.
 | disagrees by | reframing the risk as a solvable constraint |
 | length | short by default; long only under the two conditions below |
 | at length | teaching somebody genuinely behind, or defending a risk calculus to someone whose read he wants to change |
-| jokiness | high for his register, and always the same joke: real stakes described as a game |
+| jokiness | the highest in the cast, and it is his default channel rather than a break from one |
 | hedging | rare, single, never stacked |
-| questions | almost never; he states the near-answer instead of asking |
-| figurative | not allowed, ever; all his comparisons are mechanical |
-| emotional range | narrow on the surface, and the widest thing on it is delight at being outthought |
+| questions | many, and none of them for information: short, closed, narrowing, aimed at the number somebody is talking around |
+| figurative | one permitted kind, the hazard image: the drop under somebody else's position, concrete and never about himself |
+| emotional range | narrow on the surface, and the two widest things on it are delight at being outthought and the flat refusal to be seen not joking |
 
 ## When they talk at length
 
@@ -100,6 +140,17 @@ conversation is the ceiling; a third time and it stops reading as him.
 - YES if a flat assertion is repeated with its contraction removed rather than
   intensified some other way.
 - YES if a real stake or risk is described in game or competition vocabulary.
+- YES if it is a short closed question aimed at a number or a permission the
+  other person was talking around, especially if it is the second or third such
+  question in a row.
+- YES if it states the plain unwelcome total at the moment the room had settled
+  on being encouraging.
+- YES if it draws the drop under somebody else's position in one concrete
+  picture.
+- YES if it defends the accuracy of a remark that has just landed badly, rather
+  than withdrawing it, and does so without heat.
+- YES if it hands his own disaster to the group as a bit, with the punchline
+  volunteered before anybody else can get there.
 - YES if it is very short and still lands a complete claim rather than a
   trailing fragment.
 - YES if it treats a rule or a risk as something with a locatable mechanism
@@ -109,10 +160,13 @@ conversation is the ceiling; a third time and it stops reading as him.
 - YES if a hedge appears at all and it is a single flat qualifier.
 - YES if being outthought produces open, immediate pleasure rather than a
   defence.
-- NO if the line contains a simile, a metaphor, or an invented image.
+- NO if the image is decorative, or about himself, or reached for because the
+  line needed lifting.
 - NO if it leans on institutional vocabulary: on record, noted, permitted, my
   supervisor.
-- NO if it ends on a genuine open question.
+- NO if it ends on a genuine open question of his own. His questions close.
+- NO if he apologises for a remark rather than defending what was accurate in
+  it.
 
 ## Under pressure
 
@@ -132,12 +186,68 @@ escalation.
 person whose rigour he actually wants pointed at him, his hands go still
 instead of speeding up. That is the whole tell.
 
+**Told he has hurt somebody**, he separates the two questions and answers the
+wrong one. He says, plainly and without defensiveness, that he did not say it
+was anybody's fault, that it is only the actual count, that he was not being
+harsh. All of that is true and none of it is the thing he was asked. He does
+not retract, does not sulk, and does not stop liking the person, and the next
+thing he sends them is useful, unprompted and unconnected, which is the whole
+of his apology and is not offered as one.
+
+**Frightened**, the joke gets bigger rather than smaller, and the tap under it
+goes faster. He does not go quiet. Somebody who has known him a long time reads
+the size of the bit as the size of the problem, and nobody has ever told him
+that they can.
+
 At two in the morning he is often at his best, once nobody needs anything
 explained out loud and the problem gets to be only a problem.
 
 Three ways a writer gets him wrong: writing him nervous, defensive or
 self-justifying about risk; giving him a metaphor to soften or decorate a line;
 and having him ask a genuine open question.
+
+## Stuck, bored, and wrong in public
+
+Most of his life has been spent being taught things in a room with other people
+in it, and what he does in that room is the cheapest characterisation available.
+None of it needs a school; it needs a task, a group, and somebody in charge.
+
+**Stuck.** Takes the route that was not sanctioned. He finds the answer some
+other way and presents it with working nobody can follow, and when asked to show
+the sanctioned version he is genuinely uninterested, because the answer is the
+answer. This is not laziness. The unsanctioned route is usually harder.
+
+**Bored.** Makes the next four minutes about himself. He does it well enough
+that a fifth of the time the derail is more useful than the thing it derailed,
+which is why nobody has ever managed to stop him doing it.
+
+**Interrupting.** Constantly, then apologises for it, sincerely, then does it
+again inside a minute. He is not performing the apology and he is not learning
+from it.
+
+**Publicly wrong.** He gets there before anyone else can and makes it the
+funniest thing that happened that hour. It works, everybody enjoys it, and it
+is also exactly how he avoids ever sitting in it for one second.
+
+**Working in a group.** Three ideas, none of them executed, and all three better
+than whatever the group actually did. He will not do the boring half and does
+not pretend he is going to.
+
+**Given responsibility for somebody younger.** Tangents. He teaches the
+interesting adjacent thing rather than the thing on the list, and his students
+leave excited and behind. One of them keeps at the subject for life because of
+an afternoon that was entirely off-syllabus.
+
+**Deadlines.** Two hours before, at speed, and it is fine, and he has no memory
+of it having been close.
+
+**Where he sits and what he keeps.** A different seat every day, next to
+whoever he is currently amusing. No notes of his own, ever, and he borrows
+somebody else's from the one person too polite to say no, and returns them.
+
+**What the room thinks of him.** Funny, not reliable. The person you want on the
+hard problem and not on the schedule. A quarter of any room finds him
+exhausting and would still rather he were there.
 
 ## What he is good at, and what he is not
 
@@ -243,7 +353,9 @@ Praised, he answers the actual question rather than performing modesty: what he
 hands back is the one part of the claim he can check, because a compliment is
 not gradable and a fact is.
 
-Angry, he does not raise his voice; he goes formal. Envious, briefly, of anyone
+Angry, he does not raise his voice; he goes formal. Delighted, which happens
+several times a day and is his most common state, he is loud about it in short
+bursts and then straight back to what he was doing. Envious, briefly, of anyone
 who gets to find out for certain whether they were right, because his own best
 work never comes back marked by anyone but him. Grieving the father who is not
 in the house and is not a story, the tap stops for a few seconds on the days
@@ -259,7 +371,9 @@ A free Saturday goes to whatever he is building that is not finished, or to the
 collection nobody assigned him.
 
 What he finds funny in other people is real competence spent on something small
-and pointless.
+and pointless. What makes him laugh hardest is somebody defending a position
+they have plainly already abandoned, and he will keep asking questions to watch
+them go on defending it, and then tell them afterwards that it was good.
 
 ## Interior life
 
@@ -322,11 +436,21 @@ do not know it exists.
 - Treat being outmanoeuvred by a friend as good news and say so immediately.
 - Notice the schedule or the pattern in a system before he notices the people
   running it.
+- Ask, out loud and in front of everybody, whether somebody is actually allowed
+  to do the thing they have just described themselves doing.
 - Explain something patiently and at length to somebody behind, without ever
   making them feel behind.
 - Answer *how good are you at this* with the truest number he has rather than
   the flattering one.
 - Tell somebody, uninvited, that their habits have made them an easy target.
+- Ask three narrowing questions in a row about a number somebody would rather
+  round, and not notice the room going quiet around the third.
+- Say the unwelcome total out loud in the middle of everyone else being
+  encouraging, and mean nothing personal by it.
+- Put his own worst week into the group as instalments, with the punchline
+  first.
+- Keep needling after being told to stop, then say plainly that he did not mean
+  it as blame, and mean that too.
 - Spend a whole free day on something nobody around him takes seriously, and
   defend it plainly if asked.
 
@@ -368,8 +492,10 @@ than the promise.
   a consequence interesting when other people would call it a loss.
 - Restates a challenged claim with the contraction removed.
 - Explains technical material at length to somebody behind, without visible
-  impatience.
+  impatience, and this is the one place the needling switches off completely.
+- Answers inside a minute at any hour, most nights, for years.
 - Keeps a private collection nobody around him knows about.
+- Dislikes a conversation where nobody will give him a number.
 
 ## Age and change
 
@@ -377,9 +503,11 @@ At thirteen he is already the one who gets into everything, already unhurried
 about it, and already teaching last year's subject to somebody a year behind.
 The relabelling habit is present but blunter, closer to plain contradiction.
 
-Through his teens the patience arrives, and so does the game-vocabulary humour,
-which starts as a way of making a dull task tolerable and ends as his only
-comic register.
+Through his teens the patience arrives, and the humour hardens into its adult
+shape: the needle sharpens, the stake-as-a-game vocabulary arrives to make a
+dull task tolerable and stays, and he learns that his own disasters are the best
+material he has. What does not arrive at any age is the ability to see the
+difference between a remark being accurate and a remark being worth making.
 
 As an adult everything is the same with money and consequences attached. The
 one new thing is that the rooms measuring him have got smaller and worse at it,
@@ -397,12 +525,20 @@ back is the checkable fact under the compliment. If the line defends what
 something cost, it is Kavi's. If it relabels the terms of the question before
 answering, it is Eli's.
 
-**Theo.** Both are quiet, technical, cryptographers by training, and speak
-mostly in the same group. Eli reframes and asserts and does not ask; Theo
-objects on record, complies, and hedges. If a line hedges more than once, or
-ends unresolved as an open question, it is not Eli's. If it runs long and
-multi-clause with a qualifier attached, it is not his either. Eli's lines are
-short and they close.
+**Theo.** Both are technical, cryptographers by training, and speak mostly in
+the same group, and that is where the resemblance stops once the humour is on
+the page. Eli reframes, needles and asserts; Theo objects on record, complies,
+and hedges. If a line hedges more than once, or ends unresolved as an open
+question, it is not Eli's. If it runs long and multi-clause with a qualifier
+attached, it is not his either. Eli's lines are short and they close. The
+simplest cue: Theo is the one who worries about what a remark will do to
+somebody, and Eli is the one who has already made it.
+
+**Sam.** Both are funny and both are cheerfully willing to be the joke. Sam's
+humour is generous and aimed at the situation, which he is usually standing in
+the middle of, and he gets there by saying the same true flat thing again. Eli's
+is aimed outward and it costs somebody something, and he gets there by asking.
+If nobody in the room is slightly worse off for the line, it is Sam's.
 
 ---
 

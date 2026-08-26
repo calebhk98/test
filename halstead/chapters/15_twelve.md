@@ -6,29 +6,29 @@ The forge is a low building past the kitchens, open Thursdays and most of Sunday
 
 Pruitt runs the place off a whiteboard carrying the Thursday names and a list of low stock, and for the first month the men work around her and leave her alone, so she has no way of telling whether any of it is right until the second week of October, when he passes behind her with an armful of bar. "Your heat's wrong and it has been all afternoon."
 
-He keeps walking, leaving her to work out what he meant, which takes four minutes and one more attempt, after which she is right more often than she is wrong. Sam picks a hook off her bench in November and says it beats anything else down there. "The scroll's wrong, right at the top curve." She takes it back, still warm at the thick end, and turns it until her thumb finds where the metal stops giving under her nail. "It goes tight and then opens out, right where my thumb is, because that's two curves welded in the middle pretending to be one, so hold it up at the window and you'll see it." He holds it up with one eye shut, and she tells him the shadow runs straight for an inch where it ought to be turning the whole way down.
+Without stopping, he leaves her to work out what he meant, which takes a few minutes and one more attempt, after which she is right more often than she is wrong. Sam picks a hook off her bench in November and says it beats anything else down there. "The scroll's wrong, right at the top curve." She takes it back, still warm at the thick end, and turns it until her thumb finds where the metal stops giving under her nail. "It goes tight and then opens out, right where my thumb is, because that's two curves welded in the middle pretending to be one, so hold it up at the window and you'll see it." He holds it up with one eye shut, and she tells him the shadow runs straight for an inch where it ought to be turning the whole way down.
 
-He hands the hook back, tells her it still looks fine to him and takes his coat off the peg because it is nearly six, and then the girl at the next bench comes over with a punch in her hand and admires how straight the hammer marks run down the shank. Three weeks later five hooks sit on the bench with the same fault in all of them, and Pruitt comes past with a bar on his shoulder, running a thumb down the scroll of the nearest as he goes. "You lost the curve on the second turn," he says, and keeps going. She has the sixth in the fire that evening and stops at the second turn, scroll half open, and puts it back in the coals.
+Sam hands the hook back, tells her it still looks fine to him and takes his coat off the peg because it is nearly six, and then the girl at the next bench comes over with a punch in her hand and admires how straight the hammer marks run down the shank. Three weeks later five hooks sit on the bench with one fault running through all of them, and Pruitt comes past with a bar on his shoulder, running a thumb down the scroll of the nearest as he goes. "You lost the curve on the second turn," he says, and keeps going. That evening the sixth is in the fire, and she stops at the second turn, scroll half open, and puts it back in the coals.
 
-In the same month Bell takes the metronome off the post and pockets it in front of all of them. "You've had that two years, and a machine doing your counting for you is two years too long, so from today one of you calls the count out loud and the other works off the call." Odile asks which of them is supposed to call it. "That's the two of you to sort out," he says, buttoning the pocket, "and I'd think about it first, because whoever calls the count is the one whose bad afternoon everybody else has to have."
+That month Bell takes the metronome off the post and pockets it in front of all of them. "You've had that two years, and a machine doing your counting for you is two years too long, so from today one of you calls the count out loud and the other works off the call." Odile asks which of them is supposed to call it. "That's the two of you to sort out," he says, buttoning the pocket, "and I'd think about it first, because whoever calls the count is the one whose bad afternoon everybody else has to have."
 
-Chloe and Odile take a week to settle it and spend four of those days arguing, because Odile's count is steadier while Chloe's holds up better late in a long day, when Odile begins stretching hers by a fraction she is unaware of, which Chloe establishes with a watch behind her for three sessions. Odile calls for November and hates it by the end of the month, so after Christmas they swap according to the day, and the hit rate drops for a fortnight before coming back higher.
+Chloe and Odile take a week to settle it and spend three of those days arguing, because Odile's count is steadier while Chloe's holds up better late in a long day, when Odile begins stretching hers by a fraction she is unaware of, which Chloe establishes with a watch behind her for three sessions. Odile calls for November and hates it by the end of the month, so after Christmas they swap according to the day, and the hit rate drops for a fortnight before coming back higher.
 
-She learns anatomy on herself, so that by the end of October she can give her resting pulse, her blood pressure, what her hands do at rest against what they do after four flights of stairs, and where every bone sits under her skin, all by touch. Physics starts in September and hands back half of what she was told at nine with the reasoning underneath it, and psychology runs one term on mostly reading, a third of every hour spent arguing over whether the studies show what their authors claim.
+Anatomy she learns on herself, so that by the end of October she can give her resting pulse, her blood pressure, what her hands do at rest against what they do after six flights of stairs, and where every bone sits under her skin, all by touch. Physics starts in September and hands back half of what she was told at ten with the reasoning underneath it, and psychology runs one term on mostly reading, a third of every hour spent arguing over whether the studies show what their authors claim.
 
-Her cuffs stop reaching her wrists in October, and that same fortnight she and Ruth get stuck side by side in the doorway into Arabic, shoulder against shoulder in a gap built for one, where she discovers she is looking at the top of Ruth's head.
+Her cuffs stop reaching her wrists in October, and inside a fortnight she and Ruth get stuck side by side in the doorway into Arabic, shoulder against shoulder in a gap built for one, where she discovers she is looking at the top of Ruth's head.
 
 "Say one word to me about it, Chloe, one single word, and see what happens."
 
 "I have said nothing at all to you, I promise," she says, smirking.
 
-"You've got the face on, and the face is worse," Ruth says, going through first and letting the door swing back. "People stop at different times, and my mother was exactly this height at twelve and finished at five foot nine, so make the most of your next four years, because that's the whole of what you're getting."
+"You've got the face on, and the face is worse," Ruth says, going through first and letting the door swing back. "People stop at different times, and my mother was exactly this height at twelve and finished at five foot nine, so make the most of your next few years, because that's the whole of what you're getting."
 
 ---
 
-The bread comes up in Ruth's room on a Tuesday, with the four of them on the floor and Priya lying across the end of the bed, because Sam will keep saying that the Wednesday loaf is better and that he can tell every single time, whatever anybody else says.
+The bread comes up in Ruth's room on a Tuesday, with the others on the floor and Priya lying across the end of the bed, because Sam will keep saying that the Wednesday loaf is better and that he can tell every single time, whatever anybody else says.
 
-"It's the same bread, Sam, same flour, same ovens, same people." Ruth keeps her eyes on the book open on her knees. "The only thing different about a Wednesday is that it's a Wednesday, and two hundred of us have talked each other into it, which is a room agreeing with itself before anybody has chewed anything. Somebody said it in third grade, and what the whole school tastes now is the saying of it."
+"It's the same bread, Sam, and the same flour and ovens and people behind it." Ruth turns a page of the book open on her knees. "The only thing different about a Wednesday is that it's a Wednesday, and two hundred of us have talked each other into it, which is a room agreeing with itself before anybody has chewed anything. Somebody said it in third grade, and what the whole school tastes now is the saying of it."
 
 "You can taste it though, and everyone can taste it, that's the whole point."
 
@@ -38,13 +38,13 @@ Kavi pushes up off the floor and gets his back against the radiator. "Then do it
 
 "Do it how?" Priya says, rolling onto her front. "Somebody has to know which plate is which or you can't score it, and whoever knows is the one who wrecks it for everybody."
 
-They spend forty minutes on that, most of it Priya taking other people's ideas apart, and what comes out is two rounds with the cutting swapped: Kavi cuts both loaves for the first, marks the underside of the plates and leaves the eating to the other four, then Ruth runs the second the same way so that Kavi gets a turn, and the key goes onto a folded scrap before anybody starts.
+They spend an hour on that, most of it Priya taking other people's ideas apart, and what comes out is two rounds with the cutting swapped: Kavi cuts both loaves for the first, marks the underside of the plates and leaves the eating to everybody else, then Ruth runs the second so that Kavi gets a turn, and the key goes onto a folded scrap before anybody starts.
 
-At half past eleven they go down to the kitchen, where four ovens the size of wardrobes line the wall and a conveyor toaster does thirty slices in a run. "We are not doing thirty slices of toast at midnight, Kavi. Eight is plenty for a proper test."
+At half past eleven they go down to the kitchen, where six ovens the size of wardrobes line the wall and a conveyor toaster does thirty slices in a run. "We are not doing thirty slices of toast at midnight, Kavi. Eight is plenty for a proper test."
 
-"We're doing eight and they have to come out the same," he says, already pulling a tray down, "so it has to be the big oven, because that's a box with one temperature in it and the conveyor cooks the front of a run harder than the back."
+"We're doing eight and they have to come out identical," he says, already pulling a tray down, "so it has to be the big oven, because that's a box with one temperature in it and the conveyor cooks the front of a run harder than the back."
 
-He lights it, takes a thermometer off the wall and stands at the glass while the rest of them argue over whether butter counts as a variable, and by the time the tray is ready he has dropped out of the bread question altogether and is writing numbers on the back of his hand. "Eleven degrees a minute for the first four minutes, then it drops to six."
+Kavi lights it, takes a thermometer off the wall and stands at the glass while the rest of them argue over whether butter counts as a variable, and by the time the tray is ready he has dropped out of the bread question altogether and is writing numbers on the back of his hand. "Eleven degrees a minute for the first three minutes, then it drops to six."
 
 "Kavi, the bread's getting away from you."
 
@@ -52,11 +52,11 @@ He lights it, takes a thermometer off the wall and stands at the glass while the
 
 Mrs. Adeyemi comes in at twenty to twelve with her coat still on. "Is that oven on?"
 
-"Yes, it's been on about six minutes and it's nearly up."
+"Yes, it's been on six minutes and it's nearly up."
 
-"Then turn it off and stand where I can see the four of you." She waits while Sam turns it off, then takes a delivery sheet off the counter and turns it face down on the block. "Names, and start with whoever had the idea."
+"Then turn it off and stand where I can see all of you." She waits while Sam turns it off, then takes a delivery sheet off the counter and turns it face down on the block. "Names, and start with whoever had the idea."
 
-They give her four names in the order they happen to be standing in, which she writes down the same way, then stands over the plates with the pen still in her hand.
+They give her their names in the order they happen to be standing in, which she writes down in that order, then stands over the plates with the pen still in her hand.
 
 "And what is all this?"
 
@@ -68,21 +68,21 @@ On the stairs Priya wants to know whether the first round still counts. "We ate 
 
 "We ate it in silence, though, so somebody still has a number," Ruth says, going up two at a time. "Kavi's got the key in his pocket."
 
-He unfolds the scrap under the landing light and reads out five right of eight, and Sam has it at sixty-two and a half before the paper is flat, and says that beats guessing.
+Under the landing light he unfolds the scrap and reads out five right of eight, and Sam has it at sixty-two and a half before the paper is open, and says that beats guessing.
 
 "Five out of eight is what a coin does," Ruth says, still climbing. "Come back to me when it's eight."
 
-Saturday afternoon is the stock count: four hours, one clipboard between them, eleven shelves of tinned tomatoes, and a walk-in cooler at the end of shelf eleven with another two hundred tins in it. "Four hundred and six on this one, and I'm sure about it."
+Saturday afternoon is the stock count: four hours, one clipboard between them, twelve shelves of tinned tomatoes, and a walk-in cooler at the end of shelf twelve with another two hundred tins in it. "Four hundred and six on this one, and I'm sure about it."
 
-"You said three hundred and ninety on the last shelf, and there were eleven left over."
+"You said three hundred and ninety on the last shelf, and there were sixteen left over."
 
-"There were not eleven of anything left over, because I counted it twice before I wrote the number down."
+"There were not sixteen of anything left over, because I counted it twice before I wrote the number down."
 
 "Sam," Ruth says, pointing at the floor with her chin. "They're by your foot."
 
-They count the third shelf three times, and the third count is Ruth's, who stops halfway through, puts the clipboard on a crate and looks at the shelf long enough that Kavi asks what she is doing, then starts counting cases instead of tins, four stacks at a time, with a chalk mark on the shelf edge for every complete twelve, which takes a shelf from forty minutes to nineteen and gets the cooler done before dinner.
+They count the third shelf three times, and the third count is Ruth's, who stops halfway through, puts the clipboard on a crate and looks at the shelf long enough that Kavi asks what she is doing, then starts counting cases instead of tins, three stacks at a time, with a chalk mark on the shelf edge for every complete twelve, which takes a shelf from thirty-five minutes to nineteen and gets the cooler done before dinner.
 
-She gets to the library about once a week now, because most evenings there are six or seven people in the third floor common room with a game spread over the table and a space kept for her at it.
+The library gets her about once a week now, because most evenings there are six or seven people in the third floor common room with a game spread over the table and a space kept for her at it.
 
 ---
 
@@ -281,17 +281,17 @@ At Thanksgiving the letter is on the counter before anybody has finished serving
 
 "It was a gas oven." Her mother sets the serving spoon on the edge of the dish, where it slides off into the gravy, so that she has to fish it out with two fingers before she can go on. "A gas oven, lit, at half past eleven at night, with four children alone in the room, and which one of you lit it is beside the point, because what I mind is a flame going while the room is empty."
 
-Her father sets down the other dish, sits back and puts both hands flat on the table. "What were the four of you doing in a kitchen at half eleven?"
+Her father sets down the other dish and sits back with his arms folded. "What were you all doing in a kitchen at that hour?"
 
 "It was about the bread, we were settling whether the Wednesday bread is actually better than the rest of the week's."
 
 "Why are you asking about bread, and what does bread have to do with a gas oven going at midnight?"
 
-"Everyone says the Wednesday bread's better, and a school saying a thing for years is the opposite of testing it, so we tested it," Chloe says, leaning forward on her elbows with her chin up. "It's the same bread. Ruth was right, and Sam owes her a week of chairs. And I've been signed off on that oven since I was about nine."
+"Everyone says the Wednesday bread's better, and a school saying a thing for years is the opposite of testing it, so we tested it," Chloe says, leaning forward on her elbows with her chin up. "It's the same bread. Ruth was right, and Sam owes her a week of chairs. And I've been signed off on that oven for three years."
 
 Her mother stops with the spoon out over the dish, only the steam moving at that end of the table, then puts it on the cloth. "Signed off by who?"
 
-"The school. You do the ovens in the cooking block in second year and then you're on the list," Chloe says, looking from one to the other. "I'm on it, Kavi's on it, same for Sam and Ruth, and anyway the oven is the one part they let go, because what they got us for was being out of our rooms and in a kitchen alone when the rule says you tell somebody first."
+"The school. You do the ovens in the cooking block in second year and then you're on the list," Chloe says, looking from one to the other. "I'm on it, Kavi's on it, Sam and Ruth are on it, and anyway the oven is the one part they let go, because what they got us for was being out of our rooms and in a kitchen alone when the rule says you tell somebody first."
 
 Her father makes a noise into his glass and puts a hand over his mouth, and her mother looks at him with her chin down until the hand comes away, after which he folds his napkin into quarters in front of him.
 
@@ -301,7 +301,7 @@ Her father makes a noise into his glass and puts a hand over his mouth, and her 
 
 "Say it like you mean it, please." Chloe says it again, then passes the potatoes down to her uncle before he has asked for them.
 
-Her mother sits down, shakes out her napkin and puts it flat on her lap. "So how's school, apart from ovens?"
+Her mother sits down, shakes out her napkin and lays it across her lap. "So how's school, apart from ovens?"
 
 "Fine, mostly. It's school, the usual mix of things I'm good at and things I'm bad at."
 

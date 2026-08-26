@@ -41,7 +41,7 @@ and one they are quietly bad at.
 | **Eli** | Spanish, French, Russian, Mandarin, Hebrew, Korean, Japanese, Romanian, Serbian, Ukrainian, Georgian | Georgian, picked it because the script was unfamiliar |
 | **Theo** | Spanish, French, German, Arabic, Pashto, Dari, Somali, Uzbek, Kazakh, Burmese, Tigrinya | Pashto and Dari, taken together, which nobody asked for |
 | **Priya** | Spanish, French, Italian, Mandarin, Hindi, Nepali, Quechua, Guaraní, Aymara, Portuguese, Yoruba | Quechua, and she is the only one who chose a language for a place |
-| **Odile** | French (first language at home), Spanish, Mandarin, Russian, Arabic, German, Norwegian, Danish, Swedish, Finnish, Estonian | Norwegian, Danish and Swedish taken as one year, argued for and won |
+| **Odile** | French (first language at home), Spanish, Mandarin, Russian, Arabic, German, Norwegian, Danish, Swedish, Finnish, Estonian | Norwegian, Danish and Swedish taken as one year, an overlap she worked out for herself |
 | **Fen** | Spanish, French, Mandarin, Japanese, Korean, Cantonese, Hokkien, Malay, Tamil, Telugu, Marathi | Cantonese and Hokkien, from a grandmother |
 
 **These are the owning agent's to change.** Ruth's Portuguese is established in the
@@ -82,7 +82,7 @@ Each different. Expand freely; do not swap.
 | **Nadia** | a small city, immigrant family, second generation | parents run a business with a real balance sheet; she has done the books since she was eleven |
 | **Eli** | central Ohio, a suburb outside a mid-size city, unremarkable, and he likes that about it | one parent, an aunt who lives close, no siblings |
 | **Theo** | a small harbor town on the coast of Maine, off-season quiet | grandparents raised him, both still living, both formal |
-| **Priya** | horse country, two hours out | parents who are not academic and are entirely unbothered by that |
+| **Priya** | Nashville, an ordinary street with nothing about it marked for horses | father an electrician, mother in a clinic front office, a younger brother; neither parent academic and entirely unbothered by that |
 | **Odile** | a French-speaking household, first generation | mother a physiotherapist, a younger brother who worships her |
 | **Fen** | Michigan | large extended family, grandmother in the house |
 
@@ -95,13 +95,13 @@ One distinguishing physical habit each, listed here so they do not collide.
 
 | | build and register | the habit |
 | :-- | :-- | :-- |
-| **Ruth** | tall, narrow, always slightly too close when talking | writes on her own arm in pen and forgets it is there |
+| **Ruth** | tall, narrow, always slightly too close, the loudest person in the room and unaware of it | writes on her own arm in pen and forgets it is there; hugs hard enough to hurt, from the side, without warning |
 | **Sam** | broad, heavy-footed, takes up a doorway | eats standing up |
 | **Kavi** | small, still, sits very upright | turns objects over in his hands while thinking, and puts them back exactly |
 | **Nadia** | compact, fast, always already moving | pushes her sleeves up before saying anything difficult |
 | **Eli** | slight, restless, bad posture | taps a rhythm with two fingers, always the same one |
 | **Theo** | tall, stooped, apologises with his shoulders | takes his glasses off to think and cannot see while doing it |
-| **Priya** | strong through the shoulders, sunburnt, permanently slightly untidy | falls asleep anywhere, instantly, mid-conversation |
+| **Priya** | strong through the shoulders, sunburnt, permanently slightly untidy | falls asleep anywhere, instantly, mid-conversation; touches people constantly, arm and shoulder and back, including strangers |
 | **Odile** | the most physically developed of the year, scarred hands | cannot be still; stands rather than sits |
 | **Fen** | small, neat, dresses in layers she never takes off | collects — pockets always full |
 
@@ -119,7 +119,7 @@ the book because Chloe cannot see it.
 - **Eli** has never told anyone he was the one who found the fence gap in second year.
 - **Theo** keeps a photograph of the cohort he has never shown any of them.
 - **Priya** is the only one who writes to Owen after he leaves.
-- **Odile** is afraid of the water and has never said so.
+- **Odile** plans a whole visit home around one specific person watching her do the thing she is best at, and has never called that wanting anything.
 - **Fen** knows the name of every person who has had her room before her.
 
 ---

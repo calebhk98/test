@@ -103,6 +103,46 @@ experience of it.
 He does not forgive it either, exactly. He does not talk about it again. It
 goes on the list.
 
+## Everything he feels arrives as an absence
+
+The section a writer most needs and the one his flatness hides. Kavi does not
+have a smaller emotional range than the people around him. He has the same range
+routed through subtraction rather than addition, so where somebody else adds
+volume, tears, speed or an adjective, he takes something away, and what is
+missing is the whole signal.
+
+The vocabulary is consistent enough that the people who have known him longest
+read it without ever having discussed it:
+
+- **A meal not eaten.** He finishes first at every meal of his life, so a plate
+  left is not a small thing, it is the largest thing he does.
+- **A chair not filled.** He is where he said he would be, every day, for years.
+  When he is not, that is the announcement.
+- **A question not asked.** He interrogates any unexplained mechanism in front of
+  him. A mechanism he lets go past is one he is not present for.
+- **An object left off its mark.** He puts everything back exactly. Left crooked,
+  it was not an oversight.
+- **Days.** At the far end of it he simply is not there: not sulking, not
+  hiding, genuinely elsewhere, for a stretch that is measured in days rather
+  than hours.
+
+**He does not know he is upset until somebody says so**, and by then it has been
+running for a while, and he will accept the diagnosis flatly and without
+argument, the way he accepts any other correct statement, and still not be able
+to tell you what it is about. He is not concealing anything. The information has
+not reached him in words either.
+
+**Coming back is slow and unnarrated.** He reappears at the edge of the room, in
+the ordinary way, on an ordinary day, and picks up the thing he was doing. There
+is no account of where he went and he would find being asked for one strange. A
+writer should resist giving him a scene where he explains it; the return itself
+is the scene.
+
+**Happiness is the same mechanism run the other way and it is small.** The angle
+of his hands changes. He stays in a room he had no reason to stay in. He says
+the dry thing a half-beat sooner than usual. That is the whole of it, and to the
+two or three people who can read it, it is loud.
+
 ## Under pressure
 
 Already working the problem before anybody has asked him to. In a genuine
@@ -160,6 +200,51 @@ There is one recurring break in the flatness worth keeping rare: a beat after a
 line of his has landed badly, his hand comes up over his mouth. Half a second
 late, never in time to stop it, and it is the only visible evidence that he
 knew.
+
+## Stuck, bored, and wrong in public
+
+Cheap, portable characterisation: a task, a group, and somebody in charge is all
+any of it needs.
+
+**Stuck.** He disappears. Physically and completely, for days, missing meals,
+and he returns with it solved by a route nobody asked for and nobody can follow
+without an hour of his time. He does not tell anybody he is stuck first and he
+does not tell anybody it is finished afterwards; the answer simply exists.
+
+**Bored.** Builds something under the desk. He is not hiding it especially and
+he is not making a point; the hands wanted a job and the room was not providing
+one.
+
+**Publicly wrong.** He says so, flatly, in about three words, at once, and
+starts again from wherever the error was. He is the best in his group at this by
+a distance and it is not humility: he does not attach to a result, so there is
+nothing there to bruise. People who find being wrong expensive watch him do it
+and cannot work out how. It is worth separating from the two nearest neighbours
+in his year: one of them takes a correction fast because she has already costed
+the delay, and one of them takes it fast because he was never sitting still long
+enough to be hit by it. Kavi takes it fast because the result was never his.
+
+**Working in a group.** His part is perfect, arrives late, and does not connect
+to anybody else's. He has to be asked twice for it, and the asking is not
+resented on either side, and nothing about the pattern ever changes.
+
+**Given responsibility for somebody younger.** He explains mechanisms and does
+not simplify, and they are the one audience that has not yet learned to pretend
+they followed, so they stop him and ask, and it works far better than his manner
+would predict. He is the only teacher several of them have had who answers the
+actual question.
+
+**Deadlines.** Whatever the work required. Three weeks early or eleven days
+late, and nothing between the two, and he can never see why the date was the
+interesting part of the conversation.
+
+**Where he sits and what he keeps.** Wherever there is a chair; he does not
+notice or care, and he ends up at the edge. Somewhere in the building there is a
+bench or a corner that is unmistakably his, arranged to a system nobody else can
+see and nobody else may tidy.
+
+**What the room thinks of him.** The person you go to when it is actually hard,
+and not before, and everybody knows both halves of that including him.
 
 ## Interior life
 
@@ -302,6 +387,13 @@ to, and treats each one as an interruption he is glad of.
 - Spend free time on the thing nobody assigned rather than resting.
 - Notice, half a beat late, that a line landed badly, and register it physically
   without apologising for it.
+- Leave a plate half finished, which from him is the loudest available signal.
+- Vanish for days over something nobody knew was bothering him, and come back
+  without an account of it.
+- Accept flatly that he has been upset for a week, on somebody else's authority,
+  and still not know what about.
+- Stay in a room he had no reason to stay in, which is what being happy looks
+  like on him.
 
 ## Would never
 

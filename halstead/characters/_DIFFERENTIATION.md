@@ -28,7 +28,7 @@ couples converge. Keep the baseline below; differentiate on top of it.
 
 **Nobody in this book is evil.** Not the parents, not the teachers, not Kayleigh or
 Bryce, not the school. The adults who fail Chloe are decent, tired, or under-resourced,
-and fail anyway — that is the argument the book is making. The children who hurt her are
+and fail anyway, and that is the argument the book is making. The children who hurt her are
 enforcing norms accurately, not being cruel.
 
 **Say what they do.** Roughly five positives to one negative on every sheet. A character
@@ -39,7 +39,7 @@ defined by what they refuse is a character nobody can write a scene for.
 ## The margins
 
 The problem the rest of this solves: the audits were written one character at a time, so
-several landed on the same description — short declaratives, no hedging, no figurative
+several landed on the same description: short declaratives, no hedging, no figurative
 language. That is accurate about the shared baseline. It just does not tell you where the
 edges are.
 
@@ -53,7 +53,7 @@ it is the wrong line.** Signatures are exclusive. That exclusivity is the whole 
 
 ---
 
-## Axis 1 — sentence shape
+## Axis 1: sentence shape
 
 Nobody may share a slot.
 
@@ -78,7 +78,7 @@ that is already run-on behaviour, it has just never been written as run-on sente
 
 ---
 
-## Axis 2 — how they disagree
+## Axis 2: how they disagree
 
 | character | move |
 | :-- | :-- |
@@ -86,7 +86,7 @@ that is already run-on behaviour, it has just never been written as run-on sente
 | Kavi | corrects the mechanism, not the person, and does not notice the difference |
 | Sam | restates his position unchanged, louder, or just acts |
 | Nadia | flat refusal, proportionate, then moves on |
-| Eli | reframes the risk as a solvable constraint |
+| Eli | reframes the risk as a solvable constraint, or needles the number the other person will not say |
 | Theo | objects procedurally, on record, then complies |
 | Chloe | converts it into a physical example and argues that instead |
 | Odile | does the thing instead of answering |
@@ -96,7 +96,7 @@ that is already run-on behaviour, it has just never been written as run-on sente
 
 ---
 
-## Axis 3 — where each voice sits, and which way it should move
+## Axis 3: where each voice sits, and which way it should move
 
 No numbers here. Percentages of terse lines, hedges and questions were measured off a
 draft that has since been rewritten twice, and sheet writers reasonably read them as
@@ -110,7 +110,7 @@ below, as directions rather than figures.
 | Theo | the longest in the cast, and should stay long | **the cast's only hedger.** Should hedge noticeably more than anyone | occasional, procedural |
 | Ruth | mid-length, and should tighten slightly | **none.** She currently hedges and should not | none |
 | Nadia | short | **none.** She currently hedges and should not | none |
-| Eli | short | light, and it can stay | none |
+| Eli | short | light, and it can stay | **many, and none of them for information.** Short, closed, narrowing, aimed at a number or a permission somebody is talking around, and asked in runs of two or three |
 | Chloe | see her own sheet; the short register is situational, not a baseline | none before a claim | should ask more, especially young |
 | Meg | short, and should lengthen | none | **the cast's question-asker,** and should ask far more than she does |
 | Dave | short | none | frequent, aimed at documents and numbers |
@@ -123,7 +123,7 @@ than her husband.
 
 ---
 
-## Axis 4 — exclusive signatures
+## Axis 4: exclusive signatures
 
 One per character. Nobody else may use them. Three or four uses across the book is enough;
 more becomes a catchphrase. Each is described as a construction rather than reproduced as a
@@ -149,23 +149,90 @@ instances of it to build from.
 
 ---
 
-## Axis 5 — figurative language
+## Axis 6: the same event, nine reactions
+
+The proof, and the fastest revision tool in this file. Put one problem in front of all
+nine, leave it there for a week, give nobody any dialogue, and see whether the paragraph
+writes itself. If four of them collapse into the same reaction, that is the revision list.
+
+- **Chloe** draws it three times, each time with her own numbers instead of the given
+  ones, gets it at eleven at night on the floor, and arrives the next morning wanting to
+  explain it to somebody before breakfast.
+- **Ruth** argues twice about whether the question is well-formed, then solves it, then
+  reminds the room that she said on the first day the phrasing was wrong.
+- **Sam** announces cheerfully on day one, in front of everybody, that he has got
+  nothing, and does not think about it again.
+- **Kavi** disappears for six days, misses meals, and comes back with it done by a route
+  nobody asked for.
+- **Priya** asks four classmates, learns most of it socially, gets there on the Thursday,
+  and could not tell you afterwards whose idea the key step was.
+- **Nadia** writes down the exact sentence at which her understanding stopped and works
+  backward from it.
+- **Eli** finds an illegitimate route on day two, presents it with working nobody can
+  follow, is right, and asks the teacher a question about it that the teacher would
+  rather not answer.
+- **Theo** works it alone every night, tells nobody he is struggling, and hands in
+  something complete and slightly late.
+- **Odile** does it with her hands. Two hundred attempts. Never mentions the count.
+
+The same test runs on any event, not just a hard problem: a delay, a bereavement, a
+locked door, a stranger in the room. Write the nine-line version first. If two lines
+could swap names without loss, one of those two characters is not on the page yet.
+
+---
+
+## Axis 7: what a person across the room can see
+
+The reason sheets full of interior life still produce identical characters: in close
+third on one point of view, the other eight exist as bodies in rooms, and narration
+carries several times the text that dialogue does. If the narration describes all nine
+with the same vocabulary, a hand flat on a desk, a jaw set, a long look, they converge no
+matter how carefully the dialogue is differentiated.
+
+Every cohort sheet now carries a **Stuck, bored, and wrong in public** section covering
+the same eight externally visible axes with entirely different content: stuck, bored,
+publicly wrong, group work, responsibility for somebody younger, deadlines, where they
+sit and what they keep, and what the room thinks of them. Read the nine side by side
+before writing a scene with more than three of them in it.
+
+Two mechanics that cost a clause each and do most of the work:
+
+**Latency.** How long before they answer is free characterisation. Ruth answers before
+you have finished. Sam answers instantly and it is a joke. Eli answers with a question.
+Odile lets four seconds go by and does not experience it as a pause. Theo waits for a gap
+that does not come. Kavi answers the question you asked ninety seconds ago.
+
+**What they are doing while somebody else is talking.** Priya turns her whole body toward
+the speaker. Kavi keeps working. Sam is looking at the door. Ruth is already composing
+the correction. Nadia is completely still. Theo is watching the person nobody else is
+watching. Chloe is half out of her chair. Eli is drumming two fingers and waiting for the
+gap he can put a question into.
+
+**And the point of view is itself characterisation.** What the narrator notices about
+Ruth, volume, hands, the knocked-over cup, is not what she notices about Kavi, stillness,
+distance, the absence of anything. The shift in attention by subject characterises both
+parties at once and costs nothing.
+
+---
+
+## Axis 5: figurative language
 
 The style guide reserves invented images for characters' mouths. Currently only Chloe
 uses that permission, which wastes it.
 
 | character | allowed |
 | :-- | :-- |
-| Chloe | yes — Icarus, clouds, the moon. Her defining channel, keep it hers. |
+| Chloe | yes: Icarus, clouds, the moon. Her defining channel, keep it hers. |
 | Sam | one kind only: deflating literalism. He names what a thing actually is in order to puncture what it is being treated as, and it is always a joke |
 | Priya | yes, but only about animals, and she will not notice she did it. [new] |
-| Ruth, Kavi, Nadia, Eli, Theo, Odile | none, ever. The refusal is characterising. |
+| Eli | one kind only: the hazard image. A concrete picture of the drop under somebody else's position, never his own, never decorative. This is his and it is narrow: outside it he compares things mechanically. |
+| Ruth, Kavi, Nadia, Theo, Odile | none, ever. The refusal is characterising. |
 | Meg | domestic comparisons only, and only when deflecting |
 | Dave | none |
 
 ---
 
-## The shared baseline — keep all of this
+## The shared baseline: keep all of this
 
 Do not strip these in the name of differentiation. Every Halstead student has them, and
 they are the institution showing through.

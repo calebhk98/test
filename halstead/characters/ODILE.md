@@ -174,6 +174,41 @@ requires, and bringing outside witnesses in to see it more than once.
 that stuck. She solos routes she has not been cleared for, trusting her own
 hands and feet on rock over being watched while she works something out.
 
+## Stuck, bored, and wrong in public
+
+Short, because she is, and because she appears in few rooms. A task, a group and
+somebody in charge is all any of it needs.
+
+**Stuck.** She does it with her hands until it works. Two hundred repetitions of
+the same motion is a normal afternoon and she would not think to mention the
+count if you asked her about the afternoon.
+
+**Bored.** Leaves. Actually gets up and leaves the room, without explanation and
+without apparent awareness that this is unusual, and comes back when whatever it
+was is over.
+
+**Publicly wrong.** One nod, no words at all, and she starts again. It is the
+shortest response to being corrected of anybody here.
+
+**Working in a group.** She does the practical half in silence and hands the
+presenting to somebody else without being asked and without minding.
+
+**Given responsibility for somebody younger.** A physical skill she demonstrates
+and does not explain, and the ones who can copy get it fast. She has no plan at
+all for the ones who cannot, and this bothers her, quietly, and she has never
+raised it with anybody. Her language teaching is the opposite and is where her
+patience actually lives.
+
+**Deadlines.** Met. Not discussed.
+
+**Silence.** She is comfortable letting twenty seconds pass before she answers,
+and she does not experience the pause as a pause. Other people find it
+unnerving and fill it, which is how she ends up being told things.
+
+**What the room thinks of her.** The person you want there when something has
+gone physically wrong, and the person who will say the least about it
+afterwards.
+
 ## Home
 
 A former paper-mill town close to a national border, where the household
@@ -212,7 +247,10 @@ She is more physically developed than the register the people around her read
 at, broader through the shoulders and forearms, and it shows fastest in her
 hands. A scar runs across one palm from a burn taken in training, and she keeps
 that hand in plain sight rather than out of view, because the scab pulls every
-time she opens her fingers. Those same hands are what she uses to move other
+time she opens her fingers. She is straightforwardly pleased with it and will
+turn the hand over for anybody who asks, and the account of where it came from
+is the one subject that reliably gets more than a sentence out of her without
+her brother in the room. Those same hands are what she uses to move other
 people: she gets one under an arm and hauls somebody upright by the wrist
 rather than offering a palm to take. Years of rope and bowstring and tools have
 left them calloused and marked, and rarely still.
@@ -329,6 +367,10 @@ people and already dressed for whatever is first.
   well anyway.
 - Redo a chore or a gear check for somebody she was too flat with, without
   saying why.
+- Get up and leave a room she is bored in, and come back when it is over.
+- Let twenty seconds go by before answering, and not notice that she has.
+- Show somebody the scar and say where it came from, at length by her
+  standards.
 
 ## Would never
 

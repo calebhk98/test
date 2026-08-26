@@ -472,6 +472,45 @@ she dropped fast, because most of the work is waiting for the material to be
 ready and she would rather make it ready herself. Gardening lasted one growing
 season and stopped the day it stopped producing anything that needed fixing.
 
+## Stuck, bored, and wrong in public
+
+The axis the whole cohort is written on, so the nine can be read side by side.
+Nothing here needs a school: a task, a group, and somebody in charge.
+
+**Stuck.** She writes down the exact sentence at which her understanding
+stopped, and works backward from it. She is the only person in her year who can
+tell you precisely where her own boundary is, to the line, and she does not
+experience this as a skill.
+
+**Bored.** Starts the next thing without announcing it, and is two units ahead
+by the time anybody notices.
+
+**Publicly wrong.** Two words, no colour, and she has already moved on while
+the rest of the room is still watching her face for something. See the section
+above on what wrong looks like on her; the point here is the speed, which reads
+as coldness and is the opposite.
+
+**Working in a group.** She takes the logistics without being asked and runs
+them better than whoever was asked, and hands the credit back with the schedule
+attached.
+
+**Given responsibility for somebody younger.** Businesslike. She tells a
+student exactly what they do not know, without softening it, and then tells them
+exactly how to fix it, and stays until it is fixed. Two of them find it the most
+useful hour of their week and the rest find it brutal, and she has no idea the
+second group exists.
+
+**Deadlines.** On time, to the day, forever.
+
+**Where she sits and what she keeps.** The same seat for a whole year. One
+notebook, ruled and dated, no decoration, kept shut when she is not writing in
+it. She does not fidget at all, which in a room of children is the conspicuous
+thing about her.
+
+**What the room thinks of her.** Slightly frightening, entirely fair, nobody's
+first choice and everybody's second, and she would take that as an accurate
+assessment and go back to work.
+
 ## Home
 
 Her parents emigrated before she was born and run a hardware-and-repair shop two

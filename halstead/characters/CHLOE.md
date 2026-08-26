@@ -426,6 +426,16 @@ peers, and nearly everything physical the book gives her runs through her hands.
   physical tell she has. Otherwise still, with one private, silent tic: four fingers tapping
   a rhythm against her own leg while she walks, rehearsing a timing count nobody else can
   see.
+- **What she does with a chair, young:** she does not stay in it. She comes up onto
+  her knees on the seat, leans across the table, ends up half out of it entirely, and
+  hooks a foot around a chair leg when she is concentrating. She moves fast and stops
+  abruptly rather than slowing down. This ages down rather than out: it is loudest at
+  six and eight, still visible at fifteen with her friends, and gone in front of anyone
+  who has ever made her careful.
+- **Going still:** the reverse tell, and the important one. She is a person in constant
+  small motion, so complete stillness in her is not calm, it is the largest signal she
+  produces, and the people who know her read it before she has said anything. A writer
+  who wants a beat to land on her should take the motion away rather than add a reaction.
 - **How she moves:** economical and trained, with no wasted motion, the product of daily
   drilling rather than natural grace. She can hold her own against a room of opponents and
   come last of ninety in a dance ranking, in the same body.
@@ -459,6 +469,51 @@ peers, and nearly everything physical the book gives her runs through her hands.
 - **What she finds funny in other people:** deflating literalism, especially aimed at
   something that has just frightened her. A flat literal-minded correction landing in the
   middle of a panic attack will have her laughing until she has to bend over against a wall.
+
+## Stuck, bored, and wrong in public
+
+What a person sitting across the room from her would actually see, which is
+where she is most at risk of reading flat, because so much of her is interior.
+None of the below needs a school: a task, a group, and somebody in charge.
+
+**Stuck.** A visible sequence, and the same one every time. She goes quiet.
+She redraws the problem on a clean page. She redraws it again with her own
+numbers in place of the ones she was given. Then she leaves, and solves it alone
+that night on the floor, and arrives the next morning wanting to explain it to
+somebody before breakfast.
+
+**Bored.** She is genuinely elsewhere, looking out of a window, and she gets
+caught at it and has no alibi ready and does not think to invent one. Later she
+stops attending the thing at all, without complaint and without announcing it.
+
+**Publicly wrong.** She argues first, at length, and then concedes all at once
+and completely, out loud, and means it, and is quiet for the rest of the hour.
+Both halves are her and a writer needs both: the argument is not stubbornness
+and the concession is not defeat.
+
+**Working in a group.** She does the thinking out loud and lets somebody else
+hold the pen. She talks over people, apologises for it sincerely, and does it
+again inside two minutes.
+
+**Given responsibility for somebody younger.** She over-explains, and her
+results are uneven, and she will spend forty minutes on the floor beside one
+struggling student over something that is not the subject at all. Her students
+like her. The good ones do very well and the ones who needed structure get less
+of it than they should have.
+
+**Deadlines.** Early on the things she cares about and last-minute on the rest,
+and the split is legible to anybody paying attention, and it is the most
+reliable public read on what she is actually interested in.
+
+**Where she sits and what she keeps.** Somewhere she can see out. She carries
+far too much, spreads it across whatever surface she is using, and there is a
+book somewhere on her at all times whose corner she touches without taking it
+out. She takes no notes for the first month of anything and then panics and
+takes far too many.
+
+**What the room thinks of her.** Intense, warm, a bit much, and reliably the
+one who asks the question everybody wanted asked and nobody wanted to be the
+one asking.
 
 ## Interior life
 

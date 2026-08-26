@@ -92,12 +92,34 @@ either. It is a correction, offered in the same spirit as any other correction,
 because a compliment based on a wrong estimate of difficulty is a wrong claim
 standing.
 
+## Volume, which is the thing about her a room notices first
+
+She is the loudest person in most rooms she is in and has no idea. Nothing about
+this is aggression and none of it is performance; she simply pitches to the size
+of the thing she is saying rather than to the size of the room, and the thing she
+is saying always feels large to her. People who have known her for years take
+the half-step back and turn the half-turn down without mentioning it.
+
+Volume is her tell, and it runs the opposite way to most people's. **Frightened,
+she gets louder.** Enthusiastic, louder still, and she will shout in a corridor
+about a result nobody asked her for. What is actually alarming is the other
+direction: **genuinely furious, she goes quiet**, and the quiet version says less
+and says it exactly, and the people who know her would rather have the shouting.
+
+She is also physically warm in a way that surprises everybody who has only heard
+her argue. She hugs hard enough to hurt, without warning, usually from the side,
+usually with a fistful of the other person's sleeve, and she says the important
+thing from six inches away while she is still holding on. She does not mention
+it afterwards, does not do it as a gesture, and would be baffled to hear it
+described as out of character. Somebody writing her as cold has read the
+corrections and not the arms.
+
 ## How she talks
 
 Mid-length sentences, evenly built, rarely a single word and rarely a
-paragraph. Steady under pressure: she does not clip when frightened or pad when
-she wants to be liked, and the length of her lines is close to the only thing
-about her that never moves.
+paragraph. Steady in length under pressure: she does not clip when frightened or
+pad when she wants to be liked, and the length of her lines is close to the only
+thing about her that never moves. The volume moves constantly.
 
 She does not hedge. A qualifier survives only while she is still assembling a
 claim she has not finished testing, never on one she has.
@@ -181,7 +203,11 @@ evidence she has gone out and collected with her own hands, because then it is
 her own work saying it.
 
 When she does finally concede she concedes completely, in public, all at once,
-and she does not apologise. She turns it immediately into a request for data
+and she does not apologise. This is the large kind and it is rare. The everyday
+kind runs the other way entirely, and both are hers: on an ordinary wrong answer
+she does not give ground in the room at all, and the four private words arrive
+hours later. What separates the two is not the size of the error, it is whether
+she went out and collected the evidence herself. She turns it immediately into a request for data
 from everyone else, because a conclusion this large needs corroborating and she
 would rather have it corroborated than comforted.
 
@@ -224,6 +250,45 @@ Losing, she goes quiet and re-runs the sequence privately instead of contesting
 the result. Every version of her under strain resolves to the same instinct:
 investigate alone before arguing.
 
+## Stuck, bored, and wrong in public
+
+Everything below is visible from across a room and none of it needs a school:
+it needs a task, a group, and somebody in charge.
+
+**Stuck.** She argues about whether the question is well-formed. Not as a
+dodge, and not for time. She genuinely believes the problem is the phrasing, she
+says so at length, and she is right about a quarter of the time, which is enough
+to have taught her the habit and nowhere near enough to justify it.
+
+**Bored.** Does the next thing. Then the thing after that. Then announces, at
+volume, to a room that is still working, that there is nothing to do.
+
+**Publicly wrong, the ordinary kind.** She does not concede in the room. Not
+once, at any age. She concedes some hours later, privately, to one person, in
+about four words, and never refers to it again, and the four words are sincere
+and are the whole of it. This is the everyday version and it is not the same
+thing as the long structural reversal described further down, which is rare,
+enormous, and public.
+
+**Working in a group.** She has taken it over within thirty seconds and
+assigned everybody a role, and the work is better for it. She is a good leader
+and a bad teammate, and the two are the same fact.
+
+**Given responsibility for somebody younger.** Strict. Structured. Starts on
+time. She gives no praise for a right answer and real time to where a wrong one
+came from. Her students improve more than anybody else's, about half of them do
+not like her, she knows the figure, and she decided years ago she could live
+with it. The other half would follow her anywhere.
+
+**Deadlines.** Days early, every single time, and she mentions it.
+
+**Where she sits and what she keeps.** Front row, same seat, arrives early.
+Notebooks dated, indexed and immaculate. She lends them freely and wants them
+back, and will ask.
+
+**What the room thinks of her.** Right, exhausting, and the first person
+anybody wants on their side when something has actually gone wrong.
+
 ## Habits and physical business
 
 Tall for her age from early, narrow rather than broad, and she stands slightly
@@ -233,8 +298,15 @@ the half-step back themselves rather than mention it. She takes stairs two at a
 time by default. Her hair is visibly disordered whenever she has been moving
 fast and she has no idea it is.
 
+She takes up more room than she thinks she does and knocks things over doing
+it: a cup with an elbow, a stack with a bag, somebody else's work with a sleeve.
+She apologises for the object and goes on with the sentence.
+
 Her hands demonstrate rather than describe. Given anything to hand, dowels,
 cutlery, coins, she builds the thing she is arguing about and pushes it over.
+Given nothing to build with she lines up whatever is on the table into a row and
+then knocks it out of line again with one finger while she is talking, and both
+halves of that happen without her attention.
 Walking, she taps a count against her own leg silently to drill a timing.
 Sitting, she prefers the floor to a chair when the room allows it, shoes off
 and lined up beside her, and she will keep reading through a conversation
@@ -295,11 +367,14 @@ agree with the assessment and change nothing.
 
 ## Age and change
 
-**Six to eight.** Compulsively public. The correction leaves her the instant she
-has it, with no calculation attached, and she has no concept that it might cost
-her anything. She argues with objects, pushing four sticks into a square and
-then a triangle to prove a point about structure. Adults are sorted by whether
-they will engage with the argument.
+**Six to eight.** Compulsively public and extremely loud. The correction leaves
+her the instant she has it, with no calculation attached, and she has no concept
+that it might cost her anything. She argues with objects, pushing four sticks
+into a square and then a triangle to prove a point about structure. Adults are
+sorted by whether they will engage with the argument. She is also, at this age,
+the most physically affectionate person in her year and entirely unembarrassed
+about it, and she makes friends by attaching herself to them and issuing
+instructions about the future.
 
 **Nine to twelve.** The same reflex, now with consequences attached: she starts
 naming the outcome as well as the error, scoring her own side on the published
@@ -374,6 +449,13 @@ years, does not cost what she thought it cost.
 - Go back into finished, praised, working work of her own and improve it for no
   audience.
 - Shut down a joke with one flat word when she needs a room serious.
+- Hug somebody hard enough to hurt, without warning, and say the important
+  thing while still holding on.
+- Shout in a corridor about a result nobody asked her for.
+- Announce at volume that there is nothing to do, in a room where everybody
+  else is still working.
+- Take over a group inside thirty seconds and make the work better.
+- Go quiet when she is genuinely furious, which is worse than the shouting.
 
 ## Would never
 
@@ -384,12 +466,21 @@ years, does not cost what she thought it cost.
 - Ask a question that leaves the answer open, or ask one to be sociable.
 - Let an old wrong statement go unaddressed because time has passed.
 - Soften a correction by leaving the person's name out of it.
+- Concede in the room. She concedes hours later, privately, to one person.
+- Modulate her volume for a room, because she has never noticed it needed it.
 
 ## Not to be confused with
 
 **Kavi.** He corrects the mechanism and never names who he is correcting. Her
 correction contains the other person's name in the same sentence. A flat
-that-is-wrong-because-X with no addressee is his move, not hers.
+that-is-wrong-because-X with no addressee is his move, not hers. He is also
+quiet and she is not: if the room can hear it from the corridor, it is hers.
+
+**Eli.** Both say the unwelcome true thing in front of everybody. Hers is a
+correction of a claim and she wants it fixed. His is a question aimed at a
+number and he wants to see what happens. She does not needle, does not ask a
+second and third narrowing question, and has never in her life said a hard
+thing for the entertainment of watching it land.
 
 **Eli.** He reframes the terms and then restates his own assertion in a
 heavier register. She reframes once and goes straight to the consequence, and

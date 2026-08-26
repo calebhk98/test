@@ -146,7 +146,9 @@ lengthen, as though precision is what he reaches for when he no longer has the
 energy to trust his own judgement.
 
 **Wrong**, he goes quiet and returns later with it fully worked out. He does not
-argue in real time.
+argue in real time. What comes with the correction is an apology sized for
+something much larger, delivered once and then not repeated, and the person
+receiving it usually has to tell him it was fine.
 
 **Cornered**, he does not refuse. He states an objection for the record and then
 does the thing, and this is not cowardice: he believes a rule kept on principle
@@ -210,6 +212,50 @@ always spot in somebody else's writing.
 
 **Secretly proud of:** the class taught breaking-first, the one place his kind
 of reading gets treated as a strength rather than as a thing he has to narrate.
+
+## Stuck, bored, and wrong in public
+
+None of it needs a school: a task, a group, and somebody in charge.
+
+**Stuck.** He works longer. He tells nobody. He falls behind rather than ask,
+and because everything he hands in is complete and careful the falling behind is
+invisible from outside right up until it is a problem, at which point it is a
+large one. This is the same fear that runs the rest of the sheet, aimed at
+himself: asking would be evidence of a step he could not take alone.
+
+**Bored.** Rereads his own notes and improves them. Idle time with nothing in it
+makes him uneasy in a way he would not call boredom and would not mention.
+
+**Publicly wrong.** He apologises out of all proportion to the error, twice, and
+means both. Then he does the work three times over. Then he does not refer to it
+again, and he is still turning it over more than a week later, and nobody knows
+that except him.
+
+**Working in a group.** He quietly does the parts other people dropped and never
+says who dropped them, and will not say it afterwards either, under direct
+questioning, and does not think of this as loyalty. He thinks of it as the work
+having needed doing.
+
+**Given responsibility for somebody younger.** The best teacher of his year, and
+nobody has told him. Patient past the point of reason, over-invested, and he
+worries about one specific student on his own time, months after that student
+has stopped being his responsibility.
+
+**Deadlines.** Early, verified, and then checked once more anyway.
+
+**Where he sits and what he keeps.** Second row, aisle end. Notes immaculate and
+complete, and he lends them to four people who never return them, and he never
+asks, and he rewrites the missing sections from memory rather than raise it.
+
+**Entering a conversation.** He waits for a gap. Sometimes the gap does not come
+and he simply does not say the thing, and the thing was usually the most useful
+thing available in the room. He holds doors. He gets quieter as a situation gets
+worse, so the quietest he has ever been is the worst it has ever been, and only
+one or two people have ever worked that out.
+
+**What the room thinks of him.** Underrated, by everybody, including himself,
+and the only one of the group whose absence from a piece of work would be
+noticed a month later rather than the same afternoon.
 
 ## Home
 
@@ -370,6 +416,16 @@ of them.
 - Let somebody else take credit for shared work if naming himself would raise a
   question he is not allowed to answer.
 - Sit with someone through a hard silence rather than fill it.
+- Fall behind rather than ask, and hide it by making everything he does hand in
+  perfect.
+- Do the part of a group's work that somebody else dropped, and refuse to say
+  who dropped it when asked directly.
+- Apologise out of all proportion for a small error and then do the work three
+  times over.
+- Lend his notes to somebody who will not return them, and rewrite the missing
+  pages from memory rather than mention it.
+- Hold a door, wait for a gap that never comes, and go home with the useful
+  thing unsaid.
 - Send someone more of the underlying material than they asked for, after
   realising an earlier answer had been too flat.
 
@@ -418,7 +474,10 @@ complaint underneath it in the same breath.
 
 As a child he is already formal, already finishes his sentences, already the
 one who will not repeat a thing. What he does not yet have is the vocabulary
-for objecting on record, so the child version goes quiet and does it anyway.
+for objecting on record, so the child version goes quiet and does it anyway. He
+is also, at that age, visibly the child adults leave alone because he is no
+trouble, and the cost of that is that nobody checks on him, and it never occurs
+to him that this is a cost.
 
 By twelve he is making choices nobody asked him to make because he can see what
 they are worth together, and telling nobody that he has.

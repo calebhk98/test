@@ -4,11 +4,11 @@
 
 Chloe has been compared to the same ninety-one people since she was seven, and the only number the school has ever given her is her place inside the ninety-one, a place squarely in the middle. Since the middle of a year gets what the middle of any year gets, the state school is what she is expecting.
 
-Everybody applies the same way: the Ivies first, eight of them, the way you buy a lottery ticket and forget you own it; then the college one of your parents went to; then the community college an hour from home, quietly listed by everybody and named out loud by almost no one; then one strange one, picked for whatever reason a seventeen-year-old picks things, so Bex applies to a place in Vermont because her cousin says the food is unbelievable, and Marek to one in Arizona because a woman he watched lecture online teaches there.
+Everybody applies the same way: the Ivies first, eight of them, bought like lottery tickets and forgotten about by dinner; then the college one of your parents went to; then the community college an hour from home, quietly listed by everybody and named out loud by almost no one; then one strange one, picked for whatever reason a seventeen-year-old picks things, so Bex applies to a place in Vermont because her cousin says the food is unbelievable, and Marek to one in Arizona because a woman he watched lecture online teaches there.
 
-Ruth has a laptop open on the arm of the couch in the third-floor common room, refreshing a portal stuck on the same message for six days running, a board game abandoned on the table since dinner. Sam has a card in his hand, turning it over and over, checking his phone every few minutes and setting it face down only to check it again.
+Ruth has a laptop open on the arm of the couch in the third-floor common room, refreshing a portal stuck on the same message for six days running, a board game abandoned on the table since dinner. Sam has a card in his hand, bending one corner of it back and forth, checking his phone every few minutes and setting it face down only to check it again.
 
-"That card's been in your hand ten minutes," Ruth says, eyes on her own screen.
+"That card's been in your hand ten minutes," Ruth says, still refreshing.
 
 "I'm getting to it, I'm just deciding whether the game's worth finishing first."
 
@@ -18,13 +18,13 @@ Chloe is on the floor with the printed list of deadlines in her lap, going down 
 
 "Then you go to the state school," Sam says, "same as you were always going to," and picks his card back up, turns it over once, sets it down again.
 
-Chloe's list runs to fourteen: the eight, the state school, her mother's college, the community college, one in Michigan because Fen said the winters there are worth seeing once, Georgetown, up twice in a week and still on the list because the second time it was a language department, and one she picks off a phone screen in about nine minutes after lights-out because it came up on the same page as the Michigan one.
+Chloe's list runs to fourteen: the eight, the state school, her mother's college, the community college, one in Michigan because Fen said the winters there are worth seeing once, Georgetown, up twice in a week and still on the list because the second time it was a language department, and one she picks off a phone screen in a few minutes after lights-out because it came up on the same page as the Michigan one.
 
 Her mother calls twice in the month to ask how the essays are going and gets fine both times, and the second time she leaves it there and reads the fourteen back down the phone, saying the deadline out loud after each and waiting for Chloe to say it back.
 
 They do the essays in Ruth's room on a Sunday because doing them alone is worse, Sam taking the desk chair, Kavi the floor with his back against the bed, Odile the bed with her heels hooked over the frame, and Chloe the space under the window by the radiator.
 
-The first prompt wants six hundred words about a challenge she overcame, so Chloe picks the year she taught the thirteens and had a boy in the front row refusing to hand anything in, and she is eleven hundred words in before she reaches the part where anything is overcome, because the interesting part is why he was right.
+The first prompt wants six hundred words about a challenge she overcame, so Chloe picks the year she taught the thirteens and had a boy in the front row refusing to hand anything in, and she is thirteen hundred words in before she reaches the part where anything is overcome, because the interesting part is why he was right.
 
 Ruth reads it over her shoulder before she can close the laptop, laughing at her. "That's not the assignment. They don't want an essay, they want a thing somebody can read in thirty seconds and still remember at lunch."
 
@@ -32,17 +32,17 @@ Ruth reads it over her shoulder before she can close the laptop, laughing at her
 
 "Then why is it four pages?"
 
-"Because getting it to six hundred is harder than getting it to four thousand." Chloe cuts it three times before it holds at six hundred and eleven.
+"Because getting it to six hundred is harder than getting it to four thousand." Chloe cuts it three times before it holds at six hundred and six.
 
 Sam finishes in under an hour and shuts the laptop harder than it needs. "Ten pages a week for four years," he says, "and the thing that decides where I spend the next four is a paragraph, and at that length they're guessing, not reading, and everyone who wrote one knows it."
 
 Kavi finishes in twenty minutes, exactly six hundred and one words, and submits it unread.
 
-Odile's runs four pages, and when Chloe tells her it is nearly seven times the limit Odile says six hundred is a minimum and every teacher in this building takes more and thanks you for it. It goes in at four pages.
+Odile's runs five pages, and when Chloe tells her it is nearly seven times the limit Odile says six hundred is a minimum and every teacher in this building takes more and thanks you for it. It goes in at five pages.
 
-Ruth's own prompt asks her to describe a time she failed, and she spends forty minutes on the word before she gets near an example. "Failed by whose standard," she says, half to the room.
+Ruth's own prompt asks her to describe a time she failed, and she spends an hour on the word before she gets near an example. "Failed by whose standard," she says, half to the room.
 
-"Pick one and write it down," Kavi says, eyes on his own screen.
+"Pick one and write it down," Kavi says, chin down over his own keyboard.
 
 "That's not an answer, that's just telling me what to do."
 
@@ -52,21 +52,21 @@ Nadia is in the room too, back against the door, laptop on her knees, and what s
 
 "You're not applying anywhere," Ruth says.
 
-"I'm applying to eleven places this week, and none of the eleven are schools." She tabs to the next box without looking up. "Purchasing assistant at the plumbing supply out on Route 8. Parts buyer, two dealerships. Service writer at the transmission place on Fourth. Dispatch at a freight company in Ambridge. An insurance office running a claims trainee program that says straight out of high school at the top and two years of experience nine lines down."
+"I'm applying to thirteen places this week, and none of them are schools." She tabs to the next box without looking up. "Purchasing assistant at the plumbing supply out on Route 8. Parts buyer, two dealerships. Service writer at the transmission place on Fourth. Dispatch at a freight company in Ambridge. An insurance office running a claims trainee program that says straight out of high school at the top and two years of experience six lines down."
 
 "Which one do you actually want?" Chloe says.
 
 "Any of them where somebody calls in wanting a price and I'm the one who answers the phone. The rest of it is the building it happens in."
 
-A second prompt asks about a place that changed her, and Chloe cannot get the forge down to six hundred words either, so she writes about the reservoir instead, nine miles from her parents' house, and the hill she has to stand up on the pedals to clear. It comes out at four hundred and ninety words with every line surviving the edit, a bad sign by her own reckoning for about a minute before she submits it anyway.
+A second prompt asks about a place that changed her, and Chloe cannot get the forge down to six hundred words either, so she writes about the reservoir instead, seven miles from her parents' house, and the hill she has to stand up on the pedals to clear. It comes out at three hundred and ninety words with every line surviving the edit, a bad sign by her own reckoning for about a minute before she submits it anyway.
 
 For the college her mother went to, the prompt asks why this school specifically, and Chloe writes the short, honest answer: her mother still has a sweatshirt from it, worn soft at the cuffs, at the back of a closet, and has always assumed Chloe would end up there too.
 
 ________________
 
-The applications start landing in November. The transcript is legal, an accreditation number printed in the corner, and what is on it is classes, ordinary-looking rows of them, except there are so many of them, enough for nine admissions offices to decide it must be a formatting error and write back asking for the real one.
+The applications start landing in November. The transcript is legal, an accreditation number printed in the corner, and what is on it is classes, ordinary-looking rows of them, except there are so many of them, enough for eight admissions offices to decide it must be a formatting error and write back asking for the real one.
 
-One of the nine calls comes through on a Thursday afternoon. "We're going to need the actual transcript, not whatever this is," the caller says, polite and a little embarrassed, the way people are when they think they have caught somebody else's mistake. The registrar reads the accreditation number back to her, twice, and asks whether she'd like the same document mailed again, and the caller declines and hangs up first.
+One of the eight calls comes through on a Thursday afternoon. "We're going to need the actual transcript, not whatever this is," the caller says, polite and a little embarrassed, the way people are when they think they have caught somebody else's mistake. The registrar reads the accreditation number back to her, twice, and asks whether she'd like the same document mailed again, and the caller declines and hangs up first.
 
 Then somebody reads the essays, and what everybody notices first is the graduate-level prose, while what everybody thinks first is ghostwriting: ninety-one applicants from one school, all at such a level, is a mill or a very good teacher with a template. One review committee, reading blind, spends most of a meeting on the transfer-cohort theory before somebody checks the birth years.
 
@@ -86,11 +86,11 @@ What breaks it open further is the papers: three applicants have listed research
 
 A representative may come and read the paper in a room, on paper, for as long as they like, with somebody in the room throughout. No phone and no bag go in. The school provides the paper, a pencil, and as much notepaper as anybody wants, and everything written in the room is read before it leaves. One committee calls the terms unworkable in an internal email, forwarded twice before somebody decides declining is simpler than arguing; another leaves three follow-up requests to gather dust. Four accept.
 
-The room is small and windowless, one lamp over a table, and the Caltech representative sits down at nine and settles in. The escort stays in the corner with a paperback of her own, checking the clock more than she checks him, and brings water at eleven.
+The room is small and windowless, one lamp over a table, and the Caltech representative sits down at eight and settles in. The escort stays in the corner with a paperback of her own, checking the clock more than she checks him, and brings water mid-morning.
 
-By noon he has filled four sheets on both sides, most of it his own working: a citation copied out to look up later, a calculation redone by hand to check where it lands, a margin note crossed out and rewritten smaller underneath. At one she asks whether he wants lunch and he says yes, eyes still on the page, and it goes cold at his elbow. By two he has stopped turning pages, reading the same few paragraphs over instead of moving forward. At half past three he sets it down, looks at the wall a while, and picks it back up.
+By noon he has filled five sheets on both sides, most of it his own working: a citation copied out to look up later, a calculation redone by hand to check where it lands, a margin note crossed out and rewritten smaller underneath. At one she asks whether he wants lunch and he says yes, eyes still on the page, and it goes cold at his elbow. By two he has stopped turning pages, reading the same few paragraphs over instead of moving forward. At half past three he sets it down, looks at the wall a while, and picks it back up.
 
-He stands at ten to four, hands the sheets over, and waits while she reads them.
+He stands just before the bell, hands the sheets over, and waits while she reads them.
 
 "Is the third author available to talk?" The methods section names her for the one part he has no way to check on his own.
 
@@ -104,15 +104,15 @@ He shakes her hand and thanks her for the water, and within the month offices pr
 
 ________________
 
-Eleven of the flagged schools send somebody, and the school says yes to all eleven: desks in the long reading room, dining privileges at the tables everyone already eats at, a room to work in with a lockable door, and permission to sit in any class they name, provided they name it in writing forty-eight hours ahead with a member of staff present. Two requests get the same answer every time, the fighting hour and the range.
+Twelve of the flagged schools send somebody, and the school says yes to all twelve: desks in the long reading room, dining privileges at the tables everyone already eats at, a room to work in with a lockable door, and permission to sit in any class they name, provided they name it in writing two days ahead with a member of staff present. Two requests get the same answer every time, the fighting hour and the range.
 
-They arrive within a week of each other in the winter, from Yale, Stanford, Duke, Caltech, MIT and six others, and by the first evening they have found each other at one end of the visitors' table comparing notes the way scouts do on a prospect.
+They arrive within a week of each other in the winter, from Yale, Stanford, Duke, Caltech, MIT and seven others, and by the first evening they have found each other at one end of the visitors' table comparing notes the way scouts do on a prospect.
 
 A representative from Duke, crossing campus toward the dining hall on his first afternoon, hears something through the wall of the sports building, a beat too regular for a ball game and gone before he places which door it comes from. Two students pass the other way carrying a long canvas case between them, and neither looks at him, so he asks the woman escorting him what's in the building.
 
 "Sport," she says.
 
-He asks again two days later, over dinner, having learned by now a second question only gets a different word, not more of the first. "Athletics," she says, not looking up from her plate.
+He asks again two days later, over dinner, having learned by now a second question only gets a different word, not more of the first. "Athletics," she says, and goes on eating.
 
 He tries a third time on his last morning, one foot already in the car. "Recreation," she says, and closes the door for him. He writes all three down, in order, in the notebook he's kept since Monday.
 
@@ -126,9 +126,9 @@ The Yale representative asks for a senior writing seminar and gets Hearn, who ha
 
 He looks at her as if the question hadn't occurred to him before. "It's what the material wants."
 
-The MIT representative asks for the electronics and radio elective and spends forty minutes watching a room of students build a working shortwave receiver out of a bag of parts, asking follow-up questions that all get flat, exact answers back. Afterward he asks who taught it, how long the class took to reach a working set, and what they had built by the end of the first month, gets a straight answer to all three, and spends the walk back composing a fourth.
+The MIT representative asks for the electronics and radio elective and spends most of a period watching a room of students build a working shortwave receiver out of a bag of parts, asking follow-up questions that all get short, exact answers back. Afterward he asks who taught it, how long the class took to reach a working set, and what they had built by the end of the first month, gets a straight answer to all three, and spends the walk back composing a fourth.
 
-A rep corners Chloe in the library on a Wednesday and asks, pleasantly, what a typical day is like, and she tells him: five classes before lunch, two block periods after it for whatever she's carrying that term, three more before dinner, then prep, dinner, and watch on the nights she has it. He asks what watch is, and she walks him through it the way she'd walk anyone through a fire drill, who takes which corridor, how the count works, what happens if somebody misses a call-in. He asks her to say the part about the scoring again.
+A rep corners Chloe in the library on a Wednesday and asks, pleasantly, what a typical day is like, and she tells him: five classes before lunch, two block periods after it for whatever she's carrying that term, three more before dinner, then prep, dinner, and watch on the nights she has it. He asks what watch is, and she walks him through it as a fire drill: who takes which corridor, how the count works, what happens if somebody misses a call-in. He asks her to say the part about the scoring again.
 
 Another asks Sam what he's good at, expecting a list with hedging in it.
 
@@ -136,13 +136,13 @@ Another asks Sam what he's good at, expecting a list with hedging in it.
 
 "How do you know?"
 
-"There's a board, right outside the gym, and anyone can walk by and check it." He says it the way you'd say there's a clock. "It only measures the drill, though, not anything that happens outside the gym, and the drill's got a clock on it where a real one wouldn't. Odile's second, close enough it goes her way plenty of the time."
+"There's a board, right outside the gym, and anyone can walk by and check it." He says it as a fact about the building. "It only measures the drill, though, not anything that happens outside the gym, and the drill's got a clock on it where a real one wouldn't. Odile's second, close enough it goes her way plenty of the time."
 
 The rep asks who Odile is, and Sam points across the dining hall with his fork.
 
 The Duke representative, the one who'd collected "Sport," then "Athletics," then "Recreation," tries Ruth in the reading room one afternoon. "What's the hardest thing you've done here?"
 
-"That's not a well-formed question," Ruth says, not looking up from her own laptop. "Hardest by what measure, and compared to what?"
+"That's not a well-formed question," Ruth says, typing on. "Hardest by what measure, and compared to what?"
 
 "Pick the measure you'd defend, then, and we'll go by that."
 
@@ -152,7 +152,7 @@ The rep writes that down and moves to the next name on his list.
 
 ________________
 
-Nadia's answers come in mostly between one and four in the morning. She keeps them at the back of a notebook in the ledger hand, a line for every application and a column for whatever came back, and by the second week of March the lines run to a hundred and ninety against eleven in the column. One of the eleven lands nine minutes after she sends it, on a form that had taken her fifty minutes. A listing she answered in the first week of November is still up in March, the same four paragraphs with a fresh date on top, reposted twice.
+Nadia's answers come in mostly between one and four in the morning. She keeps them at the back of a notebook in the ledger hand, a line for every application and a column for whatever came back, and by the second week of March the lines run to a hundred and ninety against twelve in the column. One of the twelve lands eight minutes after she sends it, on a form that had taken her fifty minutes. A listing she answered in the first week of November is still up in March, the same three paragraphs with a fresh date on top, reposted twice.
 
 She stops reading the count out at dinner somewhere in February, and when her mother asks on the phone whether anybody has called, Nadia starts being the one who gets to the shop phone first.
 
@@ -160,7 +160,7 @@ Ruth asks her in the common room in March, with only Chloe else in the room, and
 
 "A hundred and ninety," Ruth says. "Against how many that answered?"
 
-"Eleven, and eight of the eleven were written by software." The notebook is shut under her hand. She pushes her sleeves up, and a second goes by where she says nothing. "Read one of mine, Ruth. I can't work out what they want. I've read the listing and I've read the form and I've answered both of them, and I can't see the part where I'm getting it wrong."
+"Twelve, and eight of the twelve were written by software." The notebook is shut under her hand. She pushes her sleeves up, and a second goes by where she says nothing. "Read one of mine, Ruth. I can't work out what they want. I've read the listing and I've read the form and I've answered both of them, and I can't see the part where I'm getting it wrong."
 
 "Chloe should read one, since Chloe's the one who writes."
 
@@ -168,11 +168,11 @@ Ruth asks her in the common room in March, with only Chloe else in the room, and
 
 Chloe puts her pen down and leaves it down.
 
-"Six hundred and eleven, in the end. I cut it."
+"Six hundred and six, in the end. I cut it."
 
-"You cut it three times." Nadia looks at her a second longer than she has looked at her all evening, and then pushes the notebook across the table, open, which she has not done with it in front of anybody. "Read the eleventh one. That's the one that got nine minutes."
+"You cut it three times." Nadia looks at her a second longer than she has looked at her all evening, and then pushes the notebook across the table, open, which she has not done with it in front of anybody. "Read the last one. That's the one that came back before I'd shut the laptop."
 
-Chloe reads it twice and finds it clean, and Ruth reads it after her and says the same. The four pages close there, and both of them keep their seats.
+Chloe reads it twice and finds it clean, and Ruth reads it after her and says the same. That closes there, and both of them keep their seats.
 
 Ruth's own advice is to send the same application twice and change one thing, so in the last week of March Nadia answers one listing twice inside the same hour, the second copy with the listing's own sentences run back through it. The second gets a phone call from a person on the Tuesday. The first stays silent to the end of the month.
 
@@ -182,11 +182,11 @@ Ruth's own advice is to send the same application twice and change one thing, so
 
 ________________
 
-Decisions arrive over nine days in March rather than all at once, the part everyone braced for wrong: each school posts at whatever hour it decides, and the common room turns into somewhere people go to watch each other's phones. Ruth's first lands at four in the afternoon on a Tuesday, in the middle of something else, while Kavi stays up past midnight for one posting at seven the next morning instead, and is awake for it too, phone in hand before he's out of bed.
+Decisions arrive over ten days in March rather than all at once, the part everyone braced for wrong: each school posts at whatever hour it decides, and the common room turns into somewhere people go to watch each other's phones. Ruth's first lands at five in the afternoon on a Tuesday, in the middle of something else, while Kavi stays up past midnight for one posting at seven the next morning instead, and is awake for it too, phone in hand before he's out of bed.
 
-Ruth gets MIT and calls home, where her mother puts her on speaker so her father can hear from the next room and the two of them talk over each other to ask the next question first. Kavi gets MIT, Caltech and Chicago, and is thinking about the next item on his list before dinner, while Sam gets eleven of twelve and wants to know, immediately, what happened to the twelfth.
+Ruth gets MIT and calls home, where her mother puts her on speaker so her father can hear from the next room and the two of them talk over each other to ask the next question first. Kavi gets MIT, Caltech and Chicago, and is thinking about the next item on his list before dinner, while Sam gets all but one of his twelve and wants to know, immediately, what happened to the twelfth.
 
-Odile gets in everywhere, keeps it to herself, and it comes out three days later when Priya finds the letters stacked unopened in date order on her desk and says so at dinner in front of nine people.
+Odile gets in everywhere. The rest of the year hears about it three days later, when Priya finds the letters stacked unopened in date order on her desk and says so at dinner in front of half the table.
 
 Chloe gets twelve of fourteen.
 
@@ -194,7 +194,7 @@ Outside her window the snow along the path has gone soft and grey, the last of i
 
 The arithmetic has gone wrong somewhere, and not in the letters, because the middle of a year gets the state school. She has twelve.
 
-"It said four percent," she says, when Sam finds her there an hour later, still on the floor.
+"It said three percent," she says, when Sam finds her there an hour later, still on the floor.
 
 Sam comes in and sits on the end of the bed with a sandwich from downstairs, and looks at the two rows a while before he says anything.
 
@@ -206,11 +206,11 @@ Sam comes in and sits on the end of the bed with a sandwich from downstairs, and
 
 "Twelve of fourteen, same as I keep counting them."
 
-"Right, that tracks with what everyone else is getting." He counts something off on his fingers, using the hand with the sandwich in it. "I got eleven of twelve. Ruth got everything she asked for. Kavi got three out of three, the same three he actually wanted." He points the sandwich at the two rows on the floor. "That's not four percent of anything, not the way they mean it."
+"Right, that tracks with what everyone else is getting." He counts something off on his fingers, using the hand with the sandwich in it. "I got everything but the twelfth. Ruth got everything she asked for. Kavi got three out of three, the same three he actually wanted." He points the sandwich at the two rows on the floor. "That's not three percent of anything, not by the definition they're using."
 
 Ruth is in the doorway by then, laptop still open on one arm, having come the same way Sam had.
 
-"If a store put a sign in its window saying only four percent of the people who walk in buy something," Chloe says, "would you think the store was doing well, or badly run?"
+"If a store put a sign in its window saying only three percent of the people who walk in buy something," Chloe says, "would you think the store was doing well, or badly run?"
 
 "Neither," Ruth says. "You'd think the sign was doing a job that had nothing to do with the store."
 

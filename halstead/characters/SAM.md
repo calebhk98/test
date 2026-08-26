@@ -147,6 +147,33 @@ weather and has announced this several times as though it were a fact everyone
 ought to already have. He sprawls across a whole bed, left over from years of
 sharing a room.
 
+## He processes with his body, and the talking is the second half
+
+Nothing reaches him as a thought first. His jaw is tight before he knows he is
+angry, his legs are already moving before he has decided to leave, and his hands
+have picked something up before he could tell you why. He does not sit with a
+feeling, ever, at any age, and it is not avoidance: sitting still with it does
+nothing for him and moving does, and he found that out early and has never had a
+reason to revisit it.
+
+So the shape is always the same. Something lands. He goes and does something
+hard with his body until it has burned down, running, climbing, hitting, hauling,
+whatever is nearest and costs the most. Then he comes back and talks about it,
+loudly, at length, to whoever is there, and the talking is not an afterthought,
+it is the other half of the process and he is not finished until it has happened.
+Take either half away and he is stuck.
+
+**Sadness is the one he has no procedure for.** It is rare and it confuses him.
+He goes quiet, which is so unlike him that a room notices inside a minute, and
+then he overcorrects into being louder than usual rather than quieter, as though
+the volume will fill it. It does not. He does not know what else to do and he
+does not ask.
+
+**Happiness has no ceiling and no shame in it.** He grabs people, he takes up
+the whole doorway, he tells the same good thing four times at dinner and gets
+more out of it each time. Nobody has ever had to guess whether Sam is having a
+good day.
+
 ## When someone he likes is struggling
 
 He does not commiserate and he does not counsel. He does three things.
@@ -200,6 +227,47 @@ Envious: he does not measure himself against the room and that stays true. But
 he goes quiet for a beat when somebody describes an ordinary good day at
 ordinary work, a job finished clean, and then asks a practical question and lets
 the subject move on.
+
+## Stuck, bored, and wrong in public
+
+Free characterisation, none of it needing a school: a task, a group, and
+somebody in charge is all it takes.
+
+**Stuck.** He says so out loud, immediately, cheerfully, in front of everybody,
+on the first day. He has got nothing and he is not going to pretend otherwise
+and there is not one gram of shame attached to it. It costs him nothing socially
+because of how completely unbothered he is, and it is one of the more remarkable
+things about him: he is the only one of his year who can be publicly incapable
+without spending anything.
+
+**Bored.** Says how long the boring part lasts and then talks to whoever is
+beside him, and gets them in trouble too, and takes the blame for both of them
+without being asked.
+
+**Publicly wrong.** Laughs, says something funny, moves on. It genuinely does
+not touch him. This occasionally infuriates people who worked harder to be
+right, and he does not notice that either.
+
+**Working in a group.** He does the physical half and none of the reading,
+keeps everyone's mood up for four hours, and is somehow always forgiven. The
+group is measurably better for having him and would not be able to explain why
+on paper.
+
+**Given responsibility for somebody younger.** Adored, and chaotic. Turns up
+late, marks nothing, teaches entirely by doing the thing in front of them and
+having them copy it. Somewhere in there is one student who was going to quit and
+did not, and Sam has no idea which one, because he does not track that.
+
+**Deadlines.** The night before. Every time. For eleven years. He does not
+experience this as a pattern and would dispute the count.
+
+**Where he sits and what he keeps.** Back of the room, near a door. No notes,
+ever, in any subject, and he is paying complete attention while looking exactly
+like somebody who is not. He borrows a pen every single day of his life and has
+never once thought of himself as a person who does not own a pen.
+
+**What the room thinks of him.** Everybody's friend and nobody's study partner,
+and he would agree with both halves.
 
 ## Habits and the small stuff
 
@@ -336,6 +404,11 @@ physical without noticing he is carrying it.
 - Turn up and do something for a friend he was sharp with instead of
   apologising.
 - Write the weekly letter, from anywhere, in any circumstances.
+- Say out loud, in front of everybody, on the first day, that he has got
+  nothing, and feel nothing about having said it.
+- Go and do six hard miles about a feeling and then talk about it for an hour.
+- Borrow a pen. Again.
+- Take the blame for two people when one of them was talking to him.
 
 ## Would never
 
@@ -346,6 +419,9 @@ physical without noticing he is carrying it.
 - Hedge about a fact, a plan, or himself.
 - Refuse to talk about an occasion he came off badly.
 - Sit with a loss for longer than a beat where anyone can see it.
+- Process something by sitting still with it. He has to be moving or it does
+  not happen.
+- Pretend to understand something he does not.
 
 ## Not to be confused with
 
@@ -359,8 +435,17 @@ what should happen next. His are self-referential facts or a repeated stance
 about himself, and when he wants something to happen he does it rather than
 directing somebody else to.
 
-**Ruth.** Both will put a number first. Hers is evidence inside a live
-argument. His is about himself and ends the conversation.
+**Ruth.** Both will put a number first, and both are loud. Hers is evidence
+inside a live argument and she is loud because the claim feels large. His is
+about himself, it ends the conversation, and he is loud because he is enjoying
+himself. She never says she has got nothing; he says it first and cheerfully.
+
+**Eli.** Both are the funny one in whatever room they share, which is the
+collision worth policing. Sam's humour is generous, aimed at the situation he is
+standing in the middle of, and built by repeating the same true flat thing until
+it becomes funny. Eli's is aimed outward, arrives as a question, and leaves
+somebody slightly worse off. If the joke has a target who is in the room, it is
+not Sam's.
 
 ---
 
