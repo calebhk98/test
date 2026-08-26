@@ -34,7 +34,7 @@ Ruth reads it over her shoulder before she can close the laptop, laughing at her
 
 "Because getting it to six hundred is harder than getting it to four thousand." Chloe cuts it three times before it holds at six hundred and six.
 
-Sam finishes in under an hour and shuts the laptop harder than it needs. "Ten pages a week for four years," he says, "and the thing that decides where I spend the next four is a paragraph, and at that length they're guessing, not reading, and everyone who wrote one knows it."
+Sam finishes in under an hour and shuts the laptop harder than it needs. "Ten pages a week, every week since I got here," he says, "and the thing that decides where I spend the next four years is a paragraph, and at that length they're guessing, not reading, and everyone who wrote one knows it."
 
 Kavi finishes in twenty minutes, exactly six hundred and one words, and submits it unread.
 
@@ -44,7 +44,7 @@ Ruth's own prompt asks her to describe a time she failed, and she spends an hour
 
 "Pick one and write it down," Kavi says, chin down over his own keyboard.
 
-"That's not an answer, that's just telling me what to do."
+"That's just telling me what to do."
 
 "It's a deadline, so pick one, or the deadline picks one for you at midnight."
 
@@ -56,7 +56,7 @@ Nadia is in the room too, back against the door, laptop on her knees, and what s
 
 "Which one do you actually want?" Chloe says.
 
-"Any of them where somebody calls in wanting a price and I'm the one who answers the phone. The rest of it is the building it happens in."
+"Any of them where somebody calls in wanting a price and I'm the one who answers the phone. Everything else is the building it happens in."
 
 A second prompt asks about a place that changed her, and Chloe cannot get the forge down to six hundred words either, so she writes about the reservoir instead, seven miles from her parents' house, and the hill she has to stand up on the pedals to clear. It comes out at three hundred and ninety words with every line surviving the edit, a bad sign by her own reckoning for about a minute before she submits it anyway.
 
@@ -84,7 +84,7 @@ Two hours later every file from the school is flagged, and by January there are 
 
 What breaks it open further is the papers: three applicants have listed research on their applications, one line each, unelaborated. The school confirms all three exist, with real titles, real dates, indexed where papers get indexed, and it will not send a copy to anyone who asks; what it offers instead is a chair.
 
-A representative may come and read the paper in a room, on paper, for as long as they like, with somebody in the room throughout. No phone and no bag go in. The school provides the paper, a pencil, and as much notepaper as anybody wants, and everything written in the room is read before it leaves. One committee calls the terms unworkable in an internal email, forwarded twice before somebody decides declining is simpler than arguing; another leaves three follow-up requests to gather dust. Four accept.
+A representative may come and read the paper in a room, on paper, for as long as they like, with somebody in the room throughout. No phone and no bag go in. The school provides the paper, a pencil, and as much notepaper as anybody wants, and everything written in the room is read before it leaves. One committee calls the terms unworkable in an internal email, forwarded twice before somebody decides declining is simpler than arguing; another leaves three follow-up requests to gather dust. Five accept.
 
 The room is small and windowless, one lamp over a table, and the Caltech representative sits down at eight and settles in. The escort stays in the corner with a paperback of her own, checking the clock more than she checks him, and brings water mid-morning.
 
@@ -152,7 +152,7 @@ The rep writes that down and moves to the next name on his list.
 
 ________________
 
-Nadia's answers come in mostly between one and four in the morning. They live at the back of a notebook in the ledger hand, a line for every application and a column for whatever came back, and by the second week of March the lines run to a hundred and ninety against twelve in the column. One of the twelve lands eight minutes after she sends it, on a form that had taken her fifty minutes. A listing she answered in the first week of November is still up in March, the identical three paragraphs with a fresh date on top, reposted twice.
+Nadia's answers come in mostly between one and three in the morning. They live at the back of a notebook in the ledger hand, a line for every application and a column for whatever came back, and by the second week of March the lines run to a hundred and ninety against twelve in the column. One of the twelve lands eight minutes after she sends it, on a form that had taken her fifty minutes. A listing she answered in the first week of November is still up in March, the identical three paragraphs with a fresh date on top, reposted twice.
 
 Somewhere in February she stops reading the count out at dinner, and when her mother asks on the phone whether anybody has called, Nadia starts being the one who gets to the shop phone first.
 

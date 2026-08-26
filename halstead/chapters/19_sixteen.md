@@ -76,7 +76,7 @@ In the second week of May she writes her first practice paper, at a table in the
 
 "It's the same sentence to you, because you already know why the risk sits with the buyer, whereas the marker has to be given that reasoning rather than assumed to already have it, and right now the page hands them one idea wearing two coats instead." He turns the page around and pushes it back at her with the pen laid across the empty half of it. "Write me the shed burning down. Not the rule about it, the actual event: goods inside, fire on the Tuesday, who's holding the loss when the smoke clears, and why that person and not somebody else."
 
-She writes the shed burning down in three minutes, one paragraph, with a sentence in the middle that makes her jaw set while she is writing it, and Kavi gives her all of them. "There it is, that's the whole four marks, right there on the page where somebody can actually see them."
+She writes the shed burning down in three minutes, one paragraph, with a sentence in the middle that makes her jaw set while she is writing it, and Kavi gives her the marks. "There it is, every one of them, right there on the page where somebody can actually see it."
 
 Between May and September she writes thirty-one of those, Kavi marking some and Nadia marking some, while she marks the rest herself with her own answer folded under the page; in May she stops early on about half of them, and by August the rate has come down to one in six and settles there, declining to improve.
 
@@ -88,7 +88,7 @@ Delacroix runs the handling weeks, talking the entire time she drives, in one fl
 
 "I am looking where I want the car, and I want it past the pole, not into it."
 
-"You're looking at the pole, not past it, and the pole's the only thing you're actually feeding your hands right now." One hand is up on the roof strap, the other resting on his knee, and neither of them moves while he says it. "You hit what you look at. That's not a saying, that's just what your hands do with whatever your eyes hand them." He points two fingers through the windshield at the piece of road he means, a piece of road she has yet to look at once. "Look at the gap on the far side of it, past the pole entirely. Give your hands that instead of the pole and they'll take you there on their own, without you doing anything clever with the wheel."
+"You're looking at the pole, not past it, and the pole's the only thing you're actually feeding your hands right now." One hand is up on the roof strap, the other resting on his knee, and neither of them moves while he says it. "You hit what you look at. Your hands do what your eyes hand them, saying or no saying." He points two fingers through the windshield at the piece of road he means, a piece of road she has yet to look at once. "Look at the gap on the far side of it, past the pole entirely. Give your hands that instead of the pole and they'll take you there on their own, without you doing anything clever with the wheel."
 
 She looks at the gap, and the car goes through it.
 
@@ -96,7 +96,7 @@ She looks at the gap, and the car goes through it.
 
 In October she sits the bar again, the retake for everyone who failed in April, in that room, two rows over from where she sat the first time.
 
-Question six is a rented forklift, and she has the answer in her second line, then writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. The whole of it takes nineteen minutes, and she reads it back once, leaving every line of it exactly where it is.
+Question six is a rented forklift, and she has the answer in her second line, then writes the rule, where the rule comes from, why a forklift is inside it, and what happens if somebody takes it off the site on a Sunday. Start to finish it takes nineteen minutes, and she reads it back once, leaving every line of it exactly where it is.
 
 This time she passes by twenty-two, and she reads the number twice before she puts the page away, and then Kavi sends back a string of exclamation points and Sam texts to ask what she got on the forklift question, so she tells him, asks what he got, and goes back to her book.
 
@@ -114,7 +114,7 @@ The tongs go home to the hook on the back of her door, beside the bag she made i
 
 ---
 
-Home in June for ten weeks, she sleeps through most of the first one, then settles at ten hours a night and rides out to the reservoir most days, in July finding a road past the water good for six extra miles and a hill she has to stand up on, with six novels going through her hands in a fortnight, though she could not afterward tell anybody how a single one of them ends. The rest of it is long afternoons on the back steps she and her father built when she was thirteen, with the sun coming round the corner of the garage in the late afternoon and a wasp working the same board every day.
+Home in June for ten weeks, she sleeps through most of the first one, then settles at ten hours a night and rides out to the reservoir most days, in July finding a road past the water good for six extra miles and a hill she has to stand up on, with six novels going through her hands in a fortnight, though she could not afterward tell anybody how a single one of them ends. The rest is long afternoons on the back steps she and her father built when she was thirteen, with the sun coming round the corner of the garage in the late afternoon and a wasp working the same board every day.
 
 Her mother watches that from the kitchen window for two weeks before she comes out.
 

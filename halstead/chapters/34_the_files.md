@@ -20,7 +20,7 @@ Four students left campus at night without permission, walked into town, sat in 
 
 Seven men come across the car park to rob them. Three of the seven are carrying firearms.
 
-None of the seven agrees with the others about the order of it. They agree it was fast, that one of them did all of it, and that the other three were not where they had been. Two of them independently report being told, during or just after, that this had been sloppy and needed more practice.
+None of the seven agrees with the others about the order of it. They agree it was fast, that one of the students did all of it, and that the other three were not where they had been. Two of them independently report being told, during or just after, that this had been sloppy and needed more practice.
 
 The one number in the whole report that matches exactly what Ruth already had was the time: twenty-two seconds, first word to the last man down, agreed on by all seven, the only detail in the whole account that was.
 
@@ -32,7 +32,7 @@ Then the last paragraph. Footage was sought from the Waffle House, the two units
 
 And a line under that. The unit assigned to observation of the school had their own recordings of that night. Those are gone too.
 
-That's where the report ends. Four pages, scanned rather than born digital, the text sitting slightly crooked on every page the way it does when somebody photographed a stapled original instead of typing it fresh, a small tell that whoever filed it expected it to stay inside the one unit that wrote it, forever.
+That's where the report ends. Five pages, scanned rather than born digital, the text sitting slightly crooked on every page the way it does when somebody photographed a stapled original instead of typing it fresh, a small tell that whoever filed it expected it to stay inside the one unit that wrote it, forever.
 
 Nadia reads the last line twice, closes the file, and reopens it to check the date stamp is what she thought it was before she says anything to anyone. Chloe scrolls back up to the top of the incident report and reads the whole thing again from the start, checking for a clause she might have dropped the first time through. Sam's phone buzzes twice in his pocket before he gets a hand free to look at it, and by the time he does, the chat has already started without him.
 

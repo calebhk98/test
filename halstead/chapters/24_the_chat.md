@@ -198,7 +198,7 @@ theo: it IS nice. its also insane
 
 ________________
 
-Sam gets half an hour with his phone most evenings, sometimes less, in a room with nineteen other guys doing the same thing at rows of folding tables, and whatever's left of it goes to the chat instead of a call home. Tonight it's this.
+Sam gets half an hour with his phone most evenings, sometimes less, in a room with nineteen other guys doing exactly what he is doing at rows of folding tables, and whatever's left of it goes to the chat instead of a call home. Tonight it's this.
 
 sam: does anyone elses job do trust falls
 
@@ -484,7 +484,7 @@ nadia: fine. get the page kavi
 
 ________________
 
-Four days pass before Kavi comes back with anything. When he does, he says he asked and was told it's internal. Internal how, Chloe asks. That's the word they used, is all Kavi has for her. He asked about the formulation too, and got that word for it as well.
+Three days pass before Kavi comes back with anything. When he does, he says he asked and was told it's internal. Internal how, Chloe asks. That's the word they used, is all Kavi has for her. He asked about the formulation too, and got that word for it as well.
 
 chloe: thats not a reason thats a category
 

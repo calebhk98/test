@@ -2,7 +2,7 @@
 
 *April 2023*
 
-Mr. Amberg runs the exit interviews himself, fifteen minutes each, ten or twelve students a day for eight days starting the first Monday of April, and a roster goes up outside the staff office every morning with that day's names in order, a runner coming down from admin to call the next one in when the clock on his desk says it is time. Most of them run the full fifteen minutes, by the staff's own count, even the ones a minute would have covered, and by the ninth day the list needs a second sheet taped below the first, names running off the bottom of the original in his own small, fast handwriting. His own contracts class still meets three times in the week, the interviews slotted into whatever's left of the day around it, and the second-week test goes out on the Friday at the hour it was always going to go out.
+Mr. Amberg runs the exit interviews himself, fifteen minutes each, ten or twelve students a day for eight days starting the first Monday of April, and a roster goes up outside the staff office every morning with that day's names in order, a runner coming down from admin to call the next one in when the clock on his desk says it is time. Most of them run the full fifteen minutes, by the staff's own count, even the ones a minute would have covered, and by the sixth day the list needs a second sheet taped below the first, names running off the bottom of the original in his own small, fast handwriting. His own contracts class still meets three times in the week, the interviews slotted into whatever's left of the day around it, and the second-week test goes out on the Friday at the hour it was always going to go out.
 
 The rest of April carries on exactly as scheduled around it: the twelves still have History at ten every morning, the range still runs its Saturday relays, the forge stays open Thursdays and both Saturday sessions, and lunch still runs from noon to half past, as in any other week in the term.
 
@@ -30,15 +30,15 @@ His office holds a desk, two chairs, and a small clock turned to face only him, 
 
 "Here."
 
-She keeps her feet square on the floor while she reads to the bottom of the page, the stillness she'd use leaning across a table when she wants to get something right the first time rather than the second. She's taught the twelves real analysis out of a room two floors below this one, working through the proofs handed to her at that age, by a teacher always making it sound like the ordinary next thing rather than a favor. She's dropped three flawed hinges of her own into the scrap bin rather than let them stand, and gone back to the forge every Thursday for five years without anyone having to ask her twice, because the standard she was holding the work to was hers before it was anyone else's, and all of it sits outside any dollar figure, in a place the number on the desk in front of her leaves entirely alone. Eleven years ago the whole of this place came down to a letter with her name typed across the front of it, in an envelope she still has, in a drawer she still checks, and the folder open on the desk now has the same name typed on the tab.
+She keeps her feet square on the floor while she reads to the bottom of the page, the stillness she'd use leaning across a table when she wants to get something right the first time rather than the second. She's taught the twelves real analysis out of a room two floors below this one, working through the proofs handed to her at that age, by a teacher always making it sound like the ordinary next thing rather than a favor. She's dropped three flawed hinges of her own into the scrap bin rather than let them stand, and gone back to the forge every Thursday for five years without anyone having to ask her twice, because the standard she was holding the work to was hers before it was anyone else's, and all of it sits outside any dollar figure, in a place the number on the desk in front of her leaves entirely alone. At the start, the whole of this place came down to a letter with her name typed across the front of it, in an envelope she still has, in a drawer she still checks, and the folder open on the desk now has the same name typed on the tab.
 
 "I don't think so," she says.
 
-Mr. Amberg's pen stops moving, and he sets it down instead of writing with it, a thing she has seen him do perhaps twice in eleven years.
+Mr. Amberg's pen stops moving, and he sets it down instead of writing with it, a thing she has seen him do perhaps twice in all her years here.
 
 "Reason?"
 
-It takes her a moment to find, and she turns the folder's edge slightly with one finger before she answers. "If you sat one exam every year, in one room, against the same ninety people, and you kept coming out near the top of it, would you ever actually find out if you were good at the exam, or just good against that particular room?" She keeps going before he can answer it, because she has been assembling the answer since the clock on his desk started. "I don't know what's outside this building, and everyone I've ever been measured against my whole life is inside it. Staying keeps the question open. It just makes the room permanent."
+Finding it takes her a moment, and she turns the folder's edge slightly with one finger before she answers. "If you sat one exam every year, in one room, against the same ninety people, and you kept coming out near the top of it, would you ever actually find out if you were good at the exam, or just good against that particular room?" She keeps going before he can answer it, because she has been assembling the answer since the clock on his desk started. "I don't know what's outside this building, and everyone I've ever been measured against my whole life is inside it. Staying keeps the question open. It just makes the room permanent."
 
 Mr. Amberg writes it down, then squares the folder against the edge of the desk and opens it once more, the slow read he gives a mark scheme before he hands it back, running a finger down the last page against whatever he's just written in the margin, and he closes it exactly when the clock reads zero, with the pen back in the cup at the corner of the desk.
 
@@ -60,13 +60,13 @@ The roster has Nadia at ten past twelve on the Thursday of the first week, betwe
 
 "You've got my marks and you've got the board in the hallway."
 
-He gives her the same four things in the order he gives everybody: research, full time; a hundred and thirty five thousand dollars a year to start; housing, food, a car, medical; the degree on top of it if she wants it, paid for, the post held open until she finishes.
+He gives her the same list in the order he gives everybody: research, full time; a hundred and thirty five thousand dollars a year to start; housing, food, a car, medical; the degree on top of it if she wants it, paid for, the post held open until she finishes.
 
 "No."
 
 "Reason?"
 
-"I'd be good at about four hours a month of that job." Both hands stay where they were. "The four hours where somebody names the constraint and I go argue with a supplier about it. The rest of it is a desk and a paper at the end, and every paper I have ever finished went to a marker, where it stopped."
+"I'd be good at about four hours a month of that job." Both hands stay where they were. "The hours where somebody names the constraint and I go argue with a supplier about it. The remainder is a desk and a paper at the end, and every paper I have ever finished went to a marker, where it stopped."
 
 Amberg writes for a while. "The eighty saying no are going to college in September. You haven't sent an application anywhere."
 
@@ -154,7 +154,7 @@ The silence on the line runs long enough, unbroken by the usual kitchen noise, f
 
 The second telling runs the length she gave it the first time, for both of them now, keeping the parts in Amberg's order because the order is the only thing about it she can hand over intact.
 
-Her father lets a breath out in one short exhale, not quite a laugh. "That's not a decision, that's a mistake, however it's dressed up."
+Her father lets a breath out in one short exhale, not quite a laugh. "That's a mistake, however it's dressed up."
 
 "Dave."
 

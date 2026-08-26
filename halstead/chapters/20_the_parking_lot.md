@@ -6,7 +6,7 @@ They are the first to sneak out in ten years, the entire reason it is worth doin
 
 Over two weeks the preparation divides itself four ways: Nadia stands next to a maintenance supervisor in the dining hall on a Tuesday, talks about the weather for half a minute, and walks away with his badge duplicated; Chloe gets into the corridor cameras and sets them looping on a stretch of empty hallway; Ruth brings the box she built at thirteen for finding video recorders on the networks around it and logging in with the passwords they shipped with; and Sam clocks the night patrol's second pass three nights running, until the interval between it and the first is regular enough to walk through at an ordinary speed.
 
-Kavi turns it down at the last second, saying he wants to finish something, and from Kavi this always means he has already started it and would rather see the end of it than the far side of a fence, so the other four go over the fence twenty minutes short of midnight.
+Kavi turns it down at the last second, saying he wants to finish something, and from Kavi this always means he has already started it and would rather see the end of it than the far side of a fence, so the rest of them go over the fence twenty minutes short of midnight.
 
 ---
 
@@ -32,7 +32,7 @@ Sam puts his fork down before he asks it. "How old is he now, seven?"
 
 "Seven in September, so he's got a whole year of hearing about it before he even gets here."
 
-"Nine years behind you, and he'll spend every one of them hearing your name before he ever meets you, whether he asks for it or not." He picks the fork back up and goes back at the stack.
+"Most of a decade behind you, and he'll spend every year of it hearing your name before he ever meets you, whether he asks for it or not." He picks the fork back up and goes back at the stack.
 
 "He already knows that, and he's been practising looking unimpressed about it since he could talk." Ruth turns the cup again, a quarter turn at a time, always in the one direction. "He asked me what the food's like, and that was the whole letter conversation, start to finish, just the food, not the campus or the classes."
 

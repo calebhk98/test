@@ -4,7 +4,7 @@
 
 The financial one takes sixteen weeks.
 
-Sixteen weeks means a different thing to each of the four, all of them doing something else alongside it, Eli's actual job, Kavi's regular teaching load, Nadia's fourth quarter, and none of it gets any easier because they also happen to be doing this.
+Sixteen weeks means a different thing to each of them, all of them doing something else alongside it, Eli's actual job, Kavi's regular teaching load, Nadia's fourth quarter, and none of it gets any easier because they also happen to be doing this.
 
 Eli builds it, and Kavi builds the thing that watches it. The whole design problem is that it has to be boring, sitting in the places where a badly maintained reconciliation job would sit and moving just as slowly, so it reads as ordinary and not as anything that searches. None of them have that kind of patience. The program does.
 
