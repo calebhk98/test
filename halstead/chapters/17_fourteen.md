@@ -2,7 +2,7 @@
 
 *September 2019 – April 2020*
 
-Marksmanship replaces archery in September, and Voss gives them weeks of dry drill before anything gets loaded: a row of weapons goes on a table and they learn to name them all off the silhouette from across the room, then strip and reassemble some of them by feel with a cloth laid over their hands, and then do it that way again while Voss stands behind them reading questions off a clipboard and timing the answers. Chloe fumbles the bolt release for weeks, until in the third week her hand finds it on its own while she is looking at the far wall.
+Marksmanship replaces archery in September, and Voss gives them weeks of dry drill before anything gets loaded. A row of weapons goes on a table and they learn to name them all off the silhouette from across the room, then strip and reassemble some of them by feel with a cloth laid over their hands, and then do it that way again while Voss stands behind them reading questions off a clipboard and timing the answers. Chloe fumbles the bolt release for weeks, until in the third week her hand finds it on its own while she is looking at the far wall.
 
 Live fire starts in October at fifty metres, prone, unsupported, on paper, and Chloe is down on the mat with her elbows set before Voss has finished handing out the ear protection. The mat is cold through her sleeves, the line goes quiet in a way no room in the building manages, and the smell of the place stays in her hair until she washes it.
 
@@ -52,11 +52,11 @@ Self defense is three rounds an hour, with one person standing in the middle whi
 
 "You're ten seconds off a minute and you're doing pairs."
 
-Pairs take the rest of the hour, and then she finds Ruth at the sinks and acts out the hold again with her hands, and then Sam, and then a boy from the year below who was standing right there when it happened. Bex comes in on the end of that, and when the next person through the door asks what happened Bex tells her, fifty seconds and the third round and the knee across the shin at the finish, all of it in order and all of it right, and then what Chloe should have done with that shin. By the week after, the round the year has is a round Bex called from the edge of the mat. Chloe stands at the sink with her hands under the water and lets it run.
+Pairs take the rest of the hour. Then she finds Ruth at the sinks and acts out the hold again with her hands, and then Sam, and then a boy from the year below who was standing right there when it happened. Bex comes in on the end of that, and when the next person through the door asks what happened Bex tells her, fifty seconds and the third round and the knee across the shin at the finish, all of it in order and all of it right, and then what Chloe should have done with that shin. By the week after, the round the year has is a round Bex called from the edge of the mat. Chloe stands at the sink with her hands under the water and lets it run.
 
 Seven of the year below go on her teaching list in September while Marek goes on somebody else's, and she reads that off the noticeboard on the first morning, reads the other teacher's list all the way to the bottom, and takes the stairs at a run going up. Her hour with them is differential equations and the analysis that runs beside it, which she was doing at their age, taught by the man who teaches them the other hours of it now, and it goes well enough until November, when all of them get the same question wrong in the same way.
 
-Going through the papers twice takes her back to her own notes from the third week, and there it is in her own handwriting: she taught them the ordering reversed, all of them learned it the way she gave it to them, and all of them arrived exactly where she had pointed them, and because everything before the test came out the same either way round, it sat there for months.
+Going through the papers twice takes her back to her own notes from the third week, and there it is in her own handwriting. She taught them the ordering reversed, all of them learned it the way she gave it to them, and all of them arrived exactly where she had pointed them, and because everything before the test came out the same either way round, it sat there for months.
 
 "Does the test count?" Halide says.
 
@@ -64,21 +64,21 @@ Going through the papers twice takes her back to her own notes from the third we
 
 "No," Chloe says, wiping the board down with her back to them, and she stops halfway across it and turns round. "Your answers all follow from what I taught you, and what I taught you was wrong. You'll get a different one in two weeks and it'll be harder, because by then you'll actually have it."
 
-Iyad has it at dinner that week with her not at the table, telling the far end that she taught the year below a whole term of it backwards, all of them, the same error the whole way down and not a single person catching it, which is correct and is the part worth having. He gets round most of the tables with it by the Saturday. What comes back to her at the sinks from a girl in the year above is the question, whether it is true she taught the lot of them backwards, and Chloe says yes, and the girl says she thought so, and goes.
+Iyad has it at dinner that week with her not at the table, telling the far end that she taught the year below a whole term of it backwards, all of them, the same error the whole way down and not a single person catching it. He gets round most of the tables with it by the Saturday. What comes back to her at the sinks from a girl in the year above is the question, whether it is true she taught the lot of them backwards, and Chloe says yes, and the girl says she thought so, and goes.
 
 Japanese moves faster at the front than she expects, so that by the end of the fourth week she is further along than she has ever been at that point in a language, and on a Wednesday afternoon she digs out her own notes on Russian and on Mandarin to check whether that is true, and it is. The kanji arrive with most of their meaning already on them, but then the grammar starts, and the grammar is unlike anything behind her on the list, so by November she is putting half an hour a night into it and moving slowly, and she is still ahead of where Mandarin had her at that stage.
 
 Abstract algebra arrives with probability beside it, contracts spends a term on what a sentence actually obliges a person to do and what it merely encourages, and logistics spends a term on how many trucks there are, where the drivers sleep, and who pays for the diesel. Comparative religion she sits through mostly listening, and comes out of it with a handful of opinions and no way to test any of them.
 
-Engineering and design works the other way round from wood shop and the forge, where she makes the thing herself, because here she writes down what it has to do and hands the paper to a stranger, so when she writes a two-page specification for a clamp in November and a boy called Dov builds it off the paper, what he hands back closes on the wrong axis.
+Engineering and design works the other way round from wood shop and the forge, where she makes the thing herself, because here she writes down what it has to do and hands the paper to a stranger. So when she writes a two-page specification for a clamp in November and a boy called Dov builds it off the paper, what he hands back closes on the wrong axis.
 
 "He built what you wrote," the teacher says, holding the clamp up so she can see which way it opens. "The spec says how hard to hold something, not what it's holding, so he built a clamp that could hold anything, which means it holds any one thing just as poorly as the rest."
 
-Chloe reads her own pages again with the clamp sitting on top of them, and the pressure is on there, and the travel, and the tolerance, and which way it opens, so she runs a finger down the first page, then the second, then turns them both over and finds the backs blank.
+Chloe reads her own pages again with the clamp sitting on top of them, and the pressure is on there, and the travel, and the tolerance, and which way it opens. So she runs a finger down the first page, then the second, then turns them both over and finds the backs blank.
 
 "There's a page and a half here about how hard it squeezes and a blank where the thing being squeezed goes."
 
-Most of what the year does now has other people's names on it as well as hers. Priya has the logistics sheet pinned over her desk beside the sheet from the laboratory and the sheet from comparative religion, and on a Tuesday in February all of them want the same evening, so she spends dinner going round the long table trading hours with people already trading hours with somebody else, and comes out of it having moved an hour to Sunday and given up an evening she had already spent in her head.
+Most of what the year does now has other people's names on it as well as hers. Priya has the logistics sheet pinned over her desk beside the sheet from the laboratory and the sheet from comparative religion. On a Tuesday in February all of them want the same evening, so she spends dinner going round the long table trading hours with people already trading hours with somebody else, and comes out of it having moved an hour to Sunday and given up an evening she had already spent in her head.
 
 The groups for engineering and design go up on the noticeboard in the first week of February, a handful of names under each, the school choosing all of it, with the brief on a single page underneath. Put a sound on the long field to within a hand's width. The sound goes where the staff put it rather than where the group puts it, at an hour the staff pick, and it happens once.
 
@@ -104,7 +104,7 @@ Priya is along the radiator under the window with her boots up on the pipe. "You
 
 Nobody answers that on the Tuesday and nobody has a better answer on the Thursday.
 
-They go wireless anyway, because the reel has to be signed for and the field is a field, and Kavi has it in a fortnight and then has it no further, and the number comes out at dinner in the middle of March, with his hands flat either side of the tray.
+They go wireless anyway, because the reel has to be signed for and the field is a field. Kavi has it in a fortnight and then has it no further, and the number comes out at dinner in the middle of March, with his hands flat either side of the tray.
 
 "It sits at a couple of milliseconds and it will not go under. A couple of milliseconds is most of a metre of air, so the answer is a metre wide before Ruth has heard anything and before Chloe has done any arithmetic at all."
 
@@ -120,11 +120,11 @@ They go wireless anyway, because the reel has to be signed for and the field is 
 
 Nadia goes to the board on the Thursday and puts the wire back on it. "Then it's wire, and the clock goes down the wire, and Priya's problem goes away on its own, because nothing gets calibrated off a sound any more."
 
-They lay a hundred and sixty metres of it down the long field on the Saturday in rain, pegged along the fence and taped at the posts, and lift it again on the Sunday because the mowers are out on the Monday, and Sam comes down for the lifting because Odile asked him to. Nadia stands at the top of the field at the end of it with her hands up her sleeves.
+They lay a hundred and sixty metres of it down the long field on the Saturday in rain, pegged along the fence and taped at the posts, and lift it again on the Sunday because the mowers are out on the Monday. Sam comes down for the lifting because Odile asked him to. Nadia stands at the top of the field at the end of it with her hands up her sleeves.
 
 "Half a dozen people and a morning, every time anybody wants to switch it on."
 
-Kavi's clock lands on the Tuesday with the run on the Thursday, and every recording Ruth has tuned against came off the old clock, so all of it goes again from the start. Odile and Sam go out into the dark after dinner and put the sound on the field for her, over and over, off the marks, and Odile comes back in at the end of it with her hands gone red.
+Kavi's clock lands on the Tuesday with the run on the Thursday, and every recording Ruth has tuned against came off the old clock, so all of it goes again from the start. Odile and Sam go out into the dark after dinner and put the sound on the field for her, over and over, off the marks. Odile comes back in at the end of it with her hands gone red.
 
 "How many more do you want."
 
@@ -132,7 +132,7 @@ Kavi's clock lands on the Tuesday with the run on the Thursday, and every record
 
 "Sixty," Odile says, and goes back out.
 
-Chloe has the arrival sheets and nothing yet to put into them, so she sits in the room while the numbers come in and does the geometry again for a placing there is no longer time to use, and after midnight she opens Ruth's thresholds and moves the far box, because the far box has been taking the road as the front of the sound all evening.
+Chloe has the arrival sheets and nothing yet to put into them, so she sits in the room while the numbers come in and does the geometry again for a placing there is no longer time to use. After midnight she opens Ruth's thresholds and moves the far box, because the far box has been taking the road as the front of the sound all evening.
 
 "Put it back."
 
@@ -156,7 +156,7 @@ Chloe reads it in the corridor with people behind her waiting for a turn. In Apr
 
 The no-libraries project runs for a month in the spring, and the brief is one sentence: something that does a real job, all of it written from scratch by you.
 
-Her project is a text renderer that reads the font file when it loads and works the letter shapes out of the curves stored in it, adjusting them so that small type stays sharp on a screen and taking the gap between every pair of letters from the numbers in the file rather than from a table she typed out herself. Then it lays the whole page out again, live, while somebody drags the corner of the window around, and all of that has to land inside sixteen milliseconds or the letters tear, and the finished thing runs to thousands of lines across a dozen files, so on the last day she drags the window around in front of Ruth and Kavi.
+Her project is a text renderer that reads the font file when it loads and works the letter shapes out of the curves stored in it, adjusting them so that small type stays sharp on a screen and taking the gap between every pair of letters from the numbers in the file rather than from a table she typed out herself. Then it lays the whole page out again, live, while somebody drags the corner of the window around, and all of that has to land inside sixteen milliseconds or the letters tear. The finished thing runs to thousands of lines across a dozen files, so on the last day she drags the window around in front of Ruth and Kavi.
 
 Ruth does sound, all of it synthesised live off whatever the user is doing, and she spends days on her back on the floor of her room with the machine on her chest, playing the same few seconds until Priya bangs on the wall.
 
@@ -176,7 +176,7 @@ Ruth plays it twenty more times, and then at one in the morning she sits up so f
 
 "I've been cutting that off since Tuesday, thinking it was empty space worth losing."
 
-Down at the materials lab she spends the autumn on a run of fracture tests that keep coming out inconsistent, and after five weeks she has it: samples cut on the Friday saw come out three degrees off square, samples cut on the Tuesday saw come out true, and the log lists the date and the operator while leaving out the saw. Her name goes into the acknowledgments of the write-up in March, at the end of a list of five, on a paper that stays inside the department. Sanders tells her about it in the corridor on his way somewhere else, still walking, and she stands there with her bag half off her shoulder before she goes on to Japanese, then reads the whole paper that night and finds the two tables that came out of her weeks.
+Down at the materials lab she spends the autumn on a run of fracture tests that keep coming out inconsistent, and after five weeks she has it. Samples cut on the Friday saw come out three degrees off square, samples cut on the Tuesday saw come out true, and the log lists the date and the operator while leaving out the saw. Her name goes into the acknowledgments of the write-up in March, at the end of a list of five, on a paper that stays inside the department. Sanders tells her about it in the corridor on his way somewhere else, still walking, and she stands there with her bag half off her shoulder before she goes on to Japanese, then reads the whole paper that night and finds the two tables that came out of her weeks.
 
 Sam is six foot two by September, when Ruth stands next to him at breakfast in the first week and tips her head back to find his face.
 
@@ -258,10 +258,10 @@ Her father sets his fork down. "She said something on the phone in October."
 
 Her mother sets the dish down in the middle of the table, straightens it, and goes into the kitchen, staying there while her father moves the salt, puts it back, then gets up and starts stacking plates still half full. The real sentence stays exactly where it's been all evening, buried under the one about pie. The kitchen gets a few minutes and the plates get stacked instead, and that turns out to be as much of the sentence as the room can hold.
 
-Her mother comes back in and asks whether anybody wants the pie warmed up, and her father and Chloe both say yes at once, so he turns the game on and they eat it in front of that, with her mother coming to sit on the arm of his chair for the second half.
+Her mother comes back in and asks whether anybody wants the pie warmed up, and her father and Chloe both say yes at once. He turns the game on and they eat it in front of that, with her mother coming to sit on the arm of his chair for the second half.
 
 "That's a hold. That is a hold, that's been a hold all night," her mother says.
 
-On Sunday she asks whether the man behind the line is armed, and what happens if somebody drops one, and whether anybody has ever turned round, and Chloe answers all three and then tells her about the flag they call the wind off, and her mother listens all the way through and comes back with one more question about the man behind the line.
+On Sunday she asks whether the man behind the line is armed, and what happens if somebody drops one, and whether anybody has ever turned round. Chloe answers all three and then tells her about the flag they call the wind off, and her mother listens all the way through and comes back with one more question about the man behind the line.
 
 The calls home run twice a week through January and most of February, until exams take them down to Sundays in March, and by April it is twice a week again.

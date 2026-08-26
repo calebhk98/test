@@ -6,7 +6,7 @@ A line appears on her timetable in September, new since June: *Mathematics, 12s,
 
 Teaching starts at thirteen and you take the year below, so her cohort, being the oldest in the building, is the only cohort doing it, which makes the twelves the only year taught by another student and the thirteens the only year with no teacher of their own. She works that out on the stairs in the first fortnight, tells Ruth, and gets a shrug and half a sandwich.
 
-The room has more chairs in it than she has students, and the radiator is under the window at the far end, so whoever gets there early sits down that end and the rest sit in the cold. Six of the seven are straightforward: Ivy and Tomas want the answer handed over, though they can be talked out of it inside a month, Beatriz arrives already knowing most of the material and so takes a few minutes of the hour and uses them well, two more turn up, work, leave. The sixth cries in October over something with no bearing on mathematics, so Chloe sits on the floor with him for half an hour while he gets out a handful of words, then goes to dinner and comes back the following Thursday fine.
+The room has more chairs in it than she has students, and the radiator is under the window at the far end. Six of the seven are straightforward: Ivy and Tomas want the answer handed over, though they can be talked out of it inside a month, Beatriz arrives already knowing most of the material and so takes a few minutes of the hour and uses them well, two more turn up, work, leave. The sixth cries in October over something with no bearing on mathematics, so Chloe sits on the floor with him for half an hour while he gets out a handful of words, then goes to dinner and comes back the following Thursday fine.
 
 Marek's sheet comes back blank, week after week.
 
@@ -38,11 +38,11 @@ In January she gives him a problem out of the following year's material that he 
 
 Chloe puts the chalk down harder than she means to, and he waits by the door until she says fine, then goes.
 
-In February she offers to read the 1981 paper and mark him on that, and he says no, politely, at once, since she is a year older and has yet to open it. In March she asks what would make him hand something in, and he thinks about it.
+In February she offers to read the 1981 paper and mark him on that. He says no, politely, at once, since she is a year older and has yet to open it. In March she asks what would make him hand something in, and he thinks about it.
 
 "Nothing would," he says. "A mark on a sheet stays exactly as true whether it's written down or not, and the work is just as real whether I hand in a page or leave it blank."
 
-The December sheet has names doing well on it and one still blank, and because the grade at the bottom covers the lot it comes out lower than her grade in anything else that term, so she reads it twice in the corridor, folds it into quarters and pockets it rather than binning it.
+The December sheet has names doing well on it and one still blank. Because the grade at the bottom covers the lot it comes out lower than her grade in anything else that term, so she reads it twice in the corridor, folds it into quarters and pockets it rather than binning it.
 
 A week later she stops at the mathematics office on her way past and asks how a blank column is handled at the end of the year, in the flattest words she can find for it and with no name anywhere in the question. The woman at the desk tells her: the column is scored as submitted work, an absent submission scores nothing, the scheme has no other entry available for it, and a student teacher records what is on the page rather than what is not. It takes under a minute and it answers everything she asked. Chloe thanks her and goes.
 
@@ -84,7 +84,7 @@ Ruth and Kavi took cryptography and networks last year, which puts Ruth three mo
 
 "What is it, though? You're not usually up here at this hour."
 
-She takes the lid off with both hands and turns it toward Chloe, and inside is a circuit board, a battery taped down the side, and a coil of wire folded to make it fit. "It goes looking for recorders, anything on any network in range that's recording video, and about half are still on the password they shipped with, so it tries those first."
+She takes the lid off with both hands and turns it toward Chloe. Inside is a circuit board, a battery taped down the side, and a coil of wire folded to make it fit. "It goes looking for recorders, anything on any network in range that's recording video, and about half are still on the password they shipped with, so it tries those first."
 
 "And the changed ones? That's most of them by now."
 
@@ -112,7 +112,7 @@ Ruth reads the column with her chin on her fist. "So it has to look like somethi
 
 "It has to look like what this network is already full of, which is a hundred and sixty machines checking in with each other about the weather every few minutes."
 
-That takes the rest of the term, and what comes out is slow and ugly and pushes exactly as much traffic at three on a Sunday morning, with all of them asleep, as on a Thursday night with all of them typing. Amberg could take it apart in an afternoon, and not one of them asks him to. They are on the eight o'clock bus the first Saturday in December, and it goes into town with all of them on it.
+That takes the rest of the term, and what comes out is slow, ugly, and pushes exactly as much traffic at three on a Sunday morning, with all of them asleep, as on a Thursday night with all of them typing. Amberg could take it apart in an afternoon, and not one of them asks him to. They are on the eight o'clock bus the first Saturday in December, and it goes into town with all of them on it.
 
 Bex has the day out loud before the bus is off the gravel, the hardware place first because it shuts at noon, then food, then everything after that, and she revises it twice before the main road, moving the food and then moving the food back.
 
@@ -126,7 +126,7 @@ The plan works, all of it, including the food.
 
 Formal epistemology starts with a sentence on the board, *I know that I am sitting in this room*, and the professor spends the hour asking what would have to be true for that to count as knowledge, so by the end most of the room doubts it knows anything at all. "Justified plus true still lets a lucky guess through," she says, moving to the next slide before anyone has finished writing it down, and Chloe stands in the corridor afterwards for a minute with her bag still open before she goes on to German.
 
-Block two is hers, so she puts fencing and game theory on the sheet, and fencing she is bad at the way she was bad at dance, seeing the opening and arriving a fifth of a second after it has closed. Game theory she has inside a fortnight, then loses to Kavi across a table for the rest of the term, because the mathematics tells her what to do against somebody playing properly while Kavi has spent his whole life playing the person instead of the board.
+Block two is hers, so she puts fencing and game theory on the sheet. Fencing she is bad at the way she was bad at dance, seeing the opening and arriving a fifth of a second after it has closed. Game theory she has inside a fortnight, then loses to Kavi across a table for the rest of the term, because the mathematics tells her what to do against somebody playing properly while Kavi has spent his whole life playing the person instead of the board.
 
 "You went left again, and you went left last time as well."
 
@@ -136,7 +136,7 @@ Chloe leans back from the board. "The mathematics says the opposite, Kavi: you p
 
 "It's what the person says, not what the table says." He is sweeping the counters into his hand and enjoying himself. "You keep playing the table, every time, and I'm playing you."
 
-What she actually does with block two is the school forge, Thursdays and both Saturday sessions and most of Sunday, so by the spring she is working through the second sitting of dinner and eating whatever is left.
+What she actually does with block two is the school forge, Thursdays and both Saturday sessions and most of Sunday. By the spring she is working through the second sitting of dinner and eating whatever is left.
 
 ________________
 
@@ -148,7 +148,7 @@ Law starts with Mr. Amberg walking in and putting a copy of the state code on th
 
 Then he starts on contracts.
 
-Dinner is a dozen of them at the long table by the window, which is the coldest table in the hall from November on and the table everybody wants in June, and has been since the second week of September, with Sam, Ruth, Kavi, Priya, Odile, Eli and Nadia always there, a few others coming and going, and Chloe knows all their names.
+Dinner is a dozen of them at the long table by the window, and has been since the second week of September, with Sam, Ruth, Kavi, Priya, Odile, Eli, and Nadia always there, a few others coming and going. Chloe knows all their names.
 
 Eli puts a cipher on the table one Thursday, between the salt and the water jug, on a napkin.
 
@@ -172,7 +172,7 @@ Nadia turns the napkin round toward Chloe with a finger.
 
 "A plate," Iyad says, over the end of it, at the volume of the far end of the table. "That's what it is, that's a registration off the system itself, sitting right in the middle of the thing, and everybody's been reading the ends of it and nobody looked at the middle, which is where I went first. And Chloe's had it a while and she'll not say, because she never says until she's certain, and she's never certain."
 
-The far end takes that up and keeps it, and Sam laughs into his water, and Priya wants to know whether anybody is going to answer her about the live system.
+The far end takes that up and keeps it. Sam laughs into his water, and Priya wants to know whether anybody is going to answer her about the live system.
 
 Nadia waits for him to finish.
 

@@ -6,11 +6,11 @@ Mr. Hearn is small and gray and says everything at the same volume.
 
 He writes the name on the board, then some numbers under it. "Alexander Hamilton, a real person you can look up, and everything he wrote is still in print and most of it is free. He wrote fifty-one of the Federalist papers in something like half a year, and he had a full-time job the entire time he was doing it."
 
-The arithmetic goes up on the board in silence, and fifty-one in roughly thirty weeks comes out at an essay every four days, a few thousand words a go, which is a dozen pages or more, and he underlines the rate and leaves it there.
+The arithmetic goes up on the board in silence: fifty-one in roughly thirty weeks comes out at an essay every four days, a few thousand words a go, a dozen pages or more. He underlines the rate and leaves it there.
 
 He caps the pen. "One ten-page essay a week, and that's less than half his rate, you've got a keyboard, and nobody is waiting on you to walk it to a printer on Saturday morning. The first is due Monday. It has to be as good, and that's the part that's actually hard, because the length is easy, it is just hours, so if you want to know what I'm marking against, go and read them, and they're short enough that there's no excuse not to."
 
-Chloe has written reports that long before, in Mandarin last year and in French the year before that, all of them with weeks behind them, and they were also about things, like what a port did in a year, or what a newspaper said and what a second newspaper said about it, and those came back marked on the Mandarin.
+Chloe has written reports that long before, in Mandarin last year and in French the year before that, all of them with weeks behind them. They were also about things, like what a port did in a year, or what a newspaper said and what a second newspaper said about it, and those came back marked on the Mandarin.
 
 She reads Federalist 10 that night in the chair by the window, which takes her an hour and a half, then reads it again on the Saturday, faster, with a pen, before she spends the rest of the weekend on an essay about whether a small state can be trusted with a veto.
 
@@ -20,11 +20,11 @@ On the Tuesday she tells him she read number 10.
 
 "That's Madison," he says, and starts the hour without adding anything to it.
 
-That evening she looks up who wrote which, and Hamilton has number 1, then 6 through 9, then 11 through 13, then 15 through 17, then 21 through 36, then 59 through 61, then 65 through 85. Number 6 goes that week and 9 the week after, and by the end of October she is going through them in order in the hour before dinner, so that she has all fifty-one of Hamilton's done by the middle of December, and then she starts on Madison's.
+That evening she looks up who wrote which, and Hamilton has number 1, then 6 through 9, then 11 through 13, then 15 through 17, then 21 through 36, then 59 through 61, then 65 through 85. Number 6 goes that week and 9 the week after. By the end of October she is going through them in order in the hour before dinner, so that she has all fifty-one of Hamilton's done by the middle of December, and then she starts on Madison's.
 
 The second essay is due days after the first, so she is still thinking about the first when she has to start it.
 
-In the second week of October she decides this essay is going to be good, so she builds the outline first, though outlines have always been for other people, and it still gets the pages out the other end. The last page gets written first, then the middle, and the rest splits across a few sittings, and she writes it twice from scratch, closing the first draft away before starting the second, and she takes a position she disagrees with and writes it straight, and that draft comes back worse than the others.
+In the second week of October she decides this essay is going to be good, so she builds the outline first, though outlines have always been for other people, and it still gets the pages out the other end. The last page gets written first, then the middle, and the rest splits across a few sittings. She writes it twice from scratch, closing the first draft away before starting the second. She takes a position she disagrees with and writes it straight, and that draft comes back worse than the others.
 
 In November Hearn tells her the third page of an essay is doing the work of the pages in front of it, and to go and look at what those pages are for, advice that she reads twice on the stairs, and every essay she writes for the next month has a good third page in it, but the other nine pages are still there.
 
@@ -64,7 +64,7 @@ Swimming gets harder and the teacher says so in the first week. Some of it is in
 
 Paintball joins the afternoon block in October, and Bell hands the markers out, says it is what they have been doing with darts, a bit harder, and sets the drill running.
 
-For weeks everybody is bad at it and knows why, because the ball goes far faster than a dart and there is a wall of paint behind the target to prove it, and Bell lets them stay stuck that way. By the end of an hour the floor is tacky and everybody's soles come away from it with a sound.
+For weeks everybody is bad at it and knows why: the ball goes far faster than a dart, and there is a wall of paint behind the target to prove it. Bell lets them stay stuck that way. By the end of an hour the floor is tacky and everybody's soles come away from it with a sound.
 
 On the second Thursday Ruth is sitting on the floor with her back against the wall bars. "I'm watching it the whole way. I can see it leave, I see the whole thing happen, and my hand's still behind it every single time. I'm going to be behind it for the rest of my life at this rate."
 
@@ -80,15 +80,15 @@ She is up on her knees with both hands out. "We're all reacting and you can't re
 
 "She told us none of this, we worked it out ourselves, just now, standing here."
 
-On the Monday Chloe gets one on her fourth go, and the balls meet an arm's length in front of her face with a flat wet crack, both of them coming apart at once, orange and blue hanging in the air together and then all over the floor, and the boy she is paired with says, "Lucky," but Ruth gets hers a few minutes later and screams.
+On the Monday Chloe gets one on her fourth go, and the balls meet an arm's length in front of her face with a flat wet crack, both of them coming apart at once, orange and blue hanging in the air together and then all over the floor. The boy she is paired with says, "Lucky," but Ruth gets hers a few minutes later and screams.
 
-By the end of the hour they have more between them than everybody else on the floor put together, and on the Thursday they have nineteen, and they spend most of that evening doing the noise at each other in the corridor, and Ruth does an impression of the boy who said luck, and they make Kavi watch it twice.
+By the end of the hour they have more between them than everybody else on the floor put together, and on the Thursday they have nineteen. They spend most of that evening doing the noise at each other in the corridor, and Ruth does an impression of the boy who said luck, and they make Kavi watch it twice.
 
 People start asking on the Friday, and Ruth says she has been practising while Chloe shrugs and changes the subject. Bex has the end of the shrug before Chloe is out of it, so on the Monday it is Bex who says it to Bell, with the whole floor sitting down and the markers on the mats: that nobody can react to the ball, that the barrel is a hose and what you watch is where the hose is pointed, that every marker in this building throws at a single speed. She has all of it, she has it in order, and she says it at the volume she says everything at.
 
 Bell puts it up on the board under her name and runs the rest of the hour off it, and the year goes at it that way from then on.
 
-Chloe sits at the front of the floor with her knees up and her arms round them. Afterwards she goes back through the Thursday, the wall bars and Ruth's back against them and her own hands out in front of her, working out how much of it went out loud and in what order, because she had been going fast and talking at Ruth, and Ruth was the person she had been explaining it to.
+Chloe sits at the front of the floor with her knees up and her arms round them. Afterwards she goes back through the Thursday, the wall bars and Ruth's back against them and her own hands out in front of her, working out how much of it went out loud and in what order. She had been going fast and talking at Ruth, and Ruth was the person she had been explaining it to.
 
 By the following week there are theories going round about the markers being different weights.
 
@@ -111,11 +111,11 @@ Then he goes through what a drill can be: people over the fence at the loading s
 
 Most of them are announced, with a board that says *Thursday, afternoon block* a week out and a dozen names going up with it, and everybody knows it is coming, but it is still hard. Some are at night and those go on the board too, while every few weeks there is a drill sprung with no warning at all, first thing in the morning or in the middle of lunch, and people count the weeks.
 
-Her first is on the board on the Monday and happens on the Thursday, when adults come over the north fence with a bag between them and are inside Building Two before anybody has moved, and somebody is off her feet before she turns around. More go down at the stairwell, and a boy called Wes answers a question about how many of them there are, and the drill is called well over the standard.
+Her first is on the board on the Monday and happens on the Thursday, when adults come over the north fence with a bag between them and are inside Building Two before anybody has moved. Somebody is off her feet before she turns around. More go down at the stairwell, and a boy called Wes answers a question about how many of them there are, and the drill is called well over the standard.
 
 The sheet goes up on the Friday, and every name on it has an F next to it and a numbered list underneath.
 
-She reads it in the corridor with people behind her waiting for a turn at it, under a light that throws everything back off the glass, so the bottom of a sheet has to be read at an angle. Number one is response time, number two is that a student answered a question about how many of them there are, and number three is that adults entered a building. Number six says the north stairwell was uncovered, and Chloe, who stood there the whole time, is still working out what covering it would even have looked like.
+She reads it in the corridor with people behind her waiting for a turn at it, under a light that throws everything back off the glass. Number one is response time, number two is that a student answered a question about how many of them there are, and number three is that adults entered a building. Number six says the north stairwell was uncovered, and Chloe, who stood there the whole time, is still working out what covering it would even have looked like.
 
 After dinner, when the corridor is empty, she goes back and reads it again, and then a third time. Ruth comes and stands next to her and reads it all the way to the bottom in silence, arms crossed.
 
@@ -129,9 +129,9 @@ Ruth is still looking at the sheet. "So was I, and so was Wes, and I don't know 
 
 Chloe says it at dinner, with the plates still going round. "The standard's scored against the response and not against what the response was up against, so a drill nobody could have held comes out looking like a year that couldn't hold it. Nobody scores the drill."
 
-Twenty minutes later Iyad has it at the far end of the table with a phrase of his own on the front of it and the bit about the year still in it, and he has the north stairwell off the bottom of the sheet as well, and who was standing in it while it went uncovered. The far end takes up both and is still on them when the plates come back. Chloe finishes what is in front of her and carries her tray down the far side of the hall.
+Twenty minutes later Iyad has it at the far end of the table with a phrase of his own on the front of it and the bit about the year still in it. He has the north stairwell off the bottom of the sheet as well, and who was standing in it while it went uncovered. The far end takes up both and is still on them when the plates come back. Chloe finishes what is in front of her and carries her tray down the far side of the hall.
 
-Russian starts in September, and a couple of months in she has enough of it to argue in, while Ruth is on Arabic. By the middle of the term they are running insults across the dinner table in two languages, and Kavi complains about it in a third, and Sam asks them to do it in English so he can join in and neither of them will.
+Russian starts in September, and a couple of months in she has enough of it to argue in, while Ruth is on Arabic. By the middle of the term they are running insults across the dinner table in two languages, and Kavi complains about it in a third. Sam asks them to do it in English so he can join in, and neither of them will.
 
 Music runs both ways at once. Half the hour is by ear and half is notation, with the same man teaching both, sliding between them and leaving you to work out which you're doing. On every instrument they put in front of her she is mediocre, but in the third week he plays a run of bars and she gives them all back while the girl next to her gets the first bar and stops, so she keeps the block all year and puts her name down for it again in June. Algebra starts in mathematics in the second week, on the sheet, in the slot where the mathematics already was.
 
@@ -161,7 +161,7 @@ He turns round in his chair properly. "No, hold on, you've got most of an argume
 
 "Yeah, that's exactly it." He points the fork at her. "That's the b-"
 
-Her mother comes through with the pie and everybody moves their arms, while her aunt wants to know who is having cream, and her father catches Chloe's eye across the table a minute later and lifts an eyebrow.
+Her mother comes through with the pie and everybody moves their arms, while her aunt wants to know who is having cream. Her father catches Chloe's eye across the table a minute later and lifts an eyebrow.
 
 ________________
 
@@ -171,7 +171,7 @@ On the way out into the corridor she checks the back of the last page twice, in 
 
 Theo gets his back with no note that week, but he puts it straight into his bag and goes on with what he was saying.
 
-More go in before the break, but they are the essays they have been since October. The last is on whether a promise made under a threat counts, a question that Hearn's note calls good before asking where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 again on the floor of the spare room with the door shut, and her grandmother finds her there on the second afternoon and leaves the papers exactly where they are.
+More go in before the break, but they are the essays they have been since October. The last is on whether a promise made under a threat counts, a question that Hearn's note calls good before asking where the answer to it went. Over Christmas at her grandmother's she reads Federalist 70 and 78 again on the floor of the spare room with the door shut. Her grandmother finds her there on the second afternoon and leaves the papers exactly where they are.
 
 "There's a chair, you know, an actual chair, a step from where you're sitting on my floor."
 
@@ -181,7 +181,7 @@ Her grandmother puts a plate down on the carpet inside the doorway and leaves it
 
 The Tuesday is in the second week of February.
 
-In the evening she sits down with a question about whether an unenforced rule is still a rule, and she has the shape of it before she has written a word, and the shape has a place in it where she is going to be wrong, and she writes toward that place instead of round it. The last line goes down late, and there is an hour before lights out, which she spends on a book she picked herself.
+In the evening she sits down with a question about whether an unenforced rule is still a rule, and she has the shape of it before she has written a word. The shape has a place in it where she is going to be wrong, and she writes toward that place instead of round it. The last line goes down late, and there is an hour before lights out, which she spends on a book she picked herself.
 
 She reads it back on the Wednesday morning before she hands it in, sitting on the floor outside the room with minutes to go, and leaves it exactly as it is.
 
