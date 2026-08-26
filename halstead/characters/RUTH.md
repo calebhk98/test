@@ -249,8 +249,8 @@ seconds of a problem for days, lying on the floor with it, and the answer
 tends to arrive in the small hours and get her upright before she is properly
 awake.
 
-Losing, she goes quiet and re-runs the sequence privately instead of contesting
-the result. Every version of her under strain resolves to the same instinct:
+Losing, she stops talking about it entirely and re-runs the sequence privately
+instead of contesting the result. Every version of her under strain resolves to the same instinct:
 investigate alone before arguing.
 
 Praised, she asks what it was measured against and how many people were in the

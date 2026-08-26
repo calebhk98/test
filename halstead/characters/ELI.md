@@ -189,7 +189,7 @@ person whose rigour he actually wants pointed at him, his hands go still
 instead of speeding up. That is the whole tell.
 
 **Told he has hurt somebody**, he separates the two questions and answers the
-wrong one. He says, plainly and without defensiveness, that he did not say it
+wrong one. He says, straight out and without defensiveness, that he did not say it
 was anybody's fault, that it is only the actual count, that he was not being
 harsh. All of that is true and none of it is the thing he was asked. He does
 not retract, does not sulk, and does not stop liking the person, and the next
@@ -389,7 +389,7 @@ finding out that this is the whole reward, permanently. Being the only person
 qualified to grade his own work, forever, is the frightening version of the
 thing he is proudest of. **What he does instead of admitting it:** he goes and
 finds another broken thing, and treats the absence of a verdict as a preference
-rather than a lack, plainly enough that people believe him.
+rather than a lack, and convincingly enough that people believe him.
 
 **Before sleeping** he replays the last unsolved step of a problem the way you
 would hum a stuck song, with no real anxiety attached.
@@ -451,7 +451,7 @@ do not know it exists.
   encouraging, and mean nothing personal by it.
 - Put his own worst week into the group as instalments, with the punchline
   first.
-- Keep needling after being told to stop, then say plainly that he did not mean
+- Keep needling after being told to stop, then say straight out that he did not mean
   it as blame, and mean that too.
 - Spend a whole free day on something nobody around him takes seriously, and
   defend it plainly if asked.

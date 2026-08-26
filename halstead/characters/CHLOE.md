@@ -273,9 +273,10 @@ Wrong, she argues, and she argues at length and past the point where she has sto
 believing herself, because the embarrassment is bigger than the correction is. Her ears go
 hot and she keeps going. Then it turns over, sometimes in the same conversation and
 sometimes a day later, and she concedes the whole thing at once, out loud, completely, and
-means it, and then has nothing further to say for a while. A writer needs both halves: the argument is
-not stubbornness and the concession is not defeat, and she is the only one here who does
-the two of them in that order.
+means it, and then has nothing further to say for a while. A writer needs both halves.
+The argument is not stubbornness and the concession is not defeat, and the order they
+come in is the characterising part: she cannot get to the second one without doing the
+first one at full length first.
 
 Losing, she stays visibly annoyed for about a week and then lets it go on her own, without
 anyone talking her out of it. Praised, she hears a factual claim about the work rather than

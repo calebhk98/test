@@ -239,11 +239,12 @@ describe her as a friend, and she has no complaint about that arrangement.
 
 ## Personality off the page
 
-Bored, she sorts something, and the sorting is real work to her rather than
-fidgeting. A free Saturday is outside, in a garden or walking looking for
-stones. What she finds funny in other people is somebody being confidently
-wrong about a fact that is written down somewhere; she does not laugh out loud
-at it but she remembers it for years.
+The sorting she does when there is nothing else to do is real work to her rather
+than fidgeting, and she would be surprised to hear it described as a habit. A
+free Saturday is outside, in a garden or walking looking for stones. What she
+finds funny in other people is a long search for a thing that turned out to have
+been in plain sight the whole time, the key on the hook, the name on the door;
+she does not laugh out loud at it and she remembers it for years.
 
 She is easy in a crowd and needs no extra attention in one, which is what a
 large loud family does to a person. She is also, and this surprises people who
