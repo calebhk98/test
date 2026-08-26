@@ -136,7 +136,7 @@ Block two is hers, and she takes riding, because Priya takes riding.
 
 The stables are a walk past the north field, cinder path most of the way and mud from the gate on. You get the smell of the place a good while before you get the roof of it. Priya talks the whole way there and the whole way back, about horses first and then about everything, so that inside a fortnight Chloe can call every horse in the place by name and point out which two of them bite.
 
-"That's Cricket." Priya doesn't slow down. "She's fine, as long as you stand where she can see you."
+"That's Cricket, she's fine, as long as you stand where she can see you."
 
 "Where is it, exactly, that she can't see me, I want to know the actual blind spot."
 
@@ -146,11 +146,7 @@ Chloe can sit a canter by February, and she can get a horse over a low fence by 
 
 "You quit riding, and I had to hear about it from Anne instead of you," Priya says at dinner, two days later.
 
-"Yeah."
-
-Priya waits, her fork still in her hand.
-
-"I should have told you instead of just not showing up on the Thursday, because I know that's the worse way to do it."
+"Yeah, and I should have told you instead of just not showing up on the Thursday, because I know that's the worse way to do it."
 
 "Why, though, what happened out there? Anne asked me on Tuesday where you'd gone, and all I had for her was a shrug."
 
@@ -158,7 +154,7 @@ Priya waits, her fork still in her hand.
 
 Priya looks at her over the top of her glass. "It's fun for me, though, even the boring parts, even the parts you clearly can't stand."
 
-"I know." Chloe looks at her own plate. "That's the bit I kept waiting for the whole time, for it to turn into that for me too," she says.
+"I know, and that's the bit I kept waiting for the whole time, for it to turn into that for me too," Chloe says.
 
 ________________
 
@@ -178,7 +174,7 @@ Chloe loses the first few games, because she keeps counting the same card twice,
 
 In the third week, her father is at the table with a stack of paper and a pen.
 
-"What's that?" Chloe leans over his shoulder. "Is that the contract you were complaining about last week?"
+"What's that, is that the contract you were complaining about last week?"
 
 Her father turns a page. "A proposal from a vendor. They want six weeks and forty thousand dollars. It's very well written, which is what's bothering me."
 
@@ -198,7 +194,7 @@ Her father starts to answer but stops with the page half turned, then goes back 
 
 Her father takes the pen and puts a line under the whole paragraph. "There isn't a version of this where they've failed to do it. That's why it reads so well. This is four pages of the same trick, isn't it."
 
-"No idea." Chloe is still on the second paragraph. "I only got as far as that one."
+"No idea, I only got as far as that one."
 
 Going through the rest of the pages at the table that night, he finds more of them. On the Thursday, he asks the vendor which of the sentences in section three they would put a date and a number against. Some come back with dates, but the rest come back as the same sentences with different words in them, and in the car on Friday he goes through the lot of them for her while she eats a sandwich.
 

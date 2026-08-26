@@ -134,7 +134,7 @@ Ben turns back a sheet in his stack, draws a line through something, writes agai
 
 "What do you do when you finish your work early?"
 
-"Nothing." Chloe looks at her own knees. "Mostly. Anything I start, I have to put away again."
+"Nothing, mostly. Anything I start, I have to put away again."
 
 Ben lets the room stay quiet long enough that Chloe fills it herself.
 

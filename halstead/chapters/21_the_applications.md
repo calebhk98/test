@@ -26,7 +26,7 @@ They do the essays in Ruth's room on a Sunday because doing them alone is worse,
 
 The first prompt wants six hundred words about a challenge she overcame, so Chloe picks the year she taught the thirteens and had a boy in the front row refusing to hand anything in, and she is well over a thousand words in before she reaches the part where anything is overcome, because the interesting part is why he was right.
 
-Ruth reads it over her shoulder before she can close the laptop, laughing at her. "That's not the assignment. They don't want an essay, they want a thing somebody can read in thirty seconds and still remember at lunch."
+Ruth reads it over her shoulder before she can close the laptop, laughing at her. "That's not the assignment." "They don't want an essay, they want a thing somebody can read in thirty seconds and still remember at lunch."
 
 "I know what they want. I just think the limit leaves out anything that's actually true, because the true part of that year is that the boy was right and I still never got a page out of him. That doesn't go in the box they gave me and it doesn't survive being remembered at lunch."
 
@@ -56,7 +56,7 @@ Ruth's own prompt asks her to describe a time she failed, and she spends an hour
 
 "That's just telling me what to do."
 
-"It's a deadline, so pick one, or the deadline picks for you at midnight."
+"It's a deadline," Kavi says. "So pick one, or the deadline picks for you at midnight."
 
 Nadia is in the room too, back against the door, laptop on her knees, and what she is filling in is a portal rather than an essay. It wants a whole schooling typed into a box marked Education History after taking it as an attached file, the fourth form today to ask her for something it already holds.
 
@@ -106,7 +106,7 @@ Just before the bell he stands, hands the sheets over, and waits while she reads
 
 "Is the third author available to talk? There's a step in the methods I can't rebuild off the page, and it's attributed to her." The methods section names her for the part he has no way to check on his own.
 
-"She's sixteen, and she's in class until four," the escort says.
+"She's sixteen," the escort says. "And she's in class until four."
 
 "Would four work?"
 
@@ -200,7 +200,7 @@ Ruth's own advice is to send an application twice and change one thing, so in th
 
 "Do the second one every time," Ruth says.
 
-Nadia writes the Tuesday call into the column and rules a line under it. "Then the form isn't reading the person, it's reading its own listing back to itself. Fine. Every time."
+Nadia writes the Tuesday call into the column and rules a line under it. "Then the form isn't reading the person, it's reading its own listing back to itself." "Fine." "Every time."
 
 ________________
 
@@ -226,7 +226,7 @@ Sam comes in and sits on the end of the bed with a sandwich from downstairs, and
 
 "They lie."
 
-"All of us, though? Everybody got a letter that lied to us?"
+"All of us, though?" she says. "Everybody got a letter that lied to us?"
 
 "How many did you get?"
 

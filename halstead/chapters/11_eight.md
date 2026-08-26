@@ -4,7 +4,7 @@
 
 Her mother has kept the room the way it was, down to the sock on the radiator, and the bike is still in the garage under a sheet. Chloe gets it out on the second day and rides to the end of the road and back, her knees coming up past the handlebars on every stroke. Her mother watches from the porch with a coffee. "We'll get you a bigger one, because that's not fitting you again even by September."
 
-"It's fine." Chloe is still on the bike. "Because my feet still reach if I stretch, and stretching's basically the same as reaching."
+"It's fine, because my feet still reach if I stretch, and stretching's basically the same as reaching."
 
 "Your feet were touching the ground with the pedals still under them, so it isn't fine, and I'm not having this conversation again in a hospital. Saturday, the place by the tire shop, and you're picking one you'll still fit next year." She is already going back inside with the cup.
 
@@ -20,7 +20,7 @@ On the fourth of July she starts an argument with her father about whether a hot
 
 Chloe holds the hot dog up between finger and thumb, turning it so he can see all of it. "So is a sub roll, but every sub you have eaten in your life you have called a sandwich. A hinge is a fact about bread, not a fact about food. If I cut this all the way through right now, does it turn into a sandwich while I'm holding it?"
 
-"Then it's a different food." Her father doesn't look up from the grill. "Because you changed what's holding what, and that's the whole difference between the two."
+"Then it's a different food," her father says, "because you changed what's holding what, and that's the whole difference between the two."
 
 "It's the same food, because all I did was cut it, and a cut is just a cut, not a transformation. Nobody has ever bitten into anything and tasted the hinge."
 
@@ -186,11 +186,7 @@ The elective list is on the wall outside the dining hall, four sheets long, with
 
 Twice she reads it through: drawing is on it, along with pottery, glassblowing, bookbinding, beekeeping, something called whittling, and a great many things she can only guess at from the name, while names are already on the climbing line and one on beekeeping.
 
-Sam has come up behind her. "What are you doing?"
-
-Sam reads over her shoulder.
-
-"Are you signing up for something or just reading the sheet all day?"
+Sam has come up behind her. "What are you doing? Are you signing up for something or just reading the sheet all day?"
 
 "Still reading, because half of these sound made up and I want to know which ones are real."
 

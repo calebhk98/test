@@ -443,7 +443,7 @@ Ben turns back a sheet in his stack, draws a line through something, writes agai
 
 "What do you do when you finish your work early?"
 
-"Nothing." Chloe looks at her own knees. "Mostly. Anything I start, I have to put away again."
+"Nothing, mostly. Anything I start, I have to put away again."
 
 Ben lets the room stay quiet long enough that Chloe fills it herself.
 
@@ -2420,7 +2420,7 @@ In the car Chloe opens the notebook and checks the inside cover, where three nam
 
 Her mother has kept the room the way it was, down to the sock on the radiator, and the bike is still in the garage under a sheet. Chloe gets it out on the second day and rides to the end of the road and back, her knees coming up past the handlebars on every stroke. Her mother watches from the porch with a coffee. "We'll get you a bigger one, because that's not fitting you again even by September."
 
-"It's fine." Chloe is still on the bike. "Because my feet still reach if I stretch, and stretching's basically the same as reaching."
+"It's fine, because my feet still reach if I stretch, and stretching's basically the same as reaching."
 
 "Your feet were touching the ground with the pedals still under them, so it isn't fine, and I'm not having this conversation again in a hospital. Saturday, the place by the tire shop, and you're picking one you'll still fit next year." She is already going back inside with the cup.
 
@@ -2436,7 +2436,7 @@ On the fourth of July she starts an argument with her father about whether a hot
 
 Chloe holds the hot dog up between finger and thumb, turning it so he can see all of it. "So is a sub roll, but every sub you have eaten in your life you have called a sandwich. A hinge is a fact about bread, not a fact about food. If I cut this all the way through right now, does it turn into a sandwich while I'm holding it?"
 
-"Then it's a different food." Her father doesn't look up from the grill. "Because you changed what's holding what, and that's the whole difference between the two."
+"Then it's a different food," her father says, "because you changed what's holding what, and that's the whole difference between the two."
 
 "It's the same food, because all I did was cut it, and a cut is just a cut, not a transformation. Nobody has ever bitten into anything and tasted the hinge."
 
@@ -2602,11 +2602,7 @@ The elective list is on the wall outside the dining hall, four sheets long, with
 
 Twice she reads it through: drawing is on it, along with pottery, glassblowing, bookbinding, beekeeping, something called whittling, and a great many things she can only guess at from the name, while names are already on the climbing line and one on beekeeping.
 
-Sam has come up behind her. "What are you doing?"
-
-Sam reads over her shoulder.
-
-"Are you signing up for something or just reading the sheet all day?"
+Sam has come up behind her. "What are you doing? Are you signing up for something or just reading the sheet all day?"
 
 "Still reading, because half of these sound made up and I want to know which ones are real."
 
@@ -2773,7 +2769,7 @@ Block two is hers, and she takes riding, because Priya takes riding.
 
 The stables are a walk past the north field, cinder path most of the way and mud from the gate on. You get the smell of the place a good while before you get the roof of it. Priya talks the whole way there and the whole way back, about horses first and then about everything, so that inside a fortnight Chloe can call every horse in the place by name and point out which two of them bite.
 
-"That's Cricket." Priya doesn't slow down. "She's fine, as long as you stand where she can see you."
+"That's Cricket, she's fine, as long as you stand where she can see you."
 
 "Where is it, exactly, that she can't see me, I want to know the actual blind spot."
 
@@ -2783,11 +2779,7 @@ Chloe can sit a canter by February, and she can get a horse over a low fence by 
 
 "You quit riding, and I had to hear about it from Anne instead of you," Priya says at dinner, two days later.
 
-"Yeah."
-
-Priya waits, her fork still in her hand.
-
-"I should have told you instead of just not showing up on the Thursday, because I know that's the worse way to do it."
+"Yeah, and I should have told you instead of just not showing up on the Thursday, because I know that's the worse way to do it."
 
 "Why, though, what happened out there? Anne asked me on Tuesday where you'd gone, and all I had for her was a shrug."
 
@@ -2795,7 +2787,7 @@ Priya waits, her fork still in her hand.
 
 Priya looks at her over the top of her glass. "It's fun for me, though, even the boring parts, even the parts you clearly can't stand."
 
-"I know." Chloe looks at her own plate. "That's the bit I kept waiting for the whole time, for it to turn into that for me too," she says.
+"I know, and that's the bit I kept waiting for the whole time, for it to turn into that for me too," Chloe says.
 
 ________________
 
@@ -2815,7 +2807,7 @@ Chloe loses the first few games, because she keeps counting the same card twice,
 
 In the third week, her father is at the table with a stack of paper and a pen.
 
-"What's that?" Chloe leans over his shoulder. "Is that the contract you were complaining about last week?"
+"What's that, is that the contract you were complaining about last week?"
 
 Her father turns a page. "A proposal from a vendor. They want six weeks and forty thousand dollars. It's very well written, which is what's bothering me."
 
@@ -2835,7 +2827,7 @@ Her father starts to answer but stops with the page half turned, then goes back 
 
 Her father takes the pen and puts a line under the whole paragraph. "There isn't a version of this where they've failed to do it. That's why it reads so well. This is four pages of the same trick, isn't it."
 
-"No idea." Chloe is still on the second paragraph. "I only got as far as that one."
+"No idea, I only got as far as that one."
 
 Going through the rest of the pages at the table that night, he finds more of them. On the Thursday, he asks the vendor which of the sentences in section three they would put a date and a number against. Some come back with dates, but the rest come back as the same sentences with different words in them, and in the car on Friday he goes through the lot of them for her while she eats a sandwich.
 
@@ -4711,7 +4703,7 @@ They do the essays in Ruth's room on a Sunday because doing them alone is worse,
 
 The first prompt wants six hundred words about a challenge she overcame, so Chloe picks the year she taught the thirteens and had a boy in the front row refusing to hand anything in, and she is well over a thousand words in before she reaches the part where anything is overcome, because the interesting part is why he was right.
 
-Ruth reads it over her shoulder before she can close the laptop, laughing at her. "That's not the assignment. They don't want an essay, they want a thing somebody can read in thirty seconds and still remember at lunch."
+Ruth reads it over her shoulder before she can close the laptop, laughing at her. "That's not the assignment." "They don't want an essay, they want a thing somebody can read in thirty seconds and still remember at lunch."
 
 "I know what they want. I just think the limit leaves out anything that's actually true, because the true part of that year is that the boy was right and I still never got a page out of him. That doesn't go in the box they gave me and it doesn't survive being remembered at lunch."
 
@@ -4741,7 +4733,7 @@ Ruth's own prompt asks her to describe a time she failed, and she spends an hour
 
 "That's just telling me what to do."
 
-"It's a deadline, so pick one, or the deadline picks for you at midnight."
+"It's a deadline," Kavi says. "So pick one, or the deadline picks for you at midnight."
 
 Nadia is in the room too, back against the door, laptop on her knees, and what she is filling in is a portal rather than an essay. It wants a whole schooling typed into a box marked Education History after taking it as an attached file, the fourth form today to ask her for something it already holds.
 
@@ -4791,7 +4783,7 @@ Just before the bell he stands, hands the sheets over, and waits while she reads
 
 "Is the third author available to talk? There's a step in the methods I can't rebuild off the page, and it's attributed to her." The methods section names her for the part he has no way to check on his own.
 
-"She's sixteen, and she's in class until four," the escort says.
+"She's sixteen," the escort says. "And she's in class until four."
 
 "Would four work?"
 
@@ -4885,7 +4877,7 @@ Ruth's own advice is to send an application twice and change one thing, so in th
 
 "Do the second one every time," Ruth says.
 
-Nadia writes the Tuesday call into the column and rules a line under it. "Then the form isn't reading the person, it's reading its own listing back to itself. Fine. Every time."
+Nadia writes the Tuesday call into the column and rules a line under it. "Then the form isn't reading the person, it's reading its own listing back to itself." "Fine." "Every time."
 
 ________________
 
@@ -4911,7 +4903,7 @@ Sam comes in and sits on the end of the bed with a sandwich from downstairs, and
 
 "They lie."
 
-"All of us, though? Everybody got a letter that lied to us?"
+"All of us, though?" she says. "Everybody got a letter that lied to us?"
 
 "How many did you get?"
 
