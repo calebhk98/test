@@ -22,7 +22,7 @@ There are thirty subtraction problems on the worksheet and all thirty are one pr
 
 Because the pattern is already found, she writes the answer and then sits with the pencil motionless. The classroom clock holds where it is.
 
-Mrs. Aldana waits for everybody to finish before moving on, but somebody is invariably still going, so Bryce Dolan is still counting on his fingers long after Chloe stops watching him.
+Mrs. Aldana waits for everybody to finish before moving on, but somebody is always still going, so Bryce Dolan is still counting on his fingers long after Chloe stops watching him.
 
 You are allowed to read once you finish the sheet, and Chloe, who has decided against finishing it, looks out the window instead.
 
@@ -62,7 +62,7 @@ Chloe takes what she is allowed, and they are gone by Wednesday, and her mom has
 
 ________________
 
-At dinner in September she talks for the entire meal about a book in which a girl runs away and lives inside a train station, so the explaining starts with the station, whose size is what everything else depends on.
+At dinner in September she talks for the entire meal about a book in which a girl runs away and lives inside a train station, so the explaining starts with the station, because everything else in the story depends on how big it is.
 
 "It's got a whole floor just for people waiting overnight. That's where she sleeps. You can only be there with a ticket. So she keeps hers the whole time and can't ever use it."
 

@@ -18,7 +18,7 @@ The woman at H through M finds Kessler on her page straightaway and hands over a
 
 "Somebody's organized," Chloe's dad says.
 
-"We try," the woman says, already reaching past him for the next folder in the box. "Chairs are through the double doors, we start on the hour, and there's a map in there."
+"We try. Chairs are through the double doors, we start on the hour, and there's a map in there," the woman says, already reaching past him for the next folder in the box.
 
 The orientation is in a room with folding chairs and a woman with a clipboard who goes through it fast, because there is another later for the families still driving.
 
@@ -48,7 +48,7 @@ Her room has two beds, a window that opens a few inches and then stops, and a gi
 
 But Chloe's own bag stays zipped on the other bed, exactly where it got put down that afternoon.
 
-Pushing the drawer shut with her knee and then leaning on it, Priya asks whether Chloe rides, then when Chloe asks ride what, says horses, then when Chloe says no, goes on anyway.
+Pushing the drawer shut with her knee and then leaning on it, Priya asks whether Chloe rides, then when Chloe asks ride what, says horses, then when Chloe says no, but goes on anyway.
 
 "Okay, so the first thing is a pony isn't a baby horse. Everybody thinks that and everybody is wrong."
 
@@ -58,7 +58,7 @@ Priya sits down, cross-legged, with a pillow in her lap.
 
 She lays the edge of her hand across the top of her own shoulder.
 
-"There's a girl at my barn. She says hers is a horse and it is absolutely not a horse. It's fourteen even. And I've seen the paper."
+"There's a girl at my barn. She says hers is a horse, but it is absolutely not a horse. It's fourteen even. And I've seen the paper."
 
 "Whose paper are we talking about?"
 
@@ -80,7 +80,7 @@ Her mom picks up in the middle of the first ring.
 
 "Okay, yeah, okay, stay right where you are, because I'm coming."
 
-The hotel is half a mile away, and by the time Chloe has put the phone down and walked back to the bottom of the stairs her mom is at the front desk, already dressed.
+The hotel is half a mile away, but by the time Chloe has put the phone down and walked back to the bottom of the stairs her mom is at the front desk, already dressed.
 
 Chloe sleeps in the second bed with the bathroom light on and the door open, her mom asking first how far to leave the door open, her face turned into a spare pillow that smells like the hotel's detergent instead of their own.
 
@@ -116,7 +116,7 @@ Then something goes wrong with her, before anybody has had time to answer, becau
 
 Then a boy laughs, one loud honk of it right up close, and her jaw unclenches all at once, her shoulders coming down before she has decided anything about it.
 
-"It's not even a room," he says. "It's a room-shaped object."
+"It's not even a room. It's a room-shaped object," he says.
 
 Chloe laughs until she has to put her forehead against the wall, before somebody else catches it too, a couple of the bigger children by the fountain saying room-shaped object back and forth to each other, seeing how many times they can get it in before the door opens.
 
@@ -140,17 +140,17 @@ Inside, the boy sits down next to her, drops his folder on the desk sideways, an
 
 "Six."
 
-"I'm seven and a half," he says, setting hers down beside his and weighing them. "That's fine."
+"I'm seven and a half. That's fine," he says, setting hers down beside his and weighing them.
 
 He says the and a half every time, grinning at his own jokes before anybody else does, funny about half the time, unwilling to slow down for the other half, while the girl is Ruth, and Ruth corrects everybody.
 
 That night Chloe calls the desk again and sleeps in the hotel again, then in the morning her mom asks whether anybody talked to her, and Chloe says a boy in her room did, so her mom asks what about.
 
-"Pluto," Chloe says, still down over her shoelaces for all of it, "and it's not a planet anymore. They took a vote on it and it lost."
+"Pluto, and it's not a planet anymore. They took a vote on it and it lost," Chloe says, still down over her shoelaces for all of it.
 
 "Since when, though, because that was a planet when I was at school."
 
-"Since before I can remember," Chloe says, and her mom laughs at it anyway.
+"Since before I can remember," Chloe says, but her mom laughs at it anyway.
 
 ________________
 
@@ -168,11 +168,11 @@ The name of it goes across the table, and he asks whether it is good, and Chloe 
 
 "It's fine, I guess. There's a girl there. She says I talk weird. So mostly I just keep quiet in class now."
 
-"Mine's got a pool you can't use," Sam says. "It's in the building and it's for the high school. So they just have it there. And it's got a lid on it."
+"Mine's got a pool you can't use. It's in the building and it's for the high school. So they just have it there. And it's got a lid on it," Sam says.
 
 "A lid, on a whole entire pool?"
 
-"A cover, a thing on top of it," he says, doing it with his hands, one flat over the other and holding it there. "So you can see it and you can't get in it."
+"A cover, a thing on top of it. So you can see it but you can't get in it," he says, doing it with his hands, one flat over the other and holding it there.
 
 "That's the worst thing I've ever heard," Ruth says, from further down the table, into a conversation that belonged to somebody else entirely.
 
@@ -194,11 +194,11 @@ She leaves on the Sunday, going through the room again first, finding the green 
 
 Chloe says yes.
 
-"Any hour of the night, I mean that, two in the morning, I don't care," she says, having said all of it once already, downstairs, in front of the woman at the desk. "And the other thing, if you want to come home you say it to anybody in this building and they'll bring you."
+"Any hour of the night, I mean that, two in the morning, I don't care. And the other thing, if you want to come home you say it to anybody in this building and they'll bring you," she says, having said all of it once already, downstairs, in front of the woman at the desk.
 
 "I know, the lady said it in the room with the chairs."
 
-"I know she did," her mom says, looking at the doorframe instead of at Chloe. "I wrote it down."
+"I know she did. I wrote it down," her mom says, looking at the doorframe instead of at Chloe.
 
 ________________
 
@@ -210,7 +210,7 @@ On day seven Sam says something wrong about volcanoes: that the lava comes up be
 
 "That's not how it works though," the boy says, and everybody looks at him, while across the room Owen is still copying the word off the board from earlier, head down over his own paper.
 
-"It's rock the whole way down, no hollow in it. The rock's what's doing the pushing. The gas trapped inside is what makes it move," he says, with both hands out in front of him now. "The gas does it more than the heat. How fast it comes out depends on how thick it is."
+"It's rock the whole way down, no hollow in it. The rock's what's doing the pushing. The gas trapped inside is what makes it move. The gas does it more than the heat. How fast it comes out depends on how thick it is," he says, with both hands out in front of him now.
 
 A girl further down lets her head drop onto the desk with a thud loud enough that a couple of people look over.
 
@@ -224,9 +224,9 @@ A girl further down lets her head drop onto the desk with a thud loud enough tha
 
 "What's viscosity."
 
-"How thick it is," Kavi says. "Honey's got high viscosity, water's got low viscosity, lava's somewhere in between, depending how hot it is. Some of it pours. Some of it barely moves at all," and he keeps going from there.
+"How thick it is. Honey's got high viscosity, water's got low viscosity, lava's somewhere in between, depending how hot it is. Some of it pours. Some of it barely moves at all," Kavi says, and he keeps going from there.
 
-Sam tries twice more to get back into it and loses the thread both times, with a couple of the other children laughing outright by the second try.
+Sam tries twice more to get back into it but loses the thread both times, with a couple of the other children laughing outright by the second try.
 
 So he stops trying, picks up his pencil, and starts drawing his own volcano in the margin instead, going on about it as though that were what he had meant to be doing all along.
 
@@ -240,7 +240,7 @@ Mr. Doyle stops with the marker still up at the board to look at what he has wri
 
 "Mass, and thank you for catching that," he says, then keeps going.
 
-"I told you," Ruth says, to the room. "I said that on Friday, I said it on Friday."
+"I told you. I said that on Friday, I said it on Friday," Ruth says, to the room.
 
 "Ruth," Sam says, from along the row, eyes on the board.
 
@@ -252,7 +252,7 @@ She has done this herself, in January.
 
 Chloe has a very clear idea of what is supposed to happen to a child who does what Ruth just did, so she watches for it the whole rest of the period: Mr. Doyle's face the next time Ruth's name comes up, the door on the way out in case somebody is waiting there to have a word, and at lunch, the end of the table, to see whether anybody comes over.
 
-Nothing comes, all day.
+But nothing comes, all day.
 
 That night it catches again: Ruth said it, so she sits on her hands through the next class, and the one after that, and answers only when Mr. Doyle calls on her direct.
 

@@ -122,7 +122,7 @@ The man behind the desk sits back in the chair for the first time since she came
 
 On she goes to the next thing on her list.
 
-"I'm not calling the police, because a county detective gets a stack of form submissions and a Tuesday he already had plans for. He takes the report, he gives me a number to ring back on, and that is the end of it. So that isn't a threat I've got, and I'm not going to stand in your office pretending I've got it."
+"I'm not calling the police, because a county detective gets a stack of form submissions and a Tuesday he already had plans for. He takes the report, he gives me a number to ring back on, and that is the end of it. So that isn't a threat I've got, but I'm not going to stand in your office pretending I've got it."
 
 "You can't prove any of it," the man at the folding table says. "There's not a name on any of those accounts, and there's nothing on a screen anywhere that says this room. Whatever you carried up those stairs, you carried a printout. You've got no idea who you're standing in front of."
 
@@ -138,7 +138,7 @@ She gives it back to him at the same speed.
 
 "Nine of you typed a live state registration number into my form. It's field six. It's a required field, and that is why you filled it in."
 
-"Ten of them were filed in the same week in September, through the same registered agent," she says, from where she is standing. "The agent is Hanley. Hanley carries thirty-one filings on that address, and twenty-six of them belong to somebody who is not in this room."
+"Ten of them were filed in the same week in September, through the same registered agent," she says, from where she is standing. "The agent is Hanley. Hanley carries thirty-one filings on that address, but twenty-six of them belong to somebody who is not in this room."
 
 A man at the folding table turns a printout face down.
 
@@ -194,15 +194,15 @@ ________________
 
 The hiring changes Nadia's mind.
 
-Every posting she writes herself, in the single-paragraph shape she uses for a labor contract: what the job needs, what it pays, and no line about anything else. The other outfits fishing the short list of local engineers post in a different language entirely, doing more with fewer hands, a lean team outpacing a bigger one, and she reads those the way she reads an estimate from a mechanic still guessing at what's under the hood. Then she puts up a fifth role that afternoon.
+Every posting she writes herself, in the single-paragraph shape she uses for a labor contract: what the job needs, what it pays, and no line about anything else. But the other outfits fishing the short list of local engineers post in a different language entirely, doing more with fewer hands, a lean team outpacing a bigger one, and she reads those the way she reads an estimate from a mechanic still guessing at what's under the hood. Then she puts up a fifth role that afternoon.
 
-Every test on the site was written by the thing she built to write them, across last July, before there was anybody at all to test. It reads the requirement text off live listings, pulls down whatever public documentation and question bank a skill happens to have, and produces a set of short problems out of that. By May it covers thousands of skills, of which she has read perhaps thirty.
+Every test on the site was written by the thing she built to write them, across last July, before there was anybody at all to test. It reads the requirement text off live listings, pulls down whatever public documentation and question bank a skill happens to have, and produces a set of short problems out of that. By May it covers thousands of skills, but she has read perhaps thirty of them.
 
 Four she has sat and taken herself: Python, Excel, Spanish, and the one on brake systems, which she took to find out whether it would catch what her father catches by ear. The Python set ran her a few minutes, she scored full marks on all of them, and she wrote the completion times down the margin of the pad.
 
 The first thing is that almost everyone fails.
 
-So she makes it easier. The generator carries a difficulty figure and she moves it, and the whole set rebuilds itself overnight while she sleeps. In September she moves it again. By November it is a version she'd have handed a first-year at Halstead, and the pass rate is still under a third, so she takes the November Python set herself, finishes it in minutes, and writes that in the margin under the others.
+So she makes it easier. The generator carries a difficulty figure and she moves it, and the whole set rebuilds itself overnight while she sleeps. In September she moves it again. By November it is a version she'd have handed a first-year at Halstead, but the pass rate is still under a third, so she takes the November Python set herself, finishes it in minutes, and writes that in the margin under the others.
 
 The second thing is the interviews.
 
@@ -210,7 +210,7 @@ In February she builds a pass over the submissions so that the reading gets done
 
 She had meant to sit down with twelve people that year and she has sat down with thirty-one, nearly all of them by herself, in the back room with a folding table between chairs and a laptop open to whatever the candidate submitted the night before.
 
-Something they built is what she asks them to explain, and most of them do that part fine, because years of resumes have taught people how to talk about their own work in front of a stranger. Then she asks two questions about it, and the first is usually fine as well; the second asks what happens at the edge of the thing they built, out past the part they actually tested, and that is where most of them run out of road.
+Something they built is what she asks them to explain, and most of them do that part fine, because years of resumes have taught people how to talk about their own work in front of a stranger. Then she asks two questions about it, and the first is usually fine as well, but the second asks what happens at the edge of the thing they built, out past the part they actually tested, and that is where most of them run out of road.
 
 A candidate walks her carefully back through a payment system he'd built at his last job, confident the whole way through it.
 
@@ -238,19 +238,19 @@ Whoever answers the second question properly gets a longer interview than the sc
 
 The ones she already has are the ones who answered it.
 
-A board starts rate-limiting her submission traffic on a Saturday in March. Tomas catches it off a graph well outside anything he had ever been asked to watch, rewrites the back-off, puts it out himself, and tells her on the Monday, by which time it has held through a weekend. Asked why the retry ceiling stayed where it was while he was in there, he says, "The ceiling was working. I don't go through a thing changing whatever already works, because then it's all mine and none of it's theirs." She writes the ceiling herself that night.
+A board starts rate-limiting her submission traffic on a Saturday in March. Tomas catches it off a graph well outside anything he had ever been asked to watch, rewrites the back-off, puts it out himself, and tells her on the Monday, by which time it has held through a weekend. Asked why the retry ceiling stayed where it was while he was in there, he says, "The ceiling was working. I don't go through a thing changing whatever already works, because then it's all mine, but none of it's theirs." She writes the ceiling herself that night.
 
 Bev drives out on her own on a Saturday in April to five employers Nadia had yet to get to, and comes back with two of them signed and a third who wants to see Nadia in person. There is a thirty-day clause in both contracts.
 
 "Where did the thirty days come from," Nadia says.
 
-"I made it up in the car on the way over. The first of them asked me what happens if it doesn't work and I had nothing to say to him, so I gave him a month. The second never asked and I said it anyway."
+"I made it up in the car on the way over. The first of them asked me what happens if it doesn't work and I had nothing to say to him, so I gave him a month. The second never asked, but I said it anyway."
 
 "Keep it, and it goes into the template tonight." She rolls it in that evening and leaves it there.
 
 Manny finds the generator marking a whole category wrong, weeks of it, and comes to her with the fix in hand rather than the finished job. Nadia reads the mail standing up, tells him to put it out, and is onto the next thing inside a minute.
 
-A vendor pitches her twice that spring on an applicant-screening tool built around exactly that gap, machine-scored off uploaded resumes and sized for the one role she could then leave unfilled. Both calls she takes standing at the desk, says she'll think about it, and hires the fifth person before the month is out.
+A vendor pitches her twice that spring on an applicant-screening tool built around exactly that gap, machine-scored off uploaded resumes and sized for the one role she could then leave unfilled. Both calls she takes standing at the desk, says she'll think about it, but hires the fifth person before the month is out.
 
 nadia: is anyone elses hiring weird
 

@@ -26,7 +26,7 @@ Her mom reads it, then reads it again, her eyes going back to one spot on the pa
 
 "Did you see this? I have no memory of applying to anything of the kind, and I would remember."
 
-"See what." Her dad takes it and reads it in his free hand, still eating, then puts the fork down to hold it with both. "No. This is the first I've heard of it, and I've been sitting here the whole time you have."
+Her dad takes it and reads it in his free hand, still eating, then puts the fork down to hold it with both. "See what. No. This is the first I've heard of it, and I've been sitting here the whole time you have."
 
 "So how do they have her name, when I keep it off every form I am handed, school, program, all of it. I have been doing that since preschool."
 
@@ -58,7 +58,7 @@ Chloe pushes her fork through her food and waits for somebody to get to that par
 
 "It's a we're talking about it," her mom says.
 
-Chloe asks once more on the Sunday and then forgets to ask again for days, because it's July and there's a sprinkler.
+Chloe asks once more on the Sunday but then forgets to ask again for days, because it's July and there's a sprinkler.
 
 ________________
 
@@ -106,7 +106,7 @@ Then the call goes on a long time after that and her mom's voice changes into th
 
 "Over a hundred," her mom says, loud enough that the number carries, and then, a few seconds later, "Coming from where?"
 
-Every single question gets answered straight away, immediate and complete, as though the questions had all been expected.
+Every single question gets answered straight away, quick and complete, as though the questions had all been expected.
 
 When she hangs up she stands there with her hand still on the phone, long enough that Chloe's dad puts down his coffee and asks her well.
 
@@ -144,7 +144,7 @@ Then he finds the page about what a Tuesday looks like, hour by hour, doing all 
 
 "This is a nice-looking place, kid. Look at the pool."
 
-Then he clicks the page with the teachers on it, where there is a photograph of each of them with a paragraph underneath about what that person did before they came here, and he stops doing the voice, reading a whole paragraph start to finish, then going back up to click another, and when Chloe asks him what, he tells her it's fine, then goes down the list in order, all the way to the bottom of it, before going back up to start again from the first, slower this time.
+Then he clicks the page with the teachers on it, where there is a photograph of each of them with a paragraph underneath about what that person did before they came here, but he stops doing the voice, reading a whole paragraph start to finish, then going back up to click another, and when Chloe asks him what, he tells her it's fine, then goes down the list in order, all the way to the bottom of it, before going back up to start again from the first, slower this time.
 
 Chloe waits a while for him to keep talking, then gets her book and reads at the table next to him, but he stays fixed on the screen the whole time she is gone.
 
@@ -170,15 +170,15 @@ Her dad comes in for the coffee and stands behind her chair with a hand on the b
 
 Her dad drinks the coffee standing up behind her. "That's the part. All of them, top to bottom. Then I went and looked up the school, and the school has been open four years."
 
-Behind her the bills are clipped to the refrigerator in a stack thick enough to curl the top one over, and the letter upstairs says the month is free, and says it twice, in different ways.
+Behind her the bills are clipped to the refrigerator in a stack thick enough to curl the top one over, but the letter upstairs says the month is free, and says it twice, in different ways.
 
 "That isn't very long," Chloe says.
 
 "No," her dad says, and takes the laptop away with him.
 
-It takes them nine days, her mom's position being that it is that far away, the invitation showed up unsolicited, somebody is paying for it, and she wants to know who before anybody gets in a car.
+It takes them nine days, her mom's position being that it is that far away, nobody asked for the invitation, it just showed up, somebody is paying for it, and she wants to know who before anybody gets in a car.
 
-Her dad's position is that all of that is true and she should go anyway. They have some version of that argument on the fourth day, the sixth day, and the eighth, until on the sixth day, standing at the counter with the mail still in her hand, her mom says the words a building I have yet to see.
+Her dad's position is that all of that is true but she should go anyway. They have some version of that argument on the fourth day, the sixth day, and the eighth, until on the sixth day, standing at the counter with the mail still in her hand, her mom says the words a building I have yet to see.
 
 "You already know what you're going to say," her dad says, and sets his coffee down, untouched.
 

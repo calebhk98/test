@@ -20,9 +20,9 @@ The form the office gave her mom runs to several pages, so Chloe comes back to t
 
 Her mom stops, looks at the clipboard, then at Chloe, then puts the pen down on the papers.
 
-"I'm doing my best guess on some of these," she says, "because I only get to see the outside of you, so I'd rather guess honestly than skip a question."
+"I'm doing my best guess on some of these, because I only get to see the outside of you, so I'd rather guess honestly than skip a question," she says.
 
-Her dad is at work. That morning he tried to move two things and managed neither, standing in the kitchen with his keys in his hand, saying sorry until her mom told him it's fine, it's a Wednesday. Chloe had held his sleeve a second longer than the door needed, and not knowing whether this is the kind of appointment you bring a dad to, she reads the waiting room instead.
+Her dad is at work. That morning he tried to move two things but managed neither, standing in the kitchen with his keys in his hand, saying sorry until her mom told him it's fine, it's a Wednesday. Chloe had held his sleeve a second longer than the door needed. She doesn't know whether this is the kind of appointment you bring a dad to, so she reads the waiting room instead.
 
 There is a poster about handwashing in English with the Spanish underneath, which she tries first.
 
@@ -36,11 +36,11 @@ There is a stack of printed sheets squared up by his elbow, the top one reading 
 
 He tells her she can call him Ben, asks what he should call her, and sits down on a chair no bigger than hers.
 
-"We're going to do some stuff that's kind of like games, and some of it is easy and some is really hard, and the hard ones are supposed to be hard, so missing them is part of the design."
+"We're going to do some stuff that's kind of like games, and some of it is easy, but some is really hard, and the hard ones are supposed to be hard, so missing them is part of the design."
 
 "Okay, but is it a test with a grade at the end? Can you fail it? Say I get all of them wrong. What happens then?"
 
-"No, and there is no passing number either," he says straight away, the answer already lined up. "I am watching how you do things rather than whether you get them."
+"No, and there is no passing number either. I am watching how you do things rather than whether you get them," he says straight away, the answer already lined up.
 
 Chloe looks at him hard and files the last part with everything else adults say when they want you to sit still.
 
@@ -54,13 +54,13 @@ Then the cards want nine blocks instead of four, and the shapes on them stop lin
 
 The picture comes apart while she is still looking at it: the top strip solid, then the middle band where every block is cut corner to corner, red above the cut on the left and red below it once the stripe crosses over, then the bottom strip the same as the top with the colours swapped.
 
-Her hands go after it. The top row goes down flat and true, fast. Then it's the cut ones, which have to sit in the right square with the right face up and the right way round all at once. The first block she sets down has its red on the wrong side of the line, so she picks it up, turns it, and puts it back. Now it's wrong the other way.
+Her hands go after it, and the top row goes down flat and true, fast. Then it's the cut ones, which have to sit in the right square with the right face up and the right way round all at once. The first block she sets down has its red on the wrong side of the line, so she picks it up, turns it, and puts it back, but now it's wrong the other way.
 
 She turns it again. Her thumb will do the square turn but it goes past the corner-to-corner every time and has to come back. While she is coming back she knocks the block beside it crooked and has to straighten that one too. Somewhere in the building there is a clock she can't see but can hear, once she has started listening for it.
 
-The last block is under her hand when Ben says okay and lifts his thumb off the watch, and she puts it in anyway, because that's where it goes.
+The last block is under her hand when Ben says okay and lifts his thumb off the watch, but she puts it in anyway, because that's where it goes.
 
-Then she checks it against the card, corner by corner, because there is nothing else to do with her hands now, and it's the card. She sits with that.
+Then she checks it against the card, corner by corner, because there is nothing else to do with her hands now, and it's the card, and she sits with that.
 
 Ben writes something down, small and quick, but she can't tell from his face whether it was a good thing to write.
 
@@ -88,11 +88,11 @@ Chloe sits up a little, waiting to find out if that counts extra. Ben stops writ
 
 He keeps giving her pairs until he turns the sheet over and finds the end of them. Then he opens a drawer and comes back with a thicker book, another colour down the spine, and reads pairs out of that one, off a page she can see the shape of but not the words on.
 
-Those go on a while. When he stops he puts that book back in the drawer instead of on the table with the rest.
+Those go on a while, and when he stops he puts that book back in the drawer instead of on the table with the rest.
 
 ________________
 
-Then he says numbers and she says them back. After that he says numbers she has to say back in the other direction.
+Then he says numbers and she says them back, and after that he says numbers she has to say back in the other direction.
 
 They keep getting longer. She holds eight going forwards and six going backwards before she loses the middle of the next string and tells him so. He says that's fine and does another anyway, and she loses the middle of that too. She has no idea whether any of it is a lot, since this is the first time anybody has ever said a number of numbers to her.
 
@@ -106,19 +106,15 @@ She points at the boot and the glove.
 
 "They're the covers for the ends of you."
 
-The rows get harder: the things in them stop being things you can hold. She goes at the speed he turns the page.
+The rows get harder: the things in them stop being things you can hold, and she goes at the speed he turns the page.
 
 ________________
 
 Then there's a sheet with a key along the top: a star, a circle, a triangle, a cross, a shape like a house, each with a different little mark inside it, a line standing up, a line lying down, a ring, two dots. Under the key those shapes run across the page in empty rows, and she has to put the right mark in each one.
 
-She looks at the key once.
+She looks at the key once, and Ben says go and starts the watch with his thumb, but her hand won't go as fast as the page wants. The mark has to sit inside the shape and the shape is small, so her fingers grip up hard around the pencil to hold the line where it belongs, and by the end of the first row the web of her thumb aches with it. She is bad at the easiest thing on the table and can tell she is bad at it while it is happening.
 
-Ben says go and starts the watch with his thumb, and her hand won't go as fast as the page wants. The mark has to sit inside the shape and the shape is small, so her fingers grip up hard around the pencil to hold the line where it belongs, and by the end of the first row the web of her thumb aches with it. She is bad at the easiest thing on the table and can tell she is bad at it while it is happening.
-
-Halfway down the second row she stops and looks up, because he only said to put the right mark in. There might be a version of this where the mark can be scribbled and it still counts. Ben watches her. The watch keeps going.
-
-She goes back to doing it neat.
+Halfway down the second row she stops and looks up, because he only said to put the right mark in. There might be a version of this where the mark can be scribbled and it still counts. Ben watches her while the watch keeps going, and she goes back to doing it neat.
 
 He says stop, takes the pencil out of her hand and turns the sheet face down before she can count the rows, though she knows about how much a page is, and her face goes hot, not the good kind.
 
@@ -142,7 +138,7 @@ Ben turns back a sheet in his stack, draws a line through something, writes agai
 
 He lets the room stay quiet long enough that Chloe fills it herself.
 
-"I look out the window at the parking lot. There was a guy with his coffee up on the roof of his car. He drove off. It went off at the turn." She looks at the cup. "And then Mrs. Aldana asked me a question and I didn't know there was one."
+"I look out the window at the parking lot. There was a guy with his coffee up on the roof of his car. He drove off. It went off at the turn. And then Mrs. Aldana asked me a question and I didn't know there was one." She looks at the cup.
 
 "How long is it, usually, between when you finish and everybody else does?"
 
@@ -150,7 +146,7 @@ He lets the room stay quiet long enough that Chloe fills it herself.
 
 "Longer than we've been in here?"
 
-"No, less than that." Chloe works it out against the blocks and the juice and the rooms. "Half of it, like half of it, but every day."
+Chloe works it out against the blocks and the juice and the rooms. "No, less than that. Half of it, like half of it, but every day."
 
 This time she watches him write it down, and it takes him longer than the other ones.
 
@@ -208,7 +204,7 @@ They keep coming, wallets on the ground and smoke at night and lines painted on 
 
 ________________
 
-There is another timed sheet, little symbols in rows where she looks at the ones on the left and puts a line through a box on the right for yes or no. One line is one line, and it is still slow.
+There is another timed sheet, little symbols in rows where she looks at the ones on the left and puts a line through a box on the right for yes or no. One line is one line, but it is still slow.
 
 Then a page with animals and shoes and cups all over it, where she crosses out every animal, one stroke each. She gets to the bottom and looks up. Ben still has his thumb on the watch, and there is time left over, which hasn't happened yet today.
 
@@ -220,13 +216,13 @@ By then her stomach is loud enough that she covers it with her forearm, and she 
 
 At the end he caps his pen and puts the last card back in its box. "You worked really hard."
 
-Chloe opens her mouth to ask whether she did good, then presses her lips together, because that question is off limits to children, and asks the question underneath instead.
+Chloe opens her mouth to ask whether she did good, then presses her lips together, because that question is off limits to children, but asks the question underneath instead.
 
 "The one with the marks, does everybody finish it?"
 
 Ben looks at her, longer than usual, before he answers.
 
-"Some people do, and the other ones are the ones that actually matter," he says.
+"Some people do, but the other ones are the ones that actually matter," he says.
 
 ________________
 
@@ -244,11 +240,11 @@ Only pieces reach her, her mom's voice saying the teacher says, then Ben's voice
 
 Her mom makes a sound, and Chloe can't tell from out here which kind it is.
 
-"There are a couple of things where she's slower than most kids her age, and the biggest is copying, hand-and-eye, and that part's real, you'll see it in her handwriting for years, and it's also not what anybody in that building is calling you about."
+"There are a couple of things where she's slower than most kids her age, and the biggest is copying, hand-and-eye, and that part's real, you'll see it in her handwriting for years, but it's also not what anybody in that building is calling you about."
 
 "No."
 
-"Right, and here is the thing about the report, which is going to have one big number on the front, a composite that averages two very different pictures into a single score, and on the talking and reasoning she's at the top of it, and on the speed she's ordinary, so what comes out says bright kid, and bright kid undersells the room I sat in this morning."
+"Right, and here is the thing about the report, which is going to have one big number on the front, a composite that averages two very different pictures into a single score, and on the talking and reasoning she's at the top of it, but on the speed she's ordinary, so what comes out says bright kid, but bright kid undersells the room I sat in this morning."
 
 "How far at the top of it?"
 
@@ -258,7 +254,7 @@ Chloe shifts on the chair, her feet nowhere near the floor.
 
 "So what number do I get?"
 
-"A good one, and that's exactly the trouble with it, because it's bad numbers that move a system, and this one is going to read as good on the page."
+"A good one, but that's exactly the trouble with it, because it's bad numbers that move a system, and this one is going to read as good on the page."
 
 "Then what is it I am supposed to do with that?" her mom says.
 
@@ -280,7 +276,7 @@ ________________
 
 In the car her mom puts both hands on the wheel, checks the mirror, checks it a second time, and starts it.
 
-"So you're all good," she says, pulling out of the parking spot. "Everything's great, he thinks you're doing just fine."
+"So you're all good. Everything's great, he thinks you're doing just fine," she says, pulling out of the parking spot.
 
 Chloe says okay, both hands holding the seatbelt away from her neck.
 
@@ -298,13 +294,13 @@ Her mom looks over at her at the red light, for longer than the light.
 
 "In there, through the door."
 
-"It's a number for how you did next to other kids your age, like the tallest in your class being a high percentile for height." Her mom pulls off when the car behind them does something with its horn. "It's not a big deal, everybody gets one."
+Her mom pulls off when the car behind them does something with its horn. "It's a number for how you did next to other kids your age, like the tallest in your class being a high percentile for height. It's not a big deal, everybody gets one."
 
 "So what was mine, then? Everybody gets one."
 
 "He didn't give me a number," her mom says to the windshield.
 
-A word like that always comes with a number stuck to it. Chloe watches the side of her mom's face and presses her thumbnail into the seatbelt instead of saying so, because they are having a nice time.
+But a word like that always comes with a number stuck to it. Chloe watches the side of her mom's face and presses her thumbnail into the seatbelt instead of saying so, because they are having a nice time.
 
 They get ice cream, unheard of on a Wednesday, and she eats it in the car, where some of it goes on the seat and her mom tells her to let it go.
 

@@ -8,7 +8,7 @@ Live fire starts in October at fifty metres, prone, unsupported, on paper, and C
 
 Keeping the rifle up, Sam asks, "How long till this bit's boring?"
 
-"Six weeks." Kavi is on the next mat with his chin on his forearms, watching the flag. "It was that on the nerf and that on the paint, so the same again, and then they hang it off something, then they make it move, then we get the good one."
+Kavi is on the next mat with his chin on his forearms, watching the flag. "Six weeks. It was that on the nerf and that on the paint, so the same again, and then they hang it off something, then they make it move, then we get the good one."
 
 "That's generous," Sam says, "because Ruth's already bored and you'd have to know her to tell."
 
@@ -32,7 +32,7 @@ A different card is taped to the bench later that week with a different number o
 
 "That's one person and a machine on a fixed cycle, rather than two people at all."
 
-"Right, but the arrow was two people, and the arrow only worked because, one, it hangs at the top, so if you're late it hasn't gone anywhere, and two, you're both running off the same count, so if you're late you're late together," he says, shifting the kit to the other hip while he keeps walking backward. "A bullet gives you neither of those, so there's a version of this coming that fixes both at once, and I want to know what it is by March."
+He shifts the kit to the other hip while he keeps walking backward. "Right, but the arrow was two people, and the arrow only worked because, one, it hangs at the top, so if you're late it hasn't gone anywhere, and two, you're both running off the same count, so if you're late you're late together. A bullet gives you neither of those, so there's a version of this coming that fixes both at once, and I want to know what it is by March."
 
 "They might leave it at clays and leave it there for good."
 
@@ -40,13 +40,13 @@ Kavi shakes his head. "Nah, it escalates every year, it always has."
 
 ________________
 
-Self defense is three rounds an hour, with one person standing in the middle while the other ten come at them and a minute runs on the clock, after which the middle changes and it goes round until everybody has had their turn. Chloe holds fifty seconds on her third round on a Tuesday in February, and she is down on her back before the whistle finishes, somebody's knee still across her shin, laughing at the ceiling with both arms out.
+Self defense is three rounds an hour, with one person standing in the middle while the other ten come at them and a minute runs on the clock, after which the middle changes and it goes round until everybody has had their turn. Chloe holds fifty seconds on her third round on a Tuesday in February, but she is down on her back before the whistle finishes, somebody's knee still across her shin, laughing at the ceiling with both arms out.
 
 "That was nearly a whole minute, that's the longest anyone's held all week," Odile says, getting a hand under her arm and hauling her up by the wrist.
 
 "My average is forty-five, so run me again and let me see whether I can beat it," Chloe says, getting her feet under her on the third attempt, still holding Odile's arm and grinning at her.
 
-"That's the last round," Kowalczyk says, still writing up the board, "so it's pairs for the rest of the hour."
+Kowalczyk, still writing up the board, says, "That's the last round, so it's pairs for the rest of the hour."
 
 "I'm ten seconds off a minute, though, and I want another go at it."
 
@@ -62,17 +62,17 @@ Going through the papers twice takes her back to her own notes from the third we
 
 "So we're not actually bad at it," somebody says.
 
-"No," Chloe says, wiping the board down with her back to them, and she stops halfway across it and turns round. "Your answers all follow from what I taught you, and what I taught you was wrong. You'll get a different one in two weeks and it'll be harder, because by then you'll actually have it."
+Chloe wipes the board down with her back to them, then stops halfway across it and turns round. "No. Your answers all follow from what I taught you, and what I taught you was wrong. You'll get a different one in two weeks and it'll be harder, because by then you'll actually have it."
 
 Iyad has it at dinner that week with her not at the table, telling the far end that she taught the year below a whole term of it backwards, all of them, the same error the whole way down and not a single person catching it. He gets round most of the tables with it by the Saturday. What comes back to her at the sinks from a girl in the year above is the question, whether it is true she taught the lot of them backwards, and Chloe says yes, and the girl says she thought so, and goes.
 
-Japanese moves faster at the front than she expects, so that by the end of the fourth week she is further along than she has ever been at that point in a language, and on a Wednesday afternoon she digs out her own notes on Russian and on Mandarin to check whether that is true, and it is. The kanji arrive with most of their meaning already on them, but then the grammar starts, and the grammar is unlike anything behind her on the list, so by November she is putting half an hour a night into it and moving slowly, and she is still ahead of where Mandarin had her at that stage.
+Japanese moves faster at the front than she expects, so that by the end of the fourth week she is further along than she has ever been at that point in a language, and on a Wednesday afternoon she digs out her own notes on Russian and on Mandarin to check whether that is true, and it is. The kanji arrive with most of their meaning already on them, but then the grammar starts, and the grammar is unlike anything behind her on the list, so by November she is putting half an hour a night into it and moving slowly, but she is still ahead of where Mandarin had her at that stage.
 
 Abstract algebra arrives with probability beside it, contracts spends a term on what a sentence actually obliges a person to do and what it merely encourages, and logistics spends a term on how many trucks there are, where the drivers sleep, and who pays for the diesel. Comparative religion she sits through mostly listening, and comes out of it with a handful of opinions and no way to test any of them.
 
 Engineering and design works the other way round from wood shop and the forge, where she makes the thing herself, because here she writes down what it has to do and hands the paper to a stranger. So when she writes a two-page specification for a clamp in November and a boy called Dov builds it off the paper, what he hands back closes on the wrong axis.
 
-"He built what you wrote," the teacher says, holding the clamp up so she can see which way it opens. "The spec says how hard to hold something, not what it's holding, so he built a clamp that could hold anything, which means it holds any one thing just as poorly as the rest."
+The teacher holds the clamp up so she can see which way it opens. "He built what you wrote. The spec says how hard to hold something, not what it's holding, so he built a clamp that could hold anything, which means it holds any one thing just as poorly as the rest."
 
 Chloe reads her own pages again with the clamp sitting on top of them, and the pressure is on there, and the travel, and the tolerance, and which way it opens. So she runs a finger down the first page, then the second, then turns them both over and finds the backs blank.
 
@@ -86,11 +86,11 @@ Eli reads it over her shoulder on his way past to the servery. "They've put your
 
 The room is theirs on Tuesdays and Thursdays, and the whole of the first evening goes on what the thing has to be.
 
-"A hand's width is under half a millisecond of air," Kavi says, with the board behind him and nothing on it yet. "So every box out there has to agree with every other box to inside that, all afternoon, in the cold, and the school's network is out by a couple of milliseconds on a decent day and cannot tell you that it is."
+Kavi says, with the board behind him and nothing on it yet, "A hand's width is under half a millisecond of air. So every box out there has to agree with every other box to inside that, all afternoon, in the cold, and the school's network is out by a couple of milliseconds on a decent day and cannot tell you that it is."
 
-"Agreeing about the time is the smaller half of it," Ruth says. "Something has to decide which sample the sound starts on, and decide it the same way at every box, off a field with a road down the side and wind coming in the open end, where the front of a sound is a slope and not an edge."
+Ruth says, "Agreeing about the time is the smaller half of it. Something has to decide which sample the sound starts on, and decide it the same way at every box, off a field with a road down the side and wind coming in the open end, where the front of a sound is a slope and not an edge."
 
-"Then hand me arrival differences and I'll hand you the place," Chloe says. "And the boxes don't go along the near edge, whatever the cable wants, because boxes in a line give you a direction instead of a point, so we'd be fine down the middle and no good at all at either end."
+Chloe says, "Then hand me arrival differences and I'll hand you the place. And the boxes don't go along the near edge, whatever the cable wants, because boxes in a line give you a direction instead of a point, so we'd be fine down the middle and no good at all at either end."
 
 Nadia has the field drawn on the board by then with the posts marked on it. "Wireless. A wire is people. A wire is a morning putting it down and a morning taking it up, and every hand out there is a hand that isn't somewhere else."
 
@@ -104,7 +104,7 @@ Priya is along the radiator under the window with her boots up on the pipe. "You
 
 Nobody answers that on the Tuesday and nobody has a better answer on the Thursday.
 
-They go wireless anyway, because the reel has to be signed for and the field is a field. Kavi has it in a fortnight and then has it no further, and the number comes out at dinner in the middle of March, with his hands flat either side of the tray.
+They go wireless anyway, because the reel has to be signed for and the field is a field. Kavi has it in a fortnight, but then has it no further, and the number comes out at dinner in the middle of March, with his hands flat either side of the tray.
 
 "It sits at a couple of milliseconds and it will not go under. A couple of milliseconds is most of a metre of air, so the answer is a metre wide before Ruth has heard anything and before Chloe has done any arithmetic at all."
 
@@ -112,7 +112,7 @@ They go wireless anyway, because the reel has to be signed for and the field is 
 
 "A fortnight."
 
-"A fortnight." Ruth stops eating. "So we've been building against a number you knew was the wrong number, and I've spent a fortnight tuning against recordings that were never going to be any use, and none of that had to happen, because the whole of what it needed was you saying it in that room a fortnight ago."
+Ruth stops eating. "A fortnight. So we've been building against a number you knew was the wrong number, and I've spent a fortnight tuning against recordings that were never going to be any use, and none of that had to happen, because the whole of what it needed was you saying it in that room a fortnight ago."
 
 "I thought it would come down."
 
@@ -138,7 +138,7 @@ Chloe has the arrival sheets and nothing yet to put into them, so she sits in th
 
 "It's picking the road up, and I could see it doing it from here."
 
-"Then it's picking the road up at all of them and I need to know that, and now I can't, because you've made that box different from the rest of them." Ruth pulls the chair round without getting off it. "Do your own end again, or go to bed, or go and find me something to eat, and leave mine alone."
+Ruth pulls the chair round without getting off it. "Then it's picking the road up at all of them and I need to know that, and now I can't, because you've made that box different from the rest of them. Do your own end again, or go to bed, or go and find me something to eat, and leave mine alone."
 
 Chloe puts it back, and goes and finds her something to eat.
 
@@ -146,9 +146,9 @@ The run is in the afternoon block on the last Thursday in March. A man from the 
 
 The sound comes back thin and flat and a long way off, and it happens once.
 
-Ruth has her onsets inside a quarter of an hour, Kavi has the clock agreeing with itself the length of the wire, and Chloe puts the differences through and reads the point off the bottom of the sheet: a hundred and nineteen metres up the field, thirty across, tight across it and loose along it. Odile and Sam run the tape out from the fence corner and find the mark on the grass a hand's width and a half from where Chloe said it was.
+Ruth has her onsets inside a quarter of an hour, Kavi has the clock agreeing with itself the length of the wire, and Chloe puts the differences through and reads the point off the bottom of the sheet: a hundred and nineteen metres up the field, thirty across, tight across it, but loose along it. Odile and Sam run the tape out from the fence corner and find the mark on the grass a hand's width and a half from where Chloe said it was.
 
-The sheet on the Monday gives them a B, and the failures under it say that the array cannot be put out by fewer than half a dozen people, that the calibration finished inside the last window available to it, and that the group carried a known error for a fortnight without putting it on the board.
+The sheet on the Monday gives them a B, but the failures under it say that the array cannot be put out by fewer than half a dozen people, that the calibration finished inside the last window available to it, and that the group carried a known error for a fortnight without putting it on the board.
 
 Chloe reads it in the corridor with people behind her waiting for a turn. In April she draws the field out again on her own and finds a placing that takes most of the error off the top end, and takes it to Nadia at breakfast.
 
@@ -184,7 +184,7 @@ Sam is six foot two by September, when Ruth stands next to him at breakfast in t
 
 "I've been eating a lot, probably too much, honestly."
 
-"You've been eating like a man with a farm," she says, going back to her tray, "and you'll be a nightmare on the mats."
+She goes back to her tray. "You've been eating like a man with a farm, and you'll be a nightmare on the mats."
 
 Priya makes him stand against the door frame in the corridor and marks it in pencil above the mark from June, a visiting inspector asks him in October whether he teaches here, and he goes through a couple of sets of kit before Christmas and a third in March, of which the third is the one that fits. Fencing goes to both hands that term, so her left is roughly where her right was years ago, half a beat late onto everything she can already see coming.
 
@@ -194,7 +194,7 @@ ________________
 
 Sam asks out a girl in the year below in October, and the table has an opinion on it inside a week.
 
-"At breakfast," Priya says, counting it off on the tabletop, "in the queue, holding a tray, and in front of half the year."
+Priya counts it off on the tabletop. "At breakfast, in the queue, holding a tray, and in front of half the year."
 
 "How did he actually ask her?" Kavi asks.
 
@@ -202,7 +202,7 @@ Sam asks out a girl in the year below in October, and the table has an opinion o
 
 Ruth puts her fork down and leaves it down. "He'd think about it, when he had a whole Thursday afternoon and every building on this campus in front of him, and do you know how many things there are to do here? He's the only person who's ever got over that wall and he couldn't think of one."
 
-"He's got a lake, Kavi. A lake and a boat shed," Priya says.
+Priya says, "He's got a lake, Kavi. A lake and a boat shed."
 
 Ruth takes it up with him directly on Friday, and Sam hears her out with his chin on his hand and thanks her for it before he takes the girl to watch the twelves do paintball. The two of them last until March, when Priya says the girl ended it and Sam says they agreed, and Odile was actually in the room.
 
@@ -226,17 +226,17 @@ Her mother's hands stop on the dish while Chloe reaches past her for the beans. 
 
 Chloe stops with the spoon in the beans while her mother stands there, still holding the dish.
 
-"Oh." Chloe shakes her head fast and sets the spoon back. "No, it's fine, Mom, it's completely fine. It's a range. Everyone stands on a line facing the same way, there's a man behind you the entire time, and if you turn round with it in your hands he takes it off you and you're done for the term. Nobody's ever even close to anything."
+Chloe shakes her head fast and sets the spoon back. "Oh. No, it's fine, Mom, it's completely fine. It's a range. Everyone stands on a line facing the same way, there's a man behind you the entire time, and if you turn round with it in your hands he takes it off you and you're done for the term. Nobody's ever even close to anything."
 
 "Chloe. Why is this the first I'm hearing about it?"
 
 And Chloe has nothing at all.
 
-Sam grew four inches over the summer and there is a pencil mark on a door frame about it. Sam has a girlfriend. She teaches now. Seven of them, and she taught one thing to all of them backward and had to go in and say so. There is a boy called Ferris who does everything the long way round and gets there every time. Japanese, a term of it. Abstract algebra, contracts, logistics, the fracture tests, a clamp that closes on the wrong axis, three hinges in a bin.
+Sam grew four inches over the summer and there is a pencil mark on a door frame about it. Sam has a girlfriend. She teaches now. Seven of them, and she taught one thing to all of them backward and had to go in and say so. There is a boy called Ferris who does everything the long way round, but gets there every time. Japanese, a term of it. Abstract algebra, contracts, logistics, the fracture tests, a clamp that closes on the wrong axis, three hinges in a bin.
 
 All of it started around September. All of it went past this table in silence. Which one was she supposed to have opened with? Why is it the rifle?
 
-"I didn't mean to keep it from you." She has both hands up off the table now. "There was a lot that started in September and I skipped all of it. It's just school."
+She has both hands up off the table now. "I didn't mean to keep it from you. There was a lot that started in September and I skipped all of it. It's just school."
 
 "It is not just school."
 
@@ -254,13 +254,13 @@ Her father sets his fork down. "She said something on the phone in October."
 
 "And you didn't think to tell me?"
 
-"I thought you knew," he says. "I thought it was fine."
+He says, "I thought you knew. I thought it was fine."
 
 Her mother sets the dish down in the middle of the table, straightens it, and goes into the kitchen, staying there while her father moves the salt, puts it back, then gets up and starts stacking plates still half full. The real sentence stays exactly where it's been all evening, buried under the one about pie. The kitchen gets a few minutes and the plates get stacked instead, and that turns out to be as much of the sentence as the room can hold.
 
 Her mother comes back in and asks whether anybody wants the pie warmed up, and her father and Chloe both say yes at once. He turns the game on and they eat it in front of that, with her mother coming to sit on the arm of his chair for the second half.
 
-"That's a hold. That is a hold, that's been a hold all night," her mother says.
+Her mother says, "That's a hold. That is a hold, that's been a hold all night."
 
 On Sunday she asks whether the man behind the line is armed, and what happens if somebody drops one, and whether anybody has ever turned round. Chloe answers all three and then tells her about the flag they call the wind off, and her mother listens all the way through and comes back with one more question about the man behind the line.
 

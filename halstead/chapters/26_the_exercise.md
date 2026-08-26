@@ -20,7 +20,7 @@ Then the card, carrying its grids of figures and listing the checkpoints between
 
 "More than you. Move along, Marsh."
 
-Sam checks the bearing against the card, folds the card into his breast pocket, buttons the pocket, and heads for the tree line on his own initiative, across ground frozen at the edges, enough to hold a boot print, and soft in the middle, enough to lose it.
+Sam checks the bearing against the card, folds the card into his breast pocket, buttons the pocket, and heads for the tree line on his own initiative, across ground frozen at the edges, enough to hold a boot print, but soft in the middle, enough to lose it.
 
 ________________
 
@@ -82,7 +82,7 @@ There is a shift of weight behind him and off to the left, too sudden and too he
 
 The rifle is coming round before he has decided anything whatever about it, and that is as far as he gets, because the tone starts while the muzzle is still swinging. Only the one of them is going, so the question of whose it is settles itself.
 
-Sam comes up out of the cut and stands there in the open with his own harness going into the last hour before dawn, and the man who shot him comes up out of the weed line thirty feet back, so low to the ground on the way up that Sam hears him a full second before he can find him.
+Sam comes up out of the cut and stands there in the open with his own harness going into the last hour before dawn, but the man who shot him comes up out of the weed line thirty feet back, so low to the ground on the way up that Sam hears him a full second before he can find him.
 
 "How long were you in there."
 
@@ -122,7 +122,7 @@ The next part he reads the way a form gets read.
 
 "If the harness goes steady I stand up where I am and wait for a controller, sir."
 
-"You had four men, no room, and a tone you couldn't sort out." The major sets the pointer down on the lectern. "That leaves you precisely one option, Marsh, and it is the opposite of the option you took, because the option is to be dead. That is what the tone is for. It settles the engagement, and it settles it before anybody has to put a hand on anybody."
+"You had four men, no room, and a tone you couldn't sort out." The major sets the pointer down on the lectern. "That leaves you precisely one option, Marsh, but it is the opposite of the option you took, because the option is to be dead. That is what the tone is for. It settles the engagement, and it settles it before anybody has to put a hand on anybody."
 
 "Yes, sir." Sam takes the correction as delivered and then adds to it. "The worse part is earlier, sir. I had thirty feet of open ground to read that pipe from and I went in anyway. I was watching the clock instead of the pipe."
 

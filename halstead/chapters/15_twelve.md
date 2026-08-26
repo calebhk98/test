@@ -48,7 +48,7 @@ Her cuffs stop reaching her wrists in October, and inside a fortnight she and Ru
 
 "I have said nothing at all to you, I promise," she says, smirking.
 
-"You've got the face on, and the face is worse," Ruth says, going through first and letting the door swing back. "People stop at different times, and my mother was exactly this height at twelve and finished a good deal taller, so make the most of your next few years, because that's the whole of what you're getting."
+"You've got the face on, and the face is worse," Ruth says, going through first and letting the door swing back. "People stop at different times, and my mother was exactly this height at twelve, but finished a good deal taller, so make the most of your next few years, because that's the whole of what you're getting."
 
 ________________
 
@@ -78,7 +78,7 @@ Late in the evening they go down to the kitchen, where ovens the size of wardrob
 
 "We're doing them and they have to come out identical," he says, already pulling a tray down, "so it has to be the big oven, because that's a box with one temperature in it and the conveyor cooks the front of a run harder than the back."
 
-Kavi lights it, takes a thermometer off the wall, and stands at the glass while the rest of them argue over whether butter counts as a variable. By the time the tray is ready he has dropped out of the bread question altogether and is writing numbers on the back of his hand. "It climbs fastest for the first three minutes, then the rate halves."
+Kavi lights it, takes a thermometer off the wall, and stands at the glass while the rest of them argue over whether butter counts as a variable. By the time the tray is ready he has dropped out of the bread question altogether, but is writing numbers on the back of his hand. "It climbs fastest for the first three minutes, then the rate halves."
 
 "Kavi, the bread's getting away from you."
 
@@ -162,15 +162,11 @@ In under thirty seconds, Kavi is on their comms. "It's AES-256," he says. "And t
 
 "Because the box says AES-256," Kavi says. "The box always says AES-256."
 
-Ruth reads over his shoulder, "They're almost certainly actors, look at this. This is a handset you can buy in a shop. My dad's work has better than this and my dad sells insurance."
+Ruth reads over his shoulder, "They're almost certainly actors, look at this. This is a handset you can buy in a shop. My dad's work has better than this, but my dad sells insurance."
 
 "I know," Kavi says. "The problem is that they barely talk. Two transmissions in six minutes, both of them position checks, and neither one says a word about what they came for."
 
-"Anything about the objective?"
-
-"Nope."
-
-"Anything at all?"
+"Anything about the objective, anything at all?"
 
 "One of them said he's at the corner and one of them said copy. That's it. That's everything they've said since I've been on."
 
@@ -202,11 +198,7 @@ The other thing that gets discussed is the drugs: the kit has both. Chloe gets t
 
 "Take the fast ones," Sam says.
 
-"They're actors," Ruth says, reading the vial and putting it back. "If they get a work physical in three weeks they're going to fail it and they're going to have to explain why."
-
-"So?"
-
-"So, it's rude."
+"They're actors," Ruth says, reading the vial and putting it back. "If they get a work physical in three weeks they're going to fail it and they're going to have to explain why. It's rude besides."
 
 "It's six seconds versus twenty-five."
 
@@ -306,7 +298,7 @@ Ruth reads them off her arm. Sinclair nods. "Grading's in the morning," he says.
 
 Back in bed she lies on top of the covers with her shoes on and runs the list from the top, and gets to the end of it, and starts over.
 
-Chloe gets a C the same as Sam, Ruth gets a B minus and brings it up for a week, and Kavi gets a B for the comms with a note about the sensors that he disputes in writing, at length, and loses.
+Chloe gets a C the same as Sam, Ruth gets a B minus and brings it up for a week, and Kavi gets a B for the comms with a note about the sensors that he disputes in writing, at length, but loses.
 
 The sheet says: intruders inside Building One prior to contact. Response seven minutes fifty against a standard of six. Traceable agent selected. Four personnel deployed where three would have served. Objective established. No capability disclosed.
 
@@ -314,7 +306,7 @@ Chloe reads it in the corridor, out loud and in Russian, at a volume that turns 
 
 "Put it in English and I'll agree with you."
 
-"They were inside before the alarm went, and the sheet has that down as ours, and there is nothing on it anywhere about the sensors."
+"They were inside before the alarm went, but the sheet has that down as ours, and there is nothing on it anywhere about the sensors."
 
 "There won't be, and you'll have the C for a week, and then you'll have something else." Ruth hands the sheet back and carries on down the corridor.
 
@@ -368,7 +360,7 @@ Her mother holds her look, then picks her knife back up and starts eating, and h
 
 "Come apart how? Come apart like what, exactly?"
 
-"Your hands go first," she says, turning hers over on the cloth to look at them. "You lose the small things before the big ones, and you feel quicker right up until somebody times you."
+"Your hands go first," she says, turning hers over on the cloth to look at them. "You lose the small things before the big ones, but you feel quicker right up until somebody times you."
 
 Her father puts his glass down and turns it a half turn on the cloth. "So how do you catch it, then?"
 
