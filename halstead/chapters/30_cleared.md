@@ -26,19 +26,19 @@ ________________
 
 The background investigation takes ten weeks and involves a man named Whitaker who comes to see her twice.
 
-The paperwork comes first, the electronic questionnaire for national security positions, which she fills out over a single evening at the kitchen counter, question after question about addresses and employers and people who'd vouch for her. Most of it is easy, but a few fields make her stop and actually count: every place she's lived, every job, every reference who'd remember her well enough to say something useful. The form goes in a little after midnight, and days go by before the phone rings.
+The paperwork comes first, the electronic questionnaire for national security positions, which she fills out over a single evening at the kitchen counter, question after question about addresses and employers and people who'd vouch for her. Most of it is easy, but a few fields make her stop and actually count: every place she's lived, every job, every reference who'd remember her well enough to say something useful; the form goes in a little after midnight, and days go by before the phone rings.
 
-Then he calls, the second week of October, to set a time. The Friday night before goes on straightening an apartment that's usually left alone, clearing the stack of translation manuals off the table and into a drawer, an impulse of her own rather than anything he'd have noticed either way.
+Then he calls, the second week of October, to set a time; the Friday night before goes on straightening an apartment that's usually left alone, clearing the stack of translation manuals off the table and into a drawer, an impulse of her own rather than anything he'd have noticed either way.
 
-Whitaker knocks at eight, on the minute. With him come a federal investigator's credentials, a notebook, and a thermos of his own coffee he waits to open until he's seated across the table from her. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it. Coffee is offered before either of them sits down, but he lifts the thermos instead, already most of the way full, and thanks her for the offer before he takes the chair across from hers. Her own kitchen table usually sits bare; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
+Whitaker knocks at eight, on the minute; with him come a federal investigator's credentials, a notebook, and a thermos of his own coffee he waits to open until he's seated across the table from her. He's plainly dressed, unmemorable in a way that reads as deliberate once she's spent an hour across from him, and he sits very still, hands visible, the notebook angled so she can see the page while he writes on it. Coffee is offered before either of them sits down, but he lifts the thermos instead, already most of the way full, and thanks her for the offer before he takes the chair across from hers. Her own kitchen table usually sits bare; today it has his folder on one side and her mug on the other, and between them a clear stretch of laminate neither of them uses.
 
-Before he asks her anything, he tells her what the visit is for. A full accounting of the last ten years, verified wherever it can be verified, recorded as unverifiable wherever it can't.
+Before he asks her anything, he tells her what the visit is for: a full accounting of the last ten years, verified wherever it can be verified, recorded as unverifiable wherever it can't.
 
 "Does any of it get released? After. To me, or to anyone else."
 
 "It goes into your file," Whitaker says, "and it stays sealed there. Access stops at the file itself, for you and for whoever comes asking about you later."
 
-That's the whole answer, first try, not something softer built to sound reassuring. Chloe likes him for it. He's thorough, and direct about what each question is actually for, and she gives him more than the minimum from the first page onward, because he's already shown her what happens to it.
+That's the whole answer, first try, not something softer built to sound reassuring. Chloe likes him for it; he's thorough, and direct about what each question is actually for, and she gives him more than the minimum from the first page onward, because he's already shown her what happens to it.
 
 "Residential the whole time?" he asks, pen already moving.
 
@@ -114,7 +114,7 @@ The funding is what he asks about: who the school's principal donor is, name or 
 
 "I have no idea," Chloe says. "Whoever pays for it stayed background noise my whole life there. If you're a child, and somebody's already built the swings, you climb on and use them. Who paid for the steel is somebody else's question." She turns the coffee mug a quarter turn on the table, the only thing she's done with her hands all visit.
 
-The reasoning goes down along with the answer, as everything else has, and he closes the folder on it. The file is otherwise complete, he tells her, and he thanks her as plainly as he thanked her the first time. Then he stands to gather the thermos and the notebook off the table.
+The reasoning goes down along with the answer, as everything else has, and he closes the folder on it; the file is otherwise complete, he tells her, and he thanks her as plainly as he thanked her the first time. Then he stands to gather the thermos and the notebook off the table.
 
 At the door, coat half on, he taps the folder once against his palm. "Now I get to write it up in triplicate for a form that only ever needed one copy." He says it to the folder, not to her, and he's already down the first flight of stairs before she's worked out it was the joke.
 

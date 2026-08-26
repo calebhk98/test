@@ -26,7 +26,7 @@ Mrs. Aldana waits for everybody to finish before moving on, but somebody is alwa
 
 You are allowed to read once you finish the sheet, and Chloe, who has decided against finishing it, looks out the window instead.
 
-In the parking lot a man is loading boxes into the trunk of his car, with his coffee cup set up on the roof so that he can use both hands, and he gets the boxes in, shuts the trunk and drives off with the cup still up there, so that Chloe is about an inch out of her seat, watching it ride across the asphalt, when she hears her name.
+In the parking lot a man is loading boxes into the trunk of his car, with his coffee cup set up on the roof so that he can use both hands, and he gets the boxes in, shuts the trunk but drives off with the cup still up there, so that Chloe is about an inch out of her seat, watching it ride across the asphalt, when she hears her name.
 
 "Chloe." Mrs. Aldana is at the end of her desk, looking down at a worksheet with a few answers on it and the rest blank. "What was the question?"
 
@@ -58,7 +58,7 @@ The librarian looks up at her and holds the stamp in the air. "How old are you?"
 
 "Four," the librarian says, and goes back to stamping. "The new ones come in Thursday morning and sit on the cart before I shelve them, so come Thursday and go through the cart first."
 
-Chloe takes what she is allowed, and they are gone by Wednesday, and her mom has started finding her at night against her bedroom door with the hall light coming under it.
+Chloe takes what she is allowed, but they are gone by Wednesday, and her mom has started finding her at night against her bedroom door with the hall light coming under it.
 
 ________________
 
@@ -142,7 +142,7 @@ Clouds are the ocean going somewhere else, and the whole sentence is in her mout
 
 "Water," she says, and Mrs. Aldana says good and moves on to the next thing on the board.
 
-The exchange is over before anybody looks up, and in December, called on for the water cycle, she gives the arrows back in the right order, evaporation and condensation and precipitation, and hears Mrs. Aldana say exactly.
+The exchange is over before anybody looks up, and in December, called on for the water cycle, she gives the arrows back in the right order, evaporation, condensation and precipitation, and hears Mrs. Aldana say exactly.
 
 The short version works every time she uses it, and the whole answer is still in there, so she has to hold it back on purpose, every single time.
 
@@ -176,7 +176,7 @@ The parking lot, the boxes, the question that had already happened without her: 
 
 "I don't know," Chloe says, "I already told you I don't know."
 
-Her dad finds her in the mirror and asks whether she likes school, and Chloe opens her mouth and stops.
+Her dad finds her in the mirror and asks whether she likes school, and Chloe opens her mouth but stops.
 
 "It's good," she says.
 
@@ -260,7 +260,7 @@ Then she turns to chapter nine and is well into it when Mrs. Aldana says her nam
 
 "We're on chapter four."
 
-The thing to do is say okay and turn back and be on the right page before anybody notices, which Chloe knows.
+The thing to do is say okay, turn back and be on the right page before anybody notices, which Chloe knows.
 
 What she says instead is that she already read chapter nine on Tuesday, all of it, so going back just means listening to a part she already knows how it ends.
 
@@ -286,7 +286,7 @@ That night at dinner she tells them, and it takes about a minute and a half.
 
 Her mom says she probably just wants everybody on the same page, literally, then laughs at her own joke, and Chloe laughs too, because it's her mom, while her dad does the noise he does instead of laughing.
 
-Then the corner of her mom's mouth drops and stays down, and she gets up and starts the dishes before anybody at the table has finished eating.
+Then the corner of her mom's mouth drops and stays down, but she gets up and starts the dishes before anybody at the table has finished eating.
 
 ________________
 
@@ -304,7 +304,7 @@ The appointment comes out of a phone call in February, with Chloe in the next ro
 
 It goes on a yellow sticky note on the refrigerator under the strawberry magnet, where her mom checks it every morning while the coffee is going and Chloe reads it whenever she catches the kitchen empty.
 
-It says MARCH 4, and a time, and a name. She cannot say it.
+It says MARCH 4, a time and a name. She cannot say it.
 
 
 ## Chapter Two: March 4th
@@ -3399,7 +3399,7 @@ ________________
 
 At the bottom, in that typeface, without emphasis: Response time is scored against the standard that's posted weekly.
 
-Chloe is annoyed when the alarm wakes her. It's the small one, the one that sits in her ear, and it means watch. It's four in the morning. She's pulled a watch at this hour before. This is the first one nobody posted beforehand. She's in the corridor in seconds and Kavi is already there.
+Chloe is annoyed when the alarm wakes her, the small one that sits in her ear and means watch, at four in the morning. She's pulled a watch at this hour before, but this is the first one nobody posted beforehand, and she's in the corridor in seconds, Kavi already there.
 
 "I saw it, I was still up. There's four of them, they're at the loading side, they came over the fence about a minute ago."
 
@@ -5883,7 +5883,7 @@ On the Friday he puts the question to Ruiz, at parade rest at the conclusion of 
 
 "Marsh, the real one is Tuesday. It is also Wednesday, and the Tuesday after that, and it will still be running on the morning you get out with every single word of this conversation forgotten. Get out of my face."
 
-Ruiz walks off. Sam accepts the answer as partial, then carries on asking.
+Ruiz walks off, but Sam accepts the answer as partial and carries on asking.
 
 ________________
 
@@ -5945,7 +5945,7 @@ ________________
 
 The rifle arrives in the third week and inhabits the end of his arm from that morning onward: named, stripped, cleaned, carried to the shower block, carried back out again. First live rounds come the week after that, twenty-five metres, groups of five on paper, at which point Sam puts most of his inside the diamond on the very first morning, then cannot work out why the scorer behind him wants a conversation about it afterward.
 
-This is approximately where he starts to have a problem: he is doing well. Doing well at the running and the carrying, at the paper, the compass, the bar bolted over the door of the bay, at the obstacle lanes, the casualty drags, the stripping of a weapon in the dark, the long foot march nobody in the platoon enjoyed, and doing it against the rest of his platoon visibly trying as hard as he does. But none of it is reconcilable with a single thing he knows about himself. At school his was the number that never moved. Odile was level with him on the mat once and comfortably ahead of him by the spring. Ruth shot ninety-one and found the entire business tedious. Kavi beat him at everything with a board in it for years on end.
+This is approximately where he starts to have a problem: he is doing well. Doing well at the running and the carrying, at the paper, the compass, the bar bolted over the door of the bay, at the obstacle lanes, the casualty drags, the stripping of a weapon in the dark, the long foot march nobody in the platoon enjoyed, and doing it against the rest of his platoon visibly trying as hard as he does. But none of it is reconcilable with a single thing he knows about himself. At school his was the number that never moved, but Odile was level with him on the mat once and comfortably ahead of him by the spring. Ruth shot ninety-one and found the entire business tedious; Kavi beat him at everything with a board in it for years on end.
 
 So he goes looking for the fault in the measurement.
 
@@ -5953,15 +5953,15 @@ His first thought is that everybody here is tired in a way school could only app
 
 His second is arithmetic, and it is better. Half the bay has been doing this for a couple of months, but he has been doing it half his life, so the gap between him and the man beside him is a fact about calendars rather than a fact about either of them.
 
-His third accounts for everything the first two leave lying around, and it is the one he keeps. This is a screen. Sorting sixty men by putting all sixty on a bar and writing down who lifts it is what an organisation does when it wants to know who to send somewhere else, which means the men around him are being measured on something he has yet to be shown, are almost certainly holding a considerable amount back for it, and will begin the real course once the sorting is finished.
+His third accounts for everything the first two leave lying around, and it is the one he keeps: this is a screen. Sorting sixty men by putting all sixty on a bar and writing down who lifts it is what an organisation does when it wants to know who to send somewhere else, which means the men around him are being measured on something he has yet to be shown, are almost certainly holding a considerable amount back for it, and will begin the real course once the sorting is finished.
 
 The explanation survives a week of examination, after which he stops examining it.
 
 ________________
 
-September is tactical foot marches, progressively longer every week, the packs weighed at the start by a corporal with a hanging scale who calls each figure out like an auctioneer taking bids. Sam sets his straps once at the trailhead and leaves them alone from there. The man behind him accuses him of shorting the weigh-in, so Sam holds the pack open for a second reading, watches the needle settle where it settled the first time, and goes back to walking.
+September is tactical foot marches, progressively longer every week, the packs weighed at the start by a corporal with a hanging scale who calls each figure out like an auctioneer taking bids; Sam sets his straps once at the trailhead and leaves them alone from there. The man behind him accuses him of shorting the weigh-in, so Sam holds the pack open for a second reading, watches the needle settle where it settled the first time, and goes back to walking.
 
-Land navigation occupies October, daylight first and afterward in darkness, a scorecard, temperatures low enough that the cadre distribute an extra layer before anybody thinks to ask for one. Sam logs all of his the first time out, then walks back onto the course with men from his squad who are a point down, still arguing over a stream crossing on their board.
+Land navigation occupies October, daylight first and afterward in darkness, a scorecard, temperatures low enough that the cadre distribute an extra layer before anybody thinks to ask for one; Sam logs all of his the first time out, then walks back onto the course with men from his squad who are a point down, still arguing over a stream crossing on their board.
 
 "Your board's ten degrees out, look. Take your count off the compass, not the map."
 
@@ -5981,11 +5981,11 @@ ________________
 
 Qualification is the second Thursday of October, in the ninth week, and it is forty targets.
 
-The morning comes up grey and low, with the particular variety of cold that reaches the fingers a considerable time before it reaches anything else. Pop-up silhouettes standing out from fifty metres to three hundred, ten exposures from each of five positions: standing, prone unsupported, prone supported, kneeling behind the barricade, standing behind the barricade. A magazine change built into the middle of it. Three minutes and fifty-eight seconds from the first exposure to the last.
+The morning comes up grey and low, with the particular variety of cold that reaches the fingers a considerable time before it reaches anything else. Pop-up silhouettes standing out from fifty metres to three hundred, ten exposures from each of five positions: standing, prone unsupported, prone supported, kneeling behind the barricade, standing behind the barricade. A magazine change built into the middle of it, three minutes and fifty-eight seconds from the first exposure to the last.
 
 Sam counts himself down, then works the table at an unhurried pace that leaves him waiting on the tower twice.
 
-Forty hits. Every exposure.
+Forty hits, every exposure.
 
 His scorer calls it up to the tower, the tower reads it back to be certain of it, and a lane over a private stops loading in order to look along the line.
 
@@ -6025,7 +6025,7 @@ The captain lets that stand in the cold for a while, and Sam, reading the silenc
 
 "Sir, the sheet's fine. It's measuring the rifle. The silhouettes stand still, they come up on a cycle you can hear from the lane, so a clean forty establishes that the weapon functions and that I can count to three hundred."
 
-Two lanes down, somebody laughs once. The laugh stops.
+Two lanes down, somebody laughs once, but the laugh stops.
 
 The captain looks at him for a good deal longer than the answer needs, then takes the card back off the drill sergeant, folds it along a crease already in it, and puts it inside his jacket instead of into the stack on the table.
 
@@ -6041,19 +6041,19 @@ Three separate documents leave the company by Friday, but a fourth sits undernea
 
 The first is a memorandum for record, four paragraphs long, three of them describing the range in entirely ordinary language: the conditions, the qualification table, the score, the identity of the scorer, the presence of the company commander, the time of the conversation to the nearest quarter hour. The fourth quotes the soldier's own figure, forty percent, inside quotation marks, records that the soldier appears to have received specialised instruction from an unidentified source, and recommends that the question be answered before he is assigned anywhere at all.
 
-The second goes to the supporting counterintelligence office, under the standing requirement that puts unexplained specialised training in front of somebody whose job it is to look at it. The captain has sat through that briefing every year he has served and can list the reportable categories from memory.
+The second goes to the supporting counterintelligence office, under the standing requirement that puts unexplained specialised training in front of somebody whose job it is to look at it; the captain has sat through that briefing every year he has served and can list the reportable categories from memory.
 
 The third is a request to the battalion S-2 for the education block of the soldier's security questionnaire, to establish whether the school printed on the form matches the school in the private's mouth.
 
 The fourth is a behavioural health referral, signed last, and it travels upward alongside the other three.
 
-By the following Thursday the memorandum is on a desk well above anything with a range attached to it, in front of a woman positioned well above the captain. The fourth paragraph she reads twice, then sets the memorandum on top of a stack rather than into it, and draws out from underneath that stack a folder considerably older than the captain's commission.
+By the following Thursday the memorandum is on a desk well above anything with a range attached to it, in front of a woman positioned well above the captain; the fourth paragraph she reads twice, then sets the memorandum on top of a stack rather than into it, and draws out from underneath that stack a folder considerably older than the captain's commission.
 
 ________________
 
 Sam has a good October and a distinctly better November.
 
-A letter comes back from his grandmother in the last week of the month, three lines about the weather, a fourth asking whether the food has improved any. His reply says the food is precisely what it always was, the difficulty having always been the clock over the serving line.
+A letter comes back from his grandmother in the last week of the month, three lines about the weather, a fourth asking whether the food has improved any; his reply says the food is precisely what it always was, the difficulty having always been the clock over the serving line.
 
 On the way down to the range in the first week of November he asks Okoro whether he reckons the screening is finished with yet.
 
@@ -6061,7 +6061,7 @@ On the way down to the range in the first week of November he asks Okoro whether
 
 "This. Whether we're through the sorting part of it yet, or whether they're still deciding."
 
-Okoro takes the whole enquiry for a bit and laughs. Sam permits him this, on the grounds that it is a perfectly reasonable thing to laugh at. On the Thursday he puts it to somebody else.
+Okoro takes the whole enquiry for a bit and laughs; Sam permits him this, on the grounds that it is a perfectly reasonable thing to laugh at. On the Thursday he puts it to somebody else.
 
 
 ## Chapter Twenty-Six: The Exercise

@@ -44,7 +44,7 @@ Their bridge takes most of the afternoon, and comes out flat, wide, neat at ever
 
 Before anything gets loaded, every group has to write down a prediction, in pounds, of what its bridge will hold: Chloe writes a low number; Sam wants a hundred, is told the number has to be one he believes, but comes down a long way; Ruth writes hers with one hand curled around the edge of the paper.
 
-On the Tuesday a bucket hangs from the middle of each bridge and the weights go in a pound at a time, the whole room counting out loud together. The first bridge goes at three, which gets a laugh out of the group it belongs to, and more come apart early. Theirs holds to eleven and then folds sideways, all at once, exactly the way Ruth's square went over under one finger, rather than snapping, and all of them are down after the pieces while the bucket still swings. Sam says the number out loud twice.
+On the Tuesday a bucket hangs from the middle of each bridge and the weights go in a pound at a time, the whole room counting out loud together. The first bridge goes at three, which gets a laugh out of the group it belongs to, and more come apart early. Theirs holds to eleven but then folds sideways, all at once, exactly the way Ruth's square went over under one finger, rather than snapping, and all of them are down after the pieces while the bucket still swings. Sam says the number out loud twice.
 
 "I'd have written a lower one. Nobody let me."
 
@@ -172,7 +172,7 @@ Ruth is at the end of the table with her chin on her hand, pushing one piece of 
 
 Chloe's own fork stops halfway to her mouth, questions backed up behind it: whether anybody went into the stairwell after him, whether he had to say it out loud to somebody before they would let him go, and how long it was between the saying and his mom being at the door.
 
-Owen, then the bridge, then Owen again, and the loop refuses to run further than that. So Chloe picks her roll apart, one piece at a time, lining the pieces along the edge of her tray, going back through the two facts: the bridge was fun, but Owen must not have liked it, which sit crosswise, and neither will move over for the other. Long after Ruth has gotten up and taken her tray, she starts from the beginning, checking them a third time, trying to work out how a person could stand in front of a bridge and want to be somewhere else.
+Owen, then the bridge, then Owen again, and the loop refuses to run further than that. So Chloe picks her roll apart, one piece at a time, lining the pieces along the edge of her tray, going back through the two facts: the bridge was fun, but Owen must not have liked it, which sit crosswise, and neither will move over for the other. Long after Ruth has gotten up and taken her tray, she starts from the beginning, checking them a third time, trying to work out how a person could stand in front of a bridge but want to be somewhere else.
 
 More leave before the end of the month, so that by the fourth time Chloe reads the event off the corridor: a door that was shut at breakfast standing open in the afternoon, a mattress with the sheets gone.
 

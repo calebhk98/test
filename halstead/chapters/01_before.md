@@ -26,7 +26,7 @@ Mrs. Aldana waits for everybody to finish before moving on, but somebody is alwa
 
 You are allowed to read once you finish the sheet, and Chloe, who has decided against finishing it, looks out the window instead.
 
-In the parking lot a man is loading boxes into the trunk of his car, with his coffee cup set up on the roof so that he can use both hands, and he gets the boxes in, shuts the trunk and drives off with the cup still up there, so that Chloe is about an inch out of her seat, watching it ride across the asphalt, when she hears her name.
+In the parking lot a man is loading boxes into the trunk of his car, with his coffee cup set up on the roof so that he can use both hands, and he gets the boxes in, shuts the trunk but drives off with the cup still up there, so that Chloe is about an inch out of her seat, watching it ride across the asphalt, when she hears her name.
 
 "Chloe." Mrs. Aldana is at the end of her desk, looking down at a worksheet with a few answers on it and the rest blank. "What was the question?"
 
@@ -58,7 +58,7 @@ The librarian looks up at her and holds the stamp in the air. "How old are you?"
 
 "Four," the librarian says, and goes back to stamping. "The new ones come in Thursday morning and sit on the cart before I shelve them, so come Thursday and go through the cart first."
 
-Chloe takes what she is allowed, and they are gone by Wednesday, and her mom has started finding her at night against her bedroom door with the hall light coming under it.
+Chloe takes what she is allowed, but they are gone by Wednesday, and her mom has started finding her at night against her bedroom door with the hall light coming under it.
 
 ________________
 
@@ -142,7 +142,7 @@ Clouds are the ocean going somewhere else, and the whole sentence is in her mout
 
 "Water," she says, and Mrs. Aldana says good and moves on to the next thing on the board.
 
-The exchange is over before anybody looks up, and in December, called on for the water cycle, she gives the arrows back in the right order, evaporation and condensation and precipitation, and hears Mrs. Aldana say exactly.
+The exchange is over before anybody looks up, and in December, called on for the water cycle, she gives the arrows back in the right order, evaporation, condensation and precipitation, and hears Mrs. Aldana say exactly.
 
 The short version works every time she uses it, and the whole answer is still in there, so she has to hold it back on purpose, every single time.
 
@@ -176,7 +176,7 @@ The parking lot, the boxes, the question that had already happened without her: 
 
 "I don't know," Chloe says, "I already told you I don't know."
 
-Her dad finds her in the mirror and asks whether she likes school, and Chloe opens her mouth and stops.
+Her dad finds her in the mirror and asks whether she likes school, and Chloe opens her mouth but stops.
 
 "It's good," she says.
 
@@ -260,7 +260,7 @@ Then she turns to chapter nine and is well into it when Mrs. Aldana says her nam
 
 "We're on chapter four."
 
-The thing to do is say okay and turn back and be on the right page before anybody notices, which Chloe knows.
+The thing to do is say okay, turn back and be on the right page before anybody notices, which Chloe knows.
 
 What she says instead is that she already read chapter nine on Tuesday, all of it, so going back just means listening to a part she already knows how it ends.
 
@@ -286,7 +286,7 @@ That night at dinner she tells them, and it takes about a minute and a half.
 
 Her mom says she probably just wants everybody on the same page, literally, then laughs at her own joke, and Chloe laughs too, because it's her mom, while her dad does the noise he does instead of laughing.
 
-Then the corner of her mom's mouth drops and stays down, and she gets up and starts the dishes before anybody at the table has finished eating.
+Then the corner of her mom's mouth drops and stays down, but she gets up and starts the dishes before anybody at the table has finished eating.
 
 ________________
 
@@ -304,4 +304,4 @@ The appointment comes out of a phone call in February, with Chloe in the next ro
 
 It goes on a yellow sticky note on the refrigerator under the strawberry magnet, where her mom checks it every morning while the coffee is going and Chloe reads it whenever she catches the kitchen empty.
 
-It says MARCH 4, and a time, and a name. She cannot say it.
+It says MARCH 4, a time and a name. She cannot say it.

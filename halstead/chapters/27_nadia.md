@@ -4,13 +4,13 @@
 
 Somebody runs a scam through Nadia's company in the spring.
 
-The company is eleven months old and four people besides her, known inside three counties. What the thing does is take the resume out. A user spends an evening on short tests, the profile builds itself out of work she can put in front of somebody, and after that the thing fills the forms and sends them out for her, to the employers on the site and to whichever outside boards are still accepting submissions from it that month.
+The company is eleven months old and four people besides her, known inside three counties: what the thing does is take the resume out. A user spends an evening on short tests, the profile builds itself out of work she can put in front of somebody, and after that the thing fills the forms and sends them out for her, to the employers on the site and to whichever outside boards are still accepting submissions from it that month.
 
 It runs out of three rooms over a laundromat, a hundred yards up the street from her parents' shop, and the heat off the dryers comes through the floor from mid-morning, so the windows stay open into November. The only bathroom belongs to the laundromat, and its key hangs on a paint stirrer behind the change machine.
 
 The building came with two working outlets a room, so there is a run of surge strips down the baseboard now, taped down, with an orange extension cord stapled up over the door frame between the front rooms. She did the tape and the staples herself on a Sunday in February. The kitchen is a folding table with a kettle on it and a jar of instant coffee Bev brought in October, still sealed under its foil.
 
-In April she paid ninety dollars for the company name in white vinyl and put it up on the street window herself, from the outside, on a Sunday morning, with the ladder sinking into the grass verge under her. The second word went on half an inch low. Lifting it again would have torn it, so it sits half an inch low.
+In April she paid ninety dollars for the company name in white vinyl and put it up on the street window herself, from the outside, on a Sunday morning, with the ladder sinking into the grass verge under her. The second word went on half an inch low; lifting it again would have torn it, so it sits half an inch low.
 
 "Who is ever going to read that? Nobody walks up this side of the street, and the cars coming off the county road are doing fifty by the time they pass the door," Bev said, from the window.
 
@@ -114,7 +114,7 @@ But she stays where she is. The man in the doorway comes off the frame, walks ar
 
 "No." Nadia keeps her eyes on the desk. "I told my parents I would be back before dinner."
 
-The man behind the desk sits back in the chair for the first time since she came through the door. The man with the coffee has his phone up by then. The first photograph is of her, from where he stands. Then he crosses to the window, photographs the car in the lot below, and reads her registration out loud, every character of it, slowly, and then again.
+The man behind the desk sits back in the chair for the first time since she came through the door. The man with the coffee has his phone up by then; the first photograph is of her, from where he stands. Then he crosses to the window, photographs the car in the lot below, and reads her registration out loud, every character of it, slowly, and then again.
 
 "You aren't going to do anything to me. There are filings with a real agent's name on them, and there is a shop full of people underneath us who watched me come up those stairs. Whatever it is you have got running in this room, it does not survive somebody going missing off your own staircase," she says.
 
@@ -126,7 +126,7 @@ On she goes to the next thing on her list.
 
 "You can't prove any of it," the man at the folding table says. "There's not a name on any of those accounts, and there's nothing on a screen anywhere that says this room. Whatever you carried up those stairs, you carried a printout. You've got no idea who you're standing in front of."
 
-Nadia laughs. It is a single sound, and it is out of her before she has decided anything about it.
+Nadia laughs; it is a single sound, and it is out of her before she has decided anything about it.
 
 "Nine of you typed a live state registration number into my form. It's field six. It's a required field, and that is why you filled it in."
 
@@ -148,7 +148,7 @@ The man behind the desk has come forward onto his elbows now.
 
 "Then everybody else on that list finds out who cost them their paperwork, and it will be the notice telling them rather than me. I won't have said a word to any of them, and I won't know their names to say it to."
 
-The man in front of her stays where he is. The man behind the desk is looking past his shoulder at her.
+The man in front of her stays where he is, but the man behind the desk is looking past his shoulder at her.
 
 "Or none of it goes anywhere. They are already deleted, the next one stays off my site, everything else of yours stays off it, and I never make this drive again. That's the whole offer, and I'm not improving it while I stand here."
 
@@ -202,7 +202,7 @@ Four she has sat and taken herself: Python, Excel, Spanish, and the one on brake
 
 The first thing is that almost everyone fails.
 
-So she makes it easier. The generator carries a difficulty figure and she moves it, and the whole set rebuilds itself overnight while she sleeps. In September she moves it again. By November it is a version she'd have handed a first-year at Halstead, but the pass rate is still under a third, so she takes the November Python set herself, finishes it in minutes, and writes that in the margin under the others.
+So she makes it easier. The generator carries a difficulty figure, she moves it, and the whole set rebuilds itself overnight while she sleeps. In September she moves it again; by November it is a version she'd have handed a first-year at Halstead, but the pass rate is still under a third, so she takes the November Python set herself, finishes it in minutes, and writes that in the margin under the others.
 
 The second thing is the interviews.
 

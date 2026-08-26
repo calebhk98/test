@@ -25,33 +25,64 @@ CORPUS_DIRS = [
     "scratchpad/agent_modern/texts",
 ]
 
-# Both of these are targets, and both were wrong before they were right,
-# because of the PARSING rather than the arithmetic. See utterances() above:
-# a regex pairing of quotation marks returns the speech TAGS as quotations,
-# and every one of those is four words or under. Treasure Island read 42%
-# short under that parser and reads 25.6% under this one.
+# ---------------------------------------------------------------------------
+# TARGETS. Read this before changing any number below.
 #
-# Percentiles across the 22 reference books, parsed by alternation:
+# These bands come from FOUR NAMED BOOKS, not from percentiles, and that is
+# deliberate. A reviewer caught the repository building an impossible target
+# out of column-wise percentiles, twice:
 #
-#                     min    p25    p50    p75    max     Halstead
-#   sentences/quote   1.12   1.30   1.43   1.62   2.50       1.48   ok
-#   mean words         6.5   11.7   14.7   20.4   37.3       17.3   ok
-#   variation (CV%)     90    119    136    150    175         97   low
-#   4 words or under  12.9   23.4   28.2   35.9   43.7       22.3   low
-#   5 to 29 words     47.7   53.0   57.5   60.7   67.9       59.3   ok
-#   30 words or over   1.1    8.6   12.9   18.8   34.1       18.4   ok
+#   "You cannot combine the 75th percentile of mean (20.4), the 75th percentile
+#    of <=4w (35.9%), the 75th percentile of 5-29w (60.7%) and the 75th
+#    percentile of >=30w (18.8%). If you sum those bucket percentages you get
+#    115.4%. It creates a statistically impossible book, because the columns
+#    are coupled: every turn falls in exactly one bin and they sum to 100."
 #
-# Most of it sits inside the corpus. The short reply is mildly low and the
-# variation follows from it. The author has capped the short share: "I really
-# hate short replies... I would more want like a max of 30% under five words."
-# So that band runs p25 to his cap, not to the corpus high: Hemingway at 43.7%
-# is a book of clipped exchanges and this is not that book.
-TARGET_MEAN = 1.30
+# Worse, the coupling runs the OPPOSITE way from what mixing the columns
+# assumes. Across the corpus, a longer mean goes with FEWER short lines, not
+# more: Black Beauty has the longest mean at 37.3 and one of the lowest short
+# shares at 14.5%, while Men Without Women has the shortest mean at 6.5 and the
+# highest short share at 43.7%. Aiming at p75 of the mean AND p75 of the short
+# share aims at two different books at once.
+#
+# **The rule for anyone editing this file: pick real books whose profile you
+# want and use their whole rows. Never mix percentiles across these columns.**
+#
+# The author's chosen references, and their actual measured rows:
+#
+#   book                mean   CV%   <=4w   5-29w   >=30w    sum
+#   tom_sawyer          17.0   148   26.2    58.4    15.4   100.0
+#   treasure_island     22.2   148   25.6    52.1    22.3   100.0
+#   little_women        23.4   113   13.4    61.1    25.5   100.0
+#   wind_in_willows     27.8   152   20.4    50.8    28.8   100.0
+#
+# and his stated aims within that group: a mean "of like 20ish, plus or minus a
+# bit", a CV "of like 125, or like 115-135", and short replies at "a max of
+# ~30, goal closer to 20-25". The bands below are those, widened only to the
+# edges of the peer group where he did not specify.
+PEER_BOOKS = ("tom_sawyer", "treasure_island", "little_women", "wind_in_willows")
+
+TARGET_MEAN = 1.30            # sentences per quotation, peer-consistent
 TARGET_THREE_PLUS = 6.0
-TARGET_WORD_MEAN = (11.0, 25.0)
-TARGET_WORD_CV = 115.0
-TARGET_SHORT_SHARE = (24.0, 30.0)
-TARGET_LONG_SHARE = 8.5
+TARGET_WORD_MEAN = (18.0, 24.0)
+TARGET_WORD_CV = (115.0, 135.0)
+TARGET_SHORT_SHARE = (20.0, 25.0)
+TARGET_SHORT_HARD_MAX = 30.0
+TARGET_LONG_SHARE = (18.0, 26.0)
+
+
+def _check_bands_are_possible():
+    """A bucket target that cannot sum to 100 is the error this file exists to
+    prevent, so it is asserted rather than trusted."""
+    lo = TARGET_SHORT_SHARE[0] + TARGET_LONG_SHARE[0]
+    hi = TARGET_SHORT_SHARE[1] + TARGET_LONG_SHARE[1]
+    assert lo < 100 and hi < 100, "short+long bands leave no room for the middle"
+    assert 40 <= 100 - hi and 100 - lo <= 70, (
+        f"implied middle band {100 - hi:.0f}-{100 - lo:.0f}% is outside the "
+        f"peer range of 50.8-61.1%")
+
+
+_check_bands_are_possible()
 
 
 def quotations(text):
@@ -149,27 +180,31 @@ def main():
           f"{'ok' if book['mean'] >= TARGET_MEAN else 'UNDER'}")
 
     lo, hi = TARGET_WORD_MEAN
+    cvlo, cvhi = TARGET_WORD_CV
     slo, shi = TARGET_SHORT_SHARE
+    llo, lhi = TARGET_LONG_SHARE
     mid = 100 - book["short"] - book["long"]
-    print("\n  words per quotation, which is what stops a long turn being four "
-          "short ones")
-    print(f"    {'mean':<22}{book['wmean']:>7.1f}    corpus p50 14.7   "
-          f"target {lo:.0f}-{hi:.0f}      "
-          f"{'ok' if lo <= book['wmean'] <= hi else 'FAIL'}")
+
+    def band(v, a_, b_):
+        return "ok" if a_ <= v <= b_ else "FAIL"
+
+    print("\n  words per quotation, against " + ", ".join(PEER_BOOKS))
+    print("  bands are whole rows from those four books, never mixed percentiles")
+    print(f"    {'mean':<22}{book['wmean']:>7.1f}    peers 17.0-27.8   "
+          f"target {lo:.0f}-{hi:.0f}    {band(book['wmean'], lo, hi)}")
     print(f"    {'median':<22}{book['wmed']:>7.0f}")
-    print(f"    {'variation (CV %)':<22}{book['wcv']:>7.0f}    corpus p25 119    "
-          f"target over {TARGET_WORD_CV:.0f}   "
-          f"{'ok' if book['wcv'] >= TARGET_WORD_CV else 'FAIL'}")
-    print(f"    {'4 words or under':<22}{book['short']:>7.1f}%   corpus p50 28.2%  "
-          f"target {slo:.0f}-{shi:.0f}%    "
-          f"{'ok' if slo <= book['short'] <= shi else 'FAIL'}")
-    print(f"    {'5 to 29 words':<22}{mid:>7.1f}%   corpus p50 57.5%")
-    print(f"    {'30 words or over':<22}{book['long']:>7.1f}%   corpus p50 12.9%  "
-          f"target over {TARGET_LONG_SHARE:.0f}%   "
-          f"{'ok' if book['long'] >= TARGET_LONG_SHARE else 'FAIL'}")
-    print("\n  The long end is at the corpus p75 already. The short end is mildly")
-    print("  low and the variation follows from it, but the author caps short")
-    print("  replies at 30%: this is not a book of clipped exchanges.\n")
+    print(f"    {'variation (CV %)':<22}{book['wcv']:>7.0f}    peers 113-152     "
+          f"target {cvlo:.0f}-{cvhi:.0f}  {band(book['wcv'], cvlo, cvhi)}")
+    print(f"    {'4 words or under':<22}{book['short']:>7.1f}%   peers 13.4-26.2%  "
+          f"target {slo:.0f}-{shi:.0f}%   {band(book['short'], slo, shi)}"
+          + ("  OVER HARD MAX" if book["short"] > TARGET_SHORT_HARD_MAX else ""))
+    print(f"    {'5 to 29 words':<22}{mid:>7.1f}%   peers 50.8-61.1%")
+    print(f"    {'30 words or over':<22}{book['long']:>7.1f}%   peers 15.4-28.8%  "
+          f"target {llo:.0f}-{lhi:.0f}%   {band(book['long'], llo, lhi)}")
+    print(f"    {'buckets sum to':<22}"
+          f"{book['short'] + mid + book['long']:>7.1f}%")
+    print("\n  The three bucket rows are coupled: every turn lands in exactly one")
+    print("  and they sum to 100. Do not target them independently.\n")
 
 
 if __name__ == "__main__":

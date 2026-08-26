@@ -40,7 +40,7 @@ On the Friday he puts the question to Ruiz, at parade rest at the conclusion of 
 
 "Marsh, the real one is Tuesday. It is also Wednesday, and the Tuesday after that, and it will still be running on the morning you get out with every single word of this conversation forgotten. Get out of my face."
 
-Ruiz walks off. Sam accepts the answer as partial, then carries on asking.
+Ruiz walks off, but Sam accepts the answer as partial and carries on asking.
 
 ________________
 
@@ -102,7 +102,7 @@ ________________
 
 The rifle arrives in the third week and inhabits the end of his arm from that morning onward: named, stripped, cleaned, carried to the shower block, carried back out again. First live rounds come the week after that, twenty-five metres, groups of five on paper, at which point Sam puts most of his inside the diamond on the very first morning, then cannot work out why the scorer behind him wants a conversation about it afterward.
 
-This is approximately where he starts to have a problem: he is doing well. Doing well at the running and the carrying, at the paper, the compass, the bar bolted over the door of the bay, at the obstacle lanes, the casualty drags, the stripping of a weapon in the dark, the long foot march nobody in the platoon enjoyed, and doing it against the rest of his platoon visibly trying as hard as he does. But none of it is reconcilable with a single thing he knows about himself. At school his was the number that never moved. Odile was level with him on the mat once and comfortably ahead of him by the spring. Ruth shot ninety-one and found the entire business tedious. Kavi beat him at everything with a board in it for years on end.
+This is approximately where he starts to have a problem: he is doing well. Doing well at the running and the carrying, at the paper, the compass, the bar bolted over the door of the bay, at the obstacle lanes, the casualty drags, the stripping of a weapon in the dark, the long foot march nobody in the platoon enjoyed, and doing it against the rest of his platoon visibly trying as hard as he does. But none of it is reconcilable with a single thing he knows about himself. At school his was the number that never moved, but Odile was level with him on the mat once and comfortably ahead of him by the spring. Ruth shot ninety-one and found the entire business tedious; Kavi beat him at everything with a board in it for years on end.
 
 So he goes looking for the fault in the measurement.
 
@@ -110,15 +110,15 @@ His first thought is that everybody here is tired in a way school could only app
 
 His second is arithmetic, and it is better. Half the bay has been doing this for a couple of months, but he has been doing it half his life, so the gap between him and the man beside him is a fact about calendars rather than a fact about either of them.
 
-His third accounts for everything the first two leave lying around, and it is the one he keeps. This is a screen. Sorting sixty men by putting all sixty on a bar and writing down who lifts it is what an organisation does when it wants to know who to send somewhere else, which means the men around him are being measured on something he has yet to be shown, are almost certainly holding a considerable amount back for it, and will begin the real course once the sorting is finished.
+His third accounts for everything the first two leave lying around, and it is the one he keeps: this is a screen. Sorting sixty men by putting all sixty on a bar and writing down who lifts it is what an organisation does when it wants to know who to send somewhere else, which means the men around him are being measured on something he has yet to be shown, are almost certainly holding a considerable amount back for it, and will begin the real course once the sorting is finished.
 
 The explanation survives a week of examination, after which he stops examining it.
 
 ________________
 
-September is tactical foot marches, progressively longer every week, the packs weighed at the start by a corporal with a hanging scale who calls each figure out like an auctioneer taking bids. Sam sets his straps once at the trailhead and leaves them alone from there. The man behind him accuses him of shorting the weigh-in, so Sam holds the pack open for a second reading, watches the needle settle where it settled the first time, and goes back to walking.
+September is tactical foot marches, progressively longer every week, the packs weighed at the start by a corporal with a hanging scale who calls each figure out like an auctioneer taking bids; Sam sets his straps once at the trailhead and leaves them alone from there. The man behind him accuses him of shorting the weigh-in, so Sam holds the pack open for a second reading, watches the needle settle where it settled the first time, and goes back to walking.
 
-Land navigation occupies October, daylight first and afterward in darkness, a scorecard, temperatures low enough that the cadre distribute an extra layer before anybody thinks to ask for one. Sam logs all of his the first time out, then walks back onto the course with men from his squad who are a point down, still arguing over a stream crossing on their board.
+Land navigation occupies October, daylight first and afterward in darkness, a scorecard, temperatures low enough that the cadre distribute an extra layer before anybody thinks to ask for one; Sam logs all of his the first time out, then walks back onto the course with men from his squad who are a point down, still arguing over a stream crossing on their board.
 
 "Your board's ten degrees out, look. Take your count off the compass, not the map."
 
@@ -138,11 +138,11 @@ ________________
 
 Qualification is the second Thursday of October, in the ninth week, and it is forty targets.
 
-The morning comes up grey and low, with the particular variety of cold that reaches the fingers a considerable time before it reaches anything else. Pop-up silhouettes standing out from fifty metres to three hundred, ten exposures from each of five positions: standing, prone unsupported, prone supported, kneeling behind the barricade, standing behind the barricade. A magazine change built into the middle of it. Three minutes and fifty-eight seconds from the first exposure to the last.
+The morning comes up grey and low, with the particular variety of cold that reaches the fingers a considerable time before it reaches anything else. Pop-up silhouettes standing out from fifty metres to three hundred, ten exposures from each of five positions: standing, prone unsupported, prone supported, kneeling behind the barricade, standing behind the barricade. A magazine change built into the middle of it, three minutes and fifty-eight seconds from the first exposure to the last.
 
 Sam counts himself down, then works the table at an unhurried pace that leaves him waiting on the tower twice.
 
-Forty hits. Every exposure.
+Forty hits, every exposure.
 
 His scorer calls it up to the tower, the tower reads it back to be certain of it, and a lane over a private stops loading in order to look along the line.
 
@@ -182,7 +182,7 @@ The captain lets that stand in the cold for a while, and Sam, reading the silenc
 
 "Sir, the sheet's fine. It's measuring the rifle. The silhouettes stand still, they come up on a cycle you can hear from the lane, so a clean forty establishes that the weapon functions and that I can count to three hundred."
 
-Two lanes down, somebody laughs once. The laugh stops.
+Two lanes down, somebody laughs once, but the laugh stops.
 
 The captain looks at him for a good deal longer than the answer needs, then takes the card back off the drill sergeant, folds it along a crease already in it, and puts it inside his jacket instead of into the stack on the table.
 
@@ -198,19 +198,19 @@ Three separate documents leave the company by Friday, but a fourth sits undernea
 
 The first is a memorandum for record, four paragraphs long, three of them describing the range in entirely ordinary language: the conditions, the qualification table, the score, the identity of the scorer, the presence of the company commander, the time of the conversation to the nearest quarter hour. The fourth quotes the soldier's own figure, forty percent, inside quotation marks, records that the soldier appears to have received specialised instruction from an unidentified source, and recommends that the question be answered before he is assigned anywhere at all.
 
-The second goes to the supporting counterintelligence office, under the standing requirement that puts unexplained specialised training in front of somebody whose job it is to look at it. The captain has sat through that briefing every year he has served and can list the reportable categories from memory.
+The second goes to the supporting counterintelligence office, under the standing requirement that puts unexplained specialised training in front of somebody whose job it is to look at it; the captain has sat through that briefing every year he has served and can list the reportable categories from memory.
 
 The third is a request to the battalion S-2 for the education block of the soldier's security questionnaire, to establish whether the school printed on the form matches the school in the private's mouth.
 
 The fourth is a behavioural health referral, signed last, and it travels upward alongside the other three.
 
-By the following Thursday the memorandum is on a desk well above anything with a range attached to it, in front of a woman positioned well above the captain. The fourth paragraph she reads twice, then sets the memorandum on top of a stack rather than into it, and draws out from underneath that stack a folder considerably older than the captain's commission.
+By the following Thursday the memorandum is on a desk well above anything with a range attached to it, in front of a woman positioned well above the captain; the fourth paragraph she reads twice, then sets the memorandum on top of a stack rather than into it, and draws out from underneath that stack a folder considerably older than the captain's commission.
 
 ________________
 
 Sam has a good October and a distinctly better November.
 
-A letter comes back from his grandmother in the last week of the month, three lines about the weather, a fourth asking whether the food has improved any. His reply says the food is precisely what it always was, the difficulty having always been the clock over the serving line.
+A letter comes back from his grandmother in the last week of the month, three lines about the weather, a fourth asking whether the food has improved any; his reply says the food is precisely what it always was, the difficulty having always been the clock over the serving line.
 
 On the way down to the range in the first week of November he asks Okoro whether he reckons the screening is finished with yet.
 
@@ -218,4 +218,4 @@ On the way down to the range in the first week of November he asks Okoro whether
 
 "This. Whether we're through the sorting part of it yet, or whether they're still deciding."
 
-Okoro takes the whole enquiry for a bit and laughs. Sam permits him this, on the grounds that it is a perfectly reasonable thing to laugh at. On the Thursday he puts it to somebody else.
+Okoro takes the whole enquiry for a bit and laughs; Sam permits him this, on the grounds that it is a perfectly reasonable thing to laugh at. On the Thursday he puts it to somebody else.

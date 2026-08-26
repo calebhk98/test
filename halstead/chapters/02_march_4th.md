@@ -94,7 +94,7 @@ ________________
 
 Then he says numbers and she says them back, and after that he says numbers she has to say back in the other direction.
 
-They keep getting longer, and she holds eight going forwards and six going backwards before she loses the middle of the next string and tells him so. That's fine, he says, and he does another anyway, and she loses the middle of that one too. She has no idea whether any of it is a lot, since this is the first time anybody has ever said a number of numbers to her.
+They keep getting longer, and she holds eight going forwards but six going backwards before she loses the middle of the next string and tells him so. That's fine, he says, and he does another anyway, and she loses the middle of that one too. She has no idea whether any of it is a lot, since this is the first time anybody has ever said a number of numbers to her.
 
 ________________
 
@@ -146,7 +146,7 @@ Ben lets the room stay quiet long enough that Chloe fills it herself.
 
 "Longer than we've been in here?"
 
-Chloe works it out against the blocks and the juice and the rooms. "No, less than that. Half of it, like half of it, but every day."
+Chloe works it out against the blocks, the juice and the rooms. "No, less than that. Half of it, like half of it, but every day."
 
 This time she watches him write it down, and it takes him longer than the other ones.
 
@@ -178,7 +178,7 @@ Then the standing booklet comes back with a different kind of page, a square of 
 
 She points. He turns the page. She points. He turns the page.
 
-The pieces stop being shapes and start being rules about shapes, and she keeps pointing while Ben turns pages faster than he has turned anything all morning. Then the pages stop.
+The pieces stop being shapes but start being rules about shapes, and she keeps pointing while Ben turns pages faster than he has turned anything all morning. Then the pages stop.
 
 ________________
 
@@ -190,7 +190,7 @@ Then it's the kind of question where he gives her a situation and she has to say
 
 "Tell me another reason."
 
-Chloe goes back over what she said and can't find the part that was wrong, so she gives him the same thing with more of it: the doorknobs, and the ground, and the underneath of the table at school. Ben writes.
+Chloe goes back over what she said and can't find the part that was wrong, so she gives him the same thing with more of it: the doorknobs, the ground and the underneath of the table at school. Ben writes.
 
 "Why do people keep their money in a bank instead of at the house?"
 
@@ -200,13 +200,13 @@ Chloe goes back over what she said and can't find the part that was wrong, so sh
 
 Chloe says it again with a person climbing in a window in it.
 
-They keep coming, wallets on the ground and smoke at night and lines painted on a road. Every answer she gives seems to be the right answer, so she stops trusting the questions and watches the pen instead, and the pen moves the same amount whatever she says.
+They keep coming, wallets on the ground, smoke at night and lines painted on a road. Every answer she gives seems to be the right answer, so she stops trusting the questions and watches the pen instead, and the pen moves the same amount whatever she says.
 
 ________________
 
 There is another timed sheet, little symbols in rows where she looks at the ones on the left and puts a line through a box on the right for yes or no. One line is one line, but it is still slow.
 
-Then a page with animals and shoes and cups all over it, where she crosses out every animal, one stroke each, then gets to the bottom and looks up. Ben still has his thumb on the watch, and there is time left over, which hasn't happened yet today.
+Then a page with animals, shoes and cups all over it, where she crosses out every animal, one stroke each, then gets to the bottom and looks up. Ben still has his thumb on the watch, and there is time left over, which hasn't happened yet today.
 
 By then her stomach is loud enough that she covers it with her forearm, and she keeps switching which leg she is sitting on. Ben asks whether she's tired, she says no, then asks again after the next page.
 

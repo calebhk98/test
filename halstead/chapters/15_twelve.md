@@ -28,7 +28,7 @@ Three weeks later a row of hooks sits on the bench with one fault running throug
 
 "You lost the curve on the second turn," he says, and keeps going.
 
-That evening the sixth is in the fire, and she stops at the second turn, scroll half open, and puts it back in the coals.
+That evening the sixth is in the fire, but she stops at the second turn, scroll half open, and puts it back in the coals.
 
 That month Bell takes the metronome off the post and pockets it in front of all of them.
 
@@ -38,7 +38,7 @@ That month Bell takes the metronome off the post and pockets it in front of all 
 
 "That's the two of you to sort out," he says, buttoning the pocket, "and I'd think about it first, because whoever calls the count is the one whose bad afternoon everybody else has to have."
 
-Chloe and Odile take a week to settle it and spend most of those days arguing, because Odile's count is steadier while Chloe's holds up better late in a long day, when Odile begins stretching hers by a fraction she is unaware of, which Chloe establishes with a watch behind her over several sessions. Odile calls for November and hates it by the end of the month, so after Christmas they swap according to the day, and the hit rate drops for a fortnight before coming back higher.
+Chloe and Odile take a week to settle it and spend most of those days arguing, because Odile's count is steadier while Chloe's holds up better late in a long day, when Odile begins stretching hers by a fraction she is unaware of, which Chloe establishes with a watch behind her over several sessions. Odile calls for November and hates it by the end of the month, so after Christmas they swap according to the day, but the hit rate drops for a fortnight before coming back higher.
 
 Anatomy she learns on herself, so that by the end of October she can give her resting pulse, her blood pressure, what her hands do at rest against what they do after running the stairs, and where every bone sits under her skin, all by touch. Physics starts in September and hands back half of what she was told at ten with the reasoning underneath it, and psychology runs a term on mostly reading, a third of every hour spent arguing over whether the studies show what their authors claim.
 
@@ -54,7 +54,7 @@ ________________
 
 The bread comes up in Ruth's room on a Tuesday, with the others on the floor and Priya lying across the end of the bed, because Sam will keep saying that the Wednesday loaf is better and that he can tell every single time, whatever anybody else says.
 
-Ruth turns a page of the book open on her knees. "It's the same bread, Sam, and the same flour and ovens and people behind it. The only thing different about a Wednesday is that it's a Wednesday, and two hundred of us have talked each other into it, which is a room agreeing with itself before anybody has chewed anything. Somebody said it in third grade, and what the whole school tastes now is the saying of it."
+Ruth turns a page of the book open on her knees. "It's the same bread, Sam, and the same flour, ovens, and people behind it. The only thing different about a Wednesday is that it's a Wednesday, and two hundred of us have talked each other into it, which is a room agreeing with itself before anybody has chewed anything. Somebody said it in third grade, and what the whole school tastes now is the saying of it."
 
 "You can taste it though, and everyone can taste it, that's the whole point."
 
@@ -112,7 +112,7 @@ Saturday afternoon is the stock count: a clipboard between them, shelves of tinn
 
 "Four hundred and six on this one, and I'm sure about it."
 
-"You said three hundred and ninety on the last shelf, and there were sixteen left over."
+"You said three hundred and ninety on the last shelf, but there were sixteen left over."
 
 "There were not sixteen of anything left over, because I counted it twice before I wrote the number down."
 
@@ -144,7 +144,7 @@ ________________
 
 At the bottom, in that typeface, without emphasis: Response time is scored against the standard that's posted weekly.
 
-Chloe is annoyed when the alarm wakes her. It's the small one, the one that sits in her ear, and it means watch. It's four in the morning. She's pulled a watch at this hour before. This is the first one nobody posted beforehand. She's in the corridor in seconds and Kavi is already there.
+Chloe is annoyed when the alarm wakes her, the small one that sits in her ear and means watch, at four in the morning. She's pulled a watch at this hour before, but this is the first one nobody posted beforehand, and she's in the corridor in seconds, Kavi already there.
 
 "I saw it, I was still up. There's four of them, they're at the loading side, they came over the fence about a minute ago."
 
@@ -188,13 +188,13 @@ The plan takes Sam ninety seconds and he is defending it before he's finished de
 
 "You'll get grabbed."
 
-"That's the point," she says, already moving toward the door. "I'm twelve and I'm small, and I'm a girl in pyjamas. Nobody hits that. They'll grab me and they'll try to keep me quiet and then they'll spend at least a few seconds deciding what to do with me, and while they're deciding, they're standing still and they're all facing the same way."
+"That's the point," she says, already moving toward the door. "I'm twelve, I'm small, and I'm a girl in pyjamas. Nobody hits that. They'll grab me and they'll try to keep me quiet and then they'll spend at least a few seconds deciding what to do with me, and while they're deciding, they're standing still and they're all facing the same way."
 
 Ruth looks at her. "I'm shorter," she says.
 
 "Yeah, but I look smaller, it's psychology," Chloe says. "It's the whole first term."
 
-The other thing that gets discussed is the drugs: the kit has both. Chloe gets the case open on the second try, the catch slipping under her thumb before it gives. The traceable one works in about six seconds and the untraceable one takes closer to twenty-five and needs a better stick.
+The other thing that gets discussed is the drugs: the kit has both. Chloe gets the case open on the second try, the catch slipping under her thumb before it gives. The traceable one works in about six seconds, but the untraceable one takes closer to twenty-five and needs a better stick.
 
 "Take the fast ones," Sam says.
 
@@ -206,13 +206,13 @@ Ruth is quiet for as long as it takes to breathe out. "Fine, fast ones," she sig
 
 ________________
 
-Chloe walks around the corner at a normal speed with her hands empty and her arms down. The face she's supposed to make is confused and half asleep, and she is bad at it, just like drawing and dance.
+Chloe walks around the corner at a normal speed with her hands empty and her arms down. The face she's supposed to make is confused and half asleep, but she is bad at it, just like drawing and dance.
 
 "Uh," she says. "Hi. Who are you?" She tilts her head like a lost puppy.
 
-All four of them turn. The nearest one comes at her fast and low, gets a gloved hand up near her mouth, and she lets him, because moving would be wrong. He just holds her there, his other arm half up, doing exactly what she needed him to do, in front of three men who are all looking at one thing.
+All four of them turn. The nearest one comes at her fast and low, gets a gloved hand up near her mouth, but she lets him, because moving would be wrong. He just holds her there, his other arm half up, doing exactly what she needed him to do, in front of three men who are all looking at one thing.
 
-It is done in seconds: Kavi, closest to them, takes the two at the back; Ruth takes the third, and Sam goes for the one with his hand on Chloe's face, doing it badly, missing the vein and going again. The man takes that half a second, gets an arm free, swings, and misses before he goes down.
+It is done in seconds: Kavi, closest to them, takes the two at the back; Ruth takes the third, but Sam goes for the one with his hand on Chloe's face, doing it badly, missing the vein and going again. The man takes that half a second, gets an arm free, swings, and misses before he goes down.
 
 Chloe steps back out of the way and sits down on the floor because her legs have decided to, while Ruth is already moving between the four of them, two fingers on a throat, then the next, then the next.
 
@@ -264,7 +264,7 @@ The first one comes round after about seven minutes, confused for a beat, before
 
 "Okay." She writes a dash on her arm and checks his pulse again. "Second floor lab or the server room?" He doesn't answer, though his face does; Kavi says "server room" and writes it down.
 
-The third one wakes up about a minute later, younger, less good at keeping his face still. Then it stops being an interrogation, because Sam has been building up to it for twenty minutes.
+The third one wakes up about a minute later, younger, less good at keeping his face still; then it stops being an interrogation, because Sam has been building up to it for twenty minutes.
 
 "Can I ask you something," Sam says. "Why did you even bother encrypting? It's AES-256 on a handset off a shelf. That's not even encryption at that point." One of the men on the floor looks at the ceiling.
 
@@ -294,27 +294,27 @@ Sinclair arrives with two other adults and a trolley, stops at the corner, and l
 
 "Numbers."
 
-Ruth reads them off her arm. Sinclair nods. "Grading's in the morning," he says. "Go to bed. Now."
+Ruth reads them off her arm, and Sinclair nods. "Grading's in the morning," he says. "Go to bed. Now."
 
-Back in bed she lies on top of the covers with her shoes on and runs the list from the top, and gets to the end of it, and starts over.
+Back in bed she lies on top of the covers with her shoes on, runs the list from the top, gets to the end of it, and starts over.
 
 Chloe gets a C, no different from Sam's, Ruth gets a B minus and brings it up for a week, and Kavi gets a B for the comms with a note about the sensors that he disputes in writing, at length, but loses.
 
 The sheet says: intruders inside Building One prior to contact. Response seven minutes fifty against a standard of six. Traceable agent selected. Four personnel deployed where three would have served. Objective established. No capability disclosed.
 
-Chloe reads it in the corridor, out loud and in Russian, at a volume that turns the far end of it, and Ruth reads the sheet over her shoulder and waits her out.
+Chloe reads it in the corridor, out loud and in Russian, at a volume that turns the far end of it, but Ruth reads the sheet over her shoulder and waits her out.
 
 "Put it in English and I'll agree with you."
 
 "They were inside before the alarm went, but the sheet has that down as ours, and there is nothing on it anywhere about the sensors."
 
-"There won't be, and you'll have the C for a week, and then you'll have something else." Ruth hands the sheet back and carries on down the corridor.
+"There won't be, but you'll have the C for a week, and then you'll have something else." Ruth hands the sheet back and carries on down the corridor.
 
 ________________
 
 At Thanksgiving the letter is on the counter before anybody has finished serving. "A kitchen, Chloe. They sent us an actual letter about a kitchen, before I've even got the turkey carved."
 
-"It was a few minutes, and it was toast, and everyone was completely safe the entire time."
+"It was a few minutes, it was toast, and everyone was completely safe the entire time."
 
 "It was a gas oven." Her mother sets the serving spoon on the edge of the dish, where it slides off into the gravy, so that she has to fish it out with her fingers before she can go on. "A gas oven, lit, in the middle of the night, with children alone in the room, and which one of you lit it is beside the point, because what I mind is a flame going while the room is empty."
 
@@ -330,7 +330,7 @@ Her mother stops with the spoon out over the dish, only the steam moving at that
 
 "The school. You do the ovens in the cooking block in second year and then you're on the list," Chloe says, looking from her mother to her father. "I'm on it, Kavi's on it, Sam and Ruth are on it, and anyway the oven is the one part they let go, because what they got us for was being out of our rooms and in a kitchen alone when the rule says you tell somebody first."
 
-Her father makes a noise into his glass and puts a hand over his mouth, and her mother looks at him with her chin down until the hand comes away, after which he folds his napkin into quarters in front of him.
+Her father makes a noise into his glass and puts a hand over his mouth, but her mother looks at him with her chin down until the hand comes away, after which he folds his napkin into quarters in front of him.
 
 "Four hours of counting tomatoes sounds about right to me," her mother says, "and you stay in your own room after lights out, Chloe, whatever list you happen to be on, because you are twelve years old."
 
@@ -346,15 +346,15 @@ Her mother sits down, shakes out her napkin and lays it across her lap. "So how'
 
 "Fine as in fine."
 
-Her mother reaches across and moves Chloe's water glass a little to the left, and the rest of her stays where it was. "Because you can come home. If you want out of that school you say so and you're out, we drive up on Monday, we collect your things, and you're home."
+Her mother reaches across and moves Chloe's water glass a little to the left, but the rest of her stays where it was. "Because you can come home. If you want out of that school you say so and you're out, we drive up on Monday, we collect your things, and you're home."
 
 "I want to be there, though, and I like it there, even the parts of it that are hard."
 
 "You're allowed to want out of it."
 
-"I know I'm allowed to," Chloe says, putting her fork down on the edge of the plate. "I like it a lot, and all my friends are there, and the classes are good."
+"I know I'm allowed to," Chloe says, putting her fork down on the edge of the plate. "I like it a lot, all my friends are there, and the classes are good."
 
-Her mother holds her look, then picks her knife back up and starts eating, and her father asks what the good one was this term, the class she actually looked forward to.
+Her mother holds her look, then picks her knife back up and starts eating, but her father asks what the good one was this term, the class she actually looked forward to.
 
 "Psychology, probably, the part about how people come apart when they're tired."
 

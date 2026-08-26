@@ -96,7 +96,7 @@ Her mom gets up, turns the other bed down, and sits on the end of it.
 
 "Yes. Anything."
 
-So her mom talks, doing the drive down, and the place where they stopped, and the woman on the desk downstairs who has a son at a college in a state Chloe couldn't find.
+So her mom talks, doing the drive down, the place where they stopped and the woman on the desk downstairs who has a son at a college in a state Chloe couldn't find.
 
 Then comes a thing that happened at her work in June, which Chloe has already been told twice, word for word both times, and somewhere in the middle of it the words blur into one long hum, still going.
 
@@ -112,7 +112,7 @@ They are standing outside because somebody else is still in there, a line of the
 
 "They put us in the one that isn't a planet anymore," Chloe says.
 
-Then something goes wrong with her, before anybody has had time to answer, because the backs of her knees go loose, her fingers curl stiff, refusing to close all the way, her ears do what they did in October, and for a few steps she is somewhere else entirely, back at her desk with the wood chips and the cage and a chair squeaking somewhere behind her.
+Then something goes wrong with her, before anybody has had time to answer, because the backs of her knees go loose, her fingers curl stiff, refusing to close all the way, her ears do what they did in October, and for a few steps she is somewhere else entirely, back at her desk with the wood chips, the cage and a chair squeaking somewhere behind her.
 
 Then a boy laughs, one loud honk of it right up close, and her jaw unclenches all at once, her shoulders coming down before she has decided anything about it.
 
@@ -254,7 +254,7 @@ Chloe has a very clear idea of what is supposed to happen to a child who does wh
 
 But nothing comes, all day.
 
-That night it catches again: Ruth said it, so she sits on her hands through the next class, and the one after that, and answers only when Mr. Doyle calls on her direct.
+That night it catches again: Ruth said it, so she sits on her hands through the next class, and the one after that, but answers only when Mr. Doyle calls on her direct.
 
 "This is the worst mistake of my life," Sam says at dinner that week, about Kavi, for about the fourth time.
 
