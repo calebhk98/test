@@ -16,7 +16,7 @@ Her mom listens again, longer this time, before the rest comes out.
 
 Chloe turns a page she stopped reading a while back, her thumb keeping a place she has already abandoned.
 
-\---
+________________
 
 There are thirty subtraction problems on the worksheet and all thirty are one problem, which she works out partway through the second, eight minus three, so the rest are that again with different numbers.
 
@@ -36,7 +36,7 @@ The question has already happened somewhere behind her, while she was out in the
 
 "That's what I thought." Mrs. Aldana taps the worksheet twice and walks back to the front, and she has no reason to come down the row again, because Chloe does the rest of the sheet in the time that is left and gets them all right.
 
-\---
+________________
 
 Reading works a different way entirely, and the difference shows up wherever it is her own idea rather than an assignment.
 
@@ -60,7 +60,7 @@ The librarian looks up at her and holds the stamp in the air. "How old are you?"
 
 Chloe takes what she is allowed, and they are gone by Wednesday, and her mom has started finding her at night against her bedroom door with the hall light coming under it.
 
-\---
+________________
 
 At dinner in September she talks for the entire meal about a book in which a girl runs away and lives inside a train station, so the explaining starts with the station, whose size is what everything else depends on.
 
@@ -86,7 +86,7 @@ Her mom reports it on the phone afterward, laughing.
 
 "She had to be told twice to eat, because she couldn't do both."
 
-\---
+________________
 
 The blacktop is warm enough by midmorning that the girls play in short sleeves, and there is a game at recess with a tennis ball that Chloe has no name for and cannot learn the rules of by watching, so on the second day she asks straight off.
 
@@ -108,7 +108,7 @@ The blacktop is warm enough by midmorning that the girls play in short sleeves, 
 
 Chloe plays a few more rounds, quieter each time, then stands by the door with her arms crossed until the whistle, alone the whole time.
 
-\---
+________________
 
 In October, Peanut climbs the bars of his cage toward the clip lamp, with Chloe's chin on her folded arms close enough to smell the wood chips under the heat.
 
@@ -134,7 +134,7 @@ For the rest of the morning she sits on her hands even when she knows the answer
 
 In the cafeteria she peels the crust off her sandwich in a long unbroken piece and leaves both parts untouched, working out which part was the wrong part, because it is either the Icarus or the saying it a second time louder.
 
-\---
+________________
 
 The board still has yesterday's spelling list chalked half erased in the corner when Mrs. Aldana asks in November what clouds are made of, and Chloe knows this.
 
@@ -150,7 +150,7 @@ On Fridays, Mrs. Aldana reads the best paper out loud while keeping back whose i
 
 In December the assignment has a minimum and she writes the minimum, about a boat, and the paper read out is Maddie's, which everybody guesses correctly.
 
-\---
+________________
 
 Conferences are on a Thursday evening and both her parents go in, while Chloe sits on the corridor floor with a book in a smell of floor wax from the janitor's cart.
 
@@ -182,7 +182,7 @@ Her dad finds her in the mirror and asks whether she likes school, and Chloe ope
 
 Her dad says huh and puts his eyes back on the road, and the heater ticks the rest of the way home, until the last light before their street, where her mom turns the papers face down on her knees.
 
-\---
+________________
 
 The checkup is in December and Chloe likes going, because they measure her height against the wall and this year she is above last year's mark by a visible amount.
 
@@ -216,7 +216,7 @@ He types something else. "But if the school is putting it in writing, I'd rather
 
 On the way out, the receptionist lets Chloe pick a sticker, which takes a long time, because there are two good ones.
 
-\---
+________________
 
 Christmas is at her grandmother's, where the house is full and Chloe knows everybody in it, collecting a sweater, a set of markers, a stack of books, saying thank you each time unprompted.
 
@@ -248,7 +248,7 @@ On the way home Chloe has her head against the cold part of the window with her 
 
 Chloe presses closer to the cold glass and keeps her eyes shut for the rest of the drive.
 
-\---
+________________
 
 In January they read a book about a boy and a sled dog out loud, going around the room, with the radiator ticking through the whole first chapter.
 
@@ -288,7 +288,7 @@ Her mom says she probably just wants everybody on the same page, literally, then
 
 Then the corner of her mom's mouth drops and stays down. She gets up and starts the dishes before anybody at the table has finished eating.
 
-\---
+________________
 
 School is boring for everybody, obviously, because there is one room and one worksheet for all of them, but the other children sit through it fine while Chloe is the one who cannot.
 
@@ -298,7 +298,7 @@ So in January she decides to get good at sitting there, and by February she can 
 
 The library book stays in her desk, where she touches its corner through the day but has stopped taking it out.
 
-\---
+________________
 
 The appointment comes out of a phone call in February, with Chloe in the next room when her mom says March fourth, says it again, and the third time says it slowly while she is writing it down.
 

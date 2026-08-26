@@ -28,7 +28,7 @@ There is a poster about handwashing in English with the Spanish underneath, whic
 
 There is also a sign that says NO CELL PHONES with a picture of a phone under it and a red line through it. The picture is for the people who can't read the sign, and the people who can't read the sign are looking at a phone with a line on it. Chloe puts her chin on the arm of the chair, and it is still funny a minute later, when she is looking at something else.
 
-\---
+________________
 
 Dr. Prentice, the psychologist, has a beard and a room with a small table in it, more like somebody's kitchen than an office: a box of tissues, a bin of blocks, and a window with the blinds halfway down over the parking structure.
 
@@ -44,7 +44,7 @@ He tells her she can call him Ben, asks what he should call her, and sits down o
 
 Chloe looks at him hard and files the last part with everything else adults say when they want you to sit still.
 
-\---
+________________
 
 The blocks are red and white, and she has to turn them until the tops make the picture on a card, the first ones so easy that she thinks it's a trick, so she keeps looking up at Ben to find out, but all he says is mm-hm.
 
@@ -72,7 +72,7 @@ There is another like it, and then another, and both times she has the picture i
 
 He puts the lid on the bin.
 
-\---
+________________
 
 Then the questions turn into pairs of things and what the two of them share, the pairs getting further apart as they go.
 
@@ -90,13 +90,13 @@ He keeps giving her pairs until he turns the sheet over and finds the end of the
 
 Those go on a while. When he stops he puts that book back in the drawer instead of on the table with the rest.
 
-\---
+________________
 
 Then he says numbers and she says them back, which is easy, after which he says numbers she has to say back in the other direction, which she likes a lot better.
 
 They keep getting longer, so she holds eight going forwards and six going backwards before she loses the middle of the next string and tells him so, at which he says that's fine, does another anyway, and she loses the middle of that too, and she has no idea whether any of it is a lot, since this is the first time anybody has ever said a number of numbers to her.
 
-\---
+________________
 
 Then a booklet stands up between them with pictures in rows, and she has to pick the ones that belong together, something from the top row and something from the bottom. There is no watch for this one, and his thumb stays where it is.
 
@@ -108,7 +108,7 @@ She points at the boot and the glove.
 
 The rows get harder, which she can tell because the things in them stop being things you can hold, and she goes at the speed he turns the page.
 
-\---
+________________
 
 Then there's a sheet with a key along the top: a star, a circle, a triangle, a cross, a shape like a house, each with a different little mark inside it, a line standing up, a line lying down, a ring, two dots. Under the key those shapes run across the page in empty rows, and she has to put the right mark in each one.
 
@@ -126,7 +126,7 @@ He says stop, takes the pencil out of her hand and turns the sheet face down bef
 
 "That is a question I skip," Ben says, easy about it, then asks whether she would like juice.
 
-\---
+________________
 
 Chloe washes her hands in a bathroom that turns out to be behind a door she had taken for a closet, and the juice comes in a paper cup out of a refrigerator, which she drinks half of while Ben writes.
 
@@ -154,7 +154,7 @@ He lets the room stay quiet long enough that Chloe fills it herself.
 
 This time she watches him write it down, and it takes him longer than the other ones.
 
-\---
+________________
 
 Then it's words, and he asks them the same way every time, so the easy ones and the hard ones sound identical coming out of him.
 
@@ -168,7 +168,7 @@ He asks what a bicycle is and she tells him about the wheels and the pedals, the
 
 The words get longer and then they get stranger, and one of them stops her cold, and she tells him so, then another stops her too, so she says she would rather go back to the first kind. He says that's not how it works, puts the next word to her anyway, and that one goes past her too, and then he closes the booklet.
 
-\---
+________________
 
 Then the numbers come back with letters mixed into them, and he gives her the rule before he starts, the way he gives every rule: the numbers first in counting order, then the letters in alphabet order, whichever way round they went in.
 
@@ -176,7 +176,7 @@ The first string arrives and she hands it back the way it arrived, because that 
 
 After that she sorts them in her head and gives them back in halves, and they get long before they stop.
 
-\---
+________________
 
 Then the standing booklet comes back with a different kind of page, a square of pictures with a piece cut out of it and a row of pieces along the bottom, and she puts her finger on the piece that belongs.
 
@@ -184,7 +184,7 @@ She points. He turns the page. She points. He turns the page.
 
 The pieces stop being shapes and start being rules about shapes, and she keeps pointing, and Ben is turning pages faster than he has turned anything all morning, and then the pages stop.
 
-\---
+________________
 
 Then it's the kind of question where he gives her a situation and she has to say why people do what they do about it.
 
@@ -206,7 +206,7 @@ She says it again with a person climbing in a window in it.
 
 They keep coming, wallets on the ground and smoke at night and lines painted on a road. Every answer she gives seems to be the right answer, so she stops trusting the questions and watches the pen instead, and the pen moves the same amount whatever she says.
 
-\---
+________________
 
 There is another timed sheet, little symbols in rows where she looks at the ones on the left and puts a line through a box on the right for yes or no, and one line is one line, which is better, and it is still slow.
 
@@ -228,7 +228,7 @@ Ben looks at her, longer than usual, before he answers.
 
 "Some people do, and the other ones are the ones that actually matter," he says.
 
-\---
+________________
 
 Then he talks to her mom, and Chloe waits in the corridor on a chair too tall for her feet, holding her jacket in her lap.
 
@@ -276,7 +276,7 @@ A phone goes off somewhere else in the building, somebody answers it, and her mo
 
 Chloe looks at her shoes and holds still, in case moving is the thing that makes the door close.
 
-\---
+________________
 
 In the car her mom puts both hands on the wheel, checks the mirror, checks it a second time, and starts it.
 
@@ -308,7 +308,7 @@ A word like that always comes with a number stuck to it. Chloe watches the side 
 
 They get ice cream, unheard of on a Wednesday, and she eats it in the car, where some of it goes on the seat and her mom tells her to let it go.
 
-\---
+________________
 
 After the appointment, nothing changes.
 
@@ -318,7 +318,7 @@ Some days she asks to play four square and gets a round in before the ball goes 
 
 What she works out that month is bigger than the pencil trick: finish first, sit still, keep your answers short, and the room leaves you alone, the teacher included. It works in reading and in math, every day until the end of the year.
 
-\---
+________________
 
 She still knows all twenty-eight of their names, and not one of them has needed to learn hers. By June, Chloe is quiet, she does what she's told, and she eats lunch by herself.
 

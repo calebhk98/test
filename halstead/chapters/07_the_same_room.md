@@ -12,7 +12,7 @@ Ruth finds her at the flagpole, hugs her hard enough to hurt, and says it from c
 
 Then Ruth's mother says her name from the curb, and Ruth lets go and goes.
 
----
+________________
 
 In August her mom is standing at the counter sorting through the mail, while Chloe comes in and stands at the end of the counter, waiting until there is a gap in it.
 
@@ -56,7 +56,7 @@ Somebody at the school picks up on the second ring, and Chloe gets close, strain
 
 "Okay, honey, and all we can do now is wait for those families to call us back."
 
----
+________________
 
 Chloe waits for the phone, day after day.
 
@@ -68,7 +68,7 @@ Instead of her room, she takes her book down and reads it in the kitchen, in the
 
 After that she stops sitting in the kitchen, though she still crosses the room to check the phone is on the hook before she goes up, every night, and she still comes down the stairs fast if it rings.
 
----
+________________
 
 On a Sunday, in the car coming back from her grandmother's, she asks: "Can I go there for the year?"
 
@@ -84,7 +84,7 @@ Before she answers, her mom looks out her own window, and her dad's hands come u
 
 "We can talk about it tonight, once your dad's parked somewhere and can put both hands into the conversation instead of the steering wheel," her mom says.
 
----
+________________
 
 Since the book has to go back, they go on Tuesday, and Chloe, who has had it out for weeks, carries it in with both hands, hugged against her chest instead of held out to hand over.
 
@@ -100,7 +100,7 @@ The librarian waits until she has actually run out, looking at her over the top 
 
 Chloe takes her four off the cart, still catching her breath, and finishes two of them by Friday.
 
----
+________________
 
 Second grade is Ms. Vance, who everybody says is the nice one, and the desks are in groups with a name card taped to the corner of each.
 
@@ -112,7 +112,7 @@ The first math sheet comes around midmorning, and she squints at it before she c
 
 Fractions at camp, staying up until the number finally sat still on the page, and now this, math from last year again. Having done all thirty she goes back to the top and checks them all over, and every answer matches what she wrote the first time, so she puts her hands in her lap and waits for the room to catch up around her. She is relieved to find it still works like it worked in first grade.
 
----
+________________
 
 The second week Ms. Vance brings in a shoebox with foil taped all over it and stands it up on the front desk where everybody can see it.
 
@@ -140,7 +140,7 @@ Chloe's hand comes down over what she has already written, the whole page gone u
 
 Her hand stays where it is for the rest of the period, and when Ms. Vance calls time she scratches out the lines underneath it until the pencil almost goes through the paper, then, while Ms. Vance is over at the cabinet with the tape and looking up for none of it, writes I hope you like fifth grade instead, folds it in half twice, and puts it in the box.
 
----
+________________
 
 The library books are due on a Thursday and she has finished two of them.
 
@@ -158,7 +158,7 @@ Her mom drives her to the library on Thursday and waits in the car with the engi
 
 The library card goes in the drawer in the kitchen where the batteries are, and weeks later, when her mom asks whether she wants to go on Saturday, Chloe says no thank you and asks her to renew them please.
 
----
+________________
 
 By the end of September, she is asking several times a day.
 
@@ -180,7 +180,7 @@ Chloe is standing in the doorway in her pajamas, one foot on top of the other.
 
 Upstairs, on the back of a spelling worksheet under her pillow, she starts a column of marks, one for every day that passes without a yes, and keeps adding to it.
 
----
+________________
 
 Her mom starts on the school in the last week of September.
 
@@ -196,7 +196,7 @@ Her mom says thank you at the end of it, puts the phone down, and stands there w
 
 "Go on up, and I'll come say goodnight in just a couple of minutes."
 
----
+________________
 
 In the first week of October, Chloe puts her head down on her desk in the middle of the morning and, for a reason she could not give if anybody asked her for one, cries with her face in her arms.
 

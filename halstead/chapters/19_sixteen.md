@@ -62,7 +62,7 @@ Later that week she takes her paper to Amberg, and he has the mark scheme out on
 
 Chloe reads the rows twice, then looks up at him and back down at them.
 
----
+________________
 
 "Two of you, brothers, one of you has sold something belonging to the other." The drama teacher points at whoever is nearest the door and declines to explain the exercise further. "Go."
 
@@ -102,7 +102,7 @@ Delacroix runs the handling weeks, talking the entire time she drives, in a flat
 
 She looks at the gap, and the car goes through it.
 
----
+________________
 
 In October she sits the bar again, the retake for everyone who failed in April, in that room, a few rows over from where she sat the first time.
 
@@ -130,7 +130,7 @@ The forge is Thursdays, and has been for years, the work down there staying betw
 
 The tongs go home to the hook on the back of her door, beside the bag she made in her second year.
 
----
+________________
 
 Home in June for the summer, she sleeps through most of the first week, then sleeps the clock round most nights and rides out to the reservoir most days, in July finding a road past the water good for a few extra miles and a hill she has to stand up on, with novels going through her hands in a fortnight, though she could not afterward tell anybody how any of them end.
 

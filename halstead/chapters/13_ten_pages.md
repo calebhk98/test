@@ -16,11 +16,11 @@ She reads Federalist 10 that night in the chair by the window, which takes her a
 
 It comes back on the Monday with a mark and a short paragraph under it, which say she has spent the whole essay on a position she already held, that the other side appears nowhere on the page in a form its own supporters would recognise, and that until it does he has no way of telling whether she is right or only comfortable.
 
-On the Tuesday she tells him she read number 10\.
+On the Tuesday she tells him she read number 10.
 
 "That's Madison," he says, and starts the hour without adding anything to it.
 
-That evening she looks up who wrote which, and Hamilton has number 1, then 6 through 9, then 11 through 13, then 15 through 17, then 21 through 36, then 59 through 61, then 65 through 85\. Number 6 goes that week and 9 the week after, and by the end of October she is going through them in order in the hour before dinner, so that she has all fifty-one of Hamilton's done by the middle of December, and then she starts on Madison's.
+That evening she looks up who wrote which, and Hamilton has number 1, then 6 through 9, then 11 through 13, then 15 through 17, then 21 through 36, then 59 through 61, then 65 through 85. Number 6 goes that week and 9 the week after, and by the end of October she is going through them in order in the hour before dinner, so that she has all fifty-one of Hamilton's done by the middle of December, and then she starts on Madison's.
 
 The second essay is due days after the first, so she is still thinking about the first when she has to start it.
 
@@ -28,7 +28,7 @@ In the second week of October she decides this essay is going to be good, so she
 
 In November Hearn tells her the third page of an essay is doing the work of the pages in front of it, and to go and look at what those pages are for, advice that she reads twice on the stairs, and every essay she writes for the next month has a good third page in it, but the other nine pages are still there.
 
----
+________________
 
 Self defense starts in September, an hour a day, every day; the sheet says it runs to the end.
 
@@ -135,7 +135,7 @@ Russian starts in September, and a couple of months in she has enough of it to a
 
 Music runs both ways at once. Half the hour is by ear and half is notation, with the same man teaching both, sliding between them and leaving you to work out which you're doing. On every instrument they put in front of her she is mediocre, but in the third week he plays a run of bars and she gives them all back while the girl next to her gets the first bar and stops, so she keeps the block all year and puts her name down for it again in June. Algebra starts in mathematics in the second week, on the sheet, in the slot where the mathematics already was.
 
----
+________________
 
 Her father asks at Thanksgiving what she has been writing about, and she says tariffs.
 
@@ -163,7 +163,7 @@ Her father asks at Thanksgiving what she has been writing about, and she says ta
 
 Her mother comes through with the pie and everybody moves their arms, while her aunt wants to know who is having cream, and her father catches Chloe's eye across the table a minute later and lifts an eyebrow.
 
----
+________________
 
 In December Hearn hands an essay back with no note on it at all.
 

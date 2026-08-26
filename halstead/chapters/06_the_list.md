@@ -42,7 +42,7 @@ While a father looks at his plate, a man at the end starts talking about the dri
 
 Her dad puts more syrup on her waffle on his own, more than she'd have asked for, and Chloe eats it anyway while the syrup pools at the edge of the plate.
 
-\---
+________________
 
 On the last night the families eat on campus, at long tables in the dining hall, and her dad asks her what she did all month.
 
@@ -114,7 +114,7 @@ When he asks her to do the fractions again from the start, she turns the napkin 
 
 Her dad looks at the napkin, folds it in half twice, and puts it in his shirt pocket.
 
-\---
+________________
 
 After, they sit on the floor in the hall outside Pluto with their backs against the wall, close enough that Ruth's shoulder stays against Chloe's for most of it, while the lights in that hall go off in sections late on, so that they are down to the last section, in a strip of light about the width of a doorway.
 
@@ -200,7 +200,7 @@ Chloe runs the numbers again, the ones she has been running since the drive down
 
 "Obviously," she says, and holds on to the pyjama leg until the lights click off and somebody has to find the door by feel.
 
-\---
+________________
 
 She is awake long before anybody comes to get her, dressed and sitting on the end of the stripped mattress.
 

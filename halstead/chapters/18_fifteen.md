@@ -82,7 +82,7 @@ At dinner that week Sam says it to his plate. "You're on sixty, everybody's talk
 
 "Because I'm where I am and I do other stuff," he says, reaching across her for the water. "Go and be miserable at Ruth, she's on ninety-something."
 
----
+________________
 
 Self defence is still ten of them on one with a minute on the clock, and her average that year is forty-one seconds against forty-five the year before. The bad session is a Tuesday in November, first round, and she comes out of the middle at thirty-eight, on her feet before they call it and holding the number already.
 
@@ -106,7 +106,7 @@ Odile goes into the middle on the second Thursday in March, and by half a minute
 
 On each of the next Thursdays she sits on that mat after the room empties, running the last twenty seconds of Odile's round again, and every time she gets to the end of it with the same twenty seconds and no new reason for them.
 
----
+________________
 
 Hark hands out envelopes in October with two hundred dollars in each, to be spent on anything legal for a year, and whatever is left in June they keep.
 
@@ -170,7 +170,7 @@ Kavi does the work over a few evenings, and what he comes back with keeps every 
 
 Ruth cuts a card for each of them that week, small enough to go behind the photograph in a wallet or under the insole of a boot. Sam loses his in April, which is the failure all of them predicted out loud and built for anyway, and a few minutes with Kavi at a terminal puts him back inside. Chloe carries hers behind her range card for the rest of her time in the building, and she checks that it is there about once a week, on her way past something else.
 
----
+________________
 
 Her father comes out of the house on the second Sunday of the summer with the car keys and walks straight past her to the passenger door. "Get in."
 

@@ -56,7 +56,7 @@ That gets her sitting up. "By size, smallest closest to the door, and if two loo
 
 She's asleep before Chloe thinks of anything else to ask, and the radiator does what Fen said it would, twice, with Chloe awake for both performances.
 
----
+________________
 
 She starts on a Monday, and her day runs long: a subject an hour through the morning, then the afternoon hours that Fen calls the fun ones and everybody else calls the afternoon. When it finishes, she finishes, and the stretch before dinner belongs to her alone. The subjects are Spanish, mathematics, writing, literature and history, and writing turns out to be a few pages a week followed by twenty minutes of a man asking why she put things in that order.
 
@@ -104,7 +104,7 @@ Chloe tells her all of it, out of order and twice in places, and Ruth listens th
 
 After that it is the hour she gets up for.
 
----
+________________
 
 It takes her a while to work out what actually gets somebody sent home from Halstead, checking off a list she keeps only in her head.
 
@@ -144,7 +144,7 @@ Chloe sits down on the floor of the alcove instead of answering, the cord stretc
 
 "Yes," Chloe says.
 
----
+________________
 
 The second term starts and the subjects change over, with history splitting into political history and drawing the world on blank paper, which Chloe assumes at first is a joke somebody is running on the class, because there is no textbook and no test. The teacher hands out paper and walks around looking at what people have done with it.
 
@@ -152,7 +152,7 @@ The second term starts and the subjects change over, with history splitting into
 
 "When you can do Central Asia in one go."
 
-She still has to stop and think her way through Central Asia. South America is done by the end of May and Europe soon after that, but she keeps putting the \-stans in the wrong order, all five of them, in a different wrong order every time she tries. Ruth can do the whole map, including the small islands off the top of Scotland, and is unbearable about it in a way Chloe actually likes. Physics comes in at that changeover and biology goes out, so she writes the whole list in the back of the notebook, the subjects plus the afternoon hours, with the date beside it. There are people in her year who have been here for years already, and she wants to know how long their list is, but every question she tries out sounds like she is measuring herself against them.
+She still has to stop and think her way through Central Asia. South America is done by the end of May and Europe soon after that, but she keeps putting the -stans in the wrong order, all five of them, in a different wrong order every time she tries. Ruth can do the whole map, including the small islands off the top of Scotland, and is unbearable about it in a way Chloe actually likes. Physics comes in at that changeover and biology goes out, so she writes the whole list in the back of the notebook, the subjects plus the afternoon hours, with the date beside it. There are people in her year who have been here for years already, and she wants to know how long their list is, but every question she tries out sounds like she is measuring herself against them.
 
 "Which one's fourth from the end now, is it still the one from March?" Chloe asks, in the last week of June with the packing half done, and Fen has to check, running a finger along the sill before she answers, because another came in during March and moved the whole row along. Then Fen's rocks come off the sill into a shoebox with newspaper folded between them. Chloe opens the desk drawer, where the envelope is still under the folder she left on top of it in April, and puts them both in the bottom of the bag. Ruth walks her down to the front steps, where Sam is already out on the grass talking to somebody else's grandmother about something that requires both his arms.
 

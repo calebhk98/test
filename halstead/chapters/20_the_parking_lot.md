@@ -8,7 +8,7 @@ In the fortnight before, the preparation divides itself between them: Nadia stan
 
 Kavi turns it down at the last second, saying he wants to finish something, and from Kavi this always means he has already started it and would rather see the end of it than the far side of a fence, so the rest of them go over the fence twenty minutes short of midnight.
 
----
+________________
 
 The road into town runs downhill for the first mile, no streetlights whatever until the gas station, and they keep to the gravel shoulder in a loose column, Sam out front with his hands in his pockets, Nadia counting the passing cars under her breath out of habit rather than necessity, since the road at this hour supplies few of them in a mile. A dog somewhere behind a fence works itself up for half a block and then gives up on them, and they cut through the vacant lot behind a tire place and out onto the road on the far side of it, so half an hour gets them to the diner sign, waffles lit up yellow against the dark, the last stretch quiet except for boots on gravel.
 
@@ -70,7 +70,7 @@ Sam has the specials card up off the table, holding it at arm's length like a do
 
 There's a shopping cart in the lot behind a hardware store on the way home, and Sam is in it before anybody has suggested anything, knees up around his ears, while Ruth pushes him at the curb at a dead run and lets go too late. The front wheel folds sideways with a sound like a dropped pan and Sam goes over the handle into the grass strip and lies there laughing with his arms out. Nadia films the second attempt and then takes a run herself and is better at it, hitting that curb full speed with the brake untouched, riding it out on both feet through the landing, and Chloe laughs hard enough to have to sit down on the curb with her head between her knees. They get twenty minutes out of a broken shopping cart, and when Ruth wants a fourth run the wheel is finished, so they leave it upside down where it stopped, a wheel still turning.
 
----
+________________
 
 The men come out a few blocks later, between two parked cars, seven of them in a clump. A streetlight over the row is running on a bad ballast, on, off, on. They stop a few meters short and the man at the front does the talking. Three have guns, two down at their sides, one up and moving.
 
@@ -160,13 +160,13 @@ Sam thinks about it for a good deal longer than the joke needs, and then answers
 
 Sam laughs most of the way to the corner, and Ruth lets him have it, so they cross the last empty intersection at a walk, their footsteps falling into rhythm on their own and moving faster than the walk down had been, and they argue about the waitress the whole way home.
 
----
+________________
 
 They're back over the fence a few minutes later, Chloe's camera loop already unwinding itself toward normal, and the corridor is empty and quiet the whole way to their own doors.
 
 Chloe sets her shoes down by the door, laces still knotted from being kicked off rather than untied, and lies on top of the covers for a while before she gets under them.
 
----
+________________
 
 Ruth shuts the box off in the corridor and puts it in the chat before she sleeps, a few lines and a photograph of Sam standing in the lot with his arms out, and by breakfast there are sixty replies and an argument about whether it counts, whether a gang of them with guns is a real test or just people happening to be in the way.
 

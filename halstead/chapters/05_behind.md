@@ -58,7 +58,7 @@ Across the room Ruth's takes nineteen pounds and does snap, in the middle of the
 
 Mr. Doyle has them all write down which part went first and how far off their prediction they were, and Chloe, wrong by three pounds, writes that the corner went first because every corner of a square carries its angle alone and an angle alone gives way, the longest piece of writing she does all week.
 
-\---
+________________
 
 The second week is the week that gets her, and the subject is mathematics.
 
@@ -114,7 +114,7 @@ Chloe sits in the dark with the paper on her knees and the pencil in her hand, a
 
 She does the next few problems in the packet, then goes back through the ones she had already got right, one at a time, sorting the ones that came out right for the reason from the ones that came out right off the trick.
 
-\---
+________________
 
 Swimming is the last thing every afternoon, and because Chloe arrived unable to swim she is put in the group at the shallow end of the pool with an instructor called Deb, who has them blow bubbles with their faces in the water for two days before anybody goes anywhere. By the end of the second week Chloe can manage a length provided she stops once in the middle, while Sam swims two lengths straight through and brings the fact up at dinner most days.
 
@@ -128,7 +128,7 @@ Swimming is the last thing every afternoon, and because Chloe arrived unable to 
 
 Ruth is in that group and complains about all of it at a volume Chloe would not attempt: about Deb, about the bubbles, about the days spent on them, and about a boy in their lane who splashes on purpose, until on the Thursday she swims the whole length straight through and comes up at the far end with her entire face rearranged, and Sam, holding the lane rope, watches her do it.
 
-\---
+________________
 
 Owen leaves in the second week, and the way Chloe finds out is that he is in her hall on the Monday and by Wednesday his door stands open with the bed stripped to the plastic.
 
@@ -176,7 +176,7 @@ Owen, then the bridge, then Owen again, and the loop refuses to run further than
 
 More leave before the end of the month, so that by the fourth time Chloe reads the event off the corridor: a door that was shut at breakfast standing open in the afternoon, a mattress with the sheets gone.
 
-\---
+________________
 
 At dinner in the third week Kavi says something about the moon being up in the afternoon, and Chloe answers him a half second later with "That's why it's a liar," which brings heads around the table toward her.
 

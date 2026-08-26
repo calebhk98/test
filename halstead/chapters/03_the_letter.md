@@ -62,7 +62,7 @@ Chloe pushes her fork through her food and waits for somebody to get to that par
 
 Chloe asks once more on the Sunday and then forgets to ask again for days, because it's July and there's a sprinkler.
 
-\---
+________________
 
 Her mom calls the district office on Monday, where a receptionist takes the name down and says she'll look into it, and though Tuesday and Wednesday go quiet, the callback comes Thursday afternoon, by which time Chloe is on the stairs, on the step where the carpet stops and the wood goes cold under her, because that is the step where you can hear the kitchen.
 
@@ -136,7 +136,7 @@ Her mom pulls out a chair and stands behind it, both hands on the back.
 
 "Is the network the one with cartoons," Chloe says, from the top of the stairs, a minute behind the part of the conversation she is answering, and neither of them looks over.
 
-\---
+________________
 
 Her dad looks up the website that night on the laptop at the kitchen table, and Chloe is allowed to sit next to him because it's Friday, her feet swinging free under the chair while he talks the whole way through the first part of it, reading the headings out loud in the voice he does for train station announcements, so that Chloe laughs at the one for lights out.
 
@@ -218,7 +218,7 @@ On the ninth night Chloe is supposed to be asleep, having already been sent back
 
 A minute goes by before her mom says something too quiet to make out from the top of the stairs, her dad says he knows, twice, and somebody starts the dishwasher, at which Chloe goes back up the rest of the stairs on her hands and knees, to keep the boards quiet, and gets into bed with her socks still on.
 
-\---
+________________
 
 She takes her books back on the Thursday before they go, and gets up on her toes at the desk.
 

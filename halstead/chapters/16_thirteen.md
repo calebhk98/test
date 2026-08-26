@@ -2,7 +2,7 @@
 
 *September 2018 – July 2019*
 
-A line appears on her timetable in September, new since June: *Mathematics, 12s, Thursday, room 4\.* Under it sit seven names, and behind them a grade sheet due at the end of the year with hers at the top and theirs down the side.
+A line appears on her timetable in September, new since June: *Mathematics, 12s, Thursday, room 4.* Under it sit seven names, and behind them a grade sheet due at the end of the year with hers at the top and theirs down the side.
 
 Teaching starts at thirteen and you take the year below, so her cohort, being the oldest in the building, is the only cohort doing it, which makes the twelves the only year taught by another student and the thirteens the only year with no teacher of their own. She works that out on the stairs in the first fortnight, tells Ruth, and gets a shrug and half a sandwich.
 
@@ -50,7 +50,7 @@ Marek does the work and keeps it. The sheet has a column and the column is for p
 
 Marek fails the course, because a blank sheet leaves the mark scheme exactly one option, and Chloe is the one who writes it in. In January he is at breakfast as he was in December, in his own year, working through the building, so whatever a fail costs a student here, expulsion is no part of it. What it does cost, whether it follows him onto anything that matters, whether anybody sat him down about it, stays outside her reach for years, and she is careful for a long time about how she asks.
 
----
+________________
 
 Her own mathematics stops being about the answer in the second week of September.
 
@@ -138,7 +138,7 @@ Chloe leans back from the board. "The mathematics says the opposite, Kavi: you p
 
 What she actually does with block two is the school forge, Thursdays and both Saturday sessions and most of Sunday, so by the spring she is working through the second sitting of dinner and eating whatever is left.
 
----
+________________
 
 A Russian piece in February covers a bridge that came down in December, and she read an English piece on that bridge in January, leaving her two accounts of one commission: the English one reports a design fault in the bearings, while the Russian one reports overloading by a contractor, and names him. Both are describing the same report, so one of them is wrong, and from where she is sitting she has no way of telling which. A third pair on an unrelated story does it again, and then she goes looking for a fourth.
 
@@ -192,7 +192,7 @@ Chloe takes her hand off the napkin and puts it in her lap while Sam says someth
 
 Nadia is there most nights, saying what she thinks in flat words on principle, so half of it lands as an accusation. They work the November cipher set together and it goes well, though Sam sits between them most nights and neither of them has ever said a word to him about it.
 
----
+________________
 
 Her father is replacing the back steps that summer, and it takes most of the month, because he keeps stopping to talk to the man from down the road.
 

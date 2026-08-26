@@ -140,7 +140,7 @@ The jacket is Friday, and any excuse would have done as well.
 
 Her mom says put your jacket on and Chloe says no, and her mom says put it on, and then the fight is happening and her throat hurts before she has got a few words out of it.
 
-"You want me to be like this, you want me to stay exactly like this\!"
+"You want me to be like this, you want me to stay exactly like this!"
 
 "Chloe."
 

@@ -50,7 +50,7 @@ Her cuffs stop reaching her wrists in October, and inside a fortnight she and Ru
 
 "You've got the face on, and the face is worse," Ruth says, going through first and letting the door swing back. "People stop at different times, and my mother was exactly this height at twelve and finished a good deal taller, so make the most of your next few years, because that's the whole of what you're getting."
 
----
+________________
 
 The bread comes up in Ruth's room on a Tuesday, with the others on the floor and Priya lying across the end of the bed, because Sam will keep saying that the Wednesday loaf is better and that he can tell every single time, whatever anybody else says.
 
@@ -122,9 +122,9 @@ They count the third shelf over, and the third count is Ruth's, who stops halfwa
 
 The library gets her about once a week now, because most evenings there are people in the third floor common room with a game spread over the table and a space kept for her at it.
 
----
+________________
 
-\*\*\*
+________________
 
 DEFENSIVE WATCH - SCORING
 
@@ -140,7 +140,7 @@ You establish what they came for.
 
 Minimum personnel. Every additional student on the response costs you.
 
-\*\*\*
+________________
 
 At the bottom, in the same typeface, without emphasis: Response time is scored against the standard that's posted weekly.
 
@@ -212,7 +212,7 @@ The other thing that gets discussed is the drugs: the kit has both. Chloe gets t
 
 Ruth is quiet for as long as it takes to breathe out. "Fine, fast ones," she sighs. "It'll cost us, but we don't have much choice."
 
-\---
+________________
 
 Chloe walks around the corner at a normal speed with her hands empty and her arms down. The face she's supposed to make is confused and half asleep, and even though she is bad at it, just like drawing and dance, it's her best shot. 
 
@@ -318,7 +318,7 @@ Chloe reads it in the corridor, out loud and in Russian, at a volume that turns 
 
 "There won't be, and you'll have the C for a week, and then you'll have something else." Ruth hands the sheet back and carries on down the corridor.
 
----
+________________
 
 At Thanksgiving the letter is on the counter before anybody has finished serving. "A kitchen, Chloe. They sent us an actual letter about a kitchen, before I've even got the turkey carved."
 
@@ -378,6 +378,6 @@ Chloe opens her mouth, but to say what the small things are she has to start wit
 
 "Huh," her father says, and holds his hand out for the ham.
 
----
+________________
 
 By Christmas she can hold twenty-four seconds in the 10v1, though she is still ranked only thirtieth out of ninety.

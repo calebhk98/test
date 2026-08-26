@@ -102,7 +102,7 @@ Chloe stands against the wall by the door with the glass in both hands and tugs 
 
 "I've had enough."
 
----
+________________
 
 In September there is a different girl in her room, from Ohio, called Marguerite.
 
@@ -132,7 +132,7 @@ Politics runs from the first week to the end of the year with no exam at the end
 
 "Because the man who runs the port authority in Piraeus is married to a woman whose brother sits on a bank board in Frankfurt, and neither of them has to like the other for a phone call to happen." The teacher draws the line between them on the wall while he talks. "It's all like that, and none of it is a secret, it's just that nobody writes it down in one place, so we will."
 
----
+________________
 
 Nerf is eight.
 
@@ -180,7 +180,7 @@ Chloe takes hold of the edge of the desk with both hands and stays standing. "Th
 
 "Teams are for the year, and you're the third in here about a team this week." Mrs. Okonkwo writes the date at the top of a clean sheet, then turns the block sheet round on the desk so Chloe can read it, ninety names down the side and the columns running across all of them. "Ask me in June and it'll be no in June, and you've still got the Friday. Come on Friday."
 
----
+________________
 
 The elective list is on the wall outside the dining hall, four sheets long, with a blank line next to every entry and a pencil on a string.
 

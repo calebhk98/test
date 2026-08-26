@@ -44,7 +44,7 @@ Ruth keeps her eyes on the book that's open in her lap. "You were good at dance,
 
 Chloe does another lap of the table before she sits down, and Ruth turns a page.
 
----
+________________
 
 Mandarin is with a woman called Mrs. Sun, who grew up in Harbin and taught in Vancouver for years before this, and who speaks to the room in Mandarin from the first hour and in English twice a term.
 
@@ -104,7 +104,7 @@ Kavi alone watches the tank, for what turns out to be most of October, producing
 
 "That is a long life for that fish, and I've been expecting it since Christmas."
 
----
+________________
 
 Bex Alcantar arrives at the end of your sentence before you get there and finishes it for you, and the ending she puts on it is usually the ending it was going to have.
 
@@ -152,13 +152,13 @@ Priya looks at her over the top of her glass. "It's fun for me, though, even the
 
 "I know," Chloe says, "and that's the bit I kept waiting for the whole time, for it to turn into that for me too."
 
----
+________________
 
 Home for the summer, she sleeps most of the way through the first week of it without anybody stopping her.
 
 Her mother makes a joke about it on the fourth day and a smaller version of it on the fifth, then stops making it, and on the sixth she comes in, puts a glass of water on the nightstand, and goes back out. Watching a film with her father in the afternoon, Chloe has no opinion about it whatsoever, which she finds restful, so they watch another. In the second week she rides out to the reservoir and back, the long way round on the road, and comes in through the kitchen door filthy and starving in the middle of the afternoon.
 
-Her mother takes some days off in July and they do the coast, a long drive each way to a motel with a pool, where Chloe swims for most of two days. On the second evening her mother teaches her cribbage on the balcony, on a board her own father made out of walnut in about 1961\.
+Her mother takes some days off in July and they do the coast, a long drive each way to a motel with a pool, where Chloe swims for most of two days. On the second evening her mother teaches her cribbage on the balcony, on a board her own father made out of walnut in about 1961.
 
 "Fifteen two, fifteen four, and a pair is six."
 

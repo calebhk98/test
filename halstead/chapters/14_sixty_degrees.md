@@ -24,7 +24,7 @@ Bell walks them down the field to show them the lanes, two firing lines seventy 
 
 Bell turns the metronome on. "Keep your eyes off each other," he says, "off the whole time, both ends, and you count instead."
 
----
+________________
 
 It is a counting problem, and it takes Chloe until the third week to admit that.
 
@@ -82,7 +82,7 @@ Chloe has her own pages in the bag under the desk and leaves them in it. After t
 
 Rhetoric is an hour a week of dismantling a speech to find the place where the person giving it is being paid, usually well down the page.
 
-Art history is in the spring, and in February the instructor projects a Dutch interior with a woman reading in it and says what it went for at auction in 1959 and again in 1998\.
+Art history is in the spring, and in February the instructor projects a Dutch interior with a woman reading in it and says what it went for at auction in 1959 and again in 1998.
 
 "I can't make that work," Chloe says to Kavi at dinner. "It's a picture, the same picture in both of those numbers, and it sat in a room untouched the whole way between them."
 
@@ -104,7 +104,7 @@ In May her chisel starts rolling its edge every twenty minutes, so she takes it 
 
 "The forge," he says, still filing the edge. "Low building past the kitchens, and they're in on Thursdays."
 
----
+________________
 
 The essay questions come out of a hat in the second week of November, one each, a week, seven thousand words, and Iyad has the hat, going round the table with it and reading the name off the top of every slip and checking his own list to see that nobody has gone without, and he takes the last slip out of the bottom of it himself. Sam gets whether a country can owe another country an apology and is pleased before he has finished reading it, Kavi gets one about juries, reads it twice and announces that he has drawn the boring one and would like a swap, and Priya gets whether a person can consent to something they cannot leave, puts it face down on the table and asks who wants it.
 
@@ -192,7 +192,7 @@ Chloe tells her grandmother about the arrows and draws the sixty degrees on an e
 
 "That's better, then, it sounds like you just want the practice." Her grandmother settles back into the chair with her tea. Chloe folds the envelope shut along the line she drew and keeps it.
 
----
+________________
 
 The Watch on the eleventh of April goes up on the board on the Monday, and it says the whole school. The intercom comes on in the middle of the afternoon block, and it is Sinclair.
 

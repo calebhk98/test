@@ -102,7 +102,7 @@ Then comes a thing that happened at her work in June, which Chloe has already be
 
 In the morning her mom drives her back and tells her she can do that every night if she wants, and Chloe says okay.
 
-\---
+________________
 
 The rooms are named after planets, which she works out on the second day, walking down the hall behind a group of the bigger children.
 
@@ -152,7 +152,7 @@ That night Chloe calls the desk again and sleeps in the hotel again, then in the
 
 "Since before I can remember," Chloe says, and her mom laughs at it anyway.
 
-\---
+________________
 
 The dining hall is loud in a different way from the hallway, and a few tables over a boy called Owen is still working through the worksheet from the afternoon, folded small in his lap under the table, while Priya slows down with her tray long enough to see what he is doing before somebody calls her name and she keeps walking.
 
@@ -200,7 +200,7 @@ Chloe says yes.
 
 "I know she did," her mom says, looking at the doorframe instead of at Chloe. "I wrote it down."
 
-\---
+________________
 
 There's a fourth in Pluto who stays silent day after day, answering when he's called on, in as few words as he can, laughing at Sam, and otherwise silent.
 
@@ -230,7 +230,7 @@ Sam tries twice more to get back into it and loses the thread both times, with a
 
 So he stops trying, picks up his pencil, and starts drawing his own volcano in the margin instead, going on about it as though that were what he had meant to be doing all along.
 
-\---
+________________
 
 On the second Tuesday, Mr. Doyle says something about weight while he is drawing on the board, and Ruth's hand goes up, though she starts talking before it is noticed.
 

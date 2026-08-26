@@ -38,7 +38,7 @@ A different card is taped to the bench later that week with a different number o
 
 Kavi shakes his head. "Nah, it escalates every year, it always has."
 
----
+________________
 
 Self defense is three rounds an hour, with one person standing in the middle while the other ten come at them and a minute runs on the clock, after which the middle changes and it goes round until everybody has had their turn. Chloe holds fifty seconds on her third round on a Tuesday in February, and she is down on her back before the whistle finishes, somebody's knee still across her shin, laughing at the ceiling with both arms out.
 
@@ -190,7 +190,7 @@ Priya makes him stand against the door frame in the corridor and marks it in pen
 
 The forge stays where it has been, and she finishes a set of three hinges in November that have taken her Sundays of filing and fitting. Holding the last of them up to the window, she turns it with her thumb working along the seam where the two edges meet slightly off, then drops the lot in the scrap bin on her way past, while Pruitt, at the far bench, keeps talking with his back to her.
 
----
+________________
 
 Sam asks out a girl in the year below in October, and the table has an opinion on it inside a week.
 
@@ -208,7 +208,7 @@ Ruth takes it up with him directly on Friday, and Sam hears her out with his chi
 
 "You've both got the day wrong, and I was standing right there."
 
----
+________________
 
 Winter break, second night. Her mother is standing at the end of the table with a dish in both hands and Chloe is halfway through the story about Odile's scar.
 
