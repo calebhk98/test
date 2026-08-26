@@ -30,7 +30,7 @@ Two men are waiting on the far side of it in the darkness, close enough to the p
 
 Then he withdraws back into the pines, gets down behind a root ball with the rifle laid across it, and waits twenty minutes for something to happen. The nearer man shifts his weight from knee to knee, worth very little on its own, then repeats the adjustment half a minute afterward, making it a rhythm. Sam settles the front sight on the shape and stays with it through the third.
 
-Two rounds. The report goes out flat across the fallow ground, returns off the tree line a moment behind itself, and both harnesses out there arrive immediately at a steady tone. The men stand up out of the grass, because standing up is what the laminated card instructs, and one of them says something to the other that Sam is much too far away to hear.
+Two rounds. The report goes out flat across the fallow ground, returns off the tree line a moment behind itself, and both harnesses out there arrive immediately at a steady tone. The men stand up out of the grass, and one of them says something to the other that Sam is much too far away to hear.
 
 Crossing the wire a hundred metres down from where they were positioned, he picks his bearing up again and runs the whole business through once on the walk. It went fine. That is where he leaves it.
 
@@ -106,9 +106,9 @@ The opposing element goes first, because they were on the ground considerably lo
 
 "You went the whole exercise untouched," he tells the second, checking the overlay against his clipboard twice before he commits to saying it. "The opposing element apparently failed to locate your line of travel at any point in the whole exercise. That is only sometimes good news, so hold the compliment for later, because it might simply mean they had better things to do than come looking for you."
 
-The soldier stands there listening to his own good luck read out loud, and looks considerably more unsettled by it than a contact would have left him.
+The soldier stands there listening to his own good luck read out loud, but looks considerably more unsettled by it than a contact would have left him.
 
-Sam's turn comes third. Instead of calling him up to the front, which is what happened to the others, the major leaves him where he is and starts in on the clipboard without a glance across the room.
+Sam's turn comes third. Instead of calling him up to the front, the major leaves him where he is and starts in on the clipboard without a glance across the room.
 
 "Marsh. Fence line, first night, two engagements, both of them yours, at twenty metres, against an element holding the near side of the obstacle." He puts a check against it and moves down the sheet. "Night two is a safety incident, and we will do it as one."
 

@@ -10,7 +10,7 @@ Afterward, Sam catches her at the bottom of the stairwell with his collar open a
 
 "Which paper, the first day or the second?"
 
-"The second, the shed question, from the back half of the paper." As he walks backward in front of her, she steers him round the corner by the elbow. "I gave it fourteen pages, front and back, and I still had more to say when they called time on it."
+"The second, the shed question, from the back half of the paper." As he walks backward in front of her, she steers him round the corner by the elbow. "I gave it fourteen pages, front and back, but I still had more to say when they called time on it."
 
 "I gave it four pages."
 
@@ -86,7 +86,7 @@ In the second week of May she writes her first practice paper, at a table in the
 
 She writes the shed burning down fast, a paragraph, with a sentence in the middle that makes her jaw set while she is writing it, and Kavi gives her the marks. "There it is, all of it, right there on the page where somebody can actually see it."
 
-Between May and September she writes a stack of those, Kavi marking some and Nadia marking some, while she marks the rest herself with her own answer folded under the page; in May she stops early on about half of them, and by August the rate has come down and settles there, declining to improve.
+Between May and September she writes a stack of those, Kavi marking some and Nadia marking some, while she marks the rest herself with her own answer folded under the page. In May she stops early on about half of them, and by August the rate has come down and settles there, declining to improve.
 
 Kavi's marking fills the margin. Nadia marks by ruling a line down the side of a paragraph and writing *said nothing* beside it, and there is nothing else anywhere on the page. Chloe writes the paragraph again.
 

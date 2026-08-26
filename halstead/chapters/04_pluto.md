@@ -46,7 +46,7 @@ Walking to the room afterward Chloe gets a look at it: it is the sentence about 
 
 Her room has two beds, a window that opens a few inches and then stops, and a girl called Priya who is already there, already unpacked, with a book about horses face down open on her pillow.
 
-Chloe's own bag stays zipped on the other bed, exactly where it got put down that afternoon.
+But Chloe's own bag stays zipped on the other bed, exactly where it got put down that afternoon.
 
 Pushing the drawer shut with her knee and then leaning on it, Priya asks whether Chloe rides, then when Chloe asks ride what, says horses, then when Chloe says no, goes on anyway.
 
@@ -182,7 +182,7 @@ The name of it goes across the table, and he asks whether it is good, and Chloe 
 
 "You're agreeing at me," Sam says, and pushes his tray a couple of inches away.
 
-Chloe has a whole sentence about the lid ready, and she lets it go.
+Chloe has a whole sentence about the lid ready, but she lets it go.
 
 On the fourth night she gets as far as the phone and stands there with her hand on it, until a kid comes up behind her to ask if she is using it, so she says no, then goes back upstairs, where Priya is still awake.
 
@@ -206,7 +206,7 @@ There's a fourth in Pluto who stays silent day after day, answering when he's ca
 
 Chloe is on day six of it herself.
 
-On day seven Sam says something wrong about volcanoes, which is that the lava comes up because the mountain is hollow.
+On day seven Sam says something wrong about volcanoes: that the lava comes up because the mountain is hollow.
 
 "That's not how it works though," the boy says, and everybody looks at him, while across the room Owen is still copying the word off the board from earlier, head down over his own paper.
 

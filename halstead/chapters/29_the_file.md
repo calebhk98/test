@@ -44,7 +44,7 @@ Then there's the entry.
 
 Eight years ago. Four operators, over the fence at the loading side, a little before dawn.
 
-The report runs long, written by an operator who was there, and most of it is procedural, standard language he recognizes from a dozen other files: approach, entry, timing. The classification banner across the top of every page is the highest he's ever cleared for, and even at that level, three lines in the middle of the page are blacked out entirely, more than he's seen redacted from anything else in the box. What matters starts on page two.
+The report runs long, written by an operator who was there, and most of it is procedural, standard language he recognizes from a dozen other files: approach, entry, timing. The classification banner across the top of every page is the highest he's ever cleared for, but even at that level, three lines in the middle of the page are blacked out entirely, more than he's seen redacted from anything else in the box. What matters starts on page two.
 
 They were inside the first building for under two minutes. Somebody saw a child in a corridor, alone, in pyjamas, apparently confused and asking who they were.
 
@@ -66,7 +66,7 @@ ________________
 
 Theo sits back.
 
-He was twelve that year. The morning after is what he remembers, which is to say he remembers that there had been a drill overnight, and that four people had been on it and one of them was Chloe, and that everyone was annoyed about it because it was a school night and the alarm had caught them all flat-footed, and that by lunchtime the conversation had moved on to something else.
+He was twelve that year. The morning after is what he remembers: a drill overnight, four people on it and one of them Chloe, everyone annoyed about it because it was a school night and the alarm had caught them all flat-footed, and by lunchtime the conversation moved on to something else.
 
 He read the grade sheet on the board like everyone else, harsh, he'd thought at the time.
 
@@ -82,7 +82,7 @@ At his desk it's the job it is any other day: twenty pages reduced and sent up, 
 
 The second day he clears his queue faster than usual, the cables done by mid-morning, because working through something else keeps the loading-dock report from filling every part of his head at once. That second night is the night he always calls his grandmother, twenty minutes as always. "The ferry's back on the summer schedule," she tells him. "And the Hendersons have got a dog now, a little thing that barks at the mailman like it means it." He asks about the dog longer than the dog probably warrants, and neither of them brings up anything that happened at his desk that week.
 
-Then he does the only thing available to him, which is nothing, because every page of it is stamped classified, and the line between what he can say and what he can't is not his to redraw.
+Then he does the only thing available to him: nothing.
 
 Several versions of the question get typed before he sends any of it, each deleted and started over, because even the version that says the least is still a version that says something.
 

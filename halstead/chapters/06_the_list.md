@@ -6,7 +6,7 @@ The parent hotel has a breakfast room with waffles on paper plates, and every mo
 
 "We drove it, both ways, because there was no version of this where we put her on a bus," a man says, on his feet with a paper plate in one hand.
 
-"All of us drove, and the letter offered a bus."
+"All of us drove, but the letter offered a bus."
 
 "Somebody must have taken it, because a letter that lists transportation has somebody in mind."
 
@@ -38,7 +38,7 @@ Several of them answer at once: "They said they have a list."
 
 "Here it buys you a paper plate and a seat at this table," the first man says, and gets up on his own to find the coffee pot.
 
-While a father looks at his plate, a man at the end starts talking about the drive back, whether the north side is faster, how it depends on what time you leave, and others take that up, and by the time somebody's kid has come over needing something and been sorted out, half the table has gone.
+While a father looks at his plate, a man at the end starts talking about the drive back: whether the north side is faster, how it depends on what time you leave. Others take that up, and by the time somebody's kid has come over needing something and been sorted out, half the table has gone.
 
 Her dad puts more syrup on her waffle on his own, more than she'd have asked for, and Chloe eats it anyway while the syrup pools at the edge of the plate.
 
@@ -68,7 +68,7 @@ Then she starts on Spanish, rattling it off before she remembers he can't follow
 
 "And there was a puzzle, twenty sentences in a language none of us had ever heard of, and no dictionary, and you had to work out how the entire grammar went from the sentences themselves. Ruth got the plurals before I did. Kavi got the pattern in the endings. That part is still half out of my reach. He has explained it and explained it. He'd explain it to you right now, only he isn't sitting here and I am."
 
-Then the wood shop, and the safety goggles sized for somebody bigger. Then what you do about a bleed, which is pressure first and the dressing second, and the glue they use on a cut too small to need stitches. Then the eggs she learned to cook, and the dish on the Thursday that the whole table ate, which had onions in it that she cut herself, and then the paintings they were taken to look at, one of which cost more than a house, which baffles her, because it is a painting.
+Then the wood shop, and the safety goggles sized for somebody bigger. Then what you do about a bleed: pressure first, the dressing second. Then the glue they use on a cut too small to need stitches. Then the eggs she learned to cook, and the dish on the Thursday that the whole table ate, which had onions in it that she cut herself, and then the paintings they were taken to look at, one of which cost more than a house, which baffles her, because it is a painting.
 
 "Then there's the computers, and that's actually two entirely different things," she says, counting them off on her fingers, "the first being that you type the words in yourself instead of dragging coloured blocks around like it's a game, and I made it count to a hundred and skip every seven on the way past. The second is a room they took us into. It's enormous and they keep it freezing cold on purpose. The machines throw off so much heat the heat would cook them. And a woman who works in there took us through the whole arrangement, down to the water pipes under the floor."
 
@@ -78,7 +78,7 @@ Then chess, which Sam is also better at.
 
 Then negative numbers, which go the other way past zero and keep going as far as you want them to.
 
-Then karate, which is mostly learning how to fall over safely.
+Then karate: mostly learning how to fall over safely.
 
 Then the nerf guns at the end, which arrive out of order because she has only just remembered them.
 
@@ -194,7 +194,7 @@ Ruth picks the knot out of one shoelace with both thumbs instead of answering hi
 
 For a second the only sound in the hall is a door somewhere down the next section, clicking shut.
 
-Chloe runs the numbers again, the ones she has been running since the drive down: four hours in the car each way, a whole day of driving to put her somewhere and a whole day to collect her at the end of it, twice over in a year, before anybody counts a visit in between, and her mom at the counter with her hand flat on her forehead, and the woman at the district office telling her to be careful.
+Chloe runs the numbers again, the ones she has been running since the drive down: four hours in the car each way, a whole day of driving to put her somewhere, a whole day to collect her at the end of it, twice over in a year, before anybody counts a visit in between, and her mom at the counter with her hand flat on her forehead, and the woman at the district office telling her to be careful.
 
 "Chloe," Sam says, "obviously."
 
@@ -206,7 +206,7 @@ She is awake long before anybody comes to get her, dressed and sitting on the en
 
 Her dad carries her bag down and puts it in the trunk with the strap hanging out, so that he has to open it again.
 
-Priya hugs her hard enough that it takes a second to get loose, then goes back into the room for her own bag and comes out again with her chin working, because the hair tie that was on her wrist a moment ago has gone, and she turns her sleeve inside out to check it twice while her mother tells her it's fine and she says it isn't. Chloe pulls the tie off her own wrist and holds it out.
+Priya hugs her hard enough that it takes a second to get loose, then goes back into the room for her own bag and comes out again with her chin working, because the hair tie that was on her wrist a moment ago has gone. She turns her sleeve inside out to check it twice while her mother tells her it's fine and she says it isn't. Chloe pulls the tie off her own wrist and holds it out.
 
 When Sam says see you at the thing in the fall, Ruth tells him it's only a form so far and his parents have to send it in, at which point Sam says it again, word for word.
 

@@ -6,13 +6,13 @@ The envelope has her name on it.
 
 Miss Chloe Kessler.
 
-Every piece of mail that has ever come for Chloe came inside something addressed to her parents, like the Christmas card from her grandmother with a card for Chloe folded in it, whereas this one says her, with a Miss in front and the address underneath it, all of it typed.
+Every piece of mail that has ever come for Chloe came inside something addressed to her parents, like the Christmas card from her grandmother with a card for Chloe folded in it, but this one says her, with a Miss in front and the address underneath it, all of it typed.
 
 She stands at the mailbox with the rest of the mail held against her chest, opening it there, badly, so the flap tears down into the paper, and it is one page, reading like a letter written for an adult, about a school called Halstead with a summer session at it, four weeks long, starting the second week of July.
 
 You sleep there, transportation provided, room and board included, at no cost, which it says twice, in different ways, and families may visit whenever they like, for as long as they like, since there is a hotel half a mile from the campus with rooms held for them, free as well.
 
-At the bottom there's a phone number, a name, and a signature over the name in real ink that has gone through onto the back, so that what it comes down to is a place you go for a month in the summer, where you sleep in a building with other children, at no charge at all, and where somebody has typed her name on the front of the envelope.
+At the bottom there's a phone number, a name, and a signature over the name in real ink that has gone through onto the back.
 
 After reading it again and again in the driveway, with the rest of the mail going warm against her arm, Chloe puts the mail on the counter, takes the letter up to her room, and brings it back down at dinner.
 
@@ -40,7 +40,7 @@ Her mom reads it, then reads it again, her eyes going back to one spot on the pa
 
 Her mom takes it back and looks at the back of it, finding only the ink from the signature that has come through, then turns it the right way round again for a fourth read of the top part.
 
-"It's free, the whole month, food, a bed, a bus, all of it, and things are not free. Not for a month, and not with a bus in it."
+"It's free, the whole month, food, a bed, a bus, all of it, but things are not free. Not for a month, and not with a bus in it."
 
 "Sometimes they are, if somebody's got the money and wants to give it away for no reason at all."
 
@@ -50,7 +50,7 @@ Her dad has the letter turned round to his side of the table again. "Sometimes s
 
 "To us, though, it actually happens to us?"
 
-The free part is the part Chloe can't place, since her mom says things cost too much about once a week, standing in a store with something in her hand, or at this table with an envelope open in front of her, whereas this one is free.
+The free part is the part Chloe can't place, since her mom says things cost too much about once a week, standing in a store with something in her hand, or at this table with an envelope open in front of her, but this one is free.
 
 Chloe pushes her fork through her food and waits for somebody to get to that part, but the letter has both of them, so she comes up onto her knees on the chair to see it the right way round.
 
@@ -62,7 +62,7 @@ Chloe asks once more on the Sunday and then forgets to ask again for days, becau
 
 ________________
 
-Her mom calls the district office on Monday, where a receptionist takes the name down and says she'll look into it, and though Tuesday and Wednesday go quiet, the callback comes Thursday afternoon, by which time Chloe is on the stairs, on the step where the carpet stops and the wood goes cold under her, because that is the step where you can hear the kitchen.
+Her mom calls the district office on Monday, where a receptionist takes the name down and says she'll look into it. Tuesday and Wednesday go quiet, but the callback comes Thursday afternoon. By then Chloe is on the stairs, on the step where the carpet stops and the wood goes cold under her.
 
 Her mom spells it twice, H-A-L, Halstead, like it sounds, and then a long stretch where the only voice in the kitchen is the other. "Nothing at all, not a charter, not a private, not a partner?" Another stretch, shorter than the first. "Okay, thank you, and I do appreciate it, because I know it's not your job to go looking."
 
@@ -146,11 +146,11 @@ Then he finds the page about what a Tuesday looks like, hour by hour, doing all 
 
 Then he clicks the page with the teachers on it, where there is a photograph of each of them with a paragraph underneath about what that person did before they came here, and he stops doing the voice, reading a whole paragraph start to finish, then going back up to click another, and when Chloe asks him what, he tells her it's fine, then goes down the list in order, all the way to the bottom of it, before going back up to start again from the first, slower this time.
 
-Chloe waits a while for him to keep talking, then gets her book and reads at the table next to him, and he stays fixed on the screen the whole time she is gone.
+Chloe waits a while for him to keep talking, then gets her book and reads at the table next to him, but he stays fixed on the screen the whole time she is gone.
 
 Her mom does her own looking on the Sunday, on the laptop, with the door shut, typing the name in and getting the website, then getting it again from a different direction.
 
-Searches from every direction she can think of turn up the school's own website and then stop: no news coverage, no parent forum mention, no listed address, no photograph but theirs, and not one person anywhere who has been there and said a word about it afterward.
+Searches from every direction she can think of turn up the school's own website, then stop: no news coverage, no parent forum mention, no listed address, no photograph but theirs, and not one person anywhere who has been there to say a word about it afterward.
 
 For a school that has put over a hundred children through a summer and done it again every year since, that is the whole of what she finds, and she says so at the table that night with the laptop still open.
 
@@ -178,7 +178,7 @@ Behind her the bills are clipped to the refrigerator in a stack thick enough to 
 
 It takes them nine days, her mom's position being that it is that far away, the invitation showed up unsolicited, somebody is paying for it, and she wants to know who before anybody gets in a car.
 
-Her dad's position is that all of that is true and she should go anyway, and they have some version of that argument on the fourth day, the sixth day and the eighth, until on the sixth day, standing at the counter with the mail still in her hand, her mom says the words a building I have yet to see.
+Her dad's position is that all of that is true and she should go anyway. They have some version of that argument on the fourth day, the sixth day, and the eighth, until on the sixth day, standing at the counter with the mail still in her hand, her mom says the words a building I have yet to see.
 
 "You already know what you're going to say," her dad says, and sets his coffee down, untouched.
 
@@ -196,7 +196,7 @@ Her mom waits for the rest of it.
 
 Her mom sits there with her hands in her lap and her thumbs going, then pats the bed twice, gets up, and goes out, leaving the door open a few inches behind her.
 
-On the ninth night Chloe is supposed to be asleep, having already been sent back once, but comes out a second time in her socks, skipping the fourth stair, which is the stair that gives her away.
+On the ninth night Chloe is supposed to be asleep, having already been sent back once, but comes out a second time in her socks, skipping the fourth stair.
 
 "She's been flat since Christmas, and you've seen it, because she comes home and she says it was good."
 
@@ -204,7 +204,7 @@ On the ninth night Chloe is supposed to be asleep, having already been sent back
 
 "Not like that. That's a kid gone quiet, and you know the difference as well as I do. She used to come in the door talking."
 
-A minute goes by before her mom says something too quiet to make out from the top of the stairs, her dad says he knows, twice, and somebody starts the dishwasher, at which Chloe goes back up the rest of the stairs on her hands and knees, to keep the boards quiet, and gets into bed with her socks still on.
+A minute goes by before her mom says something too quiet to make out from the top of the stairs, her dad says he knows, twice, and somebody starts the dishwasher. At that, Chloe goes back up the rest of the stairs on her hands and knees, to keep the boards quiet, and gets into bed with her socks still on.
 
 ________________
 
@@ -232,9 +232,9 @@ They pack the night before, the whole family, in the living room with everything
 
 Her dad does the train station voice for the packing list, announcing socks, announcing the toothbrush, announcing the second pair of shoes, and Chloe laughs at the shoes hard enough that she has to lie down on the carpet, so he does it again to get it again, until her mom tells them both to stop, then asks him to do the shoes one more time.
 
-Chloe gets to stay up late, the whole evening spent on socks and the shoe joke, with the school and the list and who is paying for it left for some other night.
+Chloe gets to stay up late, the whole evening spent on socks and the shoe joke, with the school, the list, and who is paying for it left for some other night.
 
-They drive her the next day, with a stop at the halfway point that stretches to most of an hour, because everybody wants the day longer, and Chloe reads for the first hour and a half, watches the trees turn into different trees for twenty minutes, then reads again, while her mom asks her twice whether she's sure, once out loud and once by asking whether she remembered her toothbrush in a certain way.
+They drive her the next day, with a stop at the halfway point that stretches to most of an hour, because everybody wants the day longer. Chloe reads for the first hour and a half, watches the trees turn into different trees for twenty minutes, then reads again, while her mom asks her twice whether she's sure, once out loud and once by asking whether she remembered her toothbrush in a certain way.
 
 Her mom stays at the parent hotel for the first few days, being due back at work on the Monday, and stays until she has seen the room, the food, the nurse, and the front desk at midnight to find out who is on it.
 

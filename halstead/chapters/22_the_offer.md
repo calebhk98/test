@@ -10,7 +10,7 @@ What changes is dinner, because by the end of the first week the interviews have
 
 Iyad has the next day's running order in his head before the sheet is taped up, and gives it to the table by name, in order, down the whole list, while the plates are still going round. Then he goes round the ones who have already been in and asks how it went, and whether they have told anybody at home yet. In the morning the roster goes up outside the staff office and every name is where he put it.
 
-Chloe's own slot falls on the Wednesday of the second week, third appointment after lunch, in a corridor where chairs have been lined against the wall outside his office for the duration. The corridor smells like the coffee cart set up near the stairwell every April, and the runner's shoes squeak on the steps of tile outside the door, morning after morning. Early, she gets there and finds most of the seats already taken: a boy re-reading a page of a textbook, the words plainly sliding past him each time, and a girl sitting perfectly still with her hands in her lap, staring at the closed door like she's already rehearsed what's behind it, both of them waiting on slots later than hers, and both of them in the chairs a good half hour before their names come up. The wall behind the chairs carries a rail at chair height so the chairs cannot reach the plaster, and she has been walking past it since she was small.
+Chloe's own slot falls on the Wednesday of the second week, third appointment after lunch, in a corridor where chairs have been lined against the wall outside his office for the duration. The corridor smells like the coffee cart set up near the stairwell every April, and the runner's shoes squeak on the steps of tile outside the door, morning after morning. Early, she gets there and finds most of the seats already taken: a boy re-reading a page of a textbook, the words plainly sliding past him each time, and a girl sitting perfectly still with her hands in her lap, staring at the closed door like she's already rehearsed what's behind it, both of them waiting on slots later than hers, and both of them in the chairs a good half hour before their names come up. The wall behind the chairs carries a rail at chair height, and she has been walking past it since she was small.
 
 A seat empties while she watches, when a boy she half-recognizes from the year above goes in on the dot, a laptop bag still over his shoulder like he's walking into a meeting rather than an office, and is back out before she's finished reading the noticeboard behind the chairs.
 
@@ -86,7 +86,7 @@ The next question comes at the page rather than at her. "How many applications."
 
 "And the three that were people."
 
-"Two said no. The third called me because I pasted the listing's own sentences back into the box, which worked, and I'd rather it hadn't."
+"Two said no. The third called me because I pasted the listing's own sentences back into the box, which worked, but I'd rather it hadn't."
 
 "So September."
 

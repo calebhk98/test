@@ -76,7 +76,7 @@ ________________
 
 That evening, before anyone's driven off, or signed anything, they are all still on a single patch of grass at once, in gowns still on from the ceremony. Someone has found a speaker from somewhere. Sam and Kavi are a few moves into a card game neither of them has won all year, and Sam is losing again. Ruth is already on her third phone call about a dorm assignment. Iyad has been arranging them by height for a good while by then, going down the line by name and moving people a half step at a time and then back again. Theo gets the photograph while he is still doing it, so what is in it is Iyad's arm out and half of them looking the wrong way. Chloe counts the heads in it before she's decided to: all of them, still in it.
 
-Sam joins the Army, having been the best fighter in his year since he was ten by a margin wide enough that the field stopped contesting it by the time he was in his teens, and in July, at a recruiting office off the highway outside Pittsburgh, he signs the papers at drill speed: fast, on the first read. The office smells like carpet cleaner and stale coffee, a flag in the corner leaning slightly off true. The recruiter slides five separate forms across the desk and starts explaining what each means. Sam is already signing the first before the man finishes the sentence, but he reads the fifth form properly, twice, because it's the one about pay grade and he wants the actual number. He'd already pulled the deployment rotation numbers off the recruiter's own site in May, better numbers than the desk copy, so that column is settled before he sits down.
+Sam joins the Army, having been the best fighter in his year since he was ten, and in July, at a recruiting office off the highway outside Pittsburgh, he signs the papers at drill speed: fast, on the first read. The office smells like carpet cleaner and stale coffee, a flag in the corner leaning slightly off true. The recruiter slides five separate forms across the desk and starts explaining what each means. Sam is already signing the first before the man finishes the sentence, but he reads the fifth form properly, twice, because it's the one about pay grade and he wants the actual number. He'd already pulled the deployment rotation numbers off the recruiter's own site in May, better numbers than the desk copy, so that column is settled before he sits down.
 
 "Why us and not the Marines," the recruiter asks, more out of habit than curiosity; he's heard every version of the answer there is by now.
 
@@ -134,7 +134,7 @@ His eyes go to the ledger, then to the shop. "Four applications a week until the
 
 "Three, they go in the book where you can count them, and the subject stays off the counter on a Sunday."
 
-He puts his hand out across the counter, the way he closes with a supplier and has never once closed with his daughter, and she shakes it.
+He puts his hand out across the counter, the way he closes with a supplier, and she shakes it.
 
 "I got up at five for months to fill those in," she says, still holding on. "I'd like to stop doing that."
 

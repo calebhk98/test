@@ -18,9 +18,9 @@ Chloe turns a page she stopped reading a while back, her thumb keeping a place s
 
 ________________
 
-There are thirty subtraction problems on the worksheet and all thirty are one problem, which she works out partway through the second, eight minus three, so the rest are that again with different numbers.
+There are thirty subtraction problems on the worksheet and all thirty are one problem, which she works out partway through the second, eight minus three.
 
-Because the pattern is already found, she writes the answer and then sits with the pencil motionless, since what is left is doing it over and over while the classroom clock holds where it is.
+Because the pattern is already found, she writes the answer and then sits with the pencil motionless. The classroom clock holds where it is.
 
 Mrs. Aldana waits for everybody to finish before moving on, and somebody is invariably still going, so Bryce Dolan is still counting on his fingers long after Chloe stops watching him.
 
@@ -184,7 +184,7 @@ Her dad says huh and puts his eyes back on the road, and the heater ticks the re
 
 ________________
 
-There is a pencil line on the wall beside the scale with a date written under it, and this year Chloe stands above last year's mark by a visible amount, which is the part of the December checkup she likes.
+There is a pencil line on the wall beside the scale with a date written under it, and this year Chloe stands above last year's mark by a visible amount.
 
 The doctor looks in her ears and down her throat, then has her follow his finger with her eyes only, which she is good at.
 
@@ -192,7 +192,7 @@ Then her mom says she has been having a hard time at school. He rolls his chair 
 
 "Do you get in trouble at school?"
 
-"Sometimes, not really on purpose." He waits, which is new, because the adults she is used to fill the gap themselves, so she adds, "Not a lot, like once a week, for not paying attention."
+"Sometimes, not really on purpose." He waits. She adds, "Not a lot, like once a week, for not paying attention."
 
 "Do you finish your work?"
 
@@ -234,7 +234,7 @@ Her cousin Dana, who is nineteen, sits next to her and asks how school is.
 
 "Some of them. I liked the one with the horse getting sold twice and a bad owner in the middle part. The library only lets you have so many at a time. And the horse ones are all shelved together. So I run out fast."
 
-Dana says nice, then turns to talk to somebody else, which is the whole conversation.
+Dana says nice, then turns to talk to somebody else.
 
 The chair is too big for her at the grown-up table, so her heels swing free while she eats her potatoes and her dad, down at the far end, keeps his attention on his plate.
 

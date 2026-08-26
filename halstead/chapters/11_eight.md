@@ -2,7 +2,7 @@
 
 *June 2013 – June 2014*
 
-Her mother has kept the room the way it was, down to the sock on the radiator, and the bike is still in the garage under a sheet, so Chloe gets it out on the second day and rides to the end of the road and back, her knees coming up past the handlebars on every stroke. Her mother watches from the porch with a coffee. "We'll get you a bigger one, because that's not fitting you again even by September."
+Her mother has kept the room the way it was, down to the sock on the radiator, and the bike is still in the garage under a sheet. Chloe gets it out on the second day and rides to the end of the road and back, her knees coming up past the handlebars on every stroke. Her mother watches from the porch with a coffee. "We'll get you a bigger one, because that's not fitting you again even by September."
 
 "It's fine, because my feet still reach if I stretch, and stretching's basically the same as reaching."
 
@@ -10,7 +10,7 @@ Her mother has kept the room the way it was, down to the sock on the radiator, a
 
 On the Saturday the bike place has a rack of them out on the pavement beside the tire shop, and Chloe takes the tallest one on it.
 
-She talks the entire summer, coming downstairs already talking most mornings about whatever she was thinking upstairs, with opinions about the news off the paper on the kitchen table, interrupting constantly, apologizing, then doing it again inside a minute. There is singing in the shower now, badly and at volume, and she makes jokes at dinner, some of them bad, and on the nights her father laughs she keeps going.
+She talks the entire summer, coming downstairs already talking most mornings about whatever she was thinking upstairs, with opinions about the news off the paper on the kitchen table, interrupting constantly, apologizing, then doing it again inside a minute. There is singing in the shower now, badly and at volume. She makes jokes at dinner, some of them bad, and on the nights her father laughs she keeps going.
 
 On the fourth of July she starts an argument with her father about whether a hot dog is a sandwich.
 
@@ -86,7 +86,7 @@ Her mother turns the tap on, then off again, the sink empty under it. "Curfew, t
 
 She has been looking at the window over the sink since she came in from the hall. "Obviously I won, I'm the one who picks the number. Dave, she has never fought me, not once, not about anything, not in her whole life."
 
-Her grandmother comes on a Sunday, and in the front room Chloe is explaining the bridge from camp with both hands and the coffee table before going for water, while her grandfather sits back, quiet, and the kitchen door stands open.
+Her grandmother comes on a Sunday. In the front room Chloe is explaining the bridge from camp with both hands and the coffee table before going for water, while her grandfather sits back, quiet, and the kitchen door stands open.
 
 Her grandmother says, "She's put on weight since I saw her, and I mean that as a good thing, not a complaint."
 
@@ -96,7 +96,7 @@ Her grandmother says, "She's put on weight since I saw her, and I mean that as a
 
 "I know," her mother says, keeping her voice down to match, because the door is open and Chloe is close enough to hear every word.
 
-Chloe stands against the wall by the door with the glass in both hands and tugs her shirt loose from her shorts once, then lets it go, and goes back through and finishes about the bridge, which came second in the room. At dinner she eats half of what is on her plate and lays the fork down across the rest of it.
+Chloe stands against the wall by the door with the glass in both hands and tugs her shirt loose from her shorts once, then lets it go, goes back through, and finishes about the bridge, which came second in the room. At dinner she eats half of what is on her plate and lays the fork down across the rest of it.
 
 "I've had enough."
 
@@ -122,7 +122,7 @@ The teacher is stacking chairs along the back wall. "It carries on being yours, 
 
 Chloe turns that over for a day and a half, then starts reading in Spanish in the hour before dinner, twenty minutes at a time, off the Spanish shelves that run the length of the north wall upstairs and turn the corner, stacked deep in places, with a rack of newspapers from half of Europe underneath. A novel about a lighthouse takes her a week, and she understands most of it, and inside a month Ruth is doing it in Portuguese, badly, for reasons Ruth will state only as "it's the vowels."
 
-The day is longer now, and longer again after Christmas, with mathematics, writing, literature and political history carrying over and French and logic new, logic being an hour of being shown a sentence and asked what it is actually claiming, which she can do from the first week. On the phone she tells her mother it's like taking a lid off.
+The day is longer now, and longer again after Christmas: mathematics, writing, literature, and political history carrying over, French and logic new. Logic is an hour of being shown a sentence and asked what it is actually claiming, which she can do from the first week. On the phone she tells her mother it's like taking a lid off.
 
 Politics runs from the first week to the end of the year with no exam at the end of it, while you learn the leaders of every country that matters, then their spouses, their children, their in-laws, where the money comes from and who they owe, and then you update all of it every week, in pencil, on a wall already covered.
 
@@ -136,7 +136,7 @@ Nerf is eight.
 
 The gym is cold for the first twenty minutes of any hour in it. Then it isn't. The floor carries the lines of every sport they play in there, in different colours over each other, and a dart that misses skids most of the way to the wall.
 
-You start on paper targets, which is boring for a while, then a target somebody swings across the gym on a rope, which holds her attention every time it swings. Then a foam disc thrown flat and fast, which is hard, and then easy, and the day it turns over goes past like any other Monday, and the week after Coach Bell puts a net down the middle of the floor and lines them up either side.
+You start on paper targets for a while, then a target somebody swings across the gym on a rope, and she watches it swing every time. Then a foam disc thrown flat and fast: hard at first, then easy. The day it turns over goes past like any other Monday, and the week after Coach Bell puts a net down the middle of the floor and lines them up either side.
 
 "Both sides load up, and you're not shooting at each other, you're shooting at what they shoot at you. If your dart gets knocked down before it crosses the net, you're out and you sit on the line, and the last side with anybody standing wins the hour. Nothing comes back off the floor, so what's in your hand is what you've got."
 
@@ -150,9 +150,9 @@ The afternoon block is a different thing on each day of the week, Nerf on Monday
 
 In wood shop you make a tool and then use that tool to make the next one, while the man who runs it will tell you what is wrong with a tool and then walk away while you work out what to do about it. Chloe makes a mallet with a handle that comes out slightly oval, and she uses it for weeks before the oval catches her eye, after which it is there every time she picks it up, and is still using it in June.
 
-Team sports is where the teams are assigned, and she gets a team with two people on it she has already decided against, and she plays out September and October on it.
+Team sports is where the teams are assigned, and she gets a team with two people on it she has already decided against. She plays out September and October on it.
 
-Drawing is Thursdays, and in the second term, while they spend the term on hands, Chloe draws her own left hand forty times, in pencil, from a fixed angle, on cheap paper, and the fortieth looks like a hand, down to the knuckle of the little finger sitting lower than it ought to, and Ruth picks it up off the table on her way past.
+Drawing is Thursdays, and in the second term, while they spend the term on hands, Chloe draws her own left hand forty times, in pencil, from a fixed angle, on cheap paper. The fortieth looks like a hand, down to the knuckle of the little finger sitting lower than it ought to, and Ruth picks it up off the table on her way past.
 
 "That's a hand. That's an actual hand. Since when do you draw like that?"
 
@@ -160,7 +160,7 @@ Drawing is Thursdays, and in the second term, while they spend the term on hands
 
 "No, I mean that's a hand, Chloe, and the thumb's even the right size this time. Last term you were drawing mittens." Ruth puts it back down and carries on to the door.
 
-At the end of term the sheet goes up on the wall with everybody on it in order, and Chloe is ninetieth of ninety, which she reads twice before going to dinner. Dance is Fridays, and she is ninetieth in that too, off the same wall that week, but that one she reads once and leaves, because with drawing she found out at the end of term, whereas with dance she can feel it while it is happening, half a beat behind the girl in front of her for fifty minutes, and in February she takes it to the office.
+At the end of term the sheet goes up on the wall with everybody on it in order, and Chloe is ninetieth of ninety, which she reads twice before going to dinner. Dance is Fridays, and she is ninetieth in that too, off the same wall that week, but that one she reads once and leaves. With drawing she found out at the end of term, whereas with dance she can feel it while it is happening, half a beat behind the girl in front of her for fifty minutes, and in February she takes it to the office.
 
 A boy comes out of it ahead of her with the door swinging behind him, and behind the desk is Mrs. Okonkwo, who walked her and her parents around this building in the rain the April before she started, with the block sheets laid out in front of her.
 
@@ -200,9 +200,9 @@ Her name goes on the choir line, because she sang in the shower every day of the
 
 "Stand next to Amara and match her, because she's doing the thing I keep asking you for and can't tell you how either."
 
-Chloe stands next to Amara for three weeks and matches her about a third of the time, but the matching is a different job from the thing she came in for, and what she liked was being loud in a small tiled room, alone, so in the sixth week she stops going and takes the hour in the pool, and sings in the shower afterward, where she was doing it to begin with.
+Chloe stands next to Amara for three weeks and matches her about a third of the time, but the matching is a different job from the thing she came in for. What she liked was being loud in a small tiled room, alone, so in the sixth week she stops going and takes the hour in the pool, and sings in the shower afterward, where she was doing it to begin with.
 
-On a Tuesday in April Sam, Kavi, Ruth and Chloe end up on the grass behind the science building for about an hour, because Sam sat down and then Kavi did, and Sam has a shopping bag of apples he says only were going spare, which they spend the hour throwing at a drainpipe thirty feet away, where the brick is a shade darker either side of it from the run of the rain. A hit makes the pipe ring.
+On a Tuesday in April Sam, Kavi, Ruth and Chloe end up on the grass behind the science building for about an hour, because Sam sat down and then Kavi did, and Sam has a shopping bag of apples he says only were going spare, which they spend the hour throwing at a drainpipe thirty feet away, where the brick is a shade darker either side of it. A hit makes the pipe ring.
 
 "Below the bracket counts for zero, we decided that an hour ago and you know it."
 
@@ -210,6 +210,6 @@ On a Tuesday in April Sam, Kavi, Ruth and Chloe end up on the grass behind the s
 
 Kavi says, "It's been the rule for ninety seconds, and it came in at exactly the moment Ruth stopped hitting above it."
 
-Ruth gets six in a row above the bracket and is insufferable about it until dinner, while Sam eats two of the apples and takes the bag back to his room, where it stays under the bed until the middle of May, at which point people on the corridor make it his problem, and the bracket rule survives into the summer and gets applied to a stairwell, a laundry chute, and one of the goals on the field.
+Ruth gets six in a row above the bracket and is insufferable about it until dinner. Sam eats two of the apples and takes the bag back to his room, where it stays under the bed until the middle of May, at which point people on the corridor make it his problem. The bracket rule survives into the summer and gets applied to a stairwell, a laundry chute, and one of the goals on the field.
 
 In June Chloe pulls out the notebook with the four subjects she was behind in, back in April. In three of them she is reading ahead, and the dates in the margins say she has been since about Christmas. She reads the line back twice before adding a new line at the bottom with the date, then puts the notebook in the drawer and goes down to dinner two steps at a time.

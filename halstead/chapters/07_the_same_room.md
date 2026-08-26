@@ -48,7 +48,7 @@ Her mom's hand comes off the phone book and rests on top of Chloe's head for a s
 
 Her mom's eyes come up. "It's OK, the last names can go, because we can just ask the school instead," and she closes the phone book and gets the camp folder down off the shelf by the door.
 
-Somebody at the school picks up on the second ring, and Chloe gets close, straining to hear, while her mom gives their name, then Chloe's, confirms yes, that's her, and settles into a long stretch of listening, her weight going onto one foot and then the other.
+Somebody at the school picks up on the second ring, and Chloe gets close, straining to hear. Her mom gives their name, then Chloe's, confirms yes, that's her, and settles into a long stretch of listening, her weight going onto one foot and then the other.
 
 "Right, no, I understand that," she says, and listens again. "What I'm asking instead is whether it can go the other way, so that if I give you our number you can pass it along to them, and then it is entirely up to those families whether they do anything with it."
 
@@ -60,7 +60,7 @@ ________________
 
 Chloe waits for the phone, day after day.
 
-Instead of her room, she takes her book down and reads it in the kitchen, in the chair that puts the phone in her sightline, and she is up and across the floor before the first ring finishes if she is anywhere near it. Twice she gets it on the second ring, and once on the first, and it is her grandmother, and a man asking for her dad, and a woman who wants to know whether her dad is the registered owner of the vehicle. Each time she says the call is for somebody else and hands it over, then sits back down with the book open where it was before, and on the ninth day her mom tells her that these things can take weeks.
+Instead of her room, she takes her book down and reads it in the kitchen, in the chair that puts the phone in her sightline. She is up and across the floor before the first ring finishes if she is anywhere near it. Twice she gets it on the second ring, once on the first: her grandmother, a man asking for her dad, a woman who wants to know whether her dad is the registered owner of the vehicle. Each time she says the call is for somebody else and hands it over, then sits back down with the book open where it was before, and on the ninth day her mom tells her that these things can take weeks.
 
 "How many weeks, though? I want an actual number," Chloe says, standing at the counter with the book still open against her chest.
 
@@ -108,9 +108,9 @@ Second grade is Ms. Vance, who everybody says is the nice one, and the desks are
 
 Somebody asks whether you can swap groups, and Ms. Vance says no in a way that has clearly been asked for before, so Chloe's group stays Bryce Dolan, Kayleigh Burns and a boy called Aiden R.
 
-The first math sheet comes around midmorning, and she squints at it before she can tell that it's adding with carrying, which she learned last year and can still picture: the little box that you write the one in, and Mrs. Aldana drawing that box in green marker, thirty of them on the page.
+The first math sheet comes around midmorning. She squints at it before she can tell that it's adding with carrying, which she learned last year and can still picture: the little box that you write the one in, and Mrs. Aldana drawing that box in green marker, thirty of them on the page.
 
-Fractions at camp, staying up until the number finally sat still on the page, and now this, math from last year again. Having done all thirty she goes back to the top and checks them all over, and every answer matches what she wrote the first time, so she puts her hands in her lap and waits for the room to catch up around her. She is relieved to find it still works like it worked in first grade.
+Fractions at camp, staying up until the number finally sat still on the page, and now this, math from last year again. Having done all thirty she goes back to the top and checks them all over. Every answer matches what she wrote the first time, so she puts her hands in her lap and waits for the room to catch up around her. She is relieved to find it still works like it worked in first grade.
 
 ________________
 
@@ -138,13 +138,13 @@ Chloe's hand comes down over what she has already written, the whole page gone u
 
 "Yeah," Bryce says, and turns back around.
 
-Her hand stays where it is for the rest of the period, and when Ms. Vance calls time she scratches out the lines underneath it until the pencil almost goes through the paper, then, while Ms. Vance is over at the cabinet with the tape and looking up for none of it, writes I hope you like fifth grade instead, folds it in half twice, and puts it in the box.
+Her hand stays where it is for the rest of the period. When Ms. Vance calls time she scratches out the lines underneath it until the pencil almost goes through the paper, then, while Ms. Vance is over at the cabinet with the tape and looking up for none of it, writes I hope you like fifth grade instead, folds it in half twice, and puts it in the box.
 
 ________________
 
 Having taken the third library book to bed on the Monday, she gets a page and a half in, reads the same sentence twice, and starts the page over with no memory of what it said the first time.
 
-On the Tuesday she opens it where she stopped, reads the top of the page, reads it again, gives up and puts it down on the floor, and on the Wednesday she leaves it there, and all of them are due on the Thursday, and she has finished two.
+On the Tuesday she opens it where she stopped, reads the top of the page, reads it again, gives up, and puts it down on the floor. On the Wednesday she leaves it there. All of them are due on the Thursday, and she has finished two.
 
 Her mom drives her to the library on Thursday and waits in the car with the engine running, so Chloe carries the finished ones up to the desk by herself, walking fast past the shelves, and comes back out to the car with the others, the ones she had left off, still in her bag.
 
@@ -198,7 +198,7 @@ ________________
 
 In the first week of October, Chloe puts her head down on her desk in the middle of the morning and, for a reason she could not give if anybody asked her for one, cries with her face in her arms.
 
-The crying is loud enough that chairs scrape all along the row as everybody turns to look, and somebody near the back says, too loud, "Is she OK?", which brings Ms. Vance down the row to crouch all the way down beside the desk, in front of everybody, and put a hand between Chloe's shoulder blades and leave it there.
+The crying is loud enough that chairs scrape all along the row as everybody turns to look, and somebody near the back says, too loud, "Is she OK?" That brings Ms. Vance down the row to crouch all the way down beside the desk, in front of everybody, and put a hand between Chloe's shoulder blades and leave it there.
 
 "Hey, hey, hey, what's going on down here, because you're all right, so just talk to me."
 

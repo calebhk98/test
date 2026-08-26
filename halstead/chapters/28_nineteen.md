@@ -2,7 +2,7 @@
 
 *September 2024 – April 2025*
 
-Chloe gets a job at a company that translates documents for businesses: contracts, manuals, safety sheets, the kind of paperwork that has to say the same thing in several languages and cannot afford to say it almost. It is steady and slow, and the building holds fifty-odd people, which makes it the first room she has spent a working day in that is full of people unlike her.
+Chloe gets a job at a company that translates documents for businesses: contracts, manuals, safety sheets, the kind of paperwork that has to say the same thing in several languages and cannot afford to say it almost. It is steady and slow, and the building holds fifty-odd people.
 
 There's a birthday calendar taped inside a supply cabinet with everyone's name on it, and whoever's day it is gets a card signed in the break room over the course of the morning, in pen, by whoever passes through. Deb runs it and has for years, buying the cake herself out of a small fund she keeps in a coffee tin in her bottom drawer. Chloe's own name goes on the calendar unasked, the week she starts, taken off the date on a form rather than anything Chloe told her.
 

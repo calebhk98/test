@@ -44,7 +44,7 @@ Her mother is down on the floor with her by then, in the gap, with both arms rou
 
 "Do what, because you have to tell me what it is and then I'll fix it, whatever it is."
 
-Chloe can't answer that, because school, the sheets and Kayleigh Burns are each a piece of it and each too small to be it, and the word for the whole thing is nowhere in her.
+Chloe can't answer that, because school, the sheets, and Kayleigh Burns are each a piece of it, each too small to be it. The word for the whole thing is nowhere in her.
 
 "This," she says, with her face against her mother's collarbone. "This, this, all of this."
 
@@ -72,7 +72,7 @@ Then it's the middle of February, then the end of it, and dinner comes and goes 
 
 They tell her on the fourteenth of March.
 
-They sit her down in the living room, both of them at once, on the couch across from her, and her dad does the talking, having worked out beforehand what order he wants it in. There is a form, already filled in, which he sent off days ago and kept to himself, and there is a day in April where the three of them drive out and Halstead has a proper look at her. If they say yes after that she could start in the spring, because Halstead will take a student in any month of the year.
+They sit her down in the living room, both of them at once, on the couch across from her, and her dad does the talking, having worked out beforehand what order he wants it in. There is a form, already filled in, which he sent off days ago and kept to himself. There is a day in April where the three of them drive out and Halstead has a proper look at her. If they say yes after that she could start in the spring, because Halstead will take a student in any month of the year.
 
 Chloe is on her feet before he has got to the end of it.
 
@@ -92,7 +92,7 @@ Chloe stays standing. "Am I going, though, is it a real thing, are you actually 
 
 "It's true," her dad says, "it's a true thing and I'm not saying it a third time."
 
-She screams. It goes up and holds there and keeps going after the breath behind it should have run out, and her dad's hand comes off his knee and stops halfway to his ear, and her mom says her name twice without getting to the end of it either time. Then Chloe is across the rug and onto her dad, who catches her most of the way, and she is saying thank you into his shoulder with no gap between the words. Then she's off him and around the coffee table and holding onto her mother's legs with both arms, saying it to her instead, thank you, thank you, I'll be so good, I'll be so good, thank you.
+She screams. It goes up and holds there and keeps going after the breath behind it should have run out. Her dad's hand comes off his knee and stops halfway to his ear, and her mom says her name twice without getting to the end of it either time. Then Chloe is across the rug and onto her dad, who catches her most of the way, and she is saying thank you into his shoulder with no gap between the words. Then she's off him and around the coffee table and holding onto her mother's legs with both arms, saying it to her instead, thank you, thank you, I'll be so good, I'll be so good, thank you.
 
 Twenty seconds after running upstairs she is back down, stopped on the third step from the bottom with both hands on the rail.
 
@@ -106,7 +106,7 @@ Twenty seconds after running upstairs she is back down, stopped on the third ste
 
 She runs back up.
 
-Her parents sit in the living room and listen to her going back and forth over their heads for a long time, drawers opening and shutting and something heavy getting dragged across the floor twice. Chloe is out on the landing with a drawer open in front of her when her dad says something downstairs, and she catches only the end of it, clear enough.
+Her parents sit in the living room and listen to her going back and forth over their heads for a long time: drawers opening and shutting, something heavy getting dragged across the floor twice. Chloe is out on the landing with a drawer open in front of her when her dad says something downstairs, and she catches only the end of it, clear enough.
 
 "That's her, that's what she's actually like."
 
@@ -136,7 +136,7 @@ Her mother puts the mug in the sink and runs water into it. Her dad folds the le
 
 They drive out on the Friday for the day where Halstead looks at her, and the building is a different building in April than it was in July, because it is raining and every hall in it is full of people.
 
-A woman called Mrs. Okonkwo, who walks backward half the time so that she can talk while she is doing it, takes them around for an hour, and Chloe asks whether the room at the end of that hall is still called Pluto and is told that the rooms down there have always been planets and that the names have stayed put since the building went up. Then she asks whether there's a boy here called Sam.
+A woman called Mrs. Okonkwo, who walks backward half the time so that she can talk while she is doing it, takes them around for an hour. Chloe asks whether the room at the end of that hall is still called Pluto and is told that the rooms down there have always been planets and that the names have stayed put since the building went up. Then she asks whether there's a boy here called Sam.
 
 "I can't tell you who's enrolled here, sweetheart, because those are other families, and that's between them and us."
 
@@ -144,17 +144,17 @@ A woman called Mrs. Okonkwo, who walks backward half the time so that she can ta
 
 "I know you do," Mrs. Okonkwo says, still walking. "The dining hall's through there, do you remember it from July?"
 
-Her mom asks about the nurse and gets straight answers, and then asks who is awake at night, and gets that answered too.
+Her mom asks about the nurse and gets straight answers, then asks who is awake at night and gets that answered too.
 
-In the afternoon they put Chloe in a second grade room while her parents go off somewhere with somebody else, and there is a roomful of kids in it doing something with a map of a river, and a boy at her table lends her a pencil before she asks. At the end of it a man whose beard is going grey sits down on a chair the same size as hers and asks her what she would do with an entire day if the whole day were hers to spend, and she talks a long time, and he lets her get all the way to the end of it.
+In the afternoon they put Chloe in a second grade room while her parents go off somewhere with somebody else, and there is a roomful of kids in it doing something with a map of a river, and a boy at her table lends her a pencil before she asks. At the end of it a man whose beard is going grey sits down on a chair the same size as hers and asks her what she would do with an entire day if the whole day were hers to spend. She talks a long time, and he lets her get all the way to the end of it.
 
-No test arrives, and she keeps waiting for somebody to hand her one, right through the afternoon and out to the car.
+No test arrives, but she keeps waiting for somebody to hand her one, right through the afternoon and out to the car.
 
 It's dark by the time they're back on the road.
 
 Chloe talks for the whole drive. She talks about the room she'd have and whether you get any say in which room you get. She talks about the woman who walked them around, and about whether Sam is one of the Sams here or a different Sam altogether. She wants to know what the food is like in April as opposed to July, and whether the robot arm on the second floor is the one from July or a newer one, and she asks her dad question after question, running each one into the next before he can answer. Somewhere in the third hour she falls asleep in the middle of a sentence about the pool, and when the car stops in the driveway she wakes up and picks the sentence back up more or less where she dropped it.
 
-Her dad carries her bag in and puts it at the bottom of the stairs, and she goes through to the kitchen and gets herself a glass of water at the sink, standing on the edge of the cupboard door to reach the tap the way she has been told not to.
+Her dad carries her bag in and puts it at the bottom of the stairs. She goes through to the kitchen and gets herself a glass of water at the sink, standing on the edge of the cupboard door to reach the tap the way she has been told not to.
 
 Out the kitchen window, her mother is still sitting in the car with the engine off and the lights with it, and she has yet to open the door on her side.
 

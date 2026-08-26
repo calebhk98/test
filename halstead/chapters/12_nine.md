@@ -46,7 +46,7 @@ Chloe does another lap of the table before she sits down, and Ruth turns a page.
 
 ________________
 
-Mandarin is with a woman called Mrs. Sun, who grew up in Harbin and taught in Vancouver for years before this, and who speaks to the room in Mandarin from the first hour and in English twice a term.
+Mandarin is with a woman called Mrs. Sun, who grew up in Harbin and taught in Vancouver for years before this. She speaks to the room in Mandarin from the first hour and in English twice a term.
 
 The reading comes fast, because the characters go in and stay in, so that in November she gets through a whole page at a sitting, which she marks by dog-earing the corner. By February she is doing novels, and by March she is turning in the ten-page end-of-term reports in Mandarin, on the question everybody else has.
 
@@ -72,7 +72,7 @@ Statistics turns out to be an hour of somebody taking a number apart in front of
 
 "You said that on Monday too, word for word, and you say it every time you lose this argument."
 
-Chemistry is Vasquez, who does set things on fire on purpose, twice in the first term, and both times the room goes in quiet and comes out loud, and on the phone that Sunday Chloe carries the whole call herself, describing the second to her mother, who mostly just listens. The lab keeps the smell for most of a week, and the benches down there are black and scored all over where people have set hot things on them. In the second week she burns a hole through a sleeve, and in the fourth she makes something that is supposed to come out white, gets grey, and carries it up to the front.
+Chemistry is Vasquez, who does set things on fire on purpose, twice in the first term, and both times the room goes in quiet and comes out loud. On the phone that Sunday Chloe carries the whole call herself, describing the second to her mother, who mostly just listens. The lab keeps the smell for most of a week, and the benches down there are black and scored all over where people have set hot things on them. In the second week she burns a hole through a sleeve, and in the fourth she makes something that is supposed to come out white, gets grey, and carries it up to the front.
 
 "Water. That's the only thing that turns it that particular grey, and it's nowhere on your reagent list."
 
@@ -80,7 +80,7 @@ Chemistry is Vasquez, who does set things on fire on purpose, twice in the first
 
 "Glassware, reagent, or you, take your pick, because it is always one of the three." He hands it back, eyes already on the next bench. "Friday, and dry every piece of glass before you touch it this time."
 
-She runs it again on the Friday, drying every piece of glass twice before she starts, and it comes out white, and she grins at it before she catches herself and carries it up to the front.
+She runs it again on the Friday, drying every piece of glass twice before she starts, and it comes out white. She grins at it before she catches herself and carries it up to the front.
 
 "That one's white, so tell me which of the three it was."
 
@@ -88,15 +88,15 @@ She runs it again on the Friday, drying every piece of glass twice before she st
 
 "You dried the glass, you took a fresh bottle off the shelf, and you tied your sleeve back out of the way, which is three changes and one result." He is already down the bench. "Run it wet next Friday and find out which of them you fixed."
 
-So the Friday after that she runs it wet on purpose and gets the grey back, and the Friday after that she runs it dry off the old bottle and gets white, and it is November by the time she writes glassware in the back of the notebook with a date beside it.
+So the Friday after that she runs it wet on purpose and gets the grey back, and the Friday after that she runs it dry off the old bottle and gets white. It is November by the time she writes glassware in the back of the notebook with a date beside it.
 
-First aid is Mondays, and it is on a clock from the first week. In the second term the lights come down to about what you get off a dashboard at night, and in the third term the lights come down, a radio plays somewhere behind her, left running the whole time, and a man stands over her shoulder asking her a question over and over in a raised voice.
+First aid is Mondays, and it is on a clock from the first week. In the second term the lights come down to about what you get off a dashboard at night. In the third term the lights come down, a radio plays somewhere behind her, left running the whole time, and a man stands over her shoulder asking her a question over and over in a raised voice.
 
 "Is he going to be doing that the whole way through, or is it just the first?"
 
 "It's midnight on a road, the car's still running, and there's a man who wants to know if his wife's all right." The teacher has a stopwatch and keeps his eyes on it. "He's going to keep asking, that's the whole point of the drill, so count out loud over the top of him."
 
-Textiles is Tuesdays, where they measure each other, draft patterns off the measurements onto brown paper, then cut. Chloe's first shirt comes out with the shoulder seam an inch inboard of where a shoulder actually is, so it drags every time she lifts her arm. She takes the sleeve out, redraws the armhole, builds the second over from the armhole out, and the second one drags in exactly the same place. In January she stops redrawing and brings in a shirt from home that already fits her, lays it flat on the brown paper and traces round the top of it, and the line that comes off it sits an inch and a half out from the line she has been drafting off the measurements all term. The third shirt fits, and it is the end of March by the time it does, and she wears the second one all spring regardless, because the second is the green shirt.
+Textiles is Tuesdays, where they measure each other, draft patterns off the measurements onto brown paper, then cut. Chloe's first shirt comes out with the shoulder seam an inch inboard of where a shoulder actually is, so it drags every time she lifts her arm. She takes the sleeve out, redraws the armhole, builds the second over from the armhole out, and the second one drags in exactly the same place. In January she stops redrawing and brings in a shirt from home that already fits her, lays it flat on the brown paper, and traces round the top of it. The line that comes off it sits an inch and a half out from the line she has been drafting off the measurements all term. The third shirt fits, and it is the end of March by the time it does, and she wears the second one all spring regardless, because the second is the green shirt.
 
 Biology is the man with the fish tank in the front hall, and in October Kavi decides that the small striped one is being bullied.
 
@@ -108,17 +108,17 @@ ________________
 
 Bex Alcantar arrives at the end of your sentence before you get there and finishes it for you, and the ending she puts on it is usually the ending it was going to have.
 
-In the second term Chloe and Bex build a bridge that carries nineteen pounds and comes down a plank at a time instead of all at once, which is the joints, and the joints are a fortnight Chloe spent getting them wrong in the hour before dinner. The teacher asks how they held. Bex has it before Chloe has her mouth open, the whole fortnight in order and every part of it right, and she says we in her first sentence and I in the rest of them, and the teacher writes it on the sheet and moves along the table.
+In the second term Chloe and Bex build a bridge that carries nineteen pounds and comes down a plank at a time instead of all at once: the joints, a fortnight Chloe spent getting them wrong in the hour before dinner. The teacher asks how they held. Bex has it before Chloe has her mouth open, the whole fortnight in order and every part of it right. She says we in her first sentence and I in the rest of them. The teacher writes it on the sheet and moves along the table.
 
-Chloe goes back over the fortnight that evening looking for the sitting where she said any of it out loud, and finds the Thursday, when she had it half built and was talking fast and had it wrong twice before she had it right, with Bex at the next bench.
+Chloe goes back over the fortnight that evening looking for the sitting where she said any of it out loud. She finds the Thursday, when she had it half built and was talking fast and had it wrong twice before she had it right, with Bex at the next bench.
 
-Iyad Mansour has the year in his head, everybody's hours and everybody's numbers, and he gives them out at dinner unasked, by name and in order, down the table and back up it, and he is never wrong about any of them. In March what he has on her is Mandarin, which is that a stranger loses her by the second sentence, said at the volume of the far end of the table while she is still coming down it with her tray, and it is exactly what the man from the university said and the whole of what he said. Sam asks him something about the fish tank and he answers that too.
+Iyad Mansour has the year in his head, everybody's hours and everybody's numbers. He gives them out at dinner unasked, by name and in order, down the table and back up it, and he is never wrong about any of them. In March what he has on her is Mandarin: that a stranger loses her by the second sentence, said at the volume of the far end of the table while she is still coming down it with her tray, and it is exactly what the man from the university said and the whole of what he said. Sam asks him something about the fish tank and he answers that too.
 
-She works with Iyad in chemistry for a term after that, during which he is careful and fast and gets more out of the hour than she does, and she comes in to dinner through the kitchen door now, where the queue starts, and takes the seat at the end where the plates arrive last.
+She works with Iyad in chemistry for a term after that, during which he is careful and fast and gets more out of the hour than she does. She comes in to dinner through the kitchen door now, where the queue starts, and takes the seat at the end where the plates arrive last.
 
 Sam spends the whole year on the overhang.
 
-There is a wall up the side of the gym with a lip near the top that sticks out a good way, and going into September the lip has beaten everyone who's tried it. Sam falls off it in October, twice in November, and once in December from high enough that he lands badly and sits on the mat, elbows on his knees, and an instructor asks if he's alright, and he says he's fine, and the session carries on. In January a girl in the year below gets over it in one go, on a Wednesday, with five people watching. Sam takes this hard for two days, then goes and asks her how she did it, and the answer turns out to be about where you put your left foot before you start.
+There is a wall up the side of the gym with a lip near the top that sticks out a good way, and going into September the lip has beaten everyone who's tried it. Sam falls off it in October, twice in November, and once in December from high enough that he lands badly and sits on the mat, elbows on his knees. An instructor asks if he's alright, and he says he's fine, and the session carries on. In January a girl in the year below gets over it in one go, on a Wednesday, with five people watching. Sam takes this hard for two days, then goes and asks her how she did it, and the answer turns out to be about where you put your left foot before you start.
 
 He gets over it on the eleventh of May, with thirty people at the bottom, because Sam has spent days telling everybody he is going to do it that afternoon.
 
@@ -130,7 +130,7 @@ He comes off the first attempt a foot under the lip, in front of all thirty of t
 
 Block two is hers, and she takes riding, because Priya takes riding.
 
-The stables are a walk past the north field, cinder path most of the way and mud from the gate on, and you get the smell of the place a good while before you get the roof of it, and Priya talks the whole way there and the whole way back, about horses first and then about everything, so that inside a fortnight Chloe can call every horse in the place by name and point out which two of them bite.
+The stables are a walk past the north field, cinder path most of the way and mud from the gate on. You get the smell of the place a good while before you get the roof of it. Priya talks the whole way there and the whole way back, about horses first and then about everything, so that inside a fortnight Chloe can call every horse in the place by name and point out which two of them bite.
 
 "That's Cricket, she's fine, as long as you stand where she can see you."
 
@@ -156,7 +156,7 @@ ________________
 
 Home for the summer, she sleeps most of the way through the first week of it without anybody stopping her.
 
-Her mother makes a joke about it on the fourth day and a smaller version of it on the fifth, then stops making it, and on the sixth she comes in, puts a glass of water on the nightstand, and goes back out. Watching a film with her father in the afternoon, Chloe has no opinion about it whatsoever, which she finds restful, so they watch another. In the second week she rides out to the reservoir and back, the long way round on the road, and comes in through the kitchen door filthy and starving in the middle of the afternoon.
+Her mother makes a joke about it on the fourth day and a smaller version of it on the fifth, then stops making it. On the sixth she comes in, puts a glass of water on the nightstand, and goes back out. Watching a film with her father in the afternoon, Chloe has no opinion about it whatsoever, which she finds restful, so they watch another. In the second week she rides out to the reservoir and back, the long way round on the road, and comes in through the kitchen door filthy and starving in the middle of the afternoon.
 
 Her mother takes some days off in July and they do the coast, a long drive each way to a motel with a pool, where Chloe swims for most of two days. On the second evening her mother teaches her cribbage on the balcony, on a board her own father made out of walnut in about 1961.
 

@@ -192,7 +192,7 @@ Chloe puts her pen down and leaves it down.
 
 "Down to the limit, in the end. I cut it."
 
-"You cut it three times." Nadia looks at her a second longer than she has looked at her all evening, and then pushes the notebook across the table, open, which she has not done with it in front of anybody. "Read the last one. It came back before I'd shut the laptop."
+"You cut it three times." Nadia looks at her a second longer than she has looked at her all evening, and then pushes the notebook across the table, open. "Read the last one. It came back before I'd shut the laptop."
 
 Chloe reads it twice and finds it clean, and Ruth reads it after her and agrees. That closes there, and both of them keep their seats.
 

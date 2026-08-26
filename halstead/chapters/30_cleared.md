@@ -12,7 +12,7 @@ Roughly a third of those conversations end there, with a reply that trails off i
 
 By the winter she's writing most nights well past midnight, laptop balanced on her knees on the couch, the day's translation work already closed out and a browser full of tabs in three languages open around the piece she's actually working on. A currency story that takes a stack of sources and a full weekend to run down turns, by January, into something she can finish between a Tuesday shift and a Wednesday class. The comments get checked before bed sometimes and not other times, no pattern to it that she's noticed, and either way she's asleep within minutes of closing the laptop.
 
-She's also carrying a full course load and the translation job, and none of it registers as a load, because her actual timetable at fourteen was heavier than this and included getting hit.
+She's also carrying a full course load and the translation job, and none of it registers as a load.
 
 ________________
 
@@ -64,7 +64,7 @@ The classes come after that, all of them, mathematics through politics through t
 
 "Whose column does that go in."
 
-"Mine. He did the whole year of the work and handed none of it in, and getting it out of him was the job, and I never found the way to do it. He gave me back a stack of practice papers a year later with nothing written on any of them except a better question on the back of the top sheet."
+"Mine. He did the whole year of the work but handed none of it in, and getting it out of him was the job, and I never found the way to do it. He gave me back a stack of practice papers a year later with nothing written on any of them except a better question on the back of the top sheet."
 
 That goes down in the notebook, and he turns the page.
 
@@ -114,7 +114,7 @@ The funding is what he asks about: who the school's principal donor is, name or 
 
 "I have no idea," Chloe says. "Whoever pays for it stayed background noise my whole life there. If you're a child, and somebody's already built the swings, you climb on and use them. Who paid for the steel is somebody else's question." She turns the coffee mug a quarter turn on the table, the only thing she's done with her hands all visit.
 
-The reasoning goes down along with the answer, as everything else has, and he closes the folder on it. The file is otherwise complete, he tells her, and he thanks her as plainly as he thanked her the first time, and stands to gather the thermos and the notebook off the table.
+The reasoning goes down along with the answer, as everything else has, and he closes the folder on it. The file is otherwise complete, he tells her, and he thanks her as plainly as he thanked her the first time. Then he stands to gather the thermos and the notebook off the table.
 
 At the door, coat half on, he taps the folder once against his palm. "Now I get to write it up in triplicate for a form that only ever needed one copy." He says it to the folder, not to her, and he's already down the first flight of stairs before she's worked out it was the joke.
 

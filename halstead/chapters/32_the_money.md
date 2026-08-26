@@ -74,7 +74,7 @@ eli: and the other 0.01
 
 ruth: is me being humble
 
-Eli reads it standing up, which is unusual for him, phone in one hand, his other hand already going through its tap against the kitchen counter before he notices he's started it. It's the middle of the night in Ohio, and he stays up with it rather than going back to bed. Kavi reads it lying on the floor of his lab under the whiteboard, and picks up a marker anyway to add another line to the board himself before he sets it back down at the angle he found it in.
+Eli reads it standing up, phone in one hand, his other hand already going through its tap against the kitchen counter before he notices he's started it. It's the middle of the night in Ohio, and he stays up with it rather than going back to bed. Kavi reads it lying on the floor of his lab under the whiteboard, and picks up a marker anyway to add another line to the board himself before he sets it back down at the angle he found it in.
 
 ________________
 

@@ -4,7 +4,7 @@
 
 Somebody runs a scam through Nadia's company in the spring.
 
-The company is eleven months old and four people besides her, known inside three counties, which is as far as word travels when every employer on it was signed in person, in a car, on Saturdays. What the thing does is take the resume out. A user spends an evening on short tests, the profile builds itself out of work she can put in front of somebody, and after that the thing fills the forms and sends them out for her, to the employers on the site and to whichever outside boards are still accepting submissions from it that month.
+The company is eleven months old and four people besides her, known inside three counties. What the thing does is take the resume out. A user spends an evening on short tests, the profile builds itself out of work she can put in front of somebody, and after that the thing fills the forms and sends them out for her, to the employers on the site and to whichever outside boards are still accepting submissions from it that month.
 
 It runs out of three rooms over a laundromat, a hundred yards up the street from her parents' shop, and the heat off the dryers comes through the floor from mid-morning, so the windows stay open into November. The only bathroom belongs to the laundromat, and its key hangs on a paint stirrer behind the change machine.
 
@@ -102,7 +102,7 @@ The room goes quiet for a moment while the man behind the desk sets down what he
 
 "Get out of here," he says.
 
-She stays where she is. The man in the doorway comes off the frame, walks around behind her, pushes the door shut with the heel of his hand, and then stands against it with his arms folded, and she hears the latch go and keeps her eyes on the desk.
+She stays where she is. The man in the doorway comes off the frame, walks around behind her, pushes the door shut with the heel of his hand, and then stands against it with his arms folded. She hears the latch go and keeps her eyes on the desk.
 
 "How old are you," the man at the folding table says.
 
@@ -160,7 +160,7 @@ The man behind the desk looks at the man standing over her and keeps looking at 
 
 The man at the door steps aside for her and says something to the back of her head as she passes, three words with sweetheart on the end of them, and another of them laughs at it. The steel stairs are behind her before either sound has finished. Somebody comes out onto the landing and stands there watching while she crosses the lot, and is still up there when she reaches the car.
 
-The key goes in on the second try. Back at the shop she counts the till her mother has already counted. It comes out three dollars under. She counts it again, gets it again, and then runs the whole tape through a third time from the top of the day. Her mother asks where she was. "Out at a tire place," Nadia says, which is true, and her mother lets it go at that. Until close she works the counter, on a Thursday, for the first time since November.
+The key goes in on the second try. Back at the shop she counts the till her mother has already counted. It comes out three dollars under. She counts it again, gets it again, and then runs the whole tape through a third time from the top of the day. Her mother asks where she was. "Out at a tire place," Nadia says, and her mother lets it go at that. Until close she works the counter, on a Thursday, for the first time since November.
 
 sam: what did they say
 
@@ -240,7 +240,7 @@ The ones she already has are the ones who answered it.
 
 A board starts rate-limiting her submission traffic on a Saturday in March. Tomas catches it off a graph well outside anything he had ever been asked to watch, rewrites the back-off, puts it out himself, and tells her on the Monday, by which time it has held through a weekend. Asked why the retry ceiling stayed where it was while he was in there, he says, "The ceiling was working. I don't go through a thing changing whatever already works, because then it's all mine and none of it's theirs." She writes the ceiling herself that night.
 
-Bev drives out on her own on a Saturday in April to five employers Nadia had yet to get to, and comes back with two of them signed and a third who wants to see Nadia in person. There is a thirty-day clause in both contracts, which is new to Nadia's template.
+Bev drives out on her own on a Saturday in April to five employers Nadia had yet to get to, and comes back with two of them signed and a third who wants to see Nadia in person. There is a thirty-day clause in both contracts.
 
 "Where did the thirty days come from," Nadia says.
 

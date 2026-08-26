@@ -6,7 +6,7 @@ Sam likes the Army immediately.
 
 The bus from the reception battalion reaches the company area well after dark in the first week of August, by which time the lights over the door are pulling moths off the training area for a mile around. A drill sergeant reads surnames off a clipboard in an order only the clipboard understands, and Sam, first off the bus, first to have his arms full of bedding, spends twenty minutes occupying a spot he is eventually told to stop occupying.
 
-That night he falls asleep to the rest of the bay discovering their racks all at once, then wakes before the lights, which is worth remarkably little to him, because Sam has been slow for the opening minutes of every morning of his life, and the bay in the dark is a footrace.
+That night he falls asleep to the rest of the bay discovering their racks all at once, then wakes before the lights, and the bay in the dark is a footrace.
 
 The schedule he has had since childhood, and lost over the summer, reappears on the second day, laminated and screwed to the wall beside the doorway.
 
@@ -86,7 +86,7 @@ Word travels round the company by chow that afternoon, the way a number like tha
 
 "A girl."
 
-"She was second in the year and I was first, and she still put me down twice." He pours, unhurried about it, and returns the pitcher to the middle of the table in precisely the position he removed it from. "Then in April I lost a small thing out of my own boot and cost a man half an evening getting it back, so you can have that as well."
+"She was second in the year and I was first, but she still put me down twice." He pours, unhurried about it, and returns the pitcher to the middle of the table in precisely the position he removed it from. "Then in April I lost a small thing out of my own boot and cost a man half an evening getting it back, so you can have that as well."
 
 By the end of it several of them are laughing at him, while another has stopped believing a word of any of it.
 
