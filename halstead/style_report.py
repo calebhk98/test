@@ -309,12 +309,20 @@ def summarise(paths):
     print(f"    mode<median<mean {verdict(mo < me < mn):<6}"
           f"mean 11-18 {verdict(11 <= mn <= 18):<6}"
           f"CV 68-100% {verdict(68 <= cv <= 100)}")
-    for name, f_, lo, hi in [('under 10', lambda v: v < 10, 35, 45),
-                             ('10-20', lambda v: 10 <= v < 20, 30, 35),
-                             ('20-35', lambda v: 20 <= v <= 35, 15, 20),
-                             ('over 35', lambda v: v > 35, 0, 5)]:
+    # The four bands were carried over from a YA style guide written for a
+    # simpler book, and two of them were wrong here. It set the over-35 share
+    # at 0-5%, but the corpus median is 6.9% and the three reference books
+    # with the highest reading grade are the three with the MOST long
+    # sentences: Black Beauty 18.9%, Wind in the Willows 13.8%, Little Women
+    # 13.7%. Hitting 0-5% would have driven the book toward Peter Pan, which
+    # the author has ruled out. These are the observed range across the
+    # eleven reference novels, with the median printed beside them.
+    for name, f_, lo, hi, med in [('under 10', lambda v: v < 10, 21.7, 50.7, 42.7),
+                                  ('10-20', lambda v: 10 <= v < 20, 26.1, 38.8, 31.0),
+                                  ('20-35', lambda v: 20 <= v <= 35, 15.2, 30.3, 19.9),
+                                  ('over 35', lambda v: v > 35, 4.9, 18.9, 6.9)]:
         pct = 100 * sum(1 for v in sl if f_(v)) / len(sl)
-        print(f"    {name:<10}{pct:>6.1f}%   target {lo}-{hi}%   "
+        print(f"    {name:<10}{pct:>6.1f}%   corpus {lo}-{hi}%  median {med}%   "
               f"{verdict(lo <= pct <= hi)}")
 
     qw = sum(len(words(m)) for m in re.findall(r'"([^"]+)"', body))
