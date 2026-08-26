@@ -188,7 +188,7 @@ Twice she reads it through: drawing is on it, along with pottery, glassblowing, 
 
 Sam has come up behind her. "What are you doing?"
 
-He reads over her shoulder.
+Sam reads over her shoulder.
 
 "Are you signing up for something or just reading the sheet all day?"
 

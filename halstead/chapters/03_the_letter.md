@@ -30,7 +30,7 @@ Her dad takes it and reads it in his free hand, still eating.
 
 "See what."
 
-He puts the fork down to hold it with both. "No. This is the first I've heard of it, and I've been sitting here the whole time you have."
+Her dad puts the fork down to hold it with both. "No. This is the first I've heard of it, and I've been sitting here the whole time you have."
 
 "So how do they have her name, when I keep it off every form I am handed, school, program, all of it. I have been doing that since preschool."
 
