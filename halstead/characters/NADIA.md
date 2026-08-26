@@ -105,8 +105,8 @@ exactly where it is.
 
 ## What she wants, out loud
 
-The single largest gap in earlier versions of her: she was written as a person
-who only ever declined things. She has appetites, she states them plainly, and
+The largest thing a writer can get wrong about her is to give her only refusals.
+She has appetites, she states them plainly, and
 because she states them in the same flat voice she gives an instruction in, they
 have been mistaken for instructions. Give her at least one of these in any
 stretch of material:
@@ -181,7 +181,7 @@ part she skips.
 
 ## Humour
 
-She is funny, and earlier versions of this sheet forbade it by accident.
+She is funny, and nothing on this sheet should be read as forbidding it.
 
 Her jokes are deadpan and literal. She takes the premise she has been handed and
 extends it one step past where the other person meant to stop, delivered in

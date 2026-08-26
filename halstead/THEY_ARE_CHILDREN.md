@@ -139,8 +139,8 @@ time: the thing the character did not do. He doesn't look up. Nobody says
 anything. She reads it twice and doesn't add to the thread. He doesn't put his
 hand up again. She isn't hungry.
 
-It is a real device and the book had already overused it before this pass. The
-measurement, now printed on every run under `monitored, not graded`:
+It is a real device and the book overuses it. The measurement, printed on every
+run under `monitored, not graded`:
 
 | | negative-beat rate |
 | :-- | --: |

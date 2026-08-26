@@ -221,8 +221,7 @@ Delete this section and the sheet above still stands.
   investigation, specialising in candidates with unconventional educational
   histories.
 - The investigation takes ten weeks and two in-person visits, October and
-  November. Not seven months; an earlier version of this sheet said seven months
-  and that is wrong.
+  November. Ten weeks, not seven months.
 - Topics on the record: eleven years at a residential school, eleven languages
   with three demonstrated on request, the full course list, an internal
   examination with no external accreditation, two published papers he has already

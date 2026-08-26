@@ -92,10 +92,9 @@ and is hurt by what hurts one.
 What changes: fear and adrenaline drain out of her, year by year, as training accumulates.
 By her mid-teens she can walk away from something violent without shaking.
 
-**And the compliant minimum mostly goes away.** An earlier version of this sheet had it as
-a permanent trait, which was wrong and which is the single line most responsible for the
-flat register outside readers reported. It was never a personality trait. It was a
-response to a specific injury: being laughed at for saying the true thing, in one
+**And the compliant minimum mostly goes away.** It is not a permanent trait, and writing
+it as one is the fastest way to produce the flat register outside readers report. It was
+never a personality trait. It is a response to a specific injury: being laughed at for saying the true thing, in one
 particular room, at six. She then spends eleven years somewhere the true thing is the
 expected answer, and the flinch has nothing to feed on. By twenty she is an adult who
 knows how to hold a professional conversation: measured, unpadded, answering what was
@@ -164,10 +163,9 @@ enormous. She laughs helplessly, teases, and bickers for fun.
 | figurative | allowed, and hers alone. Earnest, unexplained, said once |
 | emotional range | the full width of it. Nothing about her is muted except in front of people who have hurt her |
 
-Do not write her to a word count. Earlier versions of this sheet carried measured averages
-taken over a draft in which most of her lines happened to fall in guarded scenes, and
-writers reasonably read those averages as a specification. They were a description of the
-problem, not of the person. Scenes with her friends and her family should be longer and
+Do not write her to a word count. A measured average taken across her lines describes
+whatever mix of guarded and unguarded scenes the draft happens to contain, and reads as a
+specification when it is nothing of the kind. Scenes with her friends and her family should be longer and
 louder than any average would suggest.
 
 ## When she opens up
@@ -294,8 +292,7 @@ her is doing the same thing.
   instantly that they are different words when someone else says them, and cannot make her
   own voice do it. Hearing the gap turns out to be worse than not hearing it, and that gap
   is the actual lesson her teacher is teaching. **This is a problem she has at nine, not a
-  permanent ceiling.** An earlier version of this sheet said she never becomes
-  conversational in Mandarin, which was invented and is wrong. She was producing a year of
+  permanent ceiling.** She becomes conversational in it. At nine she was producing a year of
   a tonal language in a few hundred hours and her mouth had not caught up with her ear. By
   eighteen, after nine more years of it, she speaks it well. If she is ever going to work
   further on one language as an adult, it is this one, because it is the one she remembers
@@ -628,10 +625,9 @@ The four failure modes outside readers actually produced, in the words they used
    contrast between her and a normal classroom is scored in her favour from inside her head.
    The contrast is always scored *against* her, by her.
 
-Three specific things on earlier versions of this sheet pushed writers straight into the
-first failure mode, and are corrected above: the claim that her father was the sole
-exception to a universal compliant minimum, two length statistics presented as if they were
-targets, and a never-state-an-emotion rule with no age carve-out.
+Three things push a writer straight into the first failure mode and are ruled out above:
+treating her father as the sole exception to a universal compliant minimum, reading a length
+statistic as a target, and applying a never-state-an-emotion rule with no age carve-out.
 
 ## Do not confuse with
 
@@ -654,7 +650,7 @@ complete without this section.*
 
 - Full name Chloe Kessler. No middle name is given.
 - Born August 2005. She is twenty-one in August of the year she starts work, not June; an
-  earlier version of this sheet said June and was wrong.
+  corroborated twice in the manuscript.
 - Only child. Mother Meg and father Dave, married throughout.
 - Schooling: an unnamed public elementary school through first grade, ages five to six;
   then a four-week residential summer programme at Halstead at six going on seven; then

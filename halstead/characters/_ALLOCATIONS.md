@@ -1,8 +1,9 @@
 # Allocations — what is already in play
 
-**This is a ledger, not a rulebook.** An earlier version of this file assigned languages,
-electives, homes and bodies from outside and told sheet writers not to change them. That
-was wrong: the agent working on a character knows that character, and this file did not.
+**This is a ledger, not a rulebook.** It records what has been allocated so that two
+characters do not silently end up with the same language, elective, home or build. It does
+not assign them. Whoever is writing a character knows that character better than this file
+does, so a sheet may depart from what is written here; update the ledger when it does.
 
 What follows is only a record of what the sheets currently say, so you can see what exists
 without reading thirty-two files. **The agent who owns a character owns these choices and

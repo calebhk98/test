@@ -237,5 +237,4 @@ Delete this section and the sheet above still stands.
 - She notices Chloe's weight loss and, later, the weight regained, and tells Meg
   privately both times. It is never followed up anywhere in the book.
 - She does have dialogue in the graduation chapter, working a receiving line from
-  a folding chair. An earlier version of this sheet said her last spoken scene was
-  chapters/18_fifteen.md; that was wrong.
+  a folding chair.

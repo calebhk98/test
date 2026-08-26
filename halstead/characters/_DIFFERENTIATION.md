@@ -2,8 +2,8 @@
 
 ## Read this part first: differentiate, but not against the character
 
-They are currently too similar and that is the problem to solve. The previous version of
-this document over-corrected into "similarity is fine" and stopped doing its job.
+They are too similar and that is the problem to solve. Do not let this document drift into
+saying that similarity is fine; the moment it says that, it has stopped doing its job.
 
 The rule is narrower than either extreme. **Where the text or an established trait points
 somewhere, follow it, even if another character lands nearby.** Kavi and Eli are both
