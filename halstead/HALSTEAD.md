@@ -3358,6 +3358,7 @@ Sinclair arrives with two other adults and a trolley, then stops at the corner. 
 Ruth reads them off her arm. Sinclair nods. "Grading's in the morning," he says. "Go to bed. Now."
 
 Back in bed she lies on top of the covers with her shoes on and runs the list from the top, and gets to the end of it, and starts over.
+
 Chloe gets a C the same as Sam, Ruth gets a B minus and brings it up for a week, and Kavi gets a B for the comms with a note about the sensors that he disputes in writing, at length, and loses.
 
 The sheet says: intruders inside Building One prior to contact. Response seven minutes fifty against a standard of six. Traceable agent selected. Four personnel deployed where three would have served. Objective established. No capability disclosed.
@@ -4872,7 +4873,7 @@ He is quiet long enough for a customer to come in, buy a tin of two-inch screws 
 
 "Nadia."
 
-"I work out of the back room, and the counter gets me on Sundays." She has both elbows on the ledger between them, either side of the arithmetic. "You keep the books and the ordering off yourself, the arrangement you have now, at the same price."
+"I work out of the back room, and the counter gets me on Sundays." She has both elbows on the ledger between them, either side of the arithmetic. "You keep the books and the ordering off yourself, the arrangement you have now, at the price you pay now."
 
 "I have that arrangement already."
 
@@ -5361,7 +5362,7 @@ Reading other people's listings takes her twelve days, and most of them go on th
 
 ________________
 
-Kavi eats dinner in the hall he always has, at the same table, three seats down from where he used to sit before this year moved everyone else out of it.
+Kavi eats dinner in the hall he always has, at his usual table, three seats down from where he used to sit before this year moved everyone else out of it.
 
 sam: whats it like eating with twelve year olds now
 
@@ -6604,7 +6605,7 @@ ________________
 
 She holds that for most of a year.
 
-The months underneath that sentence look, from outside, like everything is fine. Class happens. Problem sets go in early. Dinner is in one dining hall at one hour most nights, because a fixed routine is one less thing to decide. When her mother calls on Sundays, Ruth answers on the second ring and gives her the actual week, in order. When her father tells her, over speakerphone, that the university health plan covers a specialist visit without a referral, she corrects him. "That's not what the policy says, Dad. It says you need one within thirty days or they can deny the claim retroactively." He reads it back to her off his laptop while she's still on the line, finds the clause, and agrees she's right. Neither of them mentions that she hasn't once, in months of Sunday calls, said anything about the placement.
+The months underneath that sentence look, from outside, like everything is fine. Class happens. Problem sets go in early. Dinner is at seven, in the hall nearest her building, most nights, because a fixed routine is one less thing to decide. When her mother calls on Sundays, Ruth answers on the second ring and gives her the actual week, in order. Her father tells her, over speakerphone, that the university health plan covers a specialist visit without a referral, and she corrects him. "That's not what the policy says, Dad. It says you need one within thirty days or they can deny the claim retroactively." He reads it back to her off his laptop while she's still on the line, finds the clause, and agrees she's right. Neither of them mentions that she hasn't once, in months of Sunday calls, said anything about the placement.
 
 The study group stays folded into a smaller room in her head: something she manages rather than something she shares. Devansh, who ends up in three of her classes by spring, gets the closest look at it, though he has no idea what he's actually seeing. That spring he brings her a proof he's stuck on. The error takes her under a minute to find, a sign flipped two steps in, and she tells him so directly. "That's not wrong because the idea's bad, Devansh. It's wrong because you dropped a negative on line six." He fixes it, thanks her, and asks, half joking, whether she's ever actually stuck on anything. No, she says, and it's close enough to true, because being stuck and being wrong about the reason feel like different things from the inside.
 
@@ -6612,7 +6613,7 @@ The tally she keeps is private instead of public: every problem set returned wit
 
 What eventually breaks it is a professor she likes, in office hours, someone she is genuinely fond of, who cannot follow her past the third step of her reasoning and says so, cheerfully, without embarrassment, before asking her to go back.
 
-His office is on the fourth floor, narrow, with a window stuck a half-inch open and a whiteboard crowded with other students' handwriting he hasn't gotten around to erasing. Of her professors here she likes very few, and she likes him: he corrects a wrong answer the day he gives one, out loud and with no ceremony about it. He's the only one who has ever pushed back on a proof of hers rather than simply crediting the answer. The result she brings him is one she's proud of, something she worked out over two nights, and she states it the way she states everything, conclusion first. "It holds because the boundary term cancels once you fix the sign convention, and once that's fixed the rest follows directly."
+His office is on the fourth floor, narrow, with a window stuck a half-inch open and a whiteboard crowded with other students' handwriting he hasn't gotten around to erasing. There are very few of her professors here she likes, and she likes him: he corrects a wrong answer the day he gives one, out loud and with no ceremony about it. He's the only one who has ever pushed back on a proof of hers rather than simply crediting the answer. The result she brings him is one she's proud of, something she worked out over two nights, and she states it the way she states everything, conclusion first. "It holds because the boundary term cancels once you fix the sign convention, and once that's fixed the rest follows directly."
 
 Somewhere in it he loses the thread, says so, and asks her to start again from the top.
 
@@ -6699,9 +6700,9 @@ Sixteen weeks means a different thing to each of the four, all of them doing som
 
 Eli builds it, and Kavi builds the thing that watches it. The whole design problem is that it has to be boring, sitting in the places where a badly maintained reconciliation job would sit and moving just as slowly, so it reads as ordinary and not as anything that searches. None of them have that kind of patience. The program does.
 
-Eli builds his half after his own shift ends, at a desk two feet from a window that looks onto a parking structure, three monitors going and a cup of coffee he refills more from habit than thirst. The two-finger rhythm goes against the desk edge, the one he's kept since he was thirteen, faster whenever a line of the design won't sit right, and through most of the build it keeps not sitting right: every version he throws at his own test environment behaves like exactly what it is, a thing that goes looking, while a reconciliation job just sits there, moving at the speed a bored auditor would skim straight past. The polling interval gets rewritten six times before it finally reads as tired instead of curious, and the seventh version is the one he actually keeps, committed at 3:14 a.m. on a Tuesday he'll be back at his employer's desk for by eight.
+Eli builds his half after his own shift ends, at a desk two feet from a window that looks onto a parking structure, three monitors going and a cup of coffee he refills more from habit than thirst. The two-finger rhythm he's kept since he was thirteen goes against the desk edge, faster whenever a line of the design won't sit right, and through most of the build it keeps not sitting right: every version he throws at his own test environment behaves like exactly what it is, a thing that goes looking, while a reconciliation job just sits there, moving at the speed a bored auditor would skim straight past. The polling interval gets rewritten six times before it finally reads as tired instead of curious, and the seventh version is the one he actually keeps, committed at 3:14 a.m. on a Tuesday he'll be back at his employer's desk for by eight.
 
-Kavi builds his half in the lab he's had since he stayed on, a converted classroom with one window painted shut and a corkboard of Sanskrit verb charts that have hung there for years. Rather than the live feed he works from Eli's logs, turning a data cable over in his free hand while he reads and setting it back exactly where he picked it up. The watcher carries a simpler job than Eli's worm does; it only has to notice, quietly, the day the worm stops behaving like a reconciliation job and starts behaving like a person who found something, and say so to exactly one person before it says so to anyone else. Testing comes first, against three years of his own old coursework logs, because it's the only slow, boring, badly-behaved dataset he already has lying around, and it moves onto Eli's live feed only once it's gone a full week treating his own late-night habits as unremarkable.
+Kavi builds his half in the lab he's had since he stayed on, a converted classroom with one window painted shut and a corkboard of Sanskrit verb charts that have hung there for years. Rather than the live feed he works from Eli's logs, turning a data cable over in his free hand while he reads and setting it back exactly where he picked it up. The watcher carries a simpler job than Eli's worm does; it only has to notice, quietly, the day the worm stops behaving like a reconciliation job and starts behaving like a person who found something, and say so to exactly one person before it says so to anyone else. Testing comes first, against three years of his own old coursework logs, because it's the only slow, boring, badly-behaved dataset he already has lying around, and the watcher moves onto Eli's live feed only once it's gone a full week treating his own late-night habits as unremarkable.
 
 They test it for a month against Nadia's company, on her own live books, before it goes anywhere. Nadia runs the shop through that month on its ordinary rails: the till counted against yesterday's tape before she says hello to anyone, the ledger open on the counter, three hundred small transactions a week moving through systems Eli now holds a key to. Standing at the counter with a pen in her free hand, she checks his daily summary line by line, a supplier's invoice like any other, and sends back exactly one correction in the month, a timestamp that's read her local time instead of the shop's own time zone. "Fix the clock," she says, not asking. He fixes it inside the hour. The shop itself does exactly what it always does across those weeks: a compressor motor gets fixed on a Tuesday, a lawnmower blade gets sharpened for cash, the register closes within a dollar of itself most nights.
 
@@ -6723,7 +6724,7 @@ What it finds, over the following two months, is a shape.
 
 There's no name. There's no bank with a name on it. What there is, once Kavi has enough of it to stack, is a single set of decisions running from somewhere around 1998 or 2001, depending which thread you follow back.
 
-Kavi does the actual stacking on a whiteboard he wheels into the corner of his lab, one line a decision, one color a currency, taped index cards for the ones still missing a clean date. Half the working is done on the back of the whiteboard, three cards corrected over and over until the run finally holds in order, and by the end of January the board reads less like a timeline than like a single continuous decision wearing different currencies at different times.
+Kavi does the actual stacking on a whiteboard he wheels into the corner of his lab, one line a decision, one color a currency, taped index cards for the ones still missing a clean date. As much of the work happens on the back of the whiteboard as on the front, three cards corrected over and over until the run finally holds in order, and by the end of January the board reads less like a timeline than like a single continuous decision wearing different currencies at different times.
 
 The three of them get on a call to look at the board properly in the second week of January, Ruth taking notes for once instead of talking, Eli reading currency codes off Kavi's screen faster than the other two can follow, Kavi correcting him twice on one code before he starts reading them right. The shape resists being two people instead of one no matter how the three of them turn it, and by the time the call ends, it has stopped being a shared problem and become Ruth's.
 

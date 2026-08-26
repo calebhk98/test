@@ -267,6 +267,7 @@ Sinclair arrives with two other adults and a trolley, then stops at the corner. 
 Ruth reads them off her arm. Sinclair nods. "Grading's in the morning," he says. "Go to bed. Now."
 
 Back in bed she lies on top of the covers with her shoes on and runs the list from the top, and gets to the end of it, and starts over.
+
 Chloe gets a C the same as Sam, Ruth gets a B minus and brings it up for a week, and Kavi gets a B for the comms with a note about the sensors that he disputes in writing, at length, and loses.
 
 The sheet says: intruders inside Building One prior to contact. Response seven minutes fifty against a standard of six. Traceable agent selected. Four personnel deployed where three would have served. Objective established. No capability disclosed.
