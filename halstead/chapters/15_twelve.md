@@ -14,7 +14,7 @@ Sam picks a hook off her bench in November and weighs it in his hand.
 
 "That's better than anything else down here."
 
-"The scroll's wrong, right at the top curve." She takes it back, still warm at the thick end, and turns it until her thumb finds where the metal stops giving under her nail. "It goes tight and then opens out, right where my thumb is, because that's two curves welded in the middle pretending to be one, so hold it up at the window and you'll see it."
+She takes it back, still warm at the thick end, and turns it until her thumb finds where the metal stops giving under her nail. "The scroll's wrong, right at the top curve. It goes tight and then opens out, right where my thumb is, because that's two curves welded in the middle pretending to be one, so hold it up at the window and you'll see it."
 
 Sam holds it up with an eye shut, then hands it back.
 
@@ -54,7 +54,7 @@ ________________
 
 The bread comes up in Ruth's room on a Tuesday, with the others on the floor and Priya lying across the end of the bed, because Sam will keep saying that the Wednesday loaf is better and that he can tell every single time, whatever anybody else says.
 
-"It's the same bread, Sam, and the same flour and ovens and people behind it." Ruth turns a page of the book open on her knees. "The only thing different about a Wednesday is that it's a Wednesday, and two hundred of us have talked each other into it, which is a room agreeing with itself before anybody has chewed anything. Somebody said it in third grade, and what the whole school tastes now is the saying of it."
+Ruth turns a page of the book open on her knees. "It's the same bread, Sam, and the same flour and ovens and people behind it. The only thing different about a Wednesday is that it's a Wednesday, and two hundred of us have talked each other into it, which is a room agreeing with itself before anybody has chewed anything. Somebody said it in third grade, and what the whole school tastes now is the saying of it."
 
 "You can taste it though, and everyone can taste it, that's the whole point."
 
@@ -152,7 +152,7 @@ Chloe is annoyed when the alarm wakes her. It's the small one, the one that sits
 
 "Nobody said anything."
 
-"Nobody said anything about tonight." Ruth arrives with her hair everywhere. "There was nothing on the board. I looked on Tuesday."
+Ruth arrives with her hair everywhere. "Nobody said anything about tonight. There was nothing on the board. I looked on Tuesday."
 
 Sam gets there last.
 
@@ -346,7 +346,7 @@ Her mother sits down, shakes out her napkin and lays it across her lap. "So how'
 
 "Fine as in fine."
 
-"Because you can come home." Her mother reaches across and moves Chloe's water glass a little to the left, and the rest of her stays where it was. "If you want out of that school you say so and you're out, we drive up on Monday, we collect your things, and you're home."
+Her mother reaches across and moves Chloe's water glass a little to the left, and the rest of her stays where it was. "Because you can come home. If you want out of that school you say so and you're out, we drive up on Monday, we collect your things, and you're home."
 
 "I want to be there, though, and I like it there, even the parts of it that are hard."
 

@@ -3251,7 +3251,7 @@ Sam picks a hook off her bench in November and weighs it in his hand.
 
 "That's better than anything else down here."
 
-"The scroll's wrong, right at the top curve." She takes it back, still warm at the thick end, and turns it until her thumb finds where the metal stops giving under her nail. "It goes tight and then opens out, right where my thumb is, because that's two curves welded in the middle pretending to be one, so hold it up at the window and you'll see it."
+She takes it back, still warm at the thick end, and turns it until her thumb finds where the metal stops giving under her nail. "The scroll's wrong, right at the top curve. It goes tight and then opens out, right where my thumb is, because that's two curves welded in the middle pretending to be one, so hold it up at the window and you'll see it."
 
 Sam holds it up with an eye shut, then hands it back.
 
@@ -3291,7 +3291,7 @@ ________________
 
 The bread comes up in Ruth's room on a Tuesday, with the others on the floor and Priya lying across the end of the bed, because Sam will keep saying that the Wednesday loaf is better and that he can tell every single time, whatever anybody else says.
 
-"It's the same bread, Sam, and the same flour and ovens and people behind it." Ruth turns a page of the book open on her knees. "The only thing different about a Wednesday is that it's a Wednesday, and two hundred of us have talked each other into it, which is a room agreeing with itself before anybody has chewed anything. Somebody said it in third grade, and what the whole school tastes now is the saying of it."
+Ruth turns a page of the book open on her knees. "It's the same bread, Sam, and the same flour and ovens and people behind it. The only thing different about a Wednesday is that it's a Wednesday, and two hundred of us have talked each other into it, which is a room agreeing with itself before anybody has chewed anything. Somebody said it in third grade, and what the whole school tastes now is the saying of it."
 
 "You can taste it though, and everyone can taste it, that's the whole point."
 
@@ -3389,7 +3389,7 @@ Chloe is annoyed when the alarm wakes her. It's the small one, the one that sits
 
 "Nobody said anything."
 
-"Nobody said anything about tonight." Ruth arrives with her hair everywhere. "There was nothing on the board. I looked on Tuesday."
+Ruth arrives with her hair everywhere. "Nobody said anything about tonight. There was nothing on the board. I looked on Tuesday."
 
 Sam gets there last.
 
@@ -3583,7 +3583,7 @@ Her mother sits down, shakes out her napkin and lays it across her lap. "So how'
 
 "Fine as in fine."
 
-"Because you can come home." Her mother reaches across and moves Chloe's water glass a little to the left, and the rest of her stays where it was. "If you want out of that school you say so and you're out, we drive up on Monday, we collect your things, and you're home."
+Her mother reaches across and moves Chloe's water glass a little to the left, and the rest of her stays where it was. "Because you can come home. If you want out of that school you say so and you're out, we drive up on Monday, we collect your things, and you're home."
 
 "I want to be there, though, and I like it there, even the parts of it that are hard."
 
@@ -3632,7 +3632,7 @@ Marek is at every session and reads everything she gives him, so in the fourth w
 
 "Because that's what the hour is for, Marek, and I need something with your name on it at the end of the year, like everyone else."
 
-"Copying it out afterwards is a receipt for something I've already done, and a receipt is a different object from work." He says it the way he says everything, with his hands still and his voice level. "You want the receipt so somebody can look at a page and see I did it. Ask me anything off that sheet and I'll prove it without the paper."
+He says it the way he says everything, with his hands still and his voice level. "Copying it out afterwards is a receipt for something I've already done, and a receipt is a different object from work. You want the receipt so somebody can look at a page and see I did it. Ask me anything off that sheet and I'll prove it without the paper."
 
 Five questions off the sheet get five answers, the last by a route she had failed to consider, so she puts the sheet down and asks him something else instead.
 
@@ -3644,11 +3644,11 @@ In January she gives him a problem out of the following year's material that he 
 
 "So where's the sheet for it, then? I still need something to put a mark against."
 
-"There is no sheet. You asked me for a problem and I brought you back the problem, solved." He puts the timetable down in front of her and sits back with his arms folded. "That's the problem and the whole of it. Not a piece of paper with your marks on the corner."
+He puts the timetable down in front of her and sits back with his arms folded. "There is no sheet. You asked me for a problem and I brought you back the problem, solved. That's the problem and the whole of it. Not a piece of paper with your marks on the corner."
 
 "I can't take this in pencil on the back of Ivy's Tuesday, Marek, I need your name on it."
 
-"Then take it in pencil on the back of Ivy's Tuesday and write down that I did it." He is already halfway out of the seat. "You know I did it. You watched me fail at it last week, but you watched me do it just now."
+He is already halfway out of the seat. "Then take it in pencil on the back of Ivy's Tuesday and write down that I did it. You know I did it. You watched me fail at it last week, but you watched me do it just now."
 
 Chloe puts the chalk down harder than she means to, and he waits by the door until she says fine, then goes.
 
@@ -3690,7 +3690,7 @@ Eli gets into everything and takes his time doing it, so when Chloe asks how he 
 
 "The rest of us had that set for a week, but you did the lot in an evening, so what did the rest of us miss?"
 
-"You were all reading the message, and the message is fine, on its own." He hops down and hands the timetable back, smiling at the floor. "It's the same message going out every Tuesday, always at that hour, that hands it to you."
+He hops down and hands the timetable back, smiling at the floor. "You were all reading the message, and the message is fine, on its own. It's the same message going out every Tuesday, always at that hour, that hands it to you."
 
 Ruth and Kavi took cryptography and networks last year, which puts Ruth three months ahead of the class. In April she comes into Chloe's room after lights out with a shoebox under her arm, sets it on the end of the bed, stays on her feet.
 
@@ -3708,11 +3708,11 @@ Kavi has the first version running by the end of the month on the school's own m
 
 "You wrote it yourself, though, and there are whole libraries of this that people spent careers getting right."
 
-"I read a few of those first, and about half of what's in here came straight back out of them." Ruth has the listing spread across two chairs, because it will not sit on one. "What a library can't give me is a key only this table has ever had. A library is a thing everybody else in the world has a copy of too."
+Ruth has the listing spread across two chairs, because it will not sit on one. "I read a few of those first, and about half of what's in here came straight back out of them. What a library can't give me is a key only this table has ever had. A library is a thing everybody else in the world has a copy of too."
 
 Chloe breaks it inside a week, but the encryption holds the whole way: what she gets instead is that the school's network records which machine talked to which and when, the way it does for every service in the building, regardless of what any of them are for.
 
-"Every word in there is sealed, which is completely true, but it's still finished." She puts the log on the table between them, folded to the column that matters. "Knowing what we said is beside her point. What she wants is that this table said something to each other at ten on Thursday and then went missing off breakfast on Saturday."
+She puts the log on the table between them, folded to the column that matters. "Every word in there is sealed, which is completely true, but it's still finished. Knowing what we said is beside her point. What she wants is that this table said something to each other at ten on Thursday and then went missing off breakfast on Saturday."
 
 Ruth reads the column with her chin on her fist. "So it has to look like something else the whole time, then, and not only on the nights we're actually using it."
 
@@ -3740,7 +3740,7 @@ Block two is hers, so she puts fencing and game theory on the sheet. Fencing she
 
 Chloe leans back from the board. "The mathematics says the opposite, Kavi: you play the equilibrium and not the player, and you keep doing the reverse of it and winning anyway."
 
-"It's what the person says, not what the table says." He is sweeping the counters into his hand and enjoying himself. "You keep playing the table, every time, but I'm playing you."
+He is sweeping the counters into his hand and enjoying himself. "It's what the person says, not what the table says. You keep playing the table, every time, but I'm playing you."
 
 What she actually does with block two is the school forge, Thursdays and both Saturday sessions and most of Sunday. By the spring she is working through the second sitting of dinner and eating whatever is left.
 
@@ -3750,7 +3750,7 @@ A Russian piece in February covers a bridge that came down in December, and she 
 
 Law starts with Mr. Amberg walking in and putting a copy of the state code on the desk with both hands.
 
-"You are citizens, and in two years most of you will be driving. After that you'll sign a lease, then a contract, then probably a marriage licence, and each of those is a rule somebody wrote down before you got here." He sits on the desk. "So you're going to learn the law of your country, because at sixteen you'll take the bar. That's the examination this country uses to check whether a person knows it, and every citizen in this room ought to pass it."
+He sits on the desk. "You are citizens, and in two years most of you will be driving. After that you'll sign a lease, then a contract, then probably a marriage licence, and each of those is a rule somebody wrote down before you got here. So you're going to learn the law of your country, because at sixteen you'll take the bar. That's the examination this country uses to check whether a person knows it, and every citizen in this room ought to pass it."
 
 Then he starts on contracts.
 
@@ -3792,7 +3792,7 @@ Nadia waits for him to finish.
 
 "I haven't, not yet, so give me another minute with it."
 
-"You've had your hand over that corner since Kavi passed it." Nadia sits back. "You always do that, which means you've got it and you'd rather keep it off the table."
+Nadia sits back. "You've had your hand over that corner since Kavi passed it. You always do that, which means you've got it and you'd rather keep it off the table."
 
 Chloe takes her hand off the napkin and puts it in her lap while Sam says something about the salt, and by the end of the meal the table has an opinion each, every one of them holding firm.
 
@@ -3810,7 +3810,7 @@ The cuts are hers, and he shows her the saw on the first morning and watches her
 
 "But I cut it, so I'd rather fix it now than know it's there every time I go up."
 
-"Chloe." He is already reaching for the next board, his attention on the next cut. "Not one person alive is going to measure these steps, and this stays between the two of us."
+He is already reaching for the next board, his attention on the next cut. "Chloe. Not one person alive is going to measure these steps, and this stays between the two of us."
 
 They finish on a Tuesday at the end of July and the steps hold. Her mother comes out and stands on them, and bounces on the top step twice.
 
@@ -4721,7 +4721,7 @@ Nadia is in the room too, back against the door, laptop on her knees, and what s
 
 "You're not applying anywhere," Ruth says.
 
-"I'm applying everywhere this week, and none of them are schools." She tabs to the next box without looking up. "Purchasing assistant at the plumbing supply out on Route 8. Parts buyer at a dealership. Service writer at the transmission place on Fourth. Dispatch at a freight company in Ambridge. An insurance office running a claims trainee program that says straight out of high school at the top and two years of experience further down."
+She tabs to the next box without looking up. "I'm applying everywhere this week, and none of them are schools. Purchasing assistant at the plumbing supply out on Route 8. Parts buyer at a dealership. Service writer at the transmission place on Fourth. Dispatch at a freight company in Ambridge. An insurance office running a claims trainee program that says straight out of high school at the top and two years of experience further down."
 
 "Which one do you actually want?" Chloe says.
 
@@ -4827,7 +4827,7 @@ The Duke representative, who'd collected "Sport," then "Athletics," then "Recrea
 
 "Pick the measure you'd defend, then, and we'll go by that. I'd rather have yours than mine."
 
-Ruth looks up at that, closing the laptop over a finger to keep her page. "Time, not difficulty: two years of Saturdays running someone else's practice sessions, and the sessions were the easy part. The hard part was turning up on the ninetieth Saturday with nothing new to say about any of it." She opens the laptop back up. "Sustained is harder to fake than hard."
+Ruth looks up at that, closing the laptop over a finger to keep her page. "Time, not difficulty: two years of Saturdays running someone else's practice sessions, and the sessions were the easy part. The hard part was turning up on the ninetieth Saturday with nothing new to say about any of it. Sustained is harder to fake than hard." She opens the laptop back up.
 
 The rep writes that down and moves to the next name on his list.
 
@@ -4841,7 +4841,7 @@ Ruth asks her in the common room in March, with only Chloe else in the room, and
 
 "A hundred and ninety," Ruth says. "Against how many that answered?"
 
-"Twelve, but eight of them were written by software." The notebook is shut under her hand. She pushes her sleeves up, and a second goes by where she says nothing. "Read one of mine, Ruth. I can't work out what they want. I've read the listing and I've read the form and I've answered both of them, but I can't see the part where I'm getting it wrong."
+The notebook is shut under her hand. She pushes her sleeves up, and a second goes by where she says nothing. "Twelve, but eight of them were written by software. Read one of mine, Ruth. I can't work out what they want. I've read the listing and I've read the form and I've answered both of them, but I can't see the part where I'm getting it wrong."
 
 "Chloe should read it, since Chloe's the one who writes."
 
@@ -4851,7 +4851,7 @@ Chloe puts her pen down and leaves it down.
 
 "Down to the limit, in the end. I cut it."
 
-"You cut it three times." Nadia looks at her a second longer than she has looked at her all evening, and then pushes the notebook across the table, open. "Read the last one. It came back before I'd shut the laptop."
+Nadia looks at her a second longer than she has looked at her all evening, and then pushes the notebook across the table, open. "You cut it three times. Read the last one. It came back before I'd shut the laptop."
 
 Chloe reads it twice and finds it clean, and Ruth reads it after her and agrees. That closes there, and both of them keep their seats.
 
@@ -4859,7 +4859,7 @@ Ruth's own advice is to send an application twice and change one thing, so in th
 
 "Do the second one every time," Ruth says.
 
-"Then the form isn't reading the person, it's reading its own listing back to itself." Nadia writes the Tuesday call into the column and rules a line under it. "Fine. Every time."
+Nadia writes the Tuesday call into the column and rules a line under it. "Then the form isn't reading the person, it's reading its own listing back to itself. Fine. Every time."
 
 ________________
 

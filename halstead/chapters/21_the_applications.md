@@ -62,7 +62,7 @@ Nadia is in the room too, back against the door, laptop on her knees, and what s
 
 "You're not applying anywhere," Ruth says.
 
-"I'm applying everywhere this week, and none of them are schools." She tabs to the next box without looking up. "Purchasing assistant at the plumbing supply out on Route 8. Parts buyer at a dealership. Service writer at the transmission place on Fourth. Dispatch at a freight company in Ambridge. An insurance office running a claims trainee program that says straight out of high school at the top and two years of experience further down."
+She tabs to the next box without looking up. "I'm applying everywhere this week, and none of them are schools. Purchasing assistant at the plumbing supply out on Route 8. Parts buyer at a dealership. Service writer at the transmission place on Fourth. Dispatch at a freight company in Ambridge. An insurance office running a claims trainee program that says straight out of high school at the top and two years of experience further down."
 
 "Which one do you actually want?" Chloe says.
 
@@ -168,7 +168,7 @@ The Duke representative, who'd collected "Sport," then "Athletics," then "Recrea
 
 "Pick the measure you'd defend, then, and we'll go by that. I'd rather have yours than mine."
 
-Ruth looks up at that, closing the laptop over a finger to keep her page. "Time, not difficulty: two years of Saturdays running someone else's practice sessions, and the sessions were the easy part. The hard part was turning up on the ninetieth Saturday with nothing new to say about any of it." She opens the laptop back up. "Sustained is harder to fake than hard."
+Ruth looks up at that, closing the laptop over a finger to keep her page. "Time, not difficulty: two years of Saturdays running someone else's practice sessions, and the sessions were the easy part. The hard part was turning up on the ninetieth Saturday with nothing new to say about any of it. Sustained is harder to fake than hard." She opens the laptop back up.
 
 The rep writes that down and moves to the next name on his list.
 
@@ -182,7 +182,7 @@ Ruth asks her in the common room in March, with only Chloe else in the room, and
 
 "A hundred and ninety," Ruth says. "Against how many that answered?"
 
-"Twelve, but eight of them were written by software." The notebook is shut under her hand. She pushes her sleeves up, and a second goes by where she says nothing. "Read one of mine, Ruth. I can't work out what they want. I've read the listing and I've read the form and I've answered both of them, but I can't see the part where I'm getting it wrong."
+The notebook is shut under her hand. She pushes her sleeves up, and a second goes by where she says nothing. "Twelve, but eight of them were written by software. Read one of mine, Ruth. I can't work out what they want. I've read the listing and I've read the form and I've answered both of them, but I can't see the part where I'm getting it wrong."
 
 "Chloe should read it, since Chloe's the one who writes."
 
@@ -192,7 +192,7 @@ Chloe puts her pen down and leaves it down.
 
 "Down to the limit, in the end. I cut it."
 
-"You cut it three times." Nadia looks at her a second longer than she has looked at her all evening, and then pushes the notebook across the table, open. "Read the last one. It came back before I'd shut the laptop."
+Nadia looks at her a second longer than she has looked at her all evening, and then pushes the notebook across the table, open. "You cut it three times. Read the last one. It came back before I'd shut the laptop."
 
 Chloe reads it twice and finds it clean, and Ruth reads it after her and agrees. That closes there, and both of them keep their seats.
 
@@ -200,7 +200,7 @@ Ruth's own advice is to send an application twice and change one thing, so in th
 
 "Do the second one every time," Ruth says.
 
-"Then the form isn't reading the person, it's reading its own listing back to itself." Nadia writes the Tuesday call into the column and rules a line under it. "Fine. Every time."
+Nadia writes the Tuesday call into the column and rules a line under it. "Then the form isn't reading the person, it's reading its own listing back to itself. Fine. Every time."
 
 ________________
 

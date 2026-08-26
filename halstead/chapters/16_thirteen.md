@@ -18,7 +18,7 @@ Marek is at every session and reads everything she gives him, so in the fourth w
 
 "Because that's what the hour is for, Marek, and I need something with your name on it at the end of the year, like everyone else."
 
-"Copying it out afterwards is a receipt for something I've already done, and a receipt is a different object from work." He says it the way he says everything, with his hands still and his voice level. "You want the receipt so somebody can look at a page and see I did it. Ask me anything off that sheet and I'll prove it without the paper."
+He says it the way he says everything, with his hands still and his voice level. "Copying it out afterwards is a receipt for something I've already done, and a receipt is a different object from work. You want the receipt so somebody can look at a page and see I did it. Ask me anything off that sheet and I'll prove it without the paper."
 
 Five questions off the sheet get five answers, the last by a route she had failed to consider, so she puts the sheet down and asks him something else instead.
 
@@ -30,11 +30,11 @@ In January she gives him a problem out of the following year's material that he 
 
 "So where's the sheet for it, then? I still need something to put a mark against."
 
-"There is no sheet. You asked me for a problem and I brought you back the problem, solved." He puts the timetable down in front of her and sits back with his arms folded. "That's the problem and the whole of it. Not a piece of paper with your marks on the corner."
+He puts the timetable down in front of her and sits back with his arms folded. "There is no sheet. You asked me for a problem and I brought you back the problem, solved. That's the problem and the whole of it. Not a piece of paper with your marks on the corner."
 
 "I can't take this in pencil on the back of Ivy's Tuesday, Marek, I need your name on it."
 
-"Then take it in pencil on the back of Ivy's Tuesday and write down that I did it." He is already halfway out of the seat. "You know I did it. You watched me fail at it last week, but you watched me do it just now."
+He is already halfway out of the seat. "Then take it in pencil on the back of Ivy's Tuesday and write down that I did it. You know I did it. You watched me fail at it last week, but you watched me do it just now."
 
 Chloe puts the chalk down harder than she means to, and he waits by the door until she says fine, then goes.
 
@@ -76,7 +76,7 @@ Eli gets into everything and takes his time doing it, so when Chloe asks how he 
 
 "The rest of us had that set for a week, but you did the lot in an evening, so what did the rest of us miss?"
 
-"You were all reading the message, and the message is fine, on its own." He hops down and hands the timetable back, smiling at the floor. "It's the same message going out every Tuesday, always at that hour, that hands it to you."
+He hops down and hands the timetable back, smiling at the floor. "You were all reading the message, and the message is fine, on its own. It's the same message going out every Tuesday, always at that hour, that hands it to you."
 
 Ruth and Kavi took cryptography and networks last year, which puts Ruth three months ahead of the class. In April she comes into Chloe's room after lights out with a shoebox under her arm, sets it on the end of the bed, stays on her feet.
 
@@ -94,11 +94,11 @@ Kavi has the first version running by the end of the month on the school's own m
 
 "You wrote it yourself, though, and there are whole libraries of this that people spent careers getting right."
 
-"I read a few of those first, and about half of what's in here came straight back out of them." Ruth has the listing spread across two chairs, because it will not sit on one. "What a library can't give me is a key only this table has ever had. A library is a thing everybody else in the world has a copy of too."
+Ruth has the listing spread across two chairs, because it will not sit on one. "I read a few of those first, and about half of what's in here came straight back out of them. What a library can't give me is a key only this table has ever had. A library is a thing everybody else in the world has a copy of too."
 
 Chloe breaks it inside a week, but the encryption holds the whole way: what she gets instead is that the school's network records which machine talked to which and when, the way it does for every service in the building, regardless of what any of them are for.
 
-"Every word in there is sealed, which is completely true, but it's still finished." She puts the log on the table between them, folded to the column that matters. "Knowing what we said is beside her point. What she wants is that this table said something to each other at ten on Thursday and then went missing off breakfast on Saturday."
+She puts the log on the table between them, folded to the column that matters. "Every word in there is sealed, which is completely true, but it's still finished. Knowing what we said is beside her point. What she wants is that this table said something to each other at ten on Thursday and then went missing off breakfast on Saturday."
 
 Ruth reads the column with her chin on her fist. "So it has to look like something else the whole time, then, and not only on the nights we're actually using it."
 
@@ -126,7 +126,7 @@ Block two is hers, so she puts fencing and game theory on the sheet. Fencing she
 
 Chloe leans back from the board. "The mathematics says the opposite, Kavi: you play the equilibrium and not the player, and you keep doing the reverse of it and winning anyway."
 
-"It's what the person says, not what the table says." He is sweeping the counters into his hand and enjoying himself. "You keep playing the table, every time, but I'm playing you."
+He is sweeping the counters into his hand and enjoying himself. "It's what the person says, not what the table says. You keep playing the table, every time, but I'm playing you."
 
 What she actually does with block two is the school forge, Thursdays and both Saturday sessions and most of Sunday. By the spring she is working through the second sitting of dinner and eating whatever is left.
 
@@ -136,7 +136,7 @@ A Russian piece in February covers a bridge that came down in December, and she 
 
 Law starts with Mr. Amberg walking in and putting a copy of the state code on the desk with both hands.
 
-"You are citizens, and in two years most of you will be driving. After that you'll sign a lease, then a contract, then probably a marriage licence, and each of those is a rule somebody wrote down before you got here." He sits on the desk. "So you're going to learn the law of your country, because at sixteen you'll take the bar. That's the examination this country uses to check whether a person knows it, and every citizen in this room ought to pass it."
+He sits on the desk. "You are citizens, and in two years most of you will be driving. After that you'll sign a lease, then a contract, then probably a marriage licence, and each of those is a rule somebody wrote down before you got here. So you're going to learn the law of your country, because at sixteen you'll take the bar. That's the examination this country uses to check whether a person knows it, and every citizen in this room ought to pass it."
 
 Then he starts on contracts.
 
@@ -178,7 +178,7 @@ Nadia waits for him to finish.
 
 "I haven't, not yet, so give me another minute with it."
 
-"You've had your hand over that corner since Kavi passed it." Nadia sits back. "You always do that, which means you've got it and you'd rather keep it off the table."
+Nadia sits back. "You've had your hand over that corner since Kavi passed it. You always do that, which means you've got it and you'd rather keep it off the table."
 
 Chloe takes her hand off the napkin and puts it in her lap while Sam says something about the salt, and by the end of the meal the table has an opinion each, every one of them holding firm.
 
@@ -196,7 +196,7 @@ The cuts are hers, and he shows her the saw on the first morning and watches her
 
 "But I cut it, so I'd rather fix it now than know it's there every time I go up."
 
-"Chloe." He is already reaching for the next board, his attention on the next cut. "Not one person alive is going to measure these steps, and this stays between the two of us."
+He is already reaching for the next board, his attention on the next cut. "Chloe. Not one person alive is going to measure these steps, and this stays between the two of us."
 
 They finish on a Tuesday at the end of July and the steps hold. Her mother comes out and stands on them, and bounces on the top step twice.
 
