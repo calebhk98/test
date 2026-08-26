@@ -6,7 +6,7 @@ They open it in seven different places, each at a different hour, each of them a
 
 There is a file on all ninety-one of them. Every page carries the same header before anything else on it: a case number opened in 2013, and a classification banner reprinted at the top of every scan as if repeating it enough times might eventually make it true.
 
-Address, employer, family, where their parents work, where everybody banks. Sam's is the thickest and the newest: an Army file stacked on top of everything Halstead ever generated on him. An officer's assessment quotes a number Sam gave honestly, but flags the honesty itself as the interesting part, like a result that wouldn't reproduce. Theo's has a note on it that makes him close the laptop with both hands, the careful two-handed close of something that might spill, and go outside for twenty minutes. He comes back in, opens the laptop again, and keeps reading from the line he left off on. That's the whole account anyone else gets of it.
+Address, employer, family, where their parents work, where everybody banks. Sam's is the thickest and the newest: an Army file stacked on top of everything Halstead ever generated on him. An officer's assessment quotes a number Sam gave honestly, but flags the honesty itself as the interesting part, like a result that wouldn't reproduce. Theo's has a note on it that makes him close the laptop with both hands, the careful two-handed close of something that might spill, and go outside for twenty minutes before he comes back in, opens the laptop again, and keeps reading from the line he left off on. That's the whole account anyone else gets of it.
 
 The rest of theirs sit somewhere between those. Nadia's crosses her company's filings against a background check a competing job board ran on her eighteen months ago, the whole company at that point three rooms over a laundromat, the documents stitched together by an analyst who managed to spell her name differently on each page. Eli's notes, in the flat voice of everything else, that he found five vulnerabilities in his own employer's systems in one afternoon, unprompted, and flags the number as worth continued attention rather than as anything resembling praise. Kavi's is the thinnest of them, a paragraph a year, the file needing only the one address it has ever had for him. Someone has annotated the margin of it more than once, always the same single word: *continuity*. Chloe's has her translation work and her exam scores, and, a few lines above the current entry, a note that she has recently accepted employment requiring a background investigation. It's dated to a Tuesday she remembers clearly, because it's the week she signed the lease on the apartment she's sitting in right now.
 
@@ -64,7 +64,7 @@ ruth: they had a team on us and my box got their cameras too and i didnt know th
 
 ________________
 
-Kavi reads what she has written standing at the lab bench, the pen down for good now, his weight forward on both arms like a man setting himself to lift something. He stays over the bench and waits, breathing slow, for as long as it takes.
+Kavi reads what she has written standing at the lab bench, the pen down for good now, his weight forward on both arms like a man setting himself to lift something, then stays over the bench and waits, breathing slow, for as long as it takes.
 
 kavi: ruth
 

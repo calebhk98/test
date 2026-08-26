@@ -46,7 +46,7 @@ Kavi finishes in twenty minutes, exactly one word over, and submits it unread.
 
 Odile's runs five pages, and Chloe tells her it is many times the limit.
 
-"A limit like that is a minimum," Odile says, without coming off the bed. "Every teacher in this building takes more than they asked for and thanks you for it. The question wanted what it wanted. If they meant to be handed less than that they should have asked something smaller."
+"A limit's a minimum," Odile says, without coming off the bed. "They want more."
 
 It goes in as it is.
 

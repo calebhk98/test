@@ -8,7 +8,7 @@ What arrives is a document rather than a chat message, twelve pages, written at 
 
 The target is the unit Theo already told them exists, which has kept a file on the school for a dozen years and been wrong about who runs it twice. Getting past its security once is a solvable problem. But getting past it and leaving the file looking exactly as it did before, with every trace of them erased, is harder, and the document is mostly about the second problem, not the first.
 
-Theo reads it twice the night it lands, then closes the laptop and makes tea the way his grandmother made it, milk first, and reads the document a third time standing at the counter with the mug going cold in his hand. Day after day he opens it, reads a line or two, and closes it again. He walks to work in the morning and walks home again after dark. In the chat he keeps to small talk, the weather outside his building, a joke Sam makes about the food at basic. Ruth texts him alone once, just his name, and lets it sit.
+Theo reads it twice the night it lands, then closes the laptop and makes tea the way his grandmother made it, milk first, and reads the document a third time standing at the counter with the mug going cold in his hand. Day after day he opens it, reads a line or two, and closes it again, walking to work in the morning and walking home again after dark. In the chat he keeps to small talk, the weather outside his building, a joke Sam makes about the food at basic. Ruth texts him alone once, just his name, and lets it sit.
 
 The reasoning moves him in the end, not the arithmetic. Reading intelligence is what he does for a living, weighing a source against what it's actually worth, and the accounting comes out one way no matter which end he starts from: they already have a file on their own school that's a dozen years out of date, and reading the true version is the only way any of them will ever know what their own government actually thinks it knows. He can write that argument forward or backward and it does not change.
 
@@ -68,7 +68,7 @@ eli: as long as it takes to get in and out once
 
 sam: thats not a number
 
-Chloe reads all of it twice, standing at her kitchen counter with the coffee going cold beside her the way it does most nights now. She keeps going back to Theo's line about the men over the fence, months after he first posted it, and she already knows what she thinks before she starts typing anything.
+Chloe reads all of it twice, standing at her kitchen counter with the coffee going cold beside her the way it does most nights now. Months after he first posted it, she keeps going back to Theo's line about the men over the fence, and already knows what she thinks before she starts typing anything.
 
 chloe: someones had a file on us since before any of us could read. if we get a chance to read theirs back i dont see what there is to decide
 

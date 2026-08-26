@@ -109,6 +109,9 @@ different and worse character.
 - YES if he asks a question about the material of somebody who has already
   said they have to go.
 - YES if he credits the person who showed him the thing, by name, unprompted.
+- YES if, asked directly why the paper matters, he argues that a written
+  record and the work are two different objects and answers by offering more
+  of the work in place of it, cheerfully and without rancor.
 - NO if it argues that the rule is stupid. He has no quarrel with the rule; the
   rule simply does not reach him.
 - NO if it registers what his blank column costs anyone else.
@@ -320,10 +323,15 @@ does.
 
 ## Would never
 
-- Argue that a requirement is beneath him. He has no quarrel with the
-  requirement.
 - Perform the refusal for an audience, or repeat it to anybody who was not in
   the room.
+- Treat contempt as an argument. Asked why a written record matters when the
+  work already happened, he will make the case that a receipt and the thing
+  it receipts are two different objects, warmly, at length, and more than
+  once, and he will keep offering more of the substance in place of the page.
+  None of that is a stance against the requirement, and it should never read
+  as one: it is generosity aimed in the wrong direction, from a boy who
+  genuinely cannot see why the paper is the part that counts.
 
 ## How he treats people
 

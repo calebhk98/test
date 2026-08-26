@@ -16,27 +16,27 @@ Marek is at every session and reads everything she gives him, so in the fourth w
 
 "Why, though?" He stays where he is, the sheet under his hand.
 
-"Because that's what the hour is for, Marek, and I need something with your name on it at the end of the year, like everyone else."
+"Because that's what the hour is for, and I need something with your name on it at the end of the year, like everyone else."
 
-He says it the way he says everything, with his hands still and his voice level. "Copying it out afterwards is a receipt for something I've already done, and a receipt is a different object from work. You want the receipt so somebody can look at a page and see I did it. Ask me anything off that sheet and I'll prove it without the paper."
+The words come out ahead of the thought before she has finished, hands already moving, an apology thrown in for her ruler, which he still has not given back. "Copying it out afterwards is a receipt for something I've already done, though, and a receipt is a different object from work. You want the receipt so somebody can look at a page and see I did it. Ask me anything off that sheet and I'll prove it without the paper."
 
 Five questions off the sheet get five answers, the last by a route she had failed to consider, so she puts the sheet down and asks him something else instead.
 
 "So what are you doing with the time? You're here every session. You're obviously working at something."
 
-"There's a paper from 1981 with a mistake in it, not a typo but an actual mistake in the argument, and I've been on it since February, about a third of the way through, line by line."
+"There's a paper from 1981 with a mistake in it, not a typo but an actual mistake in the argument, and I've been on it since February, about a third of the way through, line by line. Sorry, what was the actual question, the sheet, right, sorry."
 
 In January she gives him a problem out of the following year's material that he cannot have seen before, and he brings it back on the Thursday done in pencil on the back of somebody else's timetable.
 
 "So where's the sheet for it, then? I still need something to put a mark against."
 
-The timetable goes down in front of her, and he sits back with his arms folded. "There is no sheet. You asked me for a problem and I brought you back the problem, solved. That's the problem, in full. Not a piece of paper with your marks on the corner."
+The timetable goes down in front of her, and he leans in over it instead of back, already talking before she can say anything else. "There is no sheet. You asked me for a problem and I brought you back the problem, solved. That's the problem, in full. Not a piece of paper with your marks on the corner."
 
-"I can't take this in pencil on the back of Ivy's Tuesday, Marek, I need your name on it."
+"I can't take this in pencil on the back of Ivy's Tuesday. I need your name on it."
 
-He is already halfway out of the seat. "Then take it in pencil on the back of Ivy's Tuesday and write down that I did it. You know I did it. You watched me fail at it last week, but you watched me do it just now."
+Papers slide off his knee, and he is out of the chair after them, still talking, sorry about the papers too. "Then take it in pencil on the back of Ivy's Tuesday and write down that I did it. You know I did it. You watched me fail at it last week, but you watched me do it just now."
 
-Chloe puts the chalk down harder than she means to, and he waits by the door until she says fine, then goes.
+Chloe puts the chalk down harder than she means to. Something Beatriz asked him on the way in has already taken over, and he is still talking about it on the way to the door, stopping when she says fine, apologising for the noise before he goes.
 
 In February she offers to read the 1981 paper and mark him on that. Politely, at once, he says no, since she is a year older and has yet to open it. In March she asks what would make him hand something in, and he thinks about it.
 

@@ -102,7 +102,7 @@ The room goes quiet for a moment while the man behind the desk sets down what he
 
 "Get out of here," he says.
 
-She stays where she is. The man in the doorway comes off the frame, walks around behind her, pushes the door shut with the heel of his hand, and then stands against it with his arms folded while she hears the latch go and keeps her eyes on the desk.
+But she stays where she is. The man in the doorway comes off the frame, walks around behind her, pushes the door shut with the heel of his hand, and then stands against it with his arms folded while she hears the latch go and keeps her eyes on the desk.
 
 "How old are you," the man at the folding table says.
 
@@ -134,7 +134,7 @@ The man at the folding table stands up, taking his time about it because he can 
 
 "Say that again," he says, "slower, so everybody in the room gets the benefit of it."
 
-She gives it back to him at the same speed.
+At the same speed, she gives it back to him.
 
 "Nine of you typed a live state registration number into my form. It's field six. It's a required field, and that is why you filled it in."
 

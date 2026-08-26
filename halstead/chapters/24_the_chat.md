@@ -208,9 +208,9 @@ sam: you fall backwards and someone catches you. thats the whole exercise
 
 kavi: what is it measuring
 
-sam: i dont think its measuring anything
+sam: its not measuring anything
 
-sam: i think its meant to be fun
+sam: its just meant to be fun
 
 nadia: did you catch him
 
